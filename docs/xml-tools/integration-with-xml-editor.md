@@ -1,33 +1,33 @@
 ---
-title: Intégration du Concepteur de schémas XML à l’éditeur XML
+title: Intégration du concepteur de schémas XML avec l’éditeur XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 43d7a8e6-bd94-4407-a800-15a145c74223
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8a233c0a1bbd456e08fe5343adae8328c5cb774
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b9df2d97a6ff68299ab70545683970188eb1bfea
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001873"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72601780"
 ---
 # <a name="integration-with-xml-editor"></a>Intégration avec l’éditeur XML
 
-Le Concepteur de schémas XML est intégré avec l’éditeur XML. Si vous modifiez un fichier XSD dans l’éditeur XML, la modification apparaîtront dans le [Explorateur de schémas XML](../xml-tools/xml-schema-explorer.md). Si vous avez le [vue du graphique](../xml-tools/graph-view.md) ou [affichage du modèle de contenu](../xml-tools/content-model-view.md) ouvert, la modification est également répercutée il. Vous pouvez naviguer entre le Concepteur de schémas XML et l’éditeur XML comme suit :
+Le concepteur de schémas XML est intégré à l’éditeur XML. Si vous modifiez un fichier XSD dans l’éditeur XML, la modification sera reflétée dans l' [Explorateur de schémas XML](../xml-tools/xml-schema-explorer.md). Si la vue du [graphique](../xml-tools/graph-view.md) ou la [vue de modèle de contenu](../xml-tools/content-model-view.md) est ouverte, la modification y sera également reflétée. Vous pouvez naviguer entre le concepteur de schémas XML et l’éditeur XML de l’une des manières suivantes :
 
-- Dans l’éditeur XML, cliquez sur un nœud, puis sélectionnez **afficher dans l’Explorateur de schémas XML**.
+- Dans l’éditeur XML, cliquez avec le bouton droit sur un nœud et sélectionnez **afficher dans l’Explorateur de schémas XML**.
 
-- Dans la vue du graphique et le **Explorateur de schémas XML**, double-cliquez sur un nœud, ou cliquez sur un nœud et sélectionnez **afficher le Code**. Dans la vue de modèle de contenu, cliquez sur un nœud et sélectionnez **afficher le Code**.
+- Dans la vue du graphique et l' **Explorateur de schémas XML**, double-cliquez sur un nœud, ou cliquez avec le bouton droit sur un nœud et sélectionnez **afficher le code**. Dans la vue de modèle de contenu, cliquez avec le bouton droit sur un nœud et sélectionnez **afficher le code**.
 
-La capture d’écran suivante montre un schéma XML ouvert dans le **Explorateur de schémas XML**. Le **Explorateur de schémas XML** affiche le schéma défini dans une arborescence. L’éditeur XML affiche la vue de texte du nœud qui est actuellement actif dans le **Explorateur de schémas XML**.
+La capture d’écran suivante montre un schéma XML ouvert dans l' **Explorateur de schémas XML**. L' **Explorateur de schémas XML** affiche le jeu de schémas dans une arborescence. L’éditeur XML affiche la vue de texte du nœud qui est actuellement actif dans l' **Explorateur de schémas XML**.
 
 ![XSDDesignerWithXMLEditor](../xml-tools/media/xsddesignerwithxmleditor.gif)
 
-Il est parfois utile de voir le code dans l’éditeur XML et le concepteur graphique côte à côte. Pour afficher les deux fichiers en même temps, avec le bouton droit n’importe où dans l’éditeur XML, puis sélectionnez **Concepteur de vues**. Dans le menu Visual Studio Windows, sélectionnez **nouveau Horizontal (ou Vertical) groupe d’onglets**.
+Il est parfois utile de voir le code dans l’éditeur XML et le concepteur graphique côte à côte. Pour afficher les deux fichiers en même temps, cliquez avec le bouton droit n’importe où dans l’éditeur XML et sélectionnez **Concepteur de vues**. Dans le menu Windows de Visual Studio, sélectionnez **nouveau groupe d’onglets horizontal (ou vertical)** .
 
 ![XSDDesignerWithXMLEditorAndCMV](../xml-tools/media/xsddesignerwithxmleditorandcmv.gif)
 

@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::SetScriptSite | Microsoft Docs
+title: 'IActiveScript :: SetScriptSite | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3fdf5f3ae84d1a991d67170b5f2b02114b91ee05
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 063dcc7b580334bff9780e9c209b621ef7e25656
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935552"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575330"
 ---
 # <a name="iactivescriptsetscriptsite"></a>IActiveScript::SetScriptSite
-Informe le moteur de script de la [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) site interface fournie par l’hôte. Appelez cette méthode avant toute autre [IActiveScript](../../winscript/reference/iactivescript.md) méthodes d’interface est utilisée.  
+Informe le moteur de script du site d’interface [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) fourni par l’hôte. Appelez cette méthode avant d’utiliser d’autres méthodes d’interface [IActiveScript](../../winscript/reference/iactivescript.md) .  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -37,15 +37,15 @@ HRESULT SetScriptSite(
   
 #### <a name="parameters"></a>Paramètres  
  `pScriptSite`  
- [in] Adresse du site de script fourni par l’hôte à associer à cette instance du moteur de script. Le site doit être attribué de manière unique cette instance du moteur de script ; Il ne peut pas être partagé avec d’autres moteurs de script.  
+ dans Adresse du site de script fourni par l’hôte à associer à cette instance du moteur de script. Le site doit être attribué de manière unique à cette instance du moteur de script. il ne peut pas être partagé avec d’autres moteurs de script.  
   
 ## <a name="return-value"></a>Valeur de retour  
- Retourne une des valeurs suivantes :  
+ Retourne l’une des valeurs suivantes :  
   
 |Valeur de retour|Signification|  
 |------------------|-------------|  
 |`S_OK`|Opération réussie.|  
-|`E_FAIL`|Une erreur non spécifiée s’est produite ; le moteur de script n’a pas pu terminer l’initialisation du site.|  
+|`E_FAIL`|Une erreur non spécifiée s’est produite. le moteur de script n’a pas pu terminer l’initialisation du site.|  
 |`E_INVALIDARG`|Un argument n’est pas valide.|  
 |`E_POINTER`|Un pointeur non valide a été spécifié.|  
 |`E_UNEXPECTED`|L’appel n’était pas attendu (par exemple, un site a déjà été défini).|  

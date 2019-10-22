@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerCallback::ScriptCompiled | Microsoft Docs
+title: 'IActiveScriptProfilerCallback :: ScriptCompiled | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a198667e7dc30969c32b556620b139d52f833543
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f7252134fc86bfd63b74a181b18327212a1b2dc1
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993233"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571661"
 ---
 # <a name="iactivescriptprofilercallbackscriptcompiled"></a>IActiveScriptProfilerCallback::ScriptCompiled
-Notifie le profileur à l’objet du moteur de script compilé un script. Cette méthode est appelée pour chaque script qui est compilé.  
+Avertit l’objet de profileur que le moteur de script a compilé un script. Cette méthode est appelée pour chaque script compilé.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -36,19 +36,19 @@ HRESULT ScriptCompiled(
   
 #### <a name="parameters"></a>Paramètres  
  `scriptId`  
- [in] ID unique du script qui a été compilé. Cet ID est attribué par le moteur de script.  
+ dans ID unique du script qui a été compilé. Cet ID est assigné par le moteur de script.  
   
  `type`  
- [in] Le type du script qui a été compilé. Les valeurs sont définies dans [profiler_script_type, énumération](../../winscript/reference/profiler-script-type-enumeration.md).  
+ dans Type du script qui a été compilé. Les valeurs sont définies dans l' [énumération PROFILER_SCRIPT_TYPE](../../winscript/reference/profiler-script-type-enumeration.md).  
   
  `pIDebugDocumentContext`  
- [in] S’il est disponible, un pointeur vers un `IUnknown` interface que le profileur doit interroger pour un [IDebugDocumentContext (Interface)](../../winscript/reference/idebugdocumentcontext-interface.md) pointeur. Sinon, ce sera null.  
+ dans S’il est disponible, pointeur vers une interface de `IUnknown` que le profileur doit interroger pour obtenir un pointeur d' [interface IDebugDocumentContext](../../winscript/reference/idebugdocumentcontext-interface.md) . Dans le cas contraire, la valeur est null.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La valeur de retour de cette méthode est ignorée par le moteur de script.  
   
 ## <a name="remarks"></a>Notes  
- Le moteur de script peut fournir le contexte de document uniquement si cela est pris en charge par l’hôte.  
+ Le moteur de script peut fournir le contexte de document uniquement s’il est pris en charge par l’hôte.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IActiveScriptProfilerCallback](../../winscript/reference/iactivescriptprofilercallback-interface.md)

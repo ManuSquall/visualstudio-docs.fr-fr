@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugApplicationNodes::Next | Microsoft Docs
+title: 'IEnumDebugApplicationNodes :: suivant | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f826ce91ba99c5bb697a346b40a6b7f97b6f5914
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f4ad47c0119eb46c05368fa40ba3a5965fecce0b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951617"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573054"
 ---
 # <a name="ienumdebugapplicationnodesnext"></a>IEnumDebugApplicationNodes::Next
 Récupère un nombre spécifié de segments dans la séquence d’énumération.  
@@ -39,18 +39,18 @@ HRESULT Next(
   
 #### <a name="parameters"></a>Paramètres  
  `celt`  
- [in] Le nombre de segments à récupérer.  
+ dans Nombre de segments à récupérer.  
   
  `pprddp`  
- [out] Retourne un tableau de `IDebugApplicationNode` interfaces qui représente les segments en cours de récupération.  
+ à Retourne un tableau d’interfaces `IDebugApplicationNode` qui représente les segments récupérés.  
   
  `pceltFetched`  
- [out] Le nombre réel de segments extraites par l’énumérateur.  
+ à Nombre réel de segments récupérés par l’énumérateur.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   

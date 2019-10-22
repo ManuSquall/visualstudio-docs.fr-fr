@@ -1,25 +1,25 @@
 ---
-title: Ensemble de règles des règles minimales mixtes | Microsoft Docs
+title: Ensemble de règles de règles minimales mixtes | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 ms.assetid: bc8df61c-19af-40ab-a871-315807e5f4bf
 caps.latest.revision: 6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 7c690389b5abc3b6e37aed1629ae5a640a5d99a7
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 36681eaa7a9e384c10d92ab26b214c782d2378a6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65682204"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654855"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Ensemble de règles des règles minimales mixtes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Les règles minimales mixtes de Microsoft vous concentrer sur les problèmes les plus critiques présents dans vos projets C++ qui prennent en charge le Common Language Runtime, y compris les failles de sécurité potentielles et les blocages d’application. Vous devez inclure cet ensemble de règles dans tout ensemble de règles personnalisé que vous créez pour vos projets C++ qui prennent en charge le Common Language Runtime.  
+Les règles minimales de Microsoft se concentrent sur les problèmes les C++ plus critiques dans vos projets qui prennent en charge le Common Language Runtime, y compris les failles de sécurité potentielles et les blocages d’application. Vous devez inclure cet ensemble de règles dans n’importe quel ensemble de règles personnalisé C++ que vous créez pour vos projets qui prennent en charge le Common Language Runtime.
 
 |                                            Règle                                             |                                                  Description                                                  |
 |---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
@@ -75,7 +75,7 @@ Les règles minimales mixtes de Microsoft vous concentrer sur les problèmes les
 |        [C6523](https://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)        |                                         Paramètre de chaîne de taille non valide                                         |
 |                              [C6525](../code-quality/c6525.md)                              |                                   Chaîne de taille non valide. Emplacement inaccessible                                    |
 |        [C6526](https://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)        |                                        Type de tampon de chaîne de taille non valide                                        |
-|                              [C6527](../code-quality/c6527.md)                              |              Annotation non valide : Propriété de 'NeedsRelease' ne peut pas être utilisée sur les valeurs de type void               |
+|                              [C6527](../code-quality/c6527.md)                              |              Annotation non valide : la propriété NeedsRelease ne doit pas être utilisée sur des valeurs de type void               |
 |                              [C6530](../code-quality/c6530.md)                              |                                       Style de chaîne de format non reconnu                                        |
 |                              [C6540](../code-quality/c6540.md)                              | L'utilisation des annotations d'attribut sur cette fonction rendra non valides toutes ses annotations __declspec existantes  |
 |                              [C6551](../code-quality/c6551.md)                              |                              Spécification de taille non valide : expression impossible à analyser                              |
@@ -101,7 +101,7 @@ Les règles minimales mixtes de Microsoft vous concentrer sur les problèmes les
 |                             [C28215](../code-quality/c28215.md)                             |                    Le typefix ne peut pas être appliqué à un paramètre qui contient déjà un typefix                    |
 |                             [C28216](../code-quality/c28216.md)                             |        L'annotation checkReturn ne s'applique qu'aux post-conditions pour le paramètre de fonction spécifique.         |
 |                             [C28217](../code-quality/c28217.md)                             |            Pour la fonction, le nombre de paramètres de l'annotation ne correspond pas au nombre trouvé dans le fichier             |
-|                             [C28218](../code-quality/c28218.md)                             |             Pour le paramètre de fonction, paramètre de l’annotation ne correspond pas trouvé dans le fichier              |
+|                             [C28218](../code-quality/c28218.md)                             |             Pour le paramètre de fonction, le paramètre de l’annotation ne correspond pas à celui trouvé dans le fichier              |
 |                             [C28219](../code-quality/c28219.md)                             |                 Membre de l'énumération attendu pour une annotation, le paramètre dans l'annotation                 |
 |                             [C28220](../code-quality/c28220.md)                             |                  Expression d'entier attendue pour une annotation, le paramètre dans l'annotation                   |
 |                             [C28221](../code-quality/c28221.md)                             |                        Expression de chaîne attendue pour le paramètre dans l'annotation                         |
@@ -146,7 +146,7 @@ Les règles minimales mixtes de Microsoft vous concentrer sur les problèmes les
 |                             [C28286](../code-quality/c28286.md)                             |                                    Pour la fonction, erreur de syntaxe près de la fin                                    |
 |                             [C28287](../code-quality/c28287.md)                             |                Pour la fonction, erreur de syntaxe dans l’annotation \_At\_() (nom de paramètre non reconnu)                |
 |                             [C28288](../code-quality/c28288.md)                             |                  Pour la fonction, erreur de syntaxe dans l’annotation \_At\_() (nom de paramètre non valide)                   |
-|                             [C28289](../code-quality/c28289.md)                             |                Pour la fonction : ReadableTo ou WritableTo n’avait pas une spécification de limite en tant que paramètre                |
+|                             [C28289](../code-quality/c28289.md)                             |                Pour la fonction : ReadableTo ou WritableTo n'a pas eu de spécification de limites en tant que paramètre                |
 |                             [C28290](../code-quality/c28290.md)                             |           l'annotation pour la fonction contient plus d'Externals que le nombre réel de paramètres            |
 |                             [C28291](../code-quality/c28291.md)                             |                        post null/notnull au niveau 0 deref n'a pas de sens pour la fonction.                        |
 |                             [C28300](../code-quality/c28300.md)                             |                            Opérandes d’expression de types incompatibles pour l’opérateur                             |

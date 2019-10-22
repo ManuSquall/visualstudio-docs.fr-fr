@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Création d’un DataTable dans le Concepteur de Dataset'
+title: "Procédure pas à pas : création d'un DataTable dans le Concepteur de DataSet"
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,33 +7,33 @@ helpviewer_keywords:
 - Dataset Designer, creating data tables
 - tables [Visual Studio], creating
 - data [Visual Studio], Dataset Designer
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1126117cb1fc26c4f61bfb0f6ed0e19e86ce9323
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9dbf7116c614a8eec599f197f975ab4c389bc950
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564920"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648067"
 ---
-# <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>Procédure pas à pas : Créer un DataTable dans le Concepteur de Dataset
+# <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>Procédure pas à pas : création d’un DataTable dans le Concepteur de DataSet
 
-Cette procédure pas à pas explique comment créer un <xref:System.Data.DataTable> (sans TableAdapter) à l’aide de la **Concepteur de Dataset**. Pour plus d’informations sur la création de tables de données comprenant des TableAdapters, consultez [créer et configurer des TableAdapters](../data-tools/create-and-configure-tableadapters.md).
+Cette procédure pas à pas explique comment créer une <xref:System.Data.DataTable> (sans TableAdapter) à l’aide de l' **Concepteur de DataSet**. Pour plus d’informations sur la création de tables de données qui incluent des TableAdapters, consultez [créer et configurer des TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
 ## <a name="create-a-new-windows-forms-application"></a>Créer une application Windows Forms
 
-1. Dans Visual Studio, sur le **fichier** menu, sélectionnez **New** > **projet**.
+1. Dans Visual Studio, dans le menu **fichier** , sélectionnez **nouveau**  > **projet**.
 
-2. Développez le **Visual C#** ou **Visual Basic** dans le volet gauche, puis sélectionnez **Windows Desktop**.
+2. Développez **Visual C#**  ou **Visual Basic** dans le volet gauche, puis sélectionnez **Bureau Windows**.
 
-3. Dans le volet central, sélectionnez le **Windows Forms application** type de projet.
+3. Dans le volet central, sélectionnez le type de projet d' **application Windows Forms** .
 
 4. Nommez le projet **DataTableWalkthrough**, puis choisissez **OK**.
 
-     Le **DataTableWalkthrough** projet est créé et ajouté à **l’Explorateur de solutions**.
+     Le projet **DataTableWalkthrough** est créé et ajouté à **Explorateur de solutions**.
 
 ## <a name="add-a-new-dataset-to-the-application"></a>Ajouter un nouveau jeu de données à l’application
 
@@ -45,21 +45,21 @@ Cette procédure pas à pas explique comment créer un <xref:System.Data.DataTab
 
 3. Sélectionnez **Ajouter**.
 
-     Visual Studio ajoute un fichier appelé **DataSet1.xsd** au projet et l’ouvre dans le **Concepteur de Dataset**.
+     Visual Studio ajoute un fichier appelé **DataSet1. xsd** au projet et l’ouvre dans le **Concepteur de DataSet**.
 
-## <a name="add-a-new-datatable-to-the-dataset"></a>Ajoutez un nouveau DataTable au Dataset
+## <a name="add-a-new-datatable-to-the-dataset"></a>Ajouter un nouveau DataTable au DataSet
 
-1. Faites glisser un **DataTable** à partir de la **DataSet** onglet de la **boîte à outils** sur le **Concepteur de Dataset**.
+1. Faites glisser un **DataTable** de l’onglet **DataSet** de la **boîte à outils** vers le **Concepteur de DataSet**.
 
-     Une table nommée **DataTable1** est ajouté au jeu de données.
+     Une table nommée **DataTable1** est ajoutée au DataSet.
 
-2. Cliquez sur la barre de titre de **DataTable1** et renommez-le `Music`.
+2. Cliquez sur la barre de titre de **DataTable1** et renommez-la `Music`.
 
-## <a name="add-columns-to-the-datatable"></a>Ajouter des colonnes à la table de données
+## <a name="add-columns-to-the-datatable"></a>Ajouter des colonnes au DataTable
 
-1. Cliquez sur le **musique** table. Pointez sur **ajouter**, puis cliquez sur **colonne**.
+1. Cliquez avec le bouton droit sur la table **Music** . Pointez sur **Ajouter**, puis cliquez sur **colonne**.
 
-2. Nom de la colonne `SongID`.
+2. Nommez la colonne `SongID`.
 
 3. Dans la fenêtre **Propriétés** , définissez la propriété <xref:System.Data.DataColumn.DataType%2A> sur <xref:System.Int16?displayProperty=fullName>.
 
@@ -71,15 +71,15 @@ Cette procédure pas à pas explique comment créer un <xref:System.Data.DataTab
 
      `Genre`: <xref:System.String?displayProperty=fullName>
 
-## <a name="set-the-primary-key-for-the-table"></a>Définissez la clé primaire pour la table
+## <a name="set-the-primary-key-for-the-table"></a>Définir la clé primaire de la table
 
 Toutes les tables de données doivent avoir une clé primaire. Une clé primaire identifie de façon unique un enregistrement spécifique dans une table de données.
 
-Pour définir la clé primaire, cliquez sur le **SongID** colonne, puis cliquez sur **définir la clé primaire**. Une icône de clé s’affiche en regard du **SongID** colonne.
+Pour définir la clé primaire, cliquez avec le bouton droit sur la colonne **SONGID** , puis cliquez sur **définir la clé primaire**. Une icône de clé apparaît en regard de la colonne **SONGID** .
 
 ## <a name="save-your-project"></a>Enregistrer votre projet
 
-Pour enregistrer le **DataTableWalkthrough** projet, dans le **fichier** menu, sélectionnez **Enregistrer tout**.
+Pour enregistrer le projet **DataTableWalkthrough** , dans le menu **fichier** , sélectionnez **enregistrer tout**.
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -1,31 +1,29 @@
 ---
-title: Pas pu récupérer les informations de schéma pour l’objet de base de données &lt;nom de l’objet&gt; | Microsoft Docs
+title: Impossible de récupérer les informations de schéma pour l’objet de base de données &lt;object le nom &gt; | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
 ms.topic: conceptual
 ms.assetid: a1c8f833-c918-4a86-9679-d2a791f938a9
 caps.latest.revision: 6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bbac0801e966c1ed338ad0b84b159d786d82f624
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: caa8b10bf1644084ab5551d99afe0745feac6280
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65705031"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651096"
 ---
-# <a name="could-not-retrieve-schema-information-for-database-object-ltobject-namegt"></a>Pas pu récupérer les informations de schéma pour l’objet de base de données &lt;nom d’objet&gt;
+# <a name="could-not-retrieve-schema-information-for-database-object-ltobject-namegt"></a>Impossible de récupérer les informations de schéma pour l’objet de base de données &lt;object le nom &gt;
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Ce message apparaît généralement lorsqu’un objet dans **Server Explorer/Database Explorer** est copié dans le Presse-papiers, supprimé de la base de données, puis collé dans le concepteur. Parce que l'objet de base de données n'existe plus, ce message apparaît.  
-  
-### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
-  
-- Cliquez sur **OK** pour fermer la boîte de dialogue.  
-  
-## <a name="see-also"></a>Voir aussi  
- [Outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [Procédure pas à pas : Création des Classes LINQ to SQL (Concepteur O-R)](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
- [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)
+Ce message apparaît généralement lorsqu’un objet dans **Explorateur de serveurs/Explorateur de base de données** est copié dans le presse-papiers, supprimé de la base de données, puis collé sur le concepteur. Parce que l'objet de base de données n'existe plus, ce message apparaît.
+
+### <a name="to-correct-this-error"></a>Pour corriger cette erreur
+
+- Cliquez sur **OK** pour fermer la boîte de dialogue.
+
+## <a name="see-also"></a>Voir aussi
+ [Outils de LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) [procédure pas à pas : création de classes de LINQ to SQL (Concepteur O-R)](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233) [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)

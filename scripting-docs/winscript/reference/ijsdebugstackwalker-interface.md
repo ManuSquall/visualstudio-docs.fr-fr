@@ -11,12 +11,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d06af2c509339d9499f66e1f267c54c69951e225
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3b06b8c1f9282c42599c798030440c30450ef6dd
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977810"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574015"
 ---
 # <a name="ijsdebugstackwalker-interface"></a>IJsDebugStackWalker, interface
 Représente un Explorateur de piles pour un thread spécifié.  
@@ -31,15 +31,15 @@ IJsDebugStackWalker : public IUnknown;
   
 ### <a name="public-methods"></a>M&#233;thodes publiques  
   
-|Nom|Description|  
+|Name|Description|  
 |----------|-----------------|  
 |[Méthode IJsDebugStackWalker::GetNext](../../winscript/reference/ijsdebugstackwalker-getnext-method.md)|Obtient le frame suivant.|  
   
 ## <a name="remarks"></a>Notes  
- Explorateurs de pile ne peuvent uniquement être créés alors que la cible est arrêté et ne sont pas valide une fois que le processus cible a été repris.  
+ Les monteurs de pile ne peuvent être créés que lorsque la cible est arrêtée et ne sont pas valides une fois que le processus cible a été de nouveau poursuivi.  
   
-## <a name="requirements"></a>Configuration requise  
- **En-tête :** jscript9diag.h  
+## <a name="requirements"></a>spécifications  
+ **En-tête :** jscript9diag. h  
   
 ## <a name="see-also"></a>Voir aussi  
  [Référence d’interfaces de script Windows](../../winscript/reference/windows-script-interfaces-reference.md)

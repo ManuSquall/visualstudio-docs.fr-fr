@@ -26,19 +26,19 @@ helpviewer_keywords:
 - warnings, files changed
 - Solution Explorer, displaying files in
 ms.assetid: 4e3ccf1b-cd68-4db6-9470-710c911b47fc
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a09036e0c0f83d262760598dd02e6cf6e8cdd38e
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
-ms.translationtype: HT
+ms.openlocfilehash: ff1b5e83d9aaca0181699e3cc7effcc973ef2349
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68606072"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661631"
 ---
-# <a name="options-dialog-box-environment--documents"></a>Boîte de dialogue Options : Environnement \> Documents
+# <a name="options-dialog-box-environment--documents"></a>Boîte de dialogue Options : documents de \> d’environnement
 
 Utilisez cette page de la boîte de dialogue **Options** pour contrôler l’affichage des documents dans l’environnement de développement intégré (IDE) et pour gérer les modifications externes apportées aux documents et aux fichiers. Vous pouvez accéder à cette boîte de dialogue en cliquant sur **Options** dans le menu **Outils**, puis en sélectionnant **Environnement** > **Documents**.
 

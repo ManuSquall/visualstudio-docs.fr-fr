@@ -1,21 +1,21 @@
 ---
-title: 'Procédure : Modifier le point pivot d’un modèle 3D'
+title: Guide pratique pour modifier le point pivot d’un modèle 3D
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c20b4ec8-29f5-4ca5-bc39-d4548ca6f573
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b1baa6a42d0874cdefaa8cfb781f66e864d82b2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a2c49e42009c81f6932f76128f12fb37399a789b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62897451"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635466"
 ---
-# <a name="how-to-modify-the-pivot-point-of-a-3d-model"></a>Procédure : Modifier le point pivot d’un modèle 3D
+# <a name="how-to-modify-the-pivot-point-of-a-3d-model"></a>Guide pratique pour modifier le point pivot d’un modèle 3D
 
 Cet article montre comment utiliser l’éditeur de modèle pour modifier le *point pivot* d’un modèle 3D. Le point pivot est le point dans l’espace qui définit le centre de l’objet pour sa rotation et sa mise à l’échelle.
 
@@ -44,5 +44,5 @@ Voici un modèle dont un point pivot est modifié :
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Guide pratique pour créer un modèle 3D de base](../designers/how-to-create-a-basic-3-d-model.md)
+- [Guide pratique pour créer un modèle 3D de base](../designers/how-to-create-a-basic-3-d-model.md)
 - [Éditeur de modèles](../designers/model-editor.md)

@@ -1,21 +1,21 @@
 ---
-title: Tester une application volumineuse avec plusieurs mappages d’interface utilisateur
+title: Tester une grande application avec plusieurs mappages d’interface utilisateur
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests, multiple UI maps
 - coded UI tests, for large applications
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4eb49e4e84f61e817e3df8bbbdd20c6922d180ee
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 86a4ad5c44c124ee7faf9ac633f2a78685adb426
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926740"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659905"
 ---
 # <a name="test-a-large-application-with-multiple-ui-maps"></a>Tester une application volumineuse avec plusieurs mappages d’interface utilisateur
 
@@ -23,7 +23,7 @@ Cette rubrique explique comment utiliser des tests codés de l'interface utilisa
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-**Spécifications**
+**Prérequis**
 
 - Visual Studio Enterprise
 
@@ -79,7 +79,7 @@ Créez plusieurs mappages d'IU dans chacun des types de situations suivants :
 
    Pour limiter ce risque, vous pouvez utiliser la méthode `CopyFrom()` pour vous assurer que la nouvelle fenêtre de niveau supérieur dans ce mappage d’IU est identique à la fenêtre de niveau supérieur principale.
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
 
 L'exemple suivant fait partie d'une classe utilitaire qui fournit l'accès à chaque composant et à ses composants enfants représentés par les classes générées dans les différents mappages d'IU.
 

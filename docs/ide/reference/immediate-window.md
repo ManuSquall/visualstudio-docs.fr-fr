@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Immediate window
 - first-chance exception notifications
 ms.assetid: d33e7937-73f3-4c69-9df0-777a8713c6f2
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3a8315b087e259e7e1e37dfa8ab30d476bea308
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: fa5f804c22090fa79586549db00b13d824a54690
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62995256"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662525"
 ---
 # <a name="immediate-window"></a>Exécution (fenêtre)
 
@@ -78,7 +78,7 @@ Vous pouvez utiliser la fenêtre **Exécution** pour exécuter une fonction ou u
 
     La fenêtre **Exécution** exécute `MyFunction` et affiche `4`.
 
-Si la fonction ou la sous-routine contient un point d’arrêt, Visual Studio arrête l’exécution à ce point. Vous pouvez ensuite utiliser les fenêtres du débogueur pour examiner l’état de votre programme. Pour plus d’informations, consultez [Procédure pas à pas : Déboguer au moment du design](../../debugger/walkthrough-debugging-at-design-time.md).
+Si la fonction ou la sous-routine contient un point d’arrêt, Visual Studio arrête l’exécution à ce point. Vous pouvez ensuite utiliser les fenêtres du débogueur pour examiner l’état de votre programme. Pour plus d’informations, consultez [procédure pas à pas : débogage au moment du design](../../debugger/walkthrough-debugging-at-design-time.md).
 
 Vous ne pouvez pas utiliser l’évaluation des expressions au moment du design dans les types de projet qui requièrent le démarrage d’un environnement d’exécution, notamment les projets Visual Studio Tools pour Office, projets web, projets Smart Device et projets SQL.
 
@@ -134,6 +134,6 @@ Dans certaines configurations de paramètres, les notifications d’exceptions d
 - [Naviguer dans le code avec le débogueur](../../debugger/navigating-through-code-with-the-debugger.md)
 - [Commande, fenêtre](../../ide/reference/command-window.md)
 - [Présentation du débogueur](../../debugger/debugger-feature-tour.md)
-- [Procédure pas à pas : Déboguer au moment du design](../../debugger/walkthrough-debugging-at-design-time.md)
+- [Procédure pas à pas : débogage au moment de la conception](../../debugger/walkthrough-debugging-at-design-time.md)
 - [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
 - [Utilisation d’expressions régulières dans Visual Studio](../../ide/using-regular-expressions-in-visual-studio.md)

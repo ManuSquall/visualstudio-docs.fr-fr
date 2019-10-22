@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::Detach | Microsoft Docs
+title: IDebugDocumentHelper ::D Etach | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 74b6ce51e78cb376263227461d653169fd6a406b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 876e23d3466352cb244cc445b2435f556bb88160
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783468"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576960"
 ---
 # <a name="idebugdocumenthelperdetach"></a>IDebugDocumentHelper::Detach
-Supprime ce document à partir de l’arborescence du document.  
+Supprime ce document de l’arborescence du document.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -34,18 +34,18 @@ HRESULT Detach();
 ```  
   
 #### <a name="parameters"></a>Paramètres  
- Cette méthode ne prend aucun paramètre.  
+ Cette méthode n’accepte aucun paramètre.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode supprime ce document à partir de l’arborescence du document.  
+ Cette méthode supprime ce document de l’arborescence du document.  
   
 ## <a name="see-also"></a>Voir aussi  
- [IDebugDocumentHelper::Attach](../../winscript/reference/idebugdocumenthelper-attach.md)   
+ [IDebugDocumentHelper :: Attach](../../winscript/reference/idebugdocumenthelper-attach.md)    
  [Interface IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)

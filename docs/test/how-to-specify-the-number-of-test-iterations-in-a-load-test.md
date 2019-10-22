@@ -6,19 +6,19 @@ helpviewer_keywords:
 - load tests, properties
 - load tests, run settings
 ms.assetid: 45a625db-b3e7-4d64-beda-b9a76248096d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 277c2ad8ffa6ebad55de3957f3d98917a4765ee1
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
-ms.translationtype: HT
+ms.openlocfilehash: aa5de5f7f9c1bfef78ad3698886e8d7af43a4812
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66431980"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653397"
 ---
-# <a name="how-to-specify-the-number-of-test-iterations-in-a-load-test-run-setting"></a>Procédure : spécifier le nombre d’itérations de tests dans un paramètre d’exécution de test de charge
+# <a name="how-to-specify-the-number-of-test-iterations-in-a-load-test-run-setting"></a>Guide pratique pour spécifier le nombre d’itérations de tests dans un paramètre de test de charge
 
-Après avoir créé votre test de charge avec l’**Assistant Nouveau test de charge**, vous pouvez utiliser l’**éditeur de test de charge** pour changer les propriétés des scénarios en fonction de vos besoins et objectifs. Pour plus d’informations, consultez [Procédure pas à pas : créer et exécuter un test de charge](../test/walkthrough-create-and-run-a-load-test.md).
+Après avoir créé votre test de charge avec **l’Assistant Nouveau test de charge**, vous pouvez utiliser **l’éditeur de test de charge** pour changer les propriétés des scénarios afin de répondre à vos besoins et vos objectifs de test. Pour plus d’informations, consultez [Procédure pas à pas : création et exécution d’un test de charge](../test/walkthrough-create-and-run-a-load-test.md).
 
 À l’aide de l’**éditeur de test de charge**, vous pouvez modifier la propriété **Itérations de tests** associée à une valeur de paramètres d’exécution dans la fenêtre **Propriétés**. La propriété **Itérations de tests** spécifie le nombre d’itérations à exécuter sur tous les tests unitaires et tests de performances web dans tous les scénarios d’un test de charge, à l’aide de l’**éditeur de test de charge**.
 
@@ -41,7 +41,7 @@ Après avoir créé votre test de charge avec l’**Assistant Nouveau test de ch
 
 5. Dans la propriété **Itérations de tests**, entrez une valeur indiquant le nombre d’itérations de tests à exécuter durant le test de charge.
 
-6. Après avoir changé la propriété, choisissez **Enregistrer** dans le menu **Fichier**. Vous pouvez exécuter ensuite votre test de charge à l’aide de la nouvelle valeur associée à **Itérations de tests**.
+6. Après avoir fini de changer la propriété, choisissez **Enregistrer** dans le menu **Fichier**. Vous pouvez exécuter ensuite votre test de charge à l’aide de la nouvelle valeur associée à **Itérations de tests**.
 
 ## <a name="see-also"></a>Voir aussi
 

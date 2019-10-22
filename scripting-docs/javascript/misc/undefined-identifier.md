@@ -14,26 +14,26 @@ ms.assetid: 8c8000d9-dd14-487e-922d-98430024a0f6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ee928a945081d1ac1369a71d11f74f2c5db2b365
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b55b6d695cded9b7effac664dfca6ca9904e9d84
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63005912"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572545"
 ---
 # <a name="undefined-identifier"></a>Identificateur non défini
-Vous avez tenté d’utiliser un identificateur qui la [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] compilateur ne reconnaît pas. La valeur undefined est retournée à chaque fois que vous utilisez :  
+Vous avez tenté d’utiliser un identificateur que le compilateur de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] ne reconnaît pas. La valeur non définie est retournée chaque fois que vous utilisez :  
   
 - une variable qui n’existe pas,  
   
-- une variable qui a été déclarée, mais jamais eu une valeur qui lui est assignée,  
+- une variable qui a été déclarée, mais dont la valeur n’a jamais été assignée,  
   
-- une propriété d’objet qui n’existe pas.  
+- propriété d’objet qui n’existe pas.  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
-- Déclarez la variable avec un **var** instruction (comme dans `var` x ;).  
+- Déclarez la variable avec une instruction **var** (comme dans `var` x ;).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Variables](../../javascript/variables-javascript.md)   
+ [Variables](../../javascript/variables-javascript.md)    
  [Portée des variables](../../javascript/advanced/variable-scope-javascript.md)

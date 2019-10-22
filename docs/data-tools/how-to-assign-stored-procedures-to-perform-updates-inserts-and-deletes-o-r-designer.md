@@ -3,27 +3,27 @@ title: Utiliser des procédures stockées dans LINQ to SQL pour mettre à jour d
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e88224ab-ff61-4a3a-b6b8-6f3694546cac
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3dfb55425934f00de41af7997ed1ed4b5a9bcf42
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 019bf6b115fc526e39a3bc65bd9d0607c1a976db
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71252998"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648389"
 ---
-# <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Procédure : affecter des procédures stockées pour effectuer des mises à jour, des insertions et des suppressions (Concepteur O/R)
+# <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Guide pratique pour affecter des procédures stockées pour effectuer des mises à jour, des insertions et des suppressions (Concepteur O/R)
 
-Les procédures stockées peuvent être ajoutées au **Concepteur O/R** et exécutées comme méthodes <xref:System.Data.Linq.DataContext> typiques. Elles peuvent également être utilisées pour substituer le comportement par défaut LINQ to SQL au moment de l’exécution qui effectue des insertions, des mises à jour et des suppressions lorsque des modifications sont enregistrées à partir de classes d’entité <xref:System.Data.Linq.DataContext.SubmitChanges%2A> dans une base de données (par exemple, lors de l’appel de la méthode).
+Les procédures stockées peuvent être ajoutées au **Concepteur O/R** et exécutées comme méthodes <xref:System.Data.Linq.DataContext> typiques. Elles peuvent également être utilisées pour substituer le comportement par défaut LINQ to SQL au moment de l’exécution qui effectue des insertions, des mises à jour et des suppressions lorsque des modifications sont enregistrées à partir de classes d’entité dans une base de données (par exemple, lors de l’appel de la méthode <xref:System.Data.Linq.DataContext.SubmitChanges%2A>).
 
 > [!NOTE]
 > Si votre procédure stockée retourne des valeurs qui doivent être renvoyées au client (par exemple, les valeurs sont calculées dans la procédure stockée), créez des paramètres de sortie dans vos procédures stockées. Si vous ne pouvez pas utiliser de paramètres de sortie, écrivez une implémentation de méthode partielle au lieu de vous fier aux substitutions générées par le Concepteur O/R. Les membres mappés aux valeurs générées par base de données doivent avoir les valeurs appropriées lorsque les opérations INSERT ou UPDATE se sont correctement achevées. Pour plus d’informations, consultez [responsabilités du développeur en matière de substitution du comportement par défaut](/dotnet/framework/data/adonet/sql/linq/responsibilities-of-the-developer-in-overriding-default-behavior).
 
 > [!NOTE]
-> LINQ to SQL gère automatiquement les valeurs générées par la base de données pour les colonnes Identity (incrémentation automatique), rowguidcol (GUID généré par la base de données) et timestamp. Les valeurs générées par une base de données dans les autres types de colonne entraînent une valeur null de manière inopinée. Pour retourner les valeurs générées par la base de données, <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> vous devez définir <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> manuellement sur **true** et sur l’un des éléments suivants : [AutoSync. Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>), [AutoSync. OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>)ou [AutoSync. OnUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>).
+> LINQ to SQL gère automatiquement les valeurs générées par la base de données pour les colonnes Identity (incrémentation automatique), rowguidcol (GUID généré par la base de données) et timestamp. Les valeurs générées par une base de données dans les autres types de colonne entraînent une valeur null de manière inopinée. Pour retourner les valeurs générées par la base de données, vous devez définir manuellement <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> sur **true** et <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> sur l’un des éléments suivants : [AutoSync. Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>), [AutoSync. OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>)ou [AutoSync. OnUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>).
 
 ## <a name="configure-the-update-behavior-of-an-entity-class"></a>Configurer le comportement de mise à jour d’une classe d’entité
 
@@ -51,7 +51,7 @@ Par défaut, la logique de mise à jour d’une base de données (insertions, mi
 
 8. Sélectionnez la procédure stockée voulue dans la liste **Personnaliser**.
 
-9. Inspectez la liste des **Arguments de méthode** et des **Propriétés de classe** pour vérifier que les **Arguments de méthode** mappent aux **Propriétés de classe** appropriées. Mappez les arguments de méthode`Original_<ArgumentName>`d’origine () aux propriétés`<PropertyName> (Original)`d’origine ( `Update` ) `Delete` pour les commandes et.
+9. Inspectez la liste des **Arguments de méthode** et des **Propriétés de classe** pour vérifier que les **Arguments de méthode** mappent aux **Propriétés de classe** appropriées. Mappez les arguments de méthode d’origine (`Original_<ArgumentName>`) aux propriétés d’origine (`<PropertyName> (Original)`) pour les commandes `Update` et `Delete`.
 
     > [!NOTE]
     > Par défaut, les arguments de méthode sont mappés à des propriétés de classe lorsque les noms correspondent. Si les noms de propriété ont été modifiés et ne correspondent plus entre la table et la classe d'entité, vous devrez peut-être sélectionner la propriété de classe équivalente à mapper si le Concepteur O/R ne peut pas déterminer le mappage correct.

@@ -2,7 +2,7 @@
 title: Améliorer votre productivité pour le développement .NET
 description: Vue d’ensemble de la navigation, de l’analyse du code, des tests unitaires et d’autres fonctionnalités qui vont vous aider à écrire du code .NET plus performant plus rapidement.
 author: kuhlenh
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.date: 04/25/2019
 ms.topic: conceptual
@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: bd36b75f3df640df0e1910fb3a7a52d17c37d30f
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
-ms.translationtype: HT
+ms.openlocfilehash: 69dd92c2dae1a042e37601917bcdef628400d8bf
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328775"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652591"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>Guide de productivité Visual Studio pour les développeurs C#
 
@@ -149,14 +149,14 @@ Plusieurs membres de la communauté ont écrit des extensions gratuites qui ajou
 
 Visual Studio contient de nombreuses fonctionnalités qui vous permettent de rechercher et de [parcourir votre code](../ide/navigating-code.md).
 
-| Fonctionnalité | Raccourci | Détails/améliorations |
+| Fonction | Raccourci | Détails/améliorations |
 |- | - | -|
 | Rechercher toutes les références | **Maj**+**F12**| Les résultats sont en couleur et peuvent être regroupés par projet, définition et type de référence, par exemple lecture ou écriture. Vous pouvez également « verrouiller » les résultats. |
 | Accéder à l’implémentation | **Ctrl**+**F12** | Vous pouvez utiliser Atteindre la définition sur le mot clé `override` pour accéder au membre substitué |
 | Atteindre la définition | **F12** ou **Ctrl**+**Clic**| Appuyez sur la touche **Ctrl** et cliquez pour accéder à la définition |
-| Aperçu de définition | **Alt**+**F12** | Vue inline d’une définition |
+| Aperçu de la définition | **Alt**+**F12** | Vue inline d’une définition |
 | Visualiseur de structure | Lignes grises en pointillés entre accolades | Placez le curseur pour voir la structure de votre code |
-| Navigation vers les assemblys décompilés | **F12** ou **Ctrl**+**Clic** | Accédez à la source externe (décompilée avec ILSpy) en activant la fonctionnalité : **Outils** > **Options** > **Éditeur de texte** > **C#**  > **Avancé** > **Activer la navigation vers les sources décompilées**. |
+| Navigation vers les assemblys décompilés | **F12** ou **Ctrl**+**Clic** | Accédez à une source externe (décompilée avec ILSpy) en activant la fonctionnalité : **Outils** > **Options** > **Éditeur de texte** > **C#**  > **Avancé** > **Activer la navigation vers les sources décompilées**. |
 
 ![Accéder à tout et Rechercher toutes les références](../ide/media/VSIDE_Productivity_Navigation.png)
 
@@ -221,7 +221,7 @@ Vous pouvez utiliser git ou TFVC pour stocker et mettre à jour votre code dans 
 
 Voici une liste de fonctionnalités de l’éditeur liées à la productivité pour rendre l’écriture de code plus efficace. Vous devrez peut-être activer certaines fonctionnalités, car elles sont désactivées par défaut (elles peuvent éventuellement indexer des éléments sur votre machine, être controversées ou être à l’état expérimental).
 
-| Fonctionnalité | Détails | Comment activer |
+| Fonction | Détails | Comment activer |
 |-|-|-|
 | Rechercher un fichier dans l’Explorateur de solutions | Met en évidence le fichier actif dans **Explorateur de solutions** | **Outils** > **Options** > **Projets et solutions** > **Suivre un élément actif dans l’Explorateur de solutions** |
 | Ajouter des instructions using pour les types dans les assemblys de référence et les packages NuGet | Affiche une ampoule d’erreur avec un correctif de code pour installer un package NuGet pour un type non référencé | **Outils** > **Options** > **Éditeur de texte** > **C#**  > **Avancé** > **Suggérer des usings pour les types dans les assemblys de référence** et **Suggérer des usings pour les types dans les packages NuGet** |

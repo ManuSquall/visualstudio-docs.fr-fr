@@ -1,25 +1,25 @@
 ---
-title: 'Procédure pas à pas : Création d’une boule de billard 3D réaliste'
+title: 'Procédure pas à pas : création d’une boule de billard 3D réaliste'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: af8eb0f3-bf6a-4d1c-ab47-dcd88ab04efa
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f5788b2c6b2dab4b6f0f7a6c520aa1f2ab5f9ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 95125e2f808dde634435e4eeb2254e397fceb140
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844613"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72634544"
 ---
-# <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>Procédure pas à pas : Créer une boule de billard 3D réaliste
+# <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>Procédure pas à pas : créer une boule de billard 3D réaliste
 
 Cette procédure pas à pas montre comment créer une boule de billard 3D réaliste en utilisant le concepteur Shader et l’Éditeur d’images dans Visual Studio. L’apparence 3D de la boule de billard s’obtient en combinant plusieurs techniques de nuanceur avec les ressources de texture appropriées.
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Configuration requise
 
 Pour exécuter cette procédure pas à pas, vous aurez besoin des composants et compétences suivants :
 
@@ -210,7 +210,7 @@ La première étape consiste à créer une texture de carte cubique . Dans de no
 ## <a name="see-also"></a>Voir aussi
 
 - [Guide pratique pour exporter un nuanceur](../designers/how-to-export-a-shader.md)
-- [Guide pratique pour appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
-- [Concepteur Shader](../designers/shader-designer.md)
+- [Guide pratique pour appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Concepteur de nuanceur](../designers/shader-designer.md)
 - [Image Editor](../designers/image-editor.md)
 - [Nœuds du concepteur Shader](../designers/shader-designer-nodes.md)

@@ -15,19 +15,19 @@ helpviewer_keywords:
 - Options dialog box, General Environment
 - General Environment Options dialog box
 - Environment Options dialog box
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb1dbbcc4adf8305aad119ac8a4cb223e0f89902
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.openlocfilehash: 36e7efa9176b2e685463330b3ca8dbd714ec4555
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180281"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660045"
 ---
-# <a name="options-dialog-box-environment--general"></a>Boîte de dialogue Options : Environnement \> Général
+# <a name="options-dialog-box-environment--general"></a>Boîte de dialogue Options : environnement \> général
 
 Utilisez cette page pour modifier les thèmes de couleurs, les paramètres de la barre d'état et les associations d'extensions de fichier, entre autres options, pour l'environnement de développement intégré (IDE). Vous pouvez accéder à la boîte de dialogue **Options** en ouvrant le menu **Outils**, en choisissant **Options**, en ouvrant le dossier **Environnement**, puis en choisissant la page **Général**. Si cette page n’apparaît pas dans la liste, cochez la case **Afficher tous les paramètres** dans la boîte de dialogue **Options**.
 

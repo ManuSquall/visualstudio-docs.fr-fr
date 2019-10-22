@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Générer une application'
+title: 'Procédure pas à pas : générer une application'
 ms.date: 09/25/2017
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -8,14 +8,14 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8964fc81b8323b6720d7c6d960449c7a9134658b
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
-ms.translationtype: HT
+ms.openlocfilehash: 0f94cc62cdadb2df3806f5b188278f49e4041235
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416887"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647173"
 ---
-# <a name="walkthrough-build-an-application"></a>Procédure pas à pas : Générer une application
+# <a name="walkthrough-build-an-application"></a>Procédure pas à pas : générer une application
 
 Avec cette procédure pas à pas, vous allez vous familiariser avec plusieurs options qu’il est possible de configurer lors de la génération d’applications avec Visual Studio. Vous allez créer une configuration de build personnalisée, masquer certains messages d’avertissement et afficher davantage d’informations de sortie de build dans un exemple d’application.
 
@@ -25,7 +25,7 @@ Téléchargez l’exemple [Introduction to Building WPF Applications](https://co
 
 ## <a name="create-a-custom-build-configuration"></a>Créer une configuration de build personnalisée
 
-Lorsque vous créez une solution, les configurations de build Debug et Release, et leurs plateformes cibles par défaut, sont automatiquement définies pour la solution. Vous pouvez ensuite personnaliser ces configurations ou créer les vôtres. Les configurations de build spécifient le type de build. Les plateformes de build spécifient le système d’exploitation qui est ciblé par une application pour cette configuration. Pour plus d’informations, consultez [Présentation des configurations de build](../ide/understanding-build-configurations.md), [Présentation des plateformes de build](../ide/understanding-build-platforms.md) et [Guide pratique pour Définir des configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md).
+Lorsque vous créez une solution, les configurations de build Debug et Release, et leurs plateformes cibles par défaut, sont automatiquement définies pour la solution. Vous pouvez ensuite personnaliser ces configurations ou créer les vôtres. Les configurations de build spécifient le type de build. Les plateformes de build spécifient le système d’exploitation qui est ciblé par une application pour cette configuration. Pour plus d’informations, consultez [Présentation des configurations de build](../ide/understanding-build-configurations.md), [Présentation des plateformes de build](../ide/understanding-build-platforms.md) et [Comment : définir des configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md).
 
 Vous pouvez modifier ou créer des configurations et des paramètres de plateforme dans la boîte de dialogue **Gestionnaire de configurations**. Dans cette procédure, vous allez créer une configuration de build à des fins de test.
 
@@ -65,7 +65,7 @@ Ensuite, vous allez générer la solution avec la configuration de build personn
 
 ### <a name="build-the-solution"></a>Générer la solution
 
-- Dans la barre de menus, choisissez **Générer**  >  **Générer la solution**.
+- Dans la barre de menus, choisissez **générer**  > **générer la solution**, ou appuyez sur **CTRL** +**MAJ** +**B**.
 
     La fenêtre **Sortie** affiche les résultats de la génération. La génération a réussi.
 
@@ -75,7 +75,7 @@ Nous présenterons ensuite du code qui provoque la génération d’un avertisse
 
 1. Dans le projet C#, ouvrez le fichier *ExpenseReportPage.xaml.cs*. Dans la méthode **ExpenseReportPage**, ajoutez le code suivant : `int i;`.
 
-    OU
+    OR
 
     Dans le projet Visual Basic, ouvrez le fichier *ExpenseReportPage.xaml.vb*. Dans le constructeur personnalisé **Public Sub New...** , ajoutez le code suivant : `Dim i`.
 
@@ -129,7 +129,7 @@ Vous pouvez temporairement masquer certains messages d’avertissement pendant l
 
    ![Fenêtre Sortie, Avertissement sur la génération Visual Basic](../ide/media/buildwalk_visualbasicbuildwarnings.png)
 
-   Pour plus d'informations, voir [Procédure : supprimer les avertissements du compilateur](../ide/how-to-suppress-compiler-warnings.md).
+   Pour plus d’informations, consultez [Guide pratique pour supprimer les avertissements du compilateur](../ide/how-to-suppress-compiler-warnings.md).
 
 ## <a name="display-additional-build-details-in-the-output-window"></a>Afficher des informations de génération supplémentaires dans la fenêtre Sortie
 
@@ -161,13 +161,13 @@ Vous pouvez modifier la quantité d’informations relatives au processus de gé
     > [!TIP]
     > Pour effectuer une recherche dans la fenêtre **Sortie**, affichez la boîte de dialogue **Rechercher** en appuyant sur les touches**Ctrl**+**F**.
 
-Pour plus d'informations, voir [Procédure : afficher, enregistrer et configurer des fichiers journaux de génération](../ide/how-to-view-save-and-configure-build-log-files.md).
+Pour plus d’informations, consultez [Comment : afficher, enregistrer et configurer des fichiers journaux de génération](../ide/how-to-view-save-and-configure-build-log-files.md).
 
 ## <a name="create-a-release-build"></a>Créer une version Release
 
 Vous pouvez créer une version de l’exemple d’application qui soit optimisée pour sa livraison. Pour la version Release, vous allez spécifier que le fichier exécutable doit être copié vers un partage réseau avant que la génération ne démarre.
 
-Pour plus d'informations, voir [Procédure : Changer le répertoire de sortie de build](../ide/how-to-change-the-build-output-directory.md) et [Générer et nettoyer des projets et des solutions dans Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md).
+Pour plus d’informations, consultez [Guide pratique pour modifier le répertoire de sortie de la génération](../ide/how-to-change-the-build-output-directory.md) et [Générer et nettoyer des projets et des solutions dans Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md).
 
 ### <a name="specify-a-release-build-for-visual-basic"></a>Spécifier une version Release pour Visual Basic
 
@@ -223,6 +223,6 @@ Félicitations ! La procédure pas à pas est terminée.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Procédure pas à pas : Générer un projet (C++)](/cpp/ide/walkthrough-building-a-project-cpp)
+- [Procédure pas à pas : générer un projet (C++)](/cpp/ide/walkthrough-building-a-project-cpp)
 - [Présentation de la précompilation de projets d’application web ASP.NET](/previous-versions/aspnet/aa983464\(v\=vs.110\))
-- [Procédure pas à pas : Utiliser MSBuild](../msbuild/walkthrough-using-msbuild.md)
+- [Procédure pas à pas : utiliser MSBuild](../msbuild/walkthrough-using-msbuild.md)

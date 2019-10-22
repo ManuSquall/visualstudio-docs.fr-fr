@@ -23,55 +23,55 @@ helpviewer_keywords:
 - TableAdapters
 ms.assetid: 012c5924-91f7-4790-b2a6-f51402b7014b
 caps.latest.revision: 15
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 924a14cc3938420f32a1a2c25265ebe94e261b15
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 58500e59a624dac55824033b8b9667754a9040c5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431960"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657371"
 ---
 # <a name="directly-access-the-database-with-a-tableadapter"></a>Accéder directement à la base de données avec un TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Outre le `InsertCommand`, `UpdateCommand`, et `DeleteCommand`, les TableAdapters sont créés avec des méthodes qui peuvent être exécutées directement sur la base de données. Ces méthodes (`TableAdapter.Insert`, `TableAdapter.Update`, et `TableAdapter.Delete`) peut être appelé pour manipuler des données directement dans la base de données.  
-  
- Si vous ne souhaitez pas créer ces méthodes directes, affectez à la `GenerateDbDirectMethods` propriété `false` dans le **propriétés** fenêtre. Si toutes les requêtes sont ajoutés à un TableAdapter en plus de la requête principale du TableAdapter, ils sont des requêtes autonomes qui ne génèrent pas ces méthodes DbDirect.  
-  
-## <a name="sendcommandsdirectly-to-a-database"></a>Sendcommandsdirectly à une base de données  
- Appelez la méthode DbDirect du TableAdapter qui effectue la tâche que vous essayez d’accomplir.  
-  
-#### <a name="to-insert-new-records-directly-into-a-database"></a>Pour insérer de nouveaux enregistrements directement dans une base de données  
-  
-- Appelez le TableAdapter `Insert` méthode, en passant les valeurs pour chaque colonne en tant que paramètres. La procédure suivante utilise le `Region` de table dans le databaseas Northwind un exemple.  
-  
+En plus des `InsertCommand`, `UpdateCommand` et `DeleteCommand`, les TableAdapters sont créés avec des méthodes qui peuvent être exécutées directement sur la base de données. Ces méthodes (`TableAdapter.Insert`, `TableAdapter.Update` et `TableAdapter.Delete`) peuvent être appelées pour manipuler les données directement dans la base de données.
+
+ Si vous ne souhaitez pas créer ces méthodes directes, définissez la propriété `GenerateDbDirectMethods` du TableAdapter sur `false` dans la fenêtre **Propriétés** . Si des requêtes sont ajoutées à un TableAdapter en plus de la requête principale du TableAdapter, il s’agit de requêtes autonomes qui ne génèrent pas ces méthodes DbDirect.
+
+## <a name="sendcommandsdirectly-to-a-database"></a>Sendcommandsdirectly à une base de données
+ Appelez la méthode DbDirect du TableAdapter qui effectue la tâche que vous essayez d’accomplir.
+
+#### <a name="to-insert-new-records-directly-into-a-database"></a>Pour insérer de nouveaux enregistrements directement dans une base de données
+
+- Appelez la méthode `Insert` du TableAdapter, en passant les valeurs de chaque colonne en tant que paramètres. La procédure suivante utilise la table `Region` de la base de données Northwind en est un exemple.
+
     > [!NOTE]
-    > Si vous n’avez pas d’instance disponible, instanciez le TableAdapter que vous souhaitez utiliser.  
-  
+    > Si vous n’avez pas d’instance disponible, instanciez le TableAdapter que vous souhaitez utiliser.
+
      [!code-csharp[VbRaddataSaving#15](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Class1.cs#15)]
-     [!code-vb[VbRaddataSaving#15](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#15)]  
-  
-#### <a name="to-update-records-directly-in-a-database"></a>Pour mettre à jour des enregistrements directement dans une base de données  
-  
-- Appelez le TableAdapter `Update` méthode, en passant les valeurs nouvelles et originale pour chaque colonne en tant que paramètres.  
-  
+     [!code-vb[VbRaddataSaving#15](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#15)]
+
+#### <a name="to-update-records-directly-in-a-database"></a>Pour mettre à jour des enregistrements directement dans une base de données
+
+- Appelez la méthode `Update` du TableAdapter, en passant les valeurs nouvelles et originales pour chaque colonne en tant que paramètres.
+
     > [!NOTE]
-    > Si vous n’avez pas d’instance disponible, instanciez le TableAdapter que vous souhaitez utiliser.  
-  
+    > Si vous n’avez pas d’instance disponible, instanciez le TableAdapter que vous souhaitez utiliser.
+
      [!code-csharp[VbRaddataSaving#18](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Class1.cs#18)]
-     [!code-vb[VbRaddataSaving#18](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#18)]  
-  
-#### <a name="to-delete-records-directly-from-a-database"></a>Pour supprimer des enregistrements directement à partir d’une base de données  
-  
-- Appelez le TableAdapter `Delete` méthode, en passant les valeurs pour chaque colonne en tant que paramètres de la `Delete` (méthode). La procédure suivante utilise le `Region` de table dans le databaseas Northwind un exemple.  
-  
+     [!code-vb[VbRaddataSaving#18](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#18)]
+
+#### <a name="to-delete-records-directly-from-a-database"></a>Pour supprimer des enregistrements directement d’une base de données
+
+- Appelez la méthode `Delete` du TableAdapter, en passant les valeurs de chaque colonne en tant que paramètres de la méthode `Delete`. La procédure suivante utilise la table `Region` de la base de données Northwind en est un exemple.
+
     > [!NOTE]
-    > Si vous n’avez pas d’instance disponible, instanciez le TableAdapter que vous souhaitez utiliser.  
-  
+    > Si vous n’avez pas d’instance disponible, instanciez le TableAdapter que vous souhaitez utiliser.
+
      [!code-csharp[VbRaddataSaving#21](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Class1.cs#21)]
-     [!code-vb[VbRaddataSaving#21](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#21)]  
-  
-## <a name="see-also"></a>Voir aussi  
+     [!code-vb[VbRaddataSaving#21](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#21)]
+
+## <a name="see-also"></a>Voir aussi
  [Remplir des datasets à l’aide de TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)

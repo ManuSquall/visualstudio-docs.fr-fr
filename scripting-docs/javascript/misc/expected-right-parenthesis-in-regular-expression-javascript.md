@@ -1,5 +1,5 @@
 ---
-title: Attendu ')' dans l’expression régulière (JavaScript) | Microsoft Docs
+title: "') 'Attendu dans l’expression régulière (JavaScript) | Microsoft Docs"
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,23 +14,23 @@ ms.assetid: 2087ba1d-9783-4d40-b609-e8542f579f7f
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7daf5d876f68168ce0b58ea2cc9b52a309107bc6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7c10449df9ef3331949695b7423da3eb08b65433
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446533"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577539"
 ---
 # <a name="expected--in-regular-expression-javascript"></a>')' attendu dans l'expression régulière (JavaScript)
-Vous a tenté de créer une capture d’expression régulière, une assertion ou un groupe, mais n’incluez pas la parenthèse fermante. Parenthèses ont plusieurs fonctions dans les expressions régulières. Ils servent principalement à capturer de sous-expressions, pour spécifier des assertions, ou pour regrouper les modèles afin que les éléments peuvent être traités comme une seule unité par *, +, ?, et ainsi de suite.  
+Vous avez tenté de créer une capture, une assertion ou un groupe d’expressions régulières, mais n’incluait pas la parenthèse fermante. Les parenthèses ont plusieurs objectifs dans les expressions régulières. Ils sont principalement utilisés pour capturer des sous-expressions, pour spécifier des assertions ou pour regrouper des séquences afin que les éléments puissent être traités comme une seule unité par *, +, ?, et ainsi de suite.  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
-- Ajoutez les parenthèses de fermeture plus à droite.  
+- Ajoutez les parenthèses fermantes les plus à droite.  
   
     > [!NOTE]
-    > Si vous souhaitez faire correspondre une parenthèse unique, l’échappement avec une barre oblique inverse - \\(- afin qu’il n’est pas interprété comme un caractère spécial par [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
+    > Si vous souhaitez faire correspondre une seule parenthèse, collez-la avec une barre oblique inverse-\\ (-afin qu’elle ne soit pas interprétée comme un caractère spécial par [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
 ## <a name="see-also"></a>Voir aussi  
- [Objet d’Expression régulière](../../javascript/reference/regular-expression-object-javascript.md)   
- [Syntaxe d’Expression régulière (JavaScript)](https://msdn.microsoft.com/library/1400241x)
+ @No__t_1 d' [objet d’expression régulière](../../javascript/reference/regular-expression-object-javascript.md)  
+ [Syntaxe des expressions régulières (JavaScript)](https://msdn.microsoft.com/library/1400241x)

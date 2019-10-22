@@ -9,19 +9,19 @@ helpviewer_keywords:
 - unit tests, running
 - unit tests, data-driven
 - data-driven unit tests
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 5960c84e2cb389580f2d7b0f476da2a456e62585
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: 0a3162dcbbd041a7d2f540a335bd95854afd87d0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745870"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72643480"
 ---
-# <a name="how-to-create-a-data-driven-unit-test"></a>Procédure : Créer un test unitaire piloté par les données
+# <a name="how-to-create-a-data-driven-unit-test"></a>Comment : créer un test unitaire piloté par les données
 
 Vous pouvez utiliser l’infrastructure de test unitaire de Microsoft pour le code managé afin de configurer une méthode de test unitaire permettant de récupérer des valeurs auprès d’une source de données. La méthode est exécutée successivement pour chaque ligne de la source de données, ce qui permet de tester facilement diverses entrées à l’aide d’une seule méthode.
 
@@ -131,7 +131,7 @@ L’attribut DataSource a trois constructeurs.
 
 Un constructeur avec un seul paramètre utilise les informations de connexion stockées dans le fichier *app.config* de la solution. *dataSourceSettingsName* est le nom de l’élément XML contenu dans le fichier config, qui spécifie les informations de connexion.
 
-L’utilisation d’un fichier *app.config* vous permet de changer l’emplacement de la source de données sans changer le test unitaire lui-même. Pour plus d’informations sur la création et l’utilisation d’un fichier *app.config*, consultez [Procédure pas à pas : utilisation d’un fichier config pour définir une source de données](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)
+L’utilisation d’un fichier *app.config* vous permet de changer l’emplacement de la source de données sans changer le test unitaire lui-même. Pour plus d’informations sur la création et l’utilisation d’un fichier *app.config*, consultez [Procédure pas à pas : utilisation d’un fichier de configuration pour définir une source de données](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)
 
 ```csharp
 [DataSource(connectionString, tableName)]

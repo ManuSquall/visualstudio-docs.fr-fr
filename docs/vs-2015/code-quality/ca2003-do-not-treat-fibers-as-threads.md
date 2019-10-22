@@ -1,5 +1,5 @@
 ---
-title: 'CA2003 : Ne traitez pas les fibres comme des threads | Microsoft Docs'
+title: 'CA2003 : ne traitez pas les fibres comme des threads | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - DoNotTreatFibersAsThreads
 ms.assetid: 15398fb1-f384-4bcc-ad93-00e1c0fa9ddf
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 0a1683c8cb9b9c6dc856f40ddbc7864d773f2101
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 943b52f9703e60f14756bde97ce6f27c0c6f5296
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68189056"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672503"
 ---
 # <a name="ca2003-do-not-treat-fibers-as-threads"></a>CA2003 : Ne traitez pas les fibres comme des threads
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,14 +29,14 @@ ms.locfileid: "68189056"
 |-|-|
 |TypeName|DoNotTreatFibersAsThreads|
 |CheckId|CA2003|
-|Catégorie|Microsoft.Reliability|
+|Category|Microsoft. fiabilité|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
  Un thread managé est traité comme un thread Win32.
 
 ## <a name="rule-description"></a>Description de la règle
- Ne supposez pas qu'un thread managé est un thread Win32. Il s’agit d’une fibre. Le common language runtime (CLR) exécutera les threads managés en tant que fibres dans le contexte de threads réels qui sont détenus par SQL. Ces threads peuvent être partagés entre les domaines d’application et les bases de données dans le processus SQL Server. Fonctionnement du stockage local des threads managés, mais vous ne pouvez pas utiliser le stockage local de thread non managé ou supposent que votre code s’exécutera à nouveau sur le thread de système d’exploitation actuel. Ne modifiez pas les paramètres, tels que les paramètres régionaux du thread. N’appelez pas CreateCriticalSection ou CreateMutex via P/Invoke, car elles nécessitent que le thread qui accède à un verrou doit aussi être déverrouillé. Étant donné que ce ne sera pas le cas lorsque vous utilisez des fibres, les mutex et les sections critiques Win32 sera inutiles dans SQL. Vous pouvez en toute sécurité utiliser la majeure partie de l’état d’un objet System.Thread managé. Cela inclut le stockage local des threads managés et la culture d’interface utilisateur utilisateur actuelle du thread. Toutefois, pour des raisons de modèle de programmation, vous serez pas en mesure de modifier la culture actuelle d’un thread lorsque vous utilisez SQL ; Cela est appliquée via une nouvelle autorisation.
+ Ne partez pas du principe qu’un thread managé est un thread Win32. Il s’agit d’une fibre. Le common language runtime (CLR) exécute des threads managés en tant que fibres dans le contexte de threads réels appartenant à SQL. Ces threads peuvent être partagés entre des AppDomains et même des bases de données dans le processus de SQL Server. L’utilisation du stockage local des threads managés fonctionne, mais vous ne pouvez pas utiliser le stockage local des threads non managés ou supposer que votre code s’exécutera à nouveau sur le thread de système d’exploitation actuel. Ne modifiez pas les paramètres tels que les paramètres régionaux du thread. N’appelez pas CreateCriticalSection ou CreateMutex via P/Invoke, car ils requièrent que le thread qui entre dans un verrou doive également quitter le verrou. Comme ce n’est pas le cas lorsque vous utilisez des fibres, les sections critiques et les mutex Win32 seront inutiles dans SQL. Vous pouvez utiliser en toute sécurité l’essentiel de l’État sur un objet System. thread géré. Cela comprend le stockage local des threads managés et la culture d’interface utilisateur (IU) actuelle du thread. Toutefois, pour des raisons de modèle de programmation, vous ne pourrez pas modifier la culture actuelle d’un thread quand vous utilisez SQL. cela sera appliqué par le biais d’une nouvelle autorisation.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Examinez votre utilisation des threads et modifiez votre code en conséquence.

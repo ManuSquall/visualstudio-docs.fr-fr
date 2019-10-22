@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Création d’un service WCF simple dans Windows Forms'
+title: 'Procédure pas à pas : création d’un service WPF simple dans Windows Forms'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -11,21 +11,21 @@ helpviewer_keywords:
 - WCF services
 - WCF services, walkthrough
 ms.assetid: 5fef1a64-27a4-4f10-aa57-29023e28a2d6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 97bbf8212caf87f28849df15d350811579f22ccd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7e2954d333ae3fe0dc6ff1c221d1e450eb9bf51a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565363"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72639472"
 ---
-# <a name="walkthrough-create-a-simple-wcf-service-in-windows-forms"></a>Procédure pas à pas : Créer un service WCF simple dans les Windows Forms
+# <a name="walkthrough-create-a-simple-wcf-service-in-windows-forms"></a>Procédure pas à pas : création d’un service WCF simple dans Windows Forms
 
-Cette procédure pas à pas montre comment créer un simple service Windows Communication Foundation (WCF), testez-la, puis y accéder à partir d’une application Windows Forms.
+Cette procédure pas à pas montre comment créer un service simple Windows Communication Foundation (WCF), le tester, puis y accéder à partir d’une application Windows Forms.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -37,7 +37,7 @@ Cette procédure pas à pas montre comment créer un simple service Windows Comm
 
 2. Dans le menu **Fichier** , choisissez **Nouveau** > **Projet**.
 
-3. Dans le **nouveau projet** boîte de dialogue, développez le **Visual Basic** ou **Visual C#**  nœud et choisissez **WCF**, suivie de **Bibliothèque du Service WCF**.
+3. Dans la boîte de dialogue **nouveau projet** , développez le nœud **Visual Basic** ou **visuel C#**  et choisissez **WCF**, puis **bibliothèque de services WCF**.
 
 4. Cliquez sur **OK** pour créer le projet.
 
@@ -49,21 +49,21 @@ Cette procédure pas à pas montre comment créer un simple service Windows Comm
 
 2. Dans la fenêtre de démarrage, choisissez **Créer un projet**.
 
-3. Type **bibliothèque du service wcf** dans la zone de recherche sur le **créer un nouveau projet** page. Sélectionnez le C# ou un modèle de Visual Basic pour **bibliothèque du Service WCF**, puis cliquez sur **suivant**.
+3. Tapez **bibliothèque de services WCF** dans la zone de recherche de la page **créer un nouveau projet** . Sélectionnez le modèle C# ou Visual Basic pour la **bibliothèque de services WCF**, puis cliquez sur **suivant**.
 
-   ![Créer un nouveau projet de bibliothèque de Service WCF dans Visual Studio 2019](media/vs-2019/create-new-wcf-service-library.png)
+   ![Créer un projet de bibliothèque de service WCF dans Visual Studio 2019](media/vs-2019/create-new-wcf-service-library.png)
 
    > [!TIP]
-   > Si vous ne voyez pas tous les modèles, vous devrez peut-être installer le **Windows Communication Foundation** composant de Visual Studio. Choisissez **installer d’autres outils et fonctionnalités** pour ouvrir le programme d’installation de Visual Studio. Choisissez le **composants individuels** onglet, faites défiler jusqu'à **activités de développement**, puis sélectionnez **Windows Communication Foundation**. Cliquez sur **Modifier**.
+   > Si vous ne voyez aucun modèle, vous devrez peut-être installer le composant **Windows Communication Foundation** de Visual Studio. Choisissez **installer d’autres outils et fonctionnalités** pour ouvrir Visual Studio installer. Choisissez l’onglet **composants individuels** , faites défiler jusqu’à **activités de développement**, puis sélectionnez **Windows Communication Foundation**. Cliquez sur **Modifier**.
 
-4. Sur le **configurer votre nouveau projet** , cliquez sur **créer**.
+4. Dans la page **configurer votre nouveau projet** , cliquez sur **créer**.
 
 ::: moniker-end
 
    > [!NOTE]
    > Un service actif est créé, qui peut être testé et est accessible. Les deux étapes suivantes montrent comment vous pouvez modifier la méthode par défaut pour utiliser un autre type de données. Dans une application réelle, vous ajouteriez également vos propres fonctions au service.
 
-5. Dans **l’Explorateur de solutions**, double-cliquez sur **IService1.vb** ou **IService1.cs**.
+5. Dans **Explorateur de solutions**, double-cliquez sur **IService1. vb** ou **IService1.cs**.
 
    ![Fichier IService1](../data-tools/media/wcf2.png)
 
@@ -72,14 +72,14 @@ Cette procédure pas à pas montre comment créer un simple service Windows Comm
    [!code-csharp[WCFWalkthrough#4](../data-tools/codesnippet/CSharp/walkthrough-creating-a-simple-wcf-service-in-windows-forms_1.cs)]
    [!code-vb[WCFWalkthrough#4](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-simple-wcf-service-in-windows-forms_1.vb)]
 
-   Modifier le type de le `value` paramètre en chaîne :
+   Remplacez le type du paramètre `value` par String :
 
    [!code-csharp[WCFWalkthrough#1](../data-tools/codesnippet/CSharp/walkthrough-creating-a-simple-wcf-service-in-windows-forms_2.cs)]
    [!code-vb[WCFWalkthrough#1](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-simple-wcf-service-in-windows-forms_2.vb)]
 
    Dans le code ci-dessus, notez les attributs `<OperationContract()>` ou `[OperationContract]`. Ces attributs sont obligatoires pour toute méthode exposée par le service.
 
-6. Dans **l’Explorateur de solutions**, double-cliquez sur **Service1.vb** ou **Service1.cs**.
+6. Dans **Explorateur de solutions**, double-cliquez sur **Service1. vb** ou **Service1.cs**.
 
    ![Fichier Service1](../data-tools/media/wcf3.png)
 
@@ -88,46 +88,46 @@ Cette procédure pas à pas montre comment créer un simple service Windows Comm
    [!code-vb[WCFWalkthrough#5](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-simple-wcf-service-in-windows-forms_3.vb)]
    [!code-csharp[WCFWalkthrough#5](../data-tools/codesnippet/CSharp/walkthrough-creating-a-simple-wcf-service-in-windows-forms_3.cs)]
 
-   Modifier le type de le `value` paramètre en chaîne :
+   Remplacez le type du paramètre `value` par String :
 
    [!code-csharp[WCFWalkthrough#2](../data-tools/codesnippet/CSharp/walkthrough-creating-a-simple-wcf-service-in-windows-forms_4.cs)]
    [!code-vb[WCFWalkthrough#2](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-simple-wcf-service-in-windows-forms_4.vb)]
 
 ## <a name="test-the-service"></a>Tester le service
 
-1. Appuyez sur **F5** pour exécuter le service. Un **Client Test WCF** formulaire s’affiche et charge le service.
+1. Appuyez sur **F5** pour exécuter le service. Un formulaire de **client test WCF** s’affiche et charge le service.
 
-2. Dans le formulaire **Client test WCF**, double-cliquez sur la méthode **GetData()** sous **IService1**. Le **GetData** onglet s’affiche.
+2. Dans le formulaire **Client test WCF**, double-cliquez sur la méthode **GetData()** sous **IService1**. L’onglet **GetData** s’affiche.
 
-     ![La méthode GetData&#40; &#41; (méthode)](../data-tools/media/wcf4.png)
+     ![La méthode&#40; &#41; GetData](../data-tools/media/wcf4.png)
 
 3. Dans la zone **Demande**, sélectionnez le champ **Valeur** et tapez `Hello`.
 
      ![Champ de valeur](../data-tools/media/wcf5.png)
 
-4. Cliquez sur le bouton **Appeler**. Si un **avertissement de sécurité** boîte de dialogue s’affiche, cliquez sur **OK**. Le résultat s’affiche dans le **réponse** boîte.
+4. Cliquez sur le bouton **Appeler**. Si une boîte de dialogue d' **avertissement de sécurité** s’affiche, cliquez sur **OK**. Le résultat s’affiche dans la zone **réponse** .
 
      ![Résultat dans la zone Réponse](../data-tools/media/wcf6.png)
 
 5. Dans le menu **Fichier**, cliquez sur **Quitter** pour fermer le formulaire de test.
 
-## <a name="access-the-service"></a>Accéder au Service
+## <a name="access-the-service"></a>Accéder au service
 
-### <a name="reference-the-wcf-service"></a>Référence au service WCF
+### <a name="reference-the-wcf-service"></a>Référencer le service WCF
 
 1. Dans le menu **Fichier**, pointez sur **Ajouter**, puis cliquez sur **Nouveau projet**.
 
-2. Dans le **nouveau projet** boîte de dialogue, développez le **Visual Basic** ou **Visual C#**  nœud, sélectionnez **Windows**, puis sélectionnez  **Windows Forms Application**. Cliquez sur **OK** pour ouvrir le projet.
+2. Dans la boîte de dialogue **nouveau projet** , développez le nœud **Visual Basic** ou **visuel C#**  , sélectionnez **Windows**, puis sélectionnez **Windows Forms application**. Cliquez sur **OK** pour ouvrir le projet.
 
      ![Projet Application Windows Forms](../data-tools/media/wcf7.png)
 
-3. Cliquez avec le bouton droit sur **WindowsApplication1**, puis cliquez sur **Ajouter une référence de service**. Le **ajouter une référence de Service** boîte de dialogue s’affiche.
+3. Cliquez avec le bouton droit sur **WindowsApplication1**, puis cliquez sur **Ajouter une référence de service**. La boîte de dialogue **Ajouter une référence de service** s’affiche.
 
 4. Dans la boîte de dialogue **Ajouter une référence de service**, cliquez sur **Découvrir**.
 
      ![Boîte de dialogue Ajouter une référence de service](../data-tools/media/wcf8.png)
 
-     **Service1** affiche dans le **Services** volet.
+     **Service1** s’affiche dans le volet **services** .
 
 5. Cliquez sur **OK** pour ajouter la référence de service.
 

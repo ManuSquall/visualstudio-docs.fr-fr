@@ -11,40 +11,36 @@ helpviewer_keywords:
 - Debug.SetRadix command
 ms.assetid: 6ffd1554-7530-4da4-b5f5-e276a5034f3b
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bee6368931dc47b78186ec870039ab292960fa77
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 050cbe6e639f4177694d9af3ecbc0b768065b7d9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68163316"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665416"
 ---
 # <a name="set-radix-command"></a>Définir la base, commande
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Définit ou retourne la base numérique utilisée pour afficher les valeurs entières.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```  
-Debug.SetRadix [10 | 16 | hex | dec]  
-```  
-  
-## <a name="arguments"></a>Arguments  
- `10` ou `16` ou `hex` ou `dec`  
- facultatif. Indique un nombre décimal (10 ou dec) ou hexadécimal (16 ou hex). Si l’argument est omis, la valeur actuelle de la base est retournée.  
-  
-## <a name="example"></a>Exemples  
- Cet exemple configure l’environnement pour afficher les valeurs entières au format hexadécimal.  
-  
-```  
->Debug.SetRadix hex  
-```  
-  
-## <a name="see-also"></a>Voir aussi  
- [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)   
- [Fenêtre Commande](../../ide/reference/command-window.md)   
- [Zone Rechercher/Commande](../../ide/find-command-box.md)   
- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+Définit ou retourne la base numérique utilisée pour afficher les valeurs entières.
+
+## <a name="syntax"></a>Syntaxe
+
+```
+Debug.SetRadix [10 | 16 | hex | dec]
+```
+
+## <a name="arguments"></a>Arguments
+ `10` ou `16` ou `hex` ou `dec` facultatif. Indique un nombre décimal (10 ou dec) ou hexadécimal (16 ou hex). Si l’argument est omis, la valeur actuelle de la base est retournée.
+
+## <a name="example"></a>Exemples
+ Cet exemple configure l’environnement pour afficher les valeurs entières au format hexadécimal.
+
+```
+>Debug.SetRadix hex
+```
+
+## <a name="see-also"></a>Voir aussi
+ [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md) [fenêtre commande](../../ide/reference/command-window.md) [Rechercher/zone de commande](../../ide/find-command-box.md) [alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

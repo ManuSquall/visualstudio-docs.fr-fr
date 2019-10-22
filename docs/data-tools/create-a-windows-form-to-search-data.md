@@ -9,17 +9,17 @@ helpviewer_keywords:
 - data [Visual Studio], parameterizing queries
 - data [Visual Studio], searching
 ms.assetid: 65ca79a9-7458-466c-af55-978cd24c549e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ecbdd8b9f1fb1696986672bb621567944910660f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d503f8d1fd18817a30f49c64307d9fc14c74b3ea
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567609"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72642716"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Créer un Windows Form pour rechercher des données
 
@@ -27,49 +27,49 @@ Un scénario d'application courant consiste à afficher les données sélectionn
 
 L'utilisation des requêtes paramétrables renforce l'efficacité de votre application en utilisant la base de données de la meilleure manière possible : pour filtrer rapidement des enregistrements. À l’inverse, si vous interrogez une table de base de données entière, que vous la transférez sur le réseau et que vous utilisez la logique d’application pour trouver les enregistrements souhaités, votre application peut devenir lente et perdre en efficacité.
 
-Vous pouvez ajouter des requêtes paramétrables à n’importe quel TableAdapter (et contrôles pour accepter les valeurs de paramètre et exécuter la requête), à l’aide de la **Générateur de critères de recherche** boîte de dialogue. Ouvrez la boîte de dialogue en sélectionnant la commande **Ajouter une requête** dans le menu **Données** (ou dans n’importe quelle balise active TableAdapter).
+Vous pouvez ajouter des requêtes paramétrables à n’importe quel TableAdapter (et les contrôles pour accepter les valeurs de paramètre et exécuter la requête) à l’aide de la boîte de dialogue **Générateur de critères de recherche** . Ouvrez la boîte de dialogue en sélectionnant la commande **Ajouter une requête** dans le menu **Données** (ou dans n’importe quelle balise active TableAdapter).
 
 Cette procédure pas à pas décrit notamment les tâches suivantes :
 
-- Création et configuration de la source de données dans votre application avec le **Configuration de Source de données** Assistant.
+- Création et configuration de la source de données dans votre application à l’aide de l’Assistant **configuration de source de données** .
 
-- Définissant le type de déplacement des éléments dans le **des Sources de données** fenêtre.
+- Définition du type de déplacement des éléments dans la fenêtre **sources de données** .
 
 - Création de contrôles affichant les données en faisant glisser des éléments depuis la fenêtre **Sources de données** vers un formulaire.
 
 - Ajout de contrôles pour afficher les données dans le formulaire.
 
-- Fin de la **Générateur de critères de recherche** boîte de dialogue.
+- Fin de la boîte de dialogue **Générateur de critères de recherche** .
 
-- Entrée de paramètres dans le formulaire et l’exécution de la requête paramétrable.
+- Entrée de paramètres dans le formulaire et exécution de la requête paramétrable.
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Configuration requise
 
-Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de données Northwind.
+Cette procédure pas à pas utilise SQL Server Express base de données locale et l’exemple de base de données Northwind.
 
-1. Si vous n’avez pas SQL Server Express LocalDB, installez-le à partir de la [page de téléchargement de SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), ou via le **le programme d’installation de Visual Studio**. Dans le **le programme d’installation de Visual Studio**, vous pouvez installer SQL Server Express LocalDB dans le cadre de la **stockage de données et de traitement** charge de travail, ou comme un composant individuel.
+1. Si vous n’avez pas SQL Server Express base de données locale, installez-la à partir de la [page de téléchargement SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)ou via le **Visual Studio installer**. Dans le **Visual Studio installer**, vous pouvez installer SQL Server Express base de données locale dans le cadre de la charge de travail de **stockage et de traitement des données** , ou en tant que composant individuel.
 
-2. Installer la base de données Northwind en suivant ces étapes :
+2. Installez l’exemple de base de données Northwind en procédant comme suit :
 
-    1. Dans Visual Studio, ouvrez le **Explorateur d’objets SQL Server** fenêtre. (Explorateur d’objets SQL Server est installé dans le cadre de la **stockage de données et de traitement** charge de travail dans le **le programme d’installation de Visual Studio**.) Développez le **SQL Server** nœud. Avec le bouton droit sur votre instance de base de données locale et sélectionnez **nouvelle requête**.
+    1. Dans Visual Studio, ouvrez la fenêtre de **Explorateur d’objets SQL Server** . (Explorateur d’objets SQL Server est installé dans le cadre de la charge de travail **stockage et traitement des données** dans le **Visual Studio installer**.) Développez le nœud **SQL Server** . Cliquez avec le bouton droit sur votre instance de base de données locale, puis sélectionnez **nouvelle requête**.
 
-       Une fenêtre d’éditeur de requête s’ouvre.
+       Une fenêtre de l’éditeur de requête s’ouvre.
 
-    2. Copie le [script Transact-SQL de Northwind](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) dans votre Presse-papiers. Ce script T-SQL crée la base de données Northwind à partir de zéro et la remplit avec des données.
+    2. Copiez le [script Transact-SQL Northwind](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) dans le presse-papiers. Ce script T-SQL crée la base de données Northwind à partir de zéro et la remplit avec des données.
 
-    3. Collez le script T-SQL dans l’éditeur de requête, puis choisissez le **Execute** bouton.
+    3. Collez le script T-SQL dans l’éditeur de requête, puis choisissez le bouton **exécuter** .
 
-       Après une courte période, la requête est terminée en cours d’exécution et la base de données Northwind est créé.
+       Après un bref laps de temps, l’exécution de la requête se termine et la base de données Northwind est créée.
 
 ## <a name="create-the-windows-forms-application"></a>Créer l’application Windows Forms
 
-Créer un nouveau **Windows Forms application** projet pour soit C# ou Visual Basic. Attribuez le nom **WindowsSearchForm** au projet.
+Créez un projet d' **application Windows Forms** pour C# ou Visual Basic. Attribuez le nom **WindowsSearchForm** au projet.
 
 ## <a name="create-the-data-source"></a>Créer la source de données
 
 Cette étape crée une source de données à partir d’une base de données à l’aide de l’**Assistant Configuration de source de données** :
 
-1. Pour ouvrir le **des Sources de données** fenêtre, dans le **données** menu, cliquez sur **afficher les Sources de données**.
+1. Pour ouvrir la fenêtre **sources de données** , dans le menu **données** , cliquez sur Afficher les **sources de données**.
 
 2. Dans la fenêtre **Sources de données**, sélectionnez **Ajouter une nouvelle source de données** pour démarrer l’Assistant **Configuration de source de données**.
 
@@ -83,7 +83,7 @@ Cette étape crée une source de données à partir d’une base de données à 
 
 5. Si votre base de données nécessite un mot de passe, sélectionnez l’option pour inclure les données sensibles, puis cliquez sur **Suivant**.
 
-6. Sur le **enregistrer la chaîne de connexion dans le fichier de Configuration de l’Application** , cliquez sur **suivant**.
+6. Dans la page **enregistrer la chaîne de connexion dans le fichier de configuration de l’application** , cliquez sur **suivant**.
 
 7. Dans la page **Choisir vos objets de base de données**, développez le nœud **Tables**.
 
@@ -101,13 +101,13 @@ Pour créer des contrôles liés aux données, vous pouvez faire glisser des él
 
      Un <xref:System.Windows.Forms.DataGridView> et une barre d'outils (<xref:System.Windows.Forms.BindingNavigator>) pour parcourir les enregistrements apparaissent sur le formulaire. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource> et <xref:System.Windows.Forms.BindingNavigator> s’affichent dans la barre d’état des composants.
 
-## <a name="add-parameterization-search-functionality-to-the-query"></a>Ajoutez le paramétrage (fonctionnalité de recherche) à la requête
+## <a name="add-parameterization-search-functionality-to-the-query"></a>Ajouter le paramétrage (fonctionnalité de recherche) à la requête
 
-Vous pouvez ajouter une clause WHERE à la requête d’origine en utilisant le **Générateur de critères de recherche** boîte de dialogue :
+Vous pouvez ajouter une clause WHERE à la requête d’origine à l’aide de la boîte de dialogue **Générateur de critères de recherche** :
 
 1. Sélectionnez le contrôle <xref:System.Windows.Forms.DataGridView>, puis choisissez **Ajouter une requête** dans le menu **Données**.
 
-2. Type **FillByCity** dans le **nouveau nom de requête** zone sur le **Générateur de critères de recherche** boîte de dialogue.
+2. Tapez **FillByCity** dans la zone **nouveau nom** de la requête de la boîte de dialogue **Générateur de critères de recherche** .
 
 3. Ajoutez `WHERE City = @City` à la requête dans la zone **Texte de la requête**.
 
@@ -121,7 +121,7 @@ Vous pouvez ajouter une clause WHERE à la requête d’origine en utilisant le 
      ```
 
     > [!NOTE]
-    > Les sources de données Access et OleDb utilisent le point d’interrogation (« ? ») pour indiquer les paramètres, par conséquent, la clause WHERE ressemblerait à ceci : `WHERE City = ?`.
+    > Les sources de données Access et OLE DB utilisent le point d’interrogation («  ? ») pour désigner les paramètres, donc la clause WHERE ressemble à ceci : `WHERE City = ?`.
 
 4. Cliquez sur **OK** pour fermer la boîte de dialogue **Générateur de critères de recherche**.
 
@@ -129,7 +129,7 @@ Vous pouvez ajouter une clause WHERE à la requête d’origine en utilisant le 
 
 ## <a name="test-the-application"></a>Tester l’application
 
-Exécution de l’application ouvre votre formulaire et le rend prêt à utiliser le paramètre en tant qu’entrée :
+L’exécution de l’application ouvre votre formulaire et le rend prêt à prendre le paramètre comme entrée :
 
 1. Appuyez sur **F5** pour exécuter l’application.
 
@@ -141,7 +141,7 @@ Exécution de l’application ouvre votre formulaire et le rend prêt à utilise
 
 Selon les spécifications de votre application, vous pouvez exécuter différentes étapes après la création d'un formulaire paramétrable. Vous pouvez apporter à cette procédure pas à pas les améliorations suivantes :
 
-- Ajout de contrôles affichant les données associées. Pour plus d’informations, consultez [relations dans les Datasets](relationships-in-datasets.md).
+- Ajout de contrôles affichant les données associées. Pour plus d’informations, consultez [relations dans les jeux de données](relationships-in-datasets.md).
 
 - Modification du dataset pour ajouter ou supprimer des objets de base de données. Pour plus d’informations, consultez [Créer et configurer des datasets](../data-tools/create-and-configure-datasets-in-visual-studio.md).
 

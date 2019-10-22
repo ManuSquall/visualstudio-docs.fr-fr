@@ -1,21 +1,21 @@
 ---
-title: 'Procédure : Créer un nuanceur de texture avec nuances de gris'
+title: 'Comment : créer un nuanceur de texture avec nuances de gris'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 79181d81-44af-445e-9a18-03483dd70260
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a8e0295864986ad5cfae2f304f5b0f802f2fb12
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: d8217cc83004be3d4a15ff26743724d553f70d44
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924303"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635556"
 ---
-# <a name="how-to-create-a-grayscale-texture-shader"></a>Procédure : Créer un nuanceur de texture avec nuances de gris
+# <a name="how-to-create-a-grayscale-texture-shader"></a>Guide pratique pour créer un nuanceur de texture avec nuances de gris
 
 Cet article montre comment utiliser le concepteur Shader et DGSL (Directed Graph Shader Language) pour créer un nuanceur de texture avec nuances de gris. Ce nuanceur modifie la valeur de couleur RVB de l’échantillon de texture, puis l’utilise avec la valeur alpha non modifiée pour définir la couleur finale.
 
@@ -23,9 +23,9 @@ Cet article montre comment utiliser le concepteur Shader et DGSL (Directed Graph
 
 Vous pouvez implémenter un nuanceur de texture avec nuances de gris en modifiant la valeur de couleur d’un échantillon de texture avant de l’écrire dans la couleur de sortie finale.
 
-Avant de commencer, assurez-vous que la fenêtre **Propriétés** et la **Boîte à outils** sont affichées.
+Avant de commencer, veillez à ce que la fenêtre **Propriétés** et la **Boîte à outils** soient affichées.
 
-1. Créez un nuanceur de texture de base, comme décrit dans [Guide pratique pour créer un nuanceur de texture de base](../designers/how-to-create-a-basic-texture-shader.md).
+1. Créez un nuanceur de texture de base en suivant la description de l’article [Guide pratique pour créer un nuanceur de texture de base](../designers/how-to-create-a-basic-texture-shader.md).
 
 2. Déconnectez le terminal **RVB** du nœud **Échantillon de texture** à partir du terminal **RVB** du nœud **Couleur finale**. En mode **Sélection**, choisissez le terminal **RVB** du nœud **Échantillon de texture**, puis **Rompre les liaisons**. Le nœud ajouté à l'étape suivante bénéficie ainsi d'un espace supplémentaire.
 
@@ -49,8 +49,8 @@ Certaines formes peuvent fournir de meilleurs aperçus pour certains nuanceurs. 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Guide pratique pour appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Guide pratique pour appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [Guide pratique pour exporter un nuanceur](../designers/how-to-export-a-shader.md)
 - [Image Editor](../designers/image-editor.md)
-- [Concepteur Shader](../designers/shader-designer.md)
+- [Concepteur de nuanceur](../designers/shader-designer.md)
 - [Nœuds du concepteur Shader](../designers/shader-designer-nodes.md)

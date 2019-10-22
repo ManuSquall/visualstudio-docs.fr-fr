@@ -6,17 +6,17 @@ f1_keywords:
 - vs.codedUItest.testeditor
 helpviewer_keywords:
 - coded UI test, Coded UI Test Editor
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 88002f4187883d55f22ec9f3dc80f3ceb65e7e48
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: 971b5d178a777b7a0021eda4bfccab06727981ee
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62784420"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665000"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>Modifier des tests codés de l’interface utilisateur à l’aide de l’éditeur de test codé de l’interface utilisateur
 
@@ -24,7 +24,7 @@ L'éditeur de test codé de l'interface utilisateur vous permet de modifier faci
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-**Spécifications**
+**Prérequis**
 
 - Visual Studio Enterprise
 - Composant Test codé de l’interface utilisateur
@@ -74,7 +74,7 @@ Dans l’**Explorateur de solutions**, ouvrez le menu contextuel pour *UIMap.uit
 
 Pour modifier les propriétés d'une action d'interface utilisateur, dans le volet **Action d'interface utilisateur** , développez la méthode de test qui contient une action d'interface utilisateur dont vous voulez modifier les propriétés, sélectionnez l'action d'interface utilisateur et modifiez les propriétés à l'aide de la fenêtre Propriétés.
 
-Par exemple, si un serveur est indisponible et qu’une action d’IU associée à votre navigateur web indique **Atteindre la page web « <http://Contoso1/default.aspx> »**, vous pouvez remplacer l’URL par `'http://Contoso2/default.aspx'`.
+Par exemple, si un serveur est indisponible et qu’une action d’IU associée à votre navigateur web indique **Atteindre la page web « <http://Contoso1/default.aspx> »** , vous pouvez remplacer l’URL par `'http://Contoso2/default.aspx'`.
 
 ![Propriétés des contrôles](../test/media/codeduitestcontrolprop.png)
 
@@ -125,7 +125,7 @@ Une fois que vous avez terminé de diviser la méthode, enregistrez les modifica
 
 - Vous pouvez renommer la nouvelle méthode. Sélectionnez-la dans le volet **Actions d'interface utilisateur** et choisissez le bouton **Renommer** dans la barre d'outils de l'éditeur de test codé de l'interface utilisateur.
 
-   - ou -
+   ou
 
    Ouvrez le menu contextuel de la nouvelle méthode de test et choisissez **Renommer**.
 
@@ -184,7 +184,7 @@ Parfois, vous pouvez avoir besoin que le test attende que certains événements 
 
 ![Retard ajouté avec 5 secondes](../test/media/codeduidealy2.png)
 
-Dans le volet **Action d'interface utilisateur** , développez la méthode de test qui contient l'action d'interface utilisateur avant laquelle vous voulez insérer un délai. Sélectionnez l'action d'interface utilisateur. Ensuite, ouvrez le menu contextuel de l'action d'interface utilisateur et choisissez **Insérer délai avant**. Un délai est inséré et mis en surbrillance avant l’action d’interface utilisateur sélectionnée avec le texte suivant : **Attendre pendant 1 secondes (délai utilisateur entre les actions)**. Dans la fenêtre **Propriétés**, remplacez la valeur de la propriété **Délai** par le nombre de millisecondes souhaité.
+Dans le volet **Action d'interface utilisateur** , développez la méthode de test qui contient l'action d'interface utilisateur avant laquelle vous voulez insérer un délai. Sélectionnez l'action d'interface utilisateur. Ensuite, ouvrez le menu contextuel de l'action d'interface utilisateur et choisissez **Insérer délai avant**. Un délai est inséré et mis en surbrillance avant l'action d'interface utilisateur sélectionnée avec le texte suivant : **Attendre pendant 1 secondes (délai utilisateur entre les actions)** . Dans la fenêtre **Propriétés**, remplacez la valeur de la propriété **Délai** par le nombre de millisecondes souhaité.
 
 Une fois que vous avez terminé d’insérer le délai, enregistrez les modifications dans le fichier *UIMap.Designer* en choisissant **Enregistrer** dans la barre d’outils Visual Studio.
 
@@ -195,4 +195,4 @@ Si vous devez vous assurer qu'un contrôle spécifique est disponible avant une 
 - [Utiliser l’automatisation de l’interface utilisateur pour tester votre code](../test/use-ui-automation-to-test-your-code.md)
 - [Créer des tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md)
 - [Créer un test codé de l’interface utilisateur piloté par les données](../test/creating-a-data-driven-coded-ui-test.md)
-- [Procédure pas à pas : Création, modification et gestion d’un test codé de l’interface utilisateur](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
+- [Procédures pas à pas : création, édition et gestion d’un test codé de l’interface utilisateur](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)

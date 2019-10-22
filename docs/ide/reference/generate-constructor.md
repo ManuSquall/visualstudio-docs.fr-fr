@@ -2,17 +2,17 @@
 title: Action rapide Générer un constructeur
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: faef5f2420f4abd30ecec9151212b8a731736886
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 41bb9a0e3921495629a10d6783432e8b4999a117
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62795215"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661739"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Générer un constructeur dans Visual Basic
 
@@ -24,9 +24,9 @@ Cette génération de code s’applique à :
 
 **Quoi :** vous permet de générer immédiatement le code pour un nouveau constructeur sur une classe.
 
-**Quand :** vous introduisez un nouveau constructeur et souhaitez le déclarer correctement, automatiquement, ou vous modifiez un constructeur existant.
+**Quand :** vous introduisez un nouveau constructeur et souhaitez le déclarer correctement, automatiquement, ou que vous modifiez un constructeur existant.
 
-**Pourquoi :** vous pouvez déclarer le constructeur avant de l’utiliser, mais cette fonctionnalité le générera automatiquement avec les paramètres appropriés. En outre, la modification d’un constructeur existant nécessite la mise à jour de tous les sites d’appel, sauf si vous utilisez cette fonctionnalité pour les mettre automatiquement à jour.
+**Pourquoi :** vous pouvez déclarer le constructeur avant de l’utiliser, mais cette fonctionnalité le générera automatiquement avec les paramètres appropriés. En outre, la modification d’un constructeur existant nécessite la mise à jour de tous les sites d’appel, sauf si vous utilisez cette fonctionnalité pour les mettre automatiquement à jour.
 
 **Comment :** il existe plusieurs façons de générer un constructeur :
 
@@ -45,7 +45,7 @@ Cette génération de code s’applique à :
 1. Effectuez ensuite l'une des opérations suivantes :
 
    - **Clavier**
-      - Appuyez sur **Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
+      - Appuyez sur **Ctrl**+ **.** pour afficher le menu **Actions rapides et refactorisations**.
    - **Souris**
       - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
       - Cliquez sur le bouton ![Tournevis](media/screwdriver.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne vide dans la classe.
@@ -76,7 +76,7 @@ Cette génération de code s’applique à :
 1. Effectuez ensuite l'une des opérations suivantes :
 
    - **Clavier**
-      - Appuyez sur **Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
+      - Appuyez sur **Ctrl**+ **.** pour afficher le menu **Actions rapides et refactorisations**.
    - **Souris**
       - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
       - Cliquez sur le bouton ![Tournevis](media/screwdriver.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne avec la sélection.
@@ -104,7 +104,7 @@ Cette génération de code s’applique à :
 2. Effectuez ensuite l'une des opérations suivantes :
 
    - **Clavier**
-      - Appuyez sur **Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
+      - Appuyez sur **Ctrl**+ **.** pour afficher le menu **Actions rapides et refactorisations**.
    - **Souris**
       - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
       - Placez le curseur sur la ligne ondulée rouge, puis cliquez sur l’icône ![ampoule d’erreur](media/error-bulb.png) qui apparaît.
@@ -138,7 +138,7 @@ Cette génération de code s’applique à :
 3. Effectuez ensuite l'une des opérations suivantes :
 
    - **Clavier**
-      - Appuyez sur **Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
+      - Appuyez sur **Ctrl**+ **.** pour afficher le menu **Actions rapides et refactorisations**.
    - **Souris**
       - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
       - Placez le curseur sur la ligne ondulée rouge, puis cliquez sur l’icône ![ampoule d’erreur](media/error-bulb.png) qui apparaît.
@@ -165,7 +165,7 @@ Vous pouvez également ajouter un paramètre à une méthode existante. Pour plu
 1. Effectuez ensuite l'une des opérations suivantes :
 
    - **Clavier**
-      - Appuyez sur **Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
+      - Appuyez sur **Ctrl**+ **.** pour afficher le menu **Actions rapides et refactorisations**.
    - **Souris**
       - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
       - Cliquez sur le bouton ![Tournevis](media/screwdriver.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne avec le paramètre ajouté.

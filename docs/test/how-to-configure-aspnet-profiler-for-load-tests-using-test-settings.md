@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - test settings, ASP.NET
 ms.assetid: 6832fe39-04d5-4d94-8a18-3e2730bad423
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: fc0e9c9a8983d58b7b672be6c1cafb7360e25d28
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 1de7e890c60374730e297296116cb56828fa256b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979300"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72643757"
 ---
-# <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Procédure : configurer le profileur ASP.NET pour les tests de charge à l’aide de paramètres de test dans Visual Studio
+# <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Guide pratique pour configurer le profileur ASP.NET pour les tests de charge à l’aide de paramètres de test dans Visual Studio
 
 Vous pouvez utiliser l’adaptateur de données de diagnostic du profileur ASP.NET pour collecter les informations du profileur ASP.NET. Cet adaptateur de données de diagnostic collecte les données de performance pour les applications ASP.NET.
 
@@ -29,7 +29,7 @@ L’adaptateur de données de diagnostic du profileur ASP.NET vous permet de col
 > [!NOTE]
 > L’adaptateur de données de diagnostic du profileur ASP.NET profile le processus Internet Information Services (IIS). Il ne fonctionnera donc pas sur un serveur web de développement. Pour profiler le site web dans votre test de charge, vous devez installer un agent de test sur l’ordinateur sur lequel IIS est en cours d’exécution. L'agent de test ne générera pas de charge, mais sera uniquement un agent de collection. Pour plus d’informations, consultez [Installer et configurer des agents de test](../test/lab-management/install-configure-test-agents.md).
 
-Pour plus d'informations, voir [Procédure : créer un paramètre de test pour un test de charge distribué](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md).
+Pour plus d’informations, consultez [Guide pratique pour créer un paramètre de test pour un test de charge distribué](../test/how-to-create-a-test-setting-for-a-distributed-load-test.md).
 
 ## <a name="configure-the-aspnet-profiler-for-your-test-settings"></a>Configurer le profileur ASP.NET pour vos paramètres de test
 

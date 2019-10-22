@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09b63b3d01329a5fe243d100eeea921299061433
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: d9bead01c6440d5232a91a5e8fe2007b3e30340c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825085"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72631978"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Arguments de ligne de commande pour Help Content Manager
 
@@ -27,17 +27,20 @@ Vous pouvez spécifier la façon de déployer et de gérer le contenu d’aide l
 
 - Ajouter, mettre à jour, supprimer ou déplacer le contenu d’aide locale en mode silencieux.
 
-Syntaxe :
+Syntaxe :
 
 ```cmd
 HlpCtntmgr.exe /operation Value /catalogname CatalogName /locale Locale /sourceuri InstallationPoint
 ```
 
-Par exemple :
+Exemple :
 
 ```cmd
 hlpctntmgr.exe /operation install /catalogname VisualStudio15 /locale en-us /sourceuri d:\productDocumentation\HelpContentSetup.msha
 ```
+
+>[!NOTE]
+> Le nom du catalogue est VisualStudio15 pour Visual Studio 2017 et Visual Studio 2019. Cela peut être inattendu, mais cela est dû au fait que la même visionneuse d’aide est utilisée pour les deux versions de Visual Studio.
 
 ## <a name="switches-and-arguments"></a>Commutateurs et arguments
 
@@ -46,7 +49,7 @@ Le tableau suivant définit les commutateurs et les arguments que vous pouvez ut
 |Basculer|Obligatoire ?|Arguments|
 |------------|---------------|---------------|
 |/operation|Oui|-   **Install** : ajoute des livres de la source d’installation spécifiée dans le magasin de contenu local.<br />     Ce commutateur requiert l’argument /booklist, l’argument /sourceURI, ou les deux. Si vous ne spécifiez pas l’argument /sourceURI, l’URI de Visual Studio par défaut est utilisé comme source d’installation. Si vous ne spécifiez pas l’argument /booklist, tous les livres sur /sourceUri sont installés.<br />-   **Uninstall** : supprime les livres que vous spécifiez dans le magasin de contenu local.<br />     Ce commutateur requiert l’argument /booklist ou l’argument /sourceURI.  Si vous spécifiez l’argument /sourceURI, tous les livres sont supprimés, et l’argument /booklist est ignoré.<br />-   **Move** : déplace le magasin local vers le chemin que vous spécifiez. Le chemin du magasin local par défaut est défini comme répertoire sous *%ProgramData%*<br />     Ce commutateur requiert les arguments /locationPath et /catalogName. Les messages d’erreur sont collectés dans le journal des événements si vous spécifiez un chemin non valide ou si le lecteur ne contient pas suffisamment d’espace libre pour accueillir le contenu.<br />-   **Refresh** : met à jour les rubriques qui ont été modifiées depuis leur installation ou récemment mises à jour.<br />     Ce commutateur requiert l’argument /sourceURI.|
-|/catalogName|Oui|Spécifie le nom du catalogue de contenu.|
+|/catalogName|Oui|Spécifie le nom du catalogue de contenu. Pour Visual Studio 2017 et Visual Studio 2019, il s’agit de VisualStudio15.|
 |/locale|Non|Spécifie les paramètres régionaux du produit utilisés pour afficher et gérer le contenu pour l’instance actuelle de la visionneuse d’aide. Par exemple, vous spécifiez `EN-US` pour Anglais (États-Unis).<br /><br /> Si vous ne spécifiez pas de paramètres régionaux, ceux du système d’exploitation sont utilisés. S’ils ne peuvent pas être déterminés, `EN-US` est utilisé.<br /><br /> Si vous spécifiez des paramètres régionaux non valides, un message d’erreur est collecté dans le journal des événements.|
 |/e|Non|Élève Help Content Manager aux privilèges d’administrateur si l’utilisateur actuel dispose d’informations d’identification d’administration.|
 |/sourceURI|Non|Spécifie l’URL à partir de laquelle le contenu est installé (API de service) ou le chemin du fichier d’installation du contenu ( *.msha*). L’URL peut pointer vers le groupe de produits (nœud de niveau supérieur) ou les livres de produit (nœud de niveau document) dans un point de terminaison de style Visual Studio 2010. Il n’est pas nécessaire d’inclure une barre oblique (/) à la fin de l’URL. Si vous le faites tout de même, elle est gérée correctement.<br /><br /> Un message d’erreur est enregistré dans le journal des événements si vous spécifiez un fichier qui est introuvable, non valide ou inaccessible, ou si une connexion Internet n’est pas disponible ou est interrompue pendant la gestion du contenu.|
@@ -56,7 +59,7 @@ Le tableau suivant définit les commutateurs et les arguments que vous pouvez ut
 |/skuId|Non|Spécifie la référence SKU du produit depuis la source d’installation, puis filtre les livres que le commutateur /SourceURI identifie.|
 |/membership|Non|-   **Minimum** : installe un ensemble minimum de contenu d’aide sur la référence que vous spécifiez à l’aide du commutateur /skuId. Le mappage entre le SKU et l’ensemble de contenu est exposé dans l’API de service.<br />-   **Recommended** : installe un ensemble de livres recommandés pour la référence que vous spécifiez à l’aide de l’argument /skuId. La source d’installation est l’API de service ou le *.MSHA*.<br />-   **Full** : installe le jeu complet de livres pour la référence que vous spécifiez à l’aide de l’argument /skuId. La source d’installation est l’API de service ou le *.MSHA*.|
 |/locationpath|Non|Spécifie le dossier par défaut du contenu d’aide locale. Vous devez utiliser ce commutateur uniquement pour installer ou déplacer le contenu. Si vous spécifiez ce commutateur, vous devez également spécifier le commutateur /silent.|
-|/silent|Non|Installe ou supprime le contenu d’aide sans questionner l’utilisateur ou afficher d’élément d’interface utilisateur tel que l’icône dans la zone de notification d’état. La sortie est stockée dans un fichier, dans le répertoire *%Temp%* . **Important :**  Pour installer le contenu en mode silencieux, vous devez utiliser les fichiers signés numériquement *.cab*, pas les fichiers *.mshc*.|
+|/silent|Non|Installe ou supprime le contenu d’aide sans questionner l’utilisateur ou afficher d’élément d’interface utilisateur tel que l’icône dans la zone de notification d’état. La sortie est stockée dans un fichier, dans le répertoire *%Temp%* . **Important :** Pour installer le contenu en mode silencieux, vous devez utiliser des fichiers *.cab* signés numériquement, et non pas des fichiers *.mshc*.|
 |/launchingApp|Non|Définit l’application et le contexte de catalogue lorsque la visionneuse d’aide est lancée sans application parente. Les arguments pour ce commutateur sont *CompanyName*, *ProductName* et *VersionNumber* (par exemple, `/launchingApp Microsoft,VisualStudio,16.0`).<br /><br /> Cet argument est requis pour installer le contenu avec le paramètre /silent.|
 |/wait *secondes*|Non|Suspend les opérations d’installation, de désinstallation et d’actualisation. Si une opération est en cours pour le catalogue, le processus attend jusqu’au nombre donné de secondes pour continuer. Utilisez 0 pour une attente indéfinie.|
 |/?|Non|Répertorie les commutateurs, ainsi que leur description, de l’outil en ligne de commande pour le gestionnaire de contenu d’aide.|

@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 81f0c9e8-f471-4de5-aac4-99db336a8809
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f7b0e29f6a9a502054b59fc7313c3eff0565f938
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 3a20637b7c7c3afcf594d1498b6030c685e4be72
+ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919888"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163061"
 ---
 # <a name="code-analysis-for-cc-overview"></a>Vue d’ensemble de l’analyse du code C/C++
 
@@ -40,17 +40,17 @@ Durant le processus de génération, tous les avertissements générés pour le 
 
 ## <a name="command-line-support"></a>Prise en charge de la ligne de commande
 
-Vous pouvez également utiliser l’outil d’analyse à partir de la ligne de commande, comme indiqué dans l’exemple suivant:
+Vous pouvez également utiliser l’outil d’analyse à partir de la ligne de commande, comme indiqué dans l’exemple suivant :
 
 ```cmd
 C:\>cl /analyze Sample.cpp
 ```
 
-**Visual Studio 2017 version 15,7 et versions ultérieures** Vous pouvez exécuter l’outil à partir de la ligne de commande avec n’importe quel système de génération, y compris CMake.
+**Visual Studio 2017 15.7 et versions ultérieures :** Vous pouvez exécuter l’outil à partir de la ligne de commande avec n’importe quel système de génération, y compris CMake.
 
 ## <a name="pragma-support"></a>support #pragma
 
-Vous pouvez utiliser la `#pragma` directive pour traiter les avertissements comme des erreurs, activer ou désactiver les avertissements et supprimer les avertissements pour les lignes de code individuelles. Pour plus d’informations, consultez [Directives pragma et mot clé __Pragma](https://docs.microsoft.com/cpp/preprocessor/pragma-directives-and-the-pragma-keyword).
+Vous pouvez utiliser la directive `#pragma` pour traiter les avertissements comme des erreurs ; activer ou désactiver les avertissements et supprimer les avertissements pour les lignes de code individuelles. Pour plus d’informations, consultez [Directives pragma et mot clé __Pragma](https://docs.microsoft.com/cpp/preprocessor/pragma-directives-and-the-pragma-keyword).
 
 ## <a name="annotation-support"></a>Prise en charge des annotations
 
@@ -66,8 +66,8 @@ Vous pouvez utiliser les fonctionnalités intégrées du système de build pour 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Démarrage rapide : Analyse du code pour C/C++](quick-start-code-analysis-for-c-cpp.md)
-- [Procédure pas à pas : Analyser C/C++ code pour les défauts](walkthrough-analyzing-c-cpp-code-for-defects.md)
+- [Démarrage rapide : Analyse du code pour CC++/](quick-start-code-analysis-for-c-cpp.md)
+- [Procédure pas à pas : Analyser C/C++ code pour les défauts @ no__t-1
 - [Avertissements liés à l’analyse de code C/C++](code-analysis-for-c-cpp-warnings.md)
 - [Utiliser les vérificateurs de C++ Core Guidelines](using-the-cpp-core-guidelines-checkers.md)
 - [C++Guide de référence du vérificateur de Core Guidelines](code-analysis-for-cpp-corecheck.md)

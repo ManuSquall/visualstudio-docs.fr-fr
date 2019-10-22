@@ -2,17 +2,17 @@
 title: Générer et configurer votre application à partir de modèles
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5ec2d1c471365dcd55aa33f00209c4154300e95
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 801423ee8ad5bb9a63ebb4f970d9c53e5fe8c1e4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62994420"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72605707"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Générer et configurer votre application à partir de modèles
 Vous pouvez générer ou configurer certaines parties de votre application à partir d'un modèle.
@@ -20,7 +20,7 @@ Vous pouvez générer ou configurer certaines parties de votre application à pa
  Il représente les impératifs plus directement que le code. En dérivant le comportement de l'application directement à partir du modèle, vous pouvez répondre aux changements d'impératifs avec beaucoup plus de rapidité et de fiabilité que par la mise à jour du code. Bien qu'un travail initial soit nécessaire pour configurer la dérivation, cet investissement est rentable si vous prévoyez que les impératifs changeront ou si vous envisagez de créer plusieurs variantes du produit.
 
 ## <a name="generating-the-code-of-your-application-from-a-model"></a>Génération du code de votre application à partir d'un modèle
- Pour générer du code, le plus simple consiste à utiliser des modèles de texte. Vous pouvez générer du code dans la même solution Visual Studio dans laquelle vous conservez le modèle. Pour plus d'informations, voir :
+ Pour générer du code, le plus simple consiste à utiliser des modèles de texte. Vous pouvez générer du code dans la même solution Visual Studio que celle dans laquelle vous conservez le modèle. Pour plus d'informations, voir :
 
 - [Génération de code au moment du design à l’aide de modèles de texte T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 
@@ -35,7 +35,7 @@ Vous pouvez générer ou configurer certaines parties de votre application à pa
   Toutefois, si vous commencez avec une application existante, vous constaterez peut-être que de nombreuses opérations de refactorisation sont nécessaires pour séparer les différents comportements régis par le modèle, pour qu'ils puissent varier indépendamment. Nous vous recommandons d'évaluer cet aspect de l'application lors de l'estimation du coût de votre projet.
 
 ## <a name="configuring-your-application-from-a-model"></a>Configuration de votre application à partir d'un modèle
- Si vous souhaitez faire varier le comportement de votre application au moment de l'exécution, vous ne pouvez pas utiliser la génération de code, qui génère le code source avant que l'application soit compilée. Au lieu de cela, vous pouvez concevoir votre application pour lire le modèle et son comportement change en conséquence. Pour plus d'informations, voir :
+ Si vous souhaitez faire varier le comportement de votre application au moment de l'exécution, vous ne pouvez pas utiliser la génération de code, qui génère le code source avant que l'application soit compilée. Au lieu de cela, vous pouvez concevoir votre application pour lire le modèle et faire varier son comportement en conséquence. Pour plus d'informations, voir :
 
 - [Guide pratique pour ouvrir un modèle depuis un fichier dans le code du programme](../modeling/how-to-open-a-model-from-file-in-program-code.md)
 
@@ -46,29 +46,29 @@ Vous pouvez générer ou configurer certaines parties de votre application à pa
 ## <a name="developing-a-derived-application"></a>Développement d'une application dérivée
  Voici quelques consignes générales qui pourront vous être utiles.
 
-- **Commencez spécifique, puis généralisez.** Écrivez tout d'abord une version spécifique de votre application. Cette version doit fonctionner dans un ensemble de conditions. Une fois satisfait de son bon fonctionnement, vous pouvez faire en sorte que certaines parties dérivent d'un modèle. Étendez progressivement les parties dérivées.
+- **Démarrez spécifique, puis généralisez.** Écrivez tout d'abord une version spécifique de votre application. Cette version doit fonctionner dans un ensemble de conditions. Une fois satisfait de son bon fonctionnement, vous pouvez faire en sorte que certaines parties dérivent d'un modèle. Étendez progressivement les parties dérivées.
 
-     Par exemple, un site Web qui a un ensemble spécifique de pages web avant de concevoir une application web qui présente des pages qui sont définis dans un modèle de conception.
+     Par exemple, concevez un site Web avec un ensemble spécifique de pages Web avant de concevoir une application Web qui présente des pages définies dans un modèle.
 
 - **Modélisez les aspects variants.** Identifiez les aspects qui varieront, soit d'un déploiement à un autre, soit dans le temps à mesure que les impératifs changeront. Il s'agit des aspects qui doivent être dérivés d'un modèle.
 
-     Par exemple, si l’ensemble de web pages et des liens entre elles change, mais le style et le format des pages est toujours identique, puis le modèle doit décrire les liens, mais n’a pas de décrire le format des pages.
+     Par exemple, si l’ensemble de pages Web et les liens entre eux changent, mais que le style et le format des pages sont toujours identiques, le modèle doit décrire les liens, mais il n’est pas nécessaire de décrire le format des pages.
 
-- **Séparez les aspects.** Si les aspects variables peuvent être divisés en zones indépendantes, utilisez des modèles distincts pour chaque zone. Avec ModelBus, vous pouvez définir des opérations qui affectent à la fois les modèles et les contraintes entre eux.
+- **Des préoccupations distinctes.** Si les aspects variables peuvent être divisés en zones indépendantes, utilisez des modèles distincts pour chaque zone. Avec ModelBus, vous pouvez définir des opérations qui affectent à la fois les modèles et les contraintes entre eux.
 
-     Par exemple, utiliser un modèle pour définir la navigation entre les pages web et un autre modèle pour définir la disposition des pages.
+     Par exemple, utilisez un modèle pour définir la navigation entre les pages Web et un autre modèle pour définir la disposition des pages.
 
-- **Modélisez les impératifs, pas la solution.** Concevez le modèle afin qu’il décrive les besoins des utilisateurs. En revanche, ne concevez pas la notation en fonction des aspects variables de l'implémentation.
+- **Modélisez l’exigence, pas la solution.** Concevez le modèle afin qu’il décrive les besoins des utilisateurs. En revanche, ne concevez pas la notation en fonction des aspects variables de l'implémentation.
 
-     Par exemple, le modèle de navigation web doit représenter des pages web et des liens hypertexte entre eux. Le modèle de navigation web ne doit pas représenter des fragments de code HTML ou des classes de votre application.
+     Par exemple, le modèle de navigation Web doit représenter des pages Web et des liens hypertexte entre eux. Le modèle de navigation Web ne doit pas représenter des fragments de classes HTML ou de classes dans votre application.
 
 - **Générer ou interpréter ?** Si les impératifs d'un déploiement particulier ne changeront que rarement, générez le code de programme à partir du modèle. Si les impératifs peuvent changer fréquemment ou coexister dans plusieurs variantes dans le même déploiement, écrivez l'application pour qu'elle puisse lire et interpréter un modèle.
 
-     Par exemple, si vous utilisez votre modèle de site Web pour développer une série de sites Web différents et installés séparément, vous devez générer le code du site à partir du modèle. Mais si vous utilisez votre modèle pour contrôler un site qui change tous les jours, il est préférable d’écrire un serveur web qui lit le modèle et présente le site en conséquence.
+     Par exemple, si vous utilisez votre modèle de site Web pour développer une série de sites Web différents et installés séparément, vous devez générer le code du site à partir du modèle. Mais si vous utilisez votre modèle pour contrôler un site qui change chaque jour, il est préférable d’écrire un serveur Web qui lit le modèle et présente le site en conséquence.
 
 - **UML ou DSL ?** Vous pouvez créer votre notation de modélisation à l'aide de stéréotypes pour étendre UML. Définissez un diagramme DSL s'il n'existe aucun diagramme UML adapté. Évitez toutefois de compromettre la sémantique standard UML.
 
-     Par exemple, un diagramme de classes UML est une collection de cases et de flèches ; avec cette notation, vous pouvez théoriquement définir n'importe quoi. Cependant, nous vous déconseillons d'utiliser le diagramme de classes, sauf quand vous décrivez réellement un ensemble de types. Par exemple, vous pourriez adapter les diagrammes de classes pour décrire les différents types de pages web.
+     Par exemple, un diagramme de classes UML est une collection de cases et de flèches ; avec cette notation, vous pouvez théoriquement définir n'importe quoi. Cependant, nous vous déconseillons d'utiliser le diagramme de classes, sauf quand vous décrivez réellement un ensemble de types. Par exemple, vous pouvez adapter des diagrammes de classes pour décrire différents types de pages Web.
 
 ## <a name="see-also"></a>Voir aussi
 

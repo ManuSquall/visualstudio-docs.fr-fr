@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f8d971792fb55789fb6dcd7e0d90829ac723ba6
-ms.sourcegitcommit: 8a3545329a58e446672181cfed2083f850e1ad14
+ms.openlocfilehash: a4667fc630d86691d95e9dc9cd205b29f7b0f525
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71817523"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349706"
 ---
 # <a name="find-your-debugging-task-in-visual-studio"></a>Rechercher votre tâche de débogage dans Visual Studio
 
@@ -34,7 +34,10 @@ Essayez un point d’arrêt conditionnel pour contrôler l’emplacement et le m
 
 ### <a name="pause-code-only-when-a-specific-objects-property-or-value-changes"></a>Suspendre le code uniquement lorsque la propriété ou la valeur d’un objet spécifique change
 
-Pour C++, définissez un [point d’arrêt](using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus)sur variable. Pour les applications utilisant .NET Core 3, vous pouvez également définir un [point d’arrêt](using-breakpoints.md#BKMK_set_a_data_breakpoint_managed)sur variable.
+Pour C++, définissez un [point d’arrêt](using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus)sur variable. 
+::: moniker range=">= vs-2019"
+Pour les applications utilisant .NET Core 3, vous pouvez également définir un [point d’arrêt](using-breakpoints.md#BKMK_set_a_data_breakpoint_managed)sur variable.
+::: moniker-end
 
 Dans le cas C# contraire F# , pour et uniquement, vous pouvez [suivre un ID d’objet avec un point d’arrêt conditionnel](using-breakpoints.md#using-object-ids-in-breakpoint-conditions-c-and-f).
 
@@ -62,6 +65,12 @@ Si vous souhaitez suspendre et déboguer du code tout en examinant le dérouleme
 
 Pour ce faire, vous pouvez [définir un point d’arrêt à partir de la fenêtre Code machine](using-breakpoints.md#BKMK_Set_a_breakpoint_from_debugger_windows).
 
+## <a name="execute-code"></a>Exécuter le code
+
+### <a name="learn-the-commands-to-step-through-your-code-while-debugging"></a>Découvrez les commandes permettant de parcourir votre code pendant le débogage
+
+Pour plus d’informations, consultez [naviguer dans le code avec le débogueur](navigating-through-code-with-the-debugger.md).
+
 ## <a name="inspect-data"></a>Inspecter des données
 
 ### <a name="check-the-value-of-variables-while-running-your-app"></a>Vérifier la valeur des variables lors de l’exécution de votre application
@@ -76,19 +85,7 @@ Définissez un espion sur la variable. Pour plus d’informations, consultez [d�
 
 Ouvrez le [visualiseur de chaîne](view-strings-visualizer.md) intégré pendant le débogage.
 
-## <a name="additional-tasks"></a>Tâches supplémentaires
-
-### <a name="learn-the-commands-to-step-through-your-code-while-debugging"></a>Découvrez les commandes permettant de parcourir votre code pendant le débogage
-
-Pour plus d’informations, consultez [naviguer dans le code avec le débogueur](navigating-through-code-with-the-debugger.md).
-
-### <a name="edit-code-during-a-debugging-session"></a>Modifier le code pendant une session de débogage
-
-Utilisez [Modifier & Continuer](edit-and-continue.md). Pour XAML, utilisez le [rechargement à chaud XAML](xaml-hot-reload.md).
-
-### <a name="send-messages-to-the-output-window-without-modifying-code"></a>Envoyer des messages à la fenêtre sortie sans modifier le code
-
-Définit un trace. Pour plus d’informations, consultez Utilisation des points de [trace](using-tracepoints.md).
+## <a name="configure-debugging"></a>Configurer le débogage
 
 ### <a name="customize-information-shown-in-the-debugger"></a>Personnaliser les informations affichées dans le débogueur
 
@@ -99,6 +96,16 @@ Pour le C++mode natif, utilisez l' [infrastructure NatVis](create-custom-views-o
 ### <a name="configure-debugger-settings"></a>Configurer les paramètres du débogueur
 
 Pour configurer les options de débogueur et les paramètres de projet du débogueur, consultez [paramètres et préparation du débogueur](debugger-settings-and-preparation.md).
+
+## <a name="additional-tasks"></a>Tâches supplémentaires
+
+### <a name="edit-code-during-a-debugging-session"></a>Modifier le code pendant une session de débogage
+
+Utilisez [Modifier & Continuer](edit-and-continue.md). Pour XAML, utilisez le [rechargement à chaud XAML](xaml-hot-reload.md).
+
+### <a name="send-messages-to-the-output-window-without-modifying-code"></a>Envoyer des messages à la fenêtre sortie sans modifier le code
+
+Définit un trace. Pour plus d’informations, consultez Utilisation des points de [trace](using-tracepoints.md).
 
 ### <a name="debug-on-remote-machines"></a>Déboguer sur des ordinateurs distants
 

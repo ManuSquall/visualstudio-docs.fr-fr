@@ -3,8 +3,8 @@ title: Convertir la méthode Get en propriété ; convertir une propriété en m
 ms.date: 01/26/2018
 ms.topic: reference
 ms.devlang: csharp
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 f1_keywords:
 - vs.csharp.refactoring.convertmethodtoproperty
@@ -12,12 +12,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 87fc623f781c54267fa70da7c5d2a341823e35ae
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: ac33db013a8cea11b373e4104bf2d58a1b22cef4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263096"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654525"
 ---
 # <a name="convert-get-method-to-property--convert-property-to-get-method-refactorings"></a>Convertir la méthode Get en propriété/convertir une propriété en méthode Get (refactorisations)
 
@@ -27,9 +27,9 @@ Ces refactorisations s’appliquent à :
 
 ## <a name="convert-get-method-to-property"></a>Convertir la méthode Get en propriété
 
-**Quoi :** Vous permet de convertir une méthode Get en une propriété (et éventuellement votre méthode Set).
+**Quoi :** vous permet de convertir une méthode Get en une propriété (et éventuellement votre méthode Set).
 
-**Quand :** Vous avez une méthode Get qui ne contient aucune logique.
+**Quand :** vous avez une méthode Get qui ne contient aucune logique.
 
 ### <a name="how-to"></a>Procédure
 
@@ -68,9 +68,9 @@ public int MyValue
 
 ## <a name="convert-property-to-get-method"></a>Convertir la propriété en méthode Get
 
-**Quoi :** Vous permet de convertir une propriété en une méthode Get
+**Quoi :** vous permet de convertir une propriété en une méthode Get
 
-**Quand :** Vous disposez d’une propriété qui implique plus que la définition et l’obtention immédiates d’une valeur
+**Quand :** vous disposez d’une propriété qui implique plus que la définition et l’obtention immédiates d’une valeur
 
 ### <a name="how-to"></a>Procédure
 

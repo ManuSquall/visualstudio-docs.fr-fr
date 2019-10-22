@@ -13,24 +13,24 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6db8989fc6c932723a9b95017854635396b0deda
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9d491b03ba04d346e3a14a08d5e2b6b9d34c7d97
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977641"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573922"
 ---
 # <a name="imachinedebugmanager-interface"></a>IMachineDebugManager, interface
-L’interface principale de la Machine Debug Manager. Cette interface est similaire à la `IMachineDebugManagerCookie` interface.  
+Interface principale du gestionnaire de débogage de l’ordinateur. Cette interface est similaire à l’interface `IMachineDebugManagerCookie`.  
   
- Outre les méthodes héritées de `IUnknown`, le `IMachineDebugManager` interface expose les méthodes suivantes.  
+ En plus des méthodes héritées de `IUnknown`, l’interface `IMachineDebugManager` expose les méthodes suivantes.  
   
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
   
 |Méthode|Description|  
 |------------|-----------------|  
-|[IMachineDebugManager::AddApplication](../../winscript/reference/imachinedebugmanager-addapplication.md)|Ajoute une application à l’exécution liste d’applications.|  
-|[IMachineDebugManager::RemoveApplication](../../winscript/reference/imachinedebugmanager-removeapplication.md)|Supprime une application en cours d’exécution la liste des applications.|  
+|[IMachineDebugManager::AddApplication](../../winscript/reference/imachinedebugmanager-addapplication.md)|Ajoute une application à la liste des applications en cours d’exécution.|  
+|[IMachineDebugManager::RemoveApplication](../../winscript/reference/imachinedebugmanager-removeapplication.md)|Supprime une application de la liste des applications en cours d’exécution.|  
 |[IMachineDebugManager::EnumApplications](../../winscript/reference/imachinedebugmanager-enumapplications.md)|Retourne un énumérateur de la liste actuelle des applications en cours d’exécution.|  
   
 ## <a name="see-also"></a>Voir aussi  

@@ -1,19 +1,19 @@
 ---
-title: Éditeur XML fonctionnalités IntelliSense
+title: Fonctionnalités IntelliSense de l’éditeur XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2b26f214-cc3a-46bf-b260-14eb8e599182
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 312c304855a450a648b000b8306b80ade969c785
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5a44af076e8663e525e33727a24aa93f9391f4b5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62807965"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72603962"
 ---
 # <a name="xml-editor-intellisense-features"></a>Fonctionnalités IntelliSense de l’éditeur XML
 
@@ -21,11 +21,11 @@ L'éditeur XML offre des fonctionnalités IntelliSense complètes comparables à
 
 ## <a name="intellisense-in-an-xsd-document"></a>IntelliSense dans un document XSD
 
-Une fois un schéma est associé à votre document, vous obtenez une liste déroulante d’éléments attendus chaque fois que vous tapez `"<"` ou cliquez sur le **afficher une liste des membres objets** bouton sur la barre d’outils de l’éditeur XML.
+Une fois qu’un schéma est associé à votre document, vous recevez une liste déroulante d’éléments attendus chaque fois que vous tapez `"<"` ou que vous cliquez sur le bouton **afficher la liste des membres** de l’objet dans la barre d’outils de l’éditeur XML.
 
-![Bouton de la liste Affichage objet membre](media/display-object-member-list-xml.png)
+![Bouton afficher la liste des membres de l’objet](media/display-object-member-list-xml.png)
 
-Pour plus d’informations sur la façon d’associer des schémas à vos documents XML, consultez [validation de documents XML](../xml-tools/xml-document-validation.md).
+Pour plus d’informations sur la façon d’associer des schémas à vos documents XML, consultez [validation de document XML](../xml-tools/xml-document-validation.md).
 
 Lorsque vous entrez un ESPACE dans une étiquette de début, vous obtenez également une liste déroulante de tous les attributs qui peuvent être ajoutés à l’élément actuel.
 
@@ -49,15 +49,15 @@ Après avoir ajouté un modèle nommé ou un attribut à votre document XSLT, vo
 
 - Noms de paramètre pour un modèle nommé donné.
 
-Pour plus d’informations, consultez [Procédure pas à pas : Utilisation d’IntelliSense XSLT](../xml-tools/walkthrough-using-xslt-intellisense.md) rubrique.
+Pour plus d’informations, consultez la rubrique [procédure pas à pas : utilisation d’INTELLISENSE XSLT](../xml-tools/walkthrough-using-xslt-intellisense.md) .
 
-## <a name="auto-completion"></a>La saisie semi-automatique
+## <a name="auto-completion"></a>Saisie semi-automatique
 
 L'éditeur XML facilite également l'édition du XML en complétant automatiquement la syntaxe XML requise. Par exemple, si vous entrez l’étiquette de début suivante :
 
 `<book>`
 
-L’éditeur XML insère l’étiquette de fin et place le curseur juste après l’étiquette de début. Voici un exemple de ce (le «&#124;» indique la position du curseur) :
+L’éditeur XML insère l’étiquette de fin et place le curseur juste après l’étiquette de début. Voici un exemple (le «&#124;» note la position du curseur) :
 
 `<book>`&#124;`</book>`
 
@@ -79,7 +79,7 @@ De même, l'éditeur XML insère automatiquement la syntaxe XML suivante :
 
 - Fin d'une déclaration DTD : `>`
 
-L’éditeur XML a également la possibilité d’insérer un espace de noms déclaration si vous sélectionnez un élément qualifié d’espace de noms ou d’attribut à partir d’une liste IntelliSense et l’espace de noms pour cet élément ou cet attribut n’est pas encore dans la portée.
+L’éditeur XML a également la possibilité d’insérer une déclaration d’espace de noms si vous sélectionnez un attribut ou un élément qualifié d’espace de noms dans une liste IntelliSense et que l’espace de noms de cet élément ou attribut n’est pas encore dans la portée.
 
 Par exemple, si vous sélectionnez l'élément `e:Book` dans la liste IntelliSense, sachant que le préfixe est lié à l'espace de noms `http://books` qui n'a pas encore été déclaré dans le document, l'éditeur XML insère automatiquement la déclaration d'espace de noms requise. Il en résulte le texte XML suivant :
 
@@ -87,13 +87,13 @@ Par exemple, si vous sélectionnez l'élément `e:Book` dans la liste IntelliSen
 
 ## <a name="brace-matching"></a>Accolades correspondantes
 
-L'éditeur XML met en évidence les accolades pour indiquer immédiatement quel élément vous venez de fermer. Vous pouvez également utiliser le raccourci clavier (**Ctrl**+**]**) pour passer d’une accolade à l’accolade correspondante.
+L'éditeur XML met en évidence les accolades pour indiquer immédiatement quel élément vous venez de fermer. Vous pouvez également utiliser le raccourci clavier (**Ctrl** + **]** ) pour passer d’une accolade à l’accolade correspondante.
 
 L'éditeur XML offre cette fonctionnalité pour les éléments suivants :
 
 - Les étiquettes de début et de fin qui se correspondent.
 
-- Toute paire de «\<» ou « > » crochets pointus.
+- Toute paire de crochets « \< » ou « > ».
 
 - Le début et la fin de commentaires
 
@@ -107,11 +107,11 @@ L'éditeur XML offre cette fonctionnalité pour les éléments suivants :
 
 ## <a name="modify-the-intellisense-options"></a>Modifier les options IntelliSense
 
-Les fonctions IntelliSense et de saisie semi-automatique sont activées par défaut. Toutefois, vous pouvez modifier cela en modifiant votre **outils** > **Options** paramètres.
+Les fonctions IntelliSense et de saisie semi-automatique sont activées par défaut. Toutefois, vous pouvez modifier ce paramètre en modifiant vos **outils**  >  paramètres**options** .
 
-Le **insertion automatique** section de la **divers** page contrôle le comportement suivant :
+La section **insertion automatique** de la page **divers** contrôle le comportement suivant :
 
-|Nom|Description|
+|Name|Description|
 |-|-----------------|
 |Balises de fermeture|Insère des étiquettes de fermeture pour les nouveaux éléments.|
 |Guillemets d'attribut|Insère les guillemets marquant une valeur d'attribut lorsque vous entrez un nouveau nom d'attribut.|
@@ -123,10 +123,10 @@ Le **insertion automatique** section de la **divers** page contrôle le comporte
 
 2. Développez **éditeur de texte**, développez **XML**, puis sélectionnez **divers**.
 
-3. Apporter des modifications à la **insertion automatique** section et cliquez sur **OK**.
+3. Apportez des modifications à la section **insertion automatique** , puis cliquez sur **OK**.
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Éditeur XML](../xml-tools/xml-editor.md)
 - [Utilisation de la fonctionnalité IntelliSense](../ide/using-intellisense.md)
-- [Procédure pas à pas : Utilisation d’IntelliSense XSLT](../xml-tools/walkthrough-using-xslt-intellisense.md)
+- [Procédure pas à pas : utilisation d’IntelliSense XSLT](../xml-tools/walkthrough-using-xslt-intellisense.md)

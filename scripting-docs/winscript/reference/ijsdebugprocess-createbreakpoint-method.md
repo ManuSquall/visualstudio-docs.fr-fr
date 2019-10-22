@@ -1,5 +1,5 @@
 ---
-title: Méthode IJsDebugProcess::CreateBreakPoint | Microsoft Docs
+title: 'IJsDebugProcess :: CreateBreakPoint, méthode | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b398b93c2e7b5ad43abd35d385407b39c0c980f9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2b0a4d595a11dc54829c467a0aace9601042fa08
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557970"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575090"
 ---
 # <a name="ijsdebugprocesscreatebreakpoint-method"></a>IJsDebugProcess::CreateBreakPoint, méthode
-Définit le point d’arrêt à la position du document spécifié.  
+Définit le point d’arrêt à la position de document spécifiée.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -39,24 +39,24 @@ HRESULT CreateBreakPoint(
   
 #### <a name="parameters"></a>Paramètres  
  `documentId`  
- [in] Pointeur vers IDebugDocumentText.  
+ dans Pointeur vers IDebugDocumentText.  
   
  `characterOffset`  
- [in] Offset de caractère à partir du début du fichier.  
+ dans Offset de caractère à partir du début du fichier.  
   
  `characterCount`  
- [in] Longueur du texte du document dans lequel le point d’arrêt doit être inséré.  
+ dans Longueur du texte du document dans lequel le point d’arrêt doit être inséré.  
   
  `isEnabled`  
- [in] Spécifie si le point d’arrêt est activé.  
+ dans Spécifie si le point d’arrêt est activé.  
   
  `ppDebugBreakPoint`  
- [out] Objet représentant le point d’arrêt a été créé.  
+ à Objet représentant le point d’arrêt qui a été créé.  
   
 ## <a name="return-value"></a>Valeur de retour  
   
-## <a name="requirements"></a>Configuration requise  
- **En-tête :** jscript9diag.h  
+## <a name="requirements"></a>spécifications  
+ **En-tête :** jscript9diag. h  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IJsDebugProcess](../../winscript/reference/ijsdebugprocess-interface.md)

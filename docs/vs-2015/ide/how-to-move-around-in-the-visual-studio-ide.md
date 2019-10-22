@@ -15,15 +15,15 @@ helpviewer_keywords:
 - IDE navigator
 ms.assetid: 6c36b6eb-c93f-496b-af08-4199f7afd8bd
 caps.latest.revision: 33
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 93200995c3afa59b0a4a27aaa9c674fa17b5ee3f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 89c4447eb6bbc4b2ae9f7667672626d5119c61d6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685601"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651795"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Comment : se déplacer dans l'IDE de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ L’environnement de développement intégré (IDE) a été conçu pour vous per
 
   Le **Navigateur IDE** fonctionne de façon très similaire au commutateur d’applications Windows. Il n'est pas disponible à partir des menus et il n'est accessible qu'à l'aide des touches de raccourci. Vous pouvez utiliser l’une des deux commandes disponibles pour accéder au **Navigateur IDE** (illustré ci-dessous) afin de parcourir des fichiers, selon l’ordre de défilement de votre choix.
 
-  ![Navigateur de l’IDE Visual Studio](../ide/media/vs2015-ide-navigator.png "VS2015_IDE_Navigator")
+  ![Navigateur de l’IDE Visual Studio](../ide/media/vs2015-ide-navigator.png "|::ref1::|")
 
   `Window.PreviousDocumentWindowNav` vous permet de passer au fichier ayant le plus récemment fait l'objet d'un accès, tandis que `Window.NextDocumentWindowNav` vous permet de vous déplacer dans le sens contraire. Les paramètres de développement généraux assignent Ctrl + Maj + Tab à `Window.PreviousDocumentWindowNav` et Ctrl + Tab à `Window.NextDocumentWindowNav`.
 

@@ -155,7 +155,7 @@
         - name: Créer des vues personnalisées d’objets gérés
           items:
             - name: Créer des vues personnalisées d’objets gérés
-              href: create-custom-views-of-dot-managed-objects.md
+              href: create-custom-views-of-managed-objects.md
             - name: Utilisation de l'attribut DebuggerTypeProxy
               href: using-debuggertypeproxy-attribute.md
             - name: Utilisation de l’attribut DebuggerDisplay
@@ -682,9 +682,9 @@
                       href: how-to-enable-debugging-for-aspnet-applications.md
                     - name: exécuter le processus Worker sous un compte d’utilisateur
                       href: how-to-run-the-worker-process-under-a-user-account.md
-                - name: Conditions requises pour le débogage à distance d'applications Web
+                - name: Prérequis pour le débogage à distance d'applications web
                   items:
-                    - name: Conditions requises pour le débogage à distance d'applications Web
+                    - name: Prérequis pour le débogage à distance d'applications web
                       href: prerequistes-for-remote-debugging-web-applications.md
                     - name: Rechercher le nom du processus ASP.NET
                       href: how-to-find-the-name-of-the-aspnet-process.md

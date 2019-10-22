@@ -11,15 +11,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2e8302737fb4abf96c55d3ae70424cc03579b270
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b4a635a802ae84b8e839159f5e2f1c4c461e05ae
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963323"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572027"
 ---
 # <a name="ienumjsstackframes-interface"></a>IEnumJsStackFrames, interface
-Implémenté par le débogueur pour fournir une pile de désempilage à jscript9diag.dll pour JavaScript.  
+Implémenté par le débogueur pour fournir le déroulement de la pile à jscript9diag. dll pour JavaScript.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -31,13 +31,13 @@ IEnumJsStackFrames : public IUnknown;
   
 ### <a name="public-methods"></a>M&#233;thodes publiques  
   
-|Nom|Description|  
+|Name|Description|  
 |----------|-----------------|  
 |[Méthode IEnumJsStackFrames::Next](../../winscript/reference/ienumjsstackframes-next-method.md)|Obtient le nombre spécifié de frames.|  
-|[Méthode IEnumJsStackFrames::Reset](../../winscript/reference/ienumjsstackframes-reset-method.md)|Réinitialise le frame de pile à la position avant le premier élément.|  
+|[Méthode IEnumJsStackFrames::Reset](../../winscript/reference/ienumjsstackframes-reset-method.md)|Rétablit la position avant le premier élément du frame de pile.|  
   
-## <a name="requirements"></a>Configuration requise  
- **En-tête :** jscript9diag.h  
+## <a name="requirements"></a>spécifications  
+ **En-tête :** jscript9diag. h  
   
 ## <a name="see-also"></a>Voir aussi  
  [Référence d’interfaces de script Windows](../../winscript/reference/windows-script-interfaces-reference.md)

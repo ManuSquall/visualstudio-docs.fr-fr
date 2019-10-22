@@ -10,41 +10,41 @@ helpviewer_keywords:
 - data [Visual Studio], extending TableAdapters
 - TableAdapters, adding functionality
 ms.assetid: 418249c8-c7f3-47ef-a94c-744cb6fe6aaf
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d0ec905670c72ff7c2c5f5d94c9f5189241daebb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e92b820b04913733095645d21ad682bff40acd84
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567430"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648492"
 ---
 # <a name="extend-the-functionality-of-a-tableadapter"></a>Étendre les fonctionnalités d’un TableAdapter
 
 Vous pouvez étendre les fonctionnalités d’un TableAdapter en ajoutant du code au fichier de classe partielle du TableAdapter.
 
-Le code qui définit un TableAdapter est régénéré lorsque des modifications sont apportées au TableAdapter dans le **Concepteur de Dataset**, ou quand un Assistant modifie la configuration d’un TableAdapter. Pour empêcher que votre code en cours de suppression pendant la régénération d’un TableAdapter, ajoutez le code au fichier de classe partielle du TableAdapter.
+Le code qui définit un TableAdapter est régénéré lorsqu’une modification est apportée au TableAdapter dans le **Concepteur de DataSet**, ou lorsqu’un Assistant modifie la configuration d’un TableAdapter. Pour empêcher la suppression de votre code pendant la régénération d’un TableAdapter, ajoutez du code au fichier de classe partielle du TableAdapter.
 
-Classes partielles permettent au code pour une classe spécifique être réparti entre plusieurs fichiers physiques. Pour plus d’informations, consultez [partielle](/dotnet/visual-basic/language-reference/modifiers/partial) ou [partial (Type)](/dotnet/csharp/language-reference/keywords/partial-type).
+Les classes partielles permettent à du code pour une classe spécifique d’être divisé entre plusieurs fichiers physiques. Pour plus d’informations, consultez [Partial](/dotnet/visual-basic/language-reference/modifiers/partial) ou [Partial (type)](/dotnet/csharp/language-reference/keywords/partial-type).
 
-## <a name="locate-tableadapters-in-code"></a>Recherchez les TableAdapters dans le code
+## <a name="locate-tableadapters-in-code"></a>Localiser des TableAdapters dans le code
 
-Alors que les TableAdapters sont conçus avec le **Concepteur de Dataset**, les classes TableAdapter générées ne sont pas des classes imbriquées de <xref:System.Data.DataSet>. Les TableAdapters sont situés dans un espace de noms basé sur le nom de jeu de données du TableAdapter associé. Par exemple, si votre application contienne un dataset nommé `HRDataSet`, les TableAdapters se trouvent dans le `HRDataSetTableAdapters` espace de noms. (La convention d’affectation de noms suit ce modèle : *DatasetName* + `TableAdapters`).
+Alors que les TableAdapters sont conçus avec l' **Concepteur de DataSet**, les classes TableAdapter générées ne sont pas des classes imbriquées de <xref:System.Data.DataSet>. Les TableAdapters se trouvent dans un espace de noms basé sur le nom du jeu de données associé du TableAdapter. Par exemple, si votre application contient un dataset nommé `HRDataSet`, les TableAdapters se trouvent dans l’espace de noms `HRDataSetTableAdapters`. (La convention d’affectation de noms suit ce modèle : *DatasetName* + `TableAdapters`).
 
-L’exemple suivant suppose un TableAdapter nommé `CustomersTableAdapter`est dans un projet avec `NorthwindDataSet`.
+L’exemple suivant suppose qu’un TableAdapter nommé `CustomersTableAdapter`is dans un projet avec `NorthwindDataSet`.
 
 ### <a name="to-create-a-partial-class-for-a-tableadapter"></a>Pour créer une classe partielle pour un TableAdapter
 
-1. Ajouter une nouvelle classe à votre projet en accédant à la **projet** menu et en sélectionnant **ajouter une classe**.
+1. Ajoutez une nouvelle classe à votre projet en accédant au menu **projet** et en sélectionnant **Ajouter une classe**.
 
 2. Nommez la classe `CustomersTableAdapterExtended`.
 
-3. Sélectionnez **Ajouter**.
+3. Sélectionnez **Ajouter** .
 
-4. Remplacez le code avec le nom de classe partielle pour votre projet et un espace de noms approprié comme suit :
+4. Remplacez le code par l’espace de noms et le nom de classe partiels appropriés pour votre projet, comme suit :
 
      [!code-csharp[VbRaddataTableAdapters#2](../data-tools/codesnippet/CSharp/extend-the-functionality-of-a-tableadapter_1.cs)]
      [!code-vb[VbRaddataTableAdapters#2](../data-tools/codesnippet/VisualBasic/extend-the-functionality-of-a-tableadapter_1.vb)]

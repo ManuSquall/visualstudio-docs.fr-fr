@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugCodeContexts::Clone | Microsoft Docs
+title: 'IEnumDebugCodeContexts :: Clone | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a08c65a7be5ed0b6394ef5e0aab284a03a52a240
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9ccb3515beaf1398807053465eb771e025b25e58
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951453"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573012"
 ---
 # <a name="ienumdebugcodecontextsclone"></a>IEnumDebugCodeContexts::Clone
-Crée un énumérateur qui contient le même état que l’énumérateur en cours.  
+Crée un énumérateur qui contient le même État que l’énumérateur actuel.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -37,17 +37,17 @@ HRESULT Clone(
   
 #### <a name="parameters"></a>Paramètres  
  `ppescc`  
- [out] Retourne le `IEnumDebugCodeContexts` interface du clone de l’énumérateur.  
+ à Retourne l’interface `IEnumDebugCodeContexts` du clone de l’énumérateur.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode crée un énumérateur qui contient le même état que l’énumérateur en cours.  
+ Cette méthode crée un énumérateur qui contient le même État que l’énumérateur actuel.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IEnumDebugCodeContexts](../../winscript/reference/ienumdebugcodecontexts-interface.md)

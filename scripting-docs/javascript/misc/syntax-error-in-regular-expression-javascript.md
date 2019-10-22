@@ -14,21 +14,21 @@ ms.assetid: 7799ed69-c877-42a1-87cf-ad6739302c10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2c8010f268457ac60d17e617d08aa5898bdd0cb2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 69970a810df7cf0ea186d74fc39ae23e6e44e7ab
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63006429"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573664"
 ---
 # <a name="syntax-error-in-regular-expression-javascript"></a>Erreur de syntaxe dans l'expression régulière (JavaScript)
-La structure de votre chaîne de recherche enfreint une ou plusieurs règles grammaticales d’un [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] expression régulière.  
+La structure de votre chaîne de recherche enfreint une ou plusieurs des règles grammaticales d’une expression régulière [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
-- Vérifiez que la structure de votre chaîne de recherche d’expression régulière respecte la [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] syntaxe d’expression régulière.  
+- Vérifiez que la structure de votre chaîne de recherche d’expression régulière respecte la syntaxe d’expression régulière [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
 ## <a name="see-also"></a>Voir aussi  
- [Objet d’Expression régulière](../../javascript/reference/regular-expression-object-javascript.md)   
- [Syntaxe d’Expression régulière (JavaScript)](https://msdn.microsoft.com/library/1400241x)   
+ @No__t_1 d' [objet d’expression régulière](../../javascript/reference/regular-expression-object-javascript.md)  
+ [Syntaxe des expressions régulières (JavaScript)](https://msdn.microsoft.com/library/1400241x)    
  [Méthode compile (Expression régulière)](../../javascript/reference/compile-method-regular-expression-javascript.md)

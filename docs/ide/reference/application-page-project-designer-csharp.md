@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - Project Designer, Application page
 - Application page in Project Designer
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 04a130528edbe8ab3aae0a24d69315b934b19d54
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
-ms.translationtype: HT
+ms.openlocfilehash: cc28c4b6585c52bca084234b8d21f211b4209b87
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551429"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651970"
 ---
 # <a name="application-page-project-designer-c"></a>Page Application, Concepteur de projet (C#)
 
@@ -107,7 +107,7 @@ Pour accéder à cette propriété par programmation, consultez <xref:VSLangProj
 
 Pour plus d’informations sur la création d’une icône, consultez [Éditeur d’images pour les icônes](/cpp/windows/image-editor-for-icons).
 
-**Manifest**
+**Manifeste**
 
 Sélectionne une option de génération de manifeste quand l’application s’exécute sur Windows Vista sous contrôle de compte d’utilisateur (UAC). Cette option peut avoir les valeurs suivantes :
 

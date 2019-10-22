@@ -8,15 +8,15 @@ helpviewer_keywords:
 - load tests, test mix
 - load tests, removing tests
 ms.assetid: 303e1d70-5d98-424a-b51e-e0898e16d3f8
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f28a9be17bba0bf7fc8fa4ea2198a255a2cbde53
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 9a2c882d912cb46e4f61bd03b9949aaf9fd135d6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918303"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665011"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>Modifier la combinaison de tests pour spécifier les tests de performances web, les tests unitaires et les tests codés de l’interface utilisateur à inclure dans un scénario de test de charge
 
@@ -76,7 +76,7 @@ Le contrôle de combinaison vous permet d'ajuster le pourcentage de charge distr
 
 Lorsque vous déplacez un curseur, les valeurs en pourcentage de tous les éléments disponibles changent. Si plus de deux éléments sont disponibles, la charge que vous ajoutez ou supprimez est répartie de manière égale entre les autres éléments. Il est possible de modifier ce comportement. Si vous activez la case à cocher dans la colonne de verrouillage d'un élément particulier, vous verrouillez la valeur en pourcentage spécifiée pour cet élément. Ensuite, lorsque vous déplacez un curseur, la charge que vous ajoutez ou supprimez ne s'applique qu'aux éléments non verrouillés restants.
 
-Le bouton **Distribuer** est utilisé pour allouer les pourcentages de manière égale entre tous les éléments. Par exemple, si trois éléments sont disponibles et si vous choisissez **Distribuer**, les pourcentages sont 34, 33 et 33.
+Le bouton **Distribuer** est utilisé pour allouer les pourcentages de manière égale entre tous les éléments. Par exemple, si trois éléments sont disponibles et que vous choisissez **Distribuer**, les pourcentages sont 34, 33 et 33.
 
 > [!WARNING]
 > Le bouton **Distribuer** permet de remplacer les éléments verrouillés.

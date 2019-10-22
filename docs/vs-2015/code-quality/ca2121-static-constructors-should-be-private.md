@@ -1,5 +1,5 @@
 ---
-title: 'CA2121 : Les constructeurs statiques doivent être privés | Microsoft Docs'
+title: 'CA2121 : les constructeurs statiques doivent être privés | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,17 +12,17 @@ helpviewer_keywords:
 - StaticConstructorsShouldBePrivate
 ms.assetid: ee93c620-8fc1-4e47-866c-d389c3ca9f2e
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: d7894b4ec0039b28a579239605c22c2397c300f3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9f28c1dadaef2dc88a3d728322dee1053ccdd69c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68154348"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72663078"
 ---
-# <a name="ca2121-static-constructors-should-be-private"></a>CA2121 : Les constructeurs statiques doivent être privés
+# <a name="ca2121-static-constructors-should-be-private"></a>CA2121 : Les constructeurs statiques doivent être privés
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -36,18 +36,18 @@ ms.locfileid: "68154348"
  Un type a un constructeur statique qui n’est pas privé.
 
 ## <a name="rule-description"></a>Description de la règle
- Un constructeur statique, également appelé constructeur de classe, est utilisé pour initialiser un type. Le système appelle le constructeur statique avant la création de la première instance du type ou le référencement de tout membre statique. L’utilisateur n’a aucun contrôle sur quand le constructeur statique est appelé. Si un constructeur statique n’est pas privé, il peut être appelé par un code autre que le système. Selon les opérations effectuées dans le constructeur, cette possibilité peut provoquer un comportement inattendu.
+ Un constructeur statique, également connu sous le nom de constructeur de classe, est utilisé pour initialiser un type. Le système appelle le constructeur statique avant la création de la première instance du type ou le référencement de tout membre statique. L’utilisateur n’a aucun contrôle sur le moment où le constructeur statique est appelé. Si un constructeur statique n’est pas privé, il peut être appelé par un code autre que le système. Selon les opérations effectuées dans le constructeur, cette possibilité peut provoquer un comportement inattendu.
 
- Cette règle est appliquée par les compilateurs c# et Visual Basic .NET.
+ Cette règle est appliquée par le C# et Visual Basic compilateurs .net.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Violations sont généralement provoquées par une des actions suivantes :
+ Les violations sont généralement provoquées par l’une des actions suivantes :
 
-- Vous défini un constructeur statique pour votre type et que vous n’avez pas effectué privé.
+- Vous avez défini un constructeur statique pour votre type et vous ne l’avez pas privé.
 
-- Le compilateur de langage de programmation ajouté un constructeur statique par défaut pour votre type et n’avez pas effectué privé.
+- Le compilateur du langage de programmation a ajouté un constructeur statique par défaut à votre type et ne l’a pas rend privé.
 
-  Pour résoudre le premier type de violation, rendez votre constructeur statique privé. Pour résoudre le second type, ajoutez un constructeur statique privé à votre type.
+  Pour corriger le premier type de violation, rendez votre constructeur statique privé. Pour corriger le deuxième genre, ajoutez un constructeur statique privé à votre type.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Ne supprimez pas ces violations. Si votre conception de logiciels requiert un appel explicite à un constructeur statique, il est probable qu’il contient de sérieux défauts et doivent être examinés.
+ Ne supprimez pas ces violations. Si votre conception de logiciel requiert un appel explicite à un constructeur statique, il est probable que la conception contient des défauts sérieux et qu’elle doit être examinée.

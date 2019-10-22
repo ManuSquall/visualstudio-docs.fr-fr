@@ -8,24 +8,24 @@ helpviewer_keywords:
 - Project Designer, My Extensions page
 - My Extensions page in Project Designer
 ms.assetid: 2f08494e-84c1-444b-872b-900fbbcf0364
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1527d3d44d499028c852cb09e489c1b873b11c45
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 229ee7f4384c5ab93a329104ecbe165e0e1136a4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926157"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666457"
 ---
 # <a name="my-extensions-page-project-designer-visual-basic"></a>Extensions My, page du Concepteur de projets (Visual Basic)
 Utilisez la page **Extensions My** du **Concepteur de projets** pour gérer les extensions d’espace de noms `My` dans votre projet. Grâce aux extensions de l’espace de noms `My`, vous pouvez personnaliser l’espace de noms `My` pour ajouter vos propres membres personnalisés. Pour plus d’informations sur la création d’extensions d’espace de noms `My` personnalisées, consultez [Extension de l’espace de noms My dans Visual Basic](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace).
 
 Pour accéder à la page **Extensions My**, double-cliquez sur **My Project** pour votre nœud de projet dans l’**Explorateur de solutions**. Quand le **Concepteur de projets** s’affiche, cliquez sur l’onglet **Extensions My**.
 
-## <a name="uielement-list"></a>Liste UIElement
+## <a name="uielement-list"></a>Liste des éléments d’interface
 Les options suivantes permettent d’ajouter ou de supprimer des extensions de l’espace de noms `My` dans votre projet. Une extension de l’espace de noms `My` doit tout d’abord être installée en tant que modèle d’élément Visual Studio pour pouvoir être ajoutée. Pour plus d’informations sur la publication et l’installation des extensions de l’espace de noms `My`, consultez [Empaquetage et déploiement des extensions My personnalisées](/dotnet/visual-basic/developing-apps/customizing-extending-my/packaging-and-deploying-custom-my-extensions).
 
  **Extensions de l’espace de noms My**

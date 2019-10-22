@@ -12,31 +12,31 @@ helpviewer_keywords:
 - line break characters
 - Visual Studio, line break characters
 ms.assetid: 8f9b3ffc-7b8d-44f4-87cb-dc29105be12d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59ed38c28c6818fb618156450d47c05b4f35d63d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 8fd37547d8107cf35991aab684313dbff37adda0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978162"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650894"
 ---
 # <a name="encodings-and-line-endings"></a>Encodages et fins de ligne
 
 Les caractères suivants sont interprétés comme des sauts de ligne dans Visual Studio :
 
-- CR LF : Retour chariot + saut de ligne, caractères Unicode 000D + 000A
+- CR LF : retour chariot + saut de ligne, caractères Unicode 000D + 000A
 
-- LF : Saut de ligne, caractère Unicode 000A
+- LF : saut de ligne, caractère Unicode 000A
 
-- NEL : Ligne suivante, caractère Unicode 0085
+- NEL : ligne suivante, caractère Unicode 0085
 
-- LS : Séparateur de ligne, caractère Unicode 2028
+- LS : séparateur de ligne, caractère Unicode 2028
 
-- PS : Séparateur de paragraphe, caractère Unicode 2029
+- PS : séparateur de paragraphe, caractère Unicode 2029
 
 Du texte copié à partir d’autres applications conserve les caractères d’encodage et de saut de ligne d’origine. Par exemple, lorsque vous copiez du texte à partir du Bloc-notes pour le coller dans un fichier texte dans Visual Studio, le texte a les mêmes paramètres que dans le Bloc-notes.
 
@@ -49,7 +49,7 @@ Vous pouvez utiliser la boîte de dialogue **Fichier** > **Options d’enregistr
 ![Boîte de dialogue Options d’enregistrement avancées](media/line_endings.png)
 
 > [!NOTE]
-> Si vous ne voyez pas la commande **Options d’enregistrement avancées** dans le menu **Fichier**, vous pouvez l’ajouter. Choisissez **Outils**, **Personnaliser**, puis choisissez l’onglet **Commandes**. Dans la liste déroulante **Barre de menus**, choisissez **Fichier**, puis le bouton **Ajouter une commande**. Dans la boîte de dialogue **Ajouter une commande**, sous **Catégories**, choisissez **Fichier** et, dans la liste **Commandes**, choisissez **Options d’enregistrement avancées**. Choisissez **OK**, puis choisissez le bouton **Descendre** pour déplacer la commande à l’emplacement souhaité dans le menu. Choisissez **Fermer** pour fermer la boîte de dialogue **Personnaliser**. Pour plus d’informations, consultez [Personnaliser les menus et les barres d’outils](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#customizing_menu).
+> Si vous ne voyez pas la commande **Options d’enregistrement avancées** dans le menu **Fichier**, vous pouvez l’ajouter. Choisissez **Outils**, **personnaliser**, puis l’onglet **commandes** . Dans la liste déroulante **barre de menus** , choisissez **fichier**, puis cliquez sur le bouton **Ajouter une commande** . Dans la boîte de dialogue **Ajouter une commande**, sous **Catégories**, choisissez **Fichier** et, dans la liste **Commandes**, choisissez **Options d’enregistrement avancées**. Choisissez **OK** , puis cliquez sur **le bouton descendre pour déplacer la** commande vers n’importe quel emplacement dans le menu. Choisissez **Fermer** pour fermer la boîte de dialogue **Personnaliser**. Pour plus d’informations, consultez [Personnaliser les menus et les barres d’outils](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#customizing_menu).
 >
 > Vous pouvez aussi accéder à la boîte de dialogue **Options d’enregistrement avancées** en choisissant **Fichier** > **Enregistrer le \<fichier\> sous**. Dans la boîte de dialogue **Enregistrer le fichier sous**, choisissez la flèche de liste déroulante à côté du bouton **Enregistrer**, puis choisissez **Enregistrer avec encodage**.
 

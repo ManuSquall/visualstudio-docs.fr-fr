@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext::EnumCodeContexts | Microsoft Docs
+title: 'IDebugDocumentContext :: EnumCodeContexts | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ecf8b7d1ea292d0e1464825314cc92e1e903db3e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 790fd55493bfb24b32400bc73ae8a1799a279625
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974421"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573479"
 ---
 # <a name="idebugdocumentcontextenumcodecontexts"></a>IDebugDocumentContext::EnumCodeContexts
 Énumère les contextes de code associés à ce contexte de document.  
@@ -37,17 +37,17 @@ HRESULT EnumCodeContexts(
   
 #### <a name="parameters"></a>Paramètres  
  `ppescc`  
- [out] Les contextes de code associés à ce contexte de document.  
+ à Contextes de code associés à ce contexte de document.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
 ## <a name="remarks"></a>Notes  
- Un document est généralement associé au contexte de code qu’une seule, sauf si le document est un fichier include ou un modèle.  
+ Un document est généralement associé à un seul contexte de code, sauf s’il s’agit d’un fichier include ou d’un modèle.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IDebugDocumentContext](../../winscript/reference/idebugdocumentcontext-interface.md)

@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8d71f9e145d78d1d1bf7f6e9bb132e9fc084afd0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: cd8ebd706d9228d23eb5d5ce3b1429063bae55e5
+ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62810476"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72289719"
 ---
 # <a name="step-6-work-with-git"></a>Étape 6 : Utiliser Git
 
@@ -56,7 +56,7 @@ Cet article donne une vue d’ensemble de base de la création d’un référent
 
 Pour une brève procédure pas à pas de création d’un projet à partir d’un dépôt Git distant, consultez [Démarrage rapide : Cloner un dépôt de code Python dans Visual Studio](quickstart-03-python-in-visual-studio-project-from-repository.md).
 
-Pour un tutoriel beaucoup plus complet, notamment sur la prise en charge des conflits de fusion, la revue du code avec des demandes de tirage, le rebasage et le cherry-picking des changements entre les branches, consultez [Bien démarrer avec Git et Azure Repos](/azure/devops/repos/git/gitquickstart?toc=/visualstudio/version-control/toc.json&bc=/azure/devops/repos/git/breadcrumb/vc/toc.json&view=vsts&tabs=visual-studio).
+Pour un tutoriel beaucoup plus complet, notamment sur la prise en charge des conflits de fusion, la revue du code avec des demandes de tirage, le rebasage et le cherry-picking des changements entre les branches, consultez [Bien démarrer avec Git et Azure Repos](/azure/devops/repos/git/gitquickstart).
 
 ## <a name="tutorial-review"></a>Résumé du didacticiel
 

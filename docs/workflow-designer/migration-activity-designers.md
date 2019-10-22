@@ -1,25 +1,25 @@
 ---
-title: Concepteur de flux de travail - concepteurs d’activités de Migration
+title: Concepteurs d’activités de migration Concepteur de flux de travail
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 7598e869-1da1-4721-b4bf-6cbe402be1a2
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a7b284b370f248ed2497ece835036679af2e5a8
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: da8459db53a1ecb9a297e2a4a218791281806313
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747019"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650123"
 ---
 # <a name="migration-activity-designers"></a>Concepteurs d’activités de migration
 
-Les concepteurs d’activités de Migration sont utilisés pour appeler des 3.0/3.5 activités de flux de travail à partir d’un flux de travail qui cible .NET Framework 4 ou version ultérieure.
+Les concepteurs d’activités de migration sont utilisés pour appeler des activités de workflow 3.0/3.5 à partir d’un flux de travail qui cible .NET Framework 4 ou version ultérieure.
 
-Les rubriques contenues dans cette section fournissent des conseils sur la façon d’utiliser les concepteurs d’activités de Workflow Designer.
+Les rubriques contenues dans cette section fournissent des conseils sur l’utilisation des concepteurs d’activités Concepteur de flux de travail.
 
 ## <a name="related-sections"></a>Rubriques connexes
 
@@ -39,6 +39,6 @@ Pour les autres types de concepteurs d’activités, consultez les rubriques sui
 
 - [Transaction](../workflow-designer/transaction-activity-designers.md)
 
-- [Collection](../workflow-designer/collection-activity-designers.md)
+- [Regroupement](../workflow-designer/collection-activity-designers.md)
 
 - [Gestion des erreurs](../workflow-designer/error-handling-activity-designers.md)

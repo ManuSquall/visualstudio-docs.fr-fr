@@ -7,17 +7,17 @@ f1_keywords:
 - System.Activities.Presentation.ErrorActivity.UI
 - System.Activities.Presentation.View.ErrorView.UI
 ms.assetid: 4d8bbc2e-34fc-477f-9140-4adfd70c34a0
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a3f2d4d86f80bc7c2966d5156267352154b1279f
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 1406802f85c755d4dab25e000843a995be252d0a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254796"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650496"
 ---
 # <a name="error-messages-in-workflow-designer"></a>Messages d'erreur dans Workflow Designer
 
@@ -35,7 +35,7 @@ Les erreurs dans Concepteur de flux de travail se produisent dans les cas suivan
 
 4. Le fichier XAML contient des erreurs qui provoquent l'échec du chargement du workflow.
 
-Des expressions non valides et des contraintes de validation non satisfaites n’entraînent pas l’échec de la génération du workflow. La génération de votre flux de travail s' <xref:System.Activities.InvalidWorkflowException> effectue correctement, mais une exception est levée au moment de l’exécution. Si le fichier XAML contient des erreurs, la génération échoue.
+Des expressions non valides et des contraintes de validation non satisfaites n’entraînent pas l’échec de la génération du workflow. La génération de votre flux de travail s’effectue correctement, mais une <xref:System.Activities.InvalidWorkflowException> est levée au moment de l’exécution. Si le fichier XAML contient des erreurs, la génération échoue.
 
 Dans Visual Studio, lorsqu’un flux de travail est chargé, ses erreurs sont affichées dans la **liste d’erreurs**. Pour accéder à l’activité qui est la source de l’erreur, double-cliquez sur l’erreur dans la **liste d’erreurs**.
 

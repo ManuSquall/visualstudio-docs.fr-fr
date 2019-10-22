@@ -1,7 +1,7 @@
 ---
 title: Créer une installation réseau
 description: Découvrez comment créer un point d’installation réseau pour le déploiement de Visual Studio en entreprise.
-ms.date: 10/01/2019
+ms.date: 10/11/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0c6de85e6f2c5849567751b3232668ec2940cff9
-ms.sourcegitcommit: 6ae0a289f1654dec63b412bfa22035511a2ef5ad
+ms.openlocfilehash: fcc4a3d3d99deab62971c40b26c9a4252367438f
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71950709"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516321"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Créer une installation réseau de Visual Studio
 
@@ -33,23 +33,27 @@ De cette façon, les stations de travail clientes peuvent utiliser le même empl
 
 ## <a name="download-the-visual-studio-bootstrapper"></a>Télécharger le programme d’amorçage de Visual Studio
 
-Téléchargez l’édition de Visual Studio souhaitée. Veillez à cliquer sur **Enregistrer**, puis cliquez sur **Ouvrir le dossier**.
-
-L’exécutable de votre programme d’installation, ou pour être plus précis le fichier du programme d’amorçage, doit correspond à l’un de ceux mentionnés ici.
+Téléchargez un fichier de programme d’amorçage pour l’édition de Visual Studio souhaitée. Veillez à choisir **Enregistrer**, puis choisissez **ouvrir le dossier**.
 
 ::: moniker range="vs-2017"
 
-|Édition | Télécharger|
-|-------------|-----------------------|
-|Visual Studio Enterprise | [**vs_enterprise.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2017) |
-|Visual Studio Professional | [**vs_professional.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2017) |
-| Visual Studio Build Tools   | [**vs_buildtools. exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=buildtools&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2017) |
+Pour obtenir un programme d’amorçage pour Visual Studio 2017, consultez la page de téléchargement des [versions précédentes de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) pour plus d’informations sur la façon de procéder.
 
-Les autres programmes d’amorçage pris en charge incluent [vs_feedbackclient. exe](https://aka.ms/vs/15/release/vs_feedbackclient.exe), [vs_teamexplorer. exe](https://aka.ms/vs/15/release/vs_teamexplorer.exe), [vs_testagent. exe](https://aka.ms/vs/15/release/vs_testagent.exe), [vs_testcontroller. exe](https://aka.ms/vs/15/release/vs_testcontroller.exe)et [vs_testprofessional. exe](https://aka.ms/vs/15/release/vs_testprofessional.exe).
+L’exécutable de votre programme d’installation &mdash;or pour être plus précis, le fichier du programme d’amorçage &mdash;should correspond ou est semblable à l’un des éléments suivants.
+
+| Édition | Nom de fichier |
+|-------------|-----------------------|
+|Visual Studio Enterprise | **vs_enterprise.exe** |
+|Visual Studio Professional | **vs_professional.exe** |
+|Visual Studio Build Tools   | **vs_buildtools. exe** |
+
+Les autres programmes d’amorçage pris en charge incluent **vs_feedbackclient. exe**, **vs_teamexplorer. exe**, **vs_testagent. exe**, **vs_testcontroller. exe**et **vs_testprofessional. exe**.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
+
+L’exécutable de votre programme d’installation &mdash;or pour être plus précis, un fichier de programme d’amorçage &mdash;should correspondre ou être similaire à l’un des éléments suivants.
 
 |Édition | Télécharger|
 |-------------|-----------------------|
@@ -60,6 +64,9 @@ Les autres programmes d’amorçage pris en charge incluent [vs_feedbackclient. 
 Les autres programmes d’amorçage pris en charge incluent [vs_teamexplorer. exe](https://aka.ms/vs/16/release/vs_teamexplorer.exe), [vs_testagent. exe](https://aka.ms/vs/16/release/vs_testagent.exe)et [vs_testcontroller. exe](https://aka.ms/vs/16/release/vs_testcontroller.exe).
 
 ::: moniker-end
+
+>[!TIP]
+>Si vous avez précédemment téléchargé un fichier de programme d’amorçage et que vous souhaitez vérifier sa version, voici comment procéder. Dans Windows, ouvrez l’Explorateur de fichiers, cliquez avec le bouton droit sur le fichier du programme d’amorçage, choisissez **Propriétés**, cliquez sur l’onglet **Détails** , puis affichez le numéro de **version du produit** . Pour faire correspondre ce nombre à une version de Visual Studio, consultez la page [numéros de build et dates de publication de Visual Studio](visual-studio-build-numbers-and-release-dates.md) .
 
 ## <a name="create-an-offline-installation-folder"></a>Créer un dossier d’installation hors connexion
 
@@ -92,7 +99,7 @@ L’exemple suivant utilise [xcopy](/windows-server/administration/windows-comma
 
 ::: moniker range="vs-2017"
 
-Exemple :
+Exemple :
 
 ```cmd
 xcopy /e c:\VSLayout \\server\products\VS2017
@@ -219,6 +226,13 @@ Les administrateurs peuvent déployer Visual Studio sur les stations de travail 
 > C’est utile si un administrateur d’entreprise souhaite effectuer d’autres opérations sur une installation terminée (par exemple, pour [appliquer une clé de produit sur une installation réussie](automatically-apply-product-keys-when-deploying-visual-studio.md)), alors qu’il doit attendre que l’installation se termine pour gérer le code de retour de cette installation.
 >
 > Si vous n’utilisez pas `--wait`, le processus `vs_enterprise.exe` s’arrête avant que l’installation soit terminée et retourne un code de sortie incorrect qui ne représente pas l’état de l’opération d’installation.
+>
+
+::: moniker range="vs-2019"
+> [!IMPORTANT]
+> Pour les installations hors connexion, si vous recevez un message d’erreur indiquant « un produit correspondant aux paramètres suivants est introuvable », vérifiez que vous utilisez le commutateur `--noweb` avec la version 16.3.5 ou ultérieure.
+>
+::: moniker-end
 
 Lorsque vous installez à partir d’une disposition, le contenu qui est installé est acquis à partir de la disposition. Toutefois, si vous sélectionnez un composant qui ne se trouve pas dans la disposition, celui-ci est téléchargé à partir d’Internet.  Si vous voulez empêcher le programme d’installation de Visual Studio de télécharger le contenu manquant dans la disposition, utilisez l’option `--noWeb`. Si `--noWeb` est utilisé et qu’un contenu à installer est absent de la disposition, l’installation échoue.
 

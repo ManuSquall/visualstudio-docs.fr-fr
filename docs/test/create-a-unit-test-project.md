@@ -2,17 +2,17 @@
 title: Créer un projet de test unitaire
 ms.date: 01/29/2019
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: f04e999681899bb101dc0aeb70cc6f47094dc1d7
-ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: 30edc1a894a64fb7b9d8b988cafaed14aeaebfdd
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68483809"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665120"
 ---
 # <a name="create-a-unit-test-project"></a>Créer un projet de test unitaire
 

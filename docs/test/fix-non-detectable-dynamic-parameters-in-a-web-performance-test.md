@@ -7,15 +7,15 @@ helpviewer_keywords:
 - load tests, walkthroughs
 - load tests, correlating dynamic parameters
 ms.assetid: 92dff25c-36ee-4135-acdd-315c4962fa11
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bf305125fceb4c07bb0565fa227e7e88bb90e3a3
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 265d1510cd4c8a47478344ba06efcf5e4f43f946
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918488"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664975"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Corriger les paramètres dynamiques non détectables dans un test de performances de site Web
 
@@ -237,7 +237,7 @@ Pour illustrer un paramètre dynamique détectable et non détectable, nous cré
 
      ![Remplacer le texte par le paramètre](../test/media/web_test_dynamicparameter_addextractionfindreplace2.png)
 
-     Le paramètre QueryString sous la requête *JScriptQuery.aspx* est mis à jour à l’aide du nouveau paramètre de contexte :  CustomQueryString=jScriptQueryString___{{Param0}}.
+     Le paramètre QueryString sous la demande *JScriptQuery.aspx* est mis à jour à l’aide du nouveau paramètre de contexte : CustomQueryString=jScriptQueryString___ {{Param0}}.
 
      ![Paramètre appliqué à la chaîne de requête](../test/media/web_test_dynamicparameter_addextractionfindreplace3.png)
 
@@ -249,9 +249,9 @@ Pour illustrer un paramètre dynamique détectable et non détectable, nous cré
 
 ## <a name="qa"></a>Questions et réponses
 
-### <a name="q-can-i-re-run-dynamic-parameter-detection-if-my-web-app-gets-modified"></a>Q : Puis-je réexécuter la détection de paramètres dynamiques si mon application web est modifiée ?
+### <a name="q-can-i-re-run-dynamic-parameter-detection-if-my-web-app-gets-modified"></a>Q : Puis-je réexécuter la détection de paramètres dynamiques si mon application Web est modifiée ?
 
-**R :** Oui, utilisez la procédure suivante :
+**R :** Oui, utilisez la procédure suivante :
 
 1. Dans la barre d’outils, choisissez le bouton **Promouvoir les paramètres dynamiques en paramètres de test web**.
 
@@ -265,4 +265,4 @@ Pour illustrer un paramètre dynamique détectable et non détectable, nous cré
 
 ### <a name="q-do-i-need-to-configure-visual-studio-to-detect-dynamic-parameters"></a>Q : Dois-je configurer Visual Studio pour détecter les paramètres dynamiques ?
 
-**R :** La configuration par défaut de Visual Studio consiste à détecter les paramètres dynamiques quand vous enregistrez un test de performances web. Toutefois, si les options Visual Studio sont configurées pour ne pas détecter de paramètres dynamiques, ou si l’application web qui est testée est modifiée à l’aide de paramètres dynamiques supplémentaires, vous pouvez toujours exécuter une détection des paramètres dynamiques dans l’éditeur de test de performances Web.
+**R :** La configuration Visual Studio par défaut consiste à détecter les paramètres dynamiques quand vous enregistrez un test de performances web. Toutefois, si les options Visual Studio sont configurées pour ne pas détecter de paramètres dynamiques, ou si l’application web qui est testée est modifiée à l’aide de paramètres dynamiques supplémentaires, vous pouvez toujours exécuter une détection des paramètres dynamiques dans l’éditeur de test de performances Web.

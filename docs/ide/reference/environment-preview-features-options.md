@@ -6,19 +6,19 @@ f1_keywords:
 - VS.ToolsOptionsPages.Environment.PreviewFeatures
 helpviewer_keywords:
 - Preview Features Options dialog box
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cfdd4707b4396b7a4f1463fdd0e9659f2ec9b0fb
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
-ms.translationtype: HT
+ms.openlocfilehash: d53e232fd26f9986be63e332ee36d0740d66c94b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68610607"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654456"
 ---
-# <a name="options-dialog-box-environment--preview-features"></a>Boîte de dialogue Options : Environnement \> Fonctionnalités en préversion
+# <a name="options-dialog-box-environment--preview-features"></a>Boîte de dialogue Options : environnement \> fonctionnalités préliminaires
 
 Utilisez cette page de la boîte de dialogue **Options** pour activer ou désactiver les fonctionnalités en préversion dans Visual Studio. La page d’options des **Fonctionnalités en préversion** change fréquemment à mesure que des fonctionnalités en préversion sont rendues disponibles dans Visual Studio.
 

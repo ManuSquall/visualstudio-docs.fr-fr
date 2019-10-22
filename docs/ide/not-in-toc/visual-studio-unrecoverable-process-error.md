@@ -5,17 +5,17 @@ ms.topic: troubleshooting
 helpviewer_keywords:
 - unrecoverable error
 - error, process
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11605b9477397bb217bc2799feb622cb9d5bce37
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 6fae832cf62b2cfc6302289352bc5a2f2afb9f13
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62569821"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667047"
 ---
 # <a name="visual-studio-unrecoverable-process-error"></a>Erreur de processus irrécupérable Visual Studio
 
@@ -23,7 +23,7 @@ Visual Studio utilise plusieurs processus hors processus pour exécuter des tâc
 
 Si le processus *ServiceHub.RoslynCodeAnalysisService.exe* ou *ServiceHub.RoslynCodeAnalysisService32.exe* se termine pour une raison quelconque, une barre d’information contextuelle s’affiche avec le message suivant :
 
-**« Malheureusement, un processus utilisé par Visual Studio a rencontré une erreur irrécupérable. Nous vous recommandons d’enregistrer votre travail, puis de fermer et redémarrer Visual Studio. »**
+**«Malheureusement, un processus utilisé par Visual Studio a rencontré une erreur irrécupérable. Nous vous recommandons d’enregistrer votre travail, puis de fermer et redémarrer Visual Studio.»**
 
 Si vous voyez ce message, vous devez enregistrer votre travail, puis fermer et redémarrer Visual Studio.
 

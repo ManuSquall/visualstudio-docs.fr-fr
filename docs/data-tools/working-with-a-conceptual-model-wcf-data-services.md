@@ -7,17 +7,17 @@ helpviewer_keywords:
 - data [Visual Studio], LINQ to Entities
 - data [Visual Studio], querying an EDM
 ms.assetid: 2cd873cf-b010-49f2-a278-bb1277aaa934
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 677e423e456c448204d39a286509fa93aa5c57b8
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: ab73d46ddedb0afc62b0825852fefbaa78875864
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925345"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72638306"
 ---
 # <a name="work-with-a-conceptual-model-wcf-data-services"></a>Utiliser un modèle conceptuel (WCF Data Services)
 
@@ -27,8 +27,8 @@ Vous pouvez utiliser des modèles conceptuels avec des applications WCF Data Ser
 
 | Rubrique | Description |
 | - | - |
-| [Guide pratique pour Exécuter des requêtes de service de données](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) | Montre comment interroger un service de données à partir d’une application .NET. |
-| [Guide pratique pour Résultats de la requête de projet](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services) | Montre comment réduire la quantité de données retournées par le biais d’une requête de service de données. |
+| [Guide pratique pour exécuter les requêtes de services de données](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) | Montre comment interroger un service de données à partir d’une application .NET. |
+| [Guide pratique pour projeter des résultats de requête](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services) | Montre comment réduire la quantité de données retournées par le biais d’une requête de service de données. |
 
 Lorsque vous utilisez un modèle conceptuel, vous pouvez définir le type de données valide dans la langue qui correspond à votre domaine. Vous pouvez définir des données valides dans le modèle, ou vous pouvez ajouter la validation aux opérations que vous effectuez sur une entité ou un service de données.
 
@@ -36,14 +36,14 @@ Les rubriques suivantes montrent comment ajouter la validation aux applications 
 
 |Rubrique|Description|
 |-----------|-----------------|
-|[Guide pratique : Intercepter des messages de service de données](/dotnet/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services)|Montre comment ajouter une validation à une opération de service de données.|
+|[Guide pratique pour intercepter les messages des services de données](/dotnet/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services)|Montre comment ajouter une validation à une opération de service de données.|
 
  Les rubriques suivantes montrent comment créer, mettre à jour et supprimer des données en effectuant des opérations sur des entités.
 
 |Rubrique|Description|
 |-----------|-----------------|
-|[Guide pratique pour Ajouter, modifier et supprimer des entités](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)|Montre comment créer, mettre à jour et supprimer des données d’entité dans un service de données.|
-|[Guide pratique : Définir des relations d’entité](/dotnet/framework/data/wcf/how-to-define-entity-relationships-wcf-data-services)|Montre comment créer ou modifier des relations dans un service de données.|
+|[Guide pratique pour ajouter, modifier et supprimer des entités](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)|Montre comment créer, mettre à jour et supprimer des données d’entité dans un service de données.|
+|[Guide pratique pour définir les relations d’entité](/dotnet/framework/data/wcf/how-to-define-entity-relationships-wcf-data-services)|Montre comment créer ou modifier des relations dans un service de données.|
 
 ## <a name="see-also"></a>Voir aussi
 

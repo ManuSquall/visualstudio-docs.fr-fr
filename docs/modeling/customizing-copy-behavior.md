@@ -2,23 +2,23 @@
 title: Personnalisation du comportement de la commande copier
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fcc08f9af3452289b3e0e76fe6970e75e8f854db
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: bcbe7a132f7e2f6f7d72cfd2ba210e5edba21b57
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63414814"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654092"
 ---
 # <a name="customizing-copy-behavior"></a>Personnalisation du comportement de la commande copier
-Dans un langage spécifique à un domaine (DSL) créé avec le Visual Studio Visualization and Modeling SDK, vous pouvez modifier ce qui se passe quand l’utilisateur copie et colle des éléments.
+Dans un langage spécifique à un domaine (DSL) créé avec le kit de développement logiciel (SDK) de visualisation et de modélisation Visual Studio, vous pouvez modifier ce qui se produit lorsque l’utilisateur copie et colle des éléments.
 
 ## <a name="standard-copy-and-paste-behavior"></a>Comportement standard de copie et de collage
- Pour activer la copie, définissez le **activer copier coller** propriété de la **éditeur** nœud dans l’Explorateur DSL.
+ Pour activer la copie, définissez la propriété **activer la copie de collage** du nœud **éditeur** dans l’Explorateur DSL.
 
  Par défaut, quand l'utilisateur copie des éléments dans le Presse-papiers, les éléments suivants sont également copiés :
 
@@ -37,19 +37,19 @@ Dans un langage spécifique à un domaine (DSL) créé avec le Visual Studio Vis
   L'utilisateur peut coller des éléments copiés sur une cible qui peut accepter les éléments conformément à la définition DSL. Par exemple, dans une solution DSL générée à partir du modèle de solution de composants, l'utilisateur peut coller des ports sur des composants, mais pas sur le diagramme, et il peut coller des composants sur le diagramme, mais pas sur d'autres composants.
 
 ## <a name="customizing-copy-and-paste-behavior"></a>Personnalisation du comportement de copie et de collage
- Pour plus d’informations sur la personnalisation du modèle à l’aide du code de programme, consultez [navigation et la mise à jour un modèle dans le Code de programme](../modeling/navigating-and-updating-a-model-in-program-code.md).
+ Pour plus d’informations sur la personnalisation du modèle à l’aide de code de programme, consultez [navigation et mise à jour d’un modèle dans le code de programme](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
- **Activer ou désactiver le copier, couper et coller.**
-Dans l’Explorateur DSL, définissez le **activer copier coller** propriété de la **éditeur** nœud.
+ **Activez ou désactivez copier, couper et coller.**
+Dans l’Explorateur DSL, définissez la propriété **activer la copie de collage** du nœud **éditeur** .
 
- **Copier des liens vers la même cible.** Par exemple, pour une zone de commentaires copiée soit liée au même élément objet.
-Définir le **propage la copie** propriété du rôle à **propager la copie au lien uniquement**. Pour plus d’informations, consultez [personnalisation du comportement de copie lien](#customizeLinks).
+ **Copier les liens vers la même cible.** Par exemple, pour qu’une zone de commentaire copiée soit liée au même élément subject.
+Affectez à la propriété **propager la copie** du rôle la valeur **propager la copie au lien uniquement**. Pour plus d’informations, consultez Personnalisation du comportement de la [copie des liens](#customizeLinks).
 
  Copier des éléments liés. Par exemple, quand vous copiez un nouvel élément, des copies de toute zone de commentaires liée sont également créées.
-Définir le **propage la copie** propriété du rôle à **propager la copie au lien et à l’acteur de rôle opposé**. Pour plus d’informations, consultez [personnalisation du comportement de copie lien](#customizeLinks).
+Définissez la propriété **propager la copie** du rôle sur **propager la copie au lien et à l’acteur de rôle opposé**. Pour plus d’informations, consultez Personnalisation du comportement de la [copie des liens](#customizeLinks).
 
- **Dupliquer rapidement des éléments en copiant et collant.** Normalement, l’élément que vous venez de copier est encore sélectionné, et vous ne pouvez pas coller le même type d’élément.
-Ajoutez une directive de fusion d'élément à la classe de domaine et configurez-la pour transférer les fusions vers la classe parente. L'effet sera le même sur les opérations de déplacement. Pour plus d’informations, consultez [personnalisation de la création d’élément et le déplacement des](../modeling/customizing-element-creation-and-movement.md).
+ **Dupliquez rapidement les éléments en les copiant et collant.** Normalement, l’élément que vous venez de copier est toujours sélectionné et vous ne pouvez pas coller le même type d’élément sur celui-ci.
+Ajoutez une directive de fusion d'élément à la classe de domaine et configurez-la pour transférer les fusions vers la classe parente. L'effet sera le même sur les opérations de déplacement. Pour plus d’informations, consultez Personnalisation de la [création et du déplacement d’éléments](../modeling/customizing-element-creation-and-movement.md).
 
  \- ou -
 
@@ -72,21 +72,21 @@ partial class MyDslClipboardCommandSet
 } }
 ```
 
- **Créer des liens supplémentaires lorsque l’utilisateur colle un élément sur une cible sélectionnée.** Par exemple, lorsqu’une zone de commentaires est collée sur un élément, un lien est créé entre eux.
-Ajoutez une directive de fusion d'élément à la classe de domaine cible et configurez-la pour traiter la fusion en ajoutant des liens. L'effet sera le même sur les opérations de déplacement. Pour plus d’informations, consultez [personnalisation de la création d’élément et le déplacement des](../modeling/customizing-element-creation-and-movement.md).
+ **Créer des liens supplémentaires lorsque l’utilisateur colle sur une cible sélectionnée.** Par exemple, lorsqu’une zone de commentaire est collée sur un élément, un lien est créé entre eux.
+Ajoutez une directive de fusion d'élément à la classe de domaine cible et configurez-la pour traiter la fusion en ajoutant des liens. L'effet sera le même sur les opérations de déplacement. Pour plus d’informations, consultez Personnalisation de la [création et du déplacement d’éléments](../modeling/customizing-element-creation-and-movement.md).
 
  \- ou -
 
  Substituez `ClipboardCommandSet.ProcessOnPasteCommand()` pour créer les liens supplémentaires après avoir appelé la méthode de base.
 
- **Personnaliser les formats dans lesquels les éléments peuvent être copiés** dans des applications externes - par exemple, pour ajouter une bordure au formulaire bitmap.
-Substituer *MyDsl* `ClipboardCommandSet.ProcessOnMenuCopyCommand()` dans le projet DslPackage.
+ **Personnaliser les formats dans lesquels les éléments peuvent être copiés** vers des applications externes, par exemple, pour ajouter une bordure au formulaire bitmap.
+Remplacez *MyDsl* `ClipboardCommandSet.ProcessOnMenuCopyCommand()` dans le projet DslPackage.
 
- **Personnaliser la façon dont les éléments sont copiés dans le Presse-papiers par la commande de copie, mais pas dans une opération glisser.**
-Substituer *MyDsl* `ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` dans le projet DslPackage.
+ **Personnaliser la façon dont les éléments sont copiés dans le presse-papiers par la commande copier, mais pas dans une opération glisser.**
+Remplacez *MyDsl* `ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` dans le projet DslPackage.
 
- **Conserver la disposition des formes via la copie et de collage.**
-Quand l'utilisateur copie plusieurs formes, vous pouvez conserver leurs positions relatives quand elles sont collées. Cette technique est illustrée par l’exemple [VMSDK : Exemple de diagrammes de circuit](http://go.microsoft.com/fwlink/?LinkId=213879).
+ **Conserver la disposition des formes à l’aide de la copie et du collage.**
+Quand l'utilisateur copie plusieurs formes, vous pouvez conserver leurs positions relatives quand elles sont collées. Cette technique est illustrée dans l’exemple de l’exemple de [diagrammes de circuit](http://go.microsoft.com/fwlink/?LinkId=213879).
 
  Pour obtenir cet effet, ajoutez les formes et les connecteurs à l'ElementGroupPrototype copié. La méthode la plus simple à substituer est ElementOperations.CreateElementGroupPrototype(). Pour cela, ajoutez le code suivant au projet DSL :
 
@@ -141,8 +141,8 @@ partial class MyDslDiagram // EDIT NAME
 }
 ```
 
- **Coller des formes à un emplacement choisi, telles que la position actuelle du curseur.**
-Quand l'utilisateur copie plusieurs formes, vous pouvez conserver leurs positions relatives quand elles sont collées. Cette technique est illustrée par l’exemple [VMSDK : Exemple de diagrammes de circuit](http://go.microsoft.com/fwlink/?LinkId=213879).
+ **Coller des formes à un emplacement choisi, par exemple la position actuelle du curseur.**
+Quand l'utilisateur copie plusieurs formes, vous pouvez conserver leurs positions relatives quand elles sont collées. Cette technique est illustrée dans l’exemple de l’exemple de [diagrammes de circuit](http://go.microsoft.com/fwlink/?LinkId=213879).
 
  Pour obtenir cet effet, substituez `ClipboardCommandSet.ProcessOnMenuPasteCommand()` pour utiliser la version d'`ElementOperations.Merge()` spécifique à l'emplacement. Pour cela, ajoutez le code suivant au projet DslPackage :
 
@@ -208,11 +208,11 @@ partial class MyDslClipboardCommandSet // EDIT NAME
   }
 ```
 
- **Laisser l’utilisateur glisser -déplacer des éléments.**
-Voir [Guide pratique pour Ajouter un gestionnaire glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md).
+ **Permet à l’utilisateur de glisser-déplacer des éléments.**
+Consultez [Comment : ajouter un gestionnaire de glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md).
 
-## <a name="customizeLinks"></a> Personnalisation du comportement de copie de lien
- Quand l'utilisateur copie un élément, le comportement standard est que tout élément incorporé est également copié. Vous pouvez modifier le comportement de copie standard. Dans la définition DSL, sélectionnez un rôle au côté « un » d’une relation et dans la fenêtre Propriétés, définissez la **propage la copie** valeur.
+## <a name="customizeLinks"></a>Personnalisation du comportement de la copie des liens
+ Quand l'utilisateur copie un élément, le comportement standard est que tout élément incorporé est également copié. Vous pouvez modifier le comportement de copie standard. Dans la définition DSL, sélectionnez un rôle d’un côté d’une relation, puis dans la Fenêtre Propriétés définissez la valeur de **copie propages** .
 
  ![Propage la propriété de copie du rôle de domaine](../modeling/media/dslpropagatescopy.png)
 
@@ -232,7 +232,7 @@ Voir [Guide pratique pour Ajouter un gestionnaire glisser-déplacer](../modeling
  De nombreux aspects du comportement d'une solution DSL en ce qui concerne la copie, le collage, la création et la suppression d'objets sont régis par une instance de <xref:Microsoft.VisualStudio.Modeling.ElementOperations> couplée au diagramme. Vous pouvez modifier le comportement de votre solution DSL en dérivant votre propre classe de <xref:Microsoft.VisualStudio.Modeling.ElementOperations> et en substituant la propriété <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> de votre classe de diagramme.
 
 > [!TIP]
-> Pour plus d’informations sur la personnalisation du modèle à l’aide du code de programme, consultez [navigation et la mise à jour un modèle dans le Code de programme](../modeling/navigating-and-updating-a-model-in-program-code.md).
+> Pour plus d’informations sur la personnalisation du modèle à l’aide de code de programme, consultez [navigation et mise à jour d’un modèle dans le code de programme](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
  ![Diagramme de séquence de l'opération de copie](../modeling/media/dslcopyseqdiagram.png)
 
@@ -242,7 +242,7 @@ Voir [Guide pratique pour Ajouter un gestionnaire glisser-déplacer](../modeling
 
 1. Dans un nouveau fichier dans votre projet DSL, créez une classe dérivée de <xref:Microsoft.VisualStudio.Modeling.Diagrams.DesignSurfaceElementOperations>.
 
-2. Ajoutez une définition de classe partielle pour votre classe de diagramme. Vous trouverez le nom de cette classe dans **Dsl\GeneratedCode\Diagrams.cs**.
+2. Ajoutez une définition de classe partielle pour votre classe de diagramme. Le nom de cette classe se trouve dans **Dsl\GeneratedCode\Diagrams.cs**.
 
     Dans la classe diagramme, substituez <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> pour retourner une instance de votre sous-classe ElementOperations. Vous devez retourner la même instance à chaque appel.
 
@@ -280,7 +280,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
 ```
 
 ## <a name="receiving-items-dragged-from-other-models"></a>Réception d'éléments déplacés à partir d'autres modèles
- ElementOperations peut également servir à définir le comportement de copie, de déplacement, de suppression et de glisser-déplacer. En guise de démonstration de l'utilisation d'ElementOperations, l'exemple fourni ici définit un comportement de glisser-déplacer personnalisé. Toutefois, pour ce faire, vous pouvez envisager l’autre approche décrite dans [Comment : Ajouter un gestionnaire glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md), qui est plus extensible.
+ ElementOperations peut également servir à définir le comportement de copie, de déplacement, de suppression et de glisser-déplacer. En guise de démonstration de l'utilisation d'ElementOperations, l'exemple fourni ici définit un comportement de glisser-déplacer personnalisé. Toutefois, à cette fin, vous pouvez envisager l’approche alternative décrite dans [Comment : ajouter un gestionnaire de glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md), qui est plus extensible.
 
  Définissez deux méthodes dans votre classe ElementOperations :
 
@@ -365,7 +365,7 @@ private ElementGroupPrototype ConvertDraggedTypeToLocal (MyTargetShape snapshot,
 ## <a name="standard-copy-behavior"></a>Comportement de copie standard
  Le code de cette section montre des méthodes que vous pouvez substituer pour modifier le comportement de copie. Pour vous aider à voir comment obtenir vos propres personnalisations, cette section montre du code qui substitue les méthodes impliquées dans la copie, mais ne modifie pas le comportement standard.
 
- Quand l'utilisateur appuie sur Ctrl+C ou utilise la commande de menu Copier, la méthode <xref:Microsoft.VisualStudio.Modeling.Shell.ClipboardCommandSet.ProcessOnMenuCopyCommand%2A> est appelée. Vous pouvez voir comment cela est défini dans **DslPackage\Generated Code\CommandSet.cs**. Pour plus d’informations sur la façon dont les commandes sont configurés, consultez [Comment : Ajouter une commande au Menu contextuel](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
+ Quand l'utilisateur appuie sur Ctrl+C ou utilise la commande de menu Copier, la méthode <xref:Microsoft.VisualStudio.Modeling.Shell.ClipboardCommandSet.ProcessOnMenuCopyCommand%2A> est appelée. Vous pouvez voir comment cela est configuré dans **DslPackage\Generated Code\CommandSet.cs**. Pour plus d’informations sur la configuration des commandes, consultez [Comment : ajouter une commande au menu contextuel](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
 
  Vous pouvez substituer ProcessOnMenuCopyCommand en ajoutant une définition de classe partielle de *MyDsl* `ClipboardCommandSet` dans le projet DslPackage.
 
@@ -555,7 +555,7 @@ namespace Company.MyDsl
 ## <a name="see-also"></a>Voir aussi
 
 - [Personnalisation de la création et du mouvement des éléments](../modeling/customizing-element-creation-and-movement.md)
-- [Guide pratique pour ajouter un gestionnaire glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md)
-- [Exemple : Exemple de diagrammes de Circuit](http://go.microsoft.com/fwlink/?LinkId=213879)
+- [Guide pratique pour ajouter un gestionnaire de glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md)
+- [Exemple : exemple de diagrammes de circuit VMSDK](http://go.microsoft.com/fwlink/?LinkId=213879)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

@@ -1,5 +1,5 @@
 ---
-title: IDispError::GetNext | Microsoft Docs
+title: 'IDispError :: GetNext | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4af2d239c26c156fad0be7fb45bc04f601d35c83
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 81186e6eba7983a1210e5de5bca5d83dd77089da
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437273"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573108"
 ---
 # <a name="idisperrorgetnext"></a>IDispError::GetNext
-Récupère la prochaine `IDispError` objet.  
+Récupère le `IDispError` objet suivant.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -37,17 +37,17 @@ HRESULT GetNext(
   
 #### <a name="parameters"></a>Paramètres  
  `ppde`  
- [out] Spécifie ensuite `IDispError` objet.  
+ à Spécifie `IDispError` objet suivant.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode récupère la prochaine `IDispError` objet. Si c’est la dernière `IDispError` de l’objet, cette méthode retourne la valeur NULL.  
+ Cette méthode récupère le `IDispError` objet suivant. S’il s’agit du dernier objet `IDispError`, cette méthode retourne la valeur NULL.  
   
 > [!NOTE]
 > Cette méthode n’est pas implémentée.  

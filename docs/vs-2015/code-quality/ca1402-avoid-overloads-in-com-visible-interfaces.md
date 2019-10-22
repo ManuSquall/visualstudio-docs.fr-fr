@@ -1,5 +1,5 @@
 ---
-title: 'CA1402 : Éviter les surcharges dans les interfaces COM visibles | Microsoft Docs'
+title: 'Ca1402 : éviter les surcharges dans les interfaces COM visibles | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - CA1402
 ms.assetid: 2724c1f9-d5d3-4704-b124-21c4d398e5df
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: abf6382dfba8b8d9c3cc0ed6ccf90e929afca589
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 258b7ba1444cd990c3ec68ebfd5faccc945439e8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65694975"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661346"
 ---
 # <a name="ca1402-avoid-overloads-in-com-visible-interfaces"></a>CA1402 : Éviter les surcharges dans les interfaces COM visibles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,14 +29,14 @@ ms.locfileid: "65694975"
 |-|-|
 |TypeName|AvoidOverloadsInComVisibleInterfaces|
 |CheckId|CA1402|
-|Category|Microsoft.Interoperability|
+|Category|Microsoft. Interoperability|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
- Un composant COM (Object Model) visible interface déclare les méthodes surchargées.
+ Une interface visible COM (Component Object Model) déclare des méthodes surchargées.
 
 ## <a name="rule-description"></a>Description de la règle
- Lorsque les méthodes surchargées sont exposées aux clients COM, seule la première surcharge de méthode conserve son nom. Les surcharges suivantes sont renommées de manière unique en ajoutant le nom, un caractère de trait de soulignement « _ » et un entier qui correspond à l’ordre de déclaration de la surcharge. Par exemple, considérez les méthodes suivantes.
+ Lorsque les méthodes surchargées sont exposées aux clients COM, seule la première surcharge de méthode conserve son nom. Les surcharges suivantes sont renommées de manière unique en ajoutant au nom un caractère de soulignement « _ » et un entier qui correspond à l’ordre de déclaration de la surcharge. Par exemple, considérez les méthodes suivantes.
 
 ```
 void SomeMethod(int valueOne);
@@ -52,10 +52,10 @@ void SomeMethod_2(int valueOne, int valueTwo, int valueThree);
 void SomeMethod_3(int valueOne, int valueTwo);
 ```
 
- Les clients COM Visual Basic 6 ne peut pas implémenter des méthodes d’interface à l’aide d’un trait de soulignement dans le nom.
+ Visual Basic 6 clients COM ne peuvent pas implémenter de méthodes d’interface à l’aide d’un trait de soulignement dans le nom.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, renommez les méthodes surchargées afin que les noms sont uniques. Vous pouvez également rendre l’interface invisible à COM en modifiant l’accessibilité à `internal` (`Friend` dans [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) ou en appliquant la <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> attribut la valeur `false`.
+ Pour corriger une violation de cette règle, renommez les méthodes surchargées afin que les noms soient uniques. Vous pouvez également rendre l’interface invisible pour COM en modifiant l’accessibilité en `internal` (`Friend` dans [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) ou en appliquant l’attribut <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> défini sur `false`.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Ne supprimez aucun avertissement de cette règle.
@@ -71,7 +71,7 @@ void SomeMethod_3(int valueOne, int valueTwo);
 
  [CA1407 : Éviter les membres statiques dans les types visibles par COM](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)
 
- [CA1017 : Marquer les assemblys avec ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
+ [CA1017 : Marquez les assemblys avec ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
 ## <a name="see-also"></a>Voir aussi
- [Interopérabilité avec du Code non managé](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258) [Type de données Long](https://msdn.microsoft.com/library/b4770c34-1804-4f8c-b512-c10b0893e516)
+ Interopérabilité avec le [type de données long](https://msdn.microsoft.com/library/b4770c34-1804-4f8c-b512-c10b0893e516) du [code non managé](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)

@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::AddTypeLib | Microsoft Docs
+title: 'IActiveScriptAuthor :: AddTypeLib | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b5967438c620a89df98c74c8824809b8fdaf739a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5bd96732a905d3fc0732ccfeaf2b65ada82957f4
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935482"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577227"
 ---
 # <a name="iactivescriptauthoraddtypelib"></a>IActiveScriptAuthor::AddTypeLib
 Ajoute une bibliothèque de types à l’espace de noms pour le script.  
@@ -40,21 +40,21 @@ HRESULT AddTypeLib(
   
 #### <a name="parameters"></a>Paramètres  
  `rguidTypeLib`  
- [in] Le CLSID (identificateur de classe) de la bibliothèque de types à ajouter.  
+ dans CLSID (identificateur de classe) de la bibliothèque de types à ajouter.  
   
  `dwMajor`  
- [in] Numéro de version principale.  
+ dans Numéro de version principale.  
   
  `dwMinor`  
- [in] Le numéro de version mineure.  
+ dans Numéro de version mineure.  
   
  `dwFlags`  
- [in] Non utilisé.  
+ dans Non utilisé.  
   
 ## <a name="return-value"></a>Valeur de retour  
  Élément `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
@@ -62,6 +62,6 @@ HRESULT AddTypeLib(
  Cette méthode appelle `LoadTypeLib` pour charger la bibliothèque de types. En cas de réussite, cette méthode appelle `IActiveScriptAuthor::AddNamedItem` pour ajouter des informations de type.  
   
 ## <a name="see-also"></a>Voir aussi  
- [IActiveScriptAuthor (Interface)](../../winscript/reference/iactivescriptauthor-interface.md)   
- [IActiveScriptAuthor::AddNamedItem](../../winscript/reference/iactivescriptauthor-addnameditem.md)   
+ @No__t_1 de l' [interface IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)  
+ [IActiveScriptAuthor :: AddNamedItem](../../winscript/reference/iactivescriptauthor-addnameditem.md)    
  [LoadTypeLib](https://docs.microsoft.com/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelib)

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - code editor, go to line
 - go to line
 - go to
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 588bc57dc2cda1030e9e1b8d1f989b2cc2d31662
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c3a810e96b410c0f1f6f5d6ffdaa07b1e007abd6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62549982"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654641"
 ---
 # <a name="find-code-using-go-to-commands"></a>Rechercher du code à l’aide des commandes Atteindre
 

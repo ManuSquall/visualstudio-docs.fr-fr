@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Personnaliser des menus et des barres d’outils'
+title: "Comment : personnaliser des menus et des barres d'outils"
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -25,17 +25,17 @@ helpviewer_keywords:
 - toolbars [Visual Studio], customizing in the IDE
 ms.assetid: b570ae2f-5302-45dc-9cc9-8d4d1ad50603
 caps.latest.revision: 31
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 91223021ce6f05b91d47e7b7019fb0c5c02243db
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 500debe6faa62079c6a93185bac409e7a3bf2813
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416786"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668001"
 ---
-# <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Procédure : Personnaliser les menus et les barres d’outils dans Visual Studio
+# <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Comment : personnaliser des menus et des barres d'outils dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez personnaliser Visual Studio non seulement en ajoutant et en supprimant des barres d'outils et des menus dans la barre de menus, mais aussi en ajoutant et en supprimant des commandes dans une barre d'outils ou un menu quelconques.
@@ -63,7 +63,7 @@ Vous pouvez personnaliser Visual Studio non seulement en ajoutant et en supprima
 
     - Pour ajouter un menu, choisissez le bouton **Ajouter un nouveau menu**, choisissez le bouton **Modifier la sélection**, puis nommez le menu à ajouter.
 
-         ![Boîte de dialogue Personnaliser montrant comment ajouter un menu](../ide/media/addmenu.png "AddMenu")
+         ![Boîte de dialogue Personnaliser illustrant l’ajout d’un menu](../ide/media/addmenu.png "AjouterMenu")
 
     - Pour supprimer un menu, choisissez-le dans la liste **Contrôles**, puis choisissez le bouton **Supprimer**.
 
@@ -79,7 +79,7 @@ Vous pouvez personnaliser Visual Studio non seulement en ajoutant et en supprima
 
     - Pour ajouter une barre d’outils, choisissez le bouton **Nouveau**, spécifiez le nom de la barre d’outils à ajouter, puis choisissez le bouton **OK**.
 
-         ![Boîte de dialogue Personnaliser montrant comment ajouter une barre d’outils](../ide/media/addtoolbar.png "AddToolbar")
+         ![Boîte de dialogue Personnaliser qui montre comment ajouter une barre d’outils](../ide/media/addtoolbar.png "AddToolbar")
 
     - Pour supprimer une barre d’outils personnalisée, choisissez-la dans la liste **Barres d’outils**, puis choisissez le bouton **Supprimer**.
 
@@ -91,7 +91,7 @@ Vous pouvez personnaliser Visual Studio non seulement en ajoutant et en supprima
          Vous pouvez également faire glisser le bord gauche d'une barre d'outils pour placer cette dernière n'importe où dans la zone d'ancrage principale.
 
         > [!NOTE]
-        > Pour plus d’informations sur l’amélioration de l’utilisation et de l’accessibilité des barres d’outils, consultez [Guide pratique pour définir les options d’accessibilité de l’IDE](../ide/reference/how-to-set-ide-accessibility-options.md).
+        > Pour plus d’informations sur l’amélioration de l’utilisation et de l’accessibilité des barres d’outils, consultez [Guide pratique pour définir les options d’accessibilité IDE](../ide/reference/how-to-set-ide-accessibility-options.md).
 
 ## <a name="bkmk_customize"></a> Personnalisation d’un menu ou d’une barre d’outils
 
@@ -107,7 +107,7 @@ Vous pouvez personnaliser Visual Studio non seulement en ajoutant et en supprima
 
          Dans la boîte de dialogue **Ajouter une commande**, choisissez un élément dans la liste **Catégories**, choisissez un élément dans la liste **Commandes**, puis choisissez le bouton **OK**.
 
-         ![Boîte de dialogue Ajouter une commande de Visual Studio](../ide/media/addcommand.png "AddCommand")
+         ![Boîte de dialogue Ajouter une commande dans Visual Studio](../ide/media/addcommand.png "AddCommand")
 
     - Pour supprimer une commande, choisissez-la dans la liste **Contrôles**, puis choisissez le bouton **Supprimer**.
 

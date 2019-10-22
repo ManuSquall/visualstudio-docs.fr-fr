@@ -3,17 +3,17 @@ title: Code source L2DBForm.xaml
 ms.date: 11/04/2016
 ms.topic: sample
 ms.assetid: 624e96d4-6d27-4195-8ac2-2f3835f6c57e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b650c65eb81fb087b7783b41065445e1bbea20a0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 41796664d5456876edff81662cbab44edf7a82f2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844253"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635284"
 ---
 # <a name="l2dbformxaml-source-code"></a>Code source L2DBForm.xaml
 
@@ -23,7 +23,7 @@ Cette rubrique contient et décrit le fichier source XAML pour l’[Exemple de l
 
 Comme c'est généralement le cas pour un projet WPF, ce fichier contient un élément parent, un élément XML <xref:System.Windows.Window> associé à la classe dérivée `L2XDBFrom` dans l'espace de noms `LinqToXmlDataBinding` .
 
-La zone cliente est contenue dans un objet <xref:System.Windows.Controls.StackPanel> auquel est affecté un arrière-plan bleu clair. Ce volet contient quatre sections d'interface utilisateur <xref:System.Windows.Controls.DockPanel> séparées par des barres <xref:System.Windows.Controls.Separator> . L'objectif de ces sections est décrit dans les **Remarques** de la [rubrique précédente](../designers/walkthrough-linqtoxmldatabinding-example.md).
+La zone cliente est contenue dans un objet <xref:System.Windows.Controls.StackPanel> auquel est affecté un arrière-plan bleu clair. Ce volet contient quatre sections d'interface utilisateur <xref:System.Windows.Controls.DockPanel> séparées par des barres <xref:System.Windows.Controls.Separator> . L’objectif de ces sections est décrit dans les **Remarques** de la [rubrique précédente](../designers/walkthrough-linqtoxmldatabinding-example.md).
 
 Chaque section contient une étiquette qui l'identifie. Dans les deux premières sections, cette étiquette est pivotée de 90 degrés par le biais d'une propriété <xref:System.Windows.FrameworkElement.LayoutTransform%2A>. Le reste de la section contient des éléments d’interface utilisateur adaptés à l’objectif de cette section : blocs de texte, zones de texte, boutons, etc. Parfois, un objet <xref:System.Windows.Controls.StackPanel> enfant est utilisé pour aligner ces contrôles enfants.
 
@@ -238,11 +238,11 @@ La dernière section de l’interface utilisateur, **Add New Book**, n’utilise
 </Window>
 ```
 
-### <a name="comments"></a>Commentaires
+### <a name="comments"></a>Comments
 
 Pour obtenir le code source C# pour les gestionnaires d’événements associés aux éléments d’interface utilisateur WPF, consultez [Code source L2DBForm.xaml.cs](../designers/l2dbform-xaml-cs-source-code.md).
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Procédure pas à pas : Exemple LinqToXmlDataBinding](../designers/walkthrough-linqtoxmldatabinding-example.md)
+- [Procédure pas à pas : exemple LinqToXmlDataBinding](../designers/walkthrough-linqtoxmldatabinding-example.md)
 - [Code source L2DBForm.xaml.cs](../designers/l2dbform-xaml-cs-source-code.md)

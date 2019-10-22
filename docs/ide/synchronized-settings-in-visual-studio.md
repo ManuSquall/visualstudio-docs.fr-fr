@@ -3,17 +3,17 @@ title: Synchroniser les paramètres
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.assetid: a3d2ea29-be5d-4012-9820-44b06adbb7dd
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f670449be9b416d1c54bc83379bae4a6733d932
-ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
-ms.translationtype: HT
+ms.openlocfilehash: cebfc33b3bc0fc664874dd8c531e6630b3e64c5c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69976725"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647430"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>Synchroniser les paramètres Visual Studio sur plusieurs ordinateurs
 

@@ -14,24 +14,24 @@ ms.assetid: 79e32926-b03f-457b-997c-2bb2ec8a1ec5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 72b63c699b09081e843f36daeec3fcc556ebaf4a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4acfb93808a588ed7efb4e256627f816e26a0137
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63007371"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573780"
 ---
 # <a name="label-not-found"></a>Étiquette introuvable
-Vous faites une référence à une étiquette qui n’existe pas. Étiquettes peut être utilisé pour marquer des blocs de code, mais dans une étendue spécifiée, doit être uniques.  
+Vous avez fait référence à une étiquette qui n’existe pas. Les étiquettes peuvent être utilisées pour marquer des blocs de code, mais dans une étendue spécifiée, doivent être uniques.  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
-- Vérifiez que vous avez correctement orthographié le nom d’étiquette.  
+- Vérifiez que vous n’avez pas mal orthographié le nom de l’étiquette.  
   
-- Vérifier toutes les références d’étiquette sont effectuées dans les étiquettes qui ont été définis dans la portée actuelle (Cela inclut les définitions en aval).  
+- Vérifiez que toutes les références d’étiquette sont effectuées aux étiquettes qui ont été définies dans l’étendue actuelle (y compris les définitions anticipées).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Instruction étiquetée](../../javascript/reference/labeled-statement-javascript.md)   
- [Instruction switch](../../javascript/reference/switch-statement-javascript.md)   
+ [Instruction étiquetée](../../javascript/reference/labeled-statement-javascript.md)    
+ [instruction switch](../../javascript/reference/switch-statement-javascript.md)    
  [break, instruction](../../javascript/reference/break-statement-javascript.md)   
  [Instruction continue](../../javascript/reference/continue-statement-javascript.md)

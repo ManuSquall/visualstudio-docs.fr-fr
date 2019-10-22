@@ -15,37 +15,37 @@ helpviewer_keywords:
 - datasets [Visual Basic], constraints
 - constraints [Visual Basic], suspending during dataset update
 ms.assetid: 553f7d0c-2faa-4c17-b226-dd02855bf1dc
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9aca29de7e9c5a01e0c2caad2c42015cd31b3f75
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b8ab7bb827c478360a64d65f44af6770c77ebf77
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565184"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648133"
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>Désactiver les contraintes pendant le remplissage d’un dataset
 
-Si un jeu de données contient des contraintes (telles que les contraintes de clé étrangère), ils peuvent déclencher des erreurs liées à l’ordre des opérations qui sont exécutées sur le jeu de données. Par exemple, le chargement des enregistrements enfants avant le chargement liés aux enregistrements parents peuvent violent une contrainte et provoquer une erreur. Dès que vous chargez un enregistrement enfant, la contrainte vérifie l’enregistrement parent connexes et génère une erreur.
+Si un DataSet contient des contraintes (telles que des contraintes de clé étrangère), il peut déclencher des erreurs liées à l’ordre des opérations effectuées sur le jeu de données. Par exemple, si vous chargez des enregistrements enfants avant de charger des enregistrements parents connexes, vous risquez de violer une contrainte et de générer une erreur. Dès que vous chargez un enregistrement enfant, la contrainte vérifie l’enregistrement parent associé et génère une erreur.
 
-S’il n’existait aucun mécanisme permettant d’interrompre temporairement la contrainte, une erreur est générée chaque fois que vous avez essayé de charger un enregistrement dans la table enfant. Une autre consiste à suspendre toutes les contraintes dans un dataset avec le <xref:System.Data.DataRow.BeginEdit%2A>, et <xref:System.Data.DataRow.EndEdit%2A> propriétés.
+Si aucun mécanisme n’autorise l’interruption temporaire de contrainte, une erreur est déclenchée chaque fois que vous tentez de charger un enregistrement dans la table enfant. Une autre façon d’interrompre toutes les contraintes dans un jeu de données consiste à utiliser les propriétés <xref:System.Data.DataRow.BeginEdit%2A> et <xref:System.Data.DataRow.EndEdit%2A>.
 
 > [!NOTE]
-> Événements de validation (par exemple, <xref:System.Data.DataTable.ColumnChanging> et <xref:System.Data.DataTable.RowChanging>) n’est pas déclenché lorsque les contraintes sont désactivées.
+> Les événements de validation (par exemple, <xref:System.Data.DataTable.ColumnChanging> et <xref:System.Data.DataTable.RowChanging>) ne sont pas déclenchés lorsque les contraintes sont désactivées.
 
-## <a name="to-suspend-update-constraints-programmatically"></a>Pour interrompre des contraintes de mise à jour par programmation
+## <a name="to-suspend-update-constraints-programmatically"></a>Pour suspendre des contraintes Update par programmation
 
-- L’exemple suivant montre comment désactiver temporairement la vérification dans un jeu de données des contraintes :
+- L’exemple suivant montre comment désactiver temporairement la vérification des contraintes dans un jeu de données :
 
      [!code-csharp[VbRaddataEditing#10](../data-tools/codesnippet/CSharp/turn-off-constraints-while-filling-a-dataset_1.cs)]
      [!code-vb[VbRaddataEditing#10](../data-tools/codesnippet/VisualBasic/turn-off-constraints-while-filling-a-dataset_1.vb)]
 
-## <a name="to-suspend-update-constraints-using-the-dataset-designer"></a>Pour interrompre des contraintes de mise à jour à l’aide du Concepteur de Dataset
+## <a name="to-suspend-update-constraints-using-the-dataset-designer"></a>Pour suspendre les contraintes Update à l’aide de l’Concepteur de DataSet
 
-1. Ouvrez votre dataset dans le **Concepteur de DataSet**. Pour plus d’informations, consultez [Procédure pas à pas : Création d’un jeu de données dans le Concepteur de Dataset](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
+1. Ouvrez votre dataset dans le **Concepteur de DataSet**. Pour plus d’informations, consultez [procédure pas à pas : création d’un DataSet dans le concepteur de DataSet](walkthrough-creating-a-dataset-with-the-dataset-designer.md).
 
 2. Dans la fenêtre **Propriétés** , définissez la propriété <xref:System.Data.DataSet.EnforceConstraints%2A> sur `false`.
 

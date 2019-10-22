@@ -8,17 +8,17 @@ helpviewer_keywords:
 - code, locating lines
 - Go To Line dialog box
 ms.assetid: 529fa251-b7b3-49cf-863c-10e0b82ac7cc
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ae4db65bc4e220a38e8fd5e5fefc221aa7d2eda
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 8e82e7b9629e956a69e3ee69972c6e244ce10153
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789687"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661597"
 ---
 # <a name="go-to-line-dialog-box"></a>Atteindre la ligne (boîte de dialogue)
 
@@ -28,7 +28,7 @@ La boîte de dialogue **Atteindre la ligne** vous permet d’atteindre une ligne
 
 ## <a name="line-number-1---n"></a>Numéro de ligne (1 - \<n>)
 
-Dans la zone **Numéro de ligne (1 - \<n>)**, entrez le numéro de la ligne à atteindre dans le document actif. Le numéro entré doit être compris entre 1 et le dernier numéro de ligne dans le document actif.
+Dans la zone **Numéro de ligne (1 - \<n>)** , entrez le numéro de la ligne à atteindre dans le document actif. Le numéro entré doit être compris entre 1 et le dernier numéro de ligne dans le document actif.
 
 ## <a name="see-also"></a>Voir aussi
 

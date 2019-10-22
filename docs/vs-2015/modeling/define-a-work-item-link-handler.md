@@ -8,15 +8,15 @@ helpviewer_keywords:
 - UML API
 ms.assetid: d52e0bbf-0166-4bb4-a2e3-cefed6188875
 caps.latest.revision: 21
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 240f143015f22435deb4f1347f74bebcc8b334c3
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 380aaa5bed1e30c549334bc004ea38e3f0bdb762
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871904"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669932"
 ---
 # <a name="define-a-work-item-link-handler"></a>Définir un gestionnaire de liens d’éléments de travail
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,10 +84,10 @@ Vous pouvez créer une extension d’intégration Visual Studio qui répond quan
 
  `System.Drawing`-utilisé par l’exemple de code
 
- Si vous ne trouvez pas l’une de ces références sous l’onglet **.net** de la boîte de dialogue **Ajouter une référence** , utilisez l’onglet Parcourir pour la Rechercher dans \Program Files\Microsoft Visual\\Studio [version] \Common7\IDE\PrivateAssemblies.
+ Si vous ne trouvez pas l’une de ces références sous l’onglet **.net** de la boîte de dialogue **Ajouter une référence** , utilisez l’onglet Parcourir pour la Rechercher dans \Program Files\Microsoft Visual Studio [version] \Common7\IDE\PrivateAssemblies \\.
 
 ### <a name="import-the-work-item-namespace"></a>Importer l’espace de noms de l’élément de travail
- Dans vos [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **références**de projet, ajoutez des références aux assemblys suivants:
+ Dans vos **références**de projet [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ajoutez des références aux assemblys suivants :
 
 - Microsoft.TeamFoundation.WorkItemTracking.Client.dll
 
@@ -152,7 +152,7 @@ namespace WorkItems
  À des fins de test, exécutez votre gestionnaire de liens en mode débogage.
 
 > [!WARNING]
-> Vous devez être connecté à un contrôle de code source (SSC, Source Code Control) TFS pour créer un élément de travail ou un lien vers celui-ci. Si vous essayez d'ouvrir une connexion à un autre contrôle de code source TFS, Visual Studio ferme automatiquement la solution actuelle. Vérifiez que vous êtes connecté au contrôle de code source TFS approprié avant d'essayer de créer un élément de travail ou un lien vers celui-ci. Dans les versions ultérieures de Visual Studio, les commandes de menu ne sont pas disponibles si vous n'êtes pas connecté à un contrôle de code source.
+> Vous devez être connecté à un contrôle de code source (SSC, Source Code Control) TFS pour créer un élément de travail ou un lien vers celui-ci. Si vous essayez d'ouvrir une connexion à un autre contrôle de code source TFS, Visual Studio ferme automatiquement la solution actuelle. Vérifiez que vous êtes connecté au contrôle de code source TFS approprié avant d’essayer de créer un élément de travail ou un lien vers celui-ci. Dans les versions ultérieures de Visual Studio, les commandes de menu ne sont pas disponibles si vous n'êtes pas connecté à un contrôle de code source.
 
 #### <a name="to-test-the-link-handler"></a>Pour tester le gestionnaire de liens
 
@@ -160,7 +160,7 @@ namespace WorkItems
 
      Une instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] démarre.
 
-     **Résolution des problèmes**: Si un nouveau [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ne démarre pas, assurez-vous que le projet VSIX est défini comme projet de démarrage de la solution.
+     **Résolution des problèmes**: si un nouveau [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ne démarre pas, assurez-vous que le projet VSIX est défini comme projet de démarrage de la solution.
 
 2. Dans l’instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ouvrez ou créez un projet de modélisation, puis ouvrez ou créez un diagramme de modélisation.
 
@@ -180,7 +180,7 @@ namespace WorkItems
 
 7. Vérifiez que l’élément de travail est maintenant de couleur rouge. Cela met en évidence `OnWorkItemLinked()` dans l'exemple de code.
 
-     **Résolution des problèmes**: Si les méthodes de gestionnaire n’ont pas été exécutées, vérifiez les éléments suivants:
+     **Résolution des problèmes**: si les méthodes de gestionnaire n’ont pas été exécutées, vérifiez les éléments suivants :
 
     - Le projet de bibliothèque de classes est répertorié en tant que composant MEF dans la liste de **contenu** dans **source. extensions. manifest** dans le projet VSIX.
 

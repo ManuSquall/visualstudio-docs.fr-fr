@@ -1,5 +1,5 @@
 ---
-title: IApplicationDebuggerUI::BringDocumentContextToTop | Microsoft Docs
+title: 'IApplicationDebuggerUI :: BringDocumentContextToTop | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 596f9357a8553bf6c39140a6948d8ae3085c3210
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8648a4377e901908df20cdb5f413ee73ede5c1a6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991119"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577814"
 ---
 # <a name="iapplicationdebuggeruibringdocumentcontexttotop"></a>IApplicationDebuggerUI::BringDocumentContextToTop
-Met la fenêtre qui contient le contexte de document donné vers le haut de l’interface utilisateur du débogueur et fait défiler la fenêtre pour le contexte.  
+Affiche la fenêtre contenant le contexte de document donné en haut de l’interface utilisateur du débogueur et fait défiler la fenêtre jusqu’au contexte.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -37,18 +37,18 @@ HRESULT BringDocumentContextToTop(
   
 #### <a name="parameters"></a>Paramètres  
  `pddc`  
- [in] Contexte de document à placer en haut de l’interface utilisateur du débogueur.  
+ dans Contexte de document à afficher dans la partie supérieure de l’interface utilisateur du débogueur.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
 |`E_INVALIDARG`|Le contexte spécifié par `pddc` n’est pas connu.|  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode met la fenêtre qui contient le contexte de document donné vers le haut de l’interface utilisateur du débogueur et fait défiler la fenêtre pour le contexte.  
+ Cette méthode amène la fenêtre contenant le contexte de document donné au sommet de l’interface utilisateur du débogueur et fait défiler la fenêtre jusqu’au contexte.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IApplicationDebuggerUI](../../winscript/reference/iapplicationdebuggerui-interface.md)

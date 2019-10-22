@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/30/2019
 ms.topic: conceptual
 description: MSDN Magazine va être arrêté
-ms.openlocfilehash: 8addfcf6c32b8c7d01223ff1ae6bb4cc4b32562c
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
-ms.translationtype: HT
+ms.openlocfilehash: de9d81369d1a616b2511ec553d41a077b2edb359
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891258"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516838"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions-has-been-discontinued"></a>L’avantage MSDN Magazine dans les abonnements Visual Studio a été arrêté
 
@@ -29,8 +29,8 @@ Voici un extrait de l’annonce sur msdn.microsoft.com :
     Subscribers of MSDN Magazine who have paid for their subscriptions will receive a pro-rated refund, based on time remaining on their subscription. The refund checks will be mailed out to those subscribers after the November issue has published."
 
 ## <a name="frequently-asked-questions"></a>FAQ
-### <a name="q-how-does-the-refund-process-work"></a>Q : Comment fonctionne le processus de remboursement ?
-R : Les remboursements seront envoyés à l’adresse figurant dans le dossier de votre abonnement. Si vous avez d’autres questions sur les remboursements, contactez **1105 Media**.  Les informations de contact complètes pour 1105 Media sont disponibles dans le [billet de blog](https://msdn.microsoft.com/magazine/mt833502.aspx?) sur msdn.microsoft.com.  
+### <a name="q-how-does-the-refund-process-work"></a>Q : comment le processus de remboursement fonctionne-t-il ?
+R : les remboursements seront envoyés à l’adresse du fichier de votre abonnement. Si vous avez d’autres questions sur les remboursements, contactez **1105 Media**.  Les informations de contact complètes pour 1105 Media sont disponibles dans le [billet de blog](https://msdn.microsoft.com/magazine/mt833502.aspx?) sur msdn.microsoft.com.  
 
 ## <a name="support-resources"></a>Ressources de support
 - Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
@@ -38,6 +38,7 @@ R : Les remboursements seront envoyés à l’adresse figurant dans le dossier 
 
 ## <a name="next-steps"></a>Étapes suivantes
 Découvrez d’autres opportunités de développement professionnel dans votre abonnement :
+- [Magazine CODE](vs-code-magazine.md)
 - [Pluralsight](vs-pluralsight.md)
 - [LinkedIn Learning](vs-linkedin-learning.md)
 - [DataCamp](vs-datacamp.md)

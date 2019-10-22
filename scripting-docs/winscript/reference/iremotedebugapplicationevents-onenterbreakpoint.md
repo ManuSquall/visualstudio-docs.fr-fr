@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationEvents::OnEnterBreakPoint | Microsoft Docs
+title: 'IRemoteDebugApplicationEvents :: OnEnterBreakPoint | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 123476100076811534343763f0e9675a90fdea16
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ad7b0dc3e4b6cd7e8779208121d7464e83e7bb3f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934645"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571989"
 ---
 # <a name="iremotedebugapplicationeventsonenterbreakpoint"></a>IRemoteDebugApplicationEvents::OnEnterBreakPoint
 Gère un événement pour la saisie d’un point d’arrêt.  
@@ -37,12 +37,12 @@ HRESULT OnEnterBreakPoint(
   
 #### <a name="parameters"></a>Paramètres  
  `prdat`  
- [in] Le thread d’application qu’avez entré le point d’arrêt.  
+ dans Thread d’application qui a entré le point d’arrêt.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   

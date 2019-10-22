@@ -1,5 +1,5 @@
 ---
-title: 'Étape 3 : Ajouter un temporisateur'
+title: 'Étape 3 : ajouter un temporisateur'
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,20 +13,20 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 197a52894a8c0ed3c2c38b9036a521a558c1005d
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: f5ee65126fb89f2725b69d196e0659c622d9c389
+ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118782"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314101"
 ---
-# <a name="step-3-add-a-countdown-timer"></a>Étape 3 : Ajouter un temporisateur
+# <a name="step-3-add-a-countdown-timer"></a>Étape 3 : ajouter un temporisateur
 
 Dans la troisième partie de ce didacticiel, vous allez ajouter un temporisateur pour suivre le nombre de secondes restantes avant la fin du temps imparti à la personne interrogée.
 
 > [!NOTE]
 > Cette rubrique fait partie d'une série de didacticiels sur les concepts de codage de base.
-> - Pour obtenir une vue d’ensemble du tutoriel, consultez [Tutoriel 2 : Créer un questionnaire mathématique chronométré](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> - Pour obtenir une vue d’ensemble du tutoriel, consultez [Tutoriel 2 : créer un questionnaire mathématique chronométré](../ide/tutorial-2-create-a-timed-math-quiz.md).
 > - Pour télécharger une version complète du code, consultez l' [exemple complet de didacticiels mathématiques](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 ## <a name="to-add-a-countdown-timer"></a>Pour ajouter un temporisateur
@@ -36,8 +36,7 @@ Dans la troisième partie de ce didacticiel, vous allez ajouter un temporisateur
      [!code-vb[VbExpressTutorial3Step3#5](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_1.vb)]
      [!code-csharp[VbExpressTutorial3Step3#5](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_1.cs)]
 
-   > [!IMPORTANT]
-   > Utilisez le contrôle de langage de programmation en haut à droite de cette page pour afficher C# l’extrait de code ou le Visual Basic extrait de code.<br><br>![Contrôle du langage de programmation pour Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
+     [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
 
      À présent, vous avez besoin d'une méthode qui compte réellement les secondes, telles qu'une minuterie, et qui déclenche un événement après la durée que vous spécifiez.
 
@@ -115,6 +114,6 @@ Dans la troisième partie de ce didacticiel, vous allez ajouter un temporisateur
 
 ## <a name="to-continue-or-review"></a>Pour continuer ou examiner
 
-- Pour passer à l’étape suivante du didacticiel, **consultez [étape 4 : Ajoutez la méthode](../ide/step-4-add-the-checktheanswer-parens-method.md)** méthode CheckTheAnswer ().
+- Pour passer à l’étape suivante du didacticiel, consultez **[étape 4 : ajouter la méthode méthode CheckTheAnswer ()](../ide/step-4-add-the-checktheanswer-parens-method.md)** .
 
-- Pour revenir à l’étape précédente du tutoriel, consultez [Étape 2 : Créer un problème d’addition aléatoire](../ide/step-2-create-a-random-addition-problem.md).
+- Pour revenir à l’étape précédente du tutoriel, consultez [Étape 2 : créer un problème d’addition aléatoire](../ide/step-2-create-a-random-addition-problem.md).

@@ -7,18 +7,18 @@ dev_langs:
 - VB
 helpviewer_keywords:
 - language code style rules [EditorConfig]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: e4f49df2c775bc3bb95888d76da133898ab9c76e
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 38d625b774bc828741e2e4f227a45a293c029235
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186536"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652805"
 ---
 # <a name="language-conventions"></a>Conventions de langage
 
@@ -37,7 +37,7 @@ Les règles relatives aux conventions de langage ont le format général suivant
 
 `option_name = value:severity`
 
-Pour chaque convention de langage, vous spécifiez une valeur qui définit si ou quand favoriser ce style. De `true` nombreuses règles acceptent la valeur (préférer ce style) ou `false` (ne pas préférer ce style). D’autres règles acceptent des valeurs `when_on_single_line` telles `never`que ou. La seconde partie de la règle spécifie la [gravité](#severity-levels).
+Pour chaque convention de langage, vous spécifiez une valeur qui définit si ou quand favoriser ce style. De nombreuses règles acceptent la valeur `true` (préférez ce style) ou `false` (ne pas préférer ce style). D’autres règles acceptent des valeurs telles que `when_on_single_line` ou `never`. La seconde partie de la règle spécifie la [gravité](#severity-levels).
 
 ::: moniker range=">=vs-2019"
 
@@ -55,7 +55,7 @@ Gravité | Effet
 `error` | En cas de violation de cette règle de style, afficher une erreur du compilateur.
 `warning` | En cas de violation de cette règle de style, afficher un avertissement du compilateur.
 `suggestion` | En cas de violation de cette règle de style, l’afficher à l’utilisateur comme une suggestion. Les suggestions s’affichent sous la forme de trois points gris sous les deux premiers caractères.
-`silent` | Ne rien afficher à l’utilisateur en cas de violation de cette règle. Toutefois, les fonctionnalités de génération de code génèrent du code dans ce style. Les règles `silent` de gravité participent au nettoyage et s’affichent dans le menu **actions rapides et refactorisations** .
+`silent` | Ne rien afficher à l’utilisateur en cas de violation de cette règle. Toutefois, les fonctionnalités de génération de code génèrent du code dans ce style. Les règles avec une gravité de `silent` participent au nettoyage et apparaissent dans le menu **actions rapides et refactorisations** .
 `none` | Ne rien afficher à l’utilisateur en cas de violation de cette règle. Toutefois, les fonctionnalités de génération de code génèrent du code dans ce style. Les règles avec une gravité `none` n’apparaissent jamais dans le menu **Actions rapides et refactorisations**. Dans la plupart des cas, ceci est considéré comme « désactivé » ou « ignoré ».
 
 ::: moniker range=">=vs-2019"
@@ -66,7 +66,7 @@ Gravité | Effet
 
 Pour modifier la Convention de style de code :
 
-1. Pointez sur le tilde dans l’éditeur, puis ouvrez le menu ampoule qui s’affiche. Choisissez **configurer ou supprimer les problèmes** > **configurer \<l’ID de règle > style de code**.
+1. Pointez sur le tilde dans l’éditeur, puis ouvrez le menu ampoule qui s’affiche. Choisissez **configurer ou supprimer les problèmes**  > **configurer \<rule ID > style de code**.
 
    ![Configurer le style de code à partir du menu ampoule dans Visual Studio](media/vs-2019/configure-code-style.png)
 
@@ -76,7 +76,7 @@ Pour modifier la Convention de style de code :
 
    Visual Studio ajoute ou modifie le paramètre de configuration dans le fichier EditorConfig, comme indiqué dans la zone Aperçu.
 
-Pour modifier la gravité de la violation de style de code, suivez les mêmes étapes, mais choisissez **configurer \<l’ID de règle > gravité** au lieu de **configurer \<l’ID de règle > style de code**. Pour plus d’informations, consultez [configurer automatiquement la gravité](../code-quality/use-roslyn-analyzers.md#automatically-configure-rule-severity)de la règle.
+Pour modifier la gravité de la violation de style de code, suivez les mêmes étapes, mais choisissez **configurer l’id \<rule > gravité** au lieu de **configurer \<rule ID > style de code**. Pour plus d’informations, consultez [configurer automatiquement la gravité](../code-quality/use-roslyn-analyzers.md#automatically-configure-rule-severity)de la règle.
 
 ::: moniker-end
 

@@ -6,15 +6,15 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: 99c73344-86ba-4b08-9e15-f6111cc04185
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b80faa2ceb48cfec933d2287b70d304564a8106a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 001b394d86e56b172bb1a50c335bd8ba5bcacb15
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704451"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645626"
 ---
 # <a name="getting-started-with-c-in-visual-studio"></a>Bien démarrer avec C++ dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ En suivant cette procédure pas à pas, vous allez vous familiariser avec la plu
 
  Figure 1 : IDE de Visual Studio
 
- ![IDE avec paramètres Visual C&#43;&#43; appliqués](../ide/media/c-ide-defaultenvironmentlayout.png "IDE_DefaultEnvironmentLayout C ++")
+ ![IDE avec paramètres Visual C&#43;&#43; appliqués](../ide/media/c-ide-defaultenvironmentlayout.png "|::ref1::|")
 
  Après avoir ouvert Visual Studio, vous pouvez voir les trois composants de base de l’IDE : les fenêtres Outil, les menus et les barres d’outils, ainsi que l’espace de la fenêtre principale. Les fenêtres Outil sont ancrées sur les côtés gauche et droit de la fenêtre d’application. **Lancement rapide**, la barre de menus et la barre d’outils standard se trouvent en haut. La **Page de démarrage**est située au centre de la fenêtre d’application. Lorsque vous ouvrez une solution ou un projet, les éditeurs et les concepteurs apparaissent dans cet espace. Lorsque vous développez une application, vous passez la majeure partie de votre temps dans cette zone centrale.
 
@@ -49,21 +49,21 @@ En suivant cette procédure pas à pas, vous allez vous familiariser avec la plu
 
 1. Dans la barre de menus, sélectionnez **Fichier**, **Nouveau**, **Projet**.
 
-    ![Dans la barre de menus, choisissez Fichier, Nouveau, Projet](../ide/media/exploreide-filenewproject.png "ExploreIDE-FileNewProject")
+    ![Dans la barre de menus, choisissez Fichier, Nouveau, Projet](../ide/media/exploreide-filenewproject.png "|::ref2::|")
 
-2. Dans la catégorie **Visual C++**, choisissez le modèle **Application console Win32**, puis nommez le projet `GreetingsConsoleApp`.
+2. Dans la catégorie **Visual C++** , choisissez le modèle **Application console Win32**, puis nommez le projet `GreetingsConsoleApp`.
 
-    ![Modèle d’application console Win32](../ide/media/c-ide-newprojectdlg.png "C++IDE_NewProjectDlg")
+    ![Modèle d’application console Win32](../ide/media/c-ide-newprojectdlg.png "|::ref3::|")
 
 3. Lorsque l’Assistant Application Win32 s’affiche, sélectionnez le bouton **Terminer** .
 
-    ![Assistant d’application console Win32](../ide/media/c-ide-win32consoleappwizard.png "C++IDE_Win32ConsoleAppWizard")
+    ![Assistant d’application console Win32](../ide/media/c-ide-win32consoleappwizard.png "|::ref4::|")
 
    La solution et le projet GreetingsConsoleApp, avec les fichiers de base d’une application console Win32, sont créés et chargés automatiquement dans l’ **Explorateur de solutions**. Le fichier GreetingsConsoleApp.cpp s’ouvre dans l’éditeur de code. Les éléments suivants apparaissent dans l’ **Explorateur de solutions**:
 
    Figure 4 : Éléments du projet
 
-   ![Fichiers pour la solution dans l’Explorateur de solutions](../ide/media/c-ide-solutioncontents.png "C++IDE_SolutionContents")
+   ![Fichiers pour la solution dans l’Explorateur de solutions](../ide/media/c-ide-solutioncontents.png "|::ref5::|")
 
 ## <a name="BKMK_AddCode"></a> Ajouter du code à l’application
  Ensuite, vous ajouterez le code pour afficher le mot « Hello » dans la fenêtre de console.
@@ -78,7 +78,7 @@ En suivant cette procédure pas à pas, vous allez vous familiariser avec la plu
 
      Une ligne ondulée rouge s’affiche sous `cout`. Un message d’erreur apparaît si vous pointez dessus.
 
-     ![Texte d’erreur pour cout](../ide/media/c-ide-couterror.png "C++IDE_CoutError")
+     ![Texte d’erreur pour cout](../ide/media/c-ide-couterror.png "|::ref6::|")
 
      Le message d’erreur s’affiche également dans la fenêtre **Liste d’erreurs** . Vous pouvez afficher la fenêtre en choisissant dans la barre de menus **Affichage**, **Liste d’erreurs**.
 
@@ -97,7 +97,7 @@ En suivant cette procédure pas à pas, vous allez vous familiariser avec la plu
 
 3. Enregistrez les modifications dans le fichier.
 
-     ![Code qui corrige les erreurs cout](../ide/media/c-ide-coutfix.png "C++IDE_CoutFix")
+     ![Code qui corrige les erreurs cout](../ide/media/c-ide-coutfix.png "|::ref7::|")
 
 ## <a name="BKMK_DebugTest"></a> Déboguer et tester l’application
  Vous pouvez déboguer GreetingsConsoleApp pour voir si le mot « Hello » s’affiche dans la fenêtre de console.
@@ -106,7 +106,7 @@ En suivant cette procédure pas à pas, vous allez vous familiariser avec la plu
 
 - Démarrez le débogueur.
 
-     ![Commande Démarrer le débogage du menu Débogage](../ide/media/exploreide-startdebugging.png "ExploreIDE-StartDebugging")
+     ![Commande Démarrer le débogage du menu Débogage](../ide/media/exploreide-startdebugging.png "|::ref8::|")
 
      Le débogueur démarre et exécute le code. La fenêtre de console (une fenêtre distincte qui ressemble à une invite de commandes) s’affiche pendant quelques secondes, mais se clôt rapidement lorsque le débogueur s’arrête en cours d’exécution. Pour afficher le texte, vous devez définir un point d’arrêt afin d’interrompre l’exécution du programme.
 
@@ -114,7 +114,7 @@ En suivant cette procédure pas à pas, vous allez vous familiariser avec la plu
 
 1. Ajoutez un point d’arrêt à partir de la barre de menus dans la ligne `return 0;`. Vous pouvez également cliquer dans la marge de gauche pour définir un point d’arrêt.
 
-    ![Commande Basculer le point d’arrêt du menu Débogage](../ide/media/exploreide-togglebreakpoint.png "ExploreIDE-ToggleBreakpoint")
+    ![Commande Basculer le point d’arrêt du menu Débogage](../ide/media/exploreide-togglebreakpoint.png "|::ref9::|")
 
     Un cercle rouge apparaît à côté de la ligne de code dans la bordure gauche de la fenêtre de l’éditeur.
 
@@ -122,7 +122,7 @@ En suivant cette procédure pas à pas, vous allez vous familiariser avec la plu
 
     Le débogueur démarre et une fenêtre de console apparaît avec le mot **Hello**.
 
-    ![Texte Hello dans la fenêtre d’invite de commandes Windows](../ide/media/c-ide-hellocommandwindow.png "C++IDE_HelloCommandWindow")
+    ![Texte Hello dans la fenêtre d’invite de commandes Windows](../ide/media/c-ide-hellocommandwindow.png "|::ref10::|")
 
 3. Appuyez sur Maj+F5 pour arrêter le débogage.
 
@@ -135,15 +135,15 @@ En suivant cette procédure pas à pas, vous allez vous familiariser avec la plu
 
 1. Dans la barre de menus, supprimez les fichiers intermédiaires et les fichiers de sortie créés pendant les générations précédentes.
 
-    ![Commande Nettoyer la solution du menu Générer](../ide/media/exploreide-cleansolution.png "ExploreIDE-CleanSolution")
+    ![Commande Nettoyer la solution du menu Générer](../ide/media/exploreide-cleansolution.png "|::ref11::|")
 
 2. Changez la configuration de build pour GreetingsConsoleApp de **Debug** en **Release**.
 
-    ![Générer une version Release de l’application](../ide/media/c-ide-changingbuildtorelease.png "C++IDE_ChangingBuildtoRelease")
+    ![Générer une version Release de l’application](../ide/media/c-ide-changingbuildtorelease.png "|::ref12::|")
 
 3. Générez la solution.
 
-    ![Commande Générer la solution du menu Générer](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
+    ![Commande Générer la solution du menu Générer](../ide/media/exploreide-buildsolution.png "|::ref13::|")
 
    Félicitations ! Vous avez terminé cette procédure. Pour explorer d’autres exemples, consultez [Visual Studio Samples](../ide/visual-studio-samples.md).
 

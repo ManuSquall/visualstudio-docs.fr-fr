@@ -6,17 +6,17 @@ helpviewer_keywords:
 - load tests, virtual user activity chart
 - virtual user activity chart, isolating performance issues
 ms.assetid: d1c10fb9-cfeb-4e7f-9991-2d1e1103699e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6811365023f7030d46bf6c611ecb09a5990a7492
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: ebd779ed2c78f48c75d29297fba862ffda142e23
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825770"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659637"
 ---
-# <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Procédure pas à pas : Utilisation du graphique d’activités des utilisateurs virtuels pour isoler les problèmes
+# <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Procédure pas à pas : utilisation du graphique d’activités des utilisateurs virtuels pour isoler les problèmes
 
 Dans cette procédure pas à pas, vous allez apprendre à utiliser le graphique d’activités des utilisateurs virtuels pour isoler les erreurs qui se sont produites pour les utilisateurs virtuels individuels qui ont exécuté votre test de charge.
 
@@ -24,7 +24,7 @@ Le graphique d'activités des utilisateurs virtuels vous permet de visualiser le
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Configuration requise
 
 - Visual Studio Enterprise
 

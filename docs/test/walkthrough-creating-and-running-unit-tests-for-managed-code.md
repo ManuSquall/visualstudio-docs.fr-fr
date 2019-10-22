@@ -8,19 +8,19 @@ helpviewer_keywords:
 - unit tests, generating
 - unit tests, running
 - unit tests, authoring
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-author: gewarren
-ms.openlocfilehash: 4b9e30d70aa90645d05d3bf7b530056feec752ca
-ms.sourcegitcommit: 9f11537a721e69879a612979a1aca98f40bb4d4d
+author: jillre
+ms.openlocfilehash: 317b014ae0ef684dfc5f7ff73247d6186846a860
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70383718"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659655"
 ---
-# <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Procédure pas à pas : Créer et exécuter des tests unitaires pour le code managé
+# <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Procédure pas à pas : créer et exécuter des tests unitaires pour le code managé
 
 Cet article décrit la création, l’exécution et la personnalisation d’une série de tests unitaires à l’aide du framework de tests unitaires Microsoft pour le code managé et de **l’explorateur de tests** de Visual Studio. Vous commencez avec un projet C# qui est en développement, vous créez des tests qui utilisent son code, vous exécutez les tests et vous examinez les résultats. Vous modifiez ensuite le code de projet et réexécutez les tests.
 
@@ -429,7 +429,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 
 ### <a name="retest-rewrite-and-reanalyze"></a>Retester, réécrire et réanalyser
 
-Supposez qu’il y a un bogue dans la méthode testée et que la méthode `Debit` ne lève même pas d’exception <xref:System.ArgumentOutOfRangeException> et ne génère pas non plus le bon message avec l’exception. Actuellement, la méthode de test ne gère pas ce cas. Si la `debitAmount` valeur est valide (autrement dit, inférieure au solde et supérieure à zéro), aucune exception n’est interceptée, donc l’assertion ne se déclenche jamais. Pourtant, la méthode de test réussit. Cela ne convient pas, car vous souhaitez que la méthode de test échoue si aucune exception n’est levée.
+Supposez qu’il y a un bogue dans la méthode testée et que la méthode `Debit` ne lève même pas d’exception <xref:System.ArgumentOutOfRangeException> et ne génère pas non plus le bon message avec l’exception. Actuellement, la méthode de test ne gère pas ce cas. Si la valeur `debitAmount` est valide (autrement dit, inférieure au solde et supérieure à zéro), aucune exception n’est interceptée, donc l’assertion ne se déclenche jamais. Pourtant, la méthode de test réussit. Cela ne convient pas, car vous souhaitez que la méthode de test échoue si aucune exception n’est levée.
 
 Il s’agit d’un bogue dans la méthode de test. Pour résoudre le problème, ajoutez une assertion <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> à la fin de la méthode de test pour gérer le cas où aucune exception n’est levée.
 

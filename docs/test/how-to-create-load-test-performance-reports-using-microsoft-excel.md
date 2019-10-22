@@ -6,17 +6,17 @@ helpviewer_keywords:
 - load tests, creating Excel reports
 - load tests, reporting
 ms.assetid: b87fb196-9973-4512-a924-088788def4ea
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6bd73c643cdc01be07d56857f65d3fb34c6346e0
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
+ms.openlocfilehash: af0afc61fcf7cb251836414ca474eb63da3bf2e9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747578"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653561"
 ---
-# <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Procédure : créer des rapports de performances de test de charge à l’aide de Microsoft Excel
+# <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Guide pratique pour créer des rapports de performances de test de charge à l’aide de Microsoft Excel
 
 Vous pouvez créer des rapports de test de charge Microsoft Excel basés sur au moins deux résultats de tests.
 
@@ -102,7 +102,7 @@ Vous pouvez générer des rapports Excel dans **l’Analyseur de test de charge*
    - **Comparaison d’erreurs** - Compare les types d’erreurs rencontrés entre les deux séries et indique le nombre d’occurrences.
 
      > [!TIP]
-     > Pour optimiser les rapports, plusieurs propriétés sont disponibles dans les tests de charge et tests des performances web. La demande de page comporte deux propriétés qui sont présentées dans les rapports : Objectif et nom du rapport. Le temps de réponse de la page est comparé à l'objectif et le nom du rapport est utilisé à la place de l'URL dans les rapports. Dans les Paramètres de série de tests de charge, sous Gérer les ensembles de compteurs, la propriété Étiquettes d’ordinateur est présentée dans le nom des ordinateurs figurant dans les rapports. Cela s'avère très utile pour décrire le rôle d'un ordinateur particulier dans le rapport.
+     > Pour optimiser les rapports, plusieurs propriétés sont disponibles dans les tests de charge et tests des performances web. La demande de page possède deux propriétés qui sont présentées dans les rapports : Objectif et Nom du rapport. Le temps de réponse de la page est comparé à l'objectif et le nom du rapport est utilisé à la place de l'URL dans les rapports. Dans les Paramètres de série de tests de charge, sous Gérer les ensembles de compteurs, la propriété Étiquettes d’ordinateur est présentée dans le nom des ordinateurs figurant dans les rapports. Cela s'avère très utile pour décrire le rôle d'un ordinateur particulier dans le rapport.
 
 ## <a name="to-generate-load-test-trend-reports-using-excel"></a>Pour créer des rapports de tendance de tests de charge à l'aide d'Excel
 
@@ -142,7 +142,7 @@ Vous pouvez générer des rapports Excel dans **l’Analyseur de test de charge*
 9. Le rapport est créé avec une table des matières qui propose des liens vers les différents onglets du classeur Excel générés dans le rapport. Les liens reposent sur les compteurs sélectionnés pour le rapport de tendance. Par exemple, si vous avez laissé les compteurs par défaut sélectionnés au cours de l'étape 7, le rapport générera alors des données présentées dans des onglets séparés dans Excel, pour chaque compteur répertorié au cours de l'étape 7. Les données générées pour chaque compteur sont présentées sous forme de graphiques tendanciels.
 
    > [!TIP]
-   > Pour optimiser les rapports, plusieurs propriétés sont disponibles dans les tests de charge et tests des performances web. La demande de page comporte deux propriétés qui sont présentées dans les rapports : Objectif et nom du rapport. Le temps de réponse de la page est comparé à l'objectif et le nom du rapport est utilisé à la place de l'URL dans les rapports. Dans les Paramètres de série de tests de charge, sous Gérer les ensembles de compteurs, la propriété Étiquettes d’ordinateur est présentée dans le nom des ordinateurs figurant dans les rapports. Cela s'avère très utile pour décrire le rôle d'un ordinateur particulier dans le rapport.
+   > Pour optimiser les rapports, plusieurs propriétés sont disponibles dans les tests de charge et tests des performances web. La demande de page possède deux propriétés qui sont présentées dans les rapports : Objectif et Nom du rapport. Le temps de réponse de la page est comparé à l'objectif et le nom du rapport est utilisé à la place de l'URL dans les rapports. Dans les Paramètres de série de tests de charge, sous Gérer les ensembles de compteurs, la propriété Étiquettes d’ordinateur est présentée dans le nom des ordinateurs figurant dans les rapports. Cela s'avère très utile pour décrire le rôle d'un ordinateur particulier dans le rapport.
 
 ## <a name="net-security"></a>Sécurité .NET
 

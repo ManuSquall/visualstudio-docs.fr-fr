@@ -6,17 +6,17 @@ helpviewer_keywords:
 - code analysis, managed code
 - analyzers
 - Roslyn analyzers
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1845647dc1848a7fcd99ef59c29eb163bece979d
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 6cd4d5517dae889387ec632df57c90485bd366b0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186003"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649056"
 ---
 # <a name="use-code-analyzers"></a>Utiliser des analyseurs de code
 
@@ -28,7 +28,7 @@ Vous pouvez effectuer une grande partie de la personnalisation des diagnostics d
 
 ![Nœud analyseurs dans Explorateur de solutions](media/analyzers-expanded-in-solution-explorer.png)
 
-Vous pouvez afficher les propriétés d’un diagnostic, notamment sa description et sa gravité par défaut, dans la fenêtre **Propriétés** . Pour afficher les propriétés, cliquez avec le bouton droit sur la règle et sélectionnez **Propriétés**, ou sélectionnez la règle et appuyez sur **ALT**+**entrée**.
+Vous pouvez afficher les propriétés d’un diagnostic, notamment sa description et sa gravité par défaut, dans la fenêtre **Propriétés** . Pour afficher les propriétés, cliquez avec le bouton droit sur la règle et sélectionnez **Propriétés**, ou sélectionnez la règle et appuyez sur **ALT** +**entrée**.
 
 ![Propriétés de diagnostic dans Fenêtre Propriétés](media/analyzer-diagnostic-properties.png)
 
@@ -62,12 +62,12 @@ Le tableau suivant présente les différentes options de gravité :
 
 | Gravité (Explorateur de solutions) | Gravité (fichier EditorConfig) | Comportement au moment de la génération | Comportement de l’éditeur |
 |-|-|-|
-| Error | `error` | Les violations apparaissent comme des *Erreurs* dans les liste d’erreurs et dans la sortie de la génération en ligne de commande, et entraînent l’échec des builds.| Le code incriminé est souligné d’un trait ondulé rouge et marqué d’une petite zone rouge dans la barre de défilement. |
-| Warning | `warning` | Les violations apparaissent en tant qu' *avertissements* dans le liste d’erreurs et dans la sortie de la génération en ligne de commande, mais ne provoquent pas l’échec des builds. | Le code incriminé est souligné d’un trait ondulé vert et marqué d’une petite zone verte dans la barre de défilement. |
-| Info | `suggestion` | Les violations apparaissent sous la forme de *messages* dans le liste d’erreurs, et pas du tout dans la sortie de la génération de la ligne de commande. | Le code incriminé est souligné d’un trait ondulé gris, et marqué d’une petite zone grise dans la barre de défilement. |
+| Erreur | `error` | Les violations apparaissent comme des *Erreurs* dans les liste d’erreurs et dans la sortie de la génération en ligne de commande, et entraînent l’échec des builds.| Le code incriminé est souligné d’un tilde rouge et marqué d’une petite zone rouge dans la barre de défilement. |
+| Warning | `warning` | Les violations apparaissent en tant qu' *avertissements* dans le liste d’erreurs et dans la sortie de la génération en ligne de commande, mais ne provoquent pas l’échec des builds. | Le code incriminé est souligné d’un tilde vert et est marqué d’un petit cadre vert dans la barre de défilement. |
+| Info | `suggestion` | Les violations apparaissent sous la forme de *messages* dans le liste d’erreurs, et pas du tout dans la sortie de la génération de la ligne de commande. | Le code incriminé est souligné d’un tilde gris et marqué d’une petite zone grise dans la barre de défilement. |
 | Hidden | `silent` | Non visible par l’utilisateur. | Non visible par l’utilisateur. Toutefois, le diagnostic est signalé au moteur de diagnostic IDE. |
-| Aucun. | `none` | Entièrement supprimée. | Entièrement supprimée. |
-| Par défaut | `default` | Correspond à la gravité par défaut de la règle. Pour déterminer la valeur par défaut d’une règle, recherchez dans la Fenêtre Propriétés. | Correspond à la gravité par défaut de la règle. |
+| aucune. | `none` | Entièrement supprimée. | Entièrement supprimée. |
+| Valeur par défaut | `default` | Correspond à la gravité par défaut de la règle. Pour déterminer la valeur par défaut d’une règle, recherchez dans la Fenêtre Propriétés. | Correspond à la gravité par défaut de la règle. |
 
 La capture d’écran suivante de l’éditeur de code montre trois violations différentes avec des gravités différentes. Notez la couleur du tilde et le petit carré de couleur de la barre de défilement à droite.
 
@@ -93,7 +93,7 @@ La définition de la gravité d’une règle dans un fichier baEditorConfig est 
 
 1. Si vous n’avez pas encore de fichier EditorConfig pour votre projet, ajoutez-en [un](../ide/create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project).
 
-2. Ajoutez une entrée pour chaque règle que vous souhaitez configurer sous l’extension de fichier correspondante. Par exemple, pour définir la gravité de [CA1822](ca1822-mark-members-as-static.md) sur `error` pour C# les fichiers, l’entrée ressemble à ce qui suit :
+2. Ajoutez une entrée pour chaque règle que vous souhaitez configurer sous l’extension de fichier correspondante. Par exemple, pour définir la gravité de [CA1822](ca1822.md) sur `error` pour C# les fichiers, l’entrée ressemble à ce qui suit :
 
    ```ini
    [*.cs]
@@ -101,15 +101,15 @@ La définition de la gravité d’une règle dans un fichier baEditorConfig est 
    ```
 
 > [!NOTE]
-> Pour les analyseurs de style de code IDE, vous pouvez également les configurer dans un fichier EditorConfig à l’aide d’une syntaxe `dotnet_style_qualification_for_field = false:suggestion`différente, par exemple,. Toutefois, si vous définissez une gravité à l' `dotnet_diagnostic` aide de la syntaxe, elle est prioritaire. Pour plus d’informations, consultez [conventions de langage pour EditorConfig](../ide/editorconfig-language-conventions.md).
+> Pour les analyseurs de style de code IDE, vous pouvez également les configurer dans un fichier EditorConfig à l’aide d’une syntaxe différente, par exemple, `dotnet_style_qualification_for_field = false:suggestion`. Toutefois, si vous définissez une gravité à l’aide de la syntaxe `dotnet_diagnostic`, elle est prioritaire. Pour plus d’informations, consultez [conventions de langage pour EditorConfig](../ide/editorconfig-language-conventions.md).
 
 #### <a name="automatically-configure-rule-severity"></a>Configurer automatiquement la gravité de la règle
 
 Visual Studio offre un moyen pratique de configurer le niveau de gravité d’une règle à partir du menu de l’ampoule [actions rapides](../ide/quick-actions.md) .
 
-1. Une fois qu’une violation se produit, placez le curseur sur le tilde de violation dans l’éditeur et ouvrez le menu ampoule. Ou placez votre curseur sur la ligne et appuyez sur **CTRL**+ **.** (point).
+1. Une fois qu’une violation se produit, placez le curseur sur le tilde de violation dans l’éditeur et ouvrez le menu ampoule. Ou placez votre curseur sur la ligne et appuyez sur **Ctrl** + **.** (point).
 
-2. Dans le menu ampoule, sélectionnez **configurer ou supprimer les problèmes** > **configurer \<l’ID de règle > gravité**.
+2. Dans le menu ampoule, sélectionnez **configurer ou supprimer les problèmes** > **configurer \<rule ID > gravité**.
 
    ![Configurer la gravité de la règle à partir du menu ampoule dans Visual Studio](media/configure-rule-severity.png)
 
@@ -126,7 +126,7 @@ Visual Studio offre un moyen pratique de configurer le niveau de gravité d’un
 
 ### <a name="set-rule-severity-from-solution-explorer"></a>Définir la gravité de la règle à partir d’Explorateur de solutions
 
-1. Dans **Explorateur de solutions**, développez **références** > **analyseurs** (ou**analyseurs** de **dépendances** > pour les projets .net Core).
+1. Dans **Explorateur de solutions**, développez **références**  > **analyseurs** (ou **dépendances**  > **analyseurs** pour les projets .net Core).
 
 1. Développez l’assembly qui contient la règle pour laquelle vous souhaitez définir la gravité.
 
@@ -138,9 +138,9 @@ Visual Studio offre un moyen pratique de configurer le niveau de gravité d’un
 
 ![Fichier d’ensemble de règles dans Explorateur de solutions](media/ruleset-in-solution-explorer.png)
 
-1. Ouvrez le fichier de l' [ensemble de règles](analyzer-rule-sets.md) actif en double-cliquant dessus dans **Explorateur de solutions**, en sélectionnant Ouvrir l' **ensemble de règles actif** dans le menu contextuel du nœud**analyseurs** de **références** > , ou en sélectionnant **ouvrir** sur page de propriétés de l' **analyse du code** du projet.
+1. Ouvrez le fichier de l’ensemble de règles actif en double-cliquant dessus dans **Explorateur de solutions**, en sélectionnant **ouvrir l’ensemble de règles actif** dans le menu contextuel du nœud **références**  > **analyseurs** , ou en sélectionnant **ouvrir** dans le **code.** Page des propriétés de l’analyse pour le projet.
 
-   Si c’est la première fois que vous modifiez l’ensemble de règles, Visual Studio effectue une copie du fichier de l’ensemble de règles par défaut, le nomme  *\<ProjectName >. RuleSet*et l’ajoute à votre projet. Cet ensemble de règles personnalisé devient également l’ensemble de règles actif pour votre projet.
+   Si c’est la première fois que vous modifiez l’ensemble de règles, Visual Studio effectue une copie du fichier de l’ensemble de règles par défaut, le nomme *\<projectname >. RuleSet*et l’ajoute à votre projet. Cet ensemble de règles personnalisé devient également l’ensemble de règles actif pour votre projet.
 
    > [!NOTE]
    > Les projets .NET Core et .NET Standard ne prennent pas en charge les commandes de menu pour les ensembles de règles dans **Explorateur de solutions**, par exemple, **ouvrir l’ensemble de règles actif**. Pour spécifier un ensemble de règles non défini par défaut pour un projet .NET Core ou .NET Standard, [Ajoutez manuellement la propriété **CodeAnalysisRuleSet** ](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project) au fichier projet. Vous pouvez toujours configurer les règles dans l’ensemble de règles dans l’interface utilisateur de l’éditeur d’ensembles de règles de Visual Studio.
@@ -159,13 +159,21 @@ Il existe plusieurs façons de supprimer des violations de règle :
 
 - Dans un **fichier EditorConfig**
 
-  Définissez la gravité sur `none`, par exemple, `dotnet_diagnostic.CA1822.severity = none`.
-
-::: moniker-end
+  Définissez la gravité sur `none`, par exemple `dotnet_diagnostic.CA1822.severity = none`.
 
 - Dans le menu **analyser**
 
-  Sélectionnez **analyser** > **exécuter l’analyse du code et supprimer les problèmes actifs** dans la barre de menus pour supprimer toutes les violations en cours. Cette opération est parfois appelée « ligne de l’établissement ».
+  Sélectionnez **analyser**  > **générer et supprimer les problèmes actifs** dans la barre de menus pour supprimer toutes les violations en cours. Cette opération est parfois appelée « ligne de l’établissement ».
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+- Dans le menu **analyser**
+
+  Sélectionnez **analyser**  > **exécuter l’analyse du code et supprimer les problèmes actifs** dans la barre de menus pour supprimer toutes les violations en cours. Cette opération est parfois appelée « ligne de l’établissement ».
+
+::: moniker-end
 
 - À partir de **Explorateur de solutions**
 
@@ -177,19 +185,19 @@ Il existe plusieurs façons de supprimer des violations de règle :
 
 - À partir de l' **éditeur de code**
 
-  Placez le curseur dans la ligne de code avec la violation et appuyez sur **CTRL**++**point (.)** pour ouvrir le menu **actions rapides** . Sélectionnez **supprimer CAXXXX** > **dans le fichier source/de suppression**.
+  Placez le curseur dans la ligne de code avec la violation et appuyez sur **Ctrl** +**point (.)** pour ouvrir le menu **actions rapides** . Sélectionnez **supprimer CAXXXX**  > **dans le fichier source/de suppression**.
 
   ![Supprimer les diagnostics du menu actions rapides](media/suppress-diagnostic-from-editor.png)
 
 - À partir de la **liste d’erreurs**
 
-  Sélectionnez les règles que vous souhaitez supprimer, puis cliquez avec le bouton droit et sélectionnez **supprimer** > **dans le fichier source/de suppression**.
+  Sélectionnez les règles que vous souhaitez supprimer, puis cliquez avec le bouton droit et sélectionnez **supprimer**  > **dans le fichier source/de suppression**.
 
   - Si vous supprimez **dans la source**, la boîte de dialogue **aperçu des modifications** s’ouvre C# et affiche un aperçu de l' [Avertissement #pragma](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) ou Visual Basic directive d' [Avertissement #Disable](/dotnet/visual-basic/language-reference/directives/directives) ajoutée au code source.
 
     ![Aperçu de l’ajout d' #pragma avertissement dans le fichier de code](media/pragma-warning-preview.png)
 
-  - Si vous sélectionnez **dans le fichier de suppression**, la boîte de dialogue **aperçu des modifications** s’ouvre <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> et affiche un aperçu de l’attribut qui est ajouté au fichier de suppression globale.
+  - Si vous sélectionnez **dans le fichier de suppression**, la boîte de dialogue **aperçu des modifications** s’ouvre et affiche un aperçu de l’attribut <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> qui est ajouté au fichier de suppression globale.
 
     ![Aperçu de l’ajout de l’attribut SuppressMessage au fichier de suppression](media/preview-changes-in-suppression-file.png)
 

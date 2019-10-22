@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentInfo::GetDocumentClassId | Microsoft Docs
+title: 'IDebugDocumentInfo :: GetDocumentClassId | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c9e86c42954fafd4135956845f9465629cde9990
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 996e6d751807bba1e1a74cbb7e579db25193c32b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971080"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72569084"
 ---
 # <a name="idebugdocumentinfogetdocumentclassid"></a>IDebugDocumentInfo::GetDocumentClassId
 Retourne un `CLSID` identifiant le type de document.  
@@ -37,19 +37,19 @@ HRESULT GetDocumentClassId(
   
 #### <a name="parameters"></a>Paramètres  
  `pclsidDocument`  
- [out] Un `CLSID` identifiant le type de document.  
+ à @No__t_0 identifiant le type de document.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode permet au débogueur IDE pour les visionneuses personnalisées d’hôte pour ce document.  
+ Cette méthode permet à l’IDE du débogueur d’héberger des visionneuses personnalisées pour ce document.  
   
- Si le document n’a pas de données visibles, la valeur de retour de `pclsidDocument` est `CLSID_NULL`.  
+ Si le document n’a pas de données affichables, la valeur de retour de `pclsidDocument` est `CLSID_NULL`.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IDebugDocumentInfo](../../winscript/reference/idebugdocumentinfo-interface.md)

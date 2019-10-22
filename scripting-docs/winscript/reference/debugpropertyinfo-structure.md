@@ -1,5 +1,5 @@
 ---
-title: Structure DebugPropertyInfo | Microsoft Docs
+title: DebugPropertyInfo, structure | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 99208626b41f2463178bccecf73c21a1d15fa765
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 793c83b467460f0744abffe3f161f7510f56257a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955261"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575065"
 ---
 # <a name="debugpropertyinfo-structure"></a>DebugPropertyInfo, structure
-Décrit un objet de nature hiérarchique qui a le nom, type et valeur. Il est utilisé pour décrire les propriétés de débogage de variables locales, des paramètres, des variables espionnes et des expressions et inscrit.  
+Décrit un objet d’une nature hiérarchique qui a le nom, le type et la valeur. Il est utilisé pour décrire les propriétés de débogage des variables locales, des paramètres, des variables et des expressions espionnes et des registres.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -43,27 +43,27 @@ typedef struct DebugPropertyInfo{
   
 ## <a name="members"></a>Membres  
  dwValidFields  
- Type de données énuméré permet de spécifier quels champs sont initialisés.  
+ Type de données énuméré utilisé pour spécifier les champs à initialiser.  
   
  bstrName  
- Le nom de propriété dans un contexte.  
+ Nom de la propriété dans un contexte.  
   
  bstrType  
- Le type de propriété, en tant que chaîne mise en forme.  
+ Type de propriété, comme chaîne mise en forme.  
   
  bstrValue  
- La valeur de propriété en tant que chaîne mise en forme.  
+ Valeur de la propriété, comme chaîne mise en forme.  
   
  bstrFullName  
- Le nom complet de la propriété.  
+ Nom complet de la propriété.  
   
  dwAttrib  
  Énumération qui spécifie les indicateurs pour les attributs de propriété de débogage.  
   
  pDebugProp  
- Le `IDebugProperty` décrite par les informations contenues dans cette `DebugPropertyInfo` structure.  
+ La `IDebugProperty` décrite par les informations de cette structure de `DebugPropertyInfo`.  
   
 ## <a name="see-also"></a>Voir aussi  
- [IDebugProperty (Interface)](../../winscript/reference/idebugproperty-interface.md)   
- [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)   
+ @No__t_1 de l' [interface IDebugProperty](../../winscript/reference/idebugproperty-interface.md)  
+ [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)    
  [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)

@@ -8,15 +8,15 @@ helpviewer_keywords:
 - UML activity diagrams, programming
 ms.assetid: 8cdd0203-85ef-4c62-9abc-da4cb26fa504
 caps.latest.revision: 27
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d0bebbb4e6dfe25ce9834595be11aad0fd1f1ba0
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: cbc7a6ce7edede6759c0562df1e524d932f62b91
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871883"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669710"
 ---
 # <a name="edit-uml-sequence-diagrams-by-using-the-uml-api"></a>Modifier des diagrammes de séquence à l'aide de l'API UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation;
  Pour plus d’informations, consultez [définir une commande de menu sur un diagramme de modélisation](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
 
 ### <a name="getting-the-context"></a>Obtention du contexte
- Si vous modifiez une interaction dans le cadre d'un gestionnaire de mouvements ou d'une commande dans un diagramme de séquence, vous pouvez obtenir une référence au contexte. Par exemple :
+ Si vous modifiez une interaction dans le cadre d'un gestionnaire de mouvements ou d'une commande dans un diagramme de séquence, vous pouvez obtenir une référence au contexte. Exemple :
 
 ```
 [SequenceDesignerExtension]
@@ -118,13 +118,13 @@ public void Execute (IMenuCommand command)
 ## <a name="updating-an-interaction-and-its-layout"></a>Mise à jour d'une interaction et de sa disposition
  Quand vous mettez à jour une interaction, terminez toujours l'opération en mettant à jour sa disposition à l'aide de l'une des méthodes suivantes :
 
-- `ISequenceDiagram.UpdateShapePositions()`ajuste les positions des formes récemment insérées ou déplacées, ainsi que leurs formes voisines.
+- `ISequenceDiagram.UpdateShapePositions()` ajuste les positions des formes récemment insérées ou déplacées, ainsi que leurs formes voisines.
 
 - `ISequenceDiagram.Layout([SequenceDiagramLayoutKinds])` redessine le diagramme complet. Vous pouvez utiliser le paramètre pour spécifier le repositionnement des lignes de vie, des messages ou les deux.
 
   Cela est particulièrement important quand vous insérez de nouveaux éléments ou déplacez des éléments existants. Ils ne seront pas dans les positions correctes dans le diagramme tant que vous n'aurez pas effectué l'une de ces opérations. Il vous suffit d'appeler l'une de ces opérations une seule fois à la fin d'une série de modifications.
 
-  Pour éviter de déconcerter l'utilisateur qui effectue une opération d'annulation après votre commande, utilisez un `ILinkedUndoTransaction` pour délimiter vos modifications et les opérations `Layout()` ou `UpdateShapePositions()` finales. Par exemple :
+  Pour éviter de déconcerter l'utilisateur qui effectue une opération d'annulation après votre commande, utilisez un `ILinkedUndoTransaction` pour délimiter vos modifications et les opérations `Layout()` ou `UpdateShapePositions()` finales. Exemple :
 
 ```
 using (ILinkedUndoTransaction transaction = LinkedUndoContext.BeginTransaction("create loop"))
@@ -184,7 +184,7 @@ System.Diagnostics.Debug.Assert(
 ```
 
 ### <a name="to-create-messages"></a>Pour créer des messages
- Pour créer un message, vous devez identifier les points d'insertion sur les lignes de vie source et cible. Par exemple :
+ Pour créer un message, vous devez identifier les points d'insertion sur les lignes de vie source et cible. Exemple :
 
 ```
 interaction.CreateMessage( sourceInsertionPoint,
@@ -241,7 +241,7 @@ cf.CreateInteractionOperand(cf.Operands.First(), false);
 cf.CreateInteractionOperand(cf.Operands.Last(), true);
 ```
 
-## <a name="troubleshooting"></a>Résolution de problèmes
+## <a name="troubleshooting"></a>Résolution des problèmes
  Les formes apparaîtront dans des positions incorrectes si les modifications ne sont pas effectuées avec une opération `UpdateShapePositions()` ou `Layout()`.
 
  La plupart des autres problèmes sont dus à des points d'insertion mal alignés, qui font que de nouveaux messages ou fragments devraient en traverser d'autres. Les symptômes peuvent être qu'aucune modification n'est effectuée ou qu'une exception est levée. L'exception peut n'être levée qu'au moment ou l'opération `UpdateShapePositions()` ou `Layout()` est effectuée.

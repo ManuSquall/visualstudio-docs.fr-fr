@@ -1,5 +1,5 @@
 ---
-title: Techniques de débogage de MFC | Microsoft Docs
+title: Techniques de débogage MFC | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f2cd5345de8dfe62e56722a8e36713c6062b3cb
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 1380cf2cfd4d1ffe729fdd4a6ce9cfb2ba7d9ab6
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67693028"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72435648"
 ---
 # <a name="mfc-debugging-techniques"></a>Techniques de débogage MFC
 Si vous déboguez un programme MFC, les techniques de débogage suivantes peuvent vous être utiles.
@@ -97,7 +97,7 @@ TRACE( "x = %d and y = %d\n", x, y );
 TRACE( "x = %d and y = %x and z = %f\n", x, y, z );
 ```
 
-La macro TRACE gère correctement les deux char\* et wchar_t\* paramètres. Les exemples suivants illustrent l'utilisation de la macro TRACE avec différents types de paramètres de chaînes.
+La macro TRACE gère correctement les paramètres char @ no__t-0 et wchar_t @ no__t-1. Les exemples suivants illustrent l'utilisation de la macro TRACE avec différents types de paramètres de chaînes.
 
 ```cpp
 TRACE( "This is a test of the TRACE macro that uses an ANSI string: %s %d\n", "The number is:", 2);
@@ -140,7 +140,7 @@ Avant d'utiliser les fonctions de diagnostic de la mémoire, vous devez activer 
 
 - Si vous voulez contrôler plus précisément les fonctionnalités de diagnostic de la mémoire, vous pouvez les activer et les désactiver individuellement, de façon sélective, en définissant la valeur de la variable globale MFC [afxMemDF](https://msdn.microsoft.com/Library/cf117501-5446-4fce-81b3-f7194bc95086). Cette variable peut prendre les valeurs suivantes, comme spécifié par le type énuméré **afxMemDF**:
 
-  |Value|Description|
+  |valeur|Description|
   |-----------|-----------------|
   |**allocMemDF**|Activer l'allocateur de mémoire de diagnostic (par défaut).|
   |**delayFreeMemDF**|Différer la libération de la mémoire lors des appels à `delete` ou `free` jusqu'à ce que le programme s'arrête. Votre programme allouera alors la quantité maximale de mémoire possible.|
@@ -185,7 +185,7 @@ Avant d'utiliser les fonctions de diagnostic de la mémoire, vous devez activer 
     #endif
     ```
 
-    Notez que les instructions de vérification de mémoire sont placés entre crochets par **#ifdef _DEBUG / #endif** blocs de sorte qu’elles sont compilées que dans les versions Debug de votre programme.
+    Notez que les instructions de vérification de la mémoire sont placées entre des blocs **#ifdef _ DEBUG/#endif** afin qu’ils soient compilés uniquement dans les versions Debug de votre programme.
 
     Maintenant que vous connaissez l’existence d’une fuite de mémoire, vous pouvez utiliser une autre fonction membre, [CMemoryState::DumpStatistics](/cpp/mfc/reference/cmemorystate-structure#dumpstatistics) , qui vous aidera à la localiser.
 
@@ -227,7 +227,7 @@ Les blocs non objet incluent les tableaux et les structures alloués avec `new`.
 [Dans cette rubrique](#BKMK_In_this_topic)
 
 ### <a name="BKMK_Taking_object_dumps"></a> Création de dumps d'objets
-Dans un programme MFC, vous pouvez utiliser [CMemoryState::DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince) pour faire un dump une description de tous les objets sur le tas qui n’ont pas été libérés. `DumpAllObjectsSince` permet de faire un dump de tous les objets alloués depuis le dernier [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint). Si aucun appel à `Checkpoint` n'a eu lieu, `DumpAllObjectsSince` fait un dump de tous les objets et non-objets actuellement en mémoire.
+Dans un programme MFC, vous pouvez utiliser [CMemoryState ::D umpallobjectssince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince) pour faire un dump d’une description de tous les objets sur le tas qui n’ont pas été libérés. `DumpAllObjectsSince` permet de faire un dump de tous les objets alloués depuis le dernier [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint). Si aucun appel à `Checkpoint` n'a eu lieu, `DumpAllObjectsSince` fait un dump de tous les objets et non-objets actuellement en mémoire.
 
 > [!NOTE]
 > Avant de pouvoir utiliser le dump d'objets MFC, vous devez [activer le traçage de diagnostic](#BKMK_Enabling_memory_diagnostics).
@@ -413,16 +413,16 @@ pMyPerson->Dump( afxDump );
 ## <a name="BKMK_Reducing_the_size_of_an_MFC_Debug_build"></a> Réduction de la taille d'une version Debug MFC
 Les informations de débogage pour une application MFC importante peuvent occuper beaucoup d'espace disque. Vous pouvez utiliser une de ces procédures pour réduire la taille :
 
-1. Régénérez les bibliothèques MFC avec le [/Z7, / Zi, /ZI (Format des informations de débogage)](/cpp/build/reference/z7-zi-zi-debug-information-format) option, au lieu de **/Z7**. Ces options génèrent un seul fichier de base de données de programme (PDB), qui contient les informations de débogage pour la bibliothèque entière, ce qui permet de réduire la redondance et d'économiser de l'espace.
+1. Régénérez les bibliothèques MFC à l’aide de l’option [/Z7,/Zi,/ZI (format des informations de débogage)](/cpp/build/reference/z7-zi-zi-debug-information-format) au lieu de **/Z7**. Ces options génèrent un seul fichier de base de données de programme (PDB), qui contient les informations de débogage pour la bibliothèque entière, ce qui permet de réduire la redondance et d'économiser de l'espace.
 
-2. Régénérez les bibliothèques MFC sans informations de débogage (aucune [/Z7, / Zi, /ZI (Format des informations de débogage)](/cpp/build/reference/z7-zi-zi-debug-information-format) option). Dans ce cas, l'absence d'informations de débogage vous empêchera d'utiliser la plupart des fonctions de débogage dans le code des bibliothèques MFC, mais étant donné que celles-ci sont déjà déboguées minutieusement, cela n'est pas forcément un problème.
+2. Régénérez les bibliothèques MFC sans informations de débogage (pas d’option [/Z7,/Zi,/ZI (format des informations de débogage)](/cpp/build/reference/z7-zi-zi-debug-information-format) ). Dans ce cas, l'absence d'informations de débogage vous empêchera d'utiliser la plupart des fonctions de débogage dans le code des bibliothèques MFC, mais étant donné que celles-ci sont déjà déboguées minutieusement, cela n'est pas forcément un problème.
 
 3. Générez votre propre application avec les informations de débogage uniquement pour les modules sélectionnés comme décrit ci-dessous.
 
     [Dans cette rubrique](#BKMK_In_this_topic)
 
 ### <a name="BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules"></a> Génération d'une application MFC avec les informations de débogage pour les modules sélectionnés
-La génération de modules sélectionnés avec les bibliothèques de débogage MFC vous permet d'utiliser le pas à pas et les autres fonctions de débogage dans ces modules. Cette procédure utilise à la fois le mode Debug et le mode Release du makefile de Visual C++, d'où la nécessité des modifications décrites ci-après (et d'une régénération totale lorsqu'une version Release complète est requise).
+La génération de modules sélectionnés avec les bibliothèques de débogage MFC vous permet d'utiliser le pas à pas et les autres fonctions de débogage dans ces modules. Cette procédure utilise à la fois les configurations Debug et Release du projet, nécessitant ainsi les modifications décrites dans les étapes suivantes (et en faisant également une « régénération totale » nécessaire lorsqu’une version release complète est requise).
 
 1. Dans l'Explorateur de solutions, sélectionnez le projet.
 
@@ -438,7 +438,7 @@ La génération de modules sélectionnés avec les bibliothèques de débogage M
 
    4. Dans la liste **Copier les paramètres à partir de** , cliquez sur **Release**.
 
-   5. Cliquez sur **OK** pour fermer la **nouvelle Configuration de projet** boîte de dialogue.
+   5. Cliquez sur **OK** pour fermer la boîte de dialogue **nouvelle configuration de projet** .
 
    6. Fermez la boîte de dialogue **Gestionnaire de configurations** .
 
@@ -481,4 +481,4 @@ La génération de modules sélectionnés avec les bibliothèques de débogage M
    [Dans cette rubrique](#BKMK_In_this_topic)
 
 ## <a name="see-also"></a>Voir aussi
-[Débogage Visual C++](../debugger/debugging-native-code.md)
+[Débogage du code natif](../debugger/debugging-native-code.md)

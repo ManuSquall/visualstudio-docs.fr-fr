@@ -1,5 +1,5 @@
 ---
-title: Attendu ';' | Microsoft Docs
+title: "'; 'Attendu | Microsoft Docs"
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,23 +14,23 @@ ms.assetid: 3070cc6c-1138-4655-a7ac-723379f48f94
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9e5d0418f09d208d8919a2c431c818e236b62b29
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 27d9a36a36c3783048cdb7afb6c06da09bd21456
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433719"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576465"
 ---
 # <a name="expected-"></a>';' attendu
-Vous avez tenté de placer plusieurs instructions sur une ligne, mais s’est pas séparez-les par des points-virgules. Des points-virgules servent à terminer les instructions. Bien que vous pouvez placer plusieurs instructions sur une seule ligne, chacun d’eux doit être délimité de la suivante par un point-virgule.  
+Vous avez tenté de placer plusieurs instructions sur une ligne, mais vous ne les avez pas séparées par des points-virgules. Les points-virgules sont utilisés pour terminer les instructions. Bien que vous puissiez placer plusieurs instructions sur une seule ligne, chacune d’elles doit être délimitée de la suivante par un point-virgule.  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
-- Marquer la fin de chaque instruction par un point-virgule.  
+- Marquez la fin de chaque instruction avec un point-virgule.  
   
 - Assurez-vous que vos appels de fonction utilisent correctement les parenthèses.  
   
-- Assurez-vous que vous n’avez pas oublié les points-virgules dans l’en-tête d’un **pour** boucle.  
+- Assurez-vous que vous n’avez pas oublié les points-virgules à l’intérieur de l’en-tête d’une boucle **for** .  
   
 ## <a name="see-also"></a>Voir aussi  
  [Écriture de code JavaScript](../../javascript/writing-javascript-code.md)

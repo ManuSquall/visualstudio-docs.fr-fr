@@ -1,5 +1,5 @@
 ---
-title: IScriptNode::CreateChildHandler | Microsoft Docs
+title: 'IScriptNode :: CreateChildHandler | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bca8b30021d39638f3755bace2625bb38a44242d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9e024bb7d6a81b35994edddfe9e71666b0ee8df0
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787142"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573604"
 ---
 # <a name="iscriptnodecreatechildhandler"></a>IScriptNode::CreateChildHandler
 Ajoute un scriptlet comme une instance enfant d’un `IScriptNode`.  
@@ -46,49 +46,49 @@ HRESULT CreateChildHandler(
   
 #### <a name="parameters"></a>Paramètres  
  `pszDefaultName`  
- [in] L’adresse du nom par défaut à associer le scriptlet.  
+ dans Adresse du nom par défaut à associer au scriptlet.  
   
  `prgpszNames`  
- [in, size_is (`cpszNames`)] liste des identificateurs à partir du nom qualifié complet sur l’ordinateur hôte.  
+ [in, size_is (`cpszNames`)] Liste d’identificateurs à partir du nom qualifié complet sur l’hôte.  
   
  `cpszNames`  
- [in] Le nombre d’identificateurs dans les `prgpszNames` paramètre.  
+ dans Nombre d’identificateurs dans le paramètre `prgpszNames`.  
   
  `pszEvent`  
- [in] L’adresse de mémoire tampon qui identifie le nom d’événement associé au scriptlet.  
+ dans Adresse tampon qui identifie le nom de l’événement associé au scriptlet.  
   
  `pszDelimiter`  
- [in] L’adresse du délimiteur de fin du bloc de script. Pour l’analyse, l’hôte utilise généralement un délimiteur (par exemple, un double guillemet), pour détecter la fin du bloc de script.  
+ dans Adresse du délimiteur de bloc de fin de script. Pour l’analyse, l’hôte utilise généralement un délimiteur (par exemple, deux guillemets simples) pour détecter la fin du bloc de script.  
   
- Le délimiteur permet par le moteur de création de script de prétraitement. Par exemple, le moteur peut remplacer un guillemet simple avec deux guillemets simples à utiliser comme délimiteur. Le moteur détermine comment le délimiteur est utilisé.  
+ Le délimiteur permet le prétraitement par le moteur de création de script. Par exemple, le moteur peut remplacer un guillemet simple par deux guillemets simples à utiliser comme délimiteur. Le moteur détermine la façon dont le délimiteur est utilisé.  
   
- La valeur NULL si aucun délimiteur n’est utilisé pour identifier la fin du bloc de script.  
+ A la valeur NULL si aucun délimiteur n’est utilisé pour identifier la fin du bloc de script.  
   
  `ptiSignature`  
- [in] Les informations de type pour un objet de fonction.  
+ dans Informations de type pour un objet de fonction.  
   
  `iMethodSignature`  
- [in] L’index de la fonction dans le `ITypeInfo``ptiSignature` paramètre.  
+ dans Index de la fonction dans le paramètre `ITypeInfo``ptiSignature`.  
   
  `isn`  
- [in] L’index de l’enfant de la page parente.  
+ dans Index de l’enfant dans le parent.  
   
  `dwCookie`  
- [in] Une valeur définie par l’application qui est utilisée pour associer l’entrée de l’objet hôte.  
+ dans Valeur définie par l’application qui est utilisée pour associer l’entrée à l’objet hôte.  
   
  `ppse`  
- [out] L’adresse d’une variable qui reçoit un pointeur vers le `IScriptEntry` interface de l’instance enfant.  
+ à Adresse d’une variable qui reçoit un pointeur vers l’interface `IScriptEntry` de l’instance enfant.  
   
 ## <a name="return-value"></a>Valeur de retour  
  Élément `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
 ## <a name="remarks"></a>Notes  
- Un scriptlet spécifie un gestionnaire d’événements. Cette méthode crée un scriptlet si elle est appelée par un `IScriptNode` objet qui représente une page Web. Cette méthode ne réussit pas si elle est appelée par d’autres interfaces.  
+ Un scriptlet spécifie un gestionnaire d’événements. Cette méthode crée un scriptlet s’il est appelé par un objet `IScriptNode` qui représente une page Web. Cette méthode ne fonctionne pas si elle est appelée par d’autres interfaces.  
   
 ## <a name="see-also"></a>Voir aussi  
- [IScriptNode (Interface)](../../winscript/reference/iscriptnode-interface.md)   
+ @No__t_1 de l' [interface IScriptNode](../../winscript/reference/iscriptnode-interface.md)  
  [Interface IScriptEntry](../../winscript/reference/iscriptentry-interface.md)

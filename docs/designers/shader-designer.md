@@ -6,17 +6,17 @@ f1_keywords:
 - vs.graphics.designer.effectdesigner
 - vs.graphics.shaderdesigner
 ms.assetid: 5db09a16-b82c-4ba3-8ec9-630cdc109397
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1377034853907ce0c3585e4672296c1c8747259f
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: fd82a5c8bee50c778b87927f1074d71a38a21e9f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823867"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635053"
 ---
 # <a name="shader-designer"></a>Concepteur Shader
 
@@ -46,7 +46,7 @@ Cette section explique comment ajouter un nuanceur DGSL à un projet C++ Visual 
 
 1. Vérifiez que le composant Visual Studio dont vous avez besoin pour travailler avec les graphismes est installé. Il s’appelle **Éditeurs d’images et de modèles 3D**.
 
-   Pour l’installer, ouvrez Visual Studio Installer en sélectionnant **Outils** > **Obtenir des outils et des fonctionnalités** dans la barre de menus, puis l’onglet **Composants individuels**. Sélectionnez le composant **Éditeurs d’images et de modèles 3D** sous la catégorie **Jeux et graphismes**, puis sélectionnez **Modifier**.
+   Pour l’installer, ouvrez Visual Studio Installer en sélectionnant **outils**  > **afficher les outils et les fonctionnalités** dans la barre de menus, puis sélectionnez l’onglet **composants individuels** . Sélectionnez le composant **éditeurs d’images et de modèles 3D** sous le  **Catégorie Jeux et graphismes** , puis sélectionnez **modifier**.
 
    ![Composant Éditeurs d’images et de modèles 3D](media/image-3d-model-editors-component.png)
 
@@ -83,7 +83,7 @@ Ce tableau décrit les éléments de la barre d’outils **Mode du concepteur de
 
 |Élément de la barre d'outils|Description|
 |------------------|-----------------|
-|**Select**|Permet l’interaction avec des nœuds et des bords dans le graphique. Dans ce mode, vous pouvez sélectionner des nœuds et les déplacer ou les supprimer. Vous pouvez également créer des bords ou les couper.|
+|**Sélectionner**|Permet l’interaction avec des nœuds et des bords dans le graphique. Dans ce mode, vous pouvez sélectionner des nœuds et les déplacer ou les supprimer. Vous pouvez également créer des bords ou les couper.|
 |**Panoramique**|Permet de déplacer un graphe de nuanceur par rapport au cadre de la fenêtre. Pour effectuer un mouvement panoramique, sélectionnez un point dans l’aire de conception et déplacez-le.<br /><br /> En mode **Sélection**, vous pouvez maintenir enfoncée la touche **Ctrl** pour activer temporairement le mode **Panoramique**.|
 |**Zoom**|Permet d’afficher un graphique de nuanceur avec plus ou moins de détails par rapport au cadre de la fenêtre. En mode **Zoom**, sélectionnez un point dans l’aire de conception et déplacez-le vers la droite ou le bas pour effectuer un zoom avant, ou vers la gauche ou le haut pour effectuer un zoom arrière.<br /><br /> En mode **Sélection**, vous pouvez maintenir enfoncée la touche **Ctrl** pour effectuer un zoom avant ou arrière à l’aide de la roulette de la souris.|
 |**Zoom pour ajuster**|Affiche le graphe de nuanceur complet dans le cadre de la fenêtre.|
@@ -96,7 +96,7 @@ Ce tableau décrit les éléments de la barre d’outils **Mode du concepteur de
 |**Aperçu avec le plan**|Si cette option est activée, un modèle de plan est utilisé pour afficher un aperçu du nuanceur. Une seule forme d’aperçu peut être activée à la fois.|
 |**Boîte à outils**|Affiche ou masque la **Boîte à outils**.|
 |**Propriétés**|Affiche ou masque la fenêtre **Propriétés**.|
-|**Avancé**|Contient des commandes et des options avancées.<br /><br /> **Exporter** : permet l’exportation d’un nuanceur dans plusieurs formats.<br /><br /> **Exporter en tant que** : exporte le nuanceur en tant que code source HLSL ou en tant que bytecode de nuanceur compilé. Pour plus d’informations sur la façon d’exporter des nuanceurs, consultez [Guide pratique pour exporter un nuanceur](../designers/how-to-export-a-shader.md).<br /><br /> **Moteurs Graphics** : permet de sélectionner le renderer utilisé pour afficher l’aire de conception.<br /><br /> **Afficher avec D3D11** : utilise Direct3D 11 pour afficher l’aire de conception du concepteur de nuanceur.<br /><br /> **Afficher avec D3D11WARP** : utilise la plateforme WARP (Windows Advanced Rasterization Platform) D3D11 WARP pour afficher l’aire de conception du concepteur de nuanceur.<br /><br /> **Vue** : permet de sélectionner des informations supplémentaires sur le concepteur de nuanceur.<br /><br /> **Fréquence d’images** : si cette option est activée, affiche la fréquence d’images actuelle dans l’angle supérieur droit de l’aire de conception. La fréquence d'images est le nombre d'images dessinées par seconde. Cette option est utile lorsque vous activez l’option **Mode de rendu en temps réel**.|
+|**Avancé**|Contient des commandes et des options avancées.<br /><br /> **Exporter** : permet l’exportation d’un nuanceur dans plusieurs formats.<br /><br /> **Exporter en tant que** : exporte le nuanceur soit en tant que code source HLSL ou en tant que bytecode de nuanceur compilé. Pour plus d’informations sur la façon d’exporter des nuanceurs, consultez [Guide pratique pour exporter un nuanceur](../designers/how-to-export-a-shader.md).<br /><br /> **Moteurs Graphics** : permet de sélectionner le renderer utilisé pour afficher l’aire de conception.<br /><br /> **Render with D3D11 (Afficher avec D3D11)**  : utilise Direct3D 11 pour afficher l’aire de conception du concepteur de nuanceur.<br /><br /> **Render with D3D11WARP (Afficher avec D3D11WARP)**  : utilise la plateforme WARP (Windows Advanced Rasterization Platform) D3D11 WARP pour afficher l’aire de conception du concepteur de nuanceur.<br /><br /> **Vue** : permet de sélectionner des informations supplémentaires sur le concepteur de nuanceur.<br /><br /> **Fréquence d’images** : si cette option est activée, affiche la fréquence d’images actuelle dans l’angle supérieur droit de l’aire de conception. La fréquence d'images est le nombre d'images dessinées par seconde. Cette option est utile lorsque vous activez l’option **Mode de rendu en temps réel**.|
 
 > [!TIP]
 > Vous pouvez choisir le bouton **Avancé** pour réexécuter la dernière commande.
@@ -145,12 +145,12 @@ Le tableau suivant présente les paramètres modifiables du nuanceur :
 
 |Paramètre|Propriétés|
 |---------------|----------------|
-|**Texture 1** - **Texture 8**|**Accès** :                             **Public** pour que la propriété puisse être définie dans l’éditeur de modèle. **Privé** dans le cas contraire.<br /><br /> **Nom de fichier** : chemin complet du fichier de texture associé à ce registre de textures.|
+|**Texture 1** - **Texture 8**|**Accès** :                             **Public** pour que la propriété puisse être définie dans l’éditeur de modèle. **Privé** dans le cas contraire.<br /><br /> **Nom de fichier** : chemin d’accès complet au fichier de texture associé à ce registre de texture.|
 |**Matériau ambiant**|**Accès** :                             **Public** pour que la propriété puisse être définie dans l’éditeur de modèle. **Privé** dans le cas contraire.<br /><br /> **Valeur** : couleur diffuse du pixel actuel qui est due à l’éclairage indirect, ou ambiant.|
-|**Matériau diffus**|**Accès** : **Public** pour que la propriété puisse être définie dans l’éditeur de modèle. **Privé** dans le cas contraire.<br /><br /> **Valeur** :  Couleur qui décrit la manière dont le pixel actuel diffuse la lumière directe.|
+|**Matériau diffus**|**Accès** : **Public** pour que la propriété puisse être définie dans l’éditeur de modèle. **Privé** dans le cas contraire.<br /><br /> **Valeur** : couleur qui décrit la manière dont le pixel actuel diffuse la lumière directe.|
 |**Matériau émissif**|**Accès** :                              **Public** pour que la propriété puisse être définie dans l’éditeur de modèle. **Privé** dans le cas contraire.<br /><br /> **Valeur** : contribution de couleur du pixel actuel, basée sur l’auto-éclairage.|
-|**Matériau spéculaire**|**Accès** :                              **Public** pour que la propriété puisse être définie dans l’éditeur de modèle. **Privé** dans le cas contraire.<br /><br /> **Valeur** : Couleur qui décrit la manière dont le pixel actuel reflète la lumière directe.|
-|**Puissance spéculaire du matériau**|**Accès** :                             **Public** pour que la propriété puisse être définie dans l’éditeur de modèle. **Privé** dans le cas contraire.<br /><br /> **Valeur** : Exposant qui définit l’intensité des surbrillances spéculaires sur le pixel actuel.|
+|**Matériau spéculaire**|**Accès** :                              **Public** pour que la propriété puisse être définie dans l’éditeur de modèle. **Privé** dans le cas contraire.<br /><br /> **Valeur** : couleur qui décrit la manière dont le pixel actuel reflète la lumière directe.|
+|**Puissance spéculaire du matériau**|**Accès** :                             **Public** pour que la propriété puisse être définie dans l’éditeur de modèle. **Privé** dans le cas contraire.<br /><br /> **Valeur** : exposant qui définit l’intensité des surbrillances spéculaires sur le pixel actuel.|
 
 #### <a name="time-based-effects"></a>Effets à durée définie
 

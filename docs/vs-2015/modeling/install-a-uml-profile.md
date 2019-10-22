@@ -8,43 +8,42 @@ helpviewer_keywords:
 - UML - extending, profiles
 ms.assetid: 586f9ba5-4d01-4a1d-b001-32e2efaa4f24
 caps.latest.revision: 13
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0187f7dede25900cdf3a78fdbfe2899e5f318472
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e38e89ee5572f5ba552f3b6807a3edab5012a727
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68181499"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72669590"
 ---
 # <a name="install-a-uml-profile"></a>Installer un profil UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous pouvez étendre Visual Studio avec un profil UML. Un profil vous permet d'ajouter des stéréotypes et des propriétés supplémentaires aux éléments que vous pouvez créer dans des modèles UML. Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
-  
- Si vous recevez un modèle UML qui a été créé à l'aide de profils, certaines propriétés ne seront pas visibles, à moins que vous n'installiez les mêmes profils.  
-  
- Un profil est distribué à l'intérieur d'une Extension Visual Studio. Une extension peut également contenir d'autres fonctionnalités, telles que des commandes de menu. Pour plus d’informations, consultez [la gestion des Extensions Visual Studio](http://go.microsoft.com/fwlink/?LinkId=160728).  
-  
-### <a name="to-install-a-uml-profile-on-your-computer"></a>Pour installer un profil UML sur votre ordinateur  
-  
-1. Le profil doit vous avoir été donné sous la forme d'un fichier d'Extension Visual Studio (`.vsix`). Il peut y avoir d'autres fonctionnalités dans le même fichier.  
-  
-     Déplacez le fichier `.vsix` vers un emplacement approprié sur votre ordinateur.  
-  
-2. Double-cliquez sur le fichier `.vsix` dans l'Explorateur Windows (ou l'Explorateur de fichiers) ou ouvrez-le dans [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
-  
-3. Cliquez sur **installer** dans la boîte de dialogue qui s’affiche.  
-  
-4. Pour désinstaller ou temporairement désactiver l’extension, ouvrez **Gestionnaire d’extensions** à partir de la **outils** menu.  
-  
-### <a name="to-uninstall-or-disable-a-profile-extension"></a>Pour désinstaller ou désactiver une extension de profil  
-  
-1. Dans Visual Studio **outils** menu, cliquez sur **Gestionnaire d’extensions**.  
-  
-2. Cliquez sur l’extension que vous souhaitez supprimer, puis cliquez sur **désactiver** ou **désinstallation**.  
-  
-## <a name="see-also"></a>Voir aussi  
- [Personnaliser votre modèle avec des profils et stéréotypes](../modeling/customize-your-model-with-profiles-and-stereotypes.md)   
- [Définir un profil pour étendre UML](../modeling/define-a-profile-to-extend-uml.md)
+Vous pouvez étendre Visual Studio avec un profil UML. Un profil vous permet d'ajouter des stéréotypes et des propriétés supplémentaires aux éléments que vous pouvez créer dans des modèles UML. Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+
+ Si vous recevez un modèle UML qui a été créé à l'aide de profils, certaines propriétés ne seront pas visibles, à moins que vous n'installiez les mêmes profils.
+
+ Un profil est distribué à l'intérieur d'une Extension Visual Studio. Une extension peut également contenir d'autres fonctionnalités, telles que des commandes de menu. Pour plus d’informations, consultez [gestion des extensions Visual Studio](http://go.microsoft.com/fwlink/?LinkId=160728).
+
+### <a name="to-install-a-uml-profile-on-your-computer"></a>Pour installer un profil UML sur votre ordinateur
+
+1. Le profil doit vous avoir été donné sous la forme d'un fichier d'Extension Visual Studio (`.vsix`). Il peut y avoir d'autres fonctionnalités dans le même fichier.
+
+     Déplacez le fichier `.vsix` vers un emplacement approprié sur votre ordinateur.
+
+2. Double-cliquez sur le fichier `.vsix` dans l'Explorateur Windows (ou l'Explorateur de fichiers) ou ouvrez-le dans [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].
+
+3. Cliquez sur **installer** dans la boîte de dialogue qui s’affiche.
+
+4. Pour désinstaller ou désactiver temporairement l’extension, ouvrez le **Gestionnaire d’extensions** à partir du menu **Outils** .
+
+### <a name="to-uninstall-or-disable-a-profile-extension"></a>Pour désinstaller ou désactiver une extension de profil
+
+1. Dans le menu **Outils** de Visual Studio, cliquez sur **Gestionnaire d’extensions**.
+
+2. Cliquez sur l’extension que vous souhaitez supprimer, puis sur **Désactiver** ou **désinstaller**.
+
+## <a name="see-also"></a>Voir aussi
+ [Personnaliser votre modèle avec des profils et des stéréotypes](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [définir un profil pour étendre UML](../modeling/define-a-profile-to-extend-uml.md)

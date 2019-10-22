@@ -1,27 +1,27 @@
 ---
-title: 'Procédure pas à pas : Exemple LinqToXmlDataBinding'
+title: 'Procédure pas à pas : exemple LinqToXmlDataBinding'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: aedf42e8-896c-48fa-88df-7f7c9536aa69
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c99d8571480dd98726a5f1ae5772162e97e0baed
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 80503b0f14b31f787688fc78a75a4ceb974db4da
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925738"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72634197"
 ---
-# <a name="walkthrough-linqtoxmldatabinding-example"></a>Procédure pas à pas : Exemple LinqToXmlDataBinding
+# <a name="walkthrough-linqtoxmldatabinding-example"></a>Procédure pas à pas : exemple LinqToXmlDataBinding
 Cette procédure pas à pas décrit l’exemple LinqToXmlDataBinding et fournit des explications concernant les aspects les plus intéressants du contenu des deux principaux fichiers sources, *L2DBForm.xaml* et *L2DBForm.xaml.cs*.
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Configuration requise
 Avant de lire cette procédure pas à pas, nous vous conseillons vivement de générer et d’exécuter le programme LinqToXmlDataBinding décrit dans [Guide pratique pour générer et exécuter l’exemple LinqToXmlDataBinding](../designers/how-to-build-and-run-the-linqtoxmldatabinding-example.md).
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Le programme LinqToXmlDataBinding est une application WPF (Windows Presentation Foundation) composée de fichiers sources C# et XAML. Il contient un document XML incorporé qui définit une liste de livres et permet à l'utilisateur d'afficher, d'ajouter, de supprimer et de modifier ces entrées. Il est constitué des deux principaux fichiers sources suivants :
 
 - *L2DBForm.xaml* contient le code de déclaration XAML pour l’interface utilisateur de la fenêtre principale. Il contient également une section de ressources de fenêtre qui définit un fournisseur de données et un document XML incorporé pour les listes de livres.

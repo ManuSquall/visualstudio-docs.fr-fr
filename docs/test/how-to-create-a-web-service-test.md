@@ -7,17 +7,17 @@ helpviewer_keywords:
 - Web services [Visual Studio ALM], creating
 - service tests, Web
 ms.assetid: fbcd57ee-06ad-4260-8694-09f8e0f93e39
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3fd640a79a81e2306c8abd1c3c5279b1fc8f335f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 4bbc7423c3f08665109c17d25d43ae6d9d652100
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950135"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653595"
 ---
-# <a name="how-to-create-a-web-service-test"></a>Procédure : Créer un test de service web
+# <a name="how-to-create-a-web-service-test"></a>Guide pratique pour créer un test de service web
 
 Vous pouvez utiliser un test de performances web pour tester des services web. À l’aide des options **Insérer une requête** et **Insérer une requête de service web**, vous pouvez personnaliser les requêtes individuelles dans **l’éditeur de test de performances web** pour localiser des pages de service web. En général, vous n'affichez pas ces pages dans l'application web. Par conséquent, vous devez personnaliser la requête pour accéder à ces pages.
 
@@ -25,7 +25,7 @@ Vous pouvez utiliser un test de performances web pour tester des services web. �
 
 Les procédures suivantes utilisent un service web contenu dans le Starter Kit Commerce. Vous pouvez le télécharger à partir du lien [Starter Kit ASP.NET Commerce](http://go.microsoft.com/fwlink/?LinkId=181469).
 
-**Spécifications**
+**Prérequis**
 
 Visual Studio Enterprise
 
@@ -35,7 +35,7 @@ Visual Studio Enterprise
 
 2. Dans **l’éditeur de test de performances web**, cliquez avec le bouton droit sur le test de performances web et sélectionnez **Ajouter une requête de service web**.
 
-3. Dans la propriété **Url** de la nouvelle requête, tapez le nom du service web, par exemple **http://localhost/storecsvs/InstantOrder.asmx**.
+3. Dans la propriété **Url** de la nouvelle requête, tapez le nom du service web, par exemple **http://localhost/storecsvs/InstantOrder.asmx** .
 
 4. Ouvrez une session distincte du navigateur et tapez l’URL de la page *.asmx* dans la barre d’outils **Adresse**. Sélectionnez la méthode à tester et examinez le message SOAP. Il contient un `SOAPAction`.
 
@@ -71,7 +71,7 @@ Visual Studio Enterprise
     > [!NOTE]
     > Vous pouvez utiliser la liaison de données dans le corps SOAP pour remplacer n'importe quelle valeur d'espace réservé par des valeurs liées aux données à l'aide de la syntaxe `{{DataSourceName.TableName.ColumnName}}`.
 
-13. Exécutez le test. Dans le volet supérieur de l'**Afficheur des résultats des tests de performances web**, sélectionnez la requête de service web. Dans le volet inférieur, sélectionnez l'onglet Navigateur Web. Le XML qui est retourné par le service web et les résultats de toutes les opérations sont affichés.
+13. Exécutez le test. Dans le volet supérieur de l'**Afficheur des résultats des tests de performances web**, sélectionnez la requête de service web. Dans le volet inférieur, sélectionnez l’onglet navigateur Web. Le code XML retourné par le service Web, ainsi que les résultats de toutes les opérations, s’affichent.
 
 ## <a name="see-also"></a>Voir aussi
 

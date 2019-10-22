@@ -2,19 +2,19 @@
 title: Mode de barre et mode de mappage pour la barre de défilement
 ms.date: 09/25/2018
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77f7db396b814eb9163c055b8fadb8793432acee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 997f44fede7b31fe44b1e2ea28186ad52d39f443
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62548315"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656582"
 ---
-# <a name="how-to-customize-the-scroll-bar"></a>Procédure : Personnaliser la barre de défilement
+# <a name="how-to-customize-the-scroll-bar"></a>Procédure : Personnaliser la barre de défilement
 
 Quand vous travaillez sur de longs fichiers de code, il peut être difficile de suivre où tout se trouve dans le fichier. Vous pouvez personnaliser la barre de défilement de l’éditeur de code pour avoir une vue générale de ce qui se produit dans votre code.
 
@@ -50,14 +50,14 @@ La barre de défilement offre deux modes : le mode barre et le mode mappage.
 
 ### <a name="bar-mode"></a>Mode barre
 
-Le *mode barre* affiche les indicateurs d'annotation dans la barre de défilement. En cliquant sur la barre de défilement, la page défile vers le haut ou vers le bas, mais ne va pas à cet emplacement dans le fichier.
+Le *mode barre* affiche les indicateurs d’annotation dans la barre de défilement. En cliquant sur la barre de défilement, la page défile vers le haut ou vers le bas, mais ne va pas à cet emplacement dans le fichier.
 
 ### <a name="map-mode"></a>Mode mappage
 
-En *mode mappage*, lorsque vous cliquez sur un emplacement dans la barre de défilement, le curseur va à cet emplacement dans le fichier au lieu de faire simplement défiler la page vers le haut ou vers le bas. Les lignes de code sont indiquées, en miniature, dans la barre de défilement. Vous pouvez choisir la largeur de la colonne de mappage en sélectionnant une valeur dans **Vue d’ensemble de la source**. Pour permettre un aperçu plus grand du code quand vous placez le pointeur sur le mappage, sélectionnez l’option **Afficher une info-bulle d’aperçu**. Les zones réduites sont grisées différemment et se développent quand vous double-cliquez dessus.
+En *mode mappage*, quand vous cliquez sur un emplacement dans la barre de défilement, le curseur va à cet emplacement dans le fichier au lieu de faire simplement défiler la page vers le haut ou vers le bas. Les lignes de code sont indiquées, en miniature, dans la barre de défilement. Vous pouvez choisir la largeur de la colonne de mappage en sélectionnant une valeur dans **Vue d’ensemble de la source**. Pour permettre un aperçu plus grand du code quand vous placez le pointeur sur le mappage, sélectionnez l’option **Afficher une info-bulle d’aperçu**. Les zones réduites sont grisées différemment et se développent quand vous double-cliquez dessus.
 
 > [!TIP]
-> Vous pouvez désactiver l’affichage du code miniature en mode mappage en définissant **Vue d’ensemble de la source** sur **Désactivé**. Si l’option **Afficher une info-bulle d’aperçu** est sélectionnée, vous voyez toujours un aperçu du code à cet emplacement lorsque vous placez votre pointeur sur la barre de défilement, et le curseur va toujours à cet emplacement dans le fichier lorsque vous cliquez.
+> Vous pouvez désactiver l’affichage du code miniature en mode mappage en définissant **Vue d’ensemble de la source** sur **Désactivé**. Si l’option **Afficher une info-bulle d’aperçu** est sélectionnée, vous voyez toujours un aperçu du code à cet emplacement quand vous placez votre pointeur sur la barre de défilement, et le curseur va toujours à cet emplacement dans le fichier quand vous cliquez.
 
 L’image suivante illustre l’exemple de recherche avec le mode mappage et une largeur **moyenne** :
 

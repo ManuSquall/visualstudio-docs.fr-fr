@@ -1,5 +1,5 @@
 ---
-title: Méthode IJsDebugFrame::GetDocumentPositionWithId | Microsoft Docs
+title: 'IJsDebugFrame :: GetDocumentPositionWithId, méthode | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 741fe323e787c57f5f05a25461eae87c98dba70f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f35f6fb84db95950fe83d571c9f5e5e7db9de1e8
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62558136"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573861"
 ---
 # <a name="ijsdebugframegetdocumentpositionwithid-method"></a>IJsDebugFrame::GetDocumentPositionWithId, méthode
 Retourne la position actuelle de ce frame de pile dans le document au niveau de l’utilisateur.  
@@ -37,18 +37,18 @@ HRESULT GetDocumentPositionWithId(
   
 #### <a name="parameters"></a>Paramètres  
  `pDocumentId`  
- [out] ID unique pour un document source (pointeur vers IDebugDocumentText).  
+ à ID unique d’un document source (pointeur vers IDebugDocumentText).  
   
  `pCharacterOffset`  
- [out] Offset de caractère de base zéro à partir du début du script.  
+ à Offset de caractère de base zéro à partir du début du script.  
   
  `pStatementCharCount`  
- [out] La longueur de l’instruction en cours, qui commence à * pCharacterOffset, en caractères.  
+ à Longueur de l’instruction en cours, qui commence à * pCharacterOffset, en caractères.  
   
 ## <a name="return-value"></a>Valeur de retour  
   
-## <a name="requirements"></a>Configuration requise  
- **En-tête :** jscript9diag.h  
+## <a name="requirements"></a>spécifications  
+ **En-tête :** jscript9diag. h  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IJsDebugFrame](../../winscript/reference/ijsdebugframe-interface.md)

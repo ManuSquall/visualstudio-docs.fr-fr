@@ -5,19 +5,19 @@ ms.custom: seodec18, get-started
 ms.date: 11/20/2018
 ms.technology: vs-ide-general
 ms.topic: tutorial
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5ebbe6ac8ef8e6a6de99159fa8dd5169a9dcac06
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.openlocfilehash: fd9643e92d4774ca1356534faca9e031395ff4d9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180392"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72632652"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Apprendre à utiliser l’éditeur de code
 
@@ -40,7 +40,7 @@ Dans cette présentation de 10 minutes de l’éditeur de code de Visual Studio
 Cet article part du principe que vous connaissez déjà Visual Basic. Si ce n’est pas le cas, nous vous suggérons de consulter un tutoriel comme [Bien démarrer avec Visual Basic dans Visual Studio](../../get-started/visual-basic/tutorial-console.md) pour commencer.
 
 > [!TIP]
-> Pour suivre cet article, vérifiez que vous avez sélectionné les paramètres Visual Basic pour Visual Studio. Pour plus d’informations sur la sélection des paramètres pour l’environnement de développement intégré (IDE), consultez [Sélectionner les paramètres d’environnement](visual-studio-ide.md#select-environment-settings).
+> Pour suivre cet article, vérifiez que vous avez sélectionné les paramètres Visual Basic pour Visual Studio. Pour plus d’informations sur la sélection des paramètres de l’environnement de développement intégré (IDE), voir [Sélectionner les paramètres de l’environnement](visual-studio-ide.md#select-environment-settings).
 
 ## <a name="create-a-new-code-file"></a>Créer un fichier de code
 
@@ -88,7 +88,7 @@ Il existe des extraits de code pour déterminer si un fichier existe sur l’ord
 
 ## <a name="comment-out-code"></a>Commenter du code
 
-La barre d’outils, qui est la ligne de boutons sous la barre de menus dans Visual Studio, peut aider à augmenter votre productivité quand vous codez. Par exemple, vous pouvez activer ou désactiver le mode de saisie semi-automatique IntelliSense, augmenter ou réduire un retrait d’une ligne, ou commenter du code que vous ne voulez pas compiler. ([IntelliSense](../../ide/using-intellisense.md) constitue une aide au codage qui affiche une liste de méthodes correspondantes, entre autres.) Dans cette section, nous allons commenter du code.
+La barre d’outils, qui est la ligne de boutons sous la barre de menus dans Visual Studio, peut aider à augmenter votre productivité quand vous codez. Par exemple, vous pouvez activer ou désactiver le mode de saisie semi-automatique IntelliSense, augmenter ou réduire un retrait d’une ligne, ou commenter du code que vous ne voulez pas compiler. ([IntelliSense](../../ide/using-intellisense.md) est une aide au codage qui affiche une liste de méthodes correspondantes, entre autres choses.) Dans cette section, nous allons commenter du code.
 
 ![Boutons de la barre d'outils de l’éditeur](media/tutorial-editor-toolbar.png)
 
@@ -132,7 +132,7 @@ Le bloc de code est réduit de façon à afficher uniquement la première ligne,
 
 ## <a name="view-symbol-definitions"></a>Afficher les définitions de symbole
 
-L’éditeur de Visual Studio facilite l’inspection de la définition d’un type, d’une méthode, etc. Une façon de faire est d’accéder au fichier qui contient la définition, par exemple en choisissant **Atteindre la définition** à partir de n’importe quel endroit où le symbole est référencé. Une autre façon encore plus rapide, sans avoir à déplacer le focus en dehors du fichier dans lequel vous travaillez, consiste à utiliser la fonctionnalité [Aperçu de la définition](../../ide/go-to-and-peek-definition.md#peek-definition). Vous allez afficher un aperçu de la définition du type `String`.
+L’éditeur Visual Studio facilite l’inspection de la définition d’un type, d’une méthode, etc. L’une des méthodes consiste à naviguer jusqu’au fichier qui contient la définition, par exemple en choisissant **atteindre la définition** partout où le symbole est référencé. Une autre façon encore plus rapide, sans avoir à déplacer le focus en dehors du fichier dans lequel vous travaillez, consiste à utiliser la fonctionnalité [Aperçu de la définition](../../ide/go-to-and-peek-definition.md#peek-definition). Vous allez afficher un aperçu de la définition du type `String`.
 
 1. Cliquez avec le bouton droit sur le mot `String`, puis choisissez **Aperçu de la définition** dans le menu de contenu. Ou bien, appuyez sur **Alt**+**F12**.
 

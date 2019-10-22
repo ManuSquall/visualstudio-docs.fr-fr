@@ -1,5 +1,5 @@
 ---
-title: 'CA1413 : Évitez les champs non publics dans les types valeur visibles par COM | Microsoft Docs'
+title: 'Ca1413 : éviter les champs non publics dans les types valeur visibles par COM | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - AvoidNonpublicFieldsInComVisibleValueTypes
 ms.assetid: 1352e7eb-fefc-4239-8847-25edc7804a54
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 59ca3c5f53dee43bdd73eb706f03792458e71698
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 7d66c2c52b6ee7f7d1d2fbbd461ca8c1251ce13d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65691136"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652699"
 ---
 # <a name="ca1413-avoid-non-public-fields-in-com-visible-value-types"></a>CA1413 : Éviter les champs non publics dans les types valeur visibles par COM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,22 +29,22 @@ ms.locfileid: "65691136"
 |-|-|
 |TypeName|AvoidNonpublicFieldsInComVisibleValueTypes|
 |CheckId|CA1413|
-|Category|Microsoft.Interoperability|
+|Category|Microsoft. Interoperability|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
- Un type valeur qui est marqué spécifiquement comme visible pour COM Component Object Model () déclare un champ d’instance non publics.
+ Un type valeur qui est spécifiquement marqué comme visible par le modèle COM (Component Object Model) déclare un champ d’instance non public.
 
 ## <a name="rule-description"></a>Description de la règle
- Les champs d'instance non publics des types valeur visibles par COM sont visibles par les clients COM. Passez en revue le contenu du champ pour plus d’informations qui ne doivent pas être exposées et qui aura un effet de conception ou de sécurité involontaire.
+ Les champs d'instance non publics des types valeur visibles par COM sont visibles par les clients COM. Examinez le contenu du champ pour obtenir des informations qui ne doivent pas être exposées ou qui auront une conception inattendue ou un effet de sécurité.
 
- Par défaut, tous les types valeur publics sont visibles par COM. Toutefois, pour réduire les faux positifs, cette règle requiert que la visibilité COM du type d’être explicitement spécifié. L’assembly conteneur doit être marqué avec le <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> définie sur `false` et le type doit être marqué avec le <xref:System.Runtime.InteropServices.ComVisibleAttribute> défini sur `true`.
+ Par défaut, tous les types de valeur publics sont visibles par COM. Toutefois, pour réduire les faux positifs, cette règle exige que la visibilité COM du type soit explicitement indiquée. L’assembly conteneur doit être marqué avec le <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> défini sur `false` et le type doit être marqué avec le <xref:System.Runtime.InteropServices.ComVisibleAttribute> défini sur `true`.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle et garder le champ masqué, modifier le type de valeur à un type référence ou de supprimer le <xref:System.Runtime.InteropServices.ComVisibleAttribute> attribut à partir du type.
+ Pour corriger une violation de cette règle et garder le champ masqué, remplacez le type valeur par un type référence ou supprimez l’attribut <xref:System.Runtime.InteropServices.ComVisibleAttribute> du type.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Il est possible de supprimer un avertissement de cette règle si l’exposition publique du champ est acceptable.
+ Il est possible de supprimer sans risque un avertissement de cette règle si l’exposition publique du champ est acceptable.
 
 ## <a name="example"></a>Exemple
  L’exemple suivant montre un type qui viole la règle.
@@ -55,7 +55,7 @@ ms.locfileid: "65691136"
 ## <a name="related-rules"></a>Règles associées
  [CA1407 : Éviter les membres statiques dans les types visibles par COM](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)
 
- [CA1017 : Marquer les assemblys avec ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
+ [CA1017 : Marquez les assemblys avec ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
 ## <a name="see-also"></a>Voir aussi
- [Interopérabilité avec du Code non managé](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258) [qualification des Types .NET pour l’interopérabilité](https://msdn.microsoft.com/library/4b8afb52-fb8d-4e65-b47c-fd82956a3cdd)
+ Interopérabilité [avec du code non managé](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258) [qualifiant les types .net pour l’interopérabilité](https://msdn.microsoft.com/library/4b8afb52-fb8d-4e65-b47c-fd82956a3cdd)

@@ -1,5 +1,5 @@
 ---
-title: Ensemble de règles éditeur boîte de dialogue (hérité) | Microsoft Docs
+title: Éditeur d’ensemble de règles, boîte de dialogue (héritée) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -10,88 +10,85 @@ helpviewer_keywords:
 - Rule Set Editor dialog box
 ms.assetid: 7cfd5df1-1115-4e5c-9b72-121f39419e83
 caps.latest.revision: 7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 862842bd41762b15a38254c9d5e21bf06cdca10a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: ce9e18a832ceceebc56e294023bc4ae3d06101cc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65703193"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72663339"
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Éditeur d'ensemble de règles, boîte de dialogue (héritée)
-Cette rubrique décrit comment utiliser le **Éditeur d’ensemble de règles** boîte de dialogue dans les anciennes [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Utilisez le [!INCLUDE[wfd2](../includes/wfd2-md.md)] hérité lorsque vous devez cibler le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
-  
- Le **Éditeur d’ensemble de règles** boîte de dialogue est utilisée pour créer et modifier [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) sérialisés dans un fichier .rules ensembles de règles.  
-  
+Cette rubrique décrit comment utiliser la boîte de dialogue **éditeur d’ensemble de règles** dans le [!INCLUDE[wfd1](../includes/wfd1-md.md)] hérité. Utilisez le [!INCLUDE[wfd2](../includes/wfd2-md.md)] hérité lorsque vous devez cibler le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+
+ La boîte de dialogue **éditeur d’ensemble de règles** permet de créer et de modifier des ensembles de règles [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) , qui sont sérialisés dans un fichier. Rules.
+
 > [!NOTE]
-> Si vous souhaitez ouvrir le fichier .rules avec le **XML-éditeur avec encodage**, vous devez d’abord fermer la fenêtre du concepteur associée pour l’activité ou le flux de travail.  
-  
- Pour plus d’informations sur l’accès à la **Éditeur d’ensemble de règles** boîte de dialogue, consultez [Comment : Créer un ensemble de règles PolicyActivity (hérité)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).  
-  
+> Si vous souhaitez ouvrir le fichier. Rules avec l' **éditeur XML avec encodage**, vous devez d’abord fermer la fenêtre du concepteur associée pour le flux de travail ou l’activité.
+
+ Pour plus d’informations sur l’accès à la boîte de dialogue **éditeur d’ensemble de règles** , consultez [procédure : créer un ensemble de règles PolicyActivity (hérité)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
+
 > [!WARNING]
-> L'éditeur de règles du [!INCLUDE[wfd2](../includes/wfd2-md.md)] hérité utilisé pour cibler le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] ne prend pas en charge le multi-ciblage.  
-  
- Le tableau suivant décrit les éléments d’interface utilisateur utilisateur de la **Éditeur d’ensemble de règles** boîte de dialogue.  
-  
-|Élément d'interface utilisateur|Description|  
-|----------------|-----------------|  
-|**Ajouter une règle**|Ajoute une nouvelle définition de règle à l'ensemble de règles.|  
-|**Supprimer**|Supprime la règle sélectionnée de l'ensemble de règles.|  
-|**Le chaînage**|Spécifie le type de chaînage avant à utiliser avec l'ensemble de règles. Les options disponibles sont les suivantes :<br /><br /> -   **Chaînage complet**, qui spécifie l’utilisation des mécanismes de chaînage avant tout : implicite, attribution de méthode et explicite avec un **mise à jour** (fonction).<br />-   **Séquentiel**, qui spécifie de ne pas utiliser de chaînage avant.<br />-   **Mise à jour explicite uniquement**, qui spécifie d’exécuter uniquement le chaînage avant sur **mise à jour** actions.<br /><br /> Pour plus d’informations sur le chaînage avant, consultez [à l’aide de l’activité PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65004).|  
-|**Name**|En-tête de colonne de la liste des ensembles de règles. Cliquez pour trier la liste de règles par nom.|  
-|**Priorité**|En-tête de colonne de la liste des ensembles de règles. Cliquez pour trier la liste de règles par priorité.|  
-|**Réévaluation**|En-tête de colonne de la liste des ensembles de règles. Cliquez pour trier la liste de règles par type de réévaluation.|  
-|**Aperçu de la règle**|En-tête de colonne de la liste des ensembles de règles. Cliquez pour trier la liste de règles par l'aperçu de la condition d'une règle et actions.|  
-|**Nom :**|Entrez le nom de la règle.|  
-|**Priorité :**|Entrez une priorité pour la règle. La priorité par défaut est 0.|  
-|**Réévaluation :**|Spécifie le type de réévaluation de règle à utiliser avec la règle. Les options disponibles sont les suivantes :<br /><br /> -   **Toujours**, ce qui entraîne la règle être réévaluée en fonction des besoins.<br />-   **Jamais**, ce qui entraîne la règle doit jamais être réévaluée. Dans ce cas, la règle est exécutée une seule fois.|  
-|**Active**|Cochez pour rendre la règle active.|  
-|**Condition :**|Entrez une expression pour la condition de règle. Pour plus d'informations sur la syntaxe d'expression, consultez la section consacrée à l'entrée de conditions et d'expressions d'actions dans cette page.|  
-|**Actions Then :**|Entrez une expression applicable aux actions THEN. Pour plus d'informations sur la syntaxe d'expression, consultez la section consacrée à l'entrée de conditions et d'expressions d'actions dans cette page.|  
-|**Actions Else :**|Entrez une expression applicable aux actions ELSE. Pour plus d'informations sur la syntaxe d'expression, consultez la section consacrée à l'entrée de conditions et d'expressions d'actions dans cette page.|  
-|**OK**|Cliquez pour enregistrer l'ensemble de règles dans un fichier .rules.|  
-  
- Pour plus d’informations sur les ensembles de règles, consultez [à l’aide de l’activité PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65004).  
-  
-## <a name="entering-condition-and-action-expressions"></a>Entrée de conditions et d'expressions d'actions  
- Vous entrez des expressions pour la Condition, le puis et d’autre actions sous forme de texte dans leur texte respective boîtes de la **Éditeur d’ensemble de règles** boîte de dialogue. Vous pouvez taper **cela.** dans l’éditeur pour référencer des champs, propriétés et méthodes utilisées dans le flux de travail, à l’aide un type de menu IntelliSense. Vous pouvez également taper directement un nom de membre de workflow. Vous pouvez appeler des méthodes statiques appartenant aux types référencés ; pour cela, tapez le nom de la classe suivi du nom de la méthode.  
-  
- Vous pouvez ajouter des opérateurs logiques à la condition, tels que les opérateurs AND, OR ou NOT. Vous pouvez également ajouter des prédicats. Un prédicat se compose d’un opérateur binaire et de deux opérandes. Les opérateurs binaires pris en charge sont ==, >, \<, > =, et < =. Les opérandes pris en charge sont à valeur de constante, à fonction arithmétique et à portée publique.  
-  
- Vous pouvez spécifier le type de comparaison, et vous pouvez comparer aux **null** ou une chaîne vide. Vous pouvez imbriquer des appels à des membres sur une variable qui contient un type complexe, par exemple `this.Address.State == "WA"`.  
-  
- Les expressions prennent en charge les opérateurs suivants :  
-  
-- Opérateurs relationnels: ==, =, !=  
-  
-- Opérateurs de comparaison : <, \<=, >, > =  
-  
-- Opérateurs arithmétiques: +, - , *, /, MOD  
-  
-- Opérateurs logiques : AND, &&, OR, &#124;&#124;, NOT, !  
-  
-- Opérateurs au niveau du bit : &,&#124;  
-  
-  La priorité des opérateurs d'expression suit les règles de priorité des opérateurs C#.  
-  
-  Pour plus d’informations sur les conditions, consultez [à l’aide de Conditions dans les Workflows](https://msdn.microsoft.com/541211f5-d382-4810-894f-71f00b34fa77).  
-  
-### <a name="halt-and-update-functions"></a>Fonctions d'arrêt et de mise à jour  
- **Actions Then :** et **Actions Else :** expressions prennent en charge **Halt** et **mise à jour** fonctions. À utiliser le **Halt** de fonction, tapez **Halt** dans un **puis Action :** ou **Action Else :** zone de texte. Le **Halt** entraîne l’exécution de jeu de règles arrêter immédiatement, et le contrôle retourne au code appelant. Vous utilisez le **mise à jour** fonction avec le chaînage avant.  
-  
- Un **mise à jour** instruction peut être exprimée dans l’éditeur de l’une des deux formes ; les deux formulaires sont illustrés dans l’exemple suivant :  
-  
-```  
-Update(this.Address.State)  
-Update("this/Address/State")  
-```  
-  
- Pour plus d’informations sur l’utilisation de **mise à jour** avec le chaînage avant, consultez [à l’aide de l’activité PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65004).  
-  
-## <a name="see-also"></a>Voir aussi  
- [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019)   
- [Sélectionnez la règle ensemble, boîte de dialogue (hérité)](../workflow-designer/select-rule-set-dialog-box-legacy.md)   
- [À l’aide de l’activité PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65004)   
- [Utilisation de Conditions dans les Workflows](http://go.microsoft.com/fwlink?LinkID=65009)
+> L'éditeur de règles du [!INCLUDE[wfd2](../includes/wfd2-md.md)] hérité utilisé pour cibler le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] ne prend pas en charge le multi-ciblage.
+
+ Le tableau suivant décrit les éléments d’interface utilisateur de la boîte de dialogue **éditeur d’ensemble de règles** .
+
+|Élément d'interface utilisateur|Description|
+|----------------|-----------------|
+|**Ajouter une règle**|Ajoute une nouvelle définition de règle à l'ensemble de règles.|
+|**Supprimer**|Supprime la règle sélectionnée de l'ensemble de règles.|
+|**Chaînage**|Spécifie le type de chaînage avant à utiliser avec l'ensemble de règles. Les options disponibles sont les suivantes :<br /><br /> -    le**chaînage complet**, qui spécifie d’utiliser tous les mécanismes de chaînage avant : implicite, attribution de méthode et Explicit à l’aide d’une fonction de **mise à jour** .<br />-   **séquentiel**, qui spécifie de ne pas utiliser de chaînage avant.<br />-   **mise à jour explicite uniquement**, qui spécifie d’exécuter uniquement le chaînage avant sur les actions de **mise à jour** .<br /><br /> Pour plus d’informations sur le chaînage avant, consultez [utilisation de l’activité PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65004).|
+|**Nom**|En-tête de colonne de la liste des ensembles de règles. Cliquez pour trier la liste de règles par nom.|
+|**Importance**|En-tête de colonne de la liste des ensembles de règles. Cliquez pour trier la liste de règles par priorité.|
+|**Réévaluation**|En-tête de colonne de la liste des ensembles de règles. Cliquez pour trier la liste de règles par type de réévaluation.|
+|**Aperçu de la règle**|En-tête de colonne de la liste des ensembles de règles. Cliquez pour trier la liste de règles par l'aperçu de la condition d'une règle et actions.|
+|**Name :**|Entrez le nom de la règle.|
+|**Importance**|Entrez une priorité pour la règle. La priorité par défaut est 0.|
+|**Réévaluation**|Spécifie le type de réévaluation de règle à utiliser avec la règle. Les options disponibles sont les suivantes :<br /><br /> -   **toujours**, ce qui entraîne la réévaluation de la règle en fonction des besoins.<br />-   **jamais**, ce qui entraîne la réévaluation de la règle. Dans ce cas, la règle est exécutée une seule fois.|
+|**Active**|Cochez pour rendre la règle active.|
+|**Etat**|Entrez une expression pour la condition de règle. Pour plus d'informations sur la syntaxe d'expression, consultez la section consacrée à l'entrée de conditions et d'expressions d'actions dans cette page.|
+|**Actions Then :**|Entrez une expression applicable aux actions THEN. Pour plus d'informations sur la syntaxe d'expression, consultez la section consacrée à l'entrée de conditions et d'expressions d'actions dans cette page.|
+|**Actions Else :**|Entrez une expression applicable aux actions ELSE. Pour plus d'informations sur la syntaxe d'expression, consultez la section consacrée à l'entrée de conditions et d'expressions d'actions dans cette page.|
+|**Bien**|Cliquez pour enregistrer l'ensemble de règles dans un fichier .rules.|
+
+ Pour plus d’informations sur les ensembles de règles, consultez [utilisation de l’activité PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65004).
+
+## <a name="entering-condition-and-action-expressions"></a>Entrée de conditions et d'expressions d'actions
+ Vous entrez des expressions pour la condition et les actions Then et Else sous forme de texte dans leurs zones de texte respectives dans la boîte de dialogue **éditeur d’ensemble de règles** . Vous pouvez taper **cette.** dans l’éditeur pour référencer les champs, les propriétés et les méthodes utilisés dans le workflow, à l’aide d’un type de menu IntelliSense. Vous pouvez également taper directement un nom de membre de workflow. Vous pouvez appeler des méthodes statiques appartenant aux types référencés ; pour cela, tapez le nom de la classe suivi du nom de la méthode.
+
+ Vous pouvez ajouter des opérateurs logiques à la condition, tels que les opérateurs AND, OR ou NOT. Vous pouvez également ajouter des prédicats. Un prédicat se compose d’un opérateur binaire et de deux opérandes. Les opérateurs binaires pris en charge sont = =, >, \<, > = et < =. Les opérandes pris en charge sont à valeur de constante, à fonction arithmétique et à portée publique.
+
+ Vous pouvez spécifier le type de comparaison, et vous pouvez comparer à une **valeur null** ou à une chaîne vide. Vous pouvez imbriquer des appels à des membres sur une variable qui contient un type complexe, par exemple `this.Address.State == "WA"`.
+
+ Les expressions prennent en charge les opérateurs suivants :
+
+- Opérateurs relationnels: ==, =, !=
+
+- Opérateurs de comparaison : <, \< =, >, > =
+
+- Opérateurs arithmétiques: +, - , *, /, MOD
+
+- Opérateurs logiques : and, & &, or &#124; &#124;, not, !
+
+- Opérateurs au niveau du bit : &,&#124;
+
+  La priorité des opérateurs d'expression suit les règles de priorité des opérateurs C#.
+
+  Pour plus d’informations sur les conditions, consultez [utilisation de conditions dans les workflows](https://msdn.microsoft.com/541211f5-d382-4810-894f-71f00b34fa77).
+
+### <a name="halt-and-update-functions"></a>Fonctions d'arrêt et de mise à jour
+ **Then actions :** et **else actions :** les expressions prennent en charge les fonctions d' **arrêt** et de **mise à jour** . Pour utiliser la fonction **Halt** , tapez **Halt** dans une zone de texte **action Then :** ou **autre action :** . L’action d' **arrêt** provoque l’arrêt immédiat de l’exécution de l’ensemble de règles, et le contrôle retourne au code appelant. Vous utilisez la fonction de **mise à jour** avec le chaînage avant.
+
+ Une instruction **Update** peut être exprimée dans l’éditeur sous l’une des deux formes suivantes : les deux formes sont présentées dans l’exemple suivant :
+
+```
+Update(this.Address.State)
+Update("this/Address/State")
+```
+
+ Pour plus d’informations sur l’utilisation de la **mise à jour** avec le chaînage avant, consultez [utilisation de l’activité PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65004).
+
+## <a name="see-also"></a>Voir aussi
+ [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) [Sélectionner l’ensemble de règles, boîte de dialogue (héritée)](../workflow-designer/select-rule-set-dialog-box-legacy.md) [à l’aide de l’activité PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65004) [à l’aide de conditions dans les workflows](http://go.microsoft.com/fwlink?LinkID=65009)

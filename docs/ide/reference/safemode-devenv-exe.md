@@ -7,17 +7,17 @@ helpviewer_keywords:
 - Devenv, /SafeMode switch
 - SafeMode switch
 ms.assetid: b191f6a5-8f12-47ec-bcc7-b68149a22aa8
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14b2ac3a80a9e17e0c554f56ae8e31ac32450c5e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: abaeded184db78085a9629da0e763b2f76dbd328
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945477"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655512"
 ---
 # <a name="safemode-devenvexe"></a>/SafeMode (devenv.exe)
 
@@ -29,7 +29,7 @@ Lance Visual Studio en mode sans échec, en chargeant uniquement l’environneme
 devenv /SafeMode
 ```
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
 Ce commutateur empêche le chargement de tous les packages VS tiers au démarrage de Visual Studio, garantissant ainsi la stabilité de l’exécution.
 

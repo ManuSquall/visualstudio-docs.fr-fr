@@ -12,15 +12,15 @@ helpviewer_keywords:
 - load tests, using graphs
 - load test results, graphs
 ms.assetid: 4a919cd8-541c-40ee-be3b-352fabc56140
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8a0c9ca6f195640e3c356e9288300255570b196c
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 4efedd7fc7672331f04440f09d49b9339d90bdb2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926468"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665378"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>Analyser les résultats des tests de charge dans la vue Graphiques de l’analyseur de test de charge
 
@@ -32,7 +32,7 @@ Pour afficher les résultats des tests sous forme de graphiques, choisissez **Gr
 
 Jusqu'à quatre panneaux de graphique peuvent être affichés à la fois. Vous pouvez passer d’une disposition de panneau à l’autre à l’aide les boutons de la barre d’outils de **disposition du panneau**.
 
-Plusieurs graphiques prédéfinis sont disponibles. Vous pouvez utiliser les graphiques prédéfinis tels quels ou vous pouvez les personnaliser. En outre, vous pouvez créer vos propres graphiques. Pour plus d'informations, voir [Procédure : Ajouter et supprimer des compteurs sur des graphes](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md) et [Guide pratique pour créer des graphes personnalisés](../test/how-to-create-custom-graphs-in-load-test-results.md).
+Plusieurs graphiques prédéfinis sont disponibles. Vous pouvez utiliser les graphiques prédéfinis tels quels ou vous pouvez les personnaliser. En outre, vous pouvez créer vos propres graphiques. Pour plus d’informations, consultez [Guide pratique pour ajouter et supprimer des compteurs sur des graphiques](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md) et [Guide pratique pour créer des graphiques personnalisés](../test/how-to-create-custom-graphs-in-load-test-results.md).
 
 ## <a name="built-in-graphs"></a>Graphiques prédéfinis
 
@@ -52,7 +52,7 @@ Vous pouvez afficher différents compteurs sur le graphique au moment de l'exéc
 > [!NOTE]
 > Seuls les compteurs de performance de temps de réponse peuvent être ajoutés à un graphique de temps de réponse généré automatiquement.
 
-Les informations sur les compteurs sont affichées à la fois sur le graphique et dans la légende au-dessous du graphique. Vous pouvez également effectuer un zoom avant sur une section du graphique. Pour plus d'informations, voir [Procédure : effectuer un zoom avant sur une région du graphique](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
+Les informations sur les compteurs sont affichées à la fois sur le graphique et dans la légende au-dessous du graphique. Vous pouvez également effectuer un zoom avant sur une section du graphique. Pour plus d’informations, consultez [Guide pratique pour faire un zoom avant sur une région du graphique](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
 ## <a name="counters-displayed-in-graphs"></a>Compteurs affichés sur les graphiques
 
@@ -68,7 +68,7 @@ La légende contient les colonnes suivantes :
 |Category|Nom de la catégorie de compteur.|
 |Ordinateur|Le nom de l'ordinateur sur lequel les données du compteur sont collectées.|
 |Color|Couleur de la ligne sur le graphique.|
-|Plage|Indique le nombre représenté par 100 sur le graphique de ce compteur. Par exemple, pour une plage dont la limite supérieure est 10 000, l'étiquette 100 au sommet du graphique, représente 10 000.|
+|Range|Indique le nombre représenté par 100 sur le graphique de ce compteur. Par exemple, pour une plage dont la limite supérieure est 10 000, l'étiquette 100 au sommet du graphique, représente 10 000.|
 |Min|Indique la valeur minimale du compteur en millisecondes.|
 |Max|Indique la valeur maximale du compteur en millisecondes.|
 |Moy|Indique la valeur moyenne du compteur en millisecondes.|
@@ -78,12 +78,12 @@ La légende contient les colonnes suivantes :
 
 |Tâches|Rubriques associées|
 |-|-|
-|**Personnaliser les graphes à l’aide de la légende :** la légende de la vue Graphiques affiche des informations pour chaque compteur de performances associé à un graphe. Vous pouvez utiliser la légende pour supprimer les compteurs de performance, mettre en surbrillance les compteurs de performance dans le graphique et personnaliser les options de traçage.|-   [Utilisation de la légende de la vue Graphiques pour analyser des tests de charge](../test/use-the-graphs-view-legend-to-analyze-load-tests.md)|
-|**Afficher les compteurs sur des graphes :** vous pouvez ajouter différents genres de données au graphe de résultats des tests de charge en y plaçant des compteurs.|-   [Guide pratique pour ajouter et supprimer des compteurs sur des graphes](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
-|**Effectuer un zoom avant sur des graphes :** Une fois un test de charge terminé, vous pouvez utiliser les barres de zoom pour effectuer un zoom avant et accéder à une zone spécifique du graphique. En zoomant en avant, vous pouvez examiner en détail les données générées durant une série de tests de charge.|-   [Guide pratique pour effectuer un zoom avant sur une région du graphique](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)|
-|**Disposer des graphes en mosaïque :** Vous pouvez réorganiser les graphiques de résultats des tests de charge selon plusieurs modèles. Vous pouvez disposer en mosaïque jusqu'à quatre graphiques.||
-|**Créer des graphes personnalisés :** Vous pouvez concevoir des graphiques qui affichent des informations spécifiques à propos des résultats de test de charge. Vous concevez un graphique personnalisé en spécifiant les compteurs de test de charge que le graphique affichera.|-   [Guide pratique pour créer des graphes personnalisés](../test/how-to-create-custom-graphs-in-load-test-results.md)|
-|**Exporter les données de compteurs de performances dans le graphe :** vous pouvez exporter les données de graphes dans Microsoft Excel en utilisant le bouton **Exporter un graphique des données vers Excel** dans la barre d’outils **Analyseur de test de charge** dans la vue **Graphiques**.||
+|**Personnaliser les graphiques à l’aide de la légende :** la légende de la vue Graphiques affiche les informations de chaque compteur de performances associé à un graphique. Vous pouvez utiliser la légende pour supprimer les compteurs de performance, mettre en surbrillance les compteurs de performance dans le graphique et personnaliser les options de traçage.|-   [Utilisation de la légende de la vue Graphiques pour analyser des tests de charge](../test/use-the-graphs-view-legend-to-analyze-load-tests.md)|
+|**Afficher des compteurs sur des graphiques :** vous pouvez ajouter différents genres de données au graphique de résultats des tests de charge en y plaçant des compteurs.|-   [Guide pratique : Ajouter et supprimer des compteurs sur des graphiques](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
+|**Faire un zoom sur des graphiques :** à la fin d’un test de charge, vous pouvez utiliser les barres de zoom pour effectuer un zoom avant et accéder à une zone spécifique du graphique. En zoomant en avant, vous pouvez examiner en détail les données générées durant une série de tests de charge.|-   [Guide pratique pour faire un zoom avant sur une région du graphique](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)|
+|**Afficher en mosaïque des graphiques :** vous pouvez réorganiser les graphiques de résultats des tests de charge selon plusieurs modèles. Vous pouvez disposer en mosaïque jusqu'à quatre graphiques.||
+|**Créer des graphiques personnalisés :** vous pouvez concevoir des graphiques qui affichent des informations spécifiques sur les résultats des tests de charge. Vous concevez un graphique personnalisé en spécifiant les compteurs de test de charge que le graphique affichera.|-   [Guide pratique pour créer des graphiques personnalisés](../test/how-to-create-custom-graphs-in-load-test-results.md)|
+|**Exporter les données des compteurs de performances dans le graphique :** vous pouvez exporter les données graphiques dans Microsoft Excel en utilisant le bouton **Exporter un graphique des données vers Excel** dans la barre d’outils **Analyseur de test de charge** de la vue **Graphiques**.||
 
 ## <a name="related-tasks"></a>Tâches connexes
 
@@ -95,6 +95,6 @@ La légende contient les colonnes suivantes :
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Guide pratique pour ajouter et supprimer des compteurs sur des graphes](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)
-- [Guide pratique pour créer des graphes personnalisés](../test/how-to-create-custom-graphs-in-load-test-results.md)
-- [Guide pratique pour effectuer un zoom avant sur une région du graphique](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)
+- [Guide pratique pour ajouter et supprimer des compteurs sur des graphiques](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)
+- [Guide pratique pour créer des graphiques personnalisés](../test/how-to-create-custom-graphs-in-load-test-results.md)
+- [Guide pratique pour faire un zoom avant sur une région du graphique](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)

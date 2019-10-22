@@ -7,21 +7,21 @@ f1_keywords:
 helpviewer_keywords:
 - WPF Components tab, Choose Toolbox Items dialog box
 - Choose Toolbox Items dialog box, WPF Components tab
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac9e9c7bbafcf54e7bd31bde20469310c2ad3f81
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
-ms.translationtype: HT
+ms.openlocfilehash: 9c3de8e1d83a5d74f518eda2d5ab59bd9845b45a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68869762"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72630862"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Choisir des éléments de boîte à outils, composants WPF
 
-Cet onglet de la boîte de dialogue **Choisir des éléments de boîte à outils** affiche la liste des contrôles Windows Presentation Foundation (WPF) disponibles sur votre ordinateur local. Pour afficher la liste, sélectionnez **Choisir des éléments de boîte à outils** dans le menu **Outils** pour afficher la boîte de dialogue **Choisir des éléments de boîte à outils**, puis sélectionnez l’onglet **Composants WPF**. Pour trier la liste des composants, cliquez sur un en-tête de colonne.
+Cet onglet de la boîte de dialogue **Choisir des éléments de boîte à outils** affiche la liste des contrôles Windows Presentation Foundation (WPF) disponibles sur votre ordinateur local. Pour afficher cette liste, sélectionnez **choisir des éléments de boîte à outils** dans le menu **Outils** pour afficher la boîte de dialogue choisir des **éléments de boîte à outils** , puis sélectionnez l’onglet **Composants WPF** . Pour trier les composants listés, sélectionnez n’importe quel en-tête de colonne.
 
 - Lorsque la case en regard d’un composant est cochée, une icône de ce composant s’affiche dans la **boîte à outils**.
 
@@ -35,11 +35,11 @@ Cet onglet de la boîte de dialogue **Choisir des éléments de boîte à outils
 
 Les colonnes de l’onglet **Composants WPF** contient les informations suivantes :
 
-**Name**
+**Nom**
 
 Répertorie les noms des contrôles WPF dont les entrées correspondantes se trouvent dans le Registre de votre ordinateur.
 
-**Espace de noms**
+**Namespace**
 
 Affiche la hiérarchie de l’espace de noms de l’[API .NET](/dotnet/api/?view=netframework-4.7) qui définit la structure du composant. Triez sur cette colonne pour lister les composants disponibles dans chaque espace de noms .NET installé sur votre ordinateur.
 

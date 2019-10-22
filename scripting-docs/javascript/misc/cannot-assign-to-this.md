@@ -1,5 +1,5 @@
 ---
-title: Impossible d’assigner à 'this' | Microsoft Docs
+title: Impossible d’assigner à’This' | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,30 +14,30 @@ ms.assetid: ba2b0a2b-f0f8-4698-b335-a4ab6c166671
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4a4ba5d852a7d131a88930dd66931c026074549b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 73baa77cc63e3a43ac30e70f66081bbc7ade3020
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946587"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572351"
 ---
 # <a name="cannot-assign-to-this"></a>Impossible d'affecter à 'this'
-Vous avez tenté d’affecter une valeur à **cela**. **Cela** est un [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] mot clé qui fait référence à un :
+Vous avez tenté d’assigner une valeur à **ce**. **il** s’agit d’un mot clé [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] qui fait référence à :
 
-- l’objet en cours d’exécution une méthode,
+- l’objet qui exécute actuellement une méthode,
 
-- l’objet global si aucune méthode actuel (ou la méthode n’appartient pas à tout autre objet).
+- objet global s’il n’y a aucune méthode actuelle (ou si la méthode n’appartient à aucun autre objet).
 
-Une méthode est un [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] fonction est appelée via un objet. À l’intérieur d’une méthode, le **cela** mot clé est une référence à l’objet de la méthode a été appelée par le biais (ce qui se trouve l’objet créé en appelant le constructeur de classe avec le **nouveau** opérateur).
+Une méthode est une fonction de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] qui est appelée par l’intermédiaire d’un objet. Dans une méthode, le mot clé **This** est une référence à l’objet à l’aide duquel la méthode a été appelée (qui devient l’objet créé en appelant le constructeur de classe avec l’opérateur **New** ).
 
-À l’intérieur d’une méthode, vous pouvez utiliser **cela** pour faire référence à l’objet en cours, mais vous ne pouvez pas attribuer une nouvelle valeur à **cela**.
+À l’intérieur d’une méthode, vous pouvez **l’utiliser pour** faire référence à l’objet en cours, mais vous ne pouvez pas assigner une nouvelle valeur à **ce**.
 
 ## <a name="to-correct-this-error"></a>Pour corriger cette erreur
 
-- N’essayez pas d’affecter à **cela**. Pour accéder à une propriété ou méthode d’un objet instancié, utilisez l’opérateur point (par exemple, **circle.radius**).
+- N’essayez pas d’assigner à **ce**. Pour accéder à une propriété ou à une méthode d’un objet instancié, utilisez l’opérateur point (par exemple, **Circle. RADIUS**).
 
   > [!NOTE]
-  > Vous ne pouvez pas nommer une variable créée par l’utilisateur **cela**; il s’agit une [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] mot réservé.
+  > Vous ne pouvez pas nommer une variable créée par **l'** utilisateur. Il s’agit d’un mot réservé [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -1,5 +1,5 @@
 ---
-title: Les valeurs de métriques de code | Microsoft Docs
+title: Valeurs de la métrique du code | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -10,46 +10,46 @@ helpviewer_keywords:
 - measure code quality
 ms.assetid: bc38831e-2083-4ea4-8527-ee41499a342f
 caps.latest.revision: 22
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f103a1239996e1f68fb6dae7a9f0a41f55ad858e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 23dba7b7c29c05b55af2c461f36bdaa4b46b948f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437102"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667719"
 ---
 # <a name="code-metrics-values"></a>Valeurs de la métrique du code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La métrique du code est un jeu de mesures de logiciel qui fournit aux développeurs plus de détails sur le code qu'ils développent. En tirant parti de la métrique du code, les développeurs peuvent comprendre quels types et/ou les méthodes à retravailler ou à tester de manière plus approfondie. Les équipes de développement peuvent identifier les risques potentiels, comprendre l’état actuel d’un projet et suivre la progression pendant le développement de logiciels.  
-  
-## <a name="software-measurements"></a>Dimensions du logiciel  
- La liste suivante présente les résultats de métriques de code qui [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] calcule :  
-  
-- **Indice de maintenabilité** – calcule une valeur d’index compris entre 0 et 100 qui représente la relative simplicité de gestion du code. Une valeur élevée signifie une meilleure maintenabilité. Des évaluations codées par couleur peuvent servir à identifier rapidement les zones à problème dans votre code. Une meilleure évaluation est compris entre 20 et 100 et indique que le code a bonne maintenabilité. Une évaluation jaune est comprise entre 10 et 19 et indique que le code est relativement facile à gérer. Une évaluation rouge est une évaluation comprise entre 0 et 9 et indique une maintenabilité faible.  
-  
-- **Complexité cyclomatique** – mesure la complexité structurelle du code. Il est créé en calculant le nombre de chemins de code différents dans le flux du programme. Un programme qui a le flux de contrôle complexe nécessitera plus de tests pour obtenir la couverture du code qui fonctionne bien et sera moins facile à gérer.  
-  
+La métrique du code est un jeu de mesures de logiciel qui fournit aux développeurs plus de détails sur le code qu'ils développent. En tirant parti des métriques du code, les développeurs peuvent comprendre quels types et/ou méthodes doivent être retravaillés ou être testés de manière plus approfondie. Les équipes de développement peuvent identifier les risques potentiels, comprendre l’état actuel d’un projet et suivre la progression pendant le développement de logiciels.
+
+## <a name="software-measurements"></a>Mesures des logiciels
+ La liste suivante affiche les résultats de la métrique du code que [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] calcule :
+
+- **Index de maintenabilité** : calcule une valeur d’index comprise entre 0 et 100 qui représente la simplicité relative de la gestion du code. Une valeur élevée signifie une meilleure maintenabilité. Les évaluations codées en couleurs peuvent être utilisées pour identifier rapidement les zones problématiques dans votre code. Une évaluation verte est comprise entre 20 et 100 et indique que le code a une bonne maintenabilité. Une évaluation jaune est comprise entre 10 et 19 et indique que le code peut être géré de façon modérée. Une évaluation rouge est une évaluation comprise entre 0 et 9 et indique une maintenabilité faible.
+
+- **Complexité cyclomatic** : mesure la complexité structurelle du code. Elle est créée en calculant le nombre de chemins de code différents dans le déroulement du programme. Un programme qui a un contrôle de workflow complexe nécessitera davantage de tests pour obtenir une bonne couverture du code et sera moins gérable.
+
     > [!NOTE]
-    > Dans certains cas, le calcul de la complexité cyclomatique pour une méthode dans [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] diffère des versions antérieures. Pour plus d’informations, consultez la section « » modifications dans Visual Studio 2010 code complexité calculs » de [résolution des problèmes de métriques de Code](../code-quality/troubleshooting-code-metrics-issues.md).  
-  
-- **Profondeur d’héritage** – indique le nombre de définitions de classe qui s’étendent à la racine de la hiérarchie de classes. Plus la hiérarchie est plus difficile qu’il peut être de comprendre où des méthodes et les champs sont définis ou / et redéfini.  
-  
-- **COUPLAGE de classe** – mesure le couplage avec des classes uniques via des paramètres, variables locales, types de retour, les appels de méthode, des instanciations génériques ou de modèle, classes de base, les implémentations d’interface, champs définis sur les types externes, et décoration de l’attribut. Une bonne conception logicielle détermine les types et méthodes doivent avoir une forte cohésion et un couplage bas. COUPLAGE élevé indique une conception qui est difficile à réutiliser et tenir à jour en raison de ses nombreuses interdépendances sur d’autres types.  
-  
-- **Lignes de Code** – indique le nombre approximatif de lignes dans le code. Le nombre est basé sur le code de langage intermédiaire et est donc pas le nombre exact de lignes dans le fichier de code source. Un nombre très élevé peut indiquer qu’un type ou méthode essaie d’en faire trop de travail et doit être fractionnée. Cela peut également indiquer que le type ou la méthode peut être difficile à maintenir.  
-  
-## <a name="anonymous-methods"></a>Méthodes anonymes  
- Un *méthode anonyme* est simplement une méthode qui n’a aucun nom. Méthodes anonymes sont fréquemment utilisés pour passer un bloc de code comme un paramètre de délégué. Résultats de la métrique pour une méthode anonyme qui est déclaré dans un membre, tel qu’une méthode ou un accesseur, sont associés au membre qui déclare la méthode. Ils ne sont pas associés au membre qui appelle la méthode.  
-  
- Pour plus d’informations sur la manière dont la métrique du Code traite les méthodes anonymes, consultez [méthodes anonymes et analyse du Code](../code-quality/anonymous-methods-and-code-analysis.md).  
-  
-## <a name="generated-code"></a>Code généré  
- Certains outils logiciels et les compilateurs génèrent le code qui est ajouté à un projet et dont le développeur ne voit pas ou ne doit pas modifier. Essentiellement, la métrique du Code ignore le code généré lorsqu’il calcule les valeurs de mesures. Ainsi, les valeurs de mesures afin de refléter ce que le développeur peut voir ou modifier.  
-  
- Code généré pour les formulaires de Windows n’est pas ignoré, car il s’agit de code que le développeur peut voir et modifier.  
-  
-## <a name="see-also"></a>Voir aussi  
+    > Dans certains cas, le calcul de la complexité cyclomatic pour une méthode dans [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] diffère des versions antérieures. Pour plus d’informations, consultez la section « modifications de Visual Studio 2010 dans le calcul de complexité du code » de [résolution des problèmes de métriques du code](../code-quality/troubleshooting-code-metrics-issues.md).
+
+- **Profondeur d’héritage** : indique le nombre de définitions de classe qui s’étendent à la racine de la hiérarchie de classes. Plus la hiérarchie est profonde, plus il est difficile de comprendre où des méthodes et des champs particuliers sont définis ou/et redéfinis.
+
+- **Couplage de classe** : mesure le couplage à des classes uniques via des paramètres, des variables locales, des types de retour, des appels de méthode, des instanciations génériques ou de modèle, des classes de base, des implémentations d’interface, des champs définis sur des types externes et un attribut noms. Une bonne conception logicielle impose que les types et les méthodes aient une cohésion élevée et un faible couplage. Le couplage élevé indique une conception qui est difficile à réutiliser et à gérer en raison de ses nombreuses interdépendances sur d’autres types.
+
+- **Lignes de code** : indique le nombre approximatif de lignes dans le code. Le nombre est basé sur le code IL et n’est donc pas le nombre exact de lignes dans le fichier de code source. Un nombre très élevé peut indiquer qu’un type ou une méthode tente de faire trop de travail et doit être fractionné. Il peut également indiquer que le type ou la méthode peut être difficile à gérer.
+
+## <a name="anonymous-methods"></a>Méthodes anonymes
+ Une *méthode anonyme* est simplement une méthode qui n’a pas de nom. Les méthodes anonymes sont le plus souvent utilisées pour passer un bloc de code en tant que paramètre de délégué. Les résultats des métriques pour une méthode anonyme déclarée dans un membre, tel qu’une méthode ou un accesseur, sont associés au membre qui déclare la méthode. Ils ne sont pas associés au membre qui appelle la méthode.
+
+ Pour plus d’informations sur la façon dont les métriques du Code traitent les méthodes anonymes, consultez [méthodes anonymes et analyse du code](../code-quality/anonymous-methods-and-code-analysis.md).
+
+## <a name="generated-code"></a>Code généré
+ Certains outils et compilateurs logiciels génèrent du code qui est ajouté à un projet et qui ne sont pas visibles ou ne doivent pas être modifiés par le développeur du projet. En majorité, les métriques du code ignorent le code généré lorsqu’il calcule les valeurs de métriques. Cela permet aux valeurs de métriques de refléter ce que le développeur peut voir et modifier.
+
+ Le code généré pour Windows Forms n’est pas ignoré, car il s’agit d’un code que le développeur peut voir et modifier.
+
+## <a name="see-also"></a>Voir aussi
  [Mesures de la complexité et de la facilité de maintenance du code managé](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

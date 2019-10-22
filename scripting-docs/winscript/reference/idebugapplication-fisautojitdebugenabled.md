@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::FIsAutoJitDebugEnabled | Microsoft Docs
+title: 'IDebugApplication :: FIsAutoJitDebugEnabled | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f594c5ce48ebd31a265ed438db176c5707d9b079
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9bf97a4d3985dd3dd32e582c689fde0ecd6f52e1
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990862"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574991"
 ---
 # <a name="idebugapplicationfisautojitdebugenabled"></a>IDebugApplication::FIsAutoJitDebugEnabled
-Détermine si un débogueur de (JIT) juste-à-temps est inscrit dans les hôtes stupides automatique-debug.  
+Détermine si un débogueur juste-à-temps (JIT) est inscrit pour les hôtes passifs de débogage automatique.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -34,13 +34,13 @@ BOOL FIsAutoJitDebugEnabled();
 ```  
   
 #### <a name="parameters"></a>Paramètres  
- Cette méthode ne prend aucun paramètre.  
+ Cette méthode n’accepte aucun paramètre.  
   
 ## <a name="return-value"></a>Valeur de retour  
- Si la méthode réussit, et un débogueur JIT est inscrit à des hôtes stupides automatique-debug, la méthode retourne `TRUE`. Sinon, il retourne `FALSE`.  
+ Si la méthode est réussie et qu’un débogueur JIT est inscrit pour les hôtes passifs de débogage automatique, la méthode retourne `TRUE`. Sinon, il retourne `FALSE`.  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode détermine si un débogueur JIT est inscrit auprès des hôtes stupides automatique-debug.  
+ Cette méthode détermine si un débogueur JIT est inscrit pour les hôtes passifs de débogage automatique.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IDebugApplication](../../winscript/reference/idebugapplication-interface.md)

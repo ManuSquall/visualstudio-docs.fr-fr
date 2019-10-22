@@ -6,21 +6,21 @@ ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.assetid: 6b0f72a4-70ca-4e55-b236-2ea1034fd8a7
 caps.latest.revision: 32
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6eb44970cc29198ad9044281e566727a64b893c8
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: a48c01203d2e951e917482de3c0d9c2bec29ae01
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871565"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660570"
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>Extension des tests codés de l'interface utilisateur t enregistrements des actions pour prendre charge Microsoft Excel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 L'infrastructure de test pour les tests codés de l'interface utilisateur et les enregistrements des actions ne prend pas en charge toutes les interfaces utilisateur possibles. Elle risque de ne pas prendre en charge l’interface utilisateur spécifique que vous souhaitez tester. Par exemple, vous ne pouvez pas créer immédiatement un test codé de l'interface utilisateur ou un enregistrement des actions pour une feuille de calcul [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)]. Toutefois, vous pouvez créer votre propre extension de l'infrastructure de test codé de l'interface utilisateur, qui prend en charge votre interface utilisateur spécifique en tirant parti de l'extensibilité de l'infrastructure de test codé de l'interface utilisateur. La rubrique suivante fournit un exemple montrant comment étendre l'infrastructure pour prendre en charge la création de tests codés de l'interface utilisateur et les enregistrements des actions pour [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)]. Pour plus d’informations sur les plateformes prises en charge, consultez [Configurations et plateformes prises en charge pour les tests codés de l’interface utilisateur et les enregistrements des actions](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md).
 
- **Spécifications**
+ **Prérequis**
 
 - Visual Studio Enterprise
 
@@ -47,15 +47,15 @@ L'infrastructure de test pour les tests codés de l'interface utilisateur et les
 ## <a name="details-about-the-sample"></a>Détails de l'exemple
  Les sections suivantes fournissent des informations sur l'exemple et sa structure.
 
-### <a name="microsoft-excel-add-in-excelcodeduiaddinhelper"></a>Complément Microsoft Excel: ExcelCodedUIAddinHelper
+### <a name="microsoft-excel-add-in-excelcodeduiaddinhelper"></a>Complément Microsoft Excel : ExcelCodedUIAddinHelper
  Ce projet comprend un complément qui s'exécute dans le processus Excel. Pour obtenir une vue d’ensemble du projet de complément, consultez [Exemple de complément Excel pour les tests codés de l’interface utilisateur](../test/sample-excel-add-in-for-coded-ui-testing.md).
 
- Pour plus d’informations, consultez [Procédure pas à pas : Création de votre premier complément VSTO pour Excel](https://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f).
+ Pour plus d’informations, consultez [Procédure pas à pas : création de votre premier complément VSTO pour Excel](https://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f).
 
-### <a name="excel-ui-communication-exceluicommunicationhelper"></a>Communication de l’interface utilisateur Excel: ExcelUIcommunicationHelper
+### <a name="excel-ui-communication-exceluicommunicationhelper"></a>Communication de l'interface utilisateur Excel : ExcelUIcommunicationHelper
  Ce projet comprend l'interface `IExcelUICommunication` et les classes d'information utilisées pour passer des données entre l'infrastructure de test codé de l'interface utilisateur et Excel. Pour plus d’informations, consultez [Exemple d’interface Communicator Excel](../test/sample-excel-communicator-interface.md).
 
-### <a name="coded-ui-test-extension-codeduiexentsibilitysample"></a>Extension de test codé de l’interface utilisateur: CodedUIExentsibilitySample
+### <a name="coded-ui-test-extension-codeduiexentsibilitysample"></a>Extension de test codé de l’interface utilisateur : CodedUIExentsibilitySample
  Ce projet comprend les classes personnalisées utilisées dans les tests d'une feuille de calcul Excel. Le code de chacune de ces classes est relativement explicite. Toutefois, nous fournissons une brève description de chaque classe personnalisée. Pour plus d’informations, consultez [Exemple d’extension du test codé de l’interface utilisateur pour Excel](../test/sample-coded-ui-test-extension-for-excel.md).
 
 ### <a name="deploying-your-add-in-and-extension"></a>Déploiement de votre complément et de votre extension

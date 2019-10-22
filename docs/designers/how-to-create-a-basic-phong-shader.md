@@ -1,21 +1,21 @@
 ---
-title: 'Procédure : Créer un nuanceur Phong de base'
+title: 'Comment : créer un nuanceur Phong de base'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c7c69da8-142b-4d3b-9be9-4be0d5970b25
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 895b797ad07018a9f4d4bf4c14b7f358a26f8eaa
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 5141df9f7504229733a269c2f7b0f94903064d8f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924410"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635942"
 ---
-# <a name="how-to-create-a-basic-phong-shader"></a>Procédure : Créer un nuanceur Phong de base
+# <a name="how-to-create-a-basic-phong-shader"></a>Guide pratique pour créer un nuanceur Phong de base
 
 Cet article montre comment utiliser le concepteur Shader et DGSL (Directed Graph Shader Language) pour créer un nuanceur d’éclairage implémentant le modèle d’éclairage Phong classique.
 
@@ -25,7 +25,7 @@ Le modèle d’éclairage Phong étend le modèle d’éclairage Lambert pour in
 
 Pour plus d’informations sur le modèle d’éclairage Lambert, consultez [Guide pratique pour créer un nuanceur Lambert de base](../designers/how-to-create-a-basic-lambert-shader.md).
 
-Avant de commencer, assurez-vous que la fenêtre **Propriétés** et la **Boîte à outils** sont affichées.
+Avant de commencer, veillez à ce que la fenêtre **Propriétés** et la **Boîte à outils** soient affichées.
 
 1. Créez un nuanceur Lambert en suivant les étapes décrites dans [Guide pratique pour créer un nuanceur Lambert de base](../designers/how-to-create-a-basic-lambert-shader.md).
 
@@ -61,8 +61,8 @@ Pour plus d’informations sur l’application d’un nuanceur à un modèle 3D,
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Guide pratique pour appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Guide pratique pour appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [Guide pratique pour exporter un nuanceur](../designers/how-to-export-a-shader.md)
 - [Guide pratique pour créer un nuanceur Lambert de base](../designers/how-to-create-a-basic-lambert-shader.md)
-- [Concepteur Shader](../designers/shader-designer.md)
+- [Concepteur de nuanceur](../designers/shader-designer.md)
 - [Nœuds du concepteur Shader](../designers/shader-designer-nodes.md)

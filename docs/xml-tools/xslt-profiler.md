@@ -1,48 +1,48 @@
 ---
-title: Performances de XSLT
+title: Performances XSLT
 ms.date: 03/05/2019
 ms.topic: conceptual
 ms.assetid: 87387c9a-2e89-4801-ad51-83740cd6ea25
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ecc5482c8519ceadfe1e6d5db7880c98b3d2ceb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2866e9b19ea2b79bf8435d81c93443bb20ff4fec
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62988044"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645908"
 ---
-# <a name="the-xslt-profiler"></a>Le XSLT Profiler
+# <a name="the-xslt-profiler"></a>Profileur XSLT
 
 Le Générateur de profils XSLT crée des rapports de performances XSLT détaillés qui vous permettent de mesurer, d'évaluer et de cibler les problèmes liés aux performances dans le code XSLT. Le Générateur de profils XSLT inclut des conseils utiles pour les optimisations de feuille de style XSL et XSLT. Pour les applications XSLT qui demandent des performances maximales, cet outil peut être essentiel.
 
-Le XSLT Profiler fait partie de Visual Studio et est disponible sur le **XML** menu.
+Le profileur XSLT fait partie de Visual Studio et est disponible dans le menu **XML** .
 
 ![Profileur XSLT](../xml-tools/media/profile-xslt-menu.png)
 
 > [!NOTE]
-> Le XSLT Profiler est uniquement disponible dans l’édition Enterprise de Visual Studio.
+> Le profileur XSLT est uniquement disponible dans l’édition Enterprise de Visual Studio.
 
 ## <a name="create-a-performance-report"></a>Créer un rapport de performances
 
 1. Ouvrez un document XSLT dans Visual Studio.
 
-2. Dans la barre de menus, choisissez **XML** > **profil XSLT**.
+2. Dans la barre de menus, choisissez **XML**  > **Profil XSLT**.
 
 3. Fournissez un document XML d'entrée. Si un document XML n'est pas déjà ouvert, vous êtes invité à entrer le fichier.
 
    L'analyse démarre, et une barre de progression affiche la progression dans l'éditeur. La sortie XSLT est également visible.
 
-4. Après la fin de la session de performance, vérifiez le rapport de performances pour analyser les performances de XSLT.
+4. Une fois la session de performance terminée, vérifiez le rapport de performances pour analyser les performances de XSLT.
 
-## <a name="get-all-available-views"></a>Obtenir toutes les vues disponibles
+## <a name="get-all-available-views"></a>Obtient toutes les vues disponibles
 
-1. Cliquez sur le **affichage actuel** liste déroulante pour obtenir toutes les vues disponibles.
+1. Cliquez sur la liste déroulante **affichage actuel** pour obtenir toutes les vues disponibles.
 
-2. Sélectionnez le **vue Résumé** option dans le **affichage actuel** liste déroulante. Par défaut, un rapport de performances est affiché dans le **vue Résumé**. Cette vue sert de point de départ pour déterminer les problèmes de performances avec les documents XSLT. Le **vue Résumé** répertorie les points de données suivants :
+2. Sélectionnez l’option **vue Résumé** dans la liste déroulante **affichage actuel** . Par défaut, un rapport de performances est affiché dans la **vue Résumé**. Cette vue sert de point de départ pour déterminer les problèmes de performances avec les documents XSLT. Le **mode Résumé** répertorie les points de données suivants :
 
    - Majorité des fonctions appelées
 
@@ -50,9 +50,9 @@ Le XSLT Profiler fait partie de Visual Studio et est disponible sur le **XML** m
 
    - Fonctions les plus longues à exécuter
 
-   Par défaut, il y a trois colonnes pour chaque point de données : le nom de la fonction, le nombre d'appels en valeur absolue, et une valeur en pourcentage de la fonction nommée par rapport au nombre total d'appels de fonction. À partir de données de chaque point dans le **vue Résumé**, vous pouvez accéder à des vues plus détaillées en cliquant sur les points de données de fonction.
+   Par défaut, il y a trois colonnes pour chaque point de données : le nom de la fonction, le nombre d'appels en valeur absolue, et une valeur en pourcentage de la fonction nommée par rapport au nombre total d'appels de fonction. À partir de chaque point de données dans la **vue Résumé**, vous pouvez accéder à des vues plus détaillées en cliquant avec le bouton droit sur les points de données de la fonction.
 
-3. Sélectionnez le **affichage fonction** option dans le **affichage actuel** liste déroulante. Le **affichage fonction** répertorie les fonctions appelées lors du profilage. Vous pouvez trier les données en cliquant sur un nom de colonne. Les colonnes affichées par défaut sont les suivantes :
+3. Sélectionnez l’option **affichage des fonctions** dans la liste déroulante **affichage actuel** . La **vue fonction** répertorie les fonctions appelées lors du profilage. Vous pouvez trier les données en cliquant sur un nom de colonne. Les colonnes affichées par défaut sont les suivantes :
 
     - **Nom de la fonction**
 
@@ -66,19 +66,19 @@ Le XSLT Profiler fait partie de Visual Studio et est disponible sur le **XML** m
 
     - **Nombre d’appels**
 
-   Toutes les colonnes d'heure sont affichées en valeurs absolues et en pourcentages. Le terme **exclusif** fait référence à la durée totale, une fonction passé à l’exécution exclusion de temps passé par d’autres fonctions appelée pendant l’exécution de cette fonction.
+   Toutes les colonnes d'heure sont affichées en valeurs absolues et en pourcentages. Le terme **exclusive** fait référence au temps total passé par une fonction à exécuter un temps d’exécution exclusif passé par d’autres fonctions appelées pendant l’exécution de cette fonction.
 
-   Le terme **inclusif** fait référence au temps total d’une fonction de l’exécution, y compris le temps d’exécution de toutes les fonctions appelées et qu’aucune de ces fonctions appelées appelé autres fonctions.
+   Le terme **inclus** fait référence à la durée totale d’exécution d’une fonction, y compris la durée d’exécution de toutes les fonctions qu’elle a appelées et si l’une de ces fonctions appelées est appelée autres fonctions.
 
 ## <a name="select-callercallee-view"></a>Sélectionner la vue Appelant/Appelé
 
-Sélectionnez **appelant/appelé** afficher dans le **affichage actuel** liste déroulante. Le **appelant/appelé** vue possède trois parties distinctes suivantes :
+Sélectionnez la vue **appelant/appelé** dans la liste déroulante **affichage actuel** . La vue **appelant/appelé** comprend les trois parties distinctes suivantes :
 
-- **Fonctions qui ont appelé**: Toutes les fonctions qui ont appelé une fonction particulière sont répertoriées dans la partie supérieure de la vue.
+- **Fonctions qui ont appelé**: toutes les fonctions qui ont appelé une fonction particulière sont répertoriées dans la partie supérieure de la vue.
 
-- **Fonction active**: La fonction particulière qui a été appelée est répertoriée dans la partie centrale de la vue.
+- **Fonction active**: la fonction particulière qui a été appelée est indiquée dans la partie centrale de la vue.
 
-- **Fonctions qui ont été appelées par**: Toutes les fonctions qui ont été appelées par la fonction particulière sont répertoriées dans la partie inférieure de la vue.
+- **Fonctions qui ont été appelées par**: toutes les fonctions qui ont été appelées par la fonction particulière sont répertoriées dans la partie inférieure de la vue.
 
 Si une fonction nommée `SyncToNavigator` apparaît dans la partie centrale de la vue, toutes les fonctions qui ont appelé la fonction `SyncToNavigator` s'affichent dans la partie supérieure de la vue et toutes les fonctions appelées par la fonction `SyncToNavigator` s'affichent dans la partie inférieure de la vue.
 
@@ -86,26 +86,26 @@ Si une fonction nommée `SyncToNavigator` apparaît dans la partie centrale de l
 
 - Vous pouvez aussi trier les données en cliquant sur les noms de colonnes.
 
-## <a name="select-call-tree-view"></a>Sélectionnez la vue arborescence des appels
+## <a name="select-call-tree-view"></a>Sélectionner la vue de l’arborescence des appels
 
-- Sélectionnez **vue arborescence des appels** dans le **affichage actuel** liste déroulante. Cette vue est une arborescence de l’exécution du programme.
+- Sélectionnez **vue arborescence des appels** dans la liste déroulante **affichage actuel** . Cette vue est une arborescence de l’exécution du programme.
 
-   Le **vue arborescence des appels** affiche la racine de l’arborescence en tant que le nom du processus. Les fonctions sont les nœuds de l'arborescence. Cette vue vous permet d'explorer des traces d'appels spécifiques et d'analyser les traces qui affectent le plus les performances. La vue est similaire à la **vue pile des appels** disponible pendant le débogage. En plus des colonnes dans le **fonction vue**, dans le **vue arborescence des appels**, il existe une colonne supplémentaire pour afficher le **nom du Module**.
+   La **vue arborescence des appels** affiche la racine de l’arborescence en tant que nom de processus. Les fonctions sont les nœuds de l'arborescence. Cette vue vous permet d'explorer des traces d'appels spécifiques et d'analyser les traces qui affectent le plus les performances. La vue est similaire à la **vue** de la pile des appels disponible pendant le débogage. En plus des colonnes de l' **affichage des fonctions**, dans la **vue arborescence des appels**, il existe une colonne supplémentaire pour afficher le nom du **module**.
 
-- Sélectionnez **marques** dans le **affichage actuel** liste déroulante.
+- Sélectionnez **marques** dans la liste déroulante **affichage actuel** .
 
-   Avec le XSLT Profiler, des marques apparaissent dans le flux de collecte de données avec un commentaire associé. Les marques sont emplacements dans le code qui ont des compteurs. Lorsque vous indiquez au Générateur de profils SLT de collecter des compteurs de performance XSLT, ceux-ci sont collectés chaque fois que l'une de ces marques est exécutée. Les données sont affichées dans une table qui contient le **ID de marque**, **nom de la marque** (**démarrer le programme**, **fin du programme**) et le  **Horodatage**. Les marques ne sont pas regroupées et apparaissent dans l’ordre chronologique dans le **vue marques** du rapport de performances.
+   Avec le profileur XSLT, il existe des marques qui s’affichent dans le flux de collecte de données avec un commentaire associé. Les marques sont emplacements dans le code qui ont des compteurs. Lorsque vous indiquez au Générateur de profils SLT de collecter des compteurs de performance XSLT, ceux-ci sont collectés chaque fois que l'une de ces marques est exécutée. Les données sont affichées dans un tableau contenant l' **ID de marque**, le **nom de marque** (**programme de démarrage**, le **programme final**) et l' **horodatage**. Les marques ne sont pas agrégées et apparaissent dans l’ordre chronologique dans la **vue marques** du rapport de performances.
 
 ## <a name="select-modules-in-the-current-view"></a>Sélectionner des modules dans l'affichage actuel
 
-- Sélectionnez **Modules** dans le **affichage actuel** liste déroulante.
+- Sélectionnez **modules** dans la liste déroulante **affichage actuel** .
 
-   La vue de modules est une liste plate de toutes les fonctions agrégées au niveau du module. Développez ou réduisez le nom du module pour afficher ou fermer la vue des données de performances du module. Vous pouvez trier les données en cliquant sur un nom de colonne. Par défaut, il existe des valeurs absolues et des pourcentages **temps inclusif écoulé**, **temps exclusif écoulé**, **temps inclusif d’Application**, **Temps exclusif d’application**, et **nombre d’appels**.
+   La vue de modules est une liste plate de toutes les fonctions agrégées au niveau du module. Développez ou réduisez le nom du module pour afficher ou fermer la vue des données de performances du module. Vous pouvez trier les données en cliquant sur un nom de colonne. Par défaut, il existe à la fois des valeurs absolues et des nombres de pourcentages pour le **temps inclusif écoulé**, temps **exclusif écoulé**, temps **inclusif d’application**, **temps exclusif d’application**et **nombre d’appels**.
 
-- Sélectionnez **processus** dans le **affichage actuel** liste déroulante.
+- Sélectionnez **processus** dans la liste déroulante **affichage actuel** .
 
-   La vue processus affiche une table qui inclut le **ID de processus**, **nom de processus**, **heure de début**et le **heure de fin**. Vous pouvez trier les données en cliquant sur les noms de colonnes.
+   La vue processus affiche une table qui comprend l' **ID de processus**, le **nom de processus**, l’heure de **début**et l' **heure de fin**. Vous pouvez trier les données en cliquant sur les noms de colonnes.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Procédure pas à pas : À l’aide de XSLT hierarchy](../xml-tools/walkthrough-using-xslt-hierarchy.md)
+- [Procédure pas à pas : utilisation de la hiérarchie XSLT](../xml-tools/walkthrough-using-xslt-hierarchy.md)

@@ -1,5 +1,5 @@
 ---
-title: Un nombre positif fini doit être assigné à la longueur de tableau | Microsoft Docs
+title: Un nombre positif fini doit être assigné à la longueur du tableau | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,19 +14,19 @@ ms.assetid: c51c66a4-a543-4e95-b18d-2cfbcb3d1fdd
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 39f2720efbcd8defffb9d0c77047a50e57939e95
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cff9c8c42199e106cca5f6f2808866e46a26afe2
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818044"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576063"
 ---
 # <a name="array-length-must-be-assigned-a-finite-positive-number"></a>Un entier positif fini doit être assigné la longueur du tableau
-Lors de la définition du **longueur** propriété d’un existant **tableau** objet, que vous avez spécifié une longueur de tableau qui n’était pas un nombre positif ou zéro. Cette erreur se produit lorsque vous affectez une valeur à la **longueur** propriété d’un `Array` objet qui est un nombre négatif ou une valeur non numérique (`NaN`). Notez que [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] convertit automatiquement les nombres fractionnaires en entiers.  
+Lors de la définition de la propriété **Length** d’un objet **tableau** existant, vous avez spécifié une longueur de tableau qui n’était pas un nombre positif ou zéro. Cette erreur se produit lorsque vous affectez une valeur à la propriété **Length** d’un objet `Array` qui est négatif ou non un nombre (`NaN`). Notez que [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] convertit automatiquement les nombres fractionnaires en entiers entiers.  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
-- Affecter un nombre entier positif à la propriété length. Il n’existe aucune limite supérieure pour la taille d’un tableau, autre que la valeur d’entier maximal (environ 4 milliards). L’exemple suivant illustre la façon correcte de définir la **longueur** propriété d’un **tableau** objet.  
+- Attribuez un nombre entier positif à la propriété Length. Il n’y a aucune limite supérieure pour la taille d’un tableau, autre que la valeur entière maximale (environ 4 milliards). L’exemple suivant illustre la méthode correcte pour définir la propriété **Length** d’un objet **Array** .  
   
     ```JavaScript  
     var my_array = new Array();  

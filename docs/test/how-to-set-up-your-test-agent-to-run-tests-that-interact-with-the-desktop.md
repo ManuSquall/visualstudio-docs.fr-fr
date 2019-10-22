@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - agents, configuring for interaction with desktop
 ms.assetid: 3a94dd07-6d17-402c-ae8f-7947143755c9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 04b1a894fbeb20059b79e65327ed8a7d18730e01
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 55cf32d138d2644e2d2a7a08406eb575a2895400
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62785992"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653426"
 ---
-# <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Procédure : Configurer votre agent de test pour exécuter des tests qui interagissent avec le Bureau
+# <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Guide pratique pour configurer votre agent de test afin d’exécuter des tests qui interagissent avec le Bureau
 
 Si vous souhaitez exécuter des tests automatisés qui interagissent avec le bureau, vous devez configurer votre agent pour qu'il s'exécute en tant que processus au lieu de service. Par exemple, si vous voulez exécuter à distance un test codé de l'interface utilisateur à l'aide d'un contrôleur de test et d'un agent de test, ou si vous voulez exécuter un test et capturer un enregistrement vidéo lorsque vous l'exécutez, vous devez configurer votre agent pour qu'il s'exécute en tant que processus. Quand vous attribuez un rôle à des agents dans vos paramètres de test avec Visual Studio ou dans votre environnement avec Microsoft Test Manager, vous devez modifier la configuration de tous les agents affectés à des rôles qui sont amenés à interagir avec le poste de travail.
 
@@ -38,7 +38,7 @@ Utilisez la procédure suivante pour configurer les agents assignés à un rôle
 
 1. Pour configurer l'agent de test que vous avez installé afin qu'il s'exécute en tant que processus, accédez à **Démarrer** > **Outil de configuration de Test Agent**.
 
-   La boîte de dialogue **Configurer l’agent de test** s’affiche.
+   La boîte de dialogue **Configurer Test Agent** s’affiche.
 
    ![Configurer Visual Studio Test Agent](media/configure-test-agent.png)
 

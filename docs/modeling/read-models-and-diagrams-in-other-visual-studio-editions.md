@@ -5,45 +5,45 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - models, versions of Visual Studio
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d8366c0f87830a77f550dabbce2e8f875171418
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 33ae88358d77ac7c70a74cecb879eef3c4ca8b8c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823979"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658110"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Lire des modèles et des diagrammes dans d'autres éditions de Visual Studio
 
 Quand vous ouvrez un modèle dans une version de Visual Studio qui ne prend pas en charge la création de modèle, le modèle s'ouvre en mode lecture seule. Dans ce mode, vous pouvez modifier la disposition des diagrammes, mais vous ne pouvez pas modifier le modèle.
 
-Pour connaître les versions de Visual Studio prennent en charge la création de modèles, consultez [versions prises en charge pour l’architecture et les outils de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Pour connaître les versions de Visual Studio qui prennent en charge la création de modèles, consultez [prise en charge des versions pour les outils d’architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="obtaining-access-to-a-model-and-diagrams"></a>Obtention de l'accès à un modèle et à des diagrammes
 
-Pour lire un diagramme de dépendances, vous devez tout d’abord utiliser Visual Studio pour ouvrir le projet de modélisation et puis ouvrez le schéma qu’il contient.
+Pour lire un diagramme de dépendance, vous devez d’abord utiliser Visual Studio pour ouvrir le projet de modélisation, puis ouvrir le diagramme à l’intérieur de celui-ci.
 
-Pour cette raison, si vous souhaitez lire un diagramme de dépendances, vous devez également accéder au projet de modélisation dans lequel il a été créé. Faire cela en accédant au projet à partir du contrôle de code source, ou en obtenant une copie des fichiers du projet.
+Pour cette raison, si vous souhaitez lire un diagramme de dépendances, vous devez également avoir accès au projet de modélisation dans lequel il a été créé. Pour ce faire, vous pouvez accéder au projet à partir du contrôle de code source ou obtenir une copie des fichiers projet.
 
 > [!NOTE]
 > Cela ne s'applique pas aux cartes de code et aux diagrammes de classe .NET générés à partir du code. Ces diagrammes peuvent être affichés indépendamment d'un projet de modélisation.
 
-Pour lire un diagramme de dépendances, l’ensemble minimal de fichiers dont vous avez besoin est la suivante :
+Pour lire un diagramme de dépendance, l’ensemble minimal de fichiers dont vous avez besoin est le suivant :
 
-- Les deux fichiers de diagrammes pour le diagramme que vous souhaitez lire, par exemple, **MyDiagram.classdiagram and MyDiagram.classdiagram.layout**.
+- Les deux fichiers de diagramme du diagramme que vous souhaitez lire, par exemple, **mondiagramme. classdiagram et mondiagramme. classdiagram. Layout**.
 
     > [!NOTE]
-    > Pour les diagrammes de dépendance, vous devez également avoir le fichier nommé _Mondiagramme_**. layerdiagram.suppressions**.
+    > Pour les diagrammes de dépendance, vous devez également avoir le fichier nommé _mondiagramme_ **. layerdiagram. Suppress**.
 
-- Fichier de projet de modélisation (**MyModel.modelproj**)
+- Fichier de projet de modélisation (**MyModel. modelproj**)
 
-- Le fichier de modèle racine (**ModelDefinition\MyModel.uml**)
+- Fichier de modèle racine (**ModelDefinition\MyModel.Uml**)
 
-- Les fichiers de package pour tout package référencé dans le diagramme (**ModelDefinition\MyPackage.UML**)
+- Fichiers de package pour tous les packages référencés dans le diagramme (**ModelDefinition\MyPackage.Uml**)
 
 ## <a name="changes-that-you-can-make-in-read-only-mode"></a>Modifications que vous pouvez apporter en mode lecture seule
 
@@ -53,9 +53,9 @@ Si vous ouvrez un modèle et ses diagrammes dans une version de Visual Studio qu
 
 - développer et réduire des formes.
 
-Vous pouvez enregistrer ces modifications. Si vous souhaitez rendre visibles à d’autres utilisateurs vos modifications, vous devez envoyer au moins la mise à jour **.layout** fichiers.
+Vous pouvez enregistrer ces modifications. Si vous souhaitez que vos modifications soient visibles par d’autres utilisateurs, vous devez au moins envoyer les fichiers **. Layout** mis à jour.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Diagrammes de dépendance : Informations de référence](../modeling/layer-diagrams-reference.md)
+- [Diagrammes de dépendance : référence](../modeling/layer-diagrams-reference.md)
 - [Créer des modèles pour votre application](../modeling/create-models-for-your-app.md)

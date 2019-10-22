@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - developer community privacy
 - privacy, developer community
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a40cbc30850edc96b569bd8d716b14b5d2035089
-ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
+ms.openlocfilehash: d1856d6421dc61ada2f3040e4fdeed880a6ab201
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71273394"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652480"
 ---
 # <a name="developer-community-data-privacy"></a>Confidentialité des données de la communauté des développeurs
 
@@ -71,7 +71,7 @@ Si **Signaler un problème** est lancé à partir de Visual Studio, nous collect
 - Windows Forms les journaux, s’ils existent
 
 - Une capture d’écran, si vous choisissez de l’inclure
-  
+
 - Les données d’enregistrement, si vous choisissez d’inclure un enregistrement, qui comprennent :
 
   - Les étapes pour reproduire le problème.
@@ -81,9 +81,9 @@ Si **Signaler un problème** est lancé à partir de Visual Studio, nous collect
   - Le fichier dump.
 
 > [!NOTE]
-> Les fichiers journaux, les captures d’écran et les données d’enregistrement sont envoyés à Microsoft uniquement lorsque vous fournissez une autorisation en soumettant le rapport de problème avec lequel ils sont inclus. Vous pouvez voir quels fichiers sont inclus dans l’étape « Résumé » de la fenêtre « signaler un problème » (voir la capture d’écran incluse dans cette note). Les journaux et les fichiers collectés sont stockés dans le dossier% Temp% et sont nettoyés régulièrement et après chaque téléchargement. Si vous ne souhaitez pas inclure de journal dans votre rapport de problème, supprimez le fichier du dossier% Temp% avant d’envoyer le rapport.  
-  > ![Signaler un problème-Résumé des journaux collectés](media/report-a-problem-logs-collected.png)
- 
+> Les fichiers journaux, les captures d’écran et les données d’enregistrement sont envoyés à Microsoft uniquement lorsque vous fournissez une autorisation en soumettant le rapport de problème avec lequel ils sont inclus. Vous pouvez voir quels fichiers sont inclus dans l’étape « Résumé » de la fenêtre « signaler un problème » (voir la capture d’écran incluse dans cette note). Les journaux et les fichiers collectés sont stockés dans le dossier% Temp% et sont nettoyés régulièrement et après chaque téléchargement. Si vous ne souhaitez pas inclure de journal dans votre rapport de problème, supprimez le fichier du dossier% Temp% avant d’envoyer le rapport.
+  > ![Report un problème : synthèse des journaux collectés ](media/report-a-problem-logs-collected.png)
+
 
 ## <a name="see-also"></a>Voir aussi
 

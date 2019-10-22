@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Spécifier des événements de build (C#)'
+title: Guide pratique pour spécifier des événements de build (C#)
 ms.date: 03/21/2019
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -15,14 +15,14 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9484d6977c6896253197215ce185579518448da8
-ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
-ms.translationtype: HT
+ms.openlocfilehash: a28f491ea5af53546f66e066bf8f78575708bc57
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68483706"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656584"
 ---
-# <a name="how-to-specify-build-events-c"></a>Procédure : Spécifier des événements de build (C#)
+# <a name="how-to-specify-build-events-c"></a>Guide pratique pour spécifier des événements de build (C#)
 
 Utilisez des événements de build pour spécifier des commandes à exécuter avant que la génération commence ou après qu’elle se termine. Les événements de build ne s’exécutent que si la build atteint ces étapes du processus de génération.
 
@@ -56,7 +56,7 @@ Quand un projet est généré, les événements pré-build sont ajoutés à un f
    > [!NOTE]
    > Si votre événement pré-build ou post-build ne s’exécute pas correctement, vous pouvez terminer la génération en faisant en sorte que l’action d’événement s’achève avec un code autre que zéro (0), qui indique une action réussie.
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
 
 La procédure suivante montre comment définir la version minimale du système d’exploitation dans le manifeste de l’application à l’aide d’une commande *.exe* appelée à partir d’un événement postbuild (fichier *.exe.manifest* dans le répertoire du projet). La version minimale du système d’exploitation est un nombre en quatre parties, tel que 4.10.0.0. Pour définir la version minimale du système d’exploitation, la commande modifie la section `<dependentOS>` du manifeste :
 
@@ -72,7 +72,7 @@ La procédure suivante montre comment définir la version minimale du système d
 
 1. Créez un projet **Application console** pour la commande. Nommez le projet **ChangeOSVersionCS**.
 
-2. Dans *Program.cs*, ajoutez la ligne suivante aux autres instructions `using` au début du fichier :
+2. Dans *Program.cs*, ajoutez la ligne suivante aux autres directives `using` en haut du fichier :
 
    ```csharp
    using System.Xml;

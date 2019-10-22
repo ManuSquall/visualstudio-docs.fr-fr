@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Command mode in Command window
 - IDE Command window
 ms.assetid: 48711628-1909-4713-a73e-d7b714c77f8a
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fe707d82354a8c947dfa89a7323b41a489d0fa8
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 4d89b06c406d0495a5699f707c85b4e9e9b3a804
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919305"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654590"
 ---
 # <a name="command-window"></a>Commande, fenêtre
 La fenêtre **Commande** est utilisée pour exécuter des commandes ou des alias directement dans l’environnement de développement intégré (IDE) [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Vous pouvez exécuter à la fois les commandes de menu et les commandes qui n’apparaissent dans aucun menu. Pour afficher la fenêtre **Commande**, sélectionnez **Autres fenêtres** dans le menu **Affichage** et choisissez **Fenêtre Commande**.
@@ -44,7 +44,7 @@ Les deux versions de cette commande retournent la valeur de la variable `varA`.
 ## <a name="entering-commands"></a>Entrée de commandes
 Le symbole supérieur à (`>`) apparaît à gauche de la fenêtre Commande comme une invite pour les nouvelles lignes. Utilisez les touches de direction HAUT et BAS pour faire défiler les commandes précédemment émises.
 
-|Tâche|Solution|Exemples|
+|Tâche|Solution|Exemple|
 |----------|--------------|-------------|
 |Évaluer une expression.|Faites précéder l’expression d’un point d’interrogation (`?`).|`? myvar`|
 |Basculer vers une fenêtre Exécution.|Entrez `immed` dans la fenêtre sans le signe supérieur à (>)|`immed`|
@@ -107,7 +107,7 @@ La présence d’un signe d’insertion (^) dans une ligne de commande signifie 
 Un accent circonflexe fonctionne de la même façon, qu’il soit à l’intérieur ou en dehors des guillemets. Si un accent circonflexe est le dernier caractère de la ligne, il est ignoré. L’exemple illustré ici montre comment rechercher le modèle « ^t ».
 
 ## <a name="use-quotes-for-path-names-with-spaces"></a>Utiliser des guillemets pour les noms de chemin avec des espaces
-Si, par exemple, vous souhaitez ouvrir un fichier dont le chemin contient des espaces, vous devez placer des guillemets doubles autour du chemin ou du segment de chemin contenant des espaces : **C:\\"Program Files"** ou **"C:\Program Files"** .
+Si, par exemple, vous souhaitez ouvrir un fichier qui possède un chemin contenant des espaces, vous devez placer des guillemets doubles autour du chemin ou du segment de chemin contenant des espaces : **C:\\"Program Files"** ou **"C:\Program Files"** .
 
 ## <a name="see-also"></a>Voir aussi
 

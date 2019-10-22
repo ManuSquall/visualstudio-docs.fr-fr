@@ -11,39 +11,35 @@ helpviewer_keywords:
 - Debug.SetCurrentThread command
 ms.assetid: 9917ed1d-6c30-4d94-b2f0-69acce74f1b2
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 107303082202cb1dbb162ef9dfb845c2f6564df4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 67bf0d37e6f734fa4b3229488bc3eee2732c3063
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68163331"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665442"
 ---
 # <a name="set-current-thread-command"></a>Définir le thread en cours, commande
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Définit le thread spécifié comme thread actuel.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```  
-Debug.SetCurrentThread index  
-```  
-  
-## <a name="arguments"></a>Arguments  
- `index`  
- Obligatoire. Sélectionne un thread par son index.  
-  
-## <a name="example"></a>Exemples  
-  
-```  
->Debug.SetCurrentThread 1  
-```  
-  
-## <a name="see-also"></a>Voir aussi  
- [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)   
- [Fenêtre Commande](../../ide/reference/command-window.md)   
- [Zone Rechercher/Commande](../../ide/find-command-box.md)   
- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+Définit le thread spécifié comme thread actuel.
+
+## <a name="syntax"></a>Syntaxe
+
+```
+Debug.SetCurrentThread index
+```
+
+## <a name="arguments"></a>Arguments
+ `index` Obligatoire. Sélectionne un thread par son index.
+
+## <a name="example"></a>Exemples
+
+```
+>Debug.SetCurrentThread 1
+```
+
+## <a name="see-also"></a>Voir aussi
+ [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md) [fenêtre commande](../../ide/reference/command-window.md) [Rechercher/zone de commande](../../ide/find-command-box.md) [alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

@@ -18,15 +18,15 @@ helpviewer_keywords:
 - Load Test Viewer, tables
 - load tests, results tables
 ms.assetid: 0a84bda3-6051-45eb-9c7f-d57419e1f97d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5ab2fe1f01aceb7b86d52f26d904a99f762f4329
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: f6410129d32e521adeda4b31e4b3a0f6aca903fd
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926479"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665387"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>Analyser les résultats et les erreurs des tests de charge dans la vue Tables de l’analyseur de test de charge
 
@@ -52,8 +52,8 @@ Le tableau suivant répertorie les tables disponibles pour analyser des séries 
 
 |Nom de la table|Description|
 |-|-|
-|Erreurs|Affiche une liste des erreurs qui se sont produites pendant la série de tests de charge. Pour plus d’informations, consultez [Table Erreurs](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-errors-table) dans cette rubrique, et [Analyser les résultats des tests de charge](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|
-|Pages|Affiche une liste de pages consultées pendant une série de tests de charge. Certaines données de cette table ne sont disponibles qu'à l'issue d'un test de charge. Pour plus d'informations, voir [Procédure : afficher le temps de réponse d’une page web](../test/how-to-view-web-page-response-time-in-a-load-test.md).|
+|Errors|Affiche une liste des erreurs qui se sont produites pendant la série de tests de charge. Pour plus d’informations, consultez [Table Erreurs](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-errors-table) dans cette rubrique, et [Analyser les résultats des tests de charge](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|
+|Pages|Affiche une liste de pages consultées pendant une série de tests de charge. Certaines données de cette table ne sont disponibles qu'à l'issue d'un test de charge. Pour plus d’informations, consultez [Guide pratique pour afficher la réponse d’une page web](../test/how-to-view-web-page-response-time-in-a-load-test.md).|
 |Demandes|Affiche des détails relatifs aux demandes émises pendant un test de charge. Cela inclut toutes les demandes HTTP et les demandes dépendantes, telles que les images. Pour plus d’informations, consultez [Table Requêtes](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-requests-table) dans cette rubrique.|
 |Trace SQL|Affiche les résultats du traçage SQL. Cette table n'est disponible qu'à l'issue d'un test de charge et uniquement si le traçage SQL a été utilisé pendant le test. Pour plus d’informations, consultez [Table Données de trace SQL](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-sql-trace-data-table) dans cette rubrique.|
 |Tests|Affiche des détails relatifs aux tests exécutés pendant un test de charge. Pour plus d’informations, consultez [Table Tests](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-tests-table) dans cette rubrique.|
@@ -64,7 +64,7 @@ Le tableau suivant répertorie les tables disponibles pour analyser des séries 
 
 ## <a name="collect-percentile-data"></a>Collecter les données de centile
 
-Certaines tables de tests de charge peuvent contenir des colonnes supplémentaires, incluant des données de centile et des temps de réponse répartis dans des groupes selon l'émulation du réseau. Par défaut, ces données ne sont pas collectées. Les données de centile ne seront disponibles que si vous avez enregistré les résultats dans une base de données, et non localement. Pour plus d’informations, consultez [Gestion des résultats des tests de charge dans le dépôt des résultats de tests de charge](../test/manage-load-test-results-in-the-load-test-results-repository.md). En outre, pour collecter ces données, dans **l’éditeur de test de charge**, sous le nœud **Paramètres d’exécution**, sélectionnez le nœud Paramètre d’exécution à modifier. Dans la fenêtre **Propriétés**, pour la propriété **Stockage des détails de minuterie**, sélectionnez **StatisticsOnly** ou **AllIndividualDetails**. Pour plus d'informations, voir [Procédure : afficher le temps de réponse d’une page web](../test/how-to-view-web-page-response-time-in-a-load-test.md).
+Certaines tables de tests de charge peuvent contenir des colonnes supplémentaires, incluant des données de centile et des temps de réponse répartis dans des groupes selon l'émulation du réseau. Par défaut, ces données ne sont pas collectées. Les données de centile ne seront disponibles que si vous avez enregistré les résultats dans une base de données, et non localement. Pour plus d’informations, consultez [Gestion des résultats des tests de charge dans le dépôt des résultats de tests de charge](../test/manage-load-test-results-in-the-load-test-results-repository.md). En outre, pour collecter ces données, dans **l’éditeur de test de charge**, sous le nœud **Paramètres d’exécution**, sélectionnez le nœud Paramètre d’exécution à modifier. Dans la fenêtre **Propriétés**, pour la propriété **Stockage des détails de minuterie**, sélectionnez **StatisticsOnly** ou **AllIndividualDetails**. Pour plus d’informations, consultez [Guide pratique pour afficher la réponse d’une page web](../test/how-to-view-web-page-response-time-in-a-load-test.md).
 
 ## <a name="the-requests-table"></a>Table Requêtes
 
@@ -116,7 +116,7 @@ La table **Transactions** affiche une liste des transactions qui se sont produit
 Le tableau suivant répertorie les colonnes de la table **Transactions**.
 
 > [!NOTE]
-> Pour afficher toutes les colonnes, vous devez activer la propriété Stockage des détails de minuterie associée au paramètre d'exécution actif. Pour plus d'informations, voir [Procédure : spécifier la propriété de stockage des détails de minuterie](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
+> Pour afficher toutes les colonnes, vous devez activer la propriété Stockage des détails de minuterie associée au paramètre d'exécution actif. Pour plus d’informations, consultez [Guide pratique pour spécifier la propriété de stockage des détails de minuterie](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
 
 |Colonne|Description|Visible sans les détails de minuterie|
 |-|-|-|
@@ -126,13 +126,13 @@ Le tableau suivant répertorie les colonnes de la table **Transactions**.
 |**Total**|Nombre total de transactions émises pendant la série de tests de charge.|Oui|
 |**Temps de transaction**|Durée d'exécution de la transaction pendant une série de tests de charge. Dans le cas des tests de performances web, le temps de réflexion est compris dans le calcul. Les unités sont les secondes.|Non|
 |**Temps de réponse**|Temps de réponse de la transaction de test de performances web dans une série de tests de charge. Le temps de réponse diffère du temps de transaction dans le fait qu'il ne comprend pas le temps de réflexion écoulé durant la transaction. Les unités sont les secondes.|Non|
-|**Temps de réponse moyen**|Temps de transaction moyen. Ce temps inclut des temps de réflexion. Par exemple, si vous avez trois requêtes et que chacune présente un temps de réflexion, ce temps comprendra ces temps de réflexion et le temps effectif d'exécution des requêtes.|Non|
-|**Temps de réponse moyen**|Temps de réponse moyen d’une transaction de test de performances web dans une série de tests de charge. Le temps de réponse diffère du temps de transaction dans le fait qu'il ne comprend pas le temps de réflexion écoulé durant la transaction. Les unités sont les secondes.|Non|
+|**Temps de transaction moy.**|Temps de transaction moyen. Ce temps inclut des temps de réflexion. Par exemple, si vous avez trois requêtes et que chacune présente un temps de réflexion, ce temps comprendra ces temps de réflexion et le temps effectif d'exécution des requêtes.|Non|
+|**Temps de réponse moy.**|Temps de réponse moyen d’une transaction de test de performances web dans une série de tests de charge. Le temps de réponse diffère du temps de transaction dans le fait qu'il ne comprend pas le temps de réflexion écoulé durant la transaction. Les unités sont les secondes.|Non|
 |**Temps de réponse min**|Cela n'inclut pas les temps de réflexion.|Non|
 |**Temps de réponse max**|Cela n'inclut pas les temps de réflexion.|Non|
 |**Temps de réponse médian**|Cela n'inclut pas les temps de réflexion.|Non|
-|**90% du temps de réponse**|90e centile pour le temps de transaction. Cela n'inclut pas les temps de réflexion. **Remarque :**  Ce comportement est différent de celui de Visual Studio Team System 2008 Test Load Agent, qui utilisait la valeur **90 % du temps de transaction**.|Non|
-|**95% du temps de réponse**|95e centile pour le temps de transaction. Cela n'inclut pas les temps de réflexion. **Remarque :**  Ce comportement est différent de celui de Visual Studio Team System 2008 Test Load Agent, qui utilisait la valeur **95 % du temps de transaction**.|Non|
+|**90% du temps de réponse**|90e centile pour le temps de transaction. Cela n'inclut pas les temps de réflexion. **Remarque :** Ce comportement est différent de Visual Studio Team System 2008 Test Load Agent, qui utilisait la valeur **90% du temps de transaction**.|Non|
+|**95% du temps de réponse**|95e centile pour le temps de transaction. Cela n'inclut pas les temps de réflexion. **Remarque :** Ce comportement est différent de Visual Studio Team System 2008 Test Load Agent, qui utilisait la valeur **95% du temps de transaction**.|Non|
 |**99% du temps de réponse**|99e centile du temps de transaction. Cela n'inclut pas les temps de réflexion.|Non|
 |**Écart type du temps de réponse**|Cela n'inclut pas les temps de réflexion.|Non|
 
@@ -146,9 +146,9 @@ La table d'erreurs contient les colonnes suivantes :
 
 |Colonne|Description|Visible par défaut|
 |-|-|-|
-|Type|Type de l'erreur. Par exemple, HttpError.|Oui|
+|Tapez|Type de l'erreur. Par exemple, HttpError.|Oui|
 |SubType|Sous-type de l'erreur. Par exemple, LoadTestException.|Oui|
-|Nombre|Nombre d'erreurs de ce type survenues lors du test de charge. Les entrées de cette colonne apparaissent sous forme de liens hypertexte. Vous pouvez cliquer sur un lien hypertexte pour afficher la liste des erreurs.|Oui|
+|Count|Nombre d'erreurs de ce type survenues lors du test de charge. Les entrées de cette colonne apparaissent sous forme de liens hypertexte. Vous pouvez cliquer sur un lien hypertexte pour afficher la liste des erreurs.|Oui|
 |Dernier message|Message qui décrit l'erreur. Par exemple, 404 - Non trouvé.|Oui|
 
 Pour plus d’informations, consultez [Utilisation de tables de tests de charge](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
@@ -171,7 +171,7 @@ La table **Erreurs du test de charge** contient les colonnes suivantes :
 |**Requête**|URL de la requête dans laquelle l'erreur s'est produite.|
 |**Type**|Type de l'erreur. Par exemple, HttpError.|
 |**Sous-type**|Sous-type de l'erreur. Par exemple, LoadTestException.|
-|**Text**|Texte du message d'erreur. Par exemple, 404 - Non trouvé.|
+|**Texte**|Texte du message d'erreur. Par exemple, 404 - Non trouvé.|
 |**Pile**|Les entrées de cette colonne sont vides, ou contiennent le mot **Pile** sous la forme d’un lien hypertexte. Vous pouvez cliquer sur le lien hypertexte pour afficher une trace de la pile de l'erreur.|
 |**Détails**|Les entrées de cette colonne sont vides, ou contiennent le mot **TestLog** sous la forme d’un lien hypertexte. Ce lien peut vous aider à isoler des erreurs dans le test de charge. Par exemple, le lien **TestLog** d’une erreur de demande du test de performances web permet d’afficher les résultats du test dans l’Afficheur de résultats de test de performances web et de mettre l’erreur en surbrillance.|
 

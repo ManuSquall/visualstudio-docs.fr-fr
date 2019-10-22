@@ -1,5 +1,5 @@
 ---
-title: IDebugAsyncOperation::Abort | Microsoft Docs
+title: 'IDebugAsyncOperation :: Abort | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: be696f852f7038316141415494920c43580738c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b9ca6c5e1498229c84dc28a13cda2cce77b58a4f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822097"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573298"
 ---
 # <a name="idebugasyncoperationabort"></a>IDebugAsyncOperation::Abort
 Annule une opération.  
@@ -34,20 +34,20 @@ HRESULT Abort();
 ```  
   
 #### <a name="parameters"></a>Paramètres  
- Cette méthode ne prend aucun paramètre.  
+ Cette méthode n’accepte aucun paramètre.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |S_OK|La méthode a réussi.|  
-|E_NOTIMPL|Les opérations ne peut pas être annulées.|  
+|E_NOTIMPL|Les opérations ne peuvent pas être annulées.|  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode est généralement appelée à partir du thread de débogueur à annuler une opération qui ne répond pas. Cette méthode provoque la `InProgressAbort` méthode sur le `IDebugSyncOperation` objet à appeler.  
+ Cette méthode est généralement appelée à partir du thread du débogueur pour annuler une opération qui ne répond pas. Cette méthode provoque l’appel de la méthode `InProgressAbort` sur l’objet `IDebugSyncOperation`.  
   
 ## <a name="see-also"></a>Voir aussi  
- [IDebugAsyncOperation (Interface)](../../winscript/reference/idebugasyncoperation-interface.md)   
- [IDebugAsyncOperation::Start](../../winscript/reference/idebugasyncoperation-start.md)   
+ @No__t_1 de l' [interface IDebugAsyncOperation](../../winscript/reference/idebugasyncoperation-interface.md)  
+ [IDebugAsyncOperation :: Start](../../winscript/reference/idebugasyncoperation-start.md)    
  [IDebugSyncOperation::InProgressAbort](../../winscript/reference/idebugsyncoperation-inprogressabort.md)

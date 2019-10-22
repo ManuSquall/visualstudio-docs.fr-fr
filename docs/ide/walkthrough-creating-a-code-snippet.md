@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Créer un extrait de code'
+title: 'Procédure pas à pas : créer un extrait de code'
 ms.date: 06/10/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,21 +10,21 @@ helpviewer_keywords:
 - code snippets, references
 - code snippets, imports
 ms.assetid: 0dcaae11-39cf-4463-9c90-2494321251c2
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 130f4a5d39c756587dcf479abe4461f64e9461cb
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
-ms.translationtype: HT
+ms.openlocfilehash: fb76fd61cb06b2877ebe0cd1714610b25845ebc0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67259810"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647125"
 ---
-# <a name="walkthrough-create-a-code-snippet"></a>Procédure pas à pas : Créer un extrait de code
+# <a name="walkthrough-create-a-code-snippet"></a>Procédure pas à pas : créer un extrait de code
 
 Vous pouvez créer un extrait de code en quelques étapes seulement. Il vous suffit de créer un fichier XML, de le remplir avec les éléments appropriés et d’y ajouter votre code. Vous pouvez utiliser des paramètres de remplacement et des références de projet. Importez l’extrait de code dans votre installation Visual Studio en utilisant le bouton **Importer** dans le **Gestionnaire des extraits de code** (**Outils** > **Gestionnaire des extraits de code**).
 
@@ -76,9 +76,9 @@ Le code XML suivant est le modèle d’extrait de code de base :
        <![CDATA[Dim root = Math.Sqrt(16)]]>
    </Code>
    ```
-   
+
    > [!NOTE]
-   > Vous ne pouvez pas spécifier la façon dont les lignes de code dans la section **CDATA** d’un extrait de code doivent indentées ou mises en forme. Lors de l’insertion, le service de langage met en forme le code inséré automatiquement. 
+   > Vous ne pouvez pas spécifier la façon dont les lignes de code dans la section **CDATA** d’un extrait de code doivent indentées ou mises en forme. Lors de l’insertion, le service de langage met en forme le code inséré automatiquement.
 
 5. Enregistrez l’extrait de code en tant que *SquareRoot.snippet* (vous pouvez l’enregistrer à n’importe quel emplacement).
 

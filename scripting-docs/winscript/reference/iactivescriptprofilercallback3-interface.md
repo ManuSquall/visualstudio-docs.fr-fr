@@ -11,15 +11,15 @@ caps.latest.revision: 2
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: be963a21cd95a2ae0b6fbe2cebb57292df846cf0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e3cf523425b11fcbe60f397f878cd9b68b08768e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993304"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571612"
 ---
 # <a name="iactivescriptprofilercallback3-interface"></a>IActiveScriptProfilerCallback3, interface
-Fournit une méthode pour informer le profileur qui affectent les exécutions profilées dans le contexte d’un traitement web.  
+Fournit une méthode pour informer le profileur que les exécutions profilées se produisent dans le contexte d’un traitement Web.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -31,8 +31,8 @@ interface IActiveScriptProfilerCallback3 : IActiveScriptProfilerCallback2
   
 |Méthode|Description|  
 |------------|-----------------|  
-|[Méthode IActiveScriptProfilerCallback3::SetWebWorkerId](../../winscript/reference/iactivescriptprofilercallback3-setwebworkerid-method.md)|Informe le profileur sur l’ID de travail à utiliser pour cette session de profilage.|  
+|[Méthode IActiveScriptProfilerCallback3::SetWebWorkerId](../../winscript/reference/iactivescriptprofilercallback3-setwebworkerid-method.md)|Notifie le profileur de l’ID de Worker à utiliser pour cette session de profilage.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Iactivescriptprofilercallback, Interface](../../winscript/reference/iactivescriptprofilercallback-interface.md)   
+ @No__t_1 de l' [interface IActiveScriptProfilerCallback](../../winscript/reference/iactivescriptprofilercallback-interface.md)  
  [Interface IActiveScriptProfilerCallback2](../../winscript/reference/iactivescriptprofilercallback2-interface.md)

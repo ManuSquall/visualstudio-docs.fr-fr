@@ -2,17 +2,17 @@
 title: Personnalisation de l'analyse de couverture du code
 ms.date: 08/21/2019
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 517f3f5911df6c7de1f59232a4e836bcdc84c448
-ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+author: jillre
+ms.openlocfilehash: 7392397748d26224a0fba0d5510fccb6655d7642
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71342361"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665066"
 ---
 # <a name="customize-code-coverage-analysis"></a>Personnaliser l’analyse de la couverture du code
 
@@ -110,9 +110,9 @@ Le tableau suivant montre les différentes façons dont les assemblys et les mem
 | ModulePath | Correspond aux assemblys spécifiés par le nom de l’assembly ou le chemin d’accès du fichier. |
 | CompanyName | Correspond aux assemblys par l’attribut **Company** . |
 | PublicKeyToken | Correspond aux assemblys signés par le jeton de clé publique. |
-| `Source` | Met en correspondance les éléments par le nom de chemin d’accès du fichier source dans lequel ils sont définis. |
+| Source | Met en correspondance les éléments par le nom de chemin d’accès du fichier source dans lequel ils sont définis. |
 | Attribut | Met en correspondance les éléments qui ont l’attribut spécifié. Spécifiez le nom complet de l’attribut, par exemple `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>`.<br/><br/>Si vous excluez l’attribut <xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute>, le code qui utilise des fonctionnalités du langage comme `async`, `await` et `yield return`, et des propriétés implémentées automatiquement, est exclu de l’analyse de couverture du code. Pour exclure le code réellement généré, excluez seulement l’attribut <xref:System.CodeDom.Compiler.GeneratedCodeAttribute>. |
-| Fonction | Met en correspondance des procédures, des fonctions ou des méthodes par nom qualifié complet, y compris la liste de paramètres. Vous pouvez également faire correspondre une partie du nom à l’aide d’une [expression régulière](#regular-expressions).<br/><br/>Exemples :<br/><br/>`Fabrikam.Math.LocalMath.SquareRoot(double);` (C#)<br/><br/>`Fabrikam::Math::LocalMath::SquareRoot(double)`(C++) |
+| Fonction | Met en correspondance des procédures, des fonctions ou des méthodes par nom qualifié complet, y compris la liste de paramètres. Vous pouvez également faire correspondre une partie du nom à l’aide d’une [expression régulière](#regular-expressions).<br/><br/>Exemples :<br/><br/>`Fabrikam.Math.LocalMath.SquareRoot(double);` (C#)<br/><br/>`Fabrikam::Math::LocalMath::SquareRoot(double)` (C++) |
 
 ### <a name="regular-expressions"></a>Expressions régulières
 

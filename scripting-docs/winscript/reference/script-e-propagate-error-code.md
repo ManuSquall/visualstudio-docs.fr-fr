@@ -11,15 +11,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e6b1feac19be5f6506227b60515df70d9a737a2a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dc6b30d574d2d3585ec9fa46e8dc63fcbd4572a5
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840279"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574446"
 ---
-# <a name="scriptepropagate-error-code"></a>SCRIPT_E_PROPAGATE, code d'erreur
-Une erreur de script est propagée à l’appelant, qui peut être dans un thread différent. L’hôte doit passer le code d’erreur à l’appelant.  
+# <a name="script_e_propagate-error-code"></a>SCRIPT_E_PROPAGATE, code d'erreur
+Une erreur de script est propagée à l’appelant, qui peut se trouver dans un thread différent. L’hôte doit passer le code d’erreur à l’appelant.  
   
 ## <a name="syntax"></a>Syntaxe  
   

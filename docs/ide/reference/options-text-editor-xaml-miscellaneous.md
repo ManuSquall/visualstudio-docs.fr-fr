@@ -23,17 +23,17 @@ helpviewer_keywords:
 - WPF Designer, XAML formatting
 - XAML view settings, attribute spacing
 ms.assetid: 2a420e58-a408-4e8d-9220-44eeb4f67801
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 9b124b86b98f86c775165d8fe33164a352d8e20a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 242daf82d405af4b3a1e529633fb82651aa6bdc9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969239"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666620"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>Options, Éditeur de texte, XAML, Divers
 
@@ -47,7 +47,7 @@ Ce paramètre permet de contrôler à quel moment les balises et les guillemets 
 |-|-|
 |**Balises de fermeture**|Spécifie si la balise de fermeture d’un élément est générée automatiquement quand vous fermez la balise d’ouverture avec le signe supérieur à (>).|
 |**Guillemets d’attribut**|Spécifie si les guillemets de fermeture sont générés quand vous sélectionnez une valeur d’attribut dans la liste déroulante de saisie semi-automatique de l’instruction.|
-|**Accolades fermantes pour MarkupExtensions**|Spécifie si l’accolade fermante d’une extension de balisage (**}**) est générée automatiquement quand vous tapez le caractère d’accolade ouvrante (**{**).|
+|**Accolades fermantes pour MarkupExtensions**|Spécifie si l’accolade fermante d’une extension de balisage ( **}** ) est générée automatiquement quand vous tapez le caractère d’accolade ouvrante ( **{** ).|
 |**Virgules pour séparer les paramètres MarkupExtension**|Spécifie si des virgules sont générées quand vous tapez plusieurs paramètres dans une extension de balisage.|
 
 ## <a name="errors-and-warnings"></a>Erreurs et avertissements

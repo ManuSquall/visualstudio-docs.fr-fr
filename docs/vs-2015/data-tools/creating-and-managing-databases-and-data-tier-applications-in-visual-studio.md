@@ -1,5 +1,5 @@
 ---
-title: Création et gestion de bases de données et applications de couche données
+title: Création et gestion des bases de données et des applications de la couche données
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -11,33 +11,33 @@ helpviewer_keywords:
 - managing change, database servers
 ms.assetid: 40b51f5a-d52c-44ac-8f84-037a0917af33
 caps.latest.revision: 40
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d6cb4a3beb12d2b33b8b13441df66116fe449d09
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2d6ed13f2e21ea6b9da82eb47afefdd16088e71d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431156"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672466"
 ---
-# <a name="creating-and-managing-databases-and-data-tier-applications-in-visual-studio"></a>Création et gestion de bases de données et applications de couche données dans Visual Studio
+# <a name="creating-and-managing-databases-and-data-tier-applications-in-visual-studio"></a>Création et gestion de bases de données et d’applications de couche Données dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 IMPORTANT]
-> Les projets de base de données qui ont été inclus dans les versions antérieures de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sont désormais disponibles dans [!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)] outils. Pour plus d’informations, consultez [SQL Server Developer Tools](http://go.microsoft.com/fwlink/?LinkId=228126).
+> Les projets de base de données inclus dans les versions antérieures de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sont désormais fournis dans les outils de [!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)]. Pour plus d’informations, consultez [SQL Server développeur Tools](http://go.microsoft.com/fwlink/?LinkId=228126).
 
- Vous pouvez utiliser des projets de base de données pour créer de nouvelles bases de données nouvelles applications de couche données (DAC) et mettre à jour des bases de données existantes et les applications de couche données. Les projets de base de données et les projets DAC permettent d’appliquer des techniques de gestion de projet et de contrôle de version à vos efforts de développement de base de données de la même façon que vous appliquez ces techniques à code managé ou natif. Vous pouvez aider votre équipe de développement gérer les modifications apportées aux bases de données et les serveurs de base de données en créant un *projet DAC*, *projet de base de données*, ou un *projet server* et en le plaçant sous contrôle de version. Membres de votre équipe peuvent ensuite extraire les fichiers à rendre, générer et tester les modifications dans un *environnement de développement isolé*, ou bac à sable, avant de les partager avec l’équipe. Pour garantir la qualité du code, votre équipe peut terminer et tester toutes les modifications pour une version particulière de la base de données dans un environnement intermédiaire avant de déployer les modifications en production.
+ Vous pouvez utiliser des projets de base de données pour créer des bases de données, des applications de la couche données (DAC) et mettre à jour des applications de couche données et des bases de données existantes. Les projets de base de données et les projets DAC vous permettent d’appliquer le contrôle de version et les techniques de gestion de projet à vos efforts de développement de base de données à peu près de la même façon que vous appliquez ces techniques à du code managé ou natif. Vous pouvez aider votre équipe de développement à gérer les modifications apportées aux bases de données et aux serveurs de base de données en créant un projet *DAC*, un *projet de base de données*ou un *projet serveur* et en le plaçant sous contrôle de version. Les membres de votre équipe peuvent ensuite extraire des fichiers pour créer, générer et tester les modifications dans un *environnement de développement isolé*, ou bac à sable (sandbox), avant de les partager avec l’équipe. Pour garantir la qualité du code, votre équipe peut terminer et tester toutes les modifications apportées à une version particulière de la base de données dans un environnement intermédiaire avant de déployer les modifications en production.
 
- Pour obtenir la liste des fonctionnalités de base de données qui sont pris en charge par les Applications de couche données, consultez [fonctionnalités prises en charge dans les Applications de couche données](http://go.microsoft.com/fwlink/?LinkId=164239) sur le site web Microsoft. Si vous utilisez des fonctionnalités de votre base de données qui ne sont pas pris en charge par les Applications de couche données, vous devez plutôt utiliser un projet de base de données pour gérer les modifications apportées à votre base de données.
+ Pour obtenir la liste des fonctionnalités de base de données prises en charge par les applications de la couche données, consultez [fonctionnalités prises en charge dans les applications de la couche données](http://go.microsoft.com/fwlink/?LinkId=164239) sur le site Web de Microsoft. Si vous utilisez des fonctionnalités de votre base de données qui ne sont pas prises en charge par les applications de la couche données, vous devez plutôt utiliser un projet de base de données pour gérer les modifications apportées à votre base de données.
 
 ## <a name="common-high-level-tasks"></a>Tâches courantes de haut niveau
 
-|Tâches de haut niveau|Contenu de support|
+|Tâche de haut niveau|Contenu de support|
 |----------------------|------------------------|
-|**Démarrer le développement d’une application de couche données :** Une DAC est un nouveau concept introduit avec [!INCLUDE[sskatmai_r2](../includes/sskatmai-r2-md.md)] qui contient la définition d’un [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] les objets qui sont utilisés par un client-serveur ou une application de couche 3 d’instance de base de données et la prise en charge. Une DAC inclut des objets de base de données, tels que des tables et des vues, ainsi que les entités d’instance telles que les connexions. Vous pouvez utiliser [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour créer un projet DAC, générer un fichier de package DAC et envoyer ce fichier de package à un administrateur de base de données pour le déploiement sur une instance de la [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] moteur de base de données.|-   [Création et la gestion des Applications de couche données](http://go.microsoft.com/fwlink/?LinkId=160741) (site web de Microsoft)<br />-   [SQL Server Management Studio](http://go.microsoft.com/fwlink/?LinkId=227328)|
-|**Développement itératif de base de données en cours :** Si vous êtes un développeur ou testeur, vous découvrez les éléments du projet et mettre à jour dans un environnement de développement isolé. À l’aide de ce type d’environnement, vous pouvez tester vos modifications sans affecter les autres membres de l’équipe. Une fois que les modifications sont terminées, vous vérifiez les fichiers au contrôle de version, où autres membres de l’équipe peuvent obtenir vos modifications et créer et les déployer sur un serveur de test.|-   [Éditeurs de texte (SQL Server Management Studio) et de requête](http://go.microsoft.com/fwlink/?LinkId=227327) (site web de Microsoft)<br />-   [Débogueur Transact-SQL](http://go.microsoft.com/fwlink/?LinkId=227324) (site web de Microsoft)|
-|**Prototypage, la vérification des résultats des tests et la modification des scripts de base de données et des objets :** Vous pouvez utiliser le [!INCLUDE[tsql](../includes/tsql-md.md)] éditeur pour effectuer l’une de ces tâches courantes.|-   [Éditeurs de texte (SQL Server Management Studio) et de requête](http://go.microsoft.com/fwlink/?LinkId=227327) (site web de Microsoft)|
+|**Démarrer le développement d’une application de la couche données :** Une DAC est un nouveau concept introduit avec [!INCLUDE[sskatmai_r2](../includes/sskatmai-r2-md.md)] qui contient la définition d’une base de données [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] et les objets d’instance de prise en charge qui sont utilisés par une application client-serveur ou à 3 couches. Une DAC comprend des objets de base de données, tels que des tables et des vues, ainsi que des entités d’instance telles que des connexions. Vous pouvez utiliser [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour créer un projet DAC, créer un fichier de package DAC et envoyer ce fichier de package DAC à un administrateur de base de données en vue d’un déploiement sur une instance du moteur de base de données [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)].|-   [création et gestion d’applications de la couche données](http://go.microsoft.com/fwlink/?LinkId=160741) (site Web Microsoft)<br />-   [SQL Server Management Studio](http://go.microsoft.com/fwlink/?LinkId=227328)|
+|**Développement de base de données itérative en cours :** Si vous êtes un développeur ou un testeur, vous pouvez extraire des parties du projet, puis les mettre à jour dans un environnement de développement isolé. À l’aide de ce type d’environnement, vous pouvez tester vos modifications sans affecter les autres membres de l’équipe. Une fois les modifications terminées, vous archivez de nouveau les fichiers dans le contrôle de version, où d’autres membres de l’équipe peuvent obtenir vos modifications et les générer et les déployer sur un serveur de test.|-   [les éditeurs de requêtes et de texte (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327) (site Web Microsoft)<br />-   [le débogueur Transact-SQL](http://go.microsoft.com/fwlink/?LinkId=227324) (site Web Microsoft)|
+|**Prototypage, vérification des résultats des tests et modification des scripts et des objets de base de données :** Vous pouvez utiliser l’éditeur de [!INCLUDE[tsql](../includes/tsql-md.md)] pour exécuter l’une de ces tâches courantes.|-   [les éditeurs de requêtes et de texte (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327) (site Web Microsoft)|
 
 ## <a name="see-also"></a>Voir aussi
  [Outils de données Visual Studio pour .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

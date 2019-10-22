@@ -5,21 +5,21 @@ ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.HTML.Format
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69a8d3f1b84bd59cec9e13bf50eb8eaa46795cdf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 3d1e5f07a2b68d86051452a16ac0f42fc9b9acf0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779017"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666192"
 ---
 # <a name="options-text-editor-html-web-forms-formatting"></a>Options, Éditeur de texte, HTML (Web Forms), Mise en forme
 
-Utilisez la page d’options **Mise en forme** afin de définir les options de mise en forme du code dans l’éditeur de code pour les projets HTML. Pour accéder à cette page, dans la barre de menus, choisissez **Outils** > **Options**, puis développez **Éditeur de texte** > **HTML (Web Forms)** > **Mise en forme**.
+Utilisez la page d’options **Mise en forme** afin de définir les options de mise en forme du code dans l’éditeur de code pour les projets HTML. Pour accéder à cette page, dans la barre de menus, choisissez **Outils** > **Options**, puis développez **Éditeur de texte** > **HTML (Web Forms)**  > **Mise en forme**.
 
 ## <a name="capitalization"></a>Mise en majuscules
 
@@ -62,21 +62,21 @@ Ces options font en sorte que l’éditeur du mode Source ajoute ou supprime des
 
 - **Insérer des guillemets de valeur d’attribut lors de la saisie**
 
-   Quand cette option est sélectionnée, l’éditeur insère automatiquement des guillemets autour des attributs lors de la saisie (par exemple : ID="Select1"). Désactivez cette option si vous préférez insérer manuellement des guillemets dans votre balisage.
+   Lorsque cette option est sélectionnée, l’éditeur insère automatiquement des guillemets autour des attributs à mesure que vous tapez (par exemple : ID = "Select1"). Désactivez cette option si vous préférez insérer manuellement des guillemets dans votre balisage.
 
    > [!NOTE]
    > Que cette option soit sélectionnée ou non, tous les guillemets existants dans votre balise sont conservés ; les guillemets ne sont jamais supprimés.
 
 - **Insérer des guillemets de valeur d’attribut lors de la mise en forme**
 
-   Quand cette option est sélectionnée, la fonctionnalité de mise en forme automatique ajoute des guillemets autour des valeurs d’attributs (par exemple : ID="Select1").
+   Lorsque cette option est sélectionnée, la mise en forme automatique ajoute des guillemets autour des valeurs d’attribut (par exemple : ID = "Select1").
 
    > [!NOTE]
    > Que cette option soit sélectionnée ou non, tous les guillemets existant dans votre balisage sont conservés.
 
 - **Insérer automatiquement la balise de fin**
 
-   Quand cette option est sélectionnée, l’éditeur crée automatiquement une balise de fermeture (par exemple, **\</b>**) quand vous fermez la balises d’ouverture.
+   Quand cette option est sélectionnée, l’éditeur crée automatiquement une balise de fermeture (par exemple, **\</b>** ) quand vous fermez la balises d’ouverture.
 
 ## <a name="tag-wrapping"></a>Balise de renvoi à la ligne
 
@@ -84,7 +84,7 @@ Ces options déterminent si l’éditeur scinde les balises en plusieurs lignes 
 
 ### <a name="uielement-list"></a>Liste UIElement
 
-- **Renvoyer les balises à la ligne au-delà de la longueur spécifiée** 
+- **Renvoyer les balises à la ligne au-delà de la longueur spécifiée**
 
    Quand cette option est sélectionnée, l’éditeur scinde les balises sur les lignes si elles dépassent la longueur que vous avez spécifiée dans la zone de texte **Longueur**. Cette action se produit uniquement lors de la mise en forme de la balise, et non quand vous entrez une nouvelle balise.
 

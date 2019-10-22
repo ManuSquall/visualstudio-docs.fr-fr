@@ -1,5 +1,5 @@
 ---
-title: IDebugSyncOperation::InProgressAbort | Microsoft Docs
+title: 'IDebugSyncOperation :: InProgressAbort | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a794ea70d6d2fe937afb311e6961d53f22bd7ac2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 40974c738c071e52648297ac90a0ab89d9681435
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63004830"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576665"
 ---
 # <a name="idebugsyncoperationinprogressabort"></a>IDebugSyncOperation::InProgressAbort
-Annule une opération en cours d’exécution sur un autre thread.  
+Annule une opération en cours sur un autre thread.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -34,21 +34,21 @@ HRESULT InProgressAbort();
 ```  
   
 #### <a name="parameters"></a>Paramètres  
- Cette méthode ne prend aucun paramètre.  
+ Cette méthode n’accepte aucun paramètre.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
 |`E_NOTIMPL`|L’opération ne peut pas être annulée.|  
 |`E_ABORT`|L’opération n’a pas pu être effectuée.|  
   
 ## <a name="remarks"></a>Notes  
- Le Gestionnaire de débogage de processus appelle cette méthode à partir du thread de débogueur à annuler une opération qui est en cours dans un autre thread.  
+ Le gestionnaire de débogage de processus appelle cette méthode à partir du thread du débogueur pour annuler une opération en cours dans un autre thread.  
   
- Si le `InProgressAbort` méthode ne peut pas terminer l’opération, elle retourne `E_ABORT` dès que possible. Cette méthode peut retourner `E_NOTIMPL` si l’opération ne peut pas être annulée.  
+ Si la méthode `InProgressAbort` ne peut pas terminer l’opération, elle retourne `E_ABORT` dès que possible. Cette méthode peut retourner `E_NOTIMPL` si l’opération ne peut pas être annulée.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IDebugSyncOperation](../../winscript/reference/idebugsyncoperation-interface.md)

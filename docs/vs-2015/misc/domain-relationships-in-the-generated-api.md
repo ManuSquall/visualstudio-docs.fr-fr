@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, domain relationships
 ms.assetid: 71d018f8-19a7-44d0-bad3-665c883a9804
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1596ec3d7ec901ac6fb8ce504fc9f0355723579c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1ad203c5ae85d65bed400772967202b313601083
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822694"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72646190"
 ---
 # <a name="domain-relationships-in-the-generated-api"></a>Relations de domaine dans l’API générée
-Cette rubrique a été intégrée à un autre contenu. Accédez à [navigation et la mise à jour un modèle dans le Code de programme](../modeling/navigating-and-updating-a-model-in-program-code.md).
+Cette rubrique a été intégrée à un autre contenu. Accédez à [la navigation et à la mise à jour d’un modèle dans le code de programme](../modeling/navigating-and-updating-a-model-in-program-code.md).

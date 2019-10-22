@@ -3,19 +3,19 @@ title: Présentation de l’IDE Visual Studio
 titleSuffix: ''
 ms.date: 02/21/2019
 ms.topic: quickstart
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4875d88f521917a038ae3d7257396c7db80a2a9c
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.openlocfilehash: 072233bde233712024d01fa315e11c679d39e9e5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180102"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667804"
 ---
-# <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Démarrage rapide : Premier aperçu de l’IDE Visual Studio
+# <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Démarrage rapide : premier aperçu de l'IDE Visual Studio
 
 Dans cette présentation de 5-10 minutes de l’environnement de développement intégré (IDE) de Visual Studio, vous allez effectuer une visite guidée de quelques fenêtres, menus et autres fonctionnalités de l’interface utilisateur.
 
@@ -97,7 +97,7 @@ Pour continuer à explorer les fonctionnalités de Visual Studio, nous allons cr
 
    ![Éditeur dans Visual Studio](media/editor.png)
 
-## <a name="solution-explorer"></a>Explorateur de solutions
+## <a name="solution-explorer"></a>l'Explorateur de solutions
 
 L’**Explorateur de solutions**, qui se trouve généralement sur le côté droit de Visual Studio, affiche une représentation graphique de la hiérarchie des fichiers et des dossiers dans votre projet, solution ou dossier de code. Vous pouvez parcourir la hiérarchie et atteindre un fichier dans **l’Explorateur de solutions**.
 

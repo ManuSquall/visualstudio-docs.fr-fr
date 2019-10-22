@@ -13,19 +13,19 @@ f1_keywords:
 helpviewer_keywords:
 - formatting options [C#]
 - Text editor Options dialog box, formatting
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b555ede6ecf406f98c2e1ae9384b61664e8226cf
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
-ms.translationtype: HT
+ms.openlocfilehash: 8947f6e2fee2b8615c750b770ac3b0dea85bb991
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67260410"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666311"
 ---
-# <a name="options-dialog-box-text-editor--c--code-style--formatting"></a>Boîte de dialogue Options : Éditeur de texte \> C# \> Style de code \> Mise en forme
+# <a name="options-dialog-box-text-editor--c--code-style--formatting"></a>Boîte de dialogue Options : éditeur de C# texte \> \> la mise en forme du style de code \>
 
 Utilisez la page d’options **Mise en forme** et ses sous-pages ([**Mise en retrait**](#indentation-page), **Nouvelles lignes**, **Espacement** et **Retour à la ligne**) pour définir les options de mise en forme du code dans l’éditeur de code.
 

@@ -1,0 +1,63 @@
+### YamlMime:Landing
+title: Modifier le code dans Visual Studio
+summary: En savoir plus sur la modification des tâches telles que l’ouverture d’un projet, l’utilisation des fonctionnalités de l’éditeur de code et la maintenance du style de code cohérent.
+metadata:
+  title: Fonctionnalités de l’éditeur de code
+  description: En savoir plus sur les fonctionnalités d’édition de code dans Visual Studio.
+  ms.prod: visual-studio-windows
+  ms.technology: vs-ide-general
+  ms.topic: landing-page
+  author: gewarren
+  ms.author: gewarren
+  ms.date: 10/15/2019
+  ms.openlocfilehash: 30345839ca1c5f4f07b3c36415f7aad277693069
+  ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+  ms.translationtype: MT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 10/17/2019
+  ms.locfileid: "72516823"
+landingContent:
+- title: Ouvrir ou créer un projet
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Créer un projet
+      url: create-new-project.md
+    - text: Ouvrir un projet à partir d’un référentiel
+      url: ../get-started/tutorial-open-project-from-repo.md
+  - linkListType: how-to-guide
+    links:
+    - text: Utiliser Visual Studio sans project ou solution
+      url: develop-code-in-visual-studio-without-projects-or-solutions.md
+- title: Utiliser les fonctionnalités d’édition
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Utiliser l’éditeur de code
+      url: writing-code-in-the-code-and-text-editor.md
+    - text: Naviguer dans le code
+      url: navigating-code.md
+    - text: Générer et corriger du code
+      url: code-generation-in-visual-studio.md
+    - text: Utiliser IntelliSense pour la saisie semi-automatique du code
+      url: using-intellisense.md
+    - text: Gérer les préférences de style de code
+      url: code-styles-and-code-cleanup.md
+    - text: Analyse du code
+      url: ../code-quality/roslyn-analyzers-overview.md
+    - text: IntelliCode
+      url: /visualstudio/intellicode/intellicode-visual-studio
+- title: Prise en main des langages de programmation
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Prise en main de C# et d’ASP.NET Core dans Visual Studio
+      url: tutorial-csharp-aspnet-core.md
+    - text: Créer une application console C++ dans Visual Studio
+      url: /cpp/get-started/tutorial-console-cpp
+    - text: Bien démarrer avec C++ dans Visual Studio
+      url: quickstart-python.md
+    - text: Créer une application console avec Visual Basic
+      url: quickstart-visual-basic-console.md
+    - text: Créer une application web avec Node.js
+      url: quickstart-nodejs.md

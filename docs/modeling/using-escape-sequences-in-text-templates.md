@@ -4,37 +4,37 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, escape sequences
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b48748c5c5d071e724be3ff35eca457f36385baa
-ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
+ms.openlocfilehash: 4e03f5eafc00b8431725ed06da10371a93692fb5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65476615"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662920"
 ---
-# <a name="use-escape-sequences-in-text-templates"></a>Utiliser des séquences d’échappement dans les modèles de texte
+# <a name="use-escape-sequences-in-text-templates"></a>Utiliser des séquences d’échappement dans des modèles de texte
 
-Vous pouvez utiliser des séquences d’échappement dans les modèles de texte pour générer des balises de modèle de texte et (dans le code c# uniquement) et d’échappement les caractères de contrôle entre guillemets.
+Vous pouvez utiliser des séquences d’échappement dans des modèles de texte pour générer des balises de modèle de texte et (dans C# le code uniquement) pour échapper des caractères de contrôle et des guillemets.
 
-Pour imprimer les balises d’ouverts et de fermeture pour un bloc de code standard pour le fichier de sortie, échappez les balises comme suit :
+Pour imprimer les balises d’ouverture et de fermeture d’un bloc de code standard dans le fichier de sortie, échappez les balises comme suit :
 
 ```
 \<# ... \#>
 ```
 
-Vous pouvez faire de même avec d’autres balises de bloc texte modèle directive et le code.
+Vous pouvez faire de même avec d’autres balises de modèle de texte et de bloc de code.
 
-Si un bloc de texte inclut des chaînes utilisées pour échapper des balises de modèle de texte, vous pouvez utiliser les séquences d’échappement suivantes :
+Si un bloc de texte comprend des chaînes utilisées pour échapper des balises de modèle de texte, vous pouvez utiliser les séquences d’échappement suivantes :
 
-- Si une balise de modèle de texte est précédée d’un nombre pair de d’échappement (\\) le modèle de caractères analyseur inclura la moitié des caractères d’échappement et incluent la séquence comme une balise de modèle de texte. Par exemple, s’il existe quatre caractères d’échappement dans le modèle de texte, il y aura deux «\\» caractères dans le fichier généré.
+- Si une balise de modèle de texte est précédée d’un nombre pair de caractères d’échappement (\\), l’analyseur de modèle inclura la moitié des caractères d’échappement et inclura la séquence comme une balise de modèle de texte. Par exemple, s’il y a quatre caractères d’échappement dans le modèle de texte, il y aura deux caractères « \\ » dans le fichier généré.
 
-- Si la balise de modèle de texte est précédée d’un nombre impair de d’échappement (\\) caractères, l’Analyseur de modèle inclura la moitié de la «\\» caractères ainsi que la balise proprement dite (\<# ou #>). La balise n’est pas considérée comme une balise de modèle de texte.
+- Si la balise de modèle de texte est précédée d’un nombre impair de caractères d’échappement (\\), l’analyseur de modèle inclura la moitié des caractères « \\ » et la balise proprement dite (\< # ou # >). La balise n’est pas considérée comme une balise de modèle de texte.
 
-- Si un caractère d’échappement (\\) caractère apparaît nulle part ailleurs dans n’importe quel ordre autre qu’où la méthode remplace un caractère de contrôle ou un guillemet (en c# uniquement), le caractère affichera directement.
+- Si un caractère d’échappement (\\) apparaît n’importe où dans une séquence autre que l’échappement d’un caractère de contrôle ou d’un C# guillemet (dans uniquement), le caractère est généré directement.
 
 ## <a name="see-also"></a>Voir aussi
 

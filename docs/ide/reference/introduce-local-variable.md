@@ -3,17 +3,17 @@ title: Introduire une variable locale
 description: Générer une variable locale pour remplacer une expression existante Sélectionnez l’expression, cliquez avec le bouton droit et choisissez le menu Actions rapides et refactorisations, puis sélectionnez Introduire un élément local pour (toutes les occurrences de) « expression ».
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 43f54072d495cfdd6607ccb033ffd1a1713ad8bb
-ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
-ms.translationtype: HT
+ms.openlocfilehash: 6407810b4143d5edacecf42990ae5b6d63497be2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68483695"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668757"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Introduire une variable locale dans Visual Studio
 
@@ -23,11 +23,11 @@ Cette génération de code s’applique à :
 
 - Visual Basic
 
-**Quoi :** Vous permet de générer immédiatement une variable locale pour remplacer une expression existante.
+**Quoi :** vous permet de générer immédiatement une variable locale pour remplacer une expression existante.
 
-**Quand :** Vous disposez d’un code pouvant être facilement réutilisé ultérieurement s’il figurait dans une variable locale.
+**Quand :** vous disposez d’un code pouvant être facilement réutilisé ultérieurement s’il figurait dans une variable locale.
 
-**Pourquoi :** Vous pouvez copier et coller le code plusieurs fois pour l’utiliser à différents emplacements. Toutefois, il est préférable d’effectuer l’opération une seule fois, d’enregistrer le résultat dans une variable locale, puis d’utiliser cette variable locale au gré des besoins.
+**Pourquoi :** vous pouvez copier et coller le code plusieurs fois pour l’utiliser à différents emplacements. Toutefois, il est préférable d’effectuer l’opération une seule fois, d’enregistrer le résultat dans une variable locale, puis d’utiliser cette variable locale au gré des besoins.
 
 ## <a name="how-to"></a>Procédure
 

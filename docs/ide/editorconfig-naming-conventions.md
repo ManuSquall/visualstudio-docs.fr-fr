@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - naming conventions [EditorConfig]
 - EditorConfig naming conventions
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 644c73dea58936773acde98ccc535dfc61979288
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 8ff6c9885bd01a94cc36046faf71067e1fe9c17b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71251701"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650908"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Conventions de nommage .NET pour EditorConfig
 
@@ -43,11 +43,11 @@ La liste suivante répertorie les valeurs autorisées, et vous pouvez spécifier
 
 - \* (Utilisez cette valeur pour spécifier tous les symboles.)
 - namespace
-- class
+- classe
 - struct
 - interface
 - enum
-- propriété
+- Propriété
 - méthode
 - champ
 - événement
@@ -169,7 +169,7 @@ none | La règle est entièrement supprimée.
 refactorisation ou silence | Quand ce style n’est pas suivi, ne rien afficher à l’utilisateur ; toutefois, le code généré automatiquement suit ce style.
 suggestion | Quand ce style n’est pas suivi, l’afficher à l’utilisateur comme suggestion, sous la forme de points de soulignement sur les deux premiers caractères. Il n’a aucun effet au moment de la compilation.
 warning | Quand ce style n’est pas suivi, afficher un avertissement du compilateur dans la **Liste d’erreurs**.
-error | Quand ce style n’est pas suivi, afficher une erreur du compilateur dans la **Liste d’erreurs**.
+erreur | Quand ce style n’est pas suivi, afficher une erreur du compilateur dans la **Liste d’erreurs**.
 
 > [!NOTE]
 > Vous n’avez pas à générer votre projet pour afficher les violations de règle de nommage. Elles apparaissent au fur et à mesure que le code est modifié, dans la **Liste d’erreurs** ou comme suggestion.
@@ -226,7 +226,7 @@ Remplaçons maintenant la gravité de la violation par `warning` :
 dotnet_naming_rule.public_members_must_be_capitalized.severity = warning
 ```
 
-Si vous fermez et que vous rouvrez votre fichier de code, au lieu de voir la suggestion sous la violation de nom, vous voyez une ligne ondulée verte et un avertissement dans la **Liste d’erreurs** :
+Si vous fermez et rouvrez votre fichier de code, au lieu de voir la suggestion sous la violation de nom, vous voyez un tilde vert et un avertissement dans le Liste d’erreurs :
 
 ![Avertissement de règle de nommage](media/editorconfig-naming-rule-warning.png)
 

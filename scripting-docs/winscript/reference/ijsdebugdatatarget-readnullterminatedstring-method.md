@@ -1,5 +1,5 @@
 ---
-title: Méthode IJsDebugDataTarget::ReadNullTerminatedString | Microsoft Docs
+title: 'IJsDebugDataTarget :: ReadNullTerminatedString, méthode | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 178a2d3705e4904de9253c02319f6ba94e567d76
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 67d6ee6c8dad81865767b0b944ef311fc0de0063
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62582363"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572403"
 ---
 # <a name="ijsdebugdatatargetreadnullterminatedstring-method"></a>IJsDebugDataTarget::ReadNullTerminatedString, méthode
 Lit le nombre spécifié de caractères à partir de la cible.  
@@ -38,24 +38,24 @@ HRESULT ReadNullTerminatedString(
   
 #### <a name="parameters"></a>Paramètres  
  `address`  
- [in] L’adresse à lire à partir de.  
+ dans Adresse à partir de laquelle effectuer la lecture.  
   
  `characterSize`  
- [in] taille de chaque caractère dans la chaîne  
+ [in] taille de chaque caractère de la chaîne  
   
  `maxCharacters`  
- [in] Le nombre maximal de caractères à lire. maxCharacters doivent être raisonnables. Toute demande de plus de 128 Mo de mémoire échoue.  Si la chaîne est supérieure à maxCharacters, la chaîne de résultat est tronquée après maxCharacters.  
+ dans Nombre maximal de caractères à lire. maxCharacters doit être raisonnable. Toute demande de plus de 128 Mo de mémoire échoue.  Si la chaîne est supérieure à maxCharacters, la chaîne de résultat est tronquée après maxCharacters.  
   
  `pString`  
- [out] Le BSTR lues dans la cible.  
+ à BSTR lu à partir de la cible.  
   
 ## <a name="return-value"></a>Valeur de retour  
   
 ## <a name="remarks"></a>Notes  
- Retourne S_FALSE si tronqué.  
+ Retourne S_FALSE s’il est tronqué.  
   
-## <a name="requirements"></a>Configuration requise  
- **En-tête :** jscript9diag.h  
+## <a name="requirements"></a>spécifications  
+ **En-tête :** jscript9diag. h  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IJsDebugDataTarget](../../winscript/reference/ijsdebugdatatarget-interface.md)

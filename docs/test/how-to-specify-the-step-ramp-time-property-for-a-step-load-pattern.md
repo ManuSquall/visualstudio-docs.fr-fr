@@ -5,19 +5,19 @@ ms.topic: conceptual
 helpviewer_keywords:
 - load tests, load patterns
 ms.assetid: 4a69e857-f93b-4907-9a01-fd1b66291205
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f3353b6c46520dde1134c7ccff835b215b2d0ef8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a45bcbdc149a6d3665efb0bc203d4a21138c979a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821089"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653347"
 ---
-# <a name="how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern"></a>Procédure : Spécifier la propriété de la durée de démarrage de l’étape dans le modèle de charge
+# <a name="how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern"></a>Guide pratique pour spécifier la propriété de la durée de démarrage de l’étape dans le modèle de charge
 
-Après avoir créé votre test de charge avec l’**Assistant Nouveau test de charge**, vous pouvez utiliser l’**éditeur de test de charge** pour changer les propriétés des scénarios en fonction de vos besoins et objectifs. Pour plus d’informations, consultez [Procédure pas à pas : créer et exécuter un test de charge](../test/walkthrough-create-and-run-a-load-test.md).
+Après avoir créé votre test de charge avec **l’Assistant Nouveau test de charge**, vous pouvez utiliser **l’éditeur de test de charge** pour changer les propriétés des scénarios afin de répondre à vos besoins et vos objectifs de test. Pour plus d’informations, consultez [Procédure pas à pas : création et exécution d’un test de charge](../test/walkthrough-create-and-run-a-load-test.md).
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -30,15 +30,15 @@ La propriété **Durée de démarrage de l’étape** est utilisée uniquement a
 
 Un modèle de charge dans l'étape est utilisé pour augmenter la charge sur le ou les serveurs au cours de l'exécution du test de charge pour voir comment les performances varient au fur et à mesure que la charge utilisateur augmente. Par exemple, pour voir les performances de votre serveur ou de vos serveurs lorsque la charge utilisateur passe à 2 000 utilisateurs, vous pouvez exécuter un test de charge de 10 heures à l'aide d'un modèle de charge dans l'étape dont les propriétés sont les suivantes :
 
-- Nombre initial d’utilisateurs : 100
+- Nombre initial d'utilisateurs : 100
 
-- Nombre maximal d’utilisateurs : 2 000
+- Nombre maximal d'utilisateurs : 2 000
 
-- Durée de l’étape (secondes) : 1800
+- Durée de l'étape (secondes) : 1 800
 
-- Durée de démarrage de l’étape (secondes) : 20
+- Durée de démarrage de l'étape (secondes) : 20
 
-- Nombre d’utilisateurs par étape : 100
+- Nombre d'utilisateurs dans l'étape : 100
 
 Ces paramètres exécutent le test de charge pendant 30 minutes (1 800 secondes) avec des charges utilisateur de 100, 200, 300 et jusqu'à 2 000 utilisateurs.
 
@@ -51,7 +51,7 @@ La propriété **Durée de démarrage de l’étape** autorise l’accroissement
 
 1. Ouvrez un test de charge.
 
-     L’**éditeur de test de charge** s’affiche. L'arborescence du test de charge s'affiche.
+     **L’Éditeur de test de charge** s’affiche. L'arborescence du test de charge s'affiche.
 
 2. Dans le dossier **Scénarios** des arborescences du test de charge, ouvrez le nœud de scénario pour lequel vous voulez spécifier la durée de démarrage de l’étape.
 
@@ -60,7 +60,7 @@ La propriété **Durée de démarrage de l’étape** autorise l’accroissement
     > [!NOTE]
     > Le modèle de charge du scénario doit être un modèle de charge dans l'étape. Si ce n'est pas le cas, le modèle de charge affichera le type du modèle de charge associé actuellement au scénario. Pour plus d’informations, consultez [Modifier les modèles de charge en modèle d’activités des utilisateurs virtuels](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
-4. Dans le menu **Affichage**, sélectionnez **Fenêtre Propriétés**.
+4. Dans le menu **Affichage**, sélectionnez la fenêtre **Propriétés**.
 
      Les catégories et les propriétés du scénario sont affichées dans la fenêtre **Propriétés**.
 

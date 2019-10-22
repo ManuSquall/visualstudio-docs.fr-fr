@@ -3,20 +3,20 @@ title: Présentation de WPF
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: b8d7cf43-d1f2-4f3d-adb0-4f3a6428edc0
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - csharp
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: bb88c5b718c0f949825a2542b5a084d4e8ca15b9
-ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
+ms.openlocfilehash: 5fe70c531a109294b49a1f6104f535cf8aca5a45
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71962959"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635442"
 ---
 # <a name="wpf-overview"></a>Vue d’ensemble de WPF
 
@@ -139,7 +139,7 @@ Namespace SDKSample
 End Namespace
 ```
 
-Dans cet exemple, le code-behind implémente une classe qui dérive de la classe <xref:System.Windows.Window> . L’attribut `x:Class` est utilisé pour associer le balisage à la classe code-behind. `InitializeComponent` est appelé depuis le constructeur de la classe code-behind pour fusionner l’interface utilisateur définie dans le balisage avec la classe code-behind. (`InitializeComponent` est généré pour vous lors de la génération de votre application, c’est pourquoi vous n’avez pas besoin de l’implémenter manuellement.) La combinaison de `x:Class` et `InitializeComponent` garantit la bonne initialisation de votre implémentation chaque fois qu’elle est créée. La classe code-behind implémente également un gestionnaire d’événements pour l’événement <xref:System.Windows.Controls.Primitives.ButtonBase.Click> du bouton. Quand vous cliquez sur le bouton, le gestionnaire d’événements affiche un message en appelant la méthode <xref:System.Windows.MessageBox.Show%2A?displayProperty=fullName> .
+Dans cet exemple, le code-behind implémente une classe qui dérive de la classe <xref:System.Windows.Window> . L’attribut `x:Class` est utilisé pour associer le balisage à la classe code-behind. `InitializeComponent` est appelé depuis le constructeur de la classe code-behind pour fusionner l’interface utilisateur définie dans le balisage avec la classe code-behind. (`InitializeComponent` est généré pour vous lors de la génération de votre application, c’est pourquoi vous n’avez pas besoin de l’implémenter manuellement.) La combinaison de `x:Class` et `InitializeComponent` garantir que votre implémentation est correctement initialisée chaque fois qu’elle est créée. La classe code-behind implémente également un gestionnaire d’événements pour l’événement <xref:System.Windows.Controls.Primitives.ButtonBase.Click> du bouton. Quand vous cliquez sur le bouton, le gestionnaire d’événements affiche un message en appelant la méthode <xref:System.Windows.MessageBox.Show%2A?displayProperty=fullName> .
 
 L’illustration suivante affiche le résultat obtenu quand vous cliquez sur le bouton.
 
@@ -197,7 +197,7 @@ Le système de disposition est exposé aux contrôles enfants par des classes WP
 
 - <xref:System.Windows.Controls.Canvas>: les contrôles enfants fournissent leur propre disposition.
 
-- <xref:System.Windows.Controls.DockPanel>: les contrôles enfants sont alignés aux bords du panneau.
+- <xref:System.Windows.Controls.DockPanel>:  les contrôles enfants sont alignés aux bords du panneau.
 
 - <xref:System.Windows.Controls.Grid>: les contrôles enfants sont positionnés en lignes et en colonnes.
 
@@ -205,7 +205,7 @@ Le système de disposition est exposé aux contrôles enfants par des classes WP
 
 - <xref:System.Windows.Controls.VirtualizingStackPanel>: les contrôles enfants sont virtualisés et réorganisés sur une seule ligne, verticale ou horizontale.
 
-- <xref:System.Windows.Controls.WrapPanel>: les contrôles enfants sont positionnés de gauche à droite et renvoyés à la ligne suivante quand il y a plus de contrôles sur la ligne actuelle que l’espace ne l’autorise.
+- <xref:System.Windows.Controls.WrapPanel>: les contrôles enfants sont positionnés de gauche à droite et renvoyés à la ligne suivante lorsqu’il y a plus de contrôles sur la ligne actuelle que l’espace ne l’autorise.
 
 L’exemple suivant utilise un <xref:System.Windows.Controls.DockPanel> pour disposer plusieurs contrôles <xref:System.Windows.Controls.TextBox>.
 
@@ -398,7 +398,7 @@ L’illustration suivante affiche le résultat.
 
 ![Contrôle TextBox contenant du texte](../designers/media/wpfintrofigure21.png)
 
-Toutefois, d’autres contrôles peuvent contenir plusieurs éléments de différents types de contenu ; le contenu d’un <xref:System.Windows.Controls.Button>, spécifié par la propriété <xref:System.Windows.Controls.ContentControl.Content%2A>, peut contenir différents éléments, y compris des contrôles de disposition, du texte, des images et des formes. L’exemple suivant montre un <xref:System.Windows.Controls.Button> avec du contenu qui inclut un <xref:System.Windows.Controls.DockPanel>, une <xref:System.Windows.Controls.Label>, une <xref:System.Windows.Controls.Border>et un <xref:System.Windows.Controls.MediaElement>.
+Toutefois, d’autres contrôles peuvent contenir plusieurs éléments de différents types de contenu ; le contenu d’un <xref:System.Windows.Controls.Button>, spécifié par la propriété <xref:System.Windows.Controls.ContentControl.Content%2A>, peut contenir différents éléments, y compris des contrôles de disposition, du texte, des images et des formes. L’exemple suivant montre un <xref:System.Windows.Controls.Button> avec du contenu qui inclut un <xref:System.Windows.Controls.DockPanel>, une <xref:System.Windows.Controls.Label>, une <xref:System.Windows.Controls.Border> et un <xref:System.Windows.Controls.MediaElement>.
 
 ```xaml
 <Window
@@ -453,7 +453,7 @@ Alors qu’un modèle de contrôle vous permet de spécifier l’apparence d’u
 
 ![Zone de liste avec une apparence par défaut](../designers/media/wpfintrofigure18.png)
 
-L’apparence par défaut correspond à ce que vous pourriez attendre d’une <xref:System.Windows.Controls.ListBox>. Toutefois, l’apparence par défaut de chaque tâche ne contient que le nom de la tâche. Pour afficher le nom, la description et la priorité de la tâche, l’apparence par défaut des éléments de liste liés du contrôle <xref:System.Windows.Controls.ListBox> doit être modifiée à l’aide d’un <xref:System.Windows.DataTemplate>. Le code XAML suivant définit ce type de <xref:System.Windows.DataTemplate>appliqué à chaque tâche à l’aide de l’attribut <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> .
+L’apparence par défaut correspond à ce que vous pourriez attendre d’une <xref:System.Windows.Controls.ListBox>. Toutefois, l’apparence par défaut de chaque tâche ne contient que le nom de la tâche. Pour afficher le nom, la description et la priorité de la tâche, l’apparence par défaut des éléments de liste liés du contrôle <xref:System.Windows.Controls.ListBox> doit être modifiée à l’aide d’un <xref:System.Windows.DataTemplate>. Le code XAML suivant définit ce type de <xref:System.Windows.DataTemplate> appliqué à chaque tâche à l’aide de l’attribut <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A>.
 
 ```xaml
 <Window
@@ -666,7 +666,7 @@ Comme pour toute plateforme de développement, WPF peut être utilisé de diffé
 Nous avons examiné les fonctionnalités principales de WPF. Il est maintenant temps de créer votre première application WPF.
 
 > [!div class="nextstepaction"]
-> [Procédure pas à pas : Ma première application de bureau WPF](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)
+> [Procédure pas à pas : ma première application WPF pour poste de travail](/dotnet/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application)
 
 ## <a name="see-also"></a>Voir aussi
 

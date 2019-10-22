@@ -1,7 +1,7 @@
 ---
-title: Générer une application OpenGL ES sur Android et iOS | Microsoft Docs
+title: Créer une application OpenGL ES sur Android et iOS | Microsoft Docs
 ms.custom: ''
-ms.date: 09/17/2019
+ms.date: 10/09/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 dev_langs:
@@ -12,46 +12,46 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 259092668c336a90758a669efdc4b154b2097cab
-ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
+ms.openlocfilehash: a15902278e9a73488b315729a2db6e8fb5d53935
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71079266"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72588920"
 ---
 # <a name="build-an-opengl-es-application-on-android-and-ios"></a>Générer une application OpenGL ES sur Android et iOS
 
 Vous pouvez créer des solutions et des projets Visual Studio pour les applications iOS et Android qui partagent du code commun. Cet article vous guide tout au long d’un modèle de solution qui crée une application iOS simple et une application Android Native Activity. Les applications ont en commun une partie de code C++ qui utilise OpenGL ES pour afficher le même cube pivotant animé sur chaque plateforme. OpenGL ES (OpenGL for Embedded Systems ou GLES) est une API graphique 2D et 3D qui est prise en charge par de nombreux appareils mobiles.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>spécifications
 
-Avant de pouvoir créer une application OpenGL ES pour iOS et Android, assurez-vous que votre système répond à toutes les exigences. Si cela n’est pas déjà fait, installez le développement mobile avec charge de travail C++ dans Visual Studio Installer. Pour générer pour iOS, incluez les outils de développement iOS C++ facultatifs. Pour générer pour Android, installez les outils de développement C++ Android et les outils tiers requis : Android NDK, Apache Ant et Google Émulateur Android. Pour améliorer les performances de l’émulateur sur les plateformes Intel, nous vous recommandons d’installer également le Hardware Accelerated Execution Manager Intel (HAXM). Ensuite, configurez Intel HAXM et Émulateur Android à exécuter sur votre système. Pour obtenir plus d’informations et des instructions détaillées, consultez [Installer Visual C++ pour le développement mobile multiplateforme](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md).
+Avant de pouvoir créer une application OpenGL ES pour iOS et Android, assurez-vous que votre système répond à toutes les exigences. Si cela n’est pas déjà fait, installez le développement mobile avec charge de travail C++ dans Visual Studio Installer. Pour obtenir les modèles OpenGL ES et créer pour iOS, incluez les outils de C++ développement iOS facultatifs. Pour créer pour Android, installez les C++ outils de développement Android et les outils tiers requis : Android NDK, Apache Ant et Google émulateur Android. Pour améliorer les performances de l’émulateur sur les plateformes Intel, nous vous recommandons d’installer également le Hardware Accelerated Execution Manager Intel (HAXM). Ensuite, configurez Intel HAXM et Émulateur Android à exécuter sur votre système. Pour plus d’informations et pour obtenir des instructions détaillées, consultez [installer le développement C++mobile multiplateforme avec ](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md).
 
 Pour générer et tester l’application iOS, vous devez disposer d’un ordinateur Mac configuré conformément aux instructions d’installation. Pour plus d’informations sur la configuration requise pour développer du code pour iOS, consultez [Installer et configurer des outils de génération en utilisant iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md).
 
 ## <a name="create-a-new-opengles-application-project"></a>Créer un projet Application OpenGLES
 
-Dans ce didacticiel, vous allez d’abord créer un projet d’application OpenGL ES. puis générez et exécutez l’application par défaut dans l’émulateur Visual Studio pour Android. Ensuite, générez l’application pour iOS et exécutez l’application dans l’appareil iOS.
+Dans ce didacticiel, vous allez d’abord créer un projet d’application OpenGL ES. puis générez et exécutez l’application par défaut dans un émulateur Android. Ensuite, générez l’application pour iOS et exécutez l’application dans l’appareil iOS.
 
 ::: moniker range="vs-2017"
 
-1. Dans Visual Studio, choisissez **fichier** > **nouveau** > **projet**.
+1. Dans Visual Studio, choisissez **fichier** > **nouveau** **projet**>.
 
-1. Dans la boîte de dialogue **nouveau projet** , sous **modèles**, **Choisissez C++ Visual** > **multiplateforme**, puis le modèle **application opengls (Android, IOS)** .
+1. Dans la boîte de dialogue **nouveau projet** , sous **modèles**, **Choisissez C++ Visual** > **multiplateforme**, puis choisissez le modèle **applications OpenGL (Android, IOS)** .
 
 1. Donnez un nom à l’application, par exemple *MyOpenGLESApp*, puis choisissez **OK**.
 
-   ![Nouveau projet d’application OpenGLES](../cross-platform/media/cppmdd_opengles_newproj.PNG "CPPMDD_OpenGLES_NewProj")
+   ![Nouveau projet d’application OpenGLs](../cross-platform/media/cppmdd_opengles_newproj.PNG "CPPMDD_OpenGLES_NewProj")
 
    Visual Studio crée la solution et ouvre l’Explorateur de solutions.
 
-   ![MyOpenGLESApp dans l’Explorateur de solutions](../cross-platform/media/cppmdd_opengles_solexpl.PNG "CPPMDD_OpenGLES_SolExpl")
+   ![MyOpenGLESApp dans Explorateur de solutions](../cross-platform/media/cppmdd_opengles_solexpl.PNG "CPPMDD_OpenGLES_SolExpl")
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. Dans Visual Studio, choisissez **fichier** > **nouveau** > **projet**.
+1. Dans Visual Studio, choisissez **fichier** > **nouveau** **projet**>.
 
 1. Dans la boîte de dialogue **créer un nouveau projet** , sélectionnez le modèle **applications OpenGL (Android, IOS)** , puis choisissez **suivant**.
 
@@ -59,7 +59,7 @@ Dans ce didacticiel, vous allez d’abord créer un projet d’application OpenG
 
    Visual Studio crée la solution et ouvre l’Explorateur de solutions.
 
-   ![MyOpenGLESApp dans l’Explorateur de solutions](../cross-platform/media/cppmdd_opengles_solexpl.PNG "CPPMDD_OpenGLES_SolExpl")
+   ![MyOpenGLESApp dans Explorateur de solutions](../cross-platform/media/cppmdd_opengles_solexpl.PNG "CPPMDD_OpenGLES_SolExpl")
 
 ::: moniker-end
 
@@ -75,7 +75,7 @@ La solution comporte deux projets visant à générer des applications pour les 
 
 - `MyOpenGLESApp.Android.Packaging` crée le fichier *.apk* pour le déploiement sur un émulateur ou un appareil Android. Ce fichier contient les ressources et le fichier AndroidManifest.xml dans lequel vous avez défini les propriétés de manifeste. Il contient aussi le fichier *build.xml* qui contrôle le processus de génération Ant. Il est configuré comme projet de démarrage par défaut et peut donc être déployé et exécuté directement à partir de Visual Studio.
 
-- **MyOpenGLESApp.iOS.Application** contient les ressources et le code de type glue Objective-C nécessaires pour créer une application iOS liée au code de la bibliothèque statique C++ dans `MyOpenGLESApp.iOS.StaticLibrary`. Ce projet crée un package de build qui est transféré vers votre Mac par Visual Studio et l’agent distant. Quand vous générez ce projet, Visual Studio envoie les fichiers et les commandes pour générer et déployer votre application sur le Mac.
+- `MyOpenGLESApp.iOS.Application` contient les ressources et le code de collage objective-C pour créer une application iOS liée C++ au code de la bibliothèque statique dans `MyOpenGLESApp.iOS.StaticLibrary`. Ce projet crée un package de build qui est transféré vers votre Mac par Visual Studio et l’agent distant. Quand vous générez ce projet, Visual Studio envoie les fichiers et les commandes pour générer et déployer votre application sur le Mac.
 
 ## <a name="build-and-run-the-android-app"></a>Générer et exécuter l’application Android
 
@@ -85,17 +85,17 @@ La solution créée par le modèle définit l’application Android en tant que 
 
 1. Si ce n’est pas déjà fait, choisissez **x86** dans la liste déroulante **Plateformes Solution**.
 
-   ![Définir la plateforme de solution x86](../cross-platform/media/cppmdd_opengles_solutionplat.png "CPPMDD_OpenGLES_SolutionPlat")
+   ![Définir la plateforme de solution sur x86](../cross-platform/media/cppmdd_opengles_solutionplat.png "CPPMDD_OpenGLES_SolutionPlat")
 
    Utilisez x86 pour cibler l’émulateur. Pour cibler un appareil, choisissez la plateforme solution basée sur le processeur de l’appareil. Si la liste **Plateformes solution** n’est pas visible, choisissez **Plateformes solution** dans la liste **Ajouter/supprimer des boutons**, puis choisissez votre plateforme.
 
 1. Dans **l’Explorateur de solutions**, ouvrez le menu du projet `MyOpenGLESApp.Android.Packaging`, puis choisissez **Générer**.
 
-   ![Générer un projet de package Android](../cross-platform/media/cppmdd_opengles_andbuild.png "CPPMDD_OpenGLES_AndBuild")
+   ![Créer un projet d’empaquetage Android](../cross-platform/media/cppmdd_opengles_andbuild.png "CPPMDD_OpenGLES_AndBuild")
 
    La fenêtre Sortie affiche la sortie du processus de génération pour la bibliothèque partagée Android et l’application Android.
 
-   ![Générer la sortie de projets Android](../cross-platform/media/cppmdd_opengles_andoutput.png "CPPMDD_OpenGLES_AndOutput")
+   ![Sortie de génération pour les projets Android](../cross-platform/media/cppmdd_opengles_andoutput.png "CPPMDD_OpenGLES_AndOutput")
 
 1. Sélectionnez l’un des profils d’appareil Android émulé comme cible de déploiement.
 
@@ -103,11 +103,11 @@ La solution créée par le modèle définit l’application Android en tant que 
 
    Si vous avez installé d’autres émulateurs ou si vous avez connecté un appareil Android, vous pouvez les choisir dans la liste déroulante de cible de déploiement. Pour exécuter l’application, la Plateforme Solution intégrée doit correspondre à la plateforme de l’appareil cible.
 
-1. Appuyez sur F5 pour démarrer le débogage, ou sur Maj+F5 pour démarrer sans débogage.
+1. Appuyez sur **F5** pour démarrer le débogage, ou sur **MAJ** +**F5** pour démarrer sans débogage.
 
    Visual Studio démarre l’émulateur qui, après quelques secondes, charge et déploie votre code. Voici comment l’application apparaît dans l’émulateur :
 
-   ![Application en cours d’exécution dans l’émulateur Android](../cross-platform/media/cppmdd_opengles_andemulator.png "CPPMDD_OpenGLES_AndEmulator")
+   ![Application en cours d’exécution dans Émulateur Android](../cross-platform/media/cppmdd_opengles_andemulator.png "CPPMDD_OpenGLES_AndEmulator")
 
    Une fois l’application démarrée, vous pouvez définir des points d’arrêt et utiliser le débogueur pour parcourir le code, examiner les variables locales et observer les valeurs.
 
@@ -127,7 +127,7 @@ Pour déployer une application iOS sur un appareil iOS, vous devez également co
 
 ### <a name="to-set-up-automatic-signing-on-xcode"></a>Pour configurer la signature automatique sur Xcode
 
-1. Si ce n’est pas déjà fait, installez [Xcode](https://developer.apple.com/xcode/downloads/) version 10.2.1 ou version ultérieure sur votre Mac.
+1. Si vous ne l’avez pas déjà fait, installez [Xcode](https://developer.apple.com/xcode/) sur votre Mac.
 
 1. Ouvrez l’application Xcode sur votre Mac.
 
@@ -137,7 +137,7 @@ Pour déployer une application iOS sur un appareil iOS, vous devez également co
 
 1. À partir des paramètres « Général » du projet Xcode, remplacez la valeur **identificateur du Bundle** par `com.<NameOfVSProject>`, où `<NameOfVSProject>` est le même nom que le projet de solution Visual Studio que vous avez créé. Par exemple, si vous avez créé un projet appelé `MyOpenGLESApp` sur Visual Studio, puis défini **identificateur du Bundle** sur `com.MyOpenGLESApp`.
 
-   ![Identificateur du bundle Xcode](../cross-platform/media/cppmdd-opengles-iosxcodeid.png "CPPMDD_OpenGLES_iOSXcodeId")
+   ![Identificateur de Bundle Xcode](../cross-platform/media/cppmdd-opengles-iosxcodeid.png "CPPMDD_OpenGLES_iOSXcodeId")
 
 1. Pour activer la signature automatique, vérifiez. Gestion automatique des signatures**.
 
@@ -151,13 +151,13 @@ Pour déployer une application iOS sur un appareil iOS, vous devez également co
 
 1. Exécutez l’agent distant sur votre Mac et vérifiez que Visual Studio est associé à l’agent distant. Pour démarrer l’agent distant, ouvrez une fenêtre d’application Terminal et entrez `vcremote`. Pour plus d’informations, consultez [Configurer l’agent distant dans Visual Studio](../cross-platform/install-and-configure-tools-to-build-using-ios.md#ConfigureVS).
 
-   ![Fenêtre Terminal Mac exécutant vcremote](../cross-platform/media/cppmdd_common_vcremote.png "CPPMDD_common_vcremote")
+   ![Fenêtre de terminal Mac exécutant vcremote](../cross-platform/media/cppmdd_common_vcremote.png "CPPMDD_common_vcremote")
 
 1. Joindre un appareil iOS à votre Mac. Lorsque vous joignez votre appareil à un ordinateur pour la première fois, une alerte vous demande si vous faites confiance à l’ordinateur pour accéder à votre appareil. Permettez à l’appareil de faire confiance à l’ordinateur Mac.
 
 1. Dans Visual Studio, si elle n’est pas déjà sélectionnée, choisissez la plateforme solution à partir de la liste déroulante **Plateformes Solution**, selon le processeur de votre appareil. Dans cet exemple, il s’agit d’un processeur **ARM64**.
 
-   ![Définir la plateforme solution sur ARM64](../cross-platform/media/cppmdd-opengles-pickplatformarm64.png "CPPMDD_OpenGLES_SolutionPlatARM64")
+   ![Définir la plateforme de la solution sur ARM64](../cross-platform/media/cppmdd-opengles-pickplatformarm64.png "CPPMDD_OpenGLES_SolutionPlatARM64")
 
 1. Dans l’Explorateur de solutions, ouvrez le menu contextuel du projet MyOpenGLESApp.iOS.Application, puis choisissez **Décharger le projet** pour décharger le projet.
 
@@ -169,7 +169,7 @@ Pour déployer une application iOS sur un appareil iOS, vous devez également co
 
 1. Générez à présent le projet MyOpenGLESApp.iOS.Application en ouvrant le menu contextuel du projet et en choisissant **Build**.
 
-   ![Générer un projet d’application iOS](../cross-platform/media/cppmdd_opengles_iosbuild.png "CPPMDD_OpenGLES_iOSBuild")
+   ![Créer un projet d’application iOS](../cross-platform/media/cppmdd_opengles_iosbuild.png "CPPMDD_OpenGLES_iOSBuild")
 
    La fenêtre Sortie affiche la sortie du processus de génération pour la bibliothèque statique iOS et l’application iOS. Sur le Mac, la fenêtre Terminal exécutant l’agent distant affiche la commande et l’activité de transfert de fichier.
 
@@ -177,7 +177,7 @@ Pour déployer une application iOS sur un appareil iOS, vous devez également co
 
 1. Choisissez votre appareil iOS dans la barre d’outils pour exécuter l’application sur votre périphérique joint à votre Mac. Si l’application ne démarre pas, vérifiez que l’appareil autorise votre application déployée à s’exécuter sur l’appareil. Cette autorisation peut être définie en accédant à **Paramètres** > **Général** > **Gestion des périphériques** sur l’appareil. Sélectionnez votre compte d’application développeur, faites confiance à votre compte et vérifiez l’application. Essayez à nouveau d’exécuter l’application à partir de Visual Studio.
 
-   ![Application iOS sur un appareil iOS](../cross-platform/media/cppmdd-opengles-iosdevice.png "CPPMDD_OpenGLES_iOSDevice")
+   ![application iOS sur un appareil iOS](../cross-platform/media/cppmdd-opengles-iosdevice.png "CPPMDD_OpenGLES_iOSDevice")
 
    Une fois l’application démarrée, vous pouvez définir des points d’arrêt et utiliser le débogueur Visual Studio pour examiner les variables locales, consulter la pile des appels et observer les valeurs.
 

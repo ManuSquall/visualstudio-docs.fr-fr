@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 978313276865c15672a129db601543a0ca307d5b
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: 47f709ae086a32c0680fca060744898251a76afd
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263028"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72589143"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Déboguer une application JavaScript ou TypeScript dans Visual Studio
 
@@ -90,7 +90,9 @@ Pour attacher le débogueur depuis Visual Studio et atteindre des points d’arr
 
     ![Attacher au processus](../javascript/media/tutorial-nodejs-react-attach-to-process.png)
 
+    ::: moniker range="vs-2017"
     Vous savez que le débogueur est correctement attaché quand l’Explorateur DOM et la console JavaScript s’ouvrent dans Visual Studio. Ces outils de débogage sont similaires aux outils de développement Chrome et aux outils F12 pour Microsoft Edge.
+    ::: moniker-end
 
     > [!NOTE]
     > Si le débogueur ne s’attache pas et que vous voyez le message « Impossible de s’attacher au processus. Une opération n’est pas légale dans l’état actuel. », utilisez le Gestionnaire des tâches pour fermer toutes les instances de Chrome avant de démarrer Chrome en mode débogage. Les extensions Chrome peuvent être en cours d’exécution et empêcher le mode débogage complet.
@@ -125,7 +127,7 @@ Afin de configurer les paramètres avancés pour les mappages de sources, utilis
 
 ### <a name="configure-source-maps-using-a-tsconfigjson-file"></a>Configurer des mappages de sources à l’aide d’un fichier tsconfig.json
 
-Si vous ajoutez un fichier *tsconfig.json* à votre projet, Visual Studio traite la racine du répertoire comme un projet TypeScript. Pour ajouter le fichier, cliquez avec le bouton droit sur votre projet dans l’Explorateur de solutions, puis choisissez **Add (Ajouter) > New Item (Nouvel élément) > Web > Scripts > TypeScript JSON Configuration File (Fichier de configuration JSON TypeScript)**. Un fichier *tsconfig.json* comme ce qui suit est ajouté à votre projet.
+Si vous ajoutez un fichier *tsconfig.json* à votre projet, Visual Studio traite la racine du répertoire comme un projet TypeScript. Pour ajouter le fichier, cliquez avec le bouton droit sur votre projet dans l’Explorateur de solutions, puis choisissez **Add (Ajouter) > New Item (Nouvel élément) > Web > Scripts > TypeScript JSON Configuration File (Fichier de configuration JSON TypeScript)** . Un fichier *tsconfig.json* comme ce qui suit est ajouté à votre projet.
 
 ```json
 {
@@ -145,11 +147,11 @@ Si vous ajoutez un fichier *tsconfig.json* à votre projet, Visual Studio traite
 
 #### <a name="compiler-options-for-tsconfigjson"></a>Options du compilateur pour tsconfig.json
 
-* **inlineSourceMap** : émettre un seul fichier avec des mappages de sources au lieu de créer un mappage de source distinct pour chaque fichier source.
-* **inlineSources** : émettre la source en même temps que les mappages de sources au sein d’un seul fichier ; nécessite la définition de *inlineSourceMap* ou de *sourceMap*.
-* **mapRoot** : spécifie l’emplacement où le débogueur doit trouver les fichiers du mappage de source (*.map*) au lieu de l’emplacement par défaut. Utilisez cet indicateur si les fichiers runtime *.map* doivent se trouver dans un emplacement autre que les fichiers *.js*. L’emplacement spécifié est incorporé dans le mappage de source pour diriger le débogueur vers l’emplacement des fichiers *.map*.
-* **sourceMap** : génère le fichier *.map* correspondant.
-* **sourceRoot** : spécifie l’emplacement où le débogueur doit trouver les fichiers TypeScript au lieu des emplacements sources. Utilisez cet indicateur si les sources runtime doivent se trouver dans un emplacement autre que celui défini au moment de la conception. L’emplacement spécifié est incorporé dans le mappage de source pour diriger le débogueur vers l’emplacement des fichiers sources.
+* **inlineSourceMap**: émettez un fichier unique avec les mappages de source au lieu de créer un mappage source distinct pour chaque fichier source.
+* **inlineSources**: émettez la source avec les mappages de source dans un seul fichier ; requiert la définition de *inlineSourceMap* ou *mappage* .
+* **mapRoot**: spécifie l’emplacement où le débogueur doit rechercher les fichiers de mappage source ( *. map*) à la place de l’emplacement par défaut. Utilisez cet indicateur si les fichiers runtime *.map* doivent se trouver dans un emplacement autre que les fichiers *.js*. L’emplacement spécifié est incorporé dans le mappage de source pour diriger le débogueur vers l’emplacement des fichiers *.map*.
+* **mappage**: génère un fichier *. map* correspondant.
+* **SourceRoot**: spécifie l’emplacement où le débogueur doit rechercher les fichiers de machine à écrire au lieu des emplacements sources. Utilisez cet indicateur si les sources runtime doivent se trouver dans un emplacement autre que celui défini au moment de la conception. L’emplacement spécifié est incorporé dans le mappage de source pour diriger le débogueur vers l’emplacement des fichiers sources.
 
 Pour plus d’informations sur les options du compilateur, consultez la page [Options du compilateur](https://www.typescriptlang.org/docs/handbook/compiler-options.html) dans le manuel TypeScript.
 
@@ -159,9 +161,9 @@ Vous pouvez également configurer les paramètres des mappages de sources à l�
 
 Ces paramètres de projet sont disponibles.
 
-* **Générer des mappages de sources** (équivalent à **sourceMap** dans *tsconfig.json*) : génère le fichier *.map* correspondant.
-* **Spécifier le répertoire racine des mappages de sources** (équivalent à **mapRoot** dans *tsconfig.json*) : spécifie l’emplacement où le débogueur doit trouver les fichiers de mappages au lieu des emplacements générés. Utilisez cet indicateur si les fichiers runtime *.map* doivent se trouver dans un emplacement autre que les fichiers .js. L’emplacement spécifié est incorporé dans le mappage de source pour diriger le débogueur vers l’emplacement des fichiers de mappages.
-* **Spécifier le répertoire racine des fichiers TypeScript** (équivalent à **sourceRoot** dans *tsconfig.json*) : spécifie l’emplacement où le débogueur doit trouver les fichiers TypeScript au lieu des emplacements sources. Utilisez cet indicateur si les fichiers sources runtime doivent se trouver dans un emplacement autre que celui défini au moment de la conception. L’emplacement spécifié est incorporé dans le mappage de source pour diriger le débogueur vers l’emplacement des fichiers sources.
+* **Générer des mappages de source** (équivalent à **mappage** dans *tsconfig. JSON*) : génère le fichier *. map* correspondant.
+* **Spécifiez le répertoire racine des mappages de sources** (équivalent à **mapRoot** dans *tsconfig. JSON*) : spécifie l’emplacement où le débogueur doit trouver les fichiers de mappage au lieu des emplacements générés. Utilisez cet indicateur si les fichiers runtime *.map* doivent se trouver dans un emplacement autre que les fichiers .js. L’emplacement spécifié est incorporé dans le mappage de source pour diriger le débogueur vers l’emplacement des fichiers de mappages.
+* **Spécifier le répertoire racine des fichiers de base de** code (équivalent à **SourceRoot** dans *tsconfig. JSON*) : spécifie l’emplacement où le débogueur doit rechercher les fichiers de définition de code au lieu des emplacements sources. Utilisez cet indicateur si les fichiers sources runtime doivent se trouver dans un emplacement autre que celui défini au moment de la conception. L’emplacement spécifié est incorporé dans le mappage de source pour diriger le débogueur vers l’emplacement des fichiers sources.
 
 ## <a name="debug-javascript-in-dynamic-files-using-razor-aspnet"></a>Déboguer JavaScript dans des fichiers dynamiques à l’aide de Razor (ASP.NET)
 
@@ -169,14 +171,14 @@ Visual Studio offre des fonctionnalités de débogage dans Chrome et Internet Ex
 
 Le débogage des fichiers générés dynamiquement n’est pas automatique. Vous ne pouvez pas atteindre automatiquement des points d’arrêt dans les fichiers générés avec la syntaxe Razor (cshtml, vbhtml). Il existe deux approches permettant de déboguer ce type de fichier :
 
-* **Placer l’instruction `debugger;` où vous souhaitez créer le point d’arrêt** : cela interrompt l’exécution du script dynamique et démarre aussitôt le débogage pendant la création de ce script.
-* **Charger la page et ouvrir le document dynamique dans Visual Studio** : pour que cette méthode fonctionne, vous devrez ouvrir le fichier dynamique pendant le débogage, définir votre point d’arrêt, puis actualiser la page. Selon que vous utilisez Chrome ou Internet Explorer, vous trouverez le fichier en utilisant l’une des stratégies suivantes :
+* **Placez l’instruction `debugger;` à l’endroit où vous souhaitez**arrêter l’exécution : le script dynamique arrête alors l’exécution et démarre immédiatement le débogage pendant sa création.
+* **Charger la page et ouvrir le document dynamique sur Visual Studio**: vous devez ouvrir le fichier dynamique pendant le débogage, définir votre point d’arrêt et actualiser la page pour que cette méthode fonctionne. Selon que vous utilisez Chrome ou Internet Explorer, vous trouverez le fichier en utilisant l’une des stratégies suivantes :
 
-   Pour Chrome, accédez à l’**Explorateur de solutions > Script Documents (Documents de script) > YourPageName (Nom de votre page)**.
+   Pour Chrome, accédez à l’**Explorateur de solutions > Script Documents (Documents de script) > YourPageName (Nom de votre page)** .
 
     > [!NOTE]
-    > Quand vous utilisez Chrome, vous pouvez éventuellement recevoir un message indiquant qu’**aucune source n’est disponible entre les balises \<script>**. Cela n’est pas un problème, continuez simplement le débogage.
+    > Quand vous utilisez Chrome, vous pouvez éventuellement recevoir un message indiquant qu’**aucune source n’est disponible entre les balises \<script>** . Cela n’est pas un problème, continuez simplement le débogage.
 
-   Pour Internet Explorer, accédez à **l’Explorateur de solutions > Script Documents (Documents de script) > Windows Internet Explorer > YourPageName (Nom de votre page)**.
+   Pour Internet Explorer, accédez à **l’Explorateur de solutions > Script Documents (Documents de script) > Windows Internet Explorer > YourPageName (Nom de votre page)** .
 
 Pour plus d’informations, consultez [Débogage côté client de projets ASP.NET dans Google Chrome](https://devblogs.microsoft.com/aspnet/client-side-debugging-of-asp-net-projects-in-google-chrome/).

@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - testing tools [Visual Studio]
 - unit tests [Visual Studio]
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 153624ec6f0bdb13e4d89a92edf977d0badc7e62
-ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: b68793e512cdb367375cc9f27d61ae5a85e4f078
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68712217"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653280"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Outils de test dans Visual Studio
 
@@ -39,7 +39,7 @@ La fenêtre **Explorateur de tests** permet aux développeurs de créer, gérer 
 * [Bien démarrer avec les tests unitaires](unit-test-your-code.md)
 * [Exécuter des tests unitaires avec l’Explorateur de tests](run-unit-tests-with-test-explorer.md)
 * [Questions fréquentes (FAQ) sur l’Explorateur de tests](test-explorer-faq.md)
-* [Installer des frameworks de tests unitaires tiers](install-third-party-unit-test-frameworks.md)
+* [Installer des infrastructures de tests unitaires tierces](install-third-party-unit-test-frameworks.md)
 
 Visual Studio est également extensible et accepte les adaptateurs de tests unitaires tiers comme NUnit et xUnit.net. En outre, la fonctionnalité de clonage de code va de pair avec des logiciels de haute qualité en vous aidant à identifier les blocs de code sémantiquement similaires qui peuvent faire l’objet d’une refactorisation ou de correctifs de bogues courants.
 

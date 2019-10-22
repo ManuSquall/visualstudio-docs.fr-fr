@@ -16,16 +16,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 521092c26ba585381aa094f6b1b348365300bc10
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7b61147467ff27ec8b69e1a2fddfcd00138065fa
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62907015"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72589053"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>Déboguer du code JavaScript à l’aide de la console dans Visual Studio
 
-Vous pouvez utiliser la fenêtre de JavaScript Console pour interagir avec et déboguer des applications UWP générées à l’aide de JavaScript. Ces fonctionnalités sont prises en charge pour les applications UWP et les applications créées à l’aide de Visual Studio Tools pour Apache Cordova. Pour obtenir la référence des commandes de la console, voir [JavaScript Console commands](../debugger/javascript-console-commands.md).
+Vous pouvez utiliser la fenêtre de la console JavaScript pour interagir avec et déboguer des applications UWP générées à l’aide de JavaScript. Ces fonctionnalités sont prises en charge pour les applications UWP et les applications créées à l’aide de Visual Studio Tools pour Apache Cordova. Pour obtenir la référence des commandes de la console, voir [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017).
 
 La fenêtre de la console JavaScript permet les actions suivantes :
 
@@ -39,12 +39,12 @@ La fenêtre de la console JavaScript permet les actions suivantes :
 
 - Afficher les erreurs et les exceptions JavaScript, en plus des exceptions du modèle DOM et Windows Runtime.
 
-- Effectuer d’autres tâches, telles que l’effacement de l’écran. Consultez [JavaScript Console commands](../debugger/javascript-console-commands.md) pour obtenir la liste complète des commandes.
+- Effectuer d’autres tâches, telles que l’effacement de l’écran. Consultez [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017) pour obtenir la liste complète des commandes.
 
 > [!TIP]
 > Si la fenêtre de la console JavaScript est fermée, sélectionnez **Déboguer**> **Fenêtres** > **Console JavaScript** pour la rouvrir. La fenêtre s’ouvre uniquement pendant une session de débogage de script.
 
-À l’aide de la fenêtre de la console JavaScript, vous pouvez interagir avec votre application sans interrompre et redémarrer le débogueur. Pour plus d’informations, consultez [actualiser une application (JavaScript)](../debugger/refresh-an-app-javascript.md). Pour plus d’informations sur les fonctionnalités, comme à l’aide de l’Explorateur DOM et la définition des points d’arrêt, de débogage de JavaScript, consultez [Guide de démarrage rapide : Déboguer le code HTML et CSS](../debugger/quickstart-debug-html-and-css.md) et [déboguer des applications dans Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps).
+À l’aide de la fenêtre de la console JavaScript, vous pouvez interagir avec votre application sans interrompre et redémarrer le débogueur. Pour plus d’informations, consultez [actualiser une application (JavaScript)](../debugger/refresh-an-app-javascript.md). Pour plus d’informations sur d’autres fonctionnalités de débogage JavaScript, telles que l’utilisation de l’Explorateur DOM et la définition de points d’arrêt, consultez [démarrage rapide : déboguer des applications HTML et CSS](../debugger/quickstart-debug-html-and-css.md) et [Déboguer des applications dans Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps).
 
 ## <a name="InteractiveConsole"></a> Débogage à l’aide de la fenêtre de la console JavaScript
 La procédure suivante crée une application `FlipView` et montre comment déboguer interactivement une erreur de codage JavaScript.
@@ -56,11 +56,11 @@ La procédure suivante crée une application `FlipView` et montre comment débog
 
 1. Créez une solution dans Visual Studio en sélectionnant **Fichier** > **Nouveau projet**.
 
-2. Choisissez **JavaScript** > **Windows universel**, puis choisissez **WinJS application**.
+2. Choisissez **JavaScript**  > **Windows Universal**, puis choisissez **application WinJS**.
 
 3. Attribuez un nom au projet, tel que `FlipViewApp`, puis choisissez **OK** pour créer l’application.
 
-4. Dans l’élément BODY de index.html, remplacez le code HTML existant par ce code :
+4. Dans l’élément BODY de index. html, remplacez le code HTML existant par le code suivant :
 
     ```html
     <div id="flipTemplate" data-win-control="WinJS.Binding.Template"
@@ -136,19 +136,19 @@ La procédure suivante crée une application `FlipView` et montre comment débog
     })();
     ```
 
-7. Si une cible de débogage n’est pas déjà sélectionnée, choisissez **ordinateur Local** à partir de la liste déroulante liste en regard du **appareil** bouton sur le **déboguer** barre d’outils :
+7. Si une cible de débogage n’est pas déjà sélectionnée, choisissez **ordinateur local** dans la liste déroulante en regard du bouton **périphérique** de la barre d’outils **Déboguer** :
 
-    ![Liste cible de débogage sélectionnez](../debugger/media/js_select_target.png "JS_Select_Target")
+    ![Sélectionner la liste de cibles de débogage](../debugger/media/js_select_target.png "JS_Select_Target")
 
 8. Appuyez sur F5 pour démarrer le débogueur.
 
     L’application fonctionne mais les images sont absentes. Les erreurs APPHOST dans la fenêtre de console JavaScript indiquent que les images sont absentes.
 
-9. Avec le `FlipView` application en cours d’exécution, le type `Data.items` dans l’invite d’entrée de la fenêtre de console (à côté du « >> » symbole) et appuyez sur ENTRÉE.
+9. Une fois l’application `FlipView` en cours d’exécution, tapez `Data.items` dans l’invite d’entrée de la fenêtre de la console (à côté du symbole « > > ») et appuyez sur entrée.
 
     Un visualiseur pour l’objet `items` apparaît dans la fenêtre de la console. Cela indique que l’objet `items` a été instancié et qu’il est disponible dans le contexte de script actif. Dans la fenêtre de la console, cliquez sur les nœuds d’un objet pour afficher les valeurs des propriétés (ou utilisez les touches de direction). Si vous cliquez sur l’objet `items._data` , comme le montre l’illustration suivante, vous pouvez noter que les références à la source de l’image sont incorrectes, comme prévu. Les images par défaut (logo.png) sont encore présentes dans l’objet, et des images manquantes sont intercalées avec des images attendues.
 
-    ![Fenêtre de JavaScript Console](../debugger/media/js_console_window.png "JS_Console_Window")
+    ![Fenêtre de la console JavaScript](../debugger/media/js_console_window.png "JS_Console_Window")
 
     Remarquez aussi que l’objet `items._data` comporte bien plus d’éléments que vous ne pouviez le prévoir.
 
@@ -184,7 +184,7 @@ La procédure suivante crée une application `FlipView` et montre comment débog
 
 15. Tapez `Data.items.length = 3` à l’invite et appuyez sur Entrée. Cela supprime les éléments étrangers des données.
 
-16. Vérifiez de nouveau l’application, et vous verrez que les images correctes se trouvent sur le bon `FlipView` pages.
+16. Vérifiez à nouveau l’application, et vous verrez que les images correctes se trouvent sur les pages de `FlipView` appropriées.
 
 17. Dans l’explorateur DOM, vous pouvez voir l’élément DIV mis à jour et naviguer dans la sous-arborescence pour rechercher les éléments IMG attendus.
 
@@ -201,13 +201,13 @@ Lorsqu’un programme est en mode arrêt, vous pouvez utiliser la fenêtre de la
 
 1. Dans le fichier default.html de l’application `FlipView` que vous avez créée précédemment, ouvrez le menu contextuel de la fonction `updateImages()` et sélectionnez **Point d’arrêt** > **Insérer un point d’arrêt**.
 
-2. Choisissez **ordinateur Local** dans la liste déroulante liste en regard du **démarrer le débogage** bouton sur le **déboguer** barre d’outils.
+2. Sélectionnez **ordinateur local** dans la liste déroulante en regard du bouton **Démarrer le débogage** de la barre d’outils **Déboguer** .
 
 3. Sélectionnez **Déboguer** > **Démarrer le débogage**ou appuyez sur F5.
 
     L’application passe en mode arrêt lorsque l’exécution atteint la fonction `updateImages()` , et la ligne en cours du programme d’exécution est mise en surbrillance en jaune.
 
-    ![Utilisation du mode arrêt avec la JavaScript Console](../debugger/media/js_breakmode.png "JS_BreakMode")
+    ![Utilisation du mode arrêt avec la console JavaScript](../debugger/media/js_breakmode.png "JS_BreakMode")
 
     Modifiez les valeurs des variables pour changer immédiatement l’état du programme sans mettre fin à la session de débogage en cours.
 
@@ -217,7 +217,7 @@ Lorsqu’un programme est en mode arrêt, vous pouvez utiliser la fenêtre de la
 
     L’illustration suivante présente la fenêtre de la console à ce stade.
 
-    ![Fenêtre de Console JavaScript affichant un visualiseur](../debugger/media/js_console_function_visualizer.png "JS_Console_Function_Visualizer")
+    ![Fenêtre de la console JavaScript avec un visualiseur](../debugger/media/js_console_function_visualizer.png "JS_Console_Function_Visualizer")
 
 6. Copiez une ligne de la fonction depuis la fenêtre de sortie dans l’invite d’entrée, puis remplacez la valeur d’index par 3 :
 
@@ -245,15 +245,15 @@ La fenêtre de la console JavaScript vous permet d’interagir avec un seul cont
 
 L’illustration suivante montre la liste Cible dans la fenêtre de la console JavaScript.
 
-![Cibler la sélection dans la fenêtre de console JavaScript](../debugger/media/js_console_target.png "JS_Console_Target")
+![Sélection de la cible dans la fenêtre de la console JavaScript](../debugger/media/js_console_target.png "JS_Console_Target")
 
 Vous pouvez aussi basculer le contexte d’exécution à l’aide de la commande `cd` , mais vous devez connaître le nom de l’autre contexte d’exécution et la référence que vous devez utiliser dans la portée. La liste **Cible** offre le meilleur accès aux autres contextes d’exécution.
 
 ## <a name="see-also"></a>Voir aussi
 - [Déboguer des applications dans Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
-- [Commandes de la console JavaScript](../debugger/javascript-console-commands.md)
+- [Commandes de la console JavaScript](../debugger/javascript-console-commands.md?view=vs-2017)
 - [Actualiser une application (JavaScript)](../debugger/refresh-an-app-javascript.md)
-- [Raccourcis clavier](../debugger/keyboard-shortcuts-html-and-javascript.md)
+- [Raccourcis clavier](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017)
 - [Déboguer un exemple de code HTML, CSS et JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)
 - [Démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md)
 - [Déboguer un contrôle WebView](../debugger/debug-a-webview-control.md)

@@ -6,17 +6,17 @@ apiname:
 - XAttribute.Value
 apitype: Assembly
 ms.assetid: 019733d2-e050-4120-b537-831cd3fc008e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe9127d4a7c691c34f15d399bd32f5e48cc6f0ed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: fefa3d13f1a38b5d1c329fa9df9220e13e769b1c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62892818"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72634515"
 ---
 # <a name="value-xattribute-dynamic-property"></a>Value (propriété dynamique XAttribute)
 
@@ -38,12 +38,12 @@ attrib.Value
 | - |---------------|
 |<xref:System.ArgumentNullException>|Lors de la définition, `value` a la valeur `null`.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
 Cette propriété est équivalente à la propriété <xref:System.Xml.Linq.XAttribute.Value%2A> de la classe <xref:System.Xml.Linq.XAttribute?displayProperty=fullName>, mais cette propriété dynamique prend également en charge les notifications de changement.
 
 ## <a name="see-also"></a>Voir aussi
 
 - <xref:System.Xml.Linq.XAttribute.Value%2A?displayProperty=fullName>
-- [Propriétés dynamiques de la classe XAttribute](../designers/xattribute-class-dynamic-properties.md)
+- [Propriétés dynamiques de la classe XAttribute](../designers/value-xattribute-dynamic-property.md)
 - [Attribut](../designers/attribute-xelement-dynamic-property.md)

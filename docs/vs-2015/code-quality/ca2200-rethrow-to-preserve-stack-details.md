@@ -1,5 +1,5 @@
 ---
-title: 'CA2200 : Rethrow pour conserver les détails de la pile | Microsoft Docs'
+title: 'Ca2200 : lever à nouveau pour conserver les détails de la pile | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,40 +12,40 @@ helpviewer_keywords:
 - RethrowToPreserveStackDetails
 ms.assetid: 046e1b98-c4dc-4515-874f-9c0de2285621
 caps.latest.revision: 15
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ed2dd2884268511ae05ac89c132f73fdf8b2771e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d20407d7cc708ac785e4a792bf8e64768ea58540
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68201638"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667387"
 ---
-# <a name="ca2200-rethrow-to-preserve-stack-details"></a>CA2200 : Levez à nouveau une exception pour conserver les détails de la pile
+# <a name="ca2200-rethrow-to-preserve-stack-details"></a>CA2200 : Levez à nouveau une exception pour conserver les détails de la pile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|RethrowToPreserveStackDetails|
 |CheckId|CA2200|
-|Catégorie|Microsoft.Usage|
+|Category|Microsoft. usage|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
- Une exception est levée de nouveau et l’exception est explicitement spécifiée dans le `throw` instruction.
+ Une exception est levée à nouveau et l’exception est explicitement spécifiée dans l’instruction `throw`.
 
 ## <a name="rule-description"></a>Description de la règle
- Une fois qu’une exception est levée, partie des informations qu’il transporte est la trace de pile. La trace de pile est une liste de la hiérarchie d’appels de méthode qui commence par la méthode qui lève l’exception et se termine par la méthode qui intercepte l’exception. Si une exception est levée à nouveau en spécifiant l’exception dans le `throw` instruction, la trace de pile est redémarrée à la méthode actuelle et la liste d’appels de méthode entre la méthode d’origine qui a levé l’exception et la méthode actuelle est perdue. Pour conserver les informations de trace de pile d’origine avec l’exception, utilisez la `throw` instruction sans spécifier l’exception.
+ Une fois qu’une exception est levée, une partie des informations qu’elle contient est la trace de la pile. La trace de la pile est une liste de la hiérarchie d’appels de méthode qui commence par la méthode qui lève l’exception et se termine par la méthode qui intercepte l’exception. Si une exception est levée à nouveau en spécifiant l’exception dans l’instruction `throw`, la trace de la pile est redémarrée au niveau de la méthode actuelle et la liste des appels de méthode entre la méthode d’origine qui a levé l’exception et la méthode actuelle est perdue. Pour conserver les informations de trace de la pile d’origine avec l’exception, utilisez l’instruction `throw` sans spécifier l’exception.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, lever à nouveau l’exception sans spécifier explicitement.
+ Pour corriger une violation de cette règle, levez à nouveau l’exception sans spécifier explicitement l’exception.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Ne supprimez aucun avertissement de cette règle.
 
 ## <a name="example"></a>Exemple
- L’exemple suivant montre une méthode, `CatchAndRethrowExplicitly`, ce qui viole la règle et une méthode, `CatchAndRethrowImplicitly`, ce qui satisfait la règle.
+ L’exemple suivant montre une méthode, `CatchAndRethrowExplicitly`, qui enfreint la règle et une méthode, `CatchAndRethrowImplicitly`, qui répond à la règle.
 
  [!code-csharp[FxCop.Usage.Rethrow#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.Rethrow/cs/FxCop.Usage.Rethrow.cs#1)]
  [!code-vb[FxCop.Usage.Rethrow#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.Rethrow/vb/FxCop.Usage.Rethrow.vb#1)]

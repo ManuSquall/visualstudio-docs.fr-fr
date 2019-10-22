@@ -12,15 +12,15 @@ helpviewer_keywords:
 - ComplexBindingPropertiesAttribute class, using
 - Data Sources Window, selecting controls
 ms.assetid: 8c43e7d2-ba94-4d9b-96de-3aa971955afd
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b81bd3237f3eb2aa9a4c096ddfeae2c7bcd08c09
-ms.sourcegitcommit: 6b0503ed8d25454d6e39a8e606910b3fa58cf1d2
+ms.openlocfilehash: b6334d233ccb2c4453d117b6bdfe942b6ea092e2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68980556"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648916"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Ajouter des contrôles personnalisés à la fenêtre Sources de données
 
@@ -39,9 +39,9 @@ Pour ajouter ou supprimer des contrôles dans la liste des contrôles disponible
 2. Dans la fenêtre **sources de données** , cliquez sur un élément qui fait partie d’une source de données que vous avez ajoutée à la fenêtre, puis cliquez sur le menu déroulant de l’élément.
 
    > [!TIP]
-   > Si la fenêtre sources de données n’est pas ouverte, ouvrez-la en sélectionnant **Afficher** > d'**autres** > **sources de données**Windows.
+   > Si la fenêtre sources de données n’est pas ouverte, ouvrez-la en sélectionnant **afficher**  >  d’autres**sources de données** **Windows**  > .
 
-3. Dans le menu déroulant, cliquez sur **personnaliser**. L’une des boîtes de dialogue suivantes s’ouvre:
+3. Dans le menu déroulant, cliquez sur **personnaliser**. L’une des boîtes de dialogue suivantes s’ouvre :
 
     - Si le **Concepteur Windows Forms** est ouvert, la page Personnalisation de l' **interface utilisateur de données** de la boîte de dialogue **options** s’ouvre. Pour plus d’informations, consultez [boîte de dialogue Options de personnalisation de l’interface utilisateur de données](../ide/reference/options-windows-forms-designer-data-ui-customization.md).
 
@@ -70,17 +70,17 @@ Pour ajouter ou supprimer des contrôles dans la liste des contrôles disponible
 
 Si vous souhaitez associer un contrôle à un type de données, mais que le contrôle n’apparaît pas dans la zone **contrôles associés** , vous devez ajouter le contrôle à la liste. Le contrôle doit se trouver dans la solution actuelle ou dans un assembly référencé. Elle doit également être disponible dans la **boîte à outils** et avoir un attribut qui spécifie le comportement de liaison de données du contrôle.
 
-Pour ajouter des contrôles à la liste des contrôles associés:
+Pour ajouter des contrôles à la liste des contrôles associés :
 
 1. Ajoutez le contrôle souhaité à la **boîte à outils** en cliquant avec le bouton droit sur la **boîte à outils** et en sélectionnant **choisir les éléments**.
 
-     Le contrôle doit avoir l’un des attributs suivants:
+     Le contrôle doit avoir l’un des attributs suivants :
 
     |Attribut|Description|
     |---------------|-----------------|
-    |<xref:System.ComponentModel.DefaultBindingPropertyAttribute>|Implémentez cet attribut sur des contrôles simples qui affichent une seule colonne (ou propriété) de données, <xref:System.Windows.Forms.TextBox>par exemple.|
-    |<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>|Implémentez cet attribut sur des contrôles qui affichent des listes (ou tables) de données <xref:System.Windows.Forms.DataGridView>, telles qu’un.|
-    |<xref:System.ComponentModel.LookupBindingPropertiesAttribute>|Implémentez cet attribut sur des contrôles qui affichent des listes (ou tables) de données, mais qui doivent également présenter une seule colonne ou propriété <xref:System.Windows.Forms.ComboBox>, telle qu’un.|
+    |<xref:System.ComponentModel.DefaultBindingPropertyAttribute>|Implémentez cet attribut sur des contrôles simples qui affichent une seule colonne (ou propriété) de données, par exemple un <xref:System.Windows.Forms.TextBox>.|
+    |<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>|Implémentez cet attribut sur des contrôles qui affichent des listes (ou tables) de données, telles qu’un <xref:System.Windows.Forms.DataGridView>.|
+    |<xref:System.ComponentModel.LookupBindingPropertiesAttribute>|Implémentez cet attribut sur des contrôles qui affichent des listes (ou tables) de données, mais qui doivent également présenter une seule colonne ou propriété, telle qu’une <xref:System.Windows.Forms.ComboBox>.|
 
 2. Par Windows Forms, dans la boîte de dialogue **options** , ouvrez la page Personnalisation de l' **interface utilisateur des données** . Ou, pour WPF, ouvrez la boîte de dialogue **personnaliser la liaison de contrôle** . Pour plus d’informations, consultez [personnaliser la liste des contrôles pouvant être liés pour un type de données](#customize-the-bindable-controls-list).
 

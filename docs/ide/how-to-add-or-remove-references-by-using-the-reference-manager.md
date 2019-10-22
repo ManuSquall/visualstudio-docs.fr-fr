@@ -16,19 +16,19 @@ helpviewer_keywords:
 - referencing components, removing references
 - references [Visual Studio], removing
 - referencing components, assemblies not listed
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 584c807670e5e5ba0bc4fa1b381dca30474212e7
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
-ms.translationtype: HT
+ms.openlocfilehash: e302b5c4df73f8fcdadf766a1fe1d8dc0731c261
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787887"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654820"
 ---
-# <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Procédure : Ajouter ou supprimer des références à l’aide du gestionnaire de références
+# <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Guide pratique pour ajouter ou supprimer des références à l’aide du Gestionnaire de références
 
 Vous pouvez utiliser la boîte de dialogue Gestionnaire de références pour ajouter et gérer des références aux composants développés par vous, par Microsoft ou par une autre société. Si vous développez une application Windows universelle, votre projet référence automatiquement toutes les DLL correctes du kit SDK Windows. Si vous développez une application .NET, votre projet référence automatiquement *mscorlib.dll*. Certaines API .NET sont exposées dans des composants que vous devez ajouter manuellement. Les références à des composants COM ou à des composants personnalisés doivent être ajoutées manuellement.
 
@@ -72,7 +72,7 @@ L’onglet **Assemblys** comprend deux sous-onglets :
 
    Pour les projets qui ne ciblent pas .NET Core ou la plateforme Windows universelle, l’onglet **Framework** énumère les assemblys du framework ciblé. L’utilisateur doit ajouter les références nécessaires à l’application.
 
-   Les projets Windows universel contiennent des références à tous les assemblys dans le framework ciblé par défaut. Dans les projets managés, un nœud en lecture seule dans le dossier **Références** de l’**Explorateur de solutions** indique la référence à l’intégralité du framework. Ainsi, l’onglet **Framework** n’énumère aucun des assemblys du framework. Il affiche à la place le message suivant : « Tous les assemblys du framework sont déjà référencés. Utilisez l’Explorateur d’objets pour explorer les références dans le Framework. ».
+   Les projets Windows universel contiennent des références à tous les assemblys dans le framework ciblé par défaut. Dans les projets managés, un nœud en lecture seule dans le dossier **Références** de l’**Explorateur de solutions** indique la référence à l’intégralité du framework. En conséquence, l’onglet **Framework** n’énumère pas les assemblys du Framework et affiche à la place le message suivant : «tous les assemblys du Framework sont déjà référencés. Utilisez l’Explorateur d’objets pour explorer les références dans le Framework. ».
 
 2. **Extensions** liste tous les assemblys que les fournisseurs externes de composants et de contrôles ont développés pour étendre le framework ciblé. Selon l'objectif de l'application utilisateur, ces assemblys peuvent être nécessaires.
 
@@ -133,7 +133,7 @@ Selon la version du framework de votre projet, certains composants de la liste p
 
   La création de la clé de Registre sous le nœud `HKEY_LOCAL_MACHINE` permet à tous les utilisateurs de voir les assemblys à l’emplacement spécifié dans la boîte de dialogue **Ajouter une référence**. La création de la clé de Registre sous le nœud `HKEY_CURRENT_USER` affecte uniquement le paramètre de l’utilisateur actuel.
 
-  Rouvrez la boîte de dialogue **Ajouter une référence**. Les assemblys doivent apparaître sous l’onglet **.NET**. Si ce n’est pas le cas, vérifiez que les assemblys se trouvent dans le répertoire *AssemblyLocation* spécifié, redémarrez Visual Studio, puis réessayez.
+  Rouvrez la boîte de dialogue **Ajouter une référence**. Les assemblys doivent apparaître sous l’onglet **.net** . Si ce n’est pas le cas, assurez-vous que les assemblys se trouvent dans le répertoire *AssemblyLocation* spécifié, redémarrez Visual Studio, puis réessayez.
 
 ## <a name="projects-tab"></a>Onglet Projets
 
@@ -151,7 +151,7 @@ Ajoutez une référence à un projet partagé sous l’onglet **Projets partagé
 ## <a name="universal-windows-tab"></a>Onglet Windows universel
 
 L’onglet **Windows universel** liste tous les SDK spécifiques aux plateformes sur lesquelles des systèmes d’exploitation Windows s’exécutent.
-Cet onglet comprend deux sous-groupes : **Principal** et **Extensions**.
+Cet onglet comporte deux sous-groupes : **Core** et **Extensions**.
 
 ### <a name="core-subgroup"></a>Sous-groupe Principal
 

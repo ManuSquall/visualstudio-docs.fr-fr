@@ -2,8 +2,8 @@
 title: Refactoriser - Renommer
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 f1_keywords:
 - vs.csharp.refactoring.rename
@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: d1b4ff448f04ff6f683fac06cbc0b31797edf587
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 2991227b3c8d742da360465e6c506e7123259e2c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186578"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655617"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>Renommer un symbole de code (refactorisation)
 
@@ -27,11 +27,11 @@ Cette refactorisation s’applique à :
 
 - Visual Basic
 
-**Quoi :** Vous permet de renommer des identificateurs pour des symboles de code, tels que des champs, variables locales, méthodes, espaces de noms, propriétés et types.
+**Quoi :** vous permet de renommer des identificateurs pour des symboles de code, tels que des champs, variables locales, méthodes, espaces de noms, propriétés et types.
 
-**Quand :** Vous voulez renommer en toute sécurité un élément sans avoir à rechercher toutes les instances et à copier/coller le nouveau nom.
+**Quand :** vous voulez renommer en toute sécurité un élément sans avoir à rechercher toutes les instances et à copier/coller le nouveau nom.
 
-**Pourquoi :** Un copier-coller du nouveau nom dans un projet entier entraînera probablement des erreurs. Cet outil de refactorisation effectuera avec précision le changement de nom.
+**Pourquoi :** un copier-coller du nouveau nom dans un projet entier entraînera probablement des erreurs. Cet outil de refactorisation effectuera avec précision le changement de nom.
 
 ## <a name="how-to"></a>Procédure
 
@@ -73,7 +73,7 @@ Cette refactorisation s’applique à :
 - À compter de Visual Studio 2019 version 16,3, lorsque vous renommez un type qui correspond au nom du fichier dans lequel il se trouve, une case à cocher s’affiche pour vous permettre de renommer le fichier en même temps. Cette option apparaît lorsque vous renommez une classe, une interface ou une énumération. Cette option n’est pas prise en charge pour les types partiels avec plusieurs définitions.
 
    ![Renommer l’animation avec le fichier-C#](media/rename-with-file-animated-cs.gif)
-   
+
 - Si vous utilisez un nom qui existe déjà, ce qui provoquerait un conflit, la boîte de dialogue **Renommer** vous avertit.
 
    ![Conflit de changement de nom](media/rename-conflict-cs.png)

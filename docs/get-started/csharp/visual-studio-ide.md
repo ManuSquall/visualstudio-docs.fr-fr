@@ -4,19 +4,19 @@ ms.date: 03/19/2019
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9ba78c7ee3cd723fdb89b833df7974d700337c38
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ca48b0510c36bd0d5528cda5d4514f12763ee243
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62952389"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72632852"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>Bienvenue dans l’IDE Visual Studio | C\#
 
@@ -32,7 +32,7 @@ Nous allons configurer Visual Studio pour utiliser les paramètres d’environne
 
 3. Dans la page **Enregistrer les paramètres actuels**, sélectionnez une option pour enregistrer ou non vos paramètres actuels, puis choisissez **Suivant**. (Si vous n’avez personnalisé aucun paramètre, sélectionnez **Non, réinitialiser simplement les paramètres en remplaçant mes paramètres actuels**.)
 
-4. Dans la page **Choisir une collection de paramètres par défaut**, choisissez **Visual C#**, puis **Terminer**.
+4. Dans la page **Choisir une collection de paramètres par défaut**, choisissez **Visual C#** , puis **Terminer**.
 
 5. Dans la page **Réinitialisation terminée**, choisissez **Fermer**.
 

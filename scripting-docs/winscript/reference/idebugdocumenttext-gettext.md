@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText::GetText | Microsoft Docs
+title: 'IDebugDocumentText :: GetText | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 63e1fee3531272f18c85c23ea83b8ca12920bd2a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e6472c40802fff4dad6e5ecc8f2729c95459e09f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970859"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572084"
 ---
 # <a name="idebugdocumenttextgettext"></a>IDebugDocumentText::GetText
-Récupère les caractères et/ou les attributs de caractère associés à une plage de la position de caractère.  
+Récupère les caractères et/ou les attributs de caractère associés à une plage de position de caractère.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -41,30 +41,30 @@ HRESULT GetText(
   
 #### <a name="parameters"></a>Paramètres  
  `cCharacterPosition`  
- [in] Emplacement de la plage de position de caractère de début.  
+ dans Emplacement de début de la plage de la position du caractère.  
   
  `pcharText`  
- [in, out] Une mémoire tampon de texte caractères. La mémoire tampon doit être suffisamment grande pour contenir `cMaxChars` caractères. Si ce paramètre est NULL, la méthode ne retourne pas de caractères.  
+ [in, out] Mémoire tampon de texte de caractères. La mémoire tampon doit être suffisamment grande pour contenir `cMaxChars` caractères. Si ce paramètre a la valeur NULL, la méthode ne retourne pas de caractères.  
   
  `pstaTextAttr`  
- [in, out] Une mémoire tampon de caractères attribut. La mémoire tampon doit être suffisamment grande pour contenir `cMaxChars` caractères. Si ce paramètre est NULL, la méthode ne retourne pas les attributs.  
+ [in, out] Mémoire tampon d’attribut de caractère. La mémoire tampon doit être suffisamment grande pour contenir `cMaxChars` caractères. Si ce paramètre a la valeur NULL, la méthode ne retourne pas d’attributs.  
   
  `pcNumChars`  
- [in, out] Le nombre de caractères/attributs renvoyés. Ce paramètre doit être défini à zéro avant d’appeler cette méthode.  
+ [in, out] Nombre de caractères/attributs retournés. Ce paramètre doit avoir la valeur zéro avant d’appeler cette méthode.  
   
  `cMaxChars`  
- [in] Nombre de caractères dans la plage de position de caractère. Spécifie également le nombre maximal de caractères à retourner.  
+ dans Nombre de caractères dans la plage de la position du caractère. Spécifie également le nombre maximal de caractères à retourner.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode récupère les caractères et/ou les attributs de caractère associés à une plage de la position de caractère. La plage de position de caractère est spécifiée par une position de caractère et un nombre de caractères.  
+ Cette méthode récupère les caractères et/ou les attributs de caractère associés à une plage de position de caractère. La plage de la position du caractère est spécifiée par une position de caractère et un nombre de caractères.  
   
 ## <a name="see-also"></a>Voir aussi  
- [IDebugDocumentText Interface](../../winscript/reference/idebugdocumenttext-interface.md)   
+ @No__t_1 de l' [interface IDebugDocumentText](../../winscript/reference/idebugdocumenttext-interface.md)  
  [Énumération SOURCE_TEXT_ATTR](../../winscript/reference/source-text-attr-enumeration.md)

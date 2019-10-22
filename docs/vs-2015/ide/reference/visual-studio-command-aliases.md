@@ -1,5 +1,5 @@
 ---
-title: Commande alias | Microsoft Docs
+title: Alias de commande | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,15 +14,15 @@ helpviewer_keywords:
 - command aliases
 ms.assetid: de8bb378-8c1c-4087-a9a5-537fa8314c19
 caps.latest.revision: 24
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 573c120aafdf520b137e3fb50251ed8606f5c43a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7e9419e64cd211490fc1d3785045b5de117d392e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68160894"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657849"
 ---
 # <a name="visual-studio-command-aliases"></a>Alias de commandes Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Les alias constituent un moyen rapide d’entrer une commande dans la zone **Rec
 |Point d'arrêt|bp|Debug.ToggleBreakPoint|
 |Fenêtre Pile des appels|CallStack|Debug.CallStack|
 |Effacer les signets|ClearBook|Edit.ClearBookmarks|
-|Fermer|Close|File.Close|
+|Close|Close|File.Close|
 |Fermer tous les documents|CloseAll|Window.CloseAllDocuments|
 |Effacer tout|cls|Edit.ClearAll|
 |Mode Commande|cmd|View.CommandWindow|
@@ -65,13 +65,13 @@ Les alias constituent un moyen rapide d’entrer une commande dans la zone **Rec
 |[Afficher la mémoire, commande](../../ide/reference/list-memory-command.md) (format Huit octets)|dq|Debug.ListMemory /Format:EightBytes|
 |[Afficher la mémoire, commande](../../ide/reference/list-memory-command.md) sous la forme de caractères Unicode|du|Debug.ListMemory /Unicode|
 |[Évaluer l’instruction, commande](../../ide/reference/evaluate-statement-command.md)|eval|Debug.EvaluateStatement|
-|Quitter|Exit|File.Exit|
+|Exit|Exit|File.Exit|
 |Mettre la sélection en forme|format|Edit.FormatSelection|
 |Plein écran|FullScreen|View.FullScreen|
 |[Démarrer, commande](../../ide/reference/start-command.md)|g|Debug.Start|
 |[Atteindre, commande](../../ide/reference/go-to-command.md)|GotoLn|Edit.GoTo|
 |Atteindre l'accolade|GotoBrace|Edit.GotoBrace|
-|F1 Aide|Aide|Help.F1Help|
+|F1 Aide|Help|Help.F1Help|
 |Mode Exécution|immed|Tools.ImmediateMode|
 |Insérer le fichier comme texte|InsertFile|Edit.InsertFileAsText|
 |[Afficher la pile des appels, commande](../../ide/reference/list-call-stack-command.md)|kb|Debug.ListCallStack|
@@ -87,7 +87,7 @@ Les alias constituent un moyen rapide d’entrer une commande dans la zone **Rec
 |Mémoire 3 (fenêtre)|Memory3|Debug.Memory3|
 |Mémoire 4 (fenêtre)|Memory4|Debug.Memory4|
 |[Définir la base, commande](../../ide/reference/set-radix-command.md)|n|Debug.SetRadix|
-|[Afficher le navigateur Web, commande](../../ide/reference/showwebbrowser-command.md)|nav navigate|View.ShowWebBrowser|
+|[Afficher le navigateur web, commande](../../ide/reference/showwebbrowser-command.md)|nav navigate|View.ShowWebBrowser|
 |Signet suivant|NextBook|Edit.NextBookmark|
 |[Nouveau fichier, commande](../../ide/reference/new-file-command.md)|nf|File.NewFile|
 |Nouveau projet|np NewProj|File.NewProject|
@@ -99,7 +99,7 @@ Les alias constituent un moyen rapide d’entrer une commande dans la zone **Rec
 |Pas à pas sortant|pr|Debug.StepOut|
 |Signet précédent|PrevBook|Edit.PreviousBookmark|
 |Imprimer le fichier|print|File.Print|
-|Fenêtre Propriétés|props|View.PropertiesWindow|
+|Propriétés (fenêtre)|props|View.PropertiesWindow|
 |Arrêter|q|Debug.StopDebugging|
 |Rétablir|redo|Edit.Redo|
 |Registres (fenêtre)|registers|Debug.Registers|
@@ -125,7 +125,7 @@ Les alias constituent un moyen rapide d’entrer une commande dans la zone **Rec
 |Fenêtre Espion|Watch|Debug.WatchN|
 |Activer/Désactiver le retour automatique à la ligne|WordWrap|Edit.ToggleWordWrap|
 |Afficher les processus|&#124;|Debug.ListProcesses|
-|[Répertorier les threads, commande](../../ide/reference/list-threads-command.md)|~ ~*k ~\*kb|Debug.ListThreads Debug.ListTheads /AllThreads|
+|[Afficher les threads, commande](../../ide/reference/list-threads-command.md)|~ ~*k ~\*kb|Debug.ListThreads Debug.ListTheads /AllThreads|
 
 ## <a name="see-also"></a>Voir aussi
- [Commandes de Visual Studio](../../ide/reference/visual-studio-commands.md) [fenêtre de commande](../../ide/reference/command-window.md) [zone Rechercher/commande](../../ide/find-command-box.md)
+ Zone de commandes de la [fenêtre commande](../../ide/reference/command-window.md) de [Visual Studio](../../ide/reference/visual-studio-commands.md) commande [Rechercher/commande](../../ide/find-command-box.md)

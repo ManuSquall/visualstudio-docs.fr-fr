@@ -13,69 +13,58 @@ helpviewer_keywords:
 - debugger, run options
 ms.assetid: c884976e-c0df-4c6d-8e3a-856ea2bd547c
 caps.latest.revision: 24
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a0ce02a76d32a967e2c7e5f06818b5838337f9b1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9b7eb229c5938165607b797205b94a318e3303b3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433675"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655189"
 ---
 # <a name="options-dialog-box--projects-and-solutions-build-and-run"></a>Options (boîte de dialogue), Projets et solutions, Générer et exécuter
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Dans cette boîte de dialogue, vous pouvez spécifier le nombre maximal de projets Visual C++ ou Visual C# pouvant être générés simultanément, certains comportements de génération par défaut et certains paramètres du journal de génération. Pour ouvrir la boîte de dialogue **Options**, choisissez **Outils**, **Options** dans la barre de menus. Pour accéder à ce jeu d’options, développez **Projets et solutions**, puis choisissez **Générer et exécuter**.  
-  
-## <a name="uielement-list"></a>Liste des éléments d’interface  
- **Nombre maximal de générations de projets en parallèle**  
- Spécifie le nombre maximal de projets Visual C++ et Visual C# qui peuvent être générés en même temps. Pour optimiser le processus de génération, le nombre maximal de générations de projets en parallèle est automatiquement défini par rapport au nombre de processeurs équipant votre ordinateur. Le nombre maximal est 32.  
-  
- **Générer uniquement des projets de démarrage et des dépendances à l'exécution**  
- Seul le projet de démarrage et ses dépendances sont générés si cette case est cochée quand vous appuyez sur la touche F5, quand vous choisissez **Déboguer**, **Démarrer** dans la barre de menus, ou quand vous choisissez **Build**, **Build** dans la barre de menus. Tous les projets, dépendances et fichiers solution sont générés si cette case est décochée quand vous appuyez sur la touche F5, quand vous choisissez **Déboguer**, **Démarrer** dans la barre de menus, ou quand vous choisissez **Build**, **Build** dans la barre de menus. Cette option est décochée par défaut.  
-  
- **À l'exécution, lorsque les projets sont obsolètes**  
+Dans cette boîte de dialogue, vous pouvez spécifier le nombre maximal de projets Visual C++ ou Visual C# pouvant être générés simultanément, certains comportements de génération par défaut et certains paramètres du journal de génération. Pour ouvrir la boîte de dialogue **Options**, choisissez **Outils**, **Options** dans la barre de menus. Pour accéder à ce jeu d’options, développez **Projets et solutions**, puis choisissez **Générer et exécuter**.
+
+## <a name="uielement-list"></a>Liste des éléments d’interface
+ **nombre maximal de générations de projets en parallèle** Spécifie le nombre maximal de C++ projets visuels C# et visuels pouvant être générés en même temps. Pour optimiser le processus de génération, le nombre maximal de générations de projets en parallèle est automatiquement défini par rapport au nombre de processeurs équipant votre ordinateur. Le nombre maximal est 32.
+
+ **Générer uniquement des projets de démarrage et des dépendances à l’exécution** Seul le projet de démarrage et ses dépendances sont générés si cette case à cocher est activée lorsque vous appuyez sur la touche F5. Choisissez **Déboguer**, **Démarrer** dans la barre de menus. ou choisissez **générer**, **générer** dans la barre de menus. Tous les projets, dépendances et fichiers solution sont générés si cette case est décochée quand vous appuyez sur la touche F5, quand vous choisissez **Déboguer**, **Démarrer** dans la barre de menus, ou quand vous choisissez **Build**, **Build** dans la barre de menus. Cette option est décochée par défaut.
+
+ **À l'exécution, lorsque les projets sont obsolètes**
  > [!NOTE]
-> Cette liste s'applique aux projets [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] uniquement.  
-  
- Par défaut, un message s'affiche si une configuration de projet est obsolète quand vous appuyez sur la touche F5 ou quand vous choisissez **Déboguer**, **Démarrer** dans la barre de menus. Vous pouvez spécifier s'il faut ou non générer le projet obsolète, et si un message doit s'afficher. Utilisez cette option pour spécifier si le message s'affiche et, s'il ne s'affiche pas, indiquer le comportement de génération souhaité.  
-  
- **Toujours générer**  
- Le message ne s'affiche pas, et le projet est généré malgré sa configuration obsolète. Pour spécifier cette option, cochez **Ne plus afficher cette boîte de dialogue** dans le message et cliquez sur le bouton **Oui**.  
-  
- **Ne jamais générer**  
- Le message ne s'affiche pas, et le projet n'est pas généré. Pour spécifier cette option, cochez **Ne plus afficher cette boîte de dialogue** dans le message et cliquez sur le bouton **Non**.  
-  
- **Inviter à générer**  
- Affiche le message chaque fois qu'une configuration de projet est obsolète.  
-  
- **À l’exécution, lors d’erreurs de génération ou de déploiement**  
- Si des erreurs de génération se produisent quand vous démarrez une génération à partir du menu **Build**, un message s'affiche. Vous pouvez spécifier s'il faut continuer en démarrant l'application et si le message doit s'afficher dès qu'une erreur de génération se produit. Utilisez cette option pour spécifier si le message s'affiche et, s'il ne s'affiche pas, indiquer le comportement souhaité.  
-  
+> Cette liste s'applique aux projets [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] uniquement.
+
+ Par défaut, un message s'affiche si une configuration de projet est obsolète quand vous appuyez sur la touche F5 ou quand vous choisissez **Déboguer**, **Démarrer** dans la barre de menus. Vous pouvez spécifier s'il faut ou non générer le projet obsolète, et si un message doit s'afficher. Utilisez cette option pour spécifier si le message s'affiche et, s'il ne s'affiche pas, indiquer le comportement de génération souhaité.
+
+ **Toujours générer** La boîte de message ne s’affiche pas, et le projet est généré en dépit de la configuration obsolète. Pour spécifier cette option, cochez **Ne plus afficher cette boîte de dialogue** dans le message et cliquez sur le bouton **Oui**.
+
+ **Ne jamais générer** La boîte de message ne s’affiche pas et le projet n’est pas généré. Pour spécifier cette option, cochez **Ne plus afficher cette boîte de dialogue** dans le message et cliquez sur le bouton **Non**.
+
+ **Inviter à générer** Affiche la boîte de message chaque fois qu’une configuration de projet est obsolète.
+
+ **À l’exécution, lorsque des erreurs de génération ou de déploiement se produisent** Si des erreurs de build se produisent lorsque vous démarrez une build à partir du menu **générer** , un message s’affiche. Vous pouvez spécifier s'il faut continuer en démarrant l'application et si le message doit s'afficher dès qu'une erreur de génération se produit. Utilisez cette option pour spécifier si le message s'affiche et, s'il ne s'affiche pas, indiquer le comportement souhaité.
+
 > [!NOTE]
-> Cette option s'applique aux projets [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] uniquement.  
-  
- **Inviter à lancer**  
- Affiche un message chaque fois qu'une erreur de génération se produit.  
-  
- **Ne pas lancer**  
- Le message ne s'affiche pas, et l'application n'est pas démarrée. Pour spécifier cette option, cochez **Ne plus afficher cette boîte de dialogue** dans le message et cliquez sur le bouton **Non**.  
-  
- **Lancer l’ancienne version**  
- Le message ne s'affiche pas, et la nouvelle version de l'application générée n'est pas démarrée. Pour spécifier cette option, cochez **Ne plus afficher cette boîte de dialogue** dans le message et cliquez sur le bouton **Oui**.  
-  
- **Pour les nouvelles solutions, utiliser le projet sélectionné actuellement comme projet de démarrage**  
- Si cette case est cochée, toutes les nouvelles solutions utilisent le projet actuellement sélectionné comme projet de démarrage.  
-  
- **Commentaires relatifs à la sortie de build du projet MSBuild**  
- Détermine quelles informations s’affichent dans la fenêtre **Sortie** de la build.  
-  
- **Commentaires du fichier journal de génération du projet MSBuild**  
+> Cette option s'applique aux projets [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] uniquement.
+
+ **Inviter à lancer** Affiche une boîte de message chaque fois que des erreurs de build se produisent.
+
+ **Ne pas lancer** La boîte de message ne s’affiche pas et l’application n’est pas démarrée. Pour spécifier cette option, cochez **Ne plus afficher cette boîte de dialogue** dans le message et cliquez sur le bouton **Non**.
+
+ **Lancer l’ancienne version** La boîte de message ne s’affiche pas et la nouvelle version générée de l’application n’est pas démarrée. Pour spécifier cette option, cochez **Ne plus afficher cette boîte de dialogue** dans le message et cliquez sur le bouton **Oui**.
+
+ **Pour les nouvelles solutions, utiliser le projet actuellement sélectionné comme projet de démarrage** Si cette case à cocher est activée, les nouvelles solutions utilisent le projet actuellement sélectionné comme projet de démarrage.
+
+ **Commentaires sur la sortie de génération du projet MSBuild** Détermine la quantité d’informations qui s’affiche dans la fenêtre **sortie** de la génération.
+
+ **Commentaires du fichier journal de génération du projet MSBuild**
  > [!NOTE]
-> Cette option s'applique aux projets Visual C++ uniquement.  
-  
- Détermine quelles informations sont écrites dans le fichier journal de build, qui se trouve dans \\...\\*Nom_Projet*\Debug\\*Nom_Projet*.log.  
-  
-## <a name="see-also"></a>Voir aussi  
+> Cette option s'applique aux projets Visual C++ uniquement.
+
+ Détermine quelles informations sont écrites dans le fichier journal de build, qui se trouve dans \\...\\*Nom_Projet*\Debug\\*Nom_Projet*.log.
+
+## <a name="see-also"></a>Voir aussi
  [Compilation et génération](../../ide/compiling-and-building-in-visual-studio.md)

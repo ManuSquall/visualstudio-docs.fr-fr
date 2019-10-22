@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - unit tests, creating
 - unit tests, running
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: cd4cf41906fc9c8d4b5fbce407f1910d5e972dee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: 3971fe0513c98cb957d8013cdad932aa0c04bed1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945745"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72646625"
 ---
 # <a name="run-a-unit-test-as-a-64-bit-process"></a>Exécuter un test unitaire comme processus 64 bits
 

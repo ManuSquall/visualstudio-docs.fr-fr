@@ -1,7 +1,7 @@
 ---
 title: Créer une installation hors connexion
 description: Découvrez comment installer Visual Studio hors connexion quand vous avez une connexion Internet non fiable ou une bande passante faible.
-ms.date: 07/24/2019
+ms.date: 10/11/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -16,18 +16,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 1c210498b88ab1a4fd149870fc3528ddc869ecd6
-ms.sourcegitcommit: 4d2620bee4688fb881e09a07ea4a264b99f0743e
+ms.openlocfilehash: b9c8b60914e814ab6957ee9ec9307b12d9c3d1ba
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71322553"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516885"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Créer une installation hors connexion de Visual Studio
 
 ::: moniker range="vs-2017"
 
-Nous avons conçu Visual Studio 2017 pour qu’il fonctionne correctement dans un large éventail de configurations réseau et informatiques. Bien que nous vous recommandions d’essayer le [programme d’installation web de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)&mdash;qui est un petit fichier vous permettant d’être à jour des derniers correctifs et fonctionnalités&mdash;nous sommes conscients du fait que cela n’est peut-être pas possible pour vous.
+Nous avons conçu Visual Studio 2017 pour qu’il fonctionne correctement dans un large éventail de configurations réseau et informatiques. Bien que nous vous recommandions d’essayer le [programme d’installation web de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads)&mdash;qui est un petit fichier vous permettant d’être à jour des derniers correctifs et fonctionnalités&mdash;nous sommes conscients du fait que cela n’est peut-être pas possible pour vous.
 
 ::: moniker-end
 
@@ -37,7 +37,7 @@ Nous avons conçu Visual Studio 2019 pour qu’il fonctionne correctement dans 
 
 ::: moniker-end
 
-Par exemple, vous avez peut-être une connexion Internet non fiable ou une bande passante faible. Dans ce cas, vous avez le choix entre plusieurs options : Vous pouvez utiliser la nouvelle fonctionnalité « Tout télécharger, puis installer » pour télécharger les fichiers avant de les installer, ou vous pouvez utiliser la ligne de commande pour créer un cache local des fichiers.
+Par exemple, vous avez peut-être une connexion Internet non fiable ou une bande passante faible. Dans ce cas, vous avez quelques options : vous pouvez utiliser la nouvelle fonctionnalité « Tout télécharger, puis installer » pour télécharger les fichiers avant de les installer, ou vous pouvez utiliser la ligne de commande pour créer un cache local des fichiers.
 
 > [!NOTE]
 > Si vous êtes administrateur en entreprise et que vous souhaitez effectuer un déploiement de Visual Studio sur un réseau de stations de travail clientes qui sont protégées d’Internet par un pare-feu, consultez nos pages [Créer une installation réseau de Visual Studio](../install/create-a-network-installation-of-visual-studio.md) et [Installer les certificats nécessaires à l’installation hors connexion de Visual Studio](../install/install-certificates-for-visual-studio-offline.md).
@@ -46,7 +46,7 @@ Par exemple, vous avez peut-être une connexion Internet non fiable ou une bande
 
 ::: moniker range="vs-2017"
 
-[**Nouveautés dans la version 15.8**](/visualstudio/releasenotes/vs2017-relnotes-v15.8#install) : Après avoir téléchargé le programme d’installation web, sélectionnez la nouvelle option **Tout télécharger, puis installer** à partir de Visual Studio Installer. Poursuivez ensuite l’installation.
+[**Nouveauté de la version 15,8**](/visualstudio/releasenotes/vs2017-relnotes-v15.8#install): après avoir téléchargé le programme d’installation Web, sélectionnez l’option nouveau **Télécharger tout, puis installer** à partir du Visual Studio installer. Poursuivez ensuite l’installation.
 
    ![Option « Tout télécharger, puis installer »](media/download-all-then-install.png)
 
@@ -54,7 +54,7 @@ Par exemple, vous avez peut-être une connexion Internet non fiable ou une bande
 
 ::: moniker range="vs-2019"
 
-Après avoir téléchargé le programme d’installation web, sélectionnez la nouvelle option **Tout télécharger, puis installer** à partir de Visual Studio Installer. Poursuivez ensuite l’installation.
+Après avoir téléchargé le programme d’installation Web, sélectionnez l’option nouveau **Télécharger tout, puis installer** à partir du Visual Studio installer. Poursuivez ensuite l’installation.
 
    ![Option « Tout télécharger, puis installer »](media/vs-2019/download-all-then-install-from-installer.png)
 
@@ -75,20 +75,24 @@ Voici comment procéder.
 
 Vous devez avoir une connexion Internet pour effectuer cette étape.
 
-Commencez par télécharger le programme d’amorçage de Visual Studio pour l’édition de Visual Studio que vous avez choisie. Votre fichier d’installation &mdash;ou programme d’amorçage&mdash; correspond ou est similaire à l’une des valeurs suivantes.
-
 ::: moniker range="vs-2017"
 
-| Édition                    | Fichier                                                                    |
-|----------------------------|-------------------------------------------------------------------------|
-| Communauté Visual Studio    | [vs_community.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2017)       |
-| Visual Studio Professional | [vs_professional.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2017) |
-| Visual Studio Enterprise   | [vs_enterprise.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2017)     |
-| Visual Studio Build Tools   | [vs_buildtools. exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=buildtools&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2017)     |
+Pour obtenir un programme d’amorçage pour Visual Studio 2017, consultez la page de téléchargement des [versions précédentes de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) pour plus d’informations sur la façon de procéder.
+
+L’exécutable de votre programme d’installation &mdash;or pour être plus précis, le fichier du programme d’amorçage &mdash;should correspond ou est semblable à l’un des éléments suivants.
+
+| Édition | Nom de fichier |
+|-------------|-----------------------|
+|Communauté Visual Studio | vs_community.exe |
+|Visual Studio Professional | vs_professional.exe |
+|Visual Studio Enterprise | vs_enterprise.exe |
+|Visual Studio Build Tools   | vs_buildtools. exe |
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
+
+Commencez par télécharger le programme d’amorçage de Visual Studio pour l’édition de Visual Studio que vous avez choisie. Votre fichier d’installation &mdash;ou programme d’amorçage&mdash; correspond ou est similaire à l’une des valeurs suivantes.
 
 | Édition                    | Fichier                                                                    |
 |----------------------------|-------------------------------------------------------------------------|
@@ -98,6 +102,9 @@ Commencez par télécharger le programme d’amorçage de Visual Studio pour l�
 | Visual Studio Build Tools   | [vs_buildtools. exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=buildtools&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)     |
 
 ::: moniker-end
+
+>[!TIP]
+>Si vous avez précédemment téléchargé un fichier de programme d’amorçage et que vous souhaitez vérifier sa version, voici comment procéder. Dans Windows, ouvrez l’Explorateur de fichiers, cliquez avec le bouton droit sur le fichier du programme d’amorçage, choisissez **Propriétés**, cliquez sur l’onglet **Détails** , puis affichez le numéro de **version du produit** . Pour faire correspondre ce nombre à une version de Visual Studio, consultez la page [numéros de build et dates de publication de Visual Studio](visual-studio-build-numbers-and-release-dates.md) .
 
 ### <a name="step-2---create-a-local-install-cache"></a>Étape 2 : Créer un cache d’installation local
 
@@ -155,6 +162,12 @@ Si vous souhaitez installer une autre langue que l’anglais, remplacez `en-US` 
 
 > [!TIP]
 > Quand vous procédez à l’exécution à partir d’un cache d’installation local, le programme d’installation utilise les versions locales de chacun de ces fichiers. Toutefois, si durant l’installation, vous sélectionnez des composants qui ne sont pas dans le cache, le programme d’installation tente de les télécharger à partir d’Internet.
+
+::: moniker range="vs-2019"
+> [!IMPORTANT]
+> Pour les installations hors connexion, si vous recevez un message d’erreur indiquant « un produit correspondant aux paramètres suivants est introuvable », vérifiez que vous utilisez le commutateur `--noweb` avec la version 16.3.5 ou ultérieure.
+>
+::: moniker-end
 
 Pour vérifier que vous installez uniquement les fichiers que vous avez téléchargés, utilisez les mêmes options de ligne de commande que celles ayant servi à créer le cache de disposition. Par exemple, si vous avez créé un cache de disposition avec la commande suivante :
 

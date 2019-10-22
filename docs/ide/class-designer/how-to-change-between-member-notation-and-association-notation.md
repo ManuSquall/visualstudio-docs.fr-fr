@@ -8,24 +8,24 @@ helpviewer_keywords:
 - member notation
 - notation, association
 ms.assetid: 65881c5a-d251-4a36-ad0d-73d088436092
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 17bda235f0fb5781b19a3b1384b86ae58543edf3
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: fd1bb86e13fb5f5b654ad4f4e1ee7fe7a243f1f1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261215"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647743"
 ---
-# <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>Procédure : Changer la notation entre les membres et les associations dans le Concepteur de classes
+# <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>Guide pratique pour changer la notation entre les membres et les associations dans le Concepteur de classes
 
 Dans le **Concepteur de classes**, vous pouvez changer la façon dont le diagramme de classes représente une relation d’association entre deux types, en passant de la notation membre à la notation association et vice versa. Les membres affichés sous forme de lignes d’association fournissent souvent une visualisation utile pour comprendre la relation entre les types.
 
 > [!NOTE]
-> Les relations d’association peuvent être représentées en tant que champ ou propriété de membre. Pour que vous puissiez passer de la notation membre à la notation association, un type doit avoir un membre d’un autre type. Pour que vous puissiez passer de la notation association à la notation membre, les deux types doivent être connectés par une ligne d’association. Pour plus d'informations, voir [Procédure : Créer des associations entre des types](how-to-create-associations-between-types.md). Si votre projet contient plusieurs diagrammes de classes, les modifications que vous apportez à la façon dont un diagramme affiche les relations d’association n’affectent que ce diagramme. Pour modifier la façon dont un autre diagramme affiche les relations d’association, ouvrez ou affichez le diagramme et effectuez les étapes suivantes.
+> Les relations d’association peuvent être représentées en tant que champ ou propriété de membre. Pour que vous puissiez passer de la notation membre à la notation association, un type doit avoir un membre d’un autre type. Pour que vous puissiez passer de la notation association à la notation membre, les deux types doivent être connectés par une ligne d’association. Pour plus d’informations, consultez [Guide pratique pour créer des associations entre les types](how-to-create-associations-between-types.md). Si votre projet contient plusieurs diagrammes de classes, les modifications que vous apportez à la façon dont un diagramme affiche les relations d’association n’affectent que ce diagramme. Pour modifier la façon dont un autre diagramme affiche les relations d’association, ouvrez ou affichez le diagramme et effectuez les étapes suivantes.
 
 ## <a name="to-change-member-notation-to-association-notation"></a>Pour passer de la notation membre à la notation association
 
@@ -45,6 +45,6 @@ Sur le diagramme de classes, cliquez avec le bouton droit sur la ligne d’assoc
 ## <a name="see-also"></a>Voir aussi
 
 - [Guide pratique pour créer un héritage entre des types](how-to-create-inheritance-between-types.md)
-- [Guide pratique pour voir l’héritage entre les types](how-to-view-inheritance-between-types.md)
+- [Guide pratique pour afficher l’héritage entre des types](how-to-view-inheritance-between-types.md)
 - [Affichage des types et des relations](designing-and-viewing-classes-and-types.md)
 - [Guide pratique pour visualiser une association de collections](how-to-visualize-a-collection-association.md)

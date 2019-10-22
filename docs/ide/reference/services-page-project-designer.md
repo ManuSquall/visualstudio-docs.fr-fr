@@ -7,21 +7,21 @@ f1_keywords:
 helpviewer_keywords:
 - Services page in Project Designer
 - Project Designer, Services page
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 406e8fbb16d3cac4b755b0532f3916fed486e466
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: dd374482d0432a54ed66442610aac1f60ca1828f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919001"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655486"
 ---
 # <a name="services-page-project-designer"></a>Services, page du Concepteur de projets
 
-Les services d’application cliente fournissent un accès simplifié aux services de connexion, de rôles et de profil [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] depuis les applications Windows Forms et WPF (Windows Presentation Foundation). Vous pouvez utiliser la page **Services** du **Concepteur de projets** pour activer et configurer les services d’application cliente pour votre projet.
+Les services d’application cliente fournissent un accès simplifié aux services de connexion, de rôles et de profil [!INCLUDE[ajax_current_short](../../ide/reference/includes/ajax_current_short_md.md)] à partir des applications Windows Forms et WPF (Windows Presentation Foundation). Vous pouvez utiliser la page **Services** du **Concepteur de projets** pour activer et configurer les services d’application cliente pour votre projet.
 
 Grâce aux services d’application cliente, vous pouvez utiliser un serveur centralisé pour authentifier les utilisateurs, déterminer le(s) rôle(s) assigné(s) à chaque utilisateur et stocker des paramètres d’application par utilisateur que vous pouvez partager sur le réseau. Pour plus d’informations, consultez [Services d’application cliente](/dotnet/framework/common-client-technologies/client-application-services).
 
@@ -29,7 +29,7 @@ Pour accéder à la page **Services**, sélectionnez un nœud de projet dans l�
 
 ## <a name="task-list"></a>Liste des tâches
 
-[Guide pratique pour configurer les services d’application cliente](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
+[Comment : configurer les services d’application cliente](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
 
 ## <a name="uielement-list"></a>Liste des éléments d’interface
 
@@ -51,13 +51,13 @@ Indique que le fournisseur d’authentification utilise l’authentification Win
 
  **Utiliser l’authentification par formulaire**
 
-Indique que le fournisseur d’authentification utilise l’authentification par formulaire. Cela signifie que votre application doit fournir une interface utilisateur pour la connexion. Pour plus d'informations, voir [Procédure : Implémenter la connexion utilisateur avec les services d’application cliente](/dotnet/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services).
+Indique que le fournisseur d’authentification utilise l’authentification par formulaire. Cela signifie que votre application doit fournir une interface utilisateur pour la connexion. Pour plus d’informations, consultez [Comment : implémenter la connexion utilisateur avec les services d’application cliente](/dotnet/framework/common-client-technologies/how-to-implement-user-login-with-client-application-services).
 
  **Emplacement du service d’authentification**
 
 Utilisé uniquement avec l’authentification par formulaire. Spécifie l’emplacement du service d’authentification.
 
- **Facultatif : Fournisseur d’informations d’identification**
+ **Facultatif : Fournisseur d’infos d’identification**
 
 Utilisé uniquement avec l’authentification par formulaire. Indique l’implémentation <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider> que le service d’authentification utilise pour afficher une boîte de dialogue de connexion quand votre application appelle la méthode `static`<xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> et passe des chaînes vides ou la valeur `null` pour les paramètres. Si vous ne renseignez pas cette zone, vous devez passer un nom d’utilisateur et un mot de passe valides à la méthode <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName>. Vous devez spécifier le fournisseur d’informations d’identification sous la forme d’un nom de type qualifié d’assembly. Pour plus d’informations, consultez <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=fullName> et [Noms d’assemblys](/dotnet/framework/app-domains/assembly-names). Dans sa forme la plus simple, un nom de type qualifié d’assembly ressemble à l’exemple suivant : `MyNamespace.MyLoginClass, MyAssembly`
 
@@ -77,6 +77,6 @@ Ouvre la [boîte de dialogue Paramètres avancés pour les services](../../ide/r
 
 - [Services d’application cliente](/dotnet/framework/common-client-technologies/client-application-services)
 - [Paramètres avancés pour les services, boîte de dialogue](../../ide/reference/advanced-settings-for-services-dialog-box.md)
-- [Guide pratique pour configurer les services d’application cliente](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
+- [Comment : configurer les services d’application cliente](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
 - [Page Compiler, Concepteur de projet (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)
 - [Page Générer, Concepteur de projet (C#)](../../ide/reference/build-page-project-designer-csharp.md)

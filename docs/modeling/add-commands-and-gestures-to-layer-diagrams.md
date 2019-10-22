@@ -5,28 +5,28 @@ ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams, adding custom commands
 - dependency diagrams, adding custom gestures
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea106d98dbd18f224e7f2a9d95734eff591dfc2b
-ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
+ms.openlocfilehash: 7392d6f131cc1658a04769e7e2a5fc58c76f522e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65476653"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652346"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Ajouter des commandes et des mouvements aux diagrammes de dépendance
 
-Vous pouvez définir des commandes de menu contextuel et gestionnaires de mouvements dans des diagrammes de dépendance dans Visual Studio. Vous pouvez empaqueter ces extensions dans une extension d’intégration Visual Studio (VSIX) et les distribuer à d’autres utilisateurs de Visual Studio.
+Vous pouvez définir des commandes de menu contextuelles et des gestionnaires de mouvements sur des diagrammes de dépendance dans Visual Studio. Vous pouvez empaqueter ces extensions dans une extension d’intégration Visual Studio (VSIX) et les distribuer à d’autres utilisateurs de Visual Studio.
 
-Si vous le souhaitez, vous pouvez définir plusieurs commandes et gestionnaires de mouvements dans le même projet Visual Studio. Vous pouvez également combiner plusieurs de ces projets dans une extension VSIX. Par exemple, vous pouvez définir une extension VSIX qui inclut des commandes de couche et un langage spécifique à un domaine.
+Si vous le souhaitez, vous pouvez définir plusieurs commandes et gestionnaires de mouvements dans le même projet Visual Studio. Vous pouvez également combiner plusieurs de ces projets dans une extension VSIX. Par exemple, vous pouvez définir un VSIX unique qui comprend des commandes de couche et un langage spécifique à un domaine.
 
 > [!NOTE]
-> Vous pouvez également personnaliser la validation de l’architecture, dans la source des utilisateurs qui code est comparé à des diagrammes de dépendance. Vous devez définir la validation de l’architecture dans un projet Visual Studio distinct. Vous pouvez l’ajouter à la même extension VSIX que d’autres extensions. Pour plus d’informations, consultez [ajouter la validation d’architecture personnalisée aux diagrammes de dépendance](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).
+> Vous pouvez également personnaliser la validation de l’architecture, dans laquelle le code source des utilisateurs est comparé aux diagrammes de dépendance. Vous devez définir la validation de l’architecture dans un projet Visual Studio distinct. Vous pouvez l’ajouter à la même extension VSIX que d’autres extensions. Pour plus d’informations, consultez [Ajouter une validation d’architecture personnalisée aux diagrammes de dépendance](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>spécifications
 
 Consultez [Spécifications](../modeling/extend-layer-diagrams.md#requirements).
 
@@ -34,13 +34,13 @@ Consultez [Spécifications](../modeling/extend-layer-diagrams.md#requirements).
 
 Pour créer une extension, la méthode la plus rapide consiste à utiliser le modèle de projet. Le code et le manifeste VSIX sont alors placés dans le même projet.
 
-1. Créer un nouveau **Extension de commande de Concepteur de couche** ou **Extension de mouvement de Concepteur de couche** projet.
+1. Créez une **extension de commande du concepteur de couches** ou un projet d’extension de mouvement du concepteur de **couches** .
 
    Le modèle crée un projet qui contient un petit exemple fonctionnel.
 
-2. Pour tester l’extension, appuyez sur **Ctrl**+**F5** ou **F5**.
+2. Pour tester l’extension, appuyez sur **Ctrl** +**F5** ou **F5**.
 
-    Une instance expérimentale de Visual Studio démarre. Dans cette instance, créez un diagramme de dépendances. Votre extension de commande ou de mouvement doit fonctionner dans ce diagramme.
+    Une instance expérimentale de Visual Studio démarre. Dans ce cas, créez un diagramme de dépendance. Votre extension de commande ou de mouvement doit fonctionner dans ce diagramme.
 
 3. Fermez l’instance expérimentale et modifiez l’exemple de code.
 
@@ -52,13 +52,13 @@ Pour créer une extension, la méthode la plus rapide consiste à utiliser le mo
 
 ::: moniker range="vs-2017"
 
-5. Pour installer l’extension dans l’instance principale de Visual Studio, ou sur un autre ordinateur, recherchez le *.vsix* de fichiers dans le *bin* directory. Copiez-le sur l’ordinateur sur lequel vous souhaitez l’installer, puis double-cliquez dessus. Pour le désinstaller, choisissez **Extensions et mises à jour** sur le **outils** menu.
+5. Pour installer l’extension dans l’instance principale de Visual Studio, ou sur un autre ordinateur, recherchez le fichier *. vsix* dans le répertoire *bin* . Copiez-le sur l’ordinateur sur lequel vous souhaitez l’installer, puis double-cliquez dessus. Pour le désinstaller, choisissez **extensions et mises à jour** dans le menu **Outils** .
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-5. Pour installer l’extension dans l’instance principale de Visual Studio, ou sur un autre ordinateur, recherchez le *.vsix* de fichiers dans le *bin* directory. Copiez-le sur l’ordinateur sur lequel vous souhaitez l’installer, puis double-cliquez dessus. Pour le désinstaller, choisissez **gérer les Extensions** sur le **Extensions** menu.
+5. Pour installer l’extension dans l’instance principale de Visual Studio, ou sur un autre ordinateur, recherchez le fichier *. vsix* dans le répertoire *bin* . Copiez-le sur l’ordinateur sur lequel vous souhaitez l’installer, puis double-cliquez dessus. Pour le désinstaller, choisissez **gérer les extensions** dans le menu **Extensions** .
 
 ::: moniker-end
 
@@ -71,9 +71,9 @@ Si vous souhaitez créer une extension VSIX qui contient des commandes, des vali
    > [!NOTE]
    > Vous pouvez définir plusieurs classes de gestionnaires de mouvements ou de commandes dans une bibliothèque de classes, mais vous devez définir les classes de validation de couche dans une bibliothèque de classes distincte.
 
-2. Ajoutez ou créez un projet VSIX dans votre solution. Un projet VSIX contient un fichier nommé **source.extension.vsixmanifest**.
+2. Ajoutez ou créez un projet VSIX dans votre solution. Un projet VSIX contient un fichier nommé **source. extension. vsixmanifest**.
 
-3. Dans **l’Explorateur de solutions**, cliquez sur le projet VSIX, choisissez **définir comme projet de démarrage**.
+3. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le projet VSIX, puis choisissez **définir comme projet de démarrage**.
 
 4. Dans **source.extension.vsixmanifest**, sous **Composants**, ajoutez le projet de commande ou de gestionnaire de mouvements en tant que composant MEF.
 
@@ -102,11 +102,11 @@ Si vous souhaitez créer une extension VSIX qui contient des commandes, des vali
 
      [Définition d’un gestionnaire de mouvements](#gesture)
 
-7. Pour tester la fonctionnalité, appuyez sur **Ctrl**+**F5** ou **F5**.
+7. Pour tester la fonctionnalité, appuyez sur **Ctrl** +**F5** ou **F5**.
 
    Une instance expérimentale de Visual Studio s’ouvre. Dans cette instance, créez ou ouvrez un diagramme de dépendance.
 
-8. Pour installer l’extension VSIX dans l’instance principale de Visual Studio, ou sur un autre ordinateur, recherchez le **.vsix** de fichiers dans le **bin** répertoire du projet VSIX. Copiez-le sur l’ordinateur sur lequel vous souhaitez installer l’extension VSIX. Double-cliquez sur le fichier VSIX dans l’Explorateur de fichiers.
+8. Pour installer l’extension VSIX dans l’instance principale de Visual Studio, ou sur un autre ordinateur, recherchez le fichier **. vsix** dans le répertoire **bin** du projet VSIX. Copiez-le sur l’ordinateur sur lequel vous souhaitez installer l’extension VSIX. Double-cliquez sur le fichier VSIX dans l’Explorateur de fichiers.
 
 ## <a name="command"></a> Définition d’une commande de menu
 
@@ -214,7 +214,7 @@ namespace MyLayerExtension // Change to your preference.
 
 ## <a name="gesture"></a> Définition d’un gestionnaire de mouvements
 
-Un gestionnaire de mouvements réagit lorsque l’utilisateur fait glisser des éléments sur le diagramme de dépendance, et lorsque l’utilisateur double-clique sur n’importe où dans le diagramme.
+Un gestionnaire de mouvements répond lorsque l’utilisateur fait glisser des éléments sur le diagramme de dépendance, et lorsque l’utilisateur double-clique n’importe où dans le diagramme.
 
 Vous pouvez ajouter un fichier de code qui définit un gestionnaire de mouvements à votre projet VSIX de commande ou de gestionnaire de mouvements existant :
 
@@ -246,7 +246,7 @@ Notez les points suivants concernant les gestionnaires de mouvements :
 
      **OnDragDrop** : appelée quand l’utilisateur dépose un élément sur le diagramme.
 
-- Le premier argument de chaque méthode est un `IShape`, à partir duquel vous pouvez obtenir l’élément de couche. Exemple :
+- Le premier argument de chaque méthode est un `IShape`, à partir duquel vous pouvez obtenir l’élément de couche. Exemple :
 
     ```csharp
     public void OnDragDrop(IShape target, IDataObject data)
@@ -259,7 +259,7 @@ Notez les points suivants concernant les gestionnaires de mouvements :
     }
     ```
 
-- Les gestionnaires pour certains types d’éléments déplacés sont déjà définis. Par exemple, l’utilisateur peut déplacer les éléments à partir de l’Explorateur de solutions vers un diagramme de dépendances. Vous ne pouvez pas définir un gestionnaire de glissement pour ces types d’éléments. Dans ces cas-là, vos méthodes `DragDrop` ne seront pas appelées.
+- Les gestionnaires pour certains types d’éléments déplacés sont déjà définis. Par exemple, l’utilisateur peut faire glisser des éléments à partir de Explorateur de solutions sur un diagramme de dépendance. Vous ne pouvez pas définir un gestionnaire de glissement pour ces types d’éléments. Dans ces cas-là, vos méthodes `DragDrop` ne seront pas appelées.
 
 ## <a name="see-also"></a>Voir aussi
 

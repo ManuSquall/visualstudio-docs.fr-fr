@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf1c226fceff6ea17a7f83d750a93d6406a31c7d
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: cf2b8669fe9b516f3150829612d6999895cc69f8
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263735"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306250"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>Mettre à jour une application existante vers MSBuild 15
 
@@ -65,7 +65,7 @@ Si vous ne pouvez pas utiliser de packages NuGet, vous pouvez faire référence 
 
 #### <a name="binding-redirects"></a>Redirections de liaison
 
-Faites référence au package Microsoft.Build.Locator pour que votre application utilise automatiquement les redirections de liaison nécessaires de toutes les versions des assemblys MSBuild vers la version `15.1.0.0`.
+Référencez le package Microsoft. Build. Locator pour vous assurer que votre application utilise automatiquement les redirections de liaison requises vers la version 15.1.0.0. Les redirections de liaison vers cette version prennent en charge à la fois MSBuild 15 et MSBuild 16.
 
 ### <a name="ensure-output-is-clean"></a>Vérifier la propreté de la sortie
 

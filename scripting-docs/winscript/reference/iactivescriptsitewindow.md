@@ -13,22 +13,22 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3691a874121c00dcccc69958eb5746a2c1d78122
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1ee680a3d00c6736549b03ce8fee5593a7a8c5af
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992027"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575894"
 ---
 # <a name="iactivescriptsitewindow"></a>IActiveScriptSiteWindow
-Cette interface est implémentée par les hôtes qui prennent en charge une interface utilisateur sur le même objet en tant que [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) . Les hôtes qui ne prennent pas en charge une interface utilisateur, tels que les serveurs, n’implémentent pas le `IActiveScriptSiteWindow` interface. Le moteur de script accède à cette interface en appelant `QueryInterface` de `IActiveScriptSite`.  
+Cette interface est implémentée par les hôtes qui prennent en charge une interface utilisateur sur le même objet que [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) . Les ordinateurs hôtes qui ne prennent pas en charge une interface utilisateur, tels que les serveurs, n’implémentent pas l’interface `IActiveScriptSiteWindow`. Le moteur de script accède à cette interface en appelant `QueryInterface` à partir de `IActiveScriptSite`.  
   
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
   
 |Méthode|Description|  
 |------------|-----------------|  
-|[IActiveScriptSiteWindow::GetWindow](../../winscript/reference/iactivescriptsitewindow-getwindow.md)|Récupère le handle de fenêtre qui peut agir comme le propriétaire d’une fenêtre contextuelle que le moteur de script doit afficher.|  
-|[IActiveScriptSiteWindow::EnableModeless](../../winscript/reference/iactivescriptsitewindow-enablemodeless.md)|Force l’hôte activer ou désactiver la fenêtre principale, ainsi que toutes les boîtes de dialogue non modale.|  
+|[IActiveScriptSiteWindow::GetWindow](../../winscript/reference/iactivescriptsitewindow-getwindow.md)|Récupère le handle de fenêtre qui peut agir en tant que propriétaire d’une fenêtre indépendante que le moteur de script doit afficher.|  
+|[IActiveScriptSiteWindow::EnableModeless](../../winscript/reference/iactivescriptsitewindow-enablemodeless.md)|Fait en sorte que l’hôte active ou désactive sa fenêtre principale, ainsi que toutes les boîtes de dialogue non modales.|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interfaces de script actives](../../winscript/reference/active-script-interfaces.md)

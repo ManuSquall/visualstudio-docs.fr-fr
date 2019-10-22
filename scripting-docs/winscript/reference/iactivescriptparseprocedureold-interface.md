@@ -17,25 +17,25 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 520d3f1414447abfc7c018d36853b72aefbbf15f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4558a0cab2aea9b56db2759bb80b1287cd33ce87
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386167"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571427"
 ---
 # <a name="iactivescriptparseprocedureold-interface"></a>IActiveScriptParseProcedureOld, interface
-Permet le texte du code source pour les procédures à ajouter au script. Pour les langages de script interprétés qui n’ont pas d’un environnement de création indépendant, tels que VBScript, cela fournit un mécanisme de remplacement (autre que `IActiveScriptParse` ou `IPersist*`) pour ajouter des procédures de script à l’espace de noms.  
+Autorise l’ajout du texte de code source pour les procédures à ajouter au script. Pour les langages de script interprétés qui ne disposent pas d’un environnement de création indépendant, tel que VBScript, il fournit un autre mécanisme (autre que `IActiveScriptParse` ou `IPersist*`) pour ajouter des procédures de script à l’espace de noms.  
   
 > [!NOTE]
-> Cette interface est déconseillée en faveur de la `IActiveScriptParseProcedure` interface.  
+> Cette interface est déconseillée en faveur de l’interface `IActiveScriptParseProcedure`.  
   
 ## <a name="methods"></a>Méthodes  
- Outre les méthodes héritées de `IUnknown`, le `IActiveScriptParseProcedureOld` interface expose les méthodes suivantes.  
+ En plus des méthodes héritées de `IUnknown`, l’interface `IActiveScriptParseProcedureOld` expose les méthodes suivantes.  
   
 |Méthode|Description|  
 |------------|-----------------|  
-|[IActiveScriptParseProcedureOld::ParseProcedureText](../../winscript/reference/iactivescriptparseprocedureold-parseproceduretext.md)|Analyse de la procédure de code donné et ajoute la procédure à l’espace de noms.|  
+|[IActiveScriptParseProcedureOld::ParseProcedureText](../../winscript/reference/iactivescriptparseprocedureold-parseproceduretext.md)|Analyse la procédure de code donnée et ajoute la procédure à l’espace de noms.|  
   
 ## <a name="see-also"></a>Voir aussi  
  [IActiveScriptParseProcedure](../../winscript/reference/iactivescriptparseprocedure.md)

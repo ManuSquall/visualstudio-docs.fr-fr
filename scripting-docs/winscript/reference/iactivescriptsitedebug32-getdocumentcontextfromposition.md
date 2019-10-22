@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSiteDebug32::GetDocumentContextFromPosition | Microsoft Docs
+title: 'IActiveScriptSiteDebug32 :: GetDocumentContextFromPosition | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -10,12 +10,12 @@ ms.assetid: 53348dff-35a6-4303-b263-90c10af06bf3
 caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 9a52abcfa4defb49526f944469c95a2247f5d85c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7acbe2a5741fa94ac42470a85803d1720e0a8fa1
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992509"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574844"
 ---
 # <a name="iactivescriptsitedebug32getdocumentcontextfromposition"></a>IActiveScriptSiteDebug32::GetDocumentContextFromPosition
 Utilisé par le moteur de langage pour déléguer `IDebugCodeContext::GetSourceContext`.  
@@ -33,26 +33,26 @@ HRESULT GetDocumentContextFromPosition(
   
 #### <a name="parameters"></a>Paramètres  
  `dwSourceContext`  
- [in] Le contenu de la source fournie à `ParseScriptText` ou `AddScriptlet`.  
+ dans Contenu source fourni pour `ParseScriptText` ou `AddScriptlet`.  
   
  `uCharacterOffset`  
- [in] Caractère décalée par rapport à début du bloc de script ou de scriptlet.  
+ dans Décalage de caractère par rapport au début du bloc de script ou du scriptlet.  
   
  `uNumChars`  
- [in] Nombre de caractères dans ce contexte.  
+ dans Nombre de caractères dans ce contexte.  
   
  `ppsc`  
- [out] Le contexte de document correspondant à cette plage de la position de caractère.  
+ à Contexte de document correspondant à cette plage de position de caractère.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
 ## <a name="remarks"></a>Notes  
- Moteurs de langage permet de déléguer `IDebugCodeContext::GetSourceContext`.  
+ Les moteurs de langage utilisent cette méthode pour déléguer `IDebugCodeContext::GetSourceContext`.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IActiveScriptSiteDebug32](../../winscript/reference/iactivescriptsitedebug32-interface.md)

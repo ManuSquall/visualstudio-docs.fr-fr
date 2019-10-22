@@ -11,15 +11,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6aab63989d1ae02f7c75fc9c20a14d59e8a05078
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 802a9f31cc7e3497c5e5fc54395d988552f75e84
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840208"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574362"
 ---
 # <a name="scriptlanguageversion-enumeration"></a>SCRIPTLANGUAGEVERSION, énumération
-Spécifie le possible des versions de script.  
+Spécifie les versions de script possibles.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -31,10 +31,10 @@ typedef enum tagSCRIPTLANGUAGEVERSION{    SCRIPTLANGUAGEVERSION_DEFAULT = 0,    
   
 |||  
 |-|-|  
-|SCRIPTLANGUAGEVERSION_DEFAULT|La version par défaut. La valeur entière est 0.|  
-|SCRIPTLANGUAGEVERSION_5_7|Windows Script 5.7 de version. La valeur entière est 1.|  
-|SCRIPTLANGUAGEVERSION_5_8|Windows Script version 5.8. La valeur entière est 2.|  
-|SCRIPTLANGUAGEVERSION_MAX|La version maximale. La valeur entière est 255.|  
+|SCRIPTLANGUAGEVERSION_DEFAULT|Version par défaut. La valeur entière est 0.|  
+|SCRIPTLANGUAGEVERSION_5_7|Windows Scripting version 5,7. La valeur entière est 1.|  
+|SCRIPTLANGUAGEVERSION_5_8|Windows Scripting version 5,8. La valeur entière est 2.|  
+|SCRIPTLANGUAGEVERSION_MAX|Version maximale. La valeur entière est 255.|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Constantes de script actives, énumérations et codes d’erreur](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)

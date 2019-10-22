@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHost::GetFileName | Microsoft Docs
+title: 'IDebugDocumentHost :: GetFileName | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 511cdb40a5bb0f885fed8b811a095e7a53a8bb6f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0ff2ad2e4ab419f1e503da072aaa550f3cb7cf0e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971106"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72569405"
 ---
 # <a name="idebugdocumenthostgetfilename"></a>IDebugDocumentHost::GetFileName
 Retourne le nom du document sans informations de chemin d’accès.  
@@ -37,17 +37,17 @@ HRESULT GetFileName(
   
 #### <a name="parameters"></a>Paramètres  
  `pbstrShortName`  
- [out] Chaîne contenant le nom court du document.  
+ à Chaîne contenant le nom abrégé du document.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode retourne le nom court du document sans informations de chemin d’accès. Le nom court est généralement utilisé dans des situations telles que la **Enregistrer sous...**  boîte de dialogue.  
+ Cette méthode retourne le nom abrégé du document sans informations de chemin d’accès. Le nom abrégé est généralement utilisé dans des situations telles que la boîte de dialogue **Enregistrer sous...** .  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IDebugDocumentHost](../../winscript/reference/idebugdocumenthost-interface.md)

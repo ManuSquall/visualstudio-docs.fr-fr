@@ -1,34 +1,34 @@
 ---
-title: Concepteur de flux de travail - Concepteur d’activités DoWhile
+title: Concepteur d’activités Concepteur de flux de travail-while
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.DoWhile.UI
 ms.assetid: 948deb35-d72f-462b-bea6-4b119c10a148
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0069d352897d2d98288988d549d9733a39b2c35
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 85f8d6c442982fff47a679e8fc2ccc04ee515a9b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949732"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650515"
 ---
 # <a name="dowhile-activity-designer"></a>Concepteur d'activités DoWhile
 
-Le <xref:System.Activities.Statements.DoWhile> activité s’exécute l’activité contenue dans son <xref:System.Activities.Statements.DoWhile.Body%2A> au moins une fois, jusqu'à ce qu’une condition spécifiée a la valeur **false**. Si vous devez exécuter zéro ou plusieurs fois l'activité contenue dans le corps d'une boucle, utilisez plutôt l'activité <xref:System.Activities.Statements.While>.
+L’activité <xref:System.Activities.Statements.DoWhile> exécute l’activité contenue dans son <xref:System.Activities.Statements.DoWhile.Body%2A> au moins une fois, jusqu’à ce qu’une condition spécifiée ait la **valeur false**. Si vous devez exécuter zéro ou plusieurs fois l'activité contenue dans le corps d'une boucle, utilisez plutôt l'activité <xref:System.Activities.Statements.While>.
 
 ## <a name="dowhile-properties-in-the-workflow-designer"></a>Propriétés de DoWhile dans Workflow Designer
 
-Le tableau suivant présente les plus utiles <xref:System.Activities.Statements.DoWhile> propriétés d’activité et décrit comment les utiliser dans le concepteur :
+Le tableau suivant répertorie les propriétés d’activité <xref:System.Activities.Statements.DoWhile> les plus utiles et décrit comment les utiliser dans le concepteur :
 
-|Nom de la propriété|Obligatoire|Utilisation|
+|Nom de propriété|Obligatoire|Utilisation|
 |-|--------------|-|
-|<xref:System.Activities.Statements.DoWhile.Body%2A>|False|L’activité à exécuter pendant que la condition est **true**. Pour ajouter le <xref:System.Activities.Statements.DoWhile.Body%2A> activité, déposez une activité à partir de la boîte à outils dans le **corps** zone sur le **DoWhile** Concepteur d’activités avec le texte d’indication « Déposer l’activité ici ».|
-|<xref:System.Activities.Statements.DoWhile.Condition%2A>|True|Condition à évaluer après chaque itération de la boucle. Pour définir le <xref:System.Activities.Statements.DoWhile.Condition%2A>, tapez une expression Visual Basic dans le **Condition** zone sur le **DoWhile** activité concepteur ou dans la grille des propriétés.|
+|<xref:System.Activities.Statements.DoWhile.Body%2A>|False|Activité à exécuter lorsque la condition a la **valeur true**. Pour ajouter l’activité <xref:System.Activities.Statements.DoWhile.Body%2A>, déplacez une activité de la boîte à outils vers la zone **Body** sur le concepteur d’activités en **cours** avec le texte d’indication « déposer l’activité ici ».|
+|<xref:System.Activities.Statements.DoWhile.Condition%2A>|True|Condition à évaluer après chaque itération de la boucle. Pour définir la <xref:System.Activities.Statements.DoWhile.Condition%2A>, tapez une expression de Visual Basic dans la zone **condition** du concepteur d’activités en **cours** ou dans la grille des propriétés.|
 
 ## <a name="see-also"></a>Voir aussi
 

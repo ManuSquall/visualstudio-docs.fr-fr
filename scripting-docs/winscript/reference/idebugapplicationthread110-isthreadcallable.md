@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationThread110::IsThreadCallable | Microsoft Docs
+title: 'IDebugApplicationThread110 :: IsThreadCallable | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 90f0010a513adef67af1285ac15bc35d4573df57
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5ff81190247454a4471a4150843d3fb0aaed5999
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440512"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574469"
 ---
 # <a name="idebugapplicationthread110isthreadcallable"></a>IDebugApplicationThread110::IsThreadCallable
-Détermine si ce thread est dans un état qui traite les appels effectués à l’aide du thread de PDM mécanismes, tels que SynchronousCallInThread de commutation.  
+Détermine si ce thread est dans un État qui traitera les appels effectués à l’aide des mécanismes de basculement de thread de PDM, tels que SynchronousCallInThread.  
   
 > [!IMPORTANT]
-> [Interface IDebugApplicationThread110](../../winscript/reference/idebugapplicationthread110-interface.md) est implémentée par PDM version v11.0 et supérieures. Trouvée dans activdbg100.h.  
+> L' [interface IDebugApplicationThread110](../../winscript/reference/idebugapplicationthread110-interface.md) est implémentée par PDM v 11.0 et ultérieur. Trouvée dans activdbg100.h.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -34,7 +34,7 @@ HRESULT IsThreadCallable([out, annotation("_Out_")] BOOL * pfIsCallable);
   
 #### <a name="parameters"></a>Paramètres  
  `pfIsCallable`  
- [out] `true` si le thread est pouvant être appelé, sinon `false`.  
+ [out] `true` si le thread peut être appelé, sinon `false`.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IDebugApplicationThread110](../../winscript/reference/idebugapplicationthread110-interface.md)

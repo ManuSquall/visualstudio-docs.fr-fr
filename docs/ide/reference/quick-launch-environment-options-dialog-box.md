@@ -9,18 +9,18 @@ helpviewer_keywords:
 - searching IDE
 - IDE, searching
 ms.assetid: 4200f297-d065-4723-9a30-d91ff2e26c9d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 1f5026a014b5adc96f0729d130c4398474d6d413
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
-ms.translationtype: HT
+ms.openlocfilehash: f0cc6bcb59bf98a7416221115dbeeef8f24a5e74
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605894"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655670"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Lancement rapide, Environnement, boîte de dialogue Options
 
@@ -30,7 +30,7 @@ L’option **Lancement rapide** est activée par défaut quand vous installez Vi
 
 ## <a name="category-list"></a>Liste des catégories
 
-Les résultats de recherche de Lancement rapide apparaissent dans quatre catégories : **Utilisés le plus récemment**, **Menus**, **Options** et **Documents ouverts**, avec le nombre d’éléments de la catégorie. Pour parcourir les résultats de la recherche par catégorie, choisissez les touches **Ctrl**+**Q** pour afficher tous les résultats de la catégorie suivante. Une fois la dernière catégorie affichée, **Ctrl**+**Q** vous montre quelques résultats de chaque catégorie. Appuyez sur **Ctrl**+**Maj**+**Q** pour naviguer dans les catégories dans l’ordre inverse. Pour afficher tous les résultats de recherche d'une catégorie, choisissez le nom de la catégorie.
+Les résultats de recherche de Lancement rapide apparaissent dans quatre catégories : **Utilisés le plus récemment**, **Menus**, **Options** et **Documents ouverts**, avec le nombre d’éléments de la catégorie. Pour parcourir les résultats de la recherche par catégorie, choisissez les touches **Ctrl**+**Q** pour afficher tous les résultats de la catégorie suivante. Une fois la dernière catégorie affichée, **Ctrl**+**Q** vous montre quelques résultats de chaque catégorie. Appuyez sur **Ctrl**+**Maj**+**Q** pour naviguer dans les catégories dans l’ordre inverse. Pour afficher tous les résultats de recherche d'une catégorie, choisissez le nom de la catégorie.
 
 Vous pouvez utiliser les raccourcis suivants pour limiter votre recherche à des catégories spécifiques.
 

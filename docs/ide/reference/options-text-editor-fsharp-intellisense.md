@@ -4,21 +4,21 @@ ms.date: 01/16/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.FSharp.IntelliSense
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7227fa83e829fff7bac28fa7bb2b50969768e934
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d293d2c649329f5de8444ea75fd05ddc34738ab4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778454"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666227"
 ---
 # <a name="options-text-editor-f-intellisense"></a>Options, Éditeur de texte, F#, IntelliSense
 
-Utilisez la page d’options **IntelliSense** pour modifier certains paramètres de l’éditeur de texte pour F#. Pour accéder à cette page d’options, choisissez **Outils** > **Options**, puis **Éditeur de texte** > **F#** > **IntelliSense**.
+Utilisez la page d’options **IntelliSense** pour modifier certains paramètres de l’éditeur de texte pour F#. Pour accéder à cette page d’options, choisissez **Outils** > **Options**, puis **Éditeur de texte** > **F#**  > **IntelliSense**.
 
 ## <a name="completion-lists"></a>Listes de saisie semi-automatique
 

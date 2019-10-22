@@ -10,24 +10,24 @@ helpviewer_keywords:
 - counter sets
 - load tests, counter sets
 ms.assetid: 64315c2f-a0b2-4378-be16-0774b99beef5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4ca910038e35ee65e6d97999f08013f398eaec9e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f781580f28c3b829483180d559851bc9730fa18e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950105"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653497"
 ---
-# <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>Procédure : gérer des ensembles de compteurs à l’aide de l’éditeur de test de charge
+# <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>Guide pratique pour gérer des ensembles de compteurs à l’aide de l’éditeur de test de charge
 
-Quand vous créez un test de charge avec l’**Assistant Nouveau test de charge**, vous ajoutez un ensemble initial de compteurs. Ceux-ci vous offrent un groupe d'ensembles de compteurs prédéfinis pour votre test de charge.
+Quand vous créez un test de charge avec **l’Assistant Nouveau test de charge**, vous ajoutez un ensemble initial de compteurs. Ceux-ci vous offrent un groupe d'ensembles de compteurs prédéfinis pour votre test de charge.
 
 > [!NOTE]
-> Si vos tests de charge sont répartis entre des ordinateurs distants, les compteurs de contrôleur et d'agent sont automatiquement mappés au contrôleur et aux ensembles de compteurs de l'agent. Pour plus d’informations sur l’utilisation de machines distantes dans votre test de charge, consultez [Contrôleurs de test et agents de test](configure-test-agents-and-controllers-for-load-tests.md).
+> Si vos tests de charge sont répartis entre des ordinateurs distants, les compteurs de contrôleur et d'agent sont automatiquement mappés au contrôleur et aux ensembles de compteurs de l'agent. Pour plus d’informations sur l’utilisation d’ordinateurs distants dans votre test de charge, consultez [Contrôleurs de test et agents de test](configure-test-agents-and-controllers-for-load-tests.md).
 
-La gestion d'ensembles de compteurs implique le choix du jeu d'ordinateurs à partir duquel vous souhaitez collecter des données de performance et l'assignation d'un jeu d'ensembles de compteurs à collecter à partir de chaque ordinateur individuel. Vous gérez vos compteurs dans l’**éditeur de test de charge**.
+La gestion d'ensembles de compteurs implique le choix du jeu d'ordinateurs à partir duquel vous souhaitez collecter des données de performance et l'assignation d'un jeu d'ensembles de compteurs à collecter à partir de chaque ordinateur individuel. Vous gérez vos compteurs dans **l’éditeur de test de charge**.
 
 ![Gestion des ensembles de compteurs](../test/media/loadtestmanagecountersets.png)
 
@@ -45,7 +45,7 @@ La gestion d'ensembles de compteurs implique le choix du jeu d'ordinateurs à pa
 
      La boîte de dialogue **Gérer les ensembles de compteurs** s’affiche.
 
-3. (Facultatif) Dans la zone de liste **Les ordinateurs et les ensembles de compteurs sélectionnés seront ajoutés aux paramètres d’exécution par défaut**, sélectionnez un paramètre d’exécution distinct.
+3. (Facultatif) Dans la zone de liste **Les ordinateurs et les ensembles de compteurs sélectionnés seront ajoutés aux paramètres d’exécution suivants**, sélectionnez un paramètre d’exécution différent.
 
     > [!NOTE]
     > Cela ne s'applique que si votre test de charge comporte plusieurs paramètres d'exécution.
@@ -56,7 +56,7 @@ La gestion d'ensembles de compteurs implique le choix du jeu d'ordinateurs à pa
 
      Les balises d'ordinateur permettent d'identifier un ordinateur avec un nom facile à reconnaître.
 
-     Les étiquettes s’affichent dans le nœud **Mappages des ensembles de compteurs** de l’arborescence de l’éditeur de test de charge. Plus important, les balises s'affichent dans les rapports Excel, ce qui permet aux parties prenantes d'identifier le rôle de l'ordinateur dans le test de charge. Par exemple, « Server1 Web dans lab2 » ou « SQL Server2 dans le bureau de Phoenix ». Pour plus d’informations, voir [Créer des rapports sur les résultats des tests de charge à des fins de comparaison ou d’analyse des tendances](../test/compare-load-test-results.md).
+     Les balises s’affichent dans le nœud **Mappages des ensembles de compteurs** de l’arborescence dans l’éditeur de test de charge. Plus important, les balises s'affichent dans les rapports Excel, ce qui permet aux parties prenantes d'identifier le rôle de l'ordinateur dans le test de charge. Par exemple, « Server1 Web dans lab2 » ou « SQL Server2 dans le bureau de Phoenix ». Pour plus d’informations, voir [Créer des rapports sur les résultats des tests de charge à des fins de comparaison ou d’analyse des tendances](../test/compare-load-test-results.md).
 
 6. Cliquez sur **OK**.
 

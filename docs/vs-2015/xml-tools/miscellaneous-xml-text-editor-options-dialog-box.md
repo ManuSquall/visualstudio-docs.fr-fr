@@ -6,61 +6,53 @@ ms.technology: vs-xml-tools
 ms.topic: conceptual
 ms.assetid: fd3fff31-cddc-422d-a2f0-a5a1ef492afd
 caps.latest.revision: 9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: edf638420ac41d6ad6f7ebf5e20ab5d78d1c7b3d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d30564c11951d6ffec420c6a2ea95c41695de3dd
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435372"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656237"
 ---
 # <a name="miscellaneous-xml-text-editor-options-dialog-box"></a>Divers, XML, Éditeur de texte, boîte de dialogue Options
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Cette boîte de dialogue permet de modifier les paramètres de saisie semi-automatique et de schéma de l'éditeur XML. Vous pouvez accéder à la **Options** boîte de dialogue à partir de la **outils** menu.  
-  
+Cette boîte de dialogue permet de modifier les paramètres de saisie semi-automatique et de schéma de l'éditeur XML. Vous pouvez accéder à la boîte de dialogue **options** à partir du menu **Outils** .
+
 > [!NOTE]
-> Ces paramètres sont disponibles lorsque vous sélectionnez le **éditeur de texte** dossier, le **XML** dossier, puis le **divers** option à partir de la **Options** boîte de dialogue.  
-  
-## <a name="auto-insert"></a>Insertion automatique  
- **Balises de fermeture**  
- Si le paramètre de saisie semi-automatique est activé, l’éditeur ajoute automatiquement une balise de fin lorsque vous tapez un crochet angulaire à droite (>) pour fermer une balise de début, si la balise n’est pas déjà fermée. Il s'agit du comportement par défaut.  
-  
- La saisie d'un élément vide ne dépend pas du paramètre de saisie semi-automatique. Vous pouvez toujours effectuer la saisie semi-automatique d'un élément vide en tapant une barre oblique inverse (/).  
-  
- **Guillemets d’attribut**  
- Lorsque vous éditez des attributs XML, l'éditeur insère les caractères `=" "` et place le signe ^ à l'intérieur des guillemets doubles.  
-  
- Cette option est sélectionnée par défaut.  
-  
- **Déclarations d’espaces de noms**  
- L'éditeur insère automatiquement des déclarations d'espaces de noms chaque fois qu'elles sont nécessaires.  
-  
- Cette option est sélectionnée par défaut.  
-  
- **Autre balisage (commentaires, CDATA)**  
- Les commentaires, CDATA, DOCTYPE, instructions de traitement et autres balisages sont automatiquement complétés.  
-  
- Cette option est sélectionnée par défaut.  
-  
-## <a name="network"></a>Réseau  
- **Télécharger automatiquement les DTD et les schémas**  
- Les schémas et les DTD (définitions de type de document) sont automatiquement téléchargés à partir d'emplacements HTTP. Cette fonctionnalité utilise System.Net avec la détection automatique de serveur proxy activée.  
-  
- Cette option est sélectionnée par défaut.  
-  
-## <a name="outlining"></a>mode Plan  
- **Passer en mode Plan à l’ouverture des fichiers**  
- Active le mode plan à l'ouverture d'un fichier.  
-  
- Cette option est sélectionnée par défaut.  
-  
-## <a name="caching"></a>Mise en cache  
- **Schémas**  
- Spécifie l'emplacement du cache de schéma. Le bouton Parcourir (**...** ) s’ouvre le **parcourir les répertoires** boîte de dialogue à l’emplacement de cache de schéma actuel. Vous pouvez sélectionner un autre répertoire, ou vous pouvez sélectionner un dossier dans la boîte de dialogue, avec le bouton droit, puis choisissez **Open** pour découvrir les nouveautés dans le répertoire.  
-  
-## <a name="see-also"></a>Voir aussi  
- [Propriétés des documents XML, fenêtre Propriétés](../xml-tools/xml-document-properties-properties-window.md)   
- [Composants de l’éditeur XML](../xml-tools/xml-editor-components.md)
+> Ces paramètres sont disponibles lorsque vous sélectionnez le dossier **éditeur de texte** , le dossier **XML** , puis l’option **divers** dans la boîte de dialogue **options** .
+
+## <a name="auto-insert"></a>Insertion automatique
+ **Balises de fermeture** Si le paramètre de saisie semi-automatique est activé, l’éditeur ajoute automatiquement une balise de fin lorsque vous tapez un chevron droit (>) pour fermer une balise de début, si la balise n’est pas déjà fermée. Il s'agit du comportement par défaut.
+
+ La saisie d'un élément vide ne dépend pas du paramètre de saisie semi-automatique. Vous pouvez toujours effectuer la saisie semi-automatique d'un élément vide en tapant une barre oblique inverse (/).
+
+ **Guillemets d’attribut** Lors de la création d’attributs XML, l’éditeur insère les caractères `=" "` et place le signe insertion (^) à l’intérieur des guillemets doubles.
+
+ Cette option est sélectionnée par défaut.
+
+ **Déclarations d’espaces de noms** L’éditeur insère automatiquement les déclarations d’espace de noms partout où elles sont nécessaires.
+
+ Cette option est sélectionnée par défaut.
+
+ **Autre balisage (commentaires, CDATA)** Les commentaires, CDATA, DOCTYPE, les instructions de traitement et les autres balises sont terminés automatiquement.
+
+ Cette option est sélectionnée par défaut.
+
+## <a name="network"></a>Réseau
+ **Télécharger automatiquement les DTD et les schémas** Les schémas et les définitions de type de document (DTD) sont automatiquement téléchargés à partir d’emplacements HTTP. Cette fonctionnalité utilise System.Net avec la détection automatique de serveur proxy activée.
+
+ Cette option est sélectionnée par défaut.
+
+## <a name="outlining"></a>mode Plan
+ **Passer en mode plan** à l’ouverture des fichiers Active la fonctionnalité mode plan lorsqu’un fichier est ouvert.
+
+ Cette option est sélectionnée par défaut.
+
+## <a name="caching"></a>Mise en cache
+ **Schémas** Spécifie l’emplacement du cache de schéma. Le bouton Parcourir ( **...** ) ouvre la boîte de dialogue **Parcourir les répertoires** à l’emplacement actuel du cache de schéma. Vous pouvez sélectionner un autre répertoire, ou vous pouvez sélectionner un dossier dans la boîte de dialogue, cliquer avec le bouton droit, puis choisir **ouvrir** pour voir ce qui se trouve dans le répertoire.
+
+## <a name="see-also"></a>Voir aussi
+ [Propriétés de document XML, fenêtre Propriétés composants de](../xml-tools/xml-document-properties-properties-window.md) l' [éditeur XML](../xml-tools/xml-editor-components.md)

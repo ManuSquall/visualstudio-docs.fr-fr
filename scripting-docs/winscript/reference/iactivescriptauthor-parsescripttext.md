@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::ParseScriptText | Microsoft Docs
+title: IActiveScriptAuthor ::P arseScriptText | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fe6870f3b19c5727fdbea0418b8373b990cb671a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 90d5ab0fa700ed29b5fb37b1c48617cedec871b9
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955079"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576153"
 ---
 # <a name="iactivescriptauthorparsescripttext"></a>IActiveScriptAuthor::ParseScriptText
-Analyse le texte du script, ajoute le texte pour le moteur de création de script et crée un `IScriptEntry` objet qui correspond au bloc de script.  
+Analyse le texte du script, ajoute le texte au moteur de création de scripts et crée un objet `IScriptEntry` qui correspond au bloc de script.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -41,24 +41,24 @@ HRESULT ParseScriptText(
   
 #### <a name="parameters"></a>Paramètres  
  `pszCode`  
- [in] Le texte de script à analyser.  
+ dans Texte de script à analyser.  
   
  `pszItemName`  
- [in] L’adresse de mémoire tampon qui contient le nom de l’élément associé au bloc de script.  
+ dans Adresse mémoire tampon qui contient le nom d’élément associé au bloc de script.  
   
  `pszDelimiter`  
- [in] L’adresse du délimiteur de fin du bloc de script. Lorsque `pszCode` est analysé à partir d’un flux de texte, l’hôte utilise généralement un séparateur (par exemple, un double guillemet), pour détecter la fin du bloc de script. Définissez ce paramètre avec la valeur NULL s’il n’existe pas de séparateurs pour identifier la fin du bloc de script.  
+ dans Adresse du délimiteur de bloc de fin de script. Lorsque `pszCode` est analysé à partir d’un flux de texte, l’hôte utilise généralement un délimiteur (par exemple, deux guillemets simples) pour détecter la fin du bloc de script. Affectez à ce paramètre la valeur NULL s’il n’existe aucun délimiteur pour identifier la fin du bloc de script.  
   
  `dwCookie`  
- [in] Une valeur définie par l’application qui est associée au nouveau `IScriptEntry` objet.  
+ dans Valeur définie par l’application qui est associée au nouvel objet `IScriptEntry`.  
   
  `dwFlags`  
- [in] Non utilisé.  
+ dans Non utilisé.  
   
 ## <a name="return-value"></a>Valeur de retour  
  Élément `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   

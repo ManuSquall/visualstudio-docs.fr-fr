@@ -1,6 +1,6 @@
 ---
-title: 'Étape 1 : Créer un projet et ajouter une table à votre formulaire'
-ms.date: 05/31/2019
+title: 'Étape 1 : créer un projet et ajouter une table à votre formulaire'
+ms.date: 10/15/2019
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
@@ -10,14 +10,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0562588fe81780b7bb5787c4ec0b9861fd4c9408
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: b63a0b1801b0a3b559281959975a1faaa5bb99a5
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71119062"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516786"
 ---
-# <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Étape 1 : Créer un projet et ajouter une table à votre formulaire
+# <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Étape 1 : créer un projet et ajouter une table à votre formulaire
 
 La première étape pour créer un jeu de combinaisons consiste à créer le projet et à ajouter une table à votre formulaire. La table permet d'aligner les icônes dans une grille 4x4, de façon ordonnée. Vous définissez également plusieurs propriétés pour améliorer l'apparence de la grille de jeu.
 
@@ -44,11 +44,11 @@ La première étape pour créer un jeu de combinaisons consiste à créer le pro
 
    ![Afficher la fenêtre « Créer un projet »](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. Dans la fenêtre **Créer un projet**, entrez ou tapez *Windows Forms* dans la zone de recherche.
+1. Dans la fenêtre **Créer un projet**, entrez ou tapez *Windows Forms* dans la zone de recherche. Ensuite, choisissez **Bureau** dans la liste **type de projet** .
 
-1. Choisissez le modèle **Application Windows Forms (.NET Framework)** puis choisissez **Suivant**.
+   Après avoir appliqué le filtre de **type de projet** , choisissez le modèle d' **application Windows Forms (.NET Framework)** pour C# ou Visual Basic, puis choisissez **suivant**.
 
-   ![Choisir le modèle Visual Basic pour l’application Windows Forms (.NET Framework)](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-winforms-filtered.png)
+   ![Choisissez le modèle C# ou Visual Basic pour l’application Windows Forms (.NET Framework)](./media/create-new-project-search-winforms-filtered.png)
 
    > [!NOTE]
    > Si vous ne voyez pas le modèle **Windows Forms (.NET Framework)** , vous pouvez l’installer à partir de la fenêtre **Créer un projet**. Dans le **Vous ne trouvez pas ce que vous cherchez ?** , choisissez le lien **Installer plus d’outils et de fonctionnalités**.
@@ -117,17 +117,17 @@ La première étape pour créer un jeu de combinaisons consiste à créer le pro
        > [!NOTE]
        > La police Webdings est une police d'icônes fournie avec le système d'exploitation Windows. Dans votre jeu de combinaisons, cette police vous permet d'afficher les icônes que le joueur doit associer par paires. Au lieu de mettre **c** dans la propriété **Text**, essayez d’entrer des lettres différentes pour voir quelles icônes sont affichées. Un point d'exclamation est une araignée, un N majuscule est un œil et une virgule un piment rouge.
 
-5. Choisissez le contrôle d’étiquette et copiez-le dans la cellule suivante du TableLayoutPanel. (Appuyez sur **Ctrl**+**C** ou, dans la barre de menus, choisissez **Modification** > **Copier**.) Ensuite, collez-le. (Appuyez sur **Ctrl**+**V** ou, dans la barre de menus, choisissez **Modification** > **Coller**.) Une copie de la première étiquette apparaît dans la deuxième cellule du TableLayoutPanel. Collez-le à nouveau, et une autre étiquette s'affiche dans la troisième cellule. Continuez à coller des contrôles d’étiquette jusqu'à ce que toutes les cellules soient remplies.
+5. Choisissez le contrôle d’étiquette et copiez-le dans la cellule suivante du TableLayoutPanel. (Appuyez sur les touches **Ctrl** +**C** ou, dans la barre de menus, choisissez **modifier**  > **copier**.) Puis collez-le. (Appuyez sur les touches **Ctrl** +**V** , ou dans la barre de menus, choisissez **Edition**  > **coller**.) Une copie de la première étiquette apparaît dans la deuxième cellule du TableLayoutPanel. Collez-le à nouveau, et une autre étiquette s'affiche dans la troisième cellule. Continuez à coller des contrôles d’étiquette jusqu'à ce que toutes les cellules soient remplies.
 
    > [!NOTE]
    > Si vous effectuez un trop grand nombre de collages, l'IDE ajoute une nouvelle ligne au TableLayoutPanel pour fournir la place nécessaire à l'ajout de votre nouveau contrôle d’étiquette. Vous pouvez l'annuler. Pour supprimer la nouvelle cellule, appuyez sur **Ctrl**+**Z** ou, dans la barre de menus, choisissez **Modification** > **Annuler**.
 
-    Votre formulaire est maintenant mis en forme. Elle doit ressembler à l’image suivante.
+    Votre formulaire est maintenant disposé. Elle doit ressembler à l’image suivante.
 
     ![Formulaire de jeu de combinaisons initial](../ide/media/express_tut4step1.png)<br/>*Formulaire de jeu de combinaisons initial*
 
 ## <a name="to-continue-or-review"></a>Pour continuer ou examiner
 
-- Pour passer à l’étape suivante du tutoriel, consultez [Étape 2 : Ajouter un objet aléatoire et une liste d’icônes](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
+- Pour passer à l’étape suivante du tutoriel, consultez [Étape 2 : ajouter un objet aléatoire et une liste d’icônes](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
 
-- Pour revenir à la rubrique de vue d’ensemble, consultez [Tutoriel 3 : Créer un jeu de combinaisons](../ide/tutorial-3-create-a-matching-game.md).
+- Pour revenir à la rubrique de présentation, consultez [Tutoriel 3 : Créer un jeu de combinaisons](../ide/tutorial-3-create-a-matching-game.md).

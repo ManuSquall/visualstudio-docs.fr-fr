@@ -2,19 +2,19 @@
 title: Insérer des commentaires dans la documentation XML
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b258b456aa614c851be138c017b3378cc13984cc
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
-ms.translationtype: HT
+ms.openlocfilehash: e9153677b833a89a236923a971b511548b064142
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715382"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668614"
 ---
-# <a name="how-to-insert-xml-comments-for-documentation-generation"></a>Procédure : insérer des commentaires XML pour la génération de documentation
+# <a name="how-to-insert-xml-comments-for-documentation-generation"></a>Guide pratique pour insérer des commentaires XML pour la génération de documentation
 
 Visual Studio peut vous aider à documenter des éléments de code, comme les classes et les méthodes, en générant automatiquement la structure de commentaire de documentation XML standard. Au moment de la compilation, vous pouvez générer un fichier XML qui contient les commentaires de documentation.
 
@@ -30,7 +30,7 @@ Le fichier XML généré par le compilateur peut être distribué avec votre ass
 
 1. Placez votre curseur sur l’élément que vous souhaitez documenter, par exemple, une méthode.
 
-1. Effectuez l’une des opérations suivantes :
+1. Effectuez l’une des opérations suivantes :
 
    - Tapez `///` en C# ou `'''` en Visual Basic.
 

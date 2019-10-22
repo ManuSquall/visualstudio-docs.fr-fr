@@ -6,15 +6,15 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: 0adb84eb-b22e-46a6-ad90-216652f3733c
 caps.latest.revision: 7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4ecd7a4d237a53a19286790346f790b82b981f60
-ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
+ms.openlocfilehash: 39fb09c24e0d8cca9d2dddbfe2259b50cd2972df
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71062875"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672661"
 ---
 # <a name="user-accounts-and-updates"></a>Comptes d’utilisateur et mises à jour
 
@@ -23,18 +23,18 @@ ms.locfileid: "71062875"
 > [!WARNING]
 > Visual Studio 2015 ne peut pas accéder aux ressources qui sont configurées pour l’accès conditionnel. Pour utiliser ces ressources, effectuez une mise à niveau vers Visual Studio 2017 ou version ultérieure.
 
-Visual Studio lui-même est un environnement connecté. En vous connectant, vous activez l'accès à tous les services associés à votre compte d'utilisateur, ainsi qu'à tous les comptes qui sont liés à ce compte. Les paramètres de votre compte vous suivent partout où vous utilisez Visual Studio. Vous pouvez configurer des niveaux d'autorisation sur une instance spécifique de Visual Studio pour des utilisateurs individuels. En outre, Visual Studio vous informe quand une mise à jour est disponible pour les composants de votre installation, par exemple pour un kit SDK.  
-  
-## <a name="in-this-section"></a>Dans cette section  
-  
-|||  
-|-|-|  
-|[Connexion à Visual Studio](../ide/signing-in-to-visual-studio.md)|Décrit comment et pourquoi se connecter à Visual Studio.|  
-|[Utiliser plusieurs comptes d’utilisateur](../ide/work-with-multiple-user-accounts.md)|Décrit comment associer plusieurs comptes Microsoft et/ou professionnels ou d'établissement scolaire pour activer l'accès aux ressources et aux services à partir de tous vos comptes.|  
-|[Paramètres synchronisés](../ide/synchronized-settings-in-visual-studio.md)|Décrit comment les paramètres vous suivent.|  
-|[Guide pratique pour déverrouiller Visual Studio](../ide/how-to-unlock-visual-studio.md)|Décrit comment déverrouiller Visual Studio dans différents scénarios.|  
-|[Notifications](../ide/visual-studio-notifications.md)|Décrit comment Visual Studio vous avertit quand une mise à jour est disponible pour des composants, comme des kits SDK ou Visual Studio lui-même.|  
-  
+Visual Studio lui-même est un environnement connecté. En vous connectant, vous activez l'accès à tous les services associés à votre compte d'utilisateur, ainsi qu'à tous les comptes qui sont liés à ce compte. Les paramètres de votre compte vous suivent partout où vous utilisez Visual Studio. Vous pouvez configurer des niveaux d'autorisation sur une instance spécifique de Visual Studio pour des utilisateurs individuels. En outre, Visual Studio vous informe quand une mise à jour est disponible pour les composants de votre installation, par exemple pour un kit SDK.
+
+## <a name="in-this-section"></a>Dans cette section
+
+|||
+|-|-|
+|[Connexion à Visual Studio](../ide/signing-in-to-visual-studio.md)|Décrit comment et pourquoi se connecter à Visual Studio.|
+|[Utiliser plusieurs comptes d’utilisateur](../ide/work-with-multiple-user-accounts.md)|Décrit comment associer plusieurs comptes Microsoft et/ou professionnels ou d'établissement scolaire pour activer l'accès aux ressources et aux services à partir de tous vos comptes.|
+|[Paramètres synchronisés](../ide/synchronized-settings-in-visual-studio.md)|Décrit comment les paramètres vous suivent.|
+|[Guide pratique pour déverrouiller Visual Studio](../ide/how-to-unlock-visual-studio.md)|Décrit comment déverrouiller Visual Studio dans différents scénarios.|
+|[Notifications](../ide/visual-studio-notifications.md)|Décrit comment Visual Studio vous avertit quand une mise à jour est disponible pour des composants, comme des kits SDK ou Visual Studio lui-même.|
+
 ## <a name="see-also"></a>Voir aussi
 
 - [IDE Visual Studio](../ide/visual-studio-ide.md)

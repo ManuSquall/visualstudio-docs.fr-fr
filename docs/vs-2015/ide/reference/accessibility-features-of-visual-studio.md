@@ -9,15 +9,15 @@ helpviewer_keywords:
 - accessibility [Visual Studio]
 ms.assetid: aa1ada29-4d93-4bf0-af8b-03633fcb0fba
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1d6c0a8fd4110b2e75d634a8ecfd5e397bb459f8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: fbf7c539c8bf1290aff92edf876ac4c437fd1c68
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441138"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670296"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Fonctionnalités d’accessibilité de Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

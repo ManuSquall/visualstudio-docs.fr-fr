@@ -5,21 +5,21 @@ ms.topic: conceptual
 helpviewer_keywords:
 - requirements
 - stories
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d75bfd7634e068224b12168390193773c198957a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 68aa46b3dc07813b73921b8acb5970289c30aecc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62814566"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658412"
 ---
 # <a name="model-user-requirements"></a>Modéliser les besoins des utilisateurs
 
-Visual Studio vous aide à comprendre, discuter et communiquer les besoins de vos utilisateurs en dessinant des diagrammes sur leurs activités et le rôle joué par votre système pour les aider à atteindre leurs objectifs. Un modèle d’impératifs est un ensemble de tels diagrammes, chacun étant axé sur un aspect différent des besoins des utilisateurs. Pour une démonstration vidéo, consultez : [Modeling the Business Domain](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain).
+Visual Studio vous aide à comprendre, discuter et communiquer les besoins de vos utilisateurs en dessinant des diagrammes sur leurs activités et le rôle joué par votre système pour les aider à atteindre leurs objectifs. Un modèle d’impératifs est un ensemble de tels diagrammes, chacun étant axé sur un aspect différent des besoins des utilisateurs. Pour obtenir une démonstration vidéo, consultez : [Modeling the Business Domain (Modélisation du domaine d’entreprise)](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain).
 
 Pour connaître les versions de Visual Studio qui prennent en charge chaque type de modèle, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -54,13 +54,13 @@ Vous pouvez créer plusieurs vues différentes des impératifs des utilisateurs.
 |Autres documents ou éléments de travail|Critères de performances, de sécurité, de facilité d’utilisation et de fiabilité.|[Description des impératifs de qualité de service](#QoSRequirements)|
 |Autres documents ou éléments de travail|Contraintes et règles non spécifiques à un cas d’usage particulier|[Affichage des règles métier](#BusinessRules)|
 
-Notez que la plupart des types de diagrammes peuvent être utilisés à d’autres fins. Pour une vue d’ensemble des types de diagrammes, consultez [créer des modèles pour votre application](../modeling/create-models-for-your-app.md).
+Notez que la plupart des types de diagrammes peuvent être utilisés à d’autres fins. Pour obtenir une vue d’ensemble des types de diagrammes, consultez [créer des modèles pour votre application](../modeling/create-models-for-your-app.md).
 
 ## <a name="BusinessRules"></a> Showing Business Rules
 
 Une règle métier est un impératif qui n’est associé à aucun cas d’usage particulier et doit être respecté à l’échelle du système.
 
-De nombreuses règles métier sont des contraintes sur les relations entre les classes conceptuelles. Vous pouvez écrire ces *des règles métier statiques* sous forme de commentaires associés aux classes pertinentes sur un diagramme de classes conceptuelles. Exemple :
+De nombreuses règles métier sont des contraintes sur les relations entre les classes conceptuelles. Vous pouvez écrire ces *règles métier statiques* en tant que commentaires associés aux classes pertinentes sur un diagramme de classes conceptuelles. Exemple :
 
 ![Règle dans le commentaire associé à la classe Order.](../modeling/media/uml_reqmcd2.png)
 
@@ -94,7 +94,7 @@ Vous pouvez inclure certains de ces impératifs dans les descriptions de cas d�
 
 Si un Restaurant supprime un Élément de menu pendant qu’un Client Commande un Repas, tout Élément de commande qui fait référence à cet Élément de menu est affiché en rouge.
 
-Consultez [modéliser l’architecture de votre application](../modeling/model-your-app-s-architecture.md) pour savoir comment développer du code conforme à la qualité de service.
+Consultez [modéliser l’architecture de votre application](../modeling/model-your-app-s-architecture.md) pour apprendre à développer du code conforme aux exigences de qualité de service.
 
 ## <a name="see-also"></a>Voir aussi
 

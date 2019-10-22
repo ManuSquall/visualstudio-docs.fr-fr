@@ -13,15 +13,15 @@ helpviewer_keywords:
 - tools [Visual Studio], customizing
 ms.assetid: 02b09877-1df1-4531-a0d1-a4ca17c7f857
 caps.latest.revision: 23
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bc659641e64bde9da4f1e05abf285fbdec1877e3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: ed637943d7a849357338593ffc684e4f45c09a30
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65674844"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662444"
 ---
 # <a name="options-dialog-box-visual-studio"></a>Options, boîte de dialogue (Visual Studio)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

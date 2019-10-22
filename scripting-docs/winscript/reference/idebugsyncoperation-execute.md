@@ -1,5 +1,5 @@
 ---
-title: IDebugSyncOperation::Execute | Microsoft Docs
+title: 'IDebugSyncOperation :: Execute | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a2bc204169ff94a240e363eb8caa35ec8c7de9be
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 25da02e6736cc2f8ac27c82f922bd515e791bef1
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63004878"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576697"
 ---
 # <a name="idebugsyncoperationexecute"></a>IDebugSyncOperation::Execute
-Mode synchrone effectue l’opération et retourne.  
+Effectue l’opération de façon synchrone et retourne.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -37,18 +37,18 @@ HRESULT Execute(
   
 #### <a name="parameters"></a>Paramètres  
  `ppunkResult`  
- [out] Le paramètre d’objet retourné par l’opération.  
+ à Paramètre d’objet retourné par l’opération.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
-|`E_ABORT`|L’opération a été abandonnée en appelant le `IDebugSyncOperation::InProgressAbort` (méthode).|  
+|`E_ABORT`|L’opération a été abandonnée en appelant la méthode `IDebugSyncOperation::InProgressAbort`.|  
   
 ## <a name="remarks"></a>Notes  
- Le Gestionnaire de débogage de processus dans le thread cible appelle le `Execute` méthode synchrone.  
+ Le gestionnaire de débogage de processus dans le thread cible appelle la méthode `Execute` de façon synchrone.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IDebugSyncOperation](../../winscript/reference/idebugsyncoperation-interface.md)

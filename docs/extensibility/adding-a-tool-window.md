@@ -11,55 +11,57 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f438297a51e5b091ea8b80cf587586919d00798
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7ee669d2acd5bc69c7268b19ad04e9fa7b506e11
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352411"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72633420"
 ---
 # <a name="add-a-tool-window"></a>Ajouter une fenêtre outil
-Dans cette procédure pas à pas, vous allez apprendre à créer une fenêtre outil et l’intégrer à Visual Studio comme suit :
 
-- Ajouter un contrôle à la fenêtre outil.
+Dans cette procédure pas à pas, vous allez apprendre à créer une fenêtre outil et à l’intégrer dans Visual Studio de la manière suivante :
 
-- Ajouter une barre d’outils à une fenêtre outil.
+- Ajoutez un contrôle à la fenêtre outil.
 
-- Ajouter une commande à la barre d’outils.
+- Ajoutez une barre d’outils à une fenêtre outil.
 
-- Implémenter les commandes.
+- Ajoutez une commande à la barre d’outils.
 
-- Définir la position par défaut de la fenêtre outil.
+- Implémentez les commandes.
 
-## <a name="prerequisites"></a>Prérequis
-À partir de Visual Studio 2015, vous n’installez pas le Kit de développement logiciel Visual Studio à partir du centre de téléchargement. Il est inclus comme fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le kit SDK VS par la suite. Pour plus d’informations, consultez [installer le SDK Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+- Définissez la position par défaut de la fenêtre outil.
+
+## <a name="prerequisites"></a>Configuration requise
+
+Le kit de développement logiciel (SDK) Visual Studio est inclus en tant que fonctionnalité facultative dans le programme d’installation de Visual Studio. Pour plus d’informations, consultez [installer le kit de développement logiciel (SDK) Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-tool-window"></a>Créer une fenêtre outil
 
-1. Créez un projet nommé **FirstToolWin** en utilisant le modèle VSIX et ajouter un modèle d’élément de fenêtre outil personnalisé nommé **FirstToolWindow**.
+1. Créez un projet nommé **FirstToolWin** à l’aide du modèle VSIX, puis ajoutez un modèle d’élément de fenêtre outil personnalisé nommé **FirstToolWindow**.
 
     > [!NOTE]
     > Pour plus d’informations sur la création d’une extension avec une fenêtre outil, consultez [créer une extension avec une fenêtre outil](../extensibility/creating-an-extension-with-a-tool-window.md).
 
 ## <a name="add-a-control-to-the-tool-window"></a>Ajouter un contrôle à la fenêtre outil
 
-1. Supprimez le contrôle par défaut. Ouvrez *FirstToolWindowControl.xaml* et supprimer le **Click Me !** disproportionnée.
+1. Supprimez le contrôle par défaut. Ouvrez *FirstToolWindowControl. Xaml* et supprimez l' **utilisateur click me !** disproportionnée.
 
-2. Dans le **boîte à outils**, développez le **tous les contrôles WPF** section et faites glisser le **élément média** le contrôle à la **FirstToolWindowControl** formulaire. Sélectionnez le contrôle, puis, dans le **propriétés** fenêtre, nommez cet élément **mediaElement1**.
+2. Dans la **boîte à outils**, développez la section **tous les contrôles WPF** , puis faites glisser le contrôle **Media Element** vers le formulaire **FirstToolWindowControl** . Sélectionnez le contrôle et, dans la fenêtre **Propriétés** , nommez cet élément **mediaElement1**.
 
 ## <a name="add-a-toolbar-to-the-tool-window"></a>Ajouter une barre d’outils à la fenêtre outil
-En ajoutant une barre d’outils de la manière suivante, vous garantir que ses dégradés et les couleurs sont cohérents avec le reste de l’IDE.
+En ajoutant une barre d’outils de la manière suivante, vous garantissez que ses dégradés et couleurs sont cohérents avec le reste de l’IDE.
 
-1. Dans **l’Explorateur de solutions**, ouvrez *FirstToolWindowPackage.vsct*. Le *.vsct* fichier définit les éléments d’interface graphique utilisateur graphique dans votre fenêtre outil à l’aide de XML.
+1. Dans **Explorateur de solutions**, ouvrez *FirstToolWindowPackage. vsct*. Le fichier *. vsct* définit les éléments de l’interface utilisateur graphique (GUI) dans votre fenêtre outil à l’aide de XML.
 
-2. Dans le `<Symbols>` section, recherchez le `<GuidSymbol>` nœud dont `name` attribut est `guidFirstToolWindowPackageCmdSet`. Ajoutez les deux `<IDSymbol>` éléments à la liste des `<IDSymbol>` éléments dans ce nœud pour définir une barre d’outils et un groupe de la barre d’outils.
+2. Dans la section `<Symbols>`, recherchez le nœud `<GuidSymbol>` dont l’attribut `name` est `guidFirstToolWindowPackageCmdSet`. Ajoutez les deux éléments `<IDSymbol>` suivants à la liste des éléments `<IDSymbol>` de ce nœud pour définir une barre d’outils et un groupe de barres d’outils.
 
     ```xml
     <IDSymbol name="ToolbarID" value="0x1000" />
     <IDSymbol name="ToolbarGroupID" value="0x1001" />
     ```
 
-3. Juste au-dessus du `<Buttons>` section, créez un `<Menus>` section qui ressemble à ceci :
+3. Juste au-dessus de la section `<Buttons>`, créez une `<Menus>` section qui ressemble à ceci :
 
     ```xml
     <Menus>
@@ -73,11 +75,11 @@ En ajoutant une barre d’outils de la manière suivante, vous garantir que ses 
     </Menus>
     ```
 
-    Il existe plusieurs types de menu. Ce menu est une barre d’outils dans une fenêtre outil, défini par son `type` attribut. Le `guid` et `id` paramètres constituent l’ID complet de la barre d’outils. En règle générale, le `<Parent>` d’un menu est le groupe conteneur. Toutefois, une barre d’outils est défini comme son propre parent. Par conséquent, le même identificateur est utilisé pour le `<Menu>` et `<Parent>` éléments. Le `priority` attribut est simplement « 0 ».
+    Il existe différents types de menu. Ce menu est une barre d’outils dans une fenêtre outil, définie par son attribut `type`. Les paramètres `guid` et `id` composent l’ID complet de la barre d’outils. En général, le `<Parent>` d’un menu est le groupe conteneur. Toutefois, une barre d’outils est définie comme son propre parent. Par conséquent, le même identificateur est utilisé pour les éléments `<Menu>` et `<Parent>`. L’attribut `priority` est simplement' 0 '.
 
-4. Barres d’outils sont semblables aux menus à bien des égards. Par exemple, tout comme un menu peut avoir des groupes de commandes, barres d’outils peuvent également des groupes. (Dans les menus, les groupes de commandes sont séparées par des lignes horizontales. Des barres d’outils, les groupes ne sont pas séparés par des séparateurs de visual.)
+4. Les barres d’outils ressemblent à des menus de nombreuses façons. Par exemple, tout comme un menu peut avoir des groupes de commandes, les barres d’outils peuvent également avoir des groupes. (Dans les menus, les groupes de commandes sont séparés par des lignes horizontales. Sur les barres d’outils, les groupes ne sont pas séparés par des séparateurs visuels.)
 
-    Ajouter un `<Groups>` section qui contient un `<Group>` élément. Définit le groupe dont vous avez déclaré dans l’ID du `<Symbols>` section. Ajouter le `<Groups>` section juste après le `<Menus>` section.
+    Ajoutez une section `<Groups>` qui contient un élément `<Group>`. Cela définit le groupe dont vous avez déclaré l’ID dans la section `<Symbols>`. Ajoutez la section `<Groups>` juste après la section `<Menus>`.
 
     ```xml
     <Groups>
@@ -87,19 +89,20 @@ En ajoutant une barre d’outils de la manière suivante, vous garantir que ses 
     </Groups>
     ```
 
-    En définissant le parent GUID et l’ID pour le GUID et l’ID de la barre d’outils, vous ajoutez le groupe à la barre d’outils.
+    En définissant le GUID et l’ID parents sur le GUID et l’ID de la barre d’outils, vous ajoutez le groupe à la barre d’outils.
 
 ## <a name="add-a-command-to-the-toolbar"></a>Ajouter une commande à la barre d’outils
- Ajouter une commande à la barre d’outils, qui s’affiche en tant que bouton.
 
-1. Dans la `<Symbols>` section, déclarer les éléments suivants de IDSymbol juste après la barre d’outils et de la barre d’outils des déclarations de groupe.
+Ajoutez une commande à la barre d’outils, qui s’affiche sous forme de bouton.
+
+1. Dans la section `<Symbols>`, déclarez les éléments IDSymbol suivants juste après les déclarations de barre d’outils et de groupes de barres d’outils.
 
     ```xml
     <IDSymbol name="cmdidWindowsMedia" value="0x0100" />
     <IDSymbol name="cmdidWindowsMediaOpen" value="0x132" />
     ```
 
-2. Ajouter un élément de bouton à l’intérieur du `<Buttons>` section. Cet élément apparaît alors dans la barre d’outils dans la fenêtre outil, avec un **recherche** icône (Loupe).
+2. Ajoutez un élément Button à l’intérieur de la section `<Buttons>`. Cet élément apparaît dans la barre d’outils de la fenêtre outil, avec une icône de **recherche** (loupe).
 
     ```xml
     <Button guid="guidFirstToolWindowPackageCmdSet" id="cmdidWindowsMediaOpen" priority="0x0101" type="Button">
@@ -123,10 +126,10 @@ En ajoutant une barre d’outils de la manière suivante, vous garantir que ses 
 
     Cela rend vos commandes disponibles dans le code.
 
-## <a name="add-a-mediaplayer-property-to-firsttoolwindowcontrol"></a>Ajouter une propriété de MediaPlayer à FirstToolWindowControl
-Gestionnaires d’événements pour les contrôles de barre d’outils, votre code doit être en mesure d’accéder au contrôle Media Player, qui est un enfant de la classe FirstToolWindowControl.
+## <a name="add-a-mediaplayer-property-to-firsttoolwindowcontrol"></a>Ajouter une propriété MediaPlayer à FirstToolWindowControl
+À partir des gestionnaires d’événements pour les contrôles ToolBar, votre code doit être en mesure d’accéder au contrôle Media Player, qui est un enfant de la classe FirstToolWindowControl.
 
-Dans **l’Explorateur de solutions**, avec le bouton droit *FirstToolWindowControl.xaml*, cliquez sur **afficher le Code**et ajoutez le code suivant à la classe FirstToolWindowControl.
+Dans **Explorateur de solutions**, cliquez avec le bouton droit sur *FirstToolWindowControl. Xaml*, cliquez sur **afficher le code**, puis ajoutez le code suivant à la classe FirstToolWindowControl.
 
 ```csharp
 public System.Windows.Controls.MediaElement MediaPlayer
@@ -136,9 +139,9 @@ public System.Windows.Controls.MediaElement MediaPlayer
 ```
 
 ## <a name="instantiate-the-tool-window-and-toolbar"></a>Instancier la fenêtre outil et la barre d’outils
-Ajouter une barre d’outils et une commande de menu qui appelle le **ouvrir un fichier** boîte de dialogue et lit le fichier multimédia sélectionné.
+Ajoutez une barre d’outils et une commande de menu qui appelle la boîte de dialogue **ouvrir un fichier** et qui lit le fichier multimédia sélectionné.
 
-1. Ouvrez *FirstToolWindow.cs* et ajoutez le code suivant `using` instructions.
+1. Ouvrez *FirstToolWindow.cs* et ajoutez les directives de `using` suivantes :
 
     ```csharp
     using System.ComponentModel.Design;
@@ -146,7 +149,7 @@ Ajouter une barre d’outils et une commande de menu qui appelle le **ouvrir un 
     using Microsoft.VisualStudio.Shell.Interop;
     ```
 
-2. À l’intérieur de la classe FirstToolWindow, ajoutez une référence publique pour le contrôle FirstToolWindowControl.
+2. À l’intérieur de la classe FirstToolWindow, ajoutez une référence publique au contrôle FirstToolWindowControl.
 
     ```csharp
     public FirstToolWindowControl control;
@@ -159,7 +162,7 @@ Ajouter une barre d’outils et une commande de menu qui appelle le **ouvrir un 
     base.Content = control;
     ```
 
-4. Instanciez la barre d’outils à l’intérieur du constructeur.
+4. Instanciez la barre d’outils dans le constructeur.
 
     ```csharp
     this.ToolBar = new CommandID(new Guid(FirstToolWindowCommand.guidFirstToolWindowPackageCmdSet),
@@ -167,7 +170,7 @@ Ajouter une barre d’outils et une commande de menu qui appelle le **ouvrir un 
     this.ToolBarLocation = (int)VSTWT_LOCATION.VSTWT_TOP;
     ```
 
-5. À ce stade le constructeur FirstToolWindow doit ressembler à ceci :
+5. À ce stade, le constructeur FirstToolWindow doit ressembler à ceci :
 
     ```csharp
     public FirstToolWindow() : base(null)
@@ -183,13 +186,13 @@ Ajouter une barre d’outils et une commande de menu qui appelle le **ouvrir un 
     }
     ```
 
-6. Ajoutez la commande de menu à la barre d’outils. Dans la classe FirstToolWindowCommand.cs, ajoutez le code suivant à l’aide d’instruction
+6. Ajoutez la commande de menu à la barre d’outils. Dans la classe FirstToolWindowCommand.cs, ajoutez la directive using suivante :
 
     ```csharp
     using System.Windows.Forms;
     ```
 
-7. Dans la classe FirstToolWindowCommand, ajoutez le code suivant à la fin de la méthode ShowToolWindow(). La commande ButtonHandler sera implémentée dans la section suivante.
+7. Dans la classe FirstToolWindowCommand, ajoutez le code suivant à la fin de la méthode ShowToolWindow (). La commande ButtonHandler sera implémentée dans la section suivante.
 
     ```csharp
     // Create the handles for the toolbar command.
@@ -203,15 +206,15 @@ Ajouter une barre d’outils et une commande de menu qui appelle le **ouvrir un 
 
 ### <a name="to-implement-a-menu-command-in-the-tool-window"></a>Pour implémenter une commande de menu dans la fenêtre outil
 
-1. Dans la classe FirstToolWindowCommand, ajoutez une méthode ButtonHandler qui appelle le **ouvrir un fichier** boîte de dialogue. Lorsqu’un fichier a été sélectionné, il lit le fichier multimédia.
+1. Dans la classe FirstToolWindowCommand, ajoutez une méthode ButtonHandler qui appelle la boîte de dialogue **ouvrir un fichier** . Lorsqu’un fichier a été sélectionné, il lit le fichier multimédia.
 
-2. Dans la classe FirstToolWindowCommand, ajoutez une référence à la fenêtre FirstToolWindow qui est créée dans la méthode FindToolWindow() privée.
+2. Dans la classe FirstToolWindowCommand, ajoutez une référence privée à la fenêtre FirstToolWindow qui est créée dans la méthode FindToolWindow ().
 
     ```csharp
     private FirstToolWindow window;
     ```
 
-3. Modifier la méthode ShowToolWindow() pour définir la fenêtre définie ci-dessus (afin que le Gestionnaire de commandes ButtonHandler peut accéder au contrôle de fenêtre. Voici la méthode ShowToolWindow() complète.
+3. Modifiez la méthode ShowToolWindow () pour définir la fenêtre que vous avez définie ci-dessus (afin que le gestionnaire de commandes ButtonHandler puisse accéder au contrôle de fenêtre. Voici la méthode ShowToolWindow () complète.
 
     ```csharp
     private void ShowToolWindow(object sender, EventArgs e)
@@ -234,7 +237,7 @@ Ajouter une barre d’outils et une commande de menu qui appelle le **ouvrir un 
     }
     ```
 
-4. Ajoutez la méthode ButtonHandler. Il crée un OpenFileDialog pour l’utilisateur de spécifier le fichier multimédia à lire, et puis lit le fichier sélectionné.
+4. Ajoutez la méthode ButtonHandler. Il crée un OpenFileDialog pour que l’utilisateur spécifie le fichier multimédia à lire, puis lit le fichier sélectionné.
 
     ```csharp
     private void ButtonHandler(object sender, EventArgs arguments)
@@ -249,9 +252,10 @@ Ajouter une barre d’outils et une commande de menu qui appelle le **ouvrir un 
     ```
 
 ## <a name="set-the-default-position-for-the-tool-window"></a>Définir la position par défaut de la fenêtre outil
- Ensuite, spécifiez un emplacement par défaut dans l’IDE de la fenêtre outil. Informations de configuration de la fenêtre outil sont dans le *FirstToolWindowPackage.cs* fichier.
 
-1. Dans *FirstToolWindowPackage.cs*, trouver la <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> attribut sur la `FirstToolWindowPackage` classe, qui transmet le type FirstToolWindow au constructeur. Pour spécifier une position par défaut, vous devez ajouter davantage de paramètres au constructeur de l’exemple suivant.
+Ensuite, spécifiez un emplacement par défaut dans l’IDE pour la fenêtre outil. Les informations de configuration de la fenêtre outil se trouvent dans le fichier *FirstToolWindowPackage.cs* .
+
+1. Dans *FirstToolWindowPackage.cs*, recherchez l’attribut <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> sur la classe `FirstToolWindowPackage`, qui passe le type FirstToolWindow au constructeur. Pour spécifier une position par défaut, vous devez ajouter des paramètres à l’exemple de constructeur suivant.
 
     ```csharp
     [ProvideToolWindow(typeof(FirstToolWindow),
@@ -259,22 +263,22 @@ Ajouter une barre d’outils et une commande de menu qui appelle le **ouvrir un 
         Window = "3ae79031-e1bc-11d0-8f78-00a0c9110057")]
     ```
 
-    Le premier paramètre nommé est `Style` et sa valeur est `Tabbed`, ce qui signifie que la fenêtre sera un onglet dans une fenêtre existante. La position d’ancrage est spécifiée par le `Window` paramètre, n ce cas, le GUID de la **l’Explorateur de solutions**.
+    Le premier paramètre nommé est `Style` et sa valeur est `Tabbed`, ce qui signifie que la fenêtre est un onglet dans une fenêtre existante. La position d’ancrage est spécifiée par le paramètre `Window`, n ce cas, le GUID du **Explorateur de solutions**.
 
     > [!NOTE]
     > Pour plus d’informations sur les types de fenêtres dans l’IDE, consultez <xref:EnvDTE.vsWindowType>.
 
-## <a name="test-the-tool-window"></a>La fenêtre outil de test
+## <a name="test-the-tool-window"></a>Tester la fenêtre outil
 
-1. Appuyez sur **F5** pour ouvrir une nouvelle instance de la build expérimentale de Visual Studio.
+1. Appuyez sur **F5** pour ouvrir une nouvelle instance de la build expérimentale Visual Studio.
 
-2. Sur le **vue** menu, pointez sur **Windows autres** puis cliquez sur **première fenêtre d’outil**.
+2. Dans le menu **affichage** , pointez sur **autres fenêtres** , puis cliquez sur la **première fenêtre outil**.
 
-    La fenêtre outil du lecteur multimédia doit s’ouvrir dans la même position que **l’Explorateur de solutions**. S’il apparaît toujours dans la même position que précédemment, réinitialiser la disposition de fenêtre (**fenêtre / rétablir la disposition de fenêtre**).
+    La fenêtre de l’outil Media Player doit s’ouvrir à la même position que **Explorateur de solutions**. S’il apparaît toujours à la même position que précédemment, réinitialisez la disposition de fenêtre (**fenêtre/réinitialiser la disposition de fenêtre**).
 
-3. Cliquez sur le bouton (il a la **recherche** icône) dans la fenêtre outil. Sélectionnez un son pris en charge ou un fichier vidéo, par exemple, *C:\windows\media\chimes.wav*, puis appuyez sur **Open**.
+3. Cliquez sur le bouton (l’icône de **recherche** ) dans la fenêtre outil. Sélectionnez un fichier audio ou vidéo pris en charge, par exemple, *C:\Windows\Media\chimes.wav*, puis appuyez sur **ouvrir**.
 
-    Vous devez entendre le son de carillon.
+    Vous devez entendre le son de la sonnerie.
 
 ## <a name="see-also"></a>Voir aussi
 - [Commandes, menus et barres d’outils](../extensibility/internals/commands-menus-and-toolbars.md)

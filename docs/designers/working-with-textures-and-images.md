@@ -3,17 +3,17 @@ title: Utilisation des textures et des images
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: b9fbc8fa-66d1-4055-8460-24d8b8fbe43e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5642a2e84766758b5fdf50bc652fd32b585427bf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d59b7c2c52cc0fe230a6e9c5c7c89db56d065aff
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62843974"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72633700"
 ---
 # <a name="work-with-textures-and-images"></a>Utiliser des textures et des images
 
@@ -53,4 +53,4 @@ Les mappages de cube peuvent contenir différents types de données, par exemple
 |Titre|Description|
 |-----------|-----------------|
 |[Image Editor](../designers/image-editor.md)|Décrit comment utiliser l’Éditeur d’images pour utiliser les textures et les images.|
-|[Exemples de l’éditeur d’images](../designers/image-editor-examples.md)|Fournit des liens vers des rubriques qui expliquent comment utiliser l’Éditeur d’images pour effectuer des tâches de traitement d’images courantes.|
+|[Exemples de l’éditeur d’images](../designers/how-to-create-a-basic-texture.md)|Fournit des liens vers des rubriques qui expliquent comment utiliser l’Éditeur d’images pour effectuer des tâches de traitement d’images courantes.|

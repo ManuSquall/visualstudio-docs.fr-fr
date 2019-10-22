@@ -29,15 +29,15 @@ f1_keywords:
 ms.assetid: 07769c25-9b97-4ab7-b175-d1c450308d7a
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 68e57a10b9bd36b07a2d4993626604f2a00558ca
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 2460ca1c76eb43bdff89c87c880f405cdce12b48
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919583"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446314"
 ---
 # <a name="annotating-locking-behavior"></a>Annotation du comportement de verrouillage
 Pour éviter les bogues d'accès concurrentiel dans votre programme multithread, suivez toujours une règle de verrouillage appropriée et utilisez les annotations SAL.
@@ -48,7 +48,7 @@ Malheureusement, ces règles de verrouillage apparemment simples peuvent être �
 
 Les annotations SAL d'accès concurrentiel sont conçues pour vous aider à spécifier les effets secondaires du verrouillage, le responsable du verrouillage, la tutelle de données, la hiérarchie d'ordre de verrou et d'autres comportements de verrouillage prévus. En transformant des règles implicites en règles explicites, les annotations d'accès concurrence SAL vous permettent de documenter la façon dont votre code utilise des règles de verrouillage. Les annotations d'accès concurrentiel améliorent également la capacité des outils d'analyse du code à rechercher des conditions de concurrence, des interblocages, des opérations de synchronisation incompatibles et d'autres erreurs subtiles d'accès concurrentiel.
 
-## <a name="general-guidelines"></a>Instructions générales
+## <a name="general-guidelines"></a>Indications générales
 Les annotations permettent aux programmeurs de déclarer les contrats sous-entendus par les définitions de fonction entre les implémentations (appelés) et les clients (appelants) et d'exprimer les invariants et d'autres propriétés du programme qui peuvent améliorer davantage l'analyse.
 
 SAL prend en charge de nombreux types de primitives de verrouillage, tels que les sections critiques, les mutex, les verrous de rotation et d'autres objets de ressource. De nombreuses annotations d’accès concurrentiel prennent une expression de verrou comme paramètre. Par Convention, un verrou est indiqué par l’expression de chemin d’accès de l’objet de verrouillage sous-jacent.
@@ -106,16 +106,16 @@ Le tableau suivant répertorie les annotations à utiliser avec l'accès aux don
 |`_Write_guarded_by_(expr)`|Annote une variable et indique qu'à chaque modification de la variable, le nombre de verrous de l'objet verrou nommé par `expr` est d'au moins un.|
 
 ## <a name="smart-lock-and-raii-annotations"></a>Annotations Smart Lock et RAII
-Les verrous intelligents encapsulent généralement les verrous natifs et gèrent leur durée de vie. Le tableau suivant répertorie les annotations qui peuvent être utilisées avec des verrous intelligents et des `move` modèles de codage RAII avec la prise en charge de la sémantique.
+Les verrous intelligents encapsulent généralement les verrous natifs et gèrent leur durée de vie. Le tableau suivant répertorie les annotations qui peuvent être utilisées avec des verrous intelligents et des modèles de codage RAII avec la prise en charge de la sémantique `move`.
 
 |Annotation|Description|
 |----------------|-----------------|
 |`_Analysis_assume_smart_lock_acquired_`|Indique à l’analyseur de supposer qu’un verrou intelligent a été acquis. Cette annotation attend un type de verrou de référence comme paramètre.|
 |`_Analysis_assume_smart_lock_released_`|Indique à l’analyseur de supposer qu’un verrou intelligent a été relâché. Cette annotation attend un type de verrou de référence comme paramètre.|
-|`_Moves_lock_(target, source)`|Décrit `move constructor` l’opération qui transfère l’état de `source` verrouillage de l' `target`objet vers le. Est considéré comme un objet nouvellement construit, donc tout état qu’il avait avant est perdu et remplacé par `source` l’État. `target` La `source` est également réinitialisée à un état propre sans nombre de verrous ni cible d’alias, mais les alias qui pointent vers celle-ci restent inchangés.|
-|`_Replaces_lock_(target, source)`|Décrit `move assignment operator` la sémantique dans laquelle le verrou cible est libéré avant de transférer l’État à partir de la source. Cela peut être considéré comme une combinaison de `_Moves_lock_(target, source)` précédée `_Releases_lock_(target)`de.|
-|`_Swaps_locks_(left, right)`|Décrit le comportement `swap` standard qui suppose que les objets `left` et `right` échangent leur état. L’État échangé comprend le nombre de verrous et la cible d’alias, le cas échéant. Les alias qui pointent vers `left` les `right` objets et restent inchangés.|
-|`_Detaches_lock_(detached, lock)`|Décrit un scénario dans lequel un type de wrapper de verrou autorise la dissociation avec sa ressource contenue. Cela est similaire à la `std::unique_ptr` façon dont fonctionne avec son pointeur interne: elle permet aux programmeurs d’extraire le pointeur et de conserver son conteneur de pointeur intelligent dans un état propre. Une logique similaire est prise `std::unique_lock` en charge par et peut être implémentée dans des wrappers de verrou personnalisés. Le verrou détaché conserve son état (nombre de verrous et cible d’alias, le cas échéant), tandis que le wrapper est réinitialisé pour contenir zéro nombre de verrous et aucune cible d’alias, tout en conservant ses propres alias. Il n’y a aucune opération sur le nombre de verrous (libération et acquisition). Cette annotation se comporte exactement comme `_Moves_lock_` si sauf que l’argument détaché doit être `return` plutôt `this`que.|
+|`_Moves_lock_(target, source)`|Décrit l’opération `move constructor` qui transfère l’état du verrou de l’objet `source` au `target`. Le `target` est considéré comme un objet nouvellement construit, donc tout état qu’il avait avant est perdu et remplacé par l’État `source`. La `source` est également réinitialisée à un état propre sans nombre de verrous ni cible d’alias, mais les alias qui pointent vers celle-ci restent inchangés.|
+|`_Replaces_lock_(target, source)`|Décrit la sémantique `move assignment operator` où le verrou cible est libéré avant de transférer l’État à partir de la source. Cette valeur peut être considérée comme une combinaison de `_Moves_lock_(target, source)` précédée d’une `_Releases_lock_(target)`.|
+|`_Swaps_locks_(left, right)`|Décrit le comportement `swap` standard qui suppose que les objets `left` et `right` échangent leur état. L’État échangé comprend le nombre de verrous et la cible d’alias, le cas échéant. Les alias qui pointent vers les objets `left` et `right` restent inchangés.|
+|`_Detaches_lock_(detached, lock)`|Décrit un scénario dans lequel un type de wrapper de verrou autorise la dissociation avec sa ressource contenue. Cela est similaire à la façon dont `std::unique_ptr` fonctionne avec son pointeur interne : elle permet aux programmeurs d’extraire le pointeur et de conserver son conteneur de pointeur intelligent dans un état propre. Une logique similaire est prise en charge par `std::unique_lock` et peut être implémentée dans des wrappers de verrou personnalisés. Le verrou détaché conserve son état (nombre de verrous et cible d’alias, le cas échéant), tandis que le wrapper est réinitialisé pour contenir zéro nombre de verrous et aucune cible d’alias, tout en conservant ses propres alias. Il n’y a aucune opération sur le nombre de verrous (libération et acquisition). Cette annotation se comporte exactement comme `_Moves_lock_`, sauf que l’argument détaché doit être `return` au lieu de `this`.|
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -2,7 +2,7 @@
 title: Créer une application web ASP.NET Core dans C#
 description: Découvrez comment créer une simple application web Hello World dans Visual Studio avec C# et ASP.NET Core, étape par étape.
 ms.custom: mvc,seodec18
-ms.date: 06/06/2019
+ms.date: 10/15/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: quickstart
@@ -14,14 +14,14 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 28994e7f3a4f31a9e3ee8c292a08df1132cf20df
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.openlocfilehash: e57a72262e9fdf3224b97d6d107e8547dc0a267e
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180383"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516897"
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Démarrage rapide : Utiliser Visual Studio pour créer votre première application web ASP.Core
+# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Démarrage rapide : utiliser Visual Studio pour créer votre première application web ASP.NET Core
 
 Dans cette introduction de 5 à 10 minutes à l’utilisation de Visual Studio, vous allez créer une simple application web « Hello World » avec un modèle de projet ASP.NET et le langage de programmation C#.
 
@@ -110,9 +110,9 @@ Peu après, Visual Studio ouvre votre fichier projet.
 
    ![Dans la fenêtre « Configurer votre nouveau projet », nommez votre projet « HelloWorld »](../get-started/csharp/media/vs-2019/csharp-name-your-aspnet-helloworld-project.png)
 
-1. Dans la boîte de dialogue **Créer une nouvelle application Web ASP.NET Core**, vérifiez que **ASP.NET Core 2.1** apparaît dans le menu déroulant du haut. Ensuite, choisissez **Application web**, qui inclut des exemples Razor Pages. Ensuite, choisissez **Créer**.
+1. Dans la fenêtre **créer une nouvelle ASP.net Core application Web** , vérifiez que **ASP.net Core 3,0** s’affiche dans le menu déroulant supérieur. Ensuite, choisissez **Application web**, qui inclut des exemples Razor Pages. Ensuite, choisissez **Créer**.
 
-   ![La fenêtre « Créez une application web ASP.NET Core »](../get-started/csharp/media/vs-2019/csharp-create-aspnet-core-razor-pages-app.png)
+   ![La fenêtre « Créez une application web ASP.NET Core »](../get-started/csharp/media/vs-2019/csharp-create-aspnet-razor-pages-app.png)
 
    Visual Studio ouvre votre nouveau projet.
 

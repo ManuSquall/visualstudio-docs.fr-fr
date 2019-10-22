@@ -6,27 +6,27 @@ ms.technology: vs-ide-modeling
 ms.topic: conceptual
 ms.assetid: 9e5a211f-a3bf-4229-bff0-7d2e45b71c64
 caps.latest.revision: 4
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f964f37b347d588b1f7e590d918018c50e9f41c0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 856c98f1462b1474d1d38656375d93d5301717f6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68199830"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661788"
 ---
 # <a name="t4-cleanupbehavior-directive"></a>Directive CleanUpBehavior T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Pour supprimer l'appDomain après avoir traité un modèle de texte, insérez la ligne suivante :  
-  
-```  
-<#@ CleanupBehavior processor="T4VSHost" CleanupAfterProcessingtemplate="true" #>  
-```  
-  
- Les modèles de texte sont traités dans un appDomain indépendant du processus hôte. Dans la plupart des cas, lorsqu'un modèle de texte a été traité, l'appdomain sert à nouveau pour traiter le modèle suivant. Mais si vous spécifiez CleanupBehavior, l'appDomain est supprimé et le modèle suivant est traité dans un nouvel appDomain.  
-  
- Cela ralentit le traitement du texte. Toutefois, cela peut s'avérer utile pour garantir la suppression des ressources.  
-  
+Pour supprimer l'appDomain après avoir traité un modèle de texte, insérez la ligne suivante :
+
+```
+<#@ CleanupBehavior processor="T4VSHost" CleanupAfterProcessingtemplate="true" #>
+```
+
+ Les modèles de texte sont traités dans un appDomain indépendant du processus hôte. Dans la plupart des cas, lorsqu'un modèle de texte a été traité, l'appdomain sert à nouveau pour traiter le modèle suivant. Mais si vous spécifiez CleanupBehavior, l'appDomain est supprimé et le modèle suivant est traité dans un nouvel appDomain.
+
+ Cela ralentit le traitement du texte. Toutefois, cela peut s'avérer utile pour garantir la suppression des ressources.
+
  Cette directive fonctionne uniquement dans l'hôte Visual Studio.

@@ -2,17 +2,17 @@
 title: Raccourcis clavier par défaut pour les commandes fréquemment utilisées
 ms.date: 11/04/2016
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72e010d76188be1ebe07eb9400b7cde60c2bf0a6
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
-ms.translationtype: HT
+ms.openlocfilehash: eda902db03d7211a4025663088cf8bf3718e4a2f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043332"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652515"
 ---
 # <a name="popular-keyboard-shortcuts-for-visual-studio"></a>Raccourcis clavier populaires pour Visual Studio
 
@@ -52,7 +52,7 @@ Le contexte *Global* signifie que le raccourci s’applique dans n’importe que
 |Debug.StopDebugging|**Maj+F5** [Global]|
 |Debug.ToggleBreakpoint|**F9** [Global]|
 
-## <a name="edit"></a>Modifier
+## <a name="edit"></a>Éditer
 
 |Commandes|Raccourcis clavier [Contextes]|
 |--------------| - |

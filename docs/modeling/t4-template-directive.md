@@ -2,21 +2,21 @@
 title: Directive du modèle T4
 ms.date: 11/04/2016
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8d00bf3055d1706b459baaf48d1b8e5dca3f282
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 4932a20fbcaee4d5aef6aac03252ee6062fbd035
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870503"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72606206"
 ---
 # <a name="t4-template-directive"></a>Directive du modèle T4
 
-Un modèle de texte T4 de Visual Studio commence généralement `template` par une directive, qui spécifie la façon dont le modèle doit être traité. Il ne doit y avoir qu'une seule directive de modèle dans un modèle de texte et les fichiers qu'il contient.
+Un modèle de texte T4 de Visual Studio commence généralement par une directive `template`, qui spécifie la façon dont le modèle doit être traité. Il ne doit y avoir qu'une seule directive de modèle dans un modèle de texte et les fichiers qu'il contient.
 
 Pour obtenir une vue d’ensemble générale de l’écriture de modèles de texte, consultez [écriture d’un modèle de texte T4](../modeling/writing-a-t4-text-template.md).
 
@@ -68,13 +68,13 @@ Valeurs valides :
 
 `true`
 
-`false` (valeur par défaut)
+`false` (par défaut)
 
 Si l'attribut `debug` a la valeur `true`, le fichier de code intermédiaire contient des informations qui permettent au débogueur d'identifier plus précisément la position, dans votre modèle, où s'est produit un arrêt ou une exception.
 
 Pour les modèles au moment du design, le fichier de code intermédiaire sera écrit dans votre répertoire **% temp%** .
 
-Pour exécuter un modèle au moment du design dans le débogueur, enregistrez le modèle de texte, ouvrez le menu contextuel du modèle de texte dans Explorateur de solutions, puis choisissez déboguer le **modèle T4**.
+Pour exécuter un modèle au moment du design dans le débogueur, enregistrez le modèle de texte, ouvrez le menu contextuel du modèle de texte dans Explorateur de solutions, puis choisissez **déboguer le modèle T4**.
 
 ## <a name="hostspecific-attribute"></a>attribut hostspecific
 
@@ -88,7 +88,7 @@ Valeurs valides :
 
 `true`
 
-`false` (valeur par défaut)
+`false` (par défaut)
 
 `trueFromBase`
 
@@ -96,7 +96,7 @@ Si vous affectez à cet attribut la valeur `true`, une propriété nommée `Host
 
 Étant donné que le type de cette propriété dépend du type d'hôte, elle n'est utile que si vous écrivez un modèle de texte qui fonctionne uniquement avec un hôte spécifique. Elle s’applique aux [modèles au moment du design](../modeling/design-time-code-generation-by-using-t4-text-templates.md), mais pas aux [modèles au moment de l’exécution](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
-Lorsque `hostspecific` `this.Host` est `true` et que vous utilisez Visual Studio, vous pouvez effectuer un cast en IServiceProvider pour accéder aux fonctionnalités de Visual Studio. Vous pouvez également utiliser `Host.ResolvePath(filename)` pour obtenir le chemin d’accès absolu d’un fichier dans le projet. Exemple :
+Lorsque `hostspecific` est `true` et que vous utilisez Visual Studio, vous pouvez convertir `this.Host` en IServiceProvider pour accéder aux fonctionnalités de Visual Studio. Vous pouvez également utiliser `Host.ResolvePath(filename)` pour obtenir le chemin d’accès absolu d’un fichier dans le projet. Exemple :
 
 ```csharp
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -128,13 +128,13 @@ Exemple :
 
 Valeurs valides :
 
-`C#` (valeur par défaut)
+`C#` (par défaut)
 
 `VB`
 
-L' `language` attribut spécifie le langage[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ( [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]ou) à utiliser pour le code source dans les blocs d’instruction et d’expression. Le fichier de code intermédiaire à partir duquel la sortie est générée utilisera ce langage. Ce langage n'est pas lié au langage que votre modèle génère, qui peut être tout type de texte.
+L’attribut `language` spécifie le langage ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ou [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]) à utiliser pour le code source dans les blocs d’instruction et d’expression. Le fichier de code intermédiaire à partir duquel la sortie est générée utilisera ce langage. Ce langage n'est pas lié au langage que votre modèle génère, qui peut être tout type de texte.
 
-Exemple :
+Exemple :
 
 ```vb
 <#@ template language="VB" #>
@@ -235,17 +235,17 @@ Un modèle de texte au moment du design est un fichier pour lequel l' **outil pe
 
 Pour un modèle de texte au moment du design, vous pouvez spécifier toute classe de base dérivée de <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>. Utilisez la directive `<#@assembly#>` pour charger l'assembly ou le projet qui contient la classe de base.
 
-Pour plus d’informations, consultez [«héritage dans les modèles de texte» dans le blog de Gareth Jones](http://go.microsoft.com/fwlink/?LinkId=208373).
+Pour plus d’informations, consultez [« héritage dans les modèles de texte » dans le blog de Gareth Jones](http://go.microsoft.com/fwlink/?LinkId=208373).
 
 ## <a name="linepragmas-attribute"></a>attribut linePragmas
 
-Exemple :
+Exemple :
 
 `linePragmas="false"`
 
 Valeurs valides :
 
-`true` (valeur par défaut)
+`true` (par défaut)
 
 `false`
 
@@ -255,13 +255,13 @@ Cet attribut peut également être utile si vous recherchez les noms de fichiers
 
 ## <a name="visibility-attribute"></a>attribut Visibility
 
-Exemple :
+Exemple :
 
 `visibility="internal"`
 
 Valeurs valides :
 
-`public` (valeur par défaut)
+`public` (par défaut)
 
 `internal`
 

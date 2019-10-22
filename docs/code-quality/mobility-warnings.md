@@ -14,19 +14,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 170caf52999fb687c040c2e9212d1a1ed2e154a0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3fecdc2f6e7ab8015bf56f38ee00c9bb43a3b38c
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62820672"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72535755"
 ---
 # <a name="mobility-warnings"></a>avertissements liés à la mobilité
-Avertissements de mobilité prennent en charge la consommation d’énergie efficace.
+Les avertissements relatifs à la mobilité prennent en charge l’efficacité énergétique.
 
 ## <a name="in-this-section"></a>Dans cette section
 
 |Règle|Description|
 |----------|-----------------|
-|[CA1600 : N’utilisez pas de priorité de processus inactif](../code-quality/ca1600-do-not-use-idle-process-priority.md)|N'affectez pas la valeur Idle à la priorité de processus. Sinon, les processus avec System.Diagnostics.ProcessPriorityClass.Idle occuperaient le processeur alors qu'il devrait être inactif et bloqueraient par conséquent la veille.|
-|[CA1601 : Ne pas utiliser de minuteries qui empêchent les changements d’état d’alimentation](../code-quality/ca1601-do-not-use-timers-that-prevent-power-state-changes.md)|En effet, toute activité périodique supérieure à cette fréquence occupe le processeur et interfère avec les minuteries d'inactivité qui déclenchent la mise en veille de l'écran et des disques durs pour économiser de l'énergie.|
+|[CA1600 : N’utilisez pas de priorité de processus inactif](../code-quality/ca1600.md)|N'affectez pas la valeur Idle à la priorité de processus. Sinon, les processus avec System.Diagnostics.ProcessPriorityClass.Idle occuperaient le processeur alors qu'il devrait être inactif et bloqueraient par conséquent la veille.|
+|[CA1601 : Ne pas utiliser de minuteries qui empêchent les changements d’état de l’alimentation](../code-quality/ca1601.md)|En effet, toute activité périodique supérieure à cette fréquence occupe le processeur et interfère avec les minuteries d'inactivité qui déclenchent la mise en veille de l'écran et des disques durs pour économiser de l'énergie.|

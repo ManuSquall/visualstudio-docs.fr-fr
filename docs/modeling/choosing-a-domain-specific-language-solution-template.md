@@ -4,32 +4,32 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, solution templates
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b3e6d9812f06df6d4af65f624579ec5f6550515
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3d5eac08833c534e9da3a998687992cca6bc47c2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62424061"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653679"
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>Choix d'un modèle de solution de langage spécifique à un domaine
-Pour créer une solution de langage spécifique à un domaine, choisissez un des modèles de solution sont disponibles dans l’Assistant Concepteur de langage spécifique à un domaine. En choisissant le modèle qui ressemble le plus à la langue que vous souhaitez créer, vous pouvez limiter les modifications que vous avez à faire à la solution de départ.
+Pour créer une solution de langage spécifique à un domaine, choisissez l’un des modèles de solution disponibles dans l’Assistant Concepteur Domain-Specific Language. En choisissant le modèle qui ressemble le plus à la langue que vous souhaitez créer, vous pouvez réduire les modifications que vous devez apporter à la solution de démarrage.
 
- Les modèles de solution suivants sont disponibles dans l’Assistant Concepteur de langage spécifique à un domaine.
+ Les modèles de solution suivants sont disponibles dans l’Assistant Concepteur Domain-Specific Language.
 
 |Modèle|Fonctionnalités|Description|
 |-|-|-|
-|Diagrammes de classes|: Formes de compartiments<br />-L’héritage de classes<br />-L’héritage relation<br />-L’héritage forme<br />-Propriétés relation|Utilisez ce modèle de solution si votre langage spécifique à un domaine inclut les entités et les relations qui ont des propriétés. Ce modèle crée un langage spécifique à un domaine qui ressemble à des diagrammes de classes UML. Les entités principales sont des classes et interfaces, ainsi que des relations d’association, généralisation et l’implémentation. Une classe ou interface apparaît comme une zone qui contient une liste d’attributs.|
-|Diagrammes de composants|-Ports|Utilisez ce modèle de solution si votre langage spécifique à un domaine comporte des composants, autrement dit, les parties d’un système logiciel. Ce modèle crée un langage spécifique à un domaine qui ressemble à des diagrammes de composants UML. Les entités principales sont des composants et les ports qui apparaissent sous forme de petites formes à l’extérieur des composants.|
-|Diagrammes de flux de tâches|-Images et des formes géométriques<br />-   *Swimlanes*|Utilisez ce modèle de solution si votre langage spécifique à un domaine inclut des flux de travail, des États ou des séquences. Ce modèle crée un langage spécifique à un domaine qui ressemble à des diagrammes d’activités UML. L’entité principale est une activité, et la relation principale est une transition entre les activités. Le modèle inclut plusieurs autres éléments tels que l’état de démarrage, état final et une barre de synchronisation.|
-|Langage minimal|-Une classe et la forme<br />-Une relation et connecteur|Utilisez ce modèle de solution si votre langage spécifique à un domaine ne ressemble pas à d’autres modèles. Ce modèle crée un langage spécifique à un domaine qui a deux classes et une seule relation, qui sont représentés dans le **boîte à outils** comme **boîte** et **ligne**. La classe et la relation ont chacun un exemple de propriété de chaîne.|
-|Concepteur WinForm minimal|-Un modèle petit.<br />-Un formulaire Windows qui affiche le modèle.|Utilisez ce modèle si vous souhaitez créer une application dans lequel une solution DSL est lié à un formulaire Windows, plutôt qu’un concepteur graphique.<br /><br /> Le formulaire qui sert d’interface utilisateur pour la langue est dans le dossier Dsl\UI.<br /><br /> Vous devez générer le projet avant d’ouvrir le Concepteur de formulaires.<br /><br /> Pour plus d’informations, consultez [création d’un langage spécifique à un domaine de Windows Forms-Based](../modeling/creating-a-windows-forms-based-domain-specific-language.md).|
-|Concepteur WPF minimal|-Un modèle petit<br />-Une interface utilisateur Windows Presentation Foundation qui affiche le modèle|Utilisez ce modèle si vous souhaitez créer une application dans lequel une solution DSL est lié à une interface utilisateur WPF, plutôt qu’un concepteur graphique.<br /><br /> Le Concepteur de l’interface utilisateur est dans le dossier Dsl\UI.<br /><br /> Vous devez générer le projet avant d’ouvrir le Concepteur d’interface utilisateur.<br /><br /> Pour plus d’informations, consultez [création d’un langage spécifique à un domaine de WPF-Based](../modeling/creating-a-wpf-based-domain-specific-language.md).|
-|Bibliothèque DSL|-Une bibliothèque minimale|Utilisez ce modèle si vous souhaitez générer une définition DSL partielle qui peut être importée dans d’autres définitions DSL.|
+|Diagrammes de classes|-Formes de compartiments<br />-Héritage de classe<br />-Héritage de la relation<br />-Héritage de forme<br />-Propriétés de la relation|Utilisez ce modèle de solution si votre langage spécifique à un domaine comprend des entités et des relations qui ont des propriétés. Ce modèle crée un langage spécifique à un domaine qui ressemble à des diagrammes de classes UML. Les entités principales sont des classes et des interfaces, ainsi que des relations d’association, de généralisation et d’implémentation. Une classe ou une interface apparaît sous la forme d’une zone qui contient une liste d’attributs.|
+|Diagrammes de composants|-Ports|Utilisez ce modèle de solution si votre langage spécifique à un domaine comprend des composants, c’est-à-dire des parties d’un système logiciel. Ce modèle crée un langage spécifique à un domaine qui ressemble à des diagrammes de composants UML. Les entités principales sont des composants et des ports, qui apparaissent sous forme de petites formes à l’extérieur des composants.|
+|Diagrammes de déroulement des tâches|-Formes image et Geometry<br />*couloirs* de -   |Utilisez ce modèle de solution si votre langage spécifique à un domaine comprend des flux de travail, des États ou des séquences. Ce modèle crée un langage spécifique à un domaine qui ressemble à des diagrammes d’activités UML. L’entité principale est une activité et la relation principale est une transition entre les activités. Le modèle comprend plusieurs autres éléments tels que l’état de démarrage, l’état final et une barre de synchronisation.|
+|Langage minimal|-Une classe et une forme<br />-Une relation et un connecteur|Utilisez ce modèle de solution si votre langage spécifique à un domaine ne ressemble pas aux autres modèles. Ce modèle crée un langage spécifique à un domaine qui a deux classes et une relation, qui sont représentées dans la boîte **à outils** sous la forme d’une **zone** et d’une **ligne**. La classe et la relation ont chacune un exemple de propriété de chaîne.|
+|Concepteur WinForm minimal|-Petit modèle.<br />-Un Windows Form qui affiche le modèle.|Utilisez ce modèle si vous souhaitez générer une application dans laquelle un DSL est lié à un Windows Form, plutôt qu’à un concepteur graphique.<br /><br /> Le formulaire qui agit en tant qu’interface utilisateur pour la langue se trouve dans le dossier Dsl\UI.<br /><br /> Vous devez générer le projet avant d’ouvrir le concepteur de formulaires.<br /><br /> Pour plus d’informations, consultez [création d’un langage spécifique à un domaine basé sur Windows Forms](../modeling/creating-a-windows-forms-based-domain-specific-language.md).|
+|Concepteur WPF minimal|-Un petit modèle<br />-Interface utilisateur Windows Presentation Foundation qui affiche le modèle.|Utilisez ce modèle si vous souhaitez générer une application dans laquelle un DSL est lié à une interface utilisateur WPF, plutôt qu’un concepteur graphique.<br /><br /> Le concepteur de l’interface utilisateur se trouve dans le dossier Dsl\UI.<br /><br /> Vous devez générer le projet avant d’ouvrir le concepteur d’interface utilisateur.<br /><br /> Pour plus d’informations, consultez [création d’un langage spécifique à un domaine basé sur WPF](../modeling/creating-a-wpf-based-domain-specific-language.md).|
+|Bibliothèque DSL|-Bibliothèque minimale|Utilisez ce modèle si vous souhaitez générer une définition DSL partielle qui peut être importée dans d’autres définitions DSL.|
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -1,21 +1,21 @@
 ---
-title: 'Procédure : Modéliser un terrain 3D'
+title: Guide pratique pour modéliser un terrain 3D
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f779b1fd-82a9-4a11-8ab7-c1c9caabc883
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41974aee19cf1e4919028d5ef0f0e9b53c6b369e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 82ee7791c8356f13ebfdce5ad5bd3ba8be0674d4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844450"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635420"
 ---
-# <a name="how-to-model-3d-terrain"></a>Procédure : Modéliser un terrain 3D
+# <a name="how-to-model-3d-terrain"></a>Guide pratique pour modéliser un terrain 3D
 
 Cet article montre comment utiliser l’éditeur de modèle pour créer un modèle de terrain 3D.
 
@@ -29,12 +29,12 @@ Lorsque vous avez terminé, le modèle doit se présenter comme suit :
 
 Avant de commencer, assurez-vous que la fenêtre **Propriétés** et la **Boîte à outils** sont affichées.
 
-1. Créez un modèle 3D avec lequel travailler. Pour plus d’informations sur la façon d’ajouter un modèle à votre projet, consultez la section Bien démarrer de l’article [Éditeur de modèle](../designers/model-editor.md).
+1. Créer un modèle 3D avec lequel travailler. Pour plus d’informations sur la façon d’ajouter un modèle à votre projet, consultez la section Bien démarrer de l’article [Éditeur de modèle](../designers/model-editor.md).
 
 2. Ajoutez un plan à la scène. Dans la **Boîte à outils**, sous **Formes**, sélectionnez **Plan** et déplacez-le vers l’aire de conception.
 
     > [!TIP]
-    > Pour faciliter l’utilisation de l’objet plan, vous pouvez l’encadrer dans l’aire de conception. En mode **Sélection**, sélectionnez l’objet plan, puis dans la barre d’outils de l’éditeur de modèle, choisissez le bouton **Frame Object (Encadrer l’objet)**.
+    > Pour faciliter l’utilisation de l’objet plan, vous pouvez l’encadrer dans l’aire de conception. En mode **Sélection**, sélectionnez l’objet plan, puis dans la barre d’outils de l’éditeur de modèle, choisissez le bouton **Frame Object (Encadrer l’objet)** .
 
 3. Passez en mode de sélection de la face. Dans la barre d’outils de l’éditeur de modèle, choisissez **Sélectionner la face**.
 

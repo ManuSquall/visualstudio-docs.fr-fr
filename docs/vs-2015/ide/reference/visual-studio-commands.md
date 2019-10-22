@@ -10,15 +10,15 @@ helpviewer_keywords:
 - command syntax
 ms.assetid: 76ffa394-ee89-4629-aba9-1a62b72e6cc1
 caps.latest.revision: 23
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 10ce4bd59567d7d055dd107dd05358d994d22c36
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b6ad913e418f2f13bd196925b3c085b9d5c7efca
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68160877"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667450"
 ---
 # <a name="visual-studio-commands"></a>Commandes Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Les commandes Visual Studio vous permettent d’appeler une commande depuis la f
 
  Vous pouvez trouver une liste complète des commandes et leur syntaxe dans la boîte de dialogue **Clavier, Options d’environnement** .
 
- Le caractère d’échappement pour les commandes Visual Studio est un caractère d’accent circonflexe (^), ce qui signifie que le caractère qui le suit immédiatement est interprété littéralement et non pas comme un caractère de contrôle. Ceci permet d’incorporer des guillemets ("), des espaces, des barres obliques, des accents circonflexes ou tout autre caractère littéral dans une valeur de paramètre ou de commutateur, à l’exception des noms de commutateur. Par exemple,
+ Le caractère d’échappement pour les commandes Visual Studio est un caractère d’accent circonflexe (^), ce qui signifie que le caractère qui le suit immédiatement est interprété littéralement et non pas comme un caractère de contrôle. Ceci permet d’incorporer des guillemets ("), des espaces, des barres obliques, des accents circonflexes ou tout autre caractère littéral dans une valeur de paramètre ou de commutateur, à l’exception des noms de commutateur. Par exemple :
 
 ```
 >Edit.Find ^^t /regex
@@ -71,11 +71,11 @@ Les commandes Visual Studio vous permettent d’appeler une commande depuis la f
 |[Définir le thread actuel](../../ide/reference/set-current-thread-command.md)|Vous permet d’afficher un thread spécifique.|
 |[Définir la base](../../ide/reference/set-radix-command.md)|Détermine le nombre d’octets à afficher.|
 |[Shell](../../ide/reference/shell-command.md)|Lance les programmes à partir de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] comme si la commande avait été exécutée à partir de l’invite de commandes.|
-|[Afficher le navigateur Web, commande](../../ide/reference/showwebbrowser-command.md)|Affiche l’URL que vous spécifiez dans une fenêtre de navigateur web au sein de l’environnement de développement intégré (IDE) ou externe à l’IDE.|
+|[Afficher le navigateur web, commande](../../ide/reference/showwebbrowser-command.md)|Affiche l’URL que vous spécifiez dans une fenêtre de navigateur web au sein de l’environnement de développement intégré (IDE) ou externe à l’IDE.|
 |[Démarrer](../../ide/reference/start-command.md)|Commence le processus de débogage et permet de spécifier comment les erreurs sont gérées.|
-|[Chemin d’accès](../../ide/reference/symbol-path-command.md)|Définit la liste des répertoires où le débogueur recherche des symboles.|
+|[Chemin](../../ide/reference/symbol-path-command.md)|Définit la liste des répertoires où le débogueur recherche des symboles.|
 |[Point d'arrêt](../../ide/reference/toggle-breakpoint-command.md)|Active ou désactive le point d’arrêt, en fonction de son état actuel, à l’emplacement actuel dans le fichier.|
 |[Espion, commande](../../ide/reference/watch-command.md)|Crée et ouvre une instance spécifiée d’une fenêtre **Espion** .|
 
 ## <a name="see-also"></a>Voir aussi
- [Fenêtre de commande](../../ide/reference/command-window.md) [zone Rechercher/commande](../../ide/find-command-box.md) [alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+ [Alias de commande Visual Studio](../../ide/reference/visual-studio-command-aliases.md) de la [fenêtre commande](../../ide/reference/command-window.md) [Rechercher/zone de commande](../../ide/find-command-box.md)

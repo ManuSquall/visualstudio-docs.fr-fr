@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHost::GetDeferredText | Microsoft Docs
+title: 'IDebugDocumentHost :: GetDeferredText | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3e5800a6de15d2d59208022fa44d3c2f4c931e14
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 273b4eb52b7263d34c347dff3a00479945b809df
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446572"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72569425"
 ---
 # <a name="idebugdocumenthostgetdeferredtext"></a>IDebugDocumentHost::GetDeferredText
-Retourne une plage de caractères qui ont été ajoutés à l’aide de la `IDebugDocumentHelper::AddDeferredText` (méthode), dans le document d’hôte d’origine.  
+Retourne une plage de caractères qui ont été ajoutés à l’aide de la méthode `IDebugDocumentHelper::AddDeferredText`, dans le document hôte d’origine.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -41,24 +41,24 @@ HRESULT GetDeferredText(
   
 #### <a name="parameters"></a>Paramètres  
  `dwTextStartCookie`  
- [in] Cookies définis par l’hôte qui représente la position de départ du texte.  
+ dans Cookie défini par l’hôte qui représente la position de départ du texte.  
   
  `pcharText`  
- [in, out] Une mémoire tampon de texte caractères. Cette méthode ne retourne pas de caractères si ce paramètre est `NULL`.  
+ [in, out] Mémoire tampon de texte de caractères. Cette méthode ne retourne pas de caractères si ce paramètre est `NULL`.  
   
  `pstaTextAttr`  
- [in, out] Une mémoire tampon de caractères attribut. Cette méthode ne retourne pas les attributs si ce paramètre est `NULL`.  
+ [in, out] Mémoire tampon d’attribut de caractère. Cette méthode ne retourne pas d’attributs si ce paramètre est `NULL`.  
   
  `pcNumChars`  
- [in, out] Indique le nombre réel de caractères/attributs renvoyés. Ce paramètre doit être défini à zéro avant d’appeler cette méthode.  
+ [in, out] Indique le nombre réel de caractères/attributs retournés. Ce paramètre doit avoir la valeur zéro avant d’appeler cette méthode.  
   
  `cMaxChars`  
- [in] Le nombre maximal de caractères à retourner.  
+ dans Nombre maximal de caractères à retourner.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
 |`E_NOTIMPL`|La méthode n’est pas implémentée.|  
@@ -67,9 +67,9 @@ HRESULT GetDeferredText(
  Cette méthode peut retourner `E_NOTIMPL`, si l’hôte n’appelle pas `IDebugDocumentHelper::AddDeferredText`.  
   
 > [!NOTE]
-> Cette méthode retourne le texte du document d’origine. L’hôte ne se préoccupe pas de modifications ou autres modifications au document.  
+> Cette méthode retourne le texte du document d’origine. L’hôte n’effectue pas le suivi des modifications ou d’autres modifications apportées au document.  
   
 ## <a name="see-also"></a>Voir aussi  
- [IDebugDocumentHost Interface](../../winscript/reference/idebugdocumenthost-interface.md)   
- [IDebugDocumentHelper::AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)   
+ @No__t_1 de l' [interface IDebugDocumentHost](../../winscript/reference/idebugdocumenthost-interface.md)  
+ [IDebugDocumentHelper :: AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)    
  [Énumération SOURCE_TEXT_ATTR](../../winscript/reference/source-text-attr-enumeration.md)

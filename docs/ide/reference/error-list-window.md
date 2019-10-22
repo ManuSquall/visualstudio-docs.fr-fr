@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Error List window
 - errors [Visual Studio], Error List window
 ms.assetid: b7f6d45a-733b-4ad8-bc2f-737a37509e56
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 603faab80e185e7d22cba1ee544502d790afcdc0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d0921d89caa6428c45dc2522e78f58bde50f84be
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790861"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654444"
 ---
 # <a name="error-list-window"></a>Liste d'erreurs, fenêtre
 
@@ -78,7 +78,7 @@ Vous pouvez copier la liste d'erreurs et l'enregistrer dans un fichier. Sélecti
 
 Gravité
 
-Affiche les différents types d’entrée de la **Liste d’erreurs** (**Erreur**, **Message**, **Avertissement**, **Avertissement (actif)**, **Avertissement (inactif)**).
+Affiche les différents types d’entrée de la **Liste d’erreurs** (**Erreur**, **Message**, **Avertissement**, **Avertissement (actif)** , **Avertissement (inactif)** ).
 
 Code
 

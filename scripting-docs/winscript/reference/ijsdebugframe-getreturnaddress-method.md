@@ -1,5 +1,5 @@
 ---
-title: Méthode IJsDebugFrame::GetReturnAddress | Microsoft Docs
+title: 'IJsDebugFrame :: GetReturnAddress, méthode | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 18b98c7a5f92f3745baea5d4f82ae90da0989135
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 802355bdef386ceb252e776f8c6e798df18c9253
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62558161"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577360"
 ---
 # <a name="ijsdebugframegetreturnaddress-method"></a>IJsDebugFrame::GetReturnAddress, méthode
-Obtient l’adresse de retour envoyée au « début » (consultez GetStackRange) du cadre.  
+Obtient l’adresse de retour faisant l’objet d’un push au début (voir GetStackRange,) du frame.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -35,12 +35,12 @@ HRESULT GetReturnAddress(
   
 #### <a name="parameters"></a>Paramètres  
  `pReturnAddress`  
- [out] L’adresse de retour.  
+ à Adresse de retour.  
   
 ## <a name="return-value"></a>Valeur de retour  
   
-## <a name="requirements"></a>Configuration requise  
- **En-tête :** jscript9diag.h  
+## <a name="requirements"></a>spécifications  
+ **En-tête :** jscript9diag. h  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IJsDebugFrame](../../winscript/reference/ijsdebugframe-interface.md)

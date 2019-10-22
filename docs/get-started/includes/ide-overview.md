@@ -2,16 +2,16 @@
 ms.date: 03/19/2019
 ms.technology: vs-ide-general
 ms.custom: vs-get-started
-ms.author: gewarren
-author: gewarren
+ms.author: jillfra
+author: jillre
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: 27c9c453549f753f3dfdc1664fd76f7a65d0ded5
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.openlocfilehash: 973af983d0f07b0aceeedfc865280deea115f179
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70197128"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72632451"
 ---
 *L’environnement de développement intégré* de Visual Studio est une plateforme de lancement créative avec laquelle vous pouvez modifier, déboguer et générer du code, puis publier une application. Un environnement de développement intégré (IDE) est un programme riche en fonctionnalités qui peut être utilisé pour de nombreux aspects du développement de logiciels. Au-delà de l’éditeur et du débogueur standard fournis par la plupart des IDE, Visual Studio inclut des compilateurs, des outils de complétion de code, des concepteurs graphiques et de nombreuses autres fonctionnalités afin de faciliter le processus de développement logiciel.
 
@@ -55,7 +55,7 @@ Il existe trois éditions de Visual Studio 2017 : Community, Professional et E
 
 Visual Studio est disponible pour Windows et Mac. [Visual Studio pour Mac](/visualstudio/mac/) compte de nombreuses fonctionnalités en commun avec Visual Studio 2019, et est optimisé pour le développement d’applications mobiles et multiplateformes. Cet article traite essentiellement de la version Windows de Visual Studio 2019.
 
-Il existe trois éditions de Visual Studio 2019 : Community, Professional et Enterprise. Consultez [Comparez les IDE Visual Studio](https://visualstudio.microsoft.com/vs/compare/) pour en savoir plus sur les fonctionnalités prises en charge dans chaque édition.
+Il existe trois éditions de Visual Studio 2019 : Community, Professional et Enterprise. Consultez [Comparez les IDE Visual Studio](https://visualstudio.microsoft.com/vs/compare/) pour en savoir plus sur les fonctionnalités prises en charge dans chaque édition.
 
 ::: moniker-end
 
@@ -116,7 +116,7 @@ Voici quelques-unes des fonctionnalités populaires de Visual Studio qui vous ai
 
    Modifiez et déboguez de manière collaborative avec d’autres utilisateurs en temps réel, quel que soit le type de votre application ou le langage de programmation. Vous pouvez partager instantanément et en toute sécurité votre projet puis partager au besoin des sessions de débogage, des instances de terminal, des applications web localhost, des appels vocaux, etc.
 
-- [Hiérarchie d’appels](../../ide/reference/call-hierarchy.md)
+- [Hiérarchie des appels](../../ide/reference/call-hierarchy.md)
 
    La fenêtre **Hiérarchie d’appels** affiche les méthodes qui appellent une méthode sélectionnée. Ces informations peuvent être utiles quand vous envisagez de changer ou de supprimer la méthode, ou quand vous essayez de repérer un bogue.
 
@@ -339,7 +339,7 @@ Tout d’abord, renommons la variable `name` :
 
    ![Liste des membres IntelliSense dans Visual Studio](../media/intellisense-list-members.png)
 
-5. Sélectionnez le membre nommé **Now**, qui est une propriété de la classe, en double-cliquant dessus ou en appuyant sur **Tab**. Complétez la ligne de code en ajoutant un point-virgule à la fin.
+5. Sélectionnez le membre nommé **Now**, qui est une propriété de la classe, en double-cliquant dessus ou en appuyant sur la touche **Tab**. Complétez la ligne de code en ajoutant un point-virgule à la fin.
 
 6. Au-dessous, tapez ou collez les lignes de code suivantes :
 

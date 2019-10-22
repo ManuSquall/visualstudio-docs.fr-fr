@@ -27,17 +27,17 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.U-SQL.ScrollBars
 - VS.ToolsOptionsPages.Text_Editor.XAML.ScrollBars
 - VS.ToolsOptionsPages.Text_Editor.XML.ScrollBars
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd7be5aea136c901241ca66af485e76a39cd0ee5
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
-ms.translationtype: HT
+ms.openlocfilehash: da66270d29778e48d89d713e36c6c717e5f86d89
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681315"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666383"
 ---
 # <a name="options-text-editor-all-languages-scroll-bars"></a>Options, Éditeur de texte, Tous les langages, Barres de défilement
 Cette boîte de dialogue vous permet de modifier le comportement par défaut de la barre de défilement de l’éditeur de code. Pour afficher ces options, sélectionnez **Options** dans le menu **Outils**. Dans le dossier **Éditeur de texte**, développez le sous-dossier **Tous les langages**, puis choisissez **Barres de défilement**.
@@ -88,4 +88,4 @@ En *mode mappage*, quand vous cliquez sur un emplacement dans la barre de défil
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Guide pratique pour personnaliser la barre de défilement](../how-to-track-your-code-by-customizing-the-scrollbar.md)
+- [Procédure : Personnaliser la barre de défilement](../how-to-track-your-code-by-customizing-the-scrollbar.md)

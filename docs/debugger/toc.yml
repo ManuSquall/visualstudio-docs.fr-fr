@@ -44,8 +44,6 @@
       items:
         - name: Utiliser des points d’arrêt
           href: using-breakpoints.md
-        - name: Utiliser des points de trace
-          href: using-tracepoints.md
         - name: Dépannage des points d’arrêt
           href: troubleshooting-breakpoints.md
     - name: Inspection des données
@@ -93,7 +91,7 @@
         - name: Afficher la mémoire des variables
           href: memory-windows.md
         - name: Inspecter les propriétés XAML en phase de débogage
-          href: inspect-xaml-properties-while-debugging.md
+          href: ../xaml-tools/inspect-xaml-properties-while-debugging.md?toc=/visualstudio/debugger/toc.json
     - name: Pile des appels
       items:
         - name: Afficher la pile des appels
@@ -110,9 +108,9 @@
           href: how-to-enable-and-disable-edit-and-continue.md
         - name: Arrêter des modifications de code
           href: how-to-stop-code-changes.md
-        - name: Modifier & Continuer (Visual C++)
+        - name: Modifier & Continuer (C++)
           items:
-            - name: Modifier & Continuer pour Visual C++
+            - name: "Modifier\_&\_Continuer pour C++"
               href: edit-and-continue-visual-cpp.md
             - name: Modifications de code prises en charge (C++)
               href: supported-code-changes-cpp.md
@@ -133,11 +131,13 @@
         - name: Rechargement à chaud XAML
           items:
             - name: Écrire et déboguer du code XAML en cours d’exécution
-              href: xaml-hot-reload.md
+              href: ../xaml-tools/xaml-hot-reload.md?toc=/visualstudio/debugger/toc.json
             - name: Résolution des problèmes de rechargement à chaud XAML
-              href: xaml-hot-reload-troubleshooting.md
+              href: ../xaml-tools/xaml-hot-reload-troubleshooting.md?toc=/visualstudio/debugger/toc.json
         - name: 'Opération Modifier et Continuer non prise en charge pour F#'
           href: edit-and-continue-not-supported-for-f-hash.md
+    - name: Journaliser dans la fenêtre Sortie
+      href: using-tracepoints.md
     - name: Afficher les données du débogueur
       items:
         - name: Modules
@@ -202,7 +202,7 @@
                   items:
                     - name: "Paramètres de projet pour une configuration Debug\_C++"
                       href: project-settings-for-a-cpp-debug-configuration.md
-                    - name: "Activer les fonctionnalités de débogage dans Visual\_C++ (-D_DEBUG)"
+                    - name: "Activer les fonctionnalités de débogage dans \_C++ (-D_DEBUG)"
                       href: enabling-debug-features-in-visual-cpp-d-debug.md
                 - name: Paramètres des pages de propriétés pour les projets web
                   href: property-pages-settings-for-web-projects.md
@@ -234,12 +234,12 @@
               items:
                 - name: Créer des vues personnalisées d’objets C++
                   href: create-custom-views-of-native-objects.md
-                - name: Compatibilité des visualiseurs personnalisés Visual C++
+                - name: Compatibilité des visualiseurs personnalisés C++
                   href: visual-cpp-custom-visualizer-compatibility.md
             - name: Vues personnalisées (gérées)
               items:
-                - name: Créer des vues personnalisées d’objets
-                  href: create-custom-views-of-dot-managed-objects.md
+                - name: Créer des vues personnalisées d’objets gérés
+                  href: create-custom-views-of-managed-objects.md
                 - name: Dire au débogueur quels éléments afficher
                   href: using-the-debuggerdisplay-attribute.md
                 - name: Dire au débogueur quel type afficher
@@ -435,7 +435,7 @@
             - name: Déboguer un package d’application installé
               href: debug-installed-app-package.md
             - name: Déboguer XAML dans Blend
-              href: debug-xaml-in-blend.md
+              href: ../xaml-tools/debug-xaml-in-blend.md?toc=/visualstudio/debugger/toc.json
             - name: HTML et CSS
               items:
                 - name: "déboguer du code\_HTML et\_CSS\_;"
@@ -500,7 +500,7 @@
           items:
             - name: Déboguer du code natif
               href: debugging-native-code.md
-            - name: 'Débogage de la préparation : Types de projets Visual C++'
+            - name: 'Débogage de la préparation : Types de projet C++'
               href: debugging-preparation-visual-cpp-project-types.md
             - name: Déboguer du code optimisé
               href: how-to-debug-optimized-code.md

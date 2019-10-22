@@ -1,5 +1,5 @@
 ---
-title: Exécuter des tests unitaires pour les applications de Store
+title: Exécuter des tests unitaires pour les applications du Windows Store
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -7,14 +7,14 @@ ms.topic: conceptual
 ms.assetid: 5a6f5b32-bfce-4a63-81e9-02d54c592539
 caps.latest.revision: 14
 author: alexhomer1
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bfcdb3906f405b9f7ba4650be13f4522ab559ee8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5bdcd9a5d3565bf4b7a92d658a5a270bbff6483c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446225"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672249"
 ---
 # <a name="run-unit-tests-for-store-apps-in-visual-studio"></a>Exécuter des tests unitaires pour les applications du Windows Store dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,10 +62,10 @@ Cette rubrique décrit comment exécuter des tests unitaires à l'aide de l'Expl
 
  Vous pouvez effectuer la majeure partie du travail de recherche, d'organisation et d'exécution des tests à partir de la barre d'outils de l'Explorateur de tests.
 
- ![Exécuter des tests à partir de la barre d’outils de l’explorateur de tests](../test/media/ute-toolbar.png "UTE_ToolBar")
+ ![Exécuter des tests à partir de la barre d’outils de l’Explorateur de tests](../test/media/ute-toolbar.png "UTE_ToolBar")
 
 ### <a name="BKMK_Running_tests"></a> Exécution de tests
- Vous pouvez exécuter tous les tests dans la solution, tous les tests dans un groupe, ou un ensemble de tests que vous sélectionnez. Effectuez l’une des opérations suivantes :
+ Vous pouvez exécuter tous les tests dans la solution, tous les tests dans un groupe, ou un ensemble de tests que vous sélectionnez. Effectuez l’une des opérations suivantes :
 
 - Pour exécuter tous les tests dans une solution, choisissez **Exécuter tout**.
 
@@ -105,7 +105,7 @@ Cette rubrique décrit comment exécuter des tests unitaires à l'aide de l'Expl
 
 |||
 |-|-|
-|![Bouton du groupe d’explorateur de tests](../test/media/ute-groupby-btn.png "UTE_GroupBy_btn")|Pour regrouper vos tests d’après la durée nécessaire à leur exécution, ouvrez la liste **Grouper par** et choisissez **Durée**. Choisissez **Résultat du test** pour basculer vers le regroupement d’origine.|
+|![Bouton groupe de l’Explorateur de tests](../test/media/ute-groupby-btn.png "UTE_GroupBy_btn")|Pour regrouper vos tests d’après la durée nécessaire à leur exécution, ouvrez la liste **Grouper par** et choisissez **Durée**. Choisissez **Résultat du test** pour basculer vers le regroupement d’origine.|
 
 ### <a name="BKMK_Searching_and_filtering_the_test_list"></a> Recherche et filtrage de la liste de tests
  Quand vous avez un grand nombre de tests, vous pouvez taper du texte dans la zone de recherche de l'Explorateur de tests pour filtrer la liste selon la chaîne spécifiée. Vous pouvez limiter votre filtre à certains types de chaînes en choisissant dans la liste des filtres avant d'entrer la chaîne de recherche.

@@ -3,17 +3,17 @@ title: Considérations de sécurité lors de l'utilisation de données XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: fce2b708-1aef-454f-be59-52b76f359351
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fe4ec69f879478566cce8d077bb66b34da86f3d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: a0eb38118f7e71bd8cab0cf3faf367c01700cae0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926762"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72604595"
 ---
 # <a name="security-considerations-when-working-with-xml-data"></a>Considérations relatives à la sécurité lors de l’utilisation de données XML
 
@@ -29,7 +29,7 @@ L’éditeur XML est basé sur l’éditeur de texte Visual Studio. Il repose su
 
 - Les schémas qui pointent vers un emplacement externe dans le fichier catalogue sont automatiquement téléchargés lors du premier chargement de l’éditeur XML. La classe <xref:System.Xml.Schema.XmlSchemaSet> permet de compiler les schémas. Le fichier catalogue fourni avec l’éditeur XML ne contient pas de liens vers des schémas externes. L’utilisateur doit ajouter explicitement une référence au schéma externe pour que l’éditeur XML télécharge le fichier de schéma. Le téléchargement HTTP peut être désactivé via la page **Outils divers options** de l’éditeur XML.
 
-- L’éditeur XML utilise les <xref:System.Net> classes pour télécharger des schémas
+- L’éditeur XML utilise les classes <xref:System.Net> pour télécharger des schémas
 
 ## <a name="xslt-debugger"></a>débogueur XSLT
 

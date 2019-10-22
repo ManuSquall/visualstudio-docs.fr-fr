@@ -2,17 +2,17 @@
 title: Action rapide Ajouter un paramètre à une méthode
 ms.date: 09/28/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3e1461afe5c4d6026f8532896ba837e971fed652
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d1edc9d38ff4476a9fe76886676bfce1c80a61db
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62792257"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658805"
 ---
 # <a name="add-a-parameter-to-a-method-using-a-quick-action"></a>Ajouter un paramètre à une méthode avec une Action rapide
 
@@ -22,24 +22,24 @@ Cette génération de code s’applique à :
 
 - Visual Basic
 
-**Quoi :** permet d’ajouter automatiquement un paramètre à une méthode, en fonction de l’utilisation.
+**Quoi :** permet d’ajouter automatiquement un paramètre à une méthode, selon l’utilisation.
 
 **Quand :** vous souhaitez ajouter un paramètre à une méthode et le déclarer correctement et automatiquement.
 
-**Pourquoi :** vous pourriez ajouter le paramètre à la déclaration de méthode avant de l’appeler, mais cette fonctionnalité l’ajoute automatiquement sur la base d’un appel de méthode.
+**Pourquoi :** vous pourriez ajouter le paramètre à la déclaration de méthode avant de l’appeler, mais cette fonctionnalité l’ajoute automatiquement sur la base d’un appel de méthode.
 
 ## <a name="how-to-use-it"></a>Utilisation
 
 1. Ajoutez un argument supplémentaire à un appel de méthode.
 
-   Une ligne rouge « ondulée » apparaît sous le nom de la méthode à l’endroit où vous l’appelez.
+   Un tilde rouge apparaît sous le nom de la méthode où vous l’appelez.
 
-2. Placez votre pointeur sur la ligne rouge « ondulée » jusqu’à ce que le menu Actions rapides s’affiche. Cliquez sur la **flèche vers le bas** dans le menu Actions rapides, puis sélectionnez **Ajouter un paramètre à [méthode]**.
+2. Placez le pointeur sur le tilde rouge jusqu’à ce que le menu actions rapides s’affiche. Cliquez sur la **flèche vers le bas** dans le menu Actions rapides, puis sélectionnez **Ajouter un paramètre à [méthode]** .
 
    ![Action rapide Ajouter un paramètre à une méthode dans Visual Studio](media/add-parameter-to-method.png)
 
    > [!TIP]
-   > Vous pouvez également accéder au menu Actions rapides en plaçant votre curseur sur la ligne de l’appel de méthode, puis en appuyant sur **Ctrl**+**.** ou en sélectionnant l’icône Ampoule dans la marge du fichier.
+   > Vous pouvez également accéder au menu Actions rapides en plaçant votre curseur sur la ligne de l’appel de méthode, puis en appuyant sur **Ctrl**+ **.** (point) ou en sélectionnant l’icône d’ampoule dans la marge de fichier.
 
    Visual Studio ajoute le nouveau paramètre à la déclaration de méthode.
 

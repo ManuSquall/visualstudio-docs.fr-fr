@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::GetScriptBlockInfo | Microsoft Docs
+title: 'IDebugDocumentHelper :: GetScriptBlockInfo | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d1984cdc19beb883dd7ee82f58497b11a8d781b0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5a92aa00d7997ceccc583c88a070f6fbc7d4359d
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62549713"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576097"
 ---
 # <a name="idebugdocumenthelpergetscriptblockinfo"></a>IDebugDocumentHelper::GetScriptBlockInfo
 Récupère la plage de caractères et le moteur de script correspondant à un bloc de script.  
@@ -40,21 +40,21 @@ HRESULT GetScriptBlockInfo(
   
 #### <a name="parameters"></a>Paramètres  
  `dwSourceContext`  
- [in] Le contexte de la source pour le bloc de script.  
+ dans Contexte source pour le bloc de script.  
   
  `ppasd`  
- [out] Le moteur de script pour ce bloc de script.  
+ à Moteur de script pour ce bloc de script.  
   
  `piCharPos`  
- [out] Emplacement du début du bloc de script.  
+ à Emplacement du début du bloc de script.  
   
  `cChars`  
- [out] Nombre de caractères dans le bloc de script.  
+ à Nombre de caractères dans le bloc de script.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   

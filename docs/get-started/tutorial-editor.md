@@ -4,19 +4,19 @@ ms.date: 11/30/2017
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: tutorial
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f83304daa0e86bb9d4f999262f827615923fe4d
-ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.openlocfilehash: f78c3dcb8cadadd103eb6a09f956bff97a4a8f03
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71095345"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647846"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Apprendre à utiliser l’éditeur de code
 
@@ -128,7 +128,7 @@ Le bloc de code est réduit de façon à afficher uniquement la première ligne,
 
 ## <a name="view-symbol-definitions"></a>Afficher les définitions de symbole
 
-L’éditeur de Visual Studio facilite l’inspection de la définition d’un type, d’une méthode, etc. Une façon de faire est d’accéder au fichier qui contient la définition, par exemple en choisissant **Atteindre la définition** à partir de n’importe quel endroit où le symbole est référencé. Une autre façon encore plus rapide, sans avoir à déplacer le focus en dehors du fichier dans lequel vous travaillez, consiste à utiliser la fonctionnalité [Aperçu de la définition](../ide/go-to-and-peek-definition.md#peek-definition). Vous allez afficher un aperçu de la définition du type `string`.
+L’éditeur Visual Studio facilite l’inspection de la définition d’un type, d’une méthode, etc. L’une des méthodes consiste à naviguer jusqu’au fichier qui contient la définition, par exemple en choisissant **atteindre la définition** partout où le symbole est référencé. Une autre façon encore plus rapide, sans avoir à déplacer le focus en dehors du fichier dans lequel vous travaillez, consiste à utiliser la fonctionnalité [Aperçu de la définition](../ide/go-to-and-peek-definition.md#peek-definition). Vous allez afficher un aperçu de la définition du type `string`.
 
 1. Cliquez avec le bouton droit sur une occurrence de `string`, puis choisissez **Aperçu de la définition** dans le menu de contenu. Ou bien, appuyez sur **Alt**+**F12**.
 

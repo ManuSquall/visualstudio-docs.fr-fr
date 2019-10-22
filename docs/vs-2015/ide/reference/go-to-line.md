@@ -11,25 +11,22 @@ helpviewer_keywords:
 - Go To Line dialog box
 ms.assetid: 529fa251-b7b3-49cf-863c-10e0b82ac7cc
 caps.latest.revision: 12
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d047980a6d0b33dbe74182eec23b55aa4487799e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2c08967d333fc23dfed9089936cbef86889b2145
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68199235"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661256"
 ---
 # <a name="go-to-line"></a>Atteindre la ligne
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Cette boîte de dialogue vous permet d’atteindre une ligne particulière dans le document actif. Pour accéder à cette boîte de dialogue, ouvrez un document à modifier, puis sélectionnez **Atteindre** dans le menu **Edition**.  
-  
- Numéro de ligne (1 - `n`)  
- Vous permet d’entrer le numéro de la ligne dans le document actif à atteindre. Le numéro entré doit être compris entre 1 et `n`, le nombre de lignes dans le document actif.  
-  
-## <a name="see-also"></a>Voir aussi  
- [Définition de signets dans le code](../../ide/setting-bookmarks-in-code.md)   
- [Recherche et remplacement de texte](../../ide/finding-and-replacing-text.md)   
- [Écriture de code](../../ide/writing-code-in-the-code-and-text-editor.md)
+Cette boîte de dialogue vous permet d’atteindre une ligne particulière dans le document actif. Pour accéder à cette boîte de dialogue, ouvrez un document à modifier, puis sélectionnez **Atteindre** dans le menu **Edition**.
+
+ Numéro de ligne (1-`n`) vous permet d’entrer le numéro de la ligne dans le document actif vers lequel vous souhaitez vous déplacer. Le numéro entré doit être compris entre 1 et `n`, le nombre de lignes dans le document actif.
+
+## <a name="see-also"></a>Voir aussi
+ [Définition de signets dans le code](../../ide/setting-bookmarks-in-code.md) [recherche et remplacement](../../ide/finding-and-replacing-text.md) de [code d’écriture](../../ide/writing-code-in-the-code-and-text-editor.md) de texte

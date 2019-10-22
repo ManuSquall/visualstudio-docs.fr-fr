@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerControl::SetProfilerEventMask | Microsoft Docs
+title: 'IActiveScriptProfilerControl :: SetProfilerEventMask | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 01e55d793d174f550e33e18558eccc19d417c80b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a4162cf2e5325bfb41bce9c3a47a52b1b36d74f2
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993088"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571578"
 ---
 # <a name="iactivescriptprofilercontrolsetprofilereventmask"></a>IActiveScriptProfilerControl::SetProfilerEventMask
-Définit un masque de bits de 4 octets qui spécifie les types d’événements le moteur de script doit déclencher.  
+Définit un masque de bits de 4 octets qui spécifie les types d’événements que le moteur de script doit déclencher.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -34,15 +34,15 @@ HRESULT SetProfilerEventMask(
   
 #### <a name="parameters"></a>Paramètres  
  `dwEventMask`  
- [in] Un masque de bits sur 4 octets qui spécifie les types d’événements. Les bits sont définis dans [profiler_event_mask, énumération](../../winscript/reference/profiler-event-mask-enumeration.md).  
+ dans Masque de bits de 4 octets qui spécifie les types d’événements. Les bits sont définis dans l' [énumération PROFILER_EVENT_MASK](../../winscript/reference/profiler-event-mask-enumeration.md).  
   
 ## <a name="return-value"></a>Valeur de retour  
- Retourne une valeur HRESULT. Les valeurs possibles sont les suivantes :  
+ Retourne un HRESULT. Les valeurs possibles sont les suivantes :  
   
 |Valeur de retour|Signification|  
 |------------------|-------------|  
 |`S_OK`|La méthode a réussi.|  
-|`ACTIVPROF_E_PROFILER_ABSENT`|Profilage n’est pas activé.|  
+|`ACTIVPROF_E_PROFILER_ABSENT`|Le profilage n’est pas activé.|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IActiveScriptProfilerControl](../../winscript/reference/iactivescriptprofilercontrol-interface.md)

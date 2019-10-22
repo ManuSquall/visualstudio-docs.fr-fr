@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61c1efea7340425090adbdd1c9bc865c4a056d42
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 92d1c327c168bfd2881ad014b7f9ab87f771b95d
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "70987761"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72536077"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Découvrez des trucs et astuces de productivité pour le débogueur dans Visual Studio
 
@@ -96,17 +96,17 @@ Pour plus d’informations, consultez [créer un ID d’objet](../debugger/watch
 
 Pour afficher les valeurs de retour de vos fonctions, examinez les fonctions qui s’affichent dans la fenêtre **automatique** pendant que vous exécutez pas à pas votre code. Pour afficher la valeur de retour d’une fonction, assurez-vous que la fonction qui vous intéresse a déjà été exécutée (appuyez sur **F10** une fois si vous êtes actuellement arrêté sur l’appel de fonction). Si la fenêtre est fermée, utilisez l' **> de débogage Windows > automatique** pour ouvrir la fenêtre **automatique** .
 
-![Fenêtre Automatique](../debugger/media/dbg-tips-autos-window.png "AutosWindow")
+![Fenêtre automatique](../debugger/media/dbg-tips-autos-window.png "AutosWindow")
 
 En outre, vous pouvez entrer des fonctions dans la fenêtre **exécution** pour afficher les valeurs de retour. (Ouvrez-le à l’aide du **> de débogage Windows > immédiat**.)
 
-![Fenêtre exécution](../debugger/media/dbg-tips-immediate-window.png "ImmediateWindow")
+![Exécution, fenêtre](../debugger/media/dbg-tips-immediate-window.png "ImmediateWindow")
 
 Vous pouvez également utiliser [Pseudo-variables](../debugger/pseudovariables.md) dans la fenêtre **Espion** et **exécution** , par exemple `$ReturnValue`.
 
 ## <a name="string_visualizer"></a>Inspecter des chaînes dans un visualiseur
 
-Lorsque vous utilisez des chaînes, il peut être utile d’afficher l’intégralité de la chaîne mise en forme. Pour afficher une chaîne en texte brut, XML, HTML ou JSON, cliquez sur l’icône de loupe icône ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "visualiseur") tout en pointant sur une variable contenant une valeur de chaîne.
+Lorsque vous utilisez des chaînes, il peut être utile d’afficher l’intégralité de la chaîne mise en forme. Pour afficher une chaîne en texte brut, XML, HTML ou JSON, cliquez sur l’icône de loupe ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "Icône de visualiseur") tout en pointant sur une variable contenant une valeur de chaîne.
 
 ![Ouvrir un visualiseur de chaîne](../debugger/media/dbg-tips-string-visualizers.png "OpenStringVisualizer")
 
@@ -118,9 +118,9 @@ Pour quelques autres types tels que les objets DataSet et DataTable qui apparais
 
 ## <a name="break-into-code-on-handled-exceptions"></a>S’arrêter dans le code sur les exceptions gérées
 
-Le débogueur s’arrête dans votre code sur les exceptions non gérées. Toutefois, les exceptions gérées (telles que les exceptions qui `try/catch` se produisent dans un bloc) peuvent également être une source de bogues et vous pouvez effectuer des recherches quand elles se produisent. Vous pouvez configurer le débogueur pour qu’il s’arrête également dans le code pour les exceptions gérées, en configurant les options de la boîte de dialogue **paramètres d’exception** . Pour ouvrir cette boîte de dialogue, choisissez **Déboguer > paramètres d’exception Windows >** .
+Le débogueur s’arrête dans votre code sur les exceptions non gérées. Toutefois, les exceptions gérées (telles que les exceptions qui se produisent dans un bloc `try/catch`) peuvent également être une source de bogues et vous pouvez examiner quand elles se produisent. Vous pouvez configurer le débogueur pour qu’il s’arrête également dans le code pour les exceptions gérées, en configurant les options de la boîte de dialogue **paramètres d’exception** . Pour ouvrir cette boîte de dialogue, choisissez **Déboguer > paramètres d’exception Windows >** .
 
-La boîte de dialogue **paramètres d’exception** vous permet d’indiquer au débogueur de s’arrêter dans du code sur des exceptions spécifiques. Dans l’illustration ci-dessous, le débogueur s’arrête dans votre `System.NullReferenceException` code chaque fois qu’un événement se produit. Pour plus d’informations, consultez [gestion des exceptions](../debugger/managing-exceptions-with-the-debugger.md).
+La boîte de dialogue **paramètres d’exception** vous permet d’indiquer au débogueur de s’arrêter dans du code sur des exceptions spécifiques. Dans l’illustration ci-dessous, le débogueur s’arrête dans votre code chaque fois qu’une `System.NullReferenceException` se produit. Pour plus d’informations, consultez [gestion des exceptions](../debugger/managing-exceptions-with-the-debugger.md).
 
 ![Boîte de dialogue Paramètres d’exception](../debugger/media/dbg-tips-exception-settings.png "ExceptionSettingsDialogBox")
 
@@ -132,7 +132,7 @@ Si vous avez besoin de déboguer les genres de problèmes communs aux applicatio
 
 1. Pendant le débogage, cliquez sur le bouton **afficher les threads dans la source** ![afficher les threads dans la source](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker") dans la barre d’outils **Déboguer** .
 
-2. Examinez la reliure située sur le côté gauche de la fenêtre. Sur cette ligne, vous voyez un ![marqueur]de thread icône de *marqueur* de thread(../debugger/media/dbg-thread-marker.png "ThreadMarker") qui ressemble à deux threads en tissu. Le marqueur de thread indique qu'un thread est interrompu à cet emplacement.
+2. Examinez la reliure située sur le côté gauche de la fenêtre. Sur cette ligne, vous voyez un ![marqueur de thread](../debugger/media/dbg-thread-marker.png "ThreadMarker") icône de *marqueur de thread* qui ressemble à deux threads en tissu. Le marqueur de thread indique qu'un thread est interrompu à cet emplacement.
 
     Notez qu’un marqueur de thread peut être partiellement masqué par un point d’arrêt.
 
@@ -142,7 +142,7 @@ Si vous avez besoin de déboguer les genres de problèmes communs aux applicatio
 
 ## <a name="examine-payloads-for-web-services-and-network-resources-uwp"></a>Examiner les charges utiles pour les services Web et les ressources réseau (UWP)
 
-Dans les applications UWP, vous pouvez analyser les opérations réseau effectuées `Windows.Web.Http` à l’aide de l’API. Vous pouvez utiliser cet outil pour déboguer les services Web et les ressources réseau. Pour utiliser l’outil, sélectionnez **Déboguer > profileur de performances**. Sélectionnez **réseau**, puis choisissez **Démarrer**. Dans votre application, effectuez le scénario qui utilise `Windows.Web.Http`, puis choisissez **Arrêter la collecte** pour générer le rapport.
+Dans les applications UWP, vous pouvez analyser les opérations réseau effectuées à l’aide de l’API `Windows.Web.Http`. Vous pouvez utiliser cet outil pour déboguer les services Web et les ressources réseau. Pour utiliser l’outil, sélectionnez **Déboguer > profileur de performances**. Sélectionnez **réseau**, puis choisissez **Démarrer**. Dans votre application, effectuez le scénario qui utilise `Windows.Web.Http`, puis choisissez **Arrêter la collecte** pour générer le rapport.
 
 ![Outil de profilage de l’utilisation du réseau](../profiling/media/prof-tour-network-usage.png "NetworkUsageProfTool")
 
@@ -156,9 +156,9 @@ Pour plus d’informations, consultez [Utilisation du réseau](../profiling/netw
 
 Pour attacher votre application en cours d’exécution, le débogueur charge les fichiers de symboles (. pdb) générés pour la même build de l’application que vous essayez de déboguer. Dans certains scénarios, il peut être utile de disposer d’une petite connaissance des fichiers de symboles. Vous pouvez examiner la façon dont Visual Studio charge les fichiers de symboles à l’aide de la fenêtre **modules** .
 
-Ouvrez la fenêtre **modules** pendant le débogage en sélectionnant **déboguer > modules Windows >** . La fenêtre **modules** peut vous indiquer quels sont les modules que le débogueur traite comme du code utilisateur, ou [*mon code*](../debugger/just-my-code.md), et l’état du chargement des symboles pour le module. Dans la plupart des scénarios, le débogueur recherche automatiquement des fichiers de symboles pour le code utilisateur, mais si vous souhaitez effectuer un pas à pas détaillé (ou Déboguer) du code .NET Framework, du code système ou du code de bibliothèque tiers, des étapes supplémentaires sont nécessaires pour obtenir les fichiers de symboles appropriés.
+Ouvrez la fenêtre **modules** pendant le débogage en sélectionnant **déboguer > modules Windows >** . La fenêtre **modules** peut vous indiquer quels sont les modules que le débogueur traite comme du code utilisateur, ou [*mon code*](../debugger/just-my-code.md), et l’état du chargement des symboles pour le module. Dans la plupart des scénarios, le débogueur recherche automatiquement des fichiers de symboles pour le code utilisateur, mais si vous souhaitez effectuer un pas à pas détaillé (ou Déboguer) du code .NET, du code système ou du code de bibliothèque tiers, des étapes supplémentaires sont nécessaires pour obtenir les fichiers de symboles appropriés.
 
-![Afficher les informations de symboles dans la fenêtre modules](../debugger/media/dbg-tips-modules-window.png "ViewSymbolInformation")
+![Afficher les informations de symboles dans la fenêtre Modules](../debugger/media/dbg-tips-modules-window.png "ViewSymbolInformation")
 
 Vous pouvez charger les informations de symboles directement à partir de la fenêtre **modules** en cliquant avec le bouton droit et en sélectionnant **charger les symboles**.
 

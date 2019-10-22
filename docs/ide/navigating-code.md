@@ -13,17 +13,17 @@ helpviewer_keywords:
 - peek definition
 - go to line
 - go to
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1263b7a0ae65731eb618ffc925ff0f6310be0f4d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: f1fcfd69e2de9a174c708da1c4f5eaedd397722e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919512"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667015"
 ---
 # <a name="navigate-code"></a>Naviguer dans le code
 
@@ -76,13 +76,13 @@ Quand vous cliquez sur un symbole dans le code source, toutes les instances de c
 
 L’option Atteindre propose les commandes suivantes, disponibles dans le menu **Édition**, sous **Atteindre** :
 
-- **Atteindre la ligne** (**Ctrl**+**G**) : accéder au numéro de ligne spécifié dans le document actif.
+- **Atteindre la ligne** (**Ctrl**+**G**) : accéder au numéro de ligne spécifié dans le document actif.
 
 - **Atteindre tout** (**Ctrl**+**T** ou **Ctrl**+ **,** ) : accéder à la ligne, au type, au fichier, au membre ou au symbole spécifié.
 
 - **Atteindre le fichier** (**Ctrl**+**1**, **Ctrl**+**F**) : accéder au fichier spécifié dans la solution.
 
-- **Aller au fichier récent** (**Ctrl**+**1**, **Ctrl**+**R**) : accéder au fichier spécifié, récemment ouvert, dans la solution.
+- **Accédez au fichier récent** (**CTRL** +**1**, **CTRL** +**R**) : accéder au fichier spécifié et visité récemment dans la solution.
 
 - **Atteindre le type** (**Ctrl**+**1**, **Ctrl**+**T**) : accéder au type spécifié dans la solution.
 
@@ -107,9 +107,9 @@ Entrée | Fonction
 **Clavier** | Placez le curseur de texte à l’intérieur du nom de type, puis appuyez sur **F12**.
 **Souris** | Cliquez avec le bouton droit sur le nom de type et sélectionnez **Atteindre la définition** OU appuyez sur **Ctrl**, puis cliquez sur le nom de type.
 
-## <a name="peek-definition"></a>Aperçu de définition
+## <a name="peek-definition"></a>Aperçu de la définition
 
-L’option Aperçu de la définition affiche la définition de l’élément sélectionné dans une fenêtre sans vous obliger à quitter votre emplacement actuel dans l’éditeur de code. Pour plus d'informations, voir [Procédure : Afficher et modifier le code avec l’Aperçu de définition](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md) et [Atteindre la définition et Aperçu de la définition](../ide/go-to-and-peek-definition.md).
+L’option Aperçu de la définition affiche la définition de l’élément sélectionné dans une fenêtre sans vous obliger à quitter votre emplacement actuel dans l’éditeur de code. Pour plus d’informations, consultez [Guide pratique pour afficher et modifier le code avec l’Aperçu de définition](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md) et [Atteindre la définition et Aperçu de la définition](../ide/go-to-and-peek-definition.md).
 
 Entrée | Fonction
 ------------ | ---
@@ -148,7 +148,7 @@ Pour désactiver les lignes de repère de structure, accédez à **Outils** > **
 
 ## <a name="enhanced-scroll-bar"></a>Barre de défilement améliorée
 
-Vous pouvez utiliser la barre de défilement améliorée dans une fenêtre de code pour bénéficier d’une vue panoramique de votre code. En mode plan, vous pouvez afficher des aperçus du code en déplaçant le curseur vers le haut et vers le bas dans la barre de défilement. Pour plus d'informations, voir [Procédure : Suivre votre code en personnalisant la barre de défilement](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md).
+Vous pouvez utiliser la barre de défilement améliorée dans une fenêtre de code pour bénéficier d’une vue panoramique de votre code. En mode plan, vous pouvez afficher des aperçus du code en déplaçant le curseur vers le haut et vers le bas dans la barre de défilement. Pour plus d’informations, consultez [Guide pratique pour suivre votre code en personnalisant la barre de défilement](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md).
 
 ## <a name="codelens-information"></a>Informations sur CodeLens
 

@@ -11,15 +11,15 @@ f1_keywords:
 - VS.DocumentOutline
 ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 caps.latest.revision: 31
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 039e6d5ae21059692aecc05de51bc2b311436334
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 1c5d0770115fffd8c81078fd0e3d187ec5d3c5ae
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65695630"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657948"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Création d'une interface utilisateur à l'aide du concepteur XAML dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Le concepteur XAML dans Visual Studio fournit une interface visuelle pour vous a
 
  En mode Création, la fenêtre contenant la *planche graphique* est la fenêtre active et vous pouvez l'utiliser comme surface de travail principale. Vous pouvez l'utiliser pour concevoir visuellement une page dans votre application en ajoutant ou en dessinant des éléments, puis en les modifiant. Pour plus d'informations, consultez [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md). Cette illustration montre la planche graphique en mode Création.
 
- ![Mode Création du concepteur XAML](../designers/media/xaml-editor-design-view.png "xaml_editor_design_view")
+ ![Mode Création de Concepteur XAML](../designers/media/xaml-editor-design-view.png "xaml_editor_design_view")
 
  Les fonctionnalités suivantes sont disponibles dans la planche graphique :
 
@@ -58,7 +58,7 @@ Le concepteur XAML dans Visual Studio fournit une interface visuelle pour vous a
 
  En mode Création, des commandes supplémentaires de la planche graphique sont disponibles dans la partie inférieure gauche de la zone de l'écran, comme indiqué ci-après :
 
- ![Commandes du mode Création](../designers/media/xaml-editor-design-controls.png "xaml_editor_design_controls")
+ ![Commandes Mode Création](../designers/media/xaml-editor-design-controls.png "xaml_editor_design_controls")
 
  Les commandes suivantes sont disponibles dans cette barre d'outils :
 
@@ -81,15 +81,15 @@ Le concepteur XAML dans Visual Studio fournit une interface visuelle pour vous a
 ## <a name="device-window"></a>Fenêtre Périphérique
  La fenêtre Périphérique du concepteur XAML vous permet de faire des simulations à l'aide de différentes options de vues, d'écrans et d'affichage pour votre projet Windows Store ou Windows Phone. La fenêtre Périphérique est disponible dans le menu **Design** quand vous travaillez dans le concepteur XAML. Voici à quoi elle ressemble :
 
- ![Fenêtre Appareil](../designers/media/xaml-editor-device-panel.png "xaml_editor_device_panel")
+ ![Fenêtre de l’appareil](../designers/media/xaml-editor-device-panel.png "xaml_editor_device_panel")
 
  Les options disponibles dans la fenêtre Périphérique sont les suivantes :
 
  **Affichage** : spécifie différentes tailles et résolutions d’affichage pour l’application.
 
- **Orientation** Spécifie différentes orientations de l’application : **Paysage** ou **Portrait**.
+ **Orientation** : spécifie différentes orientations pour l’application : **Paysage** ou **Portrait**.
 
- **Edge** spécifie différents alignements de bord pour votre application : **Les deux**, **Gauche**, **Droit**ou **Aucun**.
+ **Bord** : spécifie différents alignements de bord de votre application : **Les deux**, **Gauche**, **Droit**ou **Aucun**.
 
  **Contraste élevé** : affiche un aperçu de l’application en fonction du paramètre de contraste sélectionné. Ce paramètre, lorsqu'il est défini sur une valeur différente de **Par défaut**, remplace la propriété `RequestedTheme` définie dans App.xaml.
 
@@ -116,7 +116,7 @@ Le concepteur XAML dans Visual Studio fournit une interface visuelle pour vous a
 
   Pour afficher la fenêtre Structure du document, dans la barre de menus, choisissez **Affichage**, **Autres fenêtres**, **Structure du document**.
 
-  ![Fenêtre Structure du document](../designers/media/xaml-editor-doc-outline.png "xaml_editor_doc_outline")
+  ![Fenêtre structure du document](../designers/media/xaml-editor-doc-outline.png "xaml_editor_doc_outline")
 
   Les options disponibles dans la fenêtre Structure du document sont les suivantes :
 
@@ -128,7 +128,7 @@ Le concepteur XAML dans Visual Studio fournit une interface visuelle pour vous a
 
   **Rétablir l’étendue à la racine de la page** : l’option en haut de la fenêtre Structure du document, qui présente un symbole de flèche vers le haut, rétablit la structure du document à l’étendue précédente. La portée supérieure n'est applicable que quand vous êtes dans la portée d'un style ou d'un modèle.
 
-## <a name="properties-window"></a>Fenêtre Propriétés
+## <a name="properties-window"></a>Propriétés (fenêtre)
  La fenêtre Propriétés vous permet de définir des valeurs de propriété sur les contrôles. Voici à quoi elle ressemble :
 
  ![Fenêtre Propriétés](../designers/media/xaml-editor-prop-window.png "xaml_editor_prop_window")
@@ -138,4 +138,4 @@ Le concepteur XAML dans Visual Studio fournit une interface visuelle pour vous a
  À droite de chaque valeur de propriété figure un *marqueur de propriété* qui apparaît comme un symbole de zone. L'apparence du marqueur de propriété indique s'il y a une liaison de données ou une ressource appliquée à la propriété. Par exemple, un symbole de zone vide indique une valeur par défaut, un symbole de zone noire indique généralement qu'une ressource locale a été appliquée, et enfin une zone orange indique généralement qu'une liaison de données a été appliquée. Quand vous cliquez sur le marqueur de propriété, vous pouvez accéder à la définition d'un style, ouvrir le générateur de liaisons de données ou ouvrir le sélecteur de ressources.
 
 ## <a name="see-also"></a>Voir aussi
- [Utilisation des éléments dans le concepteur XAML](../designers/working-with-elements-in-xaml-designer.md) [comment créer et appliquer une ressource](../designers/how-to-create-and-apply-a-resource.md) [procédure pas à pas : Effectuer une liaison de données dans le concepteur XAML](../designers/walkthrough-binding-to-data-in-xaml-designer.md)
+ [Utilisation d’éléments dans Concepteur XAML](../designers/working-with-elements-in-xaml-designer.md) [comment créer et appliquer une ressource](../designers/how-to-create-and-apply-a-resource.md) [procédure pas à pas : liaison à des données dans Concepteur XAML](../designers/walkthrough-binding-to-data-in-xaml-designer.md)

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Debug.ListRegisters command
 - ListRegisters command
 ms.assetid: 19a9d789-f6c9-46b3-b1f6-4934fc33e055
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95edb5098d73e8fccb47f9f059473394afe5f542
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: b8a5ad6c57ed25d251ff7ce0e51093f5b542ed54
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919108"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72610502"
 ---
 # <a name="list-registers-command"></a>Afficher les registres, commande
 Affiche la valeur des registres sélectionnés et vous permet de modifier la liste de registres à afficher.
@@ -35,7 +35,7 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 ## <a name="switches"></a>Commutateurs
 /Display [{`register`&#124;`registerGroup`}...]
 
-Affiche les valeurs du `register` ou `registerGroup` spécifié. Si aucun `register` ni `registerGroup` n’est spécifié, la liste par défaut de registres est affichée. Si aucun commutateur n’est spécifié, le comportement est le même. Par exemple :
+Affiche les valeurs du `register` ou `registerGroup` spécifié. Si aucun `register` ni `registerGroup` n’est spécifié, la liste par défaut de registres est affichée. Si aucun commutateur n’est spécifié, le comportement est le même. Exemple :
 
 `Debug.ListRegisters /Display eax`
 
@@ -55,10 +55,10 @@ Ajoute une ou plusieurs valeurs de `register` ou `registerGroup` dans la liste.
 
 Supprime une ou plusieurs valeurs de `register` ou `registerGroup` de la liste.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 L’alias `r` peut être utilisé à la place de `Debug.ListRegisters`.
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
 Cet exemple utilise l’alias `Debug.ListRegisters` `r` pour afficher les valeurs du groupe de registres `Flags`.
 
 ```cmd
@@ -68,5 +68,5 @@ r /Display Flags
 ## <a name="see-also"></a>Voir aussi
 
 - [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Principes de base pour le débogage : la fenêtre Registres](../../debugger/debugging-basics-registers-window.md)
+- [Concepts de base du débogage : fenêtre Registres](../../debugger/debugging-basics-registers-window.md)
 - [Guide pratique pour utiliser la fenêtre Registres](../../debugger/how-to-use-the-registers-window.md)

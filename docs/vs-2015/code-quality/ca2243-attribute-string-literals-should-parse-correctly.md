@@ -1,5 +1,5 @@
 ---
-title: 'CA2243 : Littéraux de chaîne d’attribut doivent être analysés correctement | Microsoft Docs'
+title: 'CA2243 : les littéraux de chaîne d’attribut doivent être analysés correctement | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,54 +12,54 @@ helpviewer_keywords:
 - CA2243
 ms.assetid: bfadb366-379d-4ee4-b17b-c4a09bf1106b
 caps.latest.revision: 12
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f23db8a9674de621090be70067a555ef4fca2b99
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 62a2adc6f01e5cb26a6af26d71a124f8b81e07fb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68201501"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72671977"
 ---
-# <a name="ca2243-attribute-string-literals-should-parse-correctly"></a>CA2243 : Les littéraux de chaîne d'attribut doivent être analysés correctement
+# <a name="ca2243-attribute-string-literals-should-parse-correctly"></a>CA2243 : Les littéraux de chaîne d'attribut doivent être correctement analysés
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|AttributeStringLiteralsShouldParseCorrectly|
 |CheckId|CA2243|
-|Catégorie|Microsoft.Usage|
+|Category|Microsoft. usage|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
- Paramètre de littéral de chaîne d’un attribut n’analyse pas correctement pour une URL, un GUID ou une Version.
+ Le paramètre de littéral de chaîne d’un attribut n’est pas analysé correctement pour une URL, un GUID ou une version.
 
 ## <a name="rule-description"></a>Description de la règle
- Dans la mesure où les attributs sont dérivés de <xref:System.Attribute?displayProperty=fullName>et ils sont utilisés au moment de la compilation, seules des valeurs constantes peuvent être passées à leurs constructeurs. Paramètres d’attribut qui doivent représenter des URL, des GUID et des Versions ne peut pas être de type <xref:System.Uri?displayProperty=fullName>, <xref:System.Guid?displayProperty=fullName>, et <xref:System.Version?displayProperty=fullName>, car ces types ne peuvent pas être représentés en tant que constantes. Au lieu de cela, ils doivent être représentées par des chaînes.
+ Étant donné que les attributs sont dérivés de <xref:System.Attribute?displayProperty=fullName>, et que les attributs sont utilisés au moment de la compilation, seules les valeurs constantes peuvent être passées à leurs constructeurs. Les paramètres d’attribut qui doivent représenter des URL, des GUID et des versions ne peuvent pas être de type <xref:System.Uri?displayProperty=fullName>, <xref:System.Guid?displayProperty=fullName> et <xref:System.Version?displayProperty=fullName>, car ces types ne peuvent pas être représentés en tant que constantes. Au lieu de cela, elles doivent être représentées par des chaînes.
 
- Étant donné que le paramètre est typé en tant que chaîne, il est possible qu’un paramètre au format incorrect peut être passé au moment de la compilation.
+ Étant donné que le paramètre est tapé sous la forme d’une chaîne, il est possible qu’un paramètre mis en forme de manière incorrecte soit passé au moment de la compilation.
 
- Cette règle utilise une heuristique d’affectation de noms pour rechercher des paramètres qui représentent un identificateur de ressource uniforme (URI), un identificateur global Unique (GUID) ou une Version et vérifie que la valeur passée est correcte.
+ Cette règle utilise une méthode heuristique d’attribution de noms pour rechercher des paramètres qui représentent un URI (Uniform Resource Identifier), un identificateur global unique (GUID) ou une version et vérifie que la valeur passée est correcte.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Modifier la chaîne de paramètre à une URL, GUID ou Version correctement formé.
+ Remplacez la chaîne de paramètres par une URL, un GUID ou une version correctement formé (e).
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Il est possible de supprimer un avertissement de cette règle si le paramètre ne représente pas une URL, un GUID ou une Version sans.
+ Il est possible de supprimer sans risque un avertissement de cette règle si le paramètre ne représente pas une URL, un GUID ou une version.
 
 ## <a name="example"></a>Exemple
- L’exemple suivant montre le code de l’AssemblyFileVersionAttribute qui enfreint cette règle.
+ L’exemple suivant montre le code pour le AssemblyFileVersionAttribute qui enfreint cette règle.
 
  [!code-csharp[FxCop.Usage.AttributeStringLiteralsShouldParseCorrectly#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.AttributeStringLiteralsShouldParseCorrectly/cs/FxCop.Usage.AttributeStringLiteralsShouldParseCorrectly.cs#1)]
 
  La règle est déclenchée par les éléments suivants :
 
-- Paramètres qui contiennent « version » et ne peut pas être analysées à System.Version.
+- Les paramètres qui contiennent « version » et ne peuvent pas être analysés dans System. version.
 
-- Paramètres qui contiennent des 'guid' et ne peut pas être analysées à System.Guid.
+- Les paramètres qui contiennent « GUID » et ne peuvent pas être analysés dans System. Guid.
 
-- Paramètres qui contiennent « uri », « urn » ou « url » et ne peut pas être analysées en System.Uri.
+- Les paramètres qui contiennent « URI », « urn » ou « URL » et ne peuvent pas être analysés sur System. Uri.
 
 ## <a name="see-also"></a>Voir aussi
- [CA1054 : Paramètres de l’URI ne doivent pas être de chaînes](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)
+ [CA1054 : Les paramètres d’URI ne doivent pas être des chaînes](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)

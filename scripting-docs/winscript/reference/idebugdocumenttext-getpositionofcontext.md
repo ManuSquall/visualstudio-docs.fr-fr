@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText::GetPositionOfContext | Microsoft Docs
+title: 'IDebugDocumentText :: GetPositionOfContext | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6058502c076dd4f75dbbb44fdb161b889a965fec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: da759eb98a6cdd28066ddaa8aafe785ede337a6e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63008655"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572133"
 ---
 # <a name="idebugdocumenttextgetpositionofcontext"></a>IDebugDocumentText::GetPositionOfContext
-Retourne la plage de la position de caractère correspondant à un contexte de document.  
+Retourne la plage de position de caractère correspondant à un contexte de document.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -39,18 +39,18 @@ HRESULT GetPositionOfContext(
   
 #### <a name="parameters"></a>Paramètres  
  `psc`  
- [in] L’objet de contexte de document.  
+ dans Objet de contexte de document.  
   
  `pcCharacterPosition`  
- [out] Emplacement de la plage de position de caractère de début.  
+ à Emplacement de début de la plage de la position du caractère.  
   
  `cNumChars`  
- [out] Nombre de caractères dans la plage.  
+ à Nombre de caractères dans la plage.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   

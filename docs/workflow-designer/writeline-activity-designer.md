@@ -1,25 +1,25 @@
 ---
-title: Concepteur de flux de travail - Concepteur d’activités WriteLine
+title: Concepteur d’activités Concepteur de flux de travail-WriteLine
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.WriteLine.UI
 ms.assetid: 1b5f29a8-b7fd-477e-949e-2f689cae3c96
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 17dd6e3c617749d82533d8bccb7f0caaa073ac26
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 475755fed96f8341c45b8260b414658967b3284c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838618"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649751"
 ---
 # <a name="writeline-activity-designer"></a>Concepteur d'activités WriteLine
 
-Le **WriteLine** ActivityDesigner est utilisé pour créer et configurer un <xref:System.Activities.Statements.WriteLine> activité.
+Le concepteur d’activités **WriteLine** est utilisé pour créer et configurer une activité <xref:System.Activities.Statements.WriteLine>.
 
 ## <a name="the-writeline-activity"></a>Activité WriteLine
 
@@ -27,16 +27,16 @@ L'activité <xref:System.Activities.Statements.WriteLine> écrit du texte dans u
 
 ### <a name="using-the-writeline-activity-designer"></a>Utilisation du concepteur d'activités WriteLine
 
-Accès le **WriteLine** Concepteur d’activités dans le **Primitives** catégorie de la **boîte à outils**. Le **WriteLine** Concepteur d’activités peut être déplacé de la **boîte à outils** et déposés dans l’aire du Concepteur de flux de travail chaque fois que les activités sont généralement placées, par exemple dans un <xref:System.Activities.Statements.Sequence>. Cette action crée une activité <xref:System.Activities.Statements.WriteLine> avec WriteLine comme <xref:System.Activities.Activity.DisplayName%2A> par défaut. Le <xref:System.Activities.Activity.DisplayName%2A> peuvent être modifiées dans l’en-tête de la **WriteLine** Concepteur d’activités ou dans le **DisplayName** case de la grille des propriétés.
+Accédez au concepteur d’activités **WriteLine** dans la catégorie **primitives** de la **boîte à outils**. Le concepteur d’activités **WriteLine** peut être déplacé de la **boîte à outils** et déposé dans l’aire de concepteur de flux de travail, là où les activités sont généralement placées, par exemple dans une <xref:System.Activities.Statements.Sequence>. Cette action crée une activité <xref:System.Activities.Statements.WriteLine> avec WriteLine comme <xref:System.Activities.Activity.DisplayName%2A> par défaut. La <xref:System.Activities.Activity.DisplayName%2A> peut être modifiée dans l’en-tête du concepteur d’activités **WriteLine** ou dans la zone **DisplayName** de la grille des propriétés.
 
 ### <a name="the-writeline-properties"></a>Propriétés de WriteLine
 
-Le tableau suivant présente les propriétés de <xref:System.Activities.Statements.WriteLine> et décrit comment elles sont utilisées dans le concepteur. Ces propriétés peuvent être modifiées dans la grille des propriétés et certaines d'entre elles peuvent être modifiées sur l’aire du Concepteur de flux de travail.
+Le tableau suivant présente les propriétés de <xref:System.Activities.Statements.WriteLine> et décrit comment elles sont utilisées dans le concepteur. Ces propriétés peuvent être modifiées dans la grille des propriétés et certaines d’entre elles peuvent être modifiées sur Concepteur de flux de travail surface.
 
-|Nom de la propriété|Obligatoire|Utilisation|
+|Nom de propriété|Obligatoire|Utilisation|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Nom convivial de l'activité <xref:System.Activities.Statements.WriteLine>. La valeur par défaut est WriteLine. Bien que la propriété <xref:System.Activities.Activity.DisplayName%2A> ne soit pas strictement obligatoire, il est recommandé d'en utiliser une.|
-|<xref:System.Activities.Statements.WriteLine.Text%2A>|False|Texte à écrire. Pour définir la propriété, tapez une expression Visual Basic dans le **texte** zone sur le **WriteLine** activité concepteur ou dans la grille des propriétés.|
+|<xref:System.Activities.Statements.WriteLine.Text%2A>|False|Texte à écrire. Pour définir la propriété, tapez une expression Visual Basic dans la zone de **texte** sur le concepteur d’activités **WriteLine** ou dans la grille des propriétés.|
 |<xref:System.Activities.Statements.WriteLine.TextWriter%2A>|False|<xref:System.IO.TextWriter> dans lequel <xref:System.Activities.Statements.WriteLine> écrit <xref:System.Activities.Statements.WriteLine.Text%2A>. La valeur par défaut est la console.|
 
 ## <a name="see-also"></a>Voir aussi

@@ -15,36 +15,36 @@ helpviewer_keywords:
 - Visual Studio, line break characters
 ms.assetid: 8f9b3ffc-7b8d-44f4-87cb-dc29105be12d
 caps.latest.revision: 12
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0ae85397e0d9b5859ab39a8a580dd50d1ea7324c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 2e1b13cc101ea4d7609633fd9c11bf87946d7b7d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65701060"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665724"
 ---
 # <a name="encodings-and-line-breaks"></a>Encodages et sauts de ligne
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Dans Visual Studio, vous pouvez utiliser les paramètres **Options d’enregistrement de fichier/avancées** pour déterminer le type de caractères de saut de ligne que vous souhaitez. Vous pouvez également modifier l’encodage d’un fichier avec les mêmes paramètres.  
-  
+Dans Visual Studio, vous pouvez utiliser les paramètres **Options d’enregistrement de fichier/avancées** pour déterminer le type de caractères de saut de ligne que vous souhaitez. Vous pouvez également modifier l’encodage d’un fichier avec les mêmes paramètres.
+
 > [!NOTE]
-> Si vous avez certains types de paramètres de développement (Visual Basic, F#, développement web), vous pouvez ne pas voir **Options d’enregistrement avancées** dans le menu. Pour modifier vos paramètres (en spécifiant par exemple Général), ouvrez **Outils / Importation et exportation de paramètres**. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
-  
- Dans Visual Studio, les caractères suivants sont interprétés comme des sauts de ligne :  
-  
-- CRLF : Retour chariot + saut de ligne, caractères Unicode 000D + 000A  
-  
-- LF : Saut de ligne, caractère Unicode 000A  
-  
-- NEL : Ligne suivante, caractère Unicode 0085  
-  
-- LS : Séparateur de ligne, caractère Unicode 2028  
-  
-- PS : Séparateur de paragraphe, caractère Unicode 2029  
-  
-  Du texte copié à partir d’autres applications conserve les caractères d’encodage et de saut de ligne d’origine. Par exemple, lorsque vous copiez du texte à partir du Bloc-notes pour le coller dans un fichier texte dans Visual Studio, le texte a les mêmes paramètres que dans le Bloc-notes.  
-  
+> Si vous avez certains types de paramètres de développement (Visual Basic, F#, développement web), vous pouvez ne pas voir **Options d’enregistrement avancées** dans le menu. Pour modifier vos paramètres (en spécifiant par exemple Général), ouvrez **Outils / Importation et exportation de paramètres**. Pour plus d’informations, consultez [Paramètres Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+
+ Dans Visual Studio, les caractères suivants sont interprétés comme des sauts de ligne :
+
+- CRLF : retour chariot + saut de ligne, caractères Unicode 000D + 000A
+
+- LF : saut de ligne, caractère Unicode 000A
+
+- NEL : ligne suivante, caractère Unicode 0085
+
+- LS : séparateur de ligne, caractère Unicode 2028
+
+- PS : séparateur de paragraphe, caractère Unicode 2029
+
+  Du texte copié à partir d’autres applications conserve les caractères d’encodage et de saut de ligne d’origine. Par exemple, lorsque vous copiez du texte à partir du Bloc-notes pour le coller dans un fichier texte dans Visual Studio, le texte a les mêmes paramètres que dans le Bloc-notes.
+
   Lorsque vous ouvrez un fichier qui a des caractères de saut de ligne différents, vous pouvez voir une boîte de dialogue qui vous demande si les caractères de saut de ligne incohérents doivent être normalisés, ainsi que le type de saut de ligne à choisir.

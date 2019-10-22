@@ -1,33 +1,33 @@
 ---
-title: 'Procédure : fractionner une classe en classes partielles (Concepteur de classes)'
+title: 'Comment : fractionner une classe en classes partielles (Concepteur de classes)'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Class Designer, partial classes
 - partial classes, Class Designer
 ms.assetid: 6f6b0b30-3996-4569-9200-20482b3adf90
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e1426b1ad9799984f7b14604a1d8b685e9ce8813
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
-ms.translationtype: HT
+ms.openlocfilehash: 42d2cf5c0fa5c08c51ebfbc94d9a03221df46788
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65615414"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647706"
 ---
-# <a name="how-to-split-a-class-into-partial-classes-in-class-designer"></a>Procédure : fractionner une classe en classes partielles dans le Concepteur de classes
+# <a name="how-to-split-a-class-into-partial-classes-in-class-designer"></a>Guide pratique pour diviser une classe en classes partielles dans le Concepteur de classes
 
 Vous pouvez utiliser le mot clé `partial` (`Partial` en Visual Basic) pour diviser la déclaration d’une classe ou d’une structure en plusieurs déclarations. Vous pouvez utiliser autant de déclarations partielles que vous le souhaitez.
 
 Les déclarations peuvent figurer dans un ou plusieurs fichiers sources. Toutes les déclarations doivent être dans le même assembly et le même espace de noms.
 
-Les classes partielles sont utiles dans plusieurs situations. Sur un grand projet, par exemple, le fait de séparer une classe en plusieurs fichiers permet à plusieurs programmeurs de travailler sur le projet en même temps. Quand vous utilisez du code généré par Visual Studio, vous pouvez changer la classe sans avoir à recréer le fichier source. (Le code Windows Forms et le code wrapper de service web sont des exemples de code généré par Visual Studio.) Vous pouvez donc écrire du code qui utilise des classes autogénérées sans avoir à modifier le fichier créé par Visual Studio.
+Les classes partielles sont utiles dans plusieurs situations. Sur un grand projet, par exemple, le fait de séparer une classe en plusieurs fichiers permet à plusieurs programmeurs de travailler sur le projet en même temps. Quand vous utilisez du code généré par Visual Studio, vous pouvez changer la classe sans avoir à recréer le fichier source. (Des exemples de code généré par Visual Studio incluent Windows Forms et le code wrapper de service Web.) Vous pouvez ainsi créer du code qui utilise des classes générées automatiquement sans avoir à modifier le fichier créé par Visual Studio.
 
 Il existe deux types de méthodes partielles. En C#, on parle de méthodes déclarantes et implémentantes. En Visual Basic, on parle de méthodes de déclaration et d’implémentation.
 

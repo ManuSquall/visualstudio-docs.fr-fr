@@ -1,5 +1,5 @@
 ---
-title: 'CA1400 : Points d’entrée P-Invoke doivent exister | Microsoft Docs'
+title: 'CA1400 : les points d’entrée P-Invoke doivent exister | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - CA1400
 ms.assetid: 1d64e470-7b2f-4cca-8fb0-ac92829e6332
 caps.latest.revision: 21
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 0e5696689d0aa40f4af2e11970c81b47737a3d80
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d1083f7bbdf3b3af78b83aed293b31d898ae7522
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68200371"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661375"
 ---
 # <a name="ca1400-pinvoke-entry-points-should-exist"></a>CA1400 : Des points d'entrée P/Invoke doivent exister
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,23 +29,23 @@ ms.locfileid: "68200371"
 |-|-|
 |TypeName|PInvokeEntryPointsShouldExist|
 |CheckId|CA1400|
-|Catégorie|Microsoft.Interoperability|
+|Category|Microsoft. Interoperability|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
- Une méthode publique ou protégée est marquée avec le <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. La bibliothèque non managée n'a pas pu être localisée, ou la méthode n'a pu être mise en correspondance avec aucune fonction de la bibliothèque. Si la règle ne peut pas trouver le nom de la méthode exactement tel qu’il est spécifié, il recherche ANSI ou des versions à caractères larges de la méthode ajoutant le nom de la méthode avec « A » ou « W ». Si aucune correspondance n’est trouvée, la règle essaie de localiser une fonction en utilisant le format de nom __stdcall (_MyMethod@12, où 12 représente la longueur des arguments). Si aucune correspondance n’est trouvée, et le nom de la méthode commence par '#', la règle recherche pour la fonction comme une référence d’ordinal au lieu d’une référence de nom.
+ Une méthode publique ou protégée est marquée avec le <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. La bibliothèque non managée n'a pas pu être localisée, ou la méthode n'a pu être mise en correspondance avec aucune fonction de la bibliothèque. Si la règle ne peut pas trouver le nom de la méthode exactement tel qu’il est spécifié, elle recherche des versions ANSI ou à caractères larges de la méthode en suffixant le nom de la méthode avec « A » ou « W ». Si aucune correspondance n’est trouvée, la règle tente de localiser une fonction en utilisant le format de nom _ _ stdcall (_MyMethod@12, où 12 représente la longueur des arguments). Si aucune correspondance n’est trouvée et que le nom de la méthode commence par « # », la règle recherche la fonction en tant que référence ordinale au lieu d’une référence de nom.
 
 ## <a name="rule-description"></a>Description de la règle
- Aucune vérification de la compilation est disponible pour vous assurer que les méthodes marquées avec <xref:System.Runtime.InteropServices.DllImportAttribute> se trouvent dans la DLL non managée référencée. Si aucune fonction qui porte le nom spécifié se trouve dans la bibliothèque, ou les arguments de la méthode ne correspondent pas les arguments de fonction, le common language runtime lève une exception.
+ Aucun contrôle de compilation n’est disponible pour s’assurer que les méthodes marquées avec <xref:System.Runtime.InteropServices.DllImportAttribute> se trouvent dans la DLL non managée référencée. Si aucune fonction portant le nom spécifié n’est dans la bibliothèque, ou si les arguments de la méthode ne correspondent pas aux arguments de la fonction, le common language runtime lève une exception.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, corrigez la méthode qui a le <xref:System.Runtime.InteropServices.DllImportAttribute> attribut. Assurez-vous que la bibliothèque non managée existe et qu’il est dans le même répertoire que l’assembly qui contient la méthode. Si la bibliothèque est présent et correctement référencée, vérifiez que le nom de la méthode, le type de retour et la signature de l’argument correspond à la fonction de bibliothèque.
+ Pour corriger une violation de cette règle, corrigez la méthode qui a l’attribut <xref:System.Runtime.InteropServices.DllImportAttribute>. Assurez-vous que la bibliothèque non managée existe et qu’elle se trouve dans le même répertoire que l’assembly qui contient la méthode. Si la bibliothèque est présente et correctement référencée, vérifiez que le nom de la méthode, le type de retour et la signature d’argument correspondent à la fonction de bibliothèque.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Ne supprimez pas un avertissement de cette règle lorsque la bibliothèque non managée est dans le même répertoire que l’assembly managé qui y fait référence. Il est possible de supprimer un avertissement de cette règle dans le cas où la bibliothèque non managée ne pourrait pas être localisée.
+ Ne supprimez pas un avertissement de cette règle lorsque la bibliothèque non managée se trouve dans le même répertoire que l’assembly managé qui y fait référence. Il peut être possible de supprimer sans risque un avertissement de cette règle dans le cas où la bibliothèque non managée n’a pas pu être localisée.
 
 ## <a name="example"></a>Exemple
- L’exemple suivant montre un type qui viole la règle. Aucune fonction nommée `DoSomethingUnmanaged` se produit dans kernel32.dll.
+ L’exemple suivant montre un type qui viole la règle. Aucune fonction nommée `DoSomethingUnmanaged` ne se produit dans kernel32. dll.
 
  [!code-csharp[FxCop.Interoperability.DLLExists#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Interoperability.DLLExists/cs/FxCop.Interoperability.DLLExists.cs#1)]
 

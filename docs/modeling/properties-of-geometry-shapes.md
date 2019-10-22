@@ -6,50 +6,50 @@ f1_keywords:
 - vs.dsltools.dsldesigner.geometryshape
 helpviewer_keywords:
 - Domain-Specific Language, geometry shape
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1006fdb766c4c375c93a97f17cccd4e95568677
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fb1088dafea1c43e624d029de6b890c9b597b061
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62998968"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658176"
 ---
 # <a name="properties-of-geometry-shapes"></a>Propriétés des formes de géométrie
-Vous pouvez utiliser des formes géométriques pour spécifier comment les instances des classes de domaine sont affichées dans un langage spécifique à un domaine. Pour plus d’informations, consultez [comment définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md). Pour plus d’informations sur l’utilisation de ces propriétés, consultez [personnalisation et extension d’un langage spécifique à un domaine](../modeling/customizing-and-extending-a-domain-specific-language.md).
+Vous pouvez utiliser des formes géométriques pour spécifier la façon dont les instances de classes de domaine sont affichées dans un langage spécifique à un domaine. Pour plus d’informations, consultez [comment définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md). Pour plus d’informations sur l’utilisation de ces propriétés, consultez [personnalisation et extension d’un langage spécifique à un domaine](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
- Formes géométriques ont les propriétés qui sont répertoriées dans le tableau suivant.
+ Les propriétés des formes géométriques sont répertoriées dans le tableau suivant.
 
-|Propriété|Description|Par défaut|
+|Property|Description|Valeur par défaut|
 |-|-|-|
-|Couleur de remplissage|La couleur de remplissage de cette forme.|Blanc|
-|Mode de remplissage dégradé|Le mode de remplissage dégradé de cette forme (Horizontal, Vertical, Diagonales vers l’avant, Diagonales vers l’arrière ou aucun).|Horizontal|
-|géométrie|La géométrie de cette forme (Rectangle, Rectangle arrondi, Ellipse ou le cercle).|Rectangle|
-|A des Points de connexion par défaut|Si `True`, la forme utilisera haut, bas, gauche et droit connexion pointe dans le concepteur généré.|False|
-|Couleur du contour|La couleur de contour de cette forme.|Noir|
-|Style de tiret de contour|Le style de tiret de contour de cette forme (solide, tiret, point, tiret, DashDotDot ou personnalisé).|Unie|
-|Épaisseur du contour|L’épaisseur du contour de cette forme.|0.03125|
-|Couleur du texte|La couleur qui est utilisée pour les éléments décoratifs de texte qui sont associés à cette forme.|Noir|
-|Modificateur d'accès|Le modificateur d’accès de la classe (public ou interne).|Public|
+|Couleur de remplissage|Couleur de remplissage de cette forme.|ajourée|
+|Mode dégradé de remplissage|Mode de remplissage dégradé de cette forme (horizontal, vertical, diagonale vers l’avant, diagonales arrière ou aucune).|Horizontal|
+|Geometr|Géométrie de cette forme (Rectangle, Rectangle arrondi, ellipse ou cercle).|Rectangle|
+|A des points de connexion par défaut|Si `True`, la forme utilise les points de connexion du haut, du bas, de gauche et de droite dans le concepteur généré.|False|
+|Couleur de contour|Couleur de contour de cette forme.|Noir|
+|Style de tiret de contour|Style de tiret de contour de cette forme (plein, tiret, point, tiret point, tiret point point ou personnalisé).|Unie|
+|Épaisseur du contour|Épaisseur de contour de cette forme.|0,03125|
+|Couleur du texte|Couleur utilisée pour les éléments décoratifs de texte associés à cette forme.|Noir|
+|Modificateur d'accès|Modificateur d’accès de la classe (public ou Internal).|Public|
 |Attributs personnalisés|Utilisé pour ajouter des attributs à la classe de code source qui est générée pour cette forme.|\<aucune>|
-|Génère le Double dérivée|Si `True`, une classe de base et une classe partielle (pour prendre en charge la personnalisation via des substitutions) sont générés. Pour plus d’informations, consultez [substitution et extension des Classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|False|
-|A le constructeur personnalisé|Si `True`, un constructeur personnalisé est fourni dans le code source. Pour plus d’informations, consultez [substitution et extension des Classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|False|
-|Modificateur d’héritage|Décrit le type d’héritage de la classe de code source qui est générée à partir de la forme (`none`, `abstract` ou `sealed`).|none|
-|Forme géométrique de base|La classe de base de cette forme.|(aucun)|
-|Nom|Le nom de cette forme.|Nom actuel|
-|Espace de noms|L’espace de noms qui est affilié à cette forme.|Espace de noms actuel|
-|Type de l’info-bulle|Comment l’info-bulle est définie (fixe, variable, ou aucun). Si fixe, puis la valeur de la `Fixed Tooltip Text` propriété est utilisée en tant que l’info-bulle ; si la variable, l’info-bulle est définie dans du code personnalisé.|Aucun.|
-|Notes|Remarques informelles associées à cet élément.|\<aucune>|
+|Génère un doublon dérivé|Si `True`, une classe de base et une classe partielle (pour prendre en charge la personnalisation via des substitutions) sont générées. Pour plus d’informations, consultez [substitution et extension des classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|False|
+|A un constructeur personnalisé|Si `True`, un constructeur personnalisé est fourni dans le code source. Pour plus d’informations, consultez [substitution et extension des classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|False|
+|Modificateur d’héritage|Décrit le type d’héritage de la classe de code source générée à partir de la forme (`none`, `abstract` ou `sealed`).|none|
+|Forme Geometry de base|Classe de base de cette forme.|(aucune)|
+|Name|Nom de cette forme.|Nom actuel|
+|Espace de noms|Espace de noms affilié à cette forme.|Espace de noms actuel|
+|Type d’info-bulle|Comment l’info-bulle est définie (Fixed, variable ou None). S’il est corrigé, la valeur de la propriété `Fixed Tooltip Text` est utilisée comme info-bulle ; Si la variable est, l’info-bulle est définie dans le code personnalisé.|aucune.|
+|Notes|Notes informelles associées à cet élément.|\<aucune>|
 |Hauteur initiale|Hauteur initiale de cette forme, en pouces.|1|
 |Largeur initiale|Largeur initiale de cette forme, en pouces.|1,5|
-|Couleur de remplissage exposé en tant que propriété<br /><br /> Mode de remplissage exposé dégradé<br /><br /> Exposé de couleur du contour en tant que propriété<br /><br /> Exposé de Style de tiret de contour en tant que propriété<br /><br /> Épaisseur du contour en tant que propriété d’exposées<br /><br /> Expose la couleur du texte|Si `True`, l’utilisateur peut définir la propriété indiquée d’une forme. Pour définir ceci, avec le bouton droit de la définition de forme, puis cliquez sur **ajouter les objets exposés**.|False|
-|Description|La description est utilisée pour documenter le concepteur généré.|\<aucune>|
-|Display Name|Le nom qui s’affichera dans le concepteur généré pour cette forme.|\<aucune>|
-|Texte d’info-bulle fixe|Le texte qui est utilisé pour une info-bulle fixe.|\<aucune>|
-|Help Keyword|Le mot clé qui est utilisé pour indexer l’aide F1 pour cette forme.|\<aucune>|
+|Couleur de remplissage exposée en tant que propriété<br /><br /> Mode dégradé de remplissage exposé<br /><br /> Couleur de contour exposée en tant que propriété<br /><br /> Exposé du style de tiret de contour en tant que propriété<br /><br /> Exposer l’épaisseur de la structure en tant que propriété<br /><br /> Expose la couleur de texte|Si `True`, l’utilisateur peut définir la propriété déclarée d’une forme. Pour ce faire, cliquez avec le bouton droit sur la définition de la forme, puis cliquez sur **Ajouter exposé**.|False|
+|Description|Description utilisée pour documenter le concepteur généré.|\<aucune>|
+|Display Name|Nom qui sera affiché dans le concepteur généré pour cette forme.|\<aucune>|
+|Texte d’info-bulle fixe|Texte utilisé pour une info-bulle fixe.|\<aucune>|
+|Help Keyword|Mot clé utilisé pour indexer l’aide F1 pour cette forme.|\<aucune>|
 
 ## <a name="see-also"></a>Voir aussi
 

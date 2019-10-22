@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Prerequisites dialog box
 ms.assetid: 53ac863c-77a0-409b-91e5-7a4bd8b8474e
 caps.latest.revision: 79
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 672c0ea4a4ec3c2d396da7b232ca085181d90b25
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 367af4965c1e5a744a7ba6c801d74bc194a70ebb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68869866"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662182"
 ---
 # <a name="prerequisites-dialog-box"></a>Composants requis, boîte de dialogue
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -66,4 +66,4 @@ Cette boîte de dialogue spécifie quels composants requis sont installés, comm
 |**Windows Installer 4.5**|Ce package installe la version 4.5 du redistribuable Microsoft Windows Installer, qui permet l’installation de projets d’installation Windows Installer.|
 
 ## <a name="see-also"></a>Voir aussi
- [Page publier, concepteur de projets](../../ide/reference/publish-page-project-designer.md) [Conditions préalables](../../deployment/application-deployment-prerequisites.md) pour le déploiement d’applications [Redistribution du .NET Framework](https://msdn.microsoft.com/a18d0456-fd89-493e-97f4-756505bfe287) [Déploiement des composants requis pour les Applications 64 bits](../../deployment/deploying-prerequisites-for-64-bit-applications.md) [Vue d’ensemble du multi-ciblage Visual Studio](../../ide/visual-studio-multi-targeting-overview.md)
+ [Page publier, concepteur de projets](../../ide/reference/publish-page-project-designer.md) [prérequis](../../deployment/application-deployment-prerequisites.md) pour le déploiement de [l’application redistribution du .NET Framework](https://msdn.microsoft.com/a18d0456-fd89-493e-97f4-756505bfe287) [déploiement des composants requis pour les applications 64 bits](../../deployment/deploying-prerequisites-for-64-bit-applications.md) [vue d’ensemble du MULTICIBLAGE Visual Studio](../../ide/visual-studio-multi-targeting-overview.md)

@@ -1,21 +1,21 @@
 ---
-title: Concepteur de flux de travail - si Concepteur d’activités
+title: Concepteur d’activités Concepteur de flux de travail-if
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.If.UI
 ms.assetid: 930a8fa2-db98-43e9-ad6d-a85cc7a6519a
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 762199906bbb84701c044b5fa9f3f3b8c6fdfdae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4e0c08d655393a953e1abae9d33086d43e281500
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949199"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650240"
 ---
 # <a name="if-activity-designer"></a>Concepteur d'activités If
 
@@ -25,11 +25,11 @@ L'activité <xref:System.Activities.Statements.If> évalue une condition et exé
 
 Le tableau suivant affiche les propriétés les plus utiles de l'activité <xref:System.Activities.Statements.If> et décrit comment les utiliser dans le concepteur.
 
-|Nom de la propriété|Obligatoire|Utilisation|
+|Nom de propriété|Obligatoire|Utilisation|
 |-|--------------|-|
-|<xref:System.Activities.Statements.If.Condition%2A>|True|Condition qui détermine l'activité enfant à exécuter. Pour définir le <xref:System.Activities.Statements.If.Condition%2A>, tapez une expression Visual Basic dans le **Condition** zone sur le **si** activité concepteur ou dans la grille des propriétés.|
-|<xref:System.Activities.Statements.If.Else%2A>|False|L’activité à exécuter si le <xref:System.Activities.Statements.If.Condition%2A> est **false**. Pour ajouter une activité est exécutée par le <xref:System.Activities.Statements.If.Else%2A> créer une branche, déplacez une activité de la **boîte à outils** dans le **Else** zone sur le **si** Concepteur d’activités avec le texte d’indication » Déposer l’activité ici ».|
-|<xref:System.Activities.Statements.If.Then%2A>|False|L’activité à exécuter si le <xref:System.Activities.Statements.If.Condition%2A> est **true**. Pour ajouter une activité est exécutée par le <xref:System.Activities.Statements.If.Then%2A> créer une branche, déplacez une activité de la **boîte à outils** dans le **puis** zone sur le **si** Concepteur d’activités avec le texte d’indication » Déposer l’activité ici ».|
+|<xref:System.Activities.Statements.If.Condition%2A>|True|Condition qui détermine l'activité enfant à exécuter. Pour définir la <xref:System.Activities.Statements.If.Condition%2A>, tapez une expression de Visual Basic dans la zone **condition** du concepteur d’activités **If** ou dans la grille des propriétés.|
+|<xref:System.Activities.Statements.If.Else%2A>|False|Activité à exécuter si la <xref:System.Activities.Statements.If.Condition%2A> a la **valeur false**. Pour ajouter une activité qui est exécutée par l' <xref:System.Activities.Statements.If.Else%2A> branche, déplacez une activité de la boîte **à outils** vers la zone **else** sur le concepteur d’activités **If** avec le texte d’indication « déposer l’activité ici ».|
+|<xref:System.Activities.Statements.If.Then%2A>|False|Activité à exécuter si la <xref:System.Activities.Statements.If.Condition%2A> a la **valeur true**. Pour ajouter une activité qui est exécutée par l' <xref:System.Activities.Statements.If.Then%2A> branche, déplacez une activité de la boîte **à outils** vers la zone **Then** sur le concepteur d’activités **If** avec le texte d’indication « déposer l’activité ici ».|
 
 ## <a name="see-also"></a>Voir aussi
 

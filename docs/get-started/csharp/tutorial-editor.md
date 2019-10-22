@@ -5,19 +5,19 @@ ms.custom: seodec18, get-started
 ms.date: 11/20/2018
 ms.technology: vs-ide-general
 ms.topic: tutorial
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 517437bb1042d052520019c10899173cbc0bf988
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.openlocfilehash: f40111e59aa97180c98f0fc12d6b8eeb5d06ecec
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180251"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647870"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Apprendre à utiliser l’éditeur de code
 
@@ -58,7 +58,7 @@ Vous allez commencer par créer un fichier et y ajouter du code.
 
 ::: moniker-end
 
-2. Dans le menu **Fichier** de la barre de menus, choisissez **Nouveau** > **Fichier**.
+2. Dans le menu **fichier** de la barre de menus, **choisissez nouveau**  > **fichier**ou appuyez sur **CTRL** +**N**.
 
 3. Dans la boîte de dialogue **Nouveau fichier**, sous la catégorie **Général**, choisissez **Classe Visual C#** , puis choisissez **Ouvrir**.
 
@@ -80,7 +80,7 @@ Visual Studio fournit des *extraits de code* qui vous aident à créer rapidemen
 
    La signature de la méthode `static void Main()` est ajoutée au fichier. La méthode [Main()](/dotnet/csharp/programming-guide/main-and-command-args/) est le point d’entrée pour les applications C#.
 
-Les extraits de code disponibles diffèrent en fonction des langages de programmation. Pour voir quels extraits de code sont disponibles pour votre langage, choisissez **Edition** > **IntelliSense** > **Insérer un extrait de code**, puis choisissez le dossier de votre langage. Pour C#, la liste ressemble à ceci :
+Les extraits de code disponibles diffèrent en fonction des langages de programmation. Vous pouvez consulter les extraits de code disponibles pour votre langage en choisissant **modifier**  > **IntelliSense**  > **Insérer un extrait** ou en appuyant sur **CTRL** +**K**, **CTRL** +**X**, puis en choisissant le dossier de votre langue. Pour C#, la liste ressemble à ceci :
 
 ![Liste d’extraits de code C#](../media/tutorial-code-snippet-list.png)
 
@@ -132,7 +132,7 @@ Le bloc de code est réduit de façon à afficher uniquement la première ligne,
 
 ## <a name="view-symbol-definitions"></a>Afficher les définitions de symbole
 
-L’éditeur de Visual Studio facilite l’inspection de la définition d’un type, d’une méthode, etc. Parmi les diverses façons de procéder, vous pouvez accéder au fichier qui contient la définition, par exemple en choisissant **Atteindre la définition** ou en appuyant sur **F12** à partir de n’importe quel endroit où le symbole est référencé. Une autre façon encore plus rapide, sans avoir à déplacer le focus en dehors du fichier dans lequel vous travaillez, consiste à utiliser la fonctionnalité [Aperçu de la définition](../../ide/go-to-and-peek-definition.md#peek-definition). Vous allez afficher un aperçu de la définition du type `string`.
+L’éditeur Visual Studio facilite l’inspection de la définition d’un type, d’une méthode, etc. L’une des méthodes consiste à accéder au fichier qui contient la définition, par exemple en choisissant **atteindre la définition** ou en appuyant sur **F12** partout où le symbole est référencé. Une autre façon encore plus rapide, sans avoir à déplacer le focus en dehors du fichier dans lequel vous travaillez, consiste à utiliser la fonctionnalité [Aperçu de la définition](../../ide/go-to-and-peek-definition.md#peek-definition). Vous allez afficher un aperçu de la définition du type `string`.
 
 1. Cliquez avec le bouton droit sur une occurrence de `string`, puis choisissez **Aperçu de la définition** dans le menu de contenu. Ou bien, appuyez sur **Alt**+**F12**.
 

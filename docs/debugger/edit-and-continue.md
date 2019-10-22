@@ -21,23 +21,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 008dde8239c2b4b70220159275b12066b8cf70bb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f11a170878e3efefc123ad7d61d0889f5bd95c12
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62851025"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72435731"
 ---
-# <a name="edit-code-and-continue-debugging-in-visual-studio-c-vb-c"></a>Modifier le code et continuer le débogage dans Visual Studio (c# VB, C++)
-Modifier &amp; Continuer est une fonctionnalité qui vous fait gagner du temps en vous permettant de modifier votre code source pendant que votre programme est en mode arrêt. Lorsque vous reprenez l’exécution du programme en choisissant une commande d’exécution telle que **continuer** ou **étape**, Modifier & Continuer automatiquement applique les modifications de code avec certaines limitations. Cela vous permet de modifier votre code pendant une session de débogage, au lieu de devoir arrêter, recompiler votre programme entier et redémarrer la session de débogage.
+# <a name="edit-code-and-continue-debugging-in-visual-studio-c-vb-c"></a>Modifier le code et continuer le débogage dans Visual StudioC#(, VB C++,)
+Modifier &amp; Continuer est une fonctionnalité qui vous fait gagner du temps en vous permettant de modifier votre code source pendant que votre programme est en mode arrêt. Lorsque vous reprenez l’exécution du programme en choisissant une commande d’exécution telle que **continue** ou **Step**, modifier & Continuer applique automatiquement les modifications du code avec certaines limitations. Cela vous permet de modifier votre code pendant une session de débogage, au lieu de devoir arrêter, recompiler votre programme entier et redémarrer la session de débogage.
 
  Cette section comprend les rubriques suivantes :
 
- [Guide pratique pour activer et désactiver Modifier et Continuer](../debugger/how-to-enable-and-disable-edit-and-continue.md)
+ [Guide pratique pour activer et désactiver Modifier & Continuer](../debugger/how-to-enable-and-disable-edit-and-continue.md)
 
  [Guide pratique pour arrêter des modifications de code](../debugger/how-to-stop-code-changes.md)
 
- [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)
+ [Modifier & Continuer (C++)](../debugger/edit-and-continue-visual-cpp.md)
 
  [Modifier & Continuer (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)
 

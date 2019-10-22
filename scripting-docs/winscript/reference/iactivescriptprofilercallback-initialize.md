@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerCallback::Initialize | Microsoft Docs
+title: 'IActiveScriptProfilerCallback :: Initialize | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 66ef6dc37e1f2f8117e440089ee36958d616dda0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bbbd61d6b3c10dcfffe2df215cc5a60d685dd803
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993356"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576442"
 ---
 # <a name="iactivescriptprofilercallbackinitialize"></a>IActiveScriptProfilerCallback::Initialize
-Appelée pour initialiser l’objet de profileur chaque fois que le profilage est démarré sur un moteur de script.  
+Appelé pour initialiser l’objet de profileur chaque fois que le profilage est démarré sur un moteur de script.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -34,17 +34,17 @@ HRESULT Initialize(
   
 #### <a name="parameters"></a>Paramètres  
  `dwContext`  
- [in] Une valeur de 4 octets qui est passée à [IActiveScriptProfilerControl::StartProfiling](../../winscript/reference/iactivescriptprofilercontrol-startprofiling.md).  
+ dans Valeur de 4 octets qui est passée à [IActiveScriptProfilerControl :: StartProfiling](../../winscript/reference/iactivescriptprofilercontrol-startprofiling.md).  
   
 ## <a name="return-value"></a>Valeur de retour  
- Retourne une valeur HRESULT. Les valeurs possibles sont les suivantes :  
+ Retourne un HRESULT. Les valeurs possibles sont les suivantes :  
   
 |Valeur de retour|Signification|  
 |------------------|-------------|  
 |`S_OK`|La méthode a réussi.|  
   
 ## <a name="remarks"></a>Notes  
- Si la méthode ne peut pas initialiser l’objet de profileur, elle doit retourner un HRESULT d’échec pour informer le moteur de script. Dans ce cas, le moteur de script doit appeler directement [IActiveScriptProfilerCallback::Shutdown](../../winscript/reference/iactivescriptprofilercallback-shutdown.md), en passant le paramètre HRESULT et libérer l’objet de profileur.  
+ Si la méthode ne peut pas initialiser l’objet de profileur, elle doit retourner un HRESULT d’échec pour notifier le moteur de script. Dans ce cas, le moteur de script doit appeler directement [IActiveScriptProfilerCallback :: Shutdown](../../winscript/reference/iactivescriptprofilercallback-shutdown.md), en passant le HRESULT dans le paramètre, puis libérer l’objet de profileur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IActiveScriptProfilerCallback](../../winscript/reference/iactivescriptprofilercallback-interface.md)

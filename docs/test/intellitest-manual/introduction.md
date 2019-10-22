@@ -4,17 +4,17 @@ ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Visual Studio IntelliTest developer testing tool
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 5aa67bd32f6895e4e1dfc4e7c558bc3bc0d8001b
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: 94bd67ecb4646e3b8079d2d1aadda097c655af4c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461490"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653169"
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Vue d’ensemble de Microsoft IntelliTest
 
@@ -121,7 +121,7 @@ Il est parfois difficile de détecter quand cela se produit. Prenons les exemple
 * La classe **System.Random** utilise l’heure du système en vigueur pour fournir des valeurs véritablement aléatoires.
 * La classe **System.DateTime** fournit l’heure actuelle, qui n’est pas sous le contrôle d’IntelliTest.
 
-### <a name="concurrency"></a>Concurrence
+### <a name="concurrency"></a>Concurrency
 
 IntelliTest ne gère pas les programmes multithreads.
 
@@ -132,7 +132,7 @@ Même pour du code .NET, il peut analyser uniquement le code qu’il instrumente
 
 La solution de contournement suggérée est d’avoir un mode de test où de telles méthodes se trouvent dans des types dans un assembly dynamique. Cependant, même si certaines méthodes sont non instrumentées, IntelliTest tente de couvrir autant de code instrumenté que possible.
 
-### <a name="platform"></a>Plateforme
+### <a name="platform"></a>Plate-forme
 
 IntelliTest est pris en charge seulement sur .NET Framework X86 32 bits.
 
@@ -148,7 +148,7 @@ IntelliTest utilise un [solveur de contrainte](input-generation.md#constraint-so
 
 Comme IntelliTest intercepte et « lève à nouveau » les exceptions dans chaque méthode instrumentée, les numéros de ligne dans les traces de pile ne seront pas correctes. Il s’agit d’une limitation liée à la conception de l’instruction « rethrow ».
 
-## <a name="further-reading"></a>Informations supplémentaires
+## <a name="further-reading"></a>Compléments de lecture
 
 * [Billet de blog d’introduction](https://devblogs.microsoft.com/devops/introducing-smart-unit-tests/).
 * [Générer des tests unitaires pour votre code avec IntelliTest](../../test/generate-unit-tests-for-your-code-with-intellitest.md)

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - plug-ins, load test
 - APIs, load tests
 ms.assetid: e15567bc-1f21-4feb-b81d-f17ba35cfde5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 47707e0430d51a754f7e458ebf68e08124c1e7b5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 571abf14b1e17d85e21667c0ef0dbc3894b3ae76
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821494"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653313"
 ---
-# <a name="how-to-use-the-load-test-api"></a>Procédure : utiliser l’API de test de charge
+# <a name="how-to-use-the-load-test-api"></a>Guide pratique pour utiliser l’API de test de charge
 
 Visual Studio prend en charge des plug-ins de test de charge qui peuvent contrôler ou améliorer un test de charge. Les plug-ins de test de charge sont des classes définies par l'utilisateur qui implémentent l'interface <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin> qui se trouve dans l'espace de noms <xref:Microsoft.VisualStudio.TestTools.LoadTesting>. Les plug-ins de test de charge permettent de bénéficier d'un contrôle de test de charge personnalisé, tel que l'abandon d'un test de charge lorsqu'un seuil d'erreur ou de compteur est atteint. Utilisez les propriétés sur la classe <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest> pour obtenir ou définir des paramètres de test de charge à partir de code défini par l'utilisateur. Utilisez les événements sur la classe <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest> pour joindre des délégués pour les notifications lorsque le test de charge s'exécute.
 
@@ -26,7 +26,7 @@ Visual Studio prend en charge des plug-ins de test de charge qui peuvent contrô
 > [!TIP]
 > Utilisez l'Explorateur d'objets pour examiner l'espace de noms <xref:Microsoft.VisualStudio.TestTools.LoadTesting>. Les éditeurs Visual C# et Visual Basic offrent tous deux la prise en charge IntelliSense du codage avec les classes de l'espace de noms.
 
-Vous pouvez également créer des plug-ins pour les tests de performances web. Pour plus d'informations, voir [Procédure : créer un plug-in de test de performances web](../test/how-to-create-a-web-performance-test-plug-in.md) et [Guide pratique pour créer un plug-in au niveau de la requête](../test/how-to-create-a-request-level-plug-in.md).
+Vous pouvez également créer des plug-ins pour les tests de performances web. Pour plus d’informations, consultez [Guide pratique pour créer un plug-in de test de performances web](../test/how-to-create-a-web-performance-test-plug-in.md) et [Guide pratique pour créer un plug-in de niveau requête](../test/how-to-create-a-request-level-plug-in.md).
 
 ## <a name="to-use-the-loadtesting-namespace"></a>Pour utiliser l'espace de noms LoadTesting
 
@@ -53,7 +53,7 @@ Vous pouvez également créer des plug-ins pour les tests de performances web. P
     3. Dans le volet **Propriétés du plug-in sélectionné**, définissez les valeurs initiales du plug-in à utiliser au moment de l’exécution.
 
         > [!NOTE]
-        > Vous pouvez exposer autant de propriétés que vous souhaitez de vos plug-ins. Il suffit de les rendre publics, définissables et d'un type de base, tel qu'un entier, une valeur booléenne ou une chaîne. Vous pourrez modifier ultérieurement les propriétés du plug-in du test de charge dans la fenêtre **Propriétés**.
+        > Vous pouvez exposer autant de propriétés que vous le souhaitez à partir de vos plug-ins. Il suffit de les rendre publics, définissables et d’un type de base, tel qu’un entier, une valeur booléenne ou une chaîne. Vous pourrez modifier ultérieurement les propriétés du plug-in du test de charge dans la fenêtre **Propriétés**.
 
 9. Exécutez votre test de charge.
 

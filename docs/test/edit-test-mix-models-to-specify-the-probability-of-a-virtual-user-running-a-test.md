@@ -6,15 +6,15 @@ helpviewer_keywords:
 - load tests, scenarios
 - load tests, virtual users
 ms.assetid: e3b7d952-9012-400a-8131-3444390a6066
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 51bfc7a9061cbc17d766f1174593907bfbf762ec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d9c678f1ec5cc984bff8e7f77d3ed95c9d579bfb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62785839"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72644457"
 ---
 # <a name="edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>Modifier les modèles de combinaison de tests pour spécifier la probabilité d’exécution d’un test par un utilisateur virtuel
 
@@ -55,15 +55,15 @@ Après avoir créé votre test de charge à l’aide de l’**Assistant Nouveau 
 
 1. Ouvrez un test de charge.
 
-     L’**éditeur de test de charge** s’affiche. L'arborescence du test de charge s'affiche.
+     **L’Éditeur de test de charge** s’affiche. L'arborescence du test de charge s'affiche.
 
 2. Dans le dossier *Scénarios* de l’arborescence du test de charge, choisissez le nœud de scénario pour lequel vous souhaitez spécifier le nombre maximal d’itérations de tests.
 
-3. Dans le menu **Affichage**, sélectionnez **Fenêtre Propriétés**.
+3. Dans le menu **Affichage**, sélectionnez la fenêtre **Propriétés**.
 
      Les catégories et les propriétés du scénario s'affichent.
 
-4. Dans la propriété **Type de combinaison de tests**, choisissez le bouton de sélection (**...**).
+4. Dans la propriété **Type de combinaison de tests**, choisissez le bouton de sélection ( **...** ).
 
      La boîte de dialogue **Modifier la combinaison de tests** s’affiche.
 
@@ -77,7 +77,7 @@ Après avoir créé votre test de charge à l’aide de l’**Assistant Nouveau 
 
      La fenêtre **Propriétés** affiche le nouveau modèle de combinaison de tests pour la propriété **Type de combinaison de tests**.
 
-9. Après avoir changé la propriété, choisissez **Enregistrer** dans le menu **Fichier**. Vous pouvez exécuter ensuite votre test de charge à l’aide de la nouvelle valeur associée à **Type de combinaison de tests**.
+9. Une fois que vous avez changé la propriété, choisissez **Enregistrer** dans le menu **Fichier**. Vous pouvez exécuter ensuite votre test de charge à l’aide de la nouvelle valeur associée à **Type de combinaison de tests**.
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -17,14 +17,14 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d22b178d85d304f19e52727ef2c67d77f16da1b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3604c06b6cb36cc4ff7ef6c76348b5ece53bed61
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840081"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572982"
 ---
-# <a name="textdocattr-constants"></a>Constantes TEXT_DOC_ATTR
+# <a name="text_doc_attr-constants"></a>Constantes TEXT_DOC_ATTR
 Décrit les attributs du document.  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -35,11 +35,11 @@ typedef DWORD TEXT_DOC_ATTR;
   
 ## <a name="constants"></a>Constantes  
   
-|Constante|Value|Description|  
+|Constante|valeur|Description|  
 |--------------|-----------|-----------------|  
 |TEXT_DOC_ATTR_READONLY|0x00000001|Le document est en lecture seule.|  
-|TEXT_DOC_ATTR_TYPE_PRIMARY|0x00000002|Le document est le fichier primaire de cette arborescence du document.|  
-|TEXT_DOC_ATTR_TYPE_WORKER|0x00000004|Le document est un processus de travail.|  
+|TEXT_DOC_ATTR_TYPE_PRIMARY|0x00000002|Le document est le fichier principal de cette arborescence de documents.|  
+|TEXT_DOC_ATTR_TYPE_WORKER|0x00000004|Le document est un Worker.|  
 |TEXT_DOC_ATTR_TYPE_SCRIPT|0x00000008|Le document est un fichier de script.|  
   
 ## <a name="see-also"></a>Voir aussi  

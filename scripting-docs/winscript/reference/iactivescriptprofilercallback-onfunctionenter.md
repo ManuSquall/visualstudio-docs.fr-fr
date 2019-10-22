@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerCallback::OnFunctionEnter | Microsoft Docs
+title: 'IActiveScriptProfilerCallback :: OnFunctionEnter | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1b8410fba08c1799d88532266c022d811c9553fd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6157638353712d6f376fa1eb46a68980b493a5c3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993382"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571688"
 ---
 # <a name="iactivescriptprofilercallbackonfunctionenter"></a>IActiveScriptProfilerCallback::OnFunctionEnter
-Avertit l’objet de profileur que le moteur de script est prêt à exécuter un appel de fonction qui n’est pas un appel dans le modèle DOM (Document Object).  
+Indique à l’objet de profileur que le moteur de script est sur le point d’exécuter un appel de fonction qui n’est pas un appel dans le Document Object Model (DOM).  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -35,17 +35,17 @@ HRESULT OnFunctionEnter(
   
 #### <a name="parameters"></a>Paramètres  
  `scriptId`  
- [in] ID unique du script faisant partie de la fonction. Cet ID est attribué par le moteur de script.  
+ dans ID unique du script dont fait partie la fonction. Cet ID est assigné par le moteur de script.  
   
  `functionId`  
- [in] ID unique de la fonction. Cet ID est attribué par le moteur de script.  
+ dans ID unique de la fonction. Cet ID est assigné par le moteur de script.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La valeur de retour de cette méthode est ignorée par le moteur de script.  
   
 ## <a name="remarks"></a>Notes  
- Pour les appels de DOM, le moteur de script appelle [IActiveScriptProfilerCallback2::OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md) au lieu de `IActiveScriptProfilerCallback::OnFunctionEnter`. Il s’agit en raison du grand nombre de méthodes uniques et des propriétés dans le DOM.  
+ Pour les appels DOM, le moteur de script appelle [IActiveScriptProfilerCallback2 :: OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md) au lieu de `IActiveScriptProfilerCallback::OnFunctionEnter`. Cela est dû au grand nombre de méthodes et de propriétés uniques dans le DOM.  
   
 ## <a name="see-also"></a>Voir aussi  
- [IActiveScriptProfilerCallback::OnFunctionExit](../../winscript/reference/iactivescriptprofilercallback-onfunctionexit.md)   
+ [IActiveScriptProfilerCallback :: OnFunctionExit](../../winscript/reference/iactivescriptprofilercallback-onfunctionexit.md)    
  [Interface IActiveScriptProfilerCallback](../../winscript/reference/iactivescriptprofilercallback-interface.md)

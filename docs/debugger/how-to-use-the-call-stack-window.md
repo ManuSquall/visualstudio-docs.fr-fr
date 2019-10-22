@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0b9fb6e809f1124a10a6a2b4e35bc59806787a6
-ms.sourcegitcommit: 8a3545329a58e446672181cfed2083f850e1ad14
+ms.openlocfilehash: 21573f1f8bd49782739027f7dfc2034bb7501a2f
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71814335"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72535981"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>Afficher la pile des appels et utiliser la fenêtre pile des appels dans le débogueur
 
@@ -96,11 +96,11 @@ Le code non-utilisateur est un code qui n’est pas affiché lorsque [uniquement
 
 Dans Visual Studio Enterprise (uniquement), vous pouvez afficher les cartes de code pour la pile des appels pendant le débogage.
 
-- Dans la fenêtre **Pile des appels**, ouvrez le menu contextuel. Choisissez **afficher la pile des appels sur la carte du code** (**CTRL** + **Shift** +  **`** ).
+- Dans la fenêtre **Pile des appels**, ouvrez le menu contextuel. Choisissez **afficher la pile des appels sur la carte du code** (**Ctrl**  + **MAJ**  +  **`** ).
 
     Pour plus d’informations, consultez [mapper des méthodes sur la pile des appels pendant le débogage](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).
 
-![Afficher la pile d’appels sur la carte de code](../debugger/media/dbg_basics_show_call_stack_on_code_map.gif "ShowCallStackOnCodeMap")
+![Afficher la pile d’appels sur la carte du code](../debugger/media/dbg_basics_show_call_stack_on_code_map.gif "ShowCallStackOnCodeMap")
 
 ## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack-c-c-visual-basic-f"></a>Afficher le code machine d’une fonction dans la pile des appels (C#, C++, Visual Basic, F#)
 
@@ -108,11 +108,11 @@ Dans Visual Studio Enterprise (uniquement), vous pouvez afficher les cartes de c
 
 ## <a name="change-the-optional-information-displayed"></a>Modifier les informations facultatives affichées
 
-- Cliquez avec le bouton droit dans la fenêtre **pile des appels** et définissez ou désélectionnez **afficher l' \<** _les informations que vous souhaitez_ **>** .
+- Cliquez avec le bouton droit dans la fenêtre **pile des appels** et définissez ou désélectionnez **Afficher \<** _les informations que vous souhaitez_  **>** .
 
 ## <a name="bkmk_symbols"></a>Charger les symboles pour un moduleC#( C++,, Visual Basic F#,)
 
-Dans la fenêtre **Pile des appels**, vous pouvez charger des symboles de débogage pour du code qui ne possède actuellement aucun symbole chargé. Ces symboles peuvent être des symboles .NET Framework ou système téléchargés à partir des serveurs de symboles publics de Microsoft ou des symboles situés dans un chemin d’accès aux symboles sur l’ordinateur que vous déboguez.
+Dans la fenêtre **Pile des appels**, vous pouvez charger des symboles de débogage pour du code qui ne possède actuellement aucun symbole chargé. Ces symboles peuvent être des symboles .NET ou système téléchargés à partir des serveurs de symboles publics Microsoft, ou des symboles dans un chemin d’accès aux symboles sur l’ordinateur que vous déboguez.
 
 Consultez [Spécifier les fichiers de symbole (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 

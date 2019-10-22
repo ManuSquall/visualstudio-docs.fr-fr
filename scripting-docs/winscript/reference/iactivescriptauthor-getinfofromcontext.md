@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::GetInfoFromContext | Microsoft Docs
+title: 'IActiveScriptAuthor :: GetInfoFromContext | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e4fe885e116019608dd8d748c3cbdaff5d31dd2a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 457b2ad1bda3226caf3604e3ccd6b976f01bca83
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935384"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576209"
 ---
 # <a name="iactivescriptauthorgetinfofromcontext"></a>IActiveScriptAuthor::GetInfoFromContext
-Retourne type d’informations et les positions d’ancrage pour un caractère donné dans un bloc de code. Fournit des informations de membre IntelliSense, des listes globales et des conseils sur les paramètres.  
+Retourne des informations de type et des positions d’ancrage pour un caractère donné dans un bloc de code. Il fournit des informations sur IntelliSense, les listes globales et les conseils sur les paramètres de membre.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -46,62 +46,62 @@ HRESULT GetInfoFromContext(
   
 #### <a name="parameters"></a>Paramètres  
  `pszCode`  
- [in] L’adresse de la chaîne de bloc de code utilisée pour générer les résultats d’informations.  
+ dans Adresse de la chaîne de bloc de code utilisée pour générer les résultats des informations.  
   
  `cchCode`  
- [in] La longueur du bloc de code.  
+ dans Longueur du bloc de code.  
   
  `ichCurrentPosition`  
- [in] La position du caractère par rapport au début du bloc.  
+ dans Position du caractère par rapport au début du bloc.  
   
  `dwListTypesRequested`  
- [in] Les types de liste demandées. Peut être une combinaison des valeurs suivantes :  
+ dans Types de liste demandés. Peut être une combinaison des valeurs suivantes :  
   
-|Constante|Value|Description|  
+|Constante|valeur|Description|  
 |--------------|-----------|-----------------|  
 |SCRIPT_CMPL_NOLIST|0x0000|Aucune liste.|  
 |SCRIPT_CMPL_MEMBERLIST|0x0001|Liste des membres.|  
 |SCRIPT_CMPL_ENUMLIST|0x0002|Liste d’énumération.|  
-|SCRIPT_CMPL_PARAMLIST|0x0004|Appelez la liste de paramètres de méthode.|  
+|SCRIPT_CMPL_PARAMLIST|0x0004|Liste des paramètres de la méthode d’appel.|  
 |SCRIPT_CMPL_GLOBALLIST|0x0008|Liste globale.|  
   
- Le type SCRIPT_CMPL_GLOBALLIST est traité comme un élément de saisie semi-automatique par défaut qui peut être combiné à l’aide de l’opérateur OR avec d’autres éléments de saisie semi-automatique. Le script du moteur de création de tout d’abord essaie de remplir les informations de type pour les autres éléments de liste de saisie semi-automatique. Si cette tentative échoue, le moteur remplit pour SCRIPT_CMPL_GLOBALLIST.  
+ Le type SCRIPT_CMPL_GLOBALLIST est traité comme un élément de saisie semi-automatique par défaut qui peut être combiné à l’aide de l’opérateur OR avec d’autres éléments de saisie semi-automatique. Le moteur de création de script tente d’abord de remplir les informations de type pour d’autres éléments de la liste de saisie semi-automatique. En cas d’échec, le moteur remplit SCRIPT_CMPL_GLOBALLIST.  
   
  `pdwListTypesProvided`  
- [out] Le type de la liste fournie.  
+ à Type de liste fourni.  
   
  `pichListAnchorPosition`  
- [out] Index de début du contexte qui contient la position actuelle. L’index de début est par rapport au début du bloc.  
+ à Index de début du contexte qui contient la position actuelle. L’index de début est relatif au début du bloc.  
   
- Ce champ est renseigné uniquement lorsque `dwListTypesRequested` inclut SCRIPT_CMPL_MEMBERLIST, SCRIPT_CMPL_ENUMLIST ou SCRIPT_CMPL_GLOBALLIST. Pour les autres types de liste demandée, le résultat est indéfini.  
+ Elle est remplie uniquement lorsque `dwListTypesRequested` comprend SCRIPT_CMPL_MEMBERLIST, SCRIPT_CMPL_ENUMLIST ou SCRIPT_CMPL_GLOBALLIST. Pour les autres types de listes demandés, le résultat n’est pas défini.  
   
  `pichFuncAnchorPosition`  
- [out] Index de début de l’appel de fonction qui contient la position actuelle. L’index de début est par rapport au début du bloc.  
+ à Index de début de l’appel de fonction qui contient la position actuelle. L’index de début est relatif au début du bloc.  
   
- Ce champ est renseigné uniquement lorsque le contexte qui contient la position actuelle est un appel de fonction et lorsque `dwListTypesRequested` inclut SCRIPT_CMPL_PARAMLIST. Sinon, le résultat est indéfini.  
+ Cela est rempli uniquement lorsque le contexte qui contient la position actuelle est un appel de fonction et lorsque `dwListTypesRequested` inclut SCRIPT_CMPL_PARAMLIST. Dans le cas contraire, le résultat n’est pas défini.  
   
  `pmemid`  
- [out] L’ID de membre de la fonction, comme défini par un type dans le `IProvideMultipleClassInfo``ppunk` paramètre out.  
+ à MEMBERID de la fonction, tel que défini par un type dans le paramètre `IProvideMultipleClassInfo``ppunk` out.  
   
- Ce champ est renseigné uniquement lorsque `dwListTypesRequested` inclut SCRIPT_CMPL_PARAMLIST.  
+ Elle est remplie uniquement lorsque `dwListTypesRequested` comprend SCRIPT_CMPL_PARAMLIST.  
   
  `piCurrentParameter`  
- [out] L’index du paramètre qui contient la position actuelle. Si la position actuelle est sur le nom de fonction, -1 est retourné.  
+ à Index du paramètre qui contient la position actuelle. Si la position actuelle est sur le nom de la fonction,-1 est retourné.  
   
- Le `piCurrentParameter` valeur est remplie uniquement lorsque `dwListTypesRequested` inclut SCRIPT_CMPL_PARAMLIST.  
+ La valeur `piCurrentParameter` est remplie uniquement lorsque `dwListTypesRequested` comprend SCRIPT_CMPL_PARAMLIST.  
   
  `ppunk`  
- Les informations de type, qui sont fournies sous la forme d’un `IProvideMultipleClassInfo` objet.  
+ Informations de type, fournies sous la forme d’un objet `IProvideMultipleClassInfo`.  
   
 ## <a name="return-value"></a>Valeur de retour  
  Élément `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
 ## <a name="remarks"></a>Notes  
   
 ## <a name="see-also"></a>Voir aussi  
- [IProvideMultipleClassInfo Interface](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.ole.interop.iprovidemultipleclassinfo)   
+ @No__t_1 de l' [interface IProvideMultipleClassInfo](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.ole.interop.iprovidemultipleclassinfo)  
  [Interface IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)

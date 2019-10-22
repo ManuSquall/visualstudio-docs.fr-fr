@@ -1,21 +1,21 @@
 ---
-title: 'Test de charge : Définir le pourcentage d’utilisateurs virtuels à l’aide des données du cache web'
+title: 'Test de charge : définir le pourcentage d’utilisateur virtuel à l’aide des données du cache Web'
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - load tests, virtual users
 ms.assetid: f66d5d43-4121-4487-b27f-d0a0baaf7601
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f436573712ff228244a40e5199f2f5a4b4326c5e
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
-ms.translationtype: HT
+ms.openlocfilehash: bc8baf2586e0c0ce682436387bfd612af14e18bd
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66431869"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653380"
 ---
-# <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>Procédure : spécifier le pourcentage d’utilisateurs virtuels qui utilisent les données du cache web
+# <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>Guide pratique pour spécifier le pourcentage des utilisateurs virtuels qui utilisent les données du cache web
 
 Après avoir créé votre test de charge avec **l’Assistant Nouveau test de charge**, vous pouvez modifier les propriétés des scénarios en fonction de vos besoins et de vos objectifs de test avec **l’Éditeur de test de charge**. Pour obtenir une liste complète des propriétés des scénarios de test de charge et leurs descriptions, consultez [Propriétés du scénario de test de charge](../test/load-test-scenario-properties.md).
 
@@ -34,22 +34,22 @@ Si vous exécutez un test de charge sur un site web présentant un nombre signif
 
 1. Ouvrez un test de charge.
 
-     L’**éditeur de test de charge** s’affiche. L'arborescence du test de charge s'affiche.
+     **L’Éditeur de test de charge** s’affiche. L'arborescence du test de charge s'affiche.
 
 2. Dans le dossier **Scénarios** des arborescences du test de charge, choisissez le nœud de scénario pour lequel vous voulez modifier le pourcentage de nouveaux utilisateurs.
 
-3. Dans le menu **Affichage**, sélectionnez **Fenêtre Propriétés**.
+3. Dans le menu **Affichage**, sélectionnez la fenêtre **Propriétés**.
 
      Les catégories et les propriétés du scénario sont affichées dans la fenêtre **Propriétés**.
 
 4. Définissez la valeur de la propriété **Pourcentage de nouveaux utilisateurs** en entrant un nombre pour le pourcentage de nouveaux utilisateurs.
 
-5. Après avoir changé la propriété, choisissez **Enregistrer** dans le menu **Fichier**. Vous pouvez ensuite exécuter votre test de charge en utilisant la nouvelle valeur de **Pourcentage de nouveaux utilisateurs**.
+5. Après avoir fini de changer la propriété, choisissez **Enregistrer** dans le menu **Fichier**. Vous pouvez ensuite exécuter votre test de charge en utilisant la nouvelle valeur de **Pourcentage de nouveaux utilisateurs**.
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Modifier les scénarios de test de charge](../test/edit-load-test-scenarios.md)
-- [Procédure pas à pas : créer et exécuter un test de charge](../test/walkthrough-create-and-run-a-load-test.md)
+- [Procédure pas à pas : Créer et exécuter un test de charge](../test/walkthrough-create-and-run-a-load-test.md)
 - [Contrôleurs de test et agents de test](configure-test-agents-and-controllers-for-load-tests.md)
 - [Propriétés des scénarios de test de charge](../test/load-test-scenario-properties.md)
 - [Modifier les modèles de charge en modèle d’activités des utilisateurs virtuels](../test/edit-load-patterns-to-model-virtual-user-activities.md)

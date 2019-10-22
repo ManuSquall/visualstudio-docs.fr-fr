@@ -1,5 +1,5 @@
 ---
-title: IProcessDebugManager::GetDefaultApplication | Microsoft Docs
+title: 'IProcessDebugManager :: GetDefaultApplication | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6fec84a60863b426f2f65c26e2375262b109d635
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b3532177c32e0d7eb0b7a67a445845cee753d316
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953970"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576794"
 ---
 # <a name="iprocessdebugmanagergetdefaultapplication"></a>IProcessDebugManager::GetDefaultApplication
-Retourne un objet d’application par défaut pour le processus actuel.  
+Retourne un objet d’application par défaut pour le processus en cours.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -37,19 +37,19 @@ HRESULT GetDefaultApplication(
   
 #### <a name="parameters"></a>Paramètres  
  `ppda`  
- [out] L’objet d’application de débogage pour cette application.  
+ à Objet d’application de débogage pour cette application.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode crée un nouvel objet d’application de débogage et l’ajoute à l’exécution liste d’applications, si nécessaire.  
+ Cette méthode crée un nouvel objet d’application de débogage et l’ajoute à la liste des applications en cours d’exécution, si nécessaire.  
   
- Moteurs de langage doivent utiliser l’application spécifiée par la `GetDefaultApplication` méthode s’ils s’exécutent sur un ordinateur hôte qui ne fournit pas d’une application.  
+ Les moteurs de langage doivent utiliser l’application spécifiée par la méthode `GetDefaultApplication` s’ils s’exécutent sur un hôte qui ne fournit pas d’application.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IProcessDebugManager](../../winscript/reference/iprocessdebugmanager-interface.md)

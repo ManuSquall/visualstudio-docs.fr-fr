@@ -19,24 +19,24 @@ helpviewer_keywords:
 - views, changing mode
 - views, outlining
 ms.assetid: 1fb48027-d870-439f-8b72-4a0321390748
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39873fdd1bc41b32a69909a1061ec3fc7fb63b67
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
-ms.translationtype: HT
+ms.openlocfilehash: fd3e238813c6cfd8674e5392d9ad20889e79c900
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531904"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645851"
 ---
-# <a name="how-to-manage-editor-modes"></a>Procédure : Gérer les modes de l’éditeur
+# <a name="how-to-manage-editor-modes"></a>Guide pratique pour gérer les modes de l’éditeur
 
 Vous pouvez afficher l’éditeur de code Visual Studio dans différents modes d’affichage.
 
 > [!NOTE]
-> Les boîtes de dialogue et les commandes de menu qui s’affichent peuvent être différentes de celles qui sont décrites dans cet article, en fonction de vos paramètres actifs ou de l’édition utilisée. Pour modifier vos paramètres, par exemple pour définir les paramètres **Général** ou **Visual C++**, choisissez **Outils** > **Importation et exportation de paramètres**, puis choisissez **Réinitialiser tous les paramètres**.
+> Les boîtes de dialogue et les commandes de menu qui s’affichent peuvent être différentes de celles qui sont décrites dans cet article, en fonction de vos paramètres actifs ou de l’édition utilisée. Pour modifier vos paramètres, par exemple pour définir les paramètres **Général** ou **Visual C++** , choisissez **Outils** > **Importation et exportation de paramètres**, puis choisissez **Réinitialiser tous les paramètres**.
 
 ## <a name="enable-full-screen-mode"></a>Activer le mode Plein écran
 

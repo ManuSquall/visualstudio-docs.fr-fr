@@ -4,19 +4,19 @@ ms.date: 10/05/2015
 ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateIntelliTest
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: c9670182432b1c6bc1e763e014b04b193c399330
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: cd808e23fbb94259df0805125e7d6f3e27dbaeac
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461217"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72664901"
 ---
-# <a name="how-to-generate-unit-tests-by-using-intellitest"></a>Procédure : Générer des tests unitaires avec IntelliTest
+# <a name="how-to-generate-unit-tests-by-using-intellitest"></a>Comment : générer des tests unitaires à l’aide de IntelliTest
 
 IntelliTest explore votre code .NET pour générer des données de test et une suite de tests unitaires. Pour chaque instruction dans le code, une entrée de test est générée pour exécuter cette instruction. Une analyse de cas est effectuée pour chaque branche conditionnelle dans le code. Par exemple, les instructions `if`, les assertions et toutes les opérations susceptibles de lever des exceptions sont analysées. Cette analyse vous permet de générer des données de test pour établir un test unitaire paramétré pour chacune de vos méthodes et de bénéficier d'une couverture de code élevée.
 
@@ -34,7 +34,7 @@ Les commandes de menu **Créer IntelliTest** et **Exécuter IntelliTest** :
 
 * ne prennent pas en charge la configuration x64.
 
-## <a name="explore-use-intellitest-to-explore-your-code-and-generate-unit-tests"></a>Exploration : Utiliser IntelliTest pour explorer votre code et générer des tests unitaires
+## <a name="explore-use-intellitest-to-explore-your-code-and-generate-unit-tests"></a>Exploration : utiliser IntelliTest pour explorer votre code et générer des tests unitaires
 
 Pour générer des tests unitaires, vos types doivent être publics.
 
@@ -54,7 +54,7 @@ Pour générer des tests unitaires pour toutes les méthodes publiques d’une c
 
 Pour les tests réussis, vérifiez que les résultats indiqués dans la colonne des résultats correspondent bien à vos attentes. Pour les tests qui échouent, corrigez votre code comme il convient. Réexécutez IntelliTest pour valider les corrections.
 
-## <a name="persist-save-the-unit-tests-as-a-regression-suite"></a>Persistance : Enregistrer les tests unitaires comme une suite de régression
+## <a name="persist-save-the-unit-tests-as-a-regression-suite"></a>Persistance : enregistrer les tests unitaires comme une suite de régression
 
 1. Sélectionnez les lignes de données que vous souhaitez enregistrer avec le test unitaire paramétrable dans un projet de test.
 
@@ -68,7 +68,7 @@ Pour les tests réussis, vérifiez que les résultats indiqués dans la colonne 
 
      Si le code de la méthode change, relancez IntelliTest pour synchroniser les tests unitaires avec les changements.
 
-## <a name="assist-use-intellitest-to-focus-code-exploration"></a>Assistance : Utiliser IntelliTest pour vous concentrer sur l’exploration du code
+## <a name="assist-use-intellitest-to-focus-code-exploration"></a>Assistance : utiliser IntelliTest pour vous concentrer sur l'exploration du code
 
 1. Si vous avez du code plus complexe, IntelliTest vous aide à vous concentrer sur l'exploration de votre code. Par exemple, si vous avez une méthode avec une interface comme paramètre et que plusieurs classes implémentent cette interface, IntelliTest découvre ces classes et génère un avertissement.
 
@@ -88,19 +88,19 @@ Pour les tests réussis, vérifiez que les résultats indiqués dans la colonne 
 
      ![Réexécuter IntelliTest pour générer les données de test](../test/media/pexwarningsfixed.png)
 
-## <a name="specify-use-intellitest-to-validate-correctness-properties-that-you-specify-in-code"></a>Spécification : Utiliser IntelliTest pour valider les propriétés de correction que vous spécifiez dans le code
+## <a name="specify-use-intellitest-to-validate-correctness-properties-that-you-specify-in-code"></a>Spécification : utiliser IntelliTest pour vérifier les propriétés définies pour la validation que vous spécifiez dans le code
 
 Spécifiez la relation générale entre les entrées et les sorties que les tests unitaires générés doivent valider. Cette spécification est encapsulée dans une méthode qui ressemble à une méthode de test, mais qui est quantifiée de façon universelle. Il s'agit de la méthode de test unitaire paramétré, et les assertions que vous faites doivent contenir toutes les valeurs d'entrée possibles qu'IntelliTest peut générer.
 
-## <a name="q--a"></a>Questions et réponses
+## <a name="q--a"></a>Q et R
 
-### <a name="q-can-you-use-intellitest-for-unmanaged-code"></a>Q : Pouvez-vous utiliser IntelliTest pour du code non managé ?
+### <a name="q-can-you-use-intellitest-for-unmanaged-code"></a>Q : Pouvez-vous utiliser IntelliTest pour du code non managé ?
 
-**R :** Non, IntelliTest fonctionne uniquement avec du code managé.
+**Q :** Non, IntelliTest ne fonctionne qu'avec du code managé.
 
-### <a name="q-when-does-a-generated-test-pass-or-fail"></a>Q : Qu’est-ce qui détermine la réussite ou l’échec d’un test généré ?
+### <a name="q-when-does-a-generated-test-pass-or-fail"></a>Q : Qu'est-ce qui détermine la réussite ou l'échec d'un test généré ?
 
-**R :** Comme tout autre test unitaire, il réussit si aucune exception ne se produit. Il échoue en cas d'échec d'une assertion ou si le code testé lève une exception non gérée.
+**R :** Comme tout autre test unitaire, il réussit si aucune exception ne se produit. Il échoue en cas d'échec d'une assertion ou si le code testé lève une exception non gérée.
 
 Si vous avez un test qui peut réussir en dépit de certaines exceptions, vous pouvez définir l'un des attributs suivants en fonction de vos besoins au niveau de la méthode de test, de la classe de test ou de l'assembly :
 
@@ -112,25 +112,25 @@ Si vous avez un test qui peut réussir en dépit de certaines exceptions, vous p
 
 - **PexAllowedExceptionFromAssemblyAttribute**
 
-### <a name="q-can-i-add-assumptions-to-the-parameterized-unit-test"></a>Q : puis-je ajouter des hypothèses au test unitaire paramétrable ?
+### <a name="q-can-i-add-assumptions-to-the-parameterized-unit-test"></a>Q : Puis-je ajouter des hypothèses au test unitaire paramétrable ?
 
-**R :** Oui, utilisez des hypothèses afin de spécifier les données de test non nécessaires pour le test unitaire d’une méthode spécifique. Utilisez la classe <xref:Microsoft.Pex.Framework.PexAssume> pour ajouter des hypothèses. Par exemple, vous pouvez ajouter une hypothèse selon laquelle la variable `lengths` n’a pas la valeur NULL, comme ceci :
+**R :** Oui, utilisez des hypothèses pour spécifier les données de test non requises pour le test unitaire d'une méthode spécifique. Utilisez la classe <xref:Microsoft.Pex.Framework.PexAssume> pour ajouter des hypothèses. Par exemple, vous pouvez ajouter une hypothèse selon laquelle la variable `lengths` n’a pas la valeur NULL, comme ceci :
 
 `PexAssume.IsNotNull(lengths);`
 
 Si vous ajoutez une hypothèse et que vous relancez IntelliTest, les données de test qui ne sont plus adéquates sont supprimées.
 
-### <a name="q-can-i-add-assertions-to-the-parameterized-unit-test"></a>Q : puis-je ajouter des assertions au test unitaire paramétrable ?
+### <a name="q-can-i-add-assertions-to-the-parameterized-unit-test"></a>Q : Puis-je ajouter des assertions au test unitaire paramétrable ?
 
-**R :** Oui. IntelliTest vérifie que les assertions dans votre instruction sont correctes quand il exécute les tests unitaires. Utilisez la classe <xref:Microsoft.Pex.Framework.PexAssert> ou l'API d'assertion qui est fournie avec l'infrastructure de test pour ajouter des assertions. Par exemple, vous pouvez ajouter une assertion selon laquelle deux variables sont égales.
+**R :** Oui. IntelliTest vérifie que les assertions dans votre instruction sont correctes quand il exécute les tests unitaires. Utilisez la classe <xref:Microsoft.Pex.Framework.PexAssert> ou l'API d'assertion qui est fournie avec le framework de test pour ajouter des assertions. Par exemple, vous pouvez ajouter une assertion selon laquelle deux variables sont égales.
 
 `PexAssert.AreEqual(a, b);`
 
 Si vous ajoutez une assertion et que vous relancez IntelliTest, ce dernier vérifie que votre assertion est valide et le test échoue si elle ne l’est pas.
 
-### <a name="NoRun"></a> Q : Puis-je générer des tests unitaires paramétrables sans exécuter auparavant IntelliTest ?
+### <a name="NoRun"></a> Q : Puis-je générer des tests unitaires paramétrables sans auparavant exécuter IntelliTest ?
 
-**R :** Oui, cliquez avec le bouton droit sur la classe ou la méthode, puis choisissez **Créer IntelliTest**.
+**R :** Oui, cliquez avec le bouton droit sur la classe ou la méthode, puis choisissez **Créer IntelliTest**.
 
 ![Cliquer avec le bouton droit sur l’éditeur, choisir Créer IntelliTest](../test/media/pexcreateintellitest.png)
 
@@ -139,20 +139,17 @@ Acceptez le format par défaut pour générer vos tests ou modifiez la façon do
 ![Créer IntelliTest avec MSTest par défaut](../test/media/pexcreateintellitestmstest.png)
 
 <a name="extend-framework"></a>
-### <a name="q-can-i-use-other-unit-test-frameworks-with-intellitest"></a>Q : Puis-je utiliser d’autres frameworks de tests unitaires avec IntelliTest ?
+### <a name="q-can-i-use-other-unit-test-frameworks-with-intellitest"></a>Q : Puis-je utiliser d’autres frameworks de tests unitaires avec IntelliTest ?
 
-**R :** Oui, suivez ces étapes pour [rechercher et installer d’autres frameworks](../test/install-third-party-unit-test-frameworks.md).
-Les extensions de framework de test sont également disponibles dans Visual Studio Marketplace :
+**R :** Oui, suivez ces étapes pour [rechercher et installer d’autres infrastructures](../test/install-third-party-unit-test-frameworks.md).
+Les extensions de Framework de test sont également disponibles dans Visual Studio Marketplace, par exemple, [nunit Test Generator](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371).
 
-* [Extension NUnit pour les générateurs de tests](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371)
-* [Extension xUnit.net pour les générateurs de tests](https://marketplace.visualstudio.com/items?itemName=BradWilson.xUnitnetTestExtensions)
-
-Après avoir redémarré Visual Studio et rouvert votre solution, cliquez avec le bouton droit sur la classe ou la méthode, puis choisissez **Créer IntelliTest**. Sélectionnez l’infrastructure installée ici :
+Après avoir redémarré Visual Studio et rouvert votre solution, cliquez avec le bouton droit sur la classe ou la méthode, puis choisissez **Créer IntelliTest**. Sélectionnez le framework installé ici :
 
 ![Sélectionner un autre framework de test unitaire pour IntelliTest](../test/media/pexcreateintellitestextensions.png)
 
 Exécutez ensuite IntelliTest pour générer des tests unitaires individuels dans leurs fichiers *.g.cs* correspondants.
 
-### <a name="q-can-i-learn-more-about-how-the-tests-are-generated"></a>Q : Puis-je en savoir plus sur la façon dont les tests sont générés ?
+### <a name="q-can-i-learn-more-about-how-the-tests-are-generated"></a>Q : Puis-je en savoir plus sur la façon dont les tests sont générés ?
 
-**R :** Oui, pour obtenir une vue d’ensemble générale, lisez ce [billet de blog](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/).
+**R :** Oui, pour obtenir une vue d’ensemble globale, lisez ce [billet de blog](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/).

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText::GetLineOfPosition | Microsoft Docs
+title: 'IDebugDocumentText :: GetLineOfPosition | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4d5d33a68b4bc87307281e37ff96f84834257a22
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e8ce32e46c42ee864a88e169a79539efb8b05633
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970872"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572115"
 ---
 # <a name="idebugdocumenttextgetlineofposition"></a>IDebugDocumentText::GetLineOfPosition
 Retourne le numéro de ligne et, éventuellement, l’offset de caractère dans la ligne qui correspond à la position de caractère donnée.  
@@ -39,18 +39,18 @@ HRESULT GetLineOfPosition(
   
 #### <a name="parameters"></a>Paramètres  
  `cCharacterPosition`  
- [in] Emplacement de la plage de position de caractère de début.  
+ dans Emplacement de début de la plage de la position du caractère.  
   
  `pcLineNumber`  
- [out] Le numéro de ligne de la plage.  
+ à Numéro de ligne de la plage.  
   
  `pcCharacterOffsetInLine`  
- [in, out] L’offset de caractère de la plage dans la ligne `pcLineNumber`. Si ce paramètre est `NULL`, la méthode ne retourne pas de valeur.  
+ [in, out] Offset de caractère de la plage dans la ligne `pcLineNumber`. Si ce paramètre est `NULL`, la méthode ne retourne pas de valeur.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   

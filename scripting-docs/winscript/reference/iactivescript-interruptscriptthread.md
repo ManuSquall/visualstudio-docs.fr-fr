@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::InterruptScriptThread | Microsoft Docs
+title: 'IActiveScript :: InterruptScriptThread | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: aa46bc95087b3defaf739cc3473c58e29a93071c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a436f973df05b945c0939f3a593640f567774277
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935506"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577265"
 ---
 # <a name="iactivescriptinterruptscriptthread"></a>IActiveScript::InterruptScriptThread
-Interrompt l’exécution d’un thread en cours d’exécution de script (un récepteur d’événements, une exécution immédiate ou un appel de macro). Cette méthode peut être utilisée pour mettre fin à un script qui est bloqué (par exemple, dans une boucle infinie). Elle peut être appelée à partir de threads de base autre sans résultant dans une légende de base autre à des objets de l’hôte ou à la [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) (méthode).  
+Interrompt l’exécution d’un thread de script en cours d’exécution (un récepteur d’événements, une exécution immédiate ou un appel de macro). Cette méthode peut être utilisée pour mettre fin à un script qui est bloqué (par exemple, dans une boucle infinie). Il peut être appelé à partir de threads non de base sans entraîner la non-exécution d’un appel de base pour héberger des objets ou la méthode [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) .  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -39,34 +39,34 @@ HRESULT InterruptScriptThread(
   
 #### <a name="parameters"></a>Paramètres  
  `stidThread`  
- [in] Identificateur du thread à interruption ou à des valeurs d’identificateur de thread spéciales suivantes :  
+ dans Identificateur du thread à interrompre, ou l’une des valeurs d’identificateur de thread spéciales suivantes :  
   
-|Value|Signification|  
+|valeur|Signification|  
 |-----------|-------------|  
-|SCRIPTTHREADID_ALL|Tous les threads. L’interruption est appliquée à toutes les méthodes de script en cours. Notez que, sauf si l’appelant a demandé que le script déconnectés, l’événement de script suivant, le code de script à exécuter à nouveau en appelant le [IActiveScript::SetScriptState](../../winscript/reference/iactivescript-setscriptstate.md) méthode avec le SCRIPTSTATE_DISCONNECTED ou L’indicateur SCRIPTSTATE_INITIALIZED défini.|  
-|SCRIPTTHREADID_BASE|Le thread de base ; Autrement dit, le thread dans lequel le script du moteur a été instancié.|  
-|SCRIPTTHREADID_CURRENT|Le thread en cours d’exécution.|  
+|SCRIPTTHREADID_ALL|Tous les threads. L’interruption est appliquée à toutes les méthodes de script actuellement en cours. Notez que, sauf si l’appelant a demandé que le script soit déconnecté, l’événement script suivant entraîne une nouvelle exécution du code de script en appelant la méthode [IActiveScript :: SetScriptState](../../winscript/reference/iactivescript-setscriptstate.md) avec l’indicateur SCRIPTSTATE_DISCONNECTED ou SCRIPTSTATE_INITIALIZED définie.|  
+|SCRIPTTHREADID_BASE|Thread de base ; autrement dit, le thread dans lequel le moteur de script a été instancié.|  
+|SCRIPTTHREADID_CURRENT|Thread en cours d’exécution.|  
   
  `pexcepinfo`  
- [in] Adresse d’un `EXCEPINFO` structure contenant les informations d’erreur qui doivent être signalées au script abandonné.  
+ dans Adresse d’une structure `EXCEPINFO` contenant les informations d’erreur qui doivent être signalées au script abandonné.  
   
  `dwFlags`  
- [in] Indicateurs d’option associés à l’interruption. Peut avoir l'une des valeurs suivantes :  
+ dans Indicateurs d’option associés à l’interruption. Peut avoir l'une des valeurs suivantes :  
   
-|Value|Signification|  
+|valeur|Signification|  
 |-----------|-------------|  
-|SCRIPTINTERRUPT_DEBUG|Si la prise en charge, entrez le débogueur du moteur de script au point de l’exécution de script actuel.|  
-|SCRIPTINTERRUPT_RAISEEXCEPTION|Si la prise en charge par le langage de script du moteur, laisser le script de gérer l’exception. Sinon, la méthode de script est abandonnée et le code d’erreur est retourné à l’appelant ; Autrement dit, l’événement source ou la macro demandeur.|  
+|SCRIPTINTERRUPT_DEBUG|En cas de prise en charge, entrez le débogueur du moteur de script au point d’exécution de script actuel.|  
+|SCRIPTINTERRUPT_RAISEEXCEPTION|S’il est pris en charge par le langage du moteur de script, laissez le script gérer l’exception. Dans le cas contraire, la méthode de script est abandonnée et le code d’erreur est retourné à l’appelant. autrement dit, la source de l’événement ou le demandeur de macro.|  
   
 ## <a name="return-value"></a>Valeur de retour  
- Retourne une des valeurs suivantes :  
+ Retourne l’une des valeurs suivantes :  
   
 |Valeur de retour|Signification|  
 |------------------|-------------|  
 |`S_OK`|Opération réussie.|  
 |`E_INVALIDARG`|Un argument n’est pas valide.|  
 |`E_POINTER`|Un pointeur non valide a été spécifié.|  
-|`E_UNEXPECTED`|L’appel n’était pas attendu (par exemple, le moteur de script n'a pas encore été chargé ou initialisé).|  
+|`E_UNEXPECTED`|L’appel n’était pas attendu (par exemple, le moteur de script n’a pas encore été chargé ou initialisé).|  
   
 ## <a name="see-also"></a>Voir aussi  
  [IActiveScript](../../winscript/reference/iactivescript.md)

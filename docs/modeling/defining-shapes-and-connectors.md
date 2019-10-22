@@ -2,25 +2,25 @@
 title: Définition de formes et de connecteurs
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a24e447e5ec0b65635f7184bd0ae19b305edfdf8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d715f6ac9fe2ac06f0f1f35c9319093d8257dc8d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62994620"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653917"
 ---
-# <a name="define-shapes-and-connectors"></a>Définir des formes et connecteurs
+# <a name="define-shapes-and-connectors"></a>Définir des formes et des connecteurs
 
 Il existe plusieurs types élémentaires de formes que vous pouvez utiliser pour afficher les informations sur le diagramme d'un langage spécifique à un domaine (DSL).
 
-## <a name="shapeTypes"></a> Types de base de formes et connecteurs
+## <a name="shapeTypes"></a>Types de base de formes et de connecteurs
 
-Un diagramme DSL affiche une collection de *formes* reliées par des lignes ou *connecteurs*. En règle générale, sans que ce soit systématique :
+Un diagramme DSL illustre une collection de *formes* reliées par des lignes ou des *connecteurs*. En règle générale, sans que ce soit systématique :
 
 - Les formes sont la représentation visible d'éléments de modèle.
 
@@ -36,7 +36,7 @@ Les types de formes suivants sont disponibles :
 
 |Type de forme|Description|
 |-|-|
-|Forme géométrique|Forme rectangulaire ou elliptique à caractère général. Vous pouvez afficher les décorateurs de texte et d'icône à des positions spécifiques par rapports aux limites de la forme. Vous pouvez également imbriquer des formes à l’intérieur des formes géométriques.|
+|Forme géométrique|Forme rectangulaire ou elliptique à caractère général. Vous pouvez afficher les décorateurs de texte et d'icône à des positions spécifiques par rapports aux limites de la forme. Vous pouvez également imbriquer des formes dans des formes géométriques.|
 |Forme de compartiment|Rectangle contenant un en-tête et des compartiments, comme une classe UML. Chaque compartiment peut contenir une liste de lignes de texte.<br /><br /> Les lignes représentent généralement les éléments incorporés sous l'élément représenté par la forme. À titre d'exemple, créez un DSL à partir du modèle de solution Diagrammes de classes.|
 |Forme image|Forme qui affiche une image.|
 |Forme port|Petit rectangle destiné à être attaché au contour d'une autre forme. Généralement utilisé dans les modèles de composants.<br /><br /> L'élément de modèle représenté par un port est généralement incorporé sous l'élément représenté par la forme parente. À titre d'exemple, créez un DSL à partir du modèle de solution Composants.<br /><br /> Par défaut, une forme port peut glisser le long des côtés de sa forme parente. Vous pouvez définir une règle des limites pour la contraindre à un emplacement particulier.<br /><br /> En rendant une forme port très petite et transparente, vous pouvez l'utiliser pour fournir un point de connexion fixe sur la surface de sa forme parente.|

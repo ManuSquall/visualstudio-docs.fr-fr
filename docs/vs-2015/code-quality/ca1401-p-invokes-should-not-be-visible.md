@@ -1,5 +1,5 @@
 ---
-title: 'CA1401 : P-Invoke ne doit pas être visible | Microsoft Docs'
+title: 'Ca1401 : les appels P ne doivent pas être visibles | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - PInvokesShouldNotBeVisible
 ms.assetid: 0f4d96c1-f9de-414e-b223-4dc7f691bee3
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ee4afd777f46087a7497dbdf4734e4ced52f47d4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f3f867f14f7a2eca4482f1f8d5fb48149f02f43f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68200325"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661355"
 ---
 # <a name="ca1401-pinvokes-should-not-be-visible"></a>CA1401 : Les P/Invoke ne doivent pas être visibles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,14 +29,14 @@ ms.locfileid: "68200325"
 |-|-|
 |TypeName|PInvokesShouldNotBeVisible|
 |CheckId|CA1401|
-|Catégorie|Microsoft.Interoperability|
+|Category|Microsoft. Interoperability|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
- Une méthode publique ou protégée dans un type public a le <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> attribut (également implémenté par le `Declare` mot clé dans [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]).
+ Une méthode publique ou protégée dans un type public a l’attribut <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> (également implémenté par le mot clé `Declare` dans [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]).
 
 ## <a name="rule-description"></a>Description de la règle
- Les méthodes marquées avec le <xref:System.Runtime.InteropServices.DllImportAttribute> attribut (ou les méthodes qui sont définies à l’aide de la `Declare` mot clé dans [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) Platform Invocation Services permet d’accéder au code non managé. De telles méthodes ne doivent pas être exposées. En gardant ces méthodes privées ou internes, vous vous assurer que votre bibliothèque ne peut pas être utilisée de violation de sécurité en autorisant l’accès à des API non managées qu’ils ne peuvent pas appeler sinon les appelants.
+ Les méthodes marquées avec l’attribut <xref:System.Runtime.InteropServices.DllImportAttribute> (ou les méthodes définies à l’aide du mot clé `Declare` dans [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) utilisent les services d’appel de code non managé pour accéder au code non managé. De telles méthodes ne doivent pas être exposées. En gardant ces méthodes privées ou internes, vous vous assurez que votre bibliothèque ne peut pas être utilisée pour enfreindre la sécurité en permettant aux appelants d’accéder à des API non managées qu’ils n’ont pas pu appeler autrement.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, modifiez le niveau d’accès de la méthode.

@@ -1,21 +1,21 @@
 ---
-title: 'Procédure : Créer un nuanceur de couleur de base'
+title: 'Comment : créer un nuanceur de couleur de base'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c301328a-079a-49e8-b688-4749c01657c0
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f15bba37f5a03da934fae9ba4689da7775cfdb92
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: db97199518d4f7f023696b085d0f66dc81394511
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844864"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72636408"
 ---
-# <a name="how-to-create-a-basic-color-shader"></a>Procédure : Créer un nuanceur de couleur de base
+# <a name="how-to-create-a-basic-color-shader"></a>Guide pratique pour créer un nuanceur de couleur de base
 
 Cet article montre comment utiliser le concepteur Shader et DGSL (Directed Graph Shader Language) pour créer un nuanceur de couleurs simples. Ce nuanceur définit la couleur finale sur une valeur de couleur RVB de constante.
 
@@ -23,7 +23,7 @@ Cet article montre comment utiliser le concepteur Shader et DGSL (Directed Graph
 
 Vous pouvez implémenter un nuanceur de couleur plat en écrivant la valeur de couleur d’une constante de couleur RVB sur la couleur de sortie finale.
 
-Avant de commencer, assurez-vous que la fenêtre **Propriétés** et la **Boîte à outils** sont affichées.
+Avant de commencer, veillez à ce que la fenêtre **Propriétés** et la **Boîte à outils** soient affichées.
 
 1. Créez un shader DGSL à utiliser. Pour plus d’informations sur l’ajout d’un nuanceur DGSL à votre projet, consultez la section Prise en main de l’article [Concepteur de nuanceur](../designers/shader-designer.md).
 
@@ -46,7 +46,7 @@ Certaines formes peuvent fournir de meilleurs aperçus pour certains nuanceurs. 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Guide pratique pour appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Guide pratique pour appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [Guide pratique pour exporter un nuanceur](../designers/how-to-export-a-shader.md)
-- [Concepteur Shader](../designers/shader-designer.md)
+- [Concepteur de nuanceur](../designers/shader-designer.md)
 - [Nœuds du concepteur Shader](../designers/shader-designer-nodes.md)

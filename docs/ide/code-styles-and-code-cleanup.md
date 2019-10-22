@@ -2,20 +2,20 @@
 title: Options de style de code et de nettoyage du code
 ms.date: 04/25/2019
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Code_Style.General
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c7bb8f3e94a761023a19a5ea3361073b73d9f3b
-ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
-ms.translationtype: HT
+ms.openlocfilehash: 1d653898e6c6a8ab856a5b7763d12fd793708b9f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68822435"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72631104"
 ---
 # <a name="code-style-preferences"></a>Préférences de style de code
 
@@ -82,7 +82,7 @@ La première fois que vous déclenchez la commande **Mettre en forme le document
 
 ::: moniker range=">=vs-2019"
 
-Pour les fichiers de code C#, Visual Studio 2019 a un bouton **Nettoyage du code** en bas de l’éditeur (clavier : **Ctrl**+**K**, **Ctrl**+**E**) pour appliquer des styles de code à partir d’un fichier EditorConfig ou de la page d’options **Style de code** . S’il existe un fichier *.editorconfig* pour le projet, ces paramètres sont prioritaires.
+Pour C# les fichiers de code, Visual Studio 2019 a un bouton de **nettoyage de code** en bas de l’éditeur (clavier : **ctrl** +**K**, **CTRL** +**E**) pour appliquer des styles de code à partir d’un fichier EditorConfig ou du **style de code** page d’options. S’il existe un fichier *.editorconfig* pour le projet, ces paramètres sont prioritaires.
 
 ![Exécuter le nettoyage du code dans Visual Studio 2019](media/execute-code-cleanup.png)
 

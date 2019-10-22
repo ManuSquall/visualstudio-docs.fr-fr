@@ -1,23 +1,23 @@
 ---
-title: 'Procédure pas à pas : Génération de Code à l’aide de modèles de texte'
+title: "Procédure pas à pas : génération de code à l'aide de modèles de texte"
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs [text templates], generating application code
 - walkthroughs [text templates]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 042d6b6c59489abcfbdcdd4dd10055ea4dedfff5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6650edfc3c953d54578b800e213ee27092045e56
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934325"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666934"
 ---
-# <a name="walkthrough-generate-code-by-using-text-templates"></a>Procédure pas à pas : Générer du code à l’aide de modèles de texte
+# <a name="walkthrough-generate-code-by-using-text-templates"></a>Procédure pas à pas : générer du code à l’aide de modèles de texte
 
 La génération de code vous permet de générer du code de programme qui est fortement typé mais peut être facilement modifié quand le modèle source change. Comparez ceci avec l’autre technique consistant à écrire un programme complètement générique qui accepte un fichier de configuration, qui est plus flexible mais génère du code qui n’est pas aussi facile à lire et à modifier et n’offre pas d’aussi bonnes performances. Cette procédure pas à pas montre les avantages offerts par la génération de code.
 
@@ -28,7 +28,7 @@ L’espace de noms System.Xml fournit des outils complets pour charger un docume
 Dans cet exemple de projet, un modèle lit un exemple de fichier XML et génère des classes qui correspondent à chaque type de nœud. Dans le code écrit manuellement, vous pouvez utiliser ces classes pour parcourir le fichier XML. Vous pouvez également exécuter votre application sur tout autre fichier qui utilise les mêmes types de nœuds. L’objectif de l’exemple de fichier XML est de fournir des exemples de tous les types de nœuds que vous souhaitez que votre application puisse gérer.
 
 > [!NOTE]
-> L’application [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765), qui est fourni avec Visual Studio, peut générer des classes fortement typées à partir de fichiers XML. Le modèle présenté ici est fourni comme exemple.
+> L’application [xsd. exe](http://go.microsoft.com/fwlink/?LinkId=178765), qui est incluse dans Visual Studio, peut générer des classes fortement typées à partir de fichiers XML. Le modèle présenté ici est fourni comme exemple.
 
 Voici l’exemple de fichier :
 
@@ -73,7 +73,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
 }
 ```
 
-Dans la version fortement typée, une modification au schéma XML entraîne des modifications aux classes. Le compilateur met en évidence les parties du code d’application qui doit être modifié. Dans la version non typée qui utilise du code XML générique, cette prise en charge n’existe pas.
+Dans la version fortement typée, une modification apportée au schéma XML entraîne des modifications des classes. Le compilateur met en surbrillance les parties du code d’application qui doivent être modifiées. Dans la version non typée qui utilise du code XML générique, cette prise en charge n’existe pas.
 
 Dans ce projet, un seul fichier de modèle est utilisé pour générer les classes qui rendent la version typée possible.
 
@@ -103,7 +103,7 @@ Le fichier doit faire partie du projet pour que le modèle puisse le lire, mais 
 
 ### <a name="add-a-test-code-file"></a>Ajouter un fichier de code de test
 
-Ajoutez un fichier C# à votre projet et placez-y un exemple du code que vous souhaitez pouvoir écrire. Exemple :
+Ajoutez un fichier C# à votre projet et placez-y un exemple du code que vous souhaitez pouvoir écrire. Exemple :
 
 ```csharp
 using System;
@@ -129,7 +129,7 @@ Un test plus complet pourrait vérifier le résultat de cette fonction de test p
 
 ### <a name="add-a-text-template-file"></a>Ajouter un fichier de modèle de texte
 
-Ajoutez un fichier de modèle de texte et définissez l’extension de sortie sur *.cs*.
+Ajoutez un fichier de modèle de texte et définissez l’extension de sortie sur *. cs*.
 
 1. Dans l’ **Explorateur de solutions**, cliquez avec le bouton droit sur le projet, cliquez sur **Ajouter**, puis sur **Nouvel élément**.
 
@@ -140,7 +140,7 @@ Ajoutez un fichier de modèle de texte et définissez l’extension de sortie su
 
 3. Dans le fichier, dans la directive de modèle, affectez la valeur `hostspecific` à l’attribut `true`.
 
-     Cette modification permettra au code de modèle accéder aux services Visual Studio.
+     Cette modification permettra au code de modèle d’accéder aux services Visual Studio.
 
 4. Dans la directive de sortie, affectez « .cs » comme attribut d’extension, pour que le modèle génère un fichier C#. Dans un projet Visual Basic, vous choisiriez « .vb ».
 
@@ -258,7 +258,7 @@ Si vous préférez que les noms de classes commencent par une lettre majuscule, 
 #>
 ```
 
-À ce stade, le texte généré *.cs* fichier contient les déclarations suivantes :
+À ce niveau, le fichier *. cs* généré contient les déclarations suivantes :
 
 ```csharp
 public partial class Catalog {}
@@ -270,7 +270,7 @@ Vous pouvez ajouter plus de détails tels que les propriétés des nœuds enfant
 
 ### <a name="access-the-visual-studio-api"></a>Accéder à l’API Visual Studio
 
-Définition de la `hostspecific` attribut de la `<#@template#>` directive permet au modèle obtenir l’accès à l’API Visual Studio. Le modèle peut utiliser cette API pour obtenir l’emplacement des fichiers projet, pour éviter d’utiliser un chemin absolu dans le code du modèle.
+La définition de l’attribut `hostspecific` de la directive `<#@template#>` permet au modèle d’obtenir l’accès à l’API Visual Studio. Le modèle peut utiliser cette API pour obtenir l’emplacement des fichiers projet, pour éviter d’utiliser un chemin absolu dans le code du modèle.
 
 ```
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -284,7 +284,7 @@ XmlDocument doc = new XmlDocument();
 doc.Load(System.IO.Path.Combine(dte.ActiveDocument.Path, "exampleXml.xml"));
 ```
 
-## <a name="complete-the-text-template"></a>Terminer le modèle de texte
+## <a name="complete-the-text-template"></a>Compléter le modèle de texte
 
 Le contenu de modèle suivant génère du code qui permet de compiler et d’exécuter le code de test.
 
@@ -380,7 +380,7 @@ using System;using System.Collections.Generic;using System.Linq;using System.Xml
 #>
 ```
 
-### <a name="run-the-test-program"></a>Exécutez le programme de test
+### <a name="run-the-test-program"></a>Exécuter le programme de test
 
 Dans la partie principale de l’application console, les lignes suivantes exécutent la méthode de test. Appuyez sur F5 pour exécuter le programme en mode débogage :
 
@@ -400,13 +400,13 @@ namespace MyProject
 }
 ```
 
-### <a name="write-and-update-the-application"></a>Écrire et mettre à jour de l’application
+### <a name="write-and-update-the-application"></a>Écrire et mettre à jour l’application
 
 L’application peut désormais être écrite dans un style fortement typé, en utilisant les classes générées plutôt que du code XML générique.
 
 Quand le schéma XML change, de nouvelles classes peuvent facilement être générées. Le compilateur indiquera au développeur l’endroit où le code d’application doit être mis à jour.
 
-Pour régénérer les classes quand l’exemple de fichier XML est modifié, cliquez sur **transformer tous les modèles** dans le **l’Explorateur de solutions** barre d’outils.
+Pour régénérer les classes lorsque l’exemple de fichier XML est modifié, cliquez sur **transformer tous les modèles** dans la barre d’outils **Explorateur de solutions** .
 
 ## <a name="conclusion"></a>Conclusion
 
@@ -424,7 +424,7 @@ Cette procédure pas à pas illustre plusieurs techniques et avantages de la gé
 
 Dans cette procédure pas à pas, le code du programme est généré à partir d’une instance du modèle, un exemple représentatif des fichiers XML que l’application traitera. Dans une approche plus formelle, le schéma XML serait l’entrée du modèle, sous la forme d’un fichier .xsd ou d’une définition de langage propre au domaine. Cette approche faciliterait pour le modèle la détermination de caractéristiques telles que la multiplicité d’une relation.
 
-## <a name="troubleshoot-the-text-template"></a>Résoudre les problèmes du modèle de texte
+## <a name="troubleshoot-the-text-template"></a>Résoudre les problèmes liés au modèle de texte
 
 Si vous avez vu des erreurs de compilation ou de transformation du modèle dans la **Liste d’erreurs** ou si le fichier de sortie n’a pas été généré correctement, vous pouvez résoudre les problèmes du modèle de texte avec les techniques décrites dans [Génération de fichiers avec l’utilitaire TextTransform](../modeling/generating-files-with-the-texttransform-utility.md).
 

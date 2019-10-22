@@ -4,49 +4,49 @@ ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - Domain-Specific Language, connectors
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 754f479b99eef44159994425ddd7a0d812bcf2ee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2244b191bac2456886368992d1dc8f1c571dc227
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970807"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658257"
 ---
 # <a name="properties-of-connectors"></a>Propriétés des connecteurs
-Connecteurs représentent les relations de domaine dans un concepteur généré.
+Les connecteurs représentent les relations de domaine dans un concepteur généré.
 
  Pour plus d’informations, consultez [comment définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md). Pour plus d’informations sur l’utilisation de ces propriétés, consultez [personnalisation et extension d’un langage spécifique à un domaine](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
- Les connecteurs ont les propriétés qui sont répertoriées dans le tableau suivant.
+ Les propriétés des connecteurs sont répertoriées dans le tableau suivant.
 
-|Propriété|Description|Par défaut|
+|Property|Description|Valeur par défaut|
 |-|-|-|
-|Color|La couleur de ce connecteur.|Noir|
-|Style de ligne|Le style de tiret pour la ligne de ce connecteur (solide, tiret, point, tiret, DashDotDot ou personnalisé).|Unie|
-|Style de l’extrémité source|Le style de fin de source de ce connecteur (HollowArrow, d’EmptyArrow, FilledArrow, d’EmptyDiamond, FilledDiamond ou aucun).|Aucun.|
-|Style de l’extrémité cible|Le style de fin de cible de ce connecteur (HollowArrow, d’EmptyArrow, FilledArrow, d’EmptyDiamond, FilledDiamond ou aucun).|Aucun.|
-|Couleur du texte|La couleur qui est utilisée pour les éléments décoratifs de texte qui sont associés à ce connecteur.|Noir|
-|Thickness|L’épaisseur de la ligne de ce connecteur, mesurée en pouces.|0.03125|
-|Modificateur d'accès|Le niveau d’accès de la classe (`public` ou `internal`).|Public|
+|Color|Couleur de ce connecteur.|Noir|
+|Style de tiret|Style de tiret pour la ligne de ce connecteur (plein, tiret, point, tiret point, tiret point point ou personnalisé).|Unie|
+|Style de fin de la source|Style de l’extrémité source de ce connecteur (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond ou None).|aucune.|
+|Style de fin cible|Style de l’extrémité cible de ce connecteur (HollowArrow, EmptyArrow, FilledArrow, EmptyDiamond, FilledDiamond ou None).|aucune.|
+|Couleur du texte|Couleur utilisée pour les éléments décoratifs de texte associés à ce connecteur.|Noir|
+|Thickness|Épaisseur de la ligne de ce connecteur, mesurée en pouces.|0,03125|
+|Modificateur d'accès|Niveau d’accès de la classe (`public` ou `internal`).|Public|
 |Attributs personnalisés|Utilisé pour ajouter des attributs à la classe de code source qui est générée à partir de ce connecteur.|\<aucune>|
-|Génère le Double dérivée|Si `True`, une classe de base et une classe partielle (pour prendre en charge la personnalisation via des substitutions) sont générés. Pour plus d’informations, consultez [substitution et extension des Classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|False|
-|A le constructeur personnalisé|Si `True`, un constructeur personnalisé est fourni dans le code source. Pour plus d’informations, consultez [substitution et extension des Classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|False|
-|Modificateur d’héritage|Décrit le type d’héritage de la classe de code source qui est générée à partir du connecteur (`none`, `abstract` ou `sealed`).|none|
-|Connecteur de base|La classe de base de ce connecteur.|(aucun)|
-|Nom|Le nom de ce connecteur.|Nom actuel|
-|Espace de noms|L’espace de noms qui est affilié à ce connecteur.|Espace de noms actuel|
-|Type de l’info-bulle|Comment l’info-bulle est définie (fixe, variable, ou aucun). Si fixe, puis la valeur de la `Fixed Tooltip Text` propriété est utilisée en tant que l’info-bulle ; si la variable, l’info-bulle est définie dans du code personnalisé.|\<aucune>|
-|Notes|Remarques informelles associées à ce connecteur.|\<aucune>|
-|Style de routage|Le style qui est utilisé pour router le connecteur. Un `Rectilinear` connecteur établit à angle droit active en fonction des besoins ; un `Straight` n’est pas le cas du connecteur.|Rectiligne|
-|Couleur exposé en tant que propriété<br /><br /> Style de tiret exposé en tant que propriété<br /><br /> Épaisseur exposé en tant que propriété<br /><br /> Expose la couleur du texte|Si `True`, l’utilisateur peut définir la propriété indiquée d’une forme. Pour définir ceci, avec le bouton droit de la définition de forme, puis cliquez sur **ajouter les objets exposés**.|False|
+|Génère un doublon dérivé|Si `True`, une classe de base et une classe partielle (pour prendre en charge la personnalisation via des substitutions) sont générées. Pour plus d’informations, consultez [substitution et extension des classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|False|
+|A un constructeur personnalisé|Si `True`, un constructeur personnalisé est fourni dans le code source. Pour plus d’informations, consultez [substitution et extension des classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|False|
+|Modificateur d’héritage|Décrit le type d’héritage de la classe de code source qui est généré à partir du connecteur (`none`, `abstract` ou `sealed`).|none|
+|Connecteur de base|Classe de base de ce connecteur.|(aucune)|
+|Name|Nom de ce connecteur.|Nom actuel|
+|Espace de noms|Espace de noms affilié à ce connecteur.|Espace de noms actuel|
+|Type d’info-bulle|Comment l’info-bulle est définie (Fixed, variable ou None). S’il est corrigé, la valeur de la propriété `Fixed Tooltip Text` est utilisée comme info-bulle ; Si la variable est, l’info-bulle est définie dans le code personnalisé.|\<aucune>|
+|Notes|Notes informelles associées à ce connecteur.|\<aucune>|
+|Style de routage|Style utilisé pour router le connecteur. Un connecteur `Rectilinear` fait en sorte que les virages à angle droit s’effectuent comme requis ; ce n’est pas le cas d’un connecteur `Straight`.|Rectilinear|
+|Couleur exposée en tant que propriété<br /><br /> Style de tiret exposé en tant que propriété<br /><br /> Epaisseur exposée en tant que propriété<br /><br /> Expose la couleur de texte|Si `True`, l’utilisateur peut définir la propriété déclarée d’une forme. Pour ce faire, cliquez avec le bouton droit sur la définition de la forme, puis cliquez sur **Ajouter exposé**.|False|
 |Description|Utilisé pour documenter le concepteur généré.|\<aucune>|
-|Display Name|Le nom qui s’affichera dans le concepteur généré pour ce connecteur.|\<aucune>|
-|Texte d’info-bulle fixe|Le texte qui est utilisé pour une info-bulle fixe.|\<aucune>|
-|Help Keyword|Le mot clé qui est utilisé pour indexer l’aide F1 pour cet élément.|\<aucune>|
+|Display Name|Nom qui sera affiché dans le concepteur généré pour ce connecteur.|\<aucune>|
+|Texte d’info-bulle fixe|Texte utilisé pour une info-bulle fixe.|\<aucune>|
+|Help Keyword|Mot clé utilisé pour indexer l’aide F1 pour cet élément.|\<aucune>|
 
 ## <a name="see-also"></a>Voir aussi
 
