@@ -7,12 +7,12 @@ ms.author: mblome
 manager: markl
 dev_langs:
 - CPP
-ms.openlocfilehash: 57c8d6daf75987bfb5c6a6642b89f198693a5dce
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: fee4478f52cd107d2173919617aca8acd07234eb
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018414"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72445655"
 ---
 # <a name="use-the-c-core-guidelines-checkers"></a>Utiliser les vérificateurs de C++ Core Guidelines
 
@@ -55,11 +55,11 @@ int main()
 
 Cet exemple illustre quelques-uns des avertissements que les C++ règles de contrôle de base peuvent trouver :
 
-- C26494 est de type règle. 5 : Initialisez toujours un objet.
+- C26494 est de type règle. 5 : Initialise toujours un objet.
 
-- C26485 est une limite de règle. 3 : Aucune atténuation de tableau à pointeur.
+- C26485 est une limite de règle. 3 : aucune atténuation de tableau à pointeur.
 
-- C26481 est une limite de règle. 1 : N’utilisez pas opérations arithmétiques de pointeur. Utilisez plutôt `span`.
+- C26481 est une limite de règle. 1 : n’utilisez pas l’arithmétique de pointeur. Utilisez plutôt `span`.
 
 Si les C++ ensembles de règles d’analyse du code de contrôle de base sont installés et activés lorsque vous compilez ce code, les deux premiers avertissements sont générés, mais le troisième est supprimé. Voici la sortie de la génération de l’exemple de code :
 
@@ -103,7 +103,7 @@ Les rubriques de référence pour la plupart des règles sont sous [référence 
 
 **Visual Studio 2017 version 15.6** :
 
-- **Règles arithmétiques** Règles de détection des [dépassements](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-overflow) arithmétiques, des [opérations non signées](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-unsigned) et des [manipulations de bits](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-nonnegative).
+- **Règles arithmétiques** Règles de détection des [dépassements](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-overflow)arithmétiques, des [opérations non](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-unsigned) signées et des [manipulations de bits](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-nonnegative).
 
 Vous pouvez choisir de limiter les avertissements à un seul ou à quelques groupes. Les ensembles de règles natifs **minimum** et **natif recommandés** incluent C++ des règles de contrôle de base en plus d’autres vérifications prérapides. Pour afficher les ensembles de règles disponibles, ouvrez la boîte de dialogue Propriétés du projet, sélectionnez **code Analysis\General**, ouvrez la zone de liste déroulante **ensembles de règles** , puis **Choisissez plusieurs ensembles de règles**. Pour plus d’informations sur l’utilisation d’ensembles de règles dans Visual Studio, consultez [utilisation d’ensembles de règles pour regrouper des règles d’analyse du code](using-rule-sets-to-group-code-analysis-rules.md).
 

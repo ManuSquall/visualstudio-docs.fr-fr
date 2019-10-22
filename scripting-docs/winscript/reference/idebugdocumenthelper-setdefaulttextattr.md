@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::SetDefaultTextAttr | Microsoft Docs
+title: 'IDebugDocumentHelper :: SetDefaultTextAttr | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 09f75e6f09639520462d5ef3983d67333097f76e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ea63f028497f1eb90803f59423f608d0a42960cf
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948952"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574636"
 ---
 # <a name="idebugdocumenthelpersetdefaulttextattr"></a>IDebugDocumentHelper::SetDefaultTextAttr
 Définit les attributs par défaut à utiliser pour le texte qui n’est pas dans un bloc de script.  
@@ -37,18 +37,18 @@ HRESULT SetDefaultTextAttr(
   
 #### <a name="parameters"></a>Paramètres  
  `staTextAttr`  
- Les attributs de texte source par défaut.  
+ Attributs de texte source par défaut.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
 ## <a name="remarks"></a>Notes  
- À moins que les attributs par défaut sont modifiés par cette méthode, les attributs par défaut pour le texte en dehors d’un bloc de script est SOURCETEXT_ATTR_NONSOURCE. L’interface utilisateur peut utiliser ces informations pour marquer le texte à l’extérieur des blocs de script en lecture seule.  
+ À moins que les attributs par défaut ne soient modifiés par cette méthode, les attributs par défaut du texte en dehors d’un bloc de script sont SOURCETEXT_ATTR_NONSOURCE. L’interface utilisateur peut utiliser ces informations pour marquer le texte en dehors des blocs de script comme étant en lecture seule.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Interface IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)   
+ @No__t_1 de l' [interface IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)  
  [Énumération SOURCE_TEXT_ATTR](../../winscript/reference/source-text-attr-enumeration.md)

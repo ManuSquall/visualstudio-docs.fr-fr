@@ -1,5 +1,5 @@
 ---
-title: 'CA1016 : Marquer les assemblys avec AssemblyVersionAttribute | Microsoft Docs'
+title: 'Ca1016 : marquer les assemblys avec AssemblyVersionAttribute | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - MarkAssembliesWithAssemblyVersion
 ms.assetid: 4340aed8-d92b-4cde-a398-cb6963c6da5a
 caps.latest.revision: 21
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 196ebcf2cea8cedfee14d1bb808bc7b68532786b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: f1498624d4f79a60854a624ee5c4053a3343f515
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704241"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72663166"
 ---
 # <a name="ca1016-mark-assemblies-with-assemblyversionattribute"></a>CA1016 : Marquer les assemblys avec AssemblyVersionAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,11 +29,11 @@ ms.locfileid: "65704241"
 |-|-|
 |TypeName|MarkAssembliesWithAssemblyVersion|
 |CheckId|CA1016|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
- L’assembly n’a pas un numéro de version.
+ L’assembly n’a pas de numéro de version.
 
 ## <a name="rule-description"></a>Description de la règle
  L’identité d’un assembly est composée des informations suivantes :
@@ -44,22 +44,22 @@ ms.locfileid: "65704241"
 
 - culture
 
-- Clé publique (pour les assemblys à nom fort).
+- Clé publique (pour les assemblys avec nom fort).
 
   Le [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] utilise le numéro de version pour identifier un assembly de manière unique, et créer une liaison avec des types présents dans des assemblys à nom fort. Le numéro de version est utilisé conjointement avec la version et la stratégie d'éditeur. Par défaut, les applications s'exécutent uniquement avec la version d'assembly avec laquelle elles ont été construites.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, ajoutez un numéro de version à l’assembly à l’aide de la <xref:System.Reflection.AssemblyVersionAttribute?displayProperty=fullName> attribut. Lisez l'exemple suivant.
+ Pour corriger une violation de cette règle, ajoutez un numéro de version à l’assembly à l’aide de l’attribut <xref:System.Reflection.AssemblyVersionAttribute?displayProperty=fullName>. Lisez l'exemple suivant.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Ne supprimez pas d’avertissement de cette règle pour les assemblys qui sont utilisés par des tiers, ou dans un environnement de production.
+ Ne supprimez pas un avertissement de cette règle pour les assemblys utilisés par des tiers ou dans un environnement de production.
 
 ## <a name="example"></a>Exemple
- L’exemple suivant montre un assembly qui a le <xref:System.Reflection.AssemblyVersionAttribute> attribut appliqué.
+ L’exemple suivant montre un assembly pour lequel l’attribut <xref:System.Reflection.AssemblyVersionAttribute> est appliqué.
 
  [!code-cpp[FxCop.Design.AssembliesVersion#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Design.AssembliesVersion/cpp/FxCop.Design.AssembliesVersion.cpp#1)]
  [!code-csharp[FxCop.Design.AssembliesVersion#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.AssembliesVersion/cs/FxCop.Design.AssembliesVersion.cs#1)]
  [!code-vb[FxCop.Design.AssembliesVersion#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.AssembliesVersion/vb/FxCop.Design.AssembliesVersion.vb#1)]
 
 ## <a name="see-also"></a>Voir aussi
- [Versioning des assemblys](https://msdn.microsoft.com/library/775ad4fb-914f-453c-98ef-ce1089b6f903) [Comment : Créer une stratégie d’éditeur](https://msdn.microsoft.com/library/8046bc5d-2fa9-4277-8a5e-6dcc96c281d9)
+ Contrôle de [version des assemblys](https://msdn.microsoft.com/library/775ad4fb-914f-453c-98ef-ce1089b6f903) [Comment : créer une stratégie d’éditeur](https://msdn.microsoft.com/library/8046bc5d-2fa9-4277-8a5e-6dcc96c281d9)

@@ -13,21 +13,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e30894ec98dd1db4de0b724082467a681a0fa696
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 9cb4ac65442d9dbcb384ee3765f6fa827e3fa5d8
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970689"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306162"
 ---
 # <a name="da0006-override-equals-for-value-types"></a>DA0006 : Remplacer Equals() pour les types valeur
 
 |||
 |-|-|
 |ID de règle|DA0006|
-|Category|Utilisation du .NET Framework|
+|Catégorie|Utilisation du .NET Framework|
 |Méthodes de profilage|Échantillonnage|
-|Message|Remplacer Equals et l’opérateur d’égalité pour les types valeur.|
+|`Message`|Remplacer Equals et l’opérateur d’égalité pour les types valeur.|
 |Type de messages|Warning|
 
 ## <a name="cause"></a>Cause
@@ -39,4 +39,4 @@ ms.locfileid: "62970689"
  Pour plus d’informations sur la façon de remplacer Equals et les opérateurs d’égalité, consultez [Conseils pour l’implémentation de Equals et de l’opérateur d’égalité (==)](http://go.microsoft.com/fwlink/?LinkId=177818).
 
 ## <a name="how-to-investigate-a-warning"></a>Comment rechercher la cause d’un avertissement
- Pour obtenir un exemple d’implémentation d’Equals et des opérateurs d’égalité, consultez la règle d’analyse du code [CA1815 : Remplacer Equals et l’opérateur d’égalité dans les types valeur](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md)
+ Pour obtenir un exemple d’implémentation d’Equals et des opérateurs d’égalité, consultez la règle d’analyse du code [CA1815 : Remplacer Equals et l’opérateur d’égalité dans les types valeur](../code-quality/ca1815.md)

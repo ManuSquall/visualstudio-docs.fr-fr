@@ -11,12 +11,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ec7bb508101f6de20bf979653a01b735b3cbf61e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1cb284b9fb1519b53efb7585559ec10f2f8b9e8e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977576"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573975"
 ---
 # <a name="ijsenumdebugproperty-interface"></a>IJsEnumDebugProperty, interface
 Fournit des opérations de navigation dans les propriétés.  
@@ -31,13 +31,13 @@ IJsEnumDebugProperty : public IUnknown;
   
 ### <a name="public-methods"></a>M&#233;thodes publiques  
   
-|Nom|Description|  
+|Name|Description|  
 |----------|-----------------|  
 |[Méthode IJsEnumDebugProperty::GetCount](../../winscript/reference/ijsenumdebugproperty-getcount-method.md)|Obtient le nombre de propriétés de l’objet.|  
 |[Méthode IJsEnumDebugProperty::Next](../../winscript/reference/ijsenumdebugproperty-next-method.md)|Lit les propriétés de cet objet.|  
   
-## <a name="requirements"></a>Configuration requise  
- **En-tête :** jscript9diag.h  
+## <a name="requirements"></a>spécifications  
+ **En-tête :** jscript9diag. h  
   
 ## <a name="see-also"></a>Voir aussi  
  [Référence d’interfaces de script Windows](../../winscript/reference/windows-script-interfaces-reference.md)

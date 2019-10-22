@@ -1,21 +1,21 @@
 ---
-title: 'CA3075 : Traitement DTD non sécurisé | Microsoft Docs'
+title: 'CA3075 : traitement DTD non sécurisé | Microsoft Docs'
 ms.date: 11/15/2016
 ms.technology: vs-ide-code-analysis
 ms.topic: reference
 ms.assetid: 65798d66-7a30-4359-b064-61a8660c1eed
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 694b72327d8e059fe12a227afdab79219081ef92
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 7cf9da2f295d94ac68c74039458f4cdbfda3ae5c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65693415"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661622"
 ---
-# <a name="ca3075-insecure-dtd-processing"></a>CA3075 : Traitement DTD non sécurisé
+# <a name="ca3075-insecure-dtd-processing"></a>CA3075 : traitement DTD non sécurisé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -35,31 +35,31 @@ ms.locfileid: "65693415"
 
 - La propriété <xref:System.Xml.XmlNode.InnerXml%2A> dans le code XML est définie.
 
-- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> propriété est définie pour l’analyse.
+- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> propriété a la valeur parse.
 
 - L’entrée non fiable est traitée avec <xref:System.Xml.XmlResolver> au lieu de <xref:System.Xml.XmlSecureResolver> .
 
-- XmlReader.<xref:System.Xml.XmlReader.Create%2A> méthode est appelée avec un non sécurisé <xref:System.Xml.XmlReaderSettings> instance ou aucune instance du tout.
+- XmlReader. <xref:System.Xml.XmlReader.Create%2A> la méthode est appelée avec une instance de <xref:System.Xml.XmlReaderSettings> non sécurisée ou sans instance.
 
-- <xref:System.Xml.XmlReader> est créé avec les paramètres par défaut non sécurisées ou des valeurs.
+- <xref:System.Xml.XmlReader> est créé avec des valeurs ou des paramètres par défaut non sécurisés.
 
   Dans chacun de ces cas, le résultat est le même : le contenu du système de fichiers ou des partages réseau de l’ordinateur où le code XML est traité sera exposé à la personne malveillante et peut ensuite être utilisé comme un vecteur d’attaque par déni de service.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
-- Intercepter et traiter toutes les exceptions XmlTextReader correctement pour éviter la divulgation d’informations de chemin d’accès.
+- Interceptez et traitez toutes les exceptions XmlTextReader correctement pour éviter la divulgation d’informations de chemin.
 
-- Utilisez le <xref:System.Xml.XmlSecureResolver> pour limiter les ressources auxquelles XmlTextReader peut accéder.
+- Utilisez la  <xref:System.Xml.XmlSecureResolver> pour restreindre les ressources auxquelles XmlTextReader peut accéder.
 
-- Ne pas autoriser la <xref:System.Xml.XmlReader> d’ouvrir des ressources externes en définissant le <xref:System.Xml.XmlResolver> propriété **null**.
+- N’autorisez pas l'  <xref:System.Xml.XmlReader> à ouvrir des ressources externes en affectant à la propriété <xref:System.Xml.XmlResolver> la **valeur null**.
 
 - Vérifiez que la propriété <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A> de <xref:System.Data.DataViewManager> est affectée depuis une source fiable.
 
   .NET 3.5 et versions antérieures
 
-- Désactivez le traitement DTD si vous utilisez des sources non approuvées en définissant le <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> propriété **true** .
+- Désactivez le traitement DTD si vous utilisez des sources non fiables en affectant à la propriété  <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> la **valeur true** .
 
-- La classe XmlTextReader a une demande d’héritage de confiance totale. Consultez [demandes d’héritage](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) pour plus d’informations.
+- La classe XmlTextReader a une demande d’héritage de confiance totale. Pour plus d’informations, consultez [demandes d’héritage](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) .
 
   .NET 4 et versions ultérieures
 

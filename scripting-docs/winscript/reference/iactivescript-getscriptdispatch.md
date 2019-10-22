@@ -1,5 +1,5 @@
 ---
-title: IActiveScript::GetScriptDispatch | Microsoft Docs
+title: 'IActiveScript :: GetScriptDispatch | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c329a4dbf42461369441b86f6d9ba18992916366
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ba53f2eccde18bd5b2d9c609ea680b50cb7261c9
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935596"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575763"
 ---
 # <a name="iactivescriptgetscriptdispatch"></a>IActiveScript::GetScriptDispatch
-Récupère le `IDispatch` interface pour les méthodes et les propriétés associées avec le script en cours d’exécution.  
+Récupère l’interface `IDispatch` pour les méthodes et les propriétés associées au script en cours d’exécution.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -38,24 +38,24 @@ HRESULT GetScriptDispatch(
   
 #### <a name="parameters"></a>Paramètres  
  `pstrItemName`  
- [in] Adresse d’une mémoire tampon qui contient le nom de l’élément pour lequel l’appelant doit disposer de l’objet de répartition associée. Si ce paramètre est `NULL`, l’objet de répartition contient en tant que ses membres toutes les méthodes globales et les propriétés définies par le script. Via le `IDispatch` interface et associé `ITypeInfo` interface, l’hôte peut appeler des méthodes de script ou une vue et modifier les variables de script.  
+ dans Adresse d’une mémoire tampon qui contient le nom de l’élément pour lequel l’appelant a besoin de l’objet de distribution associé. Si ce paramètre est `NULL`, l’objet de dispatch contient toutes les méthodes globales et les propriétés définies par le script. Par le biais de l’interface `IDispatch` et de l’interface `ITypeInfo` associée, l’hôte peut appeler des méthodes de script ou afficher et modifier des variables de script.  
   
  `ppdisp`  
- [out] Adresse d’une variable qui reçoit un pointeur vers l’objet associé aux propriétés et les méthodes globales du script. Si le moteur de script ne prend pas en charge ce type d’objet `NULL` est retourné.  
+ à Adresse d’une variable qui reçoit un pointeur vers l’objet associé aux méthodes et propriétés globales du script. Si le moteur de script ne prend pas en charge un tel objet, `NULL` est retourné.  
   
 ## <a name="return-value"></a>Valeur de retour  
- Retourne une des valeurs suivantes :  
+ Retourne l’une des valeurs suivantes :  
   
 |Valeur de retour|Signification|  
 |------------------|-------------|  
 |`S_OK`|Opération réussie.|  
 |`E_INVALIDARG`|Un argument n’est pas valide.|  
 |`E_POINTER`|Un pointeur non valide a été spécifié.|  
-|`E_UNEXPECTED`|L’appel n’était pas attendu (par exemple, le moteur de script n'a pas encore été chargé ou initialisé).|  
-|`S_FALSE`|Le moteur de script ne prend pas en charge un objet de répartition ; le `ppdisp` paramètre est défini sur NULL.|  
+|`E_UNEXPECTED`|L’appel n’était pas attendu (par exemple, le moteur de script n’a pas encore été chargé ou initialisé).|  
+|`S_FALSE`|Le moteur de script ne prend pas en charge un objet de dispatch ; le paramètre `ppdisp` a la valeur NULL.|  
   
 ## <a name="remarks"></a>Notes  
- Étant donné que les méthodes et propriétés peuvent être ajoutées en appelant le [IActiveScriptParse](../../winscript/reference/iactivescriptparse.md) interface, le `IDispatch` interface retournée par cette méthode peut prendre dynamiquement en charge les nouvelles méthodes et propriétés. De même, le `IDispatch::GetTypeInfo` méthode doit retourner un nouveau, unique `ITypeInfo` lors de l’ajout de méthodes et propriétés de l’interface. Notez, cependant, que les moteurs de langage ne doivent pas changer le `IDispatch` interface dans une manière incompatible avec n’importe quel précédente `ITypeInfo` interface retournée. Par exemple, cela implique que DISPID ne sera jamais réutilisé.  
+ Étant donné que les méthodes et les propriétés peuvent être ajoutées en appelant l’interface [IActiveScriptParse](../../winscript/reference/iactivescriptparse.md) , l’interface `IDispatch` retournée par cette méthode peut prendre en charge de manière dynamique les nouvelles méthodes et propriétés. De même, la méthode `IDispatch::GetTypeInfo` doit retourner une nouvelle interface `ITypeInfo` unique lorsque des méthodes et des propriétés sont ajoutées. Notez, toutefois, que les moteurs de langage ne doivent pas modifier l’interface `IDispatch` d’une manière incompatible avec les précédentes `ITypeInfo` interface retournées. Cela implique, par exemple, que les DISPID ne seront jamais réutilisés.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IActiveScript](../../winscript/reference/iactivescript.md)

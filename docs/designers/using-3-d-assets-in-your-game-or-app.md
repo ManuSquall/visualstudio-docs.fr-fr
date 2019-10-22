@@ -10,19 +10,19 @@ f1_keywords:
 - VC.Project.ShaderGraphContentTask.ContentOutput
 - VC.Project.ImageContentTask.GenerateMips
 ms.assetid: ea587909-e434-46a8-abf8-9b3e95a58b4f
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c595f4c8f344cfb9e8678d8f9c425a564baa9e4b
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
-ms.translationtype: HT
+ms.openlocfilehash: 400e69ddaf9ebd3596edf3b926484b623225d672
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65459109"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72634535"
 ---
-# <a name="how-to-use-3d-assets-in-your-game-or-app"></a>Procédure : Utiliser des composants 3D dans votre jeu ou votre application
+# <a name="how-to-use-3d-assets-in-your-game-or-app"></a>Comment : utiliser des composants 3D dans votre jeu ou votre application
 
 Cet article explique comment vous pouvez utiliser Visual Studio pour traiter des composants 3D et les inclure dans vos builds.
 
@@ -71,9 +71,9 @@ Voici les trois types d’éléments de pipeline de contenu et leurs types de fi
 
 |Type d'élément|Types de fichiers sources|Format des fichiers de sortie|
 |---------------| - | - |
-|**Pipeline de contenu d’image**|Portable Network Graphics (*.png*)<br /><br /> JPEG (*.jpg*, *.jpeg*, *.jpe*, *.jfif*)<br /><br /> Direct Draw Surface (*.dds*)<br /><br /> Graphics Interchange Format (*.gif*)<br /><br /> Bitmap (*.bmp*, *.dib*)<br /><br /> Tagged Image File Format (*.tif*, *.tiff*)<br /><br /> Targa (*.tga*)|DirectDraw Surface (*.dds*)|
-|**Pipeline de contenu de maillage**|Fichier d’échange AutoDesk FBX (*.fbx*)<br /><br /> Fichier DAE Collada (*.dae*)<br /><br /> Fichier Wavefront OBJ (*.obj*)|Fichier de maillage 3D (*.cmo*)|
-|**Pipeline de contenu de nuanceur**|Graphe de nuanceur visuel (*.dgsl*)|Sortie de nuanceur compilé (*.cso*)|
+|**Pipeline de contenu d’image**|Portable Network Graphics ( *.png*)<br /><br /> JPEG ( *.jpg*, *.jpeg*, *.jpe*, *.jfif*)<br /><br /> Direct Draw Surface ( *.dds*)<br /><br /> Graphics Interchange Format ( *.gif*)<br /><br /> Bitmap ( *.bmp*, *.dib*)<br /><br /> Tagged Image File Format ( *.tif*, *.tiff*)<br /><br /> Targa ( *.tga*)|DirectDraw Surface ( *.dds*)|
+|**Pipeline de contenu de maillage**|Fichier d’échange AutoDesk FBX ( *.fbx*)<br /><br /> Fichier DAE Collada ( *.dae*)<br /><br /> Fichier Wavefront OBJ ( *.obj*)|Fichier de maillage 3D ( *.cmo*)|
+|**Pipeline de contenu de nuanceur**|Graphe de nuanceur visuel ( *.dgsl*)|Sortie de nuanceur compilé ( *.cso*)|
 
 ## <a name="configure-asset-content-pipeline-properties"></a>Configurer les propriétés du pipeline de contenu des composants
 
@@ -100,7 +100,7 @@ Quand vous utilisez l'outil de pipeline de contenu d'image pour générer une re
 |**Compresser**|Spécifie le type de compression utilisé pour le fichier de sortie.<br /><br /> Les options disponibles sont les suivantes :<br /><br /> -   **Aucune compression**<br />-   **Compression BC1_UNORM**<br />-   **Compression BC1_UNORM_SRGB**<br />-   **Compression BC2_UNORM**<br />-   **Compression BC2_UNORM_SRGB**<br />-   **Compression BC3_UNORM**<br />-   **Compression BC3_UNORM_SRGB**<br />-   **Compression BC4_UNORM**<br />-   **Compression BC4_SNORM**<br />-   **Compression BC5_UNORM**<br />-   **Compression BC5_SNORM**<br />-   **Compression BC6H_UF16**<br />-   **Compression BC6H_SF16**<br />-   **Compression BC7_UNORM**<br />-   **Compression BC7_UNORM_SRGB**<br /><br /> Pour plus d’informations sur les formats de compression pris en charge dans les différentes versions de DirectX, consultez [Guide de programmation pour DXGI](http://go.microsoft.com/fwlink/p/?LinkId=246265).|
 |Convertir dans un format alpha prémultiplié|**Oui** pour convertir l’image dans un format alpha prémultiplié dans le fichier de sortie ; sinon, **Non**. Seul le fichier de sortie est modifié ; l'image source est inchangée.|
 |**Générer des mips**|**Oui** pour générer une chaîne MIP complète au moment de la génération et l’inclure dans le fichier de sortie ; sinon, **Non**. Si la valeur **Non** est sélectionnée et que le fichier source contient déjà une chaîne mipmap, le fichier de sortie a une chaîne MIP ; sinon, le fichier de sortie n’a pas de chaîne MIP.|
-|**Sortie de contenu**|Spécifie le nom du fichier de sortie. **Important :**  La modification de l'extension de nom de fichier du fichier de sortie n'a aucun effet sur son format.|
+|**Sortie de contenu**|Spécifie le nom du fichier de sortie. **Important :** La modification de l’extension du nom de fichier de sortie n’a aucun effet sur son format.|
 
 ### <a name="mesh-content-pipeline-configuration"></a>Configuration du pipeline de contenu de maillage
 
@@ -108,7 +108,7 @@ Quand vous utilisez l'outil de pipeline de contenu de maillage pour générer un
 
 |Property|Description|
 |--------------|-----------------|
-|**Sortie de contenu**|Spécifie le nom du fichier de sortie. **Important :**  La modification de l'extension de nom de fichier du fichier de sortie n'a aucun effet sur son format.|
+|**Sortie de contenu**|Spécifie le nom du fichier de sortie. **Important :** La modification de l’extension du nom de fichier de sortie n’a aucun effet sur son format.|
 
 ### <a name="shader-content-pipeline-configuration"></a>Configuration du pipeline de contenu de nuanceur
 
@@ -116,7 +116,7 @@ Quand vous utilisez l'outil de pipeline de contenu de nuanceur pour générer un
 
 |Property|Description|
 |--------------|-----------------|
-|**Sortie de contenu**|Spécifie le nom du fichier de sortie. **Important :**  La modification de l'extension de nom de fichier du fichier de sortie n'a aucun effet sur son format.|
+|**Sortie de contenu**|Spécifie le nom du fichier de sortie. **Important :** La modification de l’extension du nom de fichier de sortie n’a aucun effet sur son format.|
 
 ## <a name="load-and-use-3d-assets-at-run-time"></a>Charger et utiliser des composants 3D lors de l’exécution
 
@@ -215,6 +215,6 @@ cbuffer MiscVars : register(b3)
 |-----------|-----------------|
 |[Guide pratique pour exporter une texture qui contient des mipmaps](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Explique comment utiliser le pipeline de contenu d'image pour exporter une texture qui contient des mipmaps précalculés.|
 |[Guide pratique pour exporter une texture qui contient des valeurs alpha prémultipliées](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Explique comment utiliser le pipeline de contenu d'image pour exporter une texture qui contient des valeurs alpha prémultipliées.|
-|[Guide pratique pour exporter une texture à utiliser avec des applications Direct2D ou JavaScript](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Explique comment utiliser le pipeline de contenu d'image pour exporter une texture utilisable dans une application Direct2D ou Javascript.|
+|[Comment : exporter une texture pour l’utiliser avec des applications Direct2D ou JavaScript](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Explique comment utiliser le pipeline de contenu d'image pour exporter une texture utilisable dans une application Direct2D ou Javascript.|
 |[Utilisation de composants 3D pour les jeux et les applications](../designers/working-with-3-d-assets-for-games-and-apps.md)|Décrit les outils d’édition fournis par Visual Studio pour créer et manipuler des composants 3D, qui comprennent les textures, les images, les modèles 3D et les nuanceurs.|
 |[Guide pratique pour exporter un nuanceur](../designers/how-to-export-a-shader.md)|Explique comment exporter un nuanceur à partir du concepteur Shader.|

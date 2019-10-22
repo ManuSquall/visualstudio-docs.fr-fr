@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 939d9f36c9838f02e58bc433d1a7bb9bef43c28d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6f656bdf4e3bc85a014ff8d3011708799aa44bcd
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955406"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572618"
 ---
 # <a name="breakreason-enumeration"></a>Énumération BREAKREASON
 Indique ce qui a provoqué l'arrêt.  
@@ -49,11 +49,11 @@ typedef enum tagBREAKREASON {
 |BREAKREASON_STEP|Le moteur de langage est en mode pas à pas.|  
 |BREAKREASON_BREAKPOINT|Le moteur de langage a rencontré un point d’arrêt explicite.|  
 |BREAKREASON_DEBUGGER_BLOCK|Le moteur de langage a rencontré un bloc de débogueur sur un autre thread.|  
-|BREAKREASON_HOST_INITIATED|L’hôte a demandé une pause.|  
-|BREAKREASON_LANGUAGE_INITIATED|Le moteur de langage a demandé une pause.|  
-|BREAKREASON_DEBUGGER_HALT|L’IDE de débogueur a demandé une pause.|  
-|BREAKREASON_ERROR|Une erreur d’exécution a provoqué l’arrêt.|  
-|BREAKREASON_JIT|Dû au démarrage du débogage JIT.|  
+|BREAKREASON_HOST_INITIATED|L’hôte a demandé une interruption.|  
+|BREAKREASON_LANGUAGE_INITIATED|Le moteur de langage a demandé une interruption.|  
+|BREAKREASON_DEBUGGER_HALT|L’IDE du débogueur a demandé un arrêt.|  
+|BREAKREASON_ERROR|Une erreur d’exécution est à l’origine de l’arrêt.|  
+|BREAKREASON_JIT|Provoqué par le démarrage du débogage juste-à-temps.|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Constantes de débogueur de script actif, énumérations et structures](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

@@ -7,15 +7,15 @@ helpviewer_keywords:
 - template parameters [Visual Studio]
 - project templates, parameters
 - item templates, parameters
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2fbc9d95a6e334c3dcd788c4b686a222c417b0df
-ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
+ms.openlocfilehash: 445a4fa7847ea5c9a5cb64da09cf54c763e86d16
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70766110"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647398"
 ---
 # <a name="template-parameters"></a>Paramètres de modèle
 
@@ -23,7 +23,7 @@ Vous pouvez remplacer des valeurs dans votre modèle quand ce dernier est instan
 
 ## <a name="declare-and-enable-template-parameters"></a>Déclarer et activer des paramètres de modèle
 
-Les paramètres de modèle sont déclarés au format $*paramètre*$. Par exemple :
+Les paramètres de modèle sont déclarés au format $*paramètre*$. Exemple :
 
 - $safeprojectname$
 
@@ -60,12 +60,12 @@ Le tableau suivant liste les paramètres de modèle réservés qui peuvent être
 |safeitemname|Identique à `itemname`, mais avec tous les caractères et espaces potentiellement dangereux remplacés par des caractères de trait de soulignement.|
 |safeitemrootname|Comme pour `safeitemname`.|
 |safeprojectname|Nom fourni par l’utilisateur quand le projet a été créé, dont tous les caractères et espaces potentiellement dangereux ont été supprimés.|
-|time|Date et heure actuelles au format JJ/MM/AAAA 00:00:00.|
+|heure|Date et heure actuelles au format JJ/MM/AAAA 00:00:00.|
 |specifiedSolutionName|Nom du fichier solution. Quand l’option "créer le répertoire de la solution" est cochée, `specifiedSolutionName` porte le nom de la solution. Quand l’option "créer le répertoire de solution" n’est pas cochée, `specifiedSolutionName` est vide.|
 |userdomain|Domaine de l’utilisateur actuel.|
-|username|Nom de l’utilisateur actuel.|
+|Nom d’utilisateur|Nom de l’utilisateur actuel.|
 |webnamespace|Nom du site web actuel. Ce paramètre est utilisé dans le modèle de formulaire web pour garantir des noms de classes uniques. Si le site web se trouve dans le répertoire racine du serveur web, ce paramètre de modèle correspond à ce répertoire racine.|
-|year|Année actuelle au format AAAA.|
+|année|Année actuelle au format AAAA.|
 
 > [!NOTE]
 > Les paramètres de modèle respectent la casse.
@@ -74,7 +74,7 @@ Le tableau suivant liste les paramètres de modèle réservés qui peuvent être
 
 Vous pouvez spécifier vos propres paramètres et valeurs de modèle, en plus des paramètres de modèle réservés par défaut utilisés lors du remplacement de paramètres. Pour plus d’informations, consultez [CustomParameters, élément (modèles Visual Studio)](../extensibility/customparameters-element-visual-studio-templates.md).
 
-## <a name="example-use-the-project-name-for-a-file-name"></a>Exemple : Utiliser le nom du projet comme nom de fichier
+## <a name="example-use-the-project-name-for-a-file-name"></a>Exemple : utilisation du nom du projet comme nom de fichier
 
 Vous pouvez spécifier des noms de fichiers de variables pour les éléments de projet à l’aide d’un paramètre dans l’attribut `TargetFileName`.
 
@@ -91,7 +91,7 @@ L’exemple suivant spécifie que le nom d’un fichier exécutable utilise le n
 </TemplateContent>
 ```
 
-## <a name="example-use-the-safe-project-name-for-the-namespace-name"></a>Exemple : Utiliser le nom du projet sécurisé comme nom de l’espace de noms
+## <a name="example-use-the-safe-project-name-for-the-namespace-name"></a>Exemple : utilisation du nom du projet sécurisé comme nom de l’espace de noms
 
 Pour utiliser le nom du projet sécurisé pour l’espace de noms dans un fichier de classe C#, utilisez la syntaxe suivante :
 

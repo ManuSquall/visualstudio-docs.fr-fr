@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Afficher l’héritage entre les types (Concepteur de classes)'
+title: Guide pratique pour afficher l'héritage entre les types (Concepteur de classes)
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -9,21 +9,21 @@ helpviewer_keywords:
 - types [Visual Studio], base
 - types [Visual Studio], derived
 ms.assetid: ea3f0ada-f53b-4fb1-9fb5-908286f5ec3e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d1a15765bff6d391afc7395be03172bf5d5fc32
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 9fd6d2ce365399550b5455ff8bf909e9cc56187b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975097"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647686"
 ---
-# <a name="how-to-view-inheritance-between-types-in-class-designer"></a>Procédure : Afficher l’héritage entre les types dans le Concepteur de classes
+# <a name="how-to-view-inheritance-between-types-in-class-designer"></a>Guide pratique pour afficher l’héritage entre les types dans le Concepteur de classes
 
-Dans le **Concepteur de classes**, vous pouvez rechercher la relation d’héritage éventuellement existante entre un type de base et ses types dérivés dans un diagramme de classes. Pour créer une relation d'héritage, si aucune n'existe, entre deux types, consultez [Guide pratique pour créer un héritage entre des types](how-to-create-inheritance-between-types.md).
+Dans le **Concepteur de classes**, vous pouvez rechercher la relation d’héritage éventuellement existante entre un type de base et ses types dérivés dans un diagramme de classes. Pour créer une relation d’héritage entre deux types, s’il n’en n’existe aucune, consultez [Guide pratique pour créer un héritage entre des types](how-to-create-inheritance-between-types.md).
 
 ## <a name="to-find-the-base-type"></a>Pour rechercher le type de base
 

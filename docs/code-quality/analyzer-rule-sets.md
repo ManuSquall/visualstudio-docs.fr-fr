@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - analyzer packages, rule sets
 - rule sets for analyzers
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8602483554ebd311ab6eebb13ff8d2de00d7e09
-ms.sourcegitcommit: b23d73c86ec7720c4cd9a58050860bc559623a3d
+ms.openlocfilehash: d40e88f123f397cfc77fe44757c2f72305390302
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72172782"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72606552"
 ---
 # <a name="enable-a-category-of-rules"></a>Activer une catégorie de règles
 
@@ -38,7 +38,7 @@ Le package NuGet Analyzer de FxCop comprend des ensembles de règles prédéfini
 - Porté depuis FxCop
 - Fiabilité
 - Sécurité
-- Usage
+- Utilisation
 
 Chacune de ces catégories de règles a un fichier de EditorConfig ou d’ensemble de règles pour :
 
@@ -53,13 +53,13 @@ Chacune de ces catégories de règles a un fichier de EditorConfig ou d’ensemb
 
 ## <a name="predefined-editorconfig-files"></a>Fichiers EditorConfig prédéfinis
 
-Les fichiers EditorConfig prédéfinis pour le package de l’analyseur Microsoft. CodeAnalysis. FxCopAnalyzers se trouvent dans *% UserProfile% \\. nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers @ no__t-2 @ no__t-3Version @ no__t-4\editorconfig* répertoire. Par exemple, le fichier EditorConfig pour activer toutes les règles de sécurité se trouve à l’emplacement *% UserProfile% \\. nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers @ no__t-2 @ no__t-3Version @ no__t-4\editorconfig\SecurityRulesEnabled @ no__ t-5. editorconfig*.
+Les fichiers EditorConfig prédéfinis pour le package de l’analyseur Microsoft. CodeAnalysis. FxCopAnalyzers se trouvent dans le dossier *% UserProfile% \\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers \\ \<version \> \editorconfig* répertoire. Par exemple, le fichier EditorConfig pour activer toutes les règles de sécurité se trouve à l’emplacement *% UserProfile% \\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers \\ \<version \> \editorconfig\securityrulesenabled \\. editorconfig*.
 
 Copiez le fichier. editorconfig choisi dans le répertoire racine de votre projet.
 
 ## <a name="predefined-rule-sets"></a>Ensembles de règles prédéfinis
 
-Les fichiers d’ensemble de règles prédéfinis pour le package de l’analyseur Microsoft. CodeAnalysis. FxCopAnalyzers se trouvent dans *% UserProfile% \\. nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers @ no__t-2 @ no__t-3Version @ no__t-4\rulesets* Directory. Par exemple, le fichier de l’ensemble de règles permettant d’activer toutes les règles de sécurité se trouve dans *% UserProfile% \\. nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers @ no__t-2 @ no__t-3Version @ no__t-4\rulesets\SecurityRulesEnabled.RuleSet*.
+Les fichiers d’ensemble de règles prédéfinis pour le package de l’analyseur Microsoft. CodeAnalysis. FxCopAnalyzers se trouvent dans le dossier *% UserProfile% \\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers \\ \<version \> \rulesets* Directory. Par exemple, le fichier d’ensemble de règles permettant d’activer toutes les règles de sécurité se trouve dans *% UserProfile% \\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers \\ \<version \> \rulesets\securityrulesenabled.RuleSet*.
 
 Copiez un ou plusieurs ensembles de règles et collez-les dans le répertoire qui contient votre projet Visual Studio ou directement dans **Explorateur de solutions**.
 
@@ -71,7 +71,7 @@ Le processus de définition de l’ensemble de règles actif est un peu différe
 
 #### <a name="net-core"></a>.NET Core
 
-Pour qu’une règle définisse l’ensemble de règles actif pour l’analyse dans les projets .NET Core ou .NET Standard, ajoutez manuellement la propriété **CodeAnalysisRuleSet** à votre fichier projet. Par exemple, l’extrait de code suivant définit `HelloWorld.ruleset` comme l’ensemble de règles actif.
+Pour qu’une règle définisse l’ensemble de règles actif pour l’analyse dans les projets .NET Core ou .NET Standard, ajoutez manuellement la propriété **CodeAnalysisRuleSet** à votre fichier projet. Par exemple, l’extrait de code suivant définit `HelloWorld.ruleset` comme ensemble de règles actif.
 
 ```xml
 <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -80,7 +80,7 @@ Pour qu’une règle définisse l’ensemble de règles actif pour l’analyse d
 </PropertyGroup>
 ```
 
-#### <a name="net-framework"></a>.NET Framework
+#### <a name="net-framework"></a>.NET Framework
 
 Pour définir l’ensemble de règles actif en vue d’une analyse dans des projets .NET Framework, procédez comme suit :
 

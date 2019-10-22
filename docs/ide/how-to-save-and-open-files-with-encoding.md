@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Enregistrer et ouvrir des fichiers avec encodage'
+title: Guide pratique pour enregistrer et ouvrir des fichiers avec encodage
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,19 +8,19 @@ helpviewer_keywords:
 - bidirectional language support, encoded files
 - file encoding, bidirectional languages
 ms.assetid: cb52b732-b395-4ba1-a3ef-104b3942a12a
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd3d7ccc248785c127c1eaf34da8840f824e4195
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: b02734af3efb24e1e3791246b0cea405b12d7b15
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946944"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645802"
 ---
-# <a name="how-to-save-and-open-files-with-encoding"></a>Procédure : Enregistrer et ouvrir des fichiers avec encodage
+# <a name="how-to-save-and-open-files-with-encoding"></a>Guide pratique pour enregistrer et ouvrir des fichiers avec encodage
 
 Vous pouvez enregistrer des fichiers ayant un codage de caractères spécifique pour permettre la prise en charge des langues bidirectionnelles. Vous pouvez également spécifier un codage à l’ouverture d’un fichier, afin que Visual Studio affiche le fichier correctement.
 

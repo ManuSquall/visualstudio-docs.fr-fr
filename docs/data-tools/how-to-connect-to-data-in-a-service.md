@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : se connecter à des données dans un service'
+title: 'Comment : se connecter à des données dans un service'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,26 +11,26 @@ helpviewer_keywords:
 - web services, as data sources
 - web services, connecting
 ms.assetid: a6b54353-05fe-4e5c-8631-90231fc95504
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7633d60ed672b64137b68bd9e6c3b860224753e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 75efb8656d54c02f3126493504506c913a7e0f4a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566932"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72642019"
 ---
-# <a name="how-to-connect-to-data-in-a-service"></a>Procédure : Se connecter à des données dans un service
+# <a name="how-to-connect-to-data-in-a-service"></a>Guide pratique pour se connecter à des données dans un service
 
-Vous connectez votre application aux données retournées à partir d’un service en exécutant la [Assistant de Configuration de Source de données](../data-tools/media/data-source-configuration-wizard.png) et en sélectionnant **Service** sur la **choisir un Type de Source de données**page.
+Pour connecter votre application aux données retournées par un service, exécutez l' [Assistant Configuration de source de données](../data-tools/media/data-source-configuration-wizard.png) et sélectionnez **service** dans la page **choisir un type de source de données** .
 
-À l’achèvement de l’Assistant, une référence de service est ajoutée à votre projet et est immédiatement disponible dans le [fenêtre Sources de données](add-new-data-sources.md#data-sources-window).
+Une fois l’Assistant terminé, une référence de service est ajoutée à votre projet et est immédiatement disponible dans la [fenêtre sources de données](add-new-data-sources.md#data-sources-window).
 
 > [!NOTE]
-> Les éléments qui s’affichent dans la fenêtre **Sources de données** dépendent des informations retournées par le service. Certains services peuvent ne pas fournir suffisamment d’informations pour que l’**Assistant Configuration de source de données** puisse créer des objets pouvant être liés. Par exemple, si le service retourne un dataset non typé, aucun élément ne s’affichent dans le **des Sources de données** fenêtre à la fin de l’Assistant. Il s’agit, car les datasets non typés ne fournissent pas de schéma, afin de l’Assistant n’a pas suffisamment d’informations pour créer la source de données.
+> Les éléments qui s’affichent dans la fenêtre **Sources de données** dépendent des informations retournées par le service. Certains services peuvent ne pas fournir suffisamment d’informations pour que l’**Assistant Configuration de source de données** puisse créer des objets pouvant être liés. Par exemple, si le service retourne un DataSet non typé, aucun élément ne s’affiche dans la fenêtre **sources de données** lors de la fin de l’Assistant. En effet, comme les datasets non typés ne fournissent pas de schéma, l’Assistant ne dispose pas de suffisamment d’informations pour créer la source de données.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -38,24 +38,24 @@ Vous connectez votre application aux données retournées à partir d’un servi
 
 1. Dans le menu **Données** , cliquez sur **Ajouter une nouvelle source de données**.
 
-2. Sélectionnez **Service** sur le **choisir un Type de Source de données** page, puis cliquez sur **suivant**.
+2. Sélectionnez **service** dans la page **choisir un type de source de données** , puis cliquez sur **suivant**.
 
-3. Entrez l’adresse du service que vous souhaitez utiliser, ou cliquez sur **Discover** à localiser les services dans la solution actuelle, puis cliquez sur **accédez**.
+3. Entrez l’adresse du service que vous souhaitez utiliser ou cliquez sur **découvrir** pour rechercher des services dans la solution actuelle, puis cliquez sur **OK**.
 
-4. Si vous le souhaitez, vous pouvez taper un nouveau **Namespace** à la place de la valeur par défaut.
+4. Si vous le souhaitez, vous pouvez taper un nouvel **espace de noms** à la place de la valeur par défaut.
 
     > [!NOTE]
-    > Cliquez sur **avancé** pour ouvrir le [boîte de dialogue Configurer la référence de Service](../data-tools/configure-service-reference-dialog-box.md).
+    > Cliquez sur **avancé** pour ouvrir la boîte de [dialogue Configurer la référence de service](../data-tools/configure-service-reference-dialog-box.md).
 
 5. Cliquez sur **OK** pour ajouter une référence de service à votre projet.
 
-6. Cliquez sur **Terminer**.
+6. Cliquez sur **Finish**.
 
      La source de données est ajoutée à la fenêtre **Sources de données**.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Pour ajouter des fonctionnalités à votre application, sélectionnez un élément dans le **des Sources de données** fenêtre et faites-le glisser sur un formulaire pour créer des contrôles liés. Pour plus d’informations, consultez [lier des contrôles aux données dans Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).
+Pour ajouter des fonctionnalités à votre application, sélectionnez un élément dans la fenêtre **sources de données** et faites-le glisser sur un formulaire pour créer des contrôles liés. Pour plus d’informations, consultez [lier des contrôles à des données dans Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).
 
 ## <a name="see-also"></a>Voir aussi
 

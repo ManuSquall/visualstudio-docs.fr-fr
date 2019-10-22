@@ -2,17 +2,17 @@
 title: Analyse des tests codés de l'interface utilisateur à l'aide des journaux de test codé de l'interface utilisateur
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 76aac39d50dc724916bca3d863c71bacf53407d9
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: 73916d309fa0e070bf4b05ba0d5a8fc02bef29f8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824485"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665320"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analyse des tests codés de l’interface utilisateur à l’aide des journaux de test codé de l’interface utilisateur
 
@@ -27,11 +27,11 @@ Selon votre scénario, appliquez l’une des méthodes suivantes pour activer le
 - S’il n’y a aucun fichier *App.config* présent dans votre projet de test :
 
    1. Déterminez quel processus *QTAgent\*.exe* est lancé lorsque vous exécutez votre test. La seule manière de faire cela est de regarder l’onglet **Détails** dans **Gestionnaire des tâches** Windows.
-   
+
    2. Ouvrez le fichier *.config* correspondant à partir de la version *%ProgramFiles(x86)%\Microsoft Visual Studio\\\<> dossier\\\<edition>\Common7\IDE*. Par exemple, si le processus qui s’exécute est *QTAgent_40.exe*, ouvrez *QTAgent_40.exe.config*.
 
    2. Modifiez la valeur de **EqtTraceLevel** par le niveau de journal souhaité.
-   
+
       ```xml
       <!-- You must use integral values for "value".
            Use 0 for off, 1 for error, 2 for warn, 3 for info, and 4 for verbose. -->
@@ -58,7 +58,7 @@ Selon votre scénario, appliquez l’une des méthodes suivantes pour activer le
    Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState = HtmlLoggerState.AllActionSnapshot;
    ```
 
-## <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>Étape 2 : Exécuter votre test codé de l’interface utilisateur et afficher le journal
+## <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>Étape 2 : Exécuter votre test codé de l'interface utilisateur et afficher le journal
 
 Quand vous exécutez un test codé de l’interface utilisateur avec les modifications apportées au fichier *QTAgent\*.exe.config* en place, vous constatez qu’un lien de sortie figure dans les résultats de l’**Explorateur de tests**. Des fichiers journaux sont générés non seulement quand votre test échoue, mais aussi quand les tests réussissent si le niveau de trace est défini sur **détaillé**.
 

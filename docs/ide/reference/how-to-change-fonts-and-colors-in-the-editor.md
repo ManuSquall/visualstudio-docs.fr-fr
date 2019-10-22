@@ -9,19 +9,19 @@ helpviewer_keywords:
 - text, fonts
 - editors, text color
 ms.assetid: 3f7629d1-1cdf-4046-9a31-0632517f234d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b1eb807143e7ee5c3283a88cff12f13515486fb
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
-ms.translationtype: HT
+ms.openlocfilehash: 7aa359e9918cb808989bb1f0e65de516af422dc6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605401"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668244"
 ---
-# <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>Procédure : Changer les polices et les couleurs de l’éditeur dans Visual Studio
+# <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>Comment : modifier les polices et les couleurs de l’éditeur dans Visual Studio
 
 Vous pouvez changer le type de police par défaut, ajuster la taille de police et changer les couleurs de premier plan et d’arrière-plan de divers **éléments d’affichage** texte dans l’éditeur de code. Quand vous changez les paramètres de police, gardez à l’esprit les informations suivantes :
 
@@ -33,9 +33,7 @@ Vous pouvez changer le type de police par défaut, ajuster la taille de police e
 
 ## <a name="change-the-default-font-face-size-and-colors"></a>Changer le type, la taille et les couleurs de police par défaut
 
-1. Sélectionnez **Options** dans le menu **Outils**, puis, dans le dossier **Environnement**, sélectionnez **Polices et couleurs**.
-
-     La [boîte de dialogue Polices et couleurs, Environnement, Options](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md) s’ouvre.
+1. Sélectionnez **Options** dans le menu **Outils**. Sous **environnement**, sélectionnez [polices et couleurs](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md).
 
 2. Dans **Afficher les paramètres de**, sélectionnez **Éditeur de texte**.
 

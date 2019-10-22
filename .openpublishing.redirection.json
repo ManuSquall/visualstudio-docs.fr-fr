@@ -581,6 +581,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/debugger/create-custom-views-of-dot-managed-objects.md",
+      "redirect_url": "/visualstudio/debugger/create-custom-views-of-managed-objects",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "docs/debugger/debug-css-styles-using-dom-explorer.md",
       "redirect_url": "/visualstudio/debugger/quickstart-debug-html-and-css",
       "redirect_document_id": false
@@ -979,6 +984,126 @@
       "source_path": "docs/deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md",
       "redirect_url": "/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/designers/designing-user-interfaces.md",
+      "redirect_url": "/visualstudio/xaml-tools/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/designers/animate-objects-in-xaml-designer.md",
+      "redirect_url": "/visualstudio/xaml-tools/animate-objects-in-xaml-designer.",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/designers/artboard-modifier-keys-in-blend.md",
+      "redirect_url": "/visualstudio/xaml-tools/artboard-modifier-keys-in-blend",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/designers/creating-a-ui-by-using-blend-for-visual-studio.md",
+      "redirect_url": "/visualstudio/xaml-tools/creating-a-ui-by-using-blend-for-visual-studio",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md",
+      "redirect_url": "/visualstudio/xaml-tools/creating-a-ui-by-using-xaml-designer-in-visual-studio",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/debugger/debug-xaml-in-blend.md",
+      "redirect_url": "/visualstudio/xaml-tools/debug-xaml-in-blend",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/designers/debugging-or-disabling-project-code-in-xaml-designer.md",
+      "redirect_url": "/visualstudio/xaml-tools/debugging-or-disabling-project-code-in-xaml-designer",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/designers/designing-xaml-in-visual-studio.md",
+      "redirect_url": "/visualstudio/xaml-tools/designing-xaml-in-visual-studio",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/designers/direct-selection-tool-modifier-keys-in-blend.md",
+      "redirect_url": "/visualstudio/xaml-tools/direct-selection-tool-modifier-keys-in-blend",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/designers/display-data-in-blend.md",
+      "redirect_url": "/visualstudio/xaml-tools/display-data-in-blend",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/designers/draw-shapes-and-paths.md",
+      "redirect_url": "/visualstudio/xaml-tools/draw-shapes-and-paths",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/designers/how-to-create-and-apply-a-resource.md",
+      "redirect_url": "/visualstudio/xaml-tools/how-to-create-and-apply-a-resource",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/debugger/inspect-xaml-properties-while-debugging.md",
+      "redirect_url": "/visualstudio/xaml-tools/inspect-xaml-properties-while-debugging",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/designers/keyboard-shortcuts-for-xaml-designer.md",
+      "redirect_url": "/visualstudio/xaml-tools/keyboard-shortcuts-for-xaml-designer",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/designers/keyboard-shortcuts-in-blend.md",
+      "redirect_url": "/visualstudio/xaml-tools/keyboard-shortcuts-in-blend",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/designers/modify-the-style-of-objects-in-blend.md",
+      "redirect_url": "/visualstudio/xaml-tools/modify-the-style-of-objects-in-blend",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/designers/organize-objects-into-layout-containers-in-xaml-designer.md",
+      "redirect_url": "/visualstudio/xaml-tools/organize-objects-into-layout-containers-in-xaml-designer",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/designers/pen-tool-modifier-keys-in-blend.md",
+      "redirect_url": "/visualstudio/xaml-tools/pen-tool-modifier-keys-in-blend",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/designers/walkthrough-binding-to-data-in-xaml-designer.md",
+      "redirect_url": "/visualstudio/xaml-tools/walkthrough-binding-to-data-in-xaml-designer",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/designers/working-with-elements-in-xaml-designer.md",
+      "redirect_url": "/visualstudio/xaml-tools/working-with-elements-in-xaml-designer",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/designers/xaml-errors-warnings.md",
+      "redirect_url": "/visualstudio/xaml-tools/xaml-errors-warnings",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/debugger/xaml-hot-reload-troubleshooting.md",
+      "redirect_url": "/visualstudio/xaml-tools/xaml-hot-reload-troubleshooting",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/debugger/xaml-hot-reload.md",
+      "redirect_url": "/visualstudio/xaml-tools/xaml-hot-reload",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/designers/xaml-overview.md",
+      "redirect_url": "/visualstudio/xaml-tools/xaml-overview",
+      "redirect_document_id": true
     },
     {
       "source_path": "docs/designers/insert-images-videos-and-audio-clips-in-xaml-designer.md",
@@ -3554,6 +3679,11 @@
       "source_path": "docs/vb6/vb6-support.md",
       "redirect_url": "/previous-versions/visualstudio/visual-basic-6/visual-basic-6-support-policy",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/vs-2015/debugger/create-custom-views-of-dot-managed-objects.md",
+      "redirect_url": "/visualstudio/debugger/create-custom-views-of-managed-objects?view=vs-2015",
+      "redirect_document_id": true
     },
     {
       "source_path": "docs/vs-2015/debugger/error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running-on-the-remote-computer.md",
@@ -7752,12 +7882,12 @@
     },
     {
       "source_path": "scripting-docs/winscript/index.md",
-      "redirect_url": "/script/winscript/active-script-debugging-overview",
+      "redirect_url": "/scripting/winscript/active-script-debugging-overview",
       "redirect_document_id": false
     },
     {
       "source_path": "scripting-docs/winscript/reference/index.md",
-      "redirect_url": "/script/winscript/windows-script-interfaces-reference",
+      "redirect_url": "/scripting/winscript/reference/windows-script-interfaces-reference",
       "redirect_document_id": false
     },
     {
@@ -8291,9 +8421,914 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "docs/code-quality/ca1800-do-not-cast-unnecessarily.md",
+      "redirect_url": "/visualstudio/code-quality/ca1800",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1801-review-unused-parameters.md",
+      "redirect_url": "/visualstudio/code-quality/ca1801",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1802-use-literals-where-appropriate.md",
+      "redirect_url": "/visualstudio/code-quality/ca1802",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1804-remove-unused-locals.md",
+      "redirect_url": "/visualstudio/code-quality/ca1804",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1806-do-not-ignore-method-results.md",
+      "redirect_url": "/visualstudio/code-quality/ca1806",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1809-avoid-excessive-locals.md",
+      "redirect_url": "/visualstudio/code-quality/ca1809",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1810-initialize-reference-type-static-fields-inline.md",
+      "redirect_url": "/visualstudio/code-quality/ca1810",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1811-avoid-uncalled-private-code.md",
+      "redirect_url": "/visualstudio/code-quality/ca1811",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1812-avoid-uninstantiated-internal-classes.md",
+      "redirect_url": "/visualstudio/code-quality/ca1812",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1813-avoid-unsealed-attributes.md",
+      "redirect_url": "/visualstudio/code-quality/ca1813",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1814-prefer-jagged-arrays-over-multidimensional.md",
+      "redirect_url": "/visualstudio/code-quality/ca1814",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md",
+      "redirect_url": "/visualstudio/code-quality/ca1815",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1819-properties-should-not-return-arrays.md",
+      "redirect_url": "/visualstudio/code-quality/ca1819",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1820-test-for-empty-strings-using-string-length.md",
+      "redirect_url": "/visualstudio/code-quality/ca1820",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1821-remove-empty-finalizers.md",
+      "redirect_url": "/visualstudio/code-quality/ca1821",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1822-mark-members-as-static.md",
+      "redirect_url": "/visualstudio/code-quality/ca1822",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1823-avoid-unused-private-fields.md",
+      "redirect_url": "/visualstudio/code-quality/ca1823",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md",
+      "redirect_url": "/visualstudio/code-quality/ca1824",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "docs/version-control/index.md",
       "redirect_url": "/azure/devops/repos/index",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/code-quality/ca2200-rethrow-to-preserve-stack-details.md",
+      "redirect_url": "/visualstudio/code-quality/ca2200",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca2201-do-not-raise-reserved-exception-types.md",
+      "redirect_url": "/visualstudio/code-quality/ca2201",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca2202-do-not-dispose-objects-multiple-times.md",
+      "redirect_url": "/visualstudio/code-quality/ca2202",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca2204-literals-should-be-spelled-correctly.md",
+      "redirect_url": "/visualstudio/code-quality/ca2204",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca2205-use-managed-equivalents-of-win32-api.md",
+      "redirect_url": "/visualstudio/code-quality/ca2205",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca2207-initialize-value-type-static-fields-inline.md",
+      "redirect_url": "/visualstudio/code-quality/ca2207",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca2208-instantiate-argument-exceptions-correctly.md",
+      "redirect_url": "/visualstudio/code-quality/ca2208",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca2210-assemblies-should-have-valid-strong-names.md",
+      "redirect_url": "/visualstudio/code-quality/ca2210",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca2211-non-constant-fields-should-not-be-visible.md",
+      "redirect_url": "/visualstudio/code-quality/ca2211",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca2212-do-not-mark-serviced-components-with-webmethod.md",
+      "redirect_url": "/visualstudio/code-quality/ca2212",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca2213-disposable-fields-should-be-disposed.md",
+      "redirect_url": "/visualstudio/code-quality/ca2213",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca2214-do-not-call-overridable-methods-in-constructors.md",
+      "redirect_url": "/visualstudio/code-quality/ca2214",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md",
+      "redirect_url": "/visualstudio/code-quality/ca2215",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca2216-disposable-types-should-declare-finalizer.md",
+      "redirect_url": "/visualstudio/code-quality/ca2216",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md",
+      "redirect_url": "/visualstudio/code-quality/ca2217",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca2218-override-gethashcode-on-overriding-equals.md",
+      "redirect_url": "/visualstudio/code-quality/ca2218",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md",
+      "redirect_url": "/visualstudio/code-quality/ca2219",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca2220-finalizers-should-call-base-class-finalizer.md",
+      "redirect_url": "/visualstudio/code-quality/ca2220",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca2221-finalizers-should-be-protected.md",
+      "redirect_url": "/visualstudio/code-quality/ca2221",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca2222-do-not-decrease-inherited-member-visibility.md",
+      "redirect_url": "/visualstudio/code-quality/ca2222",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca2223-members-should-differ-by-more-than-return-type.md",
+      "redirect_url": "/visualstudio/code-quality/ca2223",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca2224-override-equals-on-overloading-operator-equals.md",
+      "redirect_url": "/visualstudio/code-quality/ca2224",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca2225-operator-overloads-have-named-alternates.md",
+      "redirect_url": "/visualstudio/code-quality/ca2225",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca2226-operators-should-have-symmetrical-overloads.md",
+      "redirect_url": "/visualstudio/code-quality/ca2226",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca2227-collection-properties-should-be-read-only.md",
+      "redirect_url": "/visualstudio/code-quality/ca2227",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca2228-do-not-ship-unreleased-resource-formats.md",
+      "redirect_url": "/visualstudio/code-quality/ca2228",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca2229-implement-serialization-constructors.md",
+      "redirect_url": "/visualstudio/code-quality/ca2229",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca2230-use-params-for-variable-arguments.md",
+      "redirect_url": "/visualstudio/code-quality/ca2230",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md",
+      "redirect_url": "/visualstudio/code-quality/ca2231",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca2232-mark-windows-forms-entry-points-with-stathread.md",
+      "redirect_url": "/visualstudio/code-quality/ca2232",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca2233-operations-should-not-overflow.md",
+      "redirect_url": "/visualstudio/code-quality/ca2233",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md",
+      "redirect_url": "/visualstudio/code-quality/ca2234",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca2235-mark-all-non-serializable-fields.md",
+      "redirect_url": "/visualstudio/code-quality/ca2235",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca2236-call-base-class-methods-on-iserializable-types.md",
+      "redirect_url": "/visualstudio/code-quality/ca2236",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md",
+      "redirect_url": "/visualstudio/code-quality/ca2237",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca2238-implement-serialization-methods-correctly.md",
+      "redirect_url": "/visualstudio/code-quality/ca2238",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md",
+      "redirect_url": "/visualstudio/code-quality/ca2239",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca2240-implement-iserializable-correctly.md",
+      "redirect_url": "/visualstudio/code-quality/ca2240",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca2241-provide-correct-arguments-to-formatting-methods.md",
+      "redirect_url": "/visualstudio/code-quality/ca2241",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca2242-test-for-nan-correctly.md",
+      "redirect_url": "/visualstudio/code-quality/ca2242",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca2243-attribute-string-literals-should-parse-correctly.md",
+      "redirect_url": "/visualstudio/code-quality/ca2243",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "subscriptions/vs-office-dev.md",
+      "redirect_url": "/visualstudio/subscriptions/vs-m365",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/code-quality/ca5350-do-not-use-weak-cryptographic-algorithms.md",
+      "redirect_url": "/visualstudio/code-quality/ca5350",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca5351-do-not-use-broken-cryptographic-algorithms.md",
+      "redirect_url": "/visualstudio/code-quality/ca5351",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md",
+      "redirect_url": "/visualstudio/code-quality/ca2101",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md",
+      "redirect_url": "/visualstudio/code-quality/ca1001",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1009-declare-event-handlers-correctly.md",
+      "redirect_url": "/visualstudio/code-quality/ca1009",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1016-mark-assemblies-with-assemblyversionattribute.md",
+      "redirect_url": "/visualstudio/code-quality/ca1016",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1033-interface-methods-should-be-callable-by-child-types.md",
+      "redirect_url": "/visualstudio/code-quality/ca1033",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md",
+      "redirect_url": "/visualstudio/code-quality/ca1049",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1060-move-p-invokes-to-nativemethods-class.md",
+      "redirect_url": "/visualstudio/code-quality/ca1060",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1061-do-not-hide-base-class-methods.md",
+      "redirect_url": "/visualstudio/code-quality/ca1061",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1063-implement-idisposable-correctly.md",
+      "redirect_url": "/visualstudio/code-quality/ca1063",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md",
+      "redirect_url": "/visualstudio/code-quality/ca1065",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1301-avoid-duplicate-accelerators.md",
+      "redirect_url": "/visualstudio/code-quality/ca1301",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1400-p-invoke-entry-points-should-exist.md",
+      "redirect_url": "/visualstudio/code-quality/ca1400",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1401-p-invokes-should-not-be-visible.md",
+      "redirect_url": "/visualstudio/code-quality/ca1401",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md",
+      "redirect_url": "/visualstudio/code-quality/ca1403",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md",
+      "redirect_url": "/visualstudio/code-quality/ca1404",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md",
+      "redirect_url": "/visualstudio/code-quality/ca1405",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1410-com-registration-methods-should-be-matched.md",
+      "redirect_url": "/visualstudio/code-quality/ca1410",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1415-declare-p-invokes-correctly.md",
+      "redirect_url": "/visualstudio/code-quality/ca1415",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1000-do-not-declare-static-members-on-generic-types.md",
+      "redirect_url": "/visualstudio/code-quality/ca1000",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1002-do-not-expose-generic-lists.md",
+      "redirect_url": "/visualstudio/code-quality/ca1002",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1003-use-generic-event-handler-instances.md",
+      "redirect_url": "/visualstudio/code-quality/ca1003",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1004-generic-methods-should-provide-type-parameter.md",
+      "redirect_url": "/visualstudio/code-quality/ca1004",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md",
+      "redirect_url": "/visualstudio/code-quality/ca1005",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md",
+      "redirect_url": "/visualstudio/code-quality/ca1006",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1007-use-generics-where-appropriate.md",
+      "redirect_url": "/visualstudio/code-quality/ca1007",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1008-enums-should-have-zero-value.md",
+      "redirect_url": "/visualstudio/code-quality/ca1008",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1010-collections-should-implement-generic-interface.md",
+      "redirect_url": "/visualstudio/code-quality/ca1010",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1011-consider-passing-base-types-as-parameters.md",
+      "redirect_url": "/visualstudio/code-quality/ca1011",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1012-abstract-types-should-not-have-constructors.md",
+      "redirect_url": "/visualstudio/code-quality/ca1012",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md",
+      "redirect_url": "/visualstudio/code-quality/ca1013",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md",
+      "redirect_url": "/visualstudio/code-quality/ca1014",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md",
+      "redirect_url": "/visualstudio/code-quality/ca1017",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1018-mark-attributes-with-attributeusageattribute.md",
+      "redirect_url": "/visualstudio/code-quality/ca1018",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1019-define-accessors-for-attribute-arguments.md",
+      "redirect_url": "/visualstudio/code-quality/ca1019",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1023-indexers-should-not-be-multidimensional.md",
+      "redirect_url": "/visualstudio/code-quality/ca1023",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1024-use-properties-where-appropriate.md",
+      "redirect_url": "/visualstudio/code-quality/ca1024",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1025-replace-repetitive-arguments-with-params-array.md",
+      "redirect_url": "/visualstudio/code-quality/ca1025",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1026-default-parameters-should-not-be-used.md",
+      "redirect_url": "/visualstudio/code-quality/ca1026",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1027-mark-enums-with-flagsattribute.md",
+      "redirect_url": "/visualstudio/code-quality/ca1027",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1028-enum-storage-should-be-int32.md",
+      "redirect_url": "/visualstudio/code-quality/ca1028",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1030-use-events-where-appropriate.md",
+      "redirect_url": "/visualstudio/code-quality/ca1030",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1031-do-not-catch-general-exception-types.md",
+      "redirect_url": "/visualstudio/code-quality/ca1031",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1032-implement-standard-exception-constructors.md",
+      "redirect_url": "/visualstudio/code-quality/ca1032",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1034-nested-types-should-not-be-visible.md",
+      "redirect_url": "/visualstudio/code-quality/ca1034",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1035-icollection-implementations-have-strongly-typed-members.md",
+      "redirect_url": "/visualstudio/code-quality/ca1035",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1036-override-methods-on-comparable-types.md",
+      "redirect_url": "/visualstudio/code-quality/ca1036",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1038-enumerators-should-be-strongly-typed.md",
+      "redirect_url": "/visualstudio/code-quality/ca1038",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1039-lists-are-strongly-typed.md",
+      "redirect_url": "/visualstudio/code-quality/ca1039",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1041-provide-obsoleteattribute-message.md",
+      "redirect_url": "/visualstudio/code-quality/ca1041",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1043-use-integral-or-string-argument-for-indexers.md",
+      "redirect_url": "/visualstudio/code-quality/ca1043",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1044-properties-should-not-be-write-only.md",
+      "redirect_url": "/visualstudio/code-quality/ca1044",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md",
+      "redirect_url": "/visualstudio/code-quality/ca1046",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1047-do-not-declare-protected-members-in-sealed-types.md",
+      "redirect_url": "/visualstudio/code-quality/ca1047",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1048-do-not-declare-virtual-members-in-sealed-types.md",
+      "redirect_url": "/visualstudio/code-quality/ca1048",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1050-declare-types-in-namespaces.md",
+      "redirect_url": "/visualstudio/code-quality/ca1050",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1051-do-not-declare-visible-instance-fields.md",
+      "redirect_url": "/visualstudio/code-quality/ca1051",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1052-static-holder-types-should-be-sealed.md",
+      "redirect_url": "/visualstudio/code-quality/ca1052",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1053-static-holder-types-should-not-have-constructors.md",
+      "redirect_url": "/visualstudio/code-quality/ca1053",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1054-uri-parameters-should-not-be-strings.md",
+      "redirect_url": "/visualstudio/code-quality/ca1054",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1055-uri-return-values-should-not-be-strings.md",
+      "redirect_url": "/visualstudio/code-quality/ca1055",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1056-uri-properties-should-not-be-strings.md",
+      "redirect_url": "/visualstudio/code-quality/ca1056",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md",
+      "redirect_url": "/visualstudio/code-quality/ca1057",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1058-types-should-not-extend-certain-base-types.md",
+      "redirect_url": "/visualstudio/code-quality/ca1058",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1059-members-should-not-expose-certain-concrete-types.md",
+      "redirect_url": "/visualstudio/code-quality/ca1059",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1064-exceptions-should-be-public.md",
+      "redirect_url": "/visualstudio/code-quality/ca1064",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1500-variable-names-should-not-match-field-names.md",
+      "redirect_url": "/visualstudio/code-quality/ca1500",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1502-avoid-excessive-complexity.md",
+      "redirect_url": "/visualstudio/code-quality/ca1502",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1708-identifiers-should-differ-by-more-than-case.md",
+      "redirect_url": "/visualstudio/code-quality/ca1708",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1716-identifiers-should-not-match-keywords.md",
+      "redirect_url": "/visualstudio/code-quality/ca1716",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1020-avoid-namespaces-with-few-types.md",
+      "redirect_url": "/visualstudio/code-quality/ca1020",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1021-avoid-out-parameters.md",
+      "redirect_url": "/visualstudio/code-quality/ca1021",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1040-avoid-empty-interfaces.md",
+      "redirect_url": "/visualstudio/code-quality/ca1040",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1045-do-not-pass-types-by-reference.md",
+      "redirect_url": "/visualstudio/code-quality/ca1045",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1062-validate-arguments-of-public-methods.md",
+      "redirect_url": "/visualstudio/code-quality/ca1062",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1300-specify-messageboxoptions.md",
+      "redirect_url": "/visualstudio/code-quality/ca1300",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1302-do-not-hardcode-locale-specific-strings.md",
+      "redirect_url": "/visualstudio/code-quality/ca1302",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md",
+      "redirect_url": "/visualstudio/code-quality/ca1303",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1304-specify-cultureinfo.md",
+      "redirect_url": "/visualstudio/code-quality/ca1304",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1305-specify-iformatprovider.md",
+      "redirect_url": "/visualstudio/code-quality/ca1305",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1306-set-locale-for-data-types.md",
+      "redirect_url": "/visualstudio/code-quality/ca1306",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1307-specify-stringcomparison.md",
+      "redirect_url": "/visualstudio/code-quality/ca1307",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1308-normalize-strings-to-uppercase.md",
+      "redirect_url": "/visualstudio/code-quality/ca1308",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1309-use-ordinal-stringcomparison.md",
+      "redirect_url": "/visualstudio/code-quality/ca1309",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1402-avoid-overloads-in-com-visible-interfaces.md",
+      "redirect_url": "/visualstudio/code-quality/ca1402",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1406-avoid-int64-arguments-for-visual-basic-6-clients.md",
+      "redirect_url": "/visualstudio/code-quality/ca1406",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1407-avoid-static-members-in-com-visible-types.md",
+      "redirect_url": "/visualstudio/code-quality/ca1407",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1408-do-not-use-autodual-classinterfacetype.md",
+      "redirect_url": "/visualstudio/code-quality/ca1408",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1409-com-visible-types-should-be-creatable.md",
+      "redirect_url": "/visualstudio/code-quality/ca1409",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1411-com-registration-methods-should-not-be-visible.md",
+      "redirect_url": "/visualstudio/code-quality/ca1411",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1412-mark-comsource-interfaces-as-idispatch.md",
+      "redirect_url": "/visualstudio/code-quality/ca1412",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md",
+      "redirect_url": "/visualstudio/code-quality/ca1413",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1414-mark-boolean-p-invoke-arguments-with-marshalas.md",
+      "redirect_url": "/visualstudio/code-quality/ca1414",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1501-avoid-excessive-inheritance.md",
+      "redirect_url": "/visualstudio/code-quality/ca1501",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1504-review-misleading-field-names.md",
+      "redirect_url": "/visualstudio/code-quality/ca1504",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1505-avoid-unmaintainable-code.md",
+      "redirect_url": "/visualstudio/code-quality/ca1505",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1506-avoid-excessive-class-coupling.md",
+      "redirect_url": "/visualstudio/code-quality/ca1506",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1600-do-not-use-idle-process-priority.md",
+      "redirect_url": "/visualstudio/code-quality/ca1600",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1601-do-not-use-timers-that-prevent-power-state-changes.md",
+      "redirect_url": "/visualstudio/code-quality/ca1601",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1700-do-not-name-enum-values-reserved.md",
+      "redirect_url": "/visualstudio/code-quality/ca1700",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md",
+      "redirect_url": "/visualstudio/code-quality/ca1701",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1702-compound-words-should-be-cased-correctly.md",
+      "redirect_url": "/visualstudio/code-quality/ca1702",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1703-resource-strings-should-be-spelled-correctly.md",
+      "redirect_url": "/visualstudio/code-quality/ca1703",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1704-identifiers-should-be-spelled-correctly.md",
+      "redirect_url": "/visualstudio/code-quality/ca1704",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1707-identifiers-should-not-contain-underscores.md",
+      "redirect_url": "/visualstudio/code-quality/ca1707",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1709-identifiers-should-be-cased-correctly.md",
+      "redirect_url": "/visualstudio/code-quality/ca1709",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1710-identifiers-should-have-correct-suffix.md",
+      "redirect_url": "/visualstudio/code-quality/ca1710",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md",
+      "redirect_url": "/visualstudio/code-quality/ca1711",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md",
+      "redirect_url": "/visualstudio/code-quality/ca1712",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1713-events-should-not-have-before-or-after-prefix.md",
+      "redirect_url": "/visualstudio/code-quality/ca1713",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1714-flags-enums-should-have-plural-names.md",
+      "redirect_url": "/visualstudio/code-quality/ca1714",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1715-identifiers-should-have-correct-prefix.md",
+      "redirect_url": "/visualstudio/code-quality/ca1715",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1717-only-flagsattribute-enums-should-have-plural-names.md",
+      "redirect_url": "/visualstudio/code-quality/ca1717",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1719-parameter-names-should-not-match-member-names.md",
+      "redirect_url": "/visualstudio/code-quality/ca1719",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1720-identifiers-should-not-contain-type-names.md",
+      "redirect_url": "/visualstudio/code-quality/ca1720",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1721-property-names-should-not-match-get-methods.md",
+      "redirect_url": "/visualstudio/code-quality/ca1721",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1722-identifiers-should-not-have-incorrect-prefix.md",
+      "redirect_url": "/visualstudio/code-quality/ca1722",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1724-type-names-should-not-match-namespaces.md",
+      "redirect_url": "/visualstudio/code-quality/ca1724",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1725-parameter-names-should-match-base-declaration.md",
+      "redirect_url": "/visualstudio/code-quality/ca1725",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/code-quality/ca1726-use-preferred-terms.md",
+      "redirect_url": "/visualstudio/code-quality/ca1726",
+      "redirect_document_id": true
     }
   ]
 }

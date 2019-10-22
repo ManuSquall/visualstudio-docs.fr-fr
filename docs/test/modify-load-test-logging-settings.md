@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - load tests, logging, modifying
 ms.assetid: 9649226a-857d-41ef-8ec7-047b6e498033
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9751ce3b08a0ac963cccdf091ccb99001c6f2c9f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 64e65a08910757d564e1fca0d3280770a1a60af9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62785771"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72646654"
 ---
 # <a name="modify-load-test-logging-settings"></a>Modifier les paramètres de journalisation du test de charge
 
@@ -25,8 +25,8 @@ Le *contrôleur de test* met en attente toutes les données d’échantillons de
 
 |Tâche|Rubriques associées|
 |-|-----------------------|
-|**Enregistrer des journaux en cas d’échec d’un test de charge :** vous pouvez spécifier si vous souhaitez enregistrer le journal des tests chaque fois qu’un test de charge échoue.|-   [Guide pratique pour spécifier si les échecs de test doivent être enregistrés dans les journaux des tests](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
-|**Définir la taille maximale du fichier journal :** vous pouvez modifier le fichier config XML associé au service de contrôleur de test pour spécifier la taille de fichier maximale à utiliser pour le fichier journal.|Modifiez `<add key="LogSizeLimitInMegs" value="20"/>` dans le fichier de configuration XML *QTCcontroller.exe.config*.|
+|**Enregistrer des journaux si un test de charge échoue :** Vous pouvez également spécifier si vous souhaitez enregistrer le journal des tests chaque fois qu’un test de charge échoue.|-   [Guide pratique pour spécifier si les échecs de test doivent être enregistrés dans les journaux de tests](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
+|**Définir la taille de fichier maximum du fichier journal :** Vous pouvez modifier le fichier de configuration XML associé au service de contrôleur de test pour spécifier la taille de fichier maximum à utiliser pour le fichier journal.|Modifiez `<add key="LogSizeLimitInMegs" value="20"/>` dans le fichier de configuration XML *QTCcontroller.exe.config*.|
 
 ## <a name="see-also"></a>Voir aussi
 

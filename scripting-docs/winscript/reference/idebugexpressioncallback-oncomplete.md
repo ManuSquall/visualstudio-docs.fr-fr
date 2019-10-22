@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionCallBack::onComplete | Microsoft Docs
+title: 'IDebugExpressionCallBack :: onComplete | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7bcadc8c9d4fe8c1991db19483673a36bf5c0b90
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1fd142cc7ecbcd984be1943da05fa782260b10f8
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946301"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576421"
 ---
 # <a name="idebugexpressioncallbackoncomplete"></a>IDebugExpressionCallBack::onComplete
-Indique que l’évaluation d’expression est terminée.  
+Indique que l’évaluation de l’expression est terminée.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -34,18 +34,18 @@ HRESULT onComplete();
 ```  
   
 #### <a name="parameters"></a>Paramètres  
- Cette méthode ne prend aucun paramètre.  
+ Cette méthode n’accepte aucun paramètre.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode est appelée lorsque l’évaluation d’expression est terminée. Le `IDebugExpression::GetResultAsString` méthode peut être appelée à partir de ce gestionnaire d’événements.  
+ Cette méthode est appelée lorsque l’évaluation de l’expression est terminée. La méthode `IDebugExpression::GetResultAsString` peut être appelée à partir de ce gestionnaire d’événements.  
   
 ## <a name="see-also"></a>Voir aussi  
- [IDebugExpressionCallBack (Interface)](../../winscript/reference/idebugexpressioncallback-interface.md)   
+ @No__t_1 de l' [interface IDebugExpressionCallBack](../../winscript/reference/idebugexpressioncallback-interface.md)  
  [IDebugExpression::GetResultAsString](../../winscript/reference/idebugexpression-getresultasstring.md)

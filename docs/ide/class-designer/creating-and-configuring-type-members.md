@@ -24,17 +24,17 @@ helpviewer_keywords:
 - Class Details window
 - Class Details window, member creation
 ms.assetid: 42af8738-3738-4ca7-82ff-edf573a68f96
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 811565d6e4189eb04b33ce07fe04718def905922
-ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
-ms.translationtype: HT
+ms.openlocfilehash: 0a842ccb936c755a27ab28287f9da8d6355e92fc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68250637"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647753"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Créer et configurer des membres de type dans le Concepteur de classes
 
@@ -42,7 +42,7 @@ Vous pouvez ajouter ces membres aux types dans un diagramme de classes et config
 
 |**Type**|**Membres qu’il peut contenir**|
 |--------------| - |
-|Classe|méthode, propriété (pour C# et Visual Basic), champ, événement (pour C# et Visual Basic), constructeur (méthode), destructeur (méthode), constante|
+|Class|méthode, propriété (pour C# et Visual Basic), champ, événement (pour C# et Visual Basic), constructeur (méthode), destructeur (méthode), constante|
 |Enum|member|
 |Interface|méthode, propriété, événement (pour C# et Visual Basic)|
 |Classe abstraite|méthode, propriété (pour C# et Visual Basic), champ, événement (pour C# et Visual Basic), constructeur (méthode), destructeur (méthode), constante|
@@ -57,12 +57,12 @@ Vous pouvez ajouter ces membres aux types dans un diagramme de classes et config
 
 |Tâche|Contenu de support|
 |----------| - |
-|**Bien démarrer :** avant de créer et de configurer des membres de type, vous devez ouvrir la fenêtre **Détails de classe**.|- [Ouvrir la fenêtre Détails de classe](creating-and-configuring-type-members.md#open-the-class-details-window)<br />- [Notes d’utilisation de la fenêtre Détails de classe](creating-and-configuring-type-members.md#class-details-usage-notes)<br />- [Affichage d’informations en lecture seule](creating-and-configuring-type-members.md#display-of-read-only-information)<br />- [Raccourcis clavier et souris dans le diagramme de classes et dans la fenêtre Détails de classe](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
-|**Créer et modifier des membres de type :** vous pouvez créer des membres, en modifier et ajouter des paramètres à une méthode avec la fenêtre **Détails de classe**.|- [Créer des membres](creating-and-configuring-type-members.md#create-members)<br />- [Modifier des membres de type](creating-and-configuring-type-members.md#modify-type-members)<br />- [Ajouter des paramètres aux méthodes](creating-and-configuring-type-members.md#add-parameters-to-methods)|
+|**Bien démarrer** : avant de créer et de configurer des membres de type, vous devez ouvrir la fenêtre **Détails de classe**.|- [Ouvrir la fenêtre Détails de classe](creating-and-configuring-type-members.md#open-the-class-details-window)<br />- [Notes d’utilisation de la fenêtre Détails de classe](creating-and-configuring-type-members.md#class-details-usage-notes)<br />- [Affichage d’informations en lecture seule](creating-and-configuring-type-members.md#display-of-read-only-information)<br />- [Raccourcis clavier et souris dans le diagramme de classes et dans la fenêtre Détails de classe](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md)|
+|**Créer et modifier les membres de type** : vous pouvez créer d’autres membres, modifier des membres existants et ajouter des paramètres à une méthode à l’aide de la fenêtre **Détails de classe**.|- [Créer des membres](creating-and-configuring-type-members.md#create-members)<br />- [Modifier des membres de type](creating-and-configuring-type-members.md#modify-type-members)<br />- [Ajouter des paramètres aux méthodes](creating-and-configuring-type-members.md#add-parameters-to-methods)|
 
 ## <a name="open-the-class-details-window"></a>Ouvrir la fenêtre Détails de classe
 
-Par défaut, la fenêtre **Détails de classe** s’affiche automatiquement quand vous ouvrez un nouveau diagramme de classes. Voir [Guide pratique pour ajouter des diagrammes de classes à des projets](how-to-add-class-diagrams-to-projects.md). Vous pouvez aussi ouvrir la fenêtre **Détails de classe** des manières suivantes :
+Par défaut, la fenêtre **Détails de classe** s’affiche automatiquement quand vous ouvrez un nouveau diagramme de classes. Consultez [Guide pratique pour ajouter des diagrammes de classes aux projets](how-to-add-class-diagrams-to-projects.md). Vous pouvez aussi ouvrir la fenêtre **Détails de classe** des manières suivantes :
 
 - Cliquez avec le bouton droit sur une classe du diagramme pour afficher un menu contextuel, puis sélectionnez **Détails de classe**.
 
@@ -186,7 +186,7 @@ Ajoutez des paramètres aux méthodes à l’aide de la fenêtre **Détails de c
 
 Les lignes de paramètres contiennent les éléments suivants :
 
-- **Name**
+- **Nom**
 
      La colonne **Nom** d’une ligne de paramètre affiche le nom du paramètre. Ce nom est également affiché dans la propriété **Nom** de la fenêtre Propriétés. Vous pouvez utiliser cette cellule pour modifier le nom d'un paramètre ayant les autorisations en lecture-écriture.
 
@@ -208,7 +208,7 @@ Les lignes de paramètres contiennent les éléments suivants :
 
      La dernière ligne de paramètres d’un membre contient le texte **<ajouter un paramètre\>** dans la cellule **Nom**. Cliquez sur cette cellule pour créer un nouveau paramètre. Pour plus d’informations, consultez [Pour ajouter un paramètre à une méthode](creating-and-configuring-type-members.md#add-parameters-to-methods).
 
-La fenêtre **Propriétés** présente les mêmes propriétés de paramètres que la fenêtre **Détails de classe** : **Nom**, **Type**, **Modificateur**, **Résumé**, ainsi que la propriété **Valeur par défaut facultative**. La modification d'une propriété dans un emplacement met à jour la valeur de la propriété de manière globale, y compris l'affichage de sa valeur dans l'autre emplacement.
+La fenêtre **Propriétés** affiche les mêmes propriétés de paramètre que celles affichées dans la fenêtre **Détails de classe** : **Nom**, **Type**, **Modificateur**, **Résumé**, ainsi que la propriété **Valeur par défaut facultative**. La modification d'une propriété dans un emplacement met à jour la valeur de la propriété de manière globale, y compris l'affichage de sa valeur dans l'autre emplacement.
 
 > [!NOTE]
 > Pour ajouter un paramètre à un délégué, consultez [Créer des membres](creating-and-configuring-type-members.md#create-members).

@@ -5,19 +5,19 @@ ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.selecttfsruleset
 ms.assetid: 9b02f934-2db6-41ec-aaff-9c31ceec2f04
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a35ba1b9d54507883882fbe62c0533805882560
-ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.openlocfilehash: fe6e9e49998c3e98335cd7e873d53531c8bfa99a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71975059"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649384"
 ---
-# <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Procédure : Synchroniser des ensembles de règles de projet de code avec une stratégie d’archivage de projet Azure DevOps
+# <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Procédure : synchroniser des ensembles de règles de projet de code avec une stratégie d’archivage de projet Azure DevOps
 
 Vous synchronisez les paramètres d’analyse du code des projets de code avec la stratégie d’archivage du projet Azure DevOps en spécifiant un ensemble de règles qui contient au moins les règles spécifiées dans l’ensemble de règles pour la stratégie d’archivage. Votre responsable de développeur peut vous informer du nom et de l’emplacement de l’ensemble de règles pour la stratégie d’archivage. Vous pouvez utiliser l’une des options suivantes pour vous assurer que l’analyse du code du projet utilise l’ensemble de règles correct :
 
@@ -31,7 +31,7 @@ Vous synchronisez les paramètres d’analyse du code des projets de code avec l
 
 ## <a name="to-specify-a-microsoft-standard-rule-set"></a>Pour spécifier un ensemble de règles standard Microsoft
 
-1. Dans **l’Explorateur de solutions**, cliquez sur le projet de code, puis cliquez sur **propriétés**.
+1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le projet de code, puis cliquez sur **Propriétés**.
 
 2. Cliquez sur **analyse du code**.
 
@@ -51,7 +51,7 @@ Vous synchronisez les paramètres d’analyse du code des projets de code avec l
 
 1. Si nécessaire, effectuez une opération d’extraction sur le fichier d’ensemble de règles qui spécifie la stratégie d’archivage.
 
-2. Dans **l’Explorateur de solutions**, cliquez sur le projet de code, puis cliquez sur **propriétés**.
+2. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le projet de code, puis cliquez sur **Propriétés**.
 
 3. Cliquez sur **analyse du code**.
 

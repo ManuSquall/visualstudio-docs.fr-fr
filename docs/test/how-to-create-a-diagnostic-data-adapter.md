@@ -1,21 +1,21 @@
 ---
-title: 'Procédure : créer un adaptateur de données de diagnostic'
+title: 'Comment : créer un adaptateur de données de diagnostic'
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Diagnostic Data Adapter, creating
 ms.assetid: bd7ad36c-54cb-4d2a-9aea-9d10ad98d7ba
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 517d4e0558aeca1518316520191ae6c662b41a9e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a1940cda15d1ac5515e25b1e1e997f13a32d6e53
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950717"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653697"
 ---
-# <a name="how-to-create-a-diagnostic-data-adapter"></a>Procédure : Créer un adaptateur de données de diagnostic
+# <a name="how-to-create-a-diagnostic-data-adapter"></a>Guide pratique pour créer un adaptateur de données de diagnostic
 
 Pour créer un *adaptateur de données de diagnostic*, vous devez créer une bibliothèque de classes à l’aide de Visual Studio, puis ajouter à cette dernière les API d’adaptateur de données de diagnostic fournies par Visual Studio Enterprise. Envoyez toutes les informations que vous voulez sous forme de flux de données ou de fichier au <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink> fourni par l’infrastructure durant la gestion des événements déclenchés pendant la série de tests. Les flux de données ou les fichiers envoyés au <xref:Microsoft.VisualStudio.TestTools.Execution.DataCollectionSink> sont stockés en tant que pièces jointes aux résultats des tests lorsque votre test est terminé. Si vous créez un bogue à partir de ces résultats de tests ou quand vous utilisez [!INCLUDE[mtrlong](../test/includes/mtrlong_md.md)], les fichiers sont également liés au bogue.
 
@@ -68,7 +68,7 @@ Pour obtenir un exemple complet de projet d’adaptateur de données de diagnost
 
    3. Cliquez sur **OK**.
 
-4. Ajoutez les instructions `using` suivantes à votre fichier de classe :
+4. Ajoutez les directives de `using` suivantes à votre fichier de classe :
 
    ```csharp
    using Microsoft.VisualStudio.TestTools.Common;
@@ -210,7 +210,7 @@ Pour obtenir un exemple complet de projet d’adaptateur de données de diagnost
 
      Ces fichiers sont joints aux résultats de test. Si vous créez un bogue à partir de ces résultats de tests ou lorsque vous utilisez [!INCLUDE[mtrlong](../test/includes/mtrlong_md.md)], les fichiers sont également joints au bogue.
 
-     Si vous souhaitez utiliser votre propre éditeur pour collecter des données à utiliser dans vos paramètres de test, consultez [Guide pratique pour créer un éditeur personnalisé pour les données de votre adaptateur de données de diagnostic](../test/quickstart-create-a-load-test-project.md).
+     Si vous voulez utiliser votre propre éditeur pour collecter des données à utiliser dans vos paramètres de test, consultez [Guide pratique pour créer un éditeur personnalisé pour les données de votre adaptateur de données de diagnostic](../test/quickstart-create-a-load-test-project.md).
 
 11. Pour collecter un fichier journal lorsqu’un test se termine en fonction des éléments configurés par l’utilisateur dans les paramètres de test, vous devez créer un fichier *App.config* et l’ajouter à votre solution. Ce fichier présente le format suivant et doit contenir l'URI de votre adaptateur de données de diagnostic pour l'identifier. Remplacez « Société/NomProduit/Version » par les vraies valeurs.
 
@@ -243,11 +243,11 @@ Pour obtenir un exemple complet de projet d’adaptateur de données de diagnost
     > [!NOTE]
     > L'élément de configuration par défaut peut contenir les données dont vous avez besoin. Si l'utilisateur ne configure pas l'adaptateur de données de diagnostic dans les paramètres de test, les données par défaut seront transmises à votre adaptateur de données de diagnostic lorsqu'il est exécuté. Comme le code XML que vous ajoutez à la section `<DefaultConfigurations>` n'est pas susceptible de faire partie du schéma déclaré, vous pouvez ignorer les erreurs XML qu'il génère.
     >
-    > Il existe d’autres exemples de fichiers config dans le chemin suivant en fonction de votre répertoire d’installation : *Program Files\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\DataCollectors*.
+    > Il existe d’autres exemples de fichiers de configuration dans le chemin suivant en fonction de votre répertoire d’installation : *Program Files\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\DataCollectors*.
 
      Pour plus d’informations sur la configuration de vos paramètres de test pour l’utilisation d’un environnement durant l’exécution de vos tests, consultez [Collecter les données de diagnostic dans les tests manuels (Azure Test Plans)](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts).
 
-     Pour plus d’informations sur l’installation du fichier config, consultez [Guide pratique pour installer un adaptateur de données de diagnostic personnalisé](../test/quickstart-create-a-load-test-project.md)
+     Pour plus d’informations sur l’installation du fichier de configuration, consultez [Guide pratique pour installer un adaptateur de données de diagnostic personnalisé](../test/quickstart-create-a-load-test-project.md).
 
 12. Générez votre solution pour créer votre assembly d'adaptateur de données de diagnostic.
 

@@ -1,5 +1,5 @@
 ---
-title: 'CA1032 : Implémenter des constructeurs d’exception standard | Microsoft Docs'
+title: 'CA1032 : implémenter des constructeurs d’exception standard | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - ImplementStandardExceptionConstructors
 ms.assetid: a8623c56-273a-4c95-8d83-95911a042be7
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: c59da56304a5d1d8f2cca7eaf886fd5ebc37f8ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b471387db3ce52944ffad3841dc7e946c4d44873
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68205838"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661875"
 ---
 # <a name="ca1032-implement-standard-exception-constructors"></a>CA1032 : Implémenter des constructeurs d'exception standard
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,32 +29,32 @@ ms.locfileid: "68205838"
 |-|-|
 |TypeName|ImplementStandardExceptionConstructors|
 |CheckId|CA1032|
-|Catégorie|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
  Un type étend <xref:System.Exception?displayProperty=fullName> et ne déclare pas tous les constructeurs requis.
 
 ## <a name="rule-description"></a>Description de la règle
- Types d’exception doivent implémenter les constructeurs suivants :
+ Les types d’exceptions doivent implémenter les constructeurs suivants :
 
-- NewException() public
+- public NewException ()
 
-- NewException(string) public
+- public NewException (String)
 
-- publique NewException (string, Exception)
+- public NewException (String, exception)
 
-- protégé ou privée NewException (SerializationInfo, StreamingContext)
+- NewException protected ou Private (SerializationInfo, StreamingContext)
 
-  Ne pas fournir le jeu complet de constructeurs peut rendre difficile une gestion des exceptions correcte. Par exemple, le constructeur qui a la signature `NewException(string, Exception)` est utilisé pour créer des exceptions provoquées par d’autres exceptions. Sans ce constructeur, vous ne pouvez pas créer et levez une instance de votre exception personnalisée qui contient une exception interne (imbriquée), qui est le code managé doit faire dans une telle situation. Les premiers constructeurs de trois exception sont publics par convention. Le quatrième constructeur est protégé dans les classes non scellés et privées dans les classes sealed. Pour plus d’informations, consultez [CA2229 : Implémentez des constructeurs de sérialisation](../code-quality/ca2229-implement-serialization-constructors.md)
+  Ne pas fournir le jeu complet de constructeurs peut rendre difficile une gestion des exceptions correcte. Par exemple, le constructeur qui a la signature `NewException(string, Exception)` est utilisé pour créer des exceptions provoquées par d’autres exceptions. Sans ce constructeur, vous ne pouvez pas créer et lever une instance de votre exception personnalisée qui contient une exception interne (imbriquée), ce que le code managé doit faire dans une telle situation. Les trois premiers constructeurs d’exception sont publics par Convention. Le quatrième constructeur est protégé dans les classes non scellées et privé dans les classes sealed. Pour plus d’informations, consultez [CA2229 : implémenter des constructeurs de sérialisation](../code-quality/ca2229-implement-serialization-constructors.md)
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, ajoutez les constructeurs manquants à l’exception et assurez-vous qu’ils ont l’accessibilité appropriée.
+ Pour corriger une violation de cette règle, ajoutez les constructeurs manquants à l’exception et assurez-vous qu’ils ont l’accessibilité correcte.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Il est possible de supprimer un avertissement de cette règle quand la violation est due à l’aide d’un niveau d’accès différent pour les constructeurs publics.
+ Il est possible de supprimer sans risque un avertissement de cette règle lorsque la violation est provoquée par l’utilisation d’un niveau d’accès différent pour les constructeurs publics.
 
-## <a name="example"></a>Exemples
- L’exemple suivant contient un type d’exception qui enfreint cette règle et un type d’exception qui est implémenté correctement.
+## <a name="example"></a>Exemple
+ L’exemple suivant contient un type d’exception qui enfreint cette règle et un type d’exception qui est correctement implémenté.
 
  [!code-csharp[FxCop.Design.ExceptionMultipleCtors#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.ExceptionMultipleCtors/cs/FxCop.Design.ExceptionMultipleCtors.cs#1)]

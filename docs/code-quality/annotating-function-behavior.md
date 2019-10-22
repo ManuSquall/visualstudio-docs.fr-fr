@@ -20,12 +20,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bb0e8bdbb2bd62fa637b9cecce64adf98f71013
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: b77379d0bb9dbd80f01eadf5209353b3fd12eb1c
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72016048"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446312"
 ---
 # <a name="annotating-function-behavior"></a>Annotation du comportement d’une fonction
 En plus d’annoter des [paramètres de fonction et des valeurs de retour](../code-quality/annotating-function-parameters-and-return-values.md), vous pouvez annoter les propriétés de la fonction entière.

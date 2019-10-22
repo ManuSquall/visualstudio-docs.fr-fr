@@ -18,15 +18,15 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a8a1c77a7db2a16b05c1b6b0eeb5e02abef4c9c3
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 8ecae431f75e14443895b816a24000b6fe3fba52
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018461"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72445858"
 ---
 # <a name="code-analysis-for-cc-warnings"></a>Analyse de code pour les avertissements C/C++
-Cette section répertorie lesC++ avertissements de l’analyse C/code, à l’exception de ceux qui sont déclenchés par les [ C++ contrôleurs d’instructions de base](code-analysis-for-cpp-corecheck.md). Pour plus d’informations sur l’analyse du code, consultez [/Analyze (analyse du code)](/cpp/build/reference/analyze-code-analysis) et [Quick Start : Analyse du code pour CC++/](../code-quality/quick-start-code-analysis-for-c-cpp.md).
+Cette section répertorie lesC++ avertissements de l’analyse C/code, à l’exception de ceux qui sont déclenchés par les [ C++ contrôleurs d’instructions de base](code-analysis-for-cpp-corecheck.md). Pour plus d’informations sur l’analyse du code, consultez [/Analyze (analyse du code)](/cpp/build/reference/analyze-code-analysis) et [démarrage rapide :C++analyse du code pour C/](../code-quality/quick-start-code-analysis-for-c-cpp.md).
 
 ## <a name="see-also"></a>Voir aussi
 

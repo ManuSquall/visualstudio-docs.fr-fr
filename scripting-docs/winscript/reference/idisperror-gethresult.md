@@ -1,5 +1,5 @@
 ---
-title: IDispError::GetHresult | Microsoft Docs
+title: 'IDispError :: GetHRESULT, | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6eb4518e39fdab432590601d91b462d869c38e1a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 62661e14c36881ca83763c277dbfd5385f192fb6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446900"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573113"
 ---
 # <a name="idisperrorgethresult"></a>IDispError::GetHresult
-Récupère le code d’erreur à partir de la `IDispError` objet.  
+Récupère le code d’erreur de l’objet `IDispError`.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -37,17 +37,17 @@ HRESULT GetHresult(
   
 #### <a name="parameters"></a>Paramètres  
  `phr`  
- [out] Spécifie le code d’erreur.  
+ à Spécifie le code d’erreur.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode récupère le code d’erreur à partir de la `IDispError` objet.  
+ Cette méthode récupère le code d’erreur de l’objet `IDispError`.  
   
 > [!NOTE]
 > Cette méthode n’est pas implémentée.  

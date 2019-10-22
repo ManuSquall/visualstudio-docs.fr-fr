@@ -1,5 +1,5 @@
 ---
-title: Attendu '}' | Microsoft Docs
+title: "'} 'Attendu | Microsoft Docs"
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,20 +14,20 @@ ms.assetid: dff04495-9a6e-4604-9231-e40433fec152
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 02d6772a6bfe8d71c65fb866f097d3f2da97f86a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d19d1cc24928e070ae3569858d6db83a1b59a36d
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935009"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577545"
 ---
 # <a name="expected-"></a>'}' attendu
-Vous l’avez fait pas incluent l’accolade fermante qui marque la fin du corps de la fonction, la boucle, bloc de code ou initialiseur d’objet. Un exemple de cette erreur serait un **pour** boucle avec uniquement l’accolade gauche marquant le corps de la boucle.  
+Vous n’avez pas inclus l’accolade fermante qui marque la fin du corps de la fonction, de la boucle, du bloc de code ou de l’initialiseur d’objet. Un exemple de cette erreur serait une boucle **for** avec uniquement l’accolade ouvrante marquant le corps de la boucle.  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
-- Ajoutez l’accolade fermante qui marque la fin de la fonction, une boucle, un bloc ou un initialiseur d’objet.  
+- Ajoutez l’accolade droite qui marque la fin de la fonction, de la boucle, du bloc ou de l’initialiseur d’objet.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Objet de fonction](../../javascript/reference/function-object-javascript.md)   
+ [Objet de fonction](../../javascript/reference/function-object-javascript.md)    
  [Contrôle du flux de programme](../../javascript/controlling-program-flow-javascript.md)

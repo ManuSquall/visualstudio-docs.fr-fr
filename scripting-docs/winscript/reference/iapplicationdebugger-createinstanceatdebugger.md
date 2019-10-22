@@ -1,5 +1,5 @@
 ---
-title: IApplicationDebugger::CreateInstanceAtDebugger | Microsoft Docs
+title: 'IApplicationDebugger :: CreateInstanceAtDebugger | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,18 +17,18 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 95489464128e706e755432bee991c5481f5af8bc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c15dc5d9b36a718ed41813bac46bc4b9415eb853
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425825"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577886"
 ---
 # <a name="iapplicationdebuggercreateinstanceatdebugger"></a>IApplicationDebugger::CreateInstanceAtDebugger
-Permet la création d’objets dans le processus du débogueur par le code qui est out-of-process au débogueur.  
+Autorise la création d’objets dans le processus du débogueur par du code qui est hors processus du débogueur.  
   
 > [!IMPORTANT]
-> Cette méthode ne doit pas être implémentée, car elle permet de créer des objets arbitraires dans un thread de débogueur de confiance de code non fiable.  
+> Cette méthode ne doit pas être implémentée, car elle permet à du code non fiable de créer des objets arbitraires dans un thread de débogueur approuvé.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -44,24 +44,24 @@ HRESULT CreateInstanceAtDebugger(
   
 #### <a name="parameters"></a>Paramètres  
  `rclsid`  
- [in] Identificateur (CLSID) de l’objet à créer de classe.  
+ dans Identificateur de classe (CLSID) de l’objet à créer.  
   
  `pUnkOuter`  
- [in] Si `NULL`, l’objet n’est pas créé en tant que partie d’un agrégat. Sinon, `pUnkOuter` est un pointeur vers l’objet d’agrégation `IUnknown` interface (le contrôle `IUnknown`).  
+ dans Si `NULL`, l’objet n’est pas créé dans le cadre d’un agrégat. Dans le cas contraire, `pUnkOuter` est un pointeur vers l’interface `IUnknown` de l’objet d’agrégation (le `IUnknown` de contrôle).  
   
  `dwClsContext`  
- [in] Contexte d’exécution du code exécutable. Les valeurs proviennent de l’énumération `CLSCTX`.  
+ dans Contexte d’exécution du code exécutable. Les valeurs sont extraites de l’énumération `CLSCTX`.  
   
  `riid`  
- [in] L’identificateur d’interface utilisé pour communiquer avec l’objet.  
+ dans Identificateur d’interface utilisé pour communiquer avec l’objet.  
   
  `ppvObject`  
- [out] Adresse de variable pointeur qui reçoit le pointeur d’interface demandé dans `riid`. En cas de renvoi, *`ppvObject` contient le pointeur d’interface demandé. En cas d’échec, \* `ppvObject` contient `NULL`.  
+ à Adresse de la variable pointeur qui reçoit le pointeur d’interface demandé dans `riid`. En cas de retour correct, * `ppvObject` contient le pointeur d’interface demandé. En cas d’échec, \* `ppvObject` contient des `NULL`.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   

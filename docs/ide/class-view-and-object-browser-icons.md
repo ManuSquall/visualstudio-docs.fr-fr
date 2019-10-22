@@ -11,17 +11,17 @@ helpviewer_keywords:
 - icons, IntelliSense
 - symbols, Object Browser icons
 - Object Browser, icons in Class View
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9814b03d0a8cd8733c9fd48b4e49c2cf306a8a44
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 589ec840b49d250591e2c477989d4422273cac31
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975859"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647624"
 ---
 # <a name="class-view-and-object-browser-icons"></a>Icônes Affichage de classes et Explorateur d’objets
 
@@ -30,7 +30,7 @@ L’**affichage de classes** et l’**Explorateur d’objets** affichent des ic�
 |Icône|Description|Icône|Description|
 |----------|-----------------|----------|-----------------|
 |![Symbole d'espace de noms](../ide/media/vxnamespace_icon.gif)|Espace de noms|![Symbole de déclaration](../ide/media/vxmethod_icon.gif)|Méthode ou fonction|
-|![Icône de classe](../ide/media/vxclass_icon.gif)|Classe|![Symbole d'opérateur](../ide/media/vxoperator_icon.gif)|Opérateur|
+|![Icône de classe](../ide/media/vxclass_icon.gif)|Class|![Symbole d'opérateur](../ide/media/vxoperator_icon.gif)|opérateur|
 |![Symbole d'interface Lollipop](../ide/media/vxinterface_icon.gif)|Interface|![Symbole de la propriété](../ide/media/vxproperty_icon.gif)|Property|
 |![Symbole de la structure](../ide/media/vxstruct_icon.gif)|Structure|![Icône de champ](../ide/media/vxfield_icon.gif)|Champ ou variable|
 |![Symbole Union](../ide/media/vxunion_icon.gif)|Union|![Symbole d'événement](../ide/media/vxevent_icon.gif)|événement|
@@ -38,7 +38,7 @@ L’**affichage de classes** et l’**Explorateur d’objets** affichent des ic�
 |![Symbole de définition du type](../ide/media/vxtypedef_icon.gif)|TypeDef|![Symbole d'élément d'énumération](../ide/media/vxenumitem_icon.gif)|Élément enum|
 |![Symbole du module Visual Studio](../ide/media/vxmodule_icon.gif)|Module|![Symbole d'élément de carte](../ide/media/vxmapitem_icon.gif)|Élément Map|
 |![Symbole de méthode d'extension](../ide/media/extensionmethod.gif)|Méthode d'extension|![Symbole de déclaration](../ide/media/vxmethod_icon.gif)|Déclaration externe|
-|![Symbole de délégué](../ide/media/vxdelegate_icon.gif)|délégué|![Icône d'erreur pour l'affichage de classes et l'explorateur d'objets](../ide/media/erroricon.gif)|Error|
+|![Symbole de délégué](../ide/media/vxdelegate_icon.gif)|délégué|![Icône d'erreur pour l'affichage de classes et l'explorateur d'objets](../ide/media/erroricon.gif)|Erreur|
 |![Symbole d'exception](../ide/media/vxexception_icon.gif)|Exception|![Symbole du modèle](../ide/media/vxtemplate_icon.gif)|Modèle|
 |![Symbole de carte](../ide/media/vxmap_icon.gif)|Carte|![Symbole de point d'exclamation d'erreur](../ide/media/vxerror_icon.gif)|Inconnu|
 |![Symbole de transfert de type](../ide/media/ob_type_forward.gif)|Transfert de type|||

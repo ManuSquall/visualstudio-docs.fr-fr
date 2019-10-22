@@ -1,5 +1,5 @@
 ---
-title: Méthode IEnumJsStackFrames::Next | Microsoft Docs
+title: 'IEnumJsStackFrames :: Next, méthode | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 94e3f478654fadec152aba0690a5474ebbfe02f5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c24ef399a7b12a1bffe8313c09be47d6a6a3b6c8
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963297"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575521"
 ---
 # <a name="ienumjsstackframesnext-method"></a>IEnumJsStackFrames::Next, méthode
 Obtient le nombre spécifié de frames.  
@@ -37,18 +37,18 @@ HRESULT Next(
   
 #### <a name="parameters"></a>Paramètres  
  `cFrameCount`  
- [in] Le nombre de frames à obtenir.  
+ dans Nombre de frames à récupérer.  
   
  `pFrames`  
- [out] Tableau utilisé pour stocker les images.  
+ à Tableau dans lequel stocker les frames.  
   
  `pcFetched`  
- [out] Le nombre de frames retournés.  
+ à Nombre de trames retournées.  
   
 ## <a name="return-value"></a>Valeur de retour  
   
-## <a name="requirements"></a>Configuration requise  
- **En-tête :** jscript9diag.h  
+## <a name="requirements"></a>spécifications  
+ **En-tête :** jscript9diag. h  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IEnumJsStackFrames](../../winscript/reference/ienumjsstackframes-interface.md)

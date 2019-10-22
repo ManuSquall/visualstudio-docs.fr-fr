@@ -4,107 +4,107 @@ ms.date: 08/22/2017
 ms.topic: conceptual
 dev_langs:
 - CSharp
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d67ca69856f48ec916f27498798cbb58efb3e5ac
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: 6a8fd65c9f7c498f06b0776f0cd61ebc5ce48182
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177371"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72642924"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Créer une application de données simple avec WPF et Entity Framework 6
 
-Cette procédure pas à pas montre comment créer une application de base « formulaires de données » dans Visual Studio. L’application utilise la base de données SQL Server locale, la base de données Northwind, Entity Framework 6 et Windows Presentation Foundation. Il montre comment effectuer la liaison de données base avec une vue maître-détail, et il a également un navigateur de liaison personnalisée avec des boutons **Move Next**, **Move Previous**, **déplacer au début de**, **Déplacer à la fin**, **mise à jour** et **supprimer**.
+Cette procédure pas à pas montre comment créer une application de base « formulaires sur des données » dans Visual Studio. L’application utilise SQL Server base de données locale, la base de données Northwind, Entity Framework 6 et Windows Presentation Foundation. Il montre comment effectuer une liaison de données de base avec un affichage maître-détail et un navigateur de liaisons personnalisé avec des boutons pour **déplacer**vers le bas, déplacer vers le **haut**, déplacer **vers le début**, **déplacer vers la fin**, **mettre à jour** et **supprimer**.
 
-Cet article se concentre sur l’utilisation des outils de données dans Visual Studio et ne tente pas d’expliquer les technologies sous-jacentes dans n’importe quelle profondeur. Il suppose que vous avez une connaissance de base avec XAML, Entity Framework et SQL. Cet exemple ne montre pas plus d’architecture Model-View-ViewModel (MVVM), qui est un standard pour les applications WPF. Toutefois, vous pouvez copier ce code dans votre propre application MVVM avec peu de modifications.
+Cet article se concentre sur l’utilisation des outils de données dans Visual Studio et ne tente pas d’expliquer les technologies sous-jacentes en toute profondeur. Il part du principe que vous avez une connaissance de base de XAML, Entity Framework et SQL. Cet exemple ne montre pas non plus l’architecture MVVM (Model-View-ViewModel), qui est standard pour les applications WPF. Toutefois, vous pouvez copier ce code dans votre propre application MVVM avec quelques modifications.
 
 ## <a name="install-and-connect-to-northwind"></a>Installer et se connecter à Northwind
 
-Cet exemple utilise SQL Server Express LocalDB et la base de données Northwind. Si le fournisseur de données ADO.NET pour ce produit prend en charge Entity Framework, il doit fonctionner tout aussi bien avec d’autres produits de base de données SQL.
+Cet exemple utilise SQL Server Express base de données locale et l’exemple de base de données Northwind. Si le fournisseur de données ADO.NET pour ce produit prend en charge Entity Framework, il doit également fonctionner avec d’autres produits de base de données SQL.
 
-1. Si vous n’avez pas SQL Server Express LocalDB, installez-le à partir de la [page de téléchargement de SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), ou via le **le programme d’installation de Visual Studio**. Dans le **le programme d’installation de Visual Studio**, vous pouvez installer SQL Server Express LocalDB dans le cadre de la **développement .NET desktop** charge de travail ou de manière individuelle.
+1. Si vous n’avez pas SQL Server Express base de données locale, installez-la à partir de la [page de téléchargement SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)ou via le **Visual Studio installer**. Dans le **Visual Studio installer**, vous pouvez installer SQL Server Express base de données locale dans le cadre de la charge de travail **développement .net Desktop** ou en tant que composant individuel.
 
-2. Installer la base de données Northwind en suivant ces étapes :
+2. Installez l’exemple de base de données Northwind en procédant comme suit :
 
-    1. Dans Visual Studio, ouvrez le **Explorateur d’objets SQL Server** fenêtre. (**Explorateur d’objets SQL Server** est installé dans le cadre de la **stockage de données et de traitement** charge de travail dans le **le programme d’installation de Visual Studio**.) Développez le **SQL Server** nœud. Avec le bouton droit sur votre instance de base de données locale et sélectionnez **nouvelle requête**.
+    1. Dans Visual Studio, ouvrez la fenêtre de **Explorateur d’objets SQL Server** . (**Explorateur d’objets SQL Server** est installé dans le cadre de la charge de travail **stockage et traitement des données** dans le **Visual Studio installer**.) Développez le nœud **SQL Server** . Cliquez avec le bouton droit sur votre instance de base de données locale, puis sélectionnez **nouvelle requête**.
 
-       Une fenêtre d’éditeur de requête s’ouvre.
+       Une fenêtre de l’éditeur de requête s’ouvre.
 
-    2. Copie le [script Transact-SQL de Northwind](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) dans votre Presse-papiers. Ce script T-SQL crée la base de données Northwind à partir de zéro et la remplit avec des données.
+    2. Copiez le [script Transact-SQL Northwind](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) dans le presse-papiers. Ce script T-SQL crée la base de données Northwind à partir de zéro et la remplit avec des données.
 
-    3. Collez le script T-SQL dans l’éditeur de requête, puis choisissez le **Execute** bouton.
+    3. Collez le script T-SQL dans l’éditeur de requête, puis choisissez le bouton **exécuter** .
 
-       Après une courte période, la requête est terminée en cours d’exécution et la base de données Northwind est créé.
+       Après un bref laps de temps, l’exécution de la requête se termine et la base de données Northwind est créée.
 
-3. [Ajouter de nouvelles connexions](../data-tools/add-new-connections.md) pour Northwind.
+3. [Ajoutez de nouvelles connexions](../data-tools/add-new-connections.md) pour Northwind.
 
 ## <a name="configure-the-project"></a>Configurer le projet
 
-1. Dans Visual Studio, créez un nouveau C# **application WPF** projet.
+1. Dans Visual Studio, créez un C# projet d' **application WPF** .
 
-2. Ajoutez le package NuGet pour Entity Framework 6. Dans **l’Explorateur de solutions**, sélectionnez le nœud du projet. Dans le menu principal, choisissez **projet** > **gérer les Packages NuGet**.
+2. Ajoutez le package NuGet pour Entity Framework 6. Dans **Explorateur de solutions**, sélectionnez le nœud du projet. Dans le menu principal, choisissez **projet**  > **gérer les packages NuGet**.
 
-     ![Gérer l’élément de menu de Packages NuGet](../data-tools/media/raddata_vs2015_manage_nuget_packages.png)
+     ![Élément de menu gérer les packages NuGet](../data-tools/media/raddata_vs2015_manage_nuget_packages.png)
 
-3. Dans le **Gestionnaire de Package NuGet**, cliquez sur le **Parcourir** lien. Entity Framework est probablement le paquet supérieur dans la liste. Cliquez sur **installer** dans le volet droit et suivez les invites. La fenêtre de sortie vous indique quand l’installation est terminée.
+3. Dans le **Gestionnaire de package NuGet**, cliquez sur le lien **Parcourir** . Entity Framework est probablement le package le plus haut dans la liste. Cliquez sur **installer** dans le volet droit et suivez les invites. La fenêtre sortie vous indique quand l’installation est terminée.
 
-     ![Package NuGet Entity Framework](../data-tools/media/raddata_vs2015_nuget_ef.png)
+     ![Entity Framework package NuGet](../data-tools/media/raddata_vs2015_nuget_ef.png)
 
 4. Vous pouvez maintenant utiliser Visual Studio pour créer un modèle basé sur la base de données Northwind.
 
 ## <a name="create-the-model"></a>Créer le modèle
 
-1. Avec le bouton droit sur le nœud de projet dans **l’Explorateur de solutions** et choisissez **ajouter** > **un nouvel élément**. Dans le volet gauche, sous le nœud c#, choisissez **données** et dans le volet central, choisissez **ADO.NET Entity Data Model**.
+1. Cliquez avec le bouton droit sur le nœud du projet dans **Explorateur de solutions** , puis choisissez **Ajouter**  > **nouvel élément**. Dans le volet gauche, sous le C# nœud, choisissez **données** , puis dans le volet central, choisissez **ADO.NET Entity Data Model**.
 
-   ![Modèle Entity Framework un nouvel élément](../data-tools/media/raddata-ef-new-project-item.png)
+   ![Entity Framework un nouvel élément de modèle](../data-tools/media/raddata-ef-new-project-item.png)
 
-2. Appeler le modèle `Northwind_model` et choisissez **OK**. L’**Assistant Entity Data Model** s’ouvre. Choisissez **Entity Framework Designer à partir de la base de données** puis cliquez sur **suivant**.
+2. Appelez le `Northwind_model` de modèle, puis choisissez **OK**. L’**Assistant Entity Data Model** s’ouvre. Choisissez le **Concepteur EF dans la base de données** , puis cliquez sur **suivant**.
 
    ![Modèle EF à partir de la base de données](../data-tools/media/raddata-ef-model-from-database.png)
 
-3. Dans l’écran suivant, choisissez votre LocalDB Northwind connexion et cliquez sur **suivant**.
+3. Dans l’écran suivant, choisissez votre connexion de base de données locale Northwind, puis cliquez sur **suivant**.
 
-4. Dans la page suivante de l’Assistant, choisissez les tables, procédures stockées et autres objets de base de données à inclure dans le modèle Entity Framework. Développez le nœud dbo dans l’arborescence et choisissez **clients**, **commandes**, et **Order Details**. Laissez les valeurs par défaut activées et cliquez sur **Terminer**.
+4. Dans la page suivante de l’Assistant, choisissez les tables, les procédures stockées et les autres objets de base de données à inclure dans le modèle de Entity Framework. Développez le nœud dbo dans l’arborescence, puis choisissez **Customers**, **Orders**et **Order Details**. Laissez les valeurs par défaut activées et cliquez sur **Terminer**.
 
-    ![Choisissez les objets de base de données pour le modèle](../data-tools/media/raddata-choose-ef-objects.png)
+    ![Choisir les objets de base de données pour le modèle](../data-tools/media/raddata-choose-ef-objects.png)
 
-5. L’Assistant génère les classes c# qui représentent le modèle Entity Framework. Les classes sont plain old classes c# et qui nous sont databind à l’interface utilisateur WPF. Le *.edmx* fichier décrit les relations et autres métadonnées qui associe les classes d’objets dans la base de données. Le *.tt* fichiers sont des modèles T4 qui génèrent le code qui fonctionne sur le modèle et enregistrer les modifications apportées à la base de données. Vous pouvez voir tous ces fichiers dans **l’Explorateur de solutions** sous le nœud Northwind_model :
+5. L’Assistant génère les C# classes qui représentent le modèle de Entity Framework. Les classes sont des classes C# anciennes et c’est ce que nous créons dans l’interface utilisateur WPF. Le fichier *. edmx* décrit les relations et les autres métadonnées qui associent les classes aux objets de la base de données. Les fichiers *. TT* sont des modèles T4 qui génèrent le code qui fonctionne sur le modèle et enregistrent les modifications apportées à la base de données. Vous pouvez voir tous ces fichiers dans **Explorateur de solutions** sous le nœud Northwind_model :
 
-      ![Fichiers de modèle EF de l’Explorateur de solutions](../data-tools/media/raddata-solution-explorer-ef-model-files.png)
+      ![Explorateur de solutions les fichiers de modèle EF](../data-tools/media/raddata-solution-explorer-ef-model-files.png)
 
-    L’aire du concepteur pour le *.edmx* fichier vous permet de modifier certaines propriétés et les relations dans le modèle. Nous n’allons pas utiliser le concepteur dans cette procédure pas à pas.
+    L’aire du concepteur pour le fichier *. edmx* vous permet de modifier certaines propriétés et relations dans le modèle. Nous n’allons pas utiliser le concepteur dans cette procédure pas à pas.
 
-6. Le *.tt* fichiers sont à usage général et que vous devez modifier un d’eux pour travailler avec la liaison de données WPF, ce qui oblige ObservableCollections. Dans **l’Explorateur de solutions**, développez le nœud Northwind_model jusqu'à ce que vous trouviez *Northwind_model.tt*. (Assurez-vous que vous n’êtes pas dans le *. Context.tt* fichier, qui est directement sous le *.edmx* fichier.)
+6. Les fichiers *. TT* sont à usage général et vous devez en modifier l’un pour travailler avec la liaison de liaison WPF, ce qui requiert ObservableCollections. Dans **Explorateur de solutions**, développez le nœud Northwind_model jusqu’à ce que vous trouviez *Northwind_model. TT*. (Assurez-vous que vous n’êtes pas dans le *. Fichier Context.tt* , qui se trouve directement sous le fichier *. edmx* .)
 
-   - Remplacez les deux occurrences de <xref:System.Collections.ICollection> avec <xref:System.Collections.ObjectModel.ObservableCollection%601>.
+   - Remplacez les deux occurrences de <xref:System.Collections.ICollection> par <xref:System.Collections.ObjectModel.ObservableCollection%601>.
 
-   - Remplacez la première occurrence de <xref:System.Collections.Generic.HashSet%601> avec <xref:System.Collections.ObjectModel.ObservableCollection%601> autour de la ligne 51. Ne remplacez pas la deuxième occurrence de HashSet.
+   - Remplacez la première occurrence de <xref:System.Collections.Generic.HashSet%601> par <xref:System.Collections.ObjectModel.ObservableCollection%601> autour de la ligne 51. Ne remplacez pas la deuxième occurrence de HashSet.
 
-   - Remplacer l’occurrence uniquement <xref:System.Collections.Generic> (autour de la ligne 431) avec <xref:System.Collections.ObjectModel>.
+   - Remplacez la seule occurrence de <xref:System.Collections.Generic> (autour de la ligne 431) par <xref:System.Collections.ObjectModel>.
 
-7. Appuyez sur **Ctrl**+**MAJ**+**B** pour générer le projet. Une fois la build terminée, les classes de modèle sont visibles par l’Assistant sources de données.
+7. Appuyez sur **Ctrl**+**Shift**+**B** pour générer le projet. Une fois la génération terminée, les classes de modèle sont visibles par l’Assistant sources de données.
 
-Vous êtes maintenant prêt à raccorder à ce modèle à la page XAML afin que vous pouvez afficher, parcourir et modifier les données.
+Vous êtes maintenant prêt à raccorder ce modèle à la page XAML afin que vous puissiez afficher, parcourir et modifier les données.
 
 ## <a name="databind-the-model-to-the-xaml-page"></a>Lier le modèle à la page XAML
 
-Il est possible d’écrire votre propre code de liaison de données, mais il est beaucoup plus facile permettre à Visual Studio de le faire pour vous.
+Il est possible d’écrire votre propre code DataBinding, mais il est beaucoup plus facile de laisser Visual Studio le faire pour vous.
 
-1. Dans le menu principal, choisissez **projet** > **ajouter une nouvelle source de données** pour faire apparaître le **Assistant de Configuration de Source de données**. Choisissez **objet** étant donné que vous liez aux classes de modèle, pas à la base de données :
+1. Dans le menu principal, choisissez **projet**  > **Ajouter une nouvelle source de données** pour afficher l **'Assistant Configuration de source de données**. Choisissez **objet** , car vous effectuez une liaison aux classes de modèle, et non à la base de données :
 
-     ![Assistant de Configuration de Source de données avec l’objet Source](../data-tools/media/raddata-data-source-configuration-wizard-with-object-source.png)
+     ![Assistant Configuration de source de données avec source de l’objet](../data-tools/media/raddata-data-source-configuration-wizard-with-object-source.png)
 
-2. Sélectionnez **client**. (Les sources pour les commandes sont automatiquement générés à partir de la propriété de navigation de commandes dans le client.)
+2. Sélectionnez **Customer**. (Les sources des commandes sont générées automatiquement à partir de la propriété de navigation Orders dans Customer.)
 
      ![Ajouter des classes d’entité en tant que sources de données](../data-tools/media/raddata-add-entity-classes-as-data-sources.png)
 
-3. Cliquez sur **Terminer**.
+3. Cliquez sur **Finish**.
 
-4. Accédez à *MainWindow.xaml* en mode Code. Nous gardons le XAML simple dans le cadre de cet exemple. Modifier le titre de MainWindow un nom plus descriptif et augmenter sa hauteur et sa largeur à 600 x 800 pour l’instant. Vous pouvez toujours le modifier ultérieurement. Maintenant, ajoutez ces définitions de trois lignes à la grille principale, une ligne pour les boutons de navigation, un pour les informations du client et un pour la grille qui montre leurs commandes :
+4. Accédez à *MainWindow. Xaml* en mode Code. Nous conservons le XAML simple dans le cadre de cet exemple. Remplacez le titre de MainWindow par un nom plus descriptif et augmentez sa hauteur et sa largeur à 600 x 800 pour l’instant. Vous pouvez toujours le modifier ultérieurement. Ajoutez maintenant ces trois définitions de ligne à la grille principale, une ligne pour les boutons de navigation, une pour les détails du client et une pour la grille qui affiche les commandes suivantes :
 
     ```xaml
     <Grid.RowDefinitions>
@@ -114,41 +114,41 @@ Il est possible d’écrire votre propre code de liaison de données, mais il es
         </Grid.RowDefinitions>
     ```
 
-5. Ouvrez maintenant *MainWindow.xaml* afin que vous êtes l’affichage dans le concepteur. Cela entraîne le **des Sources de données** fenêtre s’affiche en tant qu’option dans la marge de la fenêtre Visual Studio à côté du **boîte à outils**. Cliquez sur l’onglet pour ouvrir la fenêtre, ou sinon, appuyez sur **MAJ**+**Alt**+**D** ou choisissez **vue**  >  **Autres Windows** > **des Sources de données**. Nous allons afficher chaque propriété de la classe de clients dans sa propre zone de texte individuelles. Tout d’abord, cliquez sur la flèche dans le **clients** liste déroulante et sélectionnez **détails**. Ensuite, faire glisser le nœud de la partie centrale de l’aire de conception afin que le concepteur sait que vous souhaitez qu’il figure dans la ligne du milieu. Si vous égarez il, vous pouvez spécifier la ligne manuellement plus tard dans le XAML. Par défaut, les contrôles sont placés verticalement dans un élément de grille, mais à ce stade, vous pouvez les organiser sur le formulaire comme vous le souhaitez. Par exemple, il peut être judicieux de placer le **nom** zone de texte en haut, au-dessus de l’adresse. L’exemple d’application pour cet article réorganise les champs et les réorganise en deux colonnes.
+5. Maintenant, ouvrez *MainWindow. Xaml* afin de l’afficher dans le concepteur. La fenêtre **sources de données** s’affiche alors en tant qu’option dans la marge de la fenêtre Visual Studio en regard de la **boîte à outils**. Cliquez sur l’onglet pour ouvrir la fenêtre, ou appuyez sur **maj** +**ALT** +**D** ou choisissez **afficher**  > **autres** sources de**données**Windows  > . Nous allons afficher chaque propriété de la classe Customers dans sa propre zone de texte individuelle. Tout d’abord, cliquez sur la flèche dans la zone de liste déroulante **Customers** et choisissez **Details**. Ensuite, faites glisser le nœud sur la partie centrale de l’aire de conception afin que le concepteur sache que vous souhaitez qu’il figure dans la ligne du milieu. Si vous l’avez égaré, vous pouvez spécifier la ligne manuellement plus tard dans le code XAML. Par défaut, les contrôles sont placés verticalement dans un élément Grid, mais à ce stade, vous pouvez les réorganiser comme vous le souhaitez dans le formulaire. Par exemple, il peut être judicieux de placer la zone de texte **nom** en haut, au-dessus de l’adresse. L’exemple d’application de cet article réorganise les champs et les réorganise en deux colonnes.
 
-     ![Liaison de source de données de clients par des contrôles individuels](../data-tools/media/raddata-customers-data-source-binding-to-individual-controls.png)
+     ![Liaison de la source de données des clients à des contrôles individuels](../data-tools/media/raddata-customers-data-source-binding-to-individual-controls.png)
 
-     Dans le mode code, vous pouvez maintenant voir un nouveau `Grid` élément dans la ligne 1 (la ligne du milieu) de la grille parent. Le parent de grille a un `DataContext` attribut qui fait référence à un élément CollectionViewSource qui a été ajouté à la `Windows.Resources` élément. Étant donné ce contexte de données, lorsque la première zone de texte se lie à **adresse**, ce nom est mappé à la `Address` propriété en cours `Customer` objet dans CollectionViewSource.
+     Dans le mode Code, vous pouvez maintenant voir un nouvel élément `Grid` dans la ligne 1 (la ligne du milieu) de la grille parente. La grille parente a un attribut `DataContext` qui fait référence à un CollectionViewSource qui a été ajouté à l’élément `Windows.Resources`. À partir de ce contexte de données, lorsque la première zone de texte se lie à **Address**, ce nom est mappé à la propriété `Address` dans l’objet `Customer` actuel dans le CollectionViewSource.
 
     ```xaml
     <Grid DataContext="{StaticResource customerViewSource}">
     ```
 
-6. Lorsqu’un client est visible dans la partie supérieure de la fenêtre, que vous souhaitez afficher ses commandes dans la partie inférieure de moitié. Affichez les commandes dans un contrôle d’affichage de grille unique. Pour la liaison de données maître / détail de fonctionner comme prévu, il est important que vous liez à la propriété Orders dans la classe de clients, pas pour le nœud de commandes distinct. Faites glisser la propriété Orders de la classe de clients à la moitié inférieure du formulaire, afin que le concepteur place dans la ligne 2 :
+6. Quand un client est visible dans la moitié supérieure de la fenêtre, vous souhaitez afficher ses commandes dans la moitié inférieure. Vous affichez les commandes dans un seul contrôle d’affichage de grille. Pour que la liaison de données maître/détail fonctionne comme prévu, il est important que vous vous connectiez à la propriété Orders de la classe Customers, et non au nœud distinct Orders. Faites glisser la propriété Orders de la classe Customers vers la partie inférieure du formulaire, afin que le concepteur l’insère dans la ligne 2 :
 
-     ![Faire glisser des classes de commandes sous forme de grille](../data-tools/media/raddata-drag-orders-classes-as-grid.png)
+     ![Faire glisser les classes Orders en tant que Grid](../data-tools/media/raddata-drag-orders-classes-as-grid.png)
 
-7. Visual Studio a généré tout le code de liaison qui connecte les contrôles d’interface utilisateur aux événements dans le modèle. Il vous suffit, pour voir certaines données, consiste à écrire du code pour remplir le modèle. Tout d’abord, accédez à *MainWindow.xaml.cs* et ajouter un membre de données à la classe MainWindow pour le contexte de données. Cet objet, qui a été généré pour vous, agit comme un contrôle qui effectue le suivi des modifications et les événements dans le modèle. Vous allez également ajouter la logique de l’initialisation du constructeur. En haut de la classe doit ressembler à ceci :
+7. Visual Studio a généré tout le code de liaison qui connecte les contrôles d’interface utilisateur aux événements du modèle. Pour voir certaines données, il vous suffit d’écrire du code pour remplir le modèle. Tout d’abord, accédez à *MainWindow.Xaml.cs* et ajoutez un membre de données à la classe MainWindow pour le contexte de données. Cet objet, qui a été généré pour vous, agit comme un contrôle qui effectue le suivi des modifications et des événements dans le modèle. Vous allez également ajouter la logique d’initialisation du constructeur. La partie supérieure de la classe doit ressembler à ceci :
 
      [!code-csharp[MainWindow#1](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#1)]
 
-     Ajouter un `using` directive pour System.Data.Entity à placer la méthode d’extension Load dans la portée :
+     Ajoutez une directive `using` pour System. Data. Entity pour placer la méthode d’extension Load dans la portée :
 
      ```csharp
      using System.Data.Entity;
      ```
 
-     Maintenant, faites défiler vers le bas et recherchez le `Window_Loaded` Gestionnaire d’événements. Notez que Visual Studio a ajouté un objet CollectionViewSource. Cela représente l’objet NorthwindEntities que vous avez sélectionné lorsque vous avez créé le modèle. Nous allons ajouter du code à `Window_Loaded` afin que l’intégralité de la méthode se présente désormais comme suit :
+     À présent, faites défiler et recherchez le gestionnaire d’événements `Window_Loaded`. Notez que Visual Studio a ajouté un objet CollectionViewSource. Cela représente l’objet NorthwindEntities que vous avez sélectionné lors de la création du modèle. Nous allons ajouter du code à `Window_Loaded` afin que la méthode entière ressemble maintenant à ceci :
 
      [!code-csharp[Window_Loaded#2](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#2)]
 
-8. Appuyez sur **F5**. Vous devez voir les détails pour le premier client qui a été récupéré dans CollectionViewSource. Vous devez également voir leurs commandes dans la grille de données. La mise en forme n’est pas très bien, nous corrigeons donc que. Vous pouvez également créer un moyen pour afficher les autres enregistrements et effectuer des opérations CRUD de base.
+8. Appuyez sur **F5**. Vous devez voir les détails pour le premier client qui a été récupéré dans le CollectionViewSource. Vous devez également voir leurs commandes dans la grille de données. La mise en forme n’est pas très intéressante. nous allons donc résoudre le problème. Vous pouvez également créer un moyen d’afficher les autres enregistrements et d’effectuer des opérations CRUD de base.
 
-## <a name="adjust-the-page-design-and-add-grids-for-new-customers-and-orders"></a>Ajuster la conception de page et ajouter des grilles pour les commandes et les nouveaux clients
+## <a name="adjust-the-page-design-and-add-grids-for-new-customers-and-orders"></a>Ajuster la conception de la page et ajouter des grilles pour les nouveaux clients et les nouvelles commandes
 
-La disposition par défaut générée par Visual Studio n’est pas idéale pour votre application, vous allez apporter certaines modifications manuellement dans le XAML. Vous devez également certaines « formes » (qui sont en fait des grilles) pour permettre aux utilisateurs d’ajouter un nouveau client ou une commande. Pour être en mesure d’ajouter un nouveau client et l’ordre, vous avez besoin d’un ensemble distinct de zones de texte qui ne sont pas liés aux données à le `CollectionViewSource`. Vous allez contrôler quelle grille de l’utilisateur voit à tout moment en définissant la propriété Visible dans les méthodes de gestionnaire. Enfin, vous ajoutez un bouton Supprimer pour chaque ligne dans la grille de commandes pour permettre aux utilisateurs de supprimer une commande individuelle.
+La disposition par défaut générée par Visual Studio n’est pas idéale pour votre application. vous apportez donc des modifications manuellement dans le code XAML. Vous avez également besoin de « formulaires » (qui sont en fait des grilles) pour permettre à l’utilisateur d’ajouter un nouveau client ou une nouvelle commande. Pour pouvoir ajouter un nouveau client et une nouvelle commande, vous avez besoin d’un ensemble distinct de zones de texte qui ne sont pas liées aux données du `CollectionViewSource`. Vous allez contrôler la grille que l’utilisateur voit à un moment donné en définissant la propriété visible dans les méthodes de gestionnaire. Enfin, vous ajoutez un bouton supprimer à chaque ligne de la grille Orders pour permettre à l’utilisateur de supprimer une commande individuelle.
 
-Tout d’abord, ajoutez ces styles pour le `Windows.Resources` élément *MainWindow.xaml*:
+Tout d’abord, ajoutez ces styles à l’élément `Windows.Resources` dans *MainWindow. Xaml*:
 
 ```xaml
 <Style x:Key="Label" TargetType="{x:Type Label}" BasedOn="{x:Null}">
@@ -166,7 +166,7 @@ Tout d’abord, ajoutez ces styles pour le `Windows.Resources` élément *MainWi
 </Style>
 ```
 
-Ensuite, remplacez l’intégralité de la grille externe avec ce balisage :
+Ensuite, remplacez l’intégralité de la grille externe par cette balise :
 
 ```xaml
 <Grid>
@@ -351,13 +351,13 @@ Ensuite, remplacez l’intégralité de la grille externe avec ce balisage :
 
 ## <a name="add-buttons-to-navigate-add-update-and-delete"></a>Ajouter des boutons pour naviguer, ajouter, mettre à jour et supprimer
 
-Dans les applications Windows Forms, vous obtenez un objet de BindingNavigator avec des boutons pour parcourir les lignes dans une base de données et effectuer des opérations CRUD de base. WPF ne fournit pas un BindingNavigator, mais il est assez facile de créer un. Vous le faire avec les boutons à l’intérieur d’un StackPanel horizontal et associez les boutons avec les commandes qui sont liés aux méthodes dans le code-behind.
+Dans Windows Forms applications, vous pouvez obtenir un objet BindingNavigator avec des boutons permettant de naviguer dans les lignes d’une base de données et d’effectuer des opérations CRUD de base. WPF ne fournit pas de BindingNavigator, mais il est assez facile d’en créer un. Pour ce faire, vous pouvez utiliser des boutons à l’intérieur d’un StackPanel horizontal et associer les boutons à des commandes qui sont liées à des méthodes dans le code-behind.
 
-Il existe des parties sur quatre à la logique de commande : (1) les commandes (2) les liaisons, (3) les boutons et (4) les gestionnaires de commandes dans le code-behind.
+La logique de commande comprend quatre parties : (1) les commandes, (2) les liaisons, (3) les boutons et (4) les gestionnaires de commandes dans le code-behind.
 
-### <a name="add-commands-bindings-and-buttons-in-xaml"></a>Ajouter des boutons, les liaisons et les commandes dans XAML
+### <a name="add-commands-bindings-and-buttons-in-xaml"></a>Ajouter des commandes, des liaisons et des boutons en XAML
 
-1. Tout d’abord, ajoutez les commandes dans le *MainWindow.xaml* de fichiers à l’intérieur du `Windows.Resources` élément :
+1. Tout d’abord, ajoutez les commandes dans le fichier *MainWindow. Xaml* à l’intérieur de l’élément `Windows.Resources` :
 
     ```xaml
     <RoutedUICommand x:Key="FirstCommand" Text="First"/>
@@ -371,7 +371,7 @@ Il existe des parties sur quatre à la logique de commande : (1) les commandes 
     <RoutedUICommand x:Key="CancelCommand" Text="Cancel"/>
     ```
 
-2. Mappe un CommandBinding un `RoutedUICommand` événement à une méthode dans le code-behind. Ajoutez ce `CommandBindings` élément après le `Windows.Resources` balise de fermeture :
+2. Une CommandBinding mappe un événement `RoutedUICommand` à une méthode dans le code-behind. Ajoutez cet élément `CommandBindings` après la balise de fermeture `Windows.Resources` :
 
     ```xaml
     <Window.CommandBindings>
@@ -387,7 +387,7 @@ Il existe des parties sur quatre à la logique de commande : (1) les commandes 
     </Window.CommandBindings>
     ```
 
-3. Maintenant, ajoutez le `StackPanel` avec le volet de navigation, ajouter, supprimer et mettre à jour des boutons. Tout d’abord, ajoutez ce style à `Windows.Resources`:
+3. À présent, ajoutez le `StackPanel` avec les boutons de navigation, d’ajout, de suppression et de mise à jour. Tout d’abord, ajoutez ce style à `Windows.Resources` :
 
     ```xaml
     <Style x:Key="NavButton" TargetType="{x:Type Button}" BasedOn="{x:Null}">
@@ -399,7 +399,7 @@ Il existe des parties sur quatre à la logique de commande : (1) les commandes 
     </Style>
     ```
 
-     Ensuite, collez ce code juste après le `RowDefinitions` externe `Grid` élément, vers le haut de la page XAML :
+     Ensuite, collez ce code juste après la `RowDefinitions` pour l’élément `Grid` externe, en haut de la page XAML :
 
     ```xaml
     <StackPanel Orientation="Horizontal" Margin="2,2,2,0" Height="36" VerticalAlignment="Top" Background="Gainsboro" DataContext="{StaticResource customerViewSource}" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin">
@@ -417,15 +417,15 @@ Il existe des parties sur quatre à la logique de commande : (1) les commandes 
 
 ### <a name="add-command-handlers-to-the-mainwindow-class"></a>Ajouter des gestionnaires de commandes à la classe MainWindow
 
-Le code-behind est minime, à l’exception des méthodes add et delete. Navigation est effectuée en appelant des méthodes sur la propriété View du CollectionViewSource. Le `DeleteOrderCommandHandler` montre comment effectuer une suppression en cascade sur une commande. Nous devons tout d’abord supprimer le Order_Details qui y sont associés. Le `UpdateCommandHandler` ajoute un nouveau client ou une commande à la collection, sinon met simplement à jour d’un client existant ou une commande avec les modifications apportée par l’utilisateur dans les zones de texte.
+Le code-behind est minimal, à l’exception des méthodes d’ajout et de suppression. La navigation est effectuée en appelant des méthodes sur la propriété View du CollectionViewSource. Le `DeleteOrderCommandHandler` montre comment effectuer une suppression en cascade sur une commande. Nous devons tout d’abord supprimer le Order_Details qui lui est associé. Le `UpdateCommandHandler` ajoute un nouveau client ou une commande au regroupement, ou simplement met à jour un client ou une commande existant avec les modifications apportées par l’utilisateur dans les zones de texte.
 
-Ajoutez ces méthodes de gestionnaire à la classe MainWindow dans *MainWindow.xaml.cs*. Si votre CollectionViewSource pour la table Customers a un nom différent, vous devez ajuster le nom dans chacune de ces méthodes :
+Ajoutez ces méthodes de gestionnaire à la classe MainWindow dans *MainWindow.Xaml.cs*. Si votre CollectionViewSource pour la table Customers a un nom différent, vous devez ajuster le nom dans chacune de ces méthodes :
 
 [!code-csharp[CommandHandlers#3](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#3)]
 
 ## <a name="run-the-application"></a>Exécuter l'application
 
-Pour démarrer le débogage, appuyez sur **F5**. Vous devez voir les données renseignées dans la grille, et les boutons de navigation doivent fonctionner comme prévu. Cliquez sur **valider** pour ajouter un nouveau client ou une commande pour le modèle après avoir entré les données. Cliquez sur **Annuler** pour la sauvegarde hors d’un nouveau client ou d’un nouveau bon de commande sans enregistrer les données. Vous pouvez apporter des modifications pour les clients existants et des commandes directement dans les zones de texte, et ces modifications sont écrites dans le modèle automatiquement.
+Pour démarrer le débogage, appuyez sur **F5**. Vous devez voir les données de client et de commande renseignées dans la grille, et les boutons de navigation devraient fonctionner comme prévu. Cliquez sur **valider** pour ajouter un nouveau client ou une commande au modèle une fois que vous avez entré les données. Cliquez sur **Annuler** pour revenir en arrière d’un nouveau formulaire de client ou de commande sans enregistrer les données. Vous pouvez apporter des modifications aux clients et aux commandes existants directement dans les zones de texte, et ces modifications sont écrites automatiquement dans le modèle.
 
 ## <a name="see-also"></a>Voir aussi
 

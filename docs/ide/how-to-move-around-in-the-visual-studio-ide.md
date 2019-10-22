@@ -12,24 +12,24 @@ helpviewer_keywords:
 - Window.NextDocumentWindowNav
 - IDE navigator
 ms.assetid: 6c36b6eb-c93f-496b-af08-4199f7afd8bd
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5933d89e38d040b088879f10911f2f1fff049aab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: b3aa39c1c9748eb3a9270a66a3a6bbcb43fdcea2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62547677"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645842"
 ---
-# <a name="how-to-move-around-in-the-visual-studio-ide"></a>Procédure : se déplacer dans l’IDE Visual Studio
+# <a name="how-to-move-around-in-the-visual-studio-ide"></a>Guide pratique pour naviguer dans l’IDE Visual Studio
 
 L’environnement de développement intégré (IDE) a été conçu pour vous permettre de vous déplacer de fenêtre en fenêtre et de fichier en fichier de différentes façons, selon vos préférences ou exigences de projet. Vous pouvez choisir de parcourir tous les fichiers ouverts de l'éditeur ou de parcourir toutes les fenêtres Outil actives dans l'IDE. Vous pouvez aussi basculer directement vers tout fichier ouvert dans l'éditeur, indépendamment de son dernier ordre d'accès. Ces fonctionnalités peuvent contribuer à accroître votre productivité lorsque vous travaillez dans l’IDE.
 
 > [!NOTE]
-> Les options disponibles dans les boîtes de dialogue, ainsi que les noms et emplacements des commandes de menu que vous voyez, peuvent différer de ce qui est décrit dans cet article, en fonction de vos paramètres actifs ou de votre édition. Cet article concerne les paramètres **Général**. Pour modifier vos paramètres, par exemple pour définir les paramètres **Général** ou **Visual C++**, choisissez **Outils** > **Importation et exportation de paramètres**, puis choisissez **Réinitialiser tous les paramètres**.
+> Les options disponibles dans les boîtes de dialogue, ainsi que les noms et emplacements des commandes de menu que vous voyez, peuvent différer de ce qui est décrit dans cet article, en fonction de vos paramètres actifs ou de votre édition. Cet article concerne les paramètres **Général**. Pour modifier vos paramètres, par exemple pour définir les paramètres **Général** ou **Visual C++** , choisissez **Outils** > **Importation et exportation de paramètres**, puis choisissez **Réinitialiser tous les paramètres**.
 
 ## <a name="keyboard-shortcuts"></a>Raccourcis clavier
 
@@ -43,9 +43,9 @@ Les options Naviguer vers l’arrière et Naviguer vers l’avant permettent de 
 
 ### <a name="to-move-through-open-files-in-order-of-use"></a>Pour parcourir les documents ouverts par ordre d'utilisation
 
-- Pour activer les documents ouverts dans l’ordre dans lequel ils ont le plus récemment fait l’objet d’un accès, appuyez sur **Ctrl**+**-**.
+- Pour activer les documents ouverts dans l’ordre dans lequel ils ont été récemment touchés, appuyez sur **Ctrl**+ **-** (trait d’Union).
 
-- Pour activer les documents ouverts dans l’ordre inverse, appuyez sur **Ctrl**+**Maj**+**-**.
+- Pour activer les documents ouverts dans l’ordre inverse, appuyez sur **Ctrl**+**MAJ**+ **-** (trait d’Union).
 
     > [!NOTE]
     > **Naviguer vers l’arrière** et **Naviguer vers l’avant** sont aussi disponibles dans le menu **Affichage**.

@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - dependency diagrams, adding custom properties
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3ef03b3833f30c1376bd3b2787f4ca773c992ef
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 58a52983b1a3def85d5785d0aa3f7abf99e0317c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870667"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652295"
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>Ajouter des propriétés personnalisées à des diagrammes de dépendance
 
@@ -29,10 +29,10 @@ Si vous souhaitez simplement que votre code joigne des valeurs à n’importe qu
 **Préparation initiale**
 
 > [!IMPORTANT]
-> Pour afficher les propriétés, apportez les modifications suivantes sur chaque ordinateur sur lequel vous souhaitez que les propriétés de couche soient visibles:
+> Pour afficher les propriétés, apportez les modifications suivantes sur chaque ordinateur sur lequel vous souhaitez que les propriétés de couche soient visibles :
 >
 > 1. Exécutez le bloc-notes en utilisant **exécuter en tant qu’administrateur**. Ouvrez *%ProgramFiles%\Microsoft Visual Studio [version] \Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest*.
-> 2. À l’intérieur de l’élément de **contenu** , ajoutez:
+> 2. À l’intérieur de l’élément de **contenu** , ajoutez :
 >
 >     ```xml
 >     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>
@@ -47,7 +47,7 @@ Si vous souhaitez simplement que votre code joigne des valeurs à n’importe qu
 
 **Vérifier que votre code se trouve dans un projet VSIX**
 
-Si votre propriété fait partie d’une commande, d’un mouvement ou d’un projet de validation, vous n’avez rien à ajouter. Le code de votre propriété personnalisée doit être défini dans un projet d'extensibilité Visual Studio défini en tant que composant MEF. Pour plus d’informations, consultez [Ajouter des commandes et des mouvements aux diagrammes de dépendances](../modeling/add-commands-and-gestures-to-layer-diagrams.md) ou ajouter une [validation d’architecture personnalisée aux diagrammes de dépendance](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).
+Si votre propriété fait partie d’une commande, d’un mouvement ou d’un projet de validation, vous n’avez rien à ajouter. Le code de votre propriété personnalisée doit être défini dans un projet d'extensibilité Visual Studio défini en tant que composant MEF. Pour plus d’informations, consultez [Ajouter des commandes et des mouvements aux diagrammes de dépendances](../modeling/add-commands-and-gestures-to-layer-diagrams.md) ou [Ajouter une validation d’architecture personnalisée aux diagrammes de dépendance](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).
 
 **Définir la propriété personnalisée**
 
@@ -61,7 +61,7 @@ public class MyProperty : PropertyExtension<ILayerElement>
 }
 ```
 
-Vous pouvez définir des propriétés sur [ILayerElement](/previous-versions/ff644511(v=vs.140)) ou sur l’une de ses classes dérivées, notamment:
+Vous pouvez définir des propriétés sur [ILayerElement](/previous-versions/ff644511(v=vs.140)) ou sur l’une de ses classes dérivées, notamment :
 
 - `ILayerModel` : le modèle
 
@@ -73,7 +73,7 @@ Vous pouvez définir des propriétés sur [ILayerElement](/previous-versions/ff6
 
 - `ILayerCommentLink`
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
 
 Le code suivant est un descripteur de propriété personnalisé classique. Il définit une propriété booléenne sur le modèle de couche (`ILayerModel`) qui permet à l'utilisateur de fournir des valeurs pour une méthode de validation personnalisée.
 

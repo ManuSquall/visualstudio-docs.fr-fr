@@ -16,15 +16,15 @@ helpviewer_keywords:
 - exporting shortcut keys [Visual Studio]
 ms.assetid: d2774be2-60a4-4d6f-95f1-79d0d9e55b56
 caps.latest.revision: 30
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 74c08f7ee338a38267ba0b259fbd8cb207b64d71
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: e63395838d7d91170d54edbb07c0b38db548ccdf
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432306"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670489"
 ---
 # <a name="identifying-and-customizing-keyboard-shortcuts-in-visual-studio"></a>Identification et personnalisation des raccourcis clavier dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ Vous pouvez identifier les raccourcis clavier pour les commandes Visual Studio, 
 
 2. Développez **Environnement**, puis choisissez **Clavier**.
 
-     ![Afficher les raccourcis clavier dans la boîte de dialogue Options](../ide/media/optionskeyboard.png "OptionsKeyboard")
+     ![Afficher les raccourcis clavier dans la boîte de dialogue Options](../ide/media/optionskeyboard.png "|::ref1::|")
 
 3. Dans la zone **Afficher les commandes contenant**, entrez tout ou partie du nom de la commande sans espaces.
 
@@ -70,7 +70,7 @@ Vous pouvez identifier les raccourcis clavier pour les commandes Visual Studio, 
 
 5. Si la commande a un raccourci clavier, elle apparaît dans la liste **Raccourcis de la commande sélectionnée**.
 
-     ![Afficher le raccourci d’une commande spécifiée](../ide/media/viewshortcut.png "ViewShortcut")
+     ![Afficher le raccourci d'une commande spécifiée](../ide/media/viewshortcut.png "|::ref2::|")
 
 ## <a name="bkmk_assign"></a> Personnalisation d’un raccourci clavier
 
@@ -78,7 +78,7 @@ Vous pouvez identifier les raccourcis clavier pour les commandes Visual Studio, 
 
 2. Développez le dossier **Environnement**, puis choisissez **Clavier**.
 
-     ![Afficher les raccourcis clavier dans la boîte de dialogue Options](../ide/media/optionskeyboard.png "OptionsKeyboard")
+     ![Afficher les raccourcis clavier dans la boîte de dialogue Options](../ide/media/optionskeyboard.png "|::ref3::|")
 
 3. Dans la zone **Afficher les commandes contenant**, entrez tout ou partie du nom de la commande sans espaces.
 
@@ -100,7 +100,7 @@ Vous pouvez identifier les raccourcis clavier pour les commandes Visual Studio, 
 
      Si un raccourci est déjà affecté à une autre commande, il s’affiche dans la zone **Raccourci actuellement utilisé par**. Dans ce cas, choisissez la touche Retour arrière pour supprimer ce raccourci avant d'en essayer un autre.
 
-     ![Attribuer un autre raccourci à une commande](../ide/media/reassignshortcut.png "ReassignShortcut")
+     ![Attribuer un autre raccourci à une commande](../ide/media/reassignshortcut.png "|::ref4::|")
 
 7. Choisissez le bouton **Assigner**.
 
@@ -116,11 +116,11 @@ Vous pouvez identifier les raccourcis clavier pour les commandes Visual Studio, 
 
 2. Choisissez **Exporter les paramètres d’environnement sélectionnés**, puis choisissez le bouton **Suivant**.
 
-3. Sous **Quels paramètres souhaitez-vous exporter ?**, décochez la case **Tous les paramètres**, développez **Options**, puis **Environnement**.
+3. Sous **Quels paramètres souhaitez-vous exporter ?** , décochez la case **Tous les paramètres**, développez **Options**, puis **Environnement**.
 
 4. Cochez la case **Clavier**, puis choisissez le bouton **Suivant**.
 
-     ![Exporter uniquement les raccourcis clavier personnalisés](../ide/media/exportshortcuts.png "ExportShortcuts")
+     ![Exporter uniquement les raccourcis clavier personnalisés](../ide/media/exportshortcuts.png "|::ref5::|")
 
 5. Dans les zones **Comment voulez-vous appeler votre fichier des paramètres ?** et **Stocker mon fichier des paramètres dans ce répertoire**, laissez les valeurs par défaut ou spécifiez des valeurs différentes, puis choisissez le bouton **Terminer**.
 
@@ -138,11 +138,11 @@ Vous pouvez identifier les raccourcis clavier pour les commandes Visual Studio, 
 
 5. Choisissez le bouton **Suivant**.
 
-6. Sous **Quels paramètres voulez-vous importer ?**, décochez la case **Tous les paramètres**, développez **Options**, puis **Environnement**.
+6. Sous **Quels paramètres voulez-vous importer ?** , décochez la case **Tous les paramètres**, développez **Options**, puis **Environnement**.
 
 7. Cochez la case **Clavier**, puis choisissez le bouton **Terminer**.
 
-     ![Importer uniquement les raccourcis clavier personnalisés](../ide/media/importshortcuts.png "ImportShortcuts")
+     ![Importer uniquement les raccourcis clavier personnalisés](../ide/media/importshortcuts.png "|::ref6::|")
 
 ## <a name="see-also"></a>Voir aussi
  [Fonctionnalités d’accessibilité de Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md)

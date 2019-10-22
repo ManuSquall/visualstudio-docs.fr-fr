@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentContext::GetDocument | Microsoft Docs
+title: 'IDebugDocumentContext :: GetDocument | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9bfcc5b3e2d2e197619f9bc4ec19b55c9eaf1d2a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bdf4c52d1a866df12a129f1d4f2e864068c876fa
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974434"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577083"
 ---
 # <a name="idebugdocumentcontextgetdocument"></a>IDebugDocumentContext::GetDocument
 Retourne le document qui contient ce contexte.  
@@ -37,17 +37,17 @@ HRESULT GetDocument(
   
 #### <a name="parameters"></a>Paramètres  
  `ppsd`  
- [out] Le document qui contient ce contexte.  
+ à Document qui contient ce contexte.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
 ## <a name="remarks"></a>Notes  
- Le `GetDocument` méthode retourne le document qui contient ce contexte.  
+ La méthode `GetDocument` retourne le document qui contient ce contexte.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IDebugDocumentContext](../../winscript/reference/idebugdocumentcontext-interface.md)

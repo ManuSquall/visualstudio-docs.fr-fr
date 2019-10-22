@@ -14,17 +14,17 @@ helpviewer_keywords:
 - Class Designer [Visual Studio], refactoring classes
 - refactoring, classes
 ms.assetid: dcf07bb4-fa3b-4224-9dec-566fd924a8ce
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d99fc68f6b42b442a87ead02aba888063b1b42a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 9b82bebb8e7eedcf6bdff7b12048f8c98cabdeb5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975084"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72631185"
 ---
 # <a name="refactor-classes-and-types-in-class-designer"></a>Refactoriser des classes et des types dans le Concepteur de classes
 
@@ -37,9 +37,9 @@ Quand vous refactorisez du code, vous le rendez plus facile à comprendre et à 
 
 |Tâche|Contenu de support|
 |----------| - |
-|**Refactoriser des classes :** vous pouvez utiliser les opérations de refactorisation pour fractionner une classe en classes partielles ou pour implémenter une classe de base abstraite.|-   [Guide pratique pour fractionner une classe en classes partielles](how-to-split-a-class-into-partial-classes.md)|
-|**Utiliser des interfaces :** Dans le Concepteur de classes, vous pouvez implémenter une interface pour le diagramme de classes en la connectant à une classe qui fournit du code pour les méthodes d’interface.|-   [Guide pratique pour implémenter une interface](how-to-implement-an-interface.md)|
-|**Refactoriser des types, des membres de type et des paramètres :** avec le Concepteur de classes, vous pouvez renommer des types, substituer des membres de type ou les déplacer d’un type à un autre. Vous pouvez également créer des types Nullable.|-   [Renommer des types et des membres de type](#rename-types-and-type-members)<br />-   [Déplacer des membres de type d’un type à un autre](#move-type-members-from-one-type-to-another)<br />-   [Guide pratique pour créer un type Nullable](how-to-create-a-nullable-type.md)|
+|**Refactorisation des classes** : vous pouvez utiliser les opérations de refactorisation pour fractionner une classe en classes partielles ou pour implémenter une classe de base abstraite.|-   [Guide pratique pour diviser une classe en classes partielles](how-to-split-a-class-into-partial-classes.md)|
+|**Utilisation des interfaces** : dans le Concepteur de classes, vous pouvez implémenter une interface pour le diagramme de classes en la connectant à une classe qui fournit du code pour les méthodes d’interface.|-   [Guide pratique pour implémenter une interface](how-to-implement-an-interface.md)|
+|**Refactorisation des types, des membres de type et des paramètres** : à l’aide du Concepteur de classes, vous pouvez renommer des types, substituer des membres de type ou les déplacer d’un type à un autre. Vous pouvez également créer des types Nullable.|-   [Renommer des types et des membres de type](#rename-types-and-type-members)<br />-   [Déplacer des membres de type d’un type à un autre](#move-type-members-from-one-type-to-another)<br />-   [Guide pratique pour créer un type Nullable](how-to-create-a-nullable-type.md)|
 
 ## <a name="rename-types-and-type-members"></a>Renommer des types et des membres de type
 

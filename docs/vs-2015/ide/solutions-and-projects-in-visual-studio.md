@@ -47,15 +47,15 @@ helpviewer_keywords:
 - miscellaneous files
 ms.assetid: aeaf56cb-c2dd-47f6-b012-23b84b7a7254
 caps.latest.revision: 41
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 340fe819086d3cc18cb9c2dd6a4ca14129c6d8ad
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 0b1783adadd1bfab32bfbbdcfb5ae28df7c0aae4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679879"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661197"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Solutions et projets dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ Quand vous créez une application pour mobile, une application, un site web, une
 
  Le diagramme suivant montre la relation entre les projets et les solutions, ainsi que les éléments qu'ils contiennent au sens logique.
 
- ![Projets et solutions Visual Studio](../ide/media/vs2015-project-diagram.png "vs2015_project_diagram")
+ ![Projets et solutions Visual Studio](../ide/media/vs2015-project-diagram.png "|::ref1::|")
 
  Vous pouvez aussi créer des modèles de projets et d'éléments personnalisés. Pour plus d’informations, consultez [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md).
 
@@ -80,7 +80,7 @@ Quand vous créez une application pour mobile, une application, un site web, une
 ## <a name="managing-projects-in-solution-explorer"></a>Gestion de projets dans l'Explorateur de solutions
  Après avoir créé un nouveau projet, vous utilisez **l'Explorateur de solutions** pour afficher et gérer des projets et des solutions, ainsi que leurs éléments associés. L'illustration suivante montre l'Explorateur de serveurs avec une solution C# qui contient deux projets.
 
- ![Explorateur de solutions](../ide/media/vs2015-solution-explorer.png "vs2015_solution_explorer")
+ ![Explorateur de solutions](../ide/media/vs2015-solution-explorer.png "|::ref2::|")
 
 ## <a name="in-this-section"></a>Dans cette section
 

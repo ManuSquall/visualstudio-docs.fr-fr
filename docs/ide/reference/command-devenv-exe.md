@@ -7,17 +7,17 @@ helpviewer_keywords:
 - /Command Devenv switch
 - Command Devenv switch
 ms.assetid: 13c20cd6-f09d-400a-8b7b-ecc266a32cef
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6daa21f9db7eef9a651577ad829d884dccf353dc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 2ca9a6550fd5fd141a5f8051d1948ccd626e970b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968621"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654595"
 ---
 # <a name="command-devenvexe"></a>/Command (devenv.exe)
 
@@ -33,9 +33,9 @@ devenv /Command CommandName
 
 *CommandName*
 
-Obligatoire. Nom complet d’une commande Visual Studio ou de son alias, entre guillemets doubles. Pour plus d’informations sur la syntaxe des commandes et des alias, consultez [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md).
+Requis. Nom complet d’une commande Visual Studio ou de son alias, entre guillemets doubles. Pour plus d’informations sur la syntaxe des commandes et des alias, consultez [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md).
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
 Une fois le démarrage terminé, l’IDE exécute la commande nommée.
 
@@ -45,7 +45,7 @@ Si vous utilisez ce commutateur, l’IDE n’affiche pas la page de démarrage a
 
 ::: moniker-end
 
-Si un complément expose une commande, vous pouvez utiliser ce commutateur pour lancer le complément à partir de la ligne de commande. Pour plus d'informations, voir [Procédure : Contrôler les compléments avec le Gestionnaire de compléments](/previous-versions/xwdatdwh(v=vs.140)).
+Si un complément expose une commande, vous pouvez utiliser ce commutateur pour lancer le complément à partir de la ligne de commande. Pour plus d’informations, consultez [Comment : contrôler des compléments à l’aide du gestionnaire de compléments](/previous-versions/xwdatdwh(v=vs.140)).
 
 ## <a name="example"></a>Exemple
 

@@ -1,21 +1,21 @@
 ---
-title: 'Procédure : Créer un modèle 3D de base'
+title: Guide pratique pour créer un modèle 3D de base
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: a0d97966-2df8-449b-a8cf-5a19684dc773
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5f4bb3c6d429fb40d97e748798610e4e46262eb
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 604847e5f9bf6111d548b9d3bbdc0a0e10301784
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924510"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72636735"
 ---
-# <a name="how-to-create-a-basic-3d-model"></a>Procédure : Créer un modèle 3D de base
+# <a name="how-to-create-a-basic-3d-model"></a>Guide pratique pour créer un modèle 3D de base
 
 Cet article montre comment utiliser l’éditeur de modèle pour créer un modèle 3D de base. Les activités suivantes sont décrites :
 
@@ -40,7 +40,7 @@ Avant de commencer, assurez-vous que la fenêtre **Propriétés** et la **Boîte
 
 ### <a name="to-create-a-simplified-3d-model-of-a-house"></a>Pour créer un modèle 3D simplifié d’une maison
 
-1. Créez un modèle 3D avec lequel travailler. Pour plus d’informations sur l’ajout d’un modèle à votre projet, consultez la section Getting Started (Prise en main) de l’article [Model Editor (Éditeur de modèle)](../designers/model-editor.md).
+1. Créer un modèle 3D avec lequel travailler. Pour plus d’informations sur l’ajout d’un modèle à votre projet, consultez la section Getting Started (Prise en main) de l’article [Model Editor (Éditeur de modèle)](../designers/model-editor.md).
 
 2. Ajoutez un cube à la scène. Dans la fenêtre **Boîte à outils**, sous **Formes**, sélectionnez **Cube**, puis faites glisser cette option vers l’aire de conception.
 
@@ -74,6 +74,6 @@ Avant de commencer, assurez-vous que la fenêtre **Propriétés** et la **Boîte
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Guide pratique pour modéliser un terrain 3D](../designers/how-to-model-3-d-terrain.md)
+- [Guide pratique pour modéliser un terrain 3D](../designers/how-to-model-3-d-terrain.md)
 - [Éditeur de modèles](../designers/model-editor.md)
 - [Concepteur Shader](../designers/shader-designer.md)

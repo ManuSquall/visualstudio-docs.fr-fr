@@ -28,15 +28,15 @@ helpviewer_keywords:
 - XAML view settings, attribute spacing
 ms.assetid: ad3820b1-0d94-4807-a74c-c3467ed973a2
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8f820ac16667a9550db17bc252c547f16b81e70b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 319e09d2438b23c217f7820fe4288758a595be56
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696006"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662220"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>Options, Éditeur de texte, XAML, Mise en forme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "65696006"
 Utilisez la page de propriétés **Mise en forme** pour spécifier la mise en forme des éléments et attributs dans vos documents XAML. Pour ouvrir la boîte de dialogue **Options**, cliquez sur le menu **Outils**, puis sur **Options**. Pour accéder à la page de propriétés **Mise en forme**, développez le nœud **Éditeur de texte**, **XAML**, **Mise en forme**.
 
 > [!NOTE]
-> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Paramètres Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="auto-formatting-events"></a>Événements de mise en forme automatique
 La mise en forme automatique peut se produire quand un des événements suivants est détecté.
@@ -117,16 +117,16 @@ Utilisez ce paramètre pour contrôler si le mode Design apparaît quand des doc
 
 |||
 |-|-|
-|**Toujours ouvrir des documents dans la vue XAML complète**|Indique si les documents XAML apparaissent uniquement dans la vue XAML, sans mode Design. Utile pour le chargement de documents volumineux.|
+|**Toujours ouvrir les documents en mode XAML complet**|Spécifie si les documents XAML s’affichent uniquement en mode XAML, sans Mode Création. Utile pour le chargement de documents volumineux.|
 
 ## <a name="toolbox"></a>Boîte à outils
-Utilisez ce paramètre pour spécifier si les contrôles utilisateur et des contrôles personnalisés sont affichés dans la boîte à outils.
+Utilisez ce paramètre pour spécifier si les contrôles utilisateur et les contrôles personnalisés sont affichés dans la boîte à outils.
 
 |||
 |-|-|
 |**Remplir automatiquement les éléments de la boîte à outils**|Spécifie si les contrôles utilisateur et les contrôles personnalisés dans la solution actuelle sont automatiquement affichés dans la boîte à outils.|
 
 ## <a name="see-also"></a>Voir aussi
-[Intégration du format XAML au format WPF](https://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8)  
-[Guide pratique pour Modifier les paramètres de vue XAML](https://msdn.microsoft.com/aee87c79-ca01-4f84-8fb7-a9e47048ee47)  
-[Procédures pas à pas pour XAML et le code](https://msdn.microsoft.com/b3ff41a0-a2a3-4f61-b698-ac88ec8f799c)
+[XAML dans WPF](https://msdn.microsoft.com/library/5d858575-a83b-42df-ad3f-047ed2d6e3c8) 
+[Comment : modifier les paramètres de vue XAML](https://msdn.microsoft.com/aee87c79-ca01-4f84-8fb7-a9e47048ee47) 
+[procédures pas à pas XAML et de code](https://msdn.microsoft.com/b3ff41a0-a2a3-4f61-b698-ac88ec8f799c)

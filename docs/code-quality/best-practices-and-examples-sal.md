@@ -7,12 +7,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: cd5e07f1e9ce83f36e6ecfbae148c84d18f40ff1
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: ccb18a704c2e8a2c185d3751483736631b0bba68
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72015954"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72448647"
 ---
 # <a name="best-practices-and-examples-sal"></a>Meilleures pratiques et exemples (SAL)
 Voici quelques méthodes pour tirer le meilleur parti du langage SAL (code source annotation Language) et éviter certains problèmes courants.
@@ -245,4 +245,4 @@ Dans cet exemple, `_Out_opt_` indique que le pointeur peut être NULL dans le ca
 [Annotations des structs et des classes](../code-quality/annotating-structs-and-classes.md)  
 [Annotation du comportement de verrouillage](../code-quality/annotating-locking-behavior.md)  
 [Spécification du moment et de l’endroit où une annotation s’applique](../code-quality/specifying-when-and-where-an-annotation-applies.md)  
-[Fonctions intrinsèques](../code-quality/intrinsic-functions.md)  
+[Fonctions intrinsèques](../code-quality/intrinsic-functions.md)

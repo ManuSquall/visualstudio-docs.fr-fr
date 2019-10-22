@@ -7,17 +7,17 @@ helpviewer_keywords:
 - code snippets [C#]
 - Code Snippet Inserter [C#]
 - C#, code snippets
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7a785623ea36fe25833f24f760c29f49ca40b459
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: e06e825779476489414ff200aba9cd43fce96e2f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918667"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647261"
 ---
 # <a name="c-code-snippets"></a>Extraits de code C#
 
@@ -38,13 +38,13 @@ Par défaut, les extraits de code suivants sont inclus dans Visual Studio pour C
 |~|Crée un [finaliseur](/dotnet/csharp/programming-guide/classes-and-structs/destructors) (destructeur) pour la classe conteneur.|Dans une classe.|
 |Attribut|Crée une déclaration pour une classe qui dérive de <xref:System.Attribute>.|Dans un espace de noms (notamment l’espace de noms global), une classe ou un struct.|
 |checked|Crée un bloc [checked](/dotnet/csharp/language-reference/keywords/checked).|Dans une méthode, un indexeur, un accesseur de propriété ou un accesseur d’événement.|
-|class|Crée une déclaration de classe.|Dans un espace de noms (notamment l’espace de noms global), une classe ou un struct.|
+|classe|Crée une déclaration de classe.|Dans un espace de noms (notamment l’espace de noms global), une classe ou un struct.|
 |ctor|Crée un constructeur pour la classe conteneur.|Dans une classe.|
 |cw|Crée un appel à <xref:System.Console.WriteLine%2A>.|Dans une méthode, un indexeur, un accesseur de propriété ou un accesseur d’événement.|
 |do|Crée une boucle [do](/dotnet/csharp/language-reference/keywords/do) `while`.|Dans une méthode, un indexeur, un accesseur de propriété ou un accesseur d’événement.|
 |else|Crée un bloc [else](/dotnet/csharp/language-reference/keywords/if-else).|Dans une méthode, un indexeur, un accesseur de propriété ou un accesseur d’événement.|
 |enum|Crée une déclaration [enum](/dotnet/csharp/language-reference/keywords/enum).|Dans un espace de noms (notamment l’espace de noms global), une classe ou un struct.|
-|equals|Crée une déclaration de méthode qui substitue la méthode <xref:System.Object.Equals%2A> définie dans la classe <xref:System.Object>.|Dans une classe ou un struct.|
+|est égal à|Crée une déclaration de méthode qui substitue la méthode <xref:System.Object.Equals%2A> définie dans la classe <xref:System.Object>.|Dans une classe ou un struct.|
 |exception|Crée une déclaration pour une classe qui dérive d’une exception (<xref:System.Exception> par défaut).|Dans un espace de noms (notamment l’espace de noms global), une classe ou un struct.|
 |for|Crée une boucle [for](/dotnet/csharp/language-reference/keywords/for).|Dans une méthode, un indexeur, un accesseur de propriété ou un accesseur d’événement.|
 |foreach|Crée une boucle [foreach](/dotnet/csharp/language-reference/keywords/foreach-in).|Dans une méthode, un indexeur, un accesseur de propriété ou un accesseur d’événement.|

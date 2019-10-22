@@ -6,17 +6,17 @@ f1_keywords:
 - vs.codeanalysis.addremoverulesets
 helpviewer_keywords:
 - rule sets
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b52bb573b9a98c5a797f67cdbd4608f8b8636da
-ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.openlocfilehash: 6b904fd484135943228b2d8ac21e2df0d1c02e34
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71975098"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649510"
 ---
 # <a name="customize-a-rule-set"></a>Personnaliser un ensemble de règles
 
@@ -24,7 +24,7 @@ Vous pouvez créer un ensemble de règles personnalisé pour répondre à des be
 
 ## <a name="create-a-custom-rule-set-from-an-existing-rule-set"></a>Créer un ensemble de règles personnalisé à partir d’un ensemble de règles existant
 
-Pour créer un ensemble de règles personnalisé, vous pouvez ouvrir un ensemble de règles intégré dans l' **éditeur d’ensembles de règles**. À partir de là, vous pouvez ajouter ou supprimer des règles spécifiques, et vous pouvez modifier l’action qui se produit lorsqu’une règle est violée, par exemple @ no__t-0for, afficher un avertissement ou une erreur.
+Pour créer un ensemble de règles personnalisé, vous pouvez ouvrir un ensemble de règles intégré dans l' **éditeur d’ensembles de règles**. À partir de là, vous pouvez ajouter ou supprimer des règles spécifiques, et vous pouvez modifier l’action qui se produit lorsqu’une règle est violée &mdash;for exemple, afficher un avertissement ou une erreur.
 
 1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le projet, puis sélectionnez **Propriétés**.
 
@@ -51,7 +51,7 @@ Pour créer un ensemble de règles personnalisé, vous pouvez ouvrir un ensemble
 4. Sélectionnez **ouvrir** pour afficher les règles dans l’éditeur d’ensembles de règles.
 
 > [!NOTE]
-> Si vous avez un projet .NET Core ou .NET Standard, le processus est un peu différent, car il n’existe pas d’onglet de propriété **analyse du code** . Suivez les étapes pour [copier un ensemble de règles prédéfini vers votre projet et le définir comme ensemble de règles actif](analyzer-rule-sets.md). Une fois que vous avez copié un ensemble de règles, vous pouvez [le modifier dans l’éditeur d’ensembles de règles de Visual Studio](working-in-the-code-analysis-rule-set-editor.md) en l’ouvrant à partir de **Explorateur de solutions**.
+> Si vous avez un projet .NET Core ou .NET Standard, le processus est un peu différent, car il n’existe pas d’onglet de propriété **analyse du code** . Suivez les étapes pour [copier un ensemble de règles prédéfini vers votre projet et le définir comme l’ensemble de règles actif](analyzer-rule-sets.md). Une fois que vous avez copié un ensemble de règles, vous pouvez [le modifier dans l’éditeur d’ensembles de règles de Visual Studio](working-in-the-code-analysis-rule-set-editor.md) en l’ouvrant à partir de **Explorateur de solutions**.
 
 ## <a name="create-a-new-rule-set"></a>Créer un ensemble de règles
 
@@ -98,7 +98,7 @@ Vous pouvez créer un nouveau fichier d’ensemble de règles à partir de la bo
 
 ## <a name="rule-precedence"></a>Priorité des règles
 
-- Si la même règle est listée deux fois ou plus dans un ensemble de règles avec des gravités différentes, le compilateur génère une erreur. Exemple :
+- Si la même règle est listée deux fois ou plus dans un ensemble de règles avec des gravités différentes, le compilateur génère une erreur. Exemple :
 
    ```xml
    <RuleSet Name="Rules for ClassLibrary21" Description="Code analysis rules for ClassLibrary21.csproj." ToolsVersion="15.0">
@@ -111,9 +111,9 @@ Vous pouvez créer un nouveau fichier d’ensemble de règles à partir de la bo
 
 - Si la même règle est listée deux fois ou plus dans un ensemble de règles avec la *même* gravité, l’avertissement suivant peut s’afficher dans la **liste d’erreurs**:
 
-   @NO__T 0CA0063 : Échec du chargement du fichier d’ensemble de règles' \[your]. RuleSet’ou de l’un de ses fichiers d’ensemble de règles dépendants. Le fichier n’est pas conforme au schéma de l’ensemble de règles. **
+   **CA0063 : échec du chargement du fichier d’ensemble de règles' \[your]. RuleSet’ou de l’un de ses fichiers d’ensemble de règles dépendants. Le fichier n’est pas conforme au schéma de l’ensemble de règles.**
 
-- Si l’ensemble de règles inclut un ensemble de règles enfant à l’aide d’une balise **include** , et que la règle enfant et parent affecte à la fois la même règle, mais avec des niveaux de gravité différents, la gravité de l’ensemble de règles parent est prioritaire. Exemple :
+- Si l’ensemble de règles inclut un ensemble de règles enfant à l’aide d’une balise **include** , et que la règle enfant et parent affecte à la fois la même règle, mais avec des niveaux de gravité différents, la gravité de l’ensemble de règles parent est prioritaire. Exemple :
 
    ```xml
    <!-- Parent rule set -->
@@ -147,5 +147,5 @@ Maintenant que vous disposez d’un ensemble de règles, l’étape suivante con
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Guide pratique pour Configurer l’analyse du code pour un projet de code managé @ no__t-0
+- [Guide pratique pour configurer l’analyse du code pour un projet de code managé](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
 - [Informations de référence sur l’ensemble de règles d’analyse du code](../code-quality/rule-set-reference.md)

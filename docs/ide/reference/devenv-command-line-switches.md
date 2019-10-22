@@ -8,17 +8,17 @@ helpviewer_keywords:
 - command line [Visual Studio], switches
 - Devenv
 ms.assetid: e12bc6ed-74fd-4bea-8d7c-89b99c20bad8
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db9aaeb48095b058abb0deefa342598eefeed1b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: cf7ebda1e661801995c17a81e658b4f638c2f8a1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970223"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661648"
 ---
 # <a name="devenv-command-line-switches"></a>Commutateurs de ligne de commande Devenv
 
@@ -66,7 +66,7 @@ Les commutateurs de ligne de commande suivants affichent l’environnement IDE e
 | - |-----------------|
 |[/Command](command-devenv-exe.md)|Démarre l’IDE et exécute la commande spécifiée.<br /><br /> `devenv /command "nav https://docs.microsoft.com/"`|
 |[/DebugExe](debugexe-devenv-exe.md)|Charge un exécutable C++ sous le contrôle du débogueur. Ce commutateur n’est pas disponible pour les exécutables Visual Basic ou C#. Pour plus d’informations, consultez [Démarrer automatiquement un processus dans le débogueur](../../debugger/debug-multiple-processes.md#BKMK_Automatically_start_an_process_in_the_debugger).<br /><br /> `devenv /debugexe mysln.exe`|
-|[/Diff](diff.md)|Compare deux fichiers. Accepte quatre paramètres : *SourceFile*, *TargetFile*, *SourceDisplayName* (facultatif) et *TargetDisplayName* (facultatif).<br /><br /> `devenv /diff File1 File2 Alias1 Alias2`|
+|[/Diff](diff.md)|Compare deux fichiers. Prend quatre paramètres : *sourceFile*, *TargetFile*, *SourceDisplayName* (facultatif) et *TargetDisplayName* (facultatif).<br /><br /> `devenv /diff File1 File2 Alias1 Alias2`|
 |[/DoNotLoadProjects](donotloadprojects-devenv-exe.md)|Ouvre la solution spécifiée sans charger de projets.<br /><br /> `devenv /donotloadprojects mysln.sln`|
 |[/Edit](edit-devenv-exe.md)|Ouvre les fichiers spécifiés dans une instance en cours d’exécution de cette application. S’il n’existe aucune instance en cours d’exécution, il démarre une nouvelle instance avec une disposition de fenêtre simplifiée.<br /><br /> `devenv /edit File1 File2`|
 |[/LCID ou /L](lcid-devenv-exe.md)|Spécifie la langue par défaut pour l’IDE. Si la langue spécifiée n’est pas incluse dans votre installation de Visual Studio, ce paramètre est ignoré.<br /><br /> `devenv /l 1033`|
@@ -75,7 +75,7 @@ Les commutateurs de ligne de commande suivants affichent l’environnement IDE e
 |[/Run ou /R](run-devenv-exe.md)|Compile et exécute la solution spécifiée.<br /><br /> `devenv /run mysln.sln`|
 |[/RunExit](runexit-devenv-exe.md)|Compile et exécute la solution spécifiée, réduit l’IDE pendant l’exécution de la solution et ferme l’IDE une fois la solution exécutée.<br /><br /> `devenv /runexit mysln.sln`|
 |[/SafeMode](safemode-devenv-exe.md)|Lance Visual Studio en mode sans échec. Ce commutateur charge uniquement l’environnement par défaut, les services par défaut et les versions commercialisées des packages tiers.<br /><br /> Ce commutateur ne prend aucun argument.|
-|[/UseEnv](useenv-devenv-exe.md)|Force l’environnement IDE à utiliser les variables d’environnement PATH, INCLUDE, LIBPATH et LIB pour la compilation C++. Ce commutateur est installé avec la charge de travail **Développement Desktop avec C++**. Pour plus d’informations, consultez [Définition du chemin d’accès et des variables d’environnement pour les générations sur la ligne de commande](/cpp/build/setting-the-path-and-environment-variables-for-command-line-builds).|
+|[/UseEnv](useenv-devenv-exe.md)|Force l’environnement IDE à utiliser les variables d’environnement PATH, INCLUDE, LIBPATH et LIB pour la compilation C++. Ce commutateur est installé avec la charge de travail **Développement Desktop avec C++** . Pour plus d’informations, consultez [Définition du chemin d’accès et des variables d’environnement pour les générations sur la ligne de commande](/cpp/build/setting-the-path-and-environment-variables-for-command-line-builds).|
 
 Les commutateurs de ligne de commande suivants n’affichent pas l’environnement IDE.
 

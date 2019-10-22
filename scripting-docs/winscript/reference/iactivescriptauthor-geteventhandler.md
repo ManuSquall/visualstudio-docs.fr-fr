@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::GetEventHandler | Microsoft Docs
+title: 'IActiveScriptAuthor :: GetEventHandler | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7bba60df6485ddaac0363a3416739efd7be69389
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c69b32f0040ea6d52e0712b8e1813cc5a0b40c58
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935631"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576227"
 ---
 # <a name="iactivescriptauthorgeteventhandler"></a>IActiveScriptAuthor::GetEventHandler
-Retourne le scriptlet qui possède les attributs spécifiés.  
+Retourne le scriptlet qui a les attributs spécifiés.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -41,29 +41,29 @@ HRESULT GetEventHandler(
   
 #### <a name="parameters"></a>Paramètres  
  `pdisp`  
- [in] Le `IDispatch` objet qui correspond à la `NamedItem` auquel est joint le scriptlet.  
+ dans Objet `IDispatch` qui correspond au `NamedItem` auquel le scriptlet est attaché.  
   
  `pszItem`  
- [in] L’adresse du tampon de l’identificateur du nom qualifié complet de scriptlet dans l’hôte de niveau supérieur.  
+ dans Adresse de mémoire tampon de l’identificateur de niveau supérieur du nom du scriptlet complet dans l’hôte.  
   
  `pszSubItem`  
- [in] L’adresse du tampon de l’identificateur de second niveau du nom qualifié complet de scriptlet dans l’hôte. La valeur NULL si le nom comporte un seul niveau.  
+ dans Adresse de mémoire tampon de l’identificateur de deuxième niveau du nom du scriptlet complet dans l’hôte. Affectez la valeur NULL si le nom n’a qu’un seul niveau.  
   
  `pszEvent`  
- [in] L’adresse d’une mémoire tampon qui contient le nom de l’événement. Le scriptlet est un gestionnaire d’événements pour cet événement.  
+ dans Adresse d’une mémoire tampon qui contient le nom de l’événement. Le scriptlet est un gestionnaire d’événements pour cet événement.  
   
  `ppse`  
- [out] L’adresse d’une variable qui reçoit un pointeur vers le `IScriptEntry` interface du scriptlet qui possède les attributs spécifiés.  
+ à Adresse d’une variable qui reçoit un pointeur vers l’interface `IScriptEntry` du scriptlet qui a les attributs spécifiés.  
   
 ## <a name="return-value"></a>Valeur de retour  
  Élément `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
 ## <a name="remarks"></a>Notes  
   
 ## <a name="see-also"></a>Voir aussi  
- [IActiveScriptAuthor (Interface)](../../winscript/reference/iactivescriptauthor-interface.md)   
+ @No__t_1 de l' [interface IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)  
  [Interface IScriptEntry](../../winscript/reference/iscriptentry-interface.md)

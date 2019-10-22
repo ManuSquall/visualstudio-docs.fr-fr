@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::DeleteMemberByName | Microsoft Docs
+title: IDispatchEx ::D eleteMemberByName | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dc7c8db4ab28e0bd0fcb48f352cb07595f72fd17
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2abb562f65885ee1d12f2ec9b2300fcddd3be37b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000888"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576617"
 ---
 # <a name="idispatchexdeletememberbyname"></a>IDispatchEx::DeleteMemberByName
 Supprime un membre par son nom.  
@@ -41,25 +41,25 @@ HRESULT DeleteMemberByName(
  Nom du membre à supprimer.  
   
  `grfdex`  
- Détermine si le nom du membre respecte la casse. Cela peut prendre l’une des valeurs suivantes :  
+ Détermine si le nom du membre respecte la casse. Il peut s’agir de l’une des valeurs suivantes :  
   
-|Value|Signification|  
+|valeur|Signification|  
 |-----------|-------------|  
-|fdexNameCaseSensitive|Demande que la recherche de nom faire de la casse. Peut être ignoré par l’objet qui ne prend pas en charge la recherche respectant la casse.|  
-|fdexNameCaseInsensitive|Demande que la recherche de nom être effectuées de façon non-respect de la casse. Peut être ignoré par l’objet qui ne prend pas en charge la recherche de non-respect de la casse.|  
+|fdexNameCaseSensitive|Demande que la recherche de nom s’effectue de façon sensible à la casse. Peut être ignoré par un objet qui ne prend pas en charge la recherche qui respecte la casse.|  
+|fdexNameCaseInsensitive|Demande que la recherche de nom s’effectue sans respect de la casse. Peut être ignoré par un objet qui ne prend pas en charge la recherche ne respectant pas la casse.|  
   
 ## <a name="return-value"></a>Valeur de retour  
- Retourne une des valeurs suivantes :  
+ Retourne l’une des valeurs suivantes :  
   
 |||  
 |-|-|  
 |`S_OK`|Opération réussie.|  
-|`S_FALSE`|Membre existe mais ne peut pas être supprimé.|  
+|`S_FALSE`|Le membre existe mais ne peut pas être supprimé.|  
   
 ## <a name="remarks"></a>Notes  
  Si le membre est supprimé, le DISPID doit rester valide pour `GetNextDispID`.  
   
- Si un membre avec un nom donné est supprimé et recréé ultérieurement un membre portant le même nom, le DISPID doit être le même. (Si les membres qui diffèrent uniquement par la casse sont « même » est dépendant d’objets).  
+ Si un membre avec un nom donné est supprimé et qu’un membre du même nom est recréé, le DISPID doit être le même. (Si les membres qui diffèrent uniquement par la casse sont « identiques » dépend de l’objet).  
   
 ## <a name="example"></a>Exemple  
   

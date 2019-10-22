@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::StepOutComplete | Microsoft Docs
+title: 'IDebugApplication :: StepOutComplete | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 04f8ecfb835199afa0a60f3fde3c8fbdc8812240
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f50d7e8a8936e52f4177450e7d163c4cfeaa55df
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990612"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571039"
 ---
 # <a name="idebugapplicationstepoutcomplete"></a>IDebugApplication::StepOutComplete
-Notifie le Gestionnaire de débogage de processus qu’un moteur de langage en mode de pas à pas est sur le point de retourner à son appelant.  
+Signale au gestionnaire de débogage de processus qu’un moteur de langage en mode à étape unique est sur le le même de retourner à son appelant.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -34,17 +34,17 @@ HRESULT StepOutComplete();
 ```  
   
 #### <a name="parameters"></a>Paramètres  
- Cette méthode ne prend aucun paramètre.  
+ Cette méthode n’accepte aucun paramètre.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
 ## <a name="remarks"></a>Notes  
- Moteurs de langage appellent cette méthode en mode de pas à pas juste avant de retourner à son appelant. Le Gestionnaire de débogage de processus utilise cette opportunité pour notifier tous les autres moteurs de script qui ils doivent s’arrêter à la première occasion. Cette technique est étape comment interlangage modes sont implémentées.  
+ Les moteurs de langage appellent cette méthode en mode à étape unique juste avant de retourner à l’appelant. Le gestionnaire de débogage de processus utilise cette opportunité pour notifier à tous les autres moteurs de script qu’ils doivent s’arrêter à la première occasion. Cette technique est l’implémentation des modes d’étape inter-langages.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IDebugApplication](../../winscript/reference/idebugapplication-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: Méthode IJsDebugDataTarget::AllocateVirtualMemory | Microsoft Docs
+title: 'IJsDebugDataTarget :: AllocateVirtualMemory, méthode | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c04bf21882ec39054c74f060eaa2c6f65ac0b4d6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 30ad8a3eb277823271fbfb4c2e10364b8602775c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62583065"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577645"
 ---
 # <a name="ijsdebugdatatargetallocatevirtualmemory-method"></a>IJsDebugDataTarget::AllocateVirtualMemory, méthode
-Réserve et/ou valide une région de mémoire dans l’espace d’adressage virtuel du processus cible.  
+Réserve et/ou valide une zone de mémoire dans l’espace d’adressage virtuel du processus cible.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -39,27 +39,27 @@ HRESULT AllocateVirtualMemory(
   
 #### <a name="parameters"></a>Paramètres  
  `address`  
- [in] L’adresse dans le processus cible où la mémoire doit être validée ou réservée. Cette valeur est généralement zéro, dans lequel cas le système choisit une adresse.  
+ dans Adresse dans le processus cible où la mémoire doit être validée ou réservée. Cette valeur est généralement zéro, auquel cas le système choisit une adresse.  
   
  `size`  
- [in] La taille de la région de mémoire à allouer, en octets. Le système arrondira automatiquement jusqu'à à la limite de page suivante.  
+ dans Taille de la zone de mémoire à allouer, en octets. Le système arrondit automatiquement à la limite de page suivante.  
   
  `allocationType`  
- [in] Indique le type d’allocation à effectuer. C’est généralement MEM_COMMIT &#124; MEM_RESERVE (0 x 3000) qui et valide une allocation en une seule étape.  
+ dans Indique le type d’allocation à effectuer. Il s’agit généralement &#124; de MEM_COMMIT MEM_RESERVE (0x3000) qui réserve et valide une allocation en une seule étape.  
   
  `pageProtection`  
- [in] La protection de la mémoire pour la région de pages à allouer. Si les pages sont validées, vous pouvez spécifier l’une des constantes de protection de mémoire (par exemple, PAGE_READWRITE, PAGE_EXECUTE).  
+ dans Protection de la mémoire pour la région de pages à allouer. Si les pages sont en cours de validation, vous pouvez spécifier l’une des constantes de protection de la mémoire (par exemple, PAGE_READWRITE, PAGE_EXECUTE).  
   
  `pAllocatedAddress`  
- [out] Adresse de base de la zone allouée des pages.  
+ à Adresse de base de la région allouée de pages.  
   
 ## <a name="return-value"></a>Valeur de retour  
   
 ## <a name="remarks"></a>Notes  
- La fonction initialise la mémoire allouée à zéro, sauf si MEM_RESET est utilisé. Pour plus d’informations, consultez l’API Win32 VirtualAlloc.  
+ La fonction initialise la mémoire qu’elle alloue à zéro, sauf si MEM_RESET est utilisé. Pour plus d’informations, consultez l’API Win32 VirtualAlloc.  
   
-## <a name="requirements"></a>Configuration requise  
- **En-tête :** jscript9diag.h  
+## <a name="requirements"></a>spécifications  
+ **En-tête :** jscript9diag. h  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IJsDebugDataTarget](../../winscript/reference/ijsdebugdatatarget-interface.md)

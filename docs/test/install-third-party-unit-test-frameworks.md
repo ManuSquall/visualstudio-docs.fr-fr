@@ -2,17 +2,17 @@
 title: Installer des frameworks de tests unitaires tierces
 ms.date: 04/01/2019
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 9f61b52f72474a8ecd8fac4c30265dcd7cf36a5e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: fef59c757476b46936389ca48ca2bdaf32aec729
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978657"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653254"
 ---
 # <a name="install-unit-test-frameworks"></a>Installer des frameworks de tests unitaires
 

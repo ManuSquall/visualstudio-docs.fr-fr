@@ -12,19 +12,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fbe3ff31d00945ef462c5c20eb1c4b33c250f97
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: f16040408def290536ac5dadfec77ade9577c821
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887750"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72568921"
 ---
 # <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Indiquer au débogueur ce qui doit être affiché à l’aideC#de l’attribut F#DebuggerDisplay C++(, Visual Basic,,/CLI)
+
 La <xref:System.Diagnostics.DebuggerDisplayAttribute> contrôle la façon dont un objet, une propriété ou un champ s’affiche dans les fenêtres de variables du débogueur. Cet attribut peut être appliqué aux éléments suivants : types, délégués, propriétés, champs et assemblys. En cas d’application à un type de base, l’attribut s’applique également à une sous-classe.
 
 L'attribut `DebuggerDisplay` possède un seul argument, qui est une chaîne à afficher dans la colonne valeur des instances du type. Cette chaîne peut contenir des accolades (`{` et `}`). Le texte entre deux accolades est évalué comme un champ, une propriété ou une méthode.
 
-Si une classe possède une méthode `ToString()` substituée, le débogueur utilise la méthode substituée à la place du `{<typeName>}`par défaut. Si vous avez substitué la méthode `ToString()` , le débogueur utilise la méthode substituée à la place du`{<typeName>}`par défaut. Il est donc inutile d’utiliser `DebuggerDisplay`. Si vous utilisez les deux, l’attribut `DebuggerDisplay` est prioritaire sur la méthode `ToString()` remplacée. L' `DebuggerDisplay` attribut a également priorité sur la méthode substituée `ToString()` dans une sous-classe.
+Si une classe possède une méthode `ToString()` substituée, le débogueur utilise la méthode substituée à la place du `{<typeName>}`par défaut. Si vous avez substitué la méthode `ToString()` , le débogueur utilise la méthode substituée à la place du`{<typeName>}`par défaut. Il est donc inutile d’utiliser `DebuggerDisplay`. Si vous utilisez les deux, l’attribut `DebuggerDisplay` est prioritaire sur la méthode `ToString()` remplacée. L’attribut `DebuggerDisplay` a également priorité sur la méthode `ToString()` remplacée dans une sous-classe.
 
 L’évaluation par le débogueur de cet appel `ToString()` implicite dépend d’un paramètre utilisateur dans la boîte de dialogue **Outils / Options / Débogage** . Visual Basic n’implémente pas cette évaluation `ToString()` implicite.
 
@@ -43,7 +44,7 @@ Le tableau suivant montre quelques-unes des utilisations possibles de l'attribut
 
 `DebuggerDisplay` peut également accepter des paramètres nommés.
 
-|Paramètres|Objectif|
+|Paramètres|Fonction|
 |----------------|-------------|
 |`Name`, `Type`|Ces paramètres affectent les colonnes **Nom** et **Type** des fenêtres de variables. (Ils peuvent être appliqués aux chaînes à l'aide de la même syntaxe que le constructeur). Une utilisation excessive ou inappropriée de ces paramètres peut générer un résultat confus.|
 |`Target`, `TargetTypeName`|Spécifie le type cible lorsque l'attribut est utilisé au niveau de l'assembly.|
@@ -92,13 +93,13 @@ public sealed class MyClass
 
 Le suffixe « , NQ » indique à l’évaluateur d’expression de supprimer les guillemets lors de l’affichage de la valeur finale (NQ = no Quotations).
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
 L'exemple de code suivant explique l'utilisation de `DebuggerDisplay`, ainsi que de `DebuggerBrowseable` et `DebuggerTypeProxy`. Lorsqu'il s'affiche dans une fenêtre de variables du débogueur, comme la fenêtre **Espion** , il produit une expansion de ce genre :
 
-|**Name**|**Valeur**|**Type**|
+|**Nom**|**Valeur**|**Type**|
 |--------------|---------------|--------------|
-|Clé|"trois"|objet {string}|
-|Valeur|3|objet {int}|
+|Touche|"trois"|objet {string}|
+|valeur|3|objet {int}|
 
 ```csharp
 [DebuggerDisplay("{value}", Name = "{key}")]
@@ -181,6 +182,6 @@ class MyHashtable
 ## <a name="see-also"></a>Voir aussi
 
 - [Utilisation de l’attribut DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md)
-- [Créer des vues personnalisées d’objets gérés](../debugger/create-custom-views-of-dot-managed-objects.md)
+- [Créer des vues personnalisées d’objets gérés](../debugger/create-custom-views-of-managed-objects.md)
 - [Spécificateurs de format en C#](../debugger/format-specifiers-in-csharp.md)
 - [Amélioration du débogage avec les attributs d’affichage de débogueur](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

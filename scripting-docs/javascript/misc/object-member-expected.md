@@ -1,5 +1,5 @@
 ---
-title: Membre d’objet attendu | Microsoft Docs
+title: Membre d’objet ATTENDU | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,20 +14,20 @@ ms.assetid: 3af95632-80e1-47c4-8e4b-81c5f2be8017
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5a30da75d5498cb9cb827ffaa89d2079f4e1b7a0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2ab6a0f8af013a9e3b8605f29ffd94c644a18f38
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63006383"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573718"
 ---
 # <a name="object-member-expected"></a>Membre d'objet attendu
 Vous avez tenté d’effectuer une opération sur le membre de données d’un objet, mais le membre n’existe pas.  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
-- Vérifiez que vous avez correctement tapé le nom du membre de données.  
+- Vérifiez que vous avez tapé correctement le nom du membre de données.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Objet Object](../../javascript/reference/object-object-javascript.md)   
+ Objet [objet](../../javascript/reference/object-object-javascript.md)    
  [Objets et tableaux](../../javascript/objects-and-arrays-javascript.md)

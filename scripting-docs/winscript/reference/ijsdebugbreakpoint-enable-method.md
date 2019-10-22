@@ -1,5 +1,5 @@
 ---
-title: Méthode IJsDebugBreakPoint::Enable | Microsoft Docs
+title: 'IJsDebugBreakPoint :: Enable, méthode | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 14f827048db7c29e09938de3d1c70cd4d61a388d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 72f66bf2b0638d2061c2ba21ddeb5d9caf52fbc3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62583228"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577713"
 ---
 # <a name="ijsdebugbreakpointenable-method"></a>IJsDebugBreakPoint::Enable, méthode
 Active le point d’arrêt.  
@@ -34,10 +34,10 @@ HRESULT Enable(void);
 ## <a name="return-value"></a>Valeur de retour  
   
 ## <a name="remarks"></a>Notes  
- Retourne E_UNEXPECTED si elle est appelée sur un point d’arrêt supprimé.  
+ Retourne E_UNEXPECTED s’il est appelé sur un point d’arrêt supprimé.  
   
-## <a name="requirements"></a>Configuration requise  
- **En-tête :** jscript9diag.h  
+## <a name="requirements"></a>spécifications  
+ **En-tête :** jscript9diag. h  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IJsDebugBreakPoint](../../winscript/reference/ijsdebugbreakpoint-interface.md)

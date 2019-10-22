@@ -1,21 +1,21 @@
 ---
-title: 'Procédure : Créer un nuanceur de dégradés basé sur la géométrie'
+title: 'Comment : créer un nuanceur de géométrie dégradé'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 4b204405-ba95-4c5e-bd51-ec033a3ebfb6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e138f253a734608140533de8019d2e5fb7577a7
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 3b34d51177e392b46c655c857b7015011818a888
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924346"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635641"
 ---
-# <a name="how-to-create-a-geometry-based-gradient-shader"></a>Procédure : Pour créer un nuanceur de dégradés basé sur la géométrie
+# <a name="how-to-create-a-geometry-based-gradient-shader"></a>Guide pratique pour créer un nuanceur de géométrie dégradé
 
 Cet article montre comment utiliser le concepteur Shader et DGSL (Directed Graph Shader Language) pour créer un nuanceur de dégradés basé sur la géométrie. Ce nuanceur met à l’échelle une valeur de couleur RVB de constante en fonction de la hauteur de chaque point d’un objet dans l’espace universel.
 
@@ -23,7 +23,7 @@ Cet article montre comment utiliser le concepteur Shader et DGSL (Directed Graph
 
 Vous pouvez implémenter un nuanceur de géométrie en incorporant la position du pixel dans votre nuanceur. Dans les langages d’ombrage, un pixel contient plus d’informations que sa couleur et son emplacement sur un écran 2D. Un pixel, appelé *fragment* dans certains systèmes, est une collection de valeurs qui décrivent la surface correspondant à un pixel. Le nuanceur décrit dans ce document utilise la hauteur de chaque pixel d’un objet 3D dans l’espace universel pour affecter la couleur de sortie finale du fragment.
 
-Avant de commencer, assurez-vous que la fenêtre **Propriétés** et la **Boîte à outils** sont affichées.
+Avant de commencer, veillez à ce que la fenêtre **Propriétés** et la **Boîte à outils** soient affichées.
 
 1. Créez un nuanceur DGSL à utiliser. Pour plus d’informations sur l’ajout d’un nuanceur DGSL à votre projet, consultez la section Prise en main de l’article [Concepteur de nuanceur](../designers/shader-designer.md).
 
@@ -56,13 +56,13 @@ L’illustration suivante montre le nuanceur, décrit dans ce document, appliqu�
 
 ![Effet dégradé appliqué à un modèle de terrain 3D](../designers/media/digit-gradient-effect-result.png)
 
-Pour plus d’informations sur la façon d’appliquer un nuanceur à un modèle 3D, consultez [Guide pratique pour appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
+Pour plus d’informations sur l’application d’un nuanceur à un modèle 3D, consultez [Guide pratique pour appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Guide pratique pour appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
+- [Guide pratique pour appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
 - [Guide pratique pour exporter un nuanceur](../designers/how-to-export-a-shader.md)
-- [Guide pratique pour modéliser un terrain 3D](../designers/how-to-model-3-d-terrain.md)
+- [Guide pratique pour modéliser un terrain 3D](../designers/how-to-model-3-d-terrain.md)
 - [Guide pratique pour créer un nuanceur de texture avec nuances de gris](../designers/how-to-create-a-grayscale-texture-shader.md)
-- [Concepteur Shader](../designers/shader-designer.md)
+- [Concepteur de nuanceur](../designers/shader-designer.md)
 - [Nœuds du concepteur Shader](../designers/shader-designer-nodes.md)

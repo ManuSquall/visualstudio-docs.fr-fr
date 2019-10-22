@@ -11,17 +11,17 @@ helpviewer_keywords:
 - pre-defined command aliases
 - command aliases
 ms.assetid: de8bb378-8c1c-4087-a9a5-537fa8314c19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ee8a41a6e72123a678cdf4be278a247cc3fa55e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ac67e89ebf04979f8aec55f100e2b1138e9feb22
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789120"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72622244"
 ---
 # <a name="visual-studio-command-aliases"></a>Alias de commandes Visual Studio
 
@@ -44,7 +44,7 @@ Le tableau ci-dessous contient une liste des alias de commandes Visual Studio pr
 |Point d'arrêt|bp|Debug.ToggleBreakPoint|
 |Fenêtre Pile des appels|CallStack|Debug.CallStack|
 |Effacer les signets|ClearBook|Edit.ClearBookmarks|
-|Fermer|Close|File.Close|
+|Close|Close|File.Close|
 |Fermer tous les documents|CloseAll|Window.CloseAllDocuments|
 |Effacer tout|cls|Edit.ClearAll|
 |Mode Commande|cmd|View.CommandWindow|
@@ -85,7 +85,7 @@ Le tableau ci-dessous contient une liste des alias de commandes Visual Studio pr
 |Mémoire 3 (fenêtre)|Memory3|Debug.Memory3|
 |Mémoire 4 (fenêtre)|Memory4|Debug.Memory4|
 |[Définir la base, commande](../../ide/reference/set-radix-command.md)|n|Debug.SetRadix|
-|[Afficher le navigateur Web, commande](../../ide/reference/showwebbrowser-command.md)|nav navigate|View.ShowWebBrowser|
+|[Afficher le navigateur web, commande](../../ide/reference/showwebbrowser-command.md)|nav navigate|View.ShowWebBrowser|
 |Signet suivant|NextBook|Edit.NextBookmark|
 |[Nouveau fichier, commande](../../ide/reference/new-file-command.md)|nf|File.NewFile|
 |Nouveau projet|np NewProj|File.NewProject|
@@ -97,7 +97,7 @@ Le tableau ci-dessous contient une liste des alias de commandes Visual Studio pr
 |Pas à pas sortant|pr|Debug.StepOut|
 |Signet précédent|PrevBook|Edit.PreviousBookmark|
 |Imprimer le fichier|print|File.Print|
-|Fenêtre Propriétés|props|View.PropertiesWindow|
+|Propriétés (fenêtre)|props|View.PropertiesWindow|
 |Arrêter|q|Debug.StopDebugging|
 |Rétablir|redo|Edit.Redo|
 |Registres (fenêtre)|registers|Debug.Registers|
@@ -123,7 +123,7 @@ Le tableau ci-dessous contient une liste des alias de commandes Visual Studio pr
 |Fenêtre Espion|Watch|Debug.WatchN|
 |Activer/Désactiver le retour automatique à la ligne|WordWrap|Edit.ToggleWordWrap|
 |Afficher les processus|&#124;|Debug.ListProcesses|
-|[Répertorier les threads, commande](../../ide/reference/list-threads-command.md)|~ ~*k ~\*kb|Debug.ListThreads Debug.ListTheads /AllThreads|
+|[Afficher les threads, commande](../../ide/reference/list-threads-command.md)|~ ~*k ~\*kb|Debug.ListThreads Debug.ListTheads /AllThreads|
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -1,5 +1,5 @@
 ---
-title: IScriptNode::GetChild | Microsoft Docs
+title: 'IScriptNode :: GetChild | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 78b5c84c6ed9b3de9593f0d6ff02df93a0e9ba77
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 27ddde527be1ea4148e4166581ab2cb1a71d15f7
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787128"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573564"
 ---
 # <a name="iscriptnodegetchild"></a>IScriptNode::GetChild
-Retourne l’enfant qui est à l’index spécifié dans le nœud.  
+Retourne l’enfant qui se trouve à l’index spécifié dans le nœud.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -38,24 +38,24 @@ HRESULT GetChild(
   
 #### <a name="parameters"></a>Paramètres  
  `isn`  
- [in] L’index de l’enfant de la page parente.  
+ dans Index de l’enfant dans le parent.  
   
  `ppsn`  
- [out] L’adresse d’une variable qui reçoit un pointeur vers le `IScriptNode` interface de l’instance enfant.  
+ à Adresse d’une variable qui reçoit un pointeur vers l’interface `IScriptNode` de l’instance enfant.  
   
- Pour `IScriptNode` les objets qui représentent une page Web, ce paramètre retourne un objet qui contient un bloc de script.  
+ Pour les objets `IScriptNode` qui représentent une page Web, ce paramètre retourne un objet qui contient un bloc de script.  
   
- Pour `IScriptEntry` les objets qui spécifient un bloc de script, ce paramètre retourne un objet qui spécifie une fonction.  
+ Pour les objets `IScriptEntry` qui spécifient un bloc de script, ce paramètre retourne un objet qui spécifie une fonction.  
   
 ## <a name="return-value"></a>Valeur de retour  
  Élément `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
 ## <a name="remarks"></a>Notes  
- Pour `IScriptEntry` objets qui spécifient un objet de fonction et pour `IScriptScriptlet` objets, cette méthode échoue, car aucune entrée enfant.  
+ Pour les objets `IScriptEntry` qui spécifient un objet de fonction et pour les objets `IScriptScriptlet`, cette méthode échoue parce qu’il n’y a pas d’entrées enfants.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IScriptNode](../../winscript/reference/iscriptnode-interface.md)

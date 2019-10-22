@@ -1,5 +1,5 @@
 ---
-title: Inspecter les données à l’aide des fenêtres du débogueur | Microsoft Docs
+title: Inspecter des données à l’aide des fenêtres du débogueur | Microsoft Docs
 ms.custom: seodec18
 ms.date: 04/25/2018
 ms.topic: conceptual
@@ -9,27 +9,26 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e14f1864452edd00237164e14af74330e3c209f7
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: c3d7303c1212a8042cb51abcfa363d59e41e67cc
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67033007"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72431749"
 ---
-# <a name="inspect-data-using-debugger-windows-in-visual-studio"></a>Inspecter les données à l’aide des fenêtres du débogueur dans Visual Studio
+# <a name="inspect-data-using-debugger-windows-in-visual-studio"></a>Inspecter des données à l’aide des fenêtres du débogueur dans Visual Studio
 
 Vous pouvez ouvrir la plupart des fenêtres du débogueur pendant le débogage de votre programme. Pour afficher la liste des fenêtres du débogueur, définir un point d’arrêt et démarrer le débogage. Quand vous atteignez le point d’arrêt et que l’exécution s’interrompt, cliquez sur **Déboguer > Fenêtres**.
 
-||||
+|Fenêtre|Touche d’accès rapide|Voir la rubrique|
 |-|-|-|
-|**Fenêtre**|**Touche d’accès rapide**|**Consultez la rubrique**|
 |Points d’arrêt|Ctrl+Alt+B|[Utiliser des points d’arrêt](../debugger/using-breakpoints.md)|
 |Paramètres d’exception|Ctrl+Alt+E|[Gérer les exceptions avec le débogueur](../debugger/managing-exceptions-with-the-debugger.md)|
-|Sortie|Ctrl+Alt+O|[Sortie (fenêtre)](../ide/reference/output-window.md)|
+|Sortie|Ctrl+Alt+O|[Sortie, fenêtre](../ide/reference/output-window.md)|
 |Watch|Ctrl+Alt+W, (1, 2, 3, 4)|[Espion et Espion express, fenêtres](../debugger/watch-and-quickwatch-windows.md)|
 |Espion express|Maj+F9|[Espion et Espion express, fenêtres](../debugger/watch-and-quickwatch-windows.md)|
 |Autos|Ctrl+Alt+V, A|[Fenêtres Variables locales et Automatique](../debugger/autos-and-locals-windows.md)|
-|Variables locales|Ctrl+Alt+V, L|[Fenêtres Variables locales et Automatique](../debugger/autos-and-locals-windows.md)|
+|Locals|Ctrl+Alt+V, L|[Fenêtres Variables locales et Automatique](../debugger/autos-and-locals-windows.md)|
 |Piles des appels|Ctrl+Alt+C|[Guide pratique pour utiliser la fenêtre Pile des appels](../debugger/how-to-use-the-call-stack-window.md)|
 |Immédiat|Ctrl+Alt+I|[Exécution, fenêtre](../ide/reference/immediate-window.md)|
 |Piles parallèles|Ctrl+Maj+D, S|[Utilisation de la fenêtre Piles parallèles](../debugger/using-the-parallel-stacks-window.md)|
@@ -41,8 +40,8 @@ Vous pouvez ouvrir la plupart des fenêtres du débogueur pendant le débogage d
 |Python Debug Interactive|Maj+Alt+I|[REPL interactif Python](../python/python-interactive-repl-in-visual-studio.md)|
 |Console JavaScript|Ctrl+Alt+V, C|[Démarrage rapide : déboguer du code JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|
 |Explorateur DOM|Ctrl+Alt+V, D|[Déboguer la disposition avec l’Explorateur DOM](/visualstudio/debugger/quickstart-debug-html-and-css)|
-|Arborescence d’éléments visuels en direct|-|[Inspecter les propriétés XAML en phase de débogage](../debugger/inspect-xaml-properties-while-debugging.md)|
-|Explorateur de propriétés en direct|-|[Inspecter les propriétés XAML en phase de débogage](../debugger/inspect-xaml-properties-while-debugging.md)|
+|Arborescence d’éléments visuels en direct|-|[Inspecter les propriétés XAML en phase de débogage](../xaml-tools/inspect-xaml-properties-while-debugging.md)|
+|Explorateur de propriétés en direct|-|[Inspecter les propriétés XAML en phase de débogage](../xaml-tools/inspect-xaml-properties-while-debugging.md)|
 |Processus|Ctrl+Alt+Z|[Déboguer les threads et les processus](../debugger/debug-threads-and-processes.md)|
 |Mémoire|Ctrl+Alt+M, (1, 2, 3, 4)|[Fenêtres Mémoire](../debugger/memory-windows.md)|
 |Code Machine|Ctrl+Alt+D|[Guide pratique pour utiliser la fenêtre Code Machine](../debugger/how-to-use-the-disassembly-window.md)|

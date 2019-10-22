@@ -2,31 +2,31 @@
 title: Contrôle de la couleur, du style de ligne et d'autres propriétés des formes
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1783ecf3b30207838d93fdb9cda93e3ed7e232c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6bcc7e3a80650edff411506b9e651885b3852383
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62422925"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654157"
 ---
 # <a name="controlling-color-line-style-and-other-shape-properties"></a>Contrôle de la couleur, du style de ligne et d'autres propriétés des formes
 
-Certaines propriétés telles que la couleur de la forme « exploitable ». Autrement dit, les propriétés peuvent être liées à une propriété de domaine de la forme. Les autres ont à être directement contrôlée.
+Certaines propriétés de forme telles que Color peuvent être « exposées ». Autrement dit, les propriétés peuvent être liées à une propriété de domaine de la forme. D’autres doivent être contrôlés directement.
 
 ## <a name="exposing-a-property"></a>Exposer une propriété
- Certaines propriétés telles que la couleur de la forme peuvent être liées à la valeur d’une propriété de domaine.
+ Certaines propriétés de forme telles que la couleur peuvent être liées à la valeur d’une propriété de domaine.
 
- Dans la définition DSL, sélectionnez une forme, connecteur ou une classe de diagramme. Dans le menu contextuel, choisissez **ajouter les objets exposés**, puis choisissez la propriété souhaitées, par exemple, la couleur de remplissage.
+ Dans la définition DSL, sélectionnez une classe de forme, de connecteur ou de diagramme. Dans le menu contextuel, choisissez **Ajouter exposé**, puis choisissez la propriété de votre choix, par exemple couleur de remplissage.
 
  La forme a maintenant une propriété de domaine que vous pouvez définir dans le code de programme ou en tant qu’utilisateur.
 
 ## <a name="dynamically-updating-an-exposed-property"></a>Mise à jour dynamique d’une propriété exposée
- En règle générale, vous souhaitez rendre la propriété exposée dépendantes d’une autre propriété. Par exemple, vous souhaiterez peut-être une forme en rouge chaque fois qu’une propriété de domaine particulière est inférieure à zéro. Pour rendre cette dépendance, vous devez créer un [règle](../modeling/rules-propagate-changes-within-the-model.md). Exemple :
+ En général, vous souhaitez rendre la propriété exposée dépendante d’une autre propriété. Par exemple, vous souhaiterez peut-être qu’une forme s’active en rouge chaque fois qu’une propriété de domaine particulière est inférieure à zéro. Pour créer cette dépendance, créez une [règle](../modeling/rules-propagate-changes-within-the-model.md). Exemple :
 
 ```csharp
 using System;

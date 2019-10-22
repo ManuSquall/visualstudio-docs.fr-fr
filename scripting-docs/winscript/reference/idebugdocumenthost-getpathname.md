@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHost::GetPathName | Microsoft Docs
+title: 'IDebugDocumentHost :: GetPathName | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 09e36411cdd378e78ac3bc59df5330eb8ecb47b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 33ebcde4cf1db28e199f13fae720374bd1b64763
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63008746"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72569282"
 ---
 # <a name="idebugdocumenthostgetpathname"></a>IDebugDocumentHost::GetPathName
-Retourne le chemin d’accès et le nom complet du fichier de source du document.  
+Retourne le chemin d’accès complet et le nom de fichier du fichier source du document.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -38,21 +38,21 @@ HRESULT GetPathName(
   
 #### <a name="parameters"></a>Paramètres  
  `pbstrLongName`  
- [out] Chaîne contenant le nom long.  
+ à Chaîne contenant le nom long.  
   
  `pfIsOriginalFile`  
- [out] Un indicateur qui est la valeur true si `pbstrLongName` fait référence au fichier d’origine pour le document, false sinon.  
+ à Indicateur qui a la valeur true si `pbstrLongName` fait référence au fichier d’origine pour le document ; sinon, false.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
-|`E_FAIL`|Aucun fichier source peut être créé ou déterminée.|  
+|`E_FAIL`|Aucun fichier source ne peut être créé ou déterminé.|  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode retourne le chemin d’accès et le nom complet du fichier de source du document.  
+ Cette méthode retourne le chemin d’accès complet et le nom de fichier du fichier source du document.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IDebugDocumentHost](../../winscript/reference/idebugdocumenthost-interface.md)

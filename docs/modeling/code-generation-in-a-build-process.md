@@ -5,20 +5,20 @@ ms.topic: conceptual
 helpviewer_keywords:
 - text templates, build tasks
 - text templates, transforming by using msbuild
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d26c0b464341bee7bce0b46bfdbcc89e0248a81
-ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
+ms.openlocfilehash: 9c9cc0d8a40970e2ec36030ab3121d6fc02748e2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72163121"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654196"
 ---
 # <a name="invoke-text-transformation-in-the-build-process"></a>Appeler la transformation de texte dans le processus de génération
 
@@ -49,9 +49,9 @@ Si [votre serveur de builds](/azure/devops/pipelines/agents/agents) s’exécute
 - % ProgramFiles (x86)% \ Microsoft Visual Studio\2019\Community\Common7\IDE\PublicAssemblies
 
   - Microsoft. VisualStudio. TextTemplating. Modeling. 15. dll
-  
+
 > [!TIP]
-> Si vous recevez un `MissingMethodException` pour une méthode Microsoft. CodeAnalysis lors de l’exécution des cibles de génération TextTemplating sur un serveur de builds, assurez-vous que les assemblys Roslyn se trouvent dans un répertoire nommé *Roslyn* qui se trouve dans le même répertoire que l’exécutable de génération (par exemple,  *MSBuild. exe*).
+> Si vous recevez une `MissingMethodException` pour une méthode Microsoft. CodeAnalysis lors de l’exécution des cibles de génération TextTemplating sur un serveur de builds, assurez-vous que les assemblys Roslyn se trouvent dans un répertoire nommé *Roslyn* qui se trouve dans le même répertoire que l’exécutable de génération (par exemple,  *MSBuild. exe*).
 
 ## <a name="edit-the-project-file"></a>Modifier le fichier projet
 
@@ -116,11 +116,11 @@ Il existe des propriétés que vous pouvez insérer dans votre fichier projet af
     ```
 
      Par défaut, la tâche de MSBuild T4 régénère un fichier de sortie s’il est antérieur à :
-     
+
      - son fichier de modèle
      - tous les fichiers inclus
      - tous les fichiers qui ont été précédemment lus par le modèle ou par un processeur de directive qu’il utilise
-     
+
      Il s’agit d’un test de dépendance plus puissant que celui utilisé par la commande **transformer tous les modèles** dans Visual Studio, qui compare uniquement les dates du modèle et du fichier de sortie.
 
 Pour exécuter uniquement les transformations de texte dans votre projet, appelez la tâche TransformAll :
@@ -164,7 +164,7 @@ La transformation de texte se produit avant les autres tâches du processus de g
 
 Dans `AfterTransform`, vous pouvez référencer des listes de fichiers :
 
-- GeneratedFiles : liste des fichiers écrits par le processus. Pour les fichiers qui ont remplacé des fichiers en lecture seule existants, `%(GeneratedFiles.ReadOnlyFileOverwritten)` aura la valeur true. Ces fichiers peuvent être extraits du contrôle de code source.
+- GeneratedFiles : liste des fichiers écrits par le processus. Pour les fichiers qui ont remplacé des fichiers en lecture seule existants, `%(GeneratedFiles.ReadOnlyFileOverwritten)` a la valeur true. Ces fichiers peuvent être extraits du contrôle de code source.
 
 - NonGeneratedFiles : liste des fichiers en lecture seule qui n'ont pas été remplacés.
 
@@ -283,9 +283,9 @@ Désormais, vous pouvez utiliser votre propriété de projet dans les directives
 
 Ces directives obtiennent des valeurs à partir de T4parameterValues dans MSBuild et les hôtes Visual Studio.
 
-## <a name="q--a"></a>Questions et réponses
+## <a name="q--a"></a>Q et R
 
-**Why souhaite-t-il transformer des modèles dans le serveur de builds ? J’ai déjà transformé les modèles dans Visual Studio avant d’avoir archivé mon code.**
+**Pourquoi souhaite-t-il transformer des modèles dans le serveur de builds ? J’ai déjà transformé les modèles dans Visual Studio avant d’avoir archivé mon code.**
 
 Si vous mettez à jour un fichier inclus ou un autre fichier lu par le modèle, Visual Studio ne transforme pas automatiquement le fichier. La transformation des modèles dans le cadre de la génération permet de s’assurer que tout est à jour.
 
@@ -303,13 +303,13 @@ Si vous mettez à jour un fichier inclus ou un autre fichier lu par le modèle, 
 
 ::: moniker range="vs-2017"
 
-- Il y a de bonnes recommandations dans le modèle de MSbuild T4 à `%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\msbuild\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets`
+- Il y a de bonnes recommandations dans le modèle de MSbuild T4 sur `%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\msbuild\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets`
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-- Il y a de bonnes recommandations dans le modèle de MSbuild T4 à `%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\msbuild\Microsoft\VisualStudio\v16.0\TextTemplating\Microsoft.TextTemplating.targets`
+- Il y a de bonnes recommandations dans le modèle de MSbuild T4 sur `%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\msbuild\Microsoft\VisualStudio\v16.0\TextTemplating\Microsoft.TextTemplating.targets`
 
 ::: moniker-end
 

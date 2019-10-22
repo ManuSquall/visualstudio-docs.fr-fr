@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptStringCompare::StrComp | Microsoft Docs
+title: 'IActiveScriptStringCompare :: StrComp | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 66cccb4281e19aebb25b3b4cde06705b500f53a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 233c427b634306527b0b0d496397e82f889560e2
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991429"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577936"
 ---
 # <a name="iactivescriptstringcomparestrcomp"></a>IActiveScriptStringCompare::StrComp
 Définit la méthode de comparaison de chaînes pour le moteur de script.  
@@ -48,22 +48,22 @@ HRESULT StrComp(
  Seconde chaîne.  
   
  `iRet`  
- Le résultat de la comparaison. 0 si `bszStr1` et `bszStr2`sont identiques ; -1 si `bszStr1`  <  `bszStr2`; 1 si `bszStr1`  >  `bszStr2`.  
+ Résultat de la comparaison. 0 si `bszStr1` et `bszStr2`are identiques ; -1 si `bszStr1`  <  `bszStr2` ; 1 si `bszStr1`  >  `bszStr2`.  
   
 ## <a name="return-value"></a>Valeur de retour  
- Retourne une des valeurs suivantes :  
+ Retourne l’une des valeurs suivantes :  
   
 |Valeur de retour|Signification|  
 |------------------|-------------|  
 |`S_OK`|Opération réussie.|  
 |`E_INVALIDARG`|Un argument n’est pas valide.|  
-|`E_UNEXPECTED`|L’appel n’était pas attendu (par exemple, le moteur de script n'a pas encore été chargé ou initialisé).|  
+|`E_UNEXPECTED`|L’appel n’était pas attendu (par exemple, le moteur de script n’a pas encore été chargé ou initialisé).|  
   
 ## <a name="remarks"></a>Notes  
  Cette méthode est appelée chaque fois qu’une comparaison de chaînes est exécutée.  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant montre comment surcharger la fonction de comparaison de chaîne. La surcharge est autorisée lorsque vous utilisez [IActiveScriptProperty::SetProperty](../../winscript/reference/iactivescriptproperty-setproperty.md) pour définir SCRIPTPROP_STRINGCOMPAREINSTANCE.  
+ L’exemple suivant montre comment surcharger la fonction de comparaison de chaînes. La surcharge est autorisée quand vous utilisez [IActiveScriptProperty :: SetProperty](../../winscript/reference/iactivescriptproperty-setproperty.md) pour définir SCRIPTPROP_STRINGCOMPAREINSTANCE.  
   
 ```cpp#  
 cpp_quote("// {58562769-ED52-42f7-8403-4963514E1F11}")  

@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : créer des types à l’aide du Concepteur de classes'
+title: Guide pratique pour créer des types à l'aide du Concepteur de classes
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,21 +12,21 @@ helpviewer_keywords:
 - types [Visual Studio], class diagrams
 - attributes [Visual Studio], applying custom
 ms.assetid: 94458c31-28bc-40e2-9737-85868788a0e5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abee206f67aa019476fcd5085b4ff872338b4d1f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 1db43fc16202234f24d8179bba656d71ac96d39a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975266"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72631748"
 ---
-# <a name="how-to-create-types-by-using-class-designer"></a>Procédure : créer des types à l’aide du Concepteur de classes
+# <a name="how-to-create-types-by-using-class-designer"></a>Guide pratique pour créer des types à l’aide du Concepteur de classes
 
-Pour concevoir de nouveaux types pour les projets C# et Visual Basic, créez-les dans un diagramme de classes. Pour voir les types existants, consultez [Guide pratique pour afficher les types existants](how-to-view-existing-types.md).
+Pour concevoir de nouveaux types pour les projets C# et Visual Basic, créez-les dans un diagramme de classes. Pour visualiser les types existants, consultez [Guide pratique pour afficher les types existants](how-to-view-existing-types.md).
 
 ## <a name="CreateType"></a> Créer un nouveau type
 
@@ -60,7 +60,7 @@ Pour concevoir de nouveaux types pour les projets C# et Visual Basic, créez-les
     |-|-|
     |**Pour**|**Ajouter**|
     |Classes, classes abstraites, structures ou structs|Méthodes, propriétés, champs, événements, constructeurs (méthode), destructeurs (méthode) et constantes qui définissent le type|
-    |Enums|Valeurs de champ qui composent l'énumération|
+    |Énumérations|Valeurs de champ qui composent l'énumération|
     |Interfaces|Méthodes, propriétés et événements qui composent l'interface|
     |délégué|Paramètres qui définissent le délégué|
     |Module|Méthodes, propriétés, champs, événements, constructeurs (méthode) et constantes qui définissent le module|
@@ -90,6 +90,6 @@ Pour concevoir de nouveaux types pour les projets C# et Visual Basic, créez-les
 ## <a name="see-also"></a>Voir aussi
 
 - [Guide pratique pour créer un héritage entre des types](how-to-create-inheritance-between-types.md)
-- [Guide pratique pour Créer des associations entre des types](how-to-create-associations-between-types.md)
+- [Guide pratique pour créer des associations entre des types](how-to-create-associations-between-types.md)
 - [Création et configuration de membres de type](creating-and-configuring-type-members.md)
 - [Conception des classes et des types](designing-and-viewing-classes-and-types.md)

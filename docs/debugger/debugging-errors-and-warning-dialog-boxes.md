@@ -1,5 +1,5 @@
 ---
-title: Erreurs de débogage et de boîtes de dialogue d’avertissement | Microsoft Docs
+title: Erreurs de débogage et boîtes de dialogue d’avertissement | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e13d6d323264136c6cab4c753ba53d40acd5a628
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.openlocfilehash: f261eac1c3cbc73bb12323c089ae88f4ffc6b120
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "67852225"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72431680"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Erreur et avertissement, boîtes de dialogue pour le débogage
 Vous trouverez ci-après la liste des boîtes de dialogue d'erreur et d'avertissement que vous pouvez rencontrer lors du débogage de votre application.
@@ -38,7 +38,7 @@ Vous trouverez ci-après la liste des boîtes de dialogue d'erreur et d'avertiss
 
  [Le débogueur ne parvient pas à afficher le code source ou le code machine](../debugger/debugger-cannot-display-source-code-or-disassembly.md)
  
- [Services qui s’exécutent en dehors de la mémoire du débogueur](../debugger/error-debugger-services-no-memory.md)
+ [Les services du débogueur manquent de mémoire](../debugger/error-debugger-services-no-memory.md)
 
  [Exécutable pour la session de débogage, boîte de dialogue](../debugger/executable-for-debugging-session-dialog-box.md)
 
@@ -59,7 +59,7 @@ Vous trouverez ci-après la liste des boîtes de dialogue d'erreur et d'avertiss
  [Erreur : le débogage est impossible, car un débogueur du noyau est activé sur le système](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)
 
 ## <a name="related-sections"></a>Rubriques connexes
- [Débogage de scripts et Web : erreurs et dépannage](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+ [Débogage de scripts et d'applications web : erreurs et dépannage](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
 
  [Débogage distant, erreurs](../debugger/remote-debugging-errors-and-troubleshooting.md)
 
@@ -67,6 +67,6 @@ Vous trouverez ci-après la liste des boîtes de dialogue d'erreur et d'avertiss
 
  [Dépannage de la configuration du débogage SQL](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/s7ahaxtd(v=vs.100))
 
- [Forum aux questions sur le débogage Visual C++](../debugger/debugging-native-code-faqs.md)
+ [FAQ sur le débogage du code natif](../debugger/debugging-native-code-faqs.md)
 
  [Sécurité du débogueur](../debugger/debugger-security.md)

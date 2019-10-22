@@ -8,15 +8,15 @@ helpviewer_keywords:
 - UML API
 ms.assetid: 6d789b6d-2aa9-4ceb-92c4-84a300065a76
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c98aefb5e3dc0090338233ca5b05b4ebc6460719
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 7b90d8b532b004a7cbdaeed762300a0daf9ab45c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871773"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668542"
 ---
 # <a name="navigate-the-uml-model"></a>Naviguer dans le modèle UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Cette rubrique présente les principaux types du modèle UML.
 ## <a name="the-model-elements-model-and-model-store"></a>Les éléments de modèle, le modèle et le magasin de modèles
  Les types définis dans l’assembly **Microsoft. VisualStudio. Uml. interfaces. dll** correspondent aux types définis dans la [spécification UML, version 2.1.2](http://www.omg.org/spec/UML/2.1.2/Superstructure/PDF/).
 
- Les types de la spécification UML sont réalisés en tant qu'interfaces dans Visual Studio. La lettre « I » est ajoutée devant le nom de chaque type. Par exemple :  [IElement](/previous-versions/dd516035(v=vs.140)), [IClass](/previous-versions/dd523539%28v%3dvs.140%29), [IOperation](/previous-versions/dd481186(v=vs.140)).
+ Les types de la spécification UML sont réalisés en tant qu'interfaces dans Visual Studio. La lettre « I » est ajoutée devant le nom de chaque type. Par exemple : [IElement](/previous-versions/dd516035(v=vs.140)), [IClass](/previous-versions/dd523539%28v%3dvs.140%29), [IOperation](/previous-versions/dd481186(v=vs.140)).
 
  Tous les types sauf IElement héritent des propriétés d'un ou plusieurs supertypes.
 
@@ -34,7 +34,7 @@ Cette rubrique présente les principaux types du modèle UML.
 
 - Pour obtenir des informations complètes sur l’API, consultez [référence des API pour l’extensibilité de la modélisation UML](../modeling/api-reference-for-uml-modeling-extensibility.md).
 
-### <a name="relationships"></a>Relationships
+### <a name="relationships"></a>Relations
  Les propriétés et relations définies dans la spécification UML sont implémentées en tant que propriétés .NET.
 
  La plupart des relations sont explorables dans les deux sens. Une relation correspond à une paire de propriétés, avec une propriété sur le type à chaque extrémité. Par exemple, les propriétés `IElement.Owner` et `IElement.OwnedElements` représentent deux extrémités d'une relation. Par exemple, cette expression sera toujours évaluée comme true :
@@ -45,20 +45,20 @@ Cette rubrique présente les principaux types du modèle UML.
 
  Si vous supprimez un élément du modèle, toute relation à laquelle il participe est supprimée automatiquement et la propriété à l'autre extrémité est mise à jour.
 
- Si la spécification UML assigne une multiplicité de 0..1 à une propriété, elle peut avoir la valeur `null`. Une multiplicité avec un maximum supérieur à 1 signifie que la propriété .NET a le type: `IEnumerable<`*Tapez*`>`.
+ Si la spécification UML assigne une multiplicité de 0..1 à une propriété, elle peut avoir la valeur `null`. Une multiplicité avec un maximum supérieur à 1 signifie que la propriété .NET a le type : `IEnumerable<`*type* `>`.
 
  Pour plus d’informations sur le parcours des relations, consultez [Parcourir les relations avec l’API UML](../modeling/navigate-relationships-with-the-uml-api.md).
 
 ### <a name="the-ownership-tree"></a>Arborescence de propriété
  Un modèle contient une arborescence d’objets [IElement](/previous-versions/dd516035(v=vs.140)) . Chaque élément a des propriétés `OwnedElements` et `Owner`.
 
- Dans la plupart des cas, les cibles des propriétés `Owner` et `OwnedElements` sont également référencées par d'autres propriétés qui ont des noms plus spécifiques. Par exemple, chaque opération UML appartient à une classe UML. Par conséquent, [IOperation](/previous-versions/dd481186(v=vs.140)) a une propriété nommée [IOperation. Class](/previous-versions/dd473473%28v%3dvs.140%29)et, dans chaque objet `Class == Owner` [IOperation](/previous-versions/dd481186(v=vs.140)) ,.
+ Dans la plupart des cas, les cibles des propriétés `Owner` et `OwnedElements` sont également référencées par d'autres propriétés qui ont des noms plus spécifiques. Par exemple, chaque opération UML appartient à une classe UML. Par conséquent, [IOperation](/previous-versions/dd481186(v=vs.140)) a une propriété nommée [IOperation. Class](/previous-versions/dd473473%28v%3dvs.140%29)et, dans chaque objet [IOperation](/previous-versions/dd481186(v=vs.140)) , `Class == Owner`.
 
- L’élément le plus haut de l’arborescence, qui n’a pas de propriétaire `AuxiliaryConstructs.IModel`, est un. Le IModel est contenu dans un `IModelStore`, dans lequel il est [IModelStore. root](/previous-versions/ee789368(v=vs.140)).
+ L’élément le plus haut de l’arborescence, qui n’a pas de propriétaire, est un `AuxiliaryConstructs.IModel`. Le IModel est contenu dans un `IModelStore`, dans lequel il est [IModelStore. root](/previous-versions/ee789368(v=vs.140)).
 
  Chaque élément de modèle est créé avec un propriétaire. Pour plus d’informations, consultez [créer des éléments et des relations dans des modèles UML](../modeling/create-elements-and-relationships-in-uml-models.md).
 
- ![Diagramme de classes : Modèle, diagramme, forme et élément](../modeling/media/uml-mm1.png)
+ ![Diagramme de classes : modèle, diagramme, forme et élément](../modeling/media/uml-mm1.png)
 
 ## <a name="shapes-and-diagrams"></a>Formes et diagrammes
  Les éléments du modèle UML peuvent être illustrés sur des diagrammes. Différents types de diagrammes peuvent afficher différents sous-types d'IElement.
@@ -72,7 +72,7 @@ Cette rubrique présente les principaux types du modèle UML.
 ## <a name="access-to-the-model-in-extensions"></a>Accès au modèle dans des extensions
  Dans les extensions [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] définies comme composants MEF, vous pouvez déclarer des propriétés qui importent les informations à partir du contexte dans lequel l'extension s'exécute.
 
-|Type d'attribut|Fournit l'accès à|Plus d’informations|
+|Type d'attribut|Fournit l'accès à|Plus d'informations|
 |--------------------|----------------------------------|----------------------|
 |Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation<br /><br /> IDiagramContext<br /><br /> (dans Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll)|Diagramme de focus actuel.|[Définir une commande de menu sur un diagramme de modélisation](../modeling/define-a-menu-command-on-a-modeling-diagram.md)|
 |Microsoft.VisualStudio.Modeling.ExtensionEnablement<br /><br /> ILinkedUndoContext<br /><br /> (dans Microsoft.VisualStudio.Modeling.Sdk.[version].dll)|Permet de regrouper des modifications dans des transactions.|[Lier des mises à jour de modèles UML à l’aide de transactions](../modeling/link-uml-model-updates-by-using-transactions.md)|
@@ -120,7 +120,7 @@ foreach (IShape<IInterface> in
 ```
 
 ## <a name="accessing-another-model-or-diagrams"></a>Accès à un autre modèle ou à d'autres diagrammes
- Vous pouvez :
+ Vous pouvez :
 
 - utiliser [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Model Bus pour créer des liens entre des éléments dans différents modèles. Pour plus d’informations, consultez [intégrer des modèles UML à d’autres modèles et outils](../modeling/integrate-uml-models-with-other-models-and-tools.md).
 

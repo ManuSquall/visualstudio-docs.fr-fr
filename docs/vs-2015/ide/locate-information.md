@@ -6,29 +6,29 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: ea9770eb-bf41-4a52-a673-07beaa663df3
 caps.latest.revision: 11
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 708c1d0ed2c7fe12a4f3e905d3fd5652b25f0a8c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4b381d7fd342a2e56bcf0c90cb52bd4912444113
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68178719"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651451"
 ---
 # <a name="locate-information"></a>Informations relatives aux paramètres régionaux
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Help Viewer fournit différents moyens de rechercher des informations dans l’aide. Selon le type d’informations que vous recherchez, certaines stratégies peuvent être plus efficaces que d’autres.  
-  
-|Pour des informations sur|Essai|  
-|----------------------------|---------|  
-|Un élément de l’interface utilisateur|Touche F1|  
-|Les autres rubriques associées à la rubrique actuelle dans la table des matières|Le bouton **Afficher une rubrique dans le sommaire** dans la barre d’outils|  
-|Une fonctionnalité ou une technologie|Index|  
-|Les éléments de langage tels que les méthodes et les événements|Rechercher|  
-  
-## <a name="in-this-section"></a>Dans cette section  
- [Conseils de recherche en texte intégral](../ide/full-text-search-tips.md)  
-  
+Help Viewer fournit différents moyens de rechercher des informations dans l’aide. Selon le type d’informations que vous recherchez, certaines stratégies peuvent être plus efficaces que d’autres.
+
+|Pour des informations sur|Essayez|
+|----------------------------|---------|
+|Élément de l’interface utilisateur|Touche F1|
+|Les autres rubriques associées à la rubrique actuelle dans la table des matières|Le bouton **Afficher une rubrique dans le sommaire** dans la barre d’outils|
+|Une fonctionnalité ou une technologie|Index|
+|Les éléments de langage tels que les méthodes et les événements|Rechercher|
+
+## <a name="in-this-section"></a>Dans cette section
+ [Conseils de recherche en texte intégral](../ide/full-text-search-tips.md)
+
  [Guide pratique pour rechercher des rubriques dans la table des matières](../ide/how-to-find-topics-in-the-table-of-contents.md)

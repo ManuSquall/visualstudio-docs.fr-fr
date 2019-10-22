@@ -4,19 +4,19 @@ ms.date: 01/16/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.F%2523.Code_Fixes
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a73991702455fab54baf868499634e1a4f5bbf48
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
-ms.translationtype: HT
+ms.openlocfilehash: a5c736be59c257d98085831971d6b7b9dc2a0ef3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870743"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666281"
 ---
-# <a name="options-text-editor--f--code-fixes"></a>Options : Éditeur de texte > F# > Correctifs du code
+# <a name="options-text-editor--f--code-fixes"></a>Options : éditeur de texte F# > > les correctifs de code
 
 Utilisez la page d’options Correctifs du code pour spécifier les paramètres qui peuvent aider à identifier les erreurs de code et à proposer des solutions. Pour accéder à cette page d’options, choisissez **Outils** > **Options**, puis **Éditeur de texte** > **F#**  > **Correctifs du code**.
 

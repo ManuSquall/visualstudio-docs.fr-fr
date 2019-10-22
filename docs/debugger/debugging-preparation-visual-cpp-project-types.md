@@ -10,7 +10,7 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - project templates, debugging
-- Visual C++ projects, debugging
+- C++ projects, debugging
 - debug builds, project settings
 - debugging [C++]
 ms.assetid: 912b4ba2-7719-43d5-b087-db33e3f9329a
@@ -19,17 +19,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: abc3a8339fffab762c2b6d7a649d3bae8efa76c8
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 9cf22bceedd026a641709640a6e29d1970000e3b
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925490"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72431415"
 ---
-# <a name="debugging-preparation-visual-c-project-types"></a>Débogage de la préparation : Types de projets Visual C++
+# <a name="debugging-preparation-c-project-types"></a>Préparation du débogage : C++ types de projets
 Cette section explique le débogage de types de projets de base, créés par les modèles de projet [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)].
 
- Notez que les types de projet qui créent des dll en tant que sortie ont été regroupés en [projets de dll](../debugger/debugging-dll-projects.md) de débogage en raison des fonctionnalités communes qu’ils partagent.
+ Notez que les types de projet qui créent des dll en tant que sortie ont été regroupés en [projets de dll de débogage](../debugger/debugging-dll-projects.md) en raison des fonctionnalités communes qu’ils partagent.
 
 ## <a name="BKMK_In_this_topic"></a> Dans cette rubrique
  [Paramètres de propriété recommandés](#BKMK_Recommended_Property_Settings)
@@ -47,13 +47,13 @@ Cette section explique le débogage de types de projets de base, créés par les
 
 ### <a name="configuration-properties-124-cc-124-optimization-node"></a>Propriétés &#124; de configuration CC++ &#124; /nœud d’optimisation
 
-|Nom de la propriété|Paramètre|
+|Nom de propriété|Paramètre|
 |-------------------|-------------|
 |**Optimization**|Affectez la valeur **Désactivé (/0d).** Le code optimisé est plus difficile à déboguer, car les instructions générées ne correspondent pas directement à votre code source. Si vous trouvez que votre programme présente un bogue uniquement dans du code optimisé, vous pouvez activer ce paramètre, tout en gardant à l’esprit que le code affiché dans la fenêtre **Code machine** est généré à partir d’une source optimisée qui peut ne pas correspondre à ce que vous voyez dans vos fenêtres sources. D'autres fonctionnalités, telles que l'exécution pas à pas, peuvent ne pas se comporter comme prévu.|
 
 ### <a name="configuration-properties-124-linker-124-debugging-node"></a>Propriétés &#124; de configuration nœud &#124; de débogage de l’éditeur de liens
 
-|Nom de la propriété|Paramètre|
+|Nom de propriété|Paramètre|
 |-------------------|-------------|
 |**Générer des informations de débogage**|Vous devez toujours définir cette option sur **Oui (/DEBUG)** pour créer les symboles et fichiers nécessaires au débogage. Lorsque l'application passe en phase de production, vous pouvez la désactiver.|
 
@@ -72,11 +72,11 @@ Cette section explique le débogage de types de projets de base, créés par les
 
 2. Dans le menu **Déboguer**, choisissez **Démarrer**.
 
-3. Déboguez à l’aide des techniques abordées dans [premier aperçu du](../debugger/debugger-feature-tour.md)débogueur.
+3. Déboguez à l’aide des techniques abordées dans [premier aperçu du débogueur](../debugger/debugger-feature-tour.md).
 
 ### <a name="BKMK_To_manually_set_a_Debug_configuration"></a> Pour définir manuellement une configuration Debug
 
-1. Dans le menu **vue**, cliquez sur **Pages de propriétés**.
+1. Dans le menu **Affichage**, cliquez sur **Pages de propriétés**.
 
 2. Cliquez sur le nœud **Propriétés de configuration** pour l’ouvrir s’il ne l’est pas déjà
 
@@ -97,7 +97,7 @@ Cette section explique le débogage de types de projets de base, créés par les
    [Dans cette rubrique](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)
 
 ## <a name="BKMK_Windows_Forms_Applications___NET_"></a> Applications Windows Forms (.NET)
- Le modèle **Application Windows Forms (.NET)** crée une application Windows Forms [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. Pour plus d’informations, consultez [Guide pratique pour créer un projet d’application Windows](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).
+ Le modèle **Application Windows Forms (.NET)** crée une application Windows Forms [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. Pour plus d'informations, consultez [How to: Create a Windows Application Project](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).
 
  Le débogage de ce type d'application dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] est semblable à celui réalisé dans les applications Windows Forms managées.
 
@@ -114,4 +114,4 @@ Cette section explique le débogage de types de projets de base, créés par les
 - [Paramètres de projet pour une configuration Debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [Attachement à un ou plusieurs programmes en cours d’exécution](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
 - [Configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md)
-- [Guide pratique : créer un projet d’application Windows](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))
+- [Guide pratique pour créer un projet d’application Windows](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))

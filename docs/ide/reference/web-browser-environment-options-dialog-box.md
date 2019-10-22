@@ -1,5 +1,5 @@
 ---
-title: Navigateur web, Environnement, boîte de dialogue Options
+title: Navigateur web, Environnement, boîte de dialogue Options | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,19 +16,19 @@ helpviewer_keywords:
 - Options dialog box, Web settings
 - Internet Explorer, setting options
 ms.assetid: 586db4eb-032d-4cb5-93a6-a7c14de1ae49
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad36a2c9c741cffdb1ad3da04f81a21ce68f7ebd
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
-ms.translationtype: HT
+ms.openlocfilehash: ae83add4db8e45fca1b97b9c4148cea5bcba0947
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605625"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72621914"
 ---
-# <a name="options-dialog-box-environment--web-browser"></a>Boîte de dialogue Options : Environnement \> Navigateur web
+# <a name="options-dialog-box-environment--web-browser"></a>Boîte de dialogue Options : environnement \> navigateur Web
 
 Définit les options à la fois pour le navigateur web interne et pour Internet Explorer. Pour accéder à cette boîte de dialogue, cliquez sur **Options** dans le menu **Outils**, développez le dossier **Environnement**, puis sélectionnez **Navigateur web**.
 
@@ -52,7 +52,7 @@ Définit l’éditeur utilisé pour ouvrir une page web quand vous choisissez **
 
 - **Éditeur de code source** Sélectionnez cette option pour afficher le code source dans [l’éditeur](../../ide/writing-code-in-the-code-and-text-editor.md).
 
-- **Éditeur HTML** Sélectionnez cette option pour afficher le code source dans le [concepteur HTML](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477). Utilisez cette sélection pour modifier la page web dans l’une des deux vues : en mode Création ou dans la vue Source standard basée sur du texte.
+- **Éditeur HTML** Sélectionnez cette option pour afficher le code source dans le [concepteur HTML](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477). Utilisez cette sélection pour modifier la page web dans l’un des deux modes suivants : le mode Design ou le mode Code source basé sur du texte standard.
 
 - **Éditeur externe** Sélectionnez cette option pour afficher le code source dans un autre éditeur. Spécifiez le chemin de l’éditeur de votre choix, par exemple Notepad.exe.
 

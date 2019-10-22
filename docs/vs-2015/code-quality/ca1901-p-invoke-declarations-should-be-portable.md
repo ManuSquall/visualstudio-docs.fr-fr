@@ -1,5 +1,5 @@
 ---
-title: 'CA1901 : Déclarations P-Invoke doivent être portables | Microsoft Docs'
+title: 'CA1901 : les déclarations P-Invoke doivent être portables | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - PInvokeDeclarationsShouldBePortable
 ms.assetid: 90361812-55ca-47f7-bce9-b8775d3b8803
 caps.latest.revision: 25
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ccbbc3178a9f65c15d11a27dee1a625cca729240
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d1b4c0c5bcf22db6558f156fd1acd0be94026b08
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68203064"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661060"
 ---
 # <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901 : Les déclarations P/Invoke doivent être portables
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,27 +29,27 @@ ms.locfileid: "68203064"
 |-|-|
 |TypeName|PInvokeDeclarationsShouldBePortable|
 |CheckId|CA1901|
-|Catégorie|Microsoft.Portability|
-|Modification avec rupture|Avec rupture - Si P/Invoke est visible en dehors de l’assembly. Sans rupture - Si P/Invoke n’est pas visible en dehors de l’assembly.|
+|Category|Microsoft. Portability|
+|Modification avec rupture|Avec rupture : si P/Invoke est visible à l’extérieur de l’assembly. Sans rupture : si P/Invoke n’est pas visible à l’extérieur de l’assembly.|
 
 ## <a name="cause"></a>Cause
- Cette règle évalue la taille de chaque paramètre et la valeur de retour d’un P/Invoke et vérifie que leur taille, lorsqu’elle est marshalée au code non managé sur les plateformes 32 bits et 64 bits, est correcte. La violation la plus courante de cette règle consiste à passer un entier de taille fixe où une variable dépendante de la plateforme, la taille du pointeur est requise.
+ Cette règle évalue la taille de chaque paramètre et la valeur de retour d’un P/Invoke et vérifie que leur taille, lorsqu’elle est marshalée à du code non managé sur des plateformes 32 bits et 64 bits, est correcte. La violation la plus courante de cette règle consiste à passer un entier à taille fixe où une variable dépendante de la taille du pointeur est requise pour la plateforme.
 
 ## <a name="rule-description"></a>Description de la règle
- Un des scénarios suivants enfreint cette règle se produit :
+ L’un des scénarios suivants ne respecte pas cette règle :
 
-- La valeur de retour ou paramètre est typé comme un entier de taille fixe lorsqu’il doit être tapé comme un `IntPtr`.
+- La valeur de retour ou le paramètre est tapé sous la forme d’un entier de taille fixe lorsqu’il doit être tapé comme un `IntPtr`.
 
-- La valeur de retour ou paramètre de type est un `IntPtr` quand il doit être tapé sous la forme d’un entier de taille fixe.
+- La valeur de retour ou le paramètre est tapé comme un `IntPtr` lorsqu’il doit être tapé comme un entier de taille fixe.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Vous pouvez corriger cette violation à l’aide de `IntPtr` ou `UIntPtr` pour représenter des handles au lieu de `Int32` ou `UInt32`.
+ Vous pouvez corriger cette violation en utilisant `IntPtr` ou `UIntPtr` pour représenter des handles au lieu de `Int32` ou de `UInt32`.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Vous ne devez pas supprimer cet avertissement.
 
 ## <a name="example"></a>Exemple
- L’exemple suivant montre une violation de cette règle.
+ L’exemple suivant illustre une violation de cette règle.
 
 ```csharp
 internal class NativeMethods
@@ -60,23 +60,23 @@ internal class NativeMethods
 }
 ```
 
- Dans cet exemple, le `nIconIndex` paramètre est déclaré comme un `IntPtr`, ce qui occupe 4 octets sur une plateforme 32 bits et 8 octets sur une plateforme 64 bits. Dans la déclaration non managée qui suit, vous pouvez voir que `nIconIndex` est un entier non signé de 4 octets sur toutes les plateformes.
+ Dans cet exemple, le paramètre `nIconIndex` est déclaré en tant que `IntPtr`, qui est de 4 octets en largeur sur une plateforme 32 bits et de 8 octets en largeur sur une plateforme 64 bits. Dans la déclaration non managée qui suit, vous pouvez voir que `nIconIndex` est un entier non signé de 4 octets sur toutes les plateformes.
 
 ```csharp
 HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,
     UINT nIconIndex);
 ```
 
-## <a name="example"></a>Exemples
- Pour corriger la violation, modifiez la déclaration à ce qui suit :
+## <a name="example"></a>Exemple
+ Pour corriger la violation, remplacez la déclaration par ce qui suit :
 
 ```csharp
 internal class NativeMethods{
-    [DllImport("shell32.dll", CharSet=CharSet.Auto)] 
+    [DllImport("shell32.dll", CharSet=CharSet.Auto)]
     internal static extern IntPtr ExtractIcon(IntPtr hInst,
         string lpszExeFileName, uint nIconIndex);
 }
 ```
 
 ## <a name="see-also"></a>Voir aussi
- [Portability Warnings](../code-quality/portability-warnings.md)
+ [Avertissements liés à la portabilité](../code-quality/portability-warnings.md)

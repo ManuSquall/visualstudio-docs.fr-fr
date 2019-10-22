@@ -7,15 +7,15 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: ffb580a1-8b5d-48f5-b811-87f8036f50ea
 caps.latest.revision: 12
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0e1fc8e9bcb6f70a2665303eb6cac353a3f87bd9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: a71a045661c48fd36733ecd8d2266470667a5c35
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435098"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670594"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Déverrouillage de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Vous pouvez évaluer Visual Studio gratuitement pendant 30 jours. Quand vous vou
 ### <a name="updating-stale-licenses"></a>Mise à jour des licences obsolètes
  Le message ci-après selon lequel votre licence est périmée s'est peut-être affiché dans Visual Studio.
 
- ![Boîte de dialogue d’informations sur l’utilisateur de Visual Studio](../ide/media/vs2013-userinfo.png "VS2013_UserInfo")
+ ![Boîte de dialogue d’informations sur l’utilisateur de Visual Studio](../ide/media/vs2013-userinfo.png "|::ref1::|")
 
  Ce message indique que, même si votre abonnement est peut-être toujours valide, le jeton de licence que Visual Studio utilise pour maintenir votre abonnement à jour n'a pas été actualisé et est devenu obsolète en raison de l'une des raisons suivantes :
 

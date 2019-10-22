@@ -8,17 +8,17 @@ helpviewer_keywords:
 - load test, results graph
 - load test results, graphs
 ms.assetid: 81536233-1962-40d9-9511-0b4633814d90
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 692ea254719f5ae14491ae81e2e6ab0f5740fc05
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: b589e45fe32aff1ce0eea338675d42c3e3ea944a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002271"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72644359"
 ---
-# <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>Procédure : Ajouter et supprimer des compteurs sur des graphes dans les résultats des tests de charge
+# <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>Comment : ajouter et supprimer des compteurs sur des graphiques dans les résultats des tests de charge
 
 Vous pouvez utiliser le volet **Compteurs** pour ajouter des compteurs de performances à un graphique.
 
@@ -28,13 +28,13 @@ Vous pouvez utiliser le volet **Compteurs** pour ajouter des compteurs de perfor
 
 **Considérations relatives à l’intervalle d’échantillonnage des compteurs de performances**
 
-Choisissez une valeur pour la propriété **Taux d’échantillonnage** dans les paramètres d’exécution d’un test de charge en fonction de la longueur de votre test de charge. Un taux d'échantillonnage moins élevé, tel que la valeur par défaut de cinq secondes, nécessite une capacité d'espace supplémentaire dans la base de données des résultats du test de charge. Pour les tests de charge de plus longue durée, l'augmentation du taux d'échantillonnage permet de réduire le volume de données collectées. Pour plus d'informations, voir [Procédure : spécifier le taux d’échantillonnage](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
+Choisissez une valeur pour la propriété **Taux d’échantillonnage** dans les paramètres d’exécution d’un test de charge en fonction de la longueur de votre test de charge. Un taux d'échantillonnage moins élevé, tel que la valeur par défaut de cinq secondes, nécessite une capacité d'espace supplémentaire dans la base de données des résultats du test de charge. Pour les tests de charge de plus longue durée, l'augmentation du taux d'échantillonnage permet de réduire le volume de données collectées. Pour plus d’informations, voir [Guide pratique : Spécifier l’échantillonnage](../test/how-to-specify-the-sample-rate-for-a-load-test.md).
 
 Voici quelques instructions sur les taux d'échantillonnage :
 
 |Durée du test de charge|Taux d'échantillonnage recommandé|
 |-|-----------------------------|
-|\< 1 heure|5 secondes|
+|\< 1 heure|5 secondes|
 |1 à 8 heures|15 secondes|
 |8 à 24 heures|30 secondes|
 |> 24 heures|60 secondes|
@@ -47,7 +47,7 @@ Vous avez deux possibilités pour activer la propriété **Stockage des détails
 
 La capacité d'espace requise dans le référentiel des résultats du test de charge pour stocker les détails de minuterie pouvait être très élevée, en particulier pour les longs tests de charge. En outre, le temps nécessaire pour stocker ces données dans le référentiel des résultats du test de charge à la fin du test de charge est plus long, étant donné que ces données sont stockées sur les agents de test de charge jusqu’à la fin de l’exécution du test de charge. Lorsque le test de charge est terminé, les données sont stockées dans le référentiel. Par défaut, la propriété **Stockage des détails de minuterie** est activée. Si cela pose un problème pour votre environnement de test, vous pouvez affecter la valeur **Aucun** à la propriété **Stockage des détails de minuterie**.
 
-Pour plus d'informations, voir [Procédure : spécifier la propriété de stockage des détails de minuterie](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
+Pour plus d’informations, voir [Guide pratique : Spécifier la propriété de stockage des détails de minutage](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).
 
 ## <a name="to-display-a-particular-performance-counter-on-a-load-test-graph"></a>Pour afficher un compteur de performance particulier sur un graphique de test de charge
 
@@ -85,4 +85,4 @@ Pour plus d'informations, voir [Procédure : spécifier la propriété de stock
 ## <a name="see-also"></a>Voir aussi
 
 - [Analyser les résultats des tests de charge dans la vue Graphiques](../test/analyze-load-test-results-in-the-graphs-view.md)
-- [Guide pratique pour créer des graphes personnalisés](../test/how-to-create-custom-graphs-in-load-test-results.md)
+- [Guide pratique pour créer des graphiques personnalisés](../test/how-to-create-custom-graphs-in-load-test-results.md)

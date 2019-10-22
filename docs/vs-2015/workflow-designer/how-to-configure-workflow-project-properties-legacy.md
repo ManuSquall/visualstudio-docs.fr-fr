@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Configurer les propriétés de projet de flux de travail (hérité) | Microsoft Docs'
+title: 'Comment : configurer les propriétés d’un projet de workflow (hérité) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -12,28 +12,28 @@ helpviewer_keywords:
 - projects, configuring properties
 ms.assetid: 850f5c96-8e5b-4126-bc16-fd2c26e6e656
 caps.latest.revision: 5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f551b868b415eaf600a9345aff4ac4f0d61ff234
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 850e9314e4cccfa09903638dab91eaca7334cee5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62931071"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72663430"
 ---
-# <a name="how-to-configure-workflow-project-properties-legacy"></a>Procédure : Configurer des propriétés de projet de workflow (héritées)
-Procédez comme suit pour afficher ou modifier des propriétés associées aux projets de workflow.  
-  
-### <a name="to-view-or-modify-workflow-project-properties"></a>Pour afficher ou modifier des propriétés de projet de workflow  
-  
-1. Si **l’Explorateur de solutions** fenêtre n’est pas visible, sélectionnez **l’Explorateur de solutions** sur le **vue** menu.  
-  
-2. Dans l’**Explorateur de solutions**, sélectionnez un projet.  
-  
-3. Si **propriétés** fenêtre n’est pas visible, sélectionnez **fenêtre Propriétés** sur le **vue** menu.  
-  
-4. Dans le projet **propriétés** fenêtre, afficher et modifier les propriétés que vous souhaitez modifier.  
-  
-## <a name="see-also"></a>Voir aussi  
+# <a name="how-to-configure-workflow-project-properties-legacy"></a>Procédure : configurer des propriétés de projet de workflow (héritée)
+Procédez comme suit pour afficher ou modifier des propriétés associées aux projets de workflow.
+
+### <a name="to-view-or-modify-workflow-project-properties"></a>Pour afficher ou modifier des propriétés de projet de workflow
+
+1. Si **Explorateur de solutions** fenêtre n’est pas visible, sélectionnez **Explorateur de solutions** dans le menu **affichage** .
+
+2. Dans l’**Explorateur de solutions**, sélectionnez un projet.
+
+3. Si la fenêtre **Propriétés** n’est pas visible, sélectionnez **fenêtre Propriétés** dans le menu **affichage** .
+
+4. Dans la fenêtre **Propriétés** du projet, affichez et modifiez les propriétés que vous souhaitez modifier.
+
+## <a name="see-also"></a>Voir aussi
  [Création de projets de flux de travail hérités](../workflow-designer/creating-legacy-workflow-projects.md)

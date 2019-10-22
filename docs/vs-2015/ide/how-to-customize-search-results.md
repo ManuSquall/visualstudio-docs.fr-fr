@@ -9,45 +9,45 @@ helpviewer_keywords:
 - customizing search results [Help Viewer 2.0]
 ms.assetid: 3431ec03-0221-4be2-9936-887a1c36db89
 caps.latest.revision: 8
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d7add45e5dc2aac66eaf023eabcf2a1f7cdf189e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 379debcfc1a3c9e6529563ebbf1d4b8f6397dad3
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416842"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667979"
 ---
 # <a name="how-to-customize-search-results"></a>Guide pratique pour personnaliser les résultats de recherche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous pouvez personnaliser l’affichage des résultats de recherche sous l’onglet **Recherche** de plusieurs façons.  
-  
-## <a name="change-the-number-of-topics-that-appear-on-a-search-results-page"></a>Modifier le nombre de rubriques qui s’affichent dans une page de résultats  
- Vous pouvez spécifier le nombre de rubriques qui s’affichent dans une page de résultats.  
-  
-#### <a name="to-change-the-number-of-topics-displayed-at-a-time"></a>Pour modifier le nombre de rubriques affichées  
-  
-1. Dans la **Barre d’outils**, choisissez **Options de la visionneuse**.  
-  
-     La boîte de dialogue **Options de la visionneuse** s’affiche.  
-  
-2. Dans la liste **Nombre maximal de résultats de recherche**, choisissez 25, 50, 100 ou 200.  
-  
-## <a name="search-for-content-by-language"></a>Rechercher du contenu par langue  
- La documentation peut inclure du contenu dans une langue autre que l’anglais. Vous pouvez affiner votre recherche de contenu pour une langue particulière. Vous pouvez également inclure tout contenu en anglais qui correspond à votre requête de recherche.  
-  
+Vous pouvez personnaliser l’affichage des résultats de recherche sous l’onglet **Recherche** de plusieurs façons.
+
+## <a name="change-the-number-of-topics-that-appear-on-a-search-results-page"></a>Modifier le nombre de rubriques qui s’affichent dans une page de résultats
+ Vous pouvez spécifier le nombre de rubriques qui s’affichent dans une page de résultats.
+
+#### <a name="to-change-the-number-of-topics-displayed-at-a-time"></a>Pour modifier le nombre de rubriques affichées
+
+1. Dans la **Barre d’outils**, choisissez **Options de la visionneuse**.
+
+     La boîte de dialogue **Options de la visionneuse** s’affiche.
+
+2. Dans la liste **Nombre maximal de résultats de recherche**, choisissez 25, 50, 100 ou 200.
+
+## <a name="search-for-content-by-language"></a>Rechercher du contenu par langue
+ La documentation peut inclure du contenu dans une langue autre que l’anglais. Vous pouvez affiner votre recherche de contenu pour une langue particulière. Vous pouvez également inclure tout contenu en anglais qui correspond à votre requête de recherche.
+
 > [!WARNING]
-> Cette fonctionnalité est activée uniquement si la langue principale du contenu installé n’est pas l’anglais.  
-  
-#### <a name="to-include-english-content-alongside-content-in-another-language"></a>Pour inclure le contenu en anglais en plus du contenu dans une autre langue  
-  
-1. Dans la **Barre d’outils**, choisissez **Options de la visionneuse**.  
-  
-     La boîte de dialogue **Options de la visionneuse** s’affiche.  
-  
-2. Cochez la case **Inclure le contenu en anglais dans tous les onglets de navigation et l’aide demandée via la touche F1**.  
-  
-## <a name="see-also"></a>Voir aussi  
+> Cette fonctionnalité est activée uniquement si la langue principale du contenu installé n’est pas l’anglais.
+
+#### <a name="to-include-english-content-alongside-content-in-another-language"></a>Pour inclure le contenu en anglais en plus du contenu dans une autre langue
+
+1. Dans la **Barre d’outils**, choisissez **Options de la visionneuse**.
+
+     La boîte de dialogue **Options de la visionneuse** s’affiche.
+
+2. Cochez la case **Inclure le contenu en anglais dans tous les onglets de navigation et l’aide demandée via la touche F1**.
+
+## <a name="see-also"></a>Voir aussi
  [Conseils de recherche en texte intégral](../ide/full-text-search-tips.md)

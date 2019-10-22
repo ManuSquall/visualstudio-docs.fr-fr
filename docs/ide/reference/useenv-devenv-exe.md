@@ -14,17 +14,17 @@ helpviewer_keywords:
 - /UseEnv Devenv switch
 - Devenv, /UseEnv
 ms.assetid: 2dd14603-a61b-42d2-ba31-427a0ee8a799
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16443b30ccf6ba03a01df0234695d27e4cd909af
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: da7a5e1d3490ea8342e6a7b21e91552ae2e8fdf0
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186488"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72622410"
 ---
 # <a name="useenv-devenvexe"></a>/UseEnv (devenv.exe)
 
@@ -51,7 +51,7 @@ devenv /UseEnv {SolutionName|ProjectName}
 
 ## <a name="remarks"></a>Notes
 
-Ce commutateur affecte l’environnement IDE de Visual Studio dans les propriétés du projet de **Répertoires VC++** . Si le commutateur `/UseEnv` est spécifié, le nœud **Répertoires VC++** affiche les valeurs des variables d’environnement PATH, INCLUDE, LIBPATH et LIB. (Il indique également les valeurs de **Répertoires sources** et **Répertoires d’exclusion**.) Sinon, le nœud remplace les variables d’environnement par cinq valeurs de répertoire : **Répertoires d’exécutables**, **Répertoires d’inclusion**, **Répertoires de référence**, **Répertoires de bibliothèques** et **Répertoires de bibliothèques WinRT**.
+Ce commutateur affecte l’environnement IDE de Visual Studio dans les propriétés du projet de **Répertoires VC++** . Si le commutateur `/UseEnv` est spécifié, le nœud **Répertoires VC++** affiche les valeurs des variables d’environnement PATH, INCLUDE, LIBPATH et LIB. (Il affiche également les valeurs des **répertoires sources** et des **répertoires d’exclusion**.) Dans le cas contraire, le nœud remplace les variables d’environnement par cinq valeurs de répertoire : **répertoires exécutables**, **répertoires Include**, répertoires de **référence**, **répertoires de bibliothèques**et **répertoires WinRT**de la bibliothèque.
 
 > [!TIP]
 > Pour accéder aux propriétés du projet, cliquez avec le bouton droit sur un projet C++ et sélectionnez **Propriétés**. Dans la boîte de dialogue **Pages de propriétés**, sélectionnez **Propriétés de configuration**, puis **Répertoires VC++** .

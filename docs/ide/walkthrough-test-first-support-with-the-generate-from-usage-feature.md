@@ -8,19 +8,19 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Generate From Usage
 - Test-First Development
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 039c022cc5a8883e5687630f5243d8652ff036e7
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 81ab4b1597ea9f91a1b5081e89fd4cb77e0d8c63
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925843"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647159"
 ---
-# <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Procédure pas à pas : Développement basé d’abord sur les tests avec la fonctionnalité Générer à partir de l’utilisation
+# <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Procédure pas à pas : développement basé d’abord sur les tests avec la fonctionnalité Générer à partir de l’utilisation
 
 Cette rubrique montre comment utiliser la fonctionnalité [Générer à partir de l’utilisation](../ide/visual-csharp-intellisense.md#generate-from-usage), qui prend en charge le développement basé d’abord sur les tests.
 

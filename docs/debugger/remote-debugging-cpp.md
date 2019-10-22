@@ -1,5 +1,5 @@
 ---
-title: Déboguer à C++ distance un projet visuel | Microsoft Docs
+title: Déboguer C++ à distance un projet | Microsoft Docs
 ms.custom: remotedebugging
 ms.date: 08/14/2018
 ms.topic: conceptual
@@ -17,21 +17,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 81a5ebba2d14a0e091b3b0bcd78a066ef50ed759
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 2b9cd6f120d5699464c9e7311721898a727bf47e
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211112"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72450429"
 ---
-# <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>Débogage à distance d’un C++ projet visuel dans Visual Studio
+# <a name="remote-debugging-a-c-project-in-visual-studio"></a>Débogage à distance d' C++ un projet dans Visual Studio
 Pour déboguer une application Visual Studio sur un autre ordinateur, installez et exécutez les outils de contrôle à distance sur l’ordinateur sur lequel vous allez déployer votre application, configurez votre projet pour qu’il se connecte à l’ordinateur distant à partir de Visual Studio, puis déployez et exécutez votre application.
 
 ![Composants du débogueur distant](../debugger/media/remote-debugger-client-apps.png "Remote_debugger_components")
 
 Pour plus d’informations sur le débogage à distance des applications Windows universelles (UWP), consultez [Déboguer un package d’application installé](debug-installed-app-package.md).
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>spécifications
 
 Le débogueur distant est pris en charge sur Windows 7 et versions ultérieures (pas de téléphone) et les versions de Windows Server à partir de Windows Server 2008 Service Pack 2. Pour obtenir la liste complète des conditions requises, consultez [Configuration requise](../debugger/remote-debugging.md#requirements_msvsmon).
 
@@ -52,7 +52,7 @@ Le débogueur distant est pris en charge sur Windows 7 et versions ultérieures 
 > [!NOTE]
 > Si vous devez ajouter des autorisations pour des utilisateurs supplémentaires, modifier le mode d’authentification ou le numéro de port pour le débogueur distant, consultez [configurer le débogueur distant](../debugger/remote-debugging.md#configure_msvsmon).
 
-## <a name="remote_cplusplus"></a> Débogage distant d’un projet Visual C++
+## <a name="remote_cplusplus"></a>Déboguer C++ à distance un projet
  Dans la procédure suivante, le nom et le chemin d’accès du projet sont C:\remotetemp\MyMfc, et le nom de l’ordinateur distant est **MJO-DL**.
 
 1. Créez une application MFC nommée **mymfc**.
@@ -67,7 +67,7 @@ Le débogueur distant est pris en charge sur Windows 7 et versions ultérieures 
 
 5. Appliquez les modifications suivantes aux propriétés :
 
-   |Paramètre|Value|
+   |Paramètre|valeur|
    |-|-|
    |Commande distante|C:\remotetemp\mymfc.exe|
    |Répertoire de travail|C:\remotetemp|
@@ -91,7 +91,7 @@ Le débogueur distant est pris en charge sur Windows 7 et versions ultérieures 
 
 10. Si vous y êtes invité, entrez les informations d’identification réseau pour vous connecter à la machine distante.
 
-     Les informations d’identification requises sont spécifiques à la configuration de la sécurité de votre réseau. Par exemple, sur un ordinateur de domaine, vous pouvez choisir un certificat de sécurité ou entrer votre nom de domaine et votre mot de passe. Sur un ordinateur qui n’est pas un domaine, vous pouvez entrer le nom de l’ordinateur et un nom <strong>MJO-DL\name@something.com</strong>de compte d’utilisateur valide, comme, ainsi que le mot de passe correct.
+     Les informations d’identification requises sont spécifiques à la configuration de la sécurité de votre réseau. Par exemple, sur un ordinateur de domaine, vous pouvez choisir un certificat de sécurité ou entrer votre nom de domaine et votre mot de passe. Sur un ordinateur qui n’est pas un domaine, vous pouvez entrer le nom de l’ordinateur et un nom de compte d’utilisateur valide, comme <strong>MJO-DL\name@something.com</strong>, ainsi que le mot de passe correct.
 
 11. Sur l’ordinateur Visual Studio, l’exécution doit être arrêtée au point d’arrêt.
 

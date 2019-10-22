@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationThread::EnumStackFrames | Microsoft Docs
+title: 'IRemoteDebugApplicationThread :: EnumStackFrames | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 96ca35779ea9f113fc96e485f028f1e74058990a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7dc4c6798d006679ac93250175e9ca4d69683f0c
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788446"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575294"
 ---
 # <a name="iremotedebugapplicationthreadenumstackframes"></a>IRemoteDebugApplicationThread::EnumStackFrames
-Retourne un énumérateur pour les frames de pile associée à ce thread.  
+Retourne un énumérateur pour les frames de pile associés à ce thread.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -37,17 +37,17 @@ HRESULT EnumStackFrames(
   
 #### <a name="parameters"></a>Paramètres  
  `ppedsf`  
- [out] Un énumérateur pour les frames de pile associée à ce thread.  
+ à Énumérateur pour les frames de pile associés à ce thread.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode doit être appelée à partir d’au sein d’un point d’arrêt. L’énumérateur de frame de pile doit retourner les images à partir du haut de la pile, en commençant par le frame envoyée le plus récemment.  
+ Cette méthode doit être appelée à partir d’un point d’arrêt. L’énumérateur de frame de pile doit retourner les frames en commençant par le haut de la pile, en commençant par le dernier frame ayant fait l’objet d’un push.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IRemoteDebugApplicationThread](../../winscript/reference/iremotedebugapplicationthread-interface.md)

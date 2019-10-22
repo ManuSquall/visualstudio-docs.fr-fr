@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3a39f1b89cd8a0e0bbf27742688bcaec3da6f912
-ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
+ms.openlocfilehash: b9c8b60914e814ab6957ee9ec9307b12d9c3d1ba
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72289623"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516885"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Créer une installation hors connexion de Visual Studio
 
@@ -37,7 +37,7 @@ Nous avons conçu Visual Studio 2019 pour qu’il fonctionne correctement dans 
 
 ::: moniker-end
 
-Par exemple, vous avez peut-être une connexion Internet non fiable ou une bande passante faible. Dans ce cas, vous avez le choix entre plusieurs options : Vous pouvez utiliser la nouvelle fonctionnalité « Tout télécharger, puis installer » pour télécharger les fichiers avant de les installer, ou vous pouvez utiliser la ligne de commande pour créer un cache local des fichiers.
+Par exemple, vous avez peut-être une connexion Internet non fiable ou une bande passante faible. Dans ce cas, vous avez quelques options : vous pouvez utiliser la nouvelle fonctionnalité « Tout télécharger, puis installer » pour télécharger les fichiers avant de les installer, ou vous pouvez utiliser la ligne de commande pour créer un cache local des fichiers.
 
 > [!NOTE]
 > Si vous êtes administrateur en entreprise et que vous souhaitez effectuer un déploiement de Visual Studio sur un réseau de stations de travail clientes qui sont protégées d’Internet par un pare-feu, consultez nos pages [Créer une installation réseau de Visual Studio](../install/create-a-network-installation-of-visual-studio.md) et [Installer les certificats nécessaires à l’installation hors connexion de Visual Studio](../install/install-certificates-for-visual-studio-offline.md).
@@ -46,7 +46,7 @@ Par exemple, vous avez peut-être une connexion Internet non fiable ou une bande
 
 ::: moniker range="vs-2017"
 
-[**Nouveautés dans la version 15.8**](/visualstudio/releasenotes/vs2017-relnotes-v15.8#install) : Après avoir téléchargé le programme d’installation web, sélectionnez la nouvelle option **Tout télécharger, puis installer** à partir de Visual Studio Installer. Poursuivez ensuite l’installation.
+[**Nouveauté de la version 15,8**](/visualstudio/releasenotes/vs2017-relnotes-v15.8#install): après avoir téléchargé le programme d’installation Web, sélectionnez l’option nouveau **Télécharger tout, puis installer** à partir du Visual Studio installer. Poursuivez ensuite l’installation.
 
    ![Option « Tout télécharger, puis installer »](media/download-all-then-install.png)
 
@@ -54,7 +54,7 @@ Par exemple, vous avez peut-être une connexion Internet non fiable ou une bande
 
 ::: moniker range="vs-2019"
 
-Après avoir téléchargé le programme d’installation web, sélectionnez la nouvelle option **Tout télécharger, puis installer** à partir de Visual Studio Installer. Poursuivez ensuite l’installation.
+Après avoir téléchargé le programme d’installation Web, sélectionnez l’option nouveau **Télécharger tout, puis installer** à partir du Visual Studio installer. Poursuivez ensuite l’installation.
 
    ![Option « Tout télécharger, puis installer »](media/vs-2019/download-all-then-install-from-installer.png)
 
@@ -79,7 +79,7 @@ Vous devez avoir une connexion Internet pour effectuer cette étape.
 
 Pour obtenir un programme d’amorçage pour Visual Studio 2017, consultez la page de téléchargement des [versions précédentes de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) pour plus d’informations sur la façon de procéder.
 
-L’exécutable du programme d’installation @ no__t-0or pour être plus précis, le fichier du programme d’amorçage @ no__t-1should correspond ou est semblable à l’un des éléments suivants.
+L’exécutable de votre programme d’installation &mdash;or pour être plus précis, le fichier du programme d’amorçage &mdash;should correspond ou est semblable à l’un des éléments suivants.
 
 | Édition | Nom de fichier |
 |-------------|-----------------------|
@@ -162,6 +162,12 @@ Si vous souhaitez installer une autre langue que l’anglais, remplacez `en-US` 
 
 > [!TIP]
 > Quand vous procédez à l’exécution à partir d’un cache d’installation local, le programme d’installation utilise les versions locales de chacun de ces fichiers. Toutefois, si durant l’installation, vous sélectionnez des composants qui ne sont pas dans le cache, le programme d’installation tente de les télécharger à partir d’Internet.
+
+::: moniker range="vs-2019"
+> [!IMPORTANT]
+> Pour les installations hors connexion, si vous recevez un message d’erreur indiquant « un produit correspondant aux paramètres suivants est introuvable », vérifiez que vous utilisez le commutateur `--noweb` avec la version 16.3.5 ou ultérieure.
+>
+::: moniker-end
 
 Pour vérifier que vous installez uniquement les fichiers que vous avez téléchargés, utilisez les mêmes options de ligne de commande que celles ayant servi à créer le cache de disposition. Par exemple, si vous avez créé un cache de disposition avec la commande suivante :
 

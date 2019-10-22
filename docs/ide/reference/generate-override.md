@@ -2,17 +2,17 @@
 title: Générer une substitution de méthode
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: afb32a7ddb9a53ac6585cc690a3ba8fd1098b080
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 075c7dc49ffba1d67bbb5b62d313f50b5d09e956
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790459"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668442"
 ---
 # <a name="generate-an-override-in-visual-studio"></a>Générer une substitution dans Visual Studio
 
@@ -22,11 +22,11 @@ Cette génération de code s’applique à :
 
 - Visual Basic
 
-**Quoi :** Vous permet de générer immédiatement le code pour toute méthode pouvant être substituée à partir d’une classe de base.
+**Quoi :** vous permet de générer immédiatement le code pour toute méthode pouvant être substituée à partir d’une classe de base.
 
-**Quand :** Vous souhaitez substituer une méthode de classe de base et générer automatiquement la signature.
+**Quand :** vous souhaitez substituer une méthode de classe de base et générer automatiquement la signature.
 
-**Pourquoi :** Vous pouvez écrire la signature de la méthode vous-même, mais cette fonctionnalité générera automatiquement la signature.
+**Pourquoi :** vous pouvez écrire la signature de la méthode vous-même, mais cette fonctionnalité générera automatiquement la signature.
 
 ## <a name="how-to"></a>Procédure
 

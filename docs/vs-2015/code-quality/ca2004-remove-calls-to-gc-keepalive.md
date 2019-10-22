@@ -1,5 +1,5 @@
 ---
-title: 'CA2004 : Supprimez les appels à GC. KeepAlive | Microsoft Docs'
+title: 'CA2004 : supprimez les appels à GC. KeepAlive | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - CA2004
 ms.assetid: bc543b5b-23eb-4b45-abc2-9325cd254ac2
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: e75ab22212945e5a6b4465e1e1f64ca48a9daa4a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e34a8e7d4860a599155554410e13df5a6eb3bfe1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68189044"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672490"
 ---
 # <a name="ca2004-remove-calls-to-gckeepalive"></a>CA2004 : Supprimez les appels à GC.KeepAlive
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,17 +29,17 @@ ms.locfileid: "68189044"
 |-|-|
 |TypeName|RemoveCallsToGCKeepAlive|
 |CheckId|CA2004|
-|Catégorie|Microsoft.Reliability|
+|Category|Microsoft. fiabilité|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
- Classes utilisent `SafeHandle` mais contiennent toujours des appels à `GC.KeepAlive`.
+ Les classes utilisent `SafeHandle`, mais contiennent toujours des appels à `GC.KeepAlive`.
 
 ## <a name="rule-description"></a>Description de la règle
- Si vous convertissez en `SafeHandle` utilisation, supprimez tous les appels à `GC.KeepAlive` (objet). Dans ce cas, les classes ne requièrent pas d’appeler `GC.KeepAlive`, en supposant qu’elles n’ont pas de finaliseur, mais dépendent `SafeHandle` pour terminer le handle du système d’exploitation pour eux.  Bien que le coût de laisser dans un appel à `GC.KeepAlive` peut être négligeable en termes de performances, la perception qui un appel à `GC.KeepAlive` est nécessaire ou suffit à résoudre le problème qui ne peut plus exister rend le code plus difficile pour une durée de vie mettre à jour.
+ Si vous effectuez une conversion vers une utilisation `SafeHandle`, supprimez tous les appels à `GC.KeepAlive` (objet). Dans ce cas, les classes n’ont pas besoin d’appeler `GC.KeepAlive`, en supposant qu’elles n’ont pas de finaliseur, mais qu’elles s’appuient sur `SafeHandle` pour terminer le handle du système d’exploitation.  Bien que le coût de la sortie d’un appel à `GC.KeepAlive` soit négligeable comme mesuré par les performances, le sentiment qu’un appel à `GC.KeepAlive` est nécessaire ou suffisant pour résoudre un problème de durée de vie qui n’existe peut-être plus rend le code plus difficile à gérer.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Supprimez les appels à `GC.KeepAlive`.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Vous pouvez supprimer cet avertissement uniquement si elle n’est pas techniquement correcte convertir `SafeHandle` utilisation dans votre classe.
+ Vous pouvez supprimer cet avertissement uniquement s’il n’est pas techniquement correct de passer à l’utilisation `SafeHandle` dans votre classe.

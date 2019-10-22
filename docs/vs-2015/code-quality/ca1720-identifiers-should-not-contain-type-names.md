@@ -1,5 +1,5 @@
 ---
-title: 'CA1720 : Identificateurs ne doivent pas contenir les noms de type | Microsoft Docs'
+title: 'Ca1720 : les identificateurs ne doivent pas contenir de noms de types | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - CA1720
 ms.assetid: c95ee48f-f23a-45f0-ac9e-a3c1ecfabdea
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 504c985bd276a891b76e8c9b2a7c0ef51c3a490a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 34ebe4848bbbe49b9a67449795f0aea7d104af8b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62576716"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72671639"
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720 : Les identificateurs ne doivent pas contenir de noms de types
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,20 +29,20 @@ ms.locfileid: "62576716"
 |-|-|
 |TypeName|IdentifiersShouldNotContainTypeNames|
 |CheckId|CA1720|
-|Category|Microsoft.Naming|
+|Category|Microsoft. Naming|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
- Le nom d’un paramètre dans un membre extérieurement visible contient un nom de type de données.
+ Le nom d’un paramètre dans un membre visible de l’extérieur contient un nom de type de données.
 
- - ou -
+ ou
 
- Le nom d’un membre extérieurement visible contient un nom de type de données spécifiques au langage.
+ Le nom d’un membre visible de l’extérieur contient un nom de type de données spécifique à une langue.
 
 ## <a name="rule-description"></a>Description de la règle
- Noms de paramètres et les membres sont mieux utilisés pour communiquer leur signification que to décrire leur type, ce qui devrait être fourni par les outils de développement. Pour les noms de membres, si un nom de type de données doit être utilisé, utilisez un nom indépendant du langage au lieu d’une langue spécifique. Par exemple, au lieu du nom de type c# 'int', utilisez le nom de type de données indépendant du langage, Int32.
+ Les noms des paramètres et des membres sont mieux utilisés pour communiquer leur signification que pour décrire leur type, qui devrait être fourni par les outils de développement. Pour les noms de membres, si un nom de type de données doit être utilisé, utilisez un nom indépendant du langage au lieu d’un nom spécifique à une langue. Par exemple, au lieu du C# nom de type’int', utilisez le nom de type de données indépendant du langage, Int32.
 
- Chaque jeton discret dans le nom de paramètre ou de membre est comparée aux noms de types de données spécifiques au langage suivants, casse :
+ Chaque jeton discret dans le nom du paramètre ou du membre est vérifié par rapport aux noms de types de données spécifiques au langage suivants, sans respect de la casse :
 
 - Bool
 
@@ -56,7 +56,7 @@ ms.locfileid: "62576716"
 
 - UShort
 
-- Int
+- int
 
 - UInt
 
@@ -78,11 +78,11 @@ ms.locfileid: "62576716"
 
 - Float64
 
-  En outre, les noms d’un paramètre sont également vérifiés par rapport à des noms de type de données indépendant du langage suivants, casse :
+  En outre, les noms d’un paramètre sont également vérifiés par rapport aux noms de types de données indépendants du langage suivants, sans respect de la casse :
 
-- Object
+- Objet
 
-- obj
+- Obj
 
 - Booléen
 
@@ -110,7 +110,7 @@ ms.locfileid: "62576716"
 
 - IntPtr
 
-- PTR
+- Effectués
 
 - Pointeur
 
@@ -129,22 +129,22 @@ ms.locfileid: "62576716"
 - GUID
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- **Si le déclenchement sur un paramètre :**
+ **En cas de déclenchement sur un paramètre :**
 
- Remplacez l’identificateur de type de données dans le nom du paramètre par un terme qui décrit mieux sa signification ou par un terme plus générique, tel que 'value'.
+ Remplacez l’identificateur de type de données dans le nom du paramètre par un terme qui décrit mieux sa signification ou un terme plus générique, tel que « value ».
 
- **Si le déclenchement sur un membre :**
+ **En cas de déclenchement sur un membre :**
 
- Remplacez l’identificateur de type de données spécifiques au langage dans le nom du membre par un terme qui décrit mieux sa signification, un équivalent indépendant du langage ou un terme plus générique, tel que 'value'.
+ Remplacez l’identificateur de type de données spécifique au langage dans le nom du membre par un terme qui décrit mieux sa signification, un équivalent indépendant du langage ou un terme plus générique, tel que « value ».
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Utilisation occasionnelle de noms de paramètres et de membres en fonction de type peut être appropriée. Toutefois, pour un nouveau développement, aucun connus scénarios se produisent dans lequel vous ne devez supprimer un avertissement de cette règle. Pour les bibliothèques déjà livrées, vous devrez peut-être supprimer un avertissement de cette règle.
+ L’utilisation occasionnelle des noms de paramètres et de membres basés sur le type peut être appropriée. Toutefois, pour un nouveau développement, aucun scénario connu ne se produit lorsque vous devez supprimer un avertissement de cette règle. Pour les bibliothèques qui ont été expédiées précédemment, vous devrez peut-être supprimer un avertissement de cette règle.
 
 ## <a name="related-rules"></a>Règles associées
- [CA1709 : Identificateurs doivent être correcte](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+ [CA1709 : La casse des identificateurs doit être correcte](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
- [CA1708 : Les identificateurs doivent différer par leur casse](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+ [CA1708 : Les identificateurs ne doivent pas différer que par leur casse](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
- [CA1707 : Identificateurs ne doivent pas contenir de traits de soulignement](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
+ [CA1707 : Les identificateurs ne doivent pas contenir de traits de soulignement](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
 
- [CA1719 : Noms de paramètres ne doivent pas correspondre aux noms de membres](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)
+ [CA1719 : Les noms des paramètres ne doivent pas être identiques aux noms des membres](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)

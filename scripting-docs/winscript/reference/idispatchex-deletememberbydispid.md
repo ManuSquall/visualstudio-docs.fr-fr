@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::DeleteMemberByDispID | Microsoft Docs
+title: IDispatchEx ::D eleteMemberByDispID | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 36eeeb4c28286bb5712be3908b47a5145e460597
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 38ead33fb51caff1103ca9abe6bc01f3e0aa6aa3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000943"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576639"
 ---
 # <a name="idispatchexdeletememberbydispid"></a>IDispatchEx::DeleteMemberByDispID
 Supprime un membre par DISPID.  
@@ -40,17 +40,17 @@ HRESULT DeleteMemberByDispID(
  Identificateur de membre. Utilise `GetDispID` ou `GetNextDispID` pour obtenir l’identificateur de dispatch.  
   
 ## <a name="return-value"></a>Valeur de retour  
- Retourne une des valeurs suivantes :  
+ Retourne l’une des valeurs suivantes :  
   
 |||  
 |-|-|  
 |`S_OK`|Opération réussie.|  
-|`S_FALSE`|Membre existe mais ne peut pas être supprimé.|  
+|`S_FALSE`|Le membre existe mais ne peut pas être supprimé.|  
   
 ## <a name="remarks"></a>Notes  
  Si le membre est supprimé, le DISPID doit rester valide pour `GetNextDispID`.  
   
- Si un membre avec un nom donné est supprimé et recréé ultérieurement un membre portant le même nom, le DISPID doit être le même. (Si les noms de membres qui diffèrent uniquement par la casse sont « même » sont dépendant d’objets).  
+ Si un membre avec un nom donné est supprimé et qu’un membre du même nom est recréé, le DISPID doit être le même. (Si les noms de membres qui diffèrent uniquement par la casse sont « identiques » dépend de l’objet).  
   
 ## <a name="example"></a>Exemple  
   
@@ -65,6 +65,6 @@ if (SUCCEEDED(pdex->GetDispID(bstrName, fdexNameCaseSensitive, &dispid)))
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Interface IDispatchEx](../../winscript/reference/idispatchex-interface.md)   
- [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
+ @No__t_1 de l' [interface IDispatchEx](../../winscript/reference/idispatchex-interface.md)  
+ [IDispatchEx :: GetDispID](../../winscript/reference/idispatchex-getdispid.md)    
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

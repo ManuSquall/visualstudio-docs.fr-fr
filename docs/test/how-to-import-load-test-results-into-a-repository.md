@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : importer les résultats d’un test de charge dans un référentiel'
+title: "Comment : importer les résultats d'un test de charge dans un référentiel"
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Load Test Results Repository
 - load tests, importing results
 ms.assetid: a955b3d2-c8ad-40dd-8ea3-9f1a271e1eed
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 16f6558373c111dbaf933184cf5ae23d00962b7a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 067c9a9d20f3fe456f93086f2099183fd514d91a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949962"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653507"
 ---
-# <a name="how-to-import-load-test-results-into-a-repository"></a>Procédure : importer les résultats d’un test de charge dans un référentiel
+# <a name="how-to-import-load-test-results-into-a-repository"></a>Guide pratique pour importer les résultats d’un test de charge dans un référentiel
 
 Lorsque vous exécutez un test de charge, les informations recueillies au cours de l'exécution sont stockées dans le référentiel des résultats des tests de charge. Ce référentiel contient des données de compteurs de performance et des informations relatives aux erreurs. Pour plus d’informations, consultez [Gérer les résultats des tests de charge dans le référentiel des résultats des tests de charge](../test/manage-load-test-results-in-the-load-test-results-repository.md).
 

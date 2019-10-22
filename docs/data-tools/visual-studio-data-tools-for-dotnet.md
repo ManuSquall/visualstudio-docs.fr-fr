@@ -1,46 +1,46 @@
 ---
-title: Outils de données pour .NET
+title: Data Tools pour .NET
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c3175080-1dfb-4ab8-a460-92dadbb844b4
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
 - dotnet
-ms.openlocfilehash: a4a62f629244d44680b3d5ac3233bd45b975302e
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 224fef3a02a2441553728a9a75fc5f9c456081a1
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66745303"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648089"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Outils de données Visual Studio pour .NET
 
-Visual Studio et .NET fournissent ensemble API complètes et outils de prise en charge pour la connexion aux bases de données, modélisation des données en mémoire et afficher les données dans l’interface utilisateur. Les classes .NET qui fournissent des fonctionnalités d’accès aux données sont appelées [ADO.NET](/dotnet/framework/data/adonet/index). ADO.NET, ainsi que les données des outils dans Visual Studio, a été principalement conçu pour prendre en charge des bases de données relationnelles et XML. De nos jours, de nombreux fournisseurs de base de données NoSQL ou à des tiers, offrent fournisseurs ADO.NET.
+Visual Studio et .NET offrent ensemble une prise en charge étendue des API et des outils pour la connexion aux bases de données, la modélisation des données en mémoire et l’affichage des données dans l’interface utilisateur. Les classes .NET qui fournissent des fonctionnalités d’accès aux données sont appelées [ADO.net](/dotnet/framework/data/adonet/index). ADO.NET, ainsi que les outils de données dans Visual Studio, ont été conçus principalement pour prendre en charge les bases de données relationnelles et XML. Ces jours-là, de nombreux fournisseurs de bases de données NoSQL ou tiers proposent des fournisseurs ADO.NET.
 
-[.NET core](/dotnet/core/) prend en charge ADO.NET, à l’exception des jeux de données et leurs types associés. Si vous ciblez .NET Core et que vous avez besoin d’une couche de mappage objet-relationnel (ORM), utilisez [Entity Framework Core](/ef/core/).
+[.Net Core](/dotnet/core/) prend en charge ADO.net, à l’exception des jeux de données et de leurs types associés. Si vous ciblez .NET Core et que vous avez besoin d’une couche de mappage objet/relationnel (ORM), utilisez [Entity Framework Core](/ef/core/).
 
-Le diagramme suivant montre une vue simplifiée de l’architecture de base :
+Le diagramme suivant illustre une vue simplifiée de l’architecture de base :
 
 ![Architecture ADO.NET](../data-tools/media/raddata-ado-net-architecture-diagram.png)
 
 ## <a name="typical-workflow"></a>Flux de travail classique
 
-Le flux de travail typique est la suivante :
+Le flux de travail classique est le suivant :
 
-1. Installer un développement ou la base de données de test sur votre ordinateur local. Consultez [l’installation de systèmes de base de données, des outils et des exemples](../data-tools/installing-database-systems-tools-and-samples.md). Si vous utilisez un service de données Azure, cette étape n’est pas nécessaire.
+1. Installez une base de données de développement ou de test sur votre ordinateur local. Consultez [installation de systèmes de base de données, d’outils et d’exemples](../data-tools/installing-database-systems-tools-and-samples.md). Si vous utilisez un service de données Azure, cette étape n’est pas nécessaire.
 
-2. Tester la connexion à la base de données (ou service ou fichier local) dans Visual Studio. Consultez [ajouter de nouvelles connexions](../data-tools/add-new-connections.md).
+2. Testez la connexion à la base de données (ou au service ou au fichier local) dans Visual Studio. Consultez [ajouter de nouvelles connexions](../data-tools/add-new-connections.md).
 
-3. (Facultatif) Utiliser les outils pour générer et configurer un nouveau modèle. Modèles basés sur Entity Framework sont la recommandation par défaut pour les nouvelles applications. Le modèle, celui que vous utilisez, est la source de données avec lequel l’application interagit. Le modèle se trouve logiquement entre la base de données ou de service et de l’application. Consultez [ajouter de nouvelles sources de données](../data-tools/add-new-data-sources.md).
+3. Facultatif Utilisez les outils pour générer et configurer un nouveau modèle. Les modèles basés sur les Entity Framework sont les recommandations par défaut pour les nouvelles applications. Le modèle, selon celui que vous utilisez, est la source de données avec laquelle l’application interagit. Le modèle se situe logiquement entre la base de données ou le service et l’application. Consultez [ajouter de nouvelles sources de données](../data-tools/add-new-data-sources.md).
 
-4. Faites glisser la source de données à partir de la **des Sources de données** fenêtre sur une aire de conception de Windows Forms, ASP.NET ou Windows Presentation Foundation pour générer le code de liaison de données qui affiche les données à l’utilisateur de la façon que vous spécifiez. Consultez [lier des contrôles aux données dans Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).
+4. Faites glisser la source de données de la fenêtre **sources de données** vers une aire de conception Windows Forms, ASP.NET ou Windows Presentation Foundation pour générer le code de liaison de données qui affichera les données à l’utilisateur de la manière que vous spécifiez. Consultez [lier des contrôles à des données dans Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).
 
-5. Ajouter du code personnalisé pour des éléments tels que les règles d’entreprise, la recherche et la validation des données, ou pour tirer parti des fonctionnalités personnalisées qui expose la base de données sous-jacente.
+5. Ajoutez du code personnalisé pour des opérations telles que les règles d’entreprise, la recherche et la validation des données, ou pour tirer parti des fonctionnalités personnalisées exposées par la base de données sous-jacente.
 
-Vous pouvez ignorer l’étape 3 et programmer une application .NET pour émettre des commandes directement à une base de données au lieu d’un modèle. Dans ce cas, vous trouverez la documentation pertinente ici : [ADO.NET](/dotnet/framework/data/adonet/index). Notez que vous pouvez utiliser la **Assistant de Configuration de Source de données** et les concepteurs pour générer le code de liaison de données lorsque vous renseignez vos propres objets en mémoire, puis liez les contrôles d’interface utilisateur à ces objets.
+Vous pouvez ignorer l’étape 3 et programmer une application .NET pour émettre des commandes directement dans une base de données, plutôt que d’utiliser un modèle. Dans ce cas, vous trouverez la documentation pertinente ici : [ADO.NET](/dotnet/framework/data/adonet/index). Notez que vous pouvez toujours utiliser l' **Assistant Configuration de source de données** et les concepteurs pour générer du code de liaison de données lorsque vous remplissez vos propres objets en mémoire, puis liez les contrôles de l’interface utilisateur à ces objets.
 
 ## <a name="see-also"></a>Voir aussi
 

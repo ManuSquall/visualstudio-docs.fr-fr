@@ -1,28 +1,28 @@
 ---
-title: 'Procédure : Supprimer les avertissements du compilateur | Microsoft Docs'
+title: Guide pratique pour supprimer les avertissements du compilateur | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: 31827b17-f933-413d-b28a-b19f903b64ca
 caps.latest.revision: 7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 994b29fb4592d55a04389896ee9db8848dceda67
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: aeb404c479edec5dec89f28e80584d435f5c370a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65695385"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670645"
 ---
-# <a name="how-to-suppress-compiler-warnings"></a>Procédure : Supprimer les avertissements du compilateur
+# <a name="how-to-suppress-compiler-warnings"></a>Comment : supprimer des avertissements du compilateur
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous pouvez « nettoyer » un journal de génération en spécifiant un ou plusieurs types d’avertissements du compilateur que vous ne souhaitez pas inclure. Par exemple, vous pouvez utiliser cette technique pour passer en revue uniquement certaines des informations générées automatiquement quand vous affectez la valeur Diagnostic, Détaillé ou Normal au niveau de détail du journal de génération. Pour plus d’informations sur le niveau de détail, consultez [Guide pratique pour Afficher, enregistrer et configurer les fichiers journaux de génération](../ide/how-to-view-save-and-configure-build-log-files.md).
+Vous pouvez « nettoyer » un journal de génération en spécifiant un ou plusieurs types d’avertissements du compilateur que vous ne souhaitez pas inclure. Par exemple, vous pouvez utiliser cette technique pour passer en revue uniquement certaines des informations générées automatiquement quand vous affectez la valeur Diagnostic, Détaillé ou Normal au niveau de détail du journal de génération. Pour plus d’informations sur le niveau de détail, consultez [Guide pratique pour afficher, enregistrer et configurer des fichiers journaux de génération](../ide/how-to-view-save-and-configure-build-log-files.md).
 
-### <a name="to-suppress-specific-warnings-for-visual-c-or-f"></a>Pour supprimer des avertissements spécifiques pour Visual C# ou F\#
+### <a name="to-suppress-specific-warnings-for-visual-c-or-f"></a>Pour supprimer des avertissements spécifiques pour C# Visual ou F \#
 
 1. Dans l’**Explorateur de solutions**, choisissez le projet dans lequel vous souhaitez supprimer les avertissements.
 
@@ -38,7 +38,7 @@ Vous pouvez « nettoyer » un journal de génération en spécifiant un ou plu
 
 2. Dans la barre de menus, sélectionnez **Afficher**, **Pages de propriétés**.
 
-3. Choisissez la catégorie **Propriétés de configuration**, la catégorie **C/C++**, puis la page **Avancé**.
+3. Choisissez la catégorie **Propriétés de configuration**, la catégorie **C/C++** , puis la page **Avancé**.
 
 4. Effectuez l’une des opérations suivantes :
 
@@ -58,7 +58,7 @@ Vous pouvez masquer des avertissements spécifiques du compilateur pour Visual B
 
 2. Dans la barre de menus, choisissez **Projet**, **Décharger le projet**.
 
-3. Dans l’**Explorateur de solutions**, ouvrez le menu contextuel du projet et choisissez **Modifier**_nom_projet_**.vbproj**.
+3. Dans l’**Explorateur de solutions**, ouvrez le menu contextuel du projet et choisissez **Modifier**_nom_projet_ **.vbproj**.
 
     Le fichier projet s’ouvre dans l’éditeur de code.
 
@@ -110,6 +110,6 @@ Vous pouvez masquer des avertissements spécifiques du compilateur pour Visual B
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Procédure pas à pas : Génération d’une application](../ide/walkthrough-building-an-application.md)
+- [Procédure pas à pas : génération d’une application](../ide/walkthrough-building-an-application.md)
 - [Guide pratique pour afficher, enregistrer et configurer des fichiers journaux de génération](../ide/how-to-view-save-and-configure-build-log-files.md)
 - [Compilation et génération](../ide/compiling-and-building-in-visual-studio.md)

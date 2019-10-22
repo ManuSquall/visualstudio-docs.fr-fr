@@ -11,16 +11,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 15e0b45fd77096ba2227391736aad5c895014d1c
-ms.sourcegitcommit: 0554b59a2a251661e56824fb9cd6e9b1f326cef1
+ms.openlocfilehash: 7b2de511b0d24df9c4e156ccef37ff053005af98
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71831871"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72450445"
 ---
-# <a name="step-3-use-the-interactive-repl-window"></a>Étape 3 : Utiliser la fenêtre REPL interactif
+# <a name="step-3-use-the-interactive-repl-window"></a>Étape 3 : Utiliser la fenêtre REPL interactive
 
-**Étape précédente : [Écrire et exécuter du code](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)**
+**Étape précédente :[ Écrire et exécuter du code](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)**
 
 La fenêtre **Interactive** de Visual Studio pour Python offre une expérience utilisateur REPL (read-evaluate-print-loop) intéressante, qui réduit considérablement le cycle habituel de modification-génération-débogage. La fenêtre **Interactive** fournit toutes les fonctionnalités de l’expérience utilisateur REPL de la ligne de commande Python. Elle facilite également l’échange de code avec des fichiers sources dans l’éditeur Visual Studio, qui sans cela serait fastidieux avec la ligne de commande.
 
@@ -54,7 +54,7 @@ La fenêtre **Interactive** de Visual Studio pour Python offre une expérience u
         return ' ' * int(20 * cos(radians(x)) + 20) + 'o'
     ```
 
-1. Sélectionnez les instructions de fonction `import`, `from` et `make_dot_string` dans le fichier *. py* , cliquez avec le bouton droit, puis sélectionnez **Envoyer vers interactive** (ou appuyez sur **CTRL**+**entrée**). Le fragment de code est immédiatement collé dans la fenêtre **Interactive**, puis exécuté. Sélectionnez maintenant la fonction `make_dot_string` et répétez la même commande, qui réexécute ce fragment de code. Étant donné que le code définit une fonction, vous pouvez rapidement tester cette fonction en l’appelant à plusieurs reprises :
+1. Sélectionnez les instructions de fonction `import`, `from` et `make_dot_string` dans le fichier *. py* , cliquez avec le bouton droit, puis sélectionnez **Envoyer vers interactive** (ou appuyez sur **CTRL**+**entrée**). Le fragment de code est immédiatement collé dans la fenêtre **Interactive**, puis exécuté. Étant donné que le code a défini une fonction, vous pouvez rapidement tester cette fonction en l’appelant plusieurs fois :
 
     ![Envoi de code dans la fenêtre interactive et test de ce code](media/vs-getting-started-python-14-interactive4.png)
 

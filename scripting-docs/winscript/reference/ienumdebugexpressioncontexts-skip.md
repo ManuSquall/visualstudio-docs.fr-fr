@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugExpressionContexts::Skip | Microsoft Docs
+title: 'IEnumDebugExpressionContexts :: Skip | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5176eb83c4c5bfe517066d8ea7f52b76e121fb26
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b155f42a52a64e3d79e99eca3e314fd8d85b9bfd
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963518"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571496"
 ---
 # <a name="ienumdebugexpressioncontextsskip"></a>IEnumDebugExpressionContexts::Skip
 Ignore un nombre spécifié de segments dans une séquence d’énumération.  
@@ -37,12 +37,12 @@ HRESULT Skip(
   
 #### <a name="parameters"></a>Paramètres  
  `celt`  
- [in] Nombre de segments dans la séquence d’énumération à ignorer.  
+ dans Nombre de segments dans la séquence d’énumération à ignorer.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   

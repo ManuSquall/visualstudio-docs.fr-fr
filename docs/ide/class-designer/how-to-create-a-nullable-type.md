@@ -1,27 +1,27 @@
 ---
-title: 'Procédure : Créer un type Nullable (Concepteur de classes)'
+title: Guide pratique pour créer un type Nullable (Concepteur de classes)
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - nullable types, Class Designer
 - Class Designer [Visual Studio], nullable types
 ms.assetid: 84673a89-3f6d-4668-919e-1c0f56182fe5
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0212f7ef1c5b506ce7a1efbde60e7c46a424bfa3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 671b2230daafbbdf92edda2ba1a671b688723796
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975519"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647853"
 ---
-# <a name="how-to-create-a-nullable-type-in-class-designer"></a>Procédure : Créer un type Nullable dans le Concepteur de classes
+# <a name="how-to-create-a-nullable-type-in-class-designer"></a>Guide pratique pour créer un type Nullable dans le Concepteur de classes
 
 Certains types valeur n’ont pas, ou n’ont pas besoin d’avoir, systématiquement une valeur définie. Il s’agit d’une pratique courante dans les bases de données, où certains champs peuvent ne se voir assigner aucune valeur. Par exemple, vous pouvez assigner une valeur null à un champ de base de données, qu’il conservera jusqu’à ce qu’une valeur lui soit affectée.
 
@@ -90,5 +90,5 @@ Pour plus d’informations sur les types Nullable dans C#, consultez [Types Null
 - <xref:System.Nullable%601>
 - [Types Nullable](/dotnet/csharp/programming-guide/nullable-types/index)
 - [Utilisation de types Nullable](/dotnet/csharp/programming-guide/nullable-types/using-nullable-types)
-- [Guide pratique pour identifier un type Nullable](/dotnet/csharp/programming-guide/nullable-types/how-to-identify-a-nullable-type)
+- [Comment : identifier un type Nullable](/dotnet/csharp/programming-guide/nullable-types/how-to-identify-a-nullable-type)
 - [Types valeur Nullable](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types)

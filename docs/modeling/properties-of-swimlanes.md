@@ -6,49 +6,49 @@ f1_keywords:
 - vs.dsltools.dsldesigner.swimlane
 helpviewer_keywords:
 - Domain-Specific Language, swimlane
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab2e10eed7452bf58390513bed68fac3f4c9a0f6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5180581b0a0934c049d9c4ea199fa3396a1d1237
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823903"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658121"
 ---
 # <a name="properties-of-swimlanes"></a>Propriétés des couloirs
-Vous pouvez ajouter des couloirs à un diagramme. Couloirs divisent un diagramme en zones verticales ou horizontales. Vous pouvez définir d’autres formes à afficher à l’intérieur des couloirs. Pour plus d’informations, consultez [comment définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md). Pour plus d’informations sur l’utilisation de ces propriétés, consultez [personnalisation et extension d’un langage spécifique à un domaine](../modeling/customizing-and-extending-a-domain-specific-language.md).
+Vous pouvez ajouter des couloirs à un diagramme. Les couloirs divisent un diagramme en zones verticales ou horizontales. Vous pouvez définir d’autres formes à afficher à l’intérieur des couloirs. Pour plus d’informations, consultez [comment définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md). Pour plus d’informations sur l’utilisation de ces propriétés, consultez [personnalisation et extension d’un langage spécifique à un domaine](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
- Couloirs ont les propriétés qui sont répertoriées dans le tableau suivant.
+ Les couloirs ont les propriétés répertoriées dans le tableau suivant.
 
-|Propriété|Description|Par défaut|
+|Property|Description|Valeur par défaut|
 |-|-|-|
-|Couleur de remplissage de corps|La couleur de remplissage pour le corps du couloir.|Blanc|
-|Couleur de remplissage d’en-tête|La couleur de remplissage pour l’en-tête du couloir.|Gris foncé|
+|Couleur de remplissage du corps|Couleur de remplissage du corps du couloir.|ajourée|
+|Couleur de remplissage d’en-tête|Couleur de remplissage de l’en-tête du couloir.|Gris foncé|
 |Couleur du séparateur|Couleur de la ligne de séparation.|LightGray|
-|Style de séparateur de ligne|Le style de la ligne de séparation (`Solid`, `Dash`, `Dot`, `DashDot`, `DashDotDot`, ou `Custom`).|`Dash`|
-|Épaisseur du séparateur|L’épaisseur de la ligne de séparation en pouces.|0.03125|
-|Couleur du texte|La couleur qui est utilisée pour les éléments décoratifs de texte qui sont associés à ce couloir.|Noir|
-|Modificateur d'accès|Le niveau d’accès de la classe (`public` ou `internal`).|Public|
-|Attributs personnalisés|Utilisé pour ajouter des attributs à la classe de code est générée à partir de ce couloir.|\<aucune>|
-|Génère le Double dérivée|Si `True`, une classe de base et une classe partielle (pour prendre en charge la personnalisation via des substitutions) sont générés. Pour plus d’informations, consultez [substitution et extension des Classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|False|
-|A le constructeur personnalisé|Si `True`, un constructeur personnalisé est fourni dans le code source. Pour plus d’informations, consultez [substitution et extension des Classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|False|
-|Modificateur d’héritage|Décrit le type d’héritage de la classe de code source qui est générée à partir de couloir (`none`, `abstract` ou `sealed`).|none|
-|Couloir de base|La classe de base de ce couloir.|(aucun)|
-|Nom|Le nom de ce couloir.|Nom actuel|
-|Espace de noms|L’espace de noms qui est affilié à ce couloir.|Espace de noms actuel|
-|Type de l’info-bulle|Définition de l’info-bulle (`fixed`, `variable`, ou `none`). Si `fixed`, puis la valeur de la `Fixed Tooltip Text` propriété est utilisée ; si `variable`, puis l’info-bulle est définie dans du code personnalisé.|\<aucune>|
-|Notes|Remarques informelles associées à ce couloir.|\<aucune>|
+|Style de ligne de séparateur|Style de la ligne de séparation (`Solid`, `Dash`, `Dot`, `DashDot`, `DashDotDot` ou `Custom`).|`Dash`|
+|Épaisseur du séparateur|Épaisseur de la ligne de séparation, en pouces.|0,03125|
+|Couleur du texte|Couleur utilisée pour les éléments décoratifs de texte associés à ce couloir.|Noir|
+|Modificateur d'accès|Niveau d’accès de la classe (`public` ou `internal`).|Public|
+|Attributs personnalisés|Utilisé pour ajouter des attributs à la classe de code générée à partir de ce couloir.|\<aucune>|
+|Génère un doublon dérivé|Si `True`, une classe de base et une classe partielle (pour prendre en charge la personnalisation via des substitutions) sont générées. Pour plus d’informations, consultez [substitution et extension des classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|False|
+|A un constructeur personnalisé|Si `True`, un constructeur personnalisé est fourni dans le code source. Pour plus d’informations, consultez [substitution et extension des classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|False|
+|Modificateur d’héritage|Décrit le type d’héritage de la classe de code source qui est généré à partir du couloir (`none`, `abstract` ou `sealed`).|none|
+|Couloir de base|Classe de base de ce couloir.|(aucune)|
+|Name|Nom de ce couloir.|Nom actuel|
+|Espace de noms|Espace de noms affilié à ce couloir.|Espace de noms actuel|
+|Type d’info-bulle|Comment l’info-bulle est définie (`fixed`, `variable` ou `none`). Si `fixed`, la valeur de la propriété `Fixed Tooltip Text` est utilisée ; Si `variable`, l’info-bulle est définie dans le code personnalisé.|\<aucune>|
+|Notes|Notes informelles associées à ce couloir.|\<aucune>|
 |Alignement|Alignement horizontal ou vertical.|Vertical|
-|Hauteur initiale|La hauteur initiale de ce couloir, en pouces. Applicable uniquement aux couloirs horizontaux.|0|
-|Largeur initiale|Largeur initiale de ce couloir, en pouces. Applicable uniquement aux couloirs verticaux.|0|
-|Expose la couleur du texte|Si `True`, l’utilisateur peut définir la couleur d’un couloir dans le concepteur généré. Pour définir ceci, avec le bouton droit de la forme de couloir et cliquez sur **ajouter les objets exposés**.|False|
+|Hauteur initiale|Hauteur initiale de ce couloir, en pouces. S’applique uniquement aux couloirs horizontaux.|0|
+|Largeur initiale|Largeur initiale de ce couloir, en pouces. S’applique uniquement aux couloirs verticaux.|0|
+|Expose la couleur de texte|Si `True`, l’utilisateur peut définir la couleur d’un couloir dans le concepteur généré. Pour ce faire, cliquez avec le bouton droit sur la forme couloir, puis cliquez sur **Ajouter exposé**.|False|
 |Description|Utilisé pour documenter le concepteur généré.|\<aucune>|
-|Display Name|Le nom qui s’affichera dans le concepteur généré pour faire référence à cette classe de couloir.|\<aucune>|
-|Texte d’info-bulle fixe|Le texte qui est utilisé pour une info-bulle fixe.|\<aucune>|
-|Help Keyword|Le mot clé qui est utilisé pour indexer l’aide F1 pour ce couloir.|\<aucune>|
+|Display Name|Nom qui sera affiché dans le concepteur généré pour faire référence à cette classe couloir.|\<aucune>|
+|Texte d’info-bulle fixe|Texte utilisé pour une info-bulle fixe.|\<aucune>|
+|Help Keyword|Mot clé utilisé pour indexer l’aide F1 pour ce couloir.|\<aucune>|
 
 ## <a name="see-also"></a>Voir aussi
 

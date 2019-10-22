@@ -1,37 +1,37 @@
 ---
-title: 'Procédure : Supprimer les avertissements d’analyse de Code pour le Code généré | Microsoft Docs'
+title: 'Comment : supprimer des avertissements d’analyse du code pour du code généré | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 ms.assetid: 3a96434e-d419-43a7-81ba-95cccac835b8
 caps.latest.revision: 7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 9949a72abc46f2212fe448e193a06cce90b6df7c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 52caadd7f4dd9349eccb80a366a1458212aba5ca
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438985"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72646276"
 ---
-# <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>Procédure : Supprimer les avertissements d’analyse de code pour le code généré
+# <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>Comment : supprimer les avertissements d'analyse du code pour du code généré
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Les compilateurs de code managé génèrent souvent un code qui est ajouté à un projet pour faciliter le développement de code rapide. En outre, les développeurs utilisent souvent des outils tiers pour aider à développer rapidement des applications. Ces outils génèrent également le code qui est ajouté au projet.  
-  
- Vous souhaiterez peut-être consulter les violations de règle que l’analyse du Code détecte dans le code généré. Toutefois, vous souhaiterez pas les voir si vous ne peut pas afficher et gérer le code qui contient la violation.  
-  
- Le **supprimer les résultats du code généré** case à cocher sur la page de propriétés de l’analyse du Code d’un projet vous permet de choisir si vous souhaitez afficher les avertissements d’analyse du Code à partir du code généré par un outil tiers.  
-  
+Les compilateurs de code managé génèrent souvent du code qui est ajouté à un projet pour faciliter le développement rapide de code. En outre, les développeurs utilisent souvent des outils tiers pour développer rapidement des applications. Ces outils génèrent également du code qui est ajouté au projet.
+
+ Vous pouvez consulter les violations de règle découvertes par l’analyse du code dans le code généré. Toutefois, vous ne voudrez peut-être pas les afficher si vous ne pouvez pas afficher et gérer le code qui contient la violation.
+
+ La case à cocher **Supprimer les résultats du code généré** sur la page de propriétés analyse du code d’un projet vous permet de choisir si vous souhaitez consulter les avertissements d’analyse du code générés par un outil tiers.
+
 > [!NOTE]
-> Cette option ne supprime pas les erreurs d’analyse du Code et les avertissements du code généré lorsque les erreurs et avertissements s’affichent dans les formulaires et les modèles. Vous pouvez afficher et gérer le code source pour un formulaire ou un modèle.  
-  
-### <a name="to-suppress-warnings-for-generated-code-in-a-project"></a>Pour supprimer des avertissements pour du code généré dans un projet  
-  
-1. Cliquez sur le projet dans l’Explorateur de solutions, puis cliquez sur **propriétés**.  
-  
-2. Cliquez sur **analyse du Code**.  
-  
-3. Sélectionnez le **supprimer les résultats du code généré** case à cocher.
+> Cette option ne supprime pas les erreurs et les avertissements d’analyse du code générés lorsque les erreurs et les avertissements s’affichent dans les formulaires et les modèles. Vous pouvez afficher et gérer le code source pour un formulaire ou un modèle.
+
+### <a name="to-suppress-warnings-for-generated-code-in-a-project"></a>Pour supprimer des avertissements pour le code généré dans un projet
+
+1. Cliquez avec le bouton droit sur le projet dans Explorateur de solutions, puis cliquez sur **Propriétés**.
+
+2. Cliquez sur **analyse du code**.
+
+3. Activez la case à cocher **Supprimer les résultats du code généré** .

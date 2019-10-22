@@ -1,5 +1,5 @@
 ---
-title: IPerPropertyBrowsing2::SetPredefinedValue | Microsoft Docs
+title: 'IPerPropertyBrowsing2 :: SetPredefinedValue | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4d35e087cc057608666e104681d65fa8009f8167
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1a823a04082b7e19b2c1bc475c1070cc501789e8
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944820"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576232"
 ---
 # <a name="iperpropertybrowsing2setpredefinedvalue"></a>IPerPropertyBrowsing2::SetPredefinedValue
 Définit la valeur de la propriété spécifiée par `dispID`. La valeur prédéfinie est identifiée par le jeton `dwCookie.`  
@@ -38,13 +38,13 @@ HRESULT SetPredefinedValue(
   
 #### <a name="parameters"></a>Paramètres  
  `dispid`  
- [in] Identificateur de dispatch de la propriété pour laquelle une valeur prédéfinie est définie.  
+ dans Identificateur de dispatch de la propriété pour laquelle une valeur prédéfinie est définie.  
   
  `dwCookie`  
- [in] Jeton qui identifie la valeur à définir.  
+ dans Jeton identifiant la valeur à définir.  
   
 ## <a name="return-value"></a>Valeur de retour  
- Retourne une liste valide `HRESULT`, généralement `S_OK`.  
+ Retourne un `HRESULT` valide, généralement `S_OK`.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface 1 IPerPropertyBrowsing2](../../winscript/reference/iperpropertybrowsing2-interface-1.md)

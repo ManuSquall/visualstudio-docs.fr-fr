@@ -1,5 +1,5 @@
 ---
-title: 'Étape 8 : Personnaliser le questionnaire'
+title: 'Étape 8 : personnaliser le questionnaire'
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,20 +13,20 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 402817ace34f12fb7659b7251cbe755d036ebc4b
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: cee7b855256f352c9ac9ed39994191f4a9e6d946
+ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118635"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314209"
 ---
-# <a name="step-8-customize-the-quiz"></a>Étape 8 : Personnaliser le questionnaire
+# <a name="step-8-customize-the-quiz"></a>Étape 8 : personnaliser le questionnaire
 
 Dans la dernière partie du didacticiel, vous allez découvrir quelques méthodes permettant de personnaliser le questionnaire et développer ce que vous avez déjà appris. Par exemple, pensez à la façon dont le programme crée des problèmes de division aléatoire pour laquelle la réponse n’est jamais une fraction. Pour en savoir plus, définissez le contrôle `timeLabel` sur une couleur différente et donnez un indice à la personne interrogée.
 
 > [!NOTE]
 > Cette rubrique fait partie d'une série de didacticiels sur les concepts de codage de base.
-> - Pour obtenir une vue d’ensemble du tutoriel, consultez [Tutoriel 2 : Créer un questionnaire mathématique chronométré](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> - Pour obtenir une vue d’ensemble du tutoriel, consultez [Tutoriel 2 : créer un questionnaire mathématique chronométré](../ide/tutorial-2-create-a-timed-math-quiz.md).
 > - Pour télécharger une version complète du code, consultez l' [exemple complet de didacticiels mathématiques](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 ## <a name="to-customize-the-quiz"></a>Pour personnaliser le questionnaire
@@ -41,8 +41,7 @@ Dans la dernière partie du didacticiel, vous allez découvrir quelques méthode
   timeLabel.BackColor = Color.Red
   ```
 
-  > [!IMPORTANT]
-  > Utilisez le contrôle de langage de programmation en haut à droite de cette page pour afficher C# l’extrait de code ou le Visual Basic extrait de code.<br><br>![Contrôle du langage de programmation pour Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
+  [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
 
   Réinitialisez la couleur une fois le questionnaire terminé.
 
@@ -50,6 +49,6 @@ Dans la dernière partie du didacticiel, vous allez découvrir quelques méthode
 
 ## <a name="to-continue-or-review"></a>Pour continuer ou examiner
 
-- Pour passer au didacticiel suivant, consultez  **[didacticiel 3 : Créer un jeu](../ide/tutorial-3-create-a-matching-game.md)** de combinaisons.
+- Pour passer au didacticiel suivant, consultez **[didacticiel 3 : créer un jeu de combinaisons](../ide/tutorial-3-create-a-matching-game.md)** .
 
-- Pour revenir à l’étape précédente du tutoriel, consultez [Étape 7 : Ajouter des problèmes de multiplication et de division](../ide/step-7-add-multiplication-and-division-problems.md).
+- Pour revenir à l’étape précédente du tutoriel, consultez [Étape 7 : ajouter des problèmes de multiplication et de division](../ide/step-7-add-multiplication-and-division-problems.md).

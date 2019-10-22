@@ -3,17 +3,17 @@ title: Tri, filtrage et regroupement dans l’Explorateur de schémas XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 4a914de0-9ffc-4526-9603-92e460e52513
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: daa629b4c26abf7b6ce801c30ea6f6fd41fbaa48
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 6bf9226f3b491a39c7ef5936667cabd789c6a457
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926728"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72604581"
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>Tri, filtrage et regroupement (Explorateur de schémas XML)
 
@@ -63,7 +63,7 @@ Lorsque l’option **Trier par type** est sélectionnée, les nœuds globaux son
 
 ### <a name="sort-by-name"></a>Trier par nom
 
-Lorsque l’option **Trier par nom** est sélectionnée, les nœuds globaux sont triés dans l’ordre suivant:
+Lorsque l’option **Trier par nom** est sélectionnée, les nœuds globaux sont triés dans l’ordre suivant :
 
 1. Nœuds `import` (par ordre alphabétique des espaces de noms).
 

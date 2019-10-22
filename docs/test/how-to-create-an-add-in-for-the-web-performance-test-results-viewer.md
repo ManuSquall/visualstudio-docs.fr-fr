@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Web performance tests, Visual Studio Add-in
 - Visual Studio Add-in, Web performance tests
 ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e2330f5d1c47c9fc3cc578f286be005710b08f59
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: ba6ef865b326bd8bc5eea89a9e270b793111e539
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918198"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653585"
 ---
-# <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>Procédure : Créer un complément pour l’Afficheur de résultats de test de performances web
+# <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>Comment : créer un complément pour la visionneuse de Résultats des tests performances de site Web
 
 Pour étendre l’interface utilisateur de **l’Afficheur de résultats de test de performances web**, utilisez les espaces de noms suivants :
 
@@ -37,7 +37,7 @@ Pour étendre l’interface utilisateur de **l’Afficheur de résultats de test
 Créez ou ouvrez une solution qui ne soit pas en production et dans laquelle vous puissiez effectuer des tests. Elle doit contenir une application web ASP.NET et un projet de test de performances web et de charge comportant un ou plusieurs tests de performances web pour l’application web ASP.NET.
 
 > [!NOTE]
-> Vous pouvez créer une application web ASP.NET et un projet de test de performances web et de charge contenant des tests de performances web en suivant les procédures décrites dans [Guide pratique pour créer un test de service web](../test/how-to-create-a-web-service-test.md) et [Guide pratique pour générer et exécuter un test de performances web codé](../test/generate-and-run-a-coded-web-performance-test.md).
+> Pour créer une application web ASP.NET et un projet de test de performances web et de charge comportant des tests de performances web, suivez les procédures décrites dans [Guide pratique : Créer un test de service web](../test/how-to-create-a-web-service-test.md) et [Générer et exécuter un test de performances web codé](../test/generate-and-run-a-coded-web-performance-test.md).
 
 ## <a name="create-a-visual-studio-add-in"></a>Créer un complément Visual Studio
 

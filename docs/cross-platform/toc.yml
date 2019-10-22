@@ -3,8 +3,6 @@
 - name: Visual Studio Tools pour Xamarin
   displayName: .NET Mobile Developer Tools (Android & iOS)
   href: /xamarin/
-- name: Visual Studio Tools pour Apache Cordova
-  href: /visualstudio/cross-platform/tools-for-cordova/
 - name: Visual Studio Tools pour Unity
   items:
     - name: Visual Studio Tools pour Unity
@@ -33,29 +31,29 @@
       href: change-log-visual-studio-tools-for-unity-mac.md
     - name: DevOps avec les applications Unity
       href: application-lifecycle-management-alm-with-unity-apps.md
-- name: Visual C++ pour le développement mobile multiplateforme
+- name: Développement mobile multiplateforme avec C++
   items:
-    - name: Visual C++ pour le développement mobile multiplateforme
+    - name: Développement mobile multiplateforme avec C++
       href: visual-cpp-for-cross-platform-mobile-development.md
-    - name: Installer Visual C++ pour le développement mobile multiplateforme
+    - name: Installer le développement mobile multiplateforme avec C++
       items:
-        - name: Installer Visual C++ pour le développement mobile multiplateforme
+        - name: Installer le développement mobile multiplateforme avec C++
           href: install-visual-cpp-for-cross-platform-mobile-development.md
         - name: Installer et configurer des outils de génération en utilisant iOS
           href: install-and-configure-tools-to-build-using-ios.md
-    - name: Créer une application Android Native Activity
+    - name: Créer une application d’activité native Android
       href: create-an-android-native-activity-app.md
     - name: Générer une application OpenGL ES sur Android et iOS
       href: build-an-opengl-es-application-on-android-and-ios.md
     - name: Importer un projet Xcode
       href: import-an-xcode-project.md
-    - name: Synchroniser les modifications entre Xcode et Visual Studio
+    - name: Synchroniser les changements entre Xcode et Visual Studio
       href: sync-changes-between-xcode-and-visual-studio.md
     - name: Exemples de développement mobile multiplateforme
       href: cross-platform-mobile-development-examples.md
-    - name: Propriétés du projet multiplateforme C++
+    - name: Informations de référence sur les pages de propriétés des projets multiplateformes C++
       items:
-        - name: Propriétés du projet multiplateforme C++
+        - name: Informations de référence sur les pages de propriétés des projets multiplateformes C++
           href: cross-platform-prop-pages.md
         - name: Propriétés générales du projet (Android C++)
           href: general-android-prop-page.md

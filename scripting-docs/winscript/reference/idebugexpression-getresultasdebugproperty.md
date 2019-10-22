@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression::GetResultAsDebugProperty | Microsoft Docs
+title: 'IDebugExpression :: GetResultAsDebugProperty | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 06d9b513d40450e20bb87f07c460bef7ce2678c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 104c42f02d02be386711e687f02d333425834948
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978495"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575924"
 ---
 # <a name="idebugexpressiongetresultasdebugproperty"></a>IDebugExpression::GetResultAsDebugProperty
-Retourne le résultat de l’évaluation des expressions en tant que propriété de débogage et de la valeur de retour de l’opération.  
+Retourne le résultat de l’évaluation de l’expression sous la forme d’une propriété de débogage et de la valeur de retour de l’opération.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -38,24 +38,24 @@ HRESULT GetResultAsDebugProperty(
   
 #### <a name="parameters"></a>Paramètres  
  `phrResult`  
- [out] Valeur de retour de l’opération.  
+ à Valeur de retour de l’opération.  
   
  `ppdp`  
- [out] La propriété de débogage pour l’expression.  
+ à Propriété de débogage pour l’expression.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
 |`E_PENDING`|L’opération est toujours en attente.|  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode retourne le résultat de l’évaluation d’expression comme un `IDebugProperty` et l’opération `HRESULT`.  
+ Cette méthode retourne le résultat de l’évaluation de l’expression sous la forme d’un `IDebugProperty` et de l' `HRESULT` de l’opération.  
   
  Cette méthode retourne `S_OK` et `phrResult` retourne `E_ABORT` si `Abort` abandonne l’opération.  
   
 ## <a name="see-also"></a>Voir aussi  
- [IDebugExpression (Interface)](../../winscript/reference/idebugexpression-interface.md)   
+ @No__t_1 de l' [interface IDebugExpression](../../winscript/reference/idebugexpression-interface.md)  
  [IDebugExpression::Abort](../../winscript/reference/idebugexpression-abort.md)

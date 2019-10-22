@@ -6,17 +6,17 @@ apiname:
 - XElement.Elements
 apitype: Assembly
 ms.assetid: 3d5737f2-d2ed-410a-821c-349dbb2b574f
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ff2071ba71d60db87332b0e23948d63ac1b2289
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d92e9ebd1e5be9f3535dcac136bb46ba33975f0c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62845559"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72637322"
 ---
 # <a name="elements-xelement-dynamic-property"></a>Éléments (Propriété dynamique XElement)
 
@@ -32,7 +32,7 @@ elem.Elements[{namespaceName}localName]
 
 Indexeur de type `IEnumerable<XElement> Item(String expandedName)`. Cet indexeur prend le nom développé des éléments enfants souhaités et retourne les éléments enfants correspondants dans une collection <xref:System.Collections.IEnumerable>`<`<xref:System.Xml.Linq.XElement>`>`.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
 Cette propriété est équivalente à la méthode <xref:System.Xml.Linq.XContainer.Elements(System.Xml.Linq.XName)?displayProperty=fullName> de la classe <xref:System.Xml.Linq.XContainer>.
 
@@ -42,6 +42,6 @@ Cette propriété utilise l'exécution différée.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Propriétés dynamiques de la classe XElement](../designers/xelement-class-dynamic-properties.md)
+- [Propriétés dynamiques de la classe XElement](../designers/attribute-xelement-dynamic-property.md)
 - [Élément](../designers/element-xelement-dynamic-property.md)
 - [Descendants](../designers/descendants-xelement-dynamic-property.md)

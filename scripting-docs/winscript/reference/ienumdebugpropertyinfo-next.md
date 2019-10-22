@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugPropertyInfo::Next | Microsoft Docs
+title: 'IEnumDebugPropertyInfo :: suivant | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b1568d2387422bebc86ce2b035ba997610833e85
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b99631c217ca56dce91512403dfb6623cd1e7641
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963414"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574195"
 ---
 # <a name="ienumdebugpropertyinfonext"></a>IEnumDebugPropertyInfo::Next
-Récupère un nombre spécifié de `DebugPropertyInfo` structures dans une séquence d’énumération.  
+Récupère un nombre spécifié de structures de `DebugPropertyInfo` dans une séquence d’énumération.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -39,17 +39,17 @@ HRESULT Next (
   
 #### <a name="parameters"></a>Paramètres  
  `celt`  
- [in] Le nombre de `DebugPropertyInfo`structures à récupérer.  
+ dans Nombre de `DebugPropertyInfo`structures à récupérer.  
   
  `rgelt`  
- [out] Un tableau de `DebugPropertyInfo` structures récupérées.  
+ à Tableau de `DebugPropertyInfo` structures récupérées.  
   
  `pceltFetched`  
- [out] Retourne le nombre de `DebugPropertyInfo` structures réellement récupérées.  
+ à Retourne le nombre de structures de `DebugPropertyInfo` réellement récupérées.  
   
 ## <a name="return-value"></a>Valeur de retour  
- Retourne une liste valide `HRESULT`, généralement `S_OK`.  
+ Retourne un `HRESULT` valide, généralement `S_OK`.  
   
 ## <a name="see-also"></a>Voir aussi  
- [IEnumDebugPropertyInfo Interface](../../winscript/reference/ienumdebugpropertyinfo-interface.md)   
+ @No__t_1 de l' [interface IEnumDebugPropertyInfo](../../winscript/reference/ienumdebugpropertyinfo-interface.md)  
  [Structure DebugPropertyInfo](../../winscript/reference/debugpropertyinfo-structure.md)

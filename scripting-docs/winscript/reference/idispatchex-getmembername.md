@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::GetMemberName | Microsoft Docs
+title: 'IDispatchEx :: GetMemberName | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 155c8db6e772460ae8ad4e8b5a70ae5e67b49ec1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f68b0157e8e352b34885ae94d14026a51c4a6e97
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000881"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574108"
 ---
 # <a name="idispatchexgetmembername"></a>IDispatchEx::GetMemberName
 Récupère le nom d’un membre.  
@@ -41,10 +41,10 @@ HRESULT GetMemberName(
  Identifie le membre. Utilise `GetDispID` ou `GetNextDispID` pour obtenir l’identificateur de dispatch.  
   
  `pbstrName`  
- Adresse d’un `BSTR` qui reçoit le nom du membre. L’application appelante est chargé de libérer cette valeur.  
+ Adresse d’un `BSTR` qui reçoit le nom du membre. L’application appelante est chargée de libérer cette valeur.  
   
 ## <a name="return-value"></a>Valeur de retour  
- Retourne une des valeurs suivantes :  
+ Retourne l’une des valeurs suivantes :  
   
 |||  
 |-|-|  
@@ -75,6 +75,6 @@ HRESULT hr;
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Interface IDispatchEx](../../winscript/reference/idispatchex-interface.md)   
- [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
+ @No__t_1 de l' [interface IDispatchEx](../../winscript/reference/idispatchex-interface.md)  
+ [IDispatchEx :: GetDispID](../../winscript/reference/idispatchex-getdispid.md)    
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

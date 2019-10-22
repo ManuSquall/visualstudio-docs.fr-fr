@@ -7,17 +7,17 @@ helpviewer_keywords:
 - templates [Visual Studio], Web
 - Web templates [Visual Studio]
 - project templates [Visual Studio], Web
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9af528cf92d4909bbe5c7d4ac114aa830e96162c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 7d121d9b970d8012aaf177c0a232cd21f6fe85d9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946893"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645825"
 ---
-# <a name="how-to-manually-create-web-templates"></a>Procédure : créer manuellement des modèles web
+# <a name="how-to-manually-create-web-templates"></a>Guide pratique pour créer manuellement des modèles web
 
 La création d’un modèle web ne ressemble pas à la création d’autres genres de modèle. Dans la mesure où les modèles de projet web apparaissent dans la boîte de dialogue **Ajouter un nouveau site web** et que les éléments de projet web sont catégorisés par langage de programmation, le fichier *vstemplate* doit spécifier le modèle en tant que modèle web et identifier le langage de programmation.
 
@@ -41,7 +41,7 @@ La création d’un modèle web ne ressemble pas à la création d’autres genr
    - CSharp
    - VisualBasic
 
-     Par exemple :
+     Exemple :
 
      ```xml
      <TemplateData>

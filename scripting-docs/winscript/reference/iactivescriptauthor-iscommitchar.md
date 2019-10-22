@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::IsCommitChar | Microsoft Docs
+title: 'IActiveScriptAuthor :: IsCommitChar | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3a0b630f872e49b7fbbabf4f354755f900fb4b5e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2f442bdc22f569cac6d706d739b2cfb37e07398b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955065"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576336"
 ---
 # <a name="iactivescriptauthoriscommitchar"></a>IActiveScriptAuthor::IsCommitChar
-Retourne une valeur qui indique si un caractère donné doit déclencher une validation de saisie semi-automatique d’instruction par l’application.  
+Retourne une valeur qui indique si un caractère donné doit déclencher une saisie semi-automatique des instructions par l’application.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -38,15 +38,15 @@ HRESULT IsCommitChar(
   
 #### <a name="parameters"></a>Paramètres  
  `ch`  
- [in] Caractère à tester.  
+ dans Caractère à tester.  
   
  `pfcommit`  
- [out] `True` si le caractère est une validation ; sinon, `False`.  
+ [out] `True` si le caractère est un caractère de validation ; Sinon, `False`.  
   
 ## <a name="return-value"></a>Valeur de retour  
  Élément `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   

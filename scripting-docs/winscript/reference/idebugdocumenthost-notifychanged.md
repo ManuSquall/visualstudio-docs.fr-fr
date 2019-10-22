@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHost::NotifyChanged | Microsoft Docs
+title: 'IDebugDocumentHost :: NotifyChanged | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6e65383bcfe875f0e38fffc870d5176d86433d8f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a4fc0c744887eb3592c4d94c520f33da86812bfc
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62939181"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72569173"
 ---
 # <a name="idebugdocumenthostnotifychanged"></a>IDebugDocumentHost::NotifyChanged
-Avertit l’hôte que le fichier du document source a été enregistré et que son contenu doit être actualisé.  
+Avertit l’hôte que le fichier source du document a été enregistré et que son contenu doit être actualisé.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -34,17 +34,17 @@ HRESULT NotifyChanged();
 ```  
   
 #### <a name="parameters"></a>Paramètres  
- Cette méthode ne prend aucun paramètre.  
+ Cette méthode n’accepte aucun paramètre.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode avertit l’hôte que le fichier du document source a été enregistré et que son contenu doit être actualisé.  
+ Cette méthode avertit l’hôte que le fichier source du document a été enregistré et que son contenu doit être actualisé.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IDebugDocumentHost](../../winscript/reference/idebugdocumenthost-interface.md)

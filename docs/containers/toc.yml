@@ -11,6 +11,8 @@
           href: container-tools.md
         - name: Application monopage React.js dans un conteneur
           href: container-tools-react.md
+        - name: Développement Kubernetes avec Azure Dev Spaces > >
+          href: /azure/dev-spaces/quickstart-netcore-visualstudio
     - name: Didacticiels
       expanded: true
       items:
@@ -28,7 +30,7 @@
           href: deploy-app-service.md
         - name: Déployer sur Docker Hub
           href: deploy-docker-hub.md
-        - name: Afficher et diagnostiquer des conteneurs
+        - name: Afficher et diagnostiquer des conteneurs et des images
           href: view-and-diagnose-containers.md
         - name: Configurer les outils de conteneur
           href: container-tools-configure.md

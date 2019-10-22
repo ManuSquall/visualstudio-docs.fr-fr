@@ -3,19 +3,19 @@ title: Refactoriser du code pour convertir une requête LINQ en une instruction 
 description: Convertit une requête LINQ écrite dans une syntaxe de requête en une instruction foreach.
 ms.date: 05/15/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 446d0f3a4988552e8e1fbbac32ca150491975d94
-ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
-ms.translationtype: HT
+ms.openlocfilehash: a618285e1981171eb8f5f2f435fb23d412296b5b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68483673"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654534"
 ---
 # <a name="refactoring-to-convert-linq-to-a-foreach-statement"></a>Refactorisation pour convertir LINQ en une instruction foreach
 

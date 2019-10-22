@@ -5,8 +5,8 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source suppression, code analysis
 - code analysis, source suppression
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 670150053053a2e556e0f111312247f243c2a8c0
-ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.openlocfilehash: 50afd9ffd72c37510997176f103f3b269f29fcf2
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71975049"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649308"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Supprimer les avertissements d’analyse du code
 
@@ -27,7 +27,7 @@ Il est souvent utile d’indiquer qu’un avertissement n’est pas applicable. 
 
 L’attribut <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> est un attribut conditionnel, qui est inclus dans les métadonnées IL de votre assembly de code managé, uniquement si le symbole de compilation CODE_ANALYSIS est défini au moment de la compilation.
 
-En C++/CLI, utilisez les macros ca @ NO__T-1SUPPRESS @ NO__T-2MESSAGE ou ca @ NO__T-3GLOBAL @ NO__T-4SUPPRESS_MESSAGE dans le fichier d’en-tête pour ajouter l’attribut.
+Dans C++le fichier d’en-tête, utilisez les macros ca \_SUPPRESS \_MESSAGE ou ca \_GLOBAL \_SUPPRESS_MESSAGE dans le fichier d’en-tête pour ajouter l’attribut.
 
 > [!NOTE]
 > Vous ne devez pas utiliser de suppressions dans la source pour les versions release, afin d’éviter d’expédier accidentellement les métadonnées de suppression dans la source. En outre, en raison du coût de traitement de la suppression en source, les performances de votre application peuvent être dégradées.
@@ -35,7 +35,7 @@ En C++/CLI, utilisez les macros ca @ NO__T-1SUPPRESS @ NO__T-2MESSAGE ou ca @ NO
 ::: moniker range="vs-2017"
 
 > [!NOTE]
-> Si vous migrez un projet vers Visual Studio 2017, vous serez peut-être confronté à un grand nombre d’avertissements d’analyse du code. Si vous n’êtes pas prêt à corriger les avertissements, vous pouvez les supprimer en choisissant **analyser** > **exécuter l’analyse du code et supprimer les problèmes actifs**.
+> Si vous migrez un projet vers Visual Studio 2017, vous serez peut-être confronté à un grand nombre d’avertissements d’analyse du code. Si vous n’êtes pas prêt à corriger les avertissements, vous pouvez les supprimer en choisissant **analyser**  > **exécuter l’analyse du code et supprimer les problèmes actifs**.
 >
 > ![Exécuter l’analyse du code et supprimer les problèmes dans Visual Studio](media/suppress-active-issues.png)
 
@@ -44,7 +44,7 @@ En C++/CLI, utilisez les macros ca @ NO__T-1SUPPRESS @ NO__T-2MESSAGE ou ca @ NO
 ::: moniker range=">=vs-2019"
 
 > [!NOTE]
-> Si vous migrez un projet vers Visual Studio 2019, vous serez peut-être confronté à un grand nombre d’avertissements d’analyse du code. Si vous n’êtes pas prêt à corriger les avertissements, vous pouvez les supprimer en choisissant **analyser** > **générer et supprimer les problèmes actifs**.
+> Si vous migrez un projet vers Visual Studio 2019, vous serez peut-être confronté à un grand nombre d’avertissements d’analyse du code. Si vous n’êtes pas prêt à corriger les avertissements, vous pouvez les supprimer en choisissant **analyser**  > **générer et supprimer les problèmes actifs**.
 
 ::: moniker-end
 
@@ -96,11 +96,11 @@ Les propriétés de l’attribut sont les suivantes :
 
 Les avertissements d’analyse du code sont supprimés au niveau auquel l’attribut <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> est appliqué. Par exemple, l’attribut peut être appliqué au niveau de l’assembly, du module, du type, du membre ou du paramètre. L’objectif est de coupler étroitement les informations de suppression au code où la violation se produit.
 
-La forme générale de suppression inclut la catégorie de règle et un identificateur de règle, qui contient une représentation explicite facultative du nom de la règle. Exemple :
+La forme générale de suppression inclut la catégorie de règle et un identificateur de règle, qui contient une représentation explicite facultative du nom de la règle. Exemple :
 
 `[SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]`
 
-S’il existe des raisons de performances strictes pour réduire les métadonnées de suppression dans la source, le nom de la règle peut être omis. La catégorie de règle et son ID de règle constituent ensemble un identificateur de règle suffisamment unique. Exemple :
+S’il existe des raisons de performances strictes pour réduire les métadonnées de suppression dans la source, le nom de la règle peut être omis. La catégorie de règle et son ID de règle constituent ensemble un identificateur de règle suffisamment unique. Exemple :
 
 `[SuppressMessage("Microsoft.Design", "CA1039")]`
 
@@ -110,9 +110,9 @@ Pour des raisons de maintenabilité, l’omission du nom de la règle n’est pa
 
 Les attributs de suppression peuvent être appliqués à une méthode, mais ne peuvent pas être incorporés dans un corps de méthode. Cela signifie que toutes les violations d’une règle particulière sont supprimées si vous ajoutez l’attribut <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> à la méthode.
 
-Dans certains cas, vous souhaiterez peut-être supprimer une instance particulière de la violation, par exemple afin que le code futur ne soit pas automatiquement exempté de la règle d’analyse du code. Certaines règles d’analyse du code vous permettent de le faire à l’aide de la propriété `MessageId` de l’attribut <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>. En général, les règles héritées pour les violations sur un symbole particulier (une variable locale ou un paramètre) respectent la propriété `MessageId`. [Ca1500 : VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500-variable-names-should-not-match-field-names.md) est un exemple de cette règle. Toutefois, les règles héritées pour les violations sur du code exécutable (sans symbole) ne respectent pas la propriété `MessageId`. En outre, les analyseurs .NET Compiler Platform (« Roslyn ») ne respectent pas la propriété `MessageId`.
+Dans certains cas, vous souhaiterez peut-être supprimer une instance particulière de la violation, par exemple afin que le code futur ne soit pas automatiquement exempté de la règle d’analyse du code. Certaines règles d’analyse du code vous permettent de le faire à l’aide de la propriété `MessageId` de l’attribut <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>. En général, les règles héritées pour les violations sur un symbole particulier (une variable locale ou un paramètre) respectent la propriété `MessageId`. [Ca1500 : VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500.md) est un exemple de cette règle. Toutefois, les règles héritées pour les violations sur du code exécutable (sans symbole) ne respectent pas la propriété `MessageId`. En outre, les analyseurs .NET Compiler Platform (« Roslyn ») ne respectent pas la propriété `MessageId`.
 
-Pour supprimer une violation de symbole particulière d’une règle, spécifiez le nom de symbole pour la propriété `MessageId` de l’attribut <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>. L’exemple suivant montre le code avec deux violations de [ca1500 : VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500-variable-names-should-not-match-field-names.md)&mdash;one pour la variable `name` et une pour la variable `age`. Seule la violation pour le symbole `age` est supprimée.
+Pour supprimer une violation de symbole particulière d’une règle, spécifiez le nom de symbole de la propriété `MessageId` de l’attribut <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute>. L’exemple suivant montre le code avec deux violations de [ca1500 : VariableNamesShouldNotMatchFieldNames](../code-quality/ca1500.md) &mdash;one pour la variable `name` et une pour la variable `age`. Seule la violation pour le symbole `age` est supprimée.
 
 ```vb
 Public Class Animal
@@ -151,19 +151,19 @@ public class Animal
 
 Les compilateurs de code managé et certains outils tiers génèrent du code pour faciliter le développement rapide de code. Le code généré par le compilateur qui apparaît dans les fichiers sources est généralement marqué avec l’attribut `GeneratedCodeAttribute`.
 
-Vous pouvez choisir de supprimer les avertissements et les erreurs d’analyse du code pour le code généré. Pour plus d’informations sur la suppression de ces avertissements et erreurs, voir [How à : Supprimer les avertissements pour le code généré @ no__t-0.
+Vous pouvez choisir de supprimer les avertissements et les erreurs d’analyse du code pour le code généré. Pour plus d’informations sur la façon de supprimer de tels avertissements et erreurs, consultez [Comment : supprimer des avertissements pour le code généré](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md).
 
 > [!NOTE]
 > L’analyse du code ignore `GeneratedCodeAttribute` lorsqu’elle est appliquée à un assembly entier ou à un paramètre unique.
 
 ## <a name="global-level-suppressions"></a>Suppressions au niveau global
 
-L’outil d’analyse du code managé examine les attributs `SuppressMessage` qui sont appliqués au niveau de l’assembly, du module, du type, du membre ou du paramètre. Il déclenche également des violations sur les ressources et les espaces de noms. Ces violations doivent être appliquées au niveau global et sont étendues et ciblées. Par exemple, le message suivant supprime une violation d’espace de noms :
+L’outil d’analyse du code managé examine `SuppressMessage` attributs appliqués au niveau de l’assembly, du module, du type, du membre ou du paramètre. Il déclenche également des violations sur les ressources et les espaces de noms. Ces violations doivent être appliquées au niveau global et sont étendues et ciblées. Par exemple, le message suivant supprime une violation d’espace de noms :
 
 `[module: SuppressMessage("Microsoft.Design", "CA1020:AvoidNamespacesWithFewTypes", Scope = "namespace", Target = "MyNamespace")]`
 
 > [!NOTE]
-> Quand vous supprimez un avertissement avec la portée `namespace`, il supprime l’avertissement par rapport à l’espace de noms lui-même. Elle ne supprime pas l’avertissement par rapport aux types dans l’espace de noms.
+> Lorsque vous supprimez un avertissement avec la portée `namespace`, il supprime l’avertissement sur l’espace de noms lui-même. Elle ne supprime pas l’avertissement par rapport aux types dans l’espace de noms.
 
 Toute suppression peut être exprimée en spécifiant une portée explicite. Ces suppressions doivent résider au niveau global. Vous ne pouvez pas spécifier la suppression au niveau du membre en décorant un type.
 

@@ -1,25 +1,25 @@
 ---
-title: Concepteur de flux de travail - concepteurs d’activités de Machine à États
+title: Concepteurs d’activités de machine à état Concepteur de flux de travail
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 97f0bff5-7e48-4914-8f04-8015a1c6bfae
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: de928ff095c5700506060b9fceb609003f1b9ab1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+author: jillre
+ms.openlocfilehash: b5ea5034f5967b5ba94b57746fd30bf7f1d750e6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62809519"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649918"
 ---
 # <a name="state-machine-activity-designers"></a>Concepteurs d'activités d'ordinateur d'état
 
-Concepteur de workflow inclut un nombre de concepteurs d’activités que vous pouvez utiliser lors de la construction de vos flux de travail. Cette section contient les concepteurs d'activités fournis par le système utilisés pour créer et gérer des workflows de machine à états. Les rubriques suivantes décrivent ces concepteurs et fournissent des conseils sur la façon de les utiliser.
+Concepteur de flux de travail comprend un certain nombre de concepteurs d’activités que vous pouvez utiliser lors de la construction de vos flux de travail. Cette section contient les concepteurs d'activités fournis par le système utilisés pour créer et gérer des workflows de machine à états. Les rubriques suivantes décrivent ces concepteurs et fournissent des conseils sur la façon de les utiliser.
 
-## <a name="reference"></a>Référence
+## <a name="reference"></a>Reference
  <xref:System.Activities.Statements.StateMachine>
 
  <xref:System.Activities.Statements.State>
@@ -45,6 +45,6 @@ Concepteur de workflow inclut un nombre de concepteurs d’activités que vous p
 
  [Transaction](../workflow-designer/transaction-activity-designers.md)
 
- [Collection](../workflow-designer/collection-activity-designers.md)
+ [Regroupement](../workflow-designer/collection-activity-designers.md)
 
  [Gestion des erreurs](../workflow-designer/error-handling-activity-designers.md)

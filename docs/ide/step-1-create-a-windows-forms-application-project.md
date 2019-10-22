@@ -1,5 +1,5 @@
 ---
-title: 'Étape 1 : Créer un projet d’application Windows Forms'
+title: 'Étape 1 : créer un projet d’application Windows Forms'
 ms.date: 08/30/2019
 ms.assetid: 16ac2422-e720-4e3a-b511-bc2a54201a86
 ms.topic: tutorial
@@ -10,14 +10,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be7b9bd67ed88b9f59ed279211bf15c96ae59569
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 897c4ba0bfa46e73115f8288770d088346498dee
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71119020"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516698"
 ---
-# <a name="step-1-create-a-windows-forms-app-project"></a>Étape 1 : Créer un projet d’application Windows Forms
+# <a name="step-1-create-a-windows-forms-app-project"></a>Étape 1 : créer un projet d’application Windows Forms
 
 Lorsque vous créez une visionneuse d’images, la première étape consiste à créer un projet d’application Windows Forms.
 
@@ -50,7 +50,7 @@ Lorsque vous créez une visionneuse d’images, la première étape consiste à 
 
    Après avoir appliqué le filtre de **type de projet** , choisissez le modèle d' **application Windows Forms (.NET Framework)** pour C# ou Visual Basic, puis choisissez **suivant**.
 
-   ![Choisir le C# modèle pour l’application Windows Forms (.NET Framework)](./media/create-new-project-search-winforms-filtered.png)
+   ![Choisissez le modèle C# ou Visual Basic pour l’application Windows Forms (.NET Framework)](./media/create-new-project-search-winforms-filtered.png)
 
    > [!NOTE]
    > Si vous ne voyez pas le modèle d' **application Windows Forms (.NET Framework)** , vous pouvez l’installer à partir de la fenêtre **créer un nouveau projet** . Dans le **Vous ne trouvez pas ce que vous cherchez ?** , choisissez le lien **Installer plus d’outils et de fonctionnalités**.
@@ -73,7 +73,7 @@ Visual Studio crée une solution pour votre application. Une solution agit comme
 
 1. L’environnement de développement contient trois fenêtres : une fenêtre principale, l’**Explorateur de solutions** et la fenêtre **Propriétés**.
 
-     Si l’une de ces fenêtres est manquante, vous pouvez restaurer la disposition de fenêtre par défaut. Dans la barre de menus, choisissez **fenêtre** > **Réinitialiser la disposition de fenêtre**.
+     Si l’une de ces fenêtres est manquante, vous pouvez restaurer la disposition de fenêtre par défaut. Dans la barre de menus, choisissez **fenêtre**  > **Réinitialiser la disposition de fenêtre**.
 
      Vous pouvez également afficher les fenêtres à l'aide des commandes de menu. Dans la barre de menus, choisissez **Affichage** > **Fenêtre Propriétés** ou **Explorateur de solutions**.
 
@@ -105,17 +105,17 @@ Visual Studio crée une solution pour votre application. Une solution agit comme
      Vous pouvez également cliquer sur le bouton **enregistrer tout** de la barre d’outils, comme le montre l’image suivante.
 
      ![Enregistrer tout, bouton de barre d’outils](../ide/media/express_iconsaveall.png)<br/>
-     ***Enregistrer tout*** *bouton de barre d’outils*
+     Bouton ***enregistrer tout*** de la *barre d’outils*
 
      Visual Studio renseigne automatiquement le nom du dossier et le nom du projet, puis crée le projet dans votre dossier de projets.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-* Pour passer à l’étape suivante du didacticiel, **consultez [étape 2 : Exécutez votre application](../ide/step-2-run-your-program.md).**
+* Pour passer à l’étape suivante du didacticiel, consultez **[étape 2 : exécuter votre application](../ide/step-2-run-your-program.md)** .
 
-* Pour revenir à la rubrique de vue d’ensemble, consultez [Tutoriel 1 : Créer une visionneuse d’images](../ide/tutorial-1-create-a-picture-viewer.md).
+* Pour revenir à la rubrique de présentation, consultez [Tutoriel 1 : créer une visionneuse d’images](../ide/tutorial-1-create-a-picture-viewer.md).
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Tutoriel 2 : Créer un questionnaire mathématique chronométré](tutorial-2-create-a-timed-math-quiz.md)
-* [Tutoriel 3 : Créer un jeu de combinaisons](tutorial-3-create-a-matching-game.md)
+* [Didacticiel 2 : créer un questionnaire mathématique chronométré](tutorial-2-create-a-timed-math-quiz.md)
+* [Didacticiel 3 : créer un jeu de combinaisons](tutorial-3-create-a-matching-game.md)

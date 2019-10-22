@@ -1,5 +1,5 @@
 ---
-title: 'CA1034 : Types imbriqués ne doivent pas être visibles | Microsoft Docs'
+title: 'CA1034 : les types imbriqués ne doivent pas être visibles | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - CA1034
 ms.assetid: e9789a2c-2540-42a1-8705-ae7104011194
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 915b5807f7b14269acf4b7509ffceaecfb13af47
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 33e7ea6aaefcaf5b6cbf0bf8c52ade0b9e68a549
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62536397"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661856"
 ---
 # <a name="ca1034-nested-types-should-not-be-visible"></a>CA1034 : Les types imbriqués ne doivent pas être visibles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,23 +29,23 @@ ms.locfileid: "62536397"
 |-|-|
 |TypeName|NestedTypesShouldNotBeVisible|
 |CheckId|CA1034|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
  Un type visible de l’extérieur contient une déclaration de type visible de l’extérieur. Les énumérations imbriquées et les types protégés sont exemptés de cette règle.
 
 ## <a name="rule-description"></a>Description de la règle
- Un type imbriqué est un type déclaré dans l’étendue d’un autre type. Les types imbriqués sont utiles pour encapsuler les détails d’implémentation privée du type conteneur. Utilisés à cette fin, les types imbriqués ne doivent pas être visibles de l'extérieur.
+ Un type imbriqué est un type déclaré dans la portée d’un autre type. Les types imbriqués sont utiles pour l’encapsulation des détails de l’implémentation privée du type conteneur. Utilisés à cette fin, les types imbriqués ne doivent pas être visibles de l'extérieur.
 
- N’utilisez pas les types imbriqués extérieurement visibles pour le regroupement logique ou pour éviter les collisions de nom ; au lieu de cela, utilisez des espaces de noms.
+ N’utilisez pas de types imbriqués visibles de l’extérieur pour le regroupement logique ou pour éviter les conflits de noms ; Utilisez plutôt des espaces de noms.
 
- Les types imbriqués incluent la notion d’accessibilité des membres, certains programmeurs ne comprennent pas clairement.
+ Les types imbriqués incluent la notion d’accessibilité des membres, que certains programmeurs ne comprennent pas clairement.
 
  Les types protégés peuvent être utilisés dans les sous-classes et les types imbriqués dans des scénarios de personnalisation avancée.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Si vous n’envisagez pas de type imbriqué à être visible de l’extérieur, modifiez l’accessibilité du type. Sinon, supprimez le type imbriqué de son parent. Si l’objectif de l’imbrication consiste à catégoriser le type imbriqué, utilisez un espace de noms pour créer la hiérarchie à la place.
+ Si vous ne souhaitez pas que le type imbriqué soit visible de l’extérieur, modifiez l’accessibilité du type. Sinon, supprimez le type imbriqué de son parent. Si le but de l’imbrication est de catégoriser le type imbriqué, utilisez un espace de noms pour créer la hiérarchie à la place.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Ne supprimez aucun avertissement de cette règle.

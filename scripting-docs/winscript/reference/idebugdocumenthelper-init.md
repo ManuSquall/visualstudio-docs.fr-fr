@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::Init | Microsoft Docs
+title: 'IDebugDocumentHelper :: init | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3b399f51fc042aa1ed297ab30a7bf2c9bc4befca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 13e6379052707aa44c0fa52f4cb30db2c4c4fa99
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000994"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576863"
 ---
 # <a name="idebugdocumenthelperinit"></a>IDebugDocumentHelper::Init
-Le `Init` méthode Initialise une assistance de document de débogage avec un nom et d’attributs initiaux.  
+La méthode `Init` Initialise une application d’assistance de document de débogage avec un nom et des attributs initiaux.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -40,30 +40,30 @@ HRESULT Init(
   
 #### <a name="parameters"></a>Paramètres  
  `pda`  
- [in] L’application de débogage associée à ce document.  
+ dans Application de débogage associée à ce document.  
   
  `pszShortName`  
- [in] Chaîne se terminant par null qui contient le nom court du document.  
+ dans Chaîne terminée par le caractère null qui contient le nom abrégé du document.  
   
  `pszLongName`  
- [in] Chaîne se terminant par null qui contient le nom long du document.  
+ dans Chaîne terminée par le caractère null qui contient le nom long du document.  
   
  `docAttr`  
- [in] Spécifie les attributs du document texte.  
+ dans Spécifie des attributs de document texte.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode Initialise une assistance de document de débogage avec un nom et d’attributs initiaux.  
+ Cette méthode initialise une application d’assistance de document de débogage avec un nom et des attributs initiaux.  
   
- Ce document n’apparaît pas dans l’arborescence jusqu'à ce que `IDebugDocumentHelper::Attach` est appelée.  
+ Ce document n’apparaît pas dans l’arborescence tant que `IDebugDocumentHelper::Attach` n’est pas appelé.  
   
 ## <a name="see-also"></a>Voir aussi  
- [IDebugDocumentHelper::Attach](../../winscript/reference/idebugdocumenthelper-attach.md)   
- [Interface IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)   
+ [IDebugDocumentHelper :: Attach](../../winscript/reference/idebugdocumenthelper-attach.md)    
+ @No__t_1 de l' [interface IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)  
  [Constantes TEXT_DOC_ATTR](../../winscript/reference/text-doc-attr-constants.md)

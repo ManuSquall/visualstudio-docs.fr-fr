@@ -3,17 +3,17 @@ title: Propriétés dynamiques LINQ to XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0455f47c-4a68-4f2e-a3f8-dd1d85b99012
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 181e9e4fb86a0348c0b5adb1d26a0a4e4e1721bb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 5993639a1bd6db1b814615bc75c1a57b64212185
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62893209"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635264"
 ---
 # <a name="linq-to-xml-dynamic-properties"></a>Propriétés dynamiques LINQ to XML
 
@@ -29,7 +29,7 @@ En ce qui concerne leurs valeurs résolues, les propriétés dynamiques dans cet
 
 Toutes les propriétés dynamiques qui retournent une valeur indexée de type <xref:System.Collections.Generic.IEnumerable%601> utilisent l’exécution différée. Pour plus d’informations sur l’exécution différée, consultez [Introduction aux requêtes LINQ (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries).
 
-## <a name="reference"></a>Référence
+## <a name="reference"></a>Reference
 
 - <xref:System.Xml.Linq>
 - <xref:System.Xml.Linq.XElement?displayProperty=fullName>

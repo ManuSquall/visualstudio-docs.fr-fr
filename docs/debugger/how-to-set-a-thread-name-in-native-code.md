@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Définir un nom de Thread en Code natif | Microsoft Docs'
+title: 'Comment : définir un nom de thread dans du code natif | Microsoft Docs'
 ms.date: 12/17/2018
 ms.topic: conceptual
 dev_langs:
@@ -16,32 +16,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d37a028fb5af099484d81374e52cfd12af727f94
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a89dce28f33bef0ffdb13d6254b2ac6b86ac25db
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62847536"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72589033"
 ---
-# <a name="how-to-set-a-thread-name-in-native-code"></a>Procédure : définir un nom de thread dans du code natif
-Il est possible d'attribuer des noms aux threads dans toutes les éditions de Visual Studio. Ces noms sont utiles pour identifier les threads d’intérêt dans le **Threads** fenêtre lors du débogage d’un processus en cours d’exécution. Avoir nommé évidente de threads peut également être utile lors de l’exécution via l’inspection de vidage sur incident et de l’analyse des performances de capture à l’aide de divers outils de débogage post-mortem.
+# <a name="how-to-set-a-thread-name-in-native-code"></a>Comment : définir un nom de thread dans le code natif
+Il est possible d'attribuer des noms aux threads dans toutes les éditions de Visual Studio. L’attribution de noms aux threads est utile pour identifier les threads intéressants dans la fenêtre **Threads** lors du débogage d’un processus en cours d’exécution. Le fait de disposer de threads de nom reconnaissables peut également être utile pour effectuer un débogage après un vidage sur incident et lors de l’analyse des captures de performances à l’aide de différents outils.
 
-## <a name="ways-to-set-a-thread-name"></a>Méthodes pour définir un nom de thread
+## <a name="ways-to-set-a-thread-name"></a>Comment définir un nom de thread
 
-Il existe deux façons de définir un nom de thread. La première consiste à utiliser le [SetThreadDescription](https://docs.microsoft.com/windows/desktop/api/processthreadsapi/nf-processthreadsapi-setthreaddescription) (fonction). La deuxième consiste à lever une exception particulière que le débogueur Visual Studio est attaché au processus. Chaque approche présente des avantages et inconvénients.
+Il existe deux façons de définir un nom de thread. La première consiste à utiliser la fonction [SetThreadDescription](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-setthreaddescription) . La seconde consiste à lever une exception particulière alors que le débogueur Visual Studio est attaché au processus. Chaque approche présente des avantages et des inconvénients. L’utilisation de `SetThreadDescription` est prise en charge à partir de Windows 10, version 1607 ou Windows Server 2016.
 
-Il est important de souligner que _à la fois_ approches peuvent être utilisés ensemble, si vous le souhaitez, dans la mesure où les mécanismes par lesquels ils travaillent sont indépendants des uns des autres.
+Il est à noter que _les deux_ approches peuvent être utilisées ensemble, si vous le souhaitez, étant donné que les mécanismes par lesquels elles fonctionnent sont indépendants les uns des autres.
 
 ### <a name="set-a-thread-name-by-using-setthreaddescription"></a>Définir un nom de thread à l’aide de `SetThreadDescription`
 
 Avantages :
-* Noms de thread sont visibles lors du débogage dans Visual Studio, quel que soit ou non le débogueur a été attaché au processus au moment où SetThreadDescription est appelée.
-* Noms de thread sont visibles lorsque vous effectuez le débogage post-mortem en chargeant un vidage sur incident dans Visual Studio.
-* Noms de thread sont également visibles lors de l’utilisation d’autres outils, tels que le [WinDbg](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-tools) débogueur et le [Windows Performance Analyzer](https://docs.microsoft.com/windows-hardware/test/wpt/windows-performance-analyzer) Analyseur de performances.
+* Les noms de threads sont visibles lors du débogage dans Visual Studio, que le débogueur ait ou non été attaché au processus au moment de l’appel de SetThreadDescription.
+* Les noms de threads sont visibles lors de l’exécution d’un débogage après le chargement d’un vidage sur incident dans Visual Studio.
+* Les noms de thread sont également visibles lors de l’utilisation d’autres outils, tels que le débogueur [WinDbg](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-tools) et l’analyseur de performances [Windows Performance Analyzer](https://docs.microsoft.com/windows-hardware/test/wpt/windows-performance-analyzer) .
 
 Avertissements :
-* Noms de thread sont visibles uniquement dans Visual Studio 2017 version 15.6 et versions ultérieures.
-* Lorsque le fichier de vidage du débogage d’un incident post-mortem, les noms de thread sont visibles uniquement si l’incident a été créé sur Windows 10 version 1607, Windows Server 2016 ou versions ultérieures de Windows.
+* Les noms de threads sont visibles uniquement dans Visual Studio 2017 version 15,6 et versions ultérieures.
+* Lors du débogage d’un fichier de vidage sur incident, les noms de threads sont visibles uniquement si l’incident a été créé sur Windows 10 version 1607, Windows Server 2016 ou versions ultérieures de Windows.
 
 *Exemple :*
 
@@ -63,18 +63,18 @@ int main()
 
 ### <a name="set-a-thread-name-by-throwing-an-exception"></a>Définir un nom de thread en levant une exception
 
-Un autre pour définir un nom de thread dans votre programme consiste à communiquer le nom de thread souhaité pour le débogueur Visual Studio en levant une exception spécialement configuré.
+Une autre façon de définir un nom de thread dans votre programme consiste à communiquer le nom de thread souhaité au débogueur Visual Studio en levant une exception spécialement configurée.
 
 Avantages :
 * Fonctionne dans toutes les versions de Visual Studio.
 
 Avertissements :
-* Fonctionne uniquement si le débogueur est attaché au moment de que l’utilisation de la méthode basée sur l’exception.
-* Les noms de thread définies à l’aide de cette méthode ne sera pas disponibles dans les dumps ou des outils d’analyse de performances.
+* Fonctionne uniquement si le débogueur est attaché au moment où la méthode basée sur une exception est utilisée.
+* Les noms de thread définis à l’aide de cette méthode ne seront pas disponibles dans les outils de vidage ou d’analyse des performances.
 
 *Exemple :*
 
-Le `SetThreadName` fonction ci-dessous illustre cette approche basée sur l’exception. Notez que le nom de thread est copié automatiquement vers le thread, afin que la mémoire pour le `threadName` paramètre peut être libéré après le `SetThreadName` appel est terminé.
+La fonction `SetThreadName` présentée ci-dessous illustre cette approche basée sur une exception. Notez que le nom du thread sera automatiquement copié dans le thread, afin que la mémoire pour le paramètre `threadName` puisse être libérée après la fin de l’appel de `SetThreadName`.
 
 ```C++
 //
@@ -111,4 +111,4 @@ void SetThreadName(DWORD dwThreadID, const char* threadName) {
 ## <a name="see-also"></a>Voir aussi
 - [Déboguer les applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Affichage des données dans le débogueur](../debugger/viewing-data-in-the-debugger.md)
-- [Guide pratique pour définir un nom de thread dans du code managé](../debugger/how-to-set-a-thread-name-in-managed-code.md)
+- [Guide pratique pour définir un nom de thread dans le code managé](../debugger/how-to-set-a-thread-name-in-managed-code.md)

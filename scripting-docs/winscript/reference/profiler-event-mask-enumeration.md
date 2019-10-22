@@ -15,15 +15,15 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f7230e65e5559d53e56cf6424a34dd44aa4edda7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c1e1e7f3b604832014cb23245b105756d1126c5b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62831640"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572283"
 ---
-# <a name="profilereventmask-enumeration"></a>PROFILER_EVENT_MASK, énumération
-Indique les types d’événements qui devraient être profilées.  
+# <a name="profiler_event_mask-enumeration"></a>PROFILER_EVENT_MASK, énumération
+Indique les types d’événements qui doivent être profilés.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -44,13 +44,13 @@ typedef enum {
   
 |Membre|Description|  
 |------------|-----------------|  
-|PROFILER_EVENT_MASK_TRACE_SCRIPT_FUNCTION_CALL|Fonctions de profils qui sont définies dans le script écrit par l’utilisateur et de code dynamique.|  
-|PROFILER_EVENT_MASK_TRACE_NATIVE_FUNCTION_CALL|Les profils des fonctions natives qui sont définies par le moteur de script.|  
-|PROFILER_EVENT_MASK_TRACE_ALL|Les profils de toutes les fonctions de moteur de script et définis par l’utilisateur, à l’exclusion des appels dans le modèle DOM (Document Object).|  
-|PROFILER_EVENT_MASK_TRACE_DOM_FUNCTION_CALL|Fonctions de profils qui appellent dans le DOM.|  
-|PROFILER_EVENT_MASK_TRACE_ALL_WITH_DOM|Les profils de toutes les fonctions, y compris les appels dans le DOM.|  
+|PROFILER_EVENT_MASK_TRACE_SCRIPT_FUNCTION_CALL|Les fonctions de profil définies dans le script écrit par l’utilisateur et le code dynamique.|  
+|PROFILER_EVENT_MASK_TRACE_NATIVE_FUNCTION_CALL|Profile les fonctions natives définies par le moteur de script.|  
+|PROFILER_EVENT_MASK_TRACE_ALL|Profile toutes les fonctions du moteur de script et des fonctions définies par l’utilisateur, à l’exception des appels dans le Document Object Model (DOM).|  
+|PROFILER_EVENT_MASK_TRACE_DOM_FUNCTION_CALL|Fonctions de profils qui appellent le DOM.|  
+|PROFILER_EVENT_MASK_TRACE_ALL_WITH_DOM|Profile toutes les fonctions, y compris les appels dans le DOM.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Constantes de Profiler de Script actif, énumérations et structures](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)   
- [IActiveScriptProfilerControl::SetProfilerEventMask](../../winscript/reference/iactivescriptprofilercontrol-setprofilereventmask.md)   
+ [Constantes, énumérations et structures actives du profileur de script actif](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)    
+ [IActiveScriptProfilerControl :: SetProfilerEventMask](../../winscript/reference/iactivescriptprofilercontrol-setprofilereventmask.md)    
  [IActiveScriptProfilerControl::StartProfiling](../../winscript/reference/iactivescriptprofilercontrol-startprofiling.md)

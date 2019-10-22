@@ -1,44 +1,44 @@
 ---
-title: 'Procédure pas à pas : À l’aide des fonctionnalités de l’éditeur XML'
+title: 'Procédure pas à pas : utilisation des fonctionnalités de l’éditeur XML'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ea8dc357-2e66-455a-aec2-7ccaccfc9adf
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e443cf23b8726161a4252e6cef3b77f5d3c37bb
-ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
+ms.openlocfilehash: 5ce7997e1002ced50dc4d8203d522feb0a6bbb49
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67624196"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72604456"
 ---
-# <a name="walkthrough-use-xml-editor-features"></a>Procédure pas à pas : Utiliser les fonctionnalités de l’éditeur XML
+# <a name="walkthrough-use-xml-editor-features"></a>Procédure pas à pas : utiliser les fonctionnalités de l’éditeur XML
 
-Les étapes de cette procédure pas à pas expliquent la création d'un document XML. La procédure pas à pas utilise également certaines des fonctionnalités de l’éditeur XML qui font un outil précieux pour la création de XML.
+Les étapes de cette procédure pas à pas expliquent la création d'un document XML. La procédure pas à pas utilise également certaines des fonctionnalités de l’éditeur XML qui le rendent précieux pour la création XML.
 
 > [!NOTE]
-> Avant d’entamer la procédure pas à pas, enregistrez le *hireDate.xsd* fichier (inclus ci-dessous dans cette rubrique) sur votre ordinateur local.
+> Avant de commencer la procédure pas à pas, enregistrez le fichier *HireDate. xsd* (inclus ci-dessous dans cette rubrique) sur votre ordinateur local.
 
 ## <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Pour créer un nouveau fichier XML et l’associer à un schéma XML
 
-1. Sur le **fichier** menu, pointez sur **New**, puis cliquez sur **fichier**.
+1. Dans le menu **fichier** , pointez sur **nouveau**, puis cliquez sur **fichier**.
 
-2. Sélectionnez **fichier XML** dans le **modèles** volet et cliquez sur **Open**.
+2. Sélectionnez **fichier XML** dans le volet **modèles** , puis cliquez sur **ouvrir**.
 
      Un nouveau fichier s'ouvre dans l'éditeur. Il contient une déclaration XML par défaut, `<?xml version="1.0" encoding="utf-8">`.
 
-3. Dans la fenêtre de propriétés de document, cliquez sur le bouton Parcourir ( **...** ) sur le **schémas** champ.
+3. Dans la fenêtre Propriétés du document, cliquez sur le bouton Parcourir ( **...** ) du champ **schémas** .
 
-     Le **schémas XSD** boîte de dialogue s’affiche.
+     La boîte de dialogue **schémas XSD** s’affiche.
 
 4. Cliquez sur **Ajouter**.
 
-     Le **ouvrir le schéma XSD** boîte de dialogue s’affiche.
+     La boîte de dialogue **ouvrir le schéma XSD** s’affiche.
 
-5. Sélectionnez le *hireDate.xsd* de fichier et cliquez sur **Open**.
+5. Sélectionnez le fichier *HireDate. xsd* , puis cliquez sur **ouvrir**.
 
 6. Cliquez sur **OK**.
 
@@ -58,59 +58,59 @@ Les étapes de cette procédure pas à pas expliquent la création d'un document
 
     - **employé** pour ajouter l’élément racine.
 
-2. Sélectionnez  **&lt;!--** pour ajouter le nœud de commentaire et appuyez sur **entrée**.
+2. Sélectionnez **&lt; !--** pour ajouter un nœud de commentaire et appuyez sur **entrée**.
 
      L'éditeur insère une balise de fin de commentaire et place le curseur entre les balises de début et de fin du commentaire.
 
-3. Tapez dans **fichier Test XML**.
+3. Tapez dans **test XML file**.
 
-4. Sur une nouvelle ligne, tapez `<`, puis sélectionnez **employé** à partir de la liste des membres.
+4. Sur une nouvelle ligne, tapez `<`, puis sélectionnez **Employee** dans la liste des membres.
 
      L'éditeur ajoute le début d'un élément XML, `<employee`. À ce stade, vous pouvez ajouter des attributs à l'élément ou fermer la balise de fin en entrant `>`.
 
 5. Entrez `>` pour fermer la balise.
 
-6. L'éditeur ajoute la balise de fin. La balise de fin est ajoutée et signalée par un soulignement ondulé indiquant une erreur de validation Le **info-bulle** affiche le message : **L’élément 'employee' contenu est incomplet. Attendu 'ID'** .
+6. L'éditeur ajoute la balise de fin. La balise de fin est ajoutée et signalée par un soulignement ondulé indiquant une erreur de validation L' **info-bulle** affiche le message : **le contenu de l’élément’Employee’est incomplet. 'ID’attendu**.
 
-7. Type `<` et sélectionnez **ID** à partir de la liste des membres. Entrez ensuite `>`.
+7. Tapez `<` et sélectionnez **ID** dans la liste des membres. Entrez ensuite `>`.
 
      L'éditeur ajoute l'élément XML `<ID></ID>` et place le curseur après la balise de début ID.
 
-8. Type **abc**.
+8. Tapez **ABC**.
 
-     Le **abc** texte a une ligne ondulée. Le **info-bulle** affiche le message : **L’élément 'ID' a une valeur non valide selon son type de données**.
+     Le texte **ABC** est souligné d’un trait ondulé. L' **info-bulle** affiche le message : **l’élément « ID » a une valeur non valide selon son type de données**.
 
-9. Avec le bouton droit sur l’élément ID et sélectionnez **atteindre la définition**.
+9. Cliquez avec le bouton droit sur l’élément ID et sélectionnez **atteindre la définition**.
 
-     L’éditeur s’ouvre le *hireDate.xsd* fichier dans une nouvelle fenêtre de document et place le curseur sur la définition d’élément de schéma ID.
+     L’éditeur ouvre le fichier *HireDate. xsd* dans une nouvelle fenêtre de document et positionne le curseur sur la définition de l’élément de schéma ID.
 
-10. Revenez dans le fichier XML et remplacez le **abc** texte avec **123**.
+10. Revenez au fichier XML et remplacez le texte **ABC** par **123**.
 
-     La ligne ondulée et **info-bulle** disparaissent sous la valeur ID de l’élément. Le **info-bulle** pour la fin de l’employé balise affiche maintenant le message : **L’élément 'employee' contenu est incomplet. Attendu 'hire-date'** .
+     Le soulignement ondulé et l' **info-bulle** sont effacés sous la valeur de l’élément ID. L' **info-bulle** de la balise de fin Employee affiche maintenant le message : **l’élément « Employee » a un contenu incomplet. 'Hire-date’attendu**.
 
-11. Placez le curseur après la balise de fin ID, entrez `<`, sélectionnez **hire-date** dans la liste des membres, puis tapez dans `>`.
+11. Placez le curseur après la balise de fin ID, tapez `<`, sélectionnez **Hire-date** dans la liste des membres, puis tapez `>`.
 
      L’éditeur ajoute l’élément XML `<hire-date></hire-date>` et place le curseur après l’étiquette de début hire-date.
 
-12. Tapez dans **2003-01-10** pour la valeur de l’élément hire-date.
+12. Tapez **2003-01-10** pour la valeur Hire-date.
 
 ## <a name="to-format-the-xml-document"></a>Pour mettre en forme le document XML
 
-- Sélectionnez le **mettre le Document** sur la barre d’outils de l’éditeur XML, ou appuyez sur bouton **Ctrl**+**E**,**D**.
+- Sélectionnez le bouton **mettre le document en forme** dans la barre d’outils de l’éditeur XML, ou appuyez sur **CTRL** +**E**,**D**.
 
-   ![Bouton de document de format XML dans Visual Studio](media/format-xml-document.png)
+   ![Bouton mettre en forme le document XML dans Visual Studio](media/format-xml-document.png)
 
    Le document XML est remis en forme.
 
 ## <a name="to-save-the-xml-document"></a>Pour enregistrer le document XML
 
-1. À partir de la **fichier** menu, sélectionnez **Enregistrer sous**.
+1. Dans le menu **fichier** , sélectionnez **Enregistrer sous**.
 
-     Le **enregistrer le fichier sous** boîte de dialogue s’affiche. Le nom de fichier par défaut est *« XMLFile1 »* .
+     La boîte de dialogue **enregistrer le fichier sous** s’affiche. Le nom de fichier par défaut est *« XMLFile1 »* .
 
-2. Entrez le nom de fichier et l’emplacement du document XML et cliquez sur **enregistrer**.
+2. Entrez le nom de fichier et l’emplacement du document XML, puis cliquez sur **Enregistrer**.
 
-## <a name="hiredatexsd-file"></a>fichier hireDate.xsd
+## <a name="hiredatexsd-file"></a>fichier HireDate. xsd
 
 Le fichier de schéma suivant est utilisé dans cette procédure pas à pas :
 

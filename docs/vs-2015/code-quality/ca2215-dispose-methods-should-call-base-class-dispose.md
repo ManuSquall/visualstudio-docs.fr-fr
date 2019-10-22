@@ -1,5 +1,5 @@
 ---
-title: 'CA2215 : Méthodes Dispose doivent appeler dispose de la classe de base | Microsoft Docs'
+title: 'Ca2215 : les méthodes dispose doivent appeler la classe de base dispose | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -13,37 +13,37 @@ helpviewer_keywords:
 - CA2215
 ms.assetid: c772e7a6-a87e-425c-a70e-912664ae9042
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: bc934afd9289a6bce425084f3588a7e912baf9b9
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 89f3705169fb9d28a1ec773671d460f00b98d892
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65681192"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72662854"
 ---
-# <a name="ca2215-dispose-methods-should-call-base-class-dispose"></a>CA2215 : Les méthodes Dispose doivent appeler la méthode Dispose de la classe de base
+# <a name="ca2215-dispose-methods-should-call-base-class-dispose"></a>CA2215 : Les méthodes Dispose doivent appeler la fonction Dispose de la classe de base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|DisposeMethodsShouldCallBaseClassDispose|
 |CheckId|CA2215|
-|Category|Microsoft.Usage|
+|Category|Microsoft. usage|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
- Un type qui implémente <xref:System.IDisposable?displayProperty=fullName> hérite d’un type qui implémente également <xref:System.IDisposable>. Le <xref:System.IDisposable.Dispose%2A> méthode du type héritant n’appelle pas la <xref:System.IDisposable.Dispose%2A> méthode du type parent.
+ Un type qui implémente <xref:System.IDisposable?displayProperty=fullName> hérite d’un type qui implémente également <xref:System.IDisposable>. La méthode <xref:System.IDisposable.Dispose%2A> du type qui hérite n’appelle pas la méthode <xref:System.IDisposable.Dispose%2A> du type parent.
 
 ## <a name="rule-description"></a>Description de la règle
- Si un type hérite d’un type JETABLE, il doit appeler la <xref:System.IDisposable.Dispose%2A> méthode du type de base à partir de son propre <xref:System.IDisposable.Dispose%2A> (méthode). Appel de la méthode de type de base Dispose garantit que toutes les ressources créées par le type de base sont publiées.
+ Si un type hérite d’un type supprimable, il doit appeler la méthode <xref:System.IDisposable.Dispose%2A> du type de base à partir de sa propre méthode <xref:System.IDisposable.Dispose%2A>. L’appel de la méthode de type de base dispose garantit que toutes les ressources créées par le type de base sont libérées.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, appelez `base`.<xref:System.IDisposable.Dispose%2A> dans votre <xref:System.IDisposable.Dispose%2A> (méthode).
+ Pour corriger une violation de cette règle, appelez `base`. <xref:System.IDisposable.Dispose%2A> dans votre méthode <xref:System.IDisposable.Dispose%2A>.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Il est possible de supprimer un avertissement de cette règle si l’appel à `base`.<xref:System.IDisposable.Dispose%2A> se produit à un niveau plus profond appelant que la règle de contrôle.
+ Il est possible de supprimer sans risque un avertissement de cette règle si l’appel à `base`. <xref:System.IDisposable.Dispose%2A> se produit à un niveau d’appel plus profond que la règle vérifie.
 
 ## <a name="example"></a>Exemple
  L’exemple suivant illustre un type `TypeA` qui implémente <xref:System.IDisposable>.
@@ -51,9 +51,9 @@ ms.locfileid: "65681192"
  [!code-csharp[FxCop.Usage.IDisposablePattern#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.IDisposablePattern/cs/FxCop.Usage.IDisposablePattern.cs#1)]
 
 ## <a name="example"></a>Exemple
- L’exemple suivant illustre un type `TypeB` qui hérite du type `TypeA` et appelle correctement son <xref:System.IDisposable.Dispose%2A> (méthode).
+ L’exemple suivant montre un type `TypeB` qui hérite de type `TypeA` et appelle correctement sa méthode <xref:System.IDisposable.Dispose%2A>.
 
  [!code-vb[FxCop.Usage.IDisposableBaseCalled#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.IDisposableBaseCalled/vb/FxCop.Usage.IDisposableBaseCalled.vb#1)]
 
 ## <a name="see-also"></a>Voir aussi
- <xref:System.IDisposable?displayProperty=fullName> [Modèle de suppression](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)
+ <xref:System.IDisposable?displayProperty=fullName> [modèle de suppression](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)

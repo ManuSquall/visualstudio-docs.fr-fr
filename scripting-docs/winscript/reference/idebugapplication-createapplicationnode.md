@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::CreateApplicationNode | Microsoft Docs
+title: 'IDebugApplication :: CreateApplicationNode | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 02a15a67d8f8b6171e9f5893c7f8cd15f79776b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 13e94a561ca78781167843124a86febb3ef13da2
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991030"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573171"
 ---
 # <a name="idebugapplicationcreateapplicationnode"></a>IDebugApplication::CreateApplicationNode
-Crée un nouveau nœud d’application qui est associé à un fournisseur de document spécifique.  
+Crée un nouveau nœud d’application associé à un fournisseur de documents spécifique.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -37,17 +37,17 @@ HRESULT CreateApplicationNode(
   
 #### <a name="parameters"></a>Paramètres  
  `ppdanNew`  
- [out] Le nœud d’application associé à ce fournisseur de document.  
+ à Nœud d’application associé à ce fournisseur de documents.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
 ## <a name="remarks"></a>Notes  
- Le nouveau nœud de l’application n’est pas visible jusqu'à ce qu’il est attaché à un nœud parent.  
+ Le nouveau nœud d’application n’est pas visible tant qu’il n’est pas attaché à un nœud parent.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IDebugApplication](../../winscript/reference/idebugapplication-interface.md)

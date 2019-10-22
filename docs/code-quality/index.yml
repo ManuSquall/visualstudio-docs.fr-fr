@@ -1,0 +1,61 @@
+### YamlMime:Landing
+title: Analyse du code dans Visual Studio
+summary: Visual Studio fournit plusieurs outils pour analyser et améliorer la qualité du code.
+metadata:
+  title: Analyseurs de code
+  description: Découvrez comment Visual Studio peut vous aider à analyser la qualité du code.
+  ms.prod: visual-studio-windows
+  ms.technology: vs-ide-general
+  ms.topic: landing-page
+  author: gewarren
+  ms.author: gewarren
+  ms.date: 10/15/2019
+  ms.openlocfilehash: eb7be803a8c9751550f46880cfd485dac2850527
+  ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+  ms.translationtype: HT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 10/16/2019
+  ms.locfileid: "72450586"
+landingContent:
+- title: Analyser le code C et C++
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Analyser le code C et C++
+      url: code-analysis-for-c-cpp-overview.md
+  - linkListType: reference
+    links:
+    - text: Avertissements de l'analyse du code C++
+      url: code-analysis-for-c-cpp-warnings.md
+- title: Analyser la qualité du code managé
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Analyse du code source
+      url: roslyn-analyzers-overview.md
+    - text: Analyse héritée
+      url: static-code-analysis-for-managed-code-overview.md
+  - linkListType: concept
+    links:
+    - text: Questions fréquentes (FAQ)
+      url: analyzers-faq.md
+  - linkListType: how-to-guide
+    links:
+    - text: Installer des analyseurs FxCop
+      url: install-fxcop-analyzers.md
+  - linkListType: reference
+    links:
+    - text: Avertissements liés à l’analyse du code managé
+      url: code-analysis-for-managed-code-warnings.md
+- title: Analyser le style de code managé
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Analyser le style de code
+      url: ../ide/create-portable-custom-editor-options.md
+- title: Mesurer la complexité du code
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Métrique du code
+      url: code-metrics-values.md

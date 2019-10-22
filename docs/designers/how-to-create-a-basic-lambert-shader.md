@@ -1,21 +1,21 @@
 ---
-title: 'Procédure : Créer un nuanceur Lambert de base'
+title: 'Procédure : créer un nuanceur Lambert de base'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ec5c10fb-9600-4240-8280-d59451ea1d68
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 662409f3655e23589a2416bb15572eb3df41bcb6
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: c2034c09098aeded57671186731729a5928be8e6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924442"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72636204"
 ---
-# <a name="how-to-create-a-basic-lambert-shader"></a>Procédure : Créer un nuanceur Lambert de base
+# <a name="how-to-create-a-basic-lambert-shader"></a>Guide pratique pour créer un nuanceur Lambert de base
 
 Cet article indique comment utiliser le concepteur Shader et DGSL (Directed Graph Shader Language) pour créer un nuanceur d’éclairage implémentant le modèle d’éclairage Lambert classique.
 
@@ -23,7 +23,7 @@ Cet article indique comment utiliser le concepteur Shader et DGSL (Directed Grap
 
 Le modèle d’éclairage Lambert intègre un éclairage ambiant et directionnel pour ombrer des objets dans une scène 3D. Les composants ambiants fournissent un niveau de base d’éclairage de la scène 3D. Les composants directionnels fournissent un éclairage supplémentaire provenant de sources de lumière (éloignées) directionnelles. L’éclairage ambiant affecte également toutes les surfaces de la scène, quelle que soit leur orientation. Pour une surface donnée, il s’agit d’un produit de la couleur ambiante de la surface et de la couleur et de l’intensité de l’éclairage ambiant de la scène. L’éclairage directionnel affecte différemment chaque surface de la scène, selon l’orientation de la surface par rapport à la direction de la source de lumière. Il s’agit d’un produit de la couleur diffuse et de l’orientation de la surface, et de la couleur, de l’intensité et de la direction des sources de lumière. Les surfaces qui font directement face à la source de lumière reçoivent la contribution maximale tandis que celles qui lui tournent le dos ne reçoivent aucune contribution. Dans le modèle d’éclairage Lambert, le composant ambiant et un ou plusieurs composants directionnels sont combinés pour déterminer la contribution de couleur diffuse totale pour chaque point de l’objet.
 
-Avant de commencer, assurez-vous que la fenêtre **Propriétés** et la **Boîte à outils** sont affichées.
+Avant de commencer, veillez à ce que la fenêtre **Propriétés** et la **Boîte à outils** soient affichées.
 
 1. Créez un nuanceur DGSL à utiliser. Pour plus d’informations sur l’ajout d’un nuanceur DGSL à votre projet, consultez la section Prise en main de l’article [Concepteur de nuanceur](../designers/shader-designer.md).
 
@@ -53,7 +53,7 @@ Pour plus d’informations sur l’application d’un nuanceur à un modèle 3D,
 ## <a name="see-also"></a>Voir aussi
 
 - [Guide pratique pour appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
-- [Guide pratique pour exporter un nuanceur](../designers/how-to-export-a-shader.md)
-- [Guide pratique pour créer un nuanceur Phong de base](../designers/how-to-create-a-basic-phong-shader.md)
-- [Concepteur Shader](../designers/shader-designer.md)
-- [Nœuds du concepteur Shader](../designers/shader-designer-nodes.md)
+- [Comment : exporter un nuanceur](../designers/how-to-export-a-shader.md)
+- [Comment : créer un nuanceur Phong de base](../designers/how-to-create-a-basic-phong-shader.md)
+- [Concepteur de nuanceur](../designers/shader-designer.md)
+- [Nœuds du concepteur de nuanceur](../designers/shader-designer-nodes.md)

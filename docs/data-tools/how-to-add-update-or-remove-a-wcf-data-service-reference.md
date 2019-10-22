@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : ajouter, mettre à jour ou supprimer une référence de service de données WCF'
+title: 'Comment : ajouter, mettre à jour ou supprimer une référence de service de données WCF'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,20 +9,20 @@ helpviewer_keywords:
 - ADO.NET service references
 - ADO.NET Data Service reference
 ms.assetid: 892ebf37-3af4-472e-8744-92837677d611
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: da8555d4246d2177b3d97eeef8d24c7b4a22b31d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 8f19fbfb82a74de0f0eedf784483ecaeccc9a5fc
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925637"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72648422"
 ---
-# <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Procédure : ajouter, mettre à jour ou supprimer une référence de service de données WCF
-Une *référence de service* permet à un projet d’accéder à [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]un ou plusieurs. Utilisez la boîte de dialogue **Ajouter une référence de service** pour rechercher [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] dans la solution actuelle, localement, sur un réseau local ou sur Internet.
+# <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Guide pratique pour ajouter, mettre à jour ou supprimer une référence de service de données WCF
+Une *référence de service* permet à un projet d’accéder à un ou plusieurs [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]. Utilisez la boîte de dialogue **Ajouter une référence de service** pour rechercher des [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] dans la solution actuelle, localement, sur un réseau local ou sur Internet.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -59,7 +59,7 @@ Une *référence de service* permet à un projet d’accéder à [!INCLUDE[ssAst
 
 2. Cliquez sur **découvrir**.
 
-    Tous les services ( [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] et les services WCF) de la solution actuelle sont ajoutés à la liste des **services** .
+    Tous les services ([!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] et services WCF) de la solution actuelle sont ajoutés à la liste des **services** .
 
 3. Dans la liste des **services** , développez le nœud du service que vous souhaitez utiliser, puis sélectionnez un jeu d’entités.
 
@@ -70,7 +70,7 @@ Une *référence de service* permet à un projet d’accéder à [!INCLUDE[ssAst
     Un client de service (proxy) génère, et les métadonnées qui décrivent le service sont ajoutées au fichier *app. config* .
 
 ## <a name="update-a-service-reference"></a>Mettre à jour une référence de service
-La Entity Data Model pour une [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] modification parfois. Dans ce cas, vous devez mettre à jour la référence de service.
+La Entity Data Model d’un [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] peut parfois changer. Dans ce cas, vous devez mettre à jour la référence de service.
 
 ### <a name="to-update-a-service-reference"></a>Pour mettre à jour une référence de service
 

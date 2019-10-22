@@ -2,17 +2,17 @@
 title: Conseils pour améliorer les performances
 ms.date: 08/14/2018
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fccae7d42d9e8f99c78fd55f74466e2f83e5dfa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ccf785cec859290cac0ebcf5c9685861bd2887e4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581780"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647147"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Conseils et astuces sur les performances dans Visual Studio
 
@@ -57,7 +57,7 @@ En règle générale, si vous manquez de mémoire pendant le débogage des sessi
 
 - **Spécifier les symboles à charger**
 
-    Pour le débogage natif, le chargement des fichiers de symboles (*.pdb*) consomme beaucoup de ressources mémoire. Vous pouvez configurer les paramètres de symboles de votre débogueur pour économiser la mémoire. En règle générale, vous configurez la solution pour charger uniquement les modules de votre projet.
+    Pour le débogage natif, le chargement des fichiers de symboles ( *.pdb*) consomme beaucoup de ressources mémoire. Vous pouvez configurer les paramètres de symboles de votre débogueur pour économiser la mémoire. En règle générale, vous configurez la solution pour charger uniquement les modules de votre projet.
 
     Pour spécifier le chargement des symboles, choisissez **Outils** > **Options** > **Débogage** > **Symboles**.
 
@@ -88,7 +88,7 @@ Pour plus d’informations sur les performances de .NET Compiler Platform (« Ro
 
     Visual Studio analyse l’ensemble de votre solution afin d’offrir une expérience complète sur les erreurs avant d’appeler une génération. Cette fonctionnalité est utile pour identifier les erreurs dès que possible. Toutefois, pour les solutions volumineuses, cette fonctionnalité peut consommer des ressources de mémoire considérables. Si vous rencontrez des problèmes de mémoire ou du même type, vous pouvez désactiver cette expérience pour libérer ces ressources. Par défaut, cette option est activée pour Visual Basic et désactivée pour C#.
 
-    Pour désactiver **Analyse complète de la solution**, choisissez **Outils** > **Options** > **Éditeur de texte**, puis sélectionnez **Visual Basic** ou **C#**. Choisissez **Avancé** et décochez la case **Activer l’analyse complète de la solution**.
+    Pour désactiver **Analyse complète de la solution**, choisissez **Outils** > **Options** > **Éditeur de texte**, puis sélectionnez **Visual Basic** ou **C#** . Choisissez **Avancé** et décochez la case **Activer l’analyse complète de la solution**.
 
 - **Désactiver CodeLens**
 
@@ -131,7 +131,7 @@ Pour plus d’informations sur les performances de .NET Compiler Platform (« Ro
 
 Le CLR utilise un système de gestion de mémoire garbage collection. Dans ce système, la mémoire est parfois utilisée par des objets qui ne sont plus nécessaires. Cet état est temporaire. Le récupérateur de mémoire libère cette mémoire en fonction de ses méthodes heuristiques en matière d’utilisation des ressources et de performances. Vous pouvez obliger le CLR à collecter la mémoire inutilisée à l’aide d’un raccourci clavier dans Visual Studio. Si une quantité importante de mémoire est en attente de nettoyage et que vous forcez une opération de garbage collection, vous devez voir chuter l’utilisation de la mémoire par le processus *devenv.exe* dans le **Gestionnaire des tâches**. Cette méthode est rarement nécessaire. Toutefois, quand une opération ayant consommé beaucoup de ressources se termine (par exemple, une génération complète, une session de débogage ou un événement d’ouverture de solution), elle peut vous aider à déterminer la quantité de mémoire qui est réellement utilisée par le processus. Parce que Visual Studio est mixte (à la fois managé et natif), il est parfois possible que l’allocateur natif et le récupérateur de mémoire entrent en concurrence pour utiliser des ressources mémoire limitées. Dans les situations d’utilisation importante de la mémoire, il peut être utile de forcer l’exécution du récupérateur de mémoire.
 
-Pour forcer un garbage collection, utilisez la touche de raccourci : **Ctrl**+**Alt**+**Maj**+**F12**, **Ctrl**+**Alt**+**Maj**+**F12** (appuyez dessus deux fois).
+Pour forcer une opération de garbage collection, utilisez la touche de raccourci : **Ctrl**+**Alt**+**Maj**+**F12**, **Ctrl**+**Alt**+**Maj**+**F12** (appuyez dessus deux fois).
 
 Si le forçage de l’opération de garbage collection permet à votre scénario de fonctionner de manière fiable, envoyez un rapport à travers l’outil de commentaires de Visual Studio, car ce comportement est susceptible d’être un bogue.
 

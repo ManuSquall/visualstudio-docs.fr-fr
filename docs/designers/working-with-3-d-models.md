@@ -3,17 +3,17 @@ title: Utilisation de modèles 3D
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: fa035091-1354-4d1c-be44-4fb83860466f
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fbca927a3c4bd26a37318fc9b3403d0eb8d7393c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: b364682d8173d34d2b9977836929ca93ddf45a78
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62892556"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72633994"
 ---
 # <a name="work-with-3d-models"></a>Utiliser des modèles 3D
 
@@ -32,4 +32,4 @@ Vous pouvez également utiliser l’éditeur de modèle pour afficher les modèl
 |Titre|Description|
 |-----------|-----------------|
 |[Éditeur de modèle](../designers/model-editor.md)|Décrit comment utiliser l’éditeur de modèle pour travailler avec des modèles 3D.|
-|[Exemples de l’éditeur de modèle](../designers/model-editor-examples.md)|Fournit des liens vers des rubriques qui montrent comment utiliser l’éditeur de modèle pour effectuer des tâches de modélisation 3D courantes.|
+|[Exemples de l’éditeur de modèle](../designers/how-to-create-a-basic-3-d-model.md)|Fournit des liens vers des rubriques qui montrent comment utiliser l’éditeur de modèle pour effectuer des tâches de modélisation 3D courantes.|

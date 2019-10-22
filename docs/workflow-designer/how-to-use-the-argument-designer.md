@@ -1,37 +1,37 @@
 ---
-title: 'Concepteur de flux de travail - Comment : Utiliser le concepteur d’arguments'
+title: 'Concepteur de flux de travail-comment : utiliser le concepteur d’arguments'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
 - System.Activities.Presentation.View.ArgumentDesigner.UI
 - System.Activities.Presentation.View.DesignTimeArgument.UI
 ms.assetid: 64813fd5-1ea1-499a-98b4-ab2a44b7ee5e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c333e78de17a3af5b4f7f0be46c19cf3120231d
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 9c3f8216bb0dfe3813e4852151c351b865128d0c
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746908"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650288"
 ---
-# <a name="how-to-use-the-argument-designer"></a>Procédure : Utiliser le concepteur d’arguments
+# <a name="how-to-use-the-argument-designer"></a>Procédure : utiliser le concepteur d’arguments
 
-Le Concepteur d’arguments facilite aux données de circuler vers et depuis une activité. Accéder au concepteur en cliquant sur le **Arguments** situé dans l’angle inférieur gauche de la zone de conception. Le concepteur contient une liste d’arguments qui s’affichent sous forme tabulaire et peuvent être triées en fonction de chacun des en-têtes de colonnes, à l’exception de la **valeur par défaut** colonne. Chaque argument contient une direction Entrée, Sortie, Entrée-Sortie ou Propriété, un type et une valeur d’expression par défaut (le cas échéant). Le nom et la valeur d'expression par défaut sont des champs de texte modifiables ; le type et la direction sont des zones de liste déroulante. Pour plus d’informations, consultez [Variables et arguments (.NET)](/dotnet/framework/windows-workflow-foundation/variables-and-arguments).
+Le concepteur d’arguments permet d’autoriser facilement le passage des données dans et hors d’une activité. Accédez au concepteur en cliquant sur le bouton **arguments** situé dans l’angle inférieur gauche de la zone de conception. Le concepteur contient une liste d’arguments qui s’affichent sous forme de tableau et peuvent être triés par chacun des en-têtes de colonne, à l’exception de la colonne de **valeur par défaut** . Chaque argument contient une direction Entrée, Sortie, Entrée-Sortie ou Propriété, un type et une valeur d’expression par défaut (le cas échéant). Le nom et la valeur d'expression par défaut sont des champs de texte modifiables ; le type et la direction sont des zones de liste déroulante. Pour plus d’informations, consultez [variables et arguments (.net)](/dotnet/framework/windows-workflow-foundation/variables-and-arguments).
 
 ## <a name="to-create-a-new-argument"></a>Pour créer un argument
 
-1. Dans Visual Studio, ouvrez une solution de flux de travail ou d’activité.
+1. Ouvrez un workflow ou une solution d’activité dans Visual Studio.
 
-2. Ouvrez le Concepteur d’arguments en cliquant sur le **Arguments** situé dans l’angle inférieur gauche de la zone de conception. Le concepteur d’arguments s’affiche.
+2. Ouvrez le concepteur d’arguments en cliquant sur le bouton **arguments** dans le coin inférieur gauche de la zone de conception. Le concepteur d’arguments s’affiche.
 
-3. Cliquez sur la ligne vide libellée **créer un Argument**. Cette opération ajoute une nouvelle ligne avec un nouvel argument utilisant les valeurs par défaut suivantes : argumentx pour le **nom** où x est un entier avec une valeur initiale 1 qui est automatiquement incrémenté pour créer des noms d’argument unique, **dans**  pour le **Direction**, et **chaîne** pour le **type d’Argument**. Aucune valeur n’est ajoutée pour **valeur par défaut**. Vous pouvez modifier ces valeurs à tout moment pendant le processus de conception du workflow.
+3. Cliquez sur la ligne vide intitulée **créer un argument**. Cette opération ajoute une nouvelle ligne avec un nouvel argument en utilisant les valeurs par défaut suivantes : argumentx comme pour le **nom** où x est un entier avec une valeur initiale de 1 qui est automatiquement incrémentée pour créer des noms d’arguments uniques **dans** pour la **direction**. et **chaîne** pour le **type d’argument**. Aucune valeur n’est ajoutée pour la **valeur par défaut**. Vous pouvez modifier ces valeurs à tout moment pendant le processus de conception du workflow.
 
     > [!NOTE]
-    > Pour supprimer un argument, sélectionnez l’argument en cliquant dessus, puis appuyez sur la **supprimer** clé.
+    > Pour supprimer un argument, sélectionnez l’argument en cliquant dessus, puis appuyez sur la touche **Suppr** .
 
 ## <a name="see-also"></a>Voir aussi
 

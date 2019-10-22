@@ -1,5 +1,5 @@
 ---
-title: Créer des vues personnalisées des données dans le débogueur | Microsoft Docs
+title: Créer des vues personnalisées de données dans le débogueur | Microsoft Docs
 ms.date: 01/09/2019
 ms.topic: conceptual
 f1_keywords:
@@ -19,24 +19,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32b3fddd13bd16ac2c846f02f54596ec846374b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 63dc11736e92013719fcda2bae0ba9599a8835aa
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929990"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72568992"
 ---
-# <a name="create-custom-views-of-data-in-the-visual-studio-debugger-c-visual-basic-c"></a>Créer des vues personnalisées des données dans le débogueur Visual Studio (C#, Visual Basic, C++)
+# <a name="create-custom-views-of-data-in-the-visual-studio-debugger-c-visual-basic-c"></a>Créer des vues personnalisées de données dans le débogueur VisualC#Studio (, C++Visual Basic,)
 
-Le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] débogueur fournit de nombreux outils pour examiner et de modifier l’état de votre programme. La plupart de ces outils ne fonctionnent qu’en mode arrêt.
+Le débogueur [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] fournit de nombreux outils permettant d’inspecter et de modifier l’état de votre programme. La plupart de ces outils ne fonctionnent qu’en mode arrêt.
 
-## <a name="create-custom-views-of-data-in-variable-windows-and-datatips"></a>Créer des vues personnalisées des données dans les fenêtres de variables et les DataTips
+## <a name="create-custom-views-of-data-in-variable-windows-and-datatips"></a>Créer des vues personnalisées de données dans des fenêtres de variables et des DataTips
 
- Un grand nombre de la [fenêtres du débogueur](../debugger/debugger-windows.md), telles que la **automatique** et **espion** windows, permettent d’inspecter des variables. Vous pouvez personnaliser comment C++ types, des objets gérés et vos propres types sont affichés dans les fenêtres de variables du débogueur et dans [DataTips](../debugger/view-data-values-in-data-tips-in-the-code-editor.md). Pour plus d’informations, consultez [créer des vues personnalisées de C++ objets](../debugger/create-custom-views-of-native-objects.md) et [créer des vues personnalisées d’objets](../debugger/create-custom-views-of-dot-managed-objects.md).
+ La plupart des [fenêtres du débogueur](../debugger/debugger-windows.md), telles que les fenêtres **automatique** et **Espion** , vous permettent d’inspecter des variables. Vous pouvez personnaliser la C++ façon dont les types, les objets managés et vos propres types sont affichés dans les fenêtres de variables du débogueur et dans les [DataTips](../debugger/view-data-values-in-data-tips-in-the-code-editor.md). Pour plus d’informations, consultez [créer des vues C++ personnalisées d’objets](../debugger/create-custom-views-of-native-objects.md) et [créer des vues personnalisées d’objets managés](../debugger/create-custom-views-of-managed-objects.md).
 
 ## <a name="create-custom-visualizers"></a>Créer des visualiseurs personnalisés
 
- Visualiseurs permettent d’afficher le contenu d’un objet ou une variable de manière explicite. Dans le débogueur Visual Studio, un visualiseur fait référence à des fenêtres différentes que vous pouvez ouvrir à l’aide de la loupe ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "icône de visualiseur") icône. Par exemple, le visualiseur HTML montre comment une chaîne au format HTML sera interprétée et affichée dans un navigateur. Vous pouvez accéder aux visualiseurs depuis les DataTips, la **espion** fenêtre, le **automatique** fenêtre et le **variables locales** fenêtre. Le **Espion express** boîte de dialogue fournit également un visualiseur. Pour plus d’informations, consultez [Créer des visualiseurs personnalisés](../debugger/create-custom-visualizers-of-data.md).
+ Les visualiseurs vous permettent d’afficher le contenu d’un objet ou d’une variable de façon explicite. Dans le débogueur Visual Studio, un visualiseur fait référence aux différentes fenêtres que vous pouvez ouvrir à l’aide de l’icône de loupe ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "Icône de visualiseur") . Par exemple, le Visualiseur HTML montre comment une chaîne HTML est interprétée et affichée dans un navigateur. Vous pouvez accéder aux visualiseurs depuis les DataTips, la fenêtre **Espion** , la fenêtre **automatique** et la fenêtre **variables locales** . La boîte de dialogue **Espion express** fournit également un visualiseur. Pour plus d’informations, consultez [Créer des visualiseurs personnalisés](../debugger/create-custom-visualizers-of-data.md).
 
 ## <a name="see-also"></a>Voir aussi
 

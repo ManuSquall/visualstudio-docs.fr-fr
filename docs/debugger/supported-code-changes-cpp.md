@@ -1,5 +1,5 @@
 ---
-title: Prise en charge des modifications de Code (C++) | Microsoft Docs
+title: Modifications du code prisesC++en charge () | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -20,17 +20,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7d029d5cb3deb886faa4423d24ae8d5282f80e6a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8e38123be6b780aa9f37dc2b329ec36e3f18e793
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62901959"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72430572"
 ---
 # <a name="supported-code-changes-c"></a>Modifications de code prises en charge (C++)
-Modifier & Continuer pour Visual C++ gère la plupart des types de modifications du code. Toutefois, certaines modifications ne peuvent pas être appliquées pendant l'exécution du programme. Pour appliquer ces modifications, vous devez arrêter l'exécution et générer une nouvelle version du code.
+Modifier & Continuer pour C++ les projets gère la plupart des types de modifications de code. Toutefois, certaines modifications ne peuvent pas être appliquées pendant l'exécution du programme. Pour appliquer ces modifications, vous devez arrêter l'exécution et générer une nouvelle version du code.
 
- Pour plus d’informations sur l’utilisation de Modifier &amp; Continuer pour C++ dans Visual Studio, consultez [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md) .
+ Pour plus d’informations sur l’utilisation de modifier & Continuer pour C++ dans Visual Studio, consultez [Modifier & Continuer (C++)](../debugger/edit-and-continue-visual-cpp.md) .
 
 ## <a name="BKMK_Unsupported_changes"></a> Modifications non prises en charge
  Les modifications C/C++ suivantes ne peuvent pas être appliquées pendant une session de débogage :
@@ -66,7 +66,7 @@ Modifier & Continuer pour Visual C++ gère la plupart des types de modifications
 
 - Débogage des applications natives compilées avec [/zo (Améliorer le débogage optimisé)](/cpp/build/reference/zo-enhance-optimized-debugging)
 
-- Dans les versions de Visual Studio antérieures à Visual Studio 2015 Update 1, le débogage des applications UWP ou composants. À partir de Visual Studio 2015 Update 1, vous pouvez utiliser Modifier & Continuer dans les applications UWP C++ et DirectX, car il prend désormais en charge la `/ZI` commutateur de compilateur avec la `/bigobj` basculer. Vous pouvez également utiliser l’option Modifier &amp; Continuer avec des fichiers binaires compilés à l’aide du commutateur `/FASTLINK` .
+- Dans les versions de Visual Studio antérieures à Visual Studio 2015 Update 1, débogage des applications ou des composants UWP. À compter de Visual Studio 2015 Update 1, vous pouvez utiliser modifier & continuer dans C++ les applications UWP et DirectX, car il prend désormais en charge le commutateur du compilateur `/ZI` avec le commutateur `/bigobj`. Vous pouvez également utiliser l’option Modifier &amp; Continuer avec des fichiers binaires compilés à l’aide du commutateur `/FASTLINK` .
 
 - Débogage sur Windows 98.
 
@@ -137,4 +137,4 @@ Modifier & Continuer pour Visual C++ gère la plupart des types de modifications
  La fonction Modifier & Continuer ne régénère pas de fichiers de définition d'interface (IDL). Par conséquent, les modifications des attributs IDL ne seront pas reflétées pendant le débogage. Pour voir le résultat des modifications apportées aux attributs IDL, vous devez arrêter le débogage et régénérer votre application. Modifier & Continuer ne génère pas d'erreur ou d'avertissement lorsque des attributs IDL ont été modifiés. Pour plus d'informations, consultez [Attributs IDL](/cpp/windows/idl-attributes).
 
 ## <a name="see-also"></a>Voir aussi
-- [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)
+- [Modifier & Continuer (C++)](../debugger/edit-and-continue-visual-cpp.md)

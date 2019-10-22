@@ -1,5 +1,5 @@
 ---
-title: Méthode IJsDebugBreakPoint::GetDocumentPosition | Microsoft Docs
+title: 'IJsDebugBreakPoint :: GetDocumentPosition, méthode | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 146eb26c887cd24d1eb7af858535fcecac62b41d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8f3bc5aff0b7079e20e2bcd49189153d2ec20d9a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62583143"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577691"
 ---
 # <a name="ijsdebugbreakpointgetdocumentposition-method"></a>IJsDebugBreakPoint::GetDocumentPosition, méthode
-Retourne la position de l’instruction où le point d’arrêt a été lié.  
+Retourne la position de l’instruction à laquelle le point d’arrêt a été lié.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -37,18 +37,18 @@ HRESULT GetDocumentPosition(
   
 #### <a name="parameters"></a>Paramètres  
  `pDocumentId`  
- [out] ID unique pour un document source (pointeur vers IDebugDocumentText).  
+ à ID unique d’un document source (pointeur vers IDebugDocumentText).  
   
  `pCharacterOffset`  
- [out] Offset de caractère de base zéro à partir du début du script.  
+ à Offset de caractère de base zéro à partir du début du script.  
   
  `pStatementCharCount`  
- [out] La longueur de l’instruction en cours, qui commence à * pCharacterOffset, en caractères.  
+ à Longueur de l’instruction en cours, qui commence à * pCharacterOffset, en caractères.  
   
 ## <a name="return-value"></a>Valeur de retour  
   
-## <a name="requirements"></a>Configuration requise  
- **En-tête :** jscript9diag.h  
+## <a name="requirements"></a>spécifications  
+ **En-tête :** jscript9diag. h  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IJsDebugBreakPoint](../../winscript/reference/ijsdebugbreakpoint-interface.md)

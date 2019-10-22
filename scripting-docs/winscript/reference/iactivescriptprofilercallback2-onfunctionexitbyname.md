@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerCallback2::OnFunctionExitByName | Microsoft Docs
+title: 'IActiveScriptProfilerCallback2 :: OnFunctionExitByName | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,15 +13,15 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 87f0b7e7a3cea4e3e59fb43ef9ddc2d4934552e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a70bc72dd1070759ad8b78e43926f06a2c56ec15
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993343"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571624"
 ---
 # <a name="iactivescriptprofilercallback2onfunctionexitbyname"></a>IActiveScriptProfilerCallback2::OnFunctionExitByName
-Notifie le profileur à l’objet du moteur de script terminé d’exécuter un appel de fonction de modèle DOM (Document Object).  
+Indique à l’objet de profileur que le moteur de script a terminé l’exécution d’un appel de fonction Document Object Model (DOM).  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -34,17 +34,17 @@ HRESULT OnFunctionExitByName(
   
 #### <a name="parameters"></a>Paramètres  
  `pwszFunctionName`  
- [in] Le nom de la fonction que le moteur de script terminé en cours d’exécution.  
+ dans Nom de la fonction que le moteur de script a terminé d’exécuter.  
   
  `scriptType`  
- [in] Le type de la fonction. Pour obtenir une description des valeurs valides, consultez [profiler_script_type, énumération](../../winscript/reference/profiler-script-type-enumeration.md).  
+ dans Type de la fonction. Pour obtenir une description des valeurs valides, consultez [énumération PROFILER_SCRIPT_TYPE](../../winscript/reference/profiler-script-type-enumeration.md).  
   
 ## <a name="return-value"></a>Valeur de retour  
  La valeur de retour de cette méthode est ignorée par le moteur de script.  
   
 ## <a name="remarks"></a>Notes  
- Pour les appels de DOM, le moteur de script appelle cette méthode au lieu d’appeler [IActiveScriptProfilerCallback::OnFunctionExit](../../winscript/reference/iactivescriptprofilercallback-onfunctionexit.md). Il s’agit en raison du grand nombre de méthodes uniques et des propriétés dans le DOM.  
+ Pour les appels DOM, le moteur de script appelle cette méthode au lieu d’appeler [IActiveScriptProfilerCallback :: OnFunctionExit](../../winscript/reference/iactivescriptprofilercallback-onfunctionexit.md). Cela est dû au grand nombre de méthodes et de propriétés uniques dans le DOM.  
   
 ## <a name="see-also"></a>Voir aussi  
- [IActiveScriptProfilerCallback2::OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md)   
+ [IActiveScriptProfilerCallback2 :: OnFunctionEnterByName](../../winscript/reference/iactivescriptprofilercallback2-onfunctionenterbyname.md)    
  [Interface IActiveScriptProfilerCallback2](../../winscript/reference/iactivescriptprofilercallback2-interface.md)

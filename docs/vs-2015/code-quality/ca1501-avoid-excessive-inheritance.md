@@ -1,5 +1,5 @@
 ---
-title: 'CA1501 : Éviter l’excès d’héritage | Microsoft Docs'
+title: 'CA1501 : éviter l’héritage excessif | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,15 +12,15 @@ helpviewer_keywords:
 - CA1501
 ms.assetid: 9e934746-1a4d-492a-91e4-085201abafa4
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 420e9492fc5ab431710d62e1d8ea3c1bd8a31ce9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a2106042b552efbe824d7517abcc86e322b57aa9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68191476"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72607857"
 ---
 # <a name="ca1501-avoid-excessive-inheritance"></a>CA1501 : Éviter l'excès d'héritage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,20 +29,20 @@ ms.locfileid: "68191476"
 |-|-|
 |TypeName|AvoidExcessiveInheritance|
 |CheckId|CA1501|
-|Catégorie|Microsoft.Maintainability|
+|Category|Microsoft. maintenabilité|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
  Un type est imbriqué de plus de quatre niveaux dans sa hiérarchie d'héritage.
 
 ## <a name="rule-description"></a>Description de la règle
- Les hiérarchies de type profondément imbriquées peuvent être difficiles à suivre, comprendre et gérer. Cette règle limite l’analyse aux hiérarchies dans le même module.
+ Les hiérarchies de type profondément imbriquées peuvent être difficiles à suivre, comprendre et gérer. Cette règle limite l’analyse aux hiérarchies du même module.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, dérivez le type d’un type de base moins imbriqué dans la hiérarchie d’héritage ou éliminer certains des types de base intermédiaires.
+ Pour corriger une violation de cette règle, dérivez le type d’un type de base qui est moins profond dans la hiérarchie d’héritage ou éliminez certains des types de base intermédiaires.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Il est possible de supprimer un avertissement de cette règle. Toutefois, le code peut être plus difficile à gérer. Notez que, en fonction de la visibilité des types de base, résolution des violations de cette règle peut créer des modifications avec rupture. Par exemple, la suppression des types de base publiques est une modification avec rupture.
+ Il est possible de supprimer sans risque un avertissement de cette règle. Toutefois, le code peut être plus difficile à gérer. Notez que, selon la visibilité des types de base, la résolution des violations de cette règle peut entraîner des modifications avec rupture. Par exemple, la suppression de types de base publics est une modification avec rupture.
 
 ## <a name="example"></a>Exemple
  L’exemple suivant montre un type qui viole la règle.

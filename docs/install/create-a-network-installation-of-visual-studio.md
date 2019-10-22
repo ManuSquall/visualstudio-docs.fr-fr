@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 521b29f87db6379a011a0b46dfd1405b374ab9ba
-ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
+ms.openlocfilehash: fcc4a3d3d99deab62971c40b26c9a4252367438f
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72289651"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516321"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Créer une installation réseau de Visual Studio
 
@@ -39,7 +39,7 @@ Téléchargez un fichier de programme d’amorçage pour l’édition de Visual 
 
 Pour obtenir un programme d’amorçage pour Visual Studio 2017, consultez la page de téléchargement des [versions précédentes de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) pour plus d’informations sur la façon de procéder.
 
-L’exécutable du programme d’installation @ no__t-0or pour être plus précis, le fichier du programme d’amorçage @ no__t-1should correspond ou est semblable à l’un des éléments suivants.
+L’exécutable de votre programme d’installation &mdash;or pour être plus précis, le fichier du programme d’amorçage &mdash;should correspond ou est semblable à l’un des éléments suivants.
 
 | Édition | Nom de fichier |
 |-------------|-----------------------|
@@ -53,7 +53,7 @@ Les autres programmes d’amorçage pris en charge incluent **vs_feedbackclient.
 
 ::: moniker range="vs-2019"
 
-L’exécutable du programme d’installation @ no__t-0or pour être plus précis, un fichier de programme d’amorçage @ no__t-1should correspond ou est semblable à l’un des éléments suivants.
+L’exécutable de votre programme d’installation &mdash;or pour être plus précis, un fichier de programme d’amorçage &mdash;should correspondre ou être similaire à l’un des éléments suivants.
 
 |Édition | Télécharger|
 |-------------|-----------------------|
@@ -99,7 +99,7 @@ L’exemple suivant utilise [xcopy](/windows-server/administration/windows-comma
 
 ::: moniker range="vs-2017"
 
-Exemple :
+Exemple :
 
 ```cmd
 xcopy /e c:\VSLayout \\server\products\VS2017
@@ -226,6 +226,13 @@ Les administrateurs peuvent déployer Visual Studio sur les stations de travail 
 > C’est utile si un administrateur d’entreprise souhaite effectuer d’autres opérations sur une installation terminée (par exemple, pour [appliquer une clé de produit sur une installation réussie](automatically-apply-product-keys-when-deploying-visual-studio.md)), alors qu’il doit attendre que l’installation se termine pour gérer le code de retour de cette installation.
 >
 > Si vous n’utilisez pas `--wait`, le processus `vs_enterprise.exe` s’arrête avant que l’installation soit terminée et retourne un code de sortie incorrect qui ne représente pas l’état de l’opération d’installation.
+>
+
+::: moniker range="vs-2019"
+> [!IMPORTANT]
+> Pour les installations hors connexion, si vous recevez un message d’erreur indiquant « un produit correspondant aux paramètres suivants est introuvable », vérifiez que vous utilisez le commutateur `--noweb` avec la version 16.3.5 ou ultérieure.
+>
+::: moniker-end
 
 Lorsque vous installez à partir d’une disposition, le contenu qui est installé est acquis à partir de la disposition. Toutefois, si vous sélectionnez un composant qui ne se trouve pas dans la disposition, celui-ci est téléchargé à partir d’Internet.  Si vous voulez empêcher le programme d’installation de Visual Studio de télécharger le contenu manquant dans la disposition, utilisez l’option `--noWeb`. Si `--noWeb` est utilisé et qu’un contenu à installer est absent de la disposition, l’installation échoue.
 

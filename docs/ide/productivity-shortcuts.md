@@ -3,17 +3,17 @@ title: Raccourcis clavier et souris
 description: Cet article contient des conseils pour les raccourcis clavier et souris dans Visual Studio qui peuvent vous aider à gagner en productivité.
 ms.date: 11/02/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 581e20aeb3957b87f85253fa1d6855166084798f
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
-ms.translationtype: HT
+ms.openlocfilehash: 7cbe2ddd87f867768c6fd7c041f6b88fbe88c44f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046860"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666746"
 ---
 # <a name="shortcut-tips-for-visual-studio"></a>Conseils d’utilisation des raccourcis pour Visual Studio
 
@@ -88,7 +88,7 @@ Pour obtenir la liste complète des raccourcis de commande, consultez [Raccourci
 |Développer la sélection|**Maj**+**Alt**+ **=**|
 |Diminuer la sélection|**Maj**+**Alt**+ **-**|
 |Atteindre la définition|**F12**|
-|Aperçu de définition|**Alt**+**F12**|
+|Aperçu de la définition|**Alt**+**F12**|
 |Atteindre une pile de définitions|**Ctrl**+**Shift**+**8** (Retour)<br />**Ctrl**+**Maj**+**7** (Suivant)|
 |Fermer la fenêtre Aperçu de définition|**Échap**|
 |Promouvoir la fenêtre Aperçu de définition dans un onglet de document normal|**Ctrl**+**Alt**+**Accueil**|

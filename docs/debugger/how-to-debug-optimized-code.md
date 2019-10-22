@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Déboguer le Code optimisé | Microsoft Docs'
+title: 'Comment : déboguer le code optimisé | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,14 +21,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b498bdb491e3a15dddf005d43435d84b837fcd0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 590925a894f1bf9bfe70d9dd1bf6142fcb6a2e34
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63387746"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72430667"
 ---
-# <a name="how-to-debug-optimized-code"></a>Procédure : déboguer du code optimisé
+# <a name="how-to-debug-optimized-code"></a>Comment : déboguer le code optimisé
 
 > [!NOTE]
 > Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez Importation et exportation de paramètres dans le menu Outils. Pour plus d’informations, consultez [Réinitialiser les paramètres](../ide/environment-settings.md#reset-settings).
@@ -52,7 +52,7 @@ ms.locfileid: "63387746"
 
   Les variables globales et statiques s'affichent toujours correctement. C'est également le cas pour les dispositions de structures. Si un pointeur désigne une structure et que la valeur de ce pointeur est correcte, chaque variable membre de la structure affichera la valeur correcte.
 
-  En raison de ces limitations, vous devez effectuer le débogage en utilisant si possible une version non optimisée de votre programme. Par défaut, l’optimisation est désactivée dans la configuration Debug d’un programme Visual C++ et activée dans la configuration Release.
+  En raison de ces limitations, vous devez effectuer le débogage en utilisant si possible une version non optimisée de votre programme. Par défaut, l’optimisation est désactivée dans la configuration Debug C++ d’un programme et activée dans la configuration Release.
 
   Mais un bogue peut apparaître uniquement dans une version optimisée d'un programme. Dans ce cas, vous devez déboguer le code optimisé.
 
@@ -62,19 +62,19 @@ ms.locfileid: "63387746"
 
 2. Sélectionnez le projet dans l’Explorateur de solutions.
 
-3. Dans le menu **vue**, cliquez sur **Pages de propriétés**.
+3. Dans le menu **Affichage**, cliquez sur **Pages de propriétés**.
 
 4. Dans la boîte de dialogue **Pages de propriétés**, vérifiez que `Debug` est sélectionné dans la liste déroulante **Configuration**.
 
-5. Dans la vue Dossiers sur le côté gauche, sélectionnez le dossier **C/C++**.
+5. Dans la vue Dossiers sur le côté gauche, sélectionnez le dossier **C/C++** .
 
-6. Sous le dossier **C++**, sélectionnez `Optimization`.
+6. Sous le dossier **C++** , sélectionnez `Optimization`.
 
 7. Dans la liste des propriétés affichée à droite, recherchez `Optimization`. Le paramètre en regard de la propriété indique probablement `Disabled (`[/Od](/cpp/build/reference/od-disable-debug)`)`. Sélectionnez une des autres options (`Minimum Size``(`[/O1](/cpp/build/reference/o1-o2-minimize-size-maximize-speed)`)`, `Maximum Speed``(`[/O2](/cpp/build/reference/o1-o2-minimize-size-maximize-speed)`)`, `Full Optimization``(`[/Ox](/cpp/build/reference/ox-full-optimization)`)` ou `Custom`).
 
 8. Si vous avez choisi l'option `Custom` pour `Optimization`, vous pouvez maintenant définir des options pour l'une des autres propriétés affichées dans la liste des propriétés.
 
-9. Sélectionnez les propriétés de Configuration, C/C++, nœud de ligne de commande de la page de propriétés de projet et ajoutez `(` [/Zo](/cpp/build/reference/zo-enhance-optimized-debugging) `)` à la **des Options supplémentaires** zone de texte.
+9. Sélectionnez le nœud Propriétés de configuration,C++C/, ligne de commande de la page Propriétés du projet, puis ajoutez `(`[/zo](/cpp/build/reference/zo-enhance-optimized-debugging)`)` à la zone de texte **options supplémentaires** .
 
     > [!WARNING]
     > `/Zo` nécessite Visual Studio 2013 Update 3 ou une version ultérieure.

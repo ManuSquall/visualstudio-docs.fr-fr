@@ -1,5 +1,5 @@
 ---
-title: IScriptScriptlet::SetSimpleEventName | Microsoft Docs
+title: 'IScriptScriptlet :: SetSimpleEventName | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 63e6d05066d59e14a7036fb8f371c9c20b886df7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 47039be628e803b5b5c164b765b0cdf6778621bc
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786626"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571864"
 ---
 # <a name="iscriptscriptletsetsimpleeventname"></a>IScriptScriptlet::SetSimpleEventName
-Définit le nom d’événement simple qui est associé à un scriptlet. Il s’agit d’un nom de mot unique qui ne contient-elle pas de n’importe quel espace blanc.  
+Définit le nom d’événement simple associé à un scriptlet. Il s’agit d’un nom de mot unique qui ne contient aucun espace blanc.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -37,12 +37,12 @@ HRESULT SetSimpleEventName(
   
 #### <a name="parameters"></a>Paramètres  
  `psz`  
- [in] Une mémoire tampon qui contient le nom d’événement simple qui est associé le `IScriptScriptlet` objet.  
+ dans Mémoire tampon qui contient le nom d’événement simple associé à l’objet `IScriptScriptlet`.  
   
 ## <a name="return-value"></a>Valeur de retour  
  Élément `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   

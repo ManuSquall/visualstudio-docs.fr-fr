@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Personnaliser des diagrammes de classes (Concepteur de classes)'
+title: 'Comment : personnaliser des diagrammes de classes (Concepteur de classes)'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,19 +8,19 @@ helpviewer_keywords:
 - type shapes, removing from class diagrams
 - class diagrams, removing type shapes
 ms.assetid: e9030aea-c77d-4cc1-b8f6-b6ca469b692d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c23e24c9e087ff8ca64f90db1714ca2569bf02c0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: eb2901d756e332a719fc56732a951257760ca03f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975214"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647800"
 ---
-# <a name="how-to-customize-class-diagrams"></a>Procédure : Personnaliser des diagrammes de classes
+# <a name="how-to-customize-class-diagrams"></a>Guide pratique pour personnaliser des diagrammes de classes
 
 Vous pouvez modifier la façon dont les diagrammes de classes affichent les informations. Il est possible de personnaliser le diagramme tout entier ou chaque type sur l'aire de conception.
 
@@ -37,7 +37,7 @@ Les sections qui contiennent des membres de type, telles que la section **Propri
 
 2. Dans la barre d’outils **Concepteur de classes**, cliquez sur le bouton **Zoom avant** ou **Zoom arrière** pour changer le niveau de zoom de l’aire du concepteur.
 
-     ou
+     or
 
      Spécifiez une valeur de zoom particulière. Vous pouvez utiliser la liste déroulante **Zoom** ou taper un niveau de zoom valide (la plage valide est comprise entre 10 % et 400 %).
 
@@ -128,5 +128,5 @@ Vous pouvez supprimer une forme de type dans le diagramme de classes sans affect
 ## <a name="see-also"></a>Voir aussi
 
 - [Guide pratique pour changer la notation entre les membres et les associations](how-to-change-between-member-notation-and-association-notation.md)
-- [Guide pratique pour voir les types existants](how-to-view-existing-types.md)
+- [Guide pratique pour afficher les types existants](how-to-view-existing-types.md)
 - [Affichage des types et des relations](designing-and-viewing-classes-and-types.md)

@@ -22,14 +22,14 @@ helpviewer_keywords:
 description: Découvrez comment mettre à jour la copie gratuite de Dotfuscator Community fournie avec Visual Studio.
 ms.assetid: c7c60904-27f9-4f1f-b79b-ddf65041b810
 author: Joe-Sewell-PreEmptive
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: cee876a3904d5c47b43b58793087c901e8444dd3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 78a26da7734e4fa74a9b312b41786caca4b7cc67
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557240"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72652819"
 ---
 # <a name="upgrade-dotfuscator-community"></a>Mettre à niveau Dotfuscator Community
 
@@ -38,10 +38,10 @@ Toutefois, les utilisateurs qui mettent à niveau leur version de Dotfuscator pe
 
 ## <a name="registering-dotfuscator-community"></a>Inscription de Dotfuscator Community
 
-Les utilisateurs de Dotfuscator Community inscrits peuvent accéder à des fonctionnalités supplémentaires, telles que la [prise en charge des lignes de commande][cli], ce qui permet d’intégrer facilement Dotfuscator Community au processus de génération automatisé. L’inscription donne également accès à un outil intégré employé pour le [décodage des traces de pile obfusquées][decode-obfuscated].
+Les utilisateurs inscrits de Dotfuscator Community ont accès à des fonctionnalités supplémentaires, telles que la [prise en charge de ligne de commande][cli], ce qui facilite l’intégration de la communauté Dotfuscator à votre processus de génération automatisé. L’inscription accorde également l’accès à un outil intégré utilisé pour [décoder les traces de pile obscurcies][decode-obfuscated].
 
 L’inscription est rapide, simple et gratuite.
-Pour inscrire Dotfuscator Community, consultez [les instructions du Guide complet de l’utilisateur de Dotfuscator Community][register-ce].
+Pour inscrire la communauté Dotfuscator, consultez [les instructions dans le guide complet de l’utilisateur de la communauté Dotfuscator][register-ce].
 
 ## <a name="dotfuscator-professional"></a>Dotfuscator Professional
 
@@ -49,25 +49,25 @@ Alors que Dotfuscator Community fournit un niveau de protection de base, ***PreE
 
 * *Protection de la propriété intellectuelle*
   * Options de renommage supplémentaires, notamment la méthode Overload Induction™ améliorée et la sélection d’identificateur aléatoire.
-  * Accès aux transformations d’obfuscation de niveau entreprise, notamment les [transformations visant à mettre en échec la décompilation de code automatisée][control-flow].
+  * Accès aux transformations d’obscurcissement au niveau de l’entreprise, y compris les [transformations ciblant la décompilation du code automatisé][control-flow].
   * La possibilité de [masquer des chaînes sensibles][string-encryption], ce qui rend impossible une recherche simple du code décompilé.
-  * La possibilité [d’incorporer discrètement des chaînes de propriété et la distribution dans vos assemblys][watermarking], ce qui vous permet de déterminer la source des fuites logicielles non autorisées.
-  * La possibilité de [regrouper plusieurs assemblys en un seul][linking], ce qui complique encore davantage la tâche des personnes malveillantes souhaitant déterminer les rôles des éléments de code puisque plus rien n’est séparé.
-  * La possibilité de [supprimer automatiquement le code non utilisé de votre application][pruning], ce qui réduit la quantité de code sensible fourni.
+  * La possibilité d' [incorporer discrètement des chaînes de propriété et de distribution dans vos assemblys][watermarking], ce qui vous permet de déterminer la source de fuites logicielles non autorisées.
+  * La possibilité de [combiner plusieurs assemblys en un seul][linking], ce qui rend encore plus difficile pour les attaquants de déterminer les rôles des éléments de code, car la séparation des préoccupations a été éliminée.
+  * La possibilité de [supprimer automatiquement le code inutilisé de votre application][pruning], ce qui réduit la quantité de code sensible qui est livrée.
 * *Protection de l’intégrité des applications*
-  * [Comportements de défense des applications][check-actions] supplémentaires.
+  * Autres [comportements de protection des applications][check-actions].
   * La possibilité de fournir un délai d’avertissement avant l’échéance de fin de vie d’une application.
   * La possibilité de notifier le code d’application dans le délai d’avertissement de fin de vie ou après la date limite.
 
-Dotfuscator Professional est l’[obfuscateur .NET][net-obfuscator] standard. Il est approprié pour les développeurs d’entreprise nécessitant un support technique, une maintenance et des mises à jour de produits continus.
+Dotfuscator Professional est le [brouilleur .net][net-obfuscator] standard, qui convient aux développeurs d’entreprise nécessitant un support continu, une maintenance et des mises à jour de produits.
 De plus, Dotfuscator Professional offre une intégration à Visual Studio plus étroite et est concédé sous licence pour une utilisation commerciale.
 
-Pour plus d’informations sur les fonctionnalités de protection des applications avancées de Dotfuscator Professional, visitez la [page de présentation de Dotfuscator][product-about] de PreEmptive Solutions et [comparez-le à Dotfuscator Community][product-compare].
-[Des essais entièrement pris en charge sont disponibles sur le site preemptive.com][eval].
+Pour plus d’informations sur les fonctionnalités avancées de la protection des applications de Dotfuscator Professional, visitez la [page de présentation][product-about] de la solution PreEmptive Solutions et [Comparez-la à la communauté Dotfuscator][product-compare].
+[Les versions d’évaluation entièrement prises en charge sont disponibles sur Preemptive.com][eval].
 
 ## <a name="see-also"></a>Voir aussi
 
-[Cet article dans le guide complet de l’utilisateur de Dotfuscator Community][full]
+[Cet article dans le guide complet de Dotfuscator Community User][full]
 
 <!-- Copyright © 2019 PreEmptive Solutions, LLC -->
 

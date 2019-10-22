@@ -1,5 +1,5 @@
 ---
-title: IDebugCodeContext::SetBreakPoint | Microsoft Docs
+title: 'IDebugCodeContext :: SetBreakPoint | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7bbfe38c1db9f7c9afff34f5a92b8c43b0f4f9ba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: df2bb0395cc1aeaceda3763b2c4016bbd9ba7e1f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974525"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573212"
 ---
 # <a name="idebugcodecontextsetbreakpoint"></a>IDebugCodeContext::SetBreakPoint
-Définit ou efface un point d’arrêt à ce contexte de code.  
+Définit ou efface un point d’arrêt dans ce contexte de code.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -37,18 +37,18 @@ HRESULT SetBreakPoint(
   
 #### <a name="parameters"></a>Paramètres  
  `bps`  
- [in] Spécifie l’état de point d’arrêt pour ce contexte de code.  
+ dans Spécifie l’état du point d’arrêt pour ce contexte de code.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode définit ou efface un point d’arrêt à ce contexte de code.  
+ Cette méthode définit ou efface un point d’arrêt au niveau de ce contexte de code.  
   
 ## <a name="see-also"></a>Voir aussi  
- [IDebugCodeContext Interface](../../winscript/reference/idebugcodecontext-interface.md)   
+ @No__t_1 de l' [interface IDebugCodeContext](../../winscript/reference/idebugcodecontext-interface.md)  
  [Énumération BREAKPOINT_STATE](../../winscript/reference/breakpoint-state-enumeration.md)

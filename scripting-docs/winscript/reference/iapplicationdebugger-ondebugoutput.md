@@ -1,5 +1,5 @@
 ---
-title: IApplicationDebugger::onDebugOutput | Microsoft Docs
+title: 'IApplicationDebugger :: onDebugOutput | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ffe4d56357a96dac8d5155ac2f8bd5182adef47e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5ebbb7fb9f69af2f0977434a29015d79e8cf9178
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991081"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577845"
 ---
 # <a name="iapplicationdebuggerondebugoutput"></a>IApplicationDebugger::onDebugOutput
 Gère un événement de sortie de débogage.  
@@ -37,12 +37,12 @@ HRESULT onDebugOutput(
   
 #### <a name="parameters"></a>Paramètres  
  `pstr`  
- [in] Chaîne à afficher dans le débogueur.  
+ dans Chaîne à afficher dans le débogueur.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
@@ -52,5 +52,5 @@ HRESULT onDebugOutput(
  Cette méthode est appelée lorsque `IDebugApplication::DebugOutput` est appelée.  
   
 ## <a name="see-also"></a>Voir aussi  
- [IApplicationDebugger (Interface)](../../winscript/reference/iapplicationdebugger-interface.md)   
+ @No__t_1 de l' [interface IApplicationDebugger](../../winscript/reference/iapplicationdebugger-interface.md)  
  [IDebugApplication::DebugOutput](../../winscript/reference/idebugapplication-debugoutput.md)

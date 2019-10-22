@@ -2,19 +2,19 @@
 title: Créer un test codé de l'interface utilisateur
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-author: gewarren
-ms.openlocfilehash: 54ebc36f9dd18010e07403c3b9692b62b2380d99
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+author: jillre
+ms.openlocfilehash: 268d170926e3a60ba0aa5131795f22bb31cd2ba9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976315"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659643"
 ---
-# <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>Procédure pas à pas : Créer, modifier et gérer un test codé de l’interface utilisateur
+# <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>Procédure pas à pas : créer, modifier et gérer un test codé de l’interface utilisateur
 
 Dans cette procédure pas à pas, vous allez apprendre à créer, modifier et gérer un test codé de l’interface utilisateur pour tester une application WPF (Windows Presentation Framework). La procédure pas à pas fournit des solutions pour corriger des tests interrompus par différents problèmes de synchronisation et de refactorisation des contrôles.
 
@@ -111,7 +111,7 @@ Dans cette procédure pas à pas, vous allez apprendre à créer, modifier et g�
 2. Recherchez et sélectionnez le modèle de projet **Projet de test codé de l’interface utilisateur** et continuez les étapes jusqu’à ce que le projet soit créé.
 
    > [!NOTE]
-   > Si vous ne voyez pas le modèle **Projet de test codé de l’interface utilisateur**, vous devez [installer le composant de test codé de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
+   > Si vous ne voyez pas le modèle **projet de test codé de l’interface utilisateur**, vous devez [installer le composant de test codé de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
 
      Le nouveau projet de test codé de l’interface utilisateur nommé **CodedUITestProject1** est ajouté à votre solution et la boîte de dialogue **Générer le code pour le test codé de l’interface utilisateur** s’affiche.
 
@@ -166,7 +166,7 @@ Dans cette procédure pas à pas, vous allez apprendre à créer, modifier et g�
 
 ## <a name="edit-and-rerun-the-coded-ui-test"></a>Modifier et réexécuter le test codé de l’interface utilisateur
 
-1. Dans la fenêtre de l’**Explorateur de tests**, sélectionnez le test qui a échoué et, dans la section **StackTrace**, choisissez le premier lien vers **UIMap.SimpleAppTest()**.
+1. Dans la fenêtre de l’**Explorateur de tests**, sélectionnez le test qui a échoué et, dans la section **StackTrace**, choisissez le premier lien vers **UIMap.SimpleAppTest()** .
 
 2. Le fichier *UIMap.Designer.cs* s’ouvre avec le point d’erreur mis en surbrillance dans le code :
 
@@ -249,7 +249,7 @@ Dans cette procédure pas à pas, vous allez apprendre à créer, modifier et g�
 
      Le test échoue parce que le test codé de l'interface utilisateur ne trouve pas le contrôle Button mappé à l'origine dans UIMap comme button1. La refactorisation peut avoir un impact sur les tests codés de l'interface utilisateur de cette manière.
 
-5. Dans l’**Explorateur de tests**, dans la section **StackTrace**, choisissez le premier lien en regard de **UIMpa.ModifiedSimpleAppTest()**.
+5. Dans l’**Explorateur de tests**, dans la section **StackTrace**, choisissez le premier lien en regard de **UIMpa.ModifiedSimpleAppTest()** .
 
      Le fichier *UIMap.cs* s’ouvre. Le point d'erreur est mis en surbrillance dans le code :
 
@@ -264,7 +264,7 @@ Dans cette procédure pas à pas, vous allez apprendre à créer, modifier et g�
 
 ## <a name="map-refactored-control-rerun-the-test"></a>Mapper le contrôle refactorisé pour réexécuter le test
 
-1. Dans le fichier *CodedUITest1.cs*, dans la méthode **CodedUITestMethod1()**, cliquez avec le bouton droit, sélectionnez **Générer le code pour le test codé de l’interface utilisateur**, puis choisissez **Utiliser le générateur de test codé de l’interface utilisateur**.
+1. Dans le fichier *CodedUITest1.cs*, dans la méthode **CodedUITestMethod1()** , cliquez avec le bouton droit, sélectionnez **Générer le code pour le test codé de l’interface utilisateur**, puis choisissez **Utiliser le générateur de test codé de l’interface utilisateur**.
 
      La boîte de dialogue **UIMap - Générateur de test codé de l’interface utilisateur** s’affiche.
 

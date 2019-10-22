@@ -18,16 +18,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be22786a78c16dc9ffa05aba38075e4762485d2d
-ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
+ms.openlocfilehash: ddfc17d4f9bcb1f4f2585aa91319f06be6936e6f
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68533314"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72431470"
 ---
-# <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>Débogage de la préparation : Projets console (C#, C++, Visual Basic, F#)
+# <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>Préparation du débogage : projets console (C#, C++, Visual Basic, F#)
 
-La préparation du débogage d’un projet de console est semblable à la préparation du débogage d’un projet Windows, avec des considérations supplémentaires telles que la définition des arguments de ligne de commande et la façon de suspendre l’application pour le débogage. Pour plus d’informations, consultez [Windows Forms](../debugger/debugging-preparation-windows-forms-applications.md)des applications [et préparation du débogage: Applications Windows Forms (.NET)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100)). En raison de la similarité de toutes les applications console, cette rubrique couvre les types de projets suivants :
+La préparation du débogage d’un projet de console est semblable à la préparation du débogage d’un projet Windows, avec des considérations supplémentaires telles que la définition des arguments de ligne de commande et la façon de suspendre l’application pour le débogage. Pour plus d’informations, consultez [les Applications Windows Forms](../debugger/debugging-preparation-windows-forms-applications.md), et [préparation du débogage : applications Windows Forms (.NET)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100)) En raison de la similarité de toutes les applications console, cette rubrique couvre les types de projets suivants :
 
 - C#, Visual Basic et F# application console
 
@@ -39,7 +39,7 @@ La préparation du débogage d’un projet de console est semblable à la prépa
 
 ## <a name="set-command-line-arguments"></a>Définir les arguments de ligne de commande
 
-Vous pouvez être amené à spécifier des arguments de ligne de commande pour votre application console. Pour plus d’informations, consultez [paramètres de projet C++ pour une configuration](../debugger/project-settings-for-a-cpp-debug-configuration.md)de débogage, [paramètres de projet pour une configuration](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)de débogage Visual Basic ou [paramètres de projet pour les configurations de C# débogage](../debugger/project-settings-for-csharp-debug-configurations.md).
+Vous pouvez être amené à spécifier des arguments de ligne de commande pour votre application console. Pour plus d’informations, consultez [paramètres de projet C++ pour une configuration de débogage](../debugger/project-settings-for-a-cpp-debug-configuration.md), [paramètres de projet pour une configuration](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)de débogage Visual Basic ou [paramètres de projet pour les configurations de C# débogage](../debugger/project-settings-for-csharp-debug-configurations.md).
 
 Comme toutes les propriétés de projet, ces arguments persistent entre les sessions de débogage et celles de Visual Studio. Par conséquent, si vous avez débogué précédemment l’application console, n’oubliez pas qu’il existe peut-être des arguments provenant des sessions précédentes dans la boîte de dialogue **Pages de propriétés de \<Projet>** .
 
@@ -49,7 +49,7 @@ Comme toutes les propriétés de projet, ces arguments persistent entre les sess
 
 - Définissez un point d’arrêt dans votre code et démarrez votre application.
 
-- Démarrez votre application en  utilisant F10 > (déboguer > **pas à pas principal**) ou **F11** (**pas à pas détaillé dans**), puis parcourez le code à l’aide d’autres options, telles que **Exécuter jusqu’au clic**.
+- Démarrez votre application à l’aide de la touche **F10** (**déboguer** > **pas à pas principal**) ou **F11** (**Déboguer** > **pas à pas**détaillé), puis parcourez le code en utilisant d’autres options telles que **exécuter pour cliquer**.
 
 - Dans l’éditeur de code, cliquez avec le bouton droit sur une ligne et sélectionnez **Exécuter jusqu’au curseur**.
 
@@ -60,7 +60,7 @@ Comme toutes les propriétés de projet, ces arguments persistent entre les sess
 ## <a name="see-also"></a>Voir aussi
 - [Débogage du code natif](../debugger/debugging-native-code.md)
 - [Débogage du code managé](../debugger/debugging-managed-code.md)
-- [Types de projets Visual C++](../debugger/debugging-preparation-visual-cpp-project-types.md)
+- [Préparer le débogage C++ de projets](../debugger/debugging-preparation-visual-cpp-project-types.md)
 - [Types de projets C#, F# et Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)
 - [Paramètres de projet pour une configuration Debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [Sécurité du débogueur](../debugger/debugger-security.md)

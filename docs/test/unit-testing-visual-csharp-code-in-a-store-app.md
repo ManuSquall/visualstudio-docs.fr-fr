@@ -2,19 +2,19 @@
 title: Tests unitaires du code Visual C#
 ms.date: 09/27/2019
 ms.topic: conceptual
-ms.author: gewarren
-author: gewarren
+ms.author: jillfra
+author: jillre
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 0a724ab273401994faeb88ae197966ef538e842a
-ms.sourcegitcommit: 13decf878b33fc0c5d665a88067170c2861b261b
+ms.openlocfilehash: 309cf408167cc463db8cde9e39d5c0fe4dbe26d6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/30/2019
-ms.locfileid: "71681593"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659846"
 ---
-# <a name="unit-test-c-code"></a>Test unitaire du code C#
+# <a name="unit-test-c-code"></a>Test unitaire de code C#
 
 Cet article décrit une méthode permettant de créer des tests unitaires pour une classe C# dans une application UWP.
 
@@ -30,7 +30,7 @@ Cet article illustre le *développement piloté par les tests*. Dans cette appro
 
 3. Nommez les **maths**du projet.
 
-4. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur la solution et choisissez **Ajouter** > **nouveau projet**.
+4. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur la solution et choisissez **Ajouter**  > **nouveau projet**.
 
 5. Recherchez et sélectionnez le modèle de projet **Application de tests unitaires (Windows universel)** .
 
@@ -66,7 +66,7 @@ Cet article illustre le *développement piloté par les tests*. Dans cette appro
 
 ## <a name="add-the-rooter-class-to-the-maths-project"></a>Ajouter la classe Rooter au projet Maths
 
-1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le projet **maths** , puis choisissez **Ajouter**une**classe** > .
+1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le projet **maths** , puis choisissez **Ajouter** une**classe** > .
 
 2. Nommez le fichier de classe *Rooter.cs*.
 
@@ -86,7 +86,7 @@ Cet article illustre le *développement piloté par les tests*. Dans cette appro
 
    La classe **racine** déclare un constructeur et la méthode d’estimateur de **SquareRoot** . La méthode **SquareRoot** n’est qu’une implémentation minimale, juste assez pour tester la structure de base de la configuration des tests.
 
-4. Ajoutez le mot clé `public` à la déclaration de classe du **rooteur** , afin que le code de test puisse y accéder.
+4. Ajoutez le mot clé `public` à la déclaration de classe du **rooteur** afin que le code de test puisse y accéder.
 
    ```csharp
    public class Rooter
@@ -96,7 +96,7 @@ Cet article illustre le *développement piloté par les tests*. Dans cette appro
 
 1. Ajoutez une référence du projet RooterTests à l’application maths.
 
-    1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le projet **RooterTests** , puis choisissez **Ajouter**une**référence** > .
+    1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le projet **RooterTests** , puis choisissez **Ajouter** une**référence**de  > .
 
     2. Dans la boîte de dialogue **Ajouter une référence - RooterTests**, développez **Solution**, puis choisissez **Projets**. Sélectionnez le projet **maths** .
 
@@ -270,4 +270,4 @@ La méthode **rangetest a échoué** code en dur le dénominateur de la variable
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Procédure pas à pas : Développement piloté par les tests à l’aide de l’Explorateur de tests @ no__t-0
+- [Procédure pas à pas : développement piloté par les tests à l’aide de l’Explorateur de tests](quick-start-test-driven-development-with-test-explorer.md)

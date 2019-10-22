@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Utiliser les contrôles natifs au moment de l’exécution | Microsoft Docs'
+title: 'Comment : utiliser les contrôles natifs au moment de l’exécution | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -37,15 +37,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aeebdd8a86cb8ca6ffc1358a8558654d1e4d0b92
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 3cef755721a9c5b917b080fa10f1819055a18ed7
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211020"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72430557"
 ---
-# <a name="how-to-use-native-run-time-checks"></a>Procédure : Utiliser les vérifications natives à l’exécution
-En Visual C++, vous pouvez utiliser des [runtime_checks](/cpp/preprocessor/runtime-checks) natifs pour dépister les erreurs d’exécution courantes, telles que :
+# <a name="how-to-use-native-run-time-checks"></a>Comment : utiliser les contrôles natifs à l'exécution
+Dans un projet Visual C++ Studio, vous pouvez utiliser le [runtime_checks](/cpp/preprocessor/runtime-checks) natif pour intercepter les erreurs d’exécution courantes, telles que :
 
 - Un pointeur de pile détérioré.
 

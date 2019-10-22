@@ -3,23 +3,23 @@ title: Explorateur de schémas XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2fc39e98-b194-456b-a452-cfafb0a52d66
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 717a5d85a9d3a3251739b62728be572bee1487f6
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 9350e4ca41661e6bc9613d036ad4dd2a978a706d
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926783"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72608096"
 ---
 # <a name="xml-schema-explorer"></a>Explorateur de schémas XML
 
-L' **Explorateur de schémas XML** est intégré à Microsoft Visual Studio et à l’éditeur XML pour vous permettre d’utiliser des schémas en langage XSD (XML Schema Definition). Lorsque vous ouvrez un fichier de schéma XML, le nœud **jeu de schémas** s’affiche dans l' **Explorateur de schémas XML**. Tous les schémas inclus, importés ou redéfinis pour votre fichier cible, ainsi que tous les fichiers référencés via une `include` instruction ou `import` , apparaissent également dans l’Explorateur de **schémas XML**.
+L' **Explorateur de schémas XML** est intégré à Microsoft Visual Studio et à l’éditeur XML pour vous permettre d’utiliser des schémas en langage XSD (XML Schema Definition). Lorsque vous ouvrez un fichier de schéma XML, le nœud **jeu de schémas** s’affiche dans l' **Explorateur de schémas XML**. Tous les schémas inclus, importés ou redéfinis pour votre fichier cible, ainsi que tous les fichiers référencés via une instruction `include` ou `import`, s’affichent également dans l' **Explorateur de schémas XML**.
 
-L' **Explorateur de schémas XML** vous permet d’effectuer les opérations suivantes:
+L' **Explorateur de schémas XML** vous permet d’effectuer les opérations suivantes :
 
 - obtenir une vue d'ensemble rapide du jeu de schémas ;
 
@@ -35,7 +35,7 @@ L' **Explorateur de schémas XML** vous permet d’effectuer les opérations sui
 
 - générer un exemple de code XML pour les éléments globaux.
 
-L' **Explorateur de schémas XML** fournit une vue hiérarchique du jeu de schémas via une arborescence. L' **Explorateur de schémas XML** fournit également des opérations de recherche, de filtrage, de navigation et de tri. Pour accéder à l' **Explorateur de schémas XML**, effectuez l’une des opérations suivantes:
+L' **Explorateur de schémas XML** fournit une vue hiérarchique du jeu de schémas via une arborescence. L' **Explorateur de schémas XML** fournit également des opérations de recherche, de filtrage, de navigation et de tri. Pour accéder à l' **Explorateur de schémas XML**, effectuez l’une des opérations suivantes :
 
 - Si vous êtes dans la [vue de départ](../xml-tools/start-view.md), cliquez sur le lien **Explorateur de schémas XML** .
 
@@ -80,4 +80,4 @@ La suppression de fichiers sur la vue ajoute tous les nœuds globaux dans le fic
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Guide pratique : Ajouter des nœuds à l’espace de travail à partir de l’Explorateur de schémas XML](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)
+- [Procédure : ajouter des nœuds à l’espace de travail à partir de l’Explorateur de schémas XML](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)

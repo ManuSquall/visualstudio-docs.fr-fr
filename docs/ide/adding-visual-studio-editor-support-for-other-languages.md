@@ -11,17 +11,17 @@ helpviewer_keywords:
 - TextMate language grammar
 - language support
 ms.assetid: d78c43ee-4ef2-42e5-984e-d137de4e7e92
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ae0b2f606b4fe04ad390712f48ac1e06ff9bb86
-ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
-ms.translationtype: HT
+ms.openlocfilehash: 4e43325a6d749653c063c06f2c1c10c69f708da9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65805328"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647797"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Ajouter la prise en charge de l’éditeur Visual Studio pour d’autres langages
 
@@ -39,7 +39,7 @@ Actuellement, Visual Studio fournit la prise en charge de la coloration syntaxiq
 |-|-|-|-|-|-|
 |Bat|F#|Java|Markdown|Rust|Visual Basic|
 |Clojure|Go|JavaDoc|Objective-C|ShaderLab|C#|
-|CMake|Groovy|JSON|Perl|ShellScript|Visual C++|
+|CMake|Groovy|JSON|Perl|ShellScript|Visual C++|
 |CoffeeScript|HTML|LESS|Python|SQL|VBNet|
 |CSS|INI|LUA|R|Swift|XML|
 |Docker|Jade|Make|Ruby|TypeScript|YAML|
@@ -76,11 +76,11 @@ Sous ce chemin de base, ajoutez les dossiers suivants s’ils s’appliquent à 
 
 |Nom du dossier|Description|
 |-----------------|-----------------|
-|\\*\<nom_langage>*|Dossier du langage. Remplacez *\<nom_langage>* par le nom du langage. Par exemple, *\Matlab*.|
+|\\ *\<nom_langage>*|Dossier du langage. Remplacez *\<nom_langage>* par le nom du langage. Par exemple, *\Matlab*.|
 |*\Syntaxes*|Dossier de la grammaire. Contient les fichiers *.json* de grammaire du langage, tels que *Matlab.json*.|
 |*\Extraits de code*|Dossier des extraits de code. Contient les extraits de code du langage.|
 
-Dans Windows, la résolution de *%userprofile%* donne le chemin suivant : *c:\Users\\\<nom_utilisateur>*. Si le dossier *Extensions* n’existe pas sur votre système, vous devrez le créer. Si le dossier existe déjà, il est masqué.
+Dans Windows, la résolution de *%userprofile%* donne le chemin suivant : *c:\Users\\\<nom_utilisateur>* . Si le dossier *Extensions* n’existe pas sur votre système, vous devrez le créer. Si le dossier existe déjà, il est masqué.
 
 > [!TIP]
 > S’il y a des fichiers ouverts dans l’éditeur, vous devrez les fermer et les rouvrir pour afficher la coloration syntaxique après avoir ajouté les grammaires TextMate.
@@ -90,5 +90,5 @@ Pour plus d’informations sur la création de grammaires TextMate, voir [TextMa
 ## <a name="see-also"></a>Voir aussi
 
 - [Ajouter une extension du protocole de serveur de langage](../extensibility/adding-an-lsp-extension.md)
-- [Procédure pas à pas : Créer un extrait de code](../ide/walkthrough-creating-a-code-snippet.md)
-- [Procédure pas à pas : Afficher la saisie semi-automatique des instructions](../extensibility/walkthrough-displaying-statement-completion.md)
+- [Procédure pas à pas : créer un extrait de code](../ide/walkthrough-creating-a-code-snippet.md)
+- [Procédure pas à pas : afficher la saisie semi-automatique des instructions](../extensibility/walkthrough-displaying-statement-completion.md)

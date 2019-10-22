@@ -8,17 +8,17 @@ helpviewer_keywords:
 - /Clean Devenv switch
 - Devenv, /Clean switch
 ms.assetid: 79929dfd-22c9-4cec-a0d0-a16f15b8f7e4
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 810f05b0838f27004bee983dc0acf7a3009e22a0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 5f46a17371f0c83d3bdb3873c0138eca87c6b3d5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62573090"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72663822"
 ---
 # <a name="clean-devenvexe"></a>/Clean (devenv.exe)
 
@@ -34,7 +34,7 @@ devenv SolutionName /Clean [Config [/Project ProjName [/ProjectConfig ProjConfig
 
 - *SolutionName*
 
-  Obligatoire. Chemin complet et nom du fichier solution.
+  Requis. Chemin complet et nom du fichier solution.
 
 - *Config*
 
@@ -52,7 +52,7 @@ devenv SolutionName /Clean [Config [/Project ProjName [/ProjectConfig ProjConfig
 
   Optionnel. Nom du fichier auquel vous souhaitez envoyer la sortie de l’outil. Si le fichier existe déjà, l’outil ajoute la sortie à la fin du fichier.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
 Ce commutateur a la même fonction que la commande de menu **Nettoyer la Solution** dans l’environnement IDE.
 

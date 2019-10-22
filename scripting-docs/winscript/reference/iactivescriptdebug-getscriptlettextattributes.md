@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptDebug::GetScriptletTextAttributes | Microsoft Docs
+title: 'IActiveScriptDebug :: GetScriptletTextAttributes | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 781282b5c825954ada4fbb35daa2a97b379c3f13
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6a5dd9e219e51b001659225636396fe45ac815b9
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955040"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572804"
 ---
 # <a name="iactivescriptdebuggetscriptlettextattributes"></a>IActiveScriptDebug::GetScriptletTextAttributes
 Retourne les attributs de texte pour un scriptlet arbitraire.  
@@ -41,41 +41,41 @@ HRESULT GetScriptletTextAttributes(
   
 #### <a name="parameters"></a>Paramètres  
  `pstrCode`  
- [in] Le texte de scriptlet. Cette chaîne ne doit pas être null s’est arrêté.  
+ dans Texte scriptlet. Il n’est pas nécessaire que cette chaîne se termine par null.  
   
  `uNumCodeChars`  
- [in] Le nombre de caractères dans le texte de scriptlet.  
+ dans Nombre de caractères dans le texte scriptlet.  
   
  `pstrDelimiter`  
- [in] Adresse du délimiteur de fin de scriptlet. Lorsque `pstrCode` est analysé à partir d’un flux de texte, l’hôte utilise généralement un délimiteur, telles que les deux guillemets («), pour détecter la fin du scriptlet. Ce paramètre spécifie le délimiteur utilisé par l’hôte, ce qui permet au moteur de script fournir un prétraitement primitif conditionnel (par exemple, en remplaçant un guillemet simple ['] par deux guillemets simples à utiliser comme délimiteur). Exactement comment (et si) le moteur script utilise ces informations varient selon le moteur de script. Définissez ce paramètre avec la valeur NULL si l’hôte n’utilisez pas un séparateur pour marquer la fin du scriptlet.  
+ dans Adresse du délimiteur de fin de scriptlet. Lorsque `pstrCode` est analysé à partir d’un flux de texte, l’hôte utilise généralement un délimiteur, tel que deux guillemets simples (' '), pour détecter la fin du scriptlet. Ce paramètre spécifie le délimiteur utilisé par l’hôte, ce qui permet au moteur de script de fournir un prétraitement de primitive conditionnelle (par exemple, en remplaçant un guillemet simple ['] par deux guillemets simples à utiliser comme délimiteur). Exactement comment (et si) le moteur de script utilise ces informations dépend du moteur de script. Affectez la valeur NULL à ce paramètre si l’hôte n’a pas utilisé de délimiteur pour marquer la fin du scriptlet.  
   
  `dwFlags`  
- [in] Indicateurs associés au scriptlet. Peut être une combinaison des valeurs suivantes :  
+ dans Indicateurs associés au scriptlet. Peut être une combinaison de ces valeurs :  
   
-|Constante|Value|Description|  
+|Constante|valeur|Description|  
 |--------------|-----------|-----------------|  
 |GETATTRTYPE_DEPSCAN|0x0001|Indique que les identificateurs et les opérateurs point doivent être identifiés avec les indicateurs SOURCETEXT_ATTR_IDENTIFIER et SOURCETEXT_ATTR_MEMBERLOOKUP, respectivement.|  
-|GETATTRFLAG_THIS|0x0100|Indique que l’identificateur pour l’objet actif doit être identifié avec l’indicateur SOURCETEXT_ATTR_THIS.|  
-|GETATTRFLAG_HUMANTEXT|0x8000|Indique que le texte de commentaire et de contenu de chaîne doit être identifié avec l’indicateur SOURCETEXT_ATTR_HUMANTEXT.|  
+|GETATTRFLAG_THIS|0x0100|Indique que l’identificateur de l’objet actuel doit être identifié avec l’indicateur SOURCETEXT_ATTR_THIS.|  
+|GETATTRFLAG_HUMANTEXT|0x8000|Indique que le contenu de chaîne et le texte de commentaire doivent être identifiés avec l’indicateur SOURCETEXT_ATTR_HUMANTEXT.|  
   
  `pattr`  
- [in, out] Mémoire tampon pour contenir les attributs retournés.  
+ [in, out] Mémoire tampon qui contient les attributs retournés.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
 ## <a name="remarks"></a>Notes  
- Un hôte intelligent qui implémente `IDebugDocumentText` interface pouvez utiliser cette méthode pour déléguer des appels à la `IDebugDocumentText::GetText` (méthode).  
+ Un hôte actif qui implémente `IDebugDocumentText` interface peut utiliser cette méthode pour déléguer des appels à la méthode `IDebugDocumentText::GetText`.  
   
- Cet appel est fourni, car les scriptlets ont tendance à être des expressions et peut avoir une syntaxe différente d’un bloc de script. S’ils ont la même syntaxe, l’implémentation de cette méthode sera identique à l’implémentation de la `GetScriptTextAttributes` (méthode).  
+ Cet appel est fourni car les scriptlets ont tendance à être des expressions et peuvent avoir une syntaxe différente de celle d’un bloc de script. Si elles ont la même syntaxe, l’implémentation de cette méthode sera identique à l’implémentation de la méthode `GetScriptTextAttributes`.  
   
 ## <a name="see-also"></a>Voir aussi  
- [IActiveScriptDebug (Interface)](../../winscript/reference/iactivescriptdebug-interface.md)   
- [IActiveScriptDebug::GetScriptTextAttributes](../../winscript/reference/iactivescriptdebug-getscripttextattributes.md)   
- [IDebugDocumentText Interface](../../winscript/reference/idebugdocumenttext-interface.md)   
- [IDebugDocumentText::GetText](../../winscript/reference/idebugdocumenttext-gettext.md)   
+ @No__t_1 de l' [interface IActiveScriptDebug](../../winscript/reference/iactivescriptdebug-interface.md)  
+ [IActiveScriptDebug :: GetScriptTextAttributes](../../winscript/reference/iactivescriptdebug-getscripttextattributes.md)    
+ @No__t_1 de l' [interface IDebugDocumentText](../../winscript/reference/idebugdocumenttext-interface.md)  
+ [IDebugDocumentText :: GetText](../../winscript/reference/idebugdocumenttext-gettext.md)    
  [Énumération SOURCE_TEXT_ATTR](../../winscript/reference/source-text-attr-enumeration.md)

@@ -1,5 +1,5 @@
 ---
-title: 'CA2204 : Les littéraux doivent être correctement orthographiés | Microsoft Docs'
+title: 'CA2204 : les littéraux doivent être orthographiés correctement | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,49 +12,49 @@ helpviewer_keywords:
 - CA2204
 ms.assetid: b0bbcbb6-c92d-4c14-8ef7-9c8b38c791a6
 caps.latest.revision: 21
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: a08cb7cee2af51ade4b94dbf675ff83d7da456e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d3e94f308936f898e555b1ad38e6a9d50051a276
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68142506"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659539"
 ---
-# <a name="ca2204-literals-should-be-spelled-correctly"></a>CA2204 : Les littéraux doivent être orthographiés correctement
+# <a name="ca2204-literals-should-be-spelled-correctly"></a>CA2204 : Les littéraux doivent être correctement orthographiés
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|LiteralsShouldBeSpelledCorrectly|
 |CheckId|CA2204|
-|Catégorie|Microsoft.Usage|
+|Category|Microsoft. usage|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
- Une méthode passe une chaîne littérale qui est utilisée dans un paramètre ou une propriété qui nécessite une chaîne localisée et la chaîne littérale contient un ou plusieurs mots qui ne sont pas reconnus par la bibliothèque de vérificateur d’orthographe Microsoft.
+ Une méthode passe une chaîne littérale à qui est utilisée dans un paramètre ou une propriété qui requiert une chaîne localisée et la chaîne littérale contient un ou plusieurs mots qui ne sont pas reconnus par la bibliothèque du vérificateur d’orthographe Microsoft.
 
 ## <a name="rule-description"></a>Description de la règle
- Cette règle recherche une chaîne littérale qui est passée en tant que valeur à un paramètre ou une propriété lorsqu’un ou plusieurs des cas suivants est vrai :
+ Cette règle vérifie une chaîne littérale transmise en tant que valeur à un paramètre ou à une propriété lorsqu’un ou plusieurs des cas suivants sont vrais :
 
-- Le <xref:System.ComponentModel.LocalizableAttribute> attribut du paramètre ou de propriété est définie sur true.
+- L’attribut <xref:System.ComponentModel.LocalizableAttribute> du paramètre ou de la propriété a la valeur true.
 
-- Le nom de paramètre ou une propriété contient « Text », « Message » ou « Caption ».
+- Le nom du paramètre ou de la propriété contient « Text », « message » ou « Caption ».
 
-- Le nom du paramètre de chaîne qui est passé à une méthode Console.Write ou Console.WriteLine est « value » ou « format ».
+- Le nom du paramètre de chaîne passé à une méthode Console. Write ou console. WriteLine est « value » ou « format ».
 
-  Cette règle analyse la chaîne littérale en mots, jetons de mots composés et vérifie l’orthographe de chaque mot/jeton. Pour plus d’informations sur l’algorithme d’analyse, consultez [CA1704 : Les identificateurs doivent être correctement orthographiés](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
+  Cette règle analyse la chaîne littérale en mots, en jetons des mots composés et vérifie l’orthographe de chaque mot/jeton. Pour plus d’informations sur l’algorithme d’analyse, consultez [CA1704 : les identificateurs doivent être orthographiés correctement](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
 
   Par défaut, la version anglaise (en) du vérificateur d’orthographe est utilisée.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, corrigez l’orthographe du mot ou ajoutez le mot au dictionnaire personnalisé. Pour plus d’informations sur l’utilisation des dictionnaires personnalisés, consultez [Comment : Personnaliser le dictionnaire d’analyse du Code](../code-quality/how-to-customize-the-code-analysis-dictionary.md).
+ Pour corriger une violation de cette règle, corrigez l’orthographe du mot ou ajoutez le mot à un dictionnaire personnalisé. Pour plus d’informations sur l’utilisation des dictionnaires personnalisés, consultez [Comment : personnaliser le dictionnaire d’analyse du code](../code-quality/how-to-customize-the-code-analysis-dictionary.md).
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Ne supprimez aucun avertissement de cette règle. Mots épelés correctement réduisent la courbe d’apprentissage nécessaire pour les nouvelles bibliothèques de logiciels.
+ Ne supprimez aucun avertissement de cette règle. Les mots correctement orthographiés réduisent la courbe d’apprentissage requise pour les nouvelles bibliothèques logicielles.
 
 ## <a name="related-rules"></a>Règles associées
  [CA1704 : Les identificateurs doivent être correctement orthographiés](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
 
- [CA1703 : Chaînes de ressources doivent être correcte](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+ [CA1703 : Les chaînes de ressources doit être orthographiées correctement](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)

@@ -1,5 +1,5 @@
 ---
-title: IPerPropertyBrowsing2::GetPredefinedStrings | Microsoft Docs
+title: 'IPerPropertyBrowsing2 :: GetPredefinedStrings | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5a5f71ba91c65a8d99d831c777fc47fe9233fc18
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 55ade724dd9ee5d59feb9d04c5b525ca839a9cec
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944855"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576770"
 ---
 # <a name="iperpropertybrowsing2getpredefinedstrings"></a>IPerPropertyBrowsing2::GetPredefinedStrings
-Permet à l’appelant à remplir une zone de liste avec un tableau compté de pointeurs de chaîne qui représentent les valeurs possibles pour cette propriété.  
+Permet à l’appelant de remplir une zone de liste avec un tableau compté de pointeurs de chaîne qui représentent les valeurs potentielles de cette propriété.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -39,16 +39,16 @@ HRESULT GetPredefinedStrings(
   
 #### <a name="parameters"></a>Paramètres  
  `dispid`  
- [in] Identificateur de dispatch de la propriété pour laquelle l’appelant demande la liste de chaînes.  
+ dans Identificateur de dispatch de la propriété pour laquelle l’appelant demande la liste de chaînes.  
   
  `pCaStrings`  
- [out] Pointeur vers une structure de tableau alloué par l’appelant, compté qui contient le nombre d’éléments et l’adresse d’un tableau alloué à la méthode de pointeurs de chaîne. Si la méthode échoue, aucune mémoire est allouée, et le contenu de la structure n’est pas défini.  
+ à Pointeur vers une structure de tableau compté, allouée par l’appelant, qui contient le nombre d’éléments et l’adresse d’un tableau alloué par méthode de pointeurs de chaîne. Si la méthode échoue, aucune mémoire n’est allouée et le contenu de la structure n’est pas défini.  
   
  `pCaCookies`  
- [out] Pointeur vers la structure de tableau alloué par l’appelant, compté qui contient le nombre d’éléments et l’adresse d’un tableau alloué à la méthode de valeurs de type DWORD. Si la méthode échoue, aucune mémoire est allouée, et le contenu de la structure n’est pas défini.  
+ à Pointeur vers la structure de tableau compté, allouée par l’appelant, qui contient le nombre d’éléments et l’adresse d’un tableau alloué par méthode de DWORDs. Si la méthode échoue, aucune mémoire n’est allouée et le contenu de la structure n’est pas défini.  
   
 ## <a name="return-value"></a>Valeur de retour  
- Retourne une liste valide `HRESULT`, généralement `S_OK`.  
+ Retourne un `HRESULT` valide, généralement `S_OK`.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface 1 IPerPropertyBrowsing2](../../winscript/reference/iperpropertybrowsing2-interface-1.md)

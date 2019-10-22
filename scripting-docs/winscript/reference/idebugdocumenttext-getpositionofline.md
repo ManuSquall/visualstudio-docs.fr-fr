@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText::GetPositionOfLine | Microsoft Docs
+title: 'IDebugDocumentText :: GetPositionOfLine | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4cfcfc771c49abbf837f4db898936e478cda2194
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: adf4add99ac41440e6f4daa491b72166e97b5ba5
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970846"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572105"
 ---
 # <a name="idebugdocumenttextgetpositionofline"></a>IDebugDocumentText::GetPositionOfLine
 Retourne la position de caractère correspondant au premier caractère d’une ligne.  
@@ -38,20 +38,20 @@ HRESULT GetPositionOfLine(
   
 #### <a name="parameters"></a>Paramètres  
  `cLineNumber`  
- [in] Numéro de ligne.  
+ dans Numéro de ligne.  
   
  `pcCharacterPosition`  
- [out] La position de caractère dans le document du début de la ligne `cLineNumber`.  
+ à Position du caractère dans le document du début de la ligne `cLineNumber`.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode retourne la position de caractère correspondant au premier caractère d’une ligne.  
+ Cette méthode retourne la position du caractère correspondant au premier caractère d’une ligne.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IDebugDocumentText](../../winscript/reference/idebugdocumenttext-interface.md)

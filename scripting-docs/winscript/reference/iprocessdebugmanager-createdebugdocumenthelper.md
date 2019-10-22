@@ -1,5 +1,5 @@
 ---
-title: IProcessDebugManager::CreateDebugDocumentHelper | Microsoft Docs
+title: 'IProcessDebugManager :: CreateDebugDocumentHelper | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 38de1e828ccd1715fb83cc76c06ba837818d2af0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a009fa5174ab897116c02b91e376e2dc41d67600
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002357"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577094"
 ---
 # <a name="iprocessdebugmanagercreatedebugdocumenthelper"></a>IProcessDebugManager::CreateDebugDocumentHelper
-Crée une nouvelle assistance de document de débogage pour cette application.  
+Crée une nouvelle application d’assistance de débogage pour cette application.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -38,20 +38,20 @@ HRESULT CreateDebugDocumentHelper(
   
 #### <a name="parameters"></a>Paramètres  
  `punkOuter`  
- [in] Si l’objet retourné est à agréger, `punkOuter` est un pointeur d’interface vers le contrôle `IUnknown`. Sinon, c’est un pointeur null.  
+ dans Si l’objet retourné doit être agrégé, `punkOuter` est un pointeur d’interface vers le `IUnknown` de contrôle. Dans le cas contraire, il s’agit d’un pointeur null.  
   
  `pddh`  
- [out] Objet d’assistance de document de débogage pour cette application.  
+ à Objet d’assistance de document de débogage pour cette application.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode crée une nouvelle assistance de document de débogage pour cette application.  
+ Cette méthode crée une nouvelle application d’assistance pour le document de débogage pour cette application.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IProcessDebugManager](../../winscript/reference/iprocessdebugmanager-interface.md)

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Tools.ImportandExportSettings
 - Import and Export Settings command
 ms.assetid: 94a06468-a44d-403d-a931-77bbc9d06e56
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b9be5826edf0d7220d30ce5c4a99f333c2ab8b67
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 0be61d8690c0605f6e7773efe02f5db351110f9a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953216"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72658776"
 ---
 # <a name="import-and-export-settings-command"></a>Importation et exportation de paramètres (commande)
 
@@ -44,7 +44,7 @@ Optionnel. Importe les paramètres figurant dans le fichier spécifié.
 
 Optionnel. Réinitialise les paramètres actuels.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
 L’exécution de cette commande sans commutateur ouvre l’Assistant **Importation et exportation de paramètres**. Pour plus d’informations, consultez [Synchroniser vos paramètres](../synchronized-settings-in-visual-studio.md) et [Paramètres d’environnement](../environment-settings.md).
 

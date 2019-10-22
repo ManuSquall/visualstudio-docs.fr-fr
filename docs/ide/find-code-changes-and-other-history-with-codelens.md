@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.All_Languages.CodeLens
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 62ea3402a053ed57280ddbc946d79d27ab35f944
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: da45af92a11cfe61d5027d0710304e57ad657e48
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62980533"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72653852"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Rechercher les modifications de code et d'autres historiques avec CodeLens
 
@@ -23,7 +23,7 @@ CodeLens vous permet de rester concentré sur votre travail pendant que vous che
 ::: moniker range=">=vs-2019"
 
 > [!NOTE]
-> Les indicateurs CodeLens de contrôle de code source ne sont pas disponibles dans l’édition Visual Studio Community.
+> CodeLens est disponible dans Visual Studio Community Edition. Toutefois, les indicateurs de *contrôle de code source* ne sont pas disponibles dans cette édition.
 
 ::: moniker-end
 
@@ -93,7 +93,7 @@ Les indicateurs de niveau élément de code permettent de voir qui a modifié le
 
 C’est ce que vous voyez quand vous utilisez Team Foundation Version Control (TFVC) dans Team Foundation Server ou Azure DevOps Services :
 
-![CodeLens : Obtenir l'historique des modifications de votre code dans TFVC](../ide/media/codelens-code-changes.png)
+![CodeLens : obtenir l'historique des modifications de votre code dans TFVC](../ide/media/codelens-code-changes.png)
 
 La période prise en charge par défaut s'étend sur les 12 derniers mois. Si votre code est stocké dans Team Foundation Server, vous pouvez changer la période de temps en exécutant la [commande TFSConfig](/tfs/server/ref/command-line/tfsconfig-cmd) avec la [commande CodeIndex](../ide/codeindex-command.md) et l’indicateur **/indexHistoryPeriod**.
 
@@ -107,13 +107,13 @@ La fenêtre **Historique** s’ouvre :
 
 Quand vos fichiers sont dans un dépôt Git et que vous choisissez l’indicateur de modifications de niveau élément de code, voici ce que vous voyez :
 
-![CodeLens : Obtenir l'historique des modifications de votre code dans Git](../ide/media/codelens-code-changes-git.png)
+![CodeLens : obtenir l’historique des modifications de votre code dans Git](../ide/media/codelens-code-changes-git.png)
 
 ### <a name="file-level-indicators"></a>Indicateurs de niveau fichier
 
 Recherchez les modifications pour un fichier entier dans les indicateurs de niveau fichier au bas de la fenêtre :
 
-![CodeLens : obtenir des détails sur le fichier de code](../ide/media/codelens-file-level.png)
+![CodeLens : obtenir des détails sur le fichier de code](../ide/media/codelens-file-level.png)
 
 > [!NOTE]
 > Les indicateurs de niveau fichier ne sont pas disponibles pour les fichiers C# et Visual Basic.
@@ -122,13 +122,13 @@ Pour obtenir plus d'informations sur une modification, cliquez avec le bouton dr
 
 Vous pouvez également voir qui a modifié votre code au fil du temps. Cette fonctionnalité vous permet de découvrir des modèles dans les modifications effectuées par votre équipe, et d’en évaluer l’impact.
 
-![CodeLens : voir l’historique des modifications du code sous forme de graphe](../ide/media/codelens.png)
+![CodeLens : voir l'historique des modifications du code sous forme de graphique](../ide/media/codelens.png)
 
 ### <a name="find-changes-in-your-current-branch"></a>Rechercher des modifications dans votre branche actuelle
 
 Votre équipe peut avoir plusieurs branches, par exemple une branche principale et une branche de développement enfant, pour réduire le risque d’endommager le code stable.
 
-![CodeLens : Savoir quand une branche a été créée dans votre code](../ide/media/codelensfirstbranchconceptual.png)
+![CodeLens : Trouver quand une branche a été créée dans votre code](../ide/media/codelensfirstbranchconceptual.png)
 
 Vous pouvez trouver combien de personnes ont modifié votre code et combien de modifications ont été apportées dans la branche principale en appuyant sur **Alt**+**6** :
 
@@ -138,11 +138,11 @@ Vous pouvez trouver combien de personnes ont modifié votre code et combien de m
 
 Pour trouver quand une branche a été créée dans votre code, accédez à votre code dans la branche enfant. Ensuite, sélectionnez l’indicateur **Modifications** ou appuyez sur**Alt**+**6** :
 
-![CodeLens : Savoir quand une branche a été créée dans votre code](../ide/media/codelens-first-branch.png)
+![CodeLens : Trouver quand une branche a été créée dans votre code](../ide/media/codelens-first-branch.png)
 
 ### <a name="find-incoming-changes-from-other-branches"></a>Rechercher les modifications entrantes d'autres branches
 
-![CodeLens : rechercher les modifications de code dans d’autres branches](../ide/media/codelensbranchchangecheckinconceptual.png)
+![CodeLens : trouver les modifications de code dans d'autres branches](../ide/media/codelensbranchchangecheckinconceptual.png)
 
 Vous pouvez voir les modifications entrantes. Dans la capture d’écran ci-dessous, une résolution de bogue a été effectuée dans la branche « Dev » :
 
@@ -150,7 +150,7 @@ Vous pouvez voir les modifications entrantes. Dans la capture d’écran ci-dess
 
 Vous pouvez examiner cette modification sans quitter votre branche active (« Main ») :
 
-![CodeLens : voir les modifications entrantes d’une autre branche](../ide/media/codelens-branch-changes-main.png)
+![CodeLens : voir les modifications entrantes d'une autre branche](../ide/media/codelens-branch-changes-main.png)
 
 ### <a name="find-when-changes-got-merged"></a>Savoir quand des modifications ont été fusionnées
 
@@ -166,7 +166,7 @@ Par exemple, votre code dans la branche Main contient maintenant la résolution 
 
 Comparez une modification entrante à votre version locale en appuyant sur **Maj**+**F10**, ou en double-cliquant sur l’ensemble de modifications.
 
-![CodeLens : comparer la modification entrante à la version locale](../ide/media/codelens-branch-incoming-change-menu.png)
+![CodeLens : Comparer la modification entrante et la modification locale](../ide/media/codelens-branch-incoming-change-menu.png)
 
 ### <a name="branch-icons"></a>Icônes de branche
 
@@ -174,14 +174,14 @@ L’icône dans la colonne **Branche** vous indique comment la branche est liée
 
 |**Icône**|**La modification provient de :**|
 |--------------| - |
-|![CodeLens : icône Changer à partir de la branche actuelle](../ide/media/codelensbranchcurrenticon.png)|La branche actuelle|
-|![CodeLens : icône Changer à partir de la branche parente](../ide/media/codelensbranchparenticon.png)|La branche parente|
+|![CodeLens - icône Changer à partir de la branche actuelle](../ide/media/codelensbranchcurrenticon.png)|La branche actuelle|
+|![CodeLens : icône Modification provenant de la branche parent](../ide/media/codelensbranchparenticon.png)|La branche parente|
 |![CodeLens : icône Changer à partir de la branche enfant](../ide/media/codelensbranchchildicon.png)|Un branche enfant|
-|![CodeLens : icône Changer à partir d’une branche homologue](../ide/media/codelensbranchpeericon.png)|Une branche homologue|
-|![CodeLens : icône Changer à partir d’une branche plus éloignée](../ide/media/codelensbranchfurtherawayicon.png)|Une branche plus éloignée qu'un parent, enfant ou homologue|
+|![CodeLens : icône Modification provenant d’une branche appairée](../ide/media/codelensbranchpeericon.png)|Une branche homologue|
+|![CodeLens : icône Modification provenant d’une branche plus éloignée](../ide/media/codelensbranchfurtherawayicon.png)|Une branche plus éloignée qu'un parent, enfant ou homologue|
 |![CodeLens : icône Fusionner à partir du parent](../ide/media/codelensbranchmergefromparenticon.png)|Une fusion de la branche parente à une branche enfant|
-|![CodeLens : icône Fusionner à partir de la branche enfant](../ide/media/codelensbranchmergefromchildicon.png)|Une fusion d'une branche enfant à la branche parente|
-|![CodeLens : icône Fusionner à partir d’une branche sans relation](../ide/media/codelensbranchmergefromunrelatedicon.png)|Une fusion d'une branche sans relation (fusion sans base)|
+|![CodeLens - icône Fusionner à partir de la branche enfant](../ide/media/codelensbranchmergefromchildicon.png)|Une fusion d'une branche enfant à la branche parente|
+|![CodeLens - icône Fusionner à partir d’une branche sans relation](../ide/media/codelensbranchmergefromunrelatedicon.png)|Une fusion d'une branche sans relation (fusion sans base)|
 
 ## <a name="linked-work-items"></a>Éléments de travail liés.
 
@@ -246,11 +246,11 @@ Pour utiliser le clavier pour sélectionner des indicateurs, maintenez enfoncée
 > [!NOTE]
 > Pour sélectionner l’indicateur **Revues**, maintenez enfoncée la touche **Alt** tout en utilisant les touches Gauche et Droite pour naviguer.
 
-## <a name="q--a"></a>Questions et réponses
+## <a name="q--a"></a>Q et R
 
-### <a name="q-how-do-i-turn-codelens-off-or-on-or-choose-which-indicators-to-see"></a>Q : Comment activer ou désactiver CodeLens, ou choisir les indicateurs à afficher ?
+### <a name="q-how-do-i-turn-codelens-off-or-on-or-choose-which-indicators-to-see"></a>Q : Comment faire activer ou désactiver CodeLens ou choisir les indicateurs à afficher ?
 
-**R :**  Vous pouvez activer ou désactiver les indicateurs, sauf l’indicateur des références. Accédez à **Outils** > **Options** > **Éditeur de texte** > **Tous les langages** > **CodeLens**.
+**R :**  Vous pouvez activer ou désactiver les indicateurs, à l'exception de l'indicateur des références. Accédez à **Outils** > **Options** > **Éditeur de texte** > **Tous les langages** > **CodeLens**.
 
 Lorsque les indicateurs sont activés, vous pouvez aussi ouvrir les options CodeLens à partir des indicateurs.
 
@@ -260,9 +260,9 @@ Activez et désactivez les indicateurs de niveau fichier CodeLens à l'aide des 
 
 ![Activer et désactiver les indicateurs au niveau des fichiers](../ide/media/codelensfilelevelonandoff.png)
 
-### <a name="q-where-is-codelens"></a>Q : Où est CodeLens ?
+### <a name="q-where-is-codelens"></a>Q : Où est CodeLens ?
 
-**R :** CodeLens apparaît dans le code C# et Visual Basic, au niveau de la méthode, de la classe, de l’indexeur et de la propriété. CodeLens apparaît au niveau du fichier pour tous les autres types de fichiers.
+**R :** CodeLens apparaît dans le code C# et Visual Basic, au niveau de la méthode, de la classe, de l'indexeur et de la propriété. CodeLens apparaît au niveau du fichier pour tous les autres types de fichiers.
 
 - Assurez-vous que CodeLens est activé. Accédez à **Outils** > **Options** > **Éditeur de texte** > **Tous les langages** > **CodeLens**.
 
@@ -275,7 +275,7 @@ Activez et désactivez les indicateurs de niveau fichier CodeLens à l'aide des 
 ::: moniker range=">=vs-2019"
 
 > [!TIP]
-> Les indicateurs de contrôle de code source ne sont pas disponibles dans l’édition Visual Studio Community.
+> CodeLens est disponible dans Visual Studio Community Edition. Toutefois, les indicateurs de *contrôle de code source* ne sont pas disponibles dans cette édition.
 
 ::: moniker-end
 
@@ -286,13 +286,13 @@ Activez et désactivez les indicateurs de niveau fichier CodeLens à l'aide des 
 
 ::: moniker-end
 
-### <a name="q-why-dont-i-see-the-work-item-details-for-a-commit"></a>Q : Pourquoi est-ce que je ne vois pas les détails d’élément de travail pour une validation ?
+### <a name="q-why-dont-i-see-the-work-item-details-for-a-commit"></a>Q : Pourquoi est-ce que je ne vois pas les détails d'élément de travail pour une validation ?
 
-**R :** Cela peut se produire si CodeLens ne trouve pas les éléments de travail dans Azure Boards ou TFS. Vérifiez que vous êtes connecté au projet contenant ces éléments de travail et que vous disposez des autorisations nécessaires pour les visualiser. Les détails des éléments de travail peuvent ne pas apparaître si la description de la validation comporte des informations incorrectes sur les ID d’élément de travail dans Azure Boards ou dans TFS.
+**R :** cela peut se produire si CodeLens ne trouve pas les éléments de travail dans Azure Boards ou TFS. Vérifiez que vous êtes connecté au projet contenant ces éléments de travail et que vous disposez des autorisations nécessaires pour les visualiser. Les détails des éléments de travail peuvent ne pas apparaître si la description de la validation comporte des informations incorrectes sur les ID d’élément de travail dans Azure Boards ou dans TFS.
 
-### <a name="q-why-dont-i-see-the-skype-indicators"></a>Q : Pourquoi est-ce que je ne vois pas les indicateurs Skype ?
+### <a name="q-why-dont-i-see-the-skype-indicators"></a>Q : Pourquoi est-ce que je ne vois pas les indicateurs Skype ?
 
-**R :** Les indicateurs Skype n’apparaissent pas si vous n’êtes pas connecté à Skype Entreprise, s’il n’est pas installé ou si votre configuration n’est pas prise en charge. Vous pouvez néanmoins envoyer un e-mail :
+**R :** Les indicateurs Skype n’apparaissent pas si vous n’êtes pas connecté à Skype Entreprise, s’il n’est pas installé ou si votre configuration n’est pas prise en charge. Vous pouvez néanmoins envoyer un e-mail :
 
 ![CodeLens - Contacter le propriétaire de l'ensemble de modifications par courrier électronique](../ide/media/codelenscodesendmailchangesetnolync1.png)
 
@@ -304,9 +304,9 @@ Activez et désactivez les indicateurs de niveau fichier CodeLens à l'aide des 
 
 CodeLens ne prend pas en charge l'installation de différentes versions de Lync ou de Skype. Elles peuvent ne pas être localisées pour toutes les versions localisées de Visual Studio.
 
-### <a name="q-how-do-i-change-the-font-and-color-for-codelens"></a>Q : Comment changer la police et la couleur de CodeLens ?
+### <a name="q-how-do-i-change-the-font-and-color-for-codelens"></a>Q : comment changer la police et la couleur de CodeLens ?
 
-**R :** Accédez à **Outils** > **Options** > **Environnement** > **Polices et couleurs**.
+**R :** Accédez à **Outils** > **Options** > **Environnement** > **Polices et couleurs**.
 
 ![CodeLens - Modifier les paramètres de police et de couleurs](../ide/media/codelensoptionsfontscolorssettings.png)
 
@@ -320,35 +320,35 @@ Pour utiliser le clavier :
 
 4. Appuyez sur **Tab** pour accéder à la liste **Afficher les paramètres de**, puis appuyez sur **Bas** pour sélectionner **CodeLens**.
 
-### <a name="q-can-i-move-the-codelens-heads-up-display"></a>Q : Puis-je déplacer l’affichage tête haute CodeLens ?
+### <a name="q-can-i-move-the-codelens-heads-up-display"></a>Q : Puis-je déplacer l'affichage tête haute CodeLens ?
 
-**R :** Oui, choisissez ![Icône Ancre](../ide/media/codelensdockwindow.png) pour ancrer CodeLens en tant que fenêtre.
+**R :** Oui, choisissez ![Icône Ancre](../ide/media/codelensdockwindow.png) pour ancrer CodeLens en tant que fenêtre.
 
 ![Bouton Ancrer dans la fenêtre d’indicateur CodeLens](../ide/media/codelensselectdockwindow.png)
 
 ![Fenêtre ancrée des références CodeLens](../ide/media/codelensreferencesdockedwindow.png)
 
-### <a name="q-how-do-i-refresh-the-indicators"></a>Q : Comment actualiser les indicateurs ?
+### <a name="q-how-do-i-refresh-the-indicators"></a>Q : Comment actualiser les indicateurs ?
 
-**R :** Cela dépend de l’indicateur :
+**R :** cela dépend de l'indicateur :
 
-- **Références** : cet indicateur se met automatiquement à jour quand le code change. Si l’indicateur **Références** est ancré en tant que fenêtre distincte, actualisez-le en sélectionnant **Actualiser** :
+- **Références**: cet indicateur se met automatiquement à jour quand le code change. Si l’indicateur **Références** est ancré en tant que fenêtre distincte, actualisez-le en sélectionnant **Actualiser** :
 
    ![Bouton Actualiser dans les références CodeLens](../ide/media/codelensviewreferencesdocked.png)
 
-- **Équipe** : Actualisez ces indicateurs en sélectionnant **Actualiser les indicateurs d’équipe CodeLens** dans le menu contextuel :
+- **Équipe** : Actualisez ces indicateurs en sélectionnant **Actualiser les indicateurs d’équipe CodeLens** dans le menu contextuel :
 
    ![Élément de menu Actualiser les indicateurs d’équipe CodeLens](../ide/media/codelensrefreshindicatorsfromcode.png)
 
-- **Test** : [Recherchez les tests unitaires pour votre code](#associated-unit-tests) pour actualiser l’indicateur **Test**.
+- **Test** : [Recherchez les tests unitaires pour votre code](#associated-unit-tests) pour actualiser l’indicateur **Test**.
 
-### <a name="q-whats-local-version"></a>Q : Que signifie « Version locale » ?
+### <a name="q-whats-local-version"></a>Q : Que signifie « Version locale » ?
 
-**R :** La flèche **Version locale** pointe vers l’ensemble de modifications le plus récent dans votre version locale d’un fichier. Lorsque le serveur possède des ensembles de modifications plus récents, ils apparaissent au-dessus ou en-dessous de la flèche **Version locale** , selon l'ordre utilisé pour trier les ensembles de modifications.
+**R :** La flèche **Version locale** pointe vers l’ensemble de modifications le plus récent dans votre version locale d’un fichier. Lorsque le serveur possède des ensembles de modifications plus récents, ils apparaissent au-dessus ou en-dessous de la flèche **Version locale** , selon l'ordre utilisé pour trier les ensembles de modifications.
 
-### <a name="q-can-i-manage-how-codelens-processes-code-to-show-history-and-linked-items"></a>Q : Puis-je gérer la façon dont CodeLens traite le code pour afficher l’historique et les éléments liés ?
+### <a name="q-can-i-manage-how-codelens-processes-code-to-show-history-and-linked-items"></a>Q : puis-je gérer la façon dont CodeLens traite le code pour afficher l'historique et les éléments liés ?
 
-**R :** Oui. Si votre code est dans TFS, utilisez la [commande CodeIndex](../ide/codeindex-command.md) avec la [commande TFS Config](/tfs/server/ref/command-line/tfsconfig-cmd).
+**R :** Oui. Si votre code est dans TFS, utilisez la [commande CodeIndex](../ide/codeindex-command.md) avec la [commande TFS Config](/tfs/server/ref/command-line/tfsconfig-cmd).
 
 ### <a name="q-my-codelens-test-indicators-no-longer-appear-in-my-file-when-i-first-open-my-solution-how-can-i-load-them"></a>Q : Mes indicateurs de test CodeLens n’apparaissent plus dans mon fichier quand j’ouvre ma solution pour la première fois. Comment les charger ?
 

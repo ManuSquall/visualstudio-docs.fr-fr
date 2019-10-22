@@ -1,23 +1,23 @@
 ---
-title: 'Procédure : Exporter une texture qui contient des mipmaps'
+title: Guide pratique pour exporter une texture qui contient des mipmaps
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3d1ad14b-44fb-4cf0-a995-5e2f60026524
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5226903112d06d5efa362c61db938124eed8e68
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d3aa73f24a8fc7c3a5fceb9094acec2f9c6b80f9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62897316"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72635494"
 ---
-# <a name="how-to-export-a-texture-that-contains-mipmaps"></a>Procédure : Exporter une texture qui contient des mipmaps
+# <a name="how-to-export-a-texture-that-contains-mipmaps"></a>Guide pratique pour exporter une texture qui contient des mipmaps
 
-Le pipeline de contenus d’image peut générer des mipmaps à partir d’une image source dans la phase de génération de votre projet. Pour obtenir certains effets, vous devez parfois spécifier le contenu de l’image de chaque niveau MIP manuellement. Quand vous n’avez pas besoin de spécifier le contenu de l’image de chaque niveau MIP manuellement, la génération de mipmaps au moment de la génération garantit que le contenu mipmap n’est jamais hors synchronisation. Elle élimine également le coût en matière de performances de la génération des mipmaps au moment de l’exécution.
+Le pipeline de contenus d’image peut générer des mipmaps à partir d’une image source dans la phase de génération de votre projet. Pour obtenir certains effets, vous devez parfois spécifier le contenu de l’image de chaque niveau MIP manuellement. Lorsque vous n’avez pas besoin de spécifier le contenu de l’image de chaque niveau MIP manuellement, la génération de des mipmaps au moment de la génération garantit que le contenu mipmap n’est jamais désynchronisé. Cela élimine également le coût de performance lié à la génération de des mipmaps au moment de l’exécution.
 
 Cet article couvre les sujets suivants :
 
@@ -37,7 +37,7 @@ Le mipmapping fournit automatiquement le niveau de détail de l’espace à l’
 
    La page des propriétés de configuration du **Pipeline de contenus d’image** apparaît.
 
-3. Configurez le pipeline de contenus d’image pour générer des mipmaps. Dans la page **Propriétés de configuration** > **Pipeline de contenus d’image** > **Général**, définissez la propriété **Générer des mips** sur **Oui (/generatemips)**.
+3. Configurez le pipeline de contenus d’image pour générer des mipmaps. Dans la page **Propriétés de configuration** > **Pipeline de contenus d’image** > **Général**, définissez la propriété **Générer des mips** sur **Oui (/generatemips)** .
 
 4. Sélectionnez **OK**.
 

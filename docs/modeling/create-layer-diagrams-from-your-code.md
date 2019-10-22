@@ -7,17 +7,17 @@ helpviewer_keywords:
 - dependency diagrams
 - diagrams - modeling, layer
 - constraints, architectural
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4a4d2c1600558e4c31c6dd12b85f931a83e7ba7
-ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
+ms.openlocfilehash: 573d03761bc4d8ccddf666dbc39cb8301d7c9afa
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70766225"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654129"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Créer des diagrammes de dépendance à partir de votre code
 
@@ -27,7 +27,7 @@ Pour visualiser l’architecture logique de haut niveau de votre système logici
 
 Un diagramme de dépendance vous permet d’organiser les éléments de solution Visual Studio en groupes logiques abstraits appelés *couches*. Vous pouvez utiliser les couches pour décrire des tâches importantes que ces artefacts effectuent ou bien les principaux composants du système. Chaque couche peut contenir d'autres couches qui décrivent des tâches plus détaillées. Vous pouvez également spécifier les *dépendances* prévues ou existantes entre les couches. Ces dépendances, qui sont représentées par des flèches, indiquent quels couches peuvent utiliser ou utilisent actuellement la fonctionnalité représentée par d'autres couches. Pour maintenir le contrôle architecturel du code, affichez les dépendances prévues sur le diagramme, puis validez le code par rapport au diagramme.
 
-[Vidéo : Valider vos dépendances d’architecture en temps réel](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
+[Vidéo : valider vos dépendances d’architecture en temps réel](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
 
 ## <a name="CreateDiagram"></a>Créer un diagramme de dépendance
 
@@ -70,7 +70,7 @@ Avant de créer un diagramme de dépendances, assurez-vous que votre solution po
 
 4. Créer un nouveau diagramme de dépendance pour la solution à l’aide du menu **architecture**
 
-5. Sélectionnez tous les nœuds sur la carte de code (utilisez _CTRL_ + _A_ou utilisez la sélection de la bande caoutchoutée en appuyant sur la touche _MAJ_ avant de cliquer, faire glisser et relâcher.
+5. Sélectionnez tous les nœuds sur la carte de code (utilisez _Ctrl_  + _A_ou utilisez la sélection de la bande caoutchoutée en appuyant sur la touche _MAJ_ avant de cliquer, faire glisser et relâcher.
 
 6. Glisser-déplacer, ou copier et coller, les éléments sélectionnés dans le nouveau diagramme de validation des dépendances.
 
@@ -85,11 +85,11 @@ Avant de créer un diagramme de dépendances, assurez-vous que votre solution po
 
  Pour voir si un élément lié prend en charge la validation, ouvrez l' **Explorateur de couches** et examinez la propriété **prend en charge la validation** de l’élément. Consultez [gestion des liens vers les artefacts](#Managing).
 
-|**To**|**Procédez comme suit**|
+|**Pour**|**Procédez comme suit**|
 |-|-|
 |Créer une couche pour un artefact unique|<ol><li>Faites glisser l’élément sur le diagramme de dépendance à partir de ces sources :<br /><br /> <ul><li>**Explorateur de solutions**<br /><br />         Par exemple, vous pouvez faire glisser des fichiers ou des projets.</li><li>Cartes de code<br /><br />         Consultez [mapper les dépendances entre vos solutions](../modeling/map-dependencies-across-your-solutions.md) et [utiliser des cartes de code pour déboguer vos applications](../modeling/use-code-maps-to-debug-your-applications.md).</li><li>Explorateur d' **objets** ou de **affichage de classes**</li></ul><br />     Une couche s’affiche sur le diagramme et est liée à l’artefact.</li><li>Renommez la couche pour refléter les responsabilités du code ou des artefacts associés.</li></ol> **Important :**  Le fait de faire glisser des fichiers binaires vers le diagramme de dépendance n’ajoute pas automatiquement leurs références au projet de modélisation. Vous devez ajouter manuellement au projet de modélisation les fichiers binaires que vous voulez valider. **Pour ajouter des fichiers binaires au projet de modélisation** <ol><li>Dans **Explorateur de solutions**, ouvrez le menu contextuel du projet de modélisation, puis choisissez **Ajouter un élément existant**.</li><li>Dans la boîte de dialogue **Ajouter un élément existant** , accédez aux fichiers binaires, sélectionnez-les, puis choisissez **OK**.     Les fichiers binaires s'affichent dans le projet de modélisation.</li><li>Dans **Explorateur de solutions**, choisissez un fichier binaire que vous avez ajouté, puis appuyez sur **F4** pour ouvrir la fenêtre **Propriétés** .</li><li>Sur chaque fichier binaire, définissez la propriété **action de génération** sur **valider**.</li></ol>|
 |Créer une couche unique pour tous les artefacts sélectionnés|Faites glisser tous les artefacts vers le diagramme de dépendances en même temps.<br /><br /> Une couche qui est liée à tous les artefacts s’affiche sur le diagramme.|
-|Créer une couche pour chaque artefact sélectionné|Maintenez la touche **MAJ** enfoncée tout en faisant glisser en même temps tous les artefacts vers le diagramme de dépendance. **Remarque :**  Si vous utilisez la touche **MAJ** pour sélectionner une plage d’éléments, relâchez la touche après avoir sélectionné les artefacts. Appuyez de nouveau sur celle-ci et maintenez-la enfoncée lorsque vous faites glisser les artefacts vers le diagramme. <br /><br /> Une couche s'affiche sur le diagramme pour chaque artefact, auquel elle est liée.|
+|Créer une couche pour chaque artefact sélectionné|Maintenez la touche **MAJ** enfoncée tout en faisant glisser en même temps tous les artefacts vers le diagramme de dépendance. **Remarque :**  Si vous utilisez la touche **MAJ** pour sélectionner une plage d’éléments, relâchez la touche après avoir sélectionné les artefacts. Appuyez de nouveau sur celle-ci et maintenez-la enfoncée lorsque vous faites glisser les artefacts vers le diagramme. <br /><br /> Une couche s’affiche sur le diagramme pour chaque artefact, auquel elle est liée.|
 |Ajouter un artefact à une couche|Faites glisser l'artefact vers la couche.|
 |Créer une couche non liée|Dans la **boîte à outils**, développez la section **diagramme de dépendance** , puis faites glisser une **couche** vers le diagramme de dépendance.<br /><br /> Pour ajouter plusieurs couches, double-cliquez sur l'outil. Lorsque vous avez terminé, choisissez l’outil **pointeur** ou appuyez sur la touche **Échap** .<br /><br /> ou<br /><br /> Ouvrez le menu contextuel du diagramme de dépendance, choisissez **Ajouter**, puis **couche**.|
 |Créer des couches imbriquées|Faites glisser une couche existante sur une autre couche.<br /><br /> ou<br /><br /> Ouvrez le menu contextuel d’une couche, choisissez **Ajouter**, puis **couche**.|
@@ -115,11 +115,11 @@ Avant de créer un diagramme de dépendances, assurez-vous que votre solution po
 
 2. Utilisez les tâches suivantes pour gérer ces liens :
 
-|**To**|**Dans l’Explorateur de couches**|
+|**Pour**|**Dans l’Explorateur de couches**|
 |-|-|
 |Supprimer le lien entre la couche et un artefact|Ouvrez le menu contextuel du lien d’artefact, puis choisissez **supprimer**.|
-|Déplacer le lien d'une couche vers une autre|Faites glisser le lien d'artefact vers une couche existante sur le diagramme.<br /><br /> ou<br /><br /> 1.  Ouvrez le menu contextuel du lien d’artefact, puis choisissez **couper**.<br />2.  Dans le diagramme de dépendances, ouvrez le menu contextuel de la couche, puis choisissez **coller**.|
-|Copier le lien d'une couche vers une autre|1.  Ouvrez le menu contextuel du lien d’artefact, puis choisissez **copier**.<br />2.  Dans le diagramme de dépendances, ouvrez le menu contextuel de la couche, puis choisissez **coller**.|
+|Déplacer le lien d'une couche vers une autre|Faites glisser le lien d’artefact vers une couche existante sur le diagramme.<br /><br /> ou<br /><br /> 1. Ouvrez le menu contextuel du lien d’artefact, puis choisissez **couper**.<br />2. dans le diagramme de dépendances, ouvrez le menu contextuel de la couche, puis choisissez **coller**.|
+|Copier le lien d'une couche vers une autre|1. Ouvrez le menu contextuel du lien d’artefact, puis choisissez **copier**.<br />2. dans le diagramme de dépendances, ouvrez le menu contextuel de la couche, puis choisissez **coller**.|
 |Créer une nouvelle couche à partir d’un lien d’artefact existant|Faites glisser le lien d’artefact vers une zone vide sur le diagramme.|
 |Vérifiez qu’un artefact lié prend en charge la validation par rapport au diagramme de dépendance.|Examinez la colonne **prend en charge la validation** du lien d’artefact.|
 
@@ -136,7 +136,7 @@ Avant de créer un diagramme de dépendances, assurez-vous que votre solution po
 ## <a name="EditDependencies"></a>Modifier les couches et les dépendances pour afficher la conception prévue
  Pour décrire les modifications que vous envisagez d’apporter à votre système ou à l’architecture prévue, modifiez le diagramme de dépendance :
 
-|**To**|**Procédez comme suit**|
+|**Pour**|**Procédez comme suit**|
 |-|-|
 |Changer ou restreindre la direction d'une dépendance|Définissez sa propriété **direction** .|
 |Créer de nouvelles dépendances|Utilisez les outils de **dépendance bidirectionnelle** et de **dépendance** .<br /><br /> Pour dessiner plusieurs dépendances, double-cliquez sur l'outil. Lorsque vous avez terminé, choisissez l’outil **pointeur** ou appuyez sur la touche **Échap** .|
@@ -152,15 +152,15 @@ Avant de créer un diagramme de dépendances, assurez-vous que votre solution po
 
 - [Mapper les dépendances à travers vos solutions](../modeling/map-dependencies-across-your-solutions.md)
 
-- [Utiliser des cartes de code pour déboguer vos applications](../modeling/use-code-maps-to-debug-your-applications.md)
+- [Utiliser des cartes du code pour déboguer vos applications](../modeling/use-code-maps-to-debug-your-applications.md)
 
 - [Rechercher des problèmes potentiels à l’aide des analyseurs de carte du code](../modeling/find-potential-problems-using-code-map-analyzers.md)
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Prise en charge d’édition pour les outils d’architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#edition-support-for-architecture-and-modeling-tools)
-- [Vidéo : Valider vos dépendances d’architecture en temps réel](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
-- [Diagrammes de dépendance : Informations de référence](../modeling/layer-diagrams-reference.md)
-- [Diagrammes de dépendance : Recommandations](../modeling/layer-diagrams-guidelines.md)
+- [Vidéo : valider vos dépendances d’architecture en temps réel](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
+- [Diagrammes de dépendance : référence](../modeling/layer-diagrams-reference.md)
+- [Diagrammes de dépendance : recommandations](../modeling/layer-diagrams-guidelines.md)
 - [Validation du code avec des diagrammes de dépendance](../modeling/validate-code-with-layer-diagrams.md)
 - [Visualiser du code](../modeling/visualize-code.md)

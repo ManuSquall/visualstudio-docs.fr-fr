@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptError::GetSourceLineText | Microsoft Docs
+title: 'IActiveScriptError :: GetSourceLineText | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 702f1655b244116e1bb7dca3d5fc90de3d1f5bdf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ded57f97ec40167bac34bf0f288c2e3d15a5c4b7
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955004"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576913"
 ---
 # <a name="iactivescripterrorgetsourcelinetext"></a>IActiveScriptError::GetSourceLineText
-Récupère la ligne dans le fichier source où une erreur s’est produite pendant l’exécution d’un moteur de script un script.  
+Récupère la ligne dans le fichier source où une erreur s’est produite lors de l’exécution d’un script par un moteur de script.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -37,10 +37,10 @@ HRESULT GetSourceLineText(
   
 ## <a name="parameter"></a>Paramètre  
  `pbstrSourceLine`  
- [out] Adresse d’une mémoire tampon qui reçoit la ligne de code source dans lequel l’erreur s’est produite.  
+ à Adresse d’une mémoire tampon qui reçoit la ligne de code source dans laquelle l’erreur s’est produite.  
   
 ## <a name="return-value"></a>Valeur de retour  
- Retourne `S_OK` en cas de réussite, ou `E_FAIL` si la ligne dans le fichier source n’a pas été récupérée.  
+ Retourne `S_OK` en cas de réussite, ou `E_FAIL` si la ligne du fichier source n’a pas été récupérée.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IActiveScriptError](../../winscript/reference/iactivescripterror.md)

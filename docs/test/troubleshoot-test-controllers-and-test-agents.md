@@ -8,15 +8,15 @@ helpviewer_keywords:
 - load tests, test agents
 - troubleshooting, test controllers and agents in load tests
 ms.assetid: 77329348-3a5d-43de-b6cb-90f93296a081
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3ca2a69fc0f5777c34857f6f3da0c7faabcd81ce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 716bc28626e6b408fd618a8ed6c623c5118d7782
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990549"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659921"
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>Stratégies de résolution des problèmes des contrôleurs de test et des agents de test lors de tests de charge
 
@@ -41,7 +41,7 @@ Vous pouvez contrôler le niveau de journalisation sur un ordinateur contrôleur
 
 1. Arrêtez le service du contrôleur de test. À l’invite de commandes, tapez `net stop vsttcontroller`.
 
-2. Ouvrez le fichier *QTController.exe.config*. Ce fichier se trouve dans le répertoire d'installation du contrôleur.
+2. Ouvrez le fichier *QTController. exe. config*. Ce fichier se trouve dans le répertoire d’installation du contrôleur.
 
 3. Modifiez l'entrée pour le commutateur `EqtTraceLevel` dans la section des diagnostics du système du fichier. Votre code doit être semblable au suivant :
 
@@ -86,7 +86,7 @@ Cette procédure s'applique aux processus du contrôleur de test, du service d'a
 
 Lors de la configuration d'un agent de test, vous pouvez recevoir l'erreur suivante :
 
-**Erreur 8110. Impossible de se connecter à l’ordinateur contrôleur spécifié ou d’accéder à l’objet contrôleur.**
+**Erreur 8110. Impossible de se connecter à l’ordinateur contrôleur spécifié ou d’accéder à l’objet contrôleur.**
 
 Cette erreur peut être provoquée par l'installation du contrôleur de test sur un ordinateur doté de plusieurs cartes réseau.
 
@@ -113,7 +113,7 @@ Pour corriger cette erreur, vous devez lier le contrôleur de test à l'une des 
 
 1. Arrêtez le service du contrôleur de test. À l’invite de commandes, tapez `net stop vsttcontroller`.
 
-2. Ouvrez le fichier *QTController.exe.config*. Ce fichier se trouve sous *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
+2. Ouvrez le fichier *QTController. exe. config*. Ce fichier se trouve dans *% ProgramFiles (x86)% \ Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
 3. Ajoutez une entrée pour la propriété `BindTo` aux paramètres d'application. Spécifiez l'adresse IP de la carte réseau à laquelle vous souhaitez lier le contrôleur. Votre code doit être semblable au suivant :
 

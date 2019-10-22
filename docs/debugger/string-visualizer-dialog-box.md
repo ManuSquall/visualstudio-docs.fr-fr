@@ -1,5 +1,5 @@
 ---
-title: Boîte de dialogue Visualiseur de chaîne | Microsoft Docs
+title: Visualiseur de chaîne, boîte de dialogue | Microsoft Docs
 ms.date: 10/10/2018
 ms.custom: seoapril2019
 ms.topic: reference
@@ -20,49 +20,49 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 982db296fd17fb86b4a139e02a9418eeb507cd91
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 10e7e50ffc0cb61bd036bef65c554e8147eecc09
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62902525"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72430822"
 ---
 # <a name="string-visualizer-dialog-box"></a>Visualiseur de chaîne, boîte de dialogue
 
-Lorsque vous déboguez dans Visual Studio, vous pouvez afficher les chaînes avec le visualiseur de chaîne intégrées. Le visualiseur de chaîne indique les chaînes qui sont trop longues pour une fenêtre d’info-bulle ou débogueur de données. Il peut également vous aider à identifier des chaînes mal formés.
+Pendant le débogage dans Visual Studio, vous pouvez afficher les chaînes avec le visualiseur de chaîne intégré. Le visualiseur de chaîne affiche des chaînes qui sont trop longues pour une fenêtre de débogage ou une info-bulle de données. Il peut également vous aider à identifier des chaînes mal formées.
 
-Le visualiseur de chaîne intégrées inclut le texte brut, XML, HTML et JSON options. Vous pouvez également ouvrir intégrés visualiseurs pour d’autres types, tels que [DataSet, DataTable et DataView](../debugger/dataset-visualizer-dialog-box.md) objets, à partir de la **automatique** ou autres fenêtres du débogueur.
+Le visualiseur de chaîne intégré comprend des options de texte brut, XML, HTML et JSON. Vous pouvez également ouvrir des visualiseurs intégrés pour quelques autres types, tels que les objets [DataSet, DataTable et DataView](../debugger/dataset-visualizer-dialog-box.md) , à partir de la fenêtre **automatique** ou d’autres fenêtres du débogueur.
 
 > [!NOTE]
-> Si vous avez besoin inspecter les éléments XAML ou WPF UI dans un visualiseur, consultez ou [propriétés XAML inspecter pendant le débogage](../debugger/inspect-xaml-properties-while-debugging.md) ou [comment utiliser le visualiseur de l’arborescence WPF](../debugger/how-to-use-the-wpf-tree-visualizer.md).
+> Si vous devez inspecter des éléments d’interface utilisateur XAML ou WPF dans un visualiseur, consultez ou [Inspectez les propriétés XAML pendant le débogage](../xaml-tools/inspect-xaml-properties-while-debugging.md) ou [comment utiliser le visualiseur de l’arborescence WPF](../debugger/how-to-use-the-wpf-tree-visualizer.md).
 
-Pour ouvrir le visualiseur de chaîne, vous devez être suspendus pendant le débogage. Pointez sur une variable qui a un texte brut, XML, HTML ou JSON valeur de chaîne, puis sélectionnez l’icône de loupe ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "icône de visualiseur").
+Pour ouvrir le visualiseur de chaîne, vous devez être suspendu pendant le débogage. Pointez sur une variable qui a une valeur de chaîne en texte brut, XML, HTML ou JSON, puis sélectionnez l’icône de loupe ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "Icône de visualiseur").
 
 ## <a name="uielement-list"></a>Liste UIElement
 
-**Expression** champ indique la variable ou l’expression que vous pointez sur.
+Champ **expression** affiche la variable ou l’expression sur laquelle pointe le pointage.
 
-**Valeur** champ affiche la valeur de chaîne. Une valeur vide **valeur** signifie que le visualiseur choisi ne peut pas reconnaître la chaîne. Par exemple, le **visualiseur XML** montre une valeur vide **valeur** pour une chaîne de texte avec les balises XML ou une chaîne JSON. Pour afficher les chaînes qui le visualiseur choisi ne peut pas reconnaître, choisissez le **visualiseur de texte** à la place. Le **visualiseur de texte** affiche le texte brut.
+Champ de **valeur** affiche la valeur de chaîne. Une **valeur** vide signifie que le visualiseur choisi ne peut pas reconnaître la chaîne. Par exemple, le **Visualiseur XML** affiche une **valeur** vide pour une chaîne de texte sans balises XML, ou une chaîne JSON. Pour afficher les chaînes que le visualiseur choisi ne peut pas reconnaître, choisissez le **visualiseur de texte** à la place. Le **visualiseur de texte** affiche le texte brut.
 
 ### <a name="json-string-data"></a>Données de chaîne JSON
 
-Une chaîne JSON correcte est semblable à l’illustration suivante dans le visualiseur JSON. JSON incorrect peut afficher une icône d’erreur (ou est vide si non reconnu). Pour identifier l’erreur JSON, copier et coller la chaîne dans un outil de vérification (linting) JSON tels que [JSLint](https://www.jslint.com/).
+Une chaîne JSON correcte s’apparente à l’illustration suivante dans le visualiseur JSON. Un JSON mal formé peut afficher une icône d’erreur (ou vide si non reconnu). Pour identifier l’erreur JSON, copiez et collez la chaîne dans un outil de non-peluche JSON tel que [JSLint](https://www.jslint.com/).
 
-![Visualiseur de chaîne JSON](../debugger/media/dbg-tips-string-visualizer-json.png "visualiseur de chaîne JSON")
+![Visualiseur de chaîne JSON](../debugger/media/dbg-tips-string-visualizer-json.png "Visualiseur de chaîne JSON")
 
 ### <a name="xml-string-data"></a>Données de chaîne XML
 
-Une chaîne XML bien formée ressemble à l’illustration suivante dans le visualiseur XML. Code XML incorrect peut afficher sans les balises XML, ou est vide si non reconnu.
+Une chaîne XML correctement formée ressemble à l’illustration suivante dans le visualiseur XML. Du code XML incorrect peut s’afficher sans les balises XML, ou vide s’il n’est pas reconnu.
 
-![Visualiseur de chaîne XML](../debugger/media/dbg-string-visualizers-xml.png "visualiseur de chaîne XML")
+![Visualiseur de chaîne XML](../debugger/media/dbg-string-visualizers-xml.png "Visualiseur de chaîne XML")
 
-### <a name="html-string-data"></a>Données de type chaîne HTML
+### <a name="html-string-data"></a>Données de chaîne HTML
 
-Une chaîne HTML bien formée apparaît comme s’affiché dans un navigateur, comme indiqué dans l’illustration suivante. Code HTML mal formé peut afficher en tant que texte brut.
+Une chaîne HTML correcte s’affiche comme si elle était rendue dans un navigateur, comme indiqué dans l’illustration suivante. Le code HTML incorrect peut s’afficher sous forme de texte brut.
 
-![Visualiseur de chaîne HTML](../debugger/media/dbg-string-visualizers-html.png "visualiseur de chaîne HTML")
+![Visualiseur de chaîne HTML](../debugger/media/dbg-string-visualizers-html.png "Visualiseur de chaîne HTML")
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Créer des visualiseurs personnalisés (c#, Visual Basic)](../debugger/create-custom-visualizers-of-data.md)
+- [Créer des visualiseurs personnalisésC#(, Visual Basic)](../debugger/create-custom-visualizers-of-data.md)
 - [Visualisations de données dans Visual Studio pour Mac](/visualstudio/mac/data-visualizations)

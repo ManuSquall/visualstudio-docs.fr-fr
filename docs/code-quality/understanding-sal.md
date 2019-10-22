@@ -8,12 +8,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 61a1f74d964c2d6f43608f23b9898054048bb86b
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: e3740b9a7544d6cc6d5b9eceb548ae66e7d3f474
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018250"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72445598"
 ---
 # <a name="understanding-sal"></a>Présentation de SAL
 
@@ -41,7 +41,7 @@ void * memcpy(
 Pouvez-vous indiquer ce que fait cette fonction ? Lorsqu’une fonction est implémentée ou appelée, certaines propriétés doivent être gérées pour garantir l’exactitude du programme. En examinant simplement une déclaration telle que celle de l’exemple, vous ne savez pas ce qu’elles sont. Sans annotations SAL, vous devez vous appuyer sur la documentation ou des commentaires de code. Voici ce que la documentation MSDN pour `memcpy` dit :
 
 > «Copie le nombre d’octets de SRC vers dest. Si la source et la destination se chevauchent, le comportement de memcpy n’est pas défini. Utilisez memmove pour gérer les régions qui se chevauchent.
-> **Note de sécurité :** Assurez-vous que la mémoire tampon de destination est d'une taille identique ou supérieure à celle de la mémoire tampon source. Pour plus d’informations, consultez éviter les dépassements de mémoire tampon.»
+> **Remarque relative à la sécurité :** Assurez-vous que la taille de la mémoire tampon de destination est supérieure ou égale à la mémoire tampon source. Pour plus d’informations, consultez éviter les dépassements de mémoire tampon.»
 
 La documentation contient quelques bits d’informations qui suggèrent que votre code doit gérer certaines propriétés pour garantir l’exactitude du programme :
 
@@ -82,7 +82,7 @@ Cette implémentation contient une erreur courante. Heureusement, l’auteur du 
 ### <a name="sal-basics"></a>Principes de base du SAL
 SAL définit quatre types de paramètres de base, classés par modèle d’utilisation.
 
-|Catégorie|Annotation de paramètre|Description|
+|Category|Annotation de paramètre|Description|
 |--------------|--------------------------|-----------------|
 |**Entrée de la fonction appelée**|`_In_`|Les données sont passées à la fonction appelée et sont traitées en lecture seule.|
 |**Entrée de la fonction appelée et sortie vers l’appelant**|`_Inout_`|Les données utilisables sont transmises à la fonction et peuvent éventuellement être modifiées.|
@@ -118,7 +118,7 @@ Dans les exemples, l’outil d’analyse de Visual Studio Code est utilisé avec
 
     > **C6387 valeur de paramètre non valide** 'pInte’peut être' 0 ' : Ceci n’est pas conforme à la spécification de la fonction’incalle'.
 
-### <a name="example-the-_in_-annotation"></a>Exemple : Annotation \_In @ no__t-1
+### <a name="example-the-_in_-annotation"></a>Exemple : l’annotation \_In @ no__t-1
 
 L’annotation `_In_` indique que :
 
@@ -156,7 +156,7 @@ void BadInCaller()
 
 Si vous utilisez Visual Studio Code analyse sur cet exemple, il vérifie que les appelants passent un pointeur non null à une mémoire tampon initialisée pour `pInt`. Dans ce cas, le pointeur `pInt` ne peut pas être NULL.
 
-### <a name="example-the-_in_opt_-annotation"></a>Exemple : L’annotation \_In @ no__t-1opt @ no__t-2
+### <a name="example-the-_in_opt_-annotation"></a>Exemple : l’annotation \_In @ no__t-1opt @ no__t-2
 
 `_In_opt_` est identique à `_In_`, sauf que le paramètre d’entrée peut être NULL et, par conséquent, la fonction doit vérifier cela.
 
@@ -184,7 +184,7 @@ void InOptCaller()
 
 Visual Studio Code analyse vérifie que la fonction recherche la valeur NULL avant d’accéder à la mémoire tampon.
 
-### <a name="example-the-_out_-annotation"></a>Exemple : Annotation \_Out @ no__t-1
+### <a name="example-the-_out_-annotation"></a>Exemple : l’annotation \_Out @ no__t-1
 
 `_Out_` prend en charge un scénario courant dans lequel un pointeur non NULL qui pointe vers une mémoire tampon d’élément est passé et la fonction initialise l’élément. L’appelant n’a pas besoin d’initialiser la mémoire tampon avant l’appel ; la fonction appelée promet de l’initialiser avant de retourner la valeur.
 
@@ -210,7 +210,7 @@ void OutCaller()
 
 Visual Studio Code outil d’analyse vérifie que l’appelant passe un pointeur non NULL à une mémoire tampon pour `pInt` et que la mémoire tampon est initialisée par la fonction avant qu’elle ne soit retournée.
 
-### <a name="example-the-_out_opt_-annotation"></a>Exemple : L’annotation \_Out @ no__t-1opt @ no__t-2
+### <a name="example-the-_out_opt_-annotation"></a>Exemple : l’annotation \_Out @ no__t-1opt @ no__t-2
 
 `_Out_opt_` est identique à `_Out_`, sauf que le paramètre peut avoir la valeur NULL et, par conséquent, la fonction doit vérifier cela.
 
@@ -237,7 +237,7 @@ void OutOptCaller()
 
 Visual Studio Code analyse vérifie que cette fonction recherche la valeur NULL avant que `pInt` soit déréférencée, et si `pInt` n’a pas la valeur NULL, que la mémoire tampon est initialisée par la fonction avant son retour.
 
-### <a name="example-the-_inout_-annotation"></a>Exemple : Annotation \_Inout @ no__t-1
+### <a name="example-the-_inout_-annotation"></a>Exemple : l’annotation \_Inout @ no__t-1
 
 `_Inout_` est utilisé pour annoter un paramètre de pointeur qui peut être modifié par la fonction. Le pointeur doit pointer vers des données initialisées valides avant l’appel, et même s’il est modifié, il doit toujours avoir une valeur valide au retour. L’annotation spécifie que la fonction peut lire et écrire librement dans la mémoire tampon d’un élément. L’appelant doit fournir la mémoire tampon et l’initialiser.
 
@@ -268,7 +268,7 @@ void BadInOutCaller()
 
 Visual Studio Code analyse vérifie que les appelants passent un pointeur non NULL à une mémoire tampon initialisée pour `pInt`, et que, avant le retour, `pInt` est toujours non NULL et que la mémoire tampon est initialisée.
 
-### <a name="example-the-_inout_opt_-annotation"></a>Exemple : L’annotation \_Inout @ no__t-1opt @ no__t-2
+### <a name="example-the-_inout_opt_-annotation"></a>Exemple : l’annotation \_Inout @ no__t-1opt @ no__t-2
 
 `_Inout_opt_` est identique à `_Inout_`, sauf que le paramètre d’entrée peut être NULL et, par conséquent, la fonction doit vérifier cela.
 
@@ -297,7 +297,7 @@ void InOutOptCaller()
 
 Visual Studio Code analyse valide que cette fonction vérifie la valeur NULL avant d’accéder à la mémoire tampon, et si `pInt` n’est pas NULL, que la mémoire tampon est initialisée par la fonction avant de retourner.
 
-### <a name="example-the-_outptr_-annotation"></a>Exemple : Annotation \_Outptr @ no__t-1
+### <a name="example-the-_outptr_-annotation"></a>Exemple : l’annotation \_Outptr @ no__t-1
 
 `_Outptr_` est utilisé pour annoter un paramètre destiné à retourner un pointeur.  Le paramètre lui-même ne doit pas avoir la valeur NULL, et la fonction appelée retourne un pointeur non NULL dans celui-ci et ce pointeur pointe vers les données initialisées.
 
@@ -327,7 +327,7 @@ void OutPtrCaller()
 
 Visual Studio Code analyse vérifie que l’appelant passe un pointeur non NULL pour `*pInt`, et que la mémoire tampon est initialisée par la fonction avant qu’elle ne soit retournée.
 
-### <a name="example-the-_outptr_opt_-annotation"></a>Exemple : L’annotation \_Outptr @ no__t-1opt @ no__t-2
+### <a name="example-the-_outptr_opt_-annotation"></a>Exemple : l’annotation \_Outptr @ no__t-1opt @ no__t-2
 
 `_Outptr_opt_` est identique à `_Outptr_`, sauf que le paramètre est facultatif : l’appelant peut passer un pointeur NULL pour le paramètre.
 
@@ -359,7 +359,7 @@ void OutPtrOptCaller()
 
 Visual Studio Code analyse vérifie que cette fonction recherche la valeur NULL avant que `*pInt` soit déréférencé, et que la mémoire tampon est initialisée par la fonction avant qu’elle ne soit retournée.
 
-### <a name="example-the-_success_-annotation-in-combination-with-_out_"></a>Exemple : L’annotation \_Success @ no__t-1 en association avec \_Out @ no__t-3
+### <a name="example-the-_success_-annotation-in-combination-with-_out_"></a>Exemple : l’annotation \_Success @ no__t-1 en association avec \_Out @ no__t-3
 
 Les annotations peuvent être appliquées à la plupart des objets.  En particulier, vous pouvez annoter une fonction entière.  L’une des caractéristiques les plus évidentes d’une fonction est qu’elle peut réussir ou échouer. Mais comme l’association entre une mémoire tampon et sa taille, CC++ /ne peut pas exprimer la réussite ou l’échec de la fonction. À l’aide de l’annotation `_Success_`, vous pouvez indiquer la réussite d’une fonction.  Le paramètre de l’annotation `_Success_` est simplement une expression qui, lorsqu’elle est vraie, indique que la fonction a réussi. L’expression peut être tout ce que l’analyseur d’annotation peut gérer. Les effets des annotations après le retour de la fonction sont applicables uniquement lorsque la fonction est réussie. Cet exemple montre comment `_Success_` interagit avec `_Out_` pour faire la bonne chose. Vous pouvez utiliser le mot clé `return` pour représenter la valeur de retour.
 

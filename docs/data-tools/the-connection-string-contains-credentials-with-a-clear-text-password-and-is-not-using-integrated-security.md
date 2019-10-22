@@ -3,17 +3,17 @@ title: La chaîne de connexion contient des informations d'identification compre
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 501d85af-92e0-4471-b280-8a59c0688575
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b270290c948807ff0f66d3d142312245475cd33c
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 0a8cb18e84263d7b7144764d007a2928956fc77b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65460606"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72641024"
 ---
 # <a name="the-connection-string-contains-credentials-with-a-clear-text-password-and-is-not-using-integrated-security"></a>La chaîne de connexion contient des informations d'identification comprenant un mot de passe en texte clair et n'utilise pas la sécurité intégrée
 
@@ -30,7 +30,7 @@ Lorsque vous travaillez avec des connexions de données qui incluent des informa
 
    La chaîne de connexion est stockée en tant que paramètre d'application. La chaîne de connexion intègre les informations sensibles dans le texte brut. Le fichier DBML ne contient pas les informations sensibles.
 
-- Pour enregistrer la chaîne de connexion sans les informations confidentielles, choisissez **non**.
+- Pour enregistrer la chaîne de connexion sans les informations sensibles, choisissez **non**.
 
    La chaîne de connexion est stockée en tant que paramètre d'application, mais le mot de passe n'est pas inclus.
 

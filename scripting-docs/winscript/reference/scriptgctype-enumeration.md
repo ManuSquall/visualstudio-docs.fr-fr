@@ -11,15 +11,15 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0a5de3ea949203ad7a6dca0ea777fdbc9514ba6d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7fce16c756cf06c8cf01937114402832570a0cd3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840237"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574390"
 ---
 # <a name="scriptgctype-enumeration"></a>SCRIPTGCTYPE, énumération
-Le type de garbage collection à effectuer. Utilisé dans le [IActiveScriptGarbageCollector::CollectGarbage](../../winscript/reference/iactivescriptgarbagecollector-collectgarbage.md) (méthode).  
+Type de garbage collection à effectuer. Utilisé dans la méthode [IActiveScriptGarbageCollector :: CollectGarbage](../../winscript/reference/iactivescriptgarbagecollector-collectgarbage.md) .  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -31,8 +31,8 @@ typedef enum tagSCRIPTGCTYPE {    SCRIPTGCTYPE_NORMAL           = 0,    SCRIPTGC
   
 |||  
 |-|-|  
-|SCRIPTGCTYPE_NORMAL|Effectuer un nettoyage normal. La valeur entière est 0.|  
-|SCRIPTGCTYPE_EXHAUSTIVE|Effectuer un nettoyage exhaustive. La valeur entière est 1.|  
+|SCRIPTGCTYPE_NORMAL|Garbage collection normale. La valeur entière est 0.|  
+|SCRIPTGCTYPE_EXHAUSTIVE|Effectuez des garbage collection exhaustives. La valeur entière est 1.|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Constantes de script actives, énumérations et codes d’erreur](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)

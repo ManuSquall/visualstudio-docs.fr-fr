@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHost::OnCreateDocumentContext | Microsoft Docs
+title: 'IDebugDocumentHost :: OnCreateDocumentContext | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a3b614cdc6aad17ab3a4f6e83927b59390005ac2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3fdfa64f66288cba47dec7c498db15238e55f954
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971093"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72569109"
 ---
 # <a name="idebugdocumenthostoncreatedocumentcontext"></a>IDebugDocumentHost::OnCreateDocumentContext
-Avertit l’hôte qu’un nouveau contexte de document est créé et permet à l’hôte pour éventuellement retourner un contrôle inconnu pour le nouveau contexte.  
+Avertit l’hôte qu’un nouveau contexte de document est en cours de création et permet à l’hôte de retourner éventuellement un contrôle inconnu pour le nouveau contexte.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -37,18 +37,18 @@ HRESULT OnCreateDocumentContext(
   
 #### <a name="parameters"></a>Paramètres  
  `ppunkOuter`  
- [out] Objet qui contrôle le nouveau contexte.  
+ à Objet qui contrôle le nouveau contexte.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
-|`E_NOTIMPL`|L’hôte ne fournit pas un objet de contrôle.|  
+|`E_NOTIMPL`|L’hôte ne fournit pas d’objet de contrôle.|  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode permet à l’hôte à ajouter de nouvelles fonctionnalités pour les contextes de document d’assistance fournies. Cette méthode peut retourner **E_NOTIMPL** ou un objet externe null, auquel cas l’appelant est responsable de la création du contexte.  
+ Cette méthode permet à l’hôte d’ajouter de nouvelles fonctionnalités aux contextes de document fournis par l’assistance. Cette méthode peut retourner **E_NOTIMPL** ou un objet externe null, auquel cas l’appelant est chargé de créer le contexte.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IDebugDocumentHost](../../winscript/reference/idebugdocumenthost-interface.md)

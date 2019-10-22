@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx::GetMemberProperties | Microsoft Docs
+title: 'IDispatchEx :: GetMemberProperties | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f607e06fe3c898a6839c0bbd2d51edee1f0ffb2c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8016eef7b6e0da9b9fc88695db845cba7f608ff3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000795"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574098"
 ---
 # <a name="idispatchexgetmemberproperties"></a>IDispatchEx::GetMemberProperties
 Récupère les propriétés d’un membre.  
@@ -42,9 +42,9 @@ HRESULT GetMemberProperties(
  Identifie le membre. Utilise `GetDispID` ou `GetNextDispID` pour obtenir l’identificateur de dispatch.  
   
  `grfdexFetch`  
- Détermine les propriétés à récupérer. Cela peut être une combinaison des valeurs répertoriées sous `pgrfdex` et/ou une combinaison des valeurs suivantes :  
+ Détermine les propriétés à récupérer. Il peut s’agir d’une combinaison des valeurs listées sous `pgrfdex` et/ou d’une combinaison des valeurs suivantes :  
   
-|Value|Signification|  
+|valeur|Signification|  
 |-----------|-------------|  
 |grfdexPropCanAll|Combine fdexPropCanGet, fdexPropCanPut, fdexPropCanPutRef, fdexPropCanCall, fdexPropCanConstruct et fdexPropCanSourceEvents.|  
 |grfdexPropCannotAll|Combine fdexPropCannotGet, fdexPropCannotPut, fdexPropCannotPutRef, fdexPropCannotCall, fdexPropCannotConstruct et fdexPropCannotSourceEvents.|  
@@ -52,27 +52,27 @@ HRESULT GetMemberProperties(
 |grfdexPropAll|Combine grfdexPropCanAll, grfdexPropCannotAll et grfdexPropExtraAll.|  
   
  `pgrfdex`  
- Adresse d’un `DWORD` qui reçoit les propriétés demandées. Cela peut être une combinaison des valeurs suivantes :  
+ Adresse d’un `DWORD` qui reçoit les propriétés demandées. Il peut s’agir d’une combinaison des valeurs suivantes :  
   
-|Value|Signification|  
+|valeur|Signification|  
 |-----------|-------------|  
 |fdexPropCanGet|Le membre peut être obtenu à l’aide de DISPATCH_PROPERTYGET.|  
 |fdexPropCannotGet|Le membre ne peut pas être obtenu à l’aide de DISPATCH_PROPERTYGET.|  
-|fdexPropCanPut|Le membre peut être défini à l’aide de DISPATCH_PROPERTYGET.|  
-|fdexPropCannotPut|Le membre ne peut pas être défini à l’aide de DISPATCH_PROPERTYGET.|  
+|fdexPropCanPut|Le membre peut être défini à l’aide de DISPATCH_PROPERTYPUT.|  
+|fdexPropCannotPut|Le membre ne peut pas être défini à l’aide de DISPATCH_PROPERTYPUT.|  
 |fdexPropCanPutRef|Le membre peut être défini à l’aide de DISPATCH_PROPERTYPUTREF.|  
 |fdexPropCannotPutRef|Le membre ne peut pas être défini à l’aide de DISPATCH_PROPERTYPUTREF.|  
-|fdexPropNoSideEffects|Le membre n’a pas d’effets secondaires. Par exemple, un débogueur peut en toute sécurité get/set/appel de ce membre sans modifier l’état du script en cours de débogage.|  
+|fdexPropNoSideEffects|Le membre n’a aucun effet secondaire. Par exemple, un débogueur peut obtenir/définir/appeler ce membre sans risque sans modifier l’état du script en cours de débogage.|  
 |fdexPropDynamicType|Le membre est dynamique et peut changer pendant la durée de vie de l’objet.|  
 |fdexPropCanCall|Le membre peut être appelé comme une méthode à l’aide de DISPATCH_METHOD.|  
-|fdexPropCannotCall|Le membre ne peut pas être appelé comme une méthode à l’aide de DISPATCH_METHOD.|  
+|fdexPropCannotCall|Le membre ne peut pas être appelé en tant que méthode à l’aide de DISPATCH_METHOD.|  
 |fdexPropCanConstruct|Le membre peut être appelé en tant que constructeur à l’aide de DISPATCH_CONSTRUCT.|  
 |fdexPropCannotConstruct|Le membre ne peut pas être appelé en tant que constructeur à l’aide de DISPATCH_CONSTRUCT.|  
 |fdexPropCanSourceEvents|Le membre peut déclencher des événements.|  
 |fdexPropCannotSourceEvents|Le membre ne peut pas déclencher d’événements.|  
   
 ## <a name="return-value"></a>Valeur de retour  
- Retourne une des valeurs suivantes :  
+ Retourne l’une des valeurs suivantes :  
   
 |||  
 |-|-|  
@@ -97,6 +97,6 @@ BSTR bstrName;
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Interface IDispatchEx](../../winscript/reference/idispatchex-interface.md)   
- [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
+ @No__t_1 de l' [interface IDispatchEx](../../winscript/reference/idispatchex-interface.md)  
+ [IDispatchEx :: GetDispID](../../winscript/reference/idispatchex-getdispid.md)    
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

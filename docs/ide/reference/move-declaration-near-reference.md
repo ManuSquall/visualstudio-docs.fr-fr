@@ -2,19 +2,19 @@
 title: Déplacer la déclaration de variable près de la référence
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: e23c5c8d6ea0895f9e5a78e726bb7a7cede071bb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c0a82b48a556e26866393661d4b87836db765abb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540594"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666497"
 ---
 # <a name="move-declaration-near-reference-refactoring"></a>Déplacer la déclaration près de la référence (refactorisation)
 
@@ -22,11 +22,11 @@ Cette refactorisation s’applique à :
 
 - C#
 
-**Quoi :** Vous permet de placer des déclarations de variables plus près de leur utilisation.
+**Quoi :** vous permet de déplacer des déclarations de variables plus près de leur utilisation.
 
-**Quand :** Vous avez des déclarations de variables qui peuvent être plus proches.
+**Quand :** vous avez des déclarations de variables qui peuvent être plus proches.
 
-**Pourquoi :** Vous pouvez laisser la déclaration en l’état, mais cela peut provoquer des problèmes de lisibilité ou masquer des informations. Vous pouvez tenter une refactorisation pour améliorer la lisibilité.
+**Pourquoi :** vous pouvez laisser la déclaration telle quelle, mais cela peut provoquer des problèmes de lisibilité ou de masquage des informations. Vous pouvez tenter une refactorisation pour améliorer la lisibilité.
 
 ## <a name="how-to"></a>Procédure
 
@@ -35,7 +35,7 @@ Cette refactorisation s’applique à :
 1. Effectuez ensuite l'une des opérations suivantes :
 
    - **Clavier**
-      - Appuyez sur **Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**, puis sélectionnez **Déplacer la déclaration près de la référence** dans la fenêtre contextuelle d’aperçu.
+      - Appuyez sur **Ctrl**+ **.** pour afficher le menu **Actions rapides et refactorisations**, puis sélectionnez **Déplacer la déclaration près de la référence** dans la fenêtre contextuelle d’aperçu.
    - **Souris**
       - Cliquez avec le bouton droit sur le code, choisissez le menu **Actions rapides et refactorisations**, puis sélectionnez **Déplacer la déclaration près de la référence** dans la fenêtre contextuelle d’aperçu.
 

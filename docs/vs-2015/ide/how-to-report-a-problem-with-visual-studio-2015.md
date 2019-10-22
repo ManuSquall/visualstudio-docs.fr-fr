@@ -6,15 +6,15 @@ ms.prod: visual-studio-dev14
 ms.topic: conceptual
 ms.assetid: 24ecb76e-b7ad-432d-88ab-d9849963465d
 caps.latest.revision: 15
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d8cedd5ab26539d5ebe32aee8df272691dd0a779
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e75215d2693b5fe2bf879c4b293ae853b42905e7
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68186336"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651780"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>Guide pratique pour signaler un problème avec Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Microsoft respecte votre vie privée. Pour plus d’informations sur la façon d
 
 Cliquez sur l’icône des commentaires utilisateur à côté de **Lancement rapide** dans la barre de titre, ou sur **Aide > Envoyer des commentaires > Signaler un problème**.
 
-![Élément de menu Signaler un problème](../ide/media/report-a-problem-menu-item.png "Élément de menu Signaler un problème")
+![Signaler un problème – Élément de menu](../ide/media/report-a-problem-menu-item.png "Signaler un problème – Élément de menu")
 
 ## <a name="describe-the-problem"></a>Décrire le problème
 
@@ -41,7 +41,7 @@ Cliquez sur l’icône des commentaires utilisateur à côté de **Lancement rap
 
 3. Choisissez un secteur qui pose problème dans la liste déroulante. Indiquez l’hypothèse qui vous semble la meilleure si vous n’avez aucune certitude.
 
-   ![Signaler un problème, boîte de dialogue](../ide/media/report-a-problem-dialog.png "Signaler un problème, boîte de dialogue")
+   ![Signaler un problème – Boîte de dialogue](../ide/media/report-a-problem-dialog.png "Signaler un problème – Boîte de dialogue")
 
 ## <a name="provide-a-screenshot-optional"></a>Fournir une capture d’écran (facultatif)
 
@@ -57,7 +57,7 @@ Choisissez **Inclure une capture d’écran** pour envoyer l’écran actuelleme
 
 3. Cliquez sur **Démarrer l’enregistrement** et effectuez les étapes pour reproduire le problème. Quand vous avez terminé, cliquez sur le bouton **Arrêter l’enregistrement** dans la fenêtre flottante.
 
-4. Attendez quelques minutes que Visual Studio collecte et compresse les informations qui ont été enregistrées. La boîte de dialogue ressemble à ceci quand le processus de collection est terminé :
+4. Attendez quelques minutes que Visual Studio collecte et compresse les informations qui ont été enregistrées. La boîte de dialogue ressemble à ceci quand le processus de collecte est terminé :
 
      ![Enregistrer un fichier de trace](../ide/media/record-a-trace-file.png "Enregistrer un fichier de trace")
 

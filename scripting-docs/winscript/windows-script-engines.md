@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1acbc364e9ee2a5a4911564eb6d2c7d4c34de458
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 94fca3befc13e32e6e2859c7b1ef6330af7b812f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415991"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72568942"
 ---
 # <a name="windows-script-engines"></a>Windows Script, moteurs
 Pour implémenter un moteur Microsoft Windows Script, créez un objet OLE COM qui prend en charge les interfaces suivantes.  
@@ -28,7 +28,7 @@ Pour implémenter un moteur Microsoft Windows Script, créez un objet OLE COM qu
 |Interface|Description|  
 |[IActiveScript](../winscript/reference/iactivescript.md)|Fournit les fonctionnalités de script de base. L’implémentation de cette interface est obligatoire.|  
 |[IActiveScriptParse](../winscript/reference/iactivescriptparse.md)|Permet d’ajouter du texte de script, d’évaluer les expressions, etc. L’implémentation de cette interface est facultative. Toutefois, si elle n’est pas implémentée, le moteur de script doit implémenter l’une des interfaces IPersist* pour charger un script.|  
-|IPersist*|Assure la prise en charge de la persistance. Vous devez implémenter au moins une des interfaces suivantes si l’interface [IActiveScriptParse](../winscript/reference/iactivescriptparse.md) n’est pas implémentée.<br /><br /> IPersistStorage : Prend en charge l’attribut DATA={url} dans la balise OBJECT.<br /><br /> IPersistStreamInit : Prend en charge le même attribut qu’`IPersistStorage`, ainsi que l’attributDATA="string-encoded byte stream" dans la balise OBJECT.<br /><br /> IPersistPropertyBag : Prend en charge l’attribut PARAM= dans la balise OBJECT.|  
+|IPersist*|Assure la prise en charge de la persistance. Vous devez implémenter au moins une des interfaces suivantes si l’interface [IActiveScriptParse](../winscript/reference/iactivescriptparse.md) n’est pas implémentée.<br /><br /> IPersistStorage : assure la prise en charge de l’attribut DATA={url} dans la balise OBJECT.<br /><br /> IPersistStreamInit : prend en charge le même attribut qu’`IPersistStorage`, ainsi que l’attributDATA="string-encoded byte stream" dans la balise OBJECT.<br /><br /> IPersistPropertyBag : assure la prise en charge de l’attribut PARAM= dans la balise OBJECT.|  
   
 > [!NOTE]
 > Il est possible que le moteur de script ne soit jamais appelé pour enregistrer ou restaurer un état de script par le biais d’`IPersist*`. Au lieu de cela, l’interface [IActiveScriptParse](../winscript/reference/iactivescriptparse.md) est utilisée avec un appel à [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) pour créer un script vide, puis des scriptlets sont ajoutés et connectés à des événements avec [IActiveScriptParse::AddScriptlet](../winscript/reference/iactivescriptparse-addscriptlet.md). Enfin, du code général est ajouté avec [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md). Néanmoins, un moteur de script doit implémenter au moins une interface `IPersist*` (de préférence `IPersistStreamInit`), car d’autres applications hôtes peuvent tenter de les utiliser.  
@@ -68,7 +68,7 @@ Pour implémenter un moteur Microsoft Windows Script, créez un objet OLE COM qu
 ## <a name="scripting-engine-threading"></a>Threads du moteur de script  
  Un moteur Windows Script pouvant être utilisé dans de nombreux environnements, il est important de conserver son modèle d’exécution le plus flexible possible. Par exemple, un hôte sur un serveur peut avoir besoin de conserver une conception multithread tout en utilisant Windows Script de manière efficace. En même temps, la gestion des threads ne doit pas alourdir un hôte qui n’utilise pas de threads, comme une application type. Pour parvenir à un équilibre approprié, Windows Script limite les méthodes dont dispose un moteur de script à threads libres pour rappeler l’hôte, ce qui libère les hôtes de cette charge.  
   
- Les moteurs de script utilisés sur des serveurs sont généralement implémentés en tant qu’objets COM à threads libres. Cela signifie que les méthodes sur l’interface [IActiveScript](../winscript/reference/iactivescript.md) et ses interfaces associées peuvent être appelées à partir de n’importe quel thread dans le processus, sans marshaling. (Malheureusement, cela signifie également que le moteur de script doit être implémenté en tant que serveur in-process, car OLE ne prend pas en charge le marshaling interprocessus des objets à threads libres.) La synchronisation est la responsabilité du moteur de script. Pour les moteurs de script qui ne sont pas réentrants en interne ou pour les modèles de langage qui ne sont pas multithreads, la synchronisation peut simplement se résumer à la sérialisation de l’accès au moteur de script avec un mutex. Bien entendu, certaines méthodes comme [IActiveScript::InterruptScriptThread](../winscript/reference/iactivescript-interruptscriptthread.md) ne doivent pas être sérialisées de cette façon pour permettre à un script bloqué d’être arrêté à partir d’un autre thread.  
+ Les moteurs de script utilisés sur des serveurs sont généralement implémentés en tant qu’objets COM à threads libres. Cela signifie que les méthodes sur l’interface [IActiveScript](../winscript/reference/iactivescript.md) et ses interfaces associées peuvent être appelées à partir de n’importe quel thread dans le processus, sans marshaling. (Malheureusement, cela signifie également que le moteur de script doit être implémenté en tant que serveur in-process, car OLE ne prend pas actuellement en charge le marshaling interprocessus d’objets à threads libres.) La synchronisation est la responsabilité du moteur de script. Pour les moteurs de script qui ne sont pas réentrants en interne ou pour les modèles de langage qui ne sont pas multithreads, la synchronisation peut simplement se résumer à la sérialisation de l’accès au moteur de script avec un mutex. Bien entendu, certaines méthodes comme [IActiveScript::InterruptScriptThread](../winscript/reference/iactivescript-interruptscriptthread.md) ne doivent pas être sérialisées de cette façon pour permettre à un script bloqué d’être arrêté à partir d’un autre thread.  
   
  Le fait qu’[IActiveScript](../winscript/reference/iactivescript.md) soit généralement à threads libres signifie que l’interface [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) et le modèle objet de l’hôte doivent aussi être à threads libres. Cela rend l’implémentation de l’hôte assez difficile, en particulier dans le cas fréquent où l’hôte est une application Windows monothread avec des contrôles ActiveX monothreads ou de modèle apartment dans son modèle objet. Pour cette raison, les contraintes suivantes sont placées sur l’utilisation de [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) par le moteur de script :  
   
@@ -77,4 +77,4 @@ Pour implémenter un moteur Microsoft Windows Script, créez un objet OLE COM qu
  Le site du script n’est jamais appelé à partir du contexte d’une méthode de contrôle d’état simple des threads (par exemple, la méthode [IActiveScript::InterruptScriptThread](../winscript/reference/iactivescript-interruptscriptthread.md)) ou à partir de la méthode [IActiveScript::Clone](../winscript/reference/iactivescript-clone.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Windows Script, interfaces](../winscript/windows-script-interfaces.md)
+ [Interfaces de script Windows](../winscript/windows-script-interfaces.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugAsyncOperationCallBack::onComplete | Microsoft Docs
+title: 'IDebugAsyncOperationCallBack :: onComplete | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f9e5532a55901d8e29addfee58594645440991f6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a15ae57d64d2b1e7be867c20e9683e4aaa415974
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821870"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573233"
 ---
 # <a name="idebugasyncoperationcallbackoncomplete"></a>IDebugAsyncOperationCallBack::onComplete
 Signale qu’un résultat est disponible à partir d’une opération de débogage asynchrone.  
@@ -34,18 +34,18 @@ HRESULT onComplete();
 ```  
   
 #### <a name="parameters"></a>Paramètres  
- Cette méthode ne prend aucun paramètre.  
+ Cette méthode n’accepte aucun paramètre.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode signale qu’un résultat est disponible à partir d’un `IDebugAsyncOperation` objet. L’événement est déclenché dans le thread de débogueur.  
+ Cette méthode signale qu’un résultat est disponible à partir d’un objet `IDebugAsyncOperation`. L’événement se déclenche dans le thread du débogueur.  
   
 ## <a name="see-also"></a>Voir aussi  
- [IDebugAsyncOperationCallBack (Interface)](../../winscript/reference/idebugasyncoperationcallback-interface.md)   
+ @No__t_1 de l' [interface IDebugAsyncOperationCallBack](../../winscript/reference/idebugasyncoperationcallback-interface.md)  
  [Interface IDebugAsyncOperation](../../winscript/reference/idebugasyncoperation-interface.md)

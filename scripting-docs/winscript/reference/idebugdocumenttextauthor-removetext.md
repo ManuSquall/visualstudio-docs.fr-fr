@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextAuthor::RemoveText | Microsoft Docs
+title: 'IDebugDocumentTextAuthor :: RemoveText | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 989031a6d4b207c69d1a58b2ff99e5797a629440
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 119a55d4ebd20e51890358ef8c5780a2ac8e4509
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63007761"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572048"
 ---
 # <a name="idebugdocumenttextauthorremovetext"></a>IDebugDocumentTextAuthor::RemoveText
 Supprime le texte du document.  
@@ -38,15 +38,15 @@ HRESULT RemoveText(
   
 #### <a name="parameters"></a>Paramètres  
  `cCharacterPosition`  
- [in] Démarrer l’emplacement de la plage de caractères à supprimer.  
+ dans Emplacement de début de la plage de caractères à supprimer.  
   
  `cNumToRemove`  
- [in] Nombre de caractères à supprimer.  
+ dans Nombre de caractères à supprimer.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
@@ -54,5 +54,5 @@ HRESULT RemoveText(
  Cette méthode supprime le texte du document.  
   
 ## <a name="see-also"></a>Voir aussi  
- [IDebugDocumentTextAuthor Interface](../../winscript/reference/idebugdocumenttextauthor-interface.md)   
+ @No__t_1 de l' [interface IDebugDocumentTextAuthor](../../winscript/reference/idebugdocumenttextauthor-interface.md)  
  [IDebugDocumentTextAuthor::InsertText](../../winscript/reference/idebugdocumenttextauthor-inserttext.md)

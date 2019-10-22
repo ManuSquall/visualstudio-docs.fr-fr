@@ -6,14 +6,14 @@ ms.technology: vs-ide-test
 ms.topic: conceptual
 ms.assetid: 0fa335fd-e442-448f-913f-25a19df90a93
 caps.latest.revision: 8
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 93a62b6fe5493b78a3c18c1adb87761cdb894670
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: e8b3ea10b96a63bd18098030dc884ac3f3383353
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871560"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72657182"
 ---
 # <a name="using-microsoftvisualstudiotesttoolsunittesting-members-in-unit-tests"></a>Utilisation des membres Microsoft.VisualStudio.TestTools.UnitTesting dans les tests unitaires
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Le framework de test unitaire prend en charge le test unitaire dans [!INCLUDE[vs
 > `[TestClassAttribute()]`
 
 ### <a name="elements-used-for-data-driven-testing"></a>Éléments utilisés pour les tests pilotés par les données
- Utilisez les éléments suivants pour configurer des tests unitaires pilotés par les données. Pour plus d’informations, [consultez Procédure: Créer un test](../test/how-to-create-a-data-driven-unit-test.md) unitaire piloté par les données [et une procédure pas à pas: Utilisation d’un fichier de configuration pour définir une](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)source de données.
+ Utilisez les éléments suivants pour configurer des tests unitaires pilotés par les données. Pour plus d’informations, consultez [Guide pratique pour créer un test unitaire piloté par les données](../test/how-to-create-a-data-driven-unit-test.md) et [Procédure pas à pas : utilisation d’un fichier de configuration pour définir une source de données](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md).
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataAccessMethod>
 

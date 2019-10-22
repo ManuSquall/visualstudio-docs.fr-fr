@@ -21,59 +21,49 @@ helpviewer_keywords:
 - Task List, comment tasks
 ms.assetid: 88327e04-fa3e-48db-995b-ad89e0dc4ed2
 caps.latest.revision: 20
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0d24556be75547a4944ad1faca47c4545f8812ba
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 72e5f82fa3ca4b7ca909ee07e5b77a31b3e20879
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63410051"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72650974"
 ---
 # <a name="task-list-environment-options-dialog-box"></a>Liste des tâches, Environnement, boîte de dialogue Options
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Cette page Options vous permet d’ajouter, de supprimer et de modifier les jetons de commentaire qui génèrent des rappels de la **liste des tâches**. Pour afficher ces paramètres, sélectionnez **Options** dans le menu **Outils**, développez le dossier **Environnement**, puis choisissez **Liste des tâches**.  
-  
-## <a name="task-list-options"></a>Options de la liste des tâches  
- Confirmer la suppression des tâches  
- Quand cette option est sélectionnée, une boîte de message s’affiche chaque fois qu’une tâche utilisateur est supprimée de la **liste des tâches**, ce qui vous permet de confirmer la suppression. Cette option est activée par défaut.  
-  
+Cette page Options vous permet d’ajouter, de supprimer et de modifier les jetons de commentaire qui génèrent des rappels de la **liste des tâches**. Pour afficher ces paramètres, sélectionnez **Options** dans le menu **Outils**, développez le dossier **Environnement**, puis choisissez **Liste des tâches**.
+
+## <a name="task-list-options"></a>Options de la liste des tâches
+ Confirmer la suppression des tâches lorsque cette option est sélectionnée, une boîte de message s’affiche chaque fois qu’une tâche utilisateur est supprimée de la **liste des tâches**, ce qui vous permet de confirmer la suppression. Cette option est activée par défaut.
+
 > [!NOTE]
-> Pour supprimer un commentaire de tâche, cliquez sur le lien pour rechercher le commentaire, puis supprimez-le de votre code.  
-  
- Afficher seulement les noms des fichiers  
- Quand cette option est sélectionnée, la colonne **Fichier** de la **liste des tâches** affiche seulement les noms des fichiers à modifier, mais pas leurs chemins complets.  
-  
-## <a name="tokens"></a>jetons  
- Quand vous insérez un commentaire dans votre code dont le texte commence par un jeton de la **liste des jetons**, la **liste des tâches** affiche votre commentaire comme nouvelle entrée chaque fois que le fichier est ouvert pour modification. Vous pouvez cliquer sur cette entrée de **liste des tâches** pour accéder directement à la ligne de commentaire dans votre code. Pour plus d’informations, consultez [Utilisation de la liste des tâches](../../ide/using-the-task-list.md).  
-  
- Liste des jetons  
- Affiche une liste de jetons, et vous permet d'ajouter ou de supprimer des jetons personnalisés. Les jetons de commentaire respectent la casse dans Visual C# et Visual C++, mais pas dans Visual Basic.  
-  
+> Pour supprimer un commentaire de tâche, cliquez sur le lien pour rechercher le commentaire, puis supprimez-le de votre code.
+
+ Afficher les noms de fichiers uniquement lorsque cette option est sélectionnée, la colonne **fichier** de la **liste des tâches** affiche uniquement les noms des fichiers à modifier, et non leurs chemins d’accès complets.
+
+## <a name="tokens"></a>jetons
+ Quand vous insérez un commentaire dans votre code dont le texte commence par un jeton de la **liste des jetons**, la **liste des tâches** affiche votre commentaire comme nouvelle entrée chaque fois que le fichier est ouvert pour modification. Vous pouvez cliquer sur cette entrée de **liste des tâches** pour accéder directement à la ligne de commentaire dans votre code. Pour plus d’informations, consultez [Utilisation de la liste des tâches](../../ide/using-the-task-list.md).
+
+ Liste des jetons affiche une liste de jetons, et vous permet d’ajouter ou de supprimer des jetons personnalisés. Les jetons de commentaire respectent la casse dans Visual C# et Visual C++, mais pas dans Visual Basic.
+
 > [!NOTE]
-> Si vous ne tapez pas le jeton souhaité exactement comme il apparaît dans la **liste des jetons**, aucune tâche de commentaire ne s’affichera dans la **liste des tâches**.  
-  
- Priorité  
- Définit la priorité des tâches qui utilisent le jeton sélectionné. Les commentaires de tâche qui commencent par ce jeton reçoivent automatiquement la priorité désignée dans la **liste des tâches**.  
-  
- Name  
- Entrez la chaîne du jeton. Cette opération active le bouton **Ajouter**. Si vous cliquez sur **Ajouter**, cette chaîne est incluse dans la **liste des jetons** et les commentaires qui commencent par ce nom sont affichés dans la **liste des tâches**.  
-  
- Ajouter  
- Activé quand vous entrez un nouveau **Nom**. Cliquez pour ajouter une nouvelle chaîne de jeton en utilisant les valeurs entrées dans les champs **Nom** et **Priorité**.  
-  
- Supprimer  
- Cliquez pour supprimer le jeton sélectionné de la **liste des jetons**. Vous ne pouvez pas supprimer le jeton de commentaire par défaut.  
-  
- Modification  
- Cliquez pour apporter des modifications à un jeton existant en utilisant les valeurs entrées dans les champs **Nom** et **Priorité**.  
-  
+> Si vous ne tapez pas le jeton souhaité exactement comme il apparaît dans la **liste des jetons**, aucune tâche de commentaire ne s’affichera dans la **liste des tâches**.
+
+ Priorité définit la priorité des tâches qui utilisent le jeton sélectionné. Les commentaires de tâche qui commencent par ce jeton reçoivent automatiquement la priorité désignée dans la **liste des tâches**.
+
+ Nom entrez la chaîne de jeton. Cette opération active le bouton **Ajouter**. Si vous cliquez sur **Ajouter**, cette chaîne est incluse dans la **liste des jetons** et les commentaires qui commencent par ce nom sont affichés dans la **liste des tâches**.
+
+ Ajouter activé lorsque vous entrez un nouveau **nom**. Cliquez pour ajouter une nouvelle chaîne de jeton en utilisant les valeurs entrées dans les champs **Nom** et **Priorité**.
+
+ Supprimer cliquez sur cette option pour supprimer le jeton sélectionné de la **liste des jetons**. Vous ne pouvez pas supprimer le jeton de commentaire par défaut.
+
+ Modifier cliquez pour apporter des modifications à un jeton existant en utilisant les valeurs entrées dans les champs **nom** et **priorité** .
+
 > [!NOTE]
-> Vous ne pouvez pas renommer ou supprimer le jeton de commentaire par défaut, mais vous pouvez changer son niveau de priorité.  
-  
-## <a name="see-also"></a>Voir aussi  
- [Utilisation de la liste des tâches](../../ide/using-the-task-list.md)   
- [Définition de signets dans le code](../../ide/setting-bookmarks-in-code.md)   
- [Environnement, boîte de dialogue Options](../../ide/reference/environment-options-dialog-box.md)
+> Vous ne pouvez pas renommer ou supprimer le jeton de commentaire par défaut, mais vous pouvez changer son niveau de priorité.
+
+## <a name="see-also"></a>Voir aussi
+ [Utilisation de la liste des tâches](../../ide/using-the-task-list.md) [définir des signets dans la boîte de](../../ide/setting-bookmarks-in-code.md) [dialogue Options d’environnement](../../ide/reference/environment-options-dialog-box.md) de code

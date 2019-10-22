@@ -1,5 +1,5 @@
 ---
-title: Méthode IJsDebug::OpenVirtualProcess | Microsoft Docs
+title: 'IJsDebug :: OpenVirtualProcess, méthode | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 97a055bf1550d74dc6b86d93ffdb9ca406afb43d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3de39beb28a68ec3b8e0d76b17a7e914a464ecfe
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62583592"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577746"
 ---
 # <a name="ijsdebugopenvirtualprocess-method"></a>IJsDebug::OpenVirtualProcess, méthode
-Méthode de fabrique utilisé pour créer un nouvel objet processus virtuel.  
+Méthode de fabrique utilisée pour créer un objet de processus virtuel.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -38,24 +38,24 @@ HRESULT OpenVirtualProcess(
   
 #### <a name="parameters"></a>Paramètres  
  `processId`  
- [in] Id de processus à attacher le débogueur.  
+ dans ID de processus auquel le débogueur doit être attaché.  
   
  `runtimeJsBaseAddress`  
- [in] L’adresse de base à laquelle le runtime JavaScript a chargé dans le processus cible.  
+ dans Adresse de base à laquelle le runtime JavaScript a chargé dans le processus cible.  
   
  `pDataTarget`  
- [in] Interface fournie pour interroger l’état du processus du débogueur.  
+ dans Interface fournie par le débogueur pour interroger l’état du processus.  
   
  `ppProcess`  
- [out] Nouvel objet de processus de débogage  
+ à Nouvel objet de processus de débogage  
   
 ## <a name="return-value"></a>Valeur de retour  
   
 ## <a name="remarks"></a>Notes  
  Retourne E_JsDEBUG_MISMATCHED_RUNTIME si Jscript9diag et Jscript9 ne correspondent pas.  
   
-## <a name="requirements"></a>Configuration requise  
- **En-tête :** jscript9diag.h  
+## <a name="requirements"></a>spécifications  
+ **En-tête :** jscript9diag. h  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IJsDebug](../../winscript/reference/ijsdebug-interface.md)

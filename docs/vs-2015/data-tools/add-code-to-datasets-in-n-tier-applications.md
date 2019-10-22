@@ -1,5 +1,5 @@
 ---
-title: Ajoutez le code aux jeux de données dans les applications multiniveau | Microsoft Docs
+title: Ajouter du code à des jeux de données dans des applications multicouches | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-data-tools
@@ -11,44 +11,44 @@ helpviewer_keywords:
 - n-tier applications, extending datasets
 ms.assetid: d43c2ccd-4902-43d8-b1a8-d10ca5d3210c
 caps.latest.revision: 23
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6c788e422ea8613b77d7d0c0460d7c026916baa3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: aed37ee9cdd8c221fcfb114db426a6286ee8ad6f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65697151"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72673116"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>Ajouter du code à des datasets dans des applications multiniveaux
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous pouvez étendre les fonctionnalités d’un jeu de données en créant un fichier de classe partielle pour le jeu de données et en ajoutant du code (au lieu d’ajouter du code pour le *DatasetName*. Fichier Dataset.Designer). Classes partielles permettent au code pour une classe spécifique être réparti entre plusieurs fichiers physiques. Pour plus d’informations, consultez [partielle](https://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448) ou [Classes et méthodes partielles](https://msdn.microsoft.com/library/804cecb7-62db-4f97-a99f-60975bd59fa1).
+Vous pouvez étendre les fonctionnalités d’un jeu de données en créant un fichier de classe partielle pour le jeu de données et en y ajoutant du code (au lieu d’ajouter du code au fichier *NomGroupeDonnées*. Fichier DataSet. Designer). Les classes partielles permettent à du code pour une classe spécifique d’être divisé entre plusieurs fichiers physiques. Pour plus d’informations, consultez [classes et méthodes](https://msdn.microsoft.com/library/804cecb7-62db-4f97-a99f-60975bd59fa1) [partielles](https://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448) ou partielles.
 
-Le code qui définit un jeu de données est généré chaque fois les modifications sont apportées à la définition du dataset. Ce code est également généré lorsque vous apportez des modifications pendant l’exécution d’un Assistant qui modifie la configuration d’un jeu de données. Pour empêcher que votre code en cours de suppression pendant la régénération d’un jeu de données, ajoutez le code au fichier de classe partielle du jeu de données.
+Le code qui définit un DataSet est généré chaque fois que des modifications sont apportées à la définition du jeu de données. Ce code est également généré lorsque vous apportez des modifications au cours de l’exécution d’un assistant qui modifie la configuration d’un jeu de données. Pour empêcher la suppression de votre code pendant la régénération d’un DataSet, ajoutez du code au fichier de classe partielle du DataSet.
 
-Par défaut, une fois que vous séparez le dataset et `TableAdapter` code, le résultat est un fichier de classe discret dans chaque projet. Le projet d’origine a une filenamed *DatasetName*. Designer.vb (ou *DatasetName*. Designer.cs) qui contient le `TableAdapter` code. Le projet désigné dans la **Dataset Project** propriété dispose d’un fichier nommé *DatasetName*. DataSet.Designer.vb (ou *DatasetName*. (DataSet.Designer.cs). Ce fichier contient le code de jeu de données.
-
-> [!NOTE]
-> Quand vous séparez les jeux de données et `TableAdapter`s (en définissant le **DataSet Project** propriété), les classes dataset partielles existantes dans le projet ne sont pas déplacées automatiquement. Classes dataset partielles existantes doivent être déplacés manuellement vers le projet dataset.
+Par défaut, après avoir séparé le jeu de données et `TableAdapter` code, le résultat est un fichier de classe discret dans chaque projet. Le projet d’origine a un nom de fichier *NomGroupeDonnées*. Designer. vb (ou *NomGroupeDonnées*. Designer.cs) qui contient le code `TableAdapter`. Le projet désigné dans la propriété de **projet DataSet** a un fichier nommé *NomGroupeDonnées*. DataSet. Designer. vb (ou *NomGroupeDonnées*. DataSet.Designer.cs). Ce fichier contient le code du DataSet.
 
 > [!NOTE]
-> Lorsque le code de validation doit être ajouté, le Concepteur de DataSet fournit des fonctionnalités de génération <xref:System.Data.DataTable.ColumnChanging> et <xref:System.Data.DataTable.RowChanging> gestionnaires d’événements. Pour plus d’informations, consultez [ajouter la validation à un jeu de données multicouches](../data-tools/add-validation-to-an-n-tier-dataset.md).
+> Lorsque vous séparez des DataSets et des `TableAdapter`s (en définissant la propriété **DataSet Project** ), les classes DataSet partielles existantes dans le projet ne sont pas déplacées automatiquement. Les classes partielles de DataSet existantes doivent être déplacées manuellement vers le projet de DataSet.
+
+> [!NOTE]
+> Quand le code de validation doit être ajouté, le concepteur de DataSet fournit des fonctionnalités permettant de générer des gestionnaires d’événements <xref:System.Data.DataTable.ColumnChanging> et <xref:System.Data.DataTable.RowChanging>. Pour plus d’informations, consultez [Ajouter une validation à un DataSet multicouche](../data-tools/add-validation-to-an-n-tier-dataset.md).
 
 ## <a name="add-code-to-datasets-in-n-tier-applications"></a>Ajouter du code à des datasets dans des applications multiniveaux
 
-1. Recherchez le projet qui contient le fichier .xsd (le jeu de données).
+1. Recherchez le projet qui contient le fichier. xsd (le DataSet).
 
-2. Sélectionnez le **.xsd** fichier à ouvrir le jeu de données.
+2. Sélectionnez le fichier **. xsd** pour ouvrir le jeu de données.
 
-3. Avec le bouton droit de la table de données à laquelle vous souhaitez ajouter du code (le nom de table dans la barre de titre), puis sélectionnez **afficher le Code**.
+3. Cliquez avec le bouton droit sur la table de données à laquelle vous souhaitez ajouter du code (nom de la table dans la barre de titre), puis sélectionnez **afficher le code**.
 
-     Une classe partielle est créée et s’ouvre dans l’éditeur de Code.
+     Une classe partielle est créée et s’ouvre dans l’éditeur de code.
 
-4. Ajoutez le code à l’intérieur de la déclaration de classe partielle.
+4. Ajoutez du code à l’intérieur de la déclaration de classe partielle.
 
-     L’exemple suivant indique où ajouter le code au CustomersDataTable dans NorthwindDataSet :
+     L’exemple suivant indique où ajouter du code au CustomersDataTable dans NorthwindDataSet :
 
     ```vb
     Partial Public Class CustomersDataTable

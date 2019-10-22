@@ -2,33 +2,33 @@
 title: Exporter et enregistrer des cartes de code
 ms.date: 05/16/2018
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70c4cd238b6e5d31eced6a35ff0c7d24ab85a280
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 991773953338e38331bad45bfa1149aeb27c748b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63003111"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72670800"
 ---
 # <a name="share-code-maps"></a>Partager des cartes de code
 
-Vous pouvez enregistrer des cartes de code en tant que partie d’un projet Visual Studio, en tant qu’image ou un fichier XPS.
+Vous pouvez enregistrer des cartes de code dans le cadre d’un projet Visual Studio, sous la forme d’une image ou d’un fichier XPS.
 
 ## <a name="share-a-code-map-with-other-visual-studio-users"></a>Partager une carte de code avec d’autres utilisateurs de Visual Studio
 
 Utilisez le menu **Fichier** pour enregistrer la carte.
 
-- ou -
+ou
 
-Pour enregistrer la carte en tant que partie d’un projet spécifique, dans la barre d’outils de la carte, choisissez **partage** > **déplacer \<CodeMapName > .dgml vers**, puis choisissez le projet où vous souhaitez enregistrer le carte.
+Pour enregistrer la carte dans le cadre d’un projet spécifique, dans la barre d’outils de la carte, choisissez **partager**  > **déplacer \<CodeMapName >. dgml vers**, puis choisissez le projet dans lequel vous souhaitez enregistrer la carte.
 
 ![Déplacer une carte dans un autre projet](../modeling/media/codemapsmovemapmenu.png)
 
-Visual Studio enregistre la carte en tant qu’un *.dgml* fichier que vous pouvez partager avec d’autres utilisateurs de Visual Studio Enterprise et Visual Studio Professional.
+Visual Studio enregistre la carte en tant que fichier *. dgml* que vous pouvez partager avec d’autres utilisateurs de Visual Studio Enterprise et Visual Studio Professional.
 
 > [!NOTE]
 > Avant de partager une carte avec les utilisateurs de Visual Studio Professional, veillez à développer tous les groupes, à afficher les nœuds masqués et les liens entre les groupes, et à récupérer les nœuds supprimés que vous souhaitez afficher sur la carte. Sinon, les utilisateurs ne pourront pas afficher ces éléments.
@@ -41,22 +41,22 @@ Visual Studio enregistre la carte en tant qu’un *.dgml* fichier que vous pouve
 
 ## <a name="export-a-code-map-as-an-image"></a>Exporter une carte de code en tant qu’image
 
-Lorsque vous exportez une carte de code en tant qu’image, vous pouvez le copier dans d’autres applications, telles que Microsoft Word ou PowerPoint.
+Lorsque vous exportez une carte de code en tant qu’image, vous pouvez la copier dans d’autres applications, telles que Microsoft Word ou PowerPoint.
 
-1. Dans la barre d’outils de la carte de code, choisissez **partage** > **E-mail en tant qu’Image** ou **copier l’Image**.
+1. Dans la barre d’outils de la carte de code, choisissez **partager**  > **Envoyer par courrier électronique en tant qu’image** ou **copier l’image**.
 
 2. Collez l’image dans une autre application.
 
-## <a name="export-the-map-as-an-xps-file"></a>Exporter la carte sous forme de fichier XPS
+## <a name="export-the-map-as-an-xps-file"></a>Exporter la carte en tant que fichier XPS
 
-Lorsque vous exportez une carte de code comme un fichier XPS, vous pouvez le voir dans des visionneuses XML ou XAML comme Internet Explorer.
+Lorsque vous exportez une carte de code sous la forme d’un fichier XPS, vous pouvez la voir dans des visionneuses XML ou XAML comme Internet Explorer.
 
-1. Dans la barre d’outils de la carte de code, choisissez **partage** > **E-mail en tant que XPS Portable** ou **enregistrer en tant que XPS Portable**.
+1. Dans la barre d’outils de la carte de code, choisissez **partager**  > **Envoyer par courrier électronique en tant que XPS portable** ou **enregistrer en tant qu’ordinateur portable XPS**.
 
 2. Accédez à l’emplacement auquel enregistrer le fichier.
 
-3. Nommez la carte de code. Assurez-vous que le **enregistrer en tant que type** zone est définie sur **fichiers XPS (\*.xps)**. Choisissez **Enregistrer**.
+3. Nommez la carte de code. Assurez-vous que la zone **type** de fichier est définie sur **fichiers XPS (\*. Xps)** . Choisissez **Enregistrer**.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Mapper les dépendances des cartes de code](../modeling/map-dependencies-across-your-solutions.md)
+- [Mapper des dépendances avec des cartes de code](../modeling/map-dependencies-across-your-solutions.md)

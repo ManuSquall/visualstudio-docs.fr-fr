@@ -1,5 +1,5 @@
 ---
-title: ISetNextStatement::SetNextStatement | Microsoft Docs
+title: 'ISetNextStatement :: SetNextStatement | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3f4add20384684b24a630a0799c50a9aaae58034
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e8b940e603deb0aa9715e89b49eb1afdd28832ac
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786293"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571912"
 ---
 # <a name="isetnextstatementsetnextstatement"></a>ISetNextStatement::SetNextStatement
-Cette méthode met à jour le contexte de code suivant l’interpréteur de script pouvant s’exécuter.  
+Cette méthode met à jour le contexte de code suivant que l’interpréteur de script peut exécuter.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -36,15 +36,15 @@ HRESULT SetNextStatement(
   
 #### <a name="parameters"></a>Paramètres  
  `pStackFrame`  
- [in] Pointeur vers un objet de frame de pile.  
+ dans Pointeur vers un objet de frame de pile.  
   
  `pCodeContext`  
- [in] Pointeur vers un objet de contexte de code.  
+ dans Pointeur vers un objet de contexte de code.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   

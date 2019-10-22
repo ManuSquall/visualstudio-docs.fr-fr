@@ -10,15 +10,15 @@ helpviewer_keywords:
 - application settings [Visual Studio]
 ms.assetid: 35254321-ad14-47d9-b8c6-39ab3203c5d9
 caps.latest.revision: 27
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d8e88bcf67c430bdd24c4338d92a30b6a7c10fef
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: b37ed78f9b67d10c0bf845a5bd7340f1f38557bb
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65675001"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72651422"
 ---
 # <a name="managing-application-settings-net"></a>Gestion des paramètres d'une application (.NET)
 

@@ -1,5 +1,5 @@
 ---
-title: Configurer l’analyse du Code
+title: Configurer l’analyse du code
 ms.date: 04/04/2018
 ms.topic: conceptual
 f1_keywords:
@@ -8,55 +8,55 @@ f1_keywords:
 helpviewer_keywords:
 - code analysis, selecting rule sets
 - code analysis, rule sets
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 86aa308369ef93792126c7f8da5f59f94ef0c02a
-ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.openlocfilehash: f0008f443139d968664d2cc4b4e3e3bef6ecb9ba
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71975112"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72649519"
 ---
-# <a name="how-to-configure-legacy-analysis-for-managed-code"></a>Procédure : Configurer l’analyse héritée pour le code managé
+# <a name="how-to-configure-legacy-analysis-for-managed-code"></a>Comment : configurer l’analyse héritée pour le code managé
 
-Dans Visual Studio, vous pouvez choisir dans une liste d’ensembles de [règles](../code-quality/rule-set-reference.md) d’analyse du code à appliquer à un projet de code managé. Par défaut, le **règles minimales recommandées par Microsoft** ensemble de règles est sélectionné, mais vous pouvez appliquer une autre règle définie si vous le souhaitez. Ensembles de règles peuvent être appliquées à un ou plusieurs projets dans une solution.
+Dans Visual Studio, vous pouvez choisir dans une liste d’ensembles de [règles](../code-quality/rule-set-reference.md) d’analyse du code à appliquer à un projet de code managé. Par défaut, l’ensemble de règles **règles minimales recommandées Microsoft** est sélectionné, mais vous pouvez appliquer un autre ensemble de règles si vous le souhaitez. Les ensembles de règles peuvent être appliqués à un ou plusieurs projets d’une solution.
 
 > [!NOTE]
 > Cet article s’applique à l’analyse héritée et non aux [analyseurs de code basés sur .NET Compiler Platform](use-roslyn-analyzers.md).
 
 ## <a name="configure-a-rule-set-for-a-net-framework-project"></a>Configurer un ensemble de règles pour un projet .NET Framework
 
-1. Ouvrez le **analyse du Code** onglet sur les pages de propriétés du projet. Vous pouvez le faire dans une des manières suivantes :
+1. Ouvrez l’onglet **analyse du code** dans les pages de propriétés du projet. Pour ce faire, vous pouvez procéder de l’une des façons suivantes :
 
-   - Dans **l’Explorateur de solutions**, sélectionnez le projet. Dans la barre de menus, sélectionnez **analyser** > **configurer l’analyse du Code** > **pour \<nom_projet >** .
+   - Dans **Explorateur de solutions**, sélectionnez le projet. Dans la barre de menus, sélectionnez **analyser** > **configurer l’analyse du code** > **pour \<projectname >** .
 
-   - Cliquez sur le projet dans **l’Explorateur de solutions** et sélectionnez **propriétés**, puis sélectionnez le **analyse du Code** onglet.
+   - Dans **Explorateur de solutions** , cliquez avec le bouton droit sur le projet, sélectionnez **Propriétés**, puis sélectionnez l’onglet **analyse du code** .
 
-2. Dans le **Configuration** et **plateforme** listes, sélectionnez la plateforme de configuration et la cible de génération.
+2. Dans les listes **configuration** et **plateforme** , sélectionnez la configuration de build et la plateforme cible.
 
 ::: moniker range="vs-2017"
 
-3. Pour exécuter l’analyse du code chaque fois que le projet est généré à l’aide de la configuration sélectionnée, sélectionnez **activer l’analyse du code sur la build**. Vous pouvez également exécuter l’analyse du code manuellement en sélectionnant **analyser** > **exécuter l’analyse du Code** > **exécuter l’analyse du Code sur \<nom_projet >** .
+3. Pour exécuter l’analyse du code chaque fois que le projet est généré à l’aide de la configuration sélectionnée, sélectionnez **activer l’analyse du code sur la build**. Vous pouvez également exécuter l’analyse du code manuellement en sélectionnant **analyser**  >  exécuter l’analyse du**code**  > **exécuter l’analyse du code sur \<projectname >** .
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-3. Pour exécuter l’analyse du code chaque fois que le projet est généré à l’aide de la configuration sélectionnée, sélectionnez **exécuter lors de la génération** dans la section **analyseurs binaires** . Vous pouvez également exécuter l’analyse du code manuellement en sélectionnant **analyser** > **exécuter l’analyse du Code** > **exécuter l’analyse du Code sur \<nom_projet >** .
+3. Pour exécuter l’analyse du code chaque fois que le projet est généré à l’aide de la configuration sélectionnée, sélectionnez **exécuter lors de la génération** dans la section **analyseurs binaires** . Vous pouvez également exécuter l’analyse du code manuellement en sélectionnant **analyser**  >  exécuter l’analyse du**code**  > **exécuter l’analyse du code sur \<projectname >** .
 
 ::: moniker-end
 
-4. Pour afficher les avertissements du code généré, désactivez le **supprimer les résultats du code généré** case à cocher.
+4. Pour afficher les avertissements du code généré, désactivez la case à cocher **Supprimer les résultats du code généré** .
 
     > [!NOTE]
     > Cette option ne supprime pas les erreurs d'analyse du code et les avertissements du code généré qui apparaissent dans les formulaires et les modèles. Vous pouvez afficher et gérer le code source d’un formulaire ou d’un modèle, et il ne sera pas remplacé.
 
 ::: moniker range="vs-2017"
 
-5. Dans le **exécuter cet ensemble de règles** liste, effectuez l’une des opérations suivantes :
+5. Dans la liste **exécuter cet ensemble de règles** , effectuez l’une des opérations suivantes :
 
 ::: moniker-end
 
@@ -70,27 +70,27 @@ Dans Visual Studio, vous pouvez choisir dans une liste d’ensembles de [règles
 
     - Sélectionnez **\<Browse >** pour rechercher un ensemble de règles personnalisées existant qui ne figure pas dans la liste.
 
-    - Définir un [ensemble de règles personnalisé](../code-quality/how-to-create-a-custom-rule-set.md).
+    - Définissez un [ensemble de règles personnalisé](../code-quality/how-to-create-a-custom-rule-set.md).
 
 ## <a name="specify-rule-sets-for-multiple-projects-in-a-solution"></a>Spécifier des ensembles de règles pour plusieurs projets dans une solution
 
-Par défaut, tous les projets gérés d’une solution sont affectés les *règles minimales recommandées par Microsoft* ensemble de règles d’analyse du code. Vous pouvez modifier les ensembles de règles qui sont assignés aux projets d’une solution dans le **propriétés** boîte de dialogue pour la solution.
+Par défaut, tous les projets managés d’une solution se voient affecter l’ensemble de règles d’analyse du code des *règles minimales recommandées Microsoft* . Vous pouvez modifier les ensembles de règles qui sont affectés aux projets d’une solution dans la boîte de dialogue **Propriétés** de la solution.
 
 1. Ouvrez la solution dans Visual Studio.
 
-2. Sur le **analyser** menu, sélectionnez **configurer l’analyse du Code pour la Solution**.
+2. Dans le menu **analyser** , sélectionnez **configurer l’analyse du code pour la solution**.
 
-3. Si nécessaire, développez **propriétés communes**, puis sélectionnez **paramètres d’analyse de Code**.
+3. Si nécessaire, développez **Propriétés communes**, puis sélectionnez **paramètres d’analyse du code**.
 
 4. Vous pouvez spécifier un ensemble de règles pour un ou plusieurs projets :
 
     - Pour spécifier un ensemble de règles pour un projet individuel, sélectionnez le nom du projet.
 
-    - Pour spécifier un ensemble de règles pour plusieurs projets, maintenez la touche **Ctrl** et sélectionnez les noms de projet.
+    - Pour spécifier un ensemble de règles pour plusieurs projets, maintenez la **touche Ctrl** enfoncée et sélectionnez les noms de projet.
 
-    - Pour spécifier tous les projets dans la solution, maintenez la touche **MAJ** et cliquez sur dans la liste des projets.
+    - Pour spécifier tous les projets de la solution, maintenez la **touche Maj** enfoncée et cliquez dans la liste projet.
 
-5. Sélectionnez le **l’ensemble de règles** champ d’un projet, puis sélectionnez le nom de la règle défini que vous souhaitez appliquer.
+5. Sélectionnez le champ **ensemble de règles** d’un projet, puis sélectionnez le nom de l’ensemble de règles que vous souhaitez appliquer.
 
 ## <a name="see-also"></a>Voir aussi
 

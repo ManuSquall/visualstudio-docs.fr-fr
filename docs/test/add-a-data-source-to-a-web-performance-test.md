@@ -6,15 +6,15 @@ helpviewer_keywords:
 - Web performance tests, walkthroughs
 - Web performance tests, data binding (database)
 ms.assetid: 2ada376d-f168-455d-9643-6acb535360c1
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e6fad5424e74c8a65ea8ce889412b834cda6a790
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.openlocfilehash: 8c17a1ce7b2bf775933be6e9bea3dd299d9fe717
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180149"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72665434"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Ajouter une source de données à un test de performances de site Web
 
@@ -154,11 +154,11 @@ Votre solution doit également inclure un test de performances web qui parcourt 
 
      ![Réussite du test à l'aide de la liaison de données](../test/media/web_test_databinding_sql_deleteresponseurlrunresults.png)
 
-## <a name="q--a"></a>Questions et réponses
+## <a name="q--a"></a>Q et R
 
 ### <a name="q-what-databases-can-i-use-as-a-data-source"></a>Q : Quelles bases de données puis-je utiliser comme source de données ?
 
-**R :** Vous pouvez utiliser :
+**R :** Vous pouvez utiliser :
 
 - Microsoft SQL Azure.
 
@@ -172,9 +172,9 @@ Votre solution doit également inclure un test de performances web qui parcourt 
 
 - Oracle 7.3, 8i, 9i ou 10g.
 
-### <a name="q-how-do-i-use-a-comma-separated-value-csv-text-file-as-a-data-source"></a>Q : Comment utiliser un fichier texte au format CSV (valeurs séparées par des virgules) comme source de données ?
+### <a name="q-how-do-i-use-a-comma-separated-value-csv-text-file-as-a-data-source"></a>Q : Comment utiliser un fichier texte de valeurs séparées par des virgules (CSV) comme source de données ?
 
-**R :** Voici comment :
+**R :** Voici comment procéder :
 
 1. Créez un dossier pour organiser vos artefacts de base de données de projets et ajouter un élément.
 
@@ -196,9 +196,9 @@ Votre solution doit également inclure un test de performances web qui parcourt 
 
      ![Entrer un nom et choisir Fichier CSV](../test/media/web_test_databinding_adddatasourcedialog.png)
 
-### <a name="q-what-if-my-existing-csv-file-does-not-contain-column-headers"></a>Q : Que se passe-t-il si le fichier CSV existant ne contient pas d’en-têtes de colonne ?
+### <a name="q-what-if-my-existing-csv-file-does-not-contain-column-headers"></a>Q : Que se passe-t-il si le fichier CSV existant ne contient pas d'en-têtes de colonne ?
 
-**R :** Si vous ne pouvez pas ajouter d’en-têtes de colonnes, vous pouvez utiliser un fichier de description de schéma pour traiter le fichier CSV en tant que base de données.
+**R :** Si vous ne pouvez pas ajouter des en-têtes de colonnes, vous pouvez utiliser un fichier de description de schéma pour traiter le fichier CSV comme une base de données.
 
 1. Ajoutez un nouveau fichier texte nommé *schema.ini*.
 
@@ -247,9 +247,9 @@ Votre solution doit également inclure un test de performances web qui parcourt 
 
      ![Source de données ajoutée au test](../test/media/web_test_databinding_adddatasourcecolortext7.png)
 
-### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>Q : Comment utiliser un fichier XML comme source de données ?
+### <a name="q-how-do-i-use-an-xml-file-as-a-data-source"></a>Q : Comment utiliser un fichier XML comme source de données ?
 
-**R :** Oui.
+**R :** Oui.
 
 1. Créez un dossier pour organiser vos artefacts de base de données de projets et ajouter un élément.
 
@@ -279,9 +279,9 @@ Votre solution doit également inclure un test de performances web qui parcourt 
 
      ![Entrer un nom et choisir Fichier XML](../test/media/web_test_databinding_adddatasourcedialogxml.png)
 
-### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>Q : Puis-je ajouter la liaison de données à une requête de service web qui utilise SOAP ?
+### <a name="q-can-i-add-data-binding-to-a-web-service-request-that-uses-soap"></a>Q : Puis-je ajouter la liaison de données à une requête de service Web qui utilise SOAP ?
 
-**R :** Oui, vous devez changer le code XML SOAP manuellement.
+**R :** Oui, vous devez modifier le code XML SOAP manuellement.
 
 1. Choisissez la requête de service Web dans l'arborescence des requêtes et dans la fenêtre Propriétés, choisissez le bouton de sélection (...) dans la propriété Corps chaîne.
 

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - Visual Studio templates, updating
 - project templates, updating
 - updating templates [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 57e457224d47e278df169b931c6e9cf6b8ae25e1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ee0118ce4181a12ca4c199b8174a28fb4b431063
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974694"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656542"
 ---
-# <a name="how-to-update-existing-templates"></a>Procédure : Mettre à jour des modèles existants
+# <a name="how-to-update-existing-templates"></a>Guide pratique pour mettre à jour des modèles existants
 
 Une fois que vous avez créé un modèle et compressé les fichiers dans un fichier *.zip*, vous pouvez modifier le modèle. Vous pouvez le faire en modifiant les fichiers manuellement dans le modèle ou en exportant un nouveau modèle à partir d’un projet basé sur le modèle.
 

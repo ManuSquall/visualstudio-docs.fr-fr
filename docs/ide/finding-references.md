@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - code editor, find all references
 - find all references
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0d49223d61e3c72f2726b89de99ba9c092ddefe
-ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
-ms.translationtype: HT
+ms.openlocfilehash: 523ec566e19614951169c184b4796834c4ab0838
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67195261"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72603576"
 ---
 # <a name="find-references-in-your-code"></a>Rechercher des références dans votre code
 

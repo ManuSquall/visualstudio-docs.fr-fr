@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationThread::SynchronousCallIntoThread | Microsoft Docs
+title: 'IDebugApplicationThread :: SynchronousCallIntoThread | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f0c9b89332b55a180220820e8ffe1e030d37a848
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d545782f8103d10b38f3eb0d2f149c4ef3b9dc95
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822084"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574500"
 ---
 # <a name="idebugapplicationthreadsynchronouscallintothread"></a>IDebugApplicationThread::SynchronousCallIntoThread
-Fournit un mécanisme pour que l’appelant s’exécute dans le thread d’application.  
+Fournit un mécanisme permettant à l’appelant d’exécuter du code dans le thread d’application.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -40,27 +40,27 @@ HRESULT SynchronousCallIntoThread(
   
 #### <a name="parameters"></a>Paramètres  
  `pstcb`  
- [in] L’objet à appeler.  
+ dans Objet à appeler.  
   
  `dwParam1`  
- [in] Premier paramètre à passer à la `IDebugThreadCall::ThreadCallHandler` (méthode).  
+ dans Premier paramètre à passer à la méthode `IDebugThreadCall::ThreadCallHandler`.  
   
  `dwParam2`  
- [in] Deuxième paramètre à passer à la `IDebugThreadCall::ThreadCallHandler` (méthode).  
+ dans Deuxième paramètre à passer à la méthode `IDebugThreadCall::ThreadCallHandler`.  
   
  `dwParam3`  
- [in] Troisième paramètre à passer à la `IDebugThreadCall::ThreadCallHandler` (méthode).  
+ dans Troisième paramètre à passer à la méthode `IDebugThreadCall::ThreadCallHandler`.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode fournit un mécanisme pour que l’appelant exécuter du code dans le thread de débogueur. Moteurs de langage et les hôtes utilisent généralement cette méthode pour implémenter des objets à threads libres sur leurs implémentations de threads uniques.  
+ Cette méthode fournit un mécanisme permettant à l’appelant d’exécuter du code dans le thread du débogueur. Les moteurs de langage et les hôtes utilisent généralement cette méthode pour implémenter des objets à thread libre par-dessus leurs implémentations à thread unique.  
   
 ## <a name="see-also"></a>Voir aussi  
- [IDebugApplicationThread (Interface)](../../winscript/reference/idebugapplicationthread-interface.md)   
+ @No__t_1 de l' [interface IDebugApplicationThread](../../winscript/reference/idebugapplicationthread-interface.md)  
  [Interface IDebugThreadCall](../../winscript/reference/idebugthreadcall-interface.md)

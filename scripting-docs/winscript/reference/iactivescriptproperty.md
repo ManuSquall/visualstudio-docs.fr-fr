@@ -13,22 +13,22 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 62b0d49ea4ebccfe70955c2f5315918807121447
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5b68c777652ec411addfb64643ec0c8db67c29a1
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992777"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571250"
 ---
 # <a name="iactivescriptproperty"></a>IActiveScriptProperty
-Le `IActiveScriptProperty` interface est utilisée pour obtenir et définir les propriétés de configuration.  
+L’interface `IActiveScriptProperty` est utilisée pour récupérer et définir des propriétés de configuration.  
   
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable  
   
 |Méthode|Description|  
 |------------|-----------------|  
-|[GetProperty](../../winscript/reference/iactivescriptproperty-getproperty.md)|Obtient la propriété qui est spécifiée par le paramètre.|  
-|[SetProperty](../../winscript/reference/iactivescriptproperty-setproperty.md)|Définit la propriété qui est spécifiée par le paramètre.|  
+|[GetProperty](../../winscript/reference/iactivescriptproperty-getproperty.md)|Obtient la propriété spécifiée par le paramètre.|  
+|[SetProperty](../../winscript/reference/iactivescriptproperty-setproperty.md)|Définit la propriété spécifiée par le paramètre.|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interfaces de script actives](../../winscript/reference/active-script-interfaces.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame::GetThread | Microsoft Docs
+title: 'IDebugStackFrame :: GetThread, | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6926347c67895b3860964a559898691dd3e61e6f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 51cb000ef20877f4f3f6536cc9a01ae44c2810c8
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935058"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576734"
 ---
 # <a name="idebugstackframegetthread"></a>IDebugStackFrame::GetThread
 Retourne le thread associé à ce frame de pile.  
@@ -37,12 +37,12 @@ HRESULT GetThread(
   
 #### <a name="parameters"></a>Paramètres  
  `ppat`  
- [out] Le thread associé à ce frame de pile.  
+ à Thread associé à ce frame de pile.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   

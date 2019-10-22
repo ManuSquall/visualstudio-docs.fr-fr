@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame::GetCodeContext | Microsoft Docs
+title: 'IDebugStackFrame :: GetCodeContext | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dadb440017969f3ea4c824c681c726645a5757b0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9b640238b9c1212f477c6a26a9cc251678758f22
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934716"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574286"
 ---
 # <a name="idebugstackframegetcodecontext"></a>IDebugStackFrame::GetCodeContext
 Retourne le contexte de code actuel associé au frame de pile.  
@@ -37,12 +37,12 @@ HRESULT GetCodeContext(
   
 #### <a name="parameters"></a>Paramètres  
  `ppcc`  
- [out] Le contexte de code associé au frame de pile.  
+ à Contexte de code associé au frame de pile.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   

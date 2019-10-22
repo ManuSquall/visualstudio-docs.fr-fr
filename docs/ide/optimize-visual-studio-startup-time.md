@@ -7,19 +7,19 @@ helpviewer_keywords:
 - optimizing performance [Visual Studio]
 - speed up start time [Visual Studio]
 ms.assetid: d1508121-8499-4084-8eb5-fa89fa7b17d3
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: 60302646abbf36034756f38183d7be7f0d28c1ca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 84f91b9fd6338698f3ffa918ff34011ac3d3acb6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812495"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666029"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Améliorer la vitesse de démarrage de Visual Studio
 
@@ -57,11 +57,11 @@ Vous pouvez toujours réactiver l’extension pour les sessions ultérieures à 
 
 3. Choisissez l’une des trois options suivantes :
 
-   - **Utiliser le comportement par défaut :** Comportement par défaut pour la fenêtre Outil. Laisser cette option sélectionnée n’améliore pas les performances du démarrage.
+   - **Utiliser le comportement par défaut :** comportement par défaut de la fenêtre Outil. Laisser cette option sélectionnée n’améliore pas les performances du démarrage.
 
-   - **Ne pas afficher la fenêtre au démarrage :** La fenêtre Outil spécifiée est toujours fermée quand vous ouvrez Visual Studio, même si vous l’avez laissée ouverte dans une session précédente. Vous pouvez ouvrir la fenêtre Outil à partir du menu approprié quand vous en avez besoin.
+   - **Ne pas afficher la fenêtre au démarrage :** la fenêtre Outil spécifiée est toujours fermée quand vous ouvrez Visual Studio, même si vous l’avez laissée ouverte dans une session précédente. Vous pouvez ouvrir la fenêtre Outil à partir du menu approprié quand vous en avez besoin.
 
-   - **Masquer automatiquement la fenêtre au démarrage :** Si vous avez laissé une fenêtre d’outils ouverte lors d’une session précédente, cette option réduit le groupe de la fenêtre d’outils au démarrage pour éviter l’initialisation de la fenêtre. Cette option est un bon choix si vous utilisez souvent une fenêtre Outils. La fenêtre Outil est toujours disponible, mais elle n’affecte plus le temps de démarrage de Visual Studio.
+   - **Masquer automatiquement la fenêtre au démarrage :** si vous avez laissé une fenêtre d’outils ouverte lors d’une session précédente, cette option réduit le groupe de la fenêtre d’outils au démarrage pour éviter l’initialisation de la fenêtre. Cette option est un bon choix si vous utilisez souvent une fenêtre Outils. La fenêtre Outil est toujours disponible, mais elle n’affecte plus le temps de démarrage de Visual Studio.
 
      ![Gérer le niveau de performance de Visual Studio – Affichage Fenêtres d’outils](../ide/media/vside_perfdialog_toolwindows.png)
 

@@ -1,20 +1,20 @@
 ---
-title: 'Procédure : Contrôler la visibilité d’un Decorator-redirection | Microsoft Docs'
+title: 'Comment : contrôler la visibilité d’un élément décoratif-redirection | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
 ms.topic: conceptual
 ms.assetid: 0aa7b4f2-9f1f-4c8a-80c4-03fa888ca9ed
 caps.latest.revision: 7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6abc8b0bf2af5b22910bc4ad90fa16a21ecdb386
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a4d748f0efde08640728ea47954043a3397481f6
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822410"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72656457"
 ---
-# <a name="how-to-control-the-visibility-of-a-decorator--redirect"></a>Procédure : Contrôler la visibilité d’un Decorator-redirection
-Cette rubrique a été fusionnée avec un autre. Consultez [personnalisation de la présentation sur le diagramme](../modeling/customizing-presentation-on-the-diagram.md).
+# <a name="how-to-control-the-visibility-of-a-decorator--redirect"></a>Comment : contrôler la visibilité d'un Decorator - redirection
+Cette rubrique a été fusionnée avec une autre. Consultez [Personnalisation de la présentation sur le diagramme](../modeling/customizing-presentation-on-the-diagram.md).

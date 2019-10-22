@@ -1,5 +1,5 @@
 ---
-title: Identificateur (JavaScript) attendu | Microsoft Docs
+title: Identificateur attendu (JavaScript) | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,15 +14,15 @@ ms.assetid: 92eaa97f-7084-4618-9608-768b51a0600b
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7e60975e8f356e749e5e32adb2e773526ab63141
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8555ddde52602f5761be40cfcc752abd12697deb
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934976"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577290"
 ---
 # <a name="expected-identifier-javascript"></a>Identificateur attendu (JavaScript)
-Vous avez utilisé autre chose qu’un identificateur dans un contexte était requise. Un identificateur peut être :  
+Vous avez utilisé un autre nom que celui d’un identificateur dans un contexte où il était requis. Un identificateur peut être :  
   
 - une variable,  
   
@@ -34,7 +34,7 @@ Vous avez utilisé autre chose qu’un identificateur dans un contexte était re
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
-- Modifiez l’expression pour un identificateur apparaît à gauche du signe égal.  
+- Modifiez l’expression de façon à ce qu’un identificateur apparaisse à gauche du signe égal.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Utilisation des tableaux](../../javascript/advanced/using-arrays-javascript.md)

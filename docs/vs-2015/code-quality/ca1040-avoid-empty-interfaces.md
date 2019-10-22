@@ -1,5 +1,5 @@
 ---
-title: 'CA1040 : Éviter les interfaces vides | Microsoft Docs'
+title: 'CA1040 : Évitez les interfaces vides | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,42 +12,42 @@ helpviewer_keywords:
 - CA1040
 ms.assetid: 120a741b-5fd1-4836-8453-7857e0cd0380
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: bc785967b4e27599b4a04aeb7740b53b5076938d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 50a36281edb144ddb949899fa24e0b5088080220
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62559741"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72668309"
 ---
-# <a name="ca1040-avoid-empty-interfaces"></a>CA1040 : Éviter les interfaces vides
+# <a name="ca1040-avoid-empty-interfaces"></a>CA1040 : Éviter les interfaces vides
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
 |-|-|
 |TypeName|AvoidEmptyInterfaces|
 |CheckId|CA1040|
-|Category|Microsoft.Design|
+|Category|Microsoft. Design|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
- L’interface ne déclare aucun membre ni implémenter deux ou plusieurs autres interfaces.
+ L’interface ne déclare aucun membre ni n’implémente plusieurs autres interfaces.
 
 ## <a name="rule-description"></a>Description de la règle
- Les interfaces définissent des membres qui fournissent un comportement ou un contrat d'utilisation. Les fonctionnalités décrites par l'interface peuvent être adoptées par tout type, indépendamment de l'endroit où le type figure dans la hiérarchie d'héritage. Un type implémente une interface en fournissant des implémentations pour les membres de celle-ci. Une interface vide ne définit pas de membres. Par conséquent, il ne définit pas un contrat qui peut être implémenté.
+ Les interfaces définissent des membres qui fournissent un comportement ou un contrat d'utilisation. Les fonctionnalités décrites par l'interface peuvent être adoptées par tout type, indépendamment de l'endroit où le type figure dans la hiérarchie d'héritage. Un type implémente une interface en fournissant des implémentations pour les membres de celle-ci. Une interface vide ne définit aucun membre. Par conséquent, il ne définit pas un contrat qui peut être implémenté.
 
- Si votre conception inclut vide interfaces que les types sont censés implémenter, vous utilisez probablement une interface en tant qu’un marqueur ou un moyen d’identifier un groupe de types. Si cette identification se produit au moment de l’exécution, la méthode correcte pour ce faire consiste à utiliser un attribut personnalisé. Utilisez la présence ou l’absence de l’attribut, ou les propriétés de l’attribut, pour identifier les types de cibles. Si l’identification doit avoir lieu au moment de la compilation, il est acceptable d’utiliser une interface vide.
+ Si votre conception comprend des interfaces vides que les types sont censés implémenter, vous utilisez probablement une interface comme marqueur ou un moyen d’identifier un groupe de types. Si cette identification se produit au moment de l’exécution, la bonne façon d’y parvenir consiste à utiliser un attribut personnalisé. Utilisez la présence ou l’absence de l’attribut, ou les propriétés de l’attribut, pour identifier les types cibles. Si l’identification doit se produire au moment de la compilation, il est acceptable d’utiliser une interface vide.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Supprimer l’interface ou ajouter des membres. Si l’interface vide est utilisé pour étiqueter un ensemble de types, remplacez l’interface avec un attribut personnalisé.
+ Supprimez l’interface ou ajoutez des membres à celle-ci. Si l’interface vide est utilisée pour étiqueter un ensemble de types, remplacez l’interface par un attribut personnalisé.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
- Il est possible de supprimer un avertissement de cette règle lorsque l’interface est utilisée pour identifier un ensemble de types au moment de la compilation.
+ Il est possible de supprimer sans risque un avertissement de cette règle quand l’interface est utilisée pour identifier un ensemble de types au moment de la compilation.
 
 ## <a name="example"></a>Exemple
- L’exemple suivant montre une interface vide.
+ L’exemple suivant illustre une interface vide.
 
  [!code-cpp[FxCop.Design.InterfacesNotEmpty#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Design.InterfacesNotEmpty/cpp/FxCop.Design.InterfacesNotEmpty.cpp#1)]
  [!code-csharp[FxCop.Design.InterfacesNotEmpty#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Design.InterfacesNotEmpty/cs/FxCop.Design.InterfacesNotEmpty.cs#1)]

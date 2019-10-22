@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentText::GetContextOfPosition | Microsoft Docs
+title: 'IDebugDocumentText :: GetContextOfPosition | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: df63362c422289652d45ed4bbc80f117e17fb73c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d6a35a85a6e4761e1bd0db67caafd0913e7e28a3
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63008715"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572141"
 ---
 # <a name="idebugdocumenttextgetcontextofposition"></a>IDebugDocumentText::GetContextOfPosition
-Crée un objet de contexte de document correspondant à la plage de position de caractère fourni.  
+Crée un objet de contexte de document correspondant à la plage de positions de caractères fournie.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -39,23 +39,23 @@ HRESULT GetContextOfPosition(
   
 #### <a name="parameters"></a>Paramètres  
  `cCharacterPosition`  
- [in] Emplacement de la plage de position de caractère de début.  
+ dans Emplacement de début de la plage de la position du caractère.  
   
  `cNumChars`  
- [in] Nombre de caractères dans la plage.  
+ dans Nombre de caractères dans la plage.  
   
  `ppsc`  
- [out] L’objet de contexte de document correspondant à la plage de position de caractère spécifié.  
+ à Objet de contexte de document correspondant à la plage de positions de caractères spécifiée.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode crée un objet de contexte de document correspondant à la plage de position de caractère fourni.  
+ Cette méthode crée un objet de contexte de document correspondant à la plage de positions de caractères fournie.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IDebugDocumentText](../../winscript/reference/idebugdocumenttext-interface.md)

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Visual Studio templates, creating multi-project
 - project templates, multi-project
 - multi-project templates
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f24a7c0d07c804ca45bb31058061cda714ef6a51
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 8ad04a557ee4b0a359efebfbe7a70d8a85db4551
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62430495"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655839"
 ---
-# <a name="how-to-create-multi-project-templates"></a>Procédure : Créer des modèles à projets multiples
+# <a name="how-to-create-multi-project-templates"></a>Guide pratique pour créer des modèles à plusieurs projets
 
 Les modèles à plusieurs projets jouent le rôle de conteneurs pour au moins deux projets. Quand vous créez un projet basé sur un modèle multiprojet, tous les projets inclus dans le modèle sont ajoutés à la solution.
 
@@ -46,14 +46,14 @@ Par exemple, le fichier *.zip* d’un modèle à plusieurs projets contenant deu
 
 Le fichier *vstemplate* racine d’un modèle à plusieurs projets présente les différences suivantes par rapport à un modèle à projet unique :
 
-- L’attribut **Type** de l’élément **VSTemplate** a la valeur **ProjectGroup** au lieu de **Project**. Par exemple :
+- L’attribut **Type** de l’élément **VSTemplate** a la valeur **ProjectGroup** au lieu de **Project**. Exemple :
 
     ```xml
     <VSTemplate Version="2.0.0" Type="ProjectGroup"
         xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     ```
 
-- L’élément **TemplateContent** contient un élément **ProjectCollection** ayant un ou plusieurs éléments **ProjectTemplateLink** qui définissent les chemins des fichiers *vstemplate* des projets inclus. Par exemple :
+- L’élément **TemplateContent** contient un élément **ProjectCollection** ayant un ou plusieurs éléments **ProjectTemplateLink** qui définissent les chemins des fichiers *vstemplate* des projets inclus. Exemple :
 
     ```xml
     <TemplateContent>
@@ -69,7 +69,7 @@ Le fichier *vstemplate* racine d’un modèle à plusieurs projets présente les
     ```
 
 > [!TIP]
-> Si vous souhaitez que seul le modèle à plusieurs projets s’affiche dans la boîte de dialogue du nouveau projet et pas les projets individuels qu’il contient, marquez les modèles internes comme [masqués](../extensibility/hidden-element-visual-studio-templates.md). Par exemple :
+> Si vous souhaitez que seul le modèle à plusieurs projets s’affiche dans la boîte de dialogue du nouveau projet et pas les projets individuels qu’il contient, marquez les modèles internes comme [masqués](../extensibility/hidden-element-visual-studio-templates.md). Exemple :
 >
 > ```xml
 > <VSTemplate Type="Project" ... >

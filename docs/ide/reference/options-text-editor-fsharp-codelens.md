@@ -4,21 +4,21 @@ ms.date: 01/16/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.F%2523.CodeLens
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0799b06331fd83614b578c171e5f100d651f4952
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 2c1182c40987638cc871a877443db0357f962f53
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778552"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666249"
 ---
 # <a name="options-text-editor-f-codelens"></a>Options, Éditeur de texte, F#, CodeLens
 
-Utilisez la page d’options **CodeLens** pour modifier les paramètres CodeLens de l’éditeur de texte pour F#. Pour accéder à cette page d’options, choisissez **Outils** > **Options**, puis **Éditeur de texte** > **F#** > **CodeLens**.
+Utilisez la page d’options **CodeLens** pour modifier les paramètres CodeLens de l’éditeur de texte pour F#. Pour accéder à cette page d’options, choisissez **Outils** > **Options**, puis **Éditeur de texte** > **F#**  > **CodeLens**.
 
 ## <a name="codelens"></a>CodeLens
 

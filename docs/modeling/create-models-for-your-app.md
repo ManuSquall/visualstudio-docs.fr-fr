@@ -16,37 +16,37 @@ helpviewer_keywords:
 - diagrams - modeling, layer
 - software, designing
 - software, modeling
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79d116cfb7c9b6514032aa12d916b21b38ae94b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 996f0336742441e565d16b0fe491e846d0d24329
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811685"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72654118"
 ---
 # <a name="create-models-for-your-app"></a>Créer des modèles pour votre application
 
 Les diagrammes de modélisation vous aident à comprendre, clarifier et communiquer vos idées concernant votre code et les besoins des utilisateurs que votre système logiciel doit prendre en charge.
 
-Pour connaître les versions de Visual Studio prennent en charge chaque type de diagramme, consultez [versions prises en charge pour l’architecture et les outils de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Pour connaître les versions de Visual Studio qui prennent en charge chaque type de diagramme, consultez [prise en charge des versions pour les outils d’architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 Pour visualiser l'architecture d'un système ou de code existant, créez les diagrammes suivants :
 
 |**Diagramme**|**Éléments décrits**|
 |-|-|
-|[Diagrammes de dépendance : Recommandations](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Diagrammes de dépendance : Informations de référence](../modeling/layer-diagrams-reference.md)|Architecture de haut niveau du système|
+|[Diagrammes de dépendance : recommandations](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Diagrammes de dépendance : référence](../modeling/layer-diagrams-reference.md)|Architecture de haut niveau du système|
 |Cartes de code<br /><br /> [Mapper les dépendances à travers vos solutions](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [Rechercher des problèmes potentiels à l’aide des analyseurs de carte du code](../modeling/find-potential-problems-using-code-map-analyzers.md)|Dépendances et autres relations dans le code existant|
 |Diagrammes de classes générés par du code<br /><br /> [Utilisation des diagrammes de classes (Concepteur de classes)](../ide/class-designer/designing-and-viewing-classes-and-types.md)|Types et leurs relations dans le code .NET|
 
 ## <a name="related-tasks"></a>Tâches connexes
 
-|**Rubrique**|**Task**|
+|**Sujets**|**Task**|
 |-|-|
-|[Visualiser du code](../modeling/visualize-code.md)|Créer des cartes de code et des diagrammes de dépendance afin de mieux comprennent le code inconnu.|
+|[Visualiser du code](../modeling/visualize-code.md)|Créez des cartes de code et des diagrammes de dépendances pour mieux comprendre le code inconnu.|
 |[Modéliser les besoins des utilisateurs](../modeling/model-user-requirements.md)|Utiliser des modèles pour clarifier et communiquer les besoins des utilisateurs.|
 |[Modéliser l’architecture de votre application](../modeling/model-your-app-s-architecture.md)|Utiliser des modèles pour décrire la structure globale et le comportement de votre système et pour vous assurer qu'il répond aux besoins des utilisateurs.|
 |[Valider votre système pendant le développement](../modeling/validate-your-system-during-development.md)|Assurez-vous que votre logiciel reste cohérent avec les besoins de vos utilisateurs et avec l'architecture globale de votre système.|
@@ -55,5 +55,5 @@ Pour visualiser l'architecture d'un système ou de code existant, créez les dia
 
 ## <a name="resources"></a>Ressources
 
-- [Visual Studio Visualization and Modeling Forum des outils](http://go.microsoft.com/fwlink/?LinkId=184720)
-- [Forum extensibilité Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx)
+- [Visual Studio Visualization & Forum outils de modélisation](http://go.microsoft.com/fwlink/?LinkId=184720)
+- [Forum sur l’extensibilité de Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx)

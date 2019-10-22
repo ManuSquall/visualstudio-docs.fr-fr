@@ -1,5 +1,5 @@
 ---
-title: 'CA1900 : Champs de type valeur doivent être portables | Microsoft Docs'
+title: 'Ca1900 : les champs de type valeur doivent être portables | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -12,36 +12,36 @@ helpviewer_keywords:
 - CA1900
 ms.assetid: 1787d371-389f-4d39-b305-12b53bc0dfb9
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 97a83bf4ba71d0adc71fdb96d4e1c865358c08e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ff56c89a56af54288284d9cc62c71d0c9b2179b4
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68203099"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72661104"
 ---
 # <a name="ca1900-value-type-fields-should-be-portable"></a>CA1900 : Les champs de type valeur doivent être portables
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Pour obtenir la dernière documentation sur Visual Studio, consultez [CA1900 : Champs de type valeur doivent être portables](https://docs.microsoft.com/visualstudio/code-quality/ca1900-value-type-fields-should-be-portable).  
-  
-|||  
-|-|-|  
-|TypeName|ValueTypeFieldsShouldBePortable|  
-|CheckId|CA1900|  
-|Catégorie|Microsoft.Portability|  
-|Modification avec rupture|Avec rupture - Si le champ peut être visible en dehors de l’assembly.<br /><br /> Sans rupture - Si le champ n’est pas visible en dehors de l’assembly.|  
-  
-## <a name="cause"></a>Cause  
- Cette règle vérifie que les structures déclarées avec une disposition explicite seront aligneront correctement lorsqu’elle est marshalée au code non managé sur les systèmes d’exploitation 64 bits. IA-64 n’autorise pas les accès mémoire non alignés et le processus se bloquera si cette violation n’est pas résolue.  
-  
-## <a name="rule-description"></a>Description de la règle  
- Structures qui ont une disposition explicite qui contient des champs non alignés provoquent des pannes sur les systèmes d’exploitation 64 bits.  
-  
-## <a name="how-to-fix-violations"></a>Comment corriger les violations  
- Tous les champs qui sont inférieures à 8 octets doivent avoir les décalages qui sont un multiple de leur taille et les champs qui sont de 8 octets ou plus doivent avoir des offsets qui sont un multiple de 8. Une autre solution consiste à utiliser `LayoutKind.Sequential` au lieu de `LayoutKind.Explicit`, s’il est raisonnable.  
-  
-## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements  
- Cet avertissement doit être supprimé uniquement s’il se produit dans l’erreur.
+Pour obtenir la documentation la plus récente sur Visual Studio, consultez [ca1900 : les champs de type valeur doivent être portables](https://docs.microsoft.com/visualstudio/code-quality/ca1900-value-type-fields-should-be-portable).
+
+|||
+|-|-|
+|TypeName|ValueTypeFieldsShouldBePortable|
+|CheckId|CA1900|
+|Category|Microsoft. Portability|
+|Modification avec rupture|Avec rupture : si le champ peut être consulté à l’extérieur de l’assembly.<br /><br /> Sans rupture : si le champ n’est pas visible à l’extérieur de l’assembly.|
+
+## <a name="cause"></a>Cause
+ Cette règle vérifie que les structures déclarées avec une disposition explicite s’aligneront correctement lorsqu’elles sont marshalées vers du code non managé sur les systèmes d’exploitation 64 bits. IA-64 n’autorise pas les accès à la mémoire non alignée et le processus se bloquera si cette violation n’est pas résolue.
+
+## <a name="rule-description"></a>Description de la règle
+ Les structures dont la disposition explicite contient des champs mal alignés provoquent des incidents sur les systèmes d’exploitation 64 bits.
+
+## <a name="how-to-fix-violations"></a>Comment corriger les violations
+ Tous les champs inférieurs à 8 octets doivent avoir des décalages qui sont un multiple de leur taille, et les champs de 8 octets ou plus doivent avoir des décalages qui sont un multiple de 8. Une autre solution consiste à utiliser `LayoutKind.Sequential` au lieu de `LayoutKind.Explicit`, si cela est raisonnable.
+
+## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
+ Cet avertissement doit être supprimé uniquement s’il se produit en cas d’erreur.

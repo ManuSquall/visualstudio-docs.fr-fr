@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentProvider::GetDocument | Microsoft Docs
+title: 'IDebugDocumentProvider :: GetDocument | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8f6b816f455d213cb81065f1909930bf50eeb415
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d9240f059023fee4f55f34c80087063638ec8ad6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970885"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572174"
 ---
 # <a name="idebugdocumentprovidergetdocument"></a>IDebugDocumentProvider::GetDocument
-Provoque le document soit instanciée si elle n’existe pas déjà.  
+Provoque l’instanciation du document s’il n’existe pas déjà.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -37,17 +37,17 @@ HRESULT GetDocument(
   
 #### <a name="parameters"></a>Paramètres  
  `ppssd`  
- [out] Le document de débogage correspondant au document.  
+ à Document de débogage correspondant au document.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|Value|Description|  
+|valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
 ## <a name="remarks"></a>Notes  
- Cette méthode provoque le document soit instanciée si elle n’existe pas déjà.  
+ Cette méthode provoque l’instanciation du document s’il n’existe pas déjà.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IDebugDocumentProvider](../../winscript/reference/idebugdocumentprovider-interface.md)

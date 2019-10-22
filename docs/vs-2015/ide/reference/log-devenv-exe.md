@@ -10,35 +10,35 @@ helpviewer_keywords:
 - /Log Devenv switch
 ms.assetid: ae23c4ae-2376-4fe3-b8d2-81d34e61c8ba
 caps.latest.revision: 13
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 18b455d3da5693e5a82dbf45e52d04b18edaef5d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f427edfe294605b7b2adcbb0889e48c4f37b6ba9
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68199094"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666842"
 ---
 # <a name="log-devenvexe"></a>/Log (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Enregistre toute l'activité dans le fichier journal de résolution des problèmes. Ce fichier apparaît une fois que vous avez appelé `devenv /log` au moins une fois. Par défaut, le fichier journal est :  
-  
- *%APPDATA%* \Microsoft\VisualStudio\\*Version*\ActivityLog.xml  
-  
- où *Version* est la version de Visual Studio. Toutefois, vous pouvez spécifier un autre chemin d'accès et/ou nom de fichier.  
-  
-## <a name="syntax"></a>Syntaxe  
-  
-```  
-Devenv /log Path\NameOfLogFile  
-```  
-  
-## <a name="remarks"></a>Remarques  
- Ce commutateur doit apparaître à la fin de la ligne de commande, après tous les autres commutateurs.  
-  
- Le journal est rédigé pour toutes les instances de Visual Studio que vous avez appelées avec le commutateur /log. Il ne consigne pas les instances de Visual Studio que vous avez appelées sans ce commutateur.  
-  
-## <a name="see-also"></a>Voir aussi  
+Enregistre toute l'activité dans le fichier journal de résolution des problèmes. Ce fichier apparaît une fois que vous avez appelé `devenv /log` au moins une fois. Par défaut, le fichier journal est :
+
+ *%APPDATA%* \Microsoft\VisualStudio\\*Version*\ActivityLog.xml
+
+ où *Version* est la version de Visual Studio. Toutefois, vous pouvez spécifier un autre chemin d'accès et/ou nom de fichier.
+
+## <a name="syntax"></a>Syntaxe
+
+```
+Devenv /log Path\NameOfLogFile
+```
+
+## <a name="remarks"></a>Remarques
+ Ce commutateur doit apparaître à la fin de la ligne de commande, après tous les autres commutateurs.
+
+ Le journal est rédigé pour toutes les instances de Visual Studio que vous avez appelées avec le commutateur /log. Il ne consigne pas les instances de Visual Studio que vous avez appelées sans ce commutateur.
+
+## <a name="see-also"></a>Voir aussi
  [Commutateurs de la ligne de commande Devenv](../../ide/reference/devenv-command-line-switches.md)

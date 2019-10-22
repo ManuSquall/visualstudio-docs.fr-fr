@@ -8,15 +8,15 @@ dev_langs:
 - CSharp
 - VB
 - CPP
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1962a977cb282613405342f225d63140f1854453
-ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.openlocfilehash: dc3c11610d95756b265d5ba01a6f8365f115548a
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71342429"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659804"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Utiliser la couverture du code pour déterminer la quantité de code testé
 
@@ -32,7 +32,7 @@ Vous pouvez avoir recours à la couverture du code lorsque vous exécutez des m�
 
 ::: moniker-end
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>spécifications
 
 La fonctionnalité de couverture du code n’est disponible que dans l’édition Visual Studio Enterprise.
 
@@ -54,10 +54,10 @@ La fonctionnalité de couverture du code n’est disponible que dans l’éditio
 
 ::: moniker-end
 
-2. Une fois les tests exécutés, pour voir ![les lignes qui ont été exécutées, choisissez afficher l’icône](../test/media/codecoverage-showcoloringicon.png) de coloration de la couverture du code afficher la coloration de la couverture du **code** dans la fenêtre résultats de la couverture du **code** . Par défaut, le code qui est couvert par les tests est mis en surbrillance en bleu clair.
+2. Une fois les tests exécutés, pour voir les lignes qui ont été exécutées, choisissez ![Show icône de coloration de la couverture du code ](../test/media/codecoverage-showcoloringicon.png) afficher la coloration de la **couverture du code** dans la fenêtre résultats de la couverture du **code** . Par défaut, le code qui est couvert par les tests est mis en surbrillance en bleu clair.
 
    > [!TIP]
-   > Pour modifier les couleurs ou utiliser le style gras, choisissez **Outils** > **options** > **environnement** > **polices et couleurs** > **afficher les paramètres pour : Éditeur de texte**. Sous **éléments affichés**, ajustez les paramètres pour les éléments de « couverture », par exemple, **zone non touchées**.
+   > Pour modifier les couleurs ou utiliser le style gras, choisissez **outils**  > **Options**  > **environnement**  > **polices et couleurs**  > **afficher les paramètres de : éditeur de texte**. Sous **éléments affichés**, ajustez les paramètres pour les éléments de « couverture », par exemple, **zone non touchées**.
    >
    > ![Polices et couleurs de la couverture du code](media/vs-2019/coverage-fonts-and-colors.png)
 
@@ -124,7 +124,7 @@ Vous pouvez exclure des éléments spécifiques dans votre code à partir des no
 > [!TIP]
 > Le fait d’exclure une classe n'a pas pour effet d’exclure ses classes dérivées.
 
-Exemple :
+Exemple :
 
 ```csharp
 using System.Diagnostics.CodeAnalysis;
@@ -300,7 +300,7 @@ Pour exécuter des tests à partir de la ligne de commande, utilisez *vstest.con
 
 Pour plus d’informations, consultez [Options de ligne de commande VSTest.Console.exe](vstest-console-options.md).
 
-## <a name="troubleshoot"></a>Résolution des problèmes
+## <a name="troubleshoot"></a>Résoudre les problèmes
 
 Si vous ne voyez pas les résultats de la couverture du code, consultez l’article [Résoudre les problèmes liés à la couverture du code](../test/troubleshooting-code-coverage.md).
 
