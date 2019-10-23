@@ -13,17 +13,17 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 31fb3f5bf88b0caf179a43d02358bb6a9f1a2831
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a8c06477b7cd9d069e416cfd7d86a8cd0cb7bfd5
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975789"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572267"
 ---
 # <a name="active-script-debugging-overview"></a>Débogage de script actif (présentation)
 Les interfaces de débogage de script actif permettent d’effectuer un débogage indépendant du langage et indépendant de l’hôte, et elles prennent en charge un large éventail d’environnements de développement.  
   
- ![Processus Script Host](../winscript/media/scp56activdbgarchgif.gif "Scp56ActivDbgArchgif")  
+ ![Processus de l’hôte de script](../winscript/media/scp56activdbgarchgif.gif "Scp56ActivDbgArchgif")  
 Figure 1  
   
  Un environnement de débogage indépendant du langage peut prendre en charge n’importe quel langage ou combinaison de langages de programmation, sans avoir aucune connaissance spécifique de ces langages de programmation. L’environnement de débogage prend également en charge les points d’arrêt et l’exécution pas à pas interlangage. (Cette présentation se concentre essentiellement sur la prise en charge des langages de script, tels que VBScript et [!INCLUDE[javascript](../javascript/includes/javascript-md.md)].)  

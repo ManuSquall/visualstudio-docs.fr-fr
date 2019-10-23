@@ -5,21 +5,21 @@ ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Advanced
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 010f2a2e6dc163f24a29e8e352b21d8ef8d72b48
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d1d540f3a49eda22973b25a6b9a91691907efe93
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811826"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72666292"
 ---
 # <a name="options-text-editor-c-advanced"></a>Options, Éditeur de texte, C#, Avancé
 
-Utilisez la page d’options **Avancé** pour modifier les paramètres de mise en forme de l’éditeur, la refactorisation de code et les commentaires sur la documentation XML pour C#. Pour accéder à cette page d’options, choisissez **Outils** > **Options**, puis **Éditeur de texte** > **C#** > **Avancé**.
+Utilisez la page d’options **Avancé** pour modifier les paramètres de mise en forme de l’éditeur, la refactorisation de code et les commentaires sur la documentation XML pour C#. Pour accéder à cette page d’options, choisissez **Outils** > **Options**, puis **Éditeur de texte** > **C#**  > **Avancé**.
 
 > [!NOTE]
 > Toutes les options peuvent ne pas être répertoriées ici.
@@ -118,7 +118,7 @@ Utilisez la page d’options **Avancé** pour modifier les paramètres de mise e
 
 ## <a name="block-structure-guides"></a>Repères de structure de bloc
 
-Cochez ces cases pour afficher des lignes verticales en pointillés entre accolades (**{}**) dans votre code. Cela vous permet de voir facilement les blocs de code pour vos constructions au niveau des déclarations et au niveau du code.
+Cochez ces cases pour afficher des lignes verticales en pointillés entre accolades ( **{}** ) dans votre code. Cela vous permet de voir facilement les blocs de code pour vos constructions au niveau des déclarations et au niveau du code.
 
 ## <a name="editor-help"></a>Aide de l'éditeur
 
@@ -128,7 +128,7 @@ Cochez ces cases pour afficher des lignes verticales en pointillés entre accola
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Guide pratique pour insérer des commentaires XML pour la génération de documentation](../../ide/reference/generate-xml-documentation-comments.md)
+- [Guide pratique : insérer des commentaires XML pour la génération de documentation](../../ide/reference/generate-xml-documentation-comments.md)
 - [Commentaires de documentation XML (Guide de programmation C#)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)
 - [Documenter votre code avec des commentaires XML (Guide C#)](/dotnet/csharp/codedoc)
 - [Définir les options d’éditeur spécifiques au langage](../../ide/reference/setting-language-specific-editor-options.md)

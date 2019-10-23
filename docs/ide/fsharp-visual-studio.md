@@ -5,17 +5,17 @@ ms.date: 07/11/2018
 ms.topic: reference
 helpviewer_keywords:
 - F# features [Visual Studio]
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: fef50748942aaa800cf1181e4c8f8b8a030f99ee
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 176504ceb7c80a36028e7d5f1806aa598cdf708e
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211300"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72645367"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>Développer avec Visual F# dans Visual Studio
 
@@ -152,7 +152,7 @@ Pour obtenir des informations générales sur le débogueur Visual Studio, consu
 
 Le tableau suivant récapitule la prise en charge de F# dans les outils Visual Studio.
 
-|Outil|Description|Pris en charge en F# ?|
+|Tool|Description|Pris en charge en F# ?|
 |----|-----------|----------------|
 |Hiérarchie d'appels|Affiche la structure imbriquée des appels de fonction dans votre code.|Non|
 |Métrique du code|Rassemble des informations sur votre code, comme le nombre de lignes.|Non|

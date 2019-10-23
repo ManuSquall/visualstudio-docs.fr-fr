@@ -11,17 +11,17 @@ f1_keywords:
 helpviewer_keywords:
 - regular expressions [Visual Studio]
 - regular expressions
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 380201259cc19c15b68ea9142308f21b901a9241
-ms.sourcegitcommit: b02c40c1ba193e38b5ace14590a6d57590d3270f
+ms.openlocfilehash: 53fd8af330d0cdab84d944dc453dbfe66208608f
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71012582"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72647333"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Utiliser des expressions régulières dans Visual Studio
 
@@ -33,32 +33,32 @@ Le tableau suivant contient des caractères, des opérateurs, des constructions 
 
 |Objectif|Expression|Exemple|
 |-------------|----------------|-------------|
-|Correspond à n'importe quel caractère unique (sauf un saut de ligne). Pour plus d’informations, consultez [N’importe quel caractère](/dotnet/standard/base-types/character-classes-in-regular-expressions#any-character-).|.|`a.o`met en correspondance « Tao » dans « autour de » et « ABO » dans « about », mais pas « Acro » dans « sur »|
+|Correspond à n'importe quel caractère unique (sauf un saut de ligne). Pour plus d’informations, consultez [N’importe quel caractère](/dotnet/standard/base-types/character-classes-in-regular-expressions#any-character-).|.|`a.o` correspond à « Tao » dans « autour de » et « ABO » dans « about », mais pas à « Acro » dans « sur »|
 |Correspond à zéro ou plusieurs occurrences de l'expression précédente (correspond à autant de caractères que possible). Pour plus d’informations, consultez [Mettre en correspondance zéro occurrence ou plus](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-zero-or-more-times-).|*|`a*r` correspond à "r" dans "rack", à "rar" dans "ark" et à "aar" dans "aardvark"|
 |Correspond à n’importe quel caractère zéro ou plusieurs fois.|.*|`c.*e` correspond à « cke » dans « racket », à « comme » dans « commentaire » et à « code » dans « code ».|
-|Correspond à une ou plusieurs occurrences de l'expression précédente (correspond à autant de caractères que possible). Pour plus d’informations, consultez [Mettre en correspondance une occurrence ou plus](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-one-or-more-times-).|+|`e+d`correspond à « seau » dans « Feeder » et « Ed » dans « Terni »|
-|Faire correspondre à n'importe quel caractère une ou plusieurs fois.|.+|`e.+e`correspond à « EEDE » dans « Feeder », mais ne trouve pas de correspondance dans « feed »|
-|Correspond à zéro ou plusieurs occurrences de l'expression précédente (correspond au minimum de caractères possible). Pour plus d’informations, consultez [Mettre en correspondance zéro occurrence ou plus (correspondance paresseuse)](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-zero-or-more-times-lazy-match-).|*?|`\w*?d`correspond à « FAD » et « Ed » dans « Terni », mais pas au mot entier « Terni » en raison de la correspondance tardive|
-|Correspond à une ou plusieurs occurrences de l'expression précédente (correspond au minimum de caractères possible). Pour plus d’informations, consultez [Mettre en correspondance une occurrence ou plus (correspondance paresseuse)](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-one-or-more-times-lazy-match-).|+?|`e\w+?`correspond à « EE » dans « en veille » et à « Ed » dans « Terni », mais ne trouve aucune correspondance dans « fondu »|
-|Ancre la chaîne de correspondance [au début d'une ligne ou d'une chaîne](/dotnet/standard/base-types/anchors-in-regular-expressions#start-of-string-or-line-)|^|`^car`correspond au mot « car » uniquement lorsqu’il apparaît au début d’une ligne|
-|Ancre la chaîne de correspondance à la [fin d'une ligne](/dotnet/standard/base-types/anchors-in-regular-expressions#end-of-string-or-line-)|\r?$|`car\r?$`correspond à « car » uniquement lorsqu’il apparaît à la fin d’une ligne|
-|Ancre la chaîne de correspondance à la fin du fichier|$|`car$`correspond à « car » uniquement lorsqu’il apparaît à la fin du fichier|
-|Correspond à n'importe quel caractère unique d'un ensemble|[abc]|`b[abc]`correspond à « BA », « BB » et « BC »|
-|Correspond à n'importe quel caractère dans une plage de caractères|[a-f]|`be[n-t]`correspond à « Bet » dans « between », « Ben » dans « sous » et « BES » dans « beside », mais ne trouve aucune correspondance dans « ci-dessous »|
+|Correspond à une ou plusieurs occurrences de l'expression précédente (correspond à autant de caractères que possible). Pour plus d’informations, consultez [Mettre en correspondance une occurrence ou plus](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-one-or-more-times-).|+|`e+d` correspond à « seau » dans « Feeder » et « Ed » dans « Terni »|
+|Faire correspondre à n'importe quel caractère une ou plusieurs fois.|.+|`e.+e` correspond à « EEDE » dans « Feeder », mais ne trouve aucune correspondance dans « feed »|
+|Correspond à zéro ou plusieurs occurrences de l'expression précédente (correspond au minimum de caractères possible). Pour plus d’informations, consultez [Mettre en correspondance zéro occurrence ou plus (correspondance paresseuse)](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-zero-or-more-times-lazy-match-).|*?|`\w*?d` correspond à « FAD » et « Ed » dans « Terni », mais pas au mot entier « Terni » en raison de la correspondance tardive|
+|Correspond à une ou plusieurs occurrences de l'expression précédente (correspond au minimum de caractères possible). Pour plus d’informations, consultez [Mettre en correspondance une occurrence ou plus (correspondance paresseuse)](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-one-or-more-times-lazy-match-).|+?|`e\w+?` correspond à « EE » dans « en veille » et à « Ed » dans « Terni », mais ne trouve aucune correspondance en « fondu »|
+|Ancre la chaîne de correspondance [au début d'une ligne ou d'une chaîne](/dotnet/standard/base-types/anchors-in-regular-expressions#start-of-string-or-line-)|^|`^car` correspond au mot « car » uniquement lorsqu’il apparaît au début d’une ligne|
+|Ancre la chaîne de correspondance à la [fin d'une ligne](/dotnet/standard/base-types/anchors-in-regular-expressions#end-of-string-or-line-)|\r?$|`car\r?$` correspond à « car » uniquement lorsqu’il apparaît à la fin d’une ligne|
+|Ancre la chaîne de correspondance à la fin du fichier|$|`car$` correspond à « car » uniquement lorsqu’il apparaît à la fin du fichier|
+|Correspond à n'importe quel caractère unique d'un ensemble|[abc]|`b[abc]` correspond à « BA », « BB » et « BC ».|
+|Correspond à n'importe quel caractère dans une plage de caractères|[a-f]|`be[n-t]` correspond à « Bet » dans « between », « Ben » dans « sous » et « BES » dans « beside », mais ne trouve aucune correspondance dans « ci-dessous »|
 |Capture et numérote implicitement l'expression contenue dans les parenthèses|()|`([a-z])X\1` correspond à "aXa" et à "bXb", mais pas à "aXb". « \1 » fait référence au premier groupe d’expressions « [a-z] ». Pour plus d’informations, consultez [Groupes de capture et modèles de remplacement](#capture-groups-and-replacement-patterns). |
 |Invalide une correspondance|(?!abc)|`real(?!ity)` correspond à "real" dans "realty" et dans "really", mais pas dans "reality". Trouve également le deuxième « real » (mais pas le premier « real ») dans « realityreal ».|
-|Correspond à n'importe quel caractère qui ne figure pas dans un ensemble donné de caractères. Pour plus d’informations, consultez [Groupe de caractères négatif](/dotnet/standard/base-types/character-classes-in-regular-expressions#negative-character-group-).|[^abc]|`be[^n-t]`correspond à « BEF » dans « Before », à « BA » dans « behind » et à « Bel » dans « ci-dessous », mais ne trouve pas de correspondance dans « sous »|
-|Correspond à l'expression placée avant ou après le symbole|&#124;|`(sponge|mud) bath`correspond à « éponge bain » et à « bain de boue »|
-|[Crée une séquence d'échappement](/dotnet/standard/base-types/character-escapes-in-regular-expressions) pour le caractère placé après la barre oblique inverse| \\ |`\^`correspond au caractère ^|
-|Spécifie le nombre d'occurrences du caractère ou du groupe précédent. Pour plus d’informations, consultez [Mettre en correspondance exactement n occurrences](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-exactly-n-times-n).|{n}, où n est le nombre d'occurrences|`x(ab){2}x`correspond à « xababx »<br/>`x(ab){2,3}x`correspond à « xababx » et à « xabababx », mais pas à « xababababx »|
-|[Mettre en correspondance un texte dans une catégorie Unicode](/dotnet/standard/base-types/character-classes-in-regular-expressions#unicode-category-or-unicode-block-p). Pour plus d’informations sur les classes de caractères Unicode, consultez [Propriétés des caractères de la norme Unicode 5.2](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf).|\p{X}, où "X" est le numéro Unicode.|`\p{Lu}`correspond à « T » et « D » dans « Thomas Doe »|
-|[Correspond à la limite d'un mot](/dotnet/standard/base-types/anchors-in-regular-expressions#word-boundary-b)|\b (en dehors d’une classe de caractères `\b` spécifie une limite de mot et, à l’intérieur d’une classe de caractères, `\b` spécifie un retour arrière)|`\bin`correspond à « in » dans « à l’intérieur de », mais ne trouve pas de correspondance dans « Pinto »|
-|Correspond à un saut de ligne (c’est-à-dire un retour chariot suivi d’une nouvelle ligne)|\r?\n|`End\r?\nBegin`correspond à "End" et "Begin" uniquement lorsque "End" est la dernière chaîne d’une ligne et "Begin" est la première chaîne de la ligne suivante|
-|Mettre en correspondance avec n’importe quel [caractère alphabétique](/dotnet/standard/base-types/character-classes-in-regular-expressions#word-character-w)|\w|`a\wd`correspond à « Add » et à « A1D », mais pas à « a d »|
-|Correspond à n'importe quel [espace blanc](/dotnet/standard/base-types/character-classes-in-regular-expressions#whitespace-character-s)|\s|`Public\sInterface`correspond à l’expression « public interface »|
-|Mettre en correspondance avec n’importe quel [caractère numérique décimal](/dotnet/standard/base-types/character-classes-in-regular-expressions#decimal-digit-character-d)|\d|`\d`correspond à « 4 » et « 0 » dans « WD40 »|
+|Correspond à n'importe quel caractère qui ne figure pas dans un ensemble donné de caractères. Pour plus d’informations, consultez [Groupe de caractères négatif](/dotnet/standard/base-types/character-classes-in-regular-expressions#negative-character-group-).|[^abc]|`be[^n-t]` correspond à « BEF » dans « Before », « BA » dans « behind » et « bel » dans « ci-dessous », mais ne trouve aucune correspondance dans « sous »|
+|Correspond à l'expression placée avant ou après le symbole|&#124;|`(sponge|mud) bath` correspond au bain-éponge et au bain de boue|
+|[Crée une séquence d'échappement](/dotnet/standard/base-types/character-escapes-in-regular-expressions) pour le caractère placé après la barre oblique inverse| \\ |`\^` correspond au caractère ^|
+|Spécifie le nombre d'occurrences du caractère ou du groupe précédent. Pour plus d’informations, consultez [Mettre en correspondance exactement n occurrences](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-exactly-n-times-n).|{n}, où n est le nombre d'occurrences|`x(ab){2}x` correspond à « xababx »<br/>`x(ab){2,3}x` correspond à « xababx » et à « xabababx », mais pas à « xababababx »|
+|[Mettre en correspondance un texte dans une catégorie Unicode](/dotnet/standard/base-types/character-classes-in-regular-expressions#unicode-category-or-unicode-block-p). Pour plus d’informations sur les classes de caractères Unicode, consultez [Propriétés des caractères de la norme Unicode 5.2](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf).|\p{X}, où "X" est le numéro Unicode.|`\p{Lu}` correspond à « T » et « D » dans « Thomas Doe »|
+|[Correspond à la limite d'un mot](/dotnet/standard/base-types/anchors-in-regular-expressions#word-boundary-b)|\b (en dehors d’une classe de caractères `\b` spécifie une limite de mot et, à l’intérieur d’une classe de caractères, `\b` spécifie un retour arrière)|`\bin` correspond à « in » dans « à l’intérieur de », mais ne trouve aucune correspondance dans « Pinto »|
+|Correspond à un saut de ligne (c’est-à-dire un retour chariot suivi d’une nouvelle ligne)|\r?\n|`End\r?\nBegin` correspond à "End" et "Begin" uniquement lorsque "End" est la dernière chaîne d’une ligne et "Begin" est la première chaîne de la ligne suivante|
+|Mettre en correspondance avec n’importe quel [caractère alphabétique](/dotnet/standard/base-types/character-classes-in-regular-expressions#word-character-w)|\w|`a\wd` correspond à « Add » et à « A1D », mais pas à « a d »|
+|Correspond à n'importe quel [espace blanc](/dotnet/standard/base-types/character-classes-in-regular-expressions#whitespace-character-s)|\s|`Public\sInterface` correspond à l’expression « public interface »|
+|Mettre en correspondance avec n’importe quel [caractère numérique décimal](/dotnet/standard/base-types/character-classes-in-regular-expressions#decimal-digit-character-d)|\d|`\d` correspond à « 4 » et « 0 » dans « WD40 »|
 
-Un exemple d’expression régulière qui combine certains des opérateurs et des constructions pour correspondre à un nombre hexadécimal `\b0[xX]([0-9a-fA-F]+\)\b`est. Cette expression correspond à « 0xc67f », mais pas à « 0xc67g ».
+Un exemple d’expression régulière qui combine certains des opérateurs et des constructions pour faire correspondre un nombre hexadécimal est `\b0[xX]([0-9a-fA-F]+\)\b`. Cette expression correspond à « 0xc67f », mais pas à « 0xc67g ».
 
 > [!TIP]
 > Dans les systèmes d’exploitation Windows, la plupart des lignes se terminent par « \r\n » (retour chariot suivi d’une nouvelle ligne). Ces caractères ne sont pas visibles, mais sont présents dans l’éditeur et transmis au service d’expression régulière .NET.
