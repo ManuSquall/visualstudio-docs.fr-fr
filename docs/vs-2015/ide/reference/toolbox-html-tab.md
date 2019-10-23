@@ -159,7 +159,7 @@ L’onglet **HTML** de la boîte à outils fournit des composants utiles sur les
 
  Pour plus d’informations, voir [Contrôles de saisie HTML](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Syntaxe déclarative du contrôle serveur HtmlInputHidden](https://msdn.microsoft.com/4194e44d-1d74-4bfc-9cc7-743a2e1ea5f9) et <xref:System.Web.UI.HtmlControls.HtmlInputHidden>.
 
- **** ![Zone de texte de la barre d’outils HtmlPage](../../ide/reference/media/vxtextarea.gif "|::ref11::|") de textarea
+ ![Zone de texte de la barre d’outils HtmlPage](../../ide/reference/media/vxtextarea.gif "|::ref11::|") de **textarea**
 
  Insère un élément `textarea`. Vous pouvez redimensionner la zone de texte ou utiliser les barres de défilement pour afficher le texte qui s’étend au-delà de la zone d’affichage. Pour changer le texte affiché par défaut, modifiez l’attribut `value`. Par défaut, `id="textarea1"` est inséré pour la première zone de texte, `id=" textarea 2"` pour la deuxième, etc.
 
@@ -224,7 +224,7 @@ L’onglet **HTML** de la boîte à outils fournit des composants utiles sur les
 
  Pour plus d’informations, consultez [Horizontal Rule, contrôle HTML](https://msdn.microsoft.com/library/bf6df0a8-9844-404d-8a9a-3455b0180f2f).
 
- **** ![Étiquette de page HTML](../../ide/reference/media/vxlabel.gif "|::ref16::|") div
+ ![Étiquette de page HTML](../../ide/reference/media/vxlabel.gif "|::ref16::|") **div**
 
  Insère un élément `div` qui inclut un attribut `ms_positioning="FlowLayout"`. À l’exception de la largeur et de la hauteur, cet élément est identique à un panneau de mise en page fluide. Pour mettre en forme le texte contenu dans l’élément `div`, ajoutez un attribut `class="stylename"` à la balise d’ouverture.
 
