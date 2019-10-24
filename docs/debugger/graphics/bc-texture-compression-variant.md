@@ -1,5 +1,5 @@
 ---
-title: Variante de Compression de Texture BC | Microsoft Docs
+title: Variante de compression de texture BC | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2d0f5305-585b-4b01-bc9a-7a32d6e991da
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a25411449c1b13b12f05819061847c252a76c9c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c5faf19632d746105deed3a36af6943627594175
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62848697"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72736160"
 ---
 # <a name="bc-texture-compression-variant"></a>Variante de compression de texture BC
 Permet la compression de blocs sur les textures dont le format de pixel est une variation de B8G8R8X8, B8G8R8A8 ou R8G8B8A8.

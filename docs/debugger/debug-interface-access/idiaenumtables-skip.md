@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24232878452082dd1769c9bc9f1cd22d081968f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 48e4da48699bc9797c7ccbfb0f21bb0b2007c752
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832669"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743716"
 ---
 # <a name="idiaenumtablesskip"></a>IDiaEnumTables::Skip
 Ignore un nombre spécifié de tables dans une séquence d’énumération.
@@ -33,10 +33,10 @@ HRESULT Skip ( 
 #### <a name="parameters"></a>Paramètres
  `celt`
 
-[in] Le nombre de tables dans la séquence d’énumération à ignorer.
+dans Nombre de tables dans la séquence d’énumération à ignorer.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` si aucune table plus à ignorer.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` s’il n’y a plus de tables à ignorer.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)

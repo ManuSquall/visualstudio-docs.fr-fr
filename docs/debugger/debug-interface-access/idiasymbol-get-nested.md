@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 864a57b7adb8c77c342367ad5652fb2d839861de
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 16bbc876f3fcafea0c542daec02dbc8a108f203a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64796093"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739778"
 ---
-# <a name="idiasymbolgetnested"></a>IDiaSymbol::get_nested
+# <a name="idiasymbolget_nested"></a>IDiaSymbol::get_nested
 Récupère un indicateur qui spécifie si le type de données défini par l’utilisateur est imbriqué.
 
 ## <a name="syntax"></a>Syntaxe
@@ -33,13 +33,13 @@ HRESULT get_nested ( 
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-[out] Retourne `TRUE` si le type de données défini par l’utilisateur est imbriqué ; sinon, retourne `FALSE`.
+à Retourne `TRUE` si le type de données défini par l’utilisateur est imbriqué ; Sinon, retourne `FALSE`.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
-> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> Une valeur de retour de `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d92b7873395c51491b9164f27d62eec8020a0f8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: edabdf0b24a0aa7cee6e021d86719621e4e7eac3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838465"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744869"
 ---
-# <a name="idiaenumdebugstreamdatagetname"></a>IDiaEnumDebugStreamData::get_name
+# <a name="idiaenumdebugstreamdataget_name"></a>IDiaEnumDebugStreamData::get_name
 Récupère le nom d’un flux de données de débogage.
 
 ## <a name="syntax"></a>Syntaxe
@@ -33,10 +33,10 @@ HRESULT get_Name ( 
 #### <a name="parameters"></a>Paramètres
  pRetVal
 
-[out] Retourne le nom d’un flux de données de débogage.
+à Retourne le nom d’un flux de données de débogage.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne un code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)

@@ -1,5 +1,5 @@
 ---
-title: Persistance et l’exécution de Table de documents | Microsoft Docs
+title: Persistance et la table de documents en cours d’exécution | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,20 +13,20 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d80932ab926b7ef26eaef10991e4f5782e81c4b5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f03836e1faaac03fbd89c0b93f37a698cbdcd56a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328520"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72726079"
 ---
 # <a name="persistence-and-the-running-document-table"></a>Persistance et table de document en cours d’exécution
-Dans le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE, les projets sont entièrement responsables de la gestion de leurs éléments de projet, ils accomplir à l’aide du service, la persistance <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable>. Les documents sont l’unité élémentaire de persistance dans l’environnement Visual Studio. Projets coordonnent l’ouverture, l’enregistrement et changement de nom des documents avec la table document en cours d’exécution (RDT), une ressource qui effectue le suivi de l’état de tous les documents ouverts.
+Dans l’IDE [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], les projets sont entièrement responsables de la gestion de la persistance de leurs éléments de projet, qu’ils effectuent à l’aide du service, <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable>. Les documents sont l’unité de persistance de base dans l’environnement Visual Studio. Les projets coordonnent l’ouverture, l’enregistrement et le changement de nom des documents avec la table de documents en cours d’exécution (RDT), une ressource qui suit l’état de tous les documents ouverts.
 
 ## <a name="managing-persistence"></a>Gestion de la persistance
- Projets de contrôle de service de persistance de l’environnement en implémentant le <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem> interface. Alors que l’environnement de demande jamais directement à un document à persévérer, il demande le projet propriétaire (ou hiérarchie) pour enregistrer le document. Cela rend possible pour le projet enregistrer ses données d’élément de projet dans les fichiers locaux, les fichiers à distance, une base de données, un référentiel ou un autre support.
+ Les projets contrôlent le service de persistance de l’environnement en implémentant l’interface <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem>. Alors que l’environnement ne demande jamais directement à un document de persister, il demande au projet propriétaire (ou à la hiérarchie) d’enregistrer le document. Cela permet au projet d’enregistrer ses données d’élément de projet dans des fichiers locaux, des fichiers distants, une base de données, un référentiel ou un autre support.
 
- L’environnement global conserve la RDT. L’environnement comprend des entrées pour toutes les fenêtres ouvertes et documents dans le RDT, ce qui rend possible pour qu’ils puissent recevoir des notifications spéciales, telles que lors de la fermeture d’une solution. En outre, la RDT rend possible pour l’environnement effectuer le suivi de leurs nœuds correspondants dans **l’Explorateur de solutions**. La RDT conserve un enregistrement par objet ouvert, persistant, y compris les fichiers projet et les documents de l’élément de projet.
+ L’environnement global gère le RDT. L’environnement contient des entrées pour toutes les fenêtres et tous les documents ouverts dans RDT, ce qui leur permet de recevoir des notifications spéciales, par exemple quand une solution est fermée. En outre, l’RDT permet à l’environnement de suivre les nœuds correspondants dans **Explorateur de solutions**. Le RDT gère un enregistrement par objet persistant ouvert, y compris les fichiers projet et les documents d’élément de projet.
 
 ## <a name="see-also"></a>Voir aussi
 - [Exécution de la table de document](../../extensibility/internals/running-document-table.md)

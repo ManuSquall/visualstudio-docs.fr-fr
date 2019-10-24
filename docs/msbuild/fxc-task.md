@@ -11,18 +11,18 @@ dev_langs:
 - jsharp
 - C++
 helpviewer_keywords:
-- MSBuild (Visual C++), FXC task
-- FXC task (MSBuild (Visual C++))
+- MSBuild (C++), FXC task
+- FXC task (MSBuild (C++))
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - multiple
-ms.openlocfilehash: 65819f1625477effab024055828301b26ab5804a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 766a3dc35d72e21fc0aca9436ebff25dc3193a2e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62931477"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747327"
 ---
 # <a name="fxc-task"></a>Tâche FXC
 
@@ -34,7 +34,7 @@ Le tableau suivant décrit les paramètres de la tâche **FXC**.
 
 |Paramètre|Description|
 |---------------|-----------------|
-|**AdditionalIncludeDirectories**|Paramètre de **chaîne[]** facultatif.<br/><br/>Spécifie un ou plusieurs répertoires à ajouter au chemin include. Si vous ajoutez plusieurs répertoires, séparez-les par des points-virgules.<br/><br/>Utilisez `/I[path]`.|
+|**AdditionalIncludeDirectories**|Paramètre de **chaîne[]** facultatif.<br/><br/>Spécifie un ou plusieurs répertoires à ajouter au chemin Include, séparés par des points-virgules s’il en existe plusieurs.<br/><br/>Utilisez `/I[path]`.|
 |**AdditionalOptions**|Paramètre de **chaîne** facultatif.|
 |**AllResourcesBound**|Paramètre **booléen** facultatif.<br/><br/>Le compilateur part du principe que toutes les ressources qu’un nuanceur peut référencer sont liées et en bon état pendant toute la durée de l’exécution du nuanceur. Disponible pour Shader Model 5.1 et les versions ultérieures.<br/><br/>Utilisez `/all_resources_bound`.|
 |**AssemblerOutput**|Paramètre de **chaîne** facultatif.<br/><br/>Spécifie le contenu du fichier de sortie linguistique de l’assembly.<br/><br/>Utilisez `/Fc, /Fx`.<br/><br/>**NoListing**<br/>**AssemblyCode**, utilisez `Fc`.<br/>**AssemblyCodeAndHex**, utilisez `Fx`.|

@@ -1,5 +1,5 @@
 ---
-title: 'Erreur : Échoué de l’authentification Kerberos | Microsoft Docs'
+title: 'Erreur : échec de l’authentification Kerberos | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -14,14 +14,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76a62a821a9b110be2ffd8e25cbdf6721f12bc08
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fbe13fd3d0dc7e29fc12d369ec0865bcbc97b1a4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850735"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737669"
 ---
-# <a name="error-kerberos-authentication-failed"></a>Erreur : échec de l’authentification Kerberos
+# <a name="error-kerberos-authentication-failed"></a>Erreur : L'authentification Kerberos a échoué
 Lorsque vous essayez d'effectuer un débogage distant, le message d'erreur suivant peut s'afficher :
 
 ```cmd
@@ -38,7 +38,7 @@ Error: The Visual Studio Remote Debugger on the target computer cannot connect b
 
 - Kerberos a été désactivé sur le contrôleur de domaine.
 
-  Si l'authentification Kerberos n'est pas disponible, modifiez le compte utilisé pour exécuter Visual Studio Remote Debugging Monitor. Pour connaître la procédure, consultez [erreur : Le service débogueur distant Visual Studio sur l’ordinateur cible ne peut pas se reconnecter à cet ordinateur](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md).
+  Si l'authentification Kerberos n'est pas disponible, modifiez le compte utilisé pour exécuter Visual Studio Remote Debugging Monitor. Pour la procédure, consultez [erreur : le service débogueur distant Visual Studio sur l’ordinateur cible ne peut pas se reconnecter à cet ordinateur](../debugger/error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer.md).
 
   Si ce message s'affiche encore alors que les deux ordinateurs sont connectés au même domaine, vérifiez que le DNS sur l'ordinateur cible résout correctement le nom de l'ordinateur hôte du débogueur. Consultez la procédure suivante.
 

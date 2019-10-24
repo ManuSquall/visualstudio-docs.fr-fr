@@ -1,5 +1,5 @@
 ---
-title: Savoir qui est en passant une valeur de paramètre incorrecte | Microsoft Docs
+title: Savoir qui transmet une valeur de paramètre incorrecte | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 548851a4e5811864e60d3a14368d6380f14f9e7e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 42884cd6498f00cfe2df2d0396ff9ea6b03c2f98
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894877"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72734236"
 ---
 # <a name="how-can-i-find-out-who-is-passing-a-wrong-parameter-value"></a>Comment puis-je savoir d'où provient une valeur de paramètre incorrecte ?
 ## <a name="problem-description"></a>Description du problème
@@ -41,7 +41,7 @@ ms.locfileid: "62894877"
 
 2. Cliquez avec le bouton droit sur le point d’arrêt et sélectionnez **Condition**.
 
-3. Dans la boîte de dialogue **Condition de point d’arrêt**, cochez la case **Condition**. Consultez [avancée des points d’arrêt](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).
+3. Dans la boîte de dialogue **Condition de point d’arrêt**, cochez la case **Condition**. Consultez [points d’arrêt avancés](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).
 
 4. Entrez une expression, telle que `Var==3`, dans la zone de texte, où `Var` est le nom du paramètre qui contient la valeur incorrecte et où `3` correspond à la valeur incorrecte passée.
 
@@ -49,7 +49,7 @@ ms.locfileid: "62894877"
 
 6. Réexécutez le programme. Le point d'arrêt provoque l'arrêt du programme au début de la fonction lorsque la valeur du paramètre `Var` est `3`.
 
-7. Utilisez la fenêtre Pile des appels pour rechercher la fonction d'appel et naviguer jusqu'à son code source. Pour plus d'informations, voir [Procédure : utiliser la fenêtre Pile des appels](../debugger/how-to-use-the-call-stack-window.md).
+7. Utilisez la fenêtre Pile des appels pour rechercher la fonction d'appel et naviguer jusqu'à son code source. Pour plus d’informations, consultez [Comment : utiliser la fenêtre pile des appels](../debugger/how-to-use-the-call-stack-window.md).
 
 ## <a name="see-also"></a>Voir aussi
 - [Forum Aux Questions sur le débogage du code natif](../debugger/debugging-native-code-faqs.md)

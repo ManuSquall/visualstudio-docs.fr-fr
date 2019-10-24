@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 523d7dac2b0501957bcc2cd8ea54695548610a44
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fb404c8a537870bb300f280022c233ad641ed2df
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829010"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743453"
 ---
-# <a name="idiaframedatagetvirtualaddress"></a>IDiaFrameData::get_virtualAddress
-Récupère l’adresse virtuelle (VA) du code pour le frame.
+# <a name="idiaframedataget_virtualaddress"></a>IDiaFrameData::get_virtualAddress
+Récupère l’adresse virtuelle (VA) du code du frame.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,10 +33,10 @@ HRESULT get_virtualAddress ( 
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-[out] Retourne l’adresse virtuelle du code pour le frame.
+à Retourne l’adresse virtuelle du code du frame.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: faff61833cb130902efbd64d60a16f74c507a3e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dc40cc6cc8e821db7c28a4647e36e7bad241b29f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62834127"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738645"
 ---
 # <a name="locationtype"></a>LocationType
-Indique le type d’informations d’emplacement contenues dans un symbole.
+Indique le type d’informations d’emplacement contenu dans un symbole.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -42,37 +42,37 @@ enum LocationType {
 ```
 
 ## <a name="elements"></a>Éléments
-`LocIsNull` Informations d’emplacement ne sont pas disponibles.
+les informations d’emplacement de `LocIsNull` ne sont pas disponibles.
 
-`LocIsStatic` Emplacement est statique.
+`LocIsStatic` emplacement est statique.
 
-`LocIsTLS` Se trouve dans le stockage local des threads.
+`LocIsTLS` emplacement se trouve dans le stockage local des threads.
 
-`LocIsRegRel` Emplacement est relative au Registre.
+`LocIsRegRel` emplacement est Register-relative.
 
-`LocIsThisRel` Emplacement est `this`-relatif.
+`LocIsThisRel` emplacement est `this` relatif.
 
-`LocIsEnregistered` Se trouve dans un Registre.
+`LocIsEnregistered` emplacement se trouve dans un registre.
 
-`LocIsBitField` Se trouve dans un champ de bits.
+`LocIsBitField` emplacement est dans un champ de bits.
 
-`LocIsSlot` Emplacement est un emplacement de langage MSIL (Microsoft Intermediate Language).
+`LocIsSlot` emplacement est un emplacement MSIL (Microsoft Intermediate Language).
 
-`LocIsIlRel` Emplacement est relatif à MSIL.
+`LocIsIlRel` emplacement est relatif à MSIL.
 
-`LocInMetaData` Se trouve dans les métadonnées.
+`LocInMetaData` emplacement se trouve dans les métadonnées.
 
-`LocIsConstant` Emplacement est une valeur constante.
+`LocIsConstant` emplacement est dans une valeur constante.
 
-`LocTypeMax` Le nombre de types d’emplacement dans cette énumération.
+`LocTypeMax` le nombre de types d’emplacement dans cette énumération.
 
 ## <a name="remarks"></a>Notes
-Les propriétés disponibles pour le [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) interface varient selon l’emplacement du symbole dans le fichier image. Pour plus d’informations, consultez [emplacements de symboles](../../debugger/debug-interface-access/symbol-locations.md).
+Les propriétés disponibles pour l’interface [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) dépendent de l’emplacement du symbole dans le fichier image. Pour plus d’informations, consultez [emplacements des symboles](../../debugger/debug-interface-access/symbol-locations.md).
 
-Les valeurs dans cette énumération sont retournées par un appel à la [IDiaSymbol::get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md) (méthode).
+Les valeurs de cette énumération sont retournées par un appel à la méthode [IDiaSymbol :: get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md) .
 
-## <a name="requirements"></a>Configuration requise
-En-tête : cvconst.h
+## <a name="requirements"></a>spécifications
+En-tête : cvconst. h
 
 ## <a name="see-also"></a>Voir aussi
 - [Énumérations et structures](../../debugger/debug-interface-access/enumerations-and-structures.md)

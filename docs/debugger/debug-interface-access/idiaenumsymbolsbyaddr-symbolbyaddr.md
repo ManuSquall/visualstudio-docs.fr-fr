@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8620dcf7367914e25411fad7ac54a34a5bac54c2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b0891cc5eb244b781b69e231d4282b92aa064b91
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833322"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743844"
 ---
 # <a name="idiaenumsymbolsbyaddrsymbolbyaddr"></a>IDiaEnumSymbolsByAddr::symbolByAddr
-Positionne l’énumérateur en effectuant une recherche par numéro de section d’image et le décalage.
+Positionne l’énumérateur en effectuant une recherche par numéro et décalage de section d’image.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -35,15 +35,15 @@ HRESULT symbolByAddr ( 
 #### <a name="parameters"></a>Paramètres
  isect
 
-[in] Numéro de section d’image.
+dans Numéro de section de l’image.
 
  offsect
 
-[in] Décalage dans la section.
+dans Offset dans la section.
 
  ppsymbol
 
-[out] Retourne un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objet qui représente le symbole trouvé.
+à Retourne un objet [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) représentant le symbole trouvé.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si le symbole est introuvable. Sinon, retourne un code d'erreur.

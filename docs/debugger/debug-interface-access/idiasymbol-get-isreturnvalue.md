@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14ae065f16c2d047311308d63da7680a61fa22ad
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 7bf9d94cd090fdf3993f84147f43a7b2f70dc7e2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62836466"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740100"
 ---
-# <a name="idiasymbolgetisreturnvalue"></a>IDiaSymbol::get_isReturnValue
-Spécifie si la variable comporte une valeur de retour.
+# <a name="idiasymbolget_isreturnvalue"></a>IDiaSymbol::get_isReturnValue
+Spécifie si la variable contient une valeur de retour.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -30,10 +30,10 @@ HRESULT get_isReturnValue(
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-[out] Un pointeur vers un `BOOL` qui spécifie si la variable comporte une valeur de retour.
+à Pointeur vers un `BOOL` qui spécifie si la variable contient une valeur de retour.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be6d0ccbdfe2b89fbeb1f504bf683fab2b5a83b9
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: a47ba9144ab2a322148f167d50b54f1d6b7db80d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64823405"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739320"
 ---
-# <a name="idiasymbolgetslot"></a>IDiaSymbol::get_slot
-Récupère le numéro d’emplacement de l’emplacement. Quand utiliser le [LocationType (énumération)](../../debugger/debug-interface-access/locationtype.md) est `LocIsSlot`.
+# <a name="idiasymbolget_slot"></a>IDiaSymbol::get_slot
+Récupère le numéro d’emplacement de l’emplacement. À utiliser lorsque l' [énumération LocationType (](../../debugger/debug-interface-access/locationtype.md) est `LocIsSlot`.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,13 +33,13 @@ HRESULT get_slot ( 
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-[out] Retourne le numéro d’emplacement de l’emplacement.
+à Retourne le numéro d’emplacement de l’emplacement.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
-> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> Une valeur de retour de `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

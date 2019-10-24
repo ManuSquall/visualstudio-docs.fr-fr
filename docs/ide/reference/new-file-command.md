@@ -13,12 +13,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65ea2f4bc06ee1db5042219d1dd3b4bb38f0a80e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 02f6872ef2acaef65bf6ef1b7631bb06c89518ab
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666471"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747877"
 ---
 # <a name="new-file-command"></a>Nouveau fichier, commande
 Crée un fichier et l’ouvre. Le fichier s’affiche sous le dossier Fichiers divers.

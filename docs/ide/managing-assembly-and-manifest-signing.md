@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3add6e3e4f38b5ba73cd5154720d7b283189526e
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
-ms.translationtype: HT
+ms.openlocfilehash: 8cf721e9880ce7f0b7c3191f73f16366637f0704
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461498"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748876"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>Gérer la signature d’assemblys et de manifestes
 
@@ -29,7 +29,7 @@ Un nom fort est constitué de l’identité de l’assembly (simple nom textuel,
 
 Pour plus d’informations sur la signature d’assemblys dans les projets Visual Basic et C#, consultez [Créer et utiliser des assemblys avec nom fort](/dotnet/framework/app-domains/create-and-use-strong-named-assemblies).
 
-Pour plus d’informations sur la signature d’assemblys dans les projets Visual C++, consultez [Assemblys de nom fort (C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli).
+Pour plus d’informations sur la C++ signature d’assemblys dans les projets, consultez [assemblys avec nom fortC++(/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli).
 
 > [!NOTE]
 > La signature avec nom fort ne protège pas l’assembly contre l’ingénierie à rebours. Pour se protéger de l’ingénierie à rebours, consultez [Dotfuscator Community](dotfuscator/index.md).

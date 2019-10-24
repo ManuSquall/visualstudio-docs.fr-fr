@@ -1,5 +1,5 @@
 ---
-title: Boîte de dialogue visualiseur DataSet | Microsoft Docs
+title: Visualiseur DataSet, boîte de dialogue | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4086c473270befcf2213f003e516128b45c4227
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1e215d4a52965b4e89bc3a01b15da57fc8919437
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62563544"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745600"
 ---
 # <a name="dataset-visualizer-dialog-box"></a>Visualiseur DataSet (boîte de dialogue)
 Le Visualiseur DataSet vous permet d'afficher le contenu d'un objet DataSet, DataTable, DataView ou DataViewManager. Vous pouvez accéder à ce visualiseur en cliquant sur l'icône de loupe qui apparaît à côté da la Valeur d'un de ces objets dans une fenêtre de variables de débogueur ou dans un DataTip.
@@ -32,7 +32,7 @@ Le Visualiseur DataSet vous permet d'afficher le contenu d'un objet DataSet, Dat
  Vous pouvez apporter des modifications aux objets dans ce visualiseur. Les modifications sont enregistrées dès que vous validez une ligne.
 
 ## <a name="uielement-list"></a>Liste des éléments d’interface
- Table utiliser cette zone de liste déroulante pour sélectionner une table dans le jeu de données que vous souhaitez visualiser.
+ Table Utilisez cette zone de liste déroulante pour sélectionner une table dans le jeu de données que vous souhaitez visualiser.
 
 ## <a name="see-also"></a>Voir aussi
 

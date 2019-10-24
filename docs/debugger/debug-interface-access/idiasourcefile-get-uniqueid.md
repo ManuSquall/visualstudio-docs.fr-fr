@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4a204e04c1c99dcbe8c6ba6d5e3457ca875dde4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 30a210c12384cbde55dafe6f3410b8fc840e8507
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832251"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741794"
 ---
-# <a name="idiasourcefilegetuniqueid"></a>IDiaSourceFile::get_uniqueId
-Récupère une valeur de clé de nombre entier simple qui est unique pour cette image.
+# <a name="idiasourcefileget_uniqueid"></a>IDiaSourceFile::get_uniqueId
+Récupère une valeur de clé entière simple qui est unique pour cette image.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,13 +33,13 @@ HRESULT get_uniqueId ( 
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-[out] Retourne une valeur de clé de nombre entier simple qui est unique pour cette image.
+à Retourne une valeur de clé entière simple qui est unique pour cette image.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne un code d’erreur.
 
 ## <a name="remarks"></a>Notes
- Comparaison de clés plutôt que des chaînes peuvent accélérer le traitement des numéros de ligne.
+ La comparaison de clés plutôt que de chaînes peut accélérer le traitement des numéros de ligne.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

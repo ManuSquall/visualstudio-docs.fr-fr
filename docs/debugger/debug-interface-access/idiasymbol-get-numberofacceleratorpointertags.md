@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 283533b20614ea727be620669ea5ab66cf00e5ed
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 47c5827348c7b7cb450017a0e6176d71f555c841
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62835772"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739697"
 ---
-# <a name="idiasymbolgetnumberofacceleratorpointertags"></a>IDiaSymbol::get_numberOfAcceleratorPointerTags
-Retourne le nombre de balises de pointeur accélérateur dans une fonction de stub de C++ AMP.
+# <a name="idiasymbolget_numberofacceleratorpointertags"></a>IDiaSymbol::get_numberOfAcceleratorPointerTags
+Retourne le nombre de balises de pointeur d' C++ accélérateur dans une fonction de stub amp.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -30,13 +30,13 @@ HRESULT get_numberOfAcceleratorPointerTags(
 #### <a name="parameters"></a>Paramètres
  `count`
 
-[out] Un pointeur vers un `DWORD` qui contient le nombre d’accélérateur de balises de pointeur dans un C++ fonction de stub AMP.
+à Pointeur vers un `DWORD` qui contient le nombre de balises de pointeur d’accélérateur C++ dans une fonction de stub amp.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
 
 ## <a name="remarks"></a>Notes
- Cette méthode est appelée sur un `IDiaSymbol` interface qui correspond à une fonction de stub d’accélérateur C++ AMP.
+ Cette méthode est appelée sur une interface `IDiaSymbol` qui correspond à une C++ fonction de stub d’accélérateur amp.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

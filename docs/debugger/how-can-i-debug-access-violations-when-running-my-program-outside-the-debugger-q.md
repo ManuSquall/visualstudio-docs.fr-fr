@@ -1,5 +1,5 @@
 ---
-title: Déboguer les violations d’accès lorsque vous exécutez l’application en dehors du débogueur
+title: Violations d’accès de débogage lors de l’exécution d’une application en dehors du débogueur
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d42dd206117885a23a6c1c15c712be4dc4cd8fe2
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: f5009bae2d7679081e29ae8f46d72455beac7e11
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177665"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72734571"
 ---
 # <a name="how-can-i-debug-access-violations-when-running-my-program-outside-the-debugger"></a>Comment puis-je déboguer les violations d'accès lorsque mon programme fonctionne hors du débogueur ?
 

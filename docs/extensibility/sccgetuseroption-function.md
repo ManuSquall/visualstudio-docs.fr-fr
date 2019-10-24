@@ -1,5 +1,5 @@
 ---
-title: Fonction SccGetUserOption | Microsoft Docs
+title: SccGetUserOption fonction) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +12,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eabf9cfc9d878d4d12096c8d264e8ee332031adf
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cd024aa12b263eab7fea4bd80a0e77a3bbad5f1c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353653"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72721436"
 ---
 # <a name="sccgetuseroption-function"></a>Fonction SccGetUserOption
 Cette fonction récupère une variété d’options spécifiques à l’utilisateur.
@@ -35,31 +35,31 @@ SCCRTN SccGetUserOption(
 #### <a name="parameters"></a>Paramètres
  pContext
 
-[in] Le pointeur de contexte de plug-in de contrôle de code source.
+dans Pointeur de contexte du plug-in de contrôle de code source.
 
  nOption
 
-[in] Option permettant de récupérer (consultez la section Notes pour les options possibles).
+dans Option à récupérer (consultez la section Notes pour connaître les options possibles).
 
  lpVal
 
-[out] Valeur associée d’option.
+à Valeur associée à l’option.
 
 ## <a name="return-value"></a>Valeur de retour
- L’implémentation de plug-in de contrôle de source de cette fonction est censée retourner l’une des valeurs suivantes :
+ L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
-|Value|Description|
+|valeur|Description|
 |-----------|-----------------|
-|SCC_OK|Option a été récupérée avec succès.|
-|SCC_E_OPNOTSUPPORTED|Option n’est pas prise en charge.|
+|SCC_OK|L’option a été récupérée avec succès.|
+|SCC_E_OPNOTSUPPORTED|L’option n’est pas prise en charge.|
 |SCC_E_NONSPECIFICERROR|Une erreur non spécifiée s'est produite.|
 
 ## <a name="remarks"></a>Notes
- Les options suivantes sont prises en charge par cette commande :
+ Cette commande prend en charge les options suivantes :
 
-|Option de l’utilisateur|Description|
+|User (option)|Description|
 |-----------------|-----------------|
-|`SCC_USEROPT_CHECKOUT_LOCALVER`|Détermine si l’utilisateur souhaite extraire la version locale de fichiers. `lpVal` est affecté `SCC_USEROPT_COLV_YES` (utilisateur souhaite extraire des fichiers locaux) ou `SCC_USEROPT_COLV_NO`.|
+|`SCC_USEROPT_CHECKOUT_LOCALVER`|Détermine si l’utilisateur souhaite extraire la version locale des fichiers. `lpVal` est attribué `SCC_USEROPT_COLV_YES` (l’utilisateur souhaite extraire des fichiers locaux) ou `SCC_USEROPT_COLV_NO`.|
 
 ## <a name="see-also"></a>Voir aussi
 - [Fonctions d’API du plug-in de contrôle de code source](../extensibility/source-control-plug-in-api-functions.md)

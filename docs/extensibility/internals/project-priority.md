@@ -1,5 +1,5 @@
 ---
-title: Priorité de projet | Microsoft Docs
+title: Priorité du projet | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,27 +10,27 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1badd483690ae22f9e314c0f9eb4ac3033d82e4a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ee4c0f41902e74f58684d6806877d352447351bf
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328275"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72725394"
 ---
 # <a name="project-priority"></a>Priorité de projet
-Un élément de projet est généralement un membre d’un seul projet dans la solution. Par conséquent, l’IDE peut facilement déterminer le projet qui est utilisé pour ouvrir l’élément. Toutefois, si un élément est un membre de plusieurs projets, l’IDE utilise un schéma de priorité pour déterminer le projet meilleures pour l’ouverture de l’élément.
+Un élément de projet est généralement membre d’un seul projet dans la solution. Par conséquent, l’IDE peut facilement déterminer quel projet est utilisé pour ouvrir l’élément. Toutefois, si un élément est membre de plusieurs projets, l’IDE utilise un schéma de priorité pour déterminer le projet le mieux adapté à l’ouverture de l’élément.
 
- La liste suivante présente les schémas de priorité de projet :
+ La liste suivante présente le schéma de priorité du projet :
 
-- Les appels de l’IDE le <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject2.IsDocumentInProject%2A> méthode pour chaque projet dans la solution pour déterminer si le document est un membre de ce projet.
+- L’IDE appelle la méthode <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject2.IsDocumentInProject%2A> pour chaque projet de la solution pour déterminer si le document est membre de ce projet.
 
-- Si le document est un membre du projet, le projet répond avec une priorité que le projet affecte en fonction de sa gestion de ce document. Par exemple, un projet de langage répond avec une priorité élevée pour ses fichiers sources du langage, mais répond avec une priorité plus faible pour un type de fichier non reconnu qui n’est pas utilisé dans le cadre de son processus de génération.
+- Si le document est membre du projet, le projet répond avec une priorité assignée par le projet en fonction de sa gestion de ce document. Par exemple, un projet de langage répond avec une priorité élevée pour ses fichiers sources de langage, mais répond avec une priorité inférieure pour un type de fichier non reconnu qui n’est pas utilisé dans le cadre de son processus de génération.
 
-- Les projets qui fournissent des éditeurs personnalisés, spécifique au projet ou les concepteurs pour un document reçoivent également une priorité élevée.
+- Les projets qui fournissent des éditeurs personnalisés spécifiques au projet ou des concepteurs pour un document reçoivent également une priorité élevée.
 
-- Le <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> énumération fournit des valeurs de priorité le document.
+- L’énumération <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> fournit les valeurs de priorité de document.
 
-- Le projet qui spécifie la priorité la plus élevée est fonction du contexte pour ouvrir le document. Si deux projets retournent des valeurs de priorité égale, le projet actif est préféré. Si aucun projet dans la solution ne répond qu’il peut ouvrir le document, l’IDE place le document dans le projet fichiers divers. Pour plus d’informations, consultez [le projet fichiers divers](../../extensibility/internals/miscellaneous-files-project.md).
+- Le projet qui spécifie la priorité la plus élevée reçoit le contexte permettant d’ouvrir le document. Si deux projets retournent des valeurs de priorité égales, le projet actif est préféré. Si aucun projet de la solution ne réagit et qu’il peut ouvrir le document, l’IDE place le document dans le projet fichiers divers. Pour plus d’informations, consultez [projet fichiers divers](../../extensibility/internals/miscellaneous-files-project.md).
 
 ## <a name="see-also"></a>Voir aussi
 - [Projet Fichiers divers](../../extensibility/internals/miscellaneous-files-project.md)
