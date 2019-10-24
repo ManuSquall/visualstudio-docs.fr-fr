@@ -1,5 +1,5 @@
 ---
-title: Fonctions d’API de plug-in de contrôle de source | Microsoft Docs
+title: Fonctions de l’API du plug-in de contrôle de code source | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,80 +10,80 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9426d4f1f673d0d82c6ce3fd84c76a1c42d8ec4e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 57e451ebb4693e7742208ab6a375fa7d50563a17
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331928"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72719893"
 ---
 # <a name="source-control-plug-in-api-functions"></a>Fonctions d’API du plug-in de contrôle de code source
-L’API de plug-in de contrôle de Source fournit les fonctions suivantes, qui doivent être implémentées par le plug-in conformément à cette API de contrôle de code source. Les signatures de chaque fonction et la sémantique associées avec les indicateurs de bits et autres paramètres sont décrits en détail dans cette référence.
+L’API de plug-in de contrôle de code source fournit les fonctions suivantes, qui doivent être implémentées par le plug-in de contrôle de code source conformément à cette API. Les signatures de chaque fonction et la sémantique associée aux indicateurs binaires et à d’autres paramètres sont décrites en détail dans cette référence.
 
-## <a name="initialization-and-housekeeping-functions"></a>L’initialisation et fonctions de gestion interne
+## <a name="initialization-and-housekeeping-functions"></a>Fonctions d’initialisation et de nettoyage
 
 |Fonction|Description|
 |--------------|-----------------|
 |[SccCloseProject](../extensibility/scccloseproject-function.md)|Ferme un projet.|
-|[SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)|Invite l’utilisateur pour les options avancées pour la commande donnée.|
-|[SccGetVersion](../extensibility/sccgetversion-function.md)|Retourne la version du contrôle de source de plug-in.|
+|[SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)|Invite l’utilisateur à fournir des options avancées pour la commande donnée.|
+|[SccGetVersion](../extensibility/sccgetversion-function.md)|Retourne la version du plug-in de contrôle de code source.|
 |[SccInitialize](../extensibility/sccinitialize-function.md)|Initialise le plug-in de contrôle de code source. Elle est appelée une fois pour chaque instance du plug-in.|
 |[SccOpenProject](../extensibility/sccopenproject-function.md)|Ouvre un projet.|
-|[SccSetOption](../extensibility/sccsetoption-function.md)|Une fonction générique utilisée pour définir un large éventail d’options. Chaque option commence par `SCC_OPT_xxx` et possède son propre ensemble défini de valeurs.|
-|[SccUninitialize](../extensibility/sccuninitialize-function.md)|Appelée une fois lorsqu’un plug-in de contrôle de code source a besoin d’être déconnecté.|
+|[SccSetOption](../extensibility/sccsetoption-function.md)|Fonction générique utilisée pour définir un large éventail d’options. Chaque option commence par `SCC_OPT_xxx` et possède son propre ensemble de valeurs défini.|
+|[SccUninitialize](../extensibility/sccuninitialize-function.md)|Appelé une fois quand un plug-in de contrôle de code source doit être débranché.|
 
-## <a name="core-source-control-functions"></a>Fonctions de contrôle de Source de base
+## <a name="core-source-control-functions"></a>Fonctions principales de contrôle de code source
 
 |Fonction|Description|
 |--------------|-----------------|
-|[SccAdd](../extensibility/sccadd-function.md)|Ajoute un tableau de fichiers spécifiés par les noms de chemin d’accès complet au système de contrôle source.|
-|[SccAddFromScc](../extensibility/sccaddfromscc-function.md)|Permet à l’utilisateur rechercher des fichiers qui se trouvent déjà dans le système de contrôle de code source, puis rendez ces fichiers faisant partie du projet actuel.|
-|[SccCheckin](../extensibility/scccheckin-function.md)|Vérifie dans un tableau de fichiers.|
+|[SccAdd](../extensibility/sccadd-function.md)|Ajoute un tableau de fichiers spécifiés par des noms de chemins d’accès qualifiés complets au système de contrôle de code source.|
+|[SccAddFromScc](../extensibility/sccaddfromscc-function.md)|Permet à l’utilisateur de rechercher des fichiers qui se trouvent déjà dans le système de contrôle de code source, puis d’en faire partie du projet actif.|
+|[SccCheckin](../extensibility/scccheckin-function.md)|Archive un tableau de fichiers.|
 |[SccCheckout](../extensibility/scccheckout-function.md)|Extrait un tableau de fichiers.|
-|[SccDiff](../extensibility/sccdiff-function.md)|Montre les différences entre le fichier de l’utilisateur local spécifié par un nom de chemin d’accès complet et la version sous contrôle de code source.|
+|[SccDiff](../extensibility/sccdiff-function.md)|Affiche les différences entre le fichier de l’utilisateur local spécifié par un nom de chemin d’accès qualifié complet et la version sous contrôle de code source.|
 |[SccGet](../extensibility/sccget-function.md)|Récupère une copie en lecture seule d’un ensemble de fichiers.|
-|[SccGetEvents](../extensibility/sccgetevents-function.md)|Vérifie l’état des fichiers qui a demandé l’appelant sur (via `SccQueryInfo`).|
-|[SccGetProjPath](../extensibility/sccgetprojpath-function.md)|Provoque le plug-in pour inviter l’utilisateur pour un chemin d’accès de projet qui est significatif pour le plug-in de contrôle de code source.|
-|[SccHistory](../extensibility/scchistory-function.md)|Affiche l’historique pour un tableau de noms de fichier local complet.|
-|[SccPopulateList](../extensibility/sccpopulatelist-function.md)|Examine la liste des fichiers pour leur état actuel. En outre, utilise le `pfnPopulate` fonction permettant de notifier l’appelant quand un fichier ne correspond pas aux critères pour le `nCommand`.|
-|[SccProperties](../extensibility/sccproperties-function.md)|Présente les propriétés d’un fichier qualifié complet.|
-|[SccQueryInfo](../extensibility/sccqueryinfo-function.md)|Examine une liste de fichiers qualifiés complets pour leur état actuel.|
-|[SccRemove](../extensibility/sccremove-function.md)|Supprime le tableau de fichiers complets à partir du système de contrôle source.|
-|[SccRename](../extensibility/sccrename-function.md)|Renomme le fichier donné vers un nouveau nom dans le système de contrôle source.|
-|[SccRunScc](../extensibility/sccrunscc-function.md)|Accède à la gamme complète des fonctionnalités du système de contrôle source.|
-|[SccUncheckout](../extensibility/sccuncheckout-function.md)|Annule une extraction d’un tableau de fichiers.|
+|[SccGetEvents](../extensibility/sccgetevents-function.md)|Vérifie l’état des fichiers que l’appelant a demandés (par le biais de `SccQueryInfo`).|
+|[SccGetProjPath](../extensibility/sccgetprojpath-function.md)|Fait en sorte que le plug-in de contrôle de code source invite l’utilisateur à indiquer un chemin d’accès au projet qui est significatif pour le plug-in.|
+|[SccHistory](../extensibility/scchistory-function.md)|Affiche l’historique d’un tableau de noms de fichiers locaux complets.|
+|[SccPopulateList](../extensibility/sccpopulatelist-function.md)|Examine la liste des fichiers pour connaître leur état actuel. En outre, utilise la fonction `pfnPopulate` pour notifier l’appelant lorsqu’un fichier ne correspond pas aux critères du `nCommand`.|
+|[SccProperties](../extensibility/sccproperties-function.md)|Affiche les propriétés d’un fichier complet.|
+|[SccQueryInfo](../extensibility/sccqueryinfo-function.md)|Examine une liste de fichiers complets pour leur état actuel.|
+|[SccRemove](../extensibility/sccremove-function.md)|Supprime le tableau de fichiers qualifiés complets du système de contrôle de code source.|
+|[SccRename](../extensibility/sccrename-function.md)|Renomme le fichier donné avec un nouveau nom dans le système de contrôle de code source.|
+|[SccRunScc](../extensibility/sccrunscc-function.md)|Accède à la gamme complète des fonctionnalités du système de contrôle de code source.|
+|[SccUncheckout](../extensibility/sccuncheckout-function.md)|Annule l’extraction d’un tableau de fichiers.|
 
-## <a name="functions-that-support-additional-capability-version-12-of-the-source-control-plug-in-api"></a>Fonctions qui prennent en charge des fonctions supplémentaires (Version 1.2 de l’API de plug-in de contrôle de Source)
- Ce groupe de fonctions définit les fonctionnalités supplémentaires incluses dans la version 1.2 de l’API de plug-in de contrôle de Source. Ils fournissent un accès à des fonctionnalités de contrôle de code source et des fonctionnalités plus avancés.
+## <a name="functions-that-support-additional-capability-version-12-of-the-source-control-plug-in-api"></a>Fonctions qui prennent en charge des fonctionnalités supplémentaires (version 1,2 de l’API de plug-in de contrôle de code source)
+ Ce groupe de fonctions définit les fonctionnalités supplémentaires incluses dans la version 1,2 de l’API de plug-in de contrôle de code source. Ils fournissent un accès à des fonctionnalités et des fonctionnalités de contrôle de code source plus avancées.
 
 |Fonction|Description|
 |--------------|-----------------|
-|[SccBeginBatch](../extensibility/sccbeginbatch-function.md)|Démarre une opération par lot.|
-|[SccCreateSubProject](../extensibility/scccreatesubproject-function.md)|Crée un sous-projet portant le nom spécifié sous un projet parent existant.|
-|[SccDirDiff](../extensibility/sccdirdiff-function.md)|Montre les différences entre le répertoire de l’utilisateur local spécifié par un nom de chemin d’accès complet et l’emplacement de base de données de contrôle de source.|
+|[SccBeginBatch](../extensibility/sccbeginbatch-function.md)|Démarre une opération de traitement par lots.|
+|[SccCreateSubProject](../extensibility/scccreatesubproject-function.md)|Crée un sous-projet portant le nom donné sous un projet parent existant.|
+|[SccDirDiff](../extensibility/sccdirdiff-function.md)|Affiche les différences entre le répertoire de l’utilisateur local spécifié par un nom de chemin d’accès qualifié complet et l’emplacement de la base de données de contrôle de code source.|
 |[SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md)|Examine une liste de répertoires complets pour leur état actuel.|
-|[SccEndBatch](../extensibility/sccendbatch-function.md)|Termine une opération par lot.|
-|[SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md)|Retourne parents de chemin d’accès du projet donné (le projet doit exister).|
-|[SccIsMultiCheckoutEnabled](../extensibility/sccismulticheckoutenabled-function.md)|Vérifie si les extractions multiples sur un fichier sont autorisées.|
-|[SccWillCreateSccFile](../extensibility/sccwillcreatesccfile-function.md)|Vérifie si le plug-in crée MSSCCPRJ. Fichiers SCC.|
+|[SccEndBatch](../extensibility/sccendbatch-function.md)|Met fin à une opération de traitement par lots.|
+|[SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md)|Retourne le chemin d’accès parent du projet donné (le projet doit exister).|
+|[SccIsMultiCheckoutEnabled](../extensibility/sccismulticheckoutenabled-function.md)|Vérifie si plusieurs extractions sur un fichier sont autorisées.|
+|[SccWillCreateSccFile](../extensibility/sccwillcreatesccfile-function.md)|Vérifie si le plug-in va créer MSSCCPRJ. Fichiers SCC.|
 
-## <a name="functions-that-support-advanced-capability-version-13-of-the-source-control-plug-in-api"></a>Fonctions qui prennent en charge la fonctionnalité avancée (Version 1.3 de l’API de plug-in de contrôle de Source)
- Ce groupe de fonctions définit les fonctionnalités supplémentaires incluses dans la version 1.3 de l’API de plug-in de contrôle de Source. Ils fournissent un accès à des fonctionnalités de contrôle de code source et des fonctionnalités plus avancés.
+## <a name="functions-that-support-advanced-capability-version-13-of-the-source-control-plug-in-api"></a>Fonctions qui prennent en charge la fonctionnalité avancée (version 1,3 de l’API de plug-in de contrôle de code source)
+ Ce groupe de fonctions définit les fonctionnalités supplémentaires incluses dans la version 1,3 de l’API de plug-in de contrôle de code source. Ils fournissent un accès à des fonctionnalités et des fonctionnalités de contrôle de code source plus avancées.
 
 |Fonction|Description|
 |--------------|-----------------|
-|[SccAddFilesFromSCC](../extensibility/sccaddfilesfromscc-function.md)|Ajoute une liste de fichiers à partir du contrôle de code source au projet actuel.|
-|[SccBackgroundGet](../extensibility/sccbackgroundget-function.md)|Récupère une liste de fichiers à partir du contrôle de code source sans interface utilisateur.|
+|[SccAddFilesFromSCC](../extensibility/sccaddfilesfromscc-function.md)|Ajoute une liste de fichiers du contrôle de code source au projet en cours.|
+|[SccBackgroundGet](../extensibility/sccbackgroundget-function.md)|Récupère une liste de fichiers du contrôle de code source sans interface utilisateur.|
 |[SccEnumChangedFiles](../extensibility/sccenumchangedfiles-function.md)|Récupère une liste de fichiers dans le contrôle de code source qui sont différents des fichiers locaux.|
-|[SccGetExtendedCapabilities](../extensibility/sccgetextendedcapabilities-function.md)|Récupère les indicateurs qui spécifient les capacités étendues prises en charge par le plug-in de contrôle de code source.|
+|[SccGetExtendedCapabilities](../extensibility/sccgetextendedcapabilities-function.md)|Récupère les indicateurs qui spécifient les fonctionnalités étendues prises en charge par le plug-in de contrôle de code source.|
 |[SccGetUserOption](../extensibility/sccgetuseroption-function.md)|Récupère les options spécifiques à l’utilisateur.|
-|[SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)|Examine une liste de répertoires et fichiers dans un projet ou les projets qui sont sous contrôle de code source. Chaque nom de répertoire et fichier trouvé est passé à une fonction de rappel.|
-|[SccQueryChanges](../extensibility/sccquerychanges-function.md)|Examine les modifications apportées à une liste des fichiers aux noms. Chaque nom de fichier est passé à une fonction de rappel avec son état de modification.|
+|[SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)|Examine une liste de répertoires et de fichiers dans un projet ou des projets qui sont sous contrôle de code source. Chaque nom de répertoire et de fichier trouvé est passé à une fonction de rappel.|
+|[SccQueryChanges](../extensibility/sccquerychanges-function.md)|Examine les modifications de nom apportées à une liste de fichiers. Chaque nom de fichier est passé à une fonction de rappel avec son état de modification.|
 
-## <a name="requirements"></a>Configuration requise
- En-tête : scc.h
+## <a name="requirements"></a>spécifications
+ En-tête : SCC. h
 
- (Fourni dans le SDK de l’environnement commun inclut le dossier, par défaut *[lecteur]* \Program Files\VSIP 8.0\EnvSDK\common\inc ; également fourni dans le dossier VSIP avec l’exemple MSSCCI, *[lecteur]* \Program 8.0\MSSCCI Files\VSIP).
+ (Fourni dans le dossier Common includes du kit de développement logiciel (SDK) Environment, par défaut *[lecteur]* \Program Files\VSIP 8.0 \ EnvSDK\common\inc ; également fourni dans le dossier VSIP avec l’exemple MSSCCI, *[lecteur]* \Program Files\VSIP 8.0 \ MSSCCI).
 
 ## <a name="see-also"></a>Voir aussi
 - [Plug-ins de contrôle de code source](../extensibility/source-control-plug-ins.md)

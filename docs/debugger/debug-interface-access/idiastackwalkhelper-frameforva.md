@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03607cec9b314f4f6e329a3150d097f8a2186705
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 28d9a7762cac1a63b40fa34118d4076403120763
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838026"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741424"
 ---
 # <a name="idiastackwalkhelperframeforva"></a>IDiaStackWalkHelper::frameForVA
 Récupère le frame de pile qui contient l’adresse virtuelle spécifiée.
@@ -34,14 +34,14 @@ HRESULT frameForVA( 
 #### <a name="parameters"></a>Paramètres
  `va`
 
-[in] L’adresse virtuelle pour les données de trame.
+dans Adresse virtuelle pour les données de frame.
 
  `ppFrame`
 
-[out] Un [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) objet qui représente le frame de pile à l’adresse spécifiée.
+à Objet [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) qui représente le frame de pile à l’adresse spécifiée.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne un code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

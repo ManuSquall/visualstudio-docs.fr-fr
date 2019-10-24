@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35e5719d285e9e99e5f7429685fa04a2c6d7f3ab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c85c6ce8f03534c3ed810e530dbd12d8c6d115be
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832279"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741829"
 ---
-# <a name="idiasourcefilegetchecksumtype"></a>IDiaSourceFile::get_checksumType
+# <a name="idiasourcefileget_checksumtype"></a>IDiaSourceFile::get_checksumType
 Récupère le type de somme de contrôle.
 
 ## <a name="syntax"></a>Syntaxe
@@ -33,23 +33,23 @@ HRESULT get_checksumType ( 
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-[out] Retourne le type de somme de contrôle.
+à Retourne le type de somme de contrôle.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK`; Sinon, retourne un code d’erreur.
 
 ## <a name="remarks"></a>Notes
- Le type de somme de contrôle est une valeur qui peut être mappée à un algorithme de somme de contrôle. Par exemple, le format de fichier PDB standard généralement peut avoir une des valeurs suivantes :
+ Le type de somme de contrôle est une valeur qui peut être mappée à un algorithme de somme de contrôle. Par exemple, le format de fichier PDB standard peut généralement avoir l’une des valeurs suivantes :
 
-|Type de somme de contrôle|Étiquette de CryptoAPI|Description|
+|Type de checksum|Étiquette CryptoAPI|Description|
 |-------------------|---------------------|-----------------|
-|0|\<aucune>|Aucune somme de contrôle présent.|
-|1|`CALG_MD5`|somme de contrôle généré avec l’algorithme de hachage MD5.|
-|2|`CALG_SHA1`|somme de contrôle généré avec l’algorithme de hachage SHA1.|
+|0|\<aucune>|Aucun checksum présent.|
+|1|`CALG_MD5`|somme de contrôle générée avec l’algorithme de hachage MD5.|
+|2|`CALG_SHA1`|somme de contrôle générée avec l’algorithme de hachage SHA1.|
 
- Le `CryptoAPI` sont des étiquettes à partir de la `ALG_ID` énumération. Pour plus d’informations sur les algorithmes de hachage, consultez la `CryptoAPI` section de Microsoft [!INCLUDE[winsdkshort](../../debugger/debug-interface-access/includes/winsdkshort_md.md)].
+ Les étiquettes `CryptoAPI` proviennent de l’énumération `ALG_ID`. Pour plus d’informations sur les algorithmes de hachage, consultez la section `CryptoAPI` de la [!INCLUDE[winsdkshort](../../debugger/debug-interface-access/includes/winsdkshort_md.md)]Microsoft.
 
- Pour obtenir les octets de la somme de contrôle réelle du fichier source, appelez le [IDiaSourceFile::get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md) (méthode).
+ Pour obtenir les octets de somme de contrôle réels pour le fichier source, appelez la méthode [IDiaSourceFile :: get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md) .
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

@@ -1,5 +1,5 @@
 ---
-title: TemplateData, élément (modèles Visual Studio) | Microsoft Docs
+title: Élément TemplateData (modèles Visual Studio) | Microsoft Docs
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
 ms.topic: reference
@@ -13,17 +13,17 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9647330aaca2c2ae91aa7e461da17cf4dc3f8c3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b122857a4d916379c070e923ed0753b01287f08b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316678"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72718852"
 ---
 # <a name="templatedata-element-visual-studio-templates"></a>TemplateData, élément (modèles Visual Studio)
 Définit la catégorie du modèle et comment il s’affiche dans la boîte de dialogue **Nouveau projet** ou **Ajouter un nouvel élément** .
 
- \<VSTemplate> \<TemplateData>
+ \<VSTemplate > \<TemplateData >
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,48 +41,48 @@ Définit la catégorie du modèle et comment il s’affiche dans la boîte de di
  Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.
 
 ### <a name="attributes"></a>Attributs
- Aucun.
+ Aucun(e).
 
 ### <a name="child-elements"></a>Éléments enfants
 
 | Élément | Description |
 | - | - |
-| [Name](../extensibility/name-element-visual-studio-templates.md) | Élément requis.<br /><br /> Spécifie le nom du modèle tel qu’il apparaît dans un le **nouveau projet** ou **ajouter un nouvel élément** boîte de dialogue. |
-| [Description](../extensibility/description-element-visual-studio-templates.md) | Élément requis.<br /><br /> Spécifie la description du modèle tel qu’il apparaît dans un le **nouveau projet** ou **ajouter un nouvel élément** boîte de dialogue. |
-| [Icône](../extensibility/icon-element-visual-studio-templates.md) | Élément requis.<br /><br /> Spécifie le chemin d’accès et le nom de fichier du fichier image qui sert d’icône qui apparaît dans un le **nouveau projet** ou **ajouter un nouvel élément** boîte de dialogue, pour le modèle. |
-| [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md) | Élément requis.<br /><br /> Catégorie du modèle de projet pour qu’il apparaisse sous le groupe spécifié dans le **nouveau projet** boîte de dialogue. |
-| [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) | Élément facultatif.<br /><br /> Classe le modèle de projet afin qu’il apparaisse dans la sous-catégorie spécifiée dans le **nouveau projet** boîte de dialogue. |
-| [TemplateID](../extensibility/templateid-element-visual-studio-templates.md) | Élément facultatif.<br /><br /> Spécifie l’ID de modèle. |
+| [Nom](../extensibility/name-element-visual-studio-templates.md) | Élément requis.<br /><br /> Spécifie le nom du modèle tel qu’il apparaît dans la boîte de dialogue **nouveau projet** ou **Ajouter un nouvel élément** . |
+| [Description](../extensibility/description-element-visual-studio-templates.md) | Élément requis.<br /><br /> Spécifie la description du modèle telle qu’elle apparaît dans la boîte de dialogue **nouveau projet** ou **Ajouter un nouvel élément** . |
+| [Icône](../extensibility/icon-element-visual-studio-templates.md) | Élément requis.<br /><br /> Spécifie le chemin d’accès et le nom du fichier image qui sert d’icône, qui apparaît dans la boîte de dialogue **nouveau projet** ou **Ajouter un nouvel élément** , pour le modèle. |
+| [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md) | Élément requis.<br /><br /> Classe le modèle de projet de manière à ce qu’il apparaisse sous le groupe spécifié dans la boîte de dialogue **nouveau projet** . |
+| [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) | Élément facultatif.<br /><br /> Classe le modèle de projet afin qu’il apparaisse sous la sous-catégorie spécifiée dans la boîte de dialogue **nouveau projet** . |
+| [TemplateID](../extensibility/templateid-element-visual-studio-templates.md) | Élément facultatif.<br /><br /> Spécifie l’ID du modèle. |
 | [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md) | Élément facultatif.<br /><br /> Spécifie l’ID de groupe de modèles. |
-| [SortOrder](../extensibility/sortorder-element-visual-studio-templates.md) | Élément facultatif.<br /><br /> Spécifie une valeur qui est utilisée pour organiser le modèle, parmi d’autres modèles dans la même catégorie, tel qu’il apparaît dans un le **nouveau projet** ou **ajouter un nouvel élément** boîte de dialogue. |
+| [SortOrder](../extensibility/sortorder-element-visual-studio-templates.md) | Élément facultatif.<br /><br /> Spécifie une valeur qui est utilisée pour réorganiser le modèle, parmi d’autres modèles de la même catégorie, tel qu’il apparaît dans la boîte de dialogue **nouveau projet** ou **Ajouter un nouvel élément** . |
 | [CreateNewFolder](../extensibility/createnewfolder-element-visual-studio-templates.md) | Élément facultatif.<br /><br /> Spécifie si un dossier conteneur est créé lors de l’instanciation du projet. |
-| [DefaultName](../extensibility/defaultname-element-visual-studio-templates.md) | Élément facultatif.<br /><br /> Spécifie le nom que le système de projet Visual Studio génère pour le projet ou l’élément lors de sa création. |
-| [ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md) | Élément facultatif.<br /><br /> Spécifie si le système de projet Visual Studio génère le nom par défaut pour un projet ou un élément lorsqu’il est créé. |
-| [PromptForSaveOnCreation](../extensibility/promptforsaveoncreation-element-visual-studio-templates.md) | Élément facultatif.<br /><br /> Spécifie si le projet peut être créé comme un projet temporaire (Visual Studio 2017 uniquement). |
-| [EnableLocationBrowseButton](../extensibility/enablelocationbrowsebutton-element-visual-studio-templates.md) | Élément facultatif.<br /><br /> Spécifie si le **Parcourir** bouton n’est disponible dans le **nouveau projet** boîte de dialogue, afin que les utilisateurs peuvent facilement modifier le répertoire par défaut dans lequel un nouveau projet est enregistré. |
-| [Hidden](../extensibility/hidden-element-visual-studio-templates.md) | Élément facultatif.<br /><br /> Spécifie si le modèle apparaît dans un le **nouveau projet** ou **ajouter un nouvel élément** boîte de dialogue. |
-| [NumberOfParentCategoriesToRollUp](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md) | Élément facultatif.<br /><br /> Spécifie le nombre de catégories parentes qui afficheront le modèle dans le **nouveau projet** boîte de dialogue. |
+| [DefaultName](../extensibility/defaultname-element-visual-studio-templates.md) | Élément facultatif.<br /><br /> Spécifie le nom que le système de projet Visual Studio va générer pour le projet ou l’élément lors de sa création. |
+| [ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md) | Élément facultatif.<br /><br /> Spécifie si le système de projet Visual Studio doit générer le nom par défaut d’un projet ou d’un élément lors de sa création. |
+| [PromptForSaveOnCreation](../extensibility/promptforsaveoncreation-element-visual-studio-templates.md) | Élément facultatif.<br /><br /> Spécifie si le projet peut être créé en tant que projet temporaire (Visual Studio 2017 uniquement). |
+| [EnableLocationBrowseButton](../extensibility/enablelocationbrowsebutton-element-visual-studio-templates.md) | Élément facultatif.<br /><br /> Spécifie si le bouton **Parcourir** est disponible dans la boîte de dialogue **nouveau projet** , afin que les utilisateurs puissent facilement modifier le répertoire par défaut où un nouveau projet est enregistré. |
+| [Masquer](../extensibility/hidden-element-visual-studio-templates.md) | Élément facultatif.<br /><br /> Spécifie si le modèle s’affiche dans la boîte de dialogue **nouveau projet** ou **Ajouter un nouvel élément** . |
+| [NumberOfParentCategoriesToRollUp](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md) | Élément facultatif.<br /><br /> Spécifie le nombre de catégories parentes qui afficheront le modèle dans la boîte de dialogue **nouveau projet** . |
 | [LocationFieldMRUPrefix](../extensibility/locationfieldmruprefix-element-visual-studio-templates.md) | Élément facultatif. |
-| [LocationField](../extensibility/locationfield-element-visual-studio-project-templates.md) | Élément facultatif.<br /><br /> Spécifie si le **emplacement** zone de texte dans le **nouveau projet** boîte de dialogue est activé, désactivé ou masqué pour le modèle de projet. |
-| [RequiredFrameworkVersion](../extensibility/requiredframeworkversion-element-visual-studio-templates.md) | Élément facultatif.<br /><br /> Utilisez cet élément si le modèle prend uniquement en charge une version minimale spécifique et les versions ultérieures éventuelle du .NET Framework. |
-| [SupportsMasterPage](../extensibility/supportsmasterpage-element-visual-studio-templates.md) | Élément facultatif.<br /><br /> Spécifie si le modèle prend en charge une page maître pour les projets web. |
-| [SupportsCodeSeparation](../extensibility/supportscodeseparation-element-visual-studio-templates.md) | Élément facultatif.<br /><br /> Spécifie si le modèle prend en charge la séparation de code, ou le modèle de page code-behind, pour les projets web. |
-| [SupportsLanguageDropDown](../extensibility/supportslanguagedropdown-element-visual-studio-templates.md) | Élément facultatif.<br /><br /> Spécifie que le modèle est identique pour plusieurs langages et si le **langage** option est disponible dans le **nouveau projet** boîte de dialogue. |
-| [TargetPlatformName](../extensibility/targetplatformname-element-visual-studio-templates.md) | Élément facultatif.<br /><br /> Spécifie la plateforme ciblée par le modèle de projet. Cet élément spécifie qu’un modèle de projet est utilisé pour créer [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] applications. |
+| [LocationField](../extensibility/locationfield-element-visual-studio-project-templates.md) | Élément facultatif.<br /><br /> Spécifie si la zone de texte **emplacement** dans la boîte de dialogue **nouveau projet** est activée, désactivée ou masquée pour le modèle de projet. |
+| [RequiredFrameworkVersion](../extensibility/requiredframeworkversion-element-visual-studio-templates.md) | Élément facultatif.<br /><br /> Utilisez cet élément si le modèle prend uniquement en charge une version minimale spécifique et, le cas échéant, les versions ultérieures du .NET Framework. |
+| [SupportsMasterPage](../extensibility/supportsmasterpage-element-visual-studio-templates.md) | Élément facultatif.<br /><br /> Spécifie si le modèle prend en charge une page maître pour les projets Web. |
+| [SupportsCodeSeparation](../extensibility/supportscodeseparation-element-visual-studio-templates.md) | Élément facultatif.<br /><br /> Spécifie si le modèle prend en charge la séparation de code, ou le modèle de page code-behind, pour les projets Web. |
+| [SupportsLanguageDropDown](../extensibility/supportslanguagedropdown-element-visual-studio-templates.md) | Élément facultatif.<br /><br /> Spécifie si le modèle est identique pour plusieurs langues et si l’option **langue** est disponible dans la boîte de dialogue **nouveau projet** . |
+| [TargetPlatformName](../extensibility/targetplatformname-element-visual-studio-templates.md) | Élément facultatif.<br /><br /> Spécifie la plateforme ciblée par le modèle de projet. Cet élément spécifie qu’un modèle de projet est utilisé pour créer des [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] des applications. |
 
 ### <a name="parent-elements"></a>Éléments parents
 
 |Élément|Description|
 |-------------|-----------------|
-|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Élément requis.<br /><br /> Contient toutes les métadonnées pour le modèle de projet, un modèle d’élément ou un starter kit.|
+|[Lit](../extensibility/vstemplate-element-visual-studio-templates.md)|Élément requis.<br /><br /> Contient toutes les métadonnées pour le modèle de projet, le modèle d’élément ou le starter kit.|
 
 ## <a name="remarks"></a>Notes
- `TemplateData` un élément est requis.
+ `TemplateData` est un élément obligatoire.
 
- Si vous n’incluez pas un élément facultatif, la valeur par défaut de cet élément est utilisée.
+ Si vous n’incluez pas d’élément facultatif, la valeur par défaut de cet élément est utilisée.
 
 ## <a name="example"></a>Exemple
- L’exemple suivant montre les métadonnées d’un modèle de projet pour un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] application.
+ L’exemple suivant montre les métadonnées d’un modèle de projet pour une application [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].
 
 ```
 <VSTemplate Type="Project" Version="3.0.0"

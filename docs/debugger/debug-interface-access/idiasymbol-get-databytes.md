@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22ae91323300cd148cf13c4c4aef293709ef73f2
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 79c14427e967736b0dbe1ddb235f9e90b3ecc10f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64786538"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740728"
 ---
-# <a name="idiasymbolgetdatabytes"></a>IDiaSymbol::get_dataBytes
+# <a name="idiasymbolget_databytes"></a>IDiaSymbol::get_dataBytes
 Récupère les octets de données d’un symbole OEM.
 
 ## <a name="syntax"></a>Syntaxe
@@ -35,27 +35,27 @@ HRESULT get_dataBytes ( 
 #### <a name="parameters"></a>Paramètres
  `cbData`
 
-[in] Taille de la mémoire tampon devant contenir les données.
+dans Taille de la mémoire tampon pour stocker les données.
 
  `pcbData`
 
-[out] Retourne le nombre d’octets écrits, ou, si le `data` paramètre est `NULL`, retourne le nombre d’octets disponibles.
+à Retourne le nombre d’octets écrits ou, si le paramètre `data` est `NULL`, retourne le nombre d’octets disponibles.
 
  `data[]`
-- [out] Une mémoire tampon est remplie avec les octets de données.
+- [out,] Mémoire tampon qui est remplie avec les octets de données.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
-> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> Une valeur de retour de `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>spécifications
 
-|Prérequis|Description|
+|Exigence|Description|
 |-----------------|-----------------|
 |En-tête :|dia2.h|
-|Version :|DIA SDK v7.0|
+|Version :|DIA SDK v 7.0|
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

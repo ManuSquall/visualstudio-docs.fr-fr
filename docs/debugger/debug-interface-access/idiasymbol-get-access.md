@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fcf510cd9c74e22e0d028552b26c85b1f3d59bd4
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: c8f476a95215eda69a3655540891017eac2c88e4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64813905"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741105"
 ---
-# <a name="idiasymbolgetaccess"></a>IDiaSymbol::get_access
+# <a name="idiasymbolget_access"></a>IDiaSymbol::get_access
 Récupère le modificateur d’accès d’un membre de classe.
 
 ## <a name="syntax"></a>Syntaxe
@@ -33,20 +33,20 @@ HRESULT get_access ( 
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-[out] Retourne une valeur de la [CV_access_e (énumération)](../../debugger/debug-interface-access/cv-access-e.md) énumération qui spécifie le modificateur d’accès d’un membre de classe.
+à Retourne une valeur de l’énumération d' [énumération CV_access_e](../../debugger/debug-interface-access/cv-access-e.md) qui spécifie le modificateur d’accès d’un membre de classe.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
-> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> Une valeur de retour de `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>spécifications
 
-|Prérequis|Description|
+|Exigence|Description|
 |-----------------|-----------------|
 |En-tête :|dia2.h|
-|Version :|DIA SDK v7.0|
+|Version :|DIA SDK v 7.0|
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

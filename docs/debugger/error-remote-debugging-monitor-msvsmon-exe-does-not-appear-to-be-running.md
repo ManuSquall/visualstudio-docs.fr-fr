@@ -1,5 +1,5 @@
 ---
-title: 'Erreur : Microsoft Visual Studio Remote Debugging Monitor (MSVSMON.EXE) ne semble pas s’exécuter sur l’ordinateur distant'
+title: 'Erreur : Microsoft Visual Studio Remote Debugging Monitor (MSVSMON.EXE) ne semble pas s’exécuter sur l’ordinateur distant'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 11/04/2016
@@ -16,21 +16,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5dcd45cb64656b926b9c59efd7b6af14d2ec4c53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b908e4fe9ed0087abaf5f1390bb8faf5cc12bdaa
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850654"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737561"
 ---
-# <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a>Erreur : Microsoft Visual Studio Remote Debugging Monitor (MSVSMON.EXE) ne semble pas s’exécuter sur l’ordinateur distant
-Ce message d’erreur indique que Visual Studio n’a pas pu trouver l’instance appropriée de Visual Studio Remote Debugging Monitor sur l’ordinateur distant. Visual Studio Remote Debugging Monitor doit être installé pour que le débogage distant fonctionne. Pour plus d’informations sur le téléchargement et la configuration du débogueur distant, consultez [le débogage à distance](../debugger/remote-debugging.md).
+# <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a>Erreur : Microsoft Visual Studio Remote Debugging Monitor (MSVSMON.EXE) ne semble pas s’exécuter sur l’ordinateur distant
+Ce message d’erreur indique que Visual Studio n’a pas pu trouver l’instance appropriée de Visual Studio Remote Debugging Monitor sur l’ordinateur distant. Visual Studio Remote Debugging Monitor doit être installé pour que le débogage distant fonctionne. Pour plus d’informations sur le téléchargement et la configuration du débogueur distant, consultez [débogage distant](../debugger/remote-debugging.md).
 
 > [!IMPORTANT]
-> Si vous pensez que vous avez reçu ce message en raison d’un bogue de produit, veuillez [signaler ce problème à Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md). Si vous avez besoin d’aide supplémentaire, consultez [Talk to Us](../ide/talk-to-us.md) pour savoir comment contacter Microsoft.
+> Si vous pensez que vous avez reçu ce message en raison d’un bogue produit, veuillez [signaler ce problème à Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md). Si vous avez besoin d’aide supplémentaire, consultez [Talk to Us](../ide/talk-to-us.md) pour savoir comment contacter Microsoft.
 
 ## <a name="i-got-this-message-while-i-was-debugging-in-visual-studio-2010-or-earlier"></a>J’ai reçu ce message pendant une session de débogage dans Visual Studio 2010 ou version antérieure
- Si vous utilisez Visual Studio 2010 ou version antérieure, vous pouvez également recevoir cette erreur si le partage de fichiers et d’imprimantes n’est pas activé. Pour en savoir plus sur ce problème, reportez-vous à la version de Visual Studio 2010 de cette documentation : [Erreur : Microsoft Visual Studio Remote Debugging Monitor (MSVSMON. (EXE) ne semble pas être en cours d’exécution sur l’ordinateur distant. -Visual Studio 2010](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms164726(v=vs.100))
+ Si vous utilisez Visual Studio 2010 ou version antérieure, vous pouvez également recevoir cette erreur si le partage de fichiers et d’imprimantes n’est pas activé. Pour en savoir plus sur ce problème, reportez-vous à la version de Visual Studio 2010 de cette documentation : [Erreur : Microsoft Visual Studio Remote Debugging Monitor (MSVSMON.EXE) ne semble pas s’exécuter sur l’ordinateur distant - Visual Studio 2010](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms164726(v=vs.100)).
 
 ## <a name="i-got-this-message-while-i-was-debugging-locally"></a>J’ai reçu ce message pendant une session de débogage locale
  Si ce message s’affiche pendant un débogage local, il est possible que le problème provienne de votre antivirus ou d’un pare-feu tiers. Visual Studio étant une application 32 bits, elle utilise la version 64 bits du débogueur distant pour déboguer les applications 64 bits. Les deux processus communiquent à l’aide du réseau local au sein de l’ordinateur local. Aucun trafic ne quitte l’ordinateur, mais il peut arriver que des logiciels de sécurité tiers bloquent la communication.
@@ -64,15 +64,15 @@ Ce message d’erreur indique que Visual Studio n’a pas pu trouver l’instanc
  L’antivirus Windows autorise les connexions au débogueur distant, mais certains antivirus tiers peuvent les bloquer. Consultez la documentation de votre antivirus pour savoir comment autoriser ces connexions.
 
 ## <a name="network-security-policy-is-blocking-communication-between-the-remote-machine-and-visual-studio"></a>La stratégie de sécurité réseau bloque la communication entre l’ordinateur distant et Visual Studio
- Passez en revue la sécurité de votre réseau pour vous assurer qu’elle ne bloque pas les communications. Pour plus d’informations sur la stratégie de sécurité réseau de Windows, consultez [les paramètres de stratégie de sécurité](/windows/device-security/security-policy-settings/security-policy-settings).
+ Passez en revue la sécurité de votre réseau pour vous assurer qu’elle ne bloque pas les communications. Pour plus d’informations sur la stratégie de sécurité réseau Windows, consultez [paramètres de stratégie de sécurité](/windows/device-security/security-policy-settings/security-policy-settings).
 
 ## <a name="the-network-is-too-busy-to-support-remote-debugging"></a>Le réseau est trop occupé pour prendre en charge le débogage distant
  Dans ce cas, vous devrez peut-être procéder au débogage distant ultérieurement ou replanifier le travail sur le réseau à une heure différente.
 
 ## <a name="more-help"></a>Aide supplémentaire
- Pour obtenir de l’aide de débogueur distant, y compris les commutateurs de ligne de commande, cliquez sur **aide > utilisation** dans la fenêtre du débogueur distant. Si vous n’êtes pas ouvert, vous pouvez voir la page web en copiant la ligne suivante à une **Explorateur de fichiers** fenêtre. (Vous devrez remplacer \<répertoire d’installation de Visual Studio > avec l’emplacement de votre installation de Visual Studio.)
+ Pour obtenir de l’aide sur le débogueur distant, y compris sur les commutateurs de ligne de commande, cliquez sur **aide > l’utilisation** dans la fenêtre du débogueur distant. Si vous ne l’avez pas ouvert, vous pouvez voir la page Web en copiant la ligne suivante dans une fenêtre de l' **Explorateur de fichiers** . (Vous devez remplacer \<répertoire d’installation de Visual Studio > par l’emplacement de votre installation de Visual Studio.)
 
- res : / /*\<répertoire d’installation de Visual Studio >* \Common7\IDE\Remote%20Debugger\x64\msvsmon.exe/help.htm
+ res:// *\<répertoire d’installation de Visual Studio >* \ COMMON7 \ IDE \ distant %2 0 débogueur \ x64 \ msvsmon. exe/Help. htm
 
 ## <a name="see-also"></a>Voir aussi
 - [Erreurs et résolution des problèmes du débogage distant](../debugger/remote-debugging-errors-and-troubleshooting.md)

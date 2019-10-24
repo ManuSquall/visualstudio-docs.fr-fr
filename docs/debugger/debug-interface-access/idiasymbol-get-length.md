@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b1a583a9afd2a43d48399d5e2787369ab9bef95
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 114d9f7b00bbe5d322e7b6893e96fbbabec9d002
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64858110"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739979"
 ---
-# <a name="idiasymbolgetlength"></a>IDiaSymbol::get_length
-Récupère le nombre de bits ou octets de mémoire utilisée par l’objet représenté par ce symbole.
+# <a name="idiasymbolget_length"></a>IDiaSymbol::get_length
+Récupère le nombre de bits ou d’octets de mémoire utilisé par l’objet représenté par ce symbole.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,18 +33,18 @@ HRESULT get_length ( 
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-[out] Retourne le nombre d’octets ou bits de mémoire utilisée par l’objet représenté par ce symbole.
+à Retourne le nombre d’octets ou de bits de mémoire utilisés par l’objet représenté par ce symbole.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
-> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> Une valeur de retour de `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
 ## <a name="remarks"></a>Notes
- Si le [LocationType (énumération)](../../debugger/debug-interface-access/locationtype.md) du symbole est `LocIsBitField`, la longueur retournée par cette méthode est en bits ; sinon, la longueur est en octets pour tous les autres types d’emplacement.
+ Si l' [énumération LocationType (](../../debugger/debug-interface-access/locationtype.md) du symbole est `LocIsBitField`, la longueur retournée par cette méthode est en bits ; dans le cas contraire, la longueur est en octets pour tous les autres types d’emplacement.
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
 
 ```C++
 IDiaSymbol* pSymbol;
@@ -52,12 +52,12 @@ ULONGLONG   length;
 pSymbol->get_length( &length );
 ```
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>spécifications
 
-|Prérequis|Description|
+|Exigence|Description|
 |-----------------|-----------------|
 |En-tête :|dia2.h|
-|Version :|DIA SDK v7.0|
+|Version :|DIA SDK v 7.0|
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

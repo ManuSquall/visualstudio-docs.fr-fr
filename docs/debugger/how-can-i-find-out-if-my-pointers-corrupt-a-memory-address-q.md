@@ -1,5 +1,5 @@
 ---
-title: Savoir si mes pointeurs endommagé une adresse mémoire | Microsoft Docs
+title: Déterminer si mes pointeurs endommagent une adresse mémoire | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5e61c1433ee05954a85537cd5e30bb9683642f3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8313bc8e0419e281dceefbafd6dcdcc2f368580f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894936"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72734254"
 ---
 # <a name="how-can-i-find-out-if-my-pointers-corrupt-a-memory-address"></a>Comment puis-je savoir si mes pointeurs endommagent une adresse mémoire ?
 ## <a name="problem-description"></a>Description du problème
@@ -36,7 +36,7 @@ ms.locfileid: "62894936"
 
 #### <a name="check-for-heap-corruption"></a>Vérifier l'altération du tas
 
-- La plus grande partie de l'altération de la mémoire est provoquée par l'altération du tas. Servez-vous de l'utilitaire Global Flags (gflags.exe) ou de pageheap.exe. Consultez [ http://support.microsoft.com/default.aspx?scid=kb; en-us ; 286470](http://support.microsoft.com/default.aspx?scid=kb;en-us;286470).
+- La plus grande partie de l'altération de la mémoire est provoquée par l'altération du tas. Servez-vous de l'utilitaire Global Flags (gflags.exe) ou de pageheap.exe. Consultez [http://support.microsoft.com/default.aspx?scid=kb; en-US ; 286470](http://support.microsoft.com/default.aspx?scid=kb;en-us;286470).
 
 #### <a name="to-find-where-the-memory-address-is-modified"></a>Pour rechercher la modification de l'adresse mémoire :
 

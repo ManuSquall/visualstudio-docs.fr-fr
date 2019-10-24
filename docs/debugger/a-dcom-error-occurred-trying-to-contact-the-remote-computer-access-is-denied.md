@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75d1c9f9c23df04ca19f68dada718fba12dc51f3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ffc9cae027a078a62b1ef7bab16994a418d76763
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564689"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745826"
 ---
 # <a name="a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied"></a>Une erreur DCOM s’est produite lors de la tentative de contact de l’ordinateur distant. Accès refusé.
 Le débogage distant utilise DCOM pour les communications entre l’ordinateur hôte et l’ordinateur distant dans les situations suivantes :
@@ -34,7 +34,7 @@ Le débogage distant utilise DCOM pour les communications entre l’ordinateur h
 
 - Vous déboguez du code C++ managé (C++/CLI).
 
-- Dans Visual Studio 2013, l’option **Activer Modifier &amp; Continuer natif** est activée dans la page **Outils > Options > Débogage**.
+- Dans Visual Studio 2013, l’option **Activer Modifier & Continuer natif** est activée dans la page **Outils &gt; Options &gt; Débogage**.
 
 - Quelques scénarios de débogage tiers
 

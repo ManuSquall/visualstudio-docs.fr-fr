@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c46319714e24a64ad71951b78c55c140028c3ab0
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 12fac0c26c53695dcc9b42794337a7feaea6b0fa
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64819099"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740024"
 ---
-# <a name="idiasymbolgetisstripped"></a>IDiaSymbol::get_isStripped
-Récupère les indicateur indiquant si les symboles privés ont été supprimés à partir du fichier de symboles.
+# <a name="idiasymbolget_isstripped"></a>IDiaSymbol::get_isStripped
+Récupère un indicateur qui spécifie si les symboles privés ont été supprimés du fichier de symboles.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,23 +33,23 @@ HRESULT get_isStripped(
 #### <a name="parameters"></a>Paramètres
  `pFlag`
 
-[out] Retourne `TRUE` si les symboles privés ont été supprimées du fichier de symboles ; sinon, retourne `FALSE`.
+à Retourne `TRUE` si les symboles privés ont été supprimés du fichier de symboles ; Sinon, retourne `FALSE`.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
-> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> Une valeur de retour de `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
 ## <a name="remarks"></a>Notes
- Cette propriété est disponible à partir de la `SymTagExe` type de symbole (consultez [Exe](../../debugger/debug-interface-access/exe.md)).
+ Cette propriété est disponible à partir du type de symbole `SymTagExe` (consultez [exe](../../debugger/debug-interface-access/exe.md)).
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>spécifications
 
-|Prérequis|Description|
+|Exigence|Description|
 |-----------------|-----------------|
 |En-tête :|dia2.h|
-|Version :|DIA SDK 8.0|
+|Version :|DIA SDK v 8.0|
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

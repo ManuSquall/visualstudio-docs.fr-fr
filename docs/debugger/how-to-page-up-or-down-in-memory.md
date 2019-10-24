@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Page précédente ou suivante en mémoire | Microsoft Docs'
+title: 'Comment : paginer vers le haut ou vers le haut dans la mémoire | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b8452100eb744d019c0f4c8d5e62566ac761210
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c9f93b24c9349a28176164d667c96133668cf3f4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894019"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733024"
 ---
-# <a name="how-to-page-up-or-down-in-memory"></a>Procédure : Se déplacer d’une page vers le haut ou vers le bas dans la mémoire
+# <a name="how-to-page-up-or-down-in-memory"></a>Comment : se déplacer d'une page vers le haut ou vers le bas dans la mémoire
 
 Quand vous affichez le contenu de la mémoire dans la fenêtre **Mémoire** ou **Code Machine**, vous pouvez vous servir de la barre de défilement verticale pour vous déplacer dans l’espace mémoire.
 

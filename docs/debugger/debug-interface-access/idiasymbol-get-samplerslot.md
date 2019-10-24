@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe41982faadeec8ac44a0f178045b3c4dfa69b24
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 3a311b7139ba9b6d93eac1d50308db2e951c5c4d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62835439"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739383"
 ---
-# <a name="idiasymbolgetsamplerslot"></a>IDiaSymbol::get_samplerSlot
+# <a name="idiasymbolget_samplerslot"></a>IDiaSymbol::get_samplerSlot
 Récupère l’emplacement de l’échantillonneur.
 
 ## <a name="syntax"></a>Syntaxe
@@ -30,10 +30,10 @@ HRESULT get_samplerSlot(
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-[out] Un pointeur vers un `DWORD` qui contient l’emplacement de l’échantillonneur.
+à Pointeur vers un `DWORD` qui contient l’emplacement de l’échantillonneur.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

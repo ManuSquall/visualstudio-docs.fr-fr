@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 275941aaf3a1eb2cab6554b18c6d9aa66605121a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bfb3e219012effe47a2352f7c22c6cf51b4617f9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62831830"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741418"
 ---
-# <a name="idiastackwalkhelpergetregistervalue"></a>IDiaStackWalkHelper::get_registerValue
-Récupère la valeur d’un Registre.
+# <a name="idiastackwalkhelperget_registervalue"></a>IDiaStackWalkHelper::get_registerValue
+Récupère la valeur d’un registre.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -34,17 +34,17 @@ HRESULT get_registerValue ( 
 #### <a name="parameters"></a>Paramètres
  `index`
 
-[in] Une valeur comprise entre le [CV_HREG_e (énumération)](../../debugger/debug-interface-access/cv-hreg-e.md) énumération spécifiant permettant d’obtenir la valeur de Registre.
+dans Valeur de l’énumération [CV_HREG_e énumération](../../debugger/debug-interface-access/cv-hreg-e.md) qui spécifie le registre à partir duquel obtenir la valeur.
 
  `pRetVal`
 
-[out] Retourne la valeur actuelle du Registre.
+à Retourne la valeur actuelle du Registre.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK`; Sinon, retourne un code d’erreur.
 
 ## <a name="remarks"></a>Notes
- En dépit de la taille de la `pRetVal` paramètre, une implémentation doit stocker uniquement ce que le Registre normalement conserve. Par exemple, un Registre de 8 bits conserve uniquement les 8-bits les plus bas de la valeur donnée. Cette valeur de 8 bits est développée à 64 bits lorsque retourné par cette méthode.
+ En dépit de la taille du paramètre `pRetVal`, une implémentation doit stocker uniquement ce que le registre contient normalement. Par exemple, un registre 8 bits contient uniquement les 8 bits les plus bas de la valeur donnée. Cette valeur de 8 bits est étendue à 64 bits quand elle est retournée à partir de cette méthode.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

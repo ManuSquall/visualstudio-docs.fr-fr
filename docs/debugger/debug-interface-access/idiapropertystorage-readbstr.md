@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0bff81499fe8ea66ce5d4f50616adfec44d3002
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ef0b5bac11a1bf3da7e8081f7ae24b6a7a6f1a71
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839626"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742920"
 ---
 # <a name="idiapropertystoragereadbstr"></a>IDiaPropertyStorage::ReadBSTR
 Lit `BSTR` valeurs dans un jeu de propriétés.
@@ -34,17 +34,17 @@ HRESULT ReadBSTR ( 
 #### <a name="parameters"></a>Paramètres
  `id`
 
-[in] Identificateur de la propriété à lire (`PROPID` est défini dans WTypes.h comme un `ULONG`).
+dans Identificateur de la propriété à lire (`PROPID` est défini dans WTypes. h en tant que `ULONG`).
 
  `pValue`
 
-[out] Retourne la valeur de propriété.
+à Retourne la valeur de la propriété.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Retourne `E_INVALIDARG` si la propriété n’est pas de type `BSTR`.
+ En cas de réussite, retourne `S_OK`; Sinon, retourne un code d’erreur. Retourne `E_INVALIDARG` si la propriété n’est pas de type `BSTR`.
 
 ## <a name="remarks"></a>Notes
- Un `BSTR` est défini par Windows sous forme de chaîne se terminant par zéro des caractères larges.
+ Une `BSTR` est définie par Windows comme une chaîne de caractères larges se terminant par zéro.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

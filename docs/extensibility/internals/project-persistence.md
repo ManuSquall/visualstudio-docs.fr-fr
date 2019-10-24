@@ -1,5 +1,5 @@
 ---
-title: Persistance de projet | Microsoft Docs
+title: Persistance du projet | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,37 +11,37 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c0f81d3cb4cc1e3404087f6ad4b8ecac34b9ec0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a95c919de9b87ed1782cbdcb029efbf191958f5a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328323"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72725460"
 ---
 # <a name="project-persistence"></a>Persistance d’un projet
-La persistance est une considération de conception clés pour votre projet. La plupart des projets utilisent des éléments de projet qui représentent des fichiers ; [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prend également en charge les projets dont les données sont non basée sur un fichier. Les deux fichiers détenus par le projet et le fichier projet doivent être persistante. L’IDE indique le projet pour enregistrer lui-même ou un élément de projet.
+La persistance est un facteur clé de la conception de votre projet. La plupart des projets utilisent des éléments de projet qui représentent des fichiers ; [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prend également en charge les projets dont les données ne sont pas basées sur des fichiers. Les fichiers appartenant au projet et au fichier projet doivent être rendus persistants. L’IDE indique au projet de s’enregistrer lui-même ou un élément de projet.
 
- Modèles de projets sont transmises à la fabrique de projets. Les modèles doivent prendre en charge l’initialisation de tous les éléments de projet en fonction des spécifications du type de projet spécifique. Ces modèles ultérieurement peuvent être enregistrés en tant que fichiers de projet et gérés par l’IDE à travers la solution. Pour plus d’informations, consultez [création projet Instances par à l’aide de fabriques de projet](../../extensibility/internals/creating-project-instances-by-using-project-factories.md) et [Solutions](../../extensibility/internals/solutions-overview.md).
+ Les modèles pour les projets sont passés à la fabrique de projets. Les modèles doivent prendre en charge l’initialisation de tous les éléments de projet en fonction des spécifications du type de projet spécifique. Ces modèles peuvent être enregistrés plus tard en tant que fichiers projet et gérés par l’IDE par le biais de la solution. Pour plus d’informations, consultez [création d’instances de projet à l’aide de fabriques de projets](../../extensibility/internals/creating-project-instances-by-using-project-factories.md) et de [solutions](../../extensibility/internals/solutions-overview.md).
 
- Éléments de projet peuvent être basée sur le fichier ou non basée sur un fichier :
+ Les éléments de projet peuvent être basés sur des fichiers ou sur des fichiers non basés sur un fichier :
 
-- Éléments basés sur le fichier peuvent être local ou distant. Dans les projets Web en c#, par exemple, les connexions aux fichiers sur un système distant conservent localement, tandis que les fichiers eux-mêmes sont conservées sur le système distant.
+- Les éléments basés sur des fichiers peuvent être locaux ou distants. Dans les projets Web C#dans, par exemple, les connexions aux fichiers sur un système distant sont conservées localement, tandis que les fichiers sont conservés sur le système distant.
 
-- Éléments non basés sur des fichiers peuvent enregistrer des éléments dans une base de données ou le référentiel.
+- Les éléments non basés sur des fichiers peuvent enregistrer des éléments dans une base de données ou un référentiel.
 
-## <a name="commit-models"></a>Valider des modèles
- Après avoir décidé où se trouvent les éléments de projet, vous devez choisir le modèle de validation approprié. Par exemple, dans un modèle basé sur fichier avec des fichiers locaux, chaque projet peut être enregistré autonome. Dans un modèle de référentiel, vous pouvez enregistrer plusieurs éléments dans une seule transaction. Pour plus d’informations, consultez [décisions de conception de Type de projet](../../extensibility/internals/project-type-design-decisions.md).
+## <a name="commit-models"></a>Valider les modèles
+ Après avoir décidé de l’emplacement des éléments de projet, vous devez choisir le modèle de validation approprié. Par exemple, dans un modèle basé sur des fichiers avec des fichiers locaux, chaque projet peut être enregistré de manière autonome. Dans un modèle de référentiel, vous pouvez enregistrer plusieurs éléments dans une transaction. Pour plus d’informations, consultez [décisions de conception de type de projet](../../extensibility/internals/project-type-design-decisions.md).
 
- Pour déterminer les extensions de nom de fichier, implémentent des projets le <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> interface, qui fournit des informations permettant au client d’un objet d’implémenter le **Enregistrer sous** boîte de dialogue, autrement dit, pour renseigner le **enregistrer en tant que Type**  déroulante Lister et gérer l’extension de nom de fichier initial.
+ Pour déterminer les extensions de nom de fichier, les projets implémentent l’interface <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>, qui fournit des informations permettant au client d’un objet d’implémenter la boîte de dialogue **Enregistrer sous** , c’est-à-dire de remplir la liste déroulante **type** de fichier et de gérer le extension de nom de fichier initiale.
 
- Les appels de l’IDE le `IPersistFileFormat` interface sur le projet pour indiquer que le projet doit conserver son projet éléments selon les besoins. Par conséquent, l’objet propriétaire de tous les aspects de son format et le format de fichier. Cela inclut le nom du format de l’objet.
+ L’IDE appelle l’interface `IPersistFileFormat` sur le projet pour indiquer que le projet doit rendre ses éléments de projet persistants, le cas échéant. Par conséquent, l’objet possède tous les aspects de son fichier et de son format. Cela comprend le nom du format de l’objet.
 
- Dans le cas où les éléments ne sont pas des fichiers, `IPersistFileFormat` est toujours comment non fichier basé sur les éléments sont conservés. Fichiers, tels que les fichiers .vbp pour projet [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] projets ou .vcproj fichiers pour [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] projets, doit également être conservé.
+ Dans le cas où les éléments ne sont pas des fichiers, `IPersistFileFormat` est toujours la manière dont les éléments non basés sur des fichiers sont conservés. Les fichiers projet, tels que les fichiers. vbp pour les projets [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] ou les fichiers. vcproj pour les projets [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)], doivent également être persistants.
 
- Pour enregistrer les actions, l’IDE examine la table de document en cours d’exécution (RDT) et la hiérarchie transmet les commandes pour le <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem> et <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2> interfaces. Le <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem.IsItemDirty%2A> méthode est implémentée pour déterminer si l’élément a été modifiée. Si l’élément a, le <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem.SaveItem%2A> méthode est implémentée pour enregistrer l’élément modifié.
+ Pour les actions d’enregistrement, l’IDE examine la table de document en cours d’exécution (RDT) et la hiérarchie transmet les commandes aux <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem> et aux interfaces de <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2>. La méthode <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem.IsItemDirty%2A> est implémentée pour déterminer si l’élément a été modifié. Si l’élément a la valeur, la méthode <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem.SaveItem%2A> est implémentée pour enregistrer l’élément modifié.
 
- Les méthodes sur le `IVsPersistHierarchyItem2` interface servent à déterminer si un élément peut être rechargé et, si l’élément peut être, à le recharger. En outre, le <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IgnoreItemFileChanges%2A> méthode peut être implémentée pour les éléments modifiés sont ignorés sans être enregistré.
+ Les méthodes sur l’interface `IVsPersistHierarchyItem2` sont utilisées pour déterminer si un élément peut être rechargé et, si l’élément peut être, pour le recharger. En outre, la méthode <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IgnoreItemFileChanges%2A> peut être implémentée pour entraîner la suppression des éléments modifiés sans enregistrement.
 
 ## <a name="see-also"></a>Voir aussi
-- [Liste de contrôle : Création de nouveaux types de projets](../../extensibility/internals/checklist-creating-new-project-types.md)
+- [Liste de vérification : création de nouveaux types de projets](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Création d’instances de projets à l’aide de fabriques de projets](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)

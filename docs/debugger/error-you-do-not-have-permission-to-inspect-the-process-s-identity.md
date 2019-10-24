@@ -1,5 +1,5 @@
 ---
-title: 'Erreur : Vous n’êtes pas autorisé à inspecter le processus&#39;identité de s | Microsoft Docs'
+title: "Erreur : vous n’êtes pas autorisé à inspecter l'&#39;identité du processus | Microsoft Docs"
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 dev_langs:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 437693b289723c44986f61cc65d644742cd8e77c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cad229f80676c3d1f7a7d23ad7a29729c834929b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62849931"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72736219"
 ---
-# <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>Erreur : Vous n’êtes pas autorisé à inspecter le processus&#39;identité de s
+# <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>Erreur : vous n’êtes pas autorisé à inspecter l'&#39;identité du processus
 Vous n'êtes pas autorisé à inspecter l'identité du processus. Cela peut être dû à la configuration de votre système.
 
  Le débogueur n'a pas pu inspecter l'identité du processus, qui contient des informations nécessaires au débogage. La cause la plus probable est la désactivation des services Terminal Server. Les services Terminal Server sont activés par défaut. Pour les réactiver, procédez comme suit.
@@ -40,7 +40,7 @@ Vous n'êtes pas autorisé à inspecter l'identité du processus. Cela peut êtr
 
 6. Dans la liste **Services**, cliquez avec le bouton droit sur **Services Terminal Server**, puis choisissez **Propriétés**.
 
-7. Dans le **propriétés des Services Terminal Server** fenêtre, accédez à la **général** onglet et définissez **type de démarrage** à **manuel**.
+7. Dans la fenêtre **Propriétés des services Terminal Server** , accédez à l’onglet **général** et définissez **type de démarrage** sur **Manuel**.
 
 8. Cliquez sur **OK**.
 

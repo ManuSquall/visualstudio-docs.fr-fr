@@ -17,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 36b17adfd3968031983965ca47574804a9f1738e
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: 52235ab4770f5267de8507ff67fcda0aa1370392
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72589092"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72730550"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Déboguer du code HTML et CSS dans les applications UWP dans Visual Studio
 

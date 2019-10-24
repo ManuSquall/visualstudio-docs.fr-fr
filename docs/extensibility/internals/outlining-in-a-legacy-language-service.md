@@ -1,5 +1,5 @@
 ---
-title: Le mode plan dans un Service de langage hérité | Microsoft Docs
+title: Mode plan dans un service de langage hérité | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,41 +12,41 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7af8ab4615cff7462a47dfb11b193660eb62274c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a6b2ba55a2e77a1f7261812a181ad780c2ef2b71
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66314880"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72726178"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>Mode Plan dans un service de langage hérité
-Le mode plan permet de réduire un programme complexe dans une vue d’ensemble ou un plan. Par exemple, en c#, toutes les méthodes peuvent être réduits en une seule ligne, en affichant uniquement la signature de méthode. En outre, les structures et les classes peuvent être réduites pour afficher uniquement les noms des classes et structures. À l’intérieur d’une méthode unique, une logique complexe peut être réduite pour afficher le flux global en affichant uniquement la première ligne des instructions telles que `foreach`, `if`, et `while`.
+Le mode plan permet de réduire un programme complexe en vue d’une vue d’ensemble ou d’une structure. Par exemple, dans C# toutes les méthodes, peut être réduit sur une seule ligne, en n’présentant que la signature de la méthode. En outre, les structures et les classes peuvent être réduites pour afficher uniquement les noms des structures et des classes. Au sein d’une même méthode, une logique complexe peut être réduite pour afficher le déroulement global en affichant uniquement la première ligne d’instructions, comme `foreach`, `if`et `while`.
 
- Services de langage hérité sont implémentés en tant que partie d’un VSPackage, mais la plus récente pour implémenter des fonctionnalités de service de langage consiste à utiliser des extensions MEF. Pour plus d’informations, consultez [procédure pas à pas : Mode Plan](../../extensibility/walkthrough-outlining.md).
+ Les services de langage hérités sont implémentés dans le cadre d’un VSPackage, mais la meilleure façon d’implémenter les fonctionnalités du service de langage consiste à utiliser les extensions MEF. Pour en savoir plus, consultez [procédure pas à pas : mode plan](../../extensibility/walkthrough-outlining.md).
 
 > [!NOTE]
-> Nous vous recommandons de commencer à utiliser le nouvel éditeur API dès que possible. Cela améliorer les performances de votre service de langage et vous permettent de tirer parti des nouvelles fonctionnalités de l’éditeur.
+> Nous vous recommandons de commencer à utiliser la nouvelle API Editor dès que possible. Cela améliore les performances de votre service de langage et vous permet de tirer parti des nouvelles fonctionnalités de l’éditeur.
 
-## <a name="enabling-support-for-outlining"></a>L’activation de la prise en charge pour le mode plan
- Le `AutoOutlining` entrée de Registre est définie sur 1 pour activer le mode plan automatique. Le mode plan automatique configure une analyse de la source entier lorsqu’un fichier est chargé ou modifié afin d’identifier les zones masquées et afficher les glyphes en mode plan. Le mode plan peut également être contrôlé manuellement par l’utilisateur.
+## <a name="enabling-support-for-outlining"></a>Activation de la prise en charge du mode plan
+ L’entrée de Registre `AutoOutlining` a la valeur 1 pour activer le mode plan automatique. Le mode plan automatique définit une analyse de la source entière lorsqu’un fichier est chargé ou modifié pour identifier les zones masquées et afficher les glyphes en mode plan. Le mode plan peut également être contrôlé manuellement par l’utilisateur.
 
- La valeur de la `AutoOutlining` entrée de Registre peut être obtenue via la <xref:Microsoft.VisualStudio.Package.LanguagePreferences.AutoOutlining%2A> propriété sur le <xref:Microsoft.VisualStudio.Package.LanguagePreferences> classe. Le `AutoOutlining` entrée de Registre peut être initialisée avec un paramètre nommé pour le <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> attribut (voir [l’inscription d’un Service de langage hérité](../../extensibility/internals/registering-a-legacy-language-service1.md) pour plus d’informations).
+ La valeur de l’entrée de Registre `AutoOutlining` peut être obtenue via la propriété <xref:Microsoft.VisualStudio.Package.LanguagePreferences.AutoOutlining%2A> de la classe <xref:Microsoft.VisualStudio.Package.LanguagePreferences>. L’entrée de Registre `AutoOutlining` peut être initialisée avec un paramètre nommé de l’attribut <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> (pour plus d’informations, consultez [inscription d’un service de langage hérité](../../extensibility/internals/registering-a-legacy-language-service1.md) ).
 
-## <a name="the-hidden-region"></a>La zone masquée
- Pour fournir le mode plan, votre service de langage doit prendre en charge les zones masquées. Il s’agit des étendues de texte qui peut être développée ou réduite. Les zones masquées peuvent être délimités par des symboles de langage standard, tels que des accolades, ou par des symboles personnalisés. Par exemple, c# a un `#region` / `#endregion` paire qui délimite une zone masquée.
+## <a name="the-hidden-region"></a>Zone masquée
+ Pour fournir un mode plan, votre service de langage doit prendre en charge les zones masquées. Il s’agit de plusieurs étendues de texte qui peuvent être développées ou réduites. Les zones masquées peuvent être délimitées par des symboles de langage standard, tels que des accolades, ou par des symboles personnalisés. Par exemple, C# a une paire`#region`/`#endregion`qui délimite une zone masquée.
 
- Les zones masquées sont gérés par un gestionnaire de zone masquée, qui est exposé en tant que le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> interface.
+ Les zones masquées sont gérées par un gestionnaire de zones masquées, qui est exposé en tant qu’interface <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession>.
 
- Le mode plan utilise les zones masquées le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenRegion> interface et contient l’étendue de la zone masquée, l’état visible actuel et la bannière à afficher lorsque l’étendue est réduite.
+ Le mode plan utilise les zones masquées dans l’interface <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenRegion> et contient l’étendue de la zone masquée, l’état visible actuel et la bannière à afficher lorsque l’étendue est réduite.
 
- L’Analyseur de service de langage utilise le <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddHiddenRegion%2A> méthode pour ajouter une nouvelle zone masquée avec le comportement par défaut pour les zones masquées, tandis que le <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddHiddenRegion%2A> méthode vous permet de personnaliser l’apparence et le comportement du contour. Une fois que les zones masquées sont fournis pour la session de la zone masquée, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gère les zones masquées pour le service de langage.
+ L’analyseur de service de langage utilise la méthode <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddHiddenRegion%2A> pour ajouter une nouvelle zone masquée avec le comportement par défaut pour les zones masquées, tandis que la méthode <xref:Microsoft.VisualStudio.Package.AuthoringSink.AddHiddenRegion%2A> vous permet de personnaliser l’apparence et le comportement du plan. Une fois les zones masquées attribuées à la session de la zone masquée, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] gère les zones masquées pour le service de langage.
 
- Si vous avez besoin déterminer quand la session de zone masquée est détruite, une zone masquée est modifiée, ou vous devez vous assurer de qu'une zone masquée particulière est visible ; Vous devez dériver une classe à partir de la <xref:Microsoft.VisualStudio.Package.Source> classe et substituer les méthodes appropriées, <xref:Microsoft.VisualStudio.Package.Source.OnBeforeSessionEnd%2A>, <xref:Microsoft.VisualStudio.Package.Source.OnHiddenRegionChange%2A>, et <xref:Microsoft.VisualStudio.Package.Source.MakeBaseSpanVisible%2A>, respectivement.
+ Si vous devez déterminer à quel moment la session de la zone masquée est détruite, une zone masquée est modifiée ou vous devez vous assurer qu’une zone masquée spécifique est visible. vous devez dériver une classe de la classe <xref:Microsoft.VisualStudio.Package.Source> et remplacer les méthodes appropriées, <xref:Microsoft.VisualStudio.Package.Source.OnBeforeSessionEnd%2A>, <xref:Microsoft.VisualStudio.Package.Source.OnHiddenRegionChange%2A>et <xref:Microsoft.VisualStudio.Package.Source.MakeBaseSpanVisible%2A>, respectivement.
 
 ### <a name="example"></a>Exemple
- Voici un exemple simplifié de la création de zones masquées pour toutes les paires d’accolades. Il est supposé que le langage fournit la correspondance des accolades, ainsi que les accolades à mettre en correspondance inclure au moins les accolades ({et}). Cette approche est uniquement à des fins d’illustration. Une implémentation complète aurait une gestion complète des cas dans <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>. Cet exemple montre également comment définir le <xref:Microsoft.VisualStudio.Package.LanguagePreferences.AutoOutlining%2A> préférence aux `true` temporairement. Une alternative consiste à spécifier le `AutoOutlining` nommé de paramètre dans le `ProvideLanguageServiceAttribute` attribut dans votre package de langage.
+ Voici un exemple simplifié de création de zones masquées pour toutes les paires d’accolades. Il est supposé que le langage fournit une mise en correspondance des accolades et que les accolades à mettre en correspondance incluent au moins les accolades ({et}). Cette approche est fournie à titre d’illustration uniquement. Une implémentation complète aurait une gestion complète des cas dans <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>. Cet exemple montre également comment définir la préférence de <xref:Microsoft.VisualStudio.Package.LanguagePreferences.AutoOutlining%2A> sur `true` temporairement. Une alternative consiste à spécifier le paramètre `AutoOutlining` nommé dans l’attribut `ProvideLanguageServiceAttribute` de votre package de langage.
 
- Cet exemple part du principe que les règles c# pour les commentaires, chaînes et littéraux.
+ Cet exemple suppose des C# règles pour les commentaires, les chaînes et les littéraux.
 
 ```csharp
 using Microsoft.VisualStudio.Package;

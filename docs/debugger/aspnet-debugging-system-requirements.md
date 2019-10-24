@@ -1,5 +1,5 @@
 ---
-title: 'Débogage ASP.NET : Configuration système requise | Microsoft Docs'
+title: 'Débogage ASP.NET : configuration système requise | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 63a94f9ae6c35ef304af334737a8f206da911afd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 78f947c7ab9fcc1031d457526240ecdd7e9119a3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63402715"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745804"
 ---
-# <a name="aspnet-debugging-system-requirements"></a>Débogage ASP.NET : Configuration système requise
+# <a name="aspnet-debugging-system-requirements"></a>Débogage ASP.NET : configuration requise
 Cette rubrique décrit les conditions de sécurité et les logiciels requis pour les scénarios de débogage de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] :
 
 - Débogage local, dans lequel [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] et l'application Web s'exécutent sur le même ordinateur. Il y a deux versions de ce scénario :
@@ -37,14 +37,14 @@ Cette rubrique décrit les conditions de sécurité et les logiciels requis pour
 ## <a name="security-requirements"></a>Conditions de sécurité
  Pour le débogage distant, les ordinateurs locaux et distants doivent être sur une installation de domaine ou une installation de groupe de travail.
 
- Pour déboguer le [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] le processus de travail (hébergé par un Pool d’applications), vous devez avoir l’autorisation pour déboguer ce processus. Par défaut, [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] applications avant IIS 6.0 s’exécutent en tant que le **ASPNET** utilisateur. Dans IIS 6.0 et IIS 7.0, le **SERVICE réseau** compte est la valeur par défaut. Si le processus de traitement s'exécute en tant qu' **ASPNET**ou que **SERVICE RÉSEAU**, vous devez disposer de droits d'administrateur pour le déboguer.
+ Pour déboguer le processus de travail [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] (hébergé par un pool d’applications), vous devez être autorisé à déboguer ce processus. Par défaut, [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] applications antérieures à IIS 6,0 s’exécutent en tant qu’utilisateur **ASPNET** . Dans IIS 6,0 et IIS 7,0, le compte de **service réseau** est le compte par défaut. Si le processus de traitement s'exécute en tant qu' **ASPNET**ou que **SERVICE RÉSEAU**, vous devez disposer de droits d'administrateur pour le déboguer.
 
  > [!IMPORTANT]
- > À compter de Windows Server 2008 R2, nous vous recommandons d’utiliser le [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities) comme identité pour chaque pool d’applications.
+ > À compter de Windows Server 2008 R2, nous vous recommandons d’utiliser [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities) comme identité pour chaque pool d’applications.
 
- Le nom du processus de traitement [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] varie en fonction du scénario de débogage et de la version d'IIS. Pour plus d'informations, voir [Procédure : rechercher le nom du processus ASP.NET](../debugger/how-to-find-the-name-of-the-aspnet-process.md).
+ Le nom du processus de traitement [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] varie en fonction du scénario de débogage et de la version d'IIS. Pour plus d'informations, consultez [How to: Find the Name of the ASP.NET Process](../debugger/how-to-find-the-name-of-the-aspnet-process.md).
 
- Vous pouvez changer le compte d'utilisateur sous lequel s'exécute le processus de travail [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] en modifiant le fichier machine.config sur le serveur qui exécute IIS. La meilleure façon de procéder consiste à utiliser le **Gestionnaire IIS**. Pour plus d'informations, voir [Procédure : exécuter le processus Worker sous un compte d’utilisateur](../debugger/how-to-run-the-worker-process-under-a-user-account.md).
+ Vous pouvez changer le compte d'utilisateur sous lequel s'exécute le processus de travail [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] en modifiant le fichier machine.config sur le serveur qui exécute IIS. La meilleure façon de procéder consiste à utiliser le **Gestionnaire IIS**. Pour plus d’informations, consultez [Comment : exécuter le processus de travail sous un compte d’utilisateur](../debugger/how-to-run-the-worker-process-under-a-user-account.md).
 
  Si vous modifiez le processus de traitement [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] pour qu'il s'exécute sous votre propre compte d'utilisateur, vous n'avez pas besoin d'être administrateur sur le serveur qui exécute IIS.
 

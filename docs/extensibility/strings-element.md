@@ -1,5 +1,5 @@
 ---
-title: Chaînes d’élément | Microsoft Docs
+title: Élément Strings | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,17 +11,17 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 277cd2b8e40dfbfd1e222975f41bd4ac95c70c62
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7c91a8ea07daee77855017d641a569a892612c3e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331724"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72719442"
 ---
 # <a name="strings-element"></a>Élément Strings
-L’élément de chaînes doit contenir au moins un **ButtonText** élément enfant. Tous les autres éléments enfants sont facultatifs. Des caractères XML non valide, tel que '&' et ' <' doivent être codés en tant qu’entités ('&amp;« et »&lt;» et ainsi de suite).
+L’élément Strings doit contenir au moins un élément enfant **ButtonText** . Tous les autres éléments enfants sont facultatifs. Les caractères XML non valides tels que' & 'et' < 'doivent être codés en tant qu’entités ('&amp;'et'&lt;', etc.).
 
- Un « et commercial » dans la chaîne de texte spécifie le raccourci clavier de la commande.
+ Une esperluette dans la chaîne de texte spécifie le raccourci clavier de la commande.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -39,26 +39,26 @@ L’élément de chaînes doit contenir au moins un **ButtonText** élément enf
 
 |Attribut|Description|
 |---------------|-----------------|
-|language|Facultatif. Language=".".|
+|language|Optionnel. Language = ".".|
 
 ### <a name="child-elements"></a>Éléments enfants
 
 |Élément|Description|
 |-------------|-----------------|
-|ButtonText|Ce champ et les cinq champs de texte suivantes dans une définition de commande vous permettent de spécifier le texte qui apparaît dans différents menus. Par défaut, le `ButtonText` champ s’affiche dans les contrôleurs de menu. Le `ButtonText` champ devient également la valeur par défaut si les autres champs de texte sont vides. Le `ButtonText` champ ne peut pas être vide, même si les autres champs de texte sont spécifiées.|
-|ToolTipText|Le `ToolTipText` champ spécifie le texte qui apparaît dans l’info-bulle pour un élément de menu.<br /><br /> Si le `ToolTipText` champ est vide, le `ButtonText` champ est utilisé.|
-|MenuText|Le `MenuText` champ spécifie le texte qui est affiché pour une commande si elle est dans le menu principal, une barre d’outils dans un menu contextuel, ou dans un sous-menu. Si le `MenuText` champ est vide, l’environnement de développement intégré (IDE) utilise le `ButtonText` champ. Le `MenuText` champ peut également être utilisé pour la localisation.<br /><br /> Pour les menus contextuels, la `MenuText` champ est le nom qui s’affiche dans la barre d’outils de Menus contextuels, qui permet la personnalisation des menus contextuels dans l’IDE. Par conséquent, être spécifique dans ce que vous nommez votre menu contextuel ; par exemple, utilisez « Menu contextuel Widget Package » au lieu de « Raccourci ».<br /><br /> Si le `MenuText` champ n’est pas spécifié, le `ButtonText` champ est utilisé.|
-|CommandName|Le `CommandName` champ spécifie le texte qui apparaît dans la catégorie de clavier dans le **commandes** onglet dans le **personnaliser** boîte de dialogue (disponible en cliquant sur **personnaliser**sur le **outils** menu).|
-|CanonicalName|L’anglais `CanonicalName` champ spécifie le nom de la commande dans le texte en anglais qui peut être entré dans le **commande** fenêtre pour exécuter l’élément de menu. L’IDE supprime tous les caractères qui ne sont pas des lettres, chiffres, des traits de soulignement ou des points incorporés. Ce texte est ensuite concaténé à le `ButtonText` champ pour définir la commande. Par exemple, **nouveau projet** sur le **fichier** menu devient la commande, File.NewProject.<br /><br /> Si l’anglais `CanonicalName` champ n’est pas spécifié, l’IDE utilise le `ButtonText` champ et les bandes tous à l’exception des lettres, des chiffres, des traits de soulignement et des points incorporés. Par exemple, le texte du bouton « & définir des commandes... » devient DefineCommands, où le signe &, l’espace et les points de suspension sont supprimées.<br /><br /> Si le `TextChanges` indicateur est spécifié et le texte de la commande est modifié, la commande correspondante reconnue par le **commande** fenêtre ne change pas ; il reste de la forme canonique de la version d’origine `ButtonText` ou anglais `CanonicalName` champs.|
-|LocCanonicalName|Le `LocCanonicalName` champ se comporte comme l’anglais `CanonicalName` champ mais permet de texte de commande localisée à être spécifié. Les deux champs canoniques peuvent être spécifiés. Étant donné que l’IDE analyse simplement le texte entré dans le **commande** fenêtre et l’associe à une commande, l’anglais et non anglaises texte peut être associé à la même commande.|
+|ButtonText|Ce champ et les cinq champs de texte suivants dans une définition de commande vous permettent de spécifier le texte qui apparaît dans différents menus. Par défaut, le champ `ButtonText` s’affiche dans les contrôleurs de menu. Le champ `ButtonText` devient également la valeur par défaut si les autres champs de texte sont vides. Le champ `ButtonText` ne peut pas être vide, même si les autres champs de texte sont spécifiés.|
+|ToolTipText|Le champ `ToolTipText` spécifie le texte qui apparaît dans l’info-bulle pour un élément de menu.<br /><br /> Si le champ `ToolTipText` est vide, le champ `ButtonText` est utilisé.|
+|MenuText|Le champ `MenuText` spécifie le texte affiché pour une commande s’il se trouve dans le menu principal, dans une barre d’outils, dans un menu contextuel ou dans un sous-menu. Si le champ `MenuText` est vide, l’environnement de développement intégré (IDE) utilise le champ `ButtonText`. Le champ `MenuText` peut également être utilisé pour la localisation.<br /><br /> Pour les menus contextuels, le champ `MenuText` est le nom qui s’affiche dans la barre d’outils menus contextuels, qui permet la personnalisation des menus contextuels dans l’IDE. Par conséquent, soyez précis dans le nom de votre menu contextuel. par exemple, utilisez « menu contextuel de package de widgets » au lieu de « raccourci ».<br /><br /> Si le champ `MenuText` n’est pas spécifié, le champ `ButtonText` est utilisé.|
+|CommandName|Le champ `CommandName` spécifie le texte qui apparaît dans la catégorie clavier sous l’onglet **commandes** de la boîte de dialogue **personnaliser** (disponible en cliquant sur **personnaliser** dans le menu **Outils** ).|
+|CanonicalName|Le champ `CanonicalName` anglais spécifie le nom de la commande dans le texte anglais qui peut être entré dans la fenêtre de **commande** pour exécuter l’élément de menu. L’IDE supprime tous les caractères qui ne sont pas des lettres, des chiffres, des traits de soulignement ou des points incorporés. Ce texte est ensuite concaténé dans le champ `ButtonText` pour définir la commande. Par exemple, **nouveau projet** dans le menu **fichier** devient la commande, file. NewProject.<br /><br /> Si le champ `CanonicalName` anglais n’est pas spécifié, l’IDE utilise le champ `ButtonText` et supprime tous les caractères sauf les lettres, les chiffres, les traits de soulignement et les points incorporés. Par exemple, le texte du bouton « & définir des commandes... » devient DefineCommands, où l’esperluette, l’espace et les points de suspension sont supprimés.<br /><br /> Si l’indicateur de `TextChanges` est spécifié et que le texte de la commande est modifié, la commande correspondante reconnue par la fenêtre de **commande** ne change pas. Il reste la forme canonique des champs d’origine du `ButtonText` ou de l’anglais `CanonicalName`.|
+|LocCanonicalName|Le champ `LocCanonicalName` se comporte de la même façon que le champ English `CanonicalName`, mais permet de spécifier le texte de commande localisé. Les deux champs canoniques peuvent être spécifiés. Étant donné que l’IDE analyse simplement le texte entré dans la fenêtre **commande** et l’associe à une commande, il est possible d’associer à la fois l’anglais et du texte non anglais à la même commande.|
 
 ### <a name="parent-elements"></a>Éléments parents
 
 |Élément|Description|
 |-------------|-----------------|
-|[Élément Button](../extensibility/button-element.md)|Définit un élément de l’utilisateur peut interagir avec.|
+|[Élément Button](../extensibility/button-element.md)|Définit un élément avec lequel l’utilisateur peut interagir.|
 |[Élément Menu](../extensibility/menu-element.md)|Définit un élément de menu unique.|
-|[Élément Combo](../extensibility/combo-element.md)|Définit des commandes qui s’affichent dans une zone de liste déroulante.|
+|[Élément Combo](../extensibility/combo-element.md)|Définit les commandes qui s’affichent dans une zone de liste déroulante.|
 
 ## <a name="see-also"></a>Voir aussi
 - [Fichiers Visual Studio Command Table (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ea2b1ea99eb2801259d58a12c359e9fffd887a64
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9252826470decd3cddfabdcc2a00e22037d5de5c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830434"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743908"
 ---
 # <a name="idiaenumsymbolsskip"></a>IDiaEnumSymbols::Skip
 Ignore un nombre spécifié de symboles dans une séquence d’énumération.
@@ -33,10 +33,10 @@ HRESULT Skip ( 
 #### <a name="parameters"></a>Paramètres
  celt
 
-[in] Le nombre de symboles dans la séquence d’énumération à ignorer.
+dans Nombre de symboles dans la séquence d’énumération à ignorer.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` s’il n’existe plus aucun symbole à ignorer.
+ En cas de réussite, retourne `S_OK`; Sinon, retourne `S_FALSE` s’il n’y a plus de symboles à ignorer.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

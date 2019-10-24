@@ -1,5 +1,5 @@
 ---
-title: Classes Visual C++ dans le Concepteur de classes
+title: C++Classes dans Concepteur de classes
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,14 +12,14 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 596d7a41b9f63179a0469840d948430ed0294b56
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 84fc10a3f62ea4bef82a466b2d76c46e73eb7e6e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647635"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748927"
 ---
-# <a name="visual-c-classes-in-class-designer"></a>Classes Visual C++ dans le Concepteur de classes
+# <a name="c-classes-in-class-designer"></a>C++classes dans Concepteur de classes
 
 Le **Concepteur de classes** prend en charge les classes C++ et visualise les classes C++ natives de la même façon que les formes de classe Visual Basic et C#, à la différence près que les classes C++ peuvent avoir plusieurs relations d’héritage. Vous pouvez développer la forme de classe pour afficher plus de champs et de méthodes dans la classe, ou la réduire pour économiser l’espace.
 
@@ -174,7 +174,7 @@ Le tableau suivant présente des exemples de connexion de classes spécialisées
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Utilisation du code Visual C++](working-with-visual-cpp-code.md)
+- [Utilisation du C++ code](working-with-visual-cpp-code.md)
 - [Classes et structs](/cpp/cpp/classes-and-structs-cpp)
 - [Types de classes anonymes](/cpp/cpp/anonymous-class-types)
 - [Héritage multiple](https://msdn.microsoft.com/library/6td5yws2.aspx)

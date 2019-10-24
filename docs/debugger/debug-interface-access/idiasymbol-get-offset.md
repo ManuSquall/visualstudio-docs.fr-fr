@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0016ca267b3eaf2535896aab1ee58a470a192c9a
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: feb7620e507c5e57cf025211e42d541440af22f3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64786711"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739578"
 ---
-# <a name="idiasymbolgetoffset"></a>IDiaSymbol::get_offset
-Récupère le décalage de l’emplacement du symbole. Quand utiliser le [LocationType (énumération)](../../debugger/debug-interface-access/locationtype.md) est `LocIsRegRel` ou `LocIsBitField`.
+# <a name="idiasymbolget_offset"></a>IDiaSymbol::get_offset
+Récupère le décalage de l’emplacement du symbole. À utiliser lorsque l' [énumération LocationType (](../../debugger/debug-interface-access/locationtype.md) est `LocIsRegRel` ou `LocIsBitField`.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,23 +33,23 @@ HRESULT get_offset ( 
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-[out] Retourne le décalage en octets de l’emplacement du symbole.
+à Retourne le décalage en octets de l’emplacement du symbole.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
-> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> Une valeur de retour de `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
 ## <a name="remarks"></a>Notes
- Le décalage est d’un point connu précédemment déterminé. Par exemple, l’offset pour un `LocIsBitField` type d’emplacement est généralement à partir du début de la classe conteneur.
+ Le décalage provient d’un point connu précédemment déterminé. Par exemple, le décalage d’un type d’emplacement `LocIsBitField` est généralement depuis le début de la classe conteneur.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>spécifications
 
-|Prérequis|Description|
+|Exigence|Description|
 |-----------------|-----------------|
 |En-tête :|dia2.h|
-|Version :|DIA SDK v7.0|
+|Version :|DIA SDK v 7.0|
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

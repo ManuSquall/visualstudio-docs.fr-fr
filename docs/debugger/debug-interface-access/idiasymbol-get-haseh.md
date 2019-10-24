@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f861d5cf8be8fedec6d32158aa735b8dfd826587
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 1f08cd539d3042ff0715a5c84445e4cc40214a41
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64786337"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740536"
 ---
-# <a name="idiasymbolgethaseh"></a>IDiaSymbol::get_hasEH
-Récupère un indicateur qui spécifie si la fonction contient toute la gestion des exceptions style C++ non managée (par exemple, un bloc try/catch).
+# <a name="idiasymbolget_haseh"></a>IDiaSymbol::get_hasEH
+Récupère un indicateur qui spécifie si la fonction contient une gestion des exceptions C++de style non managée (par exemple, un bloc try/catch).
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,20 +33,20 @@ HRESULT get_hasEH(
 #### <a name="parameters"></a>Paramètres
  `pFlag`
 
-[out] Retourne `TRUE` si la fonction a des C++-exception de style gestion ; sinon, retourne `FALSE`.
+à Retourne `TRUE` si la fonction a une C++gestion des exceptions de style quelconque ; Sinon, retourne `FALSE`.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
-> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> Une valeur de retour de `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>spécifications
 
-|Prérequis|Description|
+|Exigence|Description|
 |-----------------|-----------------|
 |En-tête :|dia2.h|
-|Version :|DIA SDK 8.0|
+|Version :|DIA SDK v 8.0|
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

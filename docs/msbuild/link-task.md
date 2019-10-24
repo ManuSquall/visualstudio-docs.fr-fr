@@ -22,23 +22,23 @@ dev_langs:
 - C++
 - jsharp
 helpviewer_keywords:
-- MSBuild (Visual C++), Link task
-- Link task (MSBuild (Visual C++))
+- MSBuild (C++), Link task
+- Link task (MSBuild (C++))
 ms.assetid: 0a61f168-3113-4fa7-83a3-d9142e2a33f8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 432ef1231f551d265e06242e2ab4ddc58a0fe5ac
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: f2241daa50a35a9714fd66b10966298279bc37fe
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825408"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747291"
 ---
 # <a name="link-task"></a>Lier la tâche
-Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil de l’éditeur de liens lie des bibliothèques et des fichiers objets COFF (Common Object File Format) pour créer un fichier exécutable ( *.exe*) ou une bibliothèque de liens dynamiques (DLL). Pour plus d’informations, consultez [Options de l’éditeur de liens](/cpp/build/reference/linker-options).
+Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur de liens lie des bibliothèques et des fichiers objets COFF (Common Object File Format) pour créer un fichier exécutable ( *.exe*) ou une bibliothèque de liens dynamiques (DLL). Pour plus d’informations, consultez [Options de l’éditeur de liens](/cpp/build/reference/linker-options).
 
 ## <a name="parameters"></a>Paramètres
  Le tableau ci-dessous décrit les paramètres de la tâche **Link**. La plupart des paramètres de tâche, et quelques ensembles de paramètres, correspondent à une option de ligne de commande.
@@ -621,7 +621,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
 - **Profile**
 
-  Paramètre **booléen** facultatif.
+  Paramètre **Boolean** facultatif.
 
   Si `true`, génère un fichier de sortie utilisable avec le profileur **Outils d’analyse des performances**.
 

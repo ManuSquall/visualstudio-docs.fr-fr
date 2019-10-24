@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e026b837205a8bf62f5d33dc2f5449d40cc485e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5f0041ef4d83003d1b42e0c95b1412262d08458c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828625"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743159"
 ---
-# <a name="idialinenumbergetsourcefile"></a>IDiaLineNumber::get_sourceFile
+# <a name="idialinenumberget_sourcefile"></a>IDiaLineNumber::get_sourceFile
 Récupère une référence au fichier source.
 
 ## <a name="syntax"></a>Syntaxe
@@ -33,10 +33,10 @@ HRESULT get_sourceFile ( 
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-[out] Retourne un [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) objet qui représente le fichier source.
+à Retourne un objet [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) qui représente le fichier source.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Étape dans les Services WCF | Microsoft Docs'
+title: 'Comment : effectuer un pas à pas détaillé dans les services WCF | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,17 +16,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fe025ed3050f25ec53175c543adfaf7cb48c506
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c405b4fcca91f8deddce4d65c8a4155b90af49e0
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62906472"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72732599"
 ---
-# <a name="how-to-step-into-wcf-services"></a>Procédure : Effectuer un pas à pas détaillé dans les services WCF
+# <a name="how-to-step-into-wcf-services"></a>Comment : effectuer un pas à pas détaillé dans les services WCF
 Dans [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], vous pouvez effectuer un pas à pas détaillé dans un service WCF. Si le service WCF est dans la même solution [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que le client, vous pouvez atteindre des points d'arrêt à l'intérieur du service WCF.
 
- Pour que le pas à pas détaillé fonctionne, le débogage doit être activé dans le fichier app.config ou web.config. Pour plus d’informations sur la façon d’activer le débogage et pour connaître les limitations pas à pas détaillé dans les services WCF, consultez [Limitations du débogage WCF](../debugger/limitations-on-wcf-debugging.md).
+ Pour que le pas à pas détaillé fonctionne, le débogage doit être activé dans le fichier app.config ou web.config. Pour plus d’informations sur l’activation du débogage et sur les limitations relatives au pas à pas détaillé dans les services WCF, consultez [limitations du débogage WCF](../debugger/limitations-on-wcf-debugging.md).
 
 ### <a name="to-step-into-a-wcf-service"></a>Pour effectuer un pas à pas détaillé dans un service WCF
 
@@ -34,7 +34,7 @@ Dans [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], vous
 
 2. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le projet de client WCF, puis cliquez sur **Définir comme projet de démarrage**.
 
-3. Activez le débogage dans le fichier app.config ou web.config. Pour plus d’informations, consultez [Limitations du débogage WCF](../debugger/limitations-on-wcf-debugging.md).
+3. Activez le débogage dans le fichier app.config ou web.config. Pour plus d’informations, consultez [limitations du débogage WCF](../debugger/limitations-on-wcf-debugging.md).
 
 4. Dans le projet client, définissez un point d'arrêt à l'emplacement où vous souhaitez démarrer le pas à pas détaillé. En règle générale, cet emplacement précède directement l'appel de service WCF.
 

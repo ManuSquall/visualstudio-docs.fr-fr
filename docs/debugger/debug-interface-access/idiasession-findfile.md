@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 729b3c323ce2128b18af516ecbffb7b5157f0274
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d9751127007b4e7823cf6d2ae35ed2fe80cb83b8
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839366"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742281"
 ---
 # <a name="idiasessionfindfile"></a>IDiaSession::findFile
-Récupère les fichiers sources par compiland et le nom.
+Récupère les fichiers sources par compiland et nom.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -36,22 +36,22 @@ HRESULT findFile ( 
 #### <a name="parameters"></a>Paramètres
  `pCompiland`
 
-[in] Un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objet représentant le compiland à être utilisé comme un contexte pour la recherche. Définissez ce paramètre sur `NULL` pour rechercher les fichiers sources dans tous les compilands.
+dans Objet [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) qui représente le compiland à utiliser comme contexte pour la recherche. Définissez ce paramètre sur `NULL` pour rechercher les fichiers sources dans toutes les compilands.
 
  `name`
 
-[in] Spécifie le nom du fichier source à récupérer. Définissez ce paramètre sur `NULL` pour tous les fichiers doivent être extraites de sources.
+dans Spécifie le nom du fichier source à récupérer. Définissez ce paramètre sur `NULL` pour tous les fichiers sources à récupérer.
 
  `option`
 
-[in] Spécifie les options de comparaison appliquées à la recherche de nom. Les valeurs de la [NameSearchOptions (énumération)](../../debugger/debug-interface-access/namesearchoptions.md) énumération peut être utilisée seul ou combiné.
+dans Spécifie les options de comparaison appliquées à la recherche de nom. Les valeurs de l’énumération d' [énumération NameSearchOptions](../../debugger/debug-interface-access/namesearchoptions.md) peuvent être utilisées seules ou en combinaison.
 
  `ppResult`
 
-[out] Retourne un [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md) de récupérer l’objet qui contient une liste des fichiers sources.
+à Retourne un objet [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md) qui contient une liste des fichiers sources récupérés.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK`; Sinon, retourne un code d’erreur.
 
 ## <a name="example"></a>Exemple
 

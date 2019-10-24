@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 468e9865c1648a4bc19f107f7e201d678b672177
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: f452aa01f29d25ad1674c6bc2f5494a745733793
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64858196"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741060"
 ---
-# <a name="idiasymbolgetaddresstaken"></a>IDiaSymbol::get_addressTaken
-Récupère un indicateur qui indique si un autre symbole référence les adresses de ce symbole.
+# <a name="idiasymbolget_addresstaken"></a>IDiaSymbol::get_addressTaken
+Récupère un indicateur qui indique si un autre symbole fait référence à l’adresse de ce symbole.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,28 +33,28 @@ HRESULT get_addressTaken ( 
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-[out] Retourne `TRUE` si un autre symbole fait référence à cette adresse ; sinon, retourne `FALSE`.
+à Retourne `TRUE` si un autre symbole fait référence à cette adresse ; Sinon, retourne `FALSE`.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
-> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> Une valeur de retour de `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
 ## <a name="example"></a>Exemple
- Dans l’exemple suivant, `B` références `A`. Par conséquent, de symboles `A`de `get_addressTaken` retourne de la méthode `TRUE`.
+ Dans l’exemple suivant, `B` référence `A`. Par conséquent, la méthode de `get_addressTaken` de `A`de symboles retourne `TRUE`.
 
 ```C++
 int A  = 0;
 int* B = &A;
 ```
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>spécifications
 
-|Prérequis|Description|
+|Exigence|Description|
 |-----------------|-----------------|
 |En-tête :|dia2.h|
-|Version :|DIA SDK v7.0|
+|Version :|DIA SDK v 7.0|
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,5 +1,5 @@
 ---
-title: Modèle pour les Packages de contrôle de code Source | Microsoft Docs
+title: Modèle pour les packages de contrôle de code source | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,28 +10,28 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65f212496d152236579e63ba037fe351a4dd3370
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1a9ae5f2704d625da2212e92626c33fb384ebbc5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349223"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72726566"
 ---
 # <a name="model-for-source-control-packages"></a>Modèle des packages de contrôle de code source
-Le modèle suivant représente un exemple d’une implémentation de contrôle de code source. Dans le modèle, vous voyez les interfaces que vous devez implémenter et les services de l’environnement que vous devez appeler. Comme tous les services, vous appelez réellement les méthodes d’une interface particulière que vous obtenez par le biais du service. Les noms des classes sont identifiées pour le rendre plus facile de voir comment contrôle de code source est effectué.
+Le modèle suivant représente un exemple d’implémentation de contrôle de code source. Dans le modèle, vous voyez les interfaces que vous devez implémenter et les services d’environnement que vous devez appeler. Comme tous les services, vous appelez en fait les méthodes d’une interface particulière que vous obtenez par le biais du service. Les noms des classes sont identifiés pour vous permettre de voir plus facilement comment le contrôle de code source est exécuté.
 
- ![SCC&#95;TALLATION exemples](../../extensibility/internals/media/scc_tup.gif "SCC_TUP") exemple de projet de contrôle Source
+ ![Exemples&#95;de tallation SCC](../../extensibility/internals/media/scc_tup.gif "SCC_TUP") Exemple de projet de contrôle de code source
 
 ## <a name="interfaces"></a>Interfaces
- Vous pouvez implémenter le contrôle de code source pour vos nouveaux types de projet dans Visual Studio à l’aide de la liste des interfaces indiqué dans le tableau suivant.
+ Vous pouvez implémenter le contrôle de code source pour vos nouveaux types de projet dans Visual Studio à l’aide de la liste des interfaces répertoriées dans le tableau suivant.
 
 |Interface|Utilisez|
 |---------------|---------|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>|Appelé par les projets et les éditeurs avant leur enregistrement ou les fichiers de modification (« Dirty »). Cette interface est accessible à l’aide de la <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> service.|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>|Appelé par les projets pour demander l’autorisation d’ajouter, supprimer ou renommer un fichier ou répertoire. Cette interface est également appelée par les projets pour informer l’environnement lorsqu’un ajout approuvé, supprimer ou renommer l’action est terminée. Il est accessible à l’aide de la <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackProjectDocuments> service.|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>|Implémentée par toute entité qui inscrit pour être averti lorsque des projets à ajoutent, renommer ou supprimer un fichier ou répertoire. Pour vous inscrire pour la notification d’événement, appelez <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2.AdviseTrackProjectDocumentsEvents%2A>.|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>|Appelé par les projets à inscrire avec le package de contrôle de code source et pour obtenir des informations sur l’état de contrôle de code source. Cette interface est accessible à l’aide de la <xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager> service.|
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>|Implémenté par le projet pour répondre aux demandes de contrôle de code source pour plus d’informations sur les fichiers et pour obtenir la source des paramètres de contrôle requis pour le fichier projet.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>|Appelée par les projets et les éditeurs avant d’enregistrer ou de modifier les fichiers (modifiés). Cette interface est accessible à l’aide du service <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave>.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>|Appelée par les projets pour demander l’autorisation d’ajouter, de supprimer ou de renommer un fichier ou un répertoire. Cette interface est également appelée par les projets pour informer l’environnement lorsqu’une action d’ajout, de suppression ou de changement de nom approuvée est terminée. Elle est accessible à l’aide du service <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackProjectDocuments>.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>|Implémenté par une entité qui s’inscrit pour être averti lorsque des projets ajoutent, renomment ou suppriment un fichier ou un répertoire. Pour vous inscrire à la notification d’événement, appelez <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2.AdviseTrackProjectDocumentsEvents%2A>.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2>|Appelé par les projets à inscrire auprès du package de contrôle de code source et pour obtenir des informations sur l’état du contrôle de code source. Cette interface est accessible à l’aide du service <xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager>.|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProject2>|Implémenté par le projet pour répondre aux demandes de contrôle de code source pour les informations sur les fichiers et pour obtenir les paramètres de contrôle de code source requis pour le fichier projet.|
 
 ## <a name="see-also"></a>Voir aussi
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>
