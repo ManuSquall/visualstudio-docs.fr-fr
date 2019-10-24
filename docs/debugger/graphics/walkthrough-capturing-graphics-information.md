@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Capture d’informations graphiques | Microsoft Docs'
+title: 'Procédure pas à pas : capture d’informations graphiques | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 48f12f6e-57b4-48ec-a145-89fa71a42424
@@ -8,14 +8,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd7136367bfb883cfc5d962a1373fec738413fc6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aab86d42cd158ad64ebb16497b8d2d9f5a7002df
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62897662"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72734724"
 ---
-# <a name="walkthrough-capturing-graphics-information"></a>Procédure pas à pas : Capture d'informations graphiques
+# <a name="walkthrough-capturing-graphics-information"></a>Procédure pas à pas : capture d'informations Graphics
 Cette procédure pas à pas montre comment utiliser Graphics Diagnostics dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pour capturer manuellement les informations graphiques d’une application Direct3D.
 
  Cette procédure pas à pas décrit les tâches suivantes :
@@ -45,9 +45,9 @@ Cette procédure pas à pas montre comment utiliser Graphics Diagnostics dans [!
 
 #### <a name="to-capture-graphics-information"></a>Pour capturer des informations graphiques
 
-- Dans la barre d’outils Graphics Diagnostics, choisissez le bouton **Capturer** . ![Icône de bouton de capture de Graphics](media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics")
+- Dans la barre d’outils Graphics Diagnostics, choisissez le bouton **Capturer** . ![Icône de bouton de capture graphique](media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics")
 
-   - ou -
+   ou
 
    Quand l’application a le focus, appuyez sur **Impr. écran**.
 

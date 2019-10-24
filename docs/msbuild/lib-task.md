@@ -17,20 +17,20 @@ dev_langs:
 - jsharp
 - C++
 helpviewer_keywords:
-- MSBuild (Visual C++), LIB task
-- LIB task (MSBuild (Visual C++))
+- MSBuild (C++), LIB task
+- LIB task (MSBuild (C++))
 ms.assetid: e062c7f9-cc69-4a83-9361-1bb5355e5fe8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c9d80da9fea46ddcc2afe2f935fa66a892d90c1
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: aa43cef2176d9b2197e16b46a50e153da135502e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254535"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748091"
 ---
 # <a name="lib-task"></a>LIB (tâche)
 Inclut dans un wrapper l’outil Gestionnaire de bibliothèques 32 bits de Microsoft, *lib.exe*. Le gestionnaire de bibliothèques crée et gère une bibliothèque de fichiers objets COFF (Common Object File Format). Il peut également créer des fichiers d'exportation et des bibliothèques d'importation pour référencer des définitions exportées. Pour plus d’informations, consultez [Informations de référence sur LIB](/cpp/build/reference/lib-reference) et [Exécution de LIB](/cpp/build/reference/running-lib).
@@ -53,7 +53,7 @@ Inclut dans un wrapper l’outil Gestionnaire de bibliothèques 32 bits de Micro
 |**LinkTimeCodeGeneration**|Paramètre `Boolean` facultatif.<br /><br /> Si la valeur est `true`, spécifie la génération du code durant l'édition de liens.<br /><br /> Ce paramètre correspond à l’option **/LCTG** de *lib.exe*.|
 |**MinimumRequiredVersion**|Paramètre **String** facultatif.<br /><br /> Spécifie la version minimale requise du sous-système. Spécifiez la liste, délimitée par des virgules, de nombres décimaux compris entre 0 et 65535.|
 |**ModuleDefinitionFile**|Paramètre **String** facultatif.<br /><br /> Spécifie le nom du fichier de définition de module ( *.def*).<br /><br /> Ce paramètre correspond à l’option **/DEF** de *lib.exe* qui prend un argument `filename`.|
-|**Name**|Paramètre **String** facultatif.<br /><br /> Lors de la génération d'une bibliothèque d'importation, spécifie le nom de la DLL pour laquelle la bibliothèque d'importation est générée.<br /><br /> Ce paramètre correspond à l’option **/NAME** de *lib.exe* qui prend un argument `filename`.|
+|**Nom**|Paramètre **String** facultatif.<br /><br /> Lors de la génération d'une bibliothèque d'importation, spécifie le nom de la DLL pour laquelle la bibliothèque d'importation est générée.<br /><br /> Ce paramètre correspond à l’option **/NAME** de *lib.exe* qui prend un argument `filename`.|
 |**OutputFile**|Paramètre **String** facultatif.<br /><br /> Remplace le nom et l’emplacement par défaut du programme que *lib.exe* crée.<br /><br /> Ce paramètre correspond à l’option **/OUT** de *lib.exe* qui prend un argument `filename`.|
 |**RemoveObjects**|Paramètre **String[]** facultatif.<br /><br /> Omet l'objet spécifié de la bibliothèque de sortie. *Lib.exe* crée une bibliothèque de sortie en combinant tous les objets (qu’ils se trouvent dans des fichiers objets ou des bibliothèques), puis en supprimant tous les objets spécifiés par cette option.<br /><br /> Ce paramètre correspond à l’option **/REMOVE** de*lib.exe* qui prend un argument `membername`.|
 |**Sources**|Paramètre `ITaskItem[]` requis.<br /><br /> Spécifie la liste des fichiers sources séparés par des espaces.|

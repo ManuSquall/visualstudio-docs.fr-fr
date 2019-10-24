@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a40cc8afdb60ad8ad76a0d6ee8e502a6a0b720b7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 496f6b569b3ac02c625ddf18406b78fdb1687be2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832537"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742230"
 ---
 # <a name="idiasessionfindinlineelinesbyaddr"></a>IDiaSession::findInlineeLinesByAddr
-Récupère une énumération qui permet au client d’effectuer une itération dans les informations de numéro de ligne de toutes les fonctions qui sont inline, directement ou indirectement, par le symbole parent spécifié et est contenue dans la plage d’adresses spécifiée.
+Récupère une énumération qui permet à un client d’itérer au sein des informations de numéro de ligne de toutes les fonctions qui sont Inline, directement ou indirectement, par le symbole parent spécifié et qui sont contenues dans la plage d’adresses spécifiée.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -32,26 +32,26 @@ HRESULT findInlineeLinesByAddr ( 
 #### <a name="parameters"></a>Paramètres
  `parent`
 
-[in] Un `IDiaSymbol` objet représentant le parent.
+dans Objet `IDiaSymbol` représentant le parent.
 
  `isect`
 
-[in] Spécifie le composant de la section de l’adresse.
+dans Spécifie le composant de section de l’adresse.
 
  `offset`
 
-[in] Spécifie le composant de décalage de l’adresse.
+dans Spécifie le composant de décalage de l’adresse.
 
  `length`
 
-[in] Spécifie la plage d’adresses, en octets, pour couvrir cette requête.
+dans Spécifie la plage d’adresses, en nombre d’octets, à couvrir avec cette requête.
 
  `ppResult`
 
-[out] Contient un `IDiaEnumLineNumbers` objet qui contient la liste des numéros de ligne qui sont récupérés.
+à Contient un objet `IDiaEnumLineNumbers` qui contient la liste des numéros de ligne qui sont récupérés.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne un code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

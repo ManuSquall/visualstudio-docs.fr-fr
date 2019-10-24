@@ -1,5 +1,5 @@
 ---
-title: Assertions dans du Code managé | Microsoft Docs
+title: Assertions dans du code managé | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a2637e801ba0d317e4c0abec8bd12197656dc844
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 529c19753d09d6335e5c9fc5e839cdb7cd0c118c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564136"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745778"
 ---
 # <a name="assertions-in-managed-code"></a>Assertions dans du code managé
 Une assertion, ou instruction `Assert`, teste une condition, que vous spécifiez en tant qu'argument à l'instruction `Assert`. Si la condition a la valeur true, aucune action ne se produit. Si la condition a la valeur false, l'assertion échoue. S'il est exécuté avec une version Debug, votre programme passe en mode arrêt.
@@ -48,7 +48,7 @@ Une assertion, ou instruction `Assert`, teste une condition, que vous spécifiez
  [Définition d’assertions dans les fichiers de configuration](#BKMK_Setting_assertions_in_configuration_files)
 
 ## <a name="BKMK_Asserts_in_the_System_Diagnostics_Namespace"></a> Assertions dans l’espace de noms System.Diagnostics
- En Visual Basic et Visual C#, vous pouvez utiliser la méthode `Assert` de <xref:System.Diagnostics.Debug> ou <xref:System.Diagnostics.Trace>, qui est dans l'espace de noms <xref:System.Diagnostics>. Les méthodes de la classe <xref:System.Diagnostics.Debug> ne sont pas incluses dans une version Release de votre programme ; par conséquent, elles n’augmentent pas la taille ou ne réduisent pas la vitesse de votre code de version Release.
+ En Visual Basic et Visual C#, vous pouvez utiliser la méthode `Assert` de <xref:System.Diagnostics.Debug> ou <xref:System.Diagnostics.Trace>, qui est dans l'espace de noms <xref:System.Diagnostics>. Les méthodes de la classe <xref:System.Diagnostics.Debug> ne sont pas incluses dans une version Release de votre programme ; par conséquent, elles n'augmentent pas la taille ou ne réduisent pas la vitesse de votre code de version Release.
 
  C++ ne prend pas en charge les méthodes de classe <xref:System.Diagnostics.Debug>. Vous pouvez obtenir le même effet en utilisant la classe <xref:System.Diagnostics.Trace> avec la compilation conditionnelle, telle que `#ifdef DEBUG`... `#endif`.
 
@@ -154,7 +154,7 @@ Debug.Assert ( temp != 0 );
 
   Si vous avez besoin d’utiliser les méthodes Debug dans une version Release C# ou Visual Basic, vous devez définir le symbole DEBUG dans votre configuration Release.
 
-  C++ ne prend pas en charge les méthodes de classe <xref:System.Diagnostics.Debug>. Vous pouvez obtenir le même effet en utilisant la classe <xref:System.Diagnostics.Trace> avec la compilation conditionnelle, telle que `#ifdef DEBUG`... `#endif`. Vous pouvez définir ces symboles dans la boîte de dialogue **Pages de propriétés de \<Projet>**. Pour plus d’informations, consultez [Modification des paramètres de projet pour une configuration Debug Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md) ou [Modification des paramètres de projet pour une configuration Debug C ou C++](../debugger/project-settings-for-a-cpp-debug-configuration.md).
+  C++ ne prend pas en charge les méthodes de classe <xref:System.Diagnostics.Debug>. Vous pouvez obtenir le même effet en utilisant la classe <xref:System.Diagnostics.Trace> avec la compilation conditionnelle, telle que `#ifdef DEBUG`... `#endif`. Vous pouvez définir ces symboles dans la boîte de dialogue **Pages de propriétés de \<Projet>** . Pour plus d’informations, consultez [Modification des paramètres de projet pour une configuration Debug Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md) ou [Modification des paramètres de projet pour une configuration Debug C ou C++](../debugger/project-settings-for-a-cpp-debug-configuration.md).
 
 ## <a name="BKMK_Assert_arguments"></a> Arguments Assert
  <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> et <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> utilisent trois arguments au maximum. Le premier argument, qui est obligatoire, est la condition que vous souhaitez vérifier. Si vous appelez <xref:System.Diagnostics.Trace.Assert(System.Boolean)?displayProperty=fullName> ou <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=fullName> avec un seul argument, la méthode `Assert` vérifie la condition et, si le résultat est false, renvoie le contenu de la pile des appels dans la fenêtre **Sortie**. L'exemple suivant affiche <xref:System.Diagnostics.Trace.Assert(System.Boolean)?displayProperty=fullName> et <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=fullName> :

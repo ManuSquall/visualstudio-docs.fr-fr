@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f02545f1c19b57e46af302fbc0b2abaa7445612
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0fb684d0ff68e5ede6b0847ef9aeba1821ecafcc
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62555041"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745333"
 ---
-# <a name="cvcfllang"></a>CV_CFL_LANG
-Spécifie le langage de code source de l’application ou d’un module lié.
+# <a name="cv_cfl_lang"></a>CV_CFL_LANG
+Spécifie la langue du code source de l’application ou du module lié.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -47,45 +47,45 @@ typedef enum CV_CFL_LANG {
 ```
 
 ## <a name="elements"></a>Éléments
-Langue de l’Application de CV_CFL_C est C.
+La langue de l’application CV_CFL_C est C.
 
-Langue de l’Application de CV_CFL_CXX est C++.
+La langue de l' C++application CV_CFL_CXX est.
 
-Langue de l’Application de CV_CFL_FORTRAN est FORTRAN.
+La langue de l’application CV_CFL_FORTRAN est FORTRAN.
 
-Langue de l’Application de CV_CFL_MASM est Microsoft Macro Assembler.
+La langue de l’application CV_CFL_MASM est Microsoft Macro Assembler.
 
-Langue de l’Application de CV_CFL_PASCAL est Pascal.
+La langue de l’application CV_CFL_PASCAL est Pascal.
 
-Langue de l’Application de CV_CFL_BASIC est BASIC.
+La langue de l’application CV_CFL_BASIC est BASIC.
 
-Langue de l’Application de CV_CFL_COBOL est COBOL.
+La langue de l’application CV_CFL_COBOL est COBOL.
 
-Application de CV_CFL_LINK est un module généré par l’éditeur de liens.
+L’application CV_CFL_LINK est un module généré par l’éditeur de liens.
 
-Application de CV_CFL_CVTRES est un module de ressources converti avec l’outil CVTRES.
+L’application CV_CFL_CVTRES est un module de ressources converti à l’aide de l’outil CVTRES.
 
-Application de CV_CFL_CVTPGD est un module de PGO optimisé généré avec CVTPGD outil.
+L’application CV_CFL_CVTPGD est un module PGO optimisé généré à l’aide de l’outil CVTPGD.
 
-Langue de l’Application de CV_CFL_CSHARP est C#.
+La langue de l' C#application CV_CFL_CSHARP est.
 
-Langue de l’Application de CV_CFL_VB est Visual Basic.
+La langue de l’application CV_CFL_VB est Visual Basic.
 
-Langue de l’Application de CV_CFL_ILASM est un assembly de langage intermédiaire (autrement dit, les assembly de Common Language Runtime (CLR)).
+Le langage d’application CV_CFL_ILASM est un assembly de langage intermédiaire (c’est-à-dire un assembly CLR (Common Language Runtime)).
 
-Langue de l’Application de CV_CFL_JAVA est Java.
+La langue de l’application CV_CFL_JAVA est Java.
 
-Langue de l’Application de CV_CFL_JSCRIPT est Jscript.
+Le langage d’application CV_CFL_JSCRIPT est JScript.
 
-Langue de l’Application de CV_CFL_MSIL est un inconnu langage MSIL (Microsoft Intermediate), éventuellement un résultat de l’utilisation de la [/LTCG (Link-time Code Generation)](/cpp/build/reference/ltcg-link-time-code-generation) basculer.
+Le langage d’application CV_CFL_MSIL est un langage MSIL (Microsoft Intermediate Language) inconnu, peut-être dû à l’utilisation du commutateur [/LTCG (génération de code durant l’édition de liens)](/cpp/build/reference/ltcg-link-time-code-generation) .
 
-Langue de l’Application de CV_CFL_HLSL est High Level Shader Language.
+La langue de l’application CV_CFL_HLSL est le langage de nuanceur de haut niveau.
 
 ## <a name="remarks"></a>Notes
-Les valeurs dans cette énumération sont retournées par un appel à la [IDiaSymbol::get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md) (méthode).
+Les valeurs de cette énumération sont retournées par un appel à la méthode [IDiaSymbol :: get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md) .
 
-## <a name="requirements"></a>Configuration requise
-En-tête : cvconst.h
+## <a name="requirements"></a>spécifications
+En-tête : cvconst. h
 
 ## <a name="see-also"></a>Voir aussi
 - [Énumérations et structures](../../debugger/debug-interface-access/enumerations-and-structures.md)

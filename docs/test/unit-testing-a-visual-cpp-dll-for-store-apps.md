@@ -1,5 +1,5 @@
 ---
-title: Guide pratique pour tester une DLL Visual C++ conçue pour des applications UWP
+title: Comment tester une C++ dll pour les applications UWP
 ms.date: 05/01/2019
 ms.topic: conceptual
 ms.author: mblome
@@ -7,14 +7,14 @@ manager: jillfra
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: 6e0599445ff07227f5075a1a10a8dfdfe50e88f0
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 18d8382bcb4f3e348443050e818f0b59c2a18688
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925785"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748077"
 ---
-# <a name="how-to-test-a-visual-c-dll"></a>Guide pratique pour tester une DLL Visual C++
+# <a name="how-to-test-a-c-dll"></a>Comment tester une C++ dll
 
 Cette rubrique décrit une manière de créer des tests unitaires pour une DLL C++ destinée à des applications de plateforme Windows universelle (UWP) avec le framework de test Microsoft pour C++. La DLL RooterLib illustre de vagues souvenirs de la théorie de limite du calcul en implémentant une fonction qui calcule une estimation de la racine carrée d'un nombre donné. La DLL peut ensuite être incluse dans une application UWP pour montrer à l’utilisateur les choses amusantes qu’il est possible de faire avec les mathématiques.
 
@@ -48,7 +48,7 @@ Commencez par créer un projet de test. Dans le menu **Fichier**, choisissez **N
 
      ![unittest1.cpp](../test/media/ute_cpp_windows_unittest1_cpp.png)
 
-     Prenez note de ce qui suit :
+     Sachez que :
 
     - Chaque test est défini à l'aide de `TEST_METHOD(YourTestName){...}`.
 

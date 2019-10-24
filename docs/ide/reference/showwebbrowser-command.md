@@ -13,12 +13,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 292910cb75ba9f69a7d8fc231ca6574ccf8bbfbe
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b8c97659cc6036433c5bcf2547a9f88aee56f451
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645250"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747712"
 ---
 # <a name="showwebbrowser-command"></a>Afficher le navigateur Web, commande
 

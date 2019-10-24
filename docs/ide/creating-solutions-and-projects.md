@@ -14,12 +14,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 206f97dcb264f85a15a9293e55a3f2ccc6173aa5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: abe2cbd18e87c7045d44e597e3a5bb93a64a1c35
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652610"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747963"
 ---
 # <a name="create-solutions-and-projects"></a>Créer des solutions et des projets
 
@@ -53,7 +53,7 @@ Si vous avez déjà une collection de fichiers de code source, vous pouvez facil
 1. Dans l’Assistant, accédez à l’emplacement des fichiers, puis entrez le nom du nouveau projet dans la zone **Nom**. Quand vous avez terminé, choisissez le bouton **Terminer**.
 
 > [!NOTE]
-> Cette option est la plus appropriée pour une collection de fichiers relativement simple. Actuellement, seuls les types de projet Visual C++, Apache Cordova, Visual Basic et C# sont pris en charge.
+> Cette option est la plus appropriée pour une collection de fichiers relativement simple. Actuellement, seuls C++les types Apache Cordova, Visual Basic et C# de projet sont pris en charge.
 
 ## <a name="add-files-to-a-solution"></a>Ajouter des fichiers à une solution
 

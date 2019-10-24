@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e52567eddcbb6c4f372256e66b7b723bc7aa7394
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 424924f3fab62cf862420d58c947bba16343141d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833439"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743885"
 ---
 # <a name="idiaenumsymbolsbyaddrnext"></a>IDiaEnumSymbolsByAddr::Next
 Récupère les symboles suivants dans l’ordre par adresse.
@@ -35,21 +35,21 @@ HRESULT Next ( 
 #### <a name="parameters"></a>Paramètres
  celt
 
-[in] Le nombre de symboles dans l’énumérateur à récupérer.
+dans Nombre de symboles dans l’énumérateur à récupérer.
 
  rgelt
 
-[out] Un tableau qui doit être rempli avec le [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objet représentant les symboles de votre choisis.
+à Tableau à remplir avec l’objet [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) qui représente les symboles souhaités.
 
  pceltFetched
 
-[out] Retourne le nombre de symboles dans l’énumérateur extraite.
+à Retourne le nombre de symboles dans l’énumérateur extrait.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` s’il n’existe plus aucun symbole. Sinon, retourne un code d'erreur.
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` s’il n’y a plus de symboles. Sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- Cette méthode met à jour la position de l’énumérateur par le nombre d’éléments extraits.
+ Cette méthode met à jour la position de l’énumérateur en fonction du nombre d’éléments extraits.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)

@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bfaf520658edfdcf5b80fb89f89489a47c7fffa3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f6a4e3fde3d98b83f8b92ffe039e3bff5c8eae4f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852692"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738326"
 ---
 # <a name="debugger-project-settings"></a>Paramètres du projet du débogueur
 Certains paramètres de projet affectent également le débogage. Ces paramètres déterminent des éléments tels que les répertoires de recherche du débogueur, la commande et les arguments de commande utilisés pour démarrer le programme, ainsi que le type d'informations de débogage créées pour le programme. Vous pouvez modifier ces paramètres dans la boîte de dialogue **Pages de propriétés** .
@@ -29,24 +29,24 @@ Certains paramètres de projet affectent également le débogage. Ces paramètre
  Cette section décrit les options disponibles et la manière de les définir.
 
 ## <a name="in-this-section"></a>Dans cette section
- [Guide pratique pour Spécifiez les paramètres du débogueur](../debugger/how-to-specify-debugger-settings.md) décrit les paramètres du débogueur dans le **Options** boîte de dialogue.
+ [Comment : spécifier les paramètres du débogueur](../debugger/how-to-specify-debugger-settings.md) Décrit les paramètres du débogueur dans la boîte de dialogue **options** .
 
- [Guide pratique pour Définir des Configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md) décrit le **déboguer** et **version** paramètres et comment passer à l’autre.
+ [Comment : définir des configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md) Décrit les paramètres de **débogage** et de **mise en version** , ainsi que la façon de passer de l’un à l’autre.
 
- [Paramètres de projets pour un C++ Configuration Debug](../debugger/project-settings-for-a-cpp-debug-configuration.md) répertorie les propriétés disponibles dans le **Pages de propriétés** boîte de dialogue pour C ou C++ projets.
+ [Les paramètres de projet C++ pour une configuration de débogage](../debugger/project-settings-for-a-cpp-debug-configuration.md) répertorient les propriétés disponibles dans la boîte C++ de dialogue pages de **Propriétés** pour C ou projets.
 
- [Paramètres de projet C# déboguer les Configurations](../debugger/project-settings-for-csharp-debug-configurations.md) répertorie les propriétés disponibles dans le **Pages de propriétés** boîte de dialogue C# projets.
+ [Les paramètres de C# projet pour les configurations de débogage](../debugger/project-settings-for-csharp-debug-configurations.md) répertorient les propriétés disponibles dans C# la boîte de dialogue pages de **Propriétés** des projets.
 
- [Paramètres des Pages de propriété pour les projets Web](../debugger/property-pages-settings-for-web-projects.md) répertorie les propriétés disponibles dans le **Pages de propriétés** boîte de dialogue pour les projets web.
+ [Paramètres des pages de propriétés pour les projets Web](../debugger/property-pages-settings-for-web-projects.md) Répertorie les propriétés disponibles dans la boîte de dialogue **pages de propriétés** pour les projets Web.
 
- [Paramètres pour une Configuration Debug Visual Basic du projet](../debugger/project-settings-for-a-visual-basic-debug-configuration.md) répertorie les propriétés disponibles dans le **Pages de propriétés** boîte de dialogue [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projets.
+ [Paramètres de projet pour une configuration de débogage Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md) Répertorie les propriétés disponibles dans la boîte de dialogue **pages de propriétés** de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projets.
 
 ## <a name="related-sections"></a>Rubriques connexes
- [Spécifier les symboles (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) décrit comment le débogueur utilise les fichiers de symboles et les fichiers sources pour afficher des informations de débogage.
+ [Spécifier les fichiers de symboles (. pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) Décrit comment le débogueur utilise des fichiers de symboles et des fichiers sources pour afficher des informations pour le débogage.
 
- [Déboguer des applications dans Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps) décrit comment déboguer des applications UWP. (Centre de développement Windows)
+ [Déboguer des applications dans Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps) Décrit comment déboguer des applications UWP. (Centre de développement Windows)
 
- [Paramètres et préparation du débogueur](../debugger/debugger-settings-and-preparation.md) décrit les paramètres de propriété du débogueur et la préparation nécessaire pour déboguer votre programme avec le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] débogueur.
+ [Paramètres et préparation du débogueur](../debugger/debugger-settings-and-preparation.md) Décrit les paramètres de propriété du débogueur et la préparation nécessaire pour déboguer votre programme avec le débogueur [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
 ## <a name="see-also"></a>Voir aussi
  [Sécurité du débogueur](../debugger/debugger-security.md)
