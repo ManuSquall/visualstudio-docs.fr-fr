@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d560cbff64a5134fa58ade4d562cb9fb073af48f
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ac344c97c7e79ea0cd92cce743848f0ac6e7f99f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64785877"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740453"
 ---
-# <a name="idiasymbolgethassetjump"></a>IDiaSymbol::get_hasSetJump
-Récupère un indicateur qui spécifie si la fonction contient une utilisation de la [setjmp](/cpp/c-runtime-library/reference/setjmp) commande (couplé avec le [longjmp](/cpp/c-runtime-library/reference/longjmp) commande, elles forment la méthode C-style de gestion des exceptions).
+# <a name="idiasymbolget_hassetjump"></a>IDiaSymbol::get_hasSetJump
+Récupère un indicateur qui spécifie si la fonction contient une utilisation de la commande [setjmp](/cpp/c-runtime-library/reference/setjmp) (associée à la commande [longjmp](/cpp/c-runtime-library/reference/longjmp) , qui constituent la méthode de gestion des exceptions de style C).
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,20 +33,20 @@ HRESULT get_hasSetJump(
 #### <a name="parameters"></a>Paramètres
  `pFlag`
 
-[out] Retourne `TRUE` si la fonction contient un `setjmp` commande ; sinon, retourne `FALSE`.
+à Retourne `TRUE` si la fonction contient une commande `setjmp` ; Sinon, retourne `FALSE`.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
-> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> Une valeur de retour de `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>spécifications
 
-|Prérequis|Description|
+|Exigence|Description|
 |-----------------|-----------------|
 |En-tête :|dia2.h|
-|Version :|DIA SDK 8.0|
+|Version :|DIA SDK v 8.0|
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
