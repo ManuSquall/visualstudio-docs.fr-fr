@@ -11,18 +11,18 @@ dev_langs:
 - jsharp
 - C++
 helpviewer_keywords:
-- MSBuild (Visual C++), GetOutputFileName task
-- GetOutputFileName task (MSBuild (Visual C++))
+- MSBuild (C++), GetOutputFileName task
+- GetOutputFileName task (MSBuild (C++))
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - multiple
-ms.openlocfilehash: c6298a512a1848622bf854d6d9ee9084309a0b4f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 9733aae5e53948cdf07d62f62cd7ca5f930d08a3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977114"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747303"
 ---
 # <a name="getoutputfilename-task"></a>Tâche GetOutputFileName
 

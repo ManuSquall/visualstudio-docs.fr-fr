@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b502d1504c5a61ed073ed77eed76dd5f7c139a35
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: bca44ea4b8b290089f0c1332cf5c9ba792265ee2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64784363"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739791"
 ---
-# <a name="idiasymbolgetmsil"></a>IDiaSymbol::get_msil
-Récupère un indicateur qui spécifie si le symbole fait référence au code de langage MSIL (Microsoft Intermediate Language).
+# <a name="idiasymbolget_msil"></a>IDiaSymbol::get_msil
+Récupère un indicateur qui spécifie si le symbole fait référence au code MSIL (Microsoft Intermediate Language).
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,13 +33,13 @@ HRESULT get_msil ( 
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-[out] Retourne `TRUE` si le symbole fait référence au code MSIL ; sinon, retourne `FALSE`.
+à Retourne `TRUE` si le symbole fait référence au code MSIL ; Sinon, retourne `FALSE`.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
-> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> Une valeur de retour de `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

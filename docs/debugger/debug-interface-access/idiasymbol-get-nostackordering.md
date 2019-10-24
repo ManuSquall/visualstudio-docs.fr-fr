@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d36a934fe9475613e916d51290ac6f8960a6b42
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: a9c93119ee89355c9aae5c91caa185c9a1a6bb5d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64791994"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739723"
 ---
-# <a name="idiasymbolgetnostackordering"></a>IDiaSymbol::get_noStackOrdering
-Cette fonction récupère un indicateur qui indique si aucun classement de la pile ne peut être effectuée dans le cadre de la vérification de mémoire tampon de pile ([/GS (vérification de la sécurité de la mémoire tampon)](/cpp/build/reference/gs-buffer-security-check) option du compilateur).
+# <a name="idiasymbolget_nostackordering"></a>IDiaSymbol::get_noStackOrdering
+Cette fonction récupère un indicateur qui indique si aucun classement de la pile n’a pu être effectué dans le cadre de la vérification de la mémoire tampon de la pile (option de compilateur[/GS (vérification de la sécurité de la mémoire tampon)](/cpp/build/reference/gs-buffer-security-check) ).
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,20 +33,20 @@ HRESULT get_noStackOrdering(
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-[out] Retourne `TRUE` si aucun classement de la pile ne peut être effectuée dans le cadre de la vérification de mémoire tampon de pile ; sinon, retourne `FALSE`.
+à Retourne `TRUE` si aucun classement de la pile n’a pu être effectué dans le cadre de la vérification de la mémoire tampon de la pile. Sinon, retourne `FALSE`.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
-> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> Une valeur de retour de `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>spécifications
 
-|Prérequis|Description|
+|Exigence|Description|
 |-----------------|-----------------|
 |En-tête :|dia2.h|
-|Version :|DIA SDK 8.0|
+|Version :|DIA SDK v 8.0|
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

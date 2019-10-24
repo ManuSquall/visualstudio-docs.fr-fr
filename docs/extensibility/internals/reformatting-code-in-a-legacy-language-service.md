@@ -1,5 +1,5 @@
 ---
-title: Reformatage du Code dans un Service de langage hérité | Microsoft Docs
+title: Reformatage du code dans un service de langage hérité | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,35 +11,35 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16130191eb6a4d8b6d7703a05aaf3271f8c739f5
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: ae48e1b97b5c9194cf3081687ab31ea9f857e6c9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67891134"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72724755"
 ---
 # <a name="reformatting-code-in-a-legacy-language-service"></a>Reformatage du code dans un service de langage hérité
 
-Dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] code source peut être reformaté par la normalisation de l’utilisation des mises en retrait et des espaces blancs. Cela peut inclure d’insertion ou suppression des espaces ou des tabulations au début de chaque ligne, ajoutez de nouvelles lignes entre les lignes ou remplaçant les espaces par des tabulations ou les tabulations par des espaces.
+Dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] code source peut être reformaté en normalisant l’utilisation des retraits et des espaces. Cela peut inclure l’insertion ou la suppression d’espaces ou de tabulations au début de chaque ligne, l’ajout de nouvelles lignes entre les lignes ou le remplacement des espaces par des tabulations ou des tabulations par des espaces.
 
 > [!NOTE]
-> Insertion ou la suppression des caractères de saut de ligne peut affecter les marqueurs tels que des points d’arrêt et les signets, mais ajout ou la suppression des espaces ou des tabulations n’affecte pas les marqueurs.
+> L’insertion ou la suppression de caractères de saut de ligne peut affecter des marqueurs comme des points d’arrêt et des signets, mais l’ajout ou la suppression d’espaces ou de tabulations n’affecte pas les marqueurs
 
-Les utilisateurs peuvent démarrer une opération de reformatage en sélectionnant **la sélection du Format** ou **mettre le Document** à partir de la **avancé** menu sur le **modifier**menu. Une opération de reformatage peut également être déclenchée lorsqu’un extrait de code ou un caractère particulier est inséré. Par exemple, lorsque vous tapez une accolade fermante en c#, tout le contenu entre l’accolade ouvrante correspondante et l’accolade fermante est automatiquement mis en retrait pour le niveau approprié.
+Les utilisateurs peuvent démarrer une opération de reformatage en sélectionnant **formater la sélection** ou **mettre le document en forme** dans le menu **avancé** du menu **Edition** . Une opération de reformatage peut également être déclenchée quand un extrait de code ou un caractère particulier est inséré. Par exemple, lorsque vous tapez une accolade fermante dans C#, tout ce qui se trouve entre l’accolade ouvrante correspondante et l’accolade fermante est automatiquement mis en retrait au niveau approprié.
 
-Lors de la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] envoie le **la sélection du Format** ou **mettre le Document** commande pour le service de langage, le <xref:Microsoft.VisualStudio.Package.ViewFilter> classe appelle le <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> méthode dans le <xref:Microsoft.VisualStudio.Package.Source> classe. Pour prendre en charge la mise en forme que vous devez substituer la <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> méthode et fournir votre propre mise en forme de code.
+Quand [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] envoie la commande **mettre en forme la sélection** ou mettre le document en **forme** au service de langage, la classe <xref:Microsoft.VisualStudio.Package.ViewFilter> appelle la méthode <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> dans la classe <xref:Microsoft.VisualStudio.Package.Source>. Pour prendre en charge la mise en forme, vous devez substituer la méthode <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> et fournir votre propre code de mise en forme.
 
-## <a name="enabling-support-for-reformatting"></a>L’activation de la prise en charge pour le reformatage
+## <a name="enabling-support-for-reformatting"></a>Activation de la prise en charge du reformatage
 
-Pour prendre en charge la mise en forme, le `EnableFormatSelection` paramètre de la <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> doit être définie sur `true` lorsque vous inscrivez votre VSPackage. Cela définit le <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableFormatSelection%2A> propriété `true`. Le <xref:Microsoft.VisualStudio.Package.ViewFilter.CanReformat%2A> méthode retourne la valeur de cette propriété. Si elle retourne true, la <xref:Microsoft.VisualStudio.Package.ViewFilter> classe appelle le <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A>.
+Pour prendre en charge la mise en forme, le paramètre `EnableFormatSelection` de la <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> doit être défini sur `true` lorsque vous inscrivez votre VSPackage. Cela affecte à la propriété <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableFormatSelection%2A> la valeur `true`. La méthode <xref:Microsoft.VisualStudio.Package.ViewFilter.CanReformat%2A> retourne la valeur de cette propriété. Si elle retourne la valeur true, la classe <xref:Microsoft.VisualStudio.Package.ViewFilter> appelle la <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A>.
 
-## <a name="implementing-reformatting"></a>Implémentation de reformatage
+## <a name="implementing-reformatting"></a>Implémentation du reformatage
 
-Pour implémenter le reformatage, vous devez dériver une classe à partir de la <xref:Microsoft.VisualStudio.Package.Source> classe et substituer les <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> (méthode). Le <xref:Microsoft.VisualStudio.TextManager.Interop.TextSpan> objet décrit l’étendue à mettre en forme et le <xref:Microsoft.VisualStudio.Package.EditArray> objet contient les modifications apportées sur l’étendue. Notez que cette étendue peut être l’intégralité du document. Toutefois, dans la mesure où il existe probablement plusieurs modifications sont apportées à l’étendue, toutes les modifications doivent être réversibles dans une seule action. Pour ce faire, encapsulez toutes les modifications dans un <xref:Microsoft.VisualStudio.Package.CompoundAction> de l’objet (voir la section de « À l’aide de la classe CompoundAction » dans cette rubrique).
+Pour implémenter le reformatage, vous devez dériver une classe de la classe <xref:Microsoft.VisualStudio.Package.Source> et substituer la méthode <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A>. L’objet <xref:Microsoft.VisualStudio.TextManager.Interop.TextSpan> décrit l’étendue à mettre en forme et l’objet <xref:Microsoft.VisualStudio.Package.EditArray> contient les modifications apportées à l’étendue. Notez que cette étendue peut être le document entier. Toutefois, étant donné qu’il y a probablement plusieurs modifications apportées à l’étendue, toutes les modifications doivent être réversibles en une seule action. Pour ce faire, encapsulez toutes les modifications dans un objet <xref:Microsoft.VisualStudio.Package.CompoundAction> (consultez la section « utilisation de la classe CompoundAction » dans cette rubrique).
 
 ### <a name="example"></a>Exemple
 
-L’exemple suivant vérifie la présence d’un espace unique après chaque virgule dans la sélection, à moins que la virgule est suivie par une tabulation ou à la fin de la ligne. Les espaces de fin après la dernière virgule dans une ligne sont supprimés. Consultez la section « À l’aide de la classe CompoundAction » dans cette rubrique pour voir comment cette méthode est appelée à partir de la <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A> (méthode).
+L’exemple suivant vérifie qu’il y a un seul espace après chaque virgule dans la sélection, sauf si la virgule est suivie d’un onglet ou se trouve à la fin de la ligne. Les espaces de fin situés après la dernière virgule d’une ligne sont supprimés. Consultez la section « utilisation de la classe CompoundAction » dans cette rubrique pour voir comment cette méthode est appelée à partir de la méthode <xref:Microsoft.VisualStudio.Package.Source.ReformatSpan%2A>.
 
 ```csharp
 using Microsoft.VisualStudio.Package;
@@ -153,13 +153,13 @@ namespace MyLanguagePackage
 }
 ```
 
-## <a name="using-the-compoundaction-class"></a>À l’aide de la classe CompoundAction
+## <a name="using-the-compoundaction-class"></a>Utilisation de la classe CompoundAction
 
-Tous les le reformatage effectuée sur une section de code doit être réversible dans une seule action. Cela peut être accompli à l’aide un <xref:Microsoft.VisualStudio.Package.CompoundAction> classe. Cette classe encapsule un ensemble d’opérations de modification de la mémoire tampon de texte dans une opération de modification unique.
+Tout le reformatage effectué sur une section de code doit être réversible en une seule action. Cela peut être accompli à l’aide d’une classe <xref:Microsoft.VisualStudio.Package.CompoundAction>. Cette classe encapsule un ensemble d’opérations de modification sur la mémoire tampon de texte en une seule opération de modification.
 
 ### <a name="example"></a>Exemple
 
-Voici un exemple montrant comment utiliser le <xref:Microsoft.VisualStudio.Package.CompoundAction> classe. Consultez l’exemple dans la section « Implémentation de prise en charge pour la mise en forme » dans cette rubrique pour obtenir un exemple de la `DoFormatting` (méthode).
+Voici un exemple d’utilisation de la classe <xref:Microsoft.VisualStudio.Package.CompoundAction>. Consultez l’exemple de la section « implémentation de la prise en charge de la mise en forme » dans cette rubrique pour obtenir un exemple de la méthode `DoFormatting`.
 
 ```csharp
 using Microsoft.VisualStudio.Package;

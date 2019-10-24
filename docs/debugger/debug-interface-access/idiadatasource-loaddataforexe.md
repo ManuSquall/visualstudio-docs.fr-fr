@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f95e8a9321ff7ae518e72496289f8ad0c7b4682
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7a86abb00ebc090c37f03a5533376ae0b9c3e8ae
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829844"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744961"
 ---
 # <a name="idiadatasourceloaddataforexe"></a>IDiaDataSource::loadDataForExe
-S’ouvre et prépare les données de débogage associées au fichier.exe/.dll.
+Ouvre et prépare les données de débogage associées au fichier. exe/. dll.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -35,40 +35,40 @@ HRESULT loadDataForExe (
 #### <a name="parameters"></a>Paramètres
 executable
 
-[in] Chemin d’accès au fichier .exe ou .dll.
+dans Chemin d’accès au fichier. exe ou. dll.
 
 searchPath
 
-[in] Autre chemin d’accès pour rechercher des données de débogage.
+dans Autre chemin d’accès pour rechercher des données de débogage.
 
 pCallback
 
-[in] Un `IUnknown` interface pour un objet qui prend en charge une interface de rappel de débogage, telles que la [IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md), [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md), le [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md), et/ou la [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md) interfaces.
+dans Interface `IUnknown` pour un objet qui prend en charge une interface de rappel de débogage, telle que [IDiaLoadCallback](../../debugger/debug-interface-access/idialoadcallback.md), [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md), [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)et/ou les interfaces [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md) .
 
 ## <a name="return-value"></a>Valeur de retour
-En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Le tableau suivant présente certains des codes d’erreur possibles pour cette méthode.
+En cas de réussite, retourne `S_OK` ; Sinon, retourne un code d’erreur. Le tableau suivant présente certains des codes d’erreur possibles pour cette méthode.
 
-|Value|Description|
+|valeur|Description|
 |-----------|-----------------|
-|E_PDB_NOT_FOUND|Impossible d’ouvrir le fichier ou le fichier a un format non valide.|
-|E_PDB_FORMAT|Essaie d’accéder à un fichier avec un format obsolète.|
-|E_PDB_INVALID_SIG|Signature ne correspond pas.|
-|E_PDB_INVALID_AGE|Âge ne correspond pas.|
+|E_PDB_NOT_FOUND|Impossible d’ouvrir le fichier ou le format du fichier n’est pas valide.|
+|E_PDB_FORMAT|Tentative d’accès à un fichier avec un format obsolète.|
+|E_PDB_INVALID_SIG|La signature ne correspond pas.|
+|E_PDB_INVALID_AGE|L’âge ne correspond pas.|
 |E_INVALIDARG|Paramètre non valide.|
-|E_UNEXPECTED|Source de données a déjà été préparée.|
+|E_UNEXPECTED|La source de données a déjà été préparée.|
 
 ## <a name="remarks"></a>Notes
-L’en-tête de débogage du fichier.exe/.dll désigne l’emplacement des données de débogage.
+L’en-tête debug du fichier. exe/. dll nomme l’emplacement des données de débogage associé.
 
-Cette méthode lit l’en-tête de débogage, puis recherche et prépare les données de débogage. La progression de la recherche peut-être, le cas échéant, être signalée et contrôlée via des rappels. Par exemple, le [IDiaLoadCallback::NotifyDebugDir](../../debugger/debug-interface-access/idialoadcallback-notifydebugdir.md) est appelé lorsque le `IDiaDataSource::loadDataForExe` méthode recherche et traite un répertoire de débogage.
+Cette méthode lit l’en-tête de débogage, puis recherche et prépare les données de débogage. La progression de la recherche peut éventuellement être signalée et contrôlée par le biais de rappels. Par exemple, [IDiaLoadCallback :: NotifyDebugDir](../../debugger/debug-interface-access/idialoadcallback-notifydebugdir.md) est appelé lorsque la méthode `IDiaDataSource::loadDataForExe` trouve et traite un répertoire de débogage.
 
-Le [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md) et [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md) interfaces permettent à l’application cliente fournir des méthodes alternatives pour la lecture des données à partir de l’exécutable fichier lorsque le fichier Impossible d’accéder directement par le biais d’e/s de fichier standard.
+Les interfaces [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md) et [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md) permettent à l’application cliente de fournir d’autres méthodes de lecture des données à partir du fichier exécutable lorsque le fichier n’est pas accessible directement via standard e/s de fichier.
 
-Pour charger un fichier .pdb sans validation, utilisez la [IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) (méthode).
+Pour charger un fichier. pdb sans validation, utilisez la méthode [IDiaDataSource :: loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) .
 
-Pour valider le fichier .pdb par rapport à des critères spécifiques, utilisez le [IDiaDataSource::loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md) (méthode).
+Pour valider le fichier. pdb par rapport à des critères spécifiques, utilisez la méthode [IDiaDataSource :: loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md) .
 
-Pour charger un fichier .pdb directement à partir de la mémoire, utilisez le [IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md) (méthode).
+Pour charger un fichier. pdb directement à partir de la mémoire, utilisez la méthode [IDiaDataSource :: loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md) .
 
 ## <a name="example"></a>Exemple
 

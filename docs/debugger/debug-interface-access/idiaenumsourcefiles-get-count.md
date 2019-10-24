@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03d3d52706d549ce6dff4d30b9552ff5d35f379a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7abc842a65140d1ee127dba99568ff4a57b16873
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833374"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744113"
 ---
-# <a name="idiaenumsourcefilesgetcount"></a>IDiaEnumSourceFiles::get_Count
+# <a name="idiaenumsourcefilesget_count"></a>IDiaEnumSourceFiles::get_Count
 Récupère le nombre de fichiers sources.
 
 ## <a name="syntax"></a>Syntaxe
@@ -33,10 +33,10 @@ HRESULT get_Count ( 
 #### <a name="parameters"></a>Paramètres
  pRetVal
 
-[out] Retourne le nombre de fichiers sources.
+à Retourne le nombre de fichiers sources.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne un code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)

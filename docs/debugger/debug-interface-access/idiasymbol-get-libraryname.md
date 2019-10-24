@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 638458c1365c015b54ca955e44041b856232f8b5
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 3b49c9ad6926b963345bc4c1341ab3c7db03c916
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64800451"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739942"
 ---
-# <a name="idiasymbolgetlibraryname"></a>IDiaSymbol::get_libraryName
-Récupère le nom de fichier du fichier de bibliothèque ou un objet à partir duquel l’objet a été chargé.
+# <a name="idiasymbolget_libraryname"></a>IDiaSymbol::get_libraryName
+Récupère le nom de fichier de la bibliothèque ou du fichier objet à partir duquel l’objet a été chargé.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,13 +33,13 @@ HRESULT get_libraryName ( 
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-[out] Retourne le nom de fichier du fichier de bibliothèque ou un objet à partir duquel l’objet a été chargé.
+à Retourne le nom de fichier de la bibliothèque ou du fichier objet à partir duquel l’objet a été chargé.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
-> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> Une valeur de retour de `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

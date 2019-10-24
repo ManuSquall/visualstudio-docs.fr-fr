@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugFields::Next | Microsoft Docs
+title: 'IEnumDebugFields :: suivant | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,15 +15,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ee2cc5273b5ec47f99916a308312f6d26c718033
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 216ce9d49ba9de33307ad692787d6e6d36ee15c3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350424"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72727662"
 ---
 # <a name="ienumdebugfieldsnext"></a>IEnumDebugFields::Next
-Cette méthode retourne l’ensemble suivant d’éléments de l’énumération.
+Cette méthode retourne le jeu d’éléments suivant de l’énumération.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -45,16 +45,16 @@ int Next(
 
 ## <a name="parameters"></a>Paramètres
 `celt`\
-[in] Le nombre d’éléments à récupérer. Spécifie également la taille maximale de la `rgelt` tableau.
+dans Nombre d’éléments à récupérer. Spécifie également la taille maximale du tableau de `rgelt`.
 
 `rgelt`\
-[in, out] Tableau de [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) éléments doit être renseigné.
+[in, out] Tableau d’éléments [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) à remplir.
 
 `pceltFetched`\
-[out] Retourne le nombre d’éléments réellement retournés dans `rgelt`.
+à Retourne le nombre d’éléments réellement retournés dans `rgelt`.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si inférieur au nombre demandé d’éléments peut être retournés ; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si la valeur est inférieure au nombre d’éléments demandés ; Sinon, retourne un code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

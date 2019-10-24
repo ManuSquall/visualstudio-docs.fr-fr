@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 665e778fc0881ac05e165c85700d15285622c762
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: a4d11875a7ab2ca3f21f364308580a732b7516e6
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186358"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737927"
 ---
 # <a name="edit-and-continue-visual-c"></a>Modifier & Continuer (Visual C#)
  Avec Modifier &amp; Continuer pour C#, vous pouvez modifier votre code en mode arrêt pendant le débogage. Les modifications peuvent être appliquées sans qu'il soit nécessaire d'arrêter et de redémarrer la session de débogage. En mode exécution, l'éditeur de code source est en lecture seule.
@@ -36,9 +36,9 @@ ms.locfileid: "71186358"
 
  Quand l’option Modifier & Continuer est activée, les modifications prises en charge sont appliquées automatiquement lorsque vous utilisez une commande d’exécution du débogueur, par exemple **Continuer**, **Exécuter pas à pas** ou **Définir l’instruction suivante**, ou lorsque vous exécutez une évaluation de fonction dans une fenêtre du débogueur.
 
- Pour plus d'informations, voir [Procédure : utiliser Modifier & Continuer (C#)](../debugger/how-to-use-edit-and-continue-csharp.md).
+ Pour plus d’informations, consultez [Comment : utiliser modifier & continuer (C#)](../debugger/how-to-use-edit-and-continue-csharp.md).
 
 ## <a name="see-also"></a>Voir aussi
-- [Guide pratique pour utiliser Modifier et Continuer (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
+- [Guide pratique pour utiliser Modifier & Continuer (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
 - [Modifications du code prisesC# en charge (et Visual Basic)](../debugger/supported-code-changes-csharp.md)
 - [Écrire et déboguer du code XAML en cours d’exécution avec le rechargement à chaud XAML dans Visual Studio](../debugger/xaml-hot-reload.md)

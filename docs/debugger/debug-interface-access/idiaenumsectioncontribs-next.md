@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e8fd088ff6be619de56f27f91b198aed18e428c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 61d99b0c881abdb8974e94352911ae3234c440c1
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829782"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744274"
 ---
 # <a name="idiaenumsectioncontribsnext"></a>IDiaEnumSectionContribs::Next
 Récupère un nombre spécifié de contributions de section dans la séquence d’énumération.
@@ -35,18 +35,18 @@ HRESULT Next( 
 #### <a name="parameters"></a>Paramètres
  celt
 
-[in] Le nombre de contributions de la section dans l’énumérateur à récupérer.
+dans Nombre de contributions de section dans l’énumérateur à récupérer.
 
  rgelt
 
-[out] Un tableau qui doit être rempli avec le [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md) objets qui représentent les contributions de la section souhaitée.
+à Tableau qui doit être rempli avec les objets [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md) qui représentent les contributions de section souhaitées.
 
  pceltFetched
 
-[out] Retourne le nombre de contributions de la section dans l’énumérateur extraite.
+à Retourne le nombre de contributions de section dans l’énumérateur extrait.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si il n’y a aucune contribution de section plus. Sinon, retourne un code d'erreur.
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` s’il n’y a plus de contributions de section. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)

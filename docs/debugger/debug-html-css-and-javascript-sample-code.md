@@ -1,5 +1,5 @@
 ---
-title: Exemple de code HTML et CSS de déboguer | Microsoft Docs
+title: Déboguer un exemple de code HTML et CSS | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -14,16 +14,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 10fda5038ab1c69a27e79406167c69adcc560658
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 460419d976211747c44f156a5821b88b75aa2e6b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62563472"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745543"
 ---
 # <a name="debug-html-and-css-sample-code"></a>Déboguer des exemples de code HTML et CSS
 
-Le code dans cette rubrique est l’exemple de fichier pour [Guide de démarrage rapide : Déboguer le code HTML et CSS](../debugger/quickstart-debug-html-and-css.md). Les erreurs présentes par conception dans le guide de démarrage rapide sont résolues dans cette version du code.
+Le code de cette rubrique est l’exemple de fichier pour le [démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md). Les erreurs présentes par conception dans le guide de démarrage rapide sont résolues dans cette version du code.
 
 ## <a name="sample-code"></a>Exemple de code
 Le code HTML suivant est utilisé dans l’étiquette \<body> du guide de démarrage rapide.

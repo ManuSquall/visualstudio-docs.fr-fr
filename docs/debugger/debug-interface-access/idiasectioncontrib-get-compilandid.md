@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e4a548a5d6e564c2be3148d63ee28913fb1143d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b66740fc4c767dca3539d4a2889d82b485902603
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839522"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742696"
 ---
-# <a name="idiasectioncontribgetcompilandid"></a>IDiaSectionContrib::get_compilandId
-Récupère l’identificateur de compiland pour la section.
+# <a name="idiasectioncontribget_compilandid"></a>IDiaSectionContrib::get_compilandId
+Récupère l’identificateur compiland pour la section.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,10 +33,10 @@ HRESULT get_compilandId ( 
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-[out] Retourne l’identificateur de compiland pour la section.
+à Retourne l’identificateur compiland pour la section.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

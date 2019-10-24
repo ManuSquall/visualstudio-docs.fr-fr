@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f7eee2acc1c131e146f115d75130eabbb5fd1a8
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ea0a0a2df1687d965437a8977eea649f77ea1ce4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62834543"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738930"
 ---
-# <a name="idiasymbolgetvalue"></a>IDiaSymbol::get_value
+# <a name="idiasymbolget_value"></a>IDiaSymbol::get_value
 Récupère la valeur d’une constante.
 
 ## <a name="syntax"></a>Syntaxe
@@ -33,16 +33,16 @@ HRESULT get_value (
 #### <a name="parameters"></a>Paramètres
 `pRetVal`
 
-[in, out] Un `VARIANT` objet qui est rempli avec la valeur d’une constante.
+[in, out] Objet `VARIANT` rempli avec la valeur d’une constante.
 
 ## <a name="return-value"></a>Valeur de retour
-En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
+En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
-> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> Une valeur de retour de `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
 ## <a name="remarks"></a>Notes
-La variante fournie doit être initialisée avant d’être passé à cette méthode. Pour plus d’informations, consultez l’exemple.
+La variante fournie doit être initialisée avant d’être passée à cette méthode. Pour plus d’informations, consultez l’exemple.
 
 ## <a name="example"></a>Exemple
 

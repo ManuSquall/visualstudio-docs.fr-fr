@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16b5be9ee787a2d4397d7384116cc9d7ac751d53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ec182918cccb42cf4d1c3cfdb3ae816aeef97a73
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838231"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744640"
 ---
-# <a name="idiaenumframedatagetcount"></a>IDiaEnumFrameData::get_Count
+# <a name="idiaenumframedataget_count"></a>IDiaEnumFrameData::get_Count
 Récupère le nombre d’éléments de données de frame.
 
 ## <a name="syntax"></a>Syntaxe
@@ -33,10 +33,10 @@ HRESULT get_Count ( 
 #### <a name="parameters"></a>Paramètres
  pRetVal
 
-[out] Retourne le nombre d’éléments de données de frame.
+à Retourne le nombre d’éléments de données de frame.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne un code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)
