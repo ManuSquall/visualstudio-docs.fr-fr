@@ -263,12 +263,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 621615879f4e9ee61a2830fd93c53a2baf64b898
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d8700d058c694afbea551e5b117a0e4a0461f2e8
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72622451"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72806168"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Avertissements d’analyse du code pour le code managé par CheckId
 
@@ -339,7 +339,7 @@ Le tableau suivant répertorie les avertissements d'analyse du code pour le code
 | CA1064 | [CA1064 : Les exceptions doivent être publiques](../code-quality/ca1064.md) | Une exception interne est uniquement visible à l'intérieur de sa propre portée interne. Lorsque l'exception se situe en dehors de la portée interne, seule l'exception de base peut être utilisée pour intercepter l'exception. Si l’exception interne est héritée de <xref:System.Exception>, <xref:System.SystemException> ou <xref:System.ApplicationException>, le code externe ne disposera pas d’informations suffisantes pour savoir ce qu’il faut faire avec l’exception. |
 | CA1065 | [CA1065 : Ne levez pas d’exceptions dans des emplacements inattendus](../code-quality/ca1065.md) | Une méthode dont l'objet n'est pas de lever des exceptions lève une exception. |
 | Ca1068 | [Ca1068 : les paramètres CancellationToken doivent être en dernier](../code-quality/ca1068.md) | Une méthode a un paramètre CancellationToken qui n’est pas le dernier paramètre. |
-| Ca1200 | [Ca1200 : Évitez d’utiliser des balises CREF avec un préfixe](../code-quality/ca1200.md) | L’attribut [cref](https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/cref-attribute) dans une balise de documentation XML signifie « référence du code ». Il indique que le texte interne de la balise est un élément de code tel qu’un type, une méthode ou une propriété. Évitez d’utiliser des balises `cref` avec des préfixes, car cela empêche le compilateur de vérifier les références. Cela empêche également l’environnement de développement intégré (IDE) de Visual Studio de rechercher et de mettre à jour ces références de symboles lors des refactorisations. |
+| Ca1200 | [Ca1200 : Évitez d’utiliser des balises CREF avec un préfixe](../code-quality/ca1200.md) | L’attribut [cref](/dotnet/csharp/programming-guide/xmldoc/cref-attribute) dans une balise de documentation XML signifie « référence du code ». Il indique que le texte interne de la balise est un élément de code tel qu’un type, une méthode ou une propriété. Évitez d’utiliser des balises `cref` avec des préfixes, car cela empêche le compilateur de vérifier les références. Cela empêche également l’environnement de développement intégré (IDE) de Visual Studio de rechercher et de mettre à jour ces références de symboles lors des refactorisations. |
 | CA1300 | [CA1300 : Spécifiez MessageBoxOptions](../code-quality/ca1300.md) | Pour afficher correctement une boîte de message pour les cultures qui utilisent un sens de lecture de droite à gauche, les membres RightAlign et RtlReading de l'énumération MessageBoxOptions doivent être passés à la méthode Show. |
 | CA1301 | [CA1301 : Évitez les accélérateurs en doublon](../code-quality/ca1301.md) | Une touche d'accès rapide, également connue sous le nom d'accélérateur, autorise l'accès à un contrôle par le biais du clavier, à l'aide de la touche ALT. Lorsque plusieurs contrôles ont des clés d’accès en double, le comportement de la clé d’accès n’est pas bien défini. |
 | CA1302 | [CA1302 : Ne codez pas en dur les chaînes spécifiques aux paramètres régionaux](../code-quality/ca1302.md) | L'énumération System.Environment.SpecialFolder contient des membres qui font référence à des dossiers système spéciaux. Les emplacements de ces dossiers peuvent avoir des valeurs distinctes selon le système d’exploitation ; l’utilisateur peut modifier certains des emplacements, et ces derniers sont localisés. La méthode Environment.GetFolderPath retourne les emplacements associés à l'énumération Environment.SpecialFolder, localisés et appropriés pour l'ordinateur en cours d'exécution. |
