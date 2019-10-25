@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f2723304fe22af9ae2920ff828c953de9347449
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a0bb14b47fb17c4d59089aafa123115b85ab9342
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62902682"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72729873"
 ---
 # <a name="report-hook-functions"></a>Fonctions de raccordement de rapport
 Une fonction de raccordement de rapport, installée avec [_CrtSetReportHook](/cpp/c-runtime-library/reference/crtsetreporthook), est appelée chaque fois que [_CrtDbgReport](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw) génère un rapport de débogage. Vous pouvez vous en servir, entre autres, pour filtrer les rapports de façon à vous concentrer sur des types d'allocations spécifiques. Une fonction de raccordement de rapport doit avoir un prototype similaire au suivant :
@@ -37,16 +37,16 @@ Une fonction de raccordement de rapport, installée avec [_CrtSetReportHook](/cp
 int YourReportHook(int nRptType, char *szMsg, int *retVal);
 ```
 
- Le pointeur que vous passez à **_CrtSetReportHook** est de type **_CRT_REPORT_HOOK**, tel que défini dans CRTDBG. H :
+ Le pointeur que vous transmettez à _ **crtsetreporthook** est de type **_CRT_REPORT_HOOK**, comme défini dans CRTDBG. Manutention
 
 ```cpp
 typedef int (__cdecl *_CRT_REPORT_HOOK)(int, char *, int *);
 ```
 
- Quand la bibliothèque Runtime appelle votre fonction de raccordement, l’argument *nRptType* contient la catégorie du rapport (**_CRT_WARN**, **_CRT_ERROR**, or **_CRT_ASSERT**), *szMsg* contient un pointeur vers une chaîne de message de rapport entièrement assemblé, et *retVal* spécifie si `_CrtDbgReport` doit poursuivre normalement son exécution après avoir généré le rapport ou bien démarrer le débogueur. (Si la valeur de *retVal* est zéro, l’exécution se poursuit ; si cette valeur est 1, le débogueur est démarré.)
+ Quand la bibliothèque Runtime appelle votre fonction de raccordement, l’argument *nRptType* contient la catégorie du rapport ( **_CRT_WARN**, **_CRT_ERROR**, or **_CRT_ASSERT**), *szMsg* contient un pointeur vers une chaîne de message de rapport entièrement assemblé, et *retVal* spécifie si `_CrtDbgReport` doit poursuivre normalement son exécution après avoir généré le rapport ou bien démarrer le débogueur. (Si la valeur de *retVal* est zéro, l’exécution se poursuit ; si cette valeur est 1, le débogueur est démarré.)
 
  Si le raccordement gère intégralement le message concerné et qu’aucun rapport supplémentaire n’est requis, il devrait retourner la valeur **TRUE**. S’il retourne **FALSE**, `_CrtDbgReport` communique le message de façon normale.
 
 ## <a name="see-also"></a>Voir aussi
 - [Écriture de fonctions de raccordement de débogage](../debugger/debug-hook-function-writing.md)
-- [crt_dbg2, exemple](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg2)
+- [Exemple crt_dbg2](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg2)

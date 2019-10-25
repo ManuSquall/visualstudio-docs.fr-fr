@@ -1,5 +1,5 @@
 ---
-title: Fonction SccOpenProject | Microsoft Docs
+title: SccOpenProject fonction) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,15 +12,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ebb8f4250b4ef4c022c5c21d748e025ca31e35a7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a6aa4a715f8d1b87aa831f6a315f07a19e5d4f46
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353604"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72721053"
 ---
 # <a name="sccopenproject-function"></a>Fonction SccOpenProject
-Cette fonction ouvre un projet de contrôle de code source existant ou crée un nouveau.
+Cette fonction ouvre un projet de contrôle de code source existant ou en crée un.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,78 +41,78 @@ SCCRTN SccOpenProject (
 #### <a name="parameters"></a>Paramètres
  pvContext
 
-[in] La structure de contexte de plug-in de contrôle de source.
+dans Structure de contexte du plug-in de contrôle de code source.
 
  hWnd
 
-[in] Handle vers la fenêtre de l’IDE que le plug-in de contrôle de code source peut utiliser en tant que parent pour les boîtes de dialogue qu’il fournit.
+dans Handle de la fenêtre IDE que le plug-in de contrôle de code source peut utiliser comme parent pour toutes les boîtes de dialogue qu’il fournit.
 
  lpUser
 
-[in, out] Le nom de l’utilisateur (ne dépassant pas SCC_USER_SIZE, y compris le terminateur NULL).
+[in, out] Nom de l’utilisateur (à ne pas dépasser SCC_USER_SIZE, y compris la marque de fin NULL).
 
  lpProjName
 
-[in] La chaîne qui identifie le nom du projet.
+dans Chaîne identifiant le nom du projet.
 
  lpLocalProjPath
 
-[in] Le chemin d’accès au dossier de travail pour le projet.
+dans Chemin d’accès au dossier de travail pour le projet.
 
  lpAuxProjPath
 
-[in, out] Chaîne facultative auxiliaire identifiant le projet (ne dépassant pas SCC_AUXPATH_SIZE, y compris le terminateur NULL).
+[in, out] Chaîne auxiliaire facultative identifiant le projet (sans dépasser SCC_AUXPATH_SIZE, y compris la marque de fin NULL).
 
  lpComment
 
-[in] Commentaire à un nouveau projet en cours de création.
+dans Commentez un nouveau projet en cours de création.
 
  lpTextOutProc
 
-[in] Fonction de rappel facultative pour afficher le texte de sortie à partir du plug-in de contrôle de code source.
+dans Fonction de rappel facultative permettant d’afficher la sortie de texte à partir du plug-in de contrôle de code source.
 
  dwFlags
 
-[in] Signale si un nouveau projet doit être créé si le projet est inconnu à la source de contrôle plug-in. Valeur peut être une combinaison de `SCC_OP_CREATEIFNEW` et `SCC_OP_SILENTOPEN.`
+dans Signale si un nouveau projet doit être créé si le projet est inconnu du plug-in de contrôle de code source. La valeur peut être une combinaison de `SCC_OP_CREATEIFNEW` et `SCC_OP_SILENTOPEN.`
 
 ## <a name="return-value"></a>Valeur de retour
- L’implémentation de plug-in de contrôle de source de cette fonction est censée retourner l’une des valeurs suivantes :
+ L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
-|Value|Description|
+|valeur|Description|
 |-----------|-----------------|
 |SCC_OK|Réussite de l’ouverture du projet.|
-|SCC_E_INITIALIZEFAILED|Projet n’a pas pu être initialisé.|
-|SCC_E_INVALIDUSER|L’utilisateur n’a pas pu se connecter le système de contrôle source.|
-|SCC_E_COULDNOTCREATEPROJECT|Le projet n’existait pas avant l’appel ;  le `SCC_OPT_CREATEIFNEW` indicateur a été défini, mais le projet n’a pas pu être créé.|
+|SCC_E_INITIALIZEFAILED|Impossible d’initialiser le projet.|
+|SCC_E_INVALIDUSER|L’utilisateur n’a pas pu se connecter au système de contrôle de code source.|
+|SCC_E_COULDNOTCREATEPROJECT|Le projet n’existait pas avant l’appel ;  l’indicateur de `SCC_OPT_CREATEIFNEW` a été défini, mais le projet n’a pas pu être créé.|
 |SCC_E_PROJSYNTAXERR|Syntaxe de projet non valide.|
-|SCC_E_UNKNOWNPROJECT|Le projet est inconnu pour le plug-in de contrôle de code source et le `SCC_OPT_CREATEIFNEW` indicateur n’a pas été défini.|
-|SCC_E_INVALIDFILEPATH|Chemin d’accès de fichier non valide ou inutilisable.|
+|SCC_E_UNKNOWNPROJECT|Le projet est inconnu du plug-in de contrôle de code source et l’indicateur `SCC_OPT_CREATEIFNEW` n’a pas été défini.|
+|SCC_E_INVALIDFILEPATH|Chemin de fichier non valide ou inutilisable.|
 |SCC_E_NOTAUTHORIZED|L’utilisateur n’est pas autorisé à effectuer cette opération.|
-|SCC_E_ACCESSFAILURE|Impossible d’accéder au système de contrôle source, probablement en raison de problèmes réseau ou de contention. Une nouvelle tentative est recommandée.|
+|SCC_E_ACCESSFAILURE|Un problème est survenu lors de l’accès au système de contrôle de code source, probablement en raison de problèmes de réseau ou de contention. Une nouvelle tentative est recommandée.|
 |SCC_E_NONSPECFICERROR|Une défaillance non spécifique ; le système de contrôle de code source n’a pas été initialisé.|
 
 ## <a name="remarks"></a>Notes
- L’IDE peut transmettre un nom d’utilisateur (`lpUser`), ou il peut simplement passer un pointeur vers une chaîne vide. S’il existe un nom d’utilisateur, le plug-in de contrôle de code source doit l’utiliser comme valeur par défaut. Toutefois, si aucun nom n’a été passé, ou si la connexion a échoué avec le nom donné, le plug-in doit inviter l’utilisateur pour vous connecter et retourne le nom valid dans `lpUser` lorsqu’elle reçoit une connexion valide`.` , car le plug-in peut changer la chaîne de nom d’utilisateur , l’IDE sera toujours allouer une mémoire tampon de taille (`SCC_USER_LEN`+ 1 ou SCC_USER_SIZE, qui inclut l’espace pour le terminateur null).
+ L’IDE peut passer un nom d’utilisateur (`lpUser`) ou il peut simplement passer un pointeur vers une chaîne vide. S’il existe un nom d’utilisateur, le plug-in de contrôle de code source doit l’utiliser comme valeur par défaut. Toutefois, si aucun nom n’a été passé, ou si la connexion a échoué avec le nom donné, le plug-in doit inviter l’utilisateur à se connecter et renverra le nom valide dans `lpUser` lorsqu’il reçoit une connexion valide `.` car le plug-in peut modifier la chaîne de nom d’utilisateur , l’IDE allouera toujours une mémoire tampon de taille (`SCC_USER_LEN` + 1 ou SCC_USER_SIZE, qui comprend l’espace pour la marque de fin null).
 
 > [!NOTE]
-> La première action de l’IDE peut-être être nécessaires pour exécuter peut être un appel à la `SccOpenProject` fonction ou le [SccGetProjPath](../extensibility/sccgetprojpath-function.md). Pour cette raison, les deux d'entre eux ont un identiques `lpUser` paramètre.
+> La première action que l’IDE peut être amené à effectuer peut être un appel à la fonction `SccOpenProject` ou à [SccGetProjPath](../extensibility/sccgetprojpath-function.md). Pour cette raison, les deux ont un paramètre `lpUser` identique.
 
- `lpAuxProjPath` et`lpProjName` sont lus à partir du fichier solution, ou ils sont retournés à partir d’un appel à la `SccGetProjPath` (fonction). Ces paramètres contiennent les chaînes qui associe les le plug-in de contrôle de code source avec le projet et sont uniquement explicites pour le plug-in. Si aucune de ces chaînes ne sont dans le fichier solution et que l’utilisateur n’a pas été invité à naviguer (qui retourne une chaîne via la `SccGetProjPath` fonction), l’IDE passe des chaînes vides pour les deux `lpAuxProjPath` et `lpProjName`et attend que ces valeurs à mettre à jour par le plug-in lorsqu’elle retourne.
+ `lpAuxProjPath` et `lpProjName` sont lus à partir du fichier solution, ou ils sont retournés à partir d’un appel à la fonction `SccGetProjPath`. Ces paramètres contiennent les chaînes que le plug-in de contrôle de code source associe au projet et qui sont significatives uniquement pour le plug-in. Si aucune chaîne de ce type n’est présente dans le fichier solution et que l’utilisateur n’a pas été invité à parcourir (ce qui retournerait une chaîne via la fonction `SccGetProjPath`), l’IDE passe des chaînes vides pour `lpAuxProjPath` et `lpProjName`, et s’attend à ce que ces valeurs soient mises à jour par le plug-in lorsque th est retourné par la fonction.
 
- `lpTextOutProc` est un pointeur vers une fonction de rappel fournie par l’IDE pour le plug-in en vue d’afficher la sortie du résultat de contrôle de code source. Cette fonction de rappel est décrite en détail dans [LPTEXTOUTPROC](../extensibility/lptextoutproc.md).
+ `lpTextOutProc` est un pointeur vers une fonction de rappel fournie par l’IDE au plug-in de contrôle de code source pour l’affichage de la sortie des résultats de la commande. Cette fonction de rappel est décrite en détail dans [LPTEXTOUTPROC](../extensibility/lptextoutproc.md).
 
 > [!NOTE]
-> Si le plug-in de contrôle de code source envisage tirer parti de cela, il doit avoir le `SCC_CAP_TEXTOUT` indicateur dans le [SccInitialize](../extensibility/sccinitialize-function.md). Si cet indicateur n’a pas été défini, ou si l’IDE ne prend pas en charge cette fonctionnalité, `lpTextOutProc` sera `NULL`.
+> Si le plug-in de contrôle de code source a l’intention de tirer parti de cela, il doit avoir défini l’indicateur `SCC_CAP_TEXTOUT` dans le [SccInitialize](../extensibility/sccinitialize-function.md). Si cet indicateur n’a pas été défini, ou si l’IDE ne prend pas en charge cette fonctionnalité, `lpTextOutProc` sera `NULL`.
 
- Le `dwFlags` paramètre contrôle le résultat dans le cas où le projet en cours d’ouverture n’existe pas actuellement. Il se compose de deux indicateurs de bits, `SCC_OP_CREATEIFNEW` et `SCC_OP_SILENTOPEN`. Si le projet en cours d’ouverture déjà existe, la fonction ouvre le projet et le retourne `SCC_OK`. Si le projet n’existe pas et si le `SCC_OP_CREATEIFNEW` indicateur est activé, le plug-in de contrôle de code source peut créer le projet dans le système de contrôle source, ouvrez-le et retourner `SCC_OK`. Si le projet n’existe pas et si le `SCC_OP_CREATEIFNEW` indicateur est désactivé, le plug-in doit ensuite vérifier le `SCC_OP_SILENTOPEN` indicateur. Si cet indicateur est désactivée, le plug-in peut inviter l’utilisateur pour un nom de projet. Si cet indicateur est activé, le plug-in doit simplement retourner `SCC_E_UNKNOWNPROJECT`.
+ Le paramètre `dwFlags` contrôle le résultat dans le cas où le projet en cours d’ouverture n’existe pas actuellement. Il se compose de deux indicateurs, `SCC_OP_CREATEIFNEW` et `SCC_OP_SILENTOPEN`. Si le projet ouvert existe déjà, la fonction ouvre simplement le projet et retourne `SCC_OK`. Si le projet n’existe pas et si l’indicateur `SCC_OP_CREATEIFNEW` est activé, le plug-in de contrôle de code source peut créer le projet dans le système de contrôle de code source, l’ouvrir et retourner `SCC_OK`. Si le projet n’existe pas et si l’indicateur de `SCC_OP_CREATEIFNEW` est désactivé, le plug-in doit ensuite Rechercher l’indicateur de `SCC_OP_SILENTOPEN`. Si cet indicateur n’est pas activé, le plug-in peut inviter l’utilisateur à entrer un nom de projet. Si cet indicateur est activé, le plug-in doit simplement retourner `SCC_E_UNKNOWNPROJECT`.
 
 ## <a name="calling-order"></a>Ordre d’appel
- Dans le cours normal d’événements, le [SccInitialize](../extensibility/sccinitialize-function.md) est appelée en premier pour ouvrir une session de contrôle de code source. Une session peut se composer d’un appel à `SccOpenProject`, suivie d’autres appels de fonction API de plug-in de contrôle de code Source et s’arrête avec un appel à la [SccCloseProject](../extensibility/scccloseproject-function.md). Ces sessions peuvent être répétées plusieurs fois avant la [SccUninitialize](../extensibility/sccuninitialize-function.md) est appelée.
+ Dans le cadre normal des événements, le [SccInitialize](../extensibility/sccinitialize-function.md) est appelé en premier pour ouvrir une session de contrôle de code source. Une session peut se composer d’un appel à `SccOpenProject`, suivi d’autres appels de fonction d’API du plug-in de contrôle de code source et se termine par un appel à [SccCloseProject](../extensibility/scccloseproject-function.md). De telles sessions peuvent être répétées plusieurs fois avant l’appel de [SccUninitialize](../extensibility/sccuninitialize-function.md) .
 
- Si les jeux plug-in de contrôle de la source de la `SCC_CAP_REENTRANT` de transmission en `SccInitialize`, puis la séquence de session ci-dessus peut être répétée autant de fois en parallèle. Différents `pvContext` structures suivre différentes sessions, dans lequel chaque `pvContext` est associé à un projet ouvert à la fois. Selon le`pvContext` paramètre, le plug-in peut déterminer de quel projet référencé dans n’importe quel appel particulier. Si le bit de la fonction `SCC_CAP_REENTRANT` n’est pas définie, nonreentrant plug-ins de contrôle de code source sont limitées dans leur capacité à travailler avec plusieurs projets.
+ Si le plug-in de contrôle de code source définit le bit de `SCC_CAP_REENTRANT` dans `SccInitialize`, la séquence de session ci-dessus peut être répétée plusieurs fois en parallèle. Les différentes structures de `pvContext` effectuent le suivi des différentes sessions, dans lesquelles chaque `pvContext` est associé à un projet ouvert à la fois. En fonction du paramètre `pvContext`, le plug-in peut déterminer quel projet est référencé dans un appel particulier. Si le bit de fonctionnalité `SCC_CAP_REENTRANT` n’est pas défini, les plug-ins de contrôle de code source nonreentrant sont limités dans leur capacité à travailler avec plusieurs projets.
 
 > [!NOTE]
-> Le `SCC_CAP_REENTRANT` bits a été introduite dans la version 1.1 de l’API de plug-in de contrôle de Source. Il n’est pas définie ou est ignoré dans la version 1.0, et toutes les version 1.0 source plug-ins de contrôle sont supposés pour être nonreentrant.
+> Le bit de `SCC_CAP_REENTRANT` a été introduit dans la version 1,1 de l’API de plug-in de contrôle de code source. Elle n’est pas définie ou est ignorée dans la version 1,0, et tous les plug-ins de contrôle de code source version 1,0 sont supposés être nonreentrant.
 
 ## <a name="see-also"></a>Voir aussi
 - [Fonctions d’API du plug-in de contrôle de code source](../extensibility/source-control-plug-in-api-functions.md)

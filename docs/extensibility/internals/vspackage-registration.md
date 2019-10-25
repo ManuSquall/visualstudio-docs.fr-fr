@@ -11,22 +11,22 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4b68d23211b0a6e1847c7cd22a79b44327e4aa6
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 44114ccdc4a0873887d48c3d191506f10cc3eaf3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924190"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72722002"
 ---
 # <a name="vspackage-registration"></a>Inscription de VSPackage
-Les VSPackages doivent [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] signaler qu’ils sont installés et doivent être chargés. Ce processus s’effectue en écrivant des informations dans le registre. Il s’agit d’un travail classique d’un programme d’installation.
+Les VSPackages doivent signaler [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] qu’ils sont installés et doivent être chargés. Ce processus s’effectue en écrivant des informations dans le registre. Il s’agit d’un travail classique d’un programme d’installation.
 
 > [!NOTE]
-> Il s’agit d’une pratique acceptée pendant le développement VSPackage pour utiliser l’inscription automatique. Toutefois, [!INCLUDE[vsipprvsip](../../extensibility/includes/vsipprvsip_md.md)] les partenaires ne peuvent pas livrer leurs produits à l’aide de l’auto-inscription dans le cadre de l’installation.
+> Il s’agit d’une pratique acceptée pendant le développement VSPackage pour utiliser l’inscription automatique. Toutefois, [!INCLUDE[vsipprvsip](../../extensibility/includes/vsipprvsip_md.md)] partenaires ne peuvent pas livrer leurs produits à l’aide de l’auto-inscription dans le cadre de l’installation.
 
  Les entrées de Registre dans un package Windows Installer sont généralement effectuées dans la table du Registre. Vous pouvez également enregistrer des extensions de fichier dans la table du Registre. Toutefois, Windows Installer fournit une prise en charge intégrée par le biais de l’identificateur programmatique (ProgId), de la classe, de l’extension et des tables de verbes. Pour plus d’informations, consultez [tables de base de données](/windows/desktop/Msi/database-tables).
 
- Veillez à ce que vos entrées de registre soient associées au composant adapté à la stratégie côte à côte choisie. Par exemple, les entrées de registre d’un fichier partagé doivent être associées au composant Windows Installer de ce fichier. De même, les entrées de registre d’un fichier spécifique à la version doivent être associées au composant de ce fichier. Dans le cas contraire, l’installation ou la désinstallation de votre [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] VSPackage pour une version de peut rompre votre VSPackage dans d’autres versions. Pour plus d’informations, consultez [prise en charge de plusieurs versions de Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md).
+ Veillez à ce que vos entrées de registre soient associées au composant adapté à la stratégie côte à côte choisie. Par exemple, les entrées de registre d’un fichier partagé doivent être associées au composant Windows Installer de ce fichier. De même, les entrées de registre d’un fichier spécifique à la version doivent être associées au composant de ce fichier. Dans le cas contraire, l’installation ou la désinstallation de votre VSPackage pour une version de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] risque de rompre votre VSPackage dans d’autres versions. Pour plus d’informations, consultez [prise en charge de plusieurs versions de Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md).
 
 > [!NOTE]
 > Le moyen le plus simple de gérer l’inscription consiste à utiliser les mêmes données dans les mêmes fichiers pour l’inscription du développeur et l’inscription au moment de l’installation. Par exemple, certains outils de développement de programme d’installation peuvent consommer un fichier au format. reg au moment de la génération. Si les développeurs maintiennent des fichiers. reg pour leur propre développement et débogage quotidiens, ces mêmes fichiers peuvent être inclus dans le programme d’installation automatiquement. Si vous ne pouvez pas partager automatiquement les données d’inscription, vous devez vous assurer que la copie du programme d’installation des données d’inscription est à jour.
@@ -43,11 +43,11 @@ Les VSPackages doivent [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.m
 ## <a name="why-vspackages-should-not-self-register-at-install-time"></a>Pourquoi les VSPackages ne doivent pas s’inscrire automatiquement au moment de l’installation
  Vos programmes d’installation VSPackage ne doivent pas s’appuyer sur l’auto-inscription. À première vue, la conservation des valeurs de registre d’un VSPackage uniquement dans le VSPackage lui-même semble être une bonne idée. Étant donné que les développeurs ont besoin des valeurs de Registre disponibles pour le travail et les tests de routine, il est logique d’éviter de conserver une copie distincte des données du Registre dans le programme d’installation. Le programme d’installation peut s’appuyer sur le VSPackage lui-même pour écrire des valeurs de registre.
 
- Bien qu’en théorie, l’auto-enregistrement présente plusieurs défauts qui le rendent inapproprié pour l’installation du VSPackage:
+ Bien qu’en théorie, l’auto-enregistrement présente plusieurs défauts qui le rendent inapproprié pour l’installation du VSPackage :
 
 - La prise en charge correcte de l’installation, de la désinstallation, de la restauration de l’installation et de la restauration de la désinstallation vous oblige à créer quatre actions personnalisées pour chaque VSPackage géré qui s’inscrit automatiquement en appelant RegPkg.
 
-- Votre approche de la prise en charge côte à côte peut vous amener à créer quatre actions personnalisées qui appellent RegSvr32 ou RegPkg pour chaque version [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]prise en charge de.
+- Votre approche de la prise en charge côte à côte peut nécessiter la création de quatre actions personnalisées qui appellent RegSvr32 ou RegPkg pour chaque version prise en charge de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 
 - Une installation avec des modules auto-inscrits ne peut pas être restaurée en toute sécurité, car il n’est pas possible d’indiquer si les clés auto-inscrites sont utilisées par une autre fonctionnalité ou application.
 

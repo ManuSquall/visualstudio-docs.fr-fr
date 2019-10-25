@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df32012a100d36c8d288b6b988b9498ff4afd3b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f8498b0189a1d5bfb876417d4719adb3487065d5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832553"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742812"
 ---
 # <a name="idiareadexeatoffsetcallback"></a>IDiaReadExeAtOffsetCallback
-Permet à une application cliente fournir des octets d’un fichier exécutable, tel que spécifié par la position de fichier.
+Permet à une application cliente de fournir des octets d’un fichier exécutable comme spécifié par la position de fichier.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,20 +33,20 @@ IDiaReadExeAtOffsetCallback : IUnknown
 
 |Méthode|Description|
 |------------|-----------------|
-|[IDiaReadExeAtOffsetCallback::ReadExecutableAt](../../debugger/debug-interface-access/idiareadexeatoffsetcallback-readexecutableat.md)|Lit le nombre spécifié d’octets commençant au décalage spécifié à partir d’un fichier exécutable.|
+|[IDiaReadExeAtOffsetCallback::ReadExecutableAt](../../debugger/debug-interface-access/idiareadexeatoffsetcallback-readexecutableat.md)|Lit le nombre d’octets spécifié en commençant à l’offset spécifié à partir d’un fichier exécutable.|
 
 ## <a name="remarks"></a>Notes
- L’application cliente implémente cette interface afin de fournir les octets de l’exécutable à l’aide d’un offset absolu dans le fichier de l’exécutable. Pour utiliser une adresse virtuelle relative, implémenter la [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md) interface.
+ L’application cliente implémente cette interface afin de fournir les octets de l’exécutable à l’aide d’un offset absolu dans le fichier de l’exécutable. Pour utiliser une adresse virtuelle relative, implémentez l’interface [IDiaReadExeAtRVACallback](../../debugger/debug-interface-access/idiareadexeatrvacallback.md) .
 
-## <a name="notes-for-callers"></a>Notes de publication pour les appelants
- Cette méthode est implémentée par l’application cliente et passée à la [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) méthode comme une méthode alternative pour la lecture du fichier.
+## <a name="notes-for-callers"></a>Notes pour les appelants
+ Cette méthode est implémentée par l’application cliente et transmise à la méthode [IDiaDataSource :: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) comme méthode alternative pour la lecture du fichier.
 
-## <a name="requirements"></a>Configuration requise
- En-tête : Dia2.h
+## <a name="requirements"></a>spécifications
+ En-tête : Dia2. h
 
- Bibliothèque : diaguids.lib
+ Bibliothèque : diaguids. lib
 
- DLL : msdia80.dll
+ DLL : Msdia80. dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Interfaces (SDK Debug Interface Access)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)

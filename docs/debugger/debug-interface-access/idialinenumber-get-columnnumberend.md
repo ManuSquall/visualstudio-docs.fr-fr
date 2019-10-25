@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 567df436093b53432e44e21fb96f0d092b71c81d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4433bc243a7a4f5352f0476370853572be8ddd38
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839847"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743244"
 ---
-# <a name="idialinenumbergetcolumnnumberend"></a>IDiaLineNumber::get_columnNumberEnd
-Récupère le numéro de colonne source basé sur un où l’expression ou l’instruction se termine.
+# <a name="idialinenumberget_columnnumberend"></a>IDiaLineNumber::get_columnNumberEnd
+Récupère le numéro de colonne source de base 1 où l’expression ou l’instruction se termine.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,13 +33,13 @@ HRESULT get_columnNumberEnd ( 
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-[out] Retourne le numéro de colonne où l’expression ou l’instruction se termine. Si la valeur est zéro, les informations de fin de colonne ne sont pas présentes.
+à Retourne le numéro de la colonne où l’expression ou l’instruction se termine. Si la valeur est égale à zéro, les informations de fin de colonne ne sont pas présentes.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- La valeur de la colonne retournée par cette méthode est un décalage dans la ligne à la position après le dernier caractère de l’instruction sur la ligne d’octets.
+ La valeur de colonne retournée par cette méthode est un décalage d’octet dans la ligne à la position après le dernier caractère de l’instruction sur la ligne.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

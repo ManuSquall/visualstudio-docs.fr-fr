@@ -1,5 +1,5 @@
 ---
-title: Débogage de Services WCF | Microsoft Docs
+title: Débogage des services WCF | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,20 +16,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02ca94704d09288d1e29f6a530ae818053a9d368
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 92349fe14aef8204c67b88ad0f6a4b34346d2347
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62851755"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738069"
 ---
 # <a name="debugging-wcf-services"></a>Débogage de services WCF
 ## <a name="in-this-section"></a>Dans cette section
- [Limitations du débogage WCF](../debugger/limitations-on-wcf-debugging.md) décrit les restrictions sur le débogage de WCF.
+ [Limitations du débogage WCF](../debugger/limitations-on-wcf-debugging.md) Décrit les restrictions relatives au débogage de WCF.
 
- [Guide pratique pour Étape dans les Services WCF](../debugger/how-to-step-into-wcf-services.md) explique la prise en charge du débogueur pour l’exécution pas à pas dans un Service WCF.
+ [Comment : effectuer un pas à pas détaillé dans les services WCF](../debugger/how-to-step-into-wcf-services.md) Explique la prise en charge du débogueur pour l’exécution pas à pas d’un service WCF.
 
- [Guide pratique pour Déboguer un Service de WCF auto-hébergé](../debugger/how-to-debug-a-self-hosted-wcf-service.md) décrit comment déboguer un Service WCF qui s’exécute en dehors de IIS ou le [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] serveur de développement.
+ [Comment : déboguer un service WCF auto-hébergé](../debugger/how-to-debug-a-self-hosted-wcf-service.md) Décrit comment déboguer un service WCF qui s’exécute en dehors d’IIS ou du serveur de développement [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].
 
 ## <a name="see-also"></a>Voir aussi
 - [Sécurité du débogueur](../debugger/debugger-security.md)

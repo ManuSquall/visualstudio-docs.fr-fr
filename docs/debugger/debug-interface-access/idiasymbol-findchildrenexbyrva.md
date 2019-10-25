@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e33f458b3c65d8765ba5cb62e635cf5d39819d60
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: c76bcfee39deb6382199fc652ce5f3a686ac1626
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62831778"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741250"
 ---
 # <a name="idiasymbolfindchildrenexbyrva"></a>IDiaSymbol::findChildrenExByRVA
-Récupère les enfants du symbole sont valides à une adresse virtuelle relative (RVA) spécifiée.
+Récupère les enfants du symbole qui sont valides à une adresse virtuelle relative (RVA) spécifiée.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -37,36 +37,36 @@ HRESULT findChildrenExByRVA ( 
 #### <a name="parameters"></a>Paramètres
  `symtag`
 
-[in] Spécifie les balises de symbole des enfants à récupérer, tel que défini dans le [SymTagEnum (énumération)](../../debugger/debug-interface-access/symtagenum.md). La valeur `SymTagNull` pour tous les enfants doivent être récupérées.
+dans Spécifie les balises de symboles des enfants à récupérer, comme défini dans l' [énumération SymTagEnum](../../debugger/debug-interface-access/symtagenum.md). Affectez la valeur `SymTagNull` pour tous les enfants à récupérer.
 
  `name`
 
-[in] Spécifie le nom des enfants à récupérer. La valeur `NULL` pour tous les enfants doivent être récupérées.
+dans Spécifie le nom des enfants à récupérer. Affectez la valeur `NULL` pour tous les enfants à récupérer.
 
  `compareFlags`
 
-[in] Spécifie les options de comparaison à appliquer à la correspondance de noms. Les valeurs de la [NameSearchOptions (énumération)](../../debugger/debug-interface-access/namesearchoptions.md) énumération peut être utilisée seul ou combiné.
+dans Spécifie les options de comparaison à appliquer à la correspondance de noms. Les valeurs de l’énumération d' [énumération NameSearchOptions](../../debugger/debug-interface-access/namesearchoptions.md) peuvent être utilisées seules ou en combinaison.
 
  `address`
 
-[in] Spécifie l’adresse RVA.
+dans Spécifie l’adresse RVA.
 
  `ppResult`
 
-[out] Retourne un [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) de récupérer l’objet qui contient une liste des symboles enfants.
+à Retourne un objet [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) qui contient une liste des symboles enfants récupérés.
 
 ## <a name="return-value"></a>Valeur de retour
- Retourne `S_OK` si au moins un enfant du symbole a été trouvé, ou retourne `S_FALSE` si aucun enfant n’a été trouvé ; sinon, retourne un code d’erreur.
+ Retourne `S_OK` si au moins un enfant du symbole a été trouvé, ou retourne `S_FALSE` si aucun enfant n’a été trouvé ; Sinon, retourne un code d’erreur.
 
 ## <a name="remarks"></a>Notes
- Les symboles locaux qui sont retournées incluent des informations de plage dynamique.
+ Les symboles locaux retournés incluent des informations de plage dynamique.
 
-## <a name="requirements"></a>Configuration requise
- En-tête : Dia2.h
+## <a name="requirements"></a>spécifications
+ En-tête : Dia2. h
 
- Bibliothèque : diaguids.lib
+ Bibliothèque : diaguids. lib
 
- DLL : msdia100.dll
+ DLL : msdia100. dll
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

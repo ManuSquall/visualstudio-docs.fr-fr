@@ -18,20 +18,20 @@ dev_langs:
 - C++
 - jsharp
 helpviewer_keywords:
-- MSBuild (Visual C++), MIDL task
-- MIDL task (MSBuild (Visual C++))
+- MSBuild (C++), MIDL task
+- MIDL task (MSBuild (C++))
 ms.assetid: 727efa8c-3336-40b8-8bef-ae6cbd77a422
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 301ca4ee88368b9134bbbcd2dc41435590becaed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: b2c5f7e425a7a8c1220ee4b9b09831831c8f0a9a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817569"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747253"
 ---
 # <a name="midl-task"></a>MIDL (tâche)
 Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language), *midl.exe*. Pour plus d’informations, consultez [Informations de référence sur la ligne de commande MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
@@ -87,7 +87,7 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 
      Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.
 
-    |Value|Option de ligne de commande|
+    |valeur|Option de ligne de commande|
     |-----------|--------------------------|
     |**Signed**|**/char signed**|
     |**Unsigned**|**/char unsigned**|
@@ -111,7 +111,7 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 
      Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.
 
-    |Value|Option de ligne de commande|
+    |valeur|Option de ligne de commande|
     |-----------|--------------------------|
     |**Aucun**|**/error none**|
     |**EnableCustom**|**/error**|
@@ -141,7 +141,7 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 
      Si `true`, vérifie que les valeurs enum sont comprises dans une plage autorisée.
 
-     Pour plus d’informations, consultez l’option **/error enum** dans l’aide relative à la ligne de commande (**/?**) de *midl.exe*.
+     Pour plus d’informations, consultez l’option **/error enum** dans l’aide relative à la ligne de commande ( **/?** ) de *midl.exe*.
 
 - **ErrorCheckRefPointers**
 
@@ -167,7 +167,7 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 
      Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.
 
-    |Value|Option de ligne de commande|
+    |valeur|Option de ligne de commande|
     |-----------|--------------------------|
     |**Aucun**|**/client none**|
     |**Stub**|**/client stub**|
@@ -182,7 +182,7 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 
      Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.
 
-    |Value|Option de ligne de commande|
+    |valeur|Option de ligne de commande|
     |-----------|--------------------------|
     |**Aucun**|**/server none**|
     |**Stub**|**/server stub**|
@@ -201,7 +201,7 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 
      Paramètre **Boolean** facultatif.
 
-     Si la valeur est `true`, aucun fichier bibliothèque de types (*.tlb*) n’est généré.
+     Si la valeur est `true`, aucun fichier bibliothèque de types ( *.tlb*) n’est généré.
 
      Pour plus d’informations, consultez l’option **/notlb** dans la page [Informations de référence sur la ligne de commande MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
@@ -257,7 +257,7 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 
      Paramètre **String[]** facultatif.
 
-     Spécifie un ou plusieurs *définitions*, autrement dit, un nom et une valeur facultative à transmettre au préprocesseur C comme s’ils l’étaient par une directive `#define`. Forme de chaque définition : *name[=value]*.
+     Spécifie un ou plusieurs *définitions*, autrement dit, un nom et une valeur facultative à transmettre au préprocesseur C comme s’ils l’étaient par une directive `#define`. Forme de chaque définition : *name[=value]* .
 
      Pour plus d’informations, consultez l’option **/D** dans la page [Informations de référence sur la ligne de commande MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). Reportez-vous également au paramètre **UndefinePreprocessorDefinitions** de ce tableau.
 
@@ -299,7 +299,7 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 
      Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.
 
-    |Value|Option de ligne de commande|
+    |valeur|Option de ligne de commande|
     |-----------|--------------------------|
     |**NotSet**|*\<aucune>*|
     |**1**|**/Zp1**|
@@ -333,7 +333,7 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 
      Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.
 
-    |Value|Option de ligne de commande|
+    |valeur|Option de ligne de commande|
     |-----------|--------------------------|
     |**NotSet**|*\<aucune>*|
     |**Win32**|**/env win32**|
@@ -356,7 +356,7 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 
      Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.
 
-    |Value|Option de ligne de commande|
+    |valeur|Option de ligne de commande|
     |-----------|--------------------------|
     |**NewFormat**|**/newtlb**|
     |**OldFormat**|**/oldtlb**|
@@ -405,7 +405,7 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 
      Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.
 
-    |Value|Option de ligne de commande|
+    |valeur|Option de ligne de commande|
     |-----------|--------------------------|
     |**0**|**/W0**|
     |**1**|**/W1**|

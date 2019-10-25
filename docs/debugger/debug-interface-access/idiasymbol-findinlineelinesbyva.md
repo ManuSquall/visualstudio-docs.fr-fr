@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81ae02877b7e81e0d2240ab2c6eea68f22f0e2d2
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: de092109282506747606799b45b89059bf41fd8a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62837860"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741187"
 ---
 # <a name="idiasymbolfindinlineelinesbyva"></a>IDiaSymbol::findInlineeLinesByVA
-Récupère une énumération qui permet au client d’effectuer une itération dans les informations de numéro de ligne de toutes les fonctions qui sont inline, directement ou indirectement, dans ce symbole dans l’adresse virtuelle spécifiée (VA).
+Récupère une énumération qui permet à un client d’itérer au sein des informations de numéro de ligne de toutes les fonctions qui sont Inline, directement ou indirectement, dans ce symbole, dans l’adresse virtuelle (VA) spécifiée.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,18 +33,18 @@ HRESULT findInlineeLinesByVA ( 
 #### <a name="parameters"></a>Paramètres
  `va`
 
-[in] Spécifie l’adresse utiliser que
+dans Spécifie l’adresse en tant que VA.
 
  `length`
 
-[in] Spécifie la plage d’adresses, en octets, pour couvrir cette requête.
+dans Spécifie la plage d’adresses, en nombre d’octets, à couvrir avec cette requête.
 
  `ppResult`
 
-[out] Contient un `IDiaEnumLineNumbers` objet qui contient la liste des numéros de ligne qui sont récupérés.
+à Contient un objet `IDiaEnumLineNumbers` qui contient la liste des numéros de ligne qui sont récupérés.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne un code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

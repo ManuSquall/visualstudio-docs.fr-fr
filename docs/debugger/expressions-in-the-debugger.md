@@ -19,17 +19,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1134ac538487487834b754407a3cc1a90175c56b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6040988961e918c66ed08e7620607d100b2e07fe
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62849949"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72736217"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Expressions dans le débogueur Visual Studio
 Le débogueur Visual Studio inclut des évaluateurs d’expression qui fonctionnent lorsque vous entrez une expression dans la boîte de dialogue **Espion express** , la fenêtre **Espion** ou la fenêtre **Exécution** . Les évaluateurs d’expression travaillent également dans la fenêtre **Points d’arrêt** et à beaucoup d’autres emplacements du débogueur.
 
-Les sections suivantes décrivent les limitations de l’évaluation d’expression pour les langues prises en charge par Visual Studio.
+Les sections suivantes décrivent les limitations de l’évaluation des expressions pour les langages pris en charge par Visual Studio.
 
 ## <a name="f-expressions-are-not-supported"></a>Les expressions F# ne sont pas prises en charge.
 Les expressions F# ne sont pas reconnues Si vous déboguez du code F#, vous devez traduire vos expressions en syntaxe C# avant d’introduire les expressions dans une boîte de dialogue ou fenêtre de débogueur. Quand vous traduisez des expressions de F# en C#, gardez à l’esprit que C# utilise l’opérateur `==` pour tester l’égalité, tandis que F# utilise un seul `=`.
@@ -97,7 +97,7 @@ Fonctions intrinsèques du débogueur :
 
   Les fonctions intrinsèques du débogueur peuvent également rendre l’évaluation des expressions plus pratique. Par exemple, il est beaucoup plus facile d’écrire `strncmp(str, "asd")` dans une condition de point d’arrêt que `str[0] == 'a' && str[1] == 's' && str[2] == 'd'`. )
 
-|Domaine|Fonctions intrinsèques|
+|Zone|Fonctions intrinsèques|
 |----------|-------------------------|
 |**Longueur de la chaîne**|strlen, wcslen, strnlen, wcsnlen|
 |**Comparaison de chaînes**|strcmp, wcscmp, stricmp, _stricmp, _strcmpi, wcsicmp, _wcscmpi, _wcsnicmp, strncmp, wcsncmp, strnicmp, wcsnicmp|
@@ -121,7 +121,7 @@ Fonctions intrinsèques du débogueur :
 ## <a name="c---unsupported-expressions"></a>Expressions non prises en charge en C#
 
 ### <a name="dynamic-objects"></a>Objets dynamiques
-Vous pouvez utiliser des variables dans les expressions du débogueur qui sont typées statiquement comme dynamiques. Lorsque des objets qui implémentent <xref:System.Dynamic.IDynamicMetaObjectProvider> sont évalués dans la fenêtre Espion, un nœud Affichage dynamique est ajouté. Le nœud Affichage dynamique affiche les membres de l’objet, mais n’autorise pas la modification des valeurs des membres.
+Vous pouvez utiliser des variables dans les expressions du débogueur qui sont typées statiquement comme dynamiques. Quand des objets qui implémentent <xref:System.Dynamic.IDynamicMetaObjectProvider> sont évalués dans la Fenêtre Espion, un nœud d’affichage dynamique est ajouté. Le nœud Affichage dynamique affiche les membres de l’objet, mais n’autorise pas la modification des valeurs des membres.
 
 Les fonctionnalités suivantes des objets dynamiques ne sont pas prises en charge :
 

@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c38962ab5915a4235201e76e1828f84a56af1333
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: c5cff86464a4034ad869cdfe231a88ad128dbf52
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64830779"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739491"
 ---
-# <a name="idiasymbolgetrank"></a>IDiaSymbol::get_rank
+# <a name="idiasymbolget_rank"></a>IDiaSymbol::get_rank
 Récupère le rang (nombre de dimensions) d’un tableau multidimensionnel FORTRAN.
 
 ## <a name="syntax"></a>Syntaxe
@@ -33,16 +33,16 @@ HRESULT get_rank ( 
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-[out] Retourne le nombre de dimensions dans un tableau multidimensionnel FORTRAN.
+à Retourne le nombre de dimensions dans un tableau multidimensionnel FORTRAN.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
-> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> Une valeur de retour de `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
 ## <a name="remarks"></a>Notes
- Rang fait référence au nombre de dimensions dans un tableau où le tableau est déclaré en tant que `myarray[1,2,3]`. Cet exemple a le rang 3 et 3 dimensions. Rang ne s’applique pas à C++ qui utilise le concept d’un tableau de tableaux pour chaque dimension (autrement dit, `myarray[1][2][3]`).
+ Rank fait référence au nombre de dimensions dans un tableau où le tableau est déclaré comme `myarray[1,2,3]`. Cet exemple a un rang de 3 et 3 dimensions. Rank ne s’applique pas C++ à qui utilise le concept d’un tableau de tableaux pour chaque dimension (autrement dit, `myarray[1][2][3]`).
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

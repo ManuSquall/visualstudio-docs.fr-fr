@@ -1,5 +1,5 @@
 ---
-title: Débogueur du nuanceur HLSL | Microsoft Docs
+title: Débogueur de nuanceur HLSL | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,19 +10,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30211d773036bbe12c0e807e3be18f13793360b7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 164c404f3bce6b8216092635e3489843039fb1eb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388632"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72735302"
 ---
 # <a name="hlsl-shader-debugger"></a>Débogueur du nuanceur HLSL
 Le débogueur HLSL de Visual Studio Graphics Analyzer vous aide à comprendre comment votre code de nuanceur HLSL s'exécute dans les conditions réelles de fonctionnement de votre application.
 
  Il se présente comme suit :
 
- ![Débogage à l’aide du langage HLSL Regardez et pile des appels. ](media/gfx_diag_demo_hlsl_debugger_orientation.png "gfx_diag_demo_hlsl_debugger_orientation")
+ ![Débogage HLSL à l’aide des fenêtres espion et pile des appels.](media/gfx_diag_demo_hlsl_debugger_orientation.png "gfx_diag_demo_hlsl_debugger_orientation")
 
 ## <a name="understanding-the-hlsl-debugger"></a>Présentation du débogueur HLSL
  Le débogueur HLSL peut vous aider à comprendre les problèmes qui surviennent dans votre code de nuanceur. Le débogage du code HLSL dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ressemble au débogage du code écrit dans un autre langage, par exemple, C++, C# ou Visual Basic. Vous pouvez examiner le contenu des variables, définir des points d'arrêt, parcourir le code, et remonter la pile d'appels, comme lorsque vous déboguez d'autres langages.
@@ -70,9 +70,9 @@ Le débogueur HLSL de Visual Studio Graphics Analyzer vous aide à comprendre co
    > [!NOTE]
    > Ce point d'entrée dans le débogueur HLSL débogue soit le thread nuanceur de pixels qui correspond à l'appel de dessin choisi, à la primitive, et au pixel que vous avez choisis, soit les threads de nuanceur de sommets dont les résultats sont interpolés par l'appel de dessin, la primitive, et le pixel que vous avez choisis. Dans le cas des nuanceurs de sommets, vous pouvez affiner davantage le point d’entrée à un sommet spécifique en développant les détails du nuanceur de sommets.
 
-   Pour obtenir des exemples sur la façon d’utiliser le débogueur HLSL pour déboguer les erreurs de nuanceur, consultez [exemples](graphics-diagnostics-examples.md) ou les procédures pas à pas liées dans la section Voir aussi.
+   Pour obtenir des exemples sur l’utilisation du débogueur HLSL pour déboguer les erreurs de nuanceur, consultez les [exemples](graphics-diagnostics-examples.md) ou les procédures pas à pas liées à dans la section Voir aussi.
 
 ## <a name="see-also"></a>Voir aussi
-- [Procédure pas à pas : objets manquants en raison de Vertex Shader](walkthrough-missing-objects-due-to-vertex-shading.md)
+- [Procédure pas à pas : objets manquants en raison de l’ombrage de vertex](walkthrough-missing-objects-due-to-vertex-shading.md)
 - [Procédure pas à pas : débogage des erreurs de rendu dues à l’ombrage](walkthrough-debugging-rendering-errors-due-to-shading.md)
 - [Procédure pas à pas : utilisation de Graphics Diagnostics pour déboguer un nuanceur de calcul](walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md)

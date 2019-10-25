@@ -1,5 +1,5 @@
 ---
-title: Fonction SccQueryChanges | Microsoft Docs
+title: SccQueryChanges fonction) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,15 +12,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5e2b1e504bef3ec9507afcddf4f75bc5f697e843
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 617f07a11f92ab65f079c7d1b41773494e3d0c8b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353503"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72720851"
 ---
 # <a name="sccquerychanges-function"></a>Fonction SccQueryChanges
-Cette fonction énumère une liste de fichiers, en fournissant des informations sur les changements de nom pour chaque fichier via une fonction de rappel donnée.
+Cette fonction énumère une liste donnée de fichiers, en fournissant des informations sur les modifications de nom pour chaque fichier via une fonction de rappel.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -37,36 +37,36 @@ SCCRTN SccQueryChanges(
 #### <a name="parameters"></a>Paramètres
  pContext
 
-[in] Le pointeur de contexte de plug-in de contrôle de code source.
+dans Pointeur de contexte du plug-in de contrôle de code source.
 
- nFiles
+ Nfichiers
 
-[in] Nombre de fichiers dans `lpFileNames` tableau.
+dans Nombre de fichiers dans `lpFileNames` tableau.
 
  lpFileNames
 
-[in] Tableau de noms de fichiers pour obtenir des informations.
+dans Tableau de noms de fichiers à propos desquels obtenir des informations.
 
  pfnCallback
 
-[in] Fonction de rappel à appeler pour chaque nom de fichier dans la liste (voir [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md) pour plus d’informations).
+dans Fonction de rappel à appeler pour chaque nom de fichier dans la liste (pour plus d’informations, consultez [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md) ).
 
  pvCallerData
 
-[in] Valeur qui est transmis sans modification à la fonction de rappel.
+dans Valeur qui sera passée sans modification à la fonction de rappel.
 
 ## <a name="return-value"></a>Valeur de retour
- L’implémentation de plug-in de contrôle de source de cette fonction est censée retourner l’une des valeurs suivantes :
+ L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
-|Value|Description|
+|valeur|Description|
 |-----------|-----------------|
 |SCC_OK|Le processus de requête s’est terminé correctement.|
 |SCC_E_PROJNOTOPEN|Le projet n’a pas été ouvert dans le contrôle de code source.|
-|SCC_E_ACCESSFAILURE|Impossible d’accéder au système de contrôle source, probablement en raison de problèmes réseau ou de contention.|
+|SCC_E_ACCESSFAILURE|Un problème est survenu lors de l’accès au système de contrôle de code source, probablement en raison de problèmes de réseau ou de contention.|
 |SCC_E_NONSPECIFICERROR|Une erreur non spécifiée ou générale s’est produite.|
 
 ## <a name="remarks"></a>Notes
- Les modifications en cours d’interrogation sont à l’espace de noms : en particulier, changement de nom, l’ajout et suppression d’un fichier.
+ Les modifications interrogées concernent l’espace de noms : en particulier, en renommant, en ajoutant et en supprimant un fichier.
 
 ## <a name="see-also"></a>Voir aussi
 - [Fonctions d’API du plug-in de contrôle de code source](../extensibility/source-control-plug-in-api-functions.md)

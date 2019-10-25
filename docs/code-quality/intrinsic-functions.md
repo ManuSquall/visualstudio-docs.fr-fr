@@ -15,12 +15,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: b9236a5135d1339f46aeb6f2dd1a11658adf01c2
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 4824cba4de67ad199974f5844c7f220a6fd6accc
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72445709"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745911"
 ---
 # <a name="intrinsic-functions"></a>Fonctions intrinsèques
 Une expression dans SAL peut être une expression CC++ /, à condition qu’il s’agisse d’une expression qui n’a pas d’effets secondaires, par exemple + +,--, et les appels de fonction ont tous des effets secondaires dans ce contexte.  Toutefois, SAL fournit des objets de type fonction et certains symboles réservés qui peuvent être utilisés dans les expressions SAL. Ils sont appelés *fonctions intrinsèques*.
@@ -38,7 +38,7 @@ Les annotations de fonction intrinsèques suivantes fournissent un utilitaire g�
 |`return`|Le mot cléC++ C/reserved `return` peut être utilisé dans une expression SAL pour indiquer la valeur de retour d’une fonction.  La valeur est uniquement disponible dans l’état de publication ; Il s’agit d’une erreur de syntaxe pour l’utiliser dans un état antérieur.|
 
 ## <a name="string-specific"></a>Spécifique à la chaîne
-Les annotations de fonctions intrinsèques suivantes permettent la manipulation de chaînes. Les quatre fonctions ont le même objectif : pour retourner le nombre d’éléments du type qui est trouvé avant un terminateur null. Les différences sont les genres de données dans les éléments auxquels il est question. Notez que, si vous souhaitez spécifier la longueur d’une mémoire tampon se terminant par un caractère null qui n’est pas composée de caractères, utilisez l’annotation `_Nullterm_length_(param)` de la section précédente.
+Les annotations de fonctions intrinsèques suivantes permettent la manipulation de chaînes. Les quatre fonctions ont le même objectif : pour retourner le nombre d’éléments du type qui est trouvé avant un terminateur null. Les différences sont les genres de données dans les éléments auxquels il est question. Notez que, si vous souhaitez spécifier la longueur d’une mémoire tampon se terminant par un caractère null qui ne se compose pas de caractères, utilisez l’annotation `_Nullterm_length_(param)` de la section précédente.
 
 |Annotation|Description|
 |----------------|-----------------|

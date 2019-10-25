@@ -1,5 +1,5 @@
 ---
-title: Les Versions Debug des fonctions d’Allocation de tas | Microsoft Docs
+title: Versions Debug des fonctions d’allocation du tas | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -23,17 +23,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d00ea299ae7cebea5d6ad1a09837dc75e10568aa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d0fde776e9f2bd48aca92c7ba6d7f1fe1e23f01a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852801"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738372"
 ---
 # <a name="debug-versions-of-heap-allocation-functions"></a>Versions Debug des fonctions d'allocation du tas
 La bibliothèque Runtime C contient des versions Debug spéciales des fonctions d'allocation du tas. Ces fonctions utilisent les noms des versions Release, suivis de _dbg. Cette rubrique décrit les différences entre la version Release d’une fonction CRT et la version _dbg à partir d’exemples basés sur `malloc` et `_malloc_dbg`.
 
- Lorsque [_DEBUG](/cpp/c-runtime-library/debug) est défini, le CRT mappe tous les [malloc](/cpp/c-runtime-library/reference/malloc) appelle à [_malloc_dbg](/cpp/c-runtime-library/reference/malloc-dbg). Il est donc inutile de réécrire votre code en utilisant `_malloc_dbg` à la place de `malloc` pour bénéficier de ses avantages pendant le débogage.
+ Lorsque [_ DEBUG](/cpp/c-runtime-library/debug) est défini, le CRT mappe tous les appels [malloc](/cpp/c-runtime-library/reference/malloc) à _ [malloc_dbg](/cpp/c-runtime-library/reference/malloc-dbg). Il est donc inutile de réécrire votre code en utilisant `_malloc_dbg` à la place de `malloc` pour bénéficier de ses avantages pendant le débogage.
 
  Vous pouvez cependant appeler `_malloc_dbg` de façon explicite. Un appel explicite à `_malloc_dbg` présente en outre les avantages suivants :
 
@@ -41,11 +41,11 @@ La bibliothèque Runtime C contient des versions Debug spéciales des fonctions 
 
 - stockage du fichier source et du numéro de la ligne où la demande d'allocation a été effectuée.
 
-  Si vous ne souhaitez pas convertir votre `malloc` appelle à `_malloc_dbg`, vous pouvez obtenir les informations du fichier source en définissant [_CRTDBG_MAP_ALLOC](/cpp/c-runtime-library/crtdbg-map-alloc), ce qui provoque le mappage de préprocesseur directement tous les appels à `malloc` à `_malloc_dbg` au lieu d’utiliser un wrapper autour de `malloc`.
+  Si vous ne souhaitez pas convertir vos appels `malloc` en `_malloc_dbg`, vous pouvez obtenir les informations du fichier source en définissant _ [CRTDBG_MAP_ALLOC](/cpp/c-runtime-library/crtdbg-map-alloc), ce qui amène le préprocesseur à mapper directement tous les appels à `malloc` à `_malloc_dbg` au lieu de s’appuyer sur un wrapper. autour de `malloc`.
 
   Pour effectuer le suivi des différents types d'allocations dans les blocs client, vous devez appeler `_malloc_dbg` directement et affecter au paramètre `blockType` la valeur `_CLIENT_BLOCK`.
 
-  Lorsque _DEBUG n’est pas défini, les appels à `malloc` ne sont pas perturbés, les appels à `_malloc_dbg` sont résolus en `malloc`, la définition de [_CRTDBG_MAP_ALLOC](/cpp/c-runtime-library/crtdbg-map-alloc) est ignorée et la source de fichier les informations se rapportant à la demande d’allocation n’est pas fournie. Dans la mesure où `malloc` ne possède aucun paramètre de type de bloc, les demandes de types `_CLIENT_BLOCK` sont traitées comme des allocations standard.
+  Lorsque _ DEBUG n’est pas défini, les appels à `malloc` ne sont pas perturbés, les appels à `_malloc_dbg` sont résolus en `malloc`, la définition de _ [CRTDBG_MAP_ALLOC](/cpp/c-runtime-library/crtdbg-map-alloc) est ignorée et les informations du fichier source appartenant à la demande d’allocation ne sont pas fournies. Dans la mesure où `malloc` ne possède aucun paramètre de type de bloc, les demandes de types `_CLIENT_BLOCK` sont traitées comme des allocations standard.
 
 ## <a name="see-also"></a>Voir aussi
 

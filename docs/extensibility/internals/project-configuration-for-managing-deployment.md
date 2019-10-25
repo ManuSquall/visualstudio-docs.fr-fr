@@ -11,31 +11,31 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f8dfaf2f802a0470270c7630ccee3a8be583b250
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4ffa661d8bf33219a3a2956cef3e456c9b5f1146
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328454"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72726018"
 ---
 # <a name="project-configuration-for-managing-deployment"></a>Configuration de projet pour la gestion du déploiement
-Déploiement consiste à déplacer physiquement les éléments de sortie à partir d’un processus de génération à l’emplacement attendu pour l’installation et de débogage. Par exemple, une application Web peut être créée sur un ordinateur local et puis placée sur le serveur.
+Le déploiement est l’action de déplacer physiquement les éléments de sortie d’un processus de génération vers l’emplacement prévu pour le débogage et l’installation. Par exemple, une application Web peut être générée sur un ordinateur local, puis placée sur le serveur.
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prend en charge que les projets peuvent être impliqués dans le déploiement de deux manières :
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prend en charge deux méthodes de déploiement des projets dans le déploiement :
 
-- En tant que le sujet du processus de déploiement.
+- Dans le cadre du processus de déploiement.
 
 - En tant que responsable du processus de déploiement.
 
-  Avant de pouvoir déployer des solutions, vous devez d’abord ajouter un projet de déploiement pour configurer les options de déploiement. Si le projet de déploiement n’existe pas déjà, vous êtes invité si vous souhaitez le faire lorsque vous sélectionnez **déployer la Solution** à partir de la **Build** menu ou sélectionnez la solution. En cliquant sur **Oui** ouvre le **ajouter un nouveau projet** boîte de dialogue avec le **Assistant de déploiement à distance** projet sélectionné.
+  Avant de pouvoir déployer des solutions, vous devez d’abord ajouter un projet de déploiement pour configurer les options de déploiement. Si le projet de déploiement n’existe pas encore, il vous est demandé si vous souhaitez en créer un lorsque vous sélectionnez **déployer la solution** dans le menu **générer** ou lorsque vous cliquez avec le bouton droit sur la solution. Cliquer sur **Oui** ouvre la boîte de dialogue **Ajouter un nouveau projet** avec l’option projet de l' **Assistant déploiement distant** sélectionnée.
 
-  L’Assistant de déploiement à distance vous demande pour le type d’application (Windows ou Web), les groupes de sortie de projet à inclure, tous les fichiers que vous souhaitez inclure et l’ordinateur distant que vous souhaitez déployer sur. La dernière page de l’Assistant affiche un résumé des options sélectionnées.
+  L’Assistant déploiement à distance vous demande le type d’application (Windows ou Web), les groupes de sorties de projet à inclure, les fichiers supplémentaires que vous souhaitez inclure et l’ordinateur distant sur lequel vous souhaitez effectuer le déploiement. La dernière page de l’Assistant affiche un résumé des options sélectionnées.
 
-  Les projets qui font l’objet d’un processus de déploiement produisent des éléments de sortie doivent être déplacés vers un autre environnement. De sortie de ces éléments sont décrits en tant que paramètres pour le <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2> interface, dont le principal objectif if pour permettre aux projets à regrouper les sorties. Pour plus d’informations sur l’implémentation de `IVsProjectCfg2`, consultez [Configuration de projet pour la sortie](../../extensibility/internals/project-configuration-for-output.md).
+  Les projets faisant l’objet d’un processus de déploiement produisent des éléments de sortie qui doivent être déplacés vers un autre environnement. Ces éléments de sortie sont décrits comme paramètres de l’interface <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2>, dont l’objectif principal consiste à autoriser les projets à regrouper les sorties. Pour plus d’informations sur l’implémentation de `IVsProjectCfg2`, consultez [configuration de projet pour la sortie](../../extensibility/internals/project-configuration-for-output.md).
 
-  Projets de déploiement, qui gèrent le processus de déploiement, activent la commande de déploiement et répondent lorsque cette commande est sélectionnée. Implémentent des projets de déploiement le <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> interface pour effectuer le déploiement et d’effectuer des appels vers le <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback> interface au rapport déployer des événements d’état.
+  Les projets de déploiement, qui gèrent le processus de déploiement, activent la commande déployer et répondent lorsque cette commande est sélectionnée. Les projets de déploiement implémentent l’interface <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> pour effectuer le déploiement et effectuer des appels à l’interface <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback> pour signaler les événements d’état de déploiement.
 
-  Configurations peuvent spécifier les dépendances qui affectent leurs opérations de génération ou de déploiement. Générez ou déployez les dépendances sont des projets qui doivent être créés ou déployés avant ou après les configurations proprement dits sont créées ou déployées. Créer des dépendances entre projets sont décrites avec les <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> interface et le déploiement des dépendances avec le <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> interface. Pour plus d’informations, consultez [Configuration de projet pour la création de](../../extensibility/internals/project-configuration-for-building.md).
+  Les configurations peuvent spécifier des dépendances qui affectent leurs opérations de génération ou de déploiement. Les dépendances de génération ou de déploiement sont des projets qui doivent être générés ou déployés avant ou après que les configurations elles-mêmes sont générées ou déployées. Les dépendances de build entre les projets sont décrites avec l’interface <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> et déploient des dépendances avec l’interface <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency>. Pour plus d’informations, consultez [configuration de projet pour la génération](../../extensibility/internals/project-configuration-for-building.md).
 
 ## <a name="see-also"></a>Voir aussi
 - [Gestion des options de configuration](../../extensibility/internals/managing-configuration-options.md)

@@ -13,12 +13,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fe39eb0367b65141afed33ea86bc42f548a4341
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f920311301b722c11bea4a9f4eb90e9aa7663d80
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645300"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747734"
 ---
 # <a name="set-radix-command"></a>Définir la base, commande
 Définit ou retourne la base numérique utilisée pour afficher les valeurs entières.

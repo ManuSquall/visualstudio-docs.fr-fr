@@ -1,5 +1,5 @@
 ---
-title: Essentials d’intégration de contrôle de source | Microsoft Docs
+title: Notions fondamentales de l’intégration du contrôle de code source | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,43 +12,43 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6f853f71428086f6c144c352e18e51f3f55c4d00
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fcce3d8fdcc1c99c9b91bfebec572033ff3beb1a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322530"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72723475"
 ---
 # <a name="source-control-integration-essentials"></a>Éléments fondamentaux de l’intégration du contrôle de code source
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prend en charge deux types d’intégration du contrôle de source : un plug-in de contrôle de code source qui fournit les fonctionnalités de base et est généré à l’aide de l’API de plug-in de contrôle de Source (anciennement appelé l’API MSSCCI) et une solution d’intégration de contrôle source hébergé sur le VSPackage qui Fournit des fonctionnalités plus robustes.
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] prend en charge deux types d’intégration du contrôle de code source : un plug-in de contrôle de code source qui fournit des fonctionnalités de base et est généré à l’aide de l’API de plug-in de contrôle de code source (anciennement appelée API MSSCCI) et une solution d’intégration de contrôle de code source basée sur VSPackage. Cela fournit des fonctionnalités plus robustes.
 
 ## <a name="source-control-plug-in"></a>Plug-in de contrôle de code source
- Un plug-in de contrôle de code Source est écrit en tant que DLL qui implémente l’API de plug-in de contrôle de Source. Fonctionnalité d’intégration de contrôle d’enregistrement et de la source est fournie via l’API. Cette approche est plus facile à implémenter qu’un VSPackage de contrôle de code source, et il utilise le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] interface utilisateur (IU) pour la plupart des opérations de contrôle de code source.
+ Un plug-in de contrôle de code source est écrit sous la forme d’une DLL qui implémente l’API de plug-in de contrôle de code source. L’inscription et la fonctionnalité d’intégration du contrôle de code source sont fournies par le biais de l’API. Cette approche est plus facile à implémenter qu’un VSPackage de contrôle de code source et utilise l’interface utilisateur [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pour la plupart des opérations de contrôle de code source.
 
- Pour implémenter un plug-in à l’aide de l’API de plug-in de contrôle de Source de contrôle de code source, procédez comme suit :
+ Pour implémenter un plug-in de contrôle de code source à l’aide de l’API de plug-in de contrôle de code source, procédez comme suit :
 
-1. Créer une DLL qui implémente les fonctions spécifiées dans [Plug-ins de contrôle de code Source](../../extensibility/source-control-plug-ins.md).
+1. Créez une DLL qui implémente les fonctions spécifiées dans les [plug-ins de contrôle de code source](../../extensibility/source-control-plug-ins.md).
 
-2. Inscrivez la DLL en rendant les entrées de Registre appropriée, comme décrit dans [Comment : Installer un plug-in de contrôle de code Source](../../extensibility/internals/how-to-install-a-source-control-plug-in.md).
+2. Inscrivez la DLL en effectuant les entrées de Registre appropriées, comme décrit dans [Comment : installer un plug-in de contrôle de code source](../../extensibility/internals/how-to-install-a-source-control-plug-in.md).
 
-3. Créer une application d’assistance de l’interface utilisateur et l’afficher lorsque vous y êtes invité par le Package de l’adaptateur de contrôle de code Source (le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] composant qui gère les fonctionnalités de contrôle de code source via le plug-ins de contrôle de code source).
+3. Créez une interface utilisateur d’assistance et affichez-la lorsque vous y êtes invité par le package de l’adaptateur de contrôle de code source (le composant [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] qui gère les fonctionnalités de contrôle de code source via les plug-ins de contrôle de code source).
 
-   Pour plus d’informations, consultez [création d’un plug-in de contrôle de Source](../../extensibility/internals/creating-a-source-control-plug-in.md).
+   Pour plus d’informations, consultez [création d’un plug-in de contrôle de code source](../../extensibility/internals/creating-a-source-control-plug-in.md).
 
 ## <a name="source-control-vspackage"></a>VSPackage de contrôle de code source
- Un implémentation VSPackage de contrôle de code source vous permet de développer un remplacement personnalisé pour le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] l’interface utilisateur de contrôle de code source. Cette approche fournit un contrôle complet sur l’intégration du contrôle de code source, mais il vous oblige à fournir des éléments d’interface utilisateur et implémenter les interfaces de contrôle de code source qui seraient sinon fournies sous l’approche de plug-in.
+ Une implémentation du VSPackage de contrôle de code source vous permet de développer un remplacement personnalisé pour l’interface utilisateur du contrôle de code source [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Cette approche fournit un contrôle complet sur l’intégration du contrôle de code source, mais elle vous oblige à fournir les éléments d’interface utilisateur et à implémenter les interfaces de contrôle de code source qui seraient autrement fournies sous l’approche de plug-in.
 
  Pour implémenter un VSPackage de contrôle de code source, vous devez :
 
-1. Créer et inscrire votre propre contrôle de code source VSPackage, comme décrit dans [inscription et sélection](../../extensibility/internals/registration-and-selection-source-control-vspackage.md).
+1. Créez et inscrivez votre propre VSPackage de contrôle de code source, comme décrit dans [inscription et sélection](../../extensibility/internals/registration-and-selection-source-control-vspackage.md).
 
-2. Remplacez le contrôle de code source par défaut l’interface utilisateur avec votre interface utilisateur personnalisée. Consultez [Interface utilisateur personnalisée](../../extensibility/internals/custom-user-interface-source-control-vspackage.md).
+2. Remplacez l’interface utilisateur du contrôle de code source par défaut par votre interface utilisateur personnalisée. Voir [interface utilisateur personnalisée](../../extensibility/internals/custom-user-interface-source-control-vspackage.md).
 
-3. Spécifiez des glyphes à utiliser et gérer **l’Explorateur de solutions** événements de glyphe. Consultez [contrôle de glyphe](../../extensibility/internals/glyph-control-source-control-vspackage.md).
+3. Spécifiez les glyphes à utiliser et gérez les événements de **Explorateur de solutions** glyphe. Consultez [contrôle Glyph](../../extensibility/internals/glyph-control-source-control-vspackage.md).
 
-4. Gère les événements de modification de la requête et d’enregistrement des requêtes, comme indiqué dans [requête d’enregistrement des requêtes modifier](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md).
+4. Gérez les événements de modification de requête et d’enregistrement des requêtes, comme indiqué dans [requête modifier la requête enregistrer](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md).
 
-   Pour plus d’informations, consultez [création d’un VSPackage de contrôle de code Source](../../extensibility/internals/creating-a-source-control-vspackage.md).
+   Pour plus d’informations, consultez [création d’un VSPackage de contrôle de code source](../../extensibility/internals/creating-a-source-control-vspackage.md).
 
 ## <a name="see-also"></a>Voir aussi
 - [Vue d’ensemble](../../extensibility/internals/source-control-integration-overview.md)

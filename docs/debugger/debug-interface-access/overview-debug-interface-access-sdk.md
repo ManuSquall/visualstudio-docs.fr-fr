@@ -1,5 +1,5 @@
 ---
-title: Vue d’ensemble (SDK Debug Interface Access) | Microsoft Docs
+title: Vue d’ensemble (kit de développement logiciel Debug interface Access) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -21,17 +21,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e459d4429d712a9ca4c245d581c6be3578711cd6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1e4269c620247f256d2cfae2e84b76ff60fcf9ba
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62855112"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738608"
 ---
 # <a name="overview-debug-interface-access-sdk"></a>Vue d’ensemble (Kit de développement logiciel Debug Interface Access)
-Utilisez le SDK de DIA pour accéder aux informations de débogage de Microsoft. Le SDK de DIA fournit qu'une COM en fonction d’ensemble d’API qui élimine la nécessité de réécrire votre code chaque fois que Microsoft modifie le format des informations de débogage. Le DIA SDK vous permet également de lire à partir d’un ensemble sélectionné de versions précédentes d’informations de débogage, situés dans des fichiers .pdb et .dbg générés par [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 5.0 et versions ultérieures.
+Utilisez le kit de développement logiciel (SDK) DIA pour accéder aux informations de débogage Microsoft. Le kit de développement logiciel (SDK) DIA fournit un ensemble d’API basé sur COM qui évite de devoir réécrire votre code chaque fois que Microsoft modifie le format des informations de débogage. Le kit de développement logiciel (SDK) DIA vous permet également de lire à partir d’un ensemble sélectionné de versions précédentes des informations de débogage, situées dans les fichiers. pdb et. dbg générés par [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] versions 5,0 et ultérieures.
 
- Chaque interface dans le SDK DIA représente un autre objet COM, sauf cas contraire. Interfaces supplémentaires et donc des objets supplémentaires, sont créés au moyen de requêtes explicites, tel que [IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md) ou [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md), et non en appelant `QueryInterface` sur les pointeurs d’interface existante.
+ Chaque interface dans le kit de développement DIA représente un objet COM différent, sauf indication contraire. Les interfaces supplémentaires et, par conséquent, des objets supplémentaires, sont créées au moyen de requêtes explicites, telles que [IDiaDataSource :: OpenSession](../../debugger/debug-interface-access/idiadatasource-opensession.md) ou [IDiaSession :: findchildren (](../../debugger/debug-interface-access/idiasession-findchildren.md), plutôt que d’appeler `QueryInterface` sur des pointeurs d’interface existants.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md)

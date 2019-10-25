@@ -15,12 +15,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61772ead029dccaff9b1090a469865fcc3742df6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 791663c04d1c1e79eebaed39d339d8d118ffeaae
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666822"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748862"
 ---
 # <a name="outlining"></a>mode Plan
 
@@ -48,8 +48,8 @@ Les commandes suivantes sont disponibles dans le sous-menu **Edition** > **Mode 
 |Arrêter le mode Plan|(**Ctrl**+**M**, **Ctrl**+**P**) : supprime toutes les informations de mode Plan pour la totalité du document.|
 |Arrêter le masquage actuel|(**Ctrl**+**M**, **Ctrl**+**U**) : supprime les informations de mode Plan pour la zone définie par l’utilisateur actuellement sélectionnée. Non disponible en Visual Basic.|
 |Réduire aux définitions|(**Ctrl**+**M**, **Ctrl**+**O**) : réduit les membres de tous les types.|
-|Réduire le bloc :\<limite logique>|(Visual C++) Réduit une zone dans la fonction contenant le point d’insertion. Par exemple, si le point d’insertion se trouve à l’intérieur d’une boucle, celle-ci est masquée.|
-|Réduire tout dans : \<structures logiques>|(Visual C++) Réduit toutes les structures à l’intérieur de la fonction.|
+|Réduire le bloc :\<limite logique>|(C++) Réduit une zone dans la fonction contenant le point d’insertion. Par exemple, si le point d’insertion se trouve à l’intérieur d’une boucle, celle-ci est masquée.|
+|Réduire tout dans : \<structures logiques>|(C++) Réduit toutes les structures à l’intérieur de la fonction.|
 
 Vous pouvez également utiliser le SDK Visual Studio pour définir les zones de texte que vous souhaitez développer ou réduire. Consultez [Procédure pas à pas : mode Plan](../extensibility/walkthrough-outlining.md).
 

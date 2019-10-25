@@ -1,5 +1,5 @@
 ---
-title: 'Erreur : Impossible de se connecter à SQL Server sur un ordinateur distant | Microsoft Docs'
+title: 'Erreur : impossible de se connecter à SQL Server sur la machine distante | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -15,15 +15,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4038f1f65d688ee8d9bbf9ad01eb1698b811bee5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1ecee2a2dbf7c849549ed6f5e844714cbb88bfda
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850119"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72736823"
 ---
-# <a name="error-unable-to-connect-to-sql-server-on-remote-machine"></a>Erreur : Impossible de se connecter à SQL Server sur l’ordinateur distant
-Impossible de se connecter à SQL Server sur un ordinateur distant *nom*. Accès refusé. Vérifiez que vous avez installé le débogueur distant sur l'ordinateur distant. Si l'ordinateur distant ne se trouve pas dans un domaine ou si Visual Studio s'exécute en tant que compte local, l'ordinateur distant doit avoir un compte avec les mêmes nom d'utilisateur et mot de passe que le compte local.
+# <a name="error-unable-to-connect-to-sql-server-on-remote-machine"></a>Erreur : Connexion impossible à SQL Server à partir de l'ordinateur distant
+Impossible de se connecter à SQL Server sur le *nom*de l’ordinateur distant. Accès refusé. Vérifiez que vous avez installé le débogueur distant sur l'ordinateur distant. Si l'ordinateur distant ne se trouve pas dans un domaine ou si Visual Studio s'exécute en tant que compte local, l'ordinateur distant doit avoir un compte avec les mêmes nom d'utilisateur et mot de passe que le compte local.
 
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur
 

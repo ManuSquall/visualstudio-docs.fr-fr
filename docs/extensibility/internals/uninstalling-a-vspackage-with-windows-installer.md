@@ -12,31 +12,31 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ddb09668d3114c055ddac1e4fb677a46754f388
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a8e92937e848d124c18dc91b9bdfa0f020f27f20
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344760"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72722129"
 ---
 # <a name="uninstalling-a-vspackage-with-windows-installer"></a>Désinstallation d’un VSPackage avec Windows Installer
-La plupart du temps, le programme d’installation de Windows peut désinstaller votre VSPackage simplement en « annulation » qu’elle a effectué pour installer votre VSPackage. Les actions personnalisées abordés dans [commandes que doit être exécuté après l’Installation](../../extensibility/internals/commands-that-must-be-run-after-installation.md) doit être exécuté après une désinstallation également. Étant donné que les appels à devenv.exe soient effectuées juste avant l’action standard de InstallFinalize pour l’installation et la désinstallation, les entrées de table CustomAction et InstallExecuteSequence servent les deux cas.
+Pour l’essentiel, Windows Installer pouvez désinstaller votre VSPackage simplement en « annulant » ce qu’il a fait pour installer votre VSPackage. Les actions personnalisées présentées dans les [commandes qui doivent être exécutées après l’installation](../../extensibility/internals/commands-that-must-be-run-after-installation.md) doivent également être exécutées après une désinstallation. Étant donné que les appels à devenv. exe se produisent juste avant l’action standard InstallFinalize pour l’installation et la désinstallation, les entrées CustomAction et InstallExecuteSequence table sont les deux cas.
 
 > [!NOTE]
 > Exécutez `devenv /setup` après la désinstallation d’un package MSI.
 
- En règle générale, si vous ajoutez des actions personnalisées à un package de programme d’installation de Windows, vous devez gérer ces actions pendant la restauration et de la désinstallation. Par exemple, si vous ajoutez des actions personnalisées pour s’inscrire automatiquement à votre VSPackage, vous devez ajouter des actions personnalisées pour annuler son inscription, trop.
+ En règle générale, si vous ajoutez des actions personnalisées à un package Windows Installer, vous devez gérer ces actions lors de la désinstallation et de la restauration. Si vous ajoutez des actions personnalisées pour inscrire automatiquement votre VSPackage, par exemple, vous devez ajouter des actions personnalisées pour annuler son inscription.
 
 > [!NOTE]
-> Il est possible pour un utilisateur à installer votre package Visual Studio, puis désinstaller les versions de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] avec lequel il est intégré. Vous pouvez vous assurer que la désinstallation de votre VSPackage fonctionne dans ce scénario en éliminant les actions personnalisées qui s’exécutent du code avec des dépendances sur [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+> Il est possible pour un utilisateur d’installer votre VSPackage, puis de désinstaller les versions de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] avec lesquelles il est intégré. Vous pouvez vous assurer que la désinstallation de votre VSPackage fonctionne dans ce scénario en éliminant les actions personnalisées qui exécutent du code avec des dépendances sur les [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 
-## <a name="handling-launch-conditions-at-uninstall-time"></a>Gestion des Conditions de lancement au moment de la désinstallation
- L’action standard LaunchConditions lit les lignes de la table LaunchCondition pour afficher l’erreur messages si les conditions ne sont pas remplies. Comme les conditions de lancement sont généralement utilisées pour vous assurer que la configuration système requise est remplies, vous pouvez généralement ignorer des conditions de lancement lors de la désinstallation en ajoutant la condition, `NOT Installed`, à la ligne LaunchConditions de la table LaunchCondition.
+## <a name="handling-launch-conditions-at-uninstall-time"></a>Gestion des conditions de lancement au moment de la désinstallation
+ L’action standard LaunchConditions lit les lignes de la table LaunchCondition pour afficher les messages d’erreur si les conditions ne sont pas remplies. Comme les conditions de lancement sont généralement utilisées pour s’assurer que la configuration requise est respectée, vous pouvez généralement ignorer les conditions de lancement lors de la désinstallation en ajoutant la condition, `NOT Installed`, à la ligne LaunchConditions de la table LaunchCondition.
 
- Une alternative consiste à ajouter `OR Installed` pour lancer des conditions qui ne sont pas importantes lors de la désinstallation. Cela garantit que la condition est toujours true lors de la désinstallation et par conséquent, n’affiche pas le message d’erreur de lancement condition.
+ Une alternative consiste à ajouter `OR Installed` à des conditions de lancement qui ne sont pas importantes lors de la désinstallation. Cela garantit que la condition sera toujours vraie lors de la désinstallation et, par conséquent, n’affichera pas le message d’erreur de condition de lancement.
 
 > [!NOTE]
-> `Installed` est la propriété de que programme d’installation de Windows définit lorsqu’elle détecte que votre VSPackage a déjà été installé sur le système.
+> `Installed` est la propriété Windows Installer définit lorsqu’il détecte que votre VSPackage a déjà été installé sur le système.
 
 ## <a name="see-also"></a>Voir aussi
 - [Windows Installer](https://msdn.microsoft.com/library/187d8965-c79d-4ecb-8689-10930fa8b3b5)

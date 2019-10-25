@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b4709a218f6586320e96f79ea8a9f423f537c7f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1764ec83a69dcc5daff267767594473bf690b341
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839652"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742909"
 ---
 # <a name="idiapropertystoragereaddword"></a>IDiaPropertyStorage::ReadDWORD
 Lit `DWORD` valeurs dans un jeu de propriétés.
@@ -34,17 +34,17 @@ HRESULT ReadDWORD ( 
 #### <a name="parameters"></a>Paramètres
  `id`
 
-[in] Identificateur de la propriété à lire (`PROPID` est défini dans WTypes.h comme un `ULONG`).
+dans Identificateur de la propriété à lire (`PROPID` est défini dans WTypes. h en tant que `ULONG`).
 
  `pValue`
 
-[out] Retourne la valeur de propriété.
+à Retourne la valeur de la propriété.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Retourne `E_INVALIDARG` si la propriété n’est pas de type `DWORD`.
+ En cas de réussite, retourne `S_OK`; Sinon, retourne un code d’erreur. Retourne `E_INVALIDARG` si la propriété n’est pas de type `DWORD`.
 
 ## <a name="remarks"></a>Notes
- Un `DWORD` est défini par Windows comme un entier non signé 32 bits.
+ Une `DWORD` est définie par Windows comme un entier non signé 32 bits.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

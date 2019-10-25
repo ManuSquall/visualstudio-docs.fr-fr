@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c5f54a2b50447125b0abffd8cc62ba9c2a1d2b37
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: 44881035da14483c3ddf1f4c48cb3957a1ce8b50
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887773"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72729087"
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>Modifications du code prisesC# en charge (et Visual Basic)
 Modifier &amp; Continuer gère la plupart des types de modifications du code dans le corps des méthodes. Toutefois, la plupart des modifications en dehors du corps des méthodes et quelques autres à l'intérieur ne peuvent pas s'appliquer pendant le débogage. Pour appliquer ces modifications non prises en charge, vous devez arrêter le débogage et redémarrer avec une version nouvelle du code.
@@ -30,7 +30,7 @@ Modifier &amp; Continuer gère la plupart des types de modifications du code d
 
 Le tableau ci-dessous présente les modifications qui peuvent être C# apportées à et Visual Basic code pendant une session de débogage sans redémarrer la session.
 
-|Élément ou fonctionnalité de langage|Opération de modification prise en charge|Limites|
+|Élément ou fonctionnalité de langage|Opération de modification prise en charge|Limitations|
 |-|-|-|
 |Types|Ajouter des méthodes, des champs, des constructeurs, et al|[Oui](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits)|
 |Iterators|Ajouter ou modifier|Non|
@@ -79,7 +79,7 @@ Le tableau ci-dessous présente les modifications qui peuvent être C# apportée
 |Iterators|Modifier un itérateur dans un projet ciblant .NET Framework 4 et versions antérieures (voir les [Détails](https://github.com/dotnet/roslyn/wiki/EnC-Supported-Edits))|
 
 ## <a name="unsafe-code"></a>Code unsafe
- Les modifications apportées à du code unsafe présentent les mêmes restrictions que celles qui portent sur du code sécurisé, avec une restriction supplémentaire : Modifier & Continuer ne prend pas en charge les modifications apportées à du code non sécurisé qui se `stackalloc` termine dans une méthode qui contient l’opérateur.
+ Les modifications apportées à du code unsafe présentent les mêmes restrictions que celles qui portent sur du code sécurisé, avec une restriction supplémentaire : Modifier &amp; Continuer ne prend pas en charge les modifications de code unsafe dans une méthode qui contient l'opérateur `stackalloc`.
 
 ## <a name="unsupported-app-scenarios"></a>Scénarios d’application non pris en charge
 
@@ -95,7 +95,7 @@ Les applications et les plateformes non prises en charge incluent ASP.NET 5, Sil
 
 - Débogage SQL.
 
-- Débogage d’un dump Dr. Watson.
+- Débogage d’un vidage Dr. Watson.
 
 - Débogage d'une application runtime incorporée.
 
@@ -107,4 +107,4 @@ Les applications et les plateformes non prises en charge incluent ASP.NET 5, Sil
 
 ## <a name="see-also"></a>Voir aussi
 - [Modifier & Continuer (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)
-- [Guide pratique : utiliser Modifier et Continuer (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
+- [Guide pratique pour utiliser Modifier & Continuer (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)

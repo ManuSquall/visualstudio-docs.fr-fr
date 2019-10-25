@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Capture d’informations graphiques par programmation | Microsoft Docs'
+title: 'Procédure pas à pas : capture d’informations graphiques par programmation | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: mikejo5000
@@ -7,14 +7,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 187328e4ef4d1de0c865120400f84e65385160fc
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: e2036588fe04825b0fe1a1aa2db7ae8f7e0b5ad4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71252891"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72734771"
 ---
-# <a name="walkthrough-capturing-graphics-information-programmatically"></a>Procédure pas à pas : capture d’informations graphiques par programmation
+# <a name="walkthrough-capturing-graphics-information-programmatically"></a>Procédure pas à pas : capture d'informations Graphics par programmation
 Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pour capturer par programmation les informations graphiques d'une application Direct3D.
 
 La capture par programmation est particulièrement utile dans les scénarios suivants :
@@ -23,7 +23,7 @@ La capture par programmation est particulièrement utile dans les scénarios sui
 
 - Commencez la capture par programmation quand votre application n'effectue aucun rendu, par exemple, quand elle utilise DirectCompute pour les calculs.
 
-- Appelez `CaptureCurrentFrame`quand un problème de rendu est difficile à anticiper et à capturer dans les tests manuels, mais peut être prédit par programmation à l’aide d’informations sur l’état de l’application au moment de l’exécution.
+- L’appel `CaptureCurrentFrame`when un problème de rendu est difficile à anticiper et à capturer dans les tests manuels, mais peut être prédit par programmation à l’aide d’informations sur l’état de l’application au moment de l’exécution.
 
 ## <a name="CaptureDX11_2"></a> Capture par programmation dans Windows 10
 Cette partie de la procédure pas à pas illustre la capture par programmation dans des applications qui utilisent l’API DirectX 11.2 dans Windows 10, qui elle-même utilise la méthode de capture robuste.
@@ -37,7 +37,7 @@ Cette section montre comment effectuer ces tâches :
 - Capture d'informations graphiques
 
 > [!NOTE]
-> Les implémentations précédentes de la capture par programmation s’appuyaient sur outils de contrôle à distance de Visual Studio pour [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pour fournir une fonctionnalité de capture.
+> Les implémentations précédentes de la capture par programmation utilisaient Outils de contrôle à distance de Visual Studio pour [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pour fournir des fonctionnalités de capture.
 
 ### <a name="preparing-your-app-to-use-programmatic-capture"></a>Préparation de votre application à l'utilisation de la capture par programmation
 Pour utiliser la capture par programmation dans votre application, celle-ci doit inclure les en-têtes nécessaires. Ces en-têtes font partie du Kit SDK Windows 10.
@@ -63,7 +63,7 @@ Pour utiliser la capture par programmation dans votre application, celle-ci doit
 Avant de pouvoir capturer les informations graphiques de DirectX 11.2, vous devez obtenir l'interface de débogage DXGI.
 
 > [!IMPORTANT]
-> Lorsque vous utilisez la capture par programmation, vous devez toujours exécuter votre application dans Graphics Diagnostics ( [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Alt + F5 dans) ou sous l' [outil de capture en ligne de commande](command-line-capture-tool.md).
+> Lorsque vous utilisez la capture par programmation, vous devez toujours exécuter votre application dans Graphics Diagnostics (Alt + F5 dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]) ou sous l' [outil de capture en ligne de commande](command-line-capture-tool.md).
 
 ##### <a name="to-get-the-idxgraphicsanalysis-interface"></a>Pour obtenir l'interface IDXGraphicsAnalysis
 

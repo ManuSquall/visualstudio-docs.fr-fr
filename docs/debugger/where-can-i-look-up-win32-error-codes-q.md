@@ -18,17 +18,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7299139d05a47c079e1aeb29f3b61433cff33bb6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a8e3dda1b728cd631efe8a84913af3d5c475138d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929186"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72728031"
 ---
 # <a name="where-can-i-look-up-win32-error-codes"></a>Où puis-je trouver les codes des erreurs Win32 ?
 WINERROR.H, dans le répertoire INCLUDE de votre installation de système par défaut, contient les définitions des codes d'erreur correspondant aux fonctions API Win32.
 
- Vous pouvez rechercher un code d’erreur en tapant ce code dans la fenêtre **Espion** ou dans la boîte de dialogue **Espion express**. Exemple :
+ Vous pouvez rechercher un code d’erreur en tapant ce code dans la fenêtre **Espion** ou dans la boîte de dialogue **Espion express**. Exemple :
 
 `0x80000004,hr`
 

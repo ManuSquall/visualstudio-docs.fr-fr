@@ -1,5 +1,5 @@
 ---
-title: Aucune Source disponible | Microsoft Docs
+title: Aucune source disponible | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,23 +17,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85d1d1307a119fa23bf7ba015130ab9c7b6f69d5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9f08ed499e61e54ffbc6508bc8353ea955d9a20c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62905217"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72730874"
 ---
 # <a name="no-source-available"></a>Aucune source disponible
 Votre projet ne contient pas de code source pour le code que vous essayez d'afficher. La cause habituelle est le double-clic sur un module qui n’a pas de code source dans la **Fenêtre Pile des appels** ou la **Fenêtre Threads**. Vous pouvez poursuivre le débogage, mais vous ne pouvez pas utiliser la fenêtre source pour définir les points d'arrêt et accomplir d'autres actions à cet emplacement. Si vous avez besoin de définir un point d’arrêt, utilisez plutôt la **Fenêtre Code Machine**.
 
- Dans les pages de propriétés de la solution, vous pouvez changer les répertoires dans lesquels le débogueur recherche des fichiers sources et demander au débogueur d'ignorer les fichiers sources sélectionnés. Consultez [déboguer la boîte de dialogue Pages de propriété de Source des fichiers, les propriétés communes, Solution](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md).
+ Dans les pages de propriétés de la solution, vous pouvez changer les répertoires dans lesquels le débogueur recherche des fichiers sources et demander au débogueur d'ignorer les fichiers sources sélectionnés. Consultez [fichiers sources pour le débogage, propriétés communes, boîte de dialogue pages de propriétés de solution](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md).
 
- **Cliquez sur Parcourir pour rechercher du code source** cliquez sur ce lien pour ouvrir une boîte de dialogue où vous pouvez rechercher le code source.
+ Rechercher le **code source** Cliquez sur ce lien pour ouvrir une boîte de dialogue dans laquelle vous pouvez rechercher le code source.
 
- **Afficher le code machine** lance le **fenêtre code machine**.
+ **Afficher le code machine** Lance la **fenêtre Code machine**.
 
- **Toujours afficher le code machine pour les fichiers sources manquants** Sélectionnez cette option pour afficher le **fenêtre code machine** automatiquement quand aucune source n’est disponible. Ce paramètre peut également être modifié dans la boîte de dialogue **Options**, catégorie **Débogage**, page **Général**, en activant ou en désactivant **Afficher le code machine si la source n’est pas disponible**.
+ **Toujours afficher le code machine pour les fichiers sources manquants** Sélectionnez cette option pour afficher automatiquement la **fenêtre Code machine** quand aucune source n’est disponible. Ce paramètre peut également être modifié dans la boîte de dialogue **Options**, catégorie **Débogage**, page **Général**, en activant ou en désactivant **Afficher le code machine si la source n’est pas disponible**.
 
 ## <a name="see-also"></a>Voir aussi
 - [Fichiers sources pour le débogage, Propriétés communes, boîte de dialogue Pages de propriétés de solution](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md)

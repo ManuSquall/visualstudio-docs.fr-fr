@@ -1,5 +1,5 @@
 ---
-title: L’inscription des modèles de projet et élément | Microsoft Docs
+title: Inscription de modèles de projet et d’élément | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,20 +14,20 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84beaf97bda8d94872be22c6f5d247a746d1ecd3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2e35a476ab8fe8d8de3ce11dd117de4c84a3befa
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66319513"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72724625"
 ---
 # <a name="registering-project-and-item-templates"></a>Inscription de modèles de projet et d’élément
-Types de projets doivent inscrire les répertoires où se trouvent leurs modèles de projet et d’élément de projet. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] utilise les informations d’inscription associées à vos types de projet pour déterminer les éléments à afficher dans le **ajouter un nouveau projet** et **ajouter un nouvel élément** boîtes de dialogue.
+Les types de projets doivent inscrire les répertoires dans lesquels se trouvent les modèles de projet et d’élément de projet. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] utilise les informations d’inscription associées à vos types de projets pour déterminer les éléments à afficher dans les boîtes de dialogue **Ajouter un nouveau projet** et **Ajouter un nouvel élément** .
 
- Pour plus d’informations sur les modèles, consultez [Ajout d’un projet et des modèles d’élément de projet](../../extensibility/internals/adding-project-and-project-item-templates.md).
+ Pour plus d’informations sur les modèles, consultez [Ajout de modèles de projet et d’élément de projet](../../extensibility/internals/adding-project-and-project-item-templates.md).
 
 ## <a name="registry-entries-for-projects"></a>Entrées de Registre pour les projets
- Les exemples suivants montrent les entrées de Registre sous HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\<*Version*>. Les tableaux qui accompagne cet article expliquent les éléments utilisés dans les exemples.
+ Les exemples suivants montrent des entrées de Registre sous HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio \\ <*Version*>. Les tableaux qui l’accompagnent expliquent les éléments utilisés dans les exemples.
 
 ```
 [Projects\{ProjectGUID}]
@@ -37,15 +37,15 @@ Types de projets doivent inscrire les répertoires où se trouvent leurs modèle
 "ProjectTemplatesDir"="C:\\MyProduct\\MyProjectTemplates"
 ```
 
-|Name|Type|Description|
+|Name|Tapez|Description|
 |----------|----------|-----------------|
 |@|REG_SZ|Nom par défaut des projets de ce type.|
-|DisplayName|REG_SZ|ID de ressource du nom doivent être extraites de la DLL satellite inscrit sous Packages.|
-|Package|REG_SZ|ID de classe du package est enregistré sous Packages.|
-|ProjectTemplatesDir|REG_SZ|Chemin d’accès de la valeur par défaut des fichiers de modèle de projet. Les fichiers de modèle de projet sont affichés par le **nouveau projet** modèle.|
+|DisplayName|REG_SZ|ID de ressource du nom à récupérer à partir de la DLL satellite inscrite sous packages.|
+|Package|REG_SZ|ID de classe du package enregistré sous packages.|
+|ProjectTemplatesDir|REG_SZ|Chemin d’accès par défaut des fichiers de modèles de projet. Les fichiers de modèles de projet sont affichés par le nouveau modèle de **projet** .|
 
-### <a name="registering-item-templates"></a>L’inscription de modèles d’élément
- Vous devez inscrire le répertoire où vous stockez des modèles d’élément.
+### <a name="registering-item-templates"></a>Inscription des modèles d’élément
+ Vous devez inscrire le répertoire dans lequel vous stockez les modèles d’élément.
 
 ```
 [Projects\{ProjectGUID}\AddItemTemplates\TemplateDirs\{VSPackageGUID}\1]
@@ -55,21 +55,21 @@ Types de projets doivent inscrire les répertoires où se trouvent leurs modèle
 "SortPriority"=dword:00000064
 ```
 
-| Name | Type | Description |
+| Name | Tapez | Description |
 |--------------------------|-----------| - |
-| @ | REG_SZ | ID de ressource pour les modèles d’ajouter un élément. |
-| TemplatesDir | REG_SZ | Chemin d’accès des éléments de projet affiché dans la boîte de dialogue pour le **ajouter un nouvel élément** Assistant. |
-| TemplatesLocalizedSubDir | REG_SZ | ID de ressource d’une chaîne qui nomme le sous-répertoire de TemplatesDir qui conserve des modèles localisés. Étant donné que [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] charge la ressource de chaîne à partir de DLL satellites si vous les avez, chaque DLL satellite peut contenir un nom de sous-répertoire localisés différents. |
-| SortPriority | REG_DWORD | Définissez SortPriority pour régir l’ordre dans lequel les modèles sont affichés dans le **ajouter un nouvel élément** boîte de dialogue. Plus grandes valeurs SortPriority apparaissent plus haut dans la liste des modèles. |
+| @ | REG_SZ | ID de ressource pour ajouter des modèles d’élément. |
+| TemplatesDir | REG_SZ | Chemin d’accès aux éléments de projet affichés dans la boîte de dialogue de l’Assistant **Ajout d’un nouvel élément** . |
+| TemplatesLocalizedSubDir | REG_SZ | ID de ressource d’une chaîne qui nomme le sous-répertoire de TemplatesDir qui contient les modèles localisés. Étant donné que [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] charge la ressource de chaîne à partir de dll satellites si vous en avez, chaque DLL satellite peut contenir un nom de sous-répertoire localisé différent. |
+| SortPriority | REG_DWORD | Définissez SortPriority pour régir l’ordre dans lequel les modèles sont affichés dans la boîte de dialogue **Ajouter un nouvel élément** . Les valeurs SortPriority plus grandes apparaissent plus haut dans la liste des modèles. |
 
-### <a name="registering-file-filters"></a>L’inscription des filtres de fichiers
- Si vous le souhaitez, vous pouvez inscrire des filtres qui [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] utilise lorsqu’il vous invite à entrer des noms de fichier. Par exemple, le [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] filtrer pour le **ouvrir un fichier** boîte de dialogue est :
+### <a name="registering-file-filters"></a>Inscription des filtres de fichiers
+ Si vous le souhaitez, vous pouvez inscrire des filtres que [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] utilise lorsqu’il demande des noms de fichiers. Par exemple, le filtre [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] de la boîte de dialogue **ouvrir un fichier** est le suivant :
 
- **Fichiers Visual c# (\*.cs,\*.resx,\*.settings,\*.xsd,\*.wsdl) ;\*. cs,\*.resx,\*.settings,\*.xsd,\*.wsdl)**
+ **Fichiers C# visuels (\*. cs, \*. resx, \*. Settings, \*. xsd, \*. WSDL); \*. cs, \*. resx, \*. Settings, 0. xsd, 1. WSDL)**
 
- Pour prendre en charge l’inscription de plusieurs filtres, chaque filtre est inscrit dans sa propre sous-clé sous HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\<*Version*> \Projects\\{} \< *ProjectGUID*>} \Filters\\<*sous-clé*>. Le nom de la sous-clé est arbitraire ; [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ignore les nom de la sous-clé et utilise simplement ses valeurs.
+ Pour prendre en charge l’inscription de plusieurs filtres, chaque filtre est inscrit dans sa propre sous-clé sous HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio \\ <*Version*> \projets \\ {\<*ProjectGuid*>} \Filters \\ <*sous-clé*>. Le nom de la sous-clé est arbitraire ;  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ignore le nom de la sous-clé et utilise uniquement ses valeurs.
 
- Vous pouvez contrôler les contextes dans lesquels un filtre est utilisé en définissant des indicateurs, illustrés dans le tableau suivant. Si un filtre n’a pas de définir des indicateurs, il sera répertorié après les filtres courants dans le **ajouter un élément existant** boîte de dialogue et le **ouvrir un fichier** boîte de dialogue, mais il ne sera pas utilisé dans le **rechercher dans les fichiers**  boîte de dialogue.
+ Vous pouvez contrôler les contextes dans lesquels un filtre est utilisé en définissant des indicateurs, comme indiqué dans le tableau suivant. Si aucun indicateur n’est défini pour un filtre, celui-ci apparaîtra dans la liste des filtres communs de la boîte de dialogue **Ajouter un élément existant** et de la boîte de dialogue **ouvrir un fichier** , mais il ne sera pas utilisé dans la boîte de dialogue **Rechercher dans les fichiers** .
 
 ```
 [Projects\{ProjectGUID}\Filters\MyLanguageFilter]
@@ -82,23 +82,23 @@ Types de projets doivent inscrire les répertoires où se trouvent leurs modèle
 "SortPriority"=dword:00000064
 ```
 
-|Name|Type|Description|
+|Name|Tapez|Description|
 |----------|----------|-----------------|
-|CommonFindFilesFilter|REG_DWORD|Rend le filtre de l’un des filtres courants dans le **rechercher dans les fichiers** boîte de dialogue. Filtres communs sont répertoriés dans la liste des filtres avant les filtres ne pas marqué comme commun.|
-|CommonOpenFilesFilter|REG_DWORD|Rend le filtre de l’un des filtres courants dans le **ouvrir un fichier** boîte de dialogue. Filtres communs sont répertoriés dans la liste des filtres avant les filtres ne pas marqué comme commun.|
-|FindInFilesFilter|REG_DWORD|Répertorie le filtre après les filtres courants dans le **rechercher dans les fichiers** boîte de dialogue.|
-|NotOpenFileFilter|REG_DWORD|Indique que le filtre n’est pas utilisé dans le **ouvrir un fichier** boîte de dialogue.|
-|NotAddExistingItemFilter|REG_DWORD|Indique que le filtre n’est pas utilisé dans le **ajouter un élément existant** boîte de dialogue.|
-|SortPriority|REG_DWORD|Définissez SortPriority pour régir l’ordre dans lequel les filtres sont affichés. Plus grandes valeurs SortPriority apparaissent plus haut dans la liste de filtres.|
+|CommonFindFilesFilter|REG_DWORD|Fait du filtre l’un des filtres courants dans la boîte de dialogue **Rechercher dans les fichiers** . Les filtres courants sont répertoriés dans la liste de filtres avant les filtres qui ne sont pas marqués comme communs.|
+|CommonOpenFilesFilter|REG_DWORD|Fait du filtre l’un des filtres courants dans la boîte de dialogue **ouvrir un fichier** . Les filtres courants sont répertoriés dans la liste de filtres avant les filtres qui ne sont pas marqués comme communs.|
+|FindInFilesFilter|REG_DWORD|Répertorie le filtre après les filtres courants de la boîte de dialogue **Rechercher dans les fichiers** .|
+|NotOpenFileFilter|REG_DWORD|Indique que le filtre n’est pas utilisé dans la boîte de dialogue **ouvrir un fichier** .|
+|NotAddExistingItemFilter|REG_DWORD|Indique que le filtre n’est pas utilisé dans la boîte de dialogue **Ajouter un élément existant** .|
+|SortPriority|REG_DWORD|Définissez SortPriority pour régir l’ordre dans lequel les filtres sont affichés. Les valeurs SortPriority plus grandes apparaissent plus haut dans la liste de filtres.|
 
 ## <a name="directory-structure"></a>Structure de répertoires
- VSPackages peut placer les dossiers et fichiers de modèle n’importe où sur un disque local ou distant, tant que l’emplacement est enregistré via l’environnement de développement intégré (IDE). Toutefois, pour faciliter l’organisation, nous recommandons la structure de répertoire suivante sous le chemin d’installation de votre produit.
+ Les VSPackages peuvent placer des fichiers et des dossiers de modèle n’importe où sur un disque local ou distant, tant que l’emplacement est inscrit via l’environnement de développement intégré (IDE). Toutefois, pour faciliter l’organisation, nous vous recommandons d’utiliser la structure de répertoires suivante dans le chemin d’installation de votre produit.
 
  \Templates
 
- \Projects (contient les modèles de projet)
+ \Projets (contient les modèles de projet)
 
- \Applications
+ \Journaux
 
  \Components
 
@@ -110,9 +110,9 @@ Types de projets doivent inscrire les répertoires où se trouvent leurs modèle
 
  \Form
 
- \Web Page
+ Page \Web
 
- \HelperFiles (contient les fichiers utilisés dans les éléments de plusieurs fichiers projet)
+ \HelperFiles (contient les fichiers utilisés dans les éléments de projet à plusieurs fichiers)
 
  \WizardFiles
 

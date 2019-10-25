@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7391010e409cc25a3151bb2abb806289c81288a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b518cf3728279ea8db267d01867fa66ceae35b21
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554406"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745177"
 ---
-# <a name="idiaaddressmapgetaddressmapenabled"></a>IDiaAddressMap::get_addressMapEnabled
-Indique si un mappage d’adresse a été établi pour une session particulière.
+# <a name="idiaaddressmapget_addressmapenabled"></a>IDiaAddressMap::get_addressMapEnabled
+Indique si un mappage d’adresses a été établi pour une session particulière.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,15 +33,15 @@ HRESULT get_addressMapEnabled ( 
 #### <a name="parameters"></a>Paramètres
  pRetVal
 
-[out] Retourne `TRUE` si le mappage d’adresse est activé.
+à Retourne `TRUE` si le mappage d’adresse est activé.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne un code d’erreur.
 
 ## <a name="remarks"></a>Notes
- Exécutables post-processeurs parfois mettre à jour que le fichier exécutable. DIA contient un mécanisme pour prendre en charge la traduction de symboles de la nouvelle disposition.
+ Les après-processeurs exécutables mettent parfois à jour l’exécutable. DIA contient un mécanisme qui permet de prendre en charge la traduction de symboles vers la nouvelle disposition.
 
- Les applications clientes peuvent définir le mappage d’adresses pour une session particulière en obtenant le [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md) interface à partir de la [IDiaSession](../../debugger/debug-interface-access/idiasession.md) interface et en appelant le [IDiaAddressMap::set_ addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) méthode suivie par un appel à la [IDiaAddressMap::put_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md) (méthode). Le `get_addressMapEnabled` méthode renvoie les résultats de l’appel le `put_addressMapEnabled` (méthode).
+ Les applications clientes peuvent définir le mappage d’adresses pour une session particulière en obtenant l’interface [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md) à partir de l’interface [IDiaSession](../../debugger/debug-interface-access/idiasession.md) et en appelant la méthode [IDiaAddressMap :: set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) suivie d’un appel à la [méthode IDiaAddressMap ::p méthode ut_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md) . La méthode `get_addressMapEnabled` retourne les résultats de l’appel de la méthode `put_addressMapEnabled`.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)

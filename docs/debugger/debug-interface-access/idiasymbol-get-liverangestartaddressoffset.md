@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0312571b0a96b080949398618888b05c2704d3ca
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: b39bf1e73d8b056c1cfcbfafd41dcbbb464c40ce
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64808942"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739919"
 ---
-# <a name="idiasymbolgetliverangestartaddressoffset"></a>IDiaSymbol::get_liveRangeStartAddressOffset
-Retourne la partie décalage de l’adresse de départ de la plage dans laquelle le symbole local est valide.
+# <a name="idiasymbolget_liverangestartaddressoffset"></a>IDiaSymbol::get_liveRangeStartAddressOffset
+Retourne la partie de décalage de l’adresse de début de la plage dans laquelle le symbole local est valide.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,25 +33,25 @@ HRESULT get_liveRangeStartAddressOffset ( 
 #### <a name="parameters"></a>Paramètres
  `offset`
 
-[out] Retourne la partie décalage de la plage d’adresses de départ.
+à Retourne la partie de décalage de la plage d’adresses de début.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne un code d’erreur.
 
 > [!NOTE]
-> Un code d’erreur renvoyé signifie que le symbole n’a pas d’informations sur la plage dynamique.
+> Un code d’erreur retourné signifie que le symbole n’a pas d’informations de plage active.
 
 ## <a name="remarks"></a>Notes
  L’adresse formée par la section et le décalage est le début de la plage dans laquelle le symbole est valide.
 
- Pour obtenir la partie de la section de l’adresse, utilisez [IDiaSymbol::get_liveRangeStartAddressSection](../../debugger/debug-interface-access/idiasymbol-get-liverangestartaddresssection.md).
+ Pour récupérer la partie de l’adresse de la section, utilisez [IDiaSymbol :: get_liveRangeStartAddressSection](../../debugger/debug-interface-access/idiasymbol-get-liverangestartaddresssection.md).
 
-## <a name="requirements"></a>Configuration requise
- En-tête : Dia2.h
+## <a name="requirements"></a>spécifications
+ En-tête : Dia2. h
 
- Bibliothèque : diaguids.lib
+ Bibliothèque : diaguids. lib
 
- DLL : msdia100.dll
+ DLL : msdia100. dll
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

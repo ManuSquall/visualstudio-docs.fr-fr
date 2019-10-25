@@ -1,5 +1,5 @@
 ---
-title: Typedefs de Visual C++ dans le Concepteur de classes
+title: C++Typedefs dans Concepteur de classes
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,14 +13,14 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7bf886aedc27b6e702637b84bbe919971baec9e3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 94dc4a6687a2aaede7fc901884c5d3acc6fbf56f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647581"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748008"
 ---
-# <a name="visual-c-typedefs-in-class-designer"></a>Typedefs de Visual C++ dans le Concepteur de classes
+# <a name="c-typedefs-in-class-designer"></a>C++typedefs dans Concepteur de classes
 
 Les instructions [Typedef](/cpp/cpp/aliases-and-typedefs-cpp#typedefs) créent une ou plusieurs couches d’indirection entre un nom et son type sous-jacent. Le **Concepteur de classes** prend en charge les types typedef C++ qui sont déclarés avec le mot clé `typedef`, par exemple :
 
@@ -84,5 +84,5 @@ typedef class coord
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Utiliser le code Visual C++](working-with-visual-cpp-code.md)
+- [Utiliser du C++ code](working-with-visual-cpp-code.md)
 - [Typedef](/cpp/cpp/aliases-and-typedefs-cpp#typedefs)

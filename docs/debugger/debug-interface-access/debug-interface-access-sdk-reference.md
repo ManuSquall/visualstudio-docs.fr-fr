@@ -1,5 +1,5 @@
 ---
-title: Debug Interface Access SDK Reference | Microsoft Docs
+title: Référence du kit de développement logiciel Debug interface Access | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -14,36 +14,36 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6760e77fc59292c8d4bdeee02690ab65d5edf7f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5aa8e898a4f045f739eed156e181346a9a6e2df3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62555024"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745269"
 ---
 # <a name="debug-interface-access-sdk-reference"></a>Debug Interface Access, référence du SDK
 
-Une référence complète à toutes les interfaces et de prise en charge les énumérations et structures dans le SDK DIA.
+Une référence complète à toutes les interfaces et à la prise en charge des énumérations et des structures dans le kit de développement DIA (SDK).
 
 ## <a name="in-this-section"></a>Dans cette section
 
 [Interfaces (SDK Debug Interface Access)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)
 
-Une référence complète pour toutes les interfaces fournies par le SDK DIA.
+Une référence complète à toutes les interfaces fournies par le kit de développement logiciel (SDK) DIA.
 
 [Énumérations et structures](../../debugger/debug-interface-access/enumerations-and-structures.md)
 
-Une référence complète pour toutes les énumérations et structures requises par les interfaces.
+Une référence complète à toutes les énumérations et structures requises par les interfaces.
 
 [Constantes (Kit de développement logiciel Debug Interface Access)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)
 
-Décrit un nombre de chaînes et leurs étiquettes peuvent être utilisées avec les interfaces.
+Décrit un certain nombre de chaînes et leurs étiquettes qui peuvent être utilisées avec les interfaces.
 
 ## <a name="related-sections"></a>Rubriques connexes
 
 [Symboles et étiquettes de symbole](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)
 
-Décrit quelles sont les symboles et comment ils sont identifiés par type.
+Décrit les symboles et la façon dont ils sont identifiés par type.
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f11b14dd116ea95bda2cc7fad7ac8df634435c9
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 29723f5e253a2ff6d4f6c35e8ad8d3e09e2393f1
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926106"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748653"
 ---
 # <a name="security-page-project-designer"></a>Page Sécurité, Concepteur de projets
 
@@ -36,7 +36,7 @@ Détermine si les paramètres de sécurité sont activés au moment du design. Q
 > [!NOTE]
 > Lors de la publication d’une application à l’aide de l’Assistant **Publication**, cette option est automatiquement activée.
 
-Quand vous sélectionnez cette option, vous pouvez choisir l’une des deux cases d’option suivantes : **Il s’agit d’une application de confiance totale** ou **Il s’agit d’une application de confiance partielle**.
+Quand vous sélectionnez cette option, vous avez la possibilité de sélectionner l’une des deux cases d’option suivantes : **Il s’agit d’une application de confiance totale** ou **Il s’agit d’une application de confiance partielle**.
 
 Cette option est sélectionnée par défaut pour les projets d’application de navigateur web WPF.
 

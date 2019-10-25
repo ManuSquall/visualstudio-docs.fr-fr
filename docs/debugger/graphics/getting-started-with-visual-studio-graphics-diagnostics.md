@@ -1,5 +1,5 @@
 ---
-title: Mise en route avec les diagnostics des graphiques | Microsoft Docs
+title: Prise en main de Graphics Diagnostics | Microsoft Docs
 ms.custom: seodec18
 ms.date: 05/26/2017
 ms.topic: conceptual
@@ -8,18 +8,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fc7dd207a525eaed12db1b2e45e7720d96ee8b6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: eb651d9b35dd4531f4d14e169ab6f04376d4dfff
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388691"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72735690"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Prise en main de Visual Studio Graphics Diagnostics
 Dans cette section, vous allez vous préparer à utiliser Graphics Diagnostics pour la première fois, puis vous allez capturer des frames à partir d’une application Direct3D et les examiner dans Graphics Analyzer.
 
-## <a name="requirements"></a>Configuration requise
- Pour utiliser Graphics Diagnostics dans Visual Studio, vous devez utiliser Visual Studio Enterprise, Visual Studio Professional ou Visual Studio Community.  Autres éditions, y compris Visual Studio Code, ne contiennent pas cette fonctionnalité.
+## <a name="requirements"></a>spécifications
+ Pour utiliser Graphics Diagnostics dans Visual Studio, vous devez utiliser Visual Studio Enterprise, Visual Studio Professional ou Visual Studio Community.  D’autres éditions, y compris les Visual Studio Code, ne contiennent pas cette fonctionnalité.
 
  [!INCLUDE[downloadvs](../includes/downloadvs_md.md)]
 
@@ -33,9 +33,9 @@ Dans cette section, vous allez vous préparer à utiliser Graphics Diagnostics p
 
 #### <a name="to-install-graphics-tools-for-windows-10"></a>Pour installer Outils Graphics pour Windows 10
 
-1. Dans Rechercher, tapez **applications et fonctionnalités** , puis ouvrez le **applications et fonctionnalités** paramètres.
+1. Dans Rechercher, tapez **applications et fonctionnalités** , puis ouvrez les paramètres **applications & fonctionnalités** .
 
-2. Sur le côté droit de la **applications et fonctionnalités** boîte de dialogue, choisissez **gestion des fonctionnalités facultatives** (sous **applications et fonctionnalités**).
+2. Sur le côté droit de la boîte de dialogue **applications & fonctionnalités** , choisissez **gérer les fonctionnalités facultatives** (sous **applications & fonctionnalités**).
 
    La boîte de dialogue **Gérer les fonctionnalités facultatives** s’affiche.
 
@@ -52,15 +52,15 @@ Dans cette section, vous allez vous préparer à utiliser Graphics Diagnostics p
  Une fois que vous avez tout ce dont vous avez besoin, vous êtes prêt à utiliser Graphics Diagnostics. Procédez comme suit :
 
 ### <a name="1---create-a-direct3d-app"></a>1 - Créer une application Direct3D
- Si vous avez déjà votre propre application Direct3D pour Explorer Graphics Diagnostics, très bien ! Sinon, utilisez une des opérations suivantes :
+ Si vous avez déjà votre propre application Direct3D pour explorer Graphics Diagnostics avec, c’est génial ! Dans le cas contraire, utilisez l’une des options suivantes :
 
-- Le **DirectX 11 application (Windows universel)** ou **DirectX 12 application (Windows universel)** modèles de projet pour Windows 10.
-- [Exemple de Direct3D 12 UAP](https://code.msdn.microsoft.com/Direct3D-12-UAP-Sample-ecb1779f) pour Windows 10.
+- Les modèles de projet **application DirectX 11 (Windows universel)** ou **application DirectX 12 (Windows universel)** pour Windows 10.
+- [Exemple d’UAP Direct3D 12](https://code.msdn.microsoft.com/Direct3D-12-UAP-Sample-ecb1779f) pour Windows 10.
 
   Assurez-vous que vous pouvez générer l'application avant de continuer.
 
 ### <a name="2---start-a-graphics-diagnostics-session"></a>2 - Démarrer une session Graphics Diagnostics
- Maintenant, vous êtes prêt à démarrer votre première session Graphics Diagnostics. Dans Visual Studio, dans le menu principal, choisissez **déboguer, graphiques, démarrer le débogage graphique**, ou appuyez simplement sur **Alt + F5**. Cela entraîne le démarrage de votre application dans Graphics Diagnostics et l’affichage des fenêtres de session de diagnostic dans Visual Studio.
+ Maintenant, vous êtes prêt à démarrer votre première session Graphics Diagnostics. Dans Visual Studio, dans le menu principal, choisissez **Déboguer, graphiques, démarrer le débogage graphique**, ou appuyez simplement sur **Alt + F5**. Cela entraîne le démarrage de votre application dans Graphics Diagnostics et l’affichage des fenêtres de session de diagnostic dans Visual Studio.
 
 > [!IMPORTANT]
 > Si vous exécutez votre application sur Windows 10 et si vous n'avez pas encore installé la fonctionnalité facultative Outils Graphics, vous êtes invité à le faire maintenant. Vous devez l’installer avant de pouvoir utiliser Graphics Diagnostics sur Windows 10.
@@ -70,7 +70,7 @@ Dans cette section, vous allez vous préparer à utiliser Graphics Diagnostics p
 
 #### <a name="to-capture-single-frames"></a>Pour capturer des frames uniques
 
-- Dans Visual Studio, choisissez le bouton **Capturer le frame** à partir de la barre d’outils Graphics ou de la fenêtre de session de diagnostic. Ou, si votre application a le focus, appuyez simplement sur le **Impr. écran** clé de votre clavier.
+- Dans Visual Studio, choisissez le bouton **Capturer le frame** à partir de la barre d’outils Graphics ou de la fenêtre de session de diagnostic. Ou, si votre application a le focus, appuyez simplement sur la touche **Impr. écran** de votre clavier.
 
 #### <a name="to-capture-a-sequence-of-frames"></a>Pour capturer une séquence de frames
 
@@ -85,7 +85,7 @@ Dans cette section, vous allez vous préparer à utiliser Graphics Diagnostics p
 
  Si vous avez sélectionné le mauvais frame dans la fenêtre de session de diagnostic, ou si vous souhaitez examiner un autre frame, vous pouvez en sélectionner un nouveau dans Graphics Analyzer. Sous l’onglet **Restituer la cible** de la fenêtre du journal de graphisme, sous l’image de la cible de rendu, développez la **Liste de frames**, puis choisissez un autre frame à examiner.
 
- Pour en savoir plus sur la façon d’utiliser les outils Graphics Analyzer ensemble, consultez le [exemples](graphics-diagnostics-examples.md).
+ Pour en savoir plus sur l’utilisation conjointe des outils Graphics Analyzer, consultez les [exemples](graphics-diagnostics-examples.md).
 
 ## <a name="see-also"></a>Voir aussi
 - [Graphiques Direct3D 12](/windows/desktop/direct3d12/direct3d-12-graphics)

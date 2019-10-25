@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7851d379793ee21562b2993c89442a7fb728ec00
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4a2673880b80f229b05f5efba5c5dfb708aec0f7
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839392"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742446"
 ---
-# <a name="idiasegmentgetexecute"></a>IDiaSegment::get_execute
-Récupère un indicateur qui indique si le segment est exécutable.
+# <a name="idiasegmentget_execute"></a>IDiaSegment::get_execute
+Récupère un indicateur qui signale si le segment est exécutable.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,10 +33,10 @@ HRESULT get_execute ( 
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-[out] Retourne `TRUE` si le segment est marqué comme exécutable ; sinon, retourne `FALSE`.
+à Retourne `TRUE` si le segment est marqué comme exécutable ; Sinon, retourne `FALSE`.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)

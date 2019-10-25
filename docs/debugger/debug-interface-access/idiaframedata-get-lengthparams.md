@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 712f7ee9eaf497fc5dd176f3f254d5af73ebcf3b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aca86590dd214214df671e084925e02e611d521d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829043"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743567"
 ---
-# <a name="idiaframedatagetlengthparams"></a>IDiaFrameData::get_lengthParams
-Récupère le nombre d’octets de l’objet d’un push sur la pile de paramètres.
+# <a name="idiaframedataget_lengthparams"></a>IDiaFrameData::get_lengthParams
+Récupère le nombre d’octets de paramètres faisant l’objet d’un push sur la pile.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,13 +33,13 @@ HRESULT get_lengthParams ( 
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-[out] Retourne le nombre d’octets de paramètres.
+à Retourne le nombre d’octets de paramètres.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- La valeur retournée par cette méthode est généralement utilisée dans l’interprétation d’une chaîne de programme (voir la [IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) méthode pour la définition d’une chaîne de programme).
+ La valeur retournée par cette méthode est généralement utilisée dans l’interprétation d’une chaîne de programme (consultez la méthode [IDiaFrameData :: get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md) pour la définition d’une chaîne de programme).
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

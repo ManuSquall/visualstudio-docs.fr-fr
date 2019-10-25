@@ -15,23 +15,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed0f396613cea4ec2b6d9869e3ef1b121cac236b
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
+ms.openlocfilehash: 00af44212dd142dd94629f886a50b9646488af3b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747377"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747281"
 ---
 # <a name="msbuild-task-reference"></a>Informations de référence sur les tâches MSBuild
 
-Les tâches fournissent le code exécuté pendant le processus de génération. Les tâches de la liste suivante sont incluses dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Quand [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] est installé, des tâches supplémentaires sont disponibles pour générer des projets [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. Pour plus d’informations, voir [Tâches Visual C++](../msbuild/msbuild-tasks-specific-to-visual-cpp.md).
+Les tâches fournissent le code exécuté pendant le processus de génération. Les tâches de la liste suivante sont incluses dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Quand [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] est installé, des tâches supplémentaires sont disponibles pour générer des projets [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. Pour plus d’informations, consultez [ C++ tâches](../msbuild/msbuild-tasks-specific-to-visual-cpp.md).
 
 Outre les paramètres répertoriés dans les rubriques de cette section, chaque tâche comprend les paramètres suivants :
 
 | Paramètre | Description |
 |-------------------| - |
 | `Condition` | Paramètre `String` facultatif.<br /><br /> Expression `Boolean` utilisée par le moteur [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pour déterminer si cette tâche va être exécutée. Pour plus d’informations sur les conditions prises en charge par [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], consultez [Conditions](../msbuild/msbuild-conditions.md). |
-| `ContinueOnError` | Paramètre facultatif. Peut contenir l’une des valeurs suivantes :<br /><br /> -   **WarnAndContinue** ou **true**. En cas d’échec d’une tâche, l’exécution des tâches suivantes de l’élément [Target](../msbuild/target-element-msbuild.md) et de la génération se poursuit, et toutes les erreurs de la tâche sont considérées comme des avertissements.<br />-   **ErrorAndContinue**. En cas d’échec d’une tâche, l’exécution des tâches suivantes de l’élément `Target` et de la génération se poursuit, et toutes les erreurs de la tâche sont considérées comme des erreurs.<br />-   **ErrorAndStop** ou **false** (par défaut). En cas d’échec d’une tâche, les tâches restantes de l’élément `Target` et de la génération ne sont pas exécutées, et tout l’élément `Target` ainsi que la génération sont considérés comme étant en échec.<br /><br /> Les versions de .NET Framework antérieures à 4.5 prenaient en charge uniquement les valeurs `true` et `false`.<br /><br /> Pour plus d'informations, voir [Procédure : Ignorer des erreurs dans des tâches](../msbuild/how-to-ignore-errors-in-tasks.md). |
+| `ContinueOnError` | Paramètre facultatif. Peut contenir l’une des valeurs suivantes :<br /><br /> -   **WarnAndContinue** ou **true**. En cas d’échec d’une tâche, l’exécution des tâches suivantes de l’élément [Target](../msbuild/target-element-msbuild.md) et de la génération se poursuit, et toutes les erreurs de la tâche sont considérées comme des avertissements.<br />-   **ErrorAndContinue**. En cas d’échec d’une tâche, l’exécution des tâches suivantes de l’élément `Target` et de la génération se poursuit, et toutes les erreurs de la tâche sont considérées comme des erreurs.<br />-   **ErrorAndStop** ou **false** (par défaut). En cas d’échec d’une tâche, les tâches restantes de l’élément `Target` et de la génération ne sont pas exécutées, et tout l’élément `Target` ainsi que la génération sont considérés comme étant en échec.<br /><br /> Les versions de .NET Framework antérieures à 4.5 prenaient en charge uniquement les valeurs `true` et `false`.<br /><br /> Pour plus d’informations, voir [Guide pratique : Ignorer les erreurs dans les tâches](../msbuild/how-to-ignore-errors-in-tasks.md). |
 
 ## <a name="in-this-section"></a>Dans cette section
 
@@ -177,7 +177,7 @@ Outre les paramètres répertoriés dans les rubriques de cette section, chaque 
 
 - [Tâche GetReferenceAssemblyPaths](../msbuild/getreferenceassemblypaths-task.md)
 
- Retourne les chemins des assemblys de référence des différents frameworks.
+ Retourne les chemins des assemblys de référence des différentes infrastructures.
 
 - [Tâche LC](../msbuild/lc-task.md)
 
@@ -241,7 +241,7 @@ Outre les paramètres répertoriés dans les rubriques de cette section, chaque 
 
 - [Tâche ResolveNativeReference](../msbuild/resolvenativereference-task.md)
 
- Résout des références natives.
+ Résout les références natives.
 
 - [Tâche ResolveNonMSBuildProjectOutput](../msbuild/resolvenonmsbuildprojectoutput-task.md)
 
@@ -311,4 +311,4 @@ Outre les paramètres répertoriés dans les rubriques de cette section, chaque 
 
 - [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)
 - [Écriture de tâches](../msbuild/task-writing.md)
-- [Tâches](../msbuild/msbuild-tasks.md)
+- [Tâches MSBuild](../msbuild/msbuild-tasks.md)

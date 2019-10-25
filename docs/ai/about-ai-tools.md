@@ -10,18 +10,18 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 39d562509a62874a32e8442e18dece8e3c26fbfc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 497287e2f281a5884ba50a850169770f6750bbed
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62430429"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777464"
 ---
-# <a name="visual-studio-tools-for-ai"></a>Visual Studio Tools pour IA
+# <a name="visual-studio-tools-for-ai"></a>Visual Studio Tools pour l’IA
 
 Visual Studio Tools pour IA est une extension permettant de générer, tester et déployer des solutions de deep learning/IA. Il s’intègre de manière fluide à Azure Machine Learning pour offrir de puissantes fonctionnalités d’expérimentation, notamment mais pas exclusivement pour l’envoi des tâches de préparation des données et d’apprentissage des modèles en toute transparence à différentes cibles de calcul. En outre, il assure la prise en charge des métriques personnalisées et du suivi de l’historique d’exécution, ce qui permet l’audit et la reproductibilité de science des données. La collaboration d’entreprise permet de travailler en toute sécurité sur un projet avec d’autres personnes.
 
-Découvrez le deep learning en utilisant [CNTK (Microsoft Cognitive Toolkit)](http://www.microsoft.com/en-us/cognitive-toolkit), [Google TensorFlow](https://www.tensorflow.org) ou d’autres frameworks deep learning dès aujourd’hui.
+Découvrez le deep learning en utilisant [CNTK (Microsoft Cognitive Toolkit)](https://docs.microsoft.com/cognitive-toolkit/), [Google TensorFlow](https://www.tensorflow.org) ou d’autres frameworks deep learning dès aujourd’hui.
 
 ## <a name="develop-debug-and-deploy-deep-learning-models-and-ai-solutions"></a>Développer, déboguer et déployer des modèles Deep Learning et des solutions d’IA
 Utilisez les fonctionnalités de productivité de Visual Studio pour accélérer l’innovation IA aujourd’hui. Utilisez les fonctionnalités intégrées de l’éditeur de code comme la coloration syntaxique, IntelliSense et la mise en forme automatique du texte. Vous pouvez tester de façon interactive votre application deep learning dans votre environnement local avec un débogage détaillé des variables locales et modèles.
@@ -45,5 +45,5 @@ Cette extension facilite la formation des modèles sur votre ordinateur local. V
 ## <a name="supported-operating-systems"></a>Supported Operating Systems
 Pour l’instant, cette extension prend en charge les systèmes d’exploitation Windows 64 bits.
 
-## <a name="support"></a>Support
-La prise en charge de cette extension est assurée sur le [suivi des problèmes GitHub](http://github.com/Microsoft/vs-tools-for-ai/issues). Vous pouvez envoyer un rapport de bogue ou une suggestion de fonctionnalité et participer aux discussions.
+## <a name="support"></a>Assistance
+La prise en charge de cette extension est assurée sur le [suivi des problèmes GitHub](https://github.com/Microsoft/vs-tools-for-ai/issues). Vous pouvez envoyer un rapport de bogue ou une suggestion de fonctionnalité et participer aux discussions.

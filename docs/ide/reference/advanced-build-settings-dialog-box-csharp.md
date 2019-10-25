@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c4a1c902047b76ef3b29814d10cfc112ab9c7274
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 78817f65197c2dd295a6f2202f913c48b54e1ed9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186788"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748807"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>Paramètres de build avancés, boîteC#de dialogue ()
 
@@ -46,15 +46,15 @@ La valeur par défaut C# est 7,0.
 
 **Rapport d’erreurs du compilateur interne**
 
-Spécifie s’il faut signaler les erreurs du compilateur à Microsoft. Si la valeur est **prompt** (valeur par défaut), une invite s’affiche en cas d’erreur interne du compilateur, et vous donne la possibilité d’envoyer un rapport d’erreurs par voie électronique à Microsoft. Si la valeur est **send**, un rapport d’erreurs est envoyé automatiquement. Si la valeur est **queue**, les rapports d’erreurs sont mis en file attente. Si la valeur est **none**, l’erreur est signalée uniquement dans la sortie de texte du compilateur. Pour plus d’informations, consultez [/errorreport (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/errorreport-compiler-option).
+Spécifie s’il faut signaler les erreurs du compilateur à Microsoft. Si la valeur est **prompt** (valeur par défaut), une invite s’affiche en cas d’erreur interne du compilateur, et vous donne la possibilité d’envoyer un rapport d’erreurs par voie électronique à Microsoft. Si la valeur est **send**, un rapport d’erreurs est envoyé automatiquement. Si la valeur est **queue**, les rapports d’erreurs sont mis en file attente. Si la valeur est **none**, l’erreur est signalée uniquement dans la sortie de texte du compilateur. Pour plus d’informations, consultez l’article [/errorreport (C# Compiler Options) (/errorreport [Options du compilateur C#])](/dotnet/csharp/language-reference/compiler-options/errorreport-compiler-option).
 
 **Vérifier les dépassements de capacité arithmétiques positifs et négatifs**
 
-Spécifie si une instruction arithmétique entière hors de portée des mots clés [checked](/dotnet/csharp/language-reference/keywords/checked) ou [unchecked](/dotnet/csharp/language-reference/keywords/unchecked), dont la valeur n’est pas comprise dans la plage du type de données, doit provoquer la levée d’une exception à l’exécution. Pour plus d’informations, consultez [/checked (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/checked-compiler-option).
+Spécifie si une instruction arithmétique entière hors de portée des mots clés [checked](/dotnet/csharp/language-reference/keywords/checked) ou [unchecked](/dotnet/csharp/language-reference/keywords/unchecked), dont la valeur n’est pas comprise dans la plage du type de données, doit provoquer la levée d’une exception à l’exécution. Pour plus d’informations, consultez l’article [/checked (C# Compiler Options) (/checked [Options du compilateur C#])](/dotnet/csharp/language-reference/compiler-options/checked-compiler-option).
 
 **Ne pas référencer mscorlib.dll**
 
-Spécifie si mscorlib.dll doit être importé dans votre programme, en définissant l’intégralité de l’espace de noms <xref:System>. Cochez cette case pour définir ou créer vos propres objets et espaces de noms <xref:System>. Pour plus d’informations, consultez [/nostdlib (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/nostdlib-compiler-option).
+Spécifie si mscorlib.dll doit être importé dans votre programme, en définissant l’intégralité de l’espace de noms <xref:System>. Cochez cette case pour définir ou créer vos propres objets et espaces de noms <xref:System>. Pour plus d’informations, consultez l’article [/nostdlib (C# Compiler Options) (/nostdlib [Options du compilateur C#])](/dotnet/csharp/language-reference/compiler-options/nostdlib-compiler-option).
 
 ## <a name="output"></a>Sortie
 
@@ -84,7 +84,7 @@ Indique le type d'informations de débogage générées par le compilateur. Pour
 
    Incorpore les informations de symboles portables dans l’assembly. Aucun fichier .PDB externe n’est produit.
 
-Pour plus d’informations, consultez [/debug (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option).
+Pour plus d’informations, consultez l’article [/debug (C# Compiler Options) (/debug [Options du compilateur C#])](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option).
 
 **Alignement des fichiers**
 
@@ -92,7 +92,7 @@ Spécifie la taille des sections dans le fichier de sortie. Les valeurs valides 
 
 **Adresse de base de la bibliothèque**
 
-Spécifie l'adresse de base préférée à laquelle charger une DLL. L’adresse de base par défaut d’une DLL est définie par le Common Language Runtime (CLR) .NET Framework. Pour plus d’informations, consultez [/baseaddress (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/baseaddress-compiler-option).
+Spécifie l'adresse de base préférée à laquelle charger une DLL. L’adresse de base par défaut d’une DLL est définie par le Common Language Runtime (CLR) .NET Framework. Pour plus d’informations, consultez l’article [/baseaddress (C# Compiler Options) (/baseaddress [Options du compilateur C#])](/dotnet/csharp/language-reference/compiler-options/baseaddress-compiler-option).
 
 ## <a name="see-also"></a>Voir aussi
 

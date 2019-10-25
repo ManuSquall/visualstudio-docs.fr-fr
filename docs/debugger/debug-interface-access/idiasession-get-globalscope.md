@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b68a2a7105fba7bfb6f1240c6eec8c6ae497bed6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1e3dd8d8cb4569857705de1dfebcffe9ee8caed2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839197"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741959"
 ---
-# <a name="idiasessiongetglobalscope"></a>IDiaSession::get_globalScope
+# <a name="idiasessionget_globalscope"></a>IDiaSession::get_globalScope
 Récupère une référence à la portée globale.
 
 ## <a name="syntax"></a>Syntaxe
@@ -33,10 +33,10 @@ HRESULT get_globalScope ( 
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-[out] Retourne un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objet qui représente la portée globale.
+à Retourne un objet [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) qui représente la portée globale.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne un code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [Exe](../../debugger/debug-interface-access/exe.md)

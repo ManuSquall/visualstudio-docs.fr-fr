@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9a99eef692eb776908c6b8c4a32eb361092855a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8aacaa43dc9a95faee886440623fb4238abf9be5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658305"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748356"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Vue d'ensemble de l'interface utilisateur des outils de langage spécifique à un domaine
 Lorsque vous ouvrez pour la première fois une solution Outils Domain-Specific Language (outils DSL) dans Visual Studio, l’interface utilisateur doit ressembler à l’image suivante.

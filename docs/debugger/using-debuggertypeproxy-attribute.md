@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 091619353adacaeb9c6996653ac64a0bcd84bb5c
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: d56d173d715258153f284c55d9bac80c06a50002
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72568958"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72728721"
 ---
 # <a name="tell-the-debugger-what-type-to-show-using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>Indiquer au débogueur le type à afficher à l’aide deC#l’attribut DebuggerTypeProxy C++(, Visual Basic,/CLI)
 

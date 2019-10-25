@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Afficher les informations de Trace WPF | Microsoft Docs'
+title: 'Comment : afficher les informations de trace WPF | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55b818940a8e2a779c7bbc0e17dec5cd891a2d88
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 82c3f193c32b4e6a67bb0fe5540aa9d0020e77ea
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62848111"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733466"
 ---
-# <a name="how-to-display-wpf-trace-information"></a>Procédure : Afficher les informations de trace WPF
+# <a name="how-to-display-wpf-trace-information"></a>Comment : afficher les informations de trace WPF
 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] peut recevoir des informations de trace de débogage envoyées par des applications WPF et afficher ces informations dans la fenêtre **Sortie**. Pour afficher les informations de trace de débogage, le traçage WPF doit être activé.
 
  Vous pouvez activer le traçage WPF dans votre fichier App.Config ou par programmation en utilisant la classe <xref:System.Diagnostics.PresentationTraceSources>. La fenêtre **Options** est le moyen le plus simple d’activer le traçage WPF. Le traçage WPF pour les applications Web n'est pas pris en charge.
@@ -46,7 +46,7 @@ ms.locfileid: "62848111"
 
      Un contrôle de liste déroulante s’affiche dans la colonne Paramètres en regard de **Liaison de données** ou de la catégorie sur laquelle vous avez cliqué.
 
-8. Cliquez sur la liste déroulante et sélectionnez le type d’informations de trace que vous souhaitez voir : **Tous les**, **critique**, **erreur**, **avertissement**, **informations**, **Verbose**, ou **ActivityTracing**.
+8. Cliquez sur la liste déroulante et sélectionnez le type d’informations de trace que vous voulez voir : **Tous**, **Critique**, **Erreur**, **Avertissement**, **Informations**, **Commentaires** ou **Activité**.
 
      **Critique** permet de tracer uniquement les événements « Critique ».
 

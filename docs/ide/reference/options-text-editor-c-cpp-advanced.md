@@ -14,12 +14,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6c5399411998f4a03468f2dedccfd660eaf8de11
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
-ms.translationtype: HT
+ms.openlocfilehash: cbdbadd93eec07c43aba99e40072cb6173e0e83d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461819"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747828"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Options, Éditeur de texte, C/C++, Avancé
 
@@ -28,7 +28,7 @@ En modifiant ces options, vous pouvez changer le comportement lié à IntelliSen
 Pour accéder à cette page, dans le volet gauche de la boîte de dialogue **Options**, développez **Éditeur de texte**, **C/C++** , puis choisissez **Avancé**.
 
 > [!NOTE]
-> Il est possible que pour certains des éléments de l’interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L’édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Consultez [Personnaliser l’IDE Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
+> Il est possible que pour certains des éléments de l'interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L’édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Consultez [Personnaliser l’IDE Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="browsingnavigation"></a>Navigation de fichiers/répertoires
 
@@ -52,7 +52,7 @@ La base de données de navigation du code ne collecte pas les données pour les 
 
 **Désactiver le nettoyage implicite**
 
-La base de données de navigation du code ne nettoie pas les fichiers implicites qui ne sont plus référencés. Cette option empêche les fichiers implicites d’être supprimés de la base de données quand ils ne sont plus utilisés. Par exemple, si vous ajoutez une directive `#include` qui référence mapi.h à l’un de vos fichiers sources, mapi.h est trouvé et indexé. Si vous supprimez ensuite la directive #include et que le fichier n’est pas référencé ailleurs, les informations le concernant sont supprimées, sauf si vous choisissez cette option. (Voir l’option **Intervalle de nouvelle analyse de la solution**.) Cette option est ignorée quand vous relancez explicitement l’analyse de la solution.
+La base de données de navigation du code ne nettoie pas les fichiers implicites qui ne sont plus référencés. Cette option empêche les fichiers implicites d’être supprimés de la base de données quand ils ne sont plus utilisés. Par exemple, si vous ajoutez une directive `#include` qui référence mapi.h à l’un de vos fichiers sources, mapi.h est trouvé et indexé. Si vous supprimez ensuite la directive #include et que le fichier n’est pas référencé ailleurs, les informations le concernant sont supprimées, sauf si vous choisissez cette option. (Voir l’option **intervalle de nouvelle analyse** de la solution.) Cette option est ignorée quand vous effectuez une nouvelle analyse de la solution de manière explicite.
 
 **Activer les dossiers de dépendances externes**
 
@@ -64,7 +64,7 @@ Recréez entièrement la base de données de navigation du code lors du prochain
 
 **Intervalle de nouvelle analyse de la solution**
 
-Un travail « Relancer l’analyse de la solution maintenant » est planifié pour l’intervalle que vous spécifiez. Vous devez spécifier une valeur entre 0 et 5 000 minutes. La valeur par défaut est 60 minutes. Pendant la nouvelle analyse de la solution, les horodateurs de fichiers sont vérifiés pour déterminer si un fichier a été modifié en dehors de l’IDE. (Les modifications effectuées dans l’IDE sont automatiquement suivies et les fichiers sont mis à jour.) Les fichiers inclus implicitement sont vérifiés pour déterminer s’ils sont toujours référencés.
+Un travail « Relancer l’analyse de la solution maintenant » est planifié pour l’intervalle que vous spécifiez. Vous devez spécifier une valeur entre 0 et 5 000 minutes. La valeur par défaut est 60 minutes. Pendant la nouvelle analyse de la solution, les horodateurs de fichiers sont vérifiés pour déterminer si un fichier a été modifié en dehors de l’IDE. (Les modifications apportées à l’IDE sont suivies automatiquement et les fichiers sont mis à jour.) Les fichiers inclus implicitement sont vérifiés pour déterminer s’ils sont toujours référencés.
 
 ## <a name="diagnostic-logging"></a>Journalisation des diagnostics
 

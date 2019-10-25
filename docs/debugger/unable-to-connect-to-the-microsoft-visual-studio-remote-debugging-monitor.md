@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c42cdfc5c3f3c0267fdcbdfca8ddc4bb30663384
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 872f7c594344af2c59ebe7f8d1fbd1a640dd2190
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924524"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72728828"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Impossible de se connecter à l'ordinateur Microsoft Visual Studio Remote Debugging Monitor
 Ce message peut s’afficher, car le moniteur de débogage à distance n’est pas correctement configuré sur l’ordinateur distant ou l’ordinateur distant est inaccessible en raison de problèmes réseau ou de la présence d’un pare-feu.
@@ -28,9 +28,9 @@ Ce message peut s’afficher, car le moniteur de débogage à distance n’est p
 > [!IMPORTANT]
 > Si vous pensez que vous avez reçu ce message en raison d’un bogue produit, veuillez [signaler ce problème](../ide/how-to-report-a-problem-with-visual-studio.md) à Visual Studio. Si vous avez besoin d’aide supplémentaire, consultez [Talk to Us](../ide/talk-to-us.md) pour savoir comment contacter Microsoft.
 
-## <a name="specificerrors"></a>Quel est le message d’erreur détaillé?
+## <a name="specificerrors"></a>Quel est le message d’erreur détaillé ?
 
-Le `Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor` message est générique. En règle générale, un message plus spécifique est inclus dans la chaîne d’erreur et peut vous aider à identifier la cause du problème ou à rechercher un correctif plus exact. Voici quelques-uns des messages d’erreur les plus courants qui sont ajoutés au message d’erreur principal:
+Le message `Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor` est générique. En règle générale, un message plus spécifique est inclus dans la chaîne d’erreur et peut vous aider à identifier la cause du problème ou à rechercher un correctif plus exact. Voici quelques-uns des messages d’erreur les plus courants qui sont ajoutés au message d’erreur principal :
 
 - [Le débogueur ne peut pas se connecter à l’ordinateur distant. Le débogueur n’a pas pu résoudre le nom de l’ordinateur spécifié](#cannot_connect)
 - [La demande de connexion a été rejetée par le débogueur distant](#rejected)
@@ -43,9 +43,9 @@ Le `Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor` m
 
 ## <a name="cannot_connect"></a>Le débogueur ne peut pas se connecter à l’ordinateur distant. Le débogueur n’a pas pu résoudre le nom de l’ordinateur spécifié
 
-Procédez comme suit:
+Procédez comme suit :
 
-1. Veillez à entrer un nom d’ordinateur et un numéro de port valides dans la boîte de dialogue **attacher au processus** ou dans les propriétés du projet (pour définir les propriétés, consultez [ces étapes](#server_incorrect)). Le nom de l’ordinateur doit être au format suivant:
+1. Veillez à entrer un nom d’ordinateur et un numéro de port valides dans la boîte de dialogue **attacher au processus** ou dans les propriétés du projet (pour définir les propriétés, consultez [ces étapes](#server_incorrect)). Le nom de l’ordinateur doit être au format suivant :
 
     `computername:port`
 
@@ -73,7 +73,7 @@ Une erreur interne s’est produite. Redémarrez Visual Studio et réessayez.
 
 ## <a name="no_server"></a>Il n’existe aucun serveur du nom spécifié en cours d’exécution sur l’ordinateur distant
 
-Visual Studio n’a pas pu se connecter au débogueur distant. Ce message peut s’afficher pour plusieurs raisons:
+Visual Studio n’a pas pu se connecter au débogueur distant. Ce message peut s’afficher pour plusieurs raisons :
 
 - Le débogueur distant peut s’exécuter sous un compte d’utilisateur différent. Consultez [ces étapes](#user_accounts)
 
@@ -83,7 +83,7 @@ Visual Studio n’a pas pu se connecter au débogueur distant. Ce message peut s
 
 ## <a name="valid_name"></a>Le nom demandé est valide, mais aucune donnée du type demandé n’a été trouvée
 
-L’ordinateur distant existe, mais Visual Studio n’a pas pu se connecter au débogueur distant. Ce message peut s’afficher pour plusieurs raisons:
+L’ordinateur distant existe, mais Visual Studio n’a pas pu se connecter au débogueur distant. Ce message peut s’afficher pour plusieurs raisons :
 
 - Un problème DNS empêche la connexion. Consultez [ces étapes](#dns).
 
@@ -117,7 +117,7 @@ En cas d’échec, vérifiez que l’ordinateur distant est accessible sur le r�
 
 ### <a name="server_incorrect"></a>Le nom du serveur est incorrect ou un logiciel tiers interfère avec le débogueur distant
 
-Dans Visual Studio, examinez les propriétés du projet et assurez-vous que le nom du serveur est correct. Consultez les rubriques relatives à [ C# et Visual Basic](../debugger/remote-debugging-csharp.md#remote_csharp) et [C++](../debugger/remote-debugging-cpp.md#remote_cplusplus). Pour ASP.NET, ouvrez **Propriétés/Web/serveurs** ou **Propriétés/** déboguer en fonction de votre type de projet.
+Dans Visual Studio, examinez les propriétés du projet et assurez-vous que le nom du serveur est correct. Consultez les rubriques relatives à [ C# et Visual Basic](../debugger/remote-debugging-csharp.md#remote_csharp) et [C++](../debugger/remote-debugging-cpp.md#remote_cplusplus). Pour ASP.NET, ouvrez **Propriétés/Web/serveurs** ou **Propriétés/déboguer** en fonction de votre type de projet.
 
 > [!NOTE]
 > Si vous effectuez un attachement au processus, les paramètres distants dans les propriétés du projet ne sont pas utilisés.

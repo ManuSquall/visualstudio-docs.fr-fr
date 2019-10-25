@@ -21,17 +21,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a9ab4300484e81e70abd36dbdba28521f91cd62
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b7daa58004b118d46a8248428e9a9d242dfccef8
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62903939"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72730597"
 ---
 # <a name="property-pages-settings-for-web-projects"></a>Paramètres des pages de propriétés pour les projets Web
 Vous pouvez modifier les paramètres de propriété de configuration Debug d’un site web dans la boîte de dialogue **Pages de propriétés**, comme indiqué dans [Configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md). Les tableaux suivants indiquent où se trouvent les paramètres du débogueur dans la boîte de dialogue **Pages de propriétés**.
 
-### <a name="start-options-category"></a>Catégorie d’Options de démarrage
+### <a name="start-options-category"></a>Catégorie des options de démarrage
 
 | **Paramètre** | **Description** |
 | - | - |
@@ -42,7 +42,7 @@ Vous pouvez modifier les paramètres de propriété de configuration Debug d’u
 | **Arguments de ligne de commande :** | Spécifie les arguments de la commande spécifiée ci-dessus. |
 | **Répertoire de travail :** | Spécifie le répertoire de travail du programme en cours de débogage. En [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], le répertoire de travail est celui à partir duquel l'application est lancée : \bin\debug par défaut. |
 | **URL de démarrage** | Spécifie l'emplacement de l'application Web que vous voulez déboguer. |
-| **Ne pas ouvrir de page. Attendre une demande émanant d’une application externe** | Indique d'attendre une demande émanant d'une application externe. Cette option ne lance pas Internet Explorer ou une autre application. Elle prépare simplement au débogage en cas d'appel par une application. |
+| **N’ouvrez pas une page. Attendre une demande émanant d’une application externe** | Indique d'attendre une demande émanant d'une application externe. Cette option ne lance pas Internet Explorer ou une autre application. Elle prépare simplement au débogage en cas d'appel par une application. |
 | **Serveur** | Titre qui regroupe des options liées au serveur à utiliser. |
 | **Utiliser le serveur Web par défaut** | Indique d'utiliser le serveur Web par défaut. |
 | **Utiliser le serveur personnalisé** | Vous permet d'entrer l'URL de base à utiliser comme serveur. |

@@ -1,5 +1,5 @@
 ---
-title: Vue d’ensemble du Service de langage hérité | Microsoft Docs
+title: Vue d’ensemble du service de langage hérité | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,24 +10,24 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dcc7fa218d5ee4ba92af5ad8316f95ceb268bdf6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 8dfec9cc8b57dfb12b3977cc04e2e62ecc0dea96
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344905"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72726865"
 ---
 # <a name="legacy-language-service-overview"></a>Présentation du service de langage hérité
-Un service de langage prend en charge de l’éditeur qui vous permet d’implémenter certains [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fonctionnalités. Les classes de service de langage de Managed Package Framework (MPF) totalement en charge pour les fonctionnalités les plus courantes et la prise en charge partielle d’autres fonctionnalités.
+Un service de langage fournit une prise en charge de l’éditeur qui vous permet d’implémenter certaines fonctionnalités de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Les classes du service de langage de l’infrastructure de package managé (MPF) fournissent une prise en charge complète des fonctionnalités fréquemment utilisées et de la prise en charge partielle des autres fonctionnalités.
 
 ## <a name="fully-supported-features-in-the-mpf"></a>Fonctionnalités entièrement prises en charge dans le MPF
- Les classes de service de langage MPF prennent en charge les fonctionnalités suivantes :
+ Les classes du service de langage MPF prennent en charge les fonctionnalités suivantes :
 
 - Mise en surbrillance de la syntaxe
 
 - mode Plan
 
-- Commentaires des blocs de code
+- Commenter des blocs de code
 
 - Accolades correspondantes
 
@@ -37,25 +37,25 @@ Un service de langage prend en charge de l’éditeur qui vous permet d’implé
 
 - Informations sur les paramètres IntelliSense
 
-- IntelliSense Info express
+- Info Express IntelliSense
 
-- Saisie semi-automatique de membres IntelliSense
+- Saisie semi-automatique des membres IntelliSense
 
-- Saisie semi-automatique IntelliSense word
+- Saisie semi-automatique des mots IntelliSense
 
 ## <a name="partially-supported-features-in-the-mpf"></a>Fonctionnalités partiellement prises en charge dans le MPF
- MPF fournit la prise en charge partielle uniquement pour les fonctionnalités suivantes. Cela signifie que vous devez implémenter les méthodes qui sont appelées par du MPF.
+ Le MPF fournit uniquement une prise en charge partielle des fonctionnalités suivantes. Cela signifie que vous devez implémenter les méthodes qui sont appelées par le MPF.
 
-- Reformatage du code. Vous fournissez le code qui implémente la remise en forme.
+- Reformatage du code. Vous fournissez le code qui implémente le reformatage.
 
-- Points d’arrêt lors de la validation en identifiant les étendues de code valide. Vous fournissez le code qui identifie les étendues de code.
+- Validation des points d’arrêt en identifiant les étendues de code valides. Vous fournissez le code qui identifie les étendues de code.
 
-- Prise en charge du débogueur **automatique** fenêtre pour l’affichage des variables. Vous fournissez le code qui détermine les éléments à afficher dans la fenêtre.
+- Prise en charge de la fenêtre **automatique** du débogueur pour afficher les variables. Vous fournissez le code qui détermine les éléments à afficher dans la fenêtre.
 
-- Prise en charge la **barre de Navigation** pour la navigation rapide entre les types et membres. Vous implémentez et retourner une classe d’assistance qui remplit les listes dans le **barre de Navigation** zones de liste déroulante.
+- Prise en charge de la **barre de navigation** pour la navigation rapide entre les types et les membres. Vous implémentez et retournez une classe d’assistance qui remplit les listes dans les zones de liste déroulante de la **barre de navigation** .
 
 ## <a name="implementation"></a>Implémentation
- Vous devez effectuer plusieurs étapes pour implémenter le service de langage lui-même et les fonctionnalités de service de langage que vous souhaitez prendre en charge pour votre langue. Ces étapes sont décrites dans les rubriques suivantes :
+ Vous devez effectuer plusieurs étapes pour implémenter le service de langage lui-même et les fonctionnalités du service de langage que vous souhaitez prendre en charge pour votre langue. Ces étapes sont décrites dans les rubriques suivantes :
 
 - [Implémentation d’un service de langage hérité](../../extensibility/internals/implementing-a-legacy-language-service2.md)
 

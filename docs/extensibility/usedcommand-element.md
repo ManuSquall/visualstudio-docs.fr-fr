@@ -11,15 +11,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 36dbfa484b69832c67c7a1dd28f217706e1a91a6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 44ea8f27cafb166968f66c53dc68398526e0aa5d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316304"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72718772"
 ---
 # <a name="usedcommand-element"></a>Élément UsedCommand
-Permet à un VSPackage pour accéder à une commande qui est définie dans un autre fichier .vsct. Par exemple, si votre VSPackage utilise le standard **copie** commande, qui est défini par le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] shell, vous pouvez ajouter la commande à un menu ou une barre d’outils sans les ré-implémenter.
+Permet à un VSPackage d’accéder à une commande définie dans un autre fichier. vsct. Par exemple, si votre VSPackage utilise la commande de **copie** standard, qui est définie par le shell [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], vous pouvez ajouter la commande à un menu ou une barre d’outils sans la réimplémenter.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -34,24 +34,24 @@ Permet à un VSPackage pour accéder à une commande qui est définie dans un au
 
 |Attribut|Description|
 |---------------|-----------------|
-|guid|Obligatoire. Le GUID de la paire ID GUID qui identifie la commande.|
-|ID|Obligatoire. L’ID de la paire ID GUID qui identifie la commande.|
-|Condition|Facultatif. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|uniques|Requis. GUID de la paire d’ID GUID qui identifie la commande.|
+|ID|Requis. ID de la paire d’ID GUID qui identifie la commande.|
+|Condition|Optionnel. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Éléments enfants
 
 |Élément|Description|
 |-------------|-----------------|
-|None||
+|aucune.||
 
 ### <a name="parent-elements"></a>Éléments parents
 
 |Élément|Description|
 |-------------|-----------------|
-|[Élément UsedCommands](../extensibility/usedcommands-element.md)|Regroupe les éléments UsedCommand et autres regroupements UsedCommands.|
+|[Élément UsedCommands](../extensibility/usedcommands-element.md)|Regroupe les éléments UsedCommand et d’autres regroupements UsedCommands.|
 
 ## <a name="remarks"></a>Notes
- En ajoutant une commande pour le `<UsedCommands>` élément, un VSPackage informe le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] environnement que le VSPackage nécessite la commande. Vous devez ajouter un `<UsedCommand>` élément pour n’importe quelle commande votre package requiert que peuvent ne pas figurer dans toutes les versions et les configurations de Visual Studio. Par exemple, si votre package appelle une commande qui est spécifique à Visual C++, la commande ne sera pas disponible pour les utilisateurs de Visual Web Developer, sauf si vous incluez un `<UsedCommand>` élément pour la commande.
+ En ajoutant une commande à l’élément `<UsedCommands>`, un VSPackage informe l’environnement [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que le VSPackage requiert la commande. Vous devez ajouter un élément `<UsedCommand>` pour toute commande dont votre package a besoin, qui n’est peut-être pas inclus dans toutes les versions et configurations de Visual Studio. Par exemple, si votre package appelle une commande qui est spécifique à Visual C++, la commande ne sera pas disponible pour les utilisateurs de Visual Web Developer, sauf si vous incluez un élément `<UsedCommand>` pour la commande.
 
 ## <a name="example"></a>Exemple
 

@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Tester et déboguer un visualiseur | Microsoft Docs'
+title: 'Comment : tester et déboguer un visualiseur | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,17 +17,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0353234e5a266ca1a344ce7bc304f27d8c3af95
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2a0d2fdcd0685b83f63e9354b96146c1c869b355
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62906282"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72732407"
 ---
-# <a name="how-to-test-and-debug-a-visualizer"></a>Procédure : tester et déboguer un visualiseur
+# <a name="how-to-test-and-debug-a-visualizer"></a>Comment : tester et déboguer un visualiseur
 Après avoir écrit un visualiseur, vous devez le déboguer et le tester.
 
-Une façon de tester un visualiseur consiste à l'installer dans Visual Studio et de l'appeler d'une fenêtre du débogueur. (Consultez [Guide pratique pour installer un visualiseur](../debugger/how-to-install-a-visualizer.md).) Si vous procédez ainsi, vous devez utiliser une deuxième instance de Visual Studio pour attacher et déboguer le visualiseur, qui s'exécute dans la première instance du débogueur.
+Une façon de tester un visualiseur consiste à l'installer dans Visual Studio et de l'appeler d'une fenêtre du débogueur. (Consultez [Comment : installer un visualiseur](../debugger/how-to-install-a-visualizer.md).) Dans ce cas, vous devrez utiliser une deuxième instance de Visual Studio pour attacher et déboguer le visualiseur, qui s’exécute dans la première instance du débogueur.
 
 Une façon plus facile de déboguer un visualiseur consiste à exécuter ce dernier à partir d'un pilote de test. Les API du visualiseur facilitent la création de ce type de pilote appelé *hôte de développement de visualiseur*.
 
@@ -51,7 +51,7 @@ Une façon plus facile de déboguer un visualiseur consiste à exécuter ce dern
     DebuggerSide.TestShowVisualizer(myString);
     ```
 
-    Pour obtenir un exemple plus complet, consultez [procédure pas à pas : Écriture d’un visualiseur en C# ](../debugger/walkthrough-writing-a-visualizer-in-csharp.md).
+    Pour obtenir un exemple plus complet, consultez [procédure pas à pas : C#écriture d’un visualiseur dans ](../debugger/walkthrough-writing-a-visualizer-in-csharp.md).
 
 ## <a name="see-also"></a>Voir aussi
 - [Procédure pas à pas : écriture d’un visualiseur en C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)

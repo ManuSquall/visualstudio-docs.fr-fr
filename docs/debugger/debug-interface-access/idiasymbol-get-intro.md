@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 153daa1f43ba4945a5eb32aea82c5d58ff57c5f6
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 4680af2d41ef3fa06a89784003c98982a09c2b63
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62836798"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740351"
 ---
-# <a name="idiasymbolgetintro"></a>IDiaSymbol::get_intro
-Récupère un indicateur qui spécifie si la fonction est une fonction virtuelle présentation.
+# <a name="idiasymbolget_intro"></a>IDiaSymbol::get_intro
+Récupère un indicateur qui spécifie si la fonction est une fonction virtuelle d’introduction.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,15 +33,15 @@ HRESULT get_intro ( 
 #### <a name="parameters"></a>Paramètres
 `pRetVal`
 
-[out] Retourne `TRUE` si la fonction est intro virtuel ; sinon, retourne `FALSE`.
+à Retourne `TRUE` si la fonction est virtuelle Intro ; Sinon, retourne `FALSE`.
 
 ## <a name="return-value"></a>Valeur de retour
-En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou code d’erreur.
+En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
-> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> Une valeur de retour de `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
 
 ```C++
 class A {
@@ -52,14 +52,14 @@ class B : public A {
 }
 ```
 
-Les deux `A::f1` et `B::f1` sont des fonctions virtuelles, mais `A::f1` est intro virtuel.
+@No__t_0 et `B::f1` sont des fonctions virtuelles, mais `A::f1` est une présentation virtuelle.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>spécifications
 
-|Prérequis|Description|
+|Exigence|Description|
 |-----------------|-----------------|
 |En-tête :|dia2.h|
-|Version :|DIA SDK v7.0|
+|Version :|DIA SDK v 7.0|
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

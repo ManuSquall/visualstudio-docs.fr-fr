@@ -24,12 +24,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: ac3d6225bc765ec404784589d2faa06f155265ab
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 93c6826f2903f30fbbdcb9c40ec5f695df32ac05
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72446295"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747051"
 ---
 # <a name="annotating-structs-and-classes"></a>Structs et classes d'annotation
 
@@ -106,9 +106,9 @@ struct MyBuffer
 
 Remarques pour cet exemple :
 
-- `_Field_z_` équivaut à `_Null_terminated_`.  `_Field_z_` pour le champ nom spécifie que le champ nom est une chaîne se terminant par un caractère null.
-- `_Field_range_` pour `bufferSize` spécifie que la valeur de `bufferSize` doit être comprise entre 1 et `MaxBufferSize` (les deux inclus).
-- Les résultats finaux des annotations `_Struct_size_bytes_` et `_Field_size_` sont équivalents. Pour les structures ou les classes qui ont une disposition similaire, `_Field_size_` est plus facile à lire et à gérer, car il a moins de références et de calculs que l’annotation `_Struct_size_bytes_` équivalente. `_Field_size_` ne nécessite pas de conversion en taille d’octet. Si la taille d’octet est la seule option, par exemple, pour un champ de pointeur void, `_Field_size_bytes_` peut être utilisé. Si `_Struct_size_bytes_` et `_Field_size_` existent, les deux seront disponibles pour les outils. C’est à l’outil qu’il faut faire si les deux annotations ne sont pas en désaccord.
+- `_Field_z_` équivaut à `_Null_terminated_`.  `_Field_z_` pour le champ nom spécifie que le champ nom est une chaîne terminée par le caractère null.
+- `_Field_range_` pour `bufferSize` spécifie que la valeur de `bufferSize` doit être comprise entre 1 et `MaxBufferSize` (les deux incluses).
+- Les résultats finaux des annotations d' `_Struct_size_bytes_` et de `_Field_size_` sont équivalents. Pour les structures ou les classes qui ont une disposition similaire, `_Field_size_` est plus facile à lire et à gérer, car il a moins de références et de calculs que l’annotation `_Struct_size_bytes_` équivalente. `_Field_size_` ne nécessite pas de conversion en taille d’octet. Si la taille d’octet est la seule option, par exemple, pour un champ de pointeur void, `_Field_size_bytes_` peut être utilisée. Si `_Struct_size_bytes_` et `_Field_size_` existent, les deux seront disponibles pour les outils. C’est à l’outil qu’il faut faire si les deux annotations ne sont pas en désaccord.
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26539d4217682b4d5357f13e9f9368c81297da78
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6bcdaa7c1896a0ef29706e3650ad8ac56537f778
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839743"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743000"
 ---
 # <a name="idialoadcallback2restrictoriginalpathaccess"></a>IDiaLoadCallback2::RestrictOriginalPathAccess
-Détermine s’il est OK rechercher un fichier .pdb dans le répertoire de débogage d’origine.
+Détermine s’il est possible de rechercher un fichier. pdb dans le répertoire de débogage d’origine.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -29,10 +29,10 @@ HRESULT RestrictOriginalPathAccess ();
 ```
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne un code d’erreur.
 
 ## <a name="remarks"></a>Notes
- Un code de retour autre que `S_OK` empêche la recherche d’un fichier .pdb dans le répertoire de débogage d’origine. Le répertoire de débogage d’origine est le chemin d’accès au fichier de symboles compilé dans le fichier exécutable lorsque le débogage est activé. Ce chemin d’accès n’est pas nécessairement le même que le chemin d’accès où se trouve l’exécutable.
+ Tout code de retour autre que `S_OK` empêche la recherche d’un fichier. pdb dans le répertoire de débogage d’origine. Le répertoire de débogage d’origine est le chemin d’accès au fichier de symboles compilé dans l’exécutable lorsque le débogage est activé. Ce chemin d’accès n’est pas nécessairement le même que le chemin d’accès de l’exécutable.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md)

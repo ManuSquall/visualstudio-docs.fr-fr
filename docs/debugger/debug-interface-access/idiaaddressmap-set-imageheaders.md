@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 10835f422f8d2d116234eadd91da0d27c424f314
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ef17e1073c67ede75d075b18773129c287349c0d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554220"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745013"
 ---
-# <a name="idiaaddressmapsetimageheaders"></a>IDiaAddressMap::set_imageHeaders
-Jeux en-têtes pour activer la traduction d’adresse virtuelle relative de l’image.
+# <a name="idiaaddressmapset_imageheaders"></a>IDiaAddressMap::set_imageHeaders
+Définit les en-têtes d’image pour activer la traduction d’adresses virtuelles relative.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -35,23 +35,23 @@ HRESULT set_imageHeaders ( 
 #### <a name="parameters"></a>Paramètres
  cbData
 
-[in] Nombre d’octets de données d’en-tête. Doit être `n*sizeof(IMAGE_SECTION_HEADER)` où `n` est le nombre d’en-têtes de section dans le fichier exécutable.
+dans Nombre d’octets de données d’en-tête. Doit être `n*sizeof(IMAGE_SECTION_HEADER)` où `n` est le nombre d’en-têtes de section dans l’exécutable.
 
  data[]
 
-[in] Un tableau de `IMAGE_SECTION_HEADER` structures à utiliser comme en-têtes de l’image.
+dans Tableau de structures de `IMAGE_SECTION_HEADER` à utiliser comme en-têtes d’image.
 
  originalHeaders
 
-[in] La valeur `FALSE` si les en-têtes de l’image sont à partir de la nouvelle image, `TRUE` si elles reflètent l’image d’origine avant une mise à niveau. En règle générale, cela aurait la valeur `TRUE` uniquement en association avec les appels à la [IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) (méthode).
+dans Affectez la valeur `FALSE` si les en-têtes d’image proviennent de la nouvelle image, `TRUE` s’ils reflètent l’image d’origine avant une mise à niveau. En général, cette valeur est définie sur `TRUE` uniquement en association avec les appels à la méthode [IDiaAddressMap :: set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) .
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne un code d’erreur.
 
 ## <a name="remarks"></a>Notes
- Le `IMAGE_SECTION_HEADER` structure est déclarée dans Winnt.h et représente le format d’en-tête de section de l’exécutable.
+ La structure `IMAGE_SECTION_HEADER` est déclarée dans Winnt. h et représente le format d’en-tête de la section image de l’exécutable.
 
- Calculs de l’adresse virtuelle relative varient selon le `IMAGE_SECTION_HEADER` valeurs. En règle générale, le DIA récupère ces à partir du fichier de base de données (.pdb) de programme. Si ces valeurs sont manquantes, le DIA est impossible de calculer les adresses virtuelles relatives et [IDiaAddressMap::get_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md) retourne de la méthode `FALSE`. Le client doit appeler ensuite la [IDiaAddressMap::put_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md) méthode pour activer les calculs d’adresse virtuelle relative après avoir entré les en-têtes d’image manquant à partir de l’image elle-même.
+ Les calculs d’adresses virtuelles relatifs dépendent des valeurs de `IMAGE_SECTION_HEADER`. En règle générale, le DIA les récupère à partir du fichier de base de données du programme (. pdb). Si ces valeurs sont manquantes, le DIA n’est pas en mesure de calculer des adresses virtuelles relatives et la méthode [IDiaAddressMap :: get_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md) retourne `FALSE`. Le client doit ensuite appeler la méthode [IDiaAddressMap ::P ut_relativevirtualaddressenabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md) pour activer les calculs d’adresses virtuelles relatifs après avoir fourni les en-têtes d’image manquants à partir de l’image elle-même.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)

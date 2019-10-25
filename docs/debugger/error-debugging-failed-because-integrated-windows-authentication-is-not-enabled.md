@@ -1,5 +1,5 @@
 ---
-title: 'Erreur : Le débogage a échoué car l’authentification Windows intégrée n’est pas activée. | Microsoft Docs'
+title: 'Erreur : le débogage a échoué, car l’authentification Windows intégrée n’est pas activée | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2969e5c6e8e3a5fd5612fa843309e36f0dbc4c9b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ca4b4ee5bb254f952fb6eb02e255320a337f657c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850838"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737799"
 ---
-# <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Erreur : le débogage a échoué, car l’authentification Windows intégrée n’est pas activée
+# <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Erreur : le débogage a échoué, car l'authentification intégrée de Windows n'est pas activée
 L'authentification de l'utilisateur qui a demandé le débogage a été empêchée en raison d'une erreur d'authentification. Cette erreur peut se produire lorsque vous essayez d’accéder à une application web ou à un service web XML. Cette erreur peut provenir, par exemple, du fait que l'authentification Windows intégrée n'est pas activée. Pour l'activer, suivez les étapes décrites dans Activer l'authentification Windows intégrée.
 
  Si vous avez activé l’authentification Windows intégrée et que cette erreur persiste, il est possible que celle-ci soit provoquée par l’activation de l’option **Authentification Digest pour les serveurs de domaine Windows**. Dans ce cas, contactez votre administrateur réseau.
@@ -67,13 +67,13 @@ L'authentification de l'utilisateur qui a demandé le débogage a été empêch�
 
 2. Activez l'authentification Windows et la compatibilité avec la gestion IIS 6, si ce n'est déjà fait, en procédant comme suit :
 
-    1. Cliquez sur **Démarrer**, cliquez sur **le panneau de configuration** puis cliquez sur **programmes**.
+    1. Cliquez sur **Démarrer**, sur **panneau de configuration** , puis sur **programmes**.
 
     2. Sous **Programmes et fonctionnalités**, cliquez sur **Activer ou désactiver des fonctionnalités Windows**.
 
          La boîte de dialogue Contrôle d'accès utilisateur s'affiche et vous invite à confirmer que vous êtes autorisé à poursuivre.
 
-    3. Cliquez sur **Continuer**.
+    3. Cliquez sur **Continue**(Continuer).
 
          La boîte de dialogue Fonctionnalités Windows apparaît.
 
@@ -97,7 +97,7 @@ L'authentification de l'utilisateur qui a demandé le débogage a été empêch�
 
 4. Cliquez sur **Affichage classique**, puis double-cliquez sur **Outils d’administration**.
 
-5. Dans la colonne **Nom**, double-cliquez sur **Gestionnaire des services Internet (IIS)**.
+5. Dans la colonne **Nom**, double-cliquez sur **Gestionnaire des services Internet (IIS)** .
 
 6. Dans la colonne **Connexions**, développez le nœud correspondant à votre serveur.
 
@@ -111,9 +111,9 @@ L'authentification de l'utilisateur qui a demandé le débogage a été empêch�
 
 9. Dans la colonne le volet **Authentification**, dans la colonne **Nom**, cliquez avec le bouton droit sur **Authentification Windows**, puis cliquez sur **Activer**.
 
-10. Fermez la fenêtre **Gestionnaire des services Internet (IIS)**.
+10. Fermez la fenêtre **Gestionnaire des services Internet (IIS)** .
 
 ## <a name="see-also"></a>Voir aussi
 - [Débogage d’applications web : erreurs et dépannage](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
 - [Microsoft Digest Authentication](http://go.microsoft.com/fwlink/?LinkId=77938)
-- [Exécution d’Applications Web sur Vista Windows avec IIS 7.0 et Visual Studio](https://msdn.microsoft.com/Library/262a82ac-dd0e-4096-86c6-fb463e88be66)
+- [Exécution d’applications Web sur Windows Vista avec IIS 7,0 et Visual Studio](https://msdn.microsoft.com/Library/262a82ac-dd0e-4096-86c6-fb463e88be66)

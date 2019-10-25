@@ -1,5 +1,5 @@
 ---
-title: Attributs de prise en charge de Site Web | Microsoft Docs
+title: Attributs de prise en charge de site Web | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,32 +10,32 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a508acaf174e5e4e4b4b615e5f38c600f0669ed
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 07486ea3a962bcb81f65ad0b61ea2e41b3248678
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66323385"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72721612"
 ---
 # <a name="web-site-support-attributes"></a>Attributs de prise en charge de site web
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Projet de site Web peut être étendu pour prendre en charge pour le Web, langages de programmation. La langue doit s’inscrire avec [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] afin que les modèles de projet peuvent apparaître dans le **nouveau Site Web** boîte de dialogue lors de la langue sélectionnée.
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] projet de site Web peut être étendu pour assurer la prise en charge des langages de programmation Web. La langue doit s’inscrire auprès de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] afin que les modèles de projet puissent apparaître dans la boîte de dialogue **nouveau site Web** lorsque la langue est sélectionnée.
 
-L’exemple de IronPython Studio inclut la prise en charge du site web. L’exemple contient des classes d’attributs suivantes pour inscrire IronPython comme un langage de code-behind pour les nouveaux projets Web.
+L’exemple IronPython Studio comprend la prise en charge des sites Web. L’exemple contient les classes d’attributs suivantes pour inscrire IronPython comme langage codebehind pour les nouveaux projets Web.
 
 ## <a name="websiteprojectattribute"></a>WebSiteProjectAttribute
- Cet attribut est placé sur le projet de langage. Il ajoute la langue à la liste des langages de programmation Web le **langage** liste dans le **nouveau Site Web** boîte de dialogue. Par exemple, le code suivant ajoute IronPython à la liste :
+ Cet attribut est placé sur le projet de langage. Elle ajoute la langue à la liste des langages de programmation Web dans la liste **langue** de la boîte de dialogue **nouveau site Web** . Par exemple, le code suivant ajoute IronPython à la liste :
 
 ```
 [WebSiteProject("IronPython", "Iron Python")]
 public class PythonProjectPackage : ProjectPackage
 ```
 
- Cet attribut définit également le chemin d’accès de modèles pour pointer vers le dossier de modèles. Pour plus d’informations sur l’emplacement du dossier de modèles, consultez [modèles de prise en charge de Site Web](../../extensibility/internals/web-site-support-templates.md).
+ Cet attribut définit également le chemin d’accès des modèles pour qu’il pointe vers le dossier Templates. Pour plus d’informations sur l’emplacement du dossier de modèles, consultez [modèles de prise en charge de site Web](../../extensibility/internals/web-site-support-templates.md).
 
 ## <a name="websiteprojectrelatedfilesattribute"></a>WebSiteProjectRelatedFilesAttribute
- Cet attribut est placé sur le projet de langage. Il permet au projet de Site Web d’imbriquer un type de fichier (associé) sous un autre type de fichier (principal) dans le **l’Explorateur de solutions**.
+ Cet attribut est placé sur le projet de langage. Elle permet au projet de site Web d’imbriquer un type de fichier (associé) sous un autre type de fichier (principal) dans le **Explorateur de solutions**.
 
- Par exemple, le code suivant spécifie qu’un fichier de code-behind IronPython est lié à un fichier .aspx. Création d’une page Web .aspx dans une solution de site Web de IronPython, un nouveau fichier de source .py est généré et apparaît sous la forme d’un nœud enfant de la page .aspx.
+ Par exemple, le code suivant spécifie qu’un fichier codebehind IronPython est associé à un fichier. aspx. Quand une nouvelle page Web. aspx est créée dans une solution de site Web IronPython, un nouveau fichier source. py est généré et apparaît en tant que nœud enfant de la page. aspx.
 
 ```
 [WebSiteProjectRelatedFiles("aspx", "py")]
@@ -43,7 +43,7 @@ public class PythonProjectPackage : ProjectPackage
 ```
 
 ## <a name="provideintellisenseproviderattribute"></a>ProvideIntellisenseProviderAttribute
- Cet attribut est placé sur le package de projet de langage. Il sélectionne le fournisseur d’IntelliSense pour la langue.
+ Cet attribut est placé sur le package de projet de langage. Il sélectionne le fournisseur IntelliSense pour le langage.
 
  Par exemple, le code suivant spécifie qu’une instance de PythonIntellisenseProvider, qui implémente <xref:Microsoft.VisualStudio.Shell.Interop.IVsIntellisenseProject>, doit être créée à la demande pour fournir des services de langage.
 
@@ -52,7 +52,7 @@ public class PythonProjectPackage : ProjectPackage
 public class PythonPackage : Package, IOleComponent
 ```
 
- L’implémentation de IVsIntellisenseProject traite les références et appelle le compilateur de langage lorsqu’une page Web avec le code est demandée mais n’est pas mis en cache.
+ L’implémentation IVsIntellisenseProject gère les références et appelle le compilateur de langage lorsqu’une page Web avec du code est demandée mais n’est pas mise en cache.
 
 ## <a name="see-also"></a>Voir aussi
 - [Prise en charge de site Web](../../extensibility/internals/web-site-support.md)

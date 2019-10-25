@@ -1,5 +1,5 @@
 ---
-title: L’inscription d’un Type de projet | Microsoft Docs
+title: Inscription d’un type de projet | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,20 +12,20 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b950ea6dde73ecb7f20ef45e945106e8711aefb0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c71756259574827924babc16d6933e642b8299ef
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353349"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72724737"
 ---
 # <a name="registering-a-project-type"></a>Inscription d’un type de projet
-Lorsque vous créez un nouveau type de projet, vous devez créer les entrées de Registre qui permettent [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] à reconnaître et à travailler avec votre type de projet. En règle générale, vous créez ces entrées de Registre à l’aide d’un fichier de script (d’inscription.rgs) du Registre.
+Lorsque vous créez un nouveau type de projet, vous devez créer des entrées de Registre qui permettent à [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] de reconnaître et d’utiliser votre type de projet. En général, vous créez ces entrées de Registre à l’aide d’un fichier de script de Registre (. RGS).
 
- Dans l’exemple ci-dessous, les instructions à partir du Registre fournissent des chemins d’accès par défaut et les données, le cas échéant, suivie d’une table qui contient des entrées à partir du script de Registre pour chaque instruction. Les tableaux fournissent les entrées du script et des informations supplémentaires sur les instructions.
+ Dans l’exemple ci-dessous, les instructions du Registre fournissent des chemins d’accès et des données par défaut, le cas échéant, suivis d’une table qui contient des entrées du script de Registre pour chaque instruction. Les tables fournissent les entrées de script et des informations supplémentaires sur les instructions.
 
 > [!NOTE]
-> Les informations de Registre suivantes sont destinées à être un exemple du type et à des fins des entrées dans les scripts de Registre que vous l’écrivez pour enregistrer votre type de projet. Vos entrées réelles et leurs utilisations peuvent varier en fonction des besoins spécifiques de votre type de projet. Vous devez passez en revue les exemples disponibles pour en trouver un qui ressemble le type de projet que vous développez et puis passez en revue le script de Registre pour cet exemple.
+> Les informations de Registre suivantes sont destinées à illustrer le type et les objectifs des entrées dans les scripts de registre que vous allez écrire pour inscrire votre type de projet. Vos entrées réelles et leurs utilisations peuvent varier en fonction des exigences spécifiques de votre type de projet. Vous devez examiner les exemples disponibles pour en trouver un qui ressemble de près au type de projet que vous développez, puis examiner le script de Registre pour cet exemple.
 
  Les exemples suivants proviennent de HKEY_CLASSES_ROOT.
 
@@ -47,16 +47,16 @@ Lorsque vous créez un nouveau type de projet, vous devez créer les entrées de
    @="devenv.exe \"%1\""
 ```
 
-|Nom|Type|Données|Description|
+|Name|Tapez|Données|Description|
 |----------|----------|----------|-----------------|
-|`@`|REG_SZ|`FigPrjFile`|Nom et description des fichiers du type de projet qui ont l’extension .figp.|
-|`Content Type`|REG_SZ|`Text/plain`|Type de contenu pour les fichiers de projet.|
+|`@`|REG_SZ|`FigPrjFile`|Nom et description des fichiers de type de projet avec l’extension. figp.|
+|`Content Type`|REG_SZ|`Text/plain`|Type de contenu pour les fichiers projet.|
 |`NullFile`|REG_SZ|`Null`||
-|`@`|REG_SZ|`%MODULE%,-206`|Icône par défaut utilisé pour le projet de ce type. L’instruction % MODULE % est terminée dans le Registre à l’emplacement par défaut du type de projet DLL.|
-|`@`|REG_SZ|`&Open in Visual Studio`|Application par défaut dans lequel ce type de projet doit être ouvert.|
-|`@`|REG_SZ|`devenv.exe "%1"`|Commande par défaut qui est exécutée lorsqu’un projet de ce type est ouvert.|
+|`@`|REG_SZ|`%MODULE%,-206`|Icône par défaut utilisée pour le projet de ce type. L’instruction% MODULE% est effectuée dans le registre à l’emplacement par défaut de la DLL du type de projet.|
+|`@`|REG_SZ|`&Open in Visual Studio`|Application par défaut dans laquelle ce type de projet sera ouvert.|
+|`@`|REG_SZ|`devenv.exe "%1"`|Commande par défaut qui est exécutée quand un projet de ce type est ouvert.|
 
- Les exemples suivants sont à partir de HKEY_LOCAL_MACHINE et se trouvent dans le Registre sous la clé [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\99.0Exp\Packages].
+ Les exemples suivants proviennent de HKEY_LOCAL_MACHINE et se trouvent dans le Registre sous la clé [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\99.0Exp\Packages].
 
 ## <a name="example"></a>Exemple
 
@@ -79,21 +79,21 @@ Lorsque vous créez un nouveau type de projet, vous devez créer les entrées de
    "FigProjectItemsEvents"="Returns the FigProjectItemsEvents Object"
 ```
 
-|Nom|Type|Données|Description|
+|Name|Tapez|Données|Description|
 |----------|----------|----------|-----------------|
-|`@` (Valeur par défaut)|REG_SZ|`FigPrj Project VSPackage`|Nom localisé de ce inscrit un VSPackage (type de projet).|
-|`InprocServer32`|REG_SZ|`%MODULE%`|Chemin d’accès du type de projet DLL. L’IDE se charge de cette DLL et transmet le CLSID VSPackage à `DllGetClassObject` pour obtenir <xref:Microsoft.VisualStudio.OLE.Interop.IClassFactory> pour construire le <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> objet.|
+|`@` (par défaut)|REG_SZ|`FigPrj Project VSPackage`|Nom localisable de ce VSPackage inscrit (type de projet).|
+|`InprocServer32`|REG_SZ|`%MODULE%`|Chemin d’accès de la DLL du type de projet. L’IDE charge cette DLL et transmet le CLSID du VSPackage à `DllGetClassObject` pour <xref:Microsoft.VisualStudio.OLE.Interop.IClassFactory> construire l’objet <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>.|
 |`CompanyName`|REG_SZ|`Microsoft`|Nom de la société qui a développé le type de projet.|
 |`ProductName`|REG_SZ|`Figure Project Sample`|Nom du type de projet.|
-|`ProductVersion`|REG_SZ|`9.0`|Numéro de version du type de projet de mise en production.|
+|`ProductVersion`|REG_SZ|`9.0`|Numéro de version de la version du type de projet.|
 |`MinEdition`|REG_SZ|`professional`|Édition du VSPackage en cours d’inscription.|
-|`ID`|REG_DWORD|`%IDS_PACKAGE_LOAD_KEY%`|Le package de charger la clé pour le projet VSPackage. La clé est validée quand un projet est chargé après le démarrage de l’environnement.|
-|`DllName`|REG_SZ|`%RESOURCE_DLL%`|Nom de fichier de la DLL satellite contenant des ressources localisées pour le type de projet.|
+|`ID`|REG_DWORD|`%IDS_PACKAGE_LOAD_KEY%`|Clé de chargement du package pour le VSPackage du projet. La clé est validée lorsqu’un projet est chargé après le démarrage de l’environnement.|
+|`DllName`|REG_SZ|`%RESOURCE_DLL%`|Nom de fichier de la DLL satellite qui contient les ressources localisées pour le type de projet.|
 |`Path`|REG_SZ|`%RESOURCE_PATH%`|Chemin d’accès de la DLL satellite.|
-|`FigProjectsEvents`|REG_SZ|Consultez la déclaration de valeur.|Détermine la chaîne de texte renvoyée pour cet événement automation.|
-|`FigProjectItemsEvents`|REG_SZ|Consultez la déclaration de valeur.|Détermine la chaîne de texte renvoyée pour cet événement automation.|
+|`FigProjectsEvents`|REG_SZ|Consultez l’instruction pour value.|Détermine la chaîne de texte retournée pour cet événement Automation.|
+|`FigProjectItemsEvents`|REG_SZ|Consultez l’instruction pour value.|Détermine la chaîne de texte retournée pour cet événement Automation.|
 
- Les exemples suivants se trouvent dans le Registre sous la clé [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\Projects].
+ Tous les exemples suivants se trouvent dans le Registre sous la clé [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\Projects].
 
 ## <a name="example"></a>Exemple
 
@@ -130,34 +130,34 @@ Lorsque vous créez un nouveau type de projet, vous devez créer les entrées de
    "SortPriority"=dword:00000064
 ```
 
-|Nom|Type|Données|Description|
+|Name|Tapez|Données|Description|
 |----------|----------|----------|-----------------|
 |`@`|REG_SZ|`FigPrj Project`|Nom par défaut des projets de ce type.|
-|`DisplayName`|REG_SZ|`#%IDS_PROJECT_TYPE%`|ID de ressource du nom doivent être extraites de la DLL satellite inscrit sous Packages.|
-|`Package`|REG_SZ|`%CLSID_Package%`|ID de classe du VSPackage inscrit sous Packages.|
-|`ProjectTemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|Chemin d’accès de la valeur par défaut des fichiers de modèle de projet. Il s’agit de fichiers affichés par le modèle de projet.|
-|`ItemTemplatesDir`|REG_SZ|`%TEMPLATE_PATH% \FigPrjProjectItems`|Chemin d’accès de la valeur par défaut des fichiers de modèle d’élément de projet. Il s’agit de fichiers affichés par le modèle d’ajouter un nouvel élément.|
-|`DisplayProjectFileExtensions`|REG_SZ|`#%IDS_DISPLAY_PROJ_FILE_EXT%`|Permet à l’IDE implémenter le **Open** boîte de dialogue.|
-|`PossibleProjectExtensions`|REG_SZ|`figp`|Utilisé par l’IDE pour déterminer si le projet en cours d’ouverture est géré par ce type de projet (fabrique de projet). Le format pour plus d’une entrée est une liste délimitée par des points-virgules. Par exemple « vdproj ; vdp ».|
-|`DefaultProjectExtension`|REG_SZ|`.figp`|Utilisé par l’IDE en tant que l’extension de nom de fichier par défaut pour l’opération Enregistrer sous.|
-|`Filter Settings`|REG_DWORD|Différents, consultez les instructions et commentaires tableau suivant.|Ces paramètres sont utilisés pour définir les différents filtres pour afficher les fichiers dans les boîtes de dialogue de l’interface utilisateur.|
-|`@`|REG_SZ|`#%IDS_ADDITEM_TEMPLATES_ENTRY%`|ID de ressource pour les modèles d’ajouter un élément.|
-|`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjectItems`|Chemin d’accès des éléments de projet affiché dans la boîte de dialogue pour le **ajouter un nouvel élément** modèle.|
-|`SortPriority`|REG_DWORD|`100 (vcprx64)`|Détermine l’ordre de tri dans le nœud d’arbre de fichiers affichés dans le **ajouter un nouvel élément** boîte de dialogue.|
+|`DisplayName`|REG_SZ|`#%IDS_PROJECT_TYPE%`|ID de ressource du nom à récupérer à partir de la DLL satellite inscrite sous packages.|
+|`Package`|REG_SZ|`%CLSID_Package%`|ID de classe du VSPackage inscrit sous packages.|
+|`ProjectTemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|Chemin d’accès par défaut des fichiers de modèles de projet. Il s’agit des fichiers affichés par le nouveau modèle de projet.|
+|`ItemTemplatesDir`|REG_SZ|`%TEMPLATE_PATH% \FigPrjProjectItems`|Chemin d’accès par défaut des fichiers de modèle d’élément de projet. Il s’agit des fichiers affichés par le modèle ajouter un nouvel élément.|
+|`DisplayProjectFileExtensions`|REG_SZ|`#%IDS_DISPLAY_PROJ_FILE_EXT%`|Permet à l’IDE d’implémenter la boîte de dialogue **ouvrir** .|
+|`PossibleProjectExtensions`|REG_SZ|`figp`|Utilisé par l’IDE pour déterminer si le projet en cours d’ouverture est géré par ce type de projet (fabrique de projets). Le format de plusieurs entrées est une liste délimitée par des points-virgules. Par exemple, « vdproj ; VDP ».|
+|`DefaultProjectExtension`|REG_SZ|`.figp`|Utilisé par l’IDE comme extension de nom de fichier par défaut pour l’opération Enregistrer sous.|
+|`Filter Settings`|REG_DWORD|Divers, consultez le tableau instructions et commentaires suivant.|Ces paramètres sont utilisés pour définir les différents filtres d’affichage des fichiers dans les boîtes de dialogue de l’interface utilisateur.|
+|`@`|REG_SZ|`#%IDS_ADDITEM_TEMPLATES_ENTRY%`|ID de ressource pour ajouter des modèles d’élément.|
+|`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjectItems`|Chemin d’accès des éléments de projet affichés dans la boîte de dialogue pour le modèle **Ajouter un nouvel élément** .|
+|`SortPriority`|REG_DWORD|`100 (vcprx64)`|Détermine l’ordre de tri dans le nœud d’arbre des fichiers affichés dans la boîte de dialogue **Ajouter un nouvel élément** .|
 
- Le tableau suivant montre les options de filtres disponibles dans le segment de code précédent.
+ Le tableau suivant présente les options de filtres disponibles dans le segment de code précédent.
 
 |Option de filtre|Description|
 |-------------------|-----------------|
-|`CommonFindFilesFilter`|Indique que le filtre est l’un des filtres courants dans le **rechercher dans les fichiers** boîte de dialogue. Les filtres courants sont répertoriés dans la liste des filtres avant les filtres ne pas marqué comme commun.|
-|`CommonOpenFilesFilter`|Indique que le filtre est l’un des filtres courants dans le **ouvrir un fichier** boîte de dialogue. Les filtres courants sont répertoriés dans la liste des filtres avant les filtres ne pas marqué comme commun.|
-|`FindInFilesFilter`|Indique que le filtre est l’un des filtres dans les **rechercher dans les fichiers** boîte de dialogue zone et sont répertoriés après les filtres courants.|
-|`NotOpenFileFilter`|Indique que le filtre ne sera pas utilisé dans le **ouvrir un fichier** boîte de dialogue.|
-|`NotAddExistingItemFilter`|Indique que le filtre ne sera pas utilisé dans la zone Ajouter **élément existant** boîte de dialogue.|
+|`CommonFindFilesFilter`|Indique que le filtre est l’un des filtres les plus courants de la boîte de dialogue **Rechercher dans les fichiers** . Les filtres courants sont répertoriés dans la liste de filtres avant les filtres qui ne sont pas marqués comme communs.|
+|`CommonOpenFilesFilter`|Indique que le filtre est l’un des filtres les plus courants de la boîte de dialogue **ouvrir un fichier** . Les filtres courants sont répertoriés dans la liste de filtres avant les filtres qui ne sont pas marqués comme communs.|
+|`FindInFilesFilter`|Indique que le filtre sera l’un des filtres de la boîte de dialogue **Rechercher dans les fichiers** et sera listé après les filtres courants.|
+|`NotOpenFileFilter`|Indique que le filtre ne sera pas utilisé dans la boîte de dialogue **ouvrir un fichier** .|
+|`NotAddExistingItemFilter`|Indique que le filtre ne sera pas utilisé dans la boîte de dialogue Ajouter un **élément existant** .|
 
- Par défaut, si un filtre de ne pas avoir une ou plusieurs de ces indicateurs définis, le filtre est utilisé dans le **ajouter un élément existant** boîte de dialogue et le **ouvrir un fichier** boîte de dialogue une fois les filtres courants sont répertoriés. Le filtre n’est pas utilisé dans le **rechercher dans les fichiers** boîte de dialogue.
+ Par défaut, si un ou plusieurs de ces indicateurs ne sont pas définis pour un filtre, le filtre est utilisé dans la boîte de dialogue **Ajouter un élément existant** et la boîte de dialogue **ouvrir un fichier** , une fois les filtres communs répertoriés. Le filtre n’est pas utilisé dans la boîte de dialogue **Rechercher dans les fichiers** .
 
- Les exemples suivants se trouvent dans le Registre sous la clé [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\Projects].
+ Tous les exemples suivants se trouvent dans le Registre sous la clé [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\Projects].
 
 ## <a name="example"></a>Exemple
 
@@ -170,14 +170,14 @@ Lorsque vous créez un nouveau type de projet, vous devez créer les entrées de
    "NewProjectDialogOnly"=dword:00000000
 ```
 
-|Nom|Type|Données|Description|
+|Name|Tapez|Données|Description|
 |----------|----------|----------|-----------------|
-|`@`|REG_SZ|`#%IDS_NEWPROJ_ TEMPLATES_ENTRY%`|ID de ressource pour les modèles de projet.|
-|`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|Par défaut le chemin d’accès pour les projets du type de projet enregistré.|
-|`SortPriority`|REG_DWORD|`41 (x29)`|Jeux ordre de tri des projets s’affiché dans la boîte de dialogue Assistant nouveaux projets.|
-|`NewProjectDialogOnly`|REG_DWORD|`0`|0 indique que les projets de ce type sont affichés uniquement dans la boîte de dialogue Nouveau projet.|
+|`@`|REG_SZ|`#%IDS_NEWPROJ_ TEMPLATES_ENTRY%`|ID de ressource pour les nouveaux modèles de projet.|
+|`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|Chemin d’accès par défaut des projets du type de projet inscrit.|
+|`SortPriority`|REG_DWORD|`41 (x29)`|Définit l’ordre de tri des projets affichés dans la boîte de dialogue Assistant nouveaux projets.|
+|`NewProjectDialogOnly`|REG_DWORD|`0`|0 indique que les projets de ce type s’affichent uniquement dans la boîte de dialogue Nouveau projet.|
 
- Les exemples suivants se trouvent dans le Registre sous la clé [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\Projects].
+ Tous les exemples suivants se trouvent dans le Registre sous la clé [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\Projects].
 
 ## <a name="example"></a>Exemple
 
@@ -191,12 +191,12 @@ Lorsque vous créez un nouveau type de projet, vous devez créer les entrées de
    "SortPriority"=dword:00000064
 ```
 
-|Nom|Type|Données|Description|
+|Name|Tapez|Données|Description|
 |----------|----------|----------|-----------------|
-|`@`|REG_SZ|None|Valeur par défaut qui indique que les entrées suivantes sont pour les entrées de projets fichiers divers.|
-|`@`|REG_SZ|`#%IDS_ADDITEM_TEMPLATES_ENTRY%`|Valeur d’ID de ressource pour les fichiers de modèle d’ajouter de nouveaux éléments.|
-|`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjectItems`|Chemin d’accès par défaut des éléments qui s’affichera dans le **ajouter un nouvel élément** boîte de dialogue.|
-|`SortPriority`|REG_DWORD|`100 (vcprx64)`|Établit l’ordre de tri pour l’affichage dans le nœud d’arbre de la **ajouter un nouvel élément** boîte de dialogue.|
+|`@`|REG_SZ|aucune.|Valeur par défaut qui indique que les entrées suivantes sont destinées aux entrées des projets fichiers divers.|
+|`@`|REG_SZ|`#%IDS_ADDITEM_TEMPLATES_ENTRY%`|Valeur d’ID de ressource pour les fichiers de modèle d’ajout de nouveaux éléments.|
+|`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjectItems`|Chemin d’accès par défaut des éléments qui seront affichés dans la boîte de dialogue **Ajouter un nouvel élément** .|
+|`SortPriority`|REG_DWORD|`100 (vcprx64)`|Établit l’ordre de tri pour l’affichage dans le nœud de l’arborescence de la boîte de dialogue **Ajouter un nouvel élément** .|
 
  L’exemple suivant se trouve dans le Registre sous la clé [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\Menus].
 
@@ -206,25 +206,25 @@ Lorsque vous créez un nouveau type de projet, vous devez créer les entrées de
 "{ACEF4EB2-57CF-11D2-96F4-000000000000}"=",1000,1"
 ```
 
- L’entrée de menu pointe l’IDE à la ressource utilisée pour récupérer les informations de menu. Lorsque ces données ont été fusionnées dans la base de données de menu, la même clé sera ajoutée dans la section MenusMerged du Registre. Le VSPackage doit ne rien modifier sous la section MenusMerged directement. Dans le champ de données dans le tableau suivant, il existe trois virgules-champs séparés par des. Le premier champ identifie un chemin d’accès complet d’un fichier de ressources de menu :
+ L’entrée de menu pointe l’IDE vers la ressource utilisée pour récupérer les informations de menu. Lorsque ces données ont été fusionnées dans la base de données de menu, la même clé est ajoutée à la section MenusMerged du Registre. Le VSPackage ne doit pas modifier directement les éléments situés dans la section MenusMerged. Dans le champ de données du tableau suivant, il existe trois champs séparés par des virgules. Le premier champ identifie le chemin d’accès complet d’un fichier de ressources de menu :
 
-- Si le premier champ est omis, la ressource de menu est chargée à partir de la DLL identifié par le GUID du VSPackage satellite.
+- Si le premier champ est omis, la ressource de menu est chargée à partir de la DLL satellite identifiée par le GUID du VSPackage.
 
-  Le deuxième champ identifie un ID de ressource de menu du type CTMENU :
+  Le deuxième champ identifie un ID de ressource de menu de type CTMENU :
 
-- Si l’ID de ressource est spécifié, et le chemin d’accès de fichier est fourni par le premier paramètre, une ressource de menu est chargée à partir du chemin de fichier complet.
+- Si l’ID de ressource est spécifié et que le chemin d’accès du fichier est fourni par le premier paramètre, une ressource de menu est chargée à partir du chemin d’accès complet au fichier.
 
-- Si l’ID de ressource est fourni, mais le chemin d’accès de fichier n’est pas, la ressource de menu est chargée à partir de la DLL satellite.
+- Si l’ID de ressource est fourni, mais que le chemin d’accès au fichier n’est pas, la ressource de menu est chargée à partir de la DLL satellite.
 
-- Si le chemin d’accès de fichier complet est fourni et l’ID de ressource est omis, le fichier à charger est censé être un fichier de directeur technique.
+- Si le chemin d’accès complet au fichier est fourni et que l’ID de ressource est omis, le fichier à charger est supposé être un fichier de directeur technique.
 
-  Le dernier champ identifie le numéro de version pour la ressource CTMENU. Vous pouvez fusionner à nouveau le menu en modifiant le numéro de version.
+  Le dernier champ identifie le numéro de version de la ressource CTMENU. Vous pouvez fusionner à nouveau le menu en modifiant le numéro de version.
 
-|Nom|Type|Données|Description|
+|Name|Tapez|Données|Description|
 |----------|----------|----------|-----------------|
-|%CLSID_Package%|REG_SZ|`,1000,1`|La ressource à récupérer les informations de menu.|
+|%CLSID_Package%|REG_SZ|`,1000,1`|Ressource permettant de récupérer les informations de menu.|
 
- Les exemples suivants se trouvent dans le Registre sous la clé [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\NewProjectTemplates].
+ Tous les exemples suivants se trouvent dans le Registre sous la clé [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\NewProjectTemplates].
 
 ```
 \TemplateDirs\{ACEF4EB2-57CF-11D2-96F4-000000000000}\1                (CLSID for Figures Project projects)
@@ -234,12 +234,12 @@ Lorsque vous créez un nouveau type de projet, vous devez créer les entrées de
    "NewProjectDialogOnly"=dword:00000000
 ```
 
-|Nom|Type|Données|Description|
+|Name|Tapez|Données|Description|
 |----------|----------|----------|-----------------|
-|`@`|REG_SZ|`#%IDS_NEWPROJ_TEMPLATES_ENTRY%`|Valeur d’ID de ressource pour les modèles de projet Figures nouveau projet.|
-|`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|Chemin d’accès de la valeur par défaut du répertoire de nouveaux projets. Éléments dans ce répertoire s’afficheront dans le **Assistant Nouveau projet** boîte de dialogue.|
-|`SortPriority`|REG_DWORD|`41 (x29)`|Établit l’ordre dans lequel les projets seront affichera dans le nœud d’arbre de la **nouveau projet** boîte de dialogue.|
-|`NewProjectDialogOnly`|REG_DWORD|`0`|0 indique que les projets de ce type sont affichés uniquement dans le **nouveau projet** boîte de dialogue.|
+|`@`|REG_SZ|`#%IDS_NEWPROJ_TEMPLATES_ENTRY%`|Valeur d’ID de ressource pour les figures projet de nouveaux modèles de projet.|
+|`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|Chemin d’accès par défaut du nouveau répertoire de projets. Les éléments de ce répertoire s’affichent dans la boîte de dialogue **Assistant Nouveau projet** .|
+|`SortPriority`|REG_DWORD|`41 (x29)`|Établit l’ordre dans lequel les projets seront affichés dans le nœud de l’arborescence de la boîte de dialogue **nouveau projet** .|
+|`NewProjectDialogOnly`|REG_DWORD|`0`|0 indique que les projets de ce type s’affichent uniquement dans la boîte de dialogue **nouveau projet** .|
 
  L’exemple suivant se trouve dans le Registre sous la clé [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\InstalledProducts].
 
@@ -249,22 +249,22 @@ Lorsque vous créez un nouveau type de projet, vous devez créer les entrées de
    "UseInterface"=dword:00000001
 ```
 
-|Nom|Type|Données|Description|
+|Name|Tapez|Données|Description|
 |----------|----------|----------|-----------------|
 |`Package`|REG_SZ|`%CLSID_Package%`|ID de classe du VSPackage inscrit.|
-|`UseInterface`|REG_DWORD|`1`|1 indique que l’interface utilisateur doit être utilisée pour interagir avec ce projet. 0 indique qu’il n’existe aucune interface de l’interface utilisateur.|
+|`UseInterface`|REG_DWORD|`1`|1 indique que l’interface utilisateur sera utilisée pour interagir avec ce projet. 0 indique qu’il n’y a pas d’interface d’interface utilisateur.|
 
- Fichiers the.vsz contrôlent fréquemment de nouveaux types de projet contiennent une entrée RELATIVE_PATH. Ce chemin d’accès est relatif à chemin d’accès spécifié sous l’entrée \ProductDir du type de projet dans la clé d’installation suivante :
+ Les fichiers. vsz qui contrôlent de nouveaux types de projets contiennent fréquemment une entrée RELATIVE_PATH. Ce chemin d’accès est relatif au chemin d’accès spécifié sous l’entrée \ProductDir du type de projet dans la clé d’installation suivante :
 
  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\7.0Exp\Setup
 
- Par exemple, les modèles de projet Enterprise Frameworks ajoutent les entrées de Registre suivantes :
+ Par exemple, les modèles de projet Enterprise frameworks ajoutent les entrées de Registre suivantes :
 
  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\7.0Exp\Setup\EF\ProductDir = C:\Program Files\Microsoft Visual Studio\EnterpriseFrameworks\
 
- Cela signifie que si vous incluez un PROJECT_TYPE = entrée EF dans le fichier .vsz, la recherche d’environnement votre .vsz des fichiers dans le répertoire ProductDir spécifié précédemment.
+ Cela signifie que si vous incluez une entrée PROJECT_TYPE = EF dans le fichier. vsz, l’environnement recherche les fichiers. vsz dans le répertoire ProductDir spécifié précédemment.
 
 ## <a name="see-also"></a>Voir aussi
-- [Liste de contrôle : Création de nouveaux types de projets](../../extensibility/internals/checklist-creating-new-project-types.md)
+- [Liste de vérification : création de nouveaux types de projets](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Éléments d’un modèle de projet](../../extensibility/internals/elements-of-a-project-model.md)
 - [Création d’instances de projets à l’aide de fabriques de projets](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)

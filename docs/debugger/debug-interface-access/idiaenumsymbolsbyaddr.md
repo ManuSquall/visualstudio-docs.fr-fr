@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96ed66156fae24e22c549fffb6eb982a45e7e3f5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7d8cddaa39635be534e2247b48a370ed88b29ab4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830368"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743811"
 ---
 # <a name="idiaenumsymbolsbyaddr"></a>IDiaEnumSymbolsByAddr
-Énumère les différents symboles contenus dans la source de données par adresse.
+Énumère par adresse les différents symboles contenus dans la source de données.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,21 +33,21 @@ Le tableau suivant présente les méthodes de `IDiaEnumSymbolsByAddr`.
 
 |Méthode|Description|
 |------------|-----------------|
-|[IDiaEnumSymbolsByAddr::symbolByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyaddr.md)|Positionne l’énumérateur en effectuant une recherche par section et le décalage.|
+|[IDiaEnumSymbolsByAddr::symbolByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyaddr.md)|Positionne l’énumérateur en effectuant une recherche par section et décalage.|
 |[IDiaEnumSymbolsByAddr::symbolByRVA](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyrva.md)|Positionne l’énumérateur en effectuant une recherche par adresse virtuelle relative (RVA).|
 |[IDiaEnumSymbolsByAddr::symbolByVA](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-symbolbyva.md)|Positionne l’énumérateur en effectuant une recherche par adresse virtuelle (VA).|
-|[IDiaEnumSymbolsByAddr::Next](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-next.md)|Récupère les symboles suivants dans l’ordre par adresse. Met à jour la position de l’énumérateur en nombre d’éléments extraits.|
-|[IDiaEnumSymbolsByAddr::Prev](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-prev.md)|Récupère les symboles précédentes dans l’ordre par adresse. Met à jour la position de l’énumérateur en nombre d’éléments extraits.|
+|[IDiaEnumSymbolsByAddr::Next](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-next.md)|Récupère les symboles suivants dans l’ordre par adresse. Met à jour la position de l’énumérateur en fonction du nombre d’éléments extraits.|
+|[IDiaEnumSymbolsByAddr::Prev](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-prev.md)|Récupère les symboles précédents dans l’ordre par adresse. Met à jour la position de l’énumérateur en fonction du nombre d’éléments extraits.|
 |[IDiaEnumSymbolsByAddr::Clone](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr-clone.md)|Effectue une copie d’un objet.|
 
 ## <a name="remarks"></a>Notes
-Cette interface fournit des symboles, groupés par adresse. Pour travailler avec des symboles, groupés par type, par exemple `SymTagUDT` (type défini par l’utilisateur) ou `SymTagBaseClass`, utilisez le [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) interface.
+Cette interface fournit des symboles regroupés par adresse. Pour utiliser des symboles regroupés par type, par exemple `SymTagUDT` (type défini par l’utilisateur) ou `SymTagBaseClass`, utilisez l’interface [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) .
 
-## <a name="notes-for-callers"></a>Notes de publication pour les appelants
-Obtenez cette interface en appelant le [IDiaSession::getSymbolsByAddr](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md) (méthode).
+## <a name="notes-for-callers"></a>Notes pour les appelants
+Obtenez cette interface en appelant la méthode [IDiaSession :: getSymbolsByAddr](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md) .
 
 ## <a name="example"></a>Exemple
-Cette fonction affiche le nom et l’adresse de tous les symboles sont classés par adresse virtuelle relative.
+Cette fonction affiche le nom et l’adresse de tous les symboles classés par adresse virtuelle relative.
 
 ```C++
 void ShowSymbolsByAddress(IDiaSession *pSession)
@@ -93,12 +93,12 @@ void ShowSymbolsByAddress(IDiaSession *pSession)
 }
 ```
 
-## <a name="requirements"></a>Configuration requise
-En-tête : Dia2.h
+## <a name="requirements"></a>spécifications
+En-tête : Dia2. h
 
-Bibliothèque : diaguids.lib
+Bibliothèque : diaguids. lib
 
-DLL : msdia80.dll
+DLL : Msdia80. dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Interfaces (SDK Debug Interface Access)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)

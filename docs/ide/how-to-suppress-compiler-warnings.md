@@ -8,14 +8,14 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 764c488b659418dd409a5d83b1efcaac502f1e5e
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
-ms.translationtype: HT
+ms.openlocfilehash: aec3dfb45471a3349e14419671ef1fb3b5e05db5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415789"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747947"
 ---
-# <a name="how-to-suppress-compiler-warnings"></a>Procédure : Supprimer les avertissements du compilateur
+# <a name="how-to-suppress-compiler-warnings"></a>Guide pratique pour supprimer des avertissements du compilateur
 
 Vous pouvez nettoyer un journal de génération en filtrant un ou plusieurs types d’avertissements du compilateur. Par exemple, vous souhaitez peut-être passer en revue uniquement une partie de la sortie générée quand vous définissez le niveau de détail **Normal**, **Détaillé** ou **Diagnostic** pour le journal de génération. Pour plus d’informations sur le niveau de détail, consultez [Guide pratique pour afficher, enregistrer et configurer des fichiers journaux de génération](../ide/how-to-view-save-and-configure-build-log-files.md).
 
@@ -33,7 +33,7 @@ Utilisez la page de propriétés **Générer** pour supprimer des avertissements
 
 1. Régénérez la solution.
 
-## <a name="suppress-specific-warnings-for-visual-c"></a>Supprimer des avertissements spécifiques pour Visual C++
+## <a name="suppress-specific-warnings-for-c"></a>Supprimer les avertissements spécifiques pourC++
 
 Utilisez la page de propriétés **Propriétés de configuration** pour supprimer des avertissements spécifiques pour les projets C++.
 
@@ -87,7 +87,7 @@ Cet exemple montre comment modifier le fichier *.vbproj* pour supprimer des aver
     ```
 
    > [!NOTE]
-   > Les projets .NET Core ne contiennent pas de groupes de propriétés de configuration de build par défaut. Pour supprimer des avertissements d’un projet .NET Core, ajoutez manuellement la section de configuration de build au fichier. Par exemple :
+   > Les projets .NET Core ne contiennent pas de groupes de propriétés de configuration de build par défaut. Pour supprimer des avertissements d’un projet .NET Core, ajoutez manuellement la section de configuration de build au fichier. Exemple :
    >
    > ```xml
    > <Project Sdk="Microsoft.NET.Sdk">
@@ -132,6 +132,6 @@ Dans certains cas, il se peut que vous souhaitiez supprimer des avertissements d
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Procédure pas à pas : générer une application](../ide/walkthrough-building-an-application.md)
+- [Procédure pas à pas : générer une application](../ide/walkthrough-building-an-application.md)
 - [Guide pratique pour afficher, enregistrer et configurer des fichiers journaux de génération](../ide/how-to-view-save-and-configure-build-log-files.md)
 - [Compiler et générer](../ide/compiling-and-building-in-visual-studio.md)

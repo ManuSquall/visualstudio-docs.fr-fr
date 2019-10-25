@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58f572fcce0b490fad8f94f1e3e3d941e8568211
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 24807114cbb28c4112f538b8aa88b26bf5491fef
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62827723"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742192"
 ---
 # <a name="idiasessionfindinlineelinesbyva"></a>IDiaSession::findInlineLinesByVA
-Récupère une énumération qui permet au client d’effectuer une itération dans les informations de numéro de ligne de toutes les fonctions qui sont inline, directement ou indirectement, par le symbole parent spécifié et est contenue dans l’adresse virtuelle spécifiée (VA).
+Récupère une énumération qui permet à un client d’itérer au sein des informations de numéro de ligne de toutes les fonctions qui sont Inline, directement ou indirectement, par le symbole parent spécifié et qui sont contenues dans l’adresse virtuelle (VA) spécifiée.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -32,22 +32,22 @@ HRESULT findInlineeLinesByVA ( 
 #### <a name="parameters"></a>Paramètres
  `parent`
 
-[in] Un `IDiaSymbol` objet représentant le parent.
+dans Objet `IDiaSymbol` représentant le parent.
 
  `va`
 
-[in] Spécifie l’adresse utiliser que
+dans Spécifie l’adresse en tant que VA.
 
  `length`
 
-[in] Spécifie la plage d’adresses, en octets, pour couvrir cette requête.
+dans Spécifie la plage d’adresses, en nombre d’octets, à couvrir avec cette requête.
 
  `ppResult`
 
-[out] Contient un `IDiaEnumLineNumbers` objet qui contient la liste des numéros de ligne qui sont récupérés.
+à Contient un objet `IDiaEnumLineNumbers` qui contient la liste des numéros de ligne qui sont récupérés.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne un code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

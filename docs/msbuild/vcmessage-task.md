@@ -11,26 +11,26 @@ dev_langs:
 - jsharp
 - C++
 helpviewer_keywords:
-- VCMessage task (MSBuild (Visual C++))
-- MSBuild (Visual C++), VCMessage task
+- VCMessage task (MSBuild (C++))
+- MSBuild (C++), VCMessage task
 ms.assetid: 956675fd-05dc-40b4-856f-616145103498
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d025fd1f71b67acbcd532232b36b55fd35e1f530
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: be4f963a5944882f14118be54e498fd4712c2e46
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970755"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747181"
 ---
 # <a name="vcmessage-task"></a>VCMessage (tâche)
 Journalise les messages d’avertissement et d’erreur lors de la génération.
 
-## <a name="remarks"></a>Remarques
- Cette tâche permet d’implémenter MSBuild pour Visual C++ et n’est pas destinée à être appelée par l’utilisateur. Pour plus d'informations, consultez <xref:Microsoft.Build.Utilities.TaskLoggingHelper>.
+## <a name="remarks"></a>Notes
+ Cette tâche aide à implémenter C++ MSBuild pour les projets et n’est pas destinée à être appelée par l’utilisateur. Pour plus d'informations, consultez <xref:Microsoft.Build.Utilities.TaskLoggingHelper>.
 
 ## <a name="parameters"></a>Paramètres
  Le tableau ci-dessous décrit les paramètres de la tâche **VCMessage**.

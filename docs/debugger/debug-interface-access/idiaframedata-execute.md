@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78440c703ece2aa54e54594d57156dbb17848915
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 88c9af8293dfc6a35e5f0e42d9596494d74b10aa
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832650"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743683"
 ---
 # <a name="idiaframedataexecute"></a>IDiaFrameData::execute
-Effectue le déroulement de pile et renvoie les résultats dans une interface de frame de parcours de pile.
+Effectue le déroulement de la pile et retourne les résultats dans une interface de frame de parcours de pile.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,20 +33,20 @@ HRESULT execute ( 
 #### <a name="parameters"></a>Paramètres
  `frame`
 
-[in] Un [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md) objet qui contient l’état des registres de frame.
+dans Objet [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md) qui contient l’état des registres de frame.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Le tableau suivant montre les valeurs de retournés possibles pour cette méthode.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne un code d’erreur. Le tableau suivant indique les valeurs de retour possibles pour cette méthode.
 
-|Value|Description|
+|valeur|Description|
 |-----------|-----------------|
-|E_DIA_INPROLOG|Impossible d’exécuter un frame de pile, tandis que dans le code de prologue.|
-|E_DIA_SYNTAX|Analyser l’erreur s’est produite dans le programme de frame.|
-|E_DIA_FRAME_ACCESS|Impossible de registres d’accès ou de la mémoire.|
-|E_DIA_VALUE|Erreur dans le calcul d’une valeur (par exemple, la division par zéro).|
+|E_DIA_INPROLOG|Impossible d’exécuter un frame de pile dans le code de prologue.|
+|E_DIA_SYNTAX|Erreur d’analyse rencontrée dans le programme Frame.|
+|E_DIA_FRAME_ACCESS|Impossible d’accéder aux registres ou à la mémoire.|
+|E_DIA_VALUE|Erreur dans le calcul d’une valeur (par exemple, Division par zéro).|
 
 ## <a name="remarks"></a>Notes
- Cette méthode est appelée pendant le débogage pour dérouler la pile. Le [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md) objet est implémenté par l’application cliente pour recevoir des mises à jour aux registres et de fournir des méthodes utilisées par le `execute` (méthode).
+ Cette méthode est appelée pendant le débogage pour dérouler la pile. L’objet [IDiaStackWalkFrame](../../debugger/debug-interface-access/idiastackwalkframe.md) est implémenté par l’application cliente pour recevoir des mises à jour des registres et pour fournir les méthodes utilisées par la méthode `execute`.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

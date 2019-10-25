@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0ebe31267ee666250fbaeda73f1678051f1d4727
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: c2d92477e37b4918e0601bf163e07f5a8492136c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72435856"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737896"
 ---
 # <a name="edit-and-continue-c"></a>Modifier & Continuer (C++)
 Vous pouvez utiliser modifier & continuer dans C++ les projets. Pour plus d’informations sur les limitations de modifier & continuer, consultez [modifications du code prises en charge (C++)](../debugger/supported-code-changes-cpp.md) .

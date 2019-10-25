@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5199be7307fdaa607f5aa6a5f554d9fcc82f452d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: f3c62271f6324e50a68de393cfa668c69ba4a935
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62837821"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741298"
 ---
 # <a name="idiasymbolfindchildren"></a>IDiaSymbol::findChildren
 Récupère les enfants du symbole.
@@ -36,25 +36,25 @@ HRESULT findChildren ( 
 #### <a name="parameters"></a>Paramètres
  `symtag`
 
-[in] Spécifie les balises de symbole des enfants à récupérer, tel que défini dans le [SymTagEnum (énumération)](../../debugger/debug-interface-access/symtagenum.md). La valeur `SymTagNull` pour tous les enfants doivent être récupérées.
+dans Spécifie les balises de symboles des enfants à récupérer, comme défini dans l' [énumération SymTagEnum](../../debugger/debug-interface-access/symtagenum.md). Affectez la valeur `SymTagNull` pour tous les enfants à récupérer.
 
  `name`
 
-[in] Spécifie le nom des enfants à récupérer. La valeur `NULL` pour tous les enfants doivent être récupérées.
+dans Spécifie le nom des enfants à récupérer. Affectez la valeur `NULL` pour tous les enfants à récupérer.
 
  `compareFlags`
 
-[in] Spécifie les options de comparaison appliquées à la correspondance de noms. Les valeurs de la [NameSearchOptions (énumération)](../../debugger/debug-interface-access/namesearchoptions.md) énumération peut être utilisée seul ou combiné.
+dans Spécifie les options de comparaison appliquées à la correspondance de noms. Les valeurs de l’énumération d' [énumération NameSearchOptions](../../debugger/debug-interface-access/namesearchoptions.md) peuvent être utilisées seules ou en combinaison.
 
  `ppResult`
 
-[out] Retourne un [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) de récupérer l’objet qui contient une liste des symboles enfants.
+à Retourne un objet [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md) qui contient une liste des symboles enfants récupérés.
 
 ## <a name="return-value"></a>Valeur de retour
- Retourne `S_OK` si au moins un enfant du symbole a été trouvé, ou retourne `S_FALSE` si aucun enfant n’a été trouvé ; sinon, retourne un code d’erreur.
+ Retourne `S_OK` si au moins un enfant du symbole a été trouvé, ou retourne `S_FALSE` si aucun enfant n’a été trouvé ; Sinon, retourne un code d’erreur.
 
 ## <a name="remarks"></a>Notes
- Cette méthode est identique à l’appel le [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md) méthode avec ce symbole comme premier paramètre.
+ Cette méthode est identique à l’appel de la méthode [IDiaSession :: findchildren (](../../debugger/debug-interface-access/idiasession-findchildren.md) avec ce symbole comme premier paramètre.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

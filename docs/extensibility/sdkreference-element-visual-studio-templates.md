@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da11d9e01802bff8162b2767444c7a1d225200a0
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3cf1b3bed942894e20132ecd7b06c1884caa9a93
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338479"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72720092"
 ---
 # <a name="sdkreference-element-visual-studio-templates"></a>Élément SDKReference (modèles Visual Studio)
 Spécifie que le modèle d’élément utilise une référence SDK.
@@ -33,10 +33,10 @@ Spécifie que le modèle d’élément utilise une référence SDK.
  Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.
 
 ### <a name="attributes"></a>Attributs
- Aucun.
+ Aucun(e).
 
 ### <a name="child-elements"></a>Éléments enfants
- Aucun.
+ Aucun(e).
 
 ### <a name="parent-elements"></a>Éléments parents
 

@@ -7,12 +7,12 @@ ms.author: mblome
 manager: markl
 dev_langs:
 - CPP
-ms.openlocfilehash: fee4478f52cd107d2173919617aca8acd07234eb
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 762ba639c1443bb737087233d04c9e3753f2f455
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72445655"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72807074"
 ---
 # <a name="use-the-c-core-guidelines-checkers"></a>Utiliser les vérificateurs de C++ Core Guidelines
 
@@ -80,17 +80,17 @@ Les C++ recommandations de base sont là pour vous aider à écrire du code plus
 Les rubriques de référence pour la plupart des règles sont sous [référence de vérification principale de Visual C++ Studio](code-analysis-for-cpp-corecheck.md).
 
 À compter de Visual Studio 2017 version 15,3, les ensembles de règles pris en charge sont les suivants :
-- Les **règles du pointeur propriétaire** appliquent [les vérifications de gestion des ressources liées à owner @ no__t C++ -2T > dans les instructions de base](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- Les **règles de pointeur propriétaire** appliquent [ C++ les vérifications de gestion des ressources liées au propriétaire\<t > à partir des instructions de base](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
-- Les **règles const** appliquent [ C++ les vérifications liées à const à partir des instructions de base](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).
+- Les **règles const** appliquent [ C++ les vérifications liées à const à partir des instructions de base](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).
 
-- Les **règles de pointeur brut** appliquent [ C++ les vérifications de gestion des ressources liées aux pointeurs bruts à partir des recommandations principales](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- Les **règles de pointeur brut** appliquent [ C++ les vérifications de gestion des ressources liées aux pointeurs bruts à partir des recommandations principales](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
-- Les **règles de pointeur uniques** appliquent [les C++ vérifications de gestion des ressources liées aux types avec une sémantique de pointeur unique à partir des instructions de base](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- Les **règles de pointeur uniques** appliquent [les C++ vérifications de gestion des ressources liées aux types avec une sémantique de pointeur unique à partir des instructions de base](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
-- Les **règles de limites** appliquent le [profil de limites C++ des recommandations principales](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
+- Les **règles de limites** appliquent le [profil de limites C++ des recommandations principales](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
 
-- Les **règles de type** appliquent le [profil C++ de type des recommandations principales](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile).
+- Les **règles de type** appliquent le [profil C++ de type des recommandations principales](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile).
 
 **Visual Studio 2017 version 15.5** :
 
@@ -131,7 +131,7 @@ Ces macros correspondent aux ensembles de règles et se développent en une list
 
 ## <a name="attributes"></a>Attributs
 
-Le compilateur Microsoft C++ Visual a une prise en charge limitée de l’attribut de suppression GSL. Il peut être utilisé pour supprimer des avertissements sur les instructions d’expression et de bloc dans une fonction.
+Le compilateur C++ Microsoft a une prise en charge limitée de l’attribut de suppression GSL. Il peut être utilisé pour supprimer des avertissements sur les instructions d’expression et de bloc dans une fonction.
 
 ```cpp
 // Suppress only warnings from the 'r.11' rule in expression.
@@ -225,17 +225,17 @@ Vous devez définir certaines variables d’environnement et utiliser les option
 1. **Variables d’environnement**
    - `set esp.extensions=cppcorecheck.dll` indique au moteur de charger le C++ module instructions principales.
    - `set esp.annotationbuildlevel=ignore` désactive la logique qui traite les annotations SAL. Les annotations n’affectent pas l' C++ analyse du code dans le vérificateur des instructions de base, mais leur traitement prend du temps (parfois à long terme). Ce paramètre est facultatif, mais fortement recommandé.
-   - `set caexcludepath=%include%`, nous vous recommandons vivement de désactiver les avertissements qui se déclenchent sur les en-têtes standard. Vous pouvez ajouter d’autres chemins ici, par exemple, le chemin d’accès aux en-têtes courants dans votre projet.
+   - `set caexcludepath=%include%` nous vous recommandons vivement de désactiver les avertissements qui se déclenchent sur les en-têtes standard. Vous pouvez ajouter d’autres chemins ici, par exemple, le chemin d’accès aux en-têtes courants dans votre projet.
 2. **Options de ligne de commande**
    - `/analyze` active l’analyse du code (envisagez également d’utiliser/Analyze : uniquement et/Analyze : quiet).
    - `/analyze:plugin EspXEngine.dll` cette option charge le moteur d’extensions d’analyse du code dans le préfast. Ce moteur charge, à son tour, C++ le vérificateur des instructions de base.
 
 ## <a name="use-the-guideline-support-library"></a>Utiliser la bibliothèque de prise en charge des instructions
-La bibliothèque de prise en charge des instructions est conçue pour vous aider à suivre les instructions principales. Le portail GSL comprend des définitions qui vous permettent de remplacer des constructions sujettes aux erreurs par des alternatives plus sûres. Par exemple, vous pouvez remplacer une paire `T*, length` de paramètres par le type `span<T>`. Le portail GSL est disponible au [http://www.nuget.org/packages/Microsoft.Gsl](http://www.nuget.org/packages/Microsoft.Gsl). La bibliothèque étant Open source, vous pouvez afficher les sources, créer des commentaires ou contribuer. Le projet se trouve à l’adresse [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).
+La bibliothèque de prise en charge des instructions est conçue pour vous aider à suivre les instructions principales. Le portail GSL comprend des définitions qui vous permettent de remplacer des constructions sujettes aux erreurs par des alternatives plus sûres. Par exemple, vous pouvez remplacer une paire `T*, length` de paramètres par le type `span<T>`. Le portail GSL est disponible au [http://www.nuget.org/packages/Microsoft.Gsl](https://www.nuget.org/packages/Microsoft.Gsl). La bibliothèque étant Open source, vous pouvez afficher les sources, créer des commentaires ou contribuer. Le projet se trouve à l’adresse [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).
 
 ## <a name="vs2015_corecheck"></a>Utiliser les C++ instructions de contrôle de base dans les projets Visual Studio 2015
 
-Si vous utilisez Visual Studio 2015, les C++ ensembles de règles d’analyse du code de contrôle de base ne sont pas installés par défaut. Vous devez effectuer quelques étapes supplémentaires avant de pouvoir activer les C++ outils d’analyse du code de vérification de base dans Visual Studio 2015. Microsoft fournit une prise en charge pour les projets Visual Studio 2015 à l’aide d’un package NuGet. Le package est nommé Microsoft. CppCoreCheck et est disponible sur [http://www.nuget.org/packages/Microsoft.CppCoreCheck](http://www.nuget.org/packages/Microsoft.CppCoreCheck). Pour ce package, vous devez avoir au moins Visual Studio 2015 avec la mise à jour 1 installée.
+Si vous utilisez Visual Studio 2015, les C++ ensembles de règles d’analyse du code de contrôle de base ne sont pas installés par défaut. Vous devez effectuer quelques étapes supplémentaires avant de pouvoir activer les C++ outils d’analyse du code de vérification de base dans Visual Studio 2015. Microsoft fournit une prise en charge pour les projets Visual Studio 2015 à l’aide d’un package NuGet. Le package est nommé Microsoft. CppCoreCheck et est disponible sur [http://www.nuget.org/packages/Microsoft.CppCoreCheck](https://www.nuget.org/packages/Microsoft.CppCoreCheck). Pour ce package, vous devez avoir au moins Visual Studio 2015 avec la mise à jour 1 installée.
 
 Le package installe également un autre package en tant que dépendance, une bibliothèque de prise en charge des instructions en en-tête uniquement (GSL). Le portail GSL est également disponible sur GitHub au [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).
 

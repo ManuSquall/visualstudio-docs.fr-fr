@@ -1,5 +1,5 @@
 ---
-title: 'Erreur : Échec d’ouverture de session à distance du groupe de travail | Microsoft Docs'
+title: 'Erreur : échec de l’ouverture de session à distance du groupe de travail | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d9142e92367dd10653bb8fdaaf86c34f3f17b84
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9d1ee0cfbd021eb7d6a03a791713d187d3c8877c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63399231"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72736257"
 ---
-# <a name="error-workgroup-remote-logon-failure"></a>Erreur : Échec de l’ouverture de session à distance du groupe de travail
+# <a name="error-workgroup-remote-logon-failure"></a>Erreur : Échec d'ouverture de session à distance du groupe de travail
 Cette erreur affiche le message suivant :
 
  Échec d'ouverture de session : nom d'utilisateur inconnu ou mot de passe incorrect
@@ -67,11 +67,11 @@ Cette erreur affiche le message suivant :
 
 3. Cliquez sur **Options de sécurité**.
 
-4. Dans le **stratégie** colonne, double-cliquez sur **accès réseau : Modèle de partage et de sécurité pour les comptes locaux**.
+4. Dans la colonne **Stratégie**, double-cliquez sur **Accès réseau : modèle de partage et de sécurité pour les comptes locaux**.
 
-5. Dans le **accès réseau : Modèle de partage et de sécurité pour les comptes locaux** boîte de dialogue, changez la valeur à **classique - les utilisateurs locaux s’authentifient eux-mêmes** et cliquez sur le **appliquer** bouton.
+5. Dans la boîte de dialogue **Accès réseau : modèle de partage et de sécurité pour les comptes locaux**, remplacez la valeur par **Classique - les utilisateurs locaux s’authentifient eux-mêmes** et cliquez sur le bouton **Appliquer**.
 
-     ![Options de sécurité de stratégie de sécurité locale](../debugger/media/dbg_err_localsecuritypolicy_securityoptions_networkaccess.png "DBG_ERR_LocalSecurityPolicy_SecurityOptions_NetworkAccess")
+     ![Options de sécurité de la stratégie de sécurité locale](../debugger/media/dbg_err_localsecuritypolicy_securityoptions_networkaccess.png "DBG_ERR_LocalSecurityPolicy_SecurityOptions_NetworkAccess")
 
 ## <a name="see-also"></a>Voir aussi
 - [Erreurs et résolution des problèmes du débogage distant](../debugger/remote-debugging-errors-and-troubleshooting.md)

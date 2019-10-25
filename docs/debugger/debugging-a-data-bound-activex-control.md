@@ -1,5 +1,5 @@
 ---
-title: Débogage d’un contrôle ActiveX de lié aux données | Microsoft Docs
+title: Débogage d’un contrôle ActiveX lié aux données | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b5b3d5a58c87988c950328a8b0136986b3a149f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 82376be37eeb7dd7946b44556a2931e761e2824d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852420"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738242"
 ---
 # <a name="debugging-a-data-bound-activex-control"></a>Débogage d'un contrôle ActiveX lié aux données
 Si vous développez un contrôle ActiveX qui sera lié à un contrôle de source de données, vous pouvez créer votre propre application conteneur et utiliser ce conteneur pour le débogage du contrôle ActiveX.
@@ -30,9 +30,9 @@ Si vous développez un contrôle ActiveX qui sera lié à un contrôle de source
  Par exemple, vous pouvez créer une application MFC basée sur des boîtes de dialogue et placer votre contrôle lié aux données et un contrôle de source de données dans la boîte de dialogue. Vous pouvez utiliser cette application MFC pour le test d'exécution et comme exécutable conteneur pour déboguer votre contrôle ActiveX lié aux données.
 
 ## <a name="using-the-test-container"></a>Utilisation de Test Container
- Si vous voulez qu'un conteneur facilement modifiable prenne en charge plusieurs interfaces sur le contrôle ou le conteneur, utilisez ActiveX Test Container comme exécutable pour la session de débogage. Dans ActiveX Test Container, cliquez sur **Options** dans le menu **Conteneur** pour activer différentes interfaces. Pour plus d’informations, consultez [test des propriétés et des événements avec le conteneur de Test](/cpp/mfc/testing-properties-and-events-with-test-container).
+ Si vous voulez qu'un conteneur facilement modifiable prenne en charge plusieurs interfaces sur le contrôle ou le conteneur, utilisez ActiveX Test Container comme exécutable pour la session de débogage. Dans ActiveX Test Container, cliquez sur **Options** dans le menu **Conteneur** pour activer différentes interfaces. Pour plus d’informations, consultez [test des propriétés et des événements avec le conteneur de test](/cpp/mfc/testing-properties-and-events-with-test-container).
 
- Si vous avez besoin d'effectuer un pas à pas détaillé dans le code du conteneur pendant le débogage, utilisez la version Debug de votre conteneur ou utilisez la version Debug d'ActiveX Test Container. Pour plus d’informations, consultez [exemple TSTCON : Contrôle ActiveX Test Container](https://msdn.microsoft.com/library/72fa40ef-27d3-400c-813f-10b03236e600).
+ Si vous avez besoin d'effectuer un pas à pas détaillé dans le code du conteneur pendant le débogage, utilisez la version Debug de votre conteneur ou utilisez la version Debug d'ActiveX Test Container. Pour plus d’informations, consultez [exemple TSTCON : ActiveX Control Test Container](https://msdn.microsoft.com/library/72fa40ef-27d3-400c-813f-10b03236e600).
 
 ## <a name="see-also"></a>Voir aussi
 - [Débogage COM et ActiveX](../debugger/com-and-activex-debugging.md)

@@ -1,5 +1,5 @@
 ---
-title: Configuration pour la génération de projet | Microsoft Docs
+title: Configuration du projet pour la génération | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,49 +11,49 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd9464105d777c0d488175ad67e1481022caa2d1
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 956449d1207a9831f9dd04a707fffe4b9b5a4221
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328535"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72726043"
 ---
 # <a name="project-configuration-for-building"></a>Configuration de projet pour la création
-La liste des configurations de solution pour une solution donnée est gérée par la boîte de dialogue Configurations de Solution.
+La liste des configurations de solution pour une solution donnée est gérée par la boîte de dialogue configurations de solution.
 
- Un utilisateur peut créer des configurations de solution supplémentaires, chacune avec son propre nom unique. Lorsque l’utilisateur crée une nouvelle configuration de solution, l’IDE par défaut est le nom de configuration correspondant dans les projets, ou débogage si aucun nom correspondant existe. L’utilisateur peut modifier la sélection pour répondre aux exigences spécifiques si nécessaire. La seule exception à ce comportement est lorsque le projet prend en charge une configuration qui correspond au nom de la nouvelle configuration de solution. Par exemple, supposons qu'une solution contient Project1 et Project2. Project1 a des configurations de projet Debug et MyConfig1 vente au détail. Project2 a des configurations de projet Debug et MyConfig2 vente au détail.
+ Un utilisateur peut créer des configurations de solution supplémentaires, chacune avec son propre nom unique. Lorsque l’utilisateur crée une configuration de solution, l’IDE a comme valeur par défaut le nom de configuration correspondant dans les projets, ou Déboguer si aucun nom correspondant n’existe. L’utilisateur peut modifier la sélection pour répondre à des exigences spécifiques si nécessaire. La seule exception à ce comportement est lorsque le projet prend en charge une configuration qui correspond au nom de la nouvelle configuration de solution. Par exemple, supposons qu’une solution contient Projet1 et project2. Project1 présente des configurations de projet Debug, Retail et MyConfig1. Project2 présente des configurations de projet Debug, Retail et MyConfig2.
 
- Si l’utilisateur crée une nouvelle configuration de solution nommée MyConfig2, Projet1 lie sa configuration de débogage à la configuration de solution par défaut. Project2 lie également sa configuration MyConfig2 à la configuration de solution par défaut.
-
-> [!NOTE]
-> Liaison respecte la casse.
-
- Lorsque l’utilisateur sélectionne le **sélection Multiple** élément dans la liste déroulante de configuration, l’environnement affiche une boîte de dialogue qui fournit la liste des configurations disponibles.
-
- ![Plusieurs Configurations](../../extensibility/internals/media/vsmultiplecfgs.gif "vsMultipleCfgs") plusieurs configurations
-
- Dans cette boîte de dialogue, l’utilisateur peut sélectionner une ou plusieurs configurations. Une fois sélectionnée, les valeurs de propriété affichées sur la boîte de dialogue des pages de propriétés reflètent l’intersection des valeurs pour les configurations sélectionnées.
-
- Consultez [Configuration de la Solution](../../extensibility/internals/solution-configuration.md) pour plus d’informations relatives à l’ajout et la modification du nom des configurations pour les projets et solutions.
-
- Dépendances du projet et l’ordre de génération sont configuration indépendante de la solution : autrement dit, vous pouvez uniquement définir arborescence d’une dépendance pour tous les projets dans la solution. Clic droit sur la solution ou le projet et en sélectionnant le **dépendances du projet** ou **ordre de génération de projet** option ouvre le **dépendances du projet** boîte de dialogue. Il peut également être ouvert à partir de la **projet** menu.
-
- ![Dépendances du projet](../../extensibility/internals/media/vsprojdependencies.gif "vsProjDependencies") dépendances du projet
-
- Dépendances du projet déterminent l’ordre dans lequel les projets sont générés. Utilisez l’onglet de l’ordre de génération sur la boîte de dialogue pour afficher l’ordre exact dans lequel les projets au sein d’une solution de générer et utilisez l’onglet dépendances pour modifier l’ordre de génération.
+ Si l’utilisateur crée une configuration de solution nommée MyConfig2, Project1 lie sa configuration Debug à la configuration de la solution par défaut. Project2 lie également sa configuration MyConfig2 à la configuration de la solution par défaut.
 
 > [!NOTE]
-> Dans la liste des projets qui ont leurs cases à cocher activées mais grisées ont été ajoutés par l’environnement en raison des dépendances explicites spécifié par le <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> ou <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> interfaces et ne peut pas être modifié. Par exemple, ajoutez une référence de projet à partir d’un [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] projet vers un autre projet ajoute automatiquement une dépendance de build qui peut être supprimée seulement en supprimant la référence. Les projets dont les cases à cocher sont claires et apparaissent grisés ne peuvent pas être sélectionnés, car cela créerait une boucle de dépendance (par exemple, Projet1 serait dépend Project2 et Project2 serait dépend Projet1), ce qui serait bloquer la génération.
+> La liaison ne respecte pas la casse.
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] processus de génération incluent la compilation classique et les opérations de liaison qui sont appelées avec une seule commande de Build. Deux autres processus de génération peuvent également être pris en charge : une opération de nettoyage pour supprimer tous les éléments de sortie à une build précédente et une vérification à jour pour déterminer si un élément de sortie dans une configuration a changé.
+ Lorsque l’utilisateur sélectionne l’élément **sélection multiple** dans la liste déroulante Configuration, l’environnement affiche une boîte de dialogue qui fournit la liste des configurations disponibles.
 
-- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2> les objets renvoient un correspondant <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> (retourné par <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>) pour gérer leurs processus de génération. Pour signaler l’état d’une opération de génération lorsqu’elle se produit, configurations effectuer des appels vers <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildStatusCallback>, une interface implémentée par l’environnement et tout autre objet intéressés par les événements de statut de build.
+ ![Configurations multiples](../../extensibility/internals/media/vsmultiplecfgs.gif "vsMultipleCfgs") Configurations multiples
 
- Une fois généré, les paramètres de configuration peuvent être utilisés pour déterminer s’ils peuvent être exécutés sous le contrôle du débogueur. Implémentent des configurations <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg> pour prendre en charge le débogage.
+ Dans cette boîte de dialogue, l’utilisateur peut sélectionner une ou plusieurs configurations. Une fois sélectionné, les valeurs de propriété affichées dans la boîte de dialogue pages de propriétés reflètent l’intersection des valeurs des configurations sélectionnées.
 
- Après avoir implémenté les dépendances du projet, vous pouvez manipuler par programmation les dépendances via le modèle automation. Vous appelez <xref:EnvDTE.SolutionBuild.BuildDependencies%2A> dans le modèle automation. Il n’existe aucune interface de niveau d’API VSIP disponibles qui permettent la manipulation directe de leurs propriétés et les configurations de gestionnaire de build de solution.
+ Pour plus d’informations sur l’ajout et le changement de nom des configurations pour les solutions et les projets, consultez Configuration de la [solution](../../extensibility/internals/solution-configuration.md) .
 
- En outre, vous pouvez fournir une grille dans la fenêtre de dépendances du projet. Pour plus d’informations, consultez [afficher la grille Propriétés](../../extensibility/internals/properties-display-grid.md).
+ Les dépendances de projet et l’ordre de génération sont indépendants de la configuration de solution : autrement dit, vous ne pouvez configurer qu’une seule arborescence de dépendances pour tous les projets de la solution. Si vous cliquez avec le bouton droit sur la solution ou le projet et que vous sélectionnez l’option **dépendances** du projet ou **ordre de génération** du projet, la boîte de dialogue **dépendances** du projet s’ouvre. Vous pouvez également l’ouvrir à partir du menu **projet** .
+
+ ![Dépendances du projet](../../extensibility/internals/media/vsprojdependencies.gif "vsProjDependencies") Dépendances du projet
+
+ Les dépendances de projet déterminent l’ordre dans lequel les projets sont générés. Utilisez l’onglet ordre de la génération de la boîte de dialogue pour afficher l’ordre exact dans lequel les projets d’une solution seront générés, et utilisez l’onglet dépendances pour modifier l’ordre de génération.
+
+> [!NOTE]
+> Les projets de la liste dont les cases à cocher sont activées mais qui apparaissent grisées ont été ajoutés par l’environnement en raison de dépendances explicites spécifiées par le <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> ou les interfaces <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency>, et ne peuvent pas être modifiées. Par exemple, l’ajout d’une référence de projet d’un projet [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] à un autre projet ajoute automatiquement une dépendance de génération qui peut uniquement être supprimée en supprimant la référence. Les projets dont les cases à cocher sont claires et qui apparaissent grisées ne peuvent pas être sélectionnés, car cela crée une boucle de dépendance (par exemple, Project1 dépend de Project2 et Project2 dépend de Projet1), ce qui bloquerait la Build.
+
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] processus de génération inclut les opérations de compilation et de liaison classiques qui sont appelées avec une seule commande de génération. Deux autres processus de génération peuvent également être pris en charge : une opération de nettoyage pour supprimer tous les éléments de sortie d’une build précédente et une vérification à jour pour déterminer si un élément de sortie d’une configuration a changé.
+
+- les objets <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2> retournent un <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> correspondant (retourné par <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>) pour gérer leurs processus de génération. Pour signaler l’état d’une opération de génération pendant qu’elle se produit, les configurations effectuent des appels à <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildStatusCallback>, une interface implémentée par l’environnement et tout autre objet qui s’intéresse aux événements d’état de Build.
+
+ Une fois générés, les paramètres de configuration peuvent être utilisés pour déterminer s’ils peuvent ou non être exécutés sous le contrôle du débogueur. Les configurations implémentent <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg> pour prendre en charge le débogage.
+
+ Après avoir implémenté les dépendances du projet, vous pouvez manipuler par programmation les dépendances par le biais du modèle Automation. Vous appelez <xref:EnvDTE.SolutionBuild.BuildDependencies%2A> dans le modèle Automation. Il n’y a pas d’interfaces de niveau d’API VSIP disponibles qui autorisent la manipulation directe des configurations du gestionnaire de build de solution et de leurs propriétés.
+
+ En outre, vous pouvez fournir une grille dans la fenêtre dépendances du projet. Pour plus d’informations, consultez Affichage de la [grille des propriétés](../../extensibility/internals/properties-display-grid.md).
 
 ## <a name="see-also"></a>Voir aussi
 - [Gestion des options de configuration](../../extensibility/internals/managing-configuration-options.md)

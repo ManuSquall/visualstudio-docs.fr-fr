@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32e0d8c37b4016412f6dca8772d22baf65799429
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b9640fa8f82c7bb87990c97ef7916e7323943ece
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832797"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741646"
 ---
-# <a name="idiastackframegetmaxstack"></a>IDiaStackFrame::get_maxStack
-Récupère le nombre maximal d’octets ajoutée à la pile dans le frame.
+# <a name="idiastackframeget_maxstack"></a>IDiaStackFrame::get_maxStack
+Récupère le nombre maximal d’octets ayant fait l’objet d’un push sur la pile dans le frame.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,10 +33,10 @@ HRESULT get_maxStack ( 
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-[out] Retourne le nombre maximal d’octets est ajouté à la pile.
+à Retourne le nombre maximal d’octets ayant fait l’objet d’un push sur la pile.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si la propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si la propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

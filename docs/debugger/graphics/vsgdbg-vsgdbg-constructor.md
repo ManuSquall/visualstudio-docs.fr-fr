@@ -8,15 +8,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db51226c4d980359fd36ee5196e48d7fa4577a37
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ae94a7cb9572a0975dc1c3717275c384c2e45978
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62895141"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72734757"
 ---
 # <a name="vsgdbgvsgdbg-constructor"></a>VsgDbg::VsgDbg, constructeur
-Construit une instance de la `VsgDbg` classe avec ou sans la préparer le composant dans l’application de graphics diagnostics pour capturer et enregistrer des informations graphiques par défaut, en fonction du paramètre booléen spécifié activement.
+Construit une instance de la classe `VsgDbg` avec ou sans préparer le composant dans l’application de Graphics Diagnostics pour capturer et enregistrer activement les informations graphiques par défaut, en fonction du paramètre booléen spécifié.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -27,12 +27,12 @@ VsgDbg(
 ```
 
 #### <a name="parameters"></a>Paramètres
- `bDefaultInit` `true` Pour spécifier que le composant dans l’application de graphics diagnostics doit être préparée à activement capturer et enregistrer des informations graphiques ; `false` pour spécifier que l’application ne doit pas être préparée activement capturer et enregistrer des informations graphiques pour l’instant.
+ `bDefaultInit` `true` pour spécifier que le composant dans l’application de Graphics Diagnostics doit être préparé pour capturer et enregistrer activement les informations graphiques.  `false` pour spécifier que l’application ne doit pas être préparée à capturer et enregistrer activement les informations graphiques pour l’instant.
 
 ## <a name="remarks"></a>Notes
- Lorsque le constructeur est appelé avec `bDefaultInit` définie sur `true`, le nom de fichier du fichier journal de graphisme est déterminé par la façon dont le `DONT_SAVE_VSGLOG_TO_TEMP` et `VSG_DEFAULT_RUN_FILENAME` définies avant les symboles du préprocesseur `vsgcapture.h` est inclus dans votre application.
+ Lorsque le constructeur est appelé avec `bDefaultInit` défini sur `true`, le nom de fichier du fichier journal de graphisme est déterminé par la façon dont les symboles de préprocesseur `DONT_SAVE_VSGLOG_TO_TEMP` et `VSG_DEFAULT_RUN_FILENAME` sont définis avant que `vsgcapture.h` soit inclus dans votre application.
 
- Lorsque le constructeur est appelé avec `bDefaultInit` définie sur `false`, le composant dans l’application de graphics diagnostics peut être préparé à activement capturer et enregistrer des informations graphiques ultérieurement en appelant le `Init` (fonction).
+ Lorsque le constructeur est appelé avec `bDefaultInit` défini sur `false`, le composant dans l’application de Graphics Diagnostics peut être préparé pour capturer et enregistrer les informations graphiques ultérieurement en appelant la fonction `Init`.
 
 ## <a name="see-also"></a>Voir aussi
 - [VsgDbg::~VsgDbg, destructeur](vsgdbg-tilde-vsgdbg-destructor.md)

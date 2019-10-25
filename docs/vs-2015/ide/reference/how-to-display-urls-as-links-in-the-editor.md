@@ -51,4 +51,4 @@ Vous pouvez choisir de configurer l’éditeur de code pour qu’il traite les U
 4. Sous **Affichage**, sélectionnez **Activer la navigation dans les URL par simple clic**.
 
 ## <a name="see-also"></a>Voir aussi
- [Personnalisation de la boîte de dialogue Options de l’éditeur de texte de l’éditeur](../../ide/customizing-the-editor.md) [](../../ide/reference/text-editor-options-dialog-box.md) [écriture du code](../../ide/writing-code-in-the-code-and-text-editor.md)
+ [Personnalisation de l’éditeur ](../../ide/customizing-the-editor.md) [Text boîte de dialogue Options de l’éditeur ](../../ide/reference/text-editor-options-dialog-box.md) code de [Writing](../../ide/writing-code-in-the-code-and-text-editor.md)

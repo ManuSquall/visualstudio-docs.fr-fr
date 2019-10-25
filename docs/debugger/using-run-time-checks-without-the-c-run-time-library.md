@@ -1,5 +1,5 @@
 ---
-title: Utilisation d’exécution des vérifications sans la bibliothèque Runtime C | Microsoft Docs
+title: Utilisation de contrôles d’exécution sans la bibliothèque Runtime C | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -23,15 +23,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2d9d97b9ba8a93864ec9af6ff02df7b20bbb35e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 029aafa634ba0e6837cdc7d4304d0419420dd912
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929649"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72728664"
 ---
 # <a name="using-run-time-checks-without-the-c-run-time-library"></a>Utilisation des vérifications à l'exécution sans la bibliothèque Runtime C
-Si vous liez votre programme sans la bibliothèque Runtime C, à l’aide **/NODEFAULTLIB**et souhaitez utiliser les contrôles d’exécution, vous devez établir une liaison avec RunTmChk.lib.
+Si vous liez votre programme sans la bibliothèque Runtime C, en utilisant **/NODEFAULTLIB**et que vous souhaitez utiliser des contrôles à l’exécution, vous devez effectuer une liaison avec RunTmChk. lib.
 
 `_RTC_Initialize` initialise le contrôle à l'exécution sur votre programme. Si vous n'établissez pas de liaison avec la bibliothèque Runtime C, avant d'appeler `_RTC_Initialize`, vérifiez que la compilation du programme a prévu la vérification des erreurs au moment de l'exécution :
 

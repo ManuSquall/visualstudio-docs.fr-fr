@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8ad236307360a96f64999313764424305980fc9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0b1118517988f6a790cd4f6732eba3bc8a9fc25a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838117"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741633"
 ---
-# <a name="idiastackframegetrawlvarinstancevalue"></a>IDiaStackFrame::get_rawLVarInstanceValue
+# <a name="idiastackframeget_rawlvarinstancevalue"></a>IDiaStackFrame::get_rawLVarInstanceValue
 Cette méthode récupère la valeur de la variable locale spécifiée comme octets bruts.
 
 ## <a name="syntax"></a>Syntaxe
@@ -36,22 +36,22 @@ HRESULT get_rawLVarInstanceValue(
 #### <a name="parameters"></a>Paramètres
  `pInstance`
 
-[in] Un `IDiaLVarInstance` objet représentant une instance d’une variable locale pour obtenir la valeur de.
+dans Objet `IDiaLVarInstance` représentant une instance de variable locale pour laquelle obtenir la valeur.
 
  `cbDataMax`
 
-[in] Nombre maximal d’octets dans la mémoire tampon vers laquelle pointe `pbData`. Cela peut être un maximum de 8 octets (`sizeof(ULONGLONG)`).
+dans Nombre maximal d’octets dans la mémoire tampon vers laquelle pointe `pbData`. Il peut s’agir d’un maximum de 8 octets (`sizeof(ULONGLONG)`).
 
  `pcbData`
 
-[out] Retourne le nombre réel d’octets stockés dans la mémoire tampon.
+à Retourne le nombre réel d’octets stockés dans la mémoire tampon.
 
  `pbData`
 
-[out] Une mémoire tampon à remplir avec des données. Il ne peut pas être `NULL`.
+à Mémoire tampon à remplir avec des données. Il ne peut pas être `NULL`.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne un code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

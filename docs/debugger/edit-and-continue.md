@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f11a170878e3efefc123ad7d61d0889f5bd95c12
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 2accfed995415a508a47e492837ded7acea150d7
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72435731"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737891"
 ---
 # <a name="edit-code-and-continue-debugging-in-visual-studio-c-vb-c"></a>Modifier le code et continuer le débogage dans Visual StudioC#(, VB C++,)
 Modifier &amp; Continuer est une fonctionnalité qui vous fait gagner du temps en vous permettant de modifier votre code source pendant que votre programme est en mode arrêt. Lorsque vous reprenez l’exécution du programme en choisissant une commande d’exécution telle que **continue** ou **Step**, modifier & Continuer applique automatiquement les modifications du code avec certaines limitations. Cela vous permet de modifier votre code pendant une session de débogage, au lieu de devoir arrêter, recompiler votre programme entier et redémarrer la session de débogage.

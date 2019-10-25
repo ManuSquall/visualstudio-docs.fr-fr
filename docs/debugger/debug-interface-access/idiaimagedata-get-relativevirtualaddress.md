@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6a0ff03784df581fc2f6c57b51b896096d97bba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bfc7a808da6bb11907fc239f4b320e4dd93a2d19
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830212"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743425"
 ---
-# <a name="idiaimagedatagetrelativevirtualaddress"></a>IDiaImageData::get_relativeVirtualAddress
-Récupère l’emplacement dans la mémoire virtuelle du module relatif à l’application.
+# <a name="idiaimagedataget_relativevirtualaddress"></a>IDiaImageData::get_relativeVirtualAddress
+Récupère l’emplacement de la mémoire virtuelle du module par rapport à l’application.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,10 +33,10 @@ HRESULT get_relativeVirtualAddress ( 
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-[out] Retourne le décalage relatif de la mémoire virtuelle du module.
+à Retourne l’offset de la mémoire virtuelle relative du module.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne un code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaImageData](../../debugger/debug-interface-access/idiaimagedata.md)

@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 8ba9b0eb17a492bf1912281038ffc35732ece96d
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: 2ce889f83c4d21a8b2464cab108fa165e1144791
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72589074"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745574"
 ---
 # <a name="debug-a-webview-control-in-a-uwp-app"></a>Déboguer un contrôle WebView dans une application UWP
 

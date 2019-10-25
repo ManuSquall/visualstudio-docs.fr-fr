@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f36cf93beb6b6c8b66ec25dc8008be7024e398b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b5fe5589b667054ee75e3b01743553a2d60bef92
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554337"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745065"
 ---
-# <a name="idiaaddressmapputaddressmapenabled"></a>IDiaAddressMap::put_addressMapEnabled
-Spécifie si le mappage d’adresses doit être utilisé pour traduire les adresses de symbole.
+# <a name="idiaaddressmapput_addressmapenabled"></a>IDiaAddressMap::put_addressMapEnabled
+Spécifie si le mappage d’adresses doit être utilisé pour traduire les adresses de symboles.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,17 +33,17 @@ HRESULT put_addressMapEnabled ( 
 #### <a name="parameters"></a>Paramètres
  NewVal
 
-[in] La valeur `TRUE` pour activer la traduction de symboles, ou `FALSE` à désactiver.
+dans Affectez la valeur `TRUE` pour activer la traduction des symboles, ou `FALSE` à désactiver.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne un code d’erreur.
 
 ## <a name="remarks"></a>Notes
- Exécutables post-processeurs parfois mettre à jour que le fichier exécutable. DIA contient un mécanisme pour prendre en charge la traduction de symboles de la nouvelle disposition.
+ Les après-processeurs exécutables mettent parfois à jour l’exécutable. DIA contient un mécanisme qui permet de prendre en charge la traduction de symboles vers la nouvelle disposition.
 
- Quand un fichier PDB est chargé, le mappage de l’adresse stocké dans le fichier est activé. Il existe, toutefois, une application cliente peut devez parfois fournir son propre mappage d’adresses en appelant le [IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) (méthode). Si le `set_addressMap` méthode est réussie, l’application cliente doit appeler le `put_addressMapEnabled` méthode avec un `NewVal` paramètre de `TRUE` pour activer l’utilisation de ce mappage d’adresses.
+ Lors du chargement d’un fichier PDB, le mappage d’adresses stocké dans le fichier est activé. Dans certains cas, toutefois, une application cliente peut avoir besoin de fournir son propre mappage d’adresses en appelant la méthode [IDiaAddressMap :: set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) . Si la méthode `set_addressMap` est réussie, l’application cliente doit appeler la méthode `put_addressMapEnabled` avec un paramètre `NewVal` de `TRUE` pour permettre l’utilisation de ce mappage d’adresses.
 
- L’état actuel de la carte d’adresse en cours d’activation peut être récupéré avec un appel à la [IDiaAddressMap::get_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-addressmapenabled.md) (méthode).
+ L’état actuel du mappage d’adresses en cours d’activation peut être récupéré à l’aide d’un appel à la méthode [IDiaAddressMap :: get_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-addressmapenabled.md) .
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)

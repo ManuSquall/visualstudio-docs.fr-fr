@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37b887e21da73acffde6f5ae21adf766e64e55fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 08334c59ea061cee1618c76aa61ec6aa6fb8d7d4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838130"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741776"
 ---
 # <a name="idiasourcefile"></a>IDiaSourceFile
 Représente un fichier source.
@@ -33,19 +33,19 @@ Le tableau suivant présente les méthodes de `IDiaSourceFile`.
 
 |Méthode|Description|
 |------------|-----------------|
-|[IDiaSourceFile::get_uniqueId](../../debugger/debug-interface-access/idiasourcefile-get-uniqueid.md)|Récupère une valeur de clé de nombre entier simple qui est unique pour cette image.|
-|[IDiaSourceFile::get_fileName](../../debugger/debug-interface-access/idiasourcefile-get-filename.md)|Récupère le nom de fichier source.|
+|[IDiaSourceFile::get_uniqueId](../../debugger/debug-interface-access/idiasourcefile-get-uniqueid.md)|Récupère une valeur de clé entière simple qui est unique pour cette image.|
+|[IDiaSourceFile::get_fileName](../../debugger/debug-interface-access/idiasourcefile-get-filename.md)|Récupère le nom du fichier source.|
 |[IDiaSourceFile::get_checksumType](../../debugger/debug-interface-access/idiasourcefile-get-checksumtype.md)|Récupère le type de somme de contrôle.|
-|[IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)|Récupère un énumérateur de la compilands avec des numéros de ligne référençant ce fichier.|
-|[IDiaSourceFile::get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md)|Récupère les octets de la somme de contrôle.|
+|[IDiaSourceFile::get_compilands](../../debugger/debug-interface-access/idiasourcefile-get-compilands.md)|Récupère un énumérateur du compilands avec des numéros de ligne référençant ce fichier.|
+|[IDiaSourceFile::get_checksum](../../debugger/debug-interface-access/idiasourcefile-get-checksum.md)|Récupère les octets de somme de contrôle.|
 
 ## <a name="remarks"></a>Notes
 
-## <a name="notes-for-callers"></a>Notes de publication pour les appelants
-Obtenez cette interface en appelant le [IDiaEnumSourceFiles::Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md) ou [IDiaEnumSourceFiles::Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md) méthodes. Consultez l’exemple pour plus d’informations.
+## <a name="notes-for-callers"></a>Notes pour les appelants
+Obtenez cette interface en appelant les méthodes [IDiaEnumSourceFiles :: Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md) ou [IDiaEnumSourceFiles :: Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md) . Pour plus d’informations, consultez l’exemple.
 
 ## <a name="example"></a>Exemple
-Cette fonction affiche les noms de tous les fichiers source qui contribuent à la table spécifiée.
+Cette fonction affiche les noms de tous les fichiers sources contribuant à la table spécifiée.
 
 ```C++
 void ShowSourceFiles(IDiaTable *pTable)
@@ -72,12 +72,12 @@ void ShowSourceFiles(IDiaTable *pTable)
 }
 ```
 
-## <a name="requirements"></a>Configuration requise
-En-tête : Dia2.h
+## <a name="requirements"></a>spécifications
+En-tête : Dia2. h
 
-Bibliothèque : diaguids.lib
+Bibliothèque : diaguids. lib
 
-DLL : msdia80.dll
+DLL : Msdia80. dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Interfaces (SDK Debug Interface Access)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)

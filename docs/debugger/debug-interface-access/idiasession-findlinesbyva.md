@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29f3f714cdcbe529dac98948f6568934a6f508af
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2513825fd2b6f4e6035f9f23295f0c9f00385d0a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832404"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742073"
 ---
 # <a name="idiasessionfindlinesbyva"></a>IDiaSession::findLinesByVA
-Récupère les informations de numéro de ligne pour les lignes contenues dans une plage d’adresses virtuel spécifié (VA).
+Récupère les informations de numéro de ligne pour les lignes contenues dans une plage d’adresses virtuelles (VA) spécifiée.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -35,18 +35,18 @@ HRESULT findLinesByVA (
 #### <a name="parameters"></a>Paramètres
 `va`
 
-[in] Spécifie l’adresse utiliser que
+dans Spécifie l’adresse en tant que VA.
 
 `length`
 
-[in] Spécifie le nombre d’octets de la plage d’adresses pour couvrir cette requête.
+dans Spécifie le nombre d’octets de la plage d’adresses à couvrir avec cette requête.
 
 `ppResult`
 
-[out] Retourne un [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) objet qui contient une liste de tous les nombres qui couvrent la plage d’adresses spécifiée.
+à Retourne un objet [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) qui contient une liste de tous les numéros de ligne qui couvrent la plage d’adresses spécifiée.
 
 ## <a name="example"></a>Exemple
-Cet exemple montre une fonction qui obtient tous les numéros de ligne contenues dans une fonction à l’aide de l’adresse de fonction virtuel et la longueur.
+Cet exemple montre une fonction qui obtient tous les numéros de ligne contenus dans une fonction à l’aide de l’adresse virtuelle et de la longueur de la fonction.
 
 ```C++
 IDiaEnumLineNumbers *GetLineNumbersByVA(IDiaSymbol *pFunc, IDiaSession *pSession)

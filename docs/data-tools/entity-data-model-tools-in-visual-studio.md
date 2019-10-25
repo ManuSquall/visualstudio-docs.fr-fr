@@ -8,12 +8,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 53b87ce39f0eb5b1455f0a38b2aea7cc6b604342
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6efcd0ca4e8274df7667b5a5b2b75020def8c358
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648528"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72807031"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Entity Framework Tools dans Visual Studio
 
@@ -30,9 +30,9 @@ Les outils de Entity Framework sont installés dans le cadre de la charge de tra
 
 Il s’agit des outils spécifiques qui composent Entity Framework Tools dans Visual Studio :
 
-- Vous pouvez utiliser le **Concepteur de [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]** [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] (**Entity designer**) pour créer et modifier visuellement des entités, des associations, des mappages et des relations d’héritage. Le **Entity designer** génère également [!INCLUDE[TLA#tla_cshrp](../data-tools/includes/tlasharptla_cshrp_md.md)] ou [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] code de couche objet.
+- Vous pouvez utiliser le **Concepteur de[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]** [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] (**Entity designer**) pour créer et modifier visuellement des entités, des associations, des mappages et des relations d’héritage. Le **Entity designer** génère également [!INCLUDE[TLA#tla_cshrp](../data-tools/includes/tlasharptla_cshrp_md.md)] ou [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] code de couche objet.
 
-- Vous pouvez utiliser l' **assistant [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]** pour générer un modèle conceptuel à partir d’une base de données existante et ajouter des informations de connexion de base de données à votre application.
+- Vous pouvez utiliser l' **assistant[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]** pour générer un modèle conceptuel à partir d’une base de données existante et ajouter des informations de connexion de base de données à votre application.
 
 - Vous pouvez utiliser l' **Assistant Création** d’une base de données pour créer d’abord un modèle conceptuel, puis créer une base de données qui prend en charge le modèle.
 
@@ -41,7 +41,7 @@ Il s’agit des outils spécifiques qui composent Entity Framework Tools dans Vi
   > [!NOTE]
   > À compter de Visual Studio 2010, les outils de Entity Framework ne prennent pas en charge [!INCLUDE[ss2k](../data-tools/includes/ss2k_md.md)].
 
-Les outils génèrent ou modifient un fichier *. edmx* . Ce fichier *. edmx* contient des informations qui décrivent le modèle conceptuel, le modèle de stockage et les mappages entre eux. Pour plus d’informations, consultez [edmx](https://docs.microsoft.com/ef/ef6/).
+Les outils génèrent ou modifient un fichier *. edmx* . Ce fichier *. edmx* contient des informations qui décrivent le modèle conceptuel, le modèle de stockage et les mappages entre eux. Pour plus d’informations, consultez [edmx](/ef/ef6/).
 
 [Entity Framework Power Tools](https://marketplace.visualstudio.com/items?itemName=EntityFrameworkTeam.EntityFrameworkPowerToolsBeta4) vous aide à créer des applications qui utilisent le Entity Data Model. Les outils Power Tools peuvent générer un modèle conceptuel, valider un modèle existant, produire des fichiers de code source qui contiennent des classes d’objets basées sur le modèle conceptuel et produire des fichiers de code source qui contiennent des vues générées par le modèle. Pour plus d’informations, consultez [vues de mappage prégénérées](https://docs.microsoft.com/ef/ef6/fundamentals/performance/pre-generated-views).
 
@@ -51,7 +51,7 @@ Les outils génèrent ou modifient un fichier *. edmx* . Ce fichier *. edmx* con
 | - | - |
 | [ADO.NET Entity Framework](/dotnet/framework/data/adonet/ef/index) | Décrit comment utiliser les outils de [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)], que [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)] fournit, pour créer des applications. |
 | [Entity Data Model](/dotnet/framework/data/adonet/entity-data-model) | Fournit des liens et des informations sur l’utilisation des données utilisées par les applications basées sur [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)]. |
-| [Documentation Entity Framework (EF))](https://docs.microsoft.com/ef/ef6/get-started) | Fournit un index des vidéos, des didacticiels et une documentation avancée pour vous aider à tirer le meilleur parti de Entity Framework. |
+| [Documentation Entity Framework (EF))](/ef/ef6/get-started) | Fournit un index des vidéos, des didacticiels et une documentation avancée pour vous aider à tirer le meilleur parti de Entity Framework. |
 | [Application ASP.NET 5 à une nouvelle base de données](https://docs.efproject.net/en/latest/platforms/aspnetcore/new-db.html) | Décrit comment créer une nouvelle application ASP.NET 5 à l’aide de Entity Framework 7. |
 
 ## <a name="see-also"></a>Voir aussi

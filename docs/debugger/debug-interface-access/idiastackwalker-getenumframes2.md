@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35886ea0456426c30c44d5fd8e90399d4a2143ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f6de78b5553719def2fd7ef9c6adb55e823aac34
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62837938"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741530"
 ---
 # <a name="idiastackwalkergetenumframes2"></a>IDiaStackWalker::getEnumFrames2
 Récupère un énumérateur de frame de pile pour un type de plateforme spécifique.
@@ -36,21 +36,21 @@ Récupère un énumérateur de frame de pile pour un type de plateforme spécifi
 #### <a name="parameters"></a>Paramètres
  `cpuid`
 
-[in] Une valeur comprise entre le [CV_CPU_TYPE_e (énumération)](../../debugger/debug-interface-access/cv-cpu-type-e.md) énumération spécifiant le type de plateforme.
+dans Valeur de l’énumération d' [énumération CV_CPU_TYPE_e](../../debugger/debug-interface-access/cv-cpu-type-e.md) , spécifiant le type de plateforme.
 
  `pHelper`
 
-[in] Le programme d’assistance [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) objet.
+dans Objet [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) d’assistance.
 
  `ppEnum`
 
-[out] Retourne un [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md) objet contenant une liste de [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) objets.
+à Retourne un objet [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md) contenant une liste d’objets [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md) .
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne un code d’erreur.
 
 ## <a name="remarks"></a>Notes
- Pour obtenir une liste de frames de pile pour simplement le x86 plateforme, appelez le [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md) (méthode).
+ Pour obtenir une liste de frames de pile uniquement pour la plateforme x86, appelez la méthode [IDiaStackWalker :: getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md) .
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaStackWalker](../../debugger/debug-interface-access/idiastackwalker.md)

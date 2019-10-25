@@ -20,22 +20,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aebe1faf31d53fb44cf5efddbee154018e42a365
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 5905ad87eb534013bdfd786a79e40e46087dff55
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62847759"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72732818"
 ---
-# <a name="how-to-run-the-worker-process-under-a-user-account"></a>Procédure : exécuter le processus Worker sous un compte d’utilisateur
+# <a name="how-to-run-the-worker-process-under-a-user-account"></a>Comment : exécuter le processus de travail sous un compte d'utilisateur
 Pour configurer votre ordinateur afin de pouvoir exécuter le processus de traitement [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] (aspnet_wp.exe ou w3wp.exe) sous un compte d'utilisateur, procédez comme suit.
 
  > [!IMPORTANT]
- > À compter de Windows Server 2008 R2, nous vous recommandons d’utiliser le [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities) comme identité pour chaque pool d’applications.
+ > À compter de Windows Server 2008 R2, nous vous recommandons d’utiliser [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities) comme identité pour chaque pool d’applications.
 
 ## <a name="procedure"></a>Procédure
 
-#### <a name="to-run-aspnetwpexe-under-a-user-account"></a>Exécuter aspnet_wp.exe sous un compte d'utilisateur
+#### <a name="to-run-aspnet_wpexe-under-a-user-account"></a>Exécuter aspnet_wp.exe sous un compte d'utilisateur
 
 1. Ouvrez le fichier machine.config, situé sur votre ordinateur dans le dossier CONFIG sous le chemin d'accès où vous avez installé le runtime.
 
@@ -45,7 +45,7 @@ Pour configurer votre ordinateur afin de pouvoir exécuter le processus de trait
 
 4. Sur [!INCLUDE[winxpsvr](../debugger/includes/winxpsvr_md.md)], IIS 6.0 est installé par défaut. Le processus de traitement correspondant est w3wp.exe. Pour fonctionner en mode IIS 6.0 avec aspnet_wp.exe comme processus de traitement, procédez selon les étapes suivantes :
 
-   1. Cliquez sur **Démarrer**, puis sur **Outils d'administration** et choisissez **Services Internet (IIS)**.
+   1. Cliquez sur **Démarrer**, puis sur **Outils d'administration** et choisissez **Services Internet (IIS)** .
 
    2. Dans la boîte de dialogue **Services Internet** , cliquez avec le bouton droit sur le dossier **Sites Web** et choisissez **Propriétés**.
 
@@ -78,7 +78,7 @@ Pour configurer votre ordinateur afin de pouvoir exécuter le processus de trait
 
     La boîte de dialogue **Sélectionner un utilisateur, des ordinateurs ou des groupes** s'affiche.
 
-10. Tapez le nom d'utilisateur dans la zone **Entrez le nom de l'objet à sélectionner** , puis cliquez sur **OK**. Le nom d’utilisateur doit respecter le format : Nomdomaine\nomutilisateur.
+10. Tapez le nom d'utilisateur dans la zone **Entrez le nom de l'objet à sélectionner** , puis cliquez sur **OK**. Le nom d'utilisateur doit suivre le format NomDomaine\NomUtilisateur.
 
 11. Dans la boîte de dialogue **Entrée d'autorisation pour les fichiers ASP.Net temporaires** , accordez à l'utilisateur le **Contrôle total**, puis cliquez sur **OK** pour fermer la boîte de dialogue **Entrées des fichiers ASP.Net temporaires** .
 

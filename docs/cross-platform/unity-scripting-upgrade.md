@@ -8,12 +8,12 @@ ms.assetid: E2C9420F-A5D5-4472-9020-2B63FB27A133
 ms.technology: vs-unity-tools
 ms.workload:
 - unity
-ms.openlocfilehash: 0fb4560a196404687c60ce67f39b9c0754a24769
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: b1f10778c4866e67630fcac7af3b92b3de780aa5
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253143"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777744"
 ---
 # <a name="using-net-4x-in-unity"></a>Utilisation de .NET 4.x dans Unity
 
@@ -21,7 +21,7 @@ C# et .NET, les technologies sur lesquelles reposent les scripts Unity, ont cont
 
 Avec la sortie d’Unity 2017.1, Unity a introduit une version expérimentale de son runtime de script, mise à niveau vers une version compatible avec .NET 4.6, C# 6. Dans Unity 2018.1, le runtime équivalent à .NET 4.x n’est plus considéré comme expérimental, alors que l’ancien runtime équivalent à .NET 3.5 est désormais considéré comme la version héritée. Avec la sortie d’Unity 2018.3, Unity prévoit de faire du runtime de script mis à niveau la sélection par défaut, et d’aller même encore plus loin en proposant une mise à jour pour le rendre compatible avec C# 7. Pour plus d’informations et pour obtenir les dernières mises à jour sur cette feuille de route, lisez le [billet de blog](https://blogs.unity3d.com/2018/07/11/scripting-runtime-improvements-in-unity-2018-2/) consacré à Unity, ou visitez le [forum des préversions de fonctionnalités de script expérimentales](https://forum.unity.com/forums/experimental-scripting-previews.107/). En attendant, consultez les sections ci-dessous pour en savoir plus sur les nouvelles fonctionnalités disponibles dès maintenant avec le runtime de script .NET 4.x.
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Configuration requise
 
 * [Unity 2017.1 ou version ultérieure](https://unity3d.com/) (2018.2 recommandé)
 * [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)

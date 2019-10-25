@@ -1,5 +1,5 @@
 ---
-title: L’inscription de générateurs de fichier unique | Microsoft Docs
+title: Inscription de générateurs de fichiers uniques | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,21 +11,21 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b0c3bf7c8260506eabf56113992c985e1cc8669
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e9026da08272d69bac246f98ae741a47527d627f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66351008"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72724566"
 ---
 # <a name="registering-single-file-generators"></a>Inscription de générateurs de fichier unique
-Pour mettre à disposition dans un outil personnalisé [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], vous devez l’inscrire donc [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] peut instancier et l’associe à un type de projet particulier.
+Pour rendre un outil personnalisé disponible dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], vous devez l’inscrire afin que [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] puisse l’instancier et l’associe à un type de projet particulier.
 
 ### <a name="to-register-a-custom-tool"></a>Pour inscrire un outil personnalisé
 
-1. Inscrire l’outil personnalisé DLL soit dans le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Registre local ou dans le Registre système, sous HKEY_CLASSES_ROOT.
+1. Inscrivez la DLL de l’outil personnalisé dans le registre local [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ou dans le registre système, sous HKEY_CLASSES_ROOT.
 
-    Par exemple, voici les informations d’inscription pour l’outil personnalisé MSDataSetGenerator géré, est fourni avec [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]:
+    Par exemple, Voici les informations d’inscription de l’outil personnalisé MSDataSetGenerator géré, fourni avec [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] :
 
    ```
    [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0\CLSID\{E76D53CC-3D4F-40A2-BD4D-4F3419755476}]
@@ -36,24 +36,24 @@ Pour mettre à disposition dans un outil personnalisé [!INCLUDE[vsprvs](../../c
    "Assembly"="Microsoft.VSDesigner, Version=14.0.0.0, Culture=Neutral, PublicKeyToken=b03f5f7f11d50a3a"
    ```
 
-2. Créer une clé de Registre dans le texte souhaité [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] hive sous générateurs\\*GUID* où *GUID* est le GUID défini par le système de projet ou le service de langage spécifique. Le nom de la clé devient le nom de programmation de votre outil personnalisé. La clé de l’outil personnalisé a les valeurs suivantes :
+2. Créez une clé de Registre dans la ruche [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] souhaitée sous générateurs \\*GUID* , où *GUID* est le GUID défini par le service ou le système de projet du langage spécifique. Le nom de la clé devient le nom de programmation de votre outil personnalisé. La clé de l’outil personnalisé a les valeurs suivantes :
 
    - (Default)
 
-        Facultatif. Fournit une description conviviale de l’outil personnalisé. Ce paramètre est facultatif mais recommandé.
+        Optionnel. Fournit une description conviviale de l’outil personnalisé. Ce paramètre est facultatif, mais recommandé.
 
    - CLSID
 
-        Obligatoire. Spécifie l’identificateur de la bibliothèque de classes du composant COM qui implémente <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>.
+        Requis. Spécifie l’identificateur de la bibliothèque de classes du composant COM qui implémente <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>.
 
    - GeneratesDesignTimeSource
 
-        Obligatoire. Indique si les types des fichiers générés par cet outil personnalisé sont rendus disponibles aux concepteurs visuels. La valeur de ce paramètre doit être (zéro) 0 pour les types non disponibles aux concepteurs visuels ou 1 (un) pour les types disponibles aux concepteurs visuels.
+        Requis. Indique si les types des fichiers produits par cet outil personnalisé sont mis à la disposition des concepteurs visuels. La valeur de ce paramètre doit être (zéro) 0 pour les types qui ne sont pas disponibles pour les concepteurs visuels ou (un) 1 pour les types disponibles pour les concepteurs visuels.
 
    > [!NOTE]
-   > Vous devez inscrire l’outil personnalisé séparément pour chaque langue pour laquelle vous voulez que l’outil personnalisé soit disponible.
+   > Vous devez inscrire l’outil personnalisé séparément pour chaque langue pour laquelle vous souhaitez que l’outil personnalisé soit disponible.
 
-    Par exemple, le MSDataSetGenerator s’inscrit lui-même une seule fois pour chaque langue :
+    Par exemple, le MSDataSetGenerator s’inscrit pour chaque langue :
 
    ```
    [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0\Generators\{164b10b9-b200-11d0-8c61-00a0c91e29d5}\MSDataSetGenerator]

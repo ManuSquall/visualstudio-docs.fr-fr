@@ -1,5 +1,5 @@
 ---
-title: Fonction SccUninitialize | Microsoft Docs
+title: SccUninitialize fonction) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,15 +12,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f71e34352150143c7db207ed31ea6e879f97ca18
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 321f50173e3c1517cc6a431ff74933e1a02ef1d0
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338495"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72720132"
 ---
 # <a name="sccuninitialize-function"></a>Fonction SccUninitialize
-Cette fonction nettoie les allocations ou des connexions ouvertes créées par un appel précédent à la [SccInitialize](../extensibility/sccinitialize-function.md) en préparation pour arrêter le plug-in de contrôle de code source.
+Cette fonction nettoie toutes les allocations ou les connexions ouvertes créées par un appel précédent à [SccInitialize](../extensibility/sccinitialize-function.md) en préparation de l’arrêt du plug-in de contrôle de code source.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,17 +33,17 @@ SCCRTN SccUninitialize (
 #### <a name="parameters"></a>Paramètres
  pvContext
 
-[in] Le pointeur vers la structure de contexte de plug-in de contrôle de source créé dans le [SccInitialize](../extensibility/sccinitialize-function.md).
+dans Pointeur vers la structure de contexte du plug-in de contrôle de code source créée dans [SccInitialize](../extensibility/sccinitialize-function.md).
 
 ## <a name="return-value"></a>Valeur de retour
- L’implémentation de plug-in de contrôle de source de cette fonction est censée retourner l’une des valeurs suivantes :
+ L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
-|Value|Description|
+|valeur|Description|
 |-----------|-----------------|
 |SCC_OK|Le nettoyage s’est terminé correctement.|
 
 ## <a name="remarks"></a>Notes
- Le plug-in de contrôle de code source est chargé pour la préparation d’être arrêté et de libération de mémoire que le plug-in a allouée pour la structure de contexte. La fonction est appelée une fois pour chaque instance donnée d’un plug-in. Un appel à la [SccInitialize](../extensibility/sccinitialize-function.md) précède cet appel. Aucun projet n’est toujours ne possible d’ouvrir au moment de l’appel à `SccUninitialize`.
+ Le plug-in de contrôle de code source est responsable de la préparation de l’arrêt et de la libération de mémoire allouée par le plug-in pour la structure de contexte. La fonction est appelée une fois pour chaque instance donnée d’un plug-in. Un appel à [SccInitialize](../extensibility/sccinitialize-function.md) précède cet appel. Aucun projet ne peut encore être ouvert au moment de l’appel à `SccUninitialize`.
 
 ## <a name="see-also"></a>Voir aussi
 - [Fonctions d’API du plug-in de contrôle de code source](../extensibility/source-control-plug-in-api-functions.md)

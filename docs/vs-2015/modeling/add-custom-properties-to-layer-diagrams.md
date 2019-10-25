@@ -8,15 +8,15 @@ helpviewer_keywords:
 - layer diagrams, adding custom properties
 ms.assetid: 52b3ac25-d10b-4507-a1fe-209ccb4d2777
 caps.latest.revision: 23
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 75d3284c4584c67550c7dcee3c8f1737ebed5380
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: ec1c7c94c8a0e6aa233cf21f9b57e093cc430d48
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871923"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72655284"
 ---
 # <a name="add-custom-properties-to-layer-diagrams"></a>Ajouter des propriétés personnalisées à des diagrammes de couche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Quand vous écrivez du code d'extension pour des diagrammes de couche, vous pouv
 > [!IMPORTANT]
 > Pour faire apparaître les propriétés, vous devez apporter la modification suivante sur chaque ordinateur où vous souhaitez que les propriétés de couche soient visibles.
 >
->  1. Exécutez le bloc-notes en utilisant **exécuter en tant qu’administrateur**. Ouvrir `%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest`
+>  1. Exécutez le bloc-notes en utilisant **exécuter en tant qu’administrateur**. Ouvrez `%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest`.
 >
 >  2. Dans l'élément `Content`, ajoutez :
 >
@@ -67,13 +67,13 @@ public class MyProperty
 }
 ```
 
- Vous pouvez définir des propriétés sur [ILayerElement](/previous-versions/ff644511(v=vs.140)) ou sur l’une de ses classes dérivées, notamment:
+ Vous pouvez définir des propriétés sur [ILayerElement](/previous-versions/ff644511(v=vs.140)) ou sur l’une de ses classes dérivées, notamment :
 
-- `ILayerModel` : le modèle
+- `ILayerModel`-le modèle
 
-- `ILayer` : chaque couche
+- `ILayer`-chaque couche
 
-- `ILayerDependencyLink` : les liens entre les couches
+- `ILayerDependencyLink`-les liens entre les couches
 
 - `ILayerComment`
 

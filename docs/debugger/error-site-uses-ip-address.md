@@ -1,5 +1,5 @@
 ---
-title: 'Erreur : Site utilise l’adresse IP | Microsoft Docs'
+title: 'Erreur : le site utilise l’adresse IP | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 468cb2c85be088213bc865122a790408c6c992b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 96786efad0349dec7c9e8e9a02cca40af3668341
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850418"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737498"
 ---
-# <a name="error-site-uses-ip-address"></a>Erreur : le site utilise l’adresse IP
+# <a name="error-site-uses-ip-address"></a>Erreur : le site utilise l'adresse IP
 Cette erreur se produit lorsque le débogueur essaie de s'auto-attacher à une application Web qui utilise une adresse IP. C’est le cas si vous transformez **Identification de site web** en **Utiliser une adresse IP spécifique** dans IIS.
 
  Pour que l'auto-attachement fonctionne, vous devez créer le projet avec l'adresse IP spécifique plutôt qu'avec seulement le nom de l'ordinateur. Sinon, le débogueur transformera le nom de l'ordinateur en localhost, ce qui empêchera d'envoyer le verbe de débogage à IIS.

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5304c578949becd33dcef519706efab72eee4be
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 53e6a15221966862031e2c086c6b347cfe373896
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830306"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743869"
 ---
 # <a name="idiaenumsymbolsbyaddrclone"></a>IDiaEnumSymbolsByAddr::Clone
 Effectue une copie d’un objet.
@@ -33,10 +33,10 @@ HRESULT Clone ( 
 #### <a name="parameters"></a>Paramètres
  ppenum
 
-[out] Retourne un [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md) objet qui contient un doublon de l’énumérateur. Les symboles ne sont pas dupliquées, uniquement l’énumérateur.
+à Retourne un objet [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md) qui contient un doublon de l’énumérateur. Les symboles ne sont pas dupliqués, mais uniquement l’énumérateur.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne un code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaEnumSymbolsByAddr](../../debugger/debug-interface-access/idiaenumsymbolsbyaddr.md)

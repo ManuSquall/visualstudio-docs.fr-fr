@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 258abfc908a065f7f1854cb7b52d4c16afbdd314
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: eed1fd7b80beeda45664983249e4ef8b5034aa01
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64798999"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739312"
 ---
-# <a name="idiasymbolgetsourcefilename"></a>IDiaSymbol::get_sourceFileName
+# <a name="idiasymbolget_sourcefilename"></a>IDiaSymbol::get_sourceFileName
 Récupère le nom de fichier du fichier source compiland.
 
 ## <a name="syntax"></a>Syntaxe
@@ -33,13 +33,13 @@ HRESULT get_sourceFileName ( 
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-[out] Retourne le nom de fichier du fichier source compiland.
+à Retourne le nom de fichier du fichier source compiland.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
-> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> Une valeur de retour de `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

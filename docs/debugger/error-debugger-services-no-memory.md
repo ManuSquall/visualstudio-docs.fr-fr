@@ -1,5 +1,5 @@
 ---
-title: Services qui s’exécutent en dehors de la mémoire du débogueur | Microsoft Docs
+title: Les services du débogueur manquent de mémoire | Microsoft Docs
 ms.date: 07/10/2019
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,21 +16,21 @@ ms.author: isgarcia
 manager: caslan
 ms.workload:
 - multiple
-ms.openlocfilehash: 05664ffd056f69215e6fb00d6d49a59382a3692f
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.openlocfilehash: 12215f9c740e68c4f2749a51b06c09a1385dae1a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "67854016"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737841"
 ---
-# <a name="debugger-services-running-out-of-memory"></a>Services qui s’exécutent en dehors de la mémoire du débogueur
-Les Services de débogage a manqué de mémoire et a provoqué l’arrêt de la session de débogage.
+# <a name="debugger-services-running-out-of-memory"></a>Services du débogueur à court de mémoire
+La mémoire des services de débogage est insuffisante et a provoqué l’arrêt de la session de débogage.
 
 ## <a name="to-investigate-this-error-on-windows"></a>Pour examiner cette erreur sur Windows
-- Vous pouvez vérifier le graphique de mémoire de processus dans le **outils de diagnostic** fenêtre pour voir si l’application cible connaît une croissance importante en mémoire. Dans ce cas, utilisez le **utilisation de la mémoire** outil pour diagnostiquer ce qui est le problème sous-jacent, consultez [analyser l’utilisation de mémoire](../profiling/memory-usage.md).
+- Vous pouvez vérifier le graphique traitement de la mémoire dans la fenêtre **outils de diagnostic** pour voir si l’application cible subit une croissance importante de la mémoire. Si c’est le cas, utilisez l’outil utilisation de la **mémoire** pour diagnostiquer le problème sous-jacent, consultez [analyser l’utilisation](../profiling/memory-usage.md)de la mémoire.
 
-- Si l’application cible ne semble pas consommer une grande quantité de mémoire, utilisez le **le Gestionnaire des tâches** fenêtre à récupérer de l’utilisation de la mémoire de Visual Studio (devenv.exe), le processus de travail (msvsmon.exe), ou de VS Code (vsdbg.exe/vsdbg-ui.exe) dans déterminer s’il s’agit d’un problème de débogueur. Si le processus manque de mémoire est devenv.exe, envisagez de réduire le nombre d’extensions de Visual Studio en cours d’exécution.
+- Si l’application cible ne semble pas consommer beaucoup de mémoire, utilisez la fenêtre **Gestionnaire des tâches** pour vérifier l’utilisation de la mémoire de Visual Studio (devenv. exe), le processus de travail (msvsmon. exe) ou de vs code (vsdbg. exe/vsdbg-UI. exe) pour déterminer s’il s’agit d’un problème du débogueur. Si le processus ne dispose pas de suffisamment de mémoire, essayez de réduire le nombre d’extensions Visual Studio en cours d’exécution.
 
 ## <a name="see-also"></a>Voir aussi
-- [Billet de blog : Analyser l’UC et mémoire pendant le débogage](https://devblogs.microsoft.com/visualstudio/analyze-cpu-memory-while-debugging/)
+- [Billet de blog : analyser l’UC et la mémoire pendant le débogage](https://devblogs.microsoft.com/visualstudio/analyze-cpu-memory-while-debugging/)
 - [À propos de la gestion de la mémoire](/windows/win32/memory/about-memory-management)

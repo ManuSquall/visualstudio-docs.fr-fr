@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf641fde4c03053496c732aa7904ddcad671af20
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: acdab0a565613194c67aa85484316a235c91dbf6
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838605"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744798"
 ---
 # <a name="idiaenumdebugstreamdatanext"></a>IDiaEnumDebugStreamData::Next
 Récupère un nombre spécifié d’enregistrements dans la séquence énumérée.
@@ -37,26 +37,26 @@ HRESULT Next ( 
 #### <a name="parameters"></a>Paramètres
  celt
 
-[in] Le nombre d’enregistrements à récupérer.
+dans Nombre d’enregistrements à récupérer.
 
  cbData
 
-[in] Taille de la mémoire tampon de données, en octets.
+dans Taille de la mémoire tampon de données, en octets.
 
- pcbData
+ cbData
 
-[out] Retourne le nombre d’octets retournés. Si `data` est NULL, puis `pcbData` contient le nombre total d’octets de données disponibles pour tous les enregistrements demandés.
+à Retourne le nombre d’octets retournés. Si `data` a la valeur NULL, `pcbData` contient le nombre total d’octets de données disponibles pour tous les enregistrements demandés.
 
  data[]
 
-[out] Une mémoire tampon qui doit être rempli avec les données d’enregistrement de débogage stream.
+à Mémoire tampon qui doit être remplie avec les données de l’enregistrement de flux de débogage.
 
  pceltFetched
 
 [in, out] Retourne le nombre d’enregistrements dans `data`.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` s’il n’existe plus aucun enregistrement. Sinon, retourne un code d'erreur.
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` s’il n’y a plus d’enregistrements. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)

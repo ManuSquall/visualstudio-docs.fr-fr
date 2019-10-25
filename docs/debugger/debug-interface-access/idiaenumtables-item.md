@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03931580f774c29a67771d2251b51825242535c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bf2d6b14f17d42a128e59446e27bfc251de40d17
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829384"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743751"
 ---
 # <a name="idiaenumtablesitem"></a>IDiaEnumTables::Item
-Récupère un tableau au moyen d’un index ou le nom.
+Récupère une table au moyen d’un index ou d’un nom.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -34,17 +34,17 @@ HRESULT Item ( 
 #### <a name="parameters"></a>Paramètres
  `index`
 
-[in] Index ou nom de la [IDiaTable](../../debugger/debug-interface-access/idiatable.md) à récupérer. Si un Variant de type integer est utilisé, il doit être comprise entre 0 et `count`-1, où `count` est renvoyé par le [IDiaEnumTables::get_Count](../../debugger/debug-interface-access/idiaenumtables-get-count.md) (méthode).
+dans Index ou nom du [IDiaTable](../../debugger/debug-interface-access/idiatable.md) à récupérer. Si un variant entier est utilisé, il doit être compris entre 0 et `count`-1, où `count` est retourné par la méthode [IDiaEnumTables :: get_Count](../../debugger/debug-interface-access/idiaenumtables-get-count.md) .
 
  `table`
 
-[out] Retourne un [IDiaTable](../../debugger/debug-interface-access/idiatable.md) objet représentant la table souhaitée.
+à Retourne un objet [IDiaTable](../../debugger/debug-interface-access/idiatable.md) représentant la table souhaitée.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne un code d’erreur.
 
 ## <a name="remarks"></a>Notes
- Si une variante de la chaîne est spécifiée, la chaîne de noms une table particulière. Le nom doit être un des noms de table comme défini dans [constantes (Debug Interface Access SDK)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md).
+ Si un variant de chaîne est spécifié, la chaîne désigne une table particulière. Le nom doit correspondre à l’un des noms de table définis dans [constantes (kit de développement logiciel de debug interface Access)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md).
 
 ## <a name="example"></a>Exemple
 

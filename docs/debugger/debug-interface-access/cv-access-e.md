@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90230bd95e1dbcd3e4c186257c6c36faad6ba1f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bbe338ba9d3aa6cbc795606c3fa285526afdfd36
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62555128"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745370"
 ---
-# <a name="cvaccesse"></a>CV_access_e
-Spécifie l’étendue de visibilité (niveau d’accès) des fonctions membres et des variables.
+# <a name="cv_access_e"></a>CV_access_e
+Spécifie la portée de la visibilité (niveau d’accès) des variables et des fonctions membres.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,17 +33,17 @@ typedef enum CV_access_e {
 ```
 
 ## <a name="elements"></a>Éléments
-CV_private membre possède un accès privé.
+Le membre CV_private a un accès privé.
 
-CV_protected membre possède un accès protégé.
+Le membre CV_protected a un accès protégé.
 
-CV_public membre possède un accès public.
+Le membre CV_public a un accès public.
 
 ## <a name="remarks"></a>Notes
-Le `friend` spécificateur d’accès n’est pas inclus ici, car il est généralement utilisé par des fonctions non-membres qui ont accès à des éléments à la fois privés et protégés de la classe. Utilisez le [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) méthode pour rechercher des symboles avec `SymTagFriend` accès.
+Le spécificateur d’accès `friend` n’est pas inclus ici, car il est généralement utilisé par les fonctions non-membres qui ont accès aux éléments privés et protégés de la classe. Utilisez la méthode [IDiaSymbol :: get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) pour rechercher des symboles avec accès `SymTagFriend`.
 
-## <a name="requirements"></a>Configuration requise
-En-tête : cvconst.h
+## <a name="requirements"></a>spécifications
+En-tête : cvconst. h
 
 ## <a name="see-also"></a>Voir aussi
 - [Énumérations et structures](../../debugger/debug-interface-access/enumerations-and-structures.md)

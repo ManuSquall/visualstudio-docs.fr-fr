@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b17e79e1bfefd5b6b23695f2f49d694c7148ae0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 70e14e594b385a2fa93f51eed4dec36d74db347e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838143"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744694"
 ---
 # <a name="idiaenumdebugstreams"></a>IDiaEnumDebugStreams
-Énumère les différents flux de débogage contenues dans la source de données.
+Énumère les différents flux de débogage contenus dans la source de données.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,22 +33,22 @@ Le tableau suivant présente les méthodes de `IDiaEnumDebugStreams`.
 
 |Méthode|Description|
 |------------|-----------------|
-|[IDiaEnumDebugStreams::get__NewEnum](../../debugger/debug-interface-access/idiaenumdebugstreams-get-newenum.md)|Récupère le `IEnumVARIANT` version de cet énumérateur.|
+|[IDiaEnumDebugStreams::get__NewEnum](../../debugger/debug-interface-access/idiaenumdebugstreams-get-newenum.md)|Récupère la version `IEnumVARIANT` de cet énumérateur.|
 |[IDiaEnumDebugStreams::get_Count](../../debugger/debug-interface-access/idiaenumdebugstreams-get-count.md)|Récupère le nombre de flux de débogage.|
 |[IDiaEnumDebugStreams::Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)|Récupère un flux de débogage au moyen d’un index.|
 |[IDiaEnumDebugStreams::Next](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md)|Récupère un nombre spécifié de flux de débogage dans la séquence d’énumération.|
 |[IDiaEnumDebugStreams::Skip](../../debugger/debug-interface-access/idiaenumdebugstreams-skip.md)|Ignore un nombre spécifié de flux de débogage dans une séquence d’énumération.|
 |[IDiaEnumDebugStreams::Reset](../../debugger/debug-interface-access/idiaenumdebugstreams-reset.md)|Réinitialise une séquence d’énumération au début.|
-|[IDiaEnumDebugStreams::Clone](../../debugger/debug-interface-access/idiaenumdebugstreams-clone.md)|Crée un énumérateur qui contient le même état d’énumération que l’énumérateur en cours.|
+|[IDiaEnumDebugStreams::Clone](../../debugger/debug-interface-access/idiaenumdebugstreams-clone.md)|Crée un énumérateur qui contient le même état d’énumération que l’énumérateur actuel.|
 
 ## <a name="remarks"></a>Notes
-Le contenu de flux de débogage est dépend de l’implémentation et les formats de données ne sont pas documentés.
+Le contenu des flux de débogage est dépendant de l’implémentation et les formats de données ne sont pas documentés.
 
-## <a name="notes-for-callers"></a>Notes de publication pour les appelants
-Appelez le [IDiaSession::getEnumDebugStreams](../../debugger/debug-interface-access/idiasession-getenumdebugstreams.md) méthode pour obtenir un `IDiaEnumDebugStreams` objet.
+## <a name="notes-for-callers"></a>Notes pour les appelants
+Appelez la méthode [IDiaSession :: getEnumDebugStreams](../../debugger/debug-interface-access/idiasession-getenumdebugstreams.md) pour obtenir un objet `IDiaEnumDebugStreams`.
 
 ## <a name="example"></a>Exemple
-Cet exemple montre comment accéder aux flux de données disponibles à partir de cette interface. Consultez le [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) interface pour une implémentation de la `PrintStreamData` (fonction).
+Cet exemple montre comment accéder aux flux de données disponibles à partir de cette interface. Consultez l’interface [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md) pour une implémentation de la fonction `PrintStreamData`.
 
 ```C++
 void DumpAllDebugStreams( IDiaSession* pSession)
@@ -77,12 +77,12 @@ void DumpAllDebugStreams( IDiaSession* pSession)
 }
 ```
 
-## <a name="requirements"></a>Configuration requise
-En-tête : Dia2.h
+## <a name="requirements"></a>spécifications
+En-tête : Dia2. h
 
-Bibliothèque : diaguids.lib
+Bibliothèque : diaguids. lib
 
-DLL : msdia80.dll
+DLL : Msdia80. dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Interfaces (SDK Debug Interface Access)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)

@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugFields::Clone | Microsoft Docs
+title: 'IEnumDebugFields :: Clone | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -15,15 +15,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2d614a1d98a1374ed0b04aef5b23ebf91c21610c
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b5657e5db99bd062fa16aae9f9d8516bdbabc99f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350441"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72727697"
 ---
 # <a name="ienumdebugfieldsclone"></a>IEnumDebugFields::Clone
-Cette méthode retourne une copie de l’énumération actuelle comme un objet distinct.
+Cette méthode retourne une copie de l’énumération actuelle sous la forme d’un objet distinct.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,13 +41,13 @@ int Clone(
 
 ## <a name="parameters"></a>Paramètres
 `ppEnum`\
-[out] Retourne une copie de cette énumération en tant qu’objet distinct.
+à Retourne une copie de cette énumération sous la forme d’un objet distinct.
 
 ## <a name="property-valuereturn-value"></a>Valeur de propriété/valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne un code d’erreur.
 
 ## <a name="remarks"></a>Notes
- La copie de l’énumération a le même état que l’original au moment de que cette méthode est appelée. Toutefois, les États de la copie et la version d’origine sont distincts et peuvent être modifiées individuellement.
+ La copie de l’énumération a le même État que l’original au moment où cette méthode est appelée. Toutefois, le de la copie et les États de l’original sont séparés et peuvent être modifiés individuellement.
 
 ## <a name="see-also"></a>Voir aussi
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

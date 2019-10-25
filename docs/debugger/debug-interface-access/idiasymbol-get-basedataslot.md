@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35612c8b4ab4e4ee64673d6058143788f56339fb
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 12aa68a549f47b27fd2b750d41631f4fabd546ba
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62837697"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740958"
 ---
-# <a name="idiasymbolgetbasedataslot"></a>IDiaSymbol::get_baseDataSlot
-Récupère l’emplacement de base de données.
+# <a name="idiasymbolget_basedataslot"></a>IDiaSymbol::get_baseDataSlot
+Récupère l’emplacement de données de base.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -30,10 +30,10 @@ HRESULT get_baseDataSlot(
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-[out] Un pointeur vers un `DWORD` qui contient l’emplacement de base de données.
+à Pointeur vers un `DWORD` qui contient l’emplacement de données de base.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

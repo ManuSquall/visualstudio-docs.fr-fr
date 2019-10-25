@@ -10,19 +10,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 710cc8cae2b1974529be1eded6c5148eedd1211e
-ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
+ms.openlocfilehash: 9fe890d5a2c88ea9d4d35a6bd01f6012d97e6ce0
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65805311"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72735550"
 ---
 # <a name="graphics-event-list"></a>Liste des événements Graphics
 La liste des événements Graphics dans Visual Studio Graphics Analyzer vous permet d'explorer les événements Direct3D enregistrés durant le rendu d'un frame de votre jeu ou application.
 
  Voici la liste des événements :
 
- ![Une liste des événements ayant « Index » dans leur nom. ](media/gfx_diag_demo_event_list_orientation.png "gfx_diag_demo_event_list_orientation")
+ ![Liste d’événements dont le nom contient « index ».](media/gfx_diag_demo_event_list_orientation.png "gfx_diag_demo_event_list_orientation")
 
 ## <a name="using-the-event-list"></a>Utilisation de la liste des événements
  Quand vous sélectionnez un événement dans la liste des événements, cela se reflète aussitôt dans les informations affichées par les autres outils Graphics Analysis. En utilisant la liste des événements avec ces autres outils, vous pouvez examiner un problème de rendu en détail pour en identifier la cause. Pour en savoir plus sur la façon de résoudre les problèmes de rendu en combinant la liste des événements aux autres outils Graphics Analysis, consultez [Exemples](graphics-diagnostics-examples.md).
@@ -41,15 +41,15 @@ La liste des événements Graphics dans Visual Studio Graphics Analyzer vous per
  Dans la mesure où Direct3D 11 n'expose pas plusieurs files d'attente, les événements ne sont pas affichés sous forme d'événements à code de couleurs dans la liste des événements quand vous travaillez sur une capture d'une application Direct3D 11.
 
 ### <a name="event-list-views"></a>Affichages de la liste des événements
- La liste des événements propose deux affichages différents qui organisent les événements graphiques de différentes manières pour mieux prendre en compte votre flux de travail et vos préférences. Le premier est le *affichage de travail GPU* qui organise les événements et leur état associé hiérarchiquement. Le deuxième est l' *affichage Chronologie* qui organise les événements par ordre chronologique sous forme de liste plate.
+ La liste des événements propose deux affichages différents qui organisent les événements graphiques de différentes manières pour mieux prendre en compte votre flux de travail et vos préférences. La première vue est la *vue de travail GPU* qui organise les événements et leur état associé de façon hiérarchique. Le deuxième est l' *affichage Chronologie* qui organise les événements par ordre chronologique sous forme de liste plate.
 
- Le **travail GPU** vue affiche les événements capturés et leur état dans une hiérarchie. Le niveau supérieur de la hiérarchie est constituée d'événements tels que des appels de dessin, des effacements, des présences et ceux en rapport avec les affichages. Dans la liste des événements, vous pouvez développer les appels de dessin pour afficher l'état de l'appareil au moment où l'appel de dessin a été émis. Vous pouvez même développer chaque type d'état pour afficher les événements qui ont défini leur valeur. À ce niveau, vous pouvez aussi déterminer si un état particulier a été défini dans un frame précédent ou s'il a été défini plusieurs fois depuis le dernier appel de dessin.
+ La vue de **travail GPU** affiche les événements capturés et leur état dans une hiérarchie. Le niveau supérieur de la hiérarchie est constituée d'événements tels que des appels de dessin, des effacements, des présences et ceux en rapport avec les affichages. Dans la liste des événements, vous pouvez développer les appels de dessin pour afficher l'état de l'appareil au moment où l'appel de dessin a été émis. Vous pouvez même développer chaque type d'état pour afficher les événements qui ont défini leur valeur. À ce niveau, vous pouvez aussi déterminer si un état particulier a été défini dans un frame précédent ou s'il a été défini plusieurs fois depuis le dernier appel de dessin.
 
- Le **chronologie** affiche chaque événement capturées dans l’ordre chronologique. Ce mode d'organisation de la liste des événements est le même que dans les versions précédentes de Visual Studio.
+ La vue **chronologie** affiche chaque événement capturé dans l’ordre chronologique. Ce mode d'organisation de la liste des événements est le même que dans les versions précédentes de Visual Studio.
 
 ##### <a name="to-change-the-event-list-view-mode"></a>Pour modifier le mode d'affichage de la liste des événements
 
-- Dans le **liste des événements Graphics** fenêtre, au-dessus de la liste d’événements, recherchez le **vue** liste déroulante et choisissez le le **chronologie** vue ou la **travail GPU** vue.
+- Dans la fenêtre **liste des événements Graphics** , au-dessus de la liste des événements, localisez la liste déroulante **affichage** et choisissez l’affichage **chronologie** ou la vue de **travail GPU** .
 
 ### <a name="filtering-events"></a>Filtrage des événements
  Vous pouvez utiliser la zone Rechercher (située dans l'angle supérieur droit de la fenêtre **Liste des événements Graphics** ) pour filtrer la liste des événements et afficher uniquement ceux dont le nom contient les mots clés spécifiés. Vous pouvez spécifier des mots clés uniques comme `Vertex`(comme dans l’illustration précédente) ou des mots clés multiples en utilisant une liste délimitée par des points-virgules, comme `Draw;Primitive`(qui correspond aux événements dont le nom contient `Draw` ou `Primitive` ). Comme les recherches respectent les espaces (par exemple `VSSet``VS Set` sont des recherches différentes), spécifiez vos recherches avec soin.
@@ -66,9 +66,9 @@ La liste des événements Graphics dans Visual Studio Graphics Analyzer vous per
 |Icône|Description de l'événement|
 |----------|-----------------------|
 |(pas d'icône)|Événement général<br /> Tout événement autre qu'un événement non défini par l'utilisateur, un groupe d'événements défini par l'utilisateur ou un événement de dessin.|
-|![L’icône d’événement de dessin](media/vsg_eventlist_icon_draw.png "vsg_eventlist_icon_draw")|Événement de dessin<br /> Marque un événement de dessin qui s'est produit pendant le frame capturé.|
-|![L’utilisateur&#45;défini l’icône du marqueur d’événement](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|Groupe d'événements définis par l'utilisateur<br /> Événements liés au groupe, tels que définis par l'application.|
-|![L’utilisateur&#45;défini l’icône du marqueur d’événement](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|Marqueur d'événement défini par l'utilisateur<br /> Marque un emplacement spécifique, tel que défini par l'application.|
+|![Icône d’événement de dessin](media/vsg_eventlist_icon_draw.png "vsg_eventlist_icon_draw")|Événement de dessin<br /> Marque un événement de dessin qui s'est produit pendant le frame capturé.|
+|![Icône du&#45;marqueur d’événement défini par l’utilisateur](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|Groupe d'événements définis par l'utilisateur<br /> Événements liés au groupe, tels que définis par l'application.|
+|![Icône du&#45;marqueur d’événement défini par l’utilisateur](media/vsg_eventlist_icon_user.png "vsg_eventlist_icon_user")|Marqueur d'événement défini par l'utilisateur<br /> Marque un emplacement spécifique, tel que défini par l'application.|
 
 ## <a name="marking-user-defined-events-in-your-app"></a>Marquage des événements définis par l'utilisateur dans votre application
  Les événements définis par l'utilisateur sont propres à votre application. Vous pouvez vous en servir pour établir une corrélation entre les événements importants qui se produisent dans votre application et les événements figurant dans la liste des événements Graphics. Par exemple, vous pouvez créer des groupes d'événements définis par l'utilisateur pour organiser les événements associés (par exemple, ceux qui affichent votre interface utilisateur) sous forme de groupes ou de hiérarchies afin de faciliter la navigation dans la liste des événements. De même, vous pouvez créer des marqueurs quand certains types d'objets sont dessinés afin de trouver facilement les événements graphiques correspondants dans la liste des événements.
@@ -99,19 +99,19 @@ La liste des événements Graphics dans Visual Studio Graphics Analyzer vous per
 <!-- VERSIONLESS -->
 <a name="resource-history"></a>
 ## <a name="resource-history"></a>Historique des ressources
-Visual Studio 2017 et versions supérieur contiennent le **historique des ressources** fenêtre.  En sélectionnant l’icône espion ![icône espion](media/gfx_watch.png) en regard d’une entrée dans le **liste des événements** fenêtre fera apparaître le **historique des ressources** fenêtre indiqué ci-dessous :
+Visual Studio 2017 et versions ultérieures contiennent la fenêtre **historique des ressources** .  La sélection de l’icône espion ![watch icône ](media/gfx_watch.png) en regard d’une entrée dans la fenêtre **liste des événements** affiche la fenêtre **historique des ressources** , comme indiqué ci-dessous :
 
 ![Historique des ressources](media/gfx_diag_resource_history.png)
 
-Cette fenêtre vous permet d’afficher l’historique de l’élément sélectionné dans la liste des événements.  La liste déroulante en haut peut être utilisée pour sélectionner d’autres éléments pour afficher l’historique de.  La moitié supérieure de la fenêtre contient les **les événements de configuration de Frame**.  Voici les événements qui appartiennent à la *créer* catégorie de type et sont des appels qui en général, initialisent et créer la ressource.  Au bas de la fenêtre contient les **événements de Frame** section.  Celles-ci sont en lecture normale et écrivent des événements qui se produisent pendant l’utilisation de la ressource.
+Cette fenêtre vous permet d’afficher l’historique de l’élément sélectionné dans la liste des événements.  La liste déroulante en haut peut être utilisée pour sélectionner d’autres éléments dont l’historique doit être affiché.  La moitié supérieure de la fenêtre contient les **événements de configuration de frame**.  Il s’agit des événements qui appartiennent à la catégorie *créer* un type et sont des appels qui initialisent généralement et créent la ressource.  La moitié inférieure de la fenêtre contient la section **événements de cadre** .  Il s’agit des événements de lecture et d’écriture normaux qui se produisent lors de l’utilisation de la ressource.
 
 | Colonne | Description |
 |-----------| - |
-| **Type** | Affiche le type de l’entrée, généralement *créer*, *en lecture* et *écrire*. |
-| **Affichage** | Affiche une miniature de la ressource à ce moment précis.  Double-cliquez sur la miniature pour ouvrir une vue de détails de la ressource à ce moment-là. |
-| **Event** | Illustre l’appel de méthode qui s’est produite qui a généré l’événement.  Aucun historique supplémentaire sur des éléments individuels sont consultables en sélectionnant l’icône espion ![icône espion](media/gfx_watch.png) sur la ligne appropriée.  En outre, n’importe quel élément qui est dessiné dans le texte en bleu, tel que `m_commandList` dans la capture d’écran ci-dessus, peut être sélectionné pour plus d’informations. |
+| **Type** | Affiche le type de l’entrée, généralement *créer*, *lire* et *écrire*. |
+| **Affichage** | Affiche une miniature de la ressource à ce moment précis.  Double-cliquez sur la miniature pour ouvrir une vue détaillée de la ressource à ce moment-là. |
+| **Event** | Affiche l’appel de méthode qui a généré l’événement.  Tout historique supplémentaire sur des éléments individuels peut être affiché en sélectionnant l’icône espion ![watch icône ](media/gfx_watch.png) sur la ligne appropriée.  En outre, tout élément dessiné en texte bleu, tel que `m_commandList` dans la capture d’écran ci-dessus, peut être sélectionné pour plus d’informations. |
 
 <!-- /VERSIONLESS -->
 
 ## <a name="see-also"></a>Voir aussi
-- [Procédure pas à pas : objets manquants en raison de l’état du périphérique](walkthrough-missing-objects-due-to-device-state.md)
+- [Procédure pas à pas : objets manquants en raison de l’état de l’appareil](walkthrough-missing-objects-due-to-device-state.md)

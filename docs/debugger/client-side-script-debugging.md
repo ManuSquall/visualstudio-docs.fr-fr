@@ -1,5 +1,5 @@
 ---
-title: Débogage de Script côté client | Microsoft Docs
+title: Débogage de scripts côté client | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,18 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1501cd0243d6dc17cc627715eda85e755aec4502
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f9f66d757f5f46530619be1424eb0810ce546ff5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564084"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745700"
 ---
 # <a name="client-side-script-debugging"></a>Débogage de scripts côté client
 Le débogueur Visual Studio fournit un environnement de débogage complet pour rechercher et corriger les erreurs dans les scripts clients des pages ASP.NET.
 
 ## <a name="opening-script-documents"></a>Ouverture de documents de script
-Vous pouvez afficher des listes de documents de script côté serveur et côté client dans l’**Explorateur de solutions**. Vous pouvez ouvrir tout document de script à partir de l' **Explorateur de solutions**. Pour plus d'informations, voir [Procédure : afficher les documents de script](../debugger/how-to-view-script-documents.md).
+Vous pouvez afficher des listes de documents de script côté serveur et côté client dans l’**Explorateur de solutions**. Vous pouvez ouvrir tout document de script à partir de l' **Explorateur de solutions**. Pour plus d'informations, consultez [How to: View Script Documents](../debugger/how-to-view-script-documents.md).
 
 ## <a name="breakpoint-mapping"></a>Mappage de point d'arrêt
  Dans Visual Studio, vous ne pouvez pas déboguer directement le code côté serveur, mais vous pouvez définir un point d'arrêt dans un fichier côté serveur. Visual Studio mappe automatiquement le point d'arrêt à un emplacement correspondant dans le fichier côté client et crée un point d'arrêt mappé dans le code côté client.
@@ -35,7 +35,7 @@ Vous pouvez afficher des listes de documents de script côté serveur et côté 
 ## <a name="manually-or-automatically-attaching-to-script"></a>Attachement manuel ou automatique au script
  Pour commencer le débogage du script dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], le débogueur doit effectuer l'attachement au script que vous souhaitez déboguer. Cela peut se faire manuellement ou automatiquement.
 
- Vous pouvez effectuer l'attachement manuellement à l'aide de l'interface de débogueur [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour choisir un processus de script en cours d'exécution auquel effectuer l'attachement. Pour plus d'informations, voir [Procédure : attacher à un script](../debugger/how-to-attach-to-script.md).
+ Vous pouvez effectuer l'attachement manuellement à l'aide de l'interface de débogueur [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour choisir un processus de script en cours d'exécution auquel effectuer l'attachement. Pour plus d'informations, consultez [How to: Attach to Script](../debugger/how-to-attach-to-script.md).
 
  Le débogueur effectue l'attachement au script automatiquement lorsque l'un des cas suivants se produit :
 

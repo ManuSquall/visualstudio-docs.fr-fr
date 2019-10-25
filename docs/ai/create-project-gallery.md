@@ -9,12 +9,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 5694bfe49e88d0ea5911e72abba842e98f54e373
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 3967b637d547ed99ed840761b3b843068afee1af
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62538014"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777487"
 ---
 # <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>Créer un projet IA à partir de la galerie Azure Machine Learning dans Visual Studio
 
@@ -39,13 +39,13 @@ Une fois que vous avez [installé Visual Studio Tools pour IA](installation.md),
 
 4. Pour ce démarrage rapide, sélectionnez l’exemple « **MNIST using TensorFlow** » (MNIST avec TensorFlow) et cliquez sur **Installer**. Indiquez les éléments suivants :
 
-   - **Groupe de ressources** : groupe de ressources Azure où vos métadonnées seront stockées
-   - **Compte** : compte d’expérimentation Azure Machine Learning
-   - **Espace de travail** : espace de travail Azure Machine Learning
-   - **Type de projet** : infrastructure de machine learning. Dans ce cas, choisissez **TensorFlow**
+   - **Groupe de ressources** : groupe de ressources Azure où vos métadonnées seront stockées
+   - **Compte** : compte d’expérimentation Azure Machine Learning
+   - **Espace de travail** : espace de travail Azure Machine Learning
+   - **Type de projet** : framework machine learning. Dans ce cas, choisissez **TensorFlow**
    - **Ajouter à la solution** : détermine s’il faut ajouter à votre solution Visual Studio ou créer et ouvrir une autre solution
-   - **Chemin d’accès au projet** : emplacement où enregistrer le code
-   - **Nom du projet** : tapez **TensorFlowMNIST**
+   - **Chemin d’accès du projet** : emplacement où enregistrer le code
+   - **Nom du projet** : tapez **TensorFlowMNIST**
 
    ![Projet résultant lors de l’utilisation du modèle Application Python](media/create-project-gallery/new-AzureSampleProject.png)
 
