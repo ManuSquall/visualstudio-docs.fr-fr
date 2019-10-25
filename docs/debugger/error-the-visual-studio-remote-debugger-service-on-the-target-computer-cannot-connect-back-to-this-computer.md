@@ -1,5 +1,5 @@
 ---
-title: 'Erreur : Le service de débogueur distant Visual Studio sur l’ordinateur cible ne peut pas se reconnecter à cet ordinateur'
+title: "Erreur : Le service Débogueur distant Visual Studio sur l'ordinateur cible ne peut pas se reconnecter à cet ordinateur"
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 11/04/2016
@@ -16,15 +16,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c07557fa64f86349a3baf8956d99b937ceab9f5a
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: 695c4c9e84ce9eb851a551dc9821bff00123a35c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043436"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737410"
 ---
-# <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Erreur : Le service de débogueur distant Visual Studio sur l’ordinateur cible ne peut pas se reconnecter à cet ordinateur
-Cette erreur signifie que le service débogueur distant s’exécute sous un compte d’utilisateur qui ne peut pas s’authentifier lorsqu’il tente de se connecter à l’ordinateur que vous déboguez à partir de. Cette erreur peut se produire lorsque le moteur de débogage hérité de débogage à distance, et le débogueur distant s’exécute en tant que service.
+# <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Erreur : Le service Débogueur distant Visual Studio sur l'ordinateur cible ne peut pas se reconnecter à cet ordinateur
+Cette erreur signifie que le service du débogueur distant s’exécute sous un compte d’utilisateur qui ne peut pas s’authentifier lorsqu’il tente de se connecter à l’ordinateur à partir duquel vous déboguez. Cette erreur peut se produire lors du débogage à distance à l’aide du moteur de débogage hérité et que le débogueur distant s’exécute en tant que service.
 
  Le tableau suivant répertorie les comptes autorisés à accéder à l'ordinateur:
 
@@ -46,7 +46,7 @@ Cette erreur signifie que le service débogueur distant s’exécute sous un com
 
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur
 
-1. Assurez-vous que le service Débogueur distant Visual Studio est correctement installé sur l'ordinateur distant. Pour plus d’informations, consultez [le débogage à distance](../debugger/remote-debugging.md).
+1. Assurez-vous que le service Débogueur distant Visual Studio est correctement installé sur l'ordinateur distant. Pour plus d’informations, consultez [débogage distant](../debugger/remote-debugging.md).
 
 2. Exécutez le service Débogueur distant sous un compte qui peut accéder à l'ordinateur hôte du débogueur, comme indiqué dans le tableau précédent.
 

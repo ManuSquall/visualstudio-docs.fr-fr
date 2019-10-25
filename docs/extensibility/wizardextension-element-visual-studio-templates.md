@@ -14,17 +14,17 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cde4c98b1b8ba51205cb2d198eacaaf468a7e872
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cfd46573f70b31559f9d6c4749c142d763537764
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66350782"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748935"
 ---
 # <a name="wizardextension-element-visual-studio-templates"></a>WizardExtension, élément (modèles Visual Studio)
-Contient les éléments de l’inscription pour la personnalisation de l’Assistant modèle.
+Contient les éléments d’inscription pour la personnalisation de l’Assistant modèle.
 
- \<VSTemplate >... \<WizardExtension>
+ \<VSTemplate >... \<WizardExtension >
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -39,26 +39,26 @@ Contient les éléments de l’inscription pour la personnalisation de l’Assis
  Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.
 
 ### <a name="attributes"></a>Attributs
- Aucun.
+ Aucun(e).
 
 ### <a name="child-elements"></a>Éléments enfants
 
 |Élément|Description|
 |-------------|-----------------|
-|[Assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|Élément requis.<br /><br /> Spécifie le nom ou le nom fort d’un assembly qui s’affiche dans le global assembly cache. Il doit y avoir au moins un `Assembly` élément dans un `WizardExtension` élément.|
-|[FullClassName](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|Élément requis.<br /><br /> Le nom qualifié complet de la classe qui implémente le `IWizard` interface. Il doit y avoir au moins un `FullClassName` élément dans un `WizardExtension` élément.|
+|[Assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)|Élément requis.<br /><br /> Spécifie le nom ou le nom fort d’un assembly qui apparaît dans la Global Assembly Cache. Il doit y avoir au moins un élément `Assembly` dans un élément `WizardExtension`.|
+|[FullClassName,](../extensibility/fullclassname-element-visual-studio-template-wizard-extension.md)|Élément requis.<br /><br /> Nom qualifié complet de la classe qui implémente l’interface `IWizard`. Il doit y avoir au moins un élément `FullClassName` dans un élément `WizardExtension`.|
 
 ### <a name="parent-elements"></a>Éléments parents
 
 |Élément|Description|
 |-------------|-----------------|
-|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|Contient toutes les métadonnées pour le modèle de projet, un modèle d’élément ou un starter kit.|
+|[Lit](../extensibility/vstemplate-element-visual-studio-templates.md)|Contient toutes les métadonnées pour le modèle de projet, le modèle d’élément ou le starter kit.|
 
 ## <a name="remarks"></a>Notes
  `WizardExtension` est un élément enfant facultatif de `VSTemplate`.
 
 ## <a name="example"></a>Exemple
- L’exemple suivant illustre les métadonnées pour le modèle de projet standard pour une [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] application de Windows.
+ L’exemple suivant illustre les métadonnées pour le modèle de projet standard pour une application Windows [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].
 
 ```
 <VSTemplate Version="3.0.0" Type="Item"

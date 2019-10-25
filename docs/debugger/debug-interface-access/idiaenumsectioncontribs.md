@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ede7789fcdba63595cecd6426c8f3ca1a4048e07
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e332bacdeaeca00d4e43d80807ee5f95c51c7e93
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833257"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744245"
 ---
 # <a name="idiaenumsectioncontribs"></a>IDiaEnumSectionContribs
-Énumère les contributions de section différents contenues dans la source de données.
+Énumère les différentes contributions de section contenues dans la source de données.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,21 +33,21 @@ Le tableau suivant présente les méthodes de `IDiaEnumSectionContribs`.
 
 |Méthode|Description|
 |------------|-----------------|
-|[IDiaEnumSectionContribs::get__NewEnum](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-newenum.md)|Récupère le [IEnumVARIANT Interface](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) version de cet énumérateur.|
-|[IDiaEnumSectionContribs::get_Count](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-count.md)|Récupère le nombre de contributions de la section.|
-|[IDiaEnumSectionContribs::Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md)|Récupère les contributions de la section au moyen d’un index.|
+|[IDiaEnumSectionContribs::get__NewEnum](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-newenum.md)|Récupère la version d' [interface IEnumVARIANT](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) de cet énumérateur.|
+|[IDiaEnumSectionContribs::get_Count](../../debugger/debug-interface-access/idiaenumsectioncontribs-get-count.md)|Récupère le nombre de contributions de section.|
+|[IDiaEnumSectionContribs::Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md)|Récupère les contributions de section au moyen d’un index.|
 |[IDiaEnumSectionContribs::Next](../../debugger/debug-interface-access/idiaenumsectioncontribs-next.md)|Récupère un nombre spécifié de contributions de section dans la séquence d’énumération.|
 |[IDiaEnumSectionContribs::Skip](../../debugger/debug-interface-access/idiaenumsectioncontribs-skip.md)|Ignore un nombre spécifié de contributions de section dans une séquence d’énumération.|
 |[IDiaEnumSectionContribs::Reset](../../debugger/debug-interface-access/idiaenumsectioncontribs-reset.md)|Réinitialise une séquence d’énumération au début.|
-|[IDiaEnumSectionContribs::Clone](../../debugger/debug-interface-access/idiaenumsectioncontribs-clone.md)|Crée un énumérateur qui contient le même état d’énumération que l’énumérateur en cours.|
+|[IDiaEnumSectionContribs::Clone](../../debugger/debug-interface-access/idiaenumsectioncontribs-clone.md)|Crée un énumérateur qui contient le même état d’énumération que l’énumérateur actuel.|
 
 ## <a name="remarks"></a>Notes
 
 ## <a name="note-for-callers"></a>Remarque pour les appelants
-Obtenez cette interface à partir de la [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md) (méthode). Consultez l’exemple pour plus d’informations.
+Obtenez cette interface à partir de la méthode [IDiaSession :: getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md) . Pour plus d’informations, consultez l’exemple.
 
 ## <a name="example"></a>Exemple
-Cet exemple montre comment obtenir (le `GetEnumSectionContribs` (fonction)) et utiliser (le `ShowSectionContribs` (fonction)) la `IDiaEnumSectionContribs` interface. Pour obtenir un exemple plus complet de l’utilisation des contributions de la section, consultez le [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md) interface.
+Cet exemple montre comment obtenir (la fonction `GetEnumSectionContribs`) et utiliser (la fonction `ShowSectionContribs`) l’interface `IDiaEnumSectionContribs`. Pour obtenir un exemple plus complet de l’utilisation des contributions de section, consultez l’interface [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md) .
 
 ```C++
 
@@ -99,12 +99,12 @@ void ShowSectionContribs(IDiaSession *pSession)
 }
 ```
 
-## <a name="requirements"></a>Configuration requise
-En-tête : Dia2.h
+## <a name="requirements"></a>spécifications
+En-tête : Dia2. h
 
-Bibliothèque : diaguids.lib
+Bibliothèque : diaguids. lib
 
-DLL : msdia80.dll
+DLL : Msdia80. dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Interfaces (SDK Debug Interface Access)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)

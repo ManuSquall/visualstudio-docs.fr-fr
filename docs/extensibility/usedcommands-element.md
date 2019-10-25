@@ -13,17 +13,17 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e43834517855f72dd32c024c222089cf42c7c3ac
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 66361ad58c15e8539fcda6d0ec4468dd8b68289b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316284"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72718622"
 ---
 # <a name="usedcommands-element"></a>Élément UsedCommands
-L’élément UsedCommands regroupe les éléments UsedCommand et autres regroupements UsedCommands.
+L’élément UsedCommands groupe les éléments UsedCommand et d’autres regroupements UsedCommands.
 
- L’élément UsedCommands est facultatif. Si vous n’appelez pas les commandes définies en dehors de votre package, il est inutile d’inclure cette section dans votre fichier .vsct.
+ L’élément UsedCommands est facultatif. Si vous n’appelez pas de commandes définies en dehors de votre package, vous n’avez pas besoin d’inclure cette section dans votre fichier. vsct.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -40,19 +40,19 @@ L’élément UsedCommands regroupe les éléments UsedCommand et autres regroup
 
 |Attribut|Description|
 |---------------|-----------------|
-|Condition|Facultatif. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condition|Optionnel. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Éléments enfants
 
 |Élément|Description|
 |-------------|-----------------|
-|[Élément UsedCommand](../extensibility/usedcommand-element.md)|La commande est implémentée par un autre code.|
+|[Élément UsedCommand](../extensibility/usedcommand-element.md)|Commande implémentée par un autre code.|
 
 ### <a name="parent-elements"></a>Éléments parents
 
 |Élément|Description|
 |-------------|-----------------|
-|[Élément CommandTable](../extensibility/commandtable-element.md)|Définit tous les éléments qui représentent des commandes (par exemple, les éléments de menu, menus, barres d’outils et zones de liste déroulante) qui fournit un VSPackage à l’environnement de développement intégré (IDE).|
+|[Élément CommandTable](../extensibility/commandtable-element.md)|Définit tous les éléments qui représentent des commandes (par exemple, des éléments de menu, des menus, des barres d’outils et des zones de liste déroulante) qu’un VSPackage fournit à l’environnement de développement intégré (IDE).|
 
 ## <a name="example"></a>Exemple
 

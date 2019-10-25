@@ -21,16 +21,16 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3a20637b7c7c3afcf594d1498b6030c685e4be72
-ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
+ms.openlocfilehash: 515b9b7eb1b1a4d2dbee6329be782386b8370338
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72163061"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72806313"
 ---
 # <a name="code-analysis-for-cc-overview"></a>Vue d’ensemble de l’analyse du code C/C++
 
-L’outil d'C++ analyse du code c/code fournit des informations sur les erreursC++ possibles dans votre code c/source. Les erreurs de codage courantes signalées par l'outil sont notamment les dépassements de mémoire tampon, une mémoire non initialisée, les déréférencements du pointeur Null et les fuites de mémoire et de ressources. L’outil peut également exécuter des vérifications par rapport aux [ C++ recommandations principales](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
+L’outil d'C++ analyse du code c/code fournit des informations sur les erreursC++ possibles dans votre code c/source. Les erreurs de codage courantes signalées par l'outil sont notamment les dépassements de mémoire tampon, une mémoire non initialisée, les déréférencements du pointeur Null et les fuites de mémoire et de ressources. L’outil peut également exécuter des vérifications par rapport aux [ C++ recommandations principales](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
 
 ## <a name="ide-integrated-development-environment-integration"></a>Intégration de l’IDE (environnement de développement intégré)
 
@@ -46,11 +46,11 @@ Vous pouvez également utiliser l’outil d’analyse à partir de la ligne de c
 C:\>cl /analyze Sample.cpp
 ```
 
-**Visual Studio 2017 15.7 et versions ultérieures :** Vous pouvez exécuter l’outil à partir de la ligne de commande avec n’importe quel système de génération, y compris CMake.
+**Visual Studio 2017 version 15,7 et versions ultérieures :** Vous pouvez exécuter l’outil à partir de la ligne de commande avec n’importe quel système de génération, y compris CMake.
 
 ## <a name="pragma-support"></a>support #pragma
 
-Vous pouvez utiliser la directive `#pragma` pour traiter les avertissements comme des erreurs ; activer ou désactiver les avertissements et supprimer les avertissements pour les lignes de code individuelles. Pour plus d’informations, consultez [Directives pragma et mot clé __Pragma](https://docs.microsoft.com/cpp/preprocessor/pragma-directives-and-the-pragma-keyword).
+Vous pouvez utiliser la directive `#pragma` pour traiter les avertissements comme des erreurs ; activer ou désactiver les avertissements et supprimer les avertissements pour les lignes de code individuelles. Pour plus d’informations, consultez [Directives pragma et mot clé __Pragma](/cpp/preprocessor/pragma-directives-and-the-pragma-keyword).
 
 ## <a name="annotation-support"></a>Prise en charge des annotations
 
@@ -66,8 +66,8 @@ Vous pouvez utiliser les fonctionnalités intégrées du système de build pour 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Démarrage rapide : Analyse du code pour CC++/](quick-start-code-analysis-for-c-cpp.md)
-- [Procédure pas à pas : Analyser C/C++ code pour les défauts @ no__t-1
+- [Démarrage rapide : analyse du code pour C/C++](quick-start-code-analysis-for-c-cpp.md)
+- [Procédure pas à pas :C++ analyser C/code pour les défauts](walkthrough-analyzing-c-cpp-code-for-defects.md)
 - [Avertissements liés à l’analyse de code C/C++](code-analysis-for-c-cpp-warnings.md)
 - [Utiliser les vérificateurs de C++ Core Guidelines](using-the-cpp-core-guidelines-checkers.md)
 - [C++Guide de référence du vérificateur de Core Guidelines](code-analysis-for-cpp-corecheck.md)

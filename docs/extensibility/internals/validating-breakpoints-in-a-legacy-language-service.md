@@ -1,5 +1,5 @@
 ---
-title: Validation des points d’arrêt dans un Service de langage hérité | Microsoft Docs
+title: Validation des points d’arrêt dans un service de langage hérité | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,32 +11,32 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 177b0bb3fddebab6518a851bf8ce4c4d34d43897
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e7c46473610c96779d0c54e06e82cf884216b13b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324576"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72722014"
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>Validation des points d’arrêt dans un service de langage hérité
-Un point d’arrêt indique que l’exécution du programme doit s’arrêter à un moment donné pendant qu’il est en cours d’exécution dans un débogueur. Un utilisateur peut placer un point d’arrêt sur n’importe quelle ligne dans le fichier source, dans la mesure où l’éditeur n’a aucune connaissance de ce qui constitue un emplacement valide pour un point d’arrêt. Lorsque le débogueur est lancé, tous les points d’arrêt marquées (appelés en attente de points d’arrêt) sont liés à l’emplacement approprié dans le programme en cours d’exécution. En même temps que les points d’arrêt sont validées pour garantir qu’ils servent à indiquer les emplacements de code valide. Par exemple, un point d’arrêt sur un commentaire n’est pas valide, car il n’existe aucun code à cet emplacement dans le code source. Le débogueur désactive les points d’arrêt non valides.
+Un point d’arrêt indique que l’exécution du programme doit s’arrêter à un point particulier lorsqu’il est exécuté dans un débogueur. Un utilisateur peut placer un point d’arrêt sur n’importe quelle ligne du fichier source, puisque l’éditeur n’a aucune connaissance de ce qui constitue un emplacement valide pour un point d’arrêt. Quand le débogueur est lancé, tous les points d’arrêt marqués (appelés points d’arrêt en attente) sont liés à l’emplacement approprié dans le programme en cours d’exécution. En même temps, les points d’arrêt sont validés pour s’assurer qu’ils marquent des emplacements de code valides. Par exemple, un point d’arrêt sur un commentaire n’est pas valide, car il n’y a pas de code à cet emplacement dans le code source. Le débogueur désactive les points d’arrêt non valides.
 
- Étant donné que le service de langage connaît le code source qui est affiché, il peut valider des points d’arrêt avant de lancer le débogueur. Vous pouvez remplacer le <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> méthode pour retourner une étendue en spécifiant un emplacement valide pour un point d’arrêt. L’emplacement du point d’arrêt est toujours validé lorsque le débogueur est lancé, mais l’utilisateur est informé des points d’arrêt non valides sans attendre que le débogueur charge.
+ Étant donné que le service de langage connaît le code source affiché, il peut valider des points d’arrêt avant le lancement du débogueur. Vous pouvez substituer la méthode <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> pour retourner une étendue spécifiant un emplacement valide pour un point d’arrêt. L’emplacement du point d’arrêt est toujours validé lors du lancement du débogueur, mais l’utilisateur est averti des points d’arrêt non valides sans attendre le chargement du débogueur.
 
-## <a name="implementing-support-for-validating-breakpoints"></a>Implémentation de prise en charge pour la validation des points d’arrêt
+## <a name="implementing-support-for-validating-breakpoints"></a>Implémentation de la prise en charge de la validation des points d’arrêt
 
-- Le <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> la position du point d’arrêt est donnée à la méthode. Votre implémentation doit décider ou non l’emplacement est valide et indiquer ceci en retournant une étendue de texte qui identifie le code associé à la position de ligne du point d’arrêt.
+- La méthode <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> reçoit la position du point d’arrêt. Votre implémentation doit décider si l’emplacement est valide ou non, et l’indiquer en retournant une étendue de texte qui identifie le code associé à la position de ligne du point d’arrêt.
 
-- Retourner <xref:Microsoft.VisualStudio.VSConstants.S_OK> si l’emplacement est valide, ou <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> s’il n’est pas valide.
+- Retourne <xref:Microsoft.VisualStudio.VSConstants.S_OK> si l’emplacement est valide, ou <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> s’il n’est pas valide.
 
-- Si le point d’arrêt est valide, l’étendue de texte est mis en surbrillance, ainsi que le point d’arrêt.
+- Si le point d’arrêt est valide, l’étendue de texte est mise en surbrillance avec le point d’arrêt.
 
-- Si le point d’arrêt n’est pas valide, un message d’erreur s’affiche dans la barre d’état.
+- Si le point d’arrêt n’est pas valide, un message d’erreur s’affiche dans la barre d’État.
 
 ### <a name="example"></a>Exemple
- Cet exemple illustre une implémentation de la <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> méthode qui appelle l’analyseur pour obtenir l’étendue du code (le cas échéant) à l’emplacement spécifié.
+ Cet exemple illustre une implémentation de la méthode <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> qui appelle l’analyseur pour obtenir l’étendue de code (le cas échéant) à l’emplacement spécifié.
 
- Cet exemple suppose que vous avez ajouté un `GetCodeSpan` méthode à la <xref:Microsoft.VisualStudio.Package.AuthoringSink> classe qui valide l’étendue de texte et le retourne `true` si elle est un emplacement de point d’arrêt valide.
+ Cet exemple suppose que vous avez ajouté une méthode `GetCodeSpan` à la classe <xref:Microsoft.VisualStudio.Package.AuthoringSink> qui valide l’étendue de texte et retourne `true` s’il s’agit d’un emplacement de point d’arrêt valide.
 
 ```csharp
 using Microsoft VisualStudio;

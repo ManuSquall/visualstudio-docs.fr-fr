@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 209ce1189963a3943a691b71c840474c3da1a07c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 7185498f351b8f69c926b7247ea348d5674ce6a2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64808831"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740686"
 ---
-# <a name="idiasymbolgetfarreturn"></a>IDiaSymbol::get_farReturn
-Récupère un indicateur qui spécifie si la fonction contient un retour far.
+# <a name="idiasymbolget_farreturn"></a>IDiaSymbol::get_farReturn
+Récupère un indicateur qui spécifie si la fonction contient un retour lointain.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,20 +33,20 @@ HRESULT get_farReturn(
 #### <a name="parameters"></a>Paramètres
  `pFlag`
 
-[in] Retourne `TRUE` si la fonction utilise un retour far, sinon, retourne `FALSE`.
+dans Retourne `TRUE` si la fonction utilise un retour Far, sinon, retourne `FALSE`.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
-> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> Une valeur de retour de `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>spécifications
 
-|Prérequis|Description|
+|Exigence|Description|
 |-----------------|-----------------|
 |En-tête :|dia2.h|
-|Version :|DIA SDK 8.0|
+|Version :|DIA SDK v 8.0|
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

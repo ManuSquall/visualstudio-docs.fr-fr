@@ -1,5 +1,5 @@
 ---
-title: 'Débogage des applications web : erreurs et dépannage'
+title: Débogage d’applications Web-Erreurs et résolution des problèmes
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -27,14 +27,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b1c8bb5e7f6ea8e0c68ec444bc5a1995bac4277
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bb84da1c75da968f9f89417cc48deec5310bc270
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62851619"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738039"
 ---
-# <a name="debugging-web-applications-errors-and-troubleshooting"></a>Débogage d’applications web : erreurs et dépannage
+# <a name="debugging-web-applications-errors-and-troubleshooting"></a>Débogage d'applications Web : erreurs et dépannage
 Les erreurs suivantes peuvent se produire lors d'une tentative de débogage d'applications Web.
 
 - [Résolution des problèmes](../debugger/debugging-web-applications-troubleshooting.md)
@@ -51,9 +51,9 @@ Les erreurs suivantes peuvent se produire lors d'une tentative de débogage d'ap
 
 - [Erreur : le serveur web est verrouillé et bloque l’exécution du verbe DEBUG](../debugger/error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md)
 
-- [Erreur : expiration du délai d’attente lors du débogage de services web](../debugger/error-timeout-while-debugging-web-services.md)
+- [Erreur : Expiration du délai d’attente lors du débogage de services web](../debugger/error-timeout-while-debugging-web-services.md)
 
-- [Erreur : impossible de démarrer le débogage sur le serveur web](../debugger/error-unable-to-start-debugging-on-the-web-server.md)
+- [Erreur : Impossible de démarrer le débogage sur le serveur web](../debugger/error-unable-to-start-debugging-on-the-web-server.md)
 
 ## <a name="see-also"></a>Voir aussi
 - [Sécurité du débogueur](../debugger/debugger-security.md)

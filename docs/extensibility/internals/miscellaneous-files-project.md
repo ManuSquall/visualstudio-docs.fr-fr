@@ -1,5 +1,5 @@
 ---
-title: Projet fichiers divers | Microsoft Docs
+title: Projets fichiers divers | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,27 +13,27 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd3cf792b10905d0f124266601e791dc91259ce2
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c46126507ef9bb293bd0fa6771f53343ad6206f7
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66349289"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72726677"
 ---
 # <a name="miscellaneous-files-project"></a>Projet Fichiers divers
-Lorsqu’un utilisateur ouvre les éléments de projet, l’IDE assigne au projet fichiers divers tous les éléments qui ne sont pas membres de tous les projets dans une solution.
+Quand un utilisateur ouvre des éléments de projet, l’IDE affecte au projet fichiers divers tous les éléments qui ne sont pas membres de projets dans une solution.
 
- Projets jouent un rôle significatif dans la détermination d’éditeur qui est utilisé lorsqu’un utilisateur ouvre un élément de projet. Un projet peut être conçu pour ouvrir certains fichiers à l’aide d’un éditeur spécifique au projet ou un éditeur standard.
+ Les projets jouent un rôle important dans la détermination de l’éditeur qui est utilisé lorsqu’un utilisateur ouvre un élément de projet. Un projet peut être conçu pour ouvrir certains fichiers à l’aide d’un éditeur spécifique à un projet ou d’un éditeur standard.
 
- Un éditeur spécifique au projet nécessite généralement que l’utilisateur ont des connaissances spéciales ou utiliser des interfaces spéciales à partir du projet. Pour plus d'informations, voir [Procédure : Ouvrir des éditeurs spécifiques du projet](../../extensibility/how-to-open-project-specific-editors.md).
+ Un éditeur spécifique au projet requiert généralement que l’utilisateur ait une connaissance particulière ou utilise des interfaces spéciales du projet. Pour plus d’informations, consultez [Comment : ouvrir des éditeurs spécifiques à un projet](../../extensibility/how-to-open-project-specific-editors.md).
 
- Un éditeur standard peut ouvrir n’importe quel fichier d’une extension spécifique dans n’importe quel projet. L’utilisateur peut personnaliser certains éditeurs standards, tels que le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] éditeur de texte, pour les projets conserver, tout en conservant leur caractère public. Éditeurs standard sont créés à l’aide de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> (méthode).
+ Un éditeur standard peut ouvrir n’importe quel fichier d’une extension spécifique dans n’importe quel projet. L’utilisateur peut personnaliser certains éditeurs standard, tels que le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] éditeur de texte, pour les projets tout en conservant leur caractère public. Les éditeurs standard sont créés à l’aide de la méthode <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>.
 
- Si aucun projet dans la solution ne répond qu’il peut ouvrir un élément de projet, l’IDE fournit un projet spécial appelé projet fichiers divers qui s’ouvre n’importe quel fichier.
+ Si aucun projet de la solution ne réagit et qu’il peut ouvrir un élément de projet, l’IDE fournit un projet spécial appelé projet fichiers divers qui ouvre n’importe quel fichier.
 
- Ce projet spécial fournit pour l’ouverture d’un fichier en dehors du contexte d’un projet. Lors du traitement de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenDocumentViaProject%2A> (méthode), le projet fichiers divers répond toujours avec une priorité très basse. Par conséquent, les fichiers divers de projet toujours donne à n’importe quel projet de priorité plus élevée qui peut ouvrir les fichiers.
+ Ce projet spécial permet d’ouvrir un fichier en dehors du contexte d’un projet. Lors du traitement de la méthode <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenDocumentViaProject%2A>, le projet fichiers divers répond toujours avec une priorité très basse. Par conséquent, le projet fichiers divers produit toujours un projet de priorité plus élevée qui peut ouvrir des fichiers.
 
- Le projet fichiers divers ne nécessite pas l’utilisateur de créer explicitement avec le **nouveau projet** boîte de dialogue. En outre, le projet fichiers divers ne gère pas définitivement une liste des membres du projet. Il utilise une fonctionnalité facultative pour enregistrer une liste des derniers fichiers utilisés pour chaque utilisateur.
+ Le projet fichiers divers ne demande pas à l’utilisateur de le créer explicitement avec la boîte de dialogue **nouveau projet** . En outre, le projet fichiers divers ne gère pas de façon permanente une liste des membres du projet. Il utilise une fonctionnalité facultative pour enregistrer la liste des fichiers utilisés le plus récemment pour chaque utilisateur.
 
 ## <a name="see-also"></a>Voir aussi
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>

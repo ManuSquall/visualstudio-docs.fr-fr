@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43c825bd621ada3f3e81d76f09a1f4bf9e30a67e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 324cad63a597768dc2c13447c6d2d68756878695
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839977"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743611"
 ---
-# <a name="idiaframedatagetfunctionstart"></a>IDiaFrameData::get_functionStart
-Récupère un indicateur qui indique si le bloc contient le point d’entrée d’une fonction.
+# <a name="idiaframedataget_functionstart"></a>IDiaFrameData::get_functionStart
+Récupère un indicateur qui signale si le bloc contient le point d’entrée d’une fonction.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,13 +33,13 @@ HRESULT get_functionStart ( 
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-[out] Retourne `TRUE` si le bloc contient le point d’entrée ; sinon, retourne `FALSE`.
+à Retourne `TRUE` si le bloc contient le point d’entrée ; Sinon, retourne `FALSE`.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- Il est possible pour un frame de pile ne soit ne pas le début d’une fonction, car l’image représentant une méthode inline ou une fonction insérée dans une fonction.
+ Il est possible qu’un frame de pile ne soit pas le début d’une fonction, car le frame représente une méthode ou une fonction inline insérée dans une fonction.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

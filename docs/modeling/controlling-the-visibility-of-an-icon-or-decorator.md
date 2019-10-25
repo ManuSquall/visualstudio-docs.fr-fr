@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13f019fcb42d908d81d4e356f664772029141993
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 76db7caa14050c924706763214e92a6ee3d68975
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654145"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748498"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Contrôle de la visibilité d'une icône ou d'un élément décoratif
 Un élément *décoratif* est une icône ou une ligne de texte qui apparaît sur une forme dans un langage spécifique à un domaine (DSL). Vous pouvez faire en sorte que l’élément décoratif apparaisse et disparaisse en fonction de l’état des propriétés dans le modèle. Par exemple, sur une forme représentant une personne, vous pouvez avoir différentes icônes qui s’affichent en fonction du sexe, du nombre d’enfants, etc. de la personne.

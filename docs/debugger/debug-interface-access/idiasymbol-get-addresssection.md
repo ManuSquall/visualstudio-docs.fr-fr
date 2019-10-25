@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4ae24a194050868e1e2efbc5d29e7cf20e6cf5d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 5a468fe6ee8a8d7d00bb2e6c261d50919a1dd764
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64830592"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741077"
 ---
-# <a name="idiasymbolgetaddresssection"></a>IDiaSymbol::get_addressSection
-Récupère la partie de la section d’une adresse d’emplacement. Quand utiliser le [LocationType (énumération)](../../debugger/debug-interface-access/locationtype.md) est défini sur `LocIsStatic`.
+# <a name="idiasymbolget_addresssection"></a>IDiaSymbol::get_addressSection
+Récupère la partie de section d’un emplacement d’adresse. Utilisez lorsque l' [énumération LocationType (](../../debugger/debug-interface-access/locationtype.md) a la valeur `LocIsStatic`.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,25 +33,25 @@ HRESULT get_addressSection ( 
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-[out] Retourne la partie de la section d’une adresse d’emplacement.
+à Retourne la partie de la section d’un emplacement d’adresse.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
-> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> Une valeur de retour de `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
 ## <a name="remarks"></a>Notes
- Pour les membres statiques sont situés dans une DLL externe, la section retournée par cette méthode peut être 0 car cette méthode repose sur l’obtention de l’adresse virtuelle du membre. Adresses virtuelles sont valides uniquement si le [IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) méthode dans le [IDiaSession](../../debugger/debug-interface-access/idiasession.md) interface a été appelée avec un paramètre différent de zéro en spécifiant l’adresse de chargement de la DLL.
+ Pour les membres statiques situés dans une DLL externe, la section retournée par cette méthode peut être 0, car cette méthode s’appuie sur l’obtention de l’adresse virtuelle du membre. Les adresses virtuelles ne sont valides que si la méthode [IDiaSession ::P ut_loadaddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md) de l’interface [IDiaSession](../../debugger/debug-interface-access/idiasession.md) a été appelée avec un paramètre différent de zéro spécifiant l’adresse de chargement de la dll.
 
- Pour obtenir la partie décalage d’une adresse, appelez le [IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md) (méthode).
+ Pour récupérer la partie offset d’une adresse, appelez la méthode [IDiaSymbol :: get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md) .
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>spécifications
 
-|Prérequis|Description|
+|Exigence|Description|
 |-----------------|-----------------|
 |En-tête :|dia2.h|
-|Version :|DIA SDK v7.0|
+|Version :|DIA SDK v 7.0|
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

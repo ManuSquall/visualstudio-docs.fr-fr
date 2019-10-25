@@ -1,5 +1,5 @@
 ---
-title: Choisissez la boîte de dialogue points d’arrêt | Microsoft Docs
+title: Boîte de dialogue Choisir les points d’arrêt | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -21,21 +21,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50547507bf37eb22346bcbf3f48585c9cb0b26b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fdec8c8d1b53f87e14700f5c14099cf0d2e6e392
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564780"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745727"
 ---
 # <a name="choose-breakpoints-dialog-box"></a>Boîte de dialogue Choisir les points d’arrêt
-Le **choisissez les points d’arrêt** boîte de dialogue s’ouvre lorsque vous essayez de définir un point d’arrêt à partir de l’entrée ambiguë dans le **nouveau point d’arrêt** boîte de dialogue. Un exemple courant de l’entrée ambiguë est un nom de fonction surchargée.
+La boîte de dialogue **choisir les points d’arrêt** s’ouvre lorsque vous essayez de définir un point d’arrêt à partir d’une entrée ambiguë dans la boîte de dialogue **nouveau point d’arrêt** . Un exemple courant d’entrée ambiguë est un nom de fonction surchargé.
 
- **Points d’arrêt** répertorie les points d’arrêt possibles qui peuvent être définies en fonction l’entrée ambiguë. Vous pouvez sélectionner un ou plusieurs des points d’arrêt à définir.
+ **Points d’arrêt** Répertorie les points d’arrêt possibles qui peuvent être définis en fonction de l’entrée ambiguë. Vous pouvez sélectionner un ou plusieurs points d’arrêt à définir.
 
- **Tous les** sélectionne tous les points d’arrêt répertoriés dans le **des points d’arrêt** boîte.
+ **Tout** Sélectionne tous les points d’arrêt listés dans la zone **points d’arrêt** .
 
- **Aucun** efface tous les points d’arrêt répertoriés dans le **des points d’arrêt** boîte.
+ **Aucun** Efface tous les points d’arrêt listés dans la zone **points d’arrêt** .
 
 ## <a name="see-also"></a>Voir aussi
 

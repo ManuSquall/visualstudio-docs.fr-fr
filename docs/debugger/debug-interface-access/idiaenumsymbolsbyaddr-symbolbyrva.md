@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38d7b0cb8564743ab35cac20cdcb352cdbca48d3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b4c34ce4105da6d50dc2bc9a0554f9539c1b2177
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830270"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743832"
 ---
 # <a name="idiaenumsymbolsbyaddrsymbolbyrva"></a>IDiaEnumSymbolsByAddr::symbolByRVA
 Positionne l’énumérateur en effectuant une recherche par adresse virtuelle relative (RVA).
@@ -34,11 +34,11 @@ HRESULT symbolByRVA ( 
 #### <a name="parameters"></a>Paramètres
  relativeVirtualAddress
 
-[in] Adresse relative au démarrage de l’image.
+dans Adresse relative au début de l’image.
 
  ppsymbol
 
-[out] Retourne un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objet qui représente le symbole trouvé.
+à Retourne un objet [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) représentant le symbole trouvé.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si le symbole est introuvable. Sinon, retourne un code d'erreur.

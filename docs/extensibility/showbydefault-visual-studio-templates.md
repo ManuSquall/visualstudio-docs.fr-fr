@@ -14,17 +14,17 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c211f45423ce0f2166bbf8aa189d35ab386a7fee
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2405e46a7f1ed8d2e4ae33b1b58ec44e06aa7d3b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331983"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72720103"
 ---
 # <a name="showbydefault-element-visual-studio-templates"></a>Élément ShowByDefault (modèles Visual Studio)
-Si `false`, spécifie que le modèle est uniquement affiché sous spécifié [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md).
+Si `false`, spécifie que le modèle s’affichera uniquement sous le [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)spécifié.
 
- \<VSTemplate> \<TemplateData> \<ShowByDefault>
+ \<VSTemplate > \<TemplateData > \<ShowByDefault >
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -36,10 +36,10 @@ Si `false`, spécifie que le modèle est uniquement affiché sous spécifié [Te
  Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.
 
 ### <a name="attributes"></a>Attributs
- Aucun.
+ Aucun(e).
 
 ### <a name="child-elements"></a>Éléments enfants
- Aucun.
+ Aucun(e).
 
 ### <a name="parent-elements"></a>Éléments parents
 

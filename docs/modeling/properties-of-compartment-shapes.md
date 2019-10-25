@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a24d288e7c5572ca96dcc43466c2163d9ecca67
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6ad53866c1930edb01ccd163131ce5e23644929c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658268"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747513"
 ---
 # <a name="properties-of-compartment-shapes"></a>Propriétés des formes de compartiment
 Les formes compartiments sont l’une des formes que vous pouvez utiliser pour afficher une classe de domaine dans un langage spécifique à un domaine. Vous pouvez développer et réduire les compartiments.

@@ -1,5 +1,5 @@
 ---
-title: Validation du Frame Graphics | Microsoft Docs
+title: Validation des frames graphiques | Microsoft Docs
 ms.date: 03/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -10,28 +10,28 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce283e5cbab30b612a02ec447113ad11e206a7f3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 49248c6209f9e56e51551f6cd3d4af66ecac8b56
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62895868"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72735496"
 ---
-# <a name="graphics-frame-validation"></a>Validation du Frame Graphics
+# <a name="graphics-frame-validation"></a>Validation des frames graphiques
 <!-- VERSIONLESS -->
-Visual Studio 2017 et une prise en charge la **Validation du Frame** outil.  La fenêtre de Validation du Frame affiche les erreurs et avertissements associés à la liste des événements.  Pour afficher cette fenêtre, sélectionnez le **Afficher > Validation du Frame** menu.
+Visual Studio 2017 et versions ultérieures prennent en charge l’outil de **validation de frame** .  La fenêtre validation de frame affiche les erreurs et les avertissements associés à la liste d’événements.  Pour afficher cette fenêtre, sélectionnez le menu **affichage > validation de frame** .
 
 ![Validation du frame](media/gfx_diag_frame_validation.png)
 
-Cliquez sur le **exécuter la Validation** bouton dans l’angle supérieur gauche pour lancer l’analyse.  Il peut prendre plusieurs minutes selon la complexité du frame.  Les données qui s’affiche ici est une combinaison de deux sources : les messages que D3D lui-même émet lorsque [couches SDK](/windows/desktop/direct3d11/overviews-direct3d-11-devices-layers) est activé et les données collectées à partir de l’état interne de l’outil de suivi. Une fois terminé, vous verrez plusieurs colonnes de données :
+Cliquez sur le bouton **exécuter la validation** dans le coin supérieur gauche pour lancer l’analyse.  La réalisation de cette opération peut prendre plusieurs minutes en fonction de la complexité du cadre.  Les données qui s’affichent ici sont une combinaison de deux sources : les messages que D3D lui-même émet quand les [couches du SDK](/windows/desktop/direct3d11/overviews-direct3d-11-devices-layers) sont activées et les données collectées à partir du suivi de l’état interne de l’outil. Une fois l’opération terminée, plusieurs colonnes de données s’affichent :
 
 | **Colonne** | **Description** |
 |------------| - |
-| ID d'événement | ID qui est mappé à une entrée dans le [liste des événements](graphics-event-list.md) fenêtre. |
-| Gravité | Endommagement, erreur, avertissement, informations ou Message. |
-| Category | Application définie et divers, l’initialisation, nettoyage, Compilation, création de l’état, paramètre d’état, obtention de l’état, l’exécution, Manipulation des ressources, nuanceur, redondante ou inutilisée. |
-| Message | Le message associé à l’événement. |
-| Événement | L’événement associé à l’erreur ou l’avertissement. |
+| ID d'événement | ID qui correspond à une entrée dans la fenêtre [liste des événements](graphics-event-list.md) . |
+| Gravité | Endommagement, erreur, avertissement, information ou message. |
+| Category | Application définie, divers, initialisation, nettoyage, compilation, création d’État, paramètre d’État, obtention d’État, exécution, manipulation de ressources, nuanceur, redondant et inutilisé. |
+| Message | Message associé à l’événement. |
+| événement | Événement associé à l’erreur ou à l’avertissement. |
 
 ## <a name="see-also"></a>Voir aussi
 [Graphics Diagnostics (débogage DirectX Graphics)](visual-studio-graphics-diagnostics.md)

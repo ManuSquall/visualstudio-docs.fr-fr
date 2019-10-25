@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96b24dac472525a711073eccf41355ddb6f10611
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7e06acf045ce1893762d5c898752dd6bc40de50a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554233"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744990"
 ---
 # <a name="idiaaddressmap"></a>IDiaAddressMap
-Permet de contrôler comment le SDK DIA calcule les adresses virtuelles virtuels et relatifs pour les objets de débogage.
+Permet de contrôler la façon dont le kit de développement logiciel (SDK) DIA calcule les adresses virtuelles et virtuelles pour les objets de débogage.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,27 +33,27 @@ IDiaAddressMap : IUnknown
 
 |Méthode|Description|
 |------------|-----------------|
-|[IDiaAddressMap::get_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-addressmapenabled.md)|Indique si un mappage d’adresse a été établi pour une session particulière.|
-|[IDiaAddressMap::put_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md)|Spécifie si le mappage d’adresses doit être utilisé pour traduire les adresses de symbole.|
-|[IDiaAddressMap::get_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md)|Indique si le calcul et l’utilisation d’adresses virtuelles relatives est activé.|
-|[IDiaAddressMap::put_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md)|Permet au client activer ou désactiver le calcul d’adresses virtuelles relatives.|
+|[IDiaAddressMap::get_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-addressmapenabled.md)|Indique si un mappage d’adresses a été établi pour une session particulière.|
+|[IDiaAddressMap::put_addressMapEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md)|Spécifie si le mappage d’adresses doit être utilisé pour traduire les adresses de symboles.|
+|[IDiaAddressMap::get_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md)|Indique si le calcul et l’utilisation des adresses virtuelles relatives sont activés.|
+|[IDiaAddressMap::put_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-put-relativevirtualaddressenabled.md)|Permet au client d’activer ou de désactiver le calcul d’adresses virtuelles relatives.|
 |[IDiaAddressMap::get_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-get-imagealign.md)|Récupère l’alignement de l’image actuelle.|
 |[IDiaAddressMap::put_imageAlign](../../debugger/debug-interface-access/idiaaddressmap-put-imagealign.md)|Définit l’alignement de l’image.|
-|[IDiaAddressMap::set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)|Définit l’image en-têtes pour la traduction d’adresses virtuelles relatives.|
+|[IDiaAddressMap::set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)|Définit les en-têtes d’image pour activer la traduction d’adresses virtuelles relatives.|
 |[IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md)|Fournit un mappage d’adresses pour prendre en charge les traductions de disposition d’image.|
 
 ## <a name="remarks"></a>Notes
- Le contrôle fourni par cette interface est encapsulé dans deux jeux de données que vous fournissez : en-têtes de l’image et de mappages d’adresses. La plupart des clients utilisent le [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) méthode pour rechercher les informations de débogage appropriées pour une image et la méthode peuvent découvrir généralement toutes les données les en-têtes et les mappages nécessaires lui-même. Toutefois, certains clients implémentent spécialisées de traitement et de recherche de données. Ces clients utilisent les méthodes de la `IDiaAddressMap` interface pour fournir le DIA SDK avec les résultats de recherche.
+ Le contrôle fourni par cette interface est encapsulé dans deux jeux de données que vous fournissez : des en-têtes d’images et des mappages d’adresses. La plupart des clients utilisent la méthode [IDiaDataSource :: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) pour rechercher les informations de débogage appropriées pour une image et la méthode peut généralement découvrir tous les en-têtes nécessaires et mapper les données elles-mêmes. Toutefois, certains clients implémentent un traitement spécialisé et recherchent des données. Ces clients utilisent les méthodes de l’interface `IDiaAddressMap` pour fournir le kit de développement logiciel (SDK) DIA avec les résultats de la recherche.
 
-## <a name="notes-for-callers"></a>Notes de publication pour les appelants
- Cette interface est disponible à partir de l’objet de session DIA. Le client appelle le `QueryInterface` méthode sur DIA objet interface de session, généralement [IDiaSession](../../debugger/debug-interface-access/idiasession.md), pour récupérer le `IDiaAddressMap` interface.
+## <a name="notes-for-callers"></a>Notes pour les appelants
+ Cette interface est disponible à partir de l’objet de session DIA. Le client appelle la méthode `QueryInterface` sur l’interface d’objet de session DIA, généralement [IDiaSession](../../debugger/debug-interface-access/idiasession.md), pour récupérer l’interface `IDiaAddressMap`.
 
-## <a name="requirements"></a>Configuration requise
- En-tête : Dia2.h
+## <a name="requirements"></a>spécifications
+ En-tête : Dia2. h
 
- Bibliothèque : diaguids.lib
+ Bibliothèque : diaguids. lib
 
- DLL : msdia80.dll
+ DLL : Msdia80. dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Interfaces (SDK Debug Interface Access)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)

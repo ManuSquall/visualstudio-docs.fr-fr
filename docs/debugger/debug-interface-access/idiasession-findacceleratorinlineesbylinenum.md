@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12a2f23c42de99e0ea9a9d6c50e2d9aabed589d4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6d08168a83b9bb635fd6a0e22dc22f91a454001f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839457"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742319"
 ---
 # <a name="idiasessionfindacceleratorinlineesbylinenum"></a>IDiaSession::findAcceleratorInlineesByLinenum
-Retourne une énumération de symboles pour les frames en ligne qui correspondent à l’emplacement source spécifié.
+Retourne une énumération de symboles pour les frames inclus qui correspondent à l’emplacement source spécifié.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -35,26 +35,26 @@ HRESULT findAcceleratorInlineeLinesByName ( 
 #### <a name="parameters"></a>Paramètres
  `parent`
 
-[in] Un `IDiaSymbol` qui correspond à la fonction de stub accélérateur qui doit être recherché.
+dans @No__t_0 qui correspond à la fonction stub d’accélérateur dans laquelle la recherche doit être effectuée.
 
  `file`
 
-[in] Le `IDiaSourceFile` de l’emplacement source.
+dans @No__t_0 de l’emplacement source.
 
  `linenum`
 
-[in] Le numéro de ligne de l’emplacement source.
+dans Numéro de ligne de l’emplacement source.
 
  `colnum`
 
-[in] Le numéro de colonne de l’emplacement source.
+dans Numéro de colonne de l’emplacement source.
 
  `ppResult`
 
-[out] Un pointeur vers un `IDiaEnumLineNumbers` pointeur d’interface qui est initialisé avec le résultat.
+à Pointeur vers un pointeur d’interface `IDiaEnumLineNumbers` qui est initialisé avec le résultat.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne un code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1dcfd72d7cd4cca527c2318b0c3c412020457e8e
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 923c4558429927d95e333ff34ed136fdcf90ba4b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64821020"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739196"
 ---
-# <a name="idiasymbolgettargetsection"></a>IDiaSymbol::get_targetSection
-Récupère la section de l’adresse d’une cible de conversion de code.
+# <a name="idiasymbolget_targetsection"></a>IDiaSymbol::get_targetSection
+Récupère la section d’adresse d’une cible de thunk.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,13 +33,13 @@ HRESULT get_targetSection ( 
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-[out] Partie de la section d’une adresse de cible de conversion de code.
+à Partie de section d’une adresse cible de thunk.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
-> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> Une valeur de retour de `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

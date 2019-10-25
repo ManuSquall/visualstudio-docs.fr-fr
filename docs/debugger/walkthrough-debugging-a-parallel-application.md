@@ -22,14 +22,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dcc63eef048dd1e4ae205214ac62f8aa04d8a824
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: b2213da69561e8868c158a3b2cbcaa8efc6adfaf
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71252516"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72728598"
 ---
-# <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>Procédure pas à pas : Débogage d’une application parallèle dans Visual Studio (C#, Visual Basic, C++)
+# <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>Procédure pas à pas : débogage d’une application parallèle dansC#Visual Studio ( C++, Visual Basic,)
 
 Cette procédure pas à pas indique comment utiliser les fenêtres **Tâches parallèles** et **Piles parallèles** pour déboguer une application parallèle. Ces fenêtres vous aident à comprendre et à vérifier le comportement au moment de l’exécution du code qui utilise la [bibliothèque parallèle de tâches (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) ou le [Runtime d’accès concurrentiel](/cpp/parallel/concrt/concurrency-runtime). Cette procédure pas à pas fournit un exemple de code qui comporte des points d'arrêt intégrés. Une fois le code arrêté, la procédure pas à pas indique comment utiliser les fenêtres **Tâches parallèles** et **Piles parallèles** pour l’examiner.
 
@@ -45,7 +45,7 @@ Cette procédure pas à pas indique comment utiliser les fenêtres **Tâches par
 
 - Comment les fenêtres gèrent l'échelle avec les fonctionnalités de regroupement, de zoom et autres.
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Configuration requise
  Cette procédure pas à pas suppose que **uniquement mon code** est activé (il est activé par défaut dans les versions plus récentes de Visual Studio). Dans le menu **Outils**, cliquez sur **Options**, développez le nœud **Débogage**, sélectionnez **Général**, puis **Activer Uniquement mon code (Managé uniquement)** . Si vous ne définissez pas cette fonctionnalité, vous pouvez quand même effectuer cette procédure pas à pas, mais vos résultats peuvent différer de ceux des illustrations.
 
 ## <a name="c-sample"></a>Exemple C#
@@ -244,7 +244,7 @@ Cette procédure pas à pas indique comment utiliser les fenêtres **Tâches par
 
      ![Deux tâches en attente dans la fenêtre tâches](../debugger/media/pdb_walkthrough_7.png "PDB_Walkthrough_7")
 
-     La tâche 4, ensuite, attend un gestionnaire possédé par le thread assigné à la tâche 2. (Cliquez avec le bouton droit sur la ligne d’en-tête et choisissez **colonnes** > **affectation de thread** pour afficher la valeur d’affectation de thread pour la tâche 2).
+     La tâche 4, ensuite, attend un gestionnaire possédé par le thread assigné à la tâche 2. (Cliquez avec le bouton droit sur la ligne d’en-tête et choisissez **colonnes**  >  l'**affectation de threads** pour afficher la valeur d’affectation de thread pour la tâche 2).
 
      ![Tâche en attente et info-bulle dans la fenêtre tâches](../debugger/media/pdb_walkthrough_7a.png "PDB_Walkthrough_7A")
 
@@ -316,6 +316,6 @@ Cette procédure pas à pas indique comment utiliser les fenêtres **Tâches par
 - [Présentation du débogueur](../debugger/debugger-feature-tour.md)
 - [Débogage du code managé](../debugger/debugging-managed-code.md)
 - [Programmation parallèle](/dotnet/standard/parallel-programming/index)
-- [Le runtime d’accès concurrentiel](/cpp/parallel/concrt/concurrency-runtime)
+- [Runtime d’accès concurrentiel](/cpp/parallel/concrt/concurrency-runtime)
 - [Utilisation de la fenêtre Piles parallèles](../debugger/using-the-parallel-stacks-window.md)
 - [Utilisation de la fenêtre Tâches](../debugger/using-the-tasks-window.md)

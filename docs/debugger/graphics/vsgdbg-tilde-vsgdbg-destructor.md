@@ -1,5 +1,5 @@
 ---
-title: 'VsgDbg :: ~ VsgDbg (destructeur) | Microsoft Docs'
+title: 'Vsgdbg, :: ~ Vsgdbg, (destructeur) | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 7a3b97fb-d344-4df7-b195-9347d1edfcf7
@@ -8,15 +8,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64d2ce58a0a543a6bccfca4d96ff57915d45ce49
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dcc518e649732f6774259efed0965a9898e0fb2d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62848249"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72734797"
 ---
 # <a name="vsgdbgvsgdbg-destructor"></a>VsgDbg::~VsgDbg, destructeur
-Détruit une instance de la `VsgDbg` classe. Si les informations graphiques sont activement en cours d’enregistrement, le fichier journal de graphisme est finalisé et fermé, et les ressources qui ont été utilisés lors de la capture activement les informations graphiques sont libérées.
+Détruit une instance de la classe `VsgDbg`. Si des informations graphiques sont activement enregistrées, le fichier journal de graphisme est finalisé et fermé, et les ressources qui ont été utilisées lors de la capture active des informations graphiques sont publiées.
 
 ## <a name="syntax"></a>Syntaxe
 

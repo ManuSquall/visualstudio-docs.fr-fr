@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99d549a0edc56d48d686424c35f22fc7ea74438b
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 49cf159501e3f582010d514a586151e0626fc8f7
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62841183"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738969"
 ---
-# <a name="idiasymbolgetunmodifiedtypeid"></a>IDiaSymbol::get_unmodifiedTypeId
+# <a name="idiasymbolget_unmodifiedtypeid"></a>IDiaSymbol::get_unmodifiedTypeId
 Récupère l’ID du type d’origine (non modifié).
 
 ## <a name="syntax"></a>Syntaxe
@@ -30,10 +30,10 @@ HRESULT get_unmodifiedTypeId(
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-[out] Un pointeur vers un `DWORD` qui contient le code.
+à Pointeur vers un `DWORD` qui contient l’ID.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

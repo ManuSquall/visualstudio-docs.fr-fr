@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c47b552d2d9246fcf7f0982a84d8c301238cf65d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 07fddc9729063009181e3855a30fd4ee825f14d9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832693"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743763"
 ---
-# <a name="idiaenumtablesgetnewenum"></a>IDiaEnumTables::get__NewEnum
-Récupère le <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> version de cet énumérateur.
+# <a name="idiaenumtablesget__newenum"></a>IDiaEnumTables::get__NewEnum
+Récupère la version <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> de cet énumérateur.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,10 +33,10 @@ HRESULT get__NewEnum ( 
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-[out] Retourne le `IUnknown` interface qui représente le <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> version de cet énumérateur.
+à Retourne l’interface `IUnknown` qui représente la version <xref:System.Runtime.InteropServices.ComTypes.IEnumVARIANT> de cet énumérateur.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne un code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)

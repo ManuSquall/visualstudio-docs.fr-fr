@@ -1,5 +1,5 @@
 ---
-title: À propos de la fenêtre Registres | Microsoft Docs
+title: À propos de la fenêtre registres | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df01776b5a7f2437c704c2b389c7d0929be5901c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4deaf03013b6e28ea02e6ec7412bd23a05f1b87e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852270"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738251"
 ---
-# <a name="about-the-registers-window-in-visual-studio-c-c-visual-basic-f"></a>À propos de la fenêtre registres dans Visual Studio (C#, C++, Visual Basic, F#)
+# <a name="about-the-registers-window-in-visual-studio-c-c-visual-basic-f"></a>À propos de la fenêtre registres dans Visual StudioC#( C++,, Visual Basic F#,)
 
 La fenêtre **Registres** est disponible uniquement si le débogage au niveau des adresses est activé dans la boîte de dialogue **Options**, nœud **Débogage**.
 
@@ -40,30 +40,30 @@ La fenêtre **Registres** est disponible uniquement si le débogage au niveau de
 
  Pour plus d'informations sur l'affichage de la fenêtre **Registres**, consultez [Utilisation de la fenêtre Registres](../debugger/how-to-use-the-registers-window.md).
 
- Lorsque vous examinez le **inscrit** fenêtre, vous verrez des entrées telles que `EAX = 003110D8`.
+ Lorsque vous examinez la fenêtre **registres** , vous verrez des entrées telles que `EAX = 003110D8`.
 
- Le symbole à gauche de la `=` signe est le nom du Registre, `EAX`, dans ce cas. Le nombre à droite du signe `=` représente le contenu du registre.
+ Le symbole situé à gauche du signe `=` est le nom du Registre, `EAX`, dans ce cas. Le nombre à droite du signe `=` représente le contenu du registre.
 
  La fenêtre **Registres** vous permet de faire plus que simplement afficher le contenu d'un registre. Lorsque vous êtes en mode arrêt dans du code natif, vous pouvez cliquer sur le contenu d'un Registre et modifier la valeur. Cette opération ne doit pas être réalisée à l'aveuglette. Sauf si vous comprenez le Registre que vous êtes en train de modifier et les données qu'il contient, la modification inconsidérée peut provoquer un incident du programme ou avoir d'autres conséquences non désirées. Malheureusement, l'explication détaillée des jeux de registres des différents processeurs Intel et compatibles va bien au-delà de l'objet de cette brève introduction.
 
-## <a name="register-groups"></a>Groupes de registres
+## <a name="register-groups"></a>Inscrire des groupes
 
 Pour des raisons de clarté, la fenêtre **Registres** classe les registres par groupes. Si vous cliquez avec le bouton droit sur la fenêtre **Registres**, un menu contextuel contenant une liste de groupes s'affiche. Vous pouvez afficher ou masquer des groupes selon vos besoins.
 
-## <a name="register-flags"></a>Inscrire des indicateurs
+## <a name="register-flags"></a>Indicateurs d’inscription
 
-Pour les processeurs Intel x86, vous pouvez voir les indicateurs suivants dans le **inscrit** fenêtre. Pendant une session de débogage, vous pouvez également modifier ces indicateurs.
+Pour les processeurs Intel x86, les indicateurs suivants peuvent s’afficher dans la fenêtre **registres** . Pendant une session de débogage, vous pouvez également modifier ces indicateurs.
 
 |Indicateur|Valeur définie|
 |-|-|
 |Dépassement|OV = 1|
-|Sens|UP = 1|
-|Interrupt|EI = 1|
+|Sens|HAUT = 1|
+|Suspendre|AE = 1|
 |Sign|PL = 1|
 |Zéro|ZR = 1|
-|Report auxiliaire|AC = 1|
+|Transport auxiliaire|AC = 1|
 |Parité|PE = 1|
-|Carry|CY = 1|
+|Emporter|CY = 1|
 
 ## <a name="see-also"></a>Voir aussi
 - [Guide pratique pour utiliser la fenêtre Registres](../debugger/how-to-use-the-registers-window.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Avertissement de sécurité : Le débogueur doit exécuter une commande non approuvée | Microsoft Docs'
+title: 'Avertissement de sécurité : le débogueur doit exécuter une commande non approuvée | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,14 +15,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c4ab45feeae409a1951e1a57e964eaaa5963896
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b0922461c4ca5366e6d1dc215f5711f5566d00ae
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62902582"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72729751"
 ---
-# <a name="security-warning-debugger-must-execute-untrusted-command"></a>Avertissement de sécurité : le débogueur doit exécuter une commande non approuvée
+# <a name="security-warning-debugger-must-execute-untrusted-command"></a>Avertissement de sécurité : Le débogueur doit exécuter cette commande non approuvée
 Cette boîte de dialogue d'avertissement apparaît lorsque vous utilisez le serveur source. Elle indique que la commande que le débogueur a besoin d'exécuter pour obtenir le code source n'est pas dans la liste de commandes de confiance pour le serveur source contenue dans le fichier srcsvr.ini. Si c'est une commande valide, vous pouvez l'ajouter au fichier srcsvr.ini. Sinon, vous ne devez pas l'exécuter. Pour plus d’informations, consultez [Spécifier les fichiers de symboles (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
 ## <a name="message-text"></a>Texte du message
@@ -33,11 +33,11 @@ Cette boîte de dialogue d'avertissement apparaît lorsque vous utilisez le serv
  **Souhaitez-vous exécuter cette commande ?**
 
 ## <a name="uielement-list"></a>Liste des éléments d’interface
- Commande de zone de texte à partir du fichier .pdb à exécuter.
+ Commande de zone de texte à partir du fichier. pdb à exécuter.
 
- Exécution d’autoriser la commande à exécuter.
+ Exécutez autoriser l’exécution de la commande.
 
- Ne pas exécuter d’arrêter l’exécution de commande et le téléchargement du fichier à partir du serveur Source.
+ N’exécutez pas arrêter l’exécution de la commande et le téléchargement du fichier à partir du serveur source.
 
 ## <a name="see-also"></a>Voir aussi
 - [Spécifier les fichiers de symbole (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)

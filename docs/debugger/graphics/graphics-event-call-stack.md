@@ -1,5 +1,5 @@
 ---
-title: Pile des appels événement Graphics | Microsoft Docs
+title: Pile des appels des événements Graphics | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,19 +10,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cdaa6cdd3275fa7fda8df33cbdb09a8edae158c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c221a572264bf6a6aaed9edbec66fb3c0c3ff4b9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62848774"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72735510"
 ---
 # <a name="graphics-event-call-stack"></a>Pile des appels des événements Graphics
 La pile des appels des événements Graphics dans Visual Studio Graphics Analyzer vous permet de mapper la relation entre les événements graphiques problématiques et le code source de votre application.
 
  Voici la fenêtre Pile des appels des événements :
 
- ![La pile des appels qui précède un événement DrawIndexed. ](media/gfx_diag_demo_graphics_event_call_stack_orientation.png "gfx_diag_demo_graphics_event_call_stack_orientation")
+ ![La pile des appels précédant un événement DrawIndexed.](media/gfx_diag_demo_graphics_event_call_stack_orientation.png "gfx_diag_demo_graphics_event_call_stack_orientation")
 
 ## <a name="understanding-the-graphics-event-call-stack"></a>Présentation de la pile des appels des événements Graphics
  Vous pouvez utiliser la fenêtre Pile des appels des événements pour comprendre le flux d'exécution qui a conduit à un événement Direct3D particulier. Elle ressemble à la fenêtre de pile des appels de Visual Studio. Toutefois, au lieu d’afficher la pile des appels du thread actif dans une application en cours d’exécution, elle affiche la pile des appels telle qu’elle existait quand l’événement Direct3D sélectionné s’est produit. À partir de la pile des appels des événements, vous pouvez accéder au site d'appel de l'événement Direct3D sélectionné pour inspecter le code environnant.
@@ -34,7 +34,7 @@ La pile des appels des événements Graphics dans Visual Studio Graphics Analyze
 
 |Colonne|Description|
 |------------|-----------------|
-|**Name**|Symbole qui identifie de manière unique la fonction qui contient le site d'appel. Le symbole de débogage de la fonction est affiché quand il est disponible. Par ailleurs, le décalage de fonction est affiché.|
+|**Nom**|Symbole qui identifie de manière unique la fonction qui contient le site d'appel. Le symbole de débogage de la fonction est affiché quand il est disponible. Par ailleurs, le décalage de fonction est affiché.|
 |**Fichier**|Nom de fichier du fichier de code source ou du fichier bibliothèque qui contient le site d'appel.|
 |**Emplacement**|Numéro de ligne du site d'appel.|
 
@@ -42,4 +42,4 @@ La pile des appels des événements Graphics dans Visual Studio Graphics Analyze
  Pour comprendre l'événement graphique sélectionné, vous aurez peut-être besoin d'informations sur les objets Direct3D auxquels il est associé. La fenêtre **Pile des appels des événements Graphics** fournit des liens vers ces informations.
 
 ## <a name="see-also"></a>Voir aussi
-- [Procédure pas à pas : objets manquants en raison de Vertex Shader](walkthrough-missing-objects-due-to-vertex-shading.md)
+- [Procédure pas à pas : objets manquants en raison de l’ombrage de vertex](walkthrough-missing-objects-due-to-vertex-shading.md)

@@ -1,6 +1,6 @@
 ---
 title: Événements de build, page du Concepteur de projets (C#)
-ms.date: 11/04/2016
+ms.date: 10/17/2019
 ms.technology: vs-ide-compile
 ms.topic: reference
 f1_keywords:
@@ -16,16 +16,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ba429c116d44a5d79d935fe3a1ad07b6d5f36f79
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
-ms.translationtype: HT
+ms.openlocfilehash: cca0ec0491d7a2c513f8bc52acaadf7c80d7fd22
+ms.sourcegitcommit: 58000baf528da220fdf7a999d8c407a4e86c1278
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461853"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72789821"
 ---
 # <a name="build-events-page-project-designer-c"></a>Événements de build, page du Concepteur de projets (C#)
 
-Utilisez la page **Événements de build** du **Concepteur de projets** pour spécifier des instructions de configuration de build. Vous pouvez également spécifier les conditions dans lesquelles les événements post-build sont exécutés. Pour plus d'informations, voir [Procédure : Spécifier des événements de build (C#)](../../ide/how-to-specify-build-events-csharp.md) et [Guide pratique pour spécifier des événements de build (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md).
+Utilisez la page **Événements de build** du **Concepteur de projets** pour spécifier des instructions de configuration de build. Vous pouvez également spécifier les conditions dans lesquelles les événements post-build sont exécutés. Pour plus d’informations, consultez [Comment : spécifier des événements deC#Build ()](../../ide/how-to-specify-build-events-csharp.md) et [Comment : spécifier des événements de build (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md).
 
 ## <a name="uielement-list"></a>Liste des éléments d’interface
 
@@ -61,9 +61,36 @@ Spécifie les conditions suivantes pour l’événement post-build à exécuter,
 |**En cas de build réussie**|L’événement post-build est exécuté si la build réussit. Ainsi, l’événement est exécuté même pour un projet à jour, à condition que la build soit un succès.|
 |**Lorsque la build met à jour la sortie du projet**|L’événement post-build n’est exécuté que quand le fichier de sortie du compilateur (.exe ou .dll) est différent du fichier de sortie précédent. Ainsi, un événement post-build n’est pas exécuté si un projet est à jour.|
 
+## <a name="in-the-project-file"></a>Dans le fichier projet
+
+Dans les versions antérieures de Visual Studio, lorsque vous modifiez le paramètre **PreBuildEvent** ou **POSTBUILDEVENT** dans l’IDE, Visual studio ajoute une propriété `PreBuildEvent` ou `PostBuildEvent` au fichier projet. Par exemple, si votre paramètre de ligne de commande **PreBuildEvent** dans l’IDE est le suivant :
+
+```input
+"$(ProjectDir)PreBuildEvent.bat" "$(ProjectDir)..\" "$(ProjectDir)" "$(TargetDir)"
+```
+
+le paramètre du fichier projet est alors :
+
+```xml
+<PropertyGroup>
+    <PreBuildEvent>"$(ProjectDir)PreBuildEvent.bat" "$(ProjectDir)..\" "$(ProjectDir)" "$(TargetDir)" />
+</PropertyGroup>
+```
+
+Visual Studio 2019 (et Visual Studio 2017 dans les mises à jour plus récentes) ajoute une cible MSBuild nommée `PreBuild` ou `PostBuild` pour les paramètres **PreBuildEvent** et **PostBuildEvent** . Par exemple, dans l’exemple précédent, Visual Studio génère désormais le code suivant :
+
+```xml
+<Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="&quot;$(ProjectDir)PreBuildEvent.bat&quot; &quot;$(ProjectDir)..\&quot; &quot;$(ProjectDir)&quot; &quot;$(TargetDir)&quot;" />
+</Target>
+```
+
+> [!NOTE]
+> Ces modifications de fichier projet ont été apportées pour prendre en charge les projets de style SDK. Si vous migrez un fichier projet de l’ancien format vers le format de style SDK manuellement, vous devez supprimer les propriétés `PreBuildEvent` et `PostBuildEvent` et les remplacer par des cibles `PreBuild` et `PostBuild`, comme indiqué dans le code précédent. Pour savoir comment savoir si votre projet est un projet de type SDK, consultez vérifier le [format du projet](/nuget/resources/check-project-format).
+
 ## <a name="see-also"></a>Voir aussi
 
-- [Guide pratique pour Spécifier des événements de build (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
+- [Guide pratique pour spécifier des événements de build (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
 - [Guide pratique pour spécifier des événements de build (C#)](../../ide/how-to-specify-build-events-csharp.md)
 - [Informations de référence sur les propriétés de projet](../../ide/reference/project-properties-reference.md)
 - [Compilation et génération](../../ide/compiling-and-building-in-visual-studio.md)

@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc7d4ef8e281cd56b7a585d516cd5d48028a00f8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: def432c5c2861716b4b3fb6e2f93f20a93a54a28
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653703"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748537"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Propriétés de stockage calculées et personnalisées
 Toutes les propriétés de domaine dans un langage spécifique à un domaine (DSL) peuvent être affichées à l’utilisateur sur le diagramme et dans l’Explorateur de langage, et être accessibles par le code du programme. Toutefois, les propriétés diffèrent dans la façon dont leurs valeurs sont stockées.

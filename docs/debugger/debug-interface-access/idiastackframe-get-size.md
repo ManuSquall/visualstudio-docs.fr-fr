@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6728418e848941bb537f5bec4cb4f772c73485c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 04fec0f24cd8d905b41e8eb142ab3f1f37023860
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832051"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741596"
 ---
-# <a name="idiastackframegetsize"></a>IDiaStackFrame::get_size
+# <a name="idiastackframeget_size"></a>IDiaStackFrame::get_size
 Récupère la taille du frame de pile en octets.
 
 ## <a name="syntax"></a>Syntaxe
@@ -33,10 +33,10 @@ HRESULT get_size ( 
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-[out] Retourne la taille du frame de pile en octets.
+à Retourne la taille du frame de pile en octets.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si la propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si la propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

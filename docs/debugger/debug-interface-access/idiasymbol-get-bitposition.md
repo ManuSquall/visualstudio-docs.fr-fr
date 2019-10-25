@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7752e5f6bc7cb09fb80668aed8c3f8bc2bbeb312
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 709bb7e57ee6260ffcd7d8b1421526d3dd41052a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64813738"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740904"
 ---
-# <a name="idiasymbolgetbitposition"></a>IDiaSymbol::get_bitPosition
-Récupère la position de bit d’emplacement. Utilisé lorsque le [LocationType (énumération)](../../debugger/debug-interface-access/locationtype.md) est `LocIsBitField`.
+# <a name="idiasymbolget_bitposition"></a>IDiaSymbol::get_bitPosition
+Récupère la position de bit de l’emplacement. Utilisé lorsque l' [énumération LocationType (](../../debugger/debug-interface-access/locationtype.md) est `LocIsBitField`.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,20 +33,20 @@ HRESULT get_bitPosition ( 
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-[out] Retourne la position de bit de l’emplacement.
+à Retourne la position de bit de l’emplacement.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
-> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> Une valeur de retour de `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>spécifications
 
-|Prérequis|Description|
+|Exigence|Description|
 |-----------------|-----------------|
 |En-tête :|dia2.h|
-|Version :|DIA SDK v7.0|
+|Version :|DIA SDK v 7.0|
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14832698e186e23b33862ccb1c9f22f3792a6300
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: f0eeffba743d7fae1d473c45eb350fbfc8bcd0b9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64793781"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739568"
 ---
-# <a name="idiasymbolgetoffsetinudt"></a>IDiaSymbol::get_offsetInUdt
+# <a name="idiasymbolget_offsetinudt"></a>IDiaSymbol::get_offsetInUdt
 Récupère le décalage au début d’un type défini par l’utilisateur (UDT) d’un membre dans l’UDT.
 
 ## <a name="syntax"></a>Syntaxe
@@ -33,23 +33,23 @@ HRESULT get_offsetInUdt( 
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-[out] Retourne le décalage en octets de l’emplacement du symbole.
+à Retourne le décalage en octets de l’emplacement du symbole.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
-> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> Une valeur de retour de `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
 ## <a name="remarks"></a>Notes
- Cette fonction est utilisée uniquement dans les enregistrements locales dans une version optimisée.
+ Cette fonction est utilisée uniquement dans les enregistrements locaux dans une build optimisée.
 
-## <a name="requirements"></a>Configuration requise
- En-tête : Dia2.h
+## <a name="requirements"></a>spécifications
+ En-tête : Dia2. h
 
- Bibliothèque : diaguids.lib
+ Bibliothèque : diaguids. lib
 
- DLL : msdia100.dll
+ DLL : msdia100. dll
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

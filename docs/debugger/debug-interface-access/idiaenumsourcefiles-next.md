@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29424c2b12884cae7f803a46e15f7183d9690d96
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 526c857acbe1283e16312355c181c56c67e19883
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829626"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744081"
 ---
 # <a name="idiaenumsourcefilesnext"></a>IDiaEnumSourceFiles::Next
 Récupère un nombre spécifié de fichiers sources dans la séquence d’énumération.
@@ -35,18 +35,18 @@ HRESULT Next ( 
 #### <a name="parameters"></a>Paramètres
  celt
 
-[in] Le nombre de fichiers sources dans l’énumérateur à récupérer.
+dans Nombre de fichiers sources dans l’énumérateur à récupérer.
 
  rgelt
 
-[out] Un tableau qui doit être rempli avec le [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) les objets qui représentent les fichiers source souhaitée.
+à Tableau à remplir avec les objets [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) qui représentent les fichiers sources souhaités.
 
  pceltFetched
 
-[out] Retourne le nombre de fichiers sources dans l’énumérateur extraite.
+à Retourne le nombre de fichiers sources dans l’énumérateur extrait.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si aucun fichier source plus. Sinon, retourne un code d'erreur.
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` s’il n’y a plus de fichiers sources. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)

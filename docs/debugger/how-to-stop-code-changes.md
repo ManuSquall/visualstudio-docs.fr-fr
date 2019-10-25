@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Arrêter des modifications de Code | Microsoft Docs'
+title: 'Comment : arrêter des modifications de code | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33bc24aaea0f24d592a897bcc70f553cfaab9667
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 545599aa68da79aa7be41f0a2517049146cebc89
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388347"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72732456"
 ---
-# <a name="how-to-stop-code-changes"></a>Procédure : Arrêter des modifications de code
+# <a name="how-to-stop-code-changes"></a>Comment : arrêter des modifications de code
 Pendant que Modifier & Continuer est en train d'appliquer les modifications du code, vous pouvez arrêter l'opération.
 
 > [!CAUTION]
@@ -39,5 +39,5 @@ Pendant que Modifier & Continuer est en train d'appliquer les modifications du c
   Si vous choisissez cette option, aucune modification du code n'est validée.
 
 ## <a name="see-also"></a>Voir aussi
-- [Modifier & Continuer](../debugger/edit-and-continue.md)
+- [Modifier & Continuer](../debugger/edit-and-continue.md)
 - [Modifier & Continuer, Débogage, Boîte de dialogue Options](https://msdn.microsoft.com/library/bcew296c.aspx)

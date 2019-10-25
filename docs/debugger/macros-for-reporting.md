@@ -22,15 +22,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c92424275a1dff69863b81fbf8567fbc4b84499
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c2129db98293cef678527fb331992c6c5960d8f9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62905553"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72731385"
 ---
 # <a name="macros-for-reporting"></a>Macros pour la création de rapports
-Pour le débogage, vous pouvez utiliser la **_RPTn** et **_RPTFn** macros, définies dans CRTDBG. H, au lieu de l’utilisation de `printf` instructions. Vous n’avez pas besoin d’inclose dans **#ifdef**s, car elles disparaissent automatiquement dans votre version Release lorsque **_DEBUG** n’est pas définie.
+Pour le débogage, vous pouvez utiliser les macros **_RPTn** et **_RPTFn** , définies dans CRTDBG. H, pour remplacer l’utilisation des instructions `printf`. Vous n’avez pas besoin de les inverser dans **#ifdef**s, car ils disparaissent automatiquement dans votre version Release lorsque **_ DEBUG** n’est pas défini.
 
 |Macro|Description|
 |-----------|-----------------|
@@ -54,7 +54,7 @@ Pour le débogage, vous pouvez utiliser la **_RPTn** et **_RPTFn** macros, défi
 if (someVar > MAX_SOMEVAR) _RPTF2(_CRT_WARN, "In NameOfThisFunc( ), someVar= %d, otherVar= %d\n", someVar, otherVar );
 ```
 
-Vous constaterez peut-être qu’une application particulière nécessite des rapports de débogage que les macros distribuées avec la bibliothèque Runtime C ne fournissent pas. Dans ce cas, vous pouvez écrire une macro conçue spécialement pour répondre à vos besoins. Dans un de vos fichiers d’en-tête, par exemple, vous pourriez inclure un code semblable au suivant pour définir une macro intitulée **ALERT_IF2** :
+Vous constaterez peut-être qu’une application particulière nécessite des rapports de débogage que les macros fournies avec la bibliothèque Runtime C ne fournissent pas. Dans ce cas, vous pouvez écrire une macro conçue spécifiquement pour répondre à vos besoins. Dans un de vos fichiers d’en-tête, par exemple, vous pourriez inclure un code semblable au suivant pour définir une macro intitulée **ALERT_IF2** :
 
 ```cpp
 #ifndef _DEBUG                  /* For RELEASE builds */
@@ -70,14 +70,14 @@ Vous constaterez peut-être qu’une application particulière nécessite des ra
 #endif
 ```
 
- Un seul appel à **ALERT_IF2** peut effectuer toutes les fonctions de la **printf** code :
+ Un appel à **ALERT_IF2** peut effectuer toutes les fonctions du code **printf** :
 
 ```cpp
 ALERT_IF2(someVar > MAX_SOMEVAR, "OVERFLOW! In NameOfThisFunc( ),
 someVar=%d, otherVar=%d.\n", someVar, otherVar );
 ```
 
- Vous pouvez facilement modifier une macro personnalisée pour signaler plus ou moins d’informations vers différentes destinations. Cette approche est particulièrement utile dans la mesure que vos besoins de débogage évoluent.
+ Vous pouvez facilement modifier une macro personnalisée pour signaler plus ou moins d’informations à différentes destinations. Cette approche est particulièrement utile lorsque vos besoins de débogage évoluent.
 
 ## <a name="see-also"></a>Voir aussi
 - [Techniques de débogage CRT](../debugger/crt-debugging-techniques.md)

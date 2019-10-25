@@ -11,22 +11,22 @@ dev_langs:
 - jsharp
 - C++
 helpviewer_keywords:
-- MSBuild (Visual C++), ClangCompile task
-- ClangCompile task (MSBuild (Visual C++))
+- MSBuild (C++), ClangCompile task
+- ClangCompile task (MSBuild (C++))
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - multiple
-ms.openlocfilehash: 218ef07fa3b086a2240362011067bf526088d1f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 1bd1d749461c423d51e0f5b736563a9f9aa757c5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62569704"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72747339"
 ---
 # <a name="clangcompile-task"></a>Tâche ClangCompile
 
-Inclut l’outil Compilateur Visual C++, clang.exe, dans un wrapper.
+Encapsule l’outil C++ compilateur Microsoft, Clang. exe.
 
 ## <a name="parameters"></a>Paramètres
 
@@ -34,7 +34,7 @@ Le tableau ci-dessous décrit les paramètres de la tâche **ClangCompile**.
 
 |Paramètre|Description|
 |---------------|-----------------|
-|**AdditionalIncludeDirectories**|Paramètre de **chaîne[]** facultatif.<br/><br/>Spécifie un ou plusieurs répertoires à ajouter au chemin include. Si vous ajoutez plusieurs répertoires, séparez-les par des points-virgules.<br/><br/>Utilisez `-I[path]`.|
+|**AdditionalIncludeDirectories**|Paramètre de **chaîne[]** facultatif.<br/><br/>Spécifie un ou plusieurs répertoires à ajouter au chemin Include, séparés par des points-virgules s’il en existe plusieurs.<br/><br/>Utilisez `-I[path]`.|
 |**AdditionalOptions**|Paramètre de **chaîne** facultatif.|
 |**BufferSecurityCheck**|Paramètre de **chaîne** facultatif.<br/><br/>La vérification de la sécurité permet de détecter les saturations de mémoire tampon de pile, une tentative courante d’attaque contre la sécurité d’un programme. <br/><br/>Utilisez `fstack-protector`.|
 |**BuildingInIDE**|Paramètre **booléen** facultatif.|
@@ -51,7 +51,7 @@ Le tableau ci-dessous décrit les paramètres de la tâche **ClangCompile**.
 |**FunctionLevelLinking**|Paramètre **booléen** facultatif.<br/><br/>Permet au compilateur d’empaqueter des fonctions individuelles sous la forme de fonctions empaquetées (COMDATs). Requis avec l’option Modifier et Continuer.<br/><br/>Utilisez `ffunction-sections`.|
 |**GccToolChain**|Paramètre de **chaîne** facultatif.<br/><br/>Chemin du dossier de la chaîne d’outils Gcc.|
 |**GNUMode**|Paramètre **booléen** facultatif.<br/><br/>|
-|**MSCompatibility**|Paramètre **booléen** facultatif.<br/><br/>Activez la compatibilité complète Microsoft Visual C++.|
+|**MSCompatibility**|Paramètre **booléen** facultatif.<br/><br/>Activez la compatibilité C++ Microsoft complète.|
 |**MSCompatibilityVersion**|Paramètre de **chaîne** facultatif.<br/><br/>Valeur séparée par un point, qui représente le numéro de version du compilateur Microsoft à signaler dans _MSC_VER (0 = ne pas définir (valeur par défaut)).|
 |**MSExtensions**|Paramètre **booléen** facultatif.<br/><br/>Acceptez certaines constructions non standard prises en charge par le compilateur Microsoft.|
 |**MSCompilerVersion**|Paramètre de **chaîne** facultatif.<br/><br/>Numéro de version du compilateur Microsoft à signaler dans _MSC_VER (0 = ne pas définir (valeur par défaut)).|
@@ -59,7 +59,7 @@ Le tableau ci-dessous décrit les paramètres de la tâche **ClangCompile**.
 |**ObjectFileName**|Paramètre de **chaîne** facultatif.<br/><br/>Spécifie un nom de substitution pour le nom de fichier objet par défaut. Il peut s’agir d’un nom de fichier ou de répertoire.<br/><br/>Utilisez `/Fo[name]`.|
 |**OmitFramePointers**|Paramètre **booléen** facultatif.<br/><br/>Empêche la création des pointeurs de frame sur la pile des appels.|
 |**Optimization**|Paramètre de **chaîne** facultatif.<br/><br/>Indique le niveau d’optimisation pour l’application.<br/><br/>**Personnalisé**, optimisation personnalisée.<br/>**Désactivé**, désactivez l’optimisation (utilisez `O0`).<br/>**MinSize**, optimisez la taille (utilisez `Os`).<br/>**MaxSpeed**, optimisez la vitesse (utilisez `O2`).<br/>**Complet**, optimisations coûteuses (utilisez `O3`).|
-|**PositionIndependentCode**|Paramètre **booléen** facultatif.<br/><br/>Génère le code PIC (Position Independent Code) à utiliser dans une bibliothèque partagée.|
+|**PositionIndependentCode**|Paramètre **booléen** facultatif.<br/><br/>Générez du code PIC (Position Independent Code) à utiliser dans une bibliothèque partagée.|
 |**PrecompiledHeader**|Paramètre de **chaîne** facultatif.<br/><br/>Active la création ou l’utilisation d’un en-tête précompilé pendant la génération.|
 |**PrecompiledHeaderFile**|Paramètre de **chaîne** facultatif.<br/><br/>Spécifie le nom du fichier d’en-tête à utiliser pour le fichier d’en-tête précompilé. Ce fichier est également ajouté aux **Fichiers Include forcés** pendant la génération.|
 |**PrecompiledHeaderOutputFileDirectory**|Paramètre de **chaîne** facultatif.<br/><br/>Spécifie le répertoire de l’en-tête précompilé généré. Ce répertoire est également ajouté aux **Autres répertoires Include** pendant la génération.|
@@ -69,7 +69,7 @@ Le tableau ci-dessous décrit les paramètres de la tâche **ClangCompile**.
 |**RuntimeTypeInfo**|Paramètre **booléen** facultatif.<br/><br/>Ajoute le code permettant de vérifier les types d’objet C++ à l’exécution (informations de type au moment de l’exécution).<br/><br/>Utilisez `frtti`, `fno-rtti`.|
 |**ShowIncludes**|Paramètre **booléen** facultatif.<br/><br/>Affiche la liste des fichiers include avec les résultats de la compilation.<br/><br/>Utilisez `-H`.|
 |**Sources**|Paramètre **ITaskItem[]** obligatoire.|
-|**StrictAliasing**|Paramètre **booléen** facultatif.<br/><br/>Les règles d’alias les plus strictes sont utilisées. Un objet d’un type donné n’est jamais considéré comme résidant à la même adresse qu’un objet d’un autre type.|
+|**StrictAliasing**|Paramètre **booléen** facultatif.<br/><br/>Les règles d’alias les plus strictes sont utilisées. Un objet d’un type ne sera jamais considéré comme résidant à la même adresse qu’un objet d’un autre type.|
 |**Sysroot**|Paramètre de **chaîne** facultatif.<br/><br/>Chemin du dossier vers le répertoire racine pour les en-têtes et les bibliothèques.|
 |**TargetArch**|Paramètre de **chaîne** facultatif.<br/><br/>Architecture cible.|
 |**ThumbMode**|Paramètre de **chaîne** facultatif.<br/><br/>Générez du code qui s’exécute pour une microarchitecture Thumb. Applicable uniquement à l’architecture ARM.<br/><br/>**Thumb**, générez du code Thumb (utilisez `mthumb`).<br/>**ARM**, générez du code Arm (utilisez `marm`).<br/>**Désactivé**, option non applicable à la plateforme choisie.|

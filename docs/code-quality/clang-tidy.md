@@ -8,12 +8,12 @@ author: frozenpandaman
 ms.author: efessler
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 430d0e271f83332f7163c9c0c947f96756ca7a7d
-ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
+ms.openlocfilehash: e226ac6c83839474b9d8ac6be7fb57e376de4a4f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72165191"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745994"
 ---
 # <a name="using-clang-tidy-in-visual-studio"></a>Utilisation de Clang-Tidy dans Visual Studio
 
@@ -28,23 +28,23 @@ Clang-Tidy s’exécute après la réussite de la compilation ; vous devrez peu
 
 ## <a name="msbuild"></a>MSBuild
 
-Vous pouvez configurer Clang-tidy pour qu’il s’exécute dans le cadre de l’analyse du code et dans la génération sous**la page d'** analyse du **code** >  dans le fenêtre Propriétés de projet. Les options permettant de configurer l’outil se trouvent dans le sous-menu Clang-Tidy.
+Vous pouvez configurer Clang-tidy pour qu’il s’exécute dans le cadre de l’analyse du code et le générer sous la page **analyse du code**  > **général** dans le fenêtre Propriétés de projet. Les options permettant de configurer l’outil se trouvent dans le sous-menu Clang-Tidy.
 
-Pour plus d’informations, consultez [Guide pratique pour Définissez les propriétés d’analyse du codeC++ pour C/Projects @ no__t-1.
+Pour plus d’informations, consultez [Comment : définir les propriétés d’analyse du codeC++ pour les projets C/](../code-quality/how-to-set-code-analysis-properties-for-c-cpp-projects.md).
 
 ## <a name="cmake"></a>CMake
 
 Dans les projets CMake, vous pouvez configurer des contrôles Clang-Tidy dans `CMakeSettings.json`. Une fois ouvert, cliquez sur « modifier JSON » dans le coin supérieur droit de l’éditeur de paramètres de projet CMake. Les clés suivantes sont reconnues :
 
-- `enableMicrosoftCodeAnalysis`: Active l’analyse du code Microsoft
-- `enableClangTidyCodeAnalysis`: Active l’analyse Clang-Tidy
-- `clangTidyChecks`: Configuration Clang-Tidy, spécifiée sous la forme d’une liste séparée par des virgules, c’est-à-dire des vérifications à activer ou à désactiver
+- `enableMicrosoftCodeAnalysis` : active l’analyse du code Microsoft
+- `enableClangTidyCodeAnalysis` : active l’analyse Clang-Tidy
+- `clangTidyChecks` : Clang-Tidy configuration, spécifiée sous la forme d’une liste séparée par des virgules, c’est-à-dire des vérifications à activer ou à désactiver
 
 Si aucune des options « activer » n’est spécifiée, Visual Studio sélectionne l’outil d’analyse correspondant à l’ensemble d’outils de plateforme utilisé.
 
 ## <a name="warning-display"></a>Affichage de l’avertissement
 
-Clang-Tidy exécute les avertissements affichés dans le Liste d’erreurs et en tant que tildes dans l’éditeur sous les sections de code pertinentes. Utilisez la colonne « Category » de la Liste d’erreurs pour trier et organiser les avertissements Clang-Tidy. Vous pouvez configurer les avertissements dans l’éditeur en basculant sur le paramètre « Désactiver les tildes de l’analyse du code » sous **outils** > **options**.
+Clang-Tidy exécute les avertissements affichés dans le Liste d’erreurs et en tant que tildes dans l’éditeur sous les sections de code pertinentes. Utilisez la colonne « Category » de la Liste d’erreurs pour trier et organiser les avertissements Clang-Tidy. Vous pouvez configurer les avertissements dans l’éditeur en basculant sur le paramètre Désactiver les tildes de l’analyse du code sous **outils**  > **options**.
 
 ## <a name="clang-tidy-configuration"></a>Configuration de Clang-Tidy
 

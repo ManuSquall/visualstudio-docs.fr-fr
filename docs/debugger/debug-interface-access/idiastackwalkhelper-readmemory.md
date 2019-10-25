@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 530b6c3f6873724f8a8ca06ea4228b017de281f9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 57afd033b2d969a4ed57dc713b2c4266e0ead632
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62831804"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741363"
 ---
 # <a name="idiastackwalkhelperreadmemory"></a>IDiaStackWalkHelper::readMemory
 Lit un bloc de données à partir de l’image de l’exécutable en mémoire.
@@ -37,26 +37,26 @@ HRESULT readMemory( 
 #### <a name="parameters"></a>Paramètres
  `type`
 
-[in] Une valeur comprise entre le [MemoryTypeEnum (énumération)](../../debugger/debug-interface-access/memorytypeenum.md) énumération spécifiant le type de mémoire à lire.
+dans Valeur de l’énumération d' [énumération MemoryTypeEnum](../../debugger/debug-interface-access/memorytypeenum.md) qui spécifie le type de mémoire à lire.
 
  va
 
-[in] Adresse virtuelle dans l’image à partir duquel commencer la lecture.
+dans Adresse virtuelle de l’image à partir de laquelle commencer la lecture.
 
  `cbData`
 
-[in] La taille du tampon de données en octets.
+dans Taille de la mémoire tampon de données en octets.
 
  `pcbData`
 
-[out] Retourne le nombre d’octets réellement lus. Si `pbData` est `NULL`, puis il s’agit du nombre total d’octets de données disponibles.
+à Retourne le nombre d’octets réellement lus. Si `pbData` est `NULL`, il s’agit du nombre total d’octets de données disponibles.
 
  `pbData`
 
-[in, out] Une mémoire tampon est remplie avec la mémoire à lire.
+[in, out] Mémoire tampon qui est remplie avec la lecture de la mémoire.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne un code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

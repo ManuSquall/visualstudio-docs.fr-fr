@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 352315b518102c5b9576c19611522e87d0e67ffe
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5ede0f61d2cec78ac4981e487b72eb4d78508c98
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666903"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748162"
 ---
 # <a name="working-with-the-domain-specific-language-explorer"></a>Utilisation de l'Explorateur de langage spécifique à un domaine
 L' **Explorateur DSL** affiche plusieurs types d’informations dans une arborescence. Pour plus d’informations sur la plupart des éléments de l’Explorateur DSL, consultez [définition d’un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md).

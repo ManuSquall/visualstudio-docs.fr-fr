@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01c457947eb84859f2ce92378688dd03c624c86d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f646616fddc0e7727ef9e8e80d9c29fbcba6ebc0
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62837886"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741321"
 ---
 # <a name="idiastackwalkhelpersymbolforva"></a>IDiaStackWalkHelper::symbolForVA
 Récupère le symbole qui contient l’adresse virtuelle spécifiée.
@@ -34,14 +34,14 @@ HRESULT symbolForVA( 
 #### <a name="parameters"></a>Paramètres
  `va`
 
-[in] L’adresse virtuelle qui est contenue dans le symbole demandé. Le symbole doit être un `SymTagFunctionType` (une valeur comprise entre le [SymTagEnum (énumération)](../../debugger/debug-interface-access/symtagenum.md) énumération).
+dans Adresse virtuelle contenue dans le symbole demandé. Le symbole doit être un `SymTagFunctionType` (une valeur de l’énumération d' [énumération SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) ).
 
  `ppSymbol`
 
-[out] Un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objet qui représente le symbole à l’adresse spécifiée.
+à Objet [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) qui représente le symbole à l’adresse spécifiée.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne un code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

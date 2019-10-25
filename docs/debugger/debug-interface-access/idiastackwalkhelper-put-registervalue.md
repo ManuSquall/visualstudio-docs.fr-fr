@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59d076781e0f67ad9a2f2af02e7dc937042b0e71
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 619ed78584a9fe897b19d6ac2ffd4c28838c61ab
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62837925"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741370"
 ---
-# <a name="idiastackwalkhelperputregistervalue"></a>IDiaStackWalkHelper::put_registerValue
-Définit la valeur d’un Registre.
+# <a name="idiastackwalkhelperput_registervalue"></a>IDiaStackWalkHelper::put_registerValue
+Définit la valeur d’un registre.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -34,17 +34,17 @@ HRESULT put_registerValue ( 
 #### <a name="parameters"></a>Paramètres
  `index`
 
-[in] Une valeur comprise entre le [CV_HREG_e (énumération)](../../debugger/debug-interface-access/cv-hreg-e.md) énumération spécifiant le Registre pour écrire dans.
+dans Valeur de l’énumération d' [énumération CV_HREG_e](../../debugger/debug-interface-access/cv-hreg-e.md) qui spécifie le registre dans lequel écrire.
 
  `NewVal`
 
-[in] La nouvelle valeur de Registre.
+dans Nouvelle valeur de registre.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne un code d’erreur.
 
 ## <a name="remarks"></a>Notes
- En dépit de la taille de la valeur, une implémentation doit stocker uniquement ce que le Registre normalement conserve. Par exemple, un Registre de 8 bits contiendrait uniquement les 8-bits les plus bas de la valeur donnée.
+ En dépit de la taille de la valeur, une implémentation doit stocker uniquement ce que le registre contient normalement. Par exemple, un registre 8 bits contiendra uniquement les 8 bits les plus bas de la valeur donnée.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

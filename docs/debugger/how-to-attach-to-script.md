@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Attacher à un Script | Microsoft Docs'
+title: 'Comment : attacher à un script | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 993d1b3b6b4db6b435064a873142f563a950f4db
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9e4668cc991c4b46fb69d7ec6973ab4d8630e14b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63387856"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733945"
 ---
-# <a name="how-to-attach-to-script"></a>Procédure : attacher à un script
+# <a name="how-to-attach-to-script"></a>Comment : attacher à un script
 Cette rubrique explique comment attacher manuellement le débogueur Visual Studio à un fichier de script pour le débogage.
 
 ### <a name="to-attach-to-a-running-process"></a>Pour établir un attachement à un processus en cours d'exécution
@@ -52,21 +52,21 @@ Cette rubrique explique comment attacher manuellement le débogueur Visual Studi
 
 5. Cliquez sur **Attacher**.
 
-    Vous pouvez visualiser un avertissement vous indiquant que le débogage de script est désactivé dans Internet Explorer. Si cela se produit, consultez [Avertissement : Script de débogage est désactivé](../debugger/warning-script-debugging-disabled.md).
+    Vous pouvez visualiser un avertissement vous indiquant que le débogage de script est désactivé dans Internet Explorer. Si cela se produit, consultez [Avertissement : débogage de script désactivé](../debugger/warning-script-debugging-disabled.md).
 
    La liste **Processus disponibles** s’affiche automatiquement quand vous ouvrez la boîte de dialogue **Processus** . Les processus peuvent démarrer et s’interrompre en arrière-plan pendant que la boîte de dialogue est ouverte. Le contenu n'est donc pas toujours à jour. Vous pouvez réactualiser la liste à tout moment pour afficher la liste des processus en cours en appuyant sur le bouton **Actualiser**.
 
-   Vous pouvez attacher un débogueur à plusieurs programmes à la fois, mais un seul d’entre eux est actif dans le débogueur à un moment donné. Vous pouvez définir le programme actif dans la barre d'outils Emplacement de débogage. Pour plus d'informations, voir [Procédure : Définir le processus actuel](/previous-versions/visualstudio/visual-studio-2010/d5d4sxdw(v=vs.100)).
+   Vous pouvez attacher un débogueur à plusieurs programmes à la fois, mais un seul d’entre eux est actif dans le débogueur à un moment donné. Vous pouvez définir le programme actif dans la barre d'outils Emplacement de débogage. Pour plus d’informations, consultez [Comment : définir le processus en cours](/previous-versions/visualstudio/visual-studio-2010/d5d4sxdw(v=vs.100)).
 
-   Toutes les commandes d’exécution du menu **Déboguer** affectent le programme actif. Vous pouvez interrompre tout programme débogué à partir de la boîte de dialogue processus. Consultez [à l’aide de points d’arrêt](../debugger/using-breakpoints.md).
+   Toutes les commandes d’exécution du menu **Déboguer** affectent le programme actif. Vous pouvez arrêter tout programme débogué à partir de la boîte de dialogue processus. Consultez [utilisation de points d’arrêt](../debugger/using-breakpoints.md).
 
 > [!NOTE]
-> Si vous essayez d'établir un attachement à un processus appartenant à un compte d'utilisateur non fiable, une boîte de dialogue d'avertissement de sécurité s'affiche avec un message de confirmation. Pour plus d’informations, consultez [avertissement de sécurité : l’attachement à un processus appartenant à un utilisateur non approuvé peut être dangereux. Si les informations suivantes semblent suspectes ou si vous avez des doutes, n’attachez pas ce processus](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).
+> Si vous essayez d'établir un attachement à un processus appartenant à un compte d'utilisateur non fiable, une boîte de dialogue d'avertissement de sécurité s'affiche avec un message de confirmation. Pour plus d’informations, consultez [avertissement de sécurité : l’attachement à un processus appartenant à un utilisateur non fiable peut être dangereux. Si les informations suivantes semblent suspectes ou si vous avez des doutes, n’attachez pas ce processus](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).
 
  Dans certains cas, lors du débogage dans une session Terminal Services (Bureau à distance), la liste Processus disponibles n'affiche pas tous les processus disponibles. Dans [!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)] ou une version ultérieure, si vous exécutez Visual Studio avec un compte d'utilisateur limité, la liste Processus disponibles n'affiche pas les processus qui s'exécutent dans la session 0, qui est utilisée pour les services et les autres processus serveur, notamment w3wp.exe. Vous pouvez résoudre le problème en exécutant Visual Studio sous un compte administrateur ou à partir de la console serveur au lieu d'une session Terminal Services. Si aucune de ces solutions n’est possible, la troisième option consiste à attacher le débogueur au processus en entrant vsjitdebugger.exe -p ProcessId dans la ligne de commande Windows. Vous pouvez déterminer l'ID de processus à l'aide de tlist.exe. Pour obtenir tlist.exe, téléchargez et installez les outils de débogage pour Windows, qui sont disponibles dans le [Centre de développement Windows](/windows-hardware/drivers/dashboard/).
 
 ## <a name="see-also"></a>Voir aussi
 - [Débogage de scripts côté client](../debugger/client-side-script-debugging.md)
 - [S’attacher à des processus en cours d’exécution](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
-- [Avertissement de sécurité : l’attachement à un processus appartenant à un utilisateur non approuvé peut être dangereux. Si les informations suivantes semblent suspectes ou si vous avez des doutes, ne faites pas d’attachement à ce processus](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
+- [Avertissement de sécurité Attachement à un processus appartenant à un utilisateur non fiable peut être dangereux. Si les informations suivantes semblent suspectes ou si vous avez des doutes, ne faites pas d’attachement à ce processus](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
 - [Sécurité du débogueur](../debugger/debugger-security.md)

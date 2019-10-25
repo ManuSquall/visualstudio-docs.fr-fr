@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c6419153777b5af071b59b6b7888c4f18f228b1
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 36dfed97fb8abd30f97c4068da94148715cae5c7
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64830580"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740852"
 ---
-# <a name="idiasymbolgetclassparent"></a>IDiaSymbol::get_classParent
-Récupère une référence au parent de la classe du symbole.
+# <a name="idiasymbolget_classparent"></a>IDiaSymbol::get_classParent
+Récupère une référence à la classe parente du symbole.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,23 +33,23 @@ HRESULT get_classParent ( 
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-[out] Retourne un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objet qui représente le parent de la classe du symbole.
+à Retourne un objet [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) qui représente le parent de la classe du symbole.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
-> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> Une valeur de retour de `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>spécifications
 
-|Prérequis|Description|
+|Exigence|Description|
 |-----------------|-----------------|
 |En-tête :|dia2.h|
-|Version :|DIA SDK v7.0|
+|Version :|DIA SDK v 7.0|
 
 ## <a name="remarks"></a>Notes
- Les types de symboles qui peuvent être les parents de la classe sont documentées dans [hiérarchie de classe de Types de symboles](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md).
+ Les types de symboles qui peuvent être des parents de classe sont documentés dans la [hiérarchie de classes des types de symboles](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md).
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

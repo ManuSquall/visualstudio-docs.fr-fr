@@ -11,16 +11,16 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 648d00cd59d056e0874c91338a39667088d93e2e
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 071c16267486e1dda1e183cad3c488345974a3cc
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018432"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745923"
 ---
 # <a name="sample-c-project-for-code-analysis"></a>Exemple de projet C++ pour l’analyse du code
 
-Les procédures suivantes montrent comment créer l’exemple pour [Procédure pas à pas : Analyser le code C/C++ pour détecter les erreurs](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md). Les procédures créent :
+Les procédures suivantes vous montrent comment créer l’exemple pour la [procédure pas à pas :C++ analyser C/code pour les défauts](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md). Les procédures créent :
 
 - Une solution Visual Studio nommée CppDemo.
 
@@ -34,7 +34,7 @@ Les procédures fournissent également le code pour les fichiers d’en-tête et
 
 1. Cliquez sur le menu **Fichier**, pointez sur **Nouveau**, puis cliquez sur **Nouveau projet**.
 
-2. Dans la liste d’arborescence **Types de projets**, si Visual C++ n’est pas votre langage par défaut dans Visual Studio, développez **Autres langages**.
+2. Dans la liste d’arborescence des **types** de C++ projets, si n’est pas votre langue par défaut dans vs, développez **autres langues**.
 
 3. Développez **Visual C++** , puis cliquez sur **Général**.
 
@@ -164,11 +164,11 @@ Les procédures fournissent également le code pour les fichiers d’en-tête et
 
 4. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur **Annotations**, puis cliquez sur **Propriétés**.
 
-5. Développez **Propriétés de configuration** et cliquez sur **Général**.
+5. Développez **Propriétés de configuration**, puis cliquez sur **Général**.
 
 6. Dans la liste **Général**, sélectionnez le texte dans la colonne en regard d’**Extension cible** et tapez **.lib**.
 
-7. Dans **Paramètres par défaut du projet** , cliquez sur la colonne à côté de **Type de configuration**, puis cliquez sur **Bibliothèque statique (.lib)** .
+7. Dans **Paramètres par défaut du projet** , cliquez sur la colonne en regard de **Type de configuration**, puis cliquez sur **Bibliothèque statique (.lib)** .
 
 ## <a name="add-the-header-file-and-source-file-to-the-annotations-project"></a>Ajouter le fichier d’en-tête et le fichier source au projet Annotations
 
@@ -195,7 +195,7 @@ Les procédures fournissent également le code pour les fichiers d’en-tête et
 
     ```
 
-5. Dans l’Explorateur de solutions, cliquez sur **Fichiers sources**, pointez sur **Nouveau** et cliquez sur **Nouvel élément**.
+5. Dans l’Explorateur de solutions, cliquez sur **Fichiers sources**, pointez sur **Nouveau**, puis cliquez sur **Nouvel élément**.
 
 6. Dans la boîte de dialogue **Ajouter un nouvel élément**, cliquez sur **Code** et sur **Fichier C++ (.cpp)** .
 

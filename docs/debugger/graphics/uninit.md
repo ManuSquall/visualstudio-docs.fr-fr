@@ -8,15 +8,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8165b2e1993a6ea52127536a058f662e1a3d92cc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ef809b646a0af58e46b8c68dc5a8cf7633692bcc
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62848723"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72734820"
 ---
 # <a name="uninit"></a>UnInit
-Finalise le fichier journal de graphisme, il ferme et libère les ressources qui ont été utilisés pendant que l’application a été enregistre activement les informations graphiques.
+Finalise le fichier journal de graphisme, le ferme et libère les ressources qui ont été utilisées pendant que l’application enregistrait activement des informations graphiques.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -25,9 +25,9 @@ void UnInit();
 ```
 
 ## <a name="remarks"></a>Notes
- `UnInit` est appelée automatiquement lorsqu’une instance de la `VsgDbg` classe est détruite. Si le `VsgDbg` instance a été pas activement l’enregistrement des informations graphiques, cela n’a aucun effet.
+ `UnInit` est appelé automatiquement lorsqu’une instance de la classe `VsgDbg` est détruite. Si l’instance `VsgDbg` n’enregistrait pas activement les informations graphiques, cela n’a aucun effet.
 
- Après `UnInit` a été appelée sur une instance de la `VsgDbg` classe, un graphique nouveau fichier journal peut être créé en appelant `Init` et finalisation en appelant `UnInit`. Vous pouvez répéter cette opération autant de fois que vous souhaitez utiliser le même `VsgDbg` instance pour créer des graphiques indépendants plusieurs fichiers journaux.
+ Une fois `UnInit` appelée sur une instance de la classe `VsgDbg`, un nouveau fichier journal de graphisme peut être créé en appelant `Init` et finalisé en appelant `UnInit`. Vous pouvez répéter cette opération autant de fois que vous le souhaitez à l’aide de la même instance de `VsgDbg` pour créer plusieurs fichiers journaux graphiques indépendants.
 
 ## <a name="see-also"></a>Voir aussi
 - [Init](init.md)

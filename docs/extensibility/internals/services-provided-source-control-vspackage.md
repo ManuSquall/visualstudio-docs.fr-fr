@@ -1,5 +1,5 @@
 ---
-title: Services fournis (VSPackage de contrôle de code Source) | Microsoft Docs
+title: Services fournis (VSPackage de contrôle de code source) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,18 +11,18 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 72c95b0cf5b89588f5436663046829dc589bc9f2
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 13be907eeb35a2d4382fb63726c09cb2924e57e7
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322656"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72723855"
 ---
 # <a name="services-provided-source-control-vspackage"></a>Services fournis (VSPackage de contrôle de code source)
-Les services sont le mécanisme principal via lequel la fonctionnalité est partagée entre les VSPackages et entre l’environnement de développement intégré (IDE) Visual Studio et ses VSPackage installés. Pour obtenir une description détaillée des services et leur importance dans l’IDE Visual Studio, consultez[utilisation et fourniture de Services](../../extensibility/using-and-providing-services.md).
+Les services sont le mécanisme principal par le biais duquel les fonctionnalités sont partagées entre les VSPackages et entre l’environnement de développement intégré (IDE) de Visual Studio et les VSPackages installés. Pour obtenir une description détaillée des services et leur importance dans l’IDE de Visual Studio, consultez[utilisation et fourniture de services](../../extensibility/using-and-providing-services.md).
 
-## <a name="the-source-control-service"></a>Le Service de contrôle de Source
- Visual Studio fournit deux couches de services, les services au niveau de l’IDE et les services au niveau du package. En mode natif, l’IDE Visual Studio fournit des services au niveau de l’IDE. Le package de contrôle de code source utilise certains de ces services. Le package de contrôle de code source en tant que VSPackage partage ses fonctionnalités de contrôle de code source en fournissant un service de contrôle de source privée qui lui sont propres. Le package de contrôle de code source encapsule le jeu d’interfaces de relatifs au contrôle de source implémentée par ce dernier sous la forme d’un contrat qui peut être utilisé par l’IDE Visual Studio.
+## <a name="the-source-control-service"></a>Le service de contrôle de code source
+ Visual Studio fournit deux couches de services, les services de niveau IDE et les services au niveau du package. L’IDE de Visual Studio fournit en mode natif des services de niveau IDE. Le package de contrôle de code source utilise certains de ces services. Le package de contrôle de code source en tant que VSPackage partage ses fonctionnalités de contrôle de code source en fournissant un service de contrôle de code source privé propre. Le package de contrôle de code source encapsule l’ensemble des interfaces relatives au contrôle de code source implémentées par celui-ci sous la forme d’un contrat qui peut être utilisé par l’IDE de Visual Studio.
 
 ## <a name="see-also"></a>Voir aussi
 - [Éléments de conception](../../extensibility/internals/source-control-vspackage-design-elements.md)

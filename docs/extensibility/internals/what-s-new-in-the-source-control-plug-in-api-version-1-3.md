@@ -1,5 +1,5 @@
 ---
-title: Ce que&#39;s dans la Source de contrôle plug-in API Version 1.3 | Microsoft Docs
+title: Nouveautés&#39;de l’API de plug-in de contrôle de code Source version 1,3 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,29 +11,29 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: df93626066441226e7f41963e60e3417e8cc12da
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2f45eeb3c57d5339b1e9fd66951dcbb60970e108
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66323102"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72721584"
 ---
-# <a name="what39s-new-in-the-source-control-plug-in-api-version-13"></a>Ce que&#39;s dans la Source de contrôle plug-in API Version 1.3
-L’API de plug-in de contrôle de Source version 1.3 présente les nouvelles fonctions suivantes pour fournir un contrôle plus avancée.
+# <a name="what39s-new-in-the-source-control-plug-in-api-version-13"></a>Nouveautés&#39;de l’API de plug-in de contrôle de code Source version 1,3
+La version 1,3 de l’API de plug-in de contrôle de code source introduit les nouvelles fonctions suivantes pour fournir un contrôle plus avancé.
 
 ## <a name="changes"></a>Modifications
- Les fonctions suivantes sont nouvelles pour l’API de plug-in de contrôle de Source version 1.3 :
+ Les fonctions suivantes sont nouvelles dans l’API de plug-in de contrôle de code source version 1,3 :
 
 |Fonction|Vue d'ensemble|
 |--------------|--------------|
-|[SccGetExtendedCapabilities](../../extensibility/sccgetextendedcapabilities-function.md)|Permet les bits de capacité supplémentaires soient signalés|
-|[SccEnumChangedFiles](../../extensibility/sccenumchangedfiles-function.md)|Permet l’examen des fichiers qui ont des versions plus récentes de la base de contrôle de version que sur le disque local|
-|[SccQueryChanges](../../extensibility/sccquerychanges-function.md)|Permet l’examen de l’état de changements de nom (, ajouts et suppressions) pour les fichiers spécifiés|
+|[SccGetExtendedCapabilities](../../extensibility/sccgetextendedcapabilities-function.md)|Permet de signaler des bits de fonctionnalité supplémentaires|
+|[SccEnumChangedFiles](../../extensibility/sccenumchangedfiles-function.md)|Permet d’examiner les fichiers qui ont des versions plus récentes dans la base de données de contrôle de version que sur le disque local|
+|[SccQueryChanges](../../extensibility/sccquerychanges-function.md)|Permet d’examiner l’état des modifications de nom (renommages, ajouts et suppressions) pour les fichiers spécifiés.|
 |[SccPopulateDirList](../../extensibility/sccpopulatedirlist-function.md)|Permet l’examen des répertoires et des fichiers dans la base de données de contrôle de version|
-|[SccAddFilesFromSCC](../../extensibility/sccaddfilesfromscc-function.md)|Ajoute une liste de fichiers spécifiée à partir de la base de données de contrôle de version pour le projet actuel|
-|[SccBackgroundGet](../../extensibility/sccbackgroundget-function.md)|Effectue un sans assistance « Get » des fichiers spécifiés (aucune interface utilisateur n’est affiché)|
-|[SccGetUserOption](../../extensibility/sccgetuseroption-function.md)|Permet d’accéder aux options spécifiques à l’utilisateur|
+|[SccAddFilesFromSCC](../../extensibility/sccaddfilesfromscc-function.md)|Ajoute une liste de fichiers spécifiée de la base de données de contrôle de version au projet en cours|
+|[SccBackgroundGet](../../extensibility/sccbackgroundget-function.md)|Effectue une « récupération » en mode silencieux des fichiers spécifiés (aucune interface utilisateur n’est affichée)|
+|[SccGetUserOption](../../extensibility/sccgetuseroption-function.md)|Autorise l’accès aux options spécifiques à l’utilisateur|
 
 ## <a name="see-also"></a>Voir aussi
-- [Prise en main](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)
+- [Bien démarrer](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)
 - [Nouveautés dans l’API de plug-in de contrôle de code source version 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

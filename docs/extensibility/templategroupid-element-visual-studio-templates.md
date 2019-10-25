@@ -14,17 +14,17 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b4e0ccae38b79cf8efb4b7b426fb65ae909c5d5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 7f710a73d8b9c4e31c8189d3322c518f20def5bb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316589"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72718653"
 ---
 # <a name="templategroupid-element-visual-studio-templates"></a>TemplateGroupID, élément (modèles Visual Studio)
-Spécifie le genre de projet dans lequel les modèles d'élément doivent s'afficher. Cet élément est important quand [ShowByDefault (modèles Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) est défini sur `false`. Lorsque [ShowByDefault (modèles Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) est défini sur `true`, puis un modèle d’élément est disponible dans tous les types de projet.
+Spécifie le genre de projet dans lequel les modèles d'élément doivent s'afficher. Cet élément est significatif quand [ShowByDefault (modèles Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) a la valeur `false`. Quand [ShowByDefault (modèles Visual Studio)](../extensibility/showbydefault-visual-studio-templates.md) a la valeur `true`, un modèle d’élément est disponible dans tous les types de projets.
 
- \<VSTemplate> \<TemplateData> \<TemplateGroupID>
+ \<VSTemplate > \<TemplateData > \<TemplateGroupID >
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -36,10 +36,10 @@ Spécifie le genre de projet dans lequel les modèles d'élément doivent s'affi
  Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.
 
 ### <a name="attributes"></a>Attributs
- Aucun.
+ Aucun(e).
 
 ### <a name="child-elements"></a>Éléments enfants
- Aucun.
+ Aucun(e).
 
 ### <a name="parent-elements"></a>Éléments parents
 
@@ -55,7 +55,7 @@ Spécifie le genre de projet dans lequel les modèles d'élément doivent s'affi
 ## <a name="remarks"></a>Notes
  `TemplateGroupID` est un élément.
 
- La valeur de la `TemplateGroupID` élément est utilisé avec l’inscription de système de projet (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<numéro de version >* \Projects\\) Pour filtrer les modèles qui apparaissent dans le **ajouter un nouvel élément** boîte de dialogue.
+ La valeur de l’élément `TemplateGroupID` est utilisée avec l’inscription du système de projet (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio \\ *\<version number >* \projets \\) pour filtrer les modèles qui s’affichent dans la **Ajouter un nouvel élément.** boîte de dialogue.
 
 |Valeur Visual C++|Signification|
 |------------------------|-------------|

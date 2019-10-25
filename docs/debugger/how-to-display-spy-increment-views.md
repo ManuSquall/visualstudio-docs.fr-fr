@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Afficher des vues Spy ++ | Microsoft Docs'
+title: 'Comment : afficher les vues Spy + + | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 230834e7915114e2a647b21834b4e90b12c54a64
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9f56a57a347b6cd8892a264070a3ee022ffb7853
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894259"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733561"
 ---
-# <a name="how-to-display-spy-views"></a>Procédure : Afficher des vues Spy++
-Démarrage de Spy ++, il s’ouvre dans [Windows vue](../debugger/windows-view.md), une arborescence de toutes les fenêtres et les contrôles disponibles sur votre ordinateur. Cette fenêtre racine a pour titre « Windows 1 ». Il existe également trois autres vues Spy ++ : [La vue messages](../debugger/messages-view.md), [vue processus](../debugger/processes-view.md), et [vue Threads](../debugger/threads-view.md). Vous pouvez afficher la vue souhaitée à partir de la **Spy** menu. Pour plus d’informations, consultez [vues Spy ++](../debugger/spy-increment-views.md).
+# <a name="how-to-display-spy-views"></a>Comment : afficher des vues Spy++
+Quand Spy + + démarre, il s’ouvre dans la [vue fenêtres](../debugger/windows-view.md), une arborescence de toutes les fenêtres et de tous les contrôles disponibles sur votre ordinateur. Cette fenêtre racine est sous-titrage « Windows 1 ». Trois autres vues Spy + + sont également disponibles : vue [messages](../debugger/messages-view.md), [vue processus](../debugger/processes-view.md)et [Threads](../debugger/threads-view.md). Vous pouvez afficher la vue souhaitée à partir du menu **Spy** . Pour plus d’informations, consultez [vues Spy + +](../debugger/spy-increment-views.md).
 
 ## <a name="see-also"></a>Voir aussi
 - [Utilisation de Spy++](../debugger/using-spy-increment.md)

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db6c2e47d9f316f758b854e5ce40dfc19acb592b
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ee36d1901f7acb5bc7e41ac72b8dc03b15bc45c8
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64830549"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740298"
 ---
-# <a name="idiasymbolgetisaggregated"></a>IDiaSymbol::get_isAggregated
-Récupère un indicateur qui spécifie si le symbole de données fait partie d’un agrégat ou une collection de symboles ; le compilateur traite les symboles agrégées comme des entités distinctes, mais elles font vraiment partie d’un symbole unique plus grand.
+# <a name="idiasymbolget_isaggregated"></a>IDiaSymbol::get_isAggregated
+Récupère un indicateur qui spécifie si le symbole de données fait partie d’un agrégat ou d’une collection de symboles ; le compilateur traite les symboles agrégés comme des entités distinctes, mais ils font véritablement partie d’un symbole unique plus grand.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,23 +33,23 @@ HRESULT get_isAggregated(
 #### <a name="parameters"></a>Paramètres
  `pFlag`
 
-[out] Retourne `TRUE` si les données font partie d’une agrégation de symboles fractionnées à partir d’un symbole parent ; sinon, retourne `FALSE`.
+à Retourne `TRUE` si les données font partie d’une agrégation de symboles fractionnés à partir d’un symbole parent ; Sinon, retourne `FALSE`.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
-> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> Une valeur de retour de `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
 ## <a name="remarks"></a>Notes
- Le [IDiaSymbol::get_isSplitted](../../debugger/debug-interface-access/idiasymbol-get-issplitted.md) méthode est `TRUE` pour le symbole qui est le parent des symboles agrégées.
+ La méthode [IDiaSymbol :: get_isSplitted](../../debugger/debug-interface-access/idiasymbol-get-issplitted.md) est `TRUE` pour le symbole qui est le parent des symboles agrégés.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>spécifications
 
-|Prérequis|Description|
+|Exigence|Description|
 |-----------------|-----------------|
 |En-tête :|dia2.h|
-|Version :|DIA SDK 8.0|
+|Version :|DIA SDK v 8.0|
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

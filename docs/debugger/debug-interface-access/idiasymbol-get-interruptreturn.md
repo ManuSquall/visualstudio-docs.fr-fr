@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87a0938be403d3818d1b399409f91d33067f805b
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: b4790748e7b2ea727e9e964fb94a52ddf67ffb70
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64832769"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740373"
 ---
-# <a name="idiasymbolgetinterruptreturn"></a>IDiaSymbol::get_interruptReturn
-Récupère un indicateur qui spécifie si la fonction contient un retour à partir de l’instruction d’interruption (par exemple, le X86 code assembleur `iret`).
+# <a name="idiasymbolget_interruptreturn"></a>IDiaSymbol::get_interruptReturn
+Récupère un indicateur qui spécifie si la fonction contient un retour de l’instruction d’interruption (par exemple, le code d’assembly x86 `iret`).
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,20 +33,20 @@ HRESULT get_interruptReturn(
 #### <a name="parameters"></a>Paramètres
  `pFlag`
 
-[out] Retourne `TRUE` si la fonction a un retour à partir de l’instruction d’interruption ; sinon, retourne `FALSE`.
+à Retourne `TRUE` si la fonction a retourné une instruction d’interruption ; Sinon, retourne `FALSE`.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
+ En cas de réussite, retourne `S_OK`; Sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
-> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> Une valeur de retour de `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>spécifications
 
-|Prérequis|Description|
+|Exigence|Description|
 |-----------------|-----------------|
 |En-tête :|dia2.h|
-|Version :|DIA SDK 8.0|
+|Version :|DIA SDK v 8.0|
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

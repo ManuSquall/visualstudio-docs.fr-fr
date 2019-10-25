@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3d75193368188efc660391d1e80c562ed881324b
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 196ba13b95245b8c42e6d946572665792f71346d
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72578040"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745641"
 ---
 # <a name="create-custom-views-of-managed-objects-c-visual-basic-f-ccli"></a>Créer des vues personnalisées d’objetsC#gérés (, F#Visual Basic C++,,/CLI)
 Vous pouvez personnaliser la façon dont Visual Studio affiche les types de données dans les fenêtres de variables du débogueur.

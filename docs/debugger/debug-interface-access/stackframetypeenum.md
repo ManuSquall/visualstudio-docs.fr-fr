@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44f715c4f74d9b120b324e2d68417a24c9b42684
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 20b0c9dd106e5744a369ddaa6cb870788f7464d3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62854835"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738552"
 ---
 # <a name="stackframetypeenum"></a>StackFrameTypeEnum
 Spécifie le type de frame de pile.
@@ -36,23 +36,23 @@ enum StackFrameTypeEnum {
 ```
 
 ## <a name="elements"></a>Éléments
-`FrameTypeFPO` Pointeur de frame omis ; Information FPO est disponible.
+pointeur de frame `FrameTypeFPO` omis ; Informations FPO disponibles.
 
-`FrameTypeTrap` Frame d’interruption du noyau.
+`FrameTypeTrap` trame d’interruption du noyau.
 
-`FrameTypeTSS` Frame d’interruption du noyau.
+`FrameTypeTSS` trame d’interruption du noyau.
 
-`FrameTypeStandard` Frame de pile EBP standard.
+`FrameTypeStandard` frame de pile EBP standard.
 
-`FrameTypeFrameData` Pointeur de frame omis ; Informations de données image disponibles.
+pointeur de frame `FrameTypeFrameData` omis ; Informations sur les données de frame disponibles.
 
-`FrameTypeUnknown` Frame qui n’a pas les informations de débogage.
+Frame de `FrameTypeUnknown` qui ne contient aucune information de débogage.
 
 ## <a name="remarks"></a>Notes
-Les valeurs dans cette énumération sont retournées par un appel à la [IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md) (méthode).
+Les valeurs de cette énumération sont retournées par un appel à la méthode [IDiaStackFrame :: get_Type](../../debugger/debug-interface-access/idiastackframe-get-type.md) .
 
-## <a name="requirements"></a>Configuration requise
-En-tête : cvconst.h
+## <a name="requirements"></a>spécifications
+En-tête : cvconst. h
 
 ## <a name="see-also"></a>Voir aussi
 - [Énumérations et structures](../../debugger/debug-interface-access/enumerations-and-structures.md)

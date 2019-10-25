@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4639df568b033eea03ff4ad61c4ddd4e512e2bfc
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 41ebe1d7e01860b9d41c423a36c37f00203119b1
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62835462"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739280"
 ---
-# <a name="idiasymbolgetsubtype"></a>IDiaSymbol::get_subType
+# <a name="idiasymbolget_subtype"></a>IDiaSymbol::get_subType
 Récupère le sous-type.
 
 ## <a name="syntax"></a>Syntaxe
@@ -30,10 +30,10 @@ HRESULT get_subType(
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-[out] Pointeur vers le sous-type.
+à Pointeur vers le sous-type.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

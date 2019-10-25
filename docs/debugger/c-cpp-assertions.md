@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 154abe3d73fa71ac897f0442697196cd859f32bd
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 9e2e6d69e4c621d6be81a00a61482b71199bc0fc
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72435895"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745760"
 ---
 # <a name="cc-assertions"></a>Assertions C/C++
 Une instruction d’assertion spécifie une condition qui devrait être vraie à un point de votre programme. Si cette condition n’est pas remplie, l’assertion échoue, l’exécution de votre programme est interrompue et la [boîte de dialogue échec](../debugger/assertion-failed-dialog-box.md) de l’assertion s’affiche.
@@ -111,7 +111,7 @@ CRTDBG. Fichier d’en-tête H définit les macros _ Assert [et _ ASserte](/cpp/
 | `_ASSERT` | Si l’expression spécifiée prend la valeur FALSe, le nom de fichier et le numéro de ligne du `_ASSERT`. |
 | `_ASSERTE` | Identique à `_ASSERT`, plus une représentation sous forme de chaîne de l’expression qui a été déclarée. |
 
-`_ASSERTE` est plus puissant, car il signale l’expression déclarée qui s’est avérée fausse. Cela peut être suffisant pour identifier le problème sans faire référence au code source. Toutefois, la version Debug de votre application contient une constante de chaîne pour chaque expression déclarée à l’aide de `_ASSERTE`. Si vous utilisez plusieurs macros `_ASSERTE`, ces expressions de chaîne occupent une quantité significative de mémoire. Si cela s’avère être un problème, utilisez `_ASSERT` pour économiser de la mémoire.
+`_ASSERTE` est plus puissant, car il signale l’expression déclarée qui s’est avérée fausse. Cela peut être suffisant pour identifier le problème sans faire référence au code source. Toutefois, la version Debug de votre application contient une constante de chaîne pour chaque expression déclarée à l’aide de `_ASSERTE`. Si vous utilisez de nombreux `_ASSERTE` macros, ces expressions de chaîne occupent une quantité significative de mémoire. Si cela s’avère être un problème, utilisez `_ASSERT` pour économiser de la mémoire.
 
 Lorsque `_DEBUG` est défini, la macro `_ASSERTE` est définie comme suit :
 
@@ -124,7 +124,7 @@ Lorsque `_DEBUG` est défini, la macro `_ASSERTE` est définie comme suit :
     } while (0)
 ```
 
-Si l’expression déclarée prend la valeur FALSe, _ [CrtDbgReport](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw) est appelé pour signaler l’échec de l’assertion (à l’aide d’une boîte de dialogue de message par défaut). Si vous choisissez **Réessayer** dans la boîte de dialogue de message, `_CrtDbgReport` retourne 1 et `_CrtDbgBreak` appelle le débogueur à l’aide de `DebugBreak`.
+Si l’expression déclarée prend la valeur FALSe, _ [CrtDbgReport](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw) est appelé pour signaler l’échec de l’assertion (à l’aide d’une boîte de dialogue de message par défaut). Si vous choisissez **Réessayer** dans la boîte de dialogue message, `_CrtDbgReport` retourne 1 et `_CrtDbgBreak` appelle le débogueur via `DebugBreak`.
 
 ### <a name="checking-for-heap-corruption"></a>Vérification de l’altération du tas
 L’exemple suivant utilise [_CrtCheckMemory](/cpp/c-runtime-library/reference/crtcheckmemory) pour vérifier l’altération du tas :
@@ -250,7 +250,7 @@ void CMyData::AssertValid( ) const
 #endif
 ```
 
-`CMyData` utilise le mécanisme `AssertValid` pour tester la validité des objets stockés dans ses membres de données. La substitution `AssertValid` de `CMyData` appelle la macro `ASSERT_VALID` pour sa propre variable membre m_pDataList.
+`CMyData` utilise le mécanisme `AssertValid` pour tester la validité des objets stockés dans ses membres de données. Le `AssertValid` de substitution de `CMyData` appelle la macro `ASSERT_VALID` pour sa propre variable membre m_pDataList.
 
 Le test de validité ne s’arrête pas à ce niveau, car la classe `CObList` remplace également `AssertValid`. Ce remplacement effectue des tests de validité supplémentaires sur l’état interne de la liste. Ainsi, un test de validité sur un objet `CMyData` entraîne des tests de validité supplémentaires pour les États internes de l’objet de liste `CObList` stocké.
 

@@ -1,5 +1,5 @@
 ---
-title: 'Nouvelle génération de projet : Sous le capot, première partie | Microsoft Docs'
+title: 'Nouvelle génération de projet : en coulisses, première partie | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,128 +11,128 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a657c59cba31ea48298179a41ab1024a0b7e948f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 41b2b229fe343c9f6d515ba757e4bd976ee7fda5
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66326628"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72726524"
 ---
-# <a name="new-project-generation-under-the-hood-part-one"></a>Nouvelle génération de projet : Rouages du système, première partie
-Jamais pensé que sur la façon de créer votre propre type de projet ? Vous vous demandez ce qui se passe réellement lorsque vous créez un nouveau projet ? Prenons un œil en coulisses et voyons ce qui se passe vraiment.
+# <a name="new-project-generation-under-the-hood-part-one"></a>Génération de nouveau projet : les rouages du système, partie 1
+Avez-vous déjà pensé comment créer votre propre type de projet ? Vous vous demandez ce qui se passe quand vous créez un projet ? Jetons un coup d’œil pour voir ce qui se passe vraiment.
 
- Il existe plusieurs tâches qui coordonne les Visual Studio pour vous :
+ Visual Studio peut coordonner plusieurs tâches :
 
-- Il affiche une arborescence de tous les types de projet disponibles.
+- Elle affiche une arborescence de tous les types de projet disponibles.
 
-- Il affiche la liste des modèles d’application pour chaque type de projet et vous permet de choisir un.
+- Il affiche la liste des modèles d’application pour chaque type de projet et vous permet d’en choisir un.
 
-- Il collecte des informations de projet pour l’application, telles que le nom du projet et le chemin d’accès.
+- Il collecte des informations sur le projet pour l’application, telles que le nom et le chemin d’accès du projet.
 
 - Il transmet ces informations à la fabrique de projets.
 
 - Il génère des éléments de projet et des dossiers dans la solution actuelle.
 
-## <a name="the-new-project-dialog-box"></a>La boîte de dialogue Nouveau projet
- Tout commence lorsque vous sélectionnez un type de projet pour un nouveau projet. Nous allons commencer en cliquant sur **nouveau projet** sur le **fichier** menu. Le **nouveau projet** boîte de dialogue s’affiche, qui recherchent quelque chose comme suit :
+## <a name="the-new-project-dialog-box"></a>Boîte de dialogue Nouveau projet
+ Tout commence lorsque vous sélectionnez un type de projet pour un nouveau projet. Commençons par cliquer sur **nouveau projet** dans le menu **fichier** . La boîte de dialogue **nouveau projet** s’affiche et ressemble à ce qui suit :
 
  ![Boîte de dialogue Nouveau projet](../../extensibility/internals/media/newproject.gif "NewProject")
 
- Examinons plus en détail. Le **types de projets** arborescence répertorie les différents types de projet, vous pouvez créer. Lorsque vous sélectionnez un type de projet comme **Visual C# Windows**, vous verrez une liste des modèles d’application pour vous aider à démarrer. **Modèles Visual Studio installés** sont installés par Visual Studio et sont disponibles pour tout utilisateur de votre ordinateur. Nouveaux modèles que vous créez ou collectez peuvent être ajoutés aux **Mes modèles** et sont disponibles uniquement pour vous.
+ Examinons de plus près. L’arborescence **types de projets** répertorie les différents types de projets que vous pouvez créer. Lorsque vous sélectionnez un type de projet tel que **Visual C# Windows**, vous verrez une liste de modèles d’application pour vous aider à démarrer. Les **modèles Visual Studio installés** sont installés par Visual Studio et sont disponibles pour tous les utilisateurs de votre ordinateur. Les nouveaux modèles créés ou collectés peuvent être ajoutés à **Mes modèles** et ne sont disponibles que pour vous.
 
- Lorsque vous sélectionnez un modèle comme **Windows Application**, une description du type d’application s’affiche dans la boîte de dialogue, dans ce cas, **un projet de création d’une application avec une interface utilisateur de Windows**.
+ Lorsque vous sélectionnez un modèle comme une **application Windows**, une description du type d’application s’affiche dans la boîte de dialogue. dans ce cas, **projet pour la création d’une application avec une interface utilisateur Windows**.
 
- En bas de la **nouveau projet** boîte de dialogue, vous verrez plusieurs contrôles qui collecter plus d’informations. Les contrôles que vous voyez varient selon le type de projet, mais en règle générale, ils incluent un projet **nom** zone de texte, un **emplacement** zone de texte et connexes **Parcourir** bouton et un **Nom de la solution** zone de texte et connexes **créer le répertoire pour la solution** case à cocher.
+ En bas de la boîte de dialogue **nouveau projet** , vous verrez plusieurs contrôles qui recueillent des informations supplémentaires. Les contrôles qui s’affichent dépendent du type de projet, mais ils incluent généralement la zone de texte **nom** du projet, une zone de texte d' **emplacement** et le bouton **Parcourir** associé, ainsi qu’une zone de texte nom de la **solution** et le **Répertoire de création associé pour la solution.** case à cocher.
 
 ## <a name="populating-the-new-project-dialog-box"></a>Remplissage de la boîte de dialogue Nouveau projet
- Où est le **nouveau projet** boîte de dialogue obtenir ses informations à partir de ? Il existe deux mécanismes au travail ici, un d’eux déconseillé. Le **nouveau projet** boîte de dialogue combine et affiche les informations obtenues à partir de ces deux mécanismes.
+ À partir de où la boîte de dialogue **nouveau projet** récupère-t-elle les informations ? Il existe deux mécanismes au travail, l’un d’eux étant déconseillé. La boîte de dialogue **nouveau projet** combine et affiche les informations obtenues à partir des deux mécanismes.
 
- L’ancienne méthode (obsolète) utilise les entrées du Registre système et les fichiers .vsdir. Ce mécanisme s’exécute à l’ouverture de Visual Studio. La méthode la plus récente utilise des fichiers .vstemplate. Ce mécanisme s’exécute lors de l’initialisation de Visual Studio, par exemple, en exécutant
+ La méthode la plus ancienne (déconseillée) utilise des entrées du Registre système et des fichiers. vsdir. Ce mécanisme s’exécute lors de l’ouverture de Visual Studio. La méthode la plus récente utilise des fichiers. vstemplate. Ce mécanisme s’exécute quand Visual Studio est initialisé, par exemple, en exécutant
 
 ```
 devenv /setup
 ```
 
- ou
+ or
 
 ```
 devenv /installvstemplates
 ```
 
 ### <a name="project-types"></a>Types de projet
- La position et les noms de la **types de projets** racine des nœuds, tels que **Visual C#** et **autres langages**, est déterminée par les entrées du Registre système. L’organisation des nœuds enfants, tels que **base de données** et **Smart Device**, reflète la hiérarchie des dossiers qui contiennent les fichiers .vstemplate correspondante. Examinons tout d’abord sur les nœuds racine.
+ La position et les noms des nœuds racine des **types de projets** , tels que les **langages** **visuels C#**  et autres, sont déterminés par les entrées de Registre système. L’Organisation des nœuds enfants, tels que la **base de données** et l' **appareil intelligent**, reflète la hiérarchie des dossiers qui contiennent les fichiers. vstemplate correspondants. Examinons d’abord les nœuds racine.
 
-#### <a name="project-type-root-nodes"></a>Nœuds de racines de Type de projet
- Lorsque [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] est initialisé, il parcourt les sous-clés de la clé de Registre système HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0\NewProjectTemplates\TemplateDirs pour créer et nommer les nœuds racine de la **detypesdeprojets** arborescence. Ces informations sont mis en cache pour une utilisation ultérieure. Examinez le TemplateDirs\\{FAE04EC1-301F-11D3-BF4B-00C04F79EFBC} \\ /1 clé. Chaque entrée est un GUID de VSPackage. Le nom de la sous-clé (/ 1) est ignoré, mais sa présence indique qu’il s’agit d’un **types de projets** nœud racine. Un nœud racine peut avoir à son tour plusieurs sous-clés qui contrôlent son apparence dans le **types de projets** arborescence. Examinons certaines d'entre elles.
+#### <a name="project-type-root-nodes"></a>Nœuds racines de type de projet
+ Lorsque [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] est initialisé, il parcourt les sous-clés de la clé de Registre système HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0\NewProjectTemplates\TemplateDirs pour générer et nommer les nœuds racines de l’arborescence des **types de projets** . Ces informations sont mises en cache pour une utilisation ultérieure. Examinez la clé TemplateDirs \\ {FAE04EC1-301F-11D3-BF4B-00C04F79EFBC} \\/1. Chaque entrée est un GUID VSPackage. Le nom de la sous-clé (/1) est ignoré, mais sa présence indique qu’il s’agit d’un nœud racine des **types de projet** . Un nœud racine peut à son tour comporter plusieurs sous-clés qui contrôlent son apparence dans l’arborescence des **types de projets** . Examinons certaines d’entre elles.
 
 ##### <a name="default"></a>(Default)
- Il s’agit de l’ID de ressource de la chaîne localisée qui nomme le nœud racine. La ressource de chaîne se trouve dans la DLL sélectionné par le GUID du VSPackage satellite.
+ Il s’agit de l’ID de ressource de la chaîne localisée qui nomme le nœud racine. La ressource de type chaîne se trouve dans la DLL satellite sélectionnée par le GUID du VSPackage.
 
- Dans l’exemple, le GUID de VSPackage est
+ Dans l’exemple, le GUID du VSPackage est
 
  {FAE04EC1-301F-11D3-BF4B-00C04F79EFBC}
 
- et l’ID de ressource (valeur par défaut) du nœud racine (/ 1) est #2345
+ et l’ID de ressource (valeur par défaut) du nœud racine (/1) est #2345
 
- Si vous recherchez le GUID dans la clé de Packages à proximité et examinez la sous-clé SatelliteDll, vous trouverez le chemin d’accès de l’assembly qui contient la ressource de chaîne :
+ Si vous recherchez le GUID dans la clé des packages proches et que vous examinez la sous-clé SatelliteDll, vous pouvez trouver le chemin d’accès de l’assembly qui contient la ressource de chaîne :
 
- \<Le chemin d’accès de Visual Studio installation > \VC#\VCSPackages\1033\csprojui.dll
+ chemin d’installation de \<Visual StudioVC#> \ \VCSPackages\1033\csprojui.dll
 
- Pour vérifier cela, ouvrez l’Explorateur de fichiers et faites glisser csprojui.dll dans le répertoire Visual Studio... La table de chaînes montre que les ressources #2345 porte la légende **Visual C#** .
+ Pour vérifier cela, ouvrez l’Explorateur de fichiers et faites glisser csprojui. dll dans le répertoire Visual Studio. La table de chaînes indique que la #2345 de la ressource a le **visuel C#** de la légende.
 
 ##### <a name="sortpriority"></a>SortPriority
- Ce paramètre détermine la position du nœud racine dans le **types de projets** arborescence.
+ Cela détermine la position du nœud racine dans l’arborescence des **types de projets** .
 
- REG_DWORD SortPriority 0x00000014 (20)
+ SortPriority REG_DWORD 0x00000014 (20)
 
- Plus le nombre de priorité, plus la position dans l’arborescence.
+ Plus le nombre de priorités est faible, plus la position dans l’arborescence est élevée.
 
 ##### <a name="developeractivity"></a>DeveloperActivity
  Si cette sous-clé est présente, la position du nœud racine est contrôlée par la boîte de dialogue Paramètres du développeur. Par exemple :
 
  DeveloperActivity REG_SZVC#
 
- Indique que Visual c# est un nœud racine si Visual Studio est configuré pour [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] développement. Sinon, il sera un nœud enfant du **autres langages**.
+ indique que Visual C# sera un nœud racine si Visual Studio est défini pour le développement de [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]. Dans le cas contraire, il s’agira d’un nœud enfant d' **autres langages**.
 
 ##### <a name="folder"></a>Dossier
- Si cette sous-clé est présente, le nœud racine devienne un nœud enfant du dossier spécifié. Une liste de dossiers possibles s’affiche sous la clé
+ Si cette sous-clé est présente, le nœud racine devient un nœud enfant du dossier spécifié. Une liste de dossiers possibles s’affiche sous la clé
 
  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\NewProjectTemplates\PseudoFolders
 
- Par exemple, l’entrée de projets de base de données a une clé de dossier qui correspond à l’entrée d’autres Types de projets dans PseudoFolders. Ainsi, dans le **types de projets** arborescence, **des projets de base de données** sera un nœud enfant du **autres Types de projets**.
+ Par exemple, l’entrée projets de base de données a une clé de dossier qui correspond à l’entrée autres types de projets dans PseudoFolders. Ainsi, dans l’arborescence des **types de projets** , les **projets de base de données** seront un nœud enfant d' **autres types de projets**.
 
-#### <a name="project-type-child-nodes-and-vstdir-files"></a>Nœuds enfants de Type projet et les fichiers .vstdir
- La position des nœuds enfants dans le **types de projets** arborescence suit la hiérarchie des dossiers dans les dossiers ProjectTemplates. Pour les modèles d’ordinateur (**modèles Visual Studio installés**), l’emplacement par défaut est \Program Files\Microsoft Visual Studio 14.0\Common7\IDE\ProjectTemplates\ et des modèles utilisateur (**Mes modèles**), l’emplacement par défaut est documents\Visual Studio 14.0\Templates\ProjectTemplates\\. Les hiérarchies de dossiers à partir de ces deux emplacements sont fusionnés pour créer le **types de projets** arborescence.
+#### <a name="project-type-child-nodes-and-vstdir-files"></a>Types de projet nœuds enfants et fichiers. vstdir
+ La position des nœuds enfants dans l’arborescence des **types de projets** suit la hiérarchie des dossiers dans les dossiers ProjectTemplates. Pour les modèles d’ordinateur (**modèles Visual Studio installés**), l’emplacement standard est \Program Files\Microsoft Visual Studio 14.0 \ Common7\IDE\ProjectTemplates\ et pour les modèles utilisateur (**Mes modèles**), l’emplacement standard est \Mes documents \ @No__t_2 Visual Studio 14.0 \ Templates\ProjectTemplates. Les hiérarchies de dossiers de ces deux emplacements sont fusionnées pour créer l’arborescence des **types de projets** .
 
- Pour Visual Studio avec des paramètres de développeur c#, le **types de projets** arborescence ressemble à ceci :
+ Pour Visual Studio avec C# les paramètres de développement, l’arborescence des **types de projets** ressemble à ceci :
 
  ![Types de projets](../../extensibility/internals/media/projecttypes.png "ProjectTypes")
 
- Le dossier ProjectTemplates correspondant ressemble à ceci :
+ Le dossier ProjectTemplates correspondant se présente comme suit :
 
  ![Modèles de projet](../../extensibility/internals/media/projecttemplates.png "ProjectTemplates")
 
- Lorsque le **nouveau projet** boîte de dialogue s’ouvre, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] traverse le dossier ProjectTemplates et recrée sa structure dans le **types de projets** arborescence avec des modifications :
+ Quand la boîte **de dialogue Nouveau projet** s’ouvre, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] parcourt le dossier ProjectTemplates et recrée sa structure dans l’arborescence **types de projets** avec quelques modifications :
 
-- Le nœud racine dans le **types de projets** arborescence est déterminée par le modèle d’application.
+- Le nœud racine de l’arborescence des **types de projets** est déterminé par le modèle d’application.
 
 - Le nom du nœud peut être localisé et peut contenir des caractères spéciaux.
 
 - L’ordre de tri peut être modifié.
 
-##### <a name="finding-the-root-node-for-a-project-type"></a>Recherche le nœud racine pour un Type de projet
- Lorsque Visual Studio parcourt les dossiers ProjectTemplates, il ouvre tous les fichiers .zip et extrait tous les fichiers .vstemplate. Un fichier .vstemplate utilise XML pour décrire un modèle d’application. Pour plus d’informations, consultez [nouvelle génération de projet : Sous le capot, deuxième partie](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md).
+##### <a name="finding-the-root-node-for-a-project-type"></a>Recherche du nœud racine pour un type de projet
+ Lorsque Visual Studio parcourt les dossiers ProjectTemplates, il ouvre tous les fichiers. zip et extrait tous les fichiers. vstemplate. Un fichier. vstemplate utilise XML pour décrire un modèle d’application. Pour plus d’informations, consultez [nouvelle génération de projet : sous le capot, deuxième partie](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md).
 
- Le \<ProjectType > balise détermine le type de projet pour l’application. Par exemple, le fichier \CSharp\SmartDevice\WindowsCE\1033\WindowsCE-EmptyProject.zip contient un fichier EmptyProject.vstemplate qui a cette balise :
+ La balise \<ProjectType > détermine le type de projet de l’application. Par exemple, le fichier \CSharp\SmartDevice\WindowsCE\1033\WindowsCE-EmptyProject.zip contient un fichier EmptyProject. vstemplate contenant cette balise :
 
 ```
 <ProjectType>CSharp</ProjectType>
 ```
 
- Le \<ProjectType > balise et pas le sous-dossier dans le dossier ProjectTemplates, détermine le nœud racine de l’application dans le **types de projets** arborescence. Dans l’exemple, les applications Windows CE apparaîtraient sous la **Visual C#** nœud racine, et même si vous deviez déplacer le dossier WindowsCE vers le dossier de Visual Basic, les applications Windows CE seraient apparaissent toujours sous le  **Visual C#** nœud racine.
+ La balise \<ProjectType >, et non le sous-dossier du dossier ProjectTemplates, détermine le nœud racine d’une application dans l’arborescence **types de projets** . Dans l’exemple, Windows ce applications s’affichent sous le nœud racine **visuel C#**  , et même si vous deviez déplacer le dossier WindowsCE vers le dossier VisualBasic, Windows ce applications apparaissent toujours sous la **racine C# visuelle** information.
 
-##### <a name="localizing-the-node-name"></a>Localisation du nom de nœud
- Lorsque Visual Studio parcourt les dossiers ProjectTemplates, il examine tous les fichiers .vstdir qu’il trouve. Un fichier .vstdir est un fichier XML qui contrôle l’apparence du type de projet dans le **nouveau projet** boîte de dialogue. Dans le fichier .vstdir, utilisez le \<LocalizedName > balise au nom de la **types de projets** nœud.
+##### <a name="localizing-the-node-name"></a>Localisation du nom du nœud
+ Lorsque Visual Studio parcourt les dossiers ProjectTemplates, il examine tous les fichiers. vstdir qu’il trouve. Un fichier. vstdir est un fichier XML qui contrôle l’apparence du type de projet dans la boîte de dialogue **nouveau projet** . Dans le fichier. vstdir, utilisez la balise > \<LocalizedName pour nommer le nœud **types de projets** .
 
  Par exemple, le fichier \CSharp\Database\TemplateIndex.vstdir contient cette balise :
 
@@ -140,12 +140,12 @@ devenv /installvstemplates
 <LocalizedName Package="{462b036f-7349-4835-9e21-bec60e989b9c}" ID="4598"/>
 ```
 
- Ce paramètre détermine l’ID de ressources et de la DLL satellite de la chaîne localisée qui nomme le nœud racine, dans ce cas, **base de données**. Le nom localisé peut contenir des caractères spéciaux qui ne sont pas disponibles pour les noms de dossier, tel que **.NET**.
+ Cela détermine la DLL satellite et l’ID de ressource de la chaîne localisée qui nomme le nœud racine, dans ce cas, la **base de données**. Le nom localisé peut contenir des caractères spéciaux qui ne sont pas disponibles pour les noms de dossiers, tels que **.net**.
 
- Si aucun \<LocalizedName > balise est présente, le type de projet est nommé par le dossier lui-même, **SmartPhone2003**.
+ Si aucun \<LocalizedName > balise n’est présent, le type de projet est nommé par le dossier lui-même, **SmartPhone2003**.
 
-##### <a name="finding-the-sort-order-for-a-project-type"></a>Recherche de l’ordre de tri pour un Type de projet
- Pour déterminer l’ordre de tri du type de projet, utilisent les fichiers .vstdir le \<SortOrder > balise.
+##### <a name="finding-the-sort-order-for-a-project-type"></a>Recherche de l’ordre de tri pour un type de projet
+ Pour déterminer l’ordre de tri du type de projet, les fichiers. vstdir utilisent la balise \<SortOrder >.
 
  Par exemple, le fichier \CSharp\Windows\Windows.vstdir contient cette balise :
 
@@ -159,20 +159,20 @@ devenv /installvstemplates
 <SortOrder>5000</SortOrder>
 ```
 
- Plus le nombre dans le \<SortOrder > balise, plus la position dans l’arborescence, afin que la **Windows** nœud apparaît supérieure à la **base de données** nœud dans le **types de projets**  arborescence.
+ Plus le nombre indiqué dans la balise \<SortOrder > est faible, plus la position dans l’arborescence est élevée, de sorte que le nœud **Windows** apparaît plus haut que le nœud **de la base de données** dans l’arborescence des **types de projets** .
 
- Si aucun \<SortOrder > balise est spécifié pour un type de projet, il apparaît dans l’ordre alphabétique suivant les types de projets qui contiennent \<SortOrder > spécifications.
+ Si aucune \<SortOrder > balise n’est spécifiée pour un type de projet, elle apparaît dans l’ordre alphabétique après tous les types de projet qui contiennent des spécifications de > \<SortOrder.
 
- Notez qu’il n’y a aucun fichier .vstdir dans Mes Documents (**Mes modèles**) dossiers. Noms de types de projet application utilisateur ne sont pas localisés et apparaissent dans l’ordre alphabétique.
+ Notez qu’il n’y a aucun fichier. vstdir dans les dossiers Mes documents (**Mes modèles**). Les noms de types de projets d’application utilisateur ne sont pas localisés et s’affichent par ordre alphabétique.
 
-#### <a name="a-quick-review"></a>Un récapitulatif
- Nous allons modifier le **nouveau projet** boîte de dialogue zone et créer un nouveau modèle de projet utilisateur.
+#### <a name="a-quick-review"></a>Un examen rapide
+ Modifions la boîte de dialogue **nouveau projet** et créons un nouveau modèle de projet utilisateur.
 
-1. Ajouter un sous-dossier MyProjectNode vers le dossier \Program Files\Microsoft Visual Studio 14.0\Common7\IDE\ProjectTemplates\CSharp.
+1. Ajoutez un sous-dossier MyProjectNode dans le dossier \Program Files\Microsoft Visual Studio 14.0 \ Common7\IDE\ProjectTemplates\CSharp
 
-2. Créer un fichier MyProject.vstdir dans le dossier MyProjectNode à l’aide de n’importe quel éditeur de texte.
+2. Créez un fichier MyProject. vstdir dans le dossier MyProjectNode à l’aide de n’importe quel éditeur de texte.
 
-3. Ajoutez ces lignes au fichier .vstdir :
+3. Ajoutez ces lignes au fichier. vstdir :
 
    ```
    <TemplateDir Version="1.0.0">
@@ -180,11 +180,11 @@ devenv /installvstemplates
    </TemplateDir>
    ```
 
-4. Enregistrez et fermez le fichier .vstdir.
+4. Enregistrez et fermez le fichier. vstdir.
 
-5. Créer un fichier MyProject.vstemplate dans le dossier MyProjectNode à l’aide de n’importe quel éditeur de texte.
+5. Créez un fichier MyProject. vstemplate dans le dossier MyProjectNode à l’aide de n’importe quel éditeur de texte.
 
-6. Dans le fichier .vstemplate, ajoutez ces lignes :
+6. Ajoutez ces lignes au fichier. vstemplate :
 
    ```
    <VSTemplate Version="2.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
@@ -194,11 +194,11 @@ devenv /installvstemplates
    </VSTemplate>
    ```
 
-7. Enregistrez le fichier de the.vstemplate et fermez l’éditeur.
+7. Enregistrez le fichier. vstemplate et fermez l’éditeur.
 
-8. Envoyer le fichier .vstemplate dans un nouveau dossier MyProjectNode\MyProject.zip compressé.
+8. Envoyez le fichier. vstemplate à un nouveau dossier MyProjectNode\MyProject.zip compressé.
 
-9. À partir de la fenêtre de commande Visual Studio, tapez :
+9. Dans la fenêtre commande de Visual Studio, tapez :
 
     ```
     devenv /installvstemplates
@@ -206,11 +206,11 @@ devenv /installvstemplates
 
    Ouvrez Visual Studio.
 
-10. Ouvrir le **nouveau projet** boîte de dialogue zone et développez le **Visual C#** nœud du projet.
+10. Ouvrez la boîte de dialogue **nouveau projet** et développez le nœud de projet **visuel C#**  .
 
     ![MyProjectNode](../../extensibility/internals/media/myprojectnode.png "MyProjectNode")
 
-    **MyProjectNode** apparaît sous la forme d’un nœud enfant de Visual C# juste sous le nœud de Windows.
+    **MyProjectNode** apparaît en tant que nœud enfant de C# l’élément visuel juste sous le nœud Windows.
 
 ## <a name="see-also"></a>Voir aussi
-- [Nouvelle génération de projet : Rouages du système, seconde partie](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)
+- [Génération de nouveau projet : les rouages du système, partie 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

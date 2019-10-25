@@ -1,5 +1,5 @@
 ---
-title: Interrogation de la. Fichier PDB | Microsoft Docs
+title: Interrogation de. Fichier PDB | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,19 +13,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a67dc121790acff1f5e39a82a1711317616fc2d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 68efbd59abe1b0aff717a55383f3ac330586164a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62855041"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738579"
 ---
 # <a name="querying-the-pdb-file"></a>Interrogation du fichier .Pdb
-Un fichier de base de données de programme (.pdb extension) est un fichier binaire qui contient le type et les informations de débogage symboliques collectées au cours de la compilation et liaison du projet. Un fichier PDB est créé lorsque vous compilez un programme C/C++ avec **/Zi** ou **/Zi** ou un [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], ou [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)] programmer avec le **/debug** option. Fichiers objets contiennent des références dans le fichier .pdb pour les informations de débogage. Pour plus d’informations sur les fichiers pdb, consultez [fichiers PDB](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/yd4f8bd1(v=vs.100)). Une application de DIA peut utiliser les étapes générales suivantes pour obtenir des détails sur les différents symboles, les objets et les éléments de données dans une image exécutable.
+Un fichier de base de données de programme (extension. pdb) est un fichier binaire qui contient des informations de débogage de type et symboliques rassemblées au cours de la compilation et de la liaison du projet. Un fichier PDB est créé lors de la compilation d’unC++ programme C/Program avec **/Zi** ou **/zi** ou d’un programme [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] ou [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)] avec l’option **/Debug** . Les fichiers objets contiennent des références dans le fichier. pdb pour les informations de débogage. Pour plus d’informations sur les fichiers PDB, consultez [fichiers PDB](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/yd4f8bd1(v=vs.100)). Une application DIA peut utiliser les étapes générales suivantes pour obtenir des détails sur les différents symboles, objets et éléments de données dans une image exécutable.
 
-### <a name="to-query-the-pdb-file"></a>Pour interroger le fichier .pdb
+### <a name="to-query-the-pdb-file"></a>Pour interroger le fichier. pdb
 
-1. Acquérir une source de données en créant un [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md) interface.
+1. Acquérir une source de données en créant une interface [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md) .
 
     ```C++
     CComPtr<IDiaDataSource> pSource;
@@ -41,7 +41,7 @@ Un fichier de base de données de programme (.pdb extension) est un fichier bina
     }
     ```
 
-2. Appelez [IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) ou [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) pour charger les informations de débogage.
+2. Appelez [IDiaDataSource :: loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) ou [IDiaDataSource :: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) pour charger les informations de débogage.
 
     ```C++
     wchar_t wszFilename[ _MAX_PATH ];
@@ -55,7 +55,7 @@ Un fichier de base de données de programme (.pdb extension) est un fichier bina
     }
     ```
 
-3. Appelez [IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md) pour ouvrir un [IDiaSession](../../debugger/debug-interface-access/idiasession.md) pour accéder aux informations de débogage.
+3. Appelez [IDiaDataSource :: OpenSession](../../debugger/debug-interface-access/idiadatasource-opensession.md) pour ouvrir un [IDiaSession](../../debugger/debug-interface-access/idiasession.md) afin d’accéder aux informations de débogage.
 
     ```C++
     CComPtr<IDiaSession> psession;
@@ -65,7 +65,7 @@ Un fichier de base de données de programme (.pdb extension) est un fichier bina
     }
     ```
 
-4. Utilisez les méthodes de `IDiaSession` pour rechercher des symboles dans la source de données.
+4. Utilisez les méthodes de `IDiaSession` pour rechercher les symboles dans la source de données.
 
     ```C++
     CComPtr<IDiaSymbol> pglobal;
@@ -75,7 +75,7 @@ Un fichier de base de données de programme (.pdb extension) est un fichier bina
     }
     ```
 
-5. Utilisez le `IDiaEnum*` interfaces pour énumérer et parcourir les symboles ou d’autres éléments d’informations de débogage.
+5. Utilisez les interfaces de `IDiaEnum*` pour énumérer et analyser les symboles ou autres éléments des informations de débogage.
 
     ```C++
     CComPtr<IDiaEnumTables> pTables;

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa4478788c820485ac3284e9533987ceb8e3492f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b9a2a433c33d46215168238e9956ce0427171b24
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832116"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741570"
 ---
-# <a name="idiastackframegettype"></a>IDiaStackFrame::get_type
-Récupère le type de trame.
+# <a name="idiastackframeget_type"></a>IDiaStackFrame::get_type
+Récupère le type de frame.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,10 +33,10 @@ HRESULT get_type ( 
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-[out] Retourne une valeur de la [StackFrameTypeEnum (énumération)](../../debugger/debug-interface-access/stackframetypeenum.md) énumération.
+à Retourne une valeur de l’énumération d' [énumération StackFrameTypeEnum](../../debugger/debug-interface-access/stackframetypeenum.md) .
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si la propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si la propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

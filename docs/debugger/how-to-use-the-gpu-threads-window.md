@@ -1,5 +1,5 @@
 ---
-title: Affichage des Threads GPU dans le débogueur | Microsoft Docs
+title: Affichage des threads GPU dans le débogueur | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -18,21 +18,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59229b1ca2b055fc8242bf6446541a395eceaa56
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 972b21c4535df37dd81da6aceaa062b39176469c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62846852"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72732084"
 ---
-# <a name="how-to-use-the-gpu-threads-window-c"></a>Procédure : Utilisez la fenêtre Threads GPU (C++)
-Dans la fenêtre Threads GPU, vous pouvez visualiser et utiliser les threads qui s'exécutent sur le GPU dans l'application que vous déboguez. Pour plus d’informations sur les applications qui s’exécutent sur le GPU, consultez [présentation de C++ AMP](/cpp/parallel/amp/cpp-amp-overview).
+# <a name="how-to-use-the-gpu-threads-window-c"></a>Comment : utiliser la fenêtre threads GPU (C++)
+Dans la fenêtre Threads GPU, vous pouvez visualiser et utiliser les threads qui s'exécutent sur le GPU dans l'application que vous déboguez. Pour plus d’informations sur les applications qui s’exécutent sur le GPU, consultez [ C++ vue d’ensemble du amp](/cpp/parallel/amp/cpp-amp-overview).
 
  La fenêtre Threads GPU contient une table dans laquelle chaque ligne représente un ensemble de threads GPU qui ont les mêmes valeurs dans toutes les colonnes. Vous pouvez trier, réorganiser, supprimer et regrouper les éléments qui figurent dans les colonnes. Vous pouvez marquer ou supprimer l'indicateur, figer et libérer (reprendre) les threads à partir de la fenêtre Threads GPU. Les colonnes suivantes sont affichées dans la fenêtre Threads GPU :
 
 - La colonne d'indicateur, où vous pouvez marquer un thread auquel vous souhaitez apporter une attention spéciale.
 
-- Colonne de thread active, dans lequel une flèche jaune indique que le thread actuel.
+- Colonne de thread actuelle, dans laquelle une flèche jaune indique le thread actuel.
 
 - Colonne **Nombre de threads**, qui affiche le nombre de threads au même emplacement.
 
@@ -68,7 +68,7 @@ Dans la fenêtre Threads GPU, vous pouvez visualiser et utiliser les threads qui
 
 ### <a name="to-switch-to-a-different-thread"></a>Pour basculer vers un autre thread
 
-- Double-cliquez sur la colonne. (Clavier : Sélectionnez la ligne et appuyez sur ENTRÉE.)
+- Double-cliquez sur la colonne. (Raccourci : sélectionnez la ligne et choisissez Entrée.)
 
 ### <a name="to-display-a-particular-tile-and-thread"></a>Pour afficher une mosaïque et un thread particuliers
 
@@ -105,4 +105,4 @@ Dans la fenêtre Threads GPU, vous pouvez visualiser et utiliser les threads qui
 ## <a name="see-also"></a>Voir aussi
 - [Déboguer les applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Guide pratique pour utiliser la fenêtre Espion parallèle](../debugger/how-to-use-the-parallel-watch-window.md)
-- [Procédure pas à pas : Débogage d’une application C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)
+- [Procédure pas-à-pas : débogage d’une application C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

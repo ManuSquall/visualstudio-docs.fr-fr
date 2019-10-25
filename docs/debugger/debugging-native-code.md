@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e51918122834dd6b50952b9cc81a1d24a6477dd0
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: f98b99a31d9215d661879aa7fa52d4b671024496
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72431766"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738166"
 ---
 # <a name="debugging-native-code"></a>Débogage du code natif
 Cette section décrit des techniques et des problèmes de débogage courants pour les applications natives. Les techniques décrites dans cette section sont des techniques avancées. Pour savoir comment utiliser le débogueur Visual Studio, consultez [tout d’abord le débogueur](../debugger/debugger-feature-tour.md).
@@ -33,7 +33,7 @@ Cette section décrit des techniques et des problèmes de débogage courants pou
 ## <a name="in-this-section"></a>Dans cette section
  [Comment : déboguer le code optimisé](../debugger/how-to-debug-optimized-code.md) Donne des conseils sur le débogage de code optimisé, en particulier sur la raison pour laquelle vous devez déboguer une version non optimisée de votre programme, les paramètres d’optimisation par défaut pour les configurations Debug et Release, ainsi que des conseils pour rechercher des bogues qui apparaissent uniquement dans le code optimisé (activation optimisation dans une configuration de build Debug).
 
- [DebugBreak et __debugbreak](../debugger/debugbreak-and-debugbreak.md) Décrit la fonction Win32 `DebugBreak` et fournit un lien vers sa rubrique de référence dans le kit de développement logiciel (SDK) de plateforme. Décrit également l'objet intrinsèque `__debugbreak`.
+ [DebugBreak et __debugbreak](../debugger/debugbreak-and-debugbreak.md) Décrit la fonction de `DebugBreak` Win32 et fournit un lien vers sa rubrique de référence dans le kit de développement logiciel (SDK) de plateforme. Décrit également l'objet intrinsèque `__debugbreak`.
 
  [C/C++ assertions](../debugger/c-cpp-assertions.md) Décrit les instructions d’assertion, leur fonctionnement, les avantages de leur utilisation (interception des erreurs de logique, vérification des résultats d’une opération et test des conditions d’erreur), leur interaction avec `_DEBUG` et les types d’assertions prises en charge dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 

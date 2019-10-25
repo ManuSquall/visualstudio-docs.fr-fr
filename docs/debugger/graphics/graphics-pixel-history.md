@@ -10,19 +10,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23ada46a28d692daf238147ea07f34d440a99869
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8cb1b7a869915eebc561e1baf47082dd5dbc00df
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388589"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72735484"
 ---
 # <a name="graphics-pixel-history"></a>Historique des pixels Graphics
 La fenêtre Historique des pixels Graphics dans Visual Studio Graphics Analyzer vous aide à comprendre comment un pixel spécifique est affecté par les événements Direct3D qui se produisent dans un frame de votre jeu ou application.
 
  Voici la fenêtre Historique des pixels :
 
- ![Un pixel avec trois événements Direct3D dans son historique. ](media/gfx_diag_demo_pixel_history_orientation.png "gfx_diag_demo_pixel_history_orientation")
+ ![Un pixel avec trois événements Direct3D dans son historique.](media/gfx_diag_demo_pixel_history_orientation.png "gfx_diag_demo_pixel_history_orientation")
 
 ## <a name="understanding-the-pixel-history-window"></a>Présentation de la fenêtre Historique des pixels
  À l'aide de l'Historique des pixels, vous pouvez analyser la façon dont un pixel spécifique de la cible de rendu est affecté par des événements Direct3D dans un frame. Vous pouvez identifier un problème de rendu d'un événement Direct3D spécifique, même quand d'autres évènements (ou d'autres primitives du même événement) continuent à changer la valeur de la couleur finale du pixel. Par exemple, un pixel peut être rendu de manière incorrecte et être ensuite masqué par un autre pixel, semi-transparent, ce qui entraîne un mélange de leurs couleurs dans le framebuffer. Ce genre de problème peut être difficile à diagnostiquer si vous n'avez que le contenu final de la cible de rendu comme repère.
@@ -40,9 +40,9 @@ La fenêtre Historique des pixels Graphics dans Visual Studio Graphics Analyzer 
 
 |Icône|Raison de l'exclusion|
 |----------|--------------------------|
-|![Icône d’échec au test de profondeur. ](media/vsg_hist_icon_failed_depth.png "vsg_hist_icon_failed_depth")|Le pixel a été exclu parce qu'il n'a pas réussi le test Depth Test.|
-|![Icône d’échec au test scissor. ](media/vsg_hist_icon_failed_scissor.png "vsg_hist_icon_failed_scissor")|Le pixel a été exclu parce qu'il n'a pas réussi le test Scissor Test.|
-|![Icône d’échec au test stencil. ](media/vsg_hist_icon_failed_stencil.png "vsg_hist_icon_failed_stencil")|Le pixel a été exclu parce qu'il n'a pas réussi le test Stencil Test.|
+|![Icône d’échec du test de profondeur.](media/vsg_hist_icon_failed_depth.png "vsg_hist_icon_failed_depth")|Le pixel a été exclu parce qu'il n'a pas réussi le test Depth Test.|
+|![Icône d’échec du test de ciseaux.](media/vsg_hist_icon_failed_scissor.png "vsg_hist_icon_failed_scissor")|Le pixel a été exclu parce qu'il n'a pas réussi le test Scissor Test.|
+|![Icône d’échec du test du stencil.](media/vsg_hist_icon_failed_stencil.png "vsg_hist_icon_failed_stencil")|Le pixel a été exclu parce qu'il n'a pas réussi le test Stencil Test.|
 
 ### <a name="draw-call-exclusion"></a>Exclusion d'appel de dessin
  Si aucune des primitives d’un appel de dessin ne peut affecter la cible de rendu, car elles ne réussissent pas un test, l’appel de dessin ne peut pas être développé et une icône correspondant à la raison de l’exclusion s’affiche juste à côté. Les raisons de l'exclusion d'un appel de dessin ressemblent aux raisons de l'exclusion d'une primitive. En outre, leurs icônes sont similaires.
@@ -75,5 +75,5 @@ La fenêtre Historique des pixels Graphics dans Visual Studio Graphics Analyzer 
  Pour comprendre les événements graphiques de l'historique des pixels, vous pouvez avoir besoin d'informations sur l'état de l'appareil au moment de l'événement ou sur les objets Direct3D référencés par l'événement. Pour chaque événement de l’historique des pixels, l’**Historique des pixels Graphics** fournit des liens vers l’état de l’appareil actuel et les objets connexes.
 
 ## <a name="see-also"></a>Voir aussi
-- [Procédure pas à pas : objets manquants en raison de l’état du périphérique](walkthrough-missing-objects-due-to-device-state.md)
+- [Procédure pas à pas : objets manquants en raison de l’état de l’appareil](walkthrough-missing-objects-due-to-device-state.md)
 - [Procédure pas à pas : débogage des erreurs de rendu dues à l’ombrage](walkthrough-debugging-rendering-errors-due-to-shading.md)

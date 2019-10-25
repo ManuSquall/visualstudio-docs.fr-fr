@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbdb525034016981c1f9030e6bce1f9590c45591
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f0a6636b692a3017adb6d8b9242dca62f397bf40
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838322"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744672"
 ---
 # <a name="idiaenumframedataframebyrva"></a>IDiaEnumFrameData::frameByRVA
-Retourne un cadre par adresse virtuelle relative (RVA).
+Retourne un frame par adresse virtuelle relative (RVA).
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -34,14 +34,14 @@ HRESULT frameByRVA( 
 #### <a name="parameters"></a>Paramètres
  relativeVirtualAddress
 
-[in] Adresse RVA du frame d’intérêt.
+dans Adresse RVA du cadre qui vous intéresse.
 
  frame
 
-[out] Retourne un [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) objet représentant le frame qui contient l’adresse fournie.
+à Retourne un objet [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md) représentant le frame qui contient l’adresse fournie.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si aucune donnée de frame correspond à l’adresse spécifiée. Sinon, retourne un code d'erreur.
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si aucune donnée de frame ne correspond à l’adresse spécifiée. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)

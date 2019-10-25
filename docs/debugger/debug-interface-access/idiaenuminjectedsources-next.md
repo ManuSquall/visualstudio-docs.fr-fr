@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aea793f33eb78ee1637d7f22eb46ba34514e0e8f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 84dd3e1d107b8e55d5e94979627d1c1586534127
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554032"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744495"
 ---
 # <a name="idiaenuminjectedsourcesnext"></a>IDiaEnumInjectedSources::Next
-Récupère un nombre spécifié de sources injectés dans la séquence d’énumération.
+Récupère un nombre spécifié de sources injectées dans la séquence d’énumération.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -35,18 +35,18 @@ HRESULT Next ( 
 #### <a name="parameters"></a>Paramètres
  celt
 
-[in] Le nombre de sources injectés dans l’énumérateur à récupérer.
+dans Nombre de sources injectées dans l’énumérateur à récupérer.
 
  rgelt
 
-[out] Retourne un tableau de [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) objets qui représentent les sources injectés souhaités.
+à Retourne un tableau d’objets [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) qui représente les sources injectées souhaitées.
 
  pceltFetched
 
-[out] Retourne le nombre de sources injectés dans l’énumérateur extraite.
+à Retourne le nombre de sources injectées dans l’énumérateur extrait.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` s’il existe plus aucun injectées sources. Sinon, retourne un code d'erreur.
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` s’il n’y a plus de sources injectées. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

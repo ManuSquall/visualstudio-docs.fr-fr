@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41987007dd5121dff8cce1eb91ea9e1c4d93578c
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 7e96216b5e33031405df3b01a3f76412a544bb51
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64816345"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740438"
 ---
-# <a name="idiasymbolgethasseh"></a>IDiaSymbol::get_hasSEH
-Récupère un indicateur qui spécifie si la fonction contient un [Structured Exception Handling (C /C++)](/cpp/cpp/structured-exception-handling-c-cpp) (par exemple, __try /\__except blocs).
+# <a name="idiasymbolget_hasseh"></a>IDiaSymbol::get_hasSEH
+Récupère un indicateur qui spécifie si la fonction contient une [gestion structurée des exceptions (C++C/)](/cpp/cpp/structured-exception-handling-c-cpp) (par exemple, des blocs _ _ try/\__except).
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,20 +33,20 @@ HRESULT get_hasSEH(
 #### <a name="parameters"></a>Paramètres
  `pFlag`
 
-[out] Retourne `TRUE` si la fonction a tout structurée des exceptions blocs ; sinon, retourne `FALSE`.
+à Retourne `TRUE` si la fonction contient des blocs de gestion des exceptions structurés ; Sinon, retourne `FALSE`.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
-> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> Une valeur de retour de `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>spécifications
 
-|Prérequis|Description|
+|Exigence|Description|
 |-----------------|-----------------|
 |En-tête :|dia2.h|
-|Version :|DIA SDK 8.0|
+|Version :|DIA SDK v 8.0|
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

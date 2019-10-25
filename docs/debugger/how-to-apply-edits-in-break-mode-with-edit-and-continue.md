@@ -1,5 +1,5 @@
 ---
-title: Appliquer des modifications en mode arrêt avec Modifier & Continuer | Microsoft Docs
+title: Appliquer les modifications en mode arrêt avec modifier & continuer | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -23,17 +23,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6c821c63354ec1b7cc83e302a3c2682982696e2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 05340b4922262eb134aca8fef4bf215342e5a997
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63387690"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72734031"
 ---
-# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>Procédure : Appliquer des modifications en Mode arrêt avec modifier et continuer (Visual Basic)
+# <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>Comment : appliquer des modifications en mode arrêt à l’aide de la fonction Modifier & Continuer (Visual Basic)
 Vous pouvez utiliser Modifier &amp; Continuer pour modifier votre code en mode Arrêt, puis continuer sans arrêter et redémarrer l'exécution.
 
-Pour connaître les limitations sur l’utilisation de modifier & Continuer pendant le débogage, consultez [pris en charge les modifications de Code (C# et Visual Basic)](../debugger/supported-code-changes-csharp.md).
+Pour connaître les limitations relatives à l’utilisation de modifier & continuer pendant le débogage, consultez [modifications de code prises en charge (C# et Visual Basic)](../debugger/supported-code-changes-csharp.md).
 
 ### <a name="to-edit-code-in-break-mode"></a>Pour modifier du code en mode Arrêt
 
@@ -41,17 +41,17 @@ Pour connaître les limitations sur l’utilisation de modifier & Continuer pend
 
     - Définissez un point d’arrêt dans votre code, puis cliquez sur **Démarrer le débogage** dans le menu **Déboguer** et attendez que l’application parvienne au point d’arrêt.
 
-         - ou -
+         ou
 
     - Démarrez le débogage, puis sélectionnez **Interrompre tout** dans le menu **Déboguer**.
 
-         - ou -
+         ou
 
-    - Lorsqu’une exception se produit, choisissez **activer la modification** sur le **Assistant Exception**.
+    - Quand une exception se produit, choisissez **activer la modification** dans l' **Assistant Exception**.
 
-2. Apportez les modifications de code souhaitées et pris en charge.
+2. Apportez les modifications de code souhaitées et prises en charge.
 
-     Pour plus d’informations, consultez [pris en charge les modifications de Code (C# et Visual Basic)](../debugger/supported-code-changes-csharp.md).
+     Pour plus d’informations, consultez [modifications du codeC# prises en charge (et Visual Basic)](../debugger/supported-code-changes-csharp.md).
 
     > [!NOTE]
     > Si vous tentez d'effectuer une modification du code qui n'est pas autorisée par l'opération Modifier &amp; Continuer, votre modification est soulignée d'un trait ondulé violet et une tâche s'affiche dans la liste des tâches. Il vous est impossible de continuer l'exécution du code sauf si vous annulez la modification de code non autorisée.
@@ -61,5 +61,5 @@ Pour connaître les limitations sur l’utilisation de modifier & Continuer pend
      Votre code s'exécute désormais avec les modifications que vous avez appliquées dans le projet.
 
 ## <a name="see-also"></a>Voir aussi
-- [Prise en charge des modifications de Code (C# et Visual Basic)](../debugger/supported-code-changes-csharp.md)
+- [Modifications du code prisesC# en charge (et Visual Basic)](../debugger/supported-code-changes-csharp.md)
 - [Modifier & Continuer (Visual Basic)](../debugger/edit-and-continue-visual-basic.md)

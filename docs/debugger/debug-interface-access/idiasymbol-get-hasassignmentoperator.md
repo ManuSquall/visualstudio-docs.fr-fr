@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54593a8a59c500e05cdd359331b83f14199b5b64
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ce2da67192ed5ab3bea2f24c2ed52a7655ff1f8e
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64787954"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740574"
 ---
-# <a name="idiasymbolgethasassignmentoperator"></a>IDiaSymbol::get_hasAssignmentOperator
-Récupère un indicateur qui spécifie si le type de données défini par l’utilisateur a des opérateurs d’assignation définies.
+# <a name="idiasymbolget_hasassignmentoperator"></a>IDiaSymbol::get_hasAssignmentOperator
+Récupère un indicateur qui spécifie si des opérateurs d’assignation sont définis pour le type de données défini par l’utilisateur.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,20 +33,20 @@ HRESULT get_hasAssignmentOperator ( 
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-[out] Retourne `TRUE` si le type de données défini par l’utilisateur a des opérateurs d’assignation définis ; sinon, retourne `FALSE`.
+à Retourne `TRUE` si des opérateurs d’assignation sont définis pour le type de données défini par l’utilisateur ; Sinon, retourne `FALSE`.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
-> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> Une valeur de retour de `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>spécifications
 
-|Prérequis|Description|
+|Exigence|Description|
 |-----------------|-----------------|
 |En-tête :|dia2.h|
-|Version :|DIA SDK v7.0|
+|Version :|DIA SDK v 7.0|
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

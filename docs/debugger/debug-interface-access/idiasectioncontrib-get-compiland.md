@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b920a9f1c3191bfea580df510c7a44c2b7929e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d9a398d7cc0ff8efc9dacc726205cd0d8fa02473
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828256"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742717"
 ---
-# <a name="idiasectioncontribgetcompiland"></a>IDiaSectionContrib::get_compiland
-Récupère une référence au symbole de compiland qui ont contribué à cette section.
+# <a name="idiasectioncontribget_compiland"></a>IDiaSectionContrib::get_compiland
+Récupère une référence au symbole compiland qui a contribué à cette section.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,10 +33,10 @@ HRESULT get_compiland ( 
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-[out] Retourne un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objet représentant le compiland qui ont contribué à cette section.
+à Retourne un objet [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) qui représente le compiland qui a participé à cette section.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

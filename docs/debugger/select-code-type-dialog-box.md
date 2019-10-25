@@ -1,5 +1,5 @@
 ---
-title: Sélectionnez le Type de Code, boîte de dialogue | Microsoft Docs
+title: Sélectionner le type de code, boîte de dialogue | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -21,19 +21,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16091b8743a30404560a1bf841710f65ad1343a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 761845044bae9b35694bef53cae36dd64f3dd6ba
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929766"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72729581"
 ---
 # <a name="select-code-type-dialog-box"></a>Sélectionner le type de code, boîte de dialogue
 Pour ouvrir cette boîte de dialogue, ouvrez la boîte de dialogue **Attacher au processus**, puis cliquez sur le bouton **Sélectionner**.
 
- **Déterminer automatiquement le type de code à déboguer** le débogueur approprié sera sélectionné en fonction du type de code qui est en cours d’exécution.
+ **Déterminer automatiquement le type de code à déboguer** Le débogueur approprié sera sélectionné en fonction du genre de code en cours d’exécution.
 
- **Déboguer ces types de codes :** Dans la liste fournie, sélectionnez le type de code que vous souhaitez déboguer.
+ **Déboguez ces types de code :** Dans la liste fournie, choisissez le type de code que vous souhaitez déboguer.
 
 ## <a name="see-also"></a>Voir aussi
 - [Sécurité du débogueur](../debugger/debugger-security.md)

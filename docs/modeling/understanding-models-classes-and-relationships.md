@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 42cbc0ea5694e462faf6d3995bc68723a3f522e7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 391dff6540bcea26f63d8ea88f344455722b742a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605838"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748218"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Présentation des modèles, des classes et des relations
 Un langage spécifique à un domaine (DSL) est défini par son fichier de définition DSL, ainsi que tout code de programme personnalisé que vous pouvez écrire. La majeure partie du code de programme dans la solution DSL est générée à partir de ce fichier.

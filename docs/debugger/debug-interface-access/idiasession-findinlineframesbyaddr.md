@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e0f35f845642089a8ee2b14c6047e809d525e5bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4839f19979da472c9a5515f0b8535464be8d92db
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62827524"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742171"
 ---
 # <a name="idiasessionfindinlineframesbyaddr"></a>IDiaSession::findInlineFramesByAddr
-Récupère une énumération qui permet au client d’effectuer une itération dans tous les cadres inline sur une adresse donnée.
+Récupère une énumération qui permet à un client d’itérer au sein de tous les frames insérés sur une adresse donnée.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,22 +33,22 @@ HRESULT findInlineFramesByAddr ( 
 #### <a name="parameters"></a>Paramètres
  `parent`
 
-[in] Un `IDiaSymbol` objet représentant le parent.
+dans Objet `IDiaSymbol` représentant le parent.
 
  `isect`
 
-[in] Spécifie le composant de la section de l’adresse.
+dans Spécifie le composant de section de l’adresse.
 
  `offset`
 
-[in] Spécifie le composant de décalage de l’adresse.
+dans Spécifie le composant de décalage de l’adresse.
 
  `ppResult`
 
-[out] Contient un `IDiaEnumSymbols` objet qui contient la liste d’images qui sont récupérés.
+à Contient un objet `IDiaEnumSymbols` qui contient la liste des frames récupérés.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne un code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66abd987e3da4fadaac9d5b2de6664c4ae9e24ac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 07402ef7028ecfb7bb5b2c6e33ae06bc98ffe709
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829756"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744388"
 ---
 # <a name="idiaenumlinenumbersnext"></a>IDiaEnumLineNumbers::Next
 Récupère un nombre spécifié de numéros de ligne dans la séquence d’énumération.
@@ -35,18 +35,18 @@ HRESULT Next ( 
 #### <a name="parameters"></a>Paramètres
  celt
 
-[in] Le nombre de numéros de ligne dans l’énumérateur à récupérer.
+dans Nombre de numéros de ligne dans l’énumérateur à récupérer.
 
  rgelt
 
-[out] Retourne un tableau de [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) objets qui représentent les numéros de ligne souhaité.
+à Retourne un tableau d’objets [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md) qui représentent les numéros de ligne souhaités.
 
  pceltFetched
 
-[out] Retourne le nombre de numéros de ligne dans l’énumérateur extraite.
+à Retourne le nombre de numéros de ligne dans l’énumérateur extrait.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` s’il en existe aucun numéro de ligne plus. Sinon, retourne un code d'erreur.
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` s’il n’y a plus de numéros de ligne. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)

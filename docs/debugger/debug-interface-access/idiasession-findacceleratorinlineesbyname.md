@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb3caa5574605864a0dd16b59b6f451530b8e631
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 007477d3f0de3767b0c5ef0af977f969505884ed
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62827790"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742308"
 ---
 # <a name="idiasessionfindacceleratorinlineesbyname"></a>IDiaSession::findAcceleratorInlineesByName
-Retourne une énumération de symboles pour les frames en ligne correspondant au nom de fonction inline spécifiés.
+Retourne une énumération de symboles pour les frames insérés correspondant au nom de fonction inline spécifié.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,21 +33,21 @@ HRESULT findAcceleratorInlineeLinesByName ( 
 #### <a name="parameters"></a>Paramètres
  `name`
 
-[in] Le nom de fonction inline à rechercher.
+dans Nom de la fonction inline dans lequel effectuer la recherche.
 
  `option`
 
-[in] Les options de recherche de nom à utiliser lors de la recherche d’inline des frames qui correspondent aux `name`. Pour plus d’informations, consultez [NameSearchOptions (énumération)](../../debugger/debug-interface-access/namesearchoptions.md).
+dans Options de recherche de nom à utiliser lors de la recherche de frames insérés correspondant à `name`. Pour plus d’informations, consultez [énumération NameSearchOptions](../../debugger/debug-interface-access/namesearchoptions.md).
 
  `ppResult`
 
-[out] Un pointeur vers un `IDiaEnumSymbols` pointeur d’interface qui est initialisé avec le résultat.
+à Pointeur vers un pointeur d’interface `IDiaEnumSymbols` qui est initialisé avec le résultat.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK`; Sinon, retourne un code d’erreur.
 
 ## <a name="remarks"></a>Notes
- Cette fonction recherche les éléments inline uniquement dans les fonctions de stub d’accélérateur. Il ignore les enregistrements de procédure C++ natifs.
+ Cette fonction recherche des Inlines uniquement dans les fonctions d’accélérateur. Elle ignore les C++ enregistrements de procédures natives.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

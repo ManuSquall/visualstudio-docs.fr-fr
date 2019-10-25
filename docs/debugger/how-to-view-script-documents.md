@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Afficher les Documents de Script | Microsoft Docs'
+title: 'Comment : afficher des documents de script | Microsoft Docs'
 ms.date: 01/08/2019
 ms.topic: conceptual
 dev_langs:
@@ -15,23 +15,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 821e3bc4abc379f0ed7fc1343867f88fefe54b17
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7696122cc9f0d431f310b8d6efb10819af995823
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62906067"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72731859"
 ---
-# <a name="how-to-view-script-documents-javascript"></a>Procédure : Afficher les Documents de Script (JavaScript)
+# <a name="how-to-view-script-documents-javascript"></a>Comment : afficher des documents de script (JavaScript)
 
-Fichiers de script côté serveur sont visibles dans l’Explorateur de solutions. Les fichiers de script côté client sont visibles uniquement lorsque vous êtes en mode débogage ou en mode arrêt. Fichiers de script côté client s’affichent dans le **Documents de Script** nœud.
+Les fichiers de script côté serveur sont visibles dans Explorateur de solutions. Les fichiers de script côté client sont visibles uniquement lorsque vous êtes en mode débogage ou en mode arrêt. Les fichiers de script côté client apparaissent dans le nœud **documents de script** .
 
 > [!NOTE]
-> Antérieure à [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], les fichiers de script côté client générés depuis un script du côté serveur est apparue dans la fenêtre Explorateur de scripts.
+> Avant de [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], les fichiers de script côté client générés à partir du script côté serveur apparaissaient dans la fenêtre Explorateur de scripts.
 
 ### <a name="to-view-a-server-side-script-document"></a>Pour afficher un document de script côté serveur
 
-1. Dans l’**Explorateur de solutions**, ouvrez le nœud **\<Chemin du site web>**.
+1. Dans l’**Explorateur de solutions**, ouvrez le nœud **\<Chemin du site web>** .
 
 2. Double-cliquez sur le fichier de script que vous souhaitez afficher.
 

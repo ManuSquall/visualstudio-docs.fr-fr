@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 338775a2c36415d471d0d59176ce38f6df1827bb
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ea82e9d1dee4b82e78ea3f6409acfdcfc30b2a27
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64806867"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739893"
 ---
-# <a name="idiasymbolgetliverangestartrelativevirtualaddress"></a>IDiaSymbol::get_liveRangeStartRelativeVirtualAddress
-Retourne le début de la plage d’adresses dans lequel le symbole local est valid.
+# <a name="idiasymbolget_liverangestartrelativevirtualaddress"></a>IDiaSymbol::get_liveRangeStartRelativeVirtualAddress
+Retourne le début de la plage d’adresses dans laquelle le symbole local est valide.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,22 +33,22 @@ HRESULT get_liveRangeStartRelativeVirtualAddress ( 
 #### <a name="parameters"></a>Paramètres
  `address`
 
-[out] Retourne le début de la plage d’adresses.
+à Retourne le début de la plage d’adresses.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. L’adresse virtuelle relative retourné est le début de la plage dans laquelle le symbole est valide.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne un code d’erreur. L’adresse virtuelle relative retournée est le début de la plage dans laquelle le symbole est valide.
 
 > [!NOTE]
-> Un code d’erreur renvoyé signifie que le symbole n’a pas d’informations sur la plage dynamique.
+> Un code d’erreur retourné signifie que le symbole n’a pas d’informations de plage active.
 
 ## <a name="remarks"></a>Notes
 
-## <a name="requirements"></a>Configuration requise
- En-tête : Dia2.h
+## <a name="requirements"></a>spécifications
+ En-tête : Dia2. h
 
- Bibliothèque : diaguids.lib
+ Bibliothèque : diaguids. lib
 
- DLL : msdia100.dll
+ DLL : msdia100. dll
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

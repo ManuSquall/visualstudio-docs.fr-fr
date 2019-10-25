@@ -7,12 +7,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5c95990eb875c52a66cd0efa5579c9d39eab5469
-ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
-ms.translationtype: HT
+ms.openlocfilehash: b0a909c25af3de22019327bb890da9e26bcce1c8
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70154905"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748594"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Configurer un projet C++ pour IntelliSense
 

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9ebda7cf7336f9c6a9fc19babf9ed4bbc87fe43
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7af0581f3278288c0acd0269a193b89b32b840c3
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838104"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741699"
 ---
-# <a name="idiastackframegetlengthprolog"></a>IDiaStackFrame::get_lengthProlog
-Récupère le nombre d’octets de code de prologue dans le bloc.
+# <a name="idiastackframeget_lengthprolog"></a>IDiaStackFrame::get_lengthProlog
+Récupère le nombre d’octets du code de prologue dans le bloc.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,10 +33,10 @@ HRESULT get_lengthProlog ( 
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-[out] Retourne le nombre d’octets de code de prologue.
+à Retourne le nombre d’octets du code de prologue.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si la propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si la propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

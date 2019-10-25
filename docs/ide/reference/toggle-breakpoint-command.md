@@ -14,12 +14,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d72ec4717a7669fd5b4d489b8324f2e0b25c57c0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a8294c25bcf3b62f9d6480e170d4693a9be85079
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72644707"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748578"
 ---
 # <a name="toggle-breakpoint-command"></a>Basculer le point d'arrêt, commande
 Active ou désactive le point d’arrêt, en fonction de son état actuel, à l’emplacement actuel dans le fichier.

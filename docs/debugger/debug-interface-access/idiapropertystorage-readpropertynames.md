@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7492e0eee0523fd102ecd057d075f2672bf3b25b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f554485ae56a9d5f190c749879545165d299531c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839574"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742867"
 ---
 # <a name="idiapropertystoragereadpropertynames"></a>IDiaPropertyStorage::ReadPropertyNames
-Récupère correspondant de noms de chaîne pour donné des identificateurs de propriété.
+Récupère les noms de chaîne correspondants pour les identificateurs de propriété donnés.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -35,21 +35,21 @@ HRESULT ReadPropertyNames (
 #### <a name="parameters"></a>Paramètres
  `cpropid`
 
-[in] Nombre d’ID de propriété dans `rgpropid`.
+dans Nombre d’ID de propriété dans `rgpropid`.
 
  `rgpropid`
 
-[in] Tableau d’ID de propriété pour laquelle obtenir les noms (`PROPID` est défini dans WTypes.h comme un `ULONG`).
+dans Tableau d’ID de propriété pour lequel obtenir les noms (`PROPID` est défini dans WTypes. h en tant que `ULONG`).
 
  `rglpwstrName`
 
-[in, out] Tableau des noms de propriété pour les ID de propriété spécifiée. Le tableau doit être alloué pour contenir le nombre demandé de noms de propriétés au préalable et doit être en mesure de contenir au moins `cpropid``BSTR` chaînes.
+[in, out] Tableau de noms de propriété pour les ID de propriété spécifiés. Le tableau doit être pré-alloué pour contenir le nombre demandé de noms de propriétés et doit pouvoir contenir au moins `cpropid``BSTR` chaînes.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne un code d’erreur.
 
 ## <a name="remarks"></a>Notes
- Les noms de propriété retournée doivent être libérées (en appelant le `SysFreeString` (fonction)) lorsqu’ils ne sont plus nécessaires.
+ Les noms de propriété retournés doivent être libérés (en appelant la fonction `SysFreeString`) lorsqu’ils ne sont plus nécessaires.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

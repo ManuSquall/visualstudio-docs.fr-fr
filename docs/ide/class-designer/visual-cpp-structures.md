@@ -1,5 +1,5 @@
 ---
-title: Structures de Visual C++ dans le Concepteur de classes
+title: C++Structures dans Concepteur de classes
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +10,14 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: da786e6f598b4b28aeb7758df41f54ea23c4185d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 65fb4738b3124daf48b501c6db416d3803da32ec
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647592"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748919"
 ---
-# <a name="visual-c-structures-in-class-designer"></a>Structures de Visual C++ dans le Concepteur de classes
+# <a name="c-structures-in-class-designer"></a>C++structures dans Concepteur de classes
 
 Le **Concepteur de classes** prend en charge les structures C++ qui sont déclarées avec le mot clé `struct`. Voici un exemple :
 
@@ -40,6 +40,6 @@ Une forme de structure C++ dans un diagramme de classes apparaît. Elle fonctio
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Utilisation du code Visual C++](working-with-visual-cpp-code.md)
+- [Utilisation du C++ code](working-with-visual-cpp-code.md)
 - [Classes et structs](/cpp/cpp/classes-and-structs-cpp)
 - [struct](/cpp/cpp/struct-cpp)

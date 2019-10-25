@@ -32,12 +32,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 2460ca1c76eb43bdff89c87c880f405cdce12b48
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 26c788319331d0da4024844b50b4c495ed2c3a37
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72446314"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72806770"
 ---
 # <a name="annotating-locking-behavior"></a>Annotation du comportement de verrouillage
 Pour éviter les bogues d'accès concurrentiel dans votre programme multithread, suivez toujours une règle de verrouillage appropriée et utilisez les annotations SAL.
@@ -113,9 +113,9 @@ Les verrous intelligents encapsulent généralement les verrous natifs et gèren
 |`_Analysis_assume_smart_lock_acquired_`|Indique à l’analyseur de supposer qu’un verrou intelligent a été acquis. Cette annotation attend un type de verrou de référence comme paramètre.|
 |`_Analysis_assume_smart_lock_released_`|Indique à l’analyseur de supposer qu’un verrou intelligent a été relâché. Cette annotation attend un type de verrou de référence comme paramètre.|
 |`_Moves_lock_(target, source)`|Décrit l’opération `move constructor` qui transfère l’état du verrou de l’objet `source` au `target`. Le `target` est considéré comme un objet nouvellement construit, donc tout état qu’il avait avant est perdu et remplacé par l’État `source`. La `source` est également réinitialisée à un état propre sans nombre de verrous ni cible d’alias, mais les alias qui pointent vers celle-ci restent inchangés.|
-|`_Replaces_lock_(target, source)`|Décrit la sémantique `move assignment operator` où le verrou cible est libéré avant de transférer l’État à partir de la source. Cette valeur peut être considérée comme une combinaison de `_Moves_lock_(target, source)` précédée d’une `_Releases_lock_(target)`.|
+|`_Replaces_lock_(target, source)`|Décrit la sémantique `move assignment operator` où le verrou cible est libéré avant de transférer l’État à partir de la source. Cela peut être considéré comme une combinaison de `_Moves_lock_(target, source)` précédée d’une `_Releases_lock_(target)`.|
 |`_Swaps_locks_(left, right)`|Décrit le comportement `swap` standard qui suppose que les objets `left` et `right` échangent leur état. L’État échangé comprend le nombre de verrous et la cible d’alias, le cas échéant. Les alias qui pointent vers les objets `left` et `right` restent inchangés.|
-|`_Detaches_lock_(detached, lock)`|Décrit un scénario dans lequel un type de wrapper de verrou autorise la dissociation avec sa ressource contenue. Cela est similaire à la façon dont `std::unique_ptr` fonctionne avec son pointeur interne : elle permet aux programmeurs d’extraire le pointeur et de conserver son conteneur de pointeur intelligent dans un état propre. Une logique similaire est prise en charge par `std::unique_lock` et peut être implémentée dans des wrappers de verrou personnalisés. Le verrou détaché conserve son état (nombre de verrous et cible d’alias, le cas échéant), tandis que le wrapper est réinitialisé pour contenir zéro nombre de verrous et aucune cible d’alias, tout en conservant ses propres alias. Il n’y a aucune opération sur le nombre de verrous (libération et acquisition). Cette annotation se comporte exactement comme `_Moves_lock_`, sauf que l’argument détaché doit être `return` au lieu de `this`.|
+|`_Detaches_lock_(detached, lock)`|Décrit un scénario dans lequel un type de wrapper de verrou autorise la dissociation avec sa ressource contenue. Cela est similaire à la façon dont `std::unique_ptr` fonctionne avec son pointeur interne : elle permet aux programmeurs d’extraire le pointeur et de conserver son conteneur de pointeur intelligent dans un état propre. Une logique similaire est prise en charge par `std::unique_lock` et peut être implémentée dans des wrappers de verrou personnalisés. Le verrou détaché conserve son état (nombre de verrous et cible d’alias, le cas échéant), tandis que le wrapper est réinitialisé pour contenir zéro nombre de verrous et aucune cible d’alias, tout en conservant ses propres alias. Il n’y a aucune opération sur le nombre de verrous (libération et acquisition). Cette annotation se comporte exactement comme `_Moves_lock_`, sauf que l’argument détaché doit être `return` plutôt que `this`.|
 
 ## <a name="see-also"></a>Voir aussi
 
@@ -127,4 +127,4 @@ Les verrous intelligents encapsulent généralement les verrous natifs et gèren
 - [Spécification du moment et de l’endroit où une annotation s’applique](../code-quality/specifying-when-and-where-an-annotation-applies.md)
 - [Fonctions intrinsèques](../code-quality/intrinsic-functions.md)
 - [Bonnes pratiques et exemples](../code-quality/best-practices-and-examples-sal.md)
-- [Blog de l’équipe d’analyse du code](http://go.microsoft.com/fwlink/p/?LinkId=251197)
+- [Blog de l’équipe d’analyse du code](https://blogs.msdn.microsoft.com/codeanalysis/)

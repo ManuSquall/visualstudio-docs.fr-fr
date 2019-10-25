@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d435ff9970748e8debe5edfd15514cde4f531b86
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b38dd994eca30bfee071f00431f3b111c2ea444a
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63389710"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72736177"
 ---
 # <a name="capturing-graphics-information"></a>Capture d'informations graphiques
 Capturez les informations graphiques de votre application Direct3D pour pouvoir diagnostiquer les problèmes de performances et de rendu à l'aide de Visual Studio Graphics Analyzer.
@@ -27,15 +27,15 @@ Capturez les informations graphiques de votre application Direct3D pour pouvoir 
 
 ### <a name="to-run-your-app-under-graphics-diagnostics"></a>Pour exécuter l'application dans Graphics Diagnostics
 
-- Dans la barre de menus, choisissez **déboguer**, **Graphics**, **démarrer le débogage graphique**. (Clavier : Appuyez sur Alt + F5)
+- Dans la barre de menus, choisissez **Déboguer**, **graphiques**, **Démarrer le débogage graphique**. (Clavier : appuyez sur Alt+F5)
 
-- Sur le **Graphics** barre d’outils, choisissez le **démarrer le débogage graphique** bouton.
+- Dans la barre d’outils **graphiques** , choisissez le bouton **Démarrer le débogage graphique** .
 
   Lorsqu'une application s'exécute dans Graphics Diagnostics, certains types d'informations graphiques sont systématiquement capturés. Notamment l'installation de périphérique, la création de chaîne de permutation, la création d'objets graphiques et de ressources, et d'autres événements significatifs qui affectent plusieurs frames. En même temps, vous pouvez capturer des informations détaillées sur des frames spécifiques. Cela inclut des appels de dessin et des distributions de nuanceur de calcul, ainsi que des objets Direct3D et des ressources qui les prennent en charge.
 
 ### <a name="to-capture-a-frame"></a>Pour capturer un frame
 
-- Dans Visual Studio, sur le **Graphics** barre d’outils, cliquez sur le **capturer le Frame** bouton ![Graphics capture l’icône du bouton](media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics").
+- Dans Visual Studio, dans la barre d’outils **graphiques** , cliquez sur le bouton **capturer le frame** bouton de ![capture graphique icône de bouton](media/debuggingdirectxgraphics.png "DebuggingDirectXGraphics").
 
 - Sur le clavier, appuyez sur la touche Impr. écran.
 
@@ -61,20 +61,20 @@ Capturez les informations graphiques de votre application Direct3D pour pouvoir 
 
 2. Dans la liste des catégories d’options sur la gauche, choisissez Graphics Diagnostics, puis configurez les options Graphics Diagnostics de votre choix.
 
-     **Collecter les piles des appels durant la capture (ralentit la capture)** Cochez cette case pour collecter les piles des appels. Par défaut, les piles des appels ne sont pas collectées. Pour capturer les piles des appels, vérifiez que la case **Collecter les piles des appels durant la capture (ralentit la capture)** est cochée pour permettre la collecte, puis définissez l’option **pour les marqueurs de dessin, de répartition, de présentation et de performances** (par défaut) pour collecter uniquement les piles des appels les plus importantes, ou l’option **pour tout** afin de collecter toutes les piles des appels. Pour arrêter plus tard de collecter les piles des appels, décochez la case **Collecter les piles des appels durant la capture (ralentit la capture)**.
+     **Collecter les piles des appels pendant la capture (ralentit la capture)** Cochez cette case pour collecter les piles d’appels. Par défaut, les piles des appels ne sont pas collectées. Pour capturer les piles des appels, vérifiez que la case **Collecter les piles des appels durant la capture (ralentit la capture)** est cochée pour permettre la collecte, puis définissez l’option **pour les marqueurs de dessin, de répartition, de présentation et de performances** (par défaut) pour collecter uniquement les piles des appels les plus importantes, ou l’option **pour tout** afin de collecter toutes les piles des appels. Pour arrêter plus tard de collecter les piles des appels, décochez la case **Collecter les piles des appels durant la capture (ralentit la capture)** .
 
-     **Désactiver le HUD dans le jeu durant la capture** Cochez cette case pour désactiver le HUD superposé qu’une application en cours d’exécution sous graphics diagnostics généralement affiche. Décochez cette case pour afficher le HUD superposé.
+     **Désactiver le HUD dans le jeu durant la capture** Cochez cette case pour désactiver la superposition HUD qu’une application en cours d’exécution sous Graphics Diagnostics affiche généralement. Décochez cette case pour afficher le HUD superposé.
 
      **Capturer en mode de compatibilité** Cochez cette case pour capturer les informations graphiques en mode de compatibilité. Par défaut, la capture est effectuée en mode de compatibilité. En mode de compatibilité, Direct3D ne signale pas que le GPU prend en charge des fonctionnalités supplémentaires au-delà de celles définies dans le niveau de fonctionnalité de base. Cela empêche l'application capturée d'utiliser les extensions spécifiques au matériel du GPU sur lequel elle est capturée. En outre, cela garantit que le journal de graphisme peut être lu à l'aide de n'importe quel GPU prenant en charge un niveau de fonctionnalité identique ou supérieur. Décochez cette case pour désactiver le mode de compatibilité. Les journaux capturés quand le mode de compatibilité est désactivé ne peuvent pas être lus sur un GPU qui ne prend pas en charge les mêmes fonctionnalités supplémentaires que celles utilisées par l'application durant la capture.
 
-     **Arrêter la capture si des erreurs de couches SDK sont détectées** Cochez cette case pour arrêter la capture immédiatement si des erreurs sont rencontrées.
+     **Arrêter la capture si des erreurs de couches du SDK sont détectées** Cochez cette case pour arrêter immédiatement la capture si des erreurs sont rencontrées.
 
 ## <a name="capturing-graphics-information-remotely"></a>Capture d'informations graphiques à distance
  Les informations graphiques peuvent être capturées à partir d'une application qui est exécutée sur un ordinateur local, un ordinateur ou un appareil distant. La capture distante est prise en charge pour les ordinateurs [!INCLUDE[winblue_client_2](../includes/winblue_client_2_md.md)] et les appareils [!INCLUDE[winblue_winrt_2](../includes/winblue_winrt_2_md.md)]. Pour capturer des informations graphiques à partir d’une application exécutée à distance, configurez votre projet pour le débogage distant et exécutez l’application dans Graphics Diagnostics comme décrit plus haut. L'application s'exécute sur l'ordinateur distant, les informations graphiques capturées sont stockées sur votre ordinateur de développement.
 
- La façon dont vous configurez votre projet pour le débogage distant dépend du type d'application et du langage de programmation que vous utilisez. Pour plus d’informations sur la configuration du débogage à distance pour une application UWP, consultez [exécuter des applications UWP sur un ordinateur distant](../run-windows-store-apps-on-a-remote-machine.md). Pour plus d’informations sur la configuration du débogage à distance pour une application de bureau Windows, consultez [le débogage à distance](../remote-debugging.md).
+ La façon dont vous configurez votre projet pour le débogage distant dépend du type d'application et du langage de programmation que vous utilisez. Pour plus d’informations sur la configuration du débogage distant pour une application UWP, consultez [exécuter des applications UWP sur un ordinateur distant](../run-windows-store-apps-on-a-remote-machine.md). Pour plus d’informations sur la configuration du débogage distant pour une application de bureau Windows, consultez [débogage distant](../remote-debugging.md).
 
- Vous pouvez utiliser par la suite un ordinateur ou un appareil distant pour lire des informations graphiques, indépendamment de l'endroit où les informations ont été capturées. Pour plus d'informations, voir [Procédure : modifier l’ordinateur de lecture Graphics Diagnostics](how-to-change-the-graphics-diagnostics-playback-machine.md).
+ Vous pouvez utiliser par la suite un ordinateur ou un appareil distant pour lire des informations graphiques, indépendamment de l'endroit où les informations ont été capturées. For more information, see [Comment : modifier l'ordinateur de lecture Graphics Diagnostics](how-to-change-the-graphics-diagnostics-playback-machine.md).
 
 ## <a name="capturing-graphics-information-from-the-command-line"></a>Capture d'informations graphiques à partir de la ligne de commande
  Vous pouvez capturer des informations graphiques à partir d'une application via un outil en ligne de commande. Cet outil, DXCap.exe, peut rapidement capturer et lire des informations graphiques sans passer par Visual Studio ou une capture par programmation. En particulier, vous pouvez utiliser DXCap.exe pour l'automatisation ou dans un environnement de test. Pour plus d’informations sur DXCap.exe, consultez [Outil en ligne de commande de capture](command-line-capture-tool.md)

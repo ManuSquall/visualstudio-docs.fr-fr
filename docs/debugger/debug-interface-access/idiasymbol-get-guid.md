@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b0fe27279c1f973743813cae00827a8ff063af4
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: e0618c3bf0c06ba0b529004f38985fd5dd90d688
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "64796437"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740607"
 ---
-# <a name="idiasymbolgetguid"></a>IDiaSymbol::get_guid
-Récupère l’identificateur global unique du symbole (GUID).
+# <a name="idiasymbolget_guid"></a>IDiaSymbol::get_guid
+Récupère l’identificateur global unique (GUID) du symbole.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,20 +33,20 @@ HRESULT get_guid ( 
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-[out] Retourne les GUID du symbole.
+à Retourne le GUID du symbole.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
-> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> Une valeur de retour de `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>spécifications
 
-|Prérequis|Description|
+|Exigence|Description|
 |-----------------|-----------------|
 |En-tête :|dia2.h|
-|Version :|DIA SDK v7.0|
+|Version :|DIA SDK v 7.0|
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

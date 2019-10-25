@@ -14,17 +14,17 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e8207b72d7bb818a5d153abdd56914fd6b2a3f08
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c0e404921d1ed74db2a1f23117242f49a07206c2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316540"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72718736"
 ---
 # <a name="templateid-element-visual-studio-templates"></a>TemplateID, élément (modèles Visual Studio)
-Spécifie un identificateur pour un modèle d’élément est classé dans un groupe de modèles d’élément par le [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md) élément.
+Spécifie un identificateur pour un modèle d’élément qui est catégorisé en un groupe de modèles d’élément par l’élément [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md) .
 
- \<VSTemplate> \<TemplateData> \<TemplateID>
+ \<VSTemplate > \<TemplateData > \<TemplateID >
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -36,10 +36,10 @@ Spécifie un identificateur pour un modèle d’élément est classé dans un gr
  Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.
 
 ### <a name="attributes"></a>Attributs
- Aucun.
+ Aucun(e).
 
 ### <a name="child-elements"></a>Éléments enfants
- Aucun.
+ Aucun(e).
 
 ### <a name="parent-elements"></a>Éléments parents
 
@@ -48,14 +48,14 @@ Spécifie un identificateur pour un modèle d’élément est classé dans un gr
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Élément requis.<br /><br /> Définit la catégorie du modèle et comment il s’affiche dans la boîte de dialogue **Nouveau projet** ou **Ajouter un nouvel élément** .|
 
 ## <a name="text-value"></a>Valeur texte
- Un `string` qui représente un identificateur pour un modèle d’élément est classé dans un groupe de modèles d’élément par le `TemplateGroupID` élément.
+ @No__t_0 qui représente un identificateur pour un modèle d’élément classé dans un groupe de modèles d’élément par l’élément `TemplateGroupID`.
 
 ## <a name="remarks"></a>Notes
  `TemplateID` est un élément facultatif.
 
- Si un fichier .vstemplate omet le `TemplateID` élément, puis le [nom](../extensibility/name-element-visual-studio-templates.md) élément est utilisé comme identificateur pour le modèle.
+ Si un fichier. vstemplate omet l’élément `TemplateID`, l’élément [Name](../extensibility/name-element-visual-studio-templates.md) est utilisé comme identificateur pour le modèle.
 
- La valeur de la `TemplateID` élément est utilisé avec l’inscription de système de projet (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\Projects\\) pour filtrer les modèles qui apparaissent dans le **ajouter un nouvel élément** boîte de dialogue.
+ La valeur de l’élément `TemplateID` est utilisée avec l’inscription du système de projet (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\Projects \\) pour filtrer les modèles qui s’affichent dans la boîte de dialogue **Ajouter un nouvel élément** .
 
 ## <a name="see-also"></a>Voir aussi
 - [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)

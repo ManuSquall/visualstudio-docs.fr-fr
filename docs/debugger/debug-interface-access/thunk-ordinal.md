@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 776ee35e57b62463d47fc6f7fa26133f507f16f9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1de2d6c9700dcb7b1106c3693d855bb1d8ae2cfa
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62854438"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738495"
 ---
-# <a name="thunkordinal"></a>THUNK_ORDINAL
-Désigne les types de conversion de code.
+# <a name="thunk_ordinal"></a>THUNK_ORDINAL
+Désigne les types de thunks.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -39,25 +39,25 @@ typedef enum THUNK_ORDINAL {
 ```
 
 ## <a name="elements"></a>Éléments
-Conversion de code THUNK_ORDINAL_NOTYPE Standard.
+Thunk THUNK_ORDINAL_NOTYPE standard.
 
-THUNK_ORDINAL_ADJUSTOR A `this` thunk d’expert.
+THUNK_ORDINAL_ADJUSTOR un thunk de réglage `this`.
 
-Conversion de code d’appel THUNK_ORDINAL_VCALL virtuel.
+Thunk d’appel virtuel THUNK_ORDINAL_VCALL.
 
-Thunk de P-code THUNK_ORDINAL_PCODE.
+THUNK_ORDINAL_PCODE P-code thunk.
 
-Conversion de code charge THUNK_ORDINAL_LOAD délai.
+Thunk de chargement différé THUNK_ORDINAL_LOAD.
 
-Thunk de trampoline THUNK_ORDINAL_TRAMP_INCREMENTAL incrémentielle (un thunk trampoline est utilisé pour retransmettre des appels à partir de l’espace mémoire d’un à un autre).
+THUNK_ORDINAL_TRAMP_INCREMENTAL incrémentielle trampoline thunk (un thunk trampoline est utilisé pour rebondir les appels d’un espace mémoire à un autre).
 
-Thunk de trampoline THUNK_ORDINAL_TRAMP_BRANCHISLAND branche point.
+Thunk THUNK_ORDINAL_TRAMP_BRANCHISLAND Branch point trampoline.
 
 ## <a name="remarks"></a>Notes
-Les valeurs dans cette énumération sont retournées à partir d’un appel à la [IDiaSymbol::get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md) (méthode).
+Les valeurs de cette énumération sont retournées à partir d’un appel à la méthode [IDiaSymbol :: get_thunkOrdinal](../../debugger/debug-interface-access/idiasymbol-get-thunkordinal.md) .
 
-## <a name="requirements"></a>Configuration requise
-En-tête : cvconst.h
+## <a name="requirements"></a>spécifications
+En-tête : cvconst. h
 
 ## <a name="see-also"></a>Voir aussi
 - [Énumérations et structures](../../debugger/debug-interface-access/enumerations-and-structures.md)

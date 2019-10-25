@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 255c55dff0dab0c7b36f5029de9e688db949a1fe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eff457d539317d2f8c7d77dfc85eb16063650c14
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833426"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744154"
 ---
 # <a name="idiaenumsegments"></a>IDiaEnumSegments
 Énumère les différents segments contenus dans la source de données.
@@ -33,21 +33,21 @@ Le tableau suivant présente les méthodes de `IDiaEnumSegments`.
 
 |Méthode|Description|
 |------------|-----------------|
-|[IDiaEnumSegments::get__NewEnum](../../debugger/debug-interface-access/idiaenumsegments-get-newenum.md)|Récupère le [IEnumVARIANT Interface](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) version de cet énumérateur.|
+|[IDiaEnumSegments::get__NewEnum](../../debugger/debug-interface-access/idiaenumsegments-get-newenum.md)|Récupère la version d' [interface IEnumVARIANT](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ienumvariant) de cet énumérateur.|
 |[IDiaEnumSegments::get_Count](../../debugger/debug-interface-access/idiaenumsegments-get-count.md)|Récupère le nombre de segments.|
 |[IDiaEnumSegments::Item](../../debugger/debug-interface-access/idiaenumsegments-item.md)|Récupère un segment au moyen d’un index.|
 |[IDiaEnumSegments::Next](../../debugger/debug-interface-access/idiaenumsegments-next.md)|Récupère un nombre spécifié de segments dans la séquence d’énumération.|
 |[IDiaEnumSegments::Skip](../../debugger/debug-interface-access/idiaenumsegments-skip.md)|Ignore un nombre spécifié de segments dans une séquence d’énumération.|
 |[IDiaEnumSegments::Reset](../../debugger/debug-interface-access/idiaenumsegments-reset.md)|Réinitialise une séquence d’énumération au début.|
-|[IDiaEnumSegments::Clone](../../debugger/debug-interface-access/idiaenumsegments-clone.md)|Crée un énumérateur qui contient le même état d’énumération que l’énumérateur en cours.|
+|[IDiaEnumSegments::Clone](../../debugger/debug-interface-access/idiaenumsegments-clone.md)|Crée un énumérateur qui contient le même état d’énumération que l’énumérateur actuel.|
 
 ## <a name="remarks"></a>Notes
 
-## <a name="notes-for-callers"></a>Notes de publication pour les appelants
-Obtenez cette interface en appelant le `QueryInterface` méthode sur un [IDiaTable](../../debugger/debug-interface-access/idiatable.md) objet. Consultez l’exemple pour plus d’informations.
+## <a name="notes-for-callers"></a>Notes pour les appelants
+Obtenez cette interface en appelant la méthode `QueryInterface` sur un objet [IDiaTable](../../debugger/debug-interface-access/idiatable.md) . Pour plus d’informations, consultez l’exemple.
 
 ## <a name="example"></a>Exemple
-Cet exemple montre comment obtenir le `IDiaEnumSections` interface à partir d’une table. Pour obtenir un exemple plus complet de l’utilisation de segments, consultez le [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) interface.
+Cet exemple montre comment obtenir l’interface `IDiaEnumSections` à partir d’une table. Pour obtenir un exemple plus complet de l’utilisation des segments, consultez l’interface [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md) .
 
 ```C++
 void ShowSegments(IDiaTable *pTable, IDiaSession *pSession)
@@ -64,12 +64,12 @@ void ShowSegments(IDiaTable *pTable, IDiaSession *pSession)
 }
 ```
 
-## <a name="requirements"></a>Configuration requise
-En-tête : Dia2.h
+## <a name="requirements"></a>spécifications
+En-tête : Dia2. h
 
-Bibliothèque : diaguids.lib
+Bibliothèque : diaguids. lib
 
-DLL : msdia80.dll
+DLL : Msdia80. dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Interfaces (SDK Debug Interface Access)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)

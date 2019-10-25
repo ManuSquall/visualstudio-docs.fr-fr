@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9c2b06e8d89405b38afe2b740ce860a78bc46cc
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: 61905c0c6c40d893cc8723b711d67690133a7155
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68661807"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738614"
 ---
 # <a name="namesearchoptions"></a>NameSearchOptions
 Spécifie les options de recherche pour les noms de symboles et de fichiers.
@@ -45,18 +45,18 @@ enum NameSearchOptions {
 ## <a name="elements"></a>Éléments
 `nsNone` Aucune option n’est spécifiée.
 
-`nsfCaseSensitive`Applique une correspondance de nom respectant la casse.
+`nsfCaseSensitive` applique une correspondance de nom respectant la casse.
 
-`nsfCaseInsensitive`Applique une correspondance de nom ne respectant pas la casse.
+`nsfCaseInsensitive` applique une correspondance de nom qui ne respecte pas la casse.
 
-`nsfFNameExt`Traite les noms comme des chemins d’accès et applique une correspondance de nom de nom de fichier. ext.
+`nsfFNameExt` traite les noms comme des chemins d’accès et applique une correspondance de nom filename. ext.
 
-`nsfRegularExpression`Applique une correspondance de nom respectant la casse à l’aide d’astérisques (*) et de points d’interrogation (?) comme caractères génériques. (Les autres caractères d’expressions régulières courantes ne sont pas pris en charge.)
+`nsfRegularExpression` applique une correspondance de nom respectant la casse à l’aide d’astérisques (*) et de points d’interrogation ( ?) comme caractères génériques. (Les autres caractères d’expressions régulières courantes ne sont pas pris en charge.)
 
-`nsfUndecoratedName`S’applique uniquement aux symboles qui ont des noms non décorés et décorés.
+`nsfUndecoratedName` s’applique uniquement aux symboles qui ont des noms non décorés et décorés.
 
 ## <a name="remarks"></a>Notes
-Les valeurs de cette énumération sont passées aux méthodes suivantes:
+Les valeurs de cette énumération sont passées aux méthodes suivantes :
 
 - [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)
 
@@ -64,8 +64,8 @@ Les valeurs de cette énumération sont passées aux méthodes suivantes:
 
 - [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)
 
-## <a name="requirements"></a>Configuration requise
-En-tête: Dia2. h
+## <a name="requirements"></a>spécifications
+En-tête : Dia2. h
 
 ## <a name="see-also"></a>Voir aussi
 - [Énumérations et structures](../../debugger/debug-interface-access/enumerations-and-structures.md)

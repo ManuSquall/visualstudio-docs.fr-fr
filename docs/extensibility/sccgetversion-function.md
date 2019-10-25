@@ -1,5 +1,5 @@
 ---
-title: Fonction SccGetVersion | Microsoft Docs
+title: SccGetVersion fonction) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,15 +12,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ad37e30cfcf913477044e67baaa65dc3af5b9d3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 69078200743f30c4ecfedce8e9be05ef9e7ce20b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353629"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72721484"
 ---
 # <a name="sccgetversion-function"></a>Fonction SccGetVersion
-Cette fonction obtient le numéro de version de l’API de plug-in de contrôle de Source pris en charge par le plug-in de contrôle de code source.
+Cette fonction obtient le numéro de version de l’API de plug-in de contrôle de code source pris en charge par le plug-in de contrôle de code source.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -29,10 +29,10 @@ LONG SccGetVersion(void);
 ```
 
 #### <a name="parameters"></a>Paramètres
- Aucun.
+ Aucun(e).
 
 ## <a name="return-value"></a>Valeur de retour
- Un `LONG` type de données qui contient le numéro de version de l’API de plug-in de contrôle de Source pris en charge :
+ Type de données `LONG` qui contient le numéro de version de l’API de plug-in de contrôle de code source pris en charge :
 
 |WORD|Description|
 |----------|-----------------|
@@ -40,7 +40,7 @@ LONG SccGetVersion(void);
 |LOWORD|Version mineure|
 
 ## <a name="remarks"></a>Notes
- Par exemple, si un plug-in de contrôle de code source prend en charge la version 1.3 de l’API de plug-in de contrôle de Source, cette fonction retournait 0x0103.
+ Par exemple, si un plug-in de contrôle de code source prend en charge la version 1,3 de l’API de plug-in de contrôle de code source, cette fonction retourne 0x0103.
 
 ## <a name="see-also"></a>Voir aussi
 - [Fonctions d’API du plug-in de contrôle de code source](../extensibility/source-control-plug-in-api-functions.md)

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2b9cd6f120d5699464c9e7311721898a727bf47e
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 0173ed557afa47129e0cc92d9ef9b2d94a7b198f
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72450429"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72730326"
 ---
 # <a name="remote-debugging-a-c-project-in-visual-studio"></a>Débogage à distance d' C++ un projet dans Visual Studio
 Pour déboguer une application Visual Studio sur un autre ordinateur, installez et exécutez les outils de contrôle à distance sur l’ordinateur sur lequel vous allez déployer votre application, configurez votre projet pour qu’il se connecte à l’ordinateur distant à partir de Visual Studio, puis déployez et exécutez votre application.

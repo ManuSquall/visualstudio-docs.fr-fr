@@ -25,7 +25,7 @@
 ### [Contacter votre administrateur d’abonnements](contact-my-admin.md)
 ### Avantages
 #### Outils
-##### [Crédit Azure](vs-azure.md)
+##### [Crédit individuel Azure DevTest](vs-azure.md)
 ##### [Azure DevOps](vs-azure-devops.md)
 ##### [Paiement à l'utilisation Azure](vs-azure-payg.md)
 ##### [CAST Highlight](vs-cast.md)

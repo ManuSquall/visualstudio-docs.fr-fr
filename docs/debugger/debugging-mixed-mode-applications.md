@@ -1,5 +1,5 @@
 ---
-title: Débogage des Applications en Mode mixte | Microsoft Docs
+title: Débogage des applications en mode mixte | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -21,19 +21,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ac2a9817ceae660f42cbed0fdbfb364ddc79c45
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1c245b6c56b7480a9395394d707aa0f02fb22fc9
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852063"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738193"
 ---
 # <a name="debugging-mixed-mode-applications"></a>Débogage des applications en mode mixte
 Une application en mode mixte est une application qui combine du code natif (C++) avec du code managé (tel que Visual Basic, Visual C# ou C++ qui s'exécute sur le Common Language Runtime). Le débogage d'applications en mode mixte est largement transparent dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], il n'est pas très différent du débogage d'une application en mode unique. Quelques considérations spéciales sont toutefois à prendre en compte.
 
 ## <a name="enable-c-edit-and-continue-in-mixed-mode-debugging"></a>Permettre l'opération Modifier &amp; Continuer pour C++ dans le cadre du débogage en mode mixte
 
-Pour activer Modifier & Continuer pour C++, consultez [comment activer et désactiver Modifier & Continuer](../debugger/how-to-enable-and-disable-edit-and-continue.md).
+Pour activer modifier & Continuer pour C++, consultez [Comment activer et désactiver modifier & Continuer](../debugger/how-to-enable-and-disable-edit-and-continue.md).
 
 > [!NOTE]
 > Pour pouvoir utiliser l'opération Modifier &amp; Continuer pour C++ dans Visual Studio 2013, vous devez revenir au moteur de débogage hérité. Consultez [Switching to Managed Compatibility Mode in Visual Studio 2013](https://devblogs.microsoft.com/devops/switching-to-managed-compatibility-mode-in-visual-studio-2013/) dans le blog relatif à la gestion du cycle de vie des applications Microsoft.

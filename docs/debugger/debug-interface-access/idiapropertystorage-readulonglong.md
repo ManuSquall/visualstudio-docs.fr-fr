@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f365578aba73ed94bdcd1d87801fc53030cfecdb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dde2f111e468b8ccf6c1d91440f06d3e7048a0f6
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828371"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742854"
 ---
 # <a name="idiapropertystoragereadulonglong"></a>IDiaPropertyStorage::ReadULONGLONG
 Lit `ULONGLONG` valeurs dans un jeu de propriétés.
@@ -34,17 +34,17 @@ HRESULT ReadULONGLONG ( 
 #### <a name="parameters"></a>Paramètres
  `id`
 
-[in] Identificateur de la propriété à lire (`PROPID` est défini dans WTypes.h comme un `ULONG`).
+dans Identificateur de la propriété à lire (`PROPID` est défini dans WTypes. h en tant que `ULONG`).
 
  `pValue`
 
-[out] Retourne la valeur de propriété.
+à Retourne la valeur de la propriété.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Retourne `E_INVALIDARG` si la propriété n’est pas de type `ULONGLONG`.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne un code d’erreur. Retourne `E_INVALIDARG` si la propriété n’est pas de type `ULONGLONG`.
 
 ## <a name="remarks"></a>Notes
- Un `ULONGLONG` est défini par Windows comme un entier non signé 64 bits.
+ Une `ULONGLONG` est définie par Windows comme un entier non signé 64 bits.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

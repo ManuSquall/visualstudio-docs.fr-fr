@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 673ca8137244fed933df0be3fa0221115951a9c1
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: f0d05946db816e6bd209e364e11d5091163941a4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62838995"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741151"
 ---
 # <a name="idiasymbolfindsymbolsbyrvaforacceleratorpointertag"></a>IDiaSymbol::findSymbolsByRVAForAcceleratorPointerTag
-Étant donné une valeur de balise correspondante, cette méthode retourne une énumération de symboles contenus dans cette fonction stub à une adresse virtuelle relative spécifiée.
+Pour une valeur de balise correspondante donnée, cette méthode retourne une énumération des symboles contenus dans cette fonction stub à une adresse virtuelle relative spécifiée.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -32,21 +32,21 @@ HRESULT findSymbolsByRVAForAcceleratorPointerTag (
 #### <a name="parameters"></a>Paramètres
  `tagValue`
 
-[in] La valeur de balise de pointeur pour lequel les enregistrements de symbole pointee sont trouvent.
+dans Valeur de balise de pointeur pour laquelle les enregistrements de symboles de pointee sont trouvés.
 
  `rva`
 
-[in] L’adresse rva est utilisée pour filtrer les symboles qui correspondent à la variable pointee avec la valeur de balise spécifiée.
+dans RVA utilisé pour filtrer les symboles qui correspondent à la variable pointee avec la valeur de balise spécifiée.
 
  `ppResult`
 
-[out] Un pointeur vers un `IDiaEnumSymbols` pointeur d’interface qui est initialisé avec le résultat.
+à Pointeur vers un pointeur d’interface `IDiaEnumSymbols` qui est initialisé avec le résultat.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
 
 ## <a name="remarks"></a>Notes
- Appelez cette méthode uniquement sur un `IDiaSymbol` interface qui correspond à une fonction de stub accélérateur.
+ Appelez cette méthode uniquement sur une interface `IDiaSymbol` qui correspond à une fonction stub d’accélérateur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

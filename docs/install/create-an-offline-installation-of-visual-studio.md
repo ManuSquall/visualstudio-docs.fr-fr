@@ -1,7 +1,7 @@
 ---
 title: Créer une installation hors connexion
 description: Découvrez comment installer Visual Studio hors connexion quand vous avez une connexion Internet non fiable ou une bande passante faible.
-ms.date: 10/11/2019
+ms.date: 10/22/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b9c8b60914e814ab6957ee9ec9307b12d9c3d1ba
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.openlocfilehash: c8b59ce38657bab157b966a25e0cd27109510215
+ms.sourcegitcommit: 58000baf528da220fdf7a999d8c407a4e86c1278
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516885"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72789986"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Créer une installation hors connexion de Visual Studio
 
@@ -180,6 +180,8 @@ Utilisez ensuite cette commande pour exécuter l’installation :
 ```cmd
 c:\vslayout\vs_community.exe --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional
 ```
+
+Pour obtenir plus d’exemples d’utilisation des [paramètres de ligne de commande](use-command-line-parameters-to-install-visual-studio.md), consultez la page d’installation des [exemples de paramètres de ligne de commande pour Visual Studio](command-line-parameter-examples.md) . 
 
 > [!NOTE]
 > Si vous obtenez une erreur indiquant qu’une signature n’est pas valide, vous devez installer les certificats mis à jour. Ouvrez le dossier des certificats dans votre cache hors connexion. Double-cliquez sur chacun des fichiers de certificat, puis suivez les étapes de l’Assistant du Gestionnaire de certificats. Si un mot de passe vous est demandé, n’indiquez rien.

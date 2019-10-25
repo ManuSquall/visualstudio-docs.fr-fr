@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c3a6d3eb61f4e4a7504b184477ec1b3f2a8ba83
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 091d2f5996d53341e57c5c1b2125609642a156eb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829613"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744024"
 ---
 # <a name="idiaenumsourcefiles"></a>IDiaEnumSourceFiles
 Énumère les différents fichiers sources contenus dans la source de données.
@@ -33,21 +33,21 @@ Le tableau suivant présente les méthodes de `IDiaEnumSourceFiles`.
 
 |Méthode|Description|
 |------------|-----------------|
-|[IDiaEnumSourceFiles::get__NewEnum](../../debugger/debug-interface-access/idiaenumsourcefiles-get-newenum.md)|Récupère le `IEnumVARIANT Interface` version de cet énumérateur.|
+|[IDiaEnumSourceFiles::get__NewEnum](../../debugger/debug-interface-access/idiaenumsourcefiles-get-newenum.md)|Récupère la version `IEnumVARIANT Interface` de cet énumérateur.|
 |[IDiaEnumSourceFiles::get_Count](../../debugger/debug-interface-access/idiaenumsourcefiles-get-count.md)|Récupère le nombre de fichiers sources.|
 |[IDiaEnumSourceFiles::Item](../../debugger/debug-interface-access/idiaenumsourcefiles-item.md)|Récupère un fichier source au moyen d’un index.|
 |[IDiaEnumSourceFiles::Next](../../debugger/debug-interface-access/idiaenumsourcefiles-next.md)|Récupère un nombre spécifié de fichiers sources dans la séquence d’énumération.|
 |[IDiaEnumSourceFiles::Skip](../../debugger/debug-interface-access/idiaenumsourcefiles-skip.md)|Ignore un nombre spécifié de fichiers sources dans une séquence d’énumération.|
 |[IDiaEnumSourceFiles::Reset](../../debugger/debug-interface-access/idiaenumsourcefiles-reset.md)|Réinitialise une séquence d’énumération au début.|
-|[IDiaEnumSourceFiles::Clone](../../debugger/debug-interface-access/idiaenumsourcefiles-clone.md)|Crée un énumérateur qui contient le même état d’énumération que l’énumérateur en cours.|
+|[IDiaEnumSourceFiles::Clone](../../debugger/debug-interface-access/idiaenumsourcefiles-clone.md)|Crée un énumérateur qui contient le même état d’énumération que l’énumérateur actuel.|
 
 ## <a name="remarks"></a>Notes
 
-## <a name="notes-for-callers"></a>Notes de publication pour les appelants
-Obtenez cette interface en appelant le `QueryInterface` méthode sur un [IDiaTable](../../debugger/debug-interface-access/idiatable.md) objet. Consultez l’exemple pour plus d’informations.
+## <a name="notes-for-callers"></a>Notes pour les appelants
+Obtenez cette interface en appelant la méthode `QueryInterface` sur un objet [IDiaTable](../../debugger/debug-interface-access/idiatable.md) . Pour plus d’informations, consultez l’exemple.
 
 ## <a name="example"></a>Exemple
-Cet exemple montre comment obtenir le `IDiaEnumSourceFiles` interface à partir de la liste des tables dans un objet de session DIA. Pour obtenir un exemple d’accès aux informations du fichier source, consultez la [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) interface.
+Cet exemple montre comment obtenir l’interface `IDiaEnumSourceFiles` à partir de la liste de tables dans un objet de session DIA. Pour obtenir un exemple d’accès aux informations du fichier source, consultez l’interface [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md) .
 
 ```C++
 
@@ -79,12 +79,12 @@ IDiaEnumSourceFiles* GetEnumSourceFiles(IDiaSession *pSession)
 }
 ```
 
-## <a name="requirements"></a>Configuration requise
-En-tête : Dia2.h
+## <a name="requirements"></a>spécifications
+En-tête : Dia2. h
 
-Bibliothèque : diaguids.lib
+Bibliothèque : diaguids. lib
 
-DLL : msdia80.dll
+DLL : Msdia80. dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Interfaces (SDK Debug Interface Access)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)

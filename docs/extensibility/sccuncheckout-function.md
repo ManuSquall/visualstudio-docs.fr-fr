@@ -1,5 +1,5 @@
 ---
-title: Fonction SccUncheckout | Microsoft Docs
+title: SccUncheckout fonction) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,15 +12,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4d50b321f96b6759d95a6d923222e5e0a92b2ee3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e35d7287d8fc12100da9ba3b8383d8e92cee73d4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338471"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72720529"
 ---
 # <a name="sccuncheckout-function"></a>Fonction SccUncheckout
-Cette fonction annule une opération d’extraction précédente, restaurant ainsi le contenu de l’ou les fichiers sélectionnés à l’état précédant l’extraction. Toutes les modifications apportées au fichier depuis l’extraction sont perdues.
+Cette fonction annule une opération d’extraction précédente, restaurant ainsi le contenu du ou des fichiers sélectionnés à l’état antérieur à l’extraction. Toutes les modifications apportées au fichier depuis l’extraction sont perdues.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -38,44 +38,44 @@ SCCRTN SccUncheckout (
 #### <a name="parameters"></a>Paramètres
  pvContext
 
-[in] La structure de contexte de plug-in de contrôle de source.
+dans Structure de contexte du plug-in de contrôle de code source.
 
  hWnd
 
-[in] Handle vers la fenêtre de l’IDE que le plug-in de contrôle de code source peut utiliser en tant que parent pour les boîtes de dialogue qu’il fournit.
+dans Handle de la fenêtre IDE que le plug-in de contrôle de code source peut utiliser comme parent pour toutes les boîtes de dialogue qu’il fournit.
 
- nFiles
+ Nfichiers
 
-[in] Nombre de fichiers spécifiés dans le `lpFileNames` tableau.
+dans Nombre de fichiers spécifiés dans le tableau de `lpFileNames`.
 
  lpFileNames
 
-[in] Tableau des noms de chemin d’accès local complet des fichiers pour lequel annuler une extraction.
+dans Tableau de noms de chemins d’accès locaux complets des fichiers pour lesquels annuler une extraction.
 
  fOptions
 
-[in] Indicateurs de commande (non utilisés).
+dans Indicateurs de commande (non utilisés).
 
  pvOptions
 
-[in] Options spécifiques au plug-in de contrôle source.
+dans Options spécifiques au plug-in de contrôle de code source.
 
 ## <a name="return-value"></a>Valeur de retour
- L’implémentation de plug-in de contrôle de source de cette fonction est censée retourner l’une des valeurs suivantes :
+ L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
-|Value|Description|
+|valeur|Description|
 |-----------|-----------------|
-|SCC_OK|Annulation de l’extraction a réussi.|
-|SCC_E_FILENOTCONTROLLED|Le fichier sélectionné n’est pas sous contrôle de code source.|
-|SCC_E_ACCESSFAILURE|Impossible d’accéder au système de contrôle source, probablement en raison de problèmes réseau ou de contention. Une nouvelle tentative est recommandée.|
-|SCC_E_NONSPECIFICERROR|Erreur non spécifique. Annuler extraction n’a pas réussi.|
-|SCC_E_NOTCHECKEDOUT|L’utilisateur n’a pas extrait le fichier.|
+|SCC_OK|L’extraction de l’annulation a réussi.|
+|SCC_E_FILENOTCONTROLLED|Le fichier sélectionné n’est pas sous le contrôle de code source.|
+|SCC_E_ACCESSFAILURE|Un problème est survenu lors de l’accès au système de contrôle de code source, probablement en raison de problèmes de réseau ou de contention. Une nouvelle tentative est recommandée.|
+|SCC_E_NONSPECIFICERROR|Échec non spécifique. Échec de l’extraction de l’annulation.|
+|SCC_E_NOTCHECKEDOUT|L’utilisateur n’a pas le fichier extrait.|
 |SCC_E_NOTAUTHORIZED|L’utilisateur n’est pas autorisé à effectuer cette opération.|
 |SCC_E_PROJNOTOPEN|Le projet n’a pas été ouvert à partir du contrôle de code source.|
 |SCC_I_OPERATIONCANCELED|L’opération a été annulée avant la fin.|
 
 ## <a name="remarks"></a>Notes
- Après cette opération, le `SCC_STATUS_CHECKEDOUT` et `SCC_STATUS_MODIFIED` indicateurs seront désactivées pour les fichiers sur lequel l’annulation de l’extraction a été effectuée.
+ Après cette opération, les indicateurs `SCC_STATUS_CHECKEDOUT` et `SCC_STATUS_MODIFIED` seront tous deux désactivés pour les fichiers sur lesquels l’extraction d’annulation a été effectuée.
 
 ## <a name="see-also"></a>Voir aussi
 - [Fonctions d’API du plug-in de contrôle de code source](../extensibility/source-control-plug-in-api-functions.md)

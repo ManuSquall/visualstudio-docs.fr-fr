@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5cc189283d6e9910b0b01d3d3e1ca28165bf500
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d776e37bab189e61d0264f4cbda24f89cb4501ce
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839691"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742935"
 ---
 # <a name="idiapropertystoragereadbool"></a>IDiaPropertyStorage::ReadBOOL
 Lit `BOOL` valeurs dans un jeu de propriétés.
@@ -34,17 +34,17 @@ HRESULT ReadBOOL ( 
 #### <a name="parameters"></a>Paramètres
  `id`
 
-[in] Identificateur de la propriété à lire (`PROPID` est défini dans WTypes.h comme un `ULONG`).
+dans Identificateur de la propriété à lire (`PROPID` est défini dans WTypes. h en tant que `ULONG`).
 
  `pValue`
 
-[out] Retourne la valeur de propriété.
+à Retourne la valeur de la propriété.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Retourne `E_INVALIDARG` si la propriété n’est pas de type `BOOL`.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne un code d’erreur. Retourne `E_INVALIDARG` si la propriété n’est pas de type `BOOL`.
 
 ## <a name="remarks"></a>Notes
- Pour obtenir des résultats cohérents, interpréter les `BOOL` sorte que les valeurs différentes de zéro sont `TRUE` et zéro est `FALSE`.
+ Pour obtenir des résultats cohérents, interprétez la valeur `BOOL` afin que les valeurs autres que zéro soient `TRUE` et zéro est `FALSE`.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

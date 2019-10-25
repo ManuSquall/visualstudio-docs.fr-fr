@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03d24770c90ebd225fa37dd7f60d794781e79e7e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6ac6eea93daf9b0ef7d8169a4f765c249f3b9ee4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828454"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743262"
 ---
-# <a name="idialinenumbergetcolumnnumber"></a>IDiaLineNumber::get_columnNumber
+# <a name="idialinenumberget_columnnumber"></a>IDiaLineNumber::get_columnNumber
 Récupère le numéro de colonne où l’expression ou l’instruction commence.
 
 ## <a name="syntax"></a>Syntaxe
@@ -33,13 +33,13 @@ HRESULT get_columnNumber ( 
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-[out] Retourne le numéro de colonne où l’expression ou l’instruction commence. Si la valeur est zéro, les informations de colonne ne sont pas présentes.
+à Retourne le numéro de la colonne où l’expression ou l’instruction commence. Si la valeur est égale à zéro, les informations sur les colonnes ne sont pas présentes.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- La valeur de la colonne retournée par cette méthode est un offset d’octet dans la ligne vers le premier caractère de l’instruction sur la ligne.
+ La valeur de colonne retournée par cette méthode est un offset d’octet dans la ligne jusqu’au premier caractère de l’instruction sur la ligne.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

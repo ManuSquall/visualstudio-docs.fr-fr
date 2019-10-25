@@ -1,5 +1,5 @@
 ---
-title: Fonction SccWillCreateSccFile | Microsoft Docs
+title: SccWillCreateSccFile fonction) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,15 +12,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1dc7b9f5b298260b2bcca88c75087059bd8f0065
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2ac7657258b79b2e53bee8138bc5b2728f618eac
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338450"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72720120"
 ---
 # <a name="sccwillcreatesccfile-function"></a>Fonction SccWillCreateSccFile
-Cette fonction détermine si le plug-in de contrôle de code source prend en charge la création de la MSSCCPRJ. Fichier de contrôle de code source pour chacun des fichiers donnés.
+Cette fonction détermine si le plug-in de contrôle de code source prend en charge la création du MSSCCPRJ. Fichier SCC pour chacun des fichiers donnés.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -36,31 +36,31 @@ SCCRTN SccWillCreateSccFile(
 #### <a name="parameters"></a>Paramètres
  pContext
 
-[in] Le pointeur de contexte de plug-in de contrôle de code source.
+dans Pointeur de contexte du plug-in de contrôle de code source.
 
- nFiles
+ Nfichiers
 
-[in] Le nombre de noms de fichiers inclus dans le `lpFileNames` tableau ainsi que la longueur de la `pbSccFiles` tableau.
+dans Le nombre de noms de fichiers inclus dans le tableau `lpFileNames`, ainsi que la longueur du tableau `pbSccFiles`.
 
  lpFileNames
 
-[in] Un tableau de noms de fichier qualifié complet à vérifier (tableau doit être alloué par l’appelant).
+dans Tableau de noms de fichiers qualifiés complets à vérifier (le tableau doit être alloué par l’appelant).
 
  pbSccFiles
 
 [in, out] Tableau dans lequel stocker les résultats.
 
 ## <a name="return-value"></a>Valeur de retour
- L’implémentation de plug-in de contrôle de source de cette fonction est censée retourner l’une des valeurs suivantes :
+ L’implémentation du plug-in de contrôle de code source de cette fonction est supposée retourner l’une des valeurs suivantes :
 
-|Value|Description|
+|valeur|Description|
 |-----------|-----------------|
 |SCC_OK|Opération réussie.|
-|SCC_E_INVALIDFILEPATH|Parmi les chemins d’accès dans le tableau n’est pas valide.|
-|SCC_E_NONSPECIFICERROR|Erreur non spécifique.|
+|SCC_E_INVALIDFILEPATH|L’un des chemins d’accès dans le tableau n’est pas valide.|
+|SCC_E_NONSPECIFICERROR|Échec non spécifique.|
 
 ## <a name="remarks"></a>Notes
- Cette fonction est appelée avec une liste de fichiers pour déterminer si le plug-in de contrôle de code source fournit la prise en charge dans le MSSCCPRJ. Fichier de contrôle de code source pour chacun des fichiers données (pour plus d’informations sur la MSSCCPRJ. Fichier de contrôle de code source, consultez [MSSCCPRJ. Fichier de SCC](../extensibility/mssccprj-scc-file.md)). Plug-ins de contrôle de code source peut déclarer s’ils ont la capacité de création MSSCCPRJ. Fichiers SCC en déclarant `SCC_CAP_SCCFILE` pendant l’initialisation. Le plug-in retourne `TRUE` ou `FALSE` par fichier dans le `pbSccFiles` tableau pour indiquer quels fichiers donnés ayant MSSCCPRJ. Prise en charge du contrôle de code source. Si le plug-in retourne un code de réussite de la fonction, les valeurs dans le tableau de résultats sont respectées. En cas d’échec, le tableau est ignoré.
+ Cette fonction est appelée avec une liste de fichiers pour déterminer si le plug-in de contrôle de code source assure la prise en charge dans le fichier MSSCCPRJ. Fichier SCC pour chaque fichier donné (pour plus d’informations sur le fichier MSSCCPRJ. Fichier SCC, consultez [Mssccprj. Fichier SCC](../extensibility/mssccprj-scc-file.md)). Les plug-ins de contrôle de code source peuvent déclarer s’ils ont la possibilité de créer MSSCCPRJ. Fichiers SCC en déclarant `SCC_CAP_SCCFILE` pendant l’initialisation. Le plug-in retourne `TRUE` ou `FALSE` par fichier dans le tableau `pbSccFiles` pour indiquer les fichiers spécifiés qui ont MSSCCPRJ. Prise en charge de SCC. Si le plug-in retourne un code de réussite de la fonction, les valeurs du tableau de retour sont honorées. En cas d’échec, le tableau est ignoré.
 
 ## <a name="see-also"></a>Voir aussi
 - [Fonctions d’API du plug-in de contrôle de code source](../extensibility/source-control-plug-in-api-functions.md)

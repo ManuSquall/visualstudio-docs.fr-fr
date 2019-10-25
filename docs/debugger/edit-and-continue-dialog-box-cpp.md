@@ -1,5 +1,5 @@
 ---
-title: Modifier et continuer, boîte de dialogue (C++) | Microsoft Docs
+title: Modifier & continuer, boîte deC++dialogue () | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6e7183845e9c0b9b50b8feaedf9e6327b06678ad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d708b4f74777fb40eccc2fef9b782689f830e092
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62851421"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72737969"
 ---
 # <a name="edit-and-continue-dialog-box-c"></a>Modifier et continuer, boîte de dialogue (C++)
 Modifier &amp; Continuer n'a pas pu appliquer les modifications que vous avez apportées au code natif. Il peut d'agit d'une condition temporaire. Parfois, Modifier &amp; Continuer ne peut pas appliquer immédiatement les modifications du code natif, mais peut le faire plus tard au cours de la session de débogage (par exemple, après avoir terminé l'appel à la procédure en cours d'exécution). Pour plus d’informations, consultez [Modifier et Continuer](../debugger/edit-and-continue.md).

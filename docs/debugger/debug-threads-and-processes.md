@@ -1,5 +1,5 @@
 ---
-title: Outils pour déboguer les threads et processus | Microsoft Docs
+title: Outils pour déboguer des threads et des processus | Microsoft Docs
 ms.date: 04/21/2018
 ms.topic: conceptual
 dev_langs:
@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4769224cfb26c4b1d55362fea006f55ba8845da
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dcdaf083462b75485449cae05894681e2bb5c900
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852879"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738381"
 ---
-# <a name="tools-to-debug-threads-and-processes-in-visual-studio"></a>Outils pour déboguer les threads et processus dans Visual Studio
+# <a name="tools-to-debug-threads-and-processes-in-visual-studio"></a>Outils pour déboguer des threads et des processus dans Visual Studio
 Les *threads* et les *processus* sont des concepts liés en informatique. Tous deux représentent des séquences d'instructions qui doivent s'exécuter dans un ordre spécifique. Les instructions dans des threads ou processus séparés, toutefois, peuvent s'exécuter en parallèle.
 
  Les processus existent dans le système d'exploitation et correspondent à ce que les utilisateurs voient sous la forme de programmes ou d'applications. Un thread, en revanche, existe dans un processus. C’est pour cette raison que les threads sont parfois appelés *processus légers*. Chaque processus est constitué d'un ou de plusieurs threads.
@@ -38,15 +38,15 @@ Les *threads* et les *processus* sont des concepts liés en informatique. Tous d
  Le débogueur [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] propose des outils performants mais faciles à utiliser pour déboguer les threads et les processus.
 
 ## <a name="tools-and-features"></a>Outils et fonctionnalités
-Les outils que vous devez utiliser dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] varient selon le type de code que vous voulez déboguer :
+Les outils que vous devez utiliser dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dépendent du type de code que vous essayez de déboguer :
 
-- Pour les processus, les principaux outils sont le **attacher au processus** boîte de dialogue, le **processus** fenêtre et le **emplacement de débogage** barre d’outils.
+- Pour les processus, les outils principaux sont la boîte de dialogue **attacher au processus** , la fenêtre **processus** et la barre d’outils **emplacement de débogage** .
 
-- Pour les threads, les principaux outils de débogage de threads sont les **Threads** fenêtre, les marqueurs de thread dans les fenêtres source **piles parallèles** fenêtre, **espion parallèle** fenêtre, et le **emplacement de débogage** barre d’outils.
+- Pour les threads, les principaux outils de débogage des threads sont la fenêtre **Threads** , les marqueurs de thread dans les fenêtres source, la fenêtre **Piles parallèles** , la fenêtre **Espion parallèle** et la barre d’outils **emplacement de débogage** .
 
-- Pour le code qui utilise le <xref:System.Threading.Tasks.Task> dans le [bibliothèque parallèle de tâches (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl), le [Runtime d’accès concurrentiel](/cpp/parallel/concrt/concurrency-runtime/) (code natif), les principaux outils de débogage d’applications multithread sont les **Piles parallèles** fenêtre, le **espion parallèle** fenêtre et le **tâches** fenêtre (la **tâches** fenêtre prend également en charge le Objet de promesse JavaScript).
+- Pour le code qui utilise la <xref:System.Threading.Tasks.Task> dans la [bibliothèque parallèle de tâches (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl), le [Runtime d’accès concurrentiel](/cpp/parallel/concrt/concurrency-runtime/) (code natif), les principaux outils pour le débogage d’applications multithread sont la fenêtre **Piles parallèles** , la **surveillance parallèle** et la fenêtre **tâches** (la fenêtre **tâches** prend également en charge l’objet de promesse JavaScript).
 
-- Pour déboguer des threads sur le GPU, le principal outil est la **Threads GPU** windows.
+- Pour déboguer des threads sur le GPU, l’outil principal est la fenêtre **Threads GPU** .
 
   Le tableau suivant affiche les informations disponibles et les actions que vous pouvez exécuter depuis chacun de ces emplacements :
 
@@ -57,10 +57,10 @@ Les outils que vous devez utiliser dans [!INCLUDE[vsprvs](../code-quality/includ
 |Fenêtre **Threads**|Threads dans le processus actuel :<br /><br /> -   ID de thread<br />-   ID managé<br />-   Catégorie (thread principal, thread d’interface, gestionnaire d’appel de procédure distante ou thread de travail)<br />-   Nom du thread<br />-   Emplacement de création du thread<br />-   Priorité<br />-   Masque d’affinité<br />-   Compteur suspendu<br />-   Nom du processus<br />-   Indicateur<br />-   Indicateur suspendu|Outils :<br /><br /> -   Rechercher<br />-   Rechercher la pile des appels<br />-   Signaler uniquement mon code<br />-   Signaler la sélection de modules personnalisés<br />-   Regrouper par<br />-   Colonnes<br />-   Développer/réduire la pile des appels<br />-   Développer/Réduire les groupes<br />-   Figer/libérer les threads<br /><br /> Menu contextuel :<br /><br /> -   Afficher les threads dans la source<br />-   Basculer vers un thread<br />-   Figer un thread en cours d’exécution<br />-   Libérer un thread figé<br />-   Marquer un thread pour un examen plus détaillé<br />-   Supprimer l’indicateur d’un thread<br />-   Renommer un thread<br />-   Afficher et masquer des threads<br /><br /> Autres actions :<br /><br /> -   Afficher la pile d’appel d’un thread dans un DataTip|
 |Fenêtre source|Les indicateurs de thread de la marge gauche signalent un ou plusieurs threads (option désactivée par défaut, activée à l’aide du menu contextuel de la fenêtre **Threads**)|Menu contextuel :<br /><br /> -   Basculer vers un thread<br />-   Marquer un thread pour un examen plus détaillé<br />-   Supprimer l’indicateur d’un thread|
 |Barre d’outils **Emplacement de débogage**|-   Processus en cours<br />-   Interrompre l’application<br />-   Reprendre l’application<br />-   Interrompre et quitter l’application<br />-   Thread en cours<br />-   Activer/désactiver l’état actuel de l’indicateur de thread<br />-   Afficher seulement des threads avec indicateur<br />-   Afficher uniquement le processus actuel<br />-   Frame de pile en cours|-   Basculer vers un autre processus<br />-   Interrompre, reprendre ou quitter l’application<br />-   Basculer vers un autre thread dans le processus en cours<br />-   Basculer vers un autre frame de pile dans le thread en cours<br />-   Ajouter ou supprimer l’indicateur de threads actuels<br />-   Afficher seulement des threads avec indicateur<br />-   Afficher uniquement le processus actuel|
-|Fenêtre **Piles parallèles**|-   Piles des appels pour plusieurs threads dans une fenêtre.<br />-   -   Frame de pile actif pour chaque thread.<br />-   Appelants et appelés pour une méthode.|-   Éliminer les threads spécifiés par filtrage<br />-Basculez en vue tâches<br />-   Ajouter ou supprimer l’indicateur d’un thread<br />-   Zoomer|
+|Fenêtre **Piles parallèles**|-   Piles des appels pour plusieurs threads dans une fenêtre.<br />-   -   Frame de pile actif pour chaque thread.<br />-   Appelants et appelés pour une méthode.|-   Éliminer les threads spécifiés par filtrage<br />-Basculer vers la vue tâches<br />-   Ajouter ou supprimer l’indicateur d’un thread<br />-   Zoomer|
 |Fenêtre **Espion parallèle**|-   La colonne d’indicateur, où vous pouvez marquer un thread auquel vous souhaitez apporter une attention spéciale.<br />-   La colonne de frame, dans laquelle une flèche indique le frame sélectionné.<br />-   Une colonne configurable qui peut afficher l’ordinateur, le processus, la mosaïque, la tâche et le thread.|-   Ajouter ou supprimer l’indicateur d’un thread<br />-   Afficher uniquement les threads avec indicateur<br />-   Basculer les frames<br />-   Trier une colonne<br />-   Regrouper des threads<br />-   Figer ou libérer les threads<br />-   Exporter les données dans la fenêtre Espion parallèle|
-|**Tâches** fenêtre|-   Affichez des informations sur les objets <xref:System.Threading.Tasks.Task>, notamment l’ID de la tâche, son état (planifié, en cours, en attente, bloqué), ainsi que le thread qui lui est assigné.<br />-   Emplacement actuel dans la pile des appels<br />-   Délégué passé à la tâche au moment de la création|-   Basculer vers la tâche actuelle<br />-   Ajouter ou supprimer l’indicateur d’une tâche<br />-   Figer ou libérer une tâche|
-|Fenêtre **Threads GPU**|-   La colonne d’indicateur, où vous pouvez marquer un thread auquel vous souhaitez apporter une attention spéciale.<br />-Thread colonne active, dans lequel une flèche jaune indique que le thread actuel.<br />-   Colonne **Nombre de threads**, qui affiche le nombre de threads au même emplacement.<br />-   Colonne **Ligne**, qui affiche la ligne de code où chaque groupe de threads est situé.<br />-   Colonne **Adresse**, qui affiche l’adresse de l’instruction où chaque groupe de threads est localisé.<br />-   Colonne **Emplacement**, qui correspond à l’emplacement dans le code de l’adresse.<br />-   Colonne **État**, qui indique si le thread est actif ou bloqué.<br />-   Colonne **Mosaïque**, qui indique l’index de la mosaïque des threads dans la ligne.|-Modifier à un autre thread<br />-   Afficher une mosaïque et un thread particuliers<br />-   Afficher ou masquer une colonne<br />-   Trier par colonne<br />-   Regrouper des threads<br />-   Figer ou libérer les threads<br />-   Ajouter ou supprimer l’indicateur d’un thread<br />-   Afficher uniquement les threads avec indicateur|
+|Fenêtre **tâches**|-   Affichez des informations sur les objets <xref:System.Threading.Tasks.Task>, notamment l’ID de la tâche, son état (planifié, en cours, en attente, bloqué), ainsi que le thread qui lui est assigné.<br />-   Emplacement actuel dans la pile des appels<br />-   Délégué passé à la tâche au moment de la création|-   Basculer vers la tâche actuelle<br />-   Ajouter ou supprimer l’indicateur d’une tâche<br />-   Figer ou libérer une tâche|
+|Fenêtre **Threads GPU**|-   La colonne d’indicateur, où vous pouvez marquer un thread auquel vous souhaitez apporter une attention spéciale.<br />-La colonne de thread en cours, dans laquelle une flèche jaune indique le thread actuel.<br />-   Colonne **Nombre de threads**, qui affiche le nombre de threads au même emplacement.<br />-   Colonne **Ligne**, qui affiche la ligne de code où chaque groupe de threads est situé.<br />-   Colonne **Adresse**, qui affiche l’adresse de l’instruction où chaque groupe de threads est localisé.<br />-   Colonne **Emplacement**, qui correspond à l’emplacement dans le code de l’adresse.<br />-   Colonne **État**, qui indique si le thread est actif ou bloqué.<br />-   Colonne **Mosaïque**, qui indique l’index de la mosaïque des threads dans la ligne.|-Basculer vers un autre thread<br />-   Afficher une mosaïque et un thread particuliers<br />-   Afficher ou masquer une colonne<br />-   Trier par colonne<br />-   Regrouper des threads<br />-   Figer ou libérer les threads<br />-   Ajouter ou supprimer l’indicateur d’un thread<br />-   Afficher uniquement les threads avec indicateur|
 
 ## <a name="see-also"></a>Voir aussi
 

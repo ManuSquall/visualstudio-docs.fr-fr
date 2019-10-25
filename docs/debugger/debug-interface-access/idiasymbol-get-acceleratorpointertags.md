@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1724ee3e81ac00ed048f323105842361ec22bc7
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: f36b4bf9fdd362f4941e33745d59d481a473c607
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62827292"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741113"
 ---
-# <a name="idiasymbolgetacceleratorpointertags"></a>IDiaSymbol::get_acceleratorPointerTags
-Retourne toutes les valeurs de balise de pointeur accélérateur qui correspondent à une fonction de stub d’accélérateur C++ AMP.
+# <a name="idiasymbolget_acceleratorpointertags"></a>IDiaSymbol::get_acceleratorPointerTags
+Retourne toutes les valeurs de balise de pointeur d' C++ accélérateur qui correspondent à une fonction de stub d’accélérateur amp.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -32,21 +32,21 @@ HRESULT get_acceleratorPointerTags(
 #### <a name="parameters"></a>Paramètres
  `cnt`
 
-[in] La taille du tableau de sortie `pPointerTags`.
+dans Taille du tableau de sortie `pPointerTags`.
 
  `pcnt`
 
-[out] Le nombre de balises de pointeur accélérateur dans la C++ AMP accélérateur stub (fonction).
+à Nombre de balises de pointeur d’accélérateur C++ dans la fonction stub de l’accélérateur amp.
 
  `pPointerTags`
 
-[out] Un `DWORD` pointeur du tableau qui est rempli avec les valeurs de balise de pointeur accélérateur dans la C++ AMP accélérateur stub (fonction).
+à Pointeur de tableau `DWORD` qui est rempli avec les valeurs de balise de pointeur C++ d’accélérateur dans la fonction stub d’accélérateur amp.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
 
 ## <a name="remarks"></a>Notes
- Cette méthode est appelée sur un `IDiaSymbol` interface qui correspond à une fonction de stub d’accélérateur C++ AMP.
+ Cette méthode est appelée sur une interface `IDiaSymbol` qui correspond à une C++ fonction de stub d’accélérateur amp.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

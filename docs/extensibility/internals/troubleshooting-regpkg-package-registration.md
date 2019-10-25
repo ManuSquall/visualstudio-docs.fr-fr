@@ -1,5 +1,5 @@
 ---
-title: Résolution des problèmes d’inscription du Package RegPkg | Microsoft Docs
+title: Résolution des problèmes d’inscription du package RegPkg | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,31 +10,31 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 219a21eac296daa442fc2f705eb2758790777333
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 386a1a17c036207d122e4b3c7cb142a628dcfe38
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344751"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72722275"
 ---
 # <a name="troubleshooting-regpkg-package-registration"></a>Résolution des problèmes d’inscription du package RegPkg
 > [!NOTE]
-> La meilleure façon d’enregistrer des packages dans Visual Studio est à l’aide de fichiers .pkgdef. Cela permet le déploiement de l’extension sans avoir à accéder au Registre système. Fichiers pkgdef sont créés à l’aide de la [utilitaire CreatePkgDef](../../extensibility/internals/createpkgdef-utility.md).
+> La meilleure façon d’inscrire des packages dans Visual Studio consiste à utiliser des fichiers. pkgdef. Cela permet le déploiement d’extension sans avoir à accéder au registre système. Les fichiers pkgdef sont créés à l’aide de l' [utilitaire CreatePkgDef](../../extensibility/internals/createpkgdef-utility.md).
 
- Inscription d’un package à l’aide de RegPkg dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], vous devez utiliser la version de RegPkg qui convient à votre package.
+ Pour inscrire un package à l’aide de RegPkg dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], vous devez utiliser la version de RegPkg qui est appropriée pour votre package.
 
-## <a name="regpkg-versions-related-to-package-versions"></a>Versions RegPkg relatives aux Versions de Package
- Il existe deux versions de RegPkg. Une version est incluse dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Utilisez cette version pour inscrire les packages qui ont été générés à l’aide d’un des assemblys suivants :
+## <a name="regpkg-versions-related-to-package-versions"></a>Versions de RegPkg relatives aux versions de package
+ Il existe deux versions de RegPkg. Une version est incluse dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Utilisez cette version pour inscrire des packages qui ont été générés à l’aide de l’un des assemblys suivants :
 
-1. Microsoft.VisualStudioShell.9.0.dll
+1. Microsoft. VisualStudioShell. 9.0. dll
 
-2. Microsoft.VisualStudioShell.10.0.dll
+2. Microsoft. VisualStudioShell. 10.0. dll
 
-3. Microsoft.VisualStudioShell.11.0.dll
+3. Microsoft. VisualStudioShell. 11.0. dll
 
-   Elle ne peut pas inscrire les packages qui ont été générés à l’aide de l’assembly Microsoft.VisualStudio.Shell.dll antérieures.
+   Il ne peut pas inscrire des packages qui ont été générés à l’aide de l’assembly Microsoft. VisualStudio. Shell. dll antérieur.
 
-   La version antérieure de RegPkg peut inscrire des packages qui ont été générés à l’aide de l’assembly Microsoft.VisualStudio.Shell.dll. Toutefois, elle ne peut pas inscrire les packages générés à l’aide des versions ultérieures de cet assembly.
+   La version antérieure de RegPkg peut inscrire des packages qui ont été générés à l’aide de l’assembly Microsoft. VisualStudio. Shell. dll. Toutefois, il ne peut pas inscrire les packages générés à l’aide des versions ultérieures de cet assembly.
 
 ## <a name="see-also"></a>Voir aussi
 - [VSPackages](../../extensibility/internals/vspackages.md)

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef878dcae9f8d6d29761bcda5f5aa9588f26d66c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6386fc6bb460f7e0947680a9776af7646f1bec14
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828167"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742632"
 ---
-# <a name="idiasectioncontribgetinitializeddata"></a>IDiaSectionContrib::get_initializedData
-Récupère un indicateur qui indique si la section contient des données initialisées.
+# <a name="idiasectioncontribget_initializeddata"></a>IDiaSectionContrib::get_initializedData
+Récupère un indicateur qui signale si la section contient des données initialisées.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,10 +33,10 @@ HRESULT get_initializedData ( 
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-[out] Retourne `TRUE` si la section contient des données initialisée ; sinon, retourne `FALSE`.
+à Retourne `TRUE` si la section contient des données initialisées ; Sinon, retourne `FALSE`.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

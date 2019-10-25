@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 327a53a28e5b37d33d44375653c1bffa56c7ddd2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 819fe28b9ba3fb95e749f0be53702dd7fdccf008
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829022"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743103"
 ---
 # <a name="idialinenumber"></a>IDiaLineNumber
-Accéder à des informations qui décrit le processus de mappage d’un bloc d’octets de texte de l’image à un numéro de ligne du fichier source.
+Accède aux informations qui décrivent le processus de mappage d’un bloc d’octets de texte image à un numéro de ligne de fichier source.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,25 +33,25 @@ Le tableau suivant présente les méthodes de `IDiaLineNumber`.
 
 |Méthode|Description|
 |------------|-----------------|
-|[IDiaLineNumber::get_compiland](../../debugger/debug-interface-access/idialinenumber-get-compiland.md)|Récupère une référence au symbole de compiland qui ont contribué les octets du texte de l’image.|
+|[IDiaLineNumber::get_compiland](../../debugger/debug-interface-access/idialinenumber-get-compiland.md)|Récupère une référence au symbole du compiland qui a contribué aux octets du texte de l’image.|
 |[IDiaLineNumber::get_sourceFile](../../debugger/debug-interface-access/idialinenumber-get-sourcefile.md)|Récupère une référence à l’objet de fichier source.|
 |[IDiaLineNumber::get_lineNumber](../../debugger/debug-interface-access/idialinenumber-get-linenumber.md)|Récupère le numéro de ligne dans le fichier source.|
-|[IDiaLineNumber::get_lineNumberEnd](../../debugger/debug-interface-access/idialinenumber-get-linenumberend.md)|Récupère le numéro de ligne source basé sur un où se termine l’instruction ou une expression.|
+|[IDiaLineNumber::get_lineNumberEnd](../../debugger/debug-interface-access/idialinenumber-get-linenumberend.md)|Récupère le numéro de ligne source de base 1 où l’instruction ou l’expression se termine.|
 |[IDiaLineNumber::get_columnNumber](../../debugger/debug-interface-access/idialinenumber-get-columnnumber.md)|Récupère le numéro de colonne où l’expression ou l’instruction commence.|
 |[IDiaLineNumber::get_columnNumberEnd](../../debugger/debug-interface-access/idialinenumber-get-columnnumberend.md)|Récupère le numéro de colonne où l’expression ou l’instruction se termine.|
-|[IDiaLineNumber::get_addressSection](../../debugger/debug-interface-access/idialinenumber-get-addresssection.md)|Récupère la partie de la section de l’adresse mémoire où un bloc commence.|
-|[IDiaLineNumber::get_addressOffset](../../debugger/debug-interface-access/idialinenumber-get-addressoffset.md)|Récupère la partie décalage de l’adresse mémoire où un bloc commence.|
-|[IDiaLineNumber::get_relativeVirtualAddress](../../debugger/debug-interface-access/idialinenumber-get-relativevirtualaddress.md)|Récupère l’image adresse virtuelle relative (RVA) d’un bloc.|
+|[IDiaLineNumber::get_addressSection](../../debugger/debug-interface-access/idialinenumber-get-addresssection.md)|Récupère la partie de la section de l’adresse mémoire à laquelle commence un bloc.|
+|[IDiaLineNumber::get_addressOffset](../../debugger/debug-interface-access/idialinenumber-get-addressoffset.md)|Récupère la partie offset de l’adresse mémoire à laquelle commence un bloc.|
+|[IDiaLineNumber::get_relativeVirtualAddress](../../debugger/debug-interface-access/idialinenumber-get-relativevirtualaddress.md)|Récupère l’adresse virtuelle relative (RVA) d’une image d’un bloc.|
 |[IDiaLineNumber::get_virtualAddress](../../debugger/debug-interface-access/idialinenumber-get-virtualaddress.md)|Récupère l’adresse virtuelle (VA) d’un bloc.|
 |[IDiaLineNumber::get_length](../../debugger/debug-interface-access/idialinenumber-get-length.md)|Récupère le nombre d’octets dans un bloc.|
-|[IDiaLineNumber::get_sourceFileId](../../debugger/debug-interface-access/idialinenumber-get-sourcefileid.md)|Récupère un identificateur de fichier source unique pour le fichier source qui a contribué à cette ligne.|
-|[IDiaLineNumber::get_statement](../../debugger/debug-interface-access/idialinenumber-get-statement.md)|Récupère un indicateur qui spécifie que les informations de ligne décrivent le début d’une instruction dans la source du programme.|
-|[IDiaLineNumber::get_compilandId](../../debugger/debug-interface-access/idialinenumber-get-compilandid.md)|Récupère l’identificateur unique pour le compiland qui ont contribué à cette ligne.|
+|[IDiaLineNumber::get_sourceFileId](../../debugger/debug-interface-access/idialinenumber-get-sourcefileid.md)|Récupère un identificateur de fichier source unique pour le fichier source qui a participé à cette ligne.|
+|[IDiaLineNumber::get_statement](../../debugger/debug-interface-access/idialinenumber-get-statement.md)|Récupère un indicateur qui spécifie que ces informations de ligne décrivent le début d’une instruction dans la source du programme.|
+|[IDiaLineNumber::get_compilandId](../../debugger/debug-interface-access/idialinenumber-get-compilandid.md)|Récupère l’identificateur unique pour le compiland qui a participé à cette ligne.|
 
 ## <a name="remarks"></a>Notes
 
-## <a name="notes-for-callers"></a>Notes de publication pour les appelants
-Obtenez cette interface en appelant le [IDiaEnumLineNumbers::Item](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md) ou [IDiaEnumLineNumbers::Next](../../debugger/debug-interface-access/idiaenumlinenumbers-next.md) méthodes.
+## <a name="notes-for-callers"></a>Notes pour les appelants
+Obtenez cette interface en appelant les méthodes [IDiaEnumLineNumbers :: Item](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md) ou [IDiaEnumLineNumbers :: Next](../../debugger/debug-interface-access/idiaenumlinenumbers-next.md) .
 
 ## <a name="example"></a>Exemple
 La fonction suivante affiche les numéros de ligne utilisés dans une fonction (représentée par `pSymbol`).
@@ -134,12 +134,12 @@ void dumpFunctionLines( IDiaSymbol* pSymbol, IDiaSession* pSession )
 }
 ```
 
-## <a name="requirements"></a>Configuration requise
-En-tête : Dia2.h
+## <a name="requirements"></a>spécifications
+En-tête : Dia2. h
 
-Bibliothèque : diaguids.lib
+Bibliothèque : diaguids. lib
 
-DLL : msdia80.dll
+DLL : Msdia80. dll
 
 ## <a name="see-also"></a>Voir aussi
 - [Interfaces (SDK Debug Interface Access)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)

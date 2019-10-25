@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd9dd34bd75199f2af3e14a96a12af663b2ba1f9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 42e17066df5ece7efda46f2a389b5ae5756949ea
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829691"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744438"
 ---
 # <a name="idiaenumlinenumbersclone"></a>IDiaEnumLineNumbers::Clone
-Crée un énumérateur qui contient le même état d’énumération que l’énumérateur en cours.
+Crée un énumérateur qui contient le même état d’énumération que l’énumérateur actuel.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,10 +33,10 @@ HRESULT Clone ( 
 #### <a name="parameters"></a>Paramètres
  `ppenum`
 
-[out] Retourne un [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) objet qui contient un doublon de l’énumérateur. La ligne de nombres ne sont pas dupliqués, uniquement l’énumérateur...
+à Retourne un objet [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) qui contient un doublon de l’énumérateur. Les numéros de ligne ne sont pas dupliqués, mais uniquement l’énumérateur.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne un code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)

@@ -14,24 +14,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0c121e996972b47a91a018d910a5d3677cb4cffa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bf61dce9940279b490d9270420cc45baf0b82dc0
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62855202"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72738658"
 ---
 # <a name="managedtype"></a>ManagedType
-Un type managé (n’importe quel symbole défini par les métadonnées ou du format natif vers les fonctionnalités de gestion de mémoire et de ressources de langages tels que c#) est identifié par un `SymTagManagedType` symbole.
+Un type managé (tout symbole défini par des métadonnées ou natif pour la fonctionnalité de gestion des ressources et de la C#mémoire des langages tels que) est identifié par un symbole de `SymTagManagedType`.
 
-## <a name="properties"></a>Properties
- Le tableau suivant montre des propriétés supplémentaires valides pour ce type de symbole.
+## <a name="properties"></a>Propriétés
+ Le tableau suivant présente des propriétés valides supplémentaires pour ce type de symbole.
 
-|Propriété|Type de données|Description|
+|Property|Type de données|Description|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_name](../../debugger/debug-interface-access/idiasymbol-get-name.md)|`BSTR`|Nom du symbole managé.|
-|[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|ID d’index de symbole.|
-|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Retourne `SymTagManagedType` (parmi les [SymTagEnum (énumération)](../../debugger/debug-interface-access/symtagenum.md) valeurs).|
+|[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|ID d’index du symbole.|
+|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Retourne `SymTagManagedType` (l’une des valeurs d' [énumération SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) ).|
 
 ## <a name="see-also"></a>Voir aussi
 - [Hiérarchie de classes des types de symboles](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)

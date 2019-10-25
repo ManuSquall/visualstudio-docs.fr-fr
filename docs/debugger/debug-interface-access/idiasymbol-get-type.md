@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fa57b1f289f9cc5e8c57c08b6d51bb1677c3db4
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 60f9b9fd91535cc16b96da530db8ab43c4eaabf2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62835370"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72739092"
 ---
-# <a name="idiasymbolgettype"></a>IDiaSymbol::get_type
+# <a name="idiasymbolget_type"></a>IDiaSymbol::get_type
 Récupère le symbole qui représente le type de ce symbole.
 
 ## <a name="syntax"></a>Syntaxe
@@ -33,16 +33,16 @@ HRESULT get_type (
 #### <a name="parameters"></a>Paramètres
 `pRetVal`
 
-[out] Retourne un [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objet qui représente le type de ce symbole.
+à Retourne un objet [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) qui représente le type de ce symbole.
 
 ## <a name="return-value"></a>Valeur de retour
-En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
+En cas de réussite, retourne `S_OK`; Sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
-> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> Une valeur de retour de `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
 ## <a name="remarks"></a>Notes
-Pour déterminer le type a un symbole, vous devez appeler cette méthode et examiner les résultats [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) objet. Notez qu’il est possible pour un symbole de ne pas avoir un type. Par exemple, le nom d’une structure n’a aucun type, mais il peut avoir des symboles des enfants (utiliser le [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md) méthode pour examiner ces enfants).
+Pour déterminer le type d’un symbole, vous devez appeler cette méthode et examiner l’objet [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) résultant. Notez qu’il est possible qu’un symbole n’ait pas de type. Par exemple, le nom d’une structure n’a pas de type, mais il peut avoir des symboles enfants (utilisez la méthode [IDiaSymbol :: findchildren (](../../debugger/debug-interface-access/idiasymbol-findchildren.md) pour examiner ces enfants).
 
 ## <a name="example"></a>Exemple
 

@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56a1c700b2a98b51f846e5f1136ef45c67fd5f99
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b9900b6301388479fc71f1b257113974056aeb3b
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832074"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72741722"
 ---
-# <a name="idiastackframegetfunctionstart"></a>IDiaStackFrame::get_functionStart
-Récupère un indicateur qui indique si le bloc contient le point d’entrée d’une fonction.
+# <a name="idiastackframeget_functionstart"></a>IDiaStackFrame::get_functionStart
+Récupère un indicateur qui signale si le bloc contient le point d’entrée d’une fonction.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,10 +33,10 @@ HRESULT get_functionStart ( 
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-[out] Retourne `TRUE` si le frame de pile contient le point d’entrée d’une fonction ; sinon, retourne `FALSE`.
+à Retourne `TRUE` si le frame de pile contient le point d’entrée d’une fonction ; Sinon, retourne `FALSE`.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si la propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si la propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

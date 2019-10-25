@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb34098f8d69d3c8618c406eff9666d52eace1f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7526ba6e62c9df22a2338adc80f5d56578502cdb
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554142"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72744938"
 ---
 # <a name="idiadatasourceloaddatafrompdb"></a>IDiaDataSource::loadDataFromPdb
-S’ouvre et prépare un fichier de base de données (.pdb) de programme comme une source de données de débogage.
+Ouvre et prépare un fichier de base de données du programme (. pdb) comme source de données de débogage.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,26 +33,26 @@ HRESULT loadDataFromPdb (
 #### <a name="parameters"></a>Paramètres
 pdbPath
 
-[in] Le chemin d’accès au fichier .pdb.
+dans Chemin d’accès au fichier. pdb.
 
 ## <a name="return-value"></a>Valeur de retour
-En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Le tableau suivant montre les valeurs de retournés possibles pour cette méthode.
+En cas de réussite, retourne `S_OK` ; Sinon, retourne un code d’erreur. Le tableau suivant indique les valeurs de retour possibles pour cette méthode.
 
-|Value|Description|
+|valeur|Description|
 |-----------|-----------------|
-|E_PDB_NOT_FOUND|Impossible d’ouvrir le fichier, ou déterminé que le fichier a un format non valide.|
-|E_PDB_FORMAT|Essaie d’accéder à un fichier avec un format obsolète.|
+|E_PDB_NOT_FOUND|Impossible d’ouvrir le fichier ou de déterminer que le format du fichier n’est pas valide.|
+|E_PDB_FORMAT|Tentative d’accès à un fichier avec un format obsolète.|
 |E_INVALIDARG|Paramètre non valide.|
-|E_UNEXPECTED|Source de données a déjà été préparée.|
+|E_UNEXPECTED|La source de données a déjà été préparée.|
 
 ## <a name="remarks"></a>Notes
-Cette méthode charge les données de débogage directement à partir d’un fichier .pdb.
+Cette méthode charge les données de débogage directement à partir d’un fichier. pdb.
 
-Pour valider le fichier .pdb par rapport à des critères spécifiques, utilisez le [IDiaDataSource::loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md) (méthode).
+Pour valider le fichier. pdb par rapport à des critères spécifiques, utilisez la méthode [IDiaDataSource :: loadAndValidateDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loadandvalidatedatafrompdb.md) .
 
-Pour obtenir l’accès pour le processus de chargement de données (via un mécanisme de rappel), utilisez le [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) (méthode).
+Pour accéder au processus de chargement des données (via un mécanisme de rappel), utilisez la méthode [IDiaDataSource :: loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) .
 
-Pour charger un fichier .pdb directement à partir de la mémoire, utilisez le [IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md) (méthode).
+Pour charger un fichier. pdb directement à partir de la mémoire, utilisez la méthode [IDiaDataSource :: loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md) .
 
 ## <a name="example"></a>Exemple
 

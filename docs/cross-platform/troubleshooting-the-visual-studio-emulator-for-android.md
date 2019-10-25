@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: ebbbd2eb0cf47763868a6c23ef2637bdd4009b2e
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: 56978bfee49bc3a38e900eb41004307ef40d0403
+ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261055"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72777812"
 ---
 # <a name="troubleshoot-the-visual-studio-emulator-for-android"></a>Résoudre les problèmes de l’émulateur Visual Studio pour Android
 Cette rubrique contient des informations pour vous aider à résoudre les problèmes que vous pouvez rencontrer quand vous utilisez l’Émulateur Visual Studio pour Android.
@@ -67,7 +67,7 @@ Cette rubrique contient des informations pour vous aider à résoudre les probl�
 ## <a name="NoInstall"></a> L’installation de l’émulateur échoue
  Si vous n’avez pas installé Hyper-V, le message suivant s’affiche quand vous essayez d’installer l’émulateur. Effectuez l’installation sur une machine qui prend en charge Hyper-V et sur laquelle Hyper-V est activé.
 
- ![Android&#95;Emu&#95;Install&#95;Issue](../cross-platform/media/android_emu_install_issue.png "Android_Emu_Install_Issue")
+ ![Problème&#95;d'&#95;installation&#95;d’Android u.m.e.](../cross-platform/media/android_emu_install_issue.png "Android_Emu_Install_Issue")
 
 > [!NOTE]
 > Ce message concerne à la fois l’émulateur Visual Studio pour Android et l’émulateur Windows Phone. Windows 8.1 et Windows 10 prennent en charge l’émulateur.
@@ -103,7 +103,7 @@ Cette rubrique contient des informations pour vous aider à résoudre les probl�
 ## <a name="SlowStart"></a> L’émulateur démarre lentement, son démarrage échoue en raison d’un dépassement de délai d’attente ou d’un échec de déploiement d’application
  Dans certaines conditions, le démarrage de l'émulateur prend plusieurs minutes ou échoue à cause d'un dépassement de délai d'attente. Quand le démarrage de l'émulateur échoue, le message suivant s'affiche : `App deployment failed. Please try again`. Les conditions suivantes peuvent provoquer cette erreur.
 
-- Exécution de l'Émulateur Visual Studio pour Android à partir d'un disque dur virtuel démarrable. Cette configuration n’est pas prise en charge.
+- Exécution de l'Émulateur Visual Studio pour Android à partir d'un disque dur virtuel démarrable. Cette configuration n'est pas prise en charge.
 
 - Disque dur défaillant. Exécutez le programme chkdsk.
 
@@ -132,9 +132,9 @@ Cette rubrique contient des informations pour vous aider à résoudre les probl�
 
 - Dans le Gestionnaire Hyper-V, ouvrez le Gestionnaire de commutateur virtuel et vérifiez que vous disposez de deux commutateurs réseau. Vérifiez aussi que le premier correspond au commutateur interne et le second au commutateur externe.
 
-     ![Android&#95;Emu&#95;V&#95;Switch&#95;Man](../cross-platform/media/android_emu_v_switch_man.png "Android_Emu_V_Switch_Man")
+     ![Android&#95;UME&#95;V&#95;-&#95;changer Man](../cross-platform/media/android_emu_v_switch_man.png "Android_Emu_V_Switch_Man")
 
-     Si le programme d’installation ne fonctionne pas correctement sur Windows 10, essayez de [réinstaller les périphériques réseau à l’aide de la commande netcfg -d](http://windows.microsoft.com/windows-10/fix-network-connection-issues) (section 6).
+     Si le programme d’installation ne fonctionne pas correctement sur Windows 10, essayez de [réinstaller les périphériques réseau à l’aide de la commande netcfg -d](https://support.microsoft.com/help/10741/windows-fix-network-connection-issues) (section 6).
 
 - Si ces étapes ne résolvent pas le problème, consultez [Emulator fails to start (first use)](#NoStart) pour obtenir des informations sur les logiciels tiers susceptibles d’interférer avec l’émulateur.
 
@@ -173,7 +173,7 @@ Cette rubrique contient des informations pour vous aider à résoudre les probl�
 
      - Disable Trusted Execution
 
-       Pour plus d’informations, consultez cet article : Technet : Hyper-V : Guide pratique pour corriger les erreurs du BIOS en activant Hyper-V
+       Pour plus d'informations, consultez cet article : Technet : Hyper-V : Comment corriger les erreurs de BIOS lors de l'activation d'Hyper-V
 
   5. Assurez-vous de disposer d'au moins 4 Go de mémoire système et qu'elle n'est pas consommée par d'autres programmes et processus gourmands en ressources.
 
@@ -191,7 +191,7 @@ Cette rubrique contient des informations pour vous aider à résoudre les probl�
 
    En général, il incombe aux développeurs de ces produits de mettre à jour leurs logiciels pour qu'ils soient compatibles avec Windows 8 et Hyper-V.
 
-   Les produits suivants peuvent nécessiter une mise à niveau pour des raisons de conformité avec Windows 8 : VirtualBox, Virtual PC 7, VMWare, certains clients VPN, pare-feu logiciels, certaines versions des clients VPN de Cisco ainsi que d’autres systèmes de virtualisation. Collaborez avec le développeur du logiciel de virtualisation en question pour l'inciter à mettre à niveau le logiciel pour le rendre compatible avec Windows 8 et Hyper-V.
+   Les produits suivants peuvent nécessiter une mise à niveau pour la compatibilité avec Windows 8 : VirtualBox, Virtual PC 7, VMWare, certains clients VPN, pare-feu logiciels, versions de clients VPN Cisco et autres systèmes de virtualisation. Collaborez avec le développeur du logiciel de virtualisation en question pour l'inciter à mettre à niveau le logiciel pour le rendre compatible avec Windows 8 et Hyper-V.
 
    En guise de *solution de contournement*, vous pouvez désactiver tous les pilotes et applications tiers susceptibles d’interférer avec le réseau virtuel utilisé par l’émulateur pour communiquer avec Visual Studio. Il peut s'agir notamment :
 
@@ -209,11 +209,11 @@ Cette rubrique contient des informations pour vous aider à résoudre les probl�
 
   2. Pour la carte vEthernet (port Ethernet interne - commutateur interne de l'émulateur Windows Phone), choisissez **Propriétés** dans le menu contextuel.
 
-      ![Adaptateur virtuel utilisé par Hyper&#45;V](../cross-platform/media/android_emu_virtual_adapter.png "Android_Emu_Virtual_Adapter")
+      ![Carte virtuelle utilisée par Hyper&#45;-V](../cross-platform/media/android_emu_virtual_adapter.png "Android_Emu_Virtual_Adapter")
 
       Les propriétés de la carte sont présentées ici.
 
-      ![Propriétés de l’adaptateur virtuel](../cross-platform/media/android_emu_virtual_adapter_properties.png "Android_Emu_Virtual_Adapter_Properties")
+      ![Propriétés de la carte virtuelle](../cross-platform/media/android_emu_virtual_adapter_properties.png "Android_Emu_Virtual_Adapter_Properties")
 
   3. Pour cette carte, les seuls éléments qui doivent être sélectionnés sous **Cette connexion utilise les éléments suivants** sont les suivants :
 
@@ -254,7 +254,7 @@ Cette rubrique contient des informations pour vous aider à résoudre les probl�
 
   Pour résoudre ce problème, désactivez USB3 dans les paramètres du BIOS de la carte mère et redémarrez l'ordinateur. Vérifiez ensuite si Gigabyte a publié une mise à jour pour le BIOS de votre carte mère.
 
-  Pour plus d’informations, consultez l’article suivant de la Base de connaissances : [Échec de démarrage après l’installation du rôle Hyper-V sur les systèmes Gigabyte](https://support.microsoft.com/en-us/kb/2693144).
+  Pour plus d’informations, consultez l’article suivant de la Base de connaissances : [Échec de démarrage après l’installation du rôle Hyper-V sur les systèmes Gigabyte](https://support.microsoft.com/en-us/kb/2693144).
 
 ## <a name="ADB"></a> Visual Studio se bloque en essayant de déployer l’application sur l’émulateur, ou l’émulateur n’apparaît pas comme cible de débogage dans d’autres IDE
  Si l’émulateur est en cours d’exécution mais ne semble pas être connecté à ADB (Android Debug Bridge) ou s’il ne figure pas parmi les outils Android qui utilisent ADB (par exemple, Android Studio ou Eclipse), vous devrez peut-être ajuster l’emplacement où l’émulateur recherche ADB. L'émulateur utilise une clé de Registre pour identifier l'emplacement de base de votre Kit de développement logiciel Android et il recherche le fichier \platform-tools\adb.exe sous ce répertoire. Pour modifier le chemin d'accès du Kit de développement logiciel Android utilisée par l'émulateur
@@ -268,7 +268,7 @@ Cette rubrique contient des informations pour vous aider à résoudre les probl�
   Redémarrez l'émulateur. Il doit maintenant être connecté à ADB et aux outils Android associés.
 
 ## <a name="XamarinPlayer"></a> L’émulateur se bloque, car il n’a pas pu configurer le port UDP
- Ce problème peut se produire à cause d’une incompatibilité avec Xamarin Player. Si l’émulateur ne répond plus, ou si vous voyez s’afficher un message d’erreur semblable à celui-ci : « L’émulateur ne peut pas se connecter au système d’exploitation de l’appareil : impossible de configurer le port UDP.  Certaines fonctionnalités peuvent être désactivées. », il peut s’agir d’un problème de compatibilité. Effectuez les étapes suivantes.
+ Ce problème peut se produire à cause d’une incompatibilité avec Xamarin Player. Si l’émulateur ne répond plus ou si vous voyez s’afficher le message d’erreur « L’émulateur ne peut pas se connecter au système d’exploitation du périphérique : impossible de définir le port UDP.  Certaines fonctionnalités peuvent être désactivées. », il peut s’agir d’un problème de compatibilité. Effectuez les étapes suivantes.
 
 1. Désinstallez Xamarin Player.
 
@@ -311,6 +311,6 @@ Cette rubrique contient des informations pour vous aider à résoudre les probl�
 ## <a name="Support"></a> Ressources de support
  Si votre ordinateur hôte satisfait à la configuration système requise et que vous rencontrez un problème non couvert dans ce guide de dépannage :
 
-- Posez une question sur StackOverflow en utilisant les balises [android-emulator](http://stackoverflow.com/questions/tagged/android-emulator) et visual-studio.
+- Posez une question sur StackOverflow en utilisant les balises [android-emulator](https://stackoverflow.com/questions/tagged/android-emulator) et visual-studio.
 
 - Signalez un problème en utilisant l'outil Envoyer un sourire dans Visual Studio ou dans le gestionnaire de l'émulateur.

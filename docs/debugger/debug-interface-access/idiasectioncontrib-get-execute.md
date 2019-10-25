@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4fe19ace9d84357b08ab848038283c857d15610
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f163c2a6a37dd1e379557047f70966932ef45c64
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62828296"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742654"
 ---
-# <a name="idiasectioncontribgetexecute"></a>IDiaSectionContrib::get_execute
-Récupère un indicateur qui indique si la section est exécutable en tant que code.
+# <a name="idiasectioncontribget_execute"></a>IDiaSectionContrib::get_execute
+Récupère un indicateur qui signale si la section peut être exécutée en tant que code.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,10 +33,10 @@ HRESULT get_excute ( 
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-[out] Retourne `TRUE` si la section peut être exécutée en tant que code ; sinon, retourne `FALSE`.
+à Retourne `TRUE` si la section peut être exécutée en tant que code ; Sinon, retourne `FALSE`.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

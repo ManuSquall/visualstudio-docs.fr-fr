@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21630bea3022769d18748190c2a2d24c0e519a3c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 31be0615fd7d1da279ecf414260af21cb8239dc8
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62554920"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745290"
 ---
 # <a name="datakind"></a>DataKind
-Indique la portée d’une valeur de données particulière.
+Indique l’étendue particulière d’une valeur de données.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -40,31 +40,31 @@ enum DataKind {
 ```
 
 ## <a name="elements"></a>Éléments
-Symbole de données de DataIsUnknown ne peut pas être déterminé.
+Impossible de déterminer le symbole de données DataIsUnknown.
 
-Élément de données de DataIsLocal est une variable locale.
+L’élément de données DataIsLocal est une variable locale.
 
-Élément de données de DataIsStaticLocal est une variable locale statique.
+DataIsStaticLocal Data Item est une variable locale statique.
 
-Élément de données de DataIsParam est un paramètre formel.
+L’élément de données DataIsParam est un paramètre formel.
 
-Élément de données de DataIsObjectPtr est un pointeur d’objet (`this`).
+DataIsObjectPtr Data Item est un pointeur d’objet (`this`).
 
-Élément de données de DataIsFileStatic est une variable de portée de fichier.
+L’élément de données DataIsFileStatic est une variable de portée de fichier.
 
-Élément de données de DataIsGlobal est une variable globale.
+DataIsGlobal Data Item est une variable globale.
 
-Élément de données de DataIsMember est une variable de membre d’objet.
+L’élément de données DataIsMember est une variable membre de l’objet.
 
-Élément de données de DataIsStaticMember est une variable statique de classe.
+DataIsStaticMember Data Item est une variable statique de classe.
 
-Élément de données de DataIsConstant est une valeur constante.
+L’élément de données DataIsConstant est une valeur constante.
 
 ## <a name="remarks"></a>Notes
-Les valeurs dans cette énumération sont retournées par la [IDiaSymbol::get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) (méthode).
+Les valeurs de cette énumération sont retournées par la méthode [IDiaSymbol :: get_dataKind](../../debugger/debug-interface-access/idiasymbol-get-datakind.md) .
 
-## <a name="requirements"></a>Configuration requise
-En-tête : cvconst.h
+## <a name="requirements"></a>spécifications
+En-tête : cvconst. h
 
 ## <a name="see-also"></a>Voir aussi
 - [Énumérations et structures](../../debugger/debug-interface-access/enumerations-and-structures.md)

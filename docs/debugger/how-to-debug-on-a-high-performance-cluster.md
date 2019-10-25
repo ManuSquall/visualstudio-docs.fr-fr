@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Déboguer sur un Cluster hautement performant | Microsoft Docs'
+title: 'Procédure : déboguer sur un cluster à hautes performances | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,16 +16,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 550008a0bf77ee11feb047b953798ed6a8276396
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d95c6eeadfdf1bb90471997712299ae03a945be8
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894324"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72733667"
 ---
-# <a name="how-to-debug-on-a-high-performance-cluster-c-visual-basic-c"></a>Procédure : Déboguer sur un Cluster hautement performant (C#, Visual Basic, C++)
+# <a name="how-to-debug-on-a-high-performance-cluster-c-visual-basic-c"></a>Procédure : déboguer sur un cluster à hautes performancesC#(, Visual Basic C++,)
 
-Le débogage d'un programme multitraitement sur un cluster hautement performant est identique au débogage d'un programme ordinaire sur un ordinateur distant. Il y a toutefois d'autres éléments à prendre en compte. Pour les besoins généraux de configuration à distance, consultez [le débogage à distance](../debugger/remote-debugging.md).
+Le débogage d'un programme multitraitement sur un cluster hautement performant est identique au débogage d'un programme ordinaire sur un ordinateur distant. Il y a toutefois d'autres éléments à prendre en compte. Pour connaître la configuration générale requise pour l’installation à distance, consultez [débogage à distance](../debugger/remote-debugging.md).
 
  Lorsque vous déboguez sur un cluster hautement performant, vous pouvez utiliser toutes les fenêtres de débogage et les techniques [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] disponibles pour le débogage distant. Cependant, puisque vous déboguez à distance, la fenêtre de console externe n'est pas disponible.
 
@@ -99,7 +99,7 @@ Le débogage d'un programme multitraitement sur un cluster hautement performant 
 ## <a name="see-also"></a>Voir aussi
 - [Déboguer les applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Remote Debugging](../debugger/remote-debugging.md)
-- [Guide pratique pour Utiliser la fenêtre processus](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100))
-- [Commencer le débogage d’applications multithreads](../debugger/get-started-debugging-multithreaded-apps.md)
+- [Comment : utiliser la fenêtre processus](/previous-versions/visualstudio/visual-studio-2010/7h8h5sdw(v=vs.100))
+- [Prise en main du débogage des applications multithread](../debugger/get-started-debugging-multithreaded-apps.md)
 - [Threads et processus](/previous-versions/visualstudio/visual-studio-2010/ms164740(v=vs.100))
 - [Utilisation des points d’arrêt](../debugger/using-breakpoints.md)

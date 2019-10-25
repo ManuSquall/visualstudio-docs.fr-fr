@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cb665e3c0965a2e85c8d28202114c95928988d5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a7fd74707284e32471bad1da27e288139ea617a1
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62839301"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72742184"
 ---
 # <a name="idiasessionfindinlineesbyname"></a>IDiaSession::findInlineesByName
-Récupère une énumération qui permet au client d’effectuer une itération dans les informations de numéro de ligne de toutes les fonctions inline qui correspondent à un nom spécifié.
+Récupère une énumération qui permet à un client d’itérer au sein des informations de numéro de ligne de toutes les fonctions inline qui correspondent à un nom spécifié.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,18 +33,18 @@ HRESULT findInlineesByName ( 
 #### <a name="parameters"></a>Paramètres
  `name`
 
-[in] Spécifie le nom à utiliser pour comparaison.
+dans Spécifie le nom à utiliser pour la comparaison.
 
  `option`
 
-[in] Spécifie les options de comparaison appliquées à la recherche de nom. Les valeurs de la [NameSearchOptions (énumération)](../../debugger/debug-interface-access/namesearchoptions.md) énumération peut être utilisée seul ou combiné.
+dans Spécifie les options de comparaison appliquées à la recherche de nom. Les valeurs de l’énumération d' [énumération NameSearchOptions](../../debugger/debug-interface-access/namesearchoptions.md) peuvent être utilisées seules ou en combinaison.
 
  `ppResult`
 
-[out] Retourne un [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) objet qui contient une liste des numéros de ligne qui ont été récupérées.
+à Retourne un objet [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md) qui contient une liste des numéros de ligne qui ont été récupérés.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne un code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

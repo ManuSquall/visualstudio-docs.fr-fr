@@ -1,5 +1,5 @@
 ---
-title: Personnalisé (SDK Debug Interface Access) | Microsoft Docs
+title: Personnalisé (kit de développement logiciel de debug interface Access) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,24 +12,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15e0d58c49a66416371c7e66e12f469e6d224c91
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b3e3300eb416df3a3af7fd628f784397b77beeb4
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62555141"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72745389"
 ---
 # <a name="custom-debug-interface-access-sdk"></a>Personnalisé (Kit de développement logiciel de Debug Interface Access)
-Certains compilateurs introduisent de symboles qui ne sont pas identifiées par les types de symboles lexicale standard. Ces symboles sont identifiés par un `SymTagCustom` balise.
+Certains compilateurs introduisent des symboles qui ne sont pas identifiés par l’un des types de symboles lexicals standard. Ces symboles sont identifiés par une balise `SymTagCustom`.
 
-## <a name="properties"></a>Properties
+## <a name="properties"></a>Propriétés
  Le tableau suivant présente les propriétés qui sont valides pour ce type de symbole.
 
-|Propriété|Type de données|Description|
+|Property|Type de données|Description|
 |--------------|---------------|-----------------|
-|[IDiaSymbol::get_dataBytes](../../debugger/debug-interface-access/idiasymbol-get-databytes.md)|`BYTE`|Tableau de données associées au symbole.|
-|[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|ID d’index de symbole.|
-|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Retourne `SymTagCustom` (parmi les [SymTagEnum (énumération)](../../debugger/debug-interface-access/symtagenum.md) valeurs).|
+|[IDiaSymbol::get_dataBytes](../../debugger/debug-interface-access/idiasymbol-get-databytes.md)|`BYTE`|Tableau de données associé au symbole.|
+|[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|ID d’index du symbole.|
+|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Retourne `SymTagCustom` (l’une des valeurs d' [énumération SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) ).|
 
 ## <a name="see-also"></a>Voir aussi
 - [Hiérarchie lexicale des types de symboles](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)

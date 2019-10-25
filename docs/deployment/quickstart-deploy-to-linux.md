@@ -9,18 +9,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - azure
-ms.openlocfilehash: 9609b636c6121ec2dac41559344485d4048e9cc5
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: HT
+ms.openlocfilehash: 1e05862aa57c24bfa8f17d551762054278dd6e52
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65680077"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72806875"
 ---
 # <a name="publish-an-aspnet-core-app-to-app-service-on-linux-using-visual-studio"></a>Publier une application web ASP.NET Core sur App Service sur Linux à l’aide de Visual Studio
 
 À compter de Visual Studio 2017 version 15.7, vous pouvez publier des applications ASP.NET Core sur Azure App Service Linux (avec des conteneurs) en utilisant une des méthodes suivantes.
 
-* Pour le déploiement continu (ou automatisé) d’applications, utilisez Azure DevOps avec [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started-yaml?view=azdevops).
+* Pour le déploiement continu (ou automatisé) d’applications, utilisez Azure DevOps avec [Azure Pipelines](/azure/devops/pipelines/get-started-yaml?view=azdevops).
 
 * Pour un déploiement ponctuel (ou manuel) d’applications, utilisez l’outil **Publier** de Visual Studio pour publier des applications ASP.NET Core sur App Service pour Linux (avec des conteneurs).
 
@@ -32,7 +32,7 @@ Cet article décrit comment utiliser l’outil **Publier** pour un déploiement 
 
 1. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le projet et choisissez **Publier** (ou utilisez l’élément de menu **Générer** > **Publier**).
 
-    ![Commande Publier du menu contextuel du projet dans l’Explorateur de solutions](../deployment/media/quickstart-publish.png "Choisissez Publier")
+    ![Commande publier dans le menu contextuel du projet dans Explorateur de solutions](../deployment/media/quickstart-publish.png "Choisir Publier")
 
 1. Si vous avez déjà configuré des profils de publication, le volet **Publier** s’affiche, dans lequel vous sélectionnez **Créer un profil**.
 

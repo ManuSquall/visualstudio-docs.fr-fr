@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 146ef53f8a5d893e394834c7d5702c8992fdd20a
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 8a685093bca4190c73c955c48665a14e494ac97c
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62836407"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740203"
 ---
-# <a name="idiasymbolgetismatrixrowmajor"></a>IDiaSymbol::get_isMatrixRowMajor
-Spécifie si la matrice est ligne principale.
+# <a name="idiasymbolget_ismatrixrowmajor"></a>IDiaSymbol::get_isMatrixRowMajor
+Spécifie si la matrice est une ligne principale.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -30,10 +30,10 @@ HRESULT get_isMatrixRowMajor(
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-[out] Un pointeur vers un `BOOL` qui spécifie si la matrice est ligne principale.
+à Pointeur vers un `BOOL` qui spécifie si la matrice est une ligne principale.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

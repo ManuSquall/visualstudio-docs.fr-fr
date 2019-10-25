@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33967e2e3fd241bae772e1ec208f42f7c9ac7419
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 298903e4e76c34fe1013b0f26729fb900c7b3fea
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62837618"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740983"
 ---
-# <a name="idiasymbolgetbasedataoffset"></a>IDiaSymbol::get_baseDataOffset
-Récupère le décalage de la base de données.
+# <a name="idiasymbolget_basedataoffset"></a>IDiaSymbol::get_baseDataOffset
+Récupère le décalage des données de base.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -30,10 +30,10 @@ HRESULT get_baseDataOffset(
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-[out] Un pointeur vers un `DWORD` qui contient l’offset de la base de données.
+à Pointeur vers un `DWORD` qui contient le décalage des données de base.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

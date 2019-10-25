@@ -1,15 +1,15 @@
 ---
-title: Utilisation du code Visual C++ (Concepteur de classes)
+title: Utilisation du C++ Code (Concepteur de classes)
 ms.date: 06/21/2017
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.cpplimitation
 helpviewer_keywords:
-- Visual C++, Class Designer
-- Class Designer, Visual C++ support
+- C++, Class Designer
+- Class Designer, C++ support
 - Class Designer, limitations
-- Class Designer, tasks in Visual C++
-- Visual C++, class diagrams
+- Class Designer, tasks in C++
+- C++, class diagrams
 - C++, class diagrams
 - C++, Class Designer
 ms.assetid: f5b40921-2ef7-4de0-b595-45b44c79ffa6
@@ -18,14 +18,14 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b2252b5e6d8da9f81fbcca9b856222a3230cd080
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e59ee1305c0c482686505959aac7187902906086
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647568"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72748897"
 ---
-# <a name="work-with-visual-c-code-in-class-designer"></a>Utiliser le code Visual C++ dans le Concepteur de classes
+# <a name="work-with-c-code-in-class-designer"></a>Utiliser du C++ code dans Concepteur de classes
 
 Le **Concepteur de classes** affiche une aire de conception visuelle appelée *diagramme de classes*, qui fournit une représentation visuelle des éléments de code dans votre projet. Vous pouvez utiliser des diagrammes de classes pour concevoir et visualiser des classes et d'autres types dans un projet.
 
@@ -56,7 +56,7 @@ Le **Concepteur de classes** n’effectue pas un suivi de l’emplacement des fi
 
 ### <a name="update-and-performance-issues"></a>Problèmes de mise à jour et de performances
 
-Pour les projets Visual C++, la modification dans le fichier source peut prendre 30 à 60 secondes avant d'apparaître dans le diagramme de classes. Ce délai peut également forcer le **Concepteur de classes** à générer l’erreur **Aucun type n’a été trouvé dans la sélection**. Si vous obtenez une telle erreur, cliquez sur **Annuler** dans le message d’erreur et attendez que l’élément de code apparaisse dans **l’Affichage de classes**. Le **Concepteur de classes** doit ensuite pouvoir afficher le type.
+Pour C++ les projets, il peut s’avérer nécessaire de 30 à 60 secondes pour qu’une modification apportée au fichier source apparaisse dans le diagramme de classes. Ce délai peut également forcer le **Concepteur de classes** à générer l’erreur **Aucun type n’a été trouvé dans la sélection**. Si vous obtenez une telle erreur, cliquez sur **Annuler** dans le message d’erreur et attendez que l’élément de code apparaisse dans **l’Affichage de classes**. Le **Concepteur de classes** doit ensuite pouvoir afficher le type.
 
 En cas d'échec de la mise à jour d'un diagramme de classes suite à la modification du code, il peut s'avérer nécessaire de fermer le diagramme, puis de le rouvrir.
 
@@ -88,11 +88,11 @@ Vous pouvez trouver de l'aide sur la résolution des erreurs et des avertissemen
 
 ## <a name="limitations-for-c-code-elements"></a>Limitations pour les éléments de code C++
 
-- Quand un projet Visual C++ est chargé, le **Concepteur de classes** fonctionne en lecture seule. Vous pouvez modifier le diagramme de classes, mais vous ne pouvez pas réenregistrer les modifications du diagramme de classes dans le code source.
+- Quand un C++ projet est chargé, **Concepteur de classes** fonctionne en lecture seule. Vous pouvez modifier le diagramme de classes, mais vous ne pouvez pas réenregistrer les modifications du diagramme de classes dans le code source.
 
-- Le **Concepteur de classes** prend en charge uniquement la sémantique C++ native. Pour les projets Visual C++ compilés dans le code managé, le **Concepteur de classes** visualise uniquement les éléments de code qui sont des types natifs. Vous pouvez donc ajouter un diagramme de classes à un projet, mais le **Concepteur de classes** ne vous autorise pas à visualiser les éléments dans lesquels la propriété `IsManaged` a la valeur `true` (autrement dit, les types valeur et types référence).
+- Le **Concepteur de classes** prend en charge uniquement la sémantique C++ native. Pour C++ les projets compilés en code managé, **Concepteur de classes** visualisera uniquement les éléments de code qui sont des types natifs. Vous pouvez donc ajouter un diagramme de classes à un projet, mais le **Concepteur de classes** ne vous autorise pas à visualiser les éléments dans lesquels la propriété `IsManaged` a la valeur `true` (autrement dit, les types valeur et types référence).
 
-- Pour les projets Visual C++, le **Concepteur de classes** lit uniquement la définition du type. Par exemple, supposons que vous définissez un type dans un fichier d'en-tête (.h) et que vous définissez ses membres dans un fichier d'implémentation (.cpp). Si vous appelez « Afficher le diagramme de classes » sur le fichier d’implémentation (.cpp), le **Concepteur de classes** n’affiche rien. Autre exemple, si vous appelez « Afficher le diagramme de classes » sur un fichier .cpp qui utilise une instruction `#include` pour inclure d’autres fichiers, mais qui ne contient pas de définitions de classe réelles, le **Concepteur de classes** n’affiche toujours rien.
+- Pour C++ les projets, le **Concepteur de classes** lit uniquement la définition du type. Par exemple, supposons que vous définissez un type dans un fichier d'en-tête (.h) et que vous définissez ses membres dans un fichier d'implémentation (.cpp). Si vous appelez « Afficher le diagramme de classes » sur le fichier d’implémentation (.cpp), le **Concepteur de classes** n’affiche rien. Autre exemple, si vous appelez « Afficher le diagramme de classes » sur un fichier .cpp qui utilise une instruction `#include` pour inclure d’autres fichiers, mais qui ne contient pas de définitions de classe réelles, le **Concepteur de classes** n’affiche toujours rien.
 
 - Les fichiers IDL (.idl) qui définissent des interfaces COM et des bibliothèques de types ne s'affichent pas dans les diagrammes, sauf s'ils sont compilés en code C++ natif.
 
@@ -112,7 +112,7 @@ Vous pouvez trouver de l'aide sur la résolution des erreurs et des avertissemen
 
 - [Conception et affichage des classes et des types](designing-and-viewing-classes-and-types.md)
 - [Informations supplémentaires sur les erreurs du Concepteur de classes](additional-information-about-errors.md)
-- [Classes de Visual C++ dans le concepteur de classes](visual-cpp-classes.md)
-- [Structures de Visual C++ dans le Concepteur de classes](visual-cpp-structures.md)
-- [Énumérations de Visual C++ dans le concepteur de classes](visual-cpp-enumerations.md)
-- [Typedefs de Visual C++ dans le Concepteur de classes](visual-cpp-typedefs.md)
+- [C++Classes dans Concepteur de classes](visual-cpp-classes.md)
+- [C++Structures dans Concepteur de classes](visual-cpp-structures.md)
+- [C++Énumérations dans Concepteur de classes](visual-cpp-enumerations.md)
+- [C++Typedefs dans Concepteur de classes](visual-cpp-typedefs.md)

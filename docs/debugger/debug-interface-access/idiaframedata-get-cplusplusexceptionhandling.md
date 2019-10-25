@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31b386ff2c31937efc352049f7db068f49e4ba19
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d6d1e66cc7358bd086088199bf07a7320a0c8d07
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62832759"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72743639"
 ---
-# <a name="idiaframedatagetcplusplusexceptionhandling"></a>IDiaFrameData::get_cplusplusExceptionHandling
-Récupère un indicateur qui indique si des exceptions C++ sont en vigueur.
+# <a name="idiaframedataget_cplusplusexceptionhandling"></a>IDiaFrameData::get_cplusplusExceptionHandling
+Récupère un indicateur qui signale si C++ la gestion des exceptions est en vigueur.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -33,13 +33,13 @@ HRESULT get_cplusplusExceptionHandling ( 
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-[out] Retourne `TRUE` si C++ gestion des exceptions est en vigueur ; sinon, retourne `FALSE`.
+à Retourne `TRUE` si C++ la gestion des exceptions est activée ; Sinon, retourne `FALSE`.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas pris en charge. Sinon, retourne un code d'erreur.
+ En cas de réussite, retourne `S_OK`. Retourne `S_FALSE` si cette propriété n’est pas prise en charge. Sinon, retourne un code d'erreur.
 
 ## <a name="remarks"></a>Notes
- Pour déterminer si des structured exception gestion est en vigueur (qui est très différent de C++ gestion des exceptions), appelez le [IDiaFrameData::get_systemExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md) (méthode).
+ Pour déterminer si la gestion structurée des exceptions est en vigueur (ce qui C++ est très différent de la gestion des exceptions), appelez la méthode [IDiaFrameData :: get_systemExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-systemexceptionhandling.md) .
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

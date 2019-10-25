@@ -1,5 +1,5 @@
 ---
-title: Juste-à-temps, débogage, de boîte de dialogue Options | Microsoft Docs
+title: Juste-à-temps, débogage, boîte de dialogue Options | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23a285cf0ce017130a5fe76171c50082362e4856
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c27ec66c8165995c6877b9a9e65802813140c7f2
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62905933"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72731610"
 ---
 # <a name="just-in-time-debugging-options-dialog-box"></a>Juste-à-temps, Débogage, boîte de dialogue Options
 Pour accéder à la page **Juste-à-temps**, dans le menu **Outils**, cliquez sur **Options**. Dans la boîte de dialogue **Options**, développez le nœud **Débogage** et sélectionnez **Juste-à-temps**. Cette page vous permet d'activer le débogage juste-à-temps pour le code managé, le code natif et les scripts. Pour plus d’informations, consultez [Débogage juste-à-temps](../debugger/just-in-time-debugging-in-visual-studio.md).
@@ -53,7 +53,7 @@ Pour accéder à la page **Juste-à-temps**, dans le menu **Outils**, cliquez su
 
  En présence de l’un ou l’autre de ces avertissements, le débogage Juste-à-temps avec [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] nécessite des droits d’administrateur jusqu’à ce que vous ayez résolu le problème. Si vous essayez de poursuivre sans disposer de droits d'administrateur dans ces conditions, vous voyez s'afficher le message d'erreur suivant :
 
- **Accès refusé. Faites activer le débogage juste-à-temps par un administrateur ou réparez votre installation de Visual Studio.**
+ **L’accès est refusé. Demander à un administrateur d’activer le débogage juste-à-temps, ou de réparer votre installation de Visual Studio.**
 
 ## <a name="see-also"></a>Voir aussi
 - [Débogage, boîte de dialogue Options](../debugger/debugging-options-dialog-box.md)

@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03b0bf45d4b8100f4ebfd1d6a61dc73547312fe6
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: f158264bbbb18e074788925534c6c9ba1a9d79a6
+ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "62836701"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72740240"
 ---
-# <a name="idiasymbolgetishlsldata"></a>IDiaSymbol::get_isHLSLData
-Spécifie si ce symbole représente les données au niveau du nuanceur HLSL (High Language).
+# <a name="idiasymbolget_ishlsldata"></a>IDiaSymbol::get_isHLSLData
+Spécifie si ce symbole représente des données HLSL (High Level Shader Language).
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -30,10 +30,10 @@ HRESULT get_isHLSLData(
 #### <a name="parameters"></a>Paramètres
  `pRetVal`
 
-[out] Un pointeur vers un `BOOL` qui spécifie si ce symbole représente les données HLSL.
+à Pointeur vers un `BOOL` qui spécifie si ce symbole représente des données HLSL.
 
 ## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
+ En cas de réussite, retourne `S_OK` ; Sinon, retourne `S_FALSE` ou un code d’erreur.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
