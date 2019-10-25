@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 5ec01bdc1f27d2ca7c8b2d20c901a224cbdbf19d
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: 6c7bec91f6a938a131f99abfd5ab9cbef6479a85
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72589153"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888675"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutoriel : Créer une application Node.js et React dans Visual Studio
 
@@ -390,7 +390,7 @@ Dans la section précédente, vous avez attaché le débogueur au code Node.js c
     ::: moniker range=">=vs-2019"
 
     > [!NOTE]
-    > Vous pouvez également définir l’indicateur `--remote-debugging-port` au lancement du navigateur en sélectionnant **Parcourir avec… >** dans la barre d’outils **Déboguer**, puis en choisissant **Ajouter** et en définissant l’indicateur dans le champ **Arguments**. Utilisez un autre nom convivial pour le navigateur, par exemple **Chrome avec débogage**. Pour plus d’informations, consultez les [notes de publication](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview).
+    > Vous pouvez également définir l’indicateur `--remote-debugging-port` au lancement du navigateur en sélectionnant **Parcourir avec… >** dans la barre d’outils **Déboguer**, puis en choisissant **Ajouter** et en définissant l’indicateur dans le champ **Arguments**. Utilisez un autre nom convivial pour le navigateur, par exemple **Chrome avec débogage**. Pour plus d’informations, consultez les [notes de publication](/visualstudio/releases/2019/release-notes-preview).
 
     ::: moniker-end
 

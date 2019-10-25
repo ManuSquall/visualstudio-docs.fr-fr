@@ -15,12 +15,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 400e69ddaf9ebd3596edf3b926484b623225d672
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4df842f83f92afe8a8f747135632eb30a715d43f
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72634535"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888500"
 ---
 # <a name="how-to-use-3d-assets-in-your-game-or-app"></a>Comment : utiliser des composants 3D dans votre jeu ou votre application
 
@@ -97,7 +97,7 @@ Quand vous utilisez l'outil de pipeline de contenu d'image pour générer une re
 
 |Property|Description|
 |--------------|-----------------|
-|**Compresser**|Spécifie le type de compression utilisé pour le fichier de sortie.<br /><br /> Les options disponibles sont les suivantes :<br /><br /> -   **Aucune compression**<br />-   **Compression BC1_UNORM**<br />-   **Compression BC1_UNORM_SRGB**<br />-   **Compression BC2_UNORM**<br />-   **Compression BC2_UNORM_SRGB**<br />-   **Compression BC3_UNORM**<br />-   **Compression BC3_UNORM_SRGB**<br />-   **Compression BC4_UNORM**<br />-   **Compression BC4_SNORM**<br />-   **Compression BC5_UNORM**<br />-   **Compression BC5_SNORM**<br />-   **Compression BC6H_UF16**<br />-   **Compression BC6H_SF16**<br />-   **Compression BC7_UNORM**<br />-   **Compression BC7_UNORM_SRGB**<br /><br /> Pour plus d’informations sur les formats de compression pris en charge dans les différentes versions de DirectX, consultez [Guide de programmation pour DXGI](http://go.microsoft.com/fwlink/p/?LinkId=246265).|
+|**Compresser**|Spécifie le type de compression utilisé pour le fichier de sortie.<br /><br /> Les options disponibles sont les suivantes :<br /><br /> -   **Aucune compression**<br />-   **Compression BC1_UNORM**<br />-   **Compression BC1_UNORM_SRGB**<br />-   **Compression BC2_UNORM**<br />-   **Compression BC2_UNORM_SRGB**<br />-   **Compression BC3_UNORM**<br />-   **Compression BC3_UNORM_SRGB**<br />-   **Compression BC4_UNORM**<br />-   **Compression BC4_SNORM**<br />-   **Compression BC5_UNORM**<br />-   **Compression BC5_SNORM**<br />-   **Compression BC6H_UF16**<br />-   **Compression BC6H_SF16**<br />-   **Compression BC7_UNORM**<br />-   **Compression BC7_UNORM_SRGB**<br /><br /> Pour plus d’informations sur les formats de compression pris en charge dans les différentes versions de DirectX, consultez [Guide de programmation pour DXGI](/windows/win32/direct3ddxgi/dx-graphics-dxgi-overviews).|
 |Convertir dans un format alpha prémultiplié|**Oui** pour convertir l’image dans un format alpha prémultiplié dans le fichier de sortie ; sinon, **Non**. Seul le fichier de sortie est modifié ; l'image source est inchangée.|
 |**Générer des mips**|**Oui** pour générer une chaîne MIP complète au moment de la génération et l’inclure dans le fichier de sortie ; sinon, **Non**. Si la valeur **Non** est sélectionnée et que le fichier source contient déjà une chaîne mipmap, le fichier de sortie a une chaîne MIP ; sinon, le fichier de sortie n’a pas de chaîne MIP.|
 |**Sortie de contenu**|Spécifie le nom du fichier de sortie. **Important :** La modification de l’extension du nom de fichier de sortie n’a aucun effet sur son format.|
@@ -122,7 +122,7 @@ Quand vous utilisez l'outil de pipeline de contenu de nuanceur pour générer un
 
 ### <a name="use-textures-and-images"></a>Utiliser des textures et des images
 
-Direct3D propose des fonctions de création de ressources de texture. Dans Direct3D 11, la bibliothèque d'utilitaires D3DX11 fournit des fonctions supplémentaires pour créer des ressources de texture et des affichages de ressources directement à partir de fichiers image. Pour plus d’informations sur la création d’une ressource de texture dans Direct3D 11, consultez [Textures](http://go.microsoft.com/fwlink/p/?LinkID=246267). Pour plus d’informations sur la façon d’utiliser la bibliothèque D3DX11 pour créer une ressource de texture ou un affichage des ressources à partir d’un fichier image, consultez [Guide pratique pour initialiser une texture à partir d’un fichier](http://go.microsoft.com/fwlink/p/?LinkId=246268).
+Direct3D propose des fonctions de création de ressources de texture. Dans Direct3D 11, la bibliothèque d'utilitaires D3DX11 fournit des fonctions supplémentaires pour créer des ressources de texture et des affichages de ressources directement à partir de fichiers image. Pour plus d’informations sur la création d’une ressource de texture dans Direct3D 11, consultez [Textures](/windows/win32/direct3d11/overviews-direct3d-11-resources-textures). Pour plus d’informations sur la façon d’utiliser la bibliothèque D3DX11 pour créer une ressource de texture ou un affichage des ressources à partir d’un fichier image, consultez [Guide pratique pour initialiser une texture à partir d’un fichier](/windows/win32/direct3d11/overviews-direct3d-11-resources-textures-how-to).
 
 ### <a name="use-3d-models"></a>Utiliser des modèles 3D
 
@@ -130,7 +130,7 @@ Direct3D 11 ne fournit pas de fonctions permettant de créer des ressources à p
 
 ### <a name="use-shaders"></a>Utiliser des nuanceurs
 
-Direct3D propose des fonctions permettant de créer des ressources de nuanceur et de les lier au pipeline graphique programmable. Pour plus d’informations sur la façon de créer une ressource de nuanceur dans Direct3D et de la lier au pipeline, consultez [Guide de programmation pour HLSL](http://go.microsoft.com/fwlink/p/?LinkID=261521).
+Direct3D propose des fonctions permettant de créer des ressources de nuanceur et de les lier au pipeline graphique programmable. Pour plus d’informations sur la façon de créer une ressource de nuanceur dans Direct3D et de la lier au pipeline, consultez [Guide de programmation pour HLSL](/windows/win32/direct3dhlsl/dx-graphics-hlsl-pguide).
 
 Dans le pipeline graphique programmable, chaque étape du pipeline doit fournir à l'étape suivante du pipeline un résultat mis en forme de manière intelligible. Sachant que le concepteur Shader ne peut créer que des nuanceurs de pixels, il appartient à votre application de vérifier que les données qu'elle reçoit sont au format attendu. Plusieurs étapes de nuanceur programmables se produisent avant le nuanceur de pixels et effectuent des transformations géométriques (le nuanceur de sommets, le nuanceur Hull Shader, le nuanceur de domaine et le nuanceur de géométrie). L'étape de pavage non programmable se produit également avant le nuanceur de pixels. Quelle que soit l'étape qui précède directement le nuanceur de pixels, son résultat doit se présenter au format suivant :
 

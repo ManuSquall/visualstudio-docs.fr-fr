@@ -8,12 +8,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d306103ff0e63c852d72275d60c3025074cbf15
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a61504e46198a971cb3231bb6a4fd1e0f4132f22
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72633535"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888411"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>Vue d’ensemble de la liaison de données WPF avec LINQ to XML
 
@@ -97,4 +97,4 @@ Pour implémenter la liaison dynamique WPF, les propriétés dynamiques seront u
 - [Propriétés dynamiques LINQ to XML](../designers/linq-to-xml-dynamic-properties.md)
 - [Intégration du format XAML au format WPF](/dotnet/framework/wpf/advanced/xaml-in-wpf)
 - [Liaison de données (WPF)](/dotnet/framework/wpf/data/data-binding-wpf)
-- [Utilisation de la balise de workflow](http://go.microsoft.com/fwlink/?LinkId=98685)
+- [Utilisation de la balise de workflow](/previous-versions/dotnet/netframework-3.5/ms735921(v=vs.90))

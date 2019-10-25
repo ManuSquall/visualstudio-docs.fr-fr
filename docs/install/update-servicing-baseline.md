@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ca8aaf0af2ad7374137752783b242a40e94f706c
-ms.sourcegitcommit: 2bbcba305fd0f8800fd3d9aa16f7647ee27f3a4b
-ms.translationtype: HT
+ms.openlocfilehash: 4e84704d4ca37dd9e36da3838b5b1b23f068568c
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68300546"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888578"
 ---
 # <a name="update-visual-studio-while-on-a-servicing-baseline"></a>Mettre à jour Visual Studio tout en étant sur une ligne de base de maintenance
 
@@ -28,7 +28,7 @@ Nous mettons souvent à jour Visual Studio au cours du cycle de vie du produit. 
 
 Les administrateurs d’entreprise peuvent choisir de conserver leurs clients sur une base de référence de maintenance. Une base de référence de maintenance inclut des mises à jour pour une année au-delà de la base de référence de maintenance suivante.
 
-L’option de base de référence de maintenance offre plus de flexibilité aux développeurs et administrateurs, qui peuvent ainsi intégrer les nouvelles fonctionnalités, les correctifs de bogues ou les composants inclus dans les nouvelles mises à jour mineures. La première base de référence de maintenance est 16.0.x. Pour plus d’informations, consultez [Options de support pour les clients Enterprise et Professional](https://docs.microsoft.com/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers).
+L’option de base de référence de maintenance offre plus de flexibilité aux développeurs et administrateurs, qui peuvent ainsi intégrer les nouvelles fonctionnalités, les correctifs de bogues ou les composants inclus dans les nouvelles mises à jour mineures. La première base de référence de maintenance est 16.0.x. Pour plus d’informations, consultez [Options de support pour les clients Enterprise et Professional](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers).
 
 ## <a name="how-to-get-onto-a-servicing-baseline"></a>Comment bénéficier d’une base de référence de maintenance
 
