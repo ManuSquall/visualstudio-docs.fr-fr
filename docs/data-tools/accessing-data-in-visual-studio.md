@@ -14,12 +14,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f2a33a0090be980c221ebfbe7f3116cdfef7b23b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 07c7c9db37a951b689e28e87a02c7f41a667685b
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648983"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72807045"
 ---
 # <a name="access-data-in-visual-studio"></a>Accéder aux données dans Visual Studio
 
@@ -94,7 +94,7 @@ Si vous vous connectez aux services Azure, veillez à télécharger les derniers
 
 ### <a name="data-providers"></a>Fournisseurs de données
 
-Pour qu’une base de données soit consommable dans ADO.NET, elle doit avoir un *fournisseur de données ADO.net* personnalisé ou doit exposer une interface ODBC ou OLE DB. Microsoft fournit une [liste de fournisseurs de données ADO.net](https://docs.microsoft.com/dotnet/framework/data/adonet/ado-net-overview) pour les produits SQL Server, ainsi que les fournisseurs ODBC et OLE DB.
+Pour qu’une base de données soit consommable dans ADO.NET, elle doit avoir un *fournisseur de données ADO.net* personnalisé ou doit exposer une interface ODBC ou OLE DB. Microsoft fournit une [liste de fournisseurs de données ADO.net](/dotnet/framework/data/adonet/ado-net-overview) pour les produits SQL Server, ainsi que les fournisseurs ODBC et OLE DB.
 
 ### <a name="data-modeling"></a>Modélisation des données
 
@@ -144,9 +144,9 @@ La [plateforme Microsoft AI](https://azure.microsoft.com/overview/ai-platform/?v
 
 [ADO.NET](/dotnet/framework/data/adonet/index) &mdash;Describes l’architecture ADO.net et comment utiliser les classes ADO.net pour gérer les données d’application et interagir avec les sources de données et XML.
 
-[ADO.NET Entity Framework](https://docs.microsoft.com/ef/ef6/) &mdash;Describes la création d’applications de données qui permettent aux développeurs de programmer par rapport à un modèle conceptuel plutôt que directement sur une base de données relationnelle.
+[ADO.NET Entity Framework](/ef/ef6/) &mdash;Describes la création d’applications de données qui permettent aux développeurs de programmer par rapport à un modèle conceptuel plutôt que directement sur une base de données relationnelle.
 
-[WCF Data Services 4,5](/dotnet/framework/data/wcf/index) &mdash;Describes comment utiliser [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] pour déployer des services de données sur le Web ou sur un intranet qui implémente le [Open Data Protocol (OData)](https://www.odata.org/).
+[WCF Data Services 4,5](/dotnet/framework/data/wcf/index)&mdash;décrit comment utiliser [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] pour déployer des services de données sur le Web ou sur un intranet qui implémente le [Open Data Protocol (OData)](https://www.odata.org/).
 
 Les [données des solutions office](../vsto/data-in-office-solutions.md) &mdash;Contains des liens vers des rubriques qui expliquent le fonctionnement des données dans les solutions Office. Cela comprend des informations sur la programmation orientée schéma, la mise en cache des données et l’accès aux données côté serveur.
 

@@ -12,12 +12,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5b7d17b90ab195e41a5b3dacb3b2ab4985dce245
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 506e8516c7a7bbc0ccc610b843763017ae90f547
+ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72448750"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72807065"
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>Utilisation d’annotations SAL pour réduire les défauts du code C/C++
 SAL est le langage d’annotation du code source de Microsoft. À l’aide des annotations de code source, vous pouvez rendre l’intention de votre code explicite. Ces annotations activent également des outils d’analyse statique automatisés pour analyser votre code plus précisément, avec beaucoup moins de faux positifs et de faux négatifs.
@@ -57,7 +57,7 @@ Les Articles de cette section de la documentation présentent les aspects du SAL
      Fournit des exemples qui montrent comment utiliser des annotations SAL. Décrit également les pièges courants.
 
 ## <a name="related-resources"></a>Ressources connexes
-[Blog de l’équipe d’analyse du code](http://go.microsoft.com/fwlink/?LinkId=251197)
+[Blog de l’équipe d’analyse du code](https://blogs.msdn.microsoft.com/codeanalysis/)
 
 ## <a name="see-also"></a>Voir aussi
-[Annotations SAL 2,0 pour les pilotes Windows](http://go.microsoft.com/fwlink/?LinkId=250979)
+[Annotations SAL 2,0 pour les pilotes Windows](/windows-hardware/drivers/devtest/sal-2-annotations-for-windows-drivers)
