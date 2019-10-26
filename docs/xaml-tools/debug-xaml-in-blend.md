@@ -9,12 +9,12 @@ manager: jillfra
 ms.technology: vs-ide-debug
 ms.workload:
 - uwp
-ms.openlocfilehash: a9e111f904f0c017dbbe4487401e8e3c363931ac
-ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
-ms.translationtype: HT
+ms.openlocfilehash: 0c785be0002a1e6d4fd1934e559743502611f5fb
+ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
+ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 10/25/2019
-ms.locfileid: "72919213"
+ms.locfileid: "72924495"
 ---
 # <a name="debug-xaml-in-blend"></a>Déboguer XAML dans Blend
 
@@ -37,7 +37,7 @@ Certaines causes courantes d’erreurs de syntaxe XAML se présentent comme sui
 
 - Il existe un élément XAML à un emplacement non autorisé.
 
-Pour plus d’informations sur la syntaxe XAML de base, consultez la page [Guide de base de la syntaxe XAML](/previous-versions/windows/apps/hh700351(v=win.10)).
+Pour plus d’informations sur la syntaxe XAML de base, consultez la page [Guide de base de la syntaxe XAML](/windows/uwp/xaml-platform/xaml-syntax-guide).
 
 Vous pouvez également identifier et résoudre les erreurs de syntaxe code-behind simples, les erreurs de compilation et les erreurs d’exécution dans Blend. Toutefois, il peut être plus facile d'identifier et de résoudre les erreurs code-behind dans Visual Studio.
 
@@ -119,7 +119,7 @@ Quand des erreurs XAML sont détectées, l'aire de conception affiche une alert
 
 Vous pouvez ouvrir Blend Projects dans Visual Studio pour déboguer plus facilement le code dans votre application. Pour ouvrir un projet Blend dans Visual Studio, cliquez avec le bouton droit sur le projet dans le panneau **projets** , puis cliquez sur **modifier dans Visual Studio**. Une fois que vous avez terminé votre session de débogage dans Visual Studio, appuyez sur Ctrl + Maj + S pour enregistrer toutes vos modifications, puis revenez à Blend. Vous êtes alors invité à recharger le projet. Cliquez sur **Oui pour tout** pour continuer à travailler dans Blend.
 
-Pour plus d’informations sur le débogage de votre application, consultez [Déboguer des applications UWP dans Visual Studio](/visualstudio/debugger/debug-store-apps-in-visual-studio?view=vs-2015&redirectedfrom=MSDN).
+Pour plus d’informations sur le débogage de votre application, consultez [Déboguer des applications UWP dans Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).
 
 ## <a name="get-help"></a>Obtenir de l’aide
 
