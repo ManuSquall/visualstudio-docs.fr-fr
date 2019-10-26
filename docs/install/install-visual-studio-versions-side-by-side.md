@@ -11,12 +11,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 123f01b2e4545545a380f5a37adcdaf883bc9e91
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: b7fb1e057ffd9f3824fa1fe49e353fd54694da91
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974720"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888684"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Installer des versions de Visual Studio côte à côte
 
@@ -44,7 +44,7 @@ Avant d’installer plusieurs versions sur la même machine, vérifiez que les c
 
 * Si vous désinstallez une version de Visual Studio sur un ordinateur ayant plusieurs versions installées, les associations de fichiers pour Visual Studio sont supprimées pour toutes les versions.
 
-* Visual Studio ne met pas automatiquement à niveau les extensions, car elles ne sont pas toutes compatibles. Vous devez réinstaller les extensions à partir de [Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkId=178891) ou de l’éditeur du logiciel.
+* Visual Studio ne met pas automatiquement à niveau les extensions, car elles ne sont pas toutes compatibles. Vous devez réinstaller les extensions à partir de [Visual Studio Marketplace](https://marketplace.visualstudio.com/) ou de l’éditeur du logiciel.
 
 ## <a name="net-framework-versions-and-side-by-side-installations"></a>Versions du .NET Framework et installations côte à côte
 
@@ -58,10 +58,10 @@ Pour des informations spécifiques au langage, consultez la rubrique appropriée
 
 | Langue | Rubrique |
 |--------------|-----------|
-| Visual Basic | [Page Application, Concepteur de projets (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md?view=vs-2017) |
+| Visual Basic | [Page Application, Concepteur de projet (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md?view=vs-2017) |
 | Visual C# | [Page Application, Concepteur de projets (C#)](../ide/reference/application-page-project-designer-csharp.md?view=vs-2017) |
 | Visual F# | [Développer avec Visual F# dans Visual Studio](../ide/fsharp-visual-studio.md?view=vs-2017) |
-|C++ | [Guide pratique pour modifier le framework cible et l’ensemble d’outils de plateforme](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
+|C++ | [Comment : modifier le Framework cible et l’ensemble d’outils de plateforme](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
@@ -77,10 +77,10 @@ Pour des informations spécifiques au langage, consultez la rubrique appropriée
 
 | Langue | Rubrique |
 |--------------|-----------|
-| Visual Basic | [Page Application, Concepteur de projets (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md) |
+| Visual Basic | [Page Application, Concepteur de projet (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md) |
 | Visual C# | [Page Application, Concepteur de projets (C#)](../ide/reference/application-page-project-designer-csharp.md) |
 | Visual F# | [Développer avec Visual F# dans Visual Studio](../ide/fsharp-visual-studio.md) |
-| C++ | [Guide pratique pour modifier le framework cible et l’ensemble d’outils de plateforme](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
+| C++ | [Comment : modifier le Framework cible et l’ensemble d’outils de plateforme](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

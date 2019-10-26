@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: f15c785658b5c4cd5a6b158b05eb67ff9a4e4c2d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 10b5dfee629b5b6e67ab544ca0bdd905ed2a120a
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62814374"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888454"
 ---
 # <a name="work-with-sql-server-and-r"></a>Utiliser SQL Server et R
 
@@ -22,11 +22,11 @@ L’excellente prise en charge de SQL Server par Visual Studio aide les scientif
 > [!Note]
 > Pour utiliser conjointement SQL et R, vous devez installer SQL Server Data Tools :
 > - Visual Studio 2017 : exécutez le programme d’installation de Visual Studio et sélectionnez la charge de travail Stockage et traitement des données, qui comprend SQL Server Data Tools.
-> - Visual Studio 2015 : suivez les instructions fournies dans [Download SQL Server Data Tools](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt).
+> - Visual Studio 2015 : suivez les instructions fournies dans [Download SQL Server Data Tools](/sql/ssdt/download-sql-server-data-tools-ssdt).
 
 |   |   |
 |---|---|
-| ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regarder une vidéo") | [Regardez une vidéo (youtube.com)](https://www.youtube.com/watch?v=n4AYr0QIwdQ) qui offre une vue d’ensemble de SQL Server et de R (3 min 3 s). |
+| ![icône d’appareil photo vidéo](../install/media/video-icon.png "Regarder une vidéo") | [Regardez une vidéo (youtube.com)](https://www.youtube.com/watch?v=n4AYr0QIwdQ) qui offre une vue d’ensemble de SQL Server et de R (3 min 3 s). |
 
 ## <a name="create-and-run-sql-queries"></a>Créer et exécuter des requêtes SQL
 
@@ -49,7 +49,7 @@ Pour plus d’informations, consultez [Utiliser l’Éditeur Transact-SQL pour m
 
 ## <a name="work-with-sql-server-stored-procedures"></a>Utiliser des procédures stockées SQL Server
 
-[SQL Server R Services](https://docs.microsoft.com/sql/advanced-analytics/r/sql-server-r-services) (SQL Server 2016 et versions ultérieures) vous permet d’incorporer et d’exécuter du code R à partir d’une procédure stockée T-SQL. Vous pouvez exécuter du code R sur un ordinateur SQL Server, traiter les données retournées par une requête SQL et générer un jeu de résultats SQL qui peut être traité par du code SQL supplémentaire ou retourné au client.
+[SQL Server R Services](/sql/advanced-analytics/r/sql-server-r-services) (SQL Server 2016 et versions ultérieures) vous permet d’incorporer et d’exécuter du code R à partir d’une procédure stockée T-SQL. Vous pouvez exécuter du code R sur un ordinateur SQL Server, traiter les données retournées par une requête SQL et générer un jeu de résultats SQL qui peut être traité par du code SQL supplémentaire ou retourné au client.
 
 RTVS simplifie le processus de combinaison du code R et SQL (processus plutôt complexe et sujet aux erreurs) à l’intérieur d’une instruction SQL unique, comme décrit dans les sections suivantes :
 
@@ -59,7 +59,7 @@ RTVS simplifie le processus de combinaison du code R et SQL (processus plutôt c
 
 |   |   |
 |---|---|
-| ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regarder une vidéo") | [Regardez une vidéo (youtube.com)](https://www.youtube.com/watch?v=dFKIT2OitWQ) qui offre une vue d’ensemble des procédures stockées de R et de SQL Server (6 min 9 s). |
+| ![icône d’appareil photo vidéo](../install/media/video-icon.png "Regarder une vidéo") | [Regardez une vidéo (youtube.com)](https://www.youtube.com/watch?v=dFKIT2OitWQ) qui offre une vue d’ensemble des procédures stockées de R et de SQL Server (6 min 9 s). |
 
 ### <a name="add-a-database-connection"></a>Ajouter une connexion de base de données
 
@@ -97,7 +97,7 @@ OutputDataSet <- InputDataSet
 En gros, le code reçoit une tramedonnées R nommée `InputDataSet` et retourne son résultat dans `OutputDataSet`, le code du modèle ne faisant que copier l’entrée dans la sortie.
 
 > [!Note]
-> Les noms de ces tramedonnées sont contrôlés par les paramètres `@input_data_1_name` et `@output_data_1_name` dans l’appel à la procédure stockée système `sp_execute_external_script`. Pour plus d’informations sur la conception de cette convention d’appel et pour obtenir des exemples de son utilisation, consultez [sp_execute_external_script (Transact-SQL)](https://docs.microsoft.com/sql/relational-databases/system-stored-procedures/sp-execute-external-script-transact-sql).
+> Les noms de ces tramedonnées sont contrôlés par les paramètres `@input_data_1_name` et `@output_data_1_name` dans l’appel à la procédure stockée système `sp_execute_external_script`. Pour plus d’informations sur la conception de cette convention d’appel et pour obtenir des exemples de son utilisation, consultez [sp_execute_external_script (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-execute-external-script-transact-sql).
 
 L’autre code généré (dans les commentaires) fournit un petit script de test qui utilise le [package RODBC](https://cran.r-project.org/web/packages/RODBC/index.html) pour transmettre une instruction SQL à SQL Server, l’exécuter, puis récupérer son jeu de résultats sous forme de tramedonnées R. Vous pouvez supprimer les marques de commentaire de ce code de test pour écrire votre code R de manière interactive par rapport au jeu de résultats que vous obtenez à partir de SQL Server.
 

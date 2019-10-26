@@ -13,12 +13,12 @@ author: bowdenk7
 ms.author: wilkelly
 manager: jillfra
 monikerRange: vs-2017
-ms.openlocfilehash: c86dd5090d2cee6c49bd97f0895bba397e10c1ae
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: 653b2576b0076d02f2e18cedc6f9f9890fd98fe5
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263046"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888661"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>JavaScript dans Visual Studio 2017
 
@@ -34,7 +34,7 @@ Visual Studio prend désormais en charge la syntaxe des mises à jour de langage
 ### <a name="what-is-ecmascript-2015"></a>En quoi consiste ECMAScript 2015 ?
 
 JavaScript est un langage de programmation en constante évolution, et [TC39](https://www.ecma-international.org/memento/tc39-m.htm) est le comité en charge des mises à jour.
-ECMAScript 2015 est une mise à jour du langage JavaScript qui introduit de nouvelles fonctionnalités et de nouveaux éléments de syntaxe pratiques. Pour une présentation approfondie des fonctionnalités d’ES6, consultez [ce site de référence](http://es6-features.org).
+ECMAScript 2015 est une mise à jour du langage JavaScript qui introduit de nouvelles fonctionnalités et de nouveaux éléments de syntaxe pratiques. Pour une présentation approfondie des fonctionnalités d’ES6, consultez [ce site de référence](http://es6-features.org/#Constants).
 
 Outre ECMAScript 2015, Visual Studio prend en charge ECMAScript 2016 et toutes les nouvelles versions d’ECMAScript dès leur publication. Pour vous tenir informé des derniers changements dans ECMAScript, suivez les travaux de TC39 sur [github](https://github.com/tc39).
 
@@ -52,14 +52,14 @@ Pour compiler des fichiers JavaScript, vous devez ajouter un fichier `tsconfig.j
 
 Les paramètres obligatoires pour le fichier tsconfig sont les suivants :
 
-- `allowJs`: cette valeur doit être définie sur `true` pour que les fichiers JavaScript soient reconnus. La valeur par défaut est `false`, car TypeScript est compilé en JavaScript, et le compilateur ne doit pas inclure des fichiers qu’il vient de compiler.
-- `outDir`: vous devez définir ce paramètre sur un emplacement non inclus dans le projet, afin que les fichiers JavaScript émis ne soient pas détectés, puis inclus dans le projet (voir `exclude`).
-- `module`: si vous utilisez des modules, ce paramètre indique au compilateur le format de module que le code émis doit utiliser (par exemple `commonjs` pour Node, ou des outils de bundle comme Browserify).
-- `exclude`: ce paramètre indique les dossiers à ne pas inclure dans le projet.
+- `allowJs` : cette valeur doit être définie sur `true` pour les fichiers JavaScript à reconnaître. La valeur par défaut est `false`, car TypeScript est compilé en JavaScript, et le compilateur ne doit pas inclure des fichiers qu’il vient de compiler.
+- `outDir` : vous devez définir ce paramètre sur un emplacement non inclus dans le projet, afin que les fichiers JavaScript émis ne soient pas détectés, puis inclus dans le projet (voir `exclude`).
+- `module` : si vous utilisez des modules, ce paramètre indique au compilateur le format de module que le code émis doit utiliser (par exemple `commonjs` pour Node, ou des outils de bundle comme Browserify).
+- `exclude` : ce paramètre indique les dossiers à ne pas inclure dans le projet.
 L’emplacement de sortie, ainsi que les dossiers autres que les dossiers de projet tels que `node_modules` ou `temp`, doivent être ajoutés à ce paramètre.
-- `enableAutoDiscovery`: ce paramètre active la détection et le téléchargement automatiques des fichiers de définition, comme indiqué précédemment.
-- `compileOnSave`: ce paramètre indique au compilateur s’il doit réexécuter la compilation chaque fois qu’un fichier source est enregistré dans Visual Studio.
-- `typeAcquisition`: cet ensemble de paramètres contrôle le comportement de l’acquisition de type automatique (pour plus de détails, consultez [cette section](/visualstudio/ide/javascript-intellisense#Auto)).
+- `enableAutoDiscovery` : ce paramètre permet de détecter et télécharger automatiquement les fichiers de définition, comme indiqué précédemment.
+- `compileOnSave` : ce paramètre indique au compilateur s’il doit réexécuter la compilation chaque fois qu’un fichier source est enregistré dans Visual Studio.
+- `typeAcquisition` : cet ensemble de paramètres contrôle le comportement de l’acquisition de type automatique (pour plus de détails, consultez [cette section](/visualstudio/ide/javascript-intellisense#Auto)).
 
 Pour pouvoir convertir des fichiers JavaScript en modules CommonJS et les placer dans un dossier `./out`, vous pouvez utiliser le fichier `tsconfig.json` suivant :
 
@@ -238,7 +238,7 @@ Ajoutez d’autres répertoires selon vos besoins. D’autres exemples incluent 
 [!include[vs_dev15](../../docs/misc/includes/vs_dev15_md.md)] propose un tout nouveau service de langage : certains comportements ont disparu, tandis que d’autres comportements sont différents de ceux de l’expérience précédente.
 Le remplacement de VSDoc par JSDoc, la suppression des extensions `.intellisense.js` personnalisées et la limitation d’IntelliSense pour des modèles de code spécifiques constituent les changements les plus importants.
 
-### <a name="no-more-references-or-referencesjs"></a>Disparition de `///<references/>` et de `_references.js`
+### <a name="no-more-references-or-_referencesjs"></a>Disparition de `///<references/>` et de `_references.js`
 
 Par le passé, il était assez difficile de savoir quels fichiers figuraient dans votre portée IntelliSense à un moment donné. Selon les cas, il était préférable ou non d’avoir tous les fichiers dans l’étendue. Il en résultait des configurations complexes qui nécessitaient la gestion manuelle des références. Dorénavant, vous n’avez plus besoin de vous soucier de la gestion des références et vous n’êtes plus obligé d’utiliser des commentaires pour les références à trois barres obliques ou des fichiers `_references.js`.
 
@@ -261,7 +261,7 @@ Pour en savoir plus sur la création de fichiers de déclaration (`.d.ts`), cliq
 Étant donné que le nouveau service de langage repose sur l’analyse statique et non sur un moteur d’exécution (pour plus d’informations sur les différences, lisez [ce problème](https://github.com/Microsoft/TypeScript/issues/4789)), quelques modèles JavaScript ne peuvent plus être détectés.
 Le modèle le plus courant est le modèle « expando ».
 Le service de langage ne peut pas fournir la fonctionnalité IntelliSense sur des objets auxquels des propriétés ont été ajoutées après la déclaration.
-Par exemple :
+Exemple :
 
 ```js
 var obj = {};

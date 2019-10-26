@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 1541f3608aef33cbd286a8c96257eb191712e245
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
-ms.translationtype: HT
+ms.openlocfilehash: 288cb11d3e6ae3917f5fcc6ec9ed242549908576
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681294"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888650"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Développer du code JavaScript et TypeScript dans Visual Studio sans solutions ni projets
 
@@ -74,7 +74,7 @@ Vous pouvez activer l’intégration des tests unitaires dans Visual Studio en s
 
 L’exécuteur de tests énumère les packages installés localement pour déterminer quelle infrastructure de test utiliser.
 Si aucune des infrastructures prises en charge n’est reconnue, l’exécuteur de tests utilise par défaut *ExportRunner*. Les autres infrastructures prises en charge sont :
-* Mocha ([mochajs.org](http://mochajs.org/))
+* Mocha ([mochajs.org](https://mochajs.org/))
 * Jasmine ([Jasmine.github.io](https://jasmine.github.io/))
 * Tape ([github.com/substack/tape](https://github.com/substack/tape))
 * Jest ([jestjs.io](https://jestjs.io/))

@@ -10,12 +10,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55986a703bd53318f8c0f74b8cf661412a82b716
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4269a6f17c83e7fe6f111c4e564ace0e40cfa7e6
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72633996"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888475"
 ---
 # <a name="work-with-3d-assets-for-games-and-apps"></a>Utiliser des composants 3D pour les jeux et les applications
 
@@ -46,11 +46,11 @@ Les nuanceurs sont de petits programmes spécifiques au domaine qui s’exécute
 Vous pouvez utiliser le concepteur Shader Visual Studio, qui est un outil de conception de nuanceur graphique, pour créer des effets visuels personnalisés sans connaître la programmation HLSL.
 
 > [!NOTE]
-> Pour plus d’informations sur la façon de démarrer avec la programmation DirectX, consultez [DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633). Pour plus d’informations sur la façon de déboguer une application DirectX, consultez [Graphics Diagnostics (débogage DirectX Graphics)](../debugger/graphics/visual-studio-graphics-diagnostics.md).
+> Pour plus d’informations sur la façon de démarrer avec la programmation DirectX, consultez [DirectX](/windows/win32/directx). Pour plus d’informations sur la façon de déboguer une application DirectX, consultez [Graphics Diagnostics (débogage DirectX Graphics)](../debugger/graphics/visual-studio-graphics-diagnostics.md).
 
 ## <a name="directx-version-compatibility"></a>Compatibilité des versions DirectX
 
-Visual Studio utilise DirectX pour restituer les composants 2D et 3D. Vous pouvez sélectionner le renderer DirectX 11 ou le renderer logiciel de la plateforme WARP (Windows Advanced Rasterization Platform). Le renderer DirectX 11 fournit un rendu à accélération matérielle, hautes performances sur les GPU DirectX 11 et DirectX 10. Le renderer WARP aide à garantir que vos ressources s’exécutent avec une large gamme d’ordinateurs, dont les ordinateurs qui ne disposent pas de matériel graphique moderne et ceux qui disposent de matériel graphique intégré. Pour plus d’informations sur WARP, consultez [Guide de la plateforme WARP (Windows Advanced Rasterization Platform)](http://go.microsoft.com/fwlink/p/?LinkId=224634).
+Visual Studio utilise DirectX pour restituer les composants 2D et 3D. Vous pouvez sélectionner le renderer DirectX 11 ou le renderer logiciel de la plateforme WARP (Windows Advanced Rasterization Platform). Le renderer DirectX 11 fournit un rendu à accélération matérielle, hautes performances sur les GPU DirectX 11 et DirectX 10. Le renderer WARP aide à garantir que vos ressources s’exécutent avec une large gamme d’ordinateurs, dont les ordinateurs qui ne disposent pas de matériel graphique moderne et ceux qui disposent de matériel graphique intégré. Pour plus d’informations sur WARP, consultez [Guide de la plateforme WARP (Windows Advanced Rasterization Platform)](/windows/win32/direct3darticles/directx-warp).
 
 ## <a name="related-topics"></a>Rubriques connexes
 
