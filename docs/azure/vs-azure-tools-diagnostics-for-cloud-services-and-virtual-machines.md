@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
-ms.openlocfilehash: 911a366aa69cf0a45cb030bb83017895500ad32f
-ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
+ms.openlocfilehash: d8da94fc7b4735198eafa33edfe72cba0eb1ea59
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71962980"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911856"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Configurer les diagnostics pour Azure Cloud Services et les machines virtuelles Azure
 Quand vous devez résoudre les problèmes d’un service cloud ou d’une machine virtuelle Azure, vous pouvez utiliser Visual Studio pour configurer plus facilement les diagnostics Azure. Les diagnostics capturent les données système et les données de journalisation sur les machines virtuelles et sur les instances de machine virtuelle qui exécutent votre service cloud. Les données de diagnostic sont transférées à un compte de stockage que vous choisissez. Pour plus d’informations sur la journalisation des diagnostics dans Azure, consultez [Activer la journalisation des diagnostics pour les applications web dans Azure App Service](/azure/app-service/web-sites-enable-diagnostic-log).
@@ -36,7 +36,7 @@ La chaîne de connexion présente certaines différences de fonctionnement impor
 * Dans Azure SDK 2.4 et antérieur, la chaîne de connexion est utilisée comme runtime par le plug-in des diagnostics pour obtenir les informations du compte de stockage pour le transfert des journaux de diagnostics.
 * Dans Azure SDK 2.6 et ultérieur, Visual Studio utilise la chaîne de connexion des diagnostics pour configurer l’extension de diagnostics Azure avec les informations du compte de stockage approprié lors de la publication. Vous pouvez utiliser la chaîne de connexion pour définir des comptes de stockage différents pour différentes configurations de service utilisées par Visual Studio lors de la publication. Cependant, comme le plug-in des diagnostics n’est plus disponible après Azure SDK 2.5, le fichier .cscfg ne peut pas activer lui-même l’extension des diagnostics. Vous devez configurer l’extension séparément avec des outils comme Visual Studio ou PowerShell.
 * Pour simplifier le processus de configuration de l’extension des diagnostics avec PowerShell, la sortie du package provenant de Visual Studio contient également le code XML de la configuration publique pour l’extension des diagnostics pour chaque rôle. Visual Studio utilise la chaîne de connexion des diagnostics pour renseigner les informations du compte de stockage dans la configuration publique. Les fichiers de la configuration publique sont créés dans le dossier Extensions. Les fichiers de la configuration publique utilisent le modèle de nommage PaaSDiagnostics.&lt;nom_rôle\>.PubConfig.xml. Les déploiements basés sur PowerShell peuvent utiliser ce modèle pour mapper chaque configuration à un rôle.
-* Le [portail Azure](http://go.microsoft.com/fwlink/p/?LinkID=525040) utilise la chaîne de connexion du fichier .cscfg pour accéder aux données de diagnostic. Les données apparaissent sous l’onglet **Surveillance**. La chaîne de connexion est nécessaire pour configurer le service afin qu’il affiche les données d’analyse détaillées dans le portail.
+* Le [portail Azure](https://portal.azure.com) utilise la chaîne de connexion du fichier .cscfg pour accéder aux données de diagnostic. Les données s’affichent sous l’onglet **analyse** . La chaîne de connexion est requise pour définir le service afin d’afficher les données de surveillance détaillées dans le portail.
 
 ## <a name="migrate-projects-to-azure-sdk-26-and-later"></a>Migrer des projets vers Azure SDK 2.6 et ultérieur
 Quand vous migrez depuis Azure SDK 2.5 vers Azure SDK 2.6 ou ultérieur, si vous avez un compte de stockage des diagnostics spécifié dans le fichier .wadcfgx, ce compte reste dans ce fichier. Pour tirer parti de la souplesse que représente l’utilisation de comptes de stockage différents pour différentes configurations de stockage, ajoutez manuellement la chaîne de connexion à votre projet. Si vous migrez un projet depuis Azure SDK 2.4 ou antérieur vers Azure SDK 2.6, les chaînes de connexion de diagnostic sont conservées. Notez cependant les modifications apportées à la façon dont les chaînes de connexion sont traitées dans Azure SDK 2.6, qui est décrite dans la section précédente.
@@ -51,7 +51,7 @@ La case à cocher **Mettre à jour les chaînes de connexion du stockage de dév
 
 Par exemple, si vous cochez cette case et que la chaîne de connexion des diagnostics spécifie `UseDevelopmentStorage=true`, quand vous publiez le projet sur Azure, Visual Studio met automatiquement à jour la chaîne de connexion des diagnostics avec le compte de stockage que vous avez spécifié dans l’Assistant Publication. Cependant, si un compte de stockage réel a été spécifié comme chaîne de connexion des diagnostics, ce compte est utilisé à la place.
 
-## <a name="diagnostics-functionality-differences-in-azure-sdk-24-and-earlier-vs-azure-sdk-25-and-later"></a>Différences entre les fonctionnalités de diagnostic d’Azure SDK 2.4 et antérieur et Azure SDK 2.5 et ultérieur
+## <a name="diagnostics-functionality-differences-in-azure-sdk-24-and-earlier-vs-azure-sdk-25-and-later"></a>Différences des fonctionnalités de diagnostic dans le kit de développement logiciel (SDK) Azure 2,4 et versions antérieures par rapport à Azure SDK 2,5 et versions ultérieures
 Si vous mettez à niveau votre projet depuis Azure SDK 2.4 vers Azure SDK 2.5 ou ultérieur, vous devez garder à l’esprit les différences existant entre les fonctionnalités de diagnostics suivantes :
 
 * **Les API de configuration sont dépréciées**. La configuration par programmation des diagnostics est disponible dans Azure SDK 2.4 et antérieur, mais elle est dépréciée dans Azure SDK 2.5 et ultérieur. Si votre configuration des diagnostics est actuellement définie dans du code, vous devez reconfigurer entièrement ces paramètres dans le projet migré pour que les diagnostics continuent de fonctionner. Le fichier de configuration des diagnostics pour Azure SDK 2.4 est diagnostics.wadcfg. Le fichier de configuration des diagnostics pour Azure SDK 2.5 est diagnostics.wadcfgx.
@@ -80,7 +80,7 @@ Dans Visual Studio, vous pouvez collecter les données de diagnostic pour des r�
    * Si vous sélectionnez **Émulateur de stockage Microsoft Azure**, la chaîne de connexion a la valeur `UseDevelopmentStorage=true`.
    * Si vous choisissez **Votre abonnement**, vous pouvez choisir l’abonnement Azure que vous voulez utiliser et entrer un nom de compte. Pour gérer vos abonnements Azure, sélectionnez **Gérer les comptes**.
    * Si vous sélectionnez **Informations d’identification entrées manuellement**, entrez le nom et la clé du compte Azure que vous voulez utiliser.
-5. Pour afficher la boîte de dialogue **Configuration des diagnostics**, sélectionnez **Configurer**. Excepté pour **Général** et **Répertoires de journaux**, chaque onglet représente une source de données de diagnostic que vous pouvez collecter. L’onglet par défaut **Général** propose les options de collecte de données de diagnostic suivantes : **Erreurs uniquement**, **Toutes les informations** et **Plan personnalisé**. L’option par défaut, **Erreurs uniquement**, utilise le plus petit volume de stockage, car elle ne transfère pas les messages d’avertissement ou de suivi. L’option **Toutes les informations** transfère le plus grand nombre d’informations, utilise le plus de stockage et est dès lors la plus coûteuse.
+5. Pour afficher la boîte de dialogue **Configuration des diagnostics**, sélectionnez **Configurer**. Excepté pour **Général** et **Répertoires de journaux**, chaque onglet représente une source de données de diagnostic que vous pouvez collecter. L’onglet **général** par défaut offre les options de collecte des données de diagnostic suivantes : **Erreurs uniquement**, **toutes les informations**et **plan personnalisé**. L’option par défaut, **Erreurs uniquement**, utilise le plus petit volume de stockage, car elle ne transfère pas les messages d’avertissement ou de suivi. L’option **Toutes les informations** transfère le plus grand nombre d’informations, utilise le plus de stockage et est dès lors la plus coûteuse.
 
    > [!NOTE]
    > La taille minimale prise en charge pour « quota de disque en Mo » est de 50 Mo, et la taille par défaut est 4 Go. Toutefois, si vous collectez les vidages de mémoire, définissez ce paramètre sur une valeur supérieure, par exemple, 10 Go.
@@ -108,7 +108,7 @@ Dans Visual Studio, vous pouvez collecter des données de diagnostic pour des ma
     ![Installer une extension de machine virtuelle Azure](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC766024.png)
 
     > [!NOTE]
-   > D’autres extensions des diagnostics sont disponibles pour vos machines virtuelles. Pour plus d’informations, consultez [Extensions et fonctionnalités de machine virtuelle pour Windows](https://docs.microsoft.com/azure/virtual-machines/windows/extensions-features).
+   > D’autres extensions des diagnostics sont disponibles pour vos machines virtuelles. Pour plus d’informations, consultez [Extensions et fonctionnalités de machine virtuelle pour Windows](/azure/virtual-machines/windows/extensions-features).
    >
    >
 5. Pour ajouter l’extension et afficher sa boîte de dialogue **Configuration des diagnostics**, sélectionnez **Ajouter**.
@@ -118,12 +118,12 @@ Dans Visual Studio, vous pouvez collecter des données de diagnostic pour des ma
 
     ![Activer les diagnostics Azure et la configuration](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758144.png)
 
-    L’onglet par défaut, **Général**, propose les options de collecte de données de diagnostic suivantes : **Erreurs uniquement**, **Toutes les informations** et **Plan personnalisé**. L’option par défaut, **Erreurs uniquement**, nécessite le plus petit volume de stockage, car elle ne transfère pas les messages d’avertissement ou de suivi. L’option **Toutes les informations** transfère le plus grand nombre d’informations. Elle est donc la plus coûteuse en termes de stockage.
+    L’onglet par défaut, **général**, offre les options de collecte des données de diagnostic suivantes : **Erreurs uniquement**, **toutes les informations**et **plan personnalisé**. L’option par défaut, **Erreurs uniquement**, nécessite le plus petit volume de stockage, car elle ne transfère pas les messages d’avertissement ou de suivi. L’option **Toutes les informations** transfère le plus grand nombre d’informations. Elle est donc la plus coûteuse en termes de stockage.
 7. Pour cet exemple, sélectionnez l’option **Plan personnalisé** afin de pouvoir personnaliser les données collectées.
 8. Le champ **Quota de disque en Mo** spécifie l’espace à allouer aux données de diagnostic dans le compte de stockage. Vous pouvez modifier la valeur par défaut si vous le souhaitez.
 9. Sous chaque onglet des données de diagnostic à collecter, cochez la case **Activer le transfert de \<type de journal\>** .
 
-    Par exemple, si vous voulez collecter les journaux d’application, sélectionnez la case à cocher **Activer le transfert des journaux des applications** sous l’onglet **Journaux d’application**. Spécifiez également les autres informations nécessaires pour chaque type de données de diagnostic. Pour plus d’informations sur la configuration de chaque onglet, consultez la section **Configurer les sources de données de diagnostic** plus loin dans cet article.
+    Par exemple, si vous souhaitez collecter les journaux d’application, activez la case à cocher **activer le transfert des journaux des applications** sous l’onglet **journaux des applications** . Spécifiez également les autres informations requises pour chaque type de données de diagnostic. Pour plus d’informations sur la configuration de chaque onglet, consultez la section **Configurer les sources de données de diagnostic** plus loin dans cet article.
 10. Après avoir activé la collecte de toutes les données de diagnostic souhaitées, sélectionnez **OK**.
 11. Enregistrez le projet mis à jour.
 
@@ -160,7 +160,7 @@ Les informations d’un compteur de performances peuvent vous aider à localiser
 
 ![Compteurs de performance](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758147.png)
 
-Pour suivre un compteur de performances qui n’est pas répertorié, entrez-le en utilisant la syntaxe suggérée. Sélectionnez ensuite **Ajouter**. Le système d’exploitation de la machine virtuelle détermine les compteurs de performances que vous pouvez suivre. Pour plus d’informations sur la syntaxe, consultez [Specifying a Counter Path](https://msdn.microsoft.com/library/windows/desktop/aa373193.aspx).
+Pour suivre un compteur de performances qui n’est pas répertorié, entrez-le en utilisant la syntaxe suggérée. Sélectionnez ensuite **Ajouter**. Le système d’exploitation de la machine virtuelle détermine les compteurs de performances que vous pouvez suivre. Pour plus d’informations sur la syntaxe, consultez [spécifier un chemin d’accès de compteur](https://msdn.microsoft.com/library/windows/desktop/aa373193.aspx).
 
 ### <a name="infrastructure-logs"></a>Journaux d’infrastructure
 Les journaux d’infrastructure contiennent des informations sur l’infrastructure de diagnostic Azure, le module RemoteAccess et le module RemoteForwarder. Pour collecter des informations sur les journaux d’infrastructure, cochez la case **Activer le transfert des journaux d’infrastructure**. Pour augmenter ou diminuer l’intervalle entre les transferts des journaux d’infrastructure vers votre compte de stockage, changez la valeur de **Période de transfert (min)** .
@@ -188,13 +188,13 @@ Les événements sont capturés à partir de sources d’événements et de fich
 L’infrastructure ETW est prise en charge dans ASP.NET via des classes de l’espace de noms [System.Diagnostics.aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110)). L’espace de noms Microsoft.WindowsAzure.Diagnostics, qui hérite des classes [System.Diagnostics.aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110)), permet d’utiliser [System.Diagnostics.aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110)) comme infrastructure de journalisation dans l’environnement Azure. Pour plus d’informations, consultez [Contrôler la journalisation et le suivi dans Microsoft Azure](https://msdn.microsoft.com/magazine/ff714589.aspx) et [Activer les diagnostics dans les services cloud et les machines virtuelles Azure](/azure/cloud-services/cloud-services-dotnet-diagnostics).
 
 ### <a name="crash-dumps"></a>Vidages sur incident
-Pour capturer des informations sur le moment où une instance de rôle se bloque, cochez la case **Activer le transfert de vidages sur incident**. (ASP.NET gérant la plupart des exceptions, cela n’est généralement utile que pour les rôles de travail.) Pour augmenter ou réduire le pourcentage d’espace de stockage dédié aux vidages sur incident, changez la valeur de **Quota de répertoire (%)** . Vous pouvez changer le conteneur de stockage où les vidages sur incident sont stockés et choisir de capturer un vidage **Complet** ou **Mini**.
+Pour capturer des informations sur le moment où une instance de rôle se bloque, cochez la case **Activer le transfert de vidages sur incident**. (Étant donné que ASP.NET gère la plupart des exceptions, cela n’est généralement utile que pour les rôles de travail.) Pour augmenter ou diminuer le pourcentage d’espace de stockage dédié aux vidages sur incident, modifiez la valeur **quota de répertoire (%)** . Vous pouvez changer le conteneur de stockage où les vidages sur incident sont stockés et choisir de capturer un vidage **Complet** ou **Mini**.
 
 Les processus actuellement suivis sont répertoriés dans la capture d’écran suivante. Activez les cases à cocher correspondant aux processus que vous voulez capturer. Pour ajouter un processus à la liste, entrez le nom du processus, puis sélectionnez **Ajouter un processus**.
 
 ![Vidages sur incident](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC766026.png)
 
-Pour plus d’informations, consultez [Contrôler la journalisation et le suivi dans Microsoft Azure](https://msdn.microsoft.com/magazine/ff714589.aspx) et [Diagnostics Microsoft Azure Partie 4 : Custom logging components and Azure Diagnostics 1.3 changes](http://justazure.com/microsoft-azure-diagnostics-part-4-custom-logging-components-azure-diagnostics-1-3-changes/).
+Pour plus d’informations, consultez [prendre le contrôle de la journalisation et du suivi dans Microsoft Azure](https://msdn.microsoft.com/magazine/ff714589.aspx) et [Diagnostics Microsoft Azure partie 4 : composants de journalisation personnalisés et Azure Diagnostics modifications 1,3](https://www.red-gate.com/simple-talk/cloud/platform-as-a-service/microsoft-azure-diagnostics-part-4-custom-logging-components-and-azure-diagnostics-1.3-changes/).
 
 ## <a name="view-the-diagnostics-data"></a>Affichage des données de diagnostic
 Après avoir collecté les données de diagnostic pour un service cloud ou une machine virtuelle, vous pouvez les visualiser.
@@ -256,9 +256,9 @@ Si vous recherchez des informations sur un problème dans un service cloud en co
     Si vous modifiez la collecte de données dans l’Explorateur de serveurs, les modifications continuent à s’appliquer jusqu’au redéploiement complet de votre service cloud. Si vous utilisez les paramètres de publication par défaut, les modifications ne sont pas remplacées. Le paramètre de publication par défaut provoque la mise à jour du déploiement existant, et non pas un redéploiement complet. Pour garantir l’effacement des paramètres au moment du déploiement, accédez à l’onglet **Paramètres avancés** dans l’Assistant Publication, puis décochez la case **Mise à jour du déploiement**. Quand vous redéployez après avoir désactivé cette case à cocher, les paramètres sont rétablis avec les valeurs du fichier .wadcfgx (ou .wadcfg) tels que définis dans l’éditeur de **Propriétés** pour le rôle. Si vous mettez à jour votre déploiement, Azure conserve les paramètres précédents.
 
 ## <a name="troubleshoot-azure-cloud-service-issues"></a>Dépannage de problèmes de service cloud Azure
-Si vous rencontrez des problèmes avec vos projets de service cloud, par exemple si un rôle reste bloqué à l’état « occupé », s’il exécute un cycle en boucle ou s’il lève une erreur interne du serveur, il existe des outils et des techniques permettant de diagnostiquer et de corriger le problème. Pour des exemples spécifiques de problèmes courants et de solutions, et pour une vue d’ensemble des concepts et des outils que vous pouvez utiliser pour diagnostiquer et corriger ces erreurs, consultez [Azure PaaS compute diagnostics data](http://blogs.msdn.com/b/kwill/archive/2013/08/09/windows-azure-paas-compute-diagnostics-data.aspx).
+Si vous rencontrez des problèmes avec vos projets de service cloud, par exemple si un rôle reste bloqué à l’état « occupé », s’il exécute un cycle en boucle ou s’il lève une erreur interne du serveur, il existe des outils et des techniques permettant de diagnostiquer et de corriger le problème. Pour des exemples spécifiques de problèmes courants et de solutions, et pour une vue d’ensemble des concepts et des outils que vous pouvez utiliser pour diagnostiquer et corriger ces erreurs, consultez [Azure PaaS compute diagnostics data](https://blogs.msdn.microsoft.com/kwill/2013/08/09/windows-azure-paas-compute-diagnostics-data/).
 
-## <a name="q--a"></a>Questions et réponses
+## <a name="q--a"></a>Q et R
 **Qu’est-ce que la taille de la mémoire tampon et quelle doit-elle être ?**
 
 Sur chaque instance de machine virtuelle, des quotas limitent la quantité de données de diagnostic qui peuvent être stockées sur le système de fichiers local. De plus, vous pouvez spécifier une taille de mémoire tampon pour chaque type de données de diagnostic disponible. Cette taille de mémoire tampon joue le rôle de quota individuel pour ce type de données. Pour déterminer le quota global et la quantité de mémoire restante, regardez dans la partie inférieure de la boîte de dialogue pour les types de données de diagnostic. En spécifiant des mémoires tampons plus grandes ou des types de données plus nombreux, vous vous approchez du quota général. Vous pouvez changer le quota global en modifiant le fichier de configuration diagnostics.wadcfg ou .wadcfgx. Les données de diagnostic sont stockées sur le même système de fichiers que les données de votre application. Si votre application utilise une grande quantité d’espace disque, n’augmentez pas le quota de diagnostic global.
@@ -271,9 +271,9 @@ La période de transfert est le temps écoulé entre les captures de données. A
 
 Les horodatages correspondent au fuseau horaire local du centre de données qui héberge votre service cloud. Les trois colonnes d’horodatage suivantes sont utilisées dans les tables de journaux :
 
-* **PreciseTimeStamp** : horodatage ETW de l’événement. Autrement dit, l’heure de l’événement est enregistrée à partir du client.
-* **TIMESTAMP** : valeur de **PreciseTimeStamp** arrondie vers le bas à la limite de la fréquence de chargement. Par exemple, si votre fréquence de chargement est de 5 minutes et si l’heure de l’événement est 00:17:12, TIMESTAMP vaut 00:15:00.
-* **Timestamp** : horodatage de la création de l’entité dans la table Azure.
+* **PreciseTimeStamp**: horodatage ETW de l’événement. Autrement dit, l’heure de l’événement est enregistrée à partir du client.
+* **Horodateur**: la valeur de **PreciseTimeStamp** est arrondie à la limite de la fréquence de chargement. Par exemple, si votre fréquence de chargement est de 5 minutes et si l’heure de l’événement est 00:17:12, TIMESTAMP vaut 00:15:00.
+* **Timestamp**: heure à laquelle l’entité a été créée dans la table Azure.
 
 **Comment gérer les coûts pendant la collecte d’informations de diagnostics ?**
 
@@ -283,9 +283,9 @@ Les paramètres par défaut (**Niveau du journal** défini sur **Erreur** et **P
 
 Par défaut, IIS ne collecte pas les journaux de demandes ayant échoué. Vous pouvez configurer IIS de façon à collecter des journaux pour les demandes ayant échoué en modifiant le fichier web.config pour votre rôle web.
 
-**Je n’obtiens pas les informations des méthodes RoleEntryPoint comme OnStart. Quel est le problème ?**
+**Je n’obtiens pas les informations de trace à partir des méthodes RoleEntryPoint comme OnStart. Qu'est-ce qui ne va pas?**
 
-Les méthodes de **RoleEntryPoint** sont appelées dans le contexte de WAIISHost.exe, et non dans IIS. Les informations de configuration dans web.config qui autorisent normalement le traçage ne s’appliquent pas. Pour résoudre ce problème, ajoutez un fichier .config à votre projet de rôle web et nommez le fichier de façon à ce que son nom corresponde à l’assembly de sortie qui contient le code **RoleEntryPoint**. Dans le projet de rôle web par défaut, le nom du fichier .config doit être WAIISHost.exe.config. Ajoutez les lignes suivantes à ce fichier :
+Les méthodes de **RoleEntryPoint** sont appelées dans le contexte de WAIISHost.exe, et non dans IIS. Les informations de configuration dans web.config qui autorisent normalement le traçage ne s’appliquent pas. Pour résoudre ce problème, ajoutez un fichier .config à votre projet de rôle web et nommez le fichier de façon à ce que son nom corresponde à l’assembly de sortie qui contient le code **RoleEntryPoint**. Dans le projet de rôle Web par défaut, le nom du fichier. config doit être WAIISHost. exe. config. Ajoutez les lignes suivantes à ce fichier :
 
 ```xml
 <system.diagnostics>

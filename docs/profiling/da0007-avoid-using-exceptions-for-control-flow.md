@@ -13,20 +13,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 088b42862065f031347f51bec791ec866b6fb87e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 9509168878d18ea3074dd91b4929313a959138c2
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62936492"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911025"
 ---
-# <a name="da0007-avoid-using-exceptions-for-control-flow"></a>DA0007 : Ne pas utiliser d’exceptions pour le flux de contrôle
+# <a name="da0007-avoid-using-exceptions-for-control-flow"></a>DA0007 : Ne pas utiliser d'exceptions pour le flux de contrôle
 
 |||
 |-|-|
 |ID de règle|DA0007|
 |Category|Utilisation du .NET Framework|
-|Méthodes de profilage|Tous|
+|Méthodes de profilage|Tout|
 |Message|De nombreuses exceptions sont levées. Réduisez l’utilisation d’exceptions dans la logique du programme.|
 |Type de message|Warning|
 
@@ -38,7 +38,7 @@ ms.locfileid: "62936492"
 ## <a name="rule-description"></a>Description de la règle
  Si l’utilisation de gestionnaires d’exceptions pour intercepter des erreurs et autres événements qui interrompent l’exécution des programmes constitue une bonne pratique, l’utilisation d’un gestionnaire d’exceptions dans le cadre de la logique d’exécution des programmes peut être coûteuse et doit être évitée. Dans la plupart des cas, les exceptions ne doivent être utilisées que pour les événements rares et inattendus. Les exceptions ne doivent pas être utilisées pour retourner des valeurs dans le cadre d’un flux de programme normal. Dans de nombreux cas, vous pouvez éviter la levée des exceptions en validant les valeurs et en utilisant une logique conditionnelle qui arrête l’exécution des instructions qui causent le problème.
 
- Pour plus d’informations, consultez la section [Exception Management](http://go.microsoft.com/fwlink/?LinkID=177825) dans **Chapter 5 — Improving Managed Code Performance** qui fait partie de la documentation **Improving .NET Application Performance and Scalability** de la bibliothèque **Microsoft Patterns and Practices** sur MSDN.
+ Pour plus d’informations, consultez la section [Exception Management](/previous-versions/msp-n-p/ff647790(v=pandp.10)#scalenetchapt05_topic24) dans **Chapter 5 — Improving Managed Code Performance** qui fait partie de la documentation **Improving .NET Application Performance and Scalability** de la bibliothèque **Microsoft Patterns and Practices** sur MSDN.
 
 ## <a name="how-to-investigate-a-warning"></a>Comment rechercher la cause d’un avertissement
  Double-cliquez sur le message dans la fenêtre Liste d’erreurs pour accéder à la vue Marques. Recherchez la colonne qui contient les mesures **Exceptions .NET CLR(@ProcessInstance)\\Nombre d’exceptions levées/s**. Déterminez s’il existe des phases spécifiques de l’exécution du programme durant lesquelles la gestion des exceptions est plus fréquente. À l’aide d’un profil d’échantillonnage, essayez d’identifier les instructions throw et les blocs try/catch qui génèrent fréquemment des exceptions. Si nécessaire, ajoutez une logique aux blocs catch pour identifier plus facilement les exceptions qui sont gérées le plus fréquemment. Si possible, remplacez les instructions throw ou les blocs catch fréquemment exécutés par une logique simple de contrôle de flux ou par du code de validation.

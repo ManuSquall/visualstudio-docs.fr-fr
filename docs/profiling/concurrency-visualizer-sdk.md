@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33b8f0215e09dd43c265c7eb8ba08613132fabbc
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
-ms.translationtype: HT
+ms.openlocfilehash: cb48733f84dcf484d2c2d7ffb18e838faae07ab0
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870307"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911199"
 ---
-# <a name="concurrency-visualizer-sdk"></a>Kit SDK du visualiseur concurrentiel
-Vous pouvez instrumenter votre code source à l’aide du kit SDK du visualiseur concurrentiel pour afficher des informations supplémentaires dans le visualiseur concurrentiel. Vous pouvez associer les données supplémentaires à des phases et à des événements de votre code. Ces visualisations supplémentaires sont appelées *marqueurs*.  Pour obtenir une introduction pas à pas, consultez [Introducing the Concurrency Visualizer SDK](http://go.microsoft.com/fwlink/?LinkId=235405).
+# <a name="concurrency-visualizer-sdk"></a>Kit de développement logiciel (SDK) du visualiseur concurrentiel
+Vous pouvez instrumenter votre code source à l’aide du kit SDK du visualiseur concurrentiel pour afficher des informations supplémentaires dans le visualiseur concurrentiel. Vous pouvez associer les données supplémentaires à des phases et à des événements de votre code. Ces visualisations supplémentaires sont appelées *marqueurs*.  Pour obtenir une introduction pas à pas, consultez [Introducing the Concurrency Visualizer SDK](https://blogs.msdn.microsoft.com/visualizeparallel/2011/10/17/introducing-the-concurrency-visualizer-sdk/).
 
 ## <a name="properties"></a>Propriétés
  Les indicateurs, les intervalles et les messages ont deux propriétés : la catégorie et l’importance. Dans la boîte de dialogue [Paramètres avancés](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md), vous pouvez utiliser ces propriétés pour filtrer l’affichage des marqueurs. Ces propriétés ont également un impact sur la représentation visuelle des marqueurs. Par exemple, la taille des indicateurs est utilisée pour représenter l’importance. La couleur, quant à elle, est utilisée pour indiquer la catégorie.
@@ -27,7 +27,7 @@ Vous pouvez instrumenter votre code source à l’aide du kit SDK du visualiseur
  Le visualiseur concurrentiel expose un fournisseur par défaut que vous pouvez utiliser pour générer des marqueurs. Le fournisseur est déjà inscrit avec le visualiseur concurrentiel. Aucune autre étape n’est donc nécessaire pour afficher les marqueurs dans l’interface utilisateur.
 
 ### <a name="c-and-visual-basic"></a>C# et Visual Basic
- En C#, en Visual Basic et dans tout autre code managé, utilisez le fournisseur par défaut en appelant des méthodes dans la classe [Markers](/previous-versions/hh694099(v=vs.140)). Il expose quatre méthodes pour générer des marqueurs : [WriteFlag](/previous-versions/hh694185%28v%3dvs.140%29), [EnterSpan](/previous-versions/hh694205(v=vs.140)), [WriteMessage](/previous-versions/hh694161(v=vs.140)) et [WriteAlert](/previous-versions/hh694180(v=vs.140)). Il existe plusieurs surcharges pour ces fonctions, selon que vous souhaitez utiliser les valeurs par défaut des propriétés.  La surcharge la plus simple accepte un seul paramètre de chaîne qui spécifie la description de l’événement. La description s’affiche dans les rapports du visualiseur concurrentiel.
+ En C#, en Visual Basic et dans tout autre code managé, utilisez le fournisseur par défaut en appelant des méthodes dans la classe [Markers](/previous-versions/hh694099(v=vs.140)). Il expose quatre méthodes pour générer des marqueurs : [WriteFlag](/previous-versions/hh694185%28v%3dvs.140%29), [EnterSpan](/previous-versions/hh694205(v=vs.140)), [WriteMessage](/previous-versions/hh694161(v=vs.140))et [WriteAlert](/previous-versions/hh694180(v=vs.140)). Il existe plusieurs surcharges pour ces fonctions, selon que vous souhaitez utiliser les valeurs par défaut des propriétés.  La surcharge la plus simple accepte un seul paramètre de chaîne qui spécifie la description de l’événement. La description s’affiche dans les rapports du visualiseur concurrentiel.
 
 ##### <a name="to-add-sdk-support-to-a-c-or-visual-basic-project"></a>Pour ajouter la prise en charge du kit SDK à un projet C# ou Visual Basic
 

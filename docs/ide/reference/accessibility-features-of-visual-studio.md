@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b91cc92abca856e3a23e7b1154e378c99923fcf
-ms.sourcegitcommit: 8a699df154464387f327691dce507d7c3d0e2aab
-ms.translationtype: HT
+ms.openlocfilehash: dbca6429c1cc1669345cda465ec9ecfe3af0ed06
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2019
-ms.locfileid: "70060372"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919186"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Fonctionnalités d’accessibilité de Visual Studio
 
@@ -40,7 +40,7 @@ En plus des fonctionnalités et utilitaires d’accessibilité Windows, les fonc
 
 Pour plus d’informations, consultez les rubriques suivantes :
 
-- [Guide pratique pour définir les options d’accessibilité de l’IDE](../../ide/reference/how-to-set-ide-accessibility-options.md)
+- [Comment : définir les options d’accessibilité de l’IDE](../../ide/reference/how-to-set-ide-accessibility-options.md)
 
 - [Guide pratique pour utiliser uniquement le clavier](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
 
@@ -51,7 +51,7 @@ Pour plus d’informations, consultez les rubriques suivantes :
 - [Guide pratique pour changer les polices et les couleurs](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 
 > [!IMPORTANT]
-> Les informations contenues dans cette page peuvent s’appliquer uniquement aux utilisateurs qui ont acheté leurs produits Microsoft aux États-Unis. Si vous avez obtenu ce produit en dehors des États-Unis, visitez le site web [Accessibilité Microsoft](http://go.microsoft.com/fwlink/?LinkId=8431) pour obtenir la liste des numéros de téléphone et des adresses des services de support Microsoft. Vous pouvez contacter votre filiale pour savoir si les types de produits et de services décrits dans cette page sont disponibles dans votre région. Les informations sur l’accessibilité sont également disponibles dans d’autres langues.
+> Les informations contenues dans cette page peuvent s’appliquer uniquement aux utilisateurs qui ont acheté leurs produits Microsoft aux États-Unis. Si vous avez obtenu ce produit en dehors des États-Unis, visitez le site web [Accessibilité Microsoft](https://www.microsoft.com/accessibility/) pour obtenir la liste des numéros de téléphone et des adresses des services de support Microsoft. Vous pouvez contacter votre filiale pour savoir si les types de produits et de services décrits dans cette page sont disponibles dans votre région. Les informations sur l’accessibilité sont également disponibles dans d’autres langues.
 
 ::: moniker range="vs-2017"
 

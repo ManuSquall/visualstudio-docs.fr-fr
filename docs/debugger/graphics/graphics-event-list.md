@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fe890d5a2c88ea9d4d35a6bd01f6012d97e6ce0
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: d5c4e8f39ff77779985536e53d98ddc2785b109b
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72735550"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911487"
 ---
 # <a name="graphics-event-list"></a>Liste des événements Graphics
 La liste des événements Graphics dans Visual Studio Graphics Analyzer vous permet d'explorer les événements Direct3D enregistrés durant le rendu d'un frame de votre jeu ou application.
@@ -88,7 +88,7 @@ La liste des événements Graphics dans Visual Studio Graphics Analyzer vous per
 ### <a name="user-defined-events-in-direct3d-11-and-earlier"></a>Événements définis par l'utilisateur dans Direct3D 11 et les versions antérieures
  Pour créer des groupes et des marqueurs dans Direct3D 11 ou les versions antérieures, utilisez les API décrites dans cette section. Le tableau ci-dessous récapitule les API que vous pouvez utiliser pour les différentes versions de Direct3D 11, ainsi que les versions antérieures de Direct3D.
 
-|Description de l'API|[ID3D11DeviceContext2](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11devicecontext2) (Direct3D 11.2)|[ID3DUserDefinedAnnotation](http://go.microsoft.com/fwlink/p/?LinkID=250967) (Direct3D 11.1)|Famille d’API D3DPerf_ (Direct3D 11.0 et antérieur)|
+|Description de l'API|[ID3D11DeviceContext2](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11devicecontext2) (Direct3D 11.2)|[ID3DUserDefinedAnnotation](/windows/win32/api/d3d11_1/nn-d3d11_1-id3duserdefinedannotation) (Direct3D 11.1)|Famille d’API D3DPerf_ (Direct3D 11.0 et antérieur)|
 |---------------------| - | - | - |
 |Commencer un groupe d'événements|`BeginEventInt`|`BeginEvent`|`D3DPerf_BeginEvent`|
 |Terminer un groupe d'événements|`EndEventInt`|`EndEvent`|`D3DPerf_EndEvent`|
@@ -99,7 +99,7 @@ La liste des événements Graphics dans Visual Studio Graphics Analyzer vous per
 <!-- VERSIONLESS -->
 <a name="resource-history"></a>
 ## <a name="resource-history"></a>Historique des ressources
-Visual Studio 2017 et versions ultérieures contiennent la fenêtre **historique des ressources** .  La sélection de l’icône espion ![watch icône ](media/gfx_watch.png) en regard d’une entrée dans la fenêtre **liste des événements** affiche la fenêtre **historique des ressources** , comme indiqué ci-dessous :
+Visual Studio 2017 et versions ultérieures contiennent la fenêtre **historique des ressources** .  La sélection de l’icône espion ![icône espion](media/gfx_watch.png) en regard d’une entrée dans la fenêtre **liste des événements** affiche la fenêtre **historique des ressources** , comme indiqué ci-dessous :
 
 ![Historique des ressources](media/gfx_diag_resource_history.png)
 
@@ -109,7 +109,7 @@ Cette fenêtre vous permet d’afficher l’historique de l’élément sélecti
 |-----------| - |
 | **Type** | Affiche le type de l’entrée, généralement *créer*, *lire* et *écrire*. |
 | **Affichage** | Affiche une miniature de la ressource à ce moment précis.  Double-cliquez sur la miniature pour ouvrir une vue détaillée de la ressource à ce moment-là. |
-| **Event** | Affiche l’appel de méthode qui a généré l’événement.  Tout historique supplémentaire sur des éléments individuels peut être affiché en sélectionnant l’icône espion ![watch icône ](media/gfx_watch.png) sur la ligne appropriée.  En outre, tout élément dessiné en texte bleu, tel que `m_commandList` dans la capture d’écran ci-dessus, peut être sélectionné pour plus d’informations. |
+| **Event** | Affiche l’appel de méthode qui a généré l’événement.  Tout historique supplémentaire sur des éléments individuels peut être affiché en sélectionnant l’icône espion ![icône espion](media/gfx_watch.png) sur la ligne appropriée.  En outre, tout élément dessiné en texte bleu, tel que `m_commandList` dans la capture d’écran ci-dessus, peut être sélectionné pour plus d’informations. |
 
 <!-- /VERSIONLESS -->
 

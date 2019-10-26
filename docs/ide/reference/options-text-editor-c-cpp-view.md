@@ -11,12 +11,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b15952c8262ea1e8dec1e89816a5887f9bfe9bf6
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
-ms.translationtype: HT
+ms.openlocfilehash: b867d81e4f0719ebf239bc89a6200fe833bc27b1
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461269"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919031"
 ---
 # <a name="options-text-editor-cc-view"></a>Options, Éditeur de texte, C/C++, Affichage
 
@@ -57,4 +57,4 @@ Vous pouvez activer ou désactiver les paramètres suivants pour gérer la faço
 ## <a name="see-also"></a>Voir aussi
 
 - [Définition d’options d’éditeur spécifiques du langage](../../ide/reference/setting-language-specific-editor-options.md)
-- [Refactorisation en C++ (blog VC)](http://blogs.msdn.com/b/vcblog/archive/2014/11/14/all-about-c-refactoring-in-visual-studio-2015-preview.aspx)
+- [Refactorisation en C++ (blog VC)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/)

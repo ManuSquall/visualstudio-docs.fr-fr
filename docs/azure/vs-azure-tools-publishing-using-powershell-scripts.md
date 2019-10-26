@@ -9,28 +9,28 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: cd19c619eca4505eab4c332783a678bf5e7ba87a
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.openlocfilehash: 6ed003df875f7fdc75278210dc3010e93d280186
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70179790"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911737"
 ---
-# <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Utilisation de scripts Windows PowerShell pour publier des environnements de développement et de test
+# <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Utilisation de scripts Windows PowerShell pour publier sur des environnements de développement et de test
 
 Lorsque vous créez une application web dans Visual Studio, vous pouvez générer un script Windows PowerShell que vous pouvez utiliser ultérieurement pour automatiser la publication de votre site web sur Azure en tant qu’application web dans Azure App Service ou dans une machine virtuelle. Vous pouvez modifier et étendre le script Windows PowerShell dans l’éditeur Visual Studio, conformément à vos besoins, ou intégrer le script à la build, aux tests et aux scripts de publication existants.
 
 À l’aide de ces scripts, vous pouvez configurer des versions personnalisées (également connues comme environnements de développement et de test) de votre site pour une utilisation temporaire. Par exemple, vous pouvez configurer une version particulière de votre site web sur une machine virtuelle Azure ou sur l’emplacement intermédiaire d’un site web pour exécuter une suite de tests, reproduire un bogue, tester un correctif, évaluer une proposition de modification ou configurer un environnement personnalisé pour une démonstration ou une présentation. Une fois que vous avez créé un script qui publie votre projet, vous pouvez recréer des environnements identiques en réexécutant le script en fonction des besoins, ou en exécutant le script avec votre propre build de votre application web pour créer un environnement personnalisé de test.
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Configuration requise
 
 * Visual Studio 2015 ou version ultérieure avec la **charge de travail Azure** installée, ou Visual Studio 2013 et Kit de développement logiciel (SDK) Azure 2.3 ou version ultérieure. Voir [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads). (Vous n’avez pas besoin du kit de développement logiciel (SDK) Azure pour générer les scripts pour les projets web. Cette fonctionnalité s’adresse aux projets web, et non aux rôles web dans les services cloud.)
 * Azure PowerShell 0.7.4 ou version ultérieure. Consultez [Installation et configuration d’Azure PowerShell](/powershell/azure/overview).
-* [Windows PowerShell 3.0](http://go.microsoft.com/?linkid=9811175) ou version ultérieure.
+* [Windows PowerShell 3.0](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770458(v=ws.10)) ou version ultérieure.
 
 ## <a name="additional-tools"></a>Outils supplémentaires
 
-Des outils et ressources supplémentaires sont disponibles pour l’utilisation de PowerShell dans Visual Studio pour le développement Azure. Consultez [Outils PowerShell pour Visual Studio](http://go.microsoft.com/fwlink/?LinkId=404012).
+Des outils et ressources supplémentaires sont disponibles pour l’utilisation de PowerShell dans Visual Studio pour le développement Azure. Consultez [Outils PowerShell pour Visual Studio](https://marketplace.visualstudio.com/items?itemName=AdamRDriscoll.PowerShellToolsforVisualStudio2015).
 
 ## <a name="generating-the-publish-scripts"></a>Génération de scripts de publication
 
@@ -44,7 +44,7 @@ Visual Studio génère un dossier au niveau solution appelé **PublishScripts**
 
 Le script de publication contient des étapes de publication spécifiques pour le déploiement sur un site web ou une machine virtuelle. Visual Studio propose la coloration de syntaxe pour le développement de Windows PowerShell. Vous pouvez bénéficier d’une aide sur les fonctions et modifier librement les fonctions dans le script en fonction de l’évolution de vos besoins.
 
-### <a name="windows-powershell-module"></a>Module Windows PowerShell
+### <a name="windows-powershell-module"></a>Module Windows PowerShell
 
 Le module Windows PowerShell généré par Visual Studio contient des fonctions que le script de publication utilise. Ces fonctions Azure PowerShell ne sont pas destinées à être modifiées. Consultez [Installation et configuration d’Azure PowerShell](/powershell/azure/overview).
 
@@ -154,7 +154,7 @@ Si vous n’avez jamais exécuté de script Windows PowerShell auparavant, vous
 
    ![Créer un package Web Deploy](./media/vs-azure-tools-publishing-using-powershell-scripts/IC767885.png)
 
-   Pour plus d'informations, voir [Procédure : Créer un package de déploiement web dans Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx). Vous pouvez également automatiser la création de votre package Web Deploy, comme indiqué dans la section [Personnalisation et extension des scripts de publication](#customizing-and-extending-the-publish-scripts).
+   Pour plus d’informations, consultez [Comment : créer un package de déploiement Web dans Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx). Vous pouvez également automatiser la création de votre package Web Deploy, comme indiqué dans la section [Personnalisation et extension des scripts de publication](#customizing-and-extending-the-publish-scripts).
 
 1. Dans l’**Explorateur de solutions**, ouvrez le menu contextuel du script, puis choisissez **Ouvrir avec PowerShell ISE**.
 1. Si vous exécutez des scripts Windows PowerShell sur cet ordinateur pour la première fois, ouvrez une fenêtre d’invite de commandes avec des privilèges d’administrateur et tapez la commande suivante :
@@ -250,7 +250,7 @@ Pour automatiser la création de votre projet, ajoutez le code appelant MSBuild 
         #Write a function to build and package your web application
     ```
 
-    Pour générer votre application web, utilisez MsBuild.exe. Pour obtenir de l’aide, consultez le Guide de référence des lignes de commande MSBuild à l’adresse : [http://go.microsoft.com/fwlink/?LinkId=391339](http://go.microsoft.com/fwlink/?LinkId=391339).
+    Pour générer votre application web, utilisez MsBuild.exe. Pour obtenir de l’aide, consultez le Guide de référence des lignes de commande MSBuild à l’adresse : [http://go.microsoft.com/fwlink/?LinkId=391339](../msbuild/msbuild-command-line-reference.md).
 
     ```powershell
     Write-VerboseWithTime 'Build-WebDeployPackage: Start'
@@ -317,12 +317,12 @@ Pour obtenir de l’aide pour les fonctions que vous pouvez utiliser à l’invi
 | Add-AzureVM |Crée une machine virtuelle Azure et renvoie l’URL de la machine virtuelle déployée. La fonction définit les conditions préalables, puis appelle la fonction **New-AzureVM** (module Azure) pour créer une machine virtuelle. |
 | Add-AzureVMEndpoints |Ajoute de nouveaux points de terminaison d’entrée à une machine virtuelle et renvoie la machine virtuelle avec le nouveau point de terminaison. |
 | Add-AzureVMStorage |Crée un compte de stockage Azure dans l’abonnement actif. Le nom du compte commence par « devtest » et est suivi d’une chaîne alphanumérique unique. La fonction renvoie le nom du nouveau compte de stockage. Spécifiez un emplacement ou un groupe d’affinités pour le nouveau compte de stockage. |
-| Add-AzureWebsite |Crée un site web avec le nom et l’emplacement spécifiés. Cette fonction appelle la fonction **New-AzureWebsite** dans le module Azure. Si l’abonnement ne contient pas déjà un site web avec le nom spécifié, cette fonction crée le site web et renvoie un objet de site web. Sinon, la valeur renvoyée est `$null`. |
+| Add-AzureWebsite |Crée un site web avec le nom et l’emplacement spécifiés. Cette fonction appelle la fonction **New-AzureWebsite** dans le module Azure. Si l’abonnement ne contient pas déjà un site web avec le nom spécifié, cette fonction crée le site web et renvoie un objet de site web. Sinon, il retourne `$null`. |
 | Backup-Subscription |Enregistre l’abonnement Azure actif dans la variable `$Script:originalSubscription` dans la portée du script. Cette fonction enregistre l’abonnement Azure actif (tel qu’obtenu par `Get-AzureSubscription -Current`) et son compte de stockage, ainsi que l’abonnement modifié par ce script (stocké dans la variable `$UserSpecifiedSubscription`) et son compte de stockage, dans la portée de script. En enregistrant les valeurs, vous pouvez utiliser une fonction telle que `Restore-Subscription` pour restaurer l’abonnement actif d’origine et son compte de stockage à l’état actif, si ce dernier a changé. |
 | Find-AzureVM |Obtient la machine virtuelle Azure spécifiée. |
 | Format-DevTestMessageWithTime |Indique la date et l’heure avant un message. Cette fonction est conçue pour les messages écrits dans les flux Error et Verbose. |
 | Get-AzureSQLDatabaseConnectionString |Assemble une chaîne de connexion pour se connecter à une base de données SQL Azure. |
-| Get-AzureVMStorage |Renvoie le nom du premier compte de stockage avec le modèle de nom devtest *(non sensible à la casse) dans l’emplacement ou le groupe d’affinités spécifié. Si le compte de stockage devtest* ne correspond pas à l’emplacement ou au groupe d’affinités, la fonction l’ignore. Spécifiez un emplacement ou un groupe d’affinités. |
+| Get-AzureVMStorage |Retourne le nom du premier compte de stockage avec le modèle de nom « DevTest *» (non-respect de la casse) dans l’emplacement ou le groupe d’affinités spécifié. Si le*compte de stockage « DevTest » ne correspond pas à l’emplacement ou au groupe d’affinités, la fonction l’ignore. Spécifiez un emplacement ou un groupe d’affinités. |
 | Get-MSDeployCmd |Renvoie une commande pour exécuter l’outil MsDeploy.exe. |
 | New-AzureVMEnvironment |Recherche ou crée une machine virtuelle dans l’abonnement qui correspond aux valeurs dans le fichier de configuration JSON. |
 | Publish-WebPackage |Utilise MsDeploy.exe et un fichier. zip de package de publication web pour déployer des ressources sur un site web. Cette fonction ne génère aucune sortie. Si l’appel de MSDeploy.exe échoue, la fonction lève une exception. Pour obtenir une sortie plus détaillée, utilisez l’option **-Verbose**. |
@@ -332,7 +332,7 @@ Pour obtenir de l’aide pour les fonctions que vous pouvez utiliser à l’invi
 | Test-AzureModule |Renvoie `$true` si la version du module Azure installé est 0.7.4 ou une version ultérieure. Renvoie `$false` si le module n’est pas installé ou s’il s’agit d’une version antérieure. Cette fonction n’a pas de paramètres. |
 | Test-AzureModuleVersion |Renvoie `$true` si la version du module Azure est 0.7.4 ou une version ultérieure. Renvoie `$false` si le module n’est pas installé ou s’il s’agit d’une version antérieure. Cette fonction n’a pas de paramètres. |
 | Test-HttpsUrl |Convertit l’URL d’entrée en un objet System.Uri. Renvoie `$True` si l’URL est absolue et que son schéma est https. Renvoie `$false` si l’URL est relative, que son schéma n’est pas HTTPS ou que la chaîne d’entrée ne peut pas être convertie en URL. |
-| Test-Member |Renvoie `$true` si une propriété ou méthode est un membre de l’objet. Sinon, renvoie `$false`. |
+| Test-Member |Renvoie `$true` si une propriété ou méthode est un membre de l’objet. Sinon, retourne `$false`. |
 | Write-ErrorWithTime |Écrit un message d’erreur préfixé avec l’heure actuelle. Cette fonction appelle la fonction **Format-DevTestMessageWithTime** à indiquer l’heure avant d’écrire le message dans le flux Error. |
 | Write-HostWithTime |Écrit un message dans le programme hôte (**Write-Host**) préfixé avec l’heure actuelle. L’effet de l’écriture dans le programme hôte varie. La plupart des programmes qui hébergent Windows PowerShell écrivent ces messages dans la sortie standard. |
 | Write-VerboseWithTime |Écrit un message détaillé préfixé avec l’heure actuelle. Étant donné qu’il appelle **Write-Verbose**, le message s’affiche uniquement lorsque le script s’exécute avec le paramètre **Verbose** ou lorsque la préférence **VerbosePreference** est définie sur **Continuer**. |

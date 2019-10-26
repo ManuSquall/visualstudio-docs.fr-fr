@@ -12,20 +12,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ecd968c5be30e50550fb29a5c44cb7065630a63
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 46dfce74e02faffb90cf5984651968633c27a16d
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442353"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72910603"
 ---
-# <a name="da0024-excessive-gc-cpu-time"></a>DA0024 : Temps processeur GC excessif
+# <a name="da0024-excessive-gc-cpu-time"></a>DA0024 : temps processeur GC excessif
 
 |||
 |-|-|
 |ID de règle|DA0024|
 |Category|Utilisation du .NET Framework|
-|Méthode de profilage|Tous|
+|Méthode de profilage|Tout|
 |Message|% de temps dans GC très élevé. % de temps dans GC très élevé. Volume de surcharge de garbage collection trop élevé.|
 |Type de règle|Warning|
 
@@ -42,9 +42,9 @@ ms.locfileid: "63442353"
  Cette règle se déclenche lorsque le temps consacré au garbage collection est extrêmement important, par rapport au temps total de traitement de l’application.
 
 > [!NOTE]
-> Quand le temps consacré au garbage collection est significatif mais pas excessif par rapport au temps total de traitement de l’application, l’avertissement [DA0023 : Temps CPU GC élevé](../profiling/da0023-high-gc-cpu-time.md) est déclenché à la place de cette règle.
+> Lorsque le temps consacré au garbage collection est important, mais pas excessif par rapport au temps total de traitement de l’application, l’avertissement [DA0023 : Temps CPU GC élevé](../profiling/da0023-high-gc-cpu-time.md) est déclenché à la place de cette règle.
 
 ## <a name="how-to-investigate-a-warning"></a>Comment rechercher la cause d’un avertissement
  Double-cliquez sur le message dans la fenêtre Liste d’erreurs pour accéder à la [vue Marques](../profiling/marks-view.md) des données de profilage. Accédez à la colonne **Mémoire CLR .NET\\% temps dans le GC**. Déterminez s’il existe des phases spécifiques de l’exécution du programme durant lesquelles la surcharge du garbage collection de mémoire managée est plus importante. Comparez les valeurs de la colonne % temps dans le GC au taux du garbage collection des colonnes **Nombre de collections de la génération 0**, **Nombre de collections de la génération 1** et **Nombre de collections de la génération 2**.
 
- La colonne % temps dans le GC contient le pourcentage de temps qu’une application a consacré au garbage collection, proportionnellement au temps total de traitement. Sachez que dans certaines circonstances, la valeur % temps dans le GC peut indiquer une valeur élevée sans qu’un garbage collection excessif en soit la cause. Pour plus d’informations sur la façon dont est calculée la valeur de la colonne % temps dans le GC, consultez le billet [Difference Between Perf Data Reported by Different Tools - 4](http://go.microsoft.com/fwlink/?LinkId=177863) du blog **Maoni's Weblog** sur MSDN. Si des défauts de page se produisent ou si l’application est préemptée par d’autres travaux prioritaires sur la machine pendant le garbage collection, le compteur % temps dans le GC reflète ces retards supplémentaires.
+ La colonne % temps dans le GC contient le pourcentage de temps qu’une application a consacré au garbage collection, proportionnellement au temps total de traitement. Sachez que dans certaines circonstances, la valeur % temps dans le GC peut indiquer une valeur élevée sans qu’un garbage collection excessif en soit la cause. Pour plus d’informations sur la façon dont est calculée la valeur de la colonne % temps dans le GC, consultez le billet [Difference Between Perf Data Reported by Different Tools - 4](https://devblogs.microsoft.com/maoni/archive/difference-between-perf-data-reported-by-different-tools-4.aspx) du blog **Maoni's Weblog** sur MSDN. Si des défauts de page se produisent ou si l’application est préemptée par d’autres travaux prioritaires sur la machine pendant le garbage collection, le compteur % temps dans le GC reflète ces retards supplémentaires.

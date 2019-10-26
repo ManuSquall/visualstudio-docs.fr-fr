@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae0507e75a84f18350817a33abe25d3e59fa9aa2
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: fa9d6658ae14c4b84aae9361f73e4701e758f975
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926330"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911220"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Paramètres avancés, boîte de dialogue (visualiseur concurrentiel)
 La boîte de dialogue **Paramètres avancés** du visualiseur concurrentiel vous permet de contrôler la façon dont les traces sont collectées.  La boîte de dialogue comprend des onglets pour les symboles, « Uniquement mon code », la mise en mémoire tampon, le filtrage, les événements du CLR, les marqueurs, les fournisseurs et les fichiers.
@@ -29,7 +29,7 @@ La boîte de dialogue **Paramètres avancés** du visualiseur concurrentiel vous
  Les chemins des fichiers .*exe* et .*dll* sont stockés dans le fichier de trace quand la trace est collectée.  La modification de ce paramètre n’affecte pas les traces déjà collectées.
 
 ## <a name="buffering"></a>Mise en mémoire tampon
- Le visualiseur concurrentiel utilise le suivi d’événements pour Windows (ETW) quand il collecte une trace.  ETW utilise plusieurs mémoires tampons quand il stocke des événements.  Les paramètres de mémoire tampon ETW par défaut peuvent ne pas être optimaux dans tous les cas. Ils peuvent même provoquer des problèmes tels que la perte d’événements dans certaines situations.  Vous pouvez utiliser l’onglet Mise en mémoire tampon pour configurer les paramètres de mémoire tampon ETW. Pour plus d’informations, consultez [Traçage d’événements](http://go.microsoft.com/fwlink/?LinkId=234579) et [Structure d’EVENT_TRACE_PROPERTIES](http://go.microsoft.com/fwlink/?LinkId=234580).
+ Le visualiseur concurrentiel utilise le suivi d’événements pour Windows (ETW) quand il collecte une trace.  ETW utilise plusieurs mémoires tampons quand il stocke des événements.  Les paramètres de mémoire tampon ETW par défaut peuvent ne pas être optimaux dans tous les cas. Ils peuvent même provoquer des problèmes tels que la perte d’événements dans certaines situations.  Vous pouvez utiliser l’onglet Mise en mémoire tampon pour configurer les paramètres de mémoire tampon ETW. Pour plus d’informations, consultez [Traçage d’événements](/windows/win32/etw/event-tracing-portal) et [Structure d’EVENT_TRACE_PROPERTIES](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties).
 
 ## <a name="filter"></a>Filtre
  Sous l’onglet Filtre, vous pouvez sélectionner le jeu d’événements collecté par le visualiseur concurrentiel. La sélection d’un sous-ensemble d’événements limite les types de données qui s’affichent dans les rapports, réduit la taille de chaque trace et accélère le traitement des traces.

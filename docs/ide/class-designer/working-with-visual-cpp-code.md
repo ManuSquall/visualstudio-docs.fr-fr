@@ -18,12 +18,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e59ee1305c0c482686505959aac7187902906086
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 75faa3e4d38f961c38b23a95765d6466e008714f
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748897"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919047"
 ---
 # <a name="work-with-c-code-in-class-designer"></a>Utiliser du C++ code dans Concepteur de classes
 
@@ -84,7 +84,7 @@ L’erreur que vous allez probablement voir en cas de problème de résolution d
 
 ### <a name="troubleshoot-other-error-messages"></a>Résoudre d’autres messages d’erreur
 
-Vous pouvez trouver de l'aide sur la résolution des erreurs et des avertissements dans les forums publics Microsoft Developer Network (MSDN). Consultez le [Forum du Concepteur de classes Visual Studio](http://go.microsoft.com/fwlink/?linkid=160754).
+Vous pouvez trouver de l'aide sur la résolution des erreurs et des avertissements dans les forums publics Microsoft Developer Network (MSDN). Consultez le [Forum du Concepteur de classes Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsclassdesigner).
 
 ## <a name="limitations-for-c-code-elements"></a>Limitations pour les éléments de code C++
 

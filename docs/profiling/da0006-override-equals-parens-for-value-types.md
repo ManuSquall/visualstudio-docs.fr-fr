@@ -1,5 +1,5 @@
 ---
-title: 'DA0006 : Remplacer Equals() pour les types valeur | Microsoft Docs'
+title: 'DA0006 : Remplacez Equals() pour les types valeur | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,21 +13,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cb4ac65442d9dbcb384ee3765f6fa827e3fa5d8
-ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
+ms.openlocfilehash: 805fa62b003559eb92c0531b0f4df7133cf0cdf5
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72306162"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911989"
 ---
 # <a name="da0006-override-equals-for-value-types"></a>DA0006 : Remplacer Equals() pour les types valeur
 
 |||
 |-|-|
 |ID de règle|DA0006|
-|Catégorie|Utilisation du .NET Framework|
+|Category|Utilisation du .NET Framework|
 |Méthodes de profilage|Échantillonnage|
-|`Message`|Remplacer Equals et l’opérateur d’égalité pour les types valeur.|
+|Message|Remplacer Equals et l’opérateur d’égalité pour les types valeur.|
 |Type de messages|Warning|
 
 ## <a name="cause"></a>Cause
@@ -36,7 +36,7 @@ ms.locfileid: "72306162"
 ## <a name="rule-description"></a>Description de la règle
  Pour les types valeur, l’implémentation héritée de Equals utilise la bibliothèque <xref:System.Reflection> et compare le contenu de tous les champs du type. Le processus de réflexion sollicite fortement les ressources informatiques et la comparaison de chaque champ à la recherche d'une égalité peut s'avérer inutile. Si des utilisateurs sont susceptibles de comparer ou de trier des instances, ou de les utiliser en tant que clés de table de hachage, votre type valeur doit implémenter Equals. Si votre langage de programmation prend en charge la surcharge des opérateurs, vous devez également fournir une implémentation des opérateurs d’égalité et d’inégalité.
 
- Pour plus d’informations sur la façon de remplacer Equals et les opérateurs d’égalité, consultez [Conseils pour l’implémentation de Equals et de l’opérateur d’égalité (==)](http://go.microsoft.com/fwlink/?LinkId=177818).
+ Pour plus d’informations sur la façon de remplacer Equals et les opérateurs d’égalité, consultez [Conseils pour l’implémentation de Equals et de l’opérateur d’égalité (==)](/dotnet/standard/design-guidelines/equality-operators).
 
 ## <a name="how-to-investigate-a-warning"></a>Comment rechercher la cause d’un avertissement
- Pour obtenir un exemple d’implémentation d’Equals et des opérateurs d’égalité, consultez la règle d’analyse du code [CA1815 : Remplacer Equals et l’opérateur d’égalité dans les types valeur](../code-quality/ca1815.md)
+ Pour obtenir un exemple d’implémentation de Equals et des opérateurs d’égalité, consultez la règle d’analyse du code [CA1815 : Remplacez Equals et l’opérateur égal à dans les types valeur](../code-quality/ca1815.md)

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2adf068fb1e0a668cb6382398601f6aca4743efa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bae6a7f5e95f2d853978cf1f8d9665a51ae80fd3
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62897285"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911374"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>Diagnostiquer des problèmes après le déploiement à l’aide d’IntelliTrace (C#, Visual Basic)
 
@@ -21,7 +21,7 @@ Si vous souhaitez utiliser IntelliTrace pour diagnostiquer les problèmes dans v
 
  Si vous utilisez Microsoft Monitoring Agent pour contrôler IntelliTrace, vous devez également configurer l’analyse des performances de l’application sur votre serveur web. Cela permet d’enregistrer des événements de diagnostic pendant l’exécution de votre application et d’enregistrer les événements dans un fichier journal IntelliTrace. Vous pouvez ensuite examiner les événements dans Visual Studio Enterprise (mais pas Professional ni Community), accéder au code où l’événement s’est produit, observer les valeurs enregistrées à cet instant donné, et avancer ou reculer dans le code qui a été exécuté. Après avoir identifié et corrigé le problème, répétez le cycle de génération, publication et surveillance de votre version, de sorte à pouvoir résoudre les éventuels problèmes futurs plus tôt et plus vite.
 
- ![Code, build, publication, surveillance, diagnostic, résolution](../debugger/media/ffr_cycle.png "FFR_Cycle")
+ ![Code, Build, mise en publication, surveillance, diagnostic, correction](../debugger/media/ffr_cycle.png "FFR_Cycle")
 
  **Vous aurez besoin de :**
 
@@ -31,7 +31,7 @@ Si vous souhaitez utiliser IntelliTrace pour diagnostiquer les problèmes dans v
 
 - Visual Studio Enterprise (mais pas Professional ni Community) pour vérifier les données de diagnostic et déboguer votre code avec IntelliTrace
 
-## <a name="SetUpBuild"></a> Étape 1 : Inclure les informations de build à votre version
+## <a name="SetUpBuild"></a> Étape 1 : Ajouter les informations de build à votre version
  Paramétrez votre processus de génération de façon à créer un manifeste de build (fichier *BuildInfo.config*) pour votre projet web et ajoutez ce manifeste à votre version. Ce manifeste contient des informations sur le projet, le contrôle de code source et le système de génération utilisés pour créer une build spécifique. Ces informations aident Visual Studio à trouver la source et les symboles correspondants après ouverture du journal IntelliTrace pour examiner les événements enregistrés.
 
 ### <a name="AutomatedBuild"></a> Créer le manifeste de build pour une génération automatique à l’aide de Team Foundation Server
@@ -42,26 +42,26 @@ Si vous souhaitez utiliser IntelliTrace pour diagnostiquer les problèmes dans v
 
 Visual Studio 2017 et les versions ultérieures n’incluent pas le fichier *BuildInfo.config* qui a été déconseillé, puis supprimé. Pour déboguer les applications web ASP.NET après le déploiement, utilisez l’une des méthodes suivantes :
 
-* Pour le déploiement vers Azure, utilisez [Application Insights](https://docs.microsoft.com/azure/application-insights/).
+* Pour le déploiement vers Azure, utilisez [Application Insights](/azure/application-insights/).
 
 * Si vous devez utiliser IntelliTrace, ouvrez le projet dans Visual Studio et chargez les fichiers de symboles à partir de la build correspondante. Vous pouvez charger des fichiers de symboles à partir de la fenêtre **Modules** ou en configurant des symboles dans **Outils** > **Options** > **Débogage**  > **Symboles**.
 
 #### <a name="TFS2013"></a> Team Foundation Server 2013
  Paramétrez votre pipeline de build de sorte à ajouter l’emplacement de la source, de la génération et des symboles au manifeste de build (fichier BuildInfo.config). Team Foundation Build crée automatiquement ce fichier et le place dans le dossier de sortie de votre projet.
 
-1. [Modifier votre pipeline de génération ou de créer un pipeline de build.](/azure/devops/pipelines/get-started-designer?view=vsts)
+1. [Modifiez votre pipeline de build ou créez un pipeline de Build.](/azure/devops/pipelines/get-started-designer?view=vsts)
 
      ![Afficher le pipeline de build dans TFS 2013](../debugger/media/ffr_tfs2013viewbuilddefinition.png "FFR_TFS2013ViewBuildDefinition")
 
 2. Choisissez le modèle par défaut (TfvcTemplate.12.xaml) ou votre propre modèle personnalisé.
 
-     ![Choisir le modèle de processus de build &#45; TFS 2013](../debugger/media/ffr_tfs2013buildprocesstemplate.png "FFR_TFS2013BuildProcessTemplate")
+     ![Choisir le modèle &#45; de processus de génération TFS 2013](../debugger/media/ffr_tfs2013buildprocesstemplate.png "FFR_TFS2013BuildProcessTemplate")
 
 3. Spécifiez l’emplacement où enregistrer le fichier de symboles (PDB) de sorte que votre source soit indexée automatiquement.
 
      Si vous utilisez un modèle personnalisé, vérifiez que le modèle a une activité pour indexer votre source. Vous ajouterez plus tard un argument MSBuild pour spécifier l’emplacement où enregistrer les fichiers de symboles.
 
-     ![Définir le chemin d’accès aux symboles dans le pipeline de build TFS 2013](../debugger/media/ffr_tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")
+     ![Configurer le chemin d’accès aux symboles dans le pipeline de build TFS 2013](../debugger/media/ffr_tfs2013builddefsymbolspath.png "FFR_TFS2013BuildDefSymbolsPath")
 
      Pour plus d’informations sur les symboles, consultez [Publier les données de symbole](/azure/devops/pipelines/tasks/build/index-sources-publish-symbols?view=vsts).
 
@@ -73,9 +73,9 @@ Visual Studio 2017 et les versions ultérieures n’incluent pas le fichier *Bui
 
 5. Si vous utilisez un modèle personnalisé, ajoutez l’argument MSBuild suivant pour spécifier l’emplacement où enregistrer le fichier de symboles :
 
-     **/p:BuildSymbolStorePath=**\<*chemin vers les symboles*>
+     **/p:BuildSymbolStorePath=** \<*chemin vers les symboles*>
 
-     ![Inclure les informations de serveur de build dans la définition de build TFS 2013](../debugger/media/ffr_tfs2013builddefincludeserverinfo.png "FFR_TFS2013BuildDefIncludeServerInfo")
+     ![Inclure les informations du serveur de builds dans la définition de build TFS 2013](../debugger/media/ffr_tfs2013builddefincludeserverinfo.png "FFR_TFS2013BuildDefIncludeServerInfo")
 
      Ajoutez ces lignes à votre fichier projet web (.csproj, .vbproj) :
 
@@ -89,7 +89,7 @@ Visual Studio 2017 et les versions ultérieures n’incluent pas le fichier *Bui
 
 6. Exécutez une nouvelle build.
 
-    Accédez à [étape 2 : Publier votre application](#DeployRelease)
+    Accédez à [étape 2 : publier votre application](#DeployRelease)
 
 #### <a name="TFS2012_2010"></a> Team Foundation Server 2012 ou 2010
  Procédez comme suit pour créer automatiquement le manifeste de build (fichier BuildInfo.config) pour votre projet et le placer dans le dossier de sortie de votre projet. Le fichier s’affiche avec le nom «*Nom_projet*.BuildInfo.config » dans le dossier de sortie, mais est renommé en « BuildInfo.config » dans le dossier de déploiement une fois l’application publiée.
@@ -110,11 +110,11 @@ Visual Studio 2017 et les versions ultérieures n’incluent pas le fichier *Bui
 
     - **/p:IncludeServerNameInBuildInfo=True**
 
-    - **/p:BuildSymbolStorePath=**\<*chemin vers les symboles*>
+    - **/p:BuildSymbolStorePath=** \<*chemin vers les symboles*>
 
 4. Exécutez une nouvelle build.
 
-    Accédez à [étape 2 : Publier votre application](#DeployRelease)
+    Accédez à [étape 2 : publier votre application](#DeployRelease)
 
 ### <a name="ManualBuild"></a> Créer le manifeste de build pour une génération manuelle à l’aide de Visual Studio
  Procédez comme suit pour créer automatiquement le manifeste de build (fichier BuildInfo.config) pour votre projet et le placer dans le dossier de sortie de votre projet. Le fichier s’affiche avec le nom «*Nom_projet*.BuildInfo.config » dans le dossier de sortie, mais est renommé en « BuildInfo.config » dans le dossier de déploiement une fois l’application publiée.
@@ -141,7 +141,7 @@ Visual Studio 2017 et les versions ultérieures n’incluent pas le fichier *Bui
 
 4. Exécutez une nouvelle build.
 
-    Accédez à [étape 2 : Publier votre application](#DeployRelease)
+    Accédez à [étape 2 : publier votre application](#DeployRelease)
 
 ### <a name="MSBuild"></a> Créer le manifeste de build pour une génération manuelle à l’aide de MSBuild.exe
  Ajoutez les arguments de build suivants quand vous exécutez une build :
@@ -150,66 +150,66 @@ Visual Studio 2017 et les versions ultérieures n’incluent pas le fichier *Bui
 
  **/p:IncludeServerNameInBuildInfo=True**
 
- **/p:BuildSymbolStorePath=**\<*chemin vers les symboles*>
+ **/p:BuildSymbolStorePath=** \<*chemin vers les symboles*>
 
-## <a name="DeployRelease"></a> Étape 2 : Publier votre application
+## <a name="DeployRelease"></a> Étape 2 : Déployer votre application
  Si vous utilisez le [package Web.Deploy](https://msdn.microsoft.com/library/dd394698.aspx) créé par votre processus de génération pour déployer votre application, le manifeste de build «*Nom_projet*.BuildInfo.config » est automatiquement renommé en « BuildInfo.config » et est placé dans le même dossier que le fichier Web.config de votre application sur votre serveur web.
 
  Si vous utilisez d’autres méthodes pour déployer votre application, assurez-vous que le manifeste de build «*Nom_projet*.BuildInfo.config » est renommé en « BuildInfo.config » et qu’il est placé dans le même dossier que le fichier Web.config de votre application sur le serveur web.
 
-## <a name="step-3-monitor-your-app"></a>Étape 3 : Surveiller votre application
+## <a name="step-3-monitor-your-app"></a>Étape 3 : Surveiller votre application
  Paramétrez la surveillance des performances de l’application sur votre serveur web de sorte à pouvoir surveiller si votre application rencontre des problèmes, enregistrer des événements de diagnostic et enregistrer ces événements dans un fichier journal IntelliTrace. Consultez [Surveiller votre version pour identifier les problèmes de déploiement](../debugger/using-the-intellitrace-stand-alone-collector.md).
 
-## <a name="InvestigateEvents"></a> Étape 4 : Identifier le problème
+## <a name="InvestigateEvents"></a> Étape 4 : Identifier le problème
  Vous devez installer Visual Studio Enterprise sur votre ordinateur de développement ou un autre ordinateur pour examiner les événements enregistrés et déboguer votre code à l’aide d’IntelliTrace. Vous pouvez aussi utiliser des outils comme CodeLens, les cartes de débogueur et les cartes de code pour vous aider à diagnostiquer le problème.
 
 ### <a name="open-the-intellitrace-log-and-matching-solution"></a>Ouvrir le journal IntelliTrace et la solution correspondante
 
 1. Ouvrez le journal IntelliTrace (fichier .iTrace) dans Visual Studio Enterprise. Si Visual Studio Enterprise est installé sur le même ordinateur, il vous suffit de double-cliquer sur le fichier.
 
-2. Choisissez **Ouvrir une solution** pour que Visual Studio ouvre automatiquement la solution ou le projet correspondant, si le projet n’a pas été généré dans le cadre d’une solution. [Q : Le journal IntelliTrace ne comporte pas les informations relatives à mon application déployée. Comment est-ce possible ? Que dois-je faire ?](#InvalidConfigFile)
+2. Choisissez **Ouvrir une solution** pour que Visual Studio ouvre automatiquement la solution ou le projet correspondant, si le projet n’a pas été généré dans le cadre d’une solution. [Q : le Journal IntelliTrace ne contient pas d’informations sur mon application déployée. Pourquoi cela s’est-il produit ? Que dois-je faire ?](#InvalidConfigFile)
 
      Visual Studio réserve automatiquement toutes les modifications en attente quand il ouvre la solution ou le projet correspondant. Pour obtenir plus de détails sur ce jeu de réservations, consultez la fenêtre **Sortie** ou **Team Explorer**.
 
      Avant d’effectuer des modifications, vérifiez que la source est correcte. Si vous utilisez la création de branche, vous travaillez peut-être dans une branche différente de celle dans laquelle Visual Studio trouve la source correspondante, comme votre branche de publication.
 
-     ![Ouvrir la solution à partir du fichier journal IntelliTrace](../debugger/media/ffr_itsummarypageopensolution.png "FFR_ITSummaryPageOpenSolution")
+     ![Ouvrir la solution à partir du Journal IntelliTrace](../debugger/media/ffr_itsummarypageopensolution.png "FFR_ITSummaryPageOpenSolution")
 
      Si un espace de travail existant est mappé à cette solution ou ce projet, Visual Studio le sélectionne pour y placer la source trouvée.
 
-     ![Ouvrir à partir du contrôle de code source vers l’espace de travail mappé](../debugger/media/ffr_openprojectfromsourcecontrol_mapped.png "FFR_OpenProjectFromSourceControl_Mapped")
+     ![Ouvrir depuis le contrôle de code source vers l’espace de travail mappé](../debugger/media/ffr_openprojectfromsourcecontrol_mapped.png "FFR_OpenProjectFromSourceControl_Mapped")
 
      Sinon, choisissez un autre espace de travail ou créez-en un. Visual Studio mappera la branche entière à cet espace de travail.
 
-     ![Ouvrir à partir du contrôle de code source &#45; créer un espace de travail](../debugger/media/ffr_openprojectfromsourcecontrol_createnewworkspace.png "FFR_OpenProjectFromSourceControl_CreateNewWorkspace")
+     ![Ouvrir à partir du &#45; contrôle de code source créer un nouvel espace de travail](../debugger/media/ffr_openprojectfromsourcecontrol_createnewworkspace.png "FFR_OpenProjectFromSourceControl_CreateNewWorkspace")
 
      Pour créer un espace de travail avec des mappages spécifiques ou un nom qui n’est pas celui de votre ordinateur, choisissez **Gérer**.
 
-     [Q : Pourquoi Visual Studio indique-t-il que l’espace de travail que j’ai sélectionné est inéligible ?](#IneligibleWorkspace)
+     [Q : Pourquoi Visual Studio indique que l’espace de travail que j’ai sélectionné est inéligible ?](#IneligibleWorkspace)
 
-     [Q : Pourquoi ne puis-je pas continuer jusqu’à ce que je choisisse une collection d’équipe ou une autre collection ?](#ChooseTeamProject)
+     [Q : Pourquoi je ne peux pas continuer jusqu’à ce que je choisisse une collection d’équipe ou une autre collection ?](#ChooseTeamProject)
 
 ### <a name="diagnose-a-performance-problem"></a>Diagnostiquer un problème de performance
 
-1. Sous **Violations de performances**, examinez les événements de performance enregistrés, leurs durées totales d’exécution et les autres informations associées. Approfondissez ensuite les méthodes appelées pendant un événement de performance spécifique.
+1. Sous **Violations de performances**, examinez les événements de performance enregistrés, leurs durées totales d’exécution et autres informations associées. Approfondissez ensuite les méthodes appelées pendant un événement de performance spécifique.
 
-     ![Afficher les détails de l’événement de performance](../debugger/media/ffr_itsummarypageperformance.png "FFR_ITSummaryPagePerformance")
+     ![Afficher les détails des événements de performances](../debugger/media/ffr_itsummarypageperformance.png "FFR_ITSummaryPagePerformance")
 
      Vous pouvez aussi uniquement double-cliquer sur l’événement.
 
 2. Dans la page d’événement, examinez les durées d’exécution de ces appels. Recherchez un appel lent dans l’arborescence d’exécution.
 
-     Les appels les plus lents s’affichent dans leur propre section quand vous avez plusieurs appels, imbriqués ou non.
+     Les appels les plus lents s’affichent dans leur propre section lorsque vous avez plusieurs appels, imbriqués ou non.
 
      Développez cet appel pour examiner les appels imbriqués et les valeurs qui ont été enregistrés à ce moment précis. Démarrez ensuite le débogage à partir de cet appel.
 
-     ![Démarrer le débogage à partir de l’appel de méthode](../debugger/media/ffr_itsummarypageperformancemethodscalled.png "FFR_ITSummaryPagePerformanceMethodsCalled")
+     ![Démarrer le débogage à partir d’un appel de méthode](../debugger/media/ffr_itsummarypageperformancemethodscalled.png "FFR_ITSummaryPagePerformanceMethodsCalled")
 
      Vous pouvez aussi simplement double-cliquer sur l’appel.
 
      Si la méthode se trouve dans votre code d’application, Visual Studio y accède.
 
-     ![Accéder au code d’application à partir de l’événement de performance](../debugger/media/ffr_itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")
+     ![Accéder au code de l’application à partir de l’événement de performances](../debugger/media/ffr_itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")
 
      Vous pouvez maintenant examiner d’autres valeurs enregistrées, la pile des appels, parcourir votre code ou utiliser la fenêtre **IntelliTrace** pour [remonter ou avancer « dans le temps » entre d’autres méthodes](../debugger/intellitrace.md) appelées pendant cet événement de performance.
 
@@ -221,13 +221,13 @@ Visual Studio 2017 et les versions ultérieures n’incluent pas le fichier *Bui
 
 1. Sous **Données d’exception**, examinez les événements d’exception enregistrés, leurs types, leurs messages et à quel moment les exceptions se sont produites. Pour approfondir le code, démarrez le débogage à partir de l’événement le plus récent d’un groupe d’exceptions.
 
-     ![Démarrer le débogage à partir de l’événement d’exception](../debugger/media/ffr_itsummarypageexception.png "FFR_ITSummaryPageException")
+     ![Démarrer le débogage à partir d’un événement d’exception](../debugger/media/ffr_itsummarypageexception.png "FFR_ITSummaryPageException")
 
      Vous pouvez aussi uniquement double-cliquer sur l’événement.
 
      Si l’exception s’est produite dans votre code d’application, Visual Studio accède à l’emplacement où l’exception s’est produite.
 
-     ![Accéder au code d’application à partir d’un événement d’exception](../debugger/media/ffr_itsummarypageexceptiongotocode.png "FFR_ITSummaryPageExceptionGoToCode")
+     ![Accéder au code de l’application à partir d’un événement d’exception](../debugger/media/ffr_itsummarypageexceptiongotocode.png "FFR_ITSummaryPageExceptionGoToCode")
 
      Vous pouvez maintenant examiner d’autres valeurs enregistrées, la pile des appels, ou utiliser la fenêtre **IntelliTrace** pour [remonter ou avancer « dans le temps » entre les autres événements enregistrés](../debugger/intellitrace.md), le code connexe et les valeurs enregistrées à ces moments précis.
 
@@ -237,22 +237,22 @@ Visual Studio 2017 et les versions ultérieures n’incluent pas le fichier *Bui
 
 - [Obtenez plus d’informations sur ce code](../ide/find-code-changes-and-other-history-with-codelens.md). Pour trouver des références à ce code, son historique de modification, les bogues associés, les éléments de travail, les révisions du code ou les tests unitaires, le tout sans quitter l’éditeur, utilisez les indicateurs CodeLens de l’éditeur.
 
-     ![CodeLens &#45; Afficher les références à ce code](../debugger/media/ffr_itsummarypageperformancecodelensreferences.png "FFR_ITSummaryPagePerformanceCodeLensReferences")
+     ![CodeLens &#45; afficher les références à ce code](../debugger/media/ffr_itsummarypageperformancecodelensreferences.png "FFR_ITSummaryPagePerformanceCodeLensReferences")
 
-     ![CodeLens &#45; Afficher l’historique des modifications pour ce code](../debugger/media/ffr_itsummarypageperformancecodelensauthors.png "FFR_ITSummaryPagePerformanceCodeLensAuthors")
+     ![CodeLens &#45; afficher l’historique des modifications pour ce code](../debugger/media/ffr_itsummarypageperformancecodelensauthors.png "FFR_ITSummaryPagePerformanceCodeLensAuthors")
 
 - [Mappez votre emplacement dans le code pendant le débogage.](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md) Pour suivre visuellement les méthodes appelées pendant votre session de débogage, mappez la pile des appels.
 
-     ![Mapper la pile des appels tout en déboguant](../debugger/media/ffr_itsummarypageperformancedebuggermap.png "FFR_ITSummaryPagePerformanceDebuggerMap")
+     ![Mapper la pile des appels pendant le débogage](../debugger/media/ffr_itsummarypageperformancedebuggermap.png "FFR_ITSummaryPagePerformanceDebuggerMap")
 
 ### <a name="FAQ"></a> Q et R
 
-#### <a name="WhyInclude"></a> Q : Pourquoi ajouter des informations sur mon projet, le contrôle de code source, la build et les symboles à ma version ?
+#### <a name="WhyInclude"></a>Q : Pourquoi ajouter des informations sur mon projet, le contrôle de code source, la build et les symboles à ma version ?
  Visual Studio utilise ces informations pour trouver la solution et la source correspondant à la version que vous tentez de déboguer. Après avoir ouvert le journal IntelliTrace et sélectionné un événement pour démarrer le débogage, Visual Studio utilise des symboles pour trouver et vous indiquer le code où l’événement s’est produit. Vous pouvez alors examiner les valeurs enregistrées et avancer ou reculer dans l’exécution de votre code.
 
  Si vous utilisez TFS et que ces informations ne figurent pas dans le manifeste de build (fichier BuildInfo.config), Visual Studio recherche la source et les symboles correspondants sur votre TFS actuellement connecté. Si Visual Studio ne peut pas trouver le TFS correct ou la source correspondante, vous êtes invité à choisir un autre TFS.
 
-#### <a name="InvalidConfigFile"></a> Q : Le journal IntelliTrace ne comporte pas les informations relatives à mon application déployée. Comment est-ce possible ? Que dois-je faire ?
+#### <a name="InvalidConfigFile"></a>Q : Le journal IntelliTrace ne comporte pas les informations relatives à mon application déployée. Comment est-ce possible ? Que dois-je faire ?
  Cela peut se produire quand vous déployez à partir de votre ordinateur de développement ou que vous n’êtes pas connecté à TFS pendant le déploiement.
 
 1. Accédez au dossier de déploiement de votre projet.
@@ -263,7 +263,7 @@ Visual Studio 2017 et les versions ultérieures n’incluent pas le fichier *Bui
 
 - **ProjectName**
 
-   Nom de votre projet dans Visual Studio. Exemple :
+   Nom de votre projet dans Visual Studio. Exemple :
 
   ```xml
   <ProjectName>FabrikamFiber.Extranet.Web</ProjectName>
@@ -275,13 +275,13 @@ Visual Studio 2017 et les versions ultérieures n’incluent pas le fichier *Bui
 
   - **TFS**
 
-    - **ProjectCollectionUri**: L’URI de votre collection de Team Foundation Server et project
+    - **ProjectCollectionUri**: URI de votre serveur Team Foundation Server et de la collection de projets
 
-    - **ProjectItemSpec**: Le chemin d’accès au fichier de projet de votre application (.csproj ou .vbproj)
+    - **ProjectItemSpec**: chemin d’accès au fichier projet de votre application (.csproj ou .vbproj)
 
-    - **ProjectVersionSpec**: La version de votre projet
+    - **ProjectVersionSpec**: version de votre projet
 
-      Exemple :
+      Exemple :
 
     ```xml
     <SourceControl type="TFS">
@@ -295,15 +295,15 @@ Visual Studio 2017 et les versions ultérieures n’incluent pas le fichier *Bui
 
   - **Git**
 
-    - **GitSourceControl**: L’emplacement de la **GitSourceControl** schéma
+    - **GitSourceControl**: emplacement du schéma **GitSourceControl**
 
-    - **RepositoryUrl**: L’URI pour votre Team Foundation Server, une collection de projets et un référentiel Git
+    - **RepositoryUrl**: URI de votre serveur Team Foundation Server, de la collection de projets et du référentiel Git
 
-    - **ProjectPath**: Le chemin d’accès au fichier de projet de votre application (.csproj ou .vbproj)
+    - **ProjectPath**: chemin d’accès au fichier projet de votre application (.csproj ou .vbproj)
 
-    - **CommitId**: Id de votre validation
+    - **CommitId**: ID de votre validation
 
-      Exemple :
+      Exemple :
 
     ```xml
     <SourceControl type="Git">
@@ -319,17 +319,17 @@ Visual Studio 2017 et les versions ultérieures n’incluent pas le fichier *Bui
 
    Informations sur votre système de génération, `"TeamBuild"` ou `"MSBuild"`, et les propriétés requises suivantes :
 
-  - **BuildLabel** (pour TeamBuild) : Le nom de la build et un nombre. Cette étiquette est également utilisée comme nom de l’événement de déploiement. Pour plus d’informations sur les numéros de build, consultez [Utiliser des numéros de build pour attribuer des noms pertinents aux builds terminées](/azure/devops/pipelines/build/options?view=vsts).
+  - **BuildLabel** (pour TeamBuild) : nom et numéro de votre build. Cette étiquette est également utilisée comme nom de l’événement de déploiement. Pour plus d’informations sur les numéros de build, consultez [Utiliser des numéros de build pour attribuer des noms pertinents aux builds terminées](/azure/devops/pipelines/build/options?view=vsts).
 
-  - **SymbolPath** (recommandé) : La liste des URI vos emplacements de symboles (fichier PDB) séparés par des points-virgules. Les URI peuvent être des URL ou des chemins d’accès réseau (UNC). Il est alors plus facile pour Visual Studio de rechercher les symboles correspondants pour vous aider avec le débogage.
+  - **SymbolPath** (recommandé) : liste des URI des emplacements de vos symboles (fichier PDB), séparés par des points-virgules. Les URI peuvent être des URL ou des chemins d’accès réseau (UNC). Il est alors plus facile pour Visual Studio de rechercher les symboles correspondants pour vous aider avec le débogage.
 
-  - **BuildReportUrl** (pour TeamBuild) : L’emplacement du rapport de build dans TFS
+  - **BuildReportUrl** (pour TeamBuild) : emplacement du rapport de la build dans TFS
 
-  - **BuildId** (pour TeamBuild) : URI pour les détails de build dans TFS. Cet URI est également utilisé comme ID de l’événement de déploiement. Cet ID doit être unique si vous n’utilisez pas TeamBuild.
+  - **BuildId** (pour TeamBuild) : URI des détails de votre build dans TFS. Cet URI est également utilisé comme ID de l’événement de déploiement. Cet ID doit être unique si vous n’utilisez pas TeamBuild.
 
-  - **BuiltSolution**: Le chemin d’accès au fichier de solution Visual Studio utilise pour rechercher et ouvrir la solution correspondante. Contenu de la propriété MSBuild **SolutionPath** .
+  - **BuiltSolution**: chemin d’accès au fichier de la solution, utilisé par Visual Studio pour rechercher et ouvrir la solution correspondante. Contenu de la propriété MSBuild **SolutionPath** .
 
-    Exemple :
+    Exemple :
 
   - **TFS**
 
@@ -356,17 +356,17 @@ Visual Studio 2017 et les versions ultérieures n’incluent pas le fichier *Bui
     </Build>
     ```
 
-#### <a name="IneligibleWorkspace"></a> Q : Pourquoi Visual Studio indique-t-il que l’espace de travail que j’ai sélectionné est inéligible ?
- **R :** L’espace de travail sélectionné n’a aucun mappage entre le dossier de contrôle de code source et un dossier local. Pour créer un mappage de cet espace de travail, choisissez **Gérer**. Sinon, choisissez un espace de travail déjà mappé ou créez-en un.
+#### <a name="IneligibleWorkspace"></a>Q : Pourquoi Visual Studio indique que l’espace de travail que j’ai sélectionné est inéligible ?
+ **R :** L’espace de travail sélectionné ne possède aucun mappage entre le dossier de contrôle de code source et un dossier local. Pour créer un mappage de cet espace de travail, choisissez **Gérer**. Sinon, choisissez un espace de travail déjà mappé ou créez-en un.
 
  ![Ouvrir à partir du contrôle de code source sans espace de travail mappé](../debugger/media/ffr_openprojectfromsourcecontrol_notmapped.png "FFR_OpenProjectFromSourceControl_NotMapped")
 
-#### <a name="ChooseTeamProject"></a> Q : Pourquoi ne puis-je pas continuer jusqu’à ce que je choisisse une collection d’équipe ou une autre collection ?
- **R :** Cela peut se produire pour l’une des raisons suivantes :
+#### <a name="ChooseTeamProject"></a>Q : Pourquoi je ne peux pas continuer jusqu’à ce que je choisisse une collection d’équipe ou une autre collection ?
+ **R :** Cela peut se produire pour l’une des raisons suivantes :
 
 - Visual Studio n’est pas connecté à TFS.
 
-     ![Ouvrir à partir du contrôle de code source &#45; non connecté](../debugger/media/ffr_openprojectfromsourcecontrol_notconnected.png "FFR_OpenProjectFromSourceControl_NotConnected")
+     ![Ouvrir à partir du &#45; contrôle de code source non connecté](../debugger/media/ffr_openprojectfromsourcecontrol_notconnected.png "FFR_OpenProjectFromSourceControl_NotConnected")
 
 - Visual Studio n’a pas trouvé la solution ou le projet dans votre collection d’équipe actuelle.
 
@@ -376,12 +376,12 @@ Visual Studio 2017 et les versions ultérieures n’incluent pas le fichier *Bui
 
      Il est possible que le TFS spécifié ne dispose plus de la source correspondante ou qu’il n’existe plus, par exemple si vous avez migré vers un nouveau TFS. Si le TFS spécifié n’existe pas, Visual Studio peut expirer après environ une minute et vous inviter à vous connecter à une autre collection. Pour continuer, connectez-vous au serveur TFS approprié.
 
-     ![Ouvrir à partir du contrôle de code source &#45; migré](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")
+     ![Ouvrir à partir du &#45; contrôle de code source migré](../debugger/media/ffr_openprojectfromsourcecontrol_migrated.png "FFR_OpenProjectFromSourceControl_Migrated")
 
-#### <a name="WhatWorkspace"></a> Q : Qu’est un espace de travail ?
- **R :** Votre [espace de travail stocke une copie de la source](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts) pour que vous puissiez le développer et le tester séparément avant d’archiver votre travail. Si vous ne disposez pas déjà d’un espace de travail spécialement mappé à la solution ou au projet trouvé, Visual Studio vous invite à choisir un espace de travail disponible ou à en créer un avec le nom de votre ordinateur comme nom d’espace de travail par défaut.
+#### <a name="WhatWorkspace"></a> Q : Qu’est-ce qu’un espace de travail ?
+ **R :** Votre [espace de travail stocke une copie de la source](/azure/devops/repos/tfvc/create-work-workspaces?view=vsts) pour que vous puissiez le développer et le tester séparément avant d’archiver votre travail. Si vous ne disposez pas déjà d’un espace de travail spécialement mappé à la solution ou au projet trouvé, Visual Studio vous invite à choisir un espace de travail disponible ou à en créer un avec le nom de votre ordinateur comme nom d’espace de travail par défaut.
 
-#### <a name="UntrustedSymbols"></a> Q : Pourquoi est-ce-que je reçois ce message sur les symboles non fiables ?
- ![Déboguer avec un chemin d’accès aux symboles non fiable ?](../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")
+#### <a name="UntrustedSymbols"></a>Q : Pourquoi je reçois ce message sur les symboles non fiables ?
+ ![Déboguer avec un chemin d’accès aux symboles non fiables ?](../debugger/media/ffr_ituntrustedsymbolpaths.png "FFR_ITUntrustedSymbolPaths")
 
- **R :** Ce message apparaît quand le chemin d’accès aux symboles dans le fichier manifeste de la build (\<*Nom_projet*>BuildInfo.config) n’est pas inclus dans la liste des chemins d’accès aux symboles approuvés. Vous pouvez ajouter le chemin d’accès à la liste des chemins de symboles dans les options du débogueur.
+ **R :** Ce message apparaît quand le chemin des symboles dans le fichier manifeste de la build (\<*Nom_projet*>.BuildInfo.config) n’est pas inclus dans la liste des chemins des symboles approuvés. Vous pouvez ajouter le chemin d’accès à la liste des chemins de symboles dans les options du débogueur.
