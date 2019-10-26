@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cb2f9d9319a943182c8256256ca6ea7334c532d1
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
+ms.openlocfilehash: 53483979600093133c2b059d9ea921cdb8a08ab1
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72349485"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911627"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger-using-the-natvis-framework"></a>Créer des vues personnalisées d' C++ objets dans le débogueur à l’aide de l’infrastructure Natvis
 
@@ -30,15 +30,15 @@ Natvis remplace le fichier *autoexp. dat* dans les versions antérieures de Visu
 
 Vous utilisez l’infrastructure Natvis pour créer des règles de visualisation pour les types que vous créez, afin que les développeurs puissent les voir plus facilement pendant le débogage.
 
-Par exemple, l’illustration suivante montre une variable de type [Windows :: UI :: XAML :: Controls :: TextBox](http://go.microsoft.com/fwlink/?LinkId=258422) dans une fenêtre du débogueur sans aucune visualisation personnalisée appliquée.
+Par exemple, l’illustration suivante montre une variable de type [Windows :: UI :: XAML :: Controls :: TextBox](/uwp/api/Windows.UI.Xaml.Controls.TextBox) dans une fenêtre du débogueur sans aucune visualisation personnalisée appliquée.
 
-(../debugger/media/dbg_natvis_textbox_default.png "Visualisation par défaut") de la zone de texte ![visualisation par défaut de TextBox]
+![Visualisation par défaut de la zone de texte](../debugger/media/dbg_natvis_textbox_default.png "Visualisation TextBox par défaut")
 
 La ligne en surbrillance montre la propriété `Text` de la classe `TextBox` . La hiérarchie de classes complexe rend difficile la recherche de cette propriété. Le débogueur ne sait pas comment interpréter le type de chaîne personnalisé, de sorte que vous ne pouvez pas voir la chaîne contenue dans la zone de texte.
 
 La même `TextBox` semble nettement plus simple dans la fenêtre de variables lorsque des règles de visualiseur personnalisé Natvis sont appliquées. Les membres importants de la classe apparaissent ensemble et le débogueur affiche la valeur de chaîne sous-jacente du type de chaîne personnalisé.
 
-![Données TextBox utilisant]des données de zone de texte du visualiseur(../debugger/media/dbg_natvis_textbox_visualizer.png "à l’aide du visualiseur")
+![Données de zone de texte à l’aide du visualiseur](../debugger/media/dbg_natvis_textbox_visualizer.png "Données TextBox utilisant un visualiseur")
 
 ## <a name="BKMK_Using_Natvis_files"></a>Utiliser des fichiers. natvis C++ dans des projets
 
@@ -138,7 +138,7 @@ Les visualisations Natvis utilisent des expressions C++ pour spécifier les él�
 
 ## <a name="natvis-views"></a>Vues Natvis
 
-Vous pouvez définir différentes vues Natvis pour afficher les types de différentes façons. Par exemple, voici une visualisation de `std::vector` qui définit une vue simplifiée nommée `simple`. Les éléments `DisplayString` et `ArrayItems` s’affichent dans la vue par défaut et la vue `simple`, tandis que les éléments `[size]` et `[capacity]` ne s’affichent pas dans la vue `simple`.
+Vous pouvez définir différentes vues Natvis pour afficher les types de différentes façons. Par exemple, voici une visualisation de `std::vector` qui définit une vue simplifiée nommée `simple`. La `DisplayString` et les éléments `ArrayItems` s’affichent dans la vue par défaut et la vue `simple`, tandis que les `[size]` et les éléments de `[capacity]` ne s’affichent pas dans la vue `simple`.
 
 ```xml
 <Type Name="std::vector&lt;*&gt;">
@@ -156,7 +156,7 @@ Vous pouvez définir différentes vues Natvis pour afficher les types de différ
 
 Dans la fenêtre **Espion** , utilisez le spécificateur de format **, View** pour spécifier une autre vue. La vue simple apparaît sous la forme **vec, View (simple)** :
 
-![Fenêtre Espion avec une vue simple](../debugger/media/watch-simpleview.png "fenêtre Espion avec affichage simple")
+![Fenêtre Espion avec affichage simple](../debugger/media/watch-simpleview.png "Fenêtre Espion avec vue simple")
 
 ## <a name="BKMK_Diagnosing_Natvis_errors"></a>Erreurs Natvis
 
@@ -164,7 +164,7 @@ Quand le débogueur rencontre des erreurs dans une entrée de visualisation, il 
 
 **Pour activer les diagnostics Natvis :**
 
-- Sous **outils** > **options** (ou **débogage**@no__t-**4 options**) **> débogage** > **fenêtre Sortie**, définissez **Natvis diagnostic messages (C++ uniquement)** sur **erreur**, **Avertissement** , ou **Verbose**, puis sélectionnez **OK**.
+- Sous **outils** > **options** (ou **options**de > de **débogage** ) > **débogage** > **fenêtre Sortie**, définissez **Natvis diagnosticC++ messages (uniquement)** sur **erreur**, **Avertissement** , ou **Verbose**, puis sélectionnez **OK**.
 
 Les erreurs s’affichent dans la fenêtre **sortie** .
 
@@ -185,7 +185,7 @@ L’élément `AutoVisualizer` peut avoir des enfants de [type](#BKMK_Type), [HR
 
 ### <a name="BKMK_Type"></a> Type, élément
 
-Un @no__t de base-0 ressemble à cet exemple :
+Un `Type` de base ressemble à cet exemple :
 
 ```xml
 <Type Name="[fully qualified type name]">
@@ -256,7 +256,7 @@ L’exemple suivant analyse d’abord l’entrée qui correspond à la biblioth�
 ```
 
 ### <a name="optional-attribute"></a>Attribut Optional
-Vous pouvez placer un attribut `Optional` sur n’importe quel nœud. Si une sous-expression à l’intérieur d’un nœud facultatif ne parvient pas à être analysée, le débogueur ignore ce nœud, mais applique le reste des règles `Type`. Dans le type suivant, `[State]` est obligatoire, mais `[Exception]` est facultatif.  Si `MyNamespace::MyClass` contient un champ nommé _ @ no__t-1, le nœud `[State]` et le nœud `[Exception]` s’affichent, mais s’il n’y a pas de champ `_M_exceptionHolder`, seul le nœud `[State]` s’affiche.
+Vous pouvez placer un attribut `Optional` sur n’importe quel nœud. Si une sous-expression à l’intérieur d’un nœud facultatif ne parvient pas à être analysée, le débogueur ignore ce nœud, mais applique le reste des règles `Type`. Dans le type suivant, `[State]` est obligatoire, mais `[Exception]` est facultatif.  Si `MyNamespace::MyClass` a un champ nommé _`M_exceptionHolder`, le nœud `[State]` et le nœud `[Exception]` apparaissent, mais s’il n’y a aucun champ `_M_exceptionHolder`, seul le nœud `[State]` s’affiche.
 
 ```xml
 <Type Name="MyNamespace::MyClass">
@@ -271,7 +271,7 @@ Vous pouvez placer un attribut `Optional` sur n’importe quel nœud. Si une sou
 
 L’attribut facultatif `Condition` est disponible pour de nombreux éléments de visualisation et spécifie quand utiliser une règle de visualisation. Si l’expression à l’intérieur de l’attribut condition correspond à `false`, la règle de visualisation ne s’applique pas. Si elle prend la valeur `true`, ou s’il n’existe aucun attribut `Condition`, la visualisation s’applique. Vous pouvez utiliser cet attribut pour la logique if-else dans les entrées de visualisation.
 
-Par exemple, la visualisation suivante comporte deux éléments `DisplayString` pour un type de pointeur intelligent. Lorsque le membre `_Myptr` est vide, la condition du premier élément `DisplayString` est résolue en `true`, afin que le formulaire s’affiche. Lorsque le membre `_Myptr` n’est pas vide, la condition prend la valeur `false`, et le deuxième élément `DisplayString` s’affiche.
+Par exemple, la visualisation suivante comporte deux éléments `DisplayString` pour un type de pointeur intelligent. Lorsque le membre `_Myptr` est vide, la condition du premier élément `DisplayString` se résout en `true`, afin que le formulaire s’affiche. Lorsque le membre `_Myptr` n’est pas vide, la condition prend la valeur `false`et le deuxième élément `DisplayString` s’affiche.
 
 ```xml
 <Type Name="std::auto_ptr&lt;*&gt;">
@@ -285,7 +285,7 @@ Par exemple, la visualisation suivante comporte deux éléments `DisplayString` 
 
 ### <a name="includeview-and-excludeview-attributes"></a>Attributs IncludeView et ExcludeView
 
-Les attributs `IncludeView` et `ExcludeView` spécifient les éléments à afficher ou à ne pas afficher dans des vues spécifiques. Par exemple, dans la spécification Natvis suivante de `std::vector`, la vue `simple` n’affiche pas les éléments `[size]` et `[capacity]`.
+Les attributs `IncludeView` et `ExcludeView` spécifient les éléments à afficher ou à ne pas afficher dans des vues spécifiques. Par exemple, dans la spécification Natvis suivante de `std::vector`, la vue de `simple` n’affiche pas les éléments `[size]` et `[capacity]`.
 
 ```xml
 <Type Name="std::vector&lt;*&gt;">
@@ -331,7 +331,7 @@ L’élément `DisplayString` spécifie une chaîne à afficher en tant que vale
 
 Signifie que les variables de type `CPoint` s’affichent comme dans l’illustration suivante :
 
- ![Utiliser un élément DisplayString](../debugger/media/dbg_natvis_cpoint_displaystring.png "utiliser un élément DisplayString")
+ ![Utiliser un élément DisplayString](../debugger/media/dbg_natvis_cpoint_displaystring.png "Utiliser un élément DisplayString")
 
 Dans l’expression `DisplayString`, `x` et `y`, qui sont membres de `CPoint`, sont placés entre accolades, donc leurs valeurs sont évaluées. L’exemple montre également comment vous pouvez échapper une accolade en utilisant des accolades doubles (`{{` ou `}}`).
 
@@ -350,7 +350,7 @@ L’élément `StringView` définit une valeur que le débogueur peut envoyer au
 
 L’objet `CStringT` s’affiche dans une fenêtre de variables comme dans l’exemple suivant :
 
-Élément ![DisplayString](../debugger/media/dbg_natvis_displaystring_cstringt.png "CStringT DisplayString") , élément
+![CStringT DisplayString, élément](../debugger/media/dbg_natvis_displaystring_cstringt.png "Élément CStringT DisplayString")
 
 L’ajout d’un élément `StringView` indique au débogueur qu’il peut afficher la valeur sous la forme d’une visualisation de texte.
 
@@ -363,7 +363,7 @@ L’ajout d’un élément `StringView` indique au débogueur qu’il peut affic
 
 Pendant le débogage, vous pouvez sélectionner l’icône de loupe en regard de la variable, puis sélectionner **visualiseur de texte** pour afficher la chaîne vers laquelle **m_pszData** pointe.
 
- ![Données CStringT avec les données StringView Visualizer](../debugger/media/dbg_natvis_stringview_cstringt.png "CStringT avec StringView Visualizer")
+ ![Données CStringT avec le visualiseur StringView](../debugger/media/dbg_natvis_stringview_cstringt.png "Données CStringT avec visualiseur StringView")
 
 L’expression `{m_pszData,su}` comprend un C++ spécificateur de format **su**pour afficher la valeur sous forme de chaîne Unicode. Pour plus d’informations, consultez [spécificateurs de C++format dans ](../debugger/format-specifiers-in-cpp.md).
 
@@ -391,7 +391,7 @@ Le nœud `Expand` facultatif personnalise les enfants d’un type visualisé qua
 
 Dans la fenêtre du débogueur, le type `CRect` ressemble à cet exemple :
 
-![CRect avec]expansion d’élément élément(../debugger/media/dbg_natvis_expand_item_crect1.png "CRect avec expansion d’élément item")
+![CRect avec expansion d’élément Item](../debugger/media/dbg_natvis_expand_item_crect1.png "CRect avec expansion d'élément Item")
 
 Le débogueur évalue les expressions spécifiées dans les éléments `Width` et `Height`, et affiche les valeurs dans la colonne **valeur** de la fenêtre de variables.
 
@@ -419,7 +419,7 @@ Utilisez le nœud `ArrayItems` pour que le débogueur Visual Studio interprète 
 
 Un `std::vector` montre ses éléments individuels quand il est développé dans la fenêtre de variables :
 
-![std :: Vector avec ArrayItems expansion](../debugger/media/dbg_natvis_expand_arrayitems_stdvector.png "std :: Vector à l’aide de l’expansion ArrayItems")
+![std :: Vector avec expansion ArrayItems](../debugger/media/dbg_natvis_expand_arrayitems_stdvector.png "std::vector utilisant une expansion ArrayItems")
 
 Le nœud `ArrayItems` doit avoir :
 
@@ -429,7 +429,7 @@ Le nœud `ArrayItems` doit avoir :
 La valeur par défaut de la limite inférieure du tableau est 0. Pour remplacer la valeur, utilisez un élément `LowerBound`. Les fichiers *. natvis* fournis avec Visual Studio contiennent des exemples.
 
 >[!NOTE]
->Vous pouvez utiliser l’opérateur `[]`, par exemple `vector[i]`, avec une visualisation de tableau unidimensionnel qui utilise `ArrayItems`, même si le type lui-même (par exemple, `CATLArray`) n’autorise pas cet opérateur.
+>Vous pouvez utiliser l’opérateur `[]`, par exemple `vector[i]`, avec n’importe quelle visualisation de tableau unidimensionnel qui utilise `ArrayItems`, même si le type lui-même (par exemple `CATLArray`) n’autorise pas cet opérateur.
 
 Vous pouvez également spécifier des tableaux multidimensionnels. Dans ce cas, le débogueur a besoin d’un peu plus d’informations pour afficher correctement les éléments enfants :
 
@@ -454,7 +454,7 @@ Vous pouvez également spécifier des tableaux multidimensionnels. Dans ce cas, 
 
 Voici à quoi ressemble un objet `Concurrency::array` à deux dimensions dans la fenêtre du débogueur :
 
-![Tableau à deux dimensions avec](../debugger/media/dbg_natvis_expand_arrayitems_2d.png "tableau à deux dimensions d’expansion ArrayItems avec expansion ArrayItems")
+![Tableau à deux dimensions avec expansion ArrayItems](../debugger/media/dbg_natvis_expand_arrayitems_2d.png "Tableau à deux dimensions avec expansion ArrayItems")
 
 #### <a name="BKMK_IndexListItems_expansion"></a> Expansion d'IndexListItems
 
@@ -476,7 +476,7 @@ Vous pouvez utiliser l’expansion `ArrayItems` uniquement si les éléments du 
 La seule différence entre `ArrayItems` et `IndexListItems` est le `ValueNode`, qui attend l’expression complète de<sup>l’élément i</sup> avec le paramètre `$i` implicite.
 
 >[!NOTE]
->Vous pouvez utiliser l’opérateur `[]`, par exemple `vector[i]`, avec une visualisation de tableau unidimensionnel qui utilise `IndexListItems`, même si le type lui-même (par exemple, `CATLArray`) n’autorise pas cet opérateur.
+>Vous pouvez utiliser l’opérateur `[]`, par exemple `vector[i]`, avec n’importe quelle visualisation de tableau unidimensionnel qui utilise `IndexListItems`, même si le type lui-même (par exemple `CATLArray`) n’autorise pas cet opérateur.
 
 #### <a name="BKMK_LinkedListItems_expansion"></a> Expansion de LinkedListItems
 
@@ -580,9 +580,9 @@ La syntaxe est similaire au nœud `LinkedListItems`. `LeftPointer`, `RightPointe
 #### <a name="BKMK_ExpandedItem_expansion"></a> Expansion d'ExpandedItem
  L’élément `ExpandedItem` génère une vue enfant agrégée en affichant les propriétés des classes de base ou des membres de données comme s’ils étaient des enfants du type visualisé. Le débogueur évalue l’expression spécifiée et ajoute les nœuds enfants du résultat à la liste enfant du type visualisé.
 
-Par exemple, le type de pointeur intelligent `auto_ptr<vector<int>>` s’affiche généralement sous la forme :
+Par exemple, le type de pointeur intelligent `auto_ptr<vector<int>>` affiche généralement comme suit :
 
- (../debugger/media/dbg_natvis_expand_expandeditem_default.png "extension") par défaut de l' ![&#95;expansion int&#60;&#60;&#62; &#62; par défaut de Vector PTR]
+ ![développement&#95;par&#60;défaut&#60;de&#62; &#62; Vector PTR automatique int](../debugger/media/dbg_natvis_expand_expandeditem_default.png "Expansion par défaut")
 
  Pour voir les valeurs du vecteur, vous devez descendre dans la fenêtre de la variable deux niveaux, en passant par le membre `_Myptr`. En ajoutant un élément `ExpandedItem` , vous pouvez éliminer la variable `_Myptr` de la hiérarchie et afficher directement les éléments du vecteur :
 
@@ -595,7 +595,7 @@ Par exemple, le type de pointeur intelligent `auto_ptr<vector<int>>` s’affiche
 </Type>
 ```
 
- ![expansion&#95;de&#60;Vector&#60;PTR&#62; &#62; automatique int ExpandedItem expansion](../debugger/media/dbg_natvis_expand_expandeditem_visualized.png "ExpandedItem")
+ ![développement&#95;de&#60;Vector&#60;PTR&#62; &#62; automatique int ExpandedItem](../debugger/media/dbg_natvis_expand_expandeditem_visualized.png "Expansion d'ExpandedItem")
 
 L’exemple suivant montre comment agréger des propriétés à partir de la classe de base dans une classe dérivée. Supposons que la classe `CPanel` dérive de la classe `CFrameworkElement`. Au lieu de répéter les propriétés provenant de la classe de base `CFrameworkElement`, la visualisation de nœud `ExpandedItem` ajoute ces propriétés à la liste enfant de la classe `CPanel`.
 
@@ -631,7 +631,7 @@ Le spécificateur de format **nd** qui désactive l’association de la visualis
 </Type>
 ```
 
- ![Concurrency :: Array avec l’accès concurrentiel d’extension d’élément synthétique](../debugger/media/dbg_natvis_expand_synthetic.png ":: Array avec expansion d’élément synthétique")
+ ![Concurrence :: Array avec expansion d’élément synthétique](../debugger/media/dbg_natvis_expand_synthetic.png "Concurrence :: Array avec expansion d’élément synthétique")
 
 ### <a name="BKMK_HResult"></a>HResult, élément
  L’élément `HResult` vous permet de personnaliser les informations affichées pour un **HRESULT** dans les fenêtres du débogueur. L’élément `HRValue` doit contenir la valeur 32 bits du **HRESULT** à personnaliser. L’élément `HRDescription` contient les informations à afficher dans la fenêtre du débogueur.
@@ -661,11 +661,11 @@ Voici un exemple d'élément UIVisualizer :
 </AutoVisualizer>
 ```
 
-- Une paire d’attributs `ServiceId` @ no__t-1 @ no__t-2 identifie une `UIVisualizer`. Le `ServiceId` est le GUID du service exposé par le package du visualiseur. `Id` est un identificateur unique qui différencie les visualiseurs, si un service en fournit plus d’un. Dans l’exemple précédent, le même service de visualiseur fournit deux visualiseurs.
+- Une `ServiceId` - `Id` paire d’attributs identifie un `UIVisualizer`. Le `ServiceId` est le GUID du service exposé par le package du visualiseur. `Id` est un identificateur unique qui différencie les visualiseurs, si un service en fournit plus d’un. Dans l’exemple précédent, le même service de visualiseur fournit deux visualiseurs.
 
 - L’attribut `MenuName` définit un nom de visualiseur à afficher dans la liste déroulante en regard de l’icône de loupe dans le débogueur. Exemple :
 
-  Menu contextuel menu ![UIVisualizer](../debugger/media/dbg_natvis_vectorvisualizer.png "UIVisualizer menu contextuel")
+  ![Menu contextuel du menu UIVisualizer](../debugger/media/dbg_natvis_vectorvisualizer.png "Menu contextuel du menu UIVisualizer")
 
 Chaque type défini dans le fichier *. natvis* doit répertorier explicitement les visualiseurs d’interface utilisateur qui peuvent l’afficher. Le débogueur met en correspondance les références de visualiseur dans les entrées de type avec les visualiseurs inscrits. Par exemple, l’entrée de type suivante pour `std::vector` fait référence à la `UIVisualizer` dans l’exemple précédent.
 

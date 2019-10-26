@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf2b8669fe9b516f3150829612d6999895cc69f8
-ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
+ms.openlocfilehash: a891f6d18657bad65a1cf087da975849642b7aec
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72306250"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72912037"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>Mettre à jour une application existante vers MSBuild 15
 
@@ -38,7 +38,7 @@ Le mécanisme de modification du projet dans le but d’éviter de charger MSBui
 
 #### <a name="use-nuget-packages-preferred"></a>Utiliser des packages NuGet (recommandé)
 
-Ces instructions supposent d’utiliser des [références NuGet de type PackageReference](https://docs.microsoft.com/nuget/consume-packages/package-references-in-project-files).
+Ces instructions supposent d’utiliser des [références NuGet de type PackageReference](/nuget/consume-packages/package-references-in-project-files).
 
 Changez vos fichiers projet pour référencer les assemblys MSBuild à partir de leurs packages NuGet. Spécifiez `ExcludeAssets=runtime` pour indiquer à NuGet que les assemblys ne sont nécessaires qu’au moment de la génération et qu’ils ne doivent pas être copiés dans le répertoire de sortie.
 

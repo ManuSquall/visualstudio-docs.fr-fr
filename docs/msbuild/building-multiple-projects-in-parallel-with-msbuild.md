@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd56fc50dda1dcbc7eee01ebca8f1e789a839851
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 48f02e9e2f051bbdb77b0d567d79d8793787cf1c
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822987"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911269"
 ---
 # <a name="build-multiple-projects-in-parallel-with-msbuild"></a>Générer plusieurs projets en parallèle avec MSBuild
 Vous pouvez utiliser MSBuild pour générer plus rapidement plusieurs projets en les exécutant en parallèle. Pour exécuter des builds en parallèle, vous utilisez les paramètres suivants sur un ordinateur multicœur ou multiprocesseur :
@@ -27,7 +27,7 @@ Vous pouvez utiliser MSBuild pour générer plus rapidement plusieurs projets en
 - Le paramètre de tâche <xref:Microsoft.Build.Tasks.MSBuild.BuildInParallel%2A> sur une tâche MSBuild.
 
 > [!NOTE]
-> Le commutateur **-verbosity** (**-v**) en ligne de commande peut aussi affecter les performances de build. Les performances de génération risquent de diminuer si le niveau de détail de vos informations de journal de génération est défini sur « détaillé » ou « diagnostic ». Ces niveaux sont utilisés pour le dépannage. Pour plus d’informations, voir [Obtenir des journaux de génération](../msbuild/obtaining-build-logs-with-msbuild.md) et [Informations de référence sur la ligne de commande](../msbuild/msbuild-command-line-reference.md).
+> Le commutateur **-verbosity** ( **-v**) en ligne de commande peut aussi affecter les performances de build. Les performances de génération risquent de diminuer si le niveau de détail de vos informations de journal de génération est défini sur « détaillé » ou « diagnostic ». Ces niveaux sont utilisés pour le dépannage. Pour plus d’informations, voir [Obtenir des journaux de génération](../msbuild/obtaining-build-logs-with-msbuild.md) et [Informations de référence sur la ligne de commande](../msbuild/msbuild-command-line-reference.md).
 
 ## <a name="-maxcpucount-switch"></a>Commutateur -maxcpucount
 Si vous utilisez le commutateur `-maxcpucount`, ou `-m` pour faire court, MSBuild peut créer le nombre spécifié de processus *MSBuild.exe* qui peuvent être exécutés en parallèle. Ces processus sont également appelés « processus de travail ». Chaque processus de travail utilise un processeur ou cœur distinct, sous réserve de disponibilité, pour générer un projet pendant que d’autres processeurs disponibles génèrent d’autres projets. Par exemple, si vous affectez la valeur « 4 » à ce commutateur, MSBuild crée quatre processus de travail pour générer le projet.
@@ -72,4 +72,4 @@ Voici un exemple tiré de *microsoft.common.targets* qui décrit comment défini
 ## <a name="see-also"></a>Voir aussi
 - [Utiliser plusieurs processeurs pour générer des projets](../msbuild/using-multiple-processors-to-build-projects.md)
 - [Écrire des enregistreurs d’événements prenant en charge plusieurs processeurs](../msbuild/writing-multi-processor-aware-loggers.md)
-- [Blog sur le paramétrage du parallélisme de génération C++](http://go.microsoft.com/fwlink/?LinkId=251457)
+- [Blog sur le paramétrage du parallélisme de génération C++](https://devblogs.microsoft.com/visualstudio/tuning-c-build-parallelism-in-vs2010/)

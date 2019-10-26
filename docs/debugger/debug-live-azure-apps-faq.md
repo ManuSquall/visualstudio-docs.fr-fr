@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ceda2dd4e85c8db5b66ef753a748977204b8caab
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 5e0d8839daac2d470f4275257bfcfbc83fc7a62f
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211216"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911408"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Questions fréquentes sur le débogage d’instantané dans Visual Studio
 
@@ -31,7 +31,7 @@ Lorsque vous avez plusieurs instances de votre application, les snappoints sont 
 
 #### <a name="how-does-the-snapshot-debugger-load-symbols"></a>Comment le Débogueur de capture instantanée charge-t-il des symboles ?
 
-Le Débogueur de capture instantanée nécessite que vous ayez les symboles correspondants pour votre application de manière locale ou déployée sur votre Azure App Service. (Les PDB incorporés ne sont actuellement pas pris en charge.) Le Débogueur de capture instantanée télécharge automatiquement les symboles à partir de votre Azure App Service. À partir de Visual Studio 2017 version 15.2, le déploiement sur Azure App Service déploie également les symboles de votre application.
+Le Débogueur de capture instantanée nécessite que vous ayez les symboles correspondants pour votre application de manière locale ou déployée sur votre Azure App Service. (Les fichiers PDB incorporés ne sont actuellement pas pris en charge.) Le Débogueur de capture instantanée télécharge automatiquement les symboles à partir de votre Azure App Service. À partir de Visual Studio 2017 version 15.2, le déploiement sur Azure App Service déploie également les symboles de votre application.
 
 #### <a name="does-the-snapshot-debugger-work-against-release-builds-of-my-application"></a>Le Débogueur de capture instantanée fonctionne-t-il avec les builds de publication de mon application ?
 
@@ -125,7 +125,7 @@ Pour les machines virtuelles/groupes identiques de machines virtuelles, supprime
 
    - Certificat de serveur
       - L’empreinte de certificat de serveur correspondante est déployée en tant que secret dans Azure Key Vault. VS va tenter de trouver ou de créer un coffre de sauvegarde avec le préfixe MSVSAZ * dans la région correspondant à la ressource machine virtuelle ou groupes de machines virtuelles identiques. Toutes les ressources de machines virtuelles ou de groupes identiques de machines virtuelles déployées dans cette région partageront donc le même coffre de stockage.
-      - Pour supprimer le secret de l’empreinte numérique du certificat de serveur, accédez au Portail Azure et recherchez le MSVSAZ * Key Vault dans la même région que celle qui héberge votre ressource. Supprimer la clé secrète qui doit être étiquetée`remotedebugcert<<ResourceName>>`
+      - Pour supprimer le secret de l’empreinte numérique du certificat de serveur, accédez au Portail Azure et recherchez le MSVSAZ * Key Vault dans la même région que celle qui héberge votre ressource. Supprimez la clé secrète qui doit être étiquetée `remotedebugcert<<ResourceName>>`
       - Vous devrez également supprimer le secret du serveur de votre ressource via PowerShell.
 
       Pour les machines virtuelles :
@@ -181,7 +181,7 @@ Il existe plusieurs façons de désactiver les Débogueur de capture instantané
 
 - Portail Azure > le panneau de ressources de votre machine virtuelle/groupe de machines virtuelles identiques > Extensions > désinstaller Microsoft. Insights. Vmdiagnosticssettings lui extension
 
-- Applets de commande PowerShell à partir de [AZ PowerShell](https://docs.microsoft.com/powershell/azure/overview)
+- Applets de commande PowerShell à partir de [AZ PowerShell](/powershell/azure/overview)
 
    Ordinateur virtuel :
 

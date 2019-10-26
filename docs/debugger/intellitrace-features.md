@@ -20,18 +20,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 852070c74a7e7171525a5feaa6cc7617fe83c00d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: bcdb1b2b6dc4b64d180eb03fc76b26b4ef16e9d0
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925365"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911415"
 ---
 # <a name="intellitrace-features-c-visual-basic-c"></a>Fonctionnalités IntelliTrace (C#, Visual Basic, C++)
 
-Vous pouvez utiliser IntelliTrace pour enregistrer les événements et les appels de méthode dans votre application, ce qui vous permet d'examiner son état (pile des appels et valeurs des variables locales) à différents stades de l'exécution. Commencez le débogage comme d’habitude. IntelliTrace est activé par défaut et les informations enregistrées sont affichées dans la nouvelle fenêtre **Outils de diagnostic** sous l’onglet **Événements**. Sélectionnez un événement et cliquez sur **Activer le débogage d’historique** pour afficher la pile des appels et les variables locales enregistrées pour cet événement.
+Vous pouvez utiliser IntelliTrace pour enregistrer les événements et les appels de méthode dans votre application, ce qui vous permet d'examiner son état (pile des appels et valeurs des variables locales) à différents stades de l'exécution. Commencez simplement le débogage comme d’habitude-IntelliTrace est activé par défaut, et vous pouvez voir les informations enregistrées dans la fenêtre nouveau **outils de diagnostic** sous l’onglet **événements** . Sélectionnez un événement et cliquez sur **activer le débogage d’historique.** pour voir la pile des appels et les variables locales enregistrées pour cet événement.
 
-Pour obtenir une description pas à pas, consultez [procédure pas à pas: Utilisation d'](../debugger/walkthrough-using-intellitrace.md)IntelliTrace.
+Pour obtenir une description étape par étape, consultez [Procédure pas à pas : utilisation d'IntelliTrace](../debugger/walkthrough-using-intellitrace.md).
 
 IntelliTrace est disponible dans Visual Studio Enterprise Edition, mais pas dans les éditions Visual Studio Professional ou Community.
 
@@ -111,7 +111,7 @@ Quand vous enregistrez des données IntelliTrace dans un fichier, vous obtenez u
 
 [Procédure pas à pas de débogage en direct à l’aide d’IntelliTrace dans Visual Studio 2015 (Club social)](https://devblogs.microsoft.com/devops/walkthrough-of-live-debugging-using-intellitrace-in-visual-studio-2015-social-club/)
 
-[IntelliTrace dans Visual Studio Enterprise 2015 prend désormais en charge Attach!](https://devblogs.microsoft.com/devops/intellitrace-in-visual-studio-enterprise-2015-now-supports-attach/)
+[IntelliTrace dans Visual Studio Enterprise 2015 prend désormais en charge Attach !](https://devblogs.microsoft.com/devops/intellitrace-in-visual-studio-enterprise-2015-now-supports-attach/)
 
 [Collecter des données à partir d’un service Windows à l’aide du collecteur autonome IntelliTrace](https://devblogs.microsoft.com/devops/collect-data-from-a-windows-service-using-the-intellitrace-standalone-collector/)
 
@@ -123,7 +123,7 @@ Quand vous enregistrez des données IntelliTrace dans un fichier, vous obtenez u
 
 ## <a name="forums"></a>Forums
 
-[Débogueur Visual Studio](http://go.microsoft.com/fwlink/?LinkId=262263)
+[Débogueur Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home)
 
 ## <a name="videos"></a>Vidéos
 

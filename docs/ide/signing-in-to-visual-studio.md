@@ -1,5 +1,5 @@
 ---
-title: Se connecter à Visual Studio
+title: Connectez-vous à Visual Studio
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 12/10/2018
@@ -10,14 +10,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a949c8b8e5956f9a606195671c0453bbb3689701
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: f4f12aafa8296914461e647dddc3400e399770c0
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018863"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919180"
 ---
-# <a name="sign-in-to-visual-studio"></a>Se connecter à Visual Studio
+# <a name="sign-in-to-visual-studio"></a>Connectez-vous à Visual Studio
 
 Vous pouvez éventuellement personnaliser et optimiser votre expérience de développement dans Visual Studio si vous configurez votre compte de personnalisation en vous connectant à l'IDE.
 
@@ -44,7 +44,7 @@ Voici une liste complète de tous les avantages dont vous pouvez éventuellement
 
 ## <a name="how-to-sign-in-to-visual-studio"></a>Comment se connecter à Visual Studio ?
 
-Lorsque vous ouvrez Visual Studio pour la première fois, vous êtes invité à vous connecter et à fournir des informations d’inscription de base. Vous devez choisir un compte Microsoft ou bien un compte professionnel ou scolaire qui vous représente le mieux. Si vous n'avez aucun de ces comptes, vous pouvez créer gratuitement un compte Microsoft. Consultez [Comment ouvrir un compte Microsoft ?](http://windows.microsoft.com/windows-live/sign-up-create-account-how)
+Lorsque vous ouvrez Visual Studio pour la première fois, vous êtes invité à vous connecter et à fournir des informations d’inscription de base. Vous devez choisir un compte Microsoft ou bien un compte professionnel ou scolaire qui vous représente le mieux. Si vous n'avez aucun de ces comptes, vous pouvez créer gratuitement un compte Microsoft. Consultez [Comment ouvrir un compte Microsoft ?](https://support.microsoft.com/help/4026324/microsoft-account-how-to-create)
 
 Choisissez ensuite les paramètres d'interface utilisateur et le thème de couleur que vous souhaitez utiliser dans Visual Studio. Visual Studio mémorise ces paramètres et les synchronise dans tous les environnements de Visual Studio auxquels vous êtes connecté. Pour obtenir la liste des paramètres qui sont synchronisés, consultez [Paramètres synchronisés](../ide/synchronized-settings-in-visual-studio.md). Vous pouvez changer les paramètres ultérieurement si vous ouvrez le menu **Outils** > **Options** dans Visual Studio.
 

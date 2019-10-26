@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 849862f98fb90cdd742e1794ecb57c35a9aaca73
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3a805942e85540b776ceacd972a09a71bb80cbb4
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745579"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911582"
 ---
 # <a name="debug-64-bit-applications"></a>Déboguer des applications 64 bits
 Vous pouvez déboguer une application 64 bits qui s'exécute sur l'ordinateur local ou sur un ordinateur distant.
@@ -54,7 +54,7 @@ Vous pouvez déboguer une application 64 bits qui s'exécute sur l'ordinateur lo
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Applications 64 bits](https://docs.microsoft.com/dotnet/framework/64-bit-apps)
+- [Applications 64 bits](/dotnet/framework/64-bit-apps)
 - [Configuration des programmes pour les processeurs 64 bits](/cpp/build/configuring-programs-for-64-bit-visual-cpp)
 - [Prise en charge de l’IDE de Visual Studio 64 bits](../ide/visual-studio-ide-64-bit-support.md)
 - [Utilisation des fichiers de vidage](../debugger/using-dump-files.md)

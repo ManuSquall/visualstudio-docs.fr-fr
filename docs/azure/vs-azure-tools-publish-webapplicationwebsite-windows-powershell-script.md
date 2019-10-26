@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: e1085d13612cefee370aeac5fe67c7ddd2af8bae
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: c5eff35247c85783659f66b13d03c3a5f781df07
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919800"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911767"
 ---
 # <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publish-WebApplicationWebSite (script Windows PowerShell)
 ## <a name="syntax"></a>Syntaxe
@@ -37,7 +37,7 @@ Le chemin d'accès au fichier de configuration JSON qui décrit les détails du 
 | --- | --- |
 | Alias |none |
 | Obligatoire ? |true |
-| Position |named |
+| Position |nommés |
 | Valeur par défaut |none |
 | Accepter l'entrée de pipeline ? |False |
 | Accepter les caractères génériques ? |False |
@@ -49,19 +49,19 @@ Nom de l’abonnement Azure dans lequel vous souhaitez créer le site web.
 | --- | --- |
 | Alias |none |
 | Obligatoire ? |False |
-| Position |named |
+| Position |nommés |
 | Valeur par défaut |none |
 | Accepter l'entrée de pipeline ? |False |
 | Accepter les caractères génériques ? |False |
 
 ## <a name="webdeploypackage"></a>WebDeployPackage
-Le chemin d'accès au package de déploiement web à publier sur le site web. Vous pouvez créer ce package à l'aide de l'Assistant Publier le site web dans Visual Studio. Pour plus d’informations, consultez [Prise en main des services cloud Azure et d'ASP.NET](http://go.microsoft.com/fwlink/p/?LinkID=623089).
+Le chemin d'accès au package de déploiement web à publier sur le site web. Vous pouvez créer ce package à l'aide de l'Assistant Publier le site web dans Visual Studio. Pour plus d’informations, consultez [Prise en main des services cloud Azure et d'ASP.NET](vs-azure-tools-publish-webapplicationwebsite-windows-powershell-script.md).
 
 | Paramètre | Valeur par défaut |
 | --- | --- |
 | Alias |none |
 | Obligatoire ? |False |
-| Position |named |
+| Position |nommés |
 | Valeur par défaut |none |
 | Accepter l'entrée de pipeline ? |False |
 | Accepter les caractères génériques ? |False |
@@ -73,7 +73,7 @@ Le nom d’utilisateur et le mot de passe pour la base de données SQL dans Azur
 | --- | --- |
 | Alias |none |
 | Obligatoire ? |False |
-| Position |named |
+| Position |nommés |
 | Valeur par défaut |none |
 | Accepter l'entrée de pipeline ? |False |
 | Accepter les caractères génériques ? |False |
@@ -85,12 +85,12 @@ Si true, imprime des messages à partir du script dans le flux de sortie.
 | --- | --- |
 | Alias |none |
 | Obligatoire ? |False |
-| Position |named |
+| Position |nommés |
 | Valeur par défaut |False |
 | Accepter l'entrée de pipeline ? |False |
 | Accepter les caractères génériques ? |False |
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Pour obtenir une explication complète de la façon d'utiliser le script pour créer des environnements de développement et de test, consultez [Utilisation des scripts Windows PowerShell pour la publication dans des environnements de développement et de test](vs-azure-tools-publishing-using-powershell-scripts.md).
 
 Le fichier de configuration JSON spécifie les détails de ce qui doit être déployé. Il inclut les informations que vous avez spécifiées lorsque vous avez créé le projet, comme le nom et le nom d'utilisateur pour le site web. Il inclut également la base de données à configurer, le cas échéant. Le code suivant montre un exemple de fichier de configuration JSON :
