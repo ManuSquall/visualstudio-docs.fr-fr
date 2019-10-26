@@ -15,12 +15,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 56c49f0d3cef6dbb054c8d7d97b4e875b83cb518
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 68ffb040e7d642fc2bf285f0510850edc343a5ce
+ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648818"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72924543"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Lier des contrôles WPF à un dataset
 
@@ -50,7 +50,7 @@ La connaissance préalable des concepts suivants s'avère également utile, mais
 
 - Datasets et TableAdapters. Pour plus d’informations, consultez [outils de DataSet dans Visual Studio](../data-tools/dataset-tools-in-visual-studio.md) et [TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
-- Liaison de données WPF. Pour plus d’informations, consultez [Vue d’ensemble de la liaison de données](/dotnet/framework/wpf/data/data-binding-overview).
+- Liaison de données WPF. Pour plus d’informations, consultez [Vue d’ensemble de la liaison de données](/dotnet/desktop-wpf/data/data-binding-overview).
 
 ## <a name="create-the-project"></a>Créer le projet
 
@@ -262,4 +262,4 @@ Générez et exécutez l’application. Vérifiez que vous pouvez afficher et me
 
 - [Lier des contrôles WPF à des données dans Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [Outils de dataset dans Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
-- [Vue d’ensemble de la liaison de données](/dotnet/framework/wpf/data/data-binding-overview)
+- [Vue d’ensemble de la liaison de données](/dotnet/desktop-wpf/data/data-binding-overview)

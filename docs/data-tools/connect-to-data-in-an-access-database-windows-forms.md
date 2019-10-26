@@ -12,12 +12,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d24fc2fa1ee34567e0c32859eeccf6af62813a20
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 65fa8b823a49644110dc773eb614da6022f4e8f5
+ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648722"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72924515"
 ---
 # <a name="connect-to-data-in-an-access-database"></a>Se connecter à des données dans une base de données Access
 
@@ -109,7 +109,7 @@ Connectez-vous aux bases de données créées avec Access 2000-2003 à l’aide 
 
 Le DataSet que vous venez de créer est disponible dans la fenêtre **sources de données** . Vous pouvez à présent effectuer l’une des tâches suivantes :
 
-- Sélectionnez des éléments dans la fenêtre **sources de données** et faites-les glisser sur votre formulaire ou aire de conception (consultez [lier des contrôles Windows Forms à des données dans Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md) ou [vue d’ensemble de la liaison de données WPF](/dotnet/framework/wpf/data/data-binding-overview)).
+- Sélectionnez des éléments dans la fenêtre **sources de données** et faites-les glisser sur votre formulaire ou aire de conception (consultez [lier des contrôles Windows Forms à des données dans Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md) ou [vue d’ensemble de la liaison de données WPF](/dotnet/desktop-wpf/data/data-binding-overview)).
 
 - Ouvrez la source de données dans le **Concepteur de DataSet** pour ajouter ou modifier les objets qui composent le jeu de données.
 
