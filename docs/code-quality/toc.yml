@@ -751,6 +751,8 @@
                   href: ca5397.md
                 - name: "CA5398\_: Éviter les valeurs SslProtocols codées en dur"
                   href: ca5398.md
+                - name: "CA5403\_: Ne pas coder en dur le certificat"
+                  href: ca5403.md
             - name: Avertissements liés à l’utilisation
               items:
                 - name: Vue d'ensemble
