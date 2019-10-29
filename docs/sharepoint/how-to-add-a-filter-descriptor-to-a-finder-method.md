@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Ajouter un descripteur de filtre à une méthode de recherche | Microsoft Docs'
+title: 'Comment : ajouter un descripteur de filtre à une méthode de recherche | Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,62 +15,62 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fceb6270aea9da5af1a53adf7560df7dd3702349
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f9dd853142d970cd14de20f4782accb3ce3e17eb
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418311"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986247"
 ---
-# <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>Procédure : Ajouter un descripteur de filtre à une méthode de recherche
-  Descripteurs de filtre permettent aux consommateurs du modèle transmettre des valeurs aux méthodes avant leur exécution. Pour plus d’informations, consultez [concevoir un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md).
+# <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>Comment : ajouter un descripteur de filtre à une méthode de recherche
+  Les descripteurs de filtre permettent aux consommateurs du modèle de passer des valeurs aux méthodes avant leur exécution. Pour plus d’informations, consultez [concevoir un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md).
 
- Un scénario courant est que les utilisateurs de SharePoint récupérer les instances d’un type de contenu externe qui correspondent à certains critères. Vous pouvez prendre en charge ce scénario en ajoutant un descripteur de filtre à une méthode de recherche.
+ Un scénario courant est que les utilisateurs de SharePoint souhaitent récupérer des instances d’un type de contenu externe qui correspondent à certains critères. Vous pouvez prendre en charge ce scénario en ajoutant un descripteur de filtre à une méthode de recherche.
 
 ### <a name="to-add-a-filter-descriptor-to-a-finder-method"></a>Pour ajouter un descripteur de filtre à une méthode de recherche
 
-1. Dans le **détails de méthode BDC** fenêtre, développez le nœud d’une méthode de recherche, développez le **paramètres** nœud, puis ajoutez un paramètre d’entrée. Pour plus d'informations, voir [Procédure : Ajouter un paramètre à une méthode](../sharepoint/how-to-add-a-parameter-to-a-method.md).
+1. Dans la fenêtre **Détails de méthode BDC** , développez le nœud d’une méthode de recherche, développez le nœud **paramètres** , puis ajoutez un paramètre d’entrée. Pour plus d’informations, consultez [Comment : ajouter un paramètre à une méthode](../sharepoint/how-to-add-a-parameter-to-a-method.md).
 
-2. Dans le **détails de la méthode** fenêtre, choisissez le descripteur de type du paramètre.
+2. Dans la fenêtre **Détails de méthode** , choisissez le descripteur de type du paramètre.
 
-3. Dans la barre de menus, choisissez **vue** > **fenêtre Propriétés**.
+3. Dans la barre de menus, choisissez **afficher** > **fenêtre Propriétés**.
 
-4. Dans le **propriétés** fenêtre, définissez la **nom de Type** propriété à un type de données qui est approprié pour le filtre.
+4. Dans la fenêtre **Propriétés** , définissez la propriété **nom du type** sur un type de données approprié pour le filtre.
 
-     Par exemple, un filtre peut utiliser une date de commande pour limiter le nombre de commandes client retournées par la méthode. Pour prendre en charge ce filtre, le **nom de Type** propriété du descripteur de type doit être définie sur **System.DateTime**.
+     Par exemple, un filtre peut utiliser une date de commande pour limiter le nombre de commandes retournées par la méthode. Pour prendre en charge ce filtre, la propriété **nom de type** du descripteur de type doit être définie sur **System. DateTime**.
 
-5. Dans le **détails de la méthode** fenêtre, développez le **descripteurs de filtre** nœud.
+5. Dans la fenêtre Détails de la **méthode** , développez le nœud **descripteurs de filtre** .
 
-6. Dans **ajouter un descripteur de filtre** , choisissez **créer un descripteur de filtre**.
+6. Dans **la liste ajouter un descripteur de filtre** , choisissez **créer un descripteur de filtre**.
 
-     Un nouveau descripteur de filtre apparaît sous le **descripteurs de filtre** nœud.
+     Un nouveau descripteur de filtre apparaît sous le nœud **descripteurs de filtre** .
 
-7. Dans la barre de menus, choisissez **vue** > **fenêtre Propriétés**.
+7. Dans la barre de menus, choisissez **afficher** > **fenêtre Propriétés**.
 
-8. Dans le **propriétés** fenêtre, choisissez le **Type** propriété.
+8. Dans la fenêtre **Propriétés** , choisissez la propriété **type** .
 
-9. Dans la liste qui s’affiche pour le **Type** propriété, choisissez le modèle de filtrage que vous le souhaitez.
+9. Dans la liste qui s’affiche pour la propriété **type** , choisissez le modèle de filtrage souhaité.
 
-     Par exemple, pour créer un filtre qui utilise une date de commande pour limiter le nombre de commandes client retournées dans une méthode de recherche, choisissez **comparaison**. Un filtre de comparaison permet de s’assurer qu’une méthode de recherche retourne uniquement les instances qui remplissent une condition spécifique. Pour plus d’informations sur chaque modèle de filtrage, consultez [Types de filtres pris en charge par le BDC](http://go.microsoft.com/fwlink/?LinkId=169287).
+     Par exemple, pour créer un filtre qui utilise une date de commande afin de limiter le nombre de commandes retournées dans une méthode de recherche, choisissez **comparaison**. Un filtre de comparaison garantit qu’une méthode de recherche ne retourne que les instances qui remplissent une condition spécifique. Pour plus d’informations sur chaque modèle de filtrage, consultez [types de filtres pris en charge par le CDM](/previous-versions/office/developer/sharepoint-2010/ee556392(v=office.14)).
 
-10. Dans le **propriétés** fenêtre, choisissez le **descripteurs de Type associés** propriété.
+10. Dans la fenêtre **Propriétés** , choisissez la propriété **descripteurs de type associés** .
 
-11. Dans la liste qui s’affiche pour le **descripteurs de Type associés** propriété, choisissez le descripteur de type que vous avez créé précédemment dans cette procédure. Le paramètre d’entrée de la méthode de recherche concerne le filtre.
+11. Dans la liste qui s’affiche pour la propriété **descripteurs de type associés** , choisissez le descripteur de type que vous avez créé précédemment dans cette procédure. Cela associe le filtre au paramètre d’entrée de la méthode Finder.
 
-12. Ajoutez le code à la méthode de recherche qui retourne des données. Vous pouvez utiliser le paramètre d’entrée comme une condition dans une requête select.
+12. Ajoutez du code à la méthode de recherche qui retourne des données. Vous pouvez utiliser le paramètre d’entrée comme condition dans une requête SELECT.
 
-     L’exemple suivant retourne les commandes qui ont la date de commande spécifié.
+     L’exemple suivant retourne les commandes client qui ont la date de commande spécifiée.
 
     > [!NOTE]
-    > Remplacez la valeur de la `ServerName` champ avec le nom de votre serveur.
+    > Remplacez la valeur du champ `ServerName` par le nom de votre serveur.
 
      [!code-csharp[SP_BDC#11](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderservice.cs#11)]
      [!code-vb[SP_BDC#11](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderservice.vb#11)]
 
 ## <a name="see-also"></a>Voir aussi
-- [Guide pratique pour Ajouter une méthode de recherche](../sharepoint/how-to-add-a-finder-method.md)
-- [Guide pratique pour Ajouter une méthode de recherche spécifique](../sharepoint/how-to-add-a-specific-finder-method.md)
-- [Guide pratique pour Ajouter un paramètre à une méthode](../sharepoint/how-to-add-a-parameter-to-a-method.md)
-- [Guide pratique pour Définir le descripteur de type d’un paramètre](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)
+- [Comment : ajouter une méthode de recherche](../sharepoint/how-to-add-a-finder-method.md)
+- [Comment : ajouter une méthode de recherche spécifique](../sharepoint/how-to-add-a-specific-finder-method.md)
+- [Comment : ajouter un paramètre à une méthode](../sharepoint/how-to-add-a-parameter-to-a-method.md)
+- [Comment : définir le descripteur de type d’un paramètre](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)
 - [Concevoir un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [Intégration de données métiers dans SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)

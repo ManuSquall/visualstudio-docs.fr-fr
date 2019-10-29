@@ -1,5 +1,5 @@
 ---
-title: Prise en charge supplémentaire pour les erreurs dans les solutions Office
+title: Prise en charge supplémentaire des erreurs dans les solutions Office
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -56,20 +56,20 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fb5877bccdc60d031e6ccd799eb6536df15fda38
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 01b225b27dfe9c5e1f006105b8e2676a509234b9
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953187"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984634"
 ---
-# <a name="additional-support-for-errors-in-office-solutions"></a>Prise en charge supplémentaire pour les erreurs dans les solutions Office
+# <a name="additional-support-for-errors-in-office-solutions"></a>Prise en charge supplémentaire des erreurs dans les solutions Office
 
-Vous pouvez utiliser les ressources suivantes pour vous aider à trouver des réponses aux problèmes que vous rencontrez lorsque vous créez des solutions Office dans Visual Studio.
+Vous pouvez utiliser les ressources suivantes pour vous aider à trouver les réponses aux problèmes que vous rencontrez lors de la création de solutions Office dans Visual Studio.
 
 ## <a name="troubleshoot-specific-errors"></a>Résoudre les erreurs spécifiques
 
-Pour obtenir une assistance avec quelques erreurs courantes dans les solutions Office, consultez les rubriques suivantes :
+Pour obtenir de l’aide sur certaines erreurs courantes dans les solutions Office, consultez les rubriques suivantes :
 
 - [Résoudre les erreurs dans les solutions Office](../vsto/troubleshooting-errors-in-office-solutions.md)
 
@@ -79,11 +79,11 @@ Pour obtenir une assistance avec quelques erreurs courantes dans les solutions O
 
 ## <a name="other-resources"></a>Autres ressources
 
-[Visual Studio tools pour forum Office](http://go.microsoft.com/fwlink/?LinkId=149744)
+[Forum Visual Studio Tools pour Office](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=vsto)
 
 Propose un forum de questions sur les outils de développement Office dans Visual Studio.
 
-[Microsoft aide et support](http://go.microsoft.com/fwlink/?LinkID=108287)
+[Aide et support Microsoft](https://support.microsoft.com)
 
 Permet d'accéder aux articles de la Base de connaissances, ainsi qu'aux téléchargements, mises à jour, Webcasts de support technique et autres services.
 

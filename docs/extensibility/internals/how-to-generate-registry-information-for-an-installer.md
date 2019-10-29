@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Générer des informations de Registre pour un programme d’installation | Microsoft Docs'
+title: 'Comment : générer des informations de Registre pour un programme d’installation | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,35 +12,35 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 931950c399d853fc6296bf56e9fce0619c0e7e41
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d4395732cd8d3fbc71ac902801c71270ff446470
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328837"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72981971"
 ---
-# <a name="how-to-generate-registry-information-for-an-installer"></a>Procédure : Générer des informations de Registre pour un programme d’installation
+# <a name="how-to-generate-registry-information-for-an-installer"></a>Comment : générer des informations de Registre pour un programme d’installation
 
-Le *RegPkg.exe* utilitaire peut être utilisé pour générer un manifeste de l’inscription d’un VSPackage managé. Le manifeste peut être incorporé dans un package d’installation de programme d’installation de Windows. RegPkg peut également générer un fichier qui peut être inclus dans un fichier de source d’installation basé sur le [ensemble d’outils Windows Installer XML](http://go.microsoft.com/fwlink/?LinkId=62238).
+L’utilitaire *regpkg. exe* peut être utilisé pour générer un manifeste d’inscription pour un VSPackage managé. Le manifeste peut être incorporé dans un package d’installation Windows Installer. RegPkg peut également générer un fichier qui peut être inclus dans un fichier source d’installation basé sur le [Windows Installer ensemble d’outils XML](https://wixtoolset.org/).
 
 > [!IMPORTANT]
-> RegPkg génère des noms de chemin d’accès qui sont spécifiques à votre système de développement, chaque fois que vous utilisez RegPkg, vous devez donc modifier la sortie à utiliser le programme d’installation d’approprié Windows au format propriétés. Par exemple, le `InprocServer32` valeur doit être  *\<SystemFolder\>mscoree.dll* et chemins d’accès doivent utiliser *\<#filekey\>* et  *\<$componentkey\>* . Ajustement de la sortie de cette façon prend en charge les ordinateurs Windows installé sur un lecteur différent ou dans un répertoire différent, les noms de répertoire localisé et les chemins d’accès les utilisateurs peuvent choisir. Pour plus d’informations, consultez [mise en forme](http://go.microsoft.com/fwlink/?LinkId=71120) dans le Kit de développement de Windows Installer. Si vous suivez les conventions RegPkg pour vos chemins d’accès de système de développement, par exemple, ID de la forme de fichier *File_\<filename\>* , vous devez apporter des modifications moins.
+> RegPkg génère des noms de chemin d’accès spécifiques à votre système de développement. par conséquent, chaque fois que vous utilisez RegPkg, vous devez modifier la sortie pour utiliser les propriétés mises en forme appropriées Windows Installer. Par exemple, la valeur de `InprocServer32` doit être *\<SystemFolder\>Mscoree. dll* , et les chemins d’accès doivent utiliser *\<* #filekey\>et *\<* $componentkey\>. L’ajustement de la sortie de cette manière prend en charge les ordinateurs sur lesquels Windows est installé sur un autre lecteur ou dans un répertoire différent, les noms de répertoire localisés et les chemins que les utilisateurs peuvent choisir. Pour plus d’informations, consultez [mise en forme](https://msdn.microsoft.com/library?url=/library/msi/setup/formatted.asp) dans le kit de développement logiciel (SDK) Windows Installer. Si vous suivez les conventions RegPkg pour vos chemins d’accès système de développement (par exemple, les ID de fichier de la forme *File_\<filename\>* ), vous devez effectuer moins de modifications.
 
-## <a name="to-create-a-registration-manifest"></a>Pour créer un manifeste de l’inscription
+## <a name="to-create-a-registration-manifest"></a>Pour créer un manifeste d’inscription
 
-- Exécutez RegPkg avec la **/regfile** basculer. Fournir d’autres commutateurs, le nom du fichier de sortie et le chemin d’accès du VSPackage.
+- Exécutez RegPkg avec le commutateur **/regfile** . Fournissez d’autres commutateurs, le nom du fichier de sortie et le chemin d’accès du VSPackage.
 
-     Par exemple, à l’invite de commandes, vous tapez ce qui suit :
+     Par exemple, à l’invite de commandes, tapez ce qui suit :
 
     ```
     <Visual Studio SDK installation path>\VisualStudioIntegration\Tools\Bin\RegPkg /regfile:MyRegFile.reg MyPackage.dll
     ```
 
-## <a name="to-view-a-registration-manifest"></a>Pour afficher un manifeste de l’inscription
+## <a name="to-view-a-registration-manifest"></a>Pour afficher un manifeste d’inscription
 
-- Ouvrez le manifeste de l’inscription dans n’importe quel éditeur de texte.
+- Ouvrez le manifeste d’inscription dans n’importe quel éditeur de texte.
 
-     L’exemple suivant est le manifeste de l’inscription RegPkg crée pour le service de langage IronPython :
+     L’exemple suivant est le manifeste d’inscription créé par RegPkg pour le service de langage IronPython :
 
     ```
     REGEDIT4
@@ -97,21 +97,21 @@ Le *RegPkg.exe* utilitaire peut être utilisé pour générer un manifeste de l�
 
     ```
 
-## <a name="to-create-a-windows-installer-xml-toolset-include-file"></a>Pour créer un fichier Windows Installer XML toolset inclure le fichier
+## <a name="to-create-a-windows-installer-xml-toolset-include-file"></a>Pour créer un fichier d’ensemble d’outils XML Windows Installer
 
-- Exécutez RegPkg avec la **/wixfile** basculer. Fournir d’autres commutateurs, le nom du fichier de sortie et le chemin d’accès du VSPackage.
+- Exécutez RegPkg avec le commutateur **/wixfile** Fournissez d’autres commutateurs, le nom du fichier de sortie et le chemin d’accès du VSPackage.
 
-     Par exemple, à l’invite de commandes, vous tapez ce qui suit :
+     Par exemple, à l’invite de commandes, tapez ce qui suit :
 
     ```
     <Visual Studio SDK installation path>\VisualStudioIntegration\Tools\Bin\RegPkg /codebase /wixfile:IronPython.LanguageService.wxi ..\bin\Release\IronPython.LanguageService.dll
     ```
 
-## <a name="to-view-a-windows-installer-xml-toolset-include-file"></a>Pour afficher un fichier Windows Installer XML toolset inclure le fichier
+## <a name="to-view-a-windows-installer-xml-toolset-include-file"></a>Pour afficher un fichier d’ensemble d’outils XML Windows Installer
 
-- Ouvrez le composant Windows Installer XML Toolset fichier include dans n’importe quel éditeur de texte.
+- Ouvrez le fichier include de l’ensemble d’outils XML Windows Installer dans n’importe quel éditeur de texte.
 
-     L’exemple suivant est le fichier include RegPkg crée pour le service de langage IronPython :
+     L’exemple suivant est le fichier include créé par RegPkg pour le service de langage IronPython :
 
     ```xml
     <Include>

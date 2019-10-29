@@ -8,12 +8,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 75244cc728b238a04569875ac01f1c2a3f27d336
-ms.sourcegitcommit: 16175e0cea6af528e9ec76f0b94690faaf1bed30
+ms.openlocfilehash: 9d69c91af316c755b2dcf4f339d8f47d49096b6a
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2019
-ms.locfileid: "71481914"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72982910"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Écrire des tests unitaires pour C/C++ dans Visual Studio
 
@@ -37,11 +37,11 @@ Prise en charge de projets de test unitaire C++ [CodeLens](../ide/find-code-chan
 
 **Visual Studio 2017 et ultérieur (toutes les éditions)**
 
-- **L’Adaptateur Google Test** est inclus comme composant par défaut de la charge de travail **Développement Desktop en C++** . Il comprend un modèle de projet que l’on peut ajouter à une solution avec le menu contextuel (clic droit) **Ajouter un nouveau projet** du nœud de la solution dans **l’Explorateur de solutions**, ainsi que des options configurables avec **Outils** > **Options**. Pour plus d'informations, voir [Procédure : Utiliser Google Test dans Visual Studio](how-to-use-google-test-for-cpp.md).
+- **L’Adaptateur Google Test** est inclus comme composant par défaut de la charge de travail **Développement Desktop en C++** . Il comprend un modèle de projet que l’on peut ajouter à une solution avec le menu contextuel (clic droit) **Ajouter un nouveau projet** du nœud de la solution dans **l’Explorateur de solutions**, ainsi que des options configurables avec **Outils** > **Options**. Pour plus d’informations, consultez [Comment : utiliser des Google test dans Visual Studio](how-to-use-google-test-for-cpp.md).
 
-- **Boost.Test** est inclus comme composant par défaut de la charge de travail **Développement Desktop en C++** . Il est intégré à **l’Explorateur de tests**, mais il n’a actuellement pas de modèle de projet : il doit donc être configuré manuellement. Pour plus d'informations, voir [Procédure : Utiliser Boost.Test dans Visual Studio](how-to-use-boost-test-for-cpp.md).
+- **Boost.Test** est inclus comme composant par défaut de la charge de travail **Développement Desktop en C++** . Il est intégré à **l’Explorateur de tests**, mais il n’a actuellement pas de modèle de projet : il doit donc être configuré manuellement. Pour plus d’informations, consultez [Comment : utiliser Boost. test dans Visual Studio](how-to-use-boost-test-for-cpp.md).
 
-- La prise en charge de **CTest** est incluse dans le composant **Outils CMake pour C++** qui fait partie de la charge de travail **Développement Desktop en C++** . Toutefois, CTest n’est pas encore entièrement intégré à **l’Explorateur de tests**. Pour plus d'informations, voir [Procédure : Utiliser CTest dans Visual Studio](how-to-use-ctest-for-cpp.md).
+- La prise en charge de **CTest** est incluse dans le composant **Outils CMake pour C++** qui fait partie de la charge de travail **Développement Desktop en C++** . Toutefois, CTest n’est pas encore entièrement intégré à **l’Explorateur de tests**. Pour plus d’informations, consultez [Comment : utiliser ctest dans Visual Studio](how-to-use-ctest-for-cpp.md).
 
 **Visual Studio 2015 et antérieur**
 
@@ -79,7 +79,7 @@ Pour permettre à votre code de test d’accéder aux fonctions du projet à tes
 
 ### <a name="link-to-object-or-library-files"></a>Lier à des fichiers objets ou bibliothèques
 
-Si le code de test n’exporte pas les fonctions que vous voulez tester, vous pouvez ajouter les fichiers de sortie .obj ou .lib aux dépendances du projet de test. Consultez [Pour lier les tests aux fichiers objets ou bibliothèques](https://docs.microsoft.com/visualstudio/test/unit-testing-existing-cpp-applications-with-test-explorer?view=vs-2015#objectRef).
+Si le code de test n’exporte pas les fonctions que vous voulez tester, vous pouvez ajouter les fichiers de sortie .obj ou .lib aux dépendances du projet de test. Consultez [Pour lier les tests aux fichiers objets ou bibliothèques](unit-testing-existing-cpp-applications-with-test-explorer.md).
 
 ### <a name="add-include-directives-for-header-files"></a>Ajouter des directives #include pour les fichiers d’en-tête
 
@@ -87,12 +87,12 @@ Ensuite, dans votre fichier de test unitaire *.cpp*, ajoutez une directive `#inc
 
 ![Ajouter des directives include](media/cpp-add-includes-test-project.png)
 
-Pour éviter d’avoir à taper le chemin d’accès complet dans chaque instruction include dans le fichier source, vous pouvez ajouter les dossiers requis dans les**Propriétés** **Project** >   > **CC++/**  > **General** > **Additional include Répertoires**.
+Pour éviter d’avoir à taper le chemin d’accès complet dans chaque instruction include dans le fichier source, vous pouvez ajouter les dossiers requis dans **Project** > **Properties** > **C/C++**  > **General** > **include supplémentaire Répertoires**.
 
 ### <a name="write-test-methods"></a>Écrire des méthodes de test
 
 > [!NOTE]
-> Cette section décrit la syntaxe du framework de tests unitaires Microsoft pour C/C++. Elle est documentée ici : [Informations de référence sur l’API Microsoft.VisualStudio.TestTools.CppUnitTestFramework](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). Pour consulter la documentation de Google Test, consultez [Google Test Primer](https://github.com/google/googletest/blob/master/googletest/docs/primer.md). Pour Boost.Test, consultez [Boost Test library: The unit test framework](http://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html).
+> Cette section décrit la syntaxe du framework de tests unitaires Microsoft pour C/C++. Elle est documentée ici : [Informations de référence sur l’API Microsoft.VisualStudio.TestTools.CppUnitTestFramework](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md). Pour consulter la documentation de Google Test, consultez [Google Test Primer](https://github.com/google/googletest/blob/master/googletest/docs/primer.md). Pour Boost.Test, consultez [Boost Test Library: The Unit Test Framework](https://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html).
 
 Le fichier *.cpp* de votre projet de test a une classe et une méthode stub déjà définies, pour vous montrer comment écrire du code de test. Notez que les signatures utilisent les macros TEST_CLASS et TEST_METHOD, qui rendent les méthodes découvrables à partir de la fenêtre **Explorateur de tests**.
 
@@ -124,7 +124,7 @@ Vous pouvez ajouter des *caractéristiques* aux méthodes de test pour spécifie
    > [!NOTE]
    > L’intégration de CTest à **l’Explorateur de tests** n’est pas encore disponible. Exécutez des tests CTest à partir du menu principal de CMake.
 
-1. Si vos tests n’apparaissent pas tous dans la fenêtre, générez le projet de test en cliquant avec le bouton droit sur son nœud dans **l’Explorateur de solutions** et en choisissant **Générer** ou **Régénérer**.
+1. Si tous vos tests ne sont pas visibles dans la fenêtre, générez le projet de test en cliquant avec le bouton droit sur son nœud dans **l’Explorateur de solutions** et en choisissant **Générer** ou **Régénérer**.
 
 1. Dans **l’Explorateur de tests**, choisissez **Exécuter tout** ou sélectionnez les tests spécifiques à exécuter. Cliquez avec le bouton droit sur un test pour accéder à d’autres options, notamment son exécution en mode débogage avec des points d’arrêt activés. Une fois tous les tests exécutés, la fenêtre montre quels tests ont réussi et ceux qui ont échoué :
 
@@ -140,7 +140,7 @@ Pour connaître les bonnes pratiques relatives aux tests unitaires, consultez [C
 
 **Visual Studio 2017 et ultérieur (éditions Professional et Enterprise)**
 
-[CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) vous permet d’afficher rapidement l’état d’un test unitaire sans quitter l’éditeur de code. Vous pouvez initialiser CodeLens pour un projet de test unitaire C++ de l’une des manières suivantes :
+[CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) vous permet de voir rapidement l’état d’un test unitaire sans quitter l’éditeur de code. Vous pouvez initialiser CodeLens pour un projet de test unitaire C++ de l’une des manières suivantes :
 
 - Modifiez et générez votre projet de test ou solution.
 - Régénérez votre projet ou solution.

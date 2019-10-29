@@ -1,5 +1,5 @@
 ---
-title: Création d’une Association entre des entités | Microsoft Docs
+title: Création d’une association entre des entités | Microsoft Docs
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -21,61 +21,61 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c285b699487bd761447e5fbdf6ccd77987a8c0a8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ee767ded0687baa09653bd82785b68bee7fa0ebd
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62952891"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72981094"
 ---
-# <a name="create-an-association-between-entities"></a>Créer une association entre entités
-  Vous pouvez définir des relations entre des entités dans votre modèle de connectivité de données métiers (BDC) en créant des associations. Visual Studio génère des méthodes qui fournissent des consommateurs du modèle des informations sur chaque association. Ces méthodes peuvent être consommées par les composants WebPart SharePoint, des listes ou des applications personnalisées pour afficher les relations entre les données dans une interface utilisateur (IU).
+# <a name="create-an-association-between-entities"></a>Créer une association entre des entités
+  Vous pouvez définir des relations entre des entités dans votre modèle de connectivité de données métiers (BDC) en créant des associations. Visual Studio génère des méthodes qui fournissent aux consommateurs du modèle des informations sur chaque association. Ces méthodes peuvent être consommées par des composants WebPart SharePoint, des listes ou des applications personnalisées pour afficher les relations de données dans une interface utilisateur (IU).
 
 ## <a name="create-an-association"></a>Créer une association
- Créez une association en choisissant le **Association** contrôle dans Visual Studio **boîte à outils**, en choisissant la première entité (appelée l’entité source), puis en choisissant la deuxième entité (appelée la entité de destination). Vous pouvez définir les détails de l’association dans le **Éditeur d’associations**. Pour plus d'informations, voir [Procédure : Créer une association entre entités](../sharepoint/how-to-create-an-association-between-entities.md).
+ Créez une association en choisissant le contrôle d' **Association** dans la **boîte à outils**de Visual Studio, en choisissant la première entité (appelée entité source), puis la deuxième entité (appelée entité de destination). Vous pouvez définir les détails de l’Association dans l' **éditeur d’associations**. Pour plus d’informations, consultez [procédure : créer une association entre des entités](../sharepoint/how-to-create-an-association-between-entities.md).
 
 ## <a name="association-methods"></a>Méthodes d’association
- Applications telles que les composants WebPart SharePoint business données consomment des associations en appelant des méthodes dans la classe de service d’une entité. Vous pouvez ajouter des méthodes à la classe de service d’une entité en les sélectionnant dans le **Éditeur d’associations**.
+ Les applications telles que les WebParts de données métier SharePoint utilisent des associations en appelant des méthodes dans la classe de service d’une entité. Vous pouvez ajouter des méthodes à la classe de service d’une entité en les sélectionnant dans l' **éditeur d’associations**.
 
- Par défaut, le **Éditeur d’associations** ajoute une méthode de Navigation de l’Association aux entités source et de destination. Dans l’entité source, une méthode de Navigation de l’Association permet aux consommateurs de récupérer une liste d’entités de destination. Dans l’entité de destination, une méthode de Navigation de l’Association permet aux consommateurs de récupérer l’entité source qui est lié à une entité de destination.
+ Par défaut, l' **éditeur d’associations** ajoute une méthode de navigation d’association aux entités source et de destination. Une méthode de navigation d’association dans l’entité source permet aux consommateurs de récupérer une liste d’entités de destination. Une méthode de navigation d’association dans l’entité de destination permet aux consommateurs de récupérer l’entité source qui est associée à une entité de destination.
 
- Vous devez ajouter le code pour chacune de ces méthodes pour retourner les informations appropriées. Vous pouvez également ajouter d’autres types de méthodes pour prendre en charge des scénarios plus avancés. Pour plus d’informations sur chacune de ces méthodes, consultez [pris en charge les opérations](http://go.microsoft.com/fwlink/?LinkId=169286).
+ Vous devez ajouter le code à chacune de ces méthodes pour retourner les informations appropriées. Vous pouvez également ajouter d’autres types de méthodes pour prendre en charge des scénarios plus avancés. Pour plus d’informations sur chacune de ces méthodes, consultez [opérations prises en charge](/previous-versions/office/developer/sharepoint-2010/ee557363(v=office.14)).
 
 ## <a name="types-of-associations"></a>Types d’associations
- Vous pouvez créer deux types d’associations dans le concepteur BDC : des associations clé étrangère et des associations sans clé étrangère.
+ Vous pouvez créer deux types d’associations dans le concepteur BDC : associations de clé étrangère et associations de clé étrangère étrangères.
 
-### <a name="foreign-key-based-association"></a>Association de clé étrangère
- Vous pouvez créer une association de clé étrangère en liant un identificateur dans l’entité source pour les descripteurs de type définis dans l’entité de destination. Cette relation permet aux consommateurs du modèle fournir une interface utilisateur améliorée pour les utilisateurs. Par exemple, un formulaire dans Outlook qui permet à un utilisateur de créer une commande client qui peut afficher les clients dans une liste déroulante ; ou une liste de commandes client dans SharePoint qui permet aux utilisateurs d’ouvrir une page de profil pour un client.
+### <a name="foreign-key-based-association"></a>Association basée sur une clé étrangère
+ Vous pouvez créer une association basée sur une clé étrangère en associant un identificateur de l’entité source aux descripteurs de type définis dans l’entité de destination. Cette relation permet aux consommateurs du modèle de fournir une interface utilisateur améliorée pour leurs utilisateurs. Par exemple, un formulaire dans Outlook qui permet à un utilisateur de créer une commande client qui peut afficher des clients dans une liste déroulante ; ou une liste de commandes dans SharePoint qui permet aux utilisateurs d’ouvrir une page de profil pour un client.
 
- Pour créer une association de clé étrangère, concernent les identificateurs et descripteurs de type qui partagent les mêmes nom et type. Par exemple, vous pouvez créer une association de clé étrangère entre une `Contact` entité et un `SalesOrder` entité. Le `SalesOrder` renvoyait un `ContactID` descripteur de type dans le cadre du paramètre de retour des méthodes de recherche ou de recherche spécifique. Les deux descripteurs de type s’affichent dans le **Éditeur d’associations**. Pour créer une relation de clé étrangère entre la `Contact` entité et `SalesOrder` entité, choisissez le `ContactID` identificateur en regard de chacun de ces champs.
+ Pour créer une association de clé étrangère, associez les identificateurs et les descripteurs de type qui partagent le même nom et le même type. Par exemple, vous pouvez créer une association basée sur une clé étrangère entre une entité `Contact` et une entité `SalesOrder`. L’entité `SalesOrder` retourne un descripteur de type `ContactID` dans le cadre du paramètre de retour de la recherche ou de méthodes de recherche spécifiques. Les deux descripteurs de type s’affichent dans l' **éditeur d’associations**. Pour créer une relation de clé étrangère entre l’entité `Contact` et l’entité `SalesOrder`, choisissez l’identificateur `ContactID` en regard de chacun de ces champs.
 
- Ajoutez le code à la méthode de navigateur d’associations de l’entité source qui retourne une collection d’entités de destination. L’exemple suivant retourne les commandes pour un contact.
+ Ajoutez du code à la méthode du navigateur d’associations de l’entité source qui retourne une collection d’entités de destination. L’exemple suivant retourne les commandes client pour un contact.
 
  [!code-csharp[SP_BDC#7](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#7)]
  [!code-vb[SP_BDC#7](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#7)]
 
- Ajoutez le code à la méthode du navigateur de l’Association de l’entité de destination qui retourne une entité source. L’exemple suivant retourne le contact est lié à la commande client.
+ Ajoutez du code à la méthode du navigateur d’associations de l’entité de destination qui retourne une entité source. L’exemple suivant retourne le contact associé à la commande client.
 
  [!code-csharp[SP_BDC#8](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderservice.cs#8)]
  [!code-vb[SP_BDC#8](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderservice.vb#8)]
 
-### <a name="foreign-keyless-association"></a>Association sans clé étrangère
- Vous pouvez créer une association sans mappage des identificateurs pour les descripteurs de type de champ. Créez ce type d’association lorsque l’entité source ne dispose pas d’une relation directe avec l’entité de destination. Par exemple, un `SalesOrderDetail` table n’a pas d’une clé étrangère qui mappe à une clé primaire dans une `Contact` table.
+### <a name="foreign-keyless-association"></a>Association de clé étrangère étrangère
+ Vous pouvez créer une association sans mapper d’identificateurs aux descripteurs de type de champ. Créez ce type d’association lorsque l’entité source n’a pas de relation directe avec l’entité de destination. Par exemple, une table `SalesOrderDetail` n’a pas de clé étrangère mappée à une clé primaire dans une table `Contact`.
 
- Si vous souhaitez afficher des informations dans le `SalesOrderDetail` table qui est lié à un `Contact`, vous pouvez créer une association sans clé étrangère entre la `Contact` entité et `SalesOrderDetail` entité.
+ Si vous souhaitez afficher des informations dans la table `SalesOrderDetail` qui se réfère à un `Contact`, vous pouvez créer une association de clé étrangère étrangère entre l’entité `Contact` et `SalesOrderDetail` entité.
 
- Dans la méthode de Navigation de l’Association de la `Contact` entité, retournée le `SalesOrderDetail` entités en joignant les tables, ou en appelant une procédure stockée.
+ Dans la méthode de navigation d’association de l’entité `Contact`, retournez les entités `SalesOrderDetail` en joignant des tables ou en appelant une procédure stockée.
 
- L’exemple suivant renvoie des informations sur toutes les commandes client en joignant les tables.
+ L’exemple suivant retourne les détails de toutes les commandes en joignant les tables.
 
  [!code-csharp[SP_BDC#9](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#9)]
  [!code-vb[SP_BDC#9](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#9)]
 
- Dans la méthode de Navigation de l’Association de la `SalesOrderDetail` entité, retourner connexe `Contact`. Cela est illustré par l'exemple suivant.
+ Dans la méthode de navigation d’association de l’entité `SalesOrderDetail`, retournez le `Contact`associé. Cela est illustré par l'exemple suivant.
 
  [!code-csharp[SP_BDC#10](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderdetailservice.cs#10)]
  [!code-vb[SP_BDC#10](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb#10)]
 
 ## <a name="see-also"></a>Voir aussi
 - [Concevoir un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md)
-- [Guide pratique pour Créer une association entre entités](../sharepoint/how-to-create-an-association-between-entities.md)
+- [Comment : créer une association entre des entités](../sharepoint/how-to-create-an-association-between-entities.md)

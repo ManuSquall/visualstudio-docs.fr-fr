@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Utilisez un fichier de ressources pour spécifier des noms localisés, propriétés et autorisations | Microsoft Docs'
+title: 'Comment : utiliser un fichier de ressources pour spécifier des noms localisés, des propriétés et des autorisations | Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,37 +19,37 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2be88a29d3e9e3da9d1963aa1226ffca0a0a2bbd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fa2fec260921d66328b2c16075d44b38686c08de
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62813047"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72982555"
 ---
-# <a name="how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions"></a>Procédure : Utilisez un fichier de ressources pour spécifier des autorisations, les propriétés et les noms localisés
-  En utilisant un fichier de ressources, vous pouvez fournir des noms localisés, définir des propriétés et appliquer des autorisations tor objets qui sont définis dans un modèle de connectivité de données métiers (BDC). Pour spécifier ces informations, vous ajoutez un **ressource de connectivité de données métiers** élément à un projet qui contient un **modèle de connectivité de données métiers** élément. Puis vous spécifiez des noms, les propriétés et les autorisations en modifiant le code XML pour le fichier de ressources.
+# <a name="how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions"></a>Comment : utiliser un fichier de ressources pour spécifier des noms localisés, des propriétés et des autorisations
+  À l’aide d’un fichier de ressources, vous pouvez fournir des noms localisés, définir des propriétés et appliquer des autorisations correspondant aux objets définis dans un modèle de connectivité de données métiers (BDC). Pour spécifier ces informations, vous ajoutez un élément de **ressource de connectivité de données métiers** à un projet qui contient un élément de **modèle de connectivité de données métiers** . Ensuite, vous spécifiez des noms, des propriétés et des autorisations en modifiant le XML pour le fichier de ressources.
 
 ### <a name="to-add-a-bdc-resource-file-to-a-sharepoint-project"></a>Pour ajouter un fichier de ressources BDC à un projet SharePoint
 
-1. Dans **l’Explorateur de solutions**, développez le dossier du projet SharePoint, puis choisissez le dossier qui contient le modèle BDC.
+1. Dans **Explorateur de solutions**, développez le dossier du projet SharePoint, puis choisissez le dossier qui contient le modèle BDC.
 
 2. Dans la barre de menus, choisissez **Projet** > **Ajouter un nouvel élément**.
 
-3. Développez le **SharePoint** nœud, puis choisissez le **2010** nœud.
+3. Développez le nœud **SharePoint** , puis choisissez le nœud **2010** .
 
-4. Dans le **ajouter un nouvel élément** boîte de dialogue, sélectionnez **élément de ressource de connectivité de données métiers**.
+4. Dans la boîte de dialogue **Ajouter un nouvel élément** , choisissez **élément de ressource connectivité de données métiers**.
 
-5. Dans le **nom** zone, spécifiez le nom du fichier de ressources, puis choisissez le **ajouter** bouton.
+5. Dans la zone **nom** , spécifiez le nom du fichier de ressources, puis choisissez le bouton **Ajouter** .
 
-     Un fichier de ressources qui porte l’extension .bdcr est ajouté au projet et ouvert pour modification.
+     Un fichier de ressources avec l’extension. bdcr est ajouté au projet et ouvert pour modification.
 
-6. Ajoutez le code XML pour définir les noms localisés, les propriétés et les autorisations que vous souhaitez appliquer le modèle BDC.
+6. Ajoutez XML pour définir les noms localisés, les propriétés et les autorisations que vous souhaitez appliquer au modèle BDC.
 
-     Pour plus d’informations sur la définition de ces éléments, consultez [modèle et les fichiers de ressources](http://go.microsoft.com/fwlink/?LinkID=169283).
+     Pour plus d’informations sur la définition de ces éléments, consultez [fichiers de modèle et de ressources](/previous-versions/office/developer/sharepoint-2010/aa674515(v=office.14)).
 
 ## <a name="see-also"></a>Voir aussi
-- [Guide pratique pour Ajouter un fichier de modèle BDC existant à un projet SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)
+- [Comment : ajouter un fichier de modèle BDC existant à un projet SharePoint](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)
 - [Créer un modèle de connectivité de données métiers](../sharepoint/creating-a-business-data-connectivity-model.md)
-- [Guide pratique pour Créer un modèle BDC](../sharepoint/how-to-create-a-bdc-model.md)
-- [Guide pratique pour Inclure un assembly personnalisé dans une fonctionnalité BDC](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)
+- [Comment : créer un modèle BDC](../sharepoint/how-to-create-a-bdc-model.md)
+- [Comment : inclure un assembly personnalisé dans une fonctionnalité BDC](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)
 - [Intégration de données métiers dans SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)

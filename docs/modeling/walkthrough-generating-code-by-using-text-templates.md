@@ -10,12 +10,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6650edfc3c953d54578b800e213ee27092045e56
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9d24a2ea1b614cb0ca82bdcf1c4954aba9a9174c
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666934"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984407"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>Procédure pas à pas : générer du code à l’aide de modèles de texte
 
@@ -28,7 +28,7 @@ L’espace de noms System.Xml fournit des outils complets pour charger un docume
 Dans cet exemple de projet, un modèle lit un exemple de fichier XML et génère des classes qui correspondent à chaque type de nœud. Dans le code écrit manuellement, vous pouvez utiliser ces classes pour parcourir le fichier XML. Vous pouvez également exécuter votre application sur tout autre fichier qui utilise les mêmes types de nœuds. L’objectif de l’exemple de fichier XML est de fournir des exemples de tous les types de nœuds que vous souhaitez que votre application puisse gérer.
 
 > [!NOTE]
-> L’application [xsd. exe](http://go.microsoft.com/fwlink/?LinkId=178765), qui est incluse dans Visual Studio, peut générer des classes fortement typées à partir de fichiers XML. Le modèle présenté ici est fourni comme exemple.
+> L’application [xsd. exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe), qui est incluse dans Visual Studio, peut générer des classes fortement typées à partir de fichiers XML. Le modèle présenté ici est fourni comme exemple.
 
 Voici l’exemple de fichier :
 

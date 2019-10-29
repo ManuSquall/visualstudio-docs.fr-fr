@@ -10,12 +10,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7d873a3401e37a18b938cb5785f33eb0bc9b8fb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e476f1db1e30a04e67e6b53f593f55ee3867fae2
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666720"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985131"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Comment : ajouter une commande au menu contextuel
 
@@ -28,8 +28,6 @@ En résumé, les étapes sont effectuées dans le projet DslPackage, comme suit�
 2. [Mettez à jour le numéro de version du package dans package.TT](#version). Vous devez effectuer cette opération chaque fois que vous modifiez Commands.vsct.
 
 3. [Écrivez des méthodes dans la classe commandSet](#CommandSet) pour rendre la commande visible et pour définir ce que la commande doit faire.
-
-   Pour obtenir des exemples, consultez le [site Web du kit de développement logiciel de visualisation et de modélisation](http://go.microsoft.com/fwlink/?LinkID=185579).
 
 > [!NOTE]
 > Vous pouvez aussi modifier le comportement de certaines commandes existantes telles que Couper, Coller, Sélectionner tout et Imprimer en substituant des méthodes dans CommandSet.cs. Pour plus d’informations, consultez [Comment : modifier une commande de menu standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
@@ -362,7 +360,7 @@ La **méthode OnStatus n’est pas appelée**:
 ## <a name="see-also"></a>Voir aussi
 
 - [Écriture de code pour personnaliser un langage spécifique à un domaine](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-- [Guide pratique pour modifier une commande de menu standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)
+- [Comment : modifier une commande de menu standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)
 - [Déploiement de solutions de langage spécifique à un domaine](msi-and-vsix-deployment-of-a-dsl.md)
 - [Exemple de code : diagrammes de circuit](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
 

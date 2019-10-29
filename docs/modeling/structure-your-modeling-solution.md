@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 73a1c6458bf6afc5d6fce34208dd8c2c3ddda37f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: fecf0d146c1116e6ec6376ffd9ad929cc9179d1c
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748216"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985223"
 ---
 # <a name="structure-your-modeling-solution"></a>Structurer votre solution de modélisation
 
@@ -30,7 +30,7 @@ Dans un projet de taille moyenne ou grande, la structure de l'équipe est basée
 
 ### <a name="to-divide-an-application-into-layers"></a>Pour diviser une application en couches
 
-1. Vous devez baser la structure de vos solutions sur la structure de votre application, qu'il s'agisse d'une application web, d'une application de service ou d'une application de bureau. Une série d’architectures courantes est présentée dans [application archétypes dans le Guide de l’architecture des applications Microsoft](http://go.microsoft.com/fwlink/?LinkId=196681).
+1. Vous devez baser la structure de vos solutions sur la structure de votre application, qu'il s'agisse d'une application web, d'une application de service ou d'une application de bureau. Une série d’architectures courantes est présentée dans [application archétypes dans le Guide de l’architecture des applications Microsoft](/previous-versions/msp-n-p/ee658107(v=pandp.10)).
 
 2. Créez une solution Visual Studio, que nous appellerons la solution d’architecture. Nous l'utiliserons pour créer la conception globale du système. Elle contiendra des modèles, mais pas de code.
 
@@ -92,7 +92,7 @@ Par exemple, si vous utilisez fréquemment des solutions qui ont des couches Pr�
 
 ### <a name="to-create-a-solution-template"></a>Pour créer un modèle de solution
 
-1. [Téléchargez et installez l’Assistant exportation de modèle](http://go.microsoft.com/fwlink/?LinkId=196686).
+1. [Téléchargez et installez l’Assistant exportation de modèle](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ExportTemplateWizard).
 
 2. Créez la structure de solution que vous souhaitez utiliser comme point de départ pour de futurs projets.
 

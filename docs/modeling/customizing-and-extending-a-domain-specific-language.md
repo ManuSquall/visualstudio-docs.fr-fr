@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e6346f960efe1cd3af6ad9cbd070227d9171f01
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bd1e3c3769f30806f7430bd32ddcb82db378093d
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654031"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984270"
 ---
 # <a name="customize-and-extend-a-domain-specific-language"></a>Personnaliser et étendre un langage spécifique à un domaine
 
@@ -40,7 +40,7 @@ Le kit de développement logiciel (SDK) de modélisation et de visualisation de 
 |L’icône sur la forme change pour indiquer l’État.|Définissez la visibilité du mappage de l’élément décoratif dans la fenêtre Détails DSL. Localisez plusieurs décorateurs d’images à la même position. Consultez [mise à jour des formes et des connecteurs pour refléter le modèle](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md).<br /><br /> Ou substituez `ImageField.GetDisplayImage()`. Consultez l’exemple dans <xref:Microsoft.VisualStudio.Modeling.Diagrams.ImageField>.|
 |Définir une image d’arrière-plan sur n’importe quelle forme|Remplacez InitializeInstanceResources () pour ajouter un ImageField ancré.|
 |Imbriquer des formes à n’importe quelle profondeur|Configurez une arborescence d’incorporation récursive. Définissez BoundsRules pour contenir les formes.|
-|Attachez des connecteurs à des points fixes sur les limites d’un élément.|Définissez les éléments terminaux incorporés, représentés par de petits ports sur le diagramme. Utilisez BoundsRules pour corriger les ports en place. Consultez l’exemple de schéma de circuit dans le [Kit de développement logiciel de visualisation et de modélisation](http://go.microsoft.com/fwlink/?LinkID=186128).|
+|Attachez des connecteurs à des points fixes sur les limites d’un élément.|Définissez les éléments terminaux incorporés, représentés par de petits ports sur le diagramme. Utilisez BoundsRules pour corriger les ports en place. Consultez l’exemple de schéma de circuit dans le [Kit de développement logiciel de visualisation et de modélisation](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db).|
 |Champ de texte affiche une valeur dérivée d’autres valeurs.|Mappez l’élément décoratif de texte à une propriété de domaine de stockage calculée ou personnalisée. Pour plus d’informations, consultez [Propriétés de stockage calculées et personnalisées](../modeling/calculated-and-custom-storage-properties.md).|
 |Propager les modifications entre les éléments de modèle ou entre les formes|Consultez [validation dans un langage spécifique à un domaine](../modeling/validation-in-a-domain-specific-language.md).|
 |Propage les modifications à des ressources telles que d’autres extensions Visual Studio en dehors du magasin.|Consultez [les gestionnaires d’événements pour propager les modifications en dehors du modèle](../modeling/event-handlers-propagate-changes-outside-the-model.md).|

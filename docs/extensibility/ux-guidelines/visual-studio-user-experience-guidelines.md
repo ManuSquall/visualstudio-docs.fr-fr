@@ -8,19 +8,19 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f01ddcd75aa02a9444f014898efd114ebdcd59d6
-ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
+ms.openlocfilehash: 28cf2f0542cc76e5045dbf0780e9899983084760
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68315121"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72982389"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Lignes directrices pour l’expérience utilisateur dans Visual Studio
 Suivez les instructions de l’expérience utilisateur de Visual Studio si vous concevez de nouvelles fonctionnalités pour Visual Studio. Ces instructions contiennent des informations sur les modèles utilisateur communs et les modèles d’interaction afin que les concepteurs de nouvelles interfaces utilisateur puissent créer des expériences utilisateur qui sont transparents et cohérentes dans l’environnement de développement.
 
-Si vous développez des logiciels pour des produits Microsoft, Apprenez à utiliser ces ressources:
+Si vous développez des logiciels pour des produits Microsoft, Apprenez à utiliser ces ressources :
 
-- Les [instructions relatives à l’interaction avec l’expérience utilisateur Windows](https://docs.microsoft.com/windows/win32/uxguide/guidelines) sont les bases de l’apparence et du comportement du bureau Windows.
+- Les [instructions relatives à l’interaction avec l’expérience utilisateur Windows](/windows/win32/uxguide/guidelines) sont les bases de l’apparence et du comportement du bureau Windows.
 
 - Ces instructions de Visual Studio, qui sont des instructions spécifiques à la plateforme qui remplacent les instructions Windows générales, là où cela s’avère approprié pour notre environnement.
 

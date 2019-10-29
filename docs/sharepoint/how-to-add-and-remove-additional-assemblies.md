@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Ajouter et supprimer des assemblys supplémentaires | Microsoft Docs'
+title: 'Comment : ajouter et supprimer des assemblys supplémentaires | Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -14,101 +14,101 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fa25413a40c9b2333acbaba96d55008dbcebfd39
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bdcc1c478bead4df89622a7311b074965cdc0226
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967028"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985232"
 ---
-# <a name="how-to-add-and-remove-additional-assemblies"></a>Procédure : Ajouter et supprimer des assemblys supplémentaires
-  Si un package SharePoint dépend des autres assemblys pour des fonctionnalités ou données, vous pouvez ajouter les assemblys à votre package de solution (.wsp). De cette façon, le serveur SharePoint permet de s’assurer que les assemblys personnalisés sont installés avec un package.
+# <a name="how-to-add-and-remove-additional-assemblies"></a>Comment : ajouter et supprimer des assemblys supplémentaires
+  Si un package SharePoint dépend d’autres assemblys pour des fonctionnalités ou des données, vous pouvez ajouter les assemblys à votre package de solution (. wsp). De cette façon, le serveur SharePoint vérifie que les assemblys personnalisés sont installés avec un package.
 
  Vous pouvez également ajouter et modifier les contrôles sécurisés et les fichiers de ressources de classe associés aux assemblys.
 
-## <a name="add-additional-assemblies-safe-controls-and-class-resources"></a>Ajouter des assemblys supplémentaires, les contrôles sécurisés et les ressources de classe
- Vous pouvez ajouter des assemblys supplémentaires dans le package de solution SharePoint. Déploiement des assemblys supplémentaires dans une solution bac à sable sur le global assembly cache, mais les éléments de projet SharePoint dans une solution bac à sable sont ajoutés à la base de données de contenu. Vous pouvez également ajouter des contrôles sécurisés et les ressources de classe à ces assemblys supplémentaires. Pour plus d’informations sur les contrôles sécurisés, consultez [Fourniture d'informations de création de packages et de déploiement dans des éléments de projet](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) ou « Création d’une entrée SafeControl » dans [déploiement de composants WebPart dans SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=245505).
+## <a name="add-additional-assemblies-safe-controls-and-class-resources"></a>Ajouter des assemblys, des contrôles sécurisés et des ressources de classe supplémentaires
+ Vous pouvez ajouter des assemblys supplémentaires dans le package de solution SharePoint. Les assemblys supplémentaires d’une solution bac à sable (sandbox) sont déployés sur le Global Assembly Cache, mais les éléments de projet SharePoint dans une solution bac à sable (sandbox) sont ajoutés à la base de données de contenu. Vous pouvez également ajouter des contrôles sécurisés et des ressources de classe à ces assemblys supplémentaires. Pour plus d’informations sur les contrôles sécurisés, consultez [fourniture d’informations sur l’empaquetage et le déploiement dans des éléments de projet](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) ou « création d’une entrée SafeControl » dans déploiement d' [composants WebPart dans SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/cc768621(v=office.14)).
 
 #### <a name="to-add-an-existing-assembly"></a>Pour ajouter un assembly existant
 
-1. Ouvrez le **Package Designer**. Pour plus d'informations, voir [Procédure : Personnaliser un Package de Solution SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).
+1. Ouvrez le **Concepteur de packages**. Pour plus d’informations, consultez [Comment : personnaliser un package de solution SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).
 
-2. Choisissez le **avancé** onglet.
+2. Choisissez l’onglet **avancé** .
 
-3. Choisissez le **ajouter** bouton, puis choisissez **ajouter un Assembly existant** dans la liste.
+3. Cliquez sur le bouton **Ajouter** , puis choisissez **Ajouter un assembly existant** dans la liste.
 
-     Le **ajouter un Assembly existant** boîte de dialogue s’affiche.
+     La boîte de dialogue **Ajouter un assembly existant** s’affiche.
 
-4. Choisissez le bouton de sélection (![ellipse de concepteur ASP.NET Mobile](../sharepoint/media/mwellipsis.gif "ellipse de concepteur ASP.NET Mobile")), puis choisissez l’assembly que vous souhaitez ajouter. Nous vous recommandons d’utiliser un chemin d’accès relatif à l’assembly sélectionné à des fins de portabilité.
+4. Cliquez sur les points de suspension (![ellipse ASP.net Mobile designer](../sharepoint/media/mwellipsis.gif "Bouton de sélection du concepteur ASP.NET mobile")), puis sélectionnez l’assembly que vous souhaitez ajouter. Nous vous recommandons d’utiliser un chemin d’accès relatif à l’assembly sélectionné à des fins de portabilité.
 
-5. Pour le **cible de déploiement**, choisissez le **GlobalAssemblyCache** case d’option pour déployer l’assembly dans le global assembly cache, ou choisissez le **WebApplication** option bouton pour déployer l’assembly dans le dossier WebApplication sur le serveur qui exécute SharePoint.
+5. Pour la **cible de déploiement**, sélectionnez la case d’option **GlobalAssemblyCache** pour déployer l’assembly sur le global assembly cache ou choisissez la case d’option **WebApplication** pour déployer l’assembly dans le dossier WebApplication du serveur qui exécute SharePoint.
 
-#### <a name="to-add-an-assembly-from-project-output"></a>Ajouter un assembly à partir de la sortie du projet
+#### <a name="to-add-an-assembly-from-project-output"></a>Pour ajouter un assembly à partir de la sortie du projet
 
-1. Ouvrez le **Package Designer**.
+1. Ouvrez le **Concepteur de packages**.
 
-     Pour plus d'informations, voir [Procédure : Personnaliser un package de solution SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).
+     Pour plus d’informations, consultez [Comment : personnaliser un package de solution SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).
 
-2. Choisissez le **avancé** onglet.
+2. Choisissez l’onglet **avancé** .
 
-3. Choisissez le **ajouter** bouton, puis choisissez **ajouter un Assembly à partir de la sortie du projet** dans la liste.
+3. Cliquez sur le bouton **Ajouter** , puis choisissez **Ajouter un assembly à partir** de la sortie du projet dans la liste.
 
-     Le **ajouter un Assembly à partir de la sortie du projet** boîte de dialogue s’affiche.
+     La boîte **de dialogue Ajouter un assembly à partir de la sortie du projet** s’affiche.
 
-4. Dans le **projet Source** liste, puis choisissez le projet source que vous souhaitez ajouter.
+4. Dans la liste **projet source** , choisissez le projet source que vous souhaitez ajouter.
 
-5. Pour le **cible de déploiement**, choisissez le **GlobalAssemblyCache** case d’option pour déployer l’assembly dans le global assembly cache, ou choisissez le **WebApplication** option bouton pour déployer l’assembly dans le dossier WebApplication sur le serveur qui exécute SharePoint.
+5. Pour la **cible de déploiement**, sélectionnez la case d’option **GlobalAssemblyCache** pour déployer l’assembly sur le global assembly cache ou choisissez la case d’option **WebApplication** pour déployer l’assembly dans le dossier WebApplication du serveur qui exécute SharePoint.
 
 #### <a name="to-add-a-safe-control"></a>Pour ajouter un contrôle sécurisé
 
-1. Ouvrez le **modifier un Assembly existant** boîte de dialogue. Pour ce faire, ouvrez le Concepteur de packages, choisissez le **avancé** onglet, choisissez un assembly, puis le **modifier** bouton.
+1. Ouvrez la boîte de dialogue **modifier un assembly existant** . Pour ce faire, ouvrez le concepteur de packages, choisissez l’onglet **avancé** , choisissez un assembly, puis cliquez sur le bouton **modifier** .
 
-2. Dans le **contrôles sécurisés** volet, choisissez le **cliquez ici pour ajouter un nouvel élément** bouton.
+2. Dans le volet **contrôles sécurisés** , choisissez le bouton **cliquez ici pour ajouter un nouvel élément** .
 
-3. Dans le **nom de l’Assembly** colonne, entrez le nom de l’assembly.
+3. Dans la colonne nom de l' **assembly** , entrez le nom de l’assembly.
 
-4. Dans le **Namespace** colonne, entrez le nom de l’espace de noms pour le contrôle sécurisé.
+4. Dans la colonne **espace de noms** , entrez le nom de l’espace de noms pour le contrôle sécurisé.
 
-5. Dans le **nom de Type** colonne, entrez le nom du type.
+5. Dans la colonne **nom de type** , entrez le nom du type.
 
 #### <a name="to-add-a-class-resource"></a>Pour ajouter une ressource de classe
 
-1. Ouvrez le **modifier un Assembly existant** boîte de dialogue. Pour ce faire, ouvrez le Concepteur de packages, choisissez le **avancé** onglet, choisissez un assembly, puis le **modifier** bouton.
+1. Ouvrez la boîte de dialogue **modifier un assembly existant** . Pour ce faire, ouvrez le concepteur de packages, choisissez l’onglet **avancé** , choisissez un assembly, puis cliquez sur le bouton **modifier** .
 
-2. Dans le **ressources de classe** volet, choisissez le **cliquez ici pour ajouter un nouvel élément** bouton.
+2. Dans le volet ressources de la **classe** , cliquez sur le bouton **cliquez ici pour ajouter un nouvel élément** .
 
-3. Dans le **nom de fichier** colonne, choisissez les points de suspension (![ellipse de concepteur ASP.NET Mobile](../sharepoint/media/mwellipsis.gif "ellipse de concepteur ASP.NET Mobile")), puis choisissez la ressource de classe que vous souhaitez ajouter.
+3. Dans la colonne **nom de fichier** , choisissez les points de suspension (![ellipse ASP.net Mobile designer](../sharepoint/media/mwellipsis.gif "Bouton de sélection du concepteur ASP.NET mobile")), puis choisissez la ressource de classe que vous souhaitez ajouter.
 
-## <a name="delete-custom-assemblies"></a>Supprimer des assemblys personnalisés
- Vous pouvez supprimer des assemblys à partir d’un package SharePoint, ou supprimer des contrôles sécurisés et les ressources de classe à partir des assemblys existants.
+## <a name="delete-custom-assemblies"></a>Supprimer les assemblys personnalisés
+ Vous pouvez supprimer des assemblys d’un package SharePoint, ou supprimer des contrôles sécurisés et des ressources de classe d’assemblys existants.
 
 #### <a name="to-delete-an-existing-assembly"></a>Pour supprimer un assembly existant
 
-1. Ouvrez le **Package Designer**. Pour plus d'informations, voir [Procédure : Personnaliser un package de solution SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).
+1. Ouvrez le **Concepteur de packages**. Pour plus d’informations, consultez [Comment : personnaliser un package de solution SharePoint](../sharepoint/how-to-customize-a-sharepoint-solution-package.md).
 
-2. Choisissez le **avancé** onglet.
+2. Choisissez l’onglet **avancé** .
 
-3. Dans le **des assemblys supplémentaires** volet, cliquez sur l’assembly personnalisé que vous souhaitez supprimer.
+3. Dans le volet **assemblys supplémentaires** , choisissez l’assembly personnalisé que vous souhaitez supprimer.
 
-4. Choisissez le **supprimer** bouton.
+4. Choisissez le bouton **supprimer** .
 
-#### <a name="to-delete-a-safe-control-for-an-assembly"></a>Pour supprimer un contrôle sécurisé pour un assembly
+#### <a name="to-delete-a-safe-control-for-an-assembly"></a>Pour supprimer un contrôle sécurisé d’un assembly
 
-1. Ouvrez le **modifier un Assembly existant** boîte de dialogue. Pour ce faire, ouvrez le Concepteur de packages, choisissez le **avancé** onglet, choisissez un assembly, puis le **modifier** bouton.
+1. Ouvrez la boîte de dialogue **modifier un assembly existant** . Pour ce faire, ouvrez le concepteur de packages, choisissez l’onglet **avancé** , choisissez un assembly, puis cliquez sur le bouton **modifier** .
 
 2. Choisissez le contrôle sécurisé que vous souhaitez supprimer.
 
-3. Choisissez la touche SUPPR.
+3. Choisissez la touche Suppr.
 
 #### <a name="to-delete-a-class-resource-for-an-assembly"></a>Pour supprimer une ressource de classe pour un assembly
 
-1. Ouvrez le **modifier un Assembly existant** boîte de dialogue. Pour ce faire, ouvrez le Concepteur de packages, choisissez le **avancé** onglet, choisissez un assembly, puis le **modifier** bouton.
+1. Ouvrez la boîte de dialogue **modifier un assembly existant** . Pour ce faire, ouvrez le concepteur de packages, choisissez l’onglet **avancé** , choisissez un assembly, puis cliquez sur le bouton **modifier** .
 
 2. Choisissez la ressource de classe que vous souhaitez supprimer.
 
-3. Choisissez la touche SUPPR.
+3. Choisissez la touche Suppr.
 
 ## <a name="see-also"></a>Voir aussi
-- [Créer des fonctionnalités de SharePoint](../sharepoint/creating-sharepoint-features.md)
-- [Guide pratique pour Personnaliser une fonctionnalité SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)
-- [Guide pratique pour Ajouter et supprimer des éléments dans des fonctionnalités SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)
+- [Créer des fonctionnalités SharePoint](../sharepoint/creating-sharepoint-features.md)
+- [Guide pratique pour personnaliser une fonctionnalité SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md)
+- [Comment : ajouter et supprimer des éléments dans des fonctionnalités SharePoint](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)

@@ -11,16 +11,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d0ad3ac3c4efa6be136fa85ee0c8abbe3632e53f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 7707d993ac5fb6f73060d0f862c828e67c833872
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62958753"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985210"
 ---
-# <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Tutoriel : Bien démarrer avec l’infrastructure web Flask dans Visual Studio
+# <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Tutoriel : Bien démarrer avec le framework web Flask dans Visual Studio
 
-[Flask](http://flask.pocoo.org/) est un framework Python léger pour les applications web, qui fournit les éléments de base pour le routage d’URL et le rendu de page.
+[Flask](https://palletsprojects.com/p/flask/) est un framework Python léger pour les applications web, qui fournit les éléments de base pour le routage d’URL et le rendu de page.
 
 Flask est appelée une « micro-infrastructure », car elle ne fournit pas directement des fonctionnalités comme validation de formulaire, l’abstraction des bases de données, l’authentification, etc. Au lieu de cela, ces fonctionnalités sont fournies par des packages Python spéciaux, appelés des *extensions* Flask. Les extensions s’intègrent de façon transparente à Flask : ils apparaissent donc comme s’ils faisaient partie de Flask lui-même. Par exemple, Flask ne fournit pas lui-même un moteur de modèle de page. La création de modèles est fournie par des extensions comme Jinja et Jade, comme illustré dans ce tutoriel.
 
@@ -38,7 +38,7 @@ Au cours de ces étapes, vous créez une même solution Visual Studio qui contie
 > [!Note]
 > Ce tutoriel diffère de [Flask - Démarrage rapide](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json) en cela que vous en apprenez plus sur Flask et que vous découvrez comment utiliser les différents modèles de projet Flask qui constituent un point de départ plus avancé pour vos propres projets. Par exemple, les modèles de projet installent automatiquement le package Flask lors de la création d’un projet, ce qui vous évite de devoir l’installer manuellement, comme expliqué dans le guide de démarrage rapide.
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Configuration requise
 
 - Visual Studio 2017 ou ultérieur sur Windows avec les options suivantes :
   - La charge de travail **Développement Python** (onglet **Charge de travail** dans le programme d’installation). Pour obtenir des instructions, consultez [Installer la prise en charge de Python dans Visual Studio](installing-python-support-in-visual-studio.md).
@@ -48,7 +48,7 @@ Les modèles de projet Flask sont inclus dans toutes les versions antérieures d
 
 Le développement Python n’est actuellement pas pris en charge dans Visual Studio pour Mac. Sur Mac et Linux, utilisez [l’extension Python dans Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial).
 
-## <a name="step-1-1-create-a-visual-studio-project-and-solution"></a>Étape 1-1 : Créer un projet et une solution Visual Studio
+## <a name="step-1-1-create-a-visual-studio-project-and-solution"></a>Étape 1-1 : créer un projet et une solution Visual Studio
 
 1. Dans Visual Studio, sélectionnez **Fichier** > **Nouveau** > **Projet**, recherchez « Flask », puis sélectionnez le modèle**Projet web Flask vide**. (Le modèle se trouve également sous **Python** > **Web** dans la liste de gauche.)
 
@@ -59,8 +59,8 @@ Le développement Python n’est actuellement pas pris en charge dans Visual Stu
     - **Nom** : définissez le nom du projet Visual Studio sur **BasicProject**. Ce nom est également utilisé pour le projet Flask.
     - **Emplacement** : spécifiez un emplacement où créer la solution et le projet Visual Studio.
     - **Nom de la solution** : défini sur **LearningFlask**, qui convient pour la solution en tant que conteneur pour plusieurs projets de ce tutoriel.
-    - **Créer le répertoire pour la solution** : Laissez cette option activée (par défaut).
-    - **Créer un dépôt Git** : Sélectionnez cette option (désactivée par défaut) pour que Visual Studio crée un dépôt Git local au moment de la création de la solution. Si vous ne voyez pas cette option, exécutez le programme d’installation de Visual Studio et ajoutez **Git pour Windows** et **Extension GitHub pour Visual Studio** sous l’onglet **Composants individuels** sous **Outils de code**.
+    - **Créer un répertoire pour la solution** : laissez cette option activée (par défaut).
+    - **Créez un référentiel Git** : sélectionnez cette option (qui est clairement par défaut), afin que Visual Studio crée un référentiel Git local lorsqu’il crée la solution. Si vous ne voyez pas cette option, exécutez le programme d’installation de Visual Studio et ajoutez **Git pour Windows** et **Extension GitHub pour Visual Studio** sous l’onglet **Composants individuels** sous **Outils de code**.
 
 1. Au bout d’un moment, Visual Studio affiche une boîte de dialogue indiquant **Des packages externes sont nécessaires pour ce projet** (voir plus bas). Cette boîte de dialogue s’affiche, car le modèle inclut un fichier *requirements.txt* référençant le dernier package Flask 1.x. (Sélectionnez **Afficher les packages requis** pour voir les dépendances exactes.)
 
@@ -68,7 +68,7 @@ Le développement Python n’est actuellement pas pris en charge dans Visual Stu
 
 1. Sélectionnez l’option **I will install them myself**. Vous créez brièvement l’environnement virtuel pour vous assurer qu’il est exclu du contrôle de code source. (L’environnement peut toujours être créé à partir de *requirements.txt*.)
 
-## <a name="step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository"></a>Étape 1-2 : Examiner les contrôles Git et publier sur un dépôt distant
+## <a name="step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository"></a>Étape 1-2 : examiner les contrôles Git et publiez sur un référentiel distant
 
 Étant donné que vous avez sélectionné **Créer un référentiel Git** dans la boîte de dialogue **Nouveau projet**, le projet est déjà validé par le contrôle de code source local dès que le processus de création est terminé. À cette étape, vous vous familiarisez avec les contrôles Git de Visual Studio et la fenêtre **Team Explorer** dans laquelle vous travaillez avec le contrôle de code source.
 
@@ -102,17 +102,17 @@ Le développement Python n’est actuellement pas pris en charge dans Visual Stu
 > [!Tip]
 > Pour naviguer rapidement dans **Team Explorer**, sélectionnez l’en-tête (qui s’appelle **Modifications** ou **Push** dans les images ci-dessus) pour afficher un menu contextuel des pages disponibles.
 
-### <a name="question-what-are-some-advantages-of-using-source-control-from-the-beginning-of-a-project"></a>Question : J'utilise un certificat X.509 avec mon service et j'obtiens une System.Security.Cryptography.CryptographicException. Quels sont les avantages de l’utilisation du contrôle de code source dès le début d’un projet ?
+### <a name="question-what-are-some-advantages-of-using-source-control-from-the-beginning-of-a-project"></a>Question : Quels sont les avantages de l’utilisation du contrôle de code source dès le début d’un projet ?
 
-Réponse : Tout d’abord, l’utilisation du contrôle de code source dès le début, en particulier si vous utilisez également un dépôt distant, assure une sauvegarde hors site régulière de votre projet. Contrairement au maintien d’un projet uniquement sur un système de fichiers local, le contrôle de code source fournit également un historique complet des modifications et permet de revenir facilement à un état précédent d’un seul fichier ou de tout le projet. L’historique des modifications aide à déterminer la cause des régressions (échecs de test). Par ailleurs, le contrôle de code source est essentiel si plusieurs personnes travaillent sur un projet, car il gère les remplacements et permet la résolution des conflits. Enfin, grâce au contrôle de code source, qui est fondamentalement une forme d’automatisation, vous êtes bien préparés à l’automatisation de la génération, des tests et de la gestion des versions. Il s’agit bien là de la première étape de l’utilisation de DevOps pour un projet, et étant donné qu’il y a peu d’obstacles à l’entrée, il n’y a vraiment aucune raison de ne pas utiliser le contrôle de code source dès le début.
+Réponse : Tout d’abord, l’utilisation du contrôle de code source dès le début, en particulier si vous utilisez également un référentiel distant, assure une sauvegarde hors site régulière de votre projet. Contrairement au maintien d’un projet uniquement sur un système de fichiers local, le contrôle de code source fournit également un historique complet des modifications et permet de revenir facilement à un état précédent d’un seul fichier ou de tout le projet. L’historique des modifications aide à déterminer la cause des régressions (échecs de test). Par ailleurs, le contrôle de code source est essentiel si plusieurs personnes travaillent sur un projet, car il gère les remplacements et permet la résolution des conflits. Enfin, grâce au contrôle de code source, qui est fondamentalement une forme d’automatisation, vous êtes bien préparés à l’automatisation de la génération, des tests et de la gestion des versions. Il s’agit bien là de la première étape de l’utilisation de DevOps pour un projet, et étant donné qu’il y a peu d’obstacles à l’entrée, il n’y a vraiment aucune raison de ne pas utiliser le contrôle de code source dès le début.
 
-Pour obtenir des informations supplémentaires sur le contrôle de code source et l’Automation, consultez [The Source of Truth: The Role of Repositories in DevOps](https://msdn.microsoft.com/magazine/mt763232), un article de MSDN Magazine écrit pour les applications mobiles qui s’applique également aux applications web.
+Pour poursuivre la discussion sur le contrôle de code source comme méthode d’automatisation, consultez Pour obtenir des informations supplémentaires sur le contrôle de code source en tant qu’automation, consultez [La Source de vérité : le rôle des référentiels dans DevOps](https://msdn.microsoft.com/magazine/mt763232), un article de MSDN Magazine écrit pour les applications mobiles qui s’applique également aux applications web.
 
-### <a name="question-can-i-prevent-visual-studio-from-auto-committing-a-new-project"></a>Question : J'utilise un certificat X.509 avec mon service et j'obtiens une System.Security.Cryptography.CryptographicException. Puis-je empêcher Visual Studio de valider automatiquement un nouveau projet ?
+### <a name="question-can-i-prevent-visual-studio-from-auto-committing-a-new-project"></a>Question : Puis-je empêcher Visual Studio de valider automatiquement un nouveau projet ?
 
 Réponse : Oui. Pour désactiver la validation automatique, accédez à la page **Paramètres** dans **Team Explorer**, sélectionnez **Git** > **Paramètres globaux**, désactivez l’option intitulée **Valider les modifications après une fusion par défaut**, puis sélectionnez **Mise à jour**.
 
-## <a name="step-1-3-create-the-virtual-environment-and-exclude-it-from-source-control"></a>Étape 1-3 : Créer l’environnement virtuel et l’exclure du contrôle de code source
+## <a name="step-1-3-create-the-virtual-environment-and-exclude-it-from-source-control"></a>Étape 1-3 : créer l’environnement virtuel et l’exclure du contrôle de code source
 
 Maintenant que vous avez configuré le contrôle de code source pour votre projet, vous pouvez créer l’environnement virtuel avec les packages Flask nécessaires pour le projet. Vous pouvez ensuite utiliser **Team Explorer** pour exclure le dossier de l’environnement du contrôle de code source.
 
@@ -126,9 +126,9 @@ Maintenant que vous avez configuré le contrôle de code source pour votre proje
 
 1. Cliquez sur **Créer** pour accepter les valeurs par défaut. (Vous pouvez modifier le nom de l’environnement virtuel si vous le souhaitez, ce qui modifie uniquement le nom du sous-dossier, mais `env` est une convention standard.)
 
-1. Donnez votre consentement aux privilèges d’administrateur si vous y êtes invité, puis patientez quelques minutes pendant que Visual Studio télécharge et installe les packages, ce qui pour Flask et ses dépendances signifie décompresser environ un millier de fichiers dans plus de 100 sous-dossiers. Vous pouvez consulter la progression dans la fenêtre **Sortie** de Visual Studio. Pendant que vous patientez, réfléchissez aux sections de questions ci-dessous. Vous pouvez également voir une description des dépendances de Flask dans la page [Installation de Flask](http://flask.pocoo.org/docs/1.0/installation/#installation) (flask.pcocoo.org).
+1. Donnez votre consentement aux privilèges d’administrateur si vous y êtes invité, puis patientez quelques minutes pendant que Visual Studio télécharge et installe les packages, ce qui pour Flask et ses dépendances signifie décompresser environ un millier de fichiers dans plus de 100 sous-dossiers. Vous pouvez consulter la progression dans la fenêtre **Sortie** de Visual Studio. Pendant que vous patientez, réfléchissez aux sections de questions ci-dessous. Vous pouvez également voir une description des dépendances de Flask dans la page [Installation de Flask](https://flask.palletsprojects.com/en/1.0.x/installation/#installation) (flask.pcocoo.org).
 
-1. Sur les contrôles Git de Visual Studio (dans la barre d’état), sélectionnez l’indicateur de modifications (affichant **99&#42;**), ce qui ouvre la page **Modifications** de **Team Explorer**.
+1. Sur les contrôles Git de Visual Studio (sur la barre d’état), sélectionnez l’indicateur de modifications (affichant **99&#42;** ), ce qui ouvre la page **Modifications** de **Team Explorer**.
 
     La création de l’environnement virtuel a entraîné des centaines de modifications, mais il n’est pas nécessaire de les inclure dans le contrôle de code source, car vous (ou toute autre personne clonant le projet) pouvez toujours recréer l’environnement à partir de *requirements.txt*.
 
@@ -140,17 +140,17 @@ Maintenant que vous avez configuré le contrôle de code source pour votre proje
 
 1. Entrez un message de validation et sélectionnez le bouton **Valider tout**, puis envoyez les validations à votre référentiel distant si vous le souhaitez.
 
-### <a name="question-why-do-i-want-to-create-a-virtual-environment"></a>Question : J'utilise un certificat X.509 avec mon service et j'obtiens une System.Security.Cryptography.CryptographicException. Pourquoi créer un environnement virtuel ?
+### <a name="question-why-do-i-want-to-create-a-virtual-environment"></a>Question : Pourquoi créer un environnement virtuel ?
 
 Réponse : Un environnement virtuel est un excellent moyen d’isoler les dépendances exactes de votre application. Cette isolation évite les conflits dans un environnement Python global et facilite les tests et la collaboration. Au fil du temps, quand vous développez une application, vous introduisez invariablement de nombreux packages Python très utiles. En conservant les packages dans un environnement virtuel spécifique au projet, vous pouvez facilement mettre à jour le fichier *requirements.txt* du projet qui décrit cet environnement, ce qui est inclus dans le contrôle de code source. Quand le projet est copié vers d’autres ordinateurs, dont des serveurs de builds, des serveurs de déploiement et d’autres ordinateurs de développement, il est facile de recréer l’environnement uniquement avec *requirements.txt* (c’est la raison pour laquelle l’environnement n’a pas besoin d’être dans le contrôle de code source). Pour plus d’informations, consultez [Utiliser des environnements virtuels](selecting-a-python-environment-for-a-project.md#use-virtual-environments).
 
-### <a name="question-how-do-i-remove-a-virtual-environment-thats-already-committed-to-source-control"></a>Question : J'utilise un certificat X.509 avec mon service et j'obtiens une System.Security.Cryptography.CryptographicException. Comment supprimer un environnement virtuel déjà validé auprès du contrôle de code source ?
+### <a name="question-how-do-i-remove-a-virtual-environment-thats-already-committed-to-source-control"></a>Question : Comment supprimer un environnement virtuel déjà validé par le contrôle de code source ?
 
-Réponse : Commencez par modifier votre fichier *.gitignore* pour exclure le dossier : recherchez la section à la fin avec le commentaire `# Python Tools for Visual Studio (PTVS)`, puis ajoutez une nouvelle ligne pour le dossier d’environnement virtuel, par exemple `/BasicProject/env`. (Étant donné que Visual Studio n’affiche pas le fichier dans l’**Explorateur de solutions**, ouvrez-le directement avec la commande de menu **Fichier** > **Ouvrir**  >   **Fichier**. Vous pouvez également ouvrir le fichier à partir de **Team Explorer** : dans la page **Paramètres**, sélectionnez **Paramètres du dépôt**, accédez à la section**Ignorer et fichiers d’attributs**, puis sélectionnez le lien **Modifier** situé en regard de **.gitignore**.)
+Réponse : tout d’abord, modifiez votre fichier *.gitignore* pour exclure le dossier : recherchez la section à la fin avec le commentaire `# Python Tools for Visual Studio (PTVS)` et ajoutez une nouvelle ligne pour le dossier d’environnement virtuel, par exemple `/BasicProject/env`. (Étant donné que Visual Studio n’affiche pas le fichier dans l’**Explorateur de solutions**, ouvrez-le directement avec la commande de menu **Fichier** > **Ouvrir**  >   **Fichier**. Vous pouvez également ouvrir le fichier à partir de **Team Explorer** : dans la page **Paramètres**, sélectionnez **Paramètres du dépôt**, accédez à la section**Ignorer et fichiers d’attributs**, puis sélectionnez le lien **Modifier** situé en regard de **.gitignore**.)
 
-Ensuite, ouvrez une fenêtre Commande, accédez au dossier, par exemple *BasicProject*, qui contient le dossier d’environnement virtuel, par exemple *env*, et exécutez `git rm -r env`. Validez ensuite ces modifications depuis la ligne de commande (`git commit -m 'Remove venv'`), ou depuis la page **Modifications** de **Team Explorer**.
+Ensuite, ouvrez une fenêtre de commande, accédez au dossier, par exemple *BasicProject*, qui contient le dossier d’environnement virtuel, par exemple *env* et exécutez `git rm -r env`. Validez ensuite ces modifications depuis la ligne de commande (`git commit -m 'Remove venv'`), ou depuis la page **Modifications** de **Team Explorer**.
 
-## <a name="step-1-4-examine-the-boilerplate-code"></a>Étape 1-4 : Examiner le code réutilisable
+## <a name="step-1-4-examine-the-boilerplate-code"></a>Étape 1-4 : examiner le code réutilisable
 
 1. Une fois la création du projet terminée, vous voyez la solution et le projet dans **l’Explorateur de solutions**, où le projet contient seulement deux fichiers, *app.py* et *requirements.txt* :
 
@@ -190,13 +190,13 @@ Ensuite, ouvrez une fenêtre Commande, accédez au dossier, par exemple *BasicPr
         return "Hello World!"
     ```
 
-### <a name="question-what-is-the-purpose-of-the-name-argument-to-the-flask-class"></a>Question : J'utilise un certificat X.509 avec mon service et j'obtiens une System.Security.Cryptography.CryptographicException. À quoi sert l’argument __name__ de la classe Flask ?
+### <a name="question-what-is-the-purpose-of-the-__name__-argument-to-the-flask-class"></a>Question : À quoi sert l’argument __name__ de la classe Flask ?
 
-Réponse : Cet argument correspond au nom du module ou du package de l’application, et il indique à Flask où rechercher les modèles, les fichiers statiques et d’autres ressources qui appartiennent à l’application. Pour les applications contenues dans un seul module, `__name__` est toujours la valeur appropriée. Il est également important pour les extensions qui ont besoin d’informations de débogage. Pour plus d’informations et des arguments supplémentaires, consultez la [documentation sur la classe Flask](http://flask.pocoo.org/docs/1.0/api/#flask.Flask) (flask.pocoo.org).
+Réponse : L’argument est le nom du module ou du package de l’application, et il indique à Flask où rechercher les modèles, les fichiers statiques et d’autres ressources qui appartiennent à l’application. Pour les applications contenues dans un seul module, `__name__` est toujours la valeur appropriée. Il est également important pour les extensions qui ont besoin d’informations de débogage. Pour plus d’informations et des arguments supplémentaires, consultez la [documentation sur la classe Flask](https://flask.palletsprojects.com/en/1.0.x/api/#flask.Flask) (flask.pocoo.org).
 
-### <a name="question-can-a-function-have-more-than-one-route-decorator"></a>Question : J'utilise un certificat X.509 avec mon service et j'obtiens une System.Security.Cryptography.CryptographicException. Une fonction peut-elle avoir plusieurs décorateurs de routes ?
+### <a name="question-can-a-function-have-more-than-one-route-decorator"></a>Question : Une fonction peut-elle avoir plusieurs décorateurs de routes ?
 
-Réponse : Oui, vous pouvez utiliser autant de décorateurs que vous le souhaitez si la même fonction sert plusieurs routes. Par exemple, pour utiliser la fonction `hello` à la fois pour « / » et pour « /hello », utilisez le code suivant :
+Réponse : Oui, vous pouvez utiliser autant de décorateurs que vous le souhaitez si la même fonction sert plusieurs routes. Par exemple, pour utiliser la fonction `hello` à la fois pour « / » et pour « /hello », utilisez le code suivant :
 
 ```python
 @app.route('/')
@@ -208,9 +208,9 @@ def hello():
 
 <a name="qa-url-variables"></a>
 
-### <a name="question-how-does-flask-work-with-variable-url-routes-and-query-parameters"></a>Question : J'utilise un certificat X.509 avec mon service et j'obtiens une System.Security.Cryptography.CryptographicException. Comment Flask fonctionne-t-il avec des routes d’URL et des paramètres de requête variables ?
+### <a name="question-how-does-flask-work-with-variable-url-routes-and-query-parameters"></a>Question : Comment Flask fonctionne-t-il avec les routes d’URL et les paramètres de requête des variables ?
 
-Réponse : Dans une route, vous marquez toutes les variables avec `<variable_name>`, et Flask passe la variable à la fonction en utilisant un argument nommé. La variable peut faire partie du chemin de l’URL ou d’un paramètre de requête. Par exemple, une route sous la forme `'/hello/<name>` génère un argument de chaîne appelé `name` pour la fonction, et l’utilisation de `?message=<msg>` dans la route analyse la valeur donnée pour le paramètre de requête "message=" et le passe à la fonction en tant que `msg` :
+Réponse : Dans une route, vous marquez toutes les variables avec `<variable_name>`, et Flask passe la variable à la fonction en utilisant un argument nommé. La variable peut faire partie du chemin de l’URL ou d’un paramètre de requête. Par exemple, une route sous la forme `'/hello/<name>` génère un argument de chaîne appelé `name` pour la fonction, et l’utilisation de `?message=<msg>` dans la route analyse la valeur donnée pour le paramètre de requête "message=" et le passe à la fonction en tant que `msg` :
 
 ```python
 @app.route('/hello/<name>?message=<msg>')
@@ -218,17 +218,17 @@ def hello(name, msg):
     return "Hello " + name + "! Message is " + msg + "."
 ```
 
-Pour changer the type, préfixez la variable avec `int`, `float`, `path` (qui accepte des barres obliques pour délimiter les noms de dossier) et `uuid`. Pour plus d’informations, consultez [Règles des variables](http://flask.pocoo.org/docs/1.0/quickstart/#variable-rules) dans la documentation de Flask.
+Pour changer the type, préfixez la variable avec `int`, `float`, `path` (qui accepte des barres obliques pour délimiter les noms de dossier) et `uuid`. Pour plus d’informations, consultez [Règles des variables](https://flask.palletsprojects.com/en/1.0.x/quickstart/#variable-rules) dans la documentation de Flask.
 
-Les paramètres de requête sont également disponibles via la propriété `request.args`, en particulier via la méthode`request.args.get`. Pour plus d’informations, consultez [L’objet Request](http://flask.pocoo.org/docs/1.0/quickstart/#the-request-object) dans la documentation de Flask.
+Les paramètres de requête sont également disponibles via la propriété `request.args`, en particulier via la méthode`request.args.get`. Pour plus d’informations, consultez [L’objet Request](https://flask.palletsprojects.com/en/1.0.x/quickstart/#the-request-object) dans la documentation de Flask.
 
-### <a name="question-can-visual-studio-generate-a-requirementstxt-file-from-a-virtual-environment-after-i-install-other-packages"></a>Question : J'utilise un certificat X.509 avec mon service et j'obtiens une System.Security.Cryptography.CryptographicException. Est-ce que Visual Studio peut générer un fichier requirements.txt à partir d’un environnement virtuel après l’installation d’autres packages ?
+### <a name="question-can-visual-studio-generate-a-requirementstxt-file-from-a-virtual-environment-after-i-install-other-packages"></a>Question : Est-ce que Visual Studio peut générer un fichier requirements.txt à partir d’un environnement virtuel après l’installation d’autres packages ?
 
 Réponse : Oui. Développez le nœud **Environnements Python**, cliquez avec le bouton droit sur votre environnement virtuel, puis sélectionnez la commande **Générer requirements.txt**. Il est bon d’utiliser régulièrement cette commande quand vous modifiez l’environnement, et d’envoyer les modifications à *requirements.txt* pour le contrôle de code source ainsi que d’autres modifications de code qui dépendent de cet environnement. Si vous configurez l’intégration continue sur un serveur de builds, vous devez générer le fichier et valider les modifications chaque fois que vous modifiez l’environnement.
 
-## <a name="step-1-5-run-the-project"></a>Étape 1-5 : Exécuter le projet
+## <a name="step-1-5-run-the-project"></a>Étape 1-5 : Exécuter le projet
 
-1. Dans Visual Studio, sélectionnez **Déboguer** > **Démarrer le débogage** (**F5**) ou utilisez le bouton **Serveur web** dans la barre d’outils (le navigateur affiché peut varier) :
+1. Dans Visual Studio, sélectionnez **Déboguer** > **Démarrer le débogage** (**F5**) ou utilisez le bouton **Serveur Web** dans la barre d’outils (le navigateur affiché peut varier) :
 
     ![Exécuter le bouton de la barre d’outils du serveur Web dans Visual Studio](media/tutorials-common/run-web-server-toolbar-button.png)
 
@@ -240,9 +240,9 @@ Réponse : Oui. Développez le nœud **Environnements Python**, cliquez avec le
 
 1. Lorsque vous avez terminé, arrêtez le serveur en fermant la fenêtre de console, ou à l’aide de la commande **Déboguer** > **Arrêter le débogage** dans Visual Studio.
 
-### <a name="question-whats-the-difference-between-using-the-debug-menu-commands-and-the-server-commands-on-the-projects-python-submenu"></a>Question : J'utilise un certificat X.509 avec mon service et j'obtiens une System.Security.Cryptography.CryptographicException. Quelle est la différence entre les commandes du menu Déboguer et les commandes de serveur dans le sous-menu Python du projet ?
+### <a name="question-whats-the-difference-between-using-the-debug-menu-commands-and-the-server-commands-on-the-projects-python-submenu"></a>Question : Quelle est la différence entre les commandes de menu Déboguer et les commandes de serveur dans le sous-menu Python du projet ?
 
-Réponse : En plus des commandes du menu **Déboguer** et des boutons de barre d’outils, vous pouvez également lancer le serveur avec les commandes **Python** > **Exécuter le serveur** ou **Python** > **Exécuter le serveur de débogage** dans le menu contextuel du projet. Les deux commandes ouvrent une fenêtre de console dans laquelle vous voyez l’URL locale (localhost:port) du serveur en cours d’exécution. Toutefois, vous devez ouvrir manuellement un navigateur avec cette URL, et l’exécution du serveur de débogage n’entraîne pas le démarrage automatique du débogueur Visual Studio. Vous pourrez attacher un débogueur au processus en cours d’exécution plus tard si vous le souhaitez, avec la commande **Déboguer** > **Attacher au processus**.
+Réponse : en plus des commandes de menu **Déboguer** et des boutons de barre d’outils, vous pouvez également lancer le serveur avec les commandes **Python** > **Exécuter le serveur** ou **Python** > **Exécuter le serveur de débogage** dans le menu contextuel du projet. Les deux commandes ouvrent une fenêtre de console dans laquelle vous voyez l’URL locale (localhost:port) du serveur en cours d’exécution. Toutefois, vous devez ouvrir manuellement un navigateur avec cette URL, et l’exécution du serveur de débogage n’entraîne pas le démarrage automatique du débogueur Visual Studio. Vous pourrez attacher un débogueur au processus en cours d’exécution plus tard si vous le souhaitez, avec la commande **Déboguer** > **Attacher au processus**.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
@@ -253,5 +253,5 @@ Réponse : En plus des commandes du menu **Déboguer** et des boutons de barre 
 
 ## <a name="go-deeper"></a>Approfondir la question
 
-- [Flask - Démarrage rapide](http://flask.pocoo.org/docs/1.0/quickstart/) (flask.pocoo.org)
-- Code source du tutoriel sur GitHub : [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)
+- [Flask - Démarrage rapide](https://flask.palletsprojects.com/en/1.0.x/quickstart/) (flask.pocoo.org)
+- Code source du tutoriel sur GitHub : [Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)

@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Importer une Page maître ou un thème | Microsoft Docs'
+title: 'Procédure : importer une page maître ou un thème | Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,48 +13,48 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6cac959fb4f9c52849e6e121943fd847deb923d0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2c5078d31e2dcb7f11e5c19e0f8cb228e2f75d50
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63427402"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984202"
 ---
-# <a name="how-to-import-a-master-page-or-theme"></a>Procédure : Importer une page maître ou un thème
-  Vous pouvez attribuer aux pages sur votre site SharePoint une apparence cohérente en créant et en utilisant des thèmes et des pages maîtres. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ne fournit pas les modèles pour ces éléments, mais vous pouvez les créer dans SharePoint Designer et importez-les dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Pour plus d’informations, consultez [bloc de construction : Pages et l’Interface utilisateur](http://go.microsoft.com/fwlink/?LinkID=182095) sur le site Web Microsoft.
+# <a name="how-to-import-a-master-page-or-theme"></a>Procédure : importer une page maître ou un thème
+  Vous pouvez attribuer à des pages de votre site SharePoint une apparence cohérente en créant et en utilisant des pages maîtres et des thèmes. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ne fournit pas de modèles pour ces éléments, mais vous pouvez les créer dans SharePoint Designer, puis les importer dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Pour plus d’informations, consultez [bloc de construction : pages et interface utilisateur](/previous-versions/office/developer/sharepoint-2010/ee539040(v=office.14)) sur le site Web de Microsoft.
 
 ### <a name="to-import-a-master-page-or-theme"></a>Pour importer une page maître ou un thème
 
 1. Dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], créez ou ouvrez un projet SharePoint.
 
-     Pour plus d’informations sur la création d’un projet SharePoint, consultez [SharePoint modèles d’élément de projet et le projet](../sharepoint/sharepoint-project-and-project-item-templates.md).
+     Pour plus d’informations sur la création d’un projet SharePoint, consultez modèles de projet [et d’élément de projet SharePoint](../sharepoint/sharepoint-project-and-project-item-templates.md).
 
 2. Dans la barre de menus, choisissez **Projet** > **Ajouter un nouvel élément**.
 
-3. Dans le **ajouter un nouvel élément** boîte de dialogue, développez le **SharePoint** nœud, puis choisissez le **2010** nœud.
+3. Dans la boîte de dialogue **Ajouter un nouvel élément** , développez le nœud **SharePoint** , puis choisissez le nœud **2010** .
 
-4. Dans la liste de modèles SharePoint, choisissez le **Module** modèle, puis spécifiez un nom pour le module.
+4. Dans la liste des modèles SharePoint, choisissez le modèle de **module** , puis spécifiez un nom pour le module.
 
-     Un module contient des fichiers (par exemple, page maître ou des fichiers de thème) pour le déploiement vers un emplacement que vous spécifiez dans SharePoint.
+     Un module contient des fichiers (par exemple, des pages maîtres ou des fichiers de thème) pour le déploiement vers un emplacement que vous spécifiez dans SharePoint.
 
-5. Dans le module, supprimez le fichier par défaut, qui est nommé *Sample.txt*.
+5. Dans le module, supprimez le fichier par défaut, qui est nommé *Sample. txt*.
 
 6. Choisissez le nœud du module.
 
-7. Dans la barre de menus, choisissez **projet** > **ajouter un élément existant**, puis choisissez le fichier de page ou un thème principal.
+7. Dans la barre de menus, choisissez **projet** > **Ajouter un élément existant**, puis choisissez la page maître ou le fichier de thème.
 
-     Les fichiers de page maître portent l’extension .master et fichiers de thème portent l’extension .thmx.
+     Les fichiers de pages maîtres ont une extension. Master, et les fichiers de thème ont une extension. thmx.
 
-8. Si vous avez ajouté une page maître, modifiez son **Deployment Conflict Resolution** à **automatique** dans les propriétés du module.
+8. Si vous avez ajouté une page maître, définissez son paramètre de **résolution de conflit de déploiement** sur **automatique** dans les propriétés du module.
 
     > [!NOTE]
-    > Erreurs peuvent se produire si le nom de la page maître est le même que le nom d’une page maître existante qui est marquée comme Page maître par défaut ou Page maître personnalisée. Pour plus d’informations sur la façon de résoudre ce problème, consultez [procédure pas à pas : Importer une page maître personnalisée et la page de site avec une image](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md).
+    > Des erreurs peuvent se produire si le nom de la page maître est identique au nom d’une page maître existante qui est marquée comme page maître par défaut ou page maître personnalisée. Pour plus d’informations sur la résolution de ce problème, consultez [procédure pas à pas : importer une page maître personnalisée et une page de site avec une image](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md).
 
-9. Dans le module, ouvrez *Elements.xml*.
+9. Dans le module, ouvrez *Elements. xml*.
 
-     Vous devez mettre à jour le *Elements.xml* fichier à référencer la page maître ou un thème que vous avez ajouté.
+     Vous devez mettre à jour le fichier *Elements. xml* pour faire référence à la page maître ou au thème que vous avez ajouté.
 
-10. Pour une page maître, remplacez le balisage de module existant par le balisage suivant.
+10. Pour une page maître, remplacez la balise de module existante par le balisage suivant.
 
     ```xml
     <Module Name="[Module Name]" Url="_catalogs/masterpage">
@@ -63,7 +63,7 @@ ms.locfileid: "63427402"
     </Module>
     ```
 
-     Pour un thème, remplacez le balisage de module existant par le balisage suivant.
+     Pour un thème, remplacez la balise de module existante par le balisage suivant.
 
     ```xml
     <Module Name="[Module Name]" Url="_catalogs/theme"
@@ -72,25 +72,25 @@ ms.locfileid: "63427402"
     </Module>
     ```
 
-     Veillez à remplacer les valeurs d’espace réservé par les noms réels du module et la page maître ou un thème.
+     Veillez à remplacer les valeurs d’espace réservé par les noms réels du module et par la page maître ou le thème.
 
-     L’attribut `Type="GhostableInLibrary"` indique que l’élément est ajouté à la base de données de contenu et le `Url` attribut du module spécifie l’emplacement stocker le fichier dans la base de données de contenu SharePoint.
+     L’attribut `Type="GhostableInLibrary"` indique que l’élément est ajouté à la base de données de contenu, et l’attribut `Url` du module spécifie l’emplacement où stocker le fichier dans la base de données de contenu SharePoint.
 
-11. Pour modifier l’étendue de déploiement pour une page maître, dans **l’Explorateur de solutions**, ouvrez le fichier de fonctionnalité dans le Concepteur de fonctionnalités, puis choisissez une nouvelle portée de déploiement à partir de la **étendue** liste.
+11. Pour modifier l’étendue du déploiement d’une page maître, dans **Explorateur de solutions**, ouvrez le fichier de fonctionnalité dans le concepteur de fonctionnalités, puis choisissez une nouvelle étendue de déploiement dans la liste **étendue** .
 
-     La valeur **Web** signifie que la page maître s’applique uniquement au site Web qui est actuellement spécifié dans le projet. La valeur **Site** signifie que la page maître s’applique à la collection de sites actuelle, qui inclut tous les sous-sites et le site web racine. Les autres valeurs ne s’appliquent pas.
+     Une valeur **Web** signifie que la page maître s’applique uniquement au site Web actuellement spécifié dans le projet. Une valeur de **site** signifie que la page maître s’applique à la collection de sites actuelle, qui comprend tous les sous-sites et le site Web racine. Les autres valeurs ne s’appliquent pas.
 
     > [!NOTE]
-    > Étant donné que les thèmes s’appliquent uniquement au niveau de la collection de sites, nous recommandons que vous ne définissez pas la portée d’un thème sur n’importe quelle autre que **Site**. Erreurs peuvent se produire si un thème est utilisé dans un sous-site.
+    > Étant donné que les thèmes s’appliquent uniquement au niveau de la collection de sites, nous vous recommandons de ne pas définir l’étendue d’un thème sur une autre valeur que **site**. Des erreurs peuvent se produire si un thème est utilisé dans un sous-site.
 
-12. Dans la barre de menus, choisissez **Build** > **déployer la Solution**.
+12. Dans la barre de menus, choisissez **générer** > **déployer la solution**.
 
-13. Pour vérifier si les fichiers ont été correctement déployées, ouvrez le site SharePoint, choisissez le **Actions du Site** menu, choisissez le **paramètres du Site** commande, puis choisissez le **Pages maîtres**  lien ou le **thèmes** lien.
+13. Pour vérifier si les fichiers ont été correctement déployés, ouvrez le site SharePoint, choisissez le menu **actions du site** , choisissez la commande **paramètres du site** , puis cliquez sur le lien **pages maîtres** ou sur le lien **thèmes** .
 
-     La liste des pages maîtres ou thèmes s’affiche et contient la page maître ou le thème que vous avez importé.
+     La liste des pages maîtres ou des thèmes apparaît et contient la page maître ou le thème que vous avez importé.
 
 ## <a name="see-also"></a>Voir aussi
-- [Pages maîtres](http://go.microsoft.com/fwlink/?LinkId=184955)
-- [Importation d’éléments d’un site SharePoint existant](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)
+- [Pages maîtres](/previous-versions/office/developer/sharepoint-2010/ms443795(v=office.14))
+- [Importation d’éléments à partir d’un site SharePoint existant](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)
 - [Créer des pages pour SharePoint](../sharepoint/creating-pages-for-sharepoint.md)
 - [Utiliser des modules pour inclure des fichiers dans la solution](../sharepoint/using-modules-to-include-files-in-the-solution.md)

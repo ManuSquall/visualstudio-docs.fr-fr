@@ -1,5 +1,5 @@
 ---
-title: Création de Pages d’Application pour SharePoint | Microsoft Docs
+title: Création de pages d’application pour SharePoint | Microsoft Docs
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,62 +16,62 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8ac9340ea853a1852d039f05a3ecbb100845ab84
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 47f403f4eec6ec66563ae88bec226e073f625716
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443542"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72981097"
 ---
 # <a name="create-application-pages-for-sharepoint"></a>Créer des pages d’application pour SharePoint
-  Un *page application* est une page Web ASP.NET qui est conçue pour une utilisation dans un site SharePoint Web. Pages d’application sont un type spécialisé de page ASP.NET. La principale différence entre une page d’application et une page ASP.NET standard est qu’une page d’application contient du contenu est fusionné avec une page maître SharePoint. Une page maître permet aux pages d’application à partager la même apparence et le même comportement que les autres pages sur un site.
+  Une *page d’application* est une page Web ASP.net conçue pour être utilisée sur un site Web SharePoint. Les pages d’application sont un type spécialisé de page ASP.NET. La principale différence entre une page d’application et une page ASP.NET standard est qu’une page d’application contient du contenu fusionné avec une page maître SharePoint. Une page maître permet aux pages d’application de partager la même apparence et le même comportement que les autres pages d’un site.
 
- Visual Studio vous permet de concevoir des pages d’application à l’aide d’un concepteur. Le concepteur affiche une zone de contenu pour chaque espace réservé de contenu qui est défini dans une page maître. Vous pouvez concevoir la page d’application en faisant glisser des contrôles à ces zones de contenu.
+ Visual Studio vous permet de concevoir des pages d’application à l’aide d’un concepteur. Le concepteur affiche une zone de contenu pour chaque espace réservé de contenu défini dans une page maître. Vous pouvez concevoir la page d’application en faisant glisser des contrôles vers ces zones de contenu.
 
 ## <a name="application-pages"></a>Pages d’application
- Pages d’application sont partagées entre tous les sites sur le serveur, tandis qu’une page de site est spécifique à un seul site. Pour plus d’informations, [les Types de pages SharePoint](http://go.microsoft.com/fwlink/?LinkID=211584).
+ Les pages d’application sont partagées entre tous les sites sur le serveur, alors qu’une page de site est spécifique à un site. Pour plus d’informations, retrouvez les [types de pages SharePoint](/previous-versions/office/developer/sharepoint-2010/aa979592(v=office.14)).
 
- Par défaut, la plupart des pages qui s’affichent lorsque vous créez un site SharePoint sont des pages de site. Une page de site peut être ajoutée à une bibliothèque de pages SharePoint. Les utilisateurs peuvent personnaliser une page de site à l’aide des outils tels que SharePoint Designer. Une page de site peut également héberger des fonctionnalités telles que les composants WebPart dynamiques et les Zones WebPart.
+ Par défaut, la plupart des pages qui s’affichent lorsque vous créez un site SharePoint sont des pages de site. Une page de site peut être ajoutée à une bibliothèque de pages SharePoint. Les utilisateurs peuvent personnaliser une page de site à l’aide d’outils tels que SharePoint Designer. Une page de site peut également héberger des fonctionnalités telles que des composants WebPart dynamiques et des zones de composants WebPart.
 
- Pages d’application ne peut pas effectuer les opérations suivantes. Toutefois, une page d’application est le meilleur type de page pour créer si vous souhaitez que la page contienne du code personnalisé. Bien que vous pouvez ajouter du code personnalisé à une page de site, le code s’arrête lorsque l’utilisateur personnalise la page à l’aide des outils tels que SharePoint Designer.
+ Les pages d’application ne peuvent pas effectuer ces opérations. Toutefois, une page d’application est le meilleur type de page à créer si vous souhaitez que la page contienne du code personnalisé. Bien que vous puissiez ajouter du code personnalisé à une page de site, le code cesse de s’exécuter lorsque l’utilisateur personnalise la page à l’aide d’outils tels que SharePoint Designer.
 
 > [!NOTE]
-> Visual Studio ne fournit pas les modèles qui vous aident à créer des pages de site pour un site SharePoint. Pour plus d’informations, consultez [les Types de pages SharePoint](http://go.microsoft.com/fwlink/?LinkID=211584).
+> Visual Studio ne fournit pas de modèles qui vous aident à créer des pages de site pour un site SharePoint. Pour plus d’informations, consultez [types de pages SharePoint](/previous-versions/office/developer/sharepoint-2010/aa979592(v=office.14)).
 
-## <a name="create-an-application-page"></a>Créer une page d’application
- Pour créer une page d’application, ajoutez un **Page Application** élément à un projet SharePoint. Lorsque vous créez une page d’application, Visual Studio ajoute les dossiers suivants à votre projet :
+## <a name="create-an-application-page"></a>Page créer une application
+ Pour créer une page d’application, ajoutez un élément de **page d’application** à un projet SharePoint. Lorsque vous créez une page d’application, Visual Studio ajoute les dossiers suivants à votre projet :
 
 |Dossier|Description|
 |------------|-----------------|
-|Dispositions|Correspond au répertoire virtuel _layouts du système de fichiers SharePoint.|
-|Sous-dossier dispositions|Contient les fichiers qui composent la page d’application. Par défaut, ce dossier a le même nom que votre projet. Vous pouvez renommer ce dossier à tout moment. Lorsque vous exécutez le projet, Visual Studio déploie ce dossier sur le répertoire virtuel _layouts du système de fichiers SharePoint.|
+|Dispositions|Mappe sur le répertoire virtuel _ layouts du système de fichiers SharePoint.|
+|Sous-dossier dispositions|Contient les fichiers qui composent la page de l’application. Par défaut, ce dossier porte le même nom que votre projet. Vous pouvez renommer ce dossier à tout moment. Quand vous exécutez le projet, Visual Studio déploie ce dossier dans le répertoire virtuel _ layouts du système de fichiers SharePoint.|
 
  Visual Studio ajoute les fichiers suivants à votre projet :
 
 |Fichier|Description|
 |----------|-----------------|
-|Fichier de page ASP.NET (*.aspx*)|Contient le balisage XML qui définit la page.|
-|Fichier de code de page application|Contient le code-behind de la page d’application. Ajoutez le code qui gère les événements à ce fichier.|
-|Fichier de code du Concepteur de page application|Contient le code qui est généré par le concepteur. Ne modifiez pas directement ce fichier.|
+|Fichier de page ASP.NET ( *. aspx*)|Contient le balisage XML qui définit la page.|
+|Fichier de code de la page d’application|Contient le code-behind de la page de l’application. Ajoutez du code qui gère les événements à ce fichier.|
+|Fichier de code du concepteur de pages d’application|Contient le code généré par le concepteur. Ne modifiez pas ce fichier directement.|
 
-## <a name="design-and-debug-an-application-page"></a>Conception et le débogage d’une page d’application
- Concevoir le contenu d’une page d’application à l’aide de la vue de concepteur dans Visual Studio. Ce concepteur s’affiche lorsque vous ouvrez la page d’application dans votre projet (en double-cliquant dessus ou en ouvrant le menu contextuel, puis en choisissant **ouvrir**), puis choisissez le **conception** bouton en bas de l’éditeur.
+## <a name="design-and-debug-an-application-page"></a>Concevoir et déboguer une page d’application
+ Concevez le contenu d’une page d’application à l’aide du mode concepteur dans Visual Studio. Ce concepteur s’affiche lorsque vous ouvrez la page d’application dans votre projet (en double-cliquant dessus ou en ouvrant le menu contextuel, puis en choisissant **ouvrir**), puis en sélectionnant le bouton **conception** en bas de l’éditeur.
 
 > [!NOTE]
-> Vous pouvez concevoir la page uniquement dans le **Source** vue du concepteur. Le **conception** vue du concepteur est désactivé pour les pages d’application.
+> Vous pouvez concevoir la page uniquement dans la vue **source** du concepteur. Le mode **Design** du concepteur est désactivé pour les pages d’application.
 
- Vous pouvez déboguer une page d’application même manière que vous le feriez avec d’autres éléments de projet SharePoint dans Visual Studio. Lorsque vous démarrez le débogueur Visual Studio, Visual Studio ouvre le site SharePoint.
+ Vous pouvez déboguer une page d’application comme vous le feriez pour d’autres éléments de projet SharePoint dans Visual Studio. Quand vous démarrez le débogueur Visual Studio, Visual Studio ouvre le site SharePoint.
 
- Pour afficher la page d’application, vous devez accéder manuellement à l’emplacement de la page d’application (par exemple : http://<em>nom_serveur</em>/_layouts/*Project_Name*  /ApplicationPage1.aspx).
+ Pour afficher la page de l’application, vous devez accéder manuellement à l’emplacement de la page de l’application (par exemple : http://<em>nom_serveur</em>/_layouts/*PROJECT_NAME*/ApplicationPage1.aspx).
 
- Pour plus d’informations sur le débogage de projets SharePoint, consultez [solutions SharePoint de résoudre les problèmes](../sharepoint/troubleshooting-sharepoint-solutions.md).
+ Pour plus d’informations sur le débogage des projets SharePoint, consultez [résoudre les problèmes liés aux solutions SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md).
 
-## <a name="choose-a-master-page"></a>Choisissez une page maître
- Par défaut, un **Page Application** élément fait référence à la page maître du site que vous utilisez pour déboguer votre projet. Que la page nommée V4.master, et vous le trouverez répertoriés dans le **galerie de pages maîtres** du site SharePoint.
+## <a name="choose-a-master-page"></a>Choisir une page maître
+ Par défaut, un élément de **page d’application** fait référence à la page maître du site que vous utilisez pour déboguer votre projet. Cette page est nommée v4. Master et vous pouvez la trouver dans la **Galerie de pages maîtres** du site SharePoint.
 
- Vous pouvez modifier explicitement la page maître qui est utilisé par la page d’application en définissant le `MasterPageFile` attribut de l’application `Page` élément. (Par exemple : `MasterPageFile="~/_layouts/applicationv4.master"`). En fait, vous devez définir cet attribut si des pages maîtres dynamiques ne sont pas activées sur le serveur SharePoint. Pour plus d’informations sur les pages maîtres dans SharePoint, consultez [Pages maîtres](http://go.microsoft.com/fwlink/?LinkID=169281).
+ Vous pouvez modifier explicitement la page maître utilisée par la page de l’application en définissant l’attribut `MasterPageFile` de l’élément `Page` de l’application. (Par exemple : `MasterPageFile="~/_layouts/applicationv4.master"`). En fait, vous devez définir cet attribut si les pages maîtres dynamiques ne sont pas activées sur le serveur SharePoint. Pour plus d’informations sur les pages maîtres dans SharePoint, consultez [pages maîtres](/previous-versions/office/developer/sharepoint-2010/ms443795(v=office.14)).
 
 ## <a name="see-also"></a>Voir aussi
-- [Développement SharePoint Foundation en profondeur](http://go.microsoft.com/fwlink/?LinkID=182103)
+- [Développement SharePoint Foundation en profondeur](/previous-versions/office/developer/sharepoint-2010/ee539092(v=office.14))
 - [Vue d'ensemble d’ASP.NET](/aspnet/overview)
 - [Pages Web ASP.NET](/aspnet/web-pages/index)

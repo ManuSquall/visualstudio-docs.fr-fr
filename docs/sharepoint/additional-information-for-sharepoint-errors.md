@@ -16,35 +16,35 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 362eb5fd1973035e31ccd301f6cc46a748a9b2ac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2c22f6570d741bce7f72ffd2c07f75cc8c6dc18b
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62988287"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985082"
 ---
 # <a name="additional-information-for-sharepoint-errors"></a>Informations supplémentaires pour les erreurs SharePoint
-  Vous trouverez une assistance de dépannage [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] erreurs et avertissements rubriques de dépannage et les forums publics des outils SharePoint.
+  Vous pouvez trouver de l’aide pour le dépannage des erreurs et des avertissements [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint Tools dans les rubriques de dépannage et les forums publics.
 
-## <a name="troubleshoot-errors-and-issues"></a>Résolution des problèmes et erreurs
- Pour obtenir une assistance avec quelques erreurs courantes et d’autres problèmes dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] outils SharePoint, consultez les rubriques suivantes :
+## <a name="troubleshoot-errors-and-issues"></a>Résoudre les erreurs et les problèmes
+ Pour obtenir de l’aide sur certaines erreurs courantes et d’autres problèmes dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] les outils SharePoint, consultez les rubriques suivantes :
 
 - [Résoudre les problèmes des solutions SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md)
 
 - [Déboguer des solutions SharePoint](../sharepoint/debugging-sharepoint-solutions.md)
 
-- [Résoudre les problèmes de déploiement et empaquetage de SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)
+- [Résoudre les problèmes d’empaquetage et de déploiement SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)
 
 ## <a name="other-resources"></a>Autres ressources
- Le tableau suivant répertorie les [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] forums et autres ressources disponibles des outils SharePoint.
+ Le tableau suivant répertorie les [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] les forums d’outils SharePoint et d’autres ressources disponibles.
 
 |Terme|Définition|
 |----------|----------------|
-|[Développement SharePoint](http://go.microsoft.com/fwlink/?LinkId=179593)|Propose un forum de questions sur le développement SharePoint dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|
-|[Forums Visual Studio](http://go.microsoft.com/fwlink/?LinkID=150452)|Propose un forum de questions [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|
-|[Aide et support Microsoft](http://go.microsoft.com/fwlink/?LinkID=108287)|Permet d'accéder aux articles de la Base de connaissances, ainsi qu'aux téléchargements, mises à jour, Webcasts de support technique et autres services.|
+|[Développement SharePoint](https://social.msdn.microsoft.com/Forums/office/home?forum=sharepointdevelopmentprevious)|Propose un forum de questions sur le développement SharePoint dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|
+|[Forums Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/home?category=visualstudio)|Propose un forum de questions sur [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].|
+|[Aide et support Microsoft](https://support.microsoft.com/)|Permet d'accéder aux articles de la Base de connaissances, ainsi qu'aux téléchargements, mises à jour, Webcasts de support technique et autres services.|
 
- Si vous ne trouvez toujours pas les réponses dont vous avez besoin, vous pouvez accéder à des options de support en ligne, telles que de contacter le Support technique Microsoft ou de rechercher des articles de la base de connaissances. Pour plus d’informations, consultez le [Microsoft Help and Support](http://go.microsoft.com/fwlink/?LinkID=155371) page.
+ Si vous ne trouvez toujours pas les réponses dont vous avez besoin, vous pouvez accéder aux options de support en ligne, telles que contacter les services de support technique Microsoft ou Rechercher des Articles de la base de connaissances. Pour plus d’informations, consultez la page [aide et support Microsoft](https://support.microsoft.com/) .
 
 ## <a name="see-also"></a>Voir aussi
 - [Générer et déboguer des solutions SharePoint](../sharepoint/building-and-debugging-sharepoint-solutions.md)
