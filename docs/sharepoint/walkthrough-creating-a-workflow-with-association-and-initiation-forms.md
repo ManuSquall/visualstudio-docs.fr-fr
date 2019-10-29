@@ -1,5 +1,5 @@
 ---
-title: Créer des flux de travail avec des formulaires d’association et d’initiation
+title: Créer un flux de travail avec des formulaires d’association et d’initiation
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,112 +17,112 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b64d1c9fbbd81a21ab268dfa29287895bd355197
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: 7946e48502ea4fd8e9e9382a20de3c8ce25987b3
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401154"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984678"
 ---
-# <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Procédure pas à pas : Créer un flux de travail avec des formulaires d’association et d’initiation
-  Cette procédure pas à pas montre comment créer un workflow séquentiel de base qui incorpore l’utilisation des formulaires d’association et d’initiation. Il s’agit de formulaires ASPX permettant d’activer les paramètres à ajouter à un flux de travail lorsqu’il est tout d’abord associée par l’administrateur SharePoint (formulaire d’association), et lorsque le workflow est démarré par l’utilisateur (le formulaire d’initiation).
+# <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Procédure pas à pas : créer un flux de travail avec des formulaires d’association et d’initiation
+  Cette procédure pas à pas montre comment créer un flux de travail séquentiel de base qui incorpore l’utilisation des formulaires d’association et d’initiation. Il s’agit de formulaires ASPX qui permettent d’ajouter des paramètres à un flux de travail lorsqu’il est associé pour la première fois par l’administrateur SharePoint (le formulaire d’association) et lorsque le flux de travail est démarré par l’utilisateur (formulaire d’initiation).
 
- Cette procédure pas à pas décrit un scénario où un utilisateur souhaite créer un workflow d’approbation des notes de frais qui exige les éléments suivants :
+ Cette procédure pas à pas décrit un scénario dans lequel un utilisateur souhaite créer un flux de travail d’approbation pour les notes de frais qui ont les exigences suivantes :
 
-- Lorsque le flux de travail est associé à une liste, l’administrateur est invité avec un formulaire d’association où ils entrent une limite de dollar des notes de frais.
+- Lorsque le flux de travail est associé à une liste, l’administrateur est invité à entrer une limite en dollars pour les notes de frais.
 
-- Employés charger leurs rapports de dépenses dans la liste de Documents partagés, démarrer le flux de travail, puis entrez le coût total dans le formulaire d’initiation du flux de travail.
+- Les employés chargent leurs notes de frais dans la liste documents partagés, démarrent le flux de travail, puis entrent le montant total des dépenses dans le formulaire d’initiation du flux de travail.
 
-- Si une note de frais des employés total dépasse la limite prédéfinie de l’administrateur, une tâche est créée pour le Gestionnaire de l’employé approuver la note de frais. Toutefois, si le total de rapports de dépenses d’un employé est inférieur ou égal à la limite de dépense, un message d’auto-approuvés est écrite dans l’historique du flux de travail.
+- Si le total d’un rapport de frais d’un employé dépasse la limite prédéfinie par l’administrateur, une tâche est créée pour que le responsable de l’employé approuve la note de frais. Toutefois, si le total du rapport de frais d’un employé est inférieur ou égal à la limite de dépense, un message approuvé automatiquement est écrit dans la liste historique du flux de travail.
 
   Cette procédure pas à pas décrit les tâches suivantes :
 
-- Création d’un projet de workflow séquentiel de définition de liste SharePoint dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+- Création d’un projet de flux de travail séquentiel de définition de liste SharePoint dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
 - Création d’une planification de flux de travail.
 
 - Gestion des événements d’activité de flux de travail.
 
-- Création des formulaires d’association et d’initiation du flux de travail.
+- Création d’une association de flux de travail et de formulaires d’initiation.
 
-- Associer le flux de travail.
+- Association du flux de travail.
 
 - Démarrage manuel du flux de travail.
 
 > [!NOTE]
-> Bien que cette procédure pas à pas utilise un projet de workflow séquentiel, le processus est identique pour les workflows machine à états.
+> Bien que cette procédure pas à pas utilise un projet de workflow séquentiel, le processus est le même pour les flux de travail d’ordinateur d’État.
 >
-> En outre, votre ordinateur peut afficher des noms différents ou des emplacements de certains de la [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] les éléments d’interface utilisateur dans les instructions suivantes. Le [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] édition dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> En outre, il se peut que votre ordinateur affiche des noms ou des emplacements différents pour certains éléments de l’interface utilisateur [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dans les instructions suivantes. L’édition [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Configuration requise
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :
 
-- Éditions prises en charge [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] et SharePoint.
+- Éditions prises en charge de [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] et SharePoint.
 
 - Visual Studio.
 
 ## <a name="create-a-sharepoint-sequential-workflow-project"></a>Créer un projet de flux de travail séquentiel SharePoint
- Tout d’abord, créez un projet de flux de travail séquentiel dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Un workflow séquentiel est une série d’étapes qui s’exécute dans l’ordre jusqu'à la fin de la dernière activité. Dans cette procédure, vous allez créer un workflow séquentiel qui s’applique à la liste de Documents partagés dans SharePoint. L’Assistant flux de travail vous permet d’associer le flux de travail avec le site ou la définition de liste et vous permet de déterminer quand le flux de travail démarre.
+ Commencez par créer un projet de workflow séquentiel dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Un workflow séquentiel est une série d’étapes qui s’exécutent dans l’ordre jusqu’à ce que la dernière activité se termine. Dans cette procédure, vous allez créer un flux de travail séquentiel qui s’applique à la liste documents partagés dans SharePoint. L’Assistant du flux de travail vous permet d’associer le flux de travail au site ou à la définition de liste et vous permet de déterminer à quel moment le flux de travail démarrera.
 
 #### <a name="to-create-a-sharepoint-sequential-workflow-project"></a>Pour créer un projet de flux de travail séquentiel SharePoint
 
-1. Dans la barre de menus, choisissez **fichier** > **New** > **projet** pour afficher le **nouveau projet** boîte de dialogue.
+1. Dans la barre de menus, choisissez **fichier**  > **nouveau**  > **projet** pour afficher la boîte de dialogue **nouveau projet** .
 
-2. Développez le **SharePoint** nœud sous **Visual C#** ou **Visual Basic**, puis choisissez le **2010** nœud.
+2. Développez le nœud **SharePoint** sous **Visual C#**  ou **Visual Basic**, puis choisissez le nœud **2010** .
 
-3. Dans le **modèles** volet, choisissez le **projet SharePoint 2010** modèle de projet.
+3. Dans le volet **modèles** , choisissez le modèle projet de **projet SharePoint 2010** .
 
-4. Dans le **nom** , entrez **ExpenseReport** , puis choisissez le **OK** bouton.
+4. Dans la zone **nom** , entrez **ExpenseReport** , puis choisissez le bouton **OK** .
 
-     Le **Assistant Personnalisation de SharePoint** s’affiche.
+     L' **Assistant Personnalisation de SharePoint** s’affiche.
 
-5. Dans le **spécifier le niveau de site et de sécurité pour le débogage** page, choisissez le **déployer en tant que solution de batterie** case d’option, puis choisissez le **Terminer** bouton pour accepter le site par défaut et le niveau de confiance.
+5. Dans la page **spécifier le site et le niveau de sécurité pour le débogage** , choisissez la case **d’option déployer en tant que solution de batterie** , puis choisissez le bouton **Terminer** pour accepter le niveau de confiance et le site par défaut.
 
-     Cette étape définit également le niveau de confiance pour la solution en tant que solution de batterie de serveurs, ce qui est la seule option disponible pour les projets de flux de travail.
+     Cette étape définit également le niveau de confiance de la solution en tant que solution de batterie, qui est la seule option disponible pour les projets de Workflow.
 
 6. Dans l' **Explorateur de solutions**, choisissez le nœud du projet.
 
 7. Dans la barre de menus, choisissez **Projet** > **Ajouter un nouvel élément**.
 
-8. Sous **Visual C#** ou **Visual Basic**, développez le **SharePoint** nœud, puis choisissez le **2010** nœud.
+8. Sous **Visual C#**  ou **Visual Basic**, développez le nœud **SharePoint** , puis choisissez le nœud **2010** .
 
-9. Dans le **modèles** volet, choisissez **Workflow séquentiel (Solution de batterie uniquement)** modèle, puis choisissez le **ajouter** bouton.
+9. Dans le volet **modèles** , choisissez **Workflow séquentiel (solution de batterie uniquement)** , puis cliquez sur le bouton **Ajouter** .
 
-     Le **Assistant Personnalisation de SharePoint** s’affiche.
+     L' **Assistant Personnalisation de SharePoint** s’affiche.
 
-10. Dans le **spécifier le nom de flux de travail pour le débogage** page, acceptez le nom par défaut (**ExpenseReport - Workflow1**). Conservez la valeur de type de modèle de flux de travail par défaut (**liste de flux de travail)** . Choisissez le bouton **Suivant**.
+10. Dans la page **spécifier le nom du flux de travail pour le débogage** , acceptez le nom par défaut (**ExpenseReport-Workflow1**). Conservez la valeur de type de modèle de flux de travail par défaut (**List Workflow)** . Choisissez le bouton **Suivant**.
 
-11. Dans le **voulez-vous que Visual Studio associe automatiquement le flux de travail dans une session de débogage ?** page, désactivez la case qui associe automatiquement votre modèle de flux de travail si elle est activée.
+11. Dans la page **voulez-vous que Visual Studio associe automatiquement le flux de travail dans une session de débogage ?** , désactivez la case qui associe automatiquement votre modèle de flux de travail si elle est activée.
 
-     Cette étape vous permet d’associer manuellement le flux de travail avec la liste de Documents partagés par la suite qui affiche le formulaire d’association.
+     Cette étape vous permet d’associer manuellement le flux de travail à la liste documents partagés, qui affiche le formulaire d’association.
 
-12. Choisissez le **Terminer** bouton.
+12. Choisissez le bouton **Terminer** .
 
-## <a name="add-an-association-form-to-the-workflow"></a>Ajouter un formulaire d’association pour le flux de travail
- Ensuite, créez un. Formulaire d’association ASPX qui apparaît lorsque l’administrateur SharePoint associe tout d’abord le flux de travail à un document de bilan d’exploitation.
+## <a name="add-an-association-form-to-the-workflow"></a>Ajouter un formulaire d’association au flux de travail
+ Ensuite, créez un. Formulaire d’association ASPX qui apparaît lorsque l’administrateur SharePoint associe d’abord le flux de travail à un document de note de frais.
 
-#### <a name="to-add-an-association-form-to-the-workflow"></a>Pour ajouter un formulaire d’association pour le flux de travail
+#### <a name="to-add-an-association-form-to-the-workflow"></a>Pour ajouter un formulaire d’association au flux de travail
 
-1. Choisissez le **Workflow1** nœud **l’Explorateur de solutions**.
+1. Dans **Explorateur de solutions**, choisissez le nœud **Workflow1** .
 
-2. Dans la barre de menus, choisissez **projet** > **ajouter un nouvel élément** pour afficher le **ajouter un nouvel élément** boîte de dialogue.
+2. Dans la barre de menus, choisissez **projet** > **Ajouter un nouvel élément** pour afficher la boîte de dialogue **Ajouter un nouvel élément** .
 
-3. Dans la vue arborescence de la boîte de dialogue, développez le **Visual C#** ou **Visual Basic** (selon votre langage de projet), développez le **SharePoint** nœud, puis choisissez le **2010** nœud.
+3. Dans la vue de l’arborescence de la boîte de dialogue, développez **Visual C#**  ou **Visual Basic** (selon le langage de votre projet), développez le nœud **SharePoint** , puis choisissez le nœud **2010** .
 
-4. Dans la liste des modèles, choisissez le **formulaire d’Association de flux de travail** modèle.
+4. Dans la liste des modèles, choisissez le modèle de **formulaire d’association de flux de travail** .
 
-5. Dans le **nom** texte, entrez **ExpenseReportAssocForm.aspx**.
+5. Dans la zone de texte **nom** , entrez **ExpenseReportAssocForm. aspx**.
 
-6. Choisissez le **ajouter** pour ajouter le formulaire au projet.
+6. Cliquez sur le bouton **Ajouter** pour ajouter le formulaire au projet.
 
-## <a name="designing-and-coding-the-association-form"></a>Conception et codage du formulaire association
- Dans cette procédure, vous introduisez des fonctionnalités au formulaire association en y ajoutant des contrôles et du code à.
+## <a name="designing-and-coding-the-association-form"></a>Conception et codage du formulaire d’association
+ Dans cette procédure, vous introduisez des fonctionnalités dans le formulaire Association en y ajoutant des contrôles et du code.
 
 #### <a name="to-design-and-code-the-association-form"></a>Pour concevoir et coder le formulaire d’association
 
-1. Dans le formulaire d’association (ExpenseReportAssocForm.aspx), localisez le `asp:Content` élément qui a `ID="Main"`.
+1. Dans le formulaire d’Association (ExpenseReportAssocForm. aspx), recherchez l’élément `asp:Content` qui a `ID="Main"`.
 
-2. Directement après la première ligne dans cet élément de contenu, ajoutez le code suivant pour créer une étiquette et une zone de texte qui invite à entrer le plafond de dépenses (*AutoApproveLimit*) :
+2. Directement après la première ligne de cet élément de contenu, ajoutez le code suivant pour créer une étiquette et une zone de texte qui demandent la limite d’approbation des dépenses (*AutoApproveLimit*) :
 
     ```aspx-csharp
     <asp:Label ID="lblAutoApproveLimit" Text="Auto Approval Limit:" runat="server" />
@@ -131,14 +131,14 @@ ms.locfileid: "66401154"
     <br /><br />
     ```
 
-3. Développez le **ExpenseReportAssocForm.aspx** fichier **l’Explorateur de solutions** pour afficher ses fichiers dépendants.
+3. Développez le fichier **ExpenseReportAssocForm. aspx** dans **Explorateur de solutions** pour afficher ses fichiers dépendants.
 
     > [!NOTE]
-    > Si votre projet se trouve dans [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)], vous devez choisir le **afficher tous les fichiers** bouton pour effectuer cette étape.
+    > Si votre projet se trouve dans [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)], vous devez cliquer sur le bouton **Afficher tous les fichiers** pour effectuer cette étape.
 
-4. Ouvrez le menu contextuel pour le fichier ExpenseReportAssocForm.aspx et choisissez **afficher le Code**.
+4. Ouvrez le menu contextuel du fichier ExpenseReportAssocForm. aspx, puis choisissez **afficher le code**.
 
-5. Remplacez le `GetAssociationData` méthode avec :
+5. Remplacez la méthode `GetAssociationData` par :
 
     ```vb
     Private Function GetAssociationData() As String
@@ -160,30 +160,30 @@ ms.locfileid: "66401154"
     ```
 
 ## <a name="add-an-initiation-form-to-the-workflow"></a>Ajouter un formulaire d’initiation au flux de travail
- Ensuite, créez le formulaire d’initiation qui s’affiche quand les utilisateurs exécutent le flux de travail par rapport à leurs notes de frais.
+ Ensuite, créez le formulaire d’initiation qui s’affiche lorsque les utilisateurs exécutent le flux de travail par rapport à leurs notes de frais.
 
 #### <a name="to-create-an-initiation-form"></a>Pour créer un formulaire d’initiation
 
-1. Choisissez le **Workflow1** nœud **l’Explorateur de solutions**.
+1. Dans **Explorateur de solutions**, choisissez le nœud **Workflow1** .
 
-2. Dans la barre de menus, choisissez **projet** > **ajouter un nouvel élément** afficher le **ajouter un nouvel élément** boîte de dialogue.
+2. Dans la barre de menus, choisissez **projet** > **Ajouter un nouvel élément** afficher la boîte de dialogue **Ajouter un nouvel élément** .
 
-3. Dans la vue arborescence de la boîte de dialogue, développez le **Visual C#** ou **Visual Basic** (selon votre langage de projet), développez le **SharePoint** nœud, puis choisissez le **2010** nœud.
+3. Dans la vue de l’arborescence de la boîte de dialogue, développez **Visual C#**  ou **Visual Basic** (selon le langage de votre projet), développez le nœud **SharePoint** , puis choisissez le nœud **2010** .
 
-4. Dans la liste des modèles, choisissez le **formulaire d’Initiation du flux de travail** modèle.
+4. Dans la liste des modèles, choisissez le modèle de **formulaire d’initiation de flux de travail** .
 
-5. Dans le **nom** texte, entrez **ExpenseReportInitForm.aspx**.
+5. Dans la zone de texte **nom** , entrez **ExpenseReportInitForm. aspx**.
 
-6. Choisissez le **ajouter** pour ajouter le formulaire au projet.
+6. Cliquez sur le bouton **Ajouter** pour ajouter le formulaire au projet.
 
 ## <a name="designing-and-coding-the-initiation-form"></a>Conception et codage du formulaire d’initiation
- Une nouvelle fonctionnalité au formulaire d’initiation en y ajoutant des contrôles et du code.
+ Introduisez ensuite des fonctionnalités dans le formulaire d’initiation en y ajoutant des contrôles et du code.
 
 #### <a name="to-code-the-initiation-form"></a>Pour coder le formulaire d’initiation
 
-1. Dans le formulaire d’initiation (ExpenseReportInitForm.aspx), localisez le `asp:Content` élément contenant `ID="Main"`.
+1. Dans le formulaire d’initiation (ExpenseReportInitForm. aspx), recherchez l’élément `asp:Content` qui contient `ID="Main"`.
 
-2. Directement après la première ligne de cet élément de contenu, ajoutez le code suivant pour créer une étiquette et une zone de texte qui affiche le plafond de dépenses (*AutoApproveLimit*) qui a été entré dans le formulaire d’association et une autre étiquette et zone de texte total des dépenses (*ExpenseTotal*) :
+2. Directement après la première ligne de cet élément de contenu, ajoutez le code suivant pour créer une étiquette et une zone de texte qui affichent la limite d’approbation des dépenses (*AutoApproveLimit*) qui a été entrée dans le formulaire d’association, et une autre étiquette et zone de texte pour demander le dépense totale (*ExpenseTotal*) :
 
     ```aspx-csharp
     <asp:Label ID="lblAutoApproveLimit" Text="Auto Approval Limit:" runat="server" />
@@ -196,11 +196,11 @@ ms.locfileid: "66401154"
     <br /><br />
     ```
 
-3. Développez le **ExpenseReportInitForm.aspx** fichier **l’Explorateur de solutions** pour afficher ses fichiers dépendants.
+3. Développez le fichier **ExpenseReportInitForm. aspx** dans **Explorateur de solutions** pour afficher ses fichiers dépendants.
 
-4. Ouvrez le menu contextuel pour le fichier ExpenseReportInitForm.aspx et choisissez **afficher le Code**.
+4. Ouvrez le menu contextuel du fichier ExpenseReportInitForm. aspx, puis choisissez **afficher le code**.
 
-5. Remplacez le `Page_Load` méthode avec l’exemple suivant :
+5. Remplacez la méthode `Page_Load` par l’exemple suivant :
 
     ```vb
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As
@@ -222,7 +222,7 @@ ms.locfileid: "66401154"
     }
     ```
 
-6. Remplacez le `GetInitiationData` méthode avec l’exemple suivant :
+6. Remplacez la méthode `GetInitiationData` par l’exemple suivant :
 
     ```vb
     ' This method is called when the user clicks the button to start the workflow.
@@ -246,57 +246,57 @@ ms.locfileid: "66401154"
     }
     ```
 
-## <a name="cutomize-the-workflow"></a>Personnaliser le flux de travail
- Ensuite, personnaliser le flux de travail. Plus tard, vous allez associer deux formulaires au flux de travail.
+## <a name="cutomize-the-workflow"></a>Cutomize le flux de travail
+ Ensuite, personnalisez le flux de travail. Plus tard, vous allez associer deux formulaires au flux de travail.
 
 #### <a name="to-customize-the-workflow"></a>Pour personnaliser le flux de travail
 
-1. Afficher le flux de travail dans le Concepteur de flux de travail en ouvrant Workflow1 dans le projet.
+1. Affichez le flux de travail dans le concepteur de workflow en ouvrant Workflow1 dans le projet.
 
-2. Dans le **boîte à outils**, développez le **Windows Workflow v3.0** nœud et recherchez le **IfElse** activité.
+2. Dans la **boîte à outils**, développez le nœud **Windows Workflow v 3.0** et recherchez l’activité **IfElse** .
 
 3. Ajoutez cette activité au flux de travail en effectuant l’une des étapes suivantes :
 
-    - Ouvrez le menu contextuel pour le **IfElse** activité, choisissez **copie**, ouvrez le menu contextuel de la ligne dans le **onWorkflowActivated1** activité dans le Concepteur de flux de travail, puis choisissez **coller**.
+    - Ouvrez le menu contextuel de l’activité **IfElse** , choisissez **copier**, ouvrez le menu contextuel de la ligne sous l’activité **onWorkflowActivated1** dans le concepteur de flux de travail, puis choisissez **coller**.
 
-    - Faites glisser le **IfElse** activité à partir de la **boîte à outils**et connectez-la à la ligne sous le **onWorkflowActiviated1** activité dans le Concepteur de flux de travail.
+    - Faites glisser l’activité **IfElse** de la **boîte à outils**et connectez-la à la ligne sous l’activité **onWorkflowActiviated1** dans le concepteur de Workflow.
 
-4. Dans la boîte à outils, développez le **flux de travail SharePoint** nœud et recherchez le **CreateTask** activité.
+4. Dans la boîte à outils, développez le nœud **flux de travail SharePoint** et recherchez l’activité **CreateTask** .
 
 5. Ajoutez cette activité au flux de travail en effectuant l’une des étapes suivantes :
 
-    - Ouvrir le menu contextuel pour le **CreateTask** activité, choisissez **copie**, ouvrez le menu contextuel pour l’une des deux **déposer les activités ici** zones au sein de  **IfElseActivity1** dans le Concepteur de flux de travail, puis choisissez **collage**.
+    - Ouvrez le menu contextuel de l’activité **CreateTask** , choisissez **copier**, ouvrez le menu contextuel pour l’une des deux **activités Drop ici** dans **IfElseActivity1** dans le concepteur de flux de travail, puis choisissez **coller**.
 
-    - Faites glisser le **CreateTask** activité à partir de la **boîte à outils** sur l’un des deux **déposer les activités ici** domaines au sein de **IfElseActivity1**.
+    - Faites glisser l’activité **CreateTask** de la **boîte à outils** vers l’une des deux **activités Drop ici** dans **IfElseActivity1**.
 
-6. Dans le **propriétés** fenêtre, entrez une valeur de propriété *taskToken* pour le **CorrelationToken** propriété.
+6. Dans la fenêtre **Propriétés** , entrez une valeur de propriété de *taskToken* pour la propriété **CorrelationToken** .
 
-7. Développez le **CorrelationToken** propriété en cliquant sur le signe plus (![TreeView plu](../sharepoint/media/plus.gif "TreeView plu")) en regard de celle-ci.
+7. Développez la propriété **CorrelationToken** en choisissant le signe plus (![TreeView plus](../sharepoint/media/plus.gif "TreeView plus")) en regard de celle-ci.
 
-8. Cliquez sur la flèche déroulante sur le **OwnerActivityName** sub de propriété, puis définissez le *Workflow1* valeur.
+8. Choisissez la flèche déroulante de la sous-propriété **OwnerActivityName** et définissez la valeur *Workflow1* .
 
-9. Choisissez le **TaskId** propriété, puis choisissez le bouton de sélection (![ellipse de concepteur ASP.NET Mobile](../sharepoint/media/mwellipsis.gif "ellipse de concepteur ASP.NET Mobile")) bouton pour afficher la **Lier la propriété** boîte de dialogue.
+9. Choisissez la propriété **taskId** , puis cliquez sur le bouton de sélection (![ellipse ASP.net Mobile designer](../sharepoint/media/mwellipsis.gif "Bouton de sélection du concepteur ASP.NET mobile")) pour afficher la boîte de dialogue de **Propriétés de liaison** .
 
-10. Choisissez le **lier à un nouveau membre** , choisir le **créer un champ** case d’option, puis choisissez le **OK** bouton.
+10. Choisissez l’onglet **lier à un nouveau membre** , choisissez la case d’option **créer un champ** , puis cliquez sur le bouton **OK** .
 
-11. Choisissez le **TaskProperties** propriété, puis cliquez sur le bouton de sélection (![ellipse de ASP.NET Mobile Designer](../sharepoint/media/mwellipsis.gif "ellipse de ASP.NET Mobile Designer")) pour afficher les  **Lier la propriété** boîte de dialogue.
+11. Choisissez la propriété **TaskProperties (propriétés** , puis cliquez sur le bouton de sélection (![ellipse ASP.net Mobile designer](../sharepoint/media/mwellipsis.gif "Bouton de sélection du concepteur ASP.NET mobile")) pour afficher la boîte de dialogue **lier la propriété** .
 
-12. Choisissez le **lier à un nouveau membre** , choisir le **créer un champ** case d’option, puis choisissez le **OK** bouton.
+12. Choisissez l’onglet **lier à un nouveau membre** , choisissez la case d’option **créer un champ** , puis cliquez sur le bouton **OK** .
 
-13. Dans le **boîte à outils**, développez le **flux de travail SharePoint** nœud, puis recherchez le **LogToHistoryListActivity** activité.
+13. Dans la **boîte à outils**, développez le nœud **flux de travail SharePoint** , puis recherchez l’activité **LogToHistoryListActivity** .
 
 14. Ajoutez cette activité au flux de travail en effectuant l’une des étapes suivantes :
 
-    - Ouvrir le menu contextuel de la **LogToHistoryListActivity** activité, choisissez **copie**, ouvrir le menu contextuel pour les autres **déposer les activités ici** zone **IfElseActivity1** dans le Concepteur de flux de travail, puis choisissez **collage**.
+    - Ouvrez le menu contextuel de l’activité **LogToHistoryListActivity** , choisissez **copier**, ouvrez le menu contextuel pour l’autre zone **déposer activités ici** dans **IfElseActivity1** dans le concepteur de flux de travail, puis choisissez **coller** .
 
-    - Faites glisser le **LogToHistoryListActivity** activité à partir de la **boîte à outils**et déposez-le sur l’autre **déposer les activités ici** zone dans **IfElseActivity1** .
+    - Faites glisser l’activité **LogToHistoryListActivity** de la **boîte à outils**et déposez-la sur l’autre zone **déposer activités ici** dans **IfElseActivity1**.
 
-## <a name="add-code-to-the-workflow"></a>Ajoutez le code au flux de travail
- Ensuite, ajoutez le code au flux de travail afin de lui donner la fonctionnalité.
+## <a name="add-code-to-the-workflow"></a>Ajouter du code au workflow
+ Ensuite, ajoutez du code au workflow pour lui fournir des fonctionnalités.
 
-#### <a name="to-add-code-to-the-workflow"></a>Pour ajouter du code au flux de travail
+#### <a name="to-add-code-to-the-workflow"></a>Pour ajouter du code au workflow
 
-1. Ouvrez le menu contextuel pour le **createTask1** activité dans le Concepteur de flux de travail, puis choisissez **afficher le Code**.
+1. Ouvrez le menu contextuel de l’activité **createTask1** dans le concepteur de flux de travail, puis choisissez **afficher le code**.
 
 2. Ajoutez la méthode suivante :
 
@@ -325,9 +325,9 @@ ms.locfileid: "66401154"
     ```
 
     > [!NOTE]
-    > Dans le code, remplacez `somedomain\\someuser` avec un nom de domaine et d’utilisateur pour lequel une tâche est créée, par exemple, «`Office\\JoeSch`». Pour le test, il est plus facile d’utiliser le compte que vous développez avec.
+    > Dans le code, remplacez `somedomain\\someuser` par un domaine et un nom d’utilisateur pour lequel une tâche sera créée, telle que «`Office\\JoeSch`». Pour les tests, il est plus facile d’utiliser le compte que vous développez avec.
 
-3. Ci-dessous le `MethodInvoking` (méthode), ajoutez l’exemple suivant :
+3. Sous la méthode `MethodInvoking`, ajoutez l’exemple suivant :
 
     ```vb
     Private Sub checkApprovalNeeded(ByVal sender As Object, ByVal e As
@@ -355,15 +355,15 @@ ms.locfileid: "66401154"
     }
     ```
 
-4. Dans le Concepteur de flux de travail, choisissez la **ifElseBranchActivity1** activité.
+4. Dans le concepteur de flux de travail, choisissez l’activité **ifElseBranchActivity1** .
 
-5. Dans le **propriétés** fenêtre, cliquez sur la flèche déroulante de la **Condition** propriété, puis définissez le *Condition de Code* valeur.
+5. Dans la fenêtre **Propriétés** , choisissez la flèche déroulante de la propriété **condition** , puis définissez la valeur de la *condition de code* .
 
-6. Développez le **Condition** propriété en cliquant sur le signe plus (![TreeView plu](../sharepoint/media/plus.gif "TreeView plu")) en regard de celle-ci, puis définissez sa valeur sur *checkApprovalNeeded* .
+6. Développez la propriété **condition** en choisissant le signe plus (![TreeView plus](../sharepoint/media/plus.gif "TreeView plus")) en regard de celle-ci, puis définissez sa valeur sur *checkApprovalNeeded*.
 
-7. Dans le Concepteur de flux de travail, ouvrez le menu contextuel pour le **logToHistoryListActivity1** activité, puis choisissez **générer les gestionnaires** pour générer une méthode vide pour le `MethodInvoking` événement.
+7. Dans le concepteur de flux de travail, ouvrez le menu contextuel de l’activité **logToHistoryListActivity1** , puis choisissez **générer des gestionnaires** pour générer une méthode vide pour l’événement `MethodInvoking`.
 
-8. Remplacez le `MethodInvoking` code par le code suivant :
+8. Remplacez le code `MethodInvoking` par le code suivant :
 
     ```vb
     Private Sub logToHistoryListActivity1_MethodInvoking(ByVal sender As
@@ -382,69 +382,69 @@ ms.locfileid: "66401154"
     }
     ```
 
-9. Choisissez le **F5** clé pour déboguer le programme.
+9. Appuyez sur la touche **F5** pour déboguer le programme.
 
-     Il compile l’application, empaquette, déploie, activer ses fonctionnalités, recycle le [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] pool d’applications et puis démarre le navigateur à l’emplacement spécifié dans le **Url du Site** propriété.
+     Cela a pour fonction de compiler l’application, de l’empaqueter, de la déployer, d’activer ses fonctionnalités, de recycler le pool d’applications [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)], puis de démarrer le navigateur à l’emplacement spécifié dans la propriété **URL du site** .
 
-## <a name="associating-the-workflow-to-the-documents-list"></a>Associer le flux de travail à la liste de documents
- Ensuite, afficher le formulaire d’association de flux de travail en associant le flux de travail avec le **SharedDocuments** liste sur le site SharePoint.
+## <a name="associating-the-workflow-to-the-documents-list"></a>Association du flux de travail à la liste de documents
+ Ensuite, affichez le formulaire d’association de flux de travail en associant le flux de travail à la liste **SharedDocuments** sur le site SharePoint.
 
 #### <a name="to-associate-the-workflow"></a>Pour associer le flux de travail
 
-1. Choisissez le **Documents partagés** lien dans la barre de lancement rapide.
+1. Choisissez le lien **documents partagés** dans la barre de lancement rapide.
 
-2. Choisissez le **bibliothèque** lien sur le **outils de bibliothèque** onglet, puis choisissez le **paramètres de la bibliothèque** bouton du ruban.
+2. Cliquez sur le lien **bibliothèque** sous l’onglet **outils de bibliothèque** , puis sur le bouton du ruban paramètres de la **bibliothèque** .
 
-3. Dans le **autorisations et gestion** , choisissez le **les paramètres de flux de travail** lier, puis choisissez le **ajouter un flux de travail** lien sur le **Workflows** page.
+3. Dans la section **autorisations et gestion** , choisissez le lien **paramètres de flux de travail** , puis choisissez le lien **Ajouter un flux de travail** dans la page **flux** de travail.
 
-4. Dans la liste du haut de la page Paramètres de flux de travail, choisissez la **ExpenseReport - Workflow1** modèle.
+4. Dans la liste supérieure de la page Paramètres de flux de travail, choisissez le modèle **ExpenseReport-Workflow1** .
 
-5. Dans le champ suivant, entrez **ExpenseReportWorkflow** , puis choisissez le **suivant** bouton.
+5. Dans le champ suivant, entrez **ExpenseReportWorkflow** , puis choisissez le bouton **suivant** .
 
-     Cela associe le flux de travail avec le **Documents partagés** liste et affiche le formulaire d’association de flux de travail.
+     Cela permet d’associer le flux de travail à la liste **documents partagés** et d’afficher le formulaire d’association de flux de travail.
 
-6. Dans le **limite d’approbation automatique** texte, entrez **1200** , puis choisissez le **associer le flux de travail** bouton.
+6. Dans la zone de texte **limite d’approbation automatique** , entrez **1200** , puis choisissez le bouton **associer le flux de travail** .
 
 ## <a name="start-the-workflow"></a>Démarrer le flux de travail
- Ensuite, associez le flux de travail à un des documents dans le **Documents partagés** liste pour afficher le formulaire d’initiation du flux de travail.
+ Ensuite, associez le flux de travail à l’un des documents de la liste **documents partagés** pour afficher le formulaire d’initiation de flux de travail.
 
 #### <a name="to-start-the-workflow"></a>Pour démarrer le flux de travail
 
-1. Dans la page SharePoint, choisissez le **accueil** bouton.
+1. Sur la page SharePoint, choisissez le bouton **démarrage** .
 
-2. Choisissez le **Documents partagés** lien dans la barre de lancement rapide pour afficher la **Documents partagés** liste.
+2. Choisissez le lien **documents partagés** dans la barre de lancement rapide pour afficher la liste **documents partagés** .
 
-3. Choisissez le **Documents** lien sur le **outils de bibliothèque** onglet en haut de la page, puis choisissez le **télécharger un Document** bouton sur le ruban pour télécharger un nouveau document dans le **Documents partagés** liste.
+3. Choisissez le lien **documents** sous l’onglet **outils de bibliothèque** en haut de la page, puis choisissez le bouton **Télécharger un document** sur le ruban pour télécharger un nouveau document dans la liste **documents partagés** .
 
-4. Dans le **télécharger un Document** boîte de dialogue, sélectionnez le **Parcourir** bouton, choisissez n’importe quel fichier de document, le **Open** bouton, puis choisissez le **OK** bouton.
+4. Dans la boîte de dialogue **Télécharger un document** , cliquez sur le bouton **Parcourir** , choisissez un fichier de document, cliquez sur le bouton **ouvrir** , puis choisissez le bouton **OK** .
 
-     Vous pouvez modifier les paramètres pour le document dans cette boîte de dialogue, mais les conservez les valeurs par défaut en choisissant le **enregistrer** bouton.
+     Vous pouvez modifier les paramètres du document dans cette boîte de dialogue, mais les conserver aux valeurs par défaut en choisissant le bouton **Enregistrer** .
 
-5. Cliquez sur le document téléchargé, choisissez la flèche déroulante qui s’affiche, puis choisissez le **Workflows** élément.
+5. Choisissez le document chargé, choisissez la flèche déroulante qui s’affiche, puis choisissez l’élément **flux de travail** .
 
 6. Choisissez l’image en regard de ExpenseReportWorkflow.
 
-     Cela affiche le formulaire d’initiation du flux de travail. (Notez que la valeur affichée dans le **limite d’approbation automatique** zone est en lecture seule, car il a été entré dans le formulaire d’association.)
+     Le formulaire d’initiation de flux de travail s’affiche. (Notez que la valeur affichée dans la zone **limite d’approbation automatique** est en lecture seule, car elle a été entrée dans le formulaire Association.)
 
-7. Dans le **Total des dépenses** texte, entrez **1600**, puis choisissez le **démarrer le flux de travail** bouton.
+7. Dans la zone de texte **total des dépenses** , entrez **1600**, puis choisissez le bouton Démarrer le **flux de travail** .
 
-     Cela permet d’afficher le **Documents partagés** liste à nouveau. Une nouvelle colonne nommée **ExpenseReportWorkflow** avec la valeur **terminé** est ajouté à l’élément de flux de travail vient de démarrer.
+     La liste **documents partagés** s’affiche à nouveau. Une nouvelle colonne nommée **ExpenseReportWorkflow** avec la valeur **Completed** est ajoutée à l’élément que le workflow vient de démarrer.
 
-8. Choisissez la flèche déroulante en regard du document téléchargé, puis le **Workflows** élément pour afficher la page d’état de flux de travail. Choisissez le **terminé** valeur sous **terminé le flux de travail**. La tâche est répertoriée sous le **tâches** section.
+8. Choisissez la flèche déroulante en regard du document téléchargé, puis choisissez l’élément **flux de travail** pour afficher la page État du flux de travail. Choisissez la valeur **terminé** sous **workflows terminés**. La tâche est indiquée sous la section **tâches** .
 
-9. Cliquez sur le titre de la tâche pour afficher ses détails.
+9. Choisissez le titre de la tâche pour afficher ses détails sur la tâche.
 
-10. Revenez à la **SharedDocuments** répertorier et redémarrer le flux de travail, à l’aide du même document ou une autre.
+10. Revenez à la liste **SharedDocuments** et redémarrez le flux de travail à l’aide du même document ou d’un autre document.
 
-11. Entrez un montant sur la page de lancement est inférieure ou égale à la quantité d’entrée dans la page de l’association (**1200**).
+11. Entrez un montant sur la page d’initiation inférieure ou égale à la quantité entrée sur la page Association (**1200**).
 
-     Lorsque cela se produit, une entrée dans la liste d’historique est créée au lieu d’une tâche. L’entrée s’affiche dans le **historique de flux de travail** section de la page d’état de flux de travail. Notez le message dans le **résultat** colonne de l’événement d’historique. Il contient le texte entré dans le `logToHistoryListActivity1.MethodInvoking` événement qui inclut le montant qui a été approuvée automatiquement.
+     Dans ce cas, une entrée de la liste historique est créée à la place d’une tâche. L’entrée s’affiche dans la section **historique du flux** de travail de la page État du flux de travail. Notez le message dans la colonne **résultat** de l’événement historique. Il contient le texte entré dans le `logToHistoryListActivity1.MethodInvoking` événement qui inclut le montant qui a été approuvé automatiquement.
 
 ## <a name="next-steps"></a>Étapes suivantes
- Pour plus d’informations sur la création de modèles de flux de travail à partir de ces rubriques :
+ Pour plus d’informations sur la création de modèles de flux de travail, consultez les rubriques suivantes :
 
-- Pour en savoir plus sur les flux de travail SharePoint, consultez [des flux de travail dans Windows SharePoint Services](http://go.microsoft.com/fwlink/?LinkID=166275).
+- Pour en savoir plus sur les flux de travail SharePoint, consultez [workflows dans Windows SharePoint Services](/previous-versions/office/developer/sharepoint-2010/ms416312(v=office.14)).
 
 ## <a name="see-also"></a>Voir aussi
 - [Créer des solutions de flux de travail SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)
-- [Procédure pas à pas : Ajouter une page d’application à un flux de travail](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)
+- [Procédure pas à pas : ajouter une page d’application à un flux de travail](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)

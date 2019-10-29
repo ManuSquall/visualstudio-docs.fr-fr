@@ -9,16 +9,16 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c38cb246a1ec3e8a20793b37f0a231d2e118bd4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d30efd450f18832caadcc9a0008facc4388cd70a
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663764"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986280"
 ---
 # <a name="use-models-in-your-development-process"></a>Utiliser des modèles dans votre processus de développement
 
-Dans Visual Studio, vous pouvez utiliser un modèle pour vous aider à comprendre et à modifier un système, une application ou un composant. Un modèle peut vous aider à visualiser le monde dans lequel votre système fonctionne, à clarifier les besoins des utilisateurs, à définir l'architecture de votre système, à analyser le code et à vous assurer qu'il répond aux impératifs. Voir [vidéo Channel 9 : améliorer l’architecture grâce à la modélisation](http://go.microsoft.com/fwlink/?LinkID=252078).
+Dans Visual Studio, vous pouvez utiliser un modèle pour vous aider à comprendre et à modifier un système, une application ou un composant. Un modèle peut vous aider à visualiser le monde dans lequel votre système fonctionne, à clarifier les besoins des utilisateurs, à définir l'architecture de votre système, à analyser le code et à vous assurer qu'il répond aux impératifs. Voir [vidéo Channel 9 : améliorer l’architecture grâce à la modélisation](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Improving-architecture-through-modeling).
 
 Pour connaître les versions de Visual Studio qui prennent en charge chaque type de modèle, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -131,10 +131,10 @@ Différents genres de diagrammes sont utiles pour décrire la conception à diff
 
 |**Catégorie**|**Links**|
 |-|-|
-|**Vidéos**|![link à la vidéo ](../data-tools/media/playvideo.gif) [MSDN comment faire : comment créer et utiliser des diagrammes et des modèles UML (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![link à la vidéo ](../data-tools/media/playvideo.gif) [Channel 9 : UML avec Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![link à la vidéo ](../data-tools/media/playvideo.gif) [série de procédures MSDN : outils et extensibilité UML (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|
-|**Forums**|- [Outils de visualisation et de modélisation Visual Studio](http://go.microsoft.com/fwlink/?LinkId=184720)<br />- [Kit de développement logiciel (SDK) Visual Studio Visualization and Modeling (outils DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
+|**Vidéos**|![lien vers la vidéo](../data-tools/media/playvideo.gif) [MSDN comment faire : comment créer et utiliser des diagrammes et des modèles UML (Visual Studio 2010 Ultimate)](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))<br /><br /> ![un lien vers la vidéo](../data-tools/media/playvideo.gif) [Channel 9 : UML avec Visual Studio 2010](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-1-brainstorming-a-project)<br /><br /> ![lien vers la vidéo](../data-tools/media/playvideo.gif) [MSDN comment faire : série de procédures : outils UML et extensibilité (Visual Studio 2010 Ultimate)](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))|
+|**Forums**|- [Outils de visualisation et de modélisation Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />- [Kit de développement logiciel (SDK) Visual Studio Visualization and Modeling (outils DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
 |**Blogs**|[Microsoft DevOps](https://devblogs.microsoft.com/devops/)|
-|**Articles et journaux techniques**|[Centre d’architecture MSDN](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Guide des outils d’architecture Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md)|
+|**Articles et journaux techniques**|[Centre d’architecture MSDN](/previous-versions/dn630665(v=msdn.10))<br /><br /> [Guide des outils d’architecture Visual Studio](../modeling/visual-studio-architecture-tooling-guidance.md)|
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Remplir des documents avec des données à partir d’une base de données'
+title: 'Comment : remplir des documents avec des données d’une base de données'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,24 +13,24 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4ec56ae4345405cfc704a97ec624f9c2e4d96a5b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 907b3deeadd0a56f9e47a6e17a40579a0c9ffa64
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967909"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985885"
 ---
-# <a name="how-to-populate-documents-with-data-from-a-database"></a>Procédure : Remplir des documents avec des données à partir d’une base de données
+# <a name="how-to-populate-documents-with-data-from-a-database"></a>Comment : remplir des documents avec des données d’une base de données
 
 Vous pouvez accéder aux projets au niveau du document pour Microsoft Office de la même façon que vous accédez aux données des projets Windows Forms. Vous utilisez les mêmes outils et le même code pour importer les données à partir d'une base de données dans votre solution, et vous pouvez utiliser des contrôles Windows Forms pour afficher les données.
 
-En outre, vous pouvez afficher les données à l'aide de contrôles hôtes. Les contrôles hôtes sont des objets natifs dans Microsoft Office Word qui ont été améliorés avec les événements et la fonctionnalité de liaison de données. Pour plus d’informations, consultez [éléments hôtes et héberger de vue d’ensemble des contrôles](../vsto/host-items-and-host-controls-overview.md).
+En outre, vous pouvez afficher les données à l'aide de contrôles hôtes. Les contrôles hôtes sont des objets natifs dans Microsoft Office Word qui ont été améliorés avec les événements et la fonctionnalité de liaison de données. Pour plus d’informations, consultez [vue d’ensemble des éléments hôtes et des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md).
 
 [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]
 
-L'exemple suivant montre comment ajouter des contrôles liés aux données dans les projets au niveau du document à l'aide d'un concepteur. Pour obtenir un exemple montrant comment ajouter des contrôles liés aux données dans les projets de complément VSTO au moment de l’exécution, consultez [procédure pas à pas : Liaison de données simple dans un projet de complément VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md).
+L'exemple suivant montre comment ajouter des contrôles liés aux données dans les projets au niveau du document à l'aide d'un concepteur. Pour obtenir un exemple d’ajout de contrôles liés aux données dans des projets de complément VSTO au moment de l’exécution, consultez [procédure pas à pas : liaison de données simple dans un projet de complément VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md).
 
-![lien vers la vidéo](../vsto/media/playvideo.gif "lien vers la vidéo") pour une démonstration vidéo connexe, consultez [lier des données au contenu de Word 2007 contrôle à l’aide de Visual Studio Tools pour Office system (3.0)](http://go.microsoft.com/fwlink/?LinkId=136785).
+![lien vers la vidéo](../vsto/media/playvideo.gif "lien vers la vidéo") Pour une démonstration vidéo connexe, consultez [liaison de données aux contrôles de contenu Word 2007 à l’aide de Visual Studio Tools pour Office System (3,0)](/previous-versions/office/developer/office-2007/bb967663(v=office.12)).
 
 ## <a name="add-a-control-to-a-document-at-design-time"></a>Ajouter un contrôle à un document au moment du design
 
@@ -38,25 +38,25 @@ L'exemple suivant montre comment ajouter des contrôles liés aux données dans 
 
 1. Ouvrez un projet au niveau du document Word dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], avec le document ouvert dans le concepteur.
 
-2. Ouvrez le **des Sources de données** fenêtre et créer une source de données à partir d’une base de données. Pour plus d’informations, consultez [ajouter de nouvelles connexions](../data-tools/add-new-connections.md).
+2. Ouvrez la fenêtre **sources de données** et créez une source de données à partir d’une base de données. Pour plus d’informations, consultez [ajouter de nouvelles connexions](../data-tools/add-new-connections.md).
 
-3. Faites glisser le champ souhaité à partir de la **des Sources de données** fenêtre vers votre document.
+3. Faites glisser le champ de votre choix de la fenêtre **sources de données** vers votre document.
 
 Un contrôle de contenu est ajouté au document. Le type de contrôle de contenu dépend du type de données du champ sélectionné. Pour plus d’informations, consultez [contrôles de contenu](../vsto/content-controls.md).
 
-Vous pouvez ajouter un autre contrôle en sélectionnant le champ de données dans le **des Sources de données** fenêtre, puis en choisissant un autre contrôle dans la liste déroulante.
+Vous pouvez ajouter un contrôle différent en sélectionnant le champ de données dans la fenêtre **sources de données** , puis en choisissant un autre contrôle dans la liste déroulante.
 
-## <a name="objects-in-the-project"></a>Objets dans le projet
+## <a name="objects-in-the-project"></a>Objets du projet
 
 Outre le contrôle, les objets de données suivants sont automatiquement ajoutés à votre projet :
 
-- Un dataset typé qui encapsule les tables de données auxquelles vous êtes connecté dans la base de données. Pour plus d’informations, consultez [outils de Dataset dans Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
+- Un dataset typé qui encapsule les tables de données auxquelles vous êtes connecté dans la base de données. Pour plus d’informations, consultez [outils de jeu de données dans Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
 
 - Un <xref:System.Windows.Forms.BindingSource> qui connecte le contrôle au dataset typé. Pour plus d’informations, consultez [vue d’ensemble du composant BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview).
 
-- Un TableAdapter qui connecte le dataset typé à la base de données. Pour plus d’informations, consultez [créer et configurer des TableAdapters](../data-tools/create-and-configure-tableadapters.md).
+- TableAdapter qui connecte le DataSet typé à la base de données. Pour plus d’informations, consultez [créer et configurer des TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
-- Un TableAdapterManager, qui est utilisé pour coordonner des adaptateurs de table dans le jeu de données pour activer les mises à jour hiérarchiques. Pour plus d’informations, consultez [mise à jour hiérarchique](../data-tools/hierarchical-update.md) et [TableAdapterManager référence](../data-tools/fill-datasets-by-using-tableadapters.md#tableadaptermanager-reference).
+- TableAdapterManager, qui est utilisé pour coordonner les adaptateurs de table dans le DataSet afin d’activer les mises à jour hiérarchiques. Pour plus d’informations, consultez [mise à jour hiérarchique](../data-tools/hierarchical-update.md) et [référence de TableAdapterManager](../data-tools/fill-datasets-by-using-tableadapters.md#tableadaptermanager-reference).
 
 Lorsque vous exécutez le projet, le contrôle affiche le premier enregistrement de la source de données. Vous pouvez utiliser le <xref:System.Windows.Forms.BindingSource> pour permettre aux utilisateurs de faire défiler les enregistrements.
 
@@ -64,14 +64,14 @@ Lorsque vous exécutez le projet, le contrôle affiche le premier enregistrement
 
 - Utilisez les méthodes <xref:System.Windows.Forms.BindingSource> telles que <xref:System.Windows.Forms.BindingSource.MoveNext%2A> et <xref:System.Windows.Forms.BindingSource.MovePrevious%2A>.
 
-Pour plus d’informations sur l’envoi des mises à jour pour le dataset typé et la base de données, consultez [Comment : Mettre à jour une source de données avec des données à partir d’un contrôle hôte](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
+Pour plus d’informations sur la façon d’envoyer des mises à jour au DataSet typé et à la base de données, consultez [Comment : mettre à jour une source de données avec les données d’un contrôle hôte](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Lier des données aux contrôles dans les solutions Office](../vsto/binding-data-to-controls-in-office-solutions.md)
+- [Lier des données à des contrôles dans les solutions Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Ajouter de nouvelles sources de données](../data-tools/add-new-data-sources.md)
 - [Lier des contrôles Windows Forms à des données dans Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-- [Guide pratique pour Remplir des documents avec des données à partir d’objets](../vsto/how-to-populate-documents-with-data-from-objects.md)
-- [Guide pratique pour Mettre à jour une source de données avec des données à partir d’un contrôle hôte](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
-- [Utiliser des fichiers de base de données locale dans la vue d’ensemble des solutions Office](../vsto/using-local-database-files-in-office-solutions-overview.md)
+- [Comment : remplir des documents avec des données d’objets](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [Comment : mettre à jour une source de données avec les données d’un contrôle hôte](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
+- [Vue d’ensemble de l’utilisation des fichiers de base de données locaux dans les solutions Office](../vsto/using-local-database-files-in-office-solutions-overview.md)
 - [Vue d’ensemble du composant BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview)

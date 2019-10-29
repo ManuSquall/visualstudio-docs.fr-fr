@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Importer une zone de formulaire conçue dans Outlook'
+title: 'Procédure pas à pas : importer une zone de formulaire conçue dans Outlook'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,14 +13,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cb4e57d1186b42ac1ed4807faf150d1af9090c69
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 23d058e7bdbbe3f12ef4521318236e939e1b22f2
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255578"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985436"
 ---
-# <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>Procédure pas à pas : Importer une zone de formulaire conçue dans Outlook
+# <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>Procédure pas à pas : importer une zone de formulaire conçue dans Outlook
   Cette procédure pas à pas montre comment concevoir une zone de formulaire dans Microsoft Office Outlook, puis importer la zone de formulaire dans un projet de complément VSTO Outlook à l’aide de l’Assistant **Nouvelle zone de formulaire** . La conception de la zone de formulaire dans Outlook vous permet d’ajouter des contrôles Outlook natifs à la zone de formulaire liée aux données Outlook. Après avoir importé la zone de formulaire, vous pouvez gérer les événements de chaque contrôle.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "71255578"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Configuration requise
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
@@ -43,9 +43,8 @@ ms.locfileid: "71255578"
 - [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] ou [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)].
 
 > [!NOTE]
-> Il est possible que pour certains des éléments de l’interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L’édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Il est possible que pour certains des éléments de l'interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L’édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
- ![lien vers la vidéo](../vsto/media/playvideo.gif "lien vers la vidéo") Pour une démonstration vidéo connexe, [consultez Comment faire : Créer des zones de formulaire Outlook à l’aide de Visual Studio 2008 ? ](http://go.microsoft.com/fwlink/?LinkID=130305).
 ## <a name="design-a-form-region-by-using-the-form-region-designer-in-outlook"></a>Concevoir une zone de formulaire à l’aide du concepteur de zones de formulaire dans Outlook
  Dans cette étape, vous allez concevoir une zone de formulaire dans Outlook. Vous enregistrerez ensuite la zone de formulaire à un emplacement facile à trouver pour pouvoir l’importer dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
@@ -55,7 +54,7 @@ ms.locfileid: "71255578"
 
 1. Démarrez Microsoft Office Outlook.
 
-2. Dans Outlook, sous l’onglet **Développeur** cliquez sur **Créer un formulaire**. Pour plus d'informations, voir [Procédure : Affichez l’onglet Développeur sur le](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)ruban.
+2. Dans Outlook, sous l’onglet **Développeur** cliquez sur **Créer un formulaire**. Pour plus d’informations, consultez [Comment : afficher l’onglet Développeur sur le ruban](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
 3. Dans la zone **Créer un formulaire** , cliquez sur **Tâche**, puis sur **Ouvrir**.
 
@@ -124,7 +123,7 @@ ms.locfileid: "71255578"
 
 3. Enregistrez le projet dans le répertoire de projet par défaut.
 
-     Pour plus d'informations, voir [Procédure : Créer des projets Office dans Visual](../vsto/how-to-create-office-projects-in-visual-studio.md)Studio.
+     Pour plus d’informations, consultez [Comment : créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
 ## <a name="import-the-form-region"></a>Importer la zone de formulaire
  Vous pouvez importer la zone de formulaire conçue dans Outlook dans le projet de complément VSTO Outlook à l’aide de l’Assistant **Nouvelle zone de formulaire Outlook** .
@@ -187,7 +186,7 @@ ms.locfileid: "71255578"
 
    - Actualise la zone de liste de la zone de formulaire à l’aide de l’état d’achèvement actuel de chaque tâche dépendante.
 
-   - Analyse le champ de texte masqué pour obtenir l’objet de chaque tâche dépendante. Il localise ensuite chaque `Microsoft.Office.Interop.Outlook.TaskItem` dans le dossier *tâches* en appelant la `FindTaskBySubjectName` méthode d’assistance et en passant l’objet de chaque tâche.
+   - Analyse le champ de texte masqué pour obtenir l’objet de chaque tâche dépendante. Il localise ensuite chaque `Microsoft.Office.Interop.Outlook.TaskItem` dans le dossier *tâches* en appelant la méthode d’assistance `FindTaskBySubjectName` et en passant l’objet de chaque tâche.
 
    - Ajoute les valeurs `Microsoft.Office.Interop.Outlook.TaskItem.Subject` et `Microsoft.Office.Interop.Outlook.TaskItem.PercentComplete` à la zone de liste des tâches dépendantes.
 
@@ -245,7 +244,7 @@ ms.locfileid: "71255578"
 ## <a name="next-steps"></a>Étapes suivantes
  Pour plus d'informations sur la personnalisation de l'interface utilisateur d'une application Outlook, consultez les rubriques suivantes :
 
-- Pour en savoir plus sur la façon de concevoir l’apparence d’une zone de formulaire en faisant glisser des contrôles managés vers [un concepteur visuel, consultez Procédure pas à pas : Concevoir une zone](../vsto/walkthrough-designing-an-outlook-form-region.md)de formulaire Outlook.
+- Pour en savoir plus sur la façon de concevoir l’apparence d’une zone de formulaire en faisant glisser des contrôles managés vers un concepteur visuel, consultez [procédure pas à pas : concevoir une zone de formulaire Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).
 
 - Pour en savoir plus sur la personnalisation du ruban d’un élément Outlook, consultez [personnaliser un ruban pour Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
 
@@ -255,8 +254,8 @@ ms.locfileid: "71255578"
 - [Accéder à une zone de formulaire au moment de l’exécution](../vsto/accessing-a-form-region-at-run-time.md)
 - [Créer des zones de formulaire Outlook](../vsto/creating-outlook-form-regions.md)
 - [Instructions pour créer des zones de formulaire Outlook](../vsto/guidelines-for-creating-outlook-form-regions.md)
-- [Procédure pas à pas : Concevoir une zone de formulaire Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)
-- [Guide pratique pour Ajouter une zone de formulaire à un projet de complément Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)
+- [Procédure pas à pas : conception d’une zone de formulaire Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md)
+- [Comment : ajouter une zone de formulaire à un projet de complément Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)
 - [Associer une zone de formulaire à une classe de message Outlook](../vsto/associating-a-form-region-with-an-outlook-message-class.md)
 - [Actions personnalisées dans les zones de formulaire Outlook](../vsto/custom-actions-in-outlook-form-regions.md)
-- [Guide pratique pour Empêcher Outlook d’afficher une zone de formulaire](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)
+- [Comment : empêcher Outlook d’afficher une zone de formulaire](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)

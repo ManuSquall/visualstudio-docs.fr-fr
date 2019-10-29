@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: jillre
-ms.openlocfilehash: b68793e512cdb367375cc9f27d61ae5a85e4f078
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e57feede5963b9efc04f98f4c7ba3adfb1eb49b1
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653280"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984642"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Outils de test dans Visual Studio
 
@@ -68,7 +68,7 @@ L’analyse de couverture du code peut être appliquée à du code managé et no
 Vous pouvez avoir recours à la couverture du code lorsque vous exécutez des méthodes de test à l'aide de l'Explorateur de tests. La table des résultats affiche le pourcentage de code exécuté dans chaque assembly, classe et méthode. En outre, l'éditeur de code source vous indique quel code a été testé.
 
 * [Utiliser la couverture du code pour déterminer la quantité de code testé](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
-* [Tests unitaires, couverture du code et analyse des clones de code avec Visual Studio (laboratoire)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx)
+* [Tests unitaires, couverture du code et analyse des clones de code avec Visual Studio (laboratoire)](https://www.boost.org/doc/libs/1_71_0/libs/test/doc/html/index.html)
 * [Personnaliser l’analyse de la couverture du code](customizing-code-coverage-analysis.md)
 
 ## <a name="microsoft-fakes"></a>Microsoft Fakes
@@ -86,7 +86,7 @@ Que vous choisissiez les meilleurs tests codés de l’interface utilisateur ou 
 * [Utiliser l’automatisation de l’interface utilisateur pour tester votre code](use-ui-automation-to-test-your-code.md)
 * [Bien démarrer avec la création, la modification et la gestion d’un test codé de l’interface utilisateur](walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 * [Tester des applications UWP avec des tests codés de l’interface utilisateur](test-uwp-app-with-coded-ui-test.md)
-* [Introduction aux tests codés de l’interface utilisateur avec Visual Studio Enterprise (laboratoire)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Introduction%20to%20Coded%20UI%20Tests%20with%20Visual%20Studio%20Enterprise%202015.docx)
+* [Introduction aux tests codés de l’interface utilisateur avec Visual Studio Enterprise (laboratoire)](https://www.boost.org/doc/libs/1_71_0/libs/test/doc/html/index.html)
 
 ## <a name="load-testing"></a>Test de charge
 

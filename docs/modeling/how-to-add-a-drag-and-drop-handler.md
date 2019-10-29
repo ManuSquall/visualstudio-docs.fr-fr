@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d20436eb7efb1d3f4212e8fc3a3ed9a3234c4114
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d2019f1333f6f9a5d6e1bffde16cfee2da32061d
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667225"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985091"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Comment : ajouter un gestionnaire glisser-déplacer
 
@@ -146,7 +146,7 @@ Pour connaître les formats dans lesquels vos informations sur la source du dép
     }
     ```
 
-     Pour accepter les formes UML, déterminez par expérience les GUID des classes de formes UML. N'oubliez qu'il existe généralement plusieurs types d'éléments sur un diagramme. Souvenez-vous aussi qu'un objet déplacé à partir d'un diagramme DSL ou UML est la forme, et non l'élément de modèle.
+     Pour accepter des formes UML, déterminez les GUID des classes de formes UML par expérimentation. N'oubliez qu'il existe généralement plusieurs types d'éléments sur un diagramme. Souvenez-vous aussi qu'un objet déplacé à partir d'un diagramme DSL ou UML est la forme, et non l'élément de modèle.
 
 `DiagramDragEventArgs` possède aussi les propriétés qui indiquent la position actuelle du pointeur de la souris et si l'utilisateur appuie sur les touches CTRL, ALT ou MAJ.
 
@@ -160,11 +160,9 @@ Les propriétés `Data` et `Prototype` des arguments de l'événement contiennen
 
 Rendre le DSL source accessible par Visual Studio Model bus :
 
-1. Téléchargez et installez l'extension Visual Studio Model Bus, si ce n'est déjà fait. Pour plus d’informations, consultez [Kit de développement logiciel de visualisation et de modélisation](http://go.microsoft.com/fwlink/?LinkID=185579).
+1. Ouvrez le fichier de définition DSL du DSL source dans le concepteur DSL. Cliquez avec le bouton droit sur l’aire de conception, puis cliquez sur **activer ModelBus**. Dans la boîte de dialogue, choisissez l'une ou l'autre des options.  Cliquez sur **OK**. Un nouveau projet « ModelBus » vient s'ajouter à la solution DSL.
 
-2. Ouvrez le fichier de définition DSL du DSL source dans le concepteur DSL. Cliquez avec le bouton droit sur l’aire de conception, puis cliquez sur **activer ModelBus**. Dans la boîte de dialogue, choisissez l'une ou l'autre des options.  Cliquez sur **OK**. Un nouveau projet « ModelBus » vient s'ajouter à la solution DSL.
-
-3. Cliquez sur **transformer tous les modèles** et reconstruisez la solution.
+2. Cliquez sur **transformer tous les modèles** et reconstruisez la solution.
 
 ### <a name="to-send-an-object-from-a-source-dsl"></a>Pour envoyer un objet à partir d'un DSL source
 

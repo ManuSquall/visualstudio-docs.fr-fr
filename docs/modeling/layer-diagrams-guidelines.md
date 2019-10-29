@@ -12,16 +12,16 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39da24dd0d8b7372c63609124ee0b9427fccb03d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8613633289189bec5e403ec76b78731d5e3ecc4f
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661502"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72983740"
 ---
 # <a name="dependency-diagrams-guidelines"></a>Diagrammes de dépendance : indications
 
-Décrivez l’architecture de votre application à un niveau élevé en créant des *diagrammes de dépendance* dans Visual Studio. Assurez-vous que votre code reste cohérent avec cette conception en validant votre code avec un diagramme de dépendance. Vous pouvez également inclure la validation de couche dans votre processus de génération. Voir [vidéo Channel 9 : concevoir et valider votre architecture à l’aide de diagrammes de dépendances](http://go.microsoft.com/fwlink/?LinkID=252073).
+Décrivez l’architecture de votre application à un niveau élevé en créant des *diagrammes de dépendance* dans Visual Studio. Assurez-vous que votre code reste cohérent avec cette conception en validant votre code avec un diagramme de dépendance. Vous pouvez également inclure la validation de couche dans votre processus de génération. Voir [vidéo Channel 9 : concevoir et valider votre architecture à l’aide de diagrammes de dépendances](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Using-layer-diagrams-to-design-and-validate-your-architecture).
 
 Pour connaître les éditions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [prise en charge d’édition pour les outils d’architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -70,7 +70,7 @@ Consultez [créer des diagrammes de dépendance à partir de votre code](../mode
 
 Les couches représentent des groupes logiques d' *artefacts*, tels que des projets, des fichiers de code, des espaces de noms, des classes et des méthodes. Vous pouvez créer des couches à partir d’artefacts à partir de projets visuels C# et Visual Basic, ou vous pouvez attacher des spécifications ou des plans à une couche en liant des documents, tels que des fichiers Word ou des présentations PowerPoint. Chaque couche apparaît comme un rectangle sur le diagramme et indique le nombre d’artefacts qui lui sont liés. Une couche peut contenir des couches imbriquées qui décrivent des tâches plus spécifiques.
 
-En règle générale, nommez les couches selon leur fonction : par exemple, « Présentation » ou « Services ». Si les artefacts sont étroitement interdépendants, placez-les dans la même couche. Si les artefacts peuvent être mis à jour séparément ou utilisés dans des applications distinctes, placez-les dans des couches différentes. Pour en savoir plus sur les modèles de superposition, visitez le site patterns & Practices à l’adresse [http://go.microsoft.com/fwlink/?LinkId=145794](http://go.microsoft.com/fwlink/?LinkId=145794).
+En règle générale, nommez les couches selon leur fonction : par exemple, « Présentation » ou « Services ». Si les artefacts sont étroitement interdépendants, placez-les dans la même couche. Si les artefacts peuvent être mis à jour séparément ou utilisés dans des applications distinctes, placez-les dans des couches différentes. Pour en savoir plus sur les modèles de superposition, visitez le site patterns & Practices à l’adresse [http://go.microsoft.com/fwlink/?LinkId=145794](https://archive.codeplex.com/?p=apparch).
 
 > [!TIP]
 > Il existe certains types d’artefacts que vous pouvez lier aux couches, mais qui ne prennent pas en charge la validation par rapport au diagramme de dépendance. Pour voir si l’artefact prend en charge la validation, ouvrez l' **Explorateur de couches** pour examiner la propriété **prend en charge la validation** du lien d’artefact. Consultez [découvrir les dépendances existantes entre les couches](#Generate).
@@ -123,7 +123,7 @@ Si ce n’est pas le cas, le code sera plus difficile à modifier tout au long d
 
 Lorsque vous démarrez le développement d'un nouveau projet, ou d'une nouvelle partie d'un nouveau projet, vous pouvez dessiner des couches et des dépendances pour aider à identifier les principaux composants avant de commencer à développer le code.
 
-- **Affichez les modèles architecturaux identifiables** dans vos diagrammes de dépendance, si possible. Par exemple, un diagramme de dépendance qui décrit une application de bureau peut inclure des couches telles que la présentation, la logique de domaine et la Banque de données. Un diagramme de dépendance qui couvre une fonctionnalité unique au sein d’une application peut avoir des couches telles que le modèle, la vue et le contrôleur. Pour plus d’informations sur ces modèles, consultez [patterns & Practices : architecture d’application](http://go.microsoft.com/fwlink/?LinkId=145794).
+- **Affichez les modèles architecturaux identifiables** dans vos diagrammes de dépendance, si possible. Par exemple, un diagramme de dépendance qui décrit une application de bureau peut inclure des couches telles que la présentation, la logique de domaine et la Banque de données. Un diagramme de dépendance qui couvre une fonctionnalité unique au sein d’une application peut avoir des couches telles que le modèle, la vue et le contrôleur. Pour plus d’informations sur ces modèles, consultez [patterns & Practices : architecture d’application](https://archive.codeplex.com/?p=apparch).
 
 - **Créez un artefact de code pour chaque couche** , tel qu’un espace de noms, une classe ou un composant. Il est ainsi plus facile de suivre le code et de lier les artefacts de code aux couches. Dès que vous créez un artefact, liez-le à la couche appropriée.
 

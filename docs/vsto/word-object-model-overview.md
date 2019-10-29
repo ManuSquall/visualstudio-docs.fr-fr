@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f1b8ae7c56cf6f7cb20dd237c9106498a752e267
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 71e66d6cda802b2b1243911e1927af751e2cdbe9
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254963"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985393"
 ---
 # <a name="word-object-model-overview"></a>Vue d’ensemble du modèle objet Word
   Quand vous développez des solutions Word dans Visual Studio, vous interagissez avec le modèle objet Word. Ce modèle objet se compose de classes et d'interfaces fournies dans l'assembly PIA (Primary Interop Assembly) pour Word et définies dans l'espace de noms <xref:Microsoft.Office.Interop.Word> .
@@ -119,14 +119,14 @@ ms.locfileid: "71254963"
  Pour obtenir des informations complètes sur le modèle objet Word, vous pouvez vous reporter à la documentation de référence de l'assembly PIA (Primary Interop Assembly) Word et à la documentation de référence du modèle objet VBA (Visual Basic pour Applications).
 
 ### <a name="primary-interop-assembly-reference"></a>Référence d’assembly PIA (Primary Interop Assembly)
- La documentation de référence de l'assembly PIA Word décrit les types figurant dans l'assembly PIA pour Word. Cette documentation est disponible à partir de l’emplacement suivant : [Référence de l’assembly PIA Word 2010](http://go.microsoft.com/fwlink/?LinkId=189588).
+ La documentation de référence de l'assembly PIA Word décrit les types figurant dans l'assembly PIA pour Word. Cette documentation est disponible à partir de l’emplacement suivant : référence de l' [assembly PIA Word 2010](../vsto/office-primary-interop-assemblies.md).
 
- Pour plus d’informations sur la conception de l’assembly PIA Word, telles que les différences entre les classes et les interfaces dans l’assembly PIA et le mode d’implémentation des événements dans l’ASSEMBLy Pia, consultez [vue d’ensemble des classes et interfaces dans les assemblys PIA (Primary Interop Assembly](http://go.microsoft.com/fwlink/?LinkId=189592)) d’Office.
+ Pour plus d’informations sur la conception de l’assembly PIA Word, telles que les différences entre les classes et les interfaces dans l’assembly PIA et le mode d’implémentation des événements dans l’ASSEMBLy Pia, consultez [vue d’ensemble des classes et interfaces dans les assemblys PIA (Primary Interop Assembly](/previous-versions/office/office-12/ms247299(v=office.12))) d’Office.
 
 ### <a name="vba-object-model-reference"></a>Référence du modèle objet VBA
- La documentation de référence du modèle objet VBA présente le modèle objet Word tel qu'il est exposé au code VBA. Pour plus d’informations, consultez [Référence du modèle objet Word 2010](http://go.microsoft.com/fwlink/?LinkId=199772).
+ La documentation de référence du modèle objet VBA présente le modèle objet Word tel qu'il est exposé au code VBA. Pour plus d’informations, consultez [Référence du modèle objet Word 2010](/office/vba/api/overview/Word/object-model).
 
- Tous les objets et membres mentionnés dans la documentation de référence du modèle objet VBA correspondent aux types et aux membres de l'assembly PIA Word. Par exemple, l’objet document dans la documentation de référence du modèle objet VBA <xref:Microsoft.Office.Interop.Word.Document> correspond à l’objet dans l’assembly PIA Word. Même si la documentation de référence du modèle objet VBA fournit des exemples de code pour la plupart des propriétés, méthodes et événements, vous devez traduire le code VBA fourni dans cette documentation de référence en code Visual Basic ou Visual C# pour pouvoir les utiliser dans un projet Word créé à l'aide de Visual Studio.
+ Tous les objets et membres mentionnés dans la documentation de référence du modèle objet VBA correspondent aux types et aux membres de l'assembly PIA Word. Par exemple, l’objet document dans la documentation de référence du modèle objet VBA correspond à l’objet <xref:Microsoft.Office.Interop.Word.Document> dans l’assembly PIA Word. Même si la documentation de référence du modèle objet VBA fournit des exemples de code pour la plupart des propriétés, méthodes et événements, vous devez traduire le code VBA fourni dans cette documentation de référence en code Visual Basic ou Visual C# pour pouvoir les utiliser dans un projet Word créé à l'aide de Visual Studio.
 
 ## <a name="see-also"></a>Voir aussi
 - [Assemblys PIA (Primary Interop Assembly) Office](../vsto/office-primary-interop-assemblies.md)

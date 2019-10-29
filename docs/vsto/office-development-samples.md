@@ -12,17 +12,17 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5cc00d56b0abf02f99c7ab320ab0353d1b4b2317
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: b9e20f0d14b2940fdbe8096442848f38183b1db7
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447139"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985726"
 ---
 # <a name="office-development-samples"></a>Exemples de développement Office
   Visual Studio inclut des exemples d'applications qui montrent comment utiliser les outils de développement Microsoft Office pour créer des solutions Office. Le code de ces exemples illustre la syntaxe, la structure et les techniques utilisées pour générer les solutions Office.
 
- Pour les exemples les plus récents, consultez [exemples pour développeurs MSDN : Apprendre à coder](http://go.microsoft.com/fwlink/?LinkID=248199) sur le site Web Microsoft.
+ Pour obtenir les exemples les plus récents, consultez les [exemples MSDN pour développeurs : en savoir plus](https://code.msdn.microsoft.com/site/search?query=vsto&f%5B1%5D.Value=vsto&f%5B1%5D.Type=SearchText&f%5B0%5D.Value=11.0&f%5B0%5D.Type=VisualStudioVersion&f%5B0%5D.Text=Visual%20Studio%2011&ac=8) sur le code sur le site Web de Microsoft.
 
  [!INCLUDE[note_security_multiplesample](../vsto/includes/note-security-multiplesample-md.md)]
 

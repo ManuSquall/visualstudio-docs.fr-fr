@@ -12,16 +12,16 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e43c2b38d1da055a1a0a4533acc61cb3b8e6760
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: ea408640b47b04041e99b9a4bff2605b6231a92f
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66348296"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72981231"
 ---
 # <a name="visual-studio-debugging-samples"></a>Exemples de débogage Visual Studio
 Deux exemples montrent comment étendre le débogueur Visual Studio à l’aide de [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].
 
-- L’exemple d’évaluateur d’Expression de débogueur, pour les langages managés, est inclus dans le [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. Dans le [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] fenêtre, cliquez sur le **exemples** , cliquez sur **tous les** ou **c#** dans la liste des langues, puis cliquez sur **débogueur**.
+- L’exemple de l’évaluateur d’expression du débogueur, pour les langages managés, est inclus dans la [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. Dans la fenêtre [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], cliquez sur l’onglet **exemples** , cliquez sur **C#** **tous** ou dans la liste des langues, puis cliquez sur **débogueur**.
 
-- Le Visual Studio déboguer moteur exemple, pour les langages natifs, est disponible sur MSDN Code Gallery. Pour plus d’informations, consultez [exemple de moteur de débogage de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=150236) sur le site Web de Microsoft.
+- L’exemple de moteur de débogage Visual Studio, pour les langages natifs, est disponible dans la Galerie de code MSDN. Pour plus d’informations, consultez [exemple de moteur de débogage Visual Studio](https://code.msdn.microsoft.com/Visual-Studio-Debug-Engine-c2e21c0e) sur le site Web de Microsoft.

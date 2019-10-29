@@ -12,37 +12,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f572405b6246619dac8b567283696319d65211bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8bea9faa315fbd6ec41c667836dac7216f1f8f81
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953178"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986277"
 ---
 # <a name="additional-resources-to-develop-office-solutions"></a>Ressources supplémentaires pour développer des solutions Office
   Les outils de développement Microsoft Office dans Visual Studio ne constituent que l’une des nombreuses méthodes permettant d’étendre les applications Office. Les applications Office possèdent également des fonctionnalités intégrées, telles que les formats Open XML, qui ne sont pas prises en charge par les outils de développement Office dans Visual Studio, ni mentionnées dans cette documentation.
 
  Si vous souhaitez en savoir plus sur les possibilités offertes par Microsoft Office et les outils de développement Office dans Visual Studio, ces ressources sont un bon début.
 
-[Développement Office avec le centre de développement Visual Studio](http://go.microsoft.com/fwlink/?LinkId=149752)
-
-Portail central des articles, vidéos, forums, blogs et autres ressources les plus récents pour les outils de développement Office dans Visual Studio.
-
-[Centre pour développeurs Office](http://go.microsoft.com/fwlink/?LinkId=83467)
+[Centre de développement Office](https://developer.microsoft.com/office/docs)
 
 Portail central des ressources les plus récentes pour les développeurs Office (pas uniquement dans Visual Studio).
 
-[Section de développement Microsoft Office de MSDN Library](http://go.microsoft.com/fwlink/?LinkId=149870)
+[Microsoft Office section développement de MSDN Library](/previous-versions/office/office-12/bb726434(v=office.12))
 
 Zone de MSDN Library où vous pouvez rechercher des articles et de la documentation de référence sur le développement de solutions pour plusieurs versions d'Office (non spécifiques au développement d'Office à l'aide de Visual Studio).
 
-[Portail des développeurs Office business applications](http://go.microsoft.com/fwlink/?LinkId=99125)
-
-Portail central des informations sur les applications d’entreprise Office (OBA). Les OBA connectent les systèmes métier (LOB) avec leurs utilisateurs via des applications Microsoft Office. Vous pouvez ainsi vous développer en vous reposant sur les investissements IT existants, en combinant vos ressources de façons novatrices.
-
-[Développement Office avec Visual Studio blog](http://go.microsoft.com/fwlink/?LinkId=149748)
-
-Blog de l’équipe Microsoft à l’origine des outils de développement Office pour Visual Studio.
-
 ## <a name="see-also"></a>Voir aussi
-- [Prise en charge supplémentaire pour les erreurs dans les solutions Office](../vsto/additional-support-for-errors-in-office-solutions.md)
+- [Prise en charge supplémentaire des erreurs dans les solutions Office](../vsto/additional-support-for-errors-in-office-solutions.md)

@@ -16,17 +16,17 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f117b2c50bfb3a50f794236505fe02ffd8e2395b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 1823fb808985d27a02dc2cac34859ea1fbca44b6
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748437"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985155"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Comment : définir un langage spécifique à un domaine
 Pour définir un langage spécifique à un domaine (DSL), vous devez créer une solution Visual Studio à partir d’un modèle. Le composant principal de la solution est le diagramme de définition DSL, qui est stocké dans DslDefinition.dsl. La définition DSL définit les classes et les formes de la solution DSL. Après avoir modifié et ajouté à ces éléments, vous pouvez ajouter du code programme pour personnaliser la solution DSL plus en détail.
 
-Si vous débutez avec DSL, nous vous recommandons d’utiliser le **laboratoire d’outils DSL**, que vous trouverez dans ce site : [Kit de développement logiciel de visualisation et de modélisation](http://go.microsoft.com/fwlink/?LinkID=186128)
+Si vous débutez avec DSL, nous vous recommandons d’utiliser le **laboratoire d’outils DSL**, que vous trouverez dans ce site : [Kit de développement logiciel de visualisation et de modélisation](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)
 
 ## <a name="templates"></a>Sélection d’une solution de modèle
 
@@ -607,7 +607,7 @@ Pour créer un langage spécifique à un domaine, vous devez créer une nouvelle
  Voir aussi [Comment : modifier l’espace de noms d’un langage spécifique à un domaine](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).
 
 ## <a name="trouble"></a>Dépannage
- Le tableau suivant mentionne certains des problèmes les plus courants qui peuvent être rencontrés lors de la conception d'une solution DSL, avec quelques suggestions de solution. D’autres conseils sont disponibles sur le [Forum extensibilité des outils de visualisation](http://go.microsoft.com/fwlink/?LinkId=186074).
+ Le tableau suivant mentionne certains des problèmes les plus courants qui peuvent être rencontrés lors de la conception d'une solution DSL, avec quelques suggestions de solution. D’autres conseils sont disponibles sur le [Forum extensibilité des outils de visualisation](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=dslvsarchx).
 
 | Problème | Suggestion |
 |-|-|

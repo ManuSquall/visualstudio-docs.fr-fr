@@ -13,12 +13,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 93e51a1daee6e9635305f4d8a5d275106af7947e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f6d4a19143ccde160a455a8247d10e5cc391e78c
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72609398"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985110"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Comment : créer une solution de langage spécifique à un domaine
 Un langage spécifique à un domaine (DSL) est créé à l’aide d’une solution Visual Studio spécialisée.
@@ -114,7 +114,7 @@ Par défaut, il s’agit d’un nom composé des noms de votre entreprise et de 
 
  **Utiliser une clé de nom fort existante** Utilisez cette option si vous souhaitez intégrer votre DSL à un autre assembly.
 
- Pour plus d’informations sur l’affectation d’un nom fort, consultez [création et utilisation d’assemblys avec nom fort](http://go.microsoft.com/fwlink/?LinkId=186073).
+ Pour plus d’informations sur l’affectation d’un nom fort, consultez [création et utilisation d’assemblys avec nom fort](/dotnet/standard/assembly/create-use-strong-named).
 
 ## <a name="see-also"></a>Voir aussi
 

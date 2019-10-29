@@ -1,5 +1,5 @@
 ---
-title: Utilisation de Modules pour inclure des fichiers dans la Solution | Microsoft Docs
+title: Utilisation de modules pour inclure des fichiers dans la solution | Microsoft Docs
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,20 +14,20 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 569f1027163d5651d184254b4e6f57a02df2a39a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4f8f2aa6c5d86af2424a811b6167829cefdb6fb5
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63007839"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985295"
 ---
 # <a name="use-modules-to-include-files-in-the-solution"></a>Utiliser des modules pour inclure des fichiers dans la solution
-  Il peut arriver lorsque vous souhaitez déployer les fichiers sur le serveur SharePoint quel que soit leur type de fichier, telles que de nouvelles pages maîtres. Pour ce faire, vous pouvez utiliser *Modules* (à ne pas confondre avec [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] modules de code). Les modules sont des conteneurs pour les fichiers dans une solution SharePoint. Lorsque la solution est déployée, les fichiers dans le module sont copiés vers les dossiers spécifiés sur le serveur SharePoint.
+  Il peut arriver que vous souhaitiez déployer des fichiers sur le serveur SharePoint, quel que soit leur type de fichier, par exemple les nouvelles pages maîtres. Pour ce faire, vous pouvez utiliser des *modules* (à ne pas confondre avec les modules de code [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]). Les modules sont des conteneurs de fichiers dans une solution SharePoint. Lorsque la solution est déployée, les fichiers du module sont copiés dans les dossiers spécifiés sur le serveur SharePoint.
 
-## <a name="module-items-and-elements"></a>Éléments et les éléments de module
- Pour créer un module, ajoutez-le à un projet en choisissant dans la **ajouter un nouvel élément** boîte de dialogue. Ensuite, modifiez son *Elements.xml* fichier à inclure les noms des fichiers que vous souhaitez déployer, où ils se trouvent sur le système et ils doivent être copiés sur le serveur SharePoint.
+## <a name="module-items-and-elements"></a>Éléments et éléments de module
+ Pour créer un module, ajoutez-le à un projet en le sélectionnant dans la boîte de dialogue **Ajouter un nouvel élément** . Ensuite, modifiez son fichier *Elements. xml* de façon à inclure les noms des fichiers que vous souhaitez déployer, où ils se trouvent sur le système, et où ils doivent être copiés sur le serveur SharePoint.
 
- Voici un exemple de la *Elements.xml* fichier d’un module :
+ Voici un exemple de fichier *Elements. xml* pour un module :
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -39,26 +39,26 @@ ms.locfileid: "63007839"
 
 ```
 
- Modules nouvellement créés contiennent les fichiers par défaut suivants :
+ Les modules nouvellement créés contiennent les fichiers par défaut suivants :
 
 |Nom du fichier|Description|
 |---------------|-----------------|
-|*Elements.xml*|Le fichier de définition pour le module.|
-|*Sample.txt*|Un fichier d’espace réservé qui sert d’exemple d’un fichier dans le module.|
+|*Éléments. Xml*|Fichier de définition du module.|
+|*Sample. txt*|Fichier d’espace réservé qui sert d’exemple de fichier dans le module.|
 
- Le *Elements.xml* fichier contient les éléments suivants :
+ Le fichier *Elements. xml* contient les éléments suivants :
 
 |Nom de l'élément|Description|
 |------------------|-----------------|
 |Éléments|Contient tous les éléments définis dans le module.|
-|Module|L’élément de module possède un attribut unique, *nom*, qui spécifie le nom du module dans le format `<Module Name="Module1">`.<br /><br /> Notez que si vous modifiez le nom du module (ou son *nom du dossier* propriété), vous devez mettre à jour manuellement le nom dans l’élément de Module.<br /><br /> Si vous spécifiez un sous-répertoire pour l’ou les fichiers dans l’élément de Module, [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] (WSS) crée automatiquement une structure de répertoire correspondant pour eux.|
-|Fichier|L’élément File a deux paramètres, *chemin d’accès* et *Url*.<br /><br /> -Chemin d’accès : Le nom et l’emplacement du fichier dans la solution SharePoint. Le format est, `Path="Module1\Sample.txt"`.<br /><br /> -Url : L’emplacement où le fichier sera déployé sur le serveur SharePoint. Le format est, `Url="Module1/Sample.txt"`.<br /><br /> -Type : Attribut facultatif qui a deux paramètres : *GhostableInLibrary* et *Ghostable*. Le format est, `Type="GhostableInLibrary"`. Spécification *GhostableInLibrary* signifie le fichier est ajouté à une bibliothèque de documents dans SharePoint avec un élément de liste pour accompagner le fichier lorsqu’il est ajouté à la bibliothèque. Spécification *Ghostable* , le fichier à ajouter à SharePoint en dehors de la bibliothèque de documents.|
+|Module|L’élément module possède un attribut unique, *Name*, qui spécifie le nom du module au format `<Module Name="Module1">`.<br /><br /> Notez que si vous modifiez le nom du module (ou sa propriété *nom de dossier* ), vous devez mettre à jour manuellement le nom dans l’élément de module.<br /><br /> Si vous spécifiez un sous-répertoire pour le ou les fichiers dans l’élément de module, [!INCLUDE[sharepointShort](../sharepoint/includes/sharepointshort-md.md)] (WSS) crée automatiquement une structure de répertoire correspondante.|
+|Fichier|L’élément file a deux paramètres, *path* et *URL*.<br /><br /> -Path : nom et emplacement du fichier dans la solution SharePoint. Le format est, `Path="Module1\Sample.txt"`.<br /><br /> -URL : emplacement où le fichier sera déployé sur le serveur SharePoint. Le format est, `Url="Module1/Sample.txt"`.<br /><br /> -Type : attribut facultatif qui a deux paramètres : *GhostableInLibrary* et *Ghostable*. Le format est, `Type="GhostableInLibrary"`. La spécification de *GhostableInLibrary* signifie que le fichier sera ajouté à une bibliothèque de documents dans SharePoint avec un élément de liste pour accompagner le fichier lorsqu’il est ajouté à la bibliothèque. Si vous spécifiez *Ghostable* , le fichier est ajouté à SharePoint en dehors de la bibliothèque de documents.|
 
- Chaque fichier que vous souhaitez déployer nécessite une `<File>` entrée d’élément dans *Elements.xml*.
+ Chaque fichier que vous souhaitez déployer requiert une entrée d’élément `<File>` distincte dans *Elements. xml*.
 
 ## <a name="see-also"></a>Voir aussi
-- [Guide pratique pour Inclure des fichiers à l’aide d’un module](../sharepoint/how-to-include-files-by-using-a-module.md)
-- [Comment : Configurer un fichier](http://go.microsoft.com/fwlink/?LinkID=144271)
+- [Comment : inclure des fichiers à l’aide d’un module](../sharepoint/how-to-include-files-by-using-a-module.md)
+- [Comment : approvisionner un fichier](/previous-versions/office/developer/sharepoint-2010/ms441170(v=office.14))
 - [Développement de solutions SharePoint](../sharepoint/developing-sharepoint-solutions.md)
 - [Création de composants WebPart pour SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)
 - [Empaqueter et déployer des solutions SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

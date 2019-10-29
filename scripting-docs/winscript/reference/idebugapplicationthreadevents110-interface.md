@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationThreadEvents110 Interface | Microsoft Docs
+title: Interface IDebugApplicationThreadEvents110 | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,15 +13,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b2cdde46484f95aa57404ebe6b6cb4c86ef458c9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5dd666d825c40155675714f5945209f22198993c
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440505"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984391"
 ---
 # <a name="idebugapplicationthreadevents110-interface"></a>IDebugApplicationThreadEvents110 (interface)
-Ajoute plusieurs événements de thread. Ces événements sont locales uniquement. Autrement dit, vous pouvez vous y abonner uniquement dans le processus en cours de débogage, à l’aide de la [IConnectionPoint](http://go.microsoft.com/fwlink/?LinkId=232738) et désinformation des méthodes sur des objets de thread d’application PDM (objets qui implémentent [IDebugApplicationThread Interface](../../winscript/reference/idebugapplicationthread-interface.md)). Elles se produisent sur le thread de qu'origine.  
+Ajoute d’autres événements de thread. Ces événements sont locaux uniquement. Autrement dit, vous ne pouvez vous y abonner que dans le processus en cours de débogage, à l’aide des méthodes [IConnectionPoint](/windows/win32/api/ocidl/nn-ocidl-iconnectionpoint) Advise et Unadvise sur les objets de thread d’application PDM (objets qui implémentent l' [interface IDebugApplicationThread](../../winscript/reference/idebugapplicationthread-interface.md)). Ils se produisent sur le thread à partir duquel ils proviennent.  
   
 > [!IMPORTANT]
 > Elle est implémentée par PDM version v11.0 et supérieures. Trouvée dans activdbg100.h.  
@@ -31,7 +31,7 @@ Ajoute plusieurs événements de thread. Ces événements sont locales uniquemen
   
 |Méthode|Description|  
 |------------|-----------------|  
-|[IDebugApplicationThreadEvents110 ::OnBeginThreadRequest](../../winscript/reference/idebugapplicationthreadevents110-onbeginthreadrequest.md)|Un appel dans le thread à l’aide du thread de PDM commutation a commencé.|  
-|[IDebugApplicationThreadEvents110::OnResumeFromBreakPoint](../../winscript/reference/idebugapplicationthreadevents110-onresumefrombreakpoint.md)|Le thread reprend à partir d’un point d’arrêt et est actif une fois encore.|  
-|[IDebugApplicationThreadEvents110::OnSuspendForBreakPoint](../../winscript/reference/idebugapplicationthreadevents110-onsuspendforbreakpoint.md)|Le thread est en suspension pour un point d’arrêt et peut gérer des appels qui nécessitent le thread doit être suspendu entièrement.|  
-|[IDebugApplicationThreadEvents110::OnThreadRequestComplete](../../winscript/reference/idebugapplicationthreadevents110-onthreadrequestcomplete.md)|Un appel dans le thread à l’aide du thread de PDM commutation s’est terminée.|
+|[IDebugApplicationThreadEvents110 ::OnBeginThreadRequest](../../winscript/reference/idebugapplicationthreadevents110-onbeginthreadrequest.md)|Un appel dans le thread à l’aide du basculement de thread de PDM a commencé.|  
+|[IDebugApplicationThreadEvents110::OnResumeFromBreakPoint](../../winscript/reference/idebugapplicationthreadevents110-onresumefrombreakpoint.md)|Le thread reprend à partir d’un point d’arrêt et sera à nouveau actif.|  
+|[IDebugApplicationThreadEvents110::OnSuspendForBreakPoint](../../winscript/reference/idebugapplicationthreadevents110-onsuspendforbreakpoint.md)|Le thread s’interrompt pour un point d’arrêt et peut gérer les appels qui requièrent l’interruption totale du thread.|  
+|[IDebugApplicationThreadEvents110::OnThreadRequestComplete](../../winscript/reference/idebugapplicationthreadevents110-onthreadrequestcomplete.md)|Un appel dans le thread à l’aide du basculement de thread de PDM est terminé.|

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e5fd0253c6ca560c58724c8a83e343164b678923
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 15c7061030bec6aebca9cdc63d0cd0e0c79cc9aa
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254142"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985703"
 ---
 # <a name="office-ui-customization"></a>Personnalisation de l’interface utilisateur Office
   Vous pouvez personnaliser l'interface utilisateur des applications Microsoft Office à l'aide des outils de développement Office dans Visual Studio. Cette rubrique répertorie les fonctionnalités de l’interface utilisateur que vous pouvez personnaliser, comme décrit dans les sections suivantes :
@@ -43,12 +43,12 @@ ms.locfileid: "71254142"
 ## <a name="Comparison"></a>Comparaison des fonctionnalités de l’interface utilisateur
  Le tableau suivant compare les principales fonctionnalités de l'interface utilisateur que vous pouvez personnaliser dans les projets Microsoft Office.
 
-|Fonctionnalité|Types de projet pris en charge|Applications Microsoft Office prises en charge|
+|Fonction|Types de projet pris en charge|Applications Microsoft Office prises en charge|
 |-------------|-----------------------------|---------------------------------------------|
 |Volet Actions|Personnalisations au niveau du document|Excel<br /><br /> Word|
 |Volets de tâches personnalisés|Compléments VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Word<br /><br /> Excel|
 |Interface utilisateur du ruban personnalisée|Personnalisations au niveau du document<br /><br /> Compléments VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Projet<br /><br /> Word<br /><br /> Visio|
-|Mode Backstage|Personnalisations au niveau du document<br /><br /> Compléments VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)].<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Projet<br /><br /> Word<br /><br /> Visio|
+|Mode Backstage|Personnalisations au niveau du document<br /><br /> Compléments VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)].,<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Projet<br /><br /> Word<br /><br /> Visio|
 |Zones de formulaire Outlook|Compléments VSTO|Outlook|
 |Contrôles dans des documents|Personnalisations au niveau du document<br /><br /> Compléments VSTO|Excel<br /><br /> Word|
 |Menus contextuels|Personnalisations au niveau du document<br /><br /> Compléments VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Projet<br /><br /> Word<br /><br /> Visio<br /><br /> Excel|
@@ -76,7 +76,7 @@ ms.locfileid: "71254142"
 
  Visual Studio ne fournit pas de concepteur ni d'API pour personnaliser le mode Backstage. Toutefois, si vous ajoutez un élément **Ruban (XML)** à votre projet Office, vous pouvez ajouter du code XML au fichier XML du ruban pour personnaliser le mode Backstage. Pour plus d’informations sur les éléments **Ruban (XML)** , consultez [Ruban XML](../vsto/ribbon-xml.md).
 
- Pour plus d’informations sur la personnalisation du mode Backstage, consultez [Introduction au mode Backstage office 2010 pour les développeurs](http://go.microsoft.com/fwlink/?LinkId=182189) et [Personnalisation du mode backstage d’Office 2010 pour les développeurs](http://go.microsoft.com/fwlink/?LinkId=182188).
+ Pour plus d’informations sur la personnalisation du mode Backstage, consultez [Introduction au mode Backstage office 2010 pour les développeurs](/previous-versions/office/developer/office-2010/ee691833(v=office.14)) et [Personnalisation du mode backstage d’Office 2010 pour les développeurs](/previous-versions/office/developer/office-2010/ee815851(v=office.14)).
 
 ## <a name="FormRegion"></a>Zones de formulaire Outlook
  Utilisez des zones de formulaire pour ajouter des fonctionnalités personnalisées aux formulaires Microsoft Office Outlook standard. Vous pouvez créer des zones de formulaire qui étendent tout formulaire existant avec des champs ou contrôles supplémentaires. Si vous créez une zone de formulaire à l'aide des outils de développement Office dans Visual Studio, vous pouvez utiliser uniquement des contrôles Windows Forms dans cette zone de formulaire. Si vous importez une zone de formulaire conçue dans Outlook, vous pouvez alors utiliser des contrôles Outlook natifs uniquement.
@@ -93,7 +93,7 @@ ms.locfileid: "71254142"
  Pour plus d’informations, consultez [vue d’ensemble des éléments hôtes et des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md) et [vue d’ensemble des contrôles Windows Forms dans les documents Office](../vsto/windows-forms-controls-on-office-documents-overview.md).
 
 ## <a name="Shortcut"></a>Menus contextuels
- Un menu contextuel s'affiche lorsque vous cliquez avec le bouton droit dans un document ou une fenêtre d'application. Vous pouvez définir un menu contextuel pour qu'il apparaisse quand un événement se produit (par exemple, quand un utilisateur clique avec le bouton droit sur un document, un classeur ou un contrôle hôte). Vous avez la possibilité d'ajouter divers contrôles ou commandes de menu à un menu contextuel, et créer des menus contextuels à l'aide de XML. Si vous ajoutez un élément **Ruban (XML)** à votre projet Office, vous pouvez ajouter du code XML au fichier XML du ruban pour créer des menus contextuels. Pour plus d’informations sur l’utilisation de XML pour créer des [menus contextuels, consultez Procédure : Ajoutez des commandes aux menus](../vsto/how-to-add-commands-to-shortcut-menus.md)contextuels.
+ Un menu contextuel s'affiche lorsque vous cliquez avec le bouton droit dans un document ou une fenêtre d'application. Vous pouvez définir un menu contextuel pour qu'il apparaisse quand un événement se produit (par exemple, quand un utilisateur clique avec le bouton droit sur un document, un classeur ou un contrôle hôte). Vous avez la possibilité d'ajouter divers contrôles ou commandes de menu à un menu contextuel, et créer des menus contextuels à l'aide de XML. Si vous ajoutez un élément **Ruban (XML)** à votre projet Office, vous pouvez ajouter du code XML au fichier XML du ruban pour créer des menus contextuels. Pour plus d’informations sur l’utilisation de XML pour créer des menus contextuels, consultez [Comment : ajouter des commandes à des menus contextuels](../vsto/how-to-add-commands-to-shortcut-menus.md).
 
 ## <a name="see-also"></a>Voir aussi
 - [Vue d’ensemble du ruban](../vsto/ribbon-overview.md)
@@ -102,6 +102,6 @@ ms.locfileid: "71254142"
 - [Créer des zones de formulaire Outlook](../vsto/creating-outlook-form-regions.md)
 - [Volets des tâches personnalisés](../vsto/custom-task-panes.md)
 - [Utiliser des contrôles WPF dans les solutions Office](../vsto/using-wpf-controls-in-office-solutions.md)
-- [Guide pratique pour Afficher l’onglet Développeur sur le ruban](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)
-- [Guide pratique pour Afficher les erreurs d’interface utilisateur du complément](../vsto/how-to-show-add-in-user-interface-errors.md)
-- [Procédure pas à pas : Collecter des données à l’aide d’un Windows Form](../vsto/walkthrough-collecting-data-using-a-windows-form.md)
+- [Comment : afficher l’onglet Développeur sur le ruban](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)
+- [Comment : afficher les erreurs d’interface utilisateur du complément](../vsto/how-to-show-add-in-user-interface-errors.md)
+- [Procédure pas à pas : collecter des données à l’aide d’un Windows Form](../vsto/walkthrough-collecting-data-using-a-windows-form.md)

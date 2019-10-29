@@ -12,15 +12,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 859944c51be0abf2e6a326a06a5e4432a69ee4ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bd2e42f48a6881b533a2f098e47ac92511b85aa3
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655923"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72984822"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Procédure pas à pas : créer un composant WebPart Silverlight qui affiche OData pour SharePoint
-  SharePoint 2010 expose ses données de liste au moyen d’OData. Dans SharePoint, le service OData est implémenté par le service RESTful ListData. svc. Cette procédure pas à pas montre comment créer un composant WebPart SharePoint qui héberge une application Silverlight. L’application Silverlight affiche les informations de liste d’annonces SharePoint à l’aide de ListData. svc. Pour plus d’informations, consultez [interface REST de SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=225999) et [Open Data Protocol](http://go.microsoft.com/fwlink/?LinkId=226000).
+  SharePoint 2010 expose ses données de liste au moyen d’OData. Dans SharePoint, le service OData est implémenté par le service RESTful ListData. svc. Cette procédure pas à pas montre comment créer un composant WebPart SharePoint qui héberge une application Silverlight. L’application Silverlight affiche les informations de liste d’annonces SharePoint à l’aide de ListData. svc. Pour plus d’informations, consultez [interface REST de SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ff521587(v=office.14)) et [Open Data Protocol](https://www.odata.org/).
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -228,7 +228,7 @@ ms.locfileid: "72655923"
      Le composant WebPart Silverlight doit maintenant afficher les données d’annonce à partir du site SharePoint. Par défaut, la page est stockée dans la liste pages de site dans SharePoint.
 
     > [!NOTE]
-    > Lors de l’accès aux données dans Silverlight sur plusieurs domaines, Silverlight protège contre les failles de sécurité qui peuvent être utilisées pour exploiter des applications Web. Si vous rencontrez des problèmes lors de l’accès à des données distantes dans Silverlight, consultez Mise à [disposition d’un service au-delà des limites de domaine](http://go.microsoft.com/fwlink/?LinkId=223276).
+    > Lors de l’accès aux données dans Silverlight sur plusieurs domaines, Silverlight protège contre les failles de sécurité qui peuvent être utilisées pour exploiter des applications Web. Si vous rencontrez des problèmes lors de l’accès à des données distantes dans Silverlight, consultez Mise à [disposition d’un service au-delà des limites de domaine](/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc197955(v=vs.95)).
 
 ## <a name="see-also"></a>Voir aussi
 - [Créer des composants WebPart pour SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)

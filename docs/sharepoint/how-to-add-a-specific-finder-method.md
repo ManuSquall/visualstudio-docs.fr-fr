@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Ajoutez une méthode de recherche spécifique | Microsoft Docs'
+title: 'Comment : ajouter une méthode de recherche spécifique | Microsoft Docs'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,80 +17,80 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8fdd467f2b3a06398198f6fd8452c6a548bf0872
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 732921b021d7887faf31dd3f602f5400c1d06a59
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431270"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985264"
 ---
-# <a name="how-to-add-a-specific-finder-method"></a>Procédure : Ajouter une méthode de recherche spécifique
-  Vous pouvez retourner une seule instance d’entité en créant un *recherche spécifique* (méthode). Le service de connectivité de données métiers (BDC) exécute la méthode de recherche spécifique lorsqu’un utilisateur choisit une entité dans un composant WebPart données métier ou d’une liste externe. Pour plus d’informations, consultez [concevoir un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md).
+# <a name="how-to-add-a-specific-finder-method"></a>Comment : ajouter une méthode de recherche spécifique
+  Vous pouvez retourner une instance d’entité unique en créant une méthode de *recherche spécifique* . Le service de connectivité de données métiers (BDC) exécute la méthode de recherche spécifique lorsqu’un utilisateur choisit une entité dans un composant WebPart de données métier ou une liste externe. Pour plus d’informations, consultez [concevoir un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md).
 
 ### <a name="to-create-a-specific-finder-method"></a>Pour créer une méthode de recherche spécifique
 
-1. Sur le **concepteur BDC**, choisir une entité.
+1. Dans le **concepteur BDC**, choisissez une entité.
 
-    Pour plus d’informations sur l’ajout d’une entité à la **concepteur BDC** dans Visual Studio, consultez [Comment : Ajouter une entité à un modèle](../sharepoint/how-to-add-an-entity-to-a-model.md).
+    Pour plus d’informations sur l’ajout d’une entité au **concepteur BDC** dans Visual Studio, consultez [Comment : ajouter une entité à un modèle](../sharepoint/how-to-add-an-entity-to-a-model.md).
 
-2. Dans la barre de menus, choisissez **vue** > **Windows autres**, **détails de méthode BDC**.
+2. Dans la barre de menus, choisissez **afficher** > **autres fenêtres**, détails de la **méthode BDC**.
 
-    Le **détails de méthode BDC** fenêtre s’ouvre. Pour plus d’informations sur cette fenêtre, consultez [vue d’ensemble des outils de conception du modèle BDC](../sharepoint/bdc-model-design-tools-overview.md).
+    La fenêtre Détails de la **méthode BDC** s’ouvre. Pour plus d’informations sur cette fenêtre, consultez [vue d’ensemble des outils de conception de modèle BDC](../sharepoint/bdc-model-design-tools-overview.md).
 
-3. Dans le **ajouter une méthode** , choisissez **créer une méthode de recherche spécifique**.
+3. Dans la liste **Ajouter une méthode** , choisissez **créer une méthode de recherche spécifique**.
 
-    Visual Studio ajoute les éléments suivants au modèle. Ces éléments apparaissent dans le **détails de méthode BDC** fenêtre.
+    Visual Studio ajoute les éléments suivants au modèle. Ces éléments s’affichent dans la fenêtre Détails de la **méthode BDC** .
 
    - Une méthode.
 
-   - Un paramètre d’entrée pour la méthode.
+   - Paramètre d’entrée pour la méthode.
 
-   - Un paramètre de retour pour la méthode.
+   - Paramètre de retour de la méthode.
 
-   - Un descripteur de type pour chaque paramètre.
+   - Descripteur de type pour chaque paramètre.
 
-   - Une instance de méthode pour la méthode.
+   - Instance de méthode pour la méthode.
 
      Pour plus d’informations, consultez [concevoir un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md).
 
-4. Ouvrez Visual Studio **propriétés** fenêtre.
+4. Ouvrez la fenêtre **Propriétés** de Visual Studio.
 
-5. Configurez le descripteur de type du paramètre de retour comme un descripteur de type d’entité. Pour plus d’informations sur la création d’un descripteur de type d’entité, consultez [Comment : Définir le descripteur de type d’un paramètre](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
-
-   > [!NOTE]
-   > Vous n’êtes pas obligé d’effectuer cette étape si vous avez ajouté une méthode de recherche à l’entité. Visual Studio utilise le descripteur de type que vous avez défini dans la méthode de recherche.
+5. Configurez le descripteur de type du paramètre de retour en tant que descripteur de type d’entité. Pour plus d’informations sur la création d’un descripteur de type d’entité, consultez [Comment : définir le descripteur de type d’un paramètre](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
 
    > [!NOTE]
-   > Si le champ d’identificateur du type d’entité représente un champ dans une table de base de données qui est généré automatiquement, définissez la **en lecture seule** propriété du champ d’identificateur à **True**.
+   > Vous n’avez pas besoin d’effectuer cette étape si vous avez ajouté une méthode de recherche à l’entité. Visual Studio utilise le descripteur de type que vous avez défini dans la méthode de recherche.
 
-6. Dans le **détails de la méthode** fenêtre, choisissez l’instance de méthode de la méthode.
+   > [!NOTE]
+   > Si le champ d’identificateur du type d’entité représente un champ dans une table de base de données qui est générée automatiquement, affectez la valeur **true**à la propriété **en lecture seule** du champ d’identificateur.
 
-7. Dans le **fenêtre Propriétés**, définissez le **retourner un nom de paramètre** propriété le nom du paramètre de retour de la méthode. Pour plus d’informations sur les propriétés d’instance de méthode, consultez [MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282).
+6. Dans la fenêtre **Détails de méthode** , choisissez l’instance de méthode de la méthode.
 
-8. Dans **l’Explorateur de solutions**, ouvrez le menu contextuel du service du fichier de code qui a été généré pour l’entité, puis choisissez **afficher le Code**.
+7. Dans la **fenêtre Propriétés**, définissez la propriété **Return Parameter Name** sur le nom du paramètre de retour de la méthode. Pour plus d’informations sur les propriétés d’instance de méthode, consultez [MethodInstance](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14)).
 
-    Le fichier de code de service entité s’ouvre dans l’éditeur de Code. Pour plus d’informations sur le fichier de code de service entité, consultez [créer un modèle de connectivité de données métiers](../sharepoint/creating-a-business-data-connectivity-model.md).
+8. Dans **Explorateur de solutions**, ouvrez le menu contextuel du fichier de code de service qui a été généré pour l’entité, puis choisissez **afficher le code**.
 
-9. Ajoutez le code à la méthode de recherche spécifique. Ce code exécute les tâches suivantes :
+    Le fichier de code du service d’entité s’ouvre dans l’éditeur de code. Pour plus d’informations sur le fichier de code du service d’entité, consultez [créer un modèle de connectivité de données métiers](../sharepoint/creating-a-business-data-connectivity-model.md).
+
+9. Ajoutez du code à la méthode de recherche spécifique. Ce code exécute les tâches suivantes :
 
    - Récupère un enregistrement à partir d’une source de données.
 
    - Retourne une entité au service BDC.
 
-     L’exemple suivant retourne un contact à partir de la base de données AdventureWorks pour SQL Server.
+     L’exemple suivant retourne un contact à partir de l’exemple de base de données AdventureWorks pour SQL Server.
 
      > [!NOTE]
-     > Remplacez la valeur de la `ServerName` champ avec le nom de votre serveur.
+     > Remplacez la valeur du champ `ServerName` par le nom de votre serveur.
 
      [!code-csharp[SP_BDC#3](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#3)]
      [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]
 
 ## <a name="see-also"></a>Voir aussi
 - [Concevoir un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md)
-- [Guide pratique pour Ajouter une méthode de recherche](../sharepoint/how-to-add-a-finder-method.md)
-- [Guide pratique pour Ajouter une méthode de création](../sharepoint/how-to-add-a-creator-method.md)
-- [Guide pratique pour Ajouter une méthode de suppression](../sharepoint/how-to-add-a-deleter-method.md)
-- [Guide pratique pour Ajouter une méthode de mise à jour](../sharepoint/how-to-add-an-updater-method.md)
+- [Comment : ajouter une méthode de recherche](../sharepoint/how-to-add-a-finder-method.md)
+- [Comment : ajouter une méthode Creator](../sharepoint/how-to-add-a-creator-method.md)
+- [Comment : ajouter une méthode de suppression](../sharepoint/how-to-add-a-deleter-method.md)
+- [Comment : ajouter une méthode de mise à jour](../sharepoint/how-to-add-an-updater-method.md)
 - [Vue d’ensemble des outils de conception de modèle BDC](../sharepoint/bdc-model-design-tools-overview.md)
-- [Guide pratique pour Ajouter un paramètre à une méthode](../sharepoint/how-to-add-a-parameter-to-a-method.md)
-- [Guide pratique pour Définir une instance de méthode](../sharepoint/how-to-define-a-method-instance.md)
+- [Comment : ajouter un paramètre à une méthode](../sharepoint/how-to-add-a-parameter-to-a-method.md)
+- [Comment : définir une instance de méthode](../sharepoint/how-to-define-a-method-instance.md)

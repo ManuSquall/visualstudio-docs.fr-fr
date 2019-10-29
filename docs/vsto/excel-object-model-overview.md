@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6d7371880c739e242bcdd70fb2bb9ac0cd92677b
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 29ede9dd29952e87e7f1dd76875905973bada6a6
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551583"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986086"
 ---
 # <a name="excel-object-model-overview"></a>Vue d’ensemble du modèle objet Excel
   Pour développer des solutions qui utilisent Microsoft Office Excel, vous pouvez interagir avec les objets fournis par le modèle objet Excel. Cette rubrique présente les objets les plus importants :
@@ -47,8 +47,6 @@ ms.locfileid: "69551583"
 
   Cette rubrique propose une vue d'ensemble succincte du modèle objet Excel. Pour obtenir des ressources qui vous permettent d’en savoir plus sur l’ensemble du modèle objet Excel, consultez [utiliser la documentation du modèle objet Excel](#ExcelOMDocumentation).
 
-  ![lien vers la vidéo](../vsto/media/playvideo.gif "lien vers la vidéo") Pour une démonstration vidéo connexe, [consultez Comment faire: Utiliser des gestionnaires d’événements dans un complément Excel 2007? ](http://go.microsoft.com/fwlink/?LinkID=130291) et[comment faire: Utiliser des formes pour créer un graphique en bulles dans Excel? ](http://go.microsoft.com/fwlink/?LinkID=130313).
-
 ## <a name="access-objects-in-an-excel-project"></a>Accéder aux objets dans un projet Excel
  Quand vous créez un projet de complément VSTO pour Excel, Visual Studio crée automatiquement un fichier de code *ThisAddIn. vb* ou *ThisAddIn.cs* . Vous pouvez accéder à l'objet Application à l'aide de `Me.Application` ou de `this.Application`.
 
@@ -61,7 +59,7 @@ ms.locfileid: "69551583"
 |Sheet2.vb|Sheet2.cs|
 |Sheet3.vb|Sheet3.cs|
 
- Vous pouvez utiliser la classe `Globals` dans votre projet pour accéder à `ThisWorkbook`, `Sheet1`, `Sheet2` ou `Sheet3` depuis l'extérieur de la classe respective. Pour plus d’informations, consultez [accès global aux objets dans les projets Office](../vsto/global-access-to-objects-in-office-projects.md). L’exemple suivant appelle la <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A> `Sheet1` méthode, que le code soit `Sheet`placé dans une des *n* classes ou dans la `ThisWorkbook` classe.
+ Vous pouvez utiliser la classe `Globals` dans votre projet pour accéder à `ThisWorkbook`, `Sheet1`, `Sheet2` ou `Sheet3` depuis l'extérieur de la classe respective. Pour plus d’informations, consultez [accès global aux objets dans les projets Office](../vsto/global-access-to-objects-in-office-projects.md). L’exemple suivant appelle la méthode <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A> de `Sheet1` que le code soit placé dans l’une des *classes `Sheet`ou* la classe `ThisWorkbook`.
 
  [!code-csharp[Trin_VstcoreExcelAutomation#82](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#82)]
  [!code-vb[Trin_VstcoreExcelAutomation#82](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#82)]
@@ -70,11 +68,11 @@ ms.locfileid: "69551583"
 
 - Application
 
-- Classeur
+- Workbook
 
 - Worksheet
 
-- Plage
+- Range
 
   La majeure partie du travail effectué avec Excel tourne autour de ces quatre objets et de leurs membres.
 
@@ -87,7 +85,7 @@ ms.locfileid: "69551583"
 ### <a name="workbook-object"></a>Workbook (objet)
  L'objet <xref:Microsoft.Office.Interop.Excel.Workbook> représente un classeur unique dans l'application Excel.
 
- Les outils de développement Office dans Visual Studio étendent l'objet <xref:Microsoft.Office.Interop.Excel.Workbook> en fournissant le type <xref:Microsoft.Office.Tools.Excel.Workbook> . Ce type vous donne accès à toutes les fonctionnalités d'un objet <xref:Microsoft.Office.Interop.Excel.Workbook>. Pour plus d’informations, consultez [élément hôte](../vsto/workbook-host-item.md)de classeur.
+ Les outils de développement Office dans Visual Studio étendent l'objet <xref:Microsoft.Office.Interop.Excel.Workbook> en fournissant le type <xref:Microsoft.Office.Tools.Excel.Workbook> . Ce type vous donne accès à toutes les fonctionnalités d'un objet <xref:Microsoft.Office.Interop.Excel.Workbook>. Pour plus d’informations, consultez [élément hôte de classeur](../vsto/workbook-host-item.md).
 
 ### <a name="worksheet-object"></a>Worksheet (objet)
  L'objet <xref:Microsoft.Office.Interop.Excel.Worksheet> est membre de la collection <xref:Microsoft.Office.Interop.Excel.Worksheets>. La plupart des propriétés, méthodes et événements de l'objet <xref:Microsoft.Office.Interop.Excel.Worksheet> sont strictement identiques, ou similaires, aux membres fournis par les objets <xref:Microsoft.Office.Interop.Excel.Application> ou <xref:Microsoft.Office.Interop.Excel.Workbook>.
@@ -105,14 +103,14 @@ ms.locfileid: "69551583"
  Pour obtenir des informations complètes sur le modèle objet Excel, vous pouvez vous reporter à la documentation de référence de l'assembly PIA (Primary Interop Assembly) Excel et à la documentation de référence du modèle objet VBA.
 
 ### <a name="primary-interop-assembly-reference"></a>Référence d’assembly PIA (Primary Interop Assembly)
- La documentation de référence de l'assembly PIA Excel décrit les types de l'assembly PIA pour Excel. Cette documentation est disponible à partir de l’emplacement suivant: [Référence d’assembly PIA Excel 2010](http://go.microsoft.com/fwlink/?LinkId=189585).
+ La documentation de référence de l'assembly PIA Excel décrit les types de l'assembly PIA pour Excel. Cette documentation est disponible à partir de l’emplacement suivant : référence de l' [assembly PIA Excel 2010](/visualstudio/vsto/office-primary-interop-assemblies&view=vs-2019).
 
- Pour plus d’informations sur la conception de l’assembly PIA Excel, notamment les différences entre les classes et les interfaces dans l’assembly PIA et le mode d’implémentation des événements dans l’ASSEMBLy Pia, consultez [vue d’ensemble des classes et des interfaces dans les assemblys PIA (Primary Interop Assembly](http://go.microsoft.com/fwlink/?LinkId=189592)) d’Office.
+ Pour plus d’informations sur la conception de l’assembly PIA Excel, notamment les différences entre les classes et les interfaces dans l’assembly PIA et le mode d’implémentation des événements dans l’ASSEMBLy Pia, consultez [vue d’ensemble des classes et des interfaces dans les assemblys PIA (Primary Interop Assembly](/previous-versions/office/office-12/ms247299(v=office.12))) d’Office.
 
 ### <a name="vba-object-model-reference"></a>Référence du modèle objet VBA
- La documentation de référence du modèle objet VBA présente le modèle objet Excel tel qu'il est exposé au code VBA (Visual Basic pour Applications). Pour plus d’informations, consultez [Référence du modèle objet Excel 2010](http://go.microsoft.com/fwlink/?LinkId=199768).
+ La documentation de référence du modèle objet VBA présente le modèle objet Excel tel qu'il est exposé au code VBA (Visual Basic pour Applications). Pour plus d’informations, consultez [Référence du modèle objet Excel 2010](/office/vba/api/overview/Excel/object-model).
 
- Tous les objets et membres mentionnés dans la documentation de référence du modèle objet VBA correspondent aux types et aux membres de l'assembly PIA Excel. Par exemple, l’objet de feuille de calcul dans la documentation de référence du <xref:Microsoft.Office.Interop.Excel.Worksheet> modèle objet VBA correspond à l’objet dans l’assembly PIA Excel. Même si la documentation de référence du modèle objet VBA fournit des exemples de code pour la plupart des propriétés, méthodes et événements, vous devez traduire le code VBA fourni dans documentation de référence en Visual Basic ou Visual C# pour pouvoir les utiliser dans un projet Excel créé à l'aide de Visual Studio.
+ Tous les objets et membres mentionnés dans la documentation de référence du modèle objet VBA correspondent aux types et aux membres de l'assembly PIA Excel. Par exemple, l’objet de feuille de calcul dans la documentation de référence du modèle objet VBA correspond à l’objet <xref:Microsoft.Office.Interop.Excel.Worksheet> dans l’assembly PIA Excel. Même si la documentation de référence du modèle objet VBA fournit des exemples de code pour la plupart des propriétés, méthodes et événements, vous devez traduire le code VBA fourni dans documentation de référence en Visual Basic ou Visual C# pour pouvoir les utiliser dans un projet Excel créé à l'aide de Visual Studio.
 
 ### <a name="related-topics"></a>Rubriques connexes
 
