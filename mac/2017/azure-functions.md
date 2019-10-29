@@ -1,23 +1,23 @@
 ---
 title: Introduction à Azure Functions
-description: Utilisation des fonctions Azure dans Visual Studio pour Mac.
+description: Utilisation de fonctions Azure dans Visual Studio pour Mac.
 author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: cf3fa0bf2c0e0ff112a176b10eb7e50e07f83d5a
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
-ms.translationtype: HT
+ms.openlocfilehash: 6755f6fd681dac87741b9de6a8d1fcd123a8ad9b
+ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70107883"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73024701"
 ---
 # <a name="introduction-to-azure-functions"></a>Introduction à Azure Functions
 
 Azure Functions permet de créer et d’exécuter dans le cloud des fonctions, à savoir des extraits de code basés sur des événements, sans devoir provisionner ni gérer explicitement l’infrastructure. Pour plus d’informations, consultez la [documentation sur Azure Functions](/azure/azure-functions/).
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>spécifications
 
 Les outils Azure Functions sont inclus dans **Visual Studio pour Mac 7.5**.
 
@@ -90,10 +90,10 @@ Vous pouvez utiliser la procédure ci-dessus pour ajouter davantage de fonctions
 
 ## <a name="publish-to-azure"></a>Publier sur Azure
 
-1. Cliquez avec le bouton droit sur le nom du projet, puis sélectionnez **Publier > Publier sur Azure** :  ![Option de menu Publier sur Azure](media/azure-functions-image5.png)
+1. Cliquez avec le bouton droit sur le nom du projet, puis sélectionnez **Publier > Publier sur Azure** : ![Option de menu Publier sur Azure](media/azure-functions-image5.png)
 2. Si vous avez déjà connecté votre compte Azure à Visual Studio pour Mac, une liste des services d’application disponibles s’affiche. Si vous ne vous êtes pas connecté, vous êtes invité à le faire.
 3. Dans la boîte de dialogue **Publier sur Azure App Service**, sélectionnez un service d’application existant, ou créez un service en cliquant sur **Nouveau**.
-4. Dans la boîte de dialogue **Créer un App Service**, entrez vos paramètres :  ![Option de menu Publier sur Azure](media/azure-functions-image7.png)
+4. Dans la boîte de dialogue **Créer un App Service**, entrez vos paramètres : ![Option de menu Publier sur Azure](media/azure-functions-image7.png)
 
     |Paramètre  |Description  |
     |---------|---------|
@@ -160,4 +160,4 @@ Vous pouvez être amené à définir un paramètre important : `FUNCTIONS_EXTEN
 
 - **Image Resizer** : cette fonction crée des images redimensionnées chaque fois qu’un objet blob est ajouté à un conteneur. Le modèle accepte un chemin et une chaîne de connexion pour le déclencheur, une petite image de sortie et une moyenne image de sortie.
 
-- **SAS token** : cette fonction génère un jeton SAP pour un conteneur Stockage Azure et un nom d’objet blob spécifiés. En plus du nom de fonction, ce modèle accepte des propriétés de chemin et de connexion. La propriété de chemin correspond au chemin dans le compte de stockage surveillé par le déclencheur. Le compte de connexion correspond au nom du paramètre d’application contenant votre chaîne de connexion de compte de stockage. Vous devez également définir des **droits d’accès**. Le niveau d’autorisation contrôle si la fonction nécessite une clé d’API et la clé à utiliser. La fonction utilise une clé de fonction, et l’administrateur utilise votre clé principale. Pour plus d’informations, consultez l’exemple de [fonction Azure C# pour générer des jetons SAP](https://azure.microsoft.com/resources/samples/functions-dotnet-sas-token/).
+- **SAS token** : cette fonction génère un jeton SAP pour un conteneur Stockage Azure et un nom d’objet blob spécifiés. En plus du nom de fonction, ce modèle accepte des propriétés de chemin et de connexion. La propriété de chemin correspond au chemin dans le compte de stockage surveillé par le déclencheur. Le compte de connexion correspond au nom du paramètre d’application contenant votre chaîne de connexion de compte de stockage. Vous devez également définir des **droits d’accès**. Le niveau d’autorisation contrôle si la fonction nécessite une clé d’API et la clé à utiliser. La fonction utilise une clé de fonction, et l’administrateur utilise votre clé principale. Pour plus d’informations, consultez l’exemple de [fonction Azure C# pour générer des jetons SAP](https://github.com/Azure-Samples/functions-dotnet-sas-token/).
