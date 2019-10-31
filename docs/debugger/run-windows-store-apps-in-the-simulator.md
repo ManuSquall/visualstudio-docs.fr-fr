@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 5e187299d3514b32d548f032382fc6ba7f1792b4
-ms.sourcegitcommit: bdccab4c2dbd50ea8adaaf88c69c9ca32db88099
-ms.translationtype: HT
+ms.openlocfilehash: 263759cc463bf21afa20877db320b4c83f1dc761
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73144718"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187528"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Exécuter des applications UWP dans le simulateur
 
@@ -161,4 +161,4 @@ Vous pouvez arrêter le simulateur en appuyant sur **CTRL + ALT + F4**.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Exécuter des applications à partir de Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
+- [Exécuter des applications à partir de Visual Studio](debugging-windows-store-and-windows-universal-apps.md)

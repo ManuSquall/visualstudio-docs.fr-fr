@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9f66d757f5f46530619be1424eb0810ce546ff5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 9f0ac06712810e39432f1d19c250c3e7976f4a01
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745700"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188697"
 ---
 # <a name="client-side-script-debugging"></a>Débogage de scripts côté client
 Le débogueur Visual Studio fournit un environnement de débogage complet pour rechercher et corriger les erreurs dans les scripts clients des pages ASP.NET.
@@ -61,7 +61,7 @@ Vous pouvez afficher des listes de documents de script côté serveur et côté 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Débogage d’applications ASP.NET et AJAX](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)
+- [Débogage d’applications ASP.NET et AJAX](how-to-enable-debugging-for-aspnet-applications.md)
 - [Limitations du débogage de script](../debugger/limitations-on-script-debugging.md)
 - [Fenêtres de variables](../debugger/debugger-windows.md)
 - [Exécution, fenêtre](../ide/reference/immediate-window.md)

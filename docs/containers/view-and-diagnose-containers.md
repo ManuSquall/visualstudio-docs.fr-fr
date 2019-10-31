@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.date: 10/16/2019
 ms.technology: vs-azure
 monikerRange: vs-2019
-ms.openlocfilehash: a398adf047ebfe2e76ed91da72513eb7646c36c3
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: 355a08b2ff322226d347d999f4ec8a9ebb7ba5fc
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72535609"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188724"
 ---
 # <a name="how-to-view-and-diagnose-containers-and-images-in-visual-studio"></a>Comment afficher et diagnostiquer des conteneurs et des images dans Visual Studio
 
@@ -32,7 +32,7 @@ La fenêtre **conteneurs** s’ouvre automatiquement lorsque vous démarrez un p
 Sur le côté gauche, vous voyez la liste des conteneurs sur votre ordinateur local. Les conteneurs associés à votre solution s’affichent sous **conteneurs de solutions**. À droite, vous voyez un volet avec des onglets pour l' **environnement**, les **ports**, les **journaux**et les **fichiers**.
 
 > [!TIP]
-> Vous pouvez facilement personnaliser l’emplacement où la fenêtre outil **conteneurs** est ancrée dans Visual Studio. Consultez [Personnalisation des dispositions de fenêtres dans Visual Studio](/visualstudio/ide/customizing-window-layouts-in-visual-studio). Par défaut, la fenêtre **conteneurs** est ancrée avec la fenêtre **Espion** lorsque le débogueur est en cours d’exécution.
+> Vous pouvez facilement personnaliser l’emplacement où la fenêtre outil **conteneurs** est ancrée dans Visual Studio. Consultez [Personnalisation des dispositions de fenêtres dans Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md). Par défaut, la fenêtre **conteneurs** est ancrée avec la fenêtre **Espion** lorsque le débogueur est en cours d’exécution.
 
 ## <a name="view-environment-variables"></a>Afficher les variables d’environnement
 

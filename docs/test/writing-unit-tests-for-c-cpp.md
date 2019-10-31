@@ -8,12 +8,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 9d69c91af316c755b2dcf4f339d8f47d49096b6a
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 824b928c9f89b98f9026059b824fce84969bf69a
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72982910"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189102"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Écrire des tests unitaires pour C/C++ dans Visual Studio
 
@@ -79,7 +79,7 @@ Pour permettre à votre code de test d’accéder aux fonctions du projet à tes
 
 ### <a name="link-to-object-or-library-files"></a>Lier à des fichiers objets ou bibliothèques
 
-Si le code de test n’exporte pas les fonctions que vous voulez tester, vous pouvez ajouter les fichiers de sortie .obj ou .lib aux dépendances du projet de test. Consultez [Pour lier les tests aux fichiers objets ou bibliothèques](unit-testing-existing-cpp-applications-with-test-explorer.md).
+Si le code de test n’exporte pas les fonctions que vous voulez tester, vous pouvez ajouter les fichiers de sortie .obj ou .lib aux dépendances du projet de test. Consultez [Pour lier les tests aux fichiers objets ou bibliothèques](how-to-use-microsoft-test-framework-for-cpp.md).
 
 ### <a name="add-include-directives-for-header-files"></a>Ajouter des directives #include pour les fichiers d’en-tête
 

@@ -1,5 +1,5 @@
 ---
-title: Éditeur et la langue des Extensions de Service | Microsoft Docs
+title: Extensions du service de langage et de l’éditeur | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,26 +10,26 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1df6f65db70425650fc2860bf5ddf6e2d2e203c6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 4b6a64d92e26ff1714a77adbef88e02fca966f1f
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66353382"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73186706"
 ---
-# <a name="editor-and-language-service-extensions"></a>Extensions de service d’éditeur et la langue
-Vous pouvez étendre la plupart des fonctionnalités de l’éditeur de code Visual Studio. L’éditeur est basée sur Windows Presentation Foundation (WPF) et est écrit en code managé. Bien que cette conception diffère les conceptions dans les versions antérieures de Visual Studio, il fournit la plupart des mêmes fonctionnalités. Pour étendre l’éditeur, utilisez Managed Extensibility Framework (MEF).
+# <a name="editor-and-language-service-extensions"></a>Extensions du service de langage et de l’éditeur
+Vous pouvez étendre la plupart des fonctionnalités de l’éditeur de code Visual Studio. L’éditeur est basé sur le Windows Presentation Foundation (WPF) et écrit en code managé. Bien que cette conception diffère des conceptions dans les versions antérieures de Visual Studio, elle fournit la plupart des fonctionnalités. Pour étendre l’éditeur, utilisez le Managed Extensibility Framework (MEF).
 
- Le SDK Visual Studio fournit des adaptateurs appelés *shims* pour prendre en charge les VSPackages qui ont été écrites pour les versions antérieures. Néanmoins, si vous avez un VSPackage existant, nous recommandons que vous mettre à jour vers la nouvelle technologie pour obtenir la fiabilité et meilleures performances.
+ Le kit de développement logiciel (SDK) Visual Studio fournit des adaptateurs appelés *shims* pour prendre en charge les VSPackages qui ont été écrits pour des versions antérieures. Néanmoins, si vous disposez déjà d’un VSPackage, nous vous recommandons de le mettre à jour vers la nouvelle technologie pour obtenir de meilleures performances et une meilleure fiabilité.
 
 ## <a name="related-topics"></a>Rubriques connexes
 
 |Titre|Description|
 |-----------|-----------------|
-|[Créer une extension avec un éditeur de modèle d’élément](../extensibility/creating-an-extension-with-an-editor-item-template.md)|Introduction à l’utilisation de modèles d’élément de l’éditeur.|
-|[Étendre les services de l’éditeur et la langue](../extensibility/extending-the-editor-and-language-services.md)|Liens vers des documents qui présentent la conception et les fonctionnalités de l’éditeur principal et de montrent comment l’étendre.|
-|[Interfaces héritées dans l’éditeur](../extensibility/legacy-interfaces-in-the-editor.md)|Liens vers des documents qui expliquent comment accéder à l’éditeur principal du code existant.|
-|[Créer des concepteurs et éditeurs personnalisés](../extensibility/creating-custom-editors-and-designers.md)|Liens vers des documents qui expliquent comment créer des éditeurs personnalisés.|
+|[Créer une extension avec un modèle d’élément d’éditeur](../extensibility/creating-an-extension-with-an-editor-item-template.md)|Introduction à l’utilisation des modèles d’élément de l’éditeur.|
+|[Étendre l’éditeur et les services de langage](../extensibility/extending-the-editor-and-language-services.md)|Liens vers des documents qui présentent la conception et les fonctionnalités de l’éditeur principal et montrent comment l’étendre.|
+|[Interfaces héritées dans l’éditeur](/visualstudio/extensibility/legacy-interfaces-in-the-editor?view=vs-2015)|Liens vers des documents qui expliquent comment accéder à l’éditeur principal à partir du code existant.|
+|[Créer des éditeurs et des concepteurs personnalisés](../extensibility/creating-custom-editors-and-designers.md)|Liens vers des documents qui expliquent comment créer des éditeurs personnalisés.|
 |[Extensibilité du service de langage hérité](../extensibility/internals/legacy-language-service-extensibility.md)|Liens vers des documents qui décrivent comment intégrer des langages de programmation dans Visual Studio.|
-|[Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)|Introduit Managed Extensibility Framework (MEF).|
-|[Windows Presentation Foundation](/dotnet/framework/wpf/index)|Introduit la Windows Presentation Foundation (WPF).|
+|[Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)|Présente le Managed Extensibility Framework (MEF).|
+|[Windows Presentation Foundation](/dotnet/framework/wpf/index)|Présente le Windows Presentation Foundation (WPF).|

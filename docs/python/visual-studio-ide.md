@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3b01d088618c07f1a3ff24aff2386584ebfad060
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 91f80d648450447a6ba0e80f10e5c39764445cef
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72983685"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189308"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Bienvenue dans l’IDE Visual Studio | Python
 
@@ -26,7 +26,7 @@ ms.locfileid: "72983685"
 
 Cette image montre Visual Studio avec un projet Python ouvert et plusieurs fenêtres Outil essentielles et souvent utilisées :
 
-- L’[**Explorateur de solutions**](../ide/solutions-and-projects-in-visual-studio.md) (en haut à droite) vous permet d’afficher, de parcourir et de gérer vos fichiers de code. L’**Explorateur de solutions** peut vous aider à organiser votre code en regroupant les fichiers dans des [projets et des solutions](/visualstudio/get-started/tutorial-projects-solutions).
+- L’[**Explorateur de solutions**](../ide/solutions-and-projects-in-visual-studio.md) (en haut à droite) vous permet d’afficher, de parcourir et de gérer vos fichiers de code. L’**Explorateur de solutions** peut vous aider à organiser votre code en regroupant les fichiers dans des [projets et des solutions](../get-started/tutorial-projects-solutions.md).
   - À côté de **l’Explorateur de solutions** se trouvent les [**Environnements Python**](managing-python-environments-in-visual-studio.md), qui permettent de gérer les différents interpréteurs Python installés sur l’ordinateur.
 
   ::: moniker range=">=vs-2019"

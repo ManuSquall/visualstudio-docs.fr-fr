@@ -8,12 +8,12 @@ ms.devlang: dotnet
 ms.topic: article
 ms.date: 03/08/2019
 ms.author: ghogen
-ms.openlocfilehash: 9431046c57851e31a3711b4785f9cce45acab45f
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 5d1f160435fd8c62a44d3e5d3192870143558de4
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70312179"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188795"
 ---
 # <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>Déployer un conteneur ASP.NET Core sur Azure App Service à l’aide de Visual Studio
 
@@ -21,7 +21,7 @@ Ce didacticiel vous guide tout au long de l’utilisation de Visual Studio pour 
 
 Si vous n’avez pas d’abonnement Azure, créez un [compte gratuit](https://azure.microsoft.com/free/dotnet/?utm_source=acr-publish-doc&utm_medium=docs&utm_campaign=docs) avant de commencer.
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Configuration requise
 
 Pour suivre ce didacticiel :
 
@@ -81,9 +81,9 @@ La procédure suivante vous accompagne dans la création d’une application ASP
 1. Le profil de publication est enregistré avec tous les détails que vous avez sélectionnés, tels que le groupe de ressources et le registre de conteneurs.
 1. Pour effectuer un nouveau déploiement avec le même profil de publication, utilisez le bouton **publier** , le bouton **publier** dans la fenêtre **activité de publication Web** , ou cliquez avec le bouton droit sur le projet dans **Explorateur de solutions** et choisissez l’élément **publier** sur le menu contextuel.
 
-## <a name="clean-up-resources"></a>Supprimer des ressources
+## <a name="clean-up-resources"></a>Nettoyer les ressources
 
-Pour supprimer toutes les ressources Azure associées à ce didacticiel, supprimez le groupe de ressources à l’aide de l' [portail Azure](https://portal.azure.com). Pour rechercher le groupe de ressources associé à une application Web publiée, choisissez **Afficher** > **autres** > **activités de publication Web**Windows, puis cliquez sur l’icône d’engrenage. L’onglet **publier** s’ouvre, qui contient le groupe de ressources.
+Pour supprimer toutes les ressources Azure associées à ce didacticiel, supprimez le groupe de ressources à l’aide de l' [portail Azure](https://portal.azure.com). Pour rechercher le groupe de ressources associé à une application Web publiée, choisissez **afficher** > autres **activités de publication** **Windows** > Web, puis cliquez sur l’icône d’engrenage. L’onglet **publier** s’ouvre, qui contient le groupe de ressources.
 
 Dans la Portail Azure, choisissez **groupes de ressources**, sélectionnez le groupe de ressources pour ouvrir la page de détails correspondante. Vérifiez qu’il s’agit du groupe de ressources approprié, puis choisissez **supprimer le groupe de ressources**, tapez le nom et choisissez **supprimer**.
 
@@ -93,4 +93,4 @@ Configurez l’intégration et la livraison continues (CI/CD) avec [Azure pipeli
 
 ## <a name="see-also"></a>Voir aussi
 
-[Déployer sur Azure Container Registry](vs-azure-tools-docker-hosting-web-apps-in-docker.md)
+[Déployer sur Azure Container Registry](hosting-web-apps-in-docker.md)

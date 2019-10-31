@@ -263,12 +263,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d8700d058c694afbea551e5b117a0e4a0461f2e8
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: 2811c905650f215272b650bff955b7264f56d4b5
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72806168"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188838"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Avertissements d’analyse du code pour le code managé par CheckId
 
@@ -276,7 +276,7 @@ Le tableau suivant répertorie les avertissements d'analyse du code pour le code
 
 | CheckId | Warning | Description |
 |---------| - | - |
-| Ca2007 | [Ca2007 : ne pas attendre directement une tâche](ca2007-do-not-directly-await-task.md) | Une méthode asynchrone [attend](/dotnet/csharp/language-reference/keywords/await) un <xref:System.Threading.Tasks.Task> directement. Lorsqu’une méthode asynchrone attend directement une <xref:System.Threading.Tasks.Task>, la continuation se produit dans le thread qui a créé la tâche. Ce comportement peut être coûteux en termes de performances et peut entraîner un blocage sur le thread d’interface utilisateur. Envisagez d’appeler <xref:System.Threading.Tasks.Task.ConfigureAwait(System.Boolean)?displayProperty=nameWithType> pour signaler votre intention de continuation. |
+| Ca2007 | [Ca2007 : ne pas attendre directement une tâche](ca2007.md) | Une méthode asynchrone [attend](/dotnet/csharp/language-reference/keywords/await) un <xref:System.Threading.Tasks.Task> directement. Lorsqu’une méthode asynchrone attend directement une <xref:System.Threading.Tasks.Task>, la continuation se produit dans le thread qui a créé la tâche. Ce comportement peut être coûteux en termes de performances et peut entraîner un blocage sur le thread d’interface utilisateur. Envisagez d’appeler <xref:System.Threading.Tasks.Task.ConfigureAwait(System.Boolean)?displayProperty=nameWithType> pour signaler votre intention de continuation. |
 | CA1000 | [CA1000 : Ne déclarez pas de membres statiques sur les types génériques](../code-quality/ca1000.md) | Lorsqu'un membre statique d'un type générique est appelé, l'argument de type doit être spécifié pour le type. Lorsqu'un membre d'instance générique qui ne prend pas en charge l'inférence est appelé, l'argument de type doit être spécifié pour le membre. Dans ces deux cas, la syntaxe permettant de spécifier l'argument de type est différente et peut être facilement confondue. |
 | CA1001 | [CA1001 : Les types qui ont des champs supprimables doivent être supprimables](../code-quality/ca1001.md) | Une classe déclare et implémente un champ d'instance qui est un type System.IDisposable, et elle n'implémente pas IDisposable. Une classe qui déclare un champ IDisposable possède indirectement une ressource non managée et doit implémenter l'interface IDisposable. |
 | CA1002 | [CA1002 : N’exposez pas de listes génériques](../code-quality/ca1002.md) | System. Collections. Generic. List < (of \< (T >) >) est une collection générique conçue pour les performances, et non pour l’héritage. Par conséquent, la liste ne contient aucun membre virtuel. Les collections génériques qui sont conçues pour l’héritage doivent être exposées à la place. |

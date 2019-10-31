@@ -8,12 +8,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da8459db53a1ecb9a297e2a4a218791281806313
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: eeeb9ffb92b2bf97513923bdef901dacd1a9a67a
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650123"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189732"
 ---
 # <a name="migration-activity-designers"></a>Concepteurs d’activités de migration
 
@@ -29,7 +29,7 @@ Pour les autres types de concepteurs d’activités, consultez les rubriques sui
 
 - [Organigramme](../workflow-designer/flowchart-activity-designers.md)
 
-- [Utilisation des concepteurs d’activités](../workflow-designer/using-the-activity-designers.md)
+- [Utilisation des concepteurs d’activités](control-flow-activity-designers.md)
 
 - [Messagerie](../workflow-designer/messaging-activity-designers.md)
 

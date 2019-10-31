@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 196ba13b95245b8c42e6d946572665792f71346d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f5247a56667f5715d9f155c662eb333967878d71
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72745641"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188652"
 ---
 # <a name="create-custom-views-of-managed-objects-c-visual-basic-f-ccli"></a>Créer des vues personnalisées d’objetsC#gérés (, F#Visual Basic C++,,/CLI)
 Vous pouvez personnaliser la façon dont Visual Studio affiche les types de données dans les fenêtres de variables du débogueur.
@@ -41,10 +41,10 @@ Dans .NET Framework code 2,0, Visual Basic ne prend pas en charge l’attribut D
 
 ## <a name="visualizers"></a>Visualiseurs
 
-Vous pouvez écrire un visualiseur pour afficher les types de données managées. Pour plus d’informations, consultez [Comment : écrire un visualiseur](/visualstudio/debugger/create-custom-visualizers-of-data).
+Vous pouvez écrire un visualiseur pour afficher les types de données managées. Pour plus d’informations, consultez [Comment : écrire un visualiseur](create-custom-visualizers-of-data.md).
 
 > [!NOTE]
-> Pour C++ le code, vous pouvez ajouter des expansions de type de données personnalisées à l’aide de l’infrastructure Natvis, comme décrit dans [créer des vues personnalisées d' C++ objets dans le débogueur](/visualstudio/debugger/create-custom-views-of-native-objects).
+> Pour C++ le code, vous pouvez ajouter des expansions de type de données personnalisées à l’aide de l’infrastructure Natvis, comme décrit dans [créer des vues personnalisées d' C++ objets dans le débogueur](create-custom-views-of-native-objects.md).
 
 ## <a name="see-also"></a>Voir aussi
 
