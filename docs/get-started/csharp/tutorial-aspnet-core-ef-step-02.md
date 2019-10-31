@@ -1,5 +1,5 @@
 ---
-title: 'Étape 2 : Créer une application web ASP.NET Core'
+title: 'Étape 2 : création de votre première ASP.NET Core application Web'
 description: Créez votre première application web ASP.NET Core avec ce tutoriel vidéo et des instructions détaillées.
 ms.custom: get-started
 ms.date: 03/31/2019
@@ -16,14 +16,14 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 740d6336ab4258d3111dd6708de859108e22365e
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
-ms.translationtype: HT
+ms.openlocfilehash: 21959c4a0cc2b961eca43ab9724369c7aea8444b
+ms.sourcegitcommit: ab18c9d850192fc9ccec10961f1126e8b0cba8da
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402072"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73061134"
 ---
-# <a name="step-2-create-your-first-aspnet-core-web-app"></a>Étape 2 : Créer une application web ASP.NET Core
+# <a name="step-2-create-your-first-aspnet-core-web-app"></a>Étape 2 : créer votre première ASP.NET Core application Web
 
 Créez votre première application web ASP.NET Core avec ce tutoriel vidéo et des instructions détaillées.
 
@@ -33,9 +33,12 @@ _Regardez cette vidéo et suivez la procédure pour créer votre première appli
 
 ## <a name="start-visual-studio-2019-and-create-a-new-project"></a>Démarrer Visual Studio 2019 et créer un projet
 
-Démarrez Visual Studio 2019 et cliquez sur **Créer un projet**. Choisissez **Application web ASP.NET Core**. Choisissez le modèle **Application web** et gardez le nom et l’emplacement par défaut du projet. Cliquez sur **Créer**. Pour obtenir des instructions plus précises, reportez-vous à [la vidéo précédente de cette série de tutoriels](tutorial-aspnet-core-ef-step-01.md).
+Démarrez Visual Studio 2019 et cliquez sur **Créer un projet**. Choisissez **Application web ASP.NET Core**. Choisissez le modèle **Application web** et gardez le nom et l’emplacement par défaut du projet. Dans la liste déroulante avec la version de ASP.NET Core, choisissez **ASP.NET Core 2,1** ou **ASP.net Core 2,2**. Cliquez sur **Créer**. Pour obtenir des instructions plus précises, reportez-vous à [la vidéo précédente de cette série de tutoriels](tutorial-aspnet-core-ef-step-01.md).
 
 ![Visual Studio 2019 – Choisir les options de projet ASP.NET Core](media/vs-2019/vs2019-choose-aspnetcore-project.png)
+
+> [!WARNING]
+> Veillez à choisir ASP .NET Core 2,1 ou ASP.NET Core 2,2. Ce didacticiel n’est pas compatible avec ASP.NET Core 3. x.
 
 ## <a name="explore-the-new-project"></a>Explorer le nouveau projet
 
@@ -121,8 +124,8 @@ Vous devez maintenant voir l’heure réelle du serveur dans le navigateur quand
 
 Dans la vidéo suivante, vous allez apprendre à ajouter la prise en charge de données à votre application.
 
-[Tutoriel : Utiliser des données dans une application ASP.NET Core](tutorial-aspnet-core-ef-step-03.md)
+[Didacticiel : utilisation des données dans votre application ASP.NET Core](tutorial-aspnet-core-ef-step-03.md)
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Tutoriel : Créer une application web Razor Pages avec ASP.NET Core](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)
+- [Didacticiel : créer une application Web Razor Pages avec ASP.NET Core](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)
