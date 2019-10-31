@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 53483979600093133c2b059d9ea921cdb8a08ab1
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: c38ff2fcc762ccc202e2a02ecd36e942db75ad3d
+ms.sourcegitcommit: ab18c9d850192fc9ccec10961f1126e8b0cba8da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911627"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73061079"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger-using-the-natvis-framework"></a>Créer des vues personnalisées d' C++ objets dans le débogueur à l’aide de l’infrastructure Natvis
 
@@ -319,6 +319,10 @@ Dans l’exemple suivant, la visualisation est applicable uniquement pour le typ
   </Expand>
 </Type>
 ```
+
+Vous n’avez pas besoin à la fois `Min` et `Max`. Il s’agit d’attributs facultatifs. Aucun caractère générique n’est pris en charge.
+
+L’attribut `Name` est au format *nom_fichier. ext*, par exemple *Hello. exe* ou *some. dll*. Aucun nom de chemin d’accès n’est autorisé.
 
 ### <a name="BKMK_DisplayString"></a>Élément DisplayString
 L’élément `DisplayString` spécifie une chaîne à afficher en tant que valeur d’une variable. Il accepte les chaînes arbitraires mélangées à des expressions. Tout ce qui figure entre accolades est interprété comme une expression. Par exemple, l’entrée `DisplayString` suivante :
