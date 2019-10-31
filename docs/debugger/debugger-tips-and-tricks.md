@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92d1c327c168bfd2881ad014b7f9ab87f771b95d
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
-ms.translationtype: MT
+ms.openlocfilehash: 70276b8ba4efb08b0a6a57dc48716bd608f0429a
+ms.sourcegitcommit: bdccab4c2dbd50ea8adaaf88c69c9ca32db88099
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72536077"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73144744"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Découvrez des trucs et astuces de productivité pour le débogueur dans Visual Studio
 
@@ -140,6 +140,7 @@ Si vous avez besoin de déboguer les genres de problèmes communs aux applicatio
 
     Vous pouvez également afficher l’emplacement des threads dans la [fenêtre piles parallèles](../debugger/get-started-debugging-multithreaded-apps.md).
 
+::: moniker range="vs-2017"
 ## <a name="examine-payloads-for-web-services-and-network-resources-uwp"></a>Examiner les charges utiles pour les services Web et les ressources réseau (UWP)
 
 Dans les applications UWP, vous pouvez analyser les opérations réseau effectuées à l’aide de l’API `Windows.Web.Http`. Vous pouvez utiliser cet outil pour déboguer les services Web et les ressources réseau. Pour utiliser l’outil, sélectionnez **Déboguer > profileur de performances**. Sélectionnez **réseau**, puis choisissez **Démarrer**. Dans votre application, effectuez le scénario qui utilise `Windows.Web.Http`, puis choisissez **Arrêter la collecte** pour générer le rapport.
@@ -151,6 +152,7 @@ Sélectionnez une opération dans la vue du résumé pour afficher des informati
 ![Informations détaillées dans l’outil utilisation du réseau](../profiling/media/prof-tour-network-usage-details.png "DetailedViewNetworkUsage")
 
 Pour plus d’informations, consultez [Utilisation du réseau](../profiling/network-usage.md).
+::: moniker-end
 
 ## <a name="modules_window"></a>Familiarisez-vous avec la façon dont le débogueur s’attache àC#votre C++application (, F#, Visual Basic,)
 
