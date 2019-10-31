@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.topic: conceptual
 ms.date: 03/20/2019
 ms.technology: vs-azure
-ms.openlocfilehash: f05eb5d92c0cdaa1242f0d98c3d877eebae27bb1
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 0ae81ed19a7fa8a967a3f9c3fe83c9f0d9e3ae51
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253198"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188771"
 ---
 # <a name="how-to-configure-visual-studio-container-tools"></a>Comment configurer les outils de conteneur Visual Studio
 
@@ -23,18 +23,18 @@ Dans le menu principal, choisissez **Outils > Options**, puis développez **Outi
 
 ::: moniker range="vs-2017"
 
-![Options des outils de conteneur Visual Studio, qui illustrent : Extraire automatiquement les images Docker nécessaires lors du chargement du projet, Démarrer automatiquement les conteneurs en arrière-plan, Tuer automatiquement les conteneurs lors de la fermeture de la solution et Ne pas demander l’approbation du certificat SSL localhost.](./media/overview/visual-studio-docker-tools-options.png)
+![Options des outils de conteneur Visual Studio, afficher : extraire automatiquement les images de l’ancrage requis lors du chargement du projet, démarrer automatiquement les conteneurs en arrière-plan, supprimer automatiquement les conteneurs à la fermeture de la solution et ne pas demander l’approbation du certificat SSL.](./media/overview/visual-studio-docker-tools-options.png)
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
 Paramètres **généraux** des outils de conteneur :
 
-![Options des outils de conteneur Visual Studio, qui illustrent : Installez le Bureau de l’arrimeur si nécessaire et approuvez ASP.NET Core certificat SSL.](./media/configure-container-tools/tools-options-1.png)
+![Options des outils de conteneur Visual Studio, qui indiquent : installer le Bureau de l’ancrage si nécessaire et approuver ASP.NET Core certificat SSL.](./media/configure-container-tools/tools-options-1.png)
 
 Paramètres de **projet** et de **docker compose** des outils de conteneur :
 
-![Options des outils de conteneur Visual Studio, qui illustrent : Supprimer les conteneurs sur la fermeture du projet, extraire les images de l’ancrage requis sur le projet ouvert et exécuter les conteneurs sur le projet ouvert.](./media/configure-container-tools/tools-options-2.png)
+![Options des outils de conteneur Visual Studio, afficher : supprimer les conteneurs sur le projet fermer, extraire les images de l’ancrage requis sur le projet ouvert et exécuter les conteneurs sur le projet ouvert.](./media/configure-container-tools/tools-options-2.png)
 ::: moniker-end
 
 Le tableau suivant peut vous aider à déterminer comment définir ces options.
@@ -71,4 +71,4 @@ Le tableau suivant décrit les paramètres de projet et de **docker compose** **
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Pour plus d’informations sur l’utilisation des conteneurs dans Visual Studio, consultez cette [vue d’ensemble](visual-studio-tools-for-docker.md).
+Pour plus d’informations sur l’utilisation des conteneurs dans Visual Studio, consultez cette [vue d’ensemble](overview.md).

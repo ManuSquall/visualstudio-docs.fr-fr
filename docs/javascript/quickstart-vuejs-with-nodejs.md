@@ -1,5 +1,5 @@
 ---
-title: 'Démarrage rapide : Créer une première application Vue.js'
+title: 'Démarrage rapide : créer votre première application vue. js'
 description: Dans ce guide de démarrage rapide, vous allez créer une application Vue.js dans Visual Studio à l’aide des outils Node.js pour Visual Studio.
 ms.custom: seodec18
 ms.date: 09/24/2018
@@ -13,21 +13,21 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 28e86068b2255d1796363405c0231c1fb6bdd480
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
-ms.translationtype: HT
+ms.openlocfilehash: ba1f403cd722b4d3dd1860c4a8b135c87b80bb4d
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226496"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189480"
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Démarrage rapide : Utiliser Visual Studio pour créer une première application Vue.js
+# <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Démarrage rapide : utiliser Visual Studio pour créer votre première application Vue.js
 
 Dans cette présentation de 5-10 minutes de l’environnement de développement intégré (IDE) de Visual Studio, vous allez créer et exécuter une application web Vue.js simple.
 
 > [!IMPORTANT]
 > Le modèle Vue.js, disponible à partir de Visual Studio 2017 version 15.8, est nécessaire pour cet article.
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Configuration requise
 
 * Au préalable, vous devez avoir installé Visual Studio et la charge de travail de développement Node.js.
 
@@ -38,7 +38,7 @@ Dans cette présentation de 5-10 minutes de l’environnement de développement 
     Si vous n’avez pas encore installé Visual Studio 2017, accédez à la page  [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/)  pour l’installer gratuitement.
     ::: moniker-end
 
-    Si vous devez installer la charge de travail, mais que vous avez déjà installé Visual Studio, cliquez sur **Outils** > **Obtenir les outils et fonctionnalités...**, qui ouvre Visual Studio Installer. Choisissez la charge de travail **Développement Node.js**, puis choisissez **Modifier**.
+    Si vous devez installer la charge de travail, mais que vous avez déjà installé Visual Studio, cliquez sur **Outils** > **Obtenir les outils et fonctionnalités...** , qui ouvre Visual Studio Installer. Choisissez la charge de travail **Développement Node.js**, puis choisissez **Modifier**.
 
     ![Charge de travail Node.js dans Visual Studio Installer](../ide/media/quickstart-nodejs-workload.png)
 
@@ -106,7 +106,7 @@ Vous allez d’abord créer un projet d’application web Vue.js.
 
 1. Ensuite, choisissez **Générer** > **Générer la solution** pour générer le projet. Consultez la fenêtre **Sortie** pour afficher les résultats de la génération, puis choisissez **Build** dans la liste **Afficher la sortie à partir de**.
 
-    Le modèle de projet Vue.js utilise le script npm `build` en configurant un événement postbuild. Si vous souhaitez modifier ce paramètre, ouvrez le fichier projet (*\<nom_projet\>.njsproj*) à partir de l’Explorateur Windows et recherchez cette ligne de code :
+    Le modèle de projet Vue.js utilise le script npm `build` en configurant un événement postbuild. Si vous souhaitez modifier ce paramètre, ouvrez le fichier projet ( *\<nom_projet\>.njsproj*) à partir de l’Explorateur Windows et recherchez cette ligne de code :
 
     ```xml
     <PostBuildEvent>npm run build</PostBuildEvent>
@@ -128,6 +128,6 @@ Félicitations ! Vous avez terminé ce guide de démarrage rapide. Nous espéro
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-- Suivre le [tutoriel pour Node.js et Express](../nodejs/tutorial-nodejs.md)
-- Suivre le [tutoriel pour Node.js et React](/visualstudio/javascript/tutorial-nodejs-with-react-and-jsx)
+- Suivre le [tutoriel pour Node.js et Express](tutorial-nodejs.md)
+- Suivre le [tutoriel pour Node.js et React](tutorial-nodejs-with-react-and-jsx.md)
 - [Déployer l’application sur Linux App Service](../javascript/publish-nodejs-app-azure.md)

@@ -11,18 +11,18 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cd898f2c4d7a84c9526ca9f56ce65a9b706f11d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 37f7a909196a3b345b39c006e9bf7cd6a52c9bde
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647779"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188984"
 ---
 # <a name="how-to-add-class-diagrams-to-projects"></a>Guide pratique pour ajouter des diagrammes de classes aux projets
 
 Pour concevoir, modifier et refactoriser des classes et d'autres types, ajoutez un diagramme de classes à votre projet C#, Visual Basic ou C++. Pour visualiser différentes parties du code d'un projet, ajoutez plusieurs diagrammes de classes à ce dernier.
 
-Vous ne pouvez pas créer de diagrammes de classes à partir de projets qui partagent du code dans plusieurs applications. Pour créer des diagrammes de classes UML, consultez [Créer des projets et des diagrammes de modélisation UML](../../modeling/create-uml-modeling-projects-and-diagrams.md).
+Vous ne pouvez pas créer de diagrammes de classes à partir de projets qui partagent du code dans plusieurs applications. Pour créer des diagrammes de classes UML, consultez [Créer des projets et des diagrammes de modélisation UML](../../modeling/what-s-new-for-design-in-visual-studio.md).
 
 ## <a name="install-the-class-designer-component"></a>Installer le composant Concepteur de classes
 

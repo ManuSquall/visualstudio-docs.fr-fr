@@ -18,12 +18,12 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 354d984ef8df7bd7c493a04eb0e27b439d82b0d1
-ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
+ms.openlocfilehash: 79570fe403c12c89860a67683456a3d6ca3d3f01
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72919146"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189603"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Nouveautés de Visual Studio 2017
 
@@ -386,7 +386,7 @@ Parfois, un message ne suffit pas pour transmettre l’impact complet du problè
 ## <a name="see-also"></a>Voir aussi
 
 * [Notes de publication de Visual Studio 2017](/visualstudio/releasenotes/vs2017-relnotes)
-* [Nouveautés du Kit de développement logiciel (SDK) Visual Studio 2017](/visualstudio/extensibility/what-s-new-in-the-visual-studio-2017-sdk)
+* [Nouveautés du Kit de développement logiciel (SDK) Visual Studio 2017](../extensibility/what-s-new-in-the-visual-studio-2017-sdk.md)
 * [Nouveautés de Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [Nouveautés de C#](/dotnet/csharp/whats-new)
 * [Nouveautés de Team Foundation Server](/tfs/server/whats-new?view=vsts)

@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: jillre
-ms.openlocfilehash: b5ea5034f5967b5ba94b57746fd30bf7f1d750e6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8a2ad311c5ea9b992b8e68a8250433354ea48f01
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649918"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188905"
 ---
 # <a name="state-machine-activity-designers"></a>Concepteurs d'activités d'ordinateur d'état
 
@@ -35,7 +35,7 @@ Concepteur de flux de travail comprend un certain nombre de concepteurs d’acti
 
  [Organigramme](../workflow-designer/flowchart-activity-designers.md)
 
- [Utilisation des concepteurs d’activités](../workflow-designer/using-the-activity-designers.md)
+ [Utilisation des concepteurs d’activités](control-flow-activity-designers.md)
 
  [Messagerie](../workflow-designer/messaging-activity-designers.md)
 

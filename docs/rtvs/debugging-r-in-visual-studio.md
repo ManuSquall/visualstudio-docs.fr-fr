@@ -8,16 +8,16 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 98dcbaaeb6f330cda3a14cf8c32afe403b50aa85
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 5efa0a32f51e1f5060474a0d277bfca7f1e7d548
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62939269"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189257"
 ---
 # <a name="debug-r-in-visual-studio"></a>Déboguer R dans Visual Studio
 
-Les outils R pour Visual Studio (RTVS) s’intègrent au système complet de débogage de Visual Studio (consultez [Débogage dans Visual Studio](/visualstudio/debugger/debugger-feature-tour)). Cette prise en charge comprend la définition de points d’arrêt, l’attachement à des processus en cours d’exécution, l’inspection et la surveillance de variables ainsi que l’inspection de la pile des appels. Cet article explore les aspects du débogage propres à R et à RTVS.
+Les outils R pour Visual Studio (RTVS) s’intègrent au système complet de débogage de Visual Studio (consultez [Débogage dans Visual Studio](../debugger/debugger-feature-tour.md)). Cette prise en charge comprend la définition de points d’arrêt, l’attachement à des processus en cours d’exécution, l’inspection et la surveillance de variables ainsi que l’inspection de la pile des appels. Cet article explore les aspects du débogage propres à R et à RTVS.
 
 La procédure de lancement du débogueur pour le fichier R de démarrage dans un projet R est la même que celle utilisée pour d’autres types de projets. Vous pouvez donc utiliser la commande **Déboguer** > **Démarrer le débogage**, la touche **F5** ou l’option **Fichier de démarrage source** dans la barre d’outils de débogage :
 

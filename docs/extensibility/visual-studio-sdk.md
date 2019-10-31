@@ -14,12 +14,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4803fbb0887deaf140836263ca82d772b29112f7
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 662b64f69b278c4cc815a742c5cba26592e000bd
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981701"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189090"
 ---
 # <a name="visual-studio-sdk"></a>SDK Visual Studio
 Le kit de développement logiciel (SDK) Visual Studio vous aide à étendre les fonctionnalités de Visual Studio ou à intégrer de nouvelles fonctionnalités dans Visual Studio. Vous pouvez distribuer vos extensions à d’autres utilisateurs, ainsi qu’à la Visual Studio Marketplace. Voici quelques-unes des façons dont vous pouvez étendre Visual Studio :
@@ -74,6 +74,7 @@ Le kit de développement logiciel (SDK) Visual Studio vous aide à étendre les 
 - [Extension de Visual Studio](https://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)
 
 ## <a name="see-also"></a>Voir aussi
+
 - [Créer une extension avec une commande de menu](../extensibility/creating-an-extension-with-a-menu-command.md)
 - [Comment : migrer des projets d’extensibilité vers Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)
 - [FAQ : conversion des compléments en extensions VSPackage](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)
@@ -93,5 +94,4 @@ Le kit de développement logiciel (SDK) Visual Studio vous aide à étendre les 
 - [Envoyer des extensions Visual Studio](../extensibility/shipping-visual-studio-extensions.md)
 - [Dans le Kit de développement logiciel (SDK) Visual Studio](../extensibility/internals/inside-the-visual-studio-sdk.md)
 - [Prise en charge du Kit de développement logiciel Visual Studio (SDK)](../extensibility/support-for-the-visual-studio-sdk.md)
-- [Archive](../extensibility/archive.md)
 - [Référence du kit de développement logiciel Visual Studio](../extensibility/visual-studio-sdk-reference.md)

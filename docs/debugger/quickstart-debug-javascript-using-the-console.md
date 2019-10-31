@@ -16,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a92daf09f033da020fe54369a20483686c72f81
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: ad037a0e71bc2156fe1c604d183a5e02ae914688
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72730432"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187551"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>Déboguer du code JavaScript à l’aide de la console dans Visual Studio
 
@@ -44,7 +44,7 @@ La fenêtre de la console JavaScript permet les actions suivantes :
 > [!TIP]
 > Si la fenêtre de la console JavaScript est fermée, sélectionnez **Déboguer**> **Fenêtres** > **Console JavaScript** pour la rouvrir. La fenêtre s’ouvre uniquement pendant une session de débogage de script.
 
-À l’aide de la fenêtre de la console JavaScript, vous pouvez interagir avec votre application sans interrompre et redémarrer le débogueur. Pour plus d’informations, consultez [actualiser une application (JavaScript)](../debugger/refresh-an-app-javascript.md). Pour plus d’informations sur d’autres fonctionnalités de débogage JavaScript, telles que l’utilisation de l’Explorateur DOM et la définition de points d’arrêt, consultez [démarrage rapide : déboguer des applications HTML et CSS](../debugger/quickstart-debug-html-and-css.md) et [Déboguer des applications dans Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps).
+À l’aide de la fenêtre de la console JavaScript, vous pouvez interagir avec votre application sans interrompre et redémarrer le débogueur. Pour plus d’informations, consultez [actualiser une application (JavaScript)](../debugger/refresh-an-app-javascript.md). Pour plus d’informations sur d’autres fonctionnalités de débogage JavaScript, telles que l’utilisation de l’Explorateur DOM et la définition de points d’arrêt, consultez [démarrage rapide : déboguer des applications HTML et CSS](../debugger/quickstart-debug-html-and-css.md) et [Déboguer des applications dans Visual Studio](debugging-windows-store-and-windows-universal-apps.md).
 
 ## <a name="InteractiveConsole"></a> Débogage à l’aide de la fenêtre de la console JavaScript
 La procédure suivante crée une application `FlipView` et montre comment déboguer interactivement une erreur de codage JavaScript.
@@ -250,7 +250,7 @@ L’illustration suivante montre la liste Cible dans la fenêtre de la console J
 Vous pouvez aussi basculer le contexte d’exécution à l’aide de la commande `cd` , mais vous devez connaître le nom de l’autre contexte d’exécution et la référence que vous devez utiliser dans la portée. La liste **Cible** offre le meilleur accès aux autres contextes d’exécution.
 
 ## <a name="see-also"></a>Voir aussi
-- [Déboguer des applications dans Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
+- [Déboguer des applications dans Visual Studio](debugging-windows-store-and-windows-universal-apps.md)
 - [Commandes de la console JavaScript](../debugger/javascript-console-commands.md?view=vs-2017)
 - [Actualiser une application (JavaScript)](../debugger/refresh-an-app-javascript.md)
 - [Raccourcis clavier](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017)

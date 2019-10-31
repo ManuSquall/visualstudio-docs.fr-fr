@@ -9,12 +9,12 @@ manager: jillfra
 ms.technology: vs-ide-debug
 ms.workload:
 - uwp
-ms.openlocfilehash: 0c785be0002a1e6d4fd1934e559743502611f5fb
-ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
+ms.openlocfilehash: 5d6f0e54c37c394fce464b07440daa99b4dd7d5e
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72924495"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188897"
 ---
 # <a name="debug-xaml-in-blend"></a>Déboguer XAML dans Blend
 
@@ -119,7 +119,7 @@ Quand des erreurs XAML sont détectées, l'aire de conception affiche une alert
 
 Vous pouvez ouvrir Blend Projects dans Visual Studio pour déboguer plus facilement le code dans votre application. Pour ouvrir un projet Blend dans Visual Studio, cliquez avec le bouton droit sur le projet dans le panneau **projets** , puis cliquez sur **modifier dans Visual Studio**. Une fois que vous avez terminé votre session de débogage dans Visual Studio, appuyez sur Ctrl + Maj + S pour enregistrer toutes vos modifications, puis revenez à Blend. Vous êtes alors invité à recharger le projet. Cliquez sur **Oui pour tout** pour continuer à travailler dans Blend.
 
-Pour plus d’informations sur le débogage de votre application, consultez [Déboguer des applications UWP dans Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).
+Pour plus d’informations sur le débogage de votre application, consultez [Déboguer des applications UWP dans Visual Studio](../debugger/debugging-windows-store-and-windows-universal-apps.md).
 
 ## <a name="get-help"></a>Obtenir de l’aide
 

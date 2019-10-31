@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e6444f559902841c13a56265569a0bdc13a9ed26
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 7bcd11d7860e1d191479d4a2ea5f9fac78dcdfe2
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981708"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189224"
 ---
 # <a name="localize-sharepoint-solutions"></a>Localiser des solutions SharePoint
 
@@ -42,7 +42,7 @@ ms.locfileid: "72981708"
 |Indépendant de la langue|Fichier de ressources qui contient des chaînes localisées pour une langue, mais pas une culture spécifique. Par exemple, « fr » pour le français.|
 |Spécifique à une langue|Fichier de ressources qui contient des chaînes localisées pour une langue et une culture. Par exemple, « fr-CA » pour le français canadien.|
 
- Pour plus d’informations, consultez [organisation hiérarchique des ressources pour la localisation](../ide/hierarchical-organization-of-resources-for-localization.md).
+ Pour plus d’informations, consultez [organisation hiérarchique des ressources pour la localisation](../ide/globalizing-and-localizing-applications.md).
 
  Pour spécifier les fichiers de ressources par défaut dans les projets SharePoint que vous développez dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], choisissez **Langue indifférente (pays indifférent)** dans la liste culture de la boîte de dialogue **Ajouter une ressource** lorsque vous ajoutez un fichier de ressources.
 

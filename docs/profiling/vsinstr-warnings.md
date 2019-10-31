@@ -14,19 +14,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b03b1350b4125262bedfd7fa5284c13d6d38a2e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 259b4089e4a54dbde4cc8b30a3da2899ad37a85a
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822903"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189298"
 ---
 # <a name="vsinstr-warnings"></a>Avertissements VSInstr
 Le tableau suivant liste les avertissements émis par l’outil *VSInstr.exe*. Vous pouvez utiliser l’option NOWARN avec les numéros d’avertissement pour empêcher l’affichage de l’avertissement.
 
 |Numéro d’avertissement|Description|
 |--------------------|-----------------|
-|**VSP1026**|La couverture n’est pas prise en charge sur les bibliothèques qui ne référencent pas MSCorLib. C’est souvent le cas pour les bibliothèques portables.<br /><br />L’option de ligne de commande [/EnableCodeCoverage](/visualstudio/test/vstest-console-options) est requise pour .NET Core.|
+|**VSP1026**|La couverture n’est pas prise en charge sur les bibliothèques qui ne référencent pas MSCorLib. C’est souvent le cas pour les bibliothèques portables.<br /><br />L’option de ligne de commande [/EnableCodeCoverage](../test/vstest-console-options.md) est requise pour .NET Core.|
 |**VSP2000**|Erreur interne. Impossible d’obtenir le nom de fichier du module de cet exécutable.|
 |**VSP2001**|\<nom_assembly> est un assembly à nom fort. Vous devrez le resigner avant de l’exécuter.<br /><br /> Cet avertissement se produit quand un assembly signé est instrumenté. Vous pouvez utiliser l’outil *sn.exe* pour resigner le fichier binaire ou pour désactiver temporairement l’exigence de nom fort. Pour plus d’informations, consultez [Sn.exe (outil Strong Name Tool)](/dotnet/framework/tools/sn-exe-strong-name-tool).|
 |**VSP2002**|Impossible de trouver la fonction \<nom_fonction> dans le fichier \<nom_fichier><br /><br /> Cet avertissement se produit si une fonction est introuvable dans le fichier spécifié.|

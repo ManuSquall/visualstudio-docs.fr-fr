@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d001edcd281a0c21d244704f0a068850804b8762
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 4d3afc8ff48355c74544edf123689495bfde1302
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981156"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189123"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Procédure pas à pas : profilage d’une application SharePoint
   Cette procédure pas à pas montre comment utiliser les outils de profilage dans Visual Studio pour optimiser les performances d'une application SharePoint. L'application d'exemple est un récepteur d'événements de fonctionnalité SharePoint qui contient une boucle inactive qui dégrade les performances du récepteur d'événements de fonctionnalité. Le profileur Visual Studio vous permet de localiser et d’éliminer la partie la plus coûteuse (la plus lente) du projet, également appelée *chemin réactif*.
@@ -197,7 +197,7 @@ ms.locfileid: "72981156"
 
 2. Sur la page un de l' **Assistant Performance**, laissez la méthode de profilage en tant qu’échantillonnage de l' **UC** et choisissez le bouton **suivant** .
 
-     Les autres méthodes de profilage peuvent être utilisées dans des situations plus avancées de profilage. Pour plus d’informations, consultez [Understanding Performance Collection Methods](/visualstudio/profiling/understanding-performance-collection-methods) (Fonctionnement des méthodes de collecte des données de performances).
+     Les autres méthodes de profilage peuvent être utilisées dans des situations plus avancées de profilage. Pour plus d’informations, consultez [Understanding Performance Collection Methods](../profiling/understanding-performance-collection-methods.md) (Fonctionnement des méthodes de collecte des données de performances).
 
 3. Dans la page 2 de l' **Assistant Performance**, laissez la cible du **profil en tant** que Profile, puis choisissez le bouton **suivant** .
 
@@ -273,7 +273,7 @@ ms.locfileid: "72981156"
      Comme l'appel à la boucle inactive a été supprimé, la fonctionnalité doit s'activer beaucoup plus rapidement. Le rapport de profilage d'échantillon doit le refléter.
 
 ## <a name="see-also"></a>Voir aussi
-- [Explorateur de performances](/visualstudio/profiling/performance-explorer)
-- [Vue d’ensemble de la session de performance](/visualstudio/profiling/performance-session-overview)
-- [Guide du débutant en profilage des performances](/visualstudio/profiling/beginners-guide-to-performance-profiling)
+- [Explorateur de performances](../profiling/performance-explorer.md)
+- [Vue d’ensemble de la session de performance](../profiling/performance-session-overview.md)
+- [Guide du débutant en profilage des performances](../profiling/beginners-guide-to-performance-profiling.md)
 - [Rechercher des goulots d’étranglement d’application avec le profileur Visual Studio](https://msdn.microsoft.com/magazine/cc337887.aspx)

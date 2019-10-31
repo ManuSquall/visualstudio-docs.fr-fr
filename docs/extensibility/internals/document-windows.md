@@ -1,5 +1,5 @@
 ---
-title: Document Windows | Microsoft Docs
+title: Fenêtres de document | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,36 +10,36 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 844176b2db6074a33ac2e612c47d3779031836df
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 5d29d64090320a8f62491209773145c024564efa
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66345476"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73186630"
 ---
 # <a name="document-windows"></a>Fenêtres de document
-Dans Visual Studio, un *fenêtre de document* est une fenêtre enfant encadré qui est associée à une fenêtre d’interface multidocument (MDI). Fenêtres de document sont généralement utilisés pour l’affichage et la modification de code source ou de texte, mais elles peuvent héberger également d’autres types fonctionnels. Fenêtres de document :
+Dans Visual Studio, une *fenêtre de document* est une fenêtre enfant encadrée qui est associée à une fenêtre d’interface multidocument (MDI, multiple-document interface). Les fenêtres de document sont généralement utilisées pour l’affichage et la modification du code source ou du texte, mais elles peuvent également héberger d’autres types fonctionnels. Fenêtres de document :
 
-- Peuvent être organisés dans des groupes distincts onglet horizontal ou vertical dans le parent MDI afin que plusieurs fichiers peuvent être affichées en même temps.
+- Peut être organisé dans des groupes d’onglets horizontaux ou verticaux séparés dans le MDI parent afin que plusieurs fichiers puissent être affichés en même temps.
 
-- Peuvent être ancrées dans n’importe quel ordre dans le parent MDI.
+- Peuvent être ancrées dans n’importe quel ordre dans l’MDI parent.
 
-- Peut flotter librement.
+- Peut être flottant librement.
 
-- Sont liées dans l’ordre de tabulation à d’autres fenêtres MDI.
+- Sont liés dans l’ordre de tabulation aux autres fenêtres MDI.
 
-  Les commandes pour le regroupement, ancrer et rendre flottantes sont accessibles dans le menu contextuel d’un onglet de fenêtre de document.
+  Les commandes de regroupement, d’ancrage et de flottement sont accessibles dans le menu contextuel d’un onglet de fenêtre de document.
 
-  Pour plus d’informations sur le comportement de la fenêtre dans Visual Studio, consultez [personnaliser les dispositions de fenêtres](../../ide/customizing-window-layouts-in-visual-studio.md).
+  Pour plus d’informations sur le comportement des fenêtres dans Visual Studio, consultez [personnaliser les dispositions de fenêtres](../../ide/customizing-window-layouts-in-visual-studio.md).
 
-## <a name="document-window-implementation"></a>Implémentation de fenêtres de document
- Les fenêtres de document sont créées en implémentant un éditeur. Le <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> interface crée des fenêtres de document dans le cadre de l’instanciation d’un éditeur. Pour plus d’informations, consultez [hérité interfaces dans l’éditeur](../../extensibility/legacy-interfaces-in-the-editor.md).
+## <a name="document-window-implementation"></a>Implémentation de la fenêtre de document
+ Les fenêtres de document sont créées en implémentant un éditeur. L’interface <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> crée des fenêtres de document dans le cadre de l’instanciation d’un éditeur. Pour plus d’informations, consultez [interfaces héritées dans l’éditeur](/visualstudio/extensibility/legacy-interfaces-in-the-editor?view=vs-2015).
 
 > [!NOTE]
-> Pour fournir en arrière et transférer des points de navigation dans une fenêtre, vous devez implémenter le <xref:Microsoft.VisualStudio.Shell.Interop.IVsBackForwardNavigation> interface. L’éditeur de texte utilise des marqueurs de texte pour identifier les points de navigation dans le document.
+> Pour fournir des points de navigation arrière et avant dans une fenêtre, implémentez l’interface <xref:Microsoft.VisualStudio.Shell.Interop.IVsBackForwardNavigation>. L’éditeur de texte utilise des marqueurs de texte pour identifier les points de navigation dans le document.
 
-## <a name="the-running-document-table"></a>La table de document en cours d’exécution
- L’IDE utilise la table de document en cours d’exécution (RDT) pour suivre l’état de chaque fenêtre de document. La RDT est le mécanisme via quel document windows sont informés des événements, tels que lors de la fermeture d’une solution ou un fichier a été modifié. Pour plus d’informations, consultez [table de documents en cours d’exécution](../../extensibility/internals/running-document-table.md).
+## <a name="the-running-document-table"></a>Table de document en cours d’exécution
+ L’IDE utilise la table de document en cours d’exécution (RDT) pour suivre l’état de chaque fenêtre de document. Le RDT est le mécanisme par lequel les fenêtres de document sont notifiées des événements, par exemple lorsqu’une solution est fermée ou lorsqu’un fichier a été modifié. Pour plus d’informations, consultez exécution de la [table des documents](../../extensibility/internals/running-document-table.md).
 
 ## <a name="see-also"></a>Voir aussi
-- [Chargement de document différé](../../extensibility/internals/delayed-document-loading.md)
+- [Chargement différé du document](../../extensibility/internals/delayed-document-loading.md)

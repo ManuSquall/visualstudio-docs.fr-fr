@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2a9370fbbd5c806bd3978e3c642da8a6dbd79fd1
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 4a114345363deb9c5ddd0f5a4141cd7d99f0ac1c
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984989"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189183"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>Procédure pas à pas : création d’un élément de projet d’action personnalisé avec un modèle d’élément, partie 1
   Vous pouvez étendre le système de projet SharePoint dans Visual Studio en créant vos propres types d’éléments de projet. Dans cette procédure pas à pas, vous allez créer un élément de projet qui peut être ajouté à un projet SharePoint pour créer une action personnalisée sur un site SharePoint. L’action personnalisée ajoute un élément de menu au menu **actions de site** du site SharePoint.
@@ -218,7 +218,7 @@ ms.locfileid: "72984989"
     </VSTemplate>
     ```
 
-     Ce fichier définit le contenu et le comportement du modèle d’élément. Pour plus d’informations sur le contenu de ce fichier, consultez [Référence du schéma de modèle Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference).
+     Ce fichier définit le contenu et le comportement du modèle d’élément. Pour plus d’informations sur le contenu de ce fichier, consultez [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md).
 
 4. Dans **Explorateur de solutions**, ouvrez le menu contextuel du projet **ItemTemplate** , choisissez **Ajouter**, puis **nouvel élément**.
 
@@ -455,6 +455,6 @@ ms.locfileid: "72984989"
 - [Définir des types d’éléments de projet SharePoint personnalisés](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [Créer des modèles d’élément et des modèles de projet pour les éléments de projet SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)
 - [Utiliser le service de projet SharePoint](../sharepoint/using-the-sharepoint-project-service.md)
-- [Référence du schéma de modèle Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference)
+- [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Éditeur d’images pour les icônes](/cpp/windows/image-editor-for-icons)
 - [Création d’une icône ou d' &#40;un autre éditeur d’images d’images pour les icônes&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)

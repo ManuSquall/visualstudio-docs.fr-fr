@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6a4e3fde3d98b83f8b92ffe039e3bff5c8eae4f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 77f5ca5dcc1b886ec56b7177dd0d6aa62a8ce4f0
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738326"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188633"
 ---
 # <a name="debugger-project-settings"></a>Paramètres du projet du débogueur
 Certains paramètres de projet affectent également le débogage. Ces paramètres déterminent des éléments tels que les répertoires de recherche du débogueur, la commande et les arguments de commande utilisés pour démarrer le programme, ainsi que le type d'informations de débogage créées pour le programme. Vous pouvez modifier ces paramètres dans la boîte de dialogue **Pages de propriétés** .
@@ -44,7 +44,7 @@ Certains paramètres de projet affectent également le débogage. Ces paramètre
 ## <a name="related-sections"></a>Rubriques connexes
  [Spécifier les fichiers de symboles (. pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) Décrit comment le débogueur utilise des fichiers de symboles et des fichiers sources pour afficher des informations pour le débogage.
 
- [Déboguer des applications dans Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps) Décrit comment déboguer des applications UWP. (Centre de développement Windows)
+ [Déboguer des applications dans Visual Studio](debugging-windows-store-and-windows-universal-apps.md) Décrit comment déboguer des applications UWP. (Centre de développement Windows)
 
  [Paramètres et préparation du débogueur](../debugger/debugger-settings-and-preparation.md) Décrit les paramètres de propriété du débogueur et la préparation nécessaire pour déboguer votre programme avec le débogueur [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 

@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f6dd305b55e1ff7dd11b46f023906a8422b5504f
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.openlocfilehash: 76b841d94aee93a1bc88f6d01161239828dee166
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72536049"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188414"
 ---
 # <a name="debug-managed-code-c-visual-basic-f-ccli"></a>Déboguer duC#code managé ( F#, C++Visual Basic,,/CLI)
 
@@ -76,7 +76,7 @@ Fournit des considérations pour le débogage d'applications de service Windows,
 [Débogage et profilage](/dotnet/framework/debug-trace-profile/index)\
 Décrit le débogage des applications .NET et les exigences de configuration.
 
-[Débogage de scripts et d'applications web](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)\
+[Débogage de scripts et d'applications web](how-to-enable-debugging-for-aspnet-applications.md)\
 Décrit les problèmes et techniques de débogage courants relatifs au débogage de scripts et d'applications Web.
 
 ## <a name="see-also"></a>Voir aussi

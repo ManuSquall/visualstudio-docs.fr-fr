@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 875c2578d5f8cc1aa68cc624adc0a6e2a1713472
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: e69d88bb5764836d82232cec26606009eaf694d7
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911365"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187736"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Diagnostics des graphiques Visual Studio
 Visual Studio*Graphics Diagnostics* est un ensemble d’outils pour l’enregistrement, puis l’analyse des problèmes de rendu et de performances dans les applications Direct3D. Graphics Diagnostics peut être utilisé sur les applications qui s'exécutent localement sur votre PC Windows, dans un émulateur d'appareil Windows, ou sur un PC ou un appareil distant.
@@ -38,7 +38,7 @@ Visual Studio*Graphics Diagnostics* est un ensemble d’outils pour l’enregist
 
  [Capture d’informations graphiques](capturing-graphics-information.md) Pour utiliser Graphics Diagnostics pour examiner un problème de rendu dans votre application, vous devez d’abord enregistrer des informations sur la façon dont l’application utilise DirectX. Au cours de la session d’enregistrement, pendant l’exécution normale de l’application, vous *capturez* (ou sélectionnez) les frames qui vous intéressent. Les captures contiennent des informations détaillées sur le rendu des frames. Vous pouvez enregistrer les informations capturées sous forme de document journal de graphisme pour l’examiner ultérieurement ou le partager avec d’autres membres de votre équipe.
 
- [Utilisation du GPU](gpu-usage.md) Pour utiliser Graphics Diagnostics pour profiler votre application, utilisez l’outil utilisation du GPU. Servez-vous de l'outil Utilisation du GPU conjointement avec d'autres outils de profilage, tels que l'outil Utilisation de l'UC, pour mettre en corrélation les activités de l'UC et du GPU éventuellement responsables des problèmes de performances de votre application.
+ [Utilisation du GPU](../../profiling/gpu-usage.md) Pour utiliser Graphics Diagnostics pour profiler votre application, utilisez l’outil utilisation du GPU. Servez-vous de l'outil Utilisation du GPU conjointement avec d'autres outils de profilage, tels que l'outil Utilisation de l'UC, pour mettre en corrélation les activités de l'UC et du GPU éventuellement responsables des problèmes de performances de votre application.
 
  [Document journal de graphisme](graphics-log-document.md) Pour démarrer l’examen d’un journal de graphisme enregistré, vous utilisez la fenêtre de document du journal de graphisme pour sélectionner un frame capturé (voire un pixel spécifique) afin de pouvoir examiner en détail les *événements* (autrement dit, les appels de l’API DirectX) qui l’affectent.
 
@@ -66,5 +66,5 @@ Visual Studio*Graphics Diagnostics* est un ensemble d’outils pour l’enregist
 
 | Titre | Description |
 | - | - |
-| [Visite guidée des fonctionnalités du débogueur](/visualstudio/debugger/debugger-feature-tour) | Présente la fonctionnalité de débogage de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. |
+| [Visite guidée des fonctionnalités du débogueur](../debugger-feature-tour.md) | Présente la fonctionnalité de débogage de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. |
 | [Graphiques et jeux DirectX](/windows/win32/directx) | Fournit des articles ayant trait aux technologies graphiques DirectX. |

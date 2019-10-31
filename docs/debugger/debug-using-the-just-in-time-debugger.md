@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32a3ebd6e9047271a21425ac5b7eaaf715955b61
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: b842fa4ce7c75e061a58d980cefe5648094c2ef7
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911388"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188673"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Déboguer à l’aide du débogueur juste-à-temps dans Visual Studio
 
@@ -104,7 +104,7 @@ Cet exemple vous guide tout au long du débogage juste-à-temps lorsqu’une app
 
 Pour cet exemple, vous allez créer une C# application console dans Visual Studio qui lève une [exception NullReferenceException](/dotnet/api/system.nullreferenceexception).
 
-1. Dans Visual Studio, créez une C# application console (**fichier** > **nouveau** **projet** >  > **application console**  **C# Visual** > ) nommé *ThrowsNullException*. Pour plus d’informations sur la création de projets dans Visual Studio, consultez [procédure pas à pas : création d’une application simple](/visualstudio/get-started/csharp/tutorial-wpf).
+1. Dans Visual Studio, créez une C# application console (**fichier** > **nouveau** **projet** >  > **application console**  **C# Visual** > ) nommé *ThrowsNullException*. Pour plus d’informations sur la création de projets dans Visual Studio, consultez [procédure pas à pas : création d’une application simple](../get-started/csharp/tutorial-wpf.md).
 
 1. Lorsque le projet s’ouvre dans Visual Studio, ouvrez le fichier *Program.cs* . Remplacez la méthode main () par le code suivant, qui imprime une ligne dans la console, puis lève une exception NullReferenceException :
 

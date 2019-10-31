@@ -17,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 52235ab4770f5267de8507ff67fcda0aa1370392
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 12f66658cd8069f58355a96b2c3b3031a4cb6808
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72730550"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187567"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Déboguer du code HTML et CSS dans les applications UWP dans Visual Studio
 
@@ -30,7 +30,7 @@ Pour les applications JavaScript, Visual Studio fournit une expérience de débo
 
 Grâce au modèle de débogage interactif fourni par les outils d’inspection DOM, vous pouvez afficher et modifier le rendu du code HTML et CSS. Et cela, sans avoir à arrêter ni redémarrer le débogueur.
 
-Pour plus d’informations sur d’autres fonctionnalités de débogage JavaScript, telles que l’utilisation de la fenêtre de la console JavaScript et la définition de points d’arrêt, consultez [démarrage rapide : déboguer](../debugger/quickstart-debug-javascript-using-the-console.md) des applications JavaScript et [Déboguer des applications dans Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps).
+Pour plus d’informations sur d’autres fonctionnalités de débogage JavaScript, telles que l’utilisation de la fenêtre de la console JavaScript et la définition de points d’arrêt, consultez [démarrage rapide : déboguer](../debugger/quickstart-debug-javascript-using-the-console.md) des applications JavaScript et [Déboguer des applications dans Visual Studio](debugging-windows-store-and-windows-universal-apps.md).
 
 ## <a name="InspectingDOM"></a> Examen du modèle DOM en direct
 L’explorateur DOM affiche une vue de la page rendue ; utilisez l’explorateur DOM pour modifier des valeurs et afficher immédiatement les résultats. Cela vous permet de tester les modifications sans arrêter et redémarrer le débogueur. Le code source de votre projet ne change pas quand vous interagissez avec la page à l’aide de cette méthode. Ainsi, quand vous trouvez les corrections de code souhaitées, vous modifiez votre code source.
@@ -182,7 +182,7 @@ Dans la procédure qui suit, nous examinerons le processus de débogage interact
 14. Dans la fenêtre principale, double-cliquez sur `width: 100px;height: 100px;`, appuyez sur la touche **Suppr** , puis appuyez sur **entrée**. Une fois que vous avez appuyé sur entrée, les nouvelles valeurs sont immédiatement reflétées dans l’application, même si vous n’avez pas arrêté votre session de débogage.
 
     > [!IMPORTANT]
-    > Comme vous pouvez mettre à jour les attributs dans la fenêtre de l’explorateur DOM, vous pouvez également mettre à jour les valeurs affichées sous les onglets **Styles**, **Calculé**et **Disposition** . Pour plus d’informations, consultez [déboguer les styles CSS avec l’Explorateur DOM](../debugger/debug-css-styles-using-dom-explorer.md) et [Déboguer la disposition à l’aide de l’Explorateur DOM](../debugger/debug-layout-using-dom-explorer.md).
+    > Comme vous pouvez mettre à jour les attributs dans la fenêtre de l’explorateur DOM, vous pouvez également mettre à jour les valeurs affichées sous les onglets **Styles**, **Calculé**et **Disposition** . Pour plus d’informations, consultez [déboguer les styles CSS avec l’Explorateur DOM](../debugger/debug-css-styles-using-dom-explorer.md) et [Déboguer la disposition à l’aide de l’Explorateur DOM](quickstart-debug-html-and-css.md).
 
 15. Basculez vers l’application en la sélectionnant ou en utilisant les touches Alt + Tab.
 
@@ -255,7 +255,7 @@ Il existe trois façons de sélectionner des éléments DOM lors du débogage d�
 > La mise en surbrillance d’éléments par pointage n’est que partiellement prise en charge dans l’émulateur Windows Phone.
 
 ## <a name="see-also"></a>Voir aussi
-- [Déboguer des applications dans Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
+- [Déboguer des applications dans Visual Studio](debugging-windows-store-and-windows-universal-apps.md)
 - [Actualiser une application (JavaScript)](../debugger/refresh-an-app-javascript.md)
 - [Déboguer un contrôle WebView](../debugger/debug-a-webview-control.md)
 - [Raccourcis clavier](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017)

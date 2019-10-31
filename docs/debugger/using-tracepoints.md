@@ -1,6 +1,6 @@
 ---
-title: Utiliser des points de trace dans le débogueur | Microsoft Docs
-ms.date: 9/17/2019
+title: Enregistrer les informations avec des points de trace | Microsoft Docs
+ms.date: 10/28/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - tracepoints, about tracepoints
@@ -9,16 +9,16 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 263657213f1720eaca7a0462bb31585adaacf9bb
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: fcc9f01315d3783af1a1f124785cd74fafb215bf
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72516389"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187303"
 ---
-# <a name="use-tracepoints-in-the-visual-studio-debugger"></a>Utiliser des points de trace dans le débogueur Visual Studio
+# <a name="log-info-to-the-output-window-using-tracepoints-in-visual-studio"></a>Enregistrer les informations dans la fenêtre sortie à l’aide de points de trace dans Visual Studio
 
-Les points de trace vous permettent d’enregistrer des informations dans la fenêtre sortie sous des conditions configurables sans modifier ou arrêter votre code. Cette fonctionnalité est prise en charge pour le code managé et natif, ainsi que pour plusieurs langages C#tels que JavaScript et.
+Les points de trace vous permettent d’enregistrer des informations dans la fenêtre sortie sous des conditions configurables sans modifier ou arrêter votre code. Cette fonctionnalité est prise en charge pour les langagesC#managés F#(, Visual Basic,) et le code natif, ainsi que pour les langages tels que JavaScript et Python.
 
 ## <a name="let39s-take-an-example"></a>Prenons&#39;un exemple
 
@@ -75,9 +75,9 @@ Vous pouvez également utiliser des mots clés spéciaux pour afficher des infor
 | $CALLER | Nom de la fonction appelante |
 | $CALLSTACK | Pile des appels |
 | $FUNCTION | Nom de la fonction actuelle |
-| $PID | ID du processus |
+| $PID | ID de processus |
 | $PNAME | Nom du processus |
-| $TID | ID du thread |
+| $TID | ID de thread |
 | $TNAME   | Nom du thread |
 | $TICK | Nombre de cycles (à partir de Windows GetTickCount) |
 
@@ -111,7 +111,7 @@ Pour le nombre d’accès, vous pouvez choisir de générer un message lorsque l
 ![Nombre d’accès aux expressions conditionnelles](../debugger/media/conditionalexpressionhitcount.png "Nombre d’accès aux expressions conditionnelles")
 
 ### <a name="filter"></a>Filtre
-Pour une condition de filtre, spécifiez les périphériques, les processus ou les threads pour lesquels la sortie est affichée.
+Pour une condition de filtre, spécifiez la sortie des appareils, des processus ou des threads.
 
 ![Filtre d’expression conditionnelle](../debugger/media/conditionalexpressionfilter.png "Filtre d’expression conditionnelle")
 
@@ -129,7 +129,7 @@ Placez les chaînes (telles que les noms) entre guillemets doubles. Les valeurs 
 
 Alors que les points de trace ont pour but de faciliter le débogage, vous devez tenir compte de certaines considérations lorsqu’il s’agit de les utiliser.
 
-Parfois, lorsque vous Inspectez une propriété ou un attribut d’un objet, sa valeur peut changer. Il ne s’agit pas d’un bogue provoqué par la fonctionnalité de points de trace elle-même, mais il est intéressant de mentionner que l’utilisation des points de trace pour inspecter les objets n’évite pas ces modifications accidentelles.
+Parfois, lorsque vous Inspectez une propriété ou un attribut d’un objet, sa valeur peut changer. Si la valeur change pendant l’inspection, il ne s’agit pas d’un bogue provoqué par la fonctionnalité de trace de trace proprement dite. Toutefois, l’utilisation de points de trace pour inspecter les objets n’évite pas ces modifications accidentelles.
 
 La façon dont les expressions sont évaluées dans la boîte de message d' **action** peut être différente de celle utilisée actuellement pour le développement. Par exemple, pour générer une chaîne, vous n’avez pas besoin d’encapsuler un message entre guillemets, même si vous utilisez `Debug.WriteLine()` ou `console.log()`. En outre, la syntaxe de l’accolade (`{ }`) aux expressions de sortie peut également être différente de la Convention pour sortir des valeurs dans votre langage de développement. (Toutefois, le contenu entre accolades (`{ }`) doit toujours être écrit à l’aide de la syntaxe de votre langage de développement).
 

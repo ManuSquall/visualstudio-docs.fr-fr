@@ -8,12 +8,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a87efc24ef148600c31dbb07d7517f9235306102
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5cdea5b3cbf99ab8213c320acc82665816062dca
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650411"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189641"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>Comment : ajouter un nouvel élément à un projet de workflow
 
@@ -26,7 +26,7 @@ Le tableau suivant répertorie les éléments de Windows Workflow Foundation (WF
 | Activité | Activité à composer d'autres activités. La sélection de cet élément ajoute le même fichier XAML au projet que celui obtenu lors de la sélection du modèle **bibliothèque d’activités** pour un nouveau projet. Pour plus d’informations sur cette procédure, consultez [créer un projet de flux de travail](creating-a-workflow-project.md). |
 | Concepteur d'activités | Concepteur pour personnaliser l’expérience au moment du design d’une activité. La sélection de cet élément ajoute les mêmes fichiers au projet que ceux obtenus lors de la sélection du modèle **bibliothèque du concepteur d’activités** pour un nouveau projet. |
 | Activité de code | Activité avec logique d'exécution écrite dans le code. Un fichier de code source avec substitution de la méthode <xref:System.Activities.CodeActivity.Execute%2A> est déjà généré automatiquement. |
-| Service de workflow WCF | Service [!INCLUDE[indigo2](../workflow-designer/includes/indigo2_md.md)] construit à l'aide d'activités de workflow. La sélection de cet élément ajoute les mêmes fichiers au projet que ceux obtenus lors de la sélection du modèle d' **application de service de workflow WCF** pour un nouveau projet. Pour plus d’informations sur cette procédure, consultez [Comment : créer une application de service de flux de travail WCF](/visualstudio/workflow-designer/creating-a-workflow-project). |
+| Service de workflow WCF | Service [!INCLUDE[indigo2](../workflow-designer/includes/indigo2_md.md)] construit à l'aide d'activités de workflow. La sélection de cet élément ajoute les mêmes fichiers au projet que ceux obtenus lors de la sélection du modèle d' **application de service de workflow WCF** pour un nouveau projet. Pour plus d’informations sur cette procédure, consultez [Comment : créer une application de service de flux de travail WCF](creating-a-workflow-project.md). |
 
 ## <a name="to-add-a-new-item-to-a-workflow-project"></a>Pour ajouter un nouvel élément à un projet de workflow
 

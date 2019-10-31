@@ -1,5 +1,5 @@
 ---
-title: Création. Fichiers VSCT | Microsoft Docs
+title: Création. Fichiers vsct | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,29 +10,29 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f871cfce2fd3e26895d690b1f51ee38461493810
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 82960de02c43a7c4002e189d573a914bb2a73f20
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66315804"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73186656"
 ---
-# <a name="author-vsct-files"></a>Fichiers .vsct auteur
-Ce document montre comment créer un *.vsct* fichier à ajouter des éléments de menu, les barres d’outils et les autres éléments d’interface (UI) à l’environnement de développement intégré (IDE) Visual Studio. Utilisez ces étapes lorsque vous ajoutez des éléments d’interface utilisateur à un package Visual Studio (VSPackage) qui n’a pas déjà un *.vsct* fichier.
+# <a name="author-vsct-files"></a>Fichiers Author. vsct
+Ce document montre comment créer un fichier *. vsct* pour ajouter des éléments de menu, des barres d’outils et d’autres éléments d’interface utilisateur à l’environnement de développement intégré (IDE) de Visual Studio. Utilisez ces étapes Lorsque vous ajoutez des éléments d’interface utilisateur à un package Visual Studio (VSPackage) qui n’a pas encore de fichier *. vsct* .
 
- Pour les nouveaux projets, nous vous recommandons d’utiliser le modèle de package Visual Studio, car il génère un *.vsct* fichier, en fonction de vos sélections, a déjà les éléments requis pour une commande de menu, une fenêtre outil ou un éditeur personnalisé . Vous pouvez modifier ce *.vsct* fichier pour satisfaire les besoins de votre VSPackage. Pour plus d’informations sur comment modifier un *.vsct* de fichiers, consultez les exemples dans [étendre des menus et commandes](../../extensibility/extending-menus-and-commands.md).
+ Pour les nouveaux projets, nous vous recommandons d’utiliser le modèle de package Visual Studio, car il génère un fichier *. vsct* qui, selon vos sélections, contient déjà les éléments requis pour une commande de menu, une fenêtre outil ou un éditeur personnalisé. Vous pouvez modifier ce fichier *. vsct* pour répondre aux exigences de votre VSPackage. Pour plus d’informations sur la modification d’un fichier *. vsct* , consultez les exemples dans [étendre les menus et les commandes](../../extensibility/extending-menus-and-commands.md).
 
-## <a name="author-the-file"></a>Créez le fichier
- Auteur un *.vsct* fichier dans ces phases : Créer la structure des fichiers de ressources, déclarer les éléments d’interface utilisateur, placer les éléments d’interface utilisateur dans l’IDE et ajouter tout comportement spécialisé.
+## <a name="author-the-file"></a>Créer le fichier
+ Créez un fichier *. vsct* dans ces phases : créez la structure des fichiers et des ressources, déclarez les éléments d’interface utilisateur, placez les éléments d’interface utilisateur dans l’IDE et ajoutez des comportements spécialisés.
 
-### <a name="file-structure"></a>Structure de fichiers
- La structure de base d’un *.vsct* fichier est un [CommandTable](../../extensibility/commandtable-element.md) élément racine qui contient un [commandes](../../extensibility/commands-element.md) élément et un [symboles](../../extensibility/symbols-element.md) élément.
+### <a name="file-structure"></a>Structure de fichier
+ La structure de base d’un fichier *. vsct* est un élément racine [CommandTable](../../extensibility/commandtable-element.md) qui contient un élément [Commands](../../extensibility/commands-element.md) et un élément [Symbols](../../extensibility/symbols-element.md) .
 
 #### <a name="to-create-the-file-structure"></a>Pour créer la structure de fichiers
 
-1. Ajouter un *.vsct* fichier à votre projet en suivant les étapes décrites dans [Comment : Créer un fichier .vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md).
+1. Ajoutez un fichier *. vsct* à votre projet en suivant les étapes décrites dans [Comment : créer un fichier. vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md).
 
-2. Ajouter des espaces de noms obligatoires à la `CommandTable` élément, comme indiqué dans l’exemple suivant :
+2. Ajoutez les espaces de noms requis à l’élément `CommandTable`, comme indiqué dans l’exemple suivant :
 
     ```xml
     <CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable"
@@ -40,118 +40,118 @@ Ce document montre comment créer un *.vsct* fichier à ajouter des éléments d
 
     ```
 
-3. Dans le `CommandTable` élément, ajoutez un `Commands` élément pour héberger tous vos menus personnalisés, les barres d’outils, les groupes de commandes et les commandes. Pour que vos éléments d’interface utilisateur personnalisés peuvent charger, le `Commands` élément doit avoir son `Package` attribut défini sur le nom du package.
+3. Dans l’élément `CommandTable`, ajoutez un élément `Commands` pour héberger tous vos menus, barres d’outils, groupes de commandes et commandes personnalisés. Pour que vos éléments d’interface utilisateur personnalisés puissent être chargés, l’attribut `Package` de l’élément `Commands` doit être défini sur le nom du package.
 
-     Après le `Commands` élément, ajoutez un `Symbols` élément à définir les GUID pour le package et les noms et ID de commande pour vos éléments d’interface utilisateur.
+     Après l’élément `Commands`, ajoutez un élément `Symbols` pour définir les GUID du package, ainsi que les noms et les ID de commande de vos éléments d’interface utilisateur.
 
-### <a name="include-visual-studio-resources"></a>Inclure des ressources de Visual Studio
- Utilisez le [Extern](../../extensibility/extern-element.md) élément à accéder aux fichiers qui définissent les commandes de Visual Studio et les menus sont obligés de mettre les éléments d’interface utilisateur dans l’IDE. Si vous souhaitez utiliser les commandes définies en dehors de votre package, utilisez le [UsedCommands](../../extensibility/usedcommands-element.md) élément pour informer Visual Studio.
+### <a name="include-visual-studio-resources"></a>Inclure les ressources Visual Studio
+ Utilisez l’élément [extern](../../extensibility/extern-element.md) pour accéder aux fichiers qui définissent des commandes Visual Studio et aux menus requis pour placer vos éléments d’interface utilisateur dans l’IDE. Si vous utilisez des commandes définies en dehors de votre package, utilisez l’élément [UsedCommands](../../extensibility/usedcommands-element.md) pour informer Visual Studio.
 
-#### <a name="to-include-visual-studio-resources"></a>Inclure des ressources de Visual Studio
+#### <a name="to-include-visual-studio-resources"></a>Pour inclure des ressources Visual Studio
 
-1. En haut de la `CommandTable` élément, ajouter un `Extern` élément pour chaque fichier externe être référencé et définir le `href` nom à l’attribut du fichier. Vous pouvez référencer les fichiers d’en-tête suivants pour accéder aux ressources de Visual Studio :
+1. En haut de l’élément `CommandTable`, ajoutez un élément `Extern` pour chaque fichier externe à référencer et définissez l’attribut `href` sur le nom du fichier. Vous pouvez référencer les fichiers d’en-tête suivants pour accéder aux ressources Visual Studio :
 
-   - *Stdidcmd.h*: Définit des ID pour toutes les commandes exposées par Visual Studio.
+   - *Stdidcmd. h*: définit des ID pour toutes les commandes exposées par Visual Studio.
 
-   - *Vsshlids.h*: Contient les ID de commande de menus Visual Studio.
+   - *Vsshlids. h*: contient les ID de commande des menus Visual Studio.
 
-2. Si votre package appelle toutes les commandes qui sont définies par Visual Studio ou par d’autres packages, ajoutez un `UsedCommands` élément après le `Commands` élément. Remplir cet élément avec un [UsedCommand](../../extensibility/usedcommand-element.md) élément pour chaque commande que vous appelez c'est-à-dire ne fait pas partie de votre package. Définir le `guid` et `id` les attributs de la `UsedCommand` éléments aux valeurs GUID et l’ID des commandes à appeler.
+2. Si votre package appelle une commande définie par Visual Studio ou par d’autres packages, ajoutez un élément `UsedCommands` après l’élément `Commands`. Remplissez cet élément avec un élément [UsedCommand](../../extensibility/usedcommand-element.md) pour chaque commande que vous appelez et qui ne fait pas partie de votre package. Définissez les attributs `guid` et `id` des éléments `UsedCommand` sur les valeurs GUID et ID des commandes à appeler.
 
-   Pour plus d’informations sur la façon de trouver les commandes de GUID et ID de Visual Studio, consultez [commandes GUID et ID de Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md). Pour appeler des commandes à partir d’autres packages, utilisez le GUID et l’ID de la commande tel que défini dans le *.vsct* fichier pour ces packages.
+   Pour plus d’informations sur la recherche des GUID et des ID des commandes Visual Studio, consultez [GUID et ID des commandes Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md). Pour appeler des commandes à partir d’autres packages, utilisez le GUID et l’ID de la commande tels qu’ils sont définis dans le fichier *. vsct* pour ces packages.
 
 ### <a name="declare-ui-elements"></a>Déclarer des éléments d’interface utilisateur
- Déclarer tous les nouveaux éléments de l’interface utilisateur dans le `Symbols` section de la *.vsct* fichier.
+ Déclarez tous les nouveaux éléments d’interface utilisateur dans la section `Symbols` du fichier *. vsct* .
 
 #### <a name="to-declare-ui-elements"></a>Pour déclarer des éléments d’interface utilisateur
 
-1. Dans le `Symbols` élément, ajoutez trois [GuidSymbol](../../extensibility/guidsymbol-element.md) éléments. Chaque `GuidSymbol` élément a un `name` attribut et un `value` attribut. Définir le `name` afin qu’il reflète l’objectif de l’élément d’attribut. Le `value` attribut accepte un GUID. (Pour générer un GUID, sur le **outils** menu, sélectionnez **créer un GUID**, puis sélectionnez **Format du Registre**.)
+1. Dans l’élément `Symbols`, ajoutez trois éléments [GuidSymbol](../../extensibility/guidsymbol-element.md) . Chaque élément `GuidSymbol` a un attribut `name` et un attribut `value`. Définissez l’attribut `name` pour qu’il reflète l’objectif de l’élément. L’attribut `value` prend un GUID. (Pour générer un GUID, dans le menu **Outils** , sélectionnez **créer un GUID**, puis sélectionnez le **format du Registre**.)
 
-     Le premier `GuidSymbol` élément représente votre package et a généralement pas d’enfants. La seconde `GuidSymbol` élément représente la commande définie et contient tous les symboles qui définissent des menus, des groupes et des commandes. La troisième `GuidSymbol` élément représente votre magasin d’images et contient des symboles pour toutes les icônes pour vos commandes. Si vous n’avez aucuns commandes qui utilisent des icônes, vous pouvez omettre le troisième `GuidSymbol` élément.
+     Le premier élément `GuidSymbol` représente votre package et n’a généralement aucun enfant. Le deuxième élément `GuidSymbol` représente le jeu de commandes et contient tous les symboles qui définissent vos menus, groupes et commandes. Le troisième élément `GuidSymbol` représente votre magasin d’images et contient des symboles pour toutes les icônes de vos commandes. Si vous n’avez aucune commande qui utilise des icônes, vous pouvez omettre le troisième élément `GuidSymbol`.
 
-2. Dans le `GuidSymbol` élément qui représente votre jeu de commandes, ajoutez un ou plusieurs [IDSymbol](../../extensibility/idsymbol-element.md) éléments. Chacune de ces représentent un menu, une barre d’outils, un groupe ou une commande que vous ajoutez à l’interface utilisateur.
+2. Dans l’élément `GuidSymbol` qui représente votre jeu de commandes, ajoutez un ou plusieurs éléments [IDSymbol](../../extensibility/idsymbol-element.md) . Chacun d’eux représente un menu, une barre d’outils, un groupe ou une commande que vous ajoutez à l’interface utilisateur.
 
-     Pour chaque `IDSymbol` élément, définissez la `name` nom à l’attribut vous permet de faire référence au menu correspondant, du groupe ou de la commande et puis définissez la `value` élément à un nombre hexadécimal qui représente son ID de commande. Aucun deux `IDSymbol` éléments qui ont le même parent peuvent avoir la même valeur.
+     Pour chaque élément `IDSymbol`, affectez à l’attribut `name` le nom que vous utiliserez pour faire référence au menu, au groupe ou à la commande correspondant, puis définissez l’élément `value` sur un nombre hexadécimal qui représente son ID de commande. Deux `IDSymbol` éléments ayant le même parent peuvent avoir la même valeur.
 
-3. Si un de vos éléments d’interface utilisateur requiert des icônes, ajoutez un `IDSymbol` élément pour chaque icône sur le `GuidSymbol` élément qui représente votre magasin d’images.
+3. Si l’un de vos éléments d’interface utilisateur requiert des icônes, ajoutez un élément `IDSymbol` pour chaque icône à l’élément `GuidSymbol` qui représente votre magasin d’images.
 
 ### <a name="put-ui-elements-in-the-ide"></a>Placer des éléments d’interface utilisateur dans l’IDE
- Le [Menus](../../extensibility/menus-element.md), [groupes](../../extensibility/groups-element.md), et [boutons](../../extensibility/buttons-element.md) éléments contiennent les définitions de tous les menus, les groupes et les commandes qui sont définis dans votre package. Placez ces menus, les groupes et les commandes dans l’IDE en utilisant un [Parent](../../extensibility/parent-element.md) élément, qui fait partie de la définition d’élément de l’interface utilisateur, ou en utilisant un [CommandPlacement](../../extensibility/commandplacement-element.md) élément qui est défini ailleurs.
+ Les éléments [menus](../../extensibility/menus-element.md), [groupes](../../extensibility/groups-element.md)et [boutons](../../extensibility/buttons-element.md) contiennent les définitions de tous les menus, groupes et commandes définis dans votre package. Placez ces menus, groupes et commandes dans l’IDE à l’aide d’un élément [parent](../../extensibility/parent-element.md) , qui fait partie de la définition de l’élément d’interface utilisateur, ou à l’aide d’un élément [commandplacement ayant](../../extensibility/commandplacement-element.md) défini ailleurs.
 
- Chaque `Menu`, `Group`, et `Button` élément a un `guid` attribut et un `id` attribut. Toujours défini le `guid` attribut à faire correspondre le nom de la `GuidSymbol` élément qui représente votre commande de définir et de définir le `id` nom à l’attribut de la `IDSymbol` élément qui représente votre menu, groupe ou une commande dans le `Symbols`section.
+ Chaque élément `Menu`, `Group`et `Button` a un attribut `guid` et un attribut `id`. Définissez toujours l’attribut `guid` pour qu’il corresponde au nom de l’élément `GuidSymbol` qui représente votre jeu de commandes, et définissez l’attribut `id` sur le nom de l’élément `IDSymbol` qui représente votre menu, groupe ou commande dans la section `Symbols`.
 
-#### <a name="to-define-ui-elements"></a>Pour définir les éléments d’interface utilisateur
+#### <a name="to-define-ui-elements"></a>Pour définir des éléments d’interface utilisateur
 
-1. Si vous définissez les nouveaux menus, sous-menus, menus contextuels ou barres d’outils, ajoutez un `Menus` élément à la `Commands` élément. Ensuite, pour chaque menu doit être créé, ajoutez un [Menu](../../extensibility/menu-element.md) élément à la `Menus` élément.
+1. Si vous définissez des menus, des sous-menus, des menus contextuels ou des barres d’outils nouveaux, ajoutez un élément `Menus` à l’élément `Commands`. Ensuite, pour chaque menu à créer, ajoutez un élément de [menu](../../extensibility/menu-element.md) à l’élément `Menus`.
 
-    Définir le `guid` et `id` attributs de la `Menu` élément, puis définissez le `type` attribut au type de menu de votre choix. Vous pouvez également définir le `priority` attribut pour établir la position relative du menu dans le groupe parent.
+    Définissez les attributs `guid` et `id` de l’élément `Menu`, puis définissez l’attribut `type` sur le type de menu souhaité. Vous pouvez également définir l’attribut `priority` pour établir la position relative du menu dans le groupe parent.
 
    > [!NOTE]
-   > Le `priority` attribut ne s’applique pas aux barres d’outils et des menus contextuels.
+   > L’attribut `priority` ne s’applique pas aux barres d’outils et aux menus contextuels.
 
-2. Toutes les commandes dans l’IDE Visual Studio doivent être hébergés par les groupes de commandes, qui sont les enfants directs de menus et barres d’outils. Si vous ajoutez des nouveaux menus ou barres d’outils à l’IDE, il doivent contenir nouveaux groupes de commandes. Vous pouvez également ajouter des groupes de commandes aux menus et aux barres d’outils existant afin que vous pouvez regrouper visuellement vos commandes.
+2. Toutes les commandes de l’IDE de Visual Studio doivent être hébergées par des groupes de commandes, qui sont les enfants directs des menus et des barres d’outils. Si vous ajoutez de nouveaux menus ou barres d’outils à l’IDE, ceux-ci doivent contenir de nouveaux groupes de commandes. Vous pouvez également ajouter des groupes de commandes à des menus et des barres d’outils existants afin de pouvoir regrouper visuellement vos commandes.
 
-    Lorsque vous ajoutez de nouveaux groupes de commandes, vous devez d’abord créer un `Groups` élément, puis ajoutez à ce dernier un [groupe](../../extensibility/group-element.md) élément pour chaque groupe de commandes.
+    Lorsque vous ajoutez de nouveaux groupes de commandes, vous devez d’abord créer un élément `Groups`, puis y ajouter un élément [Group](../../extensibility/group-element.md) pour chaque groupe de commandes.
 
-    Définir le `guid` et `id` attributs de chaque `Group` élément, puis définissez le `priority` attribut pour établir la position relative du groupe dans le menu parent. Pour plus d’informations, consultez [créer des groupes de boutons réutilisables](../../extensibility/creating-reusable-groups-of-buttons.md).
+    Définissez les attributs `guid` et `id` de chaque élément `Group`, puis définissez l’attribut `priority` pour établir la position relative du groupe dans le menu parent. Pour plus d’informations, consultez [créer des groupes de boutons réutilisables](../../extensibility/creating-reusable-groups-of-buttons.md).
 
-3. Si vous ajoutez les nouvelles commandes à l’IDE, ajouter un `Buttons` élément à la `Commands` élément. Ensuite, pour chaque commande, ajoutez un [bouton](../../extensibility/button-element.md) élément à la `Buttons` élément.
+3. Si vous ajoutez de nouvelles commandes à l’IDE, ajoutez un élément `Buttons` à l’élément `Commands`. Ensuite, pour chaque commande, ajoutez un élément [Button](../../extensibility/button-element.md) à l’élément `Buttons`.
 
-   1. Définir le `guid` et `id` attributs de chaque `Button` élément, puis définissez la `type` le type de bouton que vous souhaitez que l’attribut. Vous pouvez également définir le `priority` attribut pour établir la position relative de la commande dans le groupe parent.
-
-       > [!NOTE]
-       > Utilisez `type="button"` pour les commandes de menu standard et des boutons des barres d’outils.
-
-   2. Dans le `Button` élément, ajoutez un [chaînes](../../extensibility/strings-element.md) élément contenant un [ButtonText](../../extensibility/buttontext-element.md) élément et un [CommandName](../../extensibility/commandname-element.md) élément. Le `ButtonText` élément fournit l’étiquette de texte pour un élément de menu ou de l’info-bulle pour un bouton de barre d’outils. Le `CommandName` élément fournit le nom de la commande à utiliser dans la commande.
-
-   3. Si votre commande aura une icône, créez un [icône](../../extensibility/icon-element.md) élément dans le `Button` élément et définissez son `guid` et `id` des attributs pour le `Bitmap` élément pour l’icône.
+   1. Définissez les attributs `guid` et `id` de chaque élément `Button`, puis définissez l’attribut `type` sur le type de bouton souhaité. Vous pouvez également définir l’attribut `priority` pour établir la position relative de la commande dans le groupe parent.
 
        > [!NOTE]
-       > Boutons de barre d’outils doivent avoir des icônes.
+       > Utilisez `type="button"` pour les commandes de menu standard et les boutons des barres d’outils.
 
-   Pour plus d’informations, consultez [MenuCommands et. OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md).
+   2. Dans l’élément `Button`, ajoutez un élément [Strings](../../extensibility/strings-element.md) contenant un élément [ButtonText](../../extensibility/buttontext-element.md) et un élément [CommandName](../../extensibility/commandname-element.md) . L’élément `ButtonText` fournit l’étiquette de texte pour un élément de menu, ou l’info-bulle pour un bouton de barre d’outils. L’élément `CommandName` fournit le nom de la commande à utiliser dans la commande.
 
-4. Si vos commandes nécessitent des icônes, ajoutez un [Bitmaps](../../extensibility/bitmaps-element.md) élément à la `Commands` élément. Ensuite, pour chaque icône, ajoutez un [Bitmap](../../extensibility/bitmap-element.md) élément à la `Bitmaps` élément. Voici où vous spécifiez l’emplacement de la ressource bitmap. Pour plus d’informations, consultez [ajouter des icônes aux commandes de menu](../../extensibility/adding-icons-to-menu-commands.md).
+   3. Si votre commande a une icône, créez un élément [Icon](../../extensibility/icon-element.md) dans l’élément `Button` et affectez à ses attributs `guid` et `id` la valeur de l’élément `Bitmap` pour l’icône.
 
-   Vous pouvez vous appuyer sur la structure parentage placer correctement la plupart des menus, des groupes et des commandes. Pour les jeux de commandes très volumineux, ou quand un menu, un groupe ou une commande doit apparaître à plusieurs endroits, nous vous recommandons de spécifier placement de commande.
+       > [!NOTE]
+       > Les boutons de la barre d’outils doivent avoir des icônes.
 
-#### <a name="to-rely-on-parenting-to-place-ui-elements-in-the-ide"></a>S’appuyer sur le parentage pour placer des éléments d’interface utilisateur dans l’IDE
+   Pour plus d’informations, consultez [MenuCommands et OleMenuCommands](/visualstudio/extensibility/menucommands-vs-olemenucommands?view=vs-2015).
 
-1. Pour le parentage typique, créez un `Parent` élément dans chaque `Menu`, `Group`, et `Command` élément qui est défini dans votre package.
+4. Si l’une de vos commandes nécessite des icônes, ajoutez un élément [bitmaps](../../extensibility/bitmaps-element.md) à l’élément `Commands`. Puis, pour chaque icône, ajoutez un élément [bitmap](../../extensibility/bitmap-element.md) à l’élément `Bitmaps`. C’est ici que vous spécifiez l’emplacement de la ressource bitmap. Pour plus d’informations, consultez [Ajouter des icônes à des commandes de menu](../../extensibility/adding-icons-to-menu-commands.md).
 
-    La cible de la `Parent` élément est le menu ou un groupe qui contiendra le menu, un groupe ou une commande.
+   Vous pouvez vous appuyer sur la structure de parente pour placer correctement la plupart des menus, groupes et commandes. Pour les jeux de commandes de très grande taille, ou lorsqu’un menu, un groupe ou une commande doit apparaître à plusieurs emplacements, nous vous recommandons de spécifier le placement de la commande.
 
-   1. Définir le `guid` nom à l’attribut de la `GuidSymbol` élément qui définit le jeu de commandes. Si l’élément cible ne fait pas partie de votre package, utilisez le guid pour ce jeu de commandes, comme défini dans le correspondantes *.vsct* fichier.
+#### <a name="to-rely-on-parenting-to-place-ui-elements-in-the-ide"></a>Pour s’appuyer sur le parent pour placer des éléments d’interface utilisateur dans l’IDE
 
-   2. Définir le `id` attribut à faire correspondre le `id` attribut du menu de la cible ou du groupe. Pour obtenir la liste des menus et des groupes qui sont exposées par Visual Studio, consultez [menus GUID et ID de Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) ou [barres d’outils de GUID et ID de Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md).
+1. Pour un parent classique, créez un élément `Parent` dans chaque `Menu`, `Group`et `Command` élément défini dans votre package.
 
-   Si vous avez un grand nombre d’éléments d’interface utilisateur à placer dans l’IDE, ou si vous avez des éléments qui doivent apparaître à plusieurs endroits, définir leurs placements dans le [CommandPlacements](../../extensibility/commandplacements-element.md) élément, comme indiqué dans les étapes suivantes.
+    La cible de l’élément `Parent` est le menu ou le groupe qui contiendra le menu, le groupe ou la commande.
 
-#### <a name="to-use-command-placement-to-place-ui-elements-in-the-ide"></a>Placement de commande permet de placer des éléments d’interface utilisateur dans l’IDE
+   1. Affectez à l’attribut `guid` le nom de l’élément `GuidSymbol` qui définit le jeu de commandes. Si l’élément cible ne fait pas partie de votre package, utilisez le GUID de ce jeu de commandes, tel que défini dans le fichier *. vsct* correspondant.
 
-1. Après le `Commands` élément, ajoutez un `CommandPlacements` élément.
+   2. Définissez l’attribut `id` pour qu’il corresponde à l’attribut `id` du menu ou du groupe cible. Pour obtenir la liste des menus et des groupes exposés par Visual Studio, consultez [GUID et ID des menus](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) ou GUIDs Visual Studio [et ID des barres d’outils de Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md).
 
-2. Dans le `CommandPlacements` élément, ajoutez un `CommandPlacement` élément pour chaque menu, un groupe ou une commande à placer.
+   Si vous avez un grand nombre d’éléments d’interface utilisateur à placer dans l’IDE, ou si vous avez des éléments qui doivent apparaître à plusieurs emplacements, définissez leurs emplacements dans l’élément [CommandPlacements](../../extensibility/commandplacements-element.md) , comme indiqué dans les étapes suivantes.
 
-    Chaque `CommandPlacement` élément ou `Parent` élément place un menu, groupe ou commande dans un emplacement de l’IDE. Un élément d’interface utilisateur peut avoir uniquement un seul parent, mais il peut avoir plusieurs placements de commandes. Pour placer un élément d’interface utilisateur dans plusieurs emplacements, ajouter un `CommandPlacement` élément pour chaque emplacement.
+#### <a name="to-use-command-placement-to-place-ui-elements-in-the-ide"></a>Pour utiliser le positionnement de commande pour placer des éléments d’interface utilisateur dans l’IDE
 
-3. Définir le `guid` et `id` attributs de chaque `CommandPlacement` élément au menu hébergement ou au groupe, tout comme vous le feriez pour un `Parent` élément. Vous pouvez également définir le `priority` attribut pour établir la position relative de l’élément d’interface utilisateur.
+1. Après l’élément `Commands`, ajoutez un élément `CommandPlacements`.
 
-   Vous pouvez combiner le positionnement par parentage et commande. Toutefois, pour les jeux de commandes très volumineux, nous vous recommandons d’utiliser uniquement les placement de commande.
+2. Dans l’élément `CommandPlacements`, ajoutez un élément `CommandPlacement` pour chaque menu, groupe ou commande à placer.
+
+    Chaque élément `CommandPlacement` ou `Parent` place un menu, un groupe ou une commande dans un emplacement IDE. Un élément d’interface utilisateur ne peut avoir qu’un seul parent, mais il peut avoir plusieurs placements de commande. Pour placer un élément d’interface utilisateur à plusieurs emplacements, ajoutez un élément `CommandPlacement` pour chaque emplacement.
+
+3. Définissez les attributs `guid` et `id` de chaque élément `CommandPlacement` sur le groupe ou le menu d’hébergement, comme vous le feriez pour un élément `Parent`. Vous pouvez également définir l’attribut `priority` pour établir la position relative de l’élément d’interface utilisateur.
+
+   Vous pouvez mélanger l’emplacement par le biais du parent et de l’emplacement des commandes. Toutefois, pour les jeux de commandes de très grande taille, nous vous recommandons d’utiliser uniquement le placement de commande.
 
 ### <a name="add-specialized-behaviors"></a>Ajouter des comportements spécialisés
- Vous pouvez utiliser la [CommandFlag](../../extensibility/command-flag-element.md) élément pour modifier le comportement des menus et commandes, par exemple, pour modifier leur apparence et leur visibilité. Vous pouvez également changer lorsqu’une commande est visible à l’aide de la [VisibilityConstraints](../../extensibility/visibilityconstraints-element.md) élément, ou ajouter des raccourcis clavier à l’aide de la [KeyBindings](../../extensibility/keybindings-element.md) élément. Certains types de menus et commandes déjà avaient spécialisé comportements intégrés.
+ Vous pouvez utiliser l’élément [CommandFlag](../../extensibility/command-flag-element.md) pour modifier le comportement des menus et des commandes, par exemple, pour modifier leur apparence et leur visibilité. Vous pouvez également avoir une incidence sur l’affichage d’une commande à l’aide de l’élément [VisibilityConstraints](../../extensibility/visibilityconstraints-element.md) , ou ajouter des raccourcis clavier à l’aide de l’élément [KeyBindings](../../extensibility/keybindings-element.md) . Certains types de menus et de commandes ont déjà des comportements spécialisés intégrés.
 
 #### <a name="to-add-specialized-behaviors"></a>Pour ajouter des comportements spécialisés
 
 1. Pour rendre un élément d’interface utilisateur visible uniquement dans certains contextes d’interface utilisateur, par exemple, quand une solution est chargée, utilisez des contraintes de visibilité.
 
-   1. Après le `Commands` élément, ajoutez un `VisibilityConstraints` élément.
+   1. Après l’élément `Commands`, ajoutez un élément `VisibilityConstraints`.
 
-   2. Pour chaque élément d’interface utilisateur limiter, ajoutez un [VisibilityItem](../../extensibility/visibilityitem-element.md) élément.
+   2. Pour chaque élément d’interface utilisateur à contraindre, ajoutez un élément [VisibilityItem](../../extensibility/visibilityitem-element.md) .
 
-   3. Pour chaque `VisibilityItem` élément, définissez la `guid` et `id` attributs pour le menu, groupe, ou commande, puis définissez le `context` d’attribut pour le contexte de l’interface utilisateur que vous le souhaitez, tel que défini dans le <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> classe.
+   3. Pour chaque élément `VisibilityItem`, définissez les attributs `guid` et `id` sur le menu, le groupe ou la commande, puis définissez l’attribut `context` sur le contexte d’interface utilisateur de votre choix, tel que défini dans la classe <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80>.
 
-2. Pour définir la visibilité ou la disponibilité d’un élément d’interface utilisateur dans le code, utilisez une ou plusieurs des indicateurs de commande suivants :
+2. Pour définir la visibilité ou la disponibilité d’un élément d’interface utilisateur dans le code, utilisez un ou plusieurs des indicateurs de commande suivants :
 
    - `DefaultDisabled`
 
@@ -165,9 +165,9 @@ Ce document montre comment créer un *.vsct* fichier à ajouter des éléments d
 
    - `NotInTBList`
 
-   Pour plus d’informations, consultez le [CommandFlag](../../extensibility/command-flag-element.md) élément.
+   Pour plus d’informations, consultez l’élément [CommandFlag](../../extensibility/command-flag-element.md) .
 
-3. Pour modifier la façon dont un élément s’affiche, ou modifier son apparence dynamiquement, utilisez une ou plusieurs des indicateurs de commande suivants :
+3. Pour modifier le mode d’affichage d’un élément ou modifier son apparence de manière dynamique, utilisez un ou plusieurs des indicateurs de commande suivants :
 
    - `AlwaysCreate`
 
@@ -193,9 +193,9 @@ Ce document montre comment créer un *.vsct* fichier à ajouter des éléments d
 
    - `TextOnly`
 
-   Pour plus d’informations, consultez le [CommandFlag](../../extensibility/command-flag-element.md) élément.
+   Pour plus d’informations, consultez l’élément [CommandFlag](../../extensibility/command-flag-element.md) .
 
-4. Pour modifier la façon dont un élément réagit lorsqu’il reçoit des commandes, utilisez une ou plusieurs des indicateurs de commande suivants :
+4. Pour modifier la façon dont un élément réagit lorsqu’il reçoit des commandes, utilisez un ou plusieurs des indicateurs de commande suivants :
 
    - `AllowParams`
 
@@ -219,21 +219,21 @@ Ce document montre comment créer un *.vsct* fichier à ajouter des éléments d
 
    - `TextIsAnchorCommand`
 
-   Pour plus d’informations, consultez le [CommandFlag](../../extensibility/command-flag-element.md) élément.
+   Pour plus d’informations, consultez l’élément [CommandFlag](../../extensibility/command-flag-element.md) .
 
-5. Pour attacher un raccourci clavier de dépendant du menu à un menu ou d’un élément dans un menu, ajoutez une esperluette (&) dans le `ButtonText` élément au menu ou un élément de menu. Le caractère qui suit l’et commercial est le raccourci clavier active quand le menu parent est ouvert.
+5. Pour attacher un raccourci clavier dépendant du menu à un menu ou à un élément d’un menu, ajoutez une esperluette (&) dans l’élément `ButtonText` pour le menu ou l’élément de menu. Le caractère qui suit l’esperluette est le raccourci clavier actif lorsque le menu parent est ouvert.
 
-6. Pour attacher un raccourci clavier d’indépendant du menu à une commande, utilisez le [KeyBindings](../../extensibility/keybindings-element.md) élément. Pour plus d’informations, consultez le [KeyBinding](../../extensibility/keybinding-element.md) élément.
+6. Pour attacher un raccourci clavier indépendant du menu à une commande, utilisez l’élément [KeyBindings](../../extensibility/keybindings-element.md) . Pour plus d’informations, consultez l’élément [KeyBinding](../../extensibility/keybinding-element.md) .
 
-7. Pour localiser le texte de menu, utilisez le `LocCanonicalName` élément. Pour plus d’informations, consultez le [chaînes](../../extensibility/strings-element.md) élément.
+7. Pour localiser le texte du menu, utilisez l’élément `LocCanonicalName`. Pour plus d’informations, consultez l’élément [Strings](../../extensibility/strings-element.md) .
 
-   Certains types de menu et le bouton inclure des comportements spécialisés. La liste suivante décrit certaines menu spécialisé et les types de bouton. Pour les autres types, consultez le `types` attribut descriptions dans le [Menu](../../extensibility/menu-element.md), [bouton](../../extensibility/button-element.md), et [liste déroulante](../../extensibility/combo-element.md) éléments.
+   Certains types de menu et de bouton incluent des comportements spécialisés. La liste suivante décrit quelques types de menu et de bouton spécialisés. Pour les autres types, consultez les descriptions d’attribut `types` dans le [menu](../../extensibility/menu-element.md), le [bouton](../../extensibility/button-element.md)et les éléments de [liste déroulante](../../extensibility/combo-element.md) .
 
-   - Zone de liste déroulante : Une zone de liste modifiable est une liste déroulante qui peut être utilisée sur une barre d’outils. Pour ajouter des zones de liste déroulante à l’interface utilisateur, créez un [Combos](../../extensibility/combos-element.md) élément dans le `Commands` élément. Puis ajouter à la `Combos` élément un `Combo` élément pour chaque zone de liste déroulante à ajouter. `Combo` éléments ont les mêmes attributs et enfants en tant que `Button` éléments et avoir également `DefaultWidth` et `idCommandList` attributs. Le `DefaultWidth` attribut définit la largeur en pixels et le `idCommandList` points d’attribut à un ID de commande qui est utilisé pour remplir la zone de liste déroulante.
+   - Zone de liste modifiable : une zone de liste déroulante est une liste déroulante qui peut être utilisée dans une barre d’outils. Pour ajouter des zones de liste déroulante à l’interface utilisateur, créez un élément [combos](../../extensibility/combos-element.md) dans l’élément `Commands`. Ajoutez ensuite à l’élément `Combos` un élément `Combo` pour chaque zone de liste déroulante à ajouter. `Combo` éléments ont les mêmes attributs et enfants que les éléments `Button` et ont également des attributs `DefaultWidth` et `idCommandList`. L’attribut `DefaultWidth` définit la largeur en pixels, et l’attribut `idCommandList` pointe sur un ID de commande utilisé pour remplir la zone de liste déroulante.
 
-   - Contrôleur de menu : Un contrôleur de menu est un bouton comportant une flèche en regard de celle-ci. Ouvre la liste en cliquant sur la flèche. Pour ajouter un contrôleur de menu à l’interface utilisateur, créez un `Menu` élément et définissez son `type` attribut `MenuController` ou `MenuControllerLatched`, selon le comportement souhaité. Pour remplir un contrôleur de menu, définissez-le comme le parent d’un `Group` élément. Le contrôleur de menu affiche tous les enfants de ce groupe sur sa liste déroulante.
+   - Contrôleur de menu : un contrôleur de menu est un bouton qui contient une flèche en regard de celui-ci. Cliquez sur la flèche pour ouvrir une liste. Pour ajouter un contrôleur de menu à l’interface utilisateur, créez un élément `Menu` et affectez à son attribut `type` la valeur `MenuController` ou `MenuControllerLatched`, selon le comportement souhaité. Pour remplir un contrôleur de menu, définissez-le en tant que parent d’un élément `Group`. Le contrôleur de menu affiche tous les enfants de ce groupe dans sa liste déroulante.
 
 ## <a name="see-also"></a>Voir aussi
-- [Étendre des menus et commandes](../../extensibility/extending-menus-and-commands.md)
-- [Visual Studio fichiers command table (.vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Étendre des menus et des commandes](../../extensibility/extending-menus-and-commands.md)
+- [Fichiers de table de commandes Visual Studio (. vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [Référence du schéma XML VSCT](../../extensibility/vsct-xml-schema-reference.md)

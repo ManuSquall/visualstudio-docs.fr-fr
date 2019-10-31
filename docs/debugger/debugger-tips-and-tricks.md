@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70276b8ba4efb08b0a6a57dc48716bd608f0429a
-ms.sourcegitcommit: bdccab4c2dbd50ea8adaaf88c69c9ca32db88099
-ms.translationtype: HT
+ms.openlocfilehash: bf8d6df020694bb10fe4f3f051551056549d5673
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73144744"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188620"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Découvrez des trucs et astuces de productivité pour le débogueur dans Visual Studio
 
@@ -41,7 +41,7 @@ Pour plus d’informations sur l’utilisation de la fonctionnalité et sur les 
 
 ## <a name="edit-xaml-code-and-continue-debugging"></a>Modifier le code XAML et continuer le débogage
 
-Pour modifier le code XAML pendant une session de débogage, consultez [écrire et déboguer du code XAML en cours d’exécution avec le rechargement à chaud XAML](xaml-hot-reload.md).
+Pour modifier le code XAML pendant une session de débogage, consultez [écrire et déboguer du code XAML en cours d’exécution avec le rechargement à chaud XAML](../xaml-tools/xaml-hot-reload.md).
 
 ## <a name="debug-issues-that-are-hard-to-reproduce"></a>Problèmes de débogage difficiles à reproduire
 

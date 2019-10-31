@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae62a380e4e0feb23a901a4fc6a2628fcd8c6a0c
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 0bf8cbcc699f015cae954400744d9bd724d70c57
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72734927"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187914"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Vue d'ensemble de Visual Studio Graphics Diagnostics
 Visual Studio *Graphics Diagnostics* est un ensemble d’outils pour l’enregistrement, puis l’analyse des problèmes de rendu et de performances des applications Direct3D. Graphics Diagnostics peut être utilisé sur des applications qui s’exécutent localement sur votre PC Windows ou sur un PC ou un appareil distant.
@@ -52,7 +52,7 @@ Visual Studio *Graphics Diagnostics* est un ensemble d’outils pour l’enregis
 ### <a name="gpu-usage"></a>Utilisation du GPU
  Graphics Diagnostics peut également profiler les performances de votre application Direct3D. Comme le profilage des données est altéré par l'enregistrement des détails relatifs aux événements graphiques, cette opération est distincte de la capture de frame à examiner à l'aide de Graphics Analyzer.
 
- Pour plus d’informations, consultez [Utilisation du GPU](/visualstudio/profiling/gpu-usage).
+ Pour plus d’informations, consultez [Utilisation du GPU](../../profiling/gpu-usage.md).
 
 ### <a name="directx-control-panel"></a>Panneau de configuration DirectX
  Le panneau de configuration DirectX est un composant DirectX que vous pouvez utiliser pour modifier la manière dont DirectX se comporte (par exemple, vous pouvez activer la version de débogage des composants d’exécution DirectX, sélectionner le type de messages de débogage qui sont stockés, et désactiver certaines fonctionnalités du matériel graphique utilisées pour émuler le matériel ayant des capacités moindres). Ce niveau de contrôle sur DirectX peut vous aider à déboguer et à tester votre application DirectX. Vous pouvez accéder au panneau de configuration DirectX à partir de Visual Studio.

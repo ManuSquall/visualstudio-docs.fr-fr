@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d53df0bc83e2068488c8a7c919f8b76258ad827
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c1c18ec84a6a62da6cd564c69ef4b83ea76bcfd6
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72728384"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187150"
 ---
 # <a name="visualizer-security-considerations"></a>Considérations sur la sécurité du visualiseur
 L'écriture d'un visualiseur implique d'éventuelles menaces pour la sécurité. Aucune attaque connue n'a été répertoriée concernant ces menaces potentielles, mais les développeurs doivent en être informés et prendre les précautions de sécurité appropriées, tel qu'indiqué ici, pour se protéger contre de futures attaques.
@@ -39,6 +39,6 @@ L'écriture d'un visualiseur implique d'éventuelles menaces pour la sécurité.
 
 ## <a name="see-also"></a>Voir aussi
 - [Architecture d’un visualiseur](../debugger/visualizer-architecture.md)
-- [Guide pratique pour écrire un visualiseur](/visualstudio/debugger/create-custom-visualizers-of-data)
+- [Guide pratique pour écrire un visualiseur](create-custom-visualizers-of-data.md)
 - [Créer des visualiseurs personnalisés](../debugger/create-custom-visualizers-of-data.md)
 - [Affichage des données dans le débogueur](../debugger/viewing-data-in-the-debugger.md)
