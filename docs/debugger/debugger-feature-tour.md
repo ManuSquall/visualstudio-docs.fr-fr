@@ -1,9 +1,9 @@
 ---
 title: Présentation du débogueur
 description: Bien démarrer avec le débogage d’applications en utilisant le débogueur Visual Studio
-ms.custom: seoapril2019
+ms.custom: ''
 ms.date: 04/08/2019
-ms.topic: quickstart
+ms.topic: conceptual
 helpviewer_keywords:
 - debugger
 ms.assetid: c763d706-3213-494f-b4d2-990b6e1ec456
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 249b8aa88b11643ed0b353df25bef3a054ef5e55
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
-ms.translationtype: MT
+ms.openlocfilehash: 40b7a097f0544459083b5217e6ad97f2b3f31bfa
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "70987791"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911638"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Premier aperçu du débogueur Visual Studio
 
@@ -31,9 +31,9 @@ Pour déboguer, vous devez démarrer votre application avec le débogueur attach
 
 Si vous avez un fichier ouvert dans l’éditeur de code, vous pouvez définir un point d’arrêt en cliquant dans la marge à gauche d’une ligne de code.
 
-![Définir un point d’arrêt](../debugger/media/dbg-tour-set-a-breakpoint.gif "Définir un point d’arrêt")
+![Définir un point d’arrêt](../debugger/media/dbg-tour-set-a-breakpoint.gif "Définir un point d'arrêt")
 
-Appuyez sur **F5** (**Déboguer > Démarrer le débogage**) ou sur le bouton **Démarrer le débogage** ![Démarrer le débogage](../debugger/media/dbg-tour-start-debugging.png "Démarrer le débogage ") dans la barre d’outils Débogage : le débogueur s’exécute jusqu’au premier point d’arrêt qu’il rencontre. Si l’application n’est pas déjà en cours d’exécution, F5 démarre le débogueur et s’arrête au premier point d’arrêt.
+Appuyez sur **F5** (**déboguer > Démarrer le débogage**) ou sur le bouton **Démarrer** le débogage ![Démarrer le débogage](../debugger/media/dbg-tour-start-debugging.png "Démarrer le débogage") dans la barre d’outils déboguer, et le débogueur s’exécute jusqu’au premier point d’arrêt qu’il rencontre. Si l’application n’est pas déjà en cours d’exécution, F5 démarre le débogueur et s’arrête au premier point d’arrêt.
 
 Les points d’arrêt sont une fonctionnalité pratique quand vous savez quelle ligne de code ou section de code vous voulez examiner en détail.
 
@@ -43,7 +43,7 @@ Nous fournissons les raccourcis clavier pour la plupart des commandes, car ils r
 
 Pour démarrer votre application avec le débogueur attaché, appuyez sur **F11** (**Déboguer > Pas à pas détaillé**). F11 est la commande **Pas à pas détaillé** : elle fait avancer l’exécution de l’application une instruction à la fois. Quand vous démarrez l’application avec F11, le débogueur s’arrête sur la première instruction exécutée.
 
-![F11 Pas à pas détaillé](../debugger/media/dbg-tour-f11.png "F11 Pas à pas détaillé")
+![F11 pas à pas détaillé](../debugger/media/dbg-tour-f11.png "F11 pas à pas détaillé")
 
 La flèche jaune représente l’instruction sur laquelle le débogueur s’est mis en pause, ce qui interrompt également l’exécution de l’application au même point (cette instruction n’a pas encore été exécutée).
 
@@ -72,7 +72,7 @@ Dans cet exemple, **Pas à pas détaillé spécifique** nous amène au code pour
 
 ## <a name="run-to-a-point-in-your-code-quickly-using-the-mouse"></a>Exécuter rapidement jusqu’à un point dans votre code avec la souris
 
-Dans le débogueur, placez le curseur sur une ligne de code jusqu’à ce que le bouton **Exécuter jusqu’au clic** (Exécuter l’exécution jusqu’ici) ![Exécuter jusqu’au clic](../debugger/media/dbg-tour-run-to-click.png "RunToClick") apparaisse à gauche.
+Dans le débogueur, placez le curseur sur une ligne de code jusqu’à ce que le bouton **exécuter pour cliquer** (exécuter l’exécution jusqu’ici) s’affiche ![à](../debugger/media/dbg-tour-run-to-click.png "RunToClick") gauche.
 
 ![Exécuter jusqu’au clic](../debugger/media/dbg-tour-run-to-click-2.png "Exécuter jusqu’au clic")
 
@@ -93,11 +93,11 @@ Cette commande reprend l’exécution de l’application (et fait avancer le dé
 
 ## <a name="run-to-cursor"></a>Exécuter jusqu'au curseur
 
-Arrêtez le débogueur en appuyant sur le bouton d’arrêt rouge **Arrêter le débogage**![Arrêter le débogage](../debugger/media/dbg-tour-stop-debugging.png "Arrêter le débogage") ou **Maj** + **F5**.
+Arrêtez le débogueur en appuyant sur le bouton **arrêter le débogage** rouge ![arrêter le débogage](../debugger/media/dbg-tour-stop-debugging.png "Activer les outils de diagnostic durant le débogage") ou **MAJ**  + **F5**.
 
 Cliquez avec le bouton droit sur une ligne de votre code d’application et choisissez **Exécuter jusqu’au curseur**. Cette commande démarre le débogage et définit un point d’arrêt temporaire sur la ligne de code active.
 
-![Exécuter jusqu’au curseur](../debugger/media/dbg-tour-run-to-cursor.png "Exécuter jusqu’au curseur")
+![Exécuter jusqu’au curseur](../debugger/media/dbg-tour-run-to-cursor.png "Exécuter jusqu'au curseur")
 
 Si vous avez défini des points d’arrêt, le débogueur se met en pause sur le premier point d’arrêt qu’il atteint.
 
@@ -110,11 +110,11 @@ Cette commande est pratique quand vous modifiez du code, et que vous voulez déf
 
 ## <a name="restart-your-app-quickly"></a>Redémarrer rapidement votre application
 
-Cliquez sur le bouton **Redémarrer** ![Redémarrer l’application](../debugger/media/dbg-tour-restart.png "Redémarrer l’application") dans la barre d’outils Débogage (**Ctrl+Maj+F5**).
+Cliquez sur le bouton **redémarrer** l' ![application de redémarrage](../debugger/media/dbg-tour-restart.png "Redémarrer l’application") dans la barre d’outils déboguer (**Ctrl + Maj + F5**).
 
 Quand vous appuyez sur **Redémarrer**, vous gagnez du temps par rapport à l’action consistant à arrêter l’application, puis à redémarrer le débogueur. Le débogueur se met en pause sur le premier point d’arrêt qui est atteint par l’exécution du code.
 
-Si vous voulez arrêter le débogueur et revenir à l’éditeur de code, vous pouvez appuyer sur le bouton d’arrêt rouge ![Arrêter le débogage](../debugger/media/dbg-tour-stop-debugging.png "Arrêter le débogage") au lieu de **Redémarrer**.
+Si vous ne souhaitez pas arrêter le débogueur et revenir à l’éditeur de code, vous pouvez appuyer sur le bouton rouge arrêter le ![débogage](../debugger/media/dbg-tour-stop-debugging.png "Activer les outils de diagnostic durant le débogage") au lieu de **redémarrer**.
 
 ## <a name="edit-your-code-and-continue-debugging-c-vb-c-xaml"></a>Modifier votre code et continuer le débogage (C#, VB, C++, XAML)
 
@@ -132,7 +132,7 @@ Maintenant que vous vous débrouillez un peu, vous pouvez commencer à examiner 
 
 Avec l’exécution en pause dans le débogueur, placez le curseur sur un objet avec la souris : vous voyez la valeur par défaut de sa propriété (dans cet exemple, le nom de fichier `market 031.jpg` est la valeur par défaut de la propriété).
 
-![Afficher un datatip](../debugger/media/dbg-tour-data-tips.gif "Afficher un datatip")
+![Afficher une bulle d’informations](../debugger/media/dbg-tour-data-tips.gif "Afficher une bulle d’informations")
 
 Développez l’objet pour voir toutes ses propriétés (comme la propriété `FullPath` dans cet exemple).
 
@@ -145,7 +145,7 @@ Souvent, lors du débogage, vous voulez un moyen rapide de vérifier les valeurs
 
 Pendant le débogage, examinez la fenêtre **Automatique** en bas de l’éditeur de code.
 
-![Fenêtre Automatique](../debugger/media/dbg-tour-autos-window.png "Fenêtre Automatique")
+![Fenêtre automatique](../debugger/media/dbg-tour-autos-window.png "Automatique (fenêtre)")
 
 Dans la fenêtre **Automatique**, vous voyez des variables, avec leur valeur actuelle et leur type. La fenêtre **Automatique** montre toutes les variables utilisées dans la ligne active ou la ligne précédente (en C++, la fenêtre montre les variables des trois lignes de code précédentes ; consultez la documentation pour les comportements selon le langage).
 
@@ -154,7 +154,7 @@ Dans la fenêtre **Automatique**, vous voyez des variables, avec leur valeur act
 
 Ensuite, examinez la fenêtre **Variables locales**. La fenêtre **Variables locales** vous montre les variables qui se trouvent actuellement dans l’étendue.
 
-![Fenêtre Variables locales](../debugger/media/dbg-tour-locals-window.png "Fenêtre Variables locales")
+![Fenêtre variables locales](../debugger/media/dbg-tour-locals-window.png "Fenêtre Variables locales")
 
 Dans cet exemple, l’objet `this` et l’objet `f` sont dans l’étendue. Pour plus d’informations, consultez [Inspecter les variables dans les fenêtres Automatique et Variables locales](../debugger/autos-and-locals-windows.md).
 
@@ -189,7 +189,7 @@ Vous pouvez également utiliser les menus contextuels de la fenêtre **Pile des 
 
 Quand votre application lève une exception, le débogueur vous amène à la ligne de code qui a levé cette exception.
 
-![Assistance sur l’exception](../debugger/media/dbg-tour-exception-helper.png "Assistance sur l’exception")
+![Assistance d’exception](../debugger/media/dbg-tour-exception-helper.png "Assistance d’exception")
 
 Dans cet exemple, **l’Assistance sur l’exception** vous montre une exception `System.Argument` et un message d’erreur indiquant que le chemin n’est pas d’une forme autorisée. Ainsi, nous savons que l’erreur s’est produite sur l’argument d’une méthode ou d’une fonction.
 
@@ -202,11 +202,19 @@ L’Assistance sur l’exception est une fonctionnalité intéressante qui peut 
 
 Développez le nœud **Paramètres d’exception** pour voir plus d’options sur la façon de gérer ce type d’exception ; dans le cadre de cette visite guidée, vous ne devez néanmoins rien changer !
 
+## <a name="configure-debugging"></a>Configurer le débogage
+
+Vous pouvez configurer votre projet pour qu’il soit généré comme une [configuration Debug ou Release](../debugger/how-to-set-debug-and-release-configurations.md), configurer des propriétés de projet pour le débogage ou configurer des [paramètres généraux pour le](../debugger/how-to-specify-debugger-settings.md) débogage. De plus, vous pouvez configurer le débogueur pour afficher des informations personnalisées à l’aide de fonctionnalités telles que l’attribut [DebuggerDisplay](using-the-debuggerdisplay-attribute.md) ou, pour C/C++, le [framework NatVis](create-custom-views-of-native-objects.md).
+
+Les propriétés de débogage sont spécifiques à chaque type de projet. Par exemple, vous pouvez spécifier un argument à passer à l’application lorsque vous la démarrez. Vous pouvez accéder aux propriétés spécifiques au projet en cliquant avec le bouton droit sur le projet dans Explorateur de solutions et en sélectionnant **Propriétés**. Les propriétés de débogage apparaissent généralement sous l’onglet **générer** ou **Déboguer** , en fonction du type de projet particulier.
+
+![Propriétés du projet](../debugger/media/dbg-tour-project-properties.png "Propriétés de projet")
+
 ## <a name="debug-live-aspnet-apps-in-azure-app-service"></a>Déboguer des applications ASP.NET en production dans Azure App Service
 
 Le **débogueur de capture instantanée** prend une capture instantanée de vos applications en production au moment de l’exécution du code qui vous intéresse. Pour indiquer au débogueur de prendre une capture instantanée, vous définissez des points d’ancrage et des points de journalisation dans votre code. Dans le débogueur, vous pouvez voir précisément à quel endroit le code ne s’est pas exécuté correctement, sans que cela impacte le trafic de votre application en production. Snapshot Debugger peut vous aider à résoudre beaucoup plus vite les problèmes rencontrés dans les environnements de production.
 
-![Lancer le débogueur de capture instantanée](../debugger/media/snapshot-launch.png "Lancer le débogueur de capture instantanée")
+![Lancer le débogueur de capture instantanée](../debugger/media/snapshot-launch.png "Lancer le Débogueur de capture instantanée")
 
 La collecte de captures instantanées est disponible pour les applications ASP.NET qui s’exécutent dans Azure App Service. Les applications ASP.NET doivent s’exécuter sur le .NET Framework 4.6.1 ou ultérieur, et les applications ASP.NET Core doivent s’exécuter sur .NET Core 2.0 ou ultérieur sur Windows.
 
@@ -218,7 +226,7 @@ Le **retour en arrière IntelliTrace** crée automatiquement une capture instant
 
 Vous pouvez parcourir et afficher les captures instantanées à l’aide des boutons **Étape précédente** et **Étape suivante** situés dans la barre d’outils de débogage. Utilisez ces boutons pour accéder aux événements figurant sous l’onglet **Événements** de la fenêtre **Outils de diagnostic**.
 
-![Boutons Étape précédente et Étape suivante](../debugger/media/intellitrace-step-back-icons-description.png  "Boutons Étape précédente et Étape suivante")
+![Boutons précédent et suivant](../debugger/media/intellitrace-step-back-icons-description.png  "Boutons précédent et suivant")
 
 Pour plus d’informations, consultez la page [Inspecter les états antérieurs de l’application avec IntelliTrace](../debugger/view-historical-application-state.md).
 

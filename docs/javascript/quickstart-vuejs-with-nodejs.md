@@ -1,11 +1,10 @@
 ---
 title: 'Démarrage rapide : créer votre première application vue. js'
 description: Dans ce guide de démarrage rapide, vous allez créer une application Vue.js dans Visual Studio à l’aide des outils Node.js pour Visual Studio.
-ms.custom: seodec18
-ms.date: 09/24/2018
+ms.custom: ''
+ms.date: 10/31/2019
 ms.topic: quickstart
 ms.devlang: javascript
-ms.assetid: b0e4ebed-1a01-41ef-aad1-4d8465ce5322
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
@@ -13,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ba1f403cd722b4d3dd1860c4a8b135c87b80bb4d
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 5f7b877d825a573b935a9bf0f2c907ec2ce6f808
+ms.sourcegitcommit: 2f64b3b231900018fceafb72b5a1c65140213a18
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189480"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73428772"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Démarrage rapide : utiliser Visual Studio pour créer votre première application Vue.js
 
@@ -104,9 +103,13 @@ Vous allez d’abord créer un projet d’application web Vue.js.
 
 1. (Projet TypeScript uniquement) À partir de Visual Studio, choisissez **Générer** > **Nettoyer la solution**.
 
+    ::: moniker range=">=vs-2019"
+    Dans le modèle de machine à écrire inclus dans Visual Studio 2019, ignorez cette étape.
+    ::: moniker-end
+
 1. Ensuite, choisissez **Générer** > **Générer la solution** pour générer le projet. Consultez la fenêtre **Sortie** pour afficher les résultats de la génération, puis choisissez **Build** dans la liste **Afficher la sortie à partir de**.
 
-    Le modèle de projet Vue.js utilise le script npm `build` en configurant un événement postbuild. Si vous souhaitez modifier ce paramètre, ouvrez le fichier projet ( *\<nom_projet\>.njsproj*) à partir de l’Explorateur Windows et recherchez cette ligne de code :
+    Le modèle de projet JavaScript vue. js (et les versions antérieures du modèle de machine à écrire) utilisent le script `build` NPM en configurant un événement après génération. Si vous souhaitez modifier ce paramètre, ouvrez le fichier projet ( *\<nom_projet\>.njsproj*) à partir de l’Explorateur Windows et recherchez cette ligne de code :
 
     ```xml
     <PostBuildEvent>npm run build</PostBuildEvent>
@@ -119,6 +122,8 @@ Vous allez d’abord créer un projet d’application web Vue.js.
    Dans la console, un message signalant le *démarrage du serveur de développement* s’affiche.
 
    Ensuite, l’application s’ouvre dans un navigateur.
+   
+   Si vous ne voyez pas l’application en cours d’exécution, actualisez la page.
 
    ![Application Vue.js en cours d’exécution dans le navigateur](../javascript/media/vuejs-running-app.png)
 
