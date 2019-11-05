@@ -1,7 +1,7 @@
 ---
 title: Déboguer une application JavaScript ou TypeScript
 description: Visual Studio prend en charge pour le débogage des applications JavaScript et TypeScript dans Visual Studio
-ms.date: 12/03/2018
+ms.date: 11/01/2019
 ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ec2b93d212f9a9485f6e817d00b06cccfec47a93
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: 5fbaa25146c9e06f3a12b90ab2d6ae124fbbd189
+ms.sourcegitcommit: ee9c55616a22addc89cf1cf1942bf371d73e2e11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888703"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73618104"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Déboguer une application JavaScript ou TypeScript dans Visual Studio
 
@@ -43,74 +43,115 @@ Vous pouvez déboguer un code JavaScript et TypeScript à l’aide de Visual Stu
 
 ## <a name="debug-client-side-script"></a>Débogage de script côté client
 
-Visual Studio offre des fonctionnalités de débogage dans Chrome et Internet Explorer uniquement. Dans certains scénarios, le débogueur atteint automatiquement les points d’arrêt dans le code JavaScript et TypeScript et dans des scripts incorporés dans des fichiers HTML.
+::: moniker range=">=vs-2019"
+Visual Studio assure uniquement la prise en charge du débogage côté client pour chrome et Microsoft Edge (chrome). Dans certains scénarios, le débogueur atteint automatiquement les points d’arrêt dans le code JavaScript et TypeScript et dans des scripts incorporés dans des fichiers HTML. Pour déboguer le script côté client dans les applications ASP.NET, consultez le billet de blog [Déboguer du code JavaScript dans Microsoft Edge](https://devblogs.microsoft.com/visualstudio/debug-javascript-in-microsoft-edge-from-visual-studio/) et ce [billet pour Google Chrome](https://devblogs.microsoft.com/aspnet/client-side-debugging-of-asp-net-projects-in-google-chrome).
+::: moniker-end
+::: moniker range="vs-2017"
+Visual Studio assure uniquement la prise en charge du débogage côté client pour chrome et Internet Explorer. Dans certains scénarios, le débogueur atteint automatiquement les points d’arrêt dans le code JavaScript et TypeScript et dans des scripts incorporés dans des fichiers HTML. Pour déboguer le script côté client dans les applications ASP.NET, consultez le billet [de blog débogage côté client des projets ASP.net dans Google Chrome](https://devblogs.microsoft.com/aspnet/client-side-debugging-of-asp-net-projects-in-google-chrome/).
+::: moniker-end
 
-Si votre source est minimisée ou créée par un transpiler comme TypeScript ou Babel, utilisez des [mappages de sources](#generate_sourcemaps) pour bénéficier d’une meilleure expérience de débogage. Sans les mappages de sources, il est néanmoins possible d’attacher le débogueur à un script en cours d’exécution côté client. Mais vous pourrez seulement définir et atteindre des points d’arrêt dans le fichier minimisé ou transpilé, et non dans le fichier source d’origine. Par exemple, dans une application Vue.js, un script minimisé est passé sous forme de chaîne à une instruction `eval`, et il n’existe aucun moyen de parcourir ce code efficacement à l’aide du débogueur Visual Studio, à moins d’utiliser des mappages de sources. Dans certains scénarios de débogage complexes, vous pouvez également utiliser les outils de développement Chrome ou les outils F12 pour Microsoft Edge.
+Si votre source est minimisée ou créée par un transpiler comme TypeScript ou Babel, utilisez des [mappages de sources](#generate_sourcemaps) pour bénéficier d’une meilleure expérience de débogage. Sans les mappages de sources, il est néanmoins possible d’attacher le débogueur à un script en cours d’exécution côté client. Mais vous pourrez seulement définir et atteindre des points d’arrêt dans le fichier minimisé ou transpilé, et non dans le fichier source d’origine. Par exemple, dans une application Vue.js, un script minimisé est passé sous forme de chaîne à une instruction `eval`, et il n’existe aucun moyen de parcourir ce code efficacement à l’aide du débogueur Visual Studio, à moins d’utiliser des mappages de sources. Dans les scénarios de débogage complexes, vous pouvez utiliser à la place chrome Outils de développement ou F12 Tools pour Microsoft Edge.
 
-Pour attacher le débogueur depuis Visual Studio et atteindre des points d’arrêt dans du code côté client, vous devez généralement aider le débogueur à identifier le processus approprié. Voici une façon d’y parvenir en utilisant Chrome.
+### <a name="attach-the-debugger-to-client-side-script"></a>Attacher le débogueur au script côté client
 
-### <a name="attach-the-debugger-to-client-side-script-using-chrome"></a>Attacher le débogueur à un script côté client à l’aide de Chrome
+Pour attacher le débogueur de Visual Studio et atteindre des points d’arrêt dans le code côté client, le débogueur a besoin d’aide pour identifier le processus correct. Voici une façon d’y parvenir.
 
-1. Fermez toutes les fenêtres de Chrome.
+::: moniker range=">=vs-2019"
+Pour ce scénario, utilisez Microsoft Edge (chrome), actuellement nommé **Microsoft Edge Beta** dans l’IDE, ou chrome.
+::: moniker-end
+::: moniker range="vs-2017"
+Pour ce scénario, utilisez Chrome.
+::: moniker-end
 
-    Cette action est nécessaire pour pouvoir exécuter Chrome en mode débogage.
+1. Fermez toutes les fenêtres du navigateur cible.
+
+   D’autres instances de navigateur peuvent empêcher l’ouverture du navigateur avec le débogage activé. (Les extensions de navigateur sont peut-être en cours d’exécution et empêchent le mode de débogage complet. par conséquent, vous devrez peut-être ouvrir le gestionnaire des tâches pour rechercher des instances inattendues de
+
+   ::: moniker range=">=vs-2019"
+   Pour Microsoft Edge (chrome), arrêtez également toutes les instances de chrome. Étant donné que les deux navigateurs utilisent la base de code de chrome, cela donne les meilleurs résultats.
+   ::: moniker-end
 
 2. Ouvrez la commande **Exécuter** à partir du bouton **Démarrer** de Windows (cliquez avec le bouton droit de la souris et choisissez **Exécuter**), puis entrez la commande suivante :
 
     `chrome.exe --remote-debugging-port=9222`
+    ::: moniker range=">=vs-2019"
+    ou `msedge --remote-debugging-port=9222`
+    ::: moniker-end
 
-    Cette commande Chrome démarre avec l’activation du débogage.
+    Cela démarre votre navigateur avec le débogage activé.
 
     ::: moniker range=">=vs-2019"
 
-    > [!NOTE]
-    > Vous pouvez également définir l’indicateur `--remote-debugging-port` au lancement du navigateur en sélectionnant **Parcourir avec… >** dans la barre d’outils **Déboguer**, puis en choisissant **Ajouter** et en définissant l’indicateur dans le champ **Arguments**. Utilisez un autre nom convivial pour le navigateur, par exemple **Chrome avec débogage**. Pour plus d’informations, consultez les [notes de publication](/visualstudio/releases/2019/release-notes-preview).
+    > [!TIP]
+    > À compter de Visual Studio 2019, vous pouvez définir l’indicateur `--remote-debugging-port` au lancement du navigateur en sélectionnant **Parcourir avec...** > dans la barre d’outils **Déboguer** , puis en sélectionnant **Ajouter**et en définissant l’indicateur dans le champ **arguments** . Utilisez un autre nom convivial pour le navigateur, tel que **Edge avec débogage** ou **chrome avec débogage**. Pour plus d’informations, consultez les [notes de publication](/visualstudio/releases/2019/release-notes-v16.2).
+
+    ![Configurer votre navigateur pour qu’il s’ouvre avec le débogage activé](../javascript/media/tutorial-nodejs-react-edge-with-debugging.png)
 
     ::: moniker-end
 
-3. Basculez vers Visual Studio et définissez un point d’arrêt dans votre code source. (Définissez le point d’arrêt dans une ligne de code autorisant les points d’arrêt, par exemple une instruction `return` ou une déclaration `var`).
+    L’application n’est pas encore en cours d’exécution. vous disposez donc d’une page de navigateur vide.
+
+3. Basculez vers Visual Studio, puis définissez un point d’arrêt dans votre code source, qui peut être un fichier JavaScript, un fichier de base de code ou un fichier JSX. (Définissez le point d’arrêt dans une ligne de code qui autorise les points d’arrêt, par exemple une instruction return ou une déclaration var.)
 
     ![Définir un point d'arrêt](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
-    Si vous avez besoin rechercher un code spécifique dans un fichier volumineux généré, utilisez **Ctrl**+**F** (**Édition** > **Rechercher et remplacer**  >  **Recherche rapide**).
+    Pour rechercher le code spécifique dans un fichier compilé, utilisez **Ctrl**+**F** (**modifier** > **Rechercher et remplacer** > **recherche rapide**).
 
-4. Chrome étant sélectionné comme cible de débogage dans Visual Studio, appuyez sur **Ctrl**+**F5** (**Déboguer** > **Exécuter sans débogage**) pour exécuter l’application dans le navigateur.
+    Pour le code côté client, pour atteindre un point d’arrêt dans un fichier de machine à écrire ou un fichier JSX, vous devez généralement utiliser [mappages](#generate_sourcemaps). Un mappage doit être correctement configuré pour prendre en charge le débogage dans Visual Studio.
+
+4. (WebPack uniquement) Suivez les instructions décrites dans [générer des mappages](#generate_sourcemaps).
+
+5. Sélectionnez votre navigateur cible comme cible de débogage dans Visual Studio, puis appuyez sur **Ctrl**+**F5** (**Déboguer** > exécuter **sans débogage**) pour exécuter l’application dans le navigateur.
 
     L’application s’ouvre dans un nouvel onglet du navigateur.
 
-    Si Chrome est disponible sur votre ordinateur, mais n’apparaît pas dans les options, choisissez **Naviguer avec** dans la liste déroulante des cibles de débogage et sélectionnez Chrome comme cible de navigateur par défaut (choisissez **Définir comme programme par défaut**).
+6. Choisissez **Déboguer** > **Attacher au processus**.
 
-5. Choisissez **Déboguer** > **Attacher au processus**.
+7. Dans la boîte de dialogue **attacher au processus** , récupérez une liste filtrée des instances de navigateur auxquelles vous pouvez attacher.
 
-6. Dans la boîte de dialogue **Attacher au processus**, choisissez **Code WebKit** dans le champ **Attacher à**, puis tapez **chrome** dans la zone de filtre pour filtrer les résultats de la recherche.
+    ::: moniker range=">=vs-2019"
+    Dans Visual Studio 2019, choisissez le navigateur cible, **JavaScript (chrome)** ou **JavaScript (Microsoft Edge-chrome)** correct dans le champ **attacher à** , tapez **chrome** ou **bord** dans la zone de filtre pour filtrer les résultats de la recherche. Si vous avez créé une configuration de navigateur avec un nom convivial, choisissez-la à la place.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Dans Visual Studio 2017, choisissez **code WebKit** dans le champ **attacher à** , tapez **chrome** dans la zone de filtre pour filtrer les résultats de la recherche.
+    ::: moniker-end
 
-    **Code WebKit** est la valeur requise pour Chrome, qui est un navigateur basé sur Webkit.
+8. Sélectionnez le processus du navigateur avec le port d’hôte correct (localhost dans cet exemple), puis sélectionnez **attacher**.
 
-7. Sélectionnez le processus Chrome et le port d’hôte approprié (1337 dans cette illustration), puis sélectionnez **Attacher**.
+    Le port (par exemple, 1337) peut également apparaître dans le champ **titre** pour vous aider à sélectionner l’instance de navigateur appropriée.
 
+    ::: moniker range=">=vs-2019"
+    L’exemple suivant montre comment cela recherche le navigateur Microsoft Edge (chrome).
+
+    ![Attacher au processus](../javascript/media/tutorial-nodejs-react-attach-to-process-edge.png)
+    ::: moniker-end
+    ::: moniker range="vs-2017"
     ![Attacher au processus](../javascript/media/tutorial-nodejs-react-attach-to-process.png)
 
-    ::: moniker range="vs-2017"
     Vous savez que le débogueur est correctement attaché quand l’Explorateur DOM et la console JavaScript s’ouvrent dans Visual Studio. Ces outils de débogage sont similaires aux outils de développement Chrome et aux outils F12 pour Microsoft Edge.
     ::: moniker-end
 
-    > [!NOTE]
-    > Si le débogueur ne s’attache pas et que vous voyez le message « Impossible de s’attacher au processus. Une opération n’est pas légale dans l’état actuel. », utilisez le Gestionnaire des tâches pour fermer toutes les instances de Chrome avant de démarrer Chrome en mode débogage. Les extensions Chrome peuvent être en cours d’exécution et empêcher le mode débogage complet.
+    > [!TIP]
+    > Si le débogueur ne s’attache pas et que vous voyez le message « échec du lancement de l’adaptateur de débogage » ou «impossible d’attacher au processus. Une opération n’est pas autorisée dans l’état actuel.», utilisez le gestionnaire des tâches Windows pour fermer toutes les instances du navigateur cible avant de démarrer le navigateur en mode débogage. Les extensions de navigateur peuvent être en cours d’exécution et empêchent le mode de débogage complet.
 
-8. Si le code avec le point d’arrêt s’est déjà exécuté, actualisez la page de votre navigateur pour atteindre le point d’arrêt.
+9. Étant donné que le code avec le point d’arrêt peut avoir déjà été exécuté, actualisez la page de votre navigateur. Si nécessaire, prenez des mesures pour provoquer l’exécution du code avec le point d’arrêt.
 
     Pendant que l’exécution du débogueur est en pause, vous pouvez examiner l’état de votre application en pointant sur les variables et en utilisant les fenêtres du débogueur. Vous pouvez faire avancer le débogueur en exécutant pas à pas le code (**F5**, **F10** et **F11**).
 
-    Pour un fichier JavaScript minimisé ou transpilé, vous pouvez atteindre le point d’arrêt dans le fichier JavaScript transpilé ou à son emplacement mappé dans votre fichier TypeScript (à l’aide des mappages de sources), selon l’état de votre environnement et de votre navigateur. De toute façon, vous pouvez exécuter pas à pas le code et examiner les variables.
+    Vous pouvez atteindre le point d’arrêt dans le fichier *. js* ou dans le fichier source, en fonction des étapes que vous avez suivies précédemment, ainsi que de l’état de votre environnement et de votre navigateur. De toute façon, vous pouvez exécuter pas à pas le code et examiner les variables.
 
-    * Si vous devez arrêter l’exécution du code dans un fichier TypeScript et que vous n’y parvenez pas, utilisez **Attacher au processus** comme décrit dans la procédure précédente pour attacher le débogueur. Ouvrez ensuite le fichier TypeScript généré dynamiquement à partir de l’Explorateur de solutions en ouvrant **Documents de script** > **filename.tsx**, définissez un point d’arrêt, puis actualisez la page dans votre navigateur (définissez le point d’arrêt dans une ligne de code qui autorise les points d’arrêt, par exemple l’instruction `return` ou une déclaration `var`).
+   * Si vous devez vous arrêter dans du code dans un fichier source de machine à écrire ou JSX et que vous ne pouvez pas le faire, utilisez **attacher au processus** comme décrit dans les étapes précédentes pour attacher le débogueur. Assurez-vous que votre environnement est correctement configuré :
 
-        Sinon, si vous devez arrêter l’exécution du code dans un fichier TypeScript et que vous n’y parvenez pas, essayez d’utiliser l’instruction `debugger;` dans le fichier TypeScript, ou définissez des points d’arrêt dans les outils de développement Chrome à la place.
+      * Vous avez fermé toutes les instances de navigateur, y compris les extensions chrome (à l’aide du gestionnaire des tâches), afin de pouvoir exécuter le navigateur en mode débogage. Veillez à démarrer le navigateur en mode débogage.
 
-    * Si vous devez arrêter l’exécution du code dans un fichier JavaScript transpilé (par exemple, *app-bundle.js*) et que vous n’y parvenez pas, supprimez le fichier de mappage de source, *filename.js.map*.
+      * Assurez-vous que votre fichier mappage inclut une référence à dans votre fichier source qui n’inclut pas de préfixes non pris en charge, tels que *WebPack:///* , ce qui empêche le débogueur Visual Studio de localiser *app. TSX*. Par exemple, cette référence peut être corrigée en *./app.TSX*. Vous pouvez effectuer cette opération manuellement dans le fichier mappage ou par le biais d’une modification de build personnalisée.
+
+       Sinon, si vous devez vous arrêter dans le code d’un fichier source (par exemple, * app. TSX) et que vous ne pouvez pas le faire, essayez d’utiliser l’instruction `debugger;` dans le fichier source, ou définissez des points d’arrêt dans le Outils de développement chrome (ou les outils F12 pour Microsoft Edge) à la place.
+
+   * Si vous devez vous arrêter dans du code dans un fichier JavaScript compilé (par exemple, *app-bundle. js*) et que vous ne pouvez pas le faire, supprimez le fichier mappage, *nom_fichier. js. map*.
 
      > [!TIP]
-     > Une fois que vous avez effectué l’attachement au processus la première fois en suivant ces étapes, vous pouvez rapidement effectuer un rattachement au même processus en choisissant **Déboguer** > **Rattacher au processus**.
+     > Une fois que vous avez effectué l’attachement au processus la première fois en suivant ces étapes, vous pouvez rapidement effectuer un rattachement au même processus dans Visual Studio 2017 en choisissant **Déboguer** > **Rattacher au processus**.
 
 ## <a name="generate_sourcemaps"></a> Générer des mappages de sources pour le débogage
 
@@ -121,9 +162,32 @@ Visual Studio permet d’utiliser et de générer des mappages de sources sur le
 * Dans un projet JavaScript, vous devez générer des mappages de sources à l’aide d’un bundler comme webpack et d’un compilateur comme TypeScript (ou Babel), que vous pouvez ajouter à votre projet. Pour le compilateur TypeScript, vous devez également ajouter un fichier *tsconfig.json*. Pour obtenir un exemple montrant comment procéder à l’aide d’une configuration webpack de base, consultez [Créer une application Node.js avec React](../javascript/tutorial-nodejs-with-react-and-jsx.md).
 
 > [!NOTE]
-> Si vous ne connaissez pas les mappages de sources, veuillez lire [Introduction aux mappages de sources JavaScript](https://www.html5rocks.com/en/tutorials/developertools/sourcemaps/) avant de continuer.
+> Si vous ne connaissez pas les mappages de sources, veuillez lire [Introduction aux mappages de sources JavaScript](https://www.html5rocks.com/en/tutorials/developertools/sourcemaps/) avant de continuer. 
 
 Afin de configurer les paramètres avancés pour les mappages de sources, utilisez un fichier *tsconfig.json* ou les paramètres du projet dans un projet TypeScript, mais pas les deux.
+
+Pour activer le débogage à l’aide de Visual Studio, vous devez vous assurer que la ou les références à votre fichier source dans les mappage générées sont correctes. Par exemple, si vous utilisez WebPack, les références contenues dans le fichier mappage incluent le préfixe *WebPack:///* , qui empêche Visual Studio de trouver un fichier source de machine ou jsx. Plus précisément, lorsque vous corrigez ceci à des fins de débogage, la référence au fichier source (par exemple, *app. TSX*) doit être remplacée par une *valeur telle* que *./app.TSX*, qui active le débogage ( le chemin d’accès est relatif à votre fichier source). L’exemple suivant montre comment vous pouvez corriger mappages avec WebPack, qui est l’un des regroupeurs les plus courants.
+
+(WebPack uniquement) Si vous définissez le point d’arrêt dans une machine à écrire de fichier JSX (au lieu d’un fichier JavaScript compilé), vous devez mettre à jour la configuration de votre WebPack. Par exemple, dans *WebPack-config. js*, vous devrez peut-être remplacer le code suivant :
+
+```javascript
+  output: {
+    filename: "./app-bundle.js", // This is an example of the filename in your project
+  },
+```
+
+par le code suivant :
+
+```javascript
+  output: {
+    filename: "./app-bundle.js", // Replace with the filename in your project
+    devtoolModuleFilenameTemplate: '[resource-path]'  // Removes the webpack:/// prefix
+  },
+```
+
+Il s’agit d’un paramètre de développement uniquement pour activer le débogage du code côté client dans Visual Studio.
+
+Pour les scénarios complexes, les outils de navigation (**F12**) peuvent fonctionner mieux pour le débogage.
 
 ### <a name="configure-source-maps-using-a-tsconfigjson-file"></a>Configurer des mappages de sources à l’aide d’un fichier tsconfig.json
 
@@ -155,7 +219,7 @@ Si vous ajoutez un fichier *tsconfig.json* à votre projet, Visual Studio traite
 
 Pour plus d’informations sur les options du compilateur, consultez la page [Options du compilateur](https://www.typescriptlang.org/docs/handbook/compiler-options.html) dans le manuel TypeScript.
 
-### <a name="configure-source-maps-using-project-settings"></a>Configurer des mappages de sources à l’aide des paramètres du projet
+### <a name="configure-source-maps-using-project-settings-typescript-project"></a>Configurer des mappages de sources à l’aide des paramètres de projet (projet de machine à écrire)
 
 Vous pouvez également configurer les paramètres des mappages de sources à l’aide des propriétés du projet en double-cliquant sur le projet, puis en choisissant **Projet > Propriétés > Build TypeScript > Débogage**.
 

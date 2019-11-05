@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: dd34d0afa9f1b83a3795a9bccd0578d88c585ffa
-ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
+ms.openlocfilehash: c5f3c4a0a2acdf73aae96c5cb5629252e712da64
+ms.sourcegitcommit: ee9c55616a22addc89cf1cf1942bf371d73e2e11
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73569027"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73618122"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutoriel : Créer une application Node.js et React dans Visual Studio
 
@@ -55,7 +55,7 @@ JSX est une extension de syntaxe JavaScript, généralement utilisée avec React
 
 webpack regroupe des fichiers JavaScript pour qu’ils puissent s’exécuter dans un navigateur. Il peut également transformer ou packager d’autres ressources et composants. Il est souvent utilisé pour spécifier un compilateur, comme Babel ou TypeScript, pour transpiler du code JSX ou TypeScript en code JavaScript standard.
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Configuration requise
 
 * Au préalable, vous devez avoir installé Visual Studio et la charge de travail de développement Node.js.
 
@@ -395,7 +395,11 @@ Pour ce scénario, utilisez Chrome.
 
 1. Fermez toutes les fenêtres du navigateur cible.
 
-   D’autres instances de navigateur peuvent empêcher l’attachement du débogueur.
+   D’autres instances de navigateur peuvent empêcher l’ouverture du navigateur avec le débogage activé. (Les extensions de navigateur sont peut-être en cours d’exécution et empêchent le mode de débogage complet. par conséquent, vous devrez peut-être ouvrir le gestionnaire des tâches pour rechercher des instances inattendues de
+
+   ::: moniker range=">=vs-2019"
+   Pour Microsoft Edge (chrome), arrêtez également toutes les instances de chrome. Étant donné que les deux navigateurs partagent la base de code de chrome, cela donne les meilleurs résultats.
+   ::: moniker-end
 
 2. Ouvrez la commande **Exécuter** à partir du bouton **Démarrer** de Windows (cliquez avec le bouton droit de la souris et choisissez **Exécuter**), puis entrez la commande suivante :
 
@@ -417,19 +421,44 @@ Pour ce scénario, utilisez Chrome.
 
     L’application n’est pas encore en cours d’exécution. vous disposez donc d’une page de navigateur vide.
 
-3. Basculez vers Visual Studio, puis définissez un point d’arrêt dans le code *app-bundle. js* dans la fonction `render()`, comme indiqué dans l’illustration suivante :
+3. Basculez vers Visual Studio, puis définissez un point d’arrêt dans votre code source, *app-bundle. js* ou *app. TSX*.
+
+    Pour *app-bundle. js*, définissez le point d’arrêt dans la fonction `render()` comme indiqué dans l’illustration suivante :
 
     ![Définir un point d'arrêt](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
-    Pour trouver la fonction `render()` dans *app-bundle.js*, utilisez **Ctrl**+**F** (**Modifier** > **Rechercher et remplacer** > **Recherche rapide**).
+    Pour rechercher la fonction `render()` dans le fichier *app-bundle. js* compilé, utilisez **CTRL**+**F** (**modifier** > **Rechercher et remplacer** > **recherche rapide**).
 
-4. Sélectionnez votre navigateur cible comme cible de débogage dans Visual Studio, puis appuyez sur **Ctrl**+**F5** (**Déboguer** > exécuter **sans débogage**) pour exécuter l’application dans le navigateur.
+    Pour *app. TSX*, définissez le point d’arrêt à l’intérieur de la fonction `render()`, sur l’instruction `return`.
+
+    ![Définir un point d'arrêt](../javascript/media/tutorial-nodejs-react-set-breakpoint-in-tsx-file.png)
+
+4. Si vous définissez le point d’arrêt dans le fichier *. TSX* (plutôt que *app-bundle. js*), vous devez mettre à jour *WebPack-config. js*. Remplacez le code suivant :
+
+    ```javascript
+    output: {
+        filename: "./app-bundle.js",
+    },
+    ```
+
+    par le code suivant :
+
+    ```javascript
+    output: {
+        filename: "./app-bundle.js",
+        devtoolModuleFilenameTemplate: '[resource-path]'  // removes the webpack:/// prefix
+    },
+    ```
+
+    Il s’agit d’un paramètre de développement uniquement pour activer le débogage dans Visual Studio. Ce paramètre vous permet de remplacer les références générées dans le fichier mappage, *app-bundle. js. map*, lors de la génération de l’application. Par défaut, les références WebPack dans le fichier mappage incluent le préfixe *WebPack:///* , qui empêche Visual Studio de trouver le fichier source, *app. TSX*. Plus précisément, lorsque vous apportez cette modification, la référence au fichier source, *app. TSX*, est passée de *WebPack:///./app.TSX* à *./app.TSX*, ce qui permet le débogage.
+
+5. Sélectionnez votre navigateur cible comme cible de débogage dans Visual Studio, puis appuyez sur **Ctrl**+**F5** (**Déboguer** > exécuter **sans débogage**) pour exécuter l’application dans le navigateur.
 
     L’application s’ouvre dans un nouvel onglet du navigateur.
 
-5. Choisissez **Déboguer** > **Attacher au processus**.
+6. Choisissez **Déboguer** > **Attacher au processus**.
 
-6. Dans la boîte de dialogue **attacher au processus** , récupérez une liste filtrée des instances de navigateur auxquelles vous pouvez attacher.
+7. Dans la boîte de dialogue **attacher au processus** , récupérez une liste filtrée des instances de navigateur auxquelles vous pouvez attacher.
 
     ::: moniker range=">=vs-2019"
     Dans Visual Studio 2019, choisissez le navigateur cible, **JavaScript (chrome)** ou **JavaScript (Microsoft Edge-chrome)** correct dans le champ **attacher à** , tapez **chrome** ou **bord** dans la zone de filtre pour filtrer les résultats de la recherche. Si vous avez créé une configuration de navigateur avec un nom convivial, choisissez-la à la place.
@@ -438,7 +467,7 @@ Pour ce scénario, utilisez Chrome.
     Dans Visual Studio 2017, choisissez **code WebKit** dans le champ **attacher à** , tapez **chrome** dans la zone de filtre pour filtrer les résultats de la recherche.
     ::: moniker-end
 
-7. Sélectionnez le processus du navigateur avec le port d’hôte correct (localhost dans cet exemple), puis sélectionnez **attacher**.
+8. Sélectionnez le processus du navigateur avec le port d’hôte correct (localhost dans cet exemple), puis sélectionnez **attacher**.
 
     Le port (1337) peut également apparaître dans le champ **titre** pour vous aider à sélectionner l’instance de navigateur appropriée.
 
@@ -456,15 +485,19 @@ Pour ce scénario, utilisez Chrome.
     > [!TIP]
     > Si le débogueur ne s’attache pas et que vous voyez le message « Impossible de s’attacher au processus. Une opération n’est pas valide dans l’état actuel.», utilisez le gestionnaire des tâches pour fermer toutes les instances du navigateur cible avant de démarrer le navigateur en mode débogage. Les extensions de navigateur peuvent être en cours d’exécution et empêchent le mode de débogage complet.
 
-8. Dans la mesure où le code avec le point d’arrêt s’est déjà exécuté, actualisez la page de votre navigateur pour atteindre le point d’arrêt.
+9. Dans la mesure où le code avec le point d’arrêt s’est déjà exécuté, actualisez la page de votre navigateur pour atteindre le point d’arrêt.
 
     Pendant que l’exécution du débogueur est en pause, vous pouvez examiner l’état de votre application en pointant sur les variables et en utilisant les fenêtres du débogueur. Vous pouvez faire avancer le débogueur en exécutant pas à pas le code (**F5**, **F10** et **F11**).
 
-    Vous pouvez éventuellement atteindre le point d’arrêt dans *app-bundle.js* ou son emplacement mappé dans *app.tsx*, en fonction de votre environnement et de l’état du navigateur. De toute façon, vous pouvez exécuter pas à pas le code et examiner les variables.
+    Vous pouvez atteindre le point d’arrêt dans *app-bundle. js* ou son emplacement mappé dans *app. TSX*, en fonction des étapes que vous avez suivies précédemment, ainsi que de l’état de votre environnement et de votre navigateur. De toute façon, vous pouvez exécuter pas à pas le code et examiner les variables.
 
-   * Si vous devez arrêter l’exécution du code dans *app.tsx* et que vous n’y parvenez pas, utilisez **Attacher au processus** comme décrit dans la procédure précédente pour attacher le débogueur. Ouvrez ensuite le fichier *app.tsx* généré dynamiquement à partir de l’Explorateur de solutions en ouvrant **Documents de script** > **app.tsx**, définissez un point d’arrêt, puis actualisez la page dans votre navigateur (définissez le point d’arrêt dans une ligne de code qui autorise les points d’arrêt, par exemple l’instruction `return` ou une déclaration `var`).
+   * Si vous devez arrêter l’exécution du code dans *app.tsx* et que vous n’y parvenez pas, utilisez **Attacher au processus** comme décrit dans la procédure précédente pour attacher le débogueur. Assurez-vous que votre environnement est correctement configuré :
 
-       Sinon, si vous devez vous arrêter dans le code dans *app. TSX* et que vous ne pouvez pas le faire, essayez d’utiliser l’instruction `debugger;` dans *app. TSX*, ou définissez des points d’arrêt dans le outils de développement chrome (ou les outils F12 pour Microsoft Edge) à la place. Pour les fichiers mappage générés par WebPack, les outils de navigation (**F12**) fonctionnent généralement mieux pour le débogage.
+      * Vous avez fermé toutes les instances de navigateur, y compris les extensions chrome (à l’aide du gestionnaire des tâches), afin de pouvoir exécuter le navigateur en mode débogage. Veillez à démarrer le navigateur en mode débogage.
+
+      * Assurez-vous que votre fichier mappage contient une référence à *./app.TSX* et non à *WebPack:///./app.TSX*, ce qui empêche le débogueur Visual Studio de localiser *app. TSX*.
+
+       Sinon, si vous devez vous arrêter dans le code dans *app. TSX* et que vous ne pouvez pas le faire, essayez d’utiliser l’instruction `debugger;` dans *app. TSX*, ou définissez des points d’arrêt dans le outils de développement chrome (ou les outils F12 pour Microsoft Edge) à la place.
 
    * Si vous devez arrêter l’exécution du code dans *app-bundle.js* et que vous n’y parvenez pas, supprimez le fichier de mappage de source, *app-bundle.js.map*.
 

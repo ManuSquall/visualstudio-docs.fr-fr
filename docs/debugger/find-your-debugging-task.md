@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8467463b5a97c5bf7de1c3864ee6a5e5fc4681d1
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: b833d8b68af418b727861226df41c700d582805e
+ms.sourcegitcommit: d55438841123aad56a524a65332a86ad67af386b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188101"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73599290"
 ---
 # <a name="find-your-debugging-task-in-visual-studio"></a>Rechercher votre tâche de débogage dans Visual Studio
 
@@ -102,6 +102,10 @@ Pour le C++mode natif, utilisez l' [infrastructure NatVis](create-custom-views-o
 Pour configurer les options de débogueur et les paramètres de projet du débogueur, consultez [paramètres et préparation du débogueur](debugger-settings-and-preparation.md).
 
 ## <a name="additional-tasks"></a>Tâches supplémentaires
+
+### <a name="fix-an-exception"></a>Corriger une exception
+
+Consultez [corriger une exception](write-better-code-with-visual-studio.md#fix-an-exception).
 
 ### <a name="edit-code-during-a-debugging-session"></a>Modifier le code pendant une session de débogage
 
