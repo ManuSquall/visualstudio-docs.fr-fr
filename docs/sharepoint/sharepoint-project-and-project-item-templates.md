@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 825e985820ac7a4d72bf321133491e312adb0a0e
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 762fce80ad1e97f700af0768cdb68251a3ee8017
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981948"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661861"
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>Modèles de projet et d’élément de projet SharePoint
   Les sections suivantes décrivent les modèles de projet et d’élément de projet SharePoint disponibles, ainsi que leur utilisation.
@@ -132,7 +132,7 @@ ms.locfileid: "72981948"
  Un *flux de travail d’ordinateur d’État* est un ensemble d’États, de transitions et d’actions de logique métier. Les étapes d’un workflow d’ordinateur d’État ne sont pas effectuées dans l’ordre. au lieu de cela, ils sont déclenchés par des actions et des États. À l’instar d’un workflow séquentiel, les flux de travail d’ordinateur d’État sont associés à des éléments SharePoint, tels que des listes et des documents. Une fois encore, vous pouvez créer des flux de travail au niveau du site (Global) ou des flux de travail au niveau de la liste (local). Vous pouvez également choisir si un flux de travail démarre automatiquement ou manuellement. Cet élément de projet ne peut être utilisé que dans les solutions de batterie. Vous pouvez ajouter cet élément de projet uniquement aux solutions de batterie de serveurs. Pour plus d’informations, consultez [créer des solutions de flux de travail SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md), [flux de travail dans SharePoint Server 2010](/previous-versions/office/developer/sharepoint-2010/ms549489(v=office.14))et [Nouveautés : améliorations du flux](/previous-versions/office/developer/sharepoint-2010/ee537015(v=office.14))de travail.
 
 ### <a name="user-control-farm-solution-only"></a>Contrôle utilisateur (solution de batterie uniquement)
- Un *contrôle utilisateur* est un contrôle personnalisé, réutilisable, auquel vous pouvez ajouter d’autres contrôles ASP.net et contrôles SharePoint. Le contrôle utilisateur peut être ajouté aux pages d’application et aux composants WebPart qui s’exécutent dans SharePoint. Cet élément de projet ne peut être utilisé que dans les solutions de batterie. Vous pouvez ajouter cet élément de projet uniquement aux solutions de batterie de serveurs. Pour plus d’informations, consultez [création de contrôles réutilisables pour des composants WebPart ou des pages d’application](/visualstudio/sharepoint/creating-reusable-controls-for-web-parts-or-application-pages&view=vs-2019).
+ Un *contrôle utilisateur* est un contrôle personnalisé, réutilisable, auquel vous pouvez ajouter d’autres contrôles ASP.net et contrôles SharePoint. Le contrôle utilisateur peut être ajouté aux pages d’application et aux composants WebPart qui s’exécutent dans SharePoint. Cet élément de projet ne peut être utilisé que dans les solutions de batterie. Vous pouvez ajouter cet élément de projet uniquement aux solutions de batterie de serveurs. Pour plus d’informations, consultez [création de contrôles réutilisables pour des composants WebPart ou des pages d’application](/visualstudio/sharepoint/creating-reusable-controls-for-web-parts-or-application-pages).
 
 ### <a name="visual-web-part"></a>Composant Visual Web part
  Un élément de projet *Visual Web part* comprend un fichier de définition *Elements. xml* , un élément **WebPart** et un élément de **contrôle utilisateur** . Vous pouvez concevoir l’apparence du composant Visual Web part en faisant glisser ou en copiant des contrôles de la boîte à outils Visual Studio vers la surface du contrôle utilisateur. Pour plus d’informations, consultez [Comment : créer un composant WebPart SharePoint à l’aide d’un concepteur](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md) et d’un [bloc de construction : composants WebPart](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14)).

@@ -11,12 +11,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 91f80d648450447a6ba0e80f10e5c39764445cef
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 8b8b656aaefe4440e811378da2b84d1b944d4fb1
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189308"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661933"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Bienvenue dans l’IDE Visual Studio | Python
 
@@ -94,7 +94,7 @@ Voici quelques-unes des fonctionnalités populaires de Visual Studio qui vous ai
     À partir de Visual Studio 2019, vous pouvez ouvrir un dossier contenant du code Python pour bénéficier de fonctionnalités telles que IntelliSense et le débogage sans devoir créer un projet Visual Studio pour le code.
 ::: moniker-end
 
-- [Collaborer à l’aide de Visual Studio](/visualstudio/liveshare/use/vs)
+- [Collaborer à l’aide de Visual Studio](/visualstudio/liveshare/)
   
     Visual Studio Live Share vous permet d’éditer et de déboguer en collaboration avec d’autres utilisateurs en temps réel, quel que soit le langage de programmation que vous utilisez ou les types d’applications que vous créez. 
 

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1271752a32a2f42eca93ae3f6861a923a6055cd2
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
-ms.translationtype: HT
+ms.openlocfilehash: 0493e7d16a7c7ecb7a9cf7d414e3bd13cb9ad9a7
+ms.sourcegitcommit: f9f389e72787de30eb869a55ef7725a10a4011f0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681282"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73636569"
 ---
 # <a name="common-msbuild-project-items"></a>Éléments communs des projets MSBuild
 Dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], un élément est une référence nommée à un ou plusieurs fichiers. Les éléments contiennent des métadonnées, comme des noms de fichiers, des chemins et des numéros de version. Dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], tous les types de projets ont plusieurs éléments en commun. Ces éléments sont définis dans le fichier *Microsoft.Build.CommonTypes.xsd*.
@@ -28,7 +28,7 @@ Dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md
 ## <a name="common-items"></a>Éléments communs
  Voici une liste de tous les éléments de projet communs.
 
-### <a name="reference"></a>Référence
+### <a name="reference"></a>Reference
  Représente une référence (managée) d'assembly dans le projet.
 
 |Nom des métadonnées de l’élément|Description|
@@ -49,7 +49,7 @@ Dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md
 |GUID|Chaîne requise. GUID du composant sous la forme {12345678-1234-1234-1234-1234567891234}.|
 |VersionMajor|Chaîne requise. Partie principale du numéro de version du composant. Par exemple, « 5 » si le numéro de version complet est « 5.46 ».|
 |VersionMinor|Chaîne requise. Partie secondaire du numéro de version du composant. Par exemple, « 46 » si le numéro de version complet est « 5.46 ».|
-|LCID|Chaîne facultative. LocaleID du composant.|
+|dans le dossier HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\|Chaîne facultative. LocaleID du composant.|
 |WrapperTool|Chaîne facultative. Nom de l'outil wrapper utilisé sur le composant, par exemple, « tlbimp ».|
 |Isolated|Valeur booléenne facultative. Indique si le composant est un composant sans inscription.|
 
@@ -87,7 +87,7 @@ Dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md
 | AutoGen | Valeur booléenne facultative. Indique si le fichier a été généré pour le projet par l’environnement de développement intégré (IDE) [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. |
 | Lien | Chaîne facultative. Chemin d’accès codifiable à afficher quand le fichier se trouve physiquement en dehors de l’influence du fichier projet. |
 | Visible | Valeur booléenne facultative. Indique si le fichier doit être affiché dans **l’Explorateur de solutions** de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. |
-| CopyToOutputDirectory | Chaîne facultative. Détermine si le fichier doit être copié dans le répertoire de sortie. Les valeurs possibles sont :<br /><br /> 1.  Never<br />2.  Always<br />3.  PreserveNewest |
+| CopyToOutputDirectory | Chaîne facultative. Détermine si le fichier doit être copié dans le répertoire de sortie. Les valeurs possibles sont :<br /><br /> 1. jamais<br />2. toujours<br />3. PreserveNewest |
 
 ### <a name="embeddedresource"></a>EmbeddedResource
  Représente les ressources à incorporer dans l'assembly généré.
@@ -100,7 +100,7 @@ Dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md
 | CustomToolNamespace | Chaîne requise. Espace de noms dans lequel le générateur de fichier s'exécutant sur cet élément doit créer du code. |
 | Lien | Chaîne facultative. Le chemin d’accès codifiable s’affiche si le fichier se trouve physiquement en dehors de l’influence du projet. |
 | Visible | Valeur booléenne facultative. Indique si le fichier doit être affiché dans **l’Explorateur de solutions** de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. |
-| CopyToOutputDirectory | Chaîne facultative. Détermine si le fichier doit être copié dans le répertoire de sortie. Les valeurs possibles sont :<br /><br /> 1.  Never<br />2.  Always<br />3.  PreserveNewest |
+| CopyToOutputDirectory | Chaîne facultative. Détermine si le fichier doit être copié dans le répertoire de sortie. Les valeurs possibles sont :<br /><br /> 1. jamais<br />2. toujours<br />3. PreserveNewest |
 | LogicalName | Chaîne requise. Nom logique de la ressource incorporée. |
 
 ### <a name="content"></a>Contenu
@@ -116,9 +116,9 @@ Dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md
 | PublishState | Chaîne requise. État de publication du contenu, à savoir :<br /><br /> -   Default<br />-   Included<br />-   Excluded<br />-   DataFile<br />-   Prerequisite |
 | IsAssembly | Valeur booléenne facultative. Indique si le fichier est un assembly. |
 | Visible | Valeur booléenne facultative. Indique si le fichier doit être affiché dans **l’Explorateur de solutions** de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. |
-| CopyToOutputDirectory | Chaîne facultative. Détermine si le fichier doit être copié dans le répertoire de sortie. Les valeurs possibles sont :<br /><br /> 1.  Never<br />2.  Always<br />3.  PreserveNewest |
+| CopyToOutputDirectory | Chaîne facultative. Détermine si le fichier doit être copié dans le répertoire de sortie. Les valeurs possibles sont :<br /><br /> 1. jamais<br />2. toujours<br />3. PreserveNewest |
 
-### <a name="none"></a>Aucun.
+### <a name="none"></a>aucune.
  Représente les fichiers qui ne doivent avoir aucun rôle dans le processus de génération.
 
 | Nom des métadonnées de l’élément | Description |
@@ -129,8 +129,18 @@ Dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md
 | CustomToolNamespace | Chaîne requise. Espace de noms dans lequel le générateur de fichier s'exécutant sur cet élément doit créer du code. |
 | Lien | Chaîne facultative. Chemin d'accès codifiable à afficher si le fichier se trouve physiquement en dehors de l'influence du projet. |
 | Visible | Valeur booléenne facultative. Indique si le fichier doit être affiché dans **l’Explorateur de solutions** de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. |
-| CopyToOutputDirectory | Chaîne facultative. Détermine si le fichier doit être copié dans le répertoire de sortie. Les valeurs possibles sont :<br /><br /> 1.  Never<br />2.  Always<br />3.  PreserveNewest |
+| CopyToOutputDirectory | Chaîne facultative. Détermine si le fichier doit être copié dans le répertoire de sortie. Les valeurs possibles sont :<br /><br /> 1. jamais<br />2. toujours<br />3. PreserveNewest |
 
+### <a name="assemblymetadata"></a>AssemblyMetadata
+ Représente les attributs d’assembly à générer comme `[AssemblyMetadata(key, value)]`.
+
+| Nom des métadonnées de l’élément | Description |
+|-----------------------| - |
+| Inclure | Devient le premier paramètre (la clé) dans le constructeur d’attribut `AssemblyMetadataAttribute`. |
+| valeur | Chaîne requise. Devient le deuxième paramètre (la valeur) dans le constructeur d’attribut `AssemblyMetadataAttribute`. |
+
+> [!NOTE]
+> Cela s’applique uniquement aux projets qui utilisent l’kit SDK .NET Core.
 ### <a name="baseapplicationmanifest"></a>BaseApplicationManifest
  Représente le manifeste d'application de base de la build et contient les informations de sécurité de déploiement de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].
 

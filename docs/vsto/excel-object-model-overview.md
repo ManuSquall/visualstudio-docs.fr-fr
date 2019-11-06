@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 29ede9dd29952e87e7f1dd76875905973bada6a6
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: cf81dea230c2cfc33eb19ca001d8c9ed06b0489c
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72986086"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661848"
 ---
 # <a name="excel-object-model-overview"></a>Vue d’ensemble du modèle objet Excel
   Pour développer des solutions qui utilisent Microsoft Office Excel, vous pouvez interagir avec les objets fournis par le modèle objet Excel. Cette rubrique présente les objets les plus importants :
@@ -103,7 +103,7 @@ ms.locfileid: "72986086"
  Pour obtenir des informations complètes sur le modèle objet Excel, vous pouvez vous reporter à la documentation de référence de l'assembly PIA (Primary Interop Assembly) Excel et à la documentation de référence du modèle objet VBA.
 
 ### <a name="primary-interop-assembly-reference"></a>Référence d’assembly PIA (Primary Interop Assembly)
- La documentation de référence de l'assembly PIA Excel décrit les types de l'assembly PIA pour Excel. Cette documentation est disponible à partir de l’emplacement suivant : référence de l' [assembly PIA Excel 2010](/visualstudio/vsto/office-primary-interop-assemblies&view=vs-2019).
+ La documentation de référence de l'assembly PIA Excel décrit les types de l'assembly PIA pour Excel. Cette documentation est disponible à partir de l’emplacement suivant : référence de l' [assembly PIA Excel 2010](/visualstudio/vsto/office-primary-interop-assemblies).
 
  Pour plus d’informations sur la conception de l’assembly PIA Excel, notamment les différences entre les classes et les interfaces dans l’assembly PIA et le mode d’implémentation des événements dans l’ASSEMBLy Pia, consultez [vue d’ensemble des classes et des interfaces dans les assemblys PIA (Primary Interop Assembly](/previous-versions/office/office-12/ms247299(v=office.12))) d’Office.
 

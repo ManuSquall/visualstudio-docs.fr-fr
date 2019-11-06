@@ -10,12 +10,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 564672e01eeffbdcb53bf1af08f329d2f6bf218f
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: dd7b8f7b88040c7b80dcc6c40dc168a51890d8d2
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985783"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661837"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>Améliorer les performances d’un complément VSTO
   Vous pouvez offrir aux utilisateurs une meilleure expérience. En effet, en optimisant les compléments VSTO que vous créez pour les applications Office, vous pouvez leur permettre d’être plus rapides pour démarrer, arrêter, ouvrir des éléments et exécuter d’autres tâches. Si vous créez un complément VSTO pour Outlook, vous pouvez également réduire les risques de désactivation du complément VSTO en raison de performances insuffisantes. Pour améliorer les performances du complément VSTO, vous pouvez implémenter les stratégies suivantes :
@@ -28,7 +28,7 @@ ms.locfileid: "72985783"
 
 - [Effectuer les opérations coûteuses dans un thread d'exécution distinct](#Perform)
 
-  Pour plus d’informations sur l’optimisation d’un complément VSTO Outlook, consultez [critères de performances pour conserver les compléments VSTO activés](/previous-versions/office/jj228679(v=office.15)#ol15WhatsNew_AddinDisabling).
+  Pour plus d’informations sur l’optimisation d’un complément VSTO Outlook, consultez [critères de performances pour conserver les compléments VSTO activés](/previous-versions/office/jj228679(v=office.15)#performance-criteria-for-keeping-add-ins-enabled).
 
 ## <a name="Load"></a> Charger les compléments VSTO à la demande
  Vous pouvez configurer un complément VSTO pour qu’il se charge uniquement dans les cas suivants :

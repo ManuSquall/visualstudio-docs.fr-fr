@@ -17,12 +17,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d917f0211a0888fa2a712b0c010cf6177823c223
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 08501d71400a0df139022f04e68573d0dd1449d1
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62430954"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661918"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Options pour Python dans Visual Studio
 
@@ -44,14 +44,14 @@ Il existe également des options supplémentaires spécifiques à Python sous l�
 
 (Onglet **Outils** > **Options** > **Python**.)
 
-| Option | Par défaut | Description |
+| Option | Valeur par défaut | Description |
 | --- | --- | --- |
 | **Afficher la fenêtre Sortie pendant la création d’environnements virtuels**| Activé | Désactivez-la pour empêcher la fenêtre **Sortie** de s’afficher. |
 | **Afficher la fenêtre Sortie pendant l’installation ou la suppression des packages** | Activé | Désactivez-la pour empêcher la fenêtre **Sortie** de s’afficher. |
 | **Afficher la barre de notification pour créer des environnements** | Activé | *Visual Studio 2019 uniquement.* Lorsque cette option est définie et que l’utilisateur ouvre un projet qui contient un fichier *requirements.txt* ou *environment.yml*, Visual Studio affiche une barre d’informations avec des suggestions pour créer un environnement virtuel ou un environnement conda, respectivement, au lieu d’utiliser l’environnement global par défaut. |
 | **Afficher la barre de notification pour installer des packages** | Activé | *Visual Studio 2019 uniquement.* Lorsque cette option est définie et que l’utilisateur ouvre un projet qui contient un fichier *requirements.txt* (et n’utilise pas l’environnement global par défaut), Visual Studio compare ces exigences avec les packages installés dans l’environnement actuel. Si des packages sont manquants, Visual Studio affiche une invite pour installer ces dépendances. |
 | **Toujours exécuter des Gestionnaires de package en tant qu’administrateur** | Off | Élève toujours les privilèges de `pip install` et d’opérations de gestionnaire de package similaires pour tous les environnements. Au moment de l’installation des packages, Visual Studio demande des privilèges d’administrateur, si l’environnement se trouve dans une zone protégée du système de fichiers, par exemple *c:\Program Files*. Dans cette invite, vous pouvez choisir de toujours élever les privilèges de la commande d’installation pour cet environnement uniquement. Consultez [Onglet packages](python-environments-window-tab-reference.md#packages-tab). |
-| **Générer automatiquement la base de données de saisie semi-automatique à la première utilisation** | Activé | *S’applique à Visual Studio 2017 version 15.5, versions antérieures et versions ultérieures lorsque vous utilisez une base de données IntelliSense.* Donne la priorité à l’achèvement de la base de données pour une bibliothèque quand vous écrivez du code qui l’utilise. Pour plus d’informations, voir [Onglet IntelliSense](python-environments-window-tab-reference.md#intellisense-tab). |
+| **Générer automatiquement la base de données de saisie semi-automatique à la première utilisation** | Activé | *S’applique à Visual Studio 2017 version 15.5, versions antérieures et versions ultérieures lorsque vous utilisez une base de données IntelliSense.* Donne la priorité à l’achèvement de la base de données pour une bibliothèque quand vous écrivez du code qui l’utilise. Pour plus d’informations, voir [Onglet IntelliSense](python-environments-window-tab-reference.md?view=vs-2017#intellisense-tab). |
 | **Ignorer les variables PYTHONPATH à l’échelle du système** | Activé | PYTHONPATH est ignoré par défaut, car Visual Studio fournit un moyen plus direct de spécifier des chemins de recherche dans les projets et environnements. Consultez la page [Chemins de recherche](search-paths.md) pour plus d’informations. |
 | **Mettre à jour les chemins de recherche lors de l’ajout de fichiers liés** | Activé | Quand cette option est définie, l’ajout d’un [fichier lié](managing-python-projects-in-visual-studio.md#linked-files) à un projet met à jour les [Chemins de recherche](search-paths.md) afin qu’IntelliSense puisse inclure le contenu du dossier du fichier lié dans sa base de données de saisie semi-automatique. Désactivez cette option pour exclure ce contenu de la base de données de saisie semi-automatique. |
 | **Avertir quand le module importé est introuvable** | Activé | Désactivez cette option pour supprimer les avertissements quand vous savez qu’un module importé n’est actuellement pas disponible, mais n’affecte pas par ailleurs le fonctionnement du code. |
@@ -71,7 +71,7 @@ Il existe également des options supplémentaires spécifiques à Python sous l�
 
 (Onglet **Outils** > **Options** > **Python** > **Conda**.)
 
-| Option | Par défaut | Description |
+| Option | Valeur par défaut | Description |
 | --- | --- | --- |
 | **Chemin de l’exécutable Conda** | (vide) | Spécifie un chemin d’accès exact à l’exécutable *conda.exe* au lieu de compter sur l’installation Miniconda par défaut qui est fournie avec la charge de travail Python. Si un autre chemin d’accès est indiqué ici, il est prioritaire sur l’installation par défaut et les autres exécutables conda.exe spécifiés dans le Registre. Vous pouvez modifier ce paramètre si vous installez manuellement une version plus récente d’Anaconda ou de Miniconda, ou si vous souhaitez utiliser une distribution 32 bits au lieu de la distribution 64 bits par défaut. |
 
@@ -83,7 +83,7 @@ Il existe également des options supplémentaires spécifiques à Python sous l�
 
 (Onglet **Outils** > **Options** > **Python** > **Débogage**.)
 
-| Option | Par défaut | Description |
+| Option | Valeur par défaut | Description |
 | --- | --- | --- |
 | **Demander avant d’exécuter en présence d’erreurs** | Activé | Quand cette option est définie, vous êtes invité à confirmer que vous souhaitez exécuter le code qui contient des erreurs. Désactivez cette option pour désactiver l’avertissement. |
 | **Attendre une entrée quand le processus quitte de manière inhabituelle**<br/><br/>**Attendre une entrée quand le processus quitte de manière habituelle** | Activées (toutes deux) | Un programme Python démarré à partir de Visual Studio s’exécute dans sa propre fenêtre de console. Par défaut, la fenêtre attend que vous appuyiez sur une touche avant de se fermer, quelle que soit la façon dont le programme se termine. Pour supprimer cette invite et fermer la fenêtre automatiquement, désactivez l’une de ces options, ou les deux. |
@@ -104,7 +104,7 @@ Il existe également des options supplémentaires spécifiques à Python sous l�
 
 (Onglet **Outils** > **Options** > **Python** > **Diagnostics**.)
 
-| Option | Par défaut | Description |
+| Option | Valeur par défaut | Description |
 | --- | --- | --- |
 | **Inclure les journaux d’analyse** | Activé | Inclut des journaux détaillés relatifs à l’analyse des environnements Python installés lors de l’enregistrement des diagnostics dans un fichier ou en les copiant dans le Presse-papiers à l’aide des boutons. Cette option peut augmenter considérablement la taille du fichier généré, mais elle est souvent nécessaire pour diagnostiquer les problèmes IntelliSense. |
 | Bouton **Enregistrer le diagnostic dans un fichier** | N/A | Demande un nom de fichier, puis enregistre le journal dans un fichier texte. |
@@ -116,7 +116,7 @@ Il existe également des options supplémentaires spécifiques à Python sous l�
 
 (Onglet **Outils** > **Options** > **Python** > **Fenêtres interactives**.)
 
-| Option | Par défaut | Description |
+| Option | Valeur par défaut | Description |
 | --- | --- | --- |
 | **Scripts** | N/A | Spécifie un dossier général pour les scripts de démarrage à appliquer aux fenêtres **interactives** pour tous les environnements. Consultez [Scripts de démarrage](python-environments-window-tab-reference.md#startup-scripts). Notez, toutefois, que cette fonctionnalité ne fonctionne pas pour l’instant. |
 | **Les flèches Haut/Bas permettent de naviguer dans l’historique** | Activé | Utilise les touches de direction pour naviguer dans l’historique de la fenêtre **Interactive**. Désactivez ce paramètre afin d’utiliser les touches de direction pour naviguer dans la sortie de la fenêtre **Interactive** à la place. |
@@ -130,7 +130,7 @@ Il existe également des options supplémentaires spécifiques à Python sous l�
 
 (Onglet **Outils** > **Options** > **Python** > **Serveur de langage**.)
 
-| Option | Par défaut | Description |
+| Option | Valeur par défaut | Description |
 | --- | --- | --- |
 | **Désactiver les complétions de Typeshed** | Off | Visual Studio IntelliSense utilise généralement une version groupée de Typeshed (un ensemble de fichiers *.pyi*) pour rechercher des indicateurs de type de bibliothèque standard et de bibliothèques tierces pour Python 2 et Python 3. La définition de cette option désactive le comportement TypeShed groupé. |
 | **Chemin Typeshed personnalisé** | (vide) | Si cette option est définie, Visual Studio utilise les fichiers Typeshed de ce chemin au lieu de sa version groupée. Ignorez si l’option **Désactiver les complétions de Typeshed** est définie. |
@@ -145,7 +145,7 @@ Il existe également des options supplémentaires spécifiques à Python sous l�
 
 ### <a name="completion-results"></a>Résultats de la saisie semi-automatique
 
-| Option | Par défaut | Description |
+| Option | Valeur par défaut | Description |
 | --- | --- | --- |
 | **La saisie semi-automatique des membres affiche l’intersection des membres** | Off | Quand cette option est définie, affiche uniquement les saisies semi-automatiques qui sont prises en charge par tous les types possibles. |
 | **Liste de filtres basée sur une chaîne de recherche** | Activé | Applique le filtrage des suggestions de saisie semi-automatique quand vous tapez (activée par défaut). |
@@ -153,7 +153,7 @@ Il existe également des options supplémentaires spécifiques à Python sous l�
 
 ### <a name="selection-in-completion-list"></a>Sélection dans la liste de saisie semi-automatique
 
-| Option | Par défaut | Description |
+| Option | Valeur par défaut | Description |
 | --- | --- | --- |
 | **Validé en tapant les caractères suivants** | **{}\[\]().,:;+-*/%&&#124;^~=<>#@\\** | Comme ces caractères suivent généralement un identificateur qui peut être sélectionné dans une liste de saisie semi-automatique, il est pratique de valider la saisie semi-automatique simplement en tapant un caractère. Vous pouvez supprimer ou ajouter des caractères spécifiques dans la liste si vous le souhaitez.  |
 | **Entrée valide la saisie semi-automatique actuelle** | Activé | Quand cette option est définie, la touche **Entrée** permet de choisir et d’appliquer la complétion sélectionnée, comme avec les caractères ci-dessus (mais, bien entendu, il n’existe pas de caractère pour la touche **Entrée** pouvant être intégré directement dans cette liste !). |
@@ -161,7 +161,7 @@ Il existe également des options supplémentaires spécifiques à Python sous l�
 
 ### <a name="miscellaneous-options"></a>Options diverses
 
-| Option | Par défaut | Description |
+| Option | Valeur par défaut | Description |
 | --- | --- | --- |
 | **Passer en mode Plan à l’ouverture des fichiers** | Activé | Activez automatiquement la fonctionnalité de mode Plan de Visual Studio dans l’éditeur lors de l’ouverture d’un fichier de code Python. |
 | **Le collage supprime les invites REPL** | Activé | Supprime **>>>** et **...** du texte collé, ce qui permet de transférer facilement le code de la fenêtre **Interactive** vers l’éditeur. Désactivez cette option si vous devez conserver ces caractères lors du collage à partir d’autres sources. |

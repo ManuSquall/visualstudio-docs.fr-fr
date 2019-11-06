@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fbdacb265d39c9aff96fed37c69c684aa3f8503b
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: f585a4ee58408e5f48c875602ba5531419dfd2ff
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189467"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661824"
 ---
 # <a name="troubleshoot-network-related-errors-when-you-install-or-use-visual-studio"></a>Résoudre les erreurs liées au réseau lorsque vous installez ou utilisez Visual Studio
 
@@ -137,7 +137,7 @@ Activez les connexions pour les URL suivantes :
 
 Vous pouvez rencontrer ce message d’erreur lorsque vous utilisez un programme d’amorçage Visual Studio et un fichier Response. JSON sur un lecteur réseau. La source de l’erreur est le contrôle de compte d’utilisateur (UAC) dans Windows.
 
-Voici pourquoi cette erreur peut se produire : un lecteur réseau mappé ou un partage [UNC](/dotnet/standard/io/file-patch-formats#unc-paths) est lié au jeton d’accès d’un utilisateur. Lorsque le contrôle de compte d’utilisateur est activé, deux [jetons d’accès](/windows/win32/secauthz/access-tokens) utilisateur sont créés : un *avec* un accès administrateur et un autre *sans* accès administrateur. Lors de la création d’un lecteur ou d’un partage réseau, le jeton d’accès actuel de l’utilisateur est lié à celui-ci. Étant donné que le programme d’amorçage doit être exécuté en tant qu’administrateur, il ne peut pas accéder au lecteur réseau ou au partage si le lecteur ou le partage n’est pas lié à un jeton d’accès utilisateur disposant d’un accès administrateur.
+Voici pourquoi cette erreur peut se produire : un lecteur réseau mappé ou un partage [UNC](/dotnet/standard/io/file-path-formats#unc-paths) est lié au jeton d’accès d’un utilisateur. Lorsque le contrôle de compte d’utilisateur est activé, deux [jetons d’accès](/windows/win32/secauthz/access-tokens) utilisateur sont créés : un *avec* un accès administrateur et un autre *sans* accès administrateur. Lors de la création d’un lecteur ou d’un partage réseau, le jeton d’accès actuel de l’utilisateur est lié à celui-ci. Étant donné que le programme d’amorçage doit être exécuté en tant qu’administrateur, il ne peut pas accéder au lecteur réseau ou au partage si le lecteur ou le partage n’est pas lié à un jeton d’accès utilisateur disposant d’un accès administrateur.
 
 ### <a name="to-fix-this-error"></a>Pour corriger cette erreur
 
