@@ -6,22 +6,22 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 26A0DE31-2FBF-4E1B-99FB-083111AA1680
-ms.openlocfilehash: 8f54b4c43ed0c438b7d02e4fc08fbb3dff36c34b
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
-ms.translationtype: HT
+ms.openlocfilehash: 8132a7f92986b853ffc2b20b93d0db34f7ac1880
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70108108"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73715897"
 ---
 # <a name="creating-and-editing-a-custom-editorconfig-file"></a>Création et modification d’un fichier EditorConfig personnalisé
 
-Dans Visual Studio pour Mac, vous pouvez ajouter un fichier [EditorConfig](http://editorconfig.org/) à votre projet ou votre solution pour permettre à tous ceux qui travaillent dans le code base d’utiliser des styles de codage cohérents. Les paramètres déclarés dans le fichier EditorConfig sont prioritaires sur les paramètres globaux de l’éditeur de texte de Visual Studio pour Mac. L’utilisation d’un fichier EditorConfig dans votre projet ou code base vous permet de définir le style de codage, les préférences et les avertissements relatifs à votre projet. Dans la mesure où le fichier fait partie de votre code base, il est plus facile pour l’ensemble des utilisateurs d’adhérer aux pratiques de codage d’un projet, quel que soit l’IDE ou l’éditeur de code utilisé.
+Dans Visual Studio pour Mac, vous pouvez ajouter un fichier [EditorConfig](https://editorconfig.org/) à votre projet ou votre solution pour permettre à tous ceux qui travaillent dans le code base d’utiliser des styles de codage cohérents. Les paramètres déclarés dans le fichier EditorConfig sont prioritaires sur les paramètres globaux de l’éditeur de texte de Visual Studio pour Mac. L’utilisation d’un fichier EditorConfig dans votre projet ou code base vous permet de définir le style de codage, les préférences et les avertissements relatifs à votre projet. Dans la mesure où le fichier fait partie de votre code base, il est plus facile pour l’ensemble des utilisateurs d’adhérer aux pratiques de codage d’un projet, quel que soit l’IDE ou l’éditeur de code utilisé.
 
-Les fichiers [EditorConfig](http://editorconfig.org/) sont pris en charge sur de nombreux IDE et éditeurs de code, notamment Visual Studio 2017.
+Les fichiers [EditorConfig](https://editorconfig.org/) sont pris en charge sur de nombreux IDE et éditeurs de code, notamment Visual Studio 2017.
 
 ## <a name="supported-settings"></a>Paramètres pris en charge
 
-L’éditeur de Visual Studio pour Mac prend en charge le jeu principal de [propriétés EditorConfig](http://editorconfig.org/#supported-properties) :
+L’éditeur de Visual Studio pour Mac prend en charge le jeu principal de [propriétés EditorConfig](https://editorconfig.org/#supported-properties) :
 
 - `indent_style`
 - `indent_size`
@@ -52,7 +52,7 @@ EditorConfig prend également en charge les [conventions de codage](/visualstudi
 
     ![Élément de solution affiché dans le panneau Solutions](media/editorconfig-image1a.png)
 
-4. Modifiez le fichier. Par exemple :
+4. Modifiez le fichier. Exemple :
 
     ```EditorConfig
     # This file is the top-most EditorConfig file
@@ -134,7 +134,7 @@ Dans l’exemple ci-dessus, certains paramètres sont appliqués à tous les fic
 
 ![Après l’application des paramètres editorconfig](media/editorconfig-image5.png)
 
-Pour plus d’informations sur les paramètres EditorConfig disponibles, consultez l’article [Paramètres des conventions de codage .NET pour EditorConfig](/visualstudio/ide/editorconfig-code-style-settings-reference) et la section [Propriétés prises en charge](http://editorconfig.org/#supported-properties) dans la documentation officielle.
+Pour plus d’informations sur les paramètres EditorConfig disponibles, consultez l’article [Paramètres des conventions de codage .NET pour EditorConfig](/visualstudio/ide/editorconfig-code-style-settings-reference) et la section [Propriétés prises en charge](https://editorconfig.org/#supported-properties) dans la documentation officielle.
 
 ## <a name="override-editorconfig-settings"></a>Substituer les paramètres d’EditorConfig
 

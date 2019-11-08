@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 386a489faf859038cd0f529da74a0fbac07b7250
-ms.sourcegitcommit: f9f389e72787de30eb869a55ef7725a10a4011f0
+ms.openlocfilehash: 7bd03ead39d0b2b5013075de017954f0c0c30e8c
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73636539"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73714488"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Déboguer une application JavaScript ou TypeScript dans Visual Studio
 
@@ -86,7 +86,7 @@ Pour ce scénario, utilisez Chrome.
 
     `msedge --remote-debugging-port=9222`
 
-    Ni
+    ni
 
     `chrome.exe --remote-debugging-port=9222`
     ::: moniker-end
@@ -157,7 +157,7 @@ Pour attacher le débogueur de Visual Studio et atteindre des points d’arrêt 
 
     Pendant que l’exécution du débogueur est en pause, vous pouvez examiner l’état de votre application en pointant sur les variables et en utilisant les fenêtres du débogueur. Vous pouvez faire avancer le débogueur en exécutant pas à pas le code (**F5**, **F10** et **F11**). Pour plus d’informations sur les fonctionnalités de débogage de base, consultez [premier aperçu du débogueur](../debugger/debugger-feature-tour.md).
 
-    Vous pouvez atteindre le point d’arrêt dans le fichier *. js* ou dans le fichier source, en fonction des étapes que vous avez suivies précédemment, ainsi que de l’état de votre environnement et de votre navigateur. De toute façon, vous pouvez exécuter pas à pas le code et examiner les variables.
+    Vous pouvez atteindre le point d’arrêt dans un fichier *. js* ou un fichier source compilé, en fonction de votre type d’application, des étapes que vous avez suivies précédemment, ainsi que d’autres facteurs tels que l’état de votre navigateur. De toute façon, vous pouvez exécuter pas à pas le code et examiner les variables.
 
    * Si vous devez vous arrêter dans du code dans un fichier source de machine à écrire, JSX ou *. vue* et que vous ne pouvez pas le faire, assurez-vous que votre environnement est configuré correctement, comme décrit dans la section [résolution des problèmes](#troubleshooting_source_maps) .
 
@@ -171,7 +171,7 @@ Si vous devez vous arrêter dans du code dans un fichier source de machine à é
       
 * Veillez [à démarrer le navigateur en mode débogage](#prepare_the_browser_for_debugging).
 
-* Assurez-vous que votre fichier de mappage source inclut la référence correcte à votre fichier source et qu’il n’inclut pas de préfixes non pris en charge, tels que *WebPack:///* , ce qui empêche le débogueur Visual Studio de localiser un fichier source. Par exemple, une référence comme *WebPack:///.app.TSX* peut être corrigée en *./app.TSX*. Vous pouvez effectuer cette opération manuellement dans le fichier de mappage source ou par le biais d’une configuration de build personnalisée. Pour plus d’informations, consultez [générer des mappages de sources pour le débogage](#generate_source_maps).
+* Assurez-vous que votre fichier de mappage source inclut le chemin d’accès relatif correct à votre fichier source et qu’il n’inclut pas de préfixes non pris en charge, tels que *WebPack:///* , ce qui empêche le débogueur Visual Studio de localiser un fichier source. Par exemple, une référence comme *WebPack:///.app.TSX* peut être corrigée en *./app.TSX*. Vous pouvez effectuer cette opération manuellement dans le fichier de mappage source (ce qui est utile pour les tests) ou par le biais d’une configuration de build personnalisée. Pour plus d’informations, consultez [générer des mappages de sources pour le débogage](#generate_source_maps).
 
 Sinon, si vous devez vous arrêter dans le code d’un fichier source (par exemple, *app. TSX*) et que vous ne pouvez pas le faire, essayez d’utiliser l’instruction `debugger;` dans le fichier source, ou définissez des points d’arrêt dans le outils de développement chrome (ou les outils F12 pour Microsoft Edge) à la place.
 

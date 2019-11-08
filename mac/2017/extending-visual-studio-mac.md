@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 26290a5e70a9f4b0f6eeb8df5727ef4f04662136
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
-ms.translationtype: HT
+ms.openlocfilehash: 87a4fae1bd5430037b34297f803a6d955a052f68
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67890639"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73716937"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Extension de Visual Studio pour Mac
 
@@ -28,7 +28,7 @@ Pour qu’un package d’extension soit créé à partir de Visual Studio pour M
 L’avantage de cette conception modulaire est que Visual Studio pour Mac est extensible : il existe de nombreux points d’extension sur lesquels peuvent être créés des packages d’extension personnalisés. La prise en charge de C# et de F#, des outils de débogage et des modèles de projet sont des exemples de packages d’extension existants.
 
 > [!NOTE]
-> Si vous avez un projet Add-in Maker créé avant Add-in Maker 1.2, vous devez migrer votre projet comme indiqué dans les étapes décrites [ici](https://mhut.ch/addinmaker/1.2).
+> Si vous avez un projet de création de compléments qui a été créé avant Add-in Maker 1,2, vous devez migrer votre projet comme indiqué dans les étapes [ci-dessous](https://mhut.ch/addinmaker/1.2).
 
 <!---The [Walkthrough](~/extending-visual-studio-mac-walkthrough.md) topic explains how to build an extension package that uses a *Command* to insert the date and time into an open text document.--->
 
@@ -135,7 +135,7 @@ Ceci lie la commande et l’élément de commande : l’élément de commande a
 
 <!--The extension package detailed in the [Walkthrough](~/extending-visual-studio-mac-walkthrough.md) deals with the Text Editor in Visual Studio for Mac, but this is only one of many possible areas for customization. -->
 
-Pour plus d’informations sur l’étendue de ce qui peut faire l’objet de développements, consultez [Extension Tree Reference](http://monodevelop.com/Developers/Articles/Extension_Tree_Reference) et [API Overview](http://monodevelop.com/Developers/Articles/API_Overview). Si vous créez des packages d’extension avancés, reportez-vous aussi à [Developer Articles](http://monodevelop.com/Developers/Articles). Voici une liste partielle des éléments que vous pouvez personnaliser :
+Pour plus d’informations sur l’étendue de ce qui peut faire l’objet de développements, consultez [Extension Tree Reference](https://www.monodevelop.com/developers/articles/extension-tree-reference/) et [API Overview](https://www.monodevelop.com/developers/articles/api-overview/). Si vous créez des packages d’extension avancés, reportez-vous aussi à [Developer Articles](https://www.monodevelop.com/developers/articles/). Voici une liste partielle des éléments que vous pouvez personnaliser :
 
 * Panneaux
 * Schémas de combinaisons de touches
@@ -155,7 +155,7 @@ Pour plus d’informations sur l’étendue de ce qui peut faire l’objet de d�
 * Versions cibles de .NET Framework
 * Runtime cible
 * Back-ends de système de contrôle de version
-* Refactorisation
+* Refactoring
 * Gestionnaires d’exécution
 * Mise en surbrillance de la syntaxe
 

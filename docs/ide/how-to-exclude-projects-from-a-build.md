@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Exclure des projets d’une build'
+title: Guide pratique pour exclure des projets d’une build
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -9,14 +9,14 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54e65c411afe9815696112dfbcc99bcb9433c4db
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
-ms.translationtype: HT
+ms.openlocfilehash: e72b072ad2cabab643d64f149a31b1b8dbb2a054
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416866"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713947"
 ---
-# <a name="how-to-exclude-projects-from-a-build"></a>Procédure : Exclure des projets d’une build
+# <a name="how-to-exclude-projects-from-a-build"></a>Guide pratique pour exclure des projets d’une build
 
 Vous pouvez générer une solution sans générer tous les projets qu'elle contient. Par exemple, vous pouvez exclure un projet qui interrompt la génération. Vous pouvez ensuite générer le projet, une fois les problèmes identifiés et résolus.
 
@@ -53,6 +53,19 @@ Pour plus d’informations, consultez [Présentation des configurations de build
 6. Dans la barre d’outils **Standard**, vérifiez que la nouvelle configuration de solution est la configuration active dans la zone **Configurations de solutions**.
 
 7. Dans la barre de menus, sélectionnez **Générer** > **Régénérer la solution**.
+
+## <a name="skipped-projects"></a>Projets ignorés
+
+Les projets peuvent être ignorés pendant la génération, car ils ne sont pas à jour ou parce qu’ils sont exclus de la configuration. Visual Studio utilise MSBuild pour générer vos projets. MSBuild génère uniquement une cible si la sortie est antérieure à l’entrée, comme déterminé par les horodateurs de fichier. Pour forcer une régénération, utilisez la commande **générer** > générer la **solution**.
+
+Dans le volet de **génération** de la fenêtre **sortie** , Visual Studio signale le nombre de projets à jour, le nombre qui a été généré avec succès, le nombre qui a échoué et le nombre qui a été ignoré. Le nombre ignoré n’inclut pas les projets qui n’ont pas été générés, car ils étaient à jour. Lorsque les projets sont exclus de la configuration active, ils sont ignorés pendant la génération. Dans la sortie de la génération, vous voyez un message indiquant que le projet est ignoré :
+
+```output
+2>------ Skipped Build: Project: ConsoleApp2, Configuration: Debug x86 ------
+2>Project not selected to build for this solution configuration
+```
+
+Pour déterminer la raison pour laquelle un projet a été ignoré, notez la configuration active (`Debug x86` dans l’exemple précédent) et choisissez **générer** > **Configuration Manager**. Vous pouvez afficher ou modifier les projets ignorés pour chaque configuration, comme indiqué dans cet article.
 
 ## <a name="see-also"></a>Voir aussi
 

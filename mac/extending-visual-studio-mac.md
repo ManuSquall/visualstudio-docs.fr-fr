@@ -1,17 +1,17 @@
 ---
 title: Extension de Visual Studio pour Mac
 description: Les fonctionnalités de Visual Studio pour Mac peuvent être étendues avec des modules appelés « packages d’extension ». La première partie de ce guide crée un package d’extension simple de Visual Studio pour Mac qui permet d’insérer la date et l’heure dans un document. La seconde partie de ce guide présente les concepts de base du système des packages d’extension et certaines des API principales qui sont à la base de Visual Studio pour Mac.
-author: alanjclark
-ms.author: alcl
+author: conceptdev
+ms.author: crdun
 ms.date: 05/07/2019
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: f9c14b408a7714f06ae8a96b0ecc60dfc4b8ebe7
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
-ms.translationtype: HT
+ms.openlocfilehash: 02285a38214b4f13c45b4868599c84f47e67013c
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691662"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73716830"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Extension de Visual Studio pour Mac
 
@@ -28,7 +28,7 @@ Pour qu’un package d’extension soit créé à partir de Visual Studio pour M
 L’avantage de cette conception modulaire est que Visual Studio pour Mac est extensible : il existe de nombreux points d’extension sur lesquels peuvent être créés des packages d’extension personnalisés. La prise en charge de C# et de F#, des outils de débogage et des modèles de projet sont des exemples de packages d’extension existants.
 
 > [!NOTE]
-> Si vous avez un projet Add-in Maker créé avant Add-in Maker 1.2, vous devez migrer votre projet comme indiqué dans les étapes décrites [ici](https://mhut.ch/addinmaker/1.2).
+> Si vous avez un projet de création de compléments qui a été créé avant Add-in Maker 1,2, vous devez migrer votre projet comme indiqué dans les étapes [ci-dessous](https://mhut.ch/addinmaker/1.2).
 
 <!---The [Walkthrough](~/extending-visual-studio-mac-walkthrough.md) topic explains how to build an extension package that uses a *Command* to insert the date and time into an open text document.--->
 
@@ -135,7 +135,7 @@ Cela lie la commande et l’élément de commande : l’élément de commande a
 
 <!--The extension package detailed in the [Walkthrough](~/extending-visual-studio-mac-walkthrough.md) deals with the Text Editor in Visual Studio for Mac, but this is only one of many possible areas for customization. -->
 
-Pour plus d’informations sur l’étendue de ce qui peut faire l’objet de développements, consultez [Extension Tree Reference](http://monodevelop.com/Developers/Articles/Extension_Tree_Reference) et [API Overview](http://monodevelop.com/Developers/Articles/API_Overview). Si vous créez des packages d’extension avancés, reportez-vous aussi à [Developer Articles](http://monodevelop.com/Developers/Articles). Voici une liste partielle des éléments que vous pouvez personnaliser :
+Pour plus d’informations sur l’étendue de ce qui peut faire l’objet de développements, consultez [Extension Tree Reference](https://www.monodevelop.com/developers/articles/extension-tree-reference/) et [API Overview](https://www.monodevelop.com/developers/articles/api-overview/). Si vous créez des packages d’extension avancés, reportez-vous aussi à [Developer Articles](https://www.monodevelop.com/developers/articles/). Voici une liste partielle des éléments que vous pouvez personnaliser :
 
 * Panneaux
 * Schémas de combinaisons de touches
@@ -155,7 +155,7 @@ Pour plus d’informations sur l’étendue de ce qui peut faire l’objet de d�
 * Versions cibles de .NET Framework
 * Runtime cible
 * Back-ends de système de contrôle de version
-* Refactorisation
+* Refactoring
 * Gestionnaires d’exécution
 * Mise en surbrillance de la syntaxe
 
@@ -174,13 +174,13 @@ Un des nombreux avantages du partage de l’éditeur entre Visual Studio et Visu
 
 Avant de nous pencher sur les détails de l’extension spécifique à Visual Studio pour Mac, il convient d’en savoir plus sur l’éditeur partagé lui-même. Voici quelques ressources qui peuvent approfondir cette compréhension :
 
-* [Managed Extensibility Framework](https://docs.microsoft.com/dotnet/framework/mef/index)
-* [MEF dans l’éditeur](https://docs.microsoft.com/visualstudio/extensibility/managed-extensibility-framework-in-the-editor)
-* [Dans l’éditeur](https://docs.microsoft.com/visualstudio/extensibility/inside-the-editor)
-* [Points d’extension du service de langage et de l’éditeur](https://docs.microsoft.com/visualstudio/extensibility/language-service-and-editor-extension-points)
+* [Managed Extensibility Framework](/dotnet/framework/mef/index)
+* [MEF dans l’éditeur](/visualstudio/extensibility/managed-extensibility-framework-in-the-editor)
+* [Dans l’éditeur](/visualstudio/extensibility/inside-the-editor)
+* [Points d’extension du service de langage et de l’éditeur](/visualstudio/extensibility/language-service-and-editor-extension-points)
 * [Une vidéo de présentation de l’architecture de l’éditeur](https://www.youtube.com/watch?v=PkYVztKjO9A)
 
-Avec ces ressources à portée de main, les principaux concepts avez lesquels vous devez vous familiariser sont [`ITextBuffer`](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.text.itextbuffer) et [`ITextView`](https://docs.microsoft.com/dotnet/api/microsoft.visualstudio.text.editor.itextview) :
+Avec ces ressources à portée de main, les principaux concepts avez lesquels vous devez vous familiariser sont [`ITextBuffer`](/dotnet/api/microsoft.visualstudio.text.itextbuffer) et [`ITextView`](/dotnet/api/microsoft.visualstudio.text.editor.itextview) :
 
 * Un `ITextBuffer` est une représentation de texte en mémoire qui peut être modifiée au fil du temps. La propriété `CurrentSnapshot` sur `ITextBuffer` retourne une représentation *immuable* du contenu actuel de la mémoire tampon, une instance de `ITextSnapshot`. Lorsqu’une modification est effectuée sur la mémoire tampon, la propriété CurrentSnapshot est mise à jour vers la dernière version. Les analyseurs peuvent inspecter l’instantané de texte sur n’importe quel thread et son contenu a l’assurance de ne jamais changer.
 

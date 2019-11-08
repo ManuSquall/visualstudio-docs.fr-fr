@@ -5,12 +5,12 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 09/18/2019
 ms.assetid: 5399BCB1-E317-4C7B-87B1-C531E985DE6E
-ms.openlocfilehash: 5a0d7c6646fac83ef70fbe2aa7384dcee992d726
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.openlocfilehash: d089f38bd91eda2565f215e8d15a74cc119b8767
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128447"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73714404"
 ---
 # <a name="build-actions"></a>Actions de génération
 
@@ -33,10 +33,10 @@ Voici quelques-unes des actions de génération courantes pour les projets que v
 
 |Action de génération | Types de projet | Description |
 |--|--|--|
-| **Compiler** | any | Le fichier est passé au C# compilateur en tant que fichier source.|
+| **Compiler** | indifférent | Le fichier est passé au C# compilateur en tant que fichier source.|
 | **Humidité** | .NET, Xamarin | Pour les projets ASP.NET, ces fichiers sont ajoutés pour faire partie du site au moment de son déploiement. Pour les projets Xamarin.iOS et Xamarin.Mac, ils sont inclus dans le bundle d’applications.|
-| **Ressource incorporée** | .NET | Le fichier est passé au C# compilateur en tant que ressource à incorporer dans l’assembly. [Assembly.GetManifestResourceStream](https://docs.microsoft.com/dotnet/api/system.reflection.assembly.getmanifestresourcestream), de l’espace de noms `System.Reflection`, peut ensuite être utilisé pour lire le fichier à partir de l’assembly.|
-| **Aucun** | any | Le fichier ne fait pas partie de la build et est inclus dans le projet pour faciliter l’accès à partir de l’IDE. Cette valeur peut être utilisée pour les fichiers de documentation tels que les fichiers « Lisez-moi ».|
+| **Ressource incorporée** | .NET | Le fichier est passé au C# compilateur en tant que ressource à incorporer dans l’assembly. [Assembly.GetManifestResourceStream](/dotnet/api/system.reflection.assembly.getmanifestresourcestream), de l’espace de noms `System.Reflection`, peut ensuite être utilisé pour lire le fichier à partir de l’assembly.|
+| **Aucun** | indifférent | Le fichier ne fait pas partie de la build et est inclus dans le projet pour faciliter l’accès à partir de l’IDE. Cette valeur peut être utilisée pour les fichiers de documentation tels que les fichiers « Lisez-moi ».|
 
 > [!NOTE]
 > D’autres actions de génération peuvent être définies pour des types de projet spécifiques. Par conséquent, la liste des actions de génération dépend du type de projet et des valeurs, qui ne figurent pas dans cette liste, peuvent apparaître.  
