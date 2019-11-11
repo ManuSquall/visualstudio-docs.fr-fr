@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 7bd03ead39d0b2b5013075de017954f0c0c30e8c
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: 0405488f6f456f22711498e81789881ffc5a0a8a
+ms.sourcegitcommit: 308a2bdbea81df78bffc3a01afce4ab13131fabc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73714488"
+ms.lasthandoff: 11/11/2019
+ms.locfileid: "73912998"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Déboguer une application JavaScript ou TypeScript dans Visual Studio
 
@@ -105,13 +105,13 @@ Pour ce scénario, utilisez Chrome.
 
 Pour attacher le débogueur de Visual Studio et atteindre des points d’arrêt dans le code côté client, le débogueur a besoin d’aide pour identifier le processus correct. Voici une façon d’y parvenir.
 
-1. Basculez vers Visual Studio, puis définissez un point d’arrêt dans votre code source, qui peut être un fichier JavaScript, un fichier dactylographié, un fichier *. vue* ou un fichier jsx. (Définissez le point d’arrêt dans une ligne de code qui autorise les points d’arrêt, par exemple une instruction return ou une déclaration var.)
+1. Basculez vers Visual Studio, puis définissez un point d’arrêt dans votre code source, qui peut être un fichier JavaScript, un fichier de base de code ou un fichier JSX. (Définissez le point d’arrêt dans une ligne de code qui autorise les points d’arrêt, par exemple une instruction return ou une déclaration var.)
 
     ![Définir un point d'arrêt](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
     Pour rechercher le code spécifique dans un fichier compilé, utilisez **Ctrl**+**F** (**modifier** > **Rechercher et remplacer** > **recherche rapide**).
 
-    Pour le code côté client, pour atteindre un point d’arrêt dans un fichier de base de code, le fichier *. vue*ou jsx requiert généralement l’utilisation de [mappages de source](#generate_source_maps). Un mappage source doit être configuré correctement pour prendre en charge le débogage dans Visual Studio.
+    Pour le code côté client, pour atteindre un point d’arrêt dans un fichier de base de code ou un fichier JSX, vous devez généralement utiliser des [mappages de source](#generate_source_maps). Un mappage source doit être configuré correctement pour prendre en charge le débogage dans Visual Studio.
 
 2. Sélectionnez votre navigateur cible comme cible de débogage dans Visual Studio, puis appuyez sur **Ctrl**+**F5** (**Déboguer** > exécuter **sans débogage**) pour exécuter l’application dans le navigateur.
 
@@ -165,7 +165,7 @@ Pour attacher le débogueur de Visual Studio et atteindre des points d’arrêt 
 
 ### <a name="troubleshooting_source_maps"></a>Dépannage des points d’arrêt et des mappages de sources
 
-Si vous devez vous arrêter dans du code dans un fichier source de machine à écrire, JSX ou *. vue* et que vous ne pouvez pas le faire, utilisez **attacher au processus** comme décrit dans les étapes précédentes pour attacher le débogueur. Assurez-vous que votre environnement est correctement configuré :
+Si vous devez vous arrêter dans du code dans un fichier source de machine à écrire ou JSX et que vous ne pouvez pas le faire, utilisez **attacher au processus** comme décrit dans les étapes précédentes pour attacher le débogueur. Assurez-vous que votre environnement est correctement configuré :
 
 * Vous avez fermé toutes les instances de navigateur, y compris les extensions chrome (à l’aide du gestionnaire des tâches), afin de pouvoir exécuter le navigateur en mode débogage.
       
