@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/30/2019
 ms.topic: conceptual
 description: Découvrez comment vous pouvez utiliser Azure DevOps en tant qu’abonné Visual Studio.
-ms.openlocfilehash: 227ba1652c592a6fdf3f20bdb5052d9330f142a1
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
+ms.openlocfilehash: 9b4c616c870f0834b6974d59540035687b32fc12
+ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314154"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73983692"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Avantages Azure DevOps pour les abonnés Visual Studio
 En tant qu’abonné Visual Studio actif, vous avez accès à une large gamme de fonctionnalités dans Azure DevOps qui sont comprises dans votre abonnement sous forme d’avantages. Vous pouvez utiliser ces fonctionnalités dans chaque organisation Azure DevOps dont vous êtes membre, que vous ayez créé l’organisation ou que vous ayez été ajouté par quelqu’un d’autre.
@@ -25,7 +25,9 @@ Quand vous vous connectez à Azure DevOps avec l’identité que vous avez utili
 | Niveau d'abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard, cloud mensuel)   | Licences en volume, Azure, Détail, NFR sélectif<sup>1</sup>  | Azure Boards & pensions (de base), Azure Test Plans, Azure Pipelines (auto-hébergé)       |  Oui          |
-| Visual Studio Professional (Standard, cloud mensuel) | Licences en volume, Azure, Détail,                                        | Azure Boards & Repos (De base)                                                            |  Oui          |
+| Visual Studio Enterprise avec GitHub Enterprise   | LV| Azure Boards & pensions (de base), Azure Test Plans, Azure Pipelines (auto-hébergé)       |  Oui          |
+| Visual Studio Professional (Standard, cloud mensuel) | Licences en volume, Azure, Détail                                        | Azure Boards & Repos (De base)                                                            |  Oui          |
+| Visual Studio Professional avec GitHub Enterprise | LV| Azure Boards & Repos (De base)                                                            |  Oui          |
 | Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Azure Boards & Repos (De base), Azure Test Plans                                              |  Oui          |
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Azure Boards & Repos (De base), Azure Test Plans                                              |  Oui          |
 ||
@@ -49,3 +51,5 @@ En savoir plus sur les fonctionnalités Azure DevOps :
 - [Azure Boards & Repos (De base)](https://azure.microsoft.com/services/devops/compare-features/)
 - [Azure Test Plans](https://marketplace.visualstudio.com/items?itemName=ms.vss-testmanager-web)
 - [Azure Artifacts](https://marketplace.visualstudio.com/items?itemName=ms.feed)
+
+Découvrez comment activer votre [crédit Azure DevTest individuel](vs-azure.md).

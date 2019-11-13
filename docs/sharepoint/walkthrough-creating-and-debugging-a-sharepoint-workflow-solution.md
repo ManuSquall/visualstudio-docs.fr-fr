@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0e62226147fc160c6d967115fbd3aaa52dd69995
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: e51f346501b680b8183f8552aad48ffff84a71dd
+ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985062"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73983730"
 ---
 # <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>Procédure pas à pas : créer et déboguer une solution de flux de travail SharePoint
   Cette procédure pas à pas montre comment créer un modèle de flux de travail séquentiel de base. Le flux de travail vérifie une propriété d’une bibliothèque de documents partagée pour déterminer si un document a été révisé. Si le document a été révisé, le flux de travail se termine.
@@ -285,7 +285,7 @@ ms.locfileid: "72985062"
 
 - Pour en savoir plus sur les activités de flux de travail SharePoint, consultez [activités de flux de travail pour SharePoint Foundation](/previous-versions/office/developer/sharepoint-2010/ms446847(v=office.14)).
 
-- Pour en savoir plus sur les activités de Windows Workflow Foundation, consultez [espace de noms System. Workflow. Activities](/dotnet/api/system.workflow.activities&view=netframework-4.8).
+- Pour en savoir plus sur les activités de Windows Workflow Foundation, consultez [espace de noms System. Workflow. Activities](/dotnet/api/system.windows.media.color).
 
 ## <a name="see-also"></a>Voir aussi
 - [Créer des solutions de flux de travail SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)
