@@ -1,6 +1,6 @@
 ---
 title: Général, débogage, boîte de dialogue Options | Microsoft Docs
-ms.date: 11/09/2018
+ms.date: 11/12/2019
 ms.topic: reference
 f1_keywords:
 - vs.debug.options.General
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbd99d260ba61d9e3ae9e877ecc1cefb1a22892e
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 528fa04b081937af69e647b01911ed00c1ec40c9
+ms.sourcegitcommit: 9801fc66a14c0f855b9ff601fb981a9e5321819e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72569063"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "74072714"
 ---
 # <a name="general-debugging-options"></a>Options de débogage générales
 
@@ -137,6 +137,12 @@ Pour savoir quels symboles sont disponibles dans la table d’exportation d’un
 - **Afficher les outils d’exécution dans l’application**: affiche les commandes de l’arborescence d’éléments **visuels en direct** dans une barre d’outils de la fenêtre principale de l’application XAML en cours de débogage. Cette option a été introduite dans Visual Studio 2015 Update 2.
 
 - **Activer le rechargement à chaud XAML**: vous permet d’utiliser la fonctionnalité de rechargement à chaud XAML avec du code XAML lorsque votre application est en cours d’exécution. (Cette fonctionnalité était précédemment appelée « modifier et continuer XAML »)
+
+::: moniker range=">= vs-2019" 
+- **Activer uniquement mon code XAML**: à partir de Visual Studio 2019 version 16,4, l’arborescence d’éléments **visuels en direct** affiche par défaut uniquement le code XAML classé comme code utilisateur. Si vous désactivez cette option, tous les codes XAML générés sont affichés dans l’outil.
+
+- **Désactiver le mode de sélection lorsqu’un élément est sélectionné** À compter de Visual Studio 2019 version 16,4, le bouton du sélecteur d’éléments de la barre d’outils dans l’application (**activer la sélection**) est désactivé lorsqu’un élément est sélectionné. Si vous désactivez cette option, la sélection des éléments reste activée jusqu’à ce que vous cliquiez à nouveau sur le bouton de la barre d’outils dans l’application.
+::: moniker-end
 
 **Activer outils de diagnostic lors du débogage**: la fenêtre de **outils de diagnostic** s’affiche pendant le débogage.
 

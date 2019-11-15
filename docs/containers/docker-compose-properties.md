@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 4ea1a936de215340cc13971e7a70a8d795d36cbb
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: c2f96bcc9df16b5de7d7f3ff485431352800d27e
+ms.sourcegitcommit: 9801fc66a14c0f855b9ff601fb981a9e5321819e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713934"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "74072725"
 ---
 # <a name="docker-compose-build-properties"></a>Docker Compose les propriétés de build
 
@@ -46,6 +46,46 @@ Le tableau suivant présente les propriétés MSBuild disponibles pour les proje
 |DockerServiceName| dcproj|Si DockerLaunchAction ou DockerLaunchBrowser sont spécifiés, DockerServiceName est le nom du service qui doit être lancé.  Utilisez cette propriété pour déterminer lequel des projets potentiellement référencés par un fichier d’ancrage-compose sera lancé.|-|
 |DockerServiceUrl| dcproj | URL à utiliser lors du lancement du navigateur.  Les jetons de remplacement valides sont « {ServiceIPAddress} », « {ServicePort} » et « {Scheme} ».  Par exemple : {Scheme}://{ServiceIPAddress} : {ServicePort}|-|
 |DockerTargetOS| dcproj | Le système d’exploitation cible utilisé lors de la génération de l’image de l’ancrage.|-|
+
+## <a name="example"></a>Exemple
+
+Si vous modifiez l’emplacement des fichiers compose de l’ancrage, en affectant à `DockerComposeBaseFilePath` un chemin d’accès relatif, vous devez également vous assurer que le contexte de génération est modifié de sorte qu’il fasse référence au dossier de solution. Par exemple, si votre fichier composer compose est un dossier appelé *DockerComposeFiles*, le fichier compose de l’ancrage doit définir le contexte de build sur « .. » ou «.. /..», en fonction de son emplacement par rapport au dossier de solution.
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" Sdk="Microsoft.Docker.Sdk">
+  <PropertyGroup Label="Globals">
+    <ProjectVersion>2.1</ProjectVersion>
+    <DockerTargetOS>Windows</DockerTargetOS>
+    <ProjectGuid>154022c1-8014-4e9d-bd78-6ff46670ffa4</ProjectGuid>
+    <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
+    <DockerServiceUrl>{Scheme}://{ServiceIPAddress}{ServicePort}</DockerServiceUrl>
+    <DockerServiceName>webapplication1</DockerServiceName>
+    <DockerComposeBaseFilePath>DockerComposeFiles\mydockercompose</DockerComposeBaseFilePath>
+    <AdditionalComposeFilePaths>AdditionalComposeFiles\myadditionalcompose.yml</AdditionalComposeFilePaths>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="DockerComposeFiles\mydockercompose.override.yml">
+      <DependentUpon>DockerComposeFiles\mydockercompose.yml</DependentUpon>
+    </None>
+    <None Include="DockerComposeFiles\mydockercompose.yml" />
+    <None Include=".dockerignore" />
+  </ItemGroup>
+</Project>
+```
+
+Le fichier *mydockercompose. yml* doit ressembler à ceci, avec le contexte de build défini sur le chemin d’accès relatif du dossier de solution (dans ce cas, `..`).
+
+```yml
+version: '3.4'
+
+services:
+  webapplication1:
+    image: ${DOCKER_REGISTRY-}webapplication1
+    build:
+      context: ..
+      dockerfile: WebApplication1\Dockerfile
+```
 
 > [!NOTE]
 > DockerComposeBuildArguments, DockerComposeDownArguments et DockerComposeUpArguments sont nouveaux dans Visual Studio 2019 version 16,3.
