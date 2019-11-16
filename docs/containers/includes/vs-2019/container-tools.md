@@ -7,16 +7,16 @@ ms.date: 02/01/2019
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 124f60a4a632115625524b4e30ab28f795d41660
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 7eae92f7c65208dfeda9cd19e14eaa627e12a22a
+ms.sourcegitcommit: bbff780cda82bb64862d77fe8f407f1803beb876
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70312177"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74142193"
 ---
 Avec Visual Studio, vous pouvez facilement générer, déboguer et exécuter des applications de ASP.NET Core en conteneur et les publier sur Azure Container Registry (ACR), un hub d’ancrage, Azure App Service ou votre propre registre de conteneurs. Dans cet article, nous allons effectuer la publication sur ACR.
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Configuration requise
 
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) avec la charge de travail **Développement web**, **Outils Azure** et/ou la charge de travail **Développement multiplateforme .NET Core** installée
@@ -25,7 +25,7 @@ Avec Visual Studio, vous pouvez facilement générer, déboguer et exécuter des
 
 ## <a name="installation-and-setup"></a>Installation et configuration
 
-Pour l’installation de Docker, consultez d’abord les informations disponibles sur [Docker Desktop for Windows: What to know before you install](https://docs.docker.com/docker-for-windows/install/#what-to-know-before-you-install). Installez ensuite [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows).
+Pour l’installation de l’ordinateur d’amarrage, commencez par examiner les informations sur le [Bureau de station d’accueil Desktop pour Windows : ce que vous devez savoir avant d’installer](https://docs.docker.com/docker-for-windows/install/#what-to-know-before-you-install). Installez ensuite [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows).
 
 ## <a name="add-a-project-to-a-docker-container"></a>Ajouter un projet à un conteneur Docker
 
@@ -93,6 +93,18 @@ CONTAINER ID        IMAGE                  COMMAND               CREATED        
 cf5d2ef5f19a        hellodockertools:dev   "tail -f /dev/null"   2 minutes ago       Up 2 minutes        0.0.0.0:52036->80/tcp, 0.0.0.0:44342->443/tcp   priceless_cartwright
 ```
 
+## <a name="containers-window"></a>Fenêtre conteneurs
+
+Si vous disposez de Visual Studio 2019 version 16,4 ou ultérieure, vous pouvez utiliser la fenêtre **conteneurs** pour afficher les conteneurs en cours d’exécution sur votre ordinateur, ainsi que les images que vous avez disponibles.
+
+Ouvrez la fenêtre **conteneurs** à l’aide de la zone de recherche dans l’IDE (appuyez sur **CTRL**+**Q** pour l’utiliser), tapez `container`, puis choisissez la fenêtre **conteneurs** dans la liste.
+
+Vous pouvez monter la fenêtre **conteneurs** à un emplacement pratique, tel que sous l’éditeur, en la déplaçant et en suivant les repères de positionnement de la fenêtre.
+
+Dans la fenêtre, recherchez votre conteneur et parcourez chaque onglet pour afficher les variables d’environnement, les mappages de port, les journaux et le système de fichiers.
+
+Pour plus d’informations, consultez [afficher et diagnostiquer des conteneurs et des images dans Visual Studio](../../view-and-diagnose-containers.md).
+
 ## <a name="publish-docker-images"></a>Publier des images Docker
 
 Une fois le cycle de développement et de débogage de l’application effectué, vous pouvez créer une image de production de l’application.
@@ -106,7 +118,7 @@ Une fois le cycle de développement et de débogage de l’application effectué
     | Paramètre      | Valeur suggérée  | Description                                |
     | ------------ |  ------- | -------------------------------------------------- |
     | **Préfixe DNS** | Nom globalement unique | Nom qui identifie uniquement votre registre de conteneurs. |
-    | **Abonnement** | Choisissez votre abonnement | Sélectionnez l’abonnement Azure à utiliser. |
+    | **Abonnement** | Choisissez votre abonnement | Abonnement Azure à utiliser. |
     | **[Groupe de ressources](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Nom du groupe de ressources où créer votre registre de conteneurs. Choisissez **Nouveau** pour créer un groupe de ressources.|
     | **[SKU](https://docs.microsoft.com/azure/container-registry/container-registry-skus)** | Standard | Niveau de service du registre de conteneurs  |
     | **Emplacement du registre** | Un emplacement proche de vous | Choisissez un emplacement dans une [région](https://azure.microsoft.com/regions/) près de chez vous ou près d’autres services que votre registre de conteneurs va utiliser. |
