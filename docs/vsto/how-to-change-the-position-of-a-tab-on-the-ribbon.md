@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Modifier la position d’un onglet dans le ruban'
+title: 'Comment : modifier la position d’un onglet sur le ruban'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,53 +12,53 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 512dfda8c95ecd56fe44eb6878e6abc0d942a782
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bf943f9df4499b30e294e4d7e8bf48b25aa52eab
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62826730"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985984"
 ---
-# <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>Procédure : Modifier la position d’un onglet dans le ruban
-  Vous pouvez modifier l’ordre des onglets personnalisés sur un ruban à l’aide de la **éditeur de collections Tab**. Vous pouvez positionner les onglets personnalisés avant ou après un onglet prédéfini du ruban. Un onglet intégré est un onglet qui se trouve déjà sur le ruban d’une application Microsoft Office. Par exemple, le **données** onglet est un onglet intégré dans Excel.
+# <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>Comment : modifier la position d’un onglet sur le ruban
+  Vous pouvez modifier l’ordre des onglets personnalisés sur un ruban à l’aide de l' **éditeur de collections Tab**. Vous pouvez positionner les onglets personnalisés avant ou après un onglet intégré sur le ruban. Un onglet intégré est un onglet qui se trouve déjà sur le ruban d’une application Microsoft Office. Par exemple, l’onglet **données** est un onglet intégré dans Excel.
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
-### <a name="to-change-the-order-of-tabs-on-the-ribbon"></a>Pour modifier l’ordre des onglets du ruban
+### <a name="to-change-the-order-of-tabs-on-the-ribbon"></a>Pour modifier l’ordre des onglets sur le ruban
 
-1. Sélectionnez le fichier de code de ruban (*.vb* ou *.cs* fichier) dans **l’Explorateur de solutions**.
+1. Sélectionnez le fichier de code du ruban (fichier *. vb* ou *. cs* ) dans **Explorateur de solutions**.
 
-2. Sur le **vue** menu, cliquez sur **concepteur**.
+2. Dans le menu **affichage** , cliquez sur **Concepteur**.
 
-3. Cliquez sur le Concepteur de ruban, puis cliquez sur **propriétés**.
+3. Cliquez avec le bouton droit sur le concepteur de ruban, puis cliquez sur **Propriétés**.
 
-4. Dans le **propriétés** fenêtre, sélectionnez le **onglets** propriété, puis cliquez sur le bouton de sélection (![ellipse concepteur mobile ASP.NET](../sharepoint/media/mwellipsis.gif "ASP.NET Mobile Ellipse de concepteur")).
+4. Dans la fenêtre **Propriétés** , sélectionnez la propriété **tabulations** , puis cliquez sur le bouton de sélection (![ellipse ASP.net Mobile designer](../sharepoint/media/mwellipsis.gif "Bouton de sélection du concepteur ASP.NET mobile")).
 
-     Le **éditeur de collections Tab** s’affiche.
+     L' **éditeur de collections Tab** s’affiche.
 
-5. Dans le **éditeur de collections Tab**, dans le **membres** , sélectionnez l’onglet que vous souhaitez déplacer et cliquez sur le haut ou flèches de direction pour modifier l’ordre de tabulation.
+5. Dans l' **éditeur de collections Tab**, dans la liste **membres** , sélectionnez l’onglet que vous souhaitez déplacer, puis cliquez sur les flèches haut ou bas pour modifier l’ordre de tabulation.
 
-### <a name="to-position-a-tab-before-or-after-a-built-in-tab-on-the-ribbon"></a>Pour positionner un onglet avant ou après un onglet intégré du ruban
+### <a name="to-position-a-tab-before-or-after-a-built-in-tab-on-the-ribbon"></a>Pour positionner un onglet avant ou après un onglet intégré sur le ruban
 
-1. Dans le Concepteur de ruban, sélectionnez un onglet personnalisé.
+1. Dans le concepteur de ruban, sélectionnez un onglet personnalisé.
 
-2. Dans le **propriétés** fenêtre, développez le **ControlId** propriété et assurez-vous que la valeur de la **ControlIdType** propriété est définie sur **personnalisé**.
+2. Dans la fenêtre **Propriétés** , développez la propriété **ControlID** , puis assurez-vous que la valeur de la propriété **ControlIdType** est définie sur **personnalisé**.
 
-3. Dans le **propriétés** fenêtre, développez le **Position** propriété.
+3. Dans la fenêtre **Propriétés** , développez la propriété **position** .
 
-4. Définir le **PositionType** propriété à la valeur appropriée :
+4. Affectez à la propriété **PositionType** la valeur appropriée :
 
-    - **BeforeOfficeId** avant un onglet intégré spécifié.
+    - **BeforeOfficeId** positionne le groupe avant un onglet prédéfini spécifié.
 
-    - **AfterOfficeId** place le groupe après un onglet intégré spécifié.
+    - **AfterOfficeId** positionne le groupe après un onglet prédéfini spécifié.
 
-5. Définir le **OfficeId** propriété ID de contrôle d’un onglet intégré.
+5. Affectez à la propriété **OfficeId** l’ID de contrôle d’un onglet intégré.
 
-     Pour obtenir la liste d’ID de contrôle, consultez [les fichiers d’aide Office 2010 : Identificateurs de contrôle interface Office fluent utilisateur](http://go.microsoft.com/fwlink/?LinkID=181052).
+     Pour obtenir la liste des ID de contrôle, consultez [fichiers d’aide office 2010 : identificateurs de contrôle d’interface utilisateur Office Fluent](https://www.microsoft.com/download/details.aspx?id=6627).
 
 ## <a name="see-also"></a>Voir aussi
 - [Vue d’ensemble du ruban](../vsto/ribbon-overview.md)
 - [Concepteur de ruban](../vsto/ribbon-designer.md)
-- [Ribbon XML](../vsto/ribbon-xml.md)
-- [Procédure pas à pas : Créer un onglet personnalisé à l’aide du Concepteur de ruban](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
-- [Procédure pas à pas : Créer un onglet personnalisé à l’aide de XML du ruban](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)
+- [Élément XML Ribbon](../vsto/ribbon-xml.md)
+- [Procédure pas à pas : création d’un onglet personnalisé à l’aide du concepteur de ruban](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
+- [Procédure pas à pas : création d’un onglet personnalisé à l’aide du ruban XML](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)

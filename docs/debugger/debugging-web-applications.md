@@ -1,12 +1,7 @@
 ---
 title: Débogage d’applications Web | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 11/05/2019
 ms.topic: conceptual
-dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
 helpviewer_keywords:
 - debugging ASP.NET Web applications, about debugging ASP.NET Web applications
 - ASP.NET debugging, Web services
@@ -18,24 +13,39 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e0f9b0fc0f2f4cd7c441f5f88e4220216c8d964
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b1a7727f93e3f4fe279bb9cc009e61a3fdd70a15
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738037"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73714454"
 ---
 # <a name="debugging-web-applications"></a>Débogage d'applications Web
-Cette section décrit comment déboguer plusieurs types d'applications Web.
 
-## <a name="in-this-section"></a>Dans cette section
- [Débogage de scripts côté client](../debugger/client-side-script-debugging.md) Décrit les scripts de test et les scripts côté client dans les pages [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].
+Cet article fournit des liens pour vous aider à déboguer différents types d’applications Web.
 
-## <a name="related-sections"></a>Rubriques connexes
- [Déboguer des applications ASP.net](../debugger/how-to-enable-debugging-for-aspnet-applications.md) Décrit les étapes requises pour activer le débogage des applications [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].
+- Déboguer des applications ASP.NET
+
+  Pour connaître les étapes requises pour activer le débogage des applications [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], consultez [Déboguer des applications ASP.net](how-to-enable-debugging-for-aspnet-applications.md).
+
+- Déboguer le script côté client dans ASP.NET
+
+  Pour connaître les étapes nécessaires, consultez le billet de blog [Debug JavaScript in Microsoft Edge](https://devblogs.microsoft.com/visualstudio/debug-javascript-in-microsoft-edge-from-visual-studio/) et ce [billet pour Google Chrome](https://devblogs.microsoft.com/aspnet/client-side-debugging-of-asp-net-projects-in-google-chrome).
+
+- Déboguer JavaScript et machine à écrire
+
+  Consultez [débogage JavaScript et machine à écrire](../javascript/debug-nodejs.md).
+
+- Afficher les documents de script
+
+  Vous pouvez afficher des listes de documents de script côté serveur et côté client dans l’**Explorateur de solutions**. Vous pouvez ouvrir tout document de script à partir de l' **Explorateur de solutions**. Pour plus d'informations, consultez [How to: View Script Documents](../debugger/how-to-view-script-documents.md).
+
+- Débogage d'applications de script AJAX
+
+  Les applications Web AJAX ont un usage intensif du code de script et représentent un sérieux défi pour le débogage. Pour plus d’informations sur les techniques de débogage AJAX, consultez [vue d’ensemble du débogage et du suivi des applications Ajax](https://msdn.microsoft.com/Library/92684ea0-7bb4-4a34-9203-3aa6394ce375).
 
 ## <a name="see-also"></a>Voir aussi
-- [Débogage d’applications et de scripts web](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)
+
 - [Paramètres et préparation du débogueur](../debugger/debugger-settings-and-preparation.md)
 - [Présentation du débogueur](../debugger/debugger-feature-tour.md)
 - [Débogage dans Visual Studio](../debugger/index.yml)

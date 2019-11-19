@@ -7,12 +7,12 @@ ms.date: 09/18/2019
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: 3e4a41567b02807dce280426daf59e30ed1876eb
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 1ace600f9c4582e99c6fa324cb9dcc61593d3d97
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211468"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73716782"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Installer Visual Studio 2019 pour Mac
 
@@ -21,7 +21,7 @@ Pour commencer à développer des applications .NET natives multiplateformes sur
  > [!div class="button"]
  > [Téléchargez Visual Studio pour Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=navigation+cta&utm_content=download+vsmac2019)
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>spécifications
 
 - Mac avec macOS High Sierra 10.12 ou ultérieur.
 
@@ -74,11 +74,11 @@ Pour générer des applications Xamarin pour iOS ou macOS, vous devez également
 
     [![Connectez-vous à l’IDE](media/ide-tour-2019-start-signin.png)](media/ide-tour-2019-start-signin.png#lightbox)
 
-    [![Choisir les raccourcis clavier que vous souhaitez utiliser](media/ide-tour-2019-keyboard-shortcut.png)](media/ide-tour-2019-keyboard-shortcut.png#lightbox)
+    [![choisir les raccourcis clavier que vous souhaitez utiliser](media/ide-tour-2019-keyboard-shortcut.png)](media/ide-tour-2019-keyboard-shortcut.png#lightbox)
 
-Si vous rencontrez des problèmes réseau durant l’installation dans un environnement d’entreprise, passez en revue les instructions [d’installation derrière un pare-feu ou un proxy](https://docs.microsoft.com/visualstudio/mac/installation#install-visual-studio-for-mac-behind-a-firewall-or-proxy-server).
+Si vous rencontrez des problèmes réseau durant l’installation dans un environnement d’entreprise, passez en revue les instructions [d’installation derrière un pare-feu ou un proxy](/visualstudio/mac/installation#install-visual-studio-for-mac-behind-a-firewall-or-proxy-server).
 
-Découvrez-en plus sur les changements dans les [notes de publication](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes).
+Découvrez-en plus sur les changements dans les [notes de publication](/visualstudio/releasenotes/vs2019-mac-relnotes).
 
 > [!NOTE]
 > Si vous avez choisi de ne pas installer certains outils ou plateformes lors de l’installation d’origine (en les désélectionnant à l’étape 6), vous devez réexécuter le programme d’installation si vous souhaitez ajouter ces composants plus tard.

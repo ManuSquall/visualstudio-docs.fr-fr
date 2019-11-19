@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5dff10c90a51dffece1e93e575ab7ae3cbf75367
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: HT
+ms.openlocfilehash: 9cc8ab1ac26f4aa01342d9949243772edd3de91f
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704507"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189409"
 ---
-# <a name="quickstart-first-look-at-profiling-tools"></a>Démarrage rapide : Découvrir les outils de profilage
+# <a name="quickstart-first-look-at-profiling-tools"></a>Démarrage rapide : découvrir les outils de profilage
 
 Visual Studio propose des outils de profilage pour vous aider à diagnostiquer différents types de problèmes de performances en fonction de votre type d’application.
 
@@ -29,7 +29,7 @@ Les outils de profilage auxquels vous avez accès pendant une session de déboga
 
 Pendant le débogage, vous pouvez utiliser la fenêtre **Outils de diagnostic** pour analyser l’utilisation du processeur et de la mémoire, et vous pouvez voir des événements indiquant des informations sur les performances.
 
-![Vue Résumé des outils de diagnostic](../profiling/media/prof-tour-cpu-and-memory-graph.gif "Résumé des outils de diagnostic")
+![Vue Résumé de la Outils de diagnostic](../profiling/media/prof-tour-cpu-and-memory-graph.gif "Résumé de la Outils de diagnostic")
 
 La fenêtre **Outils de diagnostic** est souvent la meilleure méthode pour profiler des applications, mais pour les versions de mise en production (Release), vous pouvez également effectuer une analyse post-mortem de votre application à la place. Pour plus d’informations sur les différentes approches, consultez [Exécuter les Outils de profilage avec ou sans le débogueur](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Pour connaître la prise en charge des outils de profilage pour différents types d’applications, consultez [Quel outil utiliser ?](#which-tool-should-i-use).
 
@@ -42,17 +42,17 @@ L’outil Utilisation de l’UC est un bon point de départ pour analyser les pe
 
 Dans la vue **Résumé** des outils de diagnostic, choisissez **Activer le profilage de l’UC** (vous devez être dans une session de débogage).
 
-![Activer l’utilisation de l’UC dans les Outils de diagnostic](../profiling/media/prof-tour-enable-cpu-profiling.png "Outils de diagnostic - Activer l’utilisation de l’UC")
+![Activer l’utilisation de l’UC dans le Outils de diagnostic](../profiling/media/prof-tour-enable-cpu-profiling.png "Outils de diagnostic activer l’utilisation de l’UC")
 
 Pour utiliser l’outil plus efficacement, définissez deux points d’arrêt dans votre code, un au début et un à la fin de la fonction ou de la région de code que vous souhaitez analyser. Examinez les données de profilage quand une pause est marquée au second point d’arrêt.
 
 La vue **Utilisation de l’UC** affiche une liste de fonctions, classées par durée d’exécution décroissante. Cette liste vous permet de repérer les fonctions dans lesquelles se produisent des goulots d’étranglement.
 
-![Vue Utilisation de l’UC dans les Outils de diagnostic](../profiling/media/prof-tour-cpu-usage.png "Utilisation de l’UC dans les Outils de diagnostic")
+![Affichage de l’utilisation de l’UC Outils de diagnostic](../profiling/media/prof-tour-cpu-usage.png "Utilisation du processeur Outils de diagnostic")
 
 Double-cliquez sur une fonction digne d’intérêt ; apparaît alors une vue « papillon » plus détaillée composée de trois volets, indiquant la fonction sélectionnée (au milieu), la fonction appelante (à gauche) et les fonctions appelées (à droite). La section **Corps de la fonction** montre la durée totale (et le pourcentage correspondant) passée dans le corps de la fonction, à l’exclusion du temps passé dans les fonctions appelantes et appelées. Ces données peuvent vous aider à déterminer si la fonction elle-même est un goulot d’étranglement.
 
-![Vue « papillon » fonctions appelantes/fonctions appelées dans les Outils de diagnostic](../profiling/media/prof-tour-cpu-usage-caller-callee.png "Vue fonctions appelantes/fonctions appelées dans les Outils de diagnostic")
+![Vue « papillon » de l’appelé Outils de diagnostic appelant](../profiling/media/prof-tour-cpu-usage-caller-callee.png "Vue de l’appelé Outils de diagnostic appelant")
 
 ## <a name="analyze-memory-usage"></a>Analyser l’utilisation de la mémoire
 
@@ -60,11 +60,11 @@ La fenêtre **Outils de diagnostic** vous permet également d’évaluer l’uti
 
 Pour analyser l’utilisation de la mémoire, vous devez prendre au moins un instantané de la mémoire pendant le débogage. Souvent, la meilleure façon d’analyser la mémoire consiste à prendre deux instantanés, le premier juste avant un problème de mémoire suspecté et le second juste après. Ensuite, vous pouvez visualiser une comparaison des deux instantanés et voir exactement ce qui a changé.
 
-![Prendre un instantané dans les Outils de diagnostic](../profiling/media/prof-tour-take-snapshots.gif "Outils de diagnostic - Prendre un instantané")
+![Prendre un instantané dans le Outils de diagnostic](../profiling/media/prof-tour-take-snapshots.gif "Outils de diagnostic prendre des captures instantanées")
 
-Quand vous sélectionnez un des liens associés à une flèche, vous obtenez une vue différentielle du tas (une flèche rouge vers le haut ![Augmentation de l’utilisation de la mémoire](../profiling/media/prof-tour-mem-usage-up-arrow.png "Augmentation de l’utilisation de la mémoire") indique un nombre d’objets croissant (à gauche) ou une taille de tas croissante (à droite)). Si vous cliquez sur le lien de droite, vous obtenez une vue de tas différentielle qui indique en premier les objets dont la taille a augmenté le plus dans le tas. Cela peut vous aider à identifier les problèmes de mémoire. Par exemple, dans l’illustration ci-dessous, les octets utilisés par les objets `ClassHandlersStore` ont augmenté de 3 492 unités dans le deuxième instantané.
+Lorsque vous sélectionnez l’un des liens de direction, vous recevez une vue différentielle du tas (une ![augmentation de l’utilisation](../profiling/media/prof-tour-mem-usage-up-arrow.png "Augmentation de l’utilisation de la mémoire") de la mémoire rouge pour les flèches affiche un nombre croissant d’objets (à gauche) ou une taille de segment de mémoire plus grande (à droite)). Si vous cliquez sur le lien de droite, vous obtenez une vue de tas différentielle qui indique en premier les objets dont la taille a augmenté le plus dans le tas. Cela peut vous aider à identifier les problèmes de mémoire. Par exemple, dans l’illustration ci-dessous, les octets utilisés par les objets `ClassHandlersStore` ont augmenté de 3 492 unités dans le deuxième instantané.
 
-![Vue comparative du tas dans les Outils de diagnostic](../profiling/media/prof-tour-mem-usage-diff-heap.png "Vue comparative du tas dans les Outils de diagnostic")
+![Vue diff du tas Outils de diagnostic](../profiling/media/prof-tour-mem-usage-diff-heap.png "Vue diff du tas Outils de diagnostic")
 
 Par contre, si vous cliquez sur le lien sur la gauche dans la vue **Utilisation de la mémoire**, la vue du tas est organisée par nombre d’objets ; les objets d’un type particulier dont le nombre a le plus augmenté sont affichés en haut (en fonction de la colonne **Différence de nombre**).
 
@@ -72,20 +72,20 @@ Par contre, si vous cliquez sur le lien sur la gauche dans la vue **Utilisation 
 
 La vue **Événements** dans les Outils de diagnostic vous présente les différents événements qui se produisent pendant le débogage, tels que la définition d’un point d’arrêt ou une exécution pas à pas du code. Vous pouvez consulter des informations telles que la durée de l’événement (mesurée à partir de la dernière suspension du débogueur ou du démarrage de l’application). Par exemple, si vous parcourez le code pas à pas (F10, F11), la vue **Événements** vous indique la durée d’exécution de l’application entre l’étape précédente et l’étape actuelle.
 
-![Vue Événements dans les Outils de diagnostic](../profiling/media/prof-tour-events.png "Outils de diagnostic - Afficher les événements")
+![Affichage des événements de Outils de diagnostic](../profiling/media/prof-tour-events.png "Événements d’affichage Outils de diagnostic")
 
  > [!NOTE]
  > Si vous avez Visual Studio Enterprise, vous pouvez également voir [Événements IntelliTrace](../debugger/intellitrace.md) sous cet onglet.
 
 Les mêmes événements s’affichent aussi dans l’éditeur de code, sous la forme de conseils sur les performances.
 
-![Conseils sur les performances dans la visite guidée du profilage](../profiling/media/prof-tour-perf-tips.png "Conseils sur les performances dans la visite guidée du profilage")
+![Profilage de la visite guidée PerfTips](../profiling/media/prof-tour-perf-tips.png "Profilage de la visite guidée PerfTips")
 
 ## <a name="examine-ui-performance-and-accessibility-events-uwp"></a>Examiner les événements d’accessibilité et de performances de l’IU (UWP)
 
 Dans vos applications UWP, vous pouvez activer **Analyse de l’IU** dans la fenêtre **Outils de diagnostic**. L’outil recherche les problèmes de performances ou d’accessibilité et les affiche dans la vue **Événements** pendant le débogage. Les descriptions des événements fournissent des informations qui peuvent aider à résoudre les problèmes.
 
-![Afficher les événements d’analyse de l’IU dans les Outils de diagnostic](../profiling/media/prof-tour-ui-analysis.png "Outils de diagnostic - Afficher les événements d’analyse de l’IU")
+![Afficher les événements d’analyse de l’interface utilisateur dans les outils de diagnostic](../profiling/media/prof-tour-ui-analysis.png "Outils de diagnostic afficher les événements d’analyse de l’interface utilisateur")
 
 ## <a name="post_mortem"></a> Profiler les builds de version Release sans le débogueur
 
@@ -103,7 +103,7 @@ Dans les applications XAML, comme les applications WPF pour poste de travail Win
 
 La présence de taux de trames faibles dans le graphique **Débit visuel** peut correspondre à des problèmes visuels que vous constatez quand vous exécutez votre application. De même, la présence de nombres élevés dans le graphique **Utilisation du thread d’interface utilisateur** peut également indiquer des problèmes de réactivité de l’interface utilisateur. Dans le rapport, vous pouvez sélectionner une période de temps susceptible de présenter un problème de performances, puis examiner les activités de thread de l’interface utilisateur détaillées dans la vue Détails de la chronologie (volet inférieur).
 
-![Outil de profilage - Chronologie de l’application](../profiling/media/prof-tour-application-timeline.gif "Chronologie de l’application dans la visite guidée du profilage")
+![Outil de profilage chronologie de l’application](../profiling/media/prof-tour-application-timeline.gif "chronologie de l’application de la visite guidée du profilage")
 
 La vue Détails de la chronologie comprend des informations telles que le type d’activité (ou l’élément d’interface utilisateur impliqué), ainsi que la durée de l’activité. Par exemple, dans l’illustration, un événement **Layout** (disposition) pour un contrôle de grille prend 57,53 ms.
 
@@ -111,11 +111,11 @@ Pour plus d’informations, consultez [Chronologie de l’application](../profil
 
 ## <a name="analyze-gpu-usage-direct3d"></a>Analyser l’utilisation du GPU (Direct3D)
 
-Dans les applications Direct3D (les composants Direct3D doivent être en C++), vous pouvez examiner l’activité sur le GPU et analyser les problèmes de performances. Pour plus d’informations, consultez [Utilisation du GPU](../debugger/gpu-usage.md). Pour utiliser l’outil, choisissez **Utilisation du GPU** dans le profileur de performances, puis choisissez **Démarrer**. Dans votre application, effectuez le scénario à profiler, puis choisissez **Arrêter la collecte** pour générer un rapport.
+Dans les applications Direct3D (les composants Direct3D doivent être en C++), vous pouvez examiner l’activité sur le GPU et analyser les problèmes de performances. Pour plus d’informations, consultez [Utilisation du GPU](/visualstudio/debugger/graphics/gpu-usage). Pour utiliser l’outil, choisissez **Utilisation du GPU** dans le profileur de performances, puis choisissez **Démarrer**. Dans votre application, effectuez le scénario à profiler, puis choisissez **Arrêter la collecte** pour générer un rapport.
 
 Quand vous sélectionnez une période de temps dans les graphiques et que vous choisissez **Afficher les détails**, une vue détaillée s’affiche dans le volet inférieur. Dans la vue détaillée, vous pouvez consulter le volume d’activité qui se produit sur chaque UC et GPU. Sélectionnez les événements dans le volet inférieur pour afficher des fenêtres contextuelles dans la chronologie. Par exemple, sélectionnez l’événement **Présent** pour afficher les fenêtres contextuelles des appels **Présent**. (Vous pouvez utiliser les lignes Vsync verticales gris clair pour déterminer si certains appels **Présent** ont manqué le Vsync. Il doit y avoir un appel **Présent** entre chaque paire de Vsyncs pour que l’application atteigne régulièrement 60 i/s.)
 
-![Outil de profilage - Utilisation du GPU](../profiling/media/prof-tour-gpu-usage.png "Boîte de dialogue Utilisation du GPU")
+![Outil de profilage de l’utilisation du GPU](../profiling/media/prof-tour-gpu-usage.png "Utilisation du GPU diag")
 
 Vous pouvez également utiliser les graphiques pour déterminer la présence éventuelle de goulots d’étranglement liés à l’UC ou au GPU.
 
@@ -126,24 +126,26 @@ Pour les applications UWP, vous pouvez utiliser les outils Mémoire JavaScript e
 
 L’outil Mémoire JavaScript est similaire à l’outil Utilisation de la mémoire disponible pour les autres types d’application. Vous pouvez utiliser cet outil pour comprendre l’utilisation de la mémoire et rechercher les fuites de mémoire dans votre application. Pour plus d’informations sur l’outil, consultez [Mémoire JavaScript](../profiling/javascript-memory.md).
 
-![Outil de profilage - Mémoire JavaScript](../profiling/media/diagjsmemory.png "DiagJSMemory")
+![Outil de profilage de mémoire JavaScript](../profiling/media/diagjsmemory.png "Diagnostics")
 
 Pour diagnostiquer la réactivité de l’interface utilisateur, la lenteur du temps de chargement et la lenteur des mises à jour visuelles dans les applications UWP, utilisez l’outil Réactivité de l’interface utilisateur HTML. L’utilisation est similaire à l’outil Chronologie de l’application pour les autres types d’application. Pour plus d’informations, consultez [Réactivité de l’interface utilisateur HTML](../profiling/html-ui-responsiveness.md).
 
-![Outil de profilage - Réactivité de l’interface utilisateur HTML](../profiling/media/diaghtmlresp.png "DiagHTMLResp")
+![Outil de profilage de réactivité de l’interface utilisateur HTML](../profiling/media/diaghtmlresp.png "Réactivité")
 ::: moniker-end
 
+::: moniker range="vs-2017"
 ## <a name="analyze-network-usage-uwp"></a>Analyser l’utilisation du réseau (UWP)
 
 Dans les applications UWP, vous pouvez analyser les opérations réseau exécutées par le biais de l’API `Windows.Web.Http`. Cet outil peut vous aider à résoudre des problèmes tels que les problèmes d’accès et d’authentification, l’utilisation incorrecte du cache et les mauvaises performances d’affichage et de téléchargement. Pour utiliser l’outil, choisissez **Réseau** dans le profileur de performances, puis choisissez **Démarrer**. Dans votre application, effectuez le scénario qui utilise `Windows.Web.Http`, puis choisissez **Arrêter la collecte** pour générer le rapport.
 
-![Outil de profilage - Utilisation du réseau](../profiling/media/prof-tour-network-usage.png "Boîte de dialogue Utilisation du réseau")
+![Outil de profilage de l’utilisation du réseau](../profiling/media/prof-tour-network-usage.png "Utilisation du réseau de diagnostic")
 
 Sélectionnez une opération dans la vue du résumé pour afficher des informations plus détaillées.
 
-![Informations détaillées dans l’outil Utilisation du réseau](../profiling/media/prof-tour-network-usage-details.png "Boîte de dialogue Détails de l’utilisation du réseau")
+![Informations détaillées dans l’outil utilisation du réseau](../profiling/media/prof-tour-network-usage-details.png "Détails de l’utilisation du réseau diag")
 
 Pour plus d’informations, consultez [Utilisation du réseau](../profiling/network-usage.md).
+::: moniker-end
 
 ## <a name="analyze-performance-legacy-tools"></a>Analyser les performances (outils hérités)
 
@@ -155,18 +157,33 @@ Si vous avez besoin de fonctionnalités qui ne sont pas présentes dans les outi
 
 Voici un tableau qui recense les différents outils proposés par Visual Studio, ainsi que les différents types de projet avec lesquels vous pouvez les utiliser :
 
+::: moniker range=">=vs-2019"
 |Outil d’analyse des performances|Bureau Windows|UWP|ASP.NET/ASP.NET Core|
 |----------------------|---------------------|-------------|-------------|
 |[Utilisation de l'UC](../profiling/cpu-usage.md)|oui|oui|oui|
 |[Utilisation de la mémoire](../profiling/memory-usage.md)|oui|oui|oui|
-|[Utilisation du GPU](../debugger/gpu-usage.md)|oui|oui|non|
+|[Utilisation du GPU](/visualstudio/debugger/graphics/gpu-usage)|oui|oui|Non|
 |[Chronologie de l'application](../profiling/application-timeline.md)|oui|oui|Non|
-|[Conseils sur les performances](../profiling/perftips.md)|oui|oui pour XAML, non pour HTML|oui|
+|[PerfTips](../profiling/perftips.md)|oui|oui pour XAML, non pour HTML|oui|
+|[Explorateur de performances](../profiling/performance-explorer.md)|oui|Non|oui|
+|[IntelliTrace](../debugger/intellitrace.md)|.NET avec Visual Studio Enterprise uniquement|.NET avec Visual Studio Enterprise uniquement|.NET avec Visual Studio Enterprise uniquement|
+::: moniker-end
+
+::: moniker range="vs-2017"
+|Outil d’analyse des performances|Bureau Windows|UWP|ASP.NET/ASP.NET Core|
+|----------------------|---------------------|-------------|-------------|
+|[Utilisation de l'UC](../profiling/cpu-usage.md)|oui|oui|oui|
+|[Utilisation de la mémoire](../profiling/memory-usage.md)|oui|oui|oui|
+|[Utilisation du GPU](/visualstudio/debugger/graphics/gpu-usage)|oui|oui|Non|
+|[Chronologie de l'application](../profiling/application-timeline.md)|oui|oui|Non|
+|[PerfTips](../profiling/perftips.md)|oui|oui pour XAML, non pour HTML|oui|
 |[Explorateur de performances](../profiling/performance-explorer.md)|oui|Non|oui|
 |[IntelliTrace](../debugger/intellitrace.md)|.NET avec Visual Studio Enterprise uniquement|.NET avec Visual Studio Enterprise uniquement|.NET avec Visual Studio Enterprise uniquement|
 |[Utilisation du réseau](../profiling/network-usage.md)|Non|oui|Non|
-|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|Non|oui pour HTML, non pour XAML|Non|
+|[Réactivité de l’interface utilisateur HTML](../profiling/html-ui-responsiveness.md)|Non|oui pour HTML, non pour XAML|Non|
 |[Mémoire JavaScript](../profiling/javascript-memory.md)|Non|oui pour HTML, non pour XAML|Non|
+::: moniker-end
+
 
 ## <a name="see-also"></a>Voir aussi
-- [Débogage dans Visual Studio](/visualstudio/debugger/debugger-feature-tour)
+- [Débogage dans Visual Studio](../debugger/debugger-feature-tour.md)

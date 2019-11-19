@@ -13,12 +13,12 @@ helpviewer_keywords:
 - updating templates [Visual Studio]
 - template tagging, updating
 - template tags, updating
-ms.openlocfilehash: 417b171a731224302e6dd2efa55b45d84455ca4b
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
-ms.translationtype: HT
+ms.openlocfilehash: 37fa5449847eb4c093475df11a07decb31168f1f
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67891136"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189542"
 ---
 # <a name="add-tags-to-project-templates"></a>Ajouter des balises à des modèles de projet
 
@@ -40,9 +40,9 @@ Vous pouvez ajouter des balises en mettant à jour le fichier XML *.vstemplate*.
 
 Vous pouvez ajouter ou modifier des balises dans le fichier XML *.vstemplate* de votre modèle de projet lorsque vous effectuez l’une des actions suivantes :
 
-* [Créez un modèle de projet](/visualstudio/ide/how-to-create-project-templates) en utilisant l’Assistant Exportation de modèle.
-* [Mettez à jour des modèles de projet existants](/visualstudio/ide/how-to-update-existing-templates).
-* [Créez un modèle de projet VSIX](/visualstudio/extensibility/getting-started-with-the-vsix-project-template).
+* [Créez un modèle de projet](how-to-create-project-templates.md) en utilisant l’Assistant Exportation de modèle.
+* [Mettez à jour des modèles de projet existants](how-to-update-existing-templates.md).
+* [Créez un modèle de projet VSIX](../extensibility/getting-started-with-the-vsix-project-template.md).
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -61,7 +61,7 @@ Vous pouvez utiliser les attributs facultatifs suivants dans les scénarios dest
 |`Package`|Un GUID qui spécifie l’ID du package Visual Studio.|
 |`ID`|Spécifie l’ID de la ressource Visual Studio.|
 
-Syntaxe :
+Syntaxe :
 
 ```xml
 <LanguageTag Package="{PackageID}" ID="ResourceID" />
@@ -73,7 +73,7 @@ Syntaxe :
 
 ### <a name="child-elements"></a>Éléments enfants
 
-Aucun.
+Aucun(e).
 
 ### <a name="parent-elements"></a>Éléments parents
 
@@ -93,7 +93,7 @@ Visual Studio propose une liste de balises intégrées. Lorsque vous ajoutez une
 
 La liste suivante présente les balises intégrées qui sont disponibles dans Visual Studio. Les valeurs correspondantes sont affichées entre parenthèses.
 
-| Langue | Plateforme | Type de projet |
+| Langue | Plate-forme | Type de projet |
 | -- | -- | -- |
 | C++ (`cpp`) | Android (`android`) | Cloud (`cloud`) |
 | C# (`csharp`) | Azure (`azure`) | Console (`console`) |
@@ -111,7 +111,7 @@ La liste suivante présente les balises intégrées qui sont disponibles dans Vi
 | | | UWP (`uwp`) |
 | | | Web (`web`) |
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
 
 L’exemple suivant montre les métadonnées d’un modèle de projet pour une application Visual C# :
 
@@ -147,7 +147,7 @@ L’exemple suivant montre les métadonnées d’un modèle de projet pour une a
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Informations de référence sur les schémas de modèles Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference)
-- [Créer des modèles de projet et d’élément](/visualstudio/ide/creating-project-and-item-templates)
-- [Personnaliser des modèles de projet et d’élément](/visualstudio/ide/customizing-project-and-item-templates)
-- [Bien démarrer avec le modèle de projet VSIX](/visualstudio/extensibility/getting-started-with-the-vsix-project-template)
+- [Informations de référence sur les schémas de modèles Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Créer des modèles de projet et d’élément](creating-project-and-item-templates.md)
+- [Personnaliser des modèles de projet et d’élément](customizing-project-and-item-templates.md)
+- [Bien démarrer avec le modèle de projet VSIX](../extensibility/getting-started-with-the-vsix-project-template.md)

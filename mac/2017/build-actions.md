@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: 5399BCB1-E317-4C7B-87B1-C531E985DE6E
-ms.openlocfilehash: 16617f8de15fbef40941c4f9409497da142c9e8a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 97cabcacf276c6972a717e968656430ad32e37e3
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62932791"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73715849"
 ---
 # <a name="build-actions"></a>Actions de génération
 
@@ -22,7 +22,7 @@ Voici quelques-unes des actions de génération courantes pour les projets C# :
 
 * **Aucune** - Le fichier ne fait pas partie de la build, il est inclus dans le projet uniquement pour faciliter l’accès à partir de l’IDE.
 * **Compiler** : le fichier est passé comme fichier source au compilateur C#.
-* **EmbeddedResource** : le fichier est passé au compilateur C# comme ressource à incorporer dans l’assembly. [Assembly.GetManifestResourceStream](https://docs.microsoft.com/dotnet/api/system.reflection.assembly.getmanifestresourcestream), de l’espace de noms `System.Reflection`, peut ensuite être utilisé pour lire le fichier à partir de l’assembly.
+* **EmbeddedResource** : le fichier est passé au compilateur C# comme ressource à incorporer dans l’assembly. [Assembly.GetManifestResourceStream](/dotnet/api/system.reflection.assembly.getmanifestresourcestream), de l’espace de noms `System.Reflection`, peut ensuite être utilisé pour lire le fichier à partir de l’assembly.
 * **Contenu** : pour les projets ASP.NET, ces fichiers sont ajoutés pour faire partie du site lors de son déploiement. Pour les projets Xamarin.iOS et Xamarin.Mac, ils sont inclus dans le bundle d’applications.
 
 Il est possible de sélectionner plusieurs fichiers dans l’Explorateur de solutions, ce qui vous permet de définir l’action de génération pour de nombreux fichiers à la fois.

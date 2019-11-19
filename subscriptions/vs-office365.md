@@ -6,16 +6,19 @@ manager: lank
 ms.date: 08/02/2019
 ms.topic: conceptual
 description: Découvrez l’avantage Office 365 inclus dans certains abonnements Visual Studio.
-ms.openlocfilehash: ae28df2f66ff976fffd44f42c3063f790db9feb3
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
-ms.translationtype: HT
+ms.openlocfilehash: 2dde8489f15d8bd2e6a5d04045b99aea2245f73d
+ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787913"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099611"
 ---
 # <a name="office-365-proplus-in-visual-studio-subscriptions"></a>Office 365 ProPlus dans les abonnements Visual Studio
 
 Donnez le meilleur de vous-même. Travaillez partout où vous le souhaitez avec des applications constamment à jour. Office 365 ProPlus est un abonnement qui s’accompagne d’applications premium comme Word, Excel, PowerPoint, OneNote, Outlook, Publisher et Access (Publisher et Access disponibles uniquement sur PC). Les applications peuvent être installées sur plusieurs appareils (PC, Mac, iPad, iPhone, tablettes Android et téléphones Android). Avec l’abonnement, vous bénéficiez des dernières versions des applications et recevez automatiquement les mises à jour dès qu’elles paraissent.
+
+> [!NOTE]
+> Votre abonnement Visual Studio vous donne droit à l’utilisation d’Office 365 pour la production.  
 
 ## <a name="getting-started-with-office-365-proplus"></a>Bien démarrer avec Office 365 ProPlus
 
@@ -43,26 +46,24 @@ Suivez ces étapes pour télécharger et activer Office 365 ProPlus :
 0. Cliquez à nouveau sur **Suivant**.
 0. Cliquez sur **Installer** pour installer les applications Office.
 
-## <a name="next-steps"></a>Étapes suivantes
-
-Si vous avez l’intention de développer des applications pour Office, vous pouvez activer votre [abonnement Office Developer Subscription](vs-office-dev.md).
-
 ## <a name="eligibility"></a>Éligibilité
 
 | Niveau d'abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | Licences en volume, Azure, Détail| Disponible       |  Oui          |
+| Visual Studio Enterprise avec GitHub Enterprise  | LV | Disponible       |  Oui          |
 | Visual Studio Enterprise (Standard)   | NFR<sup>1</sup> | Non disponible       |  N/A          |
 | Visual Studio Professional (Standard) | Licences en volume, Azure, Détail                                       | Non disponible                                                            |  N/A          |
+| Visual Studio Professional avec GitHub Enterprise | LV | Non disponible         |  N/A          |
 | Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Non disponible                                             |  N/A          |
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Non disponible                                              |  N/A          |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure | Non disponible | N/A |
 |  |
 
-<sup>1</sup>  *Inclut :  NFR (revente interdite), VSIP (Visual Studio Industry Partner), MPN (Microsoft Partner Network), FTE, MCT Software & Services Developer, BizSpark, MVP (Most Valuable Professional), RD (Regional Director), MCT Software & Services, Imagine, Microsoft Partner Network.*
+<sup>1</sup>  *comprend : la revente interdite (not for Resale), VSIP (Visual Studio Industry Partner) Microsoft Partner Network, MPN (BIZSPARK), FTE, MCT Software & Developer Services Developer,, most VALUABLE Professional (MVP), Regional Director (RD), MCT Software & Les services, imagine, Microsoft Partner Network.*
 
 > [!NOTE]
-> Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à accéder à [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
+> Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à consulter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
 
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
 
@@ -75,4 +76,4 @@ Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à
 Veillez à activer ces avantages intéressants pour tirer le meilleur parti de votre abonnement Visual Studio :
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
-- [Crédits Azure](vs-azure.md)
+- [Crédit individuel Azure DevTest](vs-azure.md) Si vous envisagez de développer des applications pour Office, vous souhaiterez activer votre [abonnement Office Developer](vs-office-dev.md)

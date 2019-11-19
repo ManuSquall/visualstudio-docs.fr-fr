@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: 22c266516a2810191f05bb3de1d7215ea65dd040
-ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
-ms.translationtype: HT
+ms.openlocfilehash: ad7d2ca7738d4ba0e05e3a75a2a4b6b155e46dbd
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67624104"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911719"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Parcourir et gérer des ressources de stockage avec l’Explorateur de serveurs
 
@@ -120,7 +120,7 @@ Par défaut, un objet blob est téléchargé dans un répertoire temporaire. Pou
 
 Pour charger des objets blob, sélectionnez le bouton **Charger l’objet blob** quand le conteneur est ouvert sur la vue du conteneur d’objets blob.
 
-Vous pouvez choisir un ou plusieurs fichiers à charger, et vous pouvez charger des fichiers de tout type. La fenêtre **Journal d’activité Azure** affiche la progression du chargement. Pour plus d’informations sur l’utilisation des données d’objets blob, consultez [Utilisation du stockage d’objets blob Azure dans .NET](http://go.microsoft.com/fwlink/p/?LinkId=267911).
+Vous pouvez choisir un ou plusieurs fichiers à charger, et vous pouvez charger des fichiers de tout type. La fenêtre **Journal d’activité Azure** affiche la progression du chargement. Pour plus d’informations sur l’utilisation des données d’objets blob, consultez [Utilisation du stockage d’objets blob Azure dans .NET](/azure/storage/blobs/storage-quickstart-blobs-dotnet).
 
 ### <a name="to-view-logs-transferred-to-blobs"></a>Pour afficher les journaux transférés vers des objets blob
 
@@ -155,10 +155,10 @@ L’illustration suivante montre une file d’attente contenant deux messages :
 
 ![Affichage d’une file d’attente](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC651470.png)
 
-Pour plus d’informations sur les files d’attente de services de stockage, consultez [Prise en main du stockage de files d’attente Azure à l’aide de .NET](http://go.microsoft.com/fwlink/?LinkID=264702). Pour plus d’informations sur le service web des files d’attente des services de stockage, consultez [Concepts de File d’attente](http://go.microsoft.com/fwlink/?LinkId=264788). Pour plus d’informations sur la façon d’envoyer des messages vers une file d’attente des services de stockage à l’aide de Visual Studio, consultez [Envoi de messages à une file d’attente de services de stockage](https://docs.microsoft.com/azure/visual-studio/vs-storage-cloud-services-getting-started-queues).
+Pour plus d’informations sur les files d’attente de services de stockage, consultez [Prise en main du stockage de files d’attente Azure à l’aide de .NET](/azure/storage/queues/storage-dotnet-how-to-use-queues). Pour plus d’informations sur le service web des files d’attente des services de stockage, consultez [Concepts de File d’attente](/rest/api/storageservices/Queue-Service-Concepts). Pour plus d’informations sur la façon d’envoyer des messages vers une file d’attente des services de stockage à l’aide de Visual Studio, consultez [Envoi de messages à une file d’attente de services de stockage](/azure/visual-studio/vs-storage-cloud-services-getting-started-queues).
 
 > [!NOTE]
-> Les files d’attente de services de stockage sont différentes des files d’attente Azure Service Bus. Pour plus d’informations sur les files d’attente Service Bus, consultez [Files d’attente, rubriques et abonnements Service Bus](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-queues-topics-subscriptions).
+> Les files d’attente de services de stockage sont différentes des files d’attente Azure Service Bus. Pour plus d’informations sur les files d’attente Service Bus, consultez [Files d’attente, rubriques et abonnements Service Bus](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions).
 
 ## <a name="work-with-table-resources"></a>Utiliser des ressources de table
 
@@ -225,7 +225,7 @@ L’illustration suivante montre un exemple de chaîne de filtrage valide :
 
 ## <a name="refresh-storage-data"></a>Actualiser les données de stockage
 
-Les opérations de connexion aux données et de récupération des données entre l’Explorateur de serveurs et le compte de stockage peuvent prendre jusqu’à une minute. Si l’Explorateur de serveurs ne peut pas se connecter, l’opération peut expirer. Vous pouvez continuer à travailler dans d’autres parties de Visual Studio pendant la récupération des données. Pour annuler une opération si elle prend trop de temps, sélectionnez le bouton **Arrêter l’actualisation** dans la barre d’outils de l’Explorateur de serveurs.
+Les opérations de connexion aux données et de récupération des données entre l’Explorateur de serveurs et le compte de stockage peuvent prendre jusqu’à une minute. Si Explorateur de serveurs ne peut pas se connecter, l’opération peut expirer. Pendant que les données sont récupérées, vous pouvez continuer à travailler dans d’autres parties de Visual Studio. Pour annuler une opération si elle prend trop de temps, sélectionnez le bouton **Arrêter l’actualisation** dans la barre d’outils de l’Explorateur de serveurs.
 
 ### <a name="to-refresh-blob-container-data"></a>Pour actualiser les données d’un conteneur d’objets blob
 

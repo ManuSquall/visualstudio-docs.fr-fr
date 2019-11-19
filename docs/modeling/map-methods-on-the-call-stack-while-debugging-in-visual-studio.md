@@ -28,12 +28,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c294ce3c6dcf3a880cf5f57ca825064366e08e2b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 736b203feb5b1a640d7865b92a6d3ad191397d26
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668233"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985032"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Mapper les méthodes sur la pile des appels tout en déboguant dans Visual Studio
 
@@ -59,7 +59,7 @@ Créez une carte de code pour effectuer un suivi visuel de la pile des appels pe
 
   Consultez :
 
-- [Vidéo : déboguer visuellement avec l’intégration du débogueur de la carte du code (Channel 9)](http://go.microsoft.com/fwlink/?LinkId=293418)
+- [Vidéo : déboguer visuellement avec l’intégration du débogueur de la carte du code (Channel 9)](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012Debug-visually-with-Code-Map-debugger-integration)
 
 - [Mapper la pile des appels](#MapStack)
 
@@ -178,7 +178,7 @@ Créez une carte de code pour effectuer un suivi visuel de la pile des appels pe
 
 - **Comment faire arrêter la carte d’ajouter automatiquement de nouvelles piles d’appels ?**
 
-   Choisissez ![Button &#45; afficher automatiquement la pile des appels sur la carte du code ](../debugger/media/debuggermap_automaticupdateicon.gif) dans la barre d’outils de la carte. Pour ajouter manuellement la pile d’appels actuelle à la carte, appuyez sur **Ctrl**  + **MAJ**  +  **`** .
+   Choisissez ![bouton &#45; afficher automatiquement la pile des appels sur la carte du code](../debugger/media/debuggermap_automaticupdateicon.gif)dans la barre d’outils de la carte. Pour ajouter manuellement la pile d’appels actuelle à la carte, appuyez sur **Ctrl**  + **MAJ**  +  **`** .
 
    La carte continuera de mettre en surbrillance les piles d’appels existantes sur la carte pendant le débogage.
 

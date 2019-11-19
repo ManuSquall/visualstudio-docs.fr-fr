@@ -17,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 52235ab4770f5267de8507ff67fcda0aa1370392
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 75bdfe55d516deb34872007a9461a286b4d742e0
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72730550"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568915"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>Déboguer du code HTML et CSS dans les applications UWP dans Visual Studio
 
@@ -30,7 +30,7 @@ Pour les applications JavaScript, Visual Studio fournit une expérience de débo
 
 Grâce au modèle de débogage interactif fourni par les outils d’inspection DOM, vous pouvez afficher et modifier le rendu du code HTML et CSS. Et cela, sans avoir à arrêter ni redémarrer le débogueur.
 
-Pour plus d’informations sur d’autres fonctionnalités de débogage JavaScript, telles que l’utilisation de la fenêtre de la console JavaScript et la définition de points d’arrêt, consultez [démarrage rapide : déboguer](../debugger/quickstart-debug-javascript-using-the-console.md) des applications JavaScript et [Déboguer des applications dans Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps).
+Pour plus d’informations sur d’autres fonctionnalités de débogage JavaScript, telles que l’utilisation de la fenêtre de la console JavaScript et la définition de points d’arrêt, consultez [démarrage rapide : déboguer](../debugger/quickstart-debug-javascript-using-the-console.md) des applications JavaScript et [Déboguer des applications dans Visual Studio](debugging-windows-store-and-windows-universal-apps.md).
 
 ## <a name="InspectingDOM"></a> Examen du modèle DOM en direct
 L’explorateur DOM affiche une vue de la page rendue ; utilisez l’explorateur DOM pour modifier des valeurs et afficher immédiatement les résultats. Cela vous permet de tester les modifications sans arrêter et redémarrer le débogueur. Le code source de votre projet ne change pas quand vous interagissez avec la page à l’aide de cette méthode. Ainsi, quand vous trouvez les corrections de code souhaitées, vous modifiez votre code source.
@@ -46,7 +46,7 @@ Vous pouvez utiliser l’explorateur DOM pour effectuer les tâches suivantes :
 
 - Inspecter la façon dont les styles CSS ont été appliqués aux éléments de page et effectuer un suivi des règles qui ont été appliquées.
 
-  Lorsque vous déboguez des applications, vous devez souvent sélectionner des éléments dans l’explorateur DOM. Quand vous sélectionnez un élément, les valeurs qui s’affichent sous les onglets dans la partie droite de l’explorateur DOM sont automatiquement mises à jour pour refléter l’élément sélectionné dans l’explorateur DOM. Ces onglets sont les suivants : **Styles**, **Calculé**, **Disposition**. Les applications UWP prennent également en charge les onglets **événements** et **modifications** . Pour plus d’informations sur la sélection des éléments, consultez [Selecting elements](#SelectingElements).
+  Lorsque vous déboguez des applications, vous devez souvent sélectionner des éléments dans l’explorateur DOM. Quand vous sélectionnez un élément, les valeurs qui s’affichent sous les onglets dans la partie droite de l’explorateur DOM sont automatiquement mises à jour pour refléter l’élément sélectionné dans l’explorateur DOM. Ces onglets sont les suivants : **Styles**, **Calculé**, **Disposition**. Les applications UWP prennent également en charge les onglets **événements** et **modifications** . Pour plus d’informations sur la sélection des éléments, consultez [Selecting elements](#SelectingElements).
 
 > [!TIP]
 > Si la fenêtre de l’explorateur DOM est fermée, sélectionnez **Déboguer**>**Fenêtres** > **Explorateur DOM** pour la rouvrir. La fenêtre s’ouvre uniquement pendant une session de débogage de script.
@@ -60,9 +60,9 @@ Dans la procédure qui suit, nous examinerons le processus de débogage interact
 
 1. Créez une solution dans Visual Studio en sélectionnant **Fichier** > **Nouveau projet**.
 
-2. Choisissez **JavaScript**  > **Windows Universal**, puis choisissez **application WinJS**.
+2. Choisissez **JavaScript** > **Windows Universal**, puis choisissez **application WinJS**.
 
-3. Attribuez un nom au projet, tel que `FlipViewApp`, puis choisissez **OK** pour créer l’application.
+3. Tapez un nom pour le projet, comme `FlipViewApp`, puis choisissez **OK** pour créer l’application.
 
 4. Dans l’élément BODY de index. html, ajoutez le code suivant :
 
@@ -182,7 +182,7 @@ Dans la procédure qui suit, nous examinerons le processus de débogage interact
 14. Dans la fenêtre principale, double-cliquez sur `width: 100px;height: 100px;`, appuyez sur la touche **Suppr** , puis appuyez sur **entrée**. Une fois que vous avez appuyé sur entrée, les nouvelles valeurs sont immédiatement reflétées dans l’application, même si vous n’avez pas arrêté votre session de débogage.
 
     > [!IMPORTANT]
-    > Comme vous pouvez mettre à jour les attributs dans la fenêtre de l’explorateur DOM, vous pouvez également mettre à jour les valeurs affichées sous les onglets **Styles**, **Calculé**et **Disposition** . Pour plus d’informations, consultez [déboguer les styles CSS avec l’Explorateur DOM](../debugger/debug-css-styles-using-dom-explorer.md) et [Déboguer la disposition à l’aide de l’Explorateur DOM](../debugger/debug-layout-using-dom-explorer.md).
+    > Comme vous pouvez mettre à jour les attributs dans la fenêtre de l’explorateur DOM, vous pouvez également mettre à jour les valeurs affichées sous les onglets **Styles**, **Calculé**et **Disposition** .
 
 15. Basculez vers l’application en la sélectionnant ou en utilisant les touches Alt + Tab.
 
@@ -239,7 +239,7 @@ Il existe trois façons de sélectionner des éléments DOM lors du débogage d�
 
 - Utilisez le bouton `select` , qui est l’une des [JavaScript Console commands](../debugger/javascript-console-commands.md?view=vs-2017).
 
-  Quand vous utilisez la fenêtre de l’explorateur DOM pour sélectionner des éléments et placez le pointeur de la souris sur un élément, l’élément correspondant est mis en surbrillance dans l’application en cours d’exécution. Vous devez cliquer sur l’élément dans l’explorateur DOM pour le sélectionner, ou vous pouvez utiliser les touches de direction pour mettre en surbrillance et sélectionner des éléments. Vous pouvez également sélectionner des éléments dans l’explorateur DOM à l’aide du bouton **Sélectionner un élément** . L’illustration suivante présente le bouton **Sélectionner un élément** .
+  Quand vous utilisez la fenêtre de l’explorateur DOM pour sélectionner des éléments et placez le pointeur de la souris sur un élément, l’élément correspondant est mis en surbrillance dans l’application en cours d’exécution. Vous devez cliquer sur l’élément dans l’explorateur DOM pour le sélectionner, ou vous pouvez utiliser les touches de direction pour mettre en surbrillance et sélectionner des éléments. Vous pouvez également sélectionner des éléments dans l’explorateur DOM à l’aide du bouton **Sélectionner un élément** . L'illustration suivante présente le bouton **Sélectionner un élément**.
 
   ![Bouton Sélectionner un élément dans l’Explorateur DOM](../debugger/media/js_dom_select_element_button.png "JS_DOM_Select_Element_Button")
 
@@ -255,7 +255,8 @@ Il existe trois façons de sélectionner des éléments DOM lors du débogage d�
 > La mise en surbrillance d’éléments par pointage n’est que partiellement prise en charge dans l’émulateur Windows Phone.
 
 ## <a name="see-also"></a>Voir aussi
-- [Déboguer des applications dans Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
+
+- [Déboguer des applications dans Visual Studio](debugging-windows-store-and-windows-universal-apps.md)
 - [Actualiser une application (JavaScript)](../debugger/refresh-an-app-javascript.md)
 - [Déboguer un contrôle WebView](../debugger/debug-a-webview-control.md)
 - [Raccourcis clavier](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017)

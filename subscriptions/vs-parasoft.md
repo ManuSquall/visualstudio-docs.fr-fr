@@ -3,15 +3,15 @@ title: Avantage de Parasoft Virtualize/SOAtest Professional Desktop | Microsoft 
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/31/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 description: Découvrez comment activer l’abonnement Virtualize/SOA Test Professional inclus dans votre abonnement Visual Studio.
-ms.openlocfilehash: 64aa689780dc30a5a6fcadf3e31ec24d3289056a
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
-ms.translationtype: HT
+ms.openlocfilehash: 036b265f9ca1accc7027477abfc27ce4e66c4033
+ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787708"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74161926"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Avantages de Parasoft Virtualize/SOAtest Professional Desktop dans les abonnements Visual Studio
 
@@ -46,7 +46,7 @@ Effectuez des tests plus tôt et plus souvent.  Simulez et testez le comportemen
 
 9. Choisissez la langue à utiliser, puis cliquez sur **OK**.
 
-10. L’Assistant Parasoft SOAtest & Virtualize Setup Wizard démarre.  Cliquez sur **Suivant**.
+10. L’Assistant Parasoft SOAtest & Virtualize Setup Wizard démarre.  Cliquez sur **Next**.
     > [!div class="mx-imgBorder"]
     > ![Avantage Parasoft, Démarrage de l’installation](_img/vs-parasoft/vs-parasoft-start-install.png)
 
@@ -73,13 +73,15 @@ Effectuez des tests plus tôt et plus souvent.  Simulez et testez le comportemen
 | Niveau d'abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | Licences en volume, Azure, Détail, NFR sélectif<sup>1</sup> | 6 mois       |  Oui       |
+| Visual Studio Enterprise avec GitHub Enterprise | LV | 6 mois       |  Oui       |
 | Visual Studio Professional (Standard) | Licences en volume, Azure, Détail                                       | Non disponible                                                           |NA         |
+| Visual Studio Professional avec GitHub Enterprise | LV                                      | Non disponible                                                           |NA         |
 | Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Non disponible                                                           |NA         |
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Non disponible                                                           |NA         |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure                                       | Non disponible                                                           |NA|
 ||
 
-<sup>1</sup>  *Inclut : Microsoft Partner Network (Enterprise).  Exclut :  NFR (revente interdite), VSIP (Visual Studio Industry Partner), FTE, MCT Software & Services Developer, BizSpark, Imagine, MVP (Most Valuable Professional), RD (Regional Director).  MCT Software & Services.*
+<sup>1</sup>  *comprend : Microsoft Partner Network (Enterprise).  Exclut : la revente interdite (not for Resale), VSIP (Visual Studio Industry Partner), FTE, MCT Software & Services Developer, BizSpark, imagine, le MVP (Most Valuable Professional), Bureau régional.  Services de & de logiciel MCT.*
 
 > [!NOTE]
 > Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à consulter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
@@ -92,4 +94,4 @@ Effectuez des tests plus tôt et plus souvent.  Simulez et testez le comportemen
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Étapes suivantes
-Tirez parti de votre propre bac à sable de développement en activant vos [crédits Azure](vs-azure.md). 
+Tirez parti de votre propre bac à sable (sandbox) de développement en activant votre [crédit individuel Azure DevTest](vs-azure.md). 

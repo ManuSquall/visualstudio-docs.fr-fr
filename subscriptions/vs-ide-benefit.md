@@ -3,15 +3,15 @@ title: Avantage IDE Visual Studio dans les abonnements Visual Studio | Microsoft
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 08/01/2019
+ms.date: 11/14/2019
 ms.topic: conceptual
 description: Découvrez comment télécharger et installer l’IDE de Visual Studio inclus dans votre abonnement Visual Studio.
-ms.openlocfilehash: 62992b2c9dc21063d78c135894368c93f07f76a8
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
-ms.translationtype: HT
+ms.openlocfilehash: 74f7de0272130f88c683dcabefaecccf1554ab12
+ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787863"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099628"
 ---
 # <a name="the-visual-studio-2019-benefit"></a>Avantage Visual Studio 2019
 
@@ -41,7 +41,7 @@ Pour télécharger l’IDE :
    > [!div class="mx-imgBorder"]
    > ![Personnaliser Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-customize-install-cropped.png)
 
-10. Cliquez sur **Installer**.
+10. Cliquez sur **Suivant**.
 
 11. À la fin de l’installation, vous avez le choix de modifier l’installation ou de lancer Visual Studio.  Cliquez sur **Lancer** pour démarrer.  Si plusieurs versions sont déjà installées, elles sont listées.
     > [!div class="mx-imgBorder"]
@@ -62,14 +62,16 @@ Pour télécharger l’IDE :
 | Niveau d'abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard, cloud mensuel)   | Licences en volume, Azure, Détail, NFR sélectif<sup>1</sup> | Disponible       |  Oui          |
+| Visual Studio Enterprise avec GitHub Enterprise   | LV | Disponible       |  Oui          |
 | Visual Studio Professional (Standard, cloud mensuel) | Licences en volume, Azure, Détail                                       | Disponible                                                            |  Oui          |
+| Visual Studio Professional avec GitHub Enterprise | LV   | Disponible              |  Oui          |
 | Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Disponible                                             |  Oui         |
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Non disponible                                              |  N/A          |
 
-<sup>1</sup>  *Inclut :  NFR (revente interdite), VSIP (Visual Studio Industry Partner), MPN (Microsoft Partner Network), FTE, MCT Software & Services Developer, BizSpark, Imagine, MVP (Most Valuable Professional), RD (Regional Director).  Exclut : MCT Software & Services.*
+<sup>1</sup>  *comprend : non pour la revente (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Developers Developer, BizSpark, imagine, MVP (le plus précieux Professional), RD (Regional Director).  Exclut : services de & de logiciel MCT.*
 
 > [!NOTE]
-> Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à accéder à [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
+> Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à consulter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
 
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
 
@@ -82,5 +84,5 @@ Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à
 ## <a name="next-steps"></a>Étapes suivantes
 Une fois que vous avez installé Visual Studio, n’oubliez pas d’activer les autres avantages importants ci-dessous :
 - [Azure DevOps](vs-azure-devops.md)
-- [Crédits Azure](vs-azure.md)
+- [Crédit individuel Azure DevTest](vs-azure.md)
 - [Compte de développeur Windows](vs-windows-dev.md)

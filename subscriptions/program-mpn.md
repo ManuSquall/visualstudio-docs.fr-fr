@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: MPN donne des détails sur les abonnements proposés, sur les règles qui s’appliquent et sur le nombre d’abonnements.
-ms.openlocfilehash: 063c0348af226f0cbe06256426352edac7124b11
-ms.sourcegitcommit: b761a4a457646d04adfda510c8837734ee4d8f17
+ms.openlocfilehash: e32ae547327c4e51b7d49f6dffe9130afa843c49
+ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70929756"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72816565"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Abonnements Visual Studio offerts aux partenaires du réseau MPN (Microsoft Partner Network)
 
@@ -57,7 +57,7 @@ Avec l’Action Pack, le partenaire gagne **trois abonnements Visual Studio Prof
 
 Les abonnés Visual Studio Professional (MPN) peuvent aussi télécharger et utiliser des logiciels pour leur développement, notamment SQL Server Developer Edition.
 
-L’abonnement Visual Studio Professional (MPN) n’inclut pas les avantages Azure DevOps Services, les crédits Azure mensuels, le support technique, la formation ou d’autres avantages réservés aux abonnés qui sont disponibles avec les abonnements Visual Studio proposés dans le commerce.
+L’abonnement Visual Studio Professional (MPN) n’inclut pas les avantages Azure DevOps Services, le crédit Azure DevTest individiaul, le support technique, la formation ou d’autres avantages de l’abonné disponibles avec les abonnements Visual Studio qui sont proposé au commercial.
 
 ## <a name="internal-use-only-restriction"></a>Restriction à un usage interne uniquement
 

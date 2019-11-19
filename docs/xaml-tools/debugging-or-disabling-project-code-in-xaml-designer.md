@@ -6,12 +6,12 @@ ms.assetid: ac600581-8fc8-49e3-abdf-1569a3483d74
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bac142e413e1fdfcd088585a139019f26b041d98
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e6426479012ba950f261286323b166da695e9cc5
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650960"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189591"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>Déboguer ou désactiver le code de projet dans le Concepteur XAML
 
@@ -98,4 +98,4 @@ Si vous sélectionnez **Afficher seulement les contrôles de plateforme**, les c
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Concevoir du code XAML dans Visual Studio et Blend pour Visual Studio](../designers/designing-xaml-in-visual-studio.md)
+- [Concevoir du code XAML dans Visual Studio et Blend pour Visual Studio](designing-xaml-in-visual-studio.md)

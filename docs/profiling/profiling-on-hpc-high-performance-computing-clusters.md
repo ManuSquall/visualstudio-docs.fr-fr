@@ -19,22 +19,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38cde5c1500168dcb36021c530799d1d8d1effb9
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
+ms.openlocfilehash: 867350c1a786971a25256bbe8f60ac2bfca14a19
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745317"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72910326"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>Profiler sur des clusters HPC (High Performance Computing)
 
 Vous pouvez effectuer un profilage sur des nœuds de calcul de clusters HPC Microsoft Windows suivant la méthode par échantillonnage des Outils de profilage de Visual Studio. Pour plus d’informations sur HPC, consultez [Windows HPC](https://azure.microsoft.com/solutions/big-compute/) sur le site web de Microsoft.
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Configuration requise
 
 Pour effectuer un profilage sur un nœud de calcul HPC, vous devez effectuer les opérations suivantes :
 
-- Installez Microsoft HPC Pack 2008 sur le même ordinateur que Visual Studio. L’ordinateur ne doit pas nécessairement faire partie du cluster HPC. Vous pouvez installer HPC Pack à partir du [Centre de téléchargement Microsoft ](http://go.microsoft.com/fwlink/?LinkID=177414).
+- Installez Microsoft HPC Pack 2008 sur le même ordinateur que Visual Studio. L’ordinateur ne doit pas nécessairement faire partie du cluster HPC. Vous pouvez installer HPC Pack à partir du [Centre de téléchargement Microsoft ](https://www.microsoft.com/download/details.aspx?id=4812).
 
 - Installez le .NET Framework 4 et la version autonome des outils de profilage sur le nœud de calcul HPC. Les programmes d’installation du .NET Framework et du profileur autonome sont tous deux disponibles sur le support d’installation de Visual Studio. **Remarque** : Vous devez redémarrer l’ordinateur après avoir installé le .NET Framework et avant d’installer les outils de profilage.
 
@@ -53,8 +53,8 @@ Pour effectuer un profilage sur un nœud de calcul HPC, vous devez effectuer les
 | | |
 |------------------| - |
 | *%HeadNode%* | Nom du nœud principal du cluster. |
-| *%FxPath%* | Chemin du programme d’installation du .NET Framework 4. Sur le support d’installation de Visual Studio, le chemin est : WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe |
-| *%ProfilerPath%* | Chemin de la version autonome du programme d’installation des outils de profilage. Sur le support d’installation de Visual Studio, le chemin est : Standalone Profiler\x64\vs_profiler.exe |
+| *%FxPath%* | Chemin du programme d’installation du .NET Framework 4. Sur le support d’installation de Visual Studio, le chemin d’accès est le suivant : WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe. |
+| *%ProfilerPath%* | Chemin de la version autonome du programme d’installation des outils de profilage. Sur le support d’installation de Visual Studio, le chemin d’accès est le suivant : Standalone Profiler\x64\vs_profiler.exe. |
 
 ## <a name="profile-on-an-hpc-compute-node"></a>Profiler sur un nœud de calcul HPC
 
@@ -70,7 +70,7 @@ Pour configurer une session de profilage, spécifiez le cluster HPC et les infor
 
    - Pour profiler un fichier binaire qui ne se trouve pas dans un projet ouvert, sélectionnez l’option **Exécutable (fichier .EXE)** .
 
-4. Cliquez sur **Suivant**.
+4. Cliquez sur **Next**.
 
 5. Dans la troisième page de l’Assistant :
 
@@ -82,7 +82,7 @@ Pour configurer une session de profilage, spécifiez le cluster HPC et les infor
 
     - Dans **Emplacement de déploiement**, spécifiez le chemin du répertoire utilisé par le serveur HPC pour organiser des images pour le déploiement.
 
-6. Cliquez sur **Suivant**.
+6. Cliquez sur **Next**.
 
 7. Dans la quatrième page de l’Assistant :
 
@@ -102,7 +102,7 @@ Pour configurer une session de profilage, spécifiez le cluster HPC et les infor
 
     - Cochez la case **Lancer le profilage une fois l’Assistant terminé** pour démarrer immédiatement le profilage, ou décochez-la pour démarrer le profilage manuellement.
 
-10. Cliquez sur **Terminer**.
+10. Cliquez sur **Finish**.
 
 ## <a name="set-hpc-profiling-properties-by-using-performance-session-property-pages"></a>Définir des propriétés de profilage HPC à l’aide des pages de propriétés d’une session de performance
 

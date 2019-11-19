@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 350f6d6d087ebef07ff3113b081f1742db7012c2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 545a77791d7bc5318dc17d869c510fb4e8a0787f
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62798398"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189349"
 ---
 # <a name="performance-session-overview"></a>Vue d’ensemble de la session de performance
 Cette vue d’ensemble explique les principes de base du profilage. Les développeurs qui débutent dans le domaine des tâches liées aux performances vont découvrir comment les outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] peuvent leur permettre de devenir rapidement productifs et d’optimiser les performances de leur code. Quant aux développeurs expérimentés dans le profilage, ils peuvent obtenir une vue d’ensemble des fonctionnalités et des processus spécifiques des outils de profilage.
@@ -75,4 +75,4 @@ Cette vue d’ensemble explique les principes de base du profilage. Les dévelop
 
 ## <a name="see-also"></a>Voir aussi
 - [Vues d’ensemble](../profiling/overviews-performance-tools.md)
-- [Procédure pas à pas : Identifier les problèmes de performances](/visualstudio/profiling/beginners-guide-to-cpu-sampling)
+- [Procédure pas à pas : identifier les problèmes de performances](beginners-guide-to-cpu-sampling.md)

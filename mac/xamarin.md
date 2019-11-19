@@ -5,12 +5,12 @@ author: therealjohn
 ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
-ms.openlocfilehash: c8b6bddac92a9ec6b40ba08ebcdc3fe3577b0bc8
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 31fb7fa4c2a87820285809d24b98fe8e59a6be01
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211474"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73714480"
 ---
 # <a name="xamarin-mobile-app-development"></a>Développement d’applications mobiles Xamarin
 
@@ -22,7 +22,7 @@ Le rechargement à chaud XAML pour Xamarin. Forms est intégré à Visual Studio
 
 Vous pouvez activer le rechargement à chaud XAML en activant la case à cocher **activer le rechargement à chaud Xamarin** dans **Visual Studio > préférences > Projets > le rechargement à chaud Xamarin**.
 
-Pour plus d’informations sur le rechargement à chaud, consultez le [Guide de rechargement à chaud XAML pour Xamarin. Forms](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/xaml/hot-reload) dans la documentation.
+Pour plus d’informations sur le rechargement à chaud, consultez le [Guide de rechargement à chaud XAML pour Xamarin. Forms](/xamarin/xamarin-forms/xaml/hot-reload) dans la documentation.
 
 ## <a name="android"></a>Android
 
@@ -40,7 +40,7 @@ Le concepteur iOS est entièrement intégré à Visual Studio pour Mac et permet
 
 ![Concepteur de Storyboard iOS](media/intro-image30.png)
 
-Pour plus d’informations sur l’utilisation du concepteur iOS, consultez les guides du [concepteur](https://docs.microsoft.com/xamarin/ios/user-interface/designer/?tabs=macos).
+Pour plus d’informations sur l’utilisation du concepteur iOS, consultez les guides du [concepteur](/xamarin/ios/user-interface/designer/?tabs=macos).
 
 ### <a name="mac"></a>Mac
 

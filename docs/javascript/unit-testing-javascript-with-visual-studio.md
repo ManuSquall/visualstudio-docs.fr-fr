@@ -11,19 +11,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: b1ef763295db7673896189ce000ed59d5da5becf
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
-ms.translationtype: HT
+ms.openlocfilehash: 90a440ce88690c12792c17729e93f9fa287dabb6
+ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787976"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72888629"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Test unitaire JavaScript et TypeScript dans Visual Studio
 
 Node.js Tools pour Visual Studio vous permet d’écrire et d’exécuter des tests unitaires à l’aide de certains des frameworks JavaScript les plus courants sans avoir besoin de passer à une invite de commandes.
 
 Les frameworks pris en charge sont :
-* Mocha ([mochajs.org](http://mochajs.org/))
+* Mocha ([mochajs.org](https://mochajs.org/))
 * Jasmine ([Jasmine.github.io](https://jasmine.github.io/))
 * Tape ([github.com/substack/tape](https://github.com/substack/tape))
 * Jest ([jestjs.io](https://jestjs.io/))
@@ -65,7 +65,7 @@ describe('Test Suite 1', function() {
 
 Si vous n’avez pas défini les options de test unitaire dans les propriétés du projet, vous devez vérifier que la propriété **Framework de tests** dans la fenêtre **Propriétés** a pour valeur le framework de tests correct pour vos fichiers de test unitaire. Cette opération est effectuée automatiquement par les modèles de fichier de test unitaire.
 
-![Framework de test](../javascript/media/UnitTestsFrameworkMocha.png)
+![Infrastructure de test](../javascript/media/UnitTestsFrameworkMocha.png)
 
 > [!Note]
 > Les options de test unitaire sont prioritaires sur les paramètres des fichiers individuels.

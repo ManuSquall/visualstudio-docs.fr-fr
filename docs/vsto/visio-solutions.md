@@ -17,19 +17,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 69d795fe9e4243bbce51e1e137bb6704492bae32
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: a79b3c9964a24daf0a12ab90f47fb5903d89cdd0
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551275"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985506"
 ---
 # <a name="visio-solutions"></a>Solutions Visio
   Visual Studio fournit des modèles de projet que vous pouvez utiliser pour créer des compléments VSTO pour Microsoft Office Visio. Vous pouvez utiliser les compléments VSTO pour automatiser Visio, étendre les fonctionnalités Visio ou personnaliser l'interface utilisateur de Visio.
 
  Pour plus d’informations sur les compléments VSTO, consultez prise en main de la [programmation de compléments VSTO](../vsto/getting-started-programming-vsto-add-ins.md) et [architecture des compléments VSTO](../vsto/architecture-of-vsto-add-ins.md). Si vous débutez avec la programmation avec Microsoft Office, consultez la page [prise en main &#40;du&#41;développement Office dans Visual Studio](../vsto/getting-started-office-development-in-visual-studio.md).
 
- **S’applique à:** Les informations contenues dans cette rubrique s’appliquent aux projets de compléments VSTO pour Visio 2010. Pour plus d’informations, consultez [Fonctionnalités disponibles par type d’application et de projet Office](../vsto/features-available-by-office-application-and-project-type.md).
+ **S’applique à :** les informations contenues dans cette rubrique s’appliquent aux projets de compléments VSTO pour Visio 2010. Pour plus d’informations, consultez [Fonctionnalités disponibles par type d’application et de projet Office](../vsto/features-available-by-office-application-and-project-type.md).
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
@@ -68,10 +68,10 @@ ms.locfileid: "69551275"
 - [Prise en main de la programmation de compléments VSTO](../vsto/getting-started-programming-vsto-add-ins.md)
 - [Vue d’ensemble du &#40;développement des solutions Office VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [Architecture des compléments VSTO](../vsto/architecture-of-vsto-add-ins.md)
-- [Guide pratique pour Créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
+- [Comment : créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Programmer les compléments VSTO](../vsto/programming-vsto-add-ins.md)
 - [Écrire du code dans les solutions Office](../vsto/writing-code-in-office-solutions.md)
 - [Assemblys PIA (Primary Interop Assembly) Office](../vsto/office-primary-interop-assemblies.md)
 - [Personnalisation de l’interface utilisateur Office](../vsto/office-ui-customization.md)
 - [Vue d’ensemble du modèle objet Visio](../vsto/visio-object-model-overview.md)
-- [Visio 2010 dans le développement Office](http://go.microsoft.com/fwlink/?LinkId=199017)
+- [Visio 2010 dans le développement Office](/previous-versions/office/developer/office-2010/ff604964(v=office.14))

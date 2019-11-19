@@ -8,34 +8,33 @@ f1_keywords:
 - System.Activities.Statements.Persist.UI
 ms.assetid: be8648dd-3eb9-4a50-8ec1-57a8be804692
 caps.latest.revision: 6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f87997178f98e9e632b756b5a4440c19544b5c86
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 60a63dd4036863641646e85a89f5018cba786802
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971249"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72672623"
 ---
 # <a name="persist-activity-designer"></a>Concepteur d'activités Persist
-Le **Persist** ActivityDesigner est utilisé pour créer et configurer un <xref:System.Activities.Statements.Persist> activité.  
-  
-## <a name="the-persist-activity"></a>Activité Persist  
- L'activité <xref:System.Activities.Statements.Persist> enregistre un workflow sur le disque, si possible. L'activité <xref:System.Activities.Statements.Persist> ne peut pas être exécutée dans une zone sans persistance comme, par exemple, dans une activité <xref:System.Activities.Statements.TransactionScope>. Si vous utilisez une activité <xref:System.Activities.Statements.Persist> dans une étendue sans persistance, une exception est levée au moment de l'exécution.  
-  
-### <a name="using-the-persist-activity-designer"></a>Utilisation du concepteur d'activités Persist  
- Le **Persist** Concepteur d’activités peut être trouvé dans le **Runtime** catégorie de la **boîte à outils**, qui est accessible en cliquant sur le **boîte à outils** onglet (ou bien, sélectionnez **boîte à outils** à partir de la **vue** menu ou CTRL + ALT + X.)  
-  
- Le **Persist** Concepteur d’activités peut être déplacé de la **boîte à outils** et déposé dans le [!INCLUDE[wfd2](../includes/wfd2-md.md)] surface, là où les activités sont généralement placées, par exemple dans un <xref:System.Activities.Statements.Sequence>. Cette opération crée un <xref:System.Activities.Statements.Persist> activité avec une valeur par défaut **DisplayName** Persist. Le <xref:System.Activities.Activity.DisplayName%2A> peuvent être modifiées dans l’en-tête de la **Persist** Concepteur d’activités ou dans le **DisplayName** case de la grille des propriétés.  
-  
-### <a name="the-persist-properties"></a>Propriétés de Persist  
- Le tableau suivant présente les propriétés de <xref:System.Activities.Statements.Persist> et décrit comment elles sont utilisées dans le concepteur. Ces propriétés peuvent être modifiées dans la grille des propriétés et certaines d'entre elles peuvent être modifiées dans l'aire de conception [!INCLUDE[wfd2](../includes/wfd2-md.md)].  
-  
-|Nom de la propriété|Obligatoire|Utilisation|  
-|-------------------|--------------|-----------|  
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Nom convivial de l'activité <xref:System.Activities.Statements.Persist>. La valeur par défaut est Persist. Bien que le nom complet ne soit pas strictement obligatoire, la meilleure pratique consiste à l'utiliser.|  
-  
-## <a name="see-also"></a>Voir aussi  
- [Runtime](../workflow-designer/runtime-activity-designers.md)   
- [TerminateWorkflow](../workflow-designer/terminateworkflow-activity-designer.md)
+Le concepteur d’activités **Persist** est utilisé pour créer et configurer une activité <xref:System.Activities.Statements.Persist>.
+
+## <a name="the-persist-activity"></a>Activité Persist
+ L'activité <xref:System.Activities.Statements.Persist> enregistre un workflow sur le disque, si possible. L'activité <xref:System.Activities.Statements.Persist> ne peut pas être exécutée dans une zone sans persistance comme, par exemple, dans une activité <xref:System.Activities.Statements.TransactionScope>. Si vous utilisez une activité <xref:System.Activities.Statements.Persist> dans une étendue sans persistance, une exception est levée au moment de l'exécution.
+
+### <a name="using-the-persist-activity-designer"></a>Utilisation du concepteur d'activités Persist
+ Le concepteur d’activités **Persist** se trouve dans la catégorie **Runtime** de la **boîte à outils**, accessible en cliquant sur l’onglet **boîte à outils** (ou en sélectionnant **boîte à outils** dans le menu **affichage** , ou encore en appuyant sur CTRL + ALT + X).
+
+ Le concepteur d’activités **Persist** peut être déplacé de la **boîte à outils** et déposé dans l’aire de [!INCLUDE[wfd2](../includes/wfd2-md.md)], là où les activités sont généralement placées, par exemple dans une <xref:System.Activities.Statements.Sequence>. Cela crée une activité <xref:System.Activities.Statements.Persist> avec l’option **DisplayName** par défaut Persist. La <xref:System.Activities.Activity.DisplayName%2A> peut être modifiée dans l’en-tête du concepteur d’activités **Persist** ou dans la zone **DisplayName** de la grille des propriétés.
+
+### <a name="the-persist-properties"></a>Propriétés de Persist
+ Le tableau suivant présente les propriétés de <xref:System.Activities.Statements.Persist> et décrit comment elles sont utilisées dans le concepteur. Ces propriétés peuvent être modifiées dans la grille des propriétés et certaines d'entre elles peuvent être modifiées dans l'aire de conception [!INCLUDE[wfd2](../includes/wfd2-md.md)].
+
+|Nom de la propriété|Obligatoire|Usage|
+|-------------------|--------------|-----------|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Nom convivial de l'activité <xref:System.Activities.Statements.Persist>. La valeur par défaut est Persist. Bien que le nom complet ne soit pas strictement obligatoire, la meilleure pratique consiste à l'utiliser.|
+
+## <a name="see-also"></a>Voir aussi
+ [Runtime](../workflow-designer/runtime-activity-designers.md) [TerminateWorkflow](../workflow-designer/terminateworkflow-activity-designer.md)

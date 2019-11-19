@@ -13,21 +13,19 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1da94495019d30a8ba3df8bdaa7df0ccf2ae4d6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c67fb719c6ec87e7707a406e2e7f67cd71569b39
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322930"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189037"
 ---
 # <a name="vscodewindowmanager-object"></a>Objet VSCodeWindowManager
-Le service de langage implémente le Gestionnaire de fenêtres de code et est chargé de gérer les ornements (par exemple, la barre déroulante). Pour plus d’informations, consultez [personnalisation de Code Windows à l’aide de l’API héritée](../extensibility/customizing-code-windows-by-using-the-legacy-api.md).
 
- Le tableau suivant présente les interfaces dans le `VSCodeWindowManager` objet.
+Le service de langage implémente le gestionnaire de fenêtre de code et est chargé de gérer les ornements (par exemple, la barre de liste déroulante). Pour plus d’informations, consultez [Personnalisation des fenêtres de code à l’aide de l’API héritée](/visualstudio/extensibility/customizing-code-windows-by-using-the-legacy-api?view=vs-2015).
+
+Le tableau suivant présente les interfaces de l’objet `VSCodeWindowManager`.
 
 |Interface|Description|
 |---------------|-----------------|
-|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Ornements (tels que les barres déroulantes) permet d’être ajoutés ou supprimés à partir d’une fenêtre de code.|
-
-## <a name="see-also"></a>Voir aussi
-- [Personnalisation des fenêtres de code à l’aide de l’API héritée](../extensibility/customizing-code-windows-by-using-the-legacy-api.md)
+|<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|Permet d’ajouter ou de supprimer des ornements (tels que des barres déroulantes) dans une fenêtre de code.|

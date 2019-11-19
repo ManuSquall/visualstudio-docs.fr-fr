@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: ca48b0510c36bd0d5528cda5d4514f12763ee243
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4a8ea7977f73be2a38a8ac7a417c6794b567e600
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72632852"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189110"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>Bienvenue dans l’IDE Visual Studio | C\#
 
@@ -46,7 +46,7 @@ Explorez davantage Visual Studio en suivant l’un de ces articles d’introduct
 > [Apprendre à utiliser l’éditeur de code](tutorial-editor.md)
 
 > [!div class="nextstepaction"]
-> [Découvrir les projets et les solutions](tutorial-projects-solutions.md)
+> [Découvrir les projets et les solutions](../tutorial-projects-solutions.md)
 
 ## <a name="see-also"></a>Voir aussi
 

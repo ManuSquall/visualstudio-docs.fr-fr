@@ -28,12 +28,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 242daf82d405af4b3a1e529633fb82651aa6bdc9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 693e0d206455c2c430f8d723f131868fdf21eefc
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666620"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189557"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>Options, Éditeur de texte, XAML, Divers
 
@@ -52,7 +52,7 @@ Ce paramètre permet de contrôler à quel moment les balises et les guillemets 
 
 ## <a name="errors-and-warnings"></a>Erreurs et avertissements
 
-Utilisez ce paramètre pour contrôler à quel moment les erreurs et les avertissements sont générés automatiquement. Pour plus d’informations, consultez [Erreurs et avertissements XAML](../../designers/xaml-errors-warnings.md).
+Utilisez ce paramètre pour contrôler à quel moment les erreurs et les avertissements sont générés automatiquement. Pour plus d’informations, consultez [Erreurs et avertissements XAML](../../xaml-tools/xaml-errors-warnings.md).
 
 ## <a name="see-also"></a>Voir aussi
 

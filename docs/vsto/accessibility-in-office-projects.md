@@ -15,16 +15,16 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e7b80db6f8f54c897a370d53db56773ad8296f6e
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 8bd74f4d61c74a4dc348f7a615e103b283a15fc0
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255778"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189620"
 ---
 # <a name="accessibility-in-office-projects"></a>Accessibilité dans les projets Office
 
-Microsoft Visual Studio et Microsoft Office incluent de nombreuses fonctionnalités d’accessibilité qui vous permettent de créer des solutions personnalisées répondant aux exigences standard en matière d’accessibilité. Microsoft publie des instructions pour l’accessibilité sur le Web. Pour plus d’informations, consultez le [site Web d’accessibilité](http://go.microsoft.com/fwlink/?LinkID=37113).
+Microsoft Visual Studio et Microsoft Office incluent de nombreuses fonctionnalités d’accessibilité qui vous permettent de créer des solutions personnalisées répondant aux exigences standard en matière d’accessibilité. Microsoft publie des instructions pour l’accessibilité sur le Web. Pour plus d’informations, consultez le [site Web d’accessibilité](https://www.microsoft.com/accessibility/).
 
 Dans la plupart des cas, les projets Office dans Visual Studio répondent aux normes d’accessibilité ou exposent des propriétés que vous pouvez définir pour rendre vos solutions accessibles. Toutefois, certaines fonctionnalités ont une accessibilité limitée.
 
@@ -88,5 +88,5 @@ Vous pouvez utiliser la loupe pour surmonter ces limitations. La loupe est un ut
 
 - [Développer des solutions Office](../vsto/developing-office-solutions.md)
 - [Contrôles sur les documents Office](../vsto/controls-on-office-documents.md)
-- [Accessibilité pour les personnes handicapées](../ide/reference/accessibility-for-people-with-disabilities.md)
+- [Accessibilité pour les personnes handicapées](../ide/reference/accessibility-features-of-visual-studio.md)
 - [Fonctionnalités d’accessibilité de Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md)

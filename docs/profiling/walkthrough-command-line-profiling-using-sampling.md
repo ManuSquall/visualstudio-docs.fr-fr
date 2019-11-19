@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Profilage en ligne de commande avec l’échantillonnage | Microsoft Docs'
+title: 'Procédure pas à pas : profilage à l’aide d’outils en ligne de commande et de l’échantillonnage | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c76fd1d18b41073bf92ed18dadeeeb3a90c9209
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 20804e6ada568828ea1850ae249d9bf0d24855e0
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433610"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189290"
 ---
-# <a name="walkthrough-command-line-profiling-using-sampling"></a>Procédure pas à pas : Profilage en ligne de commande avec l’échantillonnage
+# <a name="walkthrough-command-line-profiling-using-sampling"></a>Procédure pas à pas : profilage de la ligne de commande à l’aide de l’échantillonnage
 
 Cette procédure pas à pas montre comment profiler une application à l’aide d’outils en ligne de commande et de l’échantillonnage pour identifier les problèmes de performances.
 
@@ -29,11 +29,11 @@ Dans cette procédure pas à pas, vous allez suivre les étapes suivantes :
 - Profiler une application à l’aide d’outils en ligne de commande et de l’échantillonnage
 - Analyser les résultats de profilage échantillonnés pour rechercher et résoudre les problèmes de performances.
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Configuration requise
 
 - Compréhension intermédiaire de [!INCLUDE[csharp_current_short](../misc/includes/csharp_current_short_md.md)]
 - Compréhension intermédiaire de l’utilisation des outils en ligne de commande
-- Une copie de l’[exemple PeopleTrax](/visualstudio/profiling/performance-explorer)
+- Une copie de l’[exemple PeopleTrax](performance-explorer.md)
 - Pour utiliser les informations fournies par le profilage, il est préférable de disposer des informations de symboles de débogage.
 
 ## <a name="command-line-profiling-using-the-sampling-method"></a>Profilage en ligne de commande suivant la méthode par échantillonnage
@@ -73,7 +73,7 @@ L’échantillonnage est une méthode de profilage par laquelle un processus sp�
 
 8. Fermez le Bloc-notes, puis l’application **PeopleTrax**.
 
-9. Fermez le profileur. Tapez la commande suivante :
+9. Fermez le profileur. Tapez la commande suivante :
 
     ```cmd
     VSPerfCmd /shutdown

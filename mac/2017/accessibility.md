@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 08/15/2017
 ms.assetid: 2C4AAC2E-3B4A-4496-8BE0-1F5A7F81D1CA
-ms.openlocfilehash: f90f5fca9d68ed00162fd746ddf291343c8d51f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 19104cb090ff2a115afefe994bd53c93d2baaf5d
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62988391"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73714424"
 ---
 # <a name="accessibility"></a>Accessibilité
 
@@ -44,7 +44,7 @@ defaults write com.microsoft.visual-studio com.monodevelop.AccessibilityEnabled 
 
 Vous devez redémarrer Visual Studio après avoir activé l’accessibilité.
 
-## <a name="how-to-use-keyboard-navigation"></a>Procédure : Utiliser la navigation au clavier
+## <a name="how-to-use-keyboard-navigation"></a>Procédure : Utiliser la navigation au clavier
 
 Vous pouvez activer la navigation au clavier en définissant l’option Accès clavier complet dans **Préférences système > Clavier > Raccourcis** sur **Tous les contrôles** :
 
@@ -64,18 +64,18 @@ Appuyez sur **Cmd + F5** pour activer et désactiver VoiceOver
 
 Pour parcourir les commandes de l’interface utilisateur de VoiceOver, utilisez les commandes suivantes :
 
-- Déplacer le curseur VoiceOver entre les contrôles : **Ctrl + Alt + touche de direction gauche / touche de direction droite**
+- Déplacer le curseur VoiceOver entre les contrôles : **Ctrl + Alt + touche de direction gauche / touche de direction droite**
 
    La fonction VoiceOver lit le nom des contrôles, certains détails les concernant et comment vous pouvez les utiliser.
 
-- Entrer dans des groupes et des contrôles (par exemple, le panneau Solutions, la Boîte à outils et d’autres panneaux) : **Ctrl + Alt + Maj + flèche vers le bas**
+- Entrer dans des groupes et des contrôles (par exemple, le panneau Solution, Boîte à outils et d’autres panneaux) : **Ctrl + Alt + Maj + flèche vers le bas**
 
    Une fois à l’intérieur d’un contrôle, vous pouvez utiliser **Ctrl + Alt + flèches** pour vous déplacer.
 
 Pour obtenir des informations générales sur l’utilisation de VoiceOver dans macOS, consultez les guides suivants :
 
 - [Prise en main de VoiceOver](https://help.apple.com/voiceover/info/guide/10.12/)
-- [Commandes VoiceOver dans macOS](http://lab.dotjay.com/notes/voiceover-commands/)
+- [Commandes VoiceOver dans macOS](https://lab.dotjay.com/notes/voiceover-commands/)
 
 ## <a name="see-also"></a>Voir aussi
 

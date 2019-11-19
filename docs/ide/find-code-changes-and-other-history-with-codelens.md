@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da45af92a11cfe61d5027d0710304e57ad657e48
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f4b9f55f0dc7d2b0a9fb57fa6177cd8a250f6f62
+ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653852"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73024836"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Rechercher les modifications de code et d'autres historiques avec CodeLens
 
@@ -217,7 +217,7 @@ Vous pouvez découvrir les tests unitaires qui existent pour votre code C# ou Vi
 
 1. Accédez au code d’application auquel des [tests unitaires](../test/unit-test-your-code.md) sont associés.
 
-2. Si ce n’est déjà fait, générez votre application pour charger les indicateurs de test CodeLens. Vérifiez que la [découverte par les assemblys générés](../test/test-explorer-faq.md#assembly-based-discovery) est activée.
+2. Si ce n’est déjà fait, générez votre application pour charger les indicateurs de test CodeLens. 
 
 3. Passez en revue les tests du code en appuyant sur **Alt**+**3**.
 
@@ -352,8 +352,7 @@ Pour utiliser le clavier :
 
 ### <a name="q-my-codelens-test-indicators-no-longer-appear-in-my-file-when-i-first-open-my-solution-how-can-i-load-them"></a>Q : Mes indicateurs de test CodeLens n’apparaissent plus dans mon fichier quand j’ouvre ma solution pour la première fois. Comment les charger ?
 
-**R :** Regénérez votre projet afin de charger les indicateurs de test CodeLens dans votre fichier. Vérifiez que la [découverte par les assemblys générés](../test/test-explorer-faq.md#assembly-based-discovery
-) est activée. Pour améliorer les performances, Visual Studio n’extrait plus les informations sources pour les indicateurs de test lors du chargement des fichiers de code. Les indicateurs de test sont chargés après une génération, ou quand vous accédez à un test en double-cliquant dessus dans l’**Explorateur de tests**.
+**R :** Regénérez votre projet afin de charger les indicateurs de test CodeLens dans votre fichier. Pour améliorer les performances, Visual Studio n’extrait plus les informations sources pour les indicateurs de test lors du chargement des fichiers de code. Les indicateurs de test sont chargés après une génération, ou quand vous accédez à un test en double-cliquant dessus dans l’**Explorateur de tests**.
 
 ## <a name="see-also"></a>Voir aussi
 

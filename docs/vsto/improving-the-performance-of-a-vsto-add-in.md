@@ -10,12 +10,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 79f1c4a55321a1b039cc2702b1040e2ab9d4ac9d
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: dd7b8f7b88040c7b80dcc6c40dc168a51890d8d2
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71255641"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661837"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>Améliorer les performances d’un complément VSTO
   Vous pouvez offrir aux utilisateurs une meilleure expérience. En effet, en optimisant les compléments VSTO que vous créez pour les applications Office, vous pouvez leur permettre d’être plus rapides pour démarrer, arrêter, ouvrir des éléments et exécuter d’autres tâches. Si vous créez un complément VSTO pour Outlook, vous pouvez également réduire les risques de désactivation du complément VSTO en raison de performances insuffisantes. Pour améliorer les performances du complément VSTO, vous pouvez implémenter les stratégies suivantes :
@@ -28,7 +28,7 @@ ms.locfileid: "71255641"
 
 - [Effectuer les opérations coûteuses dans un thread d'exécution distinct](#Perform)
 
-  Pour plus d’informations sur l’optimisation d’un complément VSTO Outlook, consultez [critères de performances pour conserver les compléments VSTO activés](http://go.microsoft.com/fwlink/?LinkID=266503).
+  Pour plus d’informations sur l’optimisation d’un complément VSTO Outlook, consultez [critères de performances pour conserver les compléments VSTO activés](/previous-versions/office/jj228679(v=office.15)#performance-criteria-for-keeping-add-ins-enabled).
 
 ## <a name="Load"></a> Charger les compléments VSTO à la demande
  Vous pouvez configurer un complément VSTO pour qu’il se charge uniquement dans les cas suivants :
@@ -51,13 +51,13 @@ ms.locfileid: "71255641"
 
 ### <a name="to-configure-a-windows-installer-solution-to-load-vsto-add-ins-on-demand"></a>Pour configurer une solution Windows Installer visant à charger les compléments VSTO à la demande
 
-1. Dans le registre, définissez l' `LoadBehavior` entrée de la clé **_racine_\Software\Microsoft\Office\\_applicationName_\Addins\\_Add-in ID_** sur **0x10**.
+1. Dans le registre, définissez l’entrée `LoadBehavior` de la clé **_racine_\Software\Microsoft\Office\\_applicationName_\Addins\\_ID du complément_** sur **0x10**.
 
      Pour plus d’informations, consultez [entrées du Registre pour les compléments VSTO](../vsto/registry-entries-for-vsto-add-ins.md).
 
 ### <a name="to-configure-a-solution-to-load-vsto-add-ins-on-demand-while-you-debug-the-solution"></a>Pour configurer une solution visant à charger les compléments VSTO à la demande pendant le débogage de la solution
 
-1. Créez un script qui définit l' `LoadBehavior` entrée de la clé  **_racine_de l'\\_ID du complément_ \Software\Microsoft\Office\\_applicationName_\Addins** sur **0x10**.
+1. Créez un script qui définit l’entrée `LoadBehavior` de la **_racine_\Software\Microsoft\Office\\_applicationName_\Addins\\_ID du complément_** à **0x10**.
 
      Le code ci-dessous est un exemple de ce script.
 
@@ -79,9 +79,9 @@ ms.locfileid: "71255641"
 
     ```
 
-     Pour plus d’informations sur la création d’un événement après génération C# dans un projet [, consultez Procédure : Spécifiez les &#40;événements&#35;&#41;](../ide/how-to-specify-build-events-csharp.md)de build C.
+     Pour plus d’informations sur la création d’un événement après génération C# dans un projet, consultez [Guide pratique pour spécifier &#40;des&#35;événements de build C](../ide/how-to-specify-build-events-csharp.md).
 
-     Pour plus d’informations sur la création d’un événement après génération dans un projet de Visual Basic [, consultez Procédure : Spécifiez les &#40;événements&#41;](../ide/how-to-specify-build-events-visual-basic.md)de build Visual Basic.
+     Pour plus d’informations sur la création d’un événement après génération dans un projet de Visual Basic, consultez [Guide pratique pour spécifier &#40;des&#41;événements de build Visual Basic](../ide/how-to-specify-build-events-visual-basic.md).
 
 ## <a name="Publish"></a>Publier des solutions Office à l’aide de Windows Installer
  Si vous publiez votre solution à l’aide de Windows Installer, Visual Studio 2010 Tools pour Office Runtime ignore les étapes suivantes lors du chargement du complément VSTO.
@@ -98,9 +98,9 @@ ms.locfileid: "71255641"
   Pour plus d’informations, consultez [déployer une solution Office à l’aide de Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md).
 
 ## <a name="Bypass"></a>Ignorer la réflexion du ruban
- Si vous générez une solution à [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]l’aide de, assurez-vous que vos utilisateurs ont installé la version la plus récente de Visual Studio 2010 Tools pour Office Runtime lorsque vous déployez la solution. Les versions antérieures du runtime VSTO sont reflétées dans les assemblys de solution pour localiser les personnalisations du ruban. Ce processus peut ralentir le chargement du complément VSTO.
+ Si vous générez une solution à l’aide de [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)], assurez-vous que vos utilisateurs ont installé la version la plus récente de Visual Studio 2010 Tools pour Office Runtime lorsque vous déployez la solution. Les versions antérieures du runtime VSTO sont reflétées dans les assemblys de solution pour localiser les personnalisations du ruban. Ce processus peut ralentir le chargement du complément VSTO.
 
- Vous pouvez également empêcher toute version de Visual Studio 2010 Tools pour Office Runtime d’utiliser la réflexion pour identifier les personnalisations du ruban. Pour suivre cette stratégie, substituez la `CreateRibbonExtensibility` méthode et retournez explicitement les objets ruban. Si votre complément VSTO ne contient pas de personnalisations de ruban, retournez `null` à l’intérieur de la méthode.
+ Vous pouvez également empêcher toute version de Visual Studio 2010 Tools pour Office Runtime d’utiliser la réflexion pour identifier les personnalisations du ruban. Pour suivre cette stratégie, substituez la méthode `CreateRibbonExtensibility` et retournez explicitement les objets ruban. Si votre complément VSTO ne contient pas de personnalisations de ruban, retournez `null` à l’intérieur de la méthode.
 
  L’exemple suivant retourne un objet ruban en fonction de la valeur d’un champ.
 

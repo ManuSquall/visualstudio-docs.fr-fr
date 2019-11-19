@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Ajouter des commandes aux menus contextuels'
+title: 'Comment : ajouter des commandes à des menus contextuels'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,21 +13,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3b20b10a37908e2c9744aeac63bb3eda091da478
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 82c26022f0c88f1ce125c64f5ec3b2df8d20346e
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62826403"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986031"
 ---
-# <a name="how-to-add-commands-to-shortcut-menus"></a>Procédure : Ajouter des commandes aux menus contextuels
-  Cette rubrique montre comment ajouter des commandes à un menu contextuel dans une application Office à l’aide un VSTO Add-in.
+# <a name="how-to-add-commands-to-shortcut-menus"></a>Comment : ajouter des commandes à des menus contextuels
+  Cette rubrique montre comment ajouter des commandes à un menu contextuel dans une application Office à l’aide d’un complément VSTO.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
 ### <a name="to-add-commands-to-shortcut-menus-in-office"></a>Pour ajouter des commandes à des menus contextuels dans Office
 
-1. Ajoutez un élément **Ribbon XML** à un projet au niveau du document ou de complément VSTO. Pour plus d'informations, voir [Procédure : Commencer la personnalisation du ruban](../vsto/how-to-get-started-customizing-the-ribbon.md). Vers l'avant
+1. Ajoutez un élément **Ribbon XML** à un projet au niveau du document ou de complément VSTO. Pour plus d’informations, consultez [Comment : prendre en main la personnalisation du ruban](../vsto/how-to-get-started-customizing-the-ribbon.md). Vers l'avant
 
 2. Dans l’**Explouateur de solutions**, sélectionnez **ThisAddin.cs** ou **ThisAddin.vb**.
 
@@ -40,7 +40,7 @@ ms.locfileid: "62826403"
      [!code-csharp[Trin_WordAddIn_Menus#1](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/thisaddin.cs#1)]
      [!code-vb[Trin_WordAddIn_Menus#1](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/thisaddin.vb#1)]
 
-5. Dans l’ **Explorateur de solutions**, sélectionnez le fichier XML de ruban. Par défaut, le fichier XML du ruban est nommé *Ribbon1.xml*.
+5. Dans l’ **Explorateur de solutions**, sélectionnez le fichier XML de ruban. Par défaut, le fichier XML du ruban se nomme *Ribbon1. xml*.
 
 6. Dans la barre de menus, sélectionnez **Afficher** > **Code**.
 
@@ -48,7 +48,7 @@ ms.locfileid: "62826403"
 
 7. Dans l’éditeur de code, ajoutez le code XML qui décrit le menu contextuel et le contrôle à ajouter au menu contextuel.
 
-     L’exemple suivant ajoute un bouton, un menu et un contrôle de galerie au menu contextuel d’un document Word. L’ID du contrôle de ce menu contextuel est ContextMenuText. Pour obtenir la liste complète de contrôle Office 2010 ID, consultez [les fichiers d’aide Office 2010 : Identificateurs de contrôle interface Office fluent utilisateur](http://go.microsoft.com/fwlink/?LinkID=181052).
+     L’exemple suivant ajoute un bouton, un menu et un contrôle de galerie au menu contextuel d’un document Word. L’ID du contrôle de ce menu contextuel est ContextMenuText. Pour obtenir la liste complète des ID de contrôle de raccourci Office 2010, consultez [fichiers d’aide office 2010 : identificateurs de contrôle d’interface utilisateur Office Fluent](https://www.microsoft.com/download/details.aspx?id=6627).
 
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
@@ -72,7 +72,7 @@ ms.locfileid: "62826403"
 
 8. Dans l’ **Explorateur de solutions**, choisissez **MyRibbon.cs** ou **MyRibbon.vb**.
 
-9. Ajoutez une méthode de rappel à la `Ribbon1` classe pour chaque contrôle que vous souhaitez gérer.
+9. Ajoutez une méthode de rappel à la classe `Ribbon1` pour chaque contrôle que vous souhaitez gérer.
 
      La méthode de rappel suivante gère le bouton **Mon bouton** . Ce code ajoute une chaîne au document actif à l’emplacement actuel du curseur.
 
@@ -81,6 +81,6 @@ ms.locfileid: "62826403"
 
 ## <a name="see-also"></a>Voir aussi
 - [Personnalisation de l’interface utilisateur Office](../vsto/office-ui-customization.md)
-- [Procédure pas à pas : Créer des menus contextuels pour les signets](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)
-- [Paramètres optionnels dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)
-- [Personnaliser des menus contextuels dans Office 2010](http://go.microsoft.com/fwlink/?LinkId=182186)
+- [Procédure pas à pas : créer des menus contextuels pour les signets](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)
+- [Paramètres facultatifs dans les solutions Office](../vsto/optional-parameters-in-office-solutions.md)
+- [Personnaliser les menus contextuels dans Office 2010](/previous-versions/office/developer/office-2010/ee691832(v=office.14))

@@ -13,14 +13,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04a0310a37d8d68a9c65298a69f5d0e19ed37bec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: e3a83ad65232e75ffa74b66035e5c01a8491b426
+ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62936632"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73983702"
 ---
-# <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001 : Utiliser StringBuilder pour les concaténations
+# <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001 : Utilisez StringBuilder pour les concaténations
 
 |||
 |-|-|
@@ -41,4 +41,4 @@ ms.locfileid: "62936632"
 ## <a name="how-to-investigate-a-warning"></a>Comment rechercher la cause d’un avertissement
  Double-cliquez sur le message dans la fenêtre **Liste d’erreurs** pour accéder à la [vue Informations relatives à la fonction](../profiling/function-details-view.md) des données de profilage par échantillonnage. Recherchez les sections du programme qui utilisent le plus fréquemment la concaténation de chaînes. Utilisez la classe StringBuilder pour les manipulations de chaînes complexes, y compris les opérations fréquentes de concaténation de chaînes.
 
- Pour plus d’informations sur l’utilisation des chaînes, consultez la section [String Operations](http://go.microsoft.com/fwlink/?LinkId=177816) de la rubrique [Chapter 5 - Improving Managed Code Performance](http://go.microsoft.com/fwlink/?LinkId=177817) dans la bibliothèque Microsoft Patterns and Practices.
+ Pour plus d’informations sur l’utilisation des chaînes, consultez la section [String Operations](/previous-versions/msp-n-p/ff647790(v=pandp.10)#string-operations) de la rubrique [Chapter 5 - Improving Managed Code Performance](/previous-versions/msp-n-p/ff647790(v=pandp.10)) dans la bibliothèque Microsoft Patterns and Practices.

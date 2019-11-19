@@ -11,15 +11,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f8a1c2148f25a1e97cfd1369770e056d1cb907d
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 58bfec6fa09f6450afb8170d60acad39edacd590
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72568971"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72982458"
 ---
 # <a name="visual-studio-debugger-extensibility"></a>Extensibilité du débogueur Visual Studio
-Visual Studio comprend un débogueur de code source entièrement interactif, fournissant un outil puissant et facile à utiliser pour le suivi des bogues dans votre programme. Le débogueur est entièrement pris en charge pour C#Visual Basic,,C++C/et JavaScript. Toutefois, avec le [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], qui est disponible à partir du [Centre de téléchargement Microsoft](http://go.microsoft.com/fwlink/?LinkId=214453), d’autres langages de programmation peuvent être pris en charge dans le débogueur avec les mêmes fonctionnalités enrichies.
+Visual Studio comprend un débogueur de code source entièrement interactif, fournissant un outil puissant et facile à utiliser pour le suivi des bogues dans votre programme. Le débogueur est entièrement pris en charge pour C#Visual Basic,,C++C/et JavaScript. Toutefois, avec le [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], qui est disponible à partir du [Centre de téléchargement Microsoft](https://www.microsoft.com/download/details.aspx?id=21835), d’autres langages de programmation peuvent être pris en charge dans le débogueur avec les mêmes fonctionnalités enrichies.
 
  Le débogueur [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] est le serveur frontal commun (autrement dit, l’interface utilisateur) aux composants de débogage qui, à leur tour, sont spécifiques au langage en cours de débogage. Pour les nouveaux langages, tout ce qui est nécessaire pour la prise en charge par le débogueur [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] consiste à créer les composants principaux nécessaires, tels qu’un moteur DE débogage (DE). C’est là qu’intervient le [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].
 

@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f417c077d2280b951f0d101d79876c01cb33789d
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: e1c2941b0c088a832540fd3380c993fe2c380b44
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71256024"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985629"
 ---
 # <a name="ribbon-designer"></a>Concepteur de ruban
   Le concepteur de ruban est une zone de conception visuelle. Utilisez le concepteur de ruban pour ajouter des onglets, des groupes et des contrôles personnalisés au ruban d’une application Microsoft Office.
@@ -49,10 +49,8 @@ ms.locfileid: "71256024"
 > [!NOTE]
 > Vous ne pouvez pas effectuer certaines tâches à l’aide du concepteur de ruban. Pour plus d’informations sur ces tâches et sur la façon dont vous pouvez les accomplir, consultez [vue d’ensemble du ruban](../vsto/ribbon-overview.md).
 
- ![lien vers la vidéo](../vsto/media/playvideo.gif "lien vers la vidéo") Pour une démonstration vidéo connexe, [consultez Comment faire : Utiliser le concepteur de ruban pour personnaliser le ruban dans Outlook ? ](http://go.microsoft.com/fwlink/?LinkID=130312).
-
 ## <a name="add-a-ribbon-visual-designer-item-to-a-project"></a>Ajouter un élément Ruban (concepteur visuel) à un projet
- Pour utiliser le concepteur de ruban, ajoutez un nouvel élément **Ruban (concepteur visuel)** à votre projet. Pour plus d'informations, voir [Procédure : Prise en main de la personnalisation](../vsto/how-to-get-started-customizing-the-ribbon.md)du ruban.
+ Pour utiliser le concepteur de ruban, ajoutez un nouvel élément **Ruban (concepteur visuel)** à votre projet. Pour plus d’informations, consultez [Comment : prendre en main la personnalisation du ruban](../vsto/how-to-get-started-customizing-the-ribbon.md).
 
  Quand vous ajoutez un nouvel élément **Ruban (concepteur visuel)** , Visual Studio ajoute automatiquement les fichiers suivants à votre projet :
 
@@ -107,7 +105,7 @@ ms.locfileid: "71256024"
 
 - Ouvrez l **'éditeur de collections Tab**, puis cliquez sur **Ajouter**.
 
-   Pour ouvrir l' **éditeur de collections Tab**, dans la fenêtre **Propriétés** , sélectionnez la propriété **Tabs** , puis cliquez sur le bouton de sélection ![ASP.net Mobile designer ellipse](../sharepoint/media/mwellipsis.gif "ASP.net Mobile designer").
+   Pour ouvrir l' **éditeur de collections Tab**, dans la fenêtre **Propriétés** , sélectionnez la propriété **Tabs** , puis cliquez sur le bouton de sélection ![ASP.net Mobile designer ellipse](../sharepoint/media/mwellipsis.gif "Bouton de sélection du concepteur ASP.NET mobile").
 
   Après avoir ajouté un onglet, vous pouvez ajouter des groupes pour contenir des contrôles.
 
@@ -121,7 +119,7 @@ ms.locfileid: "71256024"
 - Ouvrez l' **éditeur de collections Tab**, sélectionnez l’onglet, puis cliquez sur **supprimer**.
 
 #### <a name="change-the-position-of-a-tab-on-the-ribbon"></a>Modifier la position d’un onglet sur le ruban
- Vous pouvez modifier l’ordre des onglets personnalisés sur un ruban. Vous pouvez également positionner les onglets personnalisés avant ou après un onglet intégré sur le ruban. Pour plus d'informations, voir [Procédure : Modifier la position d’un onglet sur le ruban](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md).
+ Vous pouvez modifier l’ordre des onglets personnalisés sur un ruban. Vous pouvez également positionner les onglets personnalisés avant ou après un onglet intégré sur le ruban. Pour plus d’informations, consultez [Comment : modifier la position d’un onglet sur le ruban](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md).
 
 #### <a name="customize-built-in-tabs-on-the-ribbon"></a>Personnaliser les onglets intégrés sur le ruban
  Un onglet intégré est un onglet qui se trouve déjà sur le ruban d’une application Microsoft Office. Par exemple, l’onglet **données** est un onglet intégré dans Excel.
@@ -130,7 +128,7 @@ ms.locfileid: "71256024"
 
  Vous ne pouvez pas supprimer des groupes prédéfinis.
 
- Pour plus d’informations sur la personnalisation d’un onglet intégré, consultez [procédure : Personnaliser un onglet](../vsto/how-to-customize-a-built-in-tab.md)intégré.
+ Pour plus d’informations sur la personnalisation d’un onglet intégré, consultez [Comment : personnaliser un onglet intégré](../vsto/how-to-customize-a-built-in-tab.md).
 
 ### <a name="AddGroupsToTab"></a>Ajouter des groupes à un onglet
  Les groupes organisent logiquement les contrôles sur le ruban. Ajoutez des groupes aux onglets. Ajoutez tous les autres contrôles au groupe.
@@ -144,14 +142,14 @@ ms.locfileid: "71256024"
 |**Button**|Bouton qui démarre une action. Vous pouvez ajouter un bouton à un groupe, un groupe de boutons, une liste déroulante, une galerie, un menu ou un bouton partagé.|
 |**ButtonGroup**|Groupe qui contient un ou plusieurs boutons, boutons bascule, menus, boutons partagés et galeries. Vous pouvez ajouter un groupe de boutons à un groupe ou à un menu.|
 |**CheckBox**|Zone sélectionnée ou décochée pour activer ou désactiver une option.|
-|**ComboBox**|Zone d’édition avec une zone de liste jointe. Les utilisateurs peuvent taper ou sélectionner leur choix. La zone affiche la sélection actuelle. Utilisez la <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.Items%2A> propriété pour ajouter et supprimer des éléments au moment de l’exécution avant ou après le chargement du ruban dans l’application Office.|
-|**DropDown**|Liste des éléments que l’utilisateur peut sélectionner. L’utilisateur ne peut pas taper un nouvel élément dans une liste déroulante.<br /><br /> Utilisez la <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Items%2A> propriété pour ajouter des éléments à la liste. Vous pouvez ajouter et supprimer des éléments au moment de l’exécution.<br /><br /> Utilisez la <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Buttons%2A> propriété pour ajouter des boutons à la liste. Toutefois, vous ne pouvez pas ajouter ni supprimer des boutons au moment de l’exécution après le chargement du ruban dans l’application Office.|
+|**ComboBox**|Zone d’édition avec une zone de liste jointe. Les utilisateurs peuvent taper ou sélectionner leur choix. La zone affiche la sélection actuelle. Utilisez la propriété <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.Items%2A> pour ajouter et supprimer des éléments au moment de l’exécution avant ou après le chargement du ruban dans l’application Office.|
+|**Liste déroulante**|Liste des éléments que l’utilisateur peut sélectionner. L’utilisateur ne peut pas taper un nouvel élément dans une liste déroulante.<br /><br /> Utilisez la propriété <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Items%2A> pour ajouter des éléments à la liste. Vous pouvez ajouter et supprimer des éléments au moment de l’exécution.<br /><br /> Utilisez la propriété <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Buttons%2A> pour ajouter des boutons à la liste. Toutefois, vous ne pouvez pas ajouter ni supprimer des boutons au moment de l’exécution après le chargement du ruban dans l’application Office.|
 |**EditBox**|Zone dans laquelle l’utilisateur peut taper du texte.|
-|**Galerie**|Menu qui présente un tableau ou une grille de choix visuels à partir de laquelle les utilisateurs peuvent sélectionner. Vous pouvez contrôler la disposition des sélections dans le menu. Utilisez les <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A> propriétés et pour spécifier le nombre de lignes et de colonnes qui afficheront les éléments et les boutons de la Galerie.|
-|**Label**|Texte que vous pouvez utiliser pour identifier les contrôles sur le ruban.|
-|**Menu**|Liste déroulante qui peut contenir l’un des contrôles suivants :<br /><br /> -   Button<br />-Case à cocher<br />-Galerie<br />-Menu<br />-Bouton partagé<br />-Bouton bascule<br />-Séparateur<br /><br /> Pour ajouter un contrôle à un menu dans le concepteur de ruban, cliquez sur la flèche vers le bas dans le menu pour exposer l’aire de conception de menu. Vous pouvez ensuite faire glisser des contrôles du ruban de la **boîte à outils** vers le menu. Pour réorganiser les contrôles, faites-les glisser vers les positions souhaitées.<br /><br /> Pour ajouter des contrôles au <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> après le chargement du ruban dans l’application Office, vous devez affecter à <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A> la propriété la **valeur true** avant le chargement du ruban. Pour plus d’informations sur la façon de procéder, consultez [vue d’ensemble du modèle d’objet de ruban](../vsto/ribbon-object-model-overview.md).|
+|**Galerie**|Menu qui présente un tableau ou une grille de choix visuels à partir de laquelle les utilisateurs peuvent sélectionner. Vous pouvez contrôler la disposition des sélections dans le menu. Utilisez les propriétés <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A> et <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A> pour spécifier le nombre de lignes et de colonnes qui afficheront les éléments et les boutons de la Galerie.|
+|**Ajouter des contrôles**|Texte que vous pouvez utiliser pour identifier les contrôles sur le ruban.|
+|**Menu**|Liste déroulante qui peut contenir l’un des contrôles suivants :<br /><br /> -Button<br />-Case à cocher<br />-Galerie<br />-Menu<br />-Bouton partagé<br />-Bouton bascule<br />-Séparateur<br /><br /> Pour ajouter un contrôle à un menu dans le concepteur de ruban, cliquez sur la flèche vers le bas dans le menu pour exposer l’aire de conception de menu. Vous pouvez ensuite faire glisser des contrôles du ruban de la **boîte à outils** vers le menu. Pour réorganiser les contrôles, faites-les glisser vers les positions souhaitées.<br /><br /> Pour ajouter des contrôles au <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> après le chargement du ruban dans l’application Office, vous devez affecter la **valeur true** à la propriété <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A> avant le chargement du ruban. Pour plus d’informations sur la façon de procéder, consultez [vue d’ensemble du modèle d’objet de ruban](../vsto/ribbon-object-model-overview.md).|
 |**Separator**|Barre fine utilisée pour séparer des éléments dans une liste. En cas d’ajout à un groupe, la barre est verticale. En cas d’ajout à un menu, la barre est horizontale.|
-|**SplitButton**|Bouton avec un menu attaché. Un bouton partagé peut contenir l’un des contrôles suivants :<br /><br /> -   Button<br />-Case à cocher<br />-Galerie<br />-Menu<br />-Bouton partagé<br />-Bouton bascule<br />-Séparateur<br /><br /> À l’instar du menu, le bouton partagé a sa propre aire de conception. Toutefois, contrairement à un menu, vous pouvez uniquement mettre à jour les éléments d’un bouton partagé avant le chargement du ruban dans l’application Office. Pour plus d’informations sur la façon de mettre à jour les éléments d’un bouton partagé, consultez [vue d’ensemble du modèle d’objet de ruban](../vsto/ribbon-object-model-overview.md).|
+|**SplitButton**|Bouton avec un menu attaché. Un bouton partagé peut contenir l’un des contrôles suivants :<br /><br /> -Button<br />-Case à cocher<br />-Galerie<br />-Menu<br />-Bouton partagé<br />-Bouton bascule<br />-Séparateur<br /><br /> À l’instar du menu, le bouton partagé a sa propre aire de conception. Toutefois, contrairement à un menu, vous pouvez uniquement mettre à jour les éléments d’un bouton partagé avant le chargement du ruban dans l’application Office. Pour plus d’informations sur la façon de mettre à jour les éléments d’un bouton partagé, consultez [vue d’ensemble du modèle d’objet de ruban](../vsto/ribbon-object-model-overview.md).|
 |**Contrôle**|Bouton qui apparaît enfoncé ou non enfoncé.|
 
 ## <a name="HandleEventsSetProperties"></a>Gérer les événements et les propriétés de définition
@@ -159,18 +157,18 @@ ms.locfileid: "71256024"
 
  Vous pouvez double-cliquer sur n’importe quel contrôle du concepteur pour ouvrir un gestionnaire d’événements pour l’événement par défaut du contrôle. Vous pouvez créer des gestionnaires d’événements pour tous les autres événements de contrôle à l’aide de la fenêtre **Propriétés** .
 
- Les événements et les propriétés du ruban se <xref:Microsoft.Office.Tools.Ribbon> trouvent dans l’espace de noms. L’élément **Ruban (concepteur visuel)** ajoute automatiquement une référence à cet assembly dans le projet et insère l’instruction **using** ou **Imports** appropriée en haut du fichier de code du ruban.
+ Les événements et les propriétés du ruban se trouvent dans l’espace de noms <xref:Microsoft.Office.Tools.Ribbon>. L’élément **Ruban (concepteur visuel)** ajoute automatiquement une référence à cet assembly dans le projet et insère l’instruction **using** ou **Imports** appropriée en haut du fichier de code du ruban.
 
  Pour plus d’informations sur la gestion des événements de ruban et la définition des propriétés des contrôles de ruban au moment de l’exécution, consultez [vue d’ensemble du modèle d’objet de ruban](../vsto/ribbon-object-model-overview.md).
 
 ## <a name="CustomizingMicrosoftOfficeButton"></a>Personnaliser le mode Backstage
  Vous pouvez utiliser le concepteur de ruban pour ajouter des contrôles au menu qui s’ouvre lorsque vous cliquez sur l’onglet **fichier** . Ce menu est appelé mode Backstage.
 
- Vous ne pouvez pas positionner les contrôles avant ou après les contrôles prédéfinis à l’aide du concepteur de ruban. Un contrôle intégré est un contrôle qui est déjà affiché en mode Backstage. Si vous souhaitez positionner les contrôles avant ou après les contrôles prédéfinis, vous devez utiliser le ruban XML. Pour plus d’informations sur le **Ruban (XML)** , consultez [Ruban XML](../vsto/ribbon-xml.md). Pour plus d’informations sur la personnalisation du mode Backstage, consultez [Introduction au mode Backstage office 2010 pour les développeurs](http://go.microsoft.com/fwlink/?LinkId=182189) et [Personnalisation du mode backstage d’Office 2010 pour les développeurs](http://go.microsoft.com/fwlink/?LinkId=182188).
+ Vous ne pouvez pas positionner les contrôles avant ou après les contrôles prédéfinis à l’aide du concepteur de ruban. Un contrôle intégré est un contrôle qui est déjà affiché en mode Backstage. Si vous souhaitez positionner les contrôles avant ou après les contrôles prédéfinis, vous devez utiliser le ruban XML. Pour plus d’informations sur le **Ruban (XML)** , consultez [Ruban XML](../vsto/ribbon-xml.md). Pour plus d’informations sur la personnalisation du mode Backstage, consultez [Introduction au mode Backstage office 2010 pour les développeurs](/previous-versions/office/developer/office-2010/ee691833(v=office.14)) et [Personnalisation du mode backstage d’Office 2010 pour les développeurs](/previous-versions/office/developer/office-2010/ee815851(v=office.14)).
 
  [!INCLUDE[appliesto_ribbon_2010](../vsto/includes/appliesto-ribbon-2010-md.md)]
 
- Pour plus d’informations sur la façon d’ajouter des contrôles au mode Backstage [, consultez Procédure : Ajoutez des contrôles au mode](../vsto/how-to-add-controls-to-the-backstage-view.md)Backstage.
+ Pour plus d’informations sur la façon d’ajouter des contrôles au mode Backstage, consultez [Comment : ajouter des contrôles au mode Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md).
 
 ## <a name="Accessibility"></a>Accessibilité dans le concepteur de ruban
  Vous pouvez utiliser les raccourcis clavier pour déplacer des contrôles dans le concepteur de ruban. Certains raccourcis clavier s’appliquent à tous les contrôles, et certains s’appliquent uniquement aux contrôles qui ont des menus.
@@ -179,8 +177,8 @@ ms.locfileid: "71256024"
 
 |Action|Raccourci clavier|
 |------------|-----------------------|
-|Déplacer un contrôle avant le contrôle précédent dans la liste.|**Ctrl**haut+<br /><br /> **Ctrl**gauche+|
-|Déplacer un contrôle après le contrôle suivant dans la liste.|**Ctrl**+**Down**<br /><br /> **Ctrl**droite+|
+|Déplacer un contrôle avant le contrôle précédent dans la liste.|**Ctrl**+**haut**<br /><br /> **Ctrl**+**gauche**|
+|Déplacer un contrôle après le contrôle suivant dans la liste.|**Ctrl**+**enfoncée**<br /><br /> **Ctrl**+**droite**|
 |Déplacer la sélection d’un contrôle à un autre dans le même groupe. Pour un panneau déroulant, déplacez-vous entre le contrôle parent et les contrôles dans le panneau déroulant.|**Les**<br /><br /> **Baisse**|
 |Itérer au sein de tous les contrôles.|**Tab**|
 |Itérez à l’inverse de tous les contrôles.|**Maj**+**Tab**|
@@ -188,10 +186,10 @@ ms.locfileid: "71256024"
 |Copiez les contrôles sélectionnés.|**Ctrl**+**C**|
 |Coupez les contrôles sélectionnés.|**Ctrl**+**X**|
 |Collez les contrôles à partir du presse-papiers.|**Ctrl**+**V**|
-|Sélectionnez la **boîte à outils**.|**Ctrl**+**ALT** X+|
+|Sélectionnez la **boîte à outils**.|**Ctrl**+**ALT**+**X**|
 |Sélectionnez le composant parent.|**Échap**|
 
- Les raccourcis clavier qui s’appliquent uniquement au menu Microsoft Office <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>, et <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton> sont présentés dans le tableau suivant.
+ Les raccourcis clavier qui s’appliquent uniquement au menu Microsoft Office, <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>et <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton> sont présentés dans le tableau suivant.
 
 |Action|Raccourci clavier|
 |------------|-----------------------|
@@ -204,8 +202,8 @@ ms.locfileid: "71256024"
 ## <a name="see-also"></a>Voir aussi
 
 - [Vue d’ensemble du ruban](../vsto/ribbon-overview.md)
-- [Ribbon XML](../vsto/ribbon-xml.md)
-- [Procédure pas à pas : Créer un onglet personnalisé à l’aide du concepteur de ruban](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
-- [Guide pratique pour Exporter un ruban à partir du concepteur de ruban vers le ruban XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)
-- [Guide pratique pour Prise en main de la personnalisation du ruban](../vsto/how-to-get-started-customizing-the-ribbon.md)
+- [Élément XML Ribbon](../vsto/ribbon-xml.md)
+- [Procédure pas à pas : création d’un onglet personnalisé à l’aide du concepteur de ruban](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
+- [Comment : exporter un ruban à partir du concepteur de ruban vers le ruban XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)
+- [Comment : prendre en main la personnalisation du ruban](../vsto/how-to-get-started-customizing-the-ribbon.md)
 - [Accéder au ruban au moment de l’exécution](../vsto/accessing-the-ribbon-at-run-time.md)

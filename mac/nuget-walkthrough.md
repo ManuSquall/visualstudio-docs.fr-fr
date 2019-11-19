@@ -3,15 +3,15 @@ title: Inclusion d’un package NuGet dans votre projet
 description: Ce document explique comment inclure un package NuGet dans un projet à l’aide de Visual Studio pour Mac. Il décrit la recherche et le téléchargement d’un package, et il présente les fonctionnalités d’intégration de l’IDE.
 author: jmatthiesen
 ms.author: jomatthi
-ms.date: 09/18/2019
+ms.date: 11/01/2019
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: conceptual
-ms.openlocfilehash: 55b4691a7adb03d4ee8fd5e05e7bd9d7daa28f13
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 4200f466c079247d3efa036f4f7cca2fd2d6b5d2
+ms.sourcegitcommit: bbff780cda82bb64862d77fe8f407f1803beb876
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71213691"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74127240"
 ---
 # <a name="install-and-manage-nuget-packages-in-visual-studio-for-mac"></a>Installer et gérer des packages NuGet dans Visual Studio pour Mac
 
@@ -19,7 +19,7 @@ L’interface utilisateur du gestionnaire de package NuGet dans Visual Studio po
 
 Cet article explique comment inclure un package NuGet dans un projet. De plus, il présente la chaîne d’outils qui permet d’exécuter le processus sans interruption.
 
-Pour une introduction à l’utilisation de NuGet dans Visual Studio pour Mac [, consultez démarrage rapide : Installer et utiliser un package dans Visual Studio pour Mac](/nuget/quickstart/install-and-use-a-package-in-visual-studio-mac)
+Pour une introduction à l’utilisation de NuGet dans Visual Studio pour Mac, consultez [démarrage rapide : installer et utiliser un package dans Visual Studio pour Mac](/nuget/quickstart/install-and-use-a-package-in-visual-studio-mac)
 
 ## <a name="find-and-install-a-package"></a>Rechercher et installer un package
 
@@ -27,7 +27,7 @@ Pour une introduction à l’utilisation de NuGet dans Visual Studio pour Mac [,
 
     ![Action contextuelle Ajouter un nouveau package NuGet](media/nuget-walkthrough-packages-menu.png)
 
-2. La fenêtre **gérer les packages NuGet** s’ouvre. Vérifiez que la liste déroulante source dans le coin supérieur gauche de la boîte de dialogue `nuget.org`est définie sur.
+2. La fenêtre **gérer les packages NuGet** s’ouvre. Assurez-vous que la liste déroulante source dans le coin supérieur gauche de la boîte de dialogue est définie sur `nuget.org`, afin que vous effectuiez une recherche dans le référentiel de packages NuGet central.
 
     ![Répertorier les packages NuGet](media/nuget-walkthrough-add-packages1.png)
 
@@ -59,7 +59,7 @@ using Newtonsoft.Json;
 
 ## <a name="updating-packages"></a>Mise à jour des packages
 
-Les mises à jour de package peuvent être effectuées en une seule fois, en cliquant avec le bouton droit sur le nœud **dépendances** (nœud**packages** pour les projets Xamarin) ou individuellement sur chaque package. Quand une nouvelle version d’un package NuGet est disponible, une icône de mise ![à jour s’affiche](media/nuget-walkthrough-update-icon.png)avec un cercle.
+Les mises à jour de package peuvent être effectuées en une seule fois, en cliquant avec le bouton droit sur le nœud **dépendances** (nœud**packages** pour les projets Xamarin) ou individuellement sur chaque package. Quand une nouvelle version d’un package NuGet est disponible, une icône de mise à jour s’affiche ![flèche haut avec cercle](media/nuget-walkthrough-update-icon.png).
 
 Cliquez avec le bouton droit sur **dépendances** pour accéder au menu contextuel, puis choisissez **mettre** à jour pour mettre à jour tous les packages :
 
@@ -71,6 +71,7 @@ Cliquez avec le bouton droit sur **dépendances** pour accéder au menu contextu
 
 Les options Mettre à jour et Restaurer sont également disponibles au niveau de la solution, et elles affectent tous les projets de la solution.
 
+### <a name="locating-outdated-packages"></a>Recherche de packages obsolètes
 Dans le panneau solutions, vous pouvez afficher la version d’un package actuellement installée et cliquer avec le bouton droit sur le package à mettre à jour.
 
 ![Menu packages avec les options de mise à jour, de suppression et d’actualisation](media/nuget-walkthrough-PackageMenu.png)
@@ -84,9 +85,35 @@ Dans le menu qui s’affiche, vous avez deux options :
 * **Mettre à jour** : recherche une version plus récente sur le serveur source et si elle existe, la télécharge.
 * **Supprimer** : supprime le package de ce projet et supprime les assemblys concernés des références du projet.
 
+## <a name="manage-packages-for-the-solution"></a>Gérer des packages pour la solution
+
+La gestion des packages pour une solution est un moyen pratique de travailler simultanément sur plusieurs projets.
+
+1. Cliquez avec le bouton droit sur la solution et sélectionnez **gérer les packages NuGet...** :
+
+    ![Gérer les packages NuGet pour la solution](media/nuget-walkthrough-manage-packages-solution.png)
+
+1. Lorsque vous gérez des packages pour la solution, l’interface utilisateur vous permet de sélectionner les projets affectés par les opérations :
+
+    ![Sélecteur de projet lors de la gestion de packages pour la solution](media/nuget-walkthrough-add-to-projects.png)
+
+### <a name="consolidate-tab"></a>Onglet Consolider
+
+Quand vous travaillez dans une solution avec plusieurs projets, il est considéré comme une bonne pratique de s’assurer que partout où vous utilisez le même package NuGet dans chaque projet, vous utilisez également le même numéro de version de ce package. Visual Studio pour Mac facilite cela en fournissant un onglet **consolider** dans l’interface utilisateur du gestionnaire de package lorsque vous choisissez de gérer les packages d’une solution. À l’aide de cet onglet, vous pouvez facilement voir où les packages avec des numéros de version distincts sont utilisés par différents projets dans la solution :
+
+![Onglet Consolider de l’interface utilisateur du gestionnaire de package](media/nuget-walkthrough-consolidate-tab.png)
+
+Dans cet exemple, le projet NuGetDemo utilise Microsoft. EntityFrameworkCore 2,20, alors que NuGetDemo. Shared utilise Microsoft. EntityFrameworkCore 2.2.6. Pour consolider les versions de package, procédez comme suit :
+
+- Sélectionnez les projets à mettre à jour dans la liste des projets.
+- Sélectionnez la version à utiliser dans tous les projets de la **nouvelle liste version** , par exemple Microsoft. EntityFrameworkCore 3.0.0.
+- Sélectionnez le bouton **consolider le package** .
+
+Le gestionnaire de package installe la version de package sélectionnée dans tous les projets sélectionnés, après quoi le package ne s'affiche plus sous l’onglet **Consolider**.
+
 ## <a name="adding-package-sources"></a>Ajout de sources de packages
 
-Les packages disponibles pour l’installation sont initialement extraits de nuget.org. Cependant, vous pouvez ajouter d’autres emplacements de packages à Visual Studio pour Mac. Ceci peut être pratique pour tester vos propres packages NuGet en cours de développement, ou pour utiliser un serveur NuGet privé au sein de votre entreprise ou organisation.
+Les packages disponibles pour l’installation sont initialement récupérés à partir de nuget.org. Toutefois, vous pouvez ajouter d’autres emplacements de package à Visual Studio pour Mac. Ceci peut être pratique pour tester vos propres packages NuGet en cours de développement, ou pour utiliser un serveur NuGet privé au sein de votre entreprise ou organisation.
 
 Dans Visual Studio pour Mac, accédez à **Visual Studio > Préférences > NuGet > Sources** pour voir et modifier la liste des sources de packages. Notez que les sources peuvent être un serveur distant (spécifié par une URL) ou un répertoire local.
 

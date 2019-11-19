@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Référencer un kit SDK de projet MSBuild | Microsoft Docs'
+title: Guide pratique pour référencer un kit SDK de projet MSBuild | Microsoft Docs
 ms.date: 01/25/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,14 +9,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 172dfae63fbfb95432a1635490ac703f7bbd9021
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
-ms.translationtype: HT
+ms.openlocfilehash: 0be8f9ed17bf4474307a639bb75f409da2ff1638
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "67852239"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911292"
 ---
-# <a name="how-to-use-msbuild-project-sdks"></a>Procédure : Utiliser les kits SDK de projet MSBuild
+# <a name="how-to-use-msbuild-project-sdks"></a>Guide pratique pour utiliser les kits SDK de projet MSBuild
 
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 15.0 a introduit le concept de « kit SDK de projet », qui simplifie l’utilisation de kits de développement logiciel qui nécessitent l’importation des propriétés et des cibles.
 
@@ -107,7 +107,7 @@ Durant l’évaluation de l’importation, [!INCLUDE[vstecmsbuild](../extensibil
    Ce programme de résolution localise les kits SDK de projet tels que `Microsoft.NET.Sdk` et `Microsoft.NET.Sdk.Web` qui font partie du produit.
 3. Un programme de résolution par défaut qui résout les kits SDK installés avec MSBuild.
 
-Le programme de résolution de kits SDK basé sur NuGet prend en charge la spécification d’une version dans votre fichier [global.json](https://docs.microsoft.com/dotnet/core/tools/global-json), ce qui vous permet de contrôler la version du kit SDK de projet à partir d’un seul emplacement, et non de chaque projet individuel :
+Le programme de résolution de kits SDK basé sur NuGet prend en charge la spécification d’une version dans votre fichier [global.json](/dotnet/core/tools/global-json), ce qui vous permet de contrôler la version du kit SDK de projet à partir d’un seul emplacement, et non de chaque projet individuel :
 
 ```json
 {

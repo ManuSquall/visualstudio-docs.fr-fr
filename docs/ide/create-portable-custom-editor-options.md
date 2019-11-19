@@ -7,16 +7,16 @@ helpviewer_keywords:
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: cab93bcf60c5a4fb5034bfdfd7601e4f846996d0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7cbb8c9be8ed56294d865d2612a8d79fcdb39df8
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652630"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919117"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Créer des paramètres d’éditeur personnalisés et portables avec EditorConfig
 
-Vous pouvez ajouter un fichier [EditorConfig](http://editorconfig.org/) à votre projet ou code base pour appliquer des styles de codage cohérents pour tous les utilisateurs qui travaillent dans le code base. Les paramètres EditorConfig sont prioritaires par rapport aux paramètres globaux de l’éditeur de texte Visual Studio. Vous pouvez donc personnaliser chaque base de code pour utiliser des paramètres de l’éditeur de texte qui sont propres au projet. Vous pouvez toujours définir vos propres préférences d’éditeur personnelles dans la boîte de dialogue **Options** de Visual Studio. Ces paramètres s’appliquent à chaque fois que vous travaillez dans un codebase sans fichier *.editorconfig*, ou quand le fichier *.editorconfig* ne remplace pas un paramètre particulier. Le style de mise en retrait (tabulations ou espaces) constitue un exemple de préférence de ce type.
+Vous pouvez ajouter un fichier [EditorConfig](https://editorconfig.org/) à votre projet ou code base pour appliquer des styles de codage cohérents pour tous les utilisateurs qui travaillent dans le code base. Les paramètres EditorConfig sont prioritaires par rapport aux paramètres globaux de l’éditeur de texte Visual Studio. Vous pouvez donc personnaliser chaque base de code pour utiliser des paramètres de l’éditeur de texte qui sont propres au projet. Vous pouvez toujours définir vos propres préférences d’éditeur personnelles dans la boîte de dialogue **Options** de Visual Studio. Ces paramètres s’appliquent à chaque fois que vous travaillez dans un codebase sans fichier *.editorconfig*, ou quand le fichier *.editorconfig* ne remplace pas un paramètre particulier. Le style de mise en retrait (tabulations ou espaces) constitue un exemple de préférence de ce type.
 
 Les paramètres EditorConfig sont pris en charge par de nombreux éditeurs de code et IDE, notamment Visual Studio. C’est un composant portable qui accompagne votre code et peut appliquer des styles de codage même en dehors de Visual Studio.
 
@@ -50,14 +50,14 @@ Les paramètres définis dans les fichiers EditorConfig vous permettent de garan
 
 Les conventions de codage que vous utilisez dans vos projets personnels peuvent différer de celles utilisées dans les projets de votre équipe. Par exemple, vous préférerez peut-être que lors du codage, la mise en retrait ajoute une tabulation. De son côté, votre équipe préférera peut-être que la mise en retrait ajoute quatre espaces au lieu d’une tabulation. Les fichiers EditorConfig résolvent ce problème en vous permettant d’avoir une configuration pour chaque scénario.
 
-Les paramètres étant contenus dans un fichier dans la base de code, ils se déplacent avec cette base de code. Tant que vous ouvrez le fichier de code dans un éditeur compatible avec EditorConfig, les paramètres de l’éditeur de texte sont implémentés. Pour plus d’informations sur les fichiers EditorConfig, consultez le site web [EditorConfig.org](http://editorconfig.org/).
+Les paramètres étant contenus dans un fichier dans la base de code, ils se déplacent avec cette base de code. Tant que vous ouvrez le fichier de code dans un éditeur compatible avec EditorConfig, les paramètres de l’éditeur de texte sont implémentés. Pour plus d’informations sur les fichiers EditorConfig, consultez le site web [EditorConfig.org](https://editorconfig.org/).
 
 > [!NOTE]
 > Les conventions définies dans un fichier EditorConfig ne sont pour l’instant pas applicables dans un pipeline CI/CD comme erreurs ou avertissements de build. Les écarts de style apparaissent seulement dans l’éditeur Visual Studio et dans la **Liste d’erreurs**.
 
 ## <a name="supported-settings"></a>Paramètres pris en charge
 
-L’éditeur de Visual Studio prend en charge l’ensemble principal des [propriétés d’EditorConfig](http://editorconfig.org/#supported-properties) :
+L’éditeur de Visual Studio prend en charge l’ensemble principal des [propriétés d’EditorConfig](https://editorconfig.org/#supported-properties) :
 
 - indent_style
 - indent_size
@@ -182,6 +182,6 @@ Vous pouvez contrôler la portée de vos conventions EditorConfig en définissan
 
 - [Conventions de style du code .NET](../ide/editorconfig-code-style-settings-reference.md)
 - [Prise en charge d’EditorConfig pour un service de langage](../extensibility/supporting-editorconfig.md)
-- [EditorConfig.org](http://editorconfig.org/)
+- [EditorConfig.org](https://editorconfig.org/)
 - [Fonctionnalités de l’éditeur de code](writing-code-in-the-code-and-text-editor.md)
 - [EditorConfig (Visual Studio pour Mac)](/visualstudio/mac/editorconfig)

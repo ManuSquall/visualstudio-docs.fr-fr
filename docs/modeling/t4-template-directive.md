@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4932a20fbcaee4d5aef6aac03252ee6062fbd035
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 410bc879ff4822f19436794d3cb99732be9d413e
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72606206"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72983705"
 ---
 # <a name="t4-template-directive"></a>Directive du modèle T4
 
@@ -235,7 +235,7 @@ Un modèle de texte au moment du design est un fichier pour lequel l' **outil pe
 
 Pour un modèle de texte au moment du design, vous pouvez spécifier toute classe de base dérivée de <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>. Utilisez la directive `<#@assembly#>` pour charger l'assembly ou le projet qui contient la classe de base.
 
-Pour plus d’informations, consultez [« héritage dans les modèles de texte » dans le blog de Gareth Jones](http://go.microsoft.com/fwlink/?LinkId=208373).
+Pour plus d’informations, consultez [« héritage dans les modèles de texte » dans le blog de Gareth Jones](https://blogs.msdn.microsoft.com/garethj/2011/01/03/vs2010-sp1-t4-template-inheritance-part-i-sample-metadata/).
 
 ## <a name="linepragmas-attribute"></a>attribut linePragmas
 

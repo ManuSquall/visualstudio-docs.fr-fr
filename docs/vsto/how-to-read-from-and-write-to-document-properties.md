@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Lire et écrire dans les propriétés de document'
+title: 'Comment : lire et écrire dans les propriétés d’un document'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,28 +15,26 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ac0d81c9e42a5c3aa22a09d59f346e6127b1284f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 71a4b1a84c4544f4dc2b359e391f3c9f768e8eee
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961564"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985809"
 ---
-# <a name="how-to-read-from-and-write-to-document-properties"></a>Procédure : Lire et écrire dans les propriétés de document
+# <a name="how-to-read-from-and-write-to-document-properties"></a>Comment : lire et écrire dans les propriétés d’un document
   Vous pouvez stocker des propriétés de document avec un document. Les applications Office fournissent plusieurs propriétés intégrées, telles que l'auteur, le titre et l'objet. Cette rubrique indique comment définir des propriétés de document dans Microsoft Office Excel et Microsoft Office Word.
-
- ![lien vers la vidéo](../vsto/media/playvideo.gif "lien vers la vidéo") pour une démonstration vidéo connexe, consultez [How do I: Accéder et manipuler les propriétés de document personnalisées dans Microsoft Word ? ](http://go.microsoft.com/fwlink/?LinkId=136772).
 
  [!INCLUDE[appliesto_docprops](../vsto/includes/appliesto-docprops-md.md)]
 
-## <a name="set-document-properties-in-excel"></a>Définir les propriétés de document dans Excel
+## <a name="set-document-properties-in-excel"></a>Définir des propriétés de document dans Excel
  Pour travailler avec des propriétés intégrées dans Excel, utilisez les propriétés suivantes :
 
 - Dans un projet au niveau du document, utilisez la propriété <xref:Microsoft.Office.Tools.Excel.Workbook.BuiltinDocumentProperties%2A> de la classe `ThisWorkbook` .
 
 - Dans un projet de complément VSTO, utilisez la propriété <xref:Microsoft.Office.Interop.Excel._Workbook.BuiltinDocumentProperties%2A> d'un objet <xref:Microsoft.Office.Interop.Excel.Workbook> .
 
-  Ces propriétés retournent un objet <xref:Microsoft.Office.Core.DocumentProperties> qui est une collection d'objets <xref:Microsoft.Office.Core.DocumentProperty> . Vous pouvez utiliser la propriété `Item` de la collection pour récupérer une propriété particulière, par nom ou par index dans la collection.
+  Ces propriétés retournent un objet <xref:Microsoft.Office.Core.DocumentProperties> , qui est une collection d'objets <xref:Microsoft.Office.Core.DocumentProperty> . Vous pouvez utiliser la propriété `Item` de la collection pour récupérer une propriété particulière, par nom ou par index dans la collection.
 
   L'exemple de code suivant indique comment modifier la propriété intégrée **Revision Number** dans un projet au niveau du document.
 
@@ -59,7 +57,7 @@ ms.locfileid: "62961564"
 
 - Dans un projet de complément VSTO, utilisez la propriété <xref:Microsoft.Office.Interop.Word._Document.BuiltInDocumentProperties%2A> d'un objet <xref:Microsoft.Office.Interop.Word.Document> .
 
-  Ces propriétés retournent un objet <xref:Microsoft.Office.Core.DocumentProperties> qui est une collection d'objets <xref:Microsoft.Office.Core.DocumentProperty> . Vous pouvez utiliser la propriété `Item` de la collection pour récupérer une propriété particulière, par nom ou par index dans la collection.
+  Ces propriétés retournent un objet <xref:Microsoft.Office.Core.DocumentProperties> , qui est une collection d'objets <xref:Microsoft.Office.Core.DocumentProperty> . Vous pouvez utiliser la propriété `Item` de la collection pour récupérer une propriété particulière, par nom ou par index dans la collection.
 
   L'exemple de code suivant indique comment modifier la propriété intégrée **Subject** dans un projet au niveau du document.
 
@@ -81,6 +79,6 @@ ms.locfileid: "62961564"
  Bien que vous utilisiez Word et Excel ainsi que leurs objets, Microsoft Office fournit la liste des propriétés de document intégrées disponibles. Toute tentative d'accès à une propriété non définie lève une exception.
 
 ## <a name="see-also"></a>Voir aussi
-- [Programmer des Compléments VSTO](../vsto/programming-vsto-add-ins.md)
-- [Programmer des personnalisations au niveau du document](../vsto/programming-document-level-customizations.md)
-- [Guide pratique pour Créer et modifier les propriétés de document personnalisées](../vsto/how-to-create-and-modify-custom-document-properties.md)
+- [Programmer les compléments VSTO](../vsto/programming-vsto-add-ins.md)
+- [Personnaliser les personnalisations au niveau du document](../vsto/programming-document-level-customizations.md)
+- [Comment : créer et modifier des propriétés de document personnalisées](../vsto/how-to-create-and-modify-custom-document-properties.md)

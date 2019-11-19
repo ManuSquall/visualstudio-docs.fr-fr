@@ -33,45 +33,45 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b83cb026bec6d33490517e5703a042b4a8e2434c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 00ad5b41dd0a11661d281f24474b7673ea0a342c
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62846587"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911510"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Gérer les exceptions avec le débogueur dans Visual Studio
 
-Une exception est une indication d'un état d'erreur qui se produit pendant qu'un programme est en cours d'exécution. Vous pouvez demander au débogueur les exceptions ou des ensembles de s’arrêter sur les exceptions et à quel point vous voulez le débogueur s’arrête (autrement dit, mettre en pause dans le débogueur). Lorsque le débogueur s’arrête, il vous montre où l’exception a été levée. Vous pouvez également ajouter ou supprimer des exceptions. Avec une solution ouverte dans Visual Studio, utilisez **Déboguer > Windows > Paramètres d’Exception** pour ouvrir le **paramètres d’Exception** fenêtre.
+Une exception est une indication d'un état d'erreur qui se produit pendant qu'un programme est en cours d'exécution. Vous pouvez indiquer au débogueur les exceptions ou les jeux d’exceptions sur lesquels s’arrêter, et à quel point vous souhaitez que le débogueur s’arrête (c’est-à-dire, s’il est suspendu dans le débogueur). Quand le débogueur s’arrête, il vous indique où l’exception a été levée. Vous pouvez également ajouter ou supprimer des exceptions. Si une solution est ouverte dans Visual Studio, utilisez les **paramètres de débogage > Windows > les paramètres d’exception** pour ouvrir la fenêtre Paramètres d' **exception** .
 
-Fournir des gestionnaires qui répondent aux exceptions plus importantes. Si vous avez besoin de savoir comment ajouter des gestionnaires pour les exceptions, consultez [corriger les bogues en écrivant mieux C# code](../debugger/write-better-code-with-visual-studio.md). En outre, découvrez comment configurer le débogueur pour toujours arrêter l’exécution pour certaines exceptions.
+Fournissez des gestionnaires qui répondent aux exceptions les plus importantes. Si vous avez besoin de savoir comment ajouter des gestionnaires pour les exceptions, consultez [corriger des bogues C# en écrivant du code plus performant](../debugger/write-better-code-with-visual-studio.md). En outre, Découvrez comment configurer le débogueur pour qu’il arrête toujours l’exécution pour certaines exceptions.
 
-Quand une exception est levée, le débogueur écrit un message d’exception dans la fenêtre **Sortie**. Cette action peut interrompre l’exécution dans l’exemple suivant cas quand :
+Quand une exception est levée, le débogueur écrit un message d’exception dans la fenêtre **Sortie**. Elle peut arrêter l’exécution dans les cas suivants :
 
-- Une exception est levée qui n’est pas gérée.
-- Le débogueur est configuré pour arrêter l’exécution avant tout gestionnaire est appelé.
-- Vous avez défini [uniquement mon Code](../debugger/just-my-code.md), et le débogueur est configuré pour s’arrêter sur toute exception qui n’est pas gérée dans le code utilisateur.
+- Une exception qui n’est pas gérée est levée.
+- Le débogueur est configuré pour arrêter l’exécution avant l’appel d’un gestionnaire.
+- Vous avez défini [uniquement mon code](../debugger/just-my-code.md), et le débogueur est configuré pour s’arrêter sur toute exception qui n’est pas gérée dans le code utilisateur.
 
 > [!NOTE]
-> ASP.NET a un gestionnaire d'exceptions de niveau supérieur qui affiche les pages d'erreur dans un navigateur. Il n’interrompt l’exécution, sauf si **uniquement mon Code** est activé. Pour obtenir un exemple, consultez [demander au débogueur de continuer en cas d’exceptions non gérées par l’utilisateur](#BKMK_UserUnhandled) ci-dessous.
+> ASP.NET a un gestionnaire d'exceptions de niveau supérieur qui affiche les pages d'erreur dans un navigateur. Elle n’interrompt pas l’exécution, sauf si **uniquement mon code** est activé. Pour obtenir un exemple, consultez [demander au débogueur de continuer sur les exceptions non gérées par l’utilisateur](#BKMK_UserUnhandled) ci-dessous.
 
 <!-- Two consecutive notes are intentional here...-->
 
 > [!NOTE]
 > Dans une application Visual Basic, le débogueur gère toutes les erreurs comme des exceptions, même si vous utilisez des gestionnaires d’erreurs de style « en cas d’erreur ».
 
-## <a name="tell-the-debugger-to-break-when-an-exception-is-thrown"></a>Indiquer le débogueur s’arrête lorsqu’une exception est levée.
+## <a name="tell-the-debugger-to-break-when-an-exception-is-thrown"></a>Indiquer au débogueur d’arrêter lorsqu’une exception est levée
 
-Le débogueur peut arrêter l’exécution au point où une exception est levée, donc vous pouvez examiner l’exception avant un gestionnaire est appelé.
+Le débogueur peut arrêter l’exécution au point où une exception est levée. vous pouvez donc examiner l’exception avant qu’un gestionnaire soit appelé.
 
-Dans le **paramètres d’Exception** fenêtre (**Déboguer > Windows > Paramètres d’Exception**), développez le nœud d’une catégorie d’exceptions, tel que **Exceptions Common Language Runtime**. Puis sélectionnez la case à cocher pour une exception spécifique de cette catégorie, comme **System.AccessViolationException**. Vous pouvez également sélectionner une catégorie entière d'exceptions.
+Dans la fenêtre **paramètres d’exception** (**déboguer > paramètres d’exception Windows >** ), développez le nœud d’une catégorie d’exceptions, par exemple, **exceptions du Common Language Runtime**. Activez ensuite la case à cocher d’une exception spécifique au sein de cette catégorie, par exemple **System. AccessViolationException**. Vous pouvez également sélectionner une catégorie entière d'exceptions.
 
-![Checked AccessViolationException](../debugger/media/exceptionsettingscheckaccess.png "ExceptionSettingsCheckAccess")
+![AccessViolationException activé](../debugger/media/exceptionsettingscheckaccess.png "ExceptionSettingsCheckAccess")
 
 > [!TIP]
-> Vous pouvez trouver des exceptions spécifiques à l’aide de la **recherche** fenêtre dans le **paramètres d’Exception** barre d’outils, ou utilisez recherche pour filtrer des espaces de noms spécifiques (telles que **System.IO**).
+> Vous pouvez trouver des exceptions spécifiques à l’aide de la fenêtre **Rechercher** de la barre d’outils **paramètres d’exception** , ou utiliser la fonction de recherche pour filtrer des espaces de noms spécifiques (par exemple, **System.IO**).
 
-Si vous sélectionnez une exception dans le **paramètres d’Exception** fenêtre, l’exécution du débogueur s’arrête chaque fois que l’exception est levée, peu importe si elle est gérée. L’exception est devenue une exception de première chance. Voici, par exemple, quelques scénarios :
+Si vous sélectionnez une exception dans la fenêtre **paramètres d’exception** , l’exécution du débogueur s’arrête partout où l’exception est levée, peu importe si elle est gérée. L’exception est maintenant appelée une exception de première chance. Voici, par exemple, quelques scénarios :
 
 - Dans l’application console C# suivante, la méthode Main lève une exception **AccessViolationException** à l’intérieur d’un bloc `try/catch`.
 
@@ -91,16 +91,16 @@ Si vous sélectionnez une exception dans le **paramètres d’Exception** fenêt
   }
   ```
 
-  Si vous avez **AccessViolationException** archivé **paramètres d’Exception**, l’exécution s’arrête sur la `throw` lorsque vous exécutez ce code dans le débogueur de ligne. Vous pouvez ensuite poursuivre l'exécution. La console devrait afficher les deux lignes :
+  Si **AccessViolationException** a archivé des **paramètres d’exception**, l’exécution s’arrête sur la ligne de `throw` lorsque vous exécutez ce code dans le débogueur. Vous pouvez ensuite poursuivre l'exécution. La console devrait afficher les deux lignes :
 
   ```cmd
   caught exception
   goodbye
   ```
 
-  mais il n’affiche pas le `here` ligne.
+  mais elle n’affiche pas la ligne `here`.
 
-- Une application de console c# fait référence à une bibliothèque de classes avec une classe qui possède deux méthodes. Une méthode lève une exception et prend en charge, tandis que d’une deuxième méthode lève la même exception mais ne la gère.
+- Une C# application console fait référence à une bibliothèque de classes avec une classe qui a deux méthodes. Une méthode lève une exception et la gère, tandis qu’une deuxième méthode lève la même exception, mais ne la gère pas.
 
   ```csharp
   public class Class1
@@ -135,56 +135,56 @@ Si vous sélectionnez une exception dans le **paramètres d’Exception** fenêt
   }
   ```
 
-  Si vous avez **AccessViolationException** archivé **paramètres d’Exception**, l’exécution s’arrête sur la `throw` ligne dans les deux **ThrowHandledException()** et **ThrowUnhandledException()** lorsque vous exécutez ce code dans le débogueur.
+  Si **AccessViolationException** a archivé des **paramètres d’exception**, l’exécution s’arrête sur la ligne de `throw` dans **ThrowHandledException ()** et **dans throwunhandledexception ()** lorsque vous exécutez ce code dans le débogueur.
 
-Pour restaurer les paramètres d’exception pour les valeurs par défaut, choisissez le **restaurer la liste les paramètres par défaut** bouton :
+Pour rétablir les valeurs par défaut des paramètres d’exception, choisissez le bouton **restaurer la liste sur les paramètres par défaut** :
 
-![Restaurer les valeurs par défaut dans les paramètres d’Exception](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")
+![Restaurer les valeurs par défaut dans les paramètres d’exception](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")
 
-## <a name="BKMK_UserUnhandled"></a>Demander au débogueur de continuer en cas d’exceptions non gérées par l’utilisateur
+## <a name="BKMK_UserUnhandled"></a>Indiquer au débogueur de continuer sur les exceptions non gérées par l’utilisateur
 
-Si vous déboguez du code .NET ou JavaScript avec [uniquement mon Code](../debugger/just-my-code.md), vous pouvez demander au débogueur pour empêcher l’arrêt sur les exceptions qui ne sont pas gérées dans le code utilisateur, mais sont gérées ailleurs.
+Si vous déboguez du code .NET ou JavaScript avec [uniquement mon code](../debugger/just-my-code.md), vous pouvez indiquer au débogueur d’empêcher la rupture sur les exceptions qui ne sont pas gérées dans le code utilisateur, mais qui sont gérées ailleurs.
 
-1. Dans le **paramètres d’Exception** fenêtre, ouvrez le menu contextuel en cliquant sur une étiquette de colonne, puis sélectionnez **afficher les colonnes > des Actions supplémentaires**. (Si vous avez désactivé **uniquement mon Code**, vous ne voyez pas cette commande.) Une troisième colonne nommée **des Actions supplémentaires** s’affiche.
+1. Dans la fenêtre **paramètres d’exception** , ouvrez le menu contextuel en cliquant avec le bouton droit sur une étiquette de colonne, puis sélectionnez Afficher les **colonnes > actions supplémentaires**. (Si vous avez désactivé **uniquement mon code**, vous ne verrez pas cette commande.) Une troisième colonne nommée **actions supplémentaires** s’affiche.
 
-   ![Colonne d’Actions supplémentaire](../debugger/media/additionalactionscolumn.png "AdditionalActionsColumn")
+   ![Colonne actions supplémentaires](../debugger/media/additionalactionscolumn.png "AdditionalActionsColumn")
 
-   Pour une exception indiquant **continuer en cas d’exception non gérée dans le code utilisateur** dans cet article, le débogueur continue si cette exception n’est pas gérée dans le code utilisateur, mais est gérée en externe.
+   Pour une exception qui affiche continue lorsqu’elle n’est pas **gérée dans le code utilisateur** de cette colonne, le débogueur continue si cette exception n’est pas gérée dans le code utilisateur, mais est gérée en externe.
 
-2. Pour modifier ce paramètre pour une exception spécifique, sélectionnez l’exception, avec le bouton droit pour afficher le menu contextuel, puis **continuer lorsque exception non gérée dans le Code utilisateur**. Vous pouvez également modifier le paramètre pour une catégorie entière d’exceptions, telles que les exceptions Common Language Runtime entières).
+2. Pour modifier ce paramètre pour une exception particulière, sélectionnez l’exception, cliquez avec le bouton droit pour afficher le menu contextuel, puis sélectionnez **Continuer en cas d’exception non gérée dans le code utilisateur**. Vous pouvez également modifier le paramètre pour une catégorie entière d’exceptions, telles que l’ensemble des exceptions du Common Language Runtime).
 
-   ![** Continuer en cas d’exception non gérée dans le paramètre code ** utilisateur](../debugger/media/continuewhenunhandledinusercodesetting.png "ContinueWhenUnhandledInUserCodeSetting")
+   ![* * Continuer en cas d’exception non gérée dans le code utilisateur * *](../debugger/media/continuewhenunhandledinusercodesetting.png "ContinueWhenUnhandledInUserCodeSetting")
 
-Par exemple, les applications web ASP.NET gèrent les exceptions en les convertissant en un code d’état HTTP 500 ([gestion des exceptions dans ASP.NET Web API](http://www.asp.net/web-api/overview/error-handling/exception-handling)), qui ne peut pas vous aider à déterminer la source de l’exception. Dans l'exemple ci-dessous, le code utilisateur appelle `String.Format()` qui lève une exception <xref:System.FormatException>. L'exécution s'interrompt de la façon suivante :
+Par exemple, les applications Web ASP.NET gèrent les exceptions en les convertissant en code d’état HTTP 500 ([gestion des exceptions dans API Web ASP.net](/aspnet/web-api/overview/error-handling/exception-handling)), ce qui peut ne pas vous aider à déterminer la source de l’exception. Dans l'exemple ci-dessous, le code utilisateur appelle `String.Format()` qui lève une exception <xref:System.FormatException>. L'exécution s'interrompt de la façon suivante :
 
-![S’arrête sur utilisateur&#45;exception non gérée](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")
+![Arrêts sur l'&#45;exception non gérée par l’utilisateur](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")
 
 ## <a name="add-and-delete-exceptions"></a>Ajouter et supprimer des exceptions
 
-Vous pouvez ajouter et supprimer des exceptions. Pour supprimer un type d’exception à partir d’une catégorie, sélectionnez l’exception, puis choisissez le **supprimer l’exception sélectionnée dans la liste** bouton (signe moins) sur le **paramètres d’Exception** barre d’outils. Soit l’exception d’avec le bouton droit et sélectionnez **supprimer** dans le menu contextuel. La suppression d’une exception a le même effet que si l’exception est désactivée, c'est-à-dire que le débogueur ne s’arrête lorsqu’elle est levée.
+Vous pouvez ajouter et supprimer des exceptions. Pour supprimer un type d’exception d’une catégorie, sélectionnez l’exception, puis choisissez l’option **Supprimer l’exception sélectionnée dans la liste** (le signe moins) dans la barre d’outils **paramètres d’exception** . Vous pouvez également cliquer avec le bouton droit sur l’exception et sélectionner **supprimer** dans le menu contextuel. La suppression d’une exception a le même effet que si l’exception est désactivée, ce qui indique que le débogueur ne s’arrête pas lorsqu’elle est levée.
 
 Pour ajouter une exception :
 
-1. Dans le **paramètres d’Exception** fenêtre, sélectionnez une des catégories d’exception (par exemple, **Common Language Runtime**).
+1. Dans la fenêtre **paramètres d’exception** , sélectionnez l’une des catégories d’exception (par exemple, **Common Language Runtime**).
 
-2. Choisissez le **ajouter une exception à la catégorie sélectionnée** bouton (signe plus).
+2. Choisissez le bouton **Ajouter une exception au bouton catégorie sélectionnée** (le signe plus).
 
-   ![** Ajouter une exception au bouton sélectionné catégorie **](../debugger/media/addanexceptiontotheselectedcategorybutton.png "AddAnExceptionToTheSelectedCategoryButton")
+   ![* * Ajouter une exception au bouton * * de la catégorie sélectionnée](../debugger/media/addanexceptiontotheselectedcategorybutton.png "AddAnExceptionToTheSelectedCategoryButton")
 
-3. Tapez le nom de l’exception (par exemple, **System.UriTemplateMatchException**).
+3. Tapez le nom de l’exception (par exemple, **System. UriTemplateMatchException**).
 
    ![Tapez le nom de l’exception](../debugger/media/typetheexceptionname.png "TypeTheExceptionName")
 
    L’exception est ajoutée à la liste (par ordre alphabétique) et automatiquement activée.
 
-Pour ajouter une exception pour les Exceptions d’accès mémoire GPU, Exceptions du Runtime JavaScript ou des catégories d’Exceptions Win32, incluez le code d’erreur et la description.
+Pour ajouter une exception aux catégories exceptions d’accès mémoire GPU, exceptions du runtime JavaScript ou exceptions Win32, incluez le code d’erreur et la description.
 
 > [!TIP]
 > Vérifiez l'orthographe. La fenêtre **Paramètres d’exception** ne vérifie pas l’existence d’une exception ajoutée. Par conséquent, si vous tapez **Sytem.UriTemplateMatchException**, vous obtenez une entrée pour cette exception (mais pas pour **System.UriTemplateMatchException**).
 
-Les paramètres d’exception sont conservés dans le fichier .suo de la solution ; ils s’appliquent donc à une solution spécifique. Vous ne pouvez pas réutiliser des paramètres d’exception spécifiques entre plusieurs solutions. Maintenant seulement les exceptions ajoutées sont conservées ; exceptions supprimées ne sont pas. Vous pouvez ajouter une exception, fermez et rouvrez la solution, et l’exception sera toujours présente. Mais si vous supprimez une exception et que vous fermez/rouvrez la solution, l'exception ne s'affiche plus.
+Les paramètres d’exception sont conservés dans le fichier .suo de la solution ; ils s’appliquent donc à une solution spécifique. Vous ne pouvez pas réutiliser des paramètres d’exception spécifiques entre plusieurs solutions. Désormais, seules les exceptions ajoutées sont conservées ; les exceptions supprimées ne le sont pas. Vous pouvez ajouter une exception, fermer et rouvrir la solution, et l’exception sera toujours présente. Mais si vous supprimez une exception et que vous fermez/rouvrez la solution, l'exception ne s'affiche plus.
 
-La fenêtre **Paramètres d'exception** prend en charge les types d'exceptions génériques en C#, mais pas en Visual Basic. Pour effectuer un arrêt sur des exceptions telles que `MyNamespace.GenericException<T>`, vous devez ajouter l'exception en tant que **MyNamespace.GenericException'1**. Autrement dit, si vous avez créé une exception semblable à ce code :
+La fenêtre **Paramètres d'exception** prend en charge les types d'exceptions génériques en C#, mais pas en Visual Basic. Pour effectuer un arrêt sur des exceptions telles que `MyNamespace.GenericException<T>`, vous devez ajouter l'exception en tant que **MyNamespace.GenericException'1**. Autrement dit, si vous avez créé une exception telle que celle-ci :
 
 ```csharp
 public class GenericException<T> : Exception
@@ -195,35 +195,35 @@ public class GenericException<T> : Exception
 }
 ```
 
-Vous pouvez ajouter l’exception à **paramètres d’Exception** à l’aide de la procédure précédente :
+Vous pouvez ajouter l’exception aux **paramètres d’exception** à l’aide de la procédure précédente :
 
 ![Ajout d’une exception générique](../debugger/media/addgenericexception.png "AddGenericException")
 
 ## <a name="add-conditions-to-an-exception"></a>Ajouter des conditions à une exception
 
-Utilisez le **paramètres d’Exception** fenêtre pour définir des conditions sur les exceptions. Conditions actuellement pris en charge incluent les noms de module à inclure ou exclure de l’exception. En définissant des noms de module en tant que conditions, vous pouvez choisir Arrêter l’exécution de l’exception uniquement sur certains des modules de code. Vous pouvez également choisir d’éviter l’arrêt sur les modules particuliers.
+Utilisez la fenêtre **paramètres d’exception** pour définir des conditions sur les exceptions. Les conditions actuellement prises en charge incluent les noms de modules à inclure ou exclure pour l’exception. En définissant des noms de module en tant que conditions, vous pouvez choisir d’arrêter l’exception uniquement sur certains modules de code. Vous pouvez également choisir d’éviter une rupture sur des modules particuliers.
 
 > [!NOTE]
-> Ajout de conditions à une exception est pris en charge dans [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+> L’ajout de conditions à une exception est pris en charge à partir de [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Pour ajouter des exceptions conditionnelles :
 
-1. Choisissez le **modifier les conditions** bouton dans la fenêtre Paramètres d’Exception, ou avec le bouton droit de l’exception et choisissez **modifier les Conditions**.
+1. Choisissez le bouton **modifier les conditions** dans la fenêtre Paramètres d’exception, ou cliquez avec le bouton droit sur l’exception et choisissez Modifier les **conditions**.
 
    ![Conditions pour une exception](../debugger/media/dbg-conditional-exception.png "DbgConditionalException")
 
-2. Pour ajouter des conditions supplémentaires requises à l’exception, sélectionnez **ajouter une Condition** pour chaque nouvelle condition. Lignes de la condition supplémentaire s’affichent.
+2. Pour ajouter des conditions requises supplémentaires à l’exception, sélectionnez **Ajouter une condition** pour chaque nouvelle condition. Des lignes de condition supplémentaires s’affichent.
 
    ![Conditions supplémentaires pour une exception](../debugger/media/extraconditionsforanexception.png "ExtraConditionsForAnException")
 
-3. Pour chaque ligne de la condition, tapez le nom du module et modifier la liste d’opérateurs de comparaison à **est égal à** ou **n’est pas égal**. Vous pouvez spécifier des caractères génériques (**\\\***) dans le nom pour spécifier plusieurs modules.
+3. Pour chaque ligne de condition, tapez le nom du module, puis remplacez la liste d’opérateurs de comparaison par égal **à ou différent**de. Vous pouvez spécifier des caractères génériques ( **\\\*** ) dans le nom pour spécifier plusieurs modules.
 
-4. Si vous avez besoin supprimer une condition, choisissez le **X** à la fin de la ligne de la condition.
+4. Si vous devez supprimer une condition, choisissez la **Croix (X** ) à la fin de la ligne de condition.
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Poursuivre l’exécution après une exception](../debugger/continuing-execution-after-an-exception.md)<br/>
-- [Guide pratique pour examiner du code système après une exception](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
+- [Guide pratique pour examiner un code système après une exception](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
 - [Guide pratique pour utiliser les vérifications natives à l’exécution](../debugger/how-to-use-native-run-time-checks.md)<br/>
 - [Utiliser des vérifications à l’exécution sans la bibliothèque Runtime C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)<br/>
 - [Présentation du débogueur](../debugger/debugger-feature-tour.md)

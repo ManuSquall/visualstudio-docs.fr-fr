@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1e9109493ea78542afaedabbcce3841e3eac0e7
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.openlocfilehash: 913984bcc5f9546589421d66d95b6bfb2740b870
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128132"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72912028"
 ---
 # <a name="concurrency-visualizer"></a>Visualiseur concurrentiel
 
@@ -29,7 +29,7 @@ ms.locfileid: "71128132"
 >
 > - Téléchargez l’extension [Visualiseur concurrentiel pour Visual Studio 2017](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ConcurrencyVisualizer2017#overview).
 > - Télécharger l’extension [Visualiseur concurrentiel pour Visual Studio 2015](https://marketplace.visualstudio.com/items?itemName=Diagnostics.ConcurrencyVisualizerforVisualStudio2015).
-> - Télécharger les [Outils de collecte du visualiseur concurrentiel pour Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103).
+> - Télécharger les [Outils de collecte du visualiseur concurrentiel pour Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=49103).
 >
 > [L’utilitaire en ligne de commande du visualiseur concurrentiel (CVCollectionCmd)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md) permet de recueillir des traces à partir de la ligne de commande que vous pouvez afficher dans le visualiseur concurrentiel pour Visual Studio 2015. Vous pouvez utiliser cet outil sur des ordinateurs sur lesquels Visual Studio n’est pas installé.
 
@@ -38,7 +38,7 @@ Le visualiseur concurrentiel vous permet de voir comment votre application multi
 > [!NOTE]
 > Le visualiseur concurrentiel ne prend pas en charge les projets web.
 
-Le visualiseur concurrentiel s’appuie sur la fonctionnalité [Suivi d’événements pour Windows](http://go.microsoft.com/fwlink/?LinkId=234579) .
+Le visualiseur concurrentiel s’appuie sur la fonctionnalité [Suivi d’événements pour Windows](/windows/win32/etw/event-tracing-portal) .
 
 ## <a name="related-topics"></a>Rubriques connexes
 
@@ -48,8 +48,8 @@ Le visualiseur concurrentiel s’appuie sur la fonctionnalité [Suivi d’évén
 |[vue Threads](../profiling/threads-view-parallel-performance.md)|Explique comment analyser les interactions entre les threads dans votre programme.|
 |[Vue Cœurs](../profiling/cores-view.md)|Explique comment analyser la migration de threads entre les cœurs.|
 |[Modèles courants pour des applications multithread au comportement médiocre](../profiling/common-patterns-for-poorly-behaved-multithreaded-applications.md)|Décrit plusieurs modèles courants et indique comment ils apparaissent dans le visualiseur concurrentiel.|
-|[Blog Parallel Development in Visual Studio](http://go.microsoft.com/fwlink/?LinkId=235385)|Fournit des conseils et les meilleures pratiques pour le visualiseur concurrentiel.|
-|[Vues du rapport des performances](../profiling/performance-report-views.md)|Cette section fournit des informations de référence pour les rapports et les vues des outils de profilage de Visual Studio.|
+|[Blog Parallel Development in Visual Studio](https://blogs.msdn.microsoft.com/visualizeparallel/)|Fournit des conseils et les meilleures pratiques pour le visualiseur concurrentiel.|
+|[Vues Rapport de performances](../profiling/performance-report-views.md)|Cette section fournit des informations de référence pour les rapports et les vues des outils de profilage de Visual Studio.|
 |[Kit SDK du visualiseur concurrentiel](../profiling/concurrency-visualizer-sdk.md)|Décrit comment instrumenter votre code source pour afficher des informations supplémentaires dans le visualiseur concurrentiel.|
 |[Utilitaire en ligne de commande du visualiseur concurrentiel (CVCollectionCmd)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md)|Décrit comment utiliser l’utilitaire de ligne de commande du visualiseur concurrentiel (CVCollectionCmd.exe) pour collecter et traiter les traces sur les ordinateurs qui n’ont pas Visual Studio.|
 

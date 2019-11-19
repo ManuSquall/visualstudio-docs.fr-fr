@@ -15,44 +15,43 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e07e2612e01453115cf4cd6120d92bfd5b0168bd
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: 6dfffdf0c12ea2a8f14769f26bb40a3943579248
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "70222657"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73187595"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Naviguer dans le code avec le débogueur Visual Studio
 
 Le débogueur Visual Studio peut vous aider à parcourir le code pour inspecter l’état d’une application et afficher son Workflow d’exécution. Vous pouvez utiliser les raccourcis clavier, les commandes de débogage, les points d’arrêt et d’autres fonctionnalités pour accéder rapidement au code que vous souhaitez examiner. Si vous êtes familiarisé avec les commandes de navigation et les raccourcis du débogueur, il est plus rapide et plus facile de trouver et de résoudre les problèmes liés aux applications.  S’il s’agit de la première fois que vous essayez de déboguer du code, vous souhaiterez peut-être lire le [débogage pour les débutants](../debugger/debugging-absolute-beginners.md) et les [techniques de débogage et les outils de débogage](../debugger/write-better-code-with-visual-studio.md) avant de passer en revue cet article.
 
-## <a name="basic-debugging"></a>Bases du débogage
+## <a name="get-into-break-mode"></a>Passer en mode arrêt
 
-Pour démarrer votre application avec le débogueur attaché, appuyez sur **F5**, sélectionnez **déboguer**  >  démarrer le**débogage**, ou sélectionnez la flèche verte dans la barre d’outils de Visual Studio.
+En *mode arrêt*, l’exécution de l’application est interrompue lorsque les fonctions, les variables et les objets restent en mémoire. Une fois que le débogueur est en mode arrêt, vous pouvez naviguer dans votre code. Les méthodes les plus courantes pour passer en mode arrêt rapidement sont les suivantes :
 
- ![Notions&#95;de&#95;base&#95;sur dbg démarrer le débogage](../debugger/media/dbg_basics_start_debugging.png "DBG_Basics_Start_Debugging")
+- Commencez le code pas à pas en appuyant sur **F10** ou **F11**. Cela vous permet de trouver rapidement le point d’entrée de votre application, puis de continuer à appuyer sur les commandes Step pour naviguer dans le code.
 
-Pendant le débogage, une surbrillance jaune affiche la ligne de code qui s’exécutera ensuite.
+- [Exécutez sur un emplacement ou une fonction spécifique](#BKMK_Break_into_code_by_using_breakpoints_or_Break_All), par exemple en [définissant un point d’arrêt](using-breakpoints.md) et en démarrant votre application.
 
- ![Mode&#95;arrêt&#95;&#95;de dbg Basics](../debugger/media/dbg_basics_break_mode.png "Mode arrêt")
+   Par exemple, à partir de l’éditeur de code dans Visual Studio, vous pouvez utiliser la commande **Exécuter jusqu’au curseur** pour démarrer l’application, le débogueur attaché, puis passer en mode arrêt, puis **F11** pour naviguer dans le code.
 
-La plupart des fenêtres du débogueur, comme les **modules** et les fenêtres **Espion** , sont disponibles uniquement pendant que le débogueur est en cours d’exécution. Certaines fonctionnalités du débogueur, telles que l’affichage des valeurs des variables dans la fenêtre **variables locales** ou l’évaluation des expressions dans la fenêtre **Espion** , sont disponibles uniquement lorsque le débogueur est suspendu à un point d’arrêt, également appelé *mode arrêt*.
+   ![Exécuter jusqu’au curseur et pas à pas détaillé dans le code](../debugger/media/navigate-code-code-stepping.gif "Exécuter jusqu’au curseur et pas à pas détaillé dans le code")
 
-En mode arrêt, l’exécution de l’application est interrompue lorsque les fonctions, les variables et les objets restent en mémoire. Vous pouvez examiner les positions et les États des éléments pour rechercher des violations ou des bogues. Pour certains types de projets, vous pouvez également apporter des modifications à l’application en mode arrêt. Pour obtenir une vidéo présentant ces fonctionnalités, consultez [prise en main avec le débogueur](https://www.youtube.com/watch?v=FtGCi5j30YU&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=6).
+Une fois en mode arrêt, vous pouvez utiliser diverses commandes pour naviguer dans votre code. En mode arrêt, vous pouvez examiner les valeurs des variables pour rechercher des violations ou des bogues. Pour certains types de projets, vous pouvez également apporter des modifications à l’application en mode arrêt.
 
-Si vous arrêtez dans du code qui n’a pas de fichiers sources ou de symboles ( *. pdb*) chargés, le débogueur affiche une page **fichiers sources introuvables** ou **symboles introuvables** qui peuvent vous aider à trouver et à charger les fichiers. Consultez [Spécifier les fichiers de symbole (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md). Si vous ne pouvez pas charger le symbole ou les fichiers sources, vous pouvez toujours déboguer les instructions de l’assembly dans **la fenêtre Code machine.**
+La plupart des fenêtres du débogueur, telles que les **modules** et les fenêtres **Espion** , sont disponibles uniquement lorsque le débogueur est attaché à votre application. Certaines fonctionnalités du débogueur, telles que l’affichage des valeurs des variables dans la fenêtre **variables locales** ou l’évaluation des expressions dans la fenêtre **Espion** , sont disponibles uniquement lorsque le débogueur est suspendu (c’est-à-dire en mode arrêt).
 
-Vous n’avez pas toujours besoin de démarrer le débogage en démarrant une application au début. Vous pouvez également appuyer sur **F11** pour effectuer un [pas à pas détaillé dans le code](#BKMK_Step_into__over__or_out_of_the_code), appuyer sur **F10** pour effectuer un [pas à pas principal](#BKMK_Step_over_Step_out)dans le code ou [Exécuter jusqu’à un emplacement ou une fonction spécifique](#BKMK_Break_into_code_by_using_breakpoints_or_Break_All).
+> [!NOTE]
+> Si vous vous débloquez dans du code qui n’a pas de fichiers sources ou de symboles ( *. pdb*) chargés, le débogueur affiche une page **fichiers sources introuvables** ou **symboles introuvables** qui peuvent vous aider à trouver et à charger les fichiers. Consultez [Spécifier les fichiers de symbole (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md). Si vous ne pouvez pas charger le symbole ou les fichiers sources, vous pouvez toujours déboguer les instructions de l’assembly dans **la fenêtre Code machine.**
 
 ## <a name="step-through-code"></a>Exécuter le code pas à pas
 
 Les commandes de l’étape du débogueur vous aident à inspecter l’état de votre application ou à en savoir plus sur son Workflow d’exécution.
 
-Si vous avez besoin de trouver le point d’entrée dans votre application, commencez par **F10** ou **F11**.
-
 ### <a name="BKMK_Step_into__over__or_out_of_the_code"></a>Pas à pas détaillé dans le code ligne par ligne
 
-Pour arrêter sur chaque ligne de code ou instruction pendant le débogage, utilisez **Debug**  > **pas à pas**détaillé ou appuyez sur **F11**.
+Pour arrêter l’opération sur chaque instruction pendant le débogage, utilisez **Debug** > **pas à pas**détaillé ou appuyez sur **F11**.
 
 Le débogueur parcourt les instructions de code, pas les lignes physiques. Par exemple, une clause `if` peut être écrite sur une ligne :
 
@@ -73,11 +72,11 @@ Toutefois, lorsque vous exécutez pas à pas cette ligne, le débogueur traite l
 Dans un appel à plusieurs fonctions imbriquées, **Pas à pas détaillé** va jusqu'à la fonction se trouvant au niveau le plus profond. Par exemple, si vous utilisez **pas à pas détaillé** dans un appel comme `Func1(Func2())`, le débogueur parcourt la fonction `Func2`.
 
 >[!TIP]
->À mesure que vous exécutez chaque ligne de code, vous pouvez pointer sur les variables pour voir leurs valeurs, ou utiliser les fenêtres variables [locales](autos-and-locals-windows.md) et [Espion](watch-and-quickwatch-windows.md) pour surveiller les valeurs modifiées. Vous pouvez également suivre visuellement la pile des appels tout en effectuant un pas à pas détaillé dans les fonctions. Consultez [mapper des méthodes sur la pile des appels pendant le débogage](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).
+>À mesure que vous exécutez chaque ligne de code, vous pouvez pointer sur les variables pour voir leurs valeurs, ou utiliser les fenêtres variables [locales](autos-and-locals-windows.md) et [Espion](watch-and-quickwatch-windows.md) pour surveiller les valeurs modifiées. Vous pouvez également suivre visuellement la [pile des appels](how-to-use-the-call-stack-window.md) tout en effectuant un pas à pas détaillé dans les fonctions. (Pour Visual Studio Enterprise uniquement, consultez [mapper des méthodes sur la pile des appels pendant le débogage](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)).
 
 ### <a name="BKMK_Step_over_Step_out"></a>Exécuter le code pas à pas et ignorer certaines fonctions
 
-Vous ne vous souciez peut-être pas d’une fonction pendant le débogage, ou vous savez qu’elle fonctionne, comme un code de bibliothèque bien testé. Vous pouvez utiliser les commandes suivantes pour passer au code. Les fonctions s’exécutent toujours, mais le débogueur les ignore.
+Vous ne vous souciez peut-être pas d’une fonction pendant le débogage, ou vous savez qu’elle fonctionne, comme un code de bibliothèque bien testé. Vous pouvez utiliser les commandes suivantes pour ignorer le code pendant l’exécution pas à pas du code. Les fonctions s’exécutent toujours, mais le débogueur les ignore.
 
 |Commande clavier|Commande de menu Déboguer|Description|
 |----------------------|------------------|-----------------|

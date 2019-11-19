@@ -30,12 +30,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2241daa50a35a9714fd66b10966298279bc37fe
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 98bf3e143a3fcb6613752362acf83f5c2441b98b
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747291"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911259"
 ---
 # <a name="link-task"></a>Lier la tâche
 Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur de liens lie des bibliothèques et des fichiers objets COFF (Common Object File Format) pour créer un fichier exécutable ( *.exe*) ou une bibliothèque de liens dynamiques (DLL). Pour plus d’informations, consultez [Options de l’éditeur de liens](/cpp/build/reference/linker-options).
@@ -65,7 +65,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
   Spécifie les attributs qui sont placés dans la section `dependency` du fichier manifeste.
 
-  Pour plus d’informations, consultez [/MANIFESTDEPENDENCY (Spécifier les dépendances de manifeste)](/cpp/build/reference/manifestdependency-specify-manifest-dependencies). Consultez également [Fichiers de configuration des serveurs de publication](https://docs.microsoft.com/windows/desktop/SbsCs/publisher-configuration-files).
+  Pour plus d’informations, consultez [/MANIFESTDEPENDENCY (Spécifier les dépendances de manifeste)](/cpp/build/reference/manifestdependency-specify-manifest-dependencies). Consultez également [Fichiers de configuration des serveurs de publication](/windows/desktop/SbsCs/publisher-configuration-files).
 
 - **AdditionalOptions**
 

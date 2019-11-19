@@ -654,18 +654,8 @@
               href: javascript-console-commands.md
             - name: Raccourcis clavier (HTML et JavaScript)
               href: keyboard-shortcuts-html-and-javascript.md
-            - name: Scripts côté client
-              items:
-                - name: Débogage de scripts côté client
-                  href: client-side-script-debugging.md
-                - name: Limitations du débogage de script
-                  href: limitations-on-script-debugging.md
-                - name: Attacher (script)
-                  items:
-                    - name: Attacher à un script
-                      href: how-to-attach-to-script.md
-                    - name: "Avertissement\_: le débogage de script est désactivé"
-                      href: warning-script-debugging-disabled.md
+            - name: "Avertissement\_: le débogage de script est désactivé"
+              href: warning-script-debugging-disabled.md
         - name: Services WCF
           items:
             - name: Déboguer des services WCF

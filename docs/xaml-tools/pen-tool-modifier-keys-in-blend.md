@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 801ccc48f913b36366ac27292abd472d6ea11207
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 255b3de916215759615384dce26c5affbc07a995
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668814"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73569099"
 ---
 # <a name="pen-tool-modifier-keys-in-blend-for-visual-studio"></a>Touches de modification de l’outil Plume dans Blend pour Visual Studio
 
@@ -39,5 +39,5 @@ Le tableau suivant répertorie les raccourcis que vous pouvez utiliser pour modi
 ## <a name="see-also"></a>Voir aussi
 
 - [Touches de modification de la planche graphique](../designers/artboard-modifier-keys-in-blend.md)
-- [Touches de modification de l’outil Sélection directe](../designers/direct-selection-tool-modifier-keys-in-blend.md)
-- [Dessiner des formes et des tracés](../designers/draw-shapes-and-paths.md)
+- [Touches de modification de l’outil Sélection directe](direct-selection-tool-modifier-keys-in-blend.md)
+- [Dessiner des formes et des tracés](draw-shapes-and-paths.md)

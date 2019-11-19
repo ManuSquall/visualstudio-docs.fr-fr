@@ -12,18 +12,18 @@ ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0f43222e593b836f44a84e5f64642403f0263ca5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0facc87df720af8376561ae7599fe20afeab1a12
+ms.sourcegitcommit: c6af923c1f485959d751b23ab3f03541013fc4a7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649708"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73925966"
 ---
 # <a name="create-a-ui-by-using-xaml-designer"></a>Créer une IU à l’aide du concepteur XAML
 
 Le concepteur XAML dans Visual Studio et Blend pour Visual Studio fournit une interface visuelle permettant de concevoir des applications XAML, telles que des applications WPF, UWP et Xamarin.Forms. Vous pouvez créer des interfaces utilisateur pour vos applications en faisant glisser des contrôles à partir de la fenêtre Boîte à outils (ou de la fenêtre Composants dans Blend pour Visual Studio), et en définissant des propriétés dans la fenêtre Propriétés. Vous pouvez également modifier le XAML directement en mode XAML.
 
-Les utilisateurs expérimentés peuvent même [personnaliser le concepteur XAML](../extensibility/xaml-designer-extensibility-migration.md).
+Les utilisateurs expérimentés peuvent même [personnaliser le concepteur XAML](https://github.com/microsoft/xaml-designer-extensibility/blob/master/documents/xaml-designer-extensibility-migration.md).
 
 ## <a name="xaml-designer-workspace"></a>Espace de travail du concepteur XML
 

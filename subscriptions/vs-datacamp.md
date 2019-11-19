@@ -3,15 +3,15 @@ title: Améliorez aujourd’hui vos compétences en matière de science des donn
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/30/2019
+ms.date: 11/13/2019
 ms.topic: conceptual
 description: Découvrez l’abonnement DataCamp Training inclus dans certains abonnements Visual Studio.
-ms.openlocfilehash: 64176f5a58641bf51434c99eee914a8ac176da56
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
-ms.translationtype: HT
+ms.openlocfilehash: 526b0f25fc745cee25ce2300a1326041e86df7db
+ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681640"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74099663"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Avantage DataCamp Training dans les abonnements Visual Studio
 Les abonnements Visual Studio éligibles incluent des abonnements à DataCamp.  Avec DataCamp, vous pouvez acquérir toutes les compétences qui vous sont nécessaires en science des données, confortablement devant votre navigateur. Vous devez choisir quand et ce que vous voulez apprendre. Sans aucun logiciel à installer ni aucune configuration matérielle requise spéciale, l’apprentissage de la science des données est plus facile que jamais.
@@ -37,7 +37,7 @@ Les abonnements Visual Studio éligibles incluent des abonnements à DataCamp.  
    > [!div class="mx-imgBorder"]
    > ![DataCamp, Choisir un parcours](_img/vs-datacamp/vs-datacamp-choose-path.png)
 
-5. Une fois que vous avez sélectionné votre parcours, vous pouvez affiner davantage votre parcours d’apprentissage en sélectionnant un objectif.  Par exemple, si vous avez choisi le parcours « Développer vos compétences en science des données », vous voyez les options suivantes. Choisissez une option ou cliquez sur **I am not sure.  Show me all career paths** (Je ne suis pas sûr. Montrez-moi tous les parcours professionnels.) pour créer un parcours plus étendu.
+5. Une fois que vous avez sélectionné votre parcours, vous pouvez affiner davantage votre parcours d’apprentissage en sélectionnant un objectif.  Par exemple, si vous avez choisi le parcours « Développer vos compétences en science des données », vous voyez les options suivantes. Choisissez une option ou cliquez sur **je ne suis pas sûr.  Montrez-moi tous les parcours de carrière** pour créer un chemin plus large.
    > [!div class="mx-imgBorder"]
    > ![DataCamp, Compétences en science des données](_img/vs-datacamp/vs-datacamp-datascience.png)
 
@@ -53,22 +53,24 @@ Les abonnements Visual Studio éligibles incluent des abonnements à DataCamp.  
 Vous pouvez arrêter à tout moment et reprendre votre formation à la prochaine session.  Accédez à [http://www.datacamp.com](http://www.datacamp.com), puis connectez-vous.  Vous voyez votre tableau de bord et vous pouvez reprendre votre formation là où vous l’avez interrompue. Cliquez simplement sur **Continue Track** (Continuer le parcours).
 
 > [!div class="mx-imgBorder"]
-> ![DataCamp : Continuer la formation](_img/vs-datacamp/vs-datacamp-continue-training.png)
+> ![DataCamp poursuivre la formation](_img/vs-datacamp/vs-datacamp-continue-training.png)
 
 ## <a name="eligibility"></a>Éligibilité
 | Niveau d'abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | Licences en volume, Azure, Détail, | 3 mois       |  Non.  Disponible pour les nouveaux abonnés uniquement          |
+| Visual Studio Enterprise avec GitHub Enterprise   | LV | 3 mois       |  Non.  Disponible pour les nouveaux abonnés uniquement          |
 | Visual Studio Professional (Standard) | Licences en volume, Azure, Détail                                       | 3 mois                                                            |  Non.  Disponible pour les nouveaux abonnés uniquement           |
+| Visual Studio Professional avec GitHub Enterprise| LV | 3 mois                                                            |  Non.  Disponible pour les nouveaux abonnés uniquement           |
 | Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | 3 mois                                             |  Non.  Disponible pour les nouveaux abonnés uniquement           |
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | 3 mois                                              |  Non.  Disponible pour les nouveaux abonnés uniquement           |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Non disponible  | N/A |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure | Non disponible | N/A |
 
-<sup>1</sup>  *Inclut :  NFR (revente interdite), FTE, MVP (Most Valuable Professional), RD (Regional Director), MPN (Microsoft Partner Network), VSIP (Visual Studio Industry Partner), Microsoft Certified Trainer, BizSpark, Imagine*
+<sup>1</sup>  *comprend : la revente interdite (NFR), FTE, MVP (Most Valuable Professional), les services Bureau à distance, les Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, imagine*
 
 > [!NOTE]
-> Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à accéder à [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
+> Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à consulter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
 
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
 
@@ -85,3 +87,5 @@ Découvrez d’autres opportunités de développement professionnel dans votre a
 - [Pluralsight](vs-pluralsight.md)
 - [LinkedIn Learning](vs-linkedin-learning.md)
 - [MSDN Magazine](vs-msdn.md)
+
+Si vous n’avez pas encore activé l’avantage de crédit DevTest Azure fourni avec votre abonnement, visitez [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) et cliquez sur la vignette Azure dans la catégorie outils pour configurer votre abonnement Azure et échanger votre crédit Azure DevTest individuel.

@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d1826981f29ebfc29e7e5d28aa32fbff8c74ea5a
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
-ms.translationtype: HT
+ms.openlocfilehash: 5e269e19a09aec157e38eaf8938b5995c2647803
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585390"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661944"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Comment créer et gérer des environnements Python dans Visual Studio
 
@@ -70,13 +70,13 @@ Dans les deux cas, la fenêtre **Environnements Python** apparaît à côté de 
 
 Visual Studio recherche les environnements globaux installés à l’aide du Registre (conformément au [PEP 514](https://www.python.org/dev/peps/pep-0514/)) ainsi que les environnements virtuels et les environnements conda (consultez [Types d’environnement](#types-of-environments)). Si un environnement attendu ne figure pas dans la liste, consultez [Identifier manuellement un environnement existant](#manually-identify-an-existing-environment).
 
-Quand vous sélectionnez un environnement dans la liste, Visual Studio affiche diverses propriétés et commandes pour cet environnement sous l’onglet **Vue d’ensemble**. Par exemple, vous pouvez voir dans l’image ci-dessus que l’emplacement de l’interpréteur est *C:\Python36-32*. Les quatre commandes au bas de l’onglet **Vue d’ensemble** ouvrent chacune une invite de commandes avec l’interpréteur en cours d’exécution. Pour plus d’informations, consultez [Informations de référence sur les onglets de la fenêtre Environnements Python - Vue d’ensemble](python-environments-window-tab-reference.md#overview-tab).
+Lorsque vous sélectionnez un environnement dans la liste, Visual Studio affiche différentes propriétés et commandes pour cet environnement sous l’onglet **vue d’ensemble** . Par exemple, vous pouvez voir dans l’image ci-dessus que l’emplacement de l’interpréteur est *C:\Python36-32*. Les quatre commandes au bas de l’onglet **Vue d’ensemble** ouvrent chacune une invite de commandes avec l’interpréteur en cours d’exécution. Pour plus d’informations, consultez [Informations de référence sur les onglets de la fenêtre Environnements Python - Vue d’ensemble](python-environments-window-tab-reference.md#overview-tab).
 
 Utilisez la liste déroulante sous la liste des environnements pour accéder aux différents onglets, comme **Packages** et **IntelliSense**. Ces onglets sont également décrits dans les [Informations de référence sur les onglets de la fenêtre Environnements Python](python-environments-window-tab-reference.md).
 
 La sélection d’un environnement ne change pas sa relation avec les projets. L’environnement par défaut, en gras dans la liste, est celui utilisé par Visual Studio pour tous les nouveaux projets. Pour utiliser un autre environnement avec de nouveaux projets, utilisez la commande **Définir cet environnement comme valeur par défaut pour les nouveaux projets**. Dans le contexte d’un projet, vous pouvez toujours sélectionner un environnement spécifique. Pour plus d’informations, consultez [Sélectionner un environnement pour un projet](selecting-a-python-environment-for-a-project.md).
 
-À droite de chaque environnement apparaît un contrôle qui ouvre une fenêtre **Interactive** pour cet environnement. (Dans Visual Studio 2017 versions 15.5 et antérieures, un autre contrôle s’affiche, permettant d’actualiser la base de données IntelliSense pour cet environnement. Pour plus d’informations sur la base de données, consultez [Informations de référence sur la fenêtre Environnements](python-environments-window-tab-reference.md#intellisense-tab)).
+À droite de chaque environnement apparaît un contrôle qui ouvre une fenêtre **Interactive** pour cet environnement. (Dans Visual Studio 2017 versions 15.5 et antérieures, un autre contrôle s’affiche, permettant d’actualiser la base de données IntelliSense pour cet environnement. Pour plus d’informations sur la base de données, consultez [Informations de référence sur la fenêtre Environnements](python-environments-window-tab-reference.md)).
 
 ::: moniker range="vs-2017"
 > [!Tip]
@@ -102,7 +102,7 @@ Si aucun environnement ne s’affiche, cela signifie que Visual Studio n’est p
 Si vous savez que vous disposez d’un interpréteur Python sur votre ordinateur, mais que Visual Studio (quelle que soit sa version) ne l’a pas détecté, utilisez la commande **+ Personnalisé** pour spécifier son emplacement manuellement. Consultez la section suivante, [Identifier manuellement un environnement existant](#manually-identify-an-existing-environment).
 
 > [!Tip]
-> Visual Studio détecte les mises à jour sur un interpréteur existant, telles que la mise à niveau Python 2.7.11 à 2.7.14 à l’aide de programmes d’installation de python.org. Pendant le processus d’installation, l’ancien environnement disparaît de la liste **Environnements Python** avant que la mise à jour n’apparaisse à la place.
+> Visual Studio détecte les mises à jour d’un interpréteur existant, telles que la mise à niveau de Python 2.7.11 vers 2.7.14 à l’aide des programmes d’installation de python.org. Pendant le processus d’installation, l’ancien environnement disparaît de la liste des **environnements python** avant que la mise à jour ne s’affiche à la place.
 >
 > Toutefois, si vous déplacez manuellement un interpréteur et son environnement à l’aide du système de fichiers, Visual Studio ne sera pas informé du nouvel emplacement. Pour plus d’informations, consultez la section [Déplacer un interpréteur](installing-python-interpreters.md#move-an-interpreter).
 
@@ -124,7 +124,7 @@ C’est la raison pour laquelle les développeurs créent souvent un *environnem
 
 Visual Studio prend en charge directement la création d’un environnement virtuel pour un projet. Par exemple, si vous ouvrez un projet qui contient un fichier *requirements.txt*, ou si vous créez un projet à partir d’un modèle qui inclut ce fichier, Visual Studio vous invite à créer automatiquement un environnement virtuel et à installer ces dépendances.
 
-À tout moment dans un projet ouvert, vous pouvez créer un environnement virtuel. Dans l’**Explorateur de solutions**, développez le nœud de projet, cliquez avec le bouton droit sur **Environnements Python**, puis sélectionnez Ajouter un environnement virtuel. Pour plus d’informations, consultez [Créer un environnement virtuel](selecting-a-python-environment-for-a-project.md#create-a-virtual-environment).
+À tout moment dans un projet ouvert, vous pouvez créer un environnement virtuel. Dans l’**Explorateur de solutions**, développez le nœud de projet, cliquez avec le bouton droit sur **Environnements Python**, puis sélectionnez Ajouter un environnement virtuel. Pour plus d’informations, consultez [Créer un environnement virtuel](/visualstudio/python/selecting-a-python-environment-for-a-project?view=vs-2019#create-a-virtual-environment-1).
 
 Visual Studio fournit également une commande qui permet de générer un fichier *requirements.txt* à partir d’un environnement virtuel, ce qui facilite la recréation de l’environnement sur d’autres ordinateurs. Pour plus d’informations, consultez [Utiliser des environnements virtuels](selecting-a-python-environment-for-a-project.md#use-virtual-environments).
 
@@ -160,11 +160,11 @@ Vous créez un environnement conda à l’aide de l’outil `conda`, ou avec la 
     | Champ | Description |
     | --- | --- |
     | Projet | Projet dans lequel créer l’environnement (si vous avez plusieurs projets dans la même solution Visual Studio). |
-    | Nom | Nom de l’environnement conda. |
+    | Name | Nom de l’environnement conda. |
     | Ajouter des packages depuis | Choisissez **Fichier d’environnement** si vous avez un fichier *environment.yml* décrivant vos dépendances de fichiers, ou choisissez **un ou plusieurs noms de packages Anaconda** et répertoriez au moins un package Python ou une version de Python dans le champ situé en dessous. La liste des packages indique à conda de créer un environnement Python. Pour installer la dernière version de Python, utilisez `python` ; pour installer une version spécifique, utilisez `python=,major>.<minor>` comme dans `python=3.7`. Vous pouvez également utiliser le bouton de package pour sélectionner des versions de Python et des packages communs à partir d’une série de menus. |
     | Définir en tant qu’environnement actuel | Active le nouvel environnement dans le projet sélectionné lorsque l’environnement est créé. |
     | Définir en tant qu’environnement par défaut pour les nouveaux projets | Définit et active automatiquement l’environnement conda dans tous les nouveaux projets créés dans Visual Studio. Cette option est identique à l’option **Définir cet environnement comme valeur par défaut pour les nouveaux projets** dans la fenêtre **Environnements Python**. |
-    | Afficher dans la fenêtre Environnements Python | Spécifie l’affichage ou non de la fenêtre **Environnements Python** après la création de l’environnement. |
+    | Afficher dans la fenêtre des environnements Python | Spécifie l’affichage ou non de la fenêtre **Environnements Python** après la création de l’environnement. |
 
     > [!Important]
     > Lorsque vous créez un environnement conda, veillez à spécifier au moins une version de Python ou un package Python à l’aide de `environments.yml` ou de la liste des packages, ce qui garantit que l’environnement contient un runtime Python. Sinon, Visual Studio ignore l’environnement : l’environnement n’apparaît nulle part dans la fenêtre **Environnements Python**, n’est pas être défini en tant qu’environnement actuel pour un projet et n’est pas disponible en tant qu’environnement global.
@@ -225,7 +225,7 @@ Suivez les étapes ci-dessous pour identifier un environnement installé à un e
 
 1. Dès que les champs contiennent les valeurs souhaitées, sélectionnez **Appliquer** pour enregistrer la configuration. Vous pouvez maintenant utiliser l’environnement comme n’importe quel autre environnement au sein de Visual Studio.
 
-1. Si vous devez supprimer un environnement identifié manuellement, sélectionnez la commande **Supprimer** de l’onglet **Configurer**. Les environnements détectés automatiquement ne fournissent pas cette option. Pour plus d’informations, consultez la section [Onglet Configurer](python-environments-window-tab-reference.md#configure-tab).
+1. Si vous devez supprimer un environnement identifié manuellement, sélectionnez la commande **supprimer** sous l’onglet **configurer** . les environnements détectés automatiquement ne fournissent pas cette option. Pour plus d’informations, consultez la section [Onglet Configurer](python-environments-window-tab-reference.md#configure-tab).
 
 ::: moniker-end
 
@@ -243,7 +243,7 @@ Suivez les étapes ci-dessous pour identifier un environnement installé à un e
 
     ![Champs pour spécifier les détails d’une option d’environnement personnalisé dans la boîte de dialogue Ajouter un environnement](media/environments/environments-custom-3-2019.png)
 
-1. Les détails de l’environnement peuvent être révisés et modifiés à tout moment dans la fenêtre **Environnements Python**. Dans cette fenêtre, sélectionnez l’environnement, puis sélectionnez l’onglet **Configurer**. Lorsque vous avez apporté des modifications, sélectionnez la commande **Appliquer**. Vous pouvez également supprimer l’environnement à l’aide de la commande **Supprimer** (non disponible pour les environnements détectés automatiquement). Pour plus d’informations, consultez la section [Onglet Configurer](python-environments-window-tab-reference.md#configure-tab).
+1. Les détails de l’environnement peuvent être révisés et modifiés à tout moment dans la fenêtre **Environnements Python**. Dans cette fenêtre, sélectionnez l’environnement, puis sélectionnez l’onglet **configurer** . Après avoir apporté les modifications nécessaires, sélectionnez la commande **appliquer** . Vous pouvez également supprimer l’environnement à l’aide de la commande **Supprimer** (non disponible pour les environnements détectés automatiquement). Pour plus d’informations, consultez la section [Onglet Configurer](python-environments-window-tab-reference.md#configure-tab).
 ::: moniker-end
 
 ## <a name="fix-or-delete-invalid-environments"></a>Corriger ou supprimer les environnements non valides

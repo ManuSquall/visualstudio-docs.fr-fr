@@ -14,14 +14,14 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41bffbc248d9004248a3552f335dccefaba72cca
-ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
+ms.openlocfilehash: 73c14c61702ec978d8ffec896b13204c238762a2
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68822162"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568833"
 ---
-# <a name="visual-studio-sdk"></a>SDK Visual Studio
+# <a name="visual-studio-sdk"></a>Kit de développement logiciel Visual Studio
 Le kit de développement logiciel (SDK) Visual Studio vous aide à étendre les fonctionnalités de Visual Studio ou à intégrer de nouvelles fonctionnalités dans Visual Studio. Vous pouvez distribuer vos extensions à d’autres utilisateurs, ainsi qu’à la Visual Studio Marketplace. Voici quelques-unes des façons dont vous pouvez étendre Visual Studio :
 
 - Ajouter des commandes, des boutons, des menus et d’autres éléments d’interface utilisateur à l’IDE
@@ -65,18 +65,19 @@ Le kit de développement logiciel (SDK) Visual Studio vous aide à étendre les 
 ## <a name="other-visual-studio-sdk-resources"></a>Autres ressources du kit de développement logiciel (SDK) Visual Studio
  Si vous avez des questions sur le VSSDK ou que vous souhaitez partager vos expériences en développant des extensions, vous pouvez utiliser le [Forum extensibilité de Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx) ou le [Gitter de Gitter ExtendVS](https://gitter.im/Microsoft/extendvs).
 
- Vous trouverez plus d’informations sur le [blog de Arcana VSX](https://blogs.msdn.microsoft.com/vsx/) et sur un certain nombre de blogs écrits par des MVP Microsoft:
+ Vous trouverez plus d’informations sur le [blog de Arcana VSX](https://blogs.msdn.microsoft.com/vsx/) et sur un certain nombre de blogs écrits par des MVP Microsoft :
 
-- [Extensions Visual Studio favorites](http://geekswithblogs.net/sdorman/archive/2014/10/05/favorite-visual-studio-extensions.aspx)
+- [Extensions Visual Studio favorites](https://scottdorman.blog/2014/10/05/favorite-visual-studio-extensions/)
 
 - [Extensibilité de Visual Studio](http://www.visualstudioextensibility.com/overview/vs/)
 
-- [Extension de Visual Studio](http://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)
+- [Extension de Visual Studio](https://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)
 
 ## <a name="see-also"></a>Voir aussi
+
 - [Créer une extension avec une commande de menu](../extensibility/creating-an-extension-with-a-menu-command.md)
-- [Guide pratique : Migrer des projets d’extensibilité vers Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)
-- [Questions fréquentes (FAQ) : Conversion des compléments en extensions VSPackage](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)
+- [Comment : migrer des projets d’extensibilité vers Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)
+- [FAQ : conversion des compléments en extensions VSPackage](/visualstudio/extensibility/faq-converting-add-ins-to-vspackage-extensions?view=vs-2015)
 - [Gérer plusieurs threads dans du code managé](../extensibility/managing-multiple-threads-in-managed-code.md)
 - [Étendre des menus et des commandes](../extensibility/extending-menus-and-commands.md)
 - [Ajouter des commandes à des barres d’outils](../extensibility/adding-commands-to-toolbars.md)
@@ -93,5 +94,4 @@ Le kit de développement logiciel (SDK) Visual Studio vous aide à étendre les 
 - [Envoyer des extensions Visual Studio](../extensibility/shipping-visual-studio-extensions.md)
 - [Dans le Kit de développement logiciel (SDK) Visual Studio](../extensibility/internals/inside-the-visual-studio-sdk.md)
 - [Prise en charge du Kit de développement logiciel Visual Studio (SDK)](../extensibility/support-for-the-visual-studio-sdk.md)
-- [Archive](../extensibility/archive.md)
 - [Référence du kit de développement logiciel Visual Studio](../extensibility/visual-studio-sdk-reference.md)

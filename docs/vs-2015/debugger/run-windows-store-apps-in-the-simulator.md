@@ -1,5 +1,5 @@
 ---
-title: Applications d’exécution Windows Store dans le simulateur | Microsoft Docs
+title: Exécuter des applications du Windows Store dans le simulateur | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,12 +14,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 77de4fea82e05f539c89a75178d93f985e5a0fb3
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 96224b522b17ff9da520386d56d4fae7a04bd981
+ms.sourcegitcommit: bdccab4c2dbd50ea8adaaf88c69c9ca32db88099
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823844"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73144772"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>Exécuter des applications du Windows Store dans le simulateur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,23 +38,23 @@ Le simulateur Visual Studio pour les applications Windows Store est une applicat
 ## <a name="BKMK_Set_the_simulator_as_the_target"></a> Définir un simulateur comme cible  
  Pour exécuter votre application Windows Store dans le simulateur, sélectionnez **Simulateur** dans la liste déroulante située en regard du bouton **Démarrer le débogage** de la barre d'outils **Standard** du débogueur.  
   
- ![En cours d’exécution dans le simulateur](../debugger/media/vsrun-f5-simulator.png "VSRUN_F5_Simulator")  
+ ![Exécution dans le simulateur](../debugger/media/vsrun-f5-simulator.png "VSRUN_F5_Simulator")  
   
 ## <a name="BKMK_Choose_an_interaction_mode"></a> Choisir un mode d'interaction  
  Vous avez le choix entre les modes d’interaction suivants  
   
-- ![Bouton de mode de la souris](../debugger/media/simulator-mousemodebtn.png "SIMULATOR_MouseModeBtn") mode de la souris : définit le mode d’interaction des mouvements de souris. Les mouvements de souris incluent les clics, les double-clics et le déplacement d'objets par glissement.  
+- ![Bouton de mode de la souris](../debugger/media/simulator-mousemodebtn.png "SIMULATOR_MouseModeBtn") Mode de la souris : définit le mode d’interaction sur les mouvements de la souris. Les mouvements de souris incluent les clics, les double-clics et le déplacement d'objets par glissement.  
   
-- ![Bouton Démarrer de l’émulation tactile](../debugger/media/simulator-starttouchemulationbtn.png "SIMULATOR_StartTouchEmulationBtn") démarrer l’émulation tactile : définit le mode d’interaction d’un seul doigt, les gestes tactiles. Les événements à un seul doigt incluent la pression simple, le déplacement et le glissement.  
+- ![Bouton Démarrer l’émulation tactile](../debugger/media/simulator-starttouchemulationbtn.png "SIMULATOR_StartTouchEmulationBtn") Démarrer l’émulation tactile : définit le mode d’interaction sur les gestes tactiles d’un seul doigt. Les événements à un seul doigt incluent la pression simple, le déplacement et le glissement.  
   
-     ![Cible un doigt du simulateur](../debugger/media/simulator-onefinger.png "SIMULATOR_OneFinger") l’icône de cible unique indique l’emplacement des événements dans le simulateur. Utilisez la souris pour positionner le pointeur.  
+     ![Cible à un doigt du simulateur](../debugger/media/simulator-onefinger.png "SIMULATOR_OneFinger") L’icône de cible unique indique l’emplacement des événements dans le simulateur. Utilisez la souris pour positionner le pointeur.  
   
-     ![Cible tactile à un doigt](../debugger/media/simulator-onefingerengaged.png "SIMULATOR_OneFingerEngaged") appuyez sur le bouton gauche de la souris pour activer le mode tactile. Par exemple, cliquez sur le bouton pour simuler une pression simple, ou appuyez sur la touche et maintenez-la enfoncée pendant un déplacement ou un glissement.  
+     ![Une cible doigt Touch](../debugger/media/simulator-onefingerengaged.png "SIMULATOR_OneFingerEngaged") Appuyez sur le bouton gauche de la souris pour activer le mode tactile. Par exemple, cliquez sur le bouton pour simuler une pression simple, ou appuyez sur la touche et maintenez-la enfoncée pendant un déplacement ou un glissement.  
   
 ## <a name="pinch-and-zoom"></a>Pincement de deux doigts pour zoomer  
  Définit le mode d'interaction pour utiliser le pincement de deux doigts pour zoomer.  
   
-- ![Cible du doigt simulateur deux](../debugger/media/simulator-twofinger.png "SIMULATOR_TwoFinger")  
+- ![Cible deux doigts du simulateur](../debugger/media/simulator-twofinger.png "SIMULATOR_TwoFinger")  
 
   - L'icône double cible indique l'emplacement des deux doigts sur l'écran du périphérique.  
 
@@ -86,7 +86,7 @@ Le simulateur Visual Studio pour les applications Windows Store est une applicat
  Vous pouvez changer l'orientation du périphérique entre le mode Portrait et Paysage en appliquant au simulateur une rotation de 90 degrés dans n'importe quelle direction.  
   
 > [!NOTE]
-> Le simulateur ne respecte pas la propriété [DisplayProperties.AutoRotationPreferences](http://go.microsoft.com/fwlink/?LinkId=249460) d’un projet. Par exemple, si votre projet définit l'orientation sur `Landscape`, et que vous appliquez au simulateur une rotation vers une orientation Portrait, l'image d'affichage du simulateur sera également pivotée et redimensionnée. Testez ces paramètres sur un périphérique réel.  
+> Le simulateur ne respecte pas la propriété [DisplayProperties.AutoRotationPreferences](https://go.microsoft.com/fwlink/?LinkId=249460) d’un projet. Par exemple, si votre projet définit l'orientation sur `Landscape`, et que vous appliquez au simulateur une rotation vers une orientation Portrait, l'image d'affichage du simulateur sera également pivotée et redimensionnée. Testez ces paramètres sur un périphérique réel.  
   
 > [!NOTE]
 > Si vous faites pivoter un simulateur et qu'un bord du simulateur est plus grand que l'écran sur lequel il s'affiche, le simulateur est automatiquement redimensionné à la taille de l'écran. Le simulateur n'est pas redimensionné dans sa taille d'origine si vous lui appliquez une nouvelle rotation.  
@@ -112,7 +112,7 @@ Le simulateur Visual Studio pour les applications Windows Store est une applicat
      ![Menu contextuel des paramètres de capture d’écran](../debugger/media/simulator-screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")  
   
 ## <a name="BKMK_Simulate_network_connection_properties"></a> Simuler des propriétés de connexion réseau  
- Vous pouvez aider les utilisateurs de votre application à gérer le coût des connexions réseau limitées en faisant bien comprendre le coût des connexions réseau ou les modifications de l'état du forfait données et en permettant à votre application d'utiliser ces informations pour éviter de subir des frais d'itinérance supplémentaires ou de dépasser la limite de transfert de données spécifiée. Les API [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) vous permettent de répondre aux événements [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) et [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) qui assurent la connexion. Consultez [Démarrage rapide : Gestion des contraintes de coût réseau limitées](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
+ Vous pouvez aider les utilisateurs de votre application à gérer le coût des connexions réseau limitées en faisant bien comprendre le coût des connexions réseau ou les modifications de l'état du forfait données et en permettant à votre application d'utiliser ces informations pour éviter de subir des frais d'itinérance supplémentaires ou de dépasser la limite de transfert de données spécifiée. Les API [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) vous permettent de répondre aux événements [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) et [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) qui assurent la connexion. Consultez [Comment gérer les contraintes liées au coût des connexions réseau limitées (HTML)](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
   
  Pour déboguer ou tester votre code réseau sensible au coût, le simulateur peut simuler les propriétés d’un réseau qui sont exposées par l’objet [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) retourné par [GetInternetConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.getinternetconnectionprofile.aspx).  
   
@@ -136,12 +136,12 @@ Le simulateur Visual Studio pour les applications Windows Store est une applicat
   
    **Pour plus d'informations sur la gestion des connexions réseau**  
   
-   [Démarrage rapide : La gestion des contraintes de coût réseau limitées](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
+   [Comment gérer les contraintes liées au coût des connexions réseau limitées (HTML)](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
   
-   [Exemple d’informations réseau](http://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
+   [Exemple d’informations réseau](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
   
    [Analyser l’utilisation de l’énergie](../profiling/analyze-energy-use-in-store-apps.md)  
-  
+    
    [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx)  
   
    [Comment répondre aux événements système avec des tâches en arrière-plan](https://msdn.microsoft.com/f7c86e86-a7ae-4abb-a923-76b03337a80a)  

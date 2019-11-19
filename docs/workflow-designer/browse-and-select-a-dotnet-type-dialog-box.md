@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: dfdbe972034920869908c1bac1cb349c98d96d3f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5eac3c2a45f1e220415f7512e601f4bf034c4dd7
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650724"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189800"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Rechercher et sélectionner un type .NET, boîte de dialogue
 
@@ -31,7 +31,7 @@ Elle est employée dans plusieurs scénarios utilisateur, notamment les suivants
 - lors de l'ajout d'un catch sur l'activité <xref:System.Activities.Statements.TryCatch>.
 
 > [!NOTE]
-> L'explorateur de types peut afficher des types de tableau en escalier Visual Basic, mais pas des types de tableau multidimensionnel. Pour plus d’informations, consultez [tableaux en escalier](http://go.microsoft.com/fwlink/?LinkId=195226) et [tableaux multidimensionnels](http://go.microsoft.com/fwlink/?LinkId=195227) .
+> L'explorateur de types peut afficher des types de tableau en escalier Visual Basic, mais pas des types de tableau multidimensionnel. Pour plus d’informations, consultez [tableaux en escalier](/previous-versions/visualstudio/visual-studio-2008/hkhhsz9t(v=vs.90)) et [tableaux multidimensionnels](/previous-versions/visualstudio/visual-studio-2008/d2de1t93(v=vs.90)) .
 
 ## <a name="selecting-a-value-or-reference-type-from-the-type-browser"></a>Sélection d'un type valeur ou référence dans l'Explorateur de types
 
@@ -75,4 +75,4 @@ Lorsque vous sélectionnez un type de contrat de service, l'Explorateur de types
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Utilisation des concepteurs d’activités](../workflow-designer/using-the-activity-designers.md)
+- [Utilisation des concepteurs d’activités](control-flow-activity-designers.md)

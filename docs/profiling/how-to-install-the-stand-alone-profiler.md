@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Installer le profileur autonome | Microsoft Docs'
+title: Guide pratique pour installer le profileur autonome | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ac7a0ace5c4d6e31516d372baabec9883603300
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: eacf41d20164e4526e4f7bf5c2493dde0a00a2b3
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426842"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189368"
 ---
-# <a name="how-to-install-the-stand-alone-profiler"></a>Procédure : Installer le profileur autonome
+# <a name="how-to-install-the-stand-alone-profiler"></a>Guide pratique pour installer le profileur autonome
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] fournit un profileur autonome basé sur la ligne de commande qui peut être exécuté sans installer l’IDE [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Cette situation se produit quand un environnement de développement n’est pas ou ne peut pas être installé sur un ordinateur. Par exemple, vous ne devez pas installer un environnement de développement sur un serveur web de production.
 
 > [!NOTE]
@@ -33,7 +33,7 @@ ms.locfileid: "63426842"
 2. Ajoutez les chemins pour *vsintr.exe* et *msdis150.dll* au chemin du système.
 
    > [!NOTE]
-   > Pour obtenir le chemin des outils de profilage, consultez [Spécifier le chemin des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes, ou l’ajouter à la commande.
+   > Pour obtenir le chemin d’accès des outils de profilage, voir [Spécifier le chemin d’accès des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes, ou l’ajouter à la commande.
 
 3. À l’invite de commandes, entrez **VSInstr**.
 
@@ -47,13 +47,13 @@ ms.locfileid: "63426842"
     **start %COMSPEC%**
 
    > [!NOTE]
-   > Pour obtenir des instructions détaillées sur la façon de configurer le package du serveur de symboles, consultez [Guide pratique référencer les informations de symboles Windows](../profiling/how-to-reference-windows-symbol-information.md).
+   > Pour obtenir des instructions détaillées sur la façon de configurer le package du serveur de symboles, consultez [Guide pratique pour référencer les informations de symboles Windows](../profiling/how-to-reference-windows-symbol-information.md).
 
 6. Utilisez l’outil [VSPerfReport](../profiling/vsperfreport.md) pour sérialiser vos symboles dans le fichier de profilage de données (.vsp). Utilisez les commutateurs **VSPerfReport /summary:all /packsymbols**. Si aucun symbole n’est inséré dans votre fichier de données, vérifiez que la variable d’environnement _NT_SYMBOL_PATH est définie.
 
 ## <a name="see-also"></a>Voir aussi
 - [Profiler à partir de la ligne de commande](../profiling/using-the-profiling-tools-from-the-command-line.md)
-- [Procédure pas à pas : Profilage en ligne de commande avec l’échantillonnage](../profiling/walkthrough-command-line-profiling-using-sampling.md)
-- [Procédure pas à pas : Profilage de la ligne de commande à l’aide de l’instrumentation](/visualstudio/profiling/command-line-profiling-of-stand-alone-applications)
+- [Procédure pas à pas : profilage de ligne de commande à l’aide de l’échantillonnage](../profiling/walkthrough-command-line-profiling-using-sampling.md)
+- [Procédure pas à pas : profilage à partir de la ligne de commande en utilisant l’instrumentation](command-line-profiling-of-stand-alone-applications.md)
 - [Guide pratique pour référencer les informations de symboles Windows](../profiling/how-to-reference-windows-symbol-information.md)
 - [VSPerfReport](../profiling/vsperfreport.md)

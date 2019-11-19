@@ -7,12 +7,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b038acd9527cae197223e288349e431e81ea6dd6
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 292ba29e1902053b04f70052989e4eb0efff5b19
+ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748410"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73983675"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>Informations de référence sur le langage DGML (Directed Graph Markup Language)
 
@@ -21,7 +21,7 @@ Le langage DGML (Directed Graph Markup Language) décrit les informations utilis
 Notez que certaines versions de Visual Studio ne prennent en charge qu’un sous-ensemble de fonctionnalités DGML, consultez [prise en charge des versions pour les outils d’architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 > [!NOTE]
-> Lorsque vous modifiez un fichier .dgml, IntelliSense vous aide à identifier les attributs qui sont disponibles pour chaque élément, ainsi que leurs valeurs. Pour spécifier la couleur dans un attribut, utilisez le nom des couleurs courantes (« Bleu », par exemple) ou des valeurs hexadécimales ARVB (« #ffa0b1c3 », par exemple). Le langage DGML utilise un sous-ensemble réduit de formats de définition de couleur WPF (Windows Presentation Foundation). Pour plus d’informations, consultez [Color, classe](http://go.microsoft.com/fwlink/?LinkId=182345).
+> Lorsque vous modifiez un fichier .dgml, IntelliSense vous aide à identifier les attributs qui sont disponibles pour chaque élément, ainsi que leurs valeurs. Pour spécifier la couleur dans un attribut, utilisez le nom des couleurs courantes (« Bleu », par exemple) ou des valeurs hexadécimales ARVB (« #ffa0b1c3 », par exemple). Le langage DGML utilise un sous-ensemble réduit de formats de définition de couleur WPF (Windows Presentation Foundation). Pour plus d’informations, consultez [Color, classe](/dotnet/api/system.windows.media.colors?view=netframework-4.8).
 
 ## <a name="DGML"></a>Syntaxe DGML
 

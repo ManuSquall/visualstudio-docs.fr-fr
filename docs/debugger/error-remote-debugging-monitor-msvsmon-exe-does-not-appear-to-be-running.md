@@ -16,18 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b908e4fe9ed0087abaf5f1390bb8faf5cc12bdaa
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 9a2c35befa92e72e08fe2e058afe10d19ac116e0
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72737561"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188137"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a>Erreur : Microsoft Visual Studio Remote Debugging Monitor (MSVSMON.EXE) ne semble pas s’exécuter sur l’ordinateur distant
 Ce message d’erreur indique que Visual Studio n’a pas pu trouver l’instance appropriée de Visual Studio Remote Debugging Monitor sur l’ordinateur distant. Visual Studio Remote Debugging Monitor doit être installé pour que le débogage distant fonctionne. Pour plus d’informations sur le téléchargement et la configuration du débogueur distant, consultez [débogage distant](../debugger/remote-debugging.md).
 
 > [!IMPORTANT]
-> Si vous pensez que vous avez reçu ce message en raison d’un bogue produit, veuillez [signaler ce problème à Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md). Si vous avez besoin d’aide supplémentaire, consultez [Talk to Us](../ide/talk-to-us.md) pour savoir comment contacter Microsoft.
+> Si vous pensez que vous avez reçu ce message en raison d’un bogue produit, veuillez [signaler ce problème à Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md). Si vous avez besoin d’aide supplémentaire, consultez [Talk to Us](../ide/feedback-options.md) pour savoir comment contacter Microsoft.
 
 ## <a name="i-got-this-message-while-i-was-debugging-in-visual-studio-2010-or-earlier"></a>J’ai reçu ce message pendant une session de débogage dans Visual Studio 2010 ou version antérieure
  Si vous utilisez Visual Studio 2010 ou version antérieure, vous pouvez également recevoir cette erreur si le partage de fichiers et d’imprimantes n’est pas activé. Pour en savoir plus sur ce problème, reportez-vous à la version de Visual Studio 2010 de cette documentation : [Erreur : Microsoft Visual Studio Remote Debugging Monitor (MSVSMON.EXE) ne semble pas s’exécuter sur l’ordinateur distant - Visual Studio 2010](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms164726(v=vs.100)).
@@ -41,7 +41,7 @@ Ce message d’erreur indique que Visual Studio n’a pas pu trouver l’instanc
  Essayez d’exécuter une commande [ping](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee624059(v=ws.10)) sur l’ordinateur distant. S’il ne répond pas à la commande ping, les outils à distance ne pourront pas non plus se connecter. Essayez de redémarrer l’ordinateur distant et vérifiez qu’il est correctement configuré sur le réseau.
 
 ## <a name="the-version-of-the-remote-debugger-doesnt-match-the-version-of-visual-studio"></a>La version du débogueur distant ne correspond pas à la version de Visual Studio
- La version de Visual Studio que vous exécutez localement doit correspondre à la version de Remote Debugging Monitor qui s’exécute sur l’ordinateur distant. Pour résoudre ce problème, téléchargez et installez la version correspondante de Remote Debugging Monitor. Accédez au [Centre de téléchargement](http://www.microsoft.com/en-us/download) pour rechercher la version appropriée du débogueur distant.
+ La version de Visual Studio que vous exécutez localement doit correspondre à la version de Remote Debugging Monitor qui s’exécute sur l’ordinateur distant. Pour résoudre ce problème, téléchargez et installez la version correspondante de Remote Debugging Monitor. Accédez au [Centre de téléchargement](https://www.microsoft.com/download) pour rechercher la version appropriée du débogueur distant.
 
 ## <a name="the-local-and-remote-machines-have-different-authentication-modes"></a>Les ordinateurs locaux et distants utilisent des modes d’authentification différents
  Les ordinateurs locaux et distants doivent utiliser le même mode d’authentification. Pour résoudre ce problème, assurez-vous que les deux ordinateurs utilisent le même mode d’authentification. Pour plus d’informations sur les modes d’authentification, consultez [Vue d’ensemble de l’authentification Windows](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831472(v=ws.11)).

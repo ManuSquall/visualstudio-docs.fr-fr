@@ -9,12 +9,12 @@ manager: jillfra
 ms.technology: vs-ide-debug
 ms.workload:
 - uwp
-ms.openlocfilehash: c9a89155b81b88f46f4849ce8d739772fd6760fe
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 5d6f0e54c37c394fce464b07440daa99b4dd7d5e
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72451184"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188897"
 ---
 # <a name="debug-xaml-in-blend"></a>Déboguer XAML dans Blend
 
@@ -37,7 +37,7 @@ Certaines causes courantes d’erreurs de syntaxe XAML se présentent comme sui
 
 - Il existe un élément XAML à un emplacement non autorisé.
 
-Pour plus d’informations sur la syntaxe XAML de base, consultez la page [Guide de base de la syntaxe XAML](http://go.microsoft.com/fwlink/?LinkId=329942).
+Pour plus d’informations sur la syntaxe XAML de base, consultez la page [Guide de base de la syntaxe XAML](/windows/uwp/xaml-platform/xaml-syntax-guide).
 
 Vous pouvez également identifier et résoudre les erreurs de syntaxe code-behind simples, les erreurs de compilation et les erreurs d’exécution dans Blend. Toutefois, il peut être plus facile d'identifier et de résoudre les erreurs code-behind dans Visual Studio.
 
@@ -119,8 +119,8 @@ Quand des erreurs XAML sont détectées, l'aire de conception affiche une alert
 
 Vous pouvez ouvrir Blend Projects dans Visual Studio pour déboguer plus facilement le code dans votre application. Pour ouvrir un projet Blend dans Visual Studio, cliquez avec le bouton droit sur le projet dans le panneau **projets** , puis cliquez sur **modifier dans Visual Studio**. Une fois que vous avez terminé votre session de débogage dans Visual Studio, appuyez sur Ctrl + Maj + S pour enregistrer toutes vos modifications, puis revenez à Blend. Vous êtes alors invité à recharger le projet. Cliquez sur **Oui pour tout** pour continuer à travailler dans Blend.
 
-Pour plus d’informations sur le débogage de votre application, consultez [Déboguer des applications UWP dans Visual Studio](http://go.microsoft.com/fwlink/?LinkId=329944).
+Pour plus d’informations sur le débogage de votre application, consultez [Déboguer des applications UWP dans Visual Studio](../debugger/debugging-windows-store-and-windows-universal-apps.md).
 
 ## <a name="get-help"></a>Obtenir de l’aide
 
-Si vous avez besoin d’aide supplémentaire sur le débogage de votre application Blend, vous pouvez rechercher des publications relatives à votre problème sur les forums de la [communauté d’applications UWP](http://go.microsoft.com/fwlink/?LinkId=280308) ou publier une question.
+Si vous avez besoin d’aide supplémentaire sur le débogage de votre application Blend, vous pouvez rechercher des publications relatives à votre problème sur les forums de la [communauté d’applications UWP](https://social.msdn.microsoft.com/Forums/windowsapps/home?category=windowsapps) ou publier une question.

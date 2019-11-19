@@ -10,18 +10,18 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b111d3b0fe2f4af9098186aff3ef661045215473
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: eb3e3ca5d18429c60894c42bda12328836dc6fc8
+ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62959138"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73024722"
 ---
 # <a name="edit-python-code"></a>Modifier le code Python
 
 Comme vous passez beaucoup de votre temps de développement dans l’éditeur de code, la [prise en charge de Python dans Visual Studio](installing-python-support-in-visual-studio.md) fournit plusieurs fonctionnalités pour améliorer la productivité. Ces fonctionnalités comprennent la mise en surbrillance de la syntaxe IntelliSense, la saisie semi-automatique, l’aide de signature, les substitutions de méthode, la recherche et la navigation.
 
-L’éditeur est également intégré à la **fenêtre interactive** dans Visual Studio, ce qui facilite l’échange de code entre les deux. Consultez [Tutotiel - Étape 3 : Utiliser la fenêtre REPL interactive](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) et [Utiliser la fenêtre interactive - Commande Envoyer vers Interactive](python-interactive-repl-in-visual-studio.md#send-to-interactive-command) pour plus d’informations.
+L’éditeur est également intégré à la **fenêtre interactive** dans Visual Studio, ce qui facilite l’échange de code entre les deux. Pour plus d’informations, consultez [Étape 3 du tutoriel : Utiliser la fenêtre REPL interactive](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) et [Utiliser la fenêtre interactive - Commande Envoyer vers Interactive](python-interactive-repl-in-visual-studio.md#send-to-interactive-command).
 
 Pour vous documenter sur la modification de code dans Visual Studio, consultez [Fonctionnalités de l’éditeur de code](../ide/writing-code-in-the-code-and-text-editor.md). Consultez également [Mode Plan](../ide/outlining.md), qui vous permet de rester concentré sur certaines sections de votre code.
 
@@ -31,7 +31,7 @@ Vous pouvez également utiliser **l’Explorateur d’objets** de Visual Studio 
 
 IntelliSense fournit [les saisies semi-automatiques](#completions), [l’assistance pour la signature](#signature-help), [Info express](#quick-info) et [la coloration du code](#code-coloring). Visual Studio 2017 version 15.7 et les versions ultérieures prennent également en charge les [affinages de type](#type-hints).
 
-Pour améliorer les performances, IntelliSense dans Visual Studio 2017 version 15.5 et antérieure dépend d’une base de données de complétion qui est générée pour chaque environnement Python dans votre projet. Il est possible que les bases de données doivent être actualisées si vous ajoutez, supprimez ou mettez à jour des packages. Leur état s’affiche sous l’onglet **IntelliSense** de la fenêtre **Environnements Python** (de la même famille que **l’Explorateur de solutions**) (consultez [Référence sur la fenêtre Environnements](python-environments-window-tab-reference.md#intellisense-tab)).
+Pour améliorer les performances, IntelliSense dans Visual Studio 2017 version 15.5 et antérieure dépend d’une base de données de complétion qui est générée pour chaque environnement Python dans votre projet. Il est possible que les bases de données doivent être actualisées si vous ajoutez, supprimez ou mettez à jour des packages. Leur état s’affiche sous l’onglet **IntelliSense** de la fenêtre **Environnements Python** (de la même famille que **l’Explorateur de solutions**) (consultez [Référence sur la fenêtre Environnements](python-environments-window-tab-reference.md)).
 
 Visual Studio 2017 version 15.6 et ultérieure utilise un autre moyen pour fournir des complétions IntelliSense qui ne dépendent pas de la base de données.
 
@@ -111,13 +111,13 @@ L’utilisation de la commande **Exécuter Mypy** sur ce code génère l’erreu
 
 ::: moniker range="vs-2017"
 > [!Tip]
-> Pour les versions de Python antérieures à la version 3.5, Visual Studio affiche également les affinages de type que vous fournissez par le biais de *fichiers stub* Typeshed (*.pyi*). Vous pouvez utiliser des fichiers stub chaque fois que vous ne souhaitez pas inclure d’indicateurs de type directement dans votre code, ou que vous souhaitez créer des affinages de type pour une bibliothèque qui ne les utilise pas directement. Pour plus d’informations, consultez [Create Stubs for Python Modules](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) (Créer des stubs pour des modules Python) dans le wiki du projet mypy.
+> Pour les versions de Python antérieures à la version 3.5, Visual Studio affiche également les affinages de type que vous fournissez par le biais de *fichiers stub* Typeshed ( *.pyi*). Vous pouvez utiliser des fichiers stub chaque fois que vous ne souhaitez pas inclure d’indicateurs de type directement dans votre code, ou que vous souhaitez créer des affinages de type pour une bibliothèque qui ne les utilise pas directement. Pour plus d’informations, consultez [Create Stubs for Python Modules](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) (Créer des stubs pour des modules Python) dans le wiki du projet mypy.
 >
 > Visual Studio ne prend pas en charge les affinages de type dans les commentaires.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 > [!Tip]
-> Pour les versions de Python antérieures à la version 3.5, Visual Studio affiche également les affinages de type que vous fournissez par le biais de *fichiers stub* Typeshed (*.pyi*). Vous pouvez utiliser des fichiers stub chaque fois que vous ne souhaitez pas inclure d’indicateurs de type directement dans votre code, ou que vous souhaitez créer des affinages de type pour une bibliothèque qui ne les utilise pas directement. Pour plus d’informations, consultez [Create Stubs for Python Modules](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) (Créer des stubs pour des modules Python) dans le wiki du projet mypy.
+> Pour les versions de Python antérieures à la version 3.5, Visual Studio affiche également les affinages de type que vous fournissez par le biais de *fichiers stub* Typeshed ( *.pyi*). Vous pouvez utiliser des fichiers stub chaque fois que vous ne souhaitez pas inclure d’indicateurs de type directement dans votre code, ou que vous souhaitez créer des affinages de type pour une bibliothèque qui ne les utilise pas directement. Pour plus d’informations, consultez [Create Stubs for Python Modules](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) (Créer des stubs pour des modules Python) dans le wiki du projet mypy.
 >
 > Visual Studio inclut un ensemble de groupes de fichiers Typeshed pour Python 2 et 3, des téléchargements supplémentaires ne sont donc pas nécessaires. Toutefois, si vous souhaitez utiliser un autre ensemble de fichiers, vous pouvez spécifier le chemin d’accès dans les options **Outils** > **Options** > **Python**  >  **Serveur de langage**. Consultez [Options - Serveur de langage](python-support-options-and-settings-in-visual-studio.md#language-server-options).
 >
@@ -188,7 +188,7 @@ Vous pouvez voir les extraits de code disponibles dans le **Gestionnaire des ext
 
 ![Gestionnaire des extraits de code dans Visual Studio](media/code-editing-code-snippets-manager.png)
 
-Pour créer vos propres extraits de code, consultez [Procédure pas à pas : Créer un extrait de code](../ide/walkthrough-creating-a-code-snippet.md).
+Pour créer vos propres extraits de code, consultez [Procédure pas à pas : créer un extrait de code](../ide/walkthrough-creating-a-code-snippet.md).
 
 Si vous écrivez un extrait de code de qualité et que vous souhaitez le partager, n’hésitez pas à le publier dans un contenu Gist et [informez-nous](https://github.com/Microsoft/PTVS/issues). Nous pourrons peut-être l’ajouter dans une prochaine version de Visual Studio.
 
@@ -213,7 +213,7 @@ La barre de navigation s’affiche en haut de chaque fenêtre de l’éditeur et
 
 ### <a name="navigate-to"></a>Boîte de dialogue Naviguer vers
 
-La commande **Modifier** > **Naviguer vers** (**Ctrl**+**,**) affiche une zone de recherche dans l’éditeur dans laquelle vous pouvez taper n’importe quelle chaîne et voir les correspondances possibles dans votre code qui définit une fonction, une classe ou une variable contenant cette chaîne. Cette fonctionnalité permet de bénéficier d’une fonction similaire à **Atteindre la définition**, mais sans avoir à localiser une utilisation d’un identificateur.
+La commande **Modifier** > **Naviguer vers** (**Ctrl**+ **,** ) affiche une zone de recherche dans l’éditeur dans laquelle vous pouvez taper n’importe quelle chaîne et voir les correspondances possibles dans votre code qui définit une fonction, une classe ou une variable contenant cette chaîne. Cette fonctionnalité permet de bénéficier d’une fonction similaire à **Atteindre la définition**, mais sans avoir à localiser une utilisation d’un identificateur.
 
 Vous pouvez accéder à la définition de cet identificateur en double-cliquant sur n’importe quel nom ou en effectuant une sélection avec les touches de direction et en appuyant sur **Entrée**.
 

@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
-ms.openlocfilehash: 9e4699a1d4e2826cad205ce89ab46812cd5c4b2d
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
-ms.translationtype: HT
+ms.openlocfilehash: 154f779ee8b622c9ee66a753a23e9627f9d443c0
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692798"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73715169"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>Inclure un package NuGet dans votre projet
 
@@ -39,7 +39,7 @@ Ceci déclenche l’affichage de la fenêtre **Ajouter des packages**. Vérifiez
 
 ![Liste déroulante Source](media/nuget-walkthrough-Source.png)
 
-Quand la fenêtre s’ouvre, elle charge une liste de packages à partir de la source de packages par défaut : nuget.org. Les résultats initiaux sont similaires à ceci :
+Quand la fenêtre s’ouvre, elle charge une liste de packages à partir de la source de package par défaut : nuget.org. Les résultats initiaux ressemblent à ceci :
 
 ![Répertorier les packages NuGet](media/nuget-walkthrough-AddPackages1.png)
 
@@ -51,7 +51,7 @@ Une fois le package téléchargé, il est ajouté à votre projet. La solution e
 
 * Le nœud **Références** contient une liste de tous les assemblys qui font partie d’un package NuGet.
 * Le nœud **Packages** montre chaque package NuGet que vous avez téléchargé. Vous pouvez mettre à jour ou supprimer un package dans cette liste.
-* Un fichier **packages.config** sera ajouté au projet. Ce fichier XML est utilisé par l’IDE pour effectuer le suivi des versions du package qui sont référencées dans ce projet. Ce fichier ne doit pas être modifié manuellement, mais vous devez le conserver dans la gestion de versions. Notez qu’un fichier project.json peut être utilisé à la place d’un fichier packages.config. Le fichier project.json est un nouveau format de fichier de package introduit avec NuGet 3, qui prend en charge la restauration transitive. Pour plus d’informations sur project.json, consultez la [documentation de NuGet](https://docs.microsoft.com/NuGet/Schema/Project-Json). Le fichier project.json doit être ajouté manuellement, et le projet doit être fermé puis rouvert avant que ce fichier soit utilisé dans Visual Studio pour Mac.
+* Un fichier **packages.config** sera ajouté au projet. Ce fichier XML est utilisé par l’IDE pour effectuer le suivi des versions du package qui sont référencées dans ce projet. Ce fichier ne doit pas être modifié manuellement, mais vous devez le conserver dans la gestion de versions. Notez qu’un fichier project.json peut être utilisé à la place d’un fichier packages.config. Le fichier project.json est un nouveau format de fichier de package introduit avec NuGet 3, qui prend en charge la restauration transitive. Pour plus d’informations sur project.json, consultez la [documentation de NuGet](/NuGet/Schema/Project-Json). Le fichier project.json doit être ajouté manuellement, et le projet doit être fermé puis rouvert avant que ce fichier soit utilisé dans Visual Studio pour Mac.
 
 ## <a name="using-nuget-packages"></a>Utilisation de packages NuGet
 
@@ -93,7 +93,7 @@ Vous pouvez aussi cliquer avec le bouton droit sur des packages individuels pour
 
 ## <a name="adding-package-sources"></a>Ajout de sources de packages
 
-Les packages disponibles pour l’installation sont initialement extraits de nuget.org. Cependant, vous pouvez ajouter d’autres emplacements de packages à Visual Studio pour Mac. Ceci peut être pratique pour tester vos propres packages NuGet en cours de développement, ou pour utiliser un serveur NuGet privé au sein de votre entreprise ou organisation.
+Les packages disponibles pour l’installation sont initialement récupérés à partir de nuget.org. Toutefois, vous pouvez ajouter d’autres emplacements de package à Visual Studio pour Mac. Ceci peut être pratique pour tester vos propres packages NuGet en cours de développement, ou pour utiliser un serveur NuGet privé au sein de votre entreprise ou organisation.
 
 Dans Visual Studio pour Mac, accédez à **Visual Studio > Préférences > NuGet > Sources** pour voir et modifier la liste des sources de packages. Notez que les sources peuvent être un serveur distant (spécifié par une URL) ou un répertoire local.
 

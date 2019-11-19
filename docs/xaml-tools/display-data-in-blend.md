@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ff84ae0f3960f54cb97bbaf9a53d432228fcefc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6ed267391565012a65f14ce675131df79e39adc6
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650934"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919219"
 ---
 # <a name="display-data-in-blend-for-visual-studio"></a>Afficher des données dans Blend pour Visual Studio
 
@@ -32,7 +32,7 @@ Si vous souhaitez que vos exemples de données apparaissent dans vos pages au mo
 
 ![Élément de menu Activer lorsque l’application est exécutée](../designers/media/05d5356d-91bb-4e6b-b3f7-29b76852c4b3.png)
 
-**Regardez une courte vidéo :** ![Icône de lecture](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Créer des exemples de données à partir de zéro](http://www.bing.com/videos/search?q=blend%20data&qs=n&form=QBVR&pq=blend%20data&sc=8-7&sp=-1&sk=#view=detail&mid=F8F2449A76956D480FD2F8F2449A76956D480FD2).
+**Regardez une courte vidéo :** ![Icône de lecture](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Créer des exemples de données à partir de zéro](https://www.bing.com/videos/search?q=blend%20data&qs=n&form=QBVR&pq=blend%20data&sc=8-7&sp=-1&sk=#view=detail&mid=F8F2449A76956D480FD2F8F2449A76956D480FD2).
 
 ## <a name="generate-sample-data-from-a-class"></a>Générer des exemples de données à partir d'une classe
 

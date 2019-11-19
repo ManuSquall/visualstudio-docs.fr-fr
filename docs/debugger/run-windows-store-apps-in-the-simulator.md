@@ -13,18 +13,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 30952d191d6163e6ba82491342b5084e8e3f67b2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b7d68a23ffba12e9654ac047629bd64ecfae4bb6
+ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62930147"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73661902"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>Exécuter des applications UWP dans le simulateur
 
-Le simulateur Visual Studio pour les applications UWP est une application de bureau qui simule une application UWP. En règle générale, vous devez déboguer sur l’ordinateur local, un appareil connecté ou un ordinateur distant. Toutefois, dans certains scénarios, vous souhaiterez utiliser le simulateur Visual Studio pour émuler une taille de l’écran physique différent et la résolution. Vous pouvez également simuler rotation événements tactiles et courants et les propriétés de connexion réseau.
+Le simulateur Visual Studio pour les applications UWP est une application de bureau qui simule une application UWP. En règle générale, vous pouvez déboguer sur l’ordinateur local, sur un appareil connecté ou sur un ordinateur distant. Toutefois, dans certains scénarios, vous souhaiterez peut-être utiliser le simulateur Visual Studio pour émuler une taille et une résolution d’écran physiques différentes. Vous pouvez également simuler des événements tactiles et de rotation courants et simuler des propriétés de connexion réseau.
 
-Le simulateur fournit un environnement dans lequel vous pouvez concevoir, développer, déboguer et tester des applications UWP. Toutefois, avant de publier votre application dans Microsoft Store, vous devez tester votre application sur un appareil réel.
+Le simulateur fournit un environnement dans lequel vous pouvez concevoir, développer, déboguer et tester des applications UWP. Toutefois, avant de publier votre application sur Microsoft Store, vous devez tester votre application sur un appareil réel.
 
 Le simulateur Visual Studio pour les applications UWP ne s’exécute pas dans un environnement isolé sur votre ordinateur local. Par conséquent, les erreurs qui se produisent dans un simulateur, tel qu'une erreur irrécupérable à l'échelle du système, peuvent également affecter l'ordinateur entier.
 
@@ -33,23 +33,23 @@ Le simulateur Visual Studio pour les applications UWP ne s’exécute pas dans u
 
 ## <a name="BKMK_Set_the_simulator_as_the_target"></a> Définir un simulateur comme cible
 
-Pour exécuter votre application UWP dans le simulateur, sélectionnez **simulateur** à partir de la liste déroulante liste en regard du **démarrer le débogage** bouton sur le débogueur **Standard** barre d’outils. Cette option est disponible uniquement si votre application **minimale de la plateforme cible. Version** est inférieur ou égal au système d’exploitation sur votre ordinateur de développement.
+Pour exécuter votre application UWP dans le simulateur, sélectionnez **simulateur** dans la liste déroulante en regard du bouton **Démarrer le débogage** de la barre d’outils **standard** du débogueur. Cette option est disponible uniquement si la **version minimale de la plateforme cible** de votre application est inférieure ou égale au système d’exploitation de votre ordinateur de développement.
 
-![En cours d’exécution dans le simulateur](../debugger/media/vsrun_f5_simulator.png "VSRUN_F5_Simulator")
+![Exécution dans le simulateur](../debugger/media/vsrun_f5_simulator.png "VSRUN_F5_Simulator")
 
 ## <a name="BKMK_Choose_an_interaction_mode"></a> Choisir un mode d'interaction
 
-Vous pouvez choisir les modes d’interaction suivantes :
+Vous pouvez choisir les modes d’interaction suivants :
 
-- ![Bouton de mode de la souris](../debugger/media/simulator_mousemodebtn.png "SIMULATOR_MouseModeBtn") mode de la souris : définit le mode d’interaction des mouvements de souris. Les mouvements de souris incluent les clics, les double-clics et le déplacement d'objets par glissement.
+- ![Bouton de mode de la souris](../debugger/media/simulator_mousemodebtn.png "SIMULATOR_MouseModeBtn") Mode de la souris : définit le mode d’interaction sur les mouvements de la souris. Les mouvements de souris incluent les clics, les double-clics et le déplacement d'objets par glissement.
 
-- ![Bouton Démarrer de l’émulation tactile](../debugger/media/simulator_starttouchemulationbtn.png "SIMULATOR_StartTouchEmulationBtn") démarrer l’émulation tactile : définit le mode d’interaction d’un seul doigt, les gestes tactiles. Les événements à un seul doigt incluent la pression simple, le déplacement et le glissement.
+- ![Bouton Démarrer l’émulation tactile](../debugger/media/simulator_starttouchemulationbtn.png "SIMULATOR_StartTouchEmulationBtn") Démarrer l’émulation tactile : définit le mode d’interaction sur les gestes tactiles d’un seul doigt. Les événements à un seul doigt incluent la pression simple, le déplacement et le glissement.
 
-   ![Cible un doigt du simulateur](../debugger/media/simulator_onefinger.png "SIMULATOR_OneFinger")
+   ![Cible à un doigt du simulateur](../debugger/media/simulator_onefinger.png "SIMULATOR_OneFinger")
    
    L’icône de cible unique indique l’emplacement des événements dans le simulateur. Utilisez la souris pour positionner le pointeur.
 
-   ![Cible tactile à un doigt](../debugger/media/simulator_onefingerengaged.png "SIMULATOR_OneFingerEngaged")
+   ![Une cible doigt Touch](../debugger/media/simulator_onefingerengaged.png "SIMULATOR_OneFingerEngaged")
    
    Appuyez sur le bouton gauche de la souris pour activer le mode tactile. Par exemple, cliquez sur le bouton pour simuler une pression simple, ou appuyez sur la touche et maintenez-la enfoncée pendant un déplacement ou un glissement.
 
@@ -57,7 +57,7 @@ Vous pouvez choisir les modes d’interaction suivantes :
 
 Définit le mode d'interaction pour utiliser le pincement de deux doigts pour zoomer.
 
-![Cible du doigt simulateur deux](../debugger/media/simulator_twofinger.png)
+![Cible deux doigts du simulateur](../debugger/media/simulator_twofinger.png)
 
 L'icône double cible indique l'emplacement des deux doigts sur l'écran du périphérique.
 
@@ -88,7 +88,7 @@ Le bouton **Émulation de tactile : pivoter** définit le mode d’interaction s
  Vous pouvez changer l'orientation du périphérique entre le mode Portrait et Paysage en appliquant au simulateur une rotation de 90 degrés dans n'importe quelle direction.
 
 > [!NOTE]
-> Le simulateur ne respecte pas la propriété [DisplayProperties.AutoRotationPreferences](http://go.microsoft.com/fwlink/?LinkId=249460) d’un projet. Par exemple, si votre projet définit l'orientation sur `Landscape`, et que vous appliquez au simulateur une rotation vers une orientation Portrait, l'image d'affichage du simulateur sera également pivotée et redimensionnée. Testez ces paramètres sur un périphérique réel.
+> Le simulateur ne respecte pas la propriété [DisplayProperties.AutoRotationPreferences](/uwp/api/windows.graphics.display.displayproperties.autorotationpreferences) d’un projet. Par exemple, si votre projet définit l'orientation sur `Landscape`, et que vous appliquez au simulateur une rotation vers une orientation Portrait, l'image d'affichage du simulateur sera également pivotée et redimensionnée. Testez ces paramètres sur un périphérique réel.
 
 > [!NOTE]
 > Si vous faites pivoter un simulateur et qu'un bord du simulateur est plus grand que l'écran sur lequel il s'affiche, le simulateur est automatiquement redimensionné à la taille de l'écran. Le simulateur n'est pas redimensionné dans sa taille d'origine si vous lui appliquez une nouvelle rotation.
@@ -96,12 +96,12 @@ Le bouton **Émulation de tactile : pivoter** définit le mode d’interaction s
 ## <a name="BKMK_Change_the_simulated_screen_size_and_resolution"></a> Modifier la taille et la résolution simulées de l'écran
  Pour modifier la taille et la résolution simulées de l’écran, sélectionnez le bouton **Modifier la résolution** dans la palette et choisissez une nouvelle taille et résolution dans la liste.
 
- La taille et la résolution de l'écran sont indiquées en *Largeur écran pouces, largeur pixel X hauteur pixel*. Notez que la taille et la résolution de l'écran sont simulées. Les coordonnées de l'emplacement sur le simulateur sont traduites en coordonnées de la taille et de la résolution du périphérique sélectionnées.
+ La taille et la résolution de l'écran sont indiquées en *Largeur écran pouces, largeur pixel X hauteur pixel*. Notez que la taille et la résolution de l'écran sont simulées. Les coordonnées de l’emplacement sur le simulateur sont traduites selon la taille et la résolution de l’appareil sélectionnées.
 
 > [!NOTE]
-> Enregistrez les versions mises à l'échelle d'images bitmap dans votre application et Windows chargera l'image appropriée à l'échelle actuelle. Pour plus d’informations, consultez [introduction de conception et de l’interface utilisateur](/windows/uwp/layout/design-and-ui-intro). Toutefois, si vous modifiez la résolution du simulateur pour que Windows sélectionne une image différente en fonction de la résolution, vous devez arrêter et redémarrer la session de débogage pour afficher la nouvelle image.
+> Enregistrez les versions mises à l'échelle d'images bitmap dans votre application et Windows chargera l'image appropriée à l'échelle actuelle. Pour plus d’informations, consultez présentation [de l’interface utilisateur et](/windows/uwp/layout/design-and-ui-intro)de la conception. Toutefois, si vous modifiez la résolution du simulateur pour que Windows sélectionne une image différente en fonction de la résolution, vous devez arrêter et redémarrer la session de débogage pour afficher la nouvelle image.
 
-## <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a> Effectuer une capture d’écran de votre application à envoyer au Microsoft Store
+## <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a>Capturer une capture d’écran de votre application pour l’envoyer à Microsoft Store
  Lorsque vous soumettez une application à Microsoft Store, vous devez inclure des captures d’écran de l’application.
 
 > [!NOTE]
@@ -111,11 +111,11 @@ Le bouton **Émulation de tactile : pivoter** définit le mode d’interaction s
 
 - Pour définir l’emplacement où se trouve les captures d’écran, sélectionnez le bouton **Paramètres de capture d’écran** et sélectionnez l’emplacement dans le menu contextuel.
 
-   ![Menu contextuel des paramètres de capture d’écran](../debugger/media/simulator_screenshotsettingscntxmnu.png)
+   ![Menu contextuel des paramètres de capture d'écran](../debugger/media/simulator_screenshotsettingscntxmnu.png)
 
 ## <a name="BKMK_Simulate_network_connection_properties"></a> Simuler des propriétés de connexion réseau
 
-Vous pouvez aider les utilisateurs de votre application à gérer le coût des connexions réseau limitées en faisant bien comprendre le coût des connexions réseau ou les modifications de l'état du forfait données et en permettant à votre application d'utiliser ces informations pour éviter de subir des frais d'itinérance supplémentaires ou de dépasser la limite de transfert de données spécifiée. Les API [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) vous permettent de répondre aux événements [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) et [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) qui assurent la connexion. Consultez [Démarrage rapide : Gestion des contraintes de coût réseau limitées](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).
+Vous pouvez aider les utilisateurs de votre application à gérer le coût des connexions réseau limitées en faisant bien comprendre le coût des connexions réseau ou les modifications de l'état du forfait données et en permettant à votre application d'utiliser ces informations pour éviter de subir des frais d'itinérance supplémentaires ou de dépasser la limite de transfert de données spécifiée. Les API [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity) vous permettent de répondre aux événements [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) et [TriggerType](/uwp/api/windows.applicationmodel.background.systemtrigger) qui assurent la connexion. Consultez [Comment gérer les contraintes liées au coût des connexions réseau limitées (HTML)](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).
 
 Pour déboguer ou tester votre code réseau sensible au coût, le simulateur peut simuler les propriétés d’un réseau qui sont exposées par l’objet [ConnectionProfile](/uwp/api/windows.networking.connectivity.connectionprofile) retourné par [GetInternetConnectionProfile](/uwp/api/windows.networking.connectivity.networkinformation).
 
@@ -139,11 +139,13 @@ Pour simuler les propriétés d'un réseau :
 
 Pour plus d’informations sur la gestion des connexions réseau, consultez :
 
-[Démarrage rapide : La gestion des contraintes de coût réseau limitées](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)
+[Comment gérer les contraintes liées au coût des connexions réseau limitées (HTML)](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)
 
 [Exemple d’informations réseau](https://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)
 
+::: moniker range="vs-2017"
 [Analyser l’utilisation de l’énergie](../profiling/analyze-energy-use-in-store-apps.md)
+::: moniker-end
 
 [Windows.Networking.Connectivity](/uwp/api/windows.networking.connectivity)
 
@@ -153,10 +155,10 @@ Pour plus d’informations sur la gestion des connexions réseau, consultez :
 
 ## <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> Naviguez dans le simulateur à l'aide du clavier
 
-Vous pouvez accéder à la barre d’outils du simulateur en appuyant sur **CTRL + ALT + flèche haut** pour déplacer le focus à partir de la fenêtre du simulateur vers la barre d’outils du simulateur. Utilisez **Flèche haut** et **Flèche bas** pour basculer entre les boutons de la barre d'outils.
+Vous pouvez naviguer dans la barre d’outils du simulateur en appuyant sur **Ctrl + Alt + flèche haut** pour basculer le focus de la fenêtre du simulateur vers la barre d’outils du simulateur. Utilisez **Flèche haut** et **Flèche bas** pour basculer entre les boutons de la barre d'outils.
 
 Vous pouvez arrêter le simulateur en appuyant sur **CTRL + ALT + F4**.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Exécuter des applications à partir de Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
+- [Exécuter des applications à partir de Visual Studio](debugging-windows-store-and-windows-universal-apps.md)

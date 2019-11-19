@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 5314e92065cb29691aca75d424a331d10284a558
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 7b9df8c5609c92a6b6631d1ed9fdda8d65e9b605
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253431"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911807"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Configuration de votre projet Azure dans Visual Studio pour utiliser plusieurs configurations de service
 
@@ -55,7 +55,7 @@ Par défaut, les diagnostics sont activés pour le rôle web. Le projet de servi
 
 ## <a name="settings-page"></a>Page Paramètres
 
-Sur la page **Paramètres**, vous pouvez ajouter des paramètres à une configuration sous la forme de paires nom-valeur. Le code qui s’exécute dans le rôle peut lire les valeurs de vos paramètres de configuration au moment de l’exécution à l’aide des classes fournies par la [bibliothèque managée Azure](http://go.microsoft.com/fwlink?LinkID=171026), en particulier la méthode [GetConfigurationSettingValue](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleenvironment.getconfigurationsettingvalue.aspx) .
+Sur la page **Paramètres**, vous pouvez ajouter des paramètres à une configuration sous la forme de paires nom-valeur. Le code qui s’exécute dans le rôle peut lire les valeurs de vos paramètres de configuration au moment de l’exécution à l’aide des classes fournies par la [bibliothèque managée Azure](/previous-versions/azure/dn602775(v=azure.11)), en particulier la méthode [GetConfigurationSettingValue](/previous-versions/azure/reference/ee772857(v=azure.100)) .
 
 ### <a name="configuring-a-connection-string-for-a-storage-account"></a>Configuration d’une chaîne de connexion pour un compte de stockage
 
@@ -95,7 +95,7 @@ Vous pouvez utiliser la page de propriétés du **Stockage local** pour réserve
 
 ## <a name="certificates-page"></a>Page Certificats
 
-La page de propriétés **Certificats** ajoute des informations sur vos certificats à votre configuration de service. Notez que vos certificats ne sont pas empaquetés avec votre service. Vous devez les charger séparément sur Azure, via le [portail Azure](http://portal.azure.com).
+La page de propriétés **Certificats** ajoute des informations sur vos certificats à votre configuration de service. Notez que vos certificats ne sont pas empaquetés avec votre service. Vous devez les charger séparément sur Azure, via le [portail Azure](https://portal.azure.com).
 
 L'ajout d'un certificat ici ajoute des informations sur vos certificats à votre configuration de service. Les certificats ne sont pas empaquetés avec le service. Vous devez les charger séparément via le portail Azure.
 

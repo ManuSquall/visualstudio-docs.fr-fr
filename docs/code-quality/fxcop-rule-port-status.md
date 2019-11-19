@@ -10,12 +10,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2ad427c058265694205444c3ade04e317e407072
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a33286ffb678bf37cf684bb603d81ec8091e7405
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649579"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568817"
 ---
 # <a name="fxcop-rule-port-status"></a>État du port de la règle FXCop
 
@@ -67,8 +67,8 @@ ID de règle | Titre
 [CA1063](ca1063-implement-idisposable-correctly.md) | Implémenter IDisposable correctement
 [CA1064](ca1064-exceptions-should-be-public.md) | Les exceptions doivent être publiques
 [CA1065](ca1065-do-not-raise-exceptions-in-unexpected-locations.md) | Ne pas lever d'exceptions dans les emplacements inattendus
-Ca1066 | Le {0} de type doit implémenter IEquatable \<T >, car il remplace égal à
-Ca1067 | Remplace Object. Equals (Object) lors de l’implémentation de IEquatable \<T >
+Ca1066 | Le {0} de type doit implémenter IEquatable\<T >, car il remplace égal à
+Ca1067 | Remplace Object. Equals (Object) lors de l’implémentation de IEquatable\<T >
 [Ca1068](ca1068.md) | Les paramètres CancellationToken doivent venir en dernier
 Ca1200 | Éviter d’utiliser des balises cref avec un préfixe
 [CA1303](ca1303-do-not-pass-literals-as-localized-parameters.md) | Ne pas passer de littéraux en paramètres localisés
@@ -286,8 +286,8 @@ Les règles d’analyse héritées FxCop suivantes sont déconseillées et ne so
 - [CA1406](ca1406-avoid-int64-arguments-for-visual-basic-6-clients.md)
 - [CA1504](ca1504-review-misleading-field-names.md)
 - [CA1701](ca1701-resource-string-compound-words-should-be-cased-correctly.md)
-- [CA1702](ca1702-compound-words-should-be-cased-correctly.md)
-- [CA1703](ca1703-resource-strings-should-be-spelled-correctly.md)
+- [CA1702](ca1702.md)
+- [CA1703](ca1703.md)
 - [CA1800](ca1800.md)
 - [CA1809](ca1809.md)
 - [CA1901](ca1901.md)

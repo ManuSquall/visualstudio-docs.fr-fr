@@ -11,12 +11,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c4cc5b43880df06752cbce79d58ec71921817a4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 55f9904c95be45c7f293355340c814faafb5de2b
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649411"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568843"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Comment : générer des données de métriques du code
 
@@ -24,7 +24,7 @@ Vous pouvez générer des données de métriques du code de trois façons :
 
 - En installant les [analyseurs FxCop](#fxcop-analyzers-code-metrics-rules) et en activant les quatre règles de mesure du code (maintenabilité) qu’il contient.
 
-- En choisissant la commande de menu [ **analyser**  > **calculer la métrique du code** ](#calculate-code-metrics-menu-command) dans Visual Studio.
+- En choisissant la commande de menu [ **analyser** > **calculer la métrique du code** ](#calculate-code-metrics-menu-command) dans Visual Studio.
 
 - À partir de la ligne C# de [commande](#command-line-code-metrics) pour et Visual Basic projets.
 
@@ -33,9 +33,9 @@ Vous pouvez générer des données de métriques du code de trois façons :
 Le [package NuGet FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) comprend plusieurs règles d' [analyseur](roslyn-analyzers-overview.md) de métrique du code :
 
 - [CA1501](ca1501-avoid-excessive-inheritance.md)
-- [CA1502](ca1502-avoid-excessive-complexity.md)
+- [CA1502](ca1502.md)
 - [CA1505](ca1505-avoid-unmaintainable-code.md)
-- [CA1506](ca1506-avoid-excessive-class-coupling.md)
+- [CA1506](ca1506.md)
 
 Ces règles sont désactivées par défaut, mais vous pouvez les activer à partir de [**Explorateur de solutions**](use-roslyn-analyzers.md#set-rule-severity-from-solution-explorer) ou dans un fichier d' [ensemble de règles](using-rule-sets-to-group-code-analysis-rules.md) . Par exemple, pour activer la règle CA1502 comme un avertissement, votre fichier. RuleSet doit contenir l’entrée suivante :
 
@@ -60,9 +60,9 @@ Vous pouvez configurer les seuils auxquels les règles de métriques du code dan
    CA1502: 10
    ```
 
-   Dans cet exemple, la règle [CA1502](ca1502-avoid-excessive-complexity.md) est configurée pour se déclencher lorsque la complexité cyclomatic d’une méthode est supérieure à 10.
+   Dans cet exemple, la règle [CA1502](ca1502.md) est configurée pour se déclencher lorsque la complexité cyclomatic d’une méthode est supérieure à 10.
 
-3. Dans la fenêtre **Propriétés** de Visual Studio, ou dans le fichier projet, marquez l’action de génération du fichier de configuration en tant que [**AdditionalFiles**](../ide/build-actions.md#build-action-values). Exemple :
+3. Dans la fenêtre **Propriétés** de Visual Studio, ou dans le fichier projet, marquez l’action de génération du fichier de configuration en tant que [**AdditionalFiles**](../ide/build-actions.md#build-action-values). Par exemple :
 
    ```xml
    <ItemGroup>
@@ -72,13 +72,13 @@ Vous pouvez configurer les seuils auxquels les règles de métriques du code dan
 
 ## <a name="calculate-code-metrics-menu-command"></a>Commande de menu calculer la métrique du code
 
-Générez des métriques de code pour un ou tous vos projets ouverts dans l’IDE à l’aide du menu **analyser**  > **calculer la métrique du code** .
+Générez des métriques de code pour un ou tous vos projets ouverts dans l’IDE à l’aide du menu **analyser** > **calculer la métrique du code** .
 
 ### <a name="generate-code-metrics-results-for-an-entire-solution"></a>Générer les résultats de la métrique du code pour une solution entière
 
 Vous pouvez générer des résultats de métriques du code pour une solution complète de l’une des manières suivantes :
 
-- Dans la barre de menus, choisissez **analyser**  > **calculer les métriques du code**  >  pour la**solution**.
+- Dans la barre de menus, choisissez **analyser** > **calculer les métriques du code** > pour la **solution**.
 
 - Dans **Explorateur de solutions**, cliquez avec le bouton droit sur la solution, puis choisissez **calculer la métrique du code**.
 
@@ -90,7 +90,7 @@ Les résultats sont générés et la fenêtre résultats de la **métrique du co
 
 1. Dans **Explorateur de solutions**, sélectionnez un ou plusieurs projets.
 
-1. Dans la barre de menus, choisissez **analyser**  > **calculer les métriques du code**  >  pour le**ou les projets sélectionnés**.
+1. Dans la barre de menus, choisissez **analyser** > **calculer les métriques du code** > pour le **ou les projets sélectionnés**.
 
 Les résultats sont générés et la fenêtre résultats de la **métrique du code** s’affiche. Pour afficher les détails des résultats, développez l’arborescence dans la **hiérarchie**.
 
@@ -111,7 +111,7 @@ Vous pouvez générer des données de métriques du code à partir C# de la lign
 
 ### <a name="microsoftcodeanalysismetrics-nuget-package"></a>Package NuGet Microsoft. CodeAnalysis. Metrics
 
-Le moyen le plus simple de générer des données de métriques du code à partir de la ligne de commande consiste à installer le package NuGet [Microsoft. CodeAnalysis. Metrics](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) . Une fois le package installé, exécutez `msbuild /t:Metrics` à partir du répertoire qui contient votre fichier projet. Exemple :
+Le moyen le plus simple de générer des données de métriques du code à partir de la ligne de commande consiste à installer le package NuGet [Microsoft. CodeAnalysis. Metrics](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) . Une fois le package installé, exécutez `msbuild /t:Metrics` à partir du répertoire qui contient votre fichier projet. Par exemple :
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics
@@ -134,7 +134,7 @@ Build succeeded.
     0 Error(s)
 ```
 
-Vous pouvez remplacer le nom du fichier de sortie en spécifiant `/p:MetricsOutputFile=<filename>`. Vous pouvez également recevoir des données de métriques du code [hérité](#previous-versions) en spécifiant `/p:LEGACY_CODE_METRICS_MODE=true`. Exemple :
+Vous pouvez remplacer le nom du fichier de sortie en spécifiant `/p:MetricsOutputFile=<filename>`. Vous pouvez également recevoir des données de métriques du code [hérité](#previous-versions) en spécifiant `/p:LEGACY_CODE_METRICS_MODE=true`. Par exemple :
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics /p:LEGACY_CODE_METRICS_MODE=true /p:MetricsOutputFile="Legacy.xml"
@@ -231,7 +231,7 @@ Si vous ne souhaitez pas installer le package NuGet, vous pouvez générer et ut
 
 #### <a name="metricsexe-usage"></a>Utilisation des métriques. exe
 
-Pour exécuter *Metrics. exe*, fournissez un projet ou une solution et un fichier XML de sortie comme arguments. Exemple :
+Pour exécuter *Metrics. exe*, fournissez un projet ou une solution et un fichier XML de sortie comme arguments. Par exemple :
 
 ```shell
 C:\>Metrics.exe /project:ConsoleApp20.csproj /out:report.xml

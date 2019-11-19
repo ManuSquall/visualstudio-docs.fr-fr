@@ -10,12 +10,12 @@ author: jillre
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: cbb47e07bbe3697f905a28d9771cf55fe6fcc74c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6c980ab2d920a80e49450f6ffe4a9433f490b412
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659740"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72982850"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Utiliser des stubs pour isoler des parties de votre application les unes des autres pour des tests unitaires
 
@@ -35,7 +35,7 @@ Les stubs comptent sur votre capacité à structurer votre code de cette manièr
 
 ### <a name="design-for-dependency-injection"></a>Concevoir l'injection de dépendance
 
-Pour utiliser les stubs, votre application doit être conçue afin que les différents composants ne dépendent pas des autres, mais uniquement des définitions d'interface. Au lieu d'être couplés au moment de la compilation, les composants sont connectés au moment de l'exécution. Ce modèle permet de concevoir un logiciel fiable et facile à mettre à jour, car les modifications ont tendance à ne pas se propager sur les limites de composant. Nous vous recommandons de suivre les instructions suivantes même si vous n’utilisez pas de stubs. Si vous écrivez du nouveau code, il est facile de suivre le modèle d’[injection de dépendances](http://en.wikipedia.org/wiki/Dependency_injection). Si vous écrivez des tests pour un logiciel existant, vous devrez peut-être le refactoriser. S'il s'avère peu pratique, vous pouvez envisager d'utiliser des shims.
+Pour utiliser les stubs, votre application doit être conçue afin que les différents composants ne dépendent pas des autres, mais uniquement des définitions d'interface. Au lieu d'être couplés au moment de la compilation, les composants sont connectés au moment de l'exécution. Ce modèle permet de concevoir un logiciel fiable et facile à mettre à jour, car les modifications ont tendance à ne pas se propager sur les limites de composant. Nous vous recommandons de suivre les instructions suivantes même si vous n’utilisez pas de stubs. Si vous écrivez du nouveau code, il est facile de suivre le modèle d’[injection de dépendances](https://en.wikipedia.org/wiki/Dependency_injection). Si vous écrivez des tests pour un logiciel existant, vous devrez peut-être le refactoriser. S'il s'avère peu pratique, vous pouvez envisager d'utiliser des shims.
 
 Commençons cette discussion avec un exemple motivant, celui du schéma. La classe StockAnalyzer lit le cours de l'action et génère des résultats intéressants. Elle comporte des méthodes publiques que nous souhaitons tester. Pour ne pas compliquer les choses, examinons seulement l’une de ces méthodes, une méthode très simple qui indique le prix actuel d’une action particulière. Nous souhaitons écrire un test unitaire de cette méthode. Voici la première ébauche de test :
 

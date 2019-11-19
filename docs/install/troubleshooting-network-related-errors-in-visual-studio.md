@@ -1,7 +1,7 @@
 ---
 title: Résoudre les erreurs réseau ou de proxy
 description: Trouvez des solutions aux erreurs réseau ou aux erreurs de proxy que vous pouvez rencontrer quand vous installez ou utilisez Visual Studio derrière un pare-feu ou un serveur proxy.
-ms.date: 05/22/2019
+ms.date: 10/29/2019
 ms.topic: troubleshooting
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -17,18 +17,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 7879efca149c31fbe3114b0ddfcba2f2a347f5e6
-ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
+ms.openlocfilehash: f1b928d04ae581b0df04ab74f3a756d359abc06f
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71062785"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713951"
 ---
 # <a name="troubleshoot-network-related-errors-when-you-install-or-use-visual-studio"></a>Résoudre les erreurs liées au réseau lorsque vous installez ou utilisez Visual Studio
 
 Nous avons des solutions pour résoudre les erreurs liées au réseau ou au proxy les plus fréquemment rencontrées lorsque vous installez ou utilisez Visual Studio derrière un pare-feu ou un serveur proxy.
 
-## <a name="error-proxy-authorization-required"></a>Erreur : « Autorisation du proxy requise »
+## <a name="error-proxy-authorization-required"></a>Erreur : « Autorisation du proxy exigée »
 
 Cette erreur se produit généralement quand les utilisateurs sont connectés à Internet via un serveur proxy et que le serveur proxy bloque les appels que Visual Studio effectue vers certaines ressources réseau.
 
@@ -132,6 +132,19 @@ Activez les connexions pour les URL suivantes :
 
   > [!NOTE]
   > Les URL des serveurs NuGet dont la propriété est privée peuvent ne pas figurer dans cette liste. Vous pouvez vérifier les serveurs NuGet que vous utilisez dans %APPData%\Nuget\NuGet.Config.
+
+## <a name="error-failed-to-parse-id-from-parent-process"></a>Erreur : « échec de l’analyse de l’ID du processus parent »
+
+Vous pouvez rencontrer ce message d’erreur lorsque vous utilisez un programme d’amorçage Visual Studio et un fichier Response. JSON sur un lecteur réseau. La source de l’erreur est le contrôle de compte d’utilisateur (UAC) dans Windows.
+
+Voici pourquoi cette erreur peut se produire : un lecteur réseau mappé ou un partage [UNC](/dotnet/standard/io/file-path-formats#unc-paths) est lié au jeton d’accès d’un utilisateur. Lorsque le contrôle de compte d’utilisateur est activé, deux [jetons d’accès](/windows/win32/secauthz/access-tokens) utilisateur sont créés : un *avec* un accès administrateur et un autre *sans* accès administrateur. Lorsqu’un lecteur réseau ou un partage est créé, le jeton d’accès actuel de l’utilisateur est lié à celui-ci. Étant donné que le programme d’amorçage doit être exécuté en tant qu’administrateur, il ne peut pas accéder au lecteur réseau ou au partage si le lecteur ou le partage n’est pas lié à un jeton d’accès utilisateur disposant d’un accès administrateur.
+
+### <a name="to-fix-this-error"></a>Pour corriger cette erreur
+
+Vous pouvez utiliser la commande `net use` ou vous pouvez modifier le paramètre de stratégie de groupe du contrôle de compte d’utilisateur. Pour plus d’informations sur ces solutions de contournement et la façon de les implémenter, consultez les articles du support technique Microsoft suivants :
+
+* [Les lecteurs mappés ne sont pas disponibles à partir d’une invite avec élévation de privilèges lorsque le contrôle de compte d’utilisateur est configuré pour « demander des informations d’identification » dans Windows](https://support.microsoft.com/help/3035277/mapped-drives-are-not-available-from-an-elevated-prompt-when-uac-is-co)
+* [Les programmes peuvent ne pas pouvoir accéder à certains emplacements réseau après l’activation du contrôle de compte d’utilisateur dans les systèmes d’exploitation Windows](https://support.microsoft.com/en-us/help/937624/programs-may-be-unable-to-access-some-network-locations-after-you-turn)
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: 'Explorateur de serveurs : Extension du nœud Connexions SharePoint'
+title: 'Explorateur de serveurs : extension du nœud Connexions SharePoint'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,52 +13,52 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bf3d39a8a06a59ed337c0d847bb92875f0f68558
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 4a40c20b92dc221dfab566240d27912b2b7e58be
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824164"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985001"
 ---
-# <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Procédure pas à pas : Appel dans le modèle d’objet client SharePoint dans une extension de l’Explorateur de serveurs
-  Cette procédure pas à pas montre comment appeler le modèle d’objet client SharePoint à partir d’une extension pour le **connexions SharePoint** nœud **Explorateur de serveurs**. Pour plus d’informations sur l’utilisation du modèle d’objet client SharePoint, consultez [appeler des modèles d’objet SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
+# <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Procédure pas à pas : appel du modèle d’objet client SharePoint dans une extension de Explorateur de serveurs
+  Cette procédure pas à pas montre comment appeler le modèle d’objet client SharePoint à partir d’une extension pour le nœud **Connexions SharePoint** dans **Explorateur de serveurs**. Pour plus d’informations sur l’utilisation du modèle d’objet client SharePoint, consultez [appel des modèles d’objet SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
 
  Cette procédure pas à pas décrit les tâches suivantes :
 
-- Création d’un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] extension étend la **connexions SharePoint** nœud de **Explorateur de serveurs** comme suit :
+- La création d’une extension de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] qui étend le nœud **Connexions SharePoint** de **Explorateur de serveurs** des manières suivantes :
 
-  - L’extension ajoute un **galerie de composants WebPart** nœud sous chaque nœud de site SharePoint dans **Explorateur de serveurs**. Ce nouveau nœud contient des nœuds enfants représentant chaque composant WebPart dans la galerie de composant WebPart sur le site.
+  - L’extension ajoute un nœud de **Galerie de composants WebPart** sous chaque nœud de site SharePoint dans **Explorateur de serveurs**. Ce nouveau nœud contient des nœuds enfants qui représentent chaque composant WebPart dans la Galerie de composants WebPart sur le site.
 
-  - L’extension définit un nouveau type de nœud qui représente une instance de composant WebPart. Ce nouveau type de nœud sert de base pour les nœuds enfants sous le nouveau **galerie de composants WebPart** nœud. Le nouveau type de nœud WebPart affiche des informations dans le **propriétés** fenêtre sur le composant WebPart que le nœud représente.
+  - L’extension définit un nouveau type de nœud qui représente une instance de composant WebPart. Ce nouveau type de nœud est la base des nœuds enfants sous le nouveau nœud **Galerie de composants WebPart** . Le nouveau type de nœud WebPart affiche des informations dans la fenêtre **Propriétés** concernant le composant WebPart que le nœud représente.
 
-- Création d’un package d’Extension Visual Studio (VSIX) pour déployer l’extension.
+- Génération d’un package d’extension Visual Studio (VSIX) pour déployer l’extension.
 
 - Débogage et test de l’extension.
 
 > [!NOTE]
-> L’extension que vous créez dans cette procédure pas à pas ressemble à l’extension que vous créez dans [procédure pas à pas : Étendre l’Explorateur de serveurs pour afficher des WebParts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md). Cette procédure pas à pas utilise le modèle d’objet serveur SharePoint, mais cette procédure pas à pas effectue les mêmes tâches à l’aide du modèle objet client.
+> L’extension que vous créez dans cette procédure pas à pas ressemble à l’extension que vous créez dans [procédure pas à pas : étendre Explorateur de serveurs pour afficher des WebParts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md). Cette procédure pas à pas utilise le modèle d’objet serveur SharePoint, mais cette procédure pas à pas effectue les mêmes tâches à l’aide du modèle d’objet client.
 
-## <a name="prerequisites"></a>Prérequis
- Vous avez besoin des composants suivants sur l’ordinateur de développement pour effectuer cette procédure pas à pas :
+## <a name="prerequisites"></a>Configuration requise
+ Pour effectuer cette procédure pas à pas, vous avez besoin des composants suivants sur l’ordinateur de développement :
 
 - Éditions prises en charge de Windows, SharePoint et Visual Studio.
 
-- Le Kit de développement logiciel avec Visual Studio. Cette procédure pas à pas utilise le **projet VSIX** modèle dans le Kit de développement logiciel pour créer un package VSIX pour déployer l’extension. Pour plus d’informations, consultez [étendre les outils SharePoint dans Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).
+- Le kit de développement logiciel (SDK) Visual Studio. Cette procédure pas à pas utilise le modèle de **projet VSIX** dans le kit de développement logiciel (SDK) pour créer un package VSIX afin de déployer l’extension. Pour plus d’informations, consultez [étendre les outils SharePoint dans Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).
 
-Connaissance des concepts suivants est utile, mais pas obligatoire, pour suivre la procédure pas à pas :
+La connaissance des concepts suivants est utile, mais pas obligatoire, pour effectuer la procédure pas à pas :
 
-- À l’aide du modèle d’objet client SharePoint. Pour plus d’informations, consultez [modèle objet Client managé](http://go.microsoft.com/fwlink/?LinkId=177797).
+- Utilisation du modèle d’objet client SharePoint. Pour plus d’informations, consultez [modèle objet client géré](/previous-versions/office/developer/sharepoint-2010/ee537247(v=office.14)).
 
-- Composants WebPart dans SharePoint. Pour plus d’informations, consultez [Web Parts Overview](http://go.microsoft.com/fwlink/?LinkId=177803).
+- Composants WebPart dans SharePoint. Pour plus d’informations, consultez [composants WebPart vue d’ensemble](/previous-versions/office/ms432401(v=office.14)).
 
 ## <a name="create-the-projects"></a>Créer les projets
  Pour effectuer cette procédure pas à pas, vous devez créer deux projets :
 
-- Un projet VSIX pour créer le package VSIX pour déployer le **Explorateur de serveurs** extension.
+- Projet VSIX pour créer le package VSIX pour déployer l’extension de **Explorateur de serveurs** .
 
-- Un projet de bibliothèque de classes qui implémente le **Explorateur de serveurs** extension.
+- Projet de bibliothèque de classes qui implémente l’extension **Explorateur de serveurs** .
 
-  Démarrer la procédure pas à pas en créant les projets.
+  Démarrez la procédure pas à pas en créant les projets.
 
 #### <a name="to-create-the-vsix-project"></a>Pour créer le projet VSIX
 
@@ -66,222 +66,222 @@ Connaissance des concepts suivants est utile, mais pas obligatoire, pour suivre 
 
 2. Dans la barre de menus, choisissez **Fichier** > **Nouveau** > **Projet**.
 
-3. Dans le **nouveau projet** boîte de dialogue, développez le **Visual C#** ou **Visual Basic** nœuds, puis choisissez **extensibilité**.
+3. Dans la boîte de dialogue **nouveau projet** , développez les nœuds  **C# Visual** ou **Visual Basic** , puis choisissez **extensibilité**.
 
     > [!NOTE]
-    > Le **extensibilité** nœud est disponible uniquement si vous installez le SDK Visual Studio. Pour plus d’informations, consultez la section conditions préalables plus haut dans cette rubrique.
+    > Le nœud **extensibilité** est disponible uniquement si vous installez le kit de développement logiciel (SDK) Visual Studio. Pour plus d’informations, consultez la section conditions préalables, plus haut dans cette rubrique.
 
-4. En haut de la boîte de dialogue, choisissez **.NET Framework 4.5** dans la liste des versions du .NET Framework.
+4. En haut de la boîte de dialogue, choisissez **.NET Framework 4,5** dans la liste des versions du .NET Framework.
 
-     Extensions de l’outil SharePoint nécessitent des fonctionnalités dans cette version du .NET Framework.
+     Les extensions des outils SharePoint nécessitent des fonctionnalités dans cette version du .NET Framework.
 
-5. Choisissez le **projet VSIX** modèle.
+5. Choisissez le modèle de **projet VSIX** .
 
-6. Dans le **nom** , tapez **WebPartNode**, puis choisissez le **OK** bouton.
+6. Dans la zone **nom** , tapez **WebPartNode**, puis choisissez le bouton **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Ajoute le **WebPartNode** projet **l’Explorateur de solutions**.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ajoute le projet **WebPartNode** à **Explorateur de solutions**.
 
 #### <a name="to-create-the-extension-project"></a>Pour créer le projet d’extension
 
-1. Dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour le nœud de solution, choisissez **ajouter**, puis choisissez **nouveau projet**.
+1. Dans **Explorateur de solutions**, ouvrez le menu contextuel du nœud solution, choisissez **Ajouter**, puis **nouveau projet**.
 
-2. Dans le **nouveau projet** boîte de dialogue, développez le **Visual C#** ou **Visual Basic** nœuds, puis choisissez **Windows**.
+2. Dans la boîte de dialogue **nouveau projet** , développez les nœuds  **C# Visual** ou **Visual Basic** , puis choisissez **Windows**.
 
-3. En haut de la boîte de dialogue, choisissez **.NET Framework 4.5** dans la liste des versions du .NET Framework.
+3. En haut de la boîte de dialogue, choisissez **.NET Framework 4,5** dans la liste des versions du .NET Framework.
 
 4. Dans la liste des modèles de projet, choisissez **bibliothèque de classes**.
 
-5. Dans le **nom** , entrez **WebPartNodeExtension**, puis choisissez le **OK** bouton.
+5. Dans la zone **nom** , entrez **WebPartNodeExtension**, puis choisissez le bouton **OK** .
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Ajoute le **WebPartNodeExtension** projet à la solution et ouvre le fichier de code Class1 par défaut.
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ajoute le projet **WebPartNodeExtension** à la solution et ouvre le fichier de code Class1 par défaut.
 
-6. Supprimer le fichier de code Class1 du projet.
+6. Supprimez le fichier de code Class1 du projet.
 
 ## <a name="configure-the-extension-project"></a>Configurer le projet d’extension
- Avant d’écrire du code pour créer l’extension, vous devez ajouter les fichiers de code et des références d’assembly à votre projet, et vous devez mettre à jour l’espace de noms par défaut.
+ Avant d’écrire du code pour créer l’extension, vous devez ajouter des fichiers de code et des références d’assembly à votre projet, et vous devez mettre à jour l’espace de noms par défaut.
 
 #### <a name="to-configure-the-project"></a>Pour configurer le projet
 
-1. Dans le **WebPartNodeExtension** de projet, ajoutez deux fichiers de code sont nommés SiteNodeExtension et WebPartNodeTypeProvider.
+1. Dans le projet **WebPartNodeExtension** , ajoutez deux fichiers de code nommés SiteNodeExtension et WebPartNodeTypeProvider.
 
-2. Ouvrez le menu contextuel du projet WebPartNodeExtension, puis choisissez **ajouter une référence**.
+2. Ouvrez le menu contextuel du projet WebPartNodeExtension, puis choisissez **Ajouter une référence**.
 
-3. Dans le **Gestionnaire de références - WebPartNodeExtension** boîte de dialogue, sélectionnez le **Framework** nœud et sélectionnez les cases à cocher pour le System.ComponentModel.Composition et System.Windows.Forms assemblys.
+3. Dans la boîte de dialogue **Gestionnaire de références-WebPartNodeExtension** , choisissez le nœud **Framework** , puis activez les cases à cocher pour les assemblys System. ComponentModel. composition et System. Windows. Forms.
 
-4. Choisissez le **Extensions** nœud, sélectionnez la case à cocher pour chacun des assemblys suivants, puis choisissez le **OK** bouton :
+4. Choisissez le nœud **Extensions** , activez la case à cocher pour chacun des assemblys suivants, puis choisissez le bouton **OK** :
 
-    - Microsoft.SharePoint.Client
+    - Microsoft. SharePoint. client
 
-    - Microsoft.SharePoint.Client.Runtime
+    - Microsoft. SharePoint. client. Runtime
 
-    - Microsoft.VisualStudio.SharePoint
+    - Microsoft. VisualStudio. SharePoint
 
-5. Ouvrez le menu contextuel pour le **WebPartNodeExtension** de projet, puis choisissez **propriétés**.
+5. Ouvrez le menu contextuel du projet **WebPartNodeExtension** , puis choisissez **Propriétés**.
 
      Le **Concepteur de projets** s’ouvre.
 
 6. Choisissez l’onglet **Application**.
 
-7. Dans le **par défaut d’espace de noms** boîte (c#) ou **espace de noms racine** (Visual Basic), entrez **ServerExplorer.SharePointConnections.WebPartNode**.
+7. Dans la zone **espace de noms par défaut** (C#) ou espace de **noms racine** (Visual Basic), entrez **ServerExplorer. SharePointConnections. WebPartNode**.
 
 ## <a name="create-icons-for-the-new-nodes"></a>Créer des icônes pour les nouveaux nœuds
- Créez deux icônes pour le **Explorateur de serveurs** extension : une icône pour le nouveau **galerie de composants WebPart** nœud et une autre icône pour chaque nœud de composant WebPart enfant sous le **galerie de composants WebPart** nœud. Plus loin dans cette procédure pas à pas, vous allez écrire du code qui associe ces icônes avec les nœuds.
+ Créez deux icônes pour l’extension de **Explorateur de serveurs** : une icône pour le nouveau nœud de la **Galerie de composants WebPart** et une autre icône pour chaque nœud de composant WebPart enfant sous le nœud **Galerie de composants WebPart** . Plus loin dans cette procédure pas à pas, vous écrirez du code qui associe ces icônes aux nœuds.
 
 #### <a name="to-create-icons-for-the-nodes"></a>Pour créer des icônes pour les nœuds
 
-1. Dans le **Concepteur de projets** pour le projet WebPartNodeExtension, choisissez le **ressources** onglet.
+1. Dans le **Concepteur de projet** pour le projet WebPartNodeExtension, choisissez l’onglet **ressources** .
 
-2. Cliquez sur le lien **ce projet ne contient pas un fichier de ressources par défaut. Cliquez ici pour en créer un.**
+2. Choisissez le lien **ce projet ne contient pas de fichier de ressources par défaut. Cliquez ici pour en créer un.**
 
      Visual Studio crée un fichier de ressources et l’ouvre dans le concepteur.
 
-3. En haut du concepteur, cliquez sur la flèche sur la **ajouter une ressource** menu de commande, puis choisissez **ajouter une nouvelle icône**.
+3. En haut du concepteur, cliquez sur la flèche de la commande de menu **Ajouter une ressource** , puis choisissez **Ajouter une nouvelle icône**.
 
-4. Entrez **WebPartsNode** pour l’icône nouveau nom, puis choisissez le **ajouter** bouton.
+4. Entrez **WebPartsNode** pour le nom de la nouvelle icône, puis cliquez sur le bouton **Ajouter** .
 
-     La nouvelle icône s’ouvre dans le **Éditeur d’images**.
+     La nouvelle icône s’ouvre dans l' **éditeur d’images**.
 
-5. Modifier la version 16 x 16 de l’icône afin qu’il dispose d’une conception que vous pouvez identifier facilement.
+5. Modifiez la version 16x16 de l’icône afin qu’elle dispose d’une conception que vous pouvez facilement reconnaître.
 
-6. Ouvrez le menu contextuel pour la version 32 x 32 de l’icône, puis choisissez **supprimer le Type d’Image**.
+6. Ouvrez le menu contextuel de la version 32x32 de l’icône, puis choisissez **supprimer le type d’image**.
 
-7. Répétez les étapes 3 à 7 pour ajouter une deuxième icône aux ressources du projet et nommez cette icône **WebPart**.
+7. Répétez les étapes 3 à 7 pour ajouter une deuxième icône aux ressources du projet, puis nommez cette icône **WebPart**.
 
-8. Dans **l’Explorateur de solutions**, dans le **ressources** dossier pour le **WebPartNodeExtension** de projet, choisissez *WebPartsNode.ico*.
+8. Dans **Explorateur de solutions**, dans le dossier **ressources** du projet **WebPartNodeExtension** , choisissez *WebPartsNode. ico*.
 
-9. Dans le **propriétés** fenêtre, ouvrez le **Action de génération** liste, puis choisissez **ressource incorporée**.
+9. Dans la fenêtre **Propriétés** , ouvrez la liste **action de génération** , puis sélectionnez **ressource incorporée**.
 
-10. Répétez les deux dernières étapes pour *WebPart.ico*.
+10. Répétez les deux dernières étapes pour *WebPart. ico*.
 
-## <a name="add-the-web-part-gallery-node-to-server-explorer"></a>Ajouter le nœud Galerie de composants WebPart à l’Explorateur de serveurs
- Créez une classe qui ajoute le nouveau **galerie de composants WebPart** nœud pour chaque nœud de site SharePoint. Pour ajouter le nouveau nœud, la classe implémente le <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> interface. Implémentez cette interface chaque fois que vous souhaitez étendre le comportement d’un nœud existant dans **Explorateur de serveurs**, telles que l’ajout d’un nouveau nœud enfant à un nœud.
+## <a name="add-the-web-part-gallery-node-to-server-explorer"></a>Ajoutez le nœud Galerie de composants WebPart à Explorateur de serveurs
+ Créez une classe qui ajoute le nouveau nœud de la **Galerie de composants WebPart** à chaque nœud de site SharePoint. Pour ajouter le nouveau nœud, la classe implémente l’interface <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension>. Implémentez cette interface chaque fois que vous souhaitez étendre le comportement d’un nœud existant dans **Explorateur de serveurs**, tel que l’ajout d’un nouveau nœud enfant à un nœud.
 
-#### <a name="to-add-the-web-part-gallery-node-to-server-explorer"></a>Pour ajouter le nœud Galerie de composants WebPart à l’Explorateur de serveurs
+#### <a name="to-add-the-web-part-gallery-node-to-server-explorer"></a>Pour ajouter le nœud Galerie de composants WebPart à Explorateur de serveurs
 
-1. Collez le code suivant dans le **SiteNodeExtension** fichier de code pour le **WebPartNodeExtension** projet.
+1. Collez le code suivant dans le fichier de code **SiteNodeExtension** pour le projet **WebPartNodeExtension** .
 
     > [!NOTE]
-    > Après avoir ajouté ce code, le projet aura des erreurs de compilation. Ces erreurs disparaissent lorsque vous ajoutez du code dans les étapes ultérieures.
+    > Après avoir ajouté ce code, le projet comportera des erreurs de compilation. Ces erreurs disparaissent lorsque vous ajoutez du code dans les étapes ultérieures.
 
      [!code-csharp[SPExtensibility.SPExplorer.WebPartNode#1](../sharepoint/codesnippet/CSharp/webpartnode/webpartnodeextension/sitenodeextension.cs#1)]
      [!code-vb[SPExtensibility.SPExplorer.WebPartNode#1](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnode.webpartnode/webpartnodeextension/sitenodeextension.vb#1)]
 
 ## <a name="define-a-node-type-that-represents-a-web-part"></a>Définir un type de nœud qui représente un composant WebPart
- Créez une classe qui définit un nouveau type de nœud qui représente un composant WebPart. Visual Studio utilise ce nouveau type de nœud pour afficher les nœuds enfants sous le **galerie de composants WebPart** nœud. Chacun de ces nœuds enfants représente un composant WebPart sur le site SharePoint.
+ Créez une classe qui définit un nouveau type de nœud qui représente un composant WebPart. Visual Studio utilise ce nouveau type de nœud pour afficher les nœuds enfants sous le nœud **Galerie de composants WebPart** . Chacun de ces nœuds enfants représente un composant WebPart unique sur le site SharePoint.
 
- Pour définir le nouveau type de nœud, la classe implémente le <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider> interface. Implémentez cette interface chaque fois que vous souhaitez définir un nouveau type de nœud dans **Explorateur de serveurs**.
+ Pour définir le nouveau type de nœud, la classe implémente l’interface <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider>. Implémentez cette interface chaque fois que vous souhaitez définir un nouveau type de nœud dans **Explorateur de serveurs**.
 
-#### <a name="to-define-the-web-part-node-type"></a>Pour définir le type de nœud de composant web
+#### <a name="to-define-the-web-part-node-type"></a>Pour définir le type de nœud WebPart
 
-1. Collez le code suivant dans le **WebPartNodeTypeProvider** fichier de code pour le **WebPartNodeExtension** projet.
+1. Collez le code suivant dans le fichier de code **WebPartNodeTypeProvider** pour le projet **WebPartNodeExtension** .
 
      [!code-csharp[SPExtensibility.SPExplorer.WebPartNode#2](../sharepoint/codesnippet/CSharp/webpartnode/webpartnodeextension/webpartnodetypeprovider.cs#2)]
      [!code-vb[SPExtensibility.SPExplorer.WebPartNode#2](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnode.webpartnode/webpartnodeextension/webpartnodetypeprovider.vb#2)]
 
 ## <a name="checkpoint"></a>Point de contrôle
- À ce stade de la procédure pas à pas, tout le code pour le **galerie de composants WebPart** nœud se trouve maintenant dans le projet. Générer le **WebPartNodeExtension** projet pour vous assurer qu’il est compilé sans erreur.
+ À ce stade de la procédure pas à pas, tout le code du nœud de la **Galerie de composants WebPart** se trouve maintenant dans le projet. Générez le projet **WebPartNodeExtension** pour vous assurer qu’il se compile sans erreur.
 
 #### <a name="to-build-the-project"></a>Pour générer le projet
 
-1. Dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour le **WebPartNodeExtension** de projet, puis choisissez **Build**.
+1. Dans **Explorateur de solutions**, ouvrez le menu contextuel du projet **WebPartNodeExtension** , puis choisissez **générer**.
 
 ## <a name="create-a-vsix-package-to-deploy-the-extension"></a>Créer un package VSIX pour déployer l’extension
- Pour déployer l’extension, utilisez le projet VSIX dans votre solution pour créer un package VSIX. Tout d’abord, configurez le package VSIX en modifiant le fichier source.extension.vsixmanifest qui est inclus dans le projet. Puis créer le package VSIX en générant la solution.
+ Pour déployer l’extension, utilisez le projet VSIX dans votre solution pour créer un package VSIX. Tout d’abord, configurez le package VSIX en modifiant le fichier source. extension. vsixmanifest qui est inclus dans le projet. Créez ensuite le package VSIX en générant la solution.
 
 #### <a name="to-configure-the-vsix-package"></a>Pour configurer le package VSIX
 
-1. Dans **l’Explorateur de solutions**, dans le **WebPartNode** projet, ouvrez **source.extension.vsixmanifest** fichier dans l’éditeur de manifeste.
+1. Dans **Explorateur de solutions**, dans le projet **WebPartNode** , ouvrez le fichier **source. extension. vsixmanifest** dans l’éditeur de manifeste.
 
-     Le fichier source.extension.vsixmanifest est la base du fichier extension.vsixmanifest qui nécessitent de tous les packages VSIX. Pour plus d’informations sur ce fichier, consultez [VSIX Extension schéma 1.0 référence](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).
+     Le fichier source. extension. vsixmanifest est la base du fichier extension. vsixmanifest requis par tous les packages VSIX. Pour plus d’informations sur ce fichier, consultez [Référence du schéma d’extension VSIX 1,0](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).
 
-2. Dans le **Product Name** , entrez **nœud Galerie de composants WebPart pour l’Explorateur de serveurs**.
+2. Dans la zone **nom du produit** , entrez **nœud de la Galerie de composants webpart pour Explorateur de serveurs**.
 
-3. Dans le **auteur** , entrez **Contoso**.
+3. Dans la zone **auteur** , entrez **contoso**.
 
-4. Dans le **Description** , entrez **ajoute un nœud de galerie de composants WebPart personnalisé au nœud Connexions SharePoint dans l’Explorateur de serveurs**.
+4. Dans la zone **Description** , entrez **ajoute un nœud de Galerie de composants WebPart personnalisé au nœud connexions SharePoint dans Explorateur de serveurs**.
 
-5. Sur le **actifs** onglet de l’éditeur, choisissez le **New** bouton.
+5. Sous l’onglet **ressources** de l’éditeur, choisissez le bouton **nouveau** .
 
-6. Dans le **ajouter un nouveau composant** boîte de dialogue le **Type** , choisissez **Microsoft.VisualStudio.MefComponent**.
+6. Dans la boîte de dialogue **Ajouter un nouvel élément** multimédia, dans la liste **type** , choisissez **Microsoft. VisualStudio. MEFComponent**.
 
     > [!NOTE]
-    > Cette valeur correspond à la `MefComponent` élément dans le fichier extension.vsixmanifest. Cet élément spécifie le nom d’un assembly d’extension dans le package VSIX. Pour plus d’informations, consultez [MEFComponent, élément (schéma VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
+    > Cette valeur correspond à l’élément `MefComponent` dans le fichier extension. vsixmanifest. Cet élément spécifie le nom d’un assembly d’extension dans le package VSIX. Pour plus d’informations, consultez [MefComponent, élément (schéma VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
-7. Dans le **Source** , choisissez **un projet dans la solution actuelle**.
+7. Dans la liste **source** , choisissez **un projet dans la solution actuelle**.
 
-8. Dans le **projet** , choisissez **WebPartNodeExtension**, puis choisissez le **OK** bouton.
+8. Dans la liste **projet** , choisissez **WebPartNodeExtension**, puis choisissez le bouton **OK** .
 
-9. Dans la barre de menus, choisissez **Build** > **générer la Solution**, puis assurez-vous que la solution est compilée sans erreurs.
+9. Dans la barre de menus, choisissez **générer** > **générer la solution**, puis assurez-vous que la solution est compilée sans erreurs.
 
-10. Assurez-vous que le dossier de sortie pour le projet WebPartNode contienne maintenant le fichier WebPartNode.vsix.
+10. Assurez-vous que le dossier de sortie de la génération pour le projet WebPartNode contient maintenant le fichier WebPartNode. vsix.
 
-     Par défaut, le dossier de sortie est le... dossier \bin\debug sous le dossier qui contient votre fichier projet.
+     Par défaut, le dossier de sortie de la génération est le.. dossier \bin\Debug sous le dossier qui contient votre fichier projet.
 
 ## <a name="test-the-extension"></a>Tester l’extension
- Vous êtes maintenant prêt à tester la nouvelle **galerie de composants WebPart** nœud **Explorateur de serveurs**. Tout d’abord, commencez à déboguer le projet d’extension dans une instance expérimentale de Visual Studio. Puis utilisez la nouvelle **WebPart** nœud dans l’instance expérimentale de Visual Studio.
+ Vous êtes maintenant prêt à tester le nouveau nœud de la **Galerie de composants WebPart** dans **Explorateur de serveurs**. Tout d’abord, commencez par déboguer le projet d’extension dans une instance expérimentale de Visual Studio. Utilisez ensuite le nouveau nœud **composants WebPart** dans l’instance expérimentale de Visual Studio.
 
 #### <a name="to-start-debugging-the-extension"></a>Pour démarrer le débogage de l’extension
 
-1. Redémarrez Visual Studio en tant qu’administrateur, puis ouvrez le **WebPartNode** solution.
+1. Redémarrez Visual Studio avec les informations d’identification d’administration, puis ouvrez la solution **WebPartNode** .
 
-2. Dans le projet WebPartNodeExtension, ouvrez le **SiteNodeExtension** fichier de code et ajoutez un point d’arrêt pour les premières lignes de code dans le `NodeChildrenRequested` et `CreateWebPartNodes` méthodes.
+2. Dans le projet WebPartNodeExtension, ouvrez le fichier de code **SiteNodeExtension** , puis ajoutez un point d’arrêt aux premières lignes de code dans les méthodes `NodeChildrenRequested` et `CreateWebPartNodes`.
 
-3. Choisissez le **F5** touche pour démarrer le débogage.
+3. Appuyez sur la touche **F5** pour démarrer le débogage.
 
-     Visual Studio installe l’extension %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Web Extension de nœud de galerie de composants WebPart pour Explorer\1.0 de serveur et démarre une instance expérimentale de Visual Studio. Vous allez tester l’élément de projet dans cette instance de Visual Studio.
+     Visual Studio installe l’extension de l’extension de nœud de la Galerie de composants%UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Web pour le serveur Explorer\1.0 et démarre une instance expérimentale de Visual Studio. Vous allez tester l’élément de projet dans cette instance de Visual Studio.
 
 #### <a name="to-test-the-extension"></a>Pour tester l’extension
 
-1. Dans l’instance expérimentale de Visual Studio, dans la barre de menus, choisissez **vue** > **Explorateur de serveurs**.
+1. Dans l’instance expérimentale de Visual Studio, dans la barre de menus, choisissez **afficher** > **Explorateur de serveurs**.
 
-2. Vérifiez que le site SharePoint que vous souhaitez utiliser pour le test s’affiche sous le **connexions SharePoint** nœud **Explorateur de serveurs**. S’il n’est pas répertorié, procédez comme suit :
+2. Vérifiez que le site SharePoint que vous souhaitez utiliser pour le test s’affiche sous le nœud **Connexions SharePoint** dans **Explorateur de serveurs**. Si elle ne figure pas dans la liste, procédez comme suit :
 
-    1. Ouvrez le menu contextuel pour **connexions SharePoint**, puis choisissez **ajouter une connexion**.
+    1. Ouvrez le menu contextuel des **Connexions SharePoint**, puis choisissez **Ajouter une connexion**.
 
-    2. Dans le **ajouter une connexion SharePoint** boîte de dialogue, entrez l’URL pour le site SharePoint auquel vous souhaitez vous connecter, puis choisissez le **OK** bouton.
+    2. Dans la boîte de dialogue **Ajouter une connexion SharePoint** , entrez l’URL du site SharePoint auquel vous souhaitez vous connecter, puis choisissez le bouton **OK** .
 
          Pour spécifier le site SharePoint sur votre ordinateur de développement, tapez **http://localhost** .
 
-3. Développez le nœud de connexion de site (qui affiche l’URL de votre site), puis développez un nœud de site enfant (par exemple, **Site d’équipe**).
+3. Développez le nœud connexion au site (qui affiche l’URL de votre site), puis développez un nœud de site enfant (par exemple, **site d’équipe**).
 
-4. Vérifiez que le code dans l’autre instance de Visual Studio s’arrête au point d’arrêt que vous avez défini précédemment dans le `NodeChildrenRequested` (méthode), puis choisissez le **F5** touche pour continuer à déboguer le projet.
+4. Vérifiez que le code de l’autre instance de Visual Studio s’arrête sur le point d’arrêt que vous avez défini précédemment dans la méthode `NodeChildrenRequested`, puis appuyez sur la touche **F5** pour continuer à déboguer le projet.
 
-5. Dans l’instance expérimentale de Visual Studio, développez le **galerie de composants WebPart** nœud, ce qui s’affiche sous le nœud de site de niveau supérieur.
+5. Dans l’instance expérimentale de Visual Studio, développez le nœud **Galerie de composants WebPart** , qui apparaît sous le nœud de site de niveau supérieur.
 
-6. Vérifiez que le code dans l’autre instance de Visual Studio s’arrête au point d’arrêt que vous avez défini précédemment dans le `CreateWebPartNodes` (méthode), puis choisissez le **F5** touche pour continuer à déboguer le projet.
+6. Vérifiez que le code de l’autre instance de Visual Studio s’arrête sur le point d’arrêt que vous avez défini précédemment dans la méthode `CreateWebPartNodes`, puis appuyez sur la touche **F5** pour continuer à déboguer le projet.
 
-7. Dans l’instance expérimentale de Visual Studio, vérifiez que tous les composants WebPart sur le site connecté s’affichent sous le **galerie de composants WebPart** nœud **Explorateur de serveurs**.
+7. Dans l’instance expérimentale de Visual Studio, vérifiez que tous les composants WebPart sur le site connecté s’affichent sous le nœud **Galerie de composants WebPart** dans **Explorateur de serveurs**.
 
-8. Ouvrez le menu contextuel pour un composant WebPart, puis choisissez **propriétés**.
+8. Ouvrez le menu contextuel d’un composant WebPart, puis choisissez **Propriétés**.
 
-9. Dans le **propriétés** fenêtre, vérifiez que plus d’informations sur le composant WebPart s’affichent.
+9. Dans la fenêtre **Propriétés** , vérifiez que les détails sur le composant WebPart s’affichent.
 
-10. Dans **Explorateur de serveurs**, ouvrez le menu contextuel pour le même composant WebPart, puis choisissez **afficher un Message**.
+10. Dans **Explorateur de serveurs**, ouvrez le menu contextuel du même composant WebPart, puis choisissez **afficher le message**.
 
-     Dans la boîte de message qui s’affiche, choisissez le **OK** bouton.
+     Dans la boîte de message qui s’affiche, choisissez le bouton **OK** .
 
-## <a name="uninstall-the-extension-from-visual-studio"></a>Désinstallez l’extension de Visual Studio
- Une fois que vous avez terminé le test de l’extension, désinstallez-le à partir de Visual Studio.
+## <a name="uninstall-the-extension-from-visual-studio"></a>Désinstaller l’extension de Visual Studio
+ Une fois que vous avez fini de tester l’extension, désinstallez-la à partir de Visual Studio.
 
 #### <a name="to-uninstall-the-extension"></a>Pour désinstaller l'extension
 
-1. Dans l’instance expérimentale de Visual Studio, dans la barre de menus, choisissez **outils** > **Extensions et mises à jour**.
+1. Dans l’instance expérimentale de Visual Studio, dans la barre de menus, choisissez **outils** > **extensions et mises à jour**.
 
      La boîte de dialogue **Extensions et mises à jour** s’ouvre.
 
-2. Dans la liste des extensions, choisissez **nœud Galerie de composants WebPart pour l’Explorateur de serveurs**, puis choisissez le **désinstallation** bouton.
+2. Dans la liste des extensions, choisissez le **nœud Galerie de composants WebPart pour Explorateur de serveurs**, puis choisissez le bouton **désinstaller** .
 
-3. Dans la boîte de dialogue qui s’affiche, choisissez le **Oui** bouton.
+3. Dans la boîte de dialogue qui s’affiche, choisissez le bouton **Oui** .
 
-4. Choisissez le **redémarrer maintenant** bouton pour terminer la désinstallation.
+4. Choisissez le bouton **redémarrer maintenant** pour terminer la désinstallation.
 
      L’élément de projet est également désinstallé.
 
 5. Fermez les deux instances de Visual Studio (l’instance expérimentale et l’instance de Visual Studio dans laquelle la solution WebPartNode est ouverte).
 
 ## <a name="see-also"></a>Voir aussi
-- [Appeler des modèles d’objet SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)
-- [Étendre le nœud Connexions SharePoint dans l’Explorateur de serveurs](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
-- [Procédure pas à pas : Étendre l’Explorateur de serveurs pour afficher des WebParts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
+- [Appeler les modèles d’objet SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md)
+- [Étendre le nœud Connexions SharePoint dans Explorateur de serveurs](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)
+- [Procédure pas à pas : étendre Explorateur de serveurs pour afficher des composants WebPart](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
 - [Éditeur d’images pour les icônes](/cpp/windows/image-editor-for-icons)
-- [Création d’une icône ou une autre Image &#40;Éditeur d’images pour les icônes&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)
+- [Création d’une icône ou d' &#40;un autre éditeur d’images d’images pour les icônes&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)

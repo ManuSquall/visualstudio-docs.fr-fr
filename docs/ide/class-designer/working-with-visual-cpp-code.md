@@ -18,12 +18,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e59ee1305c0c482686505959aac7187902906086
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 228785c218b1c55a1af817761821acbe11a51c8d
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748897"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188965"
 ---
 # <a name="work-with-c-code-in-class-designer"></a>Utiliser du C++ code dans Concepteur de classes
 
@@ -46,7 +46,7 @@ Le **Concepteur de classes** prend en charge les éléments de code C++ suivants
 - TypeDef
 
 > [!NOTE]
-> Cela est différent du diagramme de classes UML, que vous pouvez créer dans un projet de modélisation. Pour plus d’informations, consultez [Diagrammes de classes UML : indications](../../modeling/create-uml-modeling-projects-and-diagrams.md).
+> Cela est différent du diagramme de classes UML, que vous pouvez créer dans un projet de modélisation. Pour plus d’informations, consultez [Diagrammes de classes UML : indications](../../modeling/what-s-new-for-design-in-visual-studio.md).
 
 ## <a name="troubleshoot-type-resolution-and-display-issues"></a>Résoudre les problèmes de résolution de type et d’affichage
 
@@ -84,7 +84,7 @@ L’erreur que vous allez probablement voir en cas de problème de résolution d
 
 ### <a name="troubleshoot-other-error-messages"></a>Résoudre d’autres messages d’erreur
 
-Vous pouvez trouver de l'aide sur la résolution des erreurs et des avertissements dans les forums publics Microsoft Developer Network (MSDN). Consultez le [Forum du Concepteur de classes Visual Studio](http://go.microsoft.com/fwlink/?linkid=160754).
+Vous pouvez trouver de l'aide sur la résolution des erreurs et des avertissements dans les forums publics Microsoft Developer Network (MSDN). Consultez le [Forum du Concepteur de classes Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsclassdesigner).
 
 ## <a name="limitations-for-c-code-elements"></a>Limitations pour les éléments de code C++
 

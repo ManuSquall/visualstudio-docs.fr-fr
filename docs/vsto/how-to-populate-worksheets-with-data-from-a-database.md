@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Remplir des feuilles de calcul avec des données à partir d’une base de données'
+title: 'Comment : remplir des feuilles de calcul avec des données d’une base de données'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,52 +14,50 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 67c12843d00bf8d5af51fa7af3175077527afa58
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0a1e01f5c9fc1372cda4d7d31f8ba56b90e166e7
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967759"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72985857"
 ---
-# <a name="how-to-populate-worksheets-with-data-from-a-database"></a>Procédure : Remplir des feuilles de calcul avec des données à partir d’une base de données
+# <a name="how-to-populate-worksheets-with-data-from-a-database"></a>Comment : remplir des feuilles de calcul avec des données d’une base de données
 
-Vous pouvez accéder des données dans les projets Office au niveau du document de la même façon que vous accéder aux données dans les projets Windows Forms. Vous utilisez les mêmes outils et le même code pour importer les données dans votre solution, et vous pouvez même utiliser des contrôles Windows Forms pour afficher les données. En outre, vous pouvez tirer parti de contrôles appelés contrôles hôtes, qui sont des objets natifs dans Microsoft Office Excel qui ont été améliorés avec des événements et une fonctionnalité de liaison de données. Pour plus d’informations, consultez [éléments hôtes et héberger de vue d’ensemble des contrôles](../vsto/host-items-and-host-controls-overview.md).
+Vous pouvez accéder aux données des projets Office au niveau du document de la même façon que vous accédez aux données des projets Windows Forms. Vous utilisez les mêmes outils et le même code pour importer les données dans votre solution, et vous pouvez même utiliser des contrôles Windows Forms pour afficher les données. En outre, vous pouvez tirer parti de contrôles appelés contrôles hôtes, qui sont des objets natifs dans Microsoft Office Excel qui ont été améliorés avec des événements et une fonctionnalité de liaison de données. Pour plus d’informations, consultez [vue d’ensemble des éléments hôtes et des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md).
 
 [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
-L'exemple suivant montre comment ajouter des contrôles liés aux données dans les projets au niveau du document à l'aide d'un concepteur. Pour obtenir un exemple montrant comment ajouter des contrôles liés aux données dans les projets au niveau de l’application en cours d’exécution, consultez [procédure pas à pas : Liaison de données complexe dans un projet de complément VSTO](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md).
-
-![lien vers la vidéo](../vsto/media/playvideo.gif "lien vers la vidéo") pour une démonstration vidéo connexe, consultez [How do I: Transférer des données dans une feuille de calcul Excel ? ](http://go.microsoft.com/fwlink/?LinkID=130277), et [How do I: Pour consommer des données de base de données dans Excel ? ](http://go.microsoft.com/fwlink/?LinkID=130287).
+L'exemple suivant montre comment ajouter des contrôles liés aux données dans les projets au niveau du document à l'aide d'un concepteur. Pour obtenir un exemple d’ajout de contrôles liés aux données dans des projets au niveau de l’application au moment de l’exécution, consultez [procédure pas à pas : liaison de données complexe dans un projet de complément VSTO](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md).
 
 ## <a name="add-a-data-bound-control-to-a-worksheet-at-design-time"></a>Ajouter un contrôle lié aux données à une feuille de calcul au moment du design
 
-### <a name="to-populate-a-worksheet-with-data-from-a-database"></a>Pour remplir une feuille de calcul avec des données à partir d’une base de données
+### <a name="to-populate-a-worksheet-with-data-from-a-database"></a>Pour remplir une feuille de calcul avec des données d’une base de données
 
-1. Ouvrez un projet de document Excel dans Visual Studio, avec la feuille de calcul ouverte dans le concepteur.
+1. Ouvrez un projet au niveau du document Excel dans Visual Studio, avec la feuille de calcul ouverte dans le concepteur.
 
 2. Ouvrez la fenêtre **Sources de données** et créez une source de données pour votre projet. Pour plus d’informations, consultez [ajouter de nouvelles connexions](../data-tools/add-new-connections.md).
 
-3. Faites glisser le champ ou la table que vous souhaitez à partir de la **des Sources de données** fenêtre à votre feuille de calcul.
+3. Faites glisser le champ ou la table de votre choix de la fenêtre **sources de données** vers votre feuille de calcul.
 
-Un des contrôles suivants est créé sur la feuille de calcul :
+L’un des contrôles suivants est créé sur la feuille de calcul :
 
-- Si vous faites glisser un champ, un <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle est créé sur la feuille de calcul. Pour plus d’informations, consultez [contrôle NamedRange](../vsto/namedrange-control.md).
+- Si vous faites glisser un champ, un contrôle de <xref:Microsoft.Office.Tools.Excel.NamedRange> est créé sur la feuille de calcul. Pour plus d’informations, consultez [NamedRange, contrôle](../vsto/namedrange-control.md).
 
-- Si vous faites glisser une table, un <xref:Microsoft.Office.Tools.Excel.ListObject> contrôle est créé sur la feuille de calcul. Pour plus d’informations, consultez [contrôle ListObject](../vsto/listobject-control.md).
+- Si vous faites glisser une table, un contrôle de <xref:Microsoft.Office.Tools.Excel.ListObject> est créé sur la feuille de calcul. Pour plus d’informations, consultez [ListObject Control](../vsto/listobject-control.md).
 
-Vous pouvez ajouter un autre contrôle en sélectionnant la table ou le champ dans le **des Sources de données** fenêtre, puis en choisissant un autre contrôle dans la liste déroulante.
+Vous pouvez ajouter un contrôle différent en sélectionnant la table ou le champ dans la fenêtre **sources de données** , puis en choisissant un autre contrôle dans la liste déroulante.
 
-## <a name="objects-in-the-project"></a>Objets dans le projet
+## <a name="objects-in-the-project"></a>Objets du projet
 
 Outre le contrôle, les objets de données suivants sont automatiquement ajoutés à votre projet :
 
-- Un dataset typé qui encapsule les tables de données auxquelles vous êtes connecté dans la base de données. Pour plus d’informations, consultez [outils de Dataset dans Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
+- Un dataset typé qui encapsule les tables de données auxquelles vous êtes connecté dans la base de données. Pour plus d’informations, consultez [outils de jeu de données dans Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
 
 - Un <xref:System.Windows.Forms.BindingSource> qui connecte le contrôle au dataset typé. Pour plus d’informations, consultez [vue d’ensemble du composant BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview).
 
-- Un TableAdapter qui connecte le dataset typé à la base de données. Pour plus d’informations, consultez [vue d’ensemble de TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
+- TableAdapter qui connecte le DataSet typé à la base de données. Pour plus d’informations, consultez [vue d’ensemble de TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
 
-- Un TableAdapterManager, qui est utilisé pour coordonner des adaptateurs de table dans le jeu de données pour activer les mises à jour hiérarchiques. Pour plus d’informations, consultez [mise à jour hiérarchique](../data-tools/hierarchical-update.md) et [TableAdapterManager référence](../data-tools/fill-datasets-by-using-tableadapters.md#tableadaptermanager-reference).
+- TableAdapterManager, qui est utilisé pour coordonner les adaptateurs de table dans le DataSet afin d’activer les mises à jour hiérarchiques. Pour plus d’informations, consultez [mise à jour hiérarchique](../data-tools/hierarchical-update.md) et [référence de TableAdapterManager](../data-tools/fill-datasets-by-using-tableadapters.md#tableadaptermanager-reference).
 
 Lorsque vous exécutez le projet, le contrôle affiche le premier enregistrement de la source de données. Vous pouvez utiliser le <xref:System.Windows.Forms.BindingSource> pour permettre aux utilisateurs de faire défiler les enregistrements.
 
@@ -67,16 +65,14 @@ Lorsque vous exécutez le projet, le contrôle affiche le premier enregistrement
 
 - Utilisez les méthodes <xref:System.Windows.Forms.BindingSource> telles que <xref:System.Windows.Forms.BindingSource.MoveNext%2A> et <xref:System.Windows.Forms.BindingSource.MovePrevious%2A>.
 
-Pour plus d’informations sur l’envoi des mises à jour pour le dataset typé et la base de données, consultez [Comment : Mettre à jour une source de données avec des données à partir d’un contrôle hôte](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
+Pour plus d’informations sur la façon d’envoyer des mises à jour au DataSet typé et à la base de données, consultez [Comment : mettre à jour une source de données avec les données d’un contrôle hôte](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Lier des données aux contrôles dans les solutions Office](../vsto/binding-data-to-controls-in-office-solutions.md)
+- [Lier des données à des contrôles dans les solutions Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Ajouter de nouvelles sources de données](../data-tools/add-new-data-sources.md)
 - [Lier des contrôles Windows Forms à des données dans Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-- [Guide pratique pour Remplir des documents avec des données à partir d’objets](../vsto/how-to-populate-documents-with-data-from-objects.md)
-- [Guide pratique pour Remplir des documents avec des données à partir d’une base de données](../vsto/how-to-populate-documents-with-data-from-a-database.md)
-- [Guide pratique pour Remplir des documents avec des données à partir des services](../vsto/how-to-populate-documents-with-data-from-services.md)
-- [Guide pratique pour Mettre à jour une source de données avec des données à partir d’un contrôle hôte](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
-- [Comment faire Transférer des données dans une feuille de calcul Excel](http://go.microsoft.com/fwlink/?LinkID=130277)
-- [Comment faire Pour consommer des données de base de données dans Excel ?](http://go.microsoft.com/fwlink/?LinkID=130287)
+- [Comment : remplir des documents avec des données d’objets](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [Comment : remplir des documents avec des données d’une base de données](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [Comment : remplir des documents avec des données de services](../vsto/how-to-populate-documents-with-data-from-services.md)
+- [Comment : mettre à jour une source de données avec les données d’un contrôle hôte](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)

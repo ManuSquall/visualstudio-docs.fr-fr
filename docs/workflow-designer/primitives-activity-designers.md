@@ -8,12 +8,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e74e8b08ab84bb8ea1de6bbcd85c4926c7c61fa
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d5b71b8d882bd91525c0fdbe5504cd4b44110f51
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650051"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188936"
 ---
 # <a name="primitives-activity-designers"></a>Concepteurs d'activités primitives
 
@@ -36,4 +36,4 @@ Les concepteurs d'activités primitives sont utilisés pour créer et configurer
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Utilisation des concepteurs d’activités](../workflow-designer/using-the-activity-designers.md)
+- [Utilisation des concepteurs d’activités](control-flow-activity-designers.md)

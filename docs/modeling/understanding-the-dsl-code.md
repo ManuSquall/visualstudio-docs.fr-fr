@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 017c28af68efa98507286e8acdc2b4d694353aa1
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 44f66ed25ab43db2d08db3cb93263bd61ac3a907
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747396"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189449"
 ---
 # <a name="understanding-the-dsl-code"></a>Fonctionnement du code DSL
 
@@ -192,7 +192,7 @@ Appuyez sur **F5** et expérimentez si vous n’êtes pas familiarisé avec ce m
 
  `CommandSet.cs`
 
- Les commandes de menu contextuel qui sont visibles sur le diagramme. Vous pouvez adapter cet ensemble ou y ajouter des éléments. Ce fichier contient le code pour les commandes. L'emplacement des commandes dans les menus est déterminé par le fichier Commands.vsct. Pour plus d’informations, consultez [écriture de commandes et d’actions utilisateur](../modeling/writing-user-commands-and-actions.md).
+ Les commandes de menu contextuel qui sont visibles sur le diagramme. Vous pouvez adapter cet ensemble ou y ajouter des éléments. Ce fichier contient le code pour les commandes. L'emplacement des commandes dans les menus est déterminé par le fichier Commands.vsct. Pour plus d’informations, consultez [écriture de commandes et d’actions utilisateur](how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
  `Constants.cs`
 
@@ -282,7 +282,7 @@ namespace Company.EmbedInForm
 
  `GeneratedVSCT.vsct`
 
- Localise les commandes de menu standard dans les menus, tels que le menu contextuel du diagramme, cliquez avec le bouton droit (contexte), le menu **Edition** , et ainsi de suite. Le code pour les commandes se trouve dans CommandSet.cs. Vous pouvez déplacer ou modifier les commandes standard et vous pouvez ajouter vos propres commandes. Pour plus d’informations, consultez [écriture de commandes et d’actions utilisateur](../modeling/writing-user-commands-and-actions.md).
+ Localise les commandes de menu standard dans les menus, tels que le menu contextuel du diagramme, cliquez avec le bouton droit (contexte), le menu **Edition** , et ainsi de suite. Le code pour les commandes se trouve dans CommandSet.cs. Vous pouvez déplacer ou modifier les commandes standard et vous pouvez ajouter vos propres commandes. Pour plus d’informations, consultez [écriture de commandes et d’actions utilisateur](how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
 
  `ModelExplorer.cs`
 

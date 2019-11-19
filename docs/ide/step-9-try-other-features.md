@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5af132efde0c1a49e5404fa602363aab0554e6f
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 07c0a3e24ac089bf29501dfd4e101baef73318fb
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72572469"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919137"
 ---
 # <a name="step-9-try-other-features"></a>Étape 9 : tester d'autres fonctionnalités
 Pour découvrir d'autres fonctionnalités, essayez de modifier les icônes et les couleurs, d'ajouter une horloge de jeu et d'ajouter des sons. Pour augmenter la difficulté du jeu, essayez d'agrandir la taille du plateau et d'ajuster la minuterie.
@@ -37,7 +37,7 @@ Pour télécharger une version complète de l’exemple, consultez [Exemple comp
 - Ajoutez un son lorsque le joueur trouve une paire identique, un autre lorsqu'il sélectionne deux icônes différentes et un troisième lorsque le programme masque à nouveau les icônes.
 
     > [!TIP]
-    > Pour émettre des sons, vous pouvez utiliser l'espace de noms <xref:System.Media>. Pour plus d’informations, consultez [Lire des sons dans une application Windows Forms (C#)](http://youtu.be/qOh4ooHg1UU) ou [Comment lire de l’audio dans Visual Basic](http://youtu.be/-4oPDeQrtMs).
+    > Pour émettre des sons, vous pouvez utiliser l'espace de noms <xref:System.Media>. Pour plus d’informations, consultez [Lire des sons dans une application Windows Forms (C#)](https://www.youtube.com/watch?v=qOh4ooHg1UU&feature=youtu.be) ou [Comment lire de l’audio dans Visual Basic](https://www.youtube.com/watch?v=-4oPDeQrtMs&feature=youtu.be).
 
 - Augmentez la difficulté du jeu en agrandissant la taille du plateau.
 

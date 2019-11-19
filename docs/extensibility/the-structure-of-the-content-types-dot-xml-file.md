@@ -13,18 +13,18 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5cc42a5346498c04f759956b2ca00094ac1df119
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: aac250053f90d99e7db27a9862d2dc1b33fadbfb
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72718730"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72983040"
 ---
 # <a name="the-structure-of-the-content_typesxml-file"></a>Structure du fichier [Content_types].xml
 Contient des informations sur les genres de contenu dans un package VSIX. Visual Studio utilise le fichier [Content_Types]. xml pour installer le package, mais il n’installe pas le fichier lui-même.
 
 > [!NOTE]
-> Bien que cette rubrique s’applique uniquement aux fichiers [Content_Type]. XML utilisés dans les packages VSIX, le type de fichier [Content_Types]. xml fait partie de la norme *OPC (Open Packaging Conventions)* . Pour plus d’informations, consultez [OPC : nouvelle norme pour l’empaquetage de vos données](http://go.microsoft.com/fwlink/?LinkID=148207) sur le site Web MSDN.
+> Bien que cette rubrique s’applique uniquement aux fichiers [Content_Type]. XML utilisés dans les packages VSIX, le type de fichier [Content_Types]. xml fait partie de la norme *OPC (Open Packaging Conventions)* . Pour plus d’informations, consultez [OPC : nouvelle norme pour l’empaquetage de vos données](https://msdn.microsoft.com/magazine/cc163372.aspx) sur le site Web MSDN.
 
 ## <a name="attributes-and-elements"></a>Attributs et éléments
  Les sections suivantes décrivent l’élément racine et ses attributs et éléments enfants.
@@ -102,4 +102,4 @@ Contient des informations sur les genres de contenu dans un package VSIX. Visual
 ## <a name="see-also"></a>Voir aussi
 - [Anatomie d’un package VSIX](../extensibility/anatomy-of-a-vsix-package.md)
 - [Informations de référence sur le schéma d’extension VSIX 1,0](https://msdn.microsoft.com/library/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
-- [OPC : nouvelle norme pour l’empaquetage de vos données](http://go.microsoft.com/fwlink/?LinkID=148207)
+- [OPC : nouvelle norme pour l’empaquetage de vos données](https://msdn.microsoft.com/magazine/cc163372.aspx)

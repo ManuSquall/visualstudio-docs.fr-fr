@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/31/2019
 ms.topic: conceptual
 description: Découvrez le compte de développeur Windows inclus dans votre abonnement Visual Studio.
-ms.openlocfilehash: 506edeb75a2dba2831c57698a4259a09834633de
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
-ms.translationtype: HT
+ms.openlocfilehash: e7dc24fef7328dee38f9aca92f3676573b0143ef
+ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787796"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72816426"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Compte de développeur Windows dans les abonnements Visual Studio
 Votre compte de développeur Windows, inclus avec certains abonnements Visual Studio, vous permet de proposer des applications Windows gratuites et payantes dans le Windows Store.
@@ -35,7 +35,7 @@ Nous vous recommandons d’ouvrir une nouvelle fenêtre de navigateur « privé
 7. Créez votre nom d’affichage d’éditeur.  Ce nom unique sera associé à l’ensemble de vos applications, services et compléments présentés aux utilisateurs.
 8. Entrez vos coordonnées et la langue par défaut de vos e-mails, puis cliquez sur **Suivant**.
 9. Vous pouvez être invité à vérifier votre mot de passe.  Entrez-le, puis cliquez sur **Se connecter**.
-10. Dans la page Inscription – Paiement, collez le code copié précédemment dans le champ Code promo.  La page est mise à jour et indique *qu’aucun paiement n’est requis*.  Cliquez sur **Suivant**.
+10. Dans la page Inscription – Paiement, collez le code copié précédemment dans le champ Code promo.  La page est mise à jour et indique *qu’aucun paiement n’est requis*.  Cliquez sur **Next**.
 11. Vérifiez les informations de votre compte et lisez le Contrat du développeur d’applications, puis cochez la case pour indiquer que vous acceptez les conditions générales.  Cliquez ensuite sur **Terminer**.
 12. Cliquez sur **Accéder au tableau de bord** pour commencer à utiliser votre compte de développeur Windows !
 
@@ -49,10 +49,10 @@ Nous vous recommandons d’ouvrir une nouvelle fenêtre de navigateur « privé
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure                                       | Non disponible                                                           |NA|
 ||
 
-<sup>1</sup>  *Inclut :  NFR (revente interdite), FTE, VSIP (Visual Studio Industry Partner), BizSpark, MCT Software & Services Developer. Exclut :  MPN (Microsoft Partner Network), Imagine, MVP (Most Valuable Professional), RD (Regional Director), MCT Software & Services.*
+<sup>1</sup>  *comprend : la revente interdite (NFR), FTE, Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer. Exclut : Microsoft Partner Network (MPN), imaginez, MVP (Most Valuable Professional), RD (Regional Director), MCT Software & services.*
 
 > [!NOTE]
-> Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à accéder à [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
+> Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à consulter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
 
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
 
@@ -63,4 +63,4 @@ Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Étapes suivantes
-Azure est votre bac à sable personnel pour le développement et le test.  Vous pouvez provisionner des machines virtuelles, des services cloud et d’autres ressources Azure. Veillez à activer votre [avantage Azure](vs-azure.md) pour commencer à utiliser Azure avec des crédits mensuels.
+Azure est votre bac à sable personnel pour le développement et le test.  Vous pouvez provisionner des machines virtuelles, des services cloud et d’autres ressources Azure. Veillez à activer votre [avantage Azure](vs-azure.md) pour commencer à utiliser votre crédit Azure DevTest individuel.

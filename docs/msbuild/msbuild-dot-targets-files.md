@@ -1,5 +1,5 @@
 ---
-title: Fichiers .Targets MSBuild | Microsoft Docs
+title: Fichiers MSBuild. targets | Microsoft Docs
 ms.date: 02/24/2017
 ms.topic: reference
 dev_langs:
@@ -8,30 +8,30 @@ dev_langs:
 - C++
 - jsharp
 helpviewer_keywords:
-- .Targets files
-- MSBuild, .Targets files
+- .targets files
+- MSBuild, .targets files
 ms.assetid: f6d98eb4-d2fa-49b7-8e3c-bae1ca3cf596
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bacc58184d0ea78a5e54d7cc7b0b93df107b3300
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
-ms.translationtype: HT
+ms.openlocfilehash: 5dc3964524536b1d0452462512e5847311e8bfeb
+ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681413"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73983824"
 ---
 # <a name="msbuild-targets-files"></a>Fichiers .targets MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] inclut plusieurs fichiers *.targets* contenant des éléments, des propriétés, des cibles et des tâches pour les scénarios courants. Ces fichiers sont importés automatiquement dans la plupart des fichiers projet [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour en simplifier la maintenance et la lisibilité.
 
  Les projets importent généralement un ou plusieurs fichiers *.targets* pour définir leur processus de génération. Par exemple, un projet [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] créé par [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] importera *Microsoft.CSharp.targets*, qui importe *Microsoft.Common.targets*. Le projet [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] lui-même définit les éléments et les propriétés propres à ce projet, mais les règles de génération standard d’un projet [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] sont définies dans les fichiers *.targets* importés.
 
- La valeur `$(MSBuildToolsPath)` spécifie le chemin de ces fichiers *.targets* courants. Si `ToolsVersion` est égale à 4.0, les fichiers se trouvent à l’emplacement suivant : *\<WindowsInstallationPath>\Microsoft.NET\Framework\v4.0.30319\\*
+ La valeur `$(MSBuildToolsPath)` spécifie le chemin de ces fichiers *.targets* courants. Si la `ToolsVersion` est égale à 4.0, les fichiers se trouvent à l’emplacement suivant : *\<WindowsInstallationPath>\Microsoft.NET\Framework\v4.0.30319\\*
 
 > [!NOTE]
-> Pour plus d’informations sur la création de vos propres cibles, consultez l’article [Targets (Cibles MSBuild)](../msbuild/msbuild-targets.md). Pour plus d’informations sur l’insertion d’un fichier projet dans un autre fichier projet à l’aide de l’élément `Import`, consultez [Import, élément (MSBuild)](../msbuild/import-element-msbuild.md) et [Guide pratique pour utiliser la même cible dans plusieurs fichiers projet](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md).
+> Pour plus d’informations sur la création de vos propres cibles, consultez l’article [Targets (Cibles MSBuild)](../msbuild/msbuild-targets.md). Pour plus d’informations sur l’utilisation de l’élément `Import` pour insérer un fichier projet dans un autre fichier projet, consultez les articles [Import, élément (MSBuild)](../msbuild/import-element-msbuild.md) et [Guide pratique pour utiliser la même cible dans plusieurs fichiers projet](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md).
 
 ## <a name="common-targets-files"></a>Fichiers .targets communs
 

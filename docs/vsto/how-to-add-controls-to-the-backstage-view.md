@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Ajouter des contrôles au mode Backstage '
+title: 'Comment : ajouter des contrôles au mode Backstage '
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -20,33 +20,33 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c4241464fe8a43af882fbdbad0f898838e8fd897
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 87cea877928baf52b0442ed9b0d952fcf649f155
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62826779"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986007"
 ---
-# <a name="how-to-add-controls-to-the-backstage-view"></a>Procédure : Ajouter des contrôles au mode Backstage
-  Vous pouvez utiliser le Concepteur de ruban pour ajouter des contrôles au menu qui s’ouvre lorsque vous cliquez sur le **fichier** onglet. Lorsque vous exécutez l’application, les contrôles que vous ajoutez à la **fichier** onglet s’affiche un groupe nommé **Add-ins**.
+# <a name="how-to-add-controls-to-the-backstage-view"></a>Comment : ajouter des contrôles au mode Backstage
+  Vous pouvez utiliser le concepteur de ruban pour ajouter des contrôles au menu qui s’ouvre lorsque vous cliquez sur l’onglet **fichier** . Quand vous exécutez l’application, les contrôles que vous ajoutez à l’onglet **fichier** apparaissent un groupe nommé **Add-ins**.
 
- Vous ne pouvez pas placer des contrôles avant ou après les contrôles prédéfinis à l’aide du Concepteur de ruban dans Visual Studio. Un contrôle intégré est un contrôle qui figure déjà dans le mode Backstage. Si vous souhaitez positionner des contrôles avant ou après les contrôles prédéfinis, vous devez utiliser un fichier XML du ruban. Pour plus d’informations sur **ruban (XML)**, consultez [ruban XML](../vsto/ribbon-xml.md). Pour plus d’informations sur la personnalisation du mode Backstage, consultez [Introduction à la Backstage Office 2010 pour les développeurs](http://go.microsoft.com/fwlink/?LinkId=182189) et [personnaliser la Backstage Office 2010 pour les développeurs](http://go.microsoft.com/fwlink/?LinkId=182188).
+ Vous ne pouvez pas positionner les contrôles avant ou après les contrôles prédéfinis à l’aide du concepteur de ruban dans Visual Studio. Un contrôle intégré est un contrôle qui est déjà affiché en mode Backstage. Si vous souhaitez positionner les contrôles avant ou après les contrôles prédéfinis, vous devez utiliser un ruban XML. Pour plus d’informations sur le **Ruban (XML)** , consultez [Ruban XML](../vsto/ribbon-xml.md). Pour plus d’informations sur la personnalisation du mode Backstage, consultez [Introduction au mode Backstage office 2010 pour les développeurs](/previous-versions/office/developer/office-2010/ee691833(v=office.14)) et [Personnalisation du mode backstage d’Office 2010 pour les développeurs](/previous-versions/office/developer/office-2010/ee815851(v=office.14)).
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
 ### <a name="to-add-controls-to-backstage-view"></a>Pour ajouter des contrôles au mode Backstage
 
-1. Ouvrez l’élément Ruban en mode Design.
+1. Ouvrez l’élément de ruban dans Mode Création.
 
-     Pour plus d’informations sur la façon d’ajouter un **ruban (Concepteur visuel)** d’élément à votre projet, consultez [Comment : Commencer la personnalisation du ruban](../vsto/how-to-get-started-customizing-the-ribbon.md).
+     Pour plus d’informations sur l’ajout d’un élément **Ruban (concepteur visuel)** à votre projet, consultez [Comment : prendre en main la personnalisation du ruban](../vsto/how-to-get-started-customizing-the-ribbon.md).
 
-2. Dans le Concepteur de ruban, cliquez sur le **fichier** onglet.
+2. Dans le concepteur de ruban, cliquez sur l’onglet **fichier** .
 
-     Un concepteur de menus s’affiche. Cette aire de conception ne contient pas tous les contrôles.
+     Un concepteur de menus s’affiche. Cette aire de conception ne contient pas de contrôles.
 
-3. À partir de la **contrôles de ruban Office** onglet de la **boîte à outils**, faites glisser les contrôles suivants sur le Concepteur de menus :
+3. À partir de l’onglet **contrôles de ruban Office** de la **boîte à outils**, faites glisser l’un des contrôles suivants sur le concepteur de menus :
 
-    - Bouton
+    - Button
 
     - Case à cocher
 
@@ -60,11 +60,11 @@ ms.locfileid: "62826779"
 
     - ToggleButton
 
-4. Faites glisser les contrôles pour les déplacer vers les nouveaux emplacements sur le menu.
+4. Faites glisser les contrôles pour les déplacer vers de nouvelles positions dans le menu.
 
 ## <a name="see-also"></a>Voir aussi
 - [Vue d’ensemble du ruban](../vsto/ribbon-overview.md)
 - [Concepteur de ruban](../vsto/ribbon-designer.md)
-- [Ribbon XML](../vsto/ribbon-xml.md)
-- [Guide pratique pour Prise en main personnaliser le ruban](../vsto/how-to-get-started-customizing-the-ribbon.md)
-- [Procédure pas à pas : Créer un onglet personnalisé à l’aide du Concepteur de ruban](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
+- [Élément XML Ribbon](../vsto/ribbon-xml.md)
+- [Comment : commencer à personnaliser le ruban](../vsto/how-to-get-started-customizing-the-ribbon.md)
+- [Procédure pas à pas : création d’un onglet personnalisé à l’aide du concepteur de ruban](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)

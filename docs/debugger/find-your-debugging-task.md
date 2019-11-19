@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4667fc630d86691d95e9dc9cd205b29f7b0f525
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
+ms.openlocfilehash: b833d8b68af418b727861226df41c700d582805e
+ms.sourcegitcommit: d55438841123aad56a524a65332a86ad67af386b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72349706"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73599290"
 ---
 # <a name="find-your-debugging-task-in-visual-studio"></a>Rechercher votre tâche de débogage dans Visual Studio
 
@@ -43,11 +43,15 @@ Dans le cas C# contraire F# , pour et uniquement, vous pouvez [suivre un ID d’
 
 ### <a name="pause-code-inside-a-loop-at-a-certain-iteration"></a>Suspendre le code à l’intérieur d’une boucle à une certaine itération
 
-Définissez un point d’arrêt en utilisant le **nombre d’accès** comme condition. Pour plus d’informations, consultez [nombre d’accès](using-breakpoints.md#hit-count).
+Définissez un point d’arrêt en utilisant le **nombre d’accès** comme condition. Pour plus d’informations, consultez [nombre d’accès](using-breakpoints.md#set-a-hit-count-condition).
 
 ### <a name="pause-code-at-the-start-of-a-function-when-you-know-the-function-name-but-not-its-location"></a>Suspendre le code au début d’une fonction lorsque vous connaissez le nom de la fonction, mais pas son emplacement
 
 Vous pouvez le faire avec un point d’arrêt sur fonction. Pour plus d’informations, consultez [définir des points d’arrêt sur fonction](using-breakpoints.md#BKMK_Set_a_breakpoint_in_a_source_file).
+
+### <a name="pause-code-at-the-start-of-multiple-functions-with-the-same-name"></a>Suspendre le code au début de plusieurs fonctions portant le même nom
+
+Quand vous avez plusieurs fonctions portant le même nom (fonctions ou fonctions surchargées dans différents projets), vous pouvez utiliser un [point d’arrêt sur fonction](using-breakpoints.md#BKMK_Set_a_breakpoint_in_a_source_file).
 
 ### <a name="manage-and-keep-track-of-your-breakpoints"></a>Gérer et suivre vos points d’arrêt
 
@@ -99,13 +103,21 @@ Pour configurer les options de débogueur et les paramètres de projet du débog
 
 ## <a name="additional-tasks"></a>Tâches supplémentaires
 
+### <a name="fix-an-exception"></a>Corriger une exception
+
+Consultez [corriger une exception](write-better-code-with-visual-studio.md#fix-an-exception).
+
 ### <a name="edit-code-during-a-debugging-session"></a>Modifier le code pendant une session de débogage
 
-Utilisez [Modifier & Continuer](edit-and-continue.md). Pour XAML, utilisez le [rechargement à chaud XAML](xaml-hot-reload.md).
+Utilisez [Modifier & Continuer](edit-and-continue.md). Pour XAML, utilisez le [rechargement à chaud XAML](../xaml-tools/xaml-hot-reload.md).
 
 ### <a name="send-messages-to-the-output-window-without-modifying-code"></a>Envoyer des messages à la fenêtre sortie sans modifier le code
 
 Définit un trace. Pour plus d’informations, consultez Utilisation des points de [trace](using-tracepoints.md).
+
+## <a name="view-the-order-in-which-functions-are-called"></a>Afficher l’ordre dans lequel les fonctions sont appelées
+
+Consultez [comment afficher la pile des appels](how-to-use-the-call-stack-window.md).
 
 ### <a name="debug-on-remote-machines"></a>Déboguer sur des ordinateurs distants
 

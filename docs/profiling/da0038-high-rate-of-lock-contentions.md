@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ba95cde967f428717be852dad785233eb96cb290
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 43b4ddedf68d082c8de50a38f759c5db0a594d00
+ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444883"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73024678"
 ---
 # <a name="da0038-high-rate-of-lock-contentions"></a>DA0038 : Taux élevé de conflits de verrou
 
@@ -27,7 +27,7 @@ ms.locfileid: "63444883"
 |Category|Utilisation du .NET Framework|
 |Méthode de profilage|Échantillonnage<br /><br /> Instrumentation<br /><br /> Mémoire .NET|
 |Message|Un taux élevé de conflits de verrou .NET se produit. Analysez la raison de ce conflit de verrou en exécutant un profil Concurrence.|
-|Type de règle|Information|
+|Type de règle|Informations|
 
  Lorsque vous effectuez un profilage à l’aide de la méthode d’échantillonnage, de mémoire .NET ou de conflit des ressources, vous devez collecter au moins 25 échantillons pour déclencher cette règle.
 
@@ -35,9 +35,9 @@ ms.locfileid: "63444883"
  Les données relatives aux performances système qui sont collectées avec les données de profilage indiquent qu’un taux très élevé de conflits de verrouillage a été relevé lors de l’exécution de l’application. Effectuez un nouveau profilage à l’aide de la méthode de profilage d’accès concurrentiel pour rechercher la cause des conflits.
 
 ## <a name="rule-description"></a>Description de la règle
- Les verrous sont utilisés pour protéger des sections critiques du code qui doivent être exécutées séquentiellement par un thread à la fois dans une application multithread. Le common language runtime (CLR) Microsoft .NET fournit un ensemble complet de primitives de synchronisation et de verrouillage. Par exemple, le langage C# prend en charge l’instruction lock (SyncLock en Visual Basic). Une application managée peut appeler les méthodes Monitor.Enter et Monitor.Exit dans l’espace de noms System.Threading pour acquérir et libérer directement un verrou. .NET Framework prend en charge d’autres primitives de synchronisation et de verrouillage, y compris des classes qui prennent en charge Mutex, ReaderWriterLock et Semaphore. Pour plus d’informations, consultez [Présentation des primitives de synchronisation](http://go.microsoft.com/fwlink/?LinkId=177867) dans le guide du développeur .NET Framework, sur le site MSDN. Les classes .NET Framework sont elles-mêmes superposées à des services de synchronisation de niveau inférieur intégrés au système d’exploitation Windows. Ceux-ci incluent des objets section critiques, ainsi que de nombreuses fonctions d’attente (wait) et fonctions signalant des événements. Pour plus d’informations, consultez la section [Synchronisation](http://go.microsoft.com/fwlink/?LinkId=177869) dans la documentation « Développement Win32 et COM » sur MSDN Library.
+ Les verrous sont utilisés pour protéger des sections critiques du code qui doivent être exécutées séquentiellement par un thread à la fois dans une application multithread. Le common language runtime (CLR) Microsoft .NET fournit un ensemble complet de primitives de synchronisation et de verrouillage. Par exemple, le langage C# prend en charge l’instruction lock (SyncLock en Visual Basic). Une application managée peut appeler les méthodes Monitor.Enter et Monitor.Exit dans l’espace de noms System.Threading pour acquérir et libérer directement un verrou. .NET Framework prend en charge d’autres primitives de synchronisation et de verrouillage, y compris des classes qui prennent en charge Mutex, ReaderWriterLock et Semaphore. Pour plus d’informations, consultez [Présentation des primitives de synchronisation](/dotnet/standard/threading/overview-of-synchronization-primitives) dans le guide du développeur .NET Framework, sur le site MSDN. Les classes .NET Framework sont elles-mêmes superposées à des services de synchronisation de niveau inférieur intégrés au système d’exploitation Windows. Ceux-ci incluent des objets section critiques, ainsi que de nombreuses fonctions d’attente (wait) et fonctions signalant des événements. Pour plus d’informations, consultez la section [Synchronisation](/windows/win32/sync/synchronization) dans la documentation « Développement Win32 et COM » sur MSDN Library.
 
- Derrière les classes .NET Framework et les objets Windows natifs qui sont utilisés pour la synchronisation et le verrouillage se trouvent des emplacements de mémoire partagée qui doivent être modifiés à l’aide d’opérations à blocage. Les opérations à blocage utilisent des instructions spécifiques au matériel qui opèrent sur des emplacements de mémoire partagée pour modifier leur état à l’aide d’opérations atomiques. Les opérations atomiques sont cohérentes sur tous les processeurs de l’ordinateur. Les objets Lock et WaitHandle sont des objets .NET qui utilisent automatiquement des opérations à blocage lorsqu’ils sont définis ou réinitialisés. D’autres structures de données de mémoire partagée de votre application peuvent nécessiter que vous utilisiez des opérations à blocage afin d’être mises à jour de manière thread-safe. Pour plus d’informations, consultez [Opérations à blocage](http://go.microsoft.com/fwlink/?LinkId=177870) dans la section .NET Framework de MSDN Library.
+ Derrière les classes .NET Framework et les objets Windows natifs qui sont utilisés pour la synchronisation et le verrouillage se trouvent des emplacements de mémoire partagée qui doivent être modifiés à l’aide d’opérations à blocage. Les opérations à blocage utilisent des instructions spécifiques au matériel qui opèrent sur des emplacements de mémoire partagée pour modifier leur état à l’aide d’opérations atomiques. Les opérations atomiques sont cohérentes sur tous les processeurs de l’ordinateur. Les objets Lock et WaitHandle sont des objets .NET qui utilisent automatiquement des opérations à blocage lorsqu’ils sont définis ou réinitialisés. D’autres structures de données de mémoire partagée de votre application peuvent nécessiter que vous utilisiez des opérations à blocage afin d’être mises à jour de manière thread-safe. Pour plus d’informations, consultez [Opérations à blocage](/dotnet/api/system.threading.interlocked) dans la section .NET Framework de MSDN Library.
 
  La synchronisation et le verrouillage sont des mécanismes qui permettent de garantir que les applications multithreads s’exécutent correctement. Chaque thread d’une application multithread est une unité d’exécution indépendante qui est planifiée indépendamment par le système d’exploitation. Un conflit de verrouillage se produit chaque fois qu’un thread qui tente d’acquérir un verrou est retardé à cause d’un autre thread qui détient le verrou.
 
@@ -46,7 +46,7 @@ ms.locfileid: "63444883"
  Cette règle se déclenche lorsque les mesures prises pendant une exécution de profilage indiquent une quantité excessive de conflits de verrou. Les conflits de verrou retardent l’exécution des threads qui attendent le verrou. Vous devez toujours rechercher la cause des conflits de verrou, même lorsque vous exécutez des tests unitaires et des tests de charge sur du matériel bas de gamme et même si le niveau de conflit est peu important.
 
 > [!NOTE]
-> Quand le taux de conflits de verrou signalés dans les données de profilage est extrêmement élevé, le message d’avertissement [DA0039 : taux très élevé de conflits de verrou](../profiling/da0039-very-high-rate-of-lock-contentions.md) est déclenché à la place de ce message d’information.
+> Lorsque le taux de conflits de verrou signalés dans les données de profilage est très élevé, le message d’avertissement [DA0039 : Taux très élevé de conflits de verrou](../profiling/da0039-very-high-rate-of-lock-contentions.md) est déclenché à la place de ce message informatif.
 
 ## <a name="how-to-investigate-a-warning"></a>Comment rechercher la cause d’un avertissement
  Double-cliquez sur le message pour accéder à la vue [Marques](../profiling/marks-view.md) des données de profilage.  Recherchez la colonne **Verrous et threads CLR .NET\Taux de conflits/s**. Déterminez s’il existe des phases spécifiques de l’exécution du programme durant lesquelles les conflits de verrou sont plus nombreux.

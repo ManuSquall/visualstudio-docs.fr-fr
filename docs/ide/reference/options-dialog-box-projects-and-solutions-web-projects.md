@@ -10,12 +10,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa4d5013aea15bec9b2d7c308836ef5e9d212a65
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: bae8a8679a3295f665a15cc6b088cc93aaababd9
+ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747860"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72919204"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>Boîte de dialogue Options, Projets et solutions, Projets web
 
@@ -27,7 +27,7 @@ Par défaut, l’exécution d’un projet web dans Visual Studio utilise le Serv
 
 **Utiliser la version 64 bits d’IIS Express pour les sites et les projets web**
 
-Sélectionnez cette option pour utiliser IIS Express au lieu du serveur Visual Studio Development. Pour plus d’informations, consultez [Introduction à IIS Express](http://go.microsoft.com/?linkid=9747914) et [Présentation d’IIS Express](http://go.microsoft.com/?linkid=9747915).
+Sélectionnez cette option pour utiliser IIS Express au lieu du serveur Visual Studio Development. Pour plus d’informations, consultez [Introduction à IIS Express](https://weblogs.asp.net/scottgu/introducing-iis-express) et [Présentation d’IIS Express](/iis/extensions/introduction-to-iis-express/iis-express-overview).
 
 **Avertir avant d’exécuter des applications web si la liste d’erreurs comporte des erreurs**
 

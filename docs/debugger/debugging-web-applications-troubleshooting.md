@@ -1,5 +1,5 @@
 ---
-title: Déboguer les applications web - résolution des problèmes | Microsoft Docs
+title: Débogage d’applications Web-résolution des problèmes | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -18,20 +18,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cf25518a5511c0da629c400adfe866789929ea2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6907ba5f0b48721646c57964012bf0aaa0838b60
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852350"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73188318"
 ---
-# <a name="debugging-web-applications-troubleshooting"></a>Débogage d’applications web : Résolution des problèmes
+# <a name="debugging-web-applications-troubleshooting"></a>Débogage d'applications Web : dépannage
 Cette section contient des procédures courantes qui peuvent servir à résoudre des erreurs.
 
 ## <a name="in-this-section"></a>Dans cette section
- [Guide pratique pour Vérifiez les paramètres des propriétés IIS](../debugger/how-to-verify-iis-property-settings.md) explique comment définir correctement les propriétés dans IIS pour activer le débogage.
+ [Comment : vérifier les paramètres des propriétés IIS](../debugger/how-to-verify-iis-property-settings.md) Explique comment définir correctement les propriétés dans IIS pour activer le débogage.
 
 ## <a name="related-sections"></a>Rubriques connexes
- [Débogage d’applications web : Erreurs et dépannage](../debugger/debugging-web-applications-errors-and-troubleshooting.md) explique la résolution des problèmes et d’erreurs.
+ [Débogage d’applications Web : erreurs et dépannage](../debugger/debugging-web-applications-errors-and-troubleshooting.md) Explique la résolution des problèmes et des erreurs.
 
- [Débogage des Applications Web et scripts](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications) vue d’ensemble du débogage d’applications Web telles que [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], services Web XML et les projets ATL server.
+ [Débogage d’applications et de scripts Web](how-to-enable-debugging-for-aspnet-applications.md) Vue d’ensemble du débogage d’applications Web telles que les [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], les services Web XML et les projets ATL Server.

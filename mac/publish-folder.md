@@ -8,21 +8,21 @@ author: sayedihashimi
 ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
-ms.openlocfilehash: 165cfc38b8289946e0966083785defd18ca87d77
-ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.openlocfilehash: 5dfee3999eddd8c4dacdd6180e18a4a50e6535dc
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71095409"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73715911"
 ---
 # <a name="publish-to-a-folder-using-visual-studio-for-mac"></a>Publier dans un dossier à l’aide de Visual Studio pour Mac
 
 Vous pouvez utiliser l’outil publier pour publier une console .NET Core ou des applications ASP.NET Core dans un dossier.
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Configuration requise
 
 - [Visual Studio 2019 pour Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019) installé avec .net Core activé.
-- Une console .NET Core ou un projet de ASP.NET Core. Si vous n’avez pas encore de projet, vous pouvez en [créer un](https://docs.microsoft.com/visualstudio/mac/create-new-projects?view=vsmac-2019).
+- Une console .NET Core ou un projet de ASP.NET Core. Si vous n’avez pas encore de projet, vous pouvez en [créer un](/visualstudio/mac/create-new-projects?view=vsmac-2019).
 
 ## <a name="publish-to-folder"></a>Publier sur un dossier
 

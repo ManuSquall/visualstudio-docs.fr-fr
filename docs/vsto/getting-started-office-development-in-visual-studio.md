@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7a8a49f2b72745dac18a46fe8567578bca090834
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 1439bef59c621523b74f0e0634cd809deea1f3ee
+ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551496"
+ms.lasthandoff: 10/28/2019
+ms.locfileid: "72986063"
 ---
 # <a name="get-started-office-development-in-visual-studio"></a>Prise en main (développement Office dans Visual Studio)
   Cette section contient des rubriques qui vous préparent à l'utilisation des outils de développement Microsoft Office dans Visual Studio.
@@ -88,4 +88,4 @@ ms.locfileid: "69551496"
 
  Fournit des informations relatives à la façon de rendre des solutions Office accessibles à vos utilisateurs, ainsi qu'aux problèmes majeurs à prendre en considération lors du choix de la méthode de déploiement et de la définition de la sécurité.
 
-- [Visual Studio Tools pour les articles techniques Office et les procédures visuelles](http://go.microsoft.com/fwlink/?LinkID=106640) Contient des liens vers des vidéos et des articles techniques sur les solutions Office créées à l’aide de Visual Studio.
+- [Visual Studio Tools pour les articles techniques Office et les procédures visuelles](/previous-versions/office/developer/office-2007/bb871648(v=office.12)) Contient des liens vers des vidéos et des articles techniques sur les solutions Office créées à l’aide de Visual Studio.

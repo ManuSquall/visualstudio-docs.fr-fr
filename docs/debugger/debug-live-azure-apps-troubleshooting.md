@@ -11,18 +11,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27df4c097d829a4d28a77b9b1ad96eb389f4096c
-ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
+ms.openlocfilehash: dc0d5ce27c3241b89a1baaf540cab4f1f56d24b5
+ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71962942"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72911598"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Résolution des problèmes et problèmes connus du débogage de capture instantanée dans Visual Studio.
 
-Si les étapes décrites dans cet article ne permettent pas de résoudre votre problème, recherchez le problème dans la [communauté des développeurs](https://developercommunity.visualstudio.com/spaces/8/index.html) ou signalez un nouveau problème en choisissant **aide** > **Envoyer des commentaires** > **signale un problème** dans Visual Studio.
+Si les étapes décrites dans cet article ne permettent pas de résoudre votre problème, recherchez le problème sur la [communauté des développeurs](https://developercommunity.visualstudio.com/spaces/8/index.html) ou signalez un nouveau problème en choisissant **aide** > **Envoyer des commentaires** > **signaler un problème** dans Visual Studio.
 
-## <a name="issue-attach-snapshot-debugger-encounters-an-http-status-code-error"></a>Problème : Erreur « Attach Débogueur de capture instantanée » rencontre une erreur de code d’état HTTP
+## <a name="issue-attach-snapshot-debugger-encounters-an-http-status-code-error"></a>Problème : « attacher Débogueur de capture instantanée » rencontre une erreur de code d’état HTTP
 
 Si vous voyez l’erreur suivante dans la fenêtre de **sortie** lors de la tentative d’attachement, il peut s’agir d’un problème connu répertorié ci-dessous. Essayez les solutions proposées et, si le problème persiste, contactez l’alias précédent.
 
@@ -34,7 +34,7 @@ Cette erreur indique que l’appel REST émis par Visual Studio vers Azure utili
 
 Suivez ces étapes :
 
-* Assurez-vous que votre compte de personnalisation Visual Studio dispose des autorisations d’accès à l’abonnement Azure et à la ressource à laquelle vous vous connectez. Un moyen rapide de déterminer cela consiste à vérifier si la ressource est disponible dans la boîte de dialogue à partir de **Déboguer** > **attacher débogueur de capture instantanée...**  >  @no__t de**ressources Azure**-5**Sélectionnez existant**ou dans Cloud Explorer.
+* Assurez-vous que votre compte de personnalisation Visual Studio dispose des autorisations d’accès à l’abonnement Azure et à la ressource à laquelle vous vous connectez. Un moyen rapide de déterminer cela consiste à vérifier si la ressource est disponible dans la boîte de dialogue à partir de **Déboguer** > **attacher des débogueur de capture instantanée...**  > **ressource Azure** > **Sélectionnez existant**ou dans Cloud Explorer.
 * Si cette erreur persiste, utilisez l’un des canaux de commentaires décrits au début de cet article.
 
 ### <a name="403-forbidden"></a>(403) interdit
@@ -43,7 +43,7 @@ Cette erreur indique que l’autorisation est refusée. Cela peut être dû à d
 
 Suivez ces étapes :
 
-* Vérifiez que votre compte Visual Studio dispose d’un abonnement Azure valide avec les autorisations de Access Control basées sur les rôles (RBAC) nécessaires pour la ressource. Pour AppService, vérifiez si vous disposez des autorisations nécessaires pour [interroger](https://docs.microsoft.com/rest/api/appservice/appserviceplans/get) le plan App service hébergeant votre application.
+* Vérifiez que votre compte Visual Studio dispose d’un abonnement Azure valide avec les autorisations de Access Control basées sur les rôles (RBAC) nécessaires pour la ressource. Pour AppService, vérifiez si vous disposez des autorisations nécessaires pour [interroger](/rest/api/appservice/appserviceplans/get) le plan App service hébergeant votre application.
 * Vérifiez que l’horodatage de votre ordinateur client est correct et à jour. Les serveurs avec des horodateurs de plus de 15 minutes de l’horodateur de la demande génèrent généralement cette erreur.
 * Si cette erreur persiste, utilisez l’un des canaux de commentaires décrits au début de cet article.
 
@@ -54,8 +54,8 @@ Cette erreur indique que le site Web est introuvable sur le serveur.
 Suivez ces étapes :
 
 * Vérifiez que vous disposez d’un site Web déployé et en cours d’exécution sur la ressource App Service à laquelle vous êtes connecté.
-* Vérifiez que le site est disponible sur https://@no__t -0resource\>.azurewebsites.net
-* Vérifiez que votre application Web personnalisée en cours d’exécution ne retourne pas de code d’État 404 quand vous y accédez à https://@no__t -0resource\>.azurewebsites.net
+* Vérifiez que le site est disponible sur https://\<Resource\>. azurewebsites.net
+* Vérifiez que votre application Web personnalisée en cours d’exécution ne retourne pas de code d’État 404 quand vous y accédez à https://\<Resource\>. azurewebsites.net
 * Si cette erreur persiste, utilisez l’un des canaux de commentaires décrits au début de cet article.
 
 ### <a name="406-not-acceptable"></a>(406) non acceptable
@@ -64,7 +64,7 @@ Cette erreur indique que le serveur n’est pas en mesure de répondre au type d
 
 Suivez ces étapes :
 
-* Vérifiez que votre site est disponible sur https://@no__t -0resource\>.azurewebsites.net
+* Vérifiez que votre site est disponible sur https://\<Resource\>. azurewebsites.net
 * Vérifiez que votre site n’a pas été migré vers de nouvelles instances. Débogueur de capture instantanée utilise la notion de ARRAffinity pour acheminer les demandes vers des instances spécifiques qui peuvent générer cette erreur par intermittence.
 * Si cette erreur persiste, utilisez l’un des canaux de commentaires décrits au début de cet article.
 
@@ -88,7 +88,7 @@ Suivez ces étapes :
 
 ### <a name="500-internal-server-error"></a>(500) erreur de serveur interne
 
-Cette erreur indique que le site est complètement inactif ou que le serveur ne peut pas traiter la demande. Débogueur de capture instantanée uniquement des fonctions sur les applications en cours d’exécution. [Application Insights débogueur de capture instantanée](https://docs.microsoft.com/azure/azure-monitor/app/snapshot-debugger) fournit des instantanés sur les exceptions et peut être l’outil le mieux adapté à vos besoins.
+Cette erreur indique que le site est complètement inactif ou que le serveur ne peut pas traiter la demande. Débogueur de capture instantanée uniquement des fonctions sur les applications en cours d’exécution. [Application Insights débogueur de capture instantanée](/azure/azure-monitor/app/snapshot-debugger) fournit des instantanés sur les exceptions et peut être l’outil le mieux adapté à vos besoins.
 
 ### <a name="502-bad-gateway"></a>(502) passerelle incorrecte
 
@@ -99,21 +99,21 @@ Suivez ces étapes :
 * Essayez de patienter quelques minutes avant de joindre à nouveau le Débogueur de capture instantanée.
 * Si cette erreur persiste, utilisez l’un des canaux de commentaires décrits au début de cet article.
 
-## <a name="issue-snappoint-does-not-turn-on"></a>Problème : Point d’ancrage n’est pas activé
+## <a name="issue-snappoint-does-not-turn-on"></a>Problème : Le snappoint ne s’active pas
 
-Si une icône d’avertissement ![Icône d’avertissement de snappoint](../debugger/media/snapshot-troubleshooting-snappoint-warning-icon.png "Icône d’avertissement de snappoint") apparaît sur le snappoint au lieu de l’icône standard, c’est le signe que le snappoint n’est pas activé.
+Si vous voyez une icône d’avertissement ![point d’ancrage icône d’avertissement](../debugger/media/snapshot-troubleshooting-snappoint-warning-icon.png "Icône d’avertissement point d’ancrage") avec votre point d’ancrage au lieu de l’icône de point d’ancrage normale, le point d’ancrage n’est pas activé.
 
-![Le snappoint ne s’active pas](../debugger/media/snapshot-troubleshooting-dont-turn-on.png "Le snappoint ne s’active pas")
+![Point d’ancrage n’est pas activé](../debugger/media/snapshot-troubleshooting-dont-turn-on.png "Point d’ancrage n’est pas activé")
 
 Suivez ces étapes :
 
 1. Assurez-vous que vous disposez de la même version du code source que celle utilisée pour créer et déployer votre application. Assurez-vous de charger les symboles adaptés à votre déploiement. Pour cela, affichez la fenêtre **Modules** pendant le débogage de capture instantanée et vérifiez que la colonne Fichier de symboles indique qu’un fichier .pdb est chargé pour le module en cours de débogage. Le Débogueur de capture instantanée tentera de télécharger et d’utiliser automatiquement les symboles de votre déploiement.
 
-## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>Problème : Les symboles ne sont pas chargés lors de l’ouverture d’un instantané
+## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>Problème : Les symboles ne se chargent pas à l’ouverture d’une capture instantanée
 
 Si la fenêtre suivante apparaît, c’est le signe que les symboles n’ont pas été chargés.
 
-![Les symboles ne se chargent pas](../debugger/media/snapshot-troubleshooting-symbols-wont-load.png "Les symboles ne se chargent pas")
+![Les symboles ne sont pas chargés](../debugger/media/snapshot-troubleshooting-symbols-wont-load.png "Les symboles ne sont pas chargés")
 
 Suivez ces étapes :
 
@@ -125,7 +125,7 @@ Suivez ces étapes :
 
 - Si, en revanche, votre organisation utilise un serveur de symboles ou place les symboles dans un autre chemin, utilisez les paramètres des symboles pour charger les symboles adaptés à votre déploiement.
 
-## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>Problème : Je ne vois pas l’option « joindre Débogueur de capture instantanée » dans le Cloud Explorer
+## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>Problème : L’option « Joindre le Débogueur de capture instantanée » n’apparaît pas dans Cloud Explorer
 
 Suivez ces étapes :
 
@@ -144,24 +144,24 @@ Suivez ces étapes :
   - Azure Kubernetes Services – Applications ASP.NET Core exécutées sur .NET Core 2.2 (ou une version ultérieure) sur Ubuntu 18.04.
 ::: moniker-end
 
-## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>Problème : Seules les captures instantanées limitées sont visibles dans le Outils de diagnostic
+## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>Problème : Seules des captures instantanées limitées apparaissent dans les Outils de diagnostic
 
-![Snappoint limité](../debugger/media/snapshot-troubleshooting-throttled-snapshots.png "Snappoint limité")
+![Point d’ancrage limité](../debugger/media/snapshot-troubleshooting-throttled-snapshots.png "Point d’ancrage limité")
 
 Suivez ces étapes :
 
 - Les captures instantanées occupent peu de mémoire, mais présentent un coût de validation. Si le Débogueur de capture instantanée détecte que votre serveur subit une lourde charge de mémoire, il ne prend pas de captures instantanées. Pour supprimer des captures instantanées déjà prises, arrêtez la session du Débogueur de capture instantanée, puis réessayez.
 
 ::: moniker range=">= vs-2019"
-## <a name="issue-snapshot-debugging-with-multiple-versions-of-the-visual-studio-gives-me-errors"></a>Problème : Le débogage d’instantané avec plusieurs versions de Visual Studio me donne des erreurs
+## <a name="issue-snapshot-debugging-with-multiple-versions-of-the-visual-studio-gives-me-errors"></a>Problème : Le débogage de capture instantanée avec plusieurs versions de Visual Studio donne des erreurs
 
 Visual Studio 2019 requiert une version plus récente de l’extension de site Débogueur de capture instantanée sur votre Azure App Service.  Cette version n’est pas compatible avec l’ancienne version de l’extension de site Débogueur de capture instantanée utilisée par Visual Studio 2017.  Vous obtiendrez l’erreur suivante si vous essayez d’attacher le Débogueur de capture instantanée dans Visual Studio 2019 à un Azure App Service qui a été précédemment débogué par le Débogueur de capture instantanée dans Visual Studio 2017 :
 
-![Incompatible débogueur de capture instantanée extension de site Visual studio 2019](../debugger/media/snapshot-troubleshooting-incompatible-vs2019.png "incompatible débogueur de capture instantanée extension de site Visual Studio 2019")
+![Incompatibilité de l’extension de site Débogueur de capture instantanée Visual Studio 2019](../debugger/media/snapshot-troubleshooting-incompatible-vs2019.png "Incompatibilité de l’extension de site Débogueur de capture instantanée Visual Studio 2019")
 
 À l’inverse, si vous utilisez Visual Studio 2017 pour attacher le Débogueur de capture instantanée à un Azure App Service qui a été précédemment débogué par le Débogueur de capture instantanée dans Visual Studio 2019, vous obtiendrez l’erreur suivante :
 
-![Incompatible débogueur de capture instantanée extension de site Visual studio 2017](../debugger/media/snapshot-troubleshooting-incompatible-vs2017.png "incompatible débogueur de capture instantanée extension de site Visual Studio 2017")
+![Incompatibilité de l’extension de site Débogueur de capture instantanée Visual Studio 2017](../debugger/media/snapshot-troubleshooting-incompatible-vs2017.png "Incompatibilité de l’extension de site Débogueur de capture instantanée Visual Studio 2017")
 
 Pour résoudre ce problème, supprimez les paramètres d’application suivants sur le Portail Azure et joignez à nouveau le Débogueur de capture instantanée :
 
@@ -169,7 +169,7 @@ Pour résoudre ce problème, supprimez les paramètres d’application suivants 
 - SNAPSHOTDEBUGGER_EXTENSION_VERSION
 ::: moniker-end
 
-## <a name="issue-i-am-having-problems-snapshot-debugging-and-i-need-to-enable-more-logging"></a>Problème : Je rencontre des problèmes de débogage d’instantanés et j’ai besoin d’activer davantage la journalisation
+## <a name="issue-i-am-having-problems-snapshot-debugging-and-i-need-to-enable-more-logging"></a>Problème : Le débogage de capture instantanée fonctionne mal alors que j’ai besoin de davantage de journalisation
 
 ### <a name="enable-agent-logs"></a>Activer les journaux d’agent
 
@@ -179,9 +179,9 @@ Les journaux d’agent se trouvent aux emplacements suivants :
 
 - App Service :
   - Accédez au site Kudu de votre service App Service (soit votreappservice.**scm**.azurewebsites.net), puis à Console de débogage.
-  - Les journaux de l’agent sont stockés dans le répertoire suivant :  D:\home\LogFiles\SiteExtensions\DiagnosticsAgentLogs\
+  - Les journaux d’agent sont stockés dans le répertoire D:\home\LogFiles\SiteExtensions\DiagnosticsAgentLogs\.
 - VM/VMSS :
-  - Connectez-vous à votre machine virtuelle. les journaux de l’agent sont stockés comme suit :  C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics @ no__t-0Version > \SnapshotDebuggerAgent_ *. txt
+  - Connectez-vous à votre machine virtuelle. Les journaux d’agent sont stockés  sous C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics\<Version>\SnapshotDebuggerAgent_*.txt
 - AKS :
   - Accédez au répertoire /tmp/diag/AgentLogs/*.
 
@@ -193,7 +193,7 @@ Les journaux d’instrumentation se trouvent aux emplacements suivants :
   - La journalisation des erreurs est automatiquement envoyée à D:\Home\LogFiles\eventlog.xml, les événements sont marqués avec `<Provider Name="Instrumentation Engine" />` ou « points d’arrêt de production »
 - VM/VMSS :
   - Connectez-vous à votre machine virtuelle et ouvrez l’observateur d’événements.
-  - Ouvrez la vue suivante : Les *journaux Windows > application*.
+  - Ouvrez la vue *Journaux Windows > Application*.
   - *Filtrez le journal actuel* par *Source de l’événement* avec des *Points d’arrêt de production* ou le *Moteur d’instrumentation*.
 - AKS :
   - Journalisation du moteur d’instrumentation à l’adresse /tmp/diag/log.txt (définissez MicrosoftInstrumentationEngine_FileLogPath dans le fichier DockerFile).
