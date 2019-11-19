@@ -6,12 +6,12 @@ ms.author: jomatthi
 ms.date: 09/02/2019
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: fc300ccd37ade6418ef093306441afe4d10080e2
-ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
+ms.openlocfilehash: e56aec03aabe818731c65acb30eafcc18f170ac3
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70222753"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73714512"
 ---
 # <a name="does-visual-studio-for-mac-support-team-foundation-version-control"></a>Visual Studio pour Mac prend-il en charge Team Foundation Version Control ?
 
@@ -30,13 +30,13 @@ Git est pris en charge dans Visual Studio pour Mac ; il s’agit de l’option p
 Bien que Visual Studio pour Mac ne prenne pas en charge TFVC officiellement, le reste de ce guide fournit des solutions de contournement pour travailler avec TFVC sur macOS. Si vous utilisez actuellement TFVC pour la gestion de versions, voici quelques solutions qui vous permettront d’accéder à votre code source hébergé dans TFVC :
 
 * Option 1. [ Utiliser Visual Studio Code et l’extension Azure Repos, pour une interface utilisateur graphique](#use-visual-studio-code-and-the-azure-repos-extension)
-* Option 2. [Se connecter au référentiel avec le client en ligne de commande Team Explorer Everywhere (TEE-CLC)](#connecting-using-the-team-explorer-everywhere-command-line-client)
+* Option 2. [Se connecter au référentiel avec le client en ligne de commande Team Explorer Everywhere (TEE-CLC)](#connecting-using-the-team-explorer-everywhere-command-line-client)
 
 ### Option 1. <a id="use-visual-studio-code-and-the-azure-repos-extension"></a> Utiliser Visual Studio Code et l’extension Azure Repos
 
 Si vous préférez travailler avec une interface graphique pour gérer vos fichiers dans la gestion de version, l’extension Azure Repos pour Visual Studio Code représente une solution Microsoft prise en charge. Pour commencer, téléchargez [Visual Studio Code](https://code.visualstudio.com) et apprenez à [configurer l’extension Azure Repos](https://marketplace.visualstudio.com/items?itemName=ms-vsts.team).
 
-### Option 2. <a id="connecting-using-the-team-explorer-everywhere-command-line-client"></a> Se connecter avec le client en ligne de commande Team Explorer Everywhere
+### Option 2. <a id="connecting-using-the-team-explorer-everywhere-command-line-client"></a> Se connecter avec le client en ligne de commande Team Explorer Everywhere
 
 > [!IMPORTANT]
 > Comme pour le fichier Lisez-moi Team Explorer Everywhere, ce projet [n’est plus conservé](https://github.com/microsoft/team-explorer-everywhere).
@@ -67,7 +67,7 @@ Pour **configurer manuellement TEE-CLC** :
 
 Une fois TEE-CLC installé, vous pouvez exécuter la commande `tf eula` pour afficher et accepter le contrat de licence du client.
 
-Enfin, pour vous authentifier avec votre environnement TFS/Azure DevOps, vous devrez créer un jeton d’accès personnel sur le serveur ([en savoir plus sur l’authentification avec des jetons d’accès personnels](https://docs.microsoft.com/azure/devops/integrate/get-started/authentication/pats?view=azure-devops)). Lorsque vous créez et configurez un jeton d’accès personnel qui sera utilisé avec TFVC, veillez à accorder un accès complet.
+Enfin, pour vous authentifier avec votre environnement TFS/Azure DevOps, vous devrez créer un jeton d’accès personnel sur le serveur ([en savoir plus sur l’authentification avec des jetons d’accès personnels](/azure/devops/integrate/get-started/authentication/pats?view=azure-devops)). Lorsque vous créez et configurez un jeton d’accès personnel qui sera utilisé avec TFVC, veillez à accorder un accès complet.
 
 #### <a name="using-the-tee-clc-to-connect-to-your-repo"></a>Utiliser TEE-CLC pour se connecter au référentiel
 

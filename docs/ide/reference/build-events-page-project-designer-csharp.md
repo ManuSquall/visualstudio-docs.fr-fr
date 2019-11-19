@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: cca0ec0491d7a2c513f8bc52acaadf7c80d7fd22
-ms.sourcegitcommit: 58000baf528da220fdf7a999d8c407a4e86c1278
+ms.openlocfilehash: 4842a5a08de96cd40a45d0765d427cc74cbf5432
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72789821"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73714392"
 ---
 # <a name="build-events-page-project-designer-c"></a>Événements de build, page du Concepteur de projets (C#)
 
@@ -77,11 +77,19 @@ le paramètre du fichier projet est alors :
 </PropertyGroup>
 ```
 
-Visual Studio 2019 (et Visual Studio 2017 dans les mises à jour plus récentes) ajoute une cible MSBuild nommée `PreBuild` ou `PostBuild` pour les paramètres **PreBuildEvent** et **PostBuildEvent** . Par exemple, dans l’exemple précédent, Visual Studio génère désormais le code suivant :
+Pour les projets .NET Core, Visual Studio 2019 (et Visual Studio 2017 dans les mises à jour plus récentes) ajoute une cible MSBuild nommée `PreBuild` ou `PostBuild` pour les paramètres **PreBuildEvent** et **PostBuildEvent** . Ces cibles utilisent les attributs **BeforeTargets** et **AfterTargets** , que MSBuild reconnaît. Par exemple, dans l’exemple précédent, Visual Studio génère désormais le code suivant :
 
 ```xml
 <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
     <Exec Command="&quot;$(ProjectDir)PreBuildEvent.bat&quot; &quot;$(ProjectDir)..\&quot; &quot;$(ProjectDir)&quot; &quot;$(TargetDir)&quot;" />
+</Target>
+```
+
+Pour un événement après génération, utilisez le nom `PostBuild` et affectez à l’attribut `AfterTargets` la valeur `PostBuildEvent`.
+
+```xml
+<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+   <Exec Command="echo Output written to $(TargetDir)" />
 </Target>
 ```
 

@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 385d58834aa96a3ad9e2002020dd1ce4fda3c87f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1132a7a0363e2d508d6eff1026192aad3407fca4
+ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000012"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73189243"
 ---
 # <a name="work-with-r-in-visual-studio"></a>Utiliser R dans Visual Studio
 
@@ -41,7 +41,7 @@ Suivez ensuite les liens ci-dessous pour en savoir plus sur les fonctionnalités
 | [Fenêtre interactive](interactive-repl-for-r-in-visual-studio.md) | Fournit une expérience REPL complète de R vous permettant d’exécuter facilement du code dans un fichier source de la fenêtre interactive. | N/A |
 | [Visualisation des données](visualizing-data-with-r-in-visual-studio.md) | La création de graphiques est une partie intégrante de l’expérience de R, c’est pourquoi RTVS prend en charge plusieurs fenêtres de graphique indépendantes, chacune avec son propre historique et la possibilité de déplacer les graphiques d’une fenêtre à une autre. Vous pouvez enregistrer les graphiques dans des fichiers bitmap et PDF ou les copier dans le Presse-papiers comme bitmap ou métafichier.  | N/A |
 | [Explorateur de variables](variable-explorer.md) | Examinez les variables d’une étendue globale ou d’une étendue spécifique à un package, avec la possibilité d’afficher des tableaux que vous pouvez trier et exporter au format CSV. | N/A |
-| [Débogage complet](debugging-r-in-visual-studio.md) | Inclut l’intégration dans la fenêtre interactive. | [Débogage dans Visual Studio](/visualstudio/debugger/debugger-feature-tour) |
+| [Débogage complet](debugging-r-in-visual-studio.md) | Inclut l’intégration dans la fenêtre interactive. | [Débogage dans Visual Studio](../debugger/debugger-feature-tour.md) |
 
 Voir aussi la [Foire aux questions](faq.md).
 

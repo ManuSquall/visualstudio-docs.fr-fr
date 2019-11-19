@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac04f7ef5d7ad445bec470b3d019418a3bec1f7b
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 4ceea00a3fa77a9c1106f24f28ac1d5890437b41
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188884"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568963"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Couleurs et styles pour Visual Studio
 
@@ -340,7 +340,7 @@ Il peut arriver que vous souhaitiez autoriser l’utilisateur final à personnal
 
 Un VSPackage peut contrôler les polices et les couleurs via des catégories personnalisées et afficher des éléments dans la page de propriétés polices et couleurs. Lors de l’utilisation de ce mécanisme, les VSPackages doivent implémenter l’interface [IVsFontAndColorDefaultsProvider](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider) et ses interfaces associées.
 
-En principe, ce mécanisme peut être utilisé pour modifier tous les éléments d’affichage existants et les catégories qui les contiennent. Toutefois, il ne doit pas être utilisé pour modifier la catégorie éditeur de texte ou ses éléments d’affichage. Pour plus d’informations sur la catégorie éditeur de texte, consultez [vue d’ensemble des polices et des couleurs](../font-and-color-overview.md).
+En principe, ce mécanisme peut être utilisé pour modifier tous les éléments d’affichage existants et les catégories qui les contiennent. Toutefois, il ne doit pas être utilisé pour modifier la catégorie éditeur de texte ou ses éléments d’affichage. Pour plus d’informations sur la catégorie éditeur de texte, consultez [vue d’ensemble des polices et des couleurs](/visualstudio/extensibility/font-and-color-overview?view=vs-2015).
 
 Pour implémenter des catégories personnalisées ou des éléments d’affichage, un VSPackage doit :
 
@@ -358,9 +358,9 @@ Construisez un type spécial d’entrée de Registre Category sous `[HKLM\SOFTWA
 
 Remplissez le Registre avec deux valeurs :
 
-| Name | Tapez | Données | Description |
+| Nom | Type | Données | Description |
 | --- | --- | --- | --- |
-| Category | REG_SZ | GUID | GUID créé pour identifier la catégorie |
+| Catégorie | REG_SZ | GUID | GUID créé pour identifier la catégorie |
 | Package | REG_SZ | GUID | GUID du service VSPackage qui prend en charge la catégorie |
 
  Le service spécifié dans le registre doit fournir une implémentation de [IVsFontAndColorDefaults](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults) pour la catégorie correspondante.
@@ -371,9 +371,9 @@ Construisez un type spécial d’entrée de Registre Category sous `[HKLM\SOFTWA
 
 Remplissez le Registre avec deux valeurs :
 
-| Name | Tapez | Données | Description |
+| Nom | Type | Données | Description |
 |--- | --- | --- | --- |
-| Category | REG_SZ | GUID | GUID créé pour identifier la catégorie |
+| Catégorie | REG_SZ | GUID | GUID créé pour identifier la catégorie |
 | Package | REG_SZ | GUID | GUID du service VSPackage qui prend en charge la catégorie |
 
 Le service spécifié dans le registre doit fournir une implémentation de <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> pour le groupe correspondant.

@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: bfb5f28763e4f95a2713e67543fca35398536fa9
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.openlocfilehash: ecc14e4dc98caa17ac3849e9231ab17491f2acc8
+ms.sourcegitcommit: 2f64b3b231900018fceafb72b5a1c65140213a18
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180305"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73428784"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Tutoriel : Créer une application Node.js et Express dans Visual Studio
 
@@ -58,7 +58,7 @@ npm est le Gestionnaire de package par défaut de Node.js. Le Gestionnaire de pa
 
 Express est un framework d’application web utilisé comme framework serveur pour Node.js, qui permet de générer des applications web. Express vous permet d’utiliser différents frameworks frontend pour créer une IU, par exemple Pug (appelé auparavant Jade). Pug est utilisé dans ce tutoriel.
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Configuration requise
 
 * Au préalable, vous devez avoir installé Visual Studio et la charge de travail de développement Node.js.
 
@@ -93,7 +93,7 @@ Dans ce tutoriel, vous commencez avec un projet simple contenant du code pour un
     Appuyez sur **Échap** pour fermer la fenêtre de démarrage. Tapez **Ctrl+Q** pour ouvrir la zone de recherche, tapez **Node.js**, puis choisissez **Créer une nouvelle application Azure Node.js Express 4 de base** (JavaScript). Dans la boîte de dialogue qui apparaît, choisissez **Créer**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**. Dans la boîte de dialogue **Nouveau projet**, développez **JavaScript**, puis choisissez **Node.js**. Dans le volet central, choisissez **Application Azure Node.js Express 4 de base**, puis **OK**.
+    Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**. Dans la boîte de dialogue **Nouveau projet**, développez **JavaScript**, puis choisissez **Node.js**. Dans le volet central, choisissez **Application Azure Node.js Express 4 de base**, puis choisissez **OK**.
     ::: moniker-end
     Si vous ne voyez pas le modèle de projet **Application Azure Node.js Express 4 de base**, vous devez ajouter la charge de travail **Développement Node.js**. Pour obtenir des instructions détaillées, consultez les [Prérequis](#prerequisites).
 
@@ -183,6 +183,8 @@ IntelliSense est un outil Visual Studio qui vous aide pendant que vous écrivez 
 1. Placez votre curseur après la chaîne `data`, tapez `: get`, et IntelliSense vous affichera la fonction `getData` définie plus tôt dans le code. Sélectionnez `getData`.
 
     ![Utilisez IntelliSense](../javascript/media/tutorial-nodejs-intellisense.png)
+
+1. Ajoutez les parenthèses pour en faire un appel de fonction, `getData()`.
 
 1. Supprimez la virgule (`,`) avant `"data"`. La syntaxe de l’expression est colorée en vert. Pointez sur la coloration syntaxique.
 

@@ -1,7 +1,7 @@
 ---
 title: Développement mobile multiplateforme avec C++ | Microsoft Docs
 ms.custom: ''
-ms.date: 10/17/2019
+ms.date: 11/14/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 dev_langs:
@@ -12,14 +12,14 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 61bb3e17b104759995852959a7396d5a76927cfb
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: bc4164ec405aed2941e807934ee8d66b7ae72504
+ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72589046"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74098980"
 ---
-# <a name="cross-platform-mobile-development-with-c"></a>Développement mobile multiplateforme avecC++
+# <a name="cross-platform-mobile-development-with-c"></a>Développement mobile multiplateforme avec C++
 
 Vous pouvez créer des C++ applications natives pour les appareils iOS, Android et Windows à l’aide des outils multiplateformes disponibles dans Visual Studio. Le **développement mobile C++ avec** est une charge de travail disponible dans le programme d’installation de Visual Studio. Il installe les kits de développement logiciel (SDK) et les outils dont vous avez besoin pour le développement multiplateforme de bibliothèques partagées et d’applications natives. Une fois l’installation terminée, vous pouvez C++ utiliser pour créer du code qui s’exécute sur les appareils et plateformes iOS et Android, Windows, Windows Store et Xbox.
 
@@ -42,10 +42,6 @@ Le développement mobile C++ avec est une charge de travail pouvant être instal
 Si vous êtes habitué aux environnements de développement Android ou iOS, nous tenons à votre disposition des supports qui faciliteront votre prise en main. Visual Studio est un environnement de développement expressif et efficace. Pour apprendre à l’utiliser, consultez [Get started for Android developers](/previous-versions/windows/apps/dn275875\(v=win.10\)) ou [Get started for iOS developers](/previous-versions/windows/apps/jj657966\(v=win.10\)). Ces articles vous présentent Visual Studio et les concepts dont vous aurez besoin pour développer des applications multiplateformes pour Windows et Windows Store. Pour commencer à écrire votre première application multiplateforme pour iOS et Android, consultez [créer une application OpenGL es sur Android et iOS](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md).
 
 Le développement mobile avec C++ une charge de travail comprend plusieurs modèles pour vous aider à commencer à utiliser vos applications :
-
-- Application OpenGLES 2 (Android, iOS, Windows universel)
-
-  Crée une solution qui inclut un ensemble de projets pour générer une application Android Native Activity, une application iOS et une application Windows universelle, ainsi qu’une bibliothèque de code C++ partagée. Ces applications utilisent des bibliothèques spécifiques à la plateforme créées avec du code OpenGL ES C++ commun pour dessiner le même cube tournant dans chaque application. Pour utiliser ce modèle, incluez la charge de travail développement de la **plateforme Windows universelle** lorsque vous installez Visual Studio.
 
 - Application Native Activity (Android)
 

@@ -3,15 +3,15 @@ title: Avantage Visual Studio App Center dans les abonnements Visual Studio | Mi
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/31/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 description: Découvrez l’avantage Visual Studio App Center inclus dans les abonnements Visual Studio.
-ms.openlocfilehash: 1feb4660e52335f838c1e7c80428575aaf7a04cc
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
-ms.translationtype: HT
+ms.openlocfilehash: 243d277a5f6e143f472398538d025c18180d088d
+ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787824"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74161920"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio App Center dans les abonnements Visual Studio
 
@@ -42,22 +42,24 @@ La mise en route de Visual Studio App Center est simple.
 | Niveau d'abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard, cloud mensuel)   | Licences en volume, Azure, Détail, NFR<sup>1</sup> | Included       |  Oui          |
+| Visual Studio Enterprise avec GitHub Enterprise  | LV | Included       |  Oui          |
 | Visual Studio Professional (Standard, cloud mensuel) | Licences en volume, Azure, Détail                                       | Included                                                            |Oui |
+| Visual Studio Professional avec GitHub Enterprise | LV                                      | Included                                                            |Oui |
 | Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Included                                                            |Oui |
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Included                                                            |Oui |
 ||
 
-<sup>1</sup>  *Inclut :  NFR (revente interdite), FTE, VSIP (Visual Studio Industry Partner), Imagine, MPN (Microsoft Partner Network), MCT Software & Services, MCT Software & Services Developer, BizSpark, MVP (Most Valuable Professional), RD (Regional Director).*
+<sup>1</sup>  *comprend : non pour la revente (NFR), FTE, Visual Studio Industry Partner (VSIP), imaginez, Microsoft Partner Network (MPN), MCT Software & services, MCT Software & Services Developer, BizSpark, most VALUABLE Professional (MVP), Regional Director (RD).*
 
 > [!NOTE]
-> Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à accéder à [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
+> Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à consulter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
 
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
 
 ## <a name="frequently-asked-questions"></a>FAQ
 
-### <a name="q--i-get-an-error-that-my-browser-is-unsupported--whats-wrong"></a>Q :  Je reçois une erreur indiquant que mon navigateur n’est pas pris en charge.  Quel est le problème ?
-R :  App Center nécessite des fonctionnalités récentes qui ne sont peut-être plus fournies par certains navigateurs plus anciens.  Si votre navigateur n’est pas pris en charge, procédez comme suit :
+### <a name="q--i-get-an-error-that-my-browser-is-unsupported--whats-wrong"></a>Q : Je reçois une erreur indiquant que mon navigateur n’est pas pris en charge.  Quel est le problème ?
+R : App Center nécessite des fonctionnalités récentes qui ne sont peut-être plus fournies par certains navigateurs plus anciens.  Si votre navigateur n’est pas pris en charge, procédez comme suit :
 1. Ouvrez un autre navigateur, tel que Microsoft Edge ou une version récente de Google Chrome, Firefox ou Safari.
 2. Connectez-vous à [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) pour Visual Studio, puis connectez-vous.
 3. Cliquez sur le lien **Commencer** de la vignette Visual Studio App Center.
@@ -72,4 +74,7 @@ Vous devriez à présent être en mesure d’accéder au portail App Center et d
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Étapes suivantes
-Azure est votre bac à sable personnel pour le développement et le test.  Vous pouvez provisionner des machines virtuelles, des services cloud et d’autres ressources Azure. Si vous ne l’avez pas déjà fait, activez votre [avantage Azure](vs-azure.md). 
+Veillez à activer ces avantages intéressants pour tirer le meilleur parti de votre abonnement Visual Studio :
+- [Visual Studio](vs-ide-benefit.md)
+- [Azure DevOps](vs-azure-devops.md)
+- [Crédit individuel Azure DevTest](vs-azure.md)

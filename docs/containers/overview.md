@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.topic: overview
 ms.date: 03/20/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 19a6149e60e61cad347dda9bf8b2a75be7b1885d
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 312c827c3b748e10951b243070f43cce559e3a60
+ms.sourcegitcommit: bbff780cda82bb64862d77fe8f407f1803beb876
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188739"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74127191"
 ---
 # <a name="container-tools-in-visual-studio"></a>Outils de conteneur dans Visual Studio
 
@@ -53,11 +53,13 @@ La prise en charge de Docker est disponible pour les projets ASP.NET, les projet
 
 La prise en charge de Docker dans Visual Studio a été modifiée sur un certain nombre de versions pour répondre aux besoins des clients. Il existe deux niveaux de prise en charge de Docker que vous pouvez ajouter à un projet, et les options prises en charge varient selon le type de projet et la version de Visual Studio. Pour certains types de projets pris en charge, si vous souhaitez utiliser un conteneur dans un seul projet, sans orchestration, ajoutez la prise en charge de Docker.  Le niveau suivant est la prise en charge de l’orchestration de conteneur, qui ajoute les fichiers de prise en charge appropriés pour l’orchestrateur spécifique que vous choisissez.  
 
-
 Visual Studio 2019 vous permet d’utiliser Docker Compose, Kubernetes et Service Fabric comme services d’orchestration de conteneur.
 
 > [!NOTE]
 > Si vous utilisez le modèle de projet de console .NET Framework complet, lorsque vous ajoutez la prise en charge de Docker, la prise en charge de l’orchestration à l’aide de Docker Compose est automatiquement ajoutée.
+
+Dans Visual Studio 2019 version 16,4 et versions ultérieures, la fenêtre **conteneurs** est disponible, ce qui vous permet d’afficher les conteneurs en cours d’exécution, de parcourir les images disponibles, d’afficher les variables d’environnement, les journaux et les mappages de port, d’inspecter le système de fichiers, d’attacher un débogueur ou d’ouvrir une fenêtre de terminal dans l’environnement de conteneur. Consultez [afficher et diagnostiquer des conteneurs et des images dans Visual Studio](view-and-diagnose-containers.md).
+
 ::: moniker-end
 
 ### <a name="adding-docker-support"></a>Ajout de la prise en charge de Docker
@@ -148,6 +150,6 @@ Pour Kubernetes, consultez [Déployer une application de conteneur Docker sur Az
 
 Pour plus d’informations sur l’implémentation des services et l’utilisation des outils Visual Studio avec des conteneurs, lisez les articles suivants :
 
-[Débogage d’applications dans un conteneur Docker local](vs-azure-tools-docker-edit-and-refresh.md)
+[Débogage d’applications dans un conteneur Docker local](edit-and-refresh.md)
 
 [Déployer un conteneur ASP.NET sur un registre de conteneurs avec Visual Studio](hosting-web-apps-in-docker.md)

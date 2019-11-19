@@ -12,14 +12,14 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 186ea6ac58736098720d60c644c30801073b7453
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 9933a013ed4f2df0978fb66e3aff87b4cdc024f9
+ms.sourcegitcommit: c6af923c1f485959d751b23ab3f03541013fc4a7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018722"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73925961"
 ---
-# <a name="how-to-specify-additional-code-information-by-using-_analysis_assume"></a>Procédure : Spécifier des informations de code supplémentaire en utilisant _Analysis_assume
+# <a name="how-to-specify-additional-code-information-by-using-_analysis_assume"></a>Comment : spécifier des informations de code supplémentaires à l’aide de _Analysis_assume
 
 Vous pouvez fournir des indications sur l’outil d’analyse du code pourC++ C/code qui aide le processus d’analyse et réduire les avertissements. Pour fournir des informations supplémentaires, utilisez la fonction suivante :
 
@@ -52,7 +52,7 @@ void test()
 {
     char pc = (char)malloc(5);
     FreeAndNull(&pc);
-    __analysis_assume(pc == NULL);
+    _Analysis_assume(pc == NULL);
     f(pc);
 }
 ```

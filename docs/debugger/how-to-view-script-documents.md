@@ -1,6 +1,6 @@
 ---
 title: 'Comment : afficher des documents de script | Microsoft Docs'
-ms.date: 01/08/2019
+ms.date: 11/05/2019
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -15,16 +15,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7696122cc9f0d431f310b8d6efb10819af995823
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 5e362e0504c4ed2584bbbbea687fe3c58fc79edb
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72731859"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73714439"
 ---
 # <a name="how-to-view-script-documents-javascript"></a>Comment : afficher des documents de script (JavaScript)
 
 Les fichiers de script côté serveur sont visibles dans Explorateur de solutions. Les fichiers de script côté client sont visibles uniquement lorsque vous êtes en mode débogage ou en mode arrêt. Les fichiers de script côté client apparaissent dans le nœud **documents de script** .
+
+Pour certains types d’applications qui génèrent dynamiquement des pages, il est plus facile d’entrer en mode arrêt et de déboguer lorsque vous définissez un point d’arrêt à partir d’un document de script chargé dans le navigateur. De même, vous pouvez ajouter l’instruction `debugger` à partir d’un document de script chargé pour passer en mode arrêt. Cet article explique comment afficher ces documents.
 
 > [!NOTE]
 > Avant de [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], les fichiers de script côté client générés à partir du script côté serveur apparaissaient dans la fenêtre Explorateur de scripts.

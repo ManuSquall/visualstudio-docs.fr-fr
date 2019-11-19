@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 06/25/2019
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: fa269285cf11df848f842524e0d3d496a67b7469
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
-ms.translationtype: HT
+ms.openlocfilehash: e45f80ab1a5aab4969b01a2fddcfd88d9dc4eff7
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70108230"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73716124"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Connexion à Team Foundation Version Control
 
@@ -20,7 +20,7 @@ ms.locfileid: "70108230"
 >
 > Si vous avez précédemment utilisé la version de préversion de l’extension TFVC pour Visual Studio pour Mac, elle n’est plus prise en charge lors de la mise à niveau vers Visual Studio 2019 pour Mac.
 
-Azure Repos propose deux modèles de gestion de versions : [Git](/azure/devops/repos/git/?view=azure-devops),un système de gestion de version distribué, et [Team Foundation Version Control](/azure/devops/repos/tfvc/index?view=azure-devops) (TFVC), un système de gestion de version centralisé.
+Azure Repos fournit deux modèles de contrôle de version : [git](/azure/devops/repos/git/?view=azure-devops), système de gestion de version distribué et [Team Foundation version Control](/azure/devops/repos/tfvc/index?view=azure-devops) (TFVC), un système de gestion de version centralisé.
 
 Visual Studio pour Mac assure une prise en charge complète des référentiels Git, mais des solutions de contournement sont nécessaires pour pouvoir travailler avec TFVC. Si vous utilisez actuellement TFVC pour la gestion de versions, voici quelques solutions qui vous permettront d’accéder à votre code source hébergé dans TFVC :
 
@@ -30,7 +30,7 @@ Visual Studio pour Mac assure une prise en charge complète des référentiels G
 
 La suite de cet article décrit les options ci-dessus.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>spécifications
 
 * Visual Studio Community, Professional ou Enterprise pour Mac version 7.8 et ultérieure.
 * Azure DevOps Services, Team Foundation Server 2013 (ou version ultérieure) ou Azure DevOps Server 2018 (ou version ultérieure).
@@ -68,7 +68,7 @@ Pour **configurer manuellement TEE-CLC** :
 
 Une fois TEE-CLC installé, vous pouvez exécuter la commande `tf eula` pour afficher et accepter le contrat de licence du client.
 
-Enfin, pour vous authentifier avec votre environnement TFS/Azure DevOps, vous devrez créer un jeton d’accès personnel sur le serveur ([en savoir plus sur l’authentification avec des jetons d’accès personnels](https://docs.microsoft.com/azure/devops/integrate/get-started/authentication/pats?view=azure-devops)). Lorsque vous créez et configurez un jeton d’accès personnel qui sera utilisé avec TFVC, veillez à accorder un accès complet.
+Enfin, pour vous authentifier avec votre environnement TFS/Azure DevOps, vous devrez créer un jeton d’accès personnel sur le serveur ([en savoir plus sur l’authentification avec des jetons d’accès personnels](/azure/devops/integrate/get-started/authentication/pats?view=azure-devops)). Lorsque vous créez et configurez un jeton d’accès personnel qui sera utilisé avec TFVC, veillez à accorder un accès complet.
 
 ### <a name="using-the-tee-clc-to-connect-to-your-repo"></a>Utiliser TEE-CLC pour se connecter au référentiel
 
@@ -124,7 +124,7 @@ Suivez les invites pour installer l’extension. Une fois qu’elle est install�
 
 ### <a name="updating-the-extension"></a>Mise à jour de l’extension
 
-Les mises à jour de l’extension TFVC sont effectuées régulièrement. Pour accéder aux mises à jour, choisissez **Visual Studio > Extensions...** dans le menu et sélectionnez l’onglet **Mises à jour**. Sélectionnez l’extension dans la liste et appuyez sur le bouton **Mettre à jour** :
+Les mises à jour de l’extension TFVC sont effectuées régulièrement. Pour accéder aux mises à jour, sélectionnez **Visual Studio > extensions...** dans le menu, puis sélectionnez l’onglet **mises à jour** . Sélectionnez l’extension dans la liste et appuyez sur le bouton **mettre à jour** :
 
 Appuyez sur **Installer** dans la boîte de dialogue suivante pour désinstaller l’ancien package et installer le nouveau.
 
@@ -230,7 +230,7 @@ Une fois votre espace de travail configuré, vous pouvez le changer ou le suppri
 
 ![Gérer les espaces de travail](media/tfvc-workspace4.png)
 
-## <a name="troubleshooting-and-known-issues"></a>Problèmes connus et résolution
+## <a name="troubleshooting-and-known-issues"></a>Problèmes connus et dépannage
 
 #### <a name="problems-using-basic-authentication"></a>Problèmes avec l’authentification de base
 

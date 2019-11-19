@@ -8,38 +8,35 @@ f1_keywords:
 - System.Activities.Statements.Assign.UI
 ms.assetid: ba3feb3c-f144-47ea-926d-cf752b804153
 caps.latest.revision: 6
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 111f53ec5b427207a6bde5d590cf8f1c908ff130
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 40ebe465d5eeb12a956d285a8313b0acdbcfb8d5
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977244"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72659188"
 ---
 # <a name="assign-activity-designer"></a>Concepteur d'activités Assign
-Le **affecter** ActivityDesigner est utilisé pour créer et configurer un <xref:System.Activities.Statements.Assign> activité.  
-  
-## <a name="the-assign-activity"></a>Activité Assign  
- L’activité <xref:System.Activities.Statements.Assign> affecte une valeur à une variable ou à un argument.  
-  
-### <a name="using-the-assign-activity-designer"></a>Utilisation du concepteur d'activités Assign  
- Le **affecter** Concepteur d’activités peut être trouvé dans le **Primitives** catégorie de la **boîte à outils**, qui est accessible en cliquant sur le **boîte à outils**onglet (ou bien, sélectionnez **boîte à outils** à partir de la **vue** menu ou CTRL + ALT + X.)  
-  
- Le **affecter** Concepteur d’activités peut être déplacé de la **boîte à outils** et déposé dans le [!INCLUDE[wfd2](../includes/wfd2-md.md)] surface là où les activités sont généralement placées, par exemple dans un <xref:System.Activities.Statements.Sequence>. Cette opération crée un <xref:System.Activities.Statements.Assign> activité avec une valeur par défaut **DisplayName** Assign. Le <xref:System.Activities.Activity.DisplayName%2A> peuvent être modifiées dans l’en-tête de la **affecter** Concepteur d’activités ou dans le **DisplayName** case de la grille des propriétés.  
-  
-### <a name="the-assign-properties"></a>Propriétés d'Assign  
- Le tableau suivant présente les propriétés de <xref:System.Activities.Statements.Assign> et décrit comment elles sont utilisées dans le concepteur. Ces propriétés peuvent être modifiées dans la grille des propriétés et certaines d'entre elles peuvent être modifiées dans l'aire de conception [!INCLUDE[wfd2](../includes/wfd2-md.md)].  
-  
-|Nom de la propriété|Obligatoire|Utilisation|  
-|-------------------|--------------|-----------|  
-|<xref:System.Activities.Activity.DisplayName%2A>|False|Nom convivial de l'activité <xref:System.Activities.Statements.Assign>. La valeur par défaut est Assign. Bien que la valeur de la propriété <xref:System.Activities.Activity.DisplayName%2A> ne soit pas strictement obligatoire, il est recommandé d'en utiliser une.|  
-|<xref:System.Activities.Statements.Assign.To%2A>|True|Variable ou argument auquel la propriété <xref:System.Activities.Statements.Assign.Value%2A> est affectée. Il doit s'agir d'un identificateur Visual Basic valide. Pour définir la propriété, tapez une expression Visual Basic dans le **à** zone sur le **affecter** activité concepteur ou dans la grille des propriétés.|  
-|<xref:System.Activities.Statements.Assign.Value%2A>|True|Valeur qui est affectée à la variable. Pour définir le <xref:System.Activities.Statements.Assign.Value%2A>, tapez une expression Visual Basic dans le **valeur** zone sur le **affecter** activité concepteur ou dans la grille des propriétés.|  
-  
-## <a name="see-also"></a>Voir aussi  
- [Primitives](../workflow-designer/primitives-activity-designers.md)   
- [Délai](../workflow-designer/delay-activity-designer.md)   
- [InvokeMethod](../workflow-designer/invokemethod-activity-designer.md)   
- [WriteLine](../workflow-designer/writeline-activity-designer.md)
+Le concepteur d’activités **Assign** est utilisé pour créer et configurer une activité <xref:System.Activities.Statements.Assign>.
+
+## <a name="the-assign-activity"></a>Activité Assign
+ L’activité <xref:System.Activities.Statements.Assign> affecte une valeur à une variable ou à un argument.
+
+### <a name="using-the-assign-activity-designer"></a>Utilisation du concepteur d'activités Assign
+ Le concepteur d’activités **Assign** se trouve dans la catégorie **primitives** de la **boîte à outils**, accessible en cliquant sur l’onglet **boîte à outils** (ou en sélectionnant **boîte à outils** dans le menu **affichage** , ou encore en appuyant sur CTRL + ALT + X).
+
+ Le concepteur d’activités **Assign** peut être déplacé de la **boîte à outils** et déposé dans l’aire de [!INCLUDE[wfd2](../includes/wfd2-md.md)], où les activités sont généralement placées, par exemple dans une <xref:System.Activities.Statements.Sequence>. Cela crée une activité <xref:System.Activities.Statements.Assign> avec un **DisplayName** par défaut Assign. La <xref:System.Activities.Activity.DisplayName%2A> peut être modifiée dans l’en-tête du concepteur d’activités **Assign** ou dans la zone **DisplayName** de la grille des propriétés.
+
+### <a name="the-assign-properties"></a>Propriétés d'Assign
+ Le tableau suivant présente les propriétés de <xref:System.Activities.Statements.Assign> et décrit comment elles sont utilisées dans le concepteur. Ces propriétés peuvent être modifiées dans la grille des propriétés et certaines d'entre elles peuvent être modifiées dans l'aire de conception [!INCLUDE[wfd2](../includes/wfd2-md.md)].
+
+|Nom de la propriété|Obligatoire|Usage|
+|-------------------|--------------|-----------|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|Nom convivial de l'activité <xref:System.Activities.Statements.Assign>. La valeur par défaut est Assign. Bien que la valeur de la propriété <xref:System.Activities.Activity.DisplayName%2A> ne soit pas strictement obligatoire, il est recommandé d'en utiliser une.|
+|<xref:System.Activities.Statements.Assign.To%2A>|True|Variable ou argument auquel la propriété <xref:System.Activities.Statements.Assign.Value%2A> est affectée. Il doit s'agir d'un identificateur Visual Basic valide. Pour définir la propriété, tapez une expression Visual Basic dans la zone à dans le concepteur **d'** activités **Assign** ou dans la grille des propriétés.|
+|<xref:System.Activities.Statements.Assign.Value%2A>|True|Valeur qui est affectée à la variable. Pour définir la <xref:System.Activities.Statements.Assign.Value%2A>, tapez une expression Visual Basic dans la zone **valeur** du concepteur d’activités **Assign** ou dans la grille des propriétés.|
+
+## <a name="see-also"></a>Voir aussi
+ [Primitives](../workflow-designer/primitives-activity-designers.md) [Delay](../workflow-designer/delay-activity-designer.md) [InvokeMethod](../workflow-designer/invokemethod-activity-designer.md) [WriteLine](../workflow-designer/writeline-activity-designer.md)

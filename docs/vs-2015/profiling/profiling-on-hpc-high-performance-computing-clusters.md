@@ -21,22 +21,22 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e14ce5ac1e0596947e69d20e14a3dc1e7ff4f1e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eeb5375d636ef16fde658b88dbf662cdd9f1e27d
+ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62421084"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73983806"
 ---
-# <a name="profiling-on-hpc-high-performance-computing-clusters"></a>Profilage sur des clusters HPC (High Performance Computing)
+# <a name="profiling-on-hpc-high-performance-computing-clusters"></a>Profilage sur des clusters HPC (High Performance Computing)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous pouvez profiler sur des nœuds de calcul de clusters Microsoft Windows HPC à l’aide de la méthode d’échantillonnage des outils de profilage [!INCLUDE[vsPreExt](../includes/vspreext-md.md)] ou [!INCLUDE[vsUltExt](../includes/vsultext-md.md)]. Pour plus d’informations sur HPC consultez [Big Compute : HPC & Batch](https://azure.microsoft.com/solutions/big-compute/) sur le site Web de Microsoft.  
+Vous pouvez profiler sur des nœuds de calcul de clusters Microsoft Windows HPC à l’aide de la méthode d’échantillonnage des outils de profilage [!INCLUDE[vsPreExt](../includes/vspreext-md.md)] ou [!INCLUDE[vsUltExt](../includes/vsultext-md.md)]. Pour plus d’informations sur HPC, consultez [Big Compute : HPC & batch](https://azure.microsoft.com/solutions/big-compute/) sur le site Web de Microsoft.  
   
-## <a name="prerequisites"></a>Prérequis  
+## <a name="prerequisites"></a>Configuration requise  
  Pour effectuer un profilage sur un nœud de calcul HPC, vous devez effectuer les opérations suivantes :  
   
-- Installez Microsoft HPC Pack 2008 sur le même ordinateur que [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]. L’ordinateur ne doit pas nécessairement faire partie du cluster HPC. Vous pouvez installer HPC Pack à partir du [Centre de téléchargement Microsoft ](http://go.microsoft.com/fwlink/?LinkID=177414).  
+- Installez Microsoft HPC Pack 2008 sur le même ordinateur que [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)]. L’ordinateur ne doit pas nécessairement faire partie du cluster HPC. Vous pouvez installer HPC Pack à partir du [Centre de téléchargement Microsoft ](https://www.microsoft.com/download/details.aspx?id=2800).  
   
 - Installez [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] et la version autonome des outils de profilage sur le nœud de calcul HPC. Les programmes d’installation de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] et du profileur autonome sont tous les deux disponibles sur le support d’installation de [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)]. **Remarque** : Vous devez redémarrer l’ordinateur après avoir installé [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] et avant d’installer les outils de profilage.  
   
@@ -55,8 +55,8 @@ Vous pouvez profiler sur des nœuds de calcul de clusters Microsoft Windows HPC 
 |||  
 |-|-|  
 |*%HeadNode%*|Nom du nœud principal du cluster.|  
-|*%FxPath%*|Chemin du programme d’installation de [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)]. Sur le [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] support d’installation est le chemin d’accès : WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|  
-|*%ProfilerPath%*|Chemin de la version autonome du programme d’installation des outils de profilage. Sur le [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] support d’installation est le chemin d’accès : Standalone Profiler\x64\vs_profiler.exe|  
+|*%FxPath%*|Chemin du programme d’installation de [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)]. Sur le support d’installation de [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)], le chemin est le suivant : WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|  
+|*%ProfilerPath%*|Chemin de la version autonome du programme d’installation des outils de profilage. Sur le média d’installation de [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)], le chemin est le suivant : Standalone Profiler\x64\vs_profiler.exe|  
   
 ## <a name="profiling-on-an-hpc-compute-node"></a>Profilage sur un nœud de calcul HPC  
  Pour configurer une session de profilage, spécifiez le cluster HPC et les informations cibles à l’aide de l’Assistant Performance HPC. Vous pouvez définir des options supplémentaires dans les pages de propriétés de session de performance. Les outils de profilage déploient automatiquement les fichiers binaires cibles nécessaires. Ils démarrent également le profileur et l’application HPC.  
@@ -71,9 +71,9 @@ Vous pouvez profiler sur des nœuds de calcul de clusters Microsoft Windows HPC 
   
     - Pour profiler un projet actuellement ouvert dans [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], sélectionnez l’option **Un ou plusieurs projets disponibles**, puis sélectionnez le nom du projet dans la liste.  
   
-    - Pour profiler un fichier binaire qui ne se trouve pas dans un projet ouvert, sélectionnez l’option **Exécutable (fichier .EXE)**.  
+    - Pour profiler un fichier binaire qui ne se trouve pas dans un projet ouvert, sélectionnez l’option **Exécutable (fichier .EXE)** .  
   
-4. Cliquez sur **Suivant**.  
+4. Cliquez sur **Next**.  
   
 5. Dans la troisième page de l’Assistant :  
   
@@ -85,7 +85,7 @@ Vous pouvez profiler sur des nœuds de calcul de clusters Microsoft Windows HPC 
   
     - Dans **Emplacement de déploiement**, spécifiez le chemin du répertoire utilisé par le serveur HPC pour organiser des images pour le déploiement.  
   
-6. Cliquez sur **Suivant**.  
+6. Cliquez sur **Next**.  
   
 7. Dans la quatrième page de l’Assistant :  
   
@@ -105,7 +105,7 @@ Vous pouvez profiler sur des nœuds de calcul de clusters Microsoft Windows HPC 
   
     - Cochez la case **Lancer le profilage une fois l’Assistant terminé** pour démarrer immédiatement le profilage, ou décochez-la pour démarrer le profilage manuellement.  
   
-10. Cliquez sur **Terminer**.  
+10. Cliquez sur **Finish**.  
   
 ## <a name="setting-hpc-profiling-properties-by-using-performance-session-property-pages"></a>Définition des propriétés de profilage HPC à l’aide des pages de propriétés d’une session de performance  
  Pour modifier les propriétés de session de performance définies dans l’Assistant de profilage HPC, utilisez la page Propriétés de lancement HPC de la page de propriétés de session de performance. Vous définissez des options supplémentaires dans la page Propriétés avancées HPC.  
@@ -126,7 +126,7 @@ Vous pouvez profiler sur des nœuds de calcul de clusters Microsoft Windows HPC 
   
 ### <a name="hpc-launch-properties"></a>Propriétés de lancement HPC  
   
-|Propriété|Description|  
+|Property|Description|  
 |--------------|-----------------|  
 |**Nœud principal**|Spécifie l’ordinateur qui joue le rôle du nœud principal HPC dans l’exécution du profilage.|  
 |**Nombre de processus**|Spécifie le nombre d’instances de l’application à exécuter dans l’application profilée.|  
@@ -137,11 +137,11 @@ Vous pouvez profiler sur des nœuds de calcul de clusters Microsoft Windows HPC 
   
 ### <a name="advanced-properties"></a>Propriétés avancées  
   
-|Propriété|Description|  
+|Property|Description|  
 |--------------|-----------------|  
 |**Nom du projet**|Nom du projet ou de la solution [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] actuels.|  
 |**Nettoyer après l’arrêt du profileur**|Quand la valeur est true, supprime les fichiers binaires déployés dans le répertoire d’exécution. Les fichiers et répertoires créés par le programme utilisateur ne sont pas supprimés au cours de cette étape. Si le répertoire d’exécution et le répertoire de déploiement ont été créés par l’IDE, ce dernier tente de les supprimer. Cependant, il n’effectue aucune suppression si ces répertoires contiennent des fichiers qu’il n’a pas déployés.|  
-|**Fichiers supplémentaires à déployer**|Spécifie une liste séparée par des points-virgules de tous les fichiers supplémentaires à déployer sur le nœud de calcul. Vous pouvez cliquer sur le bouton de sélection (**...** ) pour sélectionner plusieurs fichiers à l’aide d’une boîte de dialogue.|  
+|**Fichiers supplémentaires à déployer**|Spécifie une liste séparée par des points-virgules de tous les fichiers supplémentaires à déployer sur le nœud de calcul. Vous pouvez cliquer sur le bouton de sélection ( **...** ) pour sélectionner plusieurs fichiers à l’aide d’une boîte de dialogue.|  
 |**Commande Mpiexec**|Spécifie l’application qui démarre l’application MPI. La valeur par défaut est **mpiexec.exe**.|  
 |**Arguments Mpiexec**|Spécifie les arguments à passer à la commande mpiexec.exe.|  
 |**Nœuds demandés sur le cluster**|Spécifie le nombre de nœuds sur le cluster sur lequel l’application doit être exécutée.|  

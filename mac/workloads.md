@@ -6,19 +6,19 @@ author: therealjohn
 ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: DDC39599-8C5D-4CB9-8DA5-229E085384CA
-ms.openlocfilehash: 676193bc84b680c3c78f3b5ddff546a64e4767af
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
-ms.translationtype: HT
+ms.openlocfilehash: b4c5b460670a438b1aeaeb11cd8ae540b39cf9b7
+ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70108178"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73714411"
 ---
 # <a name="visual-studio-for-mac-workloads"></a>Charges de travail Visual Studio pour Mac
 
 Visual Studio pour Mac est préinstallé avec des charges de travail destinées au développement des types d’application suivants :
 
 * Applications mobiles multiplateformes avec .NET et Xamarin, sur Android, iOS, tvOS et watchOS
-* Applications de bureau Mac
+* Applications de poste de travail pour Mac
 * Applications .NET Core
 * Applications web ASP.NET Core
 * Jeux Unity multiplateformes
@@ -31,7 +31,7 @@ Pour plus d’informations sur l’utilisation de Xamarin dans Visual Studio pou
 
 ## <a name="mac-desktop-applications"></a>Applications de bureau Mac
 
-Vous pouvez créer des applications Mac avec [Xamarin.Mac](https://docs.microsoft.com/xamarin/mac/) à l’aide du framework d’interface utilisateur Cocoa, et [Xamarin.Forms sur Mac](https://docs.microsoft.com/xamarin/xamarin-forms/platform/other/mac) pour des applications qui partagent du code et une interface utilisateur avec d’autres plateformes.
+Vous pouvez créer des applications Mac avec [Xamarin.Mac](/xamarin/mac/) à l’aide du framework d’interface utilisateur Cocoa, et [Xamarin.Forms sur Mac](/xamarin/xamarin-forms/platform/other/mac) pour des applications qui partagent du code et une interface utilisateur avec d’autres plateformes.
 
 ## <a name="net-core-applications"></a>Applications .NET Core
 

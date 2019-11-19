@@ -10,12 +10,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94c30279683a6d367ede31c00133e6fbf8c293e5
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 2aa8779a069f4b001743326470f69f3cb35a8c10
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73186757"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568871"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>Données de document et vue de document dans les éditeurs personnalisés
 Un éditeur personnalisé se compose de deux parties : un objet de données de document et un objet de vue de document. Comme les noms le suggèrent, l’objet de données de document représente les données textuelles à afficher. De même, l’objet de vue de document (ou « View ») représente une ou plusieurs fenêtres dans lesquelles afficher l’objet de données de document.
@@ -34,7 +34,7 @@ Un éditeur personnalisé se compose de deux parties : un objet de données de 
 
  L’IDE avertit les affichages des événements (par exemple, lorsqu’une solution contenant un document est fermée) en faisant correspondre un identificateur d’élément (ItemID) pour chaque entrée dans la table de document en cours d’exécution. Pour plus d’informations, consultez exécution de la [table des documents](../extensibility/internals/running-document-table.md).
 
- Il existe deux options pour créer une vue d’un éditeur personnalisé. L’un est le modèle d’activation sur place, où la vue est hébergée dans une fenêtre à l’aide d’un contrôle ActiveX ou d’un objet de données de document. Le deuxième est le modèle d’incorporation simplifié, où la vue est hébergée par [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] et <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> est implémentée pour gérer les commandes de fenêtre. Pour plus d’informations sur le modèle d’activation sur place, consultez [activation sur place](../extensibility/in-place-activation.md). Pour plus d’informations sur le modèle d’incorporation simplifié, consultez [incorporation simplifiée](../extensibility/simplified-embedding.md).
+ Il existe deux options pour créer une vue d’un éditeur personnalisé. L’un est le modèle d’activation sur place, où la vue est hébergée dans une fenêtre à l’aide d’un contrôle ActiveX ou d’un objet de données de document. Le deuxième est le modèle d’incorporation simplifié, où la vue est hébergée par [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] et <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> est implémentée pour gérer les commandes de fenêtre. Pour plus d’informations sur le modèle d’activation sur place, consultez [activation sur place](/visualstudio/misc/in-place-activation?view=vs-2015). Pour plus d’informations sur le modèle d’incorporation simplifié, consultez [incorporation simplifiée](../extensibility/simplified-embedding.md).
 
 ## <a name="see-also"></a>Voir aussi
 

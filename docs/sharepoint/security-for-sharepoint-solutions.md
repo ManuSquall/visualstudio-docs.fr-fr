@@ -15,18 +15,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 16fb3e4a0e1aed14e4a3f1b3178dc753f5dc10b4
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 6dc1449a40528670274ea5b275cca3f0a8d2f277
+ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984183"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73983777"
 ---
 # <a name="security-for-sharepoint-solutions"></a>Sécurité pour les solutions SharePoint
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] intègre les fonctionnalités suivantes pour aider à améliorer la sécurité des applications SharePoint.
 
 ## <a name="safe-control-entries"></a>Entrées de contrôle sécurisé
- Chaque élément de projet SharePoint créé dans [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] a une propriété **entrées de contrôle sécurisé** qui représente une collection de contrôles sécurisés. Sa sous-propriété **Safe** vous permet de spécifier les contrôles que vous envisagez de sécuriser. Pour plus d’informations, consultez fournir des informations sur le [package et le déploiement dans les éléments de projet](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) et [spécification de composants WebPart sécurisés](/previous-versions/office/developer/sharepoint2003/dd583154(v=office.11)#sharepoint_northwindwebparts_topic19).
+ Chaque élément de projet SharePoint créé dans [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] a une propriété **entrées de contrôle sécurisé** qui représente une collection de contrôles sécurisés. Sa sous-propriété **Safe** vous permet de spécifier les contrôles que vous envisagez de sécuriser. Pour plus d’informations, consultez fournir des informations sur le [package et le déploiement dans les éléments de projet](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md) et [spécification de composants WebPart sécurisés](/previous-versions/office/developer/sharepoint2003/dd583154(v=office.11)#specifying-safe-web-parts).
 
 ## <a name="allowpartiallytrustedcallers-attribute"></a>Attribut AllowPartiallyTrustedCallers
  Par défaut, seules les applications entièrement approuvées par le système de sécurité d’accès du code (CAS) du Runtime peuvent accéder à un assembly de code managé partagé. Le marquage d’un assembly avec un niveau de confiance suffisant avec l’attribut AllowPartiallyTrustedCallers permet aux assemblys de confiance partielle d’y accéder.
@@ -54,7 +54,7 @@ ms.locfileid: "72984183"
 
     2. Dans la page administrateurs de la **batterie de serveurs** , choisissez l’option **nouveau** menu
 
-3. Ajoutez votre compte d’utilisateur au groupe WSS_ADMIN_WPG.
+3. Ajoutez votre compte d’utilisateur au groupe de WSS_ADMIN_WPG.
 
 ## <a name="additional-security-resources"></a>Ressources de sécurité supplémentaires
  Pour plus d’informations sur les problèmes de sécurité, consultez les rubriques suivantes.

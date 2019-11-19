@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9e75d003031d591c8ae777c606e6f7a2b6ea8c0
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: e3a83ad65232e75ffa74b66035e5c01a8491b426
+ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72912002"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73983702"
 ---
 # <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001 : Utilisez StringBuilder pour les concaténations
 
@@ -41,4 +41,4 @@ ms.locfileid: "72912002"
 ## <a name="how-to-investigate-a-warning"></a>Comment rechercher la cause d’un avertissement
  Double-cliquez sur le message dans la fenêtre **Liste d’erreurs** pour accéder à la [vue Informations relatives à la fonction](../profiling/function-details-view.md) des données de profilage par échantillonnage. Recherchez les sections du programme qui utilisent le plus fréquemment la concaténation de chaînes. Utilisez la classe StringBuilder pour les manipulations de chaînes complexes, y compris les opérations fréquentes de concaténation de chaînes.
 
- Pour plus d’informations sur l’utilisation des chaînes, consultez la section [String Operations](/previous-versions/msp-n-p/ff647790(v=pandp.10)#scalenetchapt05_topic26) de la rubrique [Chapter 5 - Improving Managed Code Performance](/previous-versions/msp-n-p/ff647790(v=pandp.10)) dans la bibliothèque Microsoft Patterns and Practices.
+ Pour plus d’informations sur l’utilisation des chaînes, consultez la section [String Operations](/previous-versions/msp-n-p/ff647790(v=pandp.10)#string-operations) de la rubrique [Chapter 5 - Improving Managed Code Performance](/previous-versions/msp-n-p/ff647790(v=pandp.10)) dans la bibliothèque Microsoft Patterns and Practices.

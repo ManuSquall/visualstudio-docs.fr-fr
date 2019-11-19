@@ -2,7 +2,7 @@
 title: Créer une application Node.js et React
 description: Dans ce tutoriel, vous créez une application à l’aide des outils Node.js pour Visual Studio.
 ms.custom: mvc
-ms.date: 11/01/2018
+ms.date: 11/01/2019
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 6c7bec91f6a938a131f99abfd5ab9cbef6479a85
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: 2f14a5f2255f7ba1b077ead60147a6df407970fc
+ms.sourcegitcommit: f9f389e72787de30eb869a55ef7725a10a4011f0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888675"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73636555"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutoriel : Créer une application Node.js et React dans Visual Studio
 
@@ -146,7 +146,9 @@ Cette application nécessite un certain nombre de modules npm pour s’exécuter
     }
     ```
 
-    S’il existe déjà une section `dependencies` dans votre version du modèle vide, remplacez-la simplement par le code JSON précédent. Pour plus d’informations sur l’utilisation de ce fichier, consultez [Configuration de package.json](../javascript/configure-packages-with-package-json.md)
+    S’il existe déjà une section `dependencies` dans votre version du modèle vide, remplacez-la simplement par le code JSON précédent. Pour plus d’informations sur l’utilisation de ce fichier, consultez [configuration de package. JSON](../javascript/configure-packages-with-package-json.md).
+
+1. Enregistrez les modifications.
 
 1. Cliquez avec le bouton droit sur le nœud **npm** de votre projet, puis choisissez **Mettre à jour les packages npm**.
 
@@ -172,7 +174,7 @@ Pour cette application simple, vous ajoutez les nouveaux fichiers projet à la r
 
 1. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le projet **NodejsWebAppBlank**, puis choisissez **Ajouter** > **Nouvel élément**.
 
-1. Dans la boîte de dialogue **Ajouter un nouvel élément**, choisissez **Fichier TypeScript JSX**, tapez le nom *app.tsx*, puis sélectionnez **OK**.
+1. Dans la boîte de dialogue **Ajouter un nouvel élément** , choisissez type de **fichier jsx de machine à écrire**, tapez le nom *app. TSX*, puis sélectionnez **Ajouter** ou **OK**.
 
 1. Répétez ces étapes pour ajouter *webpack-config.js*. Au lieu d’un fichier JSX TypeScript, choisissez **Fichier JavaScript**.
 
@@ -334,7 +336,7 @@ Chaque fois que vous apportez des changements à *app.tsx*, vous devez réexécu
 
 ## <a name="run-the-app"></a>Exécuter l'application
 
-1. Sélectionnez Chrome comme cible de débogage active.
+1. Sélectionnez Microsoft Edge ou Chrome comme cible de débogage actuelle.
 
     ::: moniker range=">=vs-2019"
     ![Sélectionner Chrome en tant que cible de débogage](../javascript/media/vs-2019/tutorial-nodejs-react-debug-target.png)
@@ -343,7 +345,12 @@ Chaque fois que vous apportez des changements à *app.tsx*, vous devez réexécu
     ![Sélectionner Chrome en tant que cible de débogage](../javascript/media/tutorial-nodejs-react-debug-target.png)
     ::: moniker-end
 
-    Si Chrome est disponible sur votre machine mais qu’il n’apparaît pas en tant qu’option, choisissez **Navigateur web (nom_navigateur)**  > **Google Chrome** dans la liste déroulante des cibles de débogage, puis sélectionnez Chrome en tant que cible de navigateur par défaut.
+    ::: moniker range=">=vs-2019"
+    Si chrome est disponible sur votre ordinateur, mais n’apparaît pas en tant qu’option, sélectionnez **navigateur Web (browserName)** > **Sélectionnez navigateur Web** dans la liste déroulante cible de débogage, puis sélectionnez **chrome** comme cible de navigateur par défaut.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Si chrome est disponible sur votre ordinateur, mais n’apparaît pas en tant qu’option, sélectionnez **navigateur Web (browserName)** > **Google Chrome** dans la liste déroulante cible de débogage, puis sélectionnez **chrome** comme cible de navigateur par défaut.
+    ::: moniker-end
 
 1. Pour exécuter l’application, appuyez sur **F5** (**Déboguer** > **Démarrer le débogage**) ou sur le bouton fléché vert.
 
@@ -371,7 +378,7 @@ Chaque fois que vous apportez des changements à *app.tsx*, vous devez réexécu
 
 1. Appuyez sur **F5** pour continuer l’exécution de l’application.
 
-1. Pour utiliser les outils de développement Chrome, appuyez sur **F12**. Vous pouvez utiliser ces outils pour examiner le DOM et interagir avec l’application à l’aide de la console JavaScript.
+1. Si vous souhaitez utiliser le Outils de développement chrome ou les outils F12 pour Microsoft Edge, appuyez sur **F12**. Vous pouvez utiliser ces outils pour examiner le DOM et interagir avec l’application à l’aide de la console JavaScript.
 
 1. Fermez le navigateur web et la console.
 
@@ -379,60 +386,137 @@ Chaque fois que vous apportez des changements à *app.tsx*, vous devez réexécu
 
 Dans la section précédente, vous avez attaché le débogueur au code Node.js côté serveur. Pour attacher le débogueur depuis Visual Studio et atteindre des points d’arrêt dans du code React côté client, vous devez aider le débogueur à identifier le processus approprié. Voici une façon d’y parvenir.
 
-1. Fermez toutes les fenêtres de Chrome.
+### <a name="prepare-the-browser-for-debugging"></a>Préparer le navigateur pour le débogage
 
-2. Ouvrez la commande **Exécuter** à partir du bouton **Démarrer** de Windows (cliquez avec le bouton droit de la souris et choisissez **Exécuter**), puis entrez la commande suivante :
+::: moniker range=">=vs-2019"
+Pour ce scénario, utilisez Microsoft Edge (chrome), actuellement nommé **Microsoft Edge Beta** dans l’IDE, ou chrome.
+::: moniker-end
+::: moniker range="vs-2017"
+Pour ce scénario, utilisez Chrome.
+::: moniker-end
 
-    `chrome.exe --remote-debugging-port=9222`
+1. Fermez toutes les fenêtres du navigateur cible.
 
-    Chrome démarre avec l’activation du débogage.
+   D’autres instances de navigateur peuvent empêcher l’ouverture du navigateur avec le débogage activé. (Les extensions de navigateur sont peut-être en cours d’exécution et empêchent le mode de débogage complet. par conséquent, vous devrez peut-être ouvrir le gestionnaire des tâches pour rechercher des instances inattendues de
+
+   ::: moniker range=">=vs-2019"
+   Pour Microsoft Edge (chrome), arrêtez également toutes les instances de chrome. Étant donné que les deux navigateurs utilisent la base de code de chrome, cela donne les meilleurs résultats.
+   ::: moniker-end
+
+2. Démarrez votre navigateur avec le débogage activé.
 
     ::: moniker range=">=vs-2019"
+    À compter de Visual Studio 2019, vous pouvez définir l’indicateur `--remote-debugging-port=9222` au lancement du navigateur en sélectionnant **Parcourir avec...** > dans la barre d’outils **Déboguer** , puis en sélectionnant **Ajouter**et en définissant l’indicateur dans le champ **arguments** . Utilisez un autre nom convivial pour le navigateur, tel que **Edge avec débogage** ou **chrome avec débogage**. Pour plus d’informations, consultez les [notes de publication](/visualstudio/releases/2019/release-notes-v16.2).
 
-    > [!NOTE]
-    > Vous pouvez également définir l’indicateur `--remote-debugging-port` au lancement du navigateur en sélectionnant **Parcourir avec… >** dans la barre d’outils **Déboguer**, puis en choisissant **Ajouter** et en définissant l’indicateur dans le champ **Arguments**. Utilisez un autre nom convivial pour le navigateur, par exemple **Chrome avec débogage**. Pour plus d’informations, consultez les [notes de publication](/visualstudio/releases/2019/release-notes-preview).
+    ![Configurer votre navigateur pour qu’il s’ouvre avec le débogage activé](../javascript/media/tutorial-nodejs-react-edge-with-debugging.png)
 
+    Vous pouvez également ouvrir la commande **exécuter** à partir du bouton **Démarrer** de Windows (cliquez avec le bouton droit et choisissez **exécuter**), puis entrez la commande suivante :
+
+    `msedge --remote-debugging-port=9222`
+
+    Ni
+
+    `chrome.exe --remote-debugging-port=9222`
     ::: moniker-end
 
-3. Passez à Visual Studio et définissez un point d’arrêt dans le code d’*app-bundle.js*, dans la fonction `render()`, comme indiqué dans l’illustration suivante :
+    ::: moniker range="vs-2017"
+    Ouvrez la commande **Exécuter** à partir du bouton **Démarrer** de Windows (cliquez avec le bouton droit de la souris et choisissez **Exécuter**), puis entrez la commande suivante :
+
+    `chrome.exe --remote-debugging-port=9222`
+    ::: moniker-end
+
+    Cela démarre votre navigateur avec le débogage activé.
+
+    L’application n’est pas encore en cours d’exécution. vous disposez donc d’une page de navigateur vide.
+
+### <a name="attach-the-debugger-to-client-side-script"></a>Attacher le débogueur au script côté client
+
+1. Basculez vers Visual Studio, puis définissez un point d’arrêt dans votre code source, *app-bundle. js* ou *app. TSX*.
+
+    Pour *app-bundle. js*, définissez le point d’arrêt dans la fonction `render()` comme indiqué dans l’illustration suivante :
 
     ![Définir un point d'arrêt](../javascript/media/tutorial-nodejs-react-set-breakpoint-client-code.png)
 
-    Pour trouver la fonction `render()` dans *app-bundle.js*, utilisez **Ctrl**+**F** (**Modifier** > **Rechercher et remplacer** > **Recherche rapide**).
+    Pour rechercher la fonction `render()` dans le fichier *app-bundle. js* compilé, utilisez **CTRL**+**F** (**modifier** > **Rechercher et remplacer** > **recherche rapide**).
 
-4. Chrome étant sélectionné comme cible de débogage dans Visual Studio, appuyez sur **Ctrl**+**F5** (**Déboguer** > **Exécuter sans débogage**) pour exécuter l’application dans le navigateur.
+    Pour *app. TSX*, définissez le point d’arrêt à l’intérieur de la fonction `render()`, sur l’instruction `return`.
+
+    ![Définir un point d'arrêt](../javascript/media/tutorial-nodejs-react-set-breakpoint-in-tsx-file.png)
+
+2. Si vous définissez le point d’arrêt dans le fichier *. TSX* (plutôt que *app-bundle. js*), vous devez mettre à jour *WebPack-config. js*. Remplacez le code suivant :
+
+    ```javascript
+    output: {
+        filename: "./app-bundle.js",
+    },
+    ```
+
+    par le code suivant :
+
+    ```javascript
+    output: {
+        filename: "./app-bundle.js",
+        devtoolModuleFilenameTemplate: '[resource-path]'  // removes the webpack:/// prefix
+    },
+    ```
+
+    Il s’agit d’un paramètre de développement uniquement pour activer le débogage dans Visual Studio. Ce paramètre vous permet de remplacer les références générées dans le fichier de mappage source, *app-bundle. js. map*, lors de la génération de l’application. Par défaut, les références WebPack du fichier de mappage source incluent le préfixe *WebPack:///* , qui empêche Visual Studio de trouver le fichier source, *app. TSX*. Plus précisément, lorsque vous apportez cette modification, la référence au fichier source, *app. TSX*, est passée de *WebPack:///./app.TSX* à *./app.TSX*, ce qui permet le débogage.
+
+3. Sélectionnez votre navigateur cible comme cible de débogage dans Visual Studio, puis appuyez sur **Ctrl**+**F5** (**Déboguer** > exécuter **sans débogage**) pour exécuter l’application dans le navigateur.
+
+    ::: moniker range=">=vs-2019"
+    Si vous avez créé une configuration de navigateur avec un nom convivial, choisissez-la comme cible de débogage.
+    ::: moniker-end
 
     L’application s’ouvre dans un nouvel onglet du navigateur.
 
-5. Choisissez **Déboguer** > **Attacher au processus**.
+4. Choisissez **Déboguer** > **Attacher au processus**.
 
-6. Dans la boîte de dialogue **Attacher au processus**, choisissez **Code WebKit** dans le champ **Attacher à**, puis tapez **chrome** dans la zone de filtre pour filtrer les résultats de la recherche.
+    > [!TIP]
+    > À compter de Visual Studio 2017, une fois que vous avez attaché le processus la première fois en suivant ces étapes, vous pouvez le rattacher rapidement au même processus en choisissant **Déboguer** > **rattacher au processus**.
 
-7. Sélectionnez le processus Chrome et le port d’hôte approprié (1337 dans cet exemple), puis sélectionnez **Attacher**.
+5. Dans la boîte de dialogue **attacher au processus** , récupérez une liste filtrée des instances de navigateur auxquelles vous pouvez attacher.
 
+    ::: moniker range=">=vs-2019"
+    Dans Visual Studio 2019, choisissez le débogueur approprié pour votre navigateur cible, **JavaScript (chrome)** ou **JavaScript (Microsoft Edge-chrome)** dans le champ **attacher à** , tapez **chrome** ou **bord** dans la zone de filtre pour filtrer résultats de la recherche.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Dans Visual Studio 2017, choisissez **code WebKit** dans le champ **attacher à** , tapez **chrome** dans la zone de filtre pour filtrer les résultats de la recherche.
+    ::: moniker-end
+
+6. Sélectionnez le processus du navigateur avec le port d’hôte correct (localhost dans cet exemple), puis sélectionnez **attacher**.
+
+    Le port (1337) peut également apparaître dans le champ **titre** pour vous aider à sélectionner l’instance de navigateur appropriée.
+
+    ::: moniker range=">=vs-2019"
+    L’exemple suivant montre comment cela recherche le navigateur Microsoft Edge (chrome).
+
+    ![Attacher au processus](../javascript/media/tutorial-nodejs-react-attach-to-process-edge.png)
+    ::: moniker-end
+    ::: moniker range="vs-2017"
     ![Attacher au processus](../javascript/media/tutorial-nodejs-react-attach-to-process.png)
 
-    ::: moniker range="vs-2017"
     Vous savez que le débogueur est correctement attaché quand l’Explorateur DOM et la console JavaScript s’ouvrent dans Visual Studio. Ces outils de débogage sont similaires aux outils de développement Chrome et aux outils F12 pour Microsoft Edge.
     ::: moniker-end
 
-    > [!NOTE]
-    > Si le débogueur ne s’attache pas et que vous voyez le message « Impossible de s’attacher au processus. Une opération n’est pas légale dans l’état actuel. », utilisez le Gestionnaire des tâches pour fermer toutes les instances de Chrome avant de démarrer Chrome en mode débogage. Les extensions Chrome peuvent être en cours d’exécution et empêcher le mode débogage complet.
+    > [!TIP]
+    > Si le débogueur ne s’attache pas et que vous voyez le message « Impossible de s’attacher au processus. Une opération n’est pas valide dans l’état actuel.», utilisez le gestionnaire des tâches pour fermer toutes les instances du navigateur cible avant de démarrer le navigateur en mode débogage. Les extensions de navigateur peuvent être en cours d’exécution et empêchent le mode de débogage complet.
 
-8. Dans la mesure où le code avec le point d’arrêt s’est déjà exécuté, actualisez la page de votre navigateur pour atteindre le point d’arrêt.
+7. Dans la mesure où le code avec le point d’arrêt s’est déjà exécuté, actualisez la page de votre navigateur pour atteindre le point d’arrêt.
 
-    Pendant que l’exécution du débogueur est en pause, vous pouvez examiner l’état de votre application en pointant sur les variables et en utilisant les fenêtres du débogueur. Vous pouvez faire avancer le débogueur en exécutant pas à pas le code (**F5**, **F10** et **F11**).
+    Pendant que l’exécution du débogueur est en pause, vous pouvez examiner l’état de votre application en pointant sur les variables et en utilisant les fenêtres du débogueur. Vous pouvez faire avancer le débogueur en exécutant pas à pas le code (**F5**, **F10** et **F11**). Pour plus d’informations sur les fonctionnalités de débogage de base, consultez [premier aperçu du débogueur](../debugger/debugger-feature-tour.md).
 
-    Vous pouvez éventuellement atteindre le point d’arrêt dans *app-bundle.js* ou son emplacement mappé dans *app.tsx*, en fonction de votre environnement et de l’état du navigateur. De toute façon, vous pouvez exécuter pas à pas le code et examiner les variables.
+    Vous pouvez atteindre le point d’arrêt dans *app-bundle. js* ou son emplacement mappé dans *app. TSX*, en fonction des étapes que vous avez suivies précédemment, ainsi que de l’état de votre environnement et de votre navigateur. De toute façon, vous pouvez exécuter pas à pas le code et examiner les variables.
 
-   * Si vous devez arrêter l’exécution du code dans *app.tsx* et que vous n’y parvenez pas, utilisez **Attacher au processus** comme décrit dans la procédure précédente pour attacher le débogueur. Ouvrez ensuite le fichier *app.tsx* généré dynamiquement à partir de l’Explorateur de solutions en ouvrant **Documents de script** > **app.tsx**, définissez un point d’arrêt, puis actualisez la page dans votre navigateur (définissez le point d’arrêt dans une ligne de code qui autorise les points d’arrêt, par exemple l’instruction `return` ou une déclaration `var`).
+   * Si vous devez arrêter l’exécution du code dans *app.tsx* et que vous n’y parvenez pas, utilisez **Attacher au processus** comme décrit dans la procédure précédente pour attacher le débogueur. Assurez-vous que votre environnement est correctement configuré :
 
-       Sinon, si vous devez arrêter l’exécution du code dans *app.tsx* et que vous n’y parvenez pas, essayez d’utiliser l’instruction `debugger;` dans *app.tsx*, ou définissez des points d’arrêt dans les outils de développement Chrome à la place.
+      * Vous avez fermé toutes les instances de navigateur, y compris les extensions chrome (à l’aide du gestionnaire des tâches), afin de pouvoir exécuter le navigateur en mode débogage. Veillez à démarrer le navigateur en mode débogage.
 
-   * Si vous devez arrêter l’exécution du code dans *app-bundle.js* et que vous n’y parvenez pas, supprimez le fichier de mappage de source, *app-bundle.js.map*.
+      * Assurez-vous que votre fichier de mappage source contient une référence à *./app.TSX* et non à *WebPack:///./app.TSX*, ce qui empêche le débogueur Visual Studio de localiser *app. TSX*.
 
-     > [!TIP]
-     > Une fois que vous avez effectué l’attachement au processus la première fois en suivant ces étapes, vous pouvez rapidement effectuer un rattachement au même processus dans Visual Studio 2017 en choisissant **Déboguer** > **Rattacher au processus**.
+       Sinon, si vous devez vous arrêter dans le code dans *app. TSX* et que vous ne pouvez pas le faire, essayez d’utiliser l’instruction `debugger;` dans *app. TSX*, ou définissez des points d’arrêt dans le outils de développement chrome (ou les outils F12 pour Microsoft Edge) à la place.
+
+   * Si vous devez vous arrêter dans le code dans *app-bundle. js* et que vous ne pouvez pas le faire, supprimez le fichier de mappage source, *app-bundle. js. map*.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

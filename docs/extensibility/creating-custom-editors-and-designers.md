@@ -11,12 +11,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08d9ee33d49985fed8e8c0180fa652aed39b25d9
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 7a6cb0d70566eaabb2ba37cb209041e03684c958
+ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73186806"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73568892"
 ---
 # <a name="create-custom-editors-and-designers"></a>Créer des éditeurs et des concepteurs personnalisés
 
@@ -59,7 +59,7 @@ Pour plus d’informations sur l’éditeur principal de Visual Studio, consulte
 
 - Votre éditeur a-t-il besoin d’héberger des contrôles ActiveX ?
 
-   Si votre éditeur héberge des contrôles ActiveX, implémentez un éditeur d’activation sur place, comme indiqué dans [activation sur place](../extensibility/in-place-activation.md). S’il n’héberge pas de contrôles ActiveX, utilisez un éditeur d’incorporation simplifié ou personnalisez le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] éditeur par défaut.
+   Si votre éditeur héberge des contrôles ActiveX, implémentez un éditeur d’activation sur place, comme indiqué dans [activation sur place](/visualstudio/misc/in-place-activation?view=vs-2015). S’il n’héberge pas de contrôles ActiveX, utilisez un éditeur d’incorporation simplifié ou personnalisez le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] éditeur par défaut.
 
 - Votre éditeur prendra-t-il en charge plusieurs vues ? Vous devez prendre en charge plusieurs vues Si vous souhaitez que les affichages de votre éditeur soient visibles en même temps que l’éditeur par défaut.
 

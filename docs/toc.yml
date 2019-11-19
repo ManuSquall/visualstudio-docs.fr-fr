@@ -166,404 +166,418 @@
       href: python/
     - name: Node.js
       href: javascript/
-- name: Guides pratiques
+- name: Développer
   items:
-    - name: Développer
+    - name: Organiser et modifier du code
+      href: ide/index-writing-code.yml
+    - name: Se déplacer dans l’IDE
+      href: ide/how-to-move-around-in-the-visual-studio-ide.md
+    - name: Solutions et projets
       items:
-        - name: Prise en main
-          href: ide/index-writing-code.yml
-        - name: Se déplacer dans l’IDE
-          href: ide/how-to-move-around-in-the-visual-studio-ide.md
-        - name: Solutions et projets
+        - name: Utiliser des solutions et des projets
+          href: ide/solutions-and-projects-in-visual-studio.md
+        - name: Créer un projet
+          href: ide/create-new-project.md
+        - name: Créer des solutions et des projets
+          href: ide/creating-solutions-and-projects.md
+        - name: Ouvrir un projet à partir d’un référentiel
+          href: get-started/tutorial-open-project-from-repo.md
+        - name: 'Porter, migrer et mettre à niveau des projets'
+          href: porting/port-migrate-and-upgrade-visual-studio-projects.md
+        - name: Gérer les propriétés des projets et des solutions
+          href: ide/managing-project-and-solution-properties.md
+        - name: Références de projets
           items:
-            - name: Utiliser des solutions et des projets
-              href: ide/solutions-and-projects-in-visual-studio.md
-            - name: Créer un projet
-              href: ide/create-new-project.md
-            - name: Créer des solutions et des projets
-              href: ide/creating-solutions-and-projects.md
-            - name: Ouvrir un projet à partir d’un référentiel
-              href: get-started/tutorial-open-project-from-repo.md
-            - name: 'Porter, migrer et mettre à niveau des projets'
-              href: porting/port-migrate-and-upgrade-visual-studio-projects.md
-            - name: Gérer les propriétés des projets et des solutions
-              href: ide/managing-project-and-solution-properties.md
-            - name: Références de projets
-              items:
-                - name: Gérer les références dans un projet
-                  href: ide/managing-references-in-a-project.md
-                - name: Ajouter ou supprimer des références à l’aide du gestionnaire de références
-                  href: ide/how-to-add-or-remove-references-by-using-the-reference-manager.md
-                - name: Ajouter ou supprimer des espaces de noms importés (Visual Basic)
-                  href: ide/how-to-add-or-remove-imported-namespaces-visual-basic.md
-                - name: Dépanner des références rompues
-                  href: ide/troubleshooting-broken-references.md
-            - name: Gérer les ressources d’une application (.NET)
-              href: ide/managing-application-resources-dotnet.md
-            - name: Paramètres d’application (.NET)
-              items:
-                - name: Gérer les paramètres d’application (.NET)
-                  href: ide/managing-application-settings-dotnet.md
-                - name: 'Ajouter un fichier de configuration d’application dans un projet C#'
-                  href: ide/how-to-add-app-config-file.md
-            - name: Signer des manifestes
-              items:
-                - name: Gérer la signature d’assemblys et de manifestes
-                  href: ide/managing-assembly-and-manifest-signing.md
-                - name: Signer des manifestes d’application et de déploiement
-                  href: ide/how-to-sign-application-and-deployment-manifests.md
-            - name: 'Spécifier une icône d’application (Visual Basic, C#)'
-              href: ide/how-to-specify-an-application-icon-visual-basic-csharp.md
-            - name: Cibler un framework
-              href: ide/visual-studio-multi-targeting-overview.md
-            - name: Créer des modèles
-              items:
-                - name: Créer des modèles de projet et d’élément
-                  href: ide/creating-project-and-item-templates.md
-                - name: Ajouter des balises à un modèle
-                  href: ide/template-tags.md
-                - name: Créer des modèles de projet
-                  href: ide/how-to-create-project-templates.md
-                - name: Créer des modèles à projets multiples
-                  href: ide/how-to-create-multi-project-templates.md
-                - name: Créer des modèles d’élément
-                  href: ide/how-to-create-item-templates.md
-                - name: Créer des modèles d’élément multifichier
-                  href: ide/how-to-create-multi-file-item-templates.md
-                - name: Créer des modèles web
-                  href: ide/how-to-manually-create-web-templates.md
-                - name: Dépanner des modèles
-                  href: ide/how-to-troubleshoot-templates.md
-            - name: Localiser des modèles de projet et d’élément
-              href: ide/how-to-locate-and-organize-project-and-item-templates.md
-            - name: Personnaliser des modèles
-              items:
-                - name: Personnaliser des modèles de projet et d’élément
-                  href: ide/customizing-project-and-item-templates.md
-                - name: Mettre à jour des modèles existants
-                  href: ide/how-to-update-existing-templates.md
-                - name: Substituer des paramètres dans un modèle
-                  href: ide/how-to-substitute-parameters-in-a-template.md
-                - name: Paramètres de modèle
-                  href: ide/template-parameters.md
-            - name: "prise en charge 64\_bits"
-              href: ide/visual-studio-ide-64-bit-support.md
-        - name: Développer sans projets ni solutions
+            - name: Gérer les références dans un projet
+              href: ide/managing-references-in-a-project.md
+            - name: Ajouter ou supprimer des références à l’aide du gestionnaire de références
+              href: ide/how-to-add-or-remove-references-by-using-the-reference-manager.md
+            - name: Ajouter ou supprimer des espaces de noms importés (Visual Basic)
+              href: ide/how-to-add-or-remove-imported-namespaces-visual-basic.md
+            - name: Dépanner des références rompues
+              href: ide/troubleshooting-broken-references.md
+        - name: Gérer les ressources d’une application (.NET)
+          href: ide/managing-application-resources-dotnet.md
+        - name: Paramètres d’application (.NET)
           items:
-            - name: "Procédure\_: Développer sans projet"
-              displayName: Open folder
-              href: ide/develop-code-in-visual-studio-without-projects-or-solutions.md
-            - name: Personnaliser des tâches de génération et de débogage
-              displayName: makefile tasks.vs.json
-              href: ide/customize-build-and-debug-tasks-in-visual-studio.md
-        - name: Se connecter à un projet ou à un dépôt
-          displayName: Azure DevOps VSTS GitHub
-          href: ide/connect-team-project.md
-        - name: Éditeur
+            - name: Gérer les paramètres d’application (.NET)
+              href: ide/managing-application-settings-dotnet.md
+            - name: 'Ajouter un fichier de configuration d’application dans un projet C#'
+              href: ide/how-to-add-app-config-file.md
+        - name: Signer des manifestes
           items:
-            - name: Utiliser l’éditeur
-              href: ide/writing-code-in-the-code-and-text-editor.md
-            - name: Rechercher et remplacer
-              items:
-                - name: Rechercher et remplacer du texte
-                  href: ide/finding-and-replacing-text.md
-                - name: Utiliser les expressions régulières
-                  dispayName: RegEx
-                  href: ide/using-regular-expressions-in-visual-studio.md
-                - name: Zone Rechercher/Commande
-                  href: ide/find-command-box.md
-                - name: Rechercher dans les fichiers
-                  href: ide/find-in-files.md
-                - name: Remplacer dans les fichiers
-                  href: ide/replace-in-files.md
-            - name: Encodages
-              items:
-                - name: Encodages et sauts de ligne
-                  href: ide/encodings-and-line-breaks.md
-                - name: Enregistrer et ouvrir des fichiers avec encodage
-                  href: ide/how-to-save-and-open-files-with-encoding.md
-            - name: mode Plan
-              displayName: Expand and collapse
-              href: ide/outlining.md
-            - name: Génération et refactorisation de code
-              items:
-                - name: Générer et corriger du code
-                  href: ide/code-generation-in-visual-studio.md
-                - name: Extraits de code
-                  items:
-                    - name: Utiliser des extraits de code
-                      href: ide/code-snippets.md
-                    - name: 'Informations de référence sur les extraits de code C#'
-                      href: ide/visual-csharp-code-snippets.md
-                    - name: Informations de référence sur les extraits de code C++
-                      href: ide/visual-cpp-code-snippets.md
-                    - name: Insérer des commentaires XML
-                      href: ide/reference/generate-xml-documentation-comments.md
-                    - name: Utiliser des extraits de code Entourer de
-                      href: ide/how-to-use-surround-with-code-snippets.md
-                    - name: meilleures pratiques recommandées.
-                      href: ide/best-practices-for-using-code-snippets.md
-                    - name: Créer des extraits de code
-                      items:
-                        - name: "Procédure pas à pas\_: Créer un extrait de code"
-                          href: ide/walkthrough-creating-a-code-snippet.md
-                        - name: Distribuer des extraits de code
-                          href: ide/how-to-distribute-code-snippets.md
-                        - name: Fonctions des extraits de code
-                          href: ide/code-snippet-functions.md
-                        - name: Référence de schéma des extraits de code
-                          href: ide/code-snippets-schema-reference.md
-                        - name: Dépanner des extraits
-                          href: ide/troubleshooting-snippets.md
-                - name: Actions rapides
-                  href: ide/quick-actions.md
-                  displayName: light bulb screwdriver suggestions
-                  items:
-                    - name: Actions rapides courantes
-                      href: ide/common-quick-actions.md
-                    - name: Générer la classe/le type
-                      href: ide/reference/generate-class-type.md
-                    - name: Générer la méthode
-                      href: ide/reference/generate-method.md
-                    - name: Générer le champ/la propriété/la valeur locale
-                      href: ide/reference/generate-field-property-local.md
-                    - name: Générer le constructeur
-                      href: ide/reference/generate-constructor.md
-                    - name: Générer un déconstructeur
-                      href: ide/reference/generate-deconstructor.md
-                    - name: Ajouter un paramètre à une méthode
-                      href: ide/reference/add-parameter.md
-                    - name: Générer le remplacement
-                      href: ide/reference/generate-override.md
-                    - name: Générer des substitutions de méthode Equals et GetHashCode
-                      href: ide/reference/generate-equals-gethashcode-methods.md
-                    - name: Générer des instructions using
-                      href: ide/reference/generate-usings.md
-                    - name: Implémenter une classe abstraite
-                      href: ide/reference/implement-abstract-class.md
-                    - name: Implémenter une interface
-                      href: ide/reference/implement-interface.md
-                    - name: Introduire une variable locale
-                      href: ide/reference/introduce-local-variable.md
-                - name: Refactoriser du code
-                  items:
-                    - name: Vue d'ensemble
-                      displayName: refactoring
-                      href: ide/refactoring-in-visual-studio.md
-                    - name: Changer la signature de la méthode
-                      href: ide/reference/change-method-signature.md
-                    - name: Conversion de type anonyme en classe
-                      href: ide/reference/convert-anonymous-type-to-class.md
-                    - name: Conversion de type anonyme en tuple
-                      href: ide/reference/convert-anonymous-type-to-tuple.md
-                    - name: Convertir une boucle for en instruction foreach et vice versa
-                      href: ide/reference/convert-for-loop-to-foreach.md
-                    - name: Convertir une méthode Get en propriété et vice versa
-                      href: ide/reference/convert-get-method-to-property.md
-                    - name: Convertir une fonction locale en méthode
-                      href: ide/reference/convert-local-function-method.md
-                    - name: Convertir une boucle foreach en syntaxe LINQ
-                      href: ide/reference/convert-foreach-linq.md
-                    - name: Convertir une requête LINQ en instruction foreach
-                      href: ide/reference/convert-linq-to-foreach.md
-                    - name: Convertir l’instruction switch en expression switch
-                      href: ide/reference/convert-switch-statement-to-switch-expression.md
-                    - name: Encapsuler le champ
-                      href: ide/reference/encapsulate-field.md
-                    - name: Extraire l’interface
-                      href: ide/reference/extract-interface.md
-                    - name: Extraire la méthode
-                      href: ide/reference/extract-method.md
-                    - name: Générer un paramètre
-                      href: ide/reference/generate-parameter.md
-                    - name: Variable temporaire inline
-                      href: ide/reference/inline-temporary-variable.md
-                    - name: Autocomplétion IntelliSense pour les types non importés
-                      href: ide/reference/intellisense-completion-unimported-types.md
-                    - name: Inversion des expressions conditionnelles et des opérations logiques
-                      href: ide/reference/invert-conditional-logical.md
-                    - name: Inverser une instruction if
-                      href: ide/reference/invert-if-statement.md
-                    - name: Déplacer la déclaration près de la référence
-                      href: ide/reference/move-declaration-near-reference.md
-                    - name: Déplacer le type vers le fichier correspondant
-                      href: ide/reference/move-type-to-matching-file.md
-                    - name: Déplacer un type vers un espace de noms
-                      href: ide/reference/move-type-to-namespace.md
-                    - name: Remonter un membre
-                      href: ide/reference/pull-members-up.md
-                    - name: Complétion d’expression régulière dans IntelliSense
-                      href: ide/reference/regex-completion-through-intellisense.md
-                    - name: Supprimer le code inacessible
-                      href: ide/reference/remove-unreachable-code.md
-                    - name: Renommer
-                      href: ide/reference/rename.md
-                    - name: Trier les instructions Using
-                      href: ide/reference/sort-usings.md
-                    - name: "Fractionner ou fusionner des instructions\_if"
-                      href: ide/reference/split-or-merge-if-statement.md
-                    - name: Synchronisation de l’espace de noms et du nom du dossier
-                      href: ide/reference/sync-namespace-and-folder-name.md
-                    - name: Synchroniser le type et le nom de fichier
-                      href: ide/reference/sync-type-and-file.md
-                    - name: Utiliser un type explicite
-                      href: ide/reference/convert-var-to-explicit-type.md
-                    - name: Utiliser un corps d’expression ou un corps de bloc pour les expressions lambda
-                      href: ide/reference/use-block-body-lambda.md
-                    - name: 'Affectations, variables et paramètres de valeur inutilisés'
-                      href: ide/reference/unused-values-parameters.md
-                    - name: Mettre à la ligne et aligner des chaînes d’appels
-                      href: ide/reference/wrap-and-align-call-chains.md
-                    - name: 'Mettre à la ligne, mettre en retrait et aligner des paramètres'
-                      href: ide/reference/wrap-align-indent-parameters.md
-                - name: "Procédure pas à pas\_: Générer du code à partir de l’utilisation"
-                  href: ide/walkthrough-test-first-support-with-the-generate-from-usage-feature.md
-            - name: IntelliSense
-              items:
-                - name: Utilisez IntelliSense
-                  href: ide/using-intellisense.md
-                - name: Visual Basic IntelliSense
-                  href: ide/visual-basic-specific-intellisense.md
-                - name: 'C# IntelliSense'
-                  href: ide/visual-csharp-intellisense.md
-                - name: IntelliSense JavaScript
-                  href: ide/javascript-intellisense.md
-                - name: Visual C++ IntelliSense
-                  href: ide/visual-cpp-intellisense.md
-                - name: Configurer un projet C++ pour IntelliSense
-                  href: ide/visual-cpp-intellisense-configuration.md
-            - name: Se déplacer dans le code
-              items:
-                - name: Parcourir votre code
-                  href: ide/navigating-code.md
-                - name: Rechercher des références dans votre code
-                  href: ide/finding-references.md
-                - name: Afficher les définitions de type et de membre
-                  items:
-                    - name: Atteindre la définition et Aperçu de la définition
-                      href: ide/go-to-and-peek-definition.md
-                    - name: Afficher et modifier le code avec l’Aperçu de définition
-                      href: ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md
-                - name: Rechercher du code à l’aide des commandes Atteindre
-                  href: ide/go-to.md
-            - name: Personnaliser l’éditeur
-              items:
-                - name: Changer la casse du texte
-                  href: ide/how-to-change-text-case-in-the-editor.md
-                - name: Gérer les modes de l’éditeur
-                  href: ide/how-to-manage-editor-modes.md
-                - name: Gérer les fenêtres de l’éditeur
-                  href: ide/how-to-manage-editor-windows.md
-                - name: Changer les polices et les couleurs
-                  href: ide/reference/how-to-change-fonts-and-colors-in-the-editor.md
-                - name: Gérer le retour automatique à la ligne
-                  href: ide/reference/how-to-manage-word-wrap-in-the-editor.md
-                - name: Afficher les numéros de ligne
-                  href: ide/reference/how-to-display-line-numbers-in-the-editor.md
-                - name: Afficher les URL sous forme de liens
-                  href: ide/reference/how-to-display-urls-as-links-in-the-editor.md
-                - name: Définir les options d’éditeur spécifiques au langage
-                  href: ide/reference/setting-language-specific-editor-options.md
-            - name: Style de code
-              items:
-                - name: Préférences de style de code
-                  href: /visualstudio/ide/code-styles-and-code-cleanup
-                - name: Utiliser les fichiers EditorConfig pour le style de code
-                  displayName: Configure code style analyzers
-                  href: ide/create-portable-custom-editor-options.md
-                - name: Conventions de codage .NET
-                  items:
-                    - name: Vue d'ensemble
-                      href: ide/editorconfig-code-style-settings-reference.md
-                    - name: Conventions de langage
-                      href: ide/editorconfig-language-conventions.md
-                    - name: Conventions de mise en forme
-                      href: ide/editorconfig-formatting-conventions.md
-                    - name: Conventions d'attribution d'un nom
-                      href: ide/editorconfig-naming-conventions.md
-            - name: Personnaliser la barre de défilement
-              href: ide/how-to-track-your-code-by-customizing-the-scrollbar.md
-            - name: Définir des signets dans le code
-              href: ide/setting-bookmarks-in-code.md
-            - name: CodeLens
-              items:
-                - name: Rechercher l’historique du code avec CodeLens
-                  href: ide/find-code-changes-and-other-history-with-codelens.md
-                - name: 'CodeIndex, commande'
-                  href: ide/codeindex-command.md
-            - name: Prise en charge de l’éditeur pour d’autres langages
-              href: ide/adding-visual-studio-editor-support-for-other-languages.md
-        - name: Modes Code
+            - name: Gérer la signature d’assemblys et de manifestes
+              href: ide/managing-assembly-and-manifest-signing.md
+            - name: Signer des manifestes d’application et de déploiement
+              href: ide/how-to-sign-application-and-deployment-manifests.md
+        - name: 'Spécifier une icône d’application (Visual Basic, C#)'
+          href: ide/how-to-specify-an-application-icon-visual-basic-csharp.md
+        - name: Cibler un framework
+          href: ide/visual-studio-multi-targeting-overview.md
+        - name: Créer des modèles
           items:
-            - name: Afficher la structure du code
-              href: ide/viewing-the-structure-of-code.md
-            - name: Icônes Affichage de classes et Explorateur d’objets
-              href: ide/class-view-and-object-browser-icons.md
-        - name: Utiliser la liste des tâches
-          href: ide/using-the-task-list.md
-        - name: Concepteur de classes
+            - name: Créer des modèles de projet et d’élément
+              href: ide/creating-project-and-item-templates.md
+            - name: Ajouter des balises à un modèle
+              href: ide/template-tags.md
+            - name: Créer des modèles de projet
+              href: ide/how-to-create-project-templates.md
+            - name: Créer des modèles à projets multiples
+              href: ide/how-to-create-multi-project-templates.md
+            - name: Créer des modèles d’élément
+              href: ide/how-to-create-item-templates.md
+            - name: Créer des modèles d’élément multifichier
+              href: ide/how-to-create-multi-file-item-templates.md
+            - name: Créer des modèles web
+              href: ide/how-to-manually-create-web-templates.md
+            - name: Dépanner des modèles
+              href: ide/how-to-troubleshoot-templates.md
+        - name: Localiser des modèles de projet et d’élément
+          href: ide/how-to-locate-and-organize-project-and-item-templates.md
+        - name: Personnaliser des modèles
           items:
-            - name: Créer des classes dans le Concepteur de classes
-              href: ide/class-designer/designing-and-viewing-classes-and-types.md
-            - name: Ajouter des diagrammes de classes aux projets
-              href: ide/class-designer/how-to-add-class-diagrams-to-projects.md
-            - name: Personnaliser des diagrammes de classes
-              href: ide/class-designer/how-to-customize-class-diagrams.md
-            - name: Copier les éléments d’un diagramme de classes dans un document Microsoft Office
-              href: ide/class-designer/how-to-copy-class-diagram-elements-to-a-microsoft-office-document.md
-            - name: Exporter des diagrammes de classes sous forme d’images
-              href: ide/class-designer/how-to-export-class-diagrams-as-images.md
-            - name: Imprimer des diagrammes de classes
-              href: ide/class-designer/how-to-print-class-diagrams.md
-            - name: Ajouter des commentaires aux diagrammes de classes
-              href: ide/class-designer/how-to-add-comments-to-class-diagrams.md
-            - name: Créer des classes et des types
+            - name: Personnaliser des modèles de projet et d’élément
+              href: ide/customizing-project-and-item-templates.md
+            - name: Mettre à jour des modèles existants
+              href: ide/how-to-update-existing-templates.md
+            - name: Substituer des paramètres dans un modèle
+              href: ide/how-to-substitute-parameters-in-a-template.md
+            - name: Paramètres de modèle
+              href: ide/template-parameters.md
+        - name: "prise en charge 64\_bits"
+          href: ide/visual-studio-ide-64-bit-support.md
+    - name: Développer sans projets ni solutions
+      items:
+        - name: "Procédure\_: Développer sans projet"
+          displayName: Open folder
+          href: ide/develop-code-in-visual-studio-without-projects-or-solutions.md
+        - name: Personnaliser des tâches de génération et de débogage
+          displayName: makefile tasks.vs.json
+          href: ide/customize-build-and-debug-tasks-in-visual-studio.md
+    - name: Se connecter à un projet ou à un dépôt
+      displayName: Azure DevOps VSTS GitHub
+      href: ide/connect-team-project.md
+    - name: Éditeur
+      items:
+        - name: Utiliser l’éditeur
+          href: ide/writing-code-in-the-code-and-text-editor.md
+        - name: Rechercher et remplacer
+          items:
+            - name: Rechercher et remplacer du texte
+              href: ide/finding-and-replacing-text.md
+            - name: Utiliser les expressions régulières
+              dispayName: RegEx
+              href: ide/using-regular-expressions-in-visual-studio.md
+            - name: Zone Rechercher/Commande
+              href: ide/find-command-box.md
+            - name: Rechercher dans les fichiers
+              href: ide/find-in-files.md
+            - name: Remplacer dans les fichiers
+              href: ide/replace-in-files.md
+        - name: Encodages
+          items:
+            - name: Encodages et sauts de ligne
+              href: ide/encodings-and-line-breaks.md
+            - name: Enregistrer et ouvrir des fichiers avec encodage
+              href: ide/how-to-save-and-open-files-with-encoding.md
+        - name: mode Plan
+          displayName: Expand and collapse
+          href: ide/outlining.md
+        - name: Génération et refactorisation de code
+          items:
+            - name: Générer et corriger du code
+              href: ide/code-generation-in-visual-studio.md
+            - name: Extraits de code
               items:
-                - name: Créer des types
-                  href: ide/class-designer/how-to-create-types.md
-                - name: Créer un héritage entre des types
-                  href: ide/class-designer/how-to-create-inheritance-between-types.md
-                - name: Créer des associations entre des types
-                  href: ide/class-designer/how-to-create-associations-between-types.md
-                - name: Visualiser une association de collections
-                  href: ide/class-designer/how-to-visualize-a-collection-association.md
-                - name: Créer et configurer des membres de type
-                  href: ide/class-designer/creating-and-configuring-type-members.md
-            - name: Voir les types et les relations
+                - name: Utiliser des extraits de code
+                  href: ide/code-snippets.md
+                - name: 'Informations de référence sur les extraits de code C#'
+                  href: ide/visual-csharp-code-snippets.md
+                - name: Informations de référence sur les extraits de code C++
+                  href: ide/visual-cpp-code-snippets.md
+                - name: Insérer des commentaires XML
+                  href: ide/reference/generate-xml-documentation-comments.md
+                - name: Utiliser des extraits de code Entourer de
+                  href: ide/how-to-use-surround-with-code-snippets.md
+                - name: meilleures pratiques recommandées.
+                  href: ide/best-practices-for-using-code-snippets.md
+                - name: Créer des extraits de code
+                  items:
+                    - name: "Procédure pas à pas\_: Créer un extrait de code"
+                      href: ide/walkthrough-creating-a-code-snippet.md
+                    - name: Distribuer des extraits de code
+                      href: ide/how-to-distribute-code-snippets.md
+                    - name: Fonctions des extraits de code
+                      href: ide/code-snippet-functions.md
+                    - name: Référence de schéma des extraits de code
+                      href: ide/code-snippets-schema-reference.md
+                    - name: Dépanner des extraits
+                      href: ide/troubleshooting-snippets.md
+            - name: Actions rapides
+              href: ide/quick-actions.md
+              displayName: light bulb screwdriver suggestions
               items:
-                - name: Voir les types existants
-                  href: ide/class-designer/how-to-view-existing-types.md
-                - name: Voir l’héritage entre les types
-                  href: ide/class-designer/how-to-view-inheritance-between-types.md
-                - name: Notation des membres et notation des associations
-                  href: ide/class-designer/how-to-change-between-member-notation-and-association-notation.md
-            - name: Refactoriser des classes et des types
-              href: ide/class-designer/refactoring-classes-and-types.md
-            - name: Implémenter une interface
-              href: ide/class-designer/how-to-implement-an-interface.md
-            - name: Diviser une classe en classes partielles
-              href: ide/class-designer/how-to-split-a-class-into-partial-classes.md
-            - name: Créer un type Nullable
-              href: ide/class-designer/how-to-create-a-nullable-type.md
-            - name: C++ dans le Concepteur de classes
+                - name: Actions rapides courantes
+                  href: ide/common-quick-actions.md
+                - name: Générer la classe/le type
+                  href: ide/reference/generate-class-type.md
+                - name: Générer la méthode
+                  href: ide/reference/generate-method.md
+                - name: Générer le champ/la propriété/la valeur locale
+                  href: ide/reference/generate-field-property-local.md
+                - name: Générer le constructeur
+                  href: ide/reference/generate-constructor.md
+                - name: Générer un déconstructeur
+                  href: ide/reference/generate-deconstructor.md
+                - name: Ajouter un paramètre à une méthode
+                  href: ide/reference/add-parameter.md
+                - name: Générer le remplacement
+                  href: ide/reference/generate-override.md
+                - name: Générer des substitutions de méthode Equals et GetHashCode
+                  href: ide/reference/generate-equals-gethashcode-methods.md
+                - name: Générer des instructions using
+                  href: ide/reference/generate-usings.md
+                - name: Implémenter une classe abstraite
+                  href: ide/reference/implement-abstract-class.md
+                - name: Implémenter une interface
+                  href: ide/reference/implement-interface.md
+                - name: Introduire une variable locale
+                  href: ide/reference/introduce-local-variable.md
+            - name: Refactoriser du code
               items:
-                - name: Utiliser le code Visual C++
-                  href: ide/class-designer/working-with-visual-cpp-code.md
-                - name: C++ (classes)
-                  href: ide/class-designer/visual-cpp-classes.md
-                - name: Structures C++
-                  href: ide/class-designer/visual-cpp-structures.md
-                - name: Énumérations C++
-                  href: ide/class-designer/visual-cpp-enumerations.md
-                - name: Typedefs C++
-                  href: ide/class-designer/visual-cpp-typedefs.md
-            - name: Raccourcis clavier et souris
-              href: ide/class-designer/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md
-            - name: Erreurs du Concepteur de classes
-              href: ide/class-designer/additional-information-about-errors.md
-        - name: Améliorer votre code
-          href: ide/find-and-fix-code-errors.md
-        - name: Développement Windows Forms
+                - name: Vue d'ensemble
+                  displayName: refactoring
+                  href: ide/refactoring-in-visual-studio.md
+                - name: Changer la signature de la méthode
+                  href: ide/reference/change-method-signature.md
+                - name: Conversion de type anonyme en classe
+                  href: ide/reference/convert-anonymous-type-to-class.md
+                - name: Conversion de type anonyme en tuple
+                  href: ide/reference/convert-anonymous-type-to-tuple.md
+                - name: Convertir une boucle for en instruction foreach et vice versa
+                  href: ide/reference/convert-for-loop-to-foreach.md
+                - name: Convertir une méthode Get en propriété et vice versa
+                  href: ide/reference/convert-get-method-to-property.md
+                - name: Convertir une fonction locale en méthode
+                  href: ide/reference/convert-local-function-method.md
+                - name: Convertir une boucle foreach en syntaxe LINQ
+                  href: ide/reference/convert-foreach-linq.md
+                - name: Convertir une requête LINQ en instruction foreach
+                  href: ide/reference/convert-linq-to-foreach.md
+                - name: Convertir l’instruction switch en expression switch
+                  href: ide/reference/convert-switch-statement-to-switch-expression.md
+                - name: Encapsuler le champ
+                  href: ide/reference/encapsulate-field.md
+                - name: Extraire l’interface
+                  href: ide/reference/extract-interface.md
+                - name: Extraire la méthode
+                  href: ide/reference/extract-method.md
+                - name: Générer un paramètre
+                  href: ide/reference/generate-parameter.md
+                - name: Variable temporaire inline
+                  href: ide/reference/inline-temporary-variable.md
+                - name: Autocomplétion IntelliSense pour les types non importés
+                  href: ide/reference/intellisense-completion-unimported-types.md
+                - name: Inversion des expressions conditionnelles et des opérations logiques
+                  href: ide/reference/invert-conditional-logical.md
+                - name: Inverser une instruction if
+                  href: ide/reference/invert-if-statement.md
+                - name: Déplacer la déclaration près de la référence
+                  href: ide/reference/move-declaration-near-reference.md
+                - name: Déplacer le type vers le fichier correspondant
+                  href: ide/reference/move-type-to-matching-file.md
+                - name: Déplacer un type vers un espace de noms
+                  href: ide/reference/move-type-to-namespace.md
+                - name: Remonter un membre
+                  href: ide/reference/pull-members-up.md
+                - name: Complétion d’expression régulière dans IntelliSense
+                  href: ide/reference/regex-completion-through-intellisense.md
+                - name: Supprimer le code inacessible
+                  href: ide/reference/remove-unreachable-code.md
+                - name: Renommer
+                  href: ide/reference/rename.md
+                - name: Trier les instructions Using
+                  href: ide/reference/sort-usings.md
+                - name: "Fractionner ou fusionner des instructions\_if"
+                  href: ide/reference/split-or-merge-if-statement.md
+                - name: Synchronisation de l’espace de noms et du nom du dossier
+                  href: ide/reference/sync-namespace-and-folder-name.md
+                - name: Synchroniser le type et le nom de fichier
+                  href: ide/reference/sync-type-and-file.md
+                - name: Utiliser un type explicite
+                  href: ide/reference/convert-var-to-explicit-type.md
+                - name: Utiliser un corps d’expression ou un corps de bloc pour les expressions lambda
+                  href: ide/reference/use-block-body-lambda.md
+                - name: 'Affectations, variables et paramètres de valeur inutilisés'
+                  href: ide/reference/unused-values-parameters.md
+                - name: Mettre à la ligne et aligner des chaînes d’appels
+                  href: ide/reference/wrap-and-align-call-chains.md
+                - name: 'Mettre à la ligne, mettre en retrait et aligner des paramètres'
+                  href: ide/reference/wrap-align-indent-parameters.md
+            - name: "Procédure pas à pas\_: Générer du code à partir de l’utilisation"
+              href: ide/walkthrough-test-first-support-with-the-generate-from-usage-feature.md
+        - name: IntelliSense
+          items:
+            - name: Utilisez IntelliSense
+              href: ide/using-intellisense.md
+            - name: Visual Basic IntelliSense
+              href: ide/visual-basic-specific-intellisense.md
+            - name: 'C# IntelliSense'
+              href: ide/visual-csharp-intellisense.md
+            - name: IntelliSense JavaScript
+              href: ide/javascript-intellisense.md
+            - name: Visual C++ IntelliSense
+              href: ide/visual-cpp-intellisense.md
+            - name: Configurer un projet C++ pour IntelliSense
+              href: ide/visual-cpp-intellisense-configuration.md
+        - name: Se déplacer dans le code
+          items:
+            - name: Parcourir votre code
+              href: ide/navigating-code.md
+            - name: Rechercher des références dans votre code
+              href: ide/finding-references.md
+            - name: Afficher les définitions de type et de membre
+              items:
+                - name: Atteindre la définition et Aperçu de la définition
+                  href: ide/go-to-and-peek-definition.md
+                - name: Afficher et modifier le code avec l’Aperçu de définition
+                  href: ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md
+            - name: Rechercher du code à l’aide des commandes Atteindre
+              href: ide/go-to.md
+        - name: Personnaliser l’éditeur
+          items:
+            - name: Changer la casse du texte
+              href: ide/how-to-change-text-case-in-the-editor.md
+            - name: Gérer les modes de l’éditeur
+              href: ide/how-to-manage-editor-modes.md
+            - name: Gérer les fenêtres de l’éditeur
+              href: ide/how-to-manage-editor-windows.md
+            - name: Changer les polices et les couleurs
+              href: ide/reference/how-to-change-fonts-and-colors-in-the-editor.md
+            - name: Gérer le retour automatique à la ligne
+              href: ide/reference/how-to-manage-word-wrap-in-the-editor.md
+            - name: Afficher les numéros de ligne
+              href: ide/reference/how-to-display-line-numbers-in-the-editor.md
+            - name: Afficher les URL sous forme de liens
+              href: ide/reference/how-to-display-urls-as-links-in-the-editor.md
+            - name: Définir les options d’éditeur spécifiques au langage
+              href: ide/reference/setting-language-specific-editor-options.md
+        - name: Style de code
+          items:
+            - name: Préférences de style de code
+              href: /visualstudio/ide/code-styles-and-code-cleanup
+            - name: Utiliser les fichiers EditorConfig pour le style de code
+              displayName: Configure code style analyzers
+              href: ide/create-portable-custom-editor-options.md
+            - name: Conventions de codage .NET
+              items:
+                - name: Vue d'ensemble
+                  href: ide/editorconfig-code-style-settings-reference.md
+                - name: Conventions de langage
+                  href: ide/editorconfig-language-conventions.md
+                - name: Conventions de mise en forme
+                  href: ide/editorconfig-formatting-conventions.md
+                - name: Conventions d'attribution d'un nom
+                  href: ide/editorconfig-naming-conventions.md
+        - name: Personnaliser la barre de défilement
+          href: ide/how-to-track-your-code-by-customizing-the-scrollbar.md
+        - name: Définir des signets dans le code
+          href: ide/setting-bookmarks-in-code.md
+        - name: CodeLens
+          items:
+            - name: Rechercher l’historique du code avec CodeLens
+              href: ide/find-code-changes-and-other-history-with-codelens.md
+            - name: 'CodeIndex, commande'
+              href: ide/codeindex-command.md
+        - name: Prise en charge de l’éditeur pour d’autres langages
+          href: ide/adding-visual-studio-editor-support-for-other-languages.md
+    - name: Modes Code
+      items:
+        - name: Afficher la structure du code
+          href: ide/viewing-the-structure-of-code.md
+        - name: Icônes Affichage de classes et Explorateur d’objets
+          href: ide/class-view-and-object-browser-icons.md
+    - name: Utiliser la liste des tâches
+      href: ide/using-the-task-list.md
+    - name: Concepteur de classes
+      items:
+        - name: Créer des classes dans le Concepteur de classes
+          href: ide/class-designer/designing-and-viewing-classes-and-types.md
+        - name: Ajouter des diagrammes de classes aux projets
+          href: ide/class-designer/how-to-add-class-diagrams-to-projects.md
+        - name: Personnaliser des diagrammes de classes
+          href: ide/class-designer/how-to-customize-class-diagrams.md
+        - name: Copier les éléments d’un diagramme de classes dans un document Microsoft Office
+          href: ide/class-designer/how-to-copy-class-diagram-elements-to-a-microsoft-office-document.md
+        - name: Exporter des diagrammes de classes sous forme d’images
+          href: ide/class-designer/how-to-export-class-diagrams-as-images.md
+        - name: Imprimer des diagrammes de classes
+          href: ide/class-designer/how-to-print-class-diagrams.md
+        - name: Ajouter des commentaires aux diagrammes de classes
+          href: ide/class-designer/how-to-add-comments-to-class-diagrams.md
+        - name: Créer des classes et des types
+          items:
+            - name: Créer des types
+              href: ide/class-designer/how-to-create-types.md
+            - name: Créer un héritage entre des types
+              href: ide/class-designer/how-to-create-inheritance-between-types.md
+            - name: Créer des associations entre des types
+              href: ide/class-designer/how-to-create-associations-between-types.md
+            - name: Visualiser une association de collections
+              href: ide/class-designer/how-to-visualize-a-collection-association.md
+            - name: Créer et configurer des membres de type
+              href: ide/class-designer/creating-and-configuring-type-members.md
+        - name: Voir les types et les relations
+          items:
+            - name: Voir les types existants
+              href: ide/class-designer/how-to-view-existing-types.md
+            - name: Voir l’héritage entre les types
+              href: ide/class-designer/how-to-view-inheritance-between-types.md
+            - name: Notation des membres et notation des associations
+              href: ide/class-designer/how-to-change-between-member-notation-and-association-notation.md
+        - name: Refactoriser des classes et des types
+          href: ide/class-designer/refactoring-classes-and-types.md
+        - name: Implémenter une interface
+          href: ide/class-designer/how-to-implement-an-interface.md
+        - name: Diviser une classe en classes partielles
+          href: ide/class-designer/how-to-split-a-class-into-partial-classes.md
+        - name: Créer un type Nullable
+          href: ide/class-designer/how-to-create-a-nullable-type.md
+        - name: C++ dans le Concepteur de classes
+          items:
+            - name: Utiliser le code Visual C++
+              href: ide/class-designer/working-with-visual-cpp-code.md
+            - name: C++ (classes)
+              href: ide/class-designer/visual-cpp-classes.md
+            - name: Structures C++
+              href: ide/class-designer/visual-cpp-structures.md
+            - name: Énumérations C++
+              href: ide/class-designer/visual-cpp-enumerations.md
+            - name: Typedefs C++
+              href: ide/class-designer/visual-cpp-typedefs.md
+        - name: Raccourcis clavier et souris
+          href: ide/class-designer/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md
+        - name: Erreurs du Concepteur de classes
+          href: ide/class-designer/additional-information-about-errors.md
+    - name: Améliorer votre code
+      href: ide/find-and-fix-code-errors.md
+    - name: Conseils et astuces
+      items:
+        - name: Fonctionnalités de productivité
+          href: ide/productivity-features.md
+        - name: Raccourcis de productivité
+          href: ide/productivity-shortcuts.md
+        - name: 'Conseils pour les développeurs C#'
+          displayName: ReSharper
+          href: ide/csharp-developer-productivity.md
+        - name: Personnaliser des raccourcis clavier
+          href: ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md
+        - name: Utiliser uniquement le clavier
+          displayName: accessibility
+          href: ide/reference/how-to-use-the-keyboard-exclusively.md
+    - name: Utiliser...
+      items:
+        - name: Applications Windows Forms
           items:
             - name: Vue d’ensemble du Concepteur Windows Forms
               href: designers/windows-forms-designer-overview.md
@@ -654,249 +668,235 @@
                       href: ide/step-8-add-a-method-to-verify-whether-the-player-won.md
                     - name: "Étape\_9\_: Tester d’autres fonctionnalités"
                       href: ide/step-9-try-other-features.md
-        - name: Développement mobile multiplateforme
-          href: cross-platform/cross-platform-mobile-development-in-visual-studio.md
-        - name: 'F# dans Visual Studio'
+        - name: 'F#'
           items:
             - name: 'Développement F#'
               href: ide/fsharp-visual-studio.md
             - name: Cibler les versions antérieures du .NET
               href: ide/fsharp-target-older-dotnet-versions.md
-        - name: Développement Office et SharePoint
-          href: vsto/office-and-sharepoint-development-in-visual-studio.md
-        - name: Utiliser des fichiers XML et XSLT
-          href: xml-tools/xml-tools-in-visual-studio.md
-        - name: Développer avec des conteneurs
-          href: containers/index.yml
-        - name: Développer des applications inclusives
+        - name: "Ressources graphiques\_3D"
           items:
-            - name: Concevoir des applications accessibles
-              href: ide/reference/resources-for-designing-accessible-applications.md
-            - name: Concevoir des applications internationales
-              displayName: Globalization localization world-ready
-              href: ide/globalizing-and-localizing-applications.md
-    - name: Utiliser des outils XAML >>
-      href: xaml-tools/index.yml
+            - name: Utiliser des composants 3D pour les jeux et les applications
+              href: designers/working-with-3-d-assets-for-games-and-apps.md
+            - name: "Procédure\_: Utiliser des composants 3D dans votre jeu ou votre application"
+              href: designers/using-3-d-assets-in-your-game-or-app.md
+            - name: Textures et images
+              items:
+                - name: Utiliser des textures et des images
+                  href: designers/working-with-textures-and-images.md
+                - name: éditeur d'images
+                  href: designers/image-editor.md
+                - name: Exemples de l’éditeur d’images
+                  items:
+                    - name: Créer une texture de base
+                      href: designers/how-to-create-a-basic-texture.md
+                    - name: Créer et modifier des niveaux MIP
+                      href: designers/how-to-create-and-modify-mip-levels.md
+            - name: Modèles 3D
+              items:
+                - name: Utiliser des modèles 3D
+                  href: designers/working-with-3-d-models.md
+                - name: Éditeur de modèle
+                  href: designers/model-editor.md
+                - name: Exemples de l’éditeur de modèle
+                  items:
+                    - name: Créer un modèle 3D de base
+                      href: designers/how-to-create-a-basic-3-d-model.md
+                    - name: Modifier le point pivot d’un modèle 3D
+                      href: designers/how-to-modify-the-pivot-point-of-a-3-d-model.md
+                    - name: Modéliser un terrain 3D
+                      href: designers/how-to-model-3-d-terrain.md
+                    - name: Appliquer un nuanceur à un modèle 3D
+                      href: designers/how-to-apply-a-shader-to-a-3-d-model.md
+            - name: Nuanceurs
+              items:
+                - name: Utiliser des nuanceurs
+                  href: designers/working-with-shaders.md
+                - name: Concepteur Shader
+                  href: designers/shader-designer.md
+                - name: Nœuds du concepteur Shader
+                  items:
+                    - name: Vue d'ensemble
+                      displayName: Shader designer nodes
+                      href: designers/shader-designer-nodes.md
+                    - name: Nœuds de constantes
+                      href: designers/constant-nodes.md
+                    - name: Nœuds de paramètres
+                      href: designers/parameter-nodes.md
+                    - name: Nœuds de textures
+                      href: designers/texture-nodes.md
+                    - name: Nœuds mathématiques
+                      href: designers/math-nodes.md
+                    - name: Nœuds utilitaires
+                      href: designers/utility-nodes.md
+                    - name: Nœuds de filtres
+                      href: designers/filter-nodes.md
+                - name: Exemples du concepteur Shader
+                  items:
+                    - name: Créer un nuanceur de couleur de base
+                      displayName: Shader designer example
+                      href: designers/how-to-create-a-basic-color-shader.md
+                    - name: Créer un nuanceur Lambert de base
+                      href: designers/how-to-create-a-basic-lambert-shader.md
+                    - name: Créer un nuanceur Phong de base
+                      href: designers/how-to-create-a-basic-phong-shader.md
+                    - name: Créer un nuanceur de texture de base
+                      href: designers/how-to-create-a-basic-texture-shader.md
+                    - name: Créer un nuanceur de texture avec nuances de gris
+                      href: designers/how-to-create-a-grayscale-texture-shader.md
+                    - name: Pour créer un nuanceur de dégradés basé sur la géométrie
+                      href: designers/how-to-create-a-geometry-based-gradient-shader.md
+                    - name: "Procédure pas à pas\_: Créer une boule de billard 3D réaliste"
+                      href: designers/walkthrough-creating-a-realistic-3-d-billiard-ball.md
+                    - name: Exporter un nuanceur
+                      href: designers/how-to-export-a-shader.md
+            - name: Exporter des textures
+              items:
+                - name: Exporter une texture qui contient des mipmaps
+                  href: designers/how-to-export-a-texture-that-contains-mipmaps.md
+                - name: Exporter une texture qui contient des valeurs alpha prémultipliées
+                  href: designers/how-to-export-a-texture-that-has-premultiplied-alpha.md
+                - name: Exporter une texture à utiliser avec des applications Direct2D ou JavaScript
+                  href: designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md
+        - name: Fichier XAML >>
+          href: xaml-tools/index.yml
+        - name: Fichiers XML et XSLT >>
+          href: xml-tools/xml-tools-in-visual-studio.md
+        - name: Conteneurs Docker >>
+          href: containers/index.yml
+        - name: Workflows >>
+          href: workflow-designer/developing-applications-with-the-workflow-designer.md
+        - name: Applications mobiles
+          href: cross-platform/cross-platform-mobile-development-in-visual-studio.md
+        - name: Applications Office et SharePoint >>
+          href: vsto/office-and-sharepoint-development-in-visual-studio.md
     - name: Accéder aux données >>
       displayName: Data connections
       href: data-tools/accessing-data-in-visual-studio.md
-    - name: Développer des applications avec le Concepteur de flux de travail >>
-      href: workflow-designer/developing-applications-with-the-workflow-designer.md
-    - name: Compiler et générer
+    - name: Développer des applications inclusives
+      items:
+        - name: Concevoir des applications accessibles
+          href: ide/reference/resources-for-designing-accessible-applications.md
+        - name: Concevoir des applications internationales
+          displayName: Globalization localization world-ready
+          href: ide/globalizing-and-localizing-applications.md
+- name: Générer
+  items:
+    - name: Vue d'ensemble
+      displayName: Compile build
+      href: ide/compiling-and-building-in-visual-studio.md
+    - name: "Procédure pas à pas\_: Générer une application"
+      href: ide/walkthrough-building-an-application.md
+    - name: Générer et nettoyer des projets et des solutions
       items:
         - name: Vue d'ensemble
-          displayName: Compile build
-          href: ide/compiling-and-building-in-visual-studio.md
-        - name: "Procédure pas à pas\_: Générer une application"
-          href: ide/walkthrough-building-an-application.md
-        - name: Générer et nettoyer des projets et des solutions
-          items:
-            - name: Vue d'ensemble
-              displayName: Build clean
-              href: ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md
-            - name: Changer le répertoire de sortie de build
-              href: ide/how-to-change-the-build-output-directory.md
-            - name: Créer un répertoire de sortie commun
-              href: ide/how-to-build-to-a-common-output-directory.md
-            - name: Spécifier des événements de build personnalisés
-              href: ide/specifying-custom-build-events-in-visual-studio.md
-            - name: Définir plusieurs projets de démarrage
-              href: ide/how-to-set-multiple-startup-projects.md
-            - name: Créer et supprimer les dépendances d’un projet
-              href: ide/how-to-create-and-remove-project-dependencies.md
-            - name: 'Afficher, enregistrer et configurer des fichiers journaux de génération'
-              href: ide/how-to-view-save-and-configure-build-log-files.md
-            - name: Exclure des projets d’une build
-              href: ide/how-to-exclude-projects-from-a-build.md
-            - name: Supprimer les avertissements du compilateur
-              href: ide/how-to-suppress-compiler-warnings.md
-        - name: Actions de génération
-          href: ide/build-actions.md
-        - name: Configurations de build
-          items:
-            - name: Présentation des configurations de build
-              href: ide/understanding-build-configurations.md
-            - name: Créer et modifier des configurations
-              href: ide/how-to-create-and-edit-configurations.md
-            - name: Gérer des configurations de build avec les paramètres développeur Visual Basic
-              href: ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md
-            - name: Créer plusieurs configurations simultanément
-              href: ide/how-to-build-multiple-configurations-simultaneously.md
-        - name: Créer des plateformes
-          items:
-            - name: Présentation des plateformes de build
-              href: ide/understanding-build-platforms.md
-            - name: Configurer des projets pour qu’ils ciblent une plateforme
-              href: ide/how-to-configure-projects-to-target-platforms.md
-            - name: Configurer des projets pour qu’ils ciblent plusieurs plateformes
-              href: ide/how-to-configure-projects-to-target-multiple-platforms.md
-        - name: MSBuild >>
-          href: msbuild/msbuild.md
-        - name: Azure Pipelines et TFS >>
-          displayName: VSTS Azure DevOps CI/CD Continuous integration delivery
-          href: /azure/devops/pipelines/index?view=vsts
-        - name: Spécifier des événements de build (Visual Basic)
-          href: ide/how-to-specify-build-events-visual-basic.md
-        - name: 'Spécifier des événements de build (C#)'
-          href: ide/how-to-specify-build-events-csharp.md
-        - name: Configurer les avertissements en Visual Basic
-          href: ide/configuring-warnings-in-visual-basic.md
-        - name: "Procédure pas à pas\_: Créer un environnement de build sur plusieurs ordinateurs"
-          href: ide/walkthrough-creating-a-multiple-computer-build-environment.md
-    - name: Déboguer >>
-      href: debugger/index.yml
-    - name: Tester >>
-      displayName: Unit testing
-      href: test/improve-code-quality.md
-    - name: Mesurer les performances >>
-      displayName: Profiling
-      href: profiling/index.yml
-    - name: Analyser la qualité du code >>
-      displayName: Code analysis FxCop Analyzers
-      href: code-quality/index.yml
-    - name: Déployer >>
-      href: deployment/index.yml
-    - name: Étendre Visual Studio >>
-      displayName: Visual Studio SDK
-      href: extensibility/visual-studio-sdk.md
-    - name: Analyser et modéliser l’architecture >>
-      href: modeling/analyze-and-model-your-architecture.md
-    - name: Composants 3D
+          displayName: Build clean
+          href: ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md
+        - name: Changer le répertoire de sortie de build
+          href: ide/how-to-change-the-build-output-directory.md
+        - name: Créer un répertoire de sortie commun
+          href: ide/how-to-build-to-a-common-output-directory.md
+        - name: Spécifier des événements de build personnalisés
+          href: ide/specifying-custom-build-events-in-visual-studio.md
+        - name: Définir plusieurs projets de démarrage
+          href: ide/how-to-set-multiple-startup-projects.md
+        - name: Créer et supprimer les dépendances d’un projet
+          href: ide/how-to-create-and-remove-project-dependencies.md
+        - name: 'Afficher, enregistrer et configurer des fichiers journaux de génération'
+          href: ide/how-to-view-save-and-configure-build-log-files.md
+        - name: Exclure des projets d’une build
+          href: ide/how-to-exclude-projects-from-a-build.md
+        - name: Supprimer les avertissements du compilateur
+          href: ide/how-to-suppress-compiler-warnings.md
+    - name: Actions de génération
+      href: ide/build-actions.md
+    - name: Configurations de build
       items:
-        - name: Utiliser des composants 3D pour les jeux et les applications
-          href: designers/working-with-3-d-assets-for-games-and-apps.md
-        - name: "Procédure\_: Utiliser des composants 3D dans votre jeu ou votre application"
-          href: designers/using-3-d-assets-in-your-game-or-app.md
-        - name: Textures et images
-          items:
-            - name: Utiliser des textures et des images
-              href: designers/working-with-textures-and-images.md
-            - name: éditeur d'images
-              href: designers/image-editor.md
-            - name: Exemples de l’éditeur d’images
-              items:
-                - name: Créer une texture de base
-                  href: designers/how-to-create-a-basic-texture.md
-                - name: Créer et modifier des niveaux MIP
-                  href: designers/how-to-create-and-modify-mip-levels.md
-        - name: Modèles 3D
-          items:
-            - name: Utiliser des modèles 3D
-              href: designers/working-with-3-d-models.md
-            - name: Éditeur de modèle
-              href: designers/model-editor.md
-            - name: Exemples de l’éditeur de modèle
-              items:
-                - name: Créer un modèle 3D de base
-                  href: designers/how-to-create-a-basic-3-d-model.md
-                - name: Modifier le point pivot d’un modèle 3D
-                  href: designers/how-to-modify-the-pivot-point-of-a-3-d-model.md
-                - name: Modéliser un terrain 3D
-                  href: designers/how-to-model-3-d-terrain.md
-                - name: Appliquer un nuanceur à un modèle 3D
-                  href: designers/how-to-apply-a-shader-to-a-3-d-model.md
-        - name: Nuanceurs
-          items:
-            - name: Utiliser des nuanceurs
-              href: designers/working-with-shaders.md
-            - name: Concepteur Shader
-              href: designers/shader-designer.md
-            - name: Nœuds du concepteur Shader
-              items:
-                - name: Vue d'ensemble
-                  displayName: Shader designer nodes
-                  href: designers/shader-designer-nodes.md
-                - name: Nœuds de constantes
-                  href: designers/constant-nodes.md
-                - name: Nœuds de paramètres
-                  href: designers/parameter-nodes.md
-                - name: Nœuds de textures
-                  href: designers/texture-nodes.md
-                - name: Nœuds mathématiques
-                  href: designers/math-nodes.md
-                - name: Nœuds utilitaires
-                  href: designers/utility-nodes.md
-                - name: Nœuds de filtres
-                  href: designers/filter-nodes.md
-            - name: Exemples du concepteur Shader
-              items:
-                - name: Créer un nuanceur de couleur de base
-                  displayName: Shader designer example
-                  href: designers/how-to-create-a-basic-color-shader.md
-                - name: Créer un nuanceur Lambert de base
-                  href: designers/how-to-create-a-basic-lambert-shader.md
-                - name: Créer un nuanceur Phong de base
-                  href: designers/how-to-create-a-basic-phong-shader.md
-                - name: Créer un nuanceur de texture de base
-                  href: designers/how-to-create-a-basic-texture-shader.md
-                - name: Créer un nuanceur de texture avec nuances de gris
-                  href: designers/how-to-create-a-grayscale-texture-shader.md
-                - name: Pour créer un nuanceur de dégradés basé sur la géométrie
-                  href: designers/how-to-create-a-geometry-based-gradient-shader.md
-                - name: "Procédure pas à pas\_: Créer une boule de billard 3D réaliste"
-                  href: designers/walkthrough-creating-a-realistic-3-d-billiard-ball.md
-                - name: Exporter un nuanceur
-                  href: designers/how-to-export-a-shader.md
-        - name: Exporter des textures
-          items:
-            - name: Exporter une texture qui contient des mipmaps
-              href: designers/how-to-export-a-texture-that-contains-mipmaps.md
-            - name: Exporter une texture qui contient des valeurs alpha prémultipliées
-              href: designers/how-to-export-a-texture-that-has-premultiplied-alpha.md
-            - name: Exporter une texture à utiliser avec des applications Direct2D ou JavaScript
-              href: designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md
-    - name: Conseils et astuces
+        - name: Présentation des configurations de build
+          href: ide/understanding-build-configurations.md
+        - name: Créer et modifier des configurations
+          href: ide/how-to-create-and-edit-configurations.md
+        - name: Gérer des configurations de build avec les paramètres développeur Visual Basic
+          href: ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md
+        - name: Créer plusieurs configurations simultanément
+          href: ide/how-to-build-multiple-configurations-simultaneously.md
+    - name: Créer des plateformes
       items:
-        - name: Fonctionnalités de productivité
-          href: ide/productivity-features.md
-        - name: Raccourcis de productivité
-          href: ide/productivity-shortcuts.md
-        - name: 'Conseils pour les développeurs C#'
-          displayName: ReSharper
-          href: ide/csharp-developer-productivity.md
-        - name: Personnaliser des raccourcis clavier
-          href: ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md
-        - name: Utiliser uniquement le clavier
-          displayName: accessibility
-          href: ide/reference/how-to-use-the-keyboard-exclusively.md
-    - name: Personnaliser
+        - name: Présentation des plateformes de build
+          href: ide/understanding-build-platforms.md
+        - name: Configurer des projets pour qu’ils ciblent une plateforme
+          href: ide/how-to-configure-projects-to-target-platforms.md
+        - name: Configurer des projets pour qu’ils ciblent plusieurs plateformes
+          href: ide/how-to-configure-projects-to-target-multiple-platforms.md
+    - name: MSBuild >>
+      href: msbuild/msbuild.md
+    - name: Azure Pipelines et TFS >>
+      displayName: VSTS Azure DevOps CI/CD Continuous integration delivery
+      href: /azure/devops/pipelines/index?view=vsts
+    - name: Spécifier des événements de build (Visual Basic)
+      href: ide/how-to-specify-build-events-visual-basic.md
+    - name: 'Spécifier des événements de build (C#)'
+      href: ide/how-to-specify-build-events-csharp.md
+    - name: Configurer les avertissements en Visual Basic
+      href: ide/configuring-warnings-in-visual-basic.md
+    - name: "Procédure pas à pas\_: Créer un environnement de build sur plusieurs ordinateurs"
+      href: ide/walkthrough-creating-a-multiple-computer-build-environment.md
+- name: Déboguer >>
+  href: debugger/index.yml
+- name: Tester >>
+  displayName: Unit testing
+  href: test/improve-code-quality.md
+- name: Mesurer les performances >>
+  displayName: Profiling
+  href: profiling/index.yml
+- name: Analyser la qualité du code >>
+  displayName: Code analysis FxCop Analyzers
+  href: code-quality/index.yml
+- name: Déployer >>
+  href: deployment/index.yml
+- name: Étendre Visual Studio >>
+  displayName: Visual Studio SDK
+  href: extensibility/visual-studio-sdk.md
+- name: Analyser et modéliser l’architecture >>
+  href: modeling/analyze-and-model-your-architecture.md
+- name: Personnaliser Visual Studio
+  items:
+    - name: Personnaliser l’IDE
+      displayName: Personalize
+      href: ide/personalizing-the-visual-studio-ide.md
+    - name: "Démarrage rapide\_: Personnaliser les couleurs des thèmes et du texte"
+      href: ide/quickstart-personalize-the-ide.md
+    - name: Paramètres d’environnement
+      displayName: profiles
+      href: ide/environment-settings.md
+    - name: Paramètres synchronisés
+      href: ide/synchronized-settings-in-visual-studio.md
+    - name: Polices et couleurs
+      href: ide/how-to-change-fonts-and-colors-in-visual-studio.md
+    - name: Menus et barres d’outils
+      href: ide/how-to-customize-menus-and-toolbars-in-visual-studio.md
+    - name: Dispositions de fenêtres
+      href: ide/customizing-window-layouts-in-visual-studio.md
+    - name: Imbrication de fichiers dans l’Explorateur de solutions
+      href: ide/file-nesting-solution-explorer.md
+    - name: Comportement au démarrage
+      displayName: Start page window
+      href: ide/customizing-the-start-page-for-visual-studio.md
+    - name: Gérer les extensions
+      href: ide/finding-and-using-visual-studio-extensions.md
+      displayName: 'marketplace, gallery, vsix'
+    - name: Gérer les outils externes
+      href: ide/managing-external-tools.md
+    - name: Comptes de personnalisation
       items:
-        - name: Personnaliser l’IDE
-          displayName: Personalize
-          href: ide/personalizing-the-visual-studio-ide.md
-        - name: "Démarrage rapide\_: Personnaliser les couleurs des thèmes et du texte"
-          href: ide/quickstart-personalize-the-ide.md
-        - name: Paramètres d’environnement
-          displayName: profiles
-          href: ide/environment-settings.md
-        - name: Paramètres synchronisés
-          href: ide/synchronized-settings-in-visual-studio.md
-        - name: Polices et couleurs
-          href: ide/how-to-change-fonts-and-colors-in-visual-studio.md
-        - name: Menus et barres d’outils
-          href: ide/how-to-customize-menus-and-toolbars-in-visual-studio.md
-        - name: Dispositions de fenêtres
-          href: ide/customizing-window-layouts-in-visual-studio.md
-        - name: Imbrication de fichiers dans l’Explorateur de solutions
-          href: ide/file-nesting-solution-explorer.md
-        - name: Comportement au démarrage
-          displayName: Start page window
-          href: ide/customizing-the-start-page-for-visual-studio.md
-        - name: Gérer les extensions
-          href: ide/finding-and-using-visual-studio-extensions.md
-          displayName: 'marketplace, gallery, vsix'
-        - name: Gérer les outils externes
-          href: ide/managing-external-tools.md
-        - name: Comptes de personnalisation
-          items:
-            - name: Se connecter à Visual Studio
-              displayName: personalization accounts
-              href: ide/signing-in-to-visual-studio.md
-            - name: Utiliser plusieurs comptes d’utilisateur
-              href: ide/work-with-multiple-user-accounts.md
-            - name: Prolonger une version d’évaluation ou mettre à jour une licence
-              href: ide/how-to-unlock-visual-studio.md
-    - name: Performances de Visual Studio
+        - name: Se connecter à Visual Studio
+          displayName: personalization accounts
+          href: ide/signing-in-to-visual-studio.md
+        - name: Utiliser plusieurs comptes d’utilisateur
+          href: ide/work-with-multiple-user-accounts.md
+        - name: Prolonger une version d’évaluation ou mettre à jour une licence
+          href: ide/how-to-unlock-visual-studio.md
+    - name: Réglage des performances de Visual Studio
       items:
         - name: Optimiser les performances
           href: ide/optimize-visual-studio-performance.md
@@ -906,16 +906,16 @@
           href: ide/filtered-solutions.md
         - name: Conseils et astuces
           href: ide/visual-studio-performance-tips-and-tricks.md
-    - name: Accessibilité
-      items:
-        - name: Gérer les fonctionnalités d’accessibilité
-          href: ide/reference/accessibility-features-of-visual-studio.md
-        - name: Définir les options d’accessibilité de l’IDE
-          href: ide/reference/how-to-set-ide-accessibility-options.md
-        - name: Conseils et astuces d’accessibilité
-          href: ide/reference/accessibility-tips-and-tricks.md
-        - name: Services et produits d'accessibilité de Microsoft
-          href: ide/reference/accessibility-products-and-services-from-microsoft.md
+- name: Accessibilité
+  items:
+    - name: Gérer les fonctionnalités d’accessibilité
+      href: ide/reference/accessibility-features-of-visual-studio.md
+    - name: Définir les options d’accessibilité de l’IDE
+      href: ide/reference/how-to-set-ide-accessibility-options.md
+    - name: Conseils et astuces d’accessibilité
+      href: ide/reference/accessibility-tips-and-tricks.md
+    - name: Services et produits d'accessibilité de Microsoft
+      href: ide/reference/accessibility-products-and-services-from-microsoft.md
 - name: Référence
   items:
     - name: Raccourcis clavier
