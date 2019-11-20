@@ -6,7 +6,7 @@ metadata:
   description: Créez des applications Visual Basic en utilisant Visual Studio.
   ms.custom: seodec18
   ms.topic: landing-page
-  ms.date: 09/20/2019
+  ms.date: 11/19/2019
   ms.author: ghogen
   author: ghogen
   manager: jillfra
@@ -14,23 +14,27 @@ metadata:
   ms.technology: vs-acquisition
   dev_langs:
   - VB
-  ms.openlocfilehash: 729388bf6eaa799580576b12076dc3da880a6386
-  ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
+  ms.openlocfilehash: 3462f85ea571e163617c6c5f315a28c98342acab
+  ms.sourcegitcommit: 8530d15aa72fe058ee3a3b4714c36b8638f8b494
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 10/04/2019
-  ms.locfileid: "71962848"
+  ms.lasthandoff: 11/19/2019
+  ms.locfileid: "74188619"
 landingContent:
 - title: Prise en main
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Installer Visual Studio
+    - text: Installation de Visual Studio
       url: ../../install/install-visual-studio.md
   - linkListType: get-started
     links:
     - text: Commencer la visite guidée
       url: visual-studio-ide.md
+  - linkListType: quickstart
+    links:
+    - text: Créer une application console « Hello World »
+      url: ../../ide/quickstart-visual-basic-console.md
 - title: Créer des applications Visual Basic
   linkLists:
   - linkListType: tutorial
@@ -51,11 +55,11 @@ landingContent:
       url: ../tutorial-open-project-from-repo.md
     - text: Écrire et modifier du code
       url: tutorial-editor.md
-    - text: Compiler et générer
+    - text: Compilation et génération
       url: ../../ide/compiling-and-building-in-visual-studio.md
     - text: Déboguer votre code
       url: ../csharp/tutorial-debugger.md
-    - text: Tester votre code
+    - text: Test de votre code
       url: ../../test/getting-started-with-unit-testing.md
   - linkListType: how-to-guide
     links:
