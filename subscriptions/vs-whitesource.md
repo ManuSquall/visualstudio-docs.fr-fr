@@ -3,15 +3,15 @@ title: Avantage WhiteSource Bolt | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 08/01/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 description: Découvrez comment activer l’abonnement WhiteSource Bolt inclus dans votre abonnement Visual Studio.
-ms.openlocfilehash: 54248c0291fe54c2cb7db9155233d08e96991581
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: fb403053d101cf2edf8677c7bcce494ae4e2d21e
+ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816414"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74174126"
 ---
 # <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>WhiteSource Bolt dans les abonnements Visual Studio
 
@@ -38,7 +38,7 @@ Détectez et corrigez les vulnérabilités open source, puis générez des rappo
 9. Pour plus d’informations, visitez la [page des Questions fréquentes (FAQ)](https://bolt.whitesourcesoftware.com/azure/faq/) sur WhiteSource Bolt. 
 
 ## <a name="eligibility"></a>Éligibilité
-WhiteSource Bolt est désormais disponible gratuitement dans Visual Studio Marketplace. 
+[WhiteSource Bolt](https://marketplace.visualstudio.com/search?term=whitesource&target=AzureDevOps&category=All%20categories&sortBy=Relevance) is now available free in the [Visual Studio Marketplace. 
 
 ## <a name="support-resources"></a>Ressources de support
 - Besoin d’aide avec WhiteSource Bolt ?  Conversez en direct avec un représentant WhiteSource Bolt sur https://www.whitesourcesoftware.com/vse_whitesource_bolt/
@@ -46,4 +46,7 @@ WhiteSource Bolt est désormais disponible gratuitement dans Visual Studio Marke
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Étapes suivantes
-En tant qu’abonné Visual Studio, vous pouvez utiliser Microsoft Azure sans frais supplémentaires.  Avec votre [crédit individuel Azure DevTest mensuel](vs-azure.md), Azure est votre bac à sable personnel pour le développement et les tests.  Vous pouvez provisionner des machines virtuelles, des services cloud et d’autres ressources Azure.  Les montants du crédit varient selon le niveau de votre abonnement.
+Veillez à activer ces avantages intéressants pour tirer le meilleur parti de votre abonnement Visual Studio :
+- [Visual Studio](vs-ide-benefit.md)
+- [Azure DevOps](vs-azure-devops.md)
+- [Crédit individuel Azure DevTest](vs-azure.md)

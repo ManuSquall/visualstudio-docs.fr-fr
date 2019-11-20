@@ -3,15 +3,15 @@ title: Avantage du compte de développeur Windows dans les abonnements Visual St
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/31/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 description: Découvrez le compte de développeur Windows inclus dans votre abonnement Visual Studio.
-ms.openlocfilehash: e7dc24fef7328dee38f9aca92f3676573b0143ef
-ms.sourcegitcommit: bcdab788085bd9931d73883fe70cd5831317dca2
+ms.openlocfilehash: 662dc6d911903a4c0d2c0a77382647639bb25d07
+ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72816426"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74174116"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Compte de développeur Windows dans les abonnements Visual Studio
 Votre compte de développeur Windows, inclus avec certains abonnements Visual Studio, vous permet de proposer des applications Windows gratuites et payantes dans le Windows Store.
@@ -43,13 +43,15 @@ Nous vous recommandons d’ouvrir une nouvelle fenêtre de navigateur « privé
 | Niveau d'abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | Licences en volume, Azure, Détail, NFR sélectif<sup>1</sup> | Included       |  Oui|
+| Visual Studio Enterprise avec GitHub Enterprise   | VL  | Included       |  Oui|
 | Visual Studio Professional (Standard) | Licences en volume, Azure, Détail                                       | Included                                                            |Oui|
+| Visual Studio Professional avec GitHub Enterprise | VL                                        | Included                                                            |Oui|
 | Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Non disponible                                            |  NA|
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              |  Non disponible                                            |  NA|
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure                                       | Non disponible                                                           |NA|
 ||
 
-<sup>1</sup>  *comprend : la revente interdite (NFR), FTE, Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer. Exclut : Microsoft Partner Network (MPN), imaginez, MVP (Most Valuable Professional), RD (Regional Director), MCT Software & services.*
+<sup>1</sup>  *Includes:  Not for Resale (NFR), FTE, Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer. Excludes:  Microsoft Partner Network (MPN), Imagine, Most Valuable Professional (MVP), Regional Director (RD), MCT Software & Services.*
 
 > [!NOTE]
 > Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à consulter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
@@ -63,4 +65,7 @@ Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Étapes suivantes
-Azure est votre bac à sable personnel pour le développement et le test.  Vous pouvez provisionner des machines virtuelles, des services cloud et d’autres ressources Azure. Veillez à activer votre [avantage Azure](vs-azure.md) pour commencer à utiliser votre crédit Azure DevTest individuel.
+Veillez à activer ces avantages intéressants pour tirer le meilleur parti de votre abonnement Visual Studio :
+- [Visual Studio](vs-ide-benefit.md)
+- [Azure DevOps](vs-azure-devops.md)
+- [Crédit individuel Azure DevTest](vs-azure.md)
