@@ -8,12 +8,12 @@ ms.assetid: E2C9420F-A5D5-4472-9020-2B63FB27A133
 ms.technology: vs-unity-tools
 ms.workload:
 - unity
-ms.openlocfilehash: b1f10778c4866e67630fcac7af3b92b3de780aa5
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: 01363ab1588507f31dc74800c85b159039c9bab6
+ms.sourcegitcommit: 9c7d8693108ecd2042a70c04cebe3c44af657baf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777744"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74239431"
 ---
 # <a name="using-net-4x-in-unity"></a>Utilisation de .NET 4.x dans Unity
 
@@ -278,19 +278,19 @@ Les [attributs d’informations de l’appelant](https://docs.microsoft.com/dotn
 
 ```csharp
 private void Start ()
-    {
-        ShowCallerInfo("Something happened.");
-    }
-    public void ShowCallerInfo(string message,
-            [System.Runtime.CompilerServices.CallerMemberName] string memberName = "",
-            [System.Runtime.CompilerServices.CallerFilePath] string sourceFilePath = "",
-            [System.Runtime.CompilerServices.CallerLineNumber] int sourceLineNumber = 0)
-    {
-        Debug.Log($"message: {message}");
-        Debug.Log($"member name: {memberName}");
-        Debug.Log($"source file path: {sourceFilePath}");
-        Debug.Log($"source line number: {sourceLineNumber}");
-    }
+{
+    ShowCallerInfo("Something happened.");
+}
+public void ShowCallerInfo(string message,
+        [System.Runtime.CompilerServices.CallerMemberName] string memberName = "",
+        [System.Runtime.CompilerServices.CallerFilePath] string sourceFilePath = "",
+        [System.Runtime.CompilerServices.CallerLineNumber] int sourceLineNumber = 0)
+{
+    Debug.Log($"message: {message}");
+    Debug.Log($"member name: {memberName}");
+    Debug.Log($"source file path: {sourceFilePath}");
+    Debug.Log($"source line number: {sourceLineNumber}");
+}
 // Output:
 // Something happened
 // member name: Start
@@ -335,7 +335,7 @@ public class UsingStaticExample: MonoBehaviour
 
 Quand vous exportez votre jeu sur des plateformes comme iOS, Unity utilise son moteur IL2CPP pour « transpiler » le code IL en code C++, lequel est ensuite compilé à l’aide du compilateur natif de la plateforme cible. Dans ce scénario, plusieurs fonctionnalités .NET ne sont pas prises en charge, par exemple certaines parties de Reflection et l’utilisation du mot clé `dynamic`. Bien que vous puissiez contrôler l’utilisation de ces fonctionnalités dans votre propre code, vous pouvez rencontrer des problèmes dans les DLL et kits SDK tiers qui n’ont pas été écrits en tenant compte des spécificités d’Unity et d’IL2CPP. Pour plus d’informations sur ce sujet, consultez la documentation sur les [restrictions relatives aux scripts](https://docs.unity3d.com/Manual/ScriptingRestrictions.html) sur le site d’Unity.
 
-De plus, comme indiqué dans l’exemple Json.NET ci-dessus, Unity tente de supprimer le code inutilisé durant le processus d’exportation IL2CPP.  Bien que cela ne soit généralement pas un problème, avec les bibliothèques qui utilisent la réflexion, il peut accidentellement supprimer les propriétés ou les méthodes qui seront appelées au moment de l’exécution et qui ne peuvent pas être déterminées au moment de l’exportation.  Pour résoudre ces problèmes, ajoutez un fichier **link.xml** au projet qui contient une liste d’assemblys et d’espaces de noms sur lesquels le processus de suppression ne doit pas s’exécuter.  Pour plus d’informations, consultez la [documentation d’Unity sur la suppression du bytecode](https://docs.unity3d.com/Manual/IL2CPP-BytecodeStripping.html).
+De plus, comme indiqué dans l’exemple Json.NET ci-dessus, Unity tente de supprimer le code inutilisé durant le processus d’exportation IL2CPP.  While this typically isn't an issue, with libraries that use Reflection, it can accidentally strip out properties or methods that will be called at run time that can't be determined at export time.  Pour résoudre ces problèmes, ajoutez un fichier **link.xml** au projet qui contient une liste d’assemblys et d’espaces de noms sur lesquels le processus de suppression ne doit pas s’exécuter.  Pour plus d’informations, consultez la [documentation d’Unity sur la suppression du bytecode](https://docs.unity3d.com/Manual/IL2CPP-BytecodeStripping.html).
 
 ## <a name="net-4x-sample-unity-project"></a>Exemple de projet Unity .NET 4.x
 
