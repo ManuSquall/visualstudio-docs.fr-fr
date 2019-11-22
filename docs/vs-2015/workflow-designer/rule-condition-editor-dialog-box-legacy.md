@@ -13,38 +13,38 @@ caps.latest.revision: 6
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 93aef1e4466bd88d87ebce71161dcd1665178317
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a632b90e89e58c26ec72083fe3f4ed9223826dae
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663351"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302846"
 ---
 # <a name="rule-condition-editor-dialog-box-legacy"></a>Éditeur de conditions de règle, boîte de dialogue (héritée)
-Cette rubrique décrit comment utiliser la boîte de dialogue **éditeur de conditions de règle** dans le [!INCLUDE[wfd1](../includes/wfd1-md.md)] hérité. Utilisez le [!INCLUDE[wfd2](../includes/wfd2-md.md)] hérité lorsque vous devez cibler le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+Cette rubrique décrit comment utiliser la boîte de dialogue **Éditeur de conditions de règle** dans le [!INCLUDE[wfd1](../includes/wfd1-md.md)] hérité. Utilisez le [!INCLUDE[wfd2](../includes/wfd2-md.md)] hérité lorsque vous devez cibler le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
- Vous créez et modifiez des conditions de règle déclaratives à l’aide de la boîte de dialogue **éditeur de conditions de règle** . Ces conditions de règle sont exposées comme propriétés pour les activités prédéfinies Windows Workflow Foundation suivantes :
+ Pour créer et modifier des conditions de règle déclaratives, utilisez la boîte de dialogue **Éditeur de conditions de règle**. Ces conditions de règle sont exposées comme propriétés pour les activités prédéfinies Windows Workflow Foundation suivantes :
 
-- [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)
+- [ConditionedActivityGroup](https://go.microsoft.com/fwlink?LinkID=65017)
 
-- [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)
+- [IfElseBranchActivity](https://go.microsoft.com/fwlink?LinkID=65034)
 
-- [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)
+- [ReplicatorActivity](https://go.microsoft.com/fwlink?LinkID=65039)
 
-- [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)
+- [WhileActivity](https://go.microsoft.com/fwlink?LinkID=65049)
 
-- [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040)
+- [SequentialWorkflowActivity](https://go.microsoft.com/fwlink?LinkID=65040)
 
-- [StateMachineWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65045)
+- [StateMachineWorkflowActivity](https://go.microsoft.com/fwlink?LinkID=65045)
 
   Vous accédez à la boîte de dialogue **éditeur de conditions de règle** à l’aide de la boîte de [dialogue Sélectionner une condition (héritée)](../workflow-designer/select-condition-dialog-box-legacy.md).
 
-  Le tableau suivant décrit les éléments d’interface utilisateur de la boîte de dialogue **éditeur de conditions de règle** .
+  Le tableau suivant décrit les éléments d'interface utilisateur de la boîte de dialogue **Éditeur de conditions de règle**.
 
 |Élément d'interface utilisateur|Description|
 |----------------|-----------------|
 |**Etat**|Entrez l'expression applicable à la condition de règle.|
-|**Bien**|Cliquez pour enregistrer la condition de règle.|
+|**OK**|Cliquez pour enregistrer la condition de règle.|
 
 ## <a name="entering-condition-expressions"></a>Entrée d'expressions de condition
  Les expressions de condition sont entrées sous forme de texte. Vous pouvez taper **cette.** dans l’éditeur pour référencer les champs, les propriétés et les méthodes utilisés dans le workflow, à l’aide d’un menu similaire à IntelliSense. Vous pouvez également taper directement un nom de membre de workflow. Vous pouvez ajouter des opérateurs logiques à la condition, tels que les opérateurs AND, OR ou NOT. Vous pouvez également ajouter des prédicats. Un prédicat se compose d’un opérateur binaire et de deux opérandes. Les opérateurs binaires pris en charge sont **==** , **>** , **\<** , **>=** et **<=** . Les opérandes pris en charge sont à valeur de constante, à fonction arithmétique et à portée publique.
@@ -55,7 +55,7 @@ Cette rubrique décrit comment utiliser la boîte de dialogue **éditeur de cond
 
 - Opérateurs relationnels: ==, =, !=
 
-- Opérateurs de comparaison : <, \< =, >, > =
+- Opérateurs de comparaison : <, \<=, >, > =
 
 - Opérateurs arithmétiques: +, - , *, /, MOD
 
@@ -79,7 +79,7 @@ Cette rubrique décrit comment utiliser la boîte de dialogue **éditeur de cond
 
   this.i == 1U (la résolution est un unsigned int)
 
-  Pour plus d’informations sur les conditions, consultez [utilisation de conditions dans les workflows](http://go.microsoft.com/fwlink?LinkID=65009).
+  Pour plus d’informations sur les conditions, consultez [utilisation de conditions dans les workflows](https://go.microsoft.com/fwlink?LinkID=65009).
 
 ## <a name="see-also"></a>Voir aussi
- [IfElseActivity](http://go.microsoft.com/fwlink?LinkID=65033) [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017) [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039) [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049) [boîte de dialogue Sélectionner la condition (héritée)](../workflow-designer/select-condition-dialog-box-legacy.md) [utilisation des conditions dans les workflows](http://go.microsoft.com/fwlink?LinkID=65009) [Concepteur hérité pour Windows Workflow Aide sur l’interface utilisateur de Foundation](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)
+ [IfElseActivity](https://go.microsoft.com/fwlink?LinkID=65033) [ConditionedActivityGroup](https://go.microsoft.com/fwlink?LinkID=65017) [ReplicatorActivity](https://go.microsoft.com/fwlink?LinkID=65039) [WhileActivity](https://go.microsoft.com/fwlink?LinkID=65049) [boîte de dialogue Sélectionner la condition (héritée)](../workflow-designer/select-condition-dialog-box-legacy.md) [utilisation des conditions dans les workflows](https://go.microsoft.com/fwlink?LinkID=65009) [Concepteur hérité pour Windows Workflow Foundation aide sur l’interface utilisateur](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)

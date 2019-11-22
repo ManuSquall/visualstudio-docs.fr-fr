@@ -1,5 +1,5 @@
 ---
-title: 'Erreur : Le débogage a échoué car l’authentification Windows intégrée n’est pas activée. | Microsoft Docs'
+title: 'Erreur : le débogage a échoué, car l’authentification Windows intégrée n’est pas activée | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,14 +19,14 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 074c6c1cace31797e46a192ec0891f1e13dac22b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 4c8c83676c8f01891aed97e931581c65b799e61e
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65684272"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299784"
 ---
-# <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Erreur : le débogage a échoué, car l’authentification Windows intégrée n’est pas activée
+# <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>Erreur : le débogage a échoué, car l'authentification intégrée de Windows n'est pas activée
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 L'authentification de l'utilisateur qui a demandé le débogage a été empêchée en raison d'une erreur d'authentification. Cette erreur peut se produire lorsque vous essayez d’accéder à une application web ou à un service web XML. Cette erreur peut provenir, par exemple, du fait que l'authentification Windows intégrée n'est pas activée. Pour l'activer, suivez les étapes décrites dans Activer l'authentification Windows intégrée.  
@@ -71,7 +71,7 @@ L'authentification de l'utilisateur qui a demandé le débogage a été empêch�
   
 2. Activez l'authentification Windows et la compatibilité avec la gestion IIS 6, si ce n'est déjà fait, en procédant comme suit :  
   
-    1. Cliquez sur **Démarrer**, cliquez sur **le panneau de configuration** puis cliquez sur **programmes**.  
+    1. Cliquez sur **Démarrer**, sur **panneau de configuration** , puis sur **programmes**.  
   
     2. Sous **Programmes et fonctionnalités**, cliquez sur **Activer ou désactiver des fonctionnalités Windows**.  
   
@@ -101,7 +101,7 @@ L'authentification de l'utilisateur qui a demandé le débogage a été empêch�
   
 4. Cliquez sur **Affichage classique**, puis double-cliquez sur **Outils d’administration**.  
   
-5. Dans la colonne **Nom**, double-cliquez sur **Gestionnaire des services Internet (IIS)**.  
+5. Dans la colonne **Nom**, double-cliquez sur **Gestionnaire des services Internet (IIS)** .  
   
 6. Dans la colonne **Connexions**, développez le nœud correspondant à votre serveur.  
   
@@ -115,9 +115,9 @@ L'authentification de l'utilisateur qui a demandé le débogage a été empêch�
   
 9. Dans la colonne le volet **Authentification**, dans la colonne **Nom**, cliquez avec le bouton droit sur **Authentification Windows**, puis cliquez sur **Activer**.  
   
-10. Fermez la fenêtre **Gestionnaire des services Internet (IIS)**.  
+10. Fermez la fenêtre **Gestionnaire des services Internet (IIS)** .  
   
 ## <a name="see-also"></a>Voir aussi  
- [Débogage d’applications web : Erreurs et dépannage](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
- [Microsoft Digest Authentication](http://go.microsoft.com/fwlink/?LinkId=77938)   
- [Exécution d’Applications Web sur Vista Windows avec IIS 7.0 et Visual Studio](https://msdn.microsoft.com/library/262a82ac-dd0e-4096-86c6-fb463e88be66)
+ [Débogage d’applications Web : erreurs et dépannage](../debugger/debugging-web-applications-errors-and-troubleshooting.md)   
+ [Microsoft Digest Authentication](https://go.microsoft.com/fwlink/?LinkId=77938)   
+ [Exécution d’applications Web sur Windows Vista avec IIS 7,0 et Visual Studio](https://msdn.microsoft.com/library/262a82ac-dd0e-4096-86c6-fb463e88be66)

@@ -15,12 +15,12 @@ caps.latest.revision: 28
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 757297123bff107c28ced53a14dcdbb94ae56a87
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2a5e2a46a2326c123d6b7b4e85fa29908ede9fc9
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654910"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299337"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Personnalisation des outils et de la boîte à outils
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,13 +64,13 @@ Editor
 - Supprimer des onglets et des outils.
 
 > [!IMPORTANT]
-> Pour ajouter ou coller des éléments dans un Explorateur DSL, cliquez avec le bouton droit sur le grand-parent du nouveau nœud. Par exemple, pour ajouter un outil, cliquez avec le bouton droit sur l’onglet, et non sur le nœud **Outils** . Pour ajouter un onglet, cliquez avec le bouton droit sur le nœud de l' **éditeur** .
+> Pour ajouter ou coller des éléments dans un Explorateur DSL, cliquez avec le bouton droit sur le grand-parent du nouveau nœud. Par exemple, pour ajouter un outil, cliquez avec le bouton droit sur l'onglet, et pas sur le nœud **Outils**. Pour ajouter un onglet, cliquez avec le bouton droit sur le nœud **Éditeur**.
 
- La propriété **icône de boîte à outils** de chaque outil référence un fichier bitmap 16x16. Ces fichiers sont généralement conservés dans le dossier **Dsl\Resources**
+ La propriété **Icône de boîte à outils** de chaque outil fait référence à un fichier bitmap 16 x 16. Ces fichiers sont généralement conservés dans le dossier **Dsl\Resources**
 
- La propriété de **classe** d’un outil d’élément fait référence à une classe de domaine concrète. Par défaut, l'outil crée les instances de cette classe. Cependant, vous pouvez écrire le code pour que l'outil crée des groupes d'éléments ou des éléments de différents types.
+ La propriété **Classe** d'un outil d'élément fait référence à une classe de domaine concrète. Par défaut, l'outil crée les instances de cette classe. Cependant, vous pouvez écrire le code pour que l'outil crée des groupes d'éléments ou des éléments de différents types.
 
- La propriété **Générateur de connexions** d’un outil de connexion fait référence à un générateur de connexions, qui définit les types d’éléments que l’outil peut connecter et les relations qu’il crée entre eux. Les générateurs de connexions sont définis comme nœuds dans l'Explorateur DSL. Les générateurs de connexions sont créés automatiquement lorsque vous définissez les relations de domaine, mais vous pouvez écrire le code qui permet de les personnaliser.
+ La propriété **Générateur de connexions** d'un outil de connexion fait référence à un générateur de connexions, qui définit les types d'éléments auxquels l'outil peut se connecter, ainsi que les relations qu'il crée entre les types. Les générateurs de connexions sont définis comme nœuds dans l'Explorateur DSL. Les générateurs de connexions sont créés automatiquement lorsque vous définissez les relations de domaine, mais vous pouvez écrire le code qui permet de les personnaliser.
 
 #### <a name="to-add-a-tool-to-the-toolbox"></a>Pour ajouter un outil à la boîte à outils
 
@@ -78,13 +78,13 @@ Editor
 
      Vous créez généralement un outil de connecteur après avoir créé une classe de connecteurs et l'avoir mappée sur une relation de référence.
 
-2. Dans l’Explorateur DSL, développez le nœud **éditeur** et le nœud **onglets de boîte à outils** .
+2. Dans l'Explorateur DSL, développez le nœud **Éditeur** et le nœud **Onglets de la boîte à outils**.
 
-     Cliquez avec le bouton droit sur un nœud d’onglet de boîte à outils, puis cliquez sur **Ajouter un nouvel élément** ou **Ajouter un nouvel outil de connexion**.
+     Cliquez avec le bouton droit sur un nœud d'onglet de la boîte à outils, puis cliquez sur **Ajouter un nouvel outil d'élément** ou sur **Ajouter un nouvel outil de connexion**.
 
-3. Définissez la propriété **icône de boîte à outils** pour faire référence à une image bitmap 16x16.
+3. Définissez la propriété **Icône de boîte à outils** pour faire référence à un fichier bitmap 16 x 16.
 
-     Si vous souhaitez définir une nouvelle icône, créez un fichier bitmap dans Explorateur de solutions dans le dossier **Dsl\Resources** . Le fichier doit avoir les valeurs de propriétés suivantes : **action de génération**  = **contenu**; **Copiez dans le répertoire de sortie**  = **ne pas copier**.
+     Si vous souhaitez définir une nouvelle icône, créez un fichier bitmap dans Explorateur de solutions dans le dossier **Dsl\Resources** . Le fichier doit avoir les valeurs de propriétés suivantes : **action de génération** = **contenu**; **Copiez dans le répertoire de sortie** = **ne pas copier**.
 
 4. **Pour un outil d’élément :** Définissez la propriété de **classe** de l’outil pour faire référence à une classe de domaine concrète qui est mappée à une forme.
 
@@ -92,7 +92,7 @@ Editor
 
 5. Pour tester le DSL, appuyez sur F5 ou CTRL+F5, et dans l'instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ouvrez un exemple de fichier modèle. Le nouvel outil doit apparaître sur la boîte à outils. Faites-le glisser vers le diagramme pour vérifier qu'un nouvel élément a été créé.
 
-     Si l'outil n'apparaît pas, arrêtez l'instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Dans le menu **Démarrer** de Windows, exécutez **Reset the Microsoft Visual Studio instance expérimentale 2010**. Dans le menu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]**générer** , cliquez sur **régénérer la solution**. Puis, testez à nouveau le DSL.
+     Si l'outil n'apparaît pas, arrêtez l'instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Dans le menu **Démarrer** de Windows, exécutez **Réinitialiser l'instance expérimentale de Microsoft Visual Studio 2010**. Dans le menu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]Générer**de**, cliquez sur **Régénérer la solution**. Puis, testez à nouveau le DSL.
 
 ## <a name="customizing"></a>Personnalisation des outils d’élément
  Par défaut, l'outil crée une seule instance de la classe spécifiée, mais vous pouvez modifier ce comportement de deux façons :
@@ -103,7 +103,7 @@ Editor
 
      Pour plus d’informations, consultez Personnalisation de la [création et du déplacement d’éléments](../modeling/customizing-element-creation-and-movement.md).
 
-- Écrivez le code pour personnaliser l'outil de telle sorte qu'il puisse créer des groupes d'éléments. L'outil est initialisé par des méthodes de ToolboxHelper.cs que vous pouvez remplacer. Pour plus d’informations, consultez [création de groupes d’éléments à partir d’un outil](#groups).
+- Écrivez le code pour personnaliser l'outil de telle sorte qu'il puisse créer des groupes d'éléments. L'outil est initialisé par des méthodes de ToolboxHelper.cs que vous pouvez remplacer. Pour plus d'informations, consultez [Création de groupes d'éléments à partir d'un outil](#groups).
 
 ## <a name="groups"></a>Création de groupes d’éléments à partir d’un outil
  Chaque outil d'élément contient un prototype des éléments qu'il doit créer. Par défaut, chaque outil d'élément crée un seul élément, mais il est également possible de créer un groupe d'objets liés avec un seul outil. Pour ce faire, vous initialisez l'outil avec un <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> qui contient les éléments liés.
@@ -170,23 +170,23 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
  Les générateurs de connexions contiennent une ou plusieurs directives de connexion de liens, qui spécifient la relation de domaine et les éléments source et cible. Par exemple, dans le modèle de solution de déroulement des tâches, vous pouvez voir le **CommentReferencesSubjectsBuilder** dans l' **Explorateur DSL**. Ce générateur de connexions contient une directive de connexion de lien nommée **CommentReferencesSubjects**, qui est mappée à la relation de domaine **CommentReferencesSubjects**. Cette directive de connexion de liens contient une directive de rôle source qui pointe vers la classe de domaine `Comment` et une directive de rôle cible qui pointe vers la classe de domaine `FlowElement`.
 
 ### <a name="using-connection-builders-to-restrict-source-and-target-roles"></a>Utilisation de générateurs de connexion pour limiter les rôles source et cible
- Vous pouvez utiliser les générateurs de connexion pour restreindre l'occurrence de certaines classes dans le rôle source ou le rôle cible d'une relation de domaine donnée. Par exemple, il se peut que vous ayez une classe de domaine de base avec une relation de domaine vers une autre classe de domaine, mais que vous ne vouliez pas que toutes les classes dérivées de la classe de base aient les mêmes rôles dans cette relation. Dans la solution de workflow de tâches, il existe quatre classes de domaine concretes (**StartPoint**, **Endpoint**, **MergeBranch**et **Synchronization**) qui héritent directement de la classe de domaine abstraite **FlowElement**, et de deux types concrets classes de domaine (**Task** et **ObjectInState**) qui héritent indirectement de celle-ci. Il existe également une relation de référence de **Flow** qui prend les classes de domaine **FlowElement** dans son rôle source et son rôle cible. Toutefois, une instance d’une classe de domaine de **point de terminaison** ne doit pas être la source d’une instance d’une relation de **Flow** , et une instance d’une classe **StartPoint** ne doit pas être la cible d’une instance d’une relation **Flow** . Le générateur de connexions **FlowBuilder** dispose d’une directive de connexion de lien nommée **Flow** qui spécifie les classes de domaine qui peuvent jouer le rôle source (**Task**, **MergeBranch**, **StartPoint**et **Synchronization**) et peut jouer le rôle cible (**MergeBranch**, **point de terminaison**et **synchronisation**).
+ Vous pouvez utiliser les générateurs de connexion pour restreindre l'occurrence de certaines classes dans le rôle source ou le rôle cible d'une relation de domaine donnée. Par exemple, il se peut que vous ayez une classe de domaine de base avec une relation de domaine vers une autre classe de domaine, mais que vous ne vouliez pas que toutes les classes dérivées de la classe de base aient les mêmes rôles dans cette relation. Dans la solution de workflow de tâches, il existe quatre classes de domaine concretes (**StartPoint**, **Endpoint**, **MergeBranch**et **Synchronization**) qui héritent directement de la classe de domaine abstraite **FlowElement**, et de deux classes de domaine concrètes (**Task** et **ObjectInState**) qui héritent indirectement de celle-ci. Il existe également une relation de référence de **Flow** qui prend les classes de domaine **FlowElement** dans son rôle source et son rôle cible. Toutefois, une instance d’une classe de domaine de **point de terminaison** ne doit pas être la source d’une instance d’une relation de **Flow** , et une instance d’une classe **StartPoint** ne doit pas être la cible d’une instance d’une relation **Flow** . Le générateur de connexions **FlowBuilder** dispose d’une directive de connexion de lien nommée **Flow** qui spécifie les classes de domaine qui peuvent jouer le rôle source (**tâche**, **MergeBranch**, **StartPoint**et **synchronisation**) et qui peuvent jouer le rôle cible (**MergeBranch**, **point de terminaison**et **synchronisation**).
 
 ### <a name="connection-builders-with-multiple-link-connect-directives"></a>Générateurs de connexions avec plusieurs directives de connexion de liens
- Vous pouvez ajouter plusieurs directives de connexion de liens à un générateur de connexions. Cela peut vous aider à masquer certaines des complexités du modèle de domaine aux utilisateurs et à éviter que la **boîte à outils** ne soit trop encombrée. Vous pouvez ajouter les directives de connexion de liens de différentes relations de domaine à un seul générateur de connexions. Cependant, vous devez regrouper les relations de domaine quand elles exécutent à peu près la même fonction.
+ Vous pouvez ajouter plusieurs directives de connexion de liens à un générateur de connexions. Vous pouvez ainsi masquer certaines complexités du modèle de domaine aux utilisateurs et empêcher que la **Boîte à outils** ne soit trop encombrée. Vous pouvez ajouter les directives de connexion de liens de différentes relations de domaine à un seul générateur de connexions. Cependant, vous devez regrouper les relations de domaine quand elles exécutent à peu près la même fonction.
 
- Dans la solution de workflow de tâches, l’outil **Flow** Connection est utilisé pour dessiner des instances des relations de domaine **Flow** et **ObjectFlow** . Le générateur de connexions **FlowBuilder** a, en plus de la directive de connexion de lien de **Flow** décrite précédemment, deux directives de connexion de lien nommées **ObjectFlow**. Ces directives spécifient qu’une instance d’une relation **ObjectFlow** peut être dessinée entre des instances de la classe de domaine **ObjectInState** , ou d’une instance d’un **ObjectInState** à une instance d’une **tâche**, mais pas entre deux instances d’une **tâche**ou d’une instance d’une **tâche** à une instance d’un **ObjectInState**. Toutefois, une instance d’une relation de **Flow** peut être dessinée entre deux instances d’une **tâche**. Si vous compilez et exécutez la solution de déroulement des tâches, vous pouvez voir que le dessin d’un **Workflow** à partir d’une instance d’un **ObjectInState** vers une instance d’une **tâche** crée une instance d’un **ObjectFlow**, mais le dessin d’un **Workflow** entre deux instances d’une **tâche** crée une instance d’un **Flow**.
+ Dans la solution de workflow de tâches, l’outil **Flow** Connection est utilisé pour dessiner des instances des relations de domaine **Flow** et **ObjectFlow** . Le générateur de connexions **FlowBuilder** a, en plus de la directive de connexion de lien de **Flow** décrite précédemment, deux directives de connexion de lien nommées **ObjectFlow**. Ces directives spécifient qu’une instance d’une relation **ObjectFlow** peut être dessinée entre des instances de la classe de domaine **ObjectInState** , ou d’une instance d’un **ObjectInState** à une instance d’une **tâche, mais**pas entre deux instances d’une **tâche**, ou d’une instance d’une **tâche** à une instance d’un **ObjectInState**. Toutefois, une instance d’une relation de **Flow** peut être dessinée entre deux instances d’une **tâche**. Si vous compilez et exécutez la solution de déroulement des tâches, vous pouvez voir que le dessin d’un **Workflow** à partir d’une instance d’un **ObjectInState** vers une instance d’une **tâche** crée une instance d’un **ObjectFlow**, mais le dessin d’un **Workflow** entre deux instances d’une **tâche** crée une instance d’un **fluide**.
 
 ### <a name="custom-code-for-connection-builders"></a>Code personnalisé pour générateurs de connexions
  Les quatre cases à cocher de l'interface utilisateur définissent différents types de personnalisation de générateurs de connexions :
 
-- la case à cocher **acceptation personnalisée** dans une directive de rôle source ou cible
+- la case à cocher **Acceptation personnalisée** d'une directive de rôle source ou cible
 
-- case à cocher **connexion personnalisée** dans une directive de rôle source ou cible
+- la case à cocher **Connexion personnalisée** d'une directive de rôle source ou cible
 
-- la case à cocher **utilise la connexion personnalisée** dans une directive de connexion
+- la case à cocher **Utilise la connexion personnalisée** d'une directive de connexion
 
-- la propriété **est personnalisé** du générateur de connexions
+- la propriété **Est personnalisé** du générateur de connexions
 
   Vous devez écrire un certain code de programme pour procéder à ces personnalisations. Pour savoir quel code vous devez fournir, cochez l'une de ces cases, cliquez sur Transformer tous les modèles, puis générez votre solution. Il en résultera un rapport d'erreurs. Double-cliquez sur le rapport d'erreurs pour afficher un commentaire expliquant quel code vous devez ajouter.
 
@@ -194,7 +194,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 > Pour ajouter un code personnalisé, créez une définition de classe partielle dans un fichier de code distinct des fichiers de code des dossiers GeneratedCode. Pour éviter de perdre votre travail, vous ne devez pas modifier les fichiers de code générés. Pour plus d’informations, consultez [substitution et extension des classes générées](../modeling/overriding-and-extending-the-generated-classes.md).
 
 #### <a name="creating-custom-connection-code"></a>Création du code de connexion personnalisé
- Dans chaque directive de connexion de lien, l’onglet **directives de rôle source** définit à partir des types que vous pouvez faire glisser. De même, l’onglet **directives de rôle cible** définit les types que vous pouvez faire glisser. Pour chaque type, vous pouvez spécifier s’il faut autoriser la connexion (pour cette directive de connexion de lien) en définissant l’indicateur d' **acceptation personnalisée** , puis en fournissant le code supplémentaire.
+ Dans chaque directive de connexion de liens, l'onglet **Directives de rôle source** définit les types que vous pouvez déplacer. De même, l'onglet **Directives de rôle cible** définit les types vers lesquels vous pouvez effectuer un déplacement. Pour chaque type, vous pouvez en outre spécifier si la connexion est autorisée (pour cette directive de connexion de liens) en définissant l'indicateur **Personnalisation acceptée** et en fournissant le code supplémentaire.
 
  Vous pouvez également personnaliser ce qui se produit quand la connexion est établie. Par exemple, vous pouvez personnaliser uniquement le cas où le déplacement se produit vers ou depuis une classe particulière, tous les cas commandés par une directive de connexion de liens ou la totalité du générateur de connexions FlowBuilder. Pour chacune de ces options, vous pouvez définir des indicateurs personnalisés au niveau approprié. Lorsque vous transformez tous les modèles et essayez de générer la solution, les messages d'erreur vous dirigent vers les commentaires qui se trouvent dans le code généré. Ces commentaires identifient ce que vous devez fournir.
 
@@ -204,7 +204,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
  ![Générateur de connexions](../modeling/media/connectionbuilder-3.png "ConnectionBuilder_3")
 
- Par conséquent, il se peut que vous vouliez spécifier qu'une connexion puisse aller d'un composant imbriqué vers un OutPort. Pour spécifier une telle connexion, vous définissez **utilise l’acceptation personnalisée** sur le type d' **inport** comme rôle source et le type de **port** comme rôle cible dans la fenêtre **Détails DSL** , comme indiqué dans les illustrations suivantes :
+ Par conséquent, il se peut que vous vouliez spécifier qu'une connexion puisse aller d'un composant imbriqué vers un OutPort. Pour spécifier une telle connexion, vous définissez **Utilise l'acceptation personnalisée** du type **InPort** comme rôle source et le type **OutPort** comme rôle cible de la fenêtre **Détails DSL**, comme indiqué dans les illustrations suivantes :
 
  **Directive de connexion de lien dans l’Explorateur DSL**
 
@@ -249,4 +249,4 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
  Vous pouvez utiliser le code personnalisé pour appliquer les contraintes « dures », mais vous devez prendre en compte le fait que les utilisateurs puissent ou non établir temporairement des connexions non valides. S'ils le peuvent, vous pouvez modifier les contraintes de telle sorte que les connexions ne soient pas validées tant que les utilisateurs n'ont pas enregistré les modifications.
 
 ## <a name="see-also"></a>Voir aussi
- [Personnalisation de la création et du déplacement d’éléments](../modeling/customizing-element-creation-and-movement.md) [Personnalisation du comportement de copie](../modeling/customizing-copy-behavior.md) [Comment : ajouter un gestionnaire de glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md) [navigation et mise à jour d’un modèle dans programme code](../modeling/navigating-and-updating-a-model-in-program-code.md) [circuit circuits exemple DSL](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+ [Personnalisation de la création et du déplacement d’éléments](../modeling/customizing-element-creation-and-movement.md) [Personnalisation du comportement de copie](../modeling/customizing-copy-behavior.md) [Comment : ajouter un gestionnaire de glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md) [navigation et mise à jour d’un modèle dans le code de programme](../modeling/navigating-and-updating-a-model-in-program-code.md)

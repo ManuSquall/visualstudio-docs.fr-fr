@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Créer un contrôle de boîte à outils qui utilise Windows Forms | Microsoft Docs'
+title: 'Comment : créer un contrôle de boîte à outils qui utilise Windows Forms | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -11,39 +11,39 @@ helpviewer_keywords:
 ms.assetid: abbd3c3c-3a6e-4539-bd6c-a5891dead234
 caps.latest.revision: 12
 manager: jillfra
-ms.openlocfilehash: 33b4d8f1932429838f701df1f6ffaaceef321c4e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8436b8eee0193715e4ae886db18f91f7148dcb3b
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442918"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300432"
 ---
-# <a name="how-to-create-a-toolbox-control-that-uses-windows-forms"></a>Procédure : Créer un contrôle de boîte à outils qui utilise Windows Forms
+# <a name="how-to-create-a-toolbox-control-that-uses-windows-forms"></a>Comment : créer un contrôle de boîte à outils qui utilise Windows Forms
 Le modèle de contrôle de boîte à outils Windows Forms inclus dans le [!INCLUDE[vssdk_dev11_long](../includes/vssdk-dev11-long-md.md)] vous permet de créer des contrôles Windows Forms qui sont automatiquement ajoutés à la **boîte à outils** au moment où l’extension est installée. Cette rubrique vous montre comment utiliser le modèle pour créer un contrôle de **boîte à outils** que vous pouvez distribuer à d’autres utilisateurs.  
   
 > [!NOTE]
-> Pour savoir comment télécharger le Kit de développement logiciel (SDK) Visual Studio, consultez [Centre de développement d’extensibilité Visual Studio](http://go.microsoft.com/fwlink/?linkid=121964) sur le site web MSDN.  
+> Pour savoir comment télécharger le Kit de développement logiciel (SDK) Visual Studio, consultez [Centre de développement d’extensibilité Visual Studio](https://go.microsoft.com/fwlink/?linkid=121964) sur le site web MSDN.  
   
 ## <a name="creating-a-toolbox-control"></a>Création d’un contrôle de boîte à outils  
  Pour créer le projet, utilisez le modèle de contrôle de boîte à outils Windows Forms, puis générez une interface utilisateur (IU) dans le concepteur.  
   
 #### <a name="to-create-a-windows-forms-toolbox-control-project"></a>Pour créer un projet de contrôle de boîte à outils Windows Forms  
   
-1. Dans le menu **Fichier** , cliquez sur **Nouveau**, puis sur **Projet**.  
+1. Dans le menu **Fichier**, cliquez sur **Nouveau**, puis sur **Projet**.  
   
-2. Dans la boîte de dialogue **Nouveau projet** , sous **Modèles installés**, cliquez sur le nœud correspondant à votre langage de programmation préféré, puis cliquez sur **Extensibilité**. Dans la liste des types de projets, sélectionnez **Contrôle de boîte à outils Windows Forms**.  
+2. Dans la boîte de dialogue **Nouveau projet**, sous **Modèles installés**, cliquez sur le nœud correspondant à votre langage de programmation préféré, puis cliquez sur **Extensibilité**. Dans la liste des types de projets, sélectionnez **Contrôle de boîte à outils Windows Forms**.  
   
-3. Dans la zone **Nom** , tapez le nom que vous souhaitez utiliser pour le projet. Cliquez sur **OK**.  
+3. Dans la zone **Nom**, tapez le nom que vous souhaitez utiliser pour le projet. Cliquez sur **OK**.  
   
-     Visual Studio crée une solution qui contient un contrôle utilisateur, un attribut pour placer le contrôle dans la **boîte à outils**et un manifeste VSIX pour le déploiement.  
+     Visual Studio crée une solution qui contient un contrôle utilisateur, un attribut pour placer le contrôle dans la **boîte à outils** et un manifeste VSIX pour le déploiement.  
   
 #### <a name="to-build-the-control-ui"></a>Pour générer l’interface utilisateur du contrôle  
   
-1. Dans l’ **Explorateur de solutions**, double-cliquez sur ToolboxControl.cs pour l’ouvrir dans le concepteur.  
+1. Dans l’**Explorateur de solutions**, double-cliquez sur ToolboxControl.cs pour l’ouvrir dans le concepteur.  
   
 2. À partir de la **boîte à outils**, faites glisser les contrôles de votre choix vers l’aire de conception, puis disposez-les en fonction de votre conception.  
   
-3. Dans la fenêtre **Propriétés** , définissez les propriétés publiques du contrôle utilisateur et des contrôles enfants.  
+3. Dans la fenêtre **Propriétés**, définissez les propriétés publiques du contrôle utilisateur et des contrôles enfants.  
   
 ## <a name="coding-the-control"></a>Codage du contrôle  
  Par défaut, votre contrôle apparaît dans la **boîte à outils** sous le nom **ToolboxControl1** dans un groupe d’éléments de **boîte à outils** qui a le même nom que votre solution. Vous pouvez modifier ces noms dans le fichier ToolboxControl.cs.  
@@ -54,7 +54,7 @@ Le modèle de contrôle de boîte à outils Windows Forms inclus dans le [!INCLU
   
 2. Au niveau de la définition de la classe partielle qui implémente le contrôle, cliquez avec le bouton droit sur le nom de la classe, cliquez sur **Refactoriser**, puis sur **Renommer**. Remplacez le nom de la classe par le nom que vous voulez faire figurer dans la **boîte à outils** une fois le contrôle installé.  
   
-3. Juste au-dessus de la définition de la classe, dans la déclaration de l’attribut `ProvideToolboxControl` , remplacez la valeur du premier paramètre par le nom du groupe d’éléments destiné à héberger le contrôle dans la **boîte à outils**.  
+3. Juste au-dessus de la définition de la classe, dans la déclaration de l’attribut `ProvideToolboxControl`, remplacez la valeur du premier paramètre par le nom du groupe d’éléments destiné à héberger le contrôle dans la **boîte à outils**.  
   
      L’exemple suivant présente l’attribut `ProvideToolboxControl` et la définition de la classe ajustée pour un contrôle nommé `Counter` dans le groupe d’éléments `General` .  
   
@@ -73,7 +73,7 @@ Le modèle de contrôle de boîte à outils Windows Forms inclus dans le [!INCLU
   
 3. Recherchez votre contrôle dans la **boîte à outils** et faites-la glisser vers l’aire de conception.  
   
-4. Dans la fenêtre **Propriétés** , vérifiez que les propriétés apparaissent comme prévu.  
+4. Dans la fenêtre **Propriétés**, vérifiez que les propriétés apparaissent comme prévu.  
   
 5. Ajoutez si nécessaire du code ou des contrôles supplémentaires pour tester vos méthodes et événements.  
   
@@ -87,7 +87,7 @@ Le modèle de contrôle de boîte à outils Windows Forms inclus dans le [!INCLU
   
 2. Chargez le fichier .vsix sur un réseau ou un site web.  
   
-     Si vous chargez le fichier à la [Visual Studio Marketplace](https://marketplace.visualstudio.com/) site Web, les autres utilisateurs peuvent utiliser **Gestionnaire d’extensions** dans Visual Studio pour rechercher le contrôle et l’installer.  
+     Si vous téléchargez le fichier sur le site Web [Visual Studio Marketplace](https://marketplace.visualstudio.com/) , d’autres utilisateurs peuvent utiliser le **Gestionnaire d’extensions** dans Visual Studio pour rechercher le contrôle et l’installer.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Création d’un contrôle de boîte à outils WPF](../extensibility/creating-a-wpf-toolbox-control.md)

@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 490525cded11a4cddbbfb3f650d87c55b2fa196b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 01049d5ecf8710cd680278dbf95dbe70767cd5bf
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654771"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299900"
 ---
 # <a name="troubleshooting-the-help-viewer"></a>Résolution des problèmes liés à la Visionneuse d'aide
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,9 +45,9 @@ Cette rubrique traite des problèmes que vous pouvez rencontrer avec Help Viewer
 ## <a name="additional-resources"></a>Ressources supplémentaires
  Vous pouvez obtenir plus d’informations sur Help Viewer et envoyer vos commentaires à son sujet en utilisant les ressources suivantes :
 
-- Pour envoyer vos commentaires, accédez à [Microsoft Connect](http://go.microsoft.com/fwlink/?linkid=243983) sur le site web Microsoft ou envoyez un e-mail à [hlpfdbk@microsoft.com](mailto:hlpfdbk@microsoft.com).
+- Pour envoyer vos commentaires, accédez à [Microsoft Connect](https://go.microsoft.com/fwlink/?linkid=243983) sur le site web Microsoft ou envoyez un e-mail à [hlpfdbk@microsoft.com](mailto:hlpfdbk@microsoft.com).
 
-- Pour plus d’informations, consultez la documentation du développeur et le Forum du [système d’aide](http://go.microsoft.com/fwlink/?LinkId=232741) et le blog de [l’aide](http://go.microsoft.com/fwlink/?LinkId=232743) .
+- Pour plus d’informations, consultez la documentation du développeur et le Forum du [système d’aide](https://go.microsoft.com/fwlink/?LinkId=232741) et le blog de [l’aide](https://go.microsoft.com/fwlink/?LinkId=232743) .
 
 ## <a name="see-also"></a>Voir aussi
- [Guide de l’administrateur Help Viewer 2.1](http://go.microsoft.com/fwlink/?LinkId=243985)
+ [Guide de l’administrateur Help Viewer 2.1](https://go.microsoft.com/fwlink/?LinkId=243985)

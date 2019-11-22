@@ -11,17 +11,17 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eaaaacdcc5cf7e3044505f7cdb7aeb2e7e3e7078
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 33689ed44f4228411243d3b9716a2407b751d32b
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871967"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300644"
 ---
 # <a name="concurrency-visualizer-sdk"></a>Kit SDK du visualiseur concurrentiel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous pouvez instrumenter votre code source à l’aide du kit SDK du visualiseur concurrentiel pour afficher des informations supplémentaires dans le visualiseur concurrentiel. Vous pouvez associer les données supplémentaires à des phases et à des événements de votre code. Ces visualisations supplémentaires sont appelées *marqueurs*.  Pour obtenir une introduction pas à pas, consultez [Introducing the Concurrency Visualizer SDK](http://go.microsoft.com/fwlink/?LinkId=235405).
+Vous pouvez instrumenter votre code source à l’aide du kit SDK du visualiseur concurrentiel pour afficher des informations supplémentaires dans le visualiseur concurrentiel. Vous pouvez associer les données supplémentaires à des phases et à des événements de votre code. Ces visualisations supplémentaires sont appelées *marqueurs*.  Pour obtenir une introduction pas à pas, consultez [Introducing the Concurrency Visualizer SDK](https://go.microsoft.com/fwlink/?LinkId=235405).
 
 ## <a name="properties"></a>Properties
  Les indicateurs, les intervalles et les messages ont deux propriétés : la catégorie et l’importance. Dans la boîte de dialogue [Paramètres avancés](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md), vous pouvez utiliser ces propriétés pour filtrer l’affichage des marqueurs. Ces propriétés ont également un impact sur la représentation visuelle des marqueurs. Par exemple, la taille des indicateurs est utilisée pour représenter l’importance. La couleur, quant à elle, est utilisée pour indiquer la catégorie.
@@ -31,7 +31,7 @@ Vous pouvez instrumenter votre code source à l’aide du kit SDK du visualiseur
 
 ### <a name="c-and-visual-basic"></a>C# et Visual Basic
 
-Dans C#, Visual Basic et tout autre code managé, utilisez le fournisseur par défaut en appelant des méthodes dans la classe [markers](/previous-versions/hh694099(v=vs.140)). Il expose quatre méthodes pour générer des marqueurs: [WriteFlag](/previous-versions/hh694185(v=vs.140)), [EnterSpan](/previous-versions/hh694205(v=vs.140)), [WriteMessage](/previous-versions/hh694161(v=vs.140))et [WriteAlert](/previous-versions/hh694180(v=vs.140)). Il existe plusieurs surcharges pour ces fonctions, selon que vous souhaitez utiliser les valeurs par défaut des propriétés.  La surcharge la plus simple accepte un seul paramètre de chaîne qui spécifie la description de l’événement. La description s’affiche dans les rapports du visualiseur concurrentiel.
+En C#, en Visual Basic et dans tout autre code managé, utilisez le fournisseur par défaut en appelant des méthodes dans la classe [Markers](/previous-versions/hh694099(v=vs.140)). Il expose quatre méthodes pour générer des marqueurs : [WriteFlag](/previous-versions/hh694185(v=vs.140)), [EnterSpan](/previous-versions/hh694205(v=vs.140)), [WriteMessage](/previous-versions/hh694161(v=vs.140))et [WriteAlert](/previous-versions/hh694180(v=vs.140)). Il existe plusieurs surcharges pour ces fonctions, selon que vous souhaitez utiliser les valeurs par défaut des propriétés.  La surcharge la plus simple accepte un seul paramètre de chaîne qui spécifie la description de l’événement. La description s’affiche dans les rapports du visualiseur concurrentiel.
 
 #### <a name="add-sdk-support-to-a-c-or-visual-basic-project"></a>Ajout de la prise en C# charge du SDK à un projet ou Visual Basic
 
@@ -78,7 +78,7 @@ Dans C#, Visual Basic et tout autre code managé, utilisez le fournisseur par d�
 
 #### <a name="to-use-a-new-marker-provider-in-a-c-or-visual-basic-project"></a>Pour utiliser un nouveau fournisseur de marqueurs dans un projet C# ou Visual Basic
 
-1. Créez un objet [MarkerWriter](/previous-versions/hh694138(v=vs.140)) . Le constructeur accepte un GUID.
+1. Créez un objet [MarkerWriter](/previous-versions/hh694138(v=vs.140)). Le constructeur accepte un GUID.
 
 2. Pour inscrire le fournisseur, ouvrez la boîte de dialogue [Paramètres avancés](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) du visualiseur concurrentiel.  Sélectionnez l’onglet **Marqueurs**, puis cliquez sur le bouton **Ajouter un nouveau fournisseur**. Dans la boîte de dialogue [Paramètres avancés](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md), entrez le GUID qui a été utilisé pour créer le fournisseur, ainsi que la description du fournisseur.
 
@@ -90,7 +90,7 @@ Dans C#, Visual Basic et tout autre code managé, utilisez le fournisseur par d�
 
 #### <a name="to-use-a-marker-series-in-a-c-or-visual-basic-project"></a>Pour utiliser une série de marqueurs dans un projet C# ou Visual Basic
 
-1. Pour utiliser un nouveau [MarkerSeries](/previous-versions/hh694127(v=vs.140)), commencez par le créer à l’aide d’un objet [MarkerWriter](/previous-versions/hh694138(v=vs.140)) , puis générez les événements de marqueur directement à partir de la nouvelle série.
+1. Pour utiliser un nouveau [MarkerSeries](/previous-versions/hh694127(v=vs.140)), commencez par en créer un à l’aide d’un objet [MarkerWriter](/previous-versions/hh694138(v=vs.140)), puis générez les événements de marqueur directement à partir de la nouvelle série.
 
     ```csharp
     MarkerSeries series1 = myMarkerWriter.CreateMarkerSeries(″Series 1″);
@@ -128,4 +128,4 @@ Dans C#, Visual Basic et tout autre code managé, utilisez le fournisseur par d�
 |[Informations de référence sur la bibliothèque C++](../profiling/cpp-library-reference.md)|Décrit l’API du visualiseur concurrentiel pour le langage C++.|
 |[Informations de référence sur la bibliothèque C](../profiling/c-library-reference.md)|Décrit l’API du visualiseur concurrentiel pour le langage C.|
 |[Instrumentation](/previous-versions/hh694104(v=vs.140))|Décrit l’API du visualiseur concurrentiel pour le code managé.|
-|[Visualiseur concurrentiel](../profiling/concurrency-visualizer.md)|Informations de référence sur les vues et les rapports des fichiers de données de profilage qui sont générés à l’aide de la méthode d’accès concurrentiel et qui comprennent des données d’exécution des threads.|
+|[Visualiseur concurrentiel](../profiling/concurrency-visualizer.md)|Informations de référence sur les vues et rapports des fichiers de données de profilage générés à l’aide de la méthode de concurrence et qui incluent des données d’exécution des threads.|

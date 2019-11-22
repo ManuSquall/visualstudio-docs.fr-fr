@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 4b49ea9c293128efd400a1aa22d78ae4ee945092
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 439c6b5fc30be2e76eb6c0b6a44b1ec5226633b1
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663596"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295941"
 ---
 # <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065 : Ne pas lever d'exceptions dans des emplacements inattendus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "72663596"
 |-|-|
 |TypeName|DoNotRaiseExceptionsInUnexpectedLocations|
 |CheckId|CA1065|
-|Category|Microsoft. Design|
+|Catégorie|Microsoft.Design|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
@@ -89,7 +89,7 @@ ms.locfileid: "72663596"
 
 - <xref:System.Object.Equals%2A?displayProperty=fullName>
 
-- [M:IEquatable.Equals](http://go.microsoft.com/fwlink/?LinkId=113472)
+- [M:IEquatable.Equals](https://go.microsoft.com/fwlink/?LinkId=113472)
 
   Une méthode **Equals** doit retourner `true` ou `false` au lieu de lever une exception. Par exemple, si est passé deux types incompatibles, il doit simplement retourner `false` au lieu de lever une <xref:System.ArgumentException>.
 
@@ -98,7 +98,7 @@ ms.locfileid: "72663596"
 
 - <xref:System.Object.GetHashCode%2A>
 
-- [M :IEqualityComparer.GetHashCode (T)](http://go.microsoft.com/fwlink/?LinkId=113477)
+- [M:IEqualityComparer.GetHashCode(T)](https://go.microsoft.com/fwlink/?LinkId=113477)
 
   **GetHashCode** doit toujours retourner une valeur. Dans le cas contraire, vous pouvez perdre des éléments dans la table de hachage.
 

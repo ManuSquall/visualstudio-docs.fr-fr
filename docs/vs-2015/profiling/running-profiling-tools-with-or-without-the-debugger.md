@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 806eeba9b3dfee8dc45c90f0a6d2f99ed0772ec7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b242bd0eec4f7faa3f7a27923de289c494ccf798
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68191669"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298211"
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>Exécution des outils de profilage avec ou sans le débogueur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,38 +43,38 @@ Visual Studio offre désormais une sélection d’outils d’analyse des perform
   
 1. Ouvrez le projet que vous voulez déboguer, puis cliquez sur **Déboguer/Démarrer le débogage** (ou **Démarrer** dans la barre d’outils ou **F5**).  
   
-2. La fenêtre **Outils de diagnostic** apparaît automatiquement, sauf si vous l’avez désactivée. Pour réafficher la fenêtre, cliquez sur **Déboguer / Fenêtres / Afficher les outils de diagnostic**.  
+2. La fenêtre **Outils de diagnostic** apparaît automatiquement, sauf si vous l'avez désactivée. Pour réafficher la fenêtre, cliquez sur **Déboguer / Fenêtres / Afficher les outils de diagnostic**.  
   
 3. Exécutez les scénarios pour lesquels vous voulez collecter des données.  
   
     Pendant l’exécution de la session, vous pouvez voir plus d’informations sur les événements, sur la mémoire du processus et sur l’utilisation de l’UC.  
   
-    L’illustration suivante montre la fenêtre **Outils de diagnostic** de Visual Studio 2015 Update 1 :  
+    L’illustration suivante montre la fenêtre **Outils de diagnostic** de Visual Studio 2015 Update 1 :  
   
-    ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
+    ![Outils&#45;Update 1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
   
 4. Vous pouvez choisir d’afficher **Utilisation de la mémoire** ou **Utilisation de l’UC** (ou les deux) avec le paramètre **Sélectionner les outils** sur la barre d’outils. Si vous exécutez Visual Studio Enterprise, vous pouvez activer ou désactiver IntelliTrace dans **Outils / Options / IntelliTrace**.  
   
 5. La session de diagnostic se termine quand vous arrêtez le débogage.  
   
-   Dans Visual Studio 2015 Update 1, la fenêtre **Outils de diagnostic** vous permet de vous concentrer sur les événements qui vous intéressent.   Les noms des événements sont désormais affichés avec les préfixes des catégories (**Mouvement**, **Sortie du programme**, **Point d’arrêt**, **Fichier,** etc.), ce qui vous permet de rechercher rapidement dans la liste une catégorie donnée ou d’ignorer les catégories qui ne vous intéressent pas.  
+   Dans Visual Studio 2015 Update 1, la fenêtre **Outils de diagnostic** vous permet de vous concentrer sur les événements qui vous intéressent.   Les noms des événements sont désormais affichés avec les préfixes des catégories (**Mouvement**, **Sortie du programme**, **Point d’arrêt**, **Fichier,** etc.), ce qui vous permet de rechercher rapidement dans la liste une catégorie donnée ou d’ignorer les catégories qui ne vous intéressent pas.  
   
    La fenêtre a maintenant une zone de recherche permettant de rechercher une chaîne spécifique dans la liste des événements. Par exemple, l’illustration suivante montre les résultats de recherche de la chaîne « installer » pour laquelle quatre événements ont été trouvés :  
   
    ![DiagnosticsEventSearch](../profiling/media/diagnosticseventsearch.png "DiagnosticsEventSearch")  
   
-   Vous pouvez également filtrer les événements de manière à les afficher ou à les masquer. Dans la liste déroulante **Filtrer** , vous pouvez activer ou désactiver des catégories spécifiques d’événements. Les noms des catégories sont les mêmes que les noms des préfixes.  
+   Vous pouvez également filtrer les événements de manière à les afficher ou à les masquer. Dans la liste déroulante **Filtrer**, vous pouvez activer ou désactiver des catégories spécifiques d’événements. Les noms des catégories sont les mêmes que les noms des préfixes.  
   
    ![DiagnosticEventFilter](../profiling/media/diagnosticeventfilter.png "DiagnosticEventFilter")  
   
-   Pour plus d’informations, consultez [Searching and filtering the Events tab of the Diagnostic Tools window](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx).  
+   Pour plus d’informations, consultez [Searching and filtering the Events tab of the Diagnostic Tools window](https://devblogs.microsoft.com/devops/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/).  
   
 ## <a name="collect-profiling-data-without-debugging"></a>Collecter les données de profilage sans débogage  
  Certains outils de profilage nécessitent des privilèges d’administrateur pour s’exécuter. Vous pouvez démarrer Visual Studio en tant qu’administrateur, ou vous pouvez choisir d’exécuter les outils en tant qu’administrateur lorsque vous démarrez la session de diagnostic.  
   
 1. Ouvrez le projet dans Visual Studio.  
   
-2. Dans le menu **Déboguer**, choisissez **Profileur de performances...** (Touche de raccourci : ALT + F2).  
+2. Dans le menu **Déboguer** , choisissez **profileur de performances...** (touche de raccourci : Alt + F2).  
   
 3. Dans la page de lancement des outils de diagnostic, choisissez un ou plusieurs outils à exécuter dans la session. Seuls les outils applicables au type de projet, au système d'exploitation et au langage de programmation sont affichés. Lorsque vous choisissez un outil de diagnostic, les sélections d'outils qui ne peuvent pas être exécutées dans la même session de diagnostic sont désactivées. Voici comment se présenteraient vos choix pour une application universelle Windows C# :  
   
@@ -86,7 +86,7 @@ Visual Studio offre désormais une sélection d’outils d’analyse des perform
   
     Pendant l'exécution de la session, certains outils affichent des graphiques de données en temps réel dans la page de lancement des outils de diagnostic.  
   
-    ![Collecter des données dans la page Performances et diagnostics](../profiling/media/pdhub-collectdata.png "PDHUB_CollectData")  
+    ![Collecter des données sur les performances et la pag de diagnostic](../profiling/media/pdhub-collectdata.png "PDHUB_CollectData")  
   
 6. Pour terminer la session de diagnostic, cliquez sur **Arrêter la collecte**.  
   
@@ -97,16 +97,16 @@ Visual Studio offre désormais une sélection d’outils d’analyse des perform
    ![Ouvrir un fichier de session de diagnostic enregistré](../profiling/media/pdhub-openexistingdiagsession.png "PDHUB_OpenExistingDiagSession")  
   
 ## <a name="the-profiling-report"></a>Le rapport de profilage  
- ![Rapport des outils de diagnostic](../profiling/media/diag-report.png "DIAG_Report")  
+ ![Rapport outils de diagnostic](../profiling/media/diag-report.png "DIAG_Report")  
   
 |||  
 |-|-|  
-|![Étape 1](../profiling/media/procguid-1.png "ProcGuid_1")|La chronologie indique la durée de la session de profilage, les événements d'activation du cycle de vie de l'application et les marques utilisateur.|  
-|![Étape 2](../profiling/media/procguid-2.png "ProcGuid_2")|Vous pouvez limiter le rapport à une partie de la chronologie en faisant glisser les barres bleues pour sélectionner une zone de la chronologie.|  
-|![Étape 3](../profiling/media/procguid-3.png "ProcGuid_3")|Un outil affiche un ou plusieurs graphiques principaux. Si votre session de diagnostic est créée avec plusieurs outils, tous les graphiques principaux sont affichés.|  
-|![Étape 4](../profiling/media/procguid-4.png "ProcGuid_4")|Vous pouvez réduire ou développer les graphiques individuels.|  
-|![Étape 5](../profiling/media/procguid-6.png "ProcGuid_6")|Lorsque vos données incluent les informations de plusieurs outils, les détails de l'outil sont collectés sous les onglets.|  
-|![Étape 6](../profiling/media/procguid-6a.png "ProcGuid_6a")|Un outil peut avoir une ou plusieurs vues de détail. La vue est filtrée par la zone sélectionnée de la chronologie.|  
+|![Étape 1](../profiling/media/procguid-1.png "ProcGuid_1")|La chronologie indique la durée de la session de profilage, les événements d'activation du cycle de vie de l'application et les marques utilisateur.|  
+|![Étape 2](../profiling/media/procguid-2.png "ProcGuid_2")|Vous pouvez limiter le rapport à une partie de la chronologie en faisant glisser les barres bleues pour sélectionner une zone de la chronologie.|  
+|![Étape 3](../profiling/media/procguid-3.png "ProcGuid_3")|Un outil affiche un ou plusieurs graphiques principaux. Si votre session de diagnostic est créée avec plusieurs outils, tous les graphiques principaux sont affichés.|  
+|![Étape 4](../profiling/media/procguid-4.png "ProcGuid_4")|Vous pouvez réduire ou développer les graphiques individuels.|  
+|![Étape 5](../profiling/media/procguid-6.png "ProcGuid_6")|Lorsque vos données incluent les informations de plusieurs outils, les détails de l'outil sont collectés sous les onglets.|  
+|![Étape 6](../profiling/media/procguid-6a.png "ProcGuid_6a")|Un outil peut avoir une ou plusieurs vues de détail. La vue est filtrée par la zone sélectionnée de la chronologie.|  
   
 ## <a name="setting-the-analysis-target-to-another-device"></a>Définition de la cible de l’analyse sur un autre appareil  
  Outre le démarrage de votre application à partir du projet Visual Studio, vous pouvez également exécuter les sessions de diagnostic sur d'autres cibles. Par exemple, vous pouvez souhaiter diagnostiquer les problèmes de performances sur une version de votre application installée à partir du Windows Store.  
@@ -119,24 +119,24 @@ Visual Studio offre désormais une sélection d’outils d’analyse des perform
   
  Quand vous choisissez **Internet Explorer**, vous spécifiez l’URL et vous pouvez changer la cible de déploiement du téléphone.  
   
- ![Spécifier l’URL à afficher dans Internet Explorer](../profiling/media/pdhub-choosephoneanalysistarget.png "PDHUB_ChoosePhoneAnalysisTarget")  
+ ![Spécifier l’URL à afficher dans Internet Explorer](../profiling/media/pdhub-choosephoneanalysistarget.png "PDHUB_ChoosePhoneAnalysisTarget")  
   
-## <a name="remote-debugging"></a>Remote Debugging  
- L’exécution d’une session de diagnostic sur un PC distant ou sur une tablette requiert que les outils de contrôle à distance Visual Studio soient installés et en cours d’exécution sur la cible distante. Pour les applications pour ordinateur, consultez [Débogage à distance](../debugger/remote-debugging.md).  Pour les applications universelles Windows, consultez [Exécuter des applications du Windows Store sur un ordinateur distant](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
+## <a name="remote-debugging"></a>Débogage distant  
+ L’exécution d’une session de diagnostic sur un PC distant ou sur une tablette requiert que les outils de contrôle à distance Visual Studio soient installés et en cours d’exécution sur la cible distante. Pour les applications de bureau, consultez [Débogage distant](../debugger/remote-debugging.md).  Pour les applications universelles Windows, consultez [Exécuter des applications du Windows Store sur un ordinateur distant](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
   
 ## <a name="blog-posts-and-msdn-articles-from-the-diagnostics-development-team"></a>Billets de blog et articles MSDN de l’équipe de développement Diagnostics  
- [MSDN Magazine : Analyse des performances lors d’un débogage dans Visual Studio 2015](https://msdn.microsoft.com/magazine/dn973013.aspx)  
+ [Magazine MSDN : Analyser les performances pendant le débogage dans Visual Studio 2015](https://msdn.microsoft.com/magazine/dn973013.aspx)  
   
- [MSDN Magazine : Utilisation d’IntelliTrace pour un diagnostic plus rapide des problèmes](https://msdn.microsoft.com/magazine/dn973014.aspx)  
+ [Magazine MSDN : IntelliTrace permet de diagnostiquer les problèmes plus rapidement](https://msdn.microsoft.com/magazine/dn973014.aspx)  
   
- [Billet de blog : Diagnostic des problèmes de fuite de mémoire avec l’outil Utilisation de la mémoire de Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/04/29/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015.aspx)  
+ [Billet de blog : Diagnosing Event Handler Leaks with the Memory Usage Tool in Visual Studio 2015](https://devblogs.microsoft.com/devops/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015/)  
   
  [Vidéo : Historical Debugging with IntelliTrace in Microsoft Visual Studio Ultimate 2015](https://channel9.msdn.com/Events/Ignite/2015/BRK3716)  
   
- [Vidéo : Debugging Performance Issues Using Visual Studio 2015](https://channel9.msdn.com/Events/Build/2015/3-731)  
+ [Vidéo : Debugging Performance Issues Using Visual Studio 2015](https://channel9.msdn.com/Events/Build/2015/3-731)  
   
- [PerfTips : Informations de performances en un coup d’œil lors du débogage avec Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)  
+ [Conseils sur les performances : Performance Information at-a-glance while Debugging with Visual Studio](https://devblogs.microsoft.com/devops/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/)  
   
- [Diagnostic Tools debugger window in Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015.aspx)  
+ [Diagnostic Tools debugger window in Visual Studio 2015](https://devblogs.microsoft.com/devops/diagnostic-tools-debugger-window-in-visual-studio-2015/)  
   
- [IntelliTrace dans Visual Studio Enterprise 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/intellitrace-in-visual-studio-ultimate-2015.aspx)
+ [IntelliTrace dans Visual Studio Enterprise 2015](https://devblogs.microsoft.com/devops/intellitrace-in-visual-studio-ultimate-2015/)

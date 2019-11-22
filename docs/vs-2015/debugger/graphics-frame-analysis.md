@@ -1,5 +1,5 @@
 ---
-title: Analyse des frames graphiques | Microsoft Docs
+title: analyse des frames graphiques | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -11,12 +11,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bc11af7d259f252d7659f559be15b85f4af90149
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 331722df4749ca59241259e13c3b387d8303b69f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437938"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300505"
 ---
 # <a name="graphics-frame-analysis"></a>Analyse des frames graphiques
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,12 +39,12 @@ Utilisez l'analyse des frames graphiques dans Visual Studio Graphics Analyzer po
   
   Bien que l'analyse des frames vise essentiellement à vous aider à accéder à de meilleures performances de rendu, elle peut également vous aider à obtenir une meilleure qualité visuelle pour une cible de performances donnée ou à réduire la consommation d'énergie du GPU.  
   
-  Pour voir une démonstration de ce que l’analyse des frames peut faire pour votre application, vous pouvez regarder la [Visual Studio Graphics Frame Analysis](http://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) vidéo sur Channel 9.  
+  Pour voir une démonstration de ce que l’analyse des frames peut faire pour votre application, vous pouvez regarder la vidéo de [Visual Studio analyse des frames graphiques](https://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) sur Channel 9.  
   
 ## <a name="using-frame-analysis"></a>Utilisation de l'analyse des frames  
  Avant de pouvoir utiliser l'analyse des frames, vous devez d'abord capturer les informations graphiques de votre application pendant qu'elle s'exécute, comme vous le feriez avec un autre outil Graphics Analyzer. Ensuite, dans la fenêtre du document journal de graphisme (.vsglog), choisissez l’onglet **Analyse des frames**.  
   
- ![Sélectionnez l’onglet Analyse des frames](../debugger/media/pix-frame-analysis-select-tab.png "pix_frame_analysis_select_tab")  
+ ![Sélectionnez l’onglet analyse des frames.](../debugger/media/pix-frame-analysis-select-tab.png "pix_frame_analysis_select_tab")  
   
  Une fois l'analyse terminée, les résultats s'affichent. La partie supérieure de l'onglet d'analyse des frames affiche la chronologie et le tableau de résumé. La partie inférieure affiche les tableaux contenant les détails. Si des erreurs ou des avertissements ont été générés pendant la lecture, ils sont résumés au-dessus de la chronologie ; de là, vous pouvez suivre les liens pour obtenir des informations supplémentaires sur les erreurs et les avertissements.  
   
@@ -77,14 +77,14 @@ Utilisez l'analyse des frames graphiques dans Visual Studio Graphics Analyzer po
 #### <a name="timeline"></a>Chronologie  
  La chronologie offre une vue d'ensemble des minutages d'appels de dessin les uns par rapport aux autres. Sachant que le barres les plus longues correspondent aux temps d'appel les plus longs, vous pouvez vous en servir pour repérer rapidement les appels de dessin les plus coûteux du frame. Quand le frame capturé contient un très grand nombre d'appels de dessin, ceux-ci sont combinés en une barre unique dont la longueur représente la somme de ces appels de dessin.  
   
- ![La chronologie indique le dessin&#45;appeler les coûts. ](../debugger/media/pix-frame-analysis-timeline.png "pix_frame_analysis_timeline")  
+ ![La chronologie montre les&#45;coûts des appels de dessin.](../debugger/media/pix-frame-analysis-timeline.png "pix_frame_analysis_timeline")  
   
  Vous pouvez placer le pointeur sur une barre pour déterminer à quel événement d'appel de dessin la barre correspond. Si vous sélectionnez la barre, la liste d'événements se synchronise avec cet événement.  
   
 #### <a name="table"></a>Table  
  Le tableau contenant les nombres en dessous de la chronologie présente les performances relatives de chaque variante de rendu pour chaque appel de dessin par rapport au rendu par défaut de votre application. Chaque colonne affiche une variante de rendu différente et chaque ligne représente un appel de dessin différent identifié dans la colonne la plus à gauche ; de là, vous pouvez suivre un lien vers l'événement dans la fenêtre Liste des événements Graphics.  
   
- ![Le tableau récapitulatif montre différents variants. ](../debugger/media/pix-frame-analysis-summary.png "pix_frame_analysis_summary")  
+ ![Le tableau récapitulatif affiche différents variants.](../debugger/media/pix-frame-analysis-summary.png "pix_frame_analysis_summary")  
   
  La deuxième colonne du tableau Résumé en partant de la gauche affiche le temps de rendu du planning de référence de votre application, c’est-à-dire, le temps qu’il faut au rendu par défaut de votre application pour traiter l’appel de dessin. Les autres colonnes présentent les performances relatives de chaque variante de rendu sous la forme d’un pourcentage du planning de référence, si bien qu’il est plus facile de déterminer si les performances s’améliorent. Les pourcentages supérieurs à 100 % indiquent une durée supérieure à la ligne de base (c'est-à-dire, des performances en baisse), tandis que les pourcentages inférieurs à 100 % ont pris moins de temps (performances en hausse).  
   
@@ -93,14 +93,14 @@ Utilisez l'analyse des frames graphiques dans Visual Studio Graphics Analyzer po
 #### <a name="hot-draw-calls"></a>Appels de dessin « sensibles »  
  Pour attirer l'attention sur les appels de dessin dont la consommation de temps de rendu global est proportionnellement plus élevée ou qui peuvent être ralentis pour des raisons qui pourraient être évitées, la ligne qui contient ces appels de dessin « sensibles » apparaissent en rouge dès lors que leur propre minutage de ligne de base est plus long d'un écart-type que le minutage de ligne de base moyen de tous les appels de dessin du frame.  
   
- ![Cet appel DrawIndexed possède des variants à chaud et froid. ](../debugger/media/pix-frame-analysis-hot-calls.png "pix_frame_analysis_hot_calls")  
+ ![Cet appel DrawIndexed a un variants chaud et froid.](../debugger/media/pix-frame-analysis-hot-calls.png "pix_frame_analysis_hot_calls")  
   
 #### <a name="statistical-significance"></a>Signification statistique  
  Pour attirer l'attention sur les variations de rendu les plus pertinentes, l'analyse des frames détermine la signification statistique de chaque variante de rendu et affiche les plus révélatrices en gras. Elle affiche celles qui améliorent les performances en vert et celles qui les diminuent en rouge. Elle affiche les résultats non significatifs du point de vue statistique en caractères normaux.  
   
- ![La pertinence statistique de la variante d’appel de dessin](../debugger/media/pix-frame-analysis-summary-stats.png "pix_frame_analysis_summary_stats")  
+ ![Pertinence statistique de la variante de l’appel de dessin](../debugger/media/pix-frame-analysis-summary-stats.png "pix_frame_analysis_summary_stats")  
   
- Pour déterminer la pertinence statistique, l’analyse des frames utilise le [test t de Student](http://www.wikipedia.org/wiki/Student%27s_t-test).  
+ Pour déterminer la pertinence statistique, l’analyse des frames utilise le [test t de Student](https://en.wikipedia.org/wiki/Student's_t-test).  
   
 ### <a name="details-table"></a>Tableau Détails  
  En dessous du tableau Résumé se trouve le tableau Détails, qui est réduit par défaut. Le contenu du tableau Détails dépend de la plateforme matérielle de l'ordinateur de lecture. Pour plus d’informations sur les plateformes matérielles prises en charge, consultez [Prise en charge matérielle](#HardwareSupport).  
@@ -108,12 +108,12 @@ Utilisez l'analyse des frames graphiques dans Visual Studio Graphics Analyzer po
 #### <a name="platforms-that-do-not-support-hardware-counters"></a>Plateformes qui ne prennent pas en charge les compteurs matériels  
  La plupart des plateformes ne prennent pas entièrement en charge les compteurs GPU (c'est le cas notamment de tous les GPU actuellement proposés par Intel, AMD et nVidia). Quand il n'y aucun compteur matériel auprès duquel collecter des données, le tableau Détails s'affiche et contient le minutage absolu moyen de toutes les variantes.  
   
- ![Le tableau de détails et certains variants de lecture. ](../debugger/media/pix-frame-analysis-details.png "pix_frame_analysis_details")  
+ ![La table des détails et certains variants de lecture.](../debugger/media/pix-frame-analysis-details.png "pix_frame_analysis_details")  
   
 #### <a name="platforms-that-support-hardware-counters"></a>Plateformes qui prennent en charge les compteurs matériels  
  Pour les plateformes qui prennent en charge les compteurs GPU matériels (par exemple, le SOC T40 SOC et tous les SOC Qualcomm), plusieurs tableaux Détails s'affichent, un pour chaque variante. Chaque compteur matériel disponible fait l'objet d'une collecte pour chaque variante de rendu et est affiché dans son propre tableau Détails.  
   
- ![Compteurs matériels sont affichés lors de la prise en charge. ](../debugger/media/pix-frame.png "pix_frame")  
+ ![Les compteurs matériels sont affichés lorsqu’ils sont pris en charge.](../debugger/media/pix-frame.png "pix_frame")  
   
  Les informations de compteur matériel fournissent une vue très détaillée du comportement spécifique de la plateforme matérielle pour chaque appel de dessin, ce qui peut vous aider à identifier très précisément la cause des goulots d'étranglement qui nuisent aux performances.  
   
@@ -191,14 +191,14 @@ Utilisez l'analyse des frames graphiques dans Visual Studio Graphics Analyzer po
 |**MSAA 0x**|Désactive l'anticrénelage MSSA (Multi-Sample Anti-Aliasing) sur toutes les cibles de rendu.<br /><br /> Pour plus d’informations, consultez [Variantes MSAA 0x/2x/4x](../debugger/0x-2x-4x-msaa-variants.md)|  
 |**MSAA 2x**|Active l‘anticrénelage MSSA (Multi-Sample Anti-Aliasing) 2x sur toutes les cibles de rendu.<br /><br /> Pour plus d’informations, consultez [Variantes MSAA 0x/2x/4x](../debugger/0x-2x-4x-msaa-variants.md)|  
 |**MSAA 4x**|Active l‘anticrénelage MSSA (Multi-Sample Anti-Aliasing) 4x sur toutes les cibles de rendu.<br /><br /> Pour plus d’informations, consultez [Variantes MSAA 0x/2x/4x](../debugger/0x-2x-4x-msaa-variants.md)|  
-|**Filtrage de texture de point**|Définit le mode de filtrage `DXD11_FILTER_MIN_MAG_MIP_POINT` (filtrage de texture de point) pour tous les échantillons de texture appropriés.<br /><br /> Pour plus d’informations, consultez [Point, bilinéaire, trilinéaire et ANISOTROPIQUE variantes de filtrage de Texture](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
-|**Filtrage de texture bilinéaire**|Définit le mode de filtrage `DXD11_FILTER_MIN_MAG_LINEAR_MIP_POINT` (filtrage de texture bilinéaire) pour tous les échantillons de texture appropriés.<br /><br /> Pour plus d’informations, consultez [Point, bilinéaire, trilinéaire et ANISOTROPIQUE variantes de filtrage de Texture](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
-|**Filtrage de texture trilinéaire**|Définit le mode de filtrage `DXD11_FILTER_MIN_MAG_MIP_LINEAR` (filtrage de texture trilinéaire) pour tous les échantillons de texture appropriés.<br /><br /> Pour plus d’informations, consultez [Point, bilinéaire, trilinéaire et ANISOTROPIQUE variantes de filtrage de Texture](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
-|**Filtrage de texture anisotropique**|Définit le mode de filtrage `DXD11_FILTER_ANISOTROPIC` et affecte à `MaxAnisotropy` la valeur `16` (filtrage de texture anisotropique 16x) pour tous les échantillons de texture appropriés.<br /><br /> Pour plus d’informations, consultez [Point, bilinéaire, trilinéaire et ANISOTROPIQUE variantes de filtrage de Texture](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
+|**Filtrage de texture de point**|Définit le mode de filtrage `DXD11_FILTER_MIN_MAG_MIP_POINT` (filtrage de texture de point) pour tous les échantillons de texture appropriés.<br /><br /> Pour plus d’informations, consultez [variantes de filtrage de texture point, bilinéaire, trilinéaire et anisotrope](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
+|**Filtrage de texture bilinéaire**|Définit le mode de filtrage `DXD11_FILTER_MIN_MAG_LINEAR_MIP_POINT` (filtrage de texture bilinéaire) pour tous les échantillons de texture appropriés.<br /><br /> Pour plus d’informations, consultez [variantes de filtrage de texture point, bilinéaire, trilinéaire et anisotrope](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
+|**Filtrage de texture trilinéaire**|Définit le mode de filtrage `DXD11_FILTER_MIN_MAG_MIP_LINEAR` (filtrage de texture trilinéaire) pour tous les échantillons de texture appropriés.<br /><br /> Pour plus d’informations, consultez [variantes de filtrage de texture point, bilinéaire, trilinéaire et anisotrope](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
+|**Filtrage de texture anisotropique**|Définit le mode de filtrage `DXD11_FILTER_ANISOTROPIC` et affecte à `MaxAnisotropy` la valeur `16` (filtrage de texture anisotropique 16x) pour tous les échantillons de texture appropriés.<br /><br /> Pour plus d’informations, consultez [variantes de filtrage de texture point, bilinéaire, trilinéaire et anisotrope](../debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants.md).|  
 |**Format de cible de rendu 16 bpp**|Définit le format de pixel `DXGI_FORMAT_B5G6R5_UNORM` (format 16 bpp, 565) pour toutes les cibles de rendu et tous les mémoires tampons d'arrière-plan.<br /><br /> Pour plus d’informations, consultez [Variante de format cible de rendu 16 bpp](../debugger/16bpp-render-target-format-variant.md)|  
 |**Génération mipmap**|Active les mipmaps sur toutes les textures qui ne sont pas des cibles de rendu.<br /><br /> Pour plus d’informations, consultez [Variante de génération mipmap](../debugger/mip-map-generation-variant.md).|  
 |**Dimensions de texture moitié**|Réduit les dimensions de toutes les textures qui ne sont pas des cibles de rendu à la moitié de leur taille d'origine dans chaque dimension. Par exemple, une texture de 256 x 128 est réduite à 128 x 64 texels.<br /><br /> Pour plus d’informations, consultez [Variante de dimensions de la texture moitié/un quart](../debugger/half-quarter-texture-dimensions-variant.md).|  
 |**Dimensions de texture un quart**|Réduit les dimensions de toutes les textures qui ne sont pas des cibles de rendu à un quart de leur taille d'origine dans chaque dimension. Par exemple, une texture de 256 x 128 est réduite à 64 x 32 texels.<br /><br /> Pour plus d’informations, consultez [Variante de dimensions de la texture moitié/un quart](../debugger/half-quarter-texture-dimensions-variant.md).|  
 |**Compression de texture BC**|Active la compression de bloc sur toutes les textures ayant une variante de format de pixel B8G8R8X8, B8G8R8A8 ou R8G8B8A8. Les variantes de format B8G8R8X8 sont compressées à l'aide de BC1 ; les variantes de format B8G8R8A8 et R8G8B8A8 sont compressées à l'aide de BC3.<br /><br /> Pour plus d’informations, consultez [Variante de compression de texture BC](../debugger/bc-texture-compression-variant.md).|  
   
- Le résultat pour la plupart des variantes est normatif : « Réduisant de moitié la taille de texture est 25 % plus rapide » ou « Activation de 2 x MSAA est uniquement de 2 % ». Les autres variantes peuvent nécessiter une interprétation. Par exemple, si la variante qui a fait passer les dimensions de la fenêtre d'affichage à 1x1 donne lieu à un gain de performances important, cela peut indiquer que le rendu est bloqué par un faible taux de remplissage ; en revanche, s'il n'y a pas de changement significatif sur le plan des performances, cela peut indiquer que le rendu est bloqué par le traitement des sommets.
+ Le résultat pour la plupart des variantes est prescriptif : « Une réduction de la taille de texture de moitié offre 25 % de rapidité en plus » ou « Le ralentissement résultant de l'activation de MSAA 2x n'est que de 2 % ». Les autres variantes peuvent nécessiter une interprétation. Par exemple, si la variante qui a fait passer les dimensions de la fenêtre d'affichage à 1x1 donne lieu à un gain de performances important, cela peut indiquer que le rendu est bloqué par un faible taux de remplissage ; en revanche, s'il n'y a pas de changement significatif sur le plan des performances, cela peut indiquer que le rendu est bloqué par le traitement des sommets.

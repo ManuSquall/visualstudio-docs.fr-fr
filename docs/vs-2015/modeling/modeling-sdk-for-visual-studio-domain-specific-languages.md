@@ -12,12 +12,12 @@ caps.latest.revision: 79
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b67f74397b8f3c3e410c4282d8a74b7309bc1bc9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 505c17635c80a165a7a094d3ce2bec3c32bd7101
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668634"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297685"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Kit de développement logiciel de modélisation pour Visual Studio - Langages spécifiques à un domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,11 +41,11 @@ En utilisant le kit de développement logiciel (SDK) de modélisation pour [!INC
   Toutes ces fonctionnalités peuvent être personnalisées et étendues. Les extensions sont intégrées de telle façon que vous pouvez toujours mettre à jour la définition DSL et générer de nouveau les fonctionnalités sans perdre ces extensions.
 
 ## <a name="samples-and-the-latest-information"></a>Exemples et dernières informations
- [Télécharger le kit de développement logiciel Modeling SDK pour Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=48148)
+ [Télécharger le kit de développement logiciel Modeling SDK pour Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=48148)
 
- [Exemples](http://go.microsoft.com/fwlink/?LinkId=186128) pour le kit de développement logiciel de modélisation pour Visual Studio.
+ [Exemples](https://go.microsoft.com/fwlink/?LinkId=186128) pour le kit de développement logiciel de modélisation pour Visual Studio.
 
- Pour obtenir des conseils sur les techniques avancées et la résolution des problèmes, consultez le [Forum d’extensibilité des outils de modélisation de Visual Studio &](http://go.microsoft.com/fwlink/?LinkID=186074).
+ Pour obtenir des conseils sur les techniques avancées et la résolution des problèmes, visitez [forum Visual Studio DSL & extensibilité des outils de modélisation](https://go.microsoft.com/fwlink/?LinkID=186074).
 
 ## <a name="in-this-section"></a>Dans cette section
  [Bien démarrer avec les langages spécifiques à un domaine](../modeling/getting-started-with-domain-specific-languages.md)

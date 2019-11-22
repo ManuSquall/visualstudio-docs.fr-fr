@@ -14,19 +14,19 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1c5d0770115fffd8c81078fd0e3d187ec5d3c5ae
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 879d8457a0f5fd4bf63a2d69a4f3f026ce4c6fe1
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657948"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74294668"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Création d'une interface utilisateur à l'aide du concepteur XAML dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Le concepteur XAML dans Visual Studio fournit une interface visuelle pour vous aider à concevoir des applications du Windows Store, Windows Phone, WPF et Silverlight basées sur XAML. Vous pouvez créer des interfaces utilisateur pour vos applications en faisant glisser des contrôles à partir de la **boîte à outils** et en définissant des propriétés dans la fenêtre **Propriétés** . Vous pouvez également modifier le XAML directement en mode XAML.
 
- Pour plus d’informations sur les tâches de conception XAML avancées telles que les animations et les comportements, consultez [Creating a UI by using Blend for Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md).
+ Pour les tâches de conception XAML avancées telles que les animations et les comportements, consultez [Création d'une interface utilisateur à l'aide de Blend pour Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md).
 
 ## <a name="xaml-designer-workspace"></a>Espace de travail du concepteur XML
  L'espace de travail du concepteur XML se compose de plusieurs éléments d'interface graphique. Ceux-ci incluent la planche graphique, l'Éditeur XAML, la fenêtre Périphérique, la fenêtre Structure du document et la fenêtre Propriétés. Pour ouvrir le concepteur XAML, cliquez avec le bouton droit sur un fichier XAML dans l' **Explorateur de solutions** et choisissez **Concepteur de vues**.
@@ -34,7 +34,7 @@ Le concepteur XAML dans Visual Studio fournit une interface visuelle pour vous a
 ## <a name="authoring-views"></a>Création des vues
  Le concepteur XAML fournit un mode XAML et un mode Création synchronisé du balisage XAML rendu de votre application. Quand un fichier XAML est ouvert dans Visual Studio, vous pouvez basculer entre le mode Création et le mode XAML à l'aide des onglets **Conception** et **XAML** . Vous pouvez utiliser le bouton **Permuter les volets** pour définir la fenêtre qui doit s'afficher au premier plan : la planche graphique ou l'Éditeur XAML.
 
- En mode Création, la fenêtre contenant la *planche graphique* est la fenêtre active et vous pouvez l'utiliser comme surface de travail principale. Vous pouvez l'utiliser pour concevoir visuellement une page dans votre application en ajoutant ou en dessinant des éléments, puis en les modifiant. Pour plus d'informations, consultez [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md). Cette illustration montre la planche graphique en mode Création.
+ En mode Création, la fenêtre contenant la *planche graphique* est la fenêtre active et vous pouvez l'utiliser comme surface de travail principale. Vous pouvez l'utiliser pour concevoir visuellement une page dans votre application en ajoutant ou en dessinant des éléments, puis en les modifiant. Pour plus d'informations, consultez [Utilisation d'éléments dans le concepteur XAML](../designers/working-with-elements-in-xaml-designer.md). Cette illustration montre la planche graphique en mode Création.
 
  ![Mode Création de Concepteur XAML](../designers/media/xaml-editor-design-view.png "xaml_editor_design_view")
 
@@ -48,7 +48,7 @@ Le concepteur XAML dans Visual Studio fournit une interface visuelle pour vous a
 
  Les ornements`Grid` permettent de contrôler la largeur et la hauteur des lignes et des colonnes d'une `Grid`. Vous pouvez ajouter une nouvelle colonne ou ligne en cliquant sur le quadrillage de `Grid` . Quand vous ajoutez une nouvelle ligne ou ligne de colonne pour un panneau `Grid` qui comporte deux ou plusieurs colonnes ou lignes, une mini-barre d'outils apparaît en dehors du quadrillage pour vous permettre de définir la largeur et la hauteur explicitement. La mini-barre d'outils vous permet de définir des options de dimensionnement pour les lignes et les colonnes de `Grid` .
 
- **Poignées de redimensionnement** : des poignées de redimensionnement apparaissent sur les contrôles sélectionnés et vous permettent de les redimensionner. Quand vous redimensionnez un contrôle, les valeurs de largeur et de hauteur s'affichent généralement pour permettre de déterminer la taille du contrôle. Pour plus d'informations sur la manipulation de contrôles en mode Design, consultez [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md).
+ **Poignées de redimensionnement** : des poignées de redimensionnement apparaissent sur les contrôles sélectionnés et vous permettent de les redimensionner. Quand vous redimensionnez un contrôle, les valeurs de largeur et de hauteur s'affichent généralement pour permettre de déterminer la taille du contrôle. Pour plus d'informations sur la manipulation des contrôles en mode Création, consultez [Utilisation d'éléments dans le concepteur XAML](../designers/working-with-elements-in-xaml-designer.md).
 
  **Marges** : les marges représentent la quantité d’espace fixe entre le bord d’un contrôle et le bord de son conteneur. Vous pouvez définir les marges d’un contrôle à l’aide des propriétés [Margin](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.frameworkelement.margin.aspx) sous **Disposition** dans la fenêtre Propriétés.
 
@@ -62,7 +62,7 @@ Le concepteur XAML dans Visual Studio fournit une interface visuelle pour vous a
 
  Les commandes suivantes sont disponibles dans cette barre d'outils :
 
- **Zoom** : le zoom vous permet de dimensionner l’aire de conception. Vous pouvez effectuer un zoom de 12,5 % à 800 % ou sélectionner des options comme **Ajuster à la sélection** et **Ajuster à tout**.
+ **Zoom** : le zoom vous permet de dimensionner l’aire de conception. Vous pouvez effectuer un zoom de 12,5 % à 800 % ou sélectionner des options comme **Ajuster à la sélection** et **Ajuster à tout**.
 
  **Afficher/masquer la grille d’accrochage** : affiche ou masque la grille d’accrochage qui montre le quadrillage. Le quadrillage est utilisé quand l' **alignement sur le quadrillage** ou l' **alignement sur les lignes d'alignement** est activé.
 
@@ -108,7 +108,7 @@ Le concepteur XAML dans Visual Studio fournit une interface visuelle pour vous a
 
 - Afficher la structure hiérarchique de tous les éléments de la planche graphique.
 
-- Sélectionner des éléments pour pouvoir les modifier (les déplacer dans la hiérarchie, les modifier sur la planche graphique, définir leurs propriétés dans la fenêtre Propriétés, etc.). Pour plus d'informations, consultez [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md)
+- Sélectionner des éléments pour pouvoir les modifier (les déplacer dans la hiérarchie, les modifier sur la planche graphique, définir leurs propriétés dans la fenêtre Propriétés, etc.). Pour plus d'informations, consultez [Utilisation d'éléments dans le concepteur XAML](../designers/working-with-elements-in-xaml-designer.md).
 
 - Créer et modifier les modèles des éléments qui sont des contrôles.
 
@@ -124,7 +124,7 @@ Le concepteur XAML dans Visual Studio fournit une interface visuelle pour vous a
 
   **Afficher/masquer** : affiche ou masque les éléments de la planche graphique qui correspondent aux éléments de la structure du document. Utilisez les boutons **Afficher/Masquer** , qui affichent le symbole d'un œil en cas d'affichage, ou appuyez sur Ctrl+H pour masquer les éléments, et sur Maj+Ctrl+H pour les afficher.
 
-  **Verrouiller/déverrouiller** : verrouille ou déverrouille les éléments de la planche graphique qui correspondent aux éléments de la structure du document. Les éléments verrouillés ne peuvent pas être modifiés. Utilisez les boutons **Verrouiller/Déverrouiller** , qui affichent un symbole de cadenas en cas de verrouillage, ou appuyez sur Ctrl+L pour verrouiller des éléments, et sur Maj+Ctrl+L pour les déverrouiller.
+  **Verrouiller/déverrouiller** : verrouille ou déverrouille les éléments de la planche graphique qui correspondent aux éléments de la structure du document. Les éléments verrouillés ne peuvent pas être modifiés. Utilisez les boutons **Verrouiller/Déverrouiller** qui affichent un symbole de cadenas en cas de verrouillage, ou appuyez sur Ctrl+L pour verrouiller des éléments et Maj+Ctrl+L pour les déverrouiller.
 
   **Rétablir l’étendue à la racine de la page** : l’option en haut de la fenêtre Structure du document, qui présente un symbole de flèche vers le haut, rétablit la structure du document à l’étendue précédente. La portée supérieure n'est applicable que quand vous êtes dans la portée d'un style ou d'un modèle.
 
@@ -133,7 +133,7 @@ Le concepteur XAML dans Visual Studio fournit une interface visuelle pour vous a
 
  ![Fenêtre Propriétés](../designers/media/xaml-editor-prop-window.png "xaml_editor_prop_window")
 
- Plusieurs options apparaissent en haut de la fenêtre Propriétés. Vous pouvez modifier le nom de l'élément actuellement sélectionné à l'aide de la zone **Nom** . Dans le coin supérieur gauche, il existe une icône qui représente l'élément actuellement sélectionné. Pour réorganiser les propriétés par catégorie ou par ordre alphabétique, cliquez sur **Catégorie**, **Nom**ou **Source** dans la liste **Réorganiser par** . Pour afficher la liste des événements pour un contrôle, cliquez sur le bouton **Événements** , symbolisé par un éclair. Pour rechercher une propriété, commencez à taper son nom dans la zone **Propriétés de recherche** . La fenêtre Propriétés affiche les propriétés correspondant aux termes de recherche en cours de frappe. Certaines propriétés vous permettent de définir des propriétés avancées en sélectionnant un bouton de flèche vers le bas. Pour plus d’informations sur l’utilisation des propriétés et la gestion des événements, consultez [Démarrage rapide : ajout de contrôles et gestion des événements](http://go.microsoft.com/fwlink/?LinkID=247983)
+ Plusieurs options apparaissent en haut de la fenêtre Propriétés. Vous pouvez modifier le nom de l'élément actuellement sélectionné à l'aide de la zone **Nom** . Dans le coin supérieur gauche, il existe une icône qui représente l'élément actuellement sélectionné. Pour réorganiser les propriétés par catégorie ou par ordre alphabétique, cliquez sur **Catégorie**, **Nom**ou **Source** dans la liste **Réorganiser par** . Pour afficher la liste des événements pour un contrôle, cliquez sur le bouton **Événements** , symbolisé par un éclair. Pour rechercher une propriété, commencez à taper son nom dans la zone **Propriétés de recherche** . La fenêtre Propriétés affiche les propriétés correspondant aux termes de recherche en cours de frappe. Certaines propriétés vous permettent de définir des propriétés avancées en sélectionnant un bouton de flèche vers le bas. Pour plus d’informations sur l’utilisation des propriétés et la gestion des événements, consultez [Démarrage rapide : ajout de contrôles et gestion des événements](https://go.microsoft.com/fwlink/?LinkID=247983)
 
  À droite de chaque valeur de propriété figure un *marqueur de propriété* qui apparaît comme un symbole de zone. L'apparence du marqueur de propriété indique s'il y a une liaison de données ou une ressource appliquée à la propriété. Par exemple, un symbole de zone vide indique une valeur par défaut, un symbole de zone noire indique généralement qu'une ressource locale a été appliquée, et enfin une zone orange indique généralement qu'une liaison de données a été appliquée. Quand vous cliquez sur le marqueur de propriété, vous pouvez accéder à la définition d'un style, ouvrir le générateur de liaisons de données ou ouvrir le sélecteur de ressources.
 

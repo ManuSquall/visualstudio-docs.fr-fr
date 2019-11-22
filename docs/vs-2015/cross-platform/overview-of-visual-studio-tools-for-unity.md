@@ -8,12 +8,12 @@ ms.assetid: b4231bb9-45c4-4c77-ac3c-d05033b26393
 caps.latest.revision: 6
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 27ef5a1f79b97a5be5583917f1c9703b3d624c16
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ba5447301c3a5581d35825ed91c17b3c9f50015f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68183310"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298747"
 ---
 # <a name="overview-of-visual-studio-tools-for-unity"></a>Vue d'ensemble de Visual Studio Tools pour Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Dans cette section, vous allez en savoir plus sur les fonctionnalités de Visual
 ## <a name="integration-with-unity"></a>Intégration à Unity  
  Visual Studio Tools pour Unity ne serait pas un activateur de productivité, si vous deviez passer en permanence de l'éditeur Unity à Visual Studio, et inversement. C'est pourquoi Visual Studio Tools pour Unity facilite la conservation de votre travail sans que vous ayez à quitter Visual Studio.  
   
-- L’**Explorateur de projets Unity** affiche l’ensemble du projet Unity à l’intérieur de Visual Studio à l’aide de la même hiérarchie affichée dans l’éditeur Unity.  
+- L'**Explorer de projets Unity** affiche l'ensemble du projet Unity à l'intérieur de Visual Studio à l'aide de la même hiérarchie affichée dans l'éditeur Unity.  
   
 - L'intégration de la console Unity affiche la sortie de la console Unity directement dans la fenêtre d'erreur de Visual Studio.  
   
@@ -67,4 +67,4 @@ Dans cette section, vous allez en savoir plus sur les fonctionnalités de Visual
 - Vous pouvez modifier la façon dont Visual Studio Tools for Unity génère les fichiers projet à l'aide du rappel de style Unity ProjectFileGeneration. Pour plus d'informations, consultez l'exemple Génération de fichier projet.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Page d’accueil d’Unity](http://unity3d.com)
+ [Page d’accueil d’Unity](https://unity.com/)

@@ -9,14 +9,14 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e6084daea11d981477bbee6f210e1faf718b58d8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ded65e85a2ae11e96c21fdd852ea12daa4bbcdf4
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646924"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299990"
 ---
-# <a name="step-8-customize-the-quiz"></a>Étape 8 : Personnaliser le questionnaire
+# <a name="step-8-customize-the-quiz"></a>Étape 8 : personnaliser le questionnaire
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Dans la dernière partie du didacticiel, vous allez découvrir quelques méthodes permettant de personnaliser le questionnaire et développer ce que vous avez déjà appris. Par exemple, pensez à la façon dont le programme crée des problèmes de division aléatoire pour laquelle la réponse n’est jamais une fraction. Pour en savoir plus, définissez le contrôle `timeLabel` sur une couleur différente et donnez un indice à la personne interrogée.
@@ -28,8 +28,6 @@ Dans la dernière partie du didacticiel, vous allez découvrir quelques méthode
 - Donnez un indice à la personne interrogée en émettant un son quand une réponse correcte est entrée dans un contrôle NumericUpDown. (Vous devez écrire un gestionnaire d’événements pour chaque événement `ValueChanged()` du contrôle, qui se déclenche chaque fois que la personne interrogée modifie la valeur du contrôle.)
 
 ### <a name="to-continue-or-review"></a>Pour continuer ou examiner
-
-- Pour télécharger la version finale du questionnaire, consultez [Exemple complet de questionnaire de mathématiques du didacticiel](http://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 - Pour passer à l’étape suivante du didacticiel, consultez [Didacticiel 3 : créer un jeu de combinaisons](../ide/tutorial-3-create-a-matching-game.md).
 

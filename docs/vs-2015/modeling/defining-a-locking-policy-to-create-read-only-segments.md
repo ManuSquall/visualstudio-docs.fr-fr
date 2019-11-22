@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 53542ec2a5270aec6836864fa3108d5f84da2df9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5acbb4d2966e89f7913fa1479b882fad5c9650f7
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669876"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295809"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Définition d'une stratégie de verrouillage pour créer des segments en lecture seule
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ L’API d’immuabilité du kit de développement logiciel (SDK) [!INCLUDE[vsprv
 > [!NOTE]
 > Une stratégie de verrouillage peut être contournée à l’aide de la réflexion. Il fournit une limite claire pour les développeurs tiers, mais ne fournit pas une sécurité renforcée.
 
- Des informations supplémentaires et des exemples sont disponibles sur le site Web du [Kit de développement logiciel (SDK) [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visualization and Modeling](http://go.microsoft.com/fwlink/?LinkId=186128) .
+ Des informations supplémentaires et des exemples sont disponibles sur le site Web du [Kit de développement logiciel (SDK) [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visualization and Modeling](https://go.microsoft.com/fwlink/?LinkId=186128) .
 
 ## <a name="setting-and-getting-locks"></a>Définition et obtention de verrous
  Vous pouvez définir des verrous sur le magasin, sur une partition ou sur un élément individuel. Par exemple, cette instruction empêchera la suppression d’un élément de modèle, et empêchera également la modification de ses propriétés :
@@ -80,7 +80,7 @@ partition.SetLocks(Locks.Delete);
 |valeur|Cela signifie que si `IsLocked(Value)` a la valeur true|
 |-----------|------------------------------------------|
 |aucune.|Aucune restriction.|
-|Property|Les propriétés de domaine des éléments ne peuvent pas être modifiées. Cela ne s’applique pas aux propriétés générées par le rôle d’une classe de domaine dans une relation.|
+|Les|Les propriétés de domaine des éléments ne peuvent pas être modifiées. Cela ne s’applique pas aux propriétés générées par le rôle d’une classe de domaine dans une relation.|
 |Ajouter|Impossible de créer des éléments et des liens dans une partition ou un magasin.<br /><br /> Non applicable aux `ModelElement`.|
 |Déplacement|L’élément ne peut pas être déplacé entre des partitions si `element.IsLocked(Move)` a la valeur true ou si `targetPartition.IsLocked(Move)` a la valeur true.|
 |Supprimer|Un élément ne peut pas être supprimé si ce verrou est défini sur l’élément lui-même, ou sur l’un des éléments dans lequel la suppression se propage, comme des éléments et des formes incorporés.<br /><br /> Vous pouvez utiliser `element.CanDelete()` pour déterminer si un élément peut être supprimé.|
@@ -115,7 +115,7 @@ public interface ILockingPolicy
 
  Ces méthodes sont appelées lorsqu’un appel est effectué pour `SetLocks()` sur un magasin, une partition ou un ModelElement. Dans chaque méthode, vous disposez d’un ensemble de verrous proposés. Vous pouvez retourner l’ensemble proposé, ou vous pouvez ajouter et soustraire des verrous.
 
- Exemple :
+ Par exemple :
 
 ```
 using Microsoft.VisualStudio.Modeling;

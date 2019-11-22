@@ -1,5 +1,5 @@
 ---
-title: 'DA0006 : Remplacer Equals() pour les types valeur | Microsoft Docs'
+title: 'DA0006 : Remplacez Equals() pour les types valeur | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,21 +14,21 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2229edad7ff338251fea23740343e23f87aa2792
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ae18d4cb69de5faa4289a99cbb53b273443b494a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68158676"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300992"
 ---
 # <a name="da0006-override-equals-for-value-types"></a>DA0006 : Remplacer Equals() pour les types valeur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Id de règle | DA0006 |  
-| Catégorie de |. Utilisation de NET Framework |  
-| Méthodes de profilage | Échantillonnage |  
-| Message | Remplacer Equals et l’opérateur d’égalité sur les types valeur. |  
-| Type de messages | Avertissement |  
+ID de règle | DA0006 |  
+| Catégorie |. Utilisation de .NET Framework |  
+| Méthodes profilage | Échantillonnage |  
+| Message | Remplacez Equals et l’opérateur d’égalité sur les types valeur. |  
+| Messages, type | AVERTISSEMENT |  
   
 ## <a name="cause"></a>Cause  
  Les appels à la méthode Equals ou aux opérateurs d’égalité d’un type valeur public représentent une part importante des données de profilage. Implémentez une méthode plus efficace.  
@@ -36,7 +36,7 @@ Id de règle | DA0006 |
 ## <a name="rule-description"></a>Description de la règle  
  Pour les types valeur, l’implémentation héritée de Equals utilise la bibliothèque <xref:System.Reflection> et compare le contenu de tous les champs du type. Le processus de réflexion sollicite fortement les ressources informatiques et la comparaison de chaque champ à la recherche d'une égalité peut s'avérer inutile. Si des utilisateurs sont susceptibles de comparer ou de trier des instances, ou de les utiliser en tant que clés de table de hachage, votre type valeur doit implémenter Equals. Si votre langage de programmation prend en charge la surcharge des opérateurs, vous devez également fournir une implémentation des opérateurs d’égalité et d’inégalité.  
   
- Pour plus d’informations sur la façon de remplacer Equals et les opérateurs d’égalité, consultez [Conseils pour l’implémentation de Equals et de l’opérateur d’égalité (==)](http://go.microsoft.com/fwlink/?LinkId=177818).  
+ Pour plus d’informations sur la façon de remplacer Equals et les opérateurs d’égalité, consultez [Conseils pour l’implémentation de Equals et de l’opérateur d’égalité (==)](https://go.microsoft.com/fwlink/?LinkId=177818).  
   
 ## <a name="how-to-investigate-a-warning"></a>Comment rechercher la cause d’un avertissement  
- Pour obtenir un exemple d’implémentation d’Equals et des opérateurs d’égalité, consultez la règle d’analyse du code [CA1815 : Remplacer Equals et l’opérateur d’égalité dans les types valeur](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md)
+ Pour obtenir un exemple d’implémentation de Equals et des opérateurs d’égalité, consultez la règle d’analyse du code [CA1815 : Remplacez Equals et l’opérateur égal à dans les types valeur](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md)

@@ -9,19 +9,19 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b683e2d266e065ce9fcf7caa1943cd44d1bd9be6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8eb2d4f5b025be6f68860c18d1c14da017aaf3fe
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664723"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74294319"
 ---
 # <a name="draw-shapes-and-paths"></a>Dessiner des formes et des tracés
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Dans le concepteur XAML, une *forme* correspond exactement à ce à quoi vous pensez : un cercle, un rectangle, une ellipse, etc. Un *tracé* est une sorte de forme qui offre davantage de souplesse. Vous pouvez notamment le remodeler ou le combiner à d'autres tracés pour créer de nouvelles formes.
 
- Les formes et les tracés font appel à des graphiques vectoriels pour mieux s’adapter aux affichages à haute résolution. Pour en savoir plus sur les graphiques vectoriels, regardez la vidéo [What are Vector Graphics](https://www.youtube.com/watch?v=MoCSwF0n-io) (Présentation des graphiques vectoriels) ou lisez la définition des [graphiques vectoriels](http://www.webopedia.com/TERM/V/vector_graphics.html).
+ Les formes et les tracés font appel à des graphiques vectoriels pour mieux s’adapter aux affichages à haute résolution. Pour en savoir plus sur les graphiques vectoriels, regardez la vidéo [What are Vector Graphics](https://www.youtube.com/watch?v=MoCSwF0n-io) (Présentation des graphiques vectoriels) ou lisez la définition des [graphiques vectoriels](https://www.webopedia.com/TERM/V/vector_graphics.html).
 
  **Dans cette rubrique :**
 
@@ -54,7 +54,7 @@ Dans le concepteur XAML, une *forme* correspond exactement à ce à quoi vous pe
  ![](../designers/media/717956a8-b6a5-4e37-8af3-70bcfc78c82a.png "717956a8-b6a5-4e37-8af3-70bcfc78c82a") ![](../designers/media/8fbbbb21-be83-4cf6-903b-3a49f00c9860.png "8fbbbb21-be83-4cf6-903b-3a49f00c9860")
 
 ### <a name="draw-a-straight-line"></a>Tracer une ligne droite
- Utilisez l' outil ![ ](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84Cf-a9bc8f38fc54")plume ou l’outil ![ ](../designers/media/eb618397-5283-48be-8396-3449be7b6fbf.png "eb618397-5283-48be-8396-3449be7b6fbf")trait.
+ Utilisez l'outil **Plume**![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84Cf-a9bc8f38fc54") ou l'outil **Ligne**![](../designers/media/eb618397-5283-48be-8396-3449be7b6fbf.png "eb618397-5283-48be-8396-3449be7b6fbf").
 
  **Utilisation de l’outil plume**![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84Cf-a9bc8f38fc54")
 
@@ -65,36 +65,36 @@ Dans le concepteur XAML, une *forme* correspond exactement à ce à quoi vous pe
  Sur la planche graphique, faites glisser le curseur du point de départ de la ligne, puis relâchez le bouton là où elle doit se terminer.
 
 ### <a name="draw-a-curve"></a>Tracer une courbe
- Utilisez l' outil ![ ](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84Cf-a9bc8f38fc54")plume.
+ Utilisez l'outil **Plume**![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84Cf-a9bc8f38fc54").
 
  Sur la planche graphique, cliquez une fois pour définir le point de départ d'une ligne, puis cliquez et faites glisser le pointeur pour créer la courbe souhaitée.
 
  Si vous voulez clore le tracé, cliquez sur le premier point de la ligne.
 
 ### <a name="change-the-shape-of-a-curve"></a>Modifier la forme d'une courbe
- Utilisez l’outil ![ ](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png "6dd6571f-C116-451D-8dd2-1f88b8406362") **sélection directe** .
+ Utilisez l'outil **Sous-sélection**![](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png "6dd6571f-C116-451D-8dd2-1f88b8406362").
 
  Cliquez sur la forme, puis faites glisser n'importe quel point sur la forme pour modifier les formes courbes.
 
 ### <a name="draw-a-free-form-path"></a>Dessiner un tracé de forme libre
- Utilisez l' outil ![ ](../designers/media/509dc167-734f-46c9-b012-987ee63450cd.png "509dc167-734f-46c9-b012-987ee63450cd")crayon.
+ Utilisez l'outil **Crayon**![](../designers/media/509dc167-734f-46c9-b012-987ee63450cd.png "509dc167-734f-46c9-b012-987ee63450cd").
 
  Sur la planche graphique, dessinez un tracé de forme libre comme vous le feriez avec un vrai crayon.
 
 ### <a name="remove-part-of-a-path"></a>Supprimer une partie d'un tracé
- Utilisez l’outil ![ ](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png "6dd6571f-C116-451D-8dd2-1f88b8406362") **sélection directe** .
+ Utilisez l'outil **Sous-sélection**![](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png "6dd6571f-C116-451D-8dd2-1f88b8406362").
 
- Sélectionnez le tracé qui contient le segment à supprimer, puis cliquez sur le bouton **Supprimer** .
+ Sélectionnez le tracé qui contient le segment à supprimer, puis cliquez sur le bouton **Supprimer**.
 
 ### <a name="remove-a-point-in-a-path"></a>Supprimer un point sur un tracé
- Utilisez l' outil ![ ](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4EFA-a0f7-af20851e4daa")sélection et l’outil ![ ](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84Cf-a9bc8f38fc54")plume.
+ Utilisez l'outil **Sélection**![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4EFA-a0f7-af20851e4daa") et l'outil **Plume**![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84Cf-a9bc8f38fc54").
 
- Utilisez l' outil ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4EFA-a0f7-af20851e4daa") sélection pour sélectionner le tracé. Utilisez ensuite l' ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84Cf-a9bc8f38fc54") outil **plume** pour cliquer sur le point à supprimer.
+ Utilisez l'outil **Sélection**![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4EFA-a0f7-af20851e4daa") pour sélectionner le tracé. Utilisez ensuite l'outil **Plume**![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84Cf-a9bc8f38fc54") pour cliquer sur le point à supprimer.
 
 ### <a name="add-a-point-to-a-path"></a>Ajouter un point à un tracé
- Utilisez l' outil ![ ](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4EFA-a0f7-af20851e4daa")sélection et l’outil ![ ](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84Cf-a9bc8f38fc54")plume.
+ Utilisez l'outil **Sélection**![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4EFA-a0f7-af20851e4daa") et l'outil **Plume**![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84Cf-a9bc8f38fc54").
 
- Utilisez l' outil ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4EFA-a0f7-af20851e4daa") sélection pour sélectionner le tracé. Utilisez l' outil ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84Cf-a9bc8f38fc54") plume pour cliquer n’importe où sur le tracé où vous souhaitez ajouter le point.
+ Utilisez l'outil **Sélection**![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4EFA-a0f7-af20851e4daa") pour sélectionner le tracé. Utilisez l'outil **Plume**![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4E00-84Cf-a9bc8f38fc54") pour cliquer à l'endroit où vous voulez ajouter le point sur le tracé.
 
 ## <a name="Convert"></a> Convertir une forme en tracé
  Pour modifier une forme à la manière d’un tracé, convertissez la forme en tracé.
@@ -131,4 +131,4 @@ Dans le concepteur XAML, une *forme* correspond exactement à ce à quoi vous pe
  **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.PNG "Installées bldadminconsoleinitialconfigicon") [Utilisation de tracés : créer un tracé de détourage](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232).
 
 ## <a name="see-also"></a>Voir aussi
- [Création d’une interface utilisateur à l’aide de Blend pour Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)
+ [Création d’une interface utilisateur à l’aide de Blend pour Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

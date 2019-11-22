@@ -16,12 +16,12 @@ caps.latest.revision: 22
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 008199331778a1e7d780a6aac7591ca2285d683e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: dfff199d49bcb801b85452b37c4282ff53d01fe4
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651410"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74294233"
 ---
 # <a name="maintaining-security"></a>Gestion de la sécurité
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ On dit souvent qu'une vigilance permanente est le prix à payer pour bénéficie
 
  D'autre part, vous devez non seulement rester vigilant sur votre propre application, mais aussi vous tenir informé des menaces et des défauts de sécurité de la plateforme sur laquelle votre application s'exécute et des autres produits dont dépend votre application.
 
- [Sécurité, confidentialité et comptes](http://go.microsoft.com/fwlink/?LinkId=72881) Obtenir de l’aide sur la sécurité, la confidentialité et les comptes d’utilisateur, notamment des informations sur les virus, les mots de passe, les contrôles parentaux, les pare-feu et le chiffrement des lecteurs.
+ [Sécurité, confidentialité et comptes](https://go.microsoft.com/fwlink/?LinkId=72881) Obtenir de l’aide sur la sécurité, la confidentialité et les comptes d’utilisateur, notamment des informations sur les virus, les mots de passe, les contrôles parentaux, les pare-feu et le chiffrement des lecteurs.
 
  [Recherche de bulletins de sécurité Microsoft](/security-updates/) Cette page facilite la recherche des bulletins précédemment publiés. Destinés aux professionnels de l'informatique, les bulletins de sécurité fournissent des informations détaillées sur les mises à jour de la sécurité.
 

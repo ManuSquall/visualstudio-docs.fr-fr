@@ -1,5 +1,5 @@
 ---
-title: Création de Packages de programme d’amorçage | Microsoft Docs
+title: Création de packages de programme d’amorçage | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -21,12 +21,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ac304d695c13fde2b69aafbb903493ad9865bf87
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f90344c156ea6c012c6ac086ffa40bf30e78a682
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68187804"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300731"
 ---
 # <a name="creating-bootstrapper-packages"></a>Création de packages de programme d'amorçage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Le programme d'installation est un programme d'installation générique qui peut
  Le programme d'amorçage détecte d'abord si l'un des composants requis est déjà installé. Si des composants requis ne sont pas installés, le programme d'amorçage commence par afficher les contrats de licence. Une fois que l'utilisateur a accepté les contrats de licence, l'installation des composants requis s'exécute. Si tous les composants requis sont détectés, le programme d'amorçage démarre simplement le programme d'installation de l'application.  
   
 ## <a name="creating-custom-packages"></a>Création de packages personnalisés  
- Vous pouvez générer les manifestes à l'aide de l'Éditeur XML de Visual Studio. Pour plus d’informations, consultez [Guide pratique pour Créer un manifeste de Package](../deployment/how-to-create-a-package-manifest.md) et [Comment : Créer un manifeste de produit](../deployment/how-to-create-a-product-manifest.md). Pour voir un exemple de création d’un package de programme d’amorçage, consultez [procédure pas à pas : Création d’un programme d’amorçage personnalisé pour afficher la déclaration de confidentialité invite](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
+ Vous pouvez générer les manifestes à l'aide de l'Éditeur XML de Visual Studio. Pour plus d’informations, consultez [How to: Create a Package Manifest](../deployment/how-to-create-a-package-manifest.md) et [How to: Create a Product Manifest](../deployment/how-to-create-a-product-manifest.md). Pour obtenir un exemple de création d'un package de programme d'amorçage, consultez [Procédure pas à pas : création d'un programme d'amorçage personnalisé pour afficher une invite de confidentialité](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
   
  Pour créer un package de programme d'amorçage, vous devez fournir le composant redistribuable sous la forme d'un fichier EXE ou MSI au générateur de manifeste de programme d'amorçage. Ce dernier crée ensuite les fichiers suivants :  
   
@@ -70,13 +70,13 @@ Le programme d'installation est un programme d'installation générique qui peut
   
   `package.xml`  
   
-  Pour finir, copiez les fichiers redistribuables dans l'emplacement correspondant au dossier du programme d'amorçage. Pour plus d'informations, voir [Procédure : Créer un Package de programme d’amorçage localisé](../deployment/how-to-create-a-localized-bootstrapper-package.md).  
+  Pour finir, copiez les fichiers redistribuables dans l'emplacement correspondant au dossier du programme d'amorçage. Pour plus d'informations, consultez [Procédure : création d'un package de programme d'amorçage localisé](../deployment/how-to-create-a-localized-bootstrapper-package.md).  
   
 ```  
 \Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages  
 ```  
   
- ou Gestionnaire de configuration  
+ or  
   
 ```  
 \Program Files (x86)\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages  
@@ -100,7 +100,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
   
  Le tableau suivant présente les propriétés qui sont automatiquement remplies par le programme d'amorçage.  
   
-|Propriété|Description|  
+|Les|Description|  
 |--------------|-----------------|  
 |ApplicationName|Nom de l'application.|  
 |ProcessorArchitecture|Processeur et bits par mot de la plateforme ciblée par un exécutable. Les valeurs sont notamment les suivantes :<br /><br /> -   Intel<br />-   IA64<br />-   AMD64|  
@@ -115,7 +115,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
   
  `%ProgramFiles%\Microsoft.NET\RedistList`  
   
- La liste de composants redistribuables est un fichier XML que vous devez nommer en utilisant le format suivant : *Nom de la société*. *Nom du composant*. RedistList.xml. Ainsi, par exemple, si le composant s'appelle Datawidgets et qu'il a été fait par Acme, utilisez Acme.DataWidgets.RedistList.xml. Voici un exemple de contenu de la liste de composants redistribuables :  
+ La liste de composants redistribuables est un fichier XML que vous devez nommer en respectant le format suivant : *Nom de la société*.*Nom du composant*.RedistList.xml. Ainsi, par exemple, si le composant s'appelle Datawidgets et qu'il a été fait par Acme, utilisez Acme.DataWidgets.RedistList.xml. Voici un exemple de contenu de la liste de composants redistribuables :  
   
 ```  
 <?xml version="1.0" encoding="UTF-8"?>  
@@ -125,7 +125,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour Installer les composants requis avec une Application ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
+ [Guide pratique pour installer des composants requis avec une application ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
  [Composants requis, boîte de dialogue](../ide/reference/prerequisites-dialog-box.md)   
- [Référence du schéma Package et produit](../deployment/product-and-package-schema-reference.md)   
- [Utiliser le programme d’amorçage de Visual Studio 2005 pour démarrer rapidement votre installation](http://go.microsoft.com/fwlink/?LinkId=107537)
+ [Référence du schéma de produit et de Package](../deployment/product-and-package-schema-reference.md)   
+ [Utiliser le programme d’amorçage de Visual Studio 2005 pour démarrer rapidement votre installation](https://go.microsoft.com/fwlink/?LinkId=107537)

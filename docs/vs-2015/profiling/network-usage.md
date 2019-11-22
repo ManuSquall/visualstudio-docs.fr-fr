@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d85b71c2ed54a8ab8bc85c93ce61e3ed274d86e0
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: eed389a3847145a0f37eb3141526a38e4374d368
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65673821"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297911"
 ---
 # <a name="network-usage"></a>Utilisation du réseau
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,14 +24,14 @@ L’outil de diagnostic **Réseau** de Visual Studio collecte les données relat
  L'outil Réseau prend en charge seulement les applications de la plateforme universelle Windows. Les autres plateformes ne sont pas prises en charge pour l'instant.  
   
 > [!NOTE]
-> Pour obtenir une description plus complète de l’outil Réseau, consultez la [présentation de l’outil Réseau de Visual Studio](http://blogs.msdn.com/b/visualstudio/archive/2015/05/04/introducing-visual-studio-s-network-tool.aspx).  
+> Pour obtenir une description plus complète de l’outil Réseau, consultez la [présentation de l’outil Réseau de Visual Studio](https://devblogs.microsoft.com/visualstudio/?m=20155).  
   
 ## <a name="collecting-network-tool-data"></a>Collecte des données de l'outil Réseau  
  Vous devez exécuter l’outil **Réseau** avec un projet Visual Studio ouvert sur l’ordinateur Visual Studio.  
   
 1. Ouvrez le projet dans Visual Studio.  
   
-2. Cliquez sur **Déboguer/Profileur de performances...** Choisissez **Réseau**, puis **Démarrer**.  
+2. Dans le menu, cliquez sur **Déboguer/profileur de performances...** . Choisissez **réseau**, puis **Démarrer**.  
   
 3. L'outil Réseau commence à collecter le trafic HTTP de votre application.  
   
@@ -41,7 +41,7 @@ L’outil de diagnostic **Réseau** de Visual Studio collecte les données relat
   
    La fenêtre de rapport doit se présenter comme ceci :  
   
-   ![La fenêtre Réseau](../profiling/media/network-fullwindow.png "NETWORK_FullWindow")  
+   ![Fenêtre réseau](../profiling/media/network-fullwindow.png "NETWORK_FullWindow")  
   
 ## <a name="analyzing-data"></a>Analyse des données  
  Vous pouvez analyser le trafic HTTP capturé pendant l'exécution de votre application, ou même après la fermeture de l'application, en sélectionnant l'une des opérations réseau affichées sur la vue récapitulative.  
@@ -52,7 +52,7 @@ L’outil de diagnostic **Réseau** de Visual Studio collecte les données relat
   
  Les vues des détails **Réseau** affichent des informations supplémentaires sur une opération réseau dans la vue de résumé.  
   
- ![Volet de détails de l’outil Réseau](../profiling/media/network-detailsviewpane.png "NETWORK_DetailsViewPane")  
+ ![Volet Détails de l’outil réseau](../profiling/media/network-detailsviewpane.png "NETWORK_DetailsViewPane")  
   
 |||  
 |-|-|  
@@ -74,6 +74,6 @@ L’outil de diagnostic **Réseau** de Visual Studio collecte les données relat
 3. Le bouton d’impression automatique des réponses (à l’intérieur de l’onglet du corps) peut vous aider à analyser les charges utiles des réponses JSON, XML, HTML, CSS, JavaScript et TypeScript en améliorant la lisibilité du contenu.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Exécuter des outils de profilage sans débogage](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
- [Blog Visual Studio : Présentation s network inspector de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=535022)   
- [Vidéo Channel 9 : Outils de diagnostic de Visual Studio – nouvelle Profiler de réseau](http://channel9.msdn.com/Series/ConnectOn-Demand/206)
+ [Exécuter les outils de profilage sans débogage](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
+ [Blog Visual Studio : Présentation de l’inspecteur de réseau de Visual Studio](https://go.microsoft.com/fwlink/?LinkId=535022)   
+ [Vidéo Channel 9 : Diagnostics tools – New Network Profiler](https://channel9.msdn.com/Series/ConnectOn-Demand/206)

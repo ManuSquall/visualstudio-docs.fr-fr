@@ -17,19 +17,19 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c86506395ee388c7481fa8a5e9ee32320a63c030
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: dca65fdfdfa6ad4ea27aa97033a95b4ed27e81ca
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664093"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300817"
 ---
-# <a name="the-visual-studio-image-library"></a>Bibliothèque d’images Visual Studio
+# <a name="the-visual-studio-image-library"></a>Bibliothèque d’images Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio Image Library contient les images d'application qui apparaissent dans Microsoft Visual Studio, Microsoft Windows, Office System et les autres logiciels Microsoft. Elle contient plus de 1 000 images qui donnent une certaine harmonie visuelle entre les applications Microsoft.
 
- [Téléchargez la bibliothèque d’images Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=275090)
+ [Téléchargez la bibliothèque d’images Visual Studio](https://go.microsoft.com/fwlink/p/?LinkId=275090)
 
  La bibliothèque d'images est divisée en cinq catégories : éléments communs, actions, annotations, icônes et objets. Les fichiers Readme sont inclus au format PDF pour les types courants d'éléments et d'icônes. Ils contiennent des informations relatives à l'utilisation appropriée de ces images dans vos applications.
 

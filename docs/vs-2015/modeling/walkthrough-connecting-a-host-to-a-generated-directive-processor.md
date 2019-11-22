@@ -12,12 +12,12 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 41023f49f1897f3e3d26d7fc57807ea98fa35f24
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 10c9c6cfa1d8553c79b710239a99f8ea9e2438e5
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659296"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301281"
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>Procédure pas à pas : connexion d'un hôte à un processeur de directive généré
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ Vous pouvez écrire votre propre hôte qui traite les modèles de texte. Un hôt
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|
-|Kit de développement logiciel (SDK) Visual Studio Visualization and Modeling|[http://go.microsoft.com/fwlink/?LinkID=186128](http://go.microsoft.com/fwlink/?LinkID=186128)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://go.microsoft.com/fwlink/?LinkId=185579)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://go.microsoft.com/fwlink/?LinkId=185580)|
+|Kit de développement logiciel (SDK) Visual Studio Visualization and Modeling|[http://go.microsoft.com/fwlink/?LinkID=186128](https://go.microsoft.com/fwlink/?LinkID=186128)|
 
  En outre, vous devez avoir créé la transformation de modèle de texte personnalisée dans [procédure pas à pas : création d’un hôte de modèle de texte personnalisé](../modeling/walkthrough-creating-a-custom-text-template-host.md).
 
@@ -95,17 +95,17 @@ Vous pouvez écrire votre propre hôte qui traite les modèles de texte. Un hôt
 
 3. Ajoutez les références suivantes :
 
-    - Microsoft. VisualStudio. Modeling. Sdk. 11.0
+    - Microsoft.VisualStudio.Modeling.Sdk.11.0
 
-    - Microsoft. VisualStudio. Modeling. Sdk. Diagrams. 11.0
+    - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0
 
-    - Microsoft. VisualStudio. TextTemplating. 11.0
+    - Microsoft.VisualStudio.TextTemplating.11.0
 
-    - Microsoft. VisualStudio. TextTemplating. interfaces. 11.0
+    - Microsoft.VisualStudio.TextTemplating.Interfaces.11.0
 
-    - Microsoft. VisualStudio. TextTemplating. Modeling. 11.0
+    - Microsoft.VisualStudio.TextTemplating.Modeling.11.0
 
-    - Microsoft. VisualStudio. TextTemplating. VSHost. 11.0
+    - Microsoft.VisualStudio.TextTemplating.VSHost.11.0
 
 4. En haut de Program.cs ou Module1. vb, ajoutez la ligne de code suivante :
 
@@ -117,7 +117,7 @@ Vous pouvez écrire votre propre hôte qui traite les modèles de texte. Un hôt
     Imports Microsoft.Win32
     ```
 
-5. Recherchez le code de la propriété `StandardAssemblyReferences` et remplacez-le par le code suivant :
+5. Recherchez le code de la propriété `StandardAssemblyReferences`et remplacez-le par le code suivant :
 
     > [!NOTE]
     > Dans cette étape, vous ajoutez des références aux assemblys qui sont requis par le processeur de directive généré que votre hôte prendra en charge.
@@ -153,7 +153,7 @@ Vous pouvez écrire votre propre hôte qui traite les modèles de texte. Un hôt
     }
     ```
 
-6. Recherchez le code de la fonction `ResolveDirectiveProcessor` et remplacez-le par le code suivant :
+6. Recherchez le code de la fonction `ResolveDirectiveProcessor`et remplacez-le par le code suivant :
 
     > [!IMPORTANT]
     > Ce code contient des références codées en dur au nom du processeur de directive généré auquel vous souhaitez vous connecter. Vous pouvez facilement le rendre plus général, auquel cas il recherche tous les processeurs de directive listés dans le registre et tente de trouver une correspondance. Dans ce cas, l’hôte fonctionne avec n’importe quel processeur de directive généré.
@@ -310,7 +310,7 @@ Vous pouvez écrire votre propre hôte qui traite les modèles de texte. Un hôt
     #>
     ```
 
-3. Dans le code, remplacez \<YOUR chemin d’accès > par le chemin d’accès du fichier Sample. min à partir du langage spécifique à la conception que vous avez créé dans la première procédure.
+3. Dans le code, remplacez \<votre chemin d’accès > par le chemin d’accès du fichier Sample. min à partir du langage spécifique à la conception que vous avez créé dans la première procédure.
 
 4. Enregistrez et fermez le fichier.
 

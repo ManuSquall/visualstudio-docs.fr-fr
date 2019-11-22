@@ -9,24 +9,24 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 124fc1027e3b5eba537341c87ae2a80ce5c325bc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a2757201f482682b8fdf26275f510984629204f6
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666068"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300912"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Mise en route des langages spécifiques à un domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette rubrique explique les concepts de base de la définition et de l’utilisation d’un langage spécifique à un domaine (DSL) créé avec le kit de développement logiciel (SDK) de modélisation pour Visual Studio.
 
- Si vous débutez avec DSL, nous vous recommandons d’utiliser le **laboratoire d’outils DSL**, que vous trouverez dans ce site : [création et Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
+ Si vous débutez avec DSL, nous vous recommandons d’utiliser le **laboratoire d’outils DSL**, que vous trouverez dans ce site : [création et Modeling SDK](https://go.microsoft.com/fwlink/?LinkID=186128)
 
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>Que pouvez-vous faire avec un langage spécifique à un domaine ?
  Un langage spécifique à un domaine est une notation, généralement graphique, conçue pour être utilisée à des fins particulières. En revanche, les langages tels que UML sont à usage général. Dans une solution DSL, vous pouvez définir les types d’élément de modèle et leurs relations, et la façon dont ils sont présentés à l’écran.
 
- Lorsque vous avez conçu une solution DSL, vous pouvez la distribuer dans le cadre d’un package d’extension d’intégration Visual Studio (VSIX). Les utilisateurs travaillent avec la solution DSL dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] :
+ Lorsque vous avez conçu une solution DSL, vous pouvez la distribuer dans le cadre d’un package d’extension d’intégration Visual Studio (VSIX). Les utilisateurs travaillent avec la solution DSL dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]:
 
  ![Diagramme de l’arborescence des familles, boîte à outils et Explorateur](../modeling/media/familyt-instance.png "FamilyT_Instance")
 
@@ -41,8 +41,8 @@ Cette rubrique explique les concepts de base de la définition et de l’utilisa
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](http://go.microsoft.com/fwlink/?LinkId=185580)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://go.microsoft.com/fwlink/?LinkId=185579)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://go.microsoft.com/fwlink/?LinkId=185580)|
 |SDK Modeling pour Visual Studio|[Télécharger MSDK](https://www.microsoft.com/download/details.aspx?id=48148)|
 
 ## <a name="creating-a-dsl-solution"></a>Création d’une solution DSL
@@ -72,7 +72,7 @@ Cette rubrique explique les concepts de base de la définition et de l’utilisa
 
    - Choisissez une extension qui n’est pas associée à une application de votre ordinateur, ou sur n’importe quel ordinateur sur lequel vous souhaitez installer le DSL. Par exemple, **docx** et **htm** sont des extensions de nom de fichier inacceptable.
 
-   - L'Assistant vous avertit si l'extension que vous avez entrée est utilisée actuellement comme DSL. Dans ce cas, utilisez une autre extension de nom de fichier. Vous pouvez aussi réinitialiser l'instance expérimentale du Kit SDK Visual Studio pour effacer les anciennes conceptions expérimentales. Cliquez **sur Démarrer**, sur **tous les programmes**, **Microsoft Visual Studio Kit de développement logiciel (SDK) 2010**, **Outils**, puis **réinitialisez l’instance Microsoft Visual Studio 2010 expérimentale**.
+   - L'Assistant vous avertit si l'extension que vous avez entrée est utilisée actuellement comme DSL. Dans ce cas, utilisez une autre extension de nom de fichier. Vous pouvez aussi réinitialiser l'instance expérimentale du Kit SDK Visual Studio pour effacer les anciennes conceptions expérimentales. Cliquez sur **Démarrer**, **Tous les programmes**, **Microsoft Visual Studio 2010 SDK**, **Outils**, puis **Réinitialiser l'instance expérimentale de Microsoft Visual Studio 2010**.
 
 7. Examinez les autres pages, puis cliquez sur **Terminer**.
 
@@ -83,7 +83,7 @@ Cette rubrique explique les concepts de base de la définition et de l’utilisa
 
    L'interface utilisateur ressemble maintenant à l'image suivante.
 
-   ![concepteur DSL](../modeling/media/dsl-designer.png "dsl_designer")
+   ![Concepteur dsl](../modeling/media/dsl-designer.png "dsl_designer")
 
    Cette solution définit un langage spécifique à un domaine. Pour plus d’informations, consultez [vue d’ensemble de l’interface utilisateur de outils Domain-specific language](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).
 
@@ -101,7 +101,7 @@ Cette rubrique explique les concepts de base de la définition et de l’utilisa
 
 #### <a name="to-experiment-with-the-dsl"></a>Pour expérimenter le DSL
 
-1. Cliquez sur **transformer tous les modèles** dans la barre d’outils Explorateur de solutions. Cela régénère la majeure partie du code source à partir de DslDefinition. DSL.
+1. Cliquez sur **Transformer tous les modèles** dans la barre d'outils de l'Explorateur de solutions. Cela régénère la majeure partie du code source à partir de DslDefinition. DSL.
 
    > [!NOTE]
    > Chaque fois que vous modifiez DslDefinition. DSL, vous devez cliquer sur **transformer tous les modèles** avant de reconstruire la solution. Vous pouvez automatiser cette étape. Pour plus d’informations, consultez [automatisation de la transformation de tous les modèles](https://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).
@@ -141,7 +141,7 @@ Cette rubrique explique les concepts de base de la définition et de l’utilisa
 
  Vous pouvez afficher un modèle sous la forme d’une arborescence dans l’affichage de l' **Explorateur** pendant que vous modifiez un modèle. À mesure que vous ajoutez des formes au diagramme, les éléments de modèle s’affichent également dans l’Explorateur. L’Explorateur peut être utilisé même s’il n’y a aucun diagramme.
 
- Si vous ne voyez pas l’Explorateur dans l’instance de débogage de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], dans le menu **affichage** , pointez sur **autres fenêtres**, puis cliquez sur *\<Your Language >* **Explorer**.
+ Si vous ne voyez pas l’Explorateur dans l’instance de débogage de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], dans le menu **affichage** , pointez sur **autres fenêtres**, puis cliquez sur *\<votre* **Explorateur**> de langue.
 
 ### <a name="the-api-of-your-dsl"></a>L’API de votre DSL
  Votre DSL génère une API qui vous permet de lire et de mettre à jour les modèles qui sont des instances du DSL. Une application de l’API consiste à générer des fichiers texte à partir d’un modèle. Pour plus d’informations, consultez [génération de code au moment du design à l’aide de modèles de texte T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
@@ -200,7 +200,7 @@ Cette rubrique explique les concepts de base de la définition et de l’utilisa
 
     2. Ouvrez le Fenêtre Propriétés et positionnez-le de sorte que vous puissiez voir l’Explorateur et les propriétés DSL en même temps.
 
-    3. Dans l’Explorateur DSL, développez **éditeur**, **onglets de la boîte à outils**, *\<your DSL >* , puis **Outils**.
+    3. Dans l’Explorateur DSL, développez **éditeur**, **onglets de la boîte à outils**, *\<votre > DSL*, puis **Outils**.
 
     4. Cliquez sur **ExampleElement**. Il s’agit de l’élément de boîte à outils utilisé pour créer des éléments.
 
@@ -324,7 +324,7 @@ Cette rubrique explique les concepts de base de la définition et de l’utilisa
 
     1. Dans l' **Explorateur DSL**, développez **éditeur** , puis onglets de la **boîte à outils**.
 
-    2. Cliquez avec le bouton droit sur *\<your > DSL* , puis cliquez sur l' **outil Ajouter un nouvel élément**.
+    2. Cliquez avec le bouton droit sur *\<votre > DSL* , puis cliquez sur l' **outil Ajouter un nouvel élément**.
 
     3. Définissez la propriété **Name** du nouvel outil et définissez sa propriété **Class** sur Town.
 
@@ -332,7 +332,7 @@ Cette rubrique explique les concepts de base de la définition et de l’utilisa
 
 7. Créez un outil de connecteur pour créer un lien entre des villes et des personnes.
 
-    1. Cliquez avec le bouton droit sur *\<your > DSL* , puis cliquez sur **Ajouter un nouvel outil de connecteur**.
+    1. Cliquez avec le bouton droit sur *\<votre > DSL* , puis cliquez sur **Ajouter un nouvel outil de connecteur**.
 
     2. Définissez la propriété Name du nouvel outil.
 
@@ -394,9 +394,9 @@ Cette rubrique explique les concepts de base de la définition et de l’utilisa
 
 #### <a name="to-reset-the-visual-studio-experimental-instance"></a>Pour réinitialiser l’instance expérimentale de Visual Studio
 
-1. Cliquez **sur Démarrer**, sur **tous les programmes**, **Microsoft Visual Studio Kit de développement logiciel (SDK) 2010**, **Outils**, puis **réinitialisez l’instance Microsoft Visual Studio 2010 expérimentale**.
+1. Cliquez sur **Démarrer**, **Tous les programmes**, **Microsoft Visual Studio 2010 SDK**, **Outils**, puis **Réinitialiser l'instance expérimentale de Microsoft Visual Studio 2010**.
 
 2. Reconstruisez les DSL expérimentales ou d’autres extensions expérimentales [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que vous souhaitez utiliser.
 
 ## <a name="see-also"></a>Voir aussi
- [Comprendre les modèles, les classes et les relations](../modeling/understanding-models-classes-and-relationships.md) [comment définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md) [création et Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128)
+ [Comprendre les modèles, les classes et les relations](../modeling/understanding-models-classes-and-relationships.md) [comment définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md) [création et Modeling SDK](https://go.microsoft.com/fwlink/?LinkID=186128)

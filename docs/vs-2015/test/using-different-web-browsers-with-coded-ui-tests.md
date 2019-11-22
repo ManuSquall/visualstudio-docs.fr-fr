@@ -8,19 +8,19 @@ ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: 25
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 31ca0fdbecf7ea3742fef60f99f2a0a25220f9cf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d9c86125d934c5165e3e8111fdd06631844ad1a6
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657214"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297958"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>Utilisation de différents navigateurs Web avec des tests codés de l'interface utilisateur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Les tests codés de l'interface utilisateur peuvent automatiser le test des applications web en enregistrant vos tests à l'aide d'Internet Explorer. Vous pouvez ensuite personnaliser votre test et l'utiliser à l'aide d'Internet Explorer ou d'autres types de navigateurs pour ces applications web.
 
- **Prérequis**
+ **Conditions requises**
 
 - Visual Studio Enterprise
 
@@ -38,19 +38,19 @@ Les tests codés de l'interface utilisateur peuvent automatiser le test des appl
 
   - Windows Internet Explorer 10
 
-  - Pour connaître les versions prises en charge de Mozilla Firefox et de Google Chrome, cliquez [ici](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).
+  - Pour connaître les versions prises en charge de Mozilla Firefox et de Google Chrome, cliquez [ici](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting).
 
-- Installez les [composants Selenium pour les tests codés de l’interface utilisateur sur plusieurs navigateurs](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).
+- Installez les [composants Selenium pour les tests codés de l’interface utilisateur sur plusieurs navigateurs](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting).
 
   **Quelles sont les opérations prises en charge par tous les navigateurs web ?**
 
-- [Ajouter du code personnalisé pour contrôler les fonctionnalités](http://blogs.msdn.com/b/visualstudioalm/archive/2012/12/10/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer.aspx) comme les propriétés, la recherche et les objets waiter de lecture.
+- [Ajouter du code personnalisé pour contrôler les fonctionnalités](https://devblogs.microsoft.com/devops/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/) comme les propriétés, la recherche et les objets waiter de lecture.
 
 - Boîtes de dialogue et menus contextuels
 
-- [Exécuter le code JavaScript de base sans type de retour](http://blogs.msdn.com/b/visualstudioalm/archive/2013/01/18/introducing-jscript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test.aspx)
+- [Exécuter le code JavaScript de base sans type de retour](https://devblogs.microsoft.com/devops/introducing-javascript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test/)
 
-- Résilience de recherche (avec concordance active) et [améliorations des performances](http://blogs.msdn.com/b/visualstudioalm/archive/2012/02/01/guidelines-on-improving-performance-of-coded-ui-test-playback.aspx)
+- Résilience de recherche (avec concordance active) et [améliorations des performances](https://devblogs.microsoft.com/devops/guidelines-on-improving-performance-of-coded-ui-test-playback/)
 
 ## <a name="why-should-i-use-coded-ui-tests-across-multiple-web-browser-types"></a>Pourquoi dois-je utiliser les tests codés de l'interface utilisateur sur différents types de navigateur web ?
  Lorsque vous testez votre application web à l'aide de divers types de navigateurs web, l'expérience d'interface utilisateur des utilisateurs susceptibles d'utiliser des navigateurs différents est mieux émulée. Par exemple, votre application peut inclure un contrôle ou un code dans Internet Explorer qui n'est pas compatible avec d'autres navigateurs web. En exécutant les tests codés de l'interface utilisateur sur d'autres navigateurs, vous pouvez détecter et corriger les problèmes avant qu'ils aient une incidence sur vos clients.
@@ -63,20 +63,20 @@ Les tests codés de l'interface utilisateur peuvent automatiser le test des appl
 
  **Lecture avec Internet Explorer :** lorsqu’aucun navigateur n’est explicitement spécifié, les tests s’exécutent par défaut sur Internet Explorer. Vous pouvez déclarer explicitement le navigateur à utiliser en définissant la propriété **BrowserWindow.CurrentBrowser** dans le code de votre test. Pour Internet Explorer, cette propriété doit être définie sur **IE** ou **Internet Explorer**.
 
- **Lecture avec des navigateurs web autres qu’Internet Explorer** : pour lire sur les navigateurs web autres qu’Internet Explorer, modifiez la propriété BrowserWindow.CurrentBrowser dans votre code de test et définissez-la sur **Firefox** ou **Chrome**.
+ **Lecture avec des navigateurs web autres qu'Internet Explorer :** pour lire sur les navigateurs web autres qu'Internet Explorer, modifiez la propriété BrowserWindow.CurrentBrowser dans votre code de test sur **Firefox** ou **Chrome**.
 
  Pour lire les tests sur les navigateurs web autres qu’IE, vous devez installer les **composants Selenium pour les tests codés de l’interface utilisateur sur plusieurs navigateurs**.
 
 #### <a name="installing-selenium-components"></a>Installation des composants Selenium
 
-1. Dans le menu **Outils** , choisissez **Extensions et mises à jour**.
+1. Dans le menu **Outils**, choisissez **Extensions et mises à jour**.
 
 2. Dans la boîte de dialogue Extensions et mises à jour, recherchez `Selenium components for Cross Browser Testing`.
 
 3. Mettez en surbrillance l’extension et choisissez **Télécharger**.
 
    > [!TIP]
-   > Vous pouvez également télécharger les composants Selenium pour le test codé de l’interface utilisateur sur plusieurs navigateurs [ici](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).
+   > Vous pouvez également télécharger les composants Selenium pour le test codé de l’interface utilisateur sur plusieurs navigateurs [ici](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting).
 
    Pour plus d’informations sur la création et l’utilisation des tests codés de l’interface utilisateur, consultez [Création de tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).
 
@@ -99,7 +99,7 @@ Les tests codés de l'interface utilisateur peuvent automatiser le test des appl
  Vous utilisez peut-être une version de [!INCLUDE[vs2011_first](../includes/vs2011-first-md.md)] qui ne prend pas en charge les tests codés de l'interface utilisateur à l'aide de différents navigateurs web. Pour utiliser de tels tests codés de l’interface utilisateur, vous devez utiliser Visual Studio Enterprise.
 
  *Que dois-je savoir de plus ?*
- **Notes**
+ **Remarques**
 
 - ![Prérequis](../test/media/prereq.png "PREREQ") Le navigateur Web Apple Safari n’est pas pris en charge.
 
@@ -139,17 +139,17 @@ Les tests codés de l'interface utilisateur peuvent automatiser le test des appl
  [Résoudre les problèmes des tests multi-navigateurs](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!182&authkey=!AEpS48i295B49FI)
 
 ### <a name="guidance"></a>Conseils
- [Test de la livraison continue avec Visual Studio 2012 - Chapitre 2 : Tests unitaires : tester l’intérieur](http://go.microsoft.com/fwlink/?LinkID=255188)
+ [Test de la livraison continue avec Visual Studio 2012 - Chapitre 2 : Tests unitaires : tester l’intérieur](https://go.microsoft.com/fwlink/?LinkID=255188)
 
- [Test de la livraison continue avec Visual Studio 2012 - Chapitre 5 : Automatisation des tests système](http://go.microsoft.com/fwlink/?LinkID=255196)
+ [Test de la livraison continue avec Visual Studio 2012 - Chapitre 5 : Automatisation des tests système](https://go.microsoft.com/fwlink/?LinkID=255196)
 
-### <a name="faq"></a>Questions fréquentes (FAQ)
- [FAQ concernant les tests codés de l’interface utilisateur - 1](http://go.microsoft.com/fwlink/?LinkID=230576)
+### <a name="faq"></a>FAQ
+ [FAQ concernant les tests codés de l’interface utilisateur - 1](https://go.microsoft.com/fwlink/?LinkID=230576)
 
- [FAQ concernant les tests codés de l’interface utilisateur - 2](http://go.microsoft.com/fwlink/?LinkID=230578)
+ [FAQ concernant les tests codés de l’interface utilisateur - 2](https://go.microsoft.com/fwlink/?LinkID=230578)
 
 ### <a name="forum"></a>Forum
- [Visual Studio UI Automation Testing (avec tests codés de l’interface utilisateur)](http://go.microsoft.com/fwlink/?LinkID=224497)
+ [Visual Studio UI Automation Testing (avec tests codés de l’interface utilisateur)](https://go.microsoft.com/fwlink/?LinkID=224497)
 
 ## <a name="see-also"></a>Voir aussi
  [Utiliser UI Automation pour tester votre code](../test/use-ui-automation-to-test-your-code.md) [plateformes et configurations prises en charge pour les tests codés de l’interface utilisateur et les enregistrements des actions](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [analyse des tests codés de l’interface utilisateur à l’aide des journaux de test codé](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)

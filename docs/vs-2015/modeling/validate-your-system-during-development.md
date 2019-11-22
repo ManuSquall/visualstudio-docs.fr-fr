@@ -11,12 +11,12 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 489642936c6b309cd7a30eb6e0a5ad9b0edc8bd0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4fec3595ba7886f5ba979c35e9441ab108174726
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659409"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301339"
 ---
 # <a name="validate-your-system-during-development"></a>Validation de votre système pendant le développement
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,12 +36,12 @@ Visual Studio peut vous aider à garder votre logiciel en cohérence avec les be
 
 ## <a name="external-resources"></a>Ressources externes
 
-|**Catégorie**|**Links**|
+|**Catégorie**|**Liens**|
 |------------------|---------------|
-|**Vidéos**|![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9 : Doug sept : compréhension du code et conception du système avec Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9 : architecture d’une application à l’aide d’un diagramme de couche](http://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![lien vers la vidéo de](../data-tools/media/playvideo.gif "PlayVideo") [la série de procédures MSDN : Comment valider du code à l’aide de diagrammes de couche](http://go.microsoft.com/fwlink/?LinkID=214405)|
-|**Forums**|-   [Outils de visualisation et de modélisation Visual Studio](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Kit de développement logiciel (SDK) Visual Studio Visualization and Modeling (outils DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
-|**Blogs**|-   [Blog Visual Studio ALM + Team Foundation Server](http://go.microsoft.com/fwlink/?LinkID=201340)|
-|**Articles et journaux techniques**|[Centre d’architecture MSDN](http://go.microsoft.com/fwlink/?LinkId=201343)|
+|**Vidéos**|![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9 : Doug sept : compréhension du code et conception du système avec Visual Studio 2010](https://go.microsoft.com/fwlink/?LinkId=216100)<br /><br /> ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9 : architecture d’une application à l’aide d’un diagramme de couche](https://go.microsoft.com/fwlink/?LinkID=201117)<br /><br /> ![lien vers la vidéo de](../data-tools/media/playvideo.gif "PlayVideo") [la série de procédures MSDN : Comment valider du code à l’aide de diagrammes de couche](https://go.microsoft.com/fwlink/?LinkID=214405)|
+|**Forums**|-   [Outils de visualisation et de modélisation Visual Studio](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Kit de développement logiciel (SDK) Visual Studio Visualization and Modeling (outils DSL)](https://go.microsoft.com/fwlink/?LinkId=184721)|
+|**Blogs**|-   [Blog Visual Studio ALM + Team Foundation Server](https://go.microsoft.com/fwlink/?LinkID=201340)|
+|**Articles et journaux techniques**|[Centre d’architecture MSDN](https://go.microsoft.com/fwlink/?LinkId=201343)|
 
 ## <a name="see-also"></a>Voir aussi
  [Test de l’application étendre les](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac) [modèles UML et les diagrammes](../modeling/extend-uml-models-and-diagrams.md) [modèle besoins des utilisateurs](../modeling/model-user-requirements.md) [analyse et modélisation de l’architecture](../modeling/analyze-and-model-your-architecture.md)
