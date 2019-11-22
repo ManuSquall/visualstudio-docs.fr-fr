@@ -27,12 +27,12 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 49f5d1d0cef7ec4d5a6f8ab61c785ea01f77d24b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ba8a37ac9e049455ffe19314dee0e228c3c14c97
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652665"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295612"
 ---
 # <a name="using-the-toolbox"></a>Utilisation de la boîte à outils
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,4 +67,4 @@ Vous pouvez utiliser la boîte à outils pour ajouter des contrôles et d'autres
 - **Descendre** : déplace l’élément sélectionné vers le bas.
 
 ## <a name="creating-and-distributing-custom-toolbox-controls"></a>Création et distribution de contrôles de boîte à outils personnalisés
- Vous pouvez créer un contrôle de boîte à outils personnalisé en Visual Basic ou Visual C#, et vous pouvez démarrer avec un modèle de projet basé sur [Windows Presentation Foundation](../extensibility/creating-a-wpf-toolbox-control.md) ou [Windows Forms](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md). Vous pouvez ensuite distribuer votre contrôle à vos collègues ou le publier sur le web à l’aide du [programme d’installation de contrôles de boîte à outils](http://download.microsoft.com/download/8/3/6/836657BD-9CCB-4ED4-B9D2-FB769473B284/TCI_whitepaper.docx).
+ Vous pouvez créer un contrôle de boîte à outils personnalisé en Visual Basic ou Visual C#, et vous pouvez démarrer avec un modèle de projet basé sur [Windows Presentation Foundation](../extensibility/creating-a-wpf-toolbox-control.md) ou [Windows Forms](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md). Vous pouvez ensuite distribuer votre contrôle à vos collègues ou le publier sur le web à l’aide du [programme d’installation de contrôles de boîte à outils](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf).

@@ -12,43 +12,43 @@ caps.latest.revision: 36
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: fbf111dbf8297994994f10b9b867e03321268679
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bf749d1073faf4cf22febafce716af36b47c6484
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654873"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299306"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Définir un gestionnaire de mouvements sur un diagramme de modélisation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Dans Visual Studio,vous pouvez définir des commandes qui sont exécutées quand l’utilisateur double-clique sur des éléments ou les fait glisser sur un diagramme UML. Vous pouvez empaqueter ces extensions dans une extension d’intégration Visual Studio ([VSIX](http://go.microsoft.com/fwlink/?LinkId=160780)) et les distribuer à d’autres utilisateurs de Visual Studio.
+Dans Visual Studio,vous pouvez définir des commandes qui sont exécutées quand l’utilisateur double-clique sur des éléments ou les fait glisser sur un diagramme UML. Vous pouvez empaqueter ces extensions dans une extension d’intégration Visual Studio ([VSIX](https://go.microsoft.com/fwlink/?LinkId=160780)) et les distribuer à d’autres utilisateurs de Visual Studio.
 
  Si un comportement intégré existe déjà pour le type de diagramme et le type d’élément que vous souhaitez faire glisser, il se peut que vous ne puissiez pas effectuer d’ajouts à ce comportement ni le substituer.
 
-## <a name="requirements"></a>spécifications
+## <a name="requirements"></a>Configuration requise
  Consultez [Spécifications](../modeling/extend-uml-models-and-diagrams.md#Requirements).
 
- Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="creating-a-gesture-handler"></a>Création d’un gestionnaire de mouvements
  Pour définir un gestionnaire de mouvements pour un concepteur UML, vous devez créer une classe qui définit le comportement du gestionnaire de mouvements, puis incorporer cette classe dans une extension d’intégration Visual Studio (VSIX). Cette dernière joue le rôle d’un conteneur capable d’installer le gestionnaire. Deux autres méthodes permettent de définir un gestionnaire de mouvements :
 
-- **Créer un gestionnaire de mouvements dans son propre VSIX à l’aide d’un modèle de projet.** . Il s’agit de la méthode la plus rapide. Choisissez cette méthode si vous ne souhaitez pas combiner votre gestionnaire avec d’autres types d’extensions, telles que les extensions de validation, les éléments de boîte à outils personnalisés ou les commandes de menu.
+- **Créer un gestionnaire de mouvements dans son propre VSIX à l’aide d’un modèle de projet**. Il s’agit de l’approche la plus rapide. Choisissez cette méthode si vous ne souhaitez pas combiner votre gestionnaire avec d’autres types d’extensions, telles que les extensions de validation, les éléments de boîte à outils personnalisés ou les commandes de menu.
 
-- **Créer des gestionnaires de mouvements et des projets VSIX distincts.** . Choisissez cette méthode si vous souhaitez combiner plusieurs types d’extensions au sein d’un même VSIX. Par exemple, si votre gestionnaire de mouvements prévoit que le modèle observe des contraintes spécifiques, vous pouvez l’incorporer au même VSIX en tant que méthode de validation.
+- **Créer des gestionnaires de mouvements et des projets VSIX distincts**. Adoptez cette approche si vous souhaitez combiner plusieurs types d’extensions dans la même extension VSIX. Par exemple, si votre gestionnaire de mouvements prévoit que le modèle observe des contraintes spécifiques, vous pouvez l’incorporer au même VSIX en tant que méthode de validation.
 
 #### <a name="to-create-a-gesture-handler-in-its-own-vsix"></a>Pour créer un gestionnaire de mouvements dans son propre VSIX
 
-1. Dans la boîte de dialogue **Nouveau projet** , sous **Projets de modélisation**, cliquez sur **Extension de mouvement**.
+1. Dans la boîte de dialogue **Nouveau projet**, sous **Projets de modélisation**, cliquez sur **Gesture Extension**.
 
 2. Ouvrez le fichier **.cs** dans le nouveau projet et modifiez la classe `GestureExtension` pour implémenter votre gestionnaire de mouvements.
 
     Pour plus d’informations, consultez [Implémentation du gestionnaire de mouvements](#Implementing).
 
-3. Appuyez sur F5 pour tester le gestionnaire de mouvements. Pour plus d’informations, consultez [Exécution du gestionnaire de mouvements](#Executing).
+3. Appuyez sur F5 pour tester le gestionnaire de mouvements. Pour plus d'informations, consultez [Exécution du gestionnaire de mouvements](#Executing).
 
-4. Installez le gestionnaire de mouvements sur un autre ordinateur en copiant le fichier **bin \\ \* \\ \*. vsix** généré par votre projet. Pour plus d’informations, consultez [Installation et désinstallation d’une extension](#Installing).
+4. Installez le gestionnaire de mouvements sur un autre ordinateur en copiant le fichier **bin\\\*\\\*. vsix** généré par votre projet. Pour plus d'informations, consultez [Installation et désinstallation d'une extension](#Installing).
 
    Voici une autre procédure :
 
@@ -56,9 +56,9 @@ Dans Visual Studio,vous pouvez définir des commandes qui sont exécutées quand
 
 1. Créez un projet de bibliothèque de classes dans une nouvelle solution [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ou dans une solution existante.
 
-   1. Dans le menu **Fichier** , choisissez **Nouveau**, **Projet**.
+   1. Dans le menu **Fichier**, choisissez **Nouveau**, **Projet**.
 
-   2. Sous **Modèles installés**, développez **Visual C#** ou **Visual Basic**, puis dans la colonne du milieu, choisissez **Bibliothèque de classes**.
+   2. Sous **Modèles installés**, développez **Visual C#** ou **Visual Basic**, puis dans la colonne du milieu, choisissez **Bibliothèque de classes**.
 
 2. Ajoutez les références suivantes à votre projet.
 
@@ -74,9 +74,9 @@ Dans Visual Studio,vous pouvez définir des commandes qui sont exécutées quand
 
     `System.Windows.Forms`
 
-    `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer` : cette référence n'est utile que si vous étendez des diagrammes de couche. Pour plus d’informations, consultez [étendre des diagrammes de couche](../modeling/extend-layer-diagrams.md).
+    `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer` : cette référence n’est utile que si vous étendez des diagrammes de couche. Pour plus d’informations, consultez [étendre des diagrammes de couche](../modeling/extend-layer-diagrams.md).
 
-3. Ajouter un fichier de classe au projet et définissez le code suivant comme contenu.
+3. Ajouter un fichier de classe au projet et affecter le code suivant comme contenu.
 
    > [!NOTE]
    > Modifiez l’espace de noms et le nom de la classe en fonction de vos besoins.
@@ -208,9 +208,9 @@ Dans Visual Studio,vous pouvez définir des commandes qui sont exécutées quand
 
 2. Créez un projet VSIX, sauf si votre solution en comporte déjà un.
 
-    1. Dans l’ **Explorateur de solutions**, dans le menu contextuel de la solution, choisissez **Ajouter**, puis **Nouveau projet**.
+    1. Dans l'**Explorateur de solutions**, dans le menu contextuel de la solution, choisissez **Ajouter**, puis **Nouveau projet**.
 
-    2. Sous **Modèles installés**, développez **Visual C#** ou **Visual Basic**, puis sélectionnez **Extensibilité**. Dans la colonne du milieu, choisissez **Projet VSIX**.
+    2. Sous **Modèles installés**, développez **Visual C#** ou **Visual Basic**, puis sélectionnez **Extensibilité**. Dans la colonne du milieu, choisissez **Projet VSIX**.
 
 3. Définissez le projet VSIX comme projet de démarrage de la solution.
 
@@ -220,7 +220,7 @@ Dans Visual Studio,vous pouvez définir des commandes qui sont exécutées quand
 
     1. Sous l’onglet **Métadonnées** , nommez le VSIX.
 
-    2. Sous l’onglet **Cibles d’installation** , définissez les versions de Visual Studio comme cibles.
+    2. Sous l'onglet **Cibles d'installation**, définissez les versions de Visual Studio comme cibles.
 
     3. Sous l’onglet **Composants** , choisissez **Nouveau**puis, dans la boîte de dialogue, définissez :
 
@@ -239,7 +239,7 @@ Dans Visual Studio,vous pouvez définir des commandes qui sont exécutées quand
 
     Une instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] démarre.
 
-    **Dépannage**: si une nouvelle instance de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ne démarre pas :
+    **Dépannage** : si une nouvelle instance de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ne démarre pas :
 
    - Si vous avez plusieurs projets, vérifiez que le projet VSIX est défini comme projet de démarrage de la solution.
 
@@ -253,11 +253,11 @@ Dans Visual Studio,vous pouvez définir des commandes qui sont exécutées quand
 
 4. Faites glisser un élément de l’Explorateur UML sur le diagramme. Votre gestionnaire de glisser-déplacer doit être appelé.
 
-   **Dépannage**: si le gestionnaire de mouvements ne fonctionne pas, vérifiez ce qui suit :
+   **Dépannage** : si le gestionnaire de mouvements ne fonctionne pas, vérifiez ce qui suit :
 
 - Le projet de gestionnaire de mouvements est répertorié en tant que composant MEF sous l’onglet **Composants** de **source.extensions.manifest** dans le projet VSIX.
 
-- Les paramètres de tous les attributs `Import` et `Export` sont valides.
+- les paramètres de tous les attributs `Import` et `Export` sont valides.
 
 - La méthode `CanDragDrop` ne retourne pas la valeur `false`.
 
@@ -274,15 +274,15 @@ Dans Visual Studio,vous pouvez définir des commandes qui sont exécutées quand
 |-|-|
 |`bool CanDragDrop (ShapeElement target, DiagramDragEventArgs dragEvent)`|Retournez la valeur `true` pour autoriser le déplacement de l’élément source référencé dans `dragEvent` vers cette cible.<br /><br /> Cette méthode ne doit pas apporter de modifications au modèle. Elle doit fonctionner rapidement, car elle permet de déterminer l’état de la flèche à mesure que l’utilisateur déplace la souris.|
 |`void OnDragDrop (ShapeElement target, DiagramDragEventArgs dragEvent)`|Mettez à jour le modèle basé sur l’objet source référencé dans `dragEvent`et la cible.<br /><br /> Appelée quand l’utilisateur relâche le bouton de la souris après avoir effectué un glissement.|
-|`void OnDoubleClick (ShapeElement target, DiagramPointEventArgs pointEvent)`|`target` est la forme sur laquelle l'utilisateur a double-cliqué.|
+|`void OnDoubleClick (ShapeElement target, DiagramPointEventArgs pointEvent)`|`target` est la forme sur laquelle l’utilisateur a double-cliqué.|
 
  Vous pouvez écrire des gestionnaires qui peuvent accepter non seulement des éléments UML, mais également une vaste gamme d’autres éléments, comme des fichiers, des nœuds dans un affichage de classes .NET, etc. L’utilisateur peut faire glisser l’un de ces éléments dans un diagramme UML, à condition que vous écriviez une méthode `OnDragDrop` capable de décoder la forme sérialisée des éléments. Les méthodes de décodage varient d’un type d’élément à l’autre.
 
  Les paramètres de ces méthodes sont les suivants :
 
-- `ShapeElement target`., Forme ou diagramme sur lequel l’utilisateur a fait glisser quelque chose.
+- `ShapeElement target` Forme ou diagramme sur lequel l’utilisateur a fait glisser quelque chose.
 
-    `ShapeElement` est une classe dans l'implémentation qui est sous-jacente aux outils de modélisation UML. Pour réduire le risque de mettre le modèle UML et les diagrammes dans un état incohérent, nous vous recommandons de ne pas utiliser directement les méthodes de cette classe. Au lieu de cela, encapsulez l’élément dans un `IShape`, puis utilisez les méthodes décrites dans [afficher un modèle UML sur des diagrammes](../modeling/display-a-uml-model-on-diagrams.md).
+    `ShapeElement` est une classe dans l’implémentation qui est sous-jacente aux outils de modélisation UML. Pour réduire le risque de mettre le modèle UML et les diagrammes dans un état incohérent, nous vous recommandons de ne pas utiliser directement les méthodes de cette classe. Au lieu de cela, encapsulez l’élément dans un `IShape`, puis utilisez les méthodes décrites dans [afficher un modèle UML sur des diagrammes](../modeling/display-a-uml-model-on-diagrams.md).
 
   - Pour obtenir un `IShape`:
 
@@ -311,7 +311,7 @@ Dans Visual Studio,vous pouvez définir des commandes qui sont exécutées quand
       target.Store.GetService(typeof(EnvDTE.DTE)) as EnvDTE.DTE
       ```
 
-- `DiagramDragEventArgs eventArgs`., Ce paramètre achemine la forme sérialisée de l’objet source d’une opération de glissement :
+- `DiagramDragEventArgs eventArgs` Ce paramètre achemine la forme sérialisée de l’objet source d’une opération de glissement :
 
     ```
     System.Windows.Forms.IDataObject data = eventArgs.Data;
@@ -355,23 +355,23 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
 
 1. Sur votre ordinateur, recherchez le fichier **.vsix** généré par votre projet VSIX.
 
-    1. Dans l’ **Explorateur de solutions**, dans le menu contextuel du projet VSIX, choisissez **Ouvrir le dossier dans l’Explorateur Windows**.
+    1. Dans l'**Explorateur de solutions**, dans le menu contextuel du projet VSIX, choisissez **Ouvrir le dossier dans l'Explorateur Windows**.
 
-    2. Recherchez le fichier **bin \\ \* \\** _YourProject_ **. vsix**
+    2. Recherchez le fichier **bin\\\*\\** _YourProject_ **. vsix**
 
-2. Copiez le fichier **.vsix** sur l’ordinateur cible sur lequel vous souhaitez installer l’extension. Il peut s’agir de votre propre ordinateur ou d’un autre.
+2. Copiez le fichier **.vsix** sur l’ordinateur cible sur lequel vous souhaitez installer l’extension. Il peut s’agir de votre propre ordinateur ou d’un autre ordinateur.
 
      L’ordinateur cible doit disposer de l’une des éditions de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] que vous avez spécifiées dans **source.extension.vsixmanifest**.
 
 3. Sur l’ordinateur cible, ouvrez le fichier **.vsix** .
 
-     Le**Programme d’installation des extensions Visual Studio** s’ouvre et installe l’extension.
+     Le **Programme d’installation des extensions Visual Studio** s’ouvre et installe l’extension.
 
 4. Démarrez ou redémarrez [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].
 
 #### <a name="to-uninstall-an-extension"></a>Pour désinstaller une extension
 
-1. Dans le menu **Outils** , choisissez **Extensions et mises à jour**.
+1. Dans le menu **Outils**, choisissez **Extensions et mises à jour**.
 
 2. Développez **Extensions installées**.
 
@@ -379,7 +379,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
 
    Exceptionnellement, une extension défaillante ne parvient pas à se charger et crée un rapport dans la fenêtre d’erreur, mais ne s’affiche pas dans le Gestionnaire d’extensions. Dans ce cas, vous pouvez supprimer l’extension en supprimant le fichier de l’emplacement suivant :
 
-   *% LocalAppData%* **\Local\Microsoft\VisualStudio \\ [version] \Extensions**
+   *% LocalAppData%* **\Local\Microsoft\VisualStudio\\[version] \Extensions**
 
 ## <a name="DragExample"></a> Exemple
  L’exemple suivant montre comment créer des lignes de vie dans un diagramme de séquence, en fonction des parties et des ports d’un composant ayant fait l’objet d’un glissement à partir d’un diagramme de composant.

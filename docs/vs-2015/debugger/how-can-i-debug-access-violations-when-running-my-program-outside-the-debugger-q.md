@@ -20,12 +20,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7cfdf356d21558f2024cb83e00bdfc930284b1d8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ce5b21f92eecf2e8929c142bc1ee32e20d386335
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68164107"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299251"
 ---
 # <a name="how-can-i-debug-access-violations-when-running-my-program-outside-the-debugger"></a>Comment puis-je déboguer les violations d'accès lorsque mon programme fonctionne hors du débogueur ?
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Description du problème
 ## <a name="solution"></a>Solution  
  Paramétrez l’option [Débogage juste-à-temps](../debugger/just-in-time-debugging-in-visual-studio.md) et exécutez votre programme de façon autonome jusqu’à ce que la violation d’accès se produise. Dans la boîte de dialogue **Violation d’accès**, vous pouvez ensuite cliquer sur **Annuler** afin de démarrer le débogueur.  
   
- Consultez également, dans la Base de connaissances, l'article Q133174, « How to Locate Where a General Protection (GP) Fault Occurs ». Vous trouverez les articles de la Base de connaissances sur le CD MSDN Library ou en effectuant une recherche [ http://support.microsoft.com/ ](http://support.microsoft.com/).  
+ Consultez également, dans la Base de connaissances, l'article Q133174, « How to Locate Where a General Protection (GP) Fault Occurs ». Vous pouvez trouver des Articles de la base de connaissances sur le CD-ROM MSDN Library ou en effectuant des recherches [http://support.microsoft.com/](https://support.microsoft.com/).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Questions fréquentes (FAQ) sur le débogage du code natif](../debugger/debugging-native-code-faqs.md)   

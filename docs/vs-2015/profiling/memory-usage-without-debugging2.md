@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8fc60ff83113193f854c3264b7384738dea64f03
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 0ab8aaff0ddf793fe64dd3695adc58c281290f98
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65674372"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295698"
 ---
 # <a name="memory-usage-without-debugging"></a>Utilisation de la mémoire sans débogage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Vous pouvez utiliser l’outil **Utilisation de la mémoire** sans débogage pou
   
  Quand vous démarrez une session de diagnostic, votre application démarre et la page **Outils de diagnostic** affiche un graphique chronologique de l’utilisation de la mémoire par votre application.  
   
- ![Page de vue d’ensemble de l’utilisation de mémoire](../profiling/media/memuse-reportoverview.png "MEMUSE__ReportOverview")  
+ ![Page vue d’ensemble de l’utilisation de la mémoire](../profiling/media/memuse-reportoverview.png "MEMUSE__ReportOverview")  
   
  Le graphique chronologique montre les fluctuations de la mémoire de votre application pendant son exécution. Les pointes du graphique indiquent généralement que du code collecte ou crée des données, puis les supprime une fois le traitement terminé. Les pointes prononcées indiquent des zones que vous pourriez optimiser. Une hausse de la consommation de mémoire sans retour est plus préoccupante, car elle peut indiquer une utilisation inefficace de la mémoire ou une fuite de mémoire.  
   
@@ -66,7 +66,7 @@ Vous pouvez utiliser l’outil **Utilisation de la mémoire** sans débogage pou
 ## <a name="BKMK_Memory_Usage_overview_page"></a> Page de vue d’ensemble de l’utilisation de la mémoire  
  Une fois que vous avez arrêté la collection des données, l’outil Utilisation de la mémoire arrête l’application et affiche le rapport de vue d’ensemble.  
   
- ![Page de vue d’ensemble de l’utilisation de mémoire](../profiling/media/memuse-reportoverview.png "MEMUSE__ReportOverview")  
+ ![Page vue d’ensemble de l’utilisation de la mémoire](../profiling/media/memuse-reportoverview.png "MEMUSE__ReportOverview")  
   
 ### <a name="BKMK_Memory_Usage_snapshot_views"></a> Vues d’instantanés d’utilisation de la mémoire  
  Vous utilisez les vues d'instantanés pour ouvrir des rapports détaillés dans de nouvelles fenêtres Visual Studio. Il existe deux types de vues d'instantanés :  
@@ -75,19 +75,19 @@ Vous pouvez utiliser l’outil **Utilisation de la mémoire** sans débogage pou
   
 - Un [rapport de comparaison d’instantanés](../profiling/memory-usage-without-debugging2.md#BKMK_Snapshot_difference__diff__reports) compare les types et les instances de deux instantanés.  
   
-  ![Liens de la vue Instantané](../profiling/media/memuse-snapshotview-numbered.png "MEMUSE__SnapshotView_Numbered")  
+  ![Liens de la vue d’instantané](../profiling/media/memuse-snapshotview-numbered.png "MEMUSE__SnapshotView_Numbered")  
   
   Les éléments numérotés de l'image de la vue d'instantané sont des liens ouvrant les vues de rapport d'utilisation de la mémoire.  
   
 |||  
 |-|-|  
-|![Étape 1](../profiling/media/procguid-1.png "ProcGuid_1")|Le texte du lien indique le nombre total d'octets dans la mémoire au moment où l'instantané a été pris.<br /><br /> Choisissez ce lien pour afficher un rapport détaillé de l'instantané, trié selon la taille totale des instances du type.|  
-|![Étape 2](../profiling/media/procguid-2.png "ProcGuid_2")|Le texte du lien indique le nombre total d'objets dans la mémoire au moment où l'instantané a été pris.<br /><br /> Choisissez ce lien pour afficher un rapport détaillé de l'instantané, trié selon le nombre total d'instances des types.|  
-|![Étape 3](../profiling/media/procguid-3.png "ProcGuid_3")|Le texte du lien indique la différence entre la taille totale des objets dans la mémoire au moment de l'instantané et la taille totale de l'instantané précédent.<br /><br /> Le texte du lien est un nombre positif quand la taille de la mémoire de cet instantané est supérieure à celle du précédent, et un nombre négatif quand la taille est inférieure. Le texte du lien **Planning de référence** indique que cet instantané est le premier de la session de diagnostic. **Aucune différence** indique que la différence est nulle.<br /><br /> Choisissez ce lien pour afficher un rapport différentiel des instantanés, trié selon la différence de taille totale des instances des types.|  
-|![Étape 4](../profiling/media/procguid-4.png "ProcGuid_4")|Le texte du lien indique la différence entre le nombre total d'objets mémoire dans cet instantané et le nombre d'objets de l'instantané précédent.<br /><br /> Choisissez ce lien pour afficher un rapport différentiel des instantanés, trié selon le nombre total d'instances des types.|  
+|![Étape 1](../profiling/media/procguid-1.png "ProcGuid_1")|Le texte du lien indique le nombre total d'octets dans la mémoire au moment où l'instantané a été pris.<br /><br /> Choisissez ce lien pour afficher un rapport détaillé de l'instantané, trié selon la taille totale des instances du type.|  
+|![Étape 2](../profiling/media/procguid-2.png "ProcGuid_2")|Le texte du lien indique le nombre total d'objets dans la mémoire au moment où l'instantané a été pris.<br /><br /> Choisissez ce lien pour afficher un rapport détaillé de l'instantané, trié selon le nombre total d'instances des types.|  
+|![Étape 3](../profiling/media/procguid-3.png "ProcGuid_3")|Le texte du lien indique la différence entre la taille totale des objets dans la mémoire au moment de l'instantané et la taille totale de l'instantané précédent.<br /><br /> Le texte du lien est un nombre positif quand la taille de la mémoire de cet instantané est supérieure à celle du précédent, et un nombre négatif quand la taille est inférieure. Le texte du lien **Planning de référence** indique que cet instantané est le premier de la session de diagnostic. **Aucune différence** indique que la différence est nulle.<br /><br /> Choisissez ce lien pour afficher un rapport différentiel des instantanés, trié selon la différence de taille totale des instances des types.|  
+|![Étape 4](../profiling/media/procguid-4.png "ProcGuid_4")|Le texte du lien indique la différence entre le nombre total d'objets mémoire dans cet instantané et le nombre d'objets de l'instantané précédent.<br /><br /> Choisissez ce lien pour afficher un rapport différentiel des instantanés, trié selon le nombre total d'instances des types.|  
   
 ## <a name="BKMK_Snapshot_reports"></a> Rapports d’instantané  
- ![Rapport d’instantané d’utilisation de la mémoire](../profiling/media/memuse-snapshotreport-all.png "MEMUSE_SnapshotReport_All")  
+ ![Rapport d’instantané de l’utilisation de la mémoire](../profiling/media/memuse-snapshotreport-all.png "MEMUSE_SnapshotReport_All")  
   
 ### <a name="BKMK_Snapshot_report_trees"></a> Arborescences de rapport d’instantané  
   
@@ -110,7 +110,7 @@ Vous pouvez utiliser l’outil **Utilisation de la mémoire** sans débogage pou
 ### <a name="BKMK_Report_tree_filters_"></a> Filtres des arborescences de rapport  
  La plupart des applications contiennent un très grand nombre de types, dont une majorité n'est pas très utile au développeur d'application. L’outil **Utilisation de la mémoire** définit deux filtres permettant de masquer la plupart de ces types dans les arborescences **Tas managé** et **Chemins d’accès à la racine**. Vous pouvez également filtrer une arborescence par nom de type.  
   
- ![Options de tri et de filtre](../profiling/media/memuse-sortandfilter.png "MEMUSE_SortAndFilter")  
+ ![Options de tri et de filtrage](../profiling/media/memuse-sortandfilter.png "MEMUSE_SortAndFilter")  
   
 #### <a name="BKMK_Filter"></a> Filtre  
  Entrez une chaîne dans la zone **Filtre** pour restreindre l’affichage des arborescences aux types qui contiennent le texte spécifié. Le filtre n'est pas sensible à la casse et reconnaît la chaîne spécifiée dans toutes les parties des noms de type.  
@@ -124,16 +124,16 @@ Vous pouvez utiliser l’outil **Utilisation de la mémoire** sans débogage pou
 ## <a name="BKMK_Snapshot_details_reports"></a> Rapports détaillés d’instantané  
  Vous utilisez un rapport détaillé d'instantané pour vous concentrer sur un seul instantané d'une session de diagnostic. Pour ouvrir un rapport détaillé, choisissez l'un des deux liens dans une vue d'instantané, comme indiqué dans l'image suivante. Les deux liens ouvrent le même rapport. La seule différence concerne l’ordre de tri de départ de l’arborescence **Tas managé** dans le rapport. Dans les deux cas, vous pouvez modifier l'ordre de tri après ouverture du rapport.  
   
- ![Liens vers le rapport d’instantané dans une vue Instantané](../profiling/media/memuse-snapshotview-snapshotdetailslinks.png "MEMUSE_SnapshotView_SnapshotDetailsLinks")  
+ ![Liens vers le rapport d’instantané dans une vue d’instantané](../profiling/media/memuse-snapshotview-snapshotdetailslinks.png "MEMUSE_SnapshotView_SnapshotDetailsLinks")  
   
-- Le lien **Mo** trie le rapport en fonction de la colonne **Taille inclusive (octets)**.  
+- Le lien **Mo** trie le rapport en fonction de la colonne **Taille inclusive (octets)** .  
   
 - Le lien **objets** trie le rapport en fonction de la colonne **Nombre**.  
   
 ### <a name="BKMK_Managed_Heap_tree__Snapshot_details_"></a> Arborescence Tas managé (détails de l’instantané)  
  L’arborescence **Tas managé** répertorie les types d’objets contenus dans la mémoire. Vous pouvez développer le nom d’un type pour afficher les dix instances du type les plus volumineuses, triées par taille. La sélection d’un type ou d’une instance affiche les arborescences **Chemins d’accès à la racine** et **Objets référencés** pour l’élément sélectionné.  
   
- ![Arborescence Tas managé](../profiling/media/memuse-snapshotdetails-managedheaptree.png "MEMUSE__SnapshotDetails_ManagedHeapTree")  
+ ![Arborescence du tas managé](../profiling/media/memuse-snapshotdetails-managedheaptree.png "MEMUSE__SnapshotDetails_ManagedHeapTree")  
   
 |||  
 |-|-|  
@@ -145,14 +145,14 @@ Vous pouvez utiliser l’outil **Utilisation de la mémoire** sans débogage pou
 ### <a name="BKMK_Paths_to_Root_tree__Snapshot_details_"></a> Arborescence Chemins d’accès à la racine (détails de l’instantané)  
  L’arborescence **Chemins d’accès à la racine** indique la chaîne d’objets faisant référence au type ou à l’instance. Le récupérateur de mémoire .NET Framework nettoie la mémoire d’un objet uniquement quand toutes les références à cet objet ont été libérées.  
   
- ![Arborescence Chemins d’accès à la racine pour les types](../profiling/media/memuse-snapshotdetails-type-pathstoroottree.png "MEMUSE_SnapshotDetails_Type_PathsToRootTree")  
+ ![Chemins d’accès à l’arborescence racine pour les types](../profiling/media/memuse-snapshotdetails-type-pathstoroottree.png "MEMUSE_SnapshotDetails_Type_PathsToRootTree")  
   
  Quand vous affichez un type dans l’arborescence **Chemins d’accès à la racine**, le nombre d’objets des types qui comportent des références à ce type est affiché dans la colonne **Nombre de références**. La colonne n'apparaît pas quand vous analysez une instance.  
   
 ### <a name="BKMK_Referenced_Objects_tree__Snapshot_details_"></a> Arborescence Objets référencés (détails de l’instantané)  
  L’arborescence **Objets référencés** indique les objets référencés par le type ou l’instance sélectionnés.  
   
- ![Arborescence des objets référencés pour les instances](../profiling/media/memuse-snapshotdetails-referencedobjects-instance.png "MEMUSE_SnapshotDetails_ReferencedObjects_Instance")  
+ ![Arborescence des objets référencée pour les instances](../profiling/media/memuse-snapshotdetails-referencedobjects-instance.png "MEMUSE_SnapshotDetails_ReferencedObjects_Instance")  
   
 |||  
 |-|-|  
@@ -163,16 +163,16 @@ Vous pouvez utiliser l’outil **Utilisation de la mémoire** sans débogage pou
 ## <a name="BKMK_Snapshot_difference__diff__reports"></a> Rapports différentiels d’instantanés  
  Un rapport différentiel d'instantanés indique les modifications entre un instantané principal et l'instantané qui a été pris immédiatement avant. Pour ouvrir un rapport différentiel, choisissez l'un des deux liens dans une vue d'instantané, comme indiqué dans l'image suivante. Les deux liens ouvrent le même rapport. La seule différence concerne l’ordre de tri de départ de l’arborescence **Tas managé** dans le rapport. Vous pouvez modifier l'ordre de tri après ouverture du rapport.  
   
- ![Liens vers le rapport de différences dans une vue Instantané](../profiling/media/memuse-snapshotview-snapshotdifflinks.png "MEMUSE_SnapshotView_SnapshotDetailsLinks")  
+ ![Liens vers le rapport de différences dans une vue d’instantané](../profiling/media/memuse-snapshotview-snapshotdifflinks.png "MEMUSE_SnapshotView_SnapshotDiffLinks")  
   
-- Le lien **Mo** trie le rapport en fonction de la colonne **Taille inclusive (octets)**.  
+- Le lien **Mo** trie le rapport en fonction de la colonne **Taille inclusive (octets)** .  
   
 - Le lien **objets** trie le rapport en fonction de la colonne **Nombre**.  
   
 ### <a name="BKMK_Managed_Heap_tree__Snapshot_diff_"></a> Arborescence Tas managé (comparaison d’instantanés)  
  L’arborescence **Tas managé** répertorie les types d’objets contenus dans la mémoire. Vous pouvez développer le nom d’un type pour afficher les dix instances du type les plus volumineuses, triées par taille. La sélection d’un type ou d’une instance affiche les arborescences **Chemins d’accès à la racine** et **Objets référencés** pour l’élément sélectionné.  
   
- ![Arborescence Tas managé pour un type dans le rapport différentiel](../profiling/media/memuse-snapshotdiff-type-heap.png "MEMUSE_SnapshotDiff_Type_Heap")  
+ ![Arborescence tas managé pour un type dans le rapport de différences](../profiling/media/memuse-snapshotdiff-type-heap.png "MEMUSE_SnapshotDiff_Type_Heap")  
   
  Notez que les colonnes **Nombre**, **Taille (octets)** et **Taille inclusive (octets)** ont été réduites dans l’image.  
   
@@ -189,12 +189,12 @@ Vous pouvez utiliser l’outil **Utilisation de la mémoire** sans débogage pou
 ### <a name="BKMK_Paths_to_Root_tree__Snapshot_diff_"></a> Arborescence Chemins d’accès à la racine (comparaison d’instantanés)  
  L’arborescence **Chemins d’accès à la racine** indique la chaîne d’objets faisant référence au type ou à l’instance. Le récupérateur de mémoire .NET Framework nettoie la mémoire d’un objet uniquement quand toutes les références à cet objet ont été libérées.  
   
- ![Arborescence Chemins d’accès à la racine pour les instances dans une vue de comparaison](../profiling/media/memuse-snapshotdiff-pathstoroot-instance-all.png "MEMUSE_SnapshotDiff_PathsToRoot_Instance_All")  
+ ![Arborescence chemins d’accès à la racine pour les instances dans une vue diff](../profiling/media/memuse-snapshotdiff-pathstoroot-instance-all.png "MEMUSE_SnapshotDiff_PathsToRoot_Instance_All")  
   
 ### <a name="BKMK_Referenced_Objects_tree__Snapshot_diff_"></a> Arborescence Objets référencés (comparaison d’instantanés)  
  L’arborescence **Objets référencés** indique les objets référencés par le type ou l’instance principaux.  
   
- ![Arborescence des objets référencés pour les instances](../profiling/media/memuse-snapshotdetails-referencedobjects-instance.png "MEMUSE_SnapshotDetails_ReferencedObjects_Instance")  
+ ![Arborescence des objets référencée pour les instances](../profiling/media/memuse-snapshotdetails-referencedobjects-instance.png "MEMUSE_SnapshotDetails_ReferencedObjects_Instance")  
   
 |||  
 |-|-|  
@@ -207,4 +207,4 @@ Vous pouvez utiliser l’outil **Utilisation de la mémoire** sans débogage pou
  [Analyser les performances des applications](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)   
  [Exécuter les outils de performance et diagnostic](https://msdn.microsoft.com/library/788279d8-f56b-40a0-9bef-facc3dfba471)   
  [Meilleures pratiques pour les performances des applications du Windows Store en C++, C# et Visual Basic](https://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
- [Diagnostic des problèmes de mémoire avec le nouvel outil Utilisation de la mémoire de Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=394706)
+ [Diagnostic des problèmes de mémoire avec le nouvel outil Utilisation de la mémoire de Visual Studio](https://go.microsoft.com/fwlink/p/?LinkId=394706)

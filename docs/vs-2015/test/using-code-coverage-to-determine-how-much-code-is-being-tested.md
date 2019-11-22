@@ -10,12 +10,12 @@ ms.assetid: 800fc739-acd2-4242-84cb-1d83b4d82cf9
 caps.latest.revision: 38
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ee281e2cabcbce4f950188465163769caae7b2bc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8c7ec729c81f11096a55e87cea528764e500b535
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657242"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297966"
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>Utilisation de la couverture du code pour déterminer la quantité de code testé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Pour déterminer la proportion de code de votre projet qui sera réellement test
 
  ![Résultats de couverture du code avec coloration](../test/media/codecoverage1.png "CodeCoverage1")
 
- **Prérequis**
+ **Conditions requises**
 
 - Visual Studio Enterprise
 
@@ -96,7 +96,7 @@ Pour déterminer la proportion de code de votre projet qui sera réellement test
 ## <a name="excluding-elements-from-the-code-coverage-results"></a>Exclusion d'éléments des résultats de la couverture du code
  Vous pouvez exclure des éléments spécifiques dans votre code à partir des notes de couverture, par exemple si le code est généré à partir d'un modèle de texte. Ajoutez l'attribut `System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage` aux éléments de code suivants : classe, structure, méthode, propriété, accesseur Set ou accesseur Get de propriété, événement. Notez que l'exclusion d'une classe n'exclut pas ses classes dérivées.
 
- Exemple :
+ Par exemple :
 
 ```csharp
 
@@ -281,7 +281,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 ## <a name="external-resources"></a>Ressources externes
 
 ### <a name="guidance"></a>Conseils
- [Test de la livraison continue avec Visual Studio 2012 - Chapitre 2 : Tests unitaires : tester l’intérieur](http://go.microsoft.com/fwlink/?LinkID=255188)
+ [Test de la livraison continue avec Visual Studio 2012 - Chapitre 2 : Tests unitaires : tester l’intérieur](https://go.microsoft.com/fwlink/?LinkID=255188)
 
 ## <a name="see-also"></a>Voir aussi
  [Personnalisation de l’analyse de couverture du code](../test/customizing-code-coverage-analysis.md) [résolution des problèmes](../test/troubleshooting-code-coverage.md) [unitaires de](../test/unit-test-your-code.md) couverture du code

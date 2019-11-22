@@ -1,5 +1,5 @@
 ---
-title: 'DA0504 : jeu de travail maximal en octets pour le processus en cours de profilage | Microsoft Docs'
+title: 'DA0504 : Jeu de travail maximal en octets pour le processus en cours de profilage | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,20 +13,20 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a990b428cfa03722ee5e02884344d96844825ee8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 29cc7317cab2c4984a4cb0485475ff0960315cdc
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68157164"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74291507"
 ---
-# <a name="da0504-maximum-working-set-in-bytes-for-the-process-being-profiled"></a>DA0504 : jeu de travail maximal en octets pour le processus en cours de profilage
+# <a name="da0504-maximum-working-set-in-bytes-for-the-process-being-profiled"></a>DA0504 : Jeu de travail maximal en octets pour le processus en cours de profilage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ID de règle | DA0504 |  
 | Catégorie | Gestion des ressources |  
-| Méthode de profilage | Tous les |  
-| Message | À titre d’information uniquement. Le compteur Jeu de travail de processus mesure l’utilisation de la mémoire physique par le processus en cours de profilage. La valeur signalée correspond à la valeur maximale observée dans l’ensemble des intervalles de mesure.|  
+| Méthode de profilage | Tout |  
+| Message | Ces informations ont été collectées à titre d’information uniquement. Le compteur Jeu de travail de processus mesure l’utilisation de la mémoire physique par le processus en cours de profilage. La valeur signalée correspond à la valeur maximale observée dans l’ensemble des intervalles de mesure.|  
 | Type de règle | Informations |  
   
  Lorsque vous effectuez un profilage à l’aide de la méthode d’échantillonnage, de mémoire .NET ou de conflit des ressources, vous devez collecter au moins 10 échantillons pour déclencher cette règle.  
@@ -36,7 +36,7 @@ ID de règle | DA0504 |
   
  La valeur signalée comprend les pages résidant dans les segments de mémoire partagée que le processus a référencées. Les DLL partagées que le processus référence sont incluses dans les segments de mémoire partagée qui sont comptabilisés. La valeur du jeu de travail du processus peut être supérieure à la quantité de mémoire virtuelle que le processus a allouée, en raison des segments de mémoire partagée.  
   
- La taille du jeu de travail du processus correspond à la mémoire virtuelle que le processus utilise activement. Elle est également affectée par la quantité de mémoire physique (ou RAM) disponible pour exécuter l’application, et par les conflits entre cette mémoire physique et d’autres processus en cours d’exécution. Pour plus d’informations sur les jeux de travail de processus, consultez [Jeu de travail](http://go.microsoft.com/fwlink/?LinkId=177830) dans la documentation MSDN relative à la gestion de la mémoire dans Windows.  
+ La taille du jeu de travail du processus correspond à la mémoire virtuelle que le processus utilise activement. Elle est également affectée par la quantité de mémoire physique (ou RAM) disponible pour exécuter l’application, et par les conflits entre cette mémoire physique et d’autres processus en cours d’exécution. Pour plus d’informations sur les jeux de travail de processus, consultez [Jeu de travail](https://go.microsoft.com/fwlink/?LinkId=177830) dans la documentation MSDN relative à la gestion de la mémoire dans Windows.  
   
 ## <a name="how-to-use-rule-data"></a>Comment utiliser des données de règle  
  La règle rassemble ces données de mesure à partir de la fonctionnalité d’analyse des performances de Windows et les fournit dans un but informatif. Utilisez ces données pour comparer les performances des différentes versions du programme ou pour comprendre les performances de l’application dans différents scénarios de test.  

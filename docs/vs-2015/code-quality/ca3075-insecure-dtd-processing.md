@@ -8,12 +8,12 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 7cf9da2f295d94ac68c74039458f4cdbfda3ae5c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2ce5390ce8d649ab2c57eccde34506d6831b8193
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661622"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300973"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075 : traitement DTD non sécurisé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,14 +22,14 @@ ms.locfileid: "72661622"
 |-|-|
 |TypeName|InsecureDTDProcessing|
 |CheckId|CA3075|
-|Category|Microsoft.Security|
+|Catégorie|Microsoft.Security|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
  Si vous utilisez des instances de <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> non sécurisées ou référencez des sources d’entités externes, l’analyseur peut accepter une entrée non fiable et divulguer des informations sensibles à des personnes malveillantes.
 
 ## <a name="rule-description"></a>Description de la règle
- Une [définition de type de document (DTD)](https://msdn.microsoft.com/library/aa468547.aspx) est l’une des deux façons pour un analyseur XML de déterminer la validité d’un document, comme défini par la recommandation du  [World Wide Web Consortium (W3C) sur le langage XML (Extensible Markup Language) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Cette règle recherche les propriétés et instances où les données non fiables sont acceptées pour informer les développeurs de menaces de [Information Disclosure](https://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) éventuelles, qui peuvent entraîner des attaques [par déni de service](https://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) . Cette règle se déclenche quand :
+ Une [définition de type de document (DTD)](https://msdn.microsoft.com/library/aa468547.aspx) est l’une des deux façons pour un analyseur XML de déterminer la validité d’un document, comme défini par la recommandation du  [World Wide Web Consortium (W3C) sur le langage XML (Extensible Markup Language) 1.0](https://www.w3.org/TR/2008/REC-xml-20081126/). Cette règle recherche les propriétés et instances où les données non fiables sont acceptées pour informer les développeurs de menaces de [Information Disclosure](https://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) éventuelles, qui peuvent entraîner des attaques [par déni de service](https://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) . Cette règle se déclenche quand :
 
 - DtdProcessing est activé sur l’instance de <xref:System.Xml.XmlReader> , ce qui résout les entités XML externes à l’aide de <xref:System.Xml.XmlUrlResolver>.
 
@@ -39,7 +39,7 @@ ms.locfileid: "72661622"
 
 - L’entrée non fiable est traitée avec <xref:System.Xml.XmlResolver> au lieu de <xref:System.Xml.XmlSecureResolver> .
 
-- XmlReader. <xref:System.Xml.XmlReader.Create%2A> la méthode est appelée avec une instance de <xref:System.Xml.XmlReaderSettings> non sécurisée ou sans instance.
+- XmlReader.<xref:System.Xml.XmlReader.Create%2A> la méthode est appelée avec une instance de <xref:System.Xml.XmlReaderSettings> non sécurisée ou sans instance.
 
 - <xref:System.Xml.XmlReader> est créé avec des valeurs ou des paramètres par défaut non sécurisés.
 
@@ -49,15 +49,15 @@ ms.locfileid: "72661622"
 
 - Interceptez et traitez toutes les exceptions XmlTextReader correctement pour éviter la divulgation d’informations de chemin.
 
-- Utilisez la  <xref:System.Xml.XmlSecureResolver> pour restreindre les ressources auxquelles XmlTextReader peut accéder.
+- Utilisez la <xref:System.Xml.XmlSecureResolver> pour restreindre les ressources auxquelles XmlTextReader peut accéder.
 
-- N’autorisez pas l'  <xref:System.Xml.XmlReader> à ouvrir des ressources externes en affectant à la propriété <xref:System.Xml.XmlResolver> la **valeur null**.
+- N’autorisez pas l' <xref:System.Xml.XmlReader> à ouvrir des ressources externes en affectant à la propriété <xref:System.Xml.XmlResolver> la **valeur null**.
 
 - Vérifiez que la propriété <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A> de <xref:System.Data.DataViewManager> est affectée depuis une source fiable.
 
   .NET 3.5 et versions antérieures
 
-- Désactivez le traitement DTD si vous utilisez des sources non fiables en affectant à la propriété  <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> la **valeur true** .
+- Désactivez le traitement DTD si vous utilisez des sources non fiables en affectant à la propriété <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> la **valeur true** .
 
 - La classe XmlTextReader a une demande d’héritage de confiance totale. Pour plus d’informations, consultez [demandes d’héritage](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) .
 

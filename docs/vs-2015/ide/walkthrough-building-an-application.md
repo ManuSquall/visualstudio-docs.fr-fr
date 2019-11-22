@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f96909d3051e18fe3992e68b44b2948d1e23ebd6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f2d9b958dacfb35877abc9ad1e83a349e43a7af0
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670123"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296873"
 ---
 # <a name="walkthrough-building-an-application"></a>Procédure pas à pas : génération d'une application
 
@@ -22,9 +22,9 @@ ms.locfileid: "72670123"
 
 Avec cette procédure pas à pas, vous allez vous familiariser avec plusieurs options qu’il est possible de configurer lors de la génération d’applications avec Visual Studio. Dans l’exemple d’application, vous allez créer une configuration de build personnalisée, masquer certains messages d’avertissement et afficher davantage d’informations de sortie de build, entre autres tâches.
 
-Cette rubrique contient les sections suivantes :
+Cette rubrique contient les sections suivantes :
 
-[Installer l’exemple d’application](../ide/walkthrough-building-an-application.md#BKMK_installapp)
+[Installer l’exemple d’application](../ide/walkthrough-building-an-application.md)
 
 [Créer une configuration de build personnalisée](../ide/walkthrough-building-an-application.md#BKMK_CreateBuildConfig)
 
@@ -34,11 +34,7 @@ Cette rubrique contient les sections suivantes :
 
 [Afficher des informations de build supplémentaires dans la fenêtre Sortie](../ide/walkthrough-building-an-application.md#BKMK_outputdetails)
 
-[Créer une version Release](../ide/walkthrough-building-an-application.md#BKMK_releasebuild)
-
-## <a name="BKMK_installapp"></a> Installer l’exemple d’application
-
-Vous allez utiliser la boîte de dialogue **Extensions et mises à jour** pour rechercher et installer l’exemple [Introduction to Building WPF Applications](http://code.msdn.microsoft.com/Introduction-to-Building-b8d16419?SRC=VSIDE) à partir de la galerie d’exemples sur le site web Microsoft. La galerie d’exemples contient une grande variété d’exemples de projets et de code que vous pouvez télécharger et étudier pour la planification et le développement de vos applications.
+[Créer une version Release](../ide/walkthrough-building-an-application.md)
 
 #### <a name="to-install-the-sample-application"></a>Pour installer l’exemple d’application
 
@@ -185,7 +181,7 @@ Vous pouvez modifier la quantité d’informations relatives au processus de gé
 
 1. Ouvrez la boîte de dialogue **Options**.
 
-    ![Commande Options dans le menu outils](../ide/media/exploreide-toolsoptionsmenu.png "ExploreIDE-ToolsOptionsmenu")
+    ![Commande Options du menu Outils](../ide/media/exploreide-toolsoptionsmenu.png "ExploreIDE-ToolsOptionsmenu")
 
 2. Sélectionnez la catégorie **Projets et solutions**, puis la page **Générer et exécuter**.
 
@@ -206,7 +202,7 @@ Vous pouvez modifier la quantité d’informations relatives au processus de gé
 
    Pour plus d’informations, consultez l’article [Comment : afficher, enregistrer et configurer des fichiers journaux de génération](../ide/how-to-view-save-and-configure-build-log-files.md).
 
-## <a name="BKMK_releasebuild"></a> Créer une version Release
+## <a name="create-a-release-build"></a>Créer une version Release
 
 Vous pouvez créer une version de l’exemple d’application qui soit optimisée pour sa livraison. Pour la version Release, vous allez spécifier que le fichier exécutable doit être copié vers un partage réseau avant que la génération ne démarre.
 
@@ -233,9 +229,9 @@ Pour plus d’informations, consultez [Guide pratique pour modifier le répertoi
 
 6. Générez l'application.
 
-     ![Commande générer la solution dans le menu Générer](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
+     ![Commande Générer la solution du menu Générer](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
 
-#### <a name="to-specify-a-release-build-for-visual-c"></a>Pour spécifier une version Release pour Visual C \#
+#### <a name="to-specify-a-release-build-for-visual-c"></a>Pour spécifier une version Release pour Visual C\#
 
 1. Ouvrez le **Concepteur de projet**.
 
@@ -256,7 +252,7 @@ Pour plus d’informations, consultez [Guide pratique pour modifier le répertoi
 
 6. Générez l'application.
 
-    ![Commande générer la solution dans le menu Générer](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
+    ![Commande Générer la solution du menu Générer](../ide/media/exploreide-buildsolution.png "ExploreIDE-BuildSolution")
 
    Le fichier exécutable est copié sur le chemin réseau que vous avez spécifié. Dans ce cas, le chemin du fichier est \\\myserver\builds\\*nom_fichier*.exe.
 
@@ -266,4 +262,4 @@ Pour plus d’informations, consultez [Guide pratique pour modifier le répertoi
 
 - [Procédure pas à pas : génération d’un projet (C++)](https://msdn.microsoft.com/library/d459bc03-88ef-48d0-9f9a-82d17f0b6a4d)
 - [Présentation de la précompilation de projets d’application web ASP.NET](https://msdn.microsoft.com/b940abbd-178d-4570-b441-52914fa7b887)
-- [Procédures pas à pas : utilisation de MSBuild](../msbuild/walkthrough-using-msbuild.md)
+- [Procédure pas à pas : utilisation de MSBuild](../msbuild/walkthrough-using-msbuild.md)

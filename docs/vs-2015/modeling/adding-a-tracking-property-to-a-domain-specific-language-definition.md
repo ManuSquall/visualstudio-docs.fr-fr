@@ -13,12 +13,12 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6e6664f78123864073d605b59c7f43e5b2db36cc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 19d673d9d09ce95580e25033966e1a901255fd90
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72609252"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74292641"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Ajout d'une propriété de suivi à une définition de langage spécifique à un domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,9 +50,9 @@ Cette procédure pas à pas montre comment ajouter une propriété de suivi à u
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|
-|[!INCLUDE[dsl](../includes/dsl-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185581](http://go.microsoft.com/fwlink/?LinkID=185581)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](https://go.microsoft.com/fwlink/?LinkID=185579)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](https://go.microsoft.com/fwlink/?LinkID=185580)|
+|[!INCLUDE[dsl](../includes/dsl-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185581](https://go.microsoft.com/fwlink/?LinkID=185581)|
 
 ## <a name="creating-the-dsl-project"></a>Création du projet DSL
  Créez le projet pour votre langage spécifique à un domaine.
@@ -98,7 +98,7 @@ Cette procédure pas à pas montre comment ajouter une propriété de suivi à u
 
     1. Nommez la nouvelle propriété `DefaultNamespace`.
 
-    2. Dans la fenêtre **Propriétés** de la nouvelle propriété, définissez la **valeur par défaut** sur `DefaultNamespace` et définissez **type** sur **chaîne**.
+    2. Dans la fenêtre **Propriétés** de la nouvelle propriété, définissez la **valeur par défaut** sur `DefaultNamespace`et définissez **type** sur **chaîne**.
 
 2. Pour la classe de domaine **ExampleModel** , ajoutez une propriété de domaine nommée `CustomElements`.
 
@@ -110,13 +110,13 @@ Cette procédure pas à pas montre comment ajouter une propriété de suivi à u
 
 4. Pour la classe de domaine **ExampleElement** , ajoutez une propriété de domaine nommée `IsNamespaceTracking`.
 
-     Dans la fenêtre **Propriétés** de la nouvelle propriété, attribuez à la propriété la valeur **false**, affectez **à la** **valeur par défaut la valeur** `true` et affectez à **type** la valeur **Boolean**.
+     Dans la fenêtre **Propriétés** de la nouvelle propriété, attribuez à la propriété la valeur **false**, affectez **à la** **valeur par défaut la valeur** `true`et affectez à **type** la valeur **Boolean**.
 
 #### <a name="to-update-the-diagram-elements-and-dsl-details"></a>Pour mettre à jour les éléments de diagramme et les détails DSL
 
 1. Dans le concepteur DSL, cliquez avec le bouton droit sur la forme Geometry **ExampleShape** , pointez sur **Ajouter**, puis cliquez sur **Decorator de texte**.
 
-    1. Nommez le nouveau `NamespaceDecorator` Decorator de texte.
+    1. Nommez le nouveau `NamespaceDecorator`Decorator de texte.
 
     2. Dans la fenêtre **Propriétés** de l’élément décoratif de texte, définissez **position** sur **InnerBottomLeft**.
 
@@ -141,7 +141,7 @@ Cette procédure pas à pas montre comment ajouter une propriété de suivi à u
 
 #### <a name="to-transform-the-text-templates"></a>Pour transformer les modèles de texte
 
-1. Dans la barre d’outils **Explorateur de solutions** , cliquez sur **transformer tous les modèles**.
+1. Dans la barre d'outils **Explorateur de solutions**, cliquez sur **Transformer tous les modèles**.
 
 2. Le système régénère le code pour la solution et enregistre DslDefinition. DSL. Pour plus d’informations sur le format XML des fichiers de définition, consultez [le fichier DslDefinition. DSL](../modeling/the-dsldefinition-dsl-file.md).
 
@@ -160,7 +160,7 @@ Cette procédure pas à pas montre comment ajouter une propriété de suivi à u
 
      Le fichier NamespaceTrackingProperty.cs est créé et ouvert pour modification.
 
-4. Dans le dossier, créez les fichiers de code suivants : `ExampleModel.cs,``HelperClasses.cs`, `Serialization.cs` et `TypeDescriptor.cs`.
+4. Dans le dossier, créez les fichiers de code suivants : `ExampleModel.cs,``HelperClasses.cs`, `Serialization.cs`et `TypeDescriptor.cs`.
 
 5. Dans le projet **DslPackage** , créez également un dossier `CustomCode` et ajoutez-lui un fichier de code `Package.cs`.
 
@@ -248,7 +248,7 @@ Cette procédure pas à pas montre comment ajouter une propriété de suivi à u
  Implémentez la méthode `GetCustomProperties` pour le descripteur de type pour la classe de domaine `ExampleModel`.
 
 > [!NOTE]
-> Le code généré par les outils DSL pour le descripteur de type personnalisé pour `ExampleModel` appelle `GetCustomProperties` ; Toutefois, les outils DSL ne génèrent pas de code qui implémente la méthode.
+> Le code généré par les outils DSL pour le descripteur de type personnalisé pour `ExampleModel` appelle `GetCustomProperties`; Toutefois, les outils DSL ne génèrent pas de code qui implémente la méthode.
 
  La définition de cette méthode crée le descripteur de propriété de suivi pour la propriété de suivi d’espace de noms. En outre, fournir des attributs pour la propriété Tracking permet à la fenêtre **Propriétés** d’afficher la propriété correctement.
 
@@ -344,11 +344,11 @@ Cette procédure pas à pas montre comment ajouter une propriété de suivi à u
  Implémentez la méthode `GetCustomElementsValue` pour la classe de domaine `ExampleModel`.
 
 > [!NOTE]
-> Le code généré par les outils DSL pour `ExampleModel` appelle `GetCustomElementsValue` ; Toutefois, les outils DSL ne génèrent pas de code qui implémente la méthode.
+> Le code généré par les outils DSL pour `ExampleModel` appelle `GetCustomElementsValue`; Toutefois, les outils DSL ne génèrent pas de code qui implémente la méthode.
 
  La définition de la méthode `GetCustomElementsValue` fournit la logique pour la propriété calculée CustomElements de `ExampleModel`. Cette méthode compte le nombre de `ExampleElement` classes de domaine qui ont une propriété de suivi d’espace de noms qui a une valeur mise à jour par l’utilisateur et retourne une chaîne qui représente ce nombre comme une proportion du total des éléments dans le modèle.
 
- En outre, ajoutez une méthode `OnDefaultNamespaceChanged` pour `ExampleModel` et substituez la méthode `OnValueChanged` de la `DefaultNamespacePropertyHandler` classe imbriquée de `ExampleModel` pour appeler `OnDefaultNamespaceChanged`.
+ En outre, ajoutez une méthode `OnDefaultNamespaceChanged` pour `ExampleModel`et substituez la méthode `OnValueChanged` de la `DefaultNamespacePropertyHandler` classe imbriquée de `ExampleModel` pour appeler `OnDefaultNamespaceChanged`.
 
  Étant donné que la propriété DefaultNamespace est utilisée pour calculer la propriété de suivi d’espace de noms, `ExampleModel` doit notifier toutes les classes de domaine `ExampleElement` que la valeur de DefaultNamespace a changé.
 

@@ -15,12 +15,12 @@ caps.latest.revision: 43
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ddce137ebdf2cff0e029a1cbe8551c7437c58386
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 60813fcce28c71c91a3e0c2af9889261c8897a99
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671671"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301412"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Comment : créer une solution de langage spécifique à un domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ Un langage spécifique à un domaine (DSL) est créé à l’aide d’une soluti
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|
-|Kit de développement logiciel (SDK) Visual Studio Visualization and Modeling|[http://go.microsoft.com/fwlink/?LinkID=185581](http://go.microsoft.com/fwlink/?LinkID=185581)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](https://go.microsoft.com/fwlink/?LinkID=185579)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](https://go.microsoft.com/fwlink/?LinkID=185580)|
+|Kit de développement logiciel (SDK) Visual Studio Visualization and Modeling|[http://go.microsoft.com/fwlink/?LinkID=185581](https://go.microsoft.com/fwlink/?LinkID=185581)|
 
 ## <a name="creating-a-domain-specific-language-solution"></a>Création d’une solution de langage spécifique à un domaine
 
@@ -69,7 +69,7 @@ Un langage spécifique à un domaine (DSL) est créé à l’aide d’une soluti
 
    - Si vous avez utilisé l’extension de nom de fichier dans les DSL expérimentaux précédents qui n’ont pas été entièrement installés, vous pouvez les supprimer à l’aide de l’outil **réinitialisation de l’instance expérimentale** , qui se trouve dans le menu du kit de développement logiciel (SDK) [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
-   - Si une autre extension de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] qui utilise cette extension de fichier a été entièrement installée sur votre ordinateur, envisagez de la désinstaller. Dans le menu **Outils** , cliquez sur **Gestionnaire d’extensions**.
+   - Si une autre extension de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] qui utilise cette extension de fichier a été entièrement installée sur votre ordinateur, envisagez de la désinstaller. Dans le menu **Outils**, cliquez sur **Gestionnaire d'extensions**.
 
 4. Inspectez et, si nécessaire, ajustez les champs dans les pages restantes de l’Assistant. Lorsque vous êtes satisfait des paramètres, cliquez sur **Terminer**. Pour plus d’informations sur les paramètres, consultez [Concepteur DSL pages](#settings)de l’Assistant.
 
@@ -106,7 +106,7 @@ Tapez une nouvelle extension de fichier.
 
      \- ou -
 
-- Si une extension de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] qui utilise cette extension de fichier a été entièrement installée sur votre ordinateur, désinstallez-la. Dans le menu **Outils** , cliquez sur **Gestionnaire d’extensions**.
+- Si une extension de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] qui utilise cette extension de fichier a été entièrement installée sur votre ordinateur, désinstallez-la. Dans le menu **Outils**, cliquez sur **Gestionnaire d'extensions**.
 
 ### <a name="product-settings-page"></a>Page Paramètres du produit
  **Quel est le nom du produit auquel appartient le nouveau langage spécifique à un domaine ?**
@@ -127,7 +127,7 @@ Par défaut, il s’agit d’un nom composé des noms de votre entreprise et de 
 
  **Utiliser une clé de nom fort existante** Utilisez cette option si vous souhaitez intégrer votre DSL à un autre assembly.
 
- Pour plus d’informations sur l’affectation d’un nom fort, consultez [création et utilisation d’assemblys avec nom fort](http://go.microsoft.com/fwlink/?LinkId=186073).
+ Pour plus d’informations sur l’affectation d’un nom fort, consultez [création et utilisation d’assemblys avec nom fort](https://go.microsoft.com/fwlink/?LinkId=186073).
 
 ## <a name="see-also"></a>Voir aussi
  [Comment définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md) [Outils Domain-specific language Glossaire](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

@@ -11,19 +11,19 @@ caps.latest.revision: 33
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 27692c31c2c0f1c52ab026fb2d55e5d240839ff3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ac299f18e544ef4f3215707abbdc3d9e8d266de6
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654899"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299292"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>Définir un élément de boîte à outils de modélisation personnalisé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pour faciliter la création d'un élément ou d'un groupe d'éléments d'après un modèle que vous utilisez souvent, vous pouvez ajouter de nouveaux outils à la boîte à outils des diagrammes de modélisation dans Visual Studio. Vous pouvez distribuer ces éléments de boîte à outils à d'autres utilisateurs de Visual Studio.
 
- Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
  Un outil personnalisé crée un ou plusieurs éléments dans un diagramme. Par exemple, vous pouvez créer un outil personnalisé pour créer des éléments tels que les suivants :
 
@@ -42,7 +42,7 @@ Pour faciliter la création d'un élément ou d'un groupe d'éléments d'après 
 
     - Ces éléments peuvent avoir des relations entre eux et peuvent avoir des éléments auxiliaires tels que des ports, des attributs, des opérations ou des broches.
 
-2. Enregistrez le diagramme en utilisant le nom que vous souhaitez donner au nouvel outil. Dans le menu **fichier** , cliquez sur **Enregistrer... Comme**.
+2. Enregistrez le diagramme en utilisant le nom que vous souhaitez donner au nouvel outil. Dans le menu **Fichier**, utilisez la commande **Enregistrer sous**.
 
 3. À l'aide de l'Explorateur Windows, copiez les deux fichiers de diagrammes dans le dossier suivant ou dans n'importe quel sous-dossier :
 
@@ -139,7 +139,7 @@ Pour faciliter la création d'un élément ou d'un groupe d'éléments d'après 
 > Si vous commencez à utiliser un fichier .tbxinfo après avoir utilisé des fichiers de diagrammes seuls, vous constaterez peut-être que la boîte à outils contient à la fois les anciennes et les nouvelles versions d'un élément de boîte à outils. Cela peut également se produire si le nom du fichier de diagramme a été tapé incorrectement dans le fichier .tbxinfo. Si cela se produit, dans le menu contextuel de la boîte à outils, choisissez **Réinitialiser la boîte à outils**. Les éléments de boîte à outils personnalisés disparaîtront. Redémarrez Visual Studio et les éléments personnalisés corrects apparaîtront.
 
 ## <a name="Extension"></a>Comment distribuer des éléments de boîte à outils dans une extension Visual Studio
- Vous pouvez distribuer des éléments de boîte à outils à d’autres [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] utilisateurs en les empaquetant dans une extension Visual Studio (VSIX). Vous pouvez empaqueter des commandes, des profils et d'autres extensions dans le même fichier VSIX. Pour plus d’informations, consultez [déploiement d’extensions Visual Studio](http://go.microsoft.com/fwlink/?LinkId=160780).
+ Vous pouvez distribuer des éléments de boîte à outils à d’autres [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] utilisateurs en les empaquetant dans une extension Visual Studio (VSIX). Vous pouvez empaqueter des commandes, des profils et d'autres extensions dans le même fichier VSIX. Pour plus d’informations, consultez [déploiement d’extensions Visual Studio](https://go.microsoft.com/fwlink/?LinkId=160780).
 
  L'approche habituelle pour créer une extension Visual Studio consiste à utiliser le modèle de projet VSIX. Pour ce faire, vous devez avoir installé [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)].
 
@@ -147,7 +147,7 @@ Pour faciliter la création d'un élément ou d'un groupe d'éléments d'après 
 
 1. [Créez et testez un ou plusieurs outils personnalisés](#DefineTool).
 
-2. [Créez un fichier. fichier tbxinfo](#tbxinfo) qui référence les outils.
+2. [Créez un fichier .tbxinfo](#tbxinfo) qui fait référence aux outils.
 
 3. Ouvrez un projet d'extension Visual Studio existant.
 
@@ -155,39 +155,39 @@ Pour faciliter la création d'un élément ou d'un groupe d'éléments d'après 
 
      Définissez un nouveau projet d'extension Visual Studio.
 
-    1. Dans le menu **Fichier** , choisissez **Nouveau**, **Projet**.
+    1. Dans le menu **Fichier**, choisissez **Nouveau**, **Projet**.
 
-    2. Dans la boîte de dialogue **nouveau projet** , sous **modèles installés**, **Choisissez C#visuel** , **extensibilité**, **projet VSIX**.
+    2. Dans la boîte de dialogue **Nouveau projet**, sous **Modèles installés**, choisissez **Visual C#** , **Extensibilité**, **Projet VSIX**.
 
 4. Ajoutez vos définitions de boîte à outils au projet. Incluez le fichier **. fichier tbxinfo** , les fichiers de diagramme, les fichiers bitmap et les fichiers de ressources, et assurez-vous qu’ils sont inclus dans le VSIX.
 
-    - Dans Explorateur de solutions, dans le menu contextuel du projet VSIX, choisissez **Ajouter**, **élément existant**. Dans la boîte de dialogue, définissez **les objets de type : tous les fichiers**. Recherchez les fichiers, sélectionnez-les tous, puis choisissez **Ajouter**.
+    - Dans l'Explorateur de solutions, dans le menu contextuel du projet VSIX, choisissez **Ajouter**, **Élément existant**. Dans la boîte de dialogue, définissez **Type d'objets : tous les fichiers**. Recherchez les fichiers, sélectionnez-les tous, puis choisissez **Ajouter**.
 
         > [!NOTE]
         > Dans ce projet, vous ne pouvez pas ouvrir les fichiers de diagrammes dans l'éditeur de modèle.
 
 5. Définissez les propriétés suivantes de tous les fichiers que vous venez d'ajouter. Vous pouvez définir leurs propriétés en même temps en les sélectionnant dans l'Explorateur de solutions. Veillez à ne pas modifier les propriétés des autres fichiers dans le projet.
 
-     **Copier dans le répertoire de sortie**  = **toujours copier**
+     **Copier dans le répertoire de sortie** = **toujours copier**
 
-     @No__t_1 le**contenu** de l' **action de génération**
+      = le **contenu** de l' **action de génération**
 
-     **Include dans VSIX**  = **true**
+     **Include dans VSIX** = **true**
 
 6. Ouvrez **source.extension.vsixmanifest**. Le fichier s'ouvre dans l'éditeur de manifeste d'extension.
 
-7. Sous **métadonnées**, ajoutez une description pour les outils personnalisés.
+7. Sous **Métadonnées**, ajoutez une description des outils personnalisés.
 
-     Sous **ressources**, choisissez **nouveau** , puis définissez les champs dans la boîte de dialogue comme suit :
+     Sous **Composants**, choisissez **Nouveau**, puis définissez les champs dans la boîte de dialogue comme suit :
 
-    - **Type**  = **type d’extension personnalisé**
+    - **Type** = **type d’extension personnalisé**
 
     - Type = `Microsoft.VisualStudio.ArchitectureTools.CustomToolboxItems`
 
         > [!NOTE]
         > Cette option ne figure pas dans la liste déroulante. Vous devez l'entrer à l'aide du clavier.
 
-    - **Fichier de  =  source sur le système de fichiers**.
+    - **Fichier de = source sur le système de fichiers**.
 
     - **Path** = votre fichier **. fichier tbxinfo** , par exemple **mytools. fichier tbxinfo**
 
@@ -203,9 +203,9 @@ Pour faciliter la création d'un élément ou d'un groupe d'éléments d'après 
 
 1. Ouvrez le fichier `.vsix` dans l'Explorateur Windows ou dans Visual Studio.
 
-2. Choisissez **installer** dans la boîte de dialogue qui s’affiche.
+2. Choisissez **Installer** dans la boîte de dialogue qui s'affiche.
 
-3. Pour désinstaller ou désactiver temporairement l’extension, ouvrez **extensions et mises à jour** dans le menu **Outils** .
+3. Pour désinstaller ou désactiver momentanément l'extension, ouvrez **Extensions et mises à jour** dans le menu **Outils**.
 
 ## <a name="localization"></a>Localisation
  Vous pouvez créer une extension qui, une fois installée sur un autre ordinateur, affiche les noms d'outils et les info-bulles dans la langue de l'ordinateur cible.
@@ -214,13 +214,13 @@ Pour faciliter la création d'un élément ou d'un groupe d'éléments d'après 
 
 1. Créez un projet d'Extension Visual Studio qui contient un ou plusieurs outils personnalisés.
 
-    Dans le fichier **. fichier tbxinfo** , utilisez la méthode de fichier de ressources pour définir les `displayName`, la boîte à outils `tabName` et l’info-bulle de l’outil. Créez un fichier de ressources dans lequel ces chaînes sont définies, compilez-le dans un assembly et faites-y référence à partir du fichier tbxinfo.
+    Dans le fichier **. fichier tbxinfo** , utilisez la méthode de fichier de ressources pour définir les `displayName`, la boîte à outils `tabName`et l’info-bulle de l’outil. Créez un fichier de ressources dans lequel ces chaînes sont définies, compilez-le dans un assembly et faites-y référence à partir du fichier tbxinfo.
 
 2. Créez des assemblys supplémentaires qui contiennent des fichiers de ressources avec des chaînes dans d'autres langues.
 
 3. Placez chaque assembly supplémentaire dans un dossier dont le nom est le code de culture de la langue. Par exemple, placez une version française de l’assembly dans un dossier nommé **fr**.
 
-4. Vous devez utiliser un code de culture neutre, en général deux lettres, et non une culture spécifique telle que `fr-CA`. Pour plus d’informations sur les codes de culture, consultez [CultureInfo. GetCultures, méthode](http://go.microsoft.com/fwlink/?LinkId=160782), qui fournit une liste complète des codes de culture.
+4. Vous devez utiliser un code de culture neutre, en général deux lettres, et non une culture spécifique telle que `fr-CA`. Pour plus d’informations sur les codes de culture, consultez [CultureInfo. GetCultures, méthode](https://go.microsoft.com/fwlink/?LinkId=160782), qui fournit une liste complète des codes de culture.
 
 5. Générez l'Extension Visual Studio et distribuez-la.
 
@@ -231,7 +231,7 @@ Pour faciliter la création d'un élément ou d'un groupe d'éléments d'après 
 ## <a name="other-toolbox-operations"></a>Autres opérations de boîte à outils
  En règle générale, dans [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] vous pouvez personnaliser la boîte à outils en renommant les outils, en les déplaçant vers différents onglets de la boîte à outils et en les supprimant. Toutefois, ces modifications ne sont pas conservées pour les outils de modélisation personnalisés créés avec les procédures décrites dans cette rubrique. Quand vous redémarrez [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], les outils personnalisés réapparaissent avec leurs noms et leurs emplacements dans la boîte à outils définis.
 
- En outre, vos outils personnalisés disparaissent si vous exécutez la commande **Réinitialiser la boîte à outils** . Cependant, ils réapparaissent quand vous redémarrez [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].
+ De plus, vos outils personnalisés disparaissent si vous exécutez la commande **Réinitialiser la boîte à outils**. Cependant, ils réapparaissent quand vous redémarrez [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].
 
 ## <a name="see-also"></a>Voir aussi
  [Étendre des modèles et des diagrammes UML](../modeling/extend-uml-models-and-diagrams.md) [définir un profil pour étendre UML](../modeling/define-a-profile-to-extend-uml.md) [définir une commande de menu sur un diagramme de modélisation](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [définir des contraintes de validation pour les modèles UML](../modeling/define-validation-constraints-for-uml-models.md)

@@ -12,12 +12,12 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 69315b8a81c321d8a33583b02e9579f392d1dc65
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b8b154ccd18472d0b0bca502c78a6612aeccdda6
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669609"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301040"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>Étendre des diagrammes et des modèles UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,13 +30,13 @@ Cette rubrique résume les différentes manière d’étendre les outils de mod�
 
  L’équipe Fabrikam responsable des outils effectue une série d’améliorations pour aider les équipes de développement. Les sections suivantes décrivent les différents genres d’extensions que vous pouvez définir. Vous pouvez combiner plusieurs de ces techniques dans une même extension Visual Studio.
 
- Pour plus d’informations, consultez la vidéo suivante : ![lien vers la vidéo de](../data-tools/media/playvideo.gif "PlayVideo")[la série de procédures MSDN : outils UML et extensibilité](http://go.microsoft.com/fwlink/?LinkId=214467).
+ Pour plus d’informations, consultez la vidéo suivante : ![lien vers la vidéo de](../data-tools/media/playvideo.gif "PlayVideo")[la série de procédures MSDN : outils UML et extensibilité](https://go.microsoft.com/fwlink/?LinkId=214467).
 
-## <a name="Requirements"></a> Spécifications
+## <a name="Requirements"></a> Configuration requise
 
 - [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
-- [Kit de développement logiciel (SDK) de modélisation pour Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=48148).
+- [Kit de développement logiciel (SDK) de modélisation pour Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=48148).
 
 ## <a name="profiles"></a>Profils
  Les profils permettent de définir des stéréotypes et des propriétés supplémentaires sur des éléments UML.
@@ -111,12 +111,12 @@ Cette rubrique résume les différentes manière d’étendre les outils de mod�
 
 ## <a name="external-resources"></a>Ressources externes
 
-|**Catégorie**|**Links**|
+|**Catégorie**|**Liens**|
 |------------------|---------------|
-|**Vidéos**|![lien vers la vidéo de](../data-tools/media/playvideo.gif "PlayVideo") [la série de procédures MSDN : outils UML et extensibilité](http://go.microsoft.com/fwlink/?LinkId=214467)<br /><br /> ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9 : UML avec Visual Studio](http://go.microsoft.com/fwlink/?LinkId=199957)|
-|**Forums**|-   [Outils de visualisation et de modélisation Visual Studio](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Kit de développement logiciel (SDK) Visual Studio Visualization and Modeling (outils DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|
-|**Blogs**|[Blog Visual Studio ALM + Team Foundation Server](http://go.microsoft.com/fwlink/?LinkID=201340)|
-|**Articles et journaux techniques**|[Centre d’architecture MSDN](http://go.microsoft.com/fwlink/?LinkId=201343)|
+|**Vidéos**|![lien vers la vidéo de](../data-tools/media/playvideo.gif "PlayVideo") [la série de procédures MSDN : outils UML et extensibilité](https://go.microsoft.com/fwlink/?LinkId=214467)<br /><br /> ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9 : UML avec Visual Studio](https://go.microsoft.com/fwlink/?LinkId=199957)|
+|**Forums**|-   [Outils de visualisation et de modélisation Visual Studio](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Kit de développement logiciel (SDK) Visual Studio Visualization and Modeling (outils DSL)](https://go.microsoft.com/fwlink/?LinkId=184721)|
+|**Blogs**|[Blog Visual Studio ALM + Team Foundation Server](https://go.microsoft.com/fwlink/?LinkID=201340)|
+|**Articles et journaux techniques**|[Centre d’architecture MSDN](https://go.microsoft.com/fwlink/?LinkId=201343)|
 
 ## <a name="see-also"></a>Voir aussi
  [Créer des modèles pour votre application](../modeling/create-models-for-your-app.md) [référence API pour l’extensibilité de la modélisation UML](../modeling/api-reference-for-uml-modeling-extensibility.md)

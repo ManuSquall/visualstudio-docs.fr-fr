@@ -10,12 +10,12 @@ caps.latest.revision: 34
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9c732f4011c4194ce95621cf49022c2b6a9fabf3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 257c3e097f890cc5b3ceec03aca8b264695e1bd9
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661217"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301224"
 ---
 # <a name="signing-in-to-visual-studio"></a>Connexion à Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,20 +27,20 @@ Vous pouvez éventuellement personnaliser et optimiser votre expérience de dév
 
 - **Bénéficier d’un large éventail d’avantages** à partir du programme Visual Studio Dev Essentials, notamment de logiciels gratuits, de formations, d’une assistance et plus encore. Voir [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp) pour obtenir de plus amples informations.
 
-- **Synchroniser vos paramètres Visual Studio** - Les paramètres que vous personnalisez, comme les combinaisons de touches, la disposition des fenêtres et le thème de couleur, s'appliquent immédiatement lorsque vous vous connectez à Visual Studio sur un appareil. Voir [Paramètres synchronisés dans Visual Studio](https://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx).
+- **Synchroniser vos paramètres Visual Studio** - Les paramètres que vous personnalisez, comme les combinaisons de touches, la disposition des fenêtres et le thème de couleur, s'appliquent immédiatement lorsque vous vous connectez à Visual Studio sur un appareil. Voir [Paramètres synchronisés dans Visual Studio](https://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx).
 
-- **Déverrouiller définitivement une édition de Visual Studio Express** - Vous pouvez utiliser n'importe quelle édition de Visual Studio Express aussi longtemps que vous le souhaitez, au lieu de vous limiter à la période d'évaluation de 30 jours.
+- **Déverrouiller définitivement une édition de Visual Studio Express** - Vous pouvez utiliser n'importe quelle édition de Visual Studio Express aussi longtemps que vous le souhaitez, au lieu de vous limiter à la période d'évaluation de 30 jours.
 
 - **Déverrouiller l'édition Visual Studio Community** au lieu d'être limité à la période d'évaluation de 30 jours.
 
-- **Prolonger la période d'évaluation de Visual Studio** - Vous pouvez utiliser Visual Studio Professional ou Visual Studio Enterprise pendant 90 jours supplémentaires, au lieu d'être limité à la période d'évaluation de 30 jours.
+- **Prolonger la période d'évaluation de Visual Studio** - Vous pouvez utiliser Visual Studio Professional ou Visual Studio Enterprise pendant 90 jours supplémentaires, au lieu d'être limité à la période d'évaluation de 30 jours.
 
-- **Déverrouiller Visual Studio si vous utilisez un compte qui est associé à un abonnement MSDN ou VSO**. Consultez [Déverrouillage de Visual Studio](../ide/how-to-unlock-visual-studio.md).
+- **Déverrouiller Visual Studio si vous utilisez un compte qui est associée à un abonnement MSDN ou VSO**. Consultez [Déverrouillage de Visual Studio](../ide/how-to-unlock-visual-studio.md).
 
 - **Se connecter automatiquement à des services tels qu’Azure et Visual Studio Team Services** dans l’IDE sans demander à nouveau les informations d’identification pour le même compte.
 
 ## <a name="how-to-sign-in-to-visual-studio"></a>Comment se connecter à Visual Studio ?
- La première fois que vous démarrez Visual Studio, vous êtes invité à vous connecter et à fournir des informations d'inscription de base. Vous devez choisir un compte Microsoft ou bien un compte professionnel ou scolaire qui vous représente le mieux. Si vous n'avez aucun de ces comptes, vous pouvez créer gratuitement un compte Microsoft. Consultez [Comment ouvrir un compte Microsoft ?](http://windows.microsoft.com/windows-live/sign-up-create-account-how)
+ La première fois que vous démarrez Visual Studio, vous êtes invité à vous connecter et à fournir des informations d'inscription de base. Vous devez choisir un compte Microsoft ou bien un compte professionnel ou scolaire qui vous représente le mieux. Si vous n'avez aucun de ces comptes, vous pouvez créer gratuitement un compte Microsoft. Consultez [Comment ouvrir un compte Microsoft ?](https://support.microsoft.com/help/4026324/microsoft-account-how-to-create)
 
  Choisissez ensuite les paramètres d'interface utilisateur et le thème de couleur que vous souhaitez utiliser dans Visual Studio. Visual Studio mémorise ces paramètres et les synchronise dans tous les environnements de Visual Studio auxquels vous êtes connecté. Pour obtenir la liste des paramètres qui sont synchronisés, consultez [Paramètres synchronisés](../ide/synchronized-settings-in-visual-studio.md). Vous pouvez modifier les paramètres ultérieurement en ouvrant le menu **Outils &#124; Options** dans Visual Studio.
 

@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Mise à niveau d’une Page de démarrage personnalisée | Microsoft Docs'
+title: 'Comment : mettre à niveau une page de démarrage personnalisée | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -7,18 +7,18 @@ ms.topic: conceptual
 ms.assetid: 78342ce6-36c8-485b-a5f6-760e7a420a26
 caps.latest.revision: 8
 manager: jillfra
-ms.openlocfilehash: abe1013d37db43114f3970f12b1a0d1f08b07a4e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a7854de705a961463b1e8435e7340548cfc23bf3
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446454"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74293369"
 ---
-# <a name="how-to-upgrade-a-visual-studio-custom-start-page"></a>Procédure : Mise à niveau une Page de démarrage personnalisée Visual Studio
+# <a name="how-to-upgrade-a-visual-studio-custom-start-page"></a>Procédure : mise à niveau d’une page de démarrage personnalisée Visual Studio
 Vous pouvez mettre à niveau une page de démarrage personnalisée Visual Studio 2010 ou Visual Studio 2012 vers Visual Studio 2015 en procédant comme suit.
 
 > [!WARNING]
-> La page de démarrage personnalisée mise à niveau dans cette procédure est celle créée avec le modèle [Custom Start Page](http://visualstudiogallery.msdn.microsoft.com/f655a5dc-1a2d-4eca-b774-76c352c03b87) disponible dans la galerie Visual Studio. Votre page de démarrage peut avoir d’autres fonctionnalités qui doivent être mises à niveau.
+> La page de démarrage personnalisée mise à niveau dans cette procédure est celle créée avec le modèle [Custom Start Page](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.CustomStartPageProjectTemplate) disponible dans la galerie Visual Studio. Votre page de démarrage peut avoir d’autres fonctionnalités qui doivent être mises à niveau.
 
 ### <a name="to-upgrade-a-custom-start-page-to-visual-studio-2015"></a>Pour mettre à niveau une page de démarrage personnalisée vers Visual Studio 2015
 

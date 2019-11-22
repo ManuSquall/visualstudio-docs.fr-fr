@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1fe8acd8628fcbd40e9c675558379049fd6658b8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ffb1298981481bde063de898dc81c02dad548888
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665743"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297833"
 ---
 # <a name="property-pages-javascript"></a>Pages de propriétés (JavaScript)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -62,11 +62,11 @@ Les **Pages de propriétés** permettent d’accéder aux paramètres d’un pro
 
  **Débogueur à lancer** Spécifie l’hôte par défaut pour le débogueur.
 
-- Sélectionnez **Ordinateur local** pour démarrer l’application sur l’ordinateur hôte Visual Studio. Pour plus d’informations, consultez [Exécution d’applications sur un ordinateur local](http://go.microsoft.com/fwlink/?LinkId=234912).
+- Sélectionnez **Ordinateur local** pour démarrer l’application sur l’ordinateur hôte Visual Studio. Pour plus d’informations, consultez [Exécution d’applications sur un ordinateur local](https://go.microsoft.com/fwlink/?LinkId=234912).
 
-- Sélectionnez **Simulateur** pour démarrer l’application dans le simulateur. Pour plus d’informations, consultez [Exécution d’applications dans le simulateur](http://go.microsoft.com/fwlink/?LinkId=234913).
+- Sélectionnez **Simulateur** pour démarrer l’application dans le simulateur. Pour plus d’informations, consultez [Exécution d’applications dans le simulateur](https://go.microsoft.com/fwlink/?LinkId=234913).
 
-- Sélectionnez **Ordinateur distant** pour démarrer l’application sur un ordinateur distant. Pour plus d’informations sur le débogage distant, consultez [Exécution d’applications sur un ordinateur distant](http://go.microsoft.com/fwlink/?LinkId=234914).
+- Sélectionnez **Ordinateur distant** pour démarrer l’application sur un ordinateur distant. Pour plus d’informations sur le débogage distant, consultez [Exécution d’applications sur un ordinateur distant](https://go.microsoft.com/fwlink/?LinkId=234914).
 
   **Lancer l’application** Spécifie si l’application doit être démarrée lorsque vous appuyez sur F5 ou que vous cliquez sur **Déboguer**, **Démarrer le débogage**. Sélectionnez **Oui** pour démarrer l’application ; sinon, sélectionnez **Non**. Si vous sélectionnez **Non**, vous pouvez toujours déboguer l’application si vous utilisez une autre méthode pour la démarrer.
 

@@ -9,19 +9,19 @@ caps.latest.revision: 10
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d45b7917f5e92f20ec7d7c896c2dc9540a9554e0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d808fce2783d444071ea1a7976d26e3c5bf02eed
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656284"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297464"
 ---
 # <a name="integration-of-xml-literals-with-xml-schema-explorer"></a>Intégration de littéraux XML à l'Explorateur de schémas XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Basic prend en charge les littéraux XML, ce qui signifie que vous pouvez incorporer des fragments XML directement dans votre code Visual Basic. Pour plus d’informations, consultez [vue d’ensemble des littéraux XML](http://go.microsoft.com/fwlink/?LinkId=140325).
+Visual Basic prend en charge les littéraux XML, ce qui signifie que vous pouvez incorporer des fragments XML directement dans votre code Visual Basic. Pour plus d’informations, consultez [vue d’ensemble des littéraux XML](https://go.microsoft.com/fwlink/?LinkId=140325).
 
- Si un fichier XSD dans votre projet Visual Basic inclut un littéral XML, vous pouvez afficher le jeu de schémas XML dans l'Explorateur de schémas XML. Pour afficher le jeu de schémas associé à un littéral XML, cliquez avec le bouton droit sur un nœud XML dans un littéral XML ou une importation d’espace de noms XML, puis sélectionnez **afficher dans l’Explorateur de schémas**.
+ Si un fichier XSD dans votre projet Visual Basic inclut un littéral XML, vous pouvez afficher le jeu de schémas XML dans l'Explorateur de schémas XML. Pour afficher le jeu de schémas associé à un littéral XML, cliquez avec le bouton droit sur un nœud XML dans un littéral XML ou une importation d'espace de noms XML, puis sélectionnez **Afficher dans l'Explorateur de schémas XML**.
 
  ![Visual Basic littéraux XML ; Explorateur de schémas XML](../xml-tools/media/vbxmlliteralswithxmlschemaexplorer1.gif "VBXMLLiteralsWithXMLSchemaExplorer1")
 

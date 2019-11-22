@@ -15,23 +15,23 @@ caps.latest.revision: 37
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7abc869ebebf4ca2ae8aa1776eaae75f1543176b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 99f2b67d264edcaab5272d0224d4450ee2e8a6f6
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652264"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297159"
 ---
 # <a name="uml-component-diagrams-guidelines"></a>Diagrammes de composants UML : indications
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Dans Visual Studio, vous pouvez dessiner un *diagramme de composant* pour afficher la structure d’un système logiciel. Pour une démonstration vidéo, consultez [conception de la structure physique à l’aide de diagrammes de composants](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-6-Designing-a-Projects-Physical-Structure/).
+Dans Visual Studio, vous pouvez dessiner un *diagramme de composant* pour afficher la structure d'un système logiciel. Pour une démonstration vidéo, consultez [conception de la structure physique à l’aide de diagrammes de composants](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-6-designing-a-projects-physical-structure).
 
- Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
- Pour créer un diagramme de composant UML, dans le menu **architecture** , cliquez sur **nouveau diagramme UML ou diagramme de couche**.
+ Pour créer un diagramme de composant UML, dans le menu **Architecture**, cliquez sur **Nouveau diagramme UML ou diagramme de couche**.
 
- Un composant est une unité modulaire remplaçable dans son environnement. Ses éléments internes sont masqués, mais il possède une ou plusieurs *interfaces fournies* bien définies par le biais desquelles ses fonctions sont accessibles. Un composant peut également avoir des *interfaces requises*. Une interface requise définit les fonctions ou services qu'elle exige des autres composants. En connectant les interfaces fournies et requises de plusieurs composants, un plus grand composant peut être développé. Un système logiciel complet peut donc être considéré comme un composant.
+ Un composant est une unité modulaire remplaçable dans son environnement. Ses éléments internes sont masqués, mais il possède une ou plusieurs *interfaces fournies* bien définies par l'intermédiaire desquelles il est possible d'accéder à ses fonctions. Un composant peut également disposer d'*interfaces requises*. Une interface requise définit les fonctions ou services qu'elle exige des autres composants. En connectant les interfaces fournies et requises de plusieurs composants, un plus grand composant peut être développé. Un système logiciel complet peut donc être considéré comme un composant.
 
  Le dessin de diagrammes de composants présente plusieurs avantages :
 
@@ -46,9 +46,9 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de composant* pour affich
 
 |Autre diagramme|Permet d'évoquer et de communiquer ces aspects de votre conception|
 |-------------------|--------------------------------------------------------------------|
-|Diagramme de séquence UML|-Interactions entre les composants d’un système<br />-Interactions entre les parties à l’intérieur d’un composant.<br /><br /> Pour plus d’informations, consultez [diagrammes de séquence UML : indications](../modeling/uml-sequence-diagrams-guidelines.md).|
-|Diagramme de classes UML|-Interfaces d’un composant. Le diagramme de classes vous permet de détailler les méthodes de l'interface.<br />-Les données envoyées dans les paramètres à travers les interfaces des composants.<br /><br /> Pour plus d’informations, consultez [diagrammes de classes UML : indications](../modeling/uml-class-diagrams-guidelines.md).|
-|Diagrammes d'activités|: Traitement interne effectué par un composant en réponse à des messages entrants.<br /><br /> Pour plus d’informations, consultez [diagrammes d’activités UML : indications](../modeling/uml-activity-diagrams-guidelines.md).|
+|Diagramme de séquence UML|-Interactions entre les composants d’un système<br />-Interactions entre les parties à l’intérieur d’un composant.<br /><br /> Pour plus d'informations, consultez [Diagrammes de séquence UML : indications](../modeling/uml-sequence-diagrams-guidelines.md).|
+|Diagramme de classes UML|-Interfaces d’un composant. Le diagramme de classes vous permet de détailler les méthodes de l'interface.<br />-Les données envoyées dans les paramètres à travers les interfaces des composants.<br /><br /> Pour plus d'informations, consultez [Diagrammes de classes UML : indications](../modeling/uml-class-diagrams-guidelines.md).|
+|Diagrammes d'activités|: Traitement interne effectué par un composant en réponse à des messages entrants.<br /><br /> Pour plus d'informations, consultez [Diagrammes d'activités UML : indications](../modeling/uml-activity-diagrams-guidelines.md).|
 |Diagrammes de couche|-Niveaux architecturaux logiques de vos composants.<br /><br /> Pour plus d’informations, consultez [diagrammes de couche : référence](../modeling/layer-diagrams-reference.md).|
 
 ## <a name="Basics"></a>Étapes de base pour dessiner des diagrammes de composants
@@ -61,38 +61,38 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de composant* pour affich
 
 #### <a name="to-create-a-component-diagram"></a>Pour créer un diagramme de composant
 
-1. Dans le menu **architecture** , cliquez sur **nouveau diagramme UML ou diagramme de couche**.
+1. Dans le menu **Architecture**, cliquez sur **Nouveau diagramme UML ou diagramme de couche**.
 
-2. Sous **modèles**, cliquez sur **diagramme de composant UML**.
+2. Sous **Modèles**, cliquez sur **Diagramme de composant UML**.
 
 3. Nommez le diagramme.
 
-4. Dans **Ajouter au projet de modélisation**, sélectionnez un projet de modélisation existant dans votre solution, ou **créez un nouveau projet de modélisation**, puis cliquez sur **OK**.
+4. Dans **Ajouter au projet de modélisation**, sélectionnez un projet de modélisation existant dans votre solution ou **Créer un nouveau projet de modélisation**, puis cliquez sur **OK**.
 
-     Un nouveau diagramme de composant s’affiche avec la boîte à outils **diagramme de composant** UML. La boîte à outils contient les relations et éléments requis.
+     Un nouveau diagramme de composant apparaît avec la boîte à outils **Diagramme de composant UML**. La boîte à outils contient les relations et éléments requis.
 
 ### <a name="drawing-components"></a>Dessin de composants
  ![Composants avec interfaces](../modeling/media/uml-compdrawing.png "UML_CompDrawing")
 
- Créez un *composant* (1) pour chaque unité fonctionnelle principale dans votre système ou application.
+ Créez un *composant* (1) pour chaque unité fonctionnelle principale dans votre système ou application.
 
  Les exemples possibles sont les suivants : une application, un périphérique matériel, un service Web, un assembly .NET, une classe de programmes ou un groupe de classes, ou encore tout segment séparable d'un programme.
 
 ##### <a name="to-create-components"></a>Pour créer des composants
 
-1. Cliquez sur **composant** dans la boîte à outils, puis cliquez sur une partie vide du diagramme.
+1. Cliquez sur **Composant** dans la boîte à outils, puis dans une partie vide du diagramme.
 
      \- ou -
 
      Copiez et collez un composant existant.
 
-    1. Rechercher un composant existant dans un diagramme ou dans l' **Explorateur de modèles UML**.
+    1. Recherchez un composant existant dans un diagramme ou dans l'**Explorateur de modèles UML**.
 
-    2. Cliquez avec le bouton droit sur le composant, puis cliquez sur **copier**.
+    2. Cliquez avec le bouton droit sur le composant, puis cliquez sur **Copier**.
 
     3. Ouvrez le diagramme dans lequel vous souhaitez que le composant copié apparaisse.
 
-    4. Cliquez avec le bouton droit sur une partie vide du diagramme, puis cliquez sur **coller**.
+    4. Cliquez avec le bouton droit dans une partie vide du diagramme, puis cliquez sur **Coller**.
 
          Une copie du composant apparaît alors avec un nouveau nom.
 
@@ -101,13 +101,13 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de composant* pour affich
 3. Cliquez sur le chevron (5) si vous souhaitez uniquement afficher l'en-tête du composant.
 
 ### <a name="showing-the-ports-of-a-component"></a>Affichage des ports d'un composant
- Un *port* (2,3) représente un groupe de messages ou d’appels d’opérations qui passent dans ou en dehors d’un composant. Le groupe est décrit par une interface qui définit le type du port. Un port peut fournir une interface ou en requérir une.
+ Un *port* (2, 3) représente un groupe de messages ou d'appels d'opérations qui passent ou non par un composant. Le groupe est décrit par une interface qui définit le type du port. Un port peut fournir une interface ou en requérir une.
 
- Un port avec une *interface fournie* (2) fournit des opérations qui sont implémentées par le composant et qui peuvent être utilisées par d’autres composants.
+ Un port intégrant une *interface fournie* (2) apporte des opérations implémentées par le composant ; celles-ci peuvent être utilisées par d'autres composants.
 
  Les exemples possibles sont les suivants : une interface utilisateur, un service Web, une interface .NET ou encore une collection de fonctions dans tous les langages de programmation.
 
- Un port avec une *interface requise* (3) représente la nécessité d’un composant pour un groupe d’opérations ou de services à fournir par d’autres composants ou systèmes externes.
+ Un port intégrant une *interface requise* (3) représente un impératif de composant pour un groupe d'opérations ou de services que doivent fournir d'autres composants ou systèmes externes.
 
  Par exemple, un navigateur Web requiert des serveurs Web ou encore un complément d'application exige des services de l'application.
 
@@ -115,13 +115,13 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de composant* pour affich
 
 ##### <a name="to-add-ports-to-a-component"></a>Pour ajouter des ports à un composant
 
-1. Dans la boîte à outils, cliquez sur **interface fournie** ou sur **interface requise**.
+1. Dans la boîte à outils, cliquez sur **Interface fournie** ou sur **Interface requise**.
 
 2. Cliquez sur le composant auquel vous souhaitez l'ajouter.
 
     Un port apparaît sur la limite du composant.
 
-    Une nouvelle interface est créée en tant que type du port. Cette interface s’affiche dans l' **Explorateur de modèles UML**.
+    Une nouvelle interface est créée en tant que type du port. Cette interface s'affiche dans l'**Explorateur de modèles UML**.
 
 3. Faites glisser le port autour de la limite du composant pour le placer là où vous le souhaitez.
 
@@ -136,7 +136,7 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de composant* pour affich
 
 ##### <a name="to-show-that-a-provided-interface-can-satisfy-a-required-interface"></a>Pour montrer qu'une interface fournie peut satisfaire une interface requise
 
-1. Dans la boîte à outils, cliquez sur **dépendance**.
+1. Dans la boîte à outils, cliquez sur **Dépendance**.
 
 2. Cliquez sur le port avec l'interface requise sur un composant, puis sur le port avec l'interface fournie dans un autre composant.
 
@@ -144,22 +144,22 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de composant* pour affich
 
 ##### <a name="to-add-a-port-for-an-existing-interface-to-a-component"></a>Pour ajouter un port pour une interface existante à un composant
 
-- Recherchez l’interface dans l' **Explorateur de modèles UML** , puis faites-la glisser vers le composant.
+- Recherchez l'interface dans l'**Explorateur de modèles UML**, puis faites-la glisser jusqu'au composant.
 
-     ou
+     -ou-
 
 - Copiez et collez une référence vers une interface à partir d'un diagramme.
 
-    1. Sur un diagramme de classes ou un diagramme de composant, cliquez avec le bouton droit sur l’interface, puis cliquez sur **copier**.
+    1. Dans un diagramme de classes ou un diagramme de composant, cliquez avec le bouton droit sur l'interface et cliquez sur **Copier**.
 
-    2. Dans le diagramme de composant, cliquez avec le bouton droit sur le composant, puis cliquez sur **coller la référence**.
+    2. Dans le diagramme de composant, cliquez avec le bouton droit sur le composant, puis cliquez sur **Coller la référence**.
 
          Une interface fournie apparaît alors sur le composant. Une balise d'action apparaît juste à côté.
 
         > [!NOTE]
-        > Si vous utilisez **coller** au lieu de **coller la référence**, une nouvelle interface portant un nouveau nom sera créée.
+        > Si vous utilisez **Coller** au lieu de **Coller la référence**, une nouvelle interface qui porte un nouveau nom sera créée.
 
-    3. Si vous souhaitez créer une interface requise, cliquez sur la balise d’action, puis sur **convertir en interface requise**.
+    3. Si vous souhaitiez créer une interface requise, cliquez sur la balise d'action, puis sur **Convertir en interface requise**.
 
 ## <a name="Parts"></a>Indication des parties internes d’un composant
  ![Diagramme de composant montrant des parties internes](../modeling/media/uml-compshowing.png "UML_CompShowing")
@@ -172,9 +172,9 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de composant* pour affich
 
  `+ partName : TypeName`
 
- Dans le composant parent, chaque partie affiche les interfaces fournies et requises définies pour son type (4, 5). Les opérations ou services requis par une partie peuvent être fournis par une autre. Vous pouvez utiliser des connecteurs d' **assembly de composant** pour montrer comment les parties sont connectées les unes avec les autres (6).
+ Dans le composant parent, chaque partie affiche les interfaces fournies et requises définies pour son type (4, 5). Les opérations ou services requis par une partie peuvent être fournis par une autre. Vous pouvez utiliser des connecteurs **Assembly d'élément** pour montrer comment les parties sont interconnectées (6).
 
- Vous pouvez également montrer qu'une interface du composant parent est réellement fournie ou requise par l'une de ses parties. Vous pouvez connecter un port du parent à un port d’une partie interne à l’aide d’une relation de **délégation** (9). Les deux ports doivent être du même genre (fourni ou requis) et leurs genres d'interfaces doivent être compatibles.
+ Vous pouvez également montrer qu'une interface du composant parent est réellement fournie ou requise par l'une de ses parties. Vous pouvez connecter un port du parent à celui d'une partie interne à l'aide d'une relation **Délégation** (9). Les deux ports doivent être du même genre (fourni ou requis) et leurs genres d'interfaces doivent être compatibles.
 
  Vous pouvez créer une partie avec un nouveau type ou à partir d'un type existant.
 
@@ -182,11 +182,11 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de composant* pour affich
 
 1. Créez une partie pour chaque unité fonctionnelle principale que vous considérez comme étant une partie du composant parent.
 
-    1. Cliquez sur **composant** dans la boîte à outils, puis cliquez à l’intérieur du composant parent (1).
+    1. Cliquez sur **Composant** dans la boîte à outils, puis dans le composant parent (1).
 
          Un nouveau composant (3) apparaît à l'intérieur du composant parent.
 
-         Un nouveau composant est créé dans l' **Explorateur de modèles UML**. Il s'agit du type de la nouvelle partie.
+         Un composant est alors créé dans l'**Explorateur de modèles UML**. Il s'agit du type de la nouvelle partie.
 
          \- ou -
 
@@ -196,31 +196,31 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de composant* pour affich
 
          \- ou -
 
-         Cliquez avec le bouton droit sur un composant, dans un diagramme ou dans l’Explorateur de modèles UML, puis cliquez sur **copier**.
+         Cliquez avec le bouton droit sur un composant, dans un diagramme ou dans l'Explorateur de modèles UML, puis cliquez sur **Copier**.
 
-         Cliquez avec le bouton droit sur le composant parent, puis cliquez sur **coller la référence**.
+         Cliquez avec le bouton droit sur le composant parent, puis cliquez sur **Coller la référence**.
 
          Un nouveau composant (3) apparaît à l'intérieur du composant parent. Son type est le composant que vous avez copié.
 
     2. Cliquez sur le nom de la nouvelle partie pour le modifier. Vous ne pouvez pas modifier son type.
 
-    3. Vous pouvez ajouter des interfaces fournies et requises (4, 5) à la nouvelle partie. Cliquez sur l' **interface fournie** ou sur l’outil **interface requise** , puis cliquez dans la partie.
+    3. Vous pouvez ajouter des interfaces fournies et requises (4, 5) à la nouvelle partie. Cliquez sur l'outil **Interface fournie** ou **Interface requise**, puis dans la partie.
 
          \- ou -
 
-         Faites glisser une interface existante de l' **Explorateur de modèles UML** vers la partie.
+         Faites glisser une interface existante entre l'**Explorateur de modèles UML** et la partie.
 
          Les interfaces sont ajoutées au type de la partie et apparaissent sur la partie elle-même. Si nécessaire, le composant parent règle sa taille.
 
 2. Interconnectez les parties.
 
-    - Utilisez l’outil de **dépendance** pour connecter les ports de différentes parties (6).
+    - Utilisez l'outil **Dépendance** pour connecter les ports de différentes parties (6).
 
 3. Connectez les parties aux ports du composant parent :
 
-    1. Créez un ou plusieurs ports (7) sur le composant parent. Cliquez sur **interface requise** ou sur **interface fournie** dans la boîte à outils, puis cliquez sur le composant parent.
+    1. Créez un ou plusieurs ports (7) sur le composant parent. Cliquez sur **Interface requise** ou sur **Interface fournie** dans la boîte à outils, puis sur le composant parent.
 
-    2. Déléguez (9) le port à une ou plusieurs parties. Cliquez sur l’outil **délégation** , puis sur un port sur le composant parent, puis sur un port d’une partie. De la même manière, vous pouvez connecter des ports qui fournissent ou requièrent des interfaces.
+    2. Déléguez (9) le port à une ou plusieurs parties. Cliquez sur l'outil **Délégation**, puis sur un port du composant parent et enfin sur le port d'une partie. De la même manière, vous pouvez connecter des ports qui fournissent ou requièrent des interfaces.
 
 ### <a name="showing-the-parts-of-a-part"></a>Affichage des parties d'une autre partie
  Après avoir divisé un composant en différentes parties, vous pouvez faire de même pour chacun des types de parties à l'aide de parties internes spécifiques.
@@ -231,17 +231,17 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de composant* pour affich
 
 1. Déterminez le nom qualifié complet du type de la partie.
 
-     Cliquez avec le bouton droit sur le composant, puis cliquez sur **Propriétés**.
+     Cliquez avec le bouton droit sur la partie, puis cliquez sur **Propriétés**.
 
-     Le nom du type s’affiche dans le champ **type** de l’fenêtre Propriétés.
+     Le nom du type s'affiche dans le champ **Type** de la fenêtre Propriétés.
 
-2. Localisez le type de la partie dans l' **Explorateur de modèles UML**.
+2. Localisez le type de la partie dans l'**Explorateur de modèles UML**.
 
-     Cliquez sur **affichage**, pointez sur **autres fenêtres**, puis cliquez sur **Explorateur de modèles UML**.
+     Cliquez sur **Afficher**, pointez sur **Autres fenêtres**, puis cliquez sur l'**Explorateur de modèles UML**.
 
      Développez le projet et, si nécessaire, tous les packages auxquels appartient le type.
 
-     Le type sera listé comme un **composant**.
+     Le type apparaîtra alors comme un **Composant**.
 
      Si vous le souhaitez, vous pouvez modifier son nom ici.
 
@@ -276,11 +276,11 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de composant* pour affich
 
 1. Créez un diagramme de séquences.
 
-     Pour plus d’informations, consultez [diagrammes de séquence UML : indications](../modeling/uml-sequence-diagrams-guidelines.md).
+     Pour plus d'informations, consultez [Diagrammes de séquence UML : indications](../modeling/uml-sequence-diagrams-guidelines.md).
 
 2. Créez une ligne de vie pour un composant externe, un utilisateur, un périphérique ou un autre acteur (1) qui envoie des messages à ce composant.
 
-     Vous pouvez affecter la valeur true à la propriété **Actor** de cette vie pour indiquer qu’elle est externe au composant en cours de prise en compte. Un dessin minimaliste apparaît au-dessus de la ligne de vie.
+     Vous pouvez affecter la valeur true à la propriété **Acteur** de cette ligne de vie afin d'indiquer qu'elle est externe au composant étudié. Un dessin minimaliste apparaît au-dessus de la ligne de vie.
 
 3. Créez une ligne de vie pour l'interface fournie (2) de ce composant auquel l'acteur choisi envoie des messages.
 
@@ -295,10 +295,10 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de composant* pour affich
 ### <a name="is-the-component-more-than-its-parts"></a>Le composant est-il plus qu'un assemblage de différentes parties ?
  Dans certains cas, un composant n'est pas plus qu'un nom donné à une collection de parties. L’ensemble du travail est effectué par les parties et, au moment de l’exécution, aucun code ou autre artefact ne représente le composant.
 
- Vous pouvez l’indiquer dans le modèle en affectant à la propriété **est instanciée indirectement** du composant. Dans ce cas, toutes les interfaces du composant doivent se trouver au niveau des ports, avec des délégations aux parties internes.
+ Vous pouvez indiquer cela dans le modèle en définissant la propriété **Is Indirectly Instantiated** du composant. Dans ce cas, toutes les interfaces du composant doivent se trouver au niveau des ports, avec des délégations aux parties internes.
 
 ### <a name="describing-the-process-inside-each-part"></a>Description du processus à l'intérieur de chaque partie
- Vous pouvez utiliser des diagrammes d'activités pour montrer comment un composant traite chaque message entrant. Pour plus d’informations, consultez [diagrammes d’activités UML : indications](../modeling/uml-activity-diagrams-guidelines.md).
+ Vous pouvez utiliser des diagrammes d'activités pour montrer comment un composant traite chaque message entrant. Pour plus d'informations, consultez [Diagrammes d'activités UML : indications](../modeling/uml-activity-diagrams-guidelines.md).
 
  ![Diagramme d’activités avec mémoire tampon de données](../modeling/media/uml-compdescribingproc.png "UML_CompDescribingProc")
 
@@ -320,7 +320,7 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de composant* pour affich
 
  ![Une dépendance entre les composants](../modeling/media/uml-compdepend.png "UML_CompDepend")
 
- Utilisez l’outil de **dépendance** pour dessiner une dépendance. Cela indique que la conception d'un composant compte sur un autre.
+ Utilisez l'outil **Dépendance** pour dessiner une dépendance. Cela indique que la conception d'un composant compte sur un autre.
 
  Les genres classiques de dépendances sont les suivants :
 
@@ -330,7 +330,7 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de composant* pour affich
 
 - Un composant utilise des informations créées par un autre.
 
-  Vous pouvez utiliser le nom de la flèche de dépendance pour dénoter un genre particulier d'utilisation. Pour définir le nom, cliquez avec le bouton droit sur la flèche, puis cliquez sur **Propriétés**et définissez le champ **nom** dans la fenêtre Propriétés.
+  Vous pouvez utiliser le nom de la flèche de dépendance pour dénoter un genre particulier d'utilisation. Pour définir le nom, cliquez avec le bouton droit sur la flèche, puis cliquez sur **Propriétés** et définissez le champ **Nom** dans la fenêtre de propriétés.
 
 ## <a name="see-also"></a>Voir aussi
- [Modifier des diagrammes et des modèles UML](../modeling/edit-uml-models-and-diagrams.md) [diagrammes de composants UML : référence](../modeling/uml-component-diagrams-reference.md) [diagrammes de séquence UML](../modeling/uml-sequence-diagrams-reference.md) : référence [diagrammes de cas d’usage UML : référence](../modeling/uml-use-case-diagrams-reference.md) diagrammes de [classes UML :](../modeling/uml-class-diagrams-reference.md) référence diagrammes de [composants UML : référence](../modeling/uml-component-diagrams-reference.md) [ Vidéo : conception de la structure physique à l’aide de diagrammes de composants](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-6-Designing-a-Projects-Physical-Structure/)
+ [Modifier des diagrammes et des modèles UML](../modeling/edit-uml-models-and-diagrams.md) [diagrammes de composants UML : référence](../modeling/uml-component-diagrams-reference.md) [diagrammes de séquence UML](../modeling/uml-sequence-diagrams-reference.md) : référence [diagrammes de cas d’usage UML : référence](../modeling/uml-use-case-diagrams-reference.md) diagrammes de [classes UML :](../modeling/uml-class-diagrams-reference.md) référence diagrammes de [composants UML :](../modeling/uml-component-diagrams-reference.md) référence [vidéo : conception de la structure physique à l’aide de diagrammes de composants](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-6-designing-a-projects-physical-structure)

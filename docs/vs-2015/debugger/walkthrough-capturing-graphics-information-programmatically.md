@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Capture d’informations graphiques par programmation | Microsoft Docs'
+title: 'Procédure pas à pas : capture d’informations graphiques par programmation | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,14 +9,14 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1eaa3547733432715c5362b20030fe3d4a886900
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 54097420fd212ec9057f4a968e2c6d5de199e56e
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444336"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296903"
 ---
-# <a name="walkthrough-capturing-graphics-information-programmatically"></a>Procédure pas à pas : capture d’informations graphiques par programmation
+# <a name="walkthrough-capturing-graphics-information-programmatically"></a>Procédure pas à pas : capture d'informations Graphics par programmation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour capturer par programmation les informations graphiques d'une application Direct3D.  
@@ -58,13 +58,13 @@ Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../inc
     ```  
   
     > [!IMPORTANT]
-    > N’incluez pas l’en-tête vsgcapture.h—which prend en charge la programmation capture de fichiers sur Windows 8.0 et versions antérieures, pour effectuer la capture par programmation dans vos applications Windows 8.1. Cet en-tête est incompatible avec DirectX 11.2. Si ce fichier est inclus après que l’en-tête d3d11_2.h est inclus, le compilateur émet un avertissement. Si vsgcapture.h est inclus avant d3d11_2.h, l’application ne démarre pas.  
+    > N’incluez pas le fichier d’en-tête vsgcapture. h, qui prend en charge la capture par programmation sur Windows 8,0 et versions antérieures, pour effectuer la capture par programmation dans vos applications Windows 8.1. Cet en-tête est incompatible avec DirectX 11.2. Si ce fichier est inclus après l’en-tête d3d11_2. h, le compilateur émet un avertissement. Si vsgcapture. h est inclus avant d3d11_2. h, l’application ne démarre pas.  
   
     > [!NOTE]
     > Si le Kit de développement logiciel (SDK) DirectX de juin 2010 est installé sur votre machine et que le chemin include de votre projet contient `%DXSDK_DIR%includex86`, déplacez-le à la fin du chemin include. Faites-en autant pour le chemin d'accès à votre bibliothèque.  
   
 #### <a name="windows-phone-81"></a>Windows Phone 8.1  
- Étant donné que le Kit de développement logiciel Windows Phone 8.1 n’inclut pas l’en-tête DXProgrammableCapture.h, vous devez définir le `IDXGraphicsAnalysis` interface vous-même afin que vous puissiez utiliser le `BeginCapture()` et `EndCapture()` méthodes. Incluez les autres en-têtes comme décrit dans la section précédente.  
+ Étant donné que le kit de développement logiciel (SDK) Windows Phone 8,1 n’inclut pas l’en-tête DXProgrammableCapture. h, vous devez définir l’interface `IDXGraphicsAnalysis` vous-même pour pouvoir utiliser les méthodes `BeginCapture()` et `EndCapture()`. Incluez les autres en-têtes comme décrit dans la section précédente.  
   
 ###### <a name="to-define-the-idxgraphicsanalysis-interface"></a>Pour définir l'interface IDXGraphicsAnalysis  
   
@@ -85,7 +85,7 @@ Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../inc
  Avant de pouvoir capturer les informations graphiques de DirectX 11.2, vous devez obtenir l'interface de débogage DXGI.  
   
 > [!IMPORTANT]
-> Lorsque vous utilisez la capture par programmation, vous devez toujours exécuter votre application dans graphics diagnostics (Alt + F5 dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]) ou sous la [l’outil de ligne de commande de Capture](../debugger/command-line-capture-tool.md).  
+> Lorsque vous utilisez la capture par programmation, vous devez toujours exécuter votre application dans Graphics Diagnostics (Alt + F5 dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]) ou sous l' [outil de capture en ligne de commande](../debugger/command-line-capture-tool.md).  
   
 ##### <a name="to-get-the-idxgraphicsanalysis-interface"></a>Pour obtenir l'interface IDXGraphicsAnalysis  
   
@@ -145,7 +145,7 @@ Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../inc
 ### <a name="preparing-your-computer-to-use-programmatic-capture"></a>Préparation de votre ordinateur à l'utilisation de la capture par programmation  
  L'API de capture par programmation utilise les Outils de contrôle à distance de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour proposer la fonctionnalité de capture. Les Outils de contrôle à distance doivent être installés sur l'ordinateur destiné à exécuter l'application, même quand vous utilisez la capture par programmation sur votre ordinateur local. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] n'a pas besoin de s'exécuter quand vous effectuez une capture par programmation sur un ordinateur local.  
   
- Pour utiliser les API de capture distante dans une application qui s'exécute sur un ordinateur, vous devez d'abord installer les Outils de contrôle à distance de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sur cet ordinateur. Les plateformes matérielles prises en charge varient en fonction de la version des Outils de contrôle à distance. Pour plus d’informations sur l’installation des outils de contrôle à distance, consultez la [page de téléchargement des outils de contrôle à distance](http://go.microsoft.com/fwlink/p/?LinkId=246691) sur le site web des téléchargements Microsoft.  
+ Pour utiliser les API de capture distante dans une application qui s'exécute sur un ordinateur, vous devez d'abord installer les Outils de contrôle à distance de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sur cet ordinateur. Les plateformes matérielles prises en charge varient en fonction de la version des Outils de contrôle à distance. Pour plus d’informations sur l’installation des outils de contrôle à distance, consultez la [page de téléchargement des outils de contrôle à distance](https://go.microsoft.com/fwlink/p/?LinkId=246691) sur le site web des téléchargements Microsoft.  
   
  Sinon, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] installe les composants nécessaires pour assurer la capture distante pour les applications 32 bits.  
   
@@ -182,7 +182,7 @@ Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../inc
   
    Si vous n'effectuez pas cette étape, le nom de fichier est default.vsglog. Si vous n'avez pas défini `DONT_SAVE_VSGLOG_TO_TEMP`, l'emplacement du fichier est relatif au répertoire temporaire ; sinon, il est relatif au répertoire de travail ou se situe à un autre emplacement si vous avez spécifié un nom de fichier absolu.  
   
-  Pour [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] applications, l’emplacement du répertoire temp est spécifique à chaque utilisateur et l’application et se trouve généralement dans un emplacement tel que C:\users\\*nom d’utilisateur*\AppData\Local\Packages\\ *nom de famille de package*\TempState\\. Pour les applications de bureau, l’emplacement du répertoire temp est spécifique à chaque utilisateur et se trouve généralement dans un emplacement tel que C:\Users\\*nom d’utilisateur*\AppData\Local\Temp\\.  
+  Pour les applications [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], l’emplacement du répertoire temporaire est propre à chaque utilisateur et application, et se trouve généralement à un emplacement tel que C:\Users\\nom *d’utilisateur*\AppData\Local\Packages\\nom de la *famille de packages*\TempState\\. Pour les applications de bureau, l’emplacement du répertoire temporaire est propre à chaque utilisateur et se trouve généralement à un emplacement tel que C:\Users\\*nom d’utilisateur*\AppData\Local\Temp\\.  
   
 > [!NOTE]
 > Pour écrire à un emplacement spécifique, vous devez avoir des autorisations d'accès en écriture à cet emplacement ; sinon, une erreur se produit. Gardez à l'esprit que les applications [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] sont plus limitées que les applications de bureau en ce qui concerne l'écriture des données et qu'une configuration supplémentaire peut être nécessaire pour leur permettre d'écrire à certains emplacements.  

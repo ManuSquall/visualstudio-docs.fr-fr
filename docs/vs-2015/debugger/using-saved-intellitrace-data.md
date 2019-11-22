@@ -1,5 +1,5 @@
 ---
-title: À l’aide des données IntelliTrace enregistrées | Microsoft Docs
+title: Utilisation des données IntelliTrace enregistrées | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -16,12 +16,12 @@ caps.latest.revision: 112
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e7c8f17bb454c7dc58a355774206b760aac2bdfe
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 5b44ec3fcab0512e50af1debcf6010c1dc584ed0
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67891094"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297130"
 ---
 # <a name="using-saved-intellitrace-data"></a>Utilisation des données IntelliTrace enregistrées
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
   
  Vérifiez que vous disposez des éléments suivants :  
   
-- Fichiers sources et fichiers de symboles (.pdb) correspondants pour votre code d’application. Dans le cas contraire, Visual Studio ne peut pas résoudre les emplacements source et le message « Symboles introuvables » s’affiche. Consultez [spécifier le symbole (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) et [diagnostiquer des problèmes après déploiement](../debugger/diagnose-problems-after-deployment.md).  
+- Fichiers sources et fichiers de symboles (.pdb) correspondants pour votre code d’application. Dans le cas contraire, Visual Studio ne peut pas résoudre les emplacements source et le message « Symboles introuvables » s’affiche. Consultez [spécifier les fichiers de symboles (. pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) et [diagnostiquer les problèmes après le déploiement](../debugger/diagnose-problems-after-deployment.md).  
   
 - Visual Studio Enterprise (mais pas les éditions Professional ou Community) sur votre ordinateur de développement ou autre pour ouvrir les fichiers .iTrace  
   
@@ -98,31 +98,31 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
   
 ##### <a name="to-start-debugging-from-a-performance-event"></a>Pour démarrer le débogage à partir d’un événement de performance  
   
-1. Sous **Violations de performances**, examinez les événements de performance enregistrés, leurs durées totales d’exécution et autres informations associées. Approfondissez ensuite les méthodes appelées pendant un événement de performance spécifique.  
+1. Sous **Violations de performances**, examinez les événements de performance enregistrés, leurs durées totales d'exécution et autres informations associées. Approfondissez ensuite les méthodes appelées pendant un événement de performance spécifique.  
   
-     ![Afficher les détails de l’événement de performance](../debugger/media/ffr-itsummarypageperformance.png "FFR_ITSummaryPagePerformance")  
+     ![Afficher les détails des événements de performances](../debugger/media/ffr-itsummarypageperformance.png "FFR_ITSummaryPagePerformance")  
   
-     Vous pouvez aussi uniquement double-cliquer sur l’événement.  
+     Vous pouvez aussi simplement double-cliquer sur l’événement.  
   
 2. Dans la page d’événement, examinez les durées d’exécution de ces appels. Recherchez un appel lent dans l’arborescence d’exécution.  
   
-     Les appels les plus lents s’affichent dans leur propre section lorsque vous avez plusieurs appels, imbriqués ou non.  
+     Les appels les plus lents s’affichent dans leur propre section quand vous avez plusieurs appels, imbriqués ou non.  
   
 3. Développez cet appel pour examiner les appels imbriqués et les valeurs de paramètre qui ont été enregistrés à ce moment précis.  
   
-     (Clavier : Pour afficher ou masquer un appel imbriqué, appuyez sur la **flèche droite** ou **flèche gauche** respectivement de clé. Pour afficher et masquer les valeurs des paramètres d’un appel imbriqué, appuyez sur la touche **Espace** .)  
+     (Clavier : pour afficher ou masquer un appel imbriqué, appuyez respectivement sur la touche **Flèche droite** ou **Flèche gauche** . Pour afficher et masquer les valeurs des paramètres d’un appel imbriqué, appuyez sur la touche **Espace** .)  
   
      Démarrez le débogage à partir de l’appel.  
   
-     ![Démarrer le débogage à partir de l’appel de méthode](../debugger/media/ffr-itsummarypageperformancemethodscalled.png "FFR_ITSummaryPagePerformanceMethodsCalled")  
+     ![Démarrer le débogage à partir d’un appel de méthode](../debugger/media/ffr-itsummarypageperformancemethodscalled.png "FFR_ITSummaryPagePerformanceMethodsCalled")  
   
      Vous pouvez également simplement double-cliquer sur l’appel ou appuyer sur la touche **Entrée** .  
   
      Si la méthode se trouve dans votre code d’application, Visual Studio y accède.  
   
-     ![Accéder au code d’application à partir de l’événement de performance](../debugger/media/ffr-itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")  
+     ![Accéder au code de l’application à partir de l’événement de performances](../debugger/media/ffr-itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")  
   
-     Vous pouvez maintenant examiner d’autres valeurs enregistrées, la pile des appels, parcourir votre code ou utiliser la fenêtre **IntelliTrace** pour [remonter ou avancer « dans le temps » entre d’autres méthodes](../debugger/intellitrace.md) appelées pendant cet événement de performance.  
+     Vous pouvez maintenant examiner d’autres valeurs enregistrées, la pile des appels, parcourir votre code ou utiliser la fenêtre **IntelliTrace** pour [remonter ou avancer « dans le temps » entre d’autres méthodes](../debugger/intellitrace.md) appelées pendant cet événement de performance.  
   
 ### <a name="ExceptionData"></a> Données d’exception  
  Examinez les exceptions levées et enregistrées pour votre application. Vous pouvez regrouper les exceptions qui ont le même type et la même pile des appels afin d’afficher uniquement l’exception la plus récente.  
@@ -131,15 +131,15 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
   
 1. Sous **Données d’exception**, examinez les événements d’exception enregistrés, leurs types, leurs messages et à quel moment les exceptions se sont produites. Pour approfondir le code, démarrez le débogage à partir de l’événement le plus récent d’un groupe d’exceptions.  
   
-     ![Démarrer le débogage à partir de l’événement d’exception](../debugger/media/ffr-itsummarypageexception.png "FFR_ITSummaryPageException")  
+     ![Démarrer le débogage à partir d’un événement d’exception](../debugger/media/ffr-itsummarypageexception.png "FFR_ITSummaryPageException")  
   
-     Vous pouvez aussi uniquement double-cliquer sur l’événement. Si les événements ne sont pas regroupés, choisissez **Déboguer cet événement**.  
+     Vous pouvez aussi simplement double-cliquer sur l’événement. Si les événements ne sont pas regroupés, choisissez **Déboguer cet événement**.  
   
      Si l’exception s’est produite dans votre code d’application, Visual Studio accède à l’emplacement où l’exception s’est produite.  
   
-     ![Accéder au code d’application à partir d’un événement d’exception](../debugger/media/ffr-itsummarypageexceptiongotocode.png "FFR_ITSummaryPageExceptionGoToCode")  
+     ![Accéder au code de l’application à partir d’un événement d’exception](../debugger/media/ffr-itsummarypageexceptiongotocode.png "FFR_ITSummaryPageExceptionGoToCode")  
   
-     Vous pouvez maintenant examiner d’autres valeurs enregistrées, la pile des appels, ou utiliser la fenêtre **IntelliTrace** pour [remonter ou avancer « dans le temps » entre les autres événements enregistrés](../debugger/intellitrace.md), le code connexe et les valeurs enregistrées à ces moments précis.  
+     Vous pouvez maintenant examiner d'autres valeurs enregistrées, la pile des appels, ou utiliser la fenêtre **IntelliTrace** pour [remonter ou avancer « dans le temps » entre les autres événements enregistrés](../debugger/intellitrace.md), le code connexe et les valeurs enregistrées à ces moments précis.  
   
     |**Colonne**|**Affiche**|  
     |----------------|-------------------|  
@@ -161,13 +161,13 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
   
 1. Copiez l’ID de corrélation SharePoint à partir de sa source.  
   
-    Par exemple :  
+    Par exemple :  
   
-    ![IntelliTrace &#45; erreur SharePoint &#45; ID de corrélation](../debugger/media/sharepointerror-intellitrace.png "SharePointError_IntelliTrace")  
+    ![ID &#45; de corrélation &#45; d’erreur SharePoint IntelliTrace](../debugger/media/sharepointerror-intellitrace.png "SharePointError_IntelliTrace")  
   
 2. Ouvrez le fichier .iTrace, puis pointez sur **Analyse** et entrez l’ID de corrélation SharePoint pour examiner la demande correspondante de site web et les événements inscrits.  
   
-    ![Journal IntelliTrace &#45; ID de corrélation SharePoint entrez](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")  
+    ![Journal &#45; IntelliTrace-entrer l’ID de corrélation SharePoint](../debugger/media/entersharepointcorrelationid.png "EnterSharePointCorrelationID")  
   
 3. Sous **Événements de requête**, examinez les événements. En commençant à partir du haut, les événements apparaissent dans l’ordre dans lequel ils se produisent.  
   
@@ -175,7 +175,7 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
   
    2. Sélectionnez **Démarrer le débogage** pour démarrer le débogage au point où l’événement s’est produit.  
   
-      ![Fichier journal IntelliTrace &#45; afficher une requête web &#43; événements](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")  
+      ![Fichier &#45; Journal IntelliTrace-afficher les &#43; événements de requête Web](../debugger/media/entersharepointcorrelationid2.png "EnterSharePointCorrelationID2")  
   
    Vous pouvez voir ces types d’événements SharePoint avec des événements IntelliTrace :  
   
@@ -205,9 +205,9 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
   
 3. Sélectionnez **Exception de débogage** pour démarrer le débogage à l’emplacement et au moment où l’exception s’est produite.  
   
-    ![Journal IntelliTrace &#45; SharePoint des exceptions non gérées](../debugger/media/sharepointunhandledexceptions-intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
+    ![Journal &#45; IntelliTrace-exceptions SharePoint non gérées](../debugger/media/sharepointunhandledexceptions-intellitrace.png "SharePointUnhandledExceptions_IntelliTrace")  
   
-   Pour une procédure pas à pas, consultez [procédure pas à pas : Débogage d’une Application SharePoint à l’aide d’IntelliTrace](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4). Pour les types de données enregistrées par l’agent, consultez [fonctionnalités IntelliTrace](../debugger/intellitrace-features.md).  
+   Pour obtenir une procédure pas à pas, consultez [procédure pas à pas : débogage d’une application SharePoint à l’aide d’IntelliTrace](https://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4). Pour obtenir les types de données que l’agent enregistre, consultez [fonctionnalités IntelliTrace](../debugger/intellitrace-features.md).  
   
 ### <a name="ThreadsList"></a> Liste de threads  
  Examinez les threads enregistrés qui se sont exécutés dans le processus cible. Vous pouvez commencer à déboguer à partir du premier événement IntelliTrace valide d’un thread sélectionné.  
@@ -225,7 +225,7 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
 |**Colonne**|**Affiche**|  
 |----------------|-------------------|  
 |**ID**|Numéro d’ID de thread|  
-|**Name**|Nom du thread. Les threads sans nom apparaissent en tant que « \<Sans nom> ».|  
+|**Nom**|Nom du thread. Les threads sans nom apparaissent en tant que « \<Sans nom> ».|  
 |**Heure de début**|Heure de création du thread.|  
 |**Heure de fin**|Heure à laquelle le thread s’est terminé|  
   
@@ -256,11 +256,11 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
   
 |**Colonne**|**Affiche**|  
 |----------------|-------------------|  
-|**Nom du module**|Nom de fichier du module|  
-|**Chemin du module**|Emplacement de chargement du module sur le disque|  
-|**ID de module**|Identificateur unique du module, spécifique à la version et qui contribue aux fichiers de symboles correspondants (PDB). Consultez [Finding symbol (.pdb) files and source files](https://msdn.microsoft.com/05384c85-d264-4e18-abaa-aa482ab25470).|  
+|**Nom de module**|Nom de fichier du module|  
+|**Chemin de module**|Emplacement de chargement du module sur le disque|  
+|**ID de module**|Identificateur unique du module, spécifique à la version et qui contribue aux fichiers de symboles correspondants (PDB). Consultez [Rechercher des fichiers de symboles (.pdb) et des fichiers source](https://msdn.microsoft.com/05384c85-d264-4e18-abaa-aa482ab25470).|  
   
-### <a name="where-can-i-get-more-information"></a>Où peut-on obtenir plus d’informations ?  
+### <a name="where-can-i-get-more-information"></a>Q : Où puis-je obtenir plus d’informations ?  
  [Utilisation du collecteur autonome IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)  
   
  [Fonctionnalités IntelliTrace](../debugger/intellitrace-features.md)  
@@ -270,7 +270,7 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
  [IntelliTrace](../debugger/intellitrace.md)  
   
 #### <a name="forums"></a>Forums  
- [Débogueur Visual Studio](http://go.microsoft.com/fwlink/?LinkId=262263)  
+ [Débogueur Visual Studio](https://go.microsoft.com/fwlink/?LinkId=262263)  
   
-#### <a name="guidance"></a>Assistance  
- [Test de livraison continue avec Visual Studio 2012 – chapitre 6 : Une boîte à outils de test](http://go.microsoft.com/fwlink/?LinkID=255203)
+#### <a name="guidance"></a>Conseils  
+ [Test de la livraison continue avec Visual Studio 2012 - Chapitre 6 : Boîte à outils de test](https://go.microsoft.com/fwlink/?LinkID=255203)

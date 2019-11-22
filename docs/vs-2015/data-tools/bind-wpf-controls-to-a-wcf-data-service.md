@@ -18,12 +18,12 @@ caps.latest.revision: 44
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 421bd778b86aa223e1e7b3a96aa3943a86588174
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a3d1aab68e3dc9f33e0b3e9f9a5665d59f6f2ddc
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662517"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299408"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Lier des contrôles WPF à un service de données WCF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Dans cette procédure pas à pas, vous allez créer une application WPF qui cont
 
 - [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
 
-- Accès à une instance en cours d'exécution de SQL Server ou SQL Server Express à laquelle est attaché l'exemple de base de données AdventureWorksLT. Vous pouvez télécharger la base de données AdventureWorksLT à partir du [site Web CodePlex](http://go.microsoft.com/fwlink/?linkid=87843).
+- Accès à une instance en cours d'exécution de SQL Server ou SQL Server Express à laquelle est attaché l'exemple de base de données AdventureWorksLT. Vous pouvez télécharger la base de données AdventureWorksLT à partir du [site Web CodePlex](https://go.microsoft.com/fwlink/?linkid=87843).
 
   La connaissance préalable des concepts suivants s'avère également utile, mais n'est pas obligatoire pour suivre cette procédure pas à pas :
 
@@ -107,7 +107,7 @@ Dans cette procédure pas à pas, vous allez créer une application WPF qui cont
 
 7. Dans la page **Choisir vos objets de base de données**, développez **Tables**, puis sélectionnez la table **SalesOrderHeader**.
 
-8. Cliquez sur **Finish**.
+8. Cliquez sur **Terminer**.
 
 ## <a name="create-the-service"></a>Créer le service
  Créez un [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] pour exposer les données du Entity Data Model à une application WPF.
@@ -116,7 +116,7 @@ Dans cette procédure pas à pas, vous allez créer une application WPF qui cont
 
 1. Dans le menu **Projet**, sélectionnez **Ajouter un nouvel élément**.
 
-2. Dans la liste Modèles installés, cliquez sur **Web**, puis sélectionnez l’élément de projet **service de données WCF** .
+2. Dans la liste des modèles installés, cliquez sur **Web**, puis sélectionnez l'élément de projet **Service de données WCF**.
 
 3. Dans la zone **nom** , tapez `AdventureWorksService.svc`, puis cliquez sur **Ajouter**.
 
@@ -180,7 +180,7 @@ Dans cette procédure pas à pas, vous allez créer une application WPF qui cont
 
 #### <a name="to-create-the-window-layout"></a>Pour créer la disposition de fenêtre
 
-1. Dans **Explorateur de solutions**, double-cliquez sur MainWindow. Xaml.
+1. Dans l'**Explorateur de solutions**, double-cliquez sur MainWindow.xaml.
 
      La fenêtre s'ouvre dans le Concepteur WPF.
 
@@ -273,7 +273,7 @@ Dans cette procédure pas à pas, vous allez créer une application WPF qui cont
      [!code-vb[Data_WPFWCF#4](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfwcf/vb/adventureworkssaleseditor/mainwindow.xaml.vb#4)]
 
 ## <a name="saving-changes-to-sales-records"></a>Enregistrement des modifications apportées aux enregistrements de ventes
- Ajoutez du code qui permet aux utilisateurs d’afficher et d’enregistrer les modifications apportées aux enregistrements de ventes à l’aide du bouton **enregistrer les modifications** .
+ Ajoutez du code permettant aux utilisateurs d'afficher et enregistrer les modifications apportées aux enregistrements de vente à l'aide du bouton **Enregistrer les modifications**.
 
 #### <a name="to-add-the-ability-to-save-changes-to-sales-records"></a>Pour ajouter la possibilité d'enregistrer les modifications apportées aux enregistrements de vente
 
@@ -291,7 +291,7 @@ Dans cette procédure pas à pas, vous allez créer une application WPF qui cont
 
 #### <a name="to-test-the-application"></a>Pour tester l'application
 
-1. Dans le menu **générer** , cliquez sur **générer la solution**. Vérifiez que la solution se génère sans erreur.
+1. Dans le menu **Générer**, cliquez sur **Générer la solution**. Vérifiez que la solution se génère sans erreur.
 
 2. Appuyez sur **CTRL + F5**.
 
@@ -323,4 +323,4 @@ Dans cette procédure pas à pas, vous allez créer une application WPF qui cont
 - Découvrez comment utiliser la fenêtre **Sources de données** dans Visual Studio pour afficher des données associées (c’est-à-dire des données dans une relation parent-enfant) dans des contrôles WPF. Pour plus d’informations, consultez [procédure pas à pas : affichage de données connexes dans une application WPF](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md).
 
 ## <a name="see-also"></a>Voir aussi
- [Lier des contrôles WPF à des données dans Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md) [lier des contrôles WPF à des données dans Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md) [lier des contrôles WPF à un DataSet](../data-tools/bind-wpf-controls-to-a-dataset.md) [vue d'](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb) ensemble [Entity Framework](https://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0) vue d’ensemble de [WPF et vue d’ensemble du Concepteur Silverlight](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62) [données Vue d’ensemble](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211) de la liaison
+ [Lier des contrôles WPF à des données dans Visual Studio lier des](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md) [contrôles WPF à des données dans Visual Studio lier des](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md) [contrôles WPF à un DataSet](../data-tools/bind-wpf-controls-to-a-dataset.md) [vue d'](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb) ensemble [Entity Framework](https://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0) vue d’ensemble de [WPF et vue](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62) d’ensemble du Concepteur Silverlight vue d’ensemble de la liaison de [données](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211)

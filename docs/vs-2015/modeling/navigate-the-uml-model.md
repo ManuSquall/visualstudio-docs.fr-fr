@@ -11,12 +11,12 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7b90d8b532b004a7cbdaeed762300a0daf9ab45c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 23f87c81e43b2dfafb1c9c78c3135faff809bb9f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668542"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74289851"
 ---
 # <a name="navigate-the-uml-model"></a>Naviguer dans le modèle UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "72668542"
 Cette rubrique présente les principaux types du modèle UML.
 
 ## <a name="the-model-elements-model-and-model-store"></a>Les éléments de modèle, le modèle et le magasin de modèles
- Les types définis dans l’assembly **Microsoft. VisualStudio. Uml. interfaces. dll** correspondent aux types définis dans la [spécification UML, version 2.1.2](http://www.omg.org/spec/UML/2.1.2/Superstructure/PDF/).
+ Les types définis dans l’assembly **Microsoft. VisualStudio. Uml. interfaces. dll** correspondent aux types définis dans la [spécification UML, version 2.1.2](https://www.omg.org/spec/UML/2.1.2/Superstructure/PDF/).
 
  Les types de la spécification UML sont réalisés en tant qu'interfaces dans Visual Studio. La lettre « I » est ajoutée devant le nom de chaque type. Par exemple : [IElement](/previous-versions/dd516035(v=vs.140)), [IClass](/previous-versions/dd523539%28v%3dvs.140%29), [IOperation](/previous-versions/dd481186(v=vs.140)).
 
@@ -45,7 +45,7 @@ Cette rubrique présente les principaux types du modèle UML.
 
  Si vous supprimez un élément du modèle, toute relation à laquelle il participe est supprimée automatiquement et la propriété à l'autre extrémité est mise à jour.
 
- Si la spécification UML assigne une multiplicité de 0..1 à une propriété, elle peut avoir la valeur `null`. Une multiplicité avec un maximum supérieur à 1 signifie que la propriété .NET a le type : `IEnumerable<`*type* `>`.
+ Si la spécification UML assigne une multiplicité de 0..1 à une propriété, elle peut avoir la valeur `null`. Une multiplicité dont la limite maximale est supérieure à 1 signifie que la propriété .NET a le type : `IEnumerable<`*Type*`>`.
 
  Pour plus d’informations sur le parcours des relations, consultez [Parcourir les relations avec l’API UML](../modeling/navigate-relationships-with-the-uml-api.md).
 

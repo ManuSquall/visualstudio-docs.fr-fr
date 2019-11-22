@@ -9,19 +9,19 @@ caps.latest.revision: 10
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c2c131032a97231dce0394065d78505e936e3e91
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 33a7f5a0f183030f9de021df328f8c5e50f5fd5a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656024"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300894"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Comment : étendre le concepteur de langage spécifique à un domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez créer des extensions pour le concepteur que vous utilisez pour modifier les définitions DSL. Les types d’extensions que vous pouvez effectuer incluent l’ajout de commandes de menu, l’ajout de gestionnaires pour les gestes par glisser-cliquer et le double-clic, et les règles qui sont déclenchées quand des types particuliers de valeurs ou de relations changent. Les extensions peuvent être empaquetées en tant qu’extension d’intégration Visual Studio (VSIX) et distribuées à d’autres utilisateurs.
 
- Pour obtenir un exemple de code et des informations supplémentaires sur cette fonctionnalité, consultez le [site Web du kit de développement logiciel (SDK) Visual Studio Visualization and Modeling SDK (VMSDK)](http://go.microsoft.com/fwlink/?LinkID=186128).
+ Pour obtenir un exemple de code et des informations supplémentaires sur cette fonctionnalité, consultez le [site Web du kit de développement logiciel (SDK) Visual Studio Visualization and Modeling SDK (VMSDK)](https://go.microsoft.com/fwlink/?LinkID=186128).
 
 ## <a name="setting-up-the-solution"></a>Configuration de la solution
  Configurez un projet qui contient le code de votre extension et un projet VSIX qui exporte le projet. Votre solution peut contenir d’autres projets incorporés dans la même extension VSIX.
@@ -48,13 +48,13 @@ Vous pouvez créer des extensions pour le concepteur que vous utilisez pour modi
 
 7. Dans le projet de bibliothèque de classes, ajoutez des références aux assemblys suivants :
 
-     Microsoft. VisualStudio. CoreUtility
+     Microsoft.VisualStudio.CoreUtility
 
-     Microsoft. VisualStudio. Modeling. Sdk. 11.0
+     Microsoft.VisualStudio.Modeling.Sdk.11.0
 
-     Microsoft. VisualStudio. Modeling. Sdk. Diagrams. 11.0
+     Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0
 
-     Microsoft. VisualStudio. Modeling. Sdk. DslDefinition. 11.0
+     Microsoft.VisualStudio.Modeling.Sdk.DslDefinition.11.0
 
      Microsoft.VisualStudio.Modeling.Sdk.Integration.11.0
 
@@ -69,9 +69,9 @@ Vous pouvez créer des extensions pour le concepteur que vous utilisez pour modi
 ## <a name="testing-and-deployment"></a>Tests et déploiement
  Pour tester l’une des extensions de cette rubrique, générez et exécutez la solution. Une instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] s’ouvre. Dans cette instance, ouvrez une solution DSL. Modifiez le diagramme DslDefinition. Le comportement de l’extension est visible.
 
- Pour déployer les extensions sur le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] principal et sur d’autres ordinateurs, procédez comme suit :
+ Pour déployer les extensions sur le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]principal et sur d’autres ordinateurs, procédez comme suit :
 
-1. Recherchez le fichier d’installation VSIX dans votre projet VSIX dans bin \\ * \\ \*. vsix
+1. Rechercher le fichier d’installation de VSIX dans votre projet VSIX dans emplacement\\*\*\\\*.vsix
 
 2. Copiez ce fichier sur l’ordinateur cible, puis dans l’Explorateur Windows (ou l’Explorateur de fichiers), double-cliquez dessus.
 

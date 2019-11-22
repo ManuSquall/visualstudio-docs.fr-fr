@@ -9,19 +9,17 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9e05fc6615fb2d836f3ea029912374f49b4d97a1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 379fc9c28b8d36f7bd606719a443b16108f0095d
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646879"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299973"
 ---
 # <a name="step-9-try-other-features"></a>Étape 9 : Tester d’autres fonctionnalités
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pour découvrir d'autres fonctionnalités, essayez de modifier les icônes et les couleurs, d'ajouter une horloge de jeu et d'ajouter des sons. Pour augmenter la difficulté du jeu, essayez d'agrandir la taille du plateau et d'ajuster la minuterie.
-
- Pour télécharger une version complète de l’exemple, consultez [Exemple complet de didacticiel de création d’un jeu de combinaisons](http://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba).
 
 ### <a name="to-try-other-features"></a>Pour essayer d’autres fonctionnalités
 
@@ -38,7 +36,7 @@ Pour découvrir d'autres fonctionnalités, essayez de modifier les icônes et le
 - Ajoutez un son lorsque le joueur trouve une paire identique, un autre lorsqu'il sélectionne deux icônes différentes et un troisième lorsque le programme masque à nouveau les icônes.
 
     > [!TIP]
-    > Pour émettre des sons, vous pouvez utiliser l'espace de noms System.media. Pour plus d’informations, consultez [Lire des sons dans une application Windows Forms (C# .NET)](http://youtu.be/qOh4ooHg1UU) ou [Comment lire de l’audio dans Visual Basic](http://youtu.be/-4oPDeQrtMs).
+    > Pour émettre des sons, vous pouvez utiliser l'espace de noms System.media. Pour plus d’informations, consultez [Lire des sons dans une application Windows Forms (C# .NET)](https://www.youtube.com/watch?v=qOh4ooHg1UU&feature=youtu.be) ou [Comment lire de l’audio dans Visual Basic](https://www.youtube.com/watch?v=-4oPDeQrtMs&feature=youtu.be).
 
 - Augmentez la difficulté du jeu en agrandissant la taille du plateau.
 
@@ -49,8 +47,8 @@ Pour découvrir d'autres fonctionnalités, essayez de modifier les icônes et le
 
 ### <a name="to-continue-or-review"></a>Pour continuer ou examiner
 
-- Si vous êtes bloqué ou avez des questions liées à la programmation, essayez de publier votre question sur l'un des forums MSDN. Consultez le [Forum Visual Basic](http://social.msdn.microsoft.com/Forums/home?forum=vbgeneral) et [Forum Visual C#](http://social.msdn.microsoft.com/Forums/home?forum=csharpgeneral).
+- Si vous êtes bloqué ou avez des questions liées à la programmation, essayez de publier votre question sur l'un des forums MSDN. Consultez le [Forum Visual Basic](https://social.msdn.microsoft.com/Forums/en-US/home) et [Forum Visual C#](https://social.msdn.microsoft.com/Forums/en-US/home).
 
-- Des ressources vidéo d'apprentissage efficaces et gratuites sont à votre disposition. Pour en savoir plus sur la programmation en Visual Basic, consultez [Notions de base de Visual Basic : développement pour les débutants](http://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners). Pour en savoir plus sur la programmation en C#, consultez [Notions de base de C# : développement pour les débutants](http://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners).
+- Des ressources vidéo d'apprentissage efficaces et gratuites sont à votre disposition. Pour en savoir plus sur la programmation en Visual Basic, consultez [Notions de base de Visual Basic : développement pour les débutants](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners). Pour en savoir plus sur la programmation en C#, consultez [Notions de base de C# : développement pour les débutants](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners).
 
 - Pour revenir à l’étape précédente du didacticiel, consultez [Étape 8 : Ajouter une méthode pour vérifier si le joueur a gagné](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md).

@@ -11,14 +11,14 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/11/2017
 ms.author: ghogen
-ms.openlocfilehash: d1e21642f8ff707c81dcf2e493e0784c1c04b7ed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bcc290bfd9d646355479c2a9fe83a48f43dfa432
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62576285"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298031"
 ---
-# <a name="how-to-manage-service-configurations-and-profiles"></a>Gestion des configurations de service et des profils
+# <a name="how-to-manage-service-configurations-and-profiles"></a>Guide pratique pour gérer les configurations et les profils de service
 ## <a name="overview"></a>Vue d'ensemble
 Lorsque vous publiez un service cloud, Visual Studio stocke les informations de configuration dans deux types de fichiers de configuration : les configurations de service et les profils. Les configurations de service (fichiers .cscfg) stockent les paramètres des environnements de déploiement pour un service cloud Azure. Azure utilise ces fichiers de configuration pour gérer vos services cloud. D'autre part, les profils (fichiers .azurePubxml) stockent les paramètres de publication des services cloud. Ces paramètres correspondent à l'enregistrement de ce que vous sélectionnez lorsque vous utilisez l'Assistant Publication. Ils sont utilisés localement par Visual Studio. Cette rubrique explique comment utiliser les deux types de fichiers de configuration.
 
@@ -58,7 +58,7 @@ Vous pouvez également ouvrir la boîte de dialogue **Gérer les configurations*
     Le nom du fichier de configuration de service est modifié dans le projet Azure dans l'Explorateur de solutions.
 
 ### <a name="to-change-a-service-configuration"></a>Pour modifier une configuration de service
-* Pour modifier une configuration de service, ouvrez le menu contextuel du rôle que vous souhaitez modifier dans le projet Azure, puis sélectionnez **Propriétés**. Voir [Guide pratique pour configurer les rôles pour un service cloud Azure avec Visual Studio](vs-azure-tools-configure-roles-for-cloud-service.md) pour plus d’informations.
+* Pour modifier une configuration de service, ouvrez le menu contextuel du rôle que vous souhaitez modifier dans le projet Azure, puis sélectionnez **Propriétés**. Pour plus d’informations, consultez [Comment : configurer les rôles pour un service Cloud Azure avec Visual Studio](vs-azure-tools-configure-roles-for-cloud-service.md) .
 
 ## <a name="make-different-setting-combinations-by-using-profiles"></a>Réaliser différentes combinaisons de paramètres à l'aide des profils
 En utilisant un profil, vous pouvez renseigner automatiquement l’ **Assistant Publication** avec une combinaison de paramètres différente pour chaque objectif. Par exemple, vous pouvez créer un profil pour le débogage et un autre pour les versions finales. Dans ce cas, votre profil **Débogage** aurait **IntelliTrace** activé et la configuration **Débogage** sélectionnée, tandis que votre profil **Version** aurait **IntelliTrace** désactivé et la configuration **Version** sélectionnée. Vous pourriez également utiliser des profils différents pour déployer un service à l'aide de comptes de stockage différents.
@@ -80,7 +80,7 @@ Lorsque vous exécutez l'Assistant pour la première fois, un profil par défaut
    
     Le nouveau profil apparaît dans la liste des profils cibles.
 6. Dans la liste **Profil cible** , sélectionnez le profil que vous venez de créer. Les paramètres de l'Assistant Publication sont renseignés avec les options de profil que vous avez sélectionnées.
-7. Sélectionnez les boutons **Précédent** et **Suivant** pour afficher chaque page de l’Assistant Publication, puis personnalisez les paramètres de ce profil. Pour plus d’informations, consultez [Assistant Publication d’application Azure](http://go.microsoft.com/fwlink/p/?LinkID=623085) .
+7. Sélectionnez les boutons **Précédent** et **Suivant** pour afficher chaque page de l’Assistant Publication, puis personnalisez les paramètres de ce profil. Pour plus d’informations, consultez [Assistant Publication d’application Azure](https://go.microsoft.com/fwlink/p/?LinkID=623085) .
 8. Une fois la personnalisation des paramètres terminée, sélectionnez **Suivant** pour revenir à la page Paramètres. Le profil est enregistré quand vous publiez le service avec ces paramètres ou si vous sélectionnez **Enregistrer** en regard de la liste de profils.
 
 ### <a name="to-rename-or-delete-a-profile"></a>Pour renommer ou supprimer un profil
@@ -93,9 +93,9 @@ Lorsque vous exécutez l'Assistant pour la première fois, un profil par défaut
 ### <a name="to-change-a-profile"></a>Pour modifier un profil
 1. Ouvrez le menu contextuel de votre projet Azure, puis sélectionnez **Publier**.
 2. Dans la liste **Profil cible** , sélectionnez le profil que vous voulez modifier.
-3. Sélectionnez les boutons **Précédent** et **Suivant** pour afficher chaque page de l’Assistant Publication, puis modifiez les paramètres de votre choix. Pour plus d’informations, consultez [Assistant Publication d’application Azure](http://go.microsoft.com/fwlink/p/?LinkID=623085) .
+3. Sélectionnez les boutons **Précédent** et **Suivant** pour afficher chaque page de l’Assistant Publication, puis modifiez les paramètres de votre choix. Pour plus d’informations, consultez [Assistant Publication d’application Azure](https://go.microsoft.com/fwlink/p/?LinkID=623085) .
 4. Une fois la modification des paramètres terminée, sélectionnez **Suivant** pour revenir à la page **Paramètres**.
 5. (Facultatif) Sélectionnez **Publier** pour publier le service cloud avec les nouveaux paramètres. Si vous ne souhaitez pas publier votre service cloud à ce stade et que vous fermez l'Assistant Publication, Visual Studio vous demandera si vous souhaitez enregistrer les modifications apportées au profil.
 
 ## <a name="next-steps"></a>Étapes suivantes
-Pour en savoir plus sur la configuration des autres parties de votre projet Azure à partir de Visual Studio, consultez [Configuration d’un projet Azure](http://go.microsoft.com/fwlink/p/?LinkID=623075)
+Pour en savoir plus sur la configuration des autres parties de votre projet Azure à partir de Visual Studio, consultez [Configuration d’un projet Azure](https://go.microsoft.com/fwlink/p/?LinkID=623075)

@@ -11,12 +11,12 @@ caps.latest.revision: 50
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b02b1e5bac7f39bcabb9cdc9b5c3acabe169827b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8de964bebb59507da06bb4444ffd6067ffc43b63
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655086"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299339"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Personnalisation et extension d'un langage spécifique à un domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,8 +45,8 @@ Le kit de développement logiciel (SDK) de modélisation et de visualisation de 
 |L’icône sur la forme change pour indiquer l’État.|Définissez la visibilité du mappage de l’élément décoratif dans la fenêtre Détails DSL. Localisez plusieurs décorateurs d’images à la même position. Consultez [mise à jour des formes et des connecteurs pour refléter le modèle](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md).<br /><br /> Ou substituez `ImageField.GetDisplayImage()`. Consultez l’exemple dans <xref:Microsoft.VisualStudio.Modeling.Diagrams.ImageField>.|
 |Définir une image d’arrière-plan sur n’importe quelle forme|Remplacez InitializeInstanceResources () pour ajouter un ImageField ancré. Consultez [Personnalisation de la présentation dans le diagramme](../modeling/customizing-presentation-on-the-diagram.md).|
 |Imbriquer des formes à n’importe quelle profondeur|Configurez une arborescence d’incorporation récursive. Définissez BoundsRules pour contenir les formes. Consultez [Personnalisation de la présentation dans le diagramme](../modeling/customizing-presentation-on-the-diagram.md).|
-|Attachez des connecteurs à des points fixes sur les limites d’un élément.|Définissez les éléments terminaux incorporés, représentés par de petits ports sur le diagramme. Utilisez BoundsRules pour corriger les ports en place. Consultez l’exemple de schéma de circuit dans le [Kit de développement logiciel de visualisation et de modélisation](http://go.microsoft.com/fwlink/?LinkID=186128).|
-|Champ de texte affiche une valeur dérivée d’autres valeurs.|Mappez l’élément décoratif de texte à une propriété de domaine de stockage calculée ou personnalisée. Pour plus d’informations, consultez [Propriétés de stockage calculées et personnalisées](../modeling/calculated-and-custom-storage-properties.md).|
+|Attachez des connecteurs à des points fixes sur les limites d’un élément.|Définissez les éléments terminaux incorporés, représentés par de petits ports sur le diagramme. Utilisez BoundsRules pour corriger les ports en place. Consultez l’exemple de schéma de circuit dans le [Kit de développement logiciel de visualisation et de modélisation](https://go.microsoft.com/fwlink/?LinkID=186128).|
+|Champ de texte affiche une valeur dérivée d’autres valeurs.|Mappez l’élément décoratif de texte à une propriété de domaine de stockage calculée ou personnalisée. Pour plus d’informations, consultez [calculées et les propriétés de stockage personnalisé](../modeling/calculated-and-custom-storage-properties.md).|
 |Propager les modifications entre les éléments de modèle ou entre les formes|Consultez [validation dans un langage spécifique à un domaine](../modeling/validation-in-a-domain-specific-language.md).|
 |Propage les modifications à des ressources telles que d’autres extensions de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] en dehors du magasin.|Consultez [les gestionnaires d’événements pour propager les modifications en dehors du modèle](../modeling/event-handlers-propagate-changes-outside-the-model.md).|
 |La fenêtre Propriétés affiche les propriétés d’un élément associé.|Configurez le transfert de propriété. Consultez [Personnalisation de la fenêtre Propriétés](../modeling/customizing-the-properties-window.md).|
@@ -56,9 +56,9 @@ Le kit de développement logiciel (SDK) de modélisation et de visualisation de 
 |Activer la copie, couper et coller|Définissez la propriété **activer la copie de collage** du nœud **éditeur** dans l’Explorateur DSL.|
 |Copier les liens de référence et leurs cibles chaque fois qu’un élément est copié. Par exemple, copiez les commentaires attachés à un élément.|Définissez la propriété **propager la copie** du rôle source (représenté par la ligne d’un côté de la relation de domaine dans le diagramme de définition DSL).<br /><br /> Écrivez du code pour remplacer ProcessOnCopy pour obtenir des effets plus complexes.<br /><br /> Consultez [Personnalisation du comportement](../modeling/customizing-copy-behavior.md)de la copie.|
 |Supprimer, reparenter ou réassocier des éléments connexes lorsqu’un élément est supprimé.|Définissez la valeur de **suppression des propagations** d’un rôle de relation. Pour les effets plus complexes, substituez les méthodes `ShouldVisitRelationship` et `ShouldVisitRolePlayer` dans la classe `MyDslDeleteClosure`, définie dans **DomainModel.cs**<br /><br /> Voir [Personnalisation du comportement de suppression](../modeling/customizing-deletion-behavior.md)|
-|Conserver la disposition et l’apparence de la forme lors de la copie et du glisser-déplacer.|Ajoutez les formes et les connecteurs au `ElementGroupPrototype` copié. La méthode la plus pratique pour remplacer est `ElementOperations.CreateElementGroupPrototype()`<br /><br /> Consultez [Personnalisation du comportement](../modeling/customizing-copy-behavior.md)de la copie.|
+|Conserver la disposition et l’apparence de la forme lors de la copie et du glisser-déplacer.|Ajoutez les formes et les connecteurs au `ElementGroupPrototype`copié. La méthode la plus pratique pour remplacer est `ElementOperations.CreateElementGroupPrototype()`<br /><br /> Consultez [Personnalisation du comportement](../modeling/customizing-copy-behavior.md)de la copie.|
 |Coller des formes à un emplacement choisi, par exemple la position actuelle du curseur.|Substituez `ClipboardCommandSet.ProcessOnCopy()` pour utiliser la version spécifique à l’emplacement de `ElementOperations.Merge().` consultez [Personnalisation du comportement](../modeling/customizing-copy-behavior.md)de la copie.|
-|Créer des liens supplémentaires lors du collage|Remplacez ClipboardCommandSet. ProcessOnPasteCommand ()|
+|Créer des liens supplémentaires lors du collage|Override ClipboardCommandSet.ProcessOnPasteCommand()|
 |Activer le glisser-déplacer à partir de ce diagramme, d’autres DSL ou diagrammes UML et des éléments Windows|Consultez [Comment : ajouter un gestionnaire de glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md)|
 |Autoriser le glissement d’une forme ou d’un outil sur une forme enfant, telle qu’un port, comme si elle était glissée sur le parent.|Définissez une directive de fusion d’élément sur la classe d’objet cible pour transférer l’objet déplacé vers le parent. Consultez [Personnalisation de la création et du déplacement des éléments](../modeling/customizing-element-creation-and-movement.md).|
 |Autoriser le glissement d’une forme ou d’un outil sur une forme et avoir des liens ou des objets supplémentaires créés. Par exemple, pour autoriser la suppression d’un commentaire sur un élément auquel il doit être lié.|Définissez une directive de fusion d’éléments sur la classe de domaine cible et définissez les liens à générer. Dans les cas complexes, vous pouvez ajouter du code personnalisé. Consultez [Personnalisation de la création et du déplacement des éléments](../modeling/customizing-element-creation-and-movement.md).|

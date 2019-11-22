@@ -13,19 +13,19 @@ caps.latest.revision: 6
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 24f17d6f07840f666dd1bb130be172ffa9d22cd3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 24594edc9be8589acfbe99e92b5952e1ebfdcc9a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663328"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301448"
 ---
 # <a name="select-rule-set-dialog-box-legacy"></a>Sélectionner l'ensemble de règles, boîte de dialogue (héritée)
-Cette rubrique décrit comment utiliser la boîte de dialogue **Sélectionner l’ensemble de règles** dans le [!INCLUDE[wfd1](../includes/wfd1-md.md)] hérité. Utilisez le [!INCLUDE[wfd2](../includes/wfd2-md.md)] hérité lorsque vous devez cibler le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+Cette rubrique décrit comment utiliser la boîte de dialogue **Sélectionner l'ensemble de règles** dans le [!INCLUDE[wfd1](../includes/wfd1-md.md)] hérité. Utilisez le [!INCLUDE[wfd2](../includes/wfd2-md.md)] hérité lorsque vous devez cibler le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
- La boîte de dialogue **Sélectionner l’ensemble de règles** permet de sélectionner un ensemble de règles que vous pouvez utiliser avec une activité [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) . Pour plus d’informations sur l’accès à la boîte de dialogue **Sélectionner l’ensemble de règles** , consultez [How à : Créez un ensemble de règles PolicyActivity (hérité) ](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
+ La boîte de dialogue **Sélectionner l’ensemble de règles** permet de sélectionner un ensemble de règles que vous pouvez utiliser avec une activité [PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65019) . Pour plus d’informations sur l’accès à la boîte de dialogue **Sélectionner l’ensemble de règles** , voir [procédure : créer un ensemble de règles PolicyActivity (hérité)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
 
- Le tableau suivant décrit les éléments d’interface utilisateur de la boîte de dialogue **Sélectionner l’ensemble de règles** .
+ Le tableau suivant décrit les éléments d'interface utilisateur de la boîte de dialogue **Sélectionner l'ensemble de règles**.
 
 |Élément d'interface utilisateur|Description|
 |----------------|-----------------|
@@ -34,14 +34,14 @@ Cette rubrique décrit comment utiliser la boîte de dialogue **Sélectionner l�
 |**Renommer...**|Cliquez pour ouvrir une boîte de dialogue utilisée pour renommer l'ensemble de règle sélectionné.|
 |**Supprimer**|Cliquez pour supprimer l'ensemble de règles sélectionné.|
 |**Aperçu de l’ensemble de règles**|Affiche les règles de l'ensemble de règles sélectionné.|
-|**BIEN**|Cliquez pour affecter l’ensemble de règles sélectionné à l’activité **PolicyActivity** .|
+|**OK**|Cliquez pour affecter l’ensemble de règles sélectionné à l’activité **PolicyActivity** .|
 
  Pour plus d’informations sur la création et la modification des ensembles de règles, consultez [éditeur d’ensemble de règles, boîte de dialogue (héritée)](../workflow-designer/rule-set-editor-dialog-box-legacy.md).
 
 > [!WARNING]
 > L'éditeur de règles du [!INCLUDE[wfd2](../includes/wfd2-md.md)] hérité utilisé pour cibler le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] ne prend pas en charge le multi-ciblage.
 
- Pour plus d’informations sur les conditions, consultez [utilisation de conditions dans les workflows](http://go.microsoft.com/fwlink?LinkID=65009).
+ Pour plus d’informations sur les conditions, consultez [utilisation de conditions dans les workflows](https://go.microsoft.com/fwlink?LinkID=65009).
 
 ## <a name="see-also"></a>Voir aussi
- [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) [Éditeur d’ensemble de règles, boîte de dialogue (héritée)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) [Utilisation de l’activité PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65004) [Utilisation de conditions dans les workflows](http://go.microsoft.com/fwlink?LinkID=65009)
+ [PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65019) [Éditeur d’ensemble de règles, boîte de dialogue (héritée)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) [Utilisation de l’activité PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65004) [Utilisation de conditions dans les workflows](https://go.microsoft.com/fwlink?LinkID=65009)

@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: 6e1b34cbc2497bd70f65021c83db4f59480519f1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ad085cc6c41714a551fbb344274e6d0f164ab67e
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62573204"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297658"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Problèmes connus et dépannage (Visual Studio Tools pour Unity)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,12 +31,12 @@ Dans cette section, vous allez trouver les solutions aux problèmes courants ren
   
 1. Supprimez les anciens fichiers solution et projet de votre projet Unity. Dans le répertoire racine de votre projet Unity, recherchez les fichiers Visual Studio .sln et *.proj, puis supprimez-les.  
   
-2. Importez le package Visual Studio Tools pour Unity dans votre projet Unity. Pour plus d'informations sur l'importation du package VSTU, consultez Configurer Visual Studio Tools pour Unity dans la page [Prise en main](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) .  
+2. Importez le package Visual Studio Tools pour Unity dans votre projet Unity. Pour plus d'informations sur l'importation du package VSTU, consultez Configurer Visual Studio Tools pour Unity dans la page [Prise en main](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md).  
   
 3. Générez les nouveaux fichiers solution et projet. Si vous souhaitez les générer maintenant, dans l'éditeur Unity, dans le menu principal, choisissez **Visual Studio Tools**, **Générer les fichiers projet**. Sinon, vous pouvez ignorer cette étape si vous le souhaitez. Visual Studio Tools pour Unity génère les nouveaux fichiers automatiquement lorsque vous choisissez **Visual Studio Tools**, **Ouvrir dans Visual Studio**.  
   
 ### <a name="visual-studio-wont-load-the-solution-that-visual-studio-tools-for-unity-created"></a>Visual Studio ne charge pas la solution que Visual Studio Tools pour Unity a créée  
- Pour plus d’informations, consultez [la réponse à cette question sur stackoverflow](http://stackoverflow.com/a/24035907/36702).  
+ Pour plus d’informations, consultez [la réponse à cette question sur stackoverflow](https://stackoverflow.com/questions/20086755/unityvs-visual-studio-can-not-open/24035907#24035907).  
   
 ### <a name="on-windows-8-visual-studio-asks-to-download-the-unity-target-framework"></a>Dans Windows 8, Visual Studio vous demande de télécharger le framework cible Unity.  
  UnityVS a besoin de .Net Framework 3.5, qui n’est pas installé par défaut sur Windows 8. Pour résoudre ce problème, suivez les instructions de téléchargement et d’installation de .Net Framework 3.5.  

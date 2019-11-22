@@ -12,18 +12,18 @@ ms.assetid: fbcc42a7-7851-487f-b981-8c4ae7ec7347
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 19144365a428fdde8915f481ce8d12841bddc003
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9f1dab6be397028917976c9827e48a6748ba78bd
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68185270"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296000"
 ---
 # <a name="visual-studio-debugging-samples"></a>Exemples de débogage Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Deux exemples montrent comment étendre le débogueur Visual Studio à l’aide de [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)].  
   
-- L’exemple d’évaluateur d’Expression de débogueur, pour les langages managés, est inclus dans le [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]. Dans le [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] fenêtre, cliquez sur le **exemples** , cliquez sur **tous les** ou **c#** dans la liste des langues, puis cliquez sur **débogueur**.  
+- L’exemple de l’évaluateur d’expression du débogueur, pour les langages managés, est inclus dans la [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]. Dans la fenêtre [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)], cliquez sur l’onglet **exemples** , cliquez sur **C#** **tous** ou dans la liste des langues, puis cliquez sur **débogueur**.  
   
-- Le Visual Studio déboguer moteur exemple, pour les langages natifs, est disponible sur MSDN Code Gallery. Pour plus d’informations, consultez cette page sur le site web de Microsoft : [Exemple de moteur de débogage de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=150236).
+- L’exemple de moteur de débogage Visual Studio, pour les langages natifs, est disponible dans la Galerie de code MSDN. Pour plus d’informations, consultez cette page sur le site Web Microsoft : [exemple de moteur de débogage Visual Studio](https://go.microsoft.com/fwlink/?LinkId=150236).

@@ -1,5 +1,5 @@
 ---
-title: Ajouter du stockage Azure à l’aide des Services connectés
+title: Ajouter le stockage Azure à l’aide de Services connectés
 description: Ajouter le stockage Azure à votre application à l’aide de la boîte de dialogue Ajouter des services connectés de Visual Studio
 author: ghogen
 manager: jillfra
@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/26/2017
 ms.author: ghogen
-ms.openlocfilehash: e68f7503ecc75c03e9f4beda2003415d3175ee7e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6d7bf7901ab33dc6dba50013ebdfa05c3188cd6c
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963851"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300178"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>Ajout de stockage Azure à l’aide des services connectés de Visual Studio
 Avec Visual Studio, vous pouvez connecter les éléments suivants au Stockage Azure à l’aide de la boîte de dialogue **Ajouter des services connectés** :
@@ -63,12 +63,12 @@ Une fois cette opération terminée, la boîte de dialogue **Ajouter des service
 ## <a name="how-your-project-is-modified"></a>Modifications apportées à votre projet
 Quand vous avez terminé la boîte de dialogue, Visual Studio ajoute des références et modifie certains fichiers de configuration. Les modifications spécifiques varient selon le type de projet :
 
-- Projet ASP.NET : [Que s’est-il passé ? – Projets ASP.NET](http://go.microsoft.com/fwlink/p/?LinkId=513126)
-- Projet Core ASP.NET : [Que s’est-il passé ? – Projets ASP.NET 5](http://go.microsoft.com/fwlink/p/?LinkId=513124)
-- Projet de service cloud (rôles web et de travail) : [Que s’est-il passé ? – Projets de service cloud](http://go.microsoft.com/fwlink/p/?LinkId=516965)
+- Projet ASP.NET : [Que s’est-il passé ? – Projets ASP.NET](https://go.microsoft.com/fwlink/p/?LinkId=513126)
+- Projet Core ASP.NET : [Que s’est-il passé ? – Projets ASP.NET 5](https://go.microsoft.com/fwlink/p/?LinkId=513124)
+- Projet de service cloud (rôles web et de travail) : [Que s’est-il passé ? – Projets de service cloud](https://go.microsoft.com/fwlink/p/?LinkId=516965)
 - Projets de tâche web - [Que s’est-il passé ? – Projets de tâche web](/azure/visual-studio/vs-storage-webjobs-what-happened)
 
 ## <a name="next-steps"></a>Étapes suivantes
-- [Forum MSDN : Stockage Azure](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
-- [Blog de l’équipe Stockage Microsoft Azure](http://blogs.msdn.com/b/windowsazurestorage/)
+- [Forum MSDN : stockage Azure](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
+- [Blog de l’équipe Stockage Microsoft Azure](https://blogs.msdn.microsoft.com/windowsazurestorage/)
 - [Documentation d’Azure Storage](https://docs.microsoft.com/azure/storage/)

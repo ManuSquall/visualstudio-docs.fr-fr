@@ -15,17 +15,17 @@ caps.latest.revision: 26
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: c0b46c8efb681a067d5a9e74369ed73c43f1568f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8b85bbad909a05bacab361a49cc7e029482ad606
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671103"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74291206"
 ---
 # <a name="analyzing-application-quality-by-using-code-analysis-tools"></a>Analyse de la qualité des applications à l'aide des outils d'analyse du code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Dans cette section, analyse de la [qualité du code managé](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md) l’analyse du code Visual Studio pour le code managé fournit des informations sur les assemblys managés, notamment les violations des règles de programmation et de conception présentées dans la conception de l’infrastructure Microsoft .net Instructions. Les messages d'avertissement identifient les problèmes de programmation et de conception pertinents et, si possible, fournissent des informations relatives à leur résolution.
+Dans cette section, analyse de la [qualité du code managé](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md) l’analyse du code Visual Studio pour le code managé fournit des informations sur les assemblys managés, notamment les violations des règles de programmation et de conception énoncées dans les règles de conception du Microsoft .NET Framework. Les messages d'avertissement identifient les problèmes de programmation et de conception pertinents et, si possible, fournissent des informations relatives à leur résolution.
 
  [Analyse de laC++ qualité c/code à l’aide](../code-quality/analyzing-c-cpp-code-quality-by-using-code-analysis.md) de l'C++ analyse du code l’outil d’analyse de code c/code fournit auxC++ développeurs des informations sur les erreurs possibles dans leur code c/source. Les erreurs de codage courantes signalées par l'outil sont les dépassements de mémoire tampon, la mémoire désinitialisée, les déréférencements du pointeur null et les fuites de mémoire et de ressources.
 
@@ -40,7 +40,7 @@ Dans cette section, analyse de la [qualité du code managé](../code-quality/ana
 
  [Analyse de la qualité du pilote à l’aide des outils d’analyse du code](/windows-hardware/drivers/devtest/tools-for-verifying-drivers) L’analyse du code pour les pilotes est un outil de vérification statique au moment de la compilation qui détecte les C++ erreurs de codage de base dans les programmes C et, et comprend un module spécialisé conçu pour détecter les erreurs dans le code du pilote en mode noyau (principalement). Le vérificateur de pilote statique (SDV, Static Driver Verifier) est un outil de vérification statique qui analyse systématiquement le code source des pilotes en mode noyau de Windows. SDV détermine si le pilote interagit correctement avec le noyau du système d'exploitation Windows.
 
- [Avertissements de l’analyse du code pour les pilotes](http://go.microsoft.com/fwlink/?LinkId=225920) Décrit les avertissements signalés par l’analyse du code pour les pilotes lorsqu’il détecte une erreur possible dans le code du pilote.
+ [Avertissements de l’analyse du code pour les pilotes](https://go.microsoft.com/fwlink/?LinkId=225920) Décrit les avertissements signalés par l’analyse du code pour les pilotes lorsqu’il détecte une erreur possible dans le code du pilote.
 
 ## <a name="related-tasks"></a>Tâches connexes
  [Mesure de la complexité et de la facilité de maintenance du code managé](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md) Insérez la description ici.

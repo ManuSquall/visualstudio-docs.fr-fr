@@ -13,21 +13,21 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6418a39d7e53a3edaa48b3cd003d35d95cba386e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 67589a04b8f3c39e442b596a7a41981825bd5aa5
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68194943"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301102"
 ---
-# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018 : Application 32 bits s’exécutant aux limites de la mémoire managée du processus
+# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018 : Application 32 bits s'exécutant aux limites de la mémoire managée du processus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ID de règle | DA0018 |  
-| Catégorie | Utilisation des outils de profilage |  
+| Catégorie | Utilisation de Outils de profilage |  
 | Méthode de profilage | Échantillonnage |  
-| Message | Géré les allocations de mémoire proche de la limite par défaut pour un processus 32 bits. Votre application peut être liée à la mémoire.|  
-| Type de règle | Avertissement |  
+| Message | Les allocations de mémoire gérées approchent la limite par défaut pour un processus 32 bits. Votre application peut être liée à la mémoire.|  
+| Type de règle | AVERTISSEMENT |  
   
  Lorsque vous effectuez un profilage à l’aide de la méthode d’échantillonnage, de mémoire .NET ou de conflit des ressources, vous devez collecter au moins 10 échantillons pour déclencher cette règle.  
   
@@ -54,7 +54,7 @@ ID de règle | DA0018 |
   
 - Optimisez la manière dont l’application utilise les ressources de mémoire managée.  
   
-   ou  
+   -ou-  
   
 - Allégez les contraintes architecturales associées à la taille maximale de la mémoire virtuelle d’un processus 32 bits.  
   
@@ -64,7 +64,7 @@ ID de règle | DA0018 |
   
   Consultez la [vue Allocations](../profiling/dotnet-memory-allocations-view.md) pour connaître le chemin d’exécution qui a entraîné ces allocations.  
   
-  Pour plus d’informations sur l’amélioration des performances du garbage collection, consultez l’article technique .NET Framework [Garbage Collector Basics and Performance Hints](http://go.microsoft.com/fwlink/?LinkId=177946) sur le site MSDN.  
+  Pour plus d’informations sur l’amélioration des performances du garbage collection, consultez l’article technique .NET Framework [Garbage Collector Basics and Performance Hints](https://go.microsoft.com/fwlink/?LinkId=177946) sur le site MSDN.  
   
   Pour alléger les contraintes architecturales de mémoire virtuelle associées à la taille de la partie privée d’un espace d’adressage de processus, exécutez ce processus 32 bits sur un ordinateur 64 bits.  Un processus 32 bits exécuté sur un ordinateur 64 bits peut acquérir jusqu’à 4 Go de mémoire virtuelle privée.  
   
