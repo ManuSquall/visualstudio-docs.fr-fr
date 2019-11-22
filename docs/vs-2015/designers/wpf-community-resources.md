@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0c2e58686c1369847fdeb0d83aaac6c65341aa08
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7d740f1cc6c19e8d3b53dc084d9de01547369337
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72663924"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299535"
 ---
 # <a name="wpf-community-resources"></a>Ressources de la communauté WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,13 +22,13 @@ ms.locfileid: "72663924"
 Microsoft met en avant de nombreuses ressources de la communauté pour vous permettre de découvrir Windows Presentation Foundation (WPF), d’en discuter et de fournir des commentaires à son sujet, y compris des blogs produits par les membres de l’équipe WPF et les responsables de la communauté, des forums et le centre de commentaires Microsoft Connect.
 
 ## <a name="community"></a>Communauté
- [Forum WPF](http://go.microsoft.com/fwlink/?LinkId=187440)
+ [Forum WPF](https://go.microsoft.com/fwlink/?LinkId=187440)
 
- [Dépassement de capacité de la pile](http://stackoverflow.com/questions/tagged/wpf)
+ [Dépassement de capacité de la pile](https://stackoverflow.com/questions/tagged/wpf)
 
- [Blog de l’équipe WPF](http://blogs.msdn.com/b/wpf/)
+ [Blog de l’équipe WPF](https://devblogs.microsoft.com/wpf/)
 
- [Boîte à outils WPF sur CodePlex](http://wpf.codeplex.com/)
+ [Boîte à outils WPF sur CodePlex](https://archive.codeplex.com/?p=wpf)
 
  [Centre de développement Windows Presentation Foundation](https://www.visualstudio.com/features/wpf-vs)
 

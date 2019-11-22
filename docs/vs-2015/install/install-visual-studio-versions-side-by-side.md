@@ -13,17 +13,17 @@ caps.latest.revision: 48
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: d040353aadbc448b6608cd11fc78a134872fdafa
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: a146872561c4be5fe48016c17eb64ad6f854106a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65693564"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298025"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Installer des versions de Visual Studio côte à côte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio peut être installé sur un ordinateur sur lequel une version antérieure de Visual Studio l’est déjà. Si vous rencontrez un problème d’installation, vous pouvez utiliser l’ [outil de collecte de journaux](http://go.microsoft.com/fwlink/?LinkId=262077) pour collecter des informations sur les échecs de sorte que vous puissiez déboguer les problèmes vous-même.
+Visual Studio peut être installé sur un ordinateur sur lequel une version antérieure de Visual Studio l’est déjà. Si vous rencontrez un problème d’installation, vous pouvez utiliser l’ [outil de collecte de journaux](https://go.microsoft.com/fwlink/?LinkId=262077) pour collecter des informations sur les échecs de sorte que vous puissiez déboguer les problèmes vous-même.
 
 > [!NOTE]
 > Nous vous recommandons d’installer des versions de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dans leur ordre de commercialisation. Par exemple, installez Visual Studio 2013 avant d’installer Visual Studio 2015.
@@ -36,7 +36,7 @@ Visual Studio peut être installé sur un ordinateur sur lequel une version ant�
 
 - Si vous désinstallez une version de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sur un ordinateur ayant plusieurs versions installées, les associations de fichiers pour [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sont supprimées pour toutes les versions. Vous pouvez remapper ces associations de fichiers à l’aide du bouton **Restaurer les associations de fichiers** sous les onglets **Environnement**, **Général** de la boîte de dialogue [Options](../ide/reference/general-environment-options-dialog-box.md) .
 
-- Visual Studio ne met pas automatiquement à niveau les extensions, car elles ne sont pas toutes compatibles. Vous devez réinstaller les extensions à partir de [Visual Studio Marketplace](http://go.microsoft.com/fwlink/?LinkId=178891) ou de l’éditeur du logiciel.
+- Visual Studio ne met pas automatiquement à niveau les extensions, car elles ne sont pas toutes compatibles. Vous devez réinstaller les extensions à partir de [Visual Studio Marketplace](https://go.microsoft.com/fwlink/?LinkId=178891) ou de l’éditeur du logiciel.
 
 ## <a name="net-framework-versions-and-side-by-side-installations"></a>Versions du .NET Framework et installations côte à côte
 

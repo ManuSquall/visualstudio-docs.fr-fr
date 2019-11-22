@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bf06151265c1647de29725917624c5984577bf6a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d5e41dbf3422374add68e351da1e4b703772a3a4
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658604"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296857"
 ---
 # <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>Procédure pas à pas : création d'un composant simple avec Visual C# ou Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,10 +30,10 @@ En suivant cette procédure pas-à-pas, vous vous familiariserez avec la plupart
  [Déboguer et tester l'application](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md#BKMK_DebugTest)
 
 > [!NOTE]
-> Cette procédure pas-à-pas est basée sur Visual Studio Professional, qui offre le modèle d'application WPF sur lequel vous allez vous baser pour générer le projet. Visual Studio Express pour Windows Desktop offre également ce modèle, mais pas Visual Studio Express pour Windows et Visual Studio Express pour le Web. Pour obtenir une présentation de l’utilisation de Visual Studio Express pour Windows, consultez le [Centre de développement des applications du Windows Store](https://msdn.microsoft.com/windows/apps/br229519). Pour obtenir une présentation de l’utilisation de Visual Studio Express pour le web, consultez [Get Started with ASP.NET](http://www.asp.net/get-started)(Prise en main d’ASP.NET). De plus, votre édition de Visual Studio et les paramètres que vous utilisez déterminent les noms et les emplacements des éléments de l'interface utilisateur. Consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Cette procédure pas-à-pas est basée sur Visual Studio Professional, qui offre le modèle d'application WPF sur lequel vous allez vous baser pour générer le projet. Visual Studio Express pour Windows Desktop offre également ce modèle, mais pas Visual Studio Express pour Windows et Visual Studio Express pour le Web. Pour obtenir une présentation de l’utilisation de Visual Studio Express pour Windows, consultez le [Centre de développement des applications du Windows Store](https://msdn.microsoft.com/windows/apps/br229519). Pour obtenir une présentation de l’utilisation de Visual Studio Express pour le web, consultez [Get Started with ASP.NET](https://dotnet.microsoft.com/learn/aspnet/hello-world-tutorial/intro)(Prise en main d’ASP.NET). De plus, votre édition de Visual Studio et les paramètres que vous utilisez déterminent les noms et les emplacements des éléments de l'interface utilisateur. Consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="BKMK_ConfigureIDE"></a> Configurer l'IDE
- Au premier démarrage de Visual Studio, Visual Studio vous invite à vous connecter avec un compte de service Microsoft, [Se connecter à Visual Studio](http://blogs.msdn.com/b/visualstudio/archive/2013/06/28/welcome-sign-in-to-visual-studio.aspx). Vous n'avez pas besoin de vous connecter immédiatement ; vous pouvez le faire ultérieurement.
+ Au premier démarrage de Visual Studio, Visual Studio vous invite à vous connecter avec un compte de service Microsoft, [Se connecter à Visual Studio](https://devblogs.microsoft.com/visualstudio/welcome-sign-in-to-visual-studio/). Vous n'avez pas besoin de vous connecter immédiatement ; vous pouvez le faire ultérieurement.
 
  Lors de votre lancement de Visual Studio, vous devez choisir une combinaison de paramètres qui applique un ensemble de personnalisations prédéfinies à l'IDE. Chaque combinaison de paramètres a été conçue pour vous faciliter le développement d'applications.
 

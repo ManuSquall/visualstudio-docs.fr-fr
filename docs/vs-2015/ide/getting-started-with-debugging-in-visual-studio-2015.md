@@ -10,12 +10,12 @@ caps.latest.revision: 7
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 08e317555042bbc63707cc6eccd0177e78b6ddcc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fe8b158fd870b83b39b9d316e68582f2726d89bb
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645666"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300197"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>Prise en main du débogage dans Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -170,7 +170,7 @@ Visual Studio 2015 intègre un ensemble puissant d'outils de génération et de
 
  ![Point d’arrêt conditionnel Visual Studio 2015](../ide/media/vs-ide-gs-debug-breakpoint-conditional.PNG "|::ref23::|")
 
- Pour plus d’informations sur la façon de déclarer les expressions utilisées pour évaluer des points d’arrêt conditionnels, visionnez la vidéo [Breakpoint Configuration Experience in Visual Studio 2015](http://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/711) sur Channel9.
+ Pour plus d’informations sur la façon de déclarer les expressions utilisées pour évaluer des points d’arrêt conditionnels, visionnez la vidéo [Breakpoint Configuration Experience in Visual Studio 2015](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/711) sur Channel9.
 
 ### <a name="inspecting-your-code-at-run-time"></a>Inspection du code au moment de l'exécution
  Quand votre code en cours d'exécution arrive à un point d'arrêt et qu'il s'arrête, vous pouvez inspecter les variables et les piles des appels pour déterminer ce qui se passe. Les valeurs sont-elles comprises dans les plages attendues ? Les appels sont-ils effectués dans le bon ordre ?
