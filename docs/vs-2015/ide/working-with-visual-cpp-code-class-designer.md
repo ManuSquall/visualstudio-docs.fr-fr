@@ -19,12 +19,12 @@ caps.latest.revision: 27
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5a543e7a1e2aca4590df320261aef2c653a55132
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cb2b5a55f778b8025ea9da25713eca903f9cbf74
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662608"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296217"
 ---
 # <a name="working-with-visual-c-code-class-designer"></a>Utilisation du code Visual C++ (Concepteur de classes)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,7 +82,7 @@ Le Concepteur de classes affiche une aire de conception visuelle appelée *diagr
 - Assurez-vous que le type se trouve dans la portée correcte afin que le Concepteur de classes puisse le localiser. Vérifiez qu'il ne manque pas une instruction `using`, `imports` ou `#include` au code. Assurez-vous également que vous n'avez pas déplacé le type (ou un type connexe) hors de l'espace de noms dans lequel il a été initialement localisé.
 
 ### <a name="troubleshooting-other-error-messages"></a>Résolution d'autres messages d'erreur
- Vous pouvez trouver de l'aide sur la résolution des erreurs et des avertissements dans les forums publics Microsoft Developer Network (MSDN). Consultez le [Forum du Concepteur de classes Visual Studio](http://go.microsoft.com/fwlink/?linkid=160754).
+ Vous pouvez trouver de l'aide sur la résolution des erreurs et des avertissements dans les forums publics Microsoft Developer Network (MSDN). Consultez le [Forum du Concepteur de classes Visual Studio](https://go.microsoft.com/fwlink/?linkid=160754).
 
 ## <a name="limitations"></a> Limitations pour les éléments de code C++
 
@@ -107,4 +107,4 @@ Le Concepteur de classes affiche une aire de conception visuelle appelée *diagr
 - Le Concepteur de classes ne peut pas afficher les types void ou dérivés d'un type void.
 
 ## <a name="see-also"></a>Voir aussi
- [Conception et affichage des classes et des types](../ide/designing-and-viewing-classes-and-types.md) [utilisation des classes et d’autres types (Concepteur de classes)](../ide/working-with-classes-and-other-types-class-designer.md) [utilisation des diagrammes de classes (Concepteur de classes)](../ide/working-with-class-diagrams-class-designer.md) [conception de classes et de types (Concepteur de classes)](../ide/designing-classes-and-types-class-designer.md) [informations supplémentaires sur Concepteur de classes](../ide/additional-information-about-class-designer-errors.md) [les classes C++ visuelles dans Concepteur de classes](../ide/visual-cpp-classes-in-class-designer.md) des [ C++ structures visuelles dans Concepteur de classes](../ide/visual-cpp-structures-in-class-designer.md) les [énumérations visuelles C++ dans Concepteur de classes](../ide/visual-cpp-enumerations-in-class-designer.md) [typedefs visuels C++ dans Concepteur de classes](../ide/visual-cpp-typedefs-in-class-designer.md)
+ [Conception et affichage des classes et des types](../ide/designing-and-viewing-classes-and-types.md) [utilisation des classes et d’autres types (Concepteur de classes)](../ide/working-with-classes-and-other-types-class-designer.md) [utilisation des diagrammes de classes (Concepteur de classes)](../ide/working-with-class-diagrams-class-designer.md) [conception de classes et de types (Concepteur de classes)](../ide/designing-classes-and-types-class-designer.md) [informations supplémentaires sur les erreurs](../ide/additional-information-about-class-designer-errors.md) [de concepteur de classes classes Visual C++ dans](../ide/visual-cpp-classes-in-class-designer.md) concepteur de classes [structures visuelles C++ dans Concepteur de classes](../ide/visual-cpp-structures-in-class-designer.md) les [ C++ énumérations](../ide/visual-cpp-enumerations-in-class-designer.md) visuelles dans Concepteur de classes des [typedefs visuels C++ ](../ide/visual-cpp-typedefs-in-class-designer.md) dans Concepteur de classes

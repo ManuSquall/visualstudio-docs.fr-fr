@@ -231,33 +231,33 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: b304b31447c0a43e37a333516a3a79c71070bd4e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 005f1d1edd1c0a6127c150922cdaab2aef439634
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72673028"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299444"
 ---
 # <a name="additional-resources-for-troubleshooting-data-access-errors"></a>Ressources supplémentaires pour le dépannage des erreurs d’accès aux données
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez trouver de l'aide sur la résolution des erreurs et des avertissements dans les forums publics Microsoft Developer Network (MSDN). Le tableau suivant répertorie les forums relatifs aux données disponibles sur MSDN.
 
- [Windows Forms les contrôles de données et la liaison de données](http://go.microsoft.com/fwlink/?LinkId=160179) Propose un forum de questions et de discussions générales sur l’accès aux données dans Windows Forms.
+ [Windows Forms les contrôles de données et la liaison de données](https://go.microsoft.com/fwlink/?LinkId=160179) Propose un forum de questions et de discussions générales sur l’accès aux données dans Windows Forms.
 
- [Forum du jeu de données ADO.net](http://go.microsoft.com/fwlink/?LinkId=160180) Propose un forum de questions et de discussions générales sur les jeux de données.
+ [Forum du jeu de données ADO.net](https://go.microsoft.com/fwlink/?LinkId=160180) Propose un forum de questions et de discussions générales sur les jeux de données.
 
- [ADO.NET Entity Framework et LINQ to Entities](http://go.microsoft.com/fwlink/?LinkId=191520) Propose un forum de questions et de discussions générales sur les applications Entity Framework et le langage de LINQ to Entities.
+ [ADO.NET Entity Framework et LINQ to Entities](https://go.microsoft.com/fwlink/?LinkId=191520) Propose un forum de questions et de discussions générales sur les applications Entity Framework et le langage de LINQ to Entities.
 
- [Forum WCF Data Services](http://go.microsoft.com/fwlink/?LinkId=160181) Propose un forum de questions et de discussions générales sur les services de données.
+ [Forum WCF Data Services](https://go.microsoft.com/fwlink/?LinkId=160181) Propose un forum de questions et de discussions générales sur les services de données.
 
- [Forum sur l’accès aux données SQL Server](http://go.microsoft.com/fwlink/?LinkID=160184) Propose un forum de questions et de discussions générales sur l’accès aux données dans Microsoft SQL Server.
+ [Forum sur l’accès aux données SQL Server](https://go.microsoft.com/fwlink/?LinkID=160184) Propose un forum de questions et de discussions générales sur l’accès aux données dans Microsoft SQL Server.
 
- [Forum LINQ to SQL](http://go.microsoft.com/fwlink/?LinkId=160183) Propose un forum de questions et de discussions générales sur LINQ to SQL.
+ [Forum LINQ to SQL](https://go.microsoft.com/fwlink/?LinkId=160183) Propose un forum de questions et de discussions générales sur LINQ to SQL.
 
- [Forum sur les fournisseurs de données ADO.net](http://go.microsoft.com/fwlink/?LinkId=160182) Propose un forum de questions et de discussions générales sur les différents fournisseurs de données .NET Framework.
+ [Forum sur les fournisseurs de données ADO.net](https://go.microsoft.com/fwlink/?LinkId=160182) Propose un forum de questions et de discussions générales sur les différents fournisseurs de données .NET Framework.
 
- Pour plus d’informations sur la résolution des problèmes de connectivité à SQL Server, consultez [Comment résoudre les problèmes de connexion au Moteur de base de données SQL Server](http://go.microsoft.com/fwlink/?LinkID=246151).
+ Pour plus d’informations sur la résolution des problèmes de connectivité à SQL Server, consultez [Comment résoudre les problèmes de connexion au Moteur de base de données SQL Server](https://go.microsoft.com/fwlink/?LinkID=246151).
 
 ## <a name="see-also"></a>Voir aussi
  [Outils de données Visual Studio pour .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

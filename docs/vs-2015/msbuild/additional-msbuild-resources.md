@@ -599,12 +599,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5bf30e3267939385a3cca3459390c4c7591909a6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 031ffa0daa899429454faf64819a6778022a5645
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68187095"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298220"
 ---
 # <a name="additional-msbuild-resources"></a>Ressources MSBuild supplémentaires
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -612,15 +612,15 @@ ms.locfileid: "68187095"
 Si vous tentez de résoudre un problème et ne trouvez pas les informations dont vous avez besoin dans la documentation, vous pouvez consulter d’autres ressources, telles que les articles de la Base de connaissances, la communauté des développeurs ou le support technique.  
   
 ## <a name="knowledge-base-articles"></a>Articles de la Base de connaissances  
- Vous pouvez explorer la Base de connaissances en ligne pour rechercher des articles sur les problèmes du produit. Tous les problèmes ne possèdent pas un article dans la Base de connaissances, mais les erreurs rencontrées par un nombre significatif de clients sont en principe documentées. Vous pouvez accéder aux articles de la Base de connaissances sur le site web [Base de connaissances (résultats de la recherche MSBuild)](http://search.microsoft.com/supportresults.aspx?q=knowledge+base+MSBuild&x=0&y=0).  
+ Vous pouvez explorer la Base de connaissances en ligne pour rechercher des articles sur les problèmes du produit. Tous les problèmes ne possèdent pas un article dans la Base de connaissances, mais les erreurs rencontrées par un nombre significatif de clients sont en principe documentées. Vous pouvez accéder aux articles de la Base de connaissances sur le site web [Base de connaissances (résultats de la recherche MSBuild)](https://search.microsoft.com/supportresults.aspx?q=knowledge+base+MSBuild&x=0&y=0).  
   
 ## <a name="community-forums"></a>Forums de communautés  
- Dans les forums, vous pouvez dialoguer avec les autres développeurs et avec les employés Microsoft. Si vous rencontrez une erreur pour laquelle vous ne trouvez pas de résolution, vous pouvez publier vos questions sur le problème dans un forum. Vous pouvez aussi explorer les groupes de discussion pour voir si d’autres utilisateurs ont déjà soumis le même problème. Vous pouvez accéder au forum Visual Studio MSBuild sur le site web [Forums MSDN](http://go.microsoft.com/fwlink/?LinkId=48931).  
+ Dans les forums, vous pouvez dialoguer avec les autres développeurs et avec les employés Microsoft. Si vous rencontrez une erreur pour laquelle vous ne trouvez pas de résolution, vous pouvez publier vos questions sur le problème dans un forum. Vous pouvez aussi explorer les groupes de discussion pour voir si d’autres utilisateurs ont déjà soumis le même problème. Vous pouvez accéder au forum Visual Studio MSBuild sur le site web [Forums MSDN](https://go.microsoft.com/fwlink/?LinkId=48931).  
   
- Vous pouvez accéder aux ressources de la communauté [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] sur le site web [Channel 9 MSBuild](http://channel9.msdn.com/).  
+ Vous pouvez accéder aux ressources de la communauté [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] sur le site web [Channel 9 MSBuild](https://channel9.msdn.com/).  
   
 ## <a name="product-support"></a>Support technique  
- Si vous avez encore des questions après avoir consulté les autres ressources, contactez les services de support technique Microsoft en visitant le site web [Aide et support Microsoft](http://go.microsoft.com/fwlink/?linkid=1782). Pour plus d’informations sur le support technique disponible dans votre région, consultez [Nous contacter](../ide/talk-to-us.md).  
+ Si vous avez encore des questions après avoir consulté les autres ressources, contactez les services de support technique Microsoft en visitant le site web [Aide et support Microsoft](https://go.microsoft.com/fwlink/?linkid=1782). Pour plus d’informations sur le support technique disponible dans votre région, consultez [Nous contacter](../ide/talk-to-us.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Dépannage des erreurs de ciblage du .NET Framework](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)

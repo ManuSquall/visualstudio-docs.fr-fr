@@ -9,12 +9,12 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: a92d0ead091167437904c384b8f9afca2a3ab89c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: ecef4536ec11d2319007602b195c96a9df7d3719
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696203"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298058"
 ---
 # <a name="how-to-upgrade-from-a-trial-edition-of-visual-studio"></a>Comment : effectuer une mise à niveau à partir d'une version d'évaluation de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,12 +23,12 @@ Vous pouvez évaluer la version préliminaire de Visual Studio pendant 14 jours
 
  Vous pouvez évaluer la version commerciale des éditions Professional et Enterprise de Visual Studio pendant 30 jours, à partir de la date d’installation du produit. La [connexion à Visual Studio](../ide/signing-in-to-visual-studio.md) ajoute 60 jours à la période d’évaluation pour l’amener à un total de 90 jours. Si vous n'enregistrez pas une édition d'évaluation de Visual Studio dans les 30 jours, la période d'évaluation expire 30 jours après l'installation.
 
- Par exemple, si vous téléchargez et utilisez [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] pendant 10 jours, puis procédez à son enregistrement, vous pouvez l'utiliser pendant 80 jours supplémentaires. Pour continuer à utiliser le produit après les 90 jours, vous devez fournir une clé de produit valide ou vous connecter à Visual Studio avec un compte Microsoft ou un compte professionnel associé à un abonnement MSDN ou Visual Studio Online. Pour plus d’informations sur la façon de trouver ou d’obtenir une clé de produit, consultez [Comment : trouver la clé de produit de Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) et [Comment acheter Visual Studio](http://www.visualstudio.com/products/how-to-buy-vs).
+ Par exemple, si vous téléchargez et utilisez [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] pendant 10 jours, puis procédez à son enregistrement, vous pouvez l'utiliser pendant 80 jours supplémentaires. Pour continuer à utiliser le produit après les 90 jours, vous devez fournir une clé de produit valide ou vous connecter à Visual Studio avec un compte Microsoft ou un compte professionnel associé à un abonnement MSDN ou Visual Studio Online. Pour plus d’informations sur la façon de trouver ou d’obtenir une clé de produit, consultez [Comment : trouver la clé de produit de Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) et [Comment acheter Visual Studio](https://visualstudio.microsoft.com/vs/pricing/).
 
 > [!IMPORTANT]
 > La période d’évaluation des versions de mise en production des éditions Express de Visual Studio est également de 30 jours. Pour prolonger indéfiniment la période d'évaluation des éditions Express de Visual Studio, connectez-vous à Visual Studio ou enregistrez le produit.
 
- Avant d’effectuer une mise à niveau, nous vous recommandons de télécharger et consulter le livre blanc [Gestion des licences MSDN et Visual Studio](http://www.microsoft.com/download/details.aspx?id=13350) sur le site web de Microsoft. Pour obtenir une aide supplémentaire, consultez [Aide et support pour Visual Studio](http://support.microsoft.com/ph/1117/en-us).
+ Avant d’effectuer une mise à niveau, nous vous recommandons de télécharger et consulter le livre blanc [Gestion des licences MSDN et Visual Studio](https://www.microsoft.com/download/details.aspx?id=13350) sur le site web de Microsoft. Pour obtenir une aide supplémentaire, consultez [Aide et support pour Visual Studio](https://support.microsoft.com/ph/1117/en-us).
 
 ### <a name="to-upgrade-from-a-trial-edition-of-visual-studio-professional-or-enterprise"></a>Pour mettre à niveau à partir d’une version d’évaluation de Visual Studio Professional ou Enterprise
 

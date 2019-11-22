@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3d057296e38cbba38651bb9228b8cd837f21deaf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 84828024e19d731c3de7db0859aa3b2033379a49
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645554"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74290316"
 ---
 # <a name="globalizing-and-localizing-applications"></a>Globalisation et localisation d'applications
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,9 +38,9 @@ Si vous prévoyez de distribuer votre application à un public international, vo
  [Globaliser des applications](../ide/globalizing-applications.md) Fournit des liens vers des pages sur la création d’applications qui prennent en charge plusieurs cultures.
 
 ## <a name="related-sections"></a>Rubriques connexes
- [Globalisation de votre application (applications du Windows Store en JavaScript et html)](http://go.microsoft.com/fwlink/?LinkId=258266) Contient des rubriques de procédures et des instructions pour vous aider à globaliser et à localiser votre application [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] générée à l’aide de JavaScript et HTML.
+ [Globalisation de votre application (applications du Windows Store en JavaScript et html)](https://go.microsoft.com/fwlink/?LinkId=258266) Contient des rubriques de procédures et des instructions pour vous aider à globaliser et à localiser votre application [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] générée à l’aide de JavaScript et HTML.
 
- [La globalisation de votre application (applications du C#WindowsC++ Store à l’aide de/vb/et XAML)](http://go.microsoft.com/fwlink/?LinkId=258267) contient des rubriques de procédures et des instructions pour vous aider à globaliser et à localiser C#votre application [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] générée à C++l’aide de XAML et Visual, Visual Basic ou visuel.
+ [La globalisation de votre application (applications du C#WindowsC++ Store à l’aide de/vb/et XAML)](https://go.microsoft.com/fwlink/?LinkId=258267) contient des rubriques de procédures et des instructions pour vous aider à globaliser et à localiser C#votre application [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] générée à C++l’aide de XAML et Visual, Visual Basic ou visuel.
 
  [Meilleures pratiques pour le développement d’applications mondialisables](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c) Fournit des informations générales sur la programmation pour un public international.
 

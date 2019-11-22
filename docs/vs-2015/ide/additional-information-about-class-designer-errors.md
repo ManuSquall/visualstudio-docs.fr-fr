@@ -29,12 +29,12 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 7500782a1d935c08ae95e26764c9476c63f36660
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 10eb94783abbd63ca152fbf73a544665199ba137
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72620391"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300287"
 ---
 # <a name="additional-information-about-class-designer-errors"></a>Informations supplémentaires sur les erreurs du Concepteur de classes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Le Concepteur de classes n'effectue pas le suivi de l'emplacement de vos fichier
 
  [L’utilisation du C++ code Visual (Concepteur de classes)](../ide/working-with-visual-cpp-code-class-designer.md) comprend des informations de C++ dépannage sur l’affichage dans un diagramme de classes.
 
- Le [Forum du Concepteur de classes Visual Studio](http://go.microsoft.com/fwlink/?LinkId=160754) propose un forum de questions relatives au Concepteur de classes.
+ Le [Forum du Concepteur de classes Visual Studio](https://go.microsoft.com/fwlink/?LinkId=160754) propose un forum de questions relatives au Concepteur de classes.
 
 ## <a name="see-also"></a>Voir aussi
  [Conception et affichage des classes et des types](../ide/designing-and-viewing-classes-and-types.md)

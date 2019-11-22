@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Résoudre les problèmes de mises à niveau du projet échoue | Microsoft Docs'
+title: 'Comment : résoudre les problèmes de mise à niveau d’un projet non réussi | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -18,33 +18,33 @@ caps.latest.revision: 31
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 1fe975fedb8237762d7dadffceff22203dcb899e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 16232a72cd37f8d1d68760f032b6050e0bdf74c5
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696392"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300357"
 ---
-# <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>Procédure : Résoudre les problèmes de mises à niveau du projet Visual Studio échoue
+# <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>Comment : dépanner les échecs de mise à niveau de projets Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Parfois, Visual Studio ne peut pas convertir complètement un projet à partir d’une version antérieure de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Si les conseils fournis dans les sections suivantes ne résolvent pas votre problème spécifique, vous pourrez peut-être trouver plus d’informations sur le TechNet [Wiki : Portail de développement](http://go.microsoft.com/fwlink/?LinkId=254808).
+Parfois, Visual Studio ne peut pas convertir entièrement un projet à partir d’une version antérieure de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Si les conseils des sections suivantes ne permettent pas de résoudre votre problème spécifique, vous pouvez trouver plus d’informations sur TechNet [wiki : portail de développement](https://go.microsoft.com/fwlink/?LinkId=254808).
 
 ## <a name="the-project-does-not-run-because-files-are-not-found"></a>Le projet ne s’exécute pas, car les fichiers sont introuvables
- Un fichier projet contient des chemins d’accès codés en dur qui [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] utilise pour exécuter le projet lorsque vous appuyez sur F5. Ces chemins d’accès peuvent inclure l’emplacement de devenv.exe et d’autres fichiers requis. Dans une version mise à niveau de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], les chemins d’accès de ces fichiers ont été modifiés.
+ Un fichier projet contient des chemins d’accès aux fichiers codés en dur que [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] utilise pour exécuter le projet quand vous appuyez sur F5. Ces chemins d’accès peuvent inclure l’emplacement de devenv. exe et d’autres fichiers requis. Dans une version mise à niveau de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], les chemins d’accès de ces fichiers ont peut-être été modifiés.
 
-#### <a name="to-resolve-incorrect-file-paths"></a>Pour résoudre les chemins d’accès de fichier incorrect
+#### <a name="to-resolve-incorrect-file-paths"></a>Pour résoudre les chemins d’accès de fichiers incorrects
 
 1. Ouvrez votre fichier projet dans un éditeur de texte.
 
-2. Rechercher les chemins d’accès qui peuvent être incorrects, en particulier ceux qui contiennent un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] numéro de version.
+2. Recherchez les chemins d’accès aux fichiers qui peuvent être incorrects, en particulier ceux qui contiennent un numéro de version [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
-3. Modifier les chemins d’accès de fichier incorrect afin qu’ils pointent vers les nouvelles cibles.
+3. Modifiez les chemins d’accès aux fichiers incorrects afin qu’ils pointent vers les nouvelles cibles.
 
-## <a name="the-project-does-not-build-because-references-are-not-valid"></a>Le projet ne génère pas, car les références ne sont pas valides
- Lorsque vous mettez à niveau [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vous pouvez également mettre à niveau le [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] version. Si votre projet contient des références qui sont indisponibles dans le nouveau [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] version, ils ne peuvent pas être résolus correctement. Il s’agit surtout pour les références qui incluent des numéros de version, par exemple, `Microsoft.VisualStudio.Shell.Interop.8.0`.
+## <a name="the-project-does-not-build-because-references-are-not-valid"></a>Le projet n’est pas généré, car les références ne sont pas valides
+ Lorsque vous mettez à niveau [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vous pouvez également mettre à niveau la version de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Si votre projet contient des références qui ne sont plus disponibles dans la version la plus récente de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], ils risquent de ne pas être résolus correctement. Cela est particulièrement probable pour les références qui incluent des numéros de version, par exemple `Microsoft.VisualStudio.Shell.Interop.8.0`.
 
- Si votre code comporte de nombreuses références non valides, la solution la plus simple peut être d’utiliser la fonctionnalité de multi-ciblage de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour cibler une version antérieure de le [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
+ Si votre code comporte de nombreuses références non valides, la solution la plus simple consiste à utiliser la fonctionnalité de multi-ciblage de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour cibler une version antérieure du [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
 
 #### <a name="to-resolve-incorrect-references"></a>Pour résoudre des références incorrectes
 
@@ -52,9 +52,9 @@ Parfois, Visual Studio ne peut pas convertir complètement un projet à partir d
 
 2. Ouvrez les propriétés du projet.
 
-3. Sélectionnez le bon **Framework cible** valeur. Vous pouvez également modifier la valeur de la `<TargetFrameworkVersion>` élément directement dans le fichier projet.
+3. Sélectionnez la valeur **Framework cible** correcte. Vous pouvez également modifier la valeur de l’élément `<TargetFrameworkVersion>` directement dans le fichier projet.
 
-   Si vous souhaitez que votre projet doit être exécuté dans la mise à niveau [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] version, vous devez mettre à jour les références du projet et également mettre à jour les `Imports` ou `Using` instructions qui appellent les références. Si votre projet se charge dans l’IDE, vous pouvez mettre à jour les références à l’aide de **l’Explorateur de solutions** ou **Gestionnaire de références** boîte de dialogue.
+   Si vous souhaitez que votre projet s’exécute dans la version mise à niveau [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], vous devez mettre à jour les références pour le projet et également mettre à jour toutes les instructions `Imports` ou `Using` qui appellent les références. Si votre projet est chargé dans l’IDE, vous pouvez mettre à jour les références à l’aide de **Explorateur de solutions** ou de la boîte de dialogue **Gestionnaire de références** .
 
 ## <a name="see-also"></a>Voir aussi
- [/ Mise à niveau de (devenv.exe)](../ide/reference/upgrade-devenv-exe.md) [conversion vers ASP.NET 4](https://msdn.microsoft.com/library/790147c6-36c1-41b5-a52d-30b9ccd2bd10)
+ [/Upgrade (devenv. exe)](../ide/reference/upgrade-devenv-exe.md) [conversion en ASP.net 4](https://msdn.microsoft.com/library/790147c6-36c1-41b5-a52d-30b9ccd2bd10)

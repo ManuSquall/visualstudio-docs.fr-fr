@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f3cf8d0cfd3119113247dedf7723e02fca9634a3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 278858eb28e0db7edd2694397cc7b24f1cfec301
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662647"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296828"
 ---
 # <a name="walkthrough-creating-a-code-snippet"></a>Procédure pas à pas : création d'un extrait de code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "72662647"
 Vous pouvez créer un extrait de code en quelques étapes seulement. Il vous suffit de créer un fichier XML, de le remplir avec les éléments appropriés et d’y ajouter votre code. Vous pouvez aussi ajouter des références et des paramètres de remplacement dans votre code. Vous pouvez ensuite ajouter l’extrait de code à votre installation Visual Studio à l’aide du bouton Importer dans le Gestionnaire des extraits de code (**Outils/Gestionnaire des extraits de code**).
 
 > [!TIP]
-> Pour plus d’informations sur la façon d’écrire des extraits de code plus facilement, recherchez dans le site Web CodePlex des outils de la communauté tels que l' [éditeur d’extraits](http://go.microsoft.com/fwlink/?LinkId=251033).
+> Pour plus d’informations sur la façon d’écrire des extraits de code plus facilement, recherchez dans le site Web CodePlex des outils de la communauté tels que l' [éditeur d’extraits](https://go.microsoft.com/fwlink/?LinkId=251033).
 
 ## <a name="snippet-template"></a>Modèle d’extrait de code
  Voici le modèle d’extrait de code de base :
@@ -262,4 +262,4 @@ Vous pouvez créer un extrait de code en quelques étapes seulement. Il vous suf
     ```
 
 ## <a name="see-also"></a>Voir aussi
- [Référence de schéma des extraits de code](../ide/code-snippets-schema-reference.md)
+ [Informations de référence sur le schéma des extraits de code](../ide/code-snippets-schema-reference.md)

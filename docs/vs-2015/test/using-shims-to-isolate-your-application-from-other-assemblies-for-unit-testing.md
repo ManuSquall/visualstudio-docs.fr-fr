@@ -8,12 +8,12 @@ ms.assetid: d2a34de2-6527-4c21-8b93-2f268ee894b7
 caps.latest.revision: 14
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8672d04bd2311c5bda5e2bb1bc9dc1455764f96a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 07e42c6b1e3e3537801c3d7420d2cad8dd119fa7
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657162"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301424"
 ---
 # <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Utilisation de shims pour isoler votre application des autres assemblys pour des tests unitaires
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,11 +24,11 @@ Les types shim** sont l’une des deux technologies utilisées par le framework 
 
  Pour obtenir une vue d’ensemble et un guide de démarrage rapide, consultez [Isolation du code sous test avec Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).
 
- **Prérequis**
+ **Conditions requises**
 
 - Visual Studio Enterprise
 
-  Consultez la [vidéo (1h16) : Testing Un-testable Code with Fakes in Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837).
+  Consultez la [vidéo (1h16) : Testing Un-testable Code with Fakes in Visual Studio 2012](https://go.microsoft.com/fwlink/?LinkId=261837).
 
 ## <a name="BKMK_Example__The_Y2K_bug"></a>Exemple : le bogue de l’an 2000
  Prenons l'exemple d'une méthode qui lève une exception le 1er janvier 2000 :
@@ -91,7 +91,7 @@ public void Y2kCheckerTest() {
  Il est essentiel de supprimer correctement chaque contexte de shim. En règle générale, appelez toujours `ShimsContext.Create` à l'intérieur d'une instruction `using` pour garantir le nettoyage correct des shims inscrits. Par exemple, vous pouvez inscrire un shim pour une méthode de test qui remplace la méthode `DateTime.Now` par un délégué qui retourne toujours le premier janvier 2000. Si vous oubliez d'effacer le shim inscrit dans la méthode de test, le reste de la série de tests retourne toujours le premier janvier 2000 comme valeur DateTime.Now. Cela peut être surprenant et déroutant.
 
 ### <a name="WriteShims"></a> Écrire un test avec les shims
- Dans votre code de test, insérez un *détour* pour la méthode que vous souhaitez falsifier. Exemple :
+ Dans votre code de test, insérez un *détour* pour la méthode que vous souhaitez falsifier. Par exemple :
 
 ```csharp
 [TestClass]
@@ -504,7 +504,7 @@ ShimFile.WriteAllTextStringString = shim;
 ## <a name="external-resources"></a>Ressources externes
 
 ### <a name="guidance"></a>Conseils
- [Test de la livraison continue avec Visual Studio 2012 - Chapitre 2 : Tests unitaires : tester l’intérieur](http://go.microsoft.com/fwlink/?LinkID=255188)
+ [Test de la livraison continue avec Visual Studio 2012 - Chapitre 2 : Tests unitaires : tester l’intérieur](https://go.microsoft.com/fwlink/?LinkID=255188)
 
 ## <a name="see-also"></a>Voir aussi
- [Isolation du code testé avec Microsoft](../test/isolating-code-under-test-with-microsoft-fakes.md) simule le [blog de Peter Provost : Visual Studio 2012 shims](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2) [Video (1H16) : test de code non testable avec les substituts dans Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837)
+ [Isolation du code testé avec Microsoft](../test/isolating-code-under-test-with-microsoft-fakes.md) simule le [blog de Peter Provost : Visual Studio 2012 shims](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2) [Video (1H16) : test de code non testable avec les substituts dans Visual Studio 2012](https://go.microsoft.com/fwlink/?LinkId=261837)

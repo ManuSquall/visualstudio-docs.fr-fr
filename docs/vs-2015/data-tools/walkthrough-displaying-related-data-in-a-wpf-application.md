@@ -19,12 +19,12 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: c44b949daabf587dbca5d8a5d1d932afca2c1f9c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 787be52eeb546d2ab184a172464862d10cb43288
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72602465"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299579"
 ---
 # <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>Procédure pas à pas : affichage de données connexes dans une application WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,9 +44,9 @@ Dans cette procédure pas à pas, vous allez créer une application WPF qui affi
 ## <a name="prerequisites"></a>Configuration requise
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :
 
-- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].,
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
 
-- Accès à une instance en cours d'exécution de SQL Server ou SQL Server Express à laquelle est attaché l'exemple de base de données AdventureWorksLT. Vous pouvez télécharger la base de données AdventureWorksLT à partir du [site Web CodePlex](http://go.microsoft.com/fwlink/?linkid=87843).
+- Accès à une instance en cours d'exécution de SQL Server ou SQL Server Express à laquelle est attaché l'exemple de base de données AdventureWorksLT. Vous pouvez télécharger la base de données AdventureWorksLT à partir du [site Web CodePlex](https://go.microsoft.com/fwlink/?linkid=87843).
 
   La connaissance préalable des concepts suivants s'avère également utile, mais n'est pas obligatoire pour suivre cette procédure pas à pas :
 
@@ -71,7 +71,7 @@ Dans cette procédure pas à pas, vous allez créer une application WPF qui affi
 
 5. Sélectionnez le modèle de projet **Application WPF**.
 
-6. Dans la zone **Nom** , tapez `AdventureWorksOrdersViewer`.
+6. Dans la zone **Nom**, tapez `AdventureWorksOrdersViewer`.
 
 7. Cliquez sur **OK**.
 
@@ -88,15 +88,15 @@ Dans cette procédure pas à pas, vous allez créer une application WPF qui affi
 
 3. Dans la page **choisir un modèle de base de données** , cliquez sur **Entity Data Model**, puis cliquez sur **suivant**.
 
-4. Dans la page **choisir le contenu du modèle** , cliquez sur **générer à partir de la base de données**, puis cliquez sur **suivant**.
+4. Sur la page **Choisir le contenu du modèle**, cliquez sur **Générer à partir de la base de données**, puis sur **Suivant**.
 
 5. Dans la page **choisir votre connexion de données** , effectuez l’une des opérations suivantes :
 
    - Si une connexion de données à l'exemple de base de données AdventureWorksLT est disponible dans la liste déroulante, sélectionnez-la.
 
-      ou
+      -ou-
 
-   - Cliquez sur **nouvelle connexion** et créez une connexion à la base de données AdventureWorksLT.
+   - Cliquez sur **Nouvelle connexion** et créez une connexion à la base de données AdventureWorksLT.
 
      Assurez-vous que l’option **enregistrer les paramètres de connexion de l’entité dans App. config en tant que** est sélectionnée, puis cliquez sur **suivant**.
 
@@ -106,7 +106,7 @@ Dans cette procédure pas à pas, vous allez créer une application WPF qui affi
 
    - **SalesOrderHeader**
 
-7. Cliquez sur **Finish**.
+7. Cliquez sur **Terminer**.
 
 8. Générez le projet.
 
@@ -115,13 +115,13 @@ Dans cette procédure pas à pas, vous allez créer une application WPF qui affi
 
 #### <a name="to-create-data-bound-controls-that-display-the-order-records"></a>Pour créer des contrôles liés aux données qui affichent les enregistrements de commande
 
-1. Dans **Explorateur de solutions**, double-cliquez sur MainWindow. Xaml.
+1. Dans l'**Explorateur de solutions**, double-cliquez sur MainWindow.xaml.
 
     La fenêtre s'ouvre dans le Concepteur WPF.
 
 2. Modifiez le code XAML afin que les propriétés **Height** et **Width** aient la valeur 800
 
-3. Dans la fenêtre **sources de données** , cliquez sur le menu déroulant du nœud **SalesOrderHeaders** et sélectionnez **Détails**.
+3. Dans la fenêtre **Sources de données**, cliquez sur le menu déroulant pour le nœud **SalesOrderHeaders** et sélectionnez **Détails**.
 
 4. Développez le nœud **SalesOrderHeaders**.
 
@@ -139,7 +139,7 @@ Dans cette procédure pas à pas, vous allez créer une application WPF qui affi
 
    - **CreditCardApprovalCode**
 
-   - **Sous**
+   - **SubTotal**
 
    - **TaxAmt**
 

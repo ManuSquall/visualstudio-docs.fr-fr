@@ -14,12 +14,12 @@ caps.latest.revision: 28
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f26d81c3ac80b889f90e2a729545f0db0e52fa1a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5abbb647f93c991d2de626a84e82f47e03f6f71e
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660230"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299620"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Procédure pas à pas : Création d’un service de données WCF avec WPF et Entity Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Cette procédure pas à pas montre comment créer un [!INCLUDE[ss_data_service](
 
 - Créer un [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] qui représente la table Customers dans la base de données Northwind.
 
-- Créer un [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].
+- Créez un [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].
 
 - Créer une application cliente et ajouter une référence au [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].
 
@@ -45,7 +45,7 @@ Cette procédure pas à pas montre comment créer un [!INCLUDE[ss_data_service](
 
 - Exemple de base de données Northwind.
 
-     Si cette base de données n’est pas disponible sur votre ordinateur de développement, vous pouvez la télécharger à partir du [Centre de téléchargement Microsoft](http://go.microsoft.com/fwlink/?LinkID=98088). Pour obtenir des instructions, consultez [téléchargement d’exemples de bases de données](https://msdn.microsoft.com/library/ef9d69a1-9461-43fe-94bb-7c836754bcb5).
+     Si cette base de données n’est pas disponible sur votre ordinateur de développement, vous pouvez la télécharger à partir du [Centre de téléchargement Microsoft](https://go.microsoft.com/fwlink/?LinkID=98088). Pour obtenir des instructions, consultez [téléchargement d’exemples de bases de données](https://msdn.microsoft.com/library/ef9d69a1-9461-43fe-94bb-7c836754bcb5).
 
 ## <a name="creating-the-service"></a>Création du service
  Pour créer un [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)], vous devez ajouter un projet Web, créer un [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)], puis créer le service à partir du modèle.
@@ -68,7 +68,7 @@ Cette procédure pas à pas montre comment créer un [!INCLUDE[ss_data_service](
 
 #### <a name="to-create-the-entity-data-model"></a>Pour créer le modèle EDM (Entity Data Model)
 
-1. Dans la barre de menus, choisissez **projet**, **Ajouter un nouvel élément**.
+1. Dans la barre de menus, choisissez **Projet**, **Ajouter un nouvel élément**.
 
 2. Dans la boîte de dialogue **Ajouter un nouvel élément**, choisissez le nœud **Données**, puis l’élément **ADO.NET Entity Data Model**.
 
@@ -82,7 +82,7 @@ Cette procédure pas à pas montre comment créer un [!INCLUDE[ss_data_service](
 
    - Si une connexion de données à l'exemple de base de données Northwind est disponible dans la liste déroulante, choisissez-la.
 
-        ou
+        -ou-
 
    - Choisissez le bouton **Nouvelle connexion** pour configurer une nouvelle connexion de données. Pour plus d’informations, consultez [ajouter de nouvelles connexions](../data-tools/add-new-connections.md).
 
@@ -94,7 +94,7 @@ Cette procédure pas à pas montre comment créer un [!INCLUDE[ss_data_service](
 7. Dans la page **Choisir votre version**, choisissez la case d’option **Entity Framework 5.0**, puis le bouton **Suivant**.
 
    > [!NOTE]
-   > Pour pouvoir utiliser la dernière version d’Entity Framework 6 avec les services WCF, vous devez installer le package NuGet du fournisseur Entity Framework de services de données WCF. Consultez [utilisation de WCF Data Services 5.6.0 avec Entity Framework 6 +](http://blogs.msdn.com/b/odatateam/archive/2013/10/02/using-wcf-data-services-5-6-0-with-entity-framework-6.aspx).
+   > Pour pouvoir utiliser la dernière version d’Entity Framework 6 avec les services WCF, vous devez installer le package NuGet du fournisseur Entity Framework de services de données WCF. Consultez [utilisation de WCF Data Services 5.6.0 avec Entity Framework 6 +](https://devblogs.microsoft.com/odata/using-wcf-data-services-5-6-0-with-entity-framework-6/).
 
 8. Dans la page **Choisir vos objets de base de données**, développez le nœud **Tables**, cochez la case **Customers**, puis choisissez le bouton **Terminer**.
 
@@ -104,13 +104,13 @@ Cette procédure pas à pas montre comment créer un [!INCLUDE[ss_data_service](
 
 #### <a name="to-create-the-data-service"></a>Pour créer le service de données
 
-1. Dans la barre de menus, choisissez **projet**, **Ajouter un nouvel élément**.
+1. Dans la barre de menus, choisissez **Projet**, **Ajouter un nouvel élément**.
 
 2. Dans la boîte de dialogue **Ajouter un nouvel élément**, choisissez le nœud **Web**, puis l’élément **WCF Data Service 5.6**.
 
 3. Dans la zone de texte **nom** , entrez `NorthwindCustomers`, puis cliquez sur le bouton **Ajouter** .
 
-    Le fichier NorthwindCustomers. svc s’affiche dans l' **éditeur de code**.
+    Le fichier NorthwindCustomers.svc s'affiche dans l'**éditeur de code**.
 
 4. Dans l’**Éditeur de code**, localisez le premier commentaire `TODO:` et remplacez le code par celui-ci :
 
@@ -122,14 +122,14 @@ Cette procédure pas à pas montre comment créer un [!INCLUDE[ss_data_service](
     [!code-csharp[WCFDataServiceWalkthrough#2](../snippets/csharp/VS_Snippets_VBCSharp/wcfdataservicewalkthrough/cs/northwindcustomers.svc.cs#2)]
     [!code-vb[WCFDataServiceWalkthrough#2](../snippets/visualbasic/VS_Snippets_VBCSharp/wcfdataservicewalkthrough/vb/northwindcustomers.svc.vb#2)]
 
-6. Dans la barre de menus, choisissez **Déboguer**, exécuter **sans débogage** pour exécuter le service. Une fenêtre de navigateur s'ouvre et le schéma XML pour le service s'affiche.
+6. Pour exécuter le service, dans la barre de menus, choisissez **Exécuter sans débogage** dans le menu **Débogage**. Une fenêtre de navigateur s'ouvre et le schéma XML pour le service s'affiche.
 
 7. Dans la barre d' **adresses** , entrez `Customers` à la fin de l’URL pour NorthwindCustomers. svc, puis appuyez sur la touche **entrée** .
 
     Une représentation XML des données dans la table Customers s'affiche.
 
    > [!NOTE]
-   > Dans certains cas, Internet Explorer interprétera par erreur les données comme un flux RSS. Vous devez vous assurer que l'option permettant d'afficher les flux RSS est désactivée. Pour plus d’informations, consultez [Dépannage des références de service](../data-tools/troubleshooting-service-references.md).
+   > Dans certains cas, Internet Explorer interprétera par erreur les données comme un flux RSS. Vous devez vous assurer que l'option permettant d'afficher les flux RSS est désactivée. Pour plus d'informations, voir [Dépannage des références de service](../data-tools/troubleshooting-service-references.md).
 
 8. Fermez la fenêtre du navigateur.
 
@@ -142,9 +142,9 @@ Cette procédure pas à pas montre comment créer un [!INCLUDE[ss_data_service](
 
 #### <a name="to-create-the-client-application"></a>Pour créer l'application cliente
 
-1. Dans la barre de menus, choisissez Fichier, **Ajouter**, **nouveau projet**.
+1. Dans la barre de menus, choisissez Fichier, **Ajouter**, **Nouveau projet**.
 
-2. Dans la boîte de dialogue **nouveau projet** , développez le nœud **Visual Basic** ou **visuel C#**  et choisissez le nœud **Windows** , puis choisissez **Windows Forms application**.
+2. Dans la boîte de dialogue **Nouveau projet**, développez le nœud **Visual Basic** ou **Visual C#** et choisissez le nœud **Windows**, puis **Application Windows Forms**.
 
 3. Dans la zone de texte **Nom**, entrez `NorthwindClient`, puis choisissez le bouton **OK**.
 
@@ -156,7 +156,7 @@ Cette procédure pas à pas montre comment créer un [!INCLUDE[ss_data_service](
 
 #### <a name="to-add-a-service-reference"></a>Pour ajouter une référence de service.
 
-1. Dans la barre de menus, choisissez **projet**, **Ajouter une référence de service**.
+1. Dans la barre de menus, choisissez **Projet**, **Ajouter une référence de service**.
 
 2. Dans la boîte de dialogue **Ajouter une référence de service**, choisissez le bouton **Découvrir**.
 
@@ -168,7 +168,7 @@ Cette procédure pas à pas montre comment créer un [!INCLUDE[ss_data_service](
 
 #### <a name="to-enable-data-binding-to-the-service"></a>Pour activer la liaison de données vers le service
 
-1. Dans la barre de menus, choisissez **Afficher**, **autres fenêtres**, **sources de données**.
+1. Dans la barre de menus, choisissez **Afficher**, **Autres fenêtres**, **Sources de données**.
 
 2. Dans la fenêtre **Sources de données**, choisissez le bouton **Ajouter une nouvelle source de données**.
 
@@ -190,7 +190,7 @@ Cette procédure pas à pas montre comment créer un [!INCLUDE[ss_data_service](
 
 3. Sélectionnez le contrôle **CustomersDataGridView** et, dans la fenêtre **Propriétés**, définissez la propriété **Dock** sur **Remplissage**.
 
-4. Dans **Explorateur de solutions**, ouvrez le menu contextuel du nœud **Form1** et choisissez **afficher le code** pour ouvrir l’éditeur de code, puis ajoutez l’instruction Imports ou using suivante en haut du fichier :
+4. Dans l'**Explorateur de solutions**, ouvrez le menu contextuel du nœud **Form1** et choisissez **Afficher le code** pour ouvrir l'éditeur de code, puis ajoutez l'instruction Imports ou Using en haut du fichier :
 
    ```vb
    Imports NorthwindClient.ServiceReference1
@@ -219,13 +219,13 @@ Cette procédure pas à pas montre comment créer un [!INCLUDE[ss_data_service](
 
    ```
 
-6. Dans **Explorateur de solutions**, ouvrez le menu contextuel du fichier NorthwindCustomers. svc, puis choisissez **afficher dans le navigateur**. Internet Explorer s'ouvre et le schéma XML pour le service s'affiche.
+6. Dans l'**Explorateur de solutions**, ouvrez le menu contextuel du fichier NorthwindCustomers.svc et choisissez **Afficher dans le navigateur**. Internet Explorer s'ouvre et le schéma XML pour le service s'affiche.
 
 7. Copiez l'URL à partir de la barre d'adresses d'Internet Explorer.
 
 8. Dans le code que vous avez ajouté à l'étape 4, sélectionnez `http://localhost:53161/NorthwindCustomers.svc/` et remplacez-le par l'URL que vous venez de copier.
 
-9. Dans la barre de menus, choisissez **Déboguer**, **Démarrer le débogage** pour exécuter l’application. Les informations client s'affichent.
+9. Dans la barre de menus, choisissez **Déboguer**, **Démarrer le débogage** pour exécuter l'application. Les informations client s'affichent.
 
    Vous disposez désormais d'une application opérationnelle qui affiche une liste de clients à partir du service NorthwindCustomers. Si vous souhaitez exposer des données supplémentaires à travers le service, vous pouvez modifier l'[!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] pour inclure des tables supplémentaires à partir de la base de données Northwind.
 
@@ -240,7 +240,7 @@ Cette procédure pas à pas montre comment créer un [!INCLUDE[ss_data_service](
 
 2. Ajoutez un contrôle <xref:System.Windows.Forms.TextBox> et un contrôle <xref:System.Windows.Forms.Button> au formulaire à partir de la **Boîte à outils**.
 
-3. Ouvrez le menu contextuel du contrôle <xref:System.Windows.Forms.Button>, puis choisissez **afficher le code**, puis ajoutez le code suivant dans le gestionnaire d’événements `Button1_Click` :
+3. Ouvrez le menu contextuel du contrôle <xref:System.Windows.Forms.Button>, choisissez **Afficher le code**, puis ajoutez le code suivant dans le gestionnaire d'événements `Button1_Click` :
 
     ```vb
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -271,7 +271,7 @@ Cette procédure pas à pas montre comment créer un [!INCLUDE[ss_data_service](
 
 4. Dans le code précédent, remplacez `http://localhost:53161/NorthwindCustomers.svc` par l'URL du gestionnaire d'événements `Form1_Load`.
 
-5. Dans la barre de menus, choisissez **Déboguer**, **Démarrer le débogage** pour exécuter l’application.
+5. Dans la barre de menus, choisissez **Déboguer**, **Démarrer le débogage** pour exécuter l'application.
 
 6. Dans la zone de texte, tapez **London**, puis choisissez le bouton. Seuls les clients de Londres sont affichés.
 

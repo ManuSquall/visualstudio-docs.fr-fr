@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9d3ed6456ecf4ca226368338078247a10d80cee3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2d2e067b70256bd86a1f7598033689d6a498af60
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68196603"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298348"
 ---
 # <a name="configuring-targets-and-tasks"></a>Configuration des cibles et des tâches
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,12 +24,12 @@ Vous pouvez configurer des cibles et des tâches MSBuild pour qu’elles s’ex�
 ## <a name="installation"></a>Installation  
  Les versions 4.5 et 4.5.1 du .NET Framework remplacent le common language runtime (CLR), les cibles, les tâches et les outils du .NET Framework 4 sans les renommer. Le .NET Framework 4.5.1 est installé en même temps que [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)].  
   
- Si vous souhaitez installer MSBuild séparément de Visual Studio, vous pouvez télécharger le package d’installation à partir de la page de [téléchargement de MSBuild](http://go.microsoft.com/fwlink/?LinkId=309745). Vous devez également installer les versions du .NET Framework que vous souhaitez utiliser.  
+ Si vous souhaitez installer MSBuild séparément de Visual Studio, vous pouvez télécharger le package d’installation à partir de la page de [téléchargement de MSBuild](https://go.microsoft.com/fwlink/?LinkId=309745). Vous devez également installer les versions du .NET Framework que vous souhaitez utiliser.  
   
 ## <a name="targets-and-tasks"></a>Cibles et tâches  
  MSBuild exécute certaines des tâches de génération hors processus pour cibler un ensemble plus important de contextes.  Par exemple, un MSBuild 32 bits peut exécuter une tâche de génération dans un processus 64 bits pour cibler un ordinateur 64 bits. Pour cela, utilisez les arguments `UsingTask` et les paramètres `Task`. Les cibles installées par le .NET Framework 4.5 définissent ces paramètres et ces arguments, et aucune modification n’est nécessaire pour générer des applications adaptées aux différents contextes cible.  
   
- Si vous souhaitez créer votre propre contexte cible, vous devez définir correctement ces paramètres et ces arguments. Pour obtenir des exemples, reportez-vous au fichier Microsoft.Common.targets du .NET Framework 4.5 et au fichier Microsoft.Common.Tasks.  Pour plus d’informations sur la façon de créer une tâche personnalisée pouvant fonctionner avec plusieurs contextes cibles, ou sur la façon de modifier des tâches existantes, consultez [Guide pratique pour Configurer les cibles et tâches](../msbuild/how-to-configure-targets-and-tasks.md).  
+ Si vous souhaitez créer votre propre contexte cible, vous devez définir correctement ces paramètres et ces arguments. Pour obtenir des exemples, reportez-vous au fichier Microsoft.Common.targets du .NET Framework 4.5 et au fichier Microsoft.Common.Tasks.  Pour plus d’informations sur la création d’une tâche personnalisée pouvant fonctionner avec plusieurs contextes cibles, ou sur la modification de tâches existantes, consultez [Guide pratique pour configurer les cibles et les tâches](../msbuild/how-to-configure-targets-and-tasks.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Multiciblage](../msbuild/msbuild-multitargeting-overview.md)

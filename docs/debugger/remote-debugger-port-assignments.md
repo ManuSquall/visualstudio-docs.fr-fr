@@ -1,5 +1,5 @@
 ---
-title: Affectations de port du débogueur distant | Microsoft Docs
+title: Remote Debugger Port Assignments | Microsoft Docs
 ms.custom: ''
 ms.date: 05/18/2018
 ms.topic: reference
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf3d3ce704d517224452731c52a891ac2263f738
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2d99a1aff2c241e81e8914a247d2f6d8981ee273
+ms.sourcegitcommit: 9c7d8693108ecd2042a70c04cebe3c44af657baf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72730238"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74239456"
 ---
 # <a name="remote-debugger-port-assignments"></a>Affectations de port du débogueur distant
 Le débogueur distant de Visual Studio peut s’exécuter comme une application ou un service en arrière-plan. Quand il est exécuté comme une application, il utilise un port qui est affecté par défaut comme suit :
@@ -29,7 +29,7 @@ Le débogueur distant de Visual Studio peut s’exécuter comme une application 
 
 - Visual Studio 2012 : 4016
 
-  En d’autres termes, le numéro de port attribué au débogueur distant est incrémenté de 2 pour chaque version. Vous pouvez définir un numéro de port différent si vous le souhaitez. Nous expliquerons comment définir des numéros de port dans une section ultérieure.
+En d’autres termes, le numéro de port attribué au débogueur distant est incrémenté de 2 pour chaque version. Vous pouvez définir un numéro de port différent si vous le souhaitez. Nous expliquerons comment définir des numéros de port dans une section ultérieure.
 
 ## <a name="the-remote-debugger-port-on-32-bit-operating-systems"></a>Port du débogueur distant sur les systèmes d’exploitation 32 bits
 
@@ -48,10 +48,10 @@ Le débogueur distant de Visual Studio peut s’exécuter comme une application 
 
 ## <a name="the-remote-debugger-port-on-64-bit-operating-systems"></a>Port du débogueur distant sur les systèmes d’exploitation 64 bits
 ::: moniker range=">=vs-2019"
- Quand la version 64 bits du débogueur distant est démarrée, elle utilise le port principal (4024) par défaut.  Si vous déboguez un processus 32 bits, la version 64 bits du débogueur distant démarre une version 32 bits du débogueur distant sur le port 4025 (le numéro de port principal est incrémenté de 1). Si vous exécutez le débogueur distant 32 bits, il utilise le port 4024, le port 4025 n’est pas utilisé.
+ When the 64-bit version of the remote debugger is started, it uses the main port (4024) by default.  If you debug a 32-bit process, the 64-bit version of the remote debugger starts a 32-bit version of the remote debugger on port 4025 (the main port number incremented by 1). Si vous exécutez le débogueur distant 32 bits, il utilise le port 4024, le port 4025 n’est pas utilisé.
 ::: moniker-end
 ::: moniker range="vs-2017"
- Quand la version 64 bits du débogueur distant est démarrée, elle utilise le port principal (4022) par défaut.  Si vous déboguez un processus 32 bits, la version 64 bits du débogueur distant démarre une version 32 bits du débogueur distant sur le port 4023 (le numéro de port principal est incrémenté de 1). Si vous exécutez le débogueur distant 32 bits, il utilise le port 4022 et 4023 n’est pas utilisé.
+ When the 64-bit version of the remote debugger is started, it uses the main port (4022) by default.  If you debug a 32-bit process, the 64-bit version of the remote debugger starts a 32-bit version of the remote debugger on port 4023 (the main port number incremented by 1). Si vous exécutez le débogueur distant 32 bits, il utilise le port 4022 et 4023 n’est pas utilisé.
 :::moniker-end
 
  Ce port est configurable à partir de la ligne de commande : **Msvsmon /wow64port \<<numéro_de_port>** .

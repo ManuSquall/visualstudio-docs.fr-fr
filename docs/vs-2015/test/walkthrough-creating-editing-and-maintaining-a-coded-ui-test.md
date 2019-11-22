@@ -8,12 +8,12 @@ ms.assetid: f7c25ba7-5c9c-455b-9242-701cda56f90c
 caps.latest.revision: 43
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2891a01590f2970fc2e68ea7bc2d57506b12d26b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4b4d3e7c597766c3b416a7cb637cf0e5e99f71d5
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657105"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302057"
 ---
 # <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>Procédures pas à pas : création, édition et gestion d'un test codé de l'interface utilisateur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -151,7 +151,7 @@ Dans cette procédure pas à pas, vous allez créer une simple application WPF (
 
      Vous pouvez mettre l'enregistrement en pause si nécessaire, par exemple si vous recevez du courrier électronique et que vous souhaitez y répondre.
 
-     ![Suspendre l’enregistrement](../test/media/cuit.png "CUIT")
+     ![Suspendre l’enregistrement](../test/media/cuit.png "CUIT_")
 
     > [!WARNING]
     > Toutes les actions effectuées sur le Bureau sont enregistrées. Mettez l'enregistrement en pause si vous effectuez des actions susceptibles d'inclure des données confidentielles dans l'enregistrement.
@@ -369,22 +369,22 @@ Dans cette procédure pas à pas, vous allez créer une simple application WPF (
 ## <a name="external-resources"></a>Ressources externes
 
 ### <a name="videos"></a>Vidéos
- ![lien vers](../data-tools/media/playvideo.gif "PlayVideo") [les tests codés de l’interface utilisateur-DeepDive-Episode1-gettingstarted](http://go.microsoft.com/fwlink/?LinkID=230573)
+ ![lien vers](../data-tools/media/playvideo.gif "PlayVideo") [les tests codés de l’interface utilisateur-DeepDive-Episode1-gettingstarted](https://go.microsoft.com/fwlink/?LinkID=230573)
 
- ![lien vers](../data-tools/media/playvideo.gif "PlayVideo") [les tests codés de l’interface utilisateur-DeepDive-Episode2-maintenanceetdébogage](http://go.microsoft.com/fwlink/?LinkID=230574)
+ ![lien vers](../data-tools/media/playvideo.gif "PlayVideo") [les tests codés de l’interface utilisateur-DeepDive-Episode2-maintenanceetdébogage](https://go.microsoft.com/fwlink/?LinkID=230574)
 
- ![lien vers](../data-tools/media/playvideo.gif "PlayVideo") [les tests codés de l’interface utilisateur-DeepDive-Episode3-codagemanuel](http://go.microsoft.com/fwlink/?LinkID=230575)
+ ![lien vers](../data-tools/media/playvideo.gif "PlayVideo") [les tests codés de l’interface utilisateur-DeepDive-Episode3-codagemanuel](https://go.microsoft.com/fwlink/?LinkID=230575)
 
 ### <a name="hands-on-lab"></a>Ateliers pratiques
- [Laboratoire virtuel MSDN : Introduction à la création de tests codés de l’interface utilisateur avec Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=22508)
+ [Laboratoire virtuel MSDN : Introduction à la création de tests codés de l’interface utilisateur avec Visual Studio 2010](https://go.microsoft.com/fwlink/?LinkID=22508)
 
-### <a name="faq"></a>Questions fréquentes (FAQ)
- [FAQ concernant les tests codés de l’interface utilisateur - 1](http://go.microsoft.com/fwlink/?LinkID=230576)
+### <a name="faq"></a>FAQ
+ [FAQ concernant les tests codés de l’interface utilisateur - 1](https://go.microsoft.com/fwlink/?LinkID=230576)
 
- [FAQ concernant les tests codés de l’interface utilisateur - 2](http://go.microsoft.com/fwlink/?LinkID=230578)
+ [FAQ concernant les tests codés de l’interface utilisateur - 2](https://go.microsoft.com/fwlink/?LinkID=230578)
 
 ### <a name="forum"></a>Forum
- [Tests de Visual Studio UI Automation (inclut CodedUI)](http://go.microsoft.com/fwlink/?LinkID=224497)
+ [Tests d’automation de l’interface utilisateur de Visual Studio (inclut CodedUI)](https://go.microsoft.com/fwlink/?LinkID=224497)
 
 ## <a name="see-also"></a>Voir aussi
  [Utiliser UI Automation pour tester votre Code](../test/use-ui-automation-to-test-your-code.md) [prise en main avec les](https://msdn.microsoft.com/18e61d03-b96a-4058-a166-8ec6b3f6116b) [plateformes et configurations prises en charge par le Concepteur WPF pour les tests codés de l’interface utilisateur et les enregistrements des actions](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [modification des tests codés de l’interface utilisateur à l’aide de l’éditeur de test codé](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)

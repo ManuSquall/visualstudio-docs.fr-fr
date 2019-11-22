@@ -1,5 +1,5 @@
 ---
-title: Modifier & Continuer (Visual C++) | Microsoft Docs
+title: Modifier & Continuer (visuel C++) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,25 +18,25 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 752454f9a52807766d6eef5b2563a7b70ca0f4dd
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: fef02f08ac635687eaaf071188ba0455c6389d9e
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65697392"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301054"
 ---
 # <a name="edit-and-continue-visual-c"></a>Modifier & Continuer (Visual C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous pouvez utiliser Modifier et continuer dans les projets Visual C++. Consultez [modifications de Code prises en charge (C++)](../debugger/supported-code-changes-cpp.md) pour plus d’informations sur les limitations de modifier & Continuer.  
+Vous pouvez utiliser Modifier et continuer dans les projets Visual C++. Pour plus d’informations sur les limitations de modifier & continuer, consultez [modifications du code prises en charge (C++)](../debugger/supported-code-changes-cpp.md) .  
   
- À partir de Visual Studio 2015 Update 1, vous pouvez maintenant utiliser Modifier & Continuer dans les applications Windows Store C++ et DirectX, car il prend désormais en charge la **/Zi** commutateur de compilateur avec **/bigobj** basculer. Vous pouvez également utiliser Modifier & Continuer avec les fichiers binaires compilés avec la **/FASTLINK** basculer.  
+ À compter de Visual Studio 2015 Update 1, vous pouvez désormais utiliser modifier & continuer dans les C++ applications du Windows Store et les applications DirectX, car il prend désormais en charge le commutateur de compilateur **/Zi** avec le commutateur **/bigobj** . Vous pouvez également utiliser modifier & continuer avec les fichiers binaires compilés avec le commutateur **/Fastlink**  
   
- Parmi les autres améliorations d’Update 1 figurent une nouvelle boîte de dialogue d’attente annulable et l’affichage d’une notification quand un fichier ne prend pas en charge l’option Modifier et continuer. Pour plus d’informations sur les améliorations de mise à jour 1, consultez [améliorations pour C++ Modifier & Continuer dans Visual Studio 2015 Update 1](http://blogs.msdn.com/b/vcblog/archive/2015/11/30/improvements-for-c-edit-and-continue-in-visual-studio-2015-update-1.aspx).  
+ D’autres améliorations de Update 1 incluent une nouvelle boîte de dialogue d’attente annulable et une notification lorsqu’un fichier ne prend pas en charge modifier & continuer. Pour plus d’informations sur les améliorations apportées à Update 1, consultez améliorations apportées à [ C++ modifier & continuer dans Visual Studio 2015 Update 1](https://devblogs.microsoft.com/cppblog/improvements-for-c-edit-and-continue-in-visual-studio-2015-update-1/).  
   
  L’option de compilateur [/Zo (Améliorer le débogage optimisé)](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) qui a été introduite dans Visual Studio 2013 Update 3 ajoute des informations aux fichiers de symboles (.pdb) pour les fichiers binaires compilés sans l’option [/Od (Désactiver (Débogage))](https://msdn.microsoft.com/library/aafb762y.aspx).  
   
- **/ Zo** désactive Modifier & Continuer. Voir [Guide pratique pour déboguer du code optimisé](../debugger/how-to-debug-optimized-code.md).  
+ **/Zo** désactive modifier & continuer. Consultez [Guide pratique pour déboguer le code optimisé](../debugger/how-to-debug-optimized-code.md).  
   
 ## <a name="BKMK_Enable_or_disable_automatic_invocation_of_Edit_and_Continue"></a> Activer ou désactiver Modifier & Continuer  
  Vous pouvez désactiver l’appel automatique de Modifier & Continuer si vous apportez des modifications au code que vous ne souhaitez pas appliquer tout de suite, pendant la session de débogage en cours. Vous pouvez également réactiver la fonctionnalité automatique Modifier & Continuer.  
@@ -47,7 +47,7 @@ Vous pouvez utiliser Modifier et continuer dans les projets Visual C++. Consult
   
 3. Dans le groupe **Modifier &amp; Continuer** , cochez ou décochez la case **Activer Modifier et Continuer natif** .  
   
-   La modification de ce paramètre s’applique à tous vos projets actuels. Après avoir modifié ce paramètre, il n'est pas nécessaire de régénérer l'application. Vous pouvez modifier ce paramètre pendant le débogage. Si vous générez l’application à partir de la ligne de commande ou d’un makefile, mais que vous effectuez le débogage dans l’environnement Visual Studio, vous pouvez continuer à utiliser Modifier & Continuer à condition de définir l’option **/ZI** .  
+   La modification de ce paramètre s’applique à tous vos projets actuels. Après avoir modifié ce paramètre, il n'est pas nécessaire de régénérer l'application. Vous pouvez modifier ce paramètre pendant le débogage. Si vous générez l’application à partir de la ligne de commande ou d’un makefile, mais que vous effectuez le débogage dans l’environnement Visual Studio, vous pouvez continuer à utiliser Modifier &amp; Continuer à condition de définir l’option **/ZI** .  
   
 ## <a name="BKMK_How_to_apply_code_changes_explicitly"></a> Comment appliquer des modifications du code explicitement  
  Dans Visual C++, Modifier & Continuer peut appliquer des modifications de code de deux manières. Les modifications du code peuvent être implicitement appliquées, lorsque vous choisissez une commande d'exécution, ou explicitement, à l'aide de la commande **Appliquer les modifications du code** .  

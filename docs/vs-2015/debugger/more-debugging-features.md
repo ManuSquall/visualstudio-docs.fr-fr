@@ -1,5 +1,5 @@
 ---
-title: Fonctionnalités de débogage plus | Microsoft Docs
+title: Plus de fonctionnalités de débogage | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,19 +14,19 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f2e6140b10b9f0c9a540144ca70bb081ac2d3e7a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0f20d9679bb0eb726c594ab75fd7a04bc821b97d
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68157451"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300536"
 ---
 # <a name="more-debugging-features"></a>Plus de fonctionnalités de débogage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette section traite de fonctionnalités supplémentaires que vous pouvez utiliser avec le débogueur Visual Studio.  
   
- Pour bénéficier d’une liste de conseils et d’astuces visant à accélérer et simplifier le débogage, consultez [Conseils et astuces de débogage](http://blogs.msdn.com/b/visualstudio/archive/2015/05/22/debugging-tips-and-tricks.aspx).  
+ Pour bénéficier d’une liste de conseils et d’astuces visant à accélérer et simplifier le débogage, consultez [Conseils et astuces de débogage](https://devblogs.microsoft.com/visualstudio/debugging-tips-and-tricks/).  
   
 ## <a name="additional-features"></a>Fonctionnalités supplémentaires  
  [Inspecter les propriétés XAML en phase de débogage](../debugger/inspect-xaml-properties-while-debugging.md)  
@@ -38,16 +38,16 @@ Cette section traite de fonctionnalités supplémentaires que vous pouvez utilis
  [Affichage des données dans le débogueur](../debugger/viewing-data-in-the-debugger.md)  
  Décrit les différentes fenêtres de débogage et  
   
- [le débogage juste-à-temps](../debugger/just-in-time-debugging-in-visual-studio.md)  
+ [Débogage juste-à-temps](../debugger/just-in-time-debugging-in-visual-studio.md)  
  Décrit le débogage juste-à-temps, qui permet de démarrer automatiquement le débogueur si un programme tombe en panne lors de son exécution en dehors de Visual Studio.  
   
- [Procédure pas à pas : Déboguer au moment du design](../debugger/walkthrough-debugging-at-design-time.md)  
+ [Procédure pas à pas : débogage au moment de la conception](../debugger/walkthrough-debugging-at-design-time.md)  
  Montre comment utiliser la fenêtre Exécution Visual Studio pour exécuter une fonction ou une sous-routine quand votre application ne s’exécute pas. 
   
  [Modifier & Continuer](../debugger/edit-and-continue.md)  
  Décrit Modifier & Continuer, un outil qui vous permet de modifier le code source quand votre programme est en mode arrêt et d’appliquer ces modifications sans avoir à mettre fin à la session de débogage ni à régénérer votre programme. Cette section explique également comment activer ou désactiver cette fonctionnalité.  
   
- [À l’aide de fichiers de vidage](../debugger/using-dump-files.md) décrit les fichiers de vidage, y compris des instructions sur l’enregistrement et l’ouverture. Les fichiers dump contiennent un instantané de l’état de votre programme à un moment donné, généralement après un incident. Si vous testez votre programme sur un ordinateur où n’ont pas été installés des fichiers sources ni PDB, vous pouvez enregistrer un fichier dump quand un incident se produit et l’utiliser pour déboguer l’incident sur l’ordinateur utilisé pour la génération et contenant les fichiers sources et PDB. 
+ [Utilisation des fichiers dump](../debugger/using-dump-files.md) Décrit les fichiers dump, y compris les instructions sur l’enregistrement et l’ouverture. Les fichiers dump contiennent un instantané de l’état de votre programme à un moment donné, généralement après un incident. Si vous testez votre programme sur un ordinateur où n’ont pas été installés des fichiers sources ni PDB, vous pouvez enregistrer un fichier dump quand un incident se produit et l’utiliser pour déboguer l’incident sur l’ordinateur utilisé pour la génération et contenant les fichiers sources et PDB. 
   
- [Guide pratique : restaurer des commandes de débogueur masquées](../debugger/how-to-restore-hidden-debugger-commands.md)  
+ [Comment : restaurer les commandes masquées du débogueur](../debugger/how-to-restore-hidden-debugger-commands.md)  
  Décrit comment rendre visibles les commandes du débogueur qui ont été masquées par les paramètres IDE par défaut.

@@ -1,5 +1,5 @@
 ---
-title: Déploiement d’Applications, Services et composants | Microsoft Docs
+title: Déploiement d’applications, de services et de composants | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8ed493089ed215faaddc1009328ec6f8b906534f
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 5ca4d6a4097848021073bb77323fd0456f3dddc1
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260682"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74289819"
 ---
 # <a name="deploying-applications-services-and-components"></a>Déploiement d'applications, de services et de composants
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,18 +40,18 @@ En déployant une application, un service ou un composant, vous le distribuez po
   
 |Scénario de déploiement|Contenu de support|  
 |-------------------------|------------------------|  
-|**Publier dans le cloud :** Proposer des applications, services et données à partir de n’importe où à l’aide de Visual Studio pour les déployer vers Microsoft Azure.|[Publication d’Applications sur Microsoft Azure](/visualstudio/deployment/quickstart-deploy-to-azure)|  
-|**Publier une application Windows Store :** Vous pouvez facilement créer, envoyer et vendre vos applications à partir du Windows Store pour les clients dans le monde entier.|[Empaquetage, le déploiement et interrogation d’applications du Windows Store](https://msdn.microsoft.com/library/hh446593\(v=vs.85\).aspx)|  
-|**Publier un Windows Phone application :** Vous pouvez soumettre une nouvelle application ou une mise à jour à une application existante pour la certification sur le centre de développement Windows Phone.|[Publier une application du Windows Phone](http://dev.windowsphone.com/publish)|  
-|**Déployer une application ASP.NET ou un service :** Vous pouvez déployer des applications ASP.NET et services dans un nombre de différentes façons.|[Déploiement de services et applications web ASP.NET](http://www.asp.net/aspnet/overview/deployment)|  
-|**Déployer une application LightSwitch ou un service :** Une fois que vous créez des applications et services OData à l’aide de LightSwitch, vous pouvez les déployer sur un serveur web ou sur Microsoft Azure.|[Déploiement d’applications LightSwitch](https://msdn.microsoft.com/library/4818d933-295c-4ecc-9148-7ad9ca28dcdb)|  
-|**Publier une application pour SharePoint :** Vous pouvez publier une application pour SharePoint à l’Office Store ou à un catalogue d’applications pour une organisation interne.|[Publier une application pour SharePoint à l’aide de Visual Studio](https://msdn.microsoft.com/library/office/jj220044\(v=office.15\).aspx)|  
-|**Publier une application pour Office :** Vous pouvez publier une application pour Office à l’Office Store ou à un catalogue d’applications pour une organisation interne.|[Publication de votre application pour Office](https://msdn.microsoft.com/library/office/fp123515.aspx)|  
-|**Déployer un service WCF :** D’autres applications peuvent utiliser des services RIA WCF que vous déployez sur un serveur web.|[Déploiement Services RIA WCF Solutions](https://msdn.microsoft.com/library/ff426912\(v=vs.91\).aspx)|  
-|**Déployer un service OData :** Autres applications peuvent utiliser les services OData que vous déployez sur un serveur web.|[Déployer un Service OData](https://msdn.microsoft.com/library/hh973447.aspx)|  
-|**Déployer une application de bureau :** En utilisant le déploiement ClickOnce, vous pouvez publier une application de bureau à un serveur web ou un partage de fichiers réseau. Les utilisateurs peuvent ensuite installer l'application d'un seul clic.|[Sécurité et déploiement ClickOnce](../deployment/clickonce-security-and-deployment.md)|  
-|**Créer un programme d’installation :** Vous pouvez créer un programme d’installation à l’aide de InstallShield Limited Edition, qui est gratuite.|[InstallShield Limited Edition](../deployment/installshield-limited-edition.md)|  
-|**Maintenir un programme d’installation existant :** Continuer à utiliser un programme d’installation créé dans une version antérieure de Visual Studio en installant l’Extension des projets Visual Studio Installer.|[Extension de projets de programme d’installation de Visual Studio](http://blogs.msdn.com/b/visualstudio/archive/2014/04/17/visual-studio-installer-projects-extension.aspx)<br /><br /> Documentation pour les projets de programme d’installation est disponible ici : [Déploiement de programme d’installation de Visual Studio](https://msdn.microsoft.com/library/2kt85ked\(v=vs.100\).aspx)|  
-|**Déployer une application Visual C++ :** Vous pouvez déployer le runtime Visual C++ avec une application à l’aide de déploiement central, le déploiement local ou la liaison statique.|[Déploiement des applications de bureau natives (Visual C++)](/cpp/windows/deploying-native-desktop-applications-visual-cpp)|  
-|**Déployer une application de test :** Vous pouvez effectuer des développements et des tests plus sophistiqués en déployant vos applications dans des environnements virtuels.|[Test sur un environnement lab](https://msdn.microsoft.com/library/14ba54c8-a158-4a6e-b00a-b00ae960feb8)|  
-|**Installer les composants requis :** Vous pouvez installer les composants prérequis pour les applications de bureau en configurant un programme d’installation générique, appelé programme d’amorçage.|[Prérequis pour le déploiement d’applications](../deployment/application-deployment-prerequisites.md)|
+|**Publier dans le cloud :** vous pouvez rendre des applications, des services et des données disponibles où que vous soyez en utilisant Visual Studio pour les déployer sur Microsoft Azure.|[Publication d’applications sur Microsoft Azure](/visualstudio/deployment/quickstart-deploy-to-azure)|  
+|**Publier une application Windows Store :** vous pouvez facilement générer, envoyer et vendre vos applications à des clients partout dans le monde depuis Windows Store.|[Empaquetage, déploiement et interrogation d’applications du Windows Store](https://msdn.microsoft.com/library/hh446593\(v=vs.85\).aspx)|  
+|**Publier une application Windows Phone :** vous pouvez envoyer une nouvelle application ou une mise à jour d'une application existante pour la certification sur le centre de développement Windows Phone.|[Publier une application Windows Phone](https://developer.microsoft.com/)|  
+|**Déployer une application ou un service ASP.net :** Vous pouvez déployer des applications et des services ASP.NET de différentes manières.|[Déploiement d’applications et de services Web ASP.NET](https://docs.microsoft.com/aspnet/mvc/overview/deployment/)|  
+|**Déployer une application ou un service LightSwitch :** Après avoir créé des applications et des services OData à l’aide de LightSwitch, vous pouvez les déployer sur un serveur Web ou sur Microsoft Azure.|[Déploiement d’applications LightSwitch](https://msdn.microsoft.com/library/4818d933-295c-4ecc-9148-7ad9ca28dcdb)|  
+|**Publier une application pour SharePoint :** Vous pouvez publier une application pour SharePoint dans Office Store ou dans un catalogue d’applications pour une organisation interne.|[Publier une application pour SharePoint à l’aide de Visual Studio](https://msdn.microsoft.com/library/office/jj220044\(v=office.15\).aspx)|  
+|**Publier une application pour Office :** vous pouvez publier une application pour Office sur Office Store ou dans un catalogue d'applications pour une organisation interne.|[Publication de votre application pour Office](https://msdn.microsoft.com/library/office/fp123515.aspx)|  
+|**Déployer un service WCF :** d'autres applications peuvent utiliser des services RIA WCF que vous déployez sur un serveur Web.|[Déploiement de solutions WCF RIA Services](https://msdn.microsoft.com/library/ff426912\(v=vs.91\).aspx)|  
+|**Déployer un service OData :** d'autres applications peuvent utiliser des services OData que vous déployez sur un serveur Web.|[Déployer un service OData](https://msdn.microsoft.com/library/hh973447.aspx)|  
+|**Déployer une application bureautique :** en utilisant le déploiement ClickOnce, vous pouvez publier une application bureautique sur un serveur Web ou un partage de fichiers réseau. Les utilisateurs peuvent ensuite installer l'application d'un seul clic.|[Sécurité et déploiement ClickOnce](../deployment/clickonce-security-and-deployment.md)|  
+|**Créer un programme d'installation :** vous pouvez créer un programme d'installation à l'aide de InstallShield Limited Edition, qui est gratuit.|[Installshield Limited Edition](../deployment/installshield-limited-edition.md)|  
+|**Tenir à jour un programme d'installation existant :** continuez à utiliser un programme d'installation créé dans une version antérieure de Visual Studio en installant l'extension des projets d'installation Visual Studio.|[Extension des projets Visual Studio Installer](https://devblogs.microsoft.com/visualstudio/visual-studio-installer-projects-extension/)<br /><br /> La documentation des projets d’installation est disponible ici : [déploiement de Visual Studio installer](https://msdn.microsoft.com/library/2kt85ked\(v=vs.100\).aspx)|  
+|**Déployer une application C++ visuelle :** vous pouvez déployer le runtime C++ visuel avec une application à l’aide d’un déploiement central, d’un déploiement local ou d’une liaison statique.|[Déploiement des applications de bureau natives (Visual C++)](/cpp/windows/deploying-native-desktop-applications-visual-cpp)|  
+|**Déployer une application de test :** vous pouvez effectuer un développement et un test plus complexes en déployant vos applications dans des environnements virtuels.|[Test sur un environnement lab](https://msdn.microsoft.com/library/14ba54c8-a158-4a6e-b00a-b00ae960feb8)|  
+|**Composants requis pour l'installation :** vous pouvez installer les composants requis pour les applications bureautiques en configurant un programme d'installation générique, qui est appelé programme d'amorçage.|[Composants requis pour le déploiement d'applications](../deployment/application-deployment-prerequisites.md)|

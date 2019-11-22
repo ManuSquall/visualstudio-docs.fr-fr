@@ -12,12 +12,12 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5b22e120161a3fefb5688a71c8e4d7540b8bc66e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a23a8d28f336728789fe9cbbe38f965cc56763d7
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669687"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74295515"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Propagation de modifications en dehors du modèle par des gestionnaires d'événements
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ namespace Company.MusicLib
 ```
 
 ## <a name="using-events-to-make-undoable-adjustments-in-the-store"></a>Utilisation d’événements pour effectuer des ajustements annulables dans le magasin
- Les événements de magasin ne sont normalement pas utilisés pour propager les modifications dans le magasin, car le gestionnaire d’événements s’exécute une fois la transaction validée. Au lieu de cela, vous devez utiliser une règle de magasin. Pour plus d’informations, consultez [règles de propagation des modifications dans le modèle](../modeling/rules-propagate-changes-within-the-model.md).
+ Les événements de magasin ne sont normalement pas utilisés pour propager les modifications dans le magasin, car le gestionnaire d’événements s’exécute une fois la transaction validée. Au lieu de cela, vous devez utiliser une règle de magasin. Pour plus d’informations, consultez [propager les modifications dans le modèle de règles](../modeling/rules-propagate-changes-within-the-model.md).
 
  Toutefois, vous pouvez utiliser un gestionnaire d’événements pour effectuer des mises à jour supplémentaires du magasin, si vous souhaitez que l’utilisateur soit en mesure d’annuler les mises à jour supplémentaires séparément de l’événement d’origine. Supposons, par exemple, que les caractères minuscules constituent la Convention habituelle pour les titres d’albums. Vous pouvez écrire un gestionnaire d’événements Store qui corrige le titre en minuscules après que l’utilisateur l’a tapé en majuscules. Toutefois, l’utilisateur peut utiliser la commande Annuler pour annuler votre correction, en restaurant les caractères majuscules. Une deuxième opération d’annulation supprimerait la modification de l’utilisateur.
 
@@ -180,7 +180,7 @@ private static void AlbumTitleAdjuster(object sender,
 |ElementAdded|Une instance d’une classe de domaine, relation de domaine, forme, connecteur ou diagramme est créée.|
 |ElementDeleted|Un élément de modèle a été supprimé du répertoire de l’élément du magasin et n’est plus la source ou la cible d’une relation. L’élément n’est pas réellement supprimé de la mémoire, mais il est conservé en cas d’annulation ultérieure.|
 |ElementEventsBegun|Appelée à la fin d’une transaction externe.|
-|Un événement elementeventsended|Appelé lorsque tous les autres événements ont été traités.|
+|ElementEventsEnded|Appelé lorsque tous les autres événements ont été traités.|
 |ElementMoved|Un élément de modèle a été déplacé d’une partition de magasin à une autre.<br /><br /> Cela n’est pas lié à l’emplacement d’une forme sur le diagramme.|
 |ElementPropertyChanged|La valeur d’une propriété de domaine a changé. Cette valeur est exécutée uniquement si les valeurs anciennes et nouvelles ne sont pas égales.|
 |RolePlayerChanged|L’un des deux rôles (se termine) d’une relation fait référence à un nouvel élément.|
@@ -190,4 +190,4 @@ private static void AlbumTitleAdjuster(object sender,
 |TransactionRolledBack||
 
 ## <a name="see-also"></a>Voir aussi
- [Réponse aux modifications et propagation de](../modeling/responding-to-and-propagating-changes.md) l' [exemple de code : diagrammes de circuit](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+ [Propagation et réponse aux modifications](../modeling/responding-to-and-propagating-changes.md)

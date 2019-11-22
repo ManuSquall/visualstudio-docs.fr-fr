@@ -1,5 +1,5 @@
 ---
-title: Créer votre propre Page de démarrage | Microsoft Docs
+title: Création de votre propre page de démarrage | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: a0df5b9c-0932-4e54-86f0-28530ad9d684
 caps.latest.revision: 22
 manager: jillfra
-ms.openlocfilehash: cc465ca5bc9474aaba51042d453a57ee7ec124ec
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ceb78d3310f37a58850199b11fb2b2fed86f6799
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432302"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299323"
 ---
 # <a name="creating-your-own-start-page"></a>Création de votre propre page de démarrage
 Vous pouvez créer une page de démarrage personnalisée en utilisant le modèle de projet Page de démarrage ou en créant une page de démarrage vierge.  
@@ -28,20 +28,20 @@ Vous pouvez créer une page de démarrage personnalisée en utilisant le modèle
   
 #### <a name="to-create-a-custom-start-page-by-using-the-start-page-project-template"></a>Pour créer une page de démarrage personnalisée à l’aide du modèle de projet Page de démarrage  
   
-1. Téléchargez et installez le [modèle de projet Page de démarrage](http://go.microsoft.com/fwlink/?LinkId=186204) à partir de la galerie Visual Studio.  
+1. Téléchargez et installez le [modèle de projet Page de démarrage](https://go.microsoft.com/fwlink/?LinkId=186204) à partir de la galerie Visual Studio.  
   
     > [!WARNING]
-    > À l’heure actuelle, le modèle de projet Page de démarrage Visual Studio 2010 n’a pas encore été mis à jour. Pour plus d’informations sur la mise à niveau de ce modèle, consultez [Comment : Mise à niveau d’une Page de démarrage personnalisée Visual Studio](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).  
+    > À l’heure actuelle, le modèle de projet Page de démarrage Visual Studio 2010 n’a pas encore été mis à jour. Pour plus d’informations sur la mise à niveau de ce modèle, consultez [Comment : mettre à niveau une page de démarrage personnalisée Visual Studio](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).  
   
 2. Une fois que vous avez installé le modèle, utilisez-le pour créer une nouvelle page de démarrage.  
   
-3. Dans le volet gauche de la boîte de dialogue Nouveau projet, sous **Modèles installés**, développez le nœud **Autres types de projets** , puis cliquez sur **Extensibilité**.  
+3. Dans le volet gauche de la boîte de dialogue Nouveau projet, sous **Modèles installés**, développez le nœud **Autres types de projets**, puis cliquez sur **Extensibilité**.  
   
 4. Dans le volet central, cliquez sur **Page de démarrage personnalisée**, puis nommez votre projet et cliquez sur **OK**.  
   
      Visual Studio crée un projet Page de démarrage qui est une copie intégrale de la page de démarrage de Visual Studio.  
   
-5. Dans l’ **Explorateur de solutions**, ouvrez **StartPage.xaml**.  
+5. Dans l’**Explorateur de solutions**, ouvrez **StartPage.xaml**.  
   
 6. Modifiez StartPage.xaml.  
   
@@ -78,7 +78,7 @@ Vous pouvez créer une page de démarrage personnalisée en utilisant le modèle
   
     Vous devez conserver les fichiers .vsix et .pkgdef pour le déploiement.  
   
-   Vous pouvez également créer une page de démarrage vierge en créant un fichier XAML avec la structure de balise nécessaire pour qu’il soit reconnu par Visual Studio. Vous pouvez ensuite ajouter des balises et le code-behind pour obtenir l’apparence et les fonctionnalités voulues. Pour plus d’informations, consultez [création d’une Page de démarrage personnalisée](../extensibility/creating-a-custom-start-page.md).  
+   Vous pouvez également créer une page de démarrage vierge en créant un fichier XAML avec la structure de balise nécessaire pour qu’il soit reconnu par Visual Studio. Vous pouvez ensuite ajouter des balises et le code-behind pour obtenir l’apparence et les fonctionnalités voulues. Pour plus d’informations, consultez [création d’une page de démarrage personnalisée](../extensibility/creating-a-custom-start-page.md).  
   
 ## <a name="testing-and-applying-the-custom-start-page"></a>Test et application de la page de démarrage personnalisée  
  Ne définissez pas l’instance principale de manière à exécuter la page de démarrage personnalisée avant de vérifier qu’elle ne se bloque pas. Quand vous avez testé votre page de démarrage personnalisée, vous pouvez l’appliquer à votre système en répétant les trois dernières étapes de cette procédure dans l’instance principale de Visual Studio.  
@@ -89,16 +89,16 @@ Vous pouvez créer une page de démarrage personnalisée en utilisant le modèle
   
     L’instance expérimentale de Visual Studio s’ouvre avec la nouvelle page de démarrage installée, mais non sélectionnée.  
   
-2. Dans l’instance expérimentale de Visual Studio, dans le menu **Outils** , cliquez sur **Options**.  
+2. Dans l’instance expérimentale de Visual Studio, dans le menu **Outils**, cliquez sur **Options**.  
   
-3. Dans la boîte de dialogue **Options** , sous **Environnement**, sélectionnez **Démarrage**. Ensuite, dans la liste **Personnaliser la page de démarrage** , sélectionnez le fichier .xaml, puis cliquez sur **OK**.  
+3. Dans la boîte de dialogue **Options**, sous **Environnement**, sélectionnez **Démarrage**. Ensuite, dans la liste **Personnaliser la page de démarrage**, sélectionnez le fichier .xaml, puis cliquez sur **OK**.  
   
-4. Dans le menu **Affichage** , cliquez sur **Page de démarrage**.  
+4. Dans le menu **Affichage**, cliquez sur **Page de démarrage**.  
   
     La page de démarrage active s’affiche. Vous devez fermer l’instance expérimentale, recopier les fichiers modifiés, puis rouvrir l’instance expérimentale pour voir les modifications.  
   
-   Vous pouvez partager votre Page de démarrage personnalisée en chargeant le fichier .vsix depuis votre répertoire bin\debug vers le [Visual Studio Marketplace](https://marketplace.visualstudio.com/) site Web, ou vers un autre site Web ou intranet de partage. Pour plus d’informations, consultez [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md).  
+   Vous pouvez partager votre page de démarrage personnalisée en téléchargeant le fichier. vsix depuis votre répertoire bin\Debug vers le site Web [Visual Studio Marketplace](https://marketplace.visualstudio.com/) ou vers un autre site Web ou partage intranet. Pour plus d’informations, consultez [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Personnalisation de la Page de démarrage](../ide/customizing-the-start-page-for-visual-studio.md)   
+ [Personnalisation de la page de démarrage](../ide/customizing-the-start-page-for-visual-studio.md)   
  [Procédure pas à pas : Ajout de code XAML personnalisé à la page de démarrage](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

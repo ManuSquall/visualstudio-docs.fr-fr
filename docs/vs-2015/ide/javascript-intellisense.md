@@ -26,12 +26,12 @@ caps.latest.revision: 67
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 39c90a8550736c945f04467e9366a73039cfa2b1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e367ff6d6abbf40cdf7efebed04aee6fc74a384c
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670478"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300747"
 ---
 # <a name="javascript-intellisense"></a>IntelliSense JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -127,7 +127,7 @@ IntelliSense vous aide à écrire du code plus vite et avec moins d'erreurs en f
 ### <a name="UserDefined"></a>Variables, fonctions et objets définis par l’utilisateur
  Lorsque vous modifiez un fichier JavaScript, [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] analyse les documents ouverts et référencés pour déterminer toutes les ressources de code disponibles. Ceci inclut les variables, fonctions et objets que vous avez créés. Ces ressources sont ensuite disponibles pour JavaScript IntelliSense.
 
- Pour plus d'informations sur les variables, fonctions et objets définis par l'utilisateur, consultez [Création de vos propres objets](http://go.microsoft.com/fwlink/?LinkId=108671) sur le site web MSDN.
+ Pour plus d'informations sur les variables, fonctions et objets définis par l'utilisateur, consultez [Création de vos propres objets](https://go.microsoft.com/fwlink/?LinkId=108671) sur le site web MSDN.
 
 ### <a name="External"></a>Références de fichiers externes
  Vous pouvez inclure divers types de références de fichiers externes pour mettre en place la prise en charge d'IntelliSense dans votre code. Les références de fichiers externes peuvent être des références de script ou des directives de référence, ou elles peuvent être spécifiées à l'aide de groupes de référence.
@@ -283,6 +283,6 @@ IntelliSense vous aide à écrire du code plus vite et avec moins d'erreurs en f
 - [Extension de JavaScript IntelliSense](../ide/extending-javascript-intellisense.md)
 - [Saisie semi-automatique des instructions pour les identificateurs](../ide/statement-completion-for-identifiers.md)
 - [Commentaires sur la documentation XML](../ide/xml-documentation-comments-javascript.md)
-- [À propos du modèle objet DHTML](http://go.microsoft.com/fwlink/?LinkID=92344)
+- [À propos du modèle objet DHTML](https://go.microsoft.com/fwlink/?LinkID=92344)
 - [Liste des membres](https://msdn.microsoft.com/1b9cc469-9cd4-4d42-9999-1f9479635ff8)
-- [Attribut SRC &#124; Propriété src](http://go.microsoft.com/fwlink/?LinkId=92345)
+- [Attribut SRC &#124; Propriété src](https://go.microsoft.com/fwlink/?LinkId=92345)

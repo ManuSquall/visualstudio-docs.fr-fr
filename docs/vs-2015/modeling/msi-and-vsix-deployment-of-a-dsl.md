@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 749763a9a2bb742bb3670050010f497c5c15fba4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4917fc81f439ef0185a753fb1c4c85e460eb7681
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668597"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297739"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Déploiement MSI et VSIX d'un langage spécifique à un domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Vous pouvez installer un langage spécifique à un domaine sur votre ordinateur 
 
 |Méthode|Avantages|
 |------------|--------------|
-|VSX (extension de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)])|Très facile à déployer : copiez et exécutez le fichier **. vsix** à partir du projet DslPackage.<br /><br /> Pour plus d’informations [, consultez Installation et désinstallation d’une solution DSL à l’aide de VSX](#Installing).|
+|VSX (extension de[!INCLUDE[vsprvs](../includes/vsprvs-md.md)])|Très facile à déployer : copiez et exécutez le fichier **. vsix** à partir du projet DslPackage.<br /><br /> Pour plus d’informations [, consultez Installation et désinstallation d’une solution DSL à l’aide de VSX](#Installing).|
 |MSI (fichier du programme d’installation)|-Permet à l’utilisateur d’ouvrir [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] en double-cliquant sur un fichier DSL.<br />-Associe une icône au type de fichier DSL sur l’ordinateur cible.<br />-Associe un XSD (schéma XML) au type de fichier DSL. Cela évite les avertissements lorsque le fichier est chargé dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].<br /><br /> Vous devez ajouter un projet d’installation à votre solution pour créer un MSI.<br /><br /> Pour plus d’informations, consultez [déploiement d’une solution DSL à l’aide d’un fichier MSI](#msi).|
 
 ## <a name="Installing"></a>Installation et désinstallation d’une solution DSL à l’aide de la VSX
@@ -38,9 +38,9 @@ Vous pouvez installer un langage spécifique à un domaine sur votre ordinateur 
 
     1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le projet **DslPackage** , puis cliquez sur **ouvrir le dossier dans l’Explorateur Windows**.
 
-    2. Localisez le fichier **bin \\ \* \\** _YourProject_ **. DslPackage. vsix**
+    2. Localisez le fichier **bin\\\*\\** _YourProject_ **. DslPackage. vsix**
 
-2. Copiez le fichier **. vsix** sur l’ordinateur cible sur lequel vous souhaitez installer le DSL. Il peut s’agir de votre propre ordinateur ou d’un autre.
+2. Copiez le fichier **. vsix** sur l’ordinateur cible sur lequel vous souhaitez installer le DSL. Il peut s’agir de votre propre ordinateur ou d’un autre ordinateur.
 
     - L’ordinateur cible doit avoir l’une des éditions de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] qui prend en charge DSL au moment de l’exécution. Pour plus d’informations, consultez [éditions de Visual Studio prises en charge pour la visualisation & le kit de développement logiciel Modeling SDK](../modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk.md).
 
@@ -48,7 +48,7 @@ Vous pouvez installer un langage spécifique à un domaine sur votre ordinateur 
 
 3. Sur l’ordinateur cible, double-cliquez sur le fichier **. vsix** .
 
-     Le**Programme d’installation des extensions Visual Studio** s’ouvre et installe l’extension.
+     Le **Programme d’installation des extensions Visual Studio** s’ouvre et installe l’extension.
 
 4. Démarrez ou redémarrez [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].
 
@@ -56,7 +56,7 @@ Vous pouvez installer un langage spécifique à un domaine sur votre ordinateur 
 
 #### <a name="to-uninstall-a-dsl-that-was-installed-by-using-vsx"></a>Pour désinstaller un DSL qui a été installé à l’aide de VSX
 
-1. Dans le menu **Outils** , cliquez sur **Gestionnaire d’extensions**.
+1. Dans le menu **Outils**, cliquez sur **Gestionnaire d'extensions**.
 
 2. Développez **Extensions installées**.
 
@@ -71,7 +71,7 @@ Vous pouvez installer un langage spécifique à un domaine sur votre ordinateur 
 
  Pour plus d’informations sur les fichiers MSI et d’autres options de déploiement, consultez [déploiement d’applications, de services et de composants](../deployment/deploying-applications-services-and-components.md).
 
- Pour créer un MSI, vous devez ajouter un projet d’installation à votre solution [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. La méthode la plus simple pour créer un projet d’installation consiste à utiliser le modèle CreateMsiSetupProject.tt, que vous pouvez télécharger à partir du [site VMSDK](http://go.microsoft.com/fwlink/?LinkID=186128).
+ Pour créer un MSI, vous devez ajouter un projet d’installation à votre solution [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. La méthode la plus simple pour créer un projet d’installation consiste à utiliser le modèle CreateMsiSetupProject.tt, que vous pouvez télécharger à partir du [site VMSDK](https://go.microsoft.com/fwlink/?LinkID=186128).
 
 #### <a name="to-deploy-a-dsl-in-an-msi"></a>Pour déployer un DSL dans un MSI
 
@@ -79,7 +79,7 @@ Vous pouvez installer un langage spécifique à un domaine sur votre ordinateur 
 
    1. Ouvrir DslPackage\source.extension.tt
 
-   2. Insérez la ligne suivante avant `<SupportedProducts>` :
+   2. Insérez la ligne suivante avant `<SupportedProducts>`:
 
        ```
        <InstalledByMsi>true</InstalledByMsi>
@@ -99,17 +99,17 @@ Vous pouvez installer un langage spécifique à un domaine sur votre ordinateur 
 
    - Dans le menu **générer** , ouvrez **Configuration Manager**, puis sélectionnez la configuration que vous souhaitez générer, par exemple **version finale** ou **débogage**.
 
-4. Accédez à la [page d’hébergement du kit de développement logiciel de visualisation et de modélisation](http://go.microsoft.com/fwlink/?LinkID=186128), puis, sous l’onglet **téléchargements** , téléchargez **CreateMsiSetupProject.TT**.
+4. Accédez à la [page d’hébergement du kit de développement logiciel de visualisation et de modélisation](https://go.microsoft.com/fwlink/?LinkID=186128), puis, sous l’onglet **téléchargements** , téléchargez **CreateMsiSetupProject.TT**.
 
 5. Ajoutez **CreateMsiSetupProject.TT** à votre projet DSL.
 
     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] créera un fichier nommé **CreateMsiSetupProject. vdproj**.
 
-6. Dans l’Explorateur Windows, copiez DSL \\ *. vdproj dans un nouveau dossier nommé Setup.
+6. Dans l’Explorateur Windows, copiez Dsl\\\*.vdproj vers un nouveau dossier nommé le programme d’installation.
 
     (Si vous le souhaitez, vous pouvez maintenant exclure CreateMsiSetupProject.tt de votre projet DSL.)
 
-7. Dans **Explorateur de solutions**, ajoutez **le programme d’installation \\ \*. vdproj** en tant que projet existant.
+7. Dans **Explorateur de solutions**, ajoutez **le programme d’installation\\\*. vdproj** en tant que projet existant.
 
 8. Dans le menu **projet** , cliquez sur **dépendances du projet**.
 
@@ -129,7 +129,7 @@ Vous pouvez installer un langage spécifique à un domaine sur votre ordinateur 
 
     - Lorsque vous double-cliquez sur le fichier, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] démarre et ouvre le fichier DSL dans votre éditeur DSL.
 
-    Si vous préférez, vous pouvez créer le projet d’installation manuellement, au lieu d’utiliser le modèle de texte. Pour obtenir une procédure pas à pas qui comprend cette procédure, consultez le chapitre 5 du [laboratoire de visualisation et de modélisation SDK](http://go.microsoft.com/fwlink/?LinkId=208878).
+    Si vous préférez, vous pouvez créer le projet d’installation manuellement, au lieu d’utiliser le modèle de texte. Pour obtenir une procédure pas à pas qui comprend cette procédure, consultez le chapitre 5 du [laboratoire de visualisation et de modélisation SDK](https://go.microsoft.com/fwlink/?LinkId=208878).
 
 #### <a name="to-uninstall-a-dsl-that-was-installed-from-an-msi"></a>Pour désinstaller un DSL qui a été installé à partir d’un MSI
 

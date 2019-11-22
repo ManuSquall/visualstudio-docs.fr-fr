@@ -33,12 +33,12 @@ caps.latest.revision: 29
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 49c2dc46a3e78c5823e569aec80a3166c6e30c04
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c366ce44ab65ded62370dd3c219473089d5ca111
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657829"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74299560"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Services Windows Communication Foundation et services de données WCF dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Visual Studio fournit des outils pour l’utilisation de Windows Communication F
  [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] est une infrastructure unifiée pour la création d’applications distribuées sécurisées, fiables, transactionnelles et interopérables. Il remplace les anciennes technologies de communication interprocessus, telles que les services Web ASMX, .NET Remoting, Enterprise Services (DCOM) et MSMQ. WCF réunit les fonctionnalités de toutes ces technologies dans le cadre d’un modèle de programmation unifié. Cela simplifie l’expérience du développement d’applications distribuées.
 
 #### <a name="what-are-wcf-data-services"></a>Que sont les WCF Data Services
- [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] est une implémentation de la norme de protocole OData (Open Data).  WCF Data Services vous permet d’exposer des données tabulaires sous la forme d’un ensemble d’API REST, ce qui vous permet de retourner des données à l’aide de verbes HTTP standard, tels que obtenir, poster, PUT ou DELETE. Côté serveur, WCF Data Services sont remplacés par [API Web ASP.net](http://www.asp.net/web-api) pour la création de nouveaux services OData. La bibliothèque cliente WCF Data Services continue d’être un bon choix pour l’utilisation des services OData dans une application .NET à partir de Visual Studio (**projet &#124; ajouter une référence de service**). Pour plus d’informations, consultez [WCF Data Services 4.5](http://go.microsoft.com/fwlink/?LinkID=119952).
+ [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] est une implémentation de la norme de protocole OData (Open Data).  WCF Data Services vous permet d’exposer des données tabulaires sous la forme d’un ensemble d’API REST, ce qui vous permet de retourner des données à l’aide de verbes HTTP standard, tels que obtenir, poster, PUT ou DELETE. Côté serveur, WCF Data Services sont remplacés par [API Web ASP.net](https://dotnet.microsoft.com/apps/aspnet/apis) pour la création de nouveaux services OData. La bibliothèque cliente WCF Data Services continue d’être un bon choix pour l’utilisation des services OData dans une application .NET à partir de Visual Studio (**projet &#124; ajouter une référence de service**). Pour plus d’informations, consultez [WCF Data Services 4.5](https://go.microsoft.com/fwlink/?LinkID=119952).
 
 ### <a name="wcf-programming-model"></a>Modèle de programmation WCF
  Le modèle de programmation WCF repose sur la communication entre deux entités : un service WCF et un client WCF. Le modèle de programmation est encapsulé dans l’espace de noms <xref:System.ServiceModel> dans le [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
@@ -102,7 +102,7 @@ Visual Studio fournit des outils pour l’utilisation de Windows Communication F
  Pour en savoir plus sur l’hôte de service WCF, consultez [hôte de service WCF (WcfSvcHost. exe)](https://msdn.microsoft.com/library/8643a63d-a357-4c39-bd6c-cdfdf71e370e).
 
 #### <a name="wcf-test-client"></a>Client test WCF
- L’outil client test WCF vous permet d’entrer des paramètres de test, de soumettre cette entrée à un service WCF et d’afficher la réponse renvoyée par le service. Il fournit une expérience de test de service pratique lorsque vous l’associez à l’hôte de service WCF. L’outil se trouve dans le dossier \Common7\IDE, qui est installé pour Visual Studio 2015 sur le lecteur C :: **C:\Program Files (x86) \Microsoft Visual Studio 14.0 \ Common7\IDE \\** .
+ L’outil client test WCF vous permet d’entrer des paramètres de test, de soumettre cette entrée à un service WCF et d’afficher la réponse renvoyée par le service. Il fournit une expérience de test de service pratique lorsque vous l’associez à l’hôte de service WCF. L’outil se trouve dans le dossier \Common7\IDE, qui est installé pour Visual Studio 2015 sur le lecteur C :: **C:\Program Files (x86) \Microsoft Visual Studio 14.0 \ Common7\IDE\\** .
 
  Quand vous appuyez sur F5 pour déboguer un projet de service WCF, le client test WCF s’ouvre et affiche une liste des points de terminaison de service définis dans le fichier de configuration. Vous pouvez tester les paramètres et démarrer le service, puis répéter ce processus pour tester et valider en continu votre service.
 
@@ -156,7 +156,7 @@ Visual Studio fournit des outils pour l’utilisation de Windows Communication F
 
      Si la référence de service fournit plusieurs points de terminaison, il y aura au moins deux balises `<Endpoint`.
 
-4. À l’intérieur de la balise `<EndPoint>`, vous trouverez un paramètre `name="`*SomeService* `"` (où *SomeService* représente un nom de point de terminaison). Il s’agit du nom du point de terminaison qui peut être passé à la surcharge `endpointConfigurationName As String` d’un constructeur pour une référence de service.
+4. À l’intérieur de la balise `<EndPoint>`, vous trouverez un paramètre `name="`*SomeService*`"` (où *SomeService* représente un nom de point de terminaison). Il s’agit du nom du point de terminaison qui peut être passé à la surcharge `endpointConfigurationName As String` d’un constructeur pour une référence de service.
 
 ## <a name="how-to-call-a-service-method-asynchronously"></a>Comment : appeler une méthode de service de façon asynchrone
  La plupart des méthodes des services Windows Communication Foundation (WCF) peuvent être appelées de façon synchrone ou asynchrone. L’appel d’une méthode de manière asynchrone permet à votre application de continuer à fonctionner pendant l’appel de la méthode lorsqu’elle fonctionne sur une connexion lente.
@@ -237,8 +237,8 @@ Visual Studio fournit des outils pour l’utilisation de Windows Communication F
 |[Procédure pas à pas : création d’un service WPF simple dans Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)|Fournit une démonstration pas à pas de la création et de l’utilisation des services WCF dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
 |[Procédure pas à pas : création d’un service de données WCF avec WPF et Entity Framework](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md)|Fournit une démonstration pas à pas de la création et de l’utilisation de [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
 |[Utilisation des outils de développement WCF](https://msdn.microsoft.com/library/054adb87-c244-4d5a-83d1-0b2b44bd454b)|Explique comment créer et tester des services WCF dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
-|[Comment : ajouter, mettre à jour ou supprimer une référence de service](https://msdn.microsoft.com/library/cacc14bd-4455-4a44-be78-d2ac16113dd9)|Décrit comment ajouter, mettre à jour ou supprimer des services WCF d’un projet.|
-|[Guide pratique pour ajouter, mettre à jour ou supprimer une référence de service de données WCF](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)|Explique comment référencer et utiliser [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
+|[Ajouter, mettre à jour ou supprimer une référence de service](https://msdn.microsoft.com/library/cacc14bd-4455-4a44-be78-d2ac16113dd9)|Décrit comment ajouter, mettre à jour ou supprimer des services WCF d’un projet.|
+|[Comment : ajouter, mettre à jour ou supprimer une référence de service de données WCF](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)|Explique comment référencer et utiliser [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
 |[Dépannage des références de service](../data-tools/troubleshooting-service-references.md)|Présente des erreurs courantes qui peuvent se produire avec les références de service et comment les empêcher.|
 |[Débogage de services WCF](../debugger/debugging-wcf-services.md)|Décrit les problèmes de débogage courants et les techniques que vous pouvez rencontrer lors du débogage de services WCF.|
 |[Présentation du service d’authentification Windows Communication Foundation](https://msdn.microsoft.com/library/6e121a28-89e8-4974-88a8-70aaa6a7d52b)|Décrit comment utiliser WCF pour fournir un service de rôle pour un site Web.|

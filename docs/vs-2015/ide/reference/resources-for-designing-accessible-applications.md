@@ -14,17 +14,17 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5cc95418f392e3c771350428e26e1447dae3bcf5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: af300bca2b1e679eae58a92962067fcd50fea78f
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665559"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297787"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Ressources pour la conception d'applications accessibles
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Utilisez les liens suivants pour trouver des informations sur les technologies qui prennent en charge un design axé sur l’accessibilité, ainsi que des conseils et des exemples en matière de développement d’applications Windows et de sites web accessibles. Vous trouverez des informations générales sur l’accessibilité dans [http://www.microsoft.com/enable/](http://www.microsoft.com/enable/).
+Utilisez les liens suivants pour trouver des informations sur les technologies qui prennent en charge un design axé sur l’accessibilité, ainsi que des conseils et des exemples en matière de développement d’applications Windows et de sites web accessibles. Vous trouverez des informations générales sur l’accessibilité dans [http://www.microsoft.com/enable/](https://www.microsoft.com/accessibility/).
 
 ## <a name="technologies"></a>Technologies
 
@@ -54,7 +54,7 @@ Utilisez les liens suivants pour trouver des informations sur les technologies q
 
 ### <a name="third-party-resources"></a>Ressources tierces
 
-- **Initiative du W3C (World Wide Web Consortium) concernant l’accessibilité web** Ce site web fournit des recommandations et des techniques pour le développement de sites web accessibles. Pour plus d’informations, consultez [http://www.w3.org/WAI/GL/](http://www.w3.org/WAI/GL/).
+- **Initiative du W3C (World Wide Web Consortium) concernant l’accessibilité web** Ce site web fournit des recommandations et des techniques pour le développement de sites web accessibles. Pour plus d’informations, consultez [http://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/).
 
 ## <a name="see-also"></a>Voir aussi
  [Fonctionnalités d’accessibilité de Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)

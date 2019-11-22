@@ -33,12 +33,12 @@ caps.latest.revision: 29
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 313cc11978355942bf6671cc040969c255d7e44d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3ee0cf61f8ec2787894c6f67b8ac75424246c507
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669351"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297445"
 ---
 # <a name="xml-tools-in-visual-studio"></a>Outils XML dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Extensible Markup Language (XML) * est un langage de balisage qui fournit un for
 
  XML est au cœur de nombreuses fonctionnalités de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] et du [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Les rubriques répertoriées ci-dessous nomment les outils et les fonctionnalités associés au langage XML qui sont proposés dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] et le [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
 
- Pour plus d’informations, consultez le [Centre de développement XML](http://go.microsoft.com/fwlink/?LinkID=100176), qui fournit la documentation la plus récente, des informations techniques, des téléchargements, des groupes de discussion et d’autres ressources pour les développeurs XML.
+ Pour plus d’informations, consultez le [Centre de développement XML](https://go.microsoft.com/fwlink/?LinkID=100176), qui fournit la documentation la plus récente, des informations techniques, des téléchargements, des groupes de discussion et d’autres ressources pour les développeurs XML.
 
 ## <a name="in-this-section"></a>Dans cette section
  [Utilisation de données XML](../xml-tools/working-with-xml-data.md) Décrit le rôle du code XML dans la façon dont les données sont gérées dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
@@ -57,16 +57,16 @@ Extensible Markup Language (XML) * est un langage de balisage qui fournit un for
  [Débogage XSLT](../xml-tools/debugging-xslt.md) Fournit des liens vers des rubriques sur l’utilisation du débogueur Visual Studio pour déboguer XSLT.
 
 ## <a name="reference"></a>Reference
- [Microsoft. VisualStudio. XmlEditor](http://go.microsoft.com/fwlink/?LinkID=165699) expose l’arborescence d’analyse de l' [éditeur XML](http://go.microsoft.com/fwlink/?LinkId=228249) par le biais de [System. Xml. Linq](http://go.microsoft.com/fwlink/?LinkId=228250) pour tous les documents XML.
+ [Microsoft.VisualStudio.XmlEditor](https://go.microsoft.com/fwlink/?LinkID=165699) expose le [éditeur XML](https://go.microsoft.com/fwlink/?LinkId=228249) arborescence par le biais d’analyse [System.Xml.Linq](https://go.microsoft.com/fwlink/?LinkId=228250) pour tous les documents XML.
 
- Informations de référence sur les [normes XML](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) Fournit des informations sur les technologies XML, notamment XML, la définition de type de document (DTD), le langage XSD (XML Schema Definition) et XSLT.
+ [Référence du standard XML](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) fournit des informations sur les technologies XML, notamment XML, définition de Type de Document (DTD), langage de définition de schéma XML (XSD) et XSLT.
 
- <xref:System.Xml?displayProperty=fullName> décrit les classes et d’autres éléments qui composent l’espace de noms <xref:System.Xml> et fournit des liens vers des informations plus détaillées sur chaque élément.
+ <xref:System.Xml?displayProperty=fullName> Décrit les classes et autres éléments qui composent le <xref:System.Xml> espace de noms fournit des liens vers des informations plus détaillées sur chaque élément.
 
- <xref:System.Xml.Serialization?displayProperty=fullName> décrit les classes et d’autres éléments qui composent l’espace de noms <xref:System.Xml.Serialization> et fournit des liens vers des informations plus détaillées sur chaque élément.
+ <xref:System.Xml.Serialization?displayProperty=fullName> Décrit les classes et autres éléments qui composent le <xref:System.Xml.Serialization> espace de noms et fournit des liens vers des informations détaillées sur chaque élément.
 
 ## <a name="related-sections"></a>Rubriques connexes
- [XML Document Object Model (DOM)](https://msdn.microsoft.com/library/b5e52844-4820-47c0-a61d-de2da33e9f54) Décrit comment le <xref:System.Xml.XmlDocument> et ses classes associées sont conformes aux spécifications de prise en charge des espaces de noms W3C Document Object Model (Core) Level 1 et Level 2.
+ [Modèle DOM (Document objet Model) XML](https://msdn.microsoft.com/library/b5e52844-4820-47c0-a61d-de2da33e9f54) décrit comment la <xref:System.Xml.XmlDocument> et ses classes associées conformes aux spécifications de prise en charge des espaces de noms de niveau 2 et W3C Document Object Model (Core), niveau 1.
 
  [Lecture de XML avec XmlReader](https://msdn.microsoft.com/3029834c-a27e-4331-b7aa-711924062182) Décrit comment l' <xref:System.Xml.XmlReader> fournit un accès en lecture seule et non mis en cache aux données XML via un flux XML.
 
@@ -76,4 +76,4 @@ Extensible Markup Language (XML) * est un langage de balisage qui fournit un for
 
  [Traiter des données XML à l’aide du modèle de données XPath](https://msdn.microsoft.com/library/536c6fce-1453-4654-9c72-bca54d47e081) Décrit comment la classe <xref:System.Xml.XPath.XPathNavigator> peut traiter des données XML stockées dans un objet <xref:System.Xml.XPath.XPathDocument> ou <xref:System.Xml.XmlDocument>. La classe <xref:System.Xml.XPath.XPathNavigator> est basée sur le modèle de données XQuery 1.0 et XPath 2.0, et peut être utilisée pour parcourir et modifier des données XML.
 
- [Modèle d’objet de schéma XML (SOM)](https://msdn.microsoft.com/library/a897a599-ffd1-43f9-8807-e58c8a7194cd) Décrit les classes utilisées pour créer et manipuler des schémas XML, en fournissant une classe <xref:System.Xml.Schema.XmlSchema> pour charger et modifier un schéma.
+ [Modèle SOM (Schema Object Model) XML](https://msdn.microsoft.com/library/a897a599-ffd1-43f9-8807-e58c8a7194cd) décrit les classes utilisées pour créer et manipuler des schémas XML, en fournissant un <xref:System.Xml.Schema.XmlSchema> classe pour charger et modifier un schéma.

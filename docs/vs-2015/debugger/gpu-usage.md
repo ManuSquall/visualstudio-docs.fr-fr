@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b7dee579f726a1edfc81e1f3e1ec62bf7d8beba4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b2e827b180ae218f3dd42b124500e01260e72d82
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437955"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297396"
 ---
 # <a name="gpu-usage"></a>Utilisation du GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ Servez-vous de l'outil Utilisation du GPU dans le hub Performances et diagnostic
   
  Voici la fenêtre **Rapport d’utilisation du GPU** :  
   
- ![Rapport d’utilisation du GPU, avec les chronologies GPU et UC](../debugger/media/gfx-diag-gpu-usage-report.png "gfx_diag_gpu_usage_report")  
+ ![Rapport d’utilisation du GPU, avec chronologies du processeur et du GPU](../debugger/media/gfx-diag-gpu-usage-report.png "gfx_diag_gpu_usage_report")  
   
 ## <a name="requirements"></a>Configuration requise  
  Voici les conditions requises pour l'outil Utilisation du GPU, en plus de celles de Graphics Diagnostics.  
@@ -63,15 +63,15 @@ Servez-vous de l'outil Utilisation du GPU dans le hub Performances et diagnostic
   
 1. Dans la partie inférieure de la fenêtre de session de diagnostic, choisissez le lien **Arrêter la collecte** ou appuyez sur **Arrêter** en haut à gauche.  
   
-    ![Collectez les informations de minutage GPU et UC.](../debugger/media/gfx-diag-gpu-usage-collect.png "gfx_diag_gpu_usage_collect")  
+    ![Collecter les informations de temps processeur et GPU.](../debugger/media/gfx-diag-gpu-usage-collect.png "gfx_diag_gpu_usage_collect")  
   
 2. Dans la partie supérieure du rapport, sélectionnez une section dans l'un des graphiques qui illustre le problème à examiner. Votre sélection peut durer jusqu'à 3 secondes. Le début des sections plus longues est tronqué.  
   
-    ![Postcollection, sélectionner une plage pour afficher les détails](../debugger/media/gfx-diag-gpu-usage-select1.png "gfx_diag_gpu_usage_select1")  
+    ![Poster&#45;la collection, sélectionner une plage pour afficher les détails](../debugger/media/gfx-diag-gpu-usage-select1.png "gfx_diag_gpu_usage_select1")  
   
 3. Dans la partie inférieure du rapport, choisissez le lien **Afficher les détails** du message **...cliquez ici pour afficher les détails de l’utilisation du GPU pour cette plage** afin d’afficher une chronologie détaillée de votre sélection.  
   
-    ![Postcollection, avec la plage sélectionnée](../debugger/media/gfx-diag-gpu-usage-select2.png "gfx_diag_gpu_usage_select2")  
+    ![Poster&#45;la collection, avec la plage sélectionnée](../debugger/media/gfx-diag-gpu-usage-select2.png "gfx_diag_gpu_usage_select2")  
   
    Cela entraîne l'ouverture d'un nouveau document avec onglets qui contient le rapport. Le rapport Utilisation du GPU vous aide à identifier le moment où un événement graphique démarre sur l'UC et où il atteint le GPU, ainsi que sa durée d'exécution par le GPU. Ces informations peuvent vous aider à identifier les goulots d’étranglement et les opportunités d’augmentation du parallélisme dans votre code.  
   
@@ -82,7 +82,7 @@ Servez-vous de l'outil Utilisation du GPU dans le hub Performances et diagnostic
   
  Voici la fenêtre **Rapport d’utilisation du GPU** :  
   
- ![Rapport d’utilisation du GPU, avec les chronologies GPU et UC](../debugger/media/gfx-diag-gpu-usage-report.png "gfx_diag_gpu_usage_report")  
+ ![Rapport d’utilisation du GPU, avec chronologies du processeur et du GPU](../debugger/media/gfx-diag-gpu-usage-report.png "gfx_diag_gpu_usage_report")  
   
  Si vous sélectionnez l’un des événements dans la partie inférieure du rapport, cela entraîne le placement d’un marqueur au niveau des événements correspondants dans les chronologies appropriées, en général un événement sur un thread d’UC qui représente l’appel d’API et un autre événement sur l’une des chronologies GPU qui représente la fin de l’achèvement de la tâche par le GPU. De même, si vous sélectionnez l'un des événements d'une chronologie, cela entraîne la mise en surbrillance de l'événement correspondant dans la partie inférieure du rapport. Quand vous effectuez un zoom arrière des chronologies dans la partie supérieure du rapport, seuls les événements les plus longs sont visibles. Pour afficher les événements qui ont une durée plus courte, effectuez un zoom avant des chronologies en appuyant sur la touche Ctrl et en utilisant la roulette de votre dispositif de pointage, ou via le contrôle de mise à l'échelle situé dans le coin inférieur gauche du panneau supérieur. Vous pouvez également faire glisser le contenu du panneau de chronologie pour parcourir les événements enregistrés.  
   
@@ -94,7 +94,7 @@ Servez-vous de l'outil Utilisation du GPU dans le hub Performances et diagnostic
 |--------------------|-----------------|  
 |**Process**|Nom du processus qui vous intéresse. Tous les processus qui ont utilisé le GPU pendant la session de diagnostic sont inclus dans cette liste déroulante. La couleur associée au processus dans cette liste déroulante est la couleur de l’activité du thread dans les chronologies ci-dessous.|  
 |**Thread**|ID de thread qui vous intéresse. Dans une application multithread, cela peut vous aider à isoler les threads particuliers qui appartiennent au processus qui vous intéresse. Les événements associés au thread sélectionné sont mis en surbrillance dans chaque chronologie.|  
-|**Afficher**|Numéro de l’affichage dont la fréquence de rafraîchissement est indiquée.**Remarque  :**  Certains pilotes peuvent être configurés pour présenter plusieurs affichages physiques sous forme d'un affichage virtuel unique, de grande taille. Vous ne verrez peut-être qu'un seul affichage dans la liste, même si l'ordinateur possède plusieurs affichages attachés.|  
+|**Afficher**|Numéro de l’affichage dont la fréquence de rafraîchissement est indiquée **Remarque :** Certains pilotes peuvent être configurés pour présenter plusieurs affichages physiques sous forme d’un affichage virtuel unique, de grande taille. Vous ne verrez peut-être qu'un seul affichage dans la liste, même si l'ordinateur possède plusieurs affichages attachés.|  
 |**Filtrer**|Mots clés qui vous intéressent. Les événements de la partie inférieure du rapport incluent uniquement ceux qui correspondent complètement ou partiellement à un mot clé. Vous pouvez spécifier plusieurs mots clés en les séparant par des virgules.|  
 |**Tri des hiérarchies**|Case à cocher qui indique si les hiérarchies d'événements (définies via des marqueurs utilisateur) sont conservées ou ignorées.|  
   
@@ -123,7 +123,7 @@ Servez-vous de l'outil Utilisation du GPU dans le hub Performances et diagnostic
   
 3. Sous **Configuration du profilage GPU**, dans la page de propriétés **Général**, décochez la case **Commencer le profilage au démarrage de l’application** pour reporter le profilage.  
   
-     ![Configurer le moment du démarrage de la collecte de données d’utilisation du GPU](../debugger/media/gfx-diag-gpu-usage-config.png "gfx_diag_gpu_usage_config")  
+     ![Configurer le démarrage de la collecte de l’utilisation du GPU](../debugger/media/gfx-diag-gpu-usage-config.png "gfx_diag_gpu_usage_config")  
   
 > [!IMPORTANT]
 > Le report du profilage n'est pas pris en charge actuellement pour les applications Direct3D 12.  
@@ -143,10 +143,10 @@ Servez-vous de l'outil Utilisation du GPU dans le hub Performances et diagnostic
   
 ## <a name="see-also"></a>Voir aussi  
   
-- [Résoudre les problèmes graphiques complexes liés à votre jeu à l’aide des outils DirectX (vidéo)](http://channel9.msdn.com/Events/GDC/GDC-2015/Solve-the-Tough-Graphics-Problems-with-your-Game-Using-DirectX-Tools)  
+- [Résoudre les problèmes graphiques complexes liés à votre jeu à l’aide des outils DirectX (vidéo)](https://channel9.msdn.com/Events/GDC/GDC-2015/Solve-the-Tough-Graphics-Problems-with-your-Game-Using-DirectX-Tools)  
   
-- [Outil Utilisation du GPU dans Visual Studio (vidéo)](http://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/715)  
+- [Outil Utilisation du GPU dans Visual Studio (vidéo)](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/715)  
   
-- [Outil Utilisation du GPU dans Visual Studio 2013 Update 4 CTP1 (blog)](http://blogs.msdn.com/b/vcblog/archive/2014/09/05/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1.aspx)  
+- [Outil Utilisation du GPU dans Visual Studio 2013 Update 4 CTP1 (blog)](https://devblogs.microsoft.com/cppblog/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1/)  
   
-- [Utilisation du GPU pour DirectX dans Visual Studio (blog)](http://blogs.msdn.com/b/ianhu/archive/2014/12/16/gpu-usage-for-directx-in-visual-studio.aspx)
+- [Utilisation du GPU pour DirectX dans Visual Studio (blog)](https://blogs.msdn.microsoft.com/ianhu/2014/12/16/gpu-usage-for-directx-in-visual-studio/)

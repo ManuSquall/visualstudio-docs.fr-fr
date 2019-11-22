@@ -18,24 +18,24 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8b9d0d2a3250785e5ff60d65a6bf1264892c6f98
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5dd40381b8f5ba4807e95cfcf5e5b7d54afd77e2
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434121"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74298382"
 ---
 # <a name="debug-layout-using-dom-explorer"></a>Déboguer la disposition avec l’Explorateur DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.png « windows_and_phone_content »)  
+S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content. png « windows_and_phone_content »)  
   
- L’onglet **Disposition** de l’Explorateur DOM affiche le [modèle de boîte CSS](http://go.microsoft.com/fwlink/?LinkID=238778) pour l’élément sélectionné dans une application [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] , une application du Windows Phone Store ou une application créée à l’aide de Visual Studio Tools pour Apache Cordova. Vous pouvez utiliser cette représentation visuelle du modèle de boîte pour identifier et modifier les valeurs relatives à la disposition qui affectent l’apparence des éléments.  
+ L’onglet **Disposition** de l’Explorateur DOM affiche le [modèle de boîte CSS](https://go.microsoft.com/fwlink/?LinkID=238778) pour l’élément sélectionné dans une application [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] , une application du Windows Phone Store ou une application créée à l’aide de Visual Studio Tools pour Apache Cordova. Vous pouvez utiliser cette représentation visuelle du modèle de boîte pour identifier et modifier les valeurs relatives à la disposition qui affectent l’apparence des éléments.  
   
 > [!TIP]
 > Les modifications que vous effectuez dans l’onglet **Disposition** ne sont pas définitives. Vous pouvez apporter des modifications permanentes à votre code source, puis actualiser votre application à l’aide du bouton **Actualiser l’application Windows** (applications du Windows Store et Windows Phone Store uniquement) de la barre d’outils Déboguer. Ainsi, vous pouvez éviter de redémarrer le débogueur.  
   
- Pour utiliser l’Explorateur DOM pour modifier les aspects de la disposition qui ne sont pas visibles dans le modèle de boîte, consultez [Guide de démarrage rapide : Déboguer le code HTML et CSS](../debugger/quickstart-debug-html-and-css.md) et [styles CSS déboguer à l’aide de l’Explorateur DOM](../debugger/debug-css-styles-using-dom-explorer.md).  
+ Pour utiliser l’Explorateur DOM pour modifier des aspects de la disposition qui ne sont pas affichés dans le modèle de boîte, consultez [démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md) et [Déboguer des styles CSS à l’aide de l’Explorateur DOM](../debugger/debug-css-styles-using-dom-explorer.md).  
   
 ## <a name="example-of-fixing-a-layout-issue"></a>Exemple de résolution d’un problème de disposition  
  Cet exemple montre comment sélectionner un élément de liste dans le modèle Hub/Pivot, interpréter les valeurs du modèle de boîte qui figurent dans l’onglet **Disposition** , puis modifier l’une des valeurs de propriété pour résoudre un problème de disposition.  
@@ -71,7 +71,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
      ![Sélection d’une cible de débogage](../debugger/media/js-dom-debug-target-emu.png "JS_DOM_Debug_Target_Emu")  
   
-6. Appuyez sur F5 pour exécuter l’application en mode débogage.  
+6. Appuyez sur F5 pour exécuter l’application en mode débogage :  
   
 7. Ouvrez Section 4 en faisant défiler ou glisser l’écran.  
   
@@ -83,7 +83,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 8. Basculez vers Visual Studio et choisissez **Sélectionner un élément** dans l’explorateur DOM (ou appuyez sur Ctrl+B). Le mode de sélection est alors modifié pour vous permettre de sélectionner un élément en cliquant dessus, et l’application est mise en premier plan. Le mode est restauré à la suite d’un seul clic.  
   
     > [!TIP]
-    > Vous pouvez aussi utiliser les touches de direction ou d’autres méthodes pour sélectionner directement les éléments HTML dans l’explorateur DOM. Pour plus d’informations sur la sélection d’éléments, consultez [Guide de démarrage rapide : Déboguer le code HTML et CSS](../debugger/quickstart-debug-html-and-css.md).  
+    > Vous pouvez aussi utiliser les touches de direction ou d’autres méthodes pour sélectionner directement les éléments HTML dans l’explorateur DOM. Pour plus d’informations sur la sélection des éléments, consultez [démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md).  
   
 9. Dans le simulateur ou l’émulateur Windows Phone, sélectionnez la moitié droite grisée des images coupées en deux. La mise en surbrillance apparaît autour de l’élément sélectionné, comme illustré ici dans l’émulateur Windows Phone :  
   
@@ -99,13 +99,13 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
     </img>  
     ```  
   
-10. Cliquez sur l’onglet **Disposition** . Cet onglet montre le modèle de boîte de l’élément sélectionné, comme illustré ici dans l’émulateur Windows Phone.  
+10. Cliquez sur l’onglet **disposition** . Cet onglet affiche le modèle de boîte de l’élément sélectionné, comme illustré ici dans l’émulateur de Windows Phone.  
   
-     ![Onglet Disposition de l’Explorateur DOM](../debugger/media/js-css-layout.png "JS_CSS_Layout")  
+     ![Onglet disposition de l’Explorateur DOM](../debugger/media/js-css-layout.png "JS_CSS_Layout")  
   
      Cette vue fournit des informations utiles sur l’élément :  
   
-    - Les couleurs correspondent à la mise en surbrillance de zone qui apparaît dans le simulateur lorsque vous pointez sur des éléments. La couleur bleu représente le \<img > dimensions de l’élément. La couleur brun tanné représente les valeurs de marge.  
+    - Les couleurs correspondent à la mise en surbrillance de zone qui apparaît dans le simulateur lorsque vous pointez sur des éléments. La couleur bleue représente les dimensions de l’élément \<img >. La couleur brun tanné représente les valeurs de marge.  
   
     - La marge de gauche (margin-left) est définie, ce qui donne une indication sur la cause du problème, car elle correspond au symptôme (couleur noire dans la partie gauche des images).  
   
@@ -114,7 +114,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 11. Pour voir comment la règle margin-left est appliquée, sélectionnez l’onglet **Calculé** et regardez sous la règle margin-left. Vous pouvez voir que la règle est définie avec une valeur 5em, mais la valeur calculée est égale à 66.66px ou 146.66px, en fonction de votre périphérique cible.  
   
     > [!TIP]
-    > Le **calculé** onglet montre que la règle margin-left est définie dans le `..hubpage .hub. section4 .sub-image-row img` sélecteur CSS, se trouve dans hub.css. Dans cette application de démonstration, c’est là que vous devez apporter la correction.  
+    > L'onglet **Calculé** montre que la règle margin-left est définie dans le sélecteur CSS `..hubpage .hub. section4 .sub-image-row img`, qui se trouve dans hub.css. Dans cette application de démonstration, c’est là que vous devez apporter la correction.  
   
      Vous pouvez également utiliser l’onglet **Disposition** pour tester des modifications apportées aux valeurs de disposition.  
   
@@ -122,7 +122,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
 13. Tapez `0` et appuyez sur Entrée. (Vous pouvez également utiliser les touches haut et bas pour modifier la valeur.)  
   
-14. Sélectionnez l’autre \<img > éléments dans l’Explorateur DOM et modifiez des valeurs de leur marge de gauche sur 0.  
+14. Sélectionnez les autres éléments \<img > dans l’Explorateur DOM et modifiez leurs valeurs margin-left en 0.  
   
 15. Basculez vers le simulateur ou l’émulateur Windows Phone. Les valeurs margin-left mises à jour ont été appliquées aux images de Section 4. Ces valeurs sont aussi mises à jour dans l’onglet **Calculé** sous la règle margin-left.  
   

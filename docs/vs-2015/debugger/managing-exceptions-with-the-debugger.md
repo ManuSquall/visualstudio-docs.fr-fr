@@ -1,5 +1,5 @@
 ---
-title: Gestion des Exceptions avec le débogueur | Microsoft Docs
+title: Gestion des exceptions avec le débogueur | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -33,12 +33,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: be15b683a6e173d813ea13eaa0cc400a40e68206
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 5303a8003d84af5e2a059d9f509e560204afa528
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65690505"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74301094"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>Gestion des exceptions avec le débogueur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,10 +51,10 @@ Une exception est une indication d'un état d'erreur qui se produit pendant qu'u
   
 - quand le débogueur est configuré pour arrêter immédiatement l’exécution d’une exception qui est levée, avant même l’appel d’un gestionnaire ;  
   
-- si vous avez défini [Just My Code](../debugger/just-my-code.md)et que le débogueur est configuré pour arrêter l’exécution de toute exception non gérée dans le code utilisateur.  
+- si vous avez défini [Uniquement mon code](../debugger/just-my-code.md) et que le débogueur est configuré pour s'arrêter sur toute exception non gérée dans le code utilisateur.  
   
 > [!NOTE]
-> ASP.NET a un gestionnaire d'exceptions de niveau supérieur qui affiche les pages d'erreur dans un navigateur. Il n'interrompt pas l'exécution, à moins que l'option **Uniquement mon code** soit activée. Pour obtenir un exemple, consultez [Setting the debugger to continue on user-unhandled exceptions](../debugger/managing-exceptions-with-the-debugger.md#BKMK_UserUnhandled) , ci-dessous.  
+> ASP.NET a un gestionnaire d'exceptions de niveau supérieur qui affiche les pages d'erreur dans un navigateur. Il n'interrompt pas l'exécution, à moins que l'option **Uniquement mon code** soit activée. Pour obtenir un exemple, consultez [Configuration du débogueur pour qu'il continue en cas d'exceptions non gérées par l'utilisateur](../debugger/managing-exceptions-with-the-debugger.md#BKMK_UserUnhandled), ci-dessous.  
   
 > [!NOTE]
 > Dans une application Visual Basic, le débogueur gère toutes les erreurs comme des exceptions, même si vous utilisez des gestionnaires d'erreurs de style « en cas d'erreur ».  
@@ -67,9 +67,9 @@ Une exception est une indication d'un état d'erreur qui se produit pendant qu'u
 ### <a name="setting-the-debugger-to-break-when-an-exception-is-thrown"></a>Configuration du débogueur pour qu'il s'arrête en cas de levée d'une exception  
  Le débogueur peut interrompre l'exécution à l'endroit où une exception est levée, ce qui vous permet d'examiner l'exception avant qu'un gestionnaire soit appelé.  
   
- Dans la fenêtre **Paramètres d'exception** , développez le nœud d'une catégorie d'exceptions (par exemple, **Exceptions Common Language Runtime**, c'est-à-dire les exceptions .NET), puis cochez la case correspondant à une exception spécifique de cette catégorie (par exemple, **System.AccessViolationException**). Vous pouvez également sélectionner une catégorie entière d'exceptions.  
+ Dans la fenêtre **Paramètres d'exception**, développez le nœud d'une catégorie d'exceptions (par exemple, **Exceptions Common Language Runtime**, c'est-à-dire les exceptions .NET), puis cochez la case correspondant à une exception spécifique de cette catégorie (par exemple, **System.AccessViolationException**). Vous pouvez également sélectionner une catégorie entière d'exceptions.  
   
- ![Checked AccessViolationException](../debugger/media/exceptionsettingscheckaccess.png "ExceptionSettingsCheckAccess")  
+ ![AccessViolationException activé](../debugger/media/exceptionsettingscheckaccess.png "ExceptionSettingsCheckAccess")  
   
  Si vous vérifiez une exception donnée, l'exécution du débogueur sera interrompue partout où l'exception est levée, qu'elle soit gérée ou non gérée. À ce stade, l'exception est appelée « exception de première chance ». Voici, par exemple, quelques scénarios :  
   
@@ -135,14 +135,14 @@ Une exception est une indication d'un état d'erreur qui se produit pendant qu'u
    }  
    ```  
   
-    Si **AccessViolationException** est cochée dans **Paramètres d'exception**, lorsque vous exécutez ce code dans le débogueur, l’exécution s’arrête à la ligne `throw` dans **ThrowHandledException()** et dans **ThrowUnhandledException()**.  
+    Si **AccessViolationException** est cochée dans **Paramètres d'exception**, lorsque vous exécutez ce code dans le débogueur, l’exécution s’arrête à la ligne `throw` dans **ThrowHandledException()** et dans **ThrowUnhandledException()** .  
   
-   Si vous souhaitez rétablir les paramètres d'exceptions par défaut, vous pouvez cliquer sur le bouton **Restaurer** de la barre d'outils :  
+   Si vous souhaitez rétablir les paramètres d'exceptions par défaut, vous pouvez cliquer sur le bouton **Restaurer** de la barre d'outils :  
   
-   ![Restaurer les valeurs par défaut dans les paramètres d’Exception](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
+   ![Restaurer les valeurs par défaut dans les paramètres d’exception](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
   
-### <a name="BKMK_UserUnhandled"></a> Configuration du débogueur pour continuer en cas d’exceptions non gérées par l’utilisateur  
- Si vous déboguez du code .NET ou JavaScript avec [Just My Code](../debugger/just-my-code.md), vous pouvez demander au débogueur de ne pas s’arrêter sur les exceptions qui ne sont pas gérées dans le code utilisateur, mais qui sont gérées ailleurs.  
+### <a name="BKMK_UserUnhandled"></a>Configuration du débogueur pour continuer sur les exceptions non gérées par l’utilisateur  
+ Si vous déboguez du code .NET ou JavaScript avec [Uniquement mon code](../debugger/just-my-code.md), vous pouvez demander au débogueur de ne pas s'arrêter sur les exceptions qui ne sont pas gérées dans le code utilisateur, mais qui sont gérées ailleurs.  
   
 1. Dans la fenêtre **Paramètres d'exception** , ouvrez le menu contextuel en cliquant avec le bouton droit dans la fenêtre, puis en sélectionnant **Afficher les colonnes**. (Si vous avez désactivé **Uniquement mon code**, cette commande n'est pas visible.)  
   
@@ -150,9 +150,9 @@ Une exception est une indication d'un état d'erreur qui se produit pendant qu'u
   
 3. Vous pouvez modifier ce paramètre pour une exception particulière (en sélectionnant l'exception, en cliquant avec le bouton droit, puis en sélectionnant/désélectionnant **Continuer en cas d'exception non gérée dans le code utilisateur**) ou pour une catégorie entière d'exceptions (par exemple, toutes les exceptions Common Language Runtime).  
   
-   Par exemple, les applications web ASP.NET gèrent les exceptions en les convertissant en code d’état HTTP 500 ([Gestion des exceptions dans l’API ASP.NET](http://www.asp.net/web-api/overview/error-handling/exception-handling)), ce qui peut compliquer l’identification de la source de l’exception. Dans l'exemple ci-dessous, le code utilisateur appelle `String.Format()` qui lève une exception <xref:System.FormatException>. L'exécution s'interrompt de la façon suivante :  
+   Par exemple, les applications web ASP.NET gèrent les exceptions en les convertissant en code d’état HTTP 500 ([Gestion des exceptions dans l’API ASP.NET](https://docs.microsoft.com/aspnet/web-api/overview/error-handling/exception-handling)), ce qui peut compliquer l’identification de la source de l’exception. Dans l'exemple ci-dessous, le code utilisateur appelle `String.Format()` qui lève une exception <xref:System.FormatException>. L'exécution s'interrompt de la façon suivante :  
   
-   ![s’arrête sur utilisateur&#45;exception gérée par](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
+   ![interruptions sur&#45;l’exception unhanlded de l’utilisateur](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
   
 ### <a name="adding-and-deleting-exceptions"></a>Ajout et suppression d'exceptions  
  Vous pouvez ajouter et supprimer des exceptions. Vous pouvez supprimer n'importe quel type d'exception de n'importe quelle catégorie en sélectionnant l'exception et en cliquant sur le bouton **Supprimer** (signe moins) de la barre d'outils **Paramètres d'exception** , ou en cliquant avec le bouton droit sur l'exception et en sélectionnant **Supprimer** dans le menu contextuel. La suppression d'une exception a le même effet que si l'exception est désactivée, c'est-à-dire que le débogueur ne s'arrête pas lorsqu'elle est levée.  
@@ -182,9 +182,9 @@ public class GenericException<T> : Exception
  ![Ajout d’une exception générique](../debugger/media/addgenericexception.png "AddGenericException")  
   
 ## <a name="see-also"></a>Voir aussi  
- [Poursuivre l’exécution après une Exception](../debugger/continuing-execution-after-an-exception.md)   
- [Guide pratique pour Examiner du Code système après une Exception](../debugger/how-to-examine-system-code-after-an-exception.md)   
- [Guide pratique pour utiliser les vérifications natives à l’exécution](../debugger/how-to-use-native-run-time-checks.md)   
- [Utilisation d’exécution des vérifications sans la bibliothèque Runtime C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)   
+ [Poursuite de l’exécution après une Exception](../debugger/continuing-execution-after-an-exception.md)   
+ [Comment : examiner le code système après une Exception](../debugger/how-to-examine-system-code-after-an-exception.md)   
+ [Comment : utiliser les contrôles natifs au moment de l’exécution](../debugger/how-to-use-native-run-time-checks.md)   
+ [Utilisation de contrôles d’exécution sans la bibliothèque Runtime C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)   
  [Assistant Exception](https://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)   
  [Principes de base du débogueur](../debugger/debugger-basics.md)
