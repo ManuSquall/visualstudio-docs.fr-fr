@@ -9,12 +9,12 @@ caps.latest.revision: 36
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 52e0b8f87774b11b1750700d5bef19c5423824c4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3780e0ee5cf6bffb1a749b17d868445fbda38b13
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667139"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296911"
 ---
 # <a name="visual-studio-ide"></a>Environnement IDE de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +37,9 @@ Si vous n’avez jamais utilisé Visual Studio, découvrez les principes de base
 Si vous voulez découvrir les nouvelles fonctionnalités de Visual Studio 2015, consultez [Nouveautés de Visual Studio 2015](../what-s-new-in-visual-studio-2015.md).
 
 ## <a name="visual-studio-setup"></a>Installation de Visual Studio
- Vous pouvez déterminer quelle édition de Visual Studio vous convient en consultant la rubrique [Éditions Visual Studio](http://www.visualstudio.com/products/visual-studio-with-msdn-overview-vs).
+ Vous pouvez déterminer quelle édition de Visual Studio vous convient en consultant la rubrique [Éditions Visual Studio](https://visualstudio.microsoft.com/vs/).
 
- Vous pouvez installer Visual Studio 2015 en le téléchargeant à partir de [Téléchargements Visual Studio](http://www.visualstudio.com/downloads/download-visual-studio-vs.aspx). Si vous voulez en savoir plus sur le processus d’installation, consultez [Installation de Visual Studio 2015](../install/install-visual-studio-2015.md).
+ Vous pouvez installer Visual Studio 2015 en le téléchargeant à partir de [Téléchargements Visual Studio](https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx). Si vous voulez en savoir plus sur le processus d’installation, consultez [Installation de Visual Studio 2015](../install/install-visual-studio-2015.md).
 
 ## <a name="ide-basics"></a>Principes de base de l'IDE
  L'illustration suivante montre l'IDE Visual Studio avec un projet ouvert, la fenêtre de l'Explorateur de solutions, qui permet de naviguer dans les fichiers du projet, et la fenêtre Team Explorer, qui permet de naviguer dans le contrôle des sources et le suivi des éléments de travail. Les fonctionnalités de la barre de titre figurant avec une légende sont expliquées ci-dessous plus en détail.

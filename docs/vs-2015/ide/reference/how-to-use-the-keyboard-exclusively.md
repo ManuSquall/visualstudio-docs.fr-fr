@@ -16,17 +16,17 @@ caps.latest.revision: 30
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 37bbdfd00778575755379fc442dfa9be3f90eeb7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: de27d99d6bccab46734399e524f70a731a36aa1b
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651304"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74297880"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Guide pratique pour utiliser uniquement le clavier
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] fournit de nombreuses combinaisons de touches de raccourci par défaut pour simplifier la navigation et l’écriture du code dans l’environnement de développement intégré (IDE). Pour obtenir la liste complète des touches de raccourci utilisées dans Visual Studio, consultez [Raccourcis clavier par défaut](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Pour plus d’informations sur les raccourcis clavier disponibles pour d’autres produits Microsoft, consultez [http://www.microsoft.com/enable/products/keyboard.aspx](http://go.microsoft.com/fwlink/?LinkID=40400).
+[!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] fournit de nombreuses combinaisons de touches de raccourci par défaut pour simplifier la navigation et l’écriture du code dans l’environnement de développement intégré (IDE). Pour obtenir la liste complète des touches de raccourci utilisées dans Visual Studio, consultez [Raccourcis clavier par défaut](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Pour plus d’informations sur les raccourcis clavier disponibles pour d’autres produits Microsoft, consultez [http://www.microsoft.com/enable/products/keyboard.aspx](https://go.microsoft.com/fwlink/?LinkID=40400).
 
 > [!NOTE]
 > Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).

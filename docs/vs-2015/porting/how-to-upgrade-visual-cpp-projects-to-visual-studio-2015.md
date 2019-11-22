@@ -12,12 +12,12 @@ caps.latest.revision: 26
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: c998433ca96c46f6a24b75aec5d3a2a95912b786
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: b33b1b47ad4c32aabe09aae5a66fe3f02aeb1487
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823293"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300384"
 ---
 # <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>Mise à niveau de projets Visual C++ vers Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ Lorsque vous ouvrez pour la première fois un projet Visual C++ créé dans une 
 - Pour les projets [!INCLUDE[cppcli](../includes/cppcli-md.md)] , remplace TargetFrameworkVersion par .NET Framework 4.5.2.
 
 ## <a name="continuing-to-work-with-a-custom-platformtoolset"></a>Utilisation constante d’un PlatformToolset personnalisé
- Si vous souhaitez continuer à utiliser un PlatformToolset personnalisé dans [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)], l’ensemble d’outils doit se trouver sous %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ sur un ordinateur x86, ou sous %ProgramFiles (x86)%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ sur un ordinateur x64. Pour plus d’informations sur la création d’un PlatformToolset personnalisé, consultez le billet sur le [multi-ciblage natif C++](http://go.microsoft.com/fwlink/?LinkId=248587) dans le blog de l’équipe Visual C++.
+ Si vous souhaitez continuer à utiliser un PlatformToolset personnalisé dans [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)], l’ensemble d’outils doit se trouver sous %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ sur un ordinateur x86, ou sous %ProgramFiles (x86)%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ sur un ordinateur x64. Pour plus d’informations sur la création d’un PlatformToolset personnalisé, consultez le billet sur le [multi-ciblage natif C++](https://go.microsoft.com/fwlink/?LinkId=248587) dans le blog de l’équipe Visual C++.
 
 ## <a name="see-also"></a>Voir aussi
  [Guide du portage et de la mise à niveau de Visual C++](https://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb) [Portage, migration et mise à niveau des projets Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)

@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 61f8748a3874f32db9c235d03b6b7464bc5cecf1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 288fb24c9c1c4ddee1cb59a968e717531e274af1
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62550998"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300589"
 ---
 # <a name="getting-started-with-ptvs-building-a-website-in-azure"></a>Bien démarrer avec PTVS : création d’un site web dans Azure
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ Vous pouvez commencer rapidement à créer un site web Python dans Azure.
   
  Vous pouvez obtenir des instructions en regardant cette très courte [vidéo youtube](https://www.youtube.com/watch?v=FJx5mutt1uk&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=6).  
   
- Commencez avec la boîte de dialogue Nouveau projet ... et, dans les projets Python, choisissez le projet web Bottle.  Ce modèle [Bottle](http://bottlepy.org/docs/dev/index.html) est un site de démarrage basé sur le [framework Bootstrap](http://getbootstrap.com/).  Quand vous créez le projet, Visual Studio vous invite à installer les dépendances (Bottle dans ce cas) dans un environnement virtuel.  Étant donné que vous effectuez le déploiement sur un site web Azure, vous devez ajouter les dépendances dans un environnement virtuel pour déployer les bits nécessaires au fonctionnement de votre site.  Vous devez également baser votre environnement sur Python 2.7 ou 3.4 32 bits.  Une fois votre projet créé, appuyez sur F5 pour commencer à exécuter votre site.  
+ Commencez avec la boîte de dialogue Nouveau projet ... et, dans les projets Python, choisissez le projet web Bottle.  Ce modèle [Bottle](http://bottlepy.org/docs/dev/index.html) est un site de démarrage basé sur le [framework Bootstrap](https://getbootstrap.com/).  Quand vous créez le projet, Visual Studio vous invite à installer les dépendances (Bottle dans ce cas) dans un environnement virtuel.  Étant donné que vous effectuez le déploiement sur un site web Azure, vous devez ajouter les dépendances dans un environnement virtuel pour déployer les bits nécessaires au fonctionnement de votre site.  Vous devez également baser votre environnement sur Python 2.7 ou 3.4 32 bits.  Une fois votre projet créé, appuyez sur F5 pour commencer à exécuter votre site.  
   
  L'essai du site dans Azure s'effectue facilement.  Si vous n’avez pas d’abonnement Azure, vous pouvez utiliser [try.azurewebsites.net](https://trywebsites.azurewebsites.net/).  Ce site offre un moyen simple pour tester Azure Websites pendant une heure à l’aide d’une simple connexion sociale.  Vous n'avez pas besoin de carte de crédit.  Choisissez le modèle Site vide dans la liste déroulante Modifier le langage et sélectionnez Créer.  Sous « Utiliser votre application web », choisissez Télécharger le profil de publication et enregistrez le fichier pour l'utiliser avec Visual Studio.  Vous pouvez également effectuer le déploiement à l'aide de git sur n'importe quel système d'exploitation.  
   

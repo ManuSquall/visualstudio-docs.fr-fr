@@ -12,12 +12,12 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: fbf7c539c8bf1290aff92edf876ac4c437fd1c68
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ff7d0e7a26c9e8fa6abe984353d3368ca1f6a36a
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670296"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74296102"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Fonctionnalités d’accessibilité de Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ En plus des fonctionnalités et utilitaires d'accessibilité Windows, les foncti
 - Saisie semi-automatique pour les méthodes et les paramètres
 
 > [!IMPORTANT]
-> Les informations contenues dans cette rubrique s'appliquent uniquement aux utilisateurs qui ont acheté leurs produits Microsoft aux États-Unis. Si vous avez obtenu ce produit en dehors des États-Unis, vous pouvez utiliser la carte d'information de la filiale fournie avec votre package logiciel, ou consulter la [page Nous contacter du support technique](http://support.microsoft.com/ContactUs) et cliquer sur le lien **Rechercher des adresses Microsoft dans le monde entier** (en bas de la page). Cette page fournit la liste des numéros de téléphone et adresses des services de support technique Microsoft. Vous pouvez contacter votre filiale pour savoir si les types de produits et services décrits dans cette section sont disponibles dans votre région. Les informations sur l'accessibilité sont disponibles dans d'autres langues, y compris le japonais et le français.
+> Les informations contenues dans cette rubrique s'appliquent uniquement aux utilisateurs qui ont acheté leurs produits Microsoft aux États-Unis. Si vous avez obtenu ce produit en dehors des États-Unis, vous pouvez utiliser la carte d'information de la filiale fournie avec votre package logiciel, ou consulter la [page Nous contacter du support technique](https://support.microsoft.com/contactus/) et cliquer sur le lien **Rechercher des adresses Microsoft dans le monde entier** (en bas de la page). Cette page fournit la liste des numéros de téléphone et adresses des services de support technique Microsoft. Vous pouvez contacter votre filiale pour savoir si les types de produits et services décrits dans cette section sont disponibles dans votre région. Les informations sur l'accessibilité sont disponibles dans d'autres langues, y compris le japonais et le français.
 
  Pour plus d’informations, consultez les rubriques suivantes :
 

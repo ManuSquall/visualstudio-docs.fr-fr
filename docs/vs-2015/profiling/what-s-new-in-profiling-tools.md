@@ -12,12 +12,12 @@ caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 46eb6585bffb96397d73a03f142bd7b6b4779f15
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: f9611170c7b23a9db72c27b9c3f69a39e21a4bdc
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261634"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74300625"
 ---
 # <a name="what39s-new-in-profiling-tools"></a>Nouveautés des outils de profilage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ Pour plus d’informations sur toutes les nouveautés en matière de débogage e
  Pour plus d’informations sur toutes les nouveautés en matière de débogage et de diagnostics dans Visual Studio 2015, consultez les [Notes de mise à jour de Visual Studio 2015](https://www.visualstudio.com/news/vs2015-vs#Debug).  
   
 ## <a name="whats-new-in-update-1"></a>Nouveautés d’Update 1  
- À compter de Visual Studio 2015 Update 1, vous pouvez afficher une répartition par fonction de l’utilisation du processeur sans quitter le débogueur. Pour plus d’informations, consultez [Profile Your CPU in the Debugger in Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/10/29/profile-your-cpu-in-the-debugger-in-visual-studio-2015.aspx).  
+ À compter de Visual Studio 2015 Update 1, vous pouvez afficher une répartition par fonction de l’utilisation du processeur sans quitter le débogueur. Pour plus d’informations, consultez [Profile Your CPU in the Debugger in Visual Studio 2015](https://devblogs.microsoft.com/devops/profile-your-cpu-in-the-debugger-in-visual-studio-2015/).  
   
- La fenêtre **Outils de diagnostic** a ajouté des options de recherche et de filtre à l’onglet **Événements** . Pour plus d’informations, consultez [Debugger-integrated profiling](/visualstudio/profiling/running-profiling-tools-with-or-without-the-debugger) et [Searching and filtering the Events tab of the Diagnostic Tools window](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx).  
+ La fenêtre **Outils de diagnostic** a ajouté des options de recherche et de filtre à l’onglet **Événements** . Pour plus d’informations, consultez [Debugger-integrated profiling](/visualstudio/profiling/running-profiling-tools-with-or-without-the-debugger) et [Searching and filtering the Events tab of the Diagnostic Tools window](https://devblogs.microsoft.com/devops/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window/).  
   
 ## <a name="diagnostics-with-debugging-ui-and-hotkey-changes"></a>Diagnostics avec l'interface utilisateur de débogage et changements de touches d'accès rapide  
  Vous pouvez maintenant exécuter les outils de diagnostic pendant le débogage à l'aide de la nouvelle fenêtre **Outils de diagnostic** . La fenêtre s’affiche automatiquement, mais vous pouvez également l’ouvrir avec le nouvel élément de menu **Afficher les outils de diagnostic** (raccourci clavier **Ctrl+Alt+F2**).  

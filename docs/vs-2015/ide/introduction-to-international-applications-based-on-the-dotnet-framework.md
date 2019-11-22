@@ -26,12 +26,12 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8243b2f735fb15f5c4e2fe841721696b87590997
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f394cca9a248b5304a165f68a60b966d8e3684b2
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670438"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74291366"
 ---
 # <a name="introduction-to-international-applications-based-on-the-net-framework"></a>Introduction aux applications internationales basées sur le .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], il existe deux parties pour l
 
  Le modèle de localisation [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] se compose d’un assembly principal qui contient le code d’application et les ressources de secours : chaînes, images et autres objets pour le langage dans lequel l’application a été initialement développée. Chaque application localisée dispose d’assemblys satellites (assemblys qui contiennent uniquement les ressources localisées). Étant donné que l’assembly principal contient toujours les ressources de secours, si une ressource est introuvable dans l’assembly satellite localisé, le <xref:System.Resources.ResourceManager> tente de la charger de façon hiérarchique, en recourant en dernier ressort à la ressource dans l’assembly principal. Le système de secours de ressources est expliqué en détail dans [Organisation hiérarchique des ressources pour la localisation](../ide/hierarchical-organization-of-resources-for-localization.md).
 
- Une ressource de localisation que nous vous encourageons à utiliser est le glossaire pour tous les produits Microsoft localisés. Ce fichier CSV contient plus de 12 000 termes anglais, ainsi que les traductions des termes dans 59 langues différentes. Le glossaire est disponible en téléchargement sur la page web [Microsoft Terminology Translations](http://go.microsoft.com/fwlink/?LinkId=128146) (Traductions terminologiques Microsoft).
+ Une ressource de localisation que nous vous encourageons à utiliser est le glossaire pour tous les produits Microsoft localisés. Ce fichier CSV contient plus de 12 000 termes anglais, ainsi que les traductions des termes dans 59 langues différentes. Le glossaire est disponible en téléchargement sur la page web [Microsoft Terminology Translations](https://go.microsoft.com/fwlink/?LinkId=128146) (Traductions terminologiques Microsoft).
 
  Le système de projet pour les applications Windows Forms peut générer des fichiers de ressources pour la culture de secours et chaque culture d’interface utilisateur supplémentaire souhaitée. Le fichier de ressources de secours est intégré à l’assembly principal, puis les fichiers de ressources spécifiques à une culture sont intégrés aux assemblys satellites, à raison d’un par culture d’interface utilisateur. Quand vous générez un projet, les fichiers de ressources sont compilés à partir du format XML de Visual Studio (.resx) dans un format binaire intermédiaire (.resources), puis incorporés dans des assemblys satellites.
 
