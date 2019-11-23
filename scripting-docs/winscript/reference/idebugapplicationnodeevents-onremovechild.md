@@ -42,7 +42,7 @@ HRESULT onRemoveChild(
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|valeur|Description|  
+|Valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
@@ -52,6 +52,6 @@ HRESULT onRemoveChild(
  Les implémenteurs de l’interface `IDebugApplicationNode` déclenchent cet événement.  
   
 ## <a name="see-also"></a>Voir aussi  
- @No__t_1 de l' [interface IDebugApplicationNodeEvents](../../winscript/reference/idebugapplicationnodeevents-interface.md)  
- [IDebugApplicationNodeEvents :: onAddChild](../../winscript/reference/idebugapplicationnodeevents-onaddchild.md)    
+   de l' [interface IDebugApplicationNodeEvents](../../winscript/reference/idebugapplicationnodeevents-interface.md)  
+ [IDebugApplicationNodeEvents::onAddChild](../../winscript/reference/idebugapplicationnodeevents-onaddchild.md)   
  [Interface IDebugApplicationNode](../../winscript/reference/idebugapplicationnode-interface.md)

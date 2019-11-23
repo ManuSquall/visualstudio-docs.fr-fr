@@ -29,7 +29,7 @@ Vous avez créé une nouvelle étiquette, mais vous lui avez donné le nom d’u
 - Assurez-vous que toutes les étiquettes que vous utilisez dans vos programmes sont uniques dans leur étendue respective.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Instruction étiquetée](../../javascript/reference/labeled-statement-javascript.md)    
- [instruction switch](../../javascript/reference/switch-statement-javascript.md)    
+ [Instruction étiquetée](../../javascript/reference/labeled-statement-javascript.md)   
+ [instruction switch](../../javascript/reference/switch-statement-javascript.md)   
  [break, instruction](../../javascript/reference/break-statement-javascript.md)   
  [Instruction continue](../../javascript/reference/continue-statement-javascript.md)

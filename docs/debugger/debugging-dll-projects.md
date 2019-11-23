@@ -56,7 +56,7 @@ Quand vous utilisez un modèle de projet Visual Studio pour créer une applicati
 
 Pour que le débogueur s’attache à C++ une dll, C++ le code doit émettre `DebuggableAttribute`.
 
-**Pour définir `DebuggableAttribute` :**
+**Pour définir `DebuggableAttribute`:**
 
 1. Sélectionnez le C++ projet DLL dans **Explorateur de solutions** et sélectionnez l’icône **Propriétés** , ou cliquez avec le bouton droit sur le projet et sélectionnez **Propriétés**.
 
@@ -66,7 +66,7 @@ Pour plus d’informations, consultez [/ASSEMBLYDEBUG](/cpp/build/reference/asse
 
 ### <a name="vxtskdebuggingdllprojectsexternal"></a>Définir les emplacementsC++ des fichiers C/dll
 
-Pour déboguer une DLL externe, un projet appelant doit être en mesure de trouver la DLL, son [fichier. pdb](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)et tout autre fichier requis par la dll. Vous pouvez créer une tâche de génération personnalisée pour copier ces fichiers dans votre *dossier \<project >* dossier de sortie \Debug., ou vous pouvez copier les fichiers manuellement.
+Pour déboguer une DLL externe, un projet appelant doit être en mesure de trouver la DLL, son [fichier. pdb](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)et tout autre fichier requis par la dll. Vous pouvez créer une tâche de génération personnalisée pour copier ces fichiers dans votre *dossier de projet\<>* dossier de sortie \Debug., ou vous pouvez copier les fichiers manuellement.
 
 Pour C/C++ Projects, vous pouvez définir les emplacements des fichiers d’en-tête et lib dans les pages de propriétés du projet, au lieu de les copier dans le dossier de sortie.
 
@@ -76,11 +76,11 @@ Pour C/C++ Projects, vous pouvez définir les emplacements des fichiers d’en-t
 
 1. En haut du volet **Propriétés** , sous **configuration**, sélectionnez **toutes les configurations**.
 
-1. Sous **C/C++**  > **général** > **répertoires Include supplémentaires**, spécifiez le dossier contenant les fichiers d’en-tête.
+1. Sous **C/C++**  > **général** > **autres répertoires Include**, spécifiez le dossier qui contient des fichiers d’en-tête.
 
-1. Sous **éditeur de liens**@no__t-**1 @no__t**-3**répertoires de bibliothèques supplémentaires**, spécifiez le dossier qui contient les fichiers lib.
+1. Sous **éditeur de liens** > **général** > **répertoires de bibliothèques supplémentaires**, spécifiez le dossier qui contient des fichiers lib.
 
-1. Sous l' **éditeur de liens** > **entrée** > **dépendances supplémentaires**, spécifiez le chemin d’accès complet et le nom de fichier pour les fichiers lib.
+1. Sous l' **éditeur de liens** > **d’entrée** > **des dépendances supplémentaires**, spécifiez le chemin d’accès complet et le nom de fichier pour les fichiers lib.
 
 1. Sélectionnez **OK**.
 
@@ -90,7 +90,7 @@ Pour plus d’informations C++ sur les paramètres du projet, consultez Référe
 
 Veillez à créer une version de débogage de la DLL avant de commencer le débogage. Pour déboguer une DLL, une application appelante doit être en mesure de trouver son [fichier. pdb](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md) et tous les autres fichiers requis par la dll.
 
-Vous pouvez créer une tâche de génération personnalisée pour copier les fichiers DLL dans le dossier de votre *projet \<calling >* dossier de sortie \Debug., ou vous pouvez copier les fichiers manuellement.
+Vous pouvez créer une tâche de génération personnalisée pour copier les fichiers DLL dans votre *\<appelant le dossier du projet >* dossier de sortie \Debug., ou vous pouvez copier les fichiers manuellement.
 
 Veillez à appeler la DLL à l’emplacement approprié. Cela peut paraître évident, mais si une application appelante trouve et charge une copie différente de la DLL, le débogueur n’atteint jamais les points d’arrêt que vous définissez.
 
@@ -106,7 +106,7 @@ Pour plus d’informations, consultez [premier aperçu du débogueur](../debugge
 
 L’application qui appelle une DLL peut être :
 
-- Application d’un projet [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dans la même solution ou dans une autre solution à partir de la DLL.
+- Application d’un projet [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dans la même solution ou dans une autre solution de la DLL.
 - Une application existante déjà déployée et en cours d’exécution sur un ordinateur de test ou de production.
 - Située sur le web et accessible via une URL.
 - Une application Web avec une page Web qui incorpore la DLL.
@@ -130,7 +130,7 @@ Vous pouvez utiliser la fenêtre **exécution** pour évaluer les fonctions ou l
 >[!NOTE]
 >Vous pouvez utiliser la fenêtre **exécution** au moment du design avec la plupart des types de projet. Elle n’est pas prise en charge pour SQL, les projets Web ou les scripts.
 
-Par exemple, pour tester une méthode nommée `Test` dans la classe `Class1` :
+Par exemple, pour tester une méthode nommée `Test` dans la classe `Class1`:
 
 1. Une fois le projet DLL ouvert, ouvrez la fenêtre **exécution** en sélectionnant **déboguer** > **Windows** > **immédiat** ou en appuyant sur **CTRL**+**ALT**+**I**.
 

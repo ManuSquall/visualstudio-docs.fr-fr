@@ -29,6 +29,6 @@ Vous avez tenté d’utiliser l’instruction **par défaut** plusieurs fois dan
 - Supprimez les autres instructions case **par défaut** de votre instruction `switch` (utilisez au plus une instruction case par défaut dans votre instruction switch).  
   
 ## <a name="see-also"></a>Voir aussi  
- [instruction switch](../../javascript/reference/switch-statement-javascript.md)    
- [Contrôle du déroulement du programme](../../javascript/controlling-program-flow-javascript.md)    
+ [instruction switch](../../javascript/reference/switch-statement-javascript.md)   
+ [Contrôle du déroulement du programme](../../javascript/controlling-program-flow-javascript.md)   
  [Mots réservés JavaScript](../../javascript/reference/javascript-reserved-words.md)

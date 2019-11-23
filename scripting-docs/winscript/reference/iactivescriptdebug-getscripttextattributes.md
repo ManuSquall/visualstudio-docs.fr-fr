@@ -52,7 +52,7 @@ HRESULT GetScriptTextAttributes(
  `dwFlags`  
  dans Indicateurs associés au bloc de script. Peut être une combinaison de ces valeurs :  
   
-|Constante|valeur|Description|  
+|Constante|Valeur|Description|  
 |--------------|-----------|-----------------|  
 |GETATTRTYPE_DEPSCAN|0x0001|Indique que les identificateurs et les opérateurs point doivent être identifiés avec les indicateurs SOURCETEXT_ATTR_IDENTIFIER et SOURCETEXT_ATTR_MEMBERLOOKUP, respectivement.|  
 |GETATTRFLAG_THIS|0x0100|Indique que l’identificateur de l’objet actuel doit être identifié avec l’indicateur SOURCETEXT_ATTR_THIS.|  
@@ -64,7 +64,7 @@ HRESULT GetScriptTextAttributes(
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|valeur|Description|  
+|Valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
@@ -74,8 +74,8 @@ HRESULT GetScriptTextAttributes(
  Cette méthode pour les blocs de script ; la méthode `GetScriptletTextAttributes` concerne les scriptlets.  
   
 ## <a name="see-also"></a>Voir aussi  
- @No__t_1 de l' [interface IActiveScriptDebug](../../winscript/reference/iactivescriptdebug-interface.md)  
- [IActiveScriptDebug :: GetScriptletTextAttributes](../../winscript/reference/iactivescriptdebug-getscriptlettextattributes.md)    
- @No__t_1 de l' [interface IDebugDocumentText](../../winscript/reference/idebugdocumenttext-interface.md)  
- [IDebugDocumentText :: GetText](../../winscript/reference/idebugdocumenttext-gettext.md)    
+   de l' [interface IActiveScriptDebug](../../winscript/reference/iactivescriptdebug-interface.md)  
+ [IActiveScriptDebug :: GetScriptletTextAttributes](../../winscript/reference/iactivescriptdebug-getscriptlettextattributes.md)   
+ [IDebugDocumentText Interface](../../winscript/reference/idebugdocumenttext-interface.md)   
+ [IDebugDocumentText::GetText](../../winscript/reference/idebugdocumenttext-gettext.md)   
  [Énumération SOURCE_TEXT_ATTR](../../winscript/reference/source-text-attr-enumeration.md)
