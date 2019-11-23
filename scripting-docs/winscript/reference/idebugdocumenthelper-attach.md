@@ -37,12 +37,12 @@ HRESULT Attach(
   
 #### <a name="parameters"></a>Paramètres  
  `pddhParent`  
- dans Arborescence du document dans laquelle ce document sera ajouté. Peut avoir la valeur NULL.  
+ dans Arborescence du document dans laquelle ce document sera ajouté. Peut être NULL.  
   
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|valeur|Description|  
+|Valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
@@ -50,5 +50,5 @@ HRESULT Attach(
  Cette méthode ajoute ce document à l’arborescence du document, à l’aide de `pddhParent` en tant que parent. Si le `pddhParent` est `NULL`, ce document sera le document de niveau supérieur.  
   
 ## <a name="see-also"></a>Voir aussi  
- [IDebugDocumentHelper ::D etach](../../winscript/reference/idebugdocumenthelper-detach.md)    
+ [IDebugDocumentHelper::Detach](../../winscript/reference/idebugdocumenthelper-detach.md)   
  [Interface IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)
