@@ -46,7 +46,7 @@ Certains utilisateurs peuvent constater que le modèle de couleurs par défaut n
 
 1. Accédez à **Visual Studio (menu)**  > **Préférences... (&#8984;,)** .
 
-1. Dans **Préférences**, accédez à **éditeur de texte**@no__t**thème de couleur**2.
+1. Dans **Préférences**, accédez à **éditeur de texte** > **thème de couleur**.
 
 1. Sélectionnez le thème de votre choix.
 

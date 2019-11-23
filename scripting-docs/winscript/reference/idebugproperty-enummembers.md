@@ -1,5 +1,5 @@
 ---
-title: 'IDebugProperty :: EnumMembers, | Microsoft Docs'
+title: IDebugProperty::EnumMembers | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -52,10 +52,10 @@ HRESULT EnumMembers (
  à Retourne l’interface `IEnumDebugPropertyInfo` qui énumère les propriétés de membre.  
   
 ## <a name="return-value"></a>Valeur de retour  
- Retourne un `HRESULT` valide, généralement `S_OK`.  
+ Retourne un `HRESULT`valide, généralement `S_OK`.  
   
 ## <a name="see-also"></a>Voir aussi  
- @No__t_1 de l' [interface IDebugProperty](../../winscript/reference/idebugproperty-interface.md)  
- [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)    
- @No__t_1 de l' [interface IDebugPropertyEnumType_All](../../winscript/reference/idebugpropertyenumtype-all-interface.md)  
+   de l' [interface IDebugProperty](../../winscript/reference/idebugproperty-interface.md)  
+ [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)   
+ [Interface IDebugPropertyEnumType_All](../../winscript/reference/idebugpropertyenumtype-all-interface.md)   
  [Interface IEnumDebugPropertyInfo](../../winscript/reference/ienumdebugpropertyinfo-interface.md)

@@ -17,7 +17,7 @@ ms.lasthandoff: 10/19/2019
 ms.locfileid: "72603855"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Procédure : définir et utiliser des délégués d'activité dans le Concepteur de flux de travail
-[!INCLUDE[net_v45](../includes/net-v45-md.md)] inclut un nouveau concepteur prêt à l'emploi pour l'activité <xref:System.Activities.Statements.InvokeDelegate>. Ce concepteur peut être utilisé pour assigner des délégués à l'activité qui dérive de <xref:System.Activities.ActivityDelegate>, telle que <xref:System.Activities.ActivityAction> ou <xref:System.Activities.ActivityFunc%601>.
+[!INCLUDE[net_v45](../includes/net-v45-md.md)] comprend un nouveau concepteur prêt à l’emploi pour l’activité <xref:System.Activities.Statements.InvokeDelegate>. Ce concepteur peut être utilisé pour assigner des délégués à l'activité qui dérive de <xref:System.Activities.ActivityDelegate>, telle que <xref:System.Activities.ActivityAction> ou <xref:System.Activities.ActivityFunc%601>.
 
 ### <a name="define-an-activity-delegate"></a>Définir un délégué d'activité
 
@@ -27,7 +27,7 @@ ms.locfileid: "72603855"
 
 3. Dans le concepteur de flux de travail, cliquez sur l’onglet **arguments** .
 
-4. Cliquez sur **créer un argument**. Nommez les nouveaux arguments **Items**.
+4. Cliquez sur **Créer un argument**. Nommez les nouveaux arguments **Items**.
 
 5. Dans la colonne **type d’argument** , sélectionnez **tableau de [T]** .
 
@@ -37,7 +37,7 @@ ms.locfileid: "72603855"
 
 8. Dans la colonne type d’argument, sélectionnez **Rechercher les types...**
 
-9. Dans l’Explorateur de types, entrez **ActivityAction** dans le champ **nom du type** . Sélectionnez **ActivityAction \<T >** dans l’arborescence. Sélectionnez **objet** dans la liste déroulante qui s’affiche pour affecter le type **ActivityAction \<Object >** à l’argument.
+9. Dans l’Explorateur de types, entrez **ActivityAction** dans le champ **nom du type** . Sélectionnez **ActivityAction\<t >** dans l’arborescence. Sélectionnez **objet** dans la liste déroulante qui s’affiche pour affecter le type **ActivityAction\<objet >** à l’argument.
 
 10. Faites glisser une activité <xref:System.Activities.Statements.While> de la section **Flow** de la boîte à outils vers l’aire du concepteur.
 
@@ -79,5 +79,5 @@ ms.locfileid: "72603855"
 
    Lorsque le workflow s'exécute, la console affiche ce qui suit :
 
-   **1** 
-   **ABC**
+   **1**
+   **abc**

@@ -45,7 +45,7 @@ typedef struct DebugPropertyInfo{
  dwValidFields  
  Type de données énuméré utilisé pour spécifier les champs à initialiser.  
   
- bstrName  
+ bstrName,  
  Nom de la propriété dans un contexte.  
   
  bstrType  
@@ -64,6 +64,6 @@ typedef struct DebugPropertyInfo{
  La `IDebugProperty` décrite par les informations de cette structure de `DebugPropertyInfo`.  
   
 ## <a name="see-also"></a>Voir aussi  
- @No__t_1 de l' [interface IDebugProperty](../../winscript/reference/idebugproperty-interface.md)  
- [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)    
+   de l' [interface IDebugProperty](../../winscript/reference/idebugproperty-interface.md)  
+ [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)   
  [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)

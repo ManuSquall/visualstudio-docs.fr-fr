@@ -29,5 +29,5 @@ Vous avez tenté d’effectuer une opération sur le membre de données d’un o
 - Vérifiez que vous avez tapé correctement le nom du membre de données.  
   
 ## <a name="see-also"></a>Voir aussi  
- Objet [objet](../../javascript/reference/object-object-javascript.md)    
+ Objet [objet](../../javascript/reference/object-object-javascript.md)   
  [Objets et tableaux](../../javascript/objects-and-arrays-javascript.md)

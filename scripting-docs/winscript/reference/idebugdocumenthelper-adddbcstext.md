@@ -1,5 +1,5 @@
 ---
-title: 'IDebugDocumentHelper :: AddDBCSText | Microsoft Docs'
+title: IDebugDocumentHelper::AddDBCSText | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -42,7 +42,7 @@ HRESULT AddDBCSText(
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|valeur|Description|  
+|Valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
 |`E_FAIL`|La méthode n’a pas pu ajouter les caractères.|  
@@ -54,6 +54,6 @@ HRESULT AddDBCSText(
 > Si cette méthode est appelée après l’appel de `IDebugDocumentHelper::AddDeferredText`, `E_FAIL` est retourné.  
   
 ## <a name="see-also"></a>Voir aussi  
- @No__t_1 de l' [interface IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)  
- [IDebugDocumentHelper :: AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)    
+   de l' [interface IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)  
+ [IDebugDocumentHelper::AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)   
  [Interface IDebugDocumentTextEvents](../../winscript/reference/idebugdocumenttextevents-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: 'IActiveScriptAuthor :: GetInfoFromContext | Microsoft Docs'
+title: IActiveScriptAuthor::GetInfoFromContext | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -57,7 +57,7 @@ HRESULT GetInfoFromContext(
  `dwListTypesRequested`  
  dans Types de liste demandés. Peut être une combinaison des valeurs suivantes :  
   
-|Constante|valeur|Description|  
+|Constante|Valeur|Description|  
 |--------------|-----------|-----------------|  
 |SCRIPT_CMPL_NOLIST|0x0000|Aucune liste.|  
 |SCRIPT_CMPL_MEMBERLIST|0x0001|Liste des membres.|  
@@ -65,7 +65,7 @@ HRESULT GetInfoFromContext(
 |SCRIPT_CMPL_PARAMLIST|0x0004|Liste des paramètres de la méthode d’appel.|  
 |SCRIPT_CMPL_GLOBALLIST|0x0008|Liste globale.|  
   
- Le type SCRIPT_CMPL_GLOBALLIST est traité comme un élément de saisie semi-automatique par défaut qui peut être combiné à l’aide de l’opérateur OR avec d’autres éléments de saisie semi-automatique. Le moteur de création de script tente d’abord de remplir les informations de type pour d’autres éléments de la liste de saisie semi-automatique. En cas d’échec, le moteur remplit SCRIPT_CMPL_GLOBALLIST.  
+ Le type de SCRIPT_CMPL_GLOBALLIST est traité comme un élément de saisie semi-automatique par défaut qui peut être combiné à l’aide de l’opérateur OR avec d’autres éléments de saisie semi-automatique. Le moteur de création de script tente d’abord de remplir les informations de type pour d’autres éléments de la liste de saisie semi-automatique. En cas d’échec, le moteur remplit SCRIPT_CMPL_GLOBALLIST.  
   
  `pdwListTypesProvided`  
  à Type de liste fourni.  
@@ -88,20 +88,20 @@ HRESULT GetInfoFromContext(
  `piCurrentParameter`  
  à Index du paramètre qui contient la position actuelle. Si la position actuelle est sur le nom de la fonction,-1 est retourné.  
   
- La valeur `piCurrentParameter` est remplie uniquement lorsque `dwListTypesRequested` comprend SCRIPT_CMPL_PARAMLIST.  
+ La valeur `piCurrentParameter` est remplie uniquement lorsque `dwListTypesRequested` contient des SCRIPT_CMPL_PARAMLIST.  
   
  `ppunk`  
  Informations de type, fournies sous la forme d’un objet `IProvideMultipleClassInfo`.  
   
 ## <a name="return-value"></a>Valeur de retour  
- Élément `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
+ `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|valeur|Description|  
+|Valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
 ## <a name="remarks"></a>Notes  
   
 ## <a name="see-also"></a>Voir aussi  
-   de l' [interface IProvideMultipleClassInfo](/dotnet/api/microsoft.visualstudio.ole.interop.iprovidemultipleclassinfo)  
+ [IProvideMultipleClassInfo Interface](/dotnet/api/microsoft.visualstudio.ole.interop.iprovidemultipleclassinfo)   
  [Interface IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)

@@ -42,7 +42,7 @@ HRESULT GetDebugger(
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|valeur|Description|  
+|Valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
@@ -50,5 +50,5 @@ HRESULT GetDebugger(
  Cette méthode retourne le débogueur actuel connecté à l’application.  
   
 ## <a name="see-also"></a>Voir aussi  
- [IRemoteDebugApplication :: ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md)    
+ [IRemoteDebugApplication::ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md)   
  [Interface IRemoteDebugApplication](../../winscript/reference/iremotedebugapplication-interface.md)

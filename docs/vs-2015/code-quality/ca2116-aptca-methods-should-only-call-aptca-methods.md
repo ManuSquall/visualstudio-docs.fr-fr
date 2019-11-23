@@ -29,7 +29,7 @@ ms.locfileid: "72658680"
 |-|-|
 |TypeName|AptcaMethodsShouldOnlyCallAptcaMethods|
 |CheckId|CA2116|
-|Category|Microsoft.Security|
+|Catégorie|Microsoft.Security|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
@@ -38,15 +38,15 @@ ms.locfileid: "72658680"
 ## <a name="rule-description"></a>Description de la règle
  Par défaut, les méthodes publiques ou protégées des assemblys avec des noms forts sont protégées implicitement par une [demande de liaison](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) pour une confiance totale. Seuls les appelants d’un niveau de confiance suffisant peuvent accéder à un assembly avec nom fort. Les assemblys avec nom fort marqués avec l’attribut <xref:System.Security.AllowPartiallyTrustedCallersAttribute> (APTCA) n’ont pas cette protection. L’attribut désactive la demande de liaison, ce qui rend l’assembly accessible aux appelants qui ne bénéficient pas d’une confiance totale, tels que le code qui s’exécute à partir d’un intranet ou d’Internet.
 
- Lorsque l’attribut APTCA est présent dans un assembly entièrement fiable et que l’assembly exécute du code dans un autre assembly qui n’autorise pas les appelants d’un niveau de confiance partiel, une faille de sécurité est possible. Si deux méthodes `M1` et `M2` remplissent les conditions suivantes, les appelants malveillants peuvent utiliser la méthode `M1` pour ignorer la demande de liaison de confiance totale implicite qui protège `M2` :
+ Lorsque l’attribut APTCA est présent dans un assembly entièrement fiable et que l’assembly exécute du code dans un autre assembly qui n’autorise pas les appelants d’un niveau de confiance partiel, une faille de sécurité est possible. Si deux méthodes `M1` et `M2` remplissent les conditions suivantes, les appelants malveillants peuvent utiliser la méthode `M1` pour contourner la demande de liaison de confiance totale implicite qui protège `M2`:
 
 - `M1` est une méthode publique déclarée dans un assembly de confiance totale qui a l’attribut APTCA.
 
-- `M1` appelle une méthode `M2` en dehors de l’assembly de `M1`.
+- `M1` appelle une méthode `M2` l’assembly `M1`.
 
-- l’assembly de `M2` n’a pas l’attribut APTCA et, par conséquent, ne doit pas être exécuté par ou pour le compte des appelants qui ont un niveau de confiance partiel.
+- l’assembly de `M2`n’a pas l’attribut APTCA et, par conséquent, ne doit pas être exécuté par ou pour le compte des appelants qui ont un niveau de confiance partiel.
 
-  Un appelant de confiance partielle `X` peut appeler la méthode `M1`, ce qui provoque l’appel de `M1` `M2`. Étant donné que `M2` n’a pas l’attribut APTCA, son appelant immédiat (`M1`) doit satisfaire une demande de liaison pour une confiance totale. `M1` a une confiance totale et, par conséquent, est conforme à cette vérification. Le risque de sécurité est dû au fait que `X` ne participe pas à la satisfaction de la demande de liaison qui protège `M2` des appelants non fiables. Par conséquent, les méthodes avec l’attribut APTCA ne doivent pas appeler de méthodes qui n’ont pas l’attribut.
+  Un appelant de confiance partielle `X` peut appeler la méthode `M1`, ce qui provoque l’appel de `M1` `M2`. Étant donné que `M2` n’a pas l’attribut APTCA, son appelant immédiat (`M1`) doit satisfaire une demande de liaison pour une confiance totale. `M1` dispose d’une confiance totale et, par conséquent, est conforme à cette vérification. Le risque de sécurité est dû au fait que `X` ne participe pas à la satisfaction de la demande de liaison qui protège `M2` des appelants non fiables. Par conséquent, les méthodes avec l’attribut APTCA ne doivent pas appeler de méthodes qui n’ont pas l’attribut.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Si l’attribut APCTA est requis, utilisez une demande pour protéger la méthode qui appelle l’assembly de confiance totale. Les autorisations exactes que vous demandez dépendent de la fonctionnalité exposée par votre méthode. Si possible, Protégez la méthode avec une demande de confiance totale pour garantir que la fonctionnalité sous-jacente n’est pas exposée aux appelants d’un niveau de confiance partiel. Si ce n’est pas possible, sélectionnez un ensemble d’autorisations qui protègent efficacement les fonctionnalités exposées. Pour plus d’informations sur les demandes, consultez [demandes](https://msdn.microsoft.com/e5283e28-2366-4519-b27d-ef5c1ddc1f48).
@@ -60,7 +60,7 @@ ms.locfileid: "72658680"
  [!code-csharp[FxCop.Security.NoAptca#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.NoAptca/cs/FxCop.Security.NoAptca.cs#1)]
 
 ## <a name="example"></a>Exemple
- Le deuxième assembly est entièrement fiable et autorise les appelants de confiance partielle (représentés par `M1` dans la discussion précédente).
+ Le deuxième assembly est entièrement fiable et autorise les appelants d’un niveau de confiance partiel (représenté par `M1` dans la discussion précédente).
 
  [!code-csharp[FxCop.Security.YesAptca#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.YesAptca/cs/FxCop.Security.YesAptca.cs#1)]
 

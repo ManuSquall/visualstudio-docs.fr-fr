@@ -1,5 +1,5 @@
 ---
-title: 'IActiveScriptStats :: GetStatEx | Microsoft Docs'
+title: IActiveScriptStats::GetStatEx | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -50,17 +50,17 @@ HRESULT GetStatEx(
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|valeur|Description|  
+|Valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
-|`E_NOTIMPL`|La méthode n’est pas implémentée.|  
+|`E_NOTIMPL`|Cette méthode n'est pas implémentée.|  
   
 ## <a name="remarks"></a>Notes  
  Cette méthode permet à un moteur de script personnalisé de retourner des statistiques explicites à un hôte personnalisé.  
   
 > [!NOTE]
-> Cette méthode n’est pas implémentée actuellement.  
+> Cette méthode n'est pas implémentée à l'heure actuelle.  
   
 ## <a name="see-also"></a>Voir aussi  
- [IActiveScriptStats :: GetStat](../../winscript/reference/iactivescriptstats-getstat.md)    
+ [IActiveScriptStats::GetStat](../../winscript/reference/iactivescriptstats-getstat.md)   
  [Interface IActiveScriptStats](../../winscript/reference/iactivescriptstats-interface.md)

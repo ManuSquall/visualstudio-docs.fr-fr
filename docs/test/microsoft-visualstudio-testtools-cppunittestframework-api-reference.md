@@ -18,7 +18,7 @@ ms.locfileid: "71720514"
 
 Cette rubrique liste les membres publics de l’espace de noms `Microsoft::VisualStudio::CppUnitTestFramework`. Utilisez ces API pour écrire des tests unitaires C++ basés sur le framework de tests unitaires natifs Microsoft. Vous pouvez trouver un [exemple d’utilisation](#example) à la fin de la rubrique.
 
-Les fichiers d’en-tête et lib se trouvent dans le *dossier d’installation de @no__t 1Visual Studio > \VC\Auxiliary\VS\UnitTest*.
+Les fichiers d’en-tête et lib se trouvent sous *\<dossier d’installation de Visual Studio > \VC\Auxiliary\VS\UnitTest*.
 
 Les chemins des fichiers d’en-tête et de bibliothèque sont configurés automatiquement dans un projet de test natif.
 

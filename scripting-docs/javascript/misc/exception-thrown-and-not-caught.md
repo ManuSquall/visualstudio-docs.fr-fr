@@ -33,6 +33,6 @@ Vous avez inclus une instruction `throw` dans votre code, mais elle n’a pas é
 - Si l’exception est levée une nouvelle fois, assurez-vous qu’il existe une autre instruction catch correspondante.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Objet d’erreur](../../javascript/reference/error-object-javascript.md)    
- [instruction throw](../../javascript/reference/throw-statement-javascript.md)    
+ [Objet d’erreur](../../javascript/reference/error-object-javascript.md)   
+ [instruction throw](../../javascript/reference/throw-statement-javascript.md)   
  [Instruction try...catch...finally](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)

@@ -50,7 +50,7 @@ HRESULT ThreadCallHandler(
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|valeur|Description|  
+|Valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
@@ -58,6 +58,6 @@ HRESULT ThreadCallHandler(
  Cette méthode gère les appels pour exécuter le code dans le thread du débogueur.  
   
 ## <a name="see-also"></a>Voir aussi  
- @No__t_1 de l' [interface IDebugThreadCall](../../winscript/reference/idebugthreadcall-interface.md)  
- [IDebugApplication :: SynchronousCallInDebuggerThread](../../winscript/reference/idebugapplication-synchronouscallindebuggerthread.md)    
+   de l' [interface IDebugThreadCall](../../winscript/reference/idebugthreadcall-interface.md)  
+ [IDebugApplication::SynchronousCallInDebuggerThread](../../winscript/reference/idebugapplication-synchronouscallindebuggerthread.md)   
  [IDebugApplicationThread::SynchronousCallIntoThread](../../winscript/reference/idebugapplicationthread-synchronouscallintothread.md)

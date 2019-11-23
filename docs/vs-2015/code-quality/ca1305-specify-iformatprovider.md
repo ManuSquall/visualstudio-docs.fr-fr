@@ -29,7 +29,7 @@ ms.locfileid: "72661445"
 |-|-|
 |TypeName|SpecifyIFormatProvider|
 |CheckId|CA1305|
-|Category|Microsoft. Globalization|
+|Catégorie|Microsoft. Globalization|
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
@@ -61,7 +61,7 @@ ms.locfileid: "72661445"
  Il est possible de supprimer sans risque un avertissement de cette règle lorsqu’il est certain que le fournisseur de format/culture par défaut est le bon choix et où la maintenabilité du code n’est pas une priorité de développement importante.
 
 ## <a name="example"></a>Exemple
- Dans l’exemple suivant, `BadMethod` provoque deux violations de cette règle. `GoodMethod` corrige la première violation en passant la culture dite indifférente à <xref:System.String.Compare%2A> et corrige la deuxième violation en passant la culture actuelle à <xref:System.String.ToLower%2A>, car `string3` est affiché à l’utilisateur.
+ Dans l’exemple suivant, `BadMethod` provoque deux violations de cette règle. `GoodMethod` corrige la première violation en passant la culture dite indifférente à <xref:System.String.Compare%2A>et corrige la deuxième violation en passant la culture actuelle à <xref:System.String.ToLower%2A>, car `string3` est affiché à l’utilisateur.
 
  [!code-csharp[FxCop.Globalization.CultureInfo#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Globalization.CultureInfo/cs/FxCop.Globalization.CultureInfo.cs#1)]
 
@@ -72,7 +72,7 @@ ms.locfileid: "72661445"
 
  Cet exemple produit la sortie suivante.
 
- **6/4/1900 12:15:12 PM** 
+ **6/4/1900 12:15:12 PM**
 **06/04/1900 12:15:12**
 ## <a name="related-rules"></a>Règles associées
  [CA1304 : Spécifier CultureInfo](../code-quality/ca1304-specify-cultureinfo.md)

@@ -47,5 +47,5 @@ Vous avez tenté d’appeler une méthode ou propriété sur un objet d’un typ
     ```  
   
 ## <a name="see-also"></a>Voir aussi  
- Objet [objet](../../javascript/reference/object-object-javascript.md)    
+ Objet [objet](../../javascript/reference/object-object-javascript.md)   
  [Objets et tableaux](../../javascript/objects-and-arrays-javascript.md)

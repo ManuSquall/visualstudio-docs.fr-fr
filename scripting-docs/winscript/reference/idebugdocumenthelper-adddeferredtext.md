@@ -1,5 +1,5 @@
 ---
-title: 'IDebugDocumentHelper :: AddDeferredText | Microsoft Docs'
+title: IDebugDocumentHelper::AddDeferredText | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -46,7 +46,7 @@ HRESULT AddDeferredText(
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|valeur|Description|  
+|Valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
 |`E_FAIL`|Échec de la méthode.|  
@@ -60,7 +60,7 @@ HRESULT AddDeferredText(
 > Les appels à `AddDeferredText` ne doivent pas être mélangés avec des appels à `AddUnicodeText` ou `AddDBCSText`. Si cela se produit, `E_FAIL` est retourné.  
   
 ## <a name="see-also"></a>Voir aussi  
- @No__t_1 de l' [interface IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)  
- [IDebugDocumentHelper :: AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)    
- [IDebugDocumentHelper :: AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)    
+   de l' [interface IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)  
+ [IDebugDocumentHelper::AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)   
+ [IDebugDocumentHelper::AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)   
  [IDebugDocumentText::GetText](../../winscript/reference/idebugdocumenttext-gettext.md)

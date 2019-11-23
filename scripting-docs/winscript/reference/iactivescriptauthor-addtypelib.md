@@ -1,5 +1,5 @@
 ---
-title: 'IActiveScriptAuthor :: AddTypeLib | Microsoft Docs'
+title: IActiveScriptAuthor::AddTypeLib | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -52,9 +52,9 @@ HRESULT AddTypeLib(
  dans Non utilisé.  
   
 ## <a name="return-value"></a>Valeur de retour  
- Élément `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
+ `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|valeur|Description|  
+|Valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
@@ -63,5 +63,5 @@ HRESULT AddTypeLib(
   
 ## <a name="see-also"></a>Voir aussi  
    de l' [interface IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)  
- [IActiveScriptAuthor :: AddNamedItem](../../winscript/reference/iactivescriptauthor-addnameditem.md)    
+ [IActiveScriptAuthor::AddNamedItem](../../winscript/reference/iactivescriptauthor-addnameditem.md)   
  [LoadTypeLib](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelib)

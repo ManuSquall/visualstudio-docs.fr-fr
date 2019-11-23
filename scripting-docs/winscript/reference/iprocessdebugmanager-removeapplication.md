@@ -1,5 +1,5 @@
 ---
-title: 'IProcessDebugManager :: RemoveApplication | Microsoft Docs'
+title: IProcessDebugManager::RemoveApplication | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -42,7 +42,7 @@ HRESULT RemoveApplication(
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|valeur|Description|  
+|Valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
@@ -50,5 +50,5 @@ HRESULT RemoveApplication(
  Cette méthode supprime une application de la liste des applications en cours d’exécution.  
   
 ## <a name="see-also"></a>Voir aussi  
- [IProcessDebugManager :: AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)    
+ [IProcessDebugManager::AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)   
  [Interface IProcessDebugManager](../../winscript/reference/iprocessdebugmanager-interface.md)

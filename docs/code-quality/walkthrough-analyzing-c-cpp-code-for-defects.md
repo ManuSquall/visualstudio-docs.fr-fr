@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Analyse du code C/C++ pour détecter les erreurs'
+title: 'Procédure pas à pas : analyse du code C/C++ pour rechercher les erreurs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -19,7 +19,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 10/07/2019
 ms.locfileid: "72018342"
 ---
-# <a name="walkthrough-analyzing-cc-code-for-defects"></a>Procédure pas à pas : Analyse du code C/C++ pour détecter les erreurs
+# <a name="walkthrough-analyzing-cc-code-for-defects"></a>Procédure pas à pas : analyse du code C/C++ pour rechercher les erreurs
 
 Cette procédure pas à pas montre comment analyserC++ c/code pour identifier les erreurs de code potentielles à l’aideC++ de l’outil d’analyse du code pour c/code.
 
@@ -28,7 +28,7 @@ Cette procédure pas à pas montre comment analyserC++ c/code pour identifier le
 - Traiter l’avertissement comme une erreur.
 - Annoter le code source pour améliorer l’analyse des erreurs de code.
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Configuration requise
 
 - Copie de l' [exemple de démonstration](../code-quality/demo-sample.md).
 - Connaissances de base de CC++/.
@@ -65,9 +65,9 @@ Cette procédure pas à pas montre comment analyserC++ c/code pour identifier le
 
 2. Dans la **liste d’erreurs**, double-cliquez sur l’avertissement suivant :
 
-     avertissement C6230 : Cast implicite entre des types sémantiquement différents : utilisation de HRESULT dans un contexte booléen.
+     avertissement C6230 : cast implicite entre les types sémantiquement différents : utilisation de HRESULT dans un contexte booléen.
 
-     L’éditeur de code affiche la ligne qui a provoqué l’avertissement dans la fonction `bool ProcessDomain()`. Cet avertissement indique qu’un HRESULT est utilisé dans une instruction’If’où un résultat booléen est attendu.
+     L’éditeur de code affiche la ligne qui a provoqué l’avertissement dans la `bool ProcessDomain()`de la fonction. Cet avertissement indique qu’un HRESULT est utilisé dans une instruction’If’où un résultat booléen est attendu.
 
 3. Corrigez cet avertissement à l’aide de la macro SUCCEEDED. Votre code doit ressembler au code suivant :
 
@@ -77,7 +77,7 @@ Cette procédure pas à pas montre comment analyserC++ c/code pour identifier le
 
 4. Dans la **liste d’erreurs**, double-cliquez sur l’avertissement suivant :
 
-     AVERTISSEMENT C6282 : Opérateur incorrect : assignation à une constante dans le contexte de test. Était = = prévu ?
+     AVERTISSEMENT C6282 : opérateur incorrect : assignation à une constante dans le contexte de test. Était = = prévu ?
 
 5. Corrigez cet avertissement en vérifiant l’égalité. Votre code doit ressembler au code suivant :
 
@@ -119,7 +119,7 @@ Cette procédure pas à pas montre comment analyserC++ c/code pour identifier le
 
 6. Dans la **liste d’erreurs**, double-cliquez sur l’avertissement suivant :
 
-     AVERTISSEMENT C6011 : Suppression de la référence du pointeur NULL’newNode'.
+     AVERTISSEMENT C6011 : suppression de la référence du pointeur NULL’newNode'.
 
      Cet avertissement indique un échec de la vérification par l’appelant de la valeur de retour. Dans ce cas, un appel à **AllocateNode** peut retourner une valeur null (consultez le fichier d’en-tête annotations. h pour la déclaration de fonction pour AllocateNode).
 
@@ -142,7 +142,7 @@ Cette procédure pas à pas montre comment analyserC++ c/code pour identifier le
 
 ### <a name="to-use-source-code-annotation"></a>Pour utiliser l’annotation de code source
 
-1. Annotez les paramètres formels et la valeur de retour de la fonction `AddTail` en utilisant les conditions pre et postérieures comme indiqué dans l’exemple suivant :
+1. Annotez les paramètres formels et la valeur de retour de la fonction `AddTail` à l’aide des conditions pre et postales, comme indiqué dans cet exemple :
 
    ```cpp
    [returnvalue:SA_Post (Null=SA_Maybe)] LinkedList* AddTail
@@ -156,7 +156,7 @@ Cette procédure pas à pas montre comment analyserC++ c/code pour identifier le
 
 3. Dans la **liste d’erreurs**, double-cliquez sur l’avertissement suivant :
 
-     AVERTISSEMENT C6011 : Suppression de la référence du pointeur NULL « node ».
+     AVERTISSEMENT C6011 : suppression de la référence du pointeur NULL’node'.
 
      Cet avertissement indique que le nœud passé dans la fonction peut avoir la valeur null, et indique le numéro de ligne où l’avertissement a été déclenché.
 
@@ -178,4 +178,5 @@ Cette procédure pas à pas montre comment analyserC++ c/code pour identifier le
 
 ## <a name="see-also"></a>Voir aussi
 
-[Procédure pas à pas : Analyse du code managé pour les erreurs de code @ no__t-0 @ no__t-1[analyse duC++ code pour C/](../code-quality/code-analysis-for-c-cpp-overview.md)
+[Procédure pas à pas : analyse du code managé pour les erreurs de code](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
+l' [analyse du code pour C/C++ ](../code-quality/code-analysis-for-c-cpp-overview.md)

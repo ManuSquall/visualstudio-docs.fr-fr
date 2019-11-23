@@ -29,6 +29,6 @@ La structure de votre chaîne de recherche enfreint une ou plusieurs des règles
 - Vérifiez que la structure de votre chaîne de recherche d’expression régulière respecte la syntaxe d’expression régulière [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
 ## <a name="see-also"></a>Voir aussi  
- @No__t_1 d' [objet d’expression régulière](../../javascript/reference/regular-expression-object-javascript.md)  
- [Syntaxe des expressions régulières (JavaScript)](https://msdn.microsoft.com/library/1400241x)    
+   d' [objet d’expression régulière](../../javascript/reference/regular-expression-object-javascript.md)  
+ [Syntaxe des expressions régulières (JavaScript)](https://msdn.microsoft.com/library/1400241x)   
  [Méthode compile (Expression régulière)](../../javascript/reference/compile-method-regular-expression-javascript.md)

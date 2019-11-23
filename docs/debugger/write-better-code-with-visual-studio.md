@@ -186,13 +186,13 @@ Pour corriger cette erreur, vous allez voir une autre fonctionnalité de l’IDE
 
 Le premier tilde rouge représente une erreur au moment de la compilation. Pointez dessus pour voir le message ```The name `Encoding` does not exist in the current context```.
 
-Notez que cette erreur affiche une icône d’ampoule en bas à gauche. En plus de l’icône de tournevis @no__t 0screwdriver-no__t-1, l’icône d’ampoule ![LIGHT icône de bulbe @ no__t-3 représente des actions rapides qui peuvent vous aider à corriger ou à refactoriser du code en ligne. L’ampoule représente des problèmes que vous *devez* corriger. Le tournevis est destiné aux problèmes que vous pouvez choisir de corriger. Utilisez le premier correctif suggéré pour résoudre cette erreur en cliquant sur **en utilisant System. Text** sur la gauche.
+Notez que cette erreur affiche une icône d’ampoule en bas à gauche. En plus de l’icône de tournevis ![icône de tournevis](../ide/media/screwdriver-icon.png), l’icône d’ampoule ![icône d’ampoule](../ide/media/light-bulb-icon.png) représente des actions rapides qui peuvent vous aider à corriger ou à refactoriser du code en ligne. L’ampoule représente des problèmes que vous *devez* corriger. Le tournevis est destiné aux problèmes que vous pouvez choisir de corriger. Utilisez le premier correctif suggéré pour résoudre cette erreur en cliquant sur **en utilisant System. Text** sur la gauche.
 
 ![Utiliser l’ampoule pour corriger le code](../debugger/media/write-better-code-missing-include.png)
 
 Lorsque vous cliquez sur cet élément, Visual Studio ajoute l’instruction `using System.Text` en haut du fichier *Program.cs* et le tilde rouge disparaît. (Lorsque vous n’êtes pas sûr de ce qu’il faut résoudre, choisissez le lien **aperçu des modifications** à droite avant d’appliquer le correctif.)
 
-L’erreur précédente est une erreur courante que vous résolvez généralement en ajoutant une nouvelle instruction `using` à votre code. Il existe plusieurs erreurs courantes similaires à celles-ci, telles que ```The type or namespace `Name` cannot be found.``` ces types d’erreurs peuvent indiquer une référence d’assembly manquante (cliquez avec le bouton droit sur le projet, choisissez **Ajouter**une**référence** > ), un nom mal orthographié ou une bibliothèque manquante dont vous avez besoin. pour ajouter (pour C#, cliquez avec le bouton droit sur le projet et choisissez **gérer les packages NuGet**).
+L’erreur précédente est une erreur courante que vous résolvez généralement en ajoutant une nouvelle `using` instruction à votre code. Il existe plusieurs erreurs courantes similaires à celles-ci, telles que les ```The type or namespace `Name` cannot be found.``` ces types d’erreurs peuvent indiquer une référence d’assembly manquant (cliquez avec le bouton droit sur le projet, choisissez **Ajouter** une **référence** > ), un nom mal orthographié ou une bibliothèque manquante C#que vous devez ajouter (pour, cliquez avec le bouton droit sur le projet et choisissez **gérer les packages NuGet**).
 
 ## <a name="fix-the-remaining-errors-and-warnings"></a>Corriger les erreurs et avertissements restants
 
@@ -200,9 +200,9 @@ Il y a quelques tildes à examiner dans ce code. Ici, vous voyez une erreur de c
 
 ![Erreur de conversion de type](../debugger/media/write-better-code-conversion-error.png)
 
-Étant donné que l’analyseur de code ne peut pas deviner votre intention, il n’y a pas d’ampoules pour vous aider. Pour corriger cette erreur, vous devez connaître l’objectif du code. Dans cet exemple, il n’est pas trop difficile de voir que `points` doit être une valeur numérique (entier), puisque vous essayez d’ajouter `points` à `totalpoints`.
+Étant donné que l’analyseur de code ne peut pas deviner votre intention, il n’y a pas d’ampoules pour vous aider. Pour corriger cette erreur, vous devez connaître l’objectif du code. Dans cet exemple, il n’est pas trop difficile de voir que `points` doit être une valeur numérique (entier), puisque vous essayez d’ajouter des `points` à `totalpoints`.
 
-Pour corriger cette erreur, modifiez le membre `points` de la classe `User` à partir de ce qui suit :
+Pour corriger cette erreur, modifiez le `points` membre de la classe `User` à partir de ce qui suit :
 
 ```csharp
 [DataMember]
@@ -247,7 +247,7 @@ Appuyez sur **F5** (**Déboguer > Démarrer le débogage**) ou sur le bouton **D
 
 ![Un SerializationException se produit](../debugger/media/write-better-code-serialization-exception.png)
 
-Le message d’erreur vous indique que la valeur `4o` ne peut pas être analysée en tant qu’entier. Ainsi, dans cet exemple, vous savez que les données sont incorrectes : `4o` doit être `40`. Toutefois, si vous n’avez pas le contrôle des données dans un scénario réel (par exemple, si vous les obtenez à partir d’un service Web), que faites-vous de votre part ? Comment résoudre ce problème ?
+Le message d’erreur vous indique que la valeur `4o` ne peut pas être analysée comme un entier. Ainsi, dans cet exemple, vous savez que les données sont incorrectes : `4o` doit être `40`. Toutefois, si vous n’avez pas le contrôle des données dans un scénario réel (par exemple, si vous les obtenez à partir d’un service Web), que faites-vous de votre part ? Comment résoudre ce problème ?
 
 Quand vous avez rencontré une exception, vous devez poser (et répondre) à quelques questions :
 
@@ -255,7 +255,7 @@ Quand vous avez rencontré une exception, vous devez poser (et répondre) à que
 
 * S’agit-il d’une exception que vos utilisateurs peuvent rencontrer ?
 
-Si c’est le premier, corrigez le bogue. (Dans l’exemple d’application, cela signifie corriger les données incorrectes.) S’il s’agit de ce dernier, vous devrez peut-être gérer l’exception dans votre code à l’aide d’un bloc `try/catch` (nous examinerons d’autres stratégies possibles dans la section suivante). Dans l’exemple d’application, remplacez le code suivant :
+Si c’est le premier, corrigez le bogue. (Dans l’exemple d’application, cela signifie corriger les données incorrectes.) S’il s’agit de ce dernier, vous devrez peut-être gérer l’exception dans votre code à l’aide d’un bloc de `try/catch` (nous examinons d’autres stratégies possibles dans la section suivante). Dans l’exemple d’application, remplacez le code suivant :
 
 ```csharp
 users = ser.ReadObject(ms) as User[];
@@ -275,13 +275,13 @@ catch (SerializationException)
 }
 ```
 
-Un bloc `try/catch` a un coût de performance. vous ne voudrez donc les utiliser que lorsque vous en avez vraiment besoin, c’est-à-dire, où (a) ils peuvent se produire dans la version Release de l’application, et où (b) la documentation de la méthode indique que vous devez vérifier l’exception (comme suming la documentation est terminée !). Dans de nombreux cas, vous pouvez gérer une exception de manière appropriée et l’utilisateur n’a jamais besoin de la connaître.
+Un bloc de `try/catch` a un coût de performance, donc vous ne souhaiterez les utiliser que lorsque vous en avez vraiment besoin, c’est-à-dire, où (a) ils peuvent se produire dans la version Release de l’application, et où (b) la documentation de la méthode indique que vous devez vérifier l’exception (en supposant que la documentation est terminée !). Dans de nombreux cas, vous pouvez gérer une exception de manière appropriée et l’utilisateur n’a jamais besoin de la connaître.
 
 Voici quelques conseils importants pour la gestion des exceptions :
 
 * Évitez d’utiliser un bloc catch vide, comme `catch (Exception) {}`, qui ne prend pas l’action appropriée pour exposer ou gérer une erreur. Un bloc catch vide ou non instructif peut masquer des exceptions et peut rendre votre code plus difficile à déboguer au lieu de le déboguer plus facilement.
 
-* Utilisez le bloc `try/catch` autour de la fonction spécifique qui lève l’exception (`ReadObject` dans l’exemple d’application). Si vous l’utilisez dans un plus grand segment de code, vous finissent par masquer l’emplacement de l’erreur. Par exemple, n’utilisez pas le bloc `try/catch` autour de l’appel à la fonction parent `ReadToObject`, indiqué ici, ou vous ne saurez pas exactement où l’exception s’est produite.
+* Utilisez le bloc `try/catch` autour de la fonction spécifique qui lève l’exception (`ReadObject`, dans l’exemple d’application). Si vous l’utilisez dans un plus grand segment de code, vous finissent par masquer l’emplacement de l’erreur. Par exemple, n’utilisez pas le bloc `try/catch` autour de l’appel à la fonction parente `ReadToObject`, indiqué ici, ou vous ne saurez pas exactement où l’exception s’est produite.
 
     ```csharp
     // Don't do this
@@ -296,17 +296,17 @@ Voici quelques conseils importants pour la gestion des exceptions :
 
 * Pour les fonctions non familières que vous incluez dans votre application, en particulier celles qui interagissent avec les données externes (par exemple, une requête Web), consultez la documentation pour connaître les exceptions susceptibles d’être levées par la fonction. Il peut s’agir d’informations essentielles pour gérer correctement les erreurs et pour déboguer votre application.
 
-Pour l’exemple d’application, corrigez le `SerializationException` dans la méthode `GetJsonData` en remplaçant `4o` par `40`.
+Pour l’exemple d’application, corrigez les `SerializationException` dans la méthode `GetJsonData` en remplaçant `4o` par `40`.
 
 ## <a name="clarify-your-code-intent-by-using-assert"></a>Clarifier votre intention de code à l’aide d’Assert
 
-Cliquez sur le bouton **Redémarrer** ![Redémarrer l’application](../debugger/media/dbg-tour-restart.png "RestartApp") dans la barre d’outils Débogage (**Ctrl** + **Maj** + **F5**). L’application est redémarrée en moins d’étapes. La sortie suivante s’affiche dans la fenêtre de console.
+Cliquez sur le bouton **Redémarrer** ![Redémarrer l’application](../debugger/media/dbg-tour-restart.png "RestartApp") dans la barre d’outils Débogage (**Ctrl** + **Maj**  + **F5**). L’application est redémarrée en moins d’étapes. La sortie suivante s’affiche dans la fenêtre de console.
 
 ![Valeur null dans la sortie](../debugger/media/write-better-code-using-assert-null-output.png)
 
 Vous pouvez voir quelque chose dans cette sortie qui n’est pas tout à fait correct. **Name** et **LastName** pour le troisième enregistrement sont vides.
 
-C’est un bon moment pour parler d’une pratique de codage utile, souvent sous-exploitée, qui consiste à utiliser des instructions `assert` dans vos fonctions. En ajoutant le code suivant, vous incluez une vérification à l’exécution pour vous assurer que `firstname` et que `lastname` ne sont pas `null`. Remplacez le code suivant dans la méthode `UpdateRecords` :
+C’est un bon moment pour parler d’une pratique de codage utile, souvent sous-exploitée, qui consiste à utiliser des instructions `assert` dans vos fonctions. En ajoutant le code suivant, vous incluez une vérification à l’exécution pour vous assurer que `firstname` et `lastname` ne sont pas `null`. Remplacez le code suivant dans la méthode `UpdateRecords` :
 
 ```csharp
 if (existingUser == false)
@@ -329,14 +329,14 @@ if (existingUser == false)
     user.lastname = users[i].lastname;
 ```
 
-En ajoutant des instructions `assert` comme celles-ci à vos fonctions pendant le processus de développement, vous pouvez vous aider à spécifier l’objectif de votre code. Dans l’exemple précédent, nous spécifions ce qui suit :
+En ajoutant `assert` instructions de ce type à vos fonctions pendant le processus de développement, vous pouvez vous aider à spécifier l’objectif de votre code. Dans l’exemple précédent, nous spécifions ce qui suit :
 
 * Une chaîne valide est requise pour le prénom
 * Une chaîne valide est requise pour le nom de famille
 
-En spécifiant l’intention de cette manière, vous appliquez vos exigences. Il s’agit d’une méthode simple et pratique que vous pouvez utiliser pour exposer des bogues pendant le développement. (les instructions `assert` sont également utilisées en tant qu’élément principal dans les tests unitaires.)
+En spécifiant l’intention de cette manière, vous appliquez vos exigences. Il s’agit d’une méthode simple et pratique que vous pouvez utiliser pour exposer des bogues pendant le développement. (les instructions`assert` sont également utilisées en tant qu’élément principal dans les tests unitaires.)
 
-Cliquez sur le bouton **Redémarrer** ![Redémarrer l’application](../debugger/media/dbg-tour-restart.png "RestartApp") dans la barre d’outils Débogage (**Ctrl** + **Maj** + **F5**).
+Cliquez sur le bouton **Redémarrer** ![Redémarrer l’application](../debugger/media/dbg-tour-restart.png "RestartApp") dans la barre d’outils Débogage (**Ctrl** + **Maj**  + **F5**).
 
 > [!NOTE]
 > Le code `assert` est actif uniquement dans une version Debug.
@@ -345,10 +345,10 @@ Lorsque vous redémarrez, le débogueur s’arrête sur l’instruction `assert`
 
 ![L’assertion est résolue en false](../debugger/media/write-better-code-using-assert.png)
 
-L’erreur `assert` vous indique qu’il y a un problème que vous devez examiner. `assert` peut couvrir de nombreux scénarios dans lesquels vous ne voyez pas nécessairement une exception. Dans cet exemple, l’utilisateur ne voit pas d’exception et une valeur `null` est ajoutée en tant que `firstname` dans votre liste d’enregistrements. Cela peut entraîner des problèmes plus tard (comme vous pouvez le voir dans la sortie de la console) et peut être plus difficile à déboguer.
+Le `assert` erreur vous indique qu’il y a un problème que vous devez examiner. `assert` peut couvrir de nombreux scénarios dans lesquels vous ne voyez pas nécessairement une exception. Dans cet exemple, l’utilisateur ne voit pas d’exception et une valeur `null` est ajoutée en tant que `firstname` dans votre liste d’enregistrements. Cela peut entraîner des problèmes plus tard (comme vous pouvez le voir dans la sortie de la console) et peut être plus difficile à déboguer.
 
 > [!NOTE]
-> Dans les scénarios où vous appelez une méthode sur la valeur `null`, les résultats `NullReferenceException`. Normalement, vous souhaitez éviter d’utiliser un bloc `try/catch` pour une exception générale, autrement dit, une exception qui n’est pas liée à la fonction de bibliothèque spécifique. Tout objet peut lever une `NullReferenceException`. Si vous n’êtes pas sûr, consultez la documentation relative à la fonction de bibliothèque.
+> Dans les scénarios où vous appelez une méthode sur la valeur `null`, un `NullReferenceException` résultats. Normalement, vous souhaitez éviter d’utiliser un bloc de `try/catch` pour une exception générale, autrement dit, une exception qui n’est pas liée à la fonction de bibliothèque spécifique. Tout objet peut lever une `NullReferenceException`. Si vous n’êtes pas sûr, consultez la documentation relative à la fonction de bibliothèque.
 
 Pendant le processus de débogage, il est préférable de conserver une instruction `assert` particulière jusqu’à ce que vous sachiez que vous devez la remplacer par un correctif de code réel. Supposons que vous décidiez que l’utilisateur peut rencontrer l’exception dans une version Release de l’application. Dans ce cas, vous devez refactoriser le code pour vous assurer que votre application ne lève pas d’exception fatale ou qu’une autre erreur se produit. Par conséquent, pour corriger ce code, remplacez le code suivant :
 
@@ -366,9 +366,9 @@ if (existingUser == false && users[i].firstname != null && users[i].lastname != 
     User user = new User();
 ```
 
-En utilisant ce code, vous répondez à vos besoins en matière de code et vous vous assurez qu’un enregistrement avec une valeur `firstname` ou `lastname` de `null` n’est pas ajouté aux données.
+En utilisant ce code, vous répondez à vos besoins en matière de code et vous vous assurez qu’un enregistrement avec une `firstname` ou `lastname` valeur de `null` n’est pas ajouté aux données.
 
-Dans cet exemple, nous avons ajouté les deux instructions `assert` à l’intérieur d’une boucle. En général, lors de l’utilisation de `assert`, il est préférable d’ajouter des instructions `assert` au point d’entrée (à partir de) d’une fonction ou d’une méthode. Vous examinez actuellement la méthode `UpdateRecords` dans l’exemple d’application. Dans cette méthode, vous savez que vous rencontrez des problèmes si l’un des arguments de méthode est `null`, vérifiez-les tous deux avec une instruction `assert` au niveau du point d’entrée de la fonction.
+Dans cet exemple, nous avons ajouté les deux instructions `assert` à l’intérieur d’une boucle. En général, lors de l’utilisation de `assert`, il est préférable d’ajouter des instructions `assert` au point d’entrée (à partir de) d’une fonction ou d’une méthode. Vous examinez actuellement la méthode `UpdateRecords` dans l’exemple d’application. Dans cette méthode, vous savez que vous rencontrez des problèmes si l’un des arguments de méthode est `null`, donc vérifiez-les tous deux avec une instruction `assert` au niveau du point d’entrée de la fonction.
 
 ```csharp
 public static void UpdateRecords(List<User> db, User[] users)
@@ -377,9 +377,9 @@ public static void UpdateRecords(List<User> db, User[] users)
     Debug.Assert(users != null);
 ```
 
-Pour les instructions précédentes, votre objectif est que vous chargez des données existantes (`db`) et récupériez de nouvelles données (`users`) avant de mettre à jour quoi que ce soit.
+Pour les instructions précédentes, votre objectif est de charger les données existantes (`db`) et de récupérer les nouvelles données (`users`) avant de mettre à jour quoi que ce soit.
 
-Vous pouvez utiliser `assert` avec n’importe quel type d’expression qui correspond à `true` ou `false`. Par exemple, vous pouvez ajouter une instruction `assert` comme celle-ci.
+Vous pouvez utiliser `assert` avec n’importe quel type d’expression résolu en `true` ou `false`. Par exemple, vous pouvez ajouter une instruction `assert` comme celle-ci.
 
 ```csharp
 Debug.Assert(users[0].points > 0);
@@ -405,7 +405,7 @@ Pour savoir comment utiliser les fonctionnalités essentielles du débogueur, co
 
 Les bogues d’un autre genre incluent du code inefficace qui entraîne un ralentissement de l’exécution de votre application ou l’utilisation d’une trop grande quantité de mémoire. En général, l’optimisation des performances est une opération que vous effectuez plus tard dans le développement de vos applications. Toutefois, vous pouvez rencontrer des problèmes de performances plus tôt (par exemple, vous constatez que certaines parties de votre application s’exécutent lentement) et vous devrez peut-être tester votre application avec les outils de profilage au début. Pour plus d’informations sur les outils de profilage, tels que l’outil utilisation de l’UC et l’analyseur de mémoire, consultez [tout d’abord les outils de profilage](../profiling/profiling-feature-tour.md).
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 Dans cet article, vous avez appris comment éviter et résoudre de nombreux bogues courants dans votre code et quand utiliser le débogueur. Ensuite, en savoir plus sur l’utilisation du débogueur Visual Studio pour corriger les bogues.
 

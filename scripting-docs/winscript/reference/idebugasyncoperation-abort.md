@@ -1,5 +1,5 @@
 ---
-title: 'IDebugAsyncOperation :: Abort | Microsoft Docs'
+title: IDebugAsyncOperation::Abort | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -39,7 +39,7 @@ HRESULT Abort();
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|valeur|Description|  
+|Valeur|Description|  
 |-----------|-----------------|  
 |S_OK|La méthode a réussi.|  
 |E_NOTIMPL|Les opérations ne peuvent pas être annulées.|  
@@ -48,6 +48,6 @@ HRESULT Abort();
  Cette méthode est généralement appelée à partir du thread du débogueur pour annuler une opération qui ne répond pas. Cette méthode provoque l’appel de la méthode `InProgressAbort` sur l’objet `IDebugSyncOperation`.  
   
 ## <a name="see-also"></a>Voir aussi  
- @No__t_1 de l' [interface IDebugAsyncOperation](../../winscript/reference/idebugasyncoperation-interface.md)  
- [IDebugAsyncOperation :: Start](../../winscript/reference/idebugasyncoperation-start.md)    
+   de l' [interface IDebugAsyncOperation](../../winscript/reference/idebugasyncoperation-interface.md)  
+ [IDebugAsyncOperation::Start](../../winscript/reference/idebugasyncoperation-start.md)   
  [IDebugSyncOperation::InProgressAbort](../../winscript/reference/idebugsyncoperation-inprogressabort.md)

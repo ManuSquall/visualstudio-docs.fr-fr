@@ -26,15 +26,15 @@ L’analyse du code managé analyse les assemblys managés et fournit des inform
 L'outil d'analyse représente les contrôles effectués lors d'une analyse comme messages d'avertissement. Les messages d'avertissement identifient les problèmes de programmation et de conception pertinents et, si possible, fournissent des informations relatives à leur résolution.
 
 > [!NOTE]
-> L’analyse héritée (analyse statique du code) n’est pas prise en charge pour les projets .NET Core et .NET Standard dans Visual Studio. Si vous exécutez l’analyse du code sur un projet .NET Core ou .NET Standard dans le cadre de MSBuild, vous verrez une erreur semblable à **error : CA0055 : Impossible d’identifier la plateforme pour @no__t -0your. dll >** . Pour analyser du code dans des projets .NET Core ou .NET Standard, utilisez à la place des [analyseurs de code](../code-quality/roslyn-analyzers-overview.md) .
+> L’analyse héritée (analyse statique du code) n’est pas prise en charge pour les projets .NET Core et .NET Standard dans Visual Studio. Si vous exécutez l’analyse du code sur un projet .NET Core ou .NET Standard dans le cadre de MSBuild, vous verrez une erreur semblable à **Error : CA0055 : impossible d’identifier la plateforme pour \<votre >. dll**. Pour analyser du code dans des projets .NET Core ou .NET Standard, utilisez à la place des [analyseurs de code](../code-quality/roslyn-analyzers-overview.md) .
 
 ## <a name="ide-integrated-development-environment-integration"></a>Intégration de l’IDE (environnement de développement intégré)
 
 Vous pouvez exécuter l’analyse du code sur votre projet manuellement ou automatiquement.
 
-Pour exécuter l’analyse du code chaque fois que vous générez un projet, sélectionnez l’option sur la page de propriétés **analyse du code** du projet. Pour plus d'informations, voir [Procédure : Activer et désactiver l’analyse du code automatique](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
+Pour exécuter l’analyse du code chaque fois que vous générez un projet, sélectionnez l’option sur la page de propriétés **analyse du code** du projet. Pour plus d’informations, consultez [Comment : activer et désactiver l’analyse du code automatique](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md).
 
-Pour exécuter l’analyse du code manuellement sur un projet, dans la barre de menus, choisissez **analyser** > **exécuter l’analyse du code** >  exécuter l'**analyse du code sur @no__t > 5project**.
+Pour exécuter l’analyse du code manuellement sur un projet, dans la barre de menus, choisissez **analyser** > **exécuter l’analyse du code** > exécuter l' **analyse du code sur \<> de projet**.
 
 ## <a name="rule-sets"></a>Ensembles de règles
 
@@ -90,4 +90,4 @@ Vous pouvez utiliser les fonctionnalités intégrées du système de génératio
 
 - [Vue d’ensemble des analyseurs basés sur .NET Compiler Platform](../code-quality/roslyn-analyzers-overview.md)
 - [Utilisation d’ensembles de règles pour regrouper des règles d’analyse du code](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)
-- [Guide pratique pour Activer et désactiver l’analyse du code automatique](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)
+- [Guide pratique pour activer et désactiver l’analyse du code automatique](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)

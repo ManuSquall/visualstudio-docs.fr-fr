@@ -61,7 +61,7 @@ Le code XML suivant est le modèle d’extrait de code de base :
 
 4. Ajoutez le code de l’extrait de code dans la section **CDATA** de l’élément **Code**.
 
-   Pour C# :
+   Pour C# :
 
    ```xml
    <Code Language="CSharp">

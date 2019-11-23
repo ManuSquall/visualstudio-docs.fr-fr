@@ -28,7 +28,7 @@ Pour qu’un package d’extension soit créé à partir de Visual Studio pour M
 L’avantage de cette conception modulaire est que Visual Studio pour Mac est extensible : il existe de nombreux points d’extension sur lesquels peuvent être créés des packages d’extension personnalisés. La prise en charge de C# et de F#, des outils de débogage et des modèles de projet sont des exemples de packages d’extension existants.
 
 > [!NOTE]
-> Si vous avez un projet de création de compléments qui a été créé avant Add-in Maker 1,2, vous devez migrer votre projet comme indiqué dans les étapes [ci-dessous](https://mhut.ch/addinmaker/1.2).
+> Si vous avez un projet Add-in Maker créé avant Add-in Maker 1.2, vous devez migrer votre projet comme indiqué dans les étapes décrites [ici](https://mhut.ch/addinmaker/1.2).
 
 <!---The [Walkthrough](~/extending-visual-studio-mac-walkthrough.md) topic explains how to build an extension package that uses a *Command* to insert the date and time into an open text document.--->
 
@@ -155,7 +155,7 @@ Pour plus d’informations sur l’étendue de ce qui peut faire l’objet de d�
 * Versions cibles de .NET Framework
 * Runtime cible
 * Back-ends de système de contrôle de version
-* Refactoring
+* Refactorisation
 * Gestionnaires d’exécution
 * Mise en surbrillance de la syntaxe
 

@@ -100,7 +100,7 @@ Une fois que vous avez sélectionné votre modèle de projet Visual Basic et nom
 
      ![Cliquer sur la boîte à outils pour ouvrir la fenêtre Boîte à outils](../ide/media/vb-toolbox-toolwindow.png)
 
-     (Si vous ne voyez pas la fenêtre volante **Boîte à outils**, ouvrez-la à partir de la barre de menus. Pour ce faire, **Affichez**la**boîte à outils** > . Vous pouvez aussi appuyer sur **Ctrl**+**Alt**+**X**.)
+     (Si vous ne voyez pas la fenêtre volante **Boîte à outils**, ouvrez-la à partir de la barre de menus. Pour ce faire, **affichez** > **boîte à outils**. Vous pouvez aussi appuyer sur **Ctrl**+**Alt**+**X**.)
 
 1. Cliquez sur l’icône **Épingler** pour ancrer la fenêtre **Boîte à outils**.
 
@@ -137,7 +137,7 @@ Maintenant que nous avons ajouté un contrôle bouton pour créer une action, no
 
       (Vous pouvez également développer **Form1.vb** dans **Explorateur de solutions**, puis cliquer sur **Form1**.)
 
-1. Dans la fenêtre **Form1. vb** , entre les sous-lignes **Private Sub** et **End** , tapez ou entrez `lblHelloWorld.Text = "Hello World!"`, comme indiqué dans la capture d’écran suivante :
+1. Dans la fenêtre **Form1. vb** , entre les sous-lignes **Private Sub** et **End** , tapez ou entrez `lblHelloWorld.Text = "Hello World!"` comme indiqué dans la capture d’écran suivante :
 
      ![Ajouter du code au formulaire](../ide/media/vb-add-code-to-the-form.png)
 
@@ -155,12 +155,12 @@ Maintenant que nous avons ajouté un contrôle bouton pour créer une action, no
 
 1. Fermez la boîte de dialogue **Form1** pour arrêter l’exécution de l’application.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 Pour en savoir plus, passez au tutoriel suivant :
 
 > [!div class="nextstepaction"]
-> [Tutoriel : Créer une visionneuse d’images @ no__t-0
+> [Didacticiel : créer une visionneuse d’images](tutorial-1-create-a-picture-viewer.md)
 
 ## <a name="see-also"></a>Voir aussi
 
