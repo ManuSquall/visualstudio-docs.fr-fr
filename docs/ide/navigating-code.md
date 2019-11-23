@@ -1,6 +1,6 @@
 ---
 title: Commandes de navigation dans le code
-ms.date: 08/14/2018
+ms.date: 11/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - code editor, navigation
@@ -13,17 +13,17 @@ helpviewer_keywords:
 - peek definition
 - go to line
 - go to
-author: jillre
-ms.author: jillfra
-manager: jillfra
+author: mikadumont
+ms.author: midumont
+manager: tglee
 ms.workload:
 - multiple
-ms.openlocfilehash: f1fcfd69e2de9a174c708da1c4f5eaedd397722e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f5348fc0c36435e5760f3967a7e6c9be2aecb1b7
+ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667015"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74316468"
 ---
 # <a name="navigate-code"></a>Naviguer dans le code
 
@@ -82,7 +82,7 @@ L’option Atteindre propose les commandes suivantes, disponibles dans le menu *
 
 - **Atteindre le fichier** (**Ctrl**+**1**, **Ctrl**+**F**) : accéder au fichier spécifié dans la solution.
 
-- **Accédez au fichier récent** (**CTRL** +**1**, **CTRL** +**R**) : accéder au fichier spécifié et visité récemment dans la solution.
+- **Go To Recent File** (**Ctrl**+**1**, **Ctrl**+**R**): Move to the specified, recently visited file in the solution.
 
 - **Atteindre le type** (**Ctrl**+**1**, **Ctrl**+**T**) : accéder au type spécifié dans la solution.
 
@@ -124,6 +124,15 @@ Entrée | Fonction
 ------------ | ---
 **Clavier** | Placez le curseur de texte à l’intérieur du nom de type, puis appuyez sur **Ctrl**+**F12**
 **Souris** | Cliquez avec le bouton droit sur le nom de type et sélectionnez **Accéder à l’implémentation**.
+
+## <a name="go-to-base"></a>Go To Base
+
+Using Go To Base, you can navigate up the inheritance chain of the selected element. If there are multiple results, you will see them listed in the **Go To Base** window:
+
+Entrée | Fonction
+------------ | ---
+**Clavier** | Place your text cursor somewhere inside the type name, and press **Alt**+**Home**
+**Souris** | Right-click on the type name and select **Go To Base**
 
 ## <a name="call-hierarchy"></a>Hiérarchie d'appels
 
