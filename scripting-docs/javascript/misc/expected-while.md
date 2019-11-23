@@ -29,5 +29,5 @@ Vous n’avez pas inclus la condition `while` dans une boucle `do...while`. Une 
 - Incluez l’instruction de test `while` après l’accolade fermante.  
   
 ## <a name="see-also"></a>Voir aussi  
- [instruction while](../../javascript/reference/while-statement-javascript.md)    
+ [instruction while](../../javascript/reference/while-statement-javascript.md)   
  [Contrôle du flux de programme](../../javascript/controlling-program-flow-javascript.md)

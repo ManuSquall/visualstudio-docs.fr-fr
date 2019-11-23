@@ -1,5 +1,5 @@
 ---
-title: 'IMachineDebugManagerCookie :: RemoveApplication | Microsoft Docs'
+title: IMachineDebugManagerCookie::RemoveApplication | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -46,7 +46,7 @@ HRESULT RemoveApplication(
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|valeur|Description|  
+|Valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
@@ -54,6 +54,6 @@ HRESULT RemoveApplication(
  Cette méthode est appelée par le gestionnaire de débogage de processus chaque fois que `IProcessDebugManager::RemoveApplication` est appelée.  
   
 ## <a name="see-also"></a>Voir aussi  
- [IMachineDebugManagerCookie :: AddApplication](../../winscript/reference/imachinedebugmanagercookie-addapplication.md)    
- @No__t_1 de l' [interface IMachineDebugManagerCookie](../../winscript/reference/imachinedebugmanagercookie-interface.md)  
+ [IMachineDebugManagerCookie::AddApplication](../../winscript/reference/imachinedebugmanagercookie-addapplication.md)   
+   de l' [interface IMachineDebugManagerCookie](../../winscript/reference/imachinedebugmanagercookie-interface.md)  
  [IProcessDebugManager::RemoveApplication](../../winscript/reference/iprocessdebugmanager-removeapplication.md)

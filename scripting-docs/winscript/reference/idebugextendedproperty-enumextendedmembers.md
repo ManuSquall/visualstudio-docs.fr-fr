@@ -1,5 +1,5 @@
 ---
-title: 'IDebugExtendedProperty :: EnumExtendedMembers | Microsoft Docs'
+title: IDebugExtendedProperty::EnumExtendedMembers | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -39,7 +39,7 @@ HRESULT EnumExtendedMembers(
   
 #### <a name="parameters"></a>Paramètres  
  `dwFieldSpec`  
- dans Spécifie les constantes EX_DBGPROP_INFO_FLAGS qui déterminent les champs dans les structures de propriété de débogage étendue énumérées qui doivent être renseignées.  
+ dans Spécifie les constantes de EX_DBGPROP_INFO_FLAGS qui déterminent les champs dans les structures de propriété de débogage étendue énumérées qui doivent être renseignées.  
   
  `nRadix`  
  dans Base à utiliser pour interpréter toutes les informations numériques.  
@@ -48,9 +48,9 @@ HRESULT EnumExtendedMembers(
  à Retourne l’interface `IEnumDebugExtendedPropertyInfo` qui énumère les propriétés de membre.  
   
 ## <a name="return-value"></a>Valeur de retour  
- Retourne un `HRESULT` valide, généralement `S_OK`.  
+ Retourne un `HRESULT`valide, généralement `S_OK`.  
   
 ## <a name="see-also"></a>Voir aussi  
- @No__t_1 de l' [interface IDebugExtendedProperty](../../winscript/reference/idebugextendedproperty-interface.md)  
- [EX_DBGPROP_INFO_FLAGS](../../winscript/reference/ex-dbgprop-info-flags.md)    
+   de l' [interface IDebugExtendedProperty](../../winscript/reference/idebugextendedproperty-interface.md)  
+ [EX_DBGPROP_INFO_FLAGS](../../winscript/reference/ex-dbgprop-info-flags.md)   
  [Structure ExtendedDebugPropertyInfo](../../winscript/reference/extendeddebugpropertyinfo-structure.md)

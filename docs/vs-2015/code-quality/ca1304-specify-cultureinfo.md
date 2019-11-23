@@ -1,5 +1,5 @@
 ---
-title: 'CA1304 : Spécifier CultureInfo | Microsoft Docs'
+title: 'CA1304 : spécifier CultureInfo | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -72,10 +72,10 @@ ms.locfileid: "72661470"
 
  Cet exemple produit la sortie suivante.
 
- **6/4/1900 12:15:12 PM** 
+ **6/4/1900 12:15:12 PM**
 **06/04/1900 12:15:12**
 ## <a name="related-rules"></a>Règles associées
- [CA1305 : Spécifier IFormatProvider ](../code-quality/ca1305-specify-iformatprovider.md)
+ [CA1305 : Spécifier IFormatProvider](../code-quality/ca1305-specify-iformatprovider.md)
 
 ## <a name="see-also"></a>Voir aussi
- [NIB : Utilisation de la classe CultureInfo ](https://msdn.microsoft.com/d4329e34-64c3-4d1e-8c73-5b0ee626ba7a)
+ [PLUME : utilisation de la classe CultureInfo](https://msdn.microsoft.com/d4329e34-64c3-4d1e-8c73-5b0ee626ba7a)

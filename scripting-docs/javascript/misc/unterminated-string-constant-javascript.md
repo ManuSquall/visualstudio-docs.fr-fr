@@ -32,5 +32,5 @@ Vous n’avez pas terminé la constante de chaîne avec un guillemet fermant. Le
 - Ajoutez le guillemet fermant à la fin de la chaîne.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Objet String](../../javascript/reference/string-object-javascript.md)    
+ [Objet String](../../javascript/reference/string-object-javascript.md)   
  [Méthode toString (Object)](../../javascript/reference/tostring-method-object-javascript.md)

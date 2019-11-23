@@ -82,7 +82,7 @@ Commencez par créer un projet d’application web Node.js.
 
 1. Ouvrez Visual Studio.
 
-1. Créer un nouveau projet.
+1. Créez un nouveau projet.
 
     ::: moniker range=">=vs-2019"
     Appuyez sur **Échap** pour fermer la fenêtre de démarrage. Tapez **Ctrl+Q** pour ouvrir la zone de recherche, tapez **Node.js**, puis choisissez **Application web Node.js vide** (JavaScript). Dans la boîte de dialogue qui apparaît, choisissez **Créer**.
@@ -414,7 +414,7 @@ Pour ce scénario, utilisez Chrome.
 
     `msedge --remote-debugging-port=9222`
 
-    Ni
+    ni
 
     `chrome.exe --remote-debugging-port=9222`
     ::: moniker-end
@@ -478,7 +478,7 @@ Pour ce scénario, utilisez Chrome.
 5. Dans la boîte de dialogue **attacher au processus** , récupérez une liste filtrée des instances de navigateur auxquelles vous pouvez attacher.
 
     ::: moniker range=">=vs-2019"
-    Dans Visual Studio 2019, choisissez le débogueur approprié pour votre navigateur cible, **JavaScript (chrome)** ou **JavaScript (Microsoft Edge-chrome)** dans le champ **attacher à** , tapez **chrome** ou **bord** dans la zone de filtre pour filtrer résultats de la recherche.
+    Dans Visual Studio 2019, choisissez le débogueur approprié pour votre navigateur cible, **JavaScript (chrome)** ou **JavaScript (Microsoft Edge-chrome)** dans le champ **attacher à** , tapez **chrome** ou **bord** dans la zone de filtre pour filtrer les résultats de la recherche.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Dans Visual Studio 2017, choisissez **code WebKit** dans le champ **attacher à** , tapez **chrome** dans la zone de filtre pour filtrer les résultats de la recherche.
@@ -518,7 +518,7 @@ Pour ce scénario, utilisez Chrome.
 
    * Si vous devez vous arrêter dans le code dans *app-bundle. js* et que vous ne pouvez pas le faire, supprimez le fichier de mappage source, *app-bundle. js. map*.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 > [!div class="nextstepaction"]
 > [Déployer l’application sur Linux App Service](../javascript/publish-nodejs-app-azure.md)

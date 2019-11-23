@@ -31,5 +31,5 @@ Vous avez utilisé le bloc **try** de gestion des exceptions, mais n’avez pas 
 - Essayez d’utiliser un bloc **finally** au lieu d’un bloc **catch** .  
   
 ## <a name="see-also"></a>Voir aussi  
- [essayer... catch... Finally, instruction](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)    
+ [essayer... catch... Finally, instruction](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)   
  [Objet Error](../../javascript/reference/error-object-javascript.md)

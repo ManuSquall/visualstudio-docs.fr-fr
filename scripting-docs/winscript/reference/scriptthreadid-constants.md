@@ -35,17 +35,17 @@ typedef DWORD SCRIPTTHREADID;
   
 ## <a name="constants"></a>Constantes  
   
-|Constante|valeur|Signification|  
+|Constante|Valeur|Signification|  
 |--------------|-----------|-------------|  
 |SCRIPTTHREADID_CURRENT|0xFFFFFFFD|Thread en cours d’exécution.|  
 |SCRIPTTHREADID_BASE|0xFFFFFFFE|Thread de base ; autrement dit, le thread dans lequel le moteur de script a été instancié.|  
 |SCRIPTTHREADID_ALL|Égale|Tous les threads.|  
   
 ## <a name="remarks"></a>Notes  
- Le type de `SCRIPTTHREADID` est utilisé par `IActiveScript::GetCurrentScriptThreadID`, `IActiveScript::GetScriptThreadID`, `IActiveScript::GetScriptThreadState` et `IActiveScript::InterruptScriptThread`, mais les constantes ne peuvent être utilisées que par `IActiveScript::GetScriptThreadState` et `IActiveScript::InterruptScriptThread`.  
+ Le type de `SCRIPTTHREADID` est utilisé par `IActiveScript::GetCurrentScriptThreadID`, `IActiveScript::GetScriptThreadID`, `IActiveScript::GetScriptThreadState`et `IActiveScript::InterruptScriptThread`, mais les constantes ne peuvent être utilisées que par `IActiveScript::GetScriptThreadState` et `IActiveScript::InterruptScriptThread`.  
   
 ## <a name="see-also"></a>Voir aussi  
- [IActiveScript :: GetCurrentScriptThreadID](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md)    
- [IActiveScript :: GetScriptThreadID](../../winscript/reference/iactivescript-getscriptthreadid.md)    
- [IActiveScript :: GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md)    
+ [IActiveScript::GetCurrentScriptThreadID](../../winscript/reference/iactivescript-getcurrentscriptthreadid.md)   
+ [IActiveScript::GetScriptThreadID](../../winscript/reference/iactivescript-getscriptthreadid.md)   
+ [IActiveScript::GetScriptThreadState](../../winscript/reference/iactivescript-getscriptthreadstate.md)   
  [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)

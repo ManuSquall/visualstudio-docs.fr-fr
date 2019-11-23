@@ -1,5 +1,5 @@
 ---
-title: 'IDebugApplication :: HandleRuntimeError | Microsoft Docs'
+title: IDebugApplication::HandleRuntimeError | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -58,7 +58,7 @@ HRESULT HandleRuntimeError(
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|valeur|Description|  
+|Valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
@@ -69,8 +69,8 @@ HRESULT HandleRuntimeError(
 > Dans l’erreur d’exécution, le moteur de langage peut être appelé par le thread pour effectuer des tâches telles que l’énumération des frames de pile ou l’évaluation des expressions.  
   
 ## <a name="see-also"></a>Voir aussi  
- @No__t_1 de l' [interface IDebugApplication](../../winscript/reference/idebugapplication-interface.md)  
- @No__t_1 de l' [interface IActiveScriptErrorDebug](../../winscript/reference/iactivescripterrordebug-interface.md)  
- [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)    
- @No__t_1 de l' [énumération BREAKRESUMEACTION](../../winscript/reference/breakresumeaction-enumeration.md)  
+   de l' [interface IDebugApplication](../../winscript/reference/idebugapplication-interface.md)  
+   de l' [interface IActiveScriptErrorDebug](../../winscript/reference/iactivescripterrordebug-interface.md)  
+ [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)   
+   de l' [énumération BREAKRESUMEACTION](../../winscript/reference/breakresumeaction-enumeration.md)  
  [Énumération ERRORRESUMEACTION](../../winscript/reference/errorresumeaction-enumeration.md)

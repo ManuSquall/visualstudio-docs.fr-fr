@@ -55,7 +55,7 @@ Vous allez d’abord créer un projet d’application web Vue.js.
 
 1. Ouvrez Visual Studio.
 
-1. Créer un nouveau projet.
+1. Créez un nouveau projet.
 
     ::: moniker range=">=vs-2019"
     Appuyez sur **Échap** pour fermer la fenêtre de démarrage. Tapez **Ctrl+Q** pour ouvrir la zone de recherche, tapez **Basic Vue.js**, puis choisissez **Application web Vue.js de base** (JavaScript ou TypeScript). Dans la boîte de dialogue qui s’affiche, tapez le nom **basic-vuejs**, puis choisissez **Créer**.
@@ -131,7 +131,7 @@ Vous allez d’abord créer un projet d’application web Vue.js.
 
 Félicitations ! Vous avez terminé ce guide de démarrage rapide. Nous espérons que vous en avez appris un peu plus sur l’utilisation de l’IDE de Visual Studio avec Vue.js. Si vous souhaitez en savoir plus sur ses fonctionnalités, poursuivez avec l’un des tutoriels de la section **Tutoriels** dans la table des matières.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 - Suivre le [tutoriel pour Node.js et Express](tutorial-nodejs.md)
 - Suivre le [tutoriel pour Node.js et React](tutorial-nodejs-with-react-and-jsx.md)

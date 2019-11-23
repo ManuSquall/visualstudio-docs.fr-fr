@@ -1,5 +1,5 @@
 ---
-title: 'IDebugDocumentHelper :: init | Microsoft Docs'
+title: IDebugDocumentHelper::Init | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -54,7 +54,7 @@ HRESULT Init(
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|valeur|Description|  
+|Valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
@@ -64,6 +64,6 @@ HRESULT Init(
  Ce document n’apparaît pas dans l’arborescence tant que `IDebugDocumentHelper::Attach` n’est pas appelé.  
   
 ## <a name="see-also"></a>Voir aussi  
- [IDebugDocumentHelper :: Attach](../../winscript/reference/idebugdocumenthelper-attach.md)    
- @No__t_1 de l' [interface IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)  
+ [IDebugDocumentHelper::Attach](../../winscript/reference/idebugdocumenthelper-attach.md)   
+   de l' [interface IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)  
  [Constantes TEXT_DOC_ATTR](../../winscript/reference/text-doc-attr-constants.md)

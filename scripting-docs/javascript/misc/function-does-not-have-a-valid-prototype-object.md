@@ -22,12 +22,12 @@ ms.lasthandoff: 10/18/2019
 ms.locfileid: "72574602"
 ---
 # <a name="function-does-not-have-a-valid-prototype-object"></a>La fonction ne possède pas d'objet prototype valide
-Vous avez tenté d’utiliser **instanceof** pour déterminer si un objet a été dérivé d’une classe de fonction particulière, mais vous avez redéfini la propriété `prototype` de l’objet en tant que `null` ou en tant que type d’objet externe (à la fois les objets non valides [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]). Un objet externe peut être un objet du modèle objet hôte (par exemple, l’objet document ou fenêtre d’Internet Explorer) ou un objet COM externe.  
+Vous avez tenté d’utiliser **instanceof** pour déterminer si un objet a été dérivé d’une classe de fonction particulière, mais vous avez redéfini la propriété `prototype` de l’objet en tant que `null`ou en tant que type d’objet externe (à la fois les objets non valides [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]). Un objet externe peut être un objet du modèle objet hôte (par exemple, l’objet document ou fenêtre d’Internet Explorer) ou un objet COM externe.  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
 - Vérifiez que la propriété `prototype` de la fonction fait référence à un objet [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] valide.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Objet de fonction](../../javascript/reference/function-object-javascript.md)    
+ [Objet de fonction](../../javascript/reference/function-object-javascript.md)   
  [Propriété prototype (Object)](../../javascript/reference/prototype-property-object-javascript.md)

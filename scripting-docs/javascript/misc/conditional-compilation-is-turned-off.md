@@ -37,8 +37,8 @@ Vous avez tenté d’utiliser une variable de compilation conditionnelle sans ac
     ```  
   
 ## <a name="see-also"></a>Voir aussi  
- @No__t_1 de [compilation conditionnelle](../../javascript/advanced/conditional-compilation-javascript.md)  
- [Variables de compilation conditionnelle](../../javascript/advanced/conditional-compilation-variables-javascript.md)    
- [instruction @cc_on](../../javascript/reference/at-cc-on-statement-javascript.md)    
- [instruction @if](../../javascript/reference/at-if-statement-javascript.md)    
+   de [compilation conditionnelle](../../javascript/advanced/conditional-compilation-javascript.md)  
+ [Variables de compilation conditionnelle](../../javascript/advanced/conditional-compilation-variables-javascript.md)   
+ [instruction@cc_on](../../javascript/reference/at-cc-on-statement-javascript.md)   
+ [instruction@if](../../javascript/reference/at-if-statement-javascript.md)   
  [@set Instruction](../../javascript/reference/at-set-statement-javascript.md)

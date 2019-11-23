@@ -1,5 +1,5 @@
 ---
-title: 'IDebugExpression :: Start | Microsoft Docs'
+title: IDebugExpression::Start | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -42,7 +42,7 @@ HRESULT Start(
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|valeur|Description|  
+|Valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
@@ -50,5 +50,5 @@ HRESULT Start(
  Cette méthode commence l’évaluation de l’expression.  
   
 ## <a name="see-also"></a>Voir aussi  
- [IDebugExpression :: Abort](../../winscript/reference/idebugexpression-abort.md)    
+ [IDebugExpression::Abort](../../winscript/reference/idebugexpression-abort.md)   
  [Interface IDebugExpression](../../winscript/reference/idebugexpression-interface.md)

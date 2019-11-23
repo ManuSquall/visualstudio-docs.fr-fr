@@ -1,5 +1,5 @@
 ---
-title: 'IActiveScriptProfilerControl2 :: CompleteProfilerStart | Microsoft Docs'
+title: IActiveScriptProfilerControl2::CompleteProfilerStart | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -47,5 +47,5 @@ HRESULT CompleteProfilerStart();
  L’appel de `IActiveScriptProfilerControl2::CompleteProfilerStart` garantit que les événements des fonctions qui se trouvent déjà dans la pile des appels sont envoyés. Cette méthode doit être appelée après le démarrage du profilage sur tout moteur de script qui se trouve sous l’onglet actuel. La méthode peut être appelée pour tout moteur de script.  
   
 ## <a name="see-also"></a>Voir aussi  
- [IActiveScriptProfilerControl2 ::P repareprofilerstop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md)    
+ [IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md)   
  [Interface IActiveScriptProfilerControl2](../../winscript/reference/iactivescriptprofilercontrol2-interface.md)

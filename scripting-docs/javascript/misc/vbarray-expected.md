@@ -35,5 +35,5 @@ new VBArray(safeArray);
 - Veillez à transmettre uniquement les objets **VBArray** au constructeur **VBArray** .  
   
 ## <a name="see-also"></a>Voir aussi  
- [Objet VBArray](../../javascript/reference/vbarray-object-javascript.md)    
+ [Objet VBArray](../../javascript/reference/vbarray-object-javascript.md)   
  [Utilisation des tableaux](../../javascript/advanced/using-arrays-javascript.md)

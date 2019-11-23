@@ -29,5 +29,5 @@ Vous avez tenté d’appeler la méthode **String. prototype. ToString** ou **St
 - Appelez uniquement les méthodes **String. prototype. ToString** ou **String. prototype. valueOf** sur les objets de type `String`.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Objet String](../../javascript/reference/string-object-javascript.md)    
+ [Objet String](../../javascript/reference/string-object-javascript.md)   
  [Méthode toString (Object)](../../javascript/reference/tostring-method-object-javascript.md)

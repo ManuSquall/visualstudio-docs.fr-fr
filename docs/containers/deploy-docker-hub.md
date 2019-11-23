@@ -43,7 +43,7 @@ Si vous n’avez pas de référentiel du hub d’ancrage, créez-en un dans le h
 
 1. Vous pouvez mettre à jour l’image à tout moment en cliquant sur le bouton **publier** dans cette page.  Vous pouvez modifier ou supprimer le profil en utilisant les liens sous l’URL.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 Publiez sur [Azure Container Registry](/azure/container-registry/) en suivant les étapes décrites dans [déployer sur Azure Container Registry](hosting-web-apps-in-docker.md).
 

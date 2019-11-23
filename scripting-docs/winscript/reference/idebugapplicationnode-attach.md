@@ -1,5 +1,5 @@
 ---
-title: 'IDebugApplicationNode :: Attach | Microsoft Docs'
+title: IDebugApplicationNode::Attach | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -42,7 +42,7 @@ HRESULT Attach(
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|valeur|Description|  
+|Valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
@@ -50,5 +50,5 @@ HRESULT Attach(
  Cette méthode ajoute ce nœud d’application à l’arborescence de projet, à l’aide de `pdanParent` en tant que parent. Si `pdanParent` est `NULL`, ce nœud d’application sera le nœud de niveau supérieur.  
   
 ## <a name="see-also"></a>Voir aussi  
- [IDebugApplicationNode ::D etach](../../winscript/reference/idebugapplicationnode-detach.md)    
+ [IDebugApplicationNode::Detach](../../winscript/reference/idebugapplicationnode-detach.md)   
  [Interface IDebugApplicationNode](../../winscript/reference/idebugapplicationnode-interface.md)

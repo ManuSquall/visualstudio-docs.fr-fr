@@ -100,7 +100,7 @@ Une fois que vous C# avez sélectionné votre modèle de projet et que vous avez
 
      ![Choisissez la boîte à outils pour ouvrir la fenêtre boîte à outils](../ide/media/csharp-toolbox-toolwindow.png)
 
-     (Si vous ne voyez pas la fenêtre volante **Boîte à outils**, ouvrez-la à partir de la barre de menus. Pour ce faire, **Affichez**la**boîte à outils** > . Vous pouvez aussi appuyer sur **Ctrl**+**Alt**+**X**.)
+     (Si vous ne voyez pas la fenêtre volante **Boîte à outils**, ouvrez-la à partir de la barre de menus. Pour ce faire, **affichez** > **boîte à outils**. Vous pouvez aussi appuyer sur **Ctrl**+**Alt**+**X**.)
 
 1. Choisissez l’icône **épingler** pour ancrer la fenêtre **boîte à outils** .
 
@@ -155,12 +155,12 @@ Maintenant que nous avons ajouté un contrôle bouton pour créer une action, no
 
 1. Fermez la boîte de dialogue **Form1** pour arrêter l’exécution de l’application.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 Pour en savoir plus, passez au tutoriel suivant :
 
 > [!div class="nextstepaction"]
-> [Tutoriel : Créer une visionneuse d’images @ no__t-0
+> [Didacticiel : créer une visionneuse d’images](tutorial-1-create-a-picture-viewer.md)
 
 ## <a name="see-also"></a>Voir aussi
 

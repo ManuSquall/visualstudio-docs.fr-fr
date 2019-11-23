@@ -45,6 +45,6 @@ Vous avez tenté d’utiliser l’instruction **continue** en dehors d’une bou
   - boucle **for/in** .  
   
 ## <a name="see-also"></a>Voir aussi  
- [instruction continue](../../javascript/reference/continue-statement-javascript.md)    
- [Contrôle du déroulement du programme](../../javascript/controlling-program-flow-javascript.md)    
+ [instruction continue](../../javascript/reference/continue-statement-javascript.md)   
+ [Contrôle du déroulement du programme](../../javascript/controlling-program-flow-javascript.md)   
  [Résolution des problèmes liés aux scripts](../../javascript/advanced/troubleshooting-your-scripts-javascript.md)

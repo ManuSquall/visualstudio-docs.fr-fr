@@ -37,6 +37,6 @@ if (denominator == 0) {
 - Assurez-vous que le mot clé `throw` et l’expression à lever apparaissent sur la même ligne.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Objet d’erreur](../../javascript/reference/error-object-javascript.md)    
- [instruction throw](../../javascript/reference/throw-statement-javascript.md)    
+ [Objet d’erreur](../../javascript/reference/error-object-javascript.md)   
+ [instruction throw](../../javascript/reference/throw-statement-javascript.md)   
  [Instruction try...catch...finally](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)

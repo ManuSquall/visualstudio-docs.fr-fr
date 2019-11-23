@@ -35,6 +35,6 @@ Vous avez composé un identificateur à l’aide d’un ou de caractères non re
 - Évitez d’utiliser des caractères qui ne font pas partie de la définition du langage [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
 ## <a name="see-also"></a>Voir aussi  
- [Variables](../../javascript/variables-javascript.md)    
- [Caractères spéciaux](../../javascript/advanced/special-characters-javascript.md)    
+ [Variables](../../javascript/variables-javascript.md)   
+ [Caractères spéciaux](../../javascript/advanced/special-characters-javascript.md)   
  [Types de données](../../javascript/data-types-javascript.md)

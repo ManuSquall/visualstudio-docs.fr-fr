@@ -1,5 +1,5 @@
 ---
-title: 'IDebugApplication :: AddStackFrameSniffer | Microsoft Docs'
+title: IDebugApplication::AddStackFrameSniffer | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -46,7 +46,7 @@ HRESULT AddStackFrameSniffer(
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|valeur|Description|  
+|Valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
@@ -54,6 +54,6 @@ HRESULT AddStackFrameSniffer(
  Bien que les moteurs de langage appellent généralement cette méthode pour exposer leurs frames de pile au débogueur, il est possible que d’autres entités exposent des frames de pile.  
   
 ## <a name="see-also"></a>Voir aussi  
- @No__t_1 de l' [interface IDebugApplication](../../winscript/reference/idebugapplication-interface.md)  
- [IDebugApplication :: RemoveStackFrameSniffer](../../winscript/reference/idebugapplication-removestackframesniffer.md)    
+   de l' [interface IDebugApplication](../../winscript/reference/idebugapplication-interface.md)  
+ [IDebugApplication::RemoveStackFrameSniffer](../../winscript/reference/idebugapplication-removestackframesniffer.md)   
  [Interface IDebugStackFrameSniffer](../../winscript/reference/idebugstackframesniffer-interface.md)

@@ -33,5 +33,5 @@ Vous avez tenté d’encoder une chaîne en tant qu’URI (Uniform Resource Iden
     ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [fonction Encodeuri](../../javascript/reference/encodeuri-function-javascript.md)    
+ [fonction Encodeuri](../../javascript/reference/encodeuri-function-javascript.md)   
  [Fonction encodeURIComponent](../../javascript/reference/encodeuricomponent-function-javascript.md)

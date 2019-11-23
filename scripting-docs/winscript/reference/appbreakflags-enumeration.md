@@ -35,7 +35,7 @@ enum enum_APPBREAKFLAGS{APPBREAKFLAG_DEBUGGER_BLOCK= 0x00000001,APPBREAKFLAG_DEB
   
 ## <a name="members"></a>Membres  
   
-|Membre|valeur|Description|  
+|Membre|Valeur|Description|  
 |------------|-----------|-----------------|  
 |APPBREAKFLAG_DEBUGGER_BLOCK|0x00000001|Le moteur de langage doit s’arrêter immédiatement sur tous les threads avec BREAKREASON_DEBUGGER_BLOCK.|  
 |APPBREAKFLAG_DEBUGGER_HALT|0x00000002|Le moteur de langage doit s’arrêter immédiatement avec BREAKREASON_DEBUGGER_HALT.|  
@@ -51,5 +51,5 @@ enum enum_APPBREAKFLAGS{APPBREAKFLAG_DEBUGGER_BLOCK= 0x00000001,APPBREAKFLAG_DEB
  Certains indicateurs spécifient que les moteurs de langage doivent s’arrêter à la prochaine occasion, tandis que d’autres indicateurs spécifient le mode d’exécution pas à pas du débogueur.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Constantes, énumérations et structures du débogueur de script actif](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)    
+ [Constantes, énumérations et structures du débogueur de script actif](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)   
  [Énumération BREAKREASON](../../winscript/reference/breakreason-enumeration.md)

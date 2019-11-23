@@ -29,5 +29,5 @@ Vous avez créé une référence à un élément de tableau, mais vous n’avez 
 - Ajoutez le crochet droit à l’expression qui fait référence à l’élément de tableau.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Utilisation de tableaux](../../javascript/advanced/using-arrays-javascript.md)    
+ [Utilisation de tableaux](../../javascript/advanced/using-arrays-javascript.md)   
  [Objet Array](../../javascript/reference/array-object-javascript.md)
