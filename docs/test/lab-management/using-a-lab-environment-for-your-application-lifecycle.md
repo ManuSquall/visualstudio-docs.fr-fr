@@ -92,23 +92,23 @@ Pour plus d’informations sur SCVMM, consultez [Virtual Machine Manager](/azure
 
 Les environnements standard et SCVMM prennent en charge une grande partie de ces fonctionnalités. Il existe cependant des différences importantes. Le tableau ci-dessous permet de comparer les fonctionnalités qui sont disponibles pour les environnements standard et les environnements SCVMM.
 
-|Fonctionnalité|Environnement SCVMM|Environnements standard|
+|Capability|Environnement SCVMM|Environnements standard|
 |-|------------------------|-|
 |**Test**|||
-|Exécuter des tests manuels|Prise en charge|Prise en charge|
-|Exécuter des tests codés de l'interface utilisateur et autres tests automatisés|Prise en charge|Prise en charge|
-|Signaler des bogues riches à l'aide des adaptateurs de diagnostics|Prise en charge|Prise en charge|
+|Exécuter des tests manuels|Pris en charge|Pris en charge|
+|Exécuter des tests codés de l'interface utilisateur et autres tests automatisés|Pris en charge|Pris en charge|
+|Signaler des bogues riches à l'aide des adaptateurs de diagnostics|Pris en charge|Pris en charge|
 |**Déploiement de build**|||
-|Flux de travail Création-Déploiement-Test automatisés|Prise en charge|Prise en charge|
+|Flux de travail Création-Déploiement-Test automatisés|Pris en charge|Pris en charge|
 |**Création et gestion d’environnements**|||
-|Utiliser des ordinateurs physiques en plus des ordinateurs virtuels|Non pris en charge|Prise en charge|
-|Utiliser des ordinateurs virtuels tiers|Non pris en charge|Prise en charge|
-|Installer automatiquement des agents de test sur les ordinateurs d'un environnement lab|Prise en charge|Prise en charge|
-|Enregistrer et déployer l'état d'un environnement lab à l'aide d'instantanés d'environnement|Prise en charge|Non pris en charge|
-|Créer des environnements lab à partir de modèles d'ordinateurs virtuels|Prise en charge|Non pris en charge|
-|Démarrage, arrêt et prise d'instantané d'environnement|Prise en charge|Non pris en charge|
-|Se connecter à l'environnement à l'aide de la visionneuse d'environnement|Prise en charge|Prise en charge|
-|Exécuter simultanément plusieurs copies d'un environnement grâce à l'isolement réseau|Prise en charge|Non pris en charge|
+|Utiliser des ordinateurs physiques en plus des ordinateurs virtuels|Non pris en charge|Pris en charge|
+|Utiliser des ordinateurs virtuels tiers|Non pris en charge|Pris en charge|
+|Installer automatiquement des agents de test sur les ordinateurs d'un environnement lab|Pris en charge|Pris en charge|
+|Enregistrer et déployer l'état d'un environnement lab à l'aide d'instantanés d'environnement|Pris en charge|Non pris en charge|
+|Créer des environnements lab à partir de modèles d'ordinateurs virtuels|Pris en charge|Non pris en charge|
+|Démarrage, arrêt et prise d'instantané d'environnement|Pris en charge|Non pris en charge|
+|Se connecter à l'environnement à l'aide de la visionneuse d'environnement|Pris en charge|Pris en charge|
+|Exécuter simultanément plusieurs copies d'un environnement grâce à l'isolement réseau|Pris en charge|Non pris en charge|
 
 ### <a name="lab-management-concepts"></a>Terminologie Lab management
 

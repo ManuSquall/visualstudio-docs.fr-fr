@@ -32,7 +32,7 @@ Pour obtenir la documentation la plus récente sur Visual Studio, consultez [CA1
 |-|-|
 |TypeName|ReviewUnusedParameters|
 |CheckId|CA1801|
-|Category|Microsoft. usage|
+|Catégorie|Microsoft.Usage|
 |Modification avec rupture|Sans rupture : si le membre n’est pas visible à l’extérieur de l’assembly, quelle que soit la modification que vous apportez.<br /><br /> Sans rupture : Si vous modifiez le membre pour utiliser le paramètre dans son corps.<br /><br /> Avec rupture : Si vous supprimez le paramètre et qu’il est visible à l’extérieur de l’assembly.|
 
 ## <a name="cause"></a>Cause

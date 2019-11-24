@@ -29,7 +29,7 @@ ms.locfileid: "72669125"
 |-|-|
 |TypeName|DoNotPrefixEnumValuesWithTypeName|
 |CheckId|CA1712|
-|Category|Microsoft. Naming|
+|Catégorie|Microsoft.Naming|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
@@ -38,7 +38,7 @@ ms.locfileid: "72669125"
 ## <a name="rule-description"></a>Description de la règle
  Les noms des membres de l’énumération n’ont pas le préfixe du nom de type, car les informations de type doivent être fournies par les outils de développement.
 
- Les conventions d’affectation de noms fournissent une recherche commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit le temps nécessaire à pour apprendre une nouvelle bibliothèque de logiciels et augmente la confiance des clients à ce que la bibliothèque ait été développée par une personne expérimentée dans le développement de code géré.
+ Les conventions d’affectation de noms fournissent une apparence commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit le temps nécessaire à pour apprendre une nouvelle bibliothèque de logiciels et augmente la confiance des clients à ce que la bibliothèque ait été développée par une personne expérimentée dans le développement de code géré.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, supprimez le préfixe de nom de type du membre de l’énumération.
