@@ -71,7 +71,7 @@ Vous pouvez créer des extensions pour le concepteur que vous utilisez pour modi
 
  Pour déployer les extensions sur le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]principal et sur d’autres ordinateurs, procédez comme suit :
 
-1. Rechercher le fichier d’installation de VSIX dans votre projet VSIX dans emplacement\\*\*\\\*.vsix
+1. Recherchez le fichier d’installation VSIX dans votre projet VSIX dans bin\\*\\\*. vsix
 
 2. Copiez ce fichier sur l’ordinateur cible, puis dans l’Explorateur Windows (ou l’Explorateur de fichiers), double-cliquez dessus.
 

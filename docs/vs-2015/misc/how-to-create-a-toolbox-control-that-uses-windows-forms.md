@@ -31,19 +31,19 @@ Le modèle de contrôle de boîte à outils Windows Forms inclus dans le [!INCLU
   
 1. Dans le menu **Fichier**, cliquez sur **Nouveau**, puis sur **Projet**.  
   
-2. Dans la boîte de dialogue **Nouveau projet**, sous **Modèles installés**, cliquez sur le nœud correspondant à votre langage de programmation préféré, puis cliquez sur **Extensibilité**. Dans la liste des types de projets, sélectionnez **Contrôle de boîte à outils Windows Forms**.  
+2. Dans la boîte de dialogue **Nouveau projet** , sous **Modèles installés**, cliquez sur le nœud correspondant à votre langage de programmation préféré, puis cliquez sur **Extensibilité**. Dans la liste des types de projets, sélectionnez **Contrôle de boîte à outils Windows Forms**.  
   
-3. Dans la zone **Nom**, tapez le nom que vous souhaitez utiliser pour le projet. Cliquez sur **OK**.  
+3. Dans la zone **Nom** , tapez le nom que vous souhaitez utiliser pour le projet. Cliquez sur **OK**.  
   
-     Visual Studio crée une solution qui contient un contrôle utilisateur, un attribut pour placer le contrôle dans la **boîte à outils** et un manifeste VSIX pour le déploiement.  
+     Visual Studio crée une solution qui contient un contrôle utilisateur, un attribut pour placer le contrôle dans la **boîte à outils**et un manifeste VSIX pour le déploiement.  
   
 #### <a name="to-build-the-control-ui"></a>Pour générer l’interface utilisateur du contrôle  
   
-1. Dans l’**Explorateur de solutions**, double-cliquez sur ToolboxControl.cs pour l’ouvrir dans le concepteur.  
+1. Dans l’ **Explorateur de solutions**, double-cliquez sur ToolboxControl.cs pour l’ouvrir dans le concepteur.  
   
 2. À partir de la **boîte à outils**, faites glisser les contrôles de votre choix vers l’aire de conception, puis disposez-les en fonction de votre conception.  
   
-3. Dans la fenêtre **Propriétés**, définissez les propriétés publiques du contrôle utilisateur et des contrôles enfants.  
+3. Dans la fenêtre **Propriétés** , définissez les propriétés publiques du contrôle utilisateur et des contrôles enfants.  
   
 ## <a name="coding-the-control"></a>Codage du contrôle  
  Par défaut, votre contrôle apparaît dans la **boîte à outils** sous le nom **ToolboxControl1** dans un groupe d’éléments de **boîte à outils** qui a le même nom que votre solution. Vous pouvez modifier ces noms dans le fichier ToolboxControl.cs.  
@@ -54,7 +54,7 @@ Le modèle de contrôle de boîte à outils Windows Forms inclus dans le [!INCLU
   
 2. Au niveau de la définition de la classe partielle qui implémente le contrôle, cliquez avec le bouton droit sur le nom de la classe, cliquez sur **Refactoriser**, puis sur **Renommer**. Remplacez le nom de la classe par le nom que vous voulez faire figurer dans la **boîte à outils** une fois le contrôle installé.  
   
-3. Juste au-dessus de la définition de la classe, dans la déclaration de l’attribut `ProvideToolboxControl`, remplacez la valeur du premier paramètre par le nom du groupe d’éléments destiné à héberger le contrôle dans la **boîte à outils**.  
+3. Juste au-dessus de la définition de la classe, dans la déclaration de l’attribut `ProvideToolboxControl` , remplacez la valeur du premier paramètre par le nom du groupe d’éléments destiné à héberger le contrôle dans la **boîte à outils**.  
   
      L’exemple suivant présente l’attribut `ProvideToolboxControl` et la définition de la classe ajustée pour un contrôle nommé `Counter` dans le groupe d’éléments `General` .  
   
@@ -67,13 +67,13 @@ Le modèle de contrôle de boîte à outils Windows Forms inclus dans le [!INCLU
   
 #### <a name="to-build-and-test-the-control"></a>Pour générer et tester le contrôle  
   
-1. Appuyez sur F5.  
+1. Appuyez sur F5.  
   
 2. Dans la nouvelle instance de Visual Studio, créez un projet d’application Windows Forms.  
   
 3. Recherchez votre contrôle dans la **boîte à outils** et faites-la glisser vers l’aire de conception.  
   
-4. Dans la fenêtre **Propriétés**, vérifiez que les propriétés apparaissent comme prévu.  
+4. Dans la fenêtre **Propriétés** , vérifiez que les propriétés apparaissent comme prévu.  
   
 5. Ajoutez si nécessaire du code ou des contrôles supplémentaires pour tester vos méthodes et événements.  
   

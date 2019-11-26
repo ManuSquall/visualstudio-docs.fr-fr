@@ -23,9 +23,9 @@ ms.locfileid: "74297927"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 La transformation de texte peut être appelée dans le cadre du processus de génération d’une solution Visual Studio. Il existe des tâches de génération qui sont spécialisées pour la transformation de texte. Les tâches de génération T4 exécutent les modèles de texte au moment du design. En outre, elles compilent les modèles de texte (prétraités) au moment de l’exécution.
 
-Il existe quelques différences en matière de possibilités offertes par les tâches de génération, selon le moteur de génération que vous utilisez. Lorsque vous générez la solution dans Visual Studio, un modèle de texte peut accéder à l'API Visual Studio (EnvDTE) si l'attribut [hostspecific="true"](../modeling/t4-template-directive.md) est défini. Mais cela n'est pas vrai lorsque vous générez la solution à partir de la ligne de commande ou lorsque vous démarrez une génération serveur via Visual Studio. Dans ces situations, la génération est exécutée par MSBuild et un autre hôte T4 est utilisé.
+Il existe quelques différences en matière de possibilités offertes par les tâches de génération, selon le moteur de génération que vous utilisez. Lorsque vous générez la solution dans Visual Studio, un modèle de texte peut accéder à l’API Visual Studio (EnvDTE) si l’attribut [hostspecific = "true"](../modeling/t4-template-directive.md) est défini. Mais cela n'est pas vrai lorsque vous générez la solution à partir de la ligne de commande ou lorsque vous démarrez une génération serveur via Visual Studio. Dans ces situations, la génération est exécutée par MSBuild et un autre hôte T4 est utilisé.
 
-Cela signifie que vous ne pouvez pas accéder aux éléments tels que les noms de fichiers projet de la même manière lorsque vous générez un modèle de texte dans MSBuild. Toutefois, vous pouvez [passer les informations d'environnement aux modèles de texte et aux processeurs de directive en utilisant les paramètres de build](#parameters).
+Cela signifie que vous ne pouvez pas accéder aux éléments tels que les noms de fichiers projet de la même manière lorsque vous générez un modèle de texte dans MSBuild. Toutefois, vous pouvez [passer des informations d’environnement dans des modèles de texte et des processeurs de directive en utilisant des paramètres de build](#parameters).
 
 ## <a name="buildserver"></a>Configurer vos ordinateurs
 
@@ -57,9 +57,9 @@ Si [votre serveur de builds](https://msdn.microsoft.com/library/788443c3-0547-45
 
 Vous devrez modifier votre fichier projet pour configurer certaines fonctionnalités dans MSBuild.
 
-Dans l'Explorateur de solutions, choisissez **Décharger** dans le menu contextuel de votre projet. Cela vous permet de modifier le fichier .csproj ou .vbproj dans l'éditeur XML.
+Dans l’Explorateur de solutions, choisissez **décharger** dans le menu contextuel de votre projet. Cela vous permet de modifier le fichier .csproj ou .vbproj dans l'éditeur XML.
 
-Lorsque vous avez terminé la modification, choisissez **Recharger**.
+Lorsque vous avez terminé la modification, choisissez **recharger**.
 
 ## <a name="import-the-text-transformation-targets"></a>Importation des cibles de la transformation de texte
 
@@ -226,7 +226,7 @@ Vous pouvez définir des valeurs de paramètre dans le fichier projet. Par exemp
 </ItemGroup>
 ```
 
-Dans un modèle de texte, définissez `hostspecific` dans la directive de modèle. Utilisez la directive [parameter](../modeling/t4-parameter-directive.md) pour obtenir des valeurs :
+Dans un modèle de texte, définissez `hostspecific` dans la directive de modèle. Utilisez la directive de [paramètre](../modeling/t4-parameter-directive.md) pour récupérer des valeurs :
 
 ```
 <#@template language="c#" hostspecific="true"#>
@@ -271,7 +271,7 @@ Si vous mettez à jour un fichier inclus ou tout autre fichier lu par le modèle
 
 **Quelles sont les autres options disponibles pour la transformation des modèles de texte ?**
 
-- L'[utilitaire TextTransform](../modeling/generating-files-with-the-texttransform-utility.md) peut être utilisé dans les scripts de commandes. Dans la plupart des cas, il est plus facile d'utiliser MSBuild.
+- L' [utilitaire TextTransform](../modeling/generating-files-with-the-texttransform-utility.md) peut être utilisé dans des scripts de commande. Dans la plupart des cas, il est plus facile d'utiliser MSBuild.
 
 - [Appel d’une transformation de texte dans une extension VS](../modeling/invoking-text-transformation-in-a-vs-extension.md)
 

@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/23/2019
 ms.topic: conceptual
 description: Découvrir en quoi consiste la responsabilité des administrateurs pour l’exécution des inventaires de préproduction
-ms.openlocfilehash: d400e216d81601583dc08f66f1a6a185cbe41b91
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
-ms.translationtype: HT
+ms.openlocfilehash: 97a7a95354cd4d5d85581830830705bc328f2311
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68420550"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491715"
 ---
 # <a name="inventory-of-pre-production-environment"></a>Inventaire de l’environnement de préproduction
 Les abonnements Visual Studio simplifient la gestion des actifs en comptant les utilisateurs plutôt que les appareils.
@@ -29,9 +29,9 @@ Voici plusieurs façons de simplifier l’inventaire de votre environnement de p
 - [Prise en charge des abonnements et de l’administration de Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [Conditions du programme de licence en volume](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 En savoir plus sur les responsabilités des administrateurs :
 - [Responsabilités de l’administrateur](admin-responsibilities.md)
-- [Gérer de grandes équipes et des fournisseurs externes](manage-teams.md)
-- [Suivre les affectations d’utilisateurs et traiter les commandes](assignments-orders.md)
+- [Gérer des grandes équipes et des prestataires externes](manage-teams.md)
+- [Suivre l’attribution des utilisateurs et traiter les commandes](assignments-orders.md)
 - Utiliser le rapport [Utilisation maximale](maximum-usage.md) pour suivre les engagements d’achat

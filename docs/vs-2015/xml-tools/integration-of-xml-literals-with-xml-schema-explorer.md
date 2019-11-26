@@ -21,7 +21,7 @@ ms.locfileid: "74297464"
 
 Visual Basic prend en charge les littéraux XML, ce qui signifie que vous pouvez incorporer des fragments XML directement dans votre code Visual Basic. Pour plus d’informations, consultez [vue d’ensemble des littéraux XML](https://go.microsoft.com/fwlink/?LinkId=140325).
 
- Si un fichier XSD dans votre projet Visual Basic inclut un littéral XML, vous pouvez afficher le jeu de schémas XML dans l'Explorateur de schémas XML. Pour afficher le jeu de schémas associé à un littéral XML, cliquez avec le bouton droit sur un nœud XML dans un littéral XML ou une importation d'espace de noms XML, puis sélectionnez **Afficher dans l'Explorateur de schémas XML**.
+ Si un fichier XSD dans votre projet Visual Basic inclut un littéral XML, vous pouvez afficher le jeu de schémas XML dans l'Explorateur de schémas XML. Pour afficher le jeu de schémas associé à un littéral XML, cliquez avec le bouton droit sur un nœud XML dans un littéral XML ou une importation d’espace de noms XML, puis sélectionnez **afficher dans l’Explorateur de schémas**.
 
  ![Visual Basic littéraux XML ; Explorateur de schémas XML](../xml-tools/media/vbxmlliteralswithxmlschemaexplorer1.gif "VBXMLLiteralsWithXMLSchemaExplorer1")
 

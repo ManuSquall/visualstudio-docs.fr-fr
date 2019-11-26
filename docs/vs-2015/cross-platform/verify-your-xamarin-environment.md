@@ -24,7 +24,7 @@ Une fois les programmes d’installation terminés (voir [Setup and install](../
   
 - [Créer des applications avec l’interface utilisateur native en utilisant Xamarin dans Visual Studio](../cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)  
   
-## <a name="all-platforms"></a>Toutes les plateformes  
+## <a name="all-platforms"></a>toutes les plateformes  
  Tout d’abord, sélectionnez **Outils > Options**, développez **Xamarin > Autre**, puis cliquez sur le lien **Vérifier maintenant** pour les mises à jour. Vous devez utiliser Xamarin 4.0.3.214 ou une version ultérieure pour éviter les problèmes de licence précédents.  
   
  Créez ensuite une solution Xamarin dans Visual Studio via **Fichier > Nouveau projet** puis, dans la boîte de dialogue, développez **Modèles > Autres langages > Visual C# > Multiplateforme**, sélectionnez **Application vide (Portable native)** , puis cliquez sur OK. Ceci crée une solution avec un projet de bibliothèque de classes portable partagée et des projets individuels pour Android, iOS et Windows :  
@@ -38,7 +38,7 @@ Une fois les programmes d’installation terminés (voir [Setup and install](../
   
 1. Vérifiez que les derniers outils du kit Android SDK sont installés en accédant à **Outils > Android > Gestionnaire Android SDK** et en installant la dernière version des composants Outils Android SDK, Outils de plateforme Android SDK et Outils de build Android SDK. Notez qu’il n’est pas toujours nécessaire d’installer le dernier niveau d’API Android. L’API dont vous avez besoin dépend du niveau de plateforme que vous souhaitez cibler. En général, l’installation de Xamarin entraîne l’installation du niveau de plateforme nécessaire.  
 
-2. Vérifiez le concepteur Android : dans le projet Android, dans l’Explorateur de solutions, ouvrez **Ressources > Disposition > Main.axml**. (Si vous ne voyez pas ce fichier directement, effectuez une recherche dans l’Explorateur de solutions ; ce fichier existe uniquement dans le projet Android, pas dans le projet iOS.)  
+2. Vérifiez Android Designer : dans le projet Android, dans l’Explorateur de solutions, ouvrez le fichier **Ressources > Disposition > Main.axml**. (Si vous ne voyez pas ce fichier directement, effectuez une recherche dans l’Explorateur de solutions ; ce fichier existe uniquement dans le projet Android, pas dans le projet iOS.)  
   
     - Si vous recevez un message d’erreur vous informant que la version installée du kit Android SDK est trop ancienne, cliquez dans ce message sur **Ouvrir le kit Android SDK** pour sélectionner et installer les outils de la dernière version du kit SDK, comme indiqué à l’étape 1 ci-dessus. 
   
@@ -50,7 +50,7 @@ Une fois les programmes d’installation terminés (voir [Setup and install](../
   
     - Sélectionnez un émulateur approprié pour votre version Android cible. Si un appareil de développement Android est attaché à votre ordinateur, il est également listé ici avec les émulateurs :  
   
-        - Windows 8+ : sélectionnez une cible **Émulateur Visual Studio** dans le menu déroulant de débogage de Visual Studio comme illustré ci-dessous, et démarrez le débogueur en appuyant sur **F5**. Pour plus d’informations, consultez [Introducing Visual Studio’s Emulator for Android](https://devblogs.microsoft.com/devops/introducing-visual-studios-emulator-for-android/) (blog ALM Visual Studio). Si vous avez des difficultés à faire fonctionner l’émulateur, consultez [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md). Vous pouvez aussi créer de nouveaux profils d’appareil pour l’émulateur en sélectionnant **Outils > Émulateur Visual Studio pour Android...** .  
+        - Windows 8+ : sélectionnez une cible **Émulateur Visual Studio** dans le menu déroulant de débogage de Visual Studio comme illustré ci-dessous, et démarrez le débogueur en appuyant sur **F5**. Pour plus d’informations, consultez [Introducing Visual Studio’s Emulator for Android](https://devblogs.microsoft.com/devops/introducing-visual-studios-emulator-for-android/) (blog ALM Visual Studio). Si vous avez des difficultés à faire fonctionner l’émulateur, consultez [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md). Vous pouvez aussi créer des profils d’appareil pour l’émulateur en sélectionnant **Outils > Émulateur Visual Studio pour Android**.  
   
              ![Sélection de l’émulateur Visual Studio pour Android en tant que cible de débogage](../cross-platform/media/crossplat-xamarin-verify-3.png "CrossPlat Xamarin Verify 3")  
   
@@ -64,13 +64,13 @@ Une fois les programmes d’installation terminés (voir [Setup and install](../
   
 ## <a name="windows-phone"></a>Windows Phone  
   
-1. Vérifiez le concepteur Windows Phone : dans le projet Windows Phone, dans l’Explorateur de solutions, ouvrez le fichier **MainPage.xaml**.  
+1. Vérifiez le concepteur Windows Phone : dans le projet Windows Phone, dans l’Explorateur de solutions, ouvrez le fichier **MainPage.xaml** .  
   
 2. Vérifiez la création et le débogage dans l’émulateur ou sur un appareil (remarque : pour cette étape, vous devez avoir installé l’émulateur Windows Phone via le programme d’installation de Visual Studio, ou disposer d’un appareil attaché) :  
   
     - Cliquez avec le bouton droit sur le projet Windows Phone dans l’Explorateur de solutions et sélectionnez **Définir comme projet de démarrage**.  
   
-    - Sélectionnez une cible **Émulateur 8.1** ou un appareil attaché dans le menu déroulant du débogage de Visual Studio comme illustré ci-dessous, et démarrez le débogueur en appuyant sur F5.  
+    - Sélectionnez une cible **Émulateur 8.1** ou un appareil attaché dans le menu déroulant du débogage de Visual Studio comme illustré ci-dessous, et démarrez le débogueur en appuyant sur F5.  
   
          ![Sélection d’un émulateur Windows Phone en tant que cible de débogage](../cross-platform/media/crossplat-xamarin-verify-4.png "CrossPlat Xamarin Verify 4")  
   
@@ -80,13 +80,13 @@ Une fois les programmes d’installation terminés (voir [Setup and install](../
   
 1. Assurez-vous que votre Mac est disponible sur le réseau et apparié à Visual Studio, comme décrit dans [Connecting to the Mac](https://docs.microsoft.com/xamarin/ios/get-started/installation/windows/connecting-to-mac/) (xamarin.com).  
   
-2. Vérifiez le concepteur de plan conceptuel : dans le projet iOS, dans l’Explorateur de solutions, ouvrez le fichier **Main.storyboard**. Ici, Visual Studio héberge le concepteur qui s’exécute à distance sur le Mac.  
+2. Vérifiez le concepteur de plan conceptuel : dans le projet iOS, dans l’Explorateur de solutions, ouvrez le fichier **Main.storyboard** . Ici, Visual Studio héberge le concepteur qui s’exécute à distance sur le Mac.  
   
 3. Vérifiez la génération et le débogage :  
   
     1. Cliquez avec le bouton droit sur le projet iOS dans l’Explorateur de solutions et sélectionnez **Définir comme projet de démarrage**.  
   
-    2. Sélectionnez la cible **iPhoneSimulator** dans la liste déroulante des builds de Visual Studio, comme illustré ci-dessous, ou la cible **iPhone** si vous utilisez un appareil attaché. Si aucun simulateur ne figure dans la liste, lancez Xcode sur votre Mac, sélectionnez **Xcode -> Preferences**, puis cliquez sur **Download**. Sous **Components** , vous devez voir les versions de simulateur qui sont disponibles en téléchargement. Vous trouverez des instructions supplémentaires pour le débogage sur la page [Debugging](https://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/#Debugging_on_the_Simulator) de Xamarin (xamarin.com).  
+    2. Sélectionnez la cible **iPhoneSimulator** dans la liste déroulante des builds de Visual Studio, comme illustré ci-dessous, ou la cible **iPhone** si vous utilisez un appareil attaché. Si aucun simulateur ne figure dans la liste, lancez Xcode sur votre Mac, sélectionnez **Xcode->Préférences**, puis cliquez sur **Télécharger**. Sous **Components** , vous devez voir les versions de simulateur qui sont disponibles en téléchargement. Vous trouverez des instructions supplémentaires pour le débogage sur la page [Debugging](https://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/#Debugging_on_the_Simulator) de Xamarin (xamarin.com).  
   
          ![Sélection de la cible de génération Iphonesimulator dans](../cross-platform/media/crossplat-xamarin-verify-5.png "CrossPlat Xamarin Verify 5")  
   
@@ -105,10 +105,10 @@ Une fois les programmes d’installation terminés (voir [Setup and install](../
         - Vérifiez que, dans les propriétés de votre projet iOS, sous l’onglet Signature d’ensemble d’applications iOS, le champ Droits personnalisés est vide pour la configuration Debug activée.  Remarque : vous pouvez essayer de supprimer ce paramètre uniquement si vous avez rencontré le message d’erreur ci-dessus.  
   
 ## <a name="missing"></a> Procédure à suivre si les modèles de projet Xamarin sont manquants  
- Il peut manquer certains modèles si vous installez Xamarin directement depuis le site web de Xamarin, et si Visual Studio 2013 et Visual Studio 2015 sont installés côte à côte. C’est cependant facile à résoudre : activez simplement la fonctionnalité **Xamarin for Visual Studio 2015** dans le programme d’installation de Xamarin.  
+ Il peut manquer certains modèles si vous installez Xamarin directement depuis le site web de Xamarin, et si Visual Studio 2013 et Visual Studio 2015 sont installés côte à côte. C’est cependant facile à résoudre : activez simplement la fonctionnalité **Xamarin for Visual Studio 2015** dans le programme d’installation de Xamarin.  
   
 1. Dans le Panneau de configuration, ouvrez **Programmes et fonctionnalités**, sélectionnez l’élément **Xamarin** et cliquez sur **Modifier**.  
   
-2. Dans l’Assistant Installation pour Xamarin qui s’affiche, cliquez sur **Suivant**, puis sur **Modifier**.  
+2. Dans l’Assistant Installation pour Xamarin qui s’affiche, cliquez sur **Suivant** , puis sur **Modifier**.  
   
-3. Dans la liste des fonctionnalités facultatives à installer, développez **Xamarin for Visual Studio 2015**, choisissez **will be installed on local drive**, puis cliquez sur **Suivant** pour procéder à l’ajout de la fonctionnalité.
+3. Dans la liste des fonctionnalités facultatives à installer, développez **Xamarin for Visual Studio 2015**, choisissez **will be installed on local drive**, puis cliquez sur **Suivant** pour procéder à l’ajout de la fonctionnalité.

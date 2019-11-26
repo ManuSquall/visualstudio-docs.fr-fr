@@ -16,7 +16,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74299846"
 ---
-# <a name="tutorial-3-create-a-matching-game"></a>Didacticiel 3 : créer un jeu de combinaisons
+# <a name="tutorial-3-create-a-matching-game"></a>Didacticiel 3 : créer un jeu de combinaisons
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Dans ce didacticiel, vous générez un jeu de combinaisons dans lequel le joueur doit associer des paires d'icônes masquées. Vous apprenez à :

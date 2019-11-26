@@ -22,7 +22,7 @@ ms.locfileid: "74296064"
 # <a name="programming-with-the-uml-api"></a>Programmation à l'aide de l'API UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-L’API UML de Visual Studio vous permet d’écrire du code pour créer, lire et mettre à jour des modèles et des diagrammes UML. Pour connaître les versions de Visual Studio qui prennent en charge les modèles UML, consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+L’API UML de Visual Studio vous permet d’écrire du code pour créer, lire et mettre à jour des modèles et des diagrammes UML. Pour connaître les versions de Visual Studio qui prennent en charge les modèles UML, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
  Outre les pages de référence de l'API, les rubriques suivantes décrivent l'API.
 
@@ -53,16 +53,16 @@ L’API UML de Visual Studio vous permet d’écrire du code pour créer, lire e
 
 |Assembly|Espaces de noms|Fournit l'accès à :|
 |--------------|----------------|-------------------------|
-|Microsoft.VisualStudio.Uml.Interfaces|(Tout)|Types UML.|
+|Microsoft.VisualStudio.Uml.Interfaces|(Tous)|Types UML.|
 |Microsoft.VisualStudio.ArchitectureTools.Extensibility|Microsoft. VisualStudio. ArchitectureTools. Extensibility. Uml|[Méthodes de création](../modeling/create-elements-and-relationships-in-uml-models.md)|
 ||Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation|[Diagrammes et formes](../modeling/display-a-uml-model-on-diagrams.md)|
 ||Microsoft.VisualStudio.ArchitectureTools.Extensibility|[Projet de modélisation](../modeling/read-a-uml-model-in-program-code.md)|
-|Microsoft.VisualStudio.Modeling.Sdk.[version]|<xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement>|[Extension de commande de menu](../modeling/define-a-menu-command-on-a-modeling-diagram.md).<br /><br /> [Transactions d'annulation liées](../modeling/link-uml-model-updates-by-using-transactions.md).|
+|Microsoft.VisualStudio.Modeling.Sdk.[version]|<xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement>|[Extension de commande de menu](../modeling/define-a-menu-command-on-a-modeling-diagram.md).<br /><br /> [Transactions d’annulation liées](../modeling/link-uml-model-updates-by-using-transactions.md).|
 ||<xref:Microsoft.VisualStudio.Modeling.Validation>|[Validation](../modeling/define-validation-constraints-for-uml-models.md)|
 ||(autres espaces de noms)|Recommandé uniquement pour l'utilisation avancée.|
 |Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]|<xref:Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement>|[Gestionnaires de mouvements](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md).|
 ||(autres espaces de noms)|Recommandé uniquement pour l'utilisation avancée.|
-|Microsoft.VisualStudio.TeamFoundation.WorkItemTracking|Microsoft.VisualStudio.TeamFoundation.WorkItemTracking|[Liens vers des éléments de travail](../modeling/define-a-work-item-link-handler.md).|
+|Microsoft.VisualStudio.TeamFoundation.WorkItemTracking|Microsoft.VisualStudio.TeamFoundation.WorkItemTracking|[Liens vers les éléments de travail](../modeling/define-a-work-item-link-handler.md).|
 |Microsoft.TeamFoundation.WorkItemTracking.Client|Microsoft.TeamFoundation.WorkItemTracking.Client|[Éléments de travail et leurs champs](../modeling/define-a-work-item-link-handler.md).|
 |Microsoft.TeamFoundation.Client|Microsoft.TeamFoundation.Client|[Éléments de travail et leurs champs](../modeling/define-a-work-item-link-handler.md).|
 |System.ComponentModel.Composition|<xref:System.ComponentModel.Composition>|[Exporter et importer des composants MEF](../modeling/define-and-install-a-modeling-extension.md)|

@@ -21,7 +21,7 @@ ms.locfileid: "74298918"
 # <a name="install-a-uml-profile"></a>Installer un profil UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous pouvez étendre Visual Studio avec un profil UML. Un profil vous permet d'ajouter des stéréotypes et des propriétés supplémentaires aux éléments que vous pouvez créer dans des modèles UML. Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Vous pouvez étendre Visual Studio avec un profil UML. Un profil vous permet d'ajouter des stéréotypes et des propriétés supplémentaires aux éléments que vous pouvez créer dans des modèles UML. Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
  Si vous recevez un modèle UML qui a été créé à l'aide de profils, certaines propriétés ne seront pas visibles, à moins que vous n'installiez les mêmes profils.
 
@@ -35,15 +35,15 @@ Vous pouvez étendre Visual Studio avec un profil UML. Un profil vous permet d'a
 
 2. Double-cliquez sur le fichier `.vsix` dans l'Explorateur Windows (ou l'Explorateur de fichiers) ou ouvrez-le dans [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].
 
-3. Cliquez sur **Installer** dans la boîte de dialogue qui s'affiche.
+3. Cliquez sur **installer** dans la boîte de dialogue qui s’affiche.
 
-4. Pour désinstaller ou désactiver momentanément l'extension, ouvrez le **Gestionnaire d'extensions** dans le menu **Outils**.
+4. Pour désinstaller ou désactiver temporairement l’extension, ouvrez le **Gestionnaire d’extensions** à partir du menu **Outils** .
 
 ### <a name="to-uninstall-or-disable-a-profile-extension"></a>Pour désinstaller ou désactiver une extension de profil
 
-1. Dans le menu **Outils** de Visual Studio, cliquez sur **Gestionnaire d'extensions**.
+1. Dans le menu **Outils** de Visual Studio, cliquez sur **Gestionnaire d’extensions**.
 
-2. Cliquez sur l'extension que vous souhaitez supprimer, puis cliquez sur **Désactiver** ou **Désinstaller**.
+2. Cliquez sur l’extension que vous souhaitez supprimer, puis sur **Désactiver** ou **désinstaller**.
 
 ## <a name="see-also"></a>Voir aussi
  [Personnaliser votre modèle avec des profils et des stéréotypes](../modeling/customize-your-model-with-profiles-and-stereotypes.md) [définir un profil pour étendre UML](../modeling/define-a-profile-to-extend-uml.md)

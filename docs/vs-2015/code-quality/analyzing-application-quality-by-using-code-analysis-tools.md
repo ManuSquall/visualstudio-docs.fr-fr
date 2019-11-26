@@ -42,7 +42,7 @@ Dans cette section, analyse de la [qualité du code managé](../code-quality/ana
 
  [Avertissements de l’analyse du code pour les pilotes](https://go.microsoft.com/fwlink/?LinkId=225920) Décrit les avertissements signalés par l’analyse du code pour les pilotes lorsqu’il détecte une erreur possible dans le code du pilote.
 
-## <a name="related-tasks"></a>Tâches connexes
+## <a name="related-tasks"></a>Tâches associées
  [Mesure de la complexité et de la facilité de maintenance du code managé](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md) Insérez la description ici.
 
  [Test unitaire de votre code](../test/unit-test-your-code.md) Insérez la description ici.

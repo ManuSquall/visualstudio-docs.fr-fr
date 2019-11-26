@@ -21,11 +21,11 @@ Apportez les modifications manuelles nécessaires à vos fichiers de projet exis
 
  Avec la plateforme Windows universelle, vous ciblez désormais avec votre application une ou plusieurs familles d’appareils. Pour plus d’informations sur les applications Windows universelles, consultez ce [guide de plateforme](https://msdn.microsoft.com/library/windows/apps/dn894631.aspx).
 
-- [Migrez vos applications Windows Store 8.1 ou Windows Phone 8.1 C#/VB existantes](#MigrateCSharp) pour utiliser la plateforme Windows universelle.
+- [Migrez vos applications Windows Store 8.1 ou Windows Phone 8.1 C#/VB existantes](#MigrateCSharp) pour utiliser la plateforme Windows universelle.
 
-- [Migrez vos applications Windows Store 8.1 ou Windows Phone 8.1 C++ existantes](#MigrateCPlusPlus) pour utiliser la plateforme Windows universelle.
+- [Migrez vos applications Windows Store 8.1 ou Windows Phone 8.1 C++ existantes](#MigrateCPlusPlus) pour utiliser la plateforme Windows universelle.
 
-- [Modifications requises pour les applications Windows universelles existantes créées avec Visual Studio 2015 RC](#PreviousVersions).
+- [Modifications requises pour les applications Windows universelles existantes créées avec Visual Studio 2015 RC](#PreviousVersions).
 
 - [Modifications requises pour des projets de test unitaire pour des applications Windows universelles créées avec Visual Studio 2015 RC](#MigrateUnitTest).
 
@@ -80,7 +80,7 @@ Apportez les modifications manuelles nécessaires à vos fichiers de projet exis
 
 4. Ouvrez votre solution qui contient votre application Windows Store 8.1 ou Windows Phone 8.1 existante dans Visual Studio.
 
-5. Cliquez avec le bouton droit sur votre projet existant pour votre application dans l'Explorateur de solutions, puis sélectionnez **Décharger le projet**. Une fois le projet déchargé, cliquez de nouveau avec le bouton droit sur le fichier projet et choisissez de modifier le fichier .csproj ou .vbproj.
+5. Cliquez avec le bouton droit sur votre projet existant pour votre application dans l’Explorateur de solutions, puis sélectionnez **Décharger le projet**. Une fois le projet déchargé, cliquez de nouveau avec le bouton droit sur le fichier projet et choisissez de modifier le fichier .csproj ou .vbproj.
 
      ![Cliquez avec le bouton droit sur le projet, puis choisissez Modifier.](../misc/media/uap-editproject.png "UAP_EditProject")
 
@@ -96,13 +96,13 @@ Apportez les modifications manuelles nécessaires à vos fichiers de projet exis
 
     5. Remplacez l’élément \<ProjectTypeGuids > comme indiqué ci-dessous :
 
-         Pour C# :
+         Pour C# :
 
         ```xml
         <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
         ```
 
-         Pour Visual Basic :
+         Pour Visual Basic :
 
         ```xml
         <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
@@ -244,7 +244,7 @@ Apportez les modifications manuelles nécessaires à vos fichiers de projet exis
 
 17. Utilisez le gestionnaire NuGet pour ajouter à nouveau les packages que vous avez supprimés dans une étape antérieure.
 
-     À présent, vous devez suivre la procédure permettant de [mettre à jour les fichiers manifeste du package](#PackageManifest) pour tous vos projets Windows Store 8.1 et Windows Phone 8.1.
+     À présent, vous devez suivre la procédure permettant de [mettre à jour les fichiers manifeste du package](#PackageManifest) pour tous vos projets Windows Store 8.1 et Windows Phone 8.1.
 
 ## <a name="MigrateCPlusPlus"></a>Migrez C++ vos applications Windows Store 8,1 ou Windows Phone 8,1 pour utiliser le plateforme Windows universelle
 
@@ -292,7 +292,7 @@ Apportez les modifications manuelles nécessaires à vos fichiers de projet exis
         </PropertyGroup>
         ```
 
-4. Remplacez toutes les instances de l’élément \<PlatformToolset > par la valeur V140. Par exemple :
+4. Remplacez toutes les instances de l’élément \<PlatformToolset > par la valeur V140. Exemple :
 
     ```xml
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -321,7 +321,7 @@ Apportez les modifications manuelles nécessaires à vos fichiers de projet exis
 
 7. Cliquez avec le bouton droit sur votre fichier projet dans l’Explorateur de solutions et choisissez Recharger le projet dans le menu contextuel. Tous les fichiers de votre projet doivent désormais être affichés dans l’Explorateur de solutions.
 
-     À présent, vous devez suivre la procédure permettant de [mettre à jour les fichiers manifeste du package](#PackageManifest) pour tous vos projets Windows Store 8.1 et Windows Phone 8.1.
+     À présent, vous devez suivre la procédure permettant de [mettre à jour les fichiers manifeste du package](#PackageManifest) pour tous vos projets Windows Store 8.1 et Windows Phone 8.1.
 
 ## <a name="PackageManifest"></a>Mettre à jour votre fichier manifeste de package pour tous vos projets Windows Store 8,1 ou Windows Phone 8,1
  Vous devez mettre à jour le fichier manifeste du package pour chaque projet figurant dans votre solution.
@@ -379,7 +379,7 @@ Apportez les modifications manuelles nécessaires à vos fichiers de projet exis
 
 5. Recherchez la \<composants requis > élément et supprimez cet élément et tous les éléments enfants qu’il contient.
 
-6. Ajoutez l’espace de noms **UAP** aux éléments de > de ressource \<suivants : Scale, DXFeatureLevel. Par exemple :
+6. Ajoutez l’espace de noms **UAP** aux éléments de > de ressource \<suivants : Scale, DXFeatureLevel. Exemple :
 
    ```xml
    <Resources>
@@ -390,7 +390,7 @@ Apportez les modifications manuelles nécessaires à vos fichiers de projet exis
 
    ```
 
-7. Ajoutez l’espace de noms **UAP** aux éléments suivants \<> fonctionnalité : DocumentsLibrary, PicturesLibrary, VideosLibrary, MusicLibrary, EnterpriseAuthentication, SharedUserCertificates, removableStorage, rendez-vous et contacts. Par exemple :
+7. Ajoutez l’espace de noms **UAP** aux éléments suivants \<> fonctionnalité : DocumentsLibrary, PicturesLibrary, VideosLibrary, MusicLibrary, EnterpriseAuthentication, SharedUserCertificates, removableStorage, rendez-vous et contacts. Exemple :
 
    ```xml
    <Capabilities>
@@ -400,7 +400,7 @@ Apportez les modifications manuelles nécessaires à vos fichiers de projet exis
 
    ```
 
-8. Ajoutez l’espace de noms **UAP** à l’élément \<VisualElements > et à l’un de ses éléments enfants. Par exemple :
+8. Ajoutez l’espace de noms **UAP** à l’élément \<VisualElements > et à l’un de ses éléments enfants. Exemple :
 
    ```xml
    <uap:VisualElements
@@ -414,9 +414,9 @@ Apportez les modifications manuelles nécessaires à vos fichiers de projet exis
 
    ```
 
-    **S’applique uniquement à Windows Store :** les noms de tailles de vignettes ont changé. Modifiez les attributs dans l’élément \<VisualElements > pour refléter les nouvelles tailles de vignette convergées. 70x70 devient 71x71 et 30x30 devient 44x44.
+    **S’applique uniquement à Windows Store :** les noms de tailles de vignettes ont changé. Modifiez les attributs dans l’élément \<VisualElements > pour refléter les nouvelles tailles de vignette convergées. 70x70 devient 71x71 et 30x30 devient 44x44.
 
-    **ANCIEN :** noms de tailles de vignettes
+    **ANCIEN :** noms de tailles de vignettes
 
    ```xml
    <m2:VisualElements
@@ -430,7 +430,7 @@ Apportez les modifications manuelles nécessaires à vos fichiers de projet exis
 
    ```
 
-    **NOUVEAU :** noms des tailles des vignettes
+    **NOUVEAU :** noms de tailles de vignettes
 
    ```xml
    <uap:VisualElements
@@ -444,7 +444,7 @@ Apportez les modifications manuelles nécessaires à vos fichiers de projet exis
 
    ```
 
-9. Ajoutez l’espace de noms **UAP** au \<ApplicationContentUriRules > et tous ses éléments enfants. Par exemple :
+9. Ajoutez l’espace de noms **UAP** au \<ApplicationContentUriRules > et tous ses éléments enfants. Exemple :
 
     ```xml
     <uap:ApplicationContentUriRules>
@@ -454,7 +454,7 @@ Apportez les modifications manuelles nécessaires à vos fichiers de projet exis
 
     ```
 
-10. Ajoutez l’espace de noms **UAP** à l’Extension de \<suivante > éléments et tous ses éléments enfants : Windows. accountPictureProvide, Windows. Alarm, Windows. appointmentsProvider Windows. autoPlayContent, Windows. autoPlayDevice, Windows. cachedFileUpdate, Windows. cameraSettings, Windows. fileOpenPicker, Windows. fileTypeAssociation, Windows. fileSavePicke, Windows. lockScreenCall, Windows. printTaskSettings, Windows. Protocol, Windows. Search, Windows. shareTarget. Par exemple :
+10. Ajoutez l’espace de noms **UAP** à l’Extension de \<suivante > éléments et tous ses éléments enfants : Windows. accountPictureProvide, Windows. Alarm, Windows. appointmentsProvider Windows. autoPlayContent, Windows. autoPlayDevice, Windows. cachedFileUpdate, Windows. cameraSettings, Windows. fileOpenPicker, Windows. fileTypeAssociation, Windows. fileSavePicke, Windows. lockScreenCall, Windows. printTaskSettings, Windows. Protocol, Windows. Search, Windows. shareTarget. Exemple :
 
     ```xml
     <Extensions>
@@ -469,7 +469,7 @@ Apportez les modifications manuelles nécessaires à vos fichiers de projet exis
 
     ```
 
-11. Ajoutez l’espace de noms **uap** aux tâches en arrière-plan de type chatMessageNotification. Par exemple :
+11. Ajoutez l’espace de noms **uap** aux tâches en arrière-plan de type chatMessageNotification. Exemple :
 
     ```xml
     <Extension Category="windows.backgroundTasks" EntryPoint="Fabrikam.BackgroundTask" Executable="MyBackground.exe">
@@ -505,7 +505,7 @@ Apportez les modifications manuelles nécessaires à vos fichiers de projet exis
 
      Utilisez les valeurs appropriées de Publisher et MinVersion pour l’infrastructure réelle que vous utilisez. N’oubliez pas que ces noms peuvent changer pour Windows 10.
 
-13. Remplacez les tâches de type gattCharacteristicNotification et rfcommConnection en arrière-plan par une tâche de type Bluetooth. Par exemple :
+13. Remplacez les tâches de type gattCharacteristicNotification et rfcommConnection en arrière-plan par une tâche de type Bluetooth. Exemple :
 
      **ANCIEN**
 
@@ -518,7 +518,7 @@ Apportez les modifications manuelles nécessaires à vos fichiers de projet exis
     </Extension>
     ```
 
-     **NOUVEAU :** avec la tâche de type Bluetooth.
+     **NOUVEAU :** avec la tâche de type Bluetooth.
 
     ```xml
     <Extension Category="windows.backgroundTasks" EntryPoint="Fabrikam.BackgroundTask" Executable="MyBackground.exe">
@@ -528,7 +528,7 @@ Apportez les modifications manuelles nécessaires à vos fichiers de projet exis
     </Extension>
     ```
 
-14. Remplacez les fonctionnalités d’appareil Bluetooth bluetooth.rfcomm et bluetooth.genericAttributeProfile par une fonctionnalité Bluetooth générique. Par exemple :
+14. Remplacez les fonctionnalités d’appareil Bluetooth bluetooth.rfcomm et bluetooth.genericAttributeProfile par une fonctionnalité Bluetooth générique. Exemple :
 
      **ANCIEN**
 
@@ -547,7 +547,7 @@ Apportez les modifications manuelles nécessaires à vos fichiers de projet exis
     </Capabilities>
     ```
 
-     **NOUVEAU :** Après remplacement par une fonctionnalité Bluetooth générique.
+     **NOUVEAU :** après remplacement par une fonctionnalité Bluetooth générique.
 
     ```xml
     <Capabilities>
@@ -566,7 +566,7 @@ Apportez les modifications manuelles nécessaires à vos fichiers de projet exis
 
        - Élément \<ApplicationView >
 
-         Par exemple :
+         Exemple :
 
        ```xml
        <m2:VisualElements
@@ -585,7 +585,7 @@ Apportez les modifications manuelles nécessaires à vos fichiers de projet exis
 
 17. Vous devez supprimer certains fichiers cachés avant de rouvrir votre solution.
 
-    1. Ouvrez l'Explorateur de fichiers, cliquez sur **Affichage** dans la barre d'outils, puis sélectionnez **Éléments masqués** et **Extensions de noms de fichiers**. Ouvrez ce dossier sur votre ordinateur : \<chemin d’accès de l’emplacement de votre solution >\\. vs\\{nom du projet} \v14. S’il existe un fichier avec une extension .suo, supprimez-le.
+    1. Ouvrez l’Explorateur de fichiers, cliquez sur **Affichage** dans la barre d’outils, puis sélectionnez **Éléments masqués** et **Extensions de noms de fichiers**. Ouvrez ce dossier sur votre ordinateur : \<chemin d’accès de l’emplacement de votre solution >\\. vs\\{nom du projet} \v14. S’il existe un fichier avec une extension .suo, supprimez-le.
 
     2. Retournez à présent dans le dossier où se trouve votre solution. Ouvrez tous les dossiers des projets figurant dans votre solution. Si un fichier figurant dans l’un de ces dossiers de projet a une extension .csproj.user ou .vbproj.user, supprimez-le.
 
@@ -743,7 +743,7 @@ Apportez les modifications manuelles nécessaires à vos fichiers de projet exis
 
     Vous pouvez désormais coder, générer et déboguer votre application.
 
-    Si vous avez des projets de test unitaire pour vos applications Windows universelles, vous devez également suivre [cette procédure](#MigrateUnitTest).
+    Si vous avez des projets de test unitaire pour vos applications Windows universelles, vous devez aussi suivre [cette procédure](#MigrateUnitTest).
 
 ### <a name="RCUpdate10CPlusPlus"></a>Mettez à C++ jour vos projets pour utiliser la dernière plateforme Windows universelle
 
@@ -810,7 +810,7 @@ Apportez les modifications manuelles nécessaires à vos fichiers de projet exis
 
          Vous pouvez désormais coder, générer et déboguer votre application.
 
-         Si vous avez des projets de test unitaire pour vos applications Windows universelles, vous devez également suivre [cette procédure](#MigrateUnitTest).
+         Si vous avez des projets de test unitaire pour vos applications Windows universelles, vous devez aussi suivre [cette procédure](#MigrateUnitTest).
 
 ## <a name="MigrateUnitTest"></a>Modifications requises pour les projets de test unitaire existants pour les applications Windows universelles créées avec Visual Studio 2015 RC
  Si vous avez créé des projets de test unitaire pour des applications universelles Windows 10 à l’aide de Visual Studio 2015 RC, vous devez apporter ces modifications supplémentaires à vos fichiers de projet pour utiliser ces projets de test avec la dernière version de Visual Studio 2015. Les modifications requises sont différentes selon le langage que vous avez utilisé pour créer votre application :

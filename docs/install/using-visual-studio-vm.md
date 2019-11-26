@@ -36,11 +36,11 @@ Sur la Place de marché Microsoft Azure, vous trouverez des images des versions 
 
 | Version commerciale                                                                                                                                          | Éditions              |    Version du produit    |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------:|:---------------------:|:-----------------------:|
-| [Visual Studio 2019: Latest (Version 16.3)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019latest?tab=Overview) | Enterprise, Community | Version 16.3.9    |
-| [Visual Studio 2019: RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019?tab=Overview)                         | Entreprise            | Version 16.0.9    |
-| [Visual Studio 2017: Latest (Version 15.9)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)           | Enterprise, Community | Version 15.9.17   |
-| [Visual Studio 2017: RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)                             | Enterprise, Community | Version 15.0.27   |
-| [Visual Studio 2015: Latest (Update 3)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)               | Enterprise, Community | Version 14.0.25431.01 |
+| [Visual Studio 2019 : dernière version (version 16,3)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019latest?tab=Overview) | Enterprise, Community | Version 16.3.9    |
+| [Visual Studio 2019 : RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019?tab=Overview)                         | Enterprise            | Version 16.0.9    |
+| [Visual Studio 2017 : dernière version (version 15,9)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)           | Enterprise, Community | Version 15.9.17   |
+| [Visual Studio 2017 : RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)                             | Enterprise, Community | Version 15.0.27   |
+| [Visual Studio 2015 : dernière version (Update 3)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)               | Enterprise, Community | Version 14.0.25431.01 |
 
 > [!NOTE]
 > Conformément à la politique de Microsoft en matière de maintenance, la version d’origine (RTW) de Visual Studio 2015 a expiré en ce qui concerne la maintenance. Visual Studio 2015 Update 3 est la seule version restante proposée pour la ligne de produits Visual Studio 2015.
@@ -55,7 +55,7 @@ Chaque image contient l’ensemble de fonctionnalités recommandé pour cette é
 * Kits SDK .NET 4.6.2 et .NET 4.7, packs de ciblage et outils de développement
 * Visual F#
 * Extension GitHub pour Visual Studio
-* Outils LINQ to SQL
+* Outils de LINQ to SQL
 
 Nous utilisons la ligne de commande suivante pour installer Visual Studio durant la génération des images :
 
@@ -117,7 +117,7 @@ Pour plus d’informations, consultez [Créer une image managée d’une machine
 
 En outre, vos technologies ou tâches de développement peuvent nécessiter une nouvelle mise à l’échelle, pour mettre par exemple en place des configurations de développement variées ou des configurations de machines multiples. Vous pouvez utiliser Azure DevTest Labs pour créer des _recettes_ permettant d’automatiser la création de votre « image idéale ». Vous pouvez également utiliser DevTest Labs pour gérer les stratégies des machines virtuelles exécutées de votre équipe. [Utiliser Azure DevTest Labs pour développeurs](/azure/devtest-lab/devtest-lab-developer-lab) est la meilleure source d’informations pour en savoir plus sur DevTest Labs.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 Maintenant que vous en savez un peu plus sur les images Visual Studio préconfigurées, l’étape suivante consiste à créer une machine virtuelle :
 

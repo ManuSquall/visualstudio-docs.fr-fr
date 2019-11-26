@@ -16,7 +16,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74299973"
 ---
-# <a name="step-9-try-other-features"></a>Étape 9 : Tester d’autres fonctionnalités
+# <a name="step-9-try-other-features"></a>Étape 9 : tester d'autres fonctionnalités
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pour découvrir d'autres fonctionnalités, essayez de modifier les icônes et les couleurs, d'ajouter une horloge de jeu et d'ajouter des sons. Pour augmenter la difficulté du jeu, essayez d'agrandir la taille du plateau et d'ajuster la minuterie.

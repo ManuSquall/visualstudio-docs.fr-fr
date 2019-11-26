@@ -24,12 +24,12 @@ Visual Studio comprend une collection de compilateurs, de langages, de runtimes,
 ## <a name="external-components-that-follow-a-lifecycle-policy-other-than-the-visual-studio-policy"></a>Composants externes adhérant à une stratégie de cycle de vie autre que celle de Visual Studio  
  Le tableau suivant répertorie les composants de plateforme Microsoft qui peuvent être inclus avec Visual Studio (selon la version spécifique du logiciel Visual Studio) et ceux qui sont soumis à leurs propres stratégies de prise en charge et délais d’exécution.  
   
-|FAMILLE DE PRODUITS|NOM EXTERNE|  
+|FAMILLE DE PRODUITS|EXTERNAL NAME|  
 |--------------------|-------------------|  
 |[.NET 3.5](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=net%20framework%203.5&Filter=FilterNO)|.NET 3.5 SDK<br /><br /> Windows Identity Foundation|  
 |[.NET 4.5](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=net%20framework%204.5&Filter=FilterNO)|.NET 4.5, SDK|  
 |[.NET 4.5.1](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=.NET%20Framework%204.5.1&Filter=FilterNO)|.NET 4.5.1 MT Pack (Classic)<br /><br /> .NET 4.5.1 Multi-Targeting Pack (Store)<br /><br /> .NET 4.5.1 OOB MSU<br /><br /> Package redistribuable .NET 4.5.1<br /><br /> Modules linguistiques du package redistribuable .NET 4.5.1<br /><br /> .NET 4.5.1, SDK|  
-|[Pile web ASP.NET](https://go.microsoft.com/fwlink/?LinkId=328918)|ASP.NET MVC 4<br /><br /> ASP.NET MVC 5<br /><br /> API web ASP.NET<br /><br /> API web ASP.NET 2<br /><br /> Pages web ASP.NET 2<br /><br /> Pages web ASP.NET 3|  
+|[Pile web ASP.NET](https://go.microsoft.com/fwlink/?LinkId=328918)|ASP.NET MVC 4<br /><br /> ASP.NET MVC 5<br /><br /> API Web ASP.NET<br /><br /> API Web ASP.NET 2<br /><br /> ASP.NET Web Pages 2<br /><br /> Pages web ASP.NET 3|  
 |[Entity Framework 6](https://go.microsoft.com/fwlink/?LinkId=328950)|Entity Framework 6|  
 |[Exchange 2013](https://go.microsoft.com/fwlink/?LinkId=328950)|Services web Exchange|  
 |[Microsoft OWIN](https://go.microsoft.com/fwlink/?LinkId=328951)|Microsoft OWIN|  
@@ -42,7 +42,7 @@ Visual Studio comprend une collection de compilateurs, de langages, de runtimes,
 |[Silverlight 5](https://support.microsoft.com/lifecycle/search/?p1=16278)<br /><br /> <br />> Voir aussi : [http://support.microsoft.com/gp/lifean45](https://support.microsoft.com/gp/lifean45)|Silverlight 5 Runtime<br /><br /> Silverlight 5, SDK|  
 |[SQL Server 2008 R2](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=SQL%20Server%202008%20R2&Filter=FilterNO)|Types CLR du système SQL (SQL Server 2008 R2)|  
 |[SQL Server 2012](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=SQL%20Server%202012&Filter=FilterNO)|DACFx (DACFramework)<br /><br /> SMO (SharedManagementObjects)<br /><br /> Utilitaires de ligne de commande SQL<br /><br /> Service de langage SQL - IntelliSense (TSQLLanguageService)<br /><br /> SQL LocalDB<br /><br /> SQL Native Client (Sqlncli)<br /><br /> SQL Server Express 2012 SP1<br /><br /> Types CLR du système SQL (SQL Server 2012)<br /><br /> SQLDOM|  
-|[SQL Server 2014](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=SQL%20Server%202014&Filter=FilterNO)|DACFx (DACFramework)<br /><br /> SMO (SharedManagementObjects)<br /><br /> Utilitaires de ligne de commande SQL<br /><br /> Service de langage SQL - IntelliSense (TSQLLanguageService)<br /><br /> SQL LocalDB<br /><br /> SQL Native Client (Sqlncli)<br /><br /> SQL Server Express 2014<br /><br /> Types CLR du système SQL (SQL Server 2014)<br /><br /> SQLDOM|  
+|[SQL Server 2014](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=SQL%20Server%202014&Filter=FilterNO)|DACFx (DACFramework)<br /><br /> SMO (SharedManagementObjects)<br /><br /> Utilitaires de ligne de commande SQL<br /><br /> Service de langage SQL - IntelliSense (TSQLLanguageService)<br /><br /> SQL LocalDB<br /><br /> SQL Native Client (Sqlncli)<br /><br /> SQL Server Express 2014<br /><br /> Types CLR du système SQL (SQL Server 2014)<br /><br /> SQLDOM|  
 |[SQL Server Compact Edition 4.0](https://support.microsoft.com/lifecycle/search/?p1=16106)|SQL Server Compact Edition 4.0|  
 |[WCF RIA Services v1.0 SP2](https://go.microsoft.com/fwlink/?LinkId=328955)|Services RIA WCF V1.0 SP2|  
 |[Windows Server 2008](https://support.microsoft.com/lifecycle/search?sort=PN&alpha=Windows%20Server%202008&Filter=FilterNO)|Windows Web Services (WWS) pour Windows Server 2008|  

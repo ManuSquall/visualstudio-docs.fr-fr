@@ -26,7 +26,7 @@ Pour démarrer rapidement un projet ou un sous-projet, il est utile de disposer 
 
 Cette rubrique part du principe que votre projet est suffisamment grand pour nécessiter la participation de plusieurs membres d'équipe et qu'il peut même comporter plusieurs équipes. Le code et les modèles du projet sont stockés dans un système de contrôle de code source tel que [!INCLUDE[esprtfs](../includes/esprtfs-md.md)]. Au moins quelques membres de l'équipe utilisent Visual Studio pour développer des modèles et les autres membres de l'équipe peuvent visualiser ces modèles à l'aide d'autres versions de Visual Studio.
 
-Pour connaître les versions de Visual Studio qui prennent en charge chaque outils et fonctionnalité de modélisation, consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Pour connaître les versions de Visual Studio qui prennent en charge chaque outil et chaque fonctionnalité de modélisation, consultez [prise en charge des versions pour les outils d’architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="solution-structure"></a>Structure de la solution
 
@@ -40,7 +40,7 @@ Dans un projet de taille moyenne ou grande, la structure de l'équipe est basée
 
     Ajoutez un diagramme de couche à cette solution. Sur le diagramme de couche, dessinez l'architecture que vous avez choisie pour votre application. Par exemple, le diagramme peut comporter les couches suivantes et les dépendances entre elles : Présentation, Logique métier et Données.
 
-    Vous pouvez créer le diagramme de couche et une nouvelle solution Visual Studio en même temps à l'aide de la commande **Nouveau diagramme UML ou diagramme de couche** du menu **Architecture**.
+    Vous pouvez créer le diagramme de couche et une nouvelle solution Visual Studio en même temps à l’aide de la commande **nouveau diagramme UML ou diagramme de couche** dans le menu **architecture** .
 
 3. Ajoutez au modèle Architecture des diagrammes UML qui représentent les concepts métier importants et utilisez des cas d'usage auxquels il est fait référence dans la conception de toutes les couches.
 
@@ -60,7 +60,7 @@ Dans un projet de taille moyenne ou grande, la structure de l'équipe est basée
 
     Vous avez maintenant un modèle pour chaque couche, plus un modèle pour l'architecture de l'application. Chaque modèle est contenu dans sa propre solution. Cela permet aux membres de l'équipe de travailler sur les couches en même temps.
 
-2. Ajoutez le projet de modélisation de chaque solution de couche à la solution Architecture. Pour cela, ouvrez la solution Architecture. Dans l'Explorateur de solutions, cliquez avec le bouton droit sur le nœud de la solution, pointez sur Ajouter, puis cliquez sur **Projet existant**. Accédez au projet de modélisation (.modelproj) dans une solution de couche.
+2. Ajoutez le projet de modélisation de chaque solution de couche à la solution Architecture. Pour cela, ouvrez la solution Architecture. Dans Explorateur de solutions, cliquez avec le bouton droit sur le nœud de la solution, pointez sur Ajouter, puis cliquez sur **projet existant**. Accédez au projet de modélisation (.modelproj) dans une solution de couche.
 
     Chaque modèle est maintenant visible dans deux solutions : sa solution d'origine et la solution Architecture.
 
@@ -80,9 +80,9 @@ Dans un projet de taille moyenne ou grande, la structure de l'équipe est basée
 
 ###### <a name="to-use-a-separate-package-for-each-layer"></a>Pour utiliser un package distinct pour chaque couche
 
-1. Dans la solution de chaque couche, ajoutez le projet de modélisation Architecture. Dans l'Explorateur de solutions, cliquez avec le bouton droit sur le nœud de la solution, pointez sur **Ajouter**, puis cliquez sur **Projet existant**. Le projet de modélisation unique est maintenant accessible à partir de chaque solution : le projet Architecture et le projet de développement de chaque couche.
+1. Dans la solution de chaque couche, ajoutez le projet de modélisation Architecture. Dans Explorateur de solutions, cliquez avec le bouton droit sur le nœud de la solution, pointez sur **Ajouter**, puis cliquez sur **projet existant**. Le projet de modélisation unique est maintenant accessible à partir de chaque solution : le projet Architecture et le projet de développement de chaque couche.
 
-2. Dans le modèle UML partagé, créez un package pour chaque couche : dans l'Explorateur de solutions, sélectionnez le projet de modélisation. Dans l'Explorateur de modèles UML, cliquez avec le bouton droit sur le nœud racine du modèle, pointez sur **Ajouter**, puis cliquez sur **Package**.
+2. Dans le modèle UML partagé, créez un package pour chaque couche : dans l'Explorateur de solutions, sélectionnez le projet de modélisation. Dans l’Explorateur de modèles UML, cliquez avec le bouton droit sur le nœud racine du modèle, pointez sur **Ajouter**, puis cliquez sur **package**.
 
     Chaque package contiendra des diagrammes UML décrivant les spécifications et la conception de la couche correspondante.
 
@@ -104,7 +104,7 @@ Par exemple, si vous utilisez fréquemment des solutions qui ont des couches Pr�
 
 2. Créez la structure de solution que vous souhaitez utiliser comme point de départ pour de futurs projets.
 
-3. Dans le menu **Fichier**, cliquez sur **Export Template as VSIX**. L'Assistant **Export Template as VSIX Wizard** s'ouvre.
+3. Dans le menu **Fichier** , cliquez sur **Export Template as VSIX**. L' **Assistant exportation de modèle en tant que VSIX** s’ouvre.
 
 4. Suivez les instructions de l'Assistant et sélectionnez les projets que vous souhaitez inclure dans le modèle, fournissez un nom et une description pour le modèle et spécifiez un emplacement de sortie.
 

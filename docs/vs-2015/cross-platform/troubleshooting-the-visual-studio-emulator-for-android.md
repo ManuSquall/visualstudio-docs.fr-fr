@@ -15,7 +15,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74297651"
 ---
-# <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Résolution des problèmes liés à l’émulateur Visual Studio pour Android
+# <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Dépannage de l'émulateur Visual Studio pour Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette rubrique contient des informations pour vous aider à résoudre les problèmes que vous pouvez rencontrer quand vous utilisez l'Émulateur Visual Studio pour Android.
@@ -225,13 +225,13 @@ Cette rubrique contient des informations pour vous aider à résoudre les probl�
 
      - Pilote de protocole LLDP Microsoft
 
-     - Pilote E/S Mappage de découverte de couche liaison
+     - Pilote E/S de mappage de découverte de topologie de la couche de liaison
 
-     - Répondeur de découverte de la topologie de la couche de liaison
+     - Pilote E/S de mappage de découverte de topologie de la couche de liaison
 
-     - Protocole Internet version 6 (TCP/IPv6)
+     - Protocole IPv6 (TCP/IPv6)
 
-     - Protocole Internet version 4 (TCP/IPv4)
+     - Protocole IPv4 (TCP/IPv4)
 
   4. Désactivez tous les autres éléments.
 
@@ -306,7 +306,7 @@ Cette rubrique contient des informations pour vous aider à résoudre les probl�
  L'émulateur affiche le contenu OpenGL à l'aide du GPU de votre ordinateur hôte et utilise le projet ANGLE pour convertir ces appels vers et à partir de DirectX. Si votre application s'affiche correctement sur un appareil mais de façon incorrecte sur l'émulateur, il est probable que l'appareil atténue un appel OpenGL incorrect (par exemple, à l'aide de variables de nuanceur qui ne correspondent pas).
 
 ## <a name="Multitouch"></a> L'émulateur ne répond pas aux entrées tactiles multipoints
- Dans certains cas, l'émulateur démarre mais ne répond pas aux entrées tactiles multipoints effectuées par interaction directe par le biais de votre écran tactile ou à l'aide de l'outil multipoint dans la barre d'outils de l'émulateur. Dans ce cas, choisissez le bouton **Pivoter** dans la barre d'outils de l'émulateur et réessayez d'utiliser la fonctionnalité multipoint. Si le problème persiste, consultez la section [L'émulateur ne parvient pas à afficher le contenu OpenGL](#OpenGL).
+ Dans certains cas, l'émulateur démarre mais ne répond pas aux entrées tactiles multipoints effectuées par interaction directe par le biais de votre écran tactile ou à l'aide de l'outil multipoint dans la barre d'outils de l'émulateur. Dans ce cas, choisissez le bouton **Pivoter** dans la barre d'outils de l'émulateur et réessayez d'utiliser la fonctionnalité multipoint. Si le problème persiste, consultez la section [L'émulateur ne parvient pas à afficher le contenu OpenGL](#OpenGL) .
 
 ## <a name="Support"></a> Ressources de support technique
  Si votre ordinateur hôte satisfait à la configuration système requise et que vous rencontrez un problème non couvert dans ce guide de dépannage :

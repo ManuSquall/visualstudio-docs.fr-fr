@@ -28,7 +28,7 @@ Pour déterminer la proportion de code de votre projet qui sera réellement test
 
  ![Résultats de couverture du code avec coloration](../test/media/codecoverage1.png "CodeCoverage1")
 
- **Conditions requises**
+ **Requirements**
 
 - Visual Studio Enterprise
 
@@ -96,7 +96,7 @@ Pour déterminer la proportion de code de votre projet qui sera réellement test
 ## <a name="excluding-elements-from-the-code-coverage-results"></a>Exclusion d'éléments des résultats de la couverture du code
  Vous pouvez exclure des éléments spécifiques dans votre code à partir des notes de couverture, par exemple si le code est généré à partir d'un modèle de texte. Ajoutez l'attribut `System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage` aux éléments de code suivants : classe, structure, méthode, propriété, accesseur Set ou accesseur Get de propriété, événement. Notez que l'exclusion d'une classe n'exclut pas ses classes dérivées.
 
- Par exemple :
+ Exemple :
 
 ```csharp
 
@@ -271,7 +271,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
      Dans le menu Windows **Démarrer**, choisissez **Tous les programmes**, **Microsoft Visual Studio**, **Visual Studio Tools**, **Invite de commandes développeur**.
 
-2. Exécutez :
+2. Exécuter :
 
      `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage`
 

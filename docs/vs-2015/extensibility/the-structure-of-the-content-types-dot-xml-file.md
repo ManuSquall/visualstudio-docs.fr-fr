@@ -31,7 +31,7 @@ Contient des informations sur les genres de contenu dans un package VSIX. Visual
 ## <a name="attributes-and-elements"></a>Attributs et éléments  
  Les sections suivantes décrivent l’élément racine et ses attributs et éléments enfants.  
   
-### <a name="root-element"></a>Élément racine  
+### <a name="root-element"></a>Élément Root  
   
 |Élément|Description|  
 |-------------|-----------------|  
@@ -45,7 +45,7 @@ Contient des informations sur les genres de contenu dans un package VSIX. Visual
   
 ### <a name="attribute-name-attribute"></a>{Nom de l’attribut} Attribut  
   
-|                           valeur                           |                Description                |
+|                           Valeur                           |                Description                |
 |-----------------------------------------------------------|-------------------------------------------|
 | http://schemas.openformats.org/package/2006/content-types | Emplacement du schéma des types de contenu. |
   
@@ -75,7 +75,7 @@ Contient des informations sur les genres de contenu dans un package VSIX. Visual
 |htm ou html|texte/html|  
 |rtf|application/RTF|  
 |pdf|application/pdf|  
-|formats|image/GIF|  
+|formats|image/gif|  
 |jpg ou JPEG|image/jpg|  
 |tiff|image/TIFF|  
 |vsix|application/zip|  

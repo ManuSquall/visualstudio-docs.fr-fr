@@ -20,7 +20,7 @@ ms.locfileid: "74297958"
 
 Les tests codés de l'interface utilisateur peuvent automatiser le test des applications web en enregistrant vos tests à l'aide d'Internet Explorer. Vous pouvez ensuite personnaliser votre test et l'utiliser à l'aide d'Internet Explorer ou d'autres types de navigateurs pour ces applications web.
 
- **Conditions requises**
+ **Requirements**
 
 - Visual Studio Enterprise
 
@@ -63,13 +63,13 @@ Les tests codés de l'interface utilisateur peuvent automatiser le test des appl
 
  **Lecture avec Internet Explorer :** lorsqu’aucun navigateur n’est explicitement spécifié, les tests s’exécutent par défaut sur Internet Explorer. Vous pouvez déclarer explicitement le navigateur à utiliser en définissant la propriété **BrowserWindow.CurrentBrowser** dans le code de votre test. Pour Internet Explorer, cette propriété doit être définie sur **IE** ou **Internet Explorer**.
 
- **Lecture avec des navigateurs web autres qu'Internet Explorer :** pour lire sur les navigateurs web autres qu'Internet Explorer, modifiez la propriété BrowserWindow.CurrentBrowser dans votre code de test sur **Firefox** ou **Chrome**.
+ **Lecture avec des navigateurs web autres qu’Internet Explorer** : pour lire sur les navigateurs web autres qu’Internet Explorer, modifiez la propriété BrowserWindow.CurrentBrowser dans votre code de test et définissez-la sur **Firefox** ou **Chrome**.
 
  Pour lire les tests sur les navigateurs web autres qu’IE, vous devez installer les **composants Selenium pour les tests codés de l’interface utilisateur sur plusieurs navigateurs**.
 
 #### <a name="installing-selenium-components"></a>Installation des composants Selenium
 
-1. Dans le menu **Outils**, choisissez **Extensions et mises à jour**.
+1. Dans le menu **Outils** , choisissez **Extensions et mises à jour**.
 
 2. Dans la boîte de dialogue Extensions et mises à jour, recherchez `Selenium components for Cross Browser Testing`.
 
@@ -143,7 +143,7 @@ Les tests codés de l'interface utilisateur peuvent automatiser le test des appl
 
  [Test de la livraison continue avec Visual Studio 2012 - Chapitre 5 : Automatisation des tests système](https://go.microsoft.com/fwlink/?LinkID=255196)
 
-### <a name="faq"></a>FAQ
+### <a name="faq"></a>Forum aux questions
  [FAQ concernant les tests codés de l’interface utilisateur - 1](https://go.microsoft.com/fwlink/?LinkID=230576)
 
  [FAQ concernant les tests codés de l’interface utilisateur - 2](https://go.microsoft.com/fwlink/?LinkID=230578)

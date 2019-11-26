@@ -21,7 +21,7 @@ ms.locfileid: "74296037"
 
 Le langage DGML (Directed Graph Markup Language) décrit les informations utilisées pour la visualisation et l'analyse de complexité. Il s'agit du format utilisé pour faire persister des cartes de code dans Visual Studio. Il utilise le langage XML simple pour décrire des graphiques orientés à la fois cycliques et acycliques. Un graphique orienté est un ensemble de nœuds reliés par des liens (ou bords). Les nœuds et les liens peuvent être utilisés pour représenter des structures interconnectées, telles que les éléments d'un projet logiciel.
 
- Notez que certaines versions de Visual Studio prennent en charge uniquement un sous-ensemble de fonctionnalités DGML. Consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Notez que certaines versions de Visual Studio ne prennent en charge qu’un sous-ensemble de fonctionnalités DGML, consultez [prise en charge des versions pour les outils d’architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 > [!NOTE]
 > Lorsque vous modifiez un fichier .dgml, IntelliSense vous aide à identifier les attributs qui sont disponibles pour chaque élément, ainsi que leurs valeurs. Pour spécifier la couleur dans un attribut, utilisez le nom des couleurs courantes (« Bleu », par exemple) ou des valeurs hexadécimales ARVB (« #ffa0b1c3 », par exemple). Le langage DGML utilise un sous-ensemble réduit de formats de définition de couleur WPF (Windows Presentation Foundation). Pour plus d’informations, consultez [Color, classe](https://go.microsoft.com/fwlink/?LinkId=182345).
@@ -39,13 +39,13 @@ Le langage DGML (Directed Graph Markup Language) décrit les informations utilis
 
    `BackgroundImage` : emplacement d’un fichier image à utiliser comme arrière-plan de la carte.
 
-   `GraphDirection`-lorsque la carte est définie sur disposition de l’arborescence (`Sugiyama`), réorganisez les nœuds de sorte que la plupart des liens circulent dans la direction spécifiée : `TopToBottom`, `BottomToTop`, `LeftToRight`ou `RightToLeft`. Consultez [Modifier la disposition de la carte](../modeling/browse-and-rearrange-code-maps.md#Selecting).
+   `GraphDirection`-lorsque la carte est définie sur disposition de l’arborescence (`Sugiyama`), réorganisez les nœuds de sorte que la plupart des liens circulent dans la direction spécifiée : `TopToBottom`, `BottomToTop`, `LeftToRight`ou `RightToLeft`. Consultez [modifier la disposition de la carte](../modeling/browse-and-rearrange-code-maps.md#Selecting).
 
-   `Layout`-définissez la carte sur les dispositions suivantes : `None`, `Sugiyama` (disposition en arborescence), `ForceDirected` (clusters rapides) ou `DependencyMatrix`. Consultez [Modifier la disposition de la carte](../modeling/browse-and-rearrange-code-maps.md#Selecting).
+   `Layout`-définissez la carte sur les dispositions suivantes : `None`, `Sugiyama` (disposition en arborescence), `ForceDirected` (clusters rapides) ou `DependencyMatrix`. Consultez [modifier la disposition de la carte](../modeling/browse-and-rearrange-code-maps.md#Selecting).
 
-   `NeighborhoodDistance`-lorsque la carte est définie sur disposition de l’arborescence ou sur clusters rapides, Affichez uniquement les nœuds qui sont un nombre spécifié (1-7) de liens hors des nœuds sélectionnés. Consultez [Modifier la disposition de la carte](../modeling/browse-and-rearrange-code-maps.md#Selecting).
+   `NeighborhoodDistance`-lorsque la carte est définie sur disposition de l’arborescence ou sur clusters rapides, Affichez uniquement les nœuds qui sont un nombre spécifié (1-7) de liens hors des nœuds sélectionnés. Consultez [modifier la disposition de la carte](../modeling/browse-and-rearrange-code-maps.md#Selecting).
 
-   Exemple :
+   Exemple :
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -72,7 +72,7 @@ Le langage DGML (Directed Graph Markup Language) décrit les informations utilis
   > [!NOTE]
   > Quand vous faites référence à un nœud non défini dans un élément `<Link/>`, la carte crée automatiquement un élément `<Node/>`.
 
-   Exemple :
+   Exemple :
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -98,19 +98,19 @@ Le langage DGML (Directed Graph Markup Language) décrit les informations utilis
 
    `Label` : nom d’affichage du nœud.
 
-   Attributs Style. Consultez [Personnaliser des cartes de code en modifiant les fichiers DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
+   Attributs Style. Consultez [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
    `Category`-le nom d’une catégorie qui identifie les éléments qui partagent cet attribut. Pour plus d'informations, consultez l'élément `<Category/>`.
 
    `Property`-le nom d’une propriété qui identifie les éléments qui ont la même valeur de propriété. Pour plus d'informations, consultez l'élément `<Property/>`.
 
-   `Group` - Si le nœud contient d'autres nœuds, affectez à cet attribut la valeur `Expanded` ou `Collapsed` pour respectivement en afficher ou en masquer le contenu. Un élément `<Link/>` doit inclure l'attribut `Category="Contains"` et spécifier le nœud parent en tant que nœud source et le nœud enfant en tant que nœud cible. Consultez [Regrouper des éléments de code](../modeling/customize-code-maps-by-editing-the-dgml-files.md#OrganizeNodes).
+   `Group` - Si le nœud contient d'autres nœuds, affectez à cet attribut la valeur `Expanded` ou `Collapsed` pour respectivement en afficher ou en masquer le contenu. Un élément `<Link/>` doit inclure l'attribut `Category="Contains"` et spécifier le nœud parent en tant que nœud source et le nœud enfant en tant que nœud cible. Consultez [regrouper des éléments de code](../modeling/customize-code-maps-by-editing-the-dgml-files.md#OrganizeNodes).
 
-   `Visibility`-définissez cet attribut sur `Visible`, `Hidden`ou `Collapsed`. Utilise `System.Windows.Visibility`. Consultez [Masquer ou afficher les nœuds et les liens](../modeling/browse-and-rearrange-code-maps.md#HidingShowing).
+   `Visibility`-définissez cet attribut sur `Visible`, `Hidden`ou `Collapsed`. Utilise `System.Windows.Visibility`. Consultez [masquer ou afficher les nœuds et les liens](../modeling/browse-and-rearrange-code-maps.md#HidingShowing).
 
    `Reference` - Définissez cet attribut pour le lier à un document ou une URL. Consultez [lier des documents ou des URL à des éléments de code et des liens](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AddReferences).
 
-   Exemple :
+   Exemple :
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -135,7 +135,7 @@ Le langage DGML (Directed Graph Markup Language) décrit les informations utilis
 
    Cet élément contient la liste des éléments `<Link>` qui définissent des liens entre des nœuds. Pour plus d'informations, consultez l'élément `<Link/>`.
 
-   Exemple :
+   Exemple :
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -163,13 +163,13 @@ Le langage DGML (Directed Graph Markup Language) décrit les informations utilis
 
    `Label` : nom d’affichage du lien
 
-   Attributs Style. Consultez [Personnaliser des cartes de code en modifiant les fichiers DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
+   Attributs Style. Consultez [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
    `Category`-le nom d’une catégorie qui identifie les éléments qui partagent cet attribut. Pour plus d'informations, consultez l'élément `<Category/>`.
 
    `Property`-le nom d’une propriété qui identifie les éléments qui ont la même valeur de propriété. Pour plus d'informations, consultez l'élément `<Property/>`.
 
-   Exemple :
+   Exemple :
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -193,7 +193,7 @@ Le langage DGML (Directed Graph Markup Language) décrit les informations utilis
 
    Cet élément contient la liste des éléments `<Category/>`. Pour plus d'informations, consultez l'élément `<Category/>`.
 
-   Exemple :
+   Exemple :
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -220,9 +220,9 @@ Le langage DGML (Directed Graph Markup Language) décrit les informations utilis
 
    Dans l'exemple donné pour cet élément, la catégorie `FailedTest` hérite de son attribut `Stroke` à partir de la catégorie `PassedTest`. Consultez « pour créer des catégories hiérarchiques » dans [personnaliser les cartes de code en modifiant les fichiers dgml](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
-   Les catégories proposent également un comportement de modèle de base qui contrôle l'apparence des nœuds et des liens lorsqu'ils s'affichent sur une carte. Consultez [Personnaliser des cartes de code en modifiant les fichiers DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
+   Les catégories proposent également un comportement de modèle de base qui contrôle l'apparence des nœuds et des liens lorsqu'ils s'affichent sur une carte. Consultez [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
-   Exemple :
+   Exemple :
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -250,7 +250,7 @@ Le langage DGML (Directed Graph Markup Language) décrit les informations utilis
 
    Cet élément contient la liste des éléments `<Property/>`. Pour plus d'informations, consultez l'élément `<Property/>`.
 
-   Exemple :
+   Exemple :
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -271,11 +271,11 @@ Le langage DGML (Directed Graph Markup Language) décrit les informations utilis
 
   - `DataType`-le type de données stockées par la propriété
 
-    Si vous souhaitez que la propriété s'affiche dans la fenêtre **Propriétés**, utilisez la propriété `Label` pour spécifier le nom complet de la propriété.
+    Si vous souhaitez que la propriété s’affiche dans la fenêtre **Propriétés** , utilisez la propriété `Label` pour spécifier le nom d’affichage de la propriété.
 
-    Consultez [Assigner des catégories aux éléments de code et aux liens](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AssignCategories).
+    Consultez [assigner des catégories aux éléments de code et aux liens](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AssignCategories).
 
-    Exemple :
+    Exemple :
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>

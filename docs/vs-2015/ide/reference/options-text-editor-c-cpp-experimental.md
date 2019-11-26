@@ -23,7 +23,7 @@ ms.locfileid: "74297860"
 
 En modifiant ces options, vous pouvez changer le comportement lié à IntelliSense et la base de données de navigation quand vous programmez en C ou C++.
 
- Pour accéder à cette page, dans la boîte de dialogue **Options**, dans le volet gauche, développez **Éditeur de texte**, **C/C++** , puis choisissez **Expérimental**.
+ Pour accéder à cette page, dans la boîte de dialogue **Options** , dans le volet gauche, développez **Éditeur de texte**, **C/C++** , puis choisissez **Expérimental**.
 
  Ces fonctionnalités sont disponibles dans une installation de Visual Studio 2015 Update 1 RC.
 
@@ -36,7 +36,7 @@ En modifiant ces options, vous pouvez changer le comportement lié à IntelliSen
 ## <a name="intellisense"></a>IntelliSense
  **Liste des membres point par flèche** Remplace « . » par « -> » le cas échéant pour la liste des membres.
 
-## <a name="refactoring"></a>Refactoring
+## <a name="refactoring"></a>Refactorisation
  **Activer l’extraction de fonction** Extrayez le code sélectionné dans sa propre fonction et remplacez le code par un appel à la nouvelle fonction. Pour accéder à cette fonctionnalité, cliquez avec le bouton droit sur le code sélectionné et sélectionnez **Actions rapides**, ou appuyez simplement sur le raccourci par défaut Ctrl+point [Ctrl+.].
 
  **Activer la signature de modification** Ajoutez, réorganisez et supprimez les paramètres d’une fonction et Propagez les modifications à tous les sites d’appel. Pour accéder à cette fonctionnalité, cliquez avec le bouton droit sur toute utilisation de la fonction et sélectionnez **Actions rapides**, ou appuyez simplement sur le raccourci par défaut Ctrl+point [Ctrl+.].

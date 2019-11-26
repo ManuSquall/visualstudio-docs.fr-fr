@@ -16,12 +16,12 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74300948"
 ---
-# <a name="xslt-profiler"></a>Profileur XSLT
+# <a name="xslt-profiler"></a>XSLT Profiler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Le Générateur de profils XSLT est un outil de génération de profils pour l'analyse des performances qui vous aide à développer et à déboguer des documents XSLT. Le Générateur de profils XSLT est un outil qui permet aux développeurs de mesurer et d'évaluer les problèmes liés aux performances dans le code XSLT en créant des rapports de performances XSLT détaillés. Le Générateur de profils XSLT fournit des conseils utiles pour les  optimisations de feuille de style XSL et XSLT, qui sont essentielles pour les applications basées sur XSLT qui nécessitent des performances maximales.
 
- Le Générateur de profils XSLT fait partie de Visual Studio 2010 et est disponible dans le menu **XML** de Visual Studio.
+ Le profileur XSLT fait partie de Visual Studio 2010 et est disponible dans le menu **XML** de Visual Studio.
 
  ![Profileur XSLT](../xml-tools/media/xsltprofilermenu.gif "XSLTProfilerMenu")
 

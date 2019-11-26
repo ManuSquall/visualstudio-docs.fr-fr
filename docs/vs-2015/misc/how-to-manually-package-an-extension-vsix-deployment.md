@@ -19,7 +19,7 @@ Vous pouvez créer un package VSIX pour encapsuler une extension [!INCLUDE[vsprv
   
 - Créez un projet de package VSIX avec l’un des modèles d’extensibilité inclus dans le Kit de développement logiciel [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (SDK). Pour la plupart des scénarios, il s’agit de l’option la plus simple.  
   
-- Encapsulez la sortie de votre projet d’extension dans un [projet VSIX](../extensibility/vsix-project-template.md) vide. Cette option est recommandée pour les modèles, les assemblys non pris en charge et les types personnalisés.  
+- Encapsulez la sortie de votre projet d’extension dans un [projet VSIX](../extensibility/vsix-project-template.md)vide. Cette option est recommandée pour les modèles, les assemblys non pris en charge et les types personnalisés.  
   
 - Créez manuellement un package VSIX. Cette option est recommandée uniquement quand les deux autres options ne sont pas disponibles.  
   
@@ -49,9 +49,9 @@ Vous pouvez créer un package VSIX pour encapsuler une extension [!INCLUDE[vsprv
   
      Dans tous les autres cas, placez les fichiers XML dans le même répertoire que la sortie de génération.  
   
-7. Dans l’Explorateur Windows, cliquez avec le bouton droit sur le dossier qui contient le contenu de l’extension et les deux fichiers XML, cliquez sur **Envoyer vers**, puis cliquez sur **Dossier compressé**.  
+7. Dans l’Explorateur Windows, cliquez avec le bouton droit sur le dossier qui contient le contenu de l’extension et les deux fichiers XML, cliquez sur **Envoyer vers**, puis cliquez sur **Dossier compressé**.  
   
-8. Renommez le fichier .zip que vous venez de créer *nom_fichier*.vsix, où *nom_fichier* correspond au nom du fichier redistribuable qui installe votre package.  
+8. Renommez le fichier .zip que vous venez de créer *nom_fichier*.vsix, où *nom_fichier* correspond au nom du fichier redistribuable qui installe votre package.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Expédition des extensions Visual Studio](../extensibility/shipping-visual-studio-extensions.md)   

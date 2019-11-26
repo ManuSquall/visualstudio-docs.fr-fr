@@ -79,7 +79,7 @@ Vous avez modifié une section de code qui n'est pas autorisée en Visual C# dan
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
-1. Dans le menu **Déboguer**, choisissez **Annuler** pour annuler la modification.  
+1. Dans le menu **Déboguer** , choisissez **Annuler** pour annuler la modification.  
   
      -ou-  
   
