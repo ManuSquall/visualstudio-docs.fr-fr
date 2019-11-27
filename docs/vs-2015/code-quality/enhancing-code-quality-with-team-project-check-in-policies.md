@@ -19,7 +19,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74301080"
 ---
-# <a name="enhancing-code-quality-with-team-project-check-in-policies"></a>Amélioration de la qualité du code avec des stratégies d’archivage de projet d’équipe
+# <a name="enhancing-code-quality-with-team-project-check-in-policies"></a>Amélioration de la qualité du code avec les stratégies d'archivage de projet d'équipe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Quand vous utilisez le contrôle de version Team Foundation, vous pouvez créer des stratégies d’archivage pour vos projets d’équipe afin d’appliquer des pratiques permettant d’améliorer le développement de code et d’optimiser le travail en groupe. Les stratégies d’archivage sont des règles établies au niveau du projet d’équipe et appliquées sur les ordinateurs des développeurs avant que le code ne soit autorisé à être archivé.
@@ -44,7 +44,7 @@ Quand vous utilisez le contrôle de version Team Foundation, vous pouvez créer 
 |**Créer et utiliser des stratégies d’archivage :** vous créez des stratégies d’archivage à l’aide des paramètres Projet d’équipe du [!INCLUDE[esprscc](../includes/esprscc-md.md)].|[Définir et appliquer des critères de qualité](https://msdn.microsoft.com/library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)|
 |**Créer et utiliser des stratégies d’archivage d’analyse du code :** vous pouvez soit sélectionner des stratégies parmi un jeu standard de règles d’analyse du code, soit créer un jeu personnalisé.|[Création et utilisation de stratégies d’archivage de l’analyse du code](../code-quality/creating-and-using-code-analysis-check-in-policies.md)|
 
-## <a name="related-tasks"></a>Tâches connexes
+## <a name="related-tasks"></a>Tâches associées
 
 |Tâche|Contenu de support|
 |----------|------------------------|

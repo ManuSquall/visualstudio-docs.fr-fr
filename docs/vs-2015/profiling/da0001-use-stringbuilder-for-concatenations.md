@@ -28,11 +28,11 @@ Pour obtenir la documentation la plus récente sur Visual Studio, consultez [DA0
   
 |||  
 |-|-|  
-|ID de règle|DA0001|  
+|ID de la règle|DA0001|  
 |Catégorie|Utilisation du .NET Framework|  
 |Méthodes de profilage|Échantillonnage<br /><br /> Instrumentation|  
 |Message|Utilisez StringBuilder pour les concaténations de chaînes|  
-|Type de message|Warning|  
+|Type de message|Avertissement|  
   
 ## <a name="cause"></a>Cause  
  Les appels à System.String.Concat représentent une part importante des données de profilage. Envisagez l’utilisation de la classe <xref:System.Text.StringBuilder> pour construire des chaînes à partir de plusieurs segments.  

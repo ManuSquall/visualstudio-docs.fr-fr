@@ -20,7 +20,7 @@ ms.locfileid: "74298000"
 
 Les projets de test contenant des tests codés de l'interface utilisateur créées dans [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 sont réparés silencieusement quand vous les ouvrez dans Visual Studio 2012. Si les projets de test sont archivés dans le contrôle de code source, les fichiers projet sont extraits pour cette réparation. Une fois réparés, ces projets de test contenant des tests codés de l'interface utilisateur peuvent alors être utilisés à la fois dans [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 et [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].
 
- **Conditions requises**
+ **Requirements**
 
 - Visual Studio Enterprise
 
@@ -57,7 +57,7 @@ Les projets de test contenant des tests codés de l'interface utilisateur créé
 
   La mise à jour contient également des correctifs pour les problèmes suivants :
 
-- **Couverture du code :** impossibilité d'ouvrir un fichier de couverture du code (.coverage) créé par Visual Studio 2012 dans [!INCLUDE[vs2010](../includes/vs2010-md.md)] SP1.
+- **Couverture du code :** impossibilité d'ouvrir un fichier de couverture du code (.coverage) créé par Visual Studio 2012 dans [!INCLUDE[vs2010](../includes/vs2010-md.md)] SP1.
 
 - **Artefacts de test en échec :** votre équipe dispose d'un artefact de test assigné à un utilisateur non valide dans Team Foundation Server (TFS) 2010. Par exemple, un utilisateur a quitté l'entreprise, mais un cas de test lui est toujours assigné. Vous mettez à niveau TFS 2010 vers TFS 2012. Vous utilisez [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010 pour vous connecter au serveur TFS mis à niveau. Vous n'êtes pas en mesure d'assigner l'artefact de test à l'un des utilisateurs TFS à l'aide de [!INCLUDE[TCMext](../includes/tcmext-md.md)] 2010.
 

@@ -21,9 +21,9 @@ ms.lasthandoff: 11/21/2019
 ms.locfileid: "74302846"
 ---
 # <a name="rule-condition-editor-dialog-box-legacy"></a>Éditeur de conditions de règle, boîte de dialogue (héritée)
-Cette rubrique décrit comment utiliser la boîte de dialogue **Éditeur de conditions de règle** dans le [!INCLUDE[wfd1](../includes/wfd1-md.md)] hérité. Utilisez le [!INCLUDE[wfd2](../includes/wfd2-md.md)] hérité lorsque vous devez cibler le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+Cette rubrique décrit comment utiliser la boîte de dialogue **éditeur de conditions de règle** dans le [!INCLUDE[wfd1](../includes/wfd1-md.md)]hérité. Utilisez le [!INCLUDE[wfd2](../includes/wfd2-md.md)] hérité lorsque vous devez cibler le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
- Pour créer et modifier des conditions de règle déclaratives, utilisez la boîte de dialogue **Éditeur de conditions de règle**. Ces conditions de règle sont exposées comme propriétés pour les activités prédéfinies Windows Workflow Foundation suivantes :
+ Vous créez et modifiez des conditions de règle déclaratives à l’aide de la boîte de dialogue **éditeur de conditions de règle** . Ces conditions de règle sont exposées comme propriétés pour les activités prédéfinies Windows Workflow Foundation suivantes :
 
 - [ConditionedActivityGroup](https://go.microsoft.com/fwlink?LinkID=65017)
 
@@ -39,12 +39,12 @@ Cette rubrique décrit comment utiliser la boîte de dialogue **Éditeur de cond
 
   Vous accédez à la boîte de dialogue **éditeur de conditions de règle** à l’aide de la boîte de [dialogue Sélectionner une condition (héritée)](../workflow-designer/select-condition-dialog-box-legacy.md).
 
-  Le tableau suivant décrit les éléments d'interface utilisateur de la boîte de dialogue **Éditeur de conditions de règle**.
+  Le tableau suivant décrit les éléments d’interface utilisateur de la boîte de dialogue **éditeur de conditions de règle** .
 
-|Élément d'interface utilisateur|Description|
+|Élément de l'interface utilisateur|Description|
 |----------------|-----------------|
 |**Etat**|Entrez l'expression applicable à la condition de règle.|
-|**OK**|Cliquez pour enregistrer la condition de règle.|
+|**Bien**|Cliquez pour enregistrer la condition de règle.|
 
 ## <a name="entering-condition-expressions"></a>Entrée d'expressions de condition
  Les expressions de condition sont entrées sous forme de texte. Vous pouvez taper **cette.** dans l’éditeur pour référencer les champs, les propriétés et les méthodes utilisés dans le workflow, à l’aide d’un menu similaire à IntelliSense. Vous pouvez également taper directement un nom de membre de workflow. Vous pouvez ajouter des opérateurs logiques à la condition, tels que les opérateurs AND, OR ou NOT. Vous pouvez également ajouter des prédicats. Un prédicat se compose d’un opérateur binaire et de deux opérandes. Les opérateurs binaires pris en charge sont **==** , **>** , **\<** , **>=** et **<=** . Les opérandes pris en charge sont à valeur de constante, à fonction arithmétique et à portée publique.

@@ -33,7 +33,7 @@ Xamarin vous permet de générer des applications mobiles multiplateformes cibla
   
  Commentaire général : toutes les fonctionnalités de planification et de suivi sont indépendantes du type de projet et des langages de codage.  
   
-|Fonction|Prise en charge par Xamarin|Commentaires supplémentaires|  
+|Composant|Prise en charge par Xamarin|Commentaires supplémentaires|  
 |-------------|----------------------------|-------------------------|  
 |Gérer les backlogs et les sprints|Oui||  
 |Suivi du travail|Oui||  
@@ -46,7 +46,7 @@ Xamarin vous permet de générer des applications mobiles multiplateformes cibla
   
  Les fonctionnalités de conception sont indépendantes du langage de codage ou fonctionnent avec les langages .NET tels que C#. Consultez [Rôles de l’architecture et des diagrammes de modélisation dans le développement de logiciels](../modeling/scenario-change-your-design-using-visualization-and-modeling.md#ModelingDiagramsTools) pour connaître les aspects liés au code.  
   
-|Fonction|Prise en charge par Xamarin|Commentaires supplémentaires|  
+|Composant|Prise en charge par Xamarin|Commentaires supplémentaires|  
 |-------------|----------------------------|-------------------------|  
 |Diagrammes de séquence|Oui||  
 |Graphiques de dépendance|Oui||  
@@ -59,7 +59,7 @@ Xamarin vous permet de générer des applications mobiles multiplateformes cibla
   
 ## <a name="code"></a>Code  
   
-|Fonction|Prise en charge par Xamarin|Commentaires supplémentaires|  
+|Composant|Prise en charge par Xamarin|Commentaires supplémentaires|  
 |-------------|----------------------------|-------------------------|  
 |[Utiliser Team Foundation Version Control](https://msdn.microsoft.com/library/1d629052-c65d-4c5d-81eb-eaa4413fe285) ou Visual Studio Team Services|Oui||  
 |[Bien démarrer avec Git dans Team Services](https://msdn.microsoft.com/library/32f46ecd-1b03-4ef0-a9c4-8a120da2b03f)|Oui||  
@@ -70,7 +70,7 @@ Xamarin vous permet de générer des applications mobiles multiplateformes cibla
 ## <a name="build"></a>Build  
  Lien de référence : **[Build](/azure/devops/pipelines/index)**  
   
-|Fonction|Prise en charge par Xamarin|Commentaires supplémentaires|  
+|Composant|Prise en charge par Xamarin|Commentaires supplémentaires|  
 |-------------|----------------------------|-------------------------|  
 |Serveur TFS local|Oui|Xamarin doit être installé sur les machines de build. Celles-ci peuvent être liées à un ordinateur OSX afin de générer des applications pour iOS. Consultez [Configuration de TFS pour Xamarin](https://docs.microsoft.com/azure/devops/repos/tfvc/overview?view=azure-devops) (site web Xamarin).|  
 |Serveur de builds local lié à Visual Studio Team Services|Oui|Consultez la rubrique [Serveur de builds](https://msdn.microsoft.com/library/2d258a0a-f178-4e93-9da1-eba61151af3c) pour obtenir des instructions.|  
@@ -81,19 +81,19 @@ Xamarin vous permet de générer des applications mobiles multiplateformes cibla
 ## <a name="testing"></a>Test  
  Lien de référence : **[Test de l’application](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)**  
   
-|Fonction|Prise en charge par Xamarin|Commentaires supplémentaires|  
+|Composant|Prise en charge par Xamarin|Commentaires supplémentaires|  
 |-------------|----------------------------|-------------------------|  
 |Planification de tests, création de cas de test et organisation de suites de tests|Oui||  
 |Test manuel|Oui||  
 |Gestionnaire de tests (enregistrer et rejouer des tests)|Oui|Appareils Windows et émulateurs Android uniquement à partir de Visual Studio. L’enregistrement est possible pour tous les appareils avec [Xamarin Test Recorder](https://www.xamarin.com/test-cloud/recorder).|  
-|Couverture du code|N/A||  
+|Couverture du code|Non applicable||  
 |[Tests unitaires de votre code](../test/unit-test-your-code.md)|Oui|Pour des cibles Windows et Android, vous pouvez utiliser les outils MSTest intégrés. Pour exécuter des tests unitaires sur Windows, Android et iOS, Xamarin recommande NUnit. Consultez [Configuration de TFS pour Xamarin](https://docs.microsoft.com/azure/devops/repos/tfvc/overview?view=azure-devops) (site web Xamarin).|  
 |[Utiliser UI Automation pour tester votre code](../test/use-ui-automation-to-test-your-code.md)|Windows uniquement|L’enregistreur de test d’IU de Visual Studio est réservé à Windows. Pour toutes les plateformes, consultez [Xamarin Test Recorder](https://www.xamarin.com/test-cloud/recorder).|  
   
 ## <a name="improve-code-quality"></a>Améliorer la qualité du code  
  Lien de référence : **[Améliorer la qualité du code](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
   
-|Fonction|Prise en charge par Xamarin|Commentaires supplémentaires|  
+|Composant|Prise en charge par Xamarin|Commentaires supplémentaires|  
 |-------------|----------------------------|-------------------------|  
 |[Analyse de la qualité d’un code managé](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|Oui||  
 |[Recherche du code dupliqué à l’aide de la détection de clone de code](https://msdn.microsoft.com/library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|Oui||  
@@ -104,15 +104,15 @@ Xamarin vous permet de générer des applications mobiles multiplateformes cibla
 ## <a name="release-management"></a>Gestion des versions  
  Lien de référence : **[Automatiser les déploiements avec Release Management](https://msdn.microsoft.com/library/vs/alm/release/overview)**  
   
-|Fonction|Prise en charge par Xamarin|Commentaires supplémentaires|  
+|Composant|Prise en charge par Xamarin|Commentaires supplémentaires|  
 |-------------|----------------------------|-------------------------|  
 |Gérer les processus de publication des versions|Oui||  
 |Déploiement sur des serveurs pour le chargement de version test via des scripts|Oui||  
-|Télécharger vers le magasin d'applications|Partial|Il existe des extensions qui peuvent automatiser ce processus pour certains magasins d’applications.  Consultez [Extensions pour Visual Studio Team Services](https://marketplace.visualstudio.com/VSTS), par exemple l’[extension pour Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|  
+|Télécharger vers le magasin d'applications|Partiel|Il existe des extensions qui peuvent automatiser ce processus pour certains magasins d’applications.  Consultez [Extensions pour Visual Studio Team Services](https://marketplace.visualstudio.com/VSTS), par exemple l’[extension pour Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|  
   
 ## <a name="monitor-with-hockeyapp"></a>Analyser avec HockeyApp  
  Lien de référence : **[Analyser avec HockeyApp](https://www.hockeyapp.net/features/)**  
   
-|Fonction|Prise en charge par Xamarin|Commentaires supplémentaires|  
+|Composant|Prise en charge par Xamarin|Commentaires supplémentaires|  
 |-------------|----------------------------|-------------------------|  
 |Analyse des incidents, télémétrie et distribution des bêta|Oui||

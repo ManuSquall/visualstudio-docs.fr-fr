@@ -31,7 +31,7 @@ Les *conseils sur les performances* du débogueur et les **outils de diagnostic*
 ## <a name="diagnostics-tools-window"></a>Fenêtre Outils de diagnostic  
  Les points d'arrêt et les données de minutage associées sont enregistrés dans la fenêtre Outils de diagnostic.  
   
- L’illustration suivante montre la fenêtre Outils de diagnostic de Visual Studio 2015 Update 1 :  
+ L’illustration suivante montre la fenêtre Outils de diagnostic de Visual Studio 2015 Update 1 :  
   
  ![Outils&#45;Update 1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
   

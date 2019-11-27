@@ -20,7 +20,7 @@ ms.locfileid: "74302549"
 
 Dans une lecture de test codé de l'interface utilisateur, vous pouvez faire en sorte que le test attende que certains événements se produisent (par exemple qu'une fenêtre s'affiche, que la barre de progression disparaisse, et ainsi de suite). Pour cela, utilisez la méthode UITestControl.WaitForControlXXX() appropriée, comme décrit dans le tableau suivant. Pour obtenir un exemple de test codé de l’interface utilisateur qui attend l’activation d’un contrôle à l’aide de la méthode <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>, consultez [Procédure pas à pas : création, édition et gestion d’un test codé de l’interface utilisateur](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
 
- **Conditions requises**
+ **Requirements**
 
  Visual Studio Enterprise
 
@@ -47,7 +47,7 @@ Dans une lecture de test codé de l'interface utilisateur, vous pouvez faire en 
 
  <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlPropertyEqual%2A>
 
- Attend que la propriété spécifiée du contrôle ait la valeur donnée. Par exemple, vous attendez que le texte d'état passe à **Terminé**.
+ Attend que la propriété spécifiée du contrôle ait la valeur donnée. Par exemple, vous attendez que le texte d’état passe à **Terminé**.
 
  <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlPropertyNotEqual%2A>
 

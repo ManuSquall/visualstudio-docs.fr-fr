@@ -18,7 +18,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74296843"
 ---
-# <a name="visual-studio-samples"></a>Visual Studio Samples
+# <a name="visual-studio-samples"></a>Exemples Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous trouverez des exemples de code Visual Studio sur le site web [MSDN Code Gallery](https://go.microsoft.com/fwlink/?LinkID=127810) .
@@ -31,7 +31,7 @@ Vous trouverez des exemples de code Visual Studio sur le site web [MSDN Code Gal
 |Zone|Description|
 |----------|-----------------|
 |[Exemples du Centre de développement Windows](https://go.microsoft.com/fwlink/?LinkID=255278)|Montre comment développer des applications [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] .|
-|[Exemples .NET Framework](https://msdn.microsoft.com/177055f8-4a1f-43e7-aee6-995c196079b1)|Montre différents aspects du [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] en C# et Visual Basic.|
+|[Exemples .NET Framework](https://msdn.microsoft.com/177055f8-4a1f-43e7-aee6-995c196079b1)|Montre différents aspects du [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] en C# et Visual Basic.|
 |[Exemples C#](https://docs.microsoft.com/samples/browse/?languages=csharp)|Montre comment utiliser différentes fonctionnalités de C#.|
 |[Exemples Visual Basic](https://docs.microsoft.com/samples/browse/?languages=vb)|Montre comment utiliser différentes fonctionnalités de Visual Basic.|
 |[Exemples F#](https://docs.microsoft.com/samples/browse/?languages=fsharp)|Montre comment utiliser différentes fonctionnalités de F#.|

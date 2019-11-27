@@ -41,25 +41,25 @@ Cette rubrique décrit comment déclarer une condition de règle à l'aide du [!
 
 ### <a name="to-create-a-declarative-rule-condition-using-the-rule-condition-editor"></a>Pour créer une condition de règle déclarative à l'aide de l'Éditeur de conditions de règle
 
-1. Dans la fenêtre **Propriétés** de l'activité, cliquez sur la propriété **Condition** ou sur la propriété **UntilCondition**, selon l'activité.
+1. Dans la fenêtre **Propriétés** de l’activité, cliquez sur la propriété **condition** ou sur la propriété **UntilCondition** , en fonction de l’activité.
 
-2. Sélectionnez **Condition de règle déclarative** dans la liste, pour cette propriété.
+2. Sélectionnez **condition de règle déclarative** dans la liste pour la propriété.
 
-3. Développez la propriété **Condition** ou la propriété **UntilCondition**.
+3. Développez la propriété **condition** ou **UntilCondition** .
 
-4. Cliquez sur la propriété **ConditionName**.
+4. Cliquez sur la propriété **ConditionName** .
 
-5. Cliquez sur les boutons de sélection de la propriété **ConditionName** ( **[.]** ) pour ouvrir la boîte de dialogue **Sélectionner la condition**.
+5. **Pour ouvrir** la boîte de dialogue **Sélectionner une condition** , cliquez **sur le curseur de sélection.**
 
-6. Cliquez sur **Nouvelle condition** pour ouvrir la boîte de dialogue **Éditeur de conditions de règle**.
+6. Cliquez sur **nouvelle condition** pour ouvrir la boîte de dialogue **éditeur de conditions de règle** .
 
-7. Tapez l'expression de la condition dans la zone de texte **Condition**.
+7. Tapez l’expression de la condition dans la zone de texte **condition** .
 
      Pour plus d’informations sur la création d’expressions de condition, consultez [éditeur de conditions de règle, boîte de dialogue (héritée)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md).
 
-8. Une fois que vous avez terminé la création de l'expression conditionnelle, cliquez sur **OK** pour fermer la boîte de dialogue et créer la condition de règle avec affectation de nom.
+8. Lorsque vous avez terminé de créer l’expression de condition, cliquez sur **OK** pour fermer la boîte de dialogue et créer la condition de règle avec un nom attribué.
 
-     La boîte de dialogue **Sélectionner la condition** s'ouvre.
+     La boîte de dialogue **Sélectionner une condition** s’ouvre.
 
      Pour plus d’informations sur l’utilisation de la boîte de dialogue **Sélectionner une condition** , consultez boîte [de dialogue Sélectionner une condition (hérité)](../workflow-designer/select-condition-dialog-box-legacy.md).
 

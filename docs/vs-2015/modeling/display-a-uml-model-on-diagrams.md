@@ -21,9 +21,9 @@ ms.locfileid: "74296015"
 # <a name="display-a-uml-model-on-diagrams"></a>Afficher un modèle UML sur des diagrammes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Dans le code de programme d'une extension de Visual Studio, vous pouvez contrôler comment les éléments de modèle sont affichés dans les diagrammes. Pour connaître les versions de Visual Studio qui prennent en charge les modèles UML, consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Dans le code de programme d'une extension de Visual Studio, vous pouvez contrôler comment les éléments de modèle sont affichés dans les diagrammes. Pour connaître les versions de Visual Studio qui prennent en charge les modèles UML, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-Dans cette rubrique :
+Dans cette rubrique :
 - [Pour afficher un élément dans un diagramme](#Display)
 
 - [Accès aux formes qui représentent un élément](#GetShapes)
@@ -43,9 +43,9 @@ Dans cette rubrique :
 |---------------------|-----------------|-------------------------------------|
 |Classifieur|`Class`<br /><br /> `Component`<br /><br /> `Actor`<br /><br /> `Use Case`|Créer des formes associées dans les diagrammes spécifiés. Vous pouvez créer une quantité quelconque de formes pour chaque classifieur.<br /><br /> `diagram.Display<modelElementType>`<br /><br /> `(modelElement, parentShape,`<br /><br /> `xPosition , yPosition);`<br /><br /> Affectez la valeur `parentShape` à `null` pour une forme au niveau supérieur du diagramme.<br /><br /> Pour afficher une forme dans une autre :<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `useCaseDiagram.Display`<br /><br /> `(useCase,`<br /><br /> `subsystemShape,`<br /><br /> `subsystemShape.XPosition + 5,`<br /><br /> `subsystemShape.YPosition + 5);` **Remarque :** si vous effectuez l’affichage à l’intérieur d’une transaction **ILinkedUndo** , la méthode ne retourne parfois aucun `IShape`. Mais la forme est créée correctement et est accessible à l'aide de `IElement.Shapes().`.|
 |Enfant de classifieur|Attribut, Opération,<br /><br /> Partie, Port|Automatique : aucun code nécessaire.<br /><br /> Il est affiché dans le cadre du parent.|
-|Comportement|Interaction (séquence),<br /><br /> Activité|Lier le comportement à un diagramme approprié.<br /><br /> Chaque comportement peut être lié au plus à un diagramme à la fois.<br /><br /> Par exemple :<br /><br /> `sequenceDiagram.Bind(interaction);`<br /><br /> `activityDiagram.Bind(activity);`|
+|Comportement|Interaction (séquence),<br /><br /> Activité|Lier le comportement à un diagramme approprié.<br /><br /> Chaque comportement peut être lié au plus à un diagramme à la fois.<br /><br /> Exemple :<br /><br /> `sequenceDiagram.Bind(interaction);`<br /><br /> `activityDiagram.Bind(activity);`|
 |Enfant de comportement|Lignes de vie, messages, actions, nœuds d'objets|Automatique : aucun code nécessaire.<br /><br /> Il est affiché si le parent est lié à un diagramme.|
-|Relationship|Association, généralisation, flux, dépendance|Automatique : aucun code nécessaire.<br /><br /> Il est affiché dans chaque diagramme où les deux extrémités sont affichées.|
+|Relation|Association, généralisation, flux, dépendance|Automatique : aucun code nécessaire.<br /><br /> Il est affiché dans chaque diagramme où les deux extrémités sont affichées.|
 
 ## <a name="GetShapes"></a>Accès aux formes qui représentent un élément
  La forme qui représente un élément appartient aux types :
@@ -54,7 +54,7 @@ Dans cette rubrique :
 
  `IShape<` *ElementType* `>`
 
- où *type_élément* est un type de l'élément de modèle tel que `IClass` ou `IUseCase`.
+ où *ElementType* est un type de l’élément de modèle, par exemple `IClass` ou `IUseCase`.
 
 |||
 |-|-|
@@ -75,7 +75,7 @@ Dans cette rubrique :
 |`anIShape.Move(x, y, [width], [height])`|Déplacez ou redimensionnez une forme.|
 |`IDiagram.EnsureVisible( IEnumerable<IShape> shapes, bool zoomToFit = false)`|Activez la fenêtre et faites défiler le diagramme pour que toutes les formes données soient visibles. Les formes doivent toutes être dans le diagramme. Si `zoomToFit` est true, le diagramme est redimensionné si nécessaire pour que toutes les formes soient visibles.|
 
- Pour obtenir un exemple, consultez [Définition d'une commande d'alignement](#AlignCommand).
+ Pour obtenir un exemple, consultez [définition d’une commande d’alignement](#AlignCommand).
 
 ## <a name="Removing"></a>Pour supprimer une forme d’un diagramme
  Vous pouvez supprimer des formes de certains types d'éléments sans supprimer l'élément.

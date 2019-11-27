@@ -38,7 +38,7 @@ Utilisez le profileur **Chronologie de l'application** pour rechercher et corrig
 5. Windows 7  
   
 > [!NOTE]
-> Vous pouvez collecter et analyser les données d'utilisation de l'UC et les données de consommation d'énergie en même temps que les données de **Chronologie de l'application**. Consultez [exécuter les outils de profilage sans débogage](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
+> Vous pouvez collecter et analyser les données d'utilisation de l'UC et les données de consommation d'énergie en même temps que les données de **Chronologie de l'application** . Consultez [exécuter les outils de profilage sans débogage](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
   
 ## <a name="BKMK_Collect_Timeline_data_for_your_app"></a> Collecter les données de chronologie de l’application  
  Vous pouvez profiler la réactivité de votre application sur votre ordinateur local, sur votre appareil connecté, sur le simulateur ou les émulateurs Visual Studio, ou sur un appareil distant. Consultez [exécuter les outils de profilage sans débogage](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01).  
@@ -61,7 +61,7 @@ Utilisez le profileur **Chronologie de l'application** pour rechercher et corrig
   
 5. Pour arrêter le profilage, revenez à la fenêtre .diagsession et cliquez sur **Arrêter** dans le haut de la fenêtre.  
   
-     Visual Studio analyse les données collectées et affiche les résultats.  
+     Visual Studio analyse les données recueillies et affiche les résultats.  
   
      ![Rapport de profileur de chronologie](../profiling/media/timeline-base.png "TIMELINE_Base")  
   
@@ -80,7 +80,7 @@ Utilisez le profileur **Chronologie de l'application** pour rechercher et corrig
   
  La règle située en haut de la page affiche la chronologie des informations profilées. Cette chronologie s'applique aux deux graphiques **Utilisation de threads d'interface utilisateur** et **Débit visuel** . Vous pouvez limiter la portée du rapport en faisant glisser les barres de navigation sur la chronologie pour sélectionner un segment de la chronologie.  
   
- La chronologie affiche également les marques utilisateur que vous avez insérées, et les événements de cycle de vie de l'activation de l'application.  
+ La chronologie affiche également les marques utilisateur que vous avez insérées, ainsi que les événements du cycle de vie d'activation de l'application.  
   
 ### <a name="BKMK_UI_thread_utilization_graph"></a> Graphique d’utilisation du thread d’interface utilisateur  
  ![Graphique d’utilisation de l’UC](../profiling/media/timeline-cpuutilization.png "TIMELINE_CpuUtilization")  
@@ -110,7 +110,7 @@ Utilisez le profileur **Chronologie de l'application** pour rechercher et corrig
 > Choisissez l'outil **Utilisation de l'UC** ainsi que l'outil **Chronologie de l'application** quand vous démarrez le profilage pour afficher les méthodes de l'application qui s'exécutent sur le thread d'interface utilisateur. Le déplacement d'un code d'application de longue durée vers un thread d'arrière-plan peut améliorer la réactivité de l'interface utilisateur.  
   
 #### <a name="BKMK_Customizing_Timeline_details_"></a> Personnalisation des détails de la chronologie  
- Utilisez la barre à outils **Détails de la chronologie** pour trier, filtrer et spécifier les annotations des entrées de la vue **Détails de la chronologie**.  
+ Utilisez la barre à outils **Détails de la chronologie** pour trier, filtrer et spécifier les annotations des entrées de la vue **Détails de la chronologie** .  
   
 |||  
 |-|-|  

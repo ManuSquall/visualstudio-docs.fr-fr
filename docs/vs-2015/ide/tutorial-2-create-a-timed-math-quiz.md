@@ -23,7 +23,7 @@ Dans ce didacticiel, vous générez un questionnaire dans lequel la personne int
 
 - Générer des nombres aléatoires à l'aide de la classe `Random`.
 
-- Déclencher des événements à une heure spécifique à l'aide d'un contrôle **Timer**.
+- Déclencher des événements à une heure spécifique à l’aide d’un contrôle **Timer**.
 
 - Contrôler le flux d'un programme à l'aide d'instructions `if else`.
 

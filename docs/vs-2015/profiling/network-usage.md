@@ -29,7 +29,7 @@ L’outil de diagnostic **Réseau** de Visual Studio collecte les données relat
 ## <a name="collecting-network-tool-data"></a>Collecte des données de l'outil Réseau  
  Vous devez exécuter l’outil **Réseau** avec un projet Visual Studio ouvert sur l’ordinateur Visual Studio.  
   
-1. Ouvrez le projet dans Visual Studio.  
+1. Ouvrez le projet dans Visual Studio.  
   
 2. Dans le menu, cliquez sur **Déboguer/profileur de performances...** . Choisissez **réseau**, puis **Démarrer**.  
   

@@ -55,37 +55,37 @@ Les diagrammes de modélisation vous aident à comprendre, clarifier et communiq
 
 |**Diagramme**|**Éléments décrits**|
 |-----------------|---------------|
-|[Diagrammes d'activités UML : référence](../modeling/uml-activity-diagrams-reference.md)|Flux de travail entre les actions et les participants dans un processus d'entreprise|
+|[Informations de référence sur les diagrammes d’activités UML](../modeling/uml-activity-diagrams-reference.md)|Flux de travail entre les actions et les participants dans un processus d'entreprise|
 |[Informations de référence sur les diagrammes de composants UML](../modeling/uml-component-diagrams-reference.md)|Composants d'un système, leurs interfaces, ports et relations|
 |[Informations de référence sur les diagrammes de classes UML](../modeling/uml-class-diagrams-reference.md)|Types qui sont utilisés pour stocker et échanger des données dans le système et leurs relations|
-|[Diagrammes de séquence UML : référence](../modeling/uml-sequence-diagrams-reference.md)|Séquences d'interactions entre des objets, des composants, des systèmes ou des acteurs|
-|[Diagrammes de cas d'usage UML : référence](../modeling/uml-use-case-diagrams-reference.md)|Tâches et objectifs de l'utilisateur pris en charge par un système|
+|[Informations de référence sur les diagrammes de séquence UML](../modeling/uml-sequence-diagrams-reference.md)|Séquences d'interactions entre des objets, des composants, des systèmes ou des acteurs|
+|[Informations de référence sur les diagrammes de cas d’usage UML](../modeling/uml-use-case-diagrams-reference.md)|Tâches et objectifs de l'utilisateur pris en charge par un système|
 
- Pour connaître les versions de Visual Studio qui prennent en charge chaque type de diagramme, consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Pour connaître les versions de Visual Studio qui prennent en charge chaque type de diagramme, consultez [prise en charge des versions pour les outils d’architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
  Pour visualiser l'architecture d'un système ou de code existant, créez les diagrammes suivants :
 
 |**Diagramme**|**Éléments décrits**|
 |-----------------|---------------|
-|[Diagrammes de couche : indications](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Diagrammes de couche : référence](../modeling/layer-diagrams-reference.md)|Architecture de haut niveau du système|
-|Cartes de code<br /><br /> [Mapper les dépendances dans vos solutions](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [Rechercher des problèmes potentiels à l’aide des analyseurs de carte du code](../modeling/find-potential-problems-using-code-map-analyzers.md)|Dépendances et autres relations dans le code existant|
+|[Diagrammes de couche : recommandations](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Informations de référence sur les diagrammes de couche](../modeling/layer-diagrams-reference.md)|Architecture de haut niveau du système|
+|Cartes du code<br /><br /> [Mapper les dépendances à travers vos solutions](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [Rechercher des problèmes potentiels à l’aide des analyseurs de carte du code](../modeling/find-potential-problems-using-code-map-analyzers.md)|Dépendances et autres relations dans le code existant|
 |Diagrammes de classes générés par du code<br /><br /> [Utilisation des diagrammes de classes (Concepteur de classes)](../ide/working-with-class-diagrams-class-designer.md)|Types et leurs relations dans le code .NET|
 
 ## <a name="common-tasks"></a>Tâches courantes
 
-|**Rubrique**|**Tâche**|
+|**Sujets**|**Task**|
 |---------------|--------------|
 |[Créer des projets et des diagrammes de modélisation UML](../modeling/create-uml-modeling-projects-and-diagrams.md)|**Créer des modèles** et ajouter des diagrammes.|
 |[Modifier des modèles et des diagrammes UML](../modeling/edit-uml-models-and-diagrams.md)|**Dessinez des diagrammes** pour modifier le modèle.|
 |[Définir des packages et des espaces de noms](../modeling/define-packages-and-namespaces.md)|**Créer des packages** pour diviser un modèle en unités sur lesquelles les différents membres de l’équipe peuvent travailler.|
 |[Générer du code à partir de diagrammes de classes UML](../modeling/generate-code-from-uml-class-diagrams.md)|**C# Générez du code à partir des diagrammes de classes** pour démarrer votre implémentation.|
-|[Personnaliser votre modèle avec des profils et des stéréotypes](../modeling/customize-your-model-with-profiles-and-stereotypes.md)|**Personnaliser les éléments de modèle** à l'aide de stéréotypes pour étendre les éléments de modèle UML standard à des fins spécifiques.|
-|[Lier des éléments de modèle et des éléments de travail](../modeling/link-model-elements-and-work-items.md)|**Créer des liens entre des éléments de modèle et des éléments de travail** pour vous aider à effectuer le suivi des tâches, cas de tests, bogues, spécifications, problèmes ou autres genres de travaux associés à des parties spécifiques de votre modèle.|
+|[Personnaliser votre modèle avec des profils et des stéréotypes](../modeling/customize-your-model-with-profiles-and-stereotypes.md)|**Personnaliser les éléments de modèle** à l’aide de stéréotypes pour étendre les éléments de modèle UML standard à des fins spécifiques.|
+|[Lier des éléments de modèle et des éléments de travail](../modeling/link-model-elements-and-work-items.md)|**Créer des liens entre des éléments de modèle et des éléments de travail** pour faciliter le suivi des tâches, des cas de test, des bogues, des spécifications, des problèmes ou d’autres genres de travaux associés à des parties spécifiques de votre modèle.|
 |[Exporter des diagrammes en tant qu’images](../modeling/export-diagrams-as-images.md)|**Enregistrez votre modèle et vos diagrammes** pour pouvoir les partager avec d’autres utilisateurs, y compris ceux qui n’utilisent pas [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)].|
 
-## <a name="related-tasks"></a>Tâches connexes
+## <a name="related-tasks"></a>Tâches associées
 
-|**Rubrique**|**Tâche**|
+|**Sujets**|**Task**|
 |---------------|--------------|
 |[Visualiser du code](../modeling/visualize-code.md)|Créer des cartes de code et des diagrammes de couche pour mieux comprendre le code inconnu.|
 |[Modéliser les besoins des utilisateurs](../modeling/model-user-requirements.md)|Utiliser des modèles pour clarifier et communiquer les besoins des utilisateurs.|

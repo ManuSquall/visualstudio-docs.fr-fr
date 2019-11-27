@@ -19,7 +19,7 @@ ms.locfileid: "74292538"
 # <a name="run-unit-tests-on-uml-extensions"></a>Exécuter des tests unitaires sur des extensions UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Pour préserver la stabilité de votre code au fil des modifications successives, nous vous recommandons d’écrire des tests unitaires et de les exécuter dans le cadre d’un processus de génération normal. Pour plus d'informations, consultez [Tests unitaires de votre code](../test/unit-test-your-code.md). Pour configurer des tests pour les extensions de modélisation Visual Studio, vous avez besoin de certaines informations clés. En résumé :
+Pour préserver la stabilité de votre code au fil des modifications successives, nous vous recommandons d’écrire des tests unitaires et de les exécuter dans le cadre d’un processus de génération normal. Pour plus d'informations, consultez [Unit Test Your Code](../test/unit-test-your-code.md). Pour configurer des tests pour les extensions de modélisation Visual Studio, vous avez besoin de certaines informations clés. En résumé :
 
 - [Configuration d’un test unitaire pour les extensions VSIX](#Host)
 
@@ -46,7 +46,7 @@ Pour préserver la stabilité de votre code au fil des modifications successives
 ## <a name="requirements"></a>Configuration requise
  Consultez [Spécifications](../modeling/extend-uml-models-and-diagrams.md#Requirements).
 
- Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="Host"></a>Configuration d’un test unitaire pour les extensions VSIX
  Les méthodes contenues dans vos extensions de modélisation fonctionnent généralement avec un diagramme déjà ouvert. Les méthodes utilisent des importations MEF telles que **IDiagramContext** et **ILinkedUndoContext**. Votre environnement de test doit configurer ce contexte avant d’entreprendre l’exécution des tests.
@@ -57,18 +57,18 @@ Pour préserver la stabilité de votre code au fil des modifications successives
 
     1. **Projet d’extension UML.** En règle générale, vous le créez à l’aide des modèles de projet de commande, de mouvement ou de validation. Par exemple, consultez [définir une commande de menu sur un diagramme de modélisation](../modeling/define-a-menu-command-on-a-modeling-diagram.md).
 
-    2. **Projet de test unitaire.** Pour plus d'informations, consultez [Tests unitaires de votre code](../test/unit-test-your-code.md).
+    2. **Projet de test unitaire.** Pour plus d'informations, consultez [Unit Test Your Code](../test/unit-test-your-code.md).
 
 2. Créez une solution [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] qui contient un projet de modélisation UML. Vous utiliserez cette solution comme état initial de vos tests. Elle doit être distincte de la solution dans laquelle vous écrivez l’extension UML et ses tests unitaires. Pour plus d’informations, consultez [créer des projets et des diagrammes de modélisation UML](../modeling/create-uml-modeling-projects-and-diagrams.md).
 
-3. **Dans le projet d'extension UML**, modifiez le fichier .csproj en mode texte et assurez-vous que les lignes suivantes indiquent `true` :
+3. **Dans le projet d’extension UML**, modifiez le fichier .csproj en mode texte et assurez-vous que les lignes suivantes indiquent `true`:
 
     ```
     <CopyBuildOutputToOutputDirectory>true</CopyBuildOutputToOutputDirectory>
         <CopyOutputSymbolsToOutputDirectory>true</CopyOutputSymbolsToOutputDirectory>
     ```
 
-     Pour modifier le fichier .csproj en mode texte, choisissez **Décharger le projet** dans le menu contextuel du projet dans l'Explorateur de solutions. Choisissez ensuite **Modifier ….csproj**. Une fois le texte modifié, choisissez **Recharger le projet**.
+     Pour modifier le fichier .csproj en mode texte, choisissez **Décharger le projet** dans le menu contextuel du projet dans l’Explorateur de solutions. Choisissez ensuite **Modifier ….csproj**. Une fois le texte modifié, choisissez **Recharger le projet**.
 
 4. Dans votre projet d’extension UML, ajoutez la ligne suivante à **Properties\AssemblyInfo.cs**. Cela permet aux tests unitaires d’accéder aux méthodes que vous voulez tester :
 
@@ -76,28 +76,28 @@ Pour préserver la stabilité de votre code au fil des modifications successives
     [assembly:InternalsVisibleTo("MyUnitTests")] // Name of unit tests assembly.
     ```
 
-5. **Dans le projet de test unitaire**, ajoutez les références d’assembly suivantes :
+5. **Dans le projet de test unitaire**, ajoutez les références d’assembly suivantes :
 
     - *Votre projet d’extension UML*
 
-    - **EnvDTE.dll**
+    - **EnvDTE. dll**
 
-    - **Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll**
+    - **Microsoft. VisualStudio. ArchitectureTools. Extensibility. dll**
 
-    - **Microsoft.VisualStudio.ComponentModelHost.dll**
+    - **Microsoft. VisualStudio. ComponentModelHost. dll**
 
-    - **Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll**
+    - **Microsoft. VisualStudio. QualityTools. UnitTestFramework. dll**
 
-    - **Microsoft.VisualStudio.Uml.Interfaces.dll**
+    - **Microsoft. VisualStudio. Uml. interfaces. dll**
 
-    - **Microsoft.VSSDK.TestHostFramework.dll**
+    - **Microsoft. VSSDK. TestHostFramework. dll**
 
 6. Préfixez l’attribut `[HostType("VS IDE")]` à chaque méthode de test, y compris les méthodes d’initialisation.
 
      Le test s’exécutera ainsi dans une instance expérimentale de Visual Studio.
 
 ## <a name="DTE"></a>Accès à DTE et ModelStore
- Écrivez une méthode pour ouvrir un projet de modélisation dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. En règle générale, vous ouvrez une solution une seule fois dans chaque série de tests. Pour exécuter la méthode une seule fois, préfixez la méthode avec l’attribut `[AssemblyInitialize]` . N’oubliez pas que vous avez aussi besoin de l’attribut [HostType("VS IDE")] dans chaque méthode de test.  Par exemple :
+ Écrivez une méthode pour ouvrir un projet de modélisation dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. En règle générale, vous ouvrez une solution une seule fois dans chaque série de tests. Pour exécuter la méthode une seule fois, préfixez la méthode avec l’attribut `[AssemblyInitialize]` . N’oubliez pas que vous avez aussi besoin de l’attribut [HostType("VS IDE")] dans chaque méthode de test.  Exemple :
 
 ```csharp
 using EnvDTE;
@@ -285,7 +285,7 @@ using Microsoft.VSSDK.Tools.VsIdeTesting;
 ...}
 ```
 
- Si vous voulez tester une méthode qui prend une propriété importée comme paramètre, vous pouvez importer la propriété dans votre classe de test et appliquer `SatisfyImportsOnce` à l’instance de test. Par exemple :
+ Si vous voulez tester une méthode qui prend une propriété importée comme paramètre, vous pouvez importer la propriété dans votre classe de test et appliquer `SatisfyImportsOnce` à l’instance de test. Exemple :
 
 ```
 
@@ -336,7 +336,7 @@ using System.ComponentModel.Composition;
 [assembly:InternalsVisibleTo("MyUnitTests")] // Name of unit tests assembly.
 ```
 
- Définir une interface de test définissez une interface qui comprend à la fois les membres publics d’une classe à tester et les propriétés et méthodes supplémentaires pour les membres privés que vous souhaitez que les tests puissent utiliser. Ajoutez cette interface au projet à tester. Par exemple :
+ Définir une interface de test définissez une interface qui comprend à la fois les membres publics d’une classe à tester et les propriétés et méthodes supplémentaires pour les membres privés que vous souhaitez que les tests puissent utiliser. Ajoutez cette interface au projet à tester. Exemple :
 
 ```csharp
 internal interface MyClassTestInterface {
@@ -347,7 +347,7 @@ internal interface MyClassTestInterface {
  }
 ```
 
- Ajoutez les méthodes à la classe à tester pour implémenter les méthodes d’accesseur explicitement. Conservez ces méthodes supplémentaires en dehors de la classe principale en les écrivant dans une définition de classe partielle dans un fichier distinct. Par exemple :
+ Ajoutez les méthodes à la classe à tester pour implémenter les méthodes d’accesseur explicitement. Conservez ces méthodes supplémentaires en dehors de la classe principale en les écrivant dans une définition de classe partielle dans un fichier distinct. Exemple :
 
 ```csharp
 partial public class MyClass
@@ -366,7 +366,7 @@ partial public class MyClass
 [assembly:InternalsVisibleTo("MyUnitTests")] // Name of unit tests assembly.
 ```
 
- Dans les méthodes de test unitaire, utilisez l’interface de test. Par exemple :
+ Dans les méthodes de test unitaire, utilisez l’interface de test. Exemple :
 
 ```csharp
 MyClassTestInterface testInstance = new MyClass();

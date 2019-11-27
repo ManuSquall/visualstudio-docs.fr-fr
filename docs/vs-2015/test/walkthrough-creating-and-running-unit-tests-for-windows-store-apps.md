@@ -102,11 +102,11 @@ Visual Studio inclut la prise en charge des tests unitaires des applications [!I
 
 #### <a name="to-build-the-solution-and-run-the-unit-test-using-test-explorer"></a>Pour générer la solution et exécuter le test unitaire à l'aide de l'Explorateur de tests
 
-1. Dans le menu **Test**, choisissez **Fenêtres**, puis **Explorateur de tests**.
+1. Dans le menu **Test** , choisissez **Fenêtres**, puis **Explorateur de tests**.
 
      L'Explorateur de tests s'affiche et votre test ne figure pas dans la liste.
 
-2. Dans le menu **Générer**, cliquez sur **Générer la solution**.
+2. Dans le menu **Générer** , cliquez sur **Générer la solution**.
 
      Votre test unitaire figure maintenant dans la liste.
 

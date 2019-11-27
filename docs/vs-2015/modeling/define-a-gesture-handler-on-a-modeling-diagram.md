@@ -29,26 +29,26 @@ Dans Visual Studio,vous pouvez définir des commandes qui sont exécutées quand
 ## <a name="requirements"></a>Configuration requise
  Consultez [Spécifications](../modeling/extend-uml-models-and-diagrams.md#Requirements).
 
- Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="creating-a-gesture-handler"></a>Création d’un gestionnaire de mouvements
  Pour définir un gestionnaire de mouvements pour un concepteur UML, vous devez créer une classe qui définit le comportement du gestionnaire de mouvements, puis incorporer cette classe dans une extension d’intégration Visual Studio (VSIX). Cette dernière joue le rôle d’un conteneur capable d’installer le gestionnaire. Deux autres méthodes permettent de définir un gestionnaire de mouvements :
 
-- **Créer un gestionnaire de mouvements dans son propre VSIX à l’aide d’un modèle de projet**. Il s’agit de l’approche la plus rapide. Choisissez cette méthode si vous ne souhaitez pas combiner votre gestionnaire avec d’autres types d’extensions, telles que les extensions de validation, les éléments de boîte à outils personnalisés ou les commandes de menu.
+- **Créer un gestionnaire de mouvements dans son propre VSIX à l’aide d’un modèle de projet.** Il s’agit de l’approche la plus rapide. Choisissez cette méthode si vous ne souhaitez pas combiner votre gestionnaire avec d’autres types d’extensions, telles que les extensions de validation, les éléments de boîte à outils personnalisés ou les commandes de menu.
 
-- **Créer des gestionnaires de mouvements et des projets VSIX distincts**. Adoptez cette approche si vous souhaitez combiner plusieurs types d’extensions dans la même extension VSIX. Par exemple, si votre gestionnaire de mouvements prévoit que le modèle observe des contraintes spécifiques, vous pouvez l’incorporer au même VSIX en tant que méthode de validation.
+- **Créer des gestionnaires de mouvements et des projets VSIX distincts.** Adoptez cette approche si vous souhaitez combiner plusieurs types d’extensions dans la même extension VSIX. Par exemple, si votre gestionnaire de mouvements prévoit que le modèle observe des contraintes spécifiques, vous pouvez l’incorporer au même VSIX en tant que méthode de validation.
 
 #### <a name="to-create-a-gesture-handler-in-its-own-vsix"></a>Pour créer un gestionnaire de mouvements dans son propre VSIX
 
-1. Dans la boîte de dialogue **Nouveau projet**, sous **Projets de modélisation**, cliquez sur **Gesture Extension**.
+1. Dans la boîte de dialogue **Nouveau projet** , sous **Projets de modélisation**, cliquez sur **Extension de mouvement**.
 
 2. Ouvrez le fichier **.cs** dans le nouveau projet et modifiez la classe `GestureExtension` pour implémenter votre gestionnaire de mouvements.
 
     Pour plus d’informations, consultez [Implémentation du gestionnaire de mouvements](#Implementing).
 
-3. Appuyez sur F5 pour tester le gestionnaire de mouvements. Pour plus d'informations, consultez [Exécution du gestionnaire de mouvements](#Executing).
+3. Appuyez sur F5 pour tester le gestionnaire de mouvements. Pour plus d’informations, consultez [Exécution du gestionnaire de mouvements](#Executing).
 
-4. Installez le gestionnaire de mouvements sur un autre ordinateur en copiant le fichier **bin\\\*\\\*. vsix** généré par votre projet. Pour plus d'informations, consultez [Installation et désinstallation d'une extension](#Installing).
+4. Installez le gestionnaire de mouvements sur un autre ordinateur en copiant le fichier **bin\\\*\\\*. vsix** généré par votre projet. Pour plus d’informations, consultez [Installation et désinstallation d’une extension](#Installing).
 
    Voici une autre procédure :
 
@@ -56,9 +56,9 @@ Dans Visual Studio,vous pouvez définir des commandes qui sont exécutées quand
 
 1. Créez un projet de bibliothèque de classes dans une nouvelle solution [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ou dans une solution existante.
 
-   1. Dans le menu **Fichier**, choisissez **Nouveau**, **Projet**.
+   1. Dans le menu **Fichier**, sélectionnez **Nouveau**, **Projet**.
 
-   2. Sous **Modèles installés**, développez **Visual C#** ou **Visual Basic**, puis dans la colonne du milieu, choisissez **Bibliothèque de classes**.
+   2. Sous **Modèles installés**, développez **Visual C#** ou **Visual Basic**, puis dans la colonne du milieu, choisissez **Bibliothèque de classes**.
 
 2. Ajoutez les références suivantes à votre projet.
 
@@ -208,9 +208,9 @@ Dans Visual Studio,vous pouvez définir des commandes qui sont exécutées quand
 
 2. Créez un projet VSIX, sauf si votre solution en comporte déjà un.
 
-    1. Dans l'**Explorateur de solutions**, dans le menu contextuel de la solution, choisissez **Ajouter**, puis **Nouveau projet**.
+    1. Dans l’ **Explorateur de solutions**, dans le menu contextuel de la solution, choisissez **Ajouter**, puis **Nouveau projet**.
 
-    2. Sous **Modèles installés**, développez **Visual C#** ou **Visual Basic**, puis sélectionnez **Extensibilité**. Dans la colonne du milieu, choisissez **Projet VSIX**.
+    2. Sous **Modèles installés**, développez **Visual C#** ou **Visual Basic**, puis sélectionnez **Extensibilité**. Dans la colonne du milieu, choisissez **Projet VSIX**.
 
 3. Définissez le projet VSIX comme projet de démarrage de la solution.
 
@@ -220,7 +220,7 @@ Dans Visual Studio,vous pouvez définir des commandes qui sont exécutées quand
 
     1. Sous l’onglet **Métadonnées** , nommez le VSIX.
 
-    2. Sous l'onglet **Cibles d'installation**, définissez les versions de Visual Studio comme cibles.
+    2. Sous l’onglet **Cibles d’installation** , définissez les versions de Visual Studio comme cibles.
 
     3. Sous l’onglet **Composants** , choisissez **Nouveau**puis, dans la boîte de dialogue, définissez :
 
@@ -239,11 +239,11 @@ Dans Visual Studio,vous pouvez définir des commandes qui sont exécutées quand
 
     Une instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] démarre.
 
-    **Dépannage** : si une nouvelle instance de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ne démarre pas :
+    **Dépannage**: si une nouvelle instance de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ne démarre pas :
 
    - Si vous avez plusieurs projets, vérifiez que le projet VSIX est défini comme projet de démarrage de la solution.
 
-   - Dans l’Explorateur de solutions, dans le menu contextuel du projet de démarrage ou unique, choisissez Propriétés. Dans l’éditeur de propriétés du projet, choisissez l’onglet **Déboguer** . Assurez-vous que la chaîne dans le champ **Démarrer le programme externe** correspond au chemin d’accès complet de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], généralement :
+   - Dans l’Explorateur de solutions, dans le menu contextuel du projet de démarrage ou du projet unique, choisissez Propriétés. Dans l’éditeur de propriétés du projet, choisissez l’onglet **Déboguer** . Assurez-vous que la chaîne dans le champ **Démarrer le programme externe** correspond au chemin d’accès complet de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], généralement :
 
         `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`
 
@@ -253,7 +253,7 @@ Dans Visual Studio,vous pouvez définir des commandes qui sont exécutées quand
 
 4. Faites glisser un élément de l’Explorateur UML sur le diagramme. Votre gestionnaire de glisser-déplacer doit être appelé.
 
-   **Dépannage** : si le gestionnaire de mouvements ne fonctionne pas, vérifiez ce qui suit :
+   **Dépannage**: si le gestionnaire de mouvements ne fonctionne pas, vérifiez ce qui suit :
 
 - Le projet de gestionnaire de mouvements est répertorié en tant que composant MEF sous l’onglet **Composants** de **source.extensions.manifest** dans le projet VSIX.
 
@@ -355,7 +355,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
 
 1. Sur votre ordinateur, recherchez le fichier **.vsix** généré par votre projet VSIX.
 
-    1. Dans l'**Explorateur de solutions**, dans le menu contextuel du projet VSIX, choisissez **Ouvrir le dossier dans l'Explorateur Windows**.
+    1. Dans l’ **Explorateur de solutions**, dans le menu contextuel du projet VSIX, choisissez **Ouvrir le dossier dans l’Explorateur Windows**.
 
     2. Recherchez le fichier **bin\\\*\\** _YourProject_ **. vsix**
 
@@ -365,13 +365,13 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
 
 3. Sur l’ordinateur cible, ouvrez le fichier **.vsix** .
 
-     Le **Programme d’installation des extensions Visual Studio** s’ouvre et installe l’extension.
+     Le**Programme d’installation des extensions Visual Studio** s’ouvre et installe l’extension.
 
 4. Démarrez ou redémarrez [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].
 
 #### <a name="to-uninstall-an-extension"></a>Pour désinstaller une extension
 
-1. Dans le menu **Outils**, choisissez **Extensions et mises à jour**.
+1. Dans le menu **Outils** , choisissez **Extensions et mises à jour**.
 
 2. Développez **Extensions installées**.
 

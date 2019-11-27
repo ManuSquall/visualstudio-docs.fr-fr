@@ -37,15 +37,15 @@ Détectez et corrigez les vulnérabilités open source, puis générez des rappo
 8. Une fois que vous avez réussi à installer WhiteSource Bolt, retournez à la [page d’activation](https://bolt.whitesourcesoftware.com/whitesource-bolt-azure-devops#activate), puis visionnez la vidéo montrant comment effectuer la configuration. 
 9. Pour plus d’informations, visitez la [page des Questions fréquentes (FAQ)](https://bolt.whitesourcesoftware.com/azure/faq/) sur WhiteSource Bolt. 
 
-## <a name="eligibility"></a>Éligibilité
-[WhiteSource Bolt](https://marketplace.visualstudio.com/search?term=whitesource&target=AzureDevOps&category=All%20categories&sortBy=Relevance) is now available free in the [Visual Studio Marketplace. 
+## <a name="eligibility"></a>Eligibility
+[WhiteSource Bolt](https://marketplace.visualstudio.com/search?term=whitesource&target=AzureDevOps&category=All%20categories&sortBy=Relevance) est désormais disponible gratuitement dans le [Visual Studio Marketplace. 
 
-## <a name="support-resources"></a>Ressources de support
+## <a name="support-resources"></a>Ressources de support technique
 - Besoin d’aide avec WhiteSource Bolt ?  Conversez en direct avec un représentant WhiteSource Bolt sur https://www.whitesourcesoftware.com/vse_whitesource_bolt/
 - Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 Veillez à activer ces avantages intéressants pour tirer le meilleur parti de votre abonnement Visual Studio :
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)

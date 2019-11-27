@@ -67,7 +67,7 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
 
 - Code C ou C++ natif ou managé dans des projets, fichiers d’en-tête (.h ou `#include`) ou des fichiers binaires Visual C++
 
-- projets et assemblys X++ créés à partir de modules .NET pour Microsoft Dynamics AX.
+- Projets X++ et assemblys créés à partir de modules .NET pour Microsoft Dynamics AX
 
   **Remarque :** pour les projets autres que C# ou Visual Basic .NET, il existe moins d’options pour démarrer une carte de code ou ajouter des éléments à une carte de code existante. Par exemple, vous ne pouvez pas cliquer avec le bouton droit sur un objet dans l’éditeur de texte d’un projet C++ et l’ajouter à une carte de code. Toutefois, vous pouvez glisser-déplacer des éléments de code individuels ou des fichiers à partir de l’Explorateur de solutions, de l’affichage de classes et de l’Explorateur d’objets.
 
@@ -191,7 +191,7 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
 
 ### <a name="OverviewCompiled"></a> Visualiser les dépendances entre les assemblys ou fichiers binaires
 
-1. [Créez une carte de code vide](#GetStarted) ou ouvrez une carte de code existante (fichier .dgml).
+1. [Créez une carte de code vide](#GetStarted)ou ouvrez une carte de code existante (fichier .dgml).
 
 2. Faites glisser sur la carte les assemblys ou fichiers binaires à représenter sur la carte à partir d’un emplacement externe à Visual Studio. Par exemple, vous pouvez faire glisser des assemblys ou des fichiers binaires à partir de l’Explorateur Windows ou de l’Explorateur de fichiers.
 
@@ -205,7 +205,7 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
 
 ### <a name="see-specific-dependencies-in-your-solution"></a>Visualiser les dépendances spécifiques dans votre solution
 
-1. Ouvrez l’ **Explorateur de solutions**. Sélectionnez les projets, références d’assembly, dossiers, fichiers, types et membres qui vous intéressent. Pour rechercher les éléments qui ont des dépendances sur les types ou les membres, ouvrez le menu contextuel du type ou du membre depuis l’ **Explorateur de solutions**. Choisissez le type de dépendance, puis sélectionnez les résultats.
+1. Ouvrez l'**Explorateur de solutions**. Sélectionnez les projets, références d’assembly, dossiers, fichiers, types et membres qui vous intéressent. Pour rechercher les éléments qui ont des dépendances sur les types ou les membres, ouvrez le menu contextuel du type ou du membre depuis l’ **Explorateur de solutions**. Choisissez le type de dépendance, puis sélectionnez les résultats.
 
 2. Créez une carte de vos éléments et de leurs membres. Dans la barre d’outils **Explorateur de solutions** , cliquez sur **afficher sur la carte de code**![créer un graphique à partir des nœuds sélectionnés](../modeling/media/createnewgraphfromselectedbutton.gif "CreateNewGraphFromSelectedButton").
 
@@ -232,9 +232,9 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
 
      Pour afficher les membres qui figurent dans le code, mais qui n’apparaissent pas sur la carte, cliquez sur l’icône récupérer à l’icône des **enfants** récupérer les ![enfants](../modeling/media/dependencygraph-deletednodesicon.png "DependencyGraph_DeletedNodesIcon") dans le coin supérieur gauche d’un groupe.
 
-6. Pour afficher d’autres d’éléments associés à ceux présents sur la carte, sélectionnez un élément et choisissez **Afficher les éléments associés** dans la barre d’outils de la carte de code, puis sélectionnez le type d’éléments associés à ajouter à la carte. Vous pouvez également sélectionner un ou plusieurs éléments, ouvrir le menu contextuel, puis choisir l’option **Afficher** pour le type d’éléments associés à ajouter à la carte. Par exemple :
+6. Pour afficher d’autres d’éléments associés à ceux présents sur la carte, sélectionnez un élément et choisissez **Afficher les éléments associés** dans la barre d’outils de la carte de code, puis sélectionnez le type d’éléments associés à ajouter à la carte. Vous pouvez également sélectionner un ou plusieurs éléments, ouvrir le menu contextuel, puis choisir l’option **Afficher** pour le type d’éléments associés à ajouter à la carte. Exemple :
 
-     Pour un **assembly**, choisissez :
+     Pour un **assembly**, choisissez :
 
     |||
     |-|-|
@@ -256,7 +256,7 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
     |**Afficher tous les types de base**|Ajoutez la hiérarchie de classe de base ou d’interface de manière récursive.|
     |**Afficher tous les types dérivés**|Pour une classe, ajoutez toutes les classes dérivées de manière récursive.<br /><br /> Pour une interface, ajoutez toutes les interfaces dérivées et les structures et classes d’implémentation de manière récursive.|
 
-     Pour une **méthode**, choisissez :
+     Pour une **méthode**, choisissez :
 
     |||
     |-|-|
@@ -284,7 +284,7 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
      ![Utiliser le volet filtre pour simplifier l’affichage](../modeling/media/almcodemapfilterpane.png "ALMCodeMapFilterPane")
 
 ## <a name="SeeSourceHeader"></a> Visualiser les dépendances entre les fichiers sources et les fichiers d’en-tête C et C++
- Si vous souhaitez créer des cartes plus complètes pour des projets C++, définissez l’option du compilateur d’informations de consultation ( **/FR**) sur ces projets. Consultez [/FR, /Fr (Créer un fichier .sbr)](https://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896). Sinon, un message vous invite à définir cette option. Si vous sélectionnez **OK**, l’option est définie uniquement pour la carte active. Vous pouvez choisir de masquer le message pour toutes les cartes ultérieures. Si vous masquez ce message, vous pouvez le faire réapparaître. Affectez à la clé de Registre suivante la valeur `0` ou supprimez-la :
+ Si vous souhaitez créer des cartes plus complètes pour des projets C++, définissez l’option du compilateur d’informations de consultation ( **/FR**) sur ces projets. Consultez [/FR, /Fr (Create .Sbr File)](https://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896). Sinon, un message vous invite à définir cette option. Si vous sélectionnez **OK**, l’option est définie uniquement pour la carte active. Vous pouvez choisir de masquer le message pour toutes les cartes ultérieures. Si vous masquez ce message, vous pouvez le faire réapparaître. Affectez à la clé de Registre suivante la valeur `0` ou supprimez-la :
 
  **HKEY_CURRENT_USER \Software\Microsoft\VisualStudio\14.0\NativeProvider : AutoEnableSbr**
 
@@ -312,11 +312,11 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
 |Échec de la génération de la carte de code.|Aucun projet de la solution n’a été généré correctement.|Corrigez les erreurs de build qui se sont produites, puis régénérez la carte.|
 |[!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ne répond pas quand vous essayez de générer une carte de code à partir du menu **Architecture** .|Le fichier de base de données du programme (.pdb) peut être endommagé.<br /><br /> Un fichier .pdb stocke des informations de débogage, telles que des informations sur le type, la méthode et le fichier source.|Régénérez la solution puis recommencez.|
 |Certains paramètres de la base de données de navigation IntelliSense sont désactivés.|Certains paramètres IntelliSense peuvent être désactivés dans la boîte de dialogue [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]**Options** .|Activez les paramètres.<br /><br /> Consultez [options, éditeur de texte, CC++/, avancé](../ide/reference/options-text-editor-c-cpp-advanced.md).|
-|Le message **Méthodes inconnues** s’affiche sur un nœud de méthode.<br /><br /> Ce problème se produit car le nom de la méthode ne peut pas être résolu.|Le fichier binaire peut ne pas avoir de table de réadressage de base.|Activez l’option **/FIXED:NO** dans l’éditeur de liens.<br /><br /> Consultez [/FIXED (Adresse de base fixe)](https://msdn.microsoft.com/library/929bba5e-b7d8-40ed-943e-056aa3710fc5).|
+|Le message **Méthodes inconnues** s’affiche sur un nœud de méthode.<br /><br /> Ce problème se produit car le nom de la méthode ne peut pas être résolu.|Le fichier binaire peut ne pas avoir de table de réadressage de base.|Activez l’option **/FIXED:NO** dans l’éditeur de liens.<br /><br /> Consultez [/FIXED (Fixed Base Address)](https://msdn.microsoft.com/library/929bba5e-b7d8-40ed-943e-056aa3710fc5).|
 ||Le fichier de base de données du programme (.pdb) peut ne pas être généré.<br /><br /> Un fichier .pdb stocke des informations de débogage, telles que des informations sur le type, la méthode et le fichier source.|Activez l’option **/DEBUG** dans l’éditeur de liens.<br /><br /> Consultez [/DEBUG (Generate Debug Info)](https://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103).|
 ||Impossible d’ouvrir ou de localiser le fichier .pdb aux emplacements attendus.|Assurez-vous que le fichier .pdb existe dans les emplacements attendus.|
 ||Les informations de débogage ont été supprimées du fichier .pdb.|Si l’option **/PDBSTRIPPED** a été utilisée dans l’éditeur de liens, incluez à la place le fichier .pdb complet.<br /><br /> Consultez [/PDBSTRIPPED (Strip Private Symbols)](https://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55).|
-||L’appelant n’est pas une fonction ; il correspond à un thunk dans le fichier binaire ou à un pointeur dans la section de données.|Lorsque l’appelant est un thunk, essayez d’utiliser `_declspec(dllimport)` pour éviter le thunk.<br /><br /> Reportez-vous à :<br /><br /> -   [règles générales et limitations](https://msdn.microsoft.com/library/6c48902d-4259-4761-95d4-e421d69aa050)<br />-   [importation des appels de fonction à l’aide de __declspec (dllimport)](https://msdn.microsoft.com/library/6b53c616-0c6d-419a-8e2a-d2fff20510b3)<br />-   [dllexport, dllimport](https://msdn.microsoft.com/library/ff95b645-ef55-4e72-b848-df44657b3208)|
+||L’appelant n’est pas une fonction ; il correspond à un thunk dans le fichier binaire ou à un pointeur dans la section de données.|Lorsque l’appelant est un thunk, essayez d’utiliser `_declspec(dllimport)` pour éviter le thunk.<br /><br /> Reportez-vous à :<br /><br /> -   [règles générales et limitations](https://msdn.microsoft.com/library/6c48902d-4259-4761-95d4-e421d69aa050)<br />-   [importation des appels de fonction à l’aide de __declspec (dllimport)](https://msdn.microsoft.com/library/6b53c616-0c6d-419a-8e2a-d2fff20510b3)<br />-   [dllexport, DllImport](https://msdn.microsoft.com/library/ff95b645-ef55-4e72-b848-df44657b3208)|
 
 ## <a name="RenderMoreQuickly"></a> Accélérer le rendu des cartes de code
  Quand vous générez une carte pour la première fois, Visual Studio indexe toutes les dépendances qu’il trouve. Ce processus peut prendre un certain temps, en particulier pour les solutions importantes, mais il améliore les performances ultérieures. Si votre code change, Visual Studio réindexe uniquement le code mis à jour. Pour réduire le temps nécessaire au rendu de la carte, considérez les points suivants :
@@ -329,7 +329,7 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
 
 - Désactivez l’ajout automatique d’éléments parents à l’aide du bouton **Inclure les parents** situé dans la barre d’outils de la carte de code.
 
-- Modifiez directement le fichier de la carte de code pour supprimer les nœuds et les liens dont vous n’avez pas besoin. La modification de la carte n’affecte pas le code sous-jacent. Consultez [Personnaliser des cartes de code en modifiant les fichiers DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
+- Modifiez directement le fichier de la carte de code pour supprimer les nœuds et les liens dont vous n’avez pas besoin. La modification de la carte n’affecte pas le code sous-jacent. Consultez [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
   ![Boutons ignorer la build et inclure les parents](../modeling/media/codemapsfilterskipbuildicons.png "CodeMapsFilterSkipBuildIcons")
 

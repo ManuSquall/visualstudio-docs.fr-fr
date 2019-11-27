@@ -38,9 +38,9 @@ Les styles et les modèles des éléments du concepteur XAML sont stockés dans 
 
 3. Dans la zone **Nom (Clé)** , entrez un nom de clé. C'est le nom que vous pouvez utiliser pour que d'autres éléments fassent référence à la ressource.
 
-4. Sous **Définir dans**, choisissez l'option qui spécifie où vous souhaitez définir la ressource :
+4. Sous **Définir dans**, choisissez l’option qui spécifie où vous voulez définir la ressource :
 
-    - Pour que la ressource soit disponible pour n'importe quel document dans votre application, choisissez **Application**.
+    - Pour que la ressource soit disponible pour n’importe quel document dans votre application, choisissez **Application**.
 
     - Pour qu’elle soit disponible seulement pour le document actif, choisissez **Ce document**.
 
@@ -54,7 +54,7 @@ Les styles et les modèles des éléments du concepteur XAML sont stockés dans 
 
 1. Dans la fenêtre Structure du document, choisissez l'élément auquel vous souhaitez appliquer une ressource.
 
-2. Effectuez l’une des opérations suivantes :
+2. Effectuez l'une des opérations suivantes :
 
    - Appliquer une ressource à une propriété. Dans la fenêtre Propriétés, cliquez sur le marqueur de propriété en regard de la valeur de propriété, choisissez **Ressource locale** ou **Ressource système**, puis sélectionnez une ressource disponible dans la liste qui apparaît.
 

@@ -114,7 +114,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content. 
 11. Pour voir comment la règle margin-left est appliquée, sélectionnez l’onglet **Calculé** et regardez sous la règle margin-left. Vous pouvez voir que la règle est définie avec une valeur 5em, mais la valeur calculée est égale à 66.66px ou 146.66px, en fonction de votre périphérique cible.  
   
     > [!TIP]
-    > L'onglet **Calculé** montre que la règle margin-left est définie dans le sélecteur CSS `..hubpage .hub. section4 .sub-image-row img`, qui se trouve dans hub.css. Dans cette application de démonstration, c’est là que vous devez apporter la correction.  
+    > L’onglet **calculé** montre que la règle margin-left est définie dans le sélecteur CSS `..hubpage .hub. section4 .sub-image-row img`, qui se trouve dans Hub. css. Dans cette application de démonstration, c’est là que vous devez apporter la correction.  
   
      Vous pouvez également utiliser l’onglet **Disposition** pour tester des modifications apportées aux valeurs de disposition.  
   

@@ -18,7 +18,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74299937"
 ---
-# <a name="talk-to-us"></a>Talk to Us
+# <a name="talk-to-us"></a>Nous contacter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pour obtenir la documentation la plus récente sur Visual Studio, consultez [nous contacter](https://docs.microsoft.com/visualstudio/ide/feedback-options).
@@ -26,7 +26,7 @@ Pour obtenir la documentation la plus récente sur Visual Studio, consultez [nou
 Vos idées nous intéressent pour améliorer notre documentation. Nous ne pouvons pas vous répondre personnellement, mais nous veillerons à ce que vos commentaires parviennent à la bonne personne.
 
 ## <a name="i-likedislike-something-in-the-visual-studio-documentation"></a>J’aime/Je n’aime pas quelque chose dans la documentation de Visual Studio
- Utilisez notre bouton Commentaires (**Cette page vous a-t-elle été utile ?** au bas de la page. Vous trouverez ce bouton sur toutes les pages MSDN. Si vous n’arrivez pas à trouver ce que vous cherchez, indiquez-nous les informations recherchées.
+ Utilisez notre bouton Commentaires (**Cette page vous a-t-elle été utile ?** au bas de la page. Vous trouverez ce bouton sur toutes les pages MSDN. Si vous n’arrivez pas à trouver ce que vous cherchez, indiquez-nous les informations recherchées.
 
 ## <a name="i-would-like-to-report-a-problem-with-visual-studio"></a>Je souhaite signaler un problème avec Visual Studio
  Si vous rencontrez des problèmes lors de l’utilisation de Visual Studio, tels que des pannes, des performances inattendues, un comportement inattendu, etc., veuillez nous signaler le problème en cliquant avec le bouton droit sur l’icône de commentaires en regard de **lancement rapide**, ou en choisissant **aide &#124; envoyer des commentaires &#124; signaler un problème** dans le menu principal. Pour plus d’informations, consultez [Guide pratique pour signaler un problème avec Visual Studio](../ide/how-to-report-a-problem-with-visual-studio-2015.md).

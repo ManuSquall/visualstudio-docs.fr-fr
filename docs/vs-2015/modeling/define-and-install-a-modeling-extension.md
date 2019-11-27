@@ -27,7 +27,7 @@ Dans Visual Studio, vous pouvez définir des extensions de diagrammes de modéli
 ## <a name="requirements"></a>Configuration requise
  Consultez [Spécifications](../modeling/extend-uml-models-and-diagrams.md#Requirements).
 
- Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="creating-a-modeling-extension-solution"></a>Création d’une solution d’extension de modélisation
  Pour définir une extension de modélisation, vous devez créer une solution contenant ces projets :
@@ -42,7 +42,7 @@ Dans Visual Studio, vous pouvez définir des extensions de diagrammes de modéli
 
 #### <a name="to-create-a-class-library-project-for-menu-commands-gesture-handlers-or-validation"></a>Pour créer un projet de bibliothèque de classes pour des commandes de menu, des gestionnaires de mouvements ou la validation
 
-1. Dans le menu **Fichier**, choisissez **Nouveau**, **Projet**.
+1. Dans le menu **Fichier**, sélectionnez **Nouveau**, **Projet**.
 
 2. Sous **Modèles installés**, sélectionnez **Visual C#** ou **Visual Basic**, puis choisissez **Bibliothèque de classes**.
 
@@ -52,29 +52,29 @@ Dans Visual Studio, vous pouvez définir des extensions de diagrammes de modéli
 
 2. Créez un projet VSIX.
 
-    1. Dans l'**Explorateur de solutions**, dans le menu contextuel de la solution, choisissez **Ajouter**, puis **Nouveau projet**.
+    1. Dans l’ **Explorateur de solutions**, dans le menu contextuel de la solution, choisissez **Ajouter**, puis **Nouveau projet**.
 
-    2. Sous **Modèles installés**, développez **Visual C#** ou **Visual Basic**, puis sélectionnez **Extensibilité**. Dans la colonne du milieu, choisissez **Projet VSIX**.
+    2. Sous **Modèles installés**, développez **Visual C#** ou **Visual Basic**, puis sélectionnez **Extensibilité**. Dans la colonne du milieu, choisissez **Projet VSIX**.
 
 3. Définissez le projet VSIX comme projet de démarrage de la solution.
 
-    - Dans l'Explorateur de solutions, dans le menu contextuel du projet VSIX, choisissez **Définir comme projet de démarrage**.
+    - Dans l’Explorateur de solutions, dans le menu contextuel du projet VSIX, choisissez **Définir comme projet de démarrage**.
 
 4. Ouvrez **source.extension.vsixmanifest**. Le fichier s’ouvre dans l’éditeur de manifeste.
 
-5. Sous l'onglet **Métadonnées**, définissez les champs de nom et de description de l'extension VSIX.
+5. Sous l’onglet **Métadonnées** , définissez les champs de nom et de description de l’extension VSIX.
 
-6. Sous l'onglet **Cibles d'installation**, choisissez **Nom** et définissez les versions de Visual Studio comme cibles.
+6. Sous l’onglet **Cibles d’installation** , choisissez **Nom** et définissez les versions de Visual Studio comme cibles.
 
-7. Sous l'onglet **Composants**, ajoutez vos composants à l'extension Visual Studio.
+7. Sous l’onglet **Composants** , ajoutez vos composants à l’extension Visual Studio.
 
     1. Choisissez **Nouveau**.
 
-    2. Pour un composant avec du code, définissez les champs suivants dans la boîte de dialogue **Ajouter un nouveau composant** :
+    2. Pour un composant avec du code, définissez les champs suivants dans la boîte de dialogue **Ajouter un nouveau composant** :
 
         |||
         |-|-|
-        |**Type** =|**Microsoft.VisualStudio.MefComponent**|
+        | = de **type**|**Microsoft. VisualStudio. MefComponent**|
         |**Source** =|**Projet dans la solution actuelle**|
         | = du **projet**|*Votre projet de bibliothèque de classes*|
         |**Incorporer dans ce dossier** =|*vidé*|
@@ -107,14 +107,14 @@ Dans Visual Studio, vous pouvez définir des extensions de diagrammes de modéli
 
      Votre extension se charge et s’exécute.
 
-3. Si vous avez utilisé l'option **Exécuter sans débogage** mais que vous souhaitez utiliser le débogueur, revenez à l'instance principale de Visual Studio. Dans le menu **Déboguer**, cliquez sur **Attacher au processus**. Dans la boîte de dialogue, sélectionnez l’instance expérimentale de Visual Studio, dont le nom de programme est **devenv**.
+3. Si vous avez utilisé l’option **Exécuter sans débogage** mais que vous souhaitez utiliser le débogueur, revenez à l’instance principale de Visual Studio. Dans le menu **Déboguer** , cliquez sur **Attacher au processus**. Dans la boîte de dialogue, sélectionnez l’instance expérimentale de Visual Studio, dont le nom de programme est **devenv**.
 
 ## <a name="Installing"></a>Installation et désinstallation d’une extension
  Procédez comme suit pour exécuter votre extension dans l’instance principale de Visual Studio sur votre ordinateur ou sur d’autres ordinateurs.
 
 1. Sur votre ordinateur, recherchez le fichier **.vsix** généré par votre projet d’extension.
 
-    1. Dans l'**Explorateur de solutions**, dans le menu contextuel de votre projet, choisissez **Ouvrir le dossier dans l'Explorateur Windows**.
+    1. Dans l’ **Explorateur de solutions**, dans le menu contextuel de votre projet, choisissez **Ouvrir le dossier dans l’Explorateur Windows**.
 
     2. Recherchez le fichier **bin\\\*\\** _YourProject_ **. vsix**
 
@@ -124,21 +124,21 @@ Dans Visual Studio, vous pouvez définir des extensions de diagrammes de modéli
 
 3. Sur l’ordinateur cible, ouvrez le fichier **.vsix** , par exemple en double-cliquant dessus.
 
-     Le **Programme d’installation des extensions Visual Studio** s’ouvre et installe l’extension.
+     Le**Programme d’installation des extensions Visual Studio** s’ouvre et installe l’extension.
 
 4. Démarrez ou redémarrez Visual Studio.
 
 #### <a name="to-uninstall-an-extension"></a>Pour désinstaller une extension
 
-1. Dans le menu **Outils**, choisissez **Extensions et mises à jour**.
+1. Dans le menu **Outils** , choisissez **Extensions et mises à jour**.
 
 2. Développez **Extensions installées**.
 
-3. Sélectionnez l'extension, puis cliquez sur **Désinstaller**.
+3. Sélectionnez l’extension, puis cliquez sur **Désinstaller**.
 
    Exceptionnellement, une extension défaillante ne parvient pas à se charger et crée un rapport dans la fenêtre d’erreur, mais ne s’affiche pas dans le Gestionnaire d’extensions. Dans ce cas, vous pouvez supprimer l’extension en supprimant le fichier à l’emplacement *suivant, où* *% LocalAppData%* est généralement le nom de \AppData\Local : \Utilisateurs\\*nom d’utilisateur*:
 
-   *%LocalAppData%* **\Microsoft\VisualStudio\\[version]\Extensions**
+   *% LocalAppData%* **\Microsoft\VisualStudio\\[version] \Extensions**
 
 ## <a name="see-also"></a>Voir aussi
  [Définir un profil pour étendre UML](../modeling/define-a-profile-to-extend-uml.md) [définir un élément de boîte à outils de modélisation personnalisé](../modeling/define-a-custom-modeling-toolbox-item.md) [définir des contraintes de validation pour les modèles UML](../modeling/define-validation-constraints-for-uml-models.md) [définir une commande de menu sur un diagramme de modélisation](../modeling/define-a-menu-command-on-a-modeling-diagram.md)

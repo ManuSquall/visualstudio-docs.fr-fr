@@ -26,9 +26,9 @@ Vous pouvez écrire du code pour créer et mettre à jour des diagrammes de couc
 
  Pour plus d’informations sur les diagrammes de couche, consultez :
 
-- [Diagrammes de couche : référence](../modeling/layer-diagrams-reference.md)
+- [Informations de référence sur les diagrammes de couche](../modeling/layer-diagrams-reference.md)
 
-- [Diagrammes de couche : indications](../modeling/layer-diagrams-guidelines.md)
+- [Diagrammes de couche : recommandations](../modeling/layer-diagrams-guidelines.md)
 
 - [Créer des diagrammes de couche à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md)
 
@@ -45,7 +45,7 @@ Vous pouvez écrire du code pour créer et mettre à jour des diagrammes de couc
 
   Une version appropriée de Visual Studio doit être installée sur l’ordinateur où vous voulez exécuter vos extensions de couche. Pour plus d’informations, consultez [déployer une extension de modèle de couche](../modeling/deploy-a-layer-model-extension.md).
 
-  Pour connaître les versions de Visual Studio qui prennent en charge les diagrammes de couche, consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+  Pour connaître les versions de Visual Studio qui prennent en charge les diagrammes de couche, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="in-this-section"></a>Dans cette section
  [Ajouter des commandes et des mouvements aux diagrammes de couche](../modeling/add-commands-and-gestures-to-layer-diagrams.md)

@@ -64,13 +64,13 @@ Cette rubrique contient les sections suivantes :
 
      ![Boîte de dialogue Nouveau projet, exemples installés](../ide/media/buildwalk-newprojectdlgintrotowpfsample.png "BuildWalk_NewProjectdlgIntrotoWPFsample")
 
-     OR
+     \- OU -
 
      Nommez la solution `IntroWPFvb` pour Visual Basic.
 
      ![Boîte de dialogue Nouveau projet, Visual Basic exemple](../ide/media/buildwalk-newprojectdlgintrotowpfsamplevb.png "BuildWalk_NewProjectdlgIntrotoWPFsampleVB")
 
-4. Sélectionnez le bouton **OK** .
+4. Choisissez le bouton **OK**.
 
 ## <a name="BKMK_CreateBuildConfig"></a>Créer une configuration de build personnalisée
 
@@ -96,7 +96,7 @@ Vous pouvez modifier ou créer des configurations et des paramètres de platefor
 
     ![Boîte de dialogue nouvelle plateforme de solution](../ide/media/buildwalk-newsolutionplatform.png "BuildWalk_NewSolutionPlatform")
 
-6. Sélectionnez le bouton **OK** .
+6. Choisissez le bouton **OK**.
 
    La configuration de la solution active a été remplacée par la configuration de test et la plateforme de la solution active a été définie sur x64.
 

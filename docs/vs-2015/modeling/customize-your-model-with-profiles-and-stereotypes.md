@@ -23,9 +23,9 @@ ms.locfileid: "74301196"
 # <a name="customize-your-model-with-profiles-and-stereotypes"></a>Personnaliser votre modèle avec des profils et des stéréotypes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Dans Visual Studio, vous pouvez adapter les éléments de modèle UML standard, tels que les classes et les composants, pour les personnaliser à des fins spécifiques. Vous pouvez appliquer un *stéréotype* à un élément de modèle qui peut modifier la liste des propriétés de l'élément. Les stéréotypes sont définis dans des collections appelées *profils*.
+Dans Visual Studio, vous pouvez adapter les éléments de modèle UML standard, tels que les classes et les composants, pour les personnaliser à des fins spécifiques. Vous pouvez appliquer un *stéréotype* à un élément de modèle qui peut modifier la liste des propriétés de l’élément. Les stéréotypes sont définis dans des collections appelées *profils*.
 
- Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
  Pour utiliser un stéréotype, vous liez un package à un profil. Cela vous permet d'appliquer les stéréotypes définis dans le profil aux éléments du package. Certains profils sont installés avec Visual Studio. Vous pouvez par ailleurs définir vos propres profils.
 

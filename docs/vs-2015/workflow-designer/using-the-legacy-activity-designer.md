@@ -31,22 +31,22 @@ Cette rubrique décrit comment utiliser le concepteur d'activités dans le [!INC
 ## <a name="creating-a-custom-activity"></a>Création d'une activité personnalisée
  Procédez comme suit pour créer une activité personnalisée à l'aide du concepteur d'activités :
 
-1. Dans le menu **Projet**, cliquez sur **Ajouter une activité**.
+1. Dans le menu **projet** , cliquez sur **Ajouter une activité**.
 
-2. Sélectionnez le modèle **Activité** ou **Activité (avec séparation de code)** .
+2. Sélectionnez le modèle **activité** ou **activité (avec séparation de code)** .
 
-   1. Utilisez le modèle **Activité** pour créer une activité comportant la définition d'activité et le code utilisateur dans le même fichier de code.
+   1. Utilisez le modèle d' **activité** pour créer une activité avec la définition d’activité et le code utilisateur dans le même fichier de code.
 
-   2. Utilisez le modèle **Activité (avec séparation de code)** pour créer une activité comportant la définition d'activité sous forme de balisage du workflow et le code utilisateur dans un fichier de code séparé.
+   2. Utilisez le modèle **activité (avec séparation de code)** pour créer une activité avec la définition d’activité exprimée sous forme de balisage de workflow et le code utilisateur dans un fichier de code séparé.
 
-3. Tapez un nom d'activité ou conservez le nom par défaut, puis cliquez sur **Ajouter**.
+3. Tapez un nom d’activité ou conservez le nom par défaut, puis cliquez sur **Ajouter**.
 
    Vous pouvez également créer un ensemble d’activités personnalisées en créant un nouveau projet de type **bibliothèque d’activités de workflow**. Pour plus d’informations sur ce type de projet, consultez [Comment : créer une bibliothèque d’activités de workflow (héritée)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md).
 
 ## <a name="configuring-an-activity"></a>Configuration d'une activité
  Lorsque le concepteur d'activités est actif, vous pouvez utiliser l'explorateur de propriétés pour configurer les propriétés répertoriées dans le tableau suivant.
 
-|Les|Comments|
+|Propriété|Commentaires|
 |--------------|--------------|
 |**Nom**|Nom de l'activité.|
 |**Classe de base**|Classe de base dont dérive l'activité. La classe de base par défaut est [SequenceActivity](https://go.microsoft.com/fwlink?LinkID=65020). Dans la fenêtre **Propriétés** , cliquez sur les points de suspension de la **classe de base** **[...]** pour sélectionner une autre classe de base dans la [boîte de dialogue Rechercher et sélectionner un type .net (hérité)](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md).|

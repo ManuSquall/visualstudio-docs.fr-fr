@@ -29,7 +29,7 @@ Dans cette procédure pas à pas, vous allez créer une simple application WPF (
 
 1. Dans le menu **FICHIER**, pointez sur **Nouveau** puis sélectionnez **Projet**.
 
-     La boîte de dialogue **Nouveau projet** s’affiche.
+     La boîte de dialogue **Nouveau projet** s'affiche.
 
 2. Dans le volet **Installé**, développez **Visual C#** puis sélectionnez **Bureau Windows**.
 
@@ -141,7 +141,7 @@ Dans cette procédure pas à pas, vous allez créer une simple application WPF (
 
 7. Sélectionnez l’option **Enregistrer les actions, modifier le mappage de l’interface utilisateur ou ajouter des assertions** et choisissez **OK**.
 
-     L'UIMap – Générateur de test codé de l'interface utilisateur apparaît et la fenêtre Visual Studio est réduite.
+     L'UIMap – Générateur de test codé de l'interface utilisateur apparaît, et la fenêtre Visual Studio est réduite.
 
      Pour plus d’informations sur les options de la boîte de dialogue, consultez [Création de tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).
 
@@ -378,7 +378,7 @@ Dans cette procédure pas à pas, vous allez créer une simple application WPF (
 ### <a name="hands-on-lab"></a>Ateliers pratiques
  [Laboratoire virtuel MSDN : Introduction à la création de tests codés de l’interface utilisateur avec Visual Studio 2010](https://go.microsoft.com/fwlink/?LinkID=22508)
 
-### <a name="faq"></a>FAQ
+### <a name="faq"></a>Forum aux questions
  [FAQ concernant les tests codés de l’interface utilisateur - 1](https://go.microsoft.com/fwlink/?LinkID=230576)
 
  [FAQ concernant les tests codés de l’interface utilisateur - 2](https://go.microsoft.com/fwlink/?LinkID=230578)

@@ -9,12 +9,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4b9f55f0dc7d2b0a9fb57fa6177cd8a250f6f62
-ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
+ms.openlocfilehash: 10a325c75179ed6917e1772bb9e17f2237e4ee17
+ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73024836"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74538953"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Rechercher les modifications de code et d'autres historiques avec CodeLens
 
@@ -61,7 +61,7 @@ Vous pouvez rechercher des références dans du code C# ou Visual Basic.
 
 3. Pour ouvrir le fichier contenant la référence, double-cliquez sur celle-ci.
 
-### <a name="code-maps"></a>Cartes de code
+### <a name="code-maps"></a>Cartes du code
 
 Pour visualiser les relations entre le code et ses références, [créez une carte de code](../modeling/map-dependencies-across-your-solutions.md). Dans le menu contextuel de la carte de code, sélectionnez **Afficher toutes les références**.
 
@@ -95,7 +95,7 @@ C’est ce que vous voyez quand vous utilisez Team Foundation Version Control (T
 
 ![CodeLens : obtenir l'historique des modifications de votre code dans TFVC](../ide/media/codelens-code-changes.png)
 
-La période prise en charge par défaut s'étend sur les 12 derniers mois. Si votre code est stocké dans Team Foundation Server, vous pouvez changer la période de temps en exécutant la [commande TFSConfig](/tfs/server/ref/command-line/tfsconfig-cmd) avec la [commande CodeIndex](../ide/codeindex-command.md) et l’indicateur **/indexHistoryPeriod**.
+La période prise en charge par défaut s'étend sur les 12 derniers mois. Si votre code est stocké dans Team Foundation Server, vous pouvez changer la période de temps en exécutant la [commande TFSConfig](/azure/devops/server/command-line/tfsconfig-cmd) avec la [commande CodeIndex](../ide/codeindex-command.md) et l’indicateur **/indexHistoryPeriod**.
 
 Pour voir un historique détaillé de toutes les modifications, notamment celles d’il y a plus d’un an, choisissez **Afficher toutes les modifications de fichier** :
 
@@ -237,7 +237,7 @@ Vous pouvez découvrir les tests unitaires qui existent pour votre code C# ou Vi
 
 7. Pour connaître le nombre de personnes qui ont modifié ce test, savoir qui a modifié ce test ou connaître le nombre de modifications apportées à ce test, [recherchez l’historique de votre code et les éléments liés](#find-changes-in-your-code).
 
-## <a name="keyboard-shortcuts"></a>Raccourcis clavier
+## <a name="keyboard-shortcuts"></a>raccourcis clavier
 
 Pour utiliser le clavier pour sélectionner des indicateurs, maintenez enfoncée la touche **Alt** pour afficher les touches numériques associées, puis appuyez sur le numéro qui correspond à l’indicateur que vous voulez sélectionner.
 
@@ -266,7 +266,7 @@ Activez et désactivez les indicateurs de niveau fichier CodeLens à l'aide des 
 
 - Assurez-vous que CodeLens est activé. Accédez à **Outils** > **Options** > **Éditeur de texte** > **Tous les langages** > **CodeLens**.
 
-- Si votre code est stocké dans TFS, assurez-vous que l'indexation de code est activée en utilisant la [commande CodeIndex](../ide/codeindex-command.md) avec la [commande TFS Config](/tfs/server/ref/command-line/tfsconfig-cmd).
+- Si votre code est stocké dans TFS, assurez-vous que l'indexation de code est activée en utilisant la [commande CodeIndex](../ide/codeindex-command.md) avec la [commande TFS Config](/azure/devops/server/command-line/tfsconfig-cmd).
 
 - Les indicateurs liés à DevOps s’affichent seulement si des éléments de travail sont liés au code et si vous êtes autorisé à ouvrir les éléments de travail liés. Vérifiez que vous disposez des [autorisations de membre de l’équipe](/azure/devops/organizations/security/view-permissions?view=vsts).
 
@@ -348,7 +348,7 @@ Pour utiliser le clavier :
 
 ### <a name="q-can-i-manage-how-codelens-processes-code-to-show-history-and-linked-items"></a>Q : puis-je gérer la façon dont CodeLens traite le code pour afficher l'historique et les éléments liés ?
 
-**R :** Oui. Si votre code est dans TFS, utilisez la [commande CodeIndex](../ide/codeindex-command.md) avec la [commande TFS Config](/tfs/server/ref/command-line/tfsconfig-cmd).
+**R :** Oui. Si votre code est dans TFS, utilisez la [commande CodeIndex](../ide/codeindex-command.md) avec la [commande TFS Config](/azure/devops/server/command-line/tfsconfig-cmd).
 
 ### <a name="q-my-codelens-test-indicators-no-longer-appear-in-my-file-when-i-first-open-my-solution-how-can-i-load-them"></a>Q : Mes indicateurs de test CodeLens n’apparaissent plus dans mon fichier quand j’ouvre ma solution pour la première fois. Comment les charger ?
 

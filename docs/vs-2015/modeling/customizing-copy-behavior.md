@@ -22,7 +22,7 @@ ms.locfileid: "74301180"
 Dans un langage spécifique à un domaine (DSL, Domain-Specific Language) créé avec le Kit de développement logiciel (SDK) de visualisation et de modélisation de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vous pouvez modifier ce qui se produit quand l'utilisateur copie et colle des éléments.
 
 ## <a name="standard-copy-and-paste-behavior"></a>Comportement standard de copie et de collage
- Pour activer la copie, définissez la propriété **Activer la copie et le collage** du nœud **Éditeur** dans l'Explorateur DSL.
+ Pour activer la copie, définissez la propriété **activer la copie de collage** du nœud **éditeur** dans l’Explorateur DSL.
 
  Par défaut, quand l'utilisateur copie des éléments dans le Presse-papiers, les éléments suivants sont également copiés :
 
@@ -43,14 +43,14 @@ Dans un langage spécifique à un domaine (DSL, Domain-Specific Language) créé
 ## <a name="customizing-copy-and-paste-behavior"></a>Personnalisation du comportement de copie et de collage
  Pour plus d’informations sur la personnalisation du modèle à l’aide de code de programme, consultez [navigation et mise à jour d’un modèle dans le code de programme](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
- **Activer ou désactiver la copie, la coupe et le collage.**
-Dans l'Explorateur DSL, définissez la propriété **Activer la copie et le collage** du nœud **Éditeur**.
+ **Activez ou désactivez copier, couper et coller.**
+Dans l’Explorateur DSL, définissez la propriété **activer la copie de collage** du nœud **éditeur** .
 
  **Copier les liens vers la même cible.** Par exemple, pour qu’une zone de commentaire copiée soit liée au même élément subject.
-Affectez **Propager la copie au lien uniquement** comme valeur de la propriété **Propage la copie** du rôle. Pour plus d'informations, consultez [Personnalisation du comportement de copie de lien](#customizeLinks).
+Affectez à la propriété **propager la copie** du rôle la valeur **propager la copie au lien uniquement**. Pour plus d’informations, consultez Personnalisation du comportement de la [copie des liens](#customizeLinks).
 
  Copier des éléments liés. Par exemple, quand vous copiez un nouvel élément, des copies de toute zone de commentaires liée sont également créées.
-Affectez **Propager la copie au lien et à l'acteur de rôle opposé** comme valeur de la propriété **Propage la copie** du rôle. Pour plus d'informations, consultez [Personnalisation du comportement de copie de lien](#customizeLinks).
+Définissez la propriété **propager la copie** du rôle sur **propager la copie au lien et à l’acteur de rôle opposé**. Pour plus d’informations, consultez Personnalisation du comportement de la [copie des liens](#customizeLinks).
 
  **Dupliquez rapidement les éléments en les copiant et collant.** Normalement, l’élément que vous venez de copier est toujours sélectionné et vous ne pouvez pas coller le même type d’élément sur celui-ci.
 Ajoutez une directive de fusion d'élément à la classe de domaine et configurez-la pour transférer les fusions vers la classe parente. L'effet sera le même sur les opérations de déplacement. Pour plus d’informations, consultez Personnalisation de la [création et du déplacement d’éléments](../modeling/customizing-element-creation-and-movement.md).
@@ -90,7 +90,7 @@ Remplacez *MyDsl*`ClipboardCommandSet.ProcessOnMenuCopyCommand()` dans le projet
  **Personnaliser la façon dont les éléments sont copiés dans le presse-papiers par la commande copier, mais pas dans une opération glisser.**
 Remplacez *MyDsl*`ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` dans le projet DslPackage.
 
- **Conserver la disposition des formes lors des opérations de copie et de collage.**
+ **Conserver la disposition des formes à l’aide de la copie et du collage.**
 Quand l'utilisateur copie plusieurs formes, vous pouvez conserver leurs positions relatives quand elles sont collées. Cette technique est illustrée dans l’exemple de l’exemple de [diagrammes de circuit](https://go.microsoft.com/fwlink/?LinkId=213879).
 
  Pour obtenir cet effet, ajoutez les formes et les connecteurs à l'ElementGroupPrototype copié. La méthode la plus simple à substituer est ElementOperations.CreateElementGroupPrototype(). Pour cela, ajoutez le code suivant au projet DSL :
@@ -218,7 +218,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
 Consultez [Comment : ajouter un gestionnaire de glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md).
 
 ## <a name="customizeLinks"></a>Personnalisation du comportement de la copie des liens
- Quand l'utilisateur copie un élément, le comportement standard est que tout élément incorporé est également copié. Vous pouvez modifier le comportement de copie standard. Dans la définition DSL, sélectionnez un rôle de chaque côté d'une relation et, dans la fenêtre Propriétés, définissez la valeur **Propage la copie**.
+ Quand l'utilisateur copie un élément, le comportement standard est que tout élément incorporé est également copié. Vous pouvez modifier le comportement de copie standard. Dans la définition DSL, sélectionnez un rôle d’un côté d’une relation, puis dans la Fenêtre Propriétés définissez la valeur de **copie propages** .
 
  ![Propage la propriété de copie du rôle de domaine](../modeling/media/dslpropagatescopy.png "DslPropagatesCopy")
 
@@ -377,7 +377,7 @@ private ElementGroupPrototype ConvertDraggedTypeToLocal (MyTargetShape snapshot,
 
  Quand l'utilisateur appuie sur Ctrl+C ou utilise la commande de menu Copier, la méthode <xref:Microsoft.VisualStudio.Modeling.Shell.ClipboardCommandSet.ProcessOnMenuCopyCommand%2A> est appelée. Vous pouvez voir comment cela est configuré dans **DslPackage\Generated Code\CommandSet.cs**. Pour plus d’informations sur la configuration des commandes, consultez [Comment : ajouter une commande au menu contextuel](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
 
- Vous pouvez substituer ProcessOnMenuCopyCommand en ajoutant une définition de classe partielle de *MyDsl*`ClipboardCommandSet` au projet DslPackage.
+ Vous pouvez substituer ProcessOnMenuCopyCommand en ajoutant une définition de classe partielle de *MyDsl*`ClipboardCommandSet` dans le projet DslPackage.
 
 ```csharp
 using System.Collections.Generic;

@@ -77,12 +77,12 @@ partition.SetLocks(Locks.Delete);
 
   Vous ne pouvez pas définir un verrou sur une partition ou un magasin et désactiver en même temps le verrou sur un élément individuel.
 
-|valeur|Cela signifie que si `IsLocked(Value)` a la valeur true|
+|Valeur|Cela signifie que si `IsLocked(Value)` a la valeur true|
 |-----------|------------------------------------------|
-|aucune.|Aucune restriction.|
-|Les|Les propriétés de domaine des éléments ne peuvent pas être modifiées. Cela ne s’applique pas aux propriétés générées par le rôle d’une classe de domaine dans une relation.|
+|Aucune|Aucune restriction.|
+|Propriété|Les propriétés de domaine des éléments ne peuvent pas être modifiées. Cela ne s’applique pas aux propriétés générées par le rôle d’une classe de domaine dans une relation.|
 |Ajouter|Impossible de créer des éléments et des liens dans une partition ou un magasin.<br /><br /> Non applicable aux `ModelElement`.|
-|Déplacement|L’élément ne peut pas être déplacé entre des partitions si `element.IsLocked(Move)` a la valeur true ou si `targetPartition.IsLocked(Move)` a la valeur true.|
+|Déplacer|L’élément ne peut pas être déplacé entre des partitions si `element.IsLocked(Move)` a la valeur true ou si `targetPartition.IsLocked(Move)` a la valeur true.|
 |Supprimer|Un élément ne peut pas être supprimé si ce verrou est défini sur l’élément lui-même, ou sur l’un des éléments dans lequel la suppression se propage, comme des éléments et des formes incorporés.<br /><br /> Vous pouvez utiliser `element.CanDelete()` pour déterminer si un élément peut être supprimé.|
 |Réorganiser|L’ordre des liens au niveau d’un rolePlayer ne peut pas être modifié.|
 |RolePlayer|L’ensemble de liens qui sont associés à cet élément ne peut pas être modifié. Par exemple, les nouveaux éléments ne peuvent pas être incorporés sous cet élément. Cela n’affecte pas les liens pour lesquels cet élément est la cible.<br /><br /> Si cet élément est un lien, sa source et sa cible ne sont pas affectées.|
@@ -115,7 +115,7 @@ public interface ILockingPolicy
 
  Ces méthodes sont appelées lorsqu’un appel est effectué pour `SetLocks()` sur un magasin, une partition ou un ModelElement. Dans chaque méthode, vous disposez d’un ensemble de verrous proposés. Vous pouvez retourner l’ensemble proposé, ou vous pouvez ajouter et soustraire des verrous.
 
- Par exemple :
+ Exemple :
 
 ```
 using Microsoft.VisualStudio.Modeling;

@@ -30,7 +30,7 @@ Vous pouvez ajouter des commandes de menu à votre langage spécifique à un dom
 
 2. [Mettez à jour le numéro de version du package dans package.TT](#version). Vous devez effectuer cette opération chaque fois que vous modifiez Commands.vsct.
 
-3. [Écrire des méthodes dans la classe CommandSet](#CommandSet) pour rendre la commande visible et définir ce que vous voulez qu'elle fasse.
+3. [Écrivez des méthodes dans la classe commandSet](#CommandSet) pour rendre la commande visible et pour définir ce que la commande doit faire.
 
    Pour obtenir des exemples, consultez le [site Web du kit de développement logiciel de visualisation et de modélisation](https://go.microsoft.com/fwlink/?LinkID=185579).
 
@@ -61,9 +61,9 @@ Vous pouvez ajouter des commandes de menu à votre langage spécifique à un dom
 
 #### <a name="to-add-the-command"></a>Pour ajouter la commande
 
-1. Dans **l'Explorateur de solutions**, sous le projet **DslPackage**, ouvrez Commands.vsct.
+1. Dans **Explorateur de solutions**, sous le projet **DslPackage** , ouvrez Commands. vsct.
 
-2. Dans l'élément `Commands`, définissez un ou plusieurs boutons et un groupe. Un *bouton* est un élément dans le menu. Un *groupe* est une section dans le menu. Pour définir ces éléments, ajoutez les éléments suivants :
+2. Dans l'élément `Commands`, définissez un ou plusieurs boutons et un groupe. Un *bouton* est un élément du menu. Un *groupe* est une section dans le menu. Pour définir ces éléments, ajoutez les éléments suivants :
 
     ```
     <!-- Define a group - a section in the menu -->
@@ -117,7 +117,7 @@ Vous pouvez ajouter des commandes de menu à votre langage spécifique à un dom
     </Symbols>
     ```
 
-5. Remplacez `{000...000}` par un GUID qui identifie vos groupes et éléments de menu. Pour obtenir un nouveau GUID, utilisez l'outil **Créer un Guid** dans le menu **Outils**.
+5. Remplacez `{000...000}` par un GUID qui identifie vos groupes et éléments de menu. Pour obtenir un nouveau GUID, utilisez l’outil **créer un GUID** dans le menu **Outils** .
 
     > [!NOTE]
     > Si vous ajoutez d'autres groupes ou éléments de menu, vous pouvez utiliser le même GUID. Cependant, vous devez utiliser de nouvelles valeurs pour `IDSymbols`.
@@ -139,11 +139,11 @@ Vous pouvez ajouter des commandes de menu à votre langage spécifique à un dom
 
 #### <a name="to-update-the-packagett-file"></a>Pour mettre à jour le fichier Package.tt
 
-1. Dans l'**Explorateur de solutions**, dans le projet **DslPackage**, dans le dossier **GeneratedCode**, ouvrez le fichier Package.tt.
+1. Dans **Explorateur de solutions**, dans le projet **DslPackage** , dans le dossier **GeneratedCode** , ouvrez le fichier Package.TT.
 
 2. Recherchez l'attribut `ProvideMenuResource`.
 
-3. Incrémentez le paramètre `version` de l'attribut, qui est le second paramètre. Si vous le souhaitez, vous pouvez écrire le nom du paramètre de manière explicite, pour vous rappeler sa fonction Par exemple :
+3. Incrémentez le paramètre `version` de l'attribut, qui est le second paramètre. Si vous le souhaitez, vous pouvez écrire le nom du paramètre de manière explicite, pour vous rappeler sa fonction Exemple :
 
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`
 
@@ -162,7 +162,7 @@ Vous pouvez ajouter des commandes de menu à votre langage spécifique à un dom
 
 2. Dans **DslPackage**, créez un dossier nommé **code personnalisé**. Dans ce dossier, créez un nouveau fichier de classe nommé `CommandSet.cs`.
 
-3. Dans le nouveau fichier, écrivez une déclaration partielle dont l'espace de noms et le nom sont les mêmes que ceux de la classe partielle générée. Par exemple :
+3. Dans le nouveau fichier, écrivez une déclaration partielle dont l'espace de noms et le nom sont les mêmes que ceux de la classe partielle générée. Exemple :
 
      `namespace Company.Language1 /* Make sure this is correct */`
 
@@ -324,9 +324,9 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 #### <a name="to-exercise-the-command"></a>Pour exercer la commande
 
-1. Dans la barre d'outils **Explorateur de solutions**, cliquez sur **Transformer tous les modèles**.
+1. Dans la barre d’outils **Explorateur de solutions** , cliquez sur **transformer tous les modèles**.
 
-2. Appuyez sur **F5** pour regénérer la solution et démarrez le débogage du langage spécifique à un domaine dans la build expérimentale.
+2. Appuyez sur **F5** pour régénérer la solution, puis démarrez le débogage du langage spécifique à un domaine dans la build expérimentale.
 
 3. Dans la build expérimentale, ouvrez un exemple de diagramme.
 
@@ -339,11 +339,11 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 - Assurez-vous que votre exemple expérimental a l'extension de nom de fichier correcte pour cette solution DSL. Pour vérifier l'extension de nom de fichier, ouvrez DslDefinition.dsl dans l'instance principale de Visual Studio. Ensuite, dans l'Explorateur DSL, cliquez avec le bouton droit sur le nœud Éditeur, puis cliquez sur Propriétés. Dans la fenêtre Propriétés, examinez la propriété FileExtension.
 
-- Avez-vous [incrémenté le numéro de version de package](#version) ?
+- Avez-vous [incrémenté le numéro de version du package](#version)?
 
 - Définissez un point d'arrêt au début de votre méthode OnStatus. Elle doit s'arrêter quand vous cliquez avec le bouton droit sur une partie quelconque du diagramme.
 
-   **La méthode OnStatus n'est pas appelée** :
+   La **méthode OnStatus n’est pas appelée**:
 
   - Assurez-vous que les GUID et les ID dans votre code CommandSet correspondent à ceux de la section Symbols de Commands.vsct.
 
