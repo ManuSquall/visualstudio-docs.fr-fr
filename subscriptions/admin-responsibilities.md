@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/20/2019
 ms.topic: conceptual
 description: Découvrez les responsabilités des administrateurs des abonnements.
-ms.openlocfilehash: eb5a557d19aafdd36ccf175ec4fc37e482091f80
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
-ms.translationtype: HT
+ms.openlocfilehash: 5ebdc3cb2448815ee5193020808c51630c5f1c17
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415618"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491529"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>Vue d’ensemble des responsabilités des administrateurs
 En tant qu’administrateur, vous pouvez gérer les abonnements de votre organisation.  Le rôle d’administrateur a également la responsabilité de vérifier que les abonnements sont gérés conformément aux termes du contrat de licence. Cet article présente les responsabilités, les avantages et les limitations du rôle d’administrateur.
@@ -33,11 +33,11 @@ Les abonnements Visual Studio permettent aux membres de l’équipe de développ
 | Installations illimitées                  | Chaque utilisateur titulaire d’une licence peut installer et utiliser les logiciels sur un nombre illimité d’appareils pour concevoir, développer, tester, évaluer et présenter des logiciels. Microsoft Office, qui est concédé sous licence pour un seul ordinateur de bureau, fait exception. Les logiciels sous licence Visual Studio peuvent être installés et utilisés au bureau, à domicile, dans des établissements scolaires et sur des appareils se trouvant dans les bureaux d’un client ou sur du matériel dédié hébergé par un tiers.                                                                                                                                                                                                                                  |
 | Non destinés aux environnements de production | Les logiciels des abonnements Visual Studio ne disposent pas d’une licence pour les environnements de production, dont tout environnement accessible par les utilisateurs finaux pour plus que des tests d’acceptation ou des commentaires, un environnement se connectant à une base de données de production, prenant en charge la récupération d’urgence ou la sauvegarde de production, ou un environnement utilisé pour la production pendant les pics d’activité. Des avantages spécifiques offerts par certains niveaux d’abonnement, décrits dans le [Livre blanc sur la gestion des licences Visual Studio](https://aka.ms/vslicensing), en sont une exception.                                                                                            |
 | Réattribution de licences                     | Quand un utilisateur quitte une équipe et ne nécessite plus de licence, vous pouvez réattribuer la licence passé un délai de 90 jours. Quand vous réattribuez une licence, toutes les clés de produit qui ont déjà été utilisées restent disponibles, mais elles ne seront pas remplacées. Pour les organisations qui ont des contrats Entreprise, les avantages qui ont été utilisés par l’utilisateur initial, comme une formation Pluralsight, seront réinitialisés.                                                                                                                                                                                                                                                 |
-| Exception pour les utilisateurs finaux                  | À la fin d’un projet de développement de logiciel, les utilisateurs finaux vérifient généralement une application et déterminent si elle répond aux critères exigés pour la mise en production. Ce processus est appelé « test d’acceptation utilisateur (UAT) ». Les membres d’équipe, tels qu’un commanditaire ou un chef de produit, peuvent jouer le rôle de proxy pour les utilisateurs finaux. Les utilisateurs finaux qui ne disposent pas d’un abonnement Visual Studio peuvent accéder aux logiciels pour le test UAT à condition que l’utilisation des logiciels soit conforme à tous les termes du contrat de licence Visual Studio. Il est rare qu’un utilisateur dont le rôle principal est de concevoir, de développer ou de tester le logiciel soit également considéré comme un « utilisateur final ». |
+| Exception pour les utilisateurs finaux                  | À la fin d’un projet de développement de logiciel, les utilisateurs finaux vérifient généralement une application et déterminent si elle répond aux critères exigés pour la mise en production. Ce processus est appelé « test d’acceptation utilisateur (UAT) ». Les membres d’équipe, tels qu’un commanditaire ou un chef de produit, peuvent jouer le rôle de proxy pour les utilisateurs finaux. Les utilisateurs finaux qui ne disposent pas d’un abonnement Visual Studio peuvent accéder aux logiciels pour le test UAT à condition que l’utilisation des logiciels soit conforme à tous les termes du contrat de licence Visual Studio. Il est rare qu’une personne dont le rôle principal est la conception, le développement ou le test du logiciel soit également qualifiée d’utilisateur final. |
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 En savoir plus sur les responsabilités des administrateurs :
 - [Inventaire de l’environnement de préproduction](admin-inventory.md)
-- [Gérer de grandes équipes et des fournisseurs externes](manage-teams.md)
-- [Suivre les affectations d’utilisateurs et traiter les commandes](assignments-orders.md)
+- [Gérer des grandes équipes et des prestataires externes](manage-teams.md)
+- [Suivre l’attribution des utilisateurs et traiter les commandes](assignments-orders.md)
 - Utiliser le rapport [Utilisation maximale](maximum-usage.md) pour suivre les engagements d’achat

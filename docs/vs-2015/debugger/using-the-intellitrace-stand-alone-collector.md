@@ -32,7 +32,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 >
 > Vous pouvez collecter les événements de performances dans les données IntelliTrace en exécutant l’agent en mode **Monitor** . Le mode**Monitor** a moins d’impact sur les performances que le mode **Trace** ou le **collecteur autonome IntelliTrace**. Microsoft Monitoring Agent modifie l’environnement du système cible quand il est installé. Consultez [utilisation de l’Microsoft Monitoring agent](../debugger/using-the-microsoft-monitoring-agent.md).
 
- **Conditions requises**
+ **Requirements**
 
 - .NET Framework 3.5, 4 ou 4.5
 
@@ -118,7 +118,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
 1. Sur le serveur de votre application, ouvrez une fenêtre d’invite de commandes en tant qu’administrateur.
 
-2. Utilisez la commande Windows **icacls** pour accorder à l’administrateur du serveur toutes les autorisations d’accès au répertoire du collecteur. Par exemple :
+2. Utilisez la commande Windows **icacls** pour accorder à l’administrateur du serveur toutes les autorisations d’accès au répertoire du collecteur. Exemple :
 
      `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\AdministratorID>* `":F`
 
@@ -126,13 +126,13 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
     1. Accordez à l’utilisateur qui exécutera les applets de commande PowerShell IntelliTrace toutes les autorisations d’accès au répertoire du collecteur.
 
-         Par exemple :
+         Exemple :
 
          `icacls "C:\IntelliTraceCollector" /grant "` *\<Domain\UserID>* `":F`
 
     2. Accordez au pool d’applications hébergeant l’application web ou SharePoint les autorisations de lecture et d’exécution pour le répertoire du collecteur.
 
-         Par exemple :
+         Exemple :
 
         - Pour une application web du pool d’applications **DefaultAppPool** :
 
@@ -162,7 +162,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
     2. Dans la fenêtre Commande PowerShell, utilisez la commande **Import-Module** pour importer **Microsoft.VisualStudio.IntelliTrace.PowerShell.dll**.
 
-         Par exemple :
+         Exemple :
 
          `Import-Module "C:\IntelliTraceCollector\Microsoft.VisualStudio.IntelliTrace.PowerShell.dll"`
 
@@ -180,7 +180,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
 2. Pour une application web ou SharePoint, accordez au pool d’applications correspondant toutes les autorisations d’accès au répertoire de fichiers .iTrace. Pour cela, utilisez au choix la commande Windows **icacls** ou l’Explorateur Windows (ou l’Explorateur de fichiers).
 
-    Par exemple :
+    Exemple :
 
    - Pour définir des autorisations avec la commande Windows **icacls** :
 
@@ -208,7 +208,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
      6. Choisissez **Vérifier les noms** pour résoudre le nom. Cliquez sur **OK**.
 
-     7. Vérifiez que le pool d'applications dispose des autorisations **Contrôle total**.
+     7. Vérifiez que le pool d’applications dispose des autorisations **Contrôle total**.
 
 ## <a name="BKMK_Collect_Data_from_IIS_Application_Pools"></a> Collecter les données d’une application web ou d’une application SharePoint
 
@@ -383,7 +383,7 @@ Le **collecteur autonome IntelliTrace** vous permet de collecter des données de
 
 - À partir d’une session de débogage IntelliTrace dans Visual Studio Enterprise, consultez [fonctionnalités IntelliTrace](../debugger/intellitrace-features.md).
 
-- À partir d'une session de test dans Microsoft Test Manager, consultez [Comment : collecter des données IntelliTrace pour aider au débogage des problèmes difficiles](/visualstudio/test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues?view=vs-2015).
+- À partir d’une session de test dans Microsoft Test Manager, consultez [Comment : collecter des données IntelliTrace pour aider au débogage des problèmes difficiles](/visualstudio/test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues?view=vs-2015).
 
 ## <a name="where-can-i-get-more-information"></a>Q : Où puis-je obtenir plus d’informations ?
  [Utilisation des données IntelliTrace enregistrées](../debugger/using-saved-intellitrace-data.md)

@@ -100,7 +100,7 @@ Servez-vous de l'outil Utilisation du GPU dans le hub Performances et diagnostic
   
  La liste des événements dans la partie inférieure du rapport d'utilisation du GPU affiche les détails de chaque événement.  
   
-|Colonne|Description|  
+|Column|Description|  
 |------------|-----------------|  
 |**Nom de l’événement**|Nom de l'événement graphique. Un événement correspond généralement à un événement dans une chronologie de thread d'UC et à un événement dans une chronologie de GPU.<br /><br /> Des noms d'événements peuvent être « non attribués » si la fonctionnalité d'utilisation du GPU n'a pas pu déterminer le nom d'un événement. Pour plus d'informations, voir la remarque sous ce tableau.|  
 |**Début UC (ns)**|Heure à laquelle l'événement a débuté sur l'UC en appelant une API Direct3D. Le temps est mesuré en nanosecondes, par rapport au moment où l'application a démarré.|  
@@ -133,7 +133,7 @@ Servez-vous de l'outil Utilisation du GPU dans le hub Performances et diagnostic
 ## <a name="hwsupport"></a> Prise en charge du matériel et des pilotes  
  Le matériel et les pilotes GPU suivants sont pris en charge :  
   
-|Fournisseur|Description du GPU|Version de pilote nécessaire|  
+|Console|Description du GPU|Version de pilote nécessaire|  
 |------------|---------------------|-----------------------------|  
 |Intel®|4e génération des processeurs Intel® Core ("Haswell")<br /><br /> -   Intel® HD Graphics (GT1)<br />-   Intel® HD Graphics 4200 (GT2)<br />-   Intel® HD Graphics 4400 (GT2)<br />-   Intel® HD Graphics 4600 (GT2)<br />-   Intel® HD Graphics P4600 (GT2)<br />-   Intel® HD Graphics P4700 (GT2)<br />-   Intel® HD Graphics 5000 (GT3)<br />-   Intel® Iris™ Graphics 5100 (GT3)<br />-   Intel® Iris™ Pro Graphics 5200 (GT3e)|-- (utilisez les derniers pilotes)|  
 |AMD®|La plupart, à partir d'AMD Radeon™ HD série 7000 (sauf AMD Radeon™ HD 7350-7670)<br /><br /> GPU AMD Radeon™, GPU AMD FirePro™ et accélérateurs GPU AMD FirePro incluant l'architecture Graphics Core Next (GCN).<br /><br /> Unités de traitement accéléré (APU) AMD® série E et AMD série A incluant l'architecture Graphics Core Next (GCN) - ('Kaveri', 'Kabini', 'Temash', 'Beema', 'Mullins')|14.7 RC3 ou version supérieure|  

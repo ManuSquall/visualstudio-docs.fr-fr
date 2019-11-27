@@ -134,7 +134,7 @@ Utilisez l'analyse des frames graphiques dans Visual Studio Graphics Analyzer po
   
  Les erreurs indiquent généralement la présence de bogues au niveau d'un pilote, de l'implémentation de l'analyse des frames, d'un défaut de prise en charge matérielle qui ne peut pas être contourné, ou encore que l'application tente quelque chose qui n'est pas pris en charge par la lecture.  
   
-### <a name="retries"></a>Nouvelles tentatives  
+### <a name="retries"></a>Tentatives  
  Si le GPU connaît une transition de l'état d'alimentation pendant l'analyse des frames, l'analyse affectée doit être retentée, car la vitesse d'horloge du GPU a changé, ce qui a eu pour effet d'invalider les résultats du minutage relatif.  
   
  L'analyse des frames limite le nombre de nouvelles tentatives à 10. Si votre plateforme a recours à une gestion de l'alimentation agressive ou au « clock gating », cela peut entraîner l'échec de l'analyse des frames et le signalement d'une erreur pour dépassement de la limite de nouvelles tentatives. Vous pouvez atténuer ce problème en réinitialisant la gestion de l'alimentation de votre plateforme et en choisissant une vitesse d'horloge moins agressive, si la plateforme le permet.  

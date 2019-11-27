@@ -83,13 +83,13 @@ Une fois que vous avez effectué les étapes dans [Setup and install](../cross-p
 
     - Cochez le projet **WeatherApp** (il s’agit du seul projet dans lequel vous devez installer le package).
 
-    - Vérifiez que la valeur définie pour le champ **Version** est **Dernière stable**.
+    - Vérifiez que la valeur définie pour le champ **Version** est **Dernière stable** .
 
     - Cliquez sur **Installer**.
 
     - ![Recherche et installation du package NuGet Newtonsoft. JSON](../cross-platform/media/crossplat-xamarin-formsguide-5.png "CrossPlat Xamarin FormsGuide 5")
 
-5. Répétez l’étape 4 ci-dessus pour rechercher et installer le package **Microsoft.Net.Http**.
+5. Répétez l’étape 4 ci-dessus pour rechercher et installer le package **Microsoft.Net.Http** .
 
 6. Générez votre solution et vérifiez l’absence d’erreur de génération.
 
@@ -263,7 +263,7 @@ Une fois que vous avez effectué les étapes dans [Setup and install](../cross-p
     }
     ```
 
-4. Pour ouvrir **WeatherPage** en tant que premier écran quand l’application démarre, remplacez le constructeur par défaut dans **App.cs** par le code suivant :
+4. Pour ouvrir **WeatherPage** en tant que premier écran quand l’application démarre, remplacez le constructeur par défaut dans **App.cs** par le code suivant :
 
     ```csharp
     public App()
@@ -279,11 +279,11 @@ Une fois que vous avez effectué les étapes dans [Setup and install](../cross-p
 
 1. Définissez **WeatherApp.Droid** comme projet de démarrage en cliquant dessus avec le bouton droit et en sélectionnant **Définir comme projet de démarrage**.
 
-2. Dans la barre d’outils Visual Studio, vous verrez **WeatherApp.Droid** répertorié en tant que projet cible. Sélectionnez l’un des émulateurs Android pour le débogage et appuyez sur **F5**. Nous vous recommandons d’utiliser l’une des options de l’**émulateur Visual Studio** pour l’exécution de l’application dans l’émulateur Visual Studio pour Android.
+2. Dans la barre d’outils Visual Studio, vous verrez **WeatherApp.Droid** répertorié en tant que projet cible. Sélectionnez l’un des émulateurs Android pour le débogage et appuyez sur **F5**. Nous vous recommandons d’utiliser l’une des options de l’ **émulateur Visual Studio** pour l’exécution de l’application dans l’émulateur Visual Studio pour Android.
 
      ![Sélection d’une cible de débogage de l’émulateur Visual Studio](../cross-platform/media/crossplat-xamarin-formsguide-7.png "CrossPlat Xamarin FormsGuide 7")
 
-3. Quand l’application démarre dans l’émulateur, cliquez sur le bouton **Get Weather**. Le texte du bouton doit être mis à jour et contenir **Chicago, IL**, qui est la propriété *Title* des données récupérées à partir du service météo.
+3. Quand l’application démarre dans l’émulateur, cliquez sur le bouton **Get Weather** . Le texte du bouton doit être mis à jour et contenir **Chicago, IL**, qui est la propriété *Title* des données récupérées à partir du service météo.
 
      ![Application météo avant et après avoir appuyé sur le bouton](../cross-platform/media/crossplat-xamarin-formsguide-8.png "CrossPlat Xamarin FormsGuide 8")
 
@@ -382,7 +382,7 @@ Une fois que vous avez effectué les étapes dans [Setup and install](../cross-p
 
     Notez l’utilisation de la balise **OnPlatform** dans Xamarin.Forms. **OnPlatform** sélectionne une valeur de propriété qui est propre à la plateforme actuelle sur laquelle l’application est exécutée (voir [External XAML Syntax](https://docs.microsoft.com/xamarin/xamarin-forms/xaml/xaml-basics/essential-xaml-syntax) (xamarin.com). Nous l’utilisons ici pour définir une couleur de texte différente pour les champs de données : blanc sur Android et Windows Phone, noir sur iOS. Vous pouvez utiliser **OnPlatform** pour toutes les propriétés et tous les types de données afin d’effectuer des réglages spécifiques à la plateforme n’importe où dans votre XAML. Dans le fichier code-behind, vous pouvez utiliser l’ [API Device.OnPlatform](https://docs.microsoft.com/xamarin/xamarin-forms/platform/device) dans le même but.
 
-2. Dans **WeatherPage.xaml.cs**, remplacez le gestionnaire d’événements **GetWeatherBtn_Clicked** par le code ci-dessous. Ce code vérifie qu’un code postal figure dans le champ d’entrée, récupère les données pour ce code postal, affecte l’instance résultante de Weather au contexte de liaison de la totalité de l’écran, puis définit « Rechercher à nouveau » comme texte du bouton. Notez que chaque étiquette dans l’interface utilisateur est liée à une propriété de la classe Weather ; par conséquent, quand vous affectez une instance de **Weather** au contexte de liaison de l’écran, ces étiquettes sont automatiquement mises à jour.
+2. Dans **WeatherPage.xaml.cs**, remplacez le gestionnaire d’événements **GetWeatherBtn_Clicked** par le code ci-dessous. Ce code vérifie qu’un code postal figure dans le champ d’entrée, récupère les données pour ce code postal, affecte l’instance résultante de Weather au contexte de liaison de la totalité de l’écran, puis définit « Rechercher à nouveau » comme texte du bouton. Notez que chaque étiquette dans l’interface utilisateur est liée à une propriété de la classe Weather ; par conséquent, quand vous affectez une instance de **Weather** au contexte de liaison de l’écran, ces étiquettes sont automatiquement mises à jour.
 
    ```csharp
    private async void GetWeatherBtn_Clicked(object sender, EventArgs e)

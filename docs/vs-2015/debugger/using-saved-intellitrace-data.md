@@ -98,7 +98,7 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
   
 ##### <a name="to-start-debugging-from-a-performance-event"></a>Pour démarrer le débogage à partir d’un événement de performance  
   
-1. Sous **Violations de performances**, examinez les événements de performance enregistrés, leurs durées totales d'exécution et autres informations associées. Approfondissez ensuite les méthodes appelées pendant un événement de performance spécifique.  
+1. Sous **Violations de performances**, examinez les événements de performance enregistrés, leurs durées totales d’exécution et les autres informations associées. Approfondissez ensuite les méthodes appelées pendant un événement de performance spécifique.  
   
      ![Afficher les détails des événements de performances](../debugger/media/ffr-itsummarypageperformance.png "FFR_ITSummaryPagePerformance")  
   
@@ -122,7 +122,7 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
   
      ![Accéder au code de l’application à partir de l’événement de performances](../debugger/media/ffr-itsummarypageperformancegotocode.png "FFR_ITSummaryPagePerformanceGoToCode")  
   
-     Vous pouvez maintenant examiner d’autres valeurs enregistrées, la pile des appels, parcourir votre code ou utiliser la fenêtre **IntelliTrace** pour [remonter ou avancer « dans le temps » entre d’autres méthodes](../debugger/intellitrace.md) appelées pendant cet événement de performance.  
+     Vous pouvez maintenant examiner d’autres valeurs enregistrées, la pile des appels, parcourir votre code ou utiliser la fenêtre **IntelliTrace** pour [remonter ou avancer « dans le temps » entre d’autres méthodes](../debugger/intellitrace.md) appelées pendant cet événement de performance.  
   
 ### <a name="ExceptionData"></a> Données d’exception  
  Examinez les exceptions levées et enregistrées pour votre application. Vous pouvez regrouper les exceptions qui ont le même type et la même pile des appels afin d’afficher uniquement l’exception la plus récente.  
@@ -139,7 +139,7 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
   
      ![Accéder au code de l’application à partir d’un événement d’exception](../debugger/media/ffr-itsummarypageexceptiongotocode.png "FFR_ITSummaryPageExceptionGoToCode")  
   
-     Vous pouvez maintenant examiner d'autres valeurs enregistrées, la pile des appels, ou utiliser la fenêtre **IntelliTrace** pour [remonter ou avancer « dans le temps » entre les autres événements enregistrés](../debugger/intellitrace.md), le code connexe et les valeurs enregistrées à ces moments précis.  
+     Vous pouvez maintenant examiner d’autres valeurs enregistrées, la pile des appels, ou utiliser la fenêtre **IntelliTrace** pour [remonter ou avancer « dans le temps » entre les autres événements enregistrés](../debugger/intellitrace.md), le code connexe et les valeurs enregistrées à ces moments précis.  
   
     |**Colonne**|**Affiche**|  
     |----------------|-------------------|  
@@ -161,7 +161,7 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
   
 1. Copiez l’ID de corrélation SharePoint à partir de sa source.  
   
-    Par exemple :  
+    Exemple :  
   
     ![ID &#45; de corrélation &#45; d’erreur SharePoint IntelliTrace](../debugger/media/sharepointerror-intellitrace.png "SharePointError_IntelliTrace")  
   
@@ -256,9 +256,9 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
   
 |**Colonne**|**Affiche**|  
 |----------------|-------------------|  
-|**Nom de module**|Nom de fichier du module|  
-|**Chemin de module**|Emplacement de chargement du module sur le disque|  
-|**ID de module**|Identificateur unique du module, spécifique à la version et qui contribue aux fichiers de symboles correspondants (PDB). Consultez [Rechercher des fichiers de symboles (.pdb) et des fichiers source](https://msdn.microsoft.com/05384c85-d264-4e18-abaa-aa482ab25470).|  
+|**Nom du module**|Nom de fichier du module|  
+|**Chemin du module**|Emplacement de chargement du module sur le disque|  
+|**ID de module**|Identificateur unique du module, spécifique à la version et qui contribue aux fichiers de symboles correspondants (PDB). Consultez [Finding symbol (.pdb) files and source files](https://msdn.microsoft.com/05384c85-d264-4e18-abaa-aa482ab25470).|  
   
 ### <a name="where-can-i-get-more-information"></a>Q : Où puis-je obtenir plus d’informations ?  
  [Utilisation du collecteur autonome IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)  

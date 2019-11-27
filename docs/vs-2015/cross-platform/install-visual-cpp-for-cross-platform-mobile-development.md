@@ -38,7 +38,7 @@ Visual C++ pour le développement mobile multiplateforme] (https://go.microsoft.
   
   Pour créer des applications pour des plateformes d’appareils spécifiques, il y a quelques spécifications requises supplémentaires :  
   
-- Les émulateurs Windows Phone et l’émulateur Microsoft Visual Studio pour Android requièrent un ordinateur qui peut exécuter Hyper-V. La fonctionnalité Hyper-V de Windows doit être activée pour permettre l’installation et l’exécution des émulateurs. Pour plus d’informations, consultez la [configuration système requise](https://msdn.microsoft.com/4d5bb438-231a-4cd2-84b7-e9660b0e3baf) de l’émulateur.  
+- Les émulateurs Windows Phone et l’émulateur Microsoft Visual Studio pour Android requièrent un ordinateur qui peut exécuter Hyper-V. La fonctionnalité Hyper-V de Windows doit être activée pour permettre l’installation et l’exécution des émulateurs. Pour plus d’informations, consultez la [configuration système requise](https://msdn.microsoft.com/4d5bb438-231a-4cd2-84b7-e9660b0e3baf)de l’émulateur.  
   
 - Les émulateurs Android x86 fournis avec le SDK Android offrent des performances optimales sur des ordinateurs pouvant exécuter le pilote Intel HAXM. Ce pilote nécessite un processeur Intel x64 avec prise en charge de Execute Disable Bit et de VT-x. Pour plus d’informations, consultez les [Instructions d’installation pour le gestionnaire d’exécution à accélération matérielle Intel® - Microsoft Windows](https://go.microsoft.com/fwlink/p/?LinkId=536385).  
   
@@ -68,7 +68,7 @@ Visual C++ pour le développement mobile multiplateforme] (https://go.microsoft.
   
      Pour générer des applications Windows universelles et partager du code entre ces applications et vos projets Android et iOS, dans **Sélectionner les fonctionnalités**, développez **Développement d’applications Windows et web**, puis cochez **Outils de développement d’applications Windows universelles**. Si vous ne prévoyez pas de créer des applications Windows universelles, vous pouvez ignorer cette option.  
   
-     Choisissez **Suivant** pour continuer.  
+     Cliquez sur **Suivant** pour continuer.  
   
 3. Les composants tiers ont leurs propres termes du contrat de licence. Vous pouvez afficher les termes du contrat de licence en cliquant sur le lien **Termes du contrat de licence** en regard de chaque composant. Choisissez **Installer** pour ajouter les composants et installer Visual Studio et Visual C++ pour le développement mobile multiplateforme.  
   
@@ -125,7 +125,7 @@ Visual C++ pour le développement mobile multiplateforme] (https://go.microsoft.
   
 1. Dans la barre de menus Visual Studio, choisissez **Outils**, **Options**.  
   
-2. Dans la boîte de dialogue **Options**, développez **Multiplateforme**, **C++** , puis sélectionnez **Android**.  
+2. Dans la boîte de dialogue **Options** , développez **Multiplateforme**, **C++** , puis sélectionnez **Android**.  
   
      ![Options du chemin d’accès aux outils Android](../cross-platform/media/cppmdd-options-android.PNG "CPPMDD_Options_Android")  
   

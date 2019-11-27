@@ -12,12 +12,12 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 378a5965f8ca9e9cc2d1c7214180e99f080d7873
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bec6c997a73d0b163ec0857ddd3a3380f26793bf
+ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72630961"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74538527"
 ---
 # <a name="codeindex-command"></a>CodeIndex, commande
 
@@ -60,7 +60,7 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 ## <a name="examples"></a>Exemples
 
 > [!NOTE]
-> Les noms de sociétés, d'organisations, de produits, de domaines, d'adresses de messagerie, de logos, de personnes, de lieux et d'événements mentionnés dans les exemples sont fictifs.  Toute ressemblance avec des noms ou des événements réels est purement fortuite et involontaire.
+> Les exemples de sociétés, d'organisations, de produits, de noms de domaine, d'adresses de messagerie, de logos, de personnes, de lieux et d'événements mentionnés ici sont fictifs.  Toute ressemblance avec des noms ou des événements réels est purement fortuite et involontaire.
 
 Pour consulter l'état et la configuration d'indexation du code :
 
@@ -124,5 +124,5 @@ TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Website"
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Rechercher les modifications de code et d’autres historiques avec CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md)
-- [Gestion de la configuration du serveur avec TFSConfig](/tfs/server/ref/command-line/tfsconfig-cmd)
+- [Rechercher les modifications de code et d’autres éléments de l’historique avec CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md)
+- [Gestion de la configuration du serveur avec TFSConfig](/azure/devops/server/command-line/tfsconfig-cmd)

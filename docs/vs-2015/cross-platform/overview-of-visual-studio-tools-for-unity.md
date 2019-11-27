@@ -27,7 +27,7 @@ Dans cette section, vous allez en savoir plus sur les fonctionnalités de Visual
 ## <a name="integration-with-unity"></a>Intégration à Unity  
  Visual Studio Tools pour Unity ne serait pas un activateur de productivité, si vous deviez passer en permanence de l'éditeur Unity à Visual Studio, et inversement. C'est pourquoi Visual Studio Tools pour Unity facilite la conservation de votre travail sans que vous ayez à quitter Visual Studio.  
   
-- L'**Explorer de projets Unity** affiche l'ensemble du projet Unity à l'intérieur de Visual Studio à l'aide de la même hiérarchie affichée dans l'éditeur Unity.  
+- L’**Explorateur de projets Unity** affiche l’ensemble du projet Unity à l’intérieur de Visual Studio à l’aide de la même hiérarchie affichée dans l’éditeur Unity.  
   
 - L'intégration de la console Unity affiche la sortie de la console Unity directement dans la fenêtre d'erreur de Visual Studio.  
   

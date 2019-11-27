@@ -16,7 +16,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74297813"
 ---
-# <a name="proxy-authorization-required"></a>Autorisation du proxy requise
+# <a name="proxy-authorization-required"></a>autorisation du proxy requise
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 L’erreur **autorisation du proxy requise** se produit généralement lorsque les utilisateurs sont connectés aux ressources Visual Studio online via un serveur proxy et que le serveur proxy bloque les appels.

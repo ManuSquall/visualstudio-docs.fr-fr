@@ -84,13 +84,13 @@ Cette rubrique vous dirige vers des supports de présentation qui vous permetten
   
  Pour déboguer vos applications multiplateformes sans avoir à utiliser d’appareil physique, vous avez besoin des éléments suivants :  
   
-1. **Émulateur Android**. . Selon votre version de Windows, nous vous recommandons d’utiliser l’émulateur Visual Studio pour Android de Microsoft ou l’émulateur de Xamarin. Ces deux émulateurs sont performants et prennent en charge un large éventail de fonctionnalités d’appareil :  
+1. **Émulateur Android.** . Selon votre version de Windows, nous vous recommandons d’utiliser l’émulateur Visual Studio pour Android de Microsoft ou l’émulateur de Xamarin. Ces deux émulateurs sont performants et prennent en charge un large éventail de fonctionnalités d’appareil :  
   
     - **Machines avec Windows 8 ou version ultérieure** : nous vous recommandons fortement d’utiliser l’ [émulateur Visual Studio pour Android](https://www.visualstudio.com/features/msft-android-emulator-vs.aspx)de Microsoft, qui est installé avec Visual Studio.  La vidéo sur l’ [émulateur Visual Studio pour Android](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/711) (Channel9, 5 minutes et 55 secondes) donne une vue d’ensemble de l’émulateur et montre comment l’utiliser.  
   
     - **Windows 7 ou version antérieure sur Mac OS X**: utilisez le lecteur [Xamarin Android Player](https://docs.microsoft.com/xamarin/android/deploy-test/debugging/debug-on-emulator?tabs=windows) (xamarin.com).  
   
-2. **Simulateur iOS d’Apple**. .  Pour en savoir plus, consultez [Getting Started with the iOS Simulator](https://developer.apple.com/library/prerelease/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html#//apple_ref/doc/uid/TP40012848-CH5-SW1) (apple.com).  
+2. **Simulateur iOS d’Apple.** .  Pour en savoir plus, consultez [Getting Started with the iOS Simulator](https://developer.apple.com/library/prerelease/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html#//apple_ref/doc/uid/TP40012848-CH5-SW1) (apple.com).  
   
 3. **Émulateur Windows Phone de Microsoft.** .  Pour en savoir plus, consultez [Émulateur Windows Phone pour Windows Phone 8](https://msdn.microsoft.com/library/dn632391.aspx).  
   

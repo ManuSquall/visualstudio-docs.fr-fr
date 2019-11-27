@@ -40,19 +40,19 @@ Vous pouvez générer des scripts de publication pour une machine virtuelle qui 
 
 ## <a name="scripts-that-visual-studio-generates"></a>Scripts générés par Visual Studio
 
-Visual Studio génère un dossier au niveau solution appelé **PublishScripts** qui contient deux fichiers Windows PowerShell, un script de publication pour votre machine virtuelle ou votre site web et un module qui contient des fonctions que vous pouvez utiliser dans les scripts. Visual Studio génère également un fichier au format JSON qui spécifie les détails du projet que vous déployez.
+Visual Studio génère un dossier au niveau de la solution appelé **PublishScripts** qui contient deux fichiers Windows PowerShell, un script de publication pour votre machine virtuelle ou site web et un module qui contient les fonctions que vous pouvez utiliser dans les scripts. Visual Studio génère également un fichier au format JSON qui spécifie les détails du projet que vous déployez.
 
 ### <a name="windows-powershell-publish-script"></a>Script de publication Windows PowerShell
 
 Le script de publication contient des étapes de publication spécifiques pour le déploiement sur un site web ou une machine virtuelle. Visual Studio propose la coloration de syntaxe pour le développement de Windows PowerShell. Vous pouvez bénéficier d’une aide sur les fonctions et modifier librement les fonctions dans le script en fonction de l’évolution de vos besoins.
 
-### <a name="windows-powershell-module"></a>Module Windows PowerShell
+### <a name="windows-powershell-module"></a>module Windows PowerShell
 
 Le module Windows PowerShell généré par Visual Studio contient des fonctions que le script de publication utilise. Ces fonctions Azure PowerShell ne sont pas destinées à être modifiées. Consultez [Installation et configuration d’Azure PowerShell](/powershell/azure/overview).
 
 ### <a name="json-configuration-file"></a>Fichier de configuration JSON
 
-Le fichier JSON est créé dans le dossier **Configurations** et contient des données de configuration qui spécifient exactement les ressources à déployer sur Azure. Le nom du fichier généré par Visual Studio est projet-nom-WAWS-dev.json, si vous avez créé un site web, ou projet-nom-VM-dev.json, si vous avez créé une machine virtuelle. Voici un exemple de fichier de configuration JSON généré lorsque vous créez un site web. La plupart des valeurs sont explicites. Le nom du site web est généré par Azure ; il peut donc ne pas correspondre au nom de votre projet.
+Le fichier JSON est créé dans le dossier **Configurations**. Il inclut les données de configuration qui spécifient les ressources devant être déployées dans Azure. Le nom du fichier généré par Visual Studio est nom_projet-WAWS-dev.json si vous avez créé un site web, ou nom_projet-VM-dev.json si vous avez créé une machine virtuelle. Voici un exemple de fichier de configuration JSON généré lorsque vous créez un site web. La plupart des valeurs sont explicites. Le nom du site web est généré par Azure ; il peut donc ne pas correspondre au nom de votre projet.
 
 ```json
 {
@@ -154,7 +154,7 @@ Si vous n’avez jamais exécuté de script Windows PowerShell auparavant, vous
 
 1. Créez le package Web Deploy pour votre projet. Un package Web Deploy est une archive compressée (fichier .zip) contenant les fichiers que vous souhaitez copier sur votre site web ou sur votre machine virtuelle. Vous pouvez créer des packages Web Deploy dans Visual Studio pour toute application web.
 
-   ![Créer un package Web Deploy](./media/vs-azure-tools-publishing-using-powershell-scripts/IC767885.png)
+   ![Créer un package de déploiement Web](./media/vs-azure-tools-publishing-using-powershell-scripts/IC767885.png)
 
    Pour plus d’informations, consultez [Comment : créer un package de déploiement Web dans Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx). Vous pouvez également automatiser la création de votre package Web Deploy, comme indiqué dans la section [Personnalisation et extension des scripts de publication](#customizing-and-extending-the-publish-scripts).
 
@@ -175,13 +175,13 @@ Si vous n’avez jamais exécuté de script Windows PowerShell auparavant, vous
 
     Notez que lorsque vous automatisez le script, cette méthode de renseignement des informations d’identification Azure ne fonctionne pas. À la place, vous devez utiliser le fichier `.publishsettings` pour fournir des informations d’identification. Une fois seulement, vous utilisez la commande **Get-AzurePublishSettingsFile** pour télécharger le fichier à partir d’Azure. Ensuite, vous utilisez **Import-AzurePublishSettingsFile** pour importer le fichier. Pour des instructions détaillées, consultez [Installation et configuration d’Azure PowerShell](/powershell/azure/overview).
 
-1. (Facultatif) Si vous souhaitez créer des ressources Azure telles que la machine virtuelle, la base de données et le site web sans publier votre application web, utilisez la commande **Publish-WebApplication.ps1** avec l’argument **-Configuration** défini dans le fichier de configuration JSON. Cette ligne de commande utilise le fichier de configuration JSON pour déterminer les ressources à créer. Étant donné qu’elle utilise les paramètres par défaut pour les autres arguments de ligne de commande, elle crée les ressources, mais ne publie pas votre application web. L’option –Verbose vous donne plus d’informations sur ce qui se passe.
+1. (Facultatif) Si vous voulez créer des ressources Azure telles que la machine virtuelle, la base de données et le site web sans avoir à publier votre application web, utilisez la commande **Publish-WebApplication.ps1** avec l'argument **-Configuration** défini pour le fichier de configuration JSON. Cette ligne de commande utilise le fichier de configuration JSON pour déterminer les ressources à créer. Étant donné qu’elle utilise les paramètres par défaut pour les autres arguments de ligne de commande, elle crée les ressources, mais ne publie pas votre application web. L'option –Verbose vous donne plus d'informations sur ce qui se passe.
 
     ```powershell
     Publish-WebApplication.ps1 -Verbose –Configuration C:\Path\WebProject-WAWS-dev.json
     ```
 
-1. Utilisez la commande **Publish-WebApplication.ps1** comme indiqué dans l’un des exemples suivants pour appeler le script et publier votre application web. Si vous souhaitez remplacer les paramètres par défaut de tout autre argument, comme le nom de l’abonnement, le nom du package de publication, les informations d’identification de la machine virtuelle ou les informations d’identification du serveur de base de données, vous pouvez spécifier ces paramètres. Utilisez l’option **–Verbose** pour afficher plus d’informations sur la progression du processus de publication.
+1. Utilisez la commande **Publish-WebApplication.ps1** comme montré dans l'un des exemples suivants pour appeler le script et publier votre application web. Si vous souhaitez remplacer les paramètres par défaut de tout autre argument, comme le nom de l’abonnement, le nom du package de publication, les informations d’identification de la machine virtuelle ou les informations d’identification du serveur de base de données, vous pouvez spécifier ces paramètres. Utilisez l’option **–Verbose** pour afficher des informations supplémentaires sur l’avancement du processus de publication.
 
     ```powershell
     Publish-WebApplication.ps1 –Configuration C:\Path\WebProject-WAWS-dev-json `
@@ -191,7 +191,7 @@ Si vous n’avez jamais exécuté de script Windows PowerShell auparavant, vous
     -Verbose
     ```
 
-    Si vous créez une machine virtuelle, la commande ressemble à ce qui suit. Cet exemple montre également comment spécifier les informations d’identification pour plusieurs bases de données. Pour les machines virtuelles créées par ces scripts, le certificat SSL n’est pas d’une autorité racine de confiance. Par conséquent, vous devez utiliser l’option **–AllowUntrusted** .
+    Si vous créez une machine virtuelle, la commande ressemble à ce qui suit. Cet exemple montre également comment spécifier les informations d’identification pour plusieurs bases de données. Pour les machines virtuelles créées par ces scripts, le certificat SSL n’est pas d’une autorité racine de confiance. Vous devez donc utiliser l’option **–AllowUntrusted**.
 
     ```powershell
     Publish-WebApplication.ps1 `
@@ -208,7 +208,7 @@ Si vous n’avez jamais exécuté de script Windows PowerShell auparavant, vous
 
 ## <a name="customizing-and-extending-the-publish-scripts"></a>Personnalisation et extension des scripts de publication
 
-Vous pouvez personnaliser le script de publication et le fichier de configuration JSON. Les fonctions dans le module Windows PowerShell **AzureWebAppPublishModule.psm1** ne sont pas destinées à être modifiées. Si vous souhaitez simplement spécifier une autre base de données ou modifier certaines propriétés de la machine virtuelle, modifiez le fichier de configuration JSON. Si vous souhaitez étendre la fonctionnalité de script pour automatiser la création et le test de votre projet, vous pouvez implémenter les stubs de fonction dans **Publish-WebApplication.ps1**.
+Vous pouvez personnaliser le script de publication et le fichier de configuration JSON. Les fonctions dans le module Windows PowerShell **AzureWebAppPublishModule.psm1** ne sont pas destinées à être modifiées. Si vous souhaitez simplement spécifier une autre base de données ou modifier certaines propriétés de la machine virtuelle, modifiez le fichier de configuration JSON. Si vous voulez étendre les fonctionnalités du script afin d’automatiser la création et le test de votre projet, vous pouvez implémenter des stubs de fonction dans **Publish-WebApplication.ps1**.
 
 Pour automatiser la création de votre projet, ajoutez le code appelant MSBuild sur `New-WebDeployPackage` , comme illustré dans cet exemple de code. Le chemin d’accès à la commande MSBuild est différent selon la version de Visual Studio que vous avez installée. Pour obtenir le chemin d’accès correct, vous pouvez utiliser la fonction **Get-MSBuildCmd**, comme illustré dans cet exemple.
 
@@ -316,7 +316,7 @@ Pour obtenir de l’aide pour les fonctions que vous pouvez utiliser à l’invi
 | --- | --- |
 | Add-AzureSQLDatabase |Crée une base de données SQL Azure. |
 | Add-AzureSQLDatabases |Crée des bases de données SQL Azure à partir des valeurs du fichier de configuration JSON généré par Visual Studio. |
-| Add-AzureVM |Crée une machine virtuelle Azure et renvoie l’URL de la machine virtuelle déployée. La fonction définit les conditions préalables, puis appelle la fonction **New-AzureVM** (module Azure) pour créer une machine virtuelle. |
+| Add-AzureVM |Crée une machine virtuelle Azure et renvoie l’URL de la machine virtuelle déployée. Cette fonction configure les conditions préalables, puis appelle la fonction **New-AzureVM** (module Azure) pour créer une machine virtuelle. |
 | Add-AzureVMEndpoints |Ajoute de nouveaux points de terminaison d’entrée à une machine virtuelle et renvoie la machine virtuelle avec le nouveau point de terminaison. |
 | Add-AzureVMStorage |Crée un compte de stockage Azure dans l’abonnement actif. Le nom du compte commence par « devtest » et est suivi d’une chaîne alphanumérique unique. La fonction renvoie le nom du nouveau compte de stockage. Spécifiez un emplacement ou un groupe d’affinités pour le nouveau compte de stockage. |
 | Add-AzureWebsite |Crée un site web avec le nom et l’emplacement spécifiés. Cette fonction appelle la fonction **New-AzureWebsite** dans le module Azure. Si l’abonnement ne contient pas déjà un site web avec le nom spécifié, cette fonction crée le site web et renvoie un objet de site web. Sinon, il retourne `$null`. |
@@ -327,8 +327,8 @@ Pour obtenir de l’aide pour les fonctions que vous pouvez utiliser à l’invi
 | Get-AzureVMStorage |Retourne le nom du premier compte de stockage avec le modèle de nom « DevTest *» (non-respect de la casse) dans l’emplacement ou le groupe d’affinités spécifié. Si le*compte de stockage « DevTest » ne correspond pas à l’emplacement ou au groupe d’affinités, la fonction l’ignore. Spécifiez un emplacement ou un groupe d’affinités. |
 | Get-MSDeployCmd |Renvoie une commande pour exécuter l’outil MsDeploy.exe. |
 | New-AzureVMEnvironment |Recherche ou crée une machine virtuelle dans l’abonnement qui correspond aux valeurs dans le fichier de configuration JSON. |
-| Publish-WebPackage |Utilise MsDeploy.exe et un fichier. zip de package de publication web pour déployer des ressources sur un site web. Cette fonction ne génère aucune sortie. Si l’appel de MSDeploy.exe échoue, la fonction lève une exception. Pour obtenir une sortie plus détaillée, utilisez l’option **-Verbose**. |
-| Publish-WebPackageToVM |Vérifie les valeurs des paramètres, puis appelle la fonction **Publish-WebPackage** . |
+| Publish-WebPackage |Utilise MsDeploy.exe et un fichier. zip de package de publication web pour déployer des ressources sur un site web. Cette fonction ne génère aucune sortie. Si l’appel de MSDeploy.exe échoue, la fonction lève une exception. Pour obtenir une sortie plus détaillée, utilisez l'option **-Verbose**. |
+| Publish-WebPackageToVM |Vérifie les valeurs du paramètre et appelle la fonction **Publish-WebPackage**. |
 | Read-ConfigFile |Valide le fichier de configuration JSON et renvoie une table de hachage des valeurs sélectionnées. |
 | Restore-Subscription |Réinitialise l’abonnement actif sur l’abonnement d’origine. |
 | Test-AzureModule |Renvoie `$true` si la version du module Azure installé est 0.7.4 ou une version ultérieure. Renvoie `$false` si le module n’est pas installé ou s’il s’agit d’une version antérieure. Cette fonction n’a pas de paramètres. |
@@ -337,7 +337,7 @@ Pour obtenir de l’aide pour les fonctions que vous pouvez utiliser à l’invi
 | Test-Member |Renvoie `$true` si une propriété ou méthode est un membre de l’objet. Sinon, retourne `$false`. |
 | Write-ErrorWithTime |Écrit un message d’erreur préfixé avec l’heure actuelle. Cette fonction appelle la fonction **Format-DevTestMessageWithTime** à indiquer l’heure avant d’écrire le message dans le flux Error. |
 | Write-HostWithTime |Écrit un message dans le programme hôte (**Write-Host**) préfixé avec l’heure actuelle. L’effet de l’écriture dans le programme hôte varie. La plupart des programmes qui hébergent Windows PowerShell écrivent ces messages dans la sortie standard. |
-| Write-VerboseWithTime |Écrit un message détaillé préfixé avec l’heure actuelle. Étant donné qu’il appelle **Write-Verbose**, le message s’affiche uniquement lorsque le script s’exécute avec le paramètre **Verbose** ou lorsque la préférence **VerbosePreference** est définie sur **Continuer**. |
+| Write-VerboseWithTime |Écrit un message détaillé préfixé avec l’heure actuelle. Comme il appelle **Write-Verbose**, le message s’affiche uniquement lorsque le script est exécuté avec le paramètre **Verbose** ou lorsque la préférence **VerbosePreference** est définie sur **Continue**. |
 
 **Publish-WebApplication**
 
@@ -349,5 +349,5 @@ Pour obtenir de l’aide pour les fonctions que vous pouvez utiliser à l’invi
 | Publish-WebApplication |Crée et déploie des applications web, des machines virtuelles, des bases de données SQL et des comptes de stockage pour un projet web Visual Studio. |
 | Test-WebApplication |Cette fonction n’est pas implémentée. Vous pouvez ajouter des commandes à cette fonction pour tester votre application. |
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 Pour en savoir plus sur l’écriture de scripts PowerShell lisez [Écriture de scripts avec Windows PowerShell](https://technet.microsoft.com/library/bb978526.aspx) et consultez d’autres scripts Azure PowerShell sur le [Centre de scripts](https://azure.microsoft.com/documentation/scripts/).

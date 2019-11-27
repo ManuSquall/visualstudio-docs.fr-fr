@@ -88,7 +88,7 @@ Dans cette procédure pas à pas, vous allez créer une application WPF qui affi
 
 3. Dans la page **choisir un modèle de base de données** , cliquez sur **Entity Data Model**, puis cliquez sur **suivant**.
 
-4. Sur la page **Choisir le contenu du modèle**, cliquez sur **Générer à partir de la base de données**, puis sur **Suivant**.
+4. Dans la page **choisir le contenu du modèle** , cliquez sur **générer à partir de la base de données**, puis cliquez sur **suivant**.
 
 5. Dans la page **choisir votre connexion de données** , effectuez l’une des opérations suivantes :
 
@@ -96,7 +96,7 @@ Dans cette procédure pas à pas, vous allez créer une application WPF qui affi
 
       -ou-
 
-   - Cliquez sur **Nouvelle connexion** et créez une connexion à la base de données AdventureWorksLT.
+   - Cliquez sur **nouvelle connexion** et créez une connexion à la base de données AdventureWorksLT.
 
      Assurez-vous que l’option **enregistrer les paramètres de connexion de l’entité dans App. config en tant que** est sélectionnée, puis cliquez sur **suivant**.
 
@@ -108,20 +108,20 @@ Dans cette procédure pas à pas, vous allez créer une application WPF qui affi
 
 7. Cliquez sur **Terminer**.
 
-8. Générez le projet.
+8. créer le projet ;
 
 ## <a name="creating-data-bound-controls-that-display-the-orders"></a>Création de contrôles liés aux données qui affichent les commandes
  Créez des contrôles qui affichent les enregistrements de commande en faisant glisser l’entité `SalesOrderHeaders` de la fenêtre **sources de données** vers le Concepteur WPF.
 
 #### <a name="to-create-data-bound-controls-that-display-the-order-records"></a>Pour créer des contrôles liés aux données qui affichent les enregistrements de commande
 
-1. Dans l'**Explorateur de solutions**, double-cliquez sur MainWindow.xaml.
+1. Dans **Explorateur de solutions**, double-cliquez sur MainWindow. Xaml.
 
     La fenêtre s'ouvre dans le Concepteur WPF.
 
 2. Modifiez le code XAML afin que les propriétés **Height** et **Width** aient la valeur 800
 
-3. Dans la fenêtre **Sources de données**, cliquez sur le menu déroulant pour le nœud **SalesOrderHeaders** et sélectionnez **Détails**.
+3. Dans la fenêtre **sources de données** , cliquez sur le menu déroulant du nœud **SalesOrderHeaders** et sélectionnez **Détails**.
 
 4. Développez le nœud **SalesOrderHeaders**.
 
@@ -139,7 +139,7 @@ Dans cette procédure pas à pas, vous allez créer une application WPF qui affi
 
    - **CreditCardApprovalCode**
 
-   - **SubTotal**
+   - **Sous**
 
    - **TaxAmt**
 

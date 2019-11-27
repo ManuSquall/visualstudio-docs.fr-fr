@@ -82,7 +82,7 @@ L’option Atteindre propose les commandes suivantes, disponibles dans le menu *
 
 - **Atteindre le fichier** (**Ctrl**+**1**, **Ctrl**+**F**) : accéder au fichier spécifié dans la solution.
 
-- **Go To Recent File** (**Ctrl**+**1**, **Ctrl**+**R**): Move to the specified, recently visited file in the solution.
+- **Accédez au fichier récent** (**CTRL**+**1**, **CTRL**+**R**) : accéder au fichier spécifié et visité récemment dans la solution.
 
 - **Atteindre le type** (**Ctrl**+**1**, **Ctrl**+**T**) : accéder au type spécifié dans la solution.
 
@@ -125,14 +125,14 @@ Entrée | Fonction
 **Clavier** | Placez le curseur de texte à l’intérieur du nom de type, puis appuyez sur **Ctrl**+**F12**
 **Souris** | Cliquez avec le bouton droit sur le nom de type et sélectionnez **Accéder à l’implémentation**.
 
-## <a name="go-to-base"></a>Go To Base
+## <a name="go-to-base"></a>Accéder à la base
 
-Using Go To Base, you can navigate up the inheritance chain of the selected element. If there are multiple results, you will see them listed in the **Go To Base** window:
+À l’aide de l’option atteindre la base, vous pouvez naviguer vers le haut de la chaîne d’héritage de l’élément sélectionné. S’il y a plusieurs résultats, ceux-ci sont répertoriés dans la fenêtre **atteindre la base** :
 
 Entrée | Fonction
 ------------ | ---
-**Clavier** | Place your text cursor somewhere inside the type name, and press **Alt**+**Home**
-**Souris** | Right-click on the type name and select **Go To Base**
+**Clavier** | Placez le curseur de texte à l’intérieur du nom de type, puis appuyez sur **Alt**+**page d’origine**
+**Souris** | Cliquez avec le bouton droit sur le nom du type et sélectionnez **atteindre la base** .
 
 ## <a name="call-hierarchy"></a>Hiérarchie d'appels
 

@@ -102,7 +102,7 @@ Ce fichier projet contient à la fois les cibles `Convert` et `Build`. Les tâch
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Targets (Cibles MSBuild)](../msbuild/msbuild-targets.md)
+- [Cibles MSBuild](../msbuild/msbuild-targets.md)
 - [Target, élément (MSBuild)](../msbuild/target-element-msbuild.md)
 - [Transformations](../msbuild/msbuild-transforms.md)
 - [Tâche Csc](../msbuild/csc-task.md)

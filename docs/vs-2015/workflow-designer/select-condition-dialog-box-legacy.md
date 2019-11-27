@@ -21,9 +21,9 @@ ms.lasthandoff: 11/21/2019
 ms.locfileid: "74301456"
 ---
 # <a name="select-condition-dialog-box-legacy"></a>Sélectionner la condition, boîte de dialogue (héritée)
-Cette rubrique décrit comment utiliser la boîte de dialogue **Sélectionner la condition** dans le [!INCLUDE[wfd1](../includes/wfd1-md.md)] hérité. Utilisez le [!INCLUDE[wfd2](../includes/wfd2-md.md)] hérité lorsque vous devez cibler le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
+Cette rubrique décrit comment utiliser la boîte de dialogue **Sélectionner une condition** dans le [!INCLUDE[wfd1](../includes/wfd1-md.md)]hérité. Utilisez le [!INCLUDE[wfd2](../includes/wfd2-md.md)] hérité lorsque vous devez cibler le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
- La boîte de dialogue **Sélectionner la condition** est utilisée pour sélectionner une condition de règle déclarative en vue de l'assigner à la propriété de condition d'une activité. Ces conditions de règle sont exposées comme propriétés pour les activités prédéfinies Windows Workflow Foundation suivantes :
+ La boîte de dialogue **Sélectionner une condition** permet de sélectionner une condition de règle déclarative à assigner à la propriété condition d’une activité. Ces conditions de règle sont exposées comme propriétés pour les activités prédéfinies Windows Workflow Foundation suivantes :
 
 - [ConditionedActivityGroup](https://go.microsoft.com/fwlink?LinkID=65017)
 
@@ -35,16 +35,16 @@ Cette rubrique décrit comment utiliser la boîte de dialogue **Sélectionner la
 
   Pour plus d’informations sur l’accès à la boîte de dialogue **Sélectionner la condition** , consultez [procédure : créer une condition de règle déclarative (héritée)](../workflow-designer/how-to-create-a-declarative-rule-condition-legacy.md).
 
-  Le tableau suivant décrit les éléments d'interface utilisateur de la boîte de dialogue **Sélectionner la condition**.
+  Le tableau suivant décrit les éléments d’interface utilisateur (IU) de la boîte de dialogue **Sélectionner une condition** .
 
-|Élément d'interface utilisateur|Description|
+|Élément de l'interface utilisateur|Description|
 |----------------|-----------------|
 |**Nouveau...**|Cliquez pour ouvrir la [boîte de dialogue Éditeur de conditions de règle (héritée)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) afin de créer une nouvelle condition de règle.|
 |**Modifier...**|Cliquez pour ouvrir la [boîte de dialogue Éditeur de conditions de règle (héritée)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) pour modifier la condition de règle sélectionnée.|
 |**Renommer...**|Cliquez pour ouvrir une boîte de dialogue utilisée pour renommer la condition de règle sélectionnée.|
 |**Supprimer**|Cliquez pour supprimer la condition de règle sélectionnée.|
 |**Aperçu de la condition**|Affiche l'expression conditionnelle pour la condition de règle sélectionnée.|
-|**OK**|Cliquez pour affecter la condition de règle sélectionnée à la condition de l'activité.|
+|**Bien**|Cliquez pour affecter la condition de règle sélectionnée à la condition de l'activité.|
 
  Pour plus d’informations sur la création et la modification des conditions de règle, consultez [boîte de dialogue Éditeur de conditions de règle (hérité)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md).
 

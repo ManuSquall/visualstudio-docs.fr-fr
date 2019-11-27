@@ -32,7 +32,7 @@ Vous pouvez afficher des exemples de données dans votre concepteur à mesure qu
 - [Afficher des données en direct dans une application Windows Store ou Windows Phone](#LiveStore)
 
 ## <a name="Scratch"></a> Générer un échantillon de données
- Pour générer des exemples de données, ouvrez un document XAML. Dans le panneau **Données**, choisissez le bouton **Créer des exemples de données**![](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png "30540d76-7256-43CE-b5d9-4b2edf3d339f"), puis **Nouvel exemple de données**.
+ Pour générer des exemples de données, ouvrez un document XAML. Dans le panneau **données** , choisissez le bouton **créer des exemples de données** ![ ](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png "30540d76-7256-43CE-b5d9-4b2edf3d339f") , puis choisissez **nouvel exemple de données**.
 
  Définissez la structure de vos données dans le panneau **Données** et liez-la aux éléments d'interface utilisateur d'une page.
 
@@ -49,7 +49,7 @@ Vous pouvez afficher des exemples de données dans votre concepteur à mesure qu
 ## <a name="Existing"></a> Générer des exemples de données à partir d'une classe
  Si vous avez déjà créé des classes qui décrivent la structure de vos données, vous pouvez générer des exemples de données à partir de celles-ci.
 
- Pour générer des exemples de données à partir d'une classe, ouvrez un document XAML puis, dans le panneau **Données**, cliquez sur le bouton **Créer des exemples de données**![](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png "30540d76-7256-43CE-b5d9-4b2edf3d339f"), puis sur **Créer un exemple de données à partir de la classe**.
+ Pour générer des exemples de données à partir d’une classe, ouvrez un document XAML, puis dans le volet **données** , cliquez sur le bouton **créer des exemples de données** ![ ](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png "30540d76-7256-43CE-b5d9-4b2edf3d339f") , puis cliquez sur **créer un exemple de données à partir de la classe**.
 
  **Regardez une brève vidéo :** ![configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.PNG "Installées bldadminconsoleinitialconfigicon") [créer des exemples de données à partir d’une classe](https://channel9.msdn.com/Shows/Inside+Windows+Phone/IWP54--Windows-Phone-Data-Binding-and-the-Magic-of-XAML).
 

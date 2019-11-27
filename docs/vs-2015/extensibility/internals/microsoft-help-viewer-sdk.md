@@ -49,7 +49,7 @@ Cet article contient les tâches suivantes pour les intégrateurs de la visionne
 
   Contrôles pris en charge pour le package de personnalisation Visual Studio :
 
-- liens
+- Liens
 
 - CodeSnippet
 
@@ -318,7 +318,7 @@ some F# code
 
    - Pour les systèmes d’exploitation 64 bits :
 
-      HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Partner<em>\\<namespace\></em>
+      Espace de <em>noms HKEY_LOCAL_MACHINE \software\wow6432node\microsoft\help\v2.1\partner\\<\></em>
 
       "location"=”offline”
 
@@ -352,18 +352,18 @@ some F# code
 
 |Property (représentation HTML)|Description|
 |--------------------------------------|-----------------|
-|\< meta name="Microsoft.Help.Locale" content="[language-code]" />|Définit des paramètres régionaux pour cette rubrique. Si cette balise est utilisée dans une rubrique, elle doit être utilisée une seule fois et elle doit être insérée au-dessus de toute autre balise d’aide Microsoft. Si cette balise n’est pas utilisée, le corps du texte de la rubrique est indexé à l’aide de l’analyseur lexical associé aux paramètres régionaux du produit, s’il est spécifié ; dans le cas contraire, l’analyseur lexical en-US est utilisé. Cette balise est conforme à la norme ISOC RFC 4646. Pour garantir le bon fonctionnement de l’aide de Microsoft, utilisez cette propriété à la place de l’attribut de langage général.|
-|\< meta name="Microsoft.Help.TopicLocale" content="[language-code]" />|Définit des paramètres régionaux pour cette rubrique lorsque d’autres paramètres régionaux sont également utilisés. Si cette balise est utilisée dans une rubrique, elle ne doit être utilisée qu’une seule fois. Utilisez cette balise lorsque le catalogue contient du contenu dans plusieurs langues. Plusieurs rubriques d’un catalogue peuvent avoir le même ID, mais chacune d’elles doit spécifier un TopicLocale unique. La rubrique qui spécifie un TopicLocale qui correspond aux paramètres régionaux du catalogue est celle qui est affichée dans la table des matières. Toutefois, toutes les versions linguistiques de la rubrique s’affichent dans les résultats de la recherche.|
+|\< Meta Name = "Microsoft. Help. locale" Content = "[Language-code]"/>|Définit des paramètres régionaux pour cette rubrique. Si cette balise est utilisée dans une rubrique, elle doit être utilisée une seule fois et elle doit être insérée au-dessus de toute autre balise d’aide Microsoft. Si cette balise n’est pas utilisée, le corps du texte de la rubrique est indexé à l’aide de l’analyseur lexical associé aux paramètres régionaux du produit, s’il est spécifié ; dans le cas contraire, l’analyseur lexical en-US est utilisé. Cette balise est conforme à la norme ISOC RFC 4646. Pour garantir le bon fonctionnement de l’aide de Microsoft, utilisez cette propriété à la place de l’attribut de langage général.|
+|\< Meta Name = "Microsoft. Help. TopicLocale" Content = "[Language-code]"/>|Définit des paramètres régionaux pour cette rubrique lorsque d’autres paramètres régionaux sont également utilisés. Si cette balise est utilisée dans une rubrique, elle ne doit être utilisée qu’une seule fois. Utilisez cette balise lorsque le catalogue contient du contenu dans plusieurs langues. Plusieurs rubriques d’un catalogue peuvent avoir le même ID, mais chacune d’elles doit spécifier un TopicLocale unique. La rubrique qui spécifie un TopicLocale qui correspond aux paramètres régionaux du catalogue est celle qui est affichée dans la table des matières. Toutefois, toutes les versions linguistiques de la rubrique s’affichent dans les résultats de la recherche.|
 |\< titre > [title]\</title >|Spécifie le titre de cette rubrique. Cette balise est requise et ne doit être utilisée qu’une seule fois dans une rubrique. Si le corps de la rubrique ne contient pas de titre \<section > div, ce titre est affiché dans la rubrique et dans la table des matières.|
-|\< meta name=" Microsoft.Help.Keywords" content="[aKeywordPhrase]"/>|Spécifie le texte d’un lien qui est affiché dans le volet index de la visionneuse d’aide. Lorsque l’utilisateur clique sur le lien, la rubrique s’affiche. Vous pouvez spécifier plusieurs mots clés d’index pour une rubrique, ou vous pouvez omettre cette balise si vous ne souhaitez pas que des liens vers cette rubrique s’affichent dans l’index. Les mots clés « K » des versions antérieures de l’aide peuvent être convertis dans cette propriété.|
-|\< meta name="Microsoft.Help.Id" content="[TopicID]"/>|Définit l’identificateur pour cette rubrique. Cette balise est requise et ne doit être utilisée qu’une seule fois dans une rubrique. L’ID doit être unique parmi les rubriques du catalogue qui ont les mêmes paramètres régionaux. Dans une autre rubrique, vous pouvez créer un lien vers cette rubrique à l’aide de cet ID.|
+|\< Meta Name = "Microsoft. Help. Keywords" Content = "[aKeywordPhrase]"/>|Spécifie le texte d’un lien qui est affiché dans le volet index de la visionneuse d’aide. Lorsque l’utilisateur clique sur le lien, la rubrique s’affiche. Vous pouvez spécifier plusieurs mots clés d’index pour une rubrique, ou vous pouvez omettre cette balise si vous ne souhaitez pas que des liens vers cette rubrique s’affichent dans l’index. Les mots clés « K » des versions antérieures de l’aide peuvent être convertis dans cette propriété.|
+|\< Meta Name = "Microsoft. Help. ID" Content = "[TopicID]"/>|Définit l’identificateur pour cette rubrique. Cette balise est requise et ne doit être utilisée qu’une seule fois dans une rubrique. L’ID doit être unique parmi les rubriques du catalogue qui ont les mêmes paramètres régionaux. Dans une autre rubrique, vous pouvez créer un lien vers cette rubrique à l’aide de cet ID.|
 |\< Meta Name = "Microsoft. Help. F1" Content = "[System. Windows. Controls. Primitives. IRecyclingItemContainerGenerator]"/>|Spécifie le mot clé F1 pour cette rubrique. Vous pouvez spécifier plusieurs mots clés F1 pour une rubrique, ou vous pouvez omettre cette balise si vous ne souhaitez pas que cette rubrique soit affichée quand un utilisateur de l’application appuie sur la touche F1. En règle générale, un seul mot clé F1 est spécifié pour une rubrique. Les mots clés « F » des versions antérieures de l’aide peuvent être convertis dans cette propriété.|
-|\< meta name="Description" content="[topic description]" />|Fournit un bref résumé du contenu de cette rubrique. Si cette balise est utilisée dans une rubrique, elle ne doit être utilisée qu’une seule fois. Cette propriété est accessible directement par la bibliothèque de requêtes ; elle n’est pas stockée dans le fichier d’index.|
+|\< Meta Name = "Description" Content = "[Description de la rubrique]"/>|Fournit un bref résumé du contenu de cette rubrique. Si cette balise est utilisée dans une rubrique, elle ne doit être utilisée qu’une seule fois. Cette propriété est accessible directement par la bibliothèque de requêtes ; elle n’est pas stockée dans le fichier d’index.|
  meta name="Microsoft.Help.TocParent" content="[parent_Id]"/>|Spécifie la rubrique parente de cette rubrique dans la table des matières. Cette balise est requise et ne doit être utilisée qu’une seule fois dans une rubrique. La valeur est le Microsoft.Help.Id du parent. Une rubrique ne peut avoir qu’un seul emplacement dans la table des matières. « -1 » est considéré comme l’ID de la rubrique de la racine de la table des matières. Dans [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)], cette page est la page d’aide de la visionneuse d’aide. C’est la même raison que nous ajoutons spécifiquement TocParent =-1 à certaines rubriques pour vous assurer qu’elles s’affichent au niveau supérieur. La page d’origine de la visionneuse d’aide est une page système qui n’est pas remplaçable. Si un VSP tente d’ajouter une page avec un ID de-1, il peut être ajouté au jeu de contenu, mais la visionneuse d’aide utilisera toujours la page système (page d’aide de la visionneuse d’aide)|
 |\< Meta Name = "Microsoft. Help. TocOrder" Content = "[entier positif]"/>|Spécifie l’endroit où cette rubrique apparaît dans la table des matières relative à ses rubriques homologues. Cette balise est requise et ne doit être utilisée qu’une seule fois dans une rubrique. La valeur est un entier. Une rubrique qui spécifie un entier de valeur inférieure s’affiche au-dessus d’une rubrique qui spécifie un entier de valeur supérieure.|
 |\< Meta Name = "Microsoft. Help. Product" Content = "[code produit]"/>|Spécifie le produit que cette rubrique décrit. Si cette balise est utilisée dans une rubrique, elle ne doit être utilisée qu’une seule fois. Ces informations peuvent également être fournies en tant que paramètre transmis à l’indexeur de l’aide.|
 |\< Meta Name = "Microsoft. Help. ProductVersion" Content = "[numéro de version]"/>|Spécifie la version du produit décrite dans cette rubrique. Si cette balise est utilisée dans une rubrique, elle ne doit être utilisée qu’une seule fois. Ces informations peuvent également être fournies en tant que paramètre transmis à l’indexeur de l’aide.|
-|\< meta name="Microsoft.Help.Category" content="[string]"/>|Utilisé par les produits pour identifier les sous-sections du contenu. Vous pouvez identifier plusieurs sous-sections pour une rubrique, ou vous pouvez omettre cette balise si vous ne souhaitez pas que les liens identifient des sous-sections. Cette balise est utilisée pour stocker les attributs des Ciblesos et TargetFrameworkMoniker lorsqu’une rubrique est convertie à partir d’une version antérieure de l’aide. Le format du contenu est AttributeName : AttributeValue.|
+|\< Meta Name = "Microsoft. Help. Category" Content = "[String]"/>|Utilisé par les produits pour identifier les sous-sections du contenu. Vous pouvez identifier plusieurs sous-sections pour une rubrique, ou vous pouvez omettre cette balise si vous ne souhaitez pas que les liens identifient des sous-sections. Cette balise est utilisée pour stocker les attributs des Ciblesos et TargetFrameworkMoniker lorsqu’une rubrique est convertie à partir d’une version antérieure de l’aide. Le format du contenu est AttributeName : AttributeValue.|
 |\< Meta Name = "Microsoft. Help. TopicVersion Content =" [numéro de version de la rubrique] "/>|Spécifie cette version de la rubrique lorsque plusieurs versions existent dans un catalogue. Étant donné qu’il n’est pas garanti que Microsoft.Help.Id soit unique, cette balise est requise lorsque plusieurs versions d’une rubrique existent dans un catalogue, par exemple, lorsqu’un catalogue contient une rubrique pour la .NET Framework 3,5 et une rubrique pour le .NET Framework 4 et les deux ont le même micro logiciel. Help.Id.|
 |\< Meta Name = "SelfBranded" Content = "[TRUE ou FALSe]"/>|Spécifie si cette rubrique utilise le package de personnalisation du gestionnaire de bibliothèque d’aide ou un package de personnalisation qui est spécifique à la rubrique. Cette balise doit être TRUE ou FALSe. Si la valeur est TRUE, le package de personnalisation pour la rubrique associée remplace le package de personnalisation défini lorsque le gestionnaire de bibliothèque d’aide démarre afin que la rubrique soit rendue comme prévu, même si elle diffère du rendu d’un autre contenu. Si la valeur est FALSe, la rubrique active est rendue en fonction du package de personnalisation défini au démarrage du gestionnaire de bibliothèque d’aide. Par défaut, le gestionnaire de bibliothèque d’aide suppose que la personnalisation automatique est définie sur false, sauf si la variable SelfBranded est déclarée comme TRUE ; par conséquent, il n’est pas nécessaire de déclarer \<Meta Name = "SelfBranded" Content = "FALSe"/>.|
 
@@ -432,17 +432,17 @@ some F# code
 
   Remarque : les variables notées par « {n} » ont des dépendances de code : la suppression ou la modification de ces valeurs entraînera des erreurs et éventuellement un blocage de l’application. Les identificateurs de localisation (exemple _locID = « CodeSnippet. n ») sont inclus dans le package de personnalisation de Visual Studio.
 
-  **Branding.xml**
+  **Personnalisation du fichier. Xml**
 
 |||
 |-|-|
 |Fonctionnalités :|**CollapsibleArea**|
-|Utiliser :|Développer réduit le texte du contrôle de contenu|
+|Utilisez :|Développer réduit le texte du contrôle de contenu|
 |**Élément**|**Valeur**|
-|ExpandText|Expand|
+|ExpandText|Développer|
 |CollapseText|Réduire|
 |Fonctionnalités :|**CodeSnippet**|
-|Utiliser :|Texte de contrôle d’extrait de code.  Remarque : le contenu de l’extrait de code avec un espace insécable sera remplacé par espace.|
+|Utilisez :|Texte de contrôle d’extrait de code.  Remarque : le contenu de l’extrait de code avec un espace insécable sera remplacé par espace.|
 |**Élément**|**Valeur**|
 |CopyToClipboard|Copier dans le Presse-papiers|
 |ViewColorizedText|Afficher les couleurs|
@@ -450,16 +450,16 @@ some F# code
 |VBDeclaration|Déclaration|
 |VBUsage|Utilisation|
 |Fonctionnalités :|**Commentaires, pieds de page et logo**|
-|Utiliser :|Fournissez un contrôle de commentaires pour que le client fournisse des commentaires sur la rubrique en cours par courrier électronique.  Texte de copyright du contenu.  Définition du logo.|
+|Utilisez :|Fournissez un contrôle de commentaires pour que le client fournisse des commentaires sur la rubrique en cours par courrier électronique.  Texte de copyright du contenu.  Définition du logo.|
 |**Élément**|**Valeur (ces chaînes peuvent être modifiées pour répondre aux besoins de l’adoption de contenu.)**|
-|Intellectuelle|© 2013 Microsoft Corporation. Tous droits réservés.|
+|Intellectuelle|© 2013 Microsoft Corporation. Tous droits réservés.|
 |SendFeedback|\<a href = "{0}" {1}> Envoyer des commentaires\</a > de cette rubrique à Microsoft.|
 |FeedbackLink||
 |LogoTitle|[!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)]|
 |LogoFileName|vs_logo_bk.gif|
 |LogoFileNameHC|vs_logo_wh.gif|
 |Fonctionnalités :|**AVERTISSEMENT**|
-|Utiliser :|Ensemble de exclusions spécifiques de cas pour le contenu traduit par machine.|
+|Utilisez :|Ensemble de exclusions spécifiques de cas pour le contenu traduit par machine.|
 |**Élément**|**Valeur**|
 |MT_Editable|Cet article a été traduit par une machine. Si vous disposez d’une connexion Internet, sélectionnez Afficher cette rubrique en ligne pour afficher cette page en mode modifiable avec le contenu original en anglais en même temps.|
 |MT_NonEditable|Cet article a été traduit par une machine. Si vous disposez d’une connexion Internet, sélectionnez Afficher cette rubrique en ligne pour afficher cette page en mode modifiable avec le contenu original en anglais en même temps.|
@@ -467,15 +467,15 @@ some F# code
 |MT_QualityNonEditable|Cet article a été traduit manuellement. Si vous disposez d’une connexion Internet, sélectionnez Afficher cette rubrique en ligne pour afficher cette page en mode modifiable avec le contenu original en anglais en même temps.|
 |MT_BetaContents|Cet article a été traduit par machine pour une version préliminaire. Si vous disposez d’une connexion Internet, sélectionnez Afficher cette rubrique en ligne pour afficher cette page en mode modifiable avec le contenu original en anglais en même temps.|
 |MT_BetaRecycledContents|Cet article a été traduit manuellement pour une version préliminaire. Si vous disposez d’une connexion Internet, sélectionnez Afficher cette rubrique en ligne pour afficher cette page en mode modifiable avec le contenu original en anglais en même temps.|
-|Fonctionnalités :|**LinkTable**|
-|Utiliser :|Prise en charge des liens de rubriques en ligne|
+|Fonctionnalités :|**Élément LinkTable**|
+|Utilisez :|Prise en charge des liens de rubriques en ligne|
 |**Élément**|**Valeur**|
 |LinkTableTitle|Lier une table|
 |TopicEnuLinkText|Affichez la version anglaise\</a > de cette rubrique qui est disponible sur votre ordinateur.|
 |TopicOnlineLinkText|Consultez cette rubrique \<a href = "{0}" {1}> Online\</a >|
-|OnlineText|Online|
+|OnlineText|En ligne|
 |Fonctionnalités :|**Contrôle audio vidéo**|
-|Utiliser :|Éléments d’affichage et texte pour le contenu vidéo|
+|Utilisez :|Éléments d’affichage et texte pour le contenu vidéo|
 |**Élément**|**Valeur**|
 |MultiMediaNotSupported|Internet Explorer 9 ou version ultérieure doit être installé pour prendre en charge {0} contenu.|
 |VideoText|affichage de la vidéo|
@@ -483,25 +483,25 @@ some F# code
 |OnlineVideoLinkText|\<p > pour afficher la vidéo associée à cette rubrique, cliquez sur {0}\<a href = "{1}" >{2}ici\</a >.\</p >|
 |OnlineAudioLinkText|\<p > pour écouter l’audio associé à cette rubrique, cliquez sur {0}\<a href = "{1}" >{2}ici\</a >.\</p >|
 |Fonctionnalités :|**Contrôle de contenu non installé**|
-|Utiliser :|Éléments de texte (chaînes) utilisés pour le rendu de contentnotinstalled. htm|
+|Utilisez :|Éléments de texte (chaînes) utilisés pour le rendu de contentnotinstalled. htm|
 |**Élément**|**Valeur**|
 |ContentNotInstalledTitle|Aucun contenu n’a été trouvé sur votre ordinateur.|
 |ContentNotInstalledDownloadContentText|\<p > pour télécharger du contenu sur votre ordinateur, \<a href = "{0}" {1}> cliquez sur l’onglet gérer\</a >.\</p >|
 |ContentNotInstalledText|\<p > aucun contenu n’est installé sur votre ordinateur. Consultez votre administrateur pour l’installation du contenu de l’aide locale.\</p >|
 |Fonctionnalités :|**Contrôle de rubrique introuvable**|
-|Utiliser :|Éléments de texte (chaînes) utilisés pour le rendu de topicnotfound. htm|
+|Utilisez :|Éléments de texte (chaînes) utilisés pour le rendu de topicnotfound. htm|
 |**Élément**|**Valeur**|
 |TopicNotFoundTitle|Impossible de trouver la rubrique demandée sur votre ordinateur.|
 |TopicNotFoundViewOnlineText|\<p > la rubrique que vous avez demandée est introuvable sur votre ordinateur, mais vous pouvez \<a href = "{0}" {1}> Afficher la rubrique en ligne\</a >.\</p >|
 |TopicNotFoundDownloadContentText|\<p > consultez le volet de navigation pour accéder à des liens vers des rubriques similaires ou \<a href = "{0}" {1}> cliquez sur l’onglet gérer\</a > pour télécharger du contenu sur votre ordinateur.\</p >|
 |TopicNotFoundText|\<p > la rubrique que vous avez demandée est introuvable sur votre ordinateur.\</p >|
 |Fonctionnalités :|**Contrôle endommagé de la rubrique**|
-|Utiliser :|Éléments de texte (chaînes) utilisés pour le rendu de topiccorrupted. htm|
+|Utilisez :|Éléments de texte (chaînes) utilisés pour le rendu de topiccorrupted. htm|
 |**Élément**|**Valeur**|
 |TopicCorruptedTitle|Impossible d’afficher la rubrique demandée.|
 |TopicCorruptedViewOnlineText|\<p > la visionneuse d’aide ne peut pas afficher la rubrique demandée. Il peut y avoir une erreur dans le contenu de la rubrique ou une dépendance du système sous-jacent.\</p >|
 |Fonctionnalités :|**Contrôle de page d’hébergement**|
-|Utiliser :|Texte qui prend en charge l’affichage du contenu du nœud de niveau supérieur de la visionneuse d’aide.|
+|Utilisez :|Texte qui prend en charge l’affichage du contenu du nœud de niveau supérieur de la visionneuse d’aide.|
 |**Élément**|**Valeur**|
 |HomePageTitle|Page d’affichage de Help Viewer|
 |HomePageIntroduction|\<p > Bienvenue dans le Microsoft Help Viewer, une source d’informations essentielle pour tous ceux qui utilisent les outils, produits, technologies et services de Microsoft. La visionneuse d’aide vous permet d’accéder à des informations de référence, des exemples de code, des articles techniques et bien plus encore. Pour trouver le contenu dont vous avez besoin, parcourez la table des matières, utilisez la recherche en texte intégral ou parcourez le contenu à l’aide de l’index de mots clés.\</p >|
@@ -510,9 +510,9 @@ some F# code
 |HomePageNoBooksInstalled|Aucun contenu n’a été trouvé sur votre ordinateur.|
 |HomePageHelpSettings|Paramètres du contenu de l’aide|
 |HomePageHelpSettingsText|\<p > votre paramètre actuel est l’aide locale. La visionneuse d’aide affiche le contenu que vous avez installé sur votre ordinateur.\<br/> pour modifier la source du contenu de l’aide, dans la barre de menus de Visual Studio, choisissez \<span style = "{0}" > aide, définissez la préférence d’aide\</span >.\<br/>\</p >|
-|Octet|Mbit|
+|Octet|Mo|
 
- **branding.js**
+ **personnalisation. js**
 
  Le fichier. js de personnalisation contient du code JavaScript utilisé par les éléments de personnalisation de la visionneuse d’aide de Visual Studio.  Vous trouverez ci-dessous une liste des éléments de personnalisation et de la fonction JavaScript de prise en charge.  Toutes les chaînes à localiser pour ce fichier sont définies dans la section « chaînes localisables » en haut de ce fichier.  Le fichier ICL a été créé pour les chaînes Loc dans le fichier. js de personnalisation.
 
@@ -555,7 +555,7 @@ some F# code
 
 ||||
 |-|-|-|
-|**Fichier**|**Utilisez**|**Source de contenu affichée**|
+|**Fichier**|**Faites**|**Source de contenu affichée**|
 |homepage.htm|Il s’agit d’une page qui affiche le contenu actuellement installé et tout autre message approprié à présenter à l’utilisateur sur son contenu.  Ce fichier contient l’attribut de métadonnées supplémentaire « Microsoft.Help.Id » content = « -1 » qui place ce contenu en haut de la table des matières locale.||
 ||<META_HOME_PAGE_TITLE_ADD />|Personnalisation. xml, balise \<HomePageTitle >|
 ||<HOME_PAGE_INTRODUCTION_SECTION_ADD />|Personnalisation. xml, balise \<HomePageIntroduction >|
@@ -590,7 +590,7 @@ some F# code
 
 ||||
 |-|-|-|
-|**Fichier**|**Utilisez**|**Exemples**|
+|**Fichier**|**Faites**|**Exemples**|
 |Clear. gif|Utilisé pour restituer la zone réductible||
 |footer_slice. gif|Présentation du pied de page||
 |info_icon. gif|Utilisé lors de l’affichage d’informations|Exclusion de responsabilité|
@@ -690,7 +690,7 @@ some F# code
 
  Cette procédure pas à pas montre comment incorporer du contenu d’aide dans une application de Shell Visual Studio, puis comment la déployer.
 
- **Conditions requises**
+ **Requirements**
 
 1. [!INCLUDE[vs_dev12](../../includes/vs-dev12-md.md)]
 

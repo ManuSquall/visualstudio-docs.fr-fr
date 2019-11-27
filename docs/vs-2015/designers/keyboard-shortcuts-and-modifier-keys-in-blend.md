@@ -42,4 +42,4 @@ Les raccourcis clavier peuvent accélérer votre travail en réduisant une actio
 
 - [Touches de modification de l’outil Plume](../designers/pen-tool-modifier-keys-in-blend.md)
 
-- [Touches de modification de l'outil Sélection directe](../designers/direct-selection-tool-modifier-keys-in-blend.md)
+- [Touches de modification de l’outil Sélection directe](../designers/direct-selection-tool-modifier-keys-in-blend.md)

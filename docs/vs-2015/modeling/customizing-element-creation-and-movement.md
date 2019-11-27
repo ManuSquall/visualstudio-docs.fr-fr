@@ -25,7 +25,7 @@ ms.locfileid: "74301145"
 
 Vous pouvez autoriser le glissement d’un élément vers un autre, soit à partir de la boîte à outils, soit dans une opération de collage ou de déplacement. Vous pouvez faire en sorte que les éléments déplacés soient liés aux éléments cibles, à l’aide des relations que vous spécifiez.
 
- Une directive de fusion d’éléments (EMD) spécifie ce qui se produit lorsqu’un élément de modèle est *fusionné* dans un autre élément de modèle. Cela se produit dans les cas suivants :
+ Une directive de fusion d’éléments (EMD) spécifie ce qui se produit lorsqu’un élément de modèle est *fusionné* dans un autre élément de modèle. Cette situation se produit dans les circonstances suivantes :
 
 - L’utilisateur fait glisser de la boîte à outils vers le diagramme ou une forme.
 
@@ -73,7 +73,7 @@ Vous pouvez autoriser le glissement d’un élément vers un autre, soit à part
 > [!NOTE]
 > Si vous écrivez du code de fusion personnalisé, il affecte uniquement les fusions effectuées à l’aide de ce EMD. S’il existe d’autres EMDs qui fusionnent le même type d’objet, ou s’il existe un autre code personnalisé qui crée ces objets sans utiliser le EMD, ils ne sont pas affectés par votre code de fusion personnalisé.
 >
-> Si vous souhaitez vous assurer qu’un nouvel élément ou une nouvelle relation est toujours traité par votre code personnalisé, envisagez de définir un `AddRule` sur la relation d’incorporation et un `DeleteRule` sur la classe de domaine de l’élément. Pour plus d’informations, consultez [propager les modifications dans le modèle de règles](../modeling/rules-propagate-changes-within-the-model.md).
+> Si vous souhaitez vous assurer qu’un nouvel élément ou une nouvelle relation est toujours traité par votre code personnalisé, envisagez de définir un `AddRule` sur la relation d’incorporation et un `DeleteRule` sur la classe de domaine de l’élément. Pour plus d’informations, consultez [règles de propagation des modifications dans le modèle](../modeling/rules-propagate-changes-within-the-model.md).
 
 ## <a name="example-defining-an-emd-without-custom-code"></a>Exemple : définition d’un EMD sans code personnalisé
  L’exemple suivant permet aux utilisateurs de créer un élément et un connecteur en même temps en faisant glisser la souris de la boîte à outils vers une forme existante. L’exemple ajoute un EMD à la définition DSL. Avant cette modification, les utilisateurs peuvent faire glisser des outils sur le diagramme, mais pas sur les formes existantes.
@@ -214,7 +214,7 @@ Vous pouvez autoriser le glissement d’un élément vers un autre, soit à part
 
 2. Substituez la méthode `MergeRelate`, et éventuellement la méthode `MergeDisconnect`. Pour ce faire, vous devez définir la propriété **générée double dérivée** de la classe de domaine. Votre code peut appeler le code de fusion généré dans la classe de base. Utilisez cette option si vous souhaitez effectuer des opérations supplémentaires après l’exécution de la fusion.
 
-   Ces approches affectent uniquement les fusions effectuées à l’aide de ce EMD. Si vous souhaitez affecter tous les moyens de créer l’élément fusionné, vous pouvez également définir un `AddRule` sur la relation d’incorporation et un `DeleteRule` sur la classe de domaine fusionnée. Pour plus d’informations, consultez [propager les modifications dans le modèle de règles](../modeling/rules-propagate-changes-within-the-model.md).
+   Ces approches affectent uniquement les fusions effectuées à l’aide de ce EMD. Si vous souhaitez affecter tous les moyens de créer l’élément fusionné, vous pouvez également définir un `AddRule` sur la relation d’incorporation et un `DeleteRule` sur la classe de domaine fusionnée. Pour plus d’informations, consultez [règles de propagation des modifications dans le modèle](../modeling/rules-propagate-changes-within-the-model.md).
 
 #### <a name="to-override-mergerelate"></a>Pour remplacer MergeRelate
 
@@ -230,7 +230,7 @@ Vous pouvez autoriser le glissement d’un élément vers un autre, soit à part
 
 5. Inspectez le contenu de **Dsl\Generated Files\DomainClasses.cs**. Recherchez des méthodes nommées `MergeRelate` et examinez leur contenu. Cela vous aidera à écrire vos propres versions.
 
-6. Dans un nouveau fichier de code, écrivez une classe partielle pour la classe de réception et substituez la méthode `MergeRelate`. N’oubliez pas d’appeler la méthode de base. Par exemple :
+6. Dans un nouveau fichier de code, écrivez une classe partielle pour la classe de réception et substituez la méthode `MergeRelate`. N’oubliez pas d’appeler la méthode de base. Exemple :
 
     ```csharp
     partial class ExampleModel
@@ -273,7 +273,7 @@ Vous pouvez autoriser le glissement d’un élément vers un autre, soit à part
 
 4. Écrivez les méthodes dans une définition de classe partielle dans un fichier de code séparé. Les exemples que vous avez inspectés précédemment doivent suggérer ce dont vous avez besoin.
 
-   Le code de fusion personnalisé n’affecte pas le code qui crée directement des objets et des relations, et il n’affecte pas les autres EMDs. Pour vous assurer que vos modifications supplémentaires sont implémentées, quelle que soit la façon dont l’élément est créé, envisagez d’écrire un `AddRule` et un `DeleteRule` à la place. Pour plus d’informations, consultez [propager les modifications dans le modèle de règles](../modeling/rules-propagate-changes-within-the-model.md).
+   Le code de fusion personnalisé n’affecte pas le code qui crée directement des objets et des relations, et il n’affecte pas les autres EMDs. Pour vous assurer que vos modifications supplémentaires sont implémentées, quelle que soit la façon dont l’élément est créé, envisagez d’écrire un `AddRule` et un `DeleteRule` à la place. Pour plus d’informations, consultez [règles de propagation des modifications dans le modèle](../modeling/rules-propagate-changes-within-the-model.md).
 
 ## <a name="redirecting-a-merge-operation"></a>Redirection d’une opération de fusion
  Une directive de fusion directe redirige la cible d’une opération de fusion. En règle générale, la nouvelle cible est le parent d’incorporation de la cible initiale.
@@ -304,7 +304,7 @@ Vous pouvez autoriser le glissement d’un élément vers un autre, soit à part
 
      Le nouveau chemin d’accès doit ressembler à celui-ci :
 
-     **ComponentHasPorts.Component/!Component**
+     **ComponentHasPorts. Component/ ! composant**
 
 9. Enregistrez la solution, puis transformez les modèles en cliquant sur le bouton le plus à droite dans la barre d’outils **Explorateur de solutions** .
 

@@ -42,7 +42,7 @@ Les **Pages de propriétés** permettent d’accéder aux paramètres d’un pro
 
  **Plateforme** Spécifie les paramètres de plateforme à afficher ou à modifier. Les valeurs sont **Any CPU** (valeur par défaut pour les applications [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]), **x64**, **ARM**, **x86** ou une plateforme définie par l’utilisateur. Pour plus d’informations, consultez [Configurations de projet Debug et Release](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).
 
-## <a name="general-page"></a>Page Général
+## <a name="general-page"></a>page Général
  Utilisez les options suivantes pour définir les propriétés générales du projet.
 
 > [!NOTE]
