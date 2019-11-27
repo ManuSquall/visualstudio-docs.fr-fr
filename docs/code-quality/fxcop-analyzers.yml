@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Migrate from legacy analysis (FxCop) to source analysis (FxCop analyzers)
-summary: Learn how to analyze code for the first time or how to migrate from binary analysis (FxCop) to the new way of analyzing managed code using source analysis (FxCop analyzers).
+title: Migrer de l’analyse héritée (FxCop) vers l’analyse source (FxCop Analyzer)
+summary: Découvrez comment analyser du code pour la première fois ou comment effectuer une migration à partir de l’analyse binaire (FxCop) vers la nouvelle méthode d’analyse du code managé à l’aide de l’analyse de source (FxCop Analyzer).
 metadata:
-  title: FxCop migration documentation
-  description: Learn how to move from legacy binary analysis (FxCop) to source analysis (FxCop analyzers) when you analyze code.
+  title: Documentation sur la migration de FxCop
+  description: Découvrez comment passer d’une analyse binaire héritée (FxCop) à une analyse de source (FxCop Analyzer) quand vous analysez du code.
   ms.prod: visual-studio-dev16
   ms.technology: vs-ide-code-analysis
   ms.topic: landing-page
@@ -20,31 +20,31 @@ metadata:
   ms.lasthandoff: 11/22/2019
   ms.locfileid: "74316388"
 landingContent:
-- title: Introduction to code analysis
+- title: Présentation de l’analyse du code
   linkLists:
   - linkListType: overview
     links:
-    - text: Overview of code analyzers
+    - text: Vue d’ensemble des analyseurs de code
       url: roslyn-analyzers-overview.md
   - linkListType: download
     links:
-    - text: Install code analyzers
+    - text: Installer les analyseurs de code
       url: install-roslyn-analyzers.md
   - linkListType: how-to-guide
     links:
-    - text: Set rule severity and suppress errors
+    - text: Définir la gravité de la règle et supprimer les erreurs
       url: use-roslyn-analyzers.md
-    - text: Command-line usage
+    - text: Utilisation de la ligne de commande
       url: use-roslyn-analyzers.md#command-line-usage
-- title: Migrate off legacy analysis
+- title: Migrer hors de l’analyse héritée
   linkLists:
   - linkListType: overview
     links:
-    - text: What's different
+    - text: Différences
       url: roslyn-analyzers-overview.md#source-code-analysis-versus-legacy-analysis
   - linkListType: get-started
     links:
-    - text: FAQ about FxCop analyzers
+    - text: FAQ sur les analyseurs FxCop
       url: fxcop-analyzers-faq.md
   - linkListType: download
     links:
@@ -52,15 +52,15 @@ landingContent:
       url: install-fxcop-analyzers.md
   - linkListType: how-to-guide
     links:
-    - text: Configure FxCop analyzers
+    - text: Configurer les analyseurs FxCop
       url: configure-fxcop-analyzers.md
-    - text: Use predefined rule sets
+    - text: Utiliser des ensembles de règles prédéfinis
       url: analyzer-rule-sets.md
   - linkListType: reference
     links:
-    - text: Ported and unported rules
+    - text: Règles portées et déplacées
       url: fxcop-rule-port-status.md
-- title: Other types of code analysis
+- title: Autres types d’analyse du code
   linkLists:
   - linkListType: overview
     links:

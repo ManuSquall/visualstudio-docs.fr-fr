@@ -39,7 +39,7 @@ Vous pouvez créer des applications pour des appareils Android, iOS et Windows �
 - [Créer un jeu multiplateforme pour Android, iOS et Windows à l’aide de Visual Studio Tools pour Unity](#Unity)
 
 ## <a name="NET"></a> Générer une application pour Android, iOS et Windows (.NET Framework)
- ![Appareils](../cross-platform/media/homedevices.png "HomeDevices")
+ ![Appareil](../cross-platform/media/homedevices.png "HomeDevices")
 
  Avec Xamarin, vous pouvez cibler Windows, iOS et Android dans la même solution, partager du code et même l’interface utilisateur.
 
@@ -79,7 +79,7 @@ Vous pouvez créer des applications pour des appareils Android, iOS et Windows �
 |Décidez si vous voulez partager votre code à l'aide de projets partagés, de projets de bibliothèque de classes portables ou les deux.<br /><br /> [Partage de code entre plateformes](https://devblogs.microsoft.com/dotnet/sharing-code-across-platforms/) (blog de .NET Framework)<br /><br /> [Sharing Code Options](https://docs.microsoft.com/xamarin/cross-platform/app-fundamentals/code-sharing) (Xamarin)<br /><br /> [Options de partage de code avec .NET Framework](https://msdn.microsoft.com/library/dn720832.aspx) (MSDN Library)|
 
 ### <a name="WindowsHTML"></a> Cibler les appareils Windows 10
- ![Appareils Windows](../cross-platform/media/windowsdevices.png "WindowsDevices")
+ ![Appareils Windows](../cross-platform/media/windowsdevices.png "Appareils Windows")
 
  Si vous voulez créer une application unique qui cible la totalité des appareils Windows 10, créez une application Windows universelle. Vous allez concevoir l'application à l'aide d'un seul projet, et vos pages s'afficheront correctement, quel que soit l'appareil utilisé pour les visualiser.
 
@@ -91,11 +91,11 @@ Vous pouvez créer des applications pour des appareils Android, iOS et Windows �
 |--------------------|
 |[En savoir plus sur les applications Windows universelles](https://msdn.microsoft.com/library/windows/apps/dn894631.aspx) (Centre de développement Windows)|
 |[Créer votre première application](https://msdn.microsoft.com/library/windows/apps/dn609832.aspx) (Centre de développement Windows)|
-|[Développer des applications pour la plateforme Windows universelle (UWP)](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md)|
-|[Migrer des applications vers la plateforme Windows universelle (UWP)](../misc/migrate-apps-to-the-universal-windows-platform-uwp.md)|
+|[Développer des applications pour la plateforme universelle Windows (UWP)](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md)|
+|[Migrer des applications vers la plateforme Windows universelle](../misc/migrate-apps-to-the-universal-windows-platform-uwp.md)|
 
 ## <a name="HTML"></a> Générer une application pour Android, iOS et Windows (HTML/JavaScript)
- ![Appareils](../cross-platform/media/homedevices.png "HomeDevices")
+ ![Appareil](../cross-platform/media/homedevices.png "HomeDevices")
 
  Si vous êtes un développeur web et si vous connaissez bien les langages HTML et JavaScript, vous pouvez cibler Windows, Android et iOS en utilisant Visual Studio Tools pour Apache Cordova. Ces applications peuvent cibler les trois plateformes et vous pouvez les créer en utilisant les compétences et les processus qui vous sont les plus familiers.
 
@@ -156,7 +156,7 @@ Vous pouvez créer des applications pour des appareils Android, iOS et Windows �
 
  ![Environnement de développement VSTU](../cross-platform/media/vstu-overview.png "VSTU_Overview")
 
- Avec Visual Studio Tools for Unity (VSTU), vous pouvez utiliser Visual Studio pour écrire des scripts d'éditeur et de jeu en C#, puis utiliser son débogueur performant pour rechercher et corriger les erreurs. La dernière version de VSTU prend en charge Unity 5 et inclut la coloration de syntaxe pour le langage du nuanceur ShaderLab d'Unity, une meilleure synchronisation avec Unity, un débogage plus avancé et une génération de code améliorée pour l'Assistant MonoBehavior. VSTU apporte également vos fichiers de projet Unity et vos messages de console, et offre la possibilité de démarrer votre jeu dans Visual Studio, afin de perdre moins de temps à aller et venir de l’éditeur Unity en cours d’écriture.
+ Avec Visual Studio Tools pour Unity (VSTU), vous pouvez utiliser Visual Studio pour écrire des scripts d’éditeur et de jeu en C#, puis utiliser son débogueur performant pour rechercher et corriger les erreurs. La dernière version de VSTU prend en charge Unity 5 et inclut la coloration de syntaxe pour le langage du nuanceur ShaderLab d'Unity, une meilleure synchronisation avec Unity, un débogage plus avancé et une génération de code améliorée pour l'Assistant MonoBehavior. VSTU apporte également vos fichiers de projet Unity et vos messages de console, et offre la possibilité de démarrer votre jeu dans Visual Studio, afin de perdre moins de temps à aller et venir de l’éditeur Unity en cours d’écriture.
 
  Commencez à créer votre jeu avec Unity et Visual Studio Tools for Unity dès aujourd'hui.
 

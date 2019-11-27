@@ -58,7 +58,7 @@ Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../inc
     ```  
   
     > [!IMPORTANT]
-    > N’incluez pas le fichier d’en-tête vsgcapture. h, qui prend en charge la capture par programmation sur Windows 8,0 et versions antérieures, pour effectuer la capture par programmation dans vos applications Windows 8.1. Cet en-tête est incompatible avec DirectX 11.2. Si ce fichier est inclus après l’en-tête d3d11_2. h, le compilateur émet un avertissement. Si vsgcapture. h est inclus avant d3d11_2. h, l’application ne démarre pas.  
+    > N'incluez pas le fichier d'en-tête vsgcapture.h (qui prend en charge la capture par programmation dans Windows 8.0 et versions antérieures) pour utiliser la capture par programmation dans vos applications Windows 8.1. Cet en-tête est incompatible avec DirectX 11.2. Si ce fichier est inclus après l’en-tête d3d11_2. h, le compilateur émet un avertissement. Si vsgcapture. h est inclus avant d3d11_2. h, l’application ne démarre pas.  
   
     > [!NOTE]
     > Si le Kit de développement logiciel (SDK) DirectX de juin 2010 est installé sur votre machine et que le chemin include de votre projet contient `%DXSDK_DIR%includex86`, déplacez-le à la fin du chemin include. Faites-en autant pour le chemin d'accès à votre bibliothèque.  

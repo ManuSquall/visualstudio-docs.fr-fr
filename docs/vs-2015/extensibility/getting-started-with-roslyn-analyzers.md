@@ -20,7 +20,7 @@ ms.locfileid: "74300013"
 
 Avec des analyseurs de code en direct basés sur des projets dans Visual Studio, les créateurs d’API peuvent envoyer une analyse de code spécifique à un domaine dans le cadre de leurs packages NuGet.  Étant donné que ces analyseurs sont alimentés par le .NET Compiler Platform (nom de code « Roslyn »), ils peuvent produire des avertissements dans votre code au fur et à mesure que vous tapez avant la fin de la ligne (plus besoin d’attendre pour générer votre code pour détecter les problèmes).  Les analyseurs peuvent également faire apparaître un correctif de code automatique par le biais de l’invite de l’ampoule Visual Studio pour vous permettre de nettoyer immédiatement votre code
 
-## <a name="getting-started"></a>Commencer
+## <a name="getting-started"></a>Mise en route
 [Présentation et procédure pas à pas des analyseurs de code Roslyn Live](https://msdn.microsoft.com/magazine/dn879356.aspx)
 
 [Ajout de correctifs de code procédure pas à pas : fournir aux utilisateurs des correctifs pour les problèmes d’analyseur](https://msdn.microsoft.com/magazine/dn904670.aspx)

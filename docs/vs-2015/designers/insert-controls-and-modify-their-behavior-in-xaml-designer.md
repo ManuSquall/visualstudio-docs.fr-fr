@@ -72,7 +72,7 @@ Les contrôles permettent aux utilisateurs d'interagir avec votre application. E
 
  **Regardez une brève vidéo :** ![configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.PNG "Installées bldadminconsoleinitialconfigicon") [conseils de fusion : introduction à l’utilisation des comportements, partie 1](https://www.bing.com/videos/search?q=Expression%20blend%20behaviors&qs=n&form=QBVR&pq=expression%20blend%20behavior&sc=4-25&sp=-1&sk=#view=detail&mid=CF0DD797ED84DE740904CF0DD797ED84DE740904).
 
-### <a name="events"></a>événements
+### <a name="events"></a>Événements
  Pour un maximum de souplesse, traitez un *événement*. Vous devrez écrire un peu de code.
 
  **Regardez une brève vidéo :** ![configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.PNG "Installées bldadminconsoleinitialconfigicon") [Ajouter un événement de souris](https://www.youtube.com/watch?v=2PMxAlb-x_E).

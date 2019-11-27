@@ -24,7 +24,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74294694"
 ---
-# <a name="trusted-application-deployment-overview"></a>Trusted Application Deployment Overview
+# <a name="trusted-application-deployment-overview"></a>Vue d'ensemble du déploiement d'applications approuvées
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette rubrique offre une vue d’ensemble du déploiement d’applications [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] qui ont des autorisations élevées à l’aide de la technologie de déploiement d’applications approuvées.  

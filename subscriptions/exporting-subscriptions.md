@@ -6,15 +6,15 @@ manager: lank
 ms.date: 07/24/2019
 ms.topic: conceptual
 description: Découvrez comment exporter une liste d’abonnés et des informations de leurs attributions d’abonnement.
-ms.openlocfilehash: f5fbdb69f9961c9ec80910387c0549cfbc182729
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
-ms.translationtype: HT
+ms.openlocfilehash: 46e5ae706383d2ed03a289844bc9e6fcc4a01a91
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605572"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491739"
 ---
 # <a name="export-subscription-information"></a>Exporter les informations d’abonnement
-Dans le [portail d’administration](https://manage.visualstudio.com) des abonnements Visual Studio, vous pouvez exporter la liste de vos abonnés ainsi que des informations concernant leurs attributions. Ces informations comprennent : nom, adresse e-mail, adresse e-mail alternative, niveau d’abonnement, date d’attribution, état d’activation, date d’expiration, champ de référence, si les téléchargements sont activés, pays, langue, état de l’abonnement et GUID d’abonnement.  La liste est exportée sous forme de fichier CSV et peut être facilement ouverte dans Microsoft Excel pour la création de graphiques, de tableaux croisés dynamiques et d’autres artefacts.
+Dans le [portail d’administration](https://manage.visualstudio.com)des abonnements Visual Studio, vous pouvez exporter une liste de vos abonnés et des détails sur leurs affectations. Ces informations comprennent : nom, adresse e-mail, adresse e-mail alternative, niveau d’abonnement, date d’attribution, état d’activation, date d’expiration, champ de référence, si les téléchargements sont activés, pays, langue, état de l’abonnement et GUID d’abonnement.  La liste est exportée sous forme de fichier CSV et peut être facilement ouverte dans Microsoft Excel pour la création de graphiques, de tableaux croisés dynamiques et d’autres artefacts.
 
 Le fait de disposer des informations sur tous vos abonnés à un même emplacement peut vous aider à effectuer des opérations telles que celles-ci :
 - Obtenir une vue d’ensemble des abonnements utilisés par équipe et/ou emplacement au sein de votre organisation.
@@ -30,7 +30,7 @@ Pour effectuer l’exportation :
 > [!div class="mx-imgBorder"]
 > ![Exporter des abonnés](_img/exporting-subscriptions/exporting-subscriptions.png)
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 - Pour plus d’informations sur la gestion des abonnements, consultez ces rubriques :
     - [Abonnements arrivés à expiration](handle-expired-license.md)
     - [Surutilisations](handle-overclaimed-license.md)

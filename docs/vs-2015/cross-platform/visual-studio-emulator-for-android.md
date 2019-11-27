@@ -30,7 +30,7 @@ L'Émulateur Visual Studio pour Android est une application de bureau qui émule
   
 - [Configuration système requise et compatibilité descendante](#Requirements)  
   
-- [Mise en réseau dans l'Émulateur Visual Studio pour Android](#Networking)  
+- [Mise en réseau dans l’Émulateur Visual Studio pour Android](#Networking)  
   
 - [Configuration de l’Émulateur Visual Studio pour Android](#Configuring)  
   
@@ -112,4 +112,4 @@ L'Émulateur Visual Studio pour Android est une application de bureau qui émule
   
 ## <a name="see-also"></a>Voir aussi  
  [Configuration requise pour l’émulateur Visual Studio pour Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)   
- [Dépannage de l'émulateur Visual Studio pour Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)
+ [Dépannage de l’émulateur Visual Studio pour Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)

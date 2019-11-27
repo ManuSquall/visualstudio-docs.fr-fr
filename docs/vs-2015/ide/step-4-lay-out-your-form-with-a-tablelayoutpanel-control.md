@@ -75,7 +75,7 @@ Dans cette étape, vous allez ajouter un contrôle `TableLayoutPanel` à votre f
 
 11. Dans la liste déroulante **Afficher** en haut de la fenêtre, sélectionnez **Lignes**. Affectez les valeurs 90 pour cent à **Ligne1** et 10 pour cent à **Ligne2**.
 
-12. Sélectionnez le bouton **OK** . Votre TableLayoutPanel doit maintenant avoir une grande ligne en haut, une petite ligne en bas, une petite colonne à gauche et une grande colonne à droite. Vous pouvez redimensionner les lignes et les colonnes de TableLayoutPanel en choisissant tableLayoutPanel1 dans le formulaire, puis en faisant glisser ses bordures de ligne et de colonne.
+12. Choisissez le bouton **OK**. Votre TableLayoutPanel doit maintenant avoir une grande ligne en haut, une petite ligne en bas, une petite colonne à gauche et une grande colonne à droite. Vous pouvez redimensionner les lignes et les colonnes de TableLayoutPanel en choisissant tableLayoutPanel1 dans le formulaire, puis en faisant glisser ses bordures de ligne et de colonne.
 
      ![Form1 avec TableLayoutPanel redimensionné](../ide/media/vs-formafterlayoutpanel.png "VS_FormAfterLayoutPanel") Form1 avec TableLayoutPanel redimensionné
 

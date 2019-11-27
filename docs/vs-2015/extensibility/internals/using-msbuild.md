@@ -29,7 +29,7 @@ MSBuild fournit un format XML bien défini et extensible pour créer des fichier
 ## <a name="general-msbuild-considerations"></a>Considérations générales relatives à MSBuild  
  Les fichiers projet MSBuild, par exemple, les fichiers [!INCLUDE[csprcs](../../includes/csprcs-md.md)]. csproj et [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]. vbproj, contiennent des données qui sont utilisées au moment de la génération, mais peuvent également contenir des données qui sont utilisées au moment de la conception. Les données au moment de la génération sont stockées à l’aide de primitives MSBuild, y compris élément élément [(MSBuild)](../../msbuild/item-element-msbuild.md) et [élément de propriété (MSBuild)](../../msbuild/property-element-msbuild.md). Les données au moment du design, qui sont des données spécifiques au type de projet et aux sous-types de projet associés, sont stockées dans un fichier XML de forme libre réservé.  
   
- MSBuild n’a pas de prise en charge native pour les objets de configuration, mais fournit des attributs conditionnels pour spécifier des données spécifiques à la configuration. Par exemple :  
+ MSBuild n’a pas de prise en charge native pour les objets de configuration, mais fournit des attributs conditionnels pour spécifier des données spécifiques à la configuration. Exemple :  
   
 ```  
 <OutputDir Condition="'$(Configuration)'=="release'">Bin\MyReleaseConfig</OutputDir>  

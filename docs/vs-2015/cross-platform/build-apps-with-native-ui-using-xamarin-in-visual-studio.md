@@ -32,7 +32,7 @@ Une fois que vous avez effectué les étapes dans [Configurer et installer](../c
 
 - [Concevoir une IU pour Windows Phone](#Windows)
 
-- [Étapes suivantes :](#next)
+- [Étapes suivantes](#next)
 
 > [!TIP]
 > Vous trouverez le code source complet de ce projet dans le [dépôt mobile-samples sur GitHub](https://github.com/xamarin/mobile-samples/tree/master/Weather).
@@ -83,7 +83,7 @@ Une fois que vous avez effectué les étapes dans [Configurer et installer](../c
 
    - À droite de la fenêtre, cochez la case du projet **WeatherApp** (il s’agit du seul projet dans lequel vous devez installer le package).
 
-   - Vérifiez que la valeur définie pour le champ **Version** est **Dernière stable**.
+   - Vérifiez que la valeur définie pour le champ **Version** est **Dernière stable** .
 
    - Cliquez sur **Installer**.
 
@@ -247,10 +247,10 @@ Une fois que vous avez effectué les étapes dans [Configurer et installer](../c
 
 7. Dans la fenêtre **Propriétés**, définissez les propriétés suivantes (vous pouvez éventuellement trier la liste par ordre alphabétique à l’aide du bouton de tri situé dans la barre d’outils de la fenêtre Propriétés) :
 
-    |Les|valeur|
+    |Propriété|Valeur|
     |--------------|-----------|
     |**text**|**Search by Zip Code**|
-    |**id**|`@+id/ZipCodeSearchLabel`|
+    |**ID**|`@+id/ZipCodeSearchLabel`|
     |**layout_marginLeft**|`10dp`|
     |**textColor**|`@android:color/white`|
     |**textStyle**|`bold`|
@@ -279,10 +279,10 @@ Une fois que vous avez effectué les étapes dans [Configurer et installer](../c
 
 9. Dans la fenêtre **Propriétés** , définissez les propriétés suivantes :
 
-    |Les|valeur|
+    |Propriété|Valeur|
     |--------------|-----------|
     |**text**|**Code postal**|
-    |**id**|`@+id/ZipCodeLabel`|
+    |**ID**|`@+id/ZipCodeLabel`|
     |**layout_marginLeft**|`10dp`|
     |**layout_marginTop**|`5dp`|
 
@@ -301,9 +301,9 @@ Une fois que vous avez effectué les étapes dans [Configurer et installer](../c
 
 10. À partir de la **Boîte à outils**, faites glisser un contrôle **Number** sur **RelativeLayout**, placez-le sous l’étiquette **Zip Code**. Définissez ensuite les propriétés suivantes :
 
-    |Les|valeur|
+    |Propriété|Valeur|
     |--------------|-----------|
-    |**id**|`@+id/zipCodeEntry`|
+    |**ID**|`@+id/zipCodeEntry`|
     |**layout_marginLeft**|`10dp`|
     |**layout_marginBottom**|`10dp`|
     |**width**|`165dp`|
@@ -324,9 +324,9 @@ Une fois que vous avez effectué les étapes dans [Configurer et installer](../c
 
 11. À partir de la **Boîte à outils**, faites glisser un contrôle **Button** sur le contrôle **RelativeLayout**, puis placez-le à droite du contrôle zipCodeEntry. Définissez ensuite ces propriétés :
 
-    |Les|valeur|
+    |Propriété|Valeur|
     |--------------|-----------|
-    |**id**|`@+id/weatherBtn`|
+    |**ID**|`@+id/weatherBtn`|
     |**text**|**Obtenir la météo**|
     |**layout_marginLeft**|`20dp`|
     |**layout_alignBottom**|`@id/zipCodeEntry`|
@@ -589,7 +589,7 @@ Une fois que vous avez effectué les étapes dans [Configurer et installer](../c
 
      Cette icône figure dans l'angle supérieur de la fenêtre **Propriétés** .
 
-3. À côté de l’événement **Click**, tapez **GetWeatherButton_Click**, puis appuyez sur la touche Entrée.
+3. À côté de l’événement **Click** , tapez **GetWeatherButton_Click**, puis appuyez sur la touche Entrée.
 
      Cela génère un gestionnaire d'événements nommé `GetWeatherButton_Click`. L’éditeur de code s’ouvre et place votre curseur à l’intérieur du bloc de code de gestionnaire d’événements.  Remarque : Si l’éditeur ne s’ouvre pas quand vous appuyez sur ENTRÉE, double-cliquez simplement sur le nom de l’événement.
 

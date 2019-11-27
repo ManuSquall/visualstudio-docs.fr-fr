@@ -32,7 +32,7 @@ Vous pouvez également utiliser le [débogage distant](https://go.microsoft.com/
 ## <a name="configure-an-azure-application-for-intellitrace"></a>Configurer une application Azure pour IntelliTrace
 Pour activer IntelliTrace pour une application Azure, vous devez créer et publier l’application à partir d’un projet Azure Visual Studio. Configurez IntelliTrace pour votre application Azure avant de la publier dans Azure. Si vous publiez votre application sans configurer IntelliTrace, vous devez republier le projet. Pour plus d’informations, voir [Publication d’un projet Azure Cloud Services à l’aide de Visual Studio](https://go.microsoft.com/fwlink/p/?LinkId=623012).
 
-1. Quand vous êtes prêt à déployer votre application Azure, vérifiez que les cibles de publication de votre projet sont définies sur **Debug**.
+1. Lorsque vous êtes prêt à déployer votre application Windows Azure, vérifiez que les cibles de génération de votre projet sont définies sur **Déboguer**.
 
 1. Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur le projet, puis, dans le menu contextuel, sélectionnez **Publier**.
    
@@ -76,6 +76,6 @@ Vous pouvez continuer à utiliser Visual Studio pendant le téléchargement des 
 > 
 > 
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 - [Options de débogage d’Azure Cloud Services](vs-azure-tools-debugging-cloud-services-overview.md)
 - [Publication d’un service cloud Azure à l’aide de Visual Studio](vs-azure-tools-publishing-a-cloud-service.md)

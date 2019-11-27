@@ -25,14 +25,14 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74301054"
 ---
-# <a name="edit-and-continue-visual-c"></a>Modifier & Continuer (Visual C++)
+# <a name="edit-and-continue-visual-c"></a>Modifier & Continuer (Visual C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez utiliser Modifier et continuer dans les projets Visual C++. Pour plus d’informations sur les limitations de modifier & continuer, consultez [modifications du code prises en charge (C++)](../debugger/supported-code-changes-cpp.md) .  
   
  À compter de Visual Studio 2015 Update 1, vous pouvez désormais utiliser modifier & continuer dans les C++ applications du Windows Store et les applications DirectX, car il prend désormais en charge le commutateur de compilateur **/Zi** avec le commutateur **/bigobj** . Vous pouvez également utiliser modifier & continuer avec les fichiers binaires compilés avec le commutateur **/Fastlink**  
   
- D’autres améliorations de Update 1 incluent une nouvelle boîte de dialogue d’attente annulable et une notification lorsqu’un fichier ne prend pas en charge modifier & continuer. Pour plus d’informations sur les améliorations apportées à Update 1, consultez améliorations apportées à [ C++ modifier & continuer dans Visual Studio 2015 Update 1](https://devblogs.microsoft.com/cppblog/improvements-for-c-edit-and-continue-in-visual-studio-2015-update-1/).  
+ Parmi les autres améliorations d’Update 1 figurent une nouvelle boîte de dialogue d’attente annulable et l’affichage d’une notification quand un fichier ne prend pas en charge l’option Modifier et continuer. Pour plus d’informations sur les améliorations apportées à Update 1, consultez améliorations apportées à [ C++ modifier & continuer dans Visual Studio 2015 Update 1](https://devblogs.microsoft.com/cppblog/improvements-for-c-edit-and-continue-in-visual-studio-2015-update-1/).  
   
  L’option de compilateur [/Zo (Améliorer le débogage optimisé)](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) qui a été introduite dans Visual Studio 2013 Update 3 ajoute des informations aux fichiers de symboles (.pdb) pour les fichiers binaires compilés sans l’option [/Od (Désactiver (Débogage))](https://msdn.microsoft.com/library/aafb762y.aspx).  
   

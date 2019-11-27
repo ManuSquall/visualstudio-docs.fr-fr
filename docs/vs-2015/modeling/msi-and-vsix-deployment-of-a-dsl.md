@@ -48,7 +48,7 @@ Vous pouvez installer un langage spécifique à un domaine sur votre ordinateur 
 
 3. Sur l’ordinateur cible, double-cliquez sur le fichier **. vsix** .
 
-     Le **Programme d’installation des extensions Visual Studio** s’ouvre et installe l’extension.
+     Le**Programme d’installation des extensions Visual Studio** s’ouvre et installe l’extension.
 
 4. Démarrez ou redémarrez [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].
 
@@ -56,7 +56,7 @@ Vous pouvez installer un langage spécifique à un domaine sur votre ordinateur 
 
 #### <a name="to-uninstall-a-dsl-that-was-installed-by-using-vsx"></a>Pour désinstaller un DSL qui a été installé à l’aide de VSX
 
-1. Dans le menu **Outils**, cliquez sur **Gestionnaire d'extensions**.
+1. Dans le menu **Outils** , cliquez sur **Gestionnaire d’extensions**.
 
 2. Développez **Extensions installées**.
 
@@ -105,7 +105,7 @@ Vous pouvez installer un langage spécifique à un domaine sur votre ordinateur 
 
     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] créera un fichier nommé **CreateMsiSetupProject. vdproj**.
 
-6. Dans l’Explorateur Windows, copiez Dsl\\\*.vdproj vers un nouveau dossier nommé le programme d’installation.
+6. Dans l’Explorateur Windows, copiez DSL\\*. vdproj dans un nouveau dossier nommé Setup.
 
     (Si vous le souhaitez, vous pouvez maintenant exclure CreateMsiSetupProject.tt de votre projet DSL.)
 
@@ -121,7 +121,7 @@ Vous pouvez installer un langage spécifique à un domaine sur votre ordinateur 
 
 10. Dans l’Explorateur Windows, localisez le fichier MSI généré dans votre projet d’installation.
 
-     Copiez le fichier MSI sur un ordinateur sur lequel vous souhaitez installer votre DSL. Double-cliquez sur le fichier MSI. Le programme d’installation s’exécute.
+     Copiez le fichier MSI sur un ordinateur sur lequel vous souhaitez installer votre DSL. Double-cliquez sur le fichier MSI. Le programme d'installation s'exécute.
 
 11. Sur l’ordinateur cible, créez un nouveau fichier qui a l’extension de fichier de votre DSL. Vérifiez les éléments suivants :
 

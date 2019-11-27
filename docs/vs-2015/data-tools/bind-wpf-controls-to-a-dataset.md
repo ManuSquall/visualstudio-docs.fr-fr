@@ -103,20 +103,20 @@ Dans cette procédure pas à pas, vous allez créer une application WPF qui cont
 
 8. Cliquez sur **Terminer**.
 
-     Visual Studio ajoute un nouveau fichier AdventureWorksLTDataSet.xsd au projet, ainsi qu'un élément **AdventureWorksLTDataSet** correspondant dans la fenêtre **Sources de données**. Le fichier AdventureWorksLTDataSet.xsd définit un dataset typé nommé `AdventureWorksLTDataSet` et un TableAdapter nommé `ProductTableAdapter`. Plus loin dans cette procédure pas à pas, vous allez utiliser le `ProductTableAdapter` pour remplir le dataset avec des données et enregistrer les modifications dans la base de données.
+     Visual Studio ajoute un nouveau fichier AdventureWorksLTDataSet. xsd au projet et ajoute un élément **AdventureWorksLTDataSet** correspondant à la fenêtre sources de **données** . Le fichier AdventureWorksLTDataSet.xsd définit un dataset typé nommé `AdventureWorksLTDataSet` et un TableAdapter nommé `ProductTableAdapter`. Plus loin dans cette procédure pas à pas, vous allez utiliser le `ProductTableAdapter` pour remplir le dataset avec des données et enregistrer les modifications dans la base de données.
 
-9. Générez le projet.
+9. créer le projet ;
 
 ## <a name="edit-the-default-fill-method-of-the-tableadapter"></a>Modifier la méthode de remplissage par défaut du TableAdapter
  Pour remplir le dataset avec des données, utilisez la méthode `Fill` du `ProductTableAdapter`. Par défaut, la méthode `Fill` remplit le `ProductDataTable` du `AdventureWorksLTDataSet` avec toutes les lignes de données de la table Product. Vous pouvez modifier cette méthode pour qu'elle ne retourne qu'un sous-ensemble des lignes. Pour cette procédure pas à pas, modifiez la méthode `Fill` pour ne retourner que les lignes des produits qui disposent de photos.
 
 #### <a name="to-load-product-rows-that-have-photos"></a>Pour charger les lignes des produits disposant de photos
 
-1. Dans l'**Explorateur de solutions**, double-cliquez sur le fichier AdventureWorksLTDataSet.xsd.
+1. Dans **Explorateur de solutions**, double-cliquez sur le fichier AdventureWorksLTDataSet. xsd.
 
      Le Concepteur de DataSet s'ouvre.
 
-2. Dans le concepteur, cliquez avec le bouton droit sur la requête **Fill,GetData()** et sélectionnez **Configurer**.
+2. Dans le concepteur, cliquez avec le bouton droit sur la requête **Fill, GetData ()** et sélectionnez **configurer**.
 
      L’Assistant **Configuration de TableAdapter** s’ouvre.
 
@@ -133,7 +133,7 @@ Dans cette procédure pas à pas, vous allez créer une application WPF qui cont
 
 #### <a name="to-define-the-user-interface-of-the-window"></a>Pour définir l'interface utilisateur de la fenêtre
 
-1. Dans l'**Explorateur de solutions**, double-cliquez sur MainWindow.xaml.
+1. Dans **Explorateur de solutions**, double-cliquez sur MainWindow. Xaml.
 
      La fenêtre s'ouvre dans le Concepteur WPF.
 
@@ -149,7 +149,7 @@ Dans cette procédure pas à pas, vous allez créer une application WPF qui cont
     <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
     ```
 
-3. Générez le projet.
+3. créer le projet ;
 
 ## <a name="createdata-bound-controls"></a>Contrôles liés à ignorant
  Créez des contrôles qui affichent les enregistrements des clients en faisant glisser la table `Product` de la fenêtre **sources de données** vers le Concepteur WPF.
@@ -228,7 +228,7 @@ Dans cette procédure pas à pas, vous allez créer une application WPF qui cont
     > [!NOTE]
     > Cet exemple utilise la méthode `Save` de `TableAdapter` pour enregistrer les modifications. Cela nous convient dans cette procédure pas à pas, car une seule table de données est modifiée. Si vous devez enregistrer des modifications dans plusieurs tables de données, utilisez plutôt la méthode `UpdateAll` de `TableAdapterManager` générée par Visual Studio avec votre dataset. Pour plus d’informations, consultez [vue d’ensemble de TableAdapterManager](https://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650).
 
-## <a name="test-the-application"></a>Tester l’application
+## <a name="test-the-application"></a>Tester l'application
  Générez et exécutez l’application. Vérifiez que vous pouvez afficher et mettre à jour les enregistrements produit.
 
 #### <a name="to-test-the-application"></a>Pour tester l'application

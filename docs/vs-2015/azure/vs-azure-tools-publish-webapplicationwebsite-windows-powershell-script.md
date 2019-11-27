@@ -39,10 +39,10 @@ Le chemin d'accès au fichier de configuration JSON qui décrit les détails du 
 | --- | --- |
 | Alias |aucun |
 | Nécessaire ? |true |
-| Position |named |
+| Position |nommé |
 | Valeur par défaut |aucun |
-| Accepter l'entrée de pipeline ? |False |
-| Accepter les caractères génériques ? |False |
+| Accepter l'entrée de pipeline ? |false |
+| Accepter les caractères génériques ? |false |
 
 ## <a name="subscriptionname"></a>SubscriptionName
 Nom de l’abonnement Azure dans lequel vous souhaitez créer le site web.
@@ -50,11 +50,11 @@ Nom de l’abonnement Azure dans lequel vous souhaitez créer le site web.
 | Paramètre | Valeur par défaut |
 | --- | --- |
 | Alias |aucun |
-| Nécessaire ? |False |
-| Position |named |
+| Nécessaire ? |false |
+| Position |nommé |
 | Valeur par défaut |aucun |
-| Accepter l'entrée de pipeline ? |False |
-| Accepter les caractères génériques ? |False |
+| Accepter l'entrée de pipeline ? |false |
+| Accepter les caractères génériques ? |false |
 
 ## <a name="webdeploypackage"></a>WebDeployPackage
 Le chemin d'accès au package de déploiement web à publier sur le site web. Vous pouvez créer ce package à l'aide de l'Assistant Publier le site web dans Visual Studio. Pour plus d’informations, consultez [Prise en main des services cloud Azure et d'ASP.NET](https://go.microsoft.com/fwlink/p/?LinkID=623089).
@@ -62,11 +62,11 @@ Le chemin d'accès au package de déploiement web à publier sur le site web. Vo
 | Paramètre | Valeur par défaut |
 | --- | --- |
 | Alias |aucun |
-| Nécessaire ? |False |
-| Position |named |
+| Nécessaire ? |false |
+| Position |nommé |
 | Valeur par défaut |aucun |
-| Accepter l'entrée de pipeline ? |False |
-| Accepter les caractères génériques ? |False |
+| Accepter l'entrée de pipeline ? |false |
+| Accepter les caractères génériques ? |false |
 
 ## <a name="databaseserverpassword"></a>DatabaseServerPassword
 Le nom d’utilisateur et le mot de passe pour la base de données SQL dans Azure.
@@ -74,11 +74,11 @@ Le nom d’utilisateur et le mot de passe pour la base de données SQL dans Azur
 | Paramètre | Valeur par défaut |
 | --- | --- |
 | Alias |aucun |
-| Nécessaire ? |False |
-| Position |named |
+| Nécessaire ? |false |
+| Position |nommé |
 | Valeur par défaut |aucun |
-| Accepter l'entrée de pipeline ? |False |
-| Accepter les caractères génériques ? |False |
+| Accepter l'entrée de pipeline ? |false |
+| Accepter les caractères génériques ? |false |
 
 ## <a name="sendhostmessagestooutput"></a>SendHostMessagesToOutput
 Si true, imprime des messages à partir du script dans le flux de sortie.
@@ -86,11 +86,11 @@ Si true, imprime des messages à partir du script dans le flux de sortie.
 | Paramètre | Valeur par défaut |
 | --- | --- |
 | Alias |aucun |
-| Nécessaire ? |False |
-| Position |named |
-| Valeur par défaut |False |
-| Accepter l'entrée de pipeline ? |False |
-| Accepter les caractères génériques ? |False |
+| Nécessaire ? |false |
+| Position |nommé |
+| Valeur par défaut |false |
+| Accepter l'entrée de pipeline ? |false |
+| Accepter les caractères génériques ? |false |
 
 ## <a name="remarks"></a>Notes
 Pour obtenir une explication complète de la façon d'utiliser le script pour créer des environnements de développement et de test, consultez [Utilisation des scripts Windows PowerShell pour la publication dans des environnements de développement et de test](vs-azure-tools-publishing-using-powershell-scripts.md).
@@ -121,7 +121,7 @@ Le fichier de configuration JSON spécifie les détails de ce qui doit être dé
 }
 ```
 
-Vous pouvez modifier le fichier de configuration JSON pour modifier ce qui est déployé. Une section de site web est requise, mais la section de la base de données est facultative.
+Vous pouvez modifier le fichier de configuration JSON pour modifier ce qui est déployé. Une section webSite est requise, mais la section database est facultative.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 Pour plus d’informations, consultez [Publish-WebApplicationVM (script Windows PowerShell)](vs-azure-tools-publish-webapplicationvm.md)

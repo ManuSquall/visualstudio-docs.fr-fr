@@ -51,7 +51,7 @@ Plusieurs options de support sont disponibles pour les clients qui ont des quest
 ### <a name="msdn-subscription-support"></a>Support des abonnements MSDN  
  Les packages d’abonnement MSDN peuvent également inclure une prise en charge. Pour plus d’informations, consultez [prise en charge des abonnés MSDN](https://msdn.microsoft.com/subscriptions/aa718661.aspx).  
   
-## <a name="paid-support"></a>Support payant  
+## <a name="paid-support"></a>Support payé  
   
 ### <a name="developer-tools-support"></a>Support Outils de développement  
  Le support peut également être acheté. Différentes offres de support sont disponibles sous la catégorie Outils de développement dans les [centres d’aide et de support Microsoft](https://support.microsoft.com/supportforbusiness/productselection?fltadd=sps-business-1&sapId=4fd4947b-15ea-ce01-080f-97f2ca3c76e8).  

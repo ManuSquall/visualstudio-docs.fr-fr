@@ -73,5 +73,5 @@ Un fichier projet peut contenir un ou plusieurs éléments `Target` qui définis
 
 ## <a name="see-also"></a>Voir aussi
 - [MSBuild](../msbuild/msbuild.md)
-- [Targets (Cibles MSBuild)](../msbuild/msbuild-targets.md)
+- [Cibles MSBuild](../msbuild/msbuild-targets.md)
 - [Guide pratique pour nettoyer une build](../msbuild/how-to-clean-a-build.md)

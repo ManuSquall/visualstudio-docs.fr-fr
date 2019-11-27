@@ -54,7 +54,7 @@ Visual Studio fournit des outils pour l’utilisation de Windows Communication F
 ### <a name="wcf-programming-model"></a>Modèle de programmation WCF
  Le modèle de programmation WCF repose sur la communication entre deux entités : un service WCF et un client WCF. Le modèle de programmation est encapsulé dans l’espace de noms <xref:System.ServiceModel> dans le [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].
 
-#### <a name="wcf-service"></a>Service WCF
+#### <a name="wcf-service"></a>principal
  Un service WCF est basé sur une interface qui définit un contrat entre le service et le client. Elle est marquée avec un attribut <xref:System.ServiceModel.ServiceContractAttribute>, comme illustré dans le code suivant :
 
  [!code-csharp[WCFWalkthrough#6](../snippets/csharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/iservice1.cs#6)]
@@ -237,15 +237,15 @@ Visual Studio fournit des outils pour l’utilisation de Windows Communication F
 |[Procédure pas à pas : création d’un service WPF simple dans Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)|Fournit une démonstration pas à pas de la création et de l’utilisation des services WCF dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
 |[Procédure pas à pas : création d’un service de données WCF avec WPF et Entity Framework](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md)|Fournit une démonstration pas à pas de la création et de l’utilisation de [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
 |[Utilisation des outils de développement WCF](https://msdn.microsoft.com/library/054adb87-c244-4d5a-83d1-0b2b44bd454b)|Explique comment créer et tester des services WCF dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
-|[Ajouter, mettre à jour ou supprimer une référence de service](https://msdn.microsoft.com/library/cacc14bd-4455-4a44-be78-d2ac16113dd9)|Décrit comment ajouter, mettre à jour ou supprimer des services WCF d’un projet.|
-|[Comment : ajouter, mettre à jour ou supprimer une référence de service de données WCF](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)|Explique comment référencer et utiliser [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
+|[Comment : ajouter, mettre à jour ou supprimer une référence de service](https://msdn.microsoft.com/library/cacc14bd-4455-4a44-be78-d2ac16113dd9)|Décrit comment ajouter, mettre à jour ou supprimer des services WCF d’un projet.|
+|[Guide pratique pour ajouter, mettre à jour ou supprimer une référence de service de données WCF](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)|Explique comment référencer et utiliser [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
 |[Dépannage des références de service](../data-tools/troubleshooting-service-references.md)|Présente des erreurs courantes qui peuvent se produire avec les références de service et comment les empêcher.|
 |[Débogage de services WCF](../debugger/debugging-wcf-services.md)|Décrit les problèmes de débogage courants et les techniques que vous pouvez rencontrer lors du débogage de services WCF.|
 |[Présentation du service d’authentification Windows Communication Foundation](https://msdn.microsoft.com/library/6e121a28-89e8-4974-88a8-70aaa6a7d52b)|Décrit comment utiliser WCF pour fournir un service de rôle pour un site Web.|
 |[Procédure pas à pas : création d’une application de données multiniveau](../data-tools/walkthrough-creating-an-n-tier-data-application.md)|Fournit des instructions pas à pas pour créer un dataset typé et diviser le code du TableAdapter et du dataset en plusieurs projets.|
 |[Configurer la référence de service, boîte de dialogue](../data-tools/configure-service-reference-dialog-box.md)|Décrit les éléments de l’interface utilisateur de la boîte de dialogue **configurer la référence de service** .|
 
-## <a name="reference"></a>Reference
+## <a name="reference"></a>Référence
  <xref:System.ServiceModel>
 
  <xref:System.Data.Services>

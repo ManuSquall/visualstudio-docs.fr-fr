@@ -65,9 +65,9 @@ L’outil Éditeur de couleurs des extensions Visual Studio permet de créer et 
   
    Certains noms d’État courants sont les suivants :  
   
-- Actif  
+- Active  
   
-- Inactif  
+- Inactive  
   
 - MouseOver  
   
@@ -187,10 +187,10 @@ namespace MyCustomColors
   
  Pour rendre les modifications permanentes, régénérez et redéployez l’extension Visual Studio après avoir ajouté les nouvelles couleurs au fichier. pkgdef et écrit le code qui utilisera ces couleurs. La reconstruction de l’extension Visual Studio permet de fusionner les valeurs de Registre pour les nouvelles couleurs dans le reste des thèmes. Ensuite, redémarrez Visual Studio, affichez l’interface utilisateur et vérifiez que les nouvelles couleurs s’affichent comme prévu.  
   
-## <a name="notes"></a>Notes  
+## <a name="notes"></a>Remarques  
  Cet outil est destiné à la création de couleurs personnalisées pour les thèmes Visual Studio préexistants, ou pour la modification des couleurs d’un thème Visual Studio personnalisé. Pour créer des thèmes Visual Studio personnalisés complets, téléchargez l’extension de l' [éditeur de thème de couleurs Visual Studio](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.VisualStudio2015ColorThemeEditor) à partir de la Galerie d’extensions Visual Studio.  
   
-## <a name="sample-output"></a>Résultat de l'exemple  
+## <a name="sample-output"></a>Sortie exemple  
  **Sortie de couleur XML**  
   
  Le fichier. XML généré par l’outil est semblable à ce qui suit :  

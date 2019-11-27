@@ -219,7 +219,7 @@ Cet article décrit les utilisations typiques des annotations pour les paramètr
   
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`  
   
-     En d’autres termes, tous les éléments qui existent dans la mémoire tampon jusqu’à `s` dans le pré-État sont valides dans l’État postérieur.  Par exemple :  
+     En d’autres termes, tous les éléments qui existent dans la mémoire tampon jusqu’à `s` dans le pré-État sont valides dans l’État postérieur.  Exemple :  
   
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`  
   
@@ -247,7 +247,7 @@ Cet article décrit les utilisations typiques des annotations pour les paramètr
   
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`  
   
-     En d’autres termes, tous les éléments qui existent dans la mémoire tampon jusqu’à `s` dans le pré-État sont valides dans l’État postérieur.  Par exemple :  
+     En d’autres termes, tous les éléments qui existent dans la mémoire tampon jusqu’à `s` dans le pré-État sont valides dans l’État postérieur.  Exemple :  
   
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`  
   
@@ -447,7 +447,7 @@ Cet article décrit les utilisations typiques des annotations pour les paramètr
   
      Le résultat doit être valide dans après l’État, mais peut avoir la valeur null dans l’état de publication. Pointe vers une mémoire tampon valide de `s` octets d’éléments valides.  
   
-## <a name="return-values"></a>Valeurs de retour  
+## <a name="return-values"></a>Retourne des valeurs  
  La valeur de retour d’une fonction ressemble à un paramètre de `_Out_` mais se trouve à un niveau de déréférencement différent, et vous n’avez pas à considérer le concept du pointeur sur le résultat.  Pour les annotations suivantes, la valeur de retour est l’objet annoté (un scalaire, un pointeur vers un struct ou un pointeur vers une mémoire tampon). Ces annotations ont la même sémantique que l’annotation `_Out_` correspondante.  
   
 |||  
@@ -484,7 +484,7 @@ Cet article décrit les utilisations typiques des annotations pour les paramètr
   
 - `_Struct_size_bytes_(size)`  
   
-     S’applique à une déclaration de classe ou de struct.  Indique qu’un objet valide de ce type peut être plus grand que le type déclaré, avec le nombre d’octets spécifié par `size`.  Par exemple :  
+     S’applique à une déclaration de classe ou de struct.  Indique qu’un objet valide de ce type peut être plus grand que le type déclaré, avec le nombre d’octets spécifié par `size`.  Exemple :  
   
      `typedef _Struct_size_bytes_(nSize) struct MyStruct {    size_t nSize;    ... };`  
   

@@ -116,7 +116,7 @@ Dans cette procédure pas à pas, vous allez créer une application WPF qui cont
 
 1. Dans le menu **Projet**, sélectionnez **Ajouter un nouvel élément**.
 
-2. Dans la liste des modèles installés, cliquez sur **Web**, puis sélectionnez l'élément de projet **Service de données WCF**.
+2. Dans la liste Modèles installés, cliquez sur **Web**, puis sélectionnez l’élément de projet **service de données WCF** .
 
 3. Dans la zone **nom** , tapez `AdventureWorksService.svc`, puis cliquez sur **Ajouter**.
 
@@ -180,7 +180,7 @@ Dans cette procédure pas à pas, vous allez créer une application WPF qui cont
 
 #### <a name="to-create-the-window-layout"></a>Pour créer la disposition de fenêtre
 
-1. Dans l'**Explorateur de solutions**, double-cliquez sur MainWindow.xaml.
+1. Dans **Explorateur de solutions**, double-cliquez sur MainWindow. Xaml.
 
      La fenêtre s'ouvre dans le Concepteur WPF.
 
@@ -196,7 +196,7 @@ Dans cette procédure pas à pas, vous allez créer une application WPF qui cont
     <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
     ```
 
-3. Générez le projet.
+3. créer le projet ;
 
 ## <a name="create-the-data-bound-controls"></a>Créer les contrôles liés aux données
  Créez des contrôles qui affichent les enregistrements client en faisant glisser le nœud `SalesOrderHeaders` depuis la fenêtre **sources de données** vers le concepteur.
@@ -273,7 +273,7 @@ Dans cette procédure pas à pas, vous allez créer une application WPF qui cont
      [!code-vb[Data_WPFWCF#4](../snippets/visualbasic/VS_Snippets_ProTools/data_wpfwcf/vb/adventureworkssaleseditor/mainwindow.xaml.vb#4)]
 
 ## <a name="saving-changes-to-sales-records"></a>Enregistrement des modifications apportées aux enregistrements de ventes
- Ajoutez du code permettant aux utilisateurs d'afficher et enregistrer les modifications apportées aux enregistrements de vente à l'aide du bouton **Enregistrer les modifications**.
+ Ajoutez du code qui permet aux utilisateurs d’afficher et d’enregistrer les modifications apportées aux enregistrements de ventes à l’aide du bouton **enregistrer les modifications** .
 
 #### <a name="to-add-the-ability-to-save-changes-to-sales-records"></a>Pour ajouter la possibilité d'enregistrer les modifications apportées aux enregistrements de vente
 
@@ -291,7 +291,7 @@ Dans cette procédure pas à pas, vous allez créer une application WPF qui cont
 
 #### <a name="to-test-the-application"></a>Pour tester l'application
 
-1. Dans le menu **Générer**, cliquez sur **Générer la solution**. Vérifiez que la solution se génère sans erreur.
+1. Dans le menu **générer** , cliquez sur **générer la solution**. Vérifiez que la solution se génère sans erreur.
 
 2. Appuyez sur **CTRL + F5**.
 

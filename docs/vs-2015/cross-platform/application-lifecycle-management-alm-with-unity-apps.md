@@ -30,7 +30,7 @@ Le développement d'applications pour des plateformes modernes implique de nombr
   
  Commentaire général : toutes les fonctionnalités de planification et de suivi sont indépendantes du type de projet et des langages de codage.  
   
-|Fonction|Prise en charge avec Unity|Commentaires supplémentaires|  
+|Composant|Prise en charge avec Unity|Commentaires supplémentaires|  
 |-------------|--------------------------|-------------------------|  
 |Gérer les backlogs et les sprints|Oui||  
 |Suivi du travail|Oui||  
@@ -43,7 +43,7 @@ Le développement d'applications pour des plateformes modernes implique de nombr
   
  Commentaire général : bien que ces fonctionnalités de conception soient indépendantes du langage de codage ou qu’elles utilisent des langages .NET tels que C#, elles opèrent selon un modèle d’application traditionnel avec des hiérarchies d’objets et des relations de classes. La conception d'un jeu dans Unity implique un modèle entièrement différent, à savoir des relations d'objets graphiques, de sons, de nuanceurs, de scripts, etc. Pour cette raison, les outils de diagramme de modélisation Visual Studio ne sont pas particulièrement pertinents pour l'ensemble d'un projet Unity. Ils peuvent être utilisés pour gérer les relations au sein des scripts C#, mais ce n'est qu'une partie de l'ensemble.  
   
-|Fonction|Prise en charge avec Unity|Commentaires supplémentaires|  
+|Composant|Prise en charge avec Unity|Commentaires supplémentaires|  
 |-------------|--------------------------|-------------------------|  
 |Diagrammes de séquence|Non||  
 |Graphiques de dépendance|Non||  
@@ -56,7 +56,7 @@ Le développement d'applications pour des plateformes modernes implique de nombr
   
 ## <a name="code"></a>Code  
   
-|Fonction|Prise en charge avec Unity|Commentaires supplémentaires|  
+|Composant|Prise en charge avec Unity|Commentaires supplémentaires|  
 |-------------|--------------------------|-------------------------|  
 |[Utiliser Team Foundation Version Control](https://msdn.microsoft.com/library/1d629052-c65d-4c5d-81eb-eaa4413fe285) ou Visual Studio Team Services|Oui|Les projets Unity se résument à une collection de fichiers qui peuvent être placés dans des systèmes de gestion de version comme n’importe quel autre projet. Toutefois, vous devez prendre en compte certaines considérations particulières décrites après le tableau ci-dessous.|  
 |[Bien démarrer avec Git dans Team Services](https://msdn.microsoft.com/library/32f46ecd-1b03-4ef0-a9c4-8a120da2b03f)|Oui|Consultez les remarques après le tableau.|  
@@ -75,7 +75,7 @@ Le développement d'applications pour des plateformes modernes implique de nombr
 ## <a name="build"></a>Build  
  Lien de référence : **[Build](/azure/devops/pipelines/index)**  
   
-|Fonction|Prise en charge avec Unity|Commentaires supplémentaires|  
+|Composant|Prise en charge avec Unity|Commentaires supplémentaires|  
 |-------------|--------------------------|-------------------------|  
 |Serveur TFS local|Possible|Les projets Unity sont créés via l'environnement Unity et non via le système de génération de Visual Studio (la génération dans Visual Studio Tools pour Unity entraîne la compilation des scripts, mais ne produit pas de fichier exécutable). Comme il est possible de [générer des projets Unity à partir de la ligne de commande](https://docs.unity3d.com/Manual/CommandLineArguments.html) (documentation Unity), il est possible de configurer un processus MSBuild sur un serveur TFS pour exécuter les commandes Unity appropriées, à condition que Unity lui-même soit installé sur cet ordinateur.<br /><br /> Unity propose également [Unity Cloud Build](https://build.cloud.unity3d.com/landing/), qui surveille un dépôt Git ou SVN, et exécute des builds périodiques. Actuellement, il ne fonctionne pas avec Team Foundation Version Control, ni avec Visual Studio Team Services.|  
 |Serveur de builds local lié à Visual Studio Team Services|Possible|Dans les mêmes conditions que ci-dessus, il est également possible de diriger des builds déclenchées via Visual Studio Team Services pour utiliser un ordinateur TFS local.  Consultez la rubrique [Serveur de builds](https://msdn.microsoft.com/library/2d258a0a-f178-4e93-9da1-eba61151af3c) pour obtenir des instructions.|  
@@ -86,19 +86,19 @@ Le développement d'applications pour des plateformes modernes implique de nombr
 ## <a name="testing"></a>Test  
  Lien de référence : **[Test de l’application](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)**  
   
-|Fonction|Prise en charge avec Unity|Commentaires supplémentaires|  
+|Composant|Prise en charge avec Unity|Commentaires supplémentaires|  
 |-------------|--------------------------|-------------------------|  
 |Planification de tests, création de cas de test et organisation de suites de tests|Oui||  
 |Test manuel|Oui||  
 |Gestionnaire de tests (enregistrer et rejouer des tests)|Appareils Windows et émulateurs Android uniquement||  
-|Couverture du code|N/A|Non applicable car le test unitaire se produit dans Unity et non dans Visual Studio. Voir ci-dessous.|  
+|Couverture du code|Non applicable|Non applicable car le test unitaire se produit dans Unity et non dans Visual Studio. Voir ci-dessous.|  
 |[Tests unitaires de votre code](../test/unit-test-your-code.md)|Dans Unity, mais pas dans Visual Studio|Unity fournit son propre framework de tests unitaires dans le cadre de [Unity Test Tools](https://www.assetstore.unity3d.com/en/#!/content/13802) (Unity Asset Store). Les résultats des tests unitaires sont signalés dans Unity et ne seront pas visibles dans Visual Studio.|  
 |[Utiliser UI Automation pour tester votre code](../test/use-ui-automation-to-test-your-code.md)|Non|Les tests codés de l'interface utilisateur s'appuient sur des contrôles lisibles dans l'interface utilisateur de l'application. Les applications Unity sont graphiques par nature et le contenu n'est donc pas lisible par les outils de test codés de l'interface utilisateur.|  
   
 ## <a name="improve-code-quality"></a>Améliorer la qualité du code  
  Lien de référence : **[Améliorer la qualité du code](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
   
-|Fonction|Prise en charge avec Unity|Commentaires supplémentaires|  
+|Composant|Prise en charge avec Unity|Commentaires supplémentaires|  
 |-------------|--------------------------|-------------------------|  
 |[Analyse de la qualité d’un code managé](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|Oui|Permet d’analyser le code de script C# dans Visual Studio.|  
 |[Recherche du code dupliqué à l’aide de la détection de clone de code](https://msdn.microsoft.com/library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|Oui|Permet d’analyser le code de script C# dans Visual Studio.|  
@@ -109,15 +109,15 @@ Le développement d'applications pour des plateformes modernes implique de nombr
 ## <a name="release-management"></a>Gestion des versions  
  Lien de référence : **[Automatiser les déploiements avec Release Management](https://msdn.microsoft.com/library/vs/alm/release/overview)**  
   
-|Fonction|Prise en charge avec Unity|Commentaires supplémentaires|  
+|Composant|Prise en charge avec Unity|Commentaires supplémentaires|  
 |-------------|--------------------------|-------------------------|  
 |Gérer les processus de publication des versions|Oui||  
 |Déploiement sur des serveurs pour le chargement de version test via des scripts|Oui||  
-|Télécharger vers le magasin d'applications|Partial|Il existe des extensions qui peuvent automatiser ce processus pour certains magasins d’applications.  Consultez [Extensions pour Visual Studio Team Services](https://marketplace.visualstudio.com/VSTS), par exemple l’[extension pour Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|  
+|Télécharger vers le magasin d'applications|Partiel|Il existe des extensions qui peuvent automatiser ce processus pour certains magasins d’applications.  Consultez [Extensions pour Visual Studio Team Services](https://marketplace.visualstudio.com/VSTS), par exemple l’[extension pour Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|  
   
 ## <a name="monitor-with-hockeyapp"></a>Analyser avec HockeyApp  
  Lien de référence : **[Analyser avec HockeyApp](https://www.hockeyapp.net/features/)**  
   
-|Fonction|Prise en charge avec Unity|Commentaires supplémentaires|  
+|Composant|Prise en charge avec Unity|Commentaires supplémentaires|  
 |-------------|--------------------------|-------------------------|  
 |Analyse des incidents, télémétrie et distribution des bêta|Oui|HockeyApp est particulièrement utile pour gérer la distribution des bêta et obtenir des rapports d’incidents.<br /><br /> Pour la télémétrie des scripts C#, il est possible d’utiliser n’importe quel framework d’analytique à condition qu’il s’exécute sur la version de .NET utilisée par Unity. Toutefois, cette solution permet l'analyse seulement dans les scripts de jeu et pas plus profondément dans le moteur Unity. Il n’existe aucun plug-in pour Application Insights, mais des plug-ins sont disponibles pour d’autres solutions d’analyse, par exemple [Unity Analytics](https://www.assetstore.unity3d.com/en/#!/content/28120) et [Google Analytics](https://github.com/googleanalytics/google-analytics-plugin-for-unity). Les services tels que Unity Analytics qui comprennent la nature d'un projet Unity fournissent bien entendu une analyse beaucoup plus explicite que les frameworks génériques.|

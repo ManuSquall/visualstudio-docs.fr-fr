@@ -101,11 +101,11 @@ Dans Visual Studio, vous pouvez collecter des données de diagnostic pour des ma
 ### <a name="to-turn-on-diagnostics-on-azure-virtual-machines"></a>Pour activer les diagnostics sur des machines virtuelles Azure
 
 1. Dans l’Explorateur de serveurs, sélectionnez le nœud Azure, puis connectez-vous à votre abonnement Azure si vous n’y êtes pas encore connecté.
-2. Développez le nœud **Machines virtuelles** . Vous pouvez créer une machine virtuelle ou sélectionner un nœud existant.
+2. Développez le nœud **Machines virtuelles**. Vous pouvez créer une machine virtuelle ou sélectionner un nœud existant.
 3. Dans le menu contextuel de la machine virtuelle souhaitée, sélectionnez **Configurer**. La boîte de dialogue de configuration de la machine virtuelle apparaît.
 
     ![Configurer une machine virtuelle Azure](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796663.png)
-4. Ajoutez l’extension Microsoft Monitoring Agent Diagnostics si elle n’est pas déjà installée. Avec cette extension, vous pouvez collecter des données de diagnostic pour la machine virtuelle Azure. Sous **Extensions installées**, dans la liste déroulante **Sélectionner une extension disponible**, sélectionnez **Microsoft Monitoring Agent Diagnostics**.
+4. Ajoutez l'extension Diagnostics de Microsoft Monitoring Agent si elle n'est pas installée. Avec cette extension, vous pouvez collecter des données de diagnostic pour la machine virtuelle Azure. Sous **Extensions installées**, dans la liste déroulante **Sélectionner une extension disponible**, sélectionnez **Microsoft Monitoring Agent Diagnostics**.
 
     ![Installer une extension de machine virtuelle Azure](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC766024.png)
 
@@ -120,9 +120,9 @@ Dans Visual Studio, vous pouvez collecter des données de diagnostic pour des ma
 
     ![Activer les diagnostics Azure et la configuration](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758144.png)
 
-    L’onglet par défaut, **général**, offre les options de collecte des données de diagnostic suivantes : **Erreurs uniquement**, **toutes les informations**et **plan personnalisé**. L’option par défaut, **Erreurs uniquement**, nécessite le plus petit volume de stockage, car elle ne transfère pas les messages d’avertissement ou de suivi. L’option **Toutes les informations** transfère le plus grand nombre d’informations. Elle est donc la plus coûteuse en termes de stockage.
-7. Pour cet exemple, sélectionnez l’option **Plan personnalisé** afin de pouvoir personnaliser les données collectées.
-8. Le champ **Quota de disque en Mo** spécifie l’espace à allouer aux données de diagnostic dans le compte de stockage. Vous pouvez modifier la valeur par défaut si vous le souhaitez.
+    L’onglet par défaut, **général**, offre les options de collecte des données de diagnostic suivantes : **Erreurs uniquement**, **toutes les informations**et **plan personnalisé**. L'option par défaut, **Erreurs uniquement**, nécessite le plus petit volume de stockage, car elle ne transfère pas les messages d'avertissement ou de suivi. L'option **Toutes les informations** transfère le plus grand nombre d'informations. Elle est donc la plus coûteuse en termes de stockage.
+7. Pour cet exemple, sélectionnez l'option **Plan personnalisé** afin de pouvoir sélectionner les données collectées.
+8. Le champ **Quota de disque en Mo** spécifie l'espace à allouer aux données de diagnostic dans le compte de stockage. Vous pouvez modifier la valeur par défaut si vous le souhaitez.
 9. Sous chaque onglet des données de diagnostic à collecter, cochez la case **Activer le transfert de \<type de journal\>** .
 
     Par exemple, si vous souhaitez collecter les journaux d’application, activez la case à cocher **activer le transfert des journaux des applications** sous l’onglet **journaux des applications** . Spécifiez également les autres informations requises pour chaque type de données de diagnostic. Pour plus d’informations sur la configuration de chaque onglet, consultez la section **Configurer les sources de données de diagnostic** plus loin dans cet article.
@@ -135,7 +135,7 @@ Dans Visual Studio, vous pouvez collecter des données de diagnostic pour des ma
 Après avoir activé la collecte des données de diagnostic, vous pouvez sélectionner les sources de données et les informations à collecter. Les sections suivantes décrivent les onglets de la boîte de dialogue **Configuration des diagnostics** et la signification de chaque option de configuration.
 
 ### <a name="application-logs"></a>Journaux d’application
-Les journaux d’application contiennent des informations de diagnostic produites par une application web. Si vous voulez capturer les journaux d’application, sélectionnez la case à cocher **Activer le transfert des journaux d’application** . Pour augmenter ou diminuer l’intervalle entre les transferts des journaux d’application vers votre compte de stockage, vous devez changer la valeur de **Période de transfert (min)** . Vous pouvez également changer la quantité d’informations consignées dans le journal en définissant la valeur de **Niveau de journalisation**. Par exemple, sélectionnez **Détaillé** pour collecter plus d’informations ou **Critique** pour capturer seulement les erreurs critiques. Si vous avez un fournisseur de diagnostics spécifique qui génère des journaux d’application, vous pouvez capturer ceux-ci en ajoutant le GUID du fournisseur dans la zone **GUID du fournisseur**.
+Les journaux d’application contiennent des informations de diagnostic produites par une application web. Si vous voulez capturer les journaux d'application, sélectionnez la case à cocher **Activer le transfert des journaux d'application**. Pour augmenter ou diminuer l’intervalle entre les transferts des journaux d’application vers votre compte de stockage, vous devez changer la valeur de **Période de transfert (min)** . Vous pouvez également changer la quantité d’informations consignées dans le journal en définissant la valeur de **Niveau de journalisation**. Par exemple, sélectionnez **Détaillé** pour collecter plus d’informations ou **Critique** pour capturer seulement les erreurs critiques. Si vous avez un fournisseur de diagnostics spécifique qui génère des journaux d’application, vous pouvez capturer ceux-ci en ajoutant le GUID du fournisseur dans la zone **GUID du fournisseur**.
 
   ![Journaux d’application](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758145.png)
 
@@ -238,7 +238,7 @@ Après avoir collecté les données de diagnostic pour un service cloud ou une m
 
     La boîte de dialogue **Résumé des diagnostics** s’affiche.
 
-    ![Résumé des diagnostics de la machine virtuelle Azure](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796667.png)
+    ![Résumé du diagnostic de la machine virtuelle Azure](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796667.png)
 
     Si les données les plus récentes n’apparaissent pas, vous devez peut-être attendre la fin de la période de transfert.
 
@@ -303,5 +303,5 @@ Les méthodes de **RoleEntryPoint** sont appelées dans le contexte de WAIISHost
 
 Dans la fenêtre **Propriétés**, définissez la propriété **Copier dans le répertoire de sortie** sur **Toujours copier**.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 Pour en savoir plus sur la journalisation des diagnostics dans Azure, consultez [Activer les diagnostics dans les services cloud et les machines virtuelles Azure](/azure/cloud-services/cloud-services-dotnet-diagnostics) et [Activer la journalisation des diagnostics pour les applications web dans Azure App Service](/azure/app-service/web-sites-enable-diagnostic-log).

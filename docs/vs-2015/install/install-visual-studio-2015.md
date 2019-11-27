@@ -41,7 +41,7 @@ Avant d’entrer dans les détails, voici une liste de nos liens les plus demand
 |![Télécharger Visual Studio](../install/media/downloads.png "Téléchargements") |**Téléchargements**: pour installer Visual Studio 2015, vous pouvez télécharger un fichier exécutable du produit à partir de la page [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015) (abonnement requis) ou utiliser le support d’installation à partir du produit boxed. [En savoir plus sur le téléchargement des versions actuelles ou précédentes de Visual Studio](https://www.visualstudio.com/vs/older-downloads/).|
 |![En savoir plus sur les fonctionnalités](../install/media/features.png "Fonctionnalités") |**Fonctionnalités**: pour en savoir plus sur les fonctionnalités de Visual Studio 2015, consultez les notes de publication pour [RTM](https://www.visualstudio.com/news/vs2015-vs), [Update 1](https://www.visualstudio.com/news/vs2015-update1-vs), [Update 2](https://www.visualstudio.com/news/vs2015-update2-vs)et [Update 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs).|
 |![Découvrez ce qui se trouve dans chaque référence (SKU)](../install/media/sku.png "Références") |**Références SKU** : Pour découvrir les nouveautés disponibles dans chaque édition de Visual Studio 2015, consultez notre page [Comparer les offres Visual Studio](https://go.microsoft.com/fwlink/?LinkID=242142).|
-|![Afficher la configuration système requise](../install/media/system-requirements.png "Configuration système requise") |**Configuration système requise**: pour afficher la configuration système requise pour chaque édition de visual studio 2015, consultez la page [compatibilité de Visual Studio 2015](https://www.visualstudio.com/products/visual-studio-2015-compatibility-vs) .|
+|![Afficher la configuration système requise](../install/media/system-requirements.png "Configuration requise") |**Configuration système requise**: pour afficher la configuration système requise pour chaque édition de visual studio 2015, consultez la page [compatibilité de Visual Studio 2015](https://www.visualstudio.com/products/visual-studio-2015-compatibility-vs) .|
 |![Localiser votre clé de produit](../install/media/product-keys.png "Clés de produit") |**Clés de produit**: pour localiser votre clé de produit, consultez la rubrique [Comment : localiser la clé de produit Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) .|
 |![En savoir plus sur les licences](../install/media/licensing.png "Gestion des licences") |**Licence**: pour en savoir plus sur les options de licence pour les particuliers ou les clients d’entreprise, consultez le livre blanc sur les [licences Visual Studio et MSDN](https://www.microsoft.com/download/details.aspx?id=13350) .|
 
@@ -61,7 +61,7 @@ Avant d’entrer dans les détails, voici une liste de nos liens les plus demand
 |------------------|----------------|
 |**Mises à jour**|Visual Studio 2015 Update 3|
 |**Langages de programmation**|Visual C++<br />Visual F#<br />Outils Python pour Visual Studio|
-|**Développement Windows et web**|Outils de publication de ClickOnce<br />LightSwitch<br />Outils de développement Microsoft Office<br />Microsoft SQL Server Data Tools<br /> Microsoft Web Developer Tools<br />PowerShell Tools for Visual Studio (tiers)<br />Kit de développement Silverlight<br />Outils de développement d’applications Windows universelles<br />Kits de développement logiciel (SDK) et outils Windows 10<br />Outils Windows 8.1 et Windows Phone 8.0/8.1<br />Kits de développement logiciel (SDK) et outils Windows 8.1|
+|**Développement Windows et web**|Outils de publication ClickOnce<br />LightSwitch<br />Outils de développement Microsoft Office<br />Microsoft SQL Server Data Tools<br /> Microsoft Web Developer Tools<br />PowerShell Tools for Visual Studio (tiers)<br />Kit de développement Silverlight<br />Outils de développement d’applications Windows universelles<br />Kits de développement logiciel (SDK) et outils Windows 10<br />Outils Windows 8.1 et Windows Phone 8.0/8.1<br />Kits de développement logiciel (SDK) et outils Windows 8.1|
 |**Développement multiplateforme pour appareils mobiles**|C#/.NET (Xamarin)<br />HTML/JavaScript (Apache Cordova)<br />Développement mobile Visual C++ pour iOS / Android<br />Clang avec Microsoft CodeGen|
 |**Outils courants et kits de développement logiciel**|Android Native Development Kit (3e tiers)<br /> Android SDK [tiers]<br />API d’installation Android SDK (tierce)<br />Apache Ant (tiers)<br /> Java SE Development Kit (tiers)<br /> Joyent node. js (tiers)|
 |**Outils courants**|Git pour Windows (tiers)<br />Extension GitHub pour Visual Studio (tiers)<br /> Outils d'extensibilité de Visual Studio|
@@ -130,7 +130,7 @@ Avant d’entrer dans les détails, voici une liste de nos liens les plus demand
 
 #### <a name="to-install-or-uninstall-help-content"></a>Pour installer ou désinstaller le contenu de l'aide
 
-1. Dans la barre de menus [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], choisissez **Aide**, **Ajouter et supprimer le contenu d'aide**.
+1. Dans la barre de menus [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , choisissez **Aide**, **Ajouter et supprimer le contenu d'aide**.
 
 2. Sous l'onglet **Gérer le contenu** de la **Visionneuse d'aide Microsoft**, sélectionnez la source d'installation pour votre contenu d'aide.
 
@@ -149,7 +149,7 @@ Avant d’entrer dans les détails, voici une liste de nos liens les plus demand
 
 1. Dans la barre de menus, sélectionnez **Outils**, **Options**.
 
-2. Dans la boîte de dialogue **Options** , développez **Environnement**, puis sélectionnez **Extensions et mises à jour**. Assurez-vous de cocher la case **Rechercher automatiquement les mises à jour**, puis choisissez **OK**.
+2. Dans la boîte de dialogue **Options** , développez **Environnement**, puis sélectionnez **Extensions et mises à jour**. Assurez-vous de cocher la case **Rechercher automatiquement les mises à jour** , puis choisissez **OK**.
 
 ## <a name="registering-visual-studio"></a>Inscription de Visual Studio
 

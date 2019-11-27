@@ -50,11 +50,11 @@ Si vous ne pouvez pas utiliser Visual Studio pour déployer votre application [!
   
 - Déterminez si l’application requiert un niveau élevé de confiance.  
   
-     Si votre application nécessite un niveau de confiance totale (par exemple, un accès complet au système de l’utilisateur), vous pouvez utiliser l’option `-TrustLevel` de Mage. exe pour la définir. Si vous souhaitez définir un jeu d’autorisations personnalisé pour votre application, vous pouvez copier la section d’autorisation Internet ou intranet d’un autre manifeste, la modifier en fonction de vos besoins, puis l’ajouter au manifeste d’application à l’aide d’un éditeur de texte ou de MageUI. exe. Pour plus d'informations, consultez [Vue d'ensemble du déploiement d'applications approuvées](../deployment/trusted-application-deployment-overview.md).  
+     Si votre application nécessite un niveau de confiance totale (par exemple, un accès complet au système de l’utilisateur), vous pouvez utiliser l’option `-TrustLevel` de Mage. exe pour la définir. Si vous souhaitez définir un jeu d’autorisations personnalisé pour votre application, vous pouvez copier la section d’autorisation Internet ou intranet d’un autre manifeste, la modifier en fonction de vos besoins, puis l’ajouter au manifeste d’application à l’aide d’un éditeur de texte ou de MageUI. exe. Pour plus d'informations, consultez [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
   
 - Obtenez un certificat Authenticode.  
   
-     Vous devez signer votre déploiement avec un certificat Authenticode. Vous pouvez générer un certificat de test à l’aide des outils Visual Studio, MageUI. exe ou MakeCert. exe et Pvk2Pfx. exe, ou vous pouvez obtenir un certificat auprès d’une autorité de certification. Si vous choisissez d’utiliser le déploiement d’applications approuvées, vous devez également effectuer une installation unique du certificat sur tous les ordinateurs clients. Pour plus d'informations, consultez [Vue d'ensemble du déploiement d'applications approuvées](../deployment/trusted-application-deployment-overview.md).  
+     Vous devez signer votre déploiement avec un certificat Authenticode. Vous pouvez générer un certificat de test à l’aide des outils Visual Studio, MageUI. exe ou MakeCert. exe et Pvk2Pfx. exe, ou vous pouvez obtenir un certificat auprès d’une autorité de certification. Si vous choisissez d’utiliser le déploiement d’applications approuvées, vous devez également effectuer une installation unique du certificat sur tous les ordinateurs clients. Pour plus d'informations, consultez [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
   
     > [!NOTE]
     > Vous pouvez également signer votre déploiement avec un certificat CNG que vous pouvez obtenir auprès d’une autorité de certification.  
@@ -166,7 +166,7 @@ Si vous ne pouvez pas utiliser Visual Studio pour déployer votre application [!
   
      Si votre certificat est conservé dans un magasin de certificats accessible à partir de votre ordinateur, sélectionnez l’option **signer avec le certificat stocké** , puis sélectionnez le certificat dans la liste fournie.  
   
-14. Cliquez sur **OK** pour signer le manifeste de votre application. La boîte de dialogue Enregistrer sous s’affiche.  
+14. Cliquez sur **OK** pour signer le manifeste de votre application. La boîte de dialogue Enregistrer sous apparaît.  
   
 15. Dans la boîte de dialogue Enregistrer sous, spécifiez le répertoire de la version, puis cliquez sur **Enregistrer**.  
   
@@ -194,7 +194,7 @@ Si vous ne pouvez pas utiliser Visual Studio pour déployer votre application [!
   
      Si votre certificat est conservé dans un magasin de certificats accessible à partir de votre ordinateur, sélectionnez l’option **signer avec le certificat stocké** , puis sélectionnez le certificat dans la liste fournie.  
   
-26. Cliquez sur **OK** pour signer votre manifeste de déploiement. La boîte de dialogue Enregistrer sous s’affiche.  
+26. Cliquez sur **OK** pour signer votre manifeste de déploiement. La boîte de dialogue Enregistrer sous apparaît.  
   
 27. Dans la boîte de dialogue **Enregistrer sous** , déplacez un répertoire vers la racine de votre déploiement, puis cliquez sur **Enregistrer**.  
   
