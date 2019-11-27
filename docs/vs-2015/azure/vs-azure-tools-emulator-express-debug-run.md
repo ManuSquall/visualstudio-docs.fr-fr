@@ -49,5 +49,5 @@ Les problèmes suivants sont des restrictions connues de l’émulateur express�
 - Vous n’avez pas accès aux numéros de port inférieurs à 1 000. Si vous faites appel à un fournisseur d’authentification qui utilise habituellement un numéro de port inférieur à 1000, vous devrez peut-être remplacer cette valeur par un numéro de port supérieur à 1000.
 - Les limitations qui s’appliquent à l’émulateur de calcul Azure s’appliquent aussi à l’émulateur express. Par exemple, il ne peut pas y avoir plus de 50 instances de rôle par déploiement. Pour plus d’informations sur l’émulateur de calcul Azure, consultez la page [Exécuter une application Azure dans l’émulateur de calcul](https://go.microsoft.com/fwlink/p/?LinkId=623050).
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 [Débogage des services cloud Azure](vs-azure-tools-debugging-cloud-services-overview.md)

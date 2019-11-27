@@ -63,7 +63,7 @@ Vous pouvez utiliser Visual C++ pour le développement mobile multiplateforme po
   
 - Une identité de signature iOS configurée dans Xcode  
   
-     Pour plus d’informations sur l’obtention d’une identité de signature iOS, consultez le document relatif à la [gestion des identités et des certificats de signature](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html) dans la bibliothèque du développeur iOS. Pour afficher ou définir votre identité de signature dans Xcode, ouvrez le menu **Xcode** et choisissez **Preferences**. Sélectionnez **Accounts**, choisissez votre ID Apple, puis cliquez sur le bouton **View Details**.  
+     Pour plus d’informations sur l’obtention d’une identité de signature iOS, consultez le document relatif à la [gestion des identités et des certificats de signature](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html) dans la bibliothèque du développeur iOS. Pour afficher ou définir votre identité de signature dans Xcode, ouvrez le menu **Xcode** et choisissez **Preferences**. Sélectionnez **Accounts** , choisissez votre ID Apple, puis cliquez sur le bouton **View Details** .  
   
 - Si vous utilisez un appareil iOS pour le développement, un profil de mise en service (« Provisioning Profile ») configuré dans Xcode pour votre appareil  
   
@@ -149,22 +149,22 @@ Vous pouvez utiliser Visual C++ pour le développement mobile multiplateforme po
   
 3. Dans la barre de menus Visual Studio, choisissez **Outils**, **Options**.  
   
-4. Dans la boîte de dialogue **Options**, développez **Multiplateforme**, **C++** , **iOS**.  
+4. Dans la boîte de dialogue **Options** , développez **Multiplateforme**, **C++** , **iOS**.  
   
-5. Dans les champs **Nom d’hôte** et **Port**, entrez les valeurs spécifiées par l’agent distant au moment où vous l’avez démarré. Le nom d’hôte peut être le nom DNS ou l’adresse IP de votre Mac. Le numéro de port par défaut est 3030.  
+5. Dans les champs **Nom d’hôte** et **Port** , entrez les valeurs spécifiées par l’agent distant au moment où vous l’avez démarré. Le nom d’hôte peut être le nom DNS ou l’adresse IP de votre Mac. Le numéro de port par défaut est 3030.  
   
    > [!NOTE]
    > Si vous ne pouvez pas envoyer une requête ping au Mac en utilisant le nom d’hôte, vous devrez peut-être utiliser l’adresse IP.  
   
-6. Si vous utilisez l’agent distant en mode de connexion sécurisée par défaut, cochez la case **Sécuriser**, puis entrez la valeur de code confidentiel spécifiée par l’agent distant dans le champ **Code confidentiel**. Si vous utilisez l’agent distant en mode de connexion non sécurisée, décochez la case **Sécuriser** et laisser le champ **Code confidentiel** vide.  
+6. Si vous utilisez l’agent distant en mode de connexion sécurisée par défaut, cochez la case **Sécuriser** , puis entrez la valeur de code confidentiel spécifiée par l’agent distant dans le champ **Code confidentiel** . Si vous utilisez l’agent distant en mode de connexion non sécurisée, décochez la case **Sécuriser** et laisser le champ **Code confidentiel** vide.  
   
-7. Choisissez **Coupler** pour activer le couplage.  
+7. Choisissez **Coupler** pour activer le jumelage.  
   
     ![Configurer la connexion vcremote pour les builds iOS](../cross-platform/media/cppmdd-options-ios.PNG "CPPMDD_Options_iOS")  
   
-    Le couplage persiste tant que vous ne changez pas de nom d’hôte ou de port. Si vous changez de nom d’hôte ou de port dans la boîte de dialogue **Options**, pour annuler la modification, choisissez le bouton **Rétablir** pour revenir au couplage précédent.  
+    Le couplage persiste tant que vous ne changez pas de nom d’hôte ou de port. Si vous changez de nom d’hôte ou de port dans la boîte de dialogue **Options** , pour annuler la modification, choisissez le bouton **Rétablir** pour revenir au couplage précédent.  
   
-    Si le couplage n’aboutit pas, vérifiez que l’agent distant s’exécute en suivant les étapes décrites dans [Start the remote agent](#Start). Si trop de temps s’est écoulé après la génération du code confidentiel de l’agent, suivez les étapes décrites dans [Generate a new security PIN](#GeneratePIN) sur le Mac, puis réessayez. Si vous utilisez le nom d’hôte de votre Mac, essayez plutôt d’utiliser l’adresse IP qui figure dans le champ **Nom d’hôte**.  
+    Si le couplage n’aboutit pas, vérifiez que l’agent distant s’exécute en suivant les étapes décrites dans [Start the remote agent](#Start). Si trop de temps s’est écoulé après la génération du code confidentiel de l’agent, suivez les étapes décrites dans [Generate a new security PIN](#GeneratePIN) sur le Mac, puis réessayez. Si vous utilisez le nom d’hôte de votre Mac, essayez plutôt d’utiliser l’adresse IP qui figure dans le champ **Nom d’hôte** .  
   
 8. Mettez à jour le nom de dossier dans le champ **Racine distante** pour spécifier le dossier utilisé par l’agent distant dans le répertoire de base (~) du Mac. Par défaut, l’agent distant utilise /Users/`username`/vcremote comme racine distante.  
   

@@ -49,5 +49,5 @@ Cette section traite de fonctionnalités supplémentaires que vous pouvez utilis
   
  [Utilisation des fichiers dump](../debugger/using-dump-files.md) Décrit les fichiers dump, y compris les instructions sur l’enregistrement et l’ouverture. Les fichiers dump contiennent un instantané de l’état de votre programme à un moment donné, généralement après un incident. Si vous testez votre programme sur un ordinateur où n’ont pas été installés des fichiers sources ni PDB, vous pouvez enregistrer un fichier dump quand un incident se produit et l’utiliser pour déboguer l’incident sur l’ordinateur utilisé pour la génération et contenant les fichiers sources et PDB. 
   
- [Comment : restaurer les commandes masquées du débogueur](../debugger/how-to-restore-hidden-debugger-commands.md)  
+ [Guide pratique pour restaurer les commandes masquées du débogueur](../debugger/how-to-restore-hidden-debugger-commands.md)  
  Décrit comment rendre visibles les commandes du débogueur qui ont été masquées par les paramètres IDE par défaut.
