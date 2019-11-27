@@ -54,7 +54,7 @@ Le tableau ci-dessous présente les avantages de l’abonnement Pluralsight offe
 
 ## <a name="eligibility"></a>Eligibility
 
-|                          Niveau d'abonnement                          |     Canaux      |    Avantage    |   Renouvelable ?   |
+|                          Niveau d'abonnement                          |     Channels      |    Avantage du    |   Renouvelable ?   |
 |----------------------------------------------------------------------|-------------------|---------------|----------------|
 |          Visual Studio Enterprise (Standard)           | Licences en volume, Azure, Détail |   6 mois    | Oui<sup>2</sup> |
 |          Visual Studio Enterprise avec GitHub Enterprise          | LV  |   6 mois    | Oui<sup>2</sup> |
@@ -71,7 +71,7 @@ Le tableau ci-dessous présente les avantages de l’abonnement Pluralsight offe
 <sup>2</sup>  *l’avantage de Pluralsight dans les abonnements Visual Studio sélectionnés renouvelle votre abonnement. Par exemple, si vous avez un abonnement annuel que vous renouvelez chaque année, l’avantage est disponible chaque année lorsque vous le renouvelez. Si vous avez un abonnement de plusieurs années, l’avantage Pluralsight est disponible une fois pendant la durée de l’abonnement.  Si vous renouvelez un abonnement de plusieurs années, l’avantage sera à nouveau disponible après le renouvellement.*
 
 > [!NOTE]
-> Microsoft n’offre plus les abonnements Visual Studio Professional annuel et Visual Studio Enterprise annuel dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à accéder à [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
+> Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à consulter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
 
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
 

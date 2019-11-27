@@ -14,7 +14,7 @@ ms.locfileid: "74538673"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>Se connecter aux projets dans Team Explorer
 
-Utilisez la fenêtre d’outil **Team Explorer** pour coordonner vos efforts de codage avec d’autres membres d’équipe afin de développer un projet, et pour gérer le travail assigné à vous-même, à votre équipe ou à vos projets. **Team Explorer** connecte Visual Studio aux dépôts Git et GitHub, aux référentiels Team Foundation Version Control (TFVC) et aux projets hébergés sur [Azure DevOps Services](/azure/devops/user-guide/what-is-azure-devops-services) ou un serveur [Azure DevOps Server](/azure/devops/index-all) sur site (anciennement appelé TFS). Vous pouvez gérer le code source, les éléments de travail et les générations.
+Utilisez la fenêtre de l’outil **Team Explorer** pour coordonner vos efforts de codage avec d’autres membres d’équipe afin de développer un projet, et pour gérer le travail assigné à vous-même, à votre équipe ou à vos projets. **Team Explorer** connecte Visual Studio aux dépôts Git et GitHub, aux référentiels Team Foundation Version Control (TFVC) et aux projets hébergés sur [Azure DevOps Services](/azure/devops/user-guide/what-is-azure-devops-services) ou un serveur [Azure DevOps Server](/azure/devops/index-all) sur site (anciennement appelé TFS). Vous pouvez gérer le code source, les éléments de travail et les générations.
 
 ![Page d’accueil de Team Explorer dans Visual Studio](media/team-explorer/team-explorer.png)
 

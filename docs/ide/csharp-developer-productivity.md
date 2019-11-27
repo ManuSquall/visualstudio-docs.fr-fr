@@ -41,7 +41,7 @@ Certaines extensions offrent également des schémas de clavier :
 
 Le tableau suivant liste les principaux raccourcis de Visual Studio :
 
-| Raccourci (tous les profils) | Commande | Description |
+| Raccourci (tous les profils) | Command | Description |
 |-|-|-|
 | **Ctrl**+**T** | Atteindre tout | Accéder à n’importe quel fichier, type, membre ou toute déclaration de symbole |
 | **F12** (également **Ctrl**+**Clic**) | Atteindre la définition | Accédez à l’emplacement de définition d’un symbole |
@@ -181,7 +181,7 @@ Utilisez IntelliCode pour Visual Studio pour obtenir des [complétions de code s
 
 - [Live Unit Testing](../test/live-unit-testing.md) exécute en continu les tests impactés par vos modifications du code et met à jour les icônes de l’éditeur inline pour vous informer de l’état de vos tests. Incluez ou excluez des tests spécifiques ou des projets de test de votre jeu de tests dynamique. (Visual Studio Enterprise Edition uniquement.)
 
-## <a name="debugging"></a>Débogage
+## <a name="debugging"></a>Debugging
 
 Voici quelques-unes des fonctionnalités de débogage de Visual Studio :
 

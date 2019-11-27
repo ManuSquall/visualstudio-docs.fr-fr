@@ -31,7 +31,7 @@ Quand un partenaire acquiert une compétence (au niveau Silver ou Gold), il bén
 
 | Compétence                                  | Abonnements supplémentaires gagnés pour une compétence **Silver** | Abonnements supplémentaires gagnés pour une compétence **Gold** |
 |---------------------------------------------|-----------------------------------------------------------|---------------------------------------------------------|
-| Développement d’applications                     | 5 abonnements Visual Studio Enterprise                  | 25 abonnements Visual Studio Enterprise               |
+| Développement de l’application                     | 5 abonnements Visual Studio Enterprise                  | 25 abonnements Visual Studio Enterprise               |
 | Cloud Customer Relationship Management      | 5 abonnements Visual Studio Enterprise                  | 25 abonnements Visual Studio Enterprise               |
 | Cloud Platform                              | 5 abonnements Visual Studio Enterprise                  | 25 abonnements Visual Studio Enterprise               |
 | Cloud Productivity                          | 5 abonnements Visual Studio Enterprise                  | 25 abonnements Visual Studio Enterprise               |

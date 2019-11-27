@@ -34,9 +34,9 @@ Cette rubrique est destinée aux développeurs qui travaillent principalement su
   
   **Dans cette rubrique :**  
   
-- [Configuration pour Mac (identifiant Apple, Xcode et Xamarin)](#mac)  
+- [Configuration du Mac (ID Apple, Xcode et Xamarin)](#mac)  
   
-- [Configuration pour Windows dans Parallels (Visual Studio et Xamarin)](#windows)  
+- [Configuration de Windows dans Parallels (Visual Studio et Xamarin)](#windows)  
   
 - [Vérifier votre environnement](#verify)  
   
@@ -50,7 +50,7 @@ Cette rubrique est destinée aux développeurs qui travaillent principalement su
   
 4. Une fois que vous avez fini d’installer Xamarin sur les ordinateurs Windows et Mac, suivez les instructions de la page [Connecting to the Mac using XMA](/xamarin/ios/get-started/installation/windows/connecting-to-mac) (xamarin.com) pour pouvoir utiliser iOS et le Mac à partir de Visual Studio sur l’ordinateur Windows.  
   
-## <a name="windows"></a> Configuration pour Windows dans Parallels (Visual Studio et Xamarin)  
+## <a name="windows"></a> Configuration de Windows dans Parallels (Visual Studio et Xamarin)  
   
 1. En utilisant le Bureau Windows que vous avez configuré dans Parallels/VMWare, [téléchargez et lancez le programme d’installation de l’édition Visual Studio 2015 de votre choix](https://www.visualstudio.com/downloads/download-visual-studio-vs.aspx) (Community, Professional ou Enterprise). Visual Studio 2015 Community est une version gratuite, tandis que les éditions Professional et Enterprise peuvent être utilisées dans le cadre d’une évaluation de 30 jours.  
   
@@ -60,7 +60,7 @@ Cette rubrique est destinée aux développeurs qui travaillent principalement su
   
 3. Cochez/décochez les cases suivantes :  
   
-    1. Cochez **Développement mobile multiplateforme > C#/.NET (Xamarin)** . Différents outils Android sont aussi automatiquement sélectionnés sous Kits de développement logiciel (SDK) et outils courants.  
+    1. Cochez **Développement mobile multiplateforme > C#/.NET (Xamarin)**. Différents outils Android sont aussi automatiquement sélectionnés sous Kits de développement logiciel (SDK) et outils courants.  
   
          ![Sélectionnez l’option Xamarin sous développement&#45;multiplateforme pour appareils mobiles](../cross-platform/media/cross-plat-xamarin-setup-2.png "Installation plat Xamarin 2")  
   

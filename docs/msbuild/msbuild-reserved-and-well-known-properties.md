@@ -30,7 +30,7 @@ ms.locfileid: "74491548"
 ## <a name="reserved-and-well-known-properties"></a>Propriétés réservées et connues
  Le tableau ci-dessous décrit les propriétés prédéfinies de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
 
-| Propriété | Réservée ou connue | Description |
+| Property | Réservée ou connue | Description |
 |----------------------------------|------------------------| - |
 | `MSBuildBinPath` | Réservée | Chemin absolu du dossier contenant les binaires [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] actuellement utilisés (par exemple, *C:\Windows\Microsoft.Net\Framework\\\<NuméroVersion>* ). Cette propriété est utile si vous devez faire référence à des fichiers dans le répertoire [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].<br /><br /> N'incluez pas la barre oblique inverse finale dans cette propriété. |
 | `MSBuildExtensionsPath` | Connue | Introduite pour la première fois dans .NET Framework 4 : il n'existe aucune différence entre les valeurs par défaut de `MSBuildExtensionsPath` et de `MSBuildExtensionsPath32`. Vous pouvez affecter à la variable d'environnement `MSBUILDLEGACYEXTENSIONSPATH` une valeur non null pour activer le comportement de la valeur par défaut de `MSBuildExtensionsPath` dans les versions antérieures.<br /><br /> Dans .NET Framework 3.5 et versions antérieures, la valeur par défaut de `MSBuildExtensionsPath` pointe vers le chemin du sous-dossier MSBuild sous le dossier *\Program Files\\* ou *\Program Files (x86)* , en fonction du nombre de bits du processus actuel. Par exemple, pour un processus 32 bits sur un ordinateur 64 bits, la propriété pointe vers le dossier *\Program Files (x86)* . Pour un processus 64 bits sur un ordinateur 64 bits, la propriété pointe vers le dossier *\Program Files*.<br /><br /> N'incluez pas la barre oblique inverse finale dans cette propriété.<br /><br /> Cet emplacement est utile pour placer les fichiers cibles personnalisés. Par exemple, vos fichiers cibles peuvent être installés dans *\Program Files\MSBuild\MyFiles\Northwind.targets*, puis importés dans les fichiers projet à l’aide du code XML suivant :<br /><br /> `<Import Project="$(MSBuildExtensionsPath)\MyFiles\Northwind.targets"/>` |
@@ -63,9 +63,9 @@ ms.locfileid: "74491548"
 En plus des éléments ci-dessus, les noms correspondant à des éléments de langage MSBuild ne peuvent pas être utilisés pour des propriétés, des éléments ou des métadonnées d’élément définis par l’utilisateur :
 
 * VisualStudioProject
-* Target
+* une cible
 * PropertyGroup
-* Sortie
+* Output
 * ItemGroup
 * UsingTask
 * ProjectExtensions
@@ -78,4 +78,4 @@ En plus des éléments ci-dessus, les noms correspondant à des éléments de la
 ## <a name="see-also"></a>Voir aussi
 - [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)
 
-- [Propriétés MSBuild](../msbuild/msbuild-properties.md)
+- [MSBuild, propriétés](../msbuild/msbuild-properties.md)

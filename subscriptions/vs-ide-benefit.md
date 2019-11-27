@@ -41,7 +41,7 @@ Pour télécharger l’IDE :
    > [!div class="mx-imgBorder"]
    > ![Personnaliser Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-customize-install-cropped.png)
 
-10. Cliquez sur **Installer**.
+10. Cliquez sur **Suivant**.
 
 11. À la fin de l’installation, vous avez le choix de modifier l’installation ou de lancer Visual Studio.  Cliquez sur **Lancer** pour démarrer.  Si plusieurs versions sont installées, elles sont listées.
     > [!div class="mx-imgBorder"]
@@ -59,19 +59,19 @@ Pour télécharger l’IDE :
 
 ## <a name="eligibility"></a>Eligibility
 
-| Niveau d'abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
+| Niveau d'abonnement                                                 |     Channels                                            | Avantage du                                                          | Renouvelable ?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard, cloud mensuel)   | Licences en volume, Azure, Détail, NFR sélectif<sup>1</sup> | Disponible       |  Oui          |
 | Visual Studio Enterprise avec GitHub Enterprise   | LV | Disponible       |  Oui          |
 | Visual Studio Professional (Standard, cloud mensuel) | Licences en volume, Azure, Détail                                       | Disponible                                                            |  Oui          |
 | Visual Studio Professional avec GitHub Enterprise | LV   | Disponible              |  Oui          |
 | Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Disponible                                             |  Oui         |
-| Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Non disponible                                              |  N/A          |
+| Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Non disponible                                              |  Non applicable          |
 
 <sup>1</sup>  *comprend : non pour la revente (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Developers Developer, BizSpark, imagine, MVP (le plus précieux Professional), RD (Regional Director).  Exclut : services de & de logiciel MCT.*
 
 > [!NOTE]
-> Microsoft n’offre plus les abonnements Visual Studio Professional annuel et Visual Studio Enterprise annuel dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à accéder à [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
+> Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à consulter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
 
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
 
