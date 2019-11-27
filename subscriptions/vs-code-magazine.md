@@ -46,7 +46,7 @@ Le processus de configuration de votre abonnement CODE magazine est simple.  Pro
 Une fois votre commande d’abonnement terminée, une page de confirmation s’affiche, comprenant un lien que vous pouvez utiliser pour identifier les problèmes que vous avez reçus : https://codemag.com/my/fulfillment. 
 
 ## <a name="eligibility"></a>Eligibility
-| Niveau d'abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
+| Niveau d'abonnement                                                 |     Channels                                            | Avantage du                                                          | Renouvelable ?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | Licences en volume, Azure, Détail, NFR sélectif<sup>1</sup> | Disponible       |  Non          |
 | Visual Studio Enterprise avec GitHub Enterprise   | LV| Disponible       |  Non          |
@@ -54,12 +54,12 @@ Une fois votre commande d’abonnement terminée, une page de confirmation s’a
 | Visual Studio Professional avec GitHub Enterprise | LV                                      | Disponible                                                            |  Non          |
 | Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Disponible                                             |  Non          |
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Disponible                                              |  Non          |
-| Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure | Non disponible | N/A |
+| Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure | Non disponible | Non applicable |
 
 <sup>1</sup>  *comprend : non pour la revente (NFR), VSIP (Visual Studio Industry Partner), ETP, BizSpark, imagine Premium.  Exclut : le Microsoft Partner Network (MPN), le MVP (Most Valuable Professional), les services Bureau à distance (RD), le développeur de services & MCT Software, les services de & de logiciel MCT, imagine.*
 
 > [!NOTE]
-> Microsoft n’offre plus les abonnements Visual Studio Professional annuel et Visual Studio Enterprise annuel dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à accéder à [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
+> Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à consulter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
 
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
 

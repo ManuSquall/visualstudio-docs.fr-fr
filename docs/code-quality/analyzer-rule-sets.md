@@ -28,7 +28,7 @@ Le package NuGet Analyzer de FxCop comprend des ensembles de règles prédéfini
 
 - Toutes les règles
 - Flux de données
-- Design
+- Création
 - Documentation
 - Globalisation
 - Interopérabilité
@@ -38,7 +38,7 @@ Le package NuGet Analyzer de FxCop comprend des ensembles de règles prédéfini
 - Porté depuis FxCop
 - Fiabilité
 - Sécurité
-- Utilisation
+- Contrôle
 
 Chacune de ces catégories de règles a un fichier de EditorConfig ou d’ensemble de règles pour :
 

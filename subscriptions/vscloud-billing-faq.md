@@ -18,7 +18,7 @@ ms.locfileid: "74491261"
 
 ## <a name="general-purchasing-questions"></a>Questions générales relatives aux achats
 ### <a name="q-can-i-buy-visual-studio-cloud-subscriptions-using-a-purchase-order"></a>Q : Puis-je acheter des abonnements cloud Visual Studio à l’aide d’un bon de commande ?
-R : non. Tous les abonnements cloud Visual Studio doivent être achetés à l’aide d’un abonnement Azure. (Considérez qu’il s’agit de votre compte de facturation Azure.)
+R : Non. Tous les abonnements cloud Visual Studio doivent être achetés à l’aide d’un abonnement Azure. (Considérez qu’il s’agit de votre compte de facturation Azure.)
 
 ### <a name="q-what-types-of-azure-subscriptions-can-be-used-to-buy-visual-studio-cloud-subscriptions"></a>Q : Quels types d’abonnements Azure peuvent être utilisés pour acheter des abonnements cloud Visual Studio ?
 R : La plupart des abonnements Azure peuvent être utilisés. Nous prenons en charge les abonnements Azure connectés à votre [Contrat Entreprise](https://azure.microsoft.com/pricing/enterprise-agreement/), les abonnements Azure configurés par des fournisseurs de solutions Cloud, les abonnements Azure configurés via des revendeurs Microsoft Open License, ainsi que les abonnements Azure avec paiement à l’utilisation.
@@ -65,15 +65,15 @@ R : Vous bénéficiez d’une remise de 5 % à partir du sixième abonnement *
 
 * Visual Studio Professional mensuel
 * Visual Studio Professional annuel
-* Visual Studio Enterprise mensuel
-* Visual Studio Enterprise annuel
+* Visual Studio Enterprise, mensuel
+* Visual Studio Enterprise, annuel
 
 Par exemple, si vous achetez six abonnements mensuels Visual Studio Professional et cinq abonnements mensuels Visual Studio Enterprise, vous payez le prix normal pour cinq abonnements Professional, vous bénéficiez d’une remise de 5 % sur le sixième abonnement Professional, et vous payez le prix normal pour les cinq abonnements Enterprise.
 
 En outre, la remise s’applique uniquement aux frais durant une période de facturation mensuelle donnée. Ainsi, si vous achetez cinq abonnements annuels Visual Studio Professional durant un mois, et que vous achetez ensuite cinq abonnements supplémentaires le mois suivant, vous payez le prix normal pour les dix abonnements.
 
 > [!NOTE]
-> Microsoft n’offre plus les abonnements Visual Studio Professional annuel et Visual Studio Enterprise annuel dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à accéder à [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
+> Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à consulter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
 
 ## <a name="other-questions"></a>Autres questions
 ### <a name="q-can-i-use-the-monthly-azure-devtest-individual-credit-as-a-visual-studio-subscriber-to-buy-more-visual-studio-cloud-subscriptions"></a>Q : puis-je utiliser le crédit individuel Azure DevTest mensuel en tant qu’abonné Visual Studio pour acheter davantage d’abonnements Cloud Visual Studio ?
@@ -82,7 +82,7 @@ Avant d’effectuer des achats, vous devrez [supprimer votre limite de dépense]
 
 ### <a name="q-whats-the-difference-between-annual-and-monthly-cloud-subscriptions"></a>Q : Quelle est la différence entre les abonnements cloud annuels et mensuels ?
 R : Les abonnements cloud mensuels incluent Visual Studio, et l’utilisation d’Azure DevOps Services et de TFS. Les abonnements Cloud annuels en ont également besoin, mais incluent également les avantages de l’abonné, y compris l’utilisation de Windows et d’autres logiciels Microsoft pour l’installation et l’exécution pour le développement et le test, un crédit Azure mensuel DevTest individuel à utiliser pour expérimenter avec Azure les services et le développement et le test dans le Cloud, la formation, le support et bien plus encore.
-[Comparer les avantages et les tarifs des abonnements cloud](https://visualstudio.microsoft.com/vs/pricing/)
+[Comparer les avantages et les prix des abonnements cloud](https://visualstudio.microsoft.com/vs/pricing/)
 
 ### <a name="q-do-i-get-new-versions-of-visual-studio-if-i-buy-a-visual-studio-cloud-subscription"></a>Q : Est-ce que j’ai accès aux nouvelles versions de Visual Studio si je souscris un abonnement cloud Visual Studio ?
 R : oui. Vous pouvez télécharger et exécuter les nouvelles versions dès leur publication. Vous pouvez aussi continuer à exécuter les versions précédentes.

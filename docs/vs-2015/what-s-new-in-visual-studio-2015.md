@@ -64,7 +64,7 @@ Pour en savoir plus sur les nombreuses améliorations et nouvelles fonctionnalit
  Pour commencer à utiliser multiplateforme C++, consultez [créer des applications mobiles multiplateformes avec Visual C++ ](./misc/build-cross-platform-mobile-apps-with-visual-cpp.md)
 
 ### <a name="universal-windows-apps-for-any-windows-10-device"></a>Applications Windows universelles pour tout appareil Windows 10
- Avec la plateforme Windows universelle et notre noyau Windows, vous pouvez exécuter la même application sur n'importe quel appareil Windows 10, des téléphones jusqu'aux ordinateurs de bureau. Créez ces applications Windows universelles avec Visual Studio 2015 et les outils de développement d’applications Windows universelles.
+ Avec la plateforme Windows universelle et notre noyau Windows, vous pouvez exécuter la même application sur n’importe quel appareil Windows 10, des téléphones jusqu’aux ordinateurs de bureau. Créez ces applications Windows universelles avec Visual Studio 2015 et les outils de développement d’applications Windows universelles.
 
  ![Plateforme Windows universelle](./cross-platform/media/uwp-coreextensions.png "UWP_CoreExtensions")
 
@@ -107,7 +107,7 @@ Pour en savoir plus sur les nombreuses améliorations et nouvelles fonctionnalit
 
 1. Azure Mobile Services
 
-2. Stockage Azure
+2. Azure Storage
 
 3. Office 365 (e-mails, contacts, calendriers, fichiers, utilisateurs et groupes)
 
@@ -139,7 +139,7 @@ Pour plus d’informations sur les nouveautés des diagnostics, consultez [Nouve
 
 Voici une liste d'outils nouveaux ou améliorés qui effectuent différents types d'analyses et de diagnostics sur votre code :
 
-### <a name="perftips"></a>conseils sur les performances
+### <a name="perftips"></a>Conseils sur les performances
  Les conseils pour les performances indiquent le temps d'exécution des méthodes durant le débogage, ce qui vous permet d'identifier rapidement les goulots d'étranglement, sans avoir à invoquer le profileur. Pour commencer, consultez [Conseils sur les performances : Performance Information at-a-glance while Debugging with Visual Studio](https://devblogs.microsoft.com/devops/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/)
 
 ### <a name="error-list"></a>Liste d’erreurs
@@ -158,7 +158,7 @@ Voici une liste d'outils nouveaux ou améliorés qui effectuent différents type
 ### <a name="synchronized-settings-roaming-settings"></a>Paramètres synchronisés (paramètres d'itinérance)
  Visual Studio 2013 a introduit les paramètres synchronisés pour certains des paramètres les plus souvent configurés, par exemple l’éditeur de texte, les combinaisons de touches, les thèmes, les polices et couleurs, le démarrage et les alias d’environnement.  Visual Studio 2015 améliore cette expérience en synchronisant davantage de paramètres, et en les synchronisant pour l'ensemble des applications de la famille Visual Studio (par exemple, les versions Professional, Enterprise, Express et Blend). Quand vous vous connectez à Visual Studio 2015 pour la première fois avec le compte utilisé dans Visual Studio 2013, vos paramètres synchronisés sont appliqués à partir de Visual Studio 2013. Vous pouvez accéder à vos paramètres en tapant « sync » dans la barre d’outils **Lancement rapide**, ou en naviguant vers **Outils > Options > Environnement > Paramètres synchronisés**.
 
-### <a name="automatic-extension-updates"></a>Mises à jour d'extensions automatiques
+### <a name="automatic-extension-updates"></a>mises à jour d'extensions automatiques
  Les extensions Visual Studio installées sont automatiquement mises à jour lorsqu'une nouvelle version est disponible dans la galerie Visual Studio. Consultez [Recherche et utilisation des extensions Visual Studio](./ide/finding-and-using-visual-studio-extensions.md) pour plus d'informations sur la personnalisation des mises à jour d'extensions automatiques.
 
 ### <a name="title-case-menus"></a>Menus avec 1re lettre des mots en majuscule

@@ -36,7 +36,7 @@ Pour utiliser la commande **CodeIndex**, vous devez être membre du groupe de s�
 TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /ignoreList:[ add | remove | removeAll | view ] ServerPath | /listLargeFiles [/fileCount:FileCount] [/minSize:MinSize] | /reindexAll | /destroyCodeIndex [/noPrompt] | /temporaryDataSizeLimit:[ view | <SizeInGBs> | disable ] | /indexHistoryPeriod:[ view | all | <NumberOfMonths> ] [/collectionName:CollectionName | /collectionId:CollectionId]
 ```
 
-### <a name="parameters"></a>Paramètres
+### <a name="parameters"></a>Parameters
 
 |**Argument**|**Description**|
 |------------------| - |
@@ -60,7 +60,7 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 ## <a name="examples"></a>Exemples
 
 > [!NOTE]
-> Les exemples de sociétés, d'organisations, de produits, de noms de domaine, d'adresses de messagerie, de logos, de personnes, de lieux et d'événements mentionnés ici sont fictifs.  Toute ressemblance avec des noms ou des événements réels est purement fortuite et involontaire.
+> Les noms de sociétés, d'organisations, de produits, de domaines, d'adresses de messagerie, de logos, de personnes, de lieux et d'événements mentionnés dans les exemples sont fictifs.  Toute ressemblance avec des noms ou des événements réels est purement fortuite et involontaire.
 
 Pour consulter l'état et la configuration d'indexation du code :
 
@@ -124,5 +124,5 @@ TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Website"
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Rechercher les modifications de code et d’autres éléments de l’historique avec CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md)
+- [Rechercher les modifications de code et d’autres historiques avec CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md)
 - [Gestion de la configuration du serveur avec TFSConfig](/azure/devops/server/command-line/tfsconfig-cmd)

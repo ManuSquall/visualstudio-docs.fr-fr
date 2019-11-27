@@ -35,17 +35,17 @@ Nous vous recommandons d’ouvrir une nouvelle fenêtre de navigateur « privé
 7. Créez votre nom d’affichage d’éditeur.  Ce nom unique sera associé à l’ensemble de vos applications, services et compléments présentés aux utilisateurs.
 8. Entrez vos coordonnées et la langue par défaut de vos e-mails, puis cliquez sur **Suivant**.
 9. Vous pouvez être invité à vérifier votre mot de passe.  Entrez-le, puis cliquez sur **Se connecter**.
-10. Dans la page Inscription – Paiement, collez le code copié précédemment dans le champ Code promo.  La page est mise à jour et indique *qu’aucun paiement n’est requis*.  Cliquez sur **Suivant**.
+10. Dans la page Inscription – Paiement, collez le code copié précédemment dans le champ Code promo.  La page est mise à jour et indique *qu’aucun paiement n’est requis*.  Cliquez sur **Next**.
 11. Vérifiez les informations de votre compte et lisez le Contrat du développeur d’applications, puis cochez la case pour indiquer que vous acceptez les conditions générales.  Cliquez ensuite sur **Terminer**.
 12. Cliquez sur **Accéder au tableau de bord** pour commencer à utiliser votre compte de développeur Windows !
 
 ## <a name="eligibility"></a>Eligibility
-| Niveau d'abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
+| Niveau d'abonnement                                                 |     Channels                                            | Avantage du                                                          | Renouvelable ?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | Licences en volume, Azure, Détail, NFR sélectif<sup>1</sup> | Inclus       |  Oui|
-| Visual Studio Enterprise avec GitHub Enterprise   | LV  | Inclus       |  Oui|
-| Visual Studio Professional (Standard) | Licences en volume, Azure, Détail                                       | Inclus                                                            |Oui|
-| Visual Studio Professional avec GitHub Enterprise | LV                                        | Inclus                                                            |Oui|
+| Visual Studio Enterprise (Standard)   | Licences en volume, Azure, Détail, NFR sélectif<sup>1</sup> | Included       |  Oui|
+| Visual Studio Enterprise avec GitHub Enterprise   | LV  | Included       |  Oui|
+| Visual Studio Professional (Standard) | Licences en volume, Azure, Détail                                       | Included                                                            |Oui|
+| Visual Studio Professional avec GitHub Enterprise | LV                                        | Included                                                            |Oui|
 | Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Non disponible                                            |  NA|
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              |  Non disponible                                            |  NA|
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure                                       | Non disponible                                                           |NA|
@@ -54,7 +54,7 @@ Nous vous recommandons d’ouvrir une nouvelle fenêtre de navigateur « privé
 <sup>1</sup>  *comprend : la revente interdite (NFR), FTE, Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer. Exclut : Microsoft Partner Network (MPN), imaginez, MVP (Most Valuable Professional), RD (Regional Director), MCT Software & services.*
 
 > [!NOTE]
-> Microsoft n’offre plus les abonnements Visual Studio Professional annuel et Visual Studio Enterprise annuel dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à accéder à [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
+> Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à consulter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
 
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
 
