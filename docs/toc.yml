@@ -1410,6 +1410,8 @@
         - name: Signaler un problème - États et Forum aux questions
           displayName: Developer Community
           href: ide/report-a-problem.md
+        - name: Augmenter les chances de correction d’un problème de performance
+          href: ide/how-to-increase-chances-of-performance-issue-being-fixed.md
         - name: Créer des minidumps pour un processus Visual Studio avec toutes les piles d’appels
           displayName: Create minidumps with call stacks
           href: ide/report-a-problem-minidumps.md
