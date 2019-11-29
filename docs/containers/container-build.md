@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 11/20/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 6b96f23bc7bcd7e6d970025b23f89f572d07daf1
-ms.sourcegitcommit: e825d1223579b44ee2deb62baf4de0153f99242a
-ms.translationtype: HT
+ms.openlocfilehash: a2f837ba264a12391786f584cf2698e19250fb2e
+ms.sourcegitcommit: 6336c387388707da94a91060dc3f34d4cfdc0a7b
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74473993"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74549953"
 ---
 # <a name="build-and-debug-containerized-apps-using-visual-studio-or-the-command-line"></a>Générer et déboguer des applications en conteneur à l’aide de Visual Studio ou de la ligne de commande
 
@@ -60,27 +60,9 @@ ENTRYPOINT ["dotnet", "WebApplication43.dll"]
 
 La dernière étape redémarre à partir de `base`, et comprend le `COPY --from=publish` pour copier la sortie publiée dans l’image finale. Ce processus permet à l’image finale d’être beaucoup plus petite, car elle n’a pas besoin d’inclure tous les outils de génération qui étaient dans l’image `sdk`.
 
-## <a name="faster-builds-for-the-debug-configuration"></a>Builds plus rapides pour la configuration Debug
-
-Il existe plusieurs optimisations que Visual Studio permet d’améliorer les performances du processus de génération pour les projets en conteneur. Le processus de génération pour les applications en conteneur n’est pas aussi simple que de suivre les étapes décrites dans fichier dockerfile. La génération dans un conteneur est beaucoup plus lente que la génération sur l’ordinateur local.  Ainsi, quand vous générez dans la configuration de **débogage** , Visual Studio génère en fait vos projets sur l’ordinateur local, puis partage le dossier de sortie vers le conteneur à l’aide du montage de volume. Une génération avec cette optimisation activée est appelée « génération en mode *rapide* ».
-
-En mode **rapide** , Visual Studio appelle `docker build` avec un argument qui indique à dockr de générer uniquement l’étape de `base`.  Visual Studio gère le reste du processus sans tenir compte du contenu de l’fichier dockerfile. Ainsi, lorsque vous modifiez votre fichier dockerfile, par exemple pour personnaliser l’environnement de conteneur ou installer des dépendances supplémentaires, vous devez placer vos modifications dans la première étape.  Les étapes personnalisées placées dans les étapes `build`, `publish`ou `final` du fichier dockerfile ne seront pas exécutées.
-
-Cette optimisation des performances se produit uniquement lorsque vous générez dans la configuration **Debug** . Dans la configuration **Release** , la génération se produit dans le conteneur comme spécifié dans fichier dockerfile.
-
-Si vous souhaitez désactiver l’optimisation des performances et la génération comme le spécifie fichier dockerfile, définissez la propriété **ContainerDevelopmentMode** sur **Regular** dans le fichier projet comme suit :
-
-```xml
-<PropertyGroup>
-   <ContainerDevelopmentMode>Regular</ContainerDevelopmentMode>
-</PropertyGroup>
-```
-
-Pour restaurer l’optimisation des performances, supprimez la propriété du fichier projet.
-
 ## <a name="building-from-the-command-line"></a>Génération à partir de la ligne de commande
 
-Vous pouvez utiliser `docker build` ou `MSBuild` pour générer à partir de la ligne de commande.
+Si vous souhaitez générer en dehors de Visual Studio, vous pouvez utiliser `docker build` ou `MSBuild` pour générer à partir de la ligne de commande.
 
 ### <a name="docker-build"></a>version de l’arrimeur
 
@@ -94,13 +76,13 @@ docker build -f Dockerfile ..
 
 Les fichiers dockerfile créés par Visual Studio pour les projets .NET Framework (et pour les projets .NET Core créés avec les versions de Visual Studio antérieures à Visual Studio 2017 Update 4) ne sont pas des fichiers dockerfile multiétapes.  Les étapes de ces fichiers dockerfile ne compilent pas votre code.  Au lieu de cela, quand Visual Studio génère un .NET Framework fichier dockerfile, il compile tout d’abord votre projet à l’aide de MSBuild.  Lorsque cela se produit, Visual Studio génère alors le fichier dockerfile, qui copie simplement la sortie de génération de MSBuild dans l’image de l’Ancreur résultant.  Étant donné que les étapes de compilation de votre code ne sont pas incluses dans fichier dockerfile, vous ne pouvez pas générer .NET Framework fichiers dockerfile à l’aide de `docker build` à partir de la ligne de commande. Vous devez utiliser MSBuild pour générer ces projets.
 
-Pour générer une image pour un projet de conteneur d’ancrage unique, vous pouvez utiliser MSBuild avec l’option de commande `/t:ContainerBuild`. Exemple :
+Pour générer une image pour un projet de conteneur d’ancrage unique, vous pouvez utiliser MSBuild avec l’option de commande `/t:ContainerBuild`. Par exemple :
 
 ```cmd
 MSBuild MyProject.csproj /t:ContainerBuild /p:Configuration=Release
 ```
 
-Vous verrez une sortie similaire à ce que vous voyez dans la fenêtre **sortie** quand vous générez votre solution à partir de l’IDE de Visual Studio. Utilisez toujours `/p:Configuration=Release`, car dans les cas où Visual Studio utilise l’optimisation de génération multiétape, les résultats lors de la génération de la configuration **Debug** peuvent ne pas être les mêmes que prévu.
+Vous verrez une sortie similaire à ce que vous voyez dans la fenêtre **sortie** quand vous générez votre solution à partir de l’IDE de Visual Studio. Utilisez toujours `/p:Configuration=Release`, car dans les cas où Visual Studio utilise l’optimisation de génération multiétape, les résultats lors de la génération de la configuration **Debug** peuvent ne pas être les mêmes que prévu. Consultez [débogage](#debugging).
 
 Si vous utilisez un projet Docker Compose, utilisez la commande pour créer des images :
 
@@ -110,7 +92,7 @@ msbuild /p:SolutionPath=<solution-name>.sln /p:Configuration=Release docker-comp
 
 ## <a name="project-warmup"></a>Préchauffage de projet
 
-Il s’agit d’une séquence d’étapes qui se produisent lorsque le profil de l’ancrage est sélectionné pour un projet (autrement dit, quand un projet est chargé ou que la prise en charge de l’ancrage est ajoutée) afin d’améliorer les performances de l’exécution suivante (**F5** ou **CTRL**+**F5**). Cela peut être configuré sous **outils** > **options** > **outils de conteneur**. Voici les tâches qui s’exécutent en arrière-plan :
+Le *projet de préchauffage* fait référence à une série d’étapes qui se produisent lorsque le profil de l’ancrage est sélectionné pour un projet (autrement dit, quand un projet est chargé ou que la prise en charge de l’ancrage est ajoutée) afin d’améliorer les performances des exécutions suivantes (**f5** ou **CTRL**+**F5**). Cela peut être configuré sous **outils** > **options** > **outils de conteneur**. Voici les tâches qui s’exécutent en arrière-plan :
 
 - Vérifiez que le Bureau de l’ordinateur de veille est installé et en cours d’exécution.
 - Assurez-vous que l’ordinateur de bureau de l’arrimeur est défini sur le même système d’exploitation que le projet.
@@ -160,7 +142,23 @@ ASP.NET Core recherche un certificat qui correspond au nom de l’assembly dans 
 
 Pour plus d’informations sur l’utilisation de SSL avec les applications de ASP.NET Core dans les conteneurs, consultez [hébergement d’images ASP.net core avec l’arrimeur sur https](https://docs.microsoft.com/aspnet/core/security/docker-https).
 
-## <a name="debugging"></a>Débogage
+## <a name="debugging"></a>Debugging
+
+Lors de la génération dans la configuration de **débogage** , Visual Studio propose plusieurs optimisations qui facilitent les performances du processus de génération pour les projets en conteneur. Le processus de génération pour les applications en conteneur n’est pas aussi simple que de suivre les étapes décrites dans fichier dockerfile. La génération dans un conteneur est beaucoup plus lente que la génération sur l’ordinateur local.  Ainsi, quand vous générez dans la configuration de **débogage** , Visual Studio génère en fait vos projets sur l’ordinateur local, puis partage le dossier de sortie vers le conteneur à l’aide du montage de volume. Une génération avec cette optimisation activée est appelée « génération en mode *rapide* ».
+
+En mode **rapide** , Visual Studio appelle `docker build` avec un argument qui indique à dockr de générer uniquement l’étape de `base`.  Visual Studio gère le reste du processus sans tenir compte du contenu de l’fichier dockerfile. Ainsi, lorsque vous modifiez votre fichier dockerfile, par exemple pour personnaliser l’environnement de conteneur ou installer des dépendances supplémentaires, vous devez placer vos modifications dans la première étape.  Les étapes personnalisées placées dans les étapes `build`, `publish`ou `final` du fichier dockerfile ne seront pas exécutées.
+
+Cette optimisation des performances se produit uniquement lorsque vous générez dans la configuration **Debug** . Dans la configuration **Release** , la génération se produit dans le conteneur comme spécifié dans fichier dockerfile.
+
+Si vous souhaitez désactiver l’optimisation des performances et la génération comme le spécifie fichier dockerfile, définissez la propriété **ContainerDevelopmentMode** sur **Regular** dans le fichier projet comme suit :
+
+```xml
+<PropertyGroup>
+   <ContainerDevelopmentMode>Regular</ContainerDevelopmentMode>
+</PropertyGroup>
+```
+
+Pour restaurer l’optimisation des performances, supprimez la propriété du fichier projet.
 
  Quand vous démarrez le débogage (**F5**), un conteneur précédemment démarré est réutilisé, si possible. Si vous ne souhaitez pas réutiliser le conteneur précédent, vous pouvez utiliser des commandes de **régénération** ou de **nettoyage** dans Visual Studio pour forcer Visual Studio à utiliser un nouveau conteneur.
 
@@ -182,9 +180,8 @@ Visual Studio utilise un point d’entrée de conteneur personnalisé en fonctio
 |-|-|
 | **Conteneurs Linux** | Le point d’entrée est `tail -f /dev/null`, ce qui est une attente infinie de conserver le conteneur en cours d’exécution. Lorsque l’application est lancée par le biais du débogueur, c’est le débogueur qui est chargé d’exécuter l’application (autrement dit, `dotnet webapp.dll`). Si elle est lancée sans débogage, les outils exécutent une `docker exec -i {containerId} dotnet webapp.dll` pour exécuter l’application.|
 | **Conteneurs Windows**| Le point d’entrée est semblable à `C:\remote_debugger\x64\msvsmon.exe /noauth /anyuser /silent /nostatus` qui exécute le débogueur. il écoute donc les connexions. Il en va de même pour le débogueur qui exécute l’application et une commande `docker exec` lorsqu’elle est lancée sans débogage. Pour les applications Web .NET Framework, le point d’entrée est légèrement différent lorsque `ServiceMonitor` est ajouté à la commande.|
-  
-> [!NOTE]
-> Le point d’entrée de conteneur ne peut être modifié que dans des projets dockr-compose, et non dans des projets à conteneur unique.
+
+Le point d’entrée de conteneur ne peut être modifié que dans des projets dockr-compose, et non dans des projets à conteneur unique.
 
 ## <a name="next-steps"></a>Étapes suivantes :
 
