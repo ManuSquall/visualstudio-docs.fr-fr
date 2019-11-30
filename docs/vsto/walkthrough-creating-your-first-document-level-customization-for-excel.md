@@ -14,14 +14,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b3f9763fd670495de9ae4ef8b35a282d644ffe4d
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: 8d45461c7dab250cd43d7a25d8693658c7b8e164
+ms.sourcegitcommit: 3ba2968a4b44643482aadad4d50e1a55bb36b136
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328390"
+ms.lasthandoff: 11/28/2019
+ms.locfileid: "74566978"
 ---
-# <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>Procédure pas à pas : Créer votre première personnalisation au niveau du document pour Excel
+# <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>Procédure pas à pas : création de votre première personnalisation au niveau du document pour Excel
+
   Cette procédure pas à pas d'introduction vous indique comment créer une personnalisation au niveau du document pour Microsoft Office Excel. Les fonctionnalités que vous créez dans ce genre de solution sont disponibles uniquement quand un classeur spécifique est ouvert. Vous ne pouvez pas utiliser une personnalisation au niveau du document pour apporter des changements à l'échelle de l'application, par exemple afficher un nouvel onglet de ruban quand un classeur est ouvert.
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
@@ -40,7 +41,8 @@ ms.locfileid: "67328390"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Configuration requise
+
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
@@ -54,70 +56,82 @@ ms.locfileid: "67328390"
 1. Démarrez [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
 2. Dans le menu **Fichier** , pointez sur **Nouveau**, puis cliquez sur **Projet**.
-
+::: moniker range="vs-2017"
 3. Dans le volet Modèles, développez **Visual C#** ou **Visual Basic**, puis développez **Office/SharePoint**.
 
-4. Sous le nœud développé **Office/SharePoint** , sélectionnez le nœud **Compléments Office** .
+4. Sous le nœud **Office/SharePoint** développé, sélectionnez le nœud **compléments VSTO** .
 
-5. Dans la liste des modèles de projet, choisissez un projet de complément Excel VSTO.
+5. Dans la liste des modèles de projet, choisissez un projet de classeur VSTO Excel.
 
-6. Dans le **nom** , tapez **FirstWorkbookCustomization**.
+6. Dans la zone **nom** , tapez **FirstWorkbookCustomization**.
 
 7. Cliquez sur **OK**.
 
-    L' **Assistant Projet Visual Studio Tools pour Office** s'ouvre.
+8. Sélectionnez **créer un nouveau document** à partir de l' **Assistant projet Visual Studio Tools pour Office**, puis cliquez sur **OK**.
+::: moniker-end
+::: moniker range=">=vs-2019"
+3. Dans la boîte de dialogue **créer un nouveau projet** , sélectionnez le projet de **classeur VSTO Excel** .
 
-8. Sélectionnez **créer un nouveau document**, puis cliquez sur **OK**.
+     [!INCLUDE[new-project-dialog-search](../vsto/includes/new-project-dialog-search-md.md)]
 
-   - [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] crée le **FirstWorkbookCustomization** de projet et ajoute les fichiers suivants au projet.
+4. Cliquez sur **Next**.
 
-   - *FirstWorkbookCustomization*.xlsx - représente le classeur Excel dans le projet. Contient l'ensemble des feuilles de calcul et des graphiques.
+5. Tapez **FirstWorkbookCustomization** dans la zone **nom** de la boîte de dialogue **configurer votre nouveau projet** , puis cliquez sur **créer**.
 
-   - Sheet1 ( *.vb* pour Visual Basic ou *.cs* fichier pour Visual c#)-feuille de calcul qui fournit l’aire de conception et le code pour la première feuille de calcul dans le classeur. Pour plus d’informations, consultez [élément hôte de feuille de calcul](../vsto/worksheet-host-item.md).
+6. Sélectionnez **créer un nouveau document** à partir de l' **Assistant projet Visual Studio Tools pour Office**, puis cliquez sur **OK**.
+::: moniker-end
+   - [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] crée le projet **FirstWorkbookCustomization** et ajoute les fichiers suivants au projet.
 
-   - Sheet2 ( *.vb* pour Visual Basic ou *.cs* fichier pour Visual c#)-feuille de calcul qui fournit l’aire de conception et le code pour la deuxième feuille de calcul dans le classeur.
+   - *FirstWorkbookCustomization*. xlsx : représente le classeur Excel dans le projet. Contient l'ensemble des feuilles de calcul et des graphiques.
 
-   - Sheet3 ( *.vb* pour Visual Basic ou *.cs* fichier pour Visual c#)-feuille de calcul qui fournit l’aire de conception et le code pour la troisième feuille de calcul dans le classeur.
+   - Feuille1 (fichier *. vb* pour Visual Basic ou fichier *. cs* pour le C#visuel)-feuille de calcul qui fournit l’aire de conception et le code de la première feuille de calcul dans le classeur. Pour plus d’informations, consultez [élément hôte de feuille de calcul](../vsto/worksheet-host-item.md).
 
-   - ThisWorkbook ( *.vb* pour Visual Basic ou *.cs* fichier pour Visual c#)-contient l’aire de conception et le code pour les personnalisations au niveau du classeur. Pour plus d’informations, consultez [élément hôte de classeur](../vsto/workbook-host-item.md).
+   - Feuil2 (fichier *. vb* pour Visual Basic ou fichier *. cs* pour Visual C#)-feuille de calcul qui fournit l’aire de conception et le code de la deuxième feuille de calcul dans le classeur.
+
+   - Feuil3 (fichier *. vb* pour Visual Basic ou fichier *. cs* pour Visual C#)-feuille de calcul qui fournit l’aire de conception et le code de la troisième feuille de calcul dans le classeur.
+
+   - ThisWorkbook (fichier *. vb* pour Visual Basic ou fichier *. cs* pour Visual C#)-contient l’aire de conception et le code pour les personnalisations au niveau du classeur. Pour plus d’informations, consultez [élément hôte de classeur](../vsto/workbook-host-item.md).
 
      Le fichier de code Feuil1 est ouvert automatiquement dans le concepteur.
 
-## <a name="close-and-reopen-worksheets-in-the-designer"></a>Fermez et rouvrez le Concepteur de feuilles de calcul
+## <a name="close-and-reopen-worksheets-in-the-designer"></a>Fermer et rouvrir des feuilles de calcul dans le concepteur
+
  Si vous fermez délibérément ou accidentellement un classeur ou une feuille de calcul dans le concepteur pendant que vous développez votre projet, vous pouvez le rouvrir.
 
 ### <a name="to-close-and-reopen-a-worksheet-in-the-designer"></a>Pour fermer et rouvrir une feuille de calcul dans le concepteur
 
-1. Fermez le classeur en cliquant sur le **fermer** bouton (X) de la fenêtre du concepteur.
+1. Fermez le classeur en cliquant sur le bouton **Fermer** (X) de la fenêtre du concepteur.
 
-2. Dans **l’Explorateur de solutions**, avec le bouton droit le **Sheet1** fichier de code, puis cliquez sur **Concepteur de vues**.
+2. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le fichier de code **Feuil1** , puis cliquez sur **Concepteur de vues**.
 
      \- ou -
 
-     Dans **l’Explorateur de solutions**, double-cliquez sur le **Sheet1** fichier de code.
+     Dans **Explorateur de solutions**, double-cliquez sur le fichier de code **Feuille1** .
 
-## <a name="add-text-to-a-worksheet-in-the-designer"></a>Ajouter du texte à une feuille de calcul dans le Concepteur
- Vous pouvez concevoir l'interface utilisateur de votre personnalisation en modifiant la feuille de calcul ouverte dans le concepteur. Par exemple, vous pouvez ajouter du texte aux cellules, appliquer des formules ou ajouter des contrôles Excel. Pour plus d’informations sur l’utilisation du concepteur, consultez [les projets Office dans l’environnement Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md).
+## <a name="add-text-to-a-worksheet-in-the-designer"></a>Ajouter du texte à une feuille de calcul dans le concepteur
+
+ Vous pouvez concevoir l'interface utilisateur de votre personnalisation en modifiant la feuille de calcul ouverte dans le concepteur. Par exemple, vous pouvez ajouter du texte aux cellules, appliquer des formules ou ajouter des contrôles Excel. Pour plus d’informations sur l’utilisation du concepteur, consultez [projets Office dans l’environnement Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md).
 
 ### <a name="to-add-text-to-a-worksheet-by-using-the-designer"></a>Pour ajouter une feuille de calcul à votre document à l'aide du concepteur
 
-1. Dans la feuille de calcul qui est ouvert dans le concepteur, sélectionnez la cellule **A1**, puis tapez le texte suivant.
+1. Dans la feuille de calcul qui est ouverte dans le concepteur, sélectionnez la cellule **a1**, puis tapez le texte suivant.
 
      **Ce texte a été ajouté à l’aide du concepteur.**
 
 > [!WARNING]
-> Si vous ajoutez cette ligne de texte à la cellule **A2**, elle sera remplacée par un autre code dans cet exemple.
+> Si vous ajoutez cette ligne de texte à la cellule **a2**, elle sera remplacée par un autre code dans cet exemple.
 
 ## <a name="add-text-to-a-worksheet-programmatically"></a>Ajouter du texte à une feuille de calcul par programmation
+
  L'étape suivante consiste à ajouter du code au fichier de code Feuil1. Le nouveau code utilise le modèle objet d'Excel pour ajouter une deuxième ligne de texte au classeur. Par défaut, le fichier de code Feuil1 contient le code généré suivant :
 
-- Une définition partielle de la classe `Sheet1`, qui représente le modèle de programmation de la feuille de calcul et permet d'accéder au modèle objet d'Excel. Pour plus d’informations, [élément hôte de feuille de calcul](../vsto/worksheet-host-item.md) et [vue d’ensemble du modèle d’objet Word](../vsto/word-object-model-overview.md). Le reste de la classe `Sheet1` est défini dans un fichier de code masqué que vous ne devez pas modifier.
+- Une définition partielle de la classe `Sheet1`, qui représente le modèle de programmation de la feuille de calcul et permet d'accéder au modèle objet d'Excel. Pour plus d’informations, recherchez [élément hôte de feuille de calcul](../vsto/worksheet-host-item.md) et [vue d’ensemble du modèle objet Word](../vsto/word-object-model-overview.md). Le reste de la classe `Sheet1` est défini dans un fichier de code masqué que vous ne devez pas modifier.
 
 - Les gestionnaires d'événements `Sheet1_Startup` et `Sheet1_Shutdown` . Ces gestionnaires d'événements sont appelés quand Excel charge et décharge votre personnalisation. Utilisez ces gestionnaires d'événements pour initialiser votre personnalisation quand elle est chargée, ainsi que pour nettoyer les ressources utilisées par votre personnalisation quand elle est déchargée. Pour plus d’informations, consultez [événements dans les projets Office](../vsto/events-in-office-projects.md).
 
 ### <a name="to-add-a-second-line-of-text-to-the-worksheet-by-using-code"></a>Pour ajouter une deuxième ligne de texte à la feuille de calcul en utilisant du code
 
-1. Dans **l’Explorateur de solutions**, avec le bouton droit **Sheet1**, puis cliquez sur **afficher le Code**.
+1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur **Feuil1**, puis cliquez sur **afficher le code**.
 
      Le fichier de code s'ouvre dans Visual Studio.
 
@@ -126,13 +140,13 @@ ms.locfileid: "67328390"
      [!code-csharp[Trin_ExcelWorkbookTutorial#1](../vsto/codesnippet/CSharp/Trin_ExcelWorkbookTutorial/Sheet1.cs#1)]
      [!code-vb[Trin_ExcelWorkbookTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ExcelWorkbookTutorial/Sheet1.vb#1)]
 
-## <a name="test-the-project"></a>Le projet de test
+## <a name="test-the-project"></a>Tester le projet
 
 ### <a name="to-test-your-workbook"></a>Pour tester votre classeur
 
 1. Appuyez sur **F5** pour générer et exécuter votre projet.
 
-     Quand vous générez le projet, le code est compilé dans un assembly qui est associé au classeur. Visual Studio place une copie du classeur et de l’assembly dans le dossier de sortie de la génération du projet. Par ailleurs, il configure les paramètres de sécurité sur l’ordinateur de développement pour permettre l’exécution de la personnalisation. Pour plus d’informations, consultez [solutions Office Build](../vsto/building-office-solutions.md).
+     Quand vous générez le projet, le code est compilé dans un assembly qui est associé au classeur. Visual Studio place une copie du classeur et de l’assembly dans le dossier de sortie de la génération du projet. Par ailleurs, il configure les paramètres de sécurité sur l’ordinateur de développement pour permettre l’exécution de la personnalisation. Pour plus d’informations, consultez [créer des solutions Office](../vsto/building-office-solutions.md).
 
 2. Dans le classeur, vérifiez que vous voyez le texte suivant.
 
@@ -143,36 +157,39 @@ ms.locfileid: "67328390"
 3. Fermez le classeur.
 
 ## <a name="clean-up-the-project"></a>Nettoyer le projet
+
  Une fois que vous avez fini de développer un projet, vous devez supprimer les fichiers du dossier de sortie de génération et les paramètres de sécurité créés par le processus de génération.
 
 ### <a name="to-clean-up-the-completed-project-on-your-development-computer"></a>Pour nettoyer le projet terminé sur votre ordinateur de développement
 
 1. Dans Visual Studio, dans le menu **Générer** , cliquez sur **Nettoyer la solution**.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
+
  Une fois que vous avez créé une personnalisation de base au niveau du document pour Excel, vous pouvez en apprendre plus sur la manière de développer des personnalisations dans les rubriques suivantes :
 
-- Tâches de programmation générales que vous pouvez effectuer dans les personnalisations au niveau du document : [Programmer des personnalisations au niveau du document](../vsto/programming-document-level-customizations.md).
+- Tâches de programmation générales que vous pouvez effectuer dans les personnalisations au niveau du document : [programmer des personnalisations au niveau du document](../vsto/programming-document-level-customizations.md).
 
-- Tâches de programmation sont aux personnalisations au niveau du document pour Excel : [Solutions Excel](../vsto/excel-solutions.md).
+- Tâches de programmation spécifiques aux personnalisations au niveau du document pour Excel : [solutions Excel](../vsto/excel-solutions.md).
 
-- À l’aide du modèle objet d’Excel : [Vue d’ensemble du modèle d’objet Excel](../vsto/excel-object-model-overview.md).
+- Utilisation du modèle objet d’Excel : [vue d’ensemble du modèle objet Excel](../vsto/excel-object-model-overview.md).
 
-- Personnalisation de l’interface utilisateur d’Excel, par exemple, en ajoutant un onglet personnalisé au ruban ou en créant votre propre volet actions : [Personnalisation de l’interface utilisateur Office](../vsto/office-ui-customization.md).
+- Personnalisation de l’interface utilisateur d’Excel, par exemple, en ajoutant un onglet personnalisé au ruban ou en créant votre propre volet Actions : personnalisation de l' [interface utilisateur Office](../vsto/office-ui-customization.md).
 
-- À l’aide d’objets Excel étendus fournis par les outils de développement Office dans Visual Studio pour effectuer des tâches qui ne sont pas possibles en utilisant le modèle objet Excel (par exemple, héberger des contrôles managés sur des documents et lier des contrôles Excel aux données en utilisant les formulaires Windows modèle de liaison de données) : [Automatiser Excel à l’aide d’objets étendus](../vsto/automating-excel-by-using-extended-objects.md).
+- Utilisation d’objets Excel étendus fournis par les outils de développement Office dans Visual Studio pour effectuer des tâches qui ne sont pas possibles en utilisant le modèle objet Excel (par exemple, héberger des contrôles managés sur des documents et lier des contrôles Excel à des données à l’aide du modèle de liaison de données Windows Forms) : [automatiser Excel à l’aide d’objets étendus](../vsto/automating-excel-by-using-extended-objects.md).
 
-- Génération et débogage des personnalisations au niveau du document pour Excel : [Générer des solutions Office](../vsto/building-office-solutions.md).
+- Génération et débogage des personnalisations au niveau du document pour Excel : [créer des solutions Office](../vsto/building-office-solutions.md).
 
-- Déploiement de personnalisations au niveau du document pour Excel : [Déployer une solution Office](../vsto/deploying-an-office-solution.md).
+- Déploiement de personnalisations au niveau du document pour Excel : [déployer une solution Office](../vsto/deploying-an-office-solution.md).
 
 ## <a name="see-also"></a>Voir aussi
-- [Vue d’ensemble du développement de solutions Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+
+- [Vue d’ensemble du &#40;développement des solutions Office VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [Solutions Excel](../vsto/excel-solutions.md)
-- [Programmer des personnalisations au niveau du document](../vsto/programming-document-level-customizations.md)
-- [Vue d’ensemble du modèle d’objet Excel](../vsto/excel-object-model-overview.md)
+- [Personnaliser les personnalisations au niveau du document](../vsto/programming-document-level-customizations.md)
+- [Vue d’ensemble du modèle objet Excel](../vsto/excel-object-model-overview.md)
 - [Automatiser Excel à l’aide d’objets étendus](../vsto/automating-excel-by-using-extended-objects.md)
 - [Personnalisation de l’interface utilisateur Office](../vsto/office-ui-customization.md)
-- [Générer des solutions Office](../vsto/building-office-solutions.md)
+- [Créer des solutions Office](../vsto/building-office-solutions.md)
 - [Déployer une solution Office](../vsto/deploying-an-office-solution.md)
 - [Vue d’ensemble des modèles de projet Office](../vsto/office-project-templates-overview.md)
