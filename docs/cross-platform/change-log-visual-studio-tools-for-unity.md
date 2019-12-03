@@ -1,7 +1,7 @@
 ---
 title: Journal des modifications (Visual Studio Tools pour Unity, Windows) | Microsoft Docs
 ms.custom: ''
-ms.date: 09/18/2019
+ms.date: 12/02/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,16 +10,64 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 713535bb11b4bd9cab4ef1b31507b96fe1c9897a
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 0e1810f452f48c95e0c4e8117820be3598b0f139
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71185994"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706781"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Journal des modifications (Outils Visual Studio pour Unity, Windows)
 
 Journal des modifications Visual Studio Tools pour Unity
+
+## <a name="4420"></a>4.4.2.0
+
+Publication : 3 décembre 2019
+
+### <a name="bug-fixes"></a>Correctifs de bogues
+
+- **Intégration :**
+
+  - Correction des diagnostics avec des interfaces définies par l’utilisateur.
+
+  - Correction des info-bulles rapides avec des expressions mal formées.
+
+## <a name="4410"></a>4.4.1.0
+
+Publication : 6 novembre 2019
+
+### <a name="new-features"></a>Nouvelles fonctionnalités
+
+- **Intégration :**
+
+  - Ajout de la prise en charge des processus d’arrière-plan Unity. (Le débogueur est en mesure de se connecter automatiquement au processus principal au lieu d’un processus enfant).
+  
+  - Ajout d’une info-bulle rapide pour les messages Unity, affichant la documentation associée.
+
+### <a name="bug-fixes"></a>Correctifs de bogues
+
+- **Intégration :**
+
+  - Correction de l’analyseur de comparaison de balises `UNT0002` avec des expressions binaires et d’appel avancées.
+
+### <a name="deprecated-features"></a>Fonctionnalités déconseillées
+
+- **Intégration :**
+
+  - À partir de là, Outils Visual Studio pour Unity ne prendra en charge que Visual Studio 2017 +.
+
+## <a name="4400"></a>4.4.0.0
+
+Publication : 15 octobre 2019
+
+### <a name="new-features"></a>Nouvelles fonctionnalités
+
+- **Intégration :**
+
+  - Ajout d’un suppresseur pour `IDE0060` (paramètre inutilisé) pour tous les messages Unity.
+  
+  - Ajout d’une info-bulle rapide pour les champs marqués avec `TooltipAttribute`. (Cela fonctionne également pour un accesseur Get simple à l’aide de ce champ).
 
 ## <a name="4330"></a>4.3.3.0
 
@@ -39,44 +87,44 @@ Publiée le 16 septembre 2019
 
 - **Intégration :**
 
-  - Nous avons approfondi la compréhension de Visual Studio pour les projets Unity en ajoutant de nouveaux diagnostics spécifiques à Unity. Nous avons également rendu l’IDE plus intelligent en supprimant les diagnostics C# généraux qui ne s’appliquent pas aux projets Unity. Par exemple, l’IDE n’affiche pas de correctif rapide pour modifier une variable d' `readonly` inspecteur, ce qui vous empêche de modifier la variable dans l’éditeur Unity.
-    - `UNT0001`: Les messages Unity sont appelés par le runtime même s’ils sont vides ; ne les déclarez pas pour éviter tout traitement inutile par le runtime Unity.
-    - `UNT0002`: La comparaison de balises à l’aide de l’égalité des chaînes est plus lente que la méthode CompareTag intégrée.
-    - `UNT0003`: L’utilisation de la forme générique de GetComponent est préférable pour la cohérence des types.
-    - `UNT0004`: Le message de mise à jour est dépendant de la fréquence d’images et doit utiliser Time.deltaTime au lieu de Time.fixedDeltaTime.
-    - `UNT0005`: Le message FixedUpdate est indépendant de la fréquence d’images et doit utiliser Time.fixedDeltaTime au lieu de Time.deltaTime.
-    - `UNT0006`: Une signature de méthode incorrecte a été détectée pour ce message Unity.
-    - `UNT0007`: Unity remplace l’opérateur de comparaison null pour les objets Unity qui est incompatible avec la fusion null.
-    - `UNT0008`: Unity remplace l’opérateur de comparaison null pour les objets Unity qui est incompatible avec la propagation null.
-    - `UNT0009`: Lors de l’application de l’attribut InitializeOnLoad à une classe, vous devez fournir un constructeur statique. L’attribut InitializeOnLoad garantit qu’il sera appelé au lancement de l’éditeur.
-    - `UNT0010`: Les MonoBehaviours doivent être créés uniquement en utilisant AddComponent(). Un MonoBehaviour est un composant et doit être attaché à un GameObject.
-    - `UNT0011`: ScriptableObject doit uniquement être créé à l’aide de CreateInstance(). ScriptableObject doit être créé par le moteur Unity pour gérer les méthodes de message Unity.
-    - `USP0001`pour `IDE0029`: Les objets Unity ne doivent pas utiliser la fusion Null.
-    - `USP0002`pour `IDE0031`: Les objets Unity ne doivent pas utiliser la propagation null.
-    - `USP0003`pour `IDE0051`: Les messages Unity sont appelés par le runtime Unity.
-    - `USP0004`pour `IDE0044`: Les champs avec un attribut SerializeField ne doivent pas être rendus ReadOnly.
+  - Nous avons approfondi la compréhension de Visual Studio pour les projets Unity en ajoutant de nouveaux diagnostics spécifiques à Unity. Nous avons également rendu l’IDE plus intelligent en supprimant les diagnostics C# généraux qui ne s’appliquent pas aux projets Unity. Par exemple, l’IDE n’affiche pas de correctif rapide pour remplacer une variable d’inspecteur par `readonly` ce qui vous empêche de modifier la variable dans l’éditeur Unity.
+    - `UNT0001`: les messages Unity sont appelés par le runtime même s’ils sont vides, ne les déclarent pas pour éviter le traitement uncesseray par le runtime Unity.
+    - `UNT0002`: la comparaison des balises à l’aide de l’égalité des chaînes est plus lente que la méthode CompareTag intégrée.
+    - `UNT0003`: l’utilisation de la forme générique de GetComponent est préférable à la sécurité de type.
+    - `UNT0004`: le message de mise à jour est dépendant de la fréquence des images et doit utiliser Time. deltaTime au lieu de Time. fixedDeltaTime.
+    - `UNT0005`: le message FixedUpdate est indépendant de la fréquence d’images et doit utiliser Time. fixedDeltaTime au lieu de Time. deltaTime.
+    - `UNT0006`: une signature de méthode incorrecte a été détectée pour ce message Unity.
+    - `UNT0007`: Unity remplace l’opérateur de comparaison null pour les objets Unity qui est incompatible avec la fusion de valeurs NULL.
+    - `UNT0008`: Unity remplace l’opérateur de comparaison null pour les objets Unity qui est incompatible avec la propagation de null.
+    - `UNT0009`: lors de l’application de l’attribut InitializeOnLoad à une classe, vous devez fournir un constructeur statique. L’attribut InitializeOnLoad garantit qu’il sera appelé au lancement de l’éditeur.
+    - `UNT0010`: les monocomportements doivent être créés uniquement à l’aide de AddComponent (). Un MonoBehaviour est un composant et doit être attaché à un GameObject.
+    - `UNT0011`: ScriptableObject doit être créé uniquement à l’aide de CreateInstance (). ScriptableObject doit être créé par le moteur Unity pour gérer les méthodes de message Unity.
+    - `USP0001` pour `IDE0029`: les objets Unity ne doivent pas utiliser la fusion Null.
+    - `USP0002` pour `IDE0031`: les objets Unity ne doivent pas utiliser la propagation null.
+    - `USP0003` pour `IDE0051`: les messages Unity sont appelés par le runtime Unity.
+    - `USP0004` pour `IDE0044`: les champs avec un attribut SerializeField ne doivent pas être rendus ReadOnly.
 
 ## <a name="4310"></a>4.3.1.0
 
-publication : 4 septembre 2019
+Publication : 4 septembre 2019
 
 ### <a name="new-features"></a>Nouvelles fonctionnalités
 
 - **Évaluation :**
 
-  - Ajout de la prise en charge d’un meilleur `List<object>` affichage de `List'1[[System.Object, <corlib...>]]`type, c’est-à-dire au lieu de.
+  - Ajout de la prise en charge d’un meilleur affichage de type, c.-à-d. `List<object>` au lieu de `List'1[[System.Object, <corlib...>]]`.
 
-  - Ajout de la prise en charge de l’accès `p->data->member`au membre pointeur, c.-à-d.
+  - Ajout de la prise en charge de l’accès aux membres du pointeur, c.-à-d. `p->data->member`.
 
-  - Ajout de la prise en charge des conversions implicites dans les `new byte [] {1,2,3,4}`initialiseurs de tableau, c.-à-d.
+  - Ajout de la prise en charge des conversions implicites dans les initialiseurs de tableau, c.-à-d. `new byte [] {1,2,3,4}`.
 
 ## <a name="4300"></a>4.3.0.0
 
-publication : 13 août 2019
+Publication : 13 août 2019
 
 ### <a name="new-features"></a>Nouvelles fonctionnalités
 
-- **Débogueur :**
+- **Débogueur :**
 
   - Ajout de la prise en charge du protocole MDS 2.51.
 
@@ -188,7 +236,7 @@ Publication : 21 mai 2019
 
   - Résolution des problèmes de thème avec des étiquettes et des cases à cocher.
 
-- **Débogueur :**
+- **Débogueur :**
 
   - Résolution de l’exécution pas à pas avec les constructeurs statiques.
 
@@ -214,7 +262,7 @@ Publication : 13 février 2019
 
   - Prise en charge de la détection des processus Unity lors de l’installation et meilleure gestion du verrouillage de fichier par le moteur d’installation.
 
-  - Mise à `ScriptableObject` jour de l’API.
+  - Mise à jour de l’API `ScriptableObject`.
 
 ## <a name="4003"></a>4.0.0.3
 
@@ -224,13 +272,13 @@ Publication : 31 janvier 2019
 
 - **Génération de projet :**
 
-  - Suppression des avertissements générés par les champs publics et sérialisés. Nous avons supprimé automatiquement les avertissements du `CS0649` compilateur `IDE0051` et dans les projets Unity qui ont créé ces messages.
+  - Suppression des avertissements générés par les champs publics et sérialisés. Nous avons supprimé automatiquement les avertissements du compilateur `CS0649` et `IDE0051` dans les projets Unity qui ont créé ces messages.
 
 - **Intégration :**
 
   - Amélioration de l’expérience utilisateur pour l’affichage des instances d’éditeur et de lecteur Unity (fenêtres redimensionnables, avec marges uniformes et poignée de redimensionnement). Ajout d’informations sur l’identificateur de processus pour les éditeurs Unity.
 
-  - Mise à `MonoBehaviour` jour de l’API.
+  - Mise à jour de l’API `MonoBehaviour`.
 
 - **Évaluation :**
 
@@ -248,7 +296,7 @@ Publication : 31 janvier 2019
 
   - Correction des délais de l’interface utilisateur lors du filtrage avec l’Assistant MonoBehaviour.
 
-- **Débogueur :**
+- **Débogueur :**
 
   - Correction de la lecture des attributs personnalisés sur les arguments nommés avec d’anciennes versions des protocoles.
 
@@ -266,7 +314,7 @@ Publication : 23 janvier 2019
 
   - Correction du fournisseur de complétion avec les modifications de texte par lots.
 
-- **Débogueur :**
+- **Débogueur :**
 
   - Correction de l’affichage des messages de débogage utilisateur du débogueur attaché.
 
@@ -338,7 +386,7 @@ Publication : 19 novembre 2018
 
 ### <a name="bug-fixes"></a>Correctifs de bogues
 
-- **Débogueur :**
+- **Débogueur :**
 
   - Correction d’un blocage dans la bibliothèque utilisée pour communiquer avec le moteur de débogage de Unity, à cause duquel Visual Studio ou Unity se figeait, en particulier lorsque l’on sélectionnait « Attacher à Unity » ou que l’on redémarrait le jeu.
 
@@ -368,7 +416,7 @@ Publiée le 20 septembre 2018
 
 ### <a name="bug-fixes"></a>Correctifs de bogues
 
-- **Débogueur :**
+- **Débogueur :**
 
   - (Reporté depuis 3.9.0.2) Correction d’un blocage dans la bibliothèque utilisée pour communiquer avec le moteur de débogage de Unity, à cause duquel Visual Studio ou Unity se figeait, en particulier lorsque l’on sélectionnait « Attacher à Unity » ou que l’on redémarrait le jeu.
 
@@ -526,7 +574,7 @@ Publication : 13 mars 2018
 
   - Correction de la gestion des états endommagés avec les projets personnalisés.
 
-- **Débogueur :**
+- **Débogueur :**
 
   - Résolution de la définition de l’instruction suivante.
 
@@ -560,7 +608,7 @@ Publication : 23 février 2018
 
   - Correction de la détection de framework cible fixe Unity.
 
-- **Débogueur :**
+- **Débogueur :**
 
   - Correction de l’arrêt sur les exceptions levées en dehors du code utilisateur.
 
@@ -606,11 +654,11 @@ Publication : 10 janvier 2018
 
   - Prise en charge ajoutée de l’identificateur $exception.
 
-- **Débogueur :**
+- **Débogueur :**
 
   - Prise en charge ajoutée des attributs DebuggerHidden/DebuggerStepThrough avec le nouveau runtime Unity.
 
-- **Assistants :**
+- **Assistants :**
 
   - Présentation de la version « la plus récente » pour les Assistants.
 
@@ -620,11 +668,11 @@ Publication : 10 janvier 2018
 
   - Correction du calcul GUID de projet pour les projets de lecteur.
 
-- **Débogueur :**
+- **Débogueur :**
 
   - Correction d’une concurrence dans la gestion des événements d’arrêt.
 
-- **Assistants :**
+- **Assistants :**
 
   - Actualiser le contexte roslyn avant d’insérer la méthode.
 
@@ -648,7 +696,7 @@ Publication : 4 décembre 2017
 
   - Les projets Unity sont désormais automatiquement rechargés dans Visual Studio quand vous ajoutez ou supprimez un script Unity.
 
-- **Débogueur :**
+- **Débogueur :**
 
   - Ajout d’une option pour utiliser le débogueur Mono partagé par Xamarin et Visual Studio pour Mac afin de déboguer l’éditeur Unity.
 
@@ -684,7 +732,7 @@ Publication : 19 septembre 2017
 
   - Arrêt de la copie des assemblys Unity dans le dossier du projet.
 
-- **Débogueur :**
+- **Débogueur :**
 
   - Ajout de la prise en charge de la définition de l’instruction suivante avec le nouveau runtime Unity.
 
@@ -738,7 +786,7 @@ Publication : 14 août 2017
 
   - Correction des problèmes liés à l’ajout d’éléments à Visual Studio Watch.
 
-- **Project Generation:**
+- **Génération de projet :**
 
   - Correction des références de nom d’assembly avec des fichiers mcs.rsp.
 
@@ -768,7 +816,7 @@ Publication : 7 avril 2017
 
 ### <a name="new-features"></a>Nouvelles fonctionnalités
 
-- **Débogueur :**
+- **Débogueur :**
 
   - Ajout de la prise en charge du nouveau runtime Unity (avec compatibilité avec .NET 4.6 / C# 6).
 
@@ -816,7 +864,7 @@ Publication : 23 janvier 2017
 
   - Résolution d’un incident lié à une déclaration d’attribut sans accolade de fin.
 
-- **Débogueur :**
+- **Débogueur :**
 
   - Correction d’un problème de points d’arrêt de fonction avec les coroutines dans le nouveau compilateur/runtime Unity.
 
@@ -881,7 +929,7 @@ Publication : 17 novembre 2016
 
 ### <a name="bug-fixes"></a>Correctifs de bogues
 
-- **Débogueur :**
+- **Débogueur :**
 
   - Résolution d’un bogue qui provoque l’arrêt brutal d’Unity durant l’évaluation des types génériques.
 
@@ -913,11 +961,11 @@ Publication : 14 juillet 2016
 
   - Ajout d’une option pour autoriser la modification des propriétés de projet générées.
 
-- **Débogueur :**
+- **Débogueur :**
 
   - Ajout des visualiseurs de chaînes de texte, XML, HTML et JSON.
 
-- **Assistants :**
+- **Assistants :**
 
   - Ajout de MonoBehaviors manquants.
 
@@ -929,7 +977,7 @@ Publication : 14 juillet 2016
 
   - Résolution d’un conflit lié à Xamarin, qui empêchait le débogage dans certaines situations.
 
-- **Débogueur :**
+- **Débogueur :**
 
   - Correction d’un problème provoquant le blocage de Visual Studio pendant le débogage.
 
@@ -943,7 +991,7 @@ Publication : 4 février 2016
 
 ### <a name="new-features"></a>Nouvelles fonctionnalités
 
-- **Assistants :**
+- **Assistants :**
 
   - Ajout de la recherche intelligente dans l’Assistant **Implémenter MonoBehavior** .
 
@@ -969,7 +1017,7 @@ Publication : 4 février 2016
 
   - Limitation des projets générés à C# 4.
 
-- **Débogueur :**
+- **Débogueur :**
 
   - Correction d’un problème d’évaluation d’expression lors du débogage au sein d’une coroutine Unity.
 
@@ -1003,7 +1051,7 @@ Publication : 8 septembre 2015
 
 - Correction des références aux assemblys UnityEngine et UnityEditor pour les applications du Windows Store.
 
-- Correction de l’erreur lors de l’exécution pas à pas dans le débogueur : Impossible de parcourir, exception générale.
+- Correction de l’erreur lors de l’exécution pas à pas dans le débogueur : impossible de parcourir, exception générale.
 
 - Correction du nombre d’accès des points d’arrêt dans Visual Studio 2015.
 
@@ -1035,7 +1083,7 @@ Publication : 20 juillet 2015
 
   - Correction de la génération de MonoBehaviors autour des déclarations d’événements et de délégués.
 
-- **Débogueur :**
+- **Débogueur :**
 
   - Correction d’un blocage potentiel lors du débogage.
 
@@ -1060,7 +1108,7 @@ Publication : 2 avril 2015
 
   - Adopter les icônes de Visual Studio dans le projet Unity.
 
-- **Débogueur :**
+- **Débogueur :**
 
   - Sélectionner la cible de débogage active à partir d’une liste de cibles de débogage enregistrées ou récemment utilisées (voir la boîte de dialogue **Options** ).
 
@@ -1084,13 +1132,13 @@ Publication : 2 avril 2015
 
   - Installer le package Visual Studio Tools pour Unity pour Unity 5.
 
-- **Documentation :** Améliorer les performances de la génération de la documentation.
+- **Documentation :** améliorer les performances de la génération de la documentation.
 
-- **Assistants :** Prise en charge de nouvelles méthodes MonoBehavior pour Unity 4.6 et Unity 5.
+- **Assistants :** prise en charge de nouvelles méthodes MonoBehavior pour Unity 4.6 et Unity 5.
 
-- **Unity :** Indicateurs de recherche non sécurisés et définitions personnalisées dans les fichiers .rsp pendant la génération du fichier projet.
+- **Unity :** indicateurs de recherche non sécurisés et définitions personnalisées dans les fichiers .rsp pendant la génération du fichier projet.
 
-- **Interface utilisateur :** Ajout de la boîte de dialogue **Options** des Outils Visual Studio pour Unity dans Visual Studio.
+- **Interface utilisateur :** ajout de la boîte de dialogue **Options** Visual Studio Tools pour Unity dans Visual Studio.
 
 ### <a name="bug-fixes"></a>Correctifs de bogues
 
@@ -1104,7 +1152,7 @@ Publication : 2 avril 2015
 
   - S’assurer que les fichiers nouvellement sélectionnés sont visibles dans l’Explorateur de projets Unity.
 
-- **Débogueur :**
+- **Débogueur :**
 
   - Éviter un éventuel blocage de Visual Studio lors de l’évaluation des expressions dans le débogueur.
 
@@ -1124,13 +1172,13 @@ Publication : 2 avril 2015
 
   - Envoyer les journaux de console Unity à la liste d’erreurs Visual Studio.
 
-- **Documentation :** Corriger la génération de la documentation pour la nouvelle documentation Unity.
+- **Documentation :** corriger la génération de la documentation pour la nouvelle documentation Unity.
 
-- **Projet :** Déplacer et renommer les fichiers .meta Unity si nécessaire, même dans les dossiers.
+- **Projet :** déplacer et renommer les fichiers .meta Unity si nécessaire, même dans les dossiers.
 
-- **Assistants :** Corriger l’ordre des paramètres de la méthode MonoBehavior lors de la génération de code.
+- **Interface utilisateur :** corriger l’ordre des paramètres de la méthode MonoBehavior lors de la génération de code.
 
-- **Interface utilisateur :** Prendre en charge les thèmes Visual Studio pour les icônes et le menu contextuel.
+- **Interface utilisateur :** prendre en charge les thèmes Visual Studio pour les icônes et le menu contextuel.
 
 ## <a name="1980---20-preview"></a>1.9.8.0 - 2.0 préversion
 Publication : 12 novembre 2014
@@ -1484,21 +1532,21 @@ Publication : 25 mars 2013
 
 - Correctif de bogue UVS-48 : la saisie de guillemets doubles produit parfois des erreurs et arrête toutes les fonctions (exécution de code, mise en surbrillance de la syntaxe, etc.).
 
-- Résolution de bogue UVS-46 : Duplication du fichier de script ouvert (UnityScript) quand vous cliquez sur la liste d’erreurs de Visual Studio.
+- Correctif de bogue UVS-46 : ouverture de fichier de script dupliqué (UnityScript) lorsque vous cliquez sur la liste des erreurs de Visual Studio.
 
-- Résolution de bogue UVS-42 : Le logo de connectivité Unity dans la barre d’état ne traite pas les événements de souris dans Visual Studio 2012.
+- Correctif de bogue UVS-42 : le logo de connectivité Unity dans la barre d'état ne traite pas les événements de souris dans Visual Studio 2012.
 
-- Résolution de bogue UVS-44 : La combinaison Ctrl+Maj+Q n’est pas disponible dans Visual Studio 2012 pour les MonoBehaviours rapides.
+- Correctif de bogue UVS-44 : CTRL+MAJ+Q n'est pas disponible dans Visual Studio 2012 pour les MonoBehaviour rapides.
 
-- Résolution de bogue UVS-40 : Les éléments sélectionnés dans l’Explorateur de projets Unity sont illisibles quand la fenêtre est inactive dans le thème « foncé » de Visual Studio 2012.
+- Correctif de bogue UVS-40 : les éléments sélectionnés dans l’Explorateur de projets Unity sont illisibles lorsque la fenêtre est inactive dans le thème « foncé » VS2012.
 
-- Résolution de bogue UVS-39 : Problème de création de jetons pour les chaînes d’échappement.
+- Correctif de bogue UVS-39 : problème d'échappement de chaînes de création de jetons.
 
-- Résolution de bogue UVS-35 : Appel de ToString sur des objets durant l’inspection de variables.
+- Correctif de bogue UVS-35 : appel de ToString sur les objets lors de l'inspection de variables.
 
-- Résolution de bogue UVS-27 : Incohérence de la fenêtre Aller au symbole avec le thème « foncé » dans Visual Studio 2012.
+- Correctif de bogue UVS-27 : incohérence de la fenêtre Aller au symbole avec le thème « foncé » dans VS2012.
 
-- Résolution de bogue UVS-11 : Variables locales dans les coroutines.
+- Correctif de bogue UVS-11 : variables locales dans les coroutines.
 
 ## <a name="1100---beta-release"></a>1.1.0.0 - Version bêta
 Publication : 9 mars 2013
@@ -1605,9 +1653,9 @@ Publication : 3 octobre 2012
 
 - Résolution de la façon dont les types sont recherchés dans les assemblys chargés pour l’évaluation d’expression.
 
-- Résolution de bogue UVS-21 : L’évaluation de l’affectation sur les objets Unity n’a aucun effet.
+- Correctif de bogue UVS-21 : l’évaluation de l’affectation sur les objets Unity n’a aucun effet.
 
-- Résolution de bogue UVS-21 : Pointeur non valide durant l’évaluation d’un appel de méthode à l’API Math Unity.
+- Correctif de bogue UVS-21 : pointeur non valide lors de l’évaluation d’un appel de méthode vers l’API Math Unity.
 
 ## <a name="1080"></a>1.0.8.0
 
