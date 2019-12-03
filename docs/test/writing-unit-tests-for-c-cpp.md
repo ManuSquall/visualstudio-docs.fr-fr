@@ -8,12 +8,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 824b928c9f89b98f9026059b824fce84969bf69a
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 69b4f38ae43bacd5324b30a3970047b39c32fe99
+ms.sourcegitcommit: 669fc9e397476d7a1d2cda5999710d415f7d6e4f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189102"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74688856"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Écrire des tests unitaires pour C/C++ dans Visual Studio
 
@@ -79,7 +79,7 @@ Pour permettre à votre code de test d’accéder aux fonctions du projet à tes
 
 ### <a name="link-to-object-or-library-files"></a>Lier à des fichiers objets ou bibliothèques
 
-Si le code de test n’exporte pas les fonctions que vous voulez tester, vous pouvez ajouter les fichiers de sortie .obj ou .lib aux dépendances du projet de test. Consultez [Pour lier les tests aux fichiers objets ou bibliothèques](how-to-use-microsoft-test-framework-for-cpp.md).
+Si le code de test n’exporte pas les fonctions que vous voulez tester, vous pouvez ajouter les fichiers de sortie .obj ou .lib aux dépendances du projet de test. Consultez [Pour lier les tests aux fichiers objets ou bibliothèques](/visualstudio/test/how-to-use-microsoft-test-framework-for-cpp#same_project).
 
 ### <a name="add-include-directives-for-header-files"></a>Ajouter des directives #include pour les fichiers d’en-tête
 
@@ -87,7 +87,7 @@ Ensuite, dans votre fichier de test unitaire *.cpp*, ajoutez une directive `#inc
 
 ![Ajouter des directives include](media/cpp-add-includes-test-project.png)
 
-Pour éviter d’avoir à taper le chemin d’accès complet dans chaque instruction include dans le fichier source, vous pouvez ajouter les dossiers requis dans **Project** > **Properties** > **C/C++**  > **General** > **include supplémentaire Répertoires**.
+Pour éviter d’avoir à taper le chemin d’accès complet dans chaque instruction include dans le fichier source, vous pouvez ajouter les dossiers requis dans **Project** > **Properties** > **C/C++**  > **General** > **autres répertoires Include**.
 
 ### <a name="write-test-methods"></a>Écrire des méthodes de test
 
