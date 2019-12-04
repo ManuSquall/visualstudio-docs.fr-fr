@@ -3,27 +3,27 @@ title: Outils Visual Studio pour Mac pour Unity
 description: Présentation de l’extension Outils Visual Studio pour Unity
 author: therealjohn
 ms.author: johmil
-ms.date: 06/18/2019
+ms.date: 10/25/2019
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: 98a34df9960ca95edbaf6b9c5ae91d7cd4e06568
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
-ms.translationtype: HT
+ms.openlocfilehash: c411ae1730c2bd9b4f92729a8480d7fa399d0894
+ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691867"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74797253"
 ---
 # <a name="visual-studio-for-mac-tools-for-unity"></a>Outils Visual Studio pour Mac pour Unity
 
 ![Image stylisée d’Unity et de Visual Studio pour Mac](media/vsmac-tools-unity-image1.png)
 
-Les outils Visual Studio pour Mac pour Unity constituent une extension Visual Studio gratuite qui transforme Visual Studio pour Mac en un outil puissant pour le développement de jeux et d’applications multiplateformes avec la plateforme Unity.
+Les outils Visual Studio pour Mac destinés à Unity constituent une extension Visual Studio gratuite qui transforme Visual Studio pour Mac en un outil puissant pour le développement de jeux et d’applications multiplateformes avec la plateforme Unity.
 
 L’intégration de Unity est incluse par défaut dans Visual Studio pour Mac, et à compter de Unity 2018.1, Visual Studio pour Mac est l’IDE C# par défaut pour les projets Unity.
 
 > [!NOTE]
 > Ces informations concernent l’environnement de développement intégré Visual Studio pour Mac. Pour Visual Studio Code, consultez [ce guide](https://code.visualstudio.com/docs/other/unity) pour plus d’informations.
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d'ensemble de
 
 Voici quelques-unes des principales fonctionnalités des outils Visual Studio pour Mac pour Unity :
 
@@ -47,6 +47,12 @@ Les outils Visual Studio pour Mac pour Unity prennent en charge toutes les fonct
 ### <a name="powerful-refactoring-and-context-actions"></a>Actions puissantes de refactorisation et contextuelles
 
 Écrivez du code plus utilisable avec des menus rapides et des raccourcis clavier pour des [actions de renommage, refactorisation et contextuelles](refactoring.md).
+
+### <a name="roslyn-diagnostics-and-quick-fixes-for-unity"></a>Diagnostics Roslyn et correctifs rapides pour Unity
+
+Écrivez un meilleur code qui capture les meilleures pratiques avec la compréhension approfondie de Visual Studio pour Mac des projets Unity. 
+
+![Comparaison de chaînes de refactorisation VS pour Mac avec CompareTag](media/using-vsmac-tools-unity-image9.png)
 
 ### <a name="browse-and-add-new-files"></a>Parcourir et ajouter de nouveaux fichiers
 
