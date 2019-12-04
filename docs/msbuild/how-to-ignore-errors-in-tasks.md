@@ -9,12 +9,12 @@ ms.assetid: e2f1ca4f-787b-44bd-bc64-81a036025e96
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: abd907e86a451ca035d44d9a12084c7b84acd1ed
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
-ms.translationtype: HT
+ms.openlocfilehash: d84292592183d11e5d9ee4fc2febac6679e2a73b
+ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74777892"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74797210"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>Guide pratique pour ignorer des erreurs dans des tâches
 Vous souhaiterez parfois qu’une génération soit à tolérance de panne dans certaines tâches. En cas d’échec de ces tâches non critiques, vous souhaiterez continuer la génération, car elle peut toujours produire la sortie requise. Par exemple, si un projet utilise une tâche `SendMail` pour envoyer un message électronique après la génération de chaque composant, vous pouvez juger acceptable de poursuivre la génération jusqu’à son achèvement, même si les serveurs de messagerie ne sont pas disponibles et que les messages d’état ne peuvent pas être envoyés. Si des fichiers intermédiaires sont habituellement supprimés pendant la génération, vous pouvez également estimer que la génération peut se poursuivre jusqu’à son achèvement, même si ces fichiers ne peuvent pas être supprimés.
@@ -38,7 +38,7 @@ La valeur par défaut de `ContinueOnError` est `ErrorAndStop`. Si vous définiss
 
 Utilisez l’attribut `ContinueOnError` de la tâche. Par exemple :
 
-```c#
+```xml
 <Delete Files="@(Files)" ContinueOnError="WarnAndContinue"/>
 ```
 

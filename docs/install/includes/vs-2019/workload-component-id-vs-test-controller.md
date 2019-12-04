@@ -6,22 +6,22 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 09/23/2019
+ms.date: 12/03/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: deac2e490e61dca190cc821b02af0a6213f5620f
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 5517f67481e45c8a441c88be4f6de2edc55bc2c6
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71210203"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74795950"
 ---
-## <a name="test-controller"></a>Test Controller
+## <a name="test-controller"></a>Contrôleur de test
 
 **ID :** Microsoft.VisualStudio.Workload.TestController
 
-**Description :** Distribuer des tests automatisés à plusieurs machines
+**Description :** Distribuer des tests automatisés sur plusieurs ordinateurs
 
 ### <a name="components-included-by-this-workload"></a>Composants inclus par cette charge de travail
 

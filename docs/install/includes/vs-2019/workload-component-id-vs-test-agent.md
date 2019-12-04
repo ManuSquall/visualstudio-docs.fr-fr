@@ -6,22 +6,22 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 09/23/2019
+ms.date: 12/03/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: a9dbd09c35c26b9670b9aceecabbfb3a57093f6e
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 85f843143847b71332dcf64dbddb9c95dfd464a3
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71210199"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74796068"
 ---
 ## <a name="test-agent"></a>Agent de test
 
 **ID :** Microsoft.VisualStudio.Workload.TestAgent
 
-**Description :** Prend en charge l’exécution de tests automatisés et de tests de charge à distance
+**Description :** prend en charge l’exécution de tests automatisés et de tests de chargement à distance
 
 ### <a name="components-included-by-this-workload"></a>Composants inclus par cette charge de travail
 
