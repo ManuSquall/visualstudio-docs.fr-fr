@@ -9,14 +9,15 @@ ms.assetid: be79ec41-f1dd-4984-993f-5c2962355a32
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b284a53d930fc7882b9a2a9a3bde8d5334ea13ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: e30589a7c58a756a981ed8a690afe4b052aeaf0b
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62798438"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74771528"
 ---
 # <a name="resource-contention-data-views"></a>Vues de données de conflit de ressources
 Cette section contient des informations de référence sur les vues et les rapports des fichiers de données du profileur qui comprennent des données de profilage des conflits de threads.
@@ -30,7 +31,7 @@ Cette section contient des informations de référence sur les vues et les rappo
 
  Affiche une arborescence hiérarchique qui représente les chemins d’exécution et les données des conflits de ressources des fonctions lors de l’exécution du profilage.
 
-- [Modules, mode](../profiling/modules-view-contention-data.md)
+- [Vue Modules](../profiling/modules-view-contention-data.md)
 
  Organise les données des conflits de threads et de ressources par module et liste les fonctions, les lignes de code source et les instructions qui étaient en cours d’exécution quand des événements bloquants se sont produits.
 
@@ -54,7 +55,7 @@ Cette section contient des informations de référence sur les vues et les rappo
 
  Liste les données de conflits de ressources par ressource bloquée.
 
-- [Lignes, vue](../profiling/lines-view-contention-data.md)
+- [Vue Lignes](../profiling/lines-view-contention-data.md)
 
  Liste les données de conflits de ressources par ligne de code source.
 
@@ -66,7 +67,7 @@ Cette section contient des informations de référence sur les vues et les rappo
 
  Liste les conflits de ressources par processus et par thread.
 
-## <a name="reference"></a>Référence
+## <a name="reference"></a>Reference
 - [Vue Informations relatives à la fonction](../profiling/function-details-view.md)
 
  Affiche un graphique de la relation qui existe entre une fonction sélectionnée et les fonctions qui l’ont appelée et qui ont été appelées par celle-ci.

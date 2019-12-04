@@ -8,14 +8,15 @@ ms.assetid: 26516139-0981-41de-917d-ad5769391b8d
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: cb3117ff480e124aab6333eaed612c0438ed3911
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 521c884a0a25d7fa975a4039e6ec3e36ff4dc020
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830044"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778542"
 ---
 # <a name="modules-view---net-memory-instrumentation-data"></a>Modules, vue - Données d’instrumentation de la mémoire .NET
 La vue Modules des données d’allocation de mémoire .NET collectées à l’aide de la méthode d’instrumentation regroupe les données de mémoire et de minutage selon les modules exécutés dans le cadre de l’exécution du profilage. Les données de profilage pour les fonctions du module sont répertoriées sous le nœud du module.
@@ -24,11 +25,11 @@ La vue Modules des données d’allocation de mémoire .NET collectées à l’
 
 |Colonne|Description|
 |------------|-----------------|
-|**Name**|Nom de la fonction ou du module.|
+|**Nom**|Nom de la fonction ou du module.|
 |**Numéro de ligne de fonction**|Numéro de ligne du début de cette fonction dans le fichier source.|
 |**Nombre d’appels**|Nombre total d’appels effectués à cette fonction ou à ce module.|
 |**Fichier source**|Fichier source contenant la définition de cette fonction.|
-|**Nom du module**|Nom du module qui contient la fonction.|
+|**Nom de module**|Nom du module qui contient la fonction.|
 |**Chemin de module**|Chemin d’accès du module qui contient la fonction.|
 |**ID du processus**|ID du processus (PID) de l'exécution du profilage.|
 |**Nom du processus**|Nom du processus dans lequel le module ou la fonction s’exécutait.|
@@ -99,5 +100,5 @@ La vue Modules des données d’allocation de mémoire .NET collectées à l’
 
 ## <a name="see-also"></a>Voir aussi
 - [Modules, vue - échantillonnage](../profiling/modules-view-dotnet-memory-sampling-data.md)
-- [Modules, mode](../profiling/modules-view-instrumentation-data.md)
-- [Modules, mode](../profiling/modules-view-sampling-data.md)
+- [Vue Modules](../profiling/modules-view-instrumentation-data.md)
+- [Vue Modules](../profiling/modules-view-sampling-data.md)

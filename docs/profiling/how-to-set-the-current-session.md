@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Définir la session active | Microsoft Docs'
+title: Guide pratique pour définir la session active | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,16 +13,17 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ad917a67ab03a4cb6c1e265ec2dafcbe6e2ee421
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 70f33888be5097d2682133cda363099bb815c5b0
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823567"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778750"
 ---
-# <a name="how-to-set-the-current-session"></a>Procédure : Définir la session active
+# <a name="how-to-set-the-current-session"></a>Guide pratique pour définir la session active
 
 Vous pouvez ouvrir plusieurs sessions de performance dans l’**Explorateur de performances**, puis sélectionner l’une des sessions de performance visibles à définir comme session active.
 

@@ -9,14 +9,15 @@ ms.assetid: ee5e964c-1222-496d-b825-166443a89d2b
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b71271213e10c460c0b1744ba079ec034aa9d118
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 39af1975dc3bcb0f5df729579ca1af38fa60160f
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001042"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777827"
 ---
 # <a name="common-data-views"></a>Vues de données communes
 Cette section contient des informations de référence sur les vues et les rapports des fichiers de données du profileur qui sont communs à toutes les méthodes de profilage.

@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Personnaliser les colonnes de vue des rapports | Microsoft Docs'
+title: Guide pratique pour personnaliser les colonnes de la vue Rapport | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,23 +11,24 @@ ms.assetid: cb6f6d30-52a5-4d92-ab07-1d5ddb67884c
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e5fd58603e287de31fab35375e9441f9113fb025
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 6a297e6bfbed5023db97cabd370679b0de6caaab
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62973927"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778971"
 ---
-# <a name="how-to-customize-report-view-columns"></a>Procédure : Personnaliser les colonnes de vue des rapports
+# <a name="how-to-customize-report-view-columns"></a>Guide pratique pour personnaliser les colonnes de la vue de rapport
 Les outils d’analyse des performances de Visual Studio Team System Development Edition sont entièrement intégrés à l’environnement de développement intégré (IDE) pour fournir une expérience utilisateur transparente. La liste qui suit répertorie les vues que vous pouvez personnaliser en ajoutant, en supprimant et en réorganisant des colonnes :
 
-- [Modules, mode](../profiling/modules-view.md)
+- [Vue Modules](../profiling/modules-view.md)
 
 - [Mode Fonctions](../profiling/functions-view.md)
 
-- [Lignes, vue](../profiling/lines-view.md)
+- [Vue Lignes](../profiling/lines-view.md)
 
 - [Vue Pointeurs d’instruction (IP)](../profiling/instruction-pointers-ips-view.md)
 
@@ -35,11 +36,11 @@ Les outils d’analyse des performances de Visual Studio Team System Development
 
 - [Mode Arborescence des appels](../profiling/call-tree-view.md)
 
-- [Vue Allocations](../profiling/dotnet-memory-allocations-view.md)
+- [Allocations, vue](../profiling/dotnet-memory-allocations-view.md)
 
 - [Vue Durée de vie de l’objet](../profiling/object-lifetime-view.md)
 
-- [Vue Marques](../profiling/marks-view.md)
+- [Marques, vue](../profiling/marks-view.md)
 
 - [Processus, vue](../profiling/process-view.md)
 

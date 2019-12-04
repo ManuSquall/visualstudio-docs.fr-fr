@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Spécifier le fichier binaire à démarrer | Microsoft Docs'
+title: Guide pratique pour spécifier le fichier binaire à démarrer | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,18 +11,19 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a03bf203e5078bdbdf6327ec7bda186613a25c03
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: fd3379b9769cfd6bfe1335b12545e635a9bde782
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62996128"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778685"
 ---
-# <a name="how-to-specify-the-binary-to-start"></a>Procédure : Spécifier le binaire à démarrer
+# <a name="how-to-specify-the-binary-to-start"></a>Guide pratique pour spécifier le binaire à démarrer
 
-Pour profiler des fichiers binaires, tels que les DLL, vous devez entrer des informations dans la boîte de dialogue **Pages de propriétés de \<Cible>**. Ces informations indiquent où le projet DLL peut trouver l’application appelante.
+Pour profiler des fichiers binaires, tels que les DLL, vous devez entrer des informations dans la boîte de dialogue **Pages de propriétés de \<Cible>** . Ces informations indiquent où le projet DLL peut trouver l’application appelante.
 
 1. Dans l’**Explorateur de performances**, cliquez avec le bouton droit sur le fichier binaire cible, puis cliquez sur **Propriétés**.
 

@@ -10,14 +10,15 @@ ms.assetid: 3e84e513-dc64-40bb-b385-03281f28b519
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fd4e411fdb9b49a67f5fbddb27d2a0102cdc755
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: cfb0d9ae2d677b1cc9dc828ffaecd5c0f71bfd5b
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62794397"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74772286"
 ---
 # <a name="performance-report-views"></a>Vues du rapport des performances
 Cette section fournit des informations de référence pour les rapports et les vues des outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Les vues des fichiers de données de profilage s’affichent dans l’environnement de développement intégré (IDE) de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Les rapports sont générés par l’outil en ligne de commande [VSPerfReport](../profiling/vsperfreport.md).
@@ -45,7 +46,7 @@ Cette section fournit des informations de référence pour les rapports et les v
 
 - [Visualiseur concurrentiel](../profiling/concurrency-visualizer.md)
 
- Informations de référence sur les vues et rapports des fichiers de données de profilage générés à l’aide de la méthode de concurrence et qui incluent des données d’exécution des threads.
+ Informations de référence sur les vues et les rapports des fichiers de données de profilage qui sont générés à l’aide de la méthode d’accès concurrentiel et qui comprennent des données d’exécution des threads.
 
 - [Interactions de couche, vue](../profiling/tier-interactions-view.md)
 

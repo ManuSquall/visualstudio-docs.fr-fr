@@ -6,12 +6,12 @@ manager: lank
 ms.date: 11/18/2019
 ms.topic: conceptual
 description: Découvrez comment activer l’avantage Support technique inclus dans votre abonnement Visual Studio.
-ms.openlocfilehash: f88cf221f47f2b8aa89a733a4794e424ac938261
-ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
+ms.openlocfilehash: f7c1353e9f9759b91a7d83d8296a036bb5b80dd7
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74161971"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706986"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Activer et utiliser l’avantage Support technique dans les abonnements Visual Studio
 L’avantage Support technique dans les abonnements Visual Studio permet de résoudre les problèmes couverts par la garantie de réparation et d’assistance dans les **environnements hors production** pour les produits se trouvant toujours dans la phase de support standard du [cycle de vie du support](https://support.microsoft.com/lifecycle/search). Les abonnements standard et cloud annuels Visual Studio Enterprise acceptent quatre incidents, tandis que les abonnements standard et cloud annuels Visual Studio Professional en acceptent deux (pendant un an à compter de l’activation de l’avantage). L’avantage doit être activé quand l’abonnement est actif.
@@ -54,7 +54,7 @@ Descriptions des niveaux de produit : développer les **plans de support non di
 > Pour activer votre compte de support dans une autre langue que l’anglais, choisissez votre pays dans [cette liste](https://support.microsoft.com/help/14084/activate-support-contract).
 
 ## <a name="how-to-submit-an-incident-using-your-benefit"></a>Comment signaler un incident à l’aide de votre avantage
-Après avoir configuré votre **ID de contrat** et votre **ID d’accès**, vous pouvez les utiliser pour signaler un incident de support technique [en ligne](http://support.microsoft.com/oas/) (connexion requise), par le biais du [portail Azure](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) ou en appelant le numéro du support technique de votre pays. Si vous signalez votre incident en ligne, vous pouvez demander à ce qu’un professionnel du support technique Microsoft vous rappelle.
+Après avoir configuré votre **ID de contrat** et votre **ID d’accès**, vous pouvez les utiliser pour signaler un incident de support technique [en ligne](https://support.microsoft.com/oas/) (connexion requise), par le biais du [portail Azure](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) ou en appelant le numéro du support technique de votre pays. Si vous signalez votre incident en ligne, vous pouvez demander à ce qu’un professionnel du support technique Microsoft vous rappelle.
 
 ### <a name="already-have-your-contract-id-and-access-id-associated-with-the-account-used-to-sign-in-to-submit-a-tech-support-incident-online"></a>Le compte que vous avez utilisé pour signaler un incident de support technique en ligne est déjà associé à un ID de contrat et un ID d’accès ?
 Quand vous signalez un incident en ligne, vous êtes d’abord invité à vous connecter. Connectez-vous à l’aide du compte associé à votre ID de contrat et votre ID d’accès. Votre avantage Plan de Support existant associé à votre compte apparaît à l’étape 3 du flux de support. Sélectionnez simplement ce plan et continuez à signaler votre problème. Vous pouvez signaler des incidents jusqu’à la limite indiquée sur le plan ou jusqu’à la date d’expiration du plan, selon la première éventualité. Si le nombre d’incidents restants indique « 0 » ou que votre plan arrive à expiration, celui-ci n’est plus actif.
@@ -107,9 +107,9 @@ Pour pouvoir utiliser votre avantage Support technique fourni dans l’abonnemen
 2. Dans le volet de navigation gauche, cliquez sur **Aide et support**
 3. Sous « Support », cliquez sur **Nouvelle demande de support**
 
-## <a name="eligibility"></a>Éligibilité
+## <a name="eligibility"></a>Eligibility
 
-| Niveau d'abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
+| Niveau d'abonnement                                                 |     Channels                                            | Avantage du                                                          | Renouvelable ?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | Licences en volume, Azure, Détail, NFR sélectif<sup>1</sup> | 4 incidents       |  Oui|
 | Visual Studio Enterprise avec GitHub Enterprise | LV | 4 incidents       |  Oui|
@@ -126,7 +126,7 @@ Pour pouvoir utiliser votre avantage Support technique fourni dans l’abonnemen
 
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 Veillez à activer ces avantages intéressants pour tirer le meilleur parti de votre abonnement Visual Studio :
 - [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)

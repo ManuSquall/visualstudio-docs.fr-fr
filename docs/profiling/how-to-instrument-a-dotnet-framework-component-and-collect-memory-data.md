@@ -1,21 +1,22 @@
 ---
-title: 'Ligne de commande du profileur : Instrumenter un composant client .NET, obtenir les données de mémoire'
+title: 'Ligne de commande du profileur : instrumenter le composant .NET du client, recevoir des données de mémoire'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d09cc46a-70f5-48f9-aa24-89913e67b359
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 33056deb51d11769d6d172ea7404e3e417f552e4
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
-ms.translationtype: HT
+ms.openlocfilehash: 76d216c4f112f88001b0314a23f22e689f729106
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032918"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74775899"
 ---
-# <a name="how-to-instrument-a-stand-alone-net-framework-component-and-collect-memory-data-with-the-profiler-by-using-the-command-line"></a>Procédure : Instrumenter un composant .NET Framework autonome et collecter des données de mémoire avec le profileur en utilisant la ligne de commande
+# <a name="how-to-instrument-a-stand-alone-net-framework-component-and-collect-memory-data-with-the-profiler-by-using-the-command-line"></a>Guide pratique pour instrumenter un composant .NET Framework autonome et collecter des données de mémoire avec le profileur en utilisant la ligne de commande
 Cet article explique comment utiliser les outils en ligne de commande des Outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour instrumenter un composant .NET Framework d’une application autonome, tel qu’un fichier .exe ou .dll, pour collecter des informations relatives à la mémoire à l’aide du profileur.
 
 > [!NOTE]
@@ -31,11 +32,11 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
 #### <a name="to-attach-the-profiler-to-a-running-net-framework-application"></a>Pour attacher le profileur à une application .NET Framework en cours d’exécution
 
-1. Ouvrez une fenêtre Invite de commandes.
+1. Ouvrez une fenêtre d'invite de commandes.
 
 2. Utilisez l’outil **VSInstr** pour générer une version instrumentée de l’application cible.
 
-3. Initialisez les variables d’environnement de profilage .NET Framework. Type :
+3. Initialisez les variables d’environnement de profilage .NET Framework. Type :
 
     **VSPerfClrEnv** { **/tracegc** &#124; **/tracegclife**}
 
@@ -46,7 +47,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
        |**/tracegc**|Active uniquement la collecte des données d’allocation de mémoire.|
        |**/tracegclife**|Active à la fois la collecte des données d’allocation de mémoire et des données de durée de vie des objets.|
 
-4. Démarrez le profileur. Type :
+4. Démarrer le profileur. Type :
 
     **VSPerfCmd /start:trace /output:** `OutputFile` [`Options`]
 
@@ -63,7 +64,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
    | [/globaloff](../profiling/globalon-and-globaloff.md) | Pour démarrer le profileur après avoir suspendu la collecte de données, ajoutez l’option **/globaloff** sur la ligne de commande **/start**. Utilisez **/globalon** pour reprendre le profilage. |
    | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | Spécifie le compteur de performances Windows dont les données doivent être collectées au cours du profilage. |
    | [/automark](../profiling/automark.md) **:** `Interval` | À utiliser avec **/wincounter** uniquement. Spécifie le nombre de millisecondes écoulées entre les événements de collecte du compteur de performances Windows. La valeur par défaut est de 500 ms. |
-   | [/counter](../profiling/counter.md) **:** `Config` | Collecte des informations à partir du compteur de performances du processeur spécifié dans la configuration. Les informations du compteur sont ajoutées aux données collectées à chaque événement de profilage. |
+   | [/counter](../profiling/counter.md) **:** `Config` | Collecte des informations à partir du compteur de performances du processeur spécifié dans la configuration. Les informations de compteur sont ajoutées aux données collectées à chaque événement de profilage. |
    | [events](../profiling/events-vsperfcmd.md) **:** `Config` | Spécifie l’événement du Suivi d’événements pour Windows (ETW) qui doit être collecté au cours du profilage. Les événements ETW sont collectés dans un fichier (.*etl*) distinct. |
 
 5. Démarrez l’application cible dans la fenêtre d’invite de commandes.
@@ -88,11 +89,11 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
 1. Fermez l’application cible.
 
-2. Fermez le profileur. Type :
+2. Fermez le profileur. Type :
 
      **VSPerfCmd /shutdown**
 
-3. (Facultatif) Effacez les variables d’environnement de profilage. Type :
+3. (Facultatif) Effacez les variables d’environnement de profilage. Type :
 
      **VSPerfCmd /off**
 

@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Collecter les données des compteurs Windows | Microsoft Docs'
+title: Guide pratique pour collecter les données des compteurs Windows | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,16 +12,17 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 730345edb42ff3d14608bdcce91bc7b97c4bb478
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c85187fd54d61fdf40956c8aee3c0a222d95a313
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62973849"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74776317"
 ---
-# <a name="how-to-collect-windows-counter-data"></a>Procédure : Collecter les données des compteurs Windows
+# <a name="how-to-collect-windows-counter-data"></a>Guide pratique pour collecter les données des compteurs Windows
 
 Les compteurs Windows sont des compteurs de performances système dont les données peuvent être collectées à intervalles réguliers pendant le profilage. Dans la vue Marques du rapport Outils de profilage, une ligne est étiquetée **AutoMark** pour chaque intervalle de collecte. Cette ligne contient des colonnes qui décrivent les valeurs de compteur de performances avec cet intervalle. Pour limiter l’analyse à une période située entre deux marques, sélectionnez les marques, cliquez avec le bouton droit, puis sélectionnez **Filtrer par** > **Marques** dans le menu contextuel.
 
@@ -36,7 +37,7 @@ Les compteurs Windows sont des compteurs de performances système dont les donn�
 
 3. Cochez la case **Collecter les compteurs Windows**.
 
-4. Dans la zone de texte **Intervalle de collecte (ms)**, tapez un intervalle.
+4. Dans la zone de texte **Intervalle de collecte (ms)** , tapez un intervalle.
 
 5. Sélectionnez une catégorie dans la liste déroulante **Catégorie de compteurs**.
 

@@ -6,14 +6,15 @@ ms.assetid: f81bde5c-3394-4b79-a315-c2f6491689b3
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c105f5176948271c832330f01d0d03d270e69a97
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 9834c10c58fb343de0707fa0b805586a6cdebcb3
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62995324"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778607"
 ---
 # <a name="launch"></a>Lancer
 L’option **Launch** démarre le profileur avec la méthode d’échantillonnage et démarre également l’application spécifiée.
@@ -26,17 +27,17 @@ L’option **Launch** démarre le profileur avec la méthode d’échantillonnag
 VSPerfCmd.exe /Launch:AppName [Options]
 ```
 
-#### <a name="parameters"></a>Paramètres
+#### <a name="parameters"></a>Parameters
  `AppName` Nom de l’application à lancer. Les chemins complets et partiels depuis le répertoire actif sont pris en charge.
 
 ## <a name="valid-options"></a>Options valides
  Les options de VSPerfCmd peuvent être combinées avec l’option **Launch** sur une même ligne de commande.
 
- **Start :** `Method` Initialise la session de profilage en ligne de commande, et définit la méthode de profilage spécifiée.
+ **Démarrer :** `Method` initialise la session de profileur de ligne de commande et définit la méthode de profilage spécifiée.
 
  **GlobalOn** et **GlobalOff** Reprend (**GlobalOn**) ou interrompt (**GlobalOff**) le profilage, mais ne met pas fin à la session de profilage.
 
- **ProcessOn:** `PID` et **ProcessOff** :`PID` Reprend (**ProcessOn**) ou interrompt (**ProcessOff**) le profilage pour le processus spécifié.
+ **ProcessOn :** `PID` et **ProcessOff**:`PID` reprend (**ProcessOn**) ou suspend (**ProcessOff**) le profilage pour le processus spécifié.
 
  **TargetCLR** Spécifie la version du CLR (Common Language Runtime) du .NET Framework à profiler quand plusieurs versions sont chargées dans une session de profilage. Par défaut, la première version chargée est profilée.
 
@@ -45,14 +46,14 @@ VSPerfCmd.exe /Launch:AppName [Options]
 
  **Console** Lance l’application en ligne de commande spécifiée dans une nouvelle fenêtre.
 
- **Args:** `ArgList` Spécifie la liste des arguments à passer à l’application.
+ **Args :** `ArgList` spécifie la liste des arguments à passer à l’application.
 
  **LineOff** Désactive la collecte de données de profilage au niveau des lignes.
 
 ## <a name="sampling-options"></a>Options d’échantillonnage
  Une des options d’intervalle d’échantillonnage suivantes peut être spécifiée sur la ligne de commande **Launch**. L’intervalle d’échantillonnage par défaut est de 10 000 000 de cycles d’horloge du processeur.
 
- **Timer**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[**:**`Events`]**Counter**[**:**`Name`,`Reload`,`FriendlyName`]**GC**[:**allocation**&#124;**lifetime**] Spécifie le nombre et le type de l’intervalle d’échantillonnage.
+ **Timer**[ **:** `Cycles`]**PF**[ **:** `Events`]**Sys**[ **:** `Events`]**Counter**[ **:** `Name`,`Reload`,`FriendlyName`]**GC**[:**allocation**&#124;**lifetime**] Spécifie le nombre et le type de l’intervalle d’échantillonnage.
 
 - **Timer** : échantillonne tous les `Cycles` cycles d’horloge du processeur sans interruption. Si `Cycles` n’est pas spécifié, la valeur utilisée est de 10 000 000 cycles.
 

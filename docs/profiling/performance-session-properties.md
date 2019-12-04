@@ -9,14 +9,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c8a5058d52684ec08e13641953c789c244f2fa9
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 1b3bafa976c8e57f468a3f3f59a3b6b19308fd1b
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72910148"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74772200"
 ---
 # <a name="performance-session-properties"></a>Propriétés d’une session de performance
 
@@ -32,7 +33,7 @@ La session de performance présente les pages de propriétés suivantes :
 
 Ces paramètres vous permettent de sélectionner la méthode de profilage, d’ajouter la collection d’objets .NET et les données de durée de vie, ainsi que de spécifier l’emplacement des rapports par défaut et les conventions d’affectation de noms.
 
-Pour plus d'informations, voir :
+Pour plus d'informations, consultez .
 
 [Guide pratique pour choisir des méthodes de collecte](../profiling/how-to-choose-collection-methods.md)
 
@@ -71,7 +72,7 @@ Pour plus d’informations, consultez [Collecte de données d’interaction de c
 
 Ces paramètres vous permettent de collecter les données de performance pour le code JScript dans les pages web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] et de spécifier les événements de **pré-instrumentation** et de **post-instrumentation** devant se produire avant ou après le processus d’instrumentation.
 
-Pour plus d'informations, voir :
+Pour plus d'informations, consultez .
 
 [Guide pratique pour profiler du code JavaScript dans des pages web](../profiling/how-to-profile-javascript-code-in-web-pages.md)
 
@@ -87,7 +88,7 @@ Pour plus d’informations, consultez [Guide pratique pour collecter les donnée
 
 Pendant le profilage, vous pouvez collecter des données à partir de fournisseurs de suivi d’événements. Vous pouvez afficher les données à l’aide de l’option `/calltrace` de l’outil en ligne de commande *VSPerfReport.exe*. Pour plus d’informations sur le suivi d’événements pour Windows (ETW), consultez [À propos du suivi d’événements](/windows/win32/etw/about-event-tracing).
 
-Pour plus d'informations, voir :
+Pour plus d'informations, consultez .
 
 [Guide pratique pour collecter les données de suivi d’événements pour Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)
 
@@ -103,7 +104,7 @@ Cette option vous permet de collecter les données des compteurs de l’Analyseu
 
 Ces paramètres vous permettent d’ajouter des options au processus d’instrumentation en spécifiant une ou plusieurs options de l’outil de profilage en ligne de commande [VSInstr](../profiling/vsinstr.md). Vous pouvez également spécifier la version du Common Runtime à profiler quand l’application utilise plusieurs versions.
 
-Pour plus d'informations, voir :
+Pour plus d'informations, consultez .
 
 [Guide pratique pour spécifier le runtime .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)
 

@@ -1,25 +1,26 @@
 ---
-title: 'Ligne de commande du profileur : Instrumenter une application ASP.NET statique, obtenir les données de mémoire'
+title: 'Ligne de commande du profileur : instrument static ASP.NET App, recevoir des données de mémoire'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ea1dcb7c-1dc3-49ff-9418-8795b5b3d3bc
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d57dad9c23bf56f30155bc7cd4d848a368780f51
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
-ms.translationtype: HT
+ms.openlocfilehash: 98fac9f01219cd398f1d5ec462e3f5165f4638d7
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67033001"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74775429"
 ---
-# <a name="how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Procédure : Instrumenter une application web ASP.NET compilée statiquement et collecter des données de mémoire en utilisant la ligne de commande du profileur
+# <a name="how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Guide pratique pour instrumenter une application web ASP.NET compilée statiquement et collecter des données de mémoire en utilisant la ligne de commande du profileur
 Cet article explique comment utiliser les outils en ligne de commande des Outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour instrumenter un composant web ou un site web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] précompilé, et pour collecter des données d’allocation de mémoire .NET, des données de durée de vie des objets et des données chronologiques détaillées.
 
 > [!NOTE]
-> Pour obtenir le chemin des outils de profilage, consultez [Spécifier le chemin des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes, ou l’ajouter à la commande.
+> Pour obtenir le chemin d’accès des outils de profilage, voir [Spécifier le chemin d’accès des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes, ou l’ajouter à la commande.
 
  Pour collecter des données d’un composant web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] avec la méthode d’instrumentation, vous utilisez l’outil [VSInstr.exe](../profiling/vsinstr.md) pour générer une version instrumentée du composant. Sur l’ordinateur qui héberge le composant, vous remplacez la version non instrumentée du composant par la version instrumentée. Vous utilisez ensuite l’outil [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) pour initialiser les variables d’environnement de profilage globales et redémarrer l’ordinateur hôte. Vous démarrez ensuite le profileur.
 
@@ -39,7 +40,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
     **VSPerfClrEnv /globaltracegc**
 
-    -ou-
+    \- ou -
 
     **VSPerfClrEnv /globaltracegclife**
 
@@ -51,7 +52,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
 5. Ouvrez une fenêtre d’invite de commandes.
 
-6. Démarrez le profileur. Dans une fenêtre d’invite de commandes, tapez :
+6. Démarrer le profileur. Dans une fenêtre d’invite de commandes, tapez :
 
     **VSPerfCmd /start:trace /output:** `OutputFile` [`Options`]
 
@@ -95,19 +96,19 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
 1. Fermez l’application web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].
 
-2. Fermez le processus de travail [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Type :
+2. Fermez le processus de travail [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Type :
 
     **IISReset /stop**
 
-3. Fermez le profileur. Type :
+3. Fermez le profileur. Type :
 
     **VSPerfCmd /shutdown**
 
-4. (Facultatif). Effacez les variables d’environnement de profilage. Type :
+4. (Facultatif). Effacez les variables d’environnement de profilage. Type :
 
     **VSPerfCmd /globaloff**
 
-5. Redémarrez l'ordinateur. Si nécessaire, redémarrez IIS. Type :
+5. Redémarrez l'ordinateur. Si nécessaire, redémarrez IIS. Type :
 
     **IISReset /start**
 
