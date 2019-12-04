@@ -10,20 +10,21 @@ ms.assetid: ae0c8b2f-17b2-4f3d-a834-aa2f6371753b
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 43b4ddedf68d082c8de50a38f759c5db0a594d00
-ms.sourcegitcommit: bb5425b9c6d8fd7135d9584c2963831754071347
+ms.openlocfilehash: d8e0218b01a162a3af8c35009bc8e733f5c386ef
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73024678"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777500"
 ---
 # <a name="da0038-high-rate-of-lock-contentions"></a>DA0038 : Taux élevé de conflits de verrou
 
 |||
 |-|-|
-|ID de règle|DA0038|
+|ID de la règle|DA0038|
 |Category|Utilisation du .NET Framework|
 |Méthode de profilage|Échantillonnage<br /><br /> Instrumentation<br /><br /> Mémoire .NET|
 |Message|Un taux élevé de conflits de verrou .NET se produit. Analysez la raison de ce conflit de verrou en exécutant un profil Concurrence.|

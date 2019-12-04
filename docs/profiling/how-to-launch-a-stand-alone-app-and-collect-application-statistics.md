@@ -1,21 +1,22 @@
 ---
-title: 'Ligne de commande du profileur : Lancer une application autonome, obtenir des statistiques d’application'
+title: 'Ligne de commande du profileur : lancer une application autonome, afficher les statistiques de l’application'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 52dcee2b-f178-4a76-bddc-e36c50bfcb78
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c2544e2a9951fe6738b85b3bf9b9c31e69f2eb9b
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: fb6228592115091dc538dbe59c227a180e75aa10
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261365"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74775413"
 ---
-# <a name="how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line"></a>Procédure : Lancer une application autonome avec le profileur et collecter des statistiques d’application en utilisant la ligne de commande
+# <a name="how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line"></a>Guide pratique pour lancer une application autonome avec le profileur et collecter des statistiques d’application en utilisant la ligne de commande
 Cette rubrique explique comment utiliser les outils en ligne de commande des outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour démarrer une application autonome (cliente) et collecter des statistiques de performances à l’aide de la méthode d’échantillonnage.
 
 > [!NOTE]
@@ -37,9 +38,9 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des out
 
 #### <a name="to-start-an-application-by-using-the-profiler"></a>Pour démarrer une application à l’aide du profileur
 
-1. Ouvrez une fenêtre Invite de commandes.
+1. Ouvrez une fenêtre d'invite de commandes.
 
-2. Démarrez le profileur. Type :
+2. Démarrer le profileur. Type :
 
     **VSPerfCmd /start:sample /output:** `OutputFile` [`Options`]
 
@@ -69,8 +70,8 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des out
    |Événement d'échantillon|Description|
    |------------------|-----------------|
    |[/timer](../profiling/timer.md) **:** `Interval`|Remplace l’intervalle d’échantillonnage par le nombre de cycles d’horloge ininterrompus spécifiés par `Interval`.|
-   |[/pf](../profiling/pf.md)[ **:** `Interval`]|Remplace l’événement d’échantillonnage par les erreurs de page. Si `Interval` est spécifié, définit le nombre d’erreurs de page entre chaque échantillon. La valeur par défaut est 10.|
-   |[/sys](../profiling/sys-vsperfcmd.md)[ **:** `Interval`]|Remplace l’événement d’échantillonnage par des appels système du processus vers le noyau du système d’exploitation (syscalls). Si `Interval` est spécifié, définit le nombre d’appels entre chaque échantillon. La valeur par défaut est 10.|
+   |[/pf](../profiling/pf.md)[ **:** `Interval`]|Remplace l’événement d’échantillonnage par les erreurs de page. Si `Interval` est spécifié, définit le nombre d’erreurs de page entre chaque échantillon. La valeur par défaut est 10.|
+   |[/sys](../profiling/sys-vsperfcmd.md)[ **:** `Interval`]|Remplace l’événement d’échantillonnage par des appels système du processus vers le noyau du système d’exploitation (syscalls). Si `Interval` est spécifié, définit le nombre d’appels entre chaque échantillon. La valeur par défaut est 10.|
    |[/counter](../profiling/counter.md) **:** `Config`|Remplace l’événement et l’intervalle d’échantillonnage par le compteur de performances du processeur et l’intervalle spécifié dans `Config`.|
 
 ## <a name="control-data-collection"></a>Contrôler la collecte des données
@@ -95,11 +96,11 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des out
 
     - Fermez l’application cible.
 
-         - ou -
+         \- ou -
 
     - Tapez **VSPerfCmd /detach**
 
-2. Fermez le profileur. Type :
+2. Fermez le profileur. Type :
 
      **VSPerfCmd**  [/shutdown](../profiling/shutdown.md)
 

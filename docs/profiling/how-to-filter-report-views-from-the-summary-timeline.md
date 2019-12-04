@@ -1,21 +1,22 @@
 ---
-title: 'Procédure : Filtrer les vues de rapport à partir de la chronologie Résumé | Microsoft Docs'
+title: Guide pratique pour filtrer les vues de rapport à partir de la chronologie Résumé | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 056b10a0-952b-4790-89e0-02aebe902e87
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 57065a7b258e8f9a2491332250cb38919bcb7910
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 191e54189677abc7d89d5f50064ceda6f2669f03
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62973797"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778945"
 ---
-# <a name="how-to-filter-report-views-from-the-summary-timeline"></a>Procédure : Filtrer les vues des rapports à partir de la chronologie Résumé
+# <a name="how-to-filter-report-views-from-the-summary-timeline"></a>Guide pratique pour filtrer les vues de rapport à partir de la chronologie Résumé
 Vous pouvez filtrer les données qui apparaissent dans les rapports de performances en spécifiant un intervalle de temps dans le graphique chronologique de la vue Résumé. Quand vous filtrez des rapports, le fichier des données de profilage est réanalysé de façon à inclure uniquement l’intervalle de temps que vous avez spécifié.
 
 ### <a name="to-filter-a-profiling-report-from-the-summary-timeline-graph"></a>Pour filtrer un rapport de profilage à partir du résumé de la chronologie

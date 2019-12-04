@@ -1,21 +1,22 @@
 ---
-title: 'Ligne de commande du profileur : Instrumenter une application ASP.NET dynamique, obtenir les données de mémoire'
+title: 'Ligne de commande du profileur : instrumenter l’application ASP.NET dynamique, recevoir des données de mémoire'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2cdd9903-39db-47e8-93dd-5e6a21bc3435
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: f784807a99c288663bee381bfc1e481dd9d5d8e4
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
-ms.translationtype: HT
+ms.openlocfilehash: 3378a45ebace942bb8696f2f67962365b5f57796
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67031993"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778880"
 ---
-# <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Procédure : Instrumenter une application web ASP.NET compilée dynamiquement et collecter des données de mémoire avec le profileur en ligne de commande
+# <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Guide pratique pour instrumenter une application web ASP.NET compilée dynamiquement et collecter des données de mémoire en utilisant la ligne de commande du profileur
 Cette rubrique explique comment utiliser les outils en ligne de commande des Outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] afin de collecter des données détaillées sur l’allocation de mémoire et la durée de vie des objets dans .NET pour une application web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] compilée dynamiquement à l’aide de la méthode de profilage par instrumentation.
 
 > [!NOTE]
@@ -31,15 +32,15 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des Out
 
 #### <a name="to-configure-the-aspnet-web-application-and-the-web-server"></a>Pour configurer l’application web ASP.NET et le serveur web
 
-1. Modifiez le fichier *web.config* de l’application cible. Voir [Guide pratique pour modifier des fichiers web.config pour instrumenter et profiler des applications web ASP.NET compilées dynamiquement](../profiling/how-to-modify-web-config-files-to-instrument-dynamically-compiled-aspnet-apps.md).
+1. Modifiez le fichier *web.config* de l’application cible. Consultez [Guide pratique pour modifier des fichiers web.config pour instrumenter et profiler des applications web ASP.NET compilées dynamiquement](../profiling/how-to-modify-web-config-files-to-instrument-dynamically-compiled-aspnet-apps.md).
 
 2. Ouvrez une fenêtre d’invite de commandes sur l’ordinateur qui héberge l’application web.
 
-3. Initialisez les variables d’environnement de profilage. Type :
+3. Initialisez les variables d’environnement de profilage. Type :
 
      **VSPerfClrEnv /globaltracegc**
 
-     -ou-
+     \- ou -
 
      **VSPerfClrEnv /globaltracegclife**
 
@@ -53,7 +54,7 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des Out
 
 #### <a name="to-profile-the-aspnet-web-application"></a>Pour profiler l’application web ASP.NET
 
-1. Démarrez le profileur. Type :
+1. Démarrer le profileur. Type :
 
     **VSPerfCmd** [/start](../profiling/start.md) **:trace** [/output](../profiling/output.md) **:** `OutputFile` [`Options`]
 
@@ -100,15 +101,15 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des Out
 
 1. Fermez l’application web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].
 
-2. Fermez le processus de travail [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] en réinitialisant Internet Information Services (IIS). Type :
+2. Fermez le processus de travail [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] en réinitialisant Internet Information Services (IIS). Type :
 
     **IISReset /stop**
 
-3. Fermez le profileur. Type :
+3. Fermez le profileur. Type :
 
     **VSPerfCmd** [/shutdown](../profiling/shutdown.md)
 
-4. Redémarrez IIS. Type :
+4. Redémarrez IIS. Type :
 
     **IISReset /start**
 
@@ -119,7 +120,7 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des Out
 
 1. Remplacez le fichier *web.config* par une copie du fichier d’origine.
 
-2. (Facultatif). Effacez les variables d’environnement de profilage. Type :
+2. (Facultatif). Effacez les variables d’environnement de profilage. Type :
 
      **VSPerfCmd /globaloff**
 

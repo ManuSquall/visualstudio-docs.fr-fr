@@ -13,14 +13,15 @@ ms.assetid: 01eb876e-c413-4516-977b-4f896929e8a6
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e6bead46c52ed2bc33572e0eacc6f3f0219e72e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ce16f65947fd69b5a54e564ba6bec061bc68e328
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970094"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777375"
 ---
 # <a name="net-memory-allocations-view"></a>Mode Allocations de mémoire .NET
 La vue Allocations liste les types qui ont été créés au cours de l’exécution du profilage. Chaque type est le nœud racine d’une arborescence des appels qui affiche les chemins d’exécution des fonctions qui ont entraîné les allocations du type.
@@ -40,11 +41,11 @@ La vue Allocations liste les types qui ont été créés au cours de l’exécut
 
 |Colonne|Description|
 |------------|-----------------|
-|**Name**|Nom du type alloué ou de la fonction allouée.|
+|**Nom**|Nom du type alloué ou de la fonction allouée.|
 |**ID du processus**|ID du processus (PID) de l'exécution du profilage.|
-|**Nom du processus**|Nom du processus.|
-|**Nom du module**|Nom du module qui contient le type ou la fonction.|
-|**Chemin du module**|Chemin du module qui contient le type ou la fonction.|
+|**Nom du processus**|nom du processus.|
+|**Nom de module**|Nom du module qui contient le type ou la fonction.|
+|**Chemin de module**|Chemin du module qui contient le type ou la fonction.|
 |**Fichier source**|Fichier source contenant la définition pour le type ou la fonction.|
 |**Numéro de ligne de fonction**|Numéro de ligne du début de cette définition de type ou de cette fonction dans le fichier source.|
 |**Niveau**|Indique si les données concernent un type ou une fonction.|

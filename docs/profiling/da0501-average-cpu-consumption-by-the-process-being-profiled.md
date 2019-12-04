@@ -1,5 +1,5 @@
 ---
-title: 'DA0501 : Consommation UC moyenne par le processus en cours de profilage. | Microsoft Docs'
+title: 'DA0501 : consommation processeur moyenne par le processus en cours de profilage. | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,24 +10,25 @@ ms.assetid: b01946b4-75e3-47d5-a1a1-cebfae66a3af
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f3b9ed2a0a27c3be992f6dadd2a6f18c1f8df9bd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d9835ad1965d1fd9a31113117eeb07ed62fd8ec4
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62936088"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777461"
 ---
-# <a name="da0501-average-cpu-consumption-by-the-process-being-profiled"></a>DA0501 : Consommation UC moyenne par le processus en cours de profilage
+# <a name="da0501-average-cpu-consumption-by-the-process-being-profiled"></a>DA0501 : consommation UC moyenne par le processus en cours de profilage.
 
 |||
 |-|-|
-|ID de règle|DA501|
+|ID de la règle|DA501|
 |Category|Analyse des ressources|
-|Méthode de profilage|Tous|
+|Méthode de profilage|Toutes les|
 |Message|Consommation UC moyenne par le processus en cours de profilage.|
-|Type de règle|Information|
+|Type de règle|Informations|
 
  Lorsque vous effectuez un profilage à l’aide de la méthode d’échantillonnage, de mémoire .NET ou de conflit des ressources, vous devez collecter au moins 10 échantillons pour déclencher cette règle.
 

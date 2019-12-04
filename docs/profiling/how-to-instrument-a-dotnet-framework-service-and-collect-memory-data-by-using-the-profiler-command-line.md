@@ -1,21 +1,22 @@
 ---
-title: 'Ligne de commande du profileur : Instrumenter service .NET, obtenir données de mémoire'
+title: 'Ligne de commande du profileur : instrument .NET Service, récupérer des données de mémoire'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2fa072fc-05fe-4420-99c0-51d2ea3ac4ce
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2b4e74b6f4e26b3ed797e8df3cbe3f6e33d74d06
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
-ms.translationtype: HT
+ms.openlocfilehash: 8697f1451e3d528ff27beb2467ff7758e04267cc
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032042"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74775494"
 ---
-# <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>Procédure : Instrumenter un service .NET Framework et collecter des données de mémoire en utilisant la ligne de commande du profileur
+# <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>Guide pratique pour instrumenter un service .NET Framework et collecter des données de mémoire en utilisant la ligne de commande du profileur
 Cet article explique comment utiliser les outils en ligne de commande des Outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour instrumenter un service .NET Framework et collecter des données d’utilisation de la mémoire. Vous pouvez collecter les données d’allocation de mémoire, ou bien collecter à la fois les données d’allocation de mémoire et les données de durée de vie des objets.
 
 > [!NOTE]
@@ -43,7 +44,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
 3. Utilisez le Gestionnaire de contrôle des services pour remplacer le fichier binaire d’origine par la version instrumentée. Vérifiez que le type de démarrage du service est défini sur Manuel.
 
-4. Initialisez les variables d’environnement de profilage. Type :
+4. Initialisez les variables d’environnement de profilage. Type :
 
     **VSPerfClrEnv** { **/globaltracegc** &#124; **/globaltracegclife**}
 
@@ -58,7 +59,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
 6. Ouvrez une fenêtre d’invite de commandes.
 
-7. Démarrez le profileur. Type :
+7. Démarrer le profileur. Type :
 
     **VSPerfCmd**  [/start](../profiling/start.md) **:trace**  [/output](../profiling/output.md) **:** `OutputFile` [`Options`]
 
@@ -77,14 +78,14 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
    | [/crosssession](../profiling/crosssession.md) | Active le profilage des processus dans d’autres sessions ouvertes. Cette option est nécessaire si l’application ASP.NET s’exécute dans une autre session. L’ID de session est répertoriée dans la colonne **ID de session**, sous l’onglet **Processus** du Gestionnaire des tâches de Windows. **/CS** peut être spécifié comme abréviation de **/crosssession**. |
    | [/waitstart](../profiling/waitstart.md)[ **:** `Interval`] | Spécifie le nombre de secondes à attendre que le profileur s’initialise avant qu’il retourne une erreur. Si `Interval` n’est pas spécifié, le profileur attend indéfiniment. Par défaut, **/start** retourne immédiatement. |
    | [/globaloff](../profiling/globalon-and-globaloff.md) | Pour démarrer le profileur après avoir suspendu la collecte de données, ajoutez l’option **/globaloff** sur la ligne de commande **/start**. Utilisez **/globalon** pour reprendre le profilage. |
-   | [/counter](../profiling/counter.md) **:** `Config` | Collecte des informations du compteur de performances du processeur spécifié dans la configuration. Les informations du compteur sont ajoutées aux données collectées à chaque événement de profilage. |
+   | [/counter](../profiling/counter.md) **:** `Config` | Collecte des informations à partir du compteur de performances du processeur spécifié dans la configuration. Les informations de compteur sont ajoutées aux données collectées à chaque événement de profilage. |
    | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | Spécifie le compteur de performances Windows dont les données doivent être collectées au cours du profilage. |
    | [/automark](../profiling/automark.md) **:** `Interval` | À utiliser avec **/wincounter** uniquement. Spécifie le nombre de millisecondes écoulées entre les événements de collecte du compteur de performances Windows. La valeur par défaut est de 500 ms. |
    | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | Spécifie l’événement du Suivi d’événements pour Windows (ETW) qui doit être collecté au cours du profilage. Les événements ETW sont collectés dans un fichier (.*etl*) distinct. |
 
 8. Si nécessaire, démarrez le service.
 
-9. Attachez le profileur au service. Type :
+9. Attachez le profileur au service. Type :
 
      **VSPerfCmd /attach:** `PID`&#124;`ProcessName`
 
@@ -110,11 +111,11 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
 1. Arrêtez le service à partir du Gestionnaire de contrôle des services.
 
-2. Fermez le profileur. Type :
+2. Fermez le profileur. Type :
 
      **VSPerfCmd /shutdown**
 
-3. Quand vous avez terminé le profilage, effacez les variables d’environnement de profilage. Type :
+3. Quand vous avez terminé le profilage, effacez les variables d’environnement de profilage. Type :
 
      **VSPerfClrEnv /globaloff**
 

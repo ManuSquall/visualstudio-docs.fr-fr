@@ -1,21 +1,22 @@
 ---
-title: 'Ligne de commande du profileur : Ouvrir une application client .NET Framework, obtenir les données de mémoire'
+title: 'Ligne de commande du profileur : Open Client .NET Framework App, recevoir des données de mémoire'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3bc53041-91b7-4ad0-8413-f8bf2c4b3f5e
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1a1d08656ea4234f277265c81b1bef4275de7625
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
-ms.translationtype: HT
+ms.openlocfilehash: c9ee0ae59fd32394e31acc75184d0e55aaae872d
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032952"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74775352"
 ---
-# <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line"></a>Procédure : Lancer une application .NET Framework autonome avec le profileur pour collecter des données de mémoire en ligne de commande
+# <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line"></a>Guide pratique pour lancer une application .NET Framework autonome avec le profileur pour collecter des données de mémoire en utilisant la ligne de commande
 Cette rubrique explique comment utiliser les outils en ligne de commande des outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour démarrer une application autonome (cliente) .NET Framework et collecter des données de mémoire.
 
  Une session de profilage est constituée de trois parties :
@@ -36,9 +37,9 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des out
 
 #### <a name="to-start-an-application-by-using-the-profiler"></a>Pour démarrer une application à l’aide du profileur
 
-1. Ouvrez une fenêtre Invite de commandes.
+1. Ouvrez une fenêtre d'invite de commandes.
 
-2. Démarrez le profileur. Type :
+2. Démarrer le profileur. Type :
 
     **VSPerfCmd /start:sample /output:** `OutputFile` [`Options`]
 
@@ -53,7 +54,7 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des out
    | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | Spécifie le compteur de performances Windows dont les données doivent être collectées au cours du profilage. |
    | [/automark](../profiling/automark.md) **:** `Interval` | À utiliser avec **/wincounter** uniquement. Spécifie le nombre de millisecondes écoulées entre les événements de collecte du compteur de performances Windows. La valeur par défaut est de 500 ms. |
 
-3. Démarrez l’application cible. Type :
+3. Démarrez l’application cible. Type :
 
     **VSPerfCmd**  [/launch](../profiling/launch.md) **:** `appName` **/gc:** {**allocation**&#124;**lifetime**}[`Options`]
 
@@ -97,11 +98,11 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des out
 
     - Fermez l’application cible.
 
-         -ou-
+         \- ou -
 
     - Tapez **VSPerfCmd /detach**
 
-2. Fermez le profileur. Type :
+2. Fermez le profileur. Type :
 
      **VSPerfCmd**  [/shutdown](../profiling/shutdown.md)
 

@@ -9,14 +9,15 @@ ms.assetid: 029d5ebb-e551-46b0-b64e-2c553d9dbb8e
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: fe79d236750c5f165468c95f7ffa320f83f86f18
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 70fda712a29ff07ee34a4ac76a06198cb5ead8a5
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436435"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74780024"
 ---
 # <a name="functions-view---sampling-data"></a>Fonctions, vue - données d’échantillonnage
 La vue de rapport Fonctions de la méthode de profilage par échantillonnage répertorie les fonctions échantillonnées pendant l’exécution du profilage.
@@ -27,20 +28,20 @@ La vue de rapport Fonctions de la méthode de profilage par échantillonnage ré
 |Colonne|Description|
 |------------|-----------------|
 |**ID du processus**|ID du processus (PID) de l'exécution du profilage.|
-|**Nom du processus**|Nom du processus.|
-|**Nom du module**|Nom du module qui contient la fonction.|
+|**Nom du processus**|nom du processus.|
+|**Nom de module**|Nom du module qui contient la fonction.|
 |**Chemin de module**|Chemin d’accès du module qui contient la fonction.|
 |**Fichier source**|Fichier source contenant la définition pour cette fonction.|
 |**Nom de la fonction**|Nom complet de la fonction.|
 |**Numéro de ligne de fonction**|Numéro de ligne du début de cette fonction dans le fichier source.|
 |**Adresse de la fonction**|Adresse de la fonction.|
 |**Échantillons inclusifs**|Nombre total d’échantillons collectés lorsque cette fonction était en cours d’exécution ; autrement dit, le nombre d’échantillons collectés lorsque cette fonction se trouvait sur la pile des appels. Ce nombre comprend les échantillons collectés lorsque les fonctions appelées par cette fonction étaient en cours d’exécution.|
-|**% des échantillons inclusifs**|Pourcentage de tous les échantillons de l’exécution du profilage qui étaient des échantillons inclusifs de cette fonction.|
+|**% d’échantillons inclusifs**|Pourcentage de tous les échantillons de l’exécution du profilage qui étaient des échantillons inclusifs de cette fonction.|
 |**Échantillons exclusifs**|Nombre total d’échantillons collectés lorsque le code du corps de cette fonction était exécuté ; autrement dit, lorsque cette fonction se trouvait en haut de la pile des appels. Ce nombre n’inclut pas les échantillons collectés dans les fonctions appelées par cette fonction.|
-|**% d’échantillons exclusifs**|Pourcentage de tous les échantillons de l’exécution du profilage qui étaient des échantillons exclusifs de cette fonction.|
+|**% d’échantillons exclusifs**|Pourcentage de tous les échantillons de l’exécution du profilage qui étaient des échantillons exclusifs de cette fonction.|
 
 ## <a name="see-also"></a>Voir aussi
-- [Guide pratique pour personnaliser les colonnes de vue des rapports](../profiling/how-to-customize-report-view-columns.md)
+- [Comment : personnaliser les colonnes de la vue rapport](../profiling/how-to-customize-report-view-columns.md)
 - [Fonctions, vue - instrumentation](../profiling/functions-view-dotnet-memory-instrumentation-data.md)
 - [Fonctions, vue - échantillonnage](../profiling/functions-view-dotnet-memory-sampling-data.md)
 - [Mode Fonctions](../profiling/functions-view-instrumentation-data.md)

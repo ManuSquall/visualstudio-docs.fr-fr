@@ -1,21 +1,22 @@
 ---
-title: 'Procédure : Définir les options de nom de fichier de données de profilage | Microsoft Docs'
+title: Guide pratique pour définir les options de nom de fichier de données de profilage | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d7a8d6b9-ab23-46fb-98ed-774781157860
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b83b0aa083ca115797c9dc1cd8345d397307177
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: cc42b63524a867c0893aa255180c740d03d4b5fe
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62539268"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778763"
 ---
-# <a name="how-to-set-performance-data-file-name-options"></a>Procédure : Définir les options de nom de fichier des données de performances
+# <a name="how-to-set-performance-data-file-name-options"></a>Guide pratique pour définir les options de nom de fichier des données de performance
 
 Par défaut, vous enregistrez un fichier de données de profilage (.*vsp*) à l’aide de la syntaxe suivante :
 
@@ -25,7 +26,7 @@ Vous pouvez modifier tout paramètre d’attribution de nom dans la page **Gén�
 
 |||
 |-|-|
-|*Chemin d’accès*|Répertoire qui contient le rapport. L’emplacement par défaut est le dossier de solution ou l’emplacement par défaut pour les projets et solutions de l’utilisateur.|
+|*Chemin*|Répertoire qui contient le rapport. L’emplacement par défaut est le dossier de solution ou l’emplacement par défaut pour les projets et solutions de l’utilisateur.|
 |*Fichier_VSP*|Nom du fichier de données de profilage. Le nom par défaut est le nom de la solution ou du fichier exécutable profilés.|
 |*AAMMJJ*|Horodatage qui affiche l’année, le mois et le jour auxquels les données de profilage ont été collectées.|
 |*(N)*|S’il existe plusieurs fichiers de données de profilage, un nombre incrémenté est ajouté entre parenthèses au nom du fichier.|

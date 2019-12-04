@@ -10,14 +10,15 @@ ms.assetid: a4ecfe1c-abbc-4fb3-9ab2-34de50486901
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 6328ea53c90b5a5a7ba50fde5a00e29fadacaaa7
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: e66432fd2f5d8b1532bece9d76e7dfc2a261e4b7
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924522"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74771589"
 ---
 # <a name="resource-details-view---contention-data"></a>Vue Informations sur les ressources - Données de conflit
 La vue Informations sur les ressources présente un graphique chronologique des événements bloquants provoqués par des conflits sur une ressource sélectionnée. Un événement bloquant se produit quand un thread est forcé d’interrompre l’exécution, car un autre thread a verrouillé l’accès à une ressource.
@@ -34,7 +35,7 @@ La vue Informations sur les ressources présente un graphique chronologique des 
 
 #### <a name="to-zoom-out-on-a-timeline"></a>Pour appliquer un zoom arrière sur une chronologie
 
-- Effectuez l’une des opérations suivantes :
+- Effectuez l'une des étapes suivantes :
 
   - Cliquez sur **Zoom arrière** pour revenir au niveau de zoom précédent.
 

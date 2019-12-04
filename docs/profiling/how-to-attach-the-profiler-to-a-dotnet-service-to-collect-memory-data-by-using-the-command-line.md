@@ -7,16 +7,17 @@ ms.assetid: aeac39af-ad99-479f-aa36-4104356ca512
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: fa054367ee8953c433512b6c4bcb0964637a1b74
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
+ms.openlocfilehash: 94ea4f38ccebc1015419e2254b06033fa17a09a8
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746299"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777016"
 ---
-# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-memory-data-by-using-the-command-line"></a>Procédure : Attacher le profileur à un service .NET et collecter des données de mémoire en utilisant la ligne de commande
+# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-memory-data-by-using-the-command-line"></a>Guide pratique pour attacher le profileur à un service .NET et collecter des données de mémoire en utilisant la ligne de commande
 Cet article explique comment utiliser les outils en ligne de commande des Outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour attacher le profileur à un service .NET Framework et collecter des données de mémoire. Vous pouvez collecter des données sur le nombre et la taille des allocations de mémoire, ainsi que des données sur la durée de vie des objets en mémoire.
 
 > [!NOTE]
@@ -39,7 +40,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
 2. Ouvrez une fenêtre d’invite de commandes.
 
-3. Initialisez les variables d’environnement de profilage. Type :
+3. Initialisez les variables d’environnement de profilage. Type :
 
     **VSPerfClrEnv** { **/globalsamplegc /globalsamplegclife**}[ **/samplelineoff**]
 
@@ -57,7 +58,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
 6. Ouvrez une fenêtre d’invite de commandes. Si nécessaire, ajoutez le chemin du profileur à la variable d’environnement PATH.
 
-7. Démarrez le profileur. Type :
+7. Démarrer le profileur. Type :
 
     **VSPerfCmd**  [/start](../profiling/start.md) **:sample**  [/output](../profiling/output.md) **:** `OutputFile` [`Options`]
 
@@ -80,13 +81,13 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
    | [/automark](../profiling/automark.md) **:** `Interval` | À utiliser avec **/wincounter** uniquement. Spécifie le nombre de millisecondes écoulées entre les événements de collecte du compteur de performances Windows. La valeur par défaut est de 500 ms. |
    | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | Spécifie l’événement du Suivi d’événements pour Windows (ETW) qui doit être collecté au cours du profilage. Les événements ETW sont collectés dans un fichier séparé (.etl). |
 
-8. Attachez le profileur au service. Type :
+8. Attachez le profileur au service. Type :
 
     **VSPerfCmd**  [/attach](../profiling/attach.md) **:** {`PID`&#124;`ProcName`} [[/targetclr](../profiling/targetclr.md) **:** `Version`]
 
    - Spécifiez l’ID de processus ou le nom de processus du service. Vous pouvez afficher les ID et les noms de processus de tous les processus en cours d’exécution dans le Gestionnaire des tâches de Windows.
 
-   - **targetclr** : `Version` spécifie la version du common language runtime (CLR) à profiler lorsque plusieurs versions du runtime sont chargées dans une application. Optionnel.
+   - **targetclr** : `Version` spécifie la version du common language runtime (CLR) à profiler lorsque plusieurs versions du runtime sont chargées dans une application. Option facultative.
 
 ## <a name="control-data-collection"></a>Contrôler la collecte des données
  Pendant l’exécution du service, vous pouvez utiliser les options de *VSPerfCmd.exe* pour démarrer et arrêter l’écriture des données dans le fichier de données du profileur. Le fait de pouvoir contrôler la collecte vous permet de collecter des données pour une phase spécifique de l’exécution du programme, comme le démarrage ou l’arrêt de l’application.
@@ -102,7 +103,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
     |**/attach:** {`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[:{`PID`&#124;`ProcName`}]|**/attach** commence à collecter des données pour le processus spécifié par l’ID ou le nom de processus. **/detach** arrête la collecte des données pour le processus spécifié, ou pour tous les processus si aucun processus n’est spécifié.|
 
 ## <a name="end-the-profiling-session"></a>Arrêter la session de profilage
- Pour mettre fin à une session de profilage, le profileur ne doit pas être en train de collecter des données. Vous pouvez arrêter la collecte des données d’une application profilée avec la méthode d’échantillonnage en arrêtant le service ou appelant l’option **VSPerfCmd /detach**. Vous appelez ensuite l’option **VSPerfCmd** [/shutdown](../profiling/shutdown.md) pour désactiver le profileur et fermer le fichier de données de profilage. La commande **VSPerfClrEnv /globaloff** efface les variables d’environnement de profilage. Toutefois, la configuration du système n’est pas réinitialisée tant que l’ordinateur n’a pas été redémarré.
+ Pour que vous puissiez mettre fin à une session de profilage, le profileur ne doit pas être en train de collecter des données. Vous pouvez arrêter la collecte des données d’une application profilée avec la méthode d’échantillonnage en arrêtant le service ou appelant l’option **VSPerfCmd /detach**. Vous appelez ensuite l’option **VSPerfCmd** [/shutdown](../profiling/shutdown.md) pour désactiver le profileur et fermer le fichier de données de profilage. La commande **VSPerfClrEnv /globaloff** efface les variables d’environnement de profilage. Toutefois, la configuration du système n’est pas réinitialisée tant que l’ordinateur n’a pas été redémarré.
 
 #### <a name="to-end-a-profiling-session"></a>Pour terminer une session de profilage
 
@@ -114,11 +115,11 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
     - Tapez **VSPerfCmd /detach**
 
-2. Fermez le profileur. Type :
+2. Fermez le profileur. Type :
 
      **VSPerfCmd /shutdown**
 
-3. (Facultatif) Effacez les variables d’environnement de profilage. Type :
+3. (Facultatif) Effacez les variables d’environnement de profilage. Type :
 
      **VSPerfClrEnv /globaloff**
 

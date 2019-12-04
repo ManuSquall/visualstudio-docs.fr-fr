@@ -6,19 +6,20 @@ ms.assetid: c3f5c363-be79-40b5-bfa7-db8d21378d8d
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: e78aa662d8bd90f3b2d11766d3a43f42dc1bbccf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 0871be57934b8a970efbca413fae4d1e3d90a625
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62994964"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74772131"
 ---
 # <a name="profile-aspnet-load-tests"></a>Profiler des tests de charge ASP.NET
 Vous pouvez collecter les données de profilage à partir de tests web [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] automatisés que vous exécutez sur les projets de sites web ASP.NET. Vous pouvez collecter des données d’échantillonnage et d’interaction de couche. Pour plus d’informations, consultez les rubriques suivantes :
 
-- [(NIB) Guide pratique pour créer une session de performance sur une application web à partir de l’éditeur de test de performances Web](https://msdn.microsoft.com/d14e0a27-33cc-4e4e-8792-fe03e50d51e1)
+- [(NIB) Comment : créer une session de performance pour un test de performances de site Web](https://msdn.microsoft.com/d14e0a27-33cc-4e4e-8792-fe03e50d51e1)
 
 - [Guide pratique pour configurer le profileur ASP.NET pour les tests de charge à l’aide de paramètres de test dans Visual Studio](https://msdn.microsoft.com/Library/6832fe39-04d5-4d94-8a18-3e2730bad423)
 

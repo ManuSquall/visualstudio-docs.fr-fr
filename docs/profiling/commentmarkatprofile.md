@@ -9,14 +9,15 @@ ms.assetid: 04294ca3-bf9c-4c76-86f1-898c2140de27
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e67f41bc4e30f0790e672a241dfe478a13ded9b7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 51028dce1d60c0d01c83cee509a1ed7321855437
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407563"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777840"
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
 La méthode `CommentMarkAtProfile` insère une valeur d’horodatage, une marque numérique et une chaîne de commentaire dans le fichier *.vsp*. La valeur d’horodatage peut être utilisée pour synchroniser des événements externes. Pour que la marque et le commentaire soient insérés, le profilage du thread qui contient la fonction CommentMarkAtProfile doit être activé.
@@ -30,7 +31,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
                                    LPCTSTR szComment);
 ```
 
-#### <a name="parameters"></a>Paramètres
+#### <a name="parameters"></a>Parameters
  `dnTimestamp`
 
  Entier de 64 bits qui représente une valeur d’horodatage.
@@ -44,7 +45,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
  Pointeur vers la chaîne de texte à insérer. La chaîne ne doit pas comporter plus de 256 caractères, y compris le terminateur NULL.
 
 ## <a name="property-valuereturn-value"></a>Valeur de propriété/valeur de retour
- La fonction indique la réussite ou l’échec en utilisant l’énumération **PROFILE_COMMAND_STATUS**. La valeur de retour peut être une des suivantes :
+ La fonction indique la réussite ou l’échec en utilisant l’énumération **PROFILE_COMMAND_STATUS**. La valeur renvoyée peut être l'une des suivantes :
 
 |Enumerator|Description|
 |----------------|-----------------|
@@ -56,7 +57,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
 |MARK_TEXTTOOLONG|La chaîne dépasse le maximum de 256 caractères. La chaîne de commentaire est tronquée, et la marque et le commentaire sont enregistrés.|
 |MARK_OK|MARK_OK est retourné pour indiquer la réussite.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  L’état du profilage du thread qui contient la fonction de profil de marque doit être Activé lors de l’insertion de marques et de commentaires avec la commande Mark ou des fonctions de l’API (CommentMarkAtProfile, CommentMarkProfile ou MarkProfile). Les marques de profil sont globales dans l’étendue. Par exemple, une marque de profil insérée dans un thread peut être utilisée pour marquer le début ou la fin d’un segment de données dans n’importe quel thread dans le fichier .vsp.
 
 > [!IMPORTANT]

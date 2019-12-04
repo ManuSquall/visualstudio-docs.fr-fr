@@ -6,14 +6,15 @@ ms.assetid: 6d73e21e-c04e-48ea-91cc-e517a5f2cd3f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ac35f506aadfcceebcbcf0dd4f6ec5b6dc33107
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: cd9748d88a9398792274c386a42bdaa3ce48ba70
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62552861"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777788"
 ---
 # <a name="create-basic-profiling-reports-from-the-command-line"></a>Créer des rapports de profilage de base à partir de la ligne de commande
 Cette rubrique décrit les commandes VSPerfReport de base qui génèrent des rapports de valeurs séparées par des virgules (.*csv*) à partir d’un fichier de données de profilage .*vsp* ou .*vsps*. Pour une description de toutes les options de rapport, consultez [VSPerfReport](../profiling/vsperfreport.md).
@@ -23,14 +24,14 @@ Cette rubrique décrit les commandes VSPerfReport de base qui génèrent des rap
 
  **VSPerfReport** `VSPFile` **/Summary:All** Génère tous les rapports disponibles pour le fichier .*vsp* ou .*vsps*.
 
- **VSPerfReport** `VSPFile` **/Summary:**`ReportType`[,`ReportType`...] Génère les types de rapport spécifiés.
+ **VSPerfReport** `VSPFile` **/Summary:** `ReportType`[,`ReportType`...] Génère les types de rapport spécifiés.
 
  **VSPerfReport** `VSPFile` **/CallTrace** Génère un rapport qui liste chaque événement de collecte de données. Instrumentation uniquement.
 
 ## <a name="summary-report-type-parameters"></a>Paramètres des types de rapport récapitulatifs
  Le tableau suivant décrit les rapports qui sont générés par l’option du type de rapport spécifié. Les colonnes d’un rapport dépendent de la méthode de profilage utilisée pour collecter les données.
 
-|Paramètre récapitulatif|Description du rapport|Informations de référence pour le rapport|
+|Paramètre récapitulatif|Description du rapport|Référence de rapport|
 |-----------------------|------------------------|----------------------|
 |**CallerCallee**|Représente les relations parents/enfants entre les fonctions.|-   [Données d’échantillonnage](../profiling/caller-callee-view-sampling-data.md)<br />-   [Données d’instrumentation](../profiling/caller-callee-view-instrumentation-data.md)<br />-   [Données d’échantillonnage de la mémoire .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)<br />-   [Données d’instrumentation de la mémoire .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)<br />-   [Données de contention](../profiling/caller-callee-view-contention-data.md)|
 |**Function**|Répertorie les données de profilage par fonction.|-   [Données d’échantillonnage](../profiling/functions-view-sampling-data.md)<br />-   [Données d’instrumentation](../profiling/functions-view-instrumentation-data.md)<br />-   [Données d’échantillonnage de la mémoire .NET](../profiling/functions-view-dotnet-memory-sampling-data.md)<br />-   [Données d’instrumentation de la mémoire .NET](../profiling/functions-view-dotnet-memory-instrumentation-data.md)<br />-   [Données de contention](../profiling/functions-view-contention-data.md)|

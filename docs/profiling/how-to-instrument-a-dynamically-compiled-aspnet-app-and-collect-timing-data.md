@@ -1,25 +1,26 @@
 ---
-title: 'Ligne de commande du profileur : Instrumenter une application ASP.NET dynamique, obtenir les données de minutage'
+title: 'Ligne de commande du profileur : instrumenter l’application ASP.NET dynamique, recevoir des données de minutage'
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 656cceea8cfc76d9c4865b5a2a792993e3f90f15
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
-ms.translationtype: HT
+ms.openlocfilehash: d8270c9948efe5f9c972f2e4f0eccb035c793953
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67031999"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74775455"
 ---
-# <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line"></a>Procédure : Instrumenter une application web ASP.NET compilée dynamiquement et collecter des données de temporisation détaillées avec le profileur en utilisant la ligne de commande
+# <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line"></a>Guide pratique pour instrumenter une application web ASP.NET compilée dynamiquement et collecter des données temporelles détaillées avec le profileur en utilisant la ligne de commande
 
 Cet article explique comment utiliser les outils en ligne de commande des Outils de profilage Visual Studio pour collecter des données de temporisation détaillées pour une application web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] compilée dynamiquement à l’aide de la méthode de profilage par instrumentation.
 
 > [!NOTE]
-> Pour obtenir le chemin des outils de profilage, consultez [Spécifier le chemin des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes, ou l’ajouter à la commande.
+> Pour obtenir le chemin d’accès des outils de profilage, voir [Spécifier le chemin d’accès des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes, ou l’ajouter à la commande.
 
 Pour collecter les données de performances d’une application web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], modifiez le fichier *web.config* de l’application cible pour permettre à l’outil [VSInstr.exe](../profiling/vsinstr.md) d’instrumenter les fichiers d’application compilés dynamiquement. Vous utilisez ensuite l’outil [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) pour définir les variables d’environnement appropriées sur le serveur web afin d’activer le profilage, puis redémarrez l’ordinateur.
 
@@ -27,11 +28,11 @@ Démarrez le profileur, puis exécutez l’application cible. Lorsque le profile
 
 ## <a name="configure-the-aspnet-web-application-and-the-web-server"></a>Pour configurer l’application web ASP.NET et le serveur web
 
-1. Modifiez le fichier *web.config* de l’application cible. Voir [Guide pratique pour modifier des fichiers Web.Config pour instrumenter et profiler des applications web ASP.NET compilées dynamiquement](../profiling/how-to-modify-web-config-files-to-instrument-dynamically-compiled-aspnet-apps.md).
+1. Modifiez le fichier *web.config* de l’application cible. Consultez [Guide pratique pour modifier des fichiers web.config pour instrumenter et profiler des applications web ASP.NET compilées dynamiquement](../profiling/how-to-modify-web-config-files-to-instrument-dynamically-compiled-aspnet-apps.md).
 
-2. Ouvrez une fenêtre Invite de commandes.
+2. Ouvrez une fenêtre d'invite de commandes.
 
-3. Initialisez les variables d’environnement de profilage. Type :
+3. Initialisez les variables d’environnement de profilage. Type :
 
      **VSPerfClrEnv /globaltraceon**
 
@@ -41,9 +42,9 @@ Démarrez le profileur, puis exécutez l’application cible. Lorsque le profile
 
 ## <a name="run-the-profiling-session"></a>Exécuter la session de profilage
 
-1. Ouvrez une fenêtre Invite de commandes.
+1. Ouvrez une fenêtre d'invite de commandes.
 
-2. Démarrez le profileur. Type :
+2. Démarrer le profileur. Type :
 
      **VSPerfCmd**  [/start](../profiling/start.md) **:trace**  [/output](../profiling/output.md) **:** `OutputFile` [`Options`]
 
@@ -88,15 +89,15 @@ Pour terminer une session de profilage, fermez l’application web [!INCLUDE[vst
 
 1. Fermez l’application web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].
 
-2. Fermez le processus de travail [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] en réinitialisant Internet Information Services (IIS). Type :
+2. Fermez le processus de travail [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] en réinitialisant Internet Information Services (IIS). Type :
 
      **IISReset /stop**
 
-3. Fermez le profileur. Type :
+3. Fermez le profileur. Type :
 
      **VSPerfCmd**  [/shutdown](../profiling/shutdown.md)
 
-4. Redémarrez IIS. Type :
+4. Redémarrez IIS. Type :
 
      **IISReset /start**
 
@@ -106,7 +107,7 @@ Une fois que vous avez terminé tout le profilage, remplacez le fichier *web.con
 
 1. Remplacez le fichier *web.config* par une copie du fichier d’origine.
 
-2. Effacez les variables d’environnement de profilage. Type :
+2. Effacez les variables d’environnement de profilage. Type :
 
      **VSPerfCmd /globaloff**
 
