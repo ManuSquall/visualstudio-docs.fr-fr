@@ -6,16 +6,16 @@ ms.author: ghogen
 ms.date: 11/20/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: a2f837ba264a12391786f584cf2698e19250fb2e
-ms.sourcegitcommit: 6336c387388707da94a91060dc3f34d4cfdc0a7b
+ms.openlocfilehash: e1b2f332563503dcb4d63faf301000db83eed5ea
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74549953"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706791"
 ---
-# <a name="build-and-debug-containerized-apps-using-visual-studio-or-the-command-line"></a>Générer et déboguer des applications en conteneur à l’aide de Visual Studio ou de la ligne de commande
+# <a name="how-visual-studio-builds-containerized-apps"></a>Comment Visual Studio génère des applications en conteneur
 
-Que vous génériez à partir de l’IDE de Visual Studio ou que vous configurez une génération à partir de la ligne de commande, vous devez savoir comment Visual Studio builds utilise fichier dockerfile pour générer vos projets.  Pour des raisons de performances, Visual Studio suit un processus spécial pour les applications en conteneur. Il est particulièrement important de comprendre comment Visual Studio génère vos projets lorsque vous personnalisez votre processus de génération en modifiant le fichier dockerfile.
+Que vous génériez à partir de l’IDE de Visual Studio ou que vous configurez une génération à partir de la ligne de commande, vous devez savoir comment Visual Studio utilise fichier dockerfile pour générer vos projets.  Pour des raisons de performances, Visual Studio suit un processus spécial pour les applications en conteneur. Il est particulièrement important de comprendre comment Visual Studio génère vos projets lorsque vous personnalisez votre processus de génération en modifiant le fichier dockerfile.
 
 Lorsque Visual Studio génère un projet qui n’utilise pas de conteneurs d’ancrage, il appelle MSBuild sur l’ordinateur local et génère les fichiers de sortie dans un dossier (généralement `bin`) dans votre dossier de solution local. Toutefois, pour un projet en conteneur, le processus de génération tient compte des instructions de fichier dockerfile pour la création de l’application en conteneur. Le fichier dockerfile utilisé par Visual Studio est divisé en plusieurs étapes. Ce processus s’appuie sur la fonctionnalité de *génération multiétape* de l’ancrage.
 
@@ -84,7 +84,7 @@ MSBuild MyProject.csproj /t:ContainerBuild /p:Configuration=Release
 
 Vous verrez une sortie similaire à ce que vous voyez dans la fenêtre **sortie** quand vous générez votre solution à partir de l’IDE de Visual Studio. Utilisez toujours `/p:Configuration=Release`, car dans les cas où Visual Studio utilise l’optimisation de génération multiétape, les résultats lors de la génération de la configuration **Debug** peuvent ne pas être les mêmes que prévu. Consultez [débogage](#debugging).
 
-Si vous utilisez un projet Docker Compose, utilisez la commande pour créer des images :
+Si vous utilisez un projet Docker Compose, utilisez cette commande pour générer des images :
 
 ```cmd
 msbuild /p:SolutionPath=<solution-name>.sln /p:Configuration=Release docker-compose.dcproj
@@ -99,7 +99,7 @@ Le *projet de préchauffage* fait référence à une série d’étapes qui se p
 - Tirez les images dans la première étape du fichier dockerfile (l’étape `base` dans la plupart des fichiers dockerfile).  
 - Générez le fichier dockerfile et démarrez le conteneur.
 
-Le préchauffage ne se produit qu’en mode **rapide** . par conséquent, le conteneur en cours d’exécution aura le volume de dossier d’application monté et toute modification apportée à l’application ne doit pas invalider le conteneur. Cela améliore considérablement les performances de débogage et réduit le temps d’attente pour les tâches longues, telles que l’extraction d’images volumineuses.
+Le préchauffage ne s’effectuera qu’en mode **rapide** , donc le conteneur en cours d’exécution aura le volume du dossier d’application monté. Cela signifie que toutes les modifications apportées à l’application n’invalideront pas le conteneur. Cela améliore considérablement les performances de débogage et réduit le temps d’attente pour les tâches longues, telles que l’extraction d’images volumineuses.
 
 ## <a name="volume-mapping"></a>Mappage de volume
 

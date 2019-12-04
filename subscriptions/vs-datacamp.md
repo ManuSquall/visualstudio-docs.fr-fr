@@ -6,12 +6,12 @@ manager: lank
 ms.date: 11/13/2019
 ms.topic: conceptual
 description: Découvrez l’abonnement DataCamp Training inclus dans certains abonnements Visual Studio.
-ms.openlocfilehash: ea889814373fa7c970e905bb4a845d5ca67c92e7
-ms.sourcegitcommit: 6f25855de9db455e6d38bc105057d2ed1e7454b9
+ms.openlocfilehash: 4ddfe064539a2ff572a7c89b89d618dff84f63a0
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199879"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706878"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Avantage DataCamp Training dans les abonnements Visual Studio
 Les abonnements Visual Studio éligibles incluent des abonnements à DataCamp.  Avec DataCamp, vous pouvez acquérir toutes les compétences qui vous sont nécessaires en science des données, confortablement devant votre navigateur. Vous devez choisir quand et ce que vous voulez apprendre. Sans aucun logiciel à installer ni aucune configuration matérielle requise spéciale, l’apprentissage de la science des données est plus facile que jamais.
@@ -50,27 +50,27 @@ Les abonnements Visual Studio éligibles incluent des abonnements à DataCamp.  
    > [!div class="mx-imgBorder"]
    > ![DataCamp, Prise en main](_img/vs-datacamp/vs-datacamp-getting-started.png)
 
-Vous pouvez arrêter à tout moment et reprendre votre formation à la prochaine session.  Accédez à [http://www.datacamp.com](http://www.datacamp.com), puis connectez-vous.  Vous voyez votre tableau de bord et vous pouvez reprendre votre formation là où vous l’avez interrompue. Cliquez simplement sur **Continue Track** (Continuer le parcours).
+Vous pouvez arrêter à tout moment et reprendre votre formation à la prochaine session.  Accédez à [https://www.datacamp.com](https://www.datacamp.com), puis connectez-vous.  Vous voyez votre tableau de bord et vous pouvez reprendre votre formation là où vous l’avez interrompue. Cliquez simplement sur **Continue Track** (Continuer le parcours).
 
 > [!div class="mx-imgBorder"]
-> ![DataCamp : Continuer la formation](_img/vs-datacamp/vs-datacamp-continue-training.png)
+> ![DataCamp poursuivre la formation](_img/vs-datacamp/vs-datacamp-continue-training.png)
 
 ## <a name="eligibility"></a>Eligibility
-| Niveau d'abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
+| Niveau d'abonnement                                                 |     Channels                                            | Avantage du                                                          | Renouvelable ?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | Licences en volume, Azure, Détail, | 3 mois       |  Non.  Disponible pour les nouveaux abonnés uniquement          |
-| Visual Studio Enterprise avec GitHub Enterprise   | LV | 3 mois       |  Non.  Disponible pour les nouveaux abonnés uniquement          |
-| Visual Studio Professional (Standard) | Licences en volume, Azure, Détail                                       | 3 mois                                                            |  Non.  Disponible pour les nouveaux abonnés uniquement           |
-| Visual Studio Professional avec GitHub Enterprise| LV | 3 mois                                                            |  Non.  Disponible pour les nouveaux abonnés uniquement           |
-| Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | 3 mois                                             |  Non.  Disponible pour les nouveaux abonnés uniquement           |
-| Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | 3 mois                                              |  Non.  Disponible pour les nouveaux abonnés uniquement           |
-| Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Non disponible  | N/A |
-| Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure | Non disponible | N/A |
+| Visual Studio Enterprise (Standard)   | Licences en volume, Azure, Détail, | 3 mois       |  No.  Disponible pour les nouveaux abonnés uniquement          |
+| Visual Studio Enterprise avec GitHub Enterprise   | LV | 3 mois       |  No.  Disponible pour les nouveaux abonnés uniquement          |
+| Visual Studio Professional (Standard) | Licences en volume, Azure, Détail                                       | 3 mois                                                            |  No.  Disponible pour les nouveaux abonnés uniquement           |
+| Visual Studio Professional avec GitHub Enterprise| LV | 3 mois                                                            |  No.  Disponible pour les nouveaux abonnés uniquement           |
+| Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | 3 mois                                             |  No.  Disponible pour les nouveaux abonnés uniquement           |
+| Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | 3 mois                                              |  No.  Disponible pour les nouveaux abonnés uniquement           |
+| Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Non disponible  | Non applicable |
+| Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure | Non disponible | Non applicable |
 
 <sup>1</sup>  *comprend : la revente interdite (NFR), FTE, MVP (Most Valuable Professional), les services Bureau à distance, les Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, imagine*
 
 > [!NOTE]
-> Microsoft n’offre plus les abonnements Visual Studio Professional annuel et Visual Studio Enterprise annuel dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à accéder à [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
+> Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à consulter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
 
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
 
