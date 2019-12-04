@@ -9,14 +9,15 @@ ms.assetid: 481f7579-f784-49ef-bb6c-2944e9d6ab42
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0da4ea0080bfbfb3e4192902f63f50a640b14c8a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 18cc473f517e1f2eb03b657a365a33e4e37ff23f
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62995369"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74774161"
 ---
 # <a name="instrumentation-method-data-views"></a>Vues de données de la méthode d'instrumentation
 Cette section contient des informations de référence pour les vues et rapports des fichiers de données de profilage générés à l’aide de la méthode d’instrumentation.
@@ -30,11 +31,11 @@ Cette section contient des informations de référence pour les vues et rapports
 
  Affiche les chemins d’exécution des fonctions dans une arborescence hiérarchique.
 
-- [Modules, mode](../profiling/modules-view-instrumentation-data.md)
+- [Vue Modules](../profiling/modules-view-instrumentation-data.md)
 
  Organise les données de profilage par module et répertorie les données de profilage pour les fonctions présentes dans le module.
 
-- [Vue Appelant/appelé - Données d’instrumentation](../profiling/caller-callee-view-instrumentation-data.md)
+- [Vue Appelant/Appelé - Données d’instrumentation](../profiling/caller-callee-view-instrumentation-data.md)
 
  Affiche les données de profilage pour les fonctions parentes et enfants d’une fonction sélectionnée.
 
@@ -42,7 +43,7 @@ Cette section contient des informations de référence pour les vues et rapports
 
  Répertorie les données de profilage par fonction.
 
-## <a name="reference"></a>Référence
+## <a name="reference"></a>Reference
 - [Vue Informations relatives à la fonction](../profiling/function-details-view.md)
 
  Affiche un graphique de la relation qui existe entre une fonction sélectionnée et les fonctions qui l’ont appelée et qui ont été appelées par celle-ci.

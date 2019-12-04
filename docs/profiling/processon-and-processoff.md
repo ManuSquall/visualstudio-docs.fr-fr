@@ -6,14 +6,15 @@ ms.assetid: d3dc6a7e-bc0f-48a6-a4ec-f386348bb296
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ab218f8dabb2b4360c1be17d809399a752f7cc2c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 62c16c2d578a38187b4a58958466597a5e4d297d
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972408"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778386"
 ---
 # <a name="processon-and-processoff"></a>ProcessOn et ProcessOff
 Les sous commandes **ProcessOff** et **ProcessOn** de VSPerfCmd.exe permettent de suspendre et de reprendre le profilage pour le processus spécifié dans une session de profilage en ligne de commande. **ProcessOff** arrête le profilage du processus et **ProcessOn** le démarre.
@@ -37,24 +38,24 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
 
 ```
 
-#### <a name="parameters"></a>Paramètres
+#### <a name="parameters"></a>Parameters
  `PID` Identificateur sous forme d’entier du processus à démarrer ou à arrêter. Les ID de processus sont répertoriés sous l’onglet **Processus** du Gestionnaire des tâches de Windows.
 
 ## <a name="required-subcommands"></a>Sous-commandes obligatoires
- Aucun.
+ Aucun
 
 ## <a name="valid-subcommands"></a>Sous-commandes valides
  Vous pouvez spécifier **ProcessOn** et **ProcessOff** sur des lignes de commande qui contiennent également les sous-commandes suivantes.
 
- **Start :** `Method` Initialise la session de profilage en ligne de commande, et définit la méthode de profilage spécifiée.
+ **Démarrer :** `Method` initialise la session de profilage en ligne de commande et définit la méthode de profilage spécifiée.
 
- **Launch :** `AppName` Démarre l’application spécifiée et commence le profilage à l’aide de la méthode d’échantillonnage.
+ **Launch :** `AppName` démarre l’application spécifiée et commence le profilage à l’aide de la méthode d’échantillonnage.
 
- **Attach :** `PID` Démarre le profilage du processus spécifié.
+ **Attacher :** `PID` commence le profilage du processus spécifié.
 
  **GlobalOff**&#124;**GlobalOn** Arrête ou démarre le profilage de tous les processus d’une session de profilage en ligne de commande.
 
- {**ThreadOff**&#124;**ThreadOn**}  **:**`TID` Arrête ou démarre le profilage pour le thread spécifié (méthode d’instrumentation uniquement).
+ {**ThreadOff**&#124;**ThreadOn**} **:** `TID` arrête ou démarre le profilage pour le thread spécifié (méthode d’instrumentation uniquement).
 
 ## <a name="example"></a>Exemple
  Dans cet exemple, la sous-commande **ProcessOff** est utilisé pour collecter des données de profilage pour le démarrage de l’application.

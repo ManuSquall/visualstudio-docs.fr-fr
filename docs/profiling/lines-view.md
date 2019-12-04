@@ -12,14 +12,15 @@ ms.assetid: 71ec0781-6031-4e17-af09-f50226018437
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: dbfb1780cfb8a64ebe20fc45f02992e60d7bb201
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 25dbb0beb600f7f043ae006e09ac48b9b64d613b
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000082"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74773979"
 ---
 # <a name="lines-view"></a>Lignes, vue
 La vue Lignes est disponible uniquement pour les données du profileur collectées à l’aide de la méthode d’échantillonnage. Elle n’est pas disponible pour les données collectées à l’aide de l’instrumentation.
@@ -43,6 +44,6 @@ La vue Lignes est disponible uniquement pour les données du profileur collecté
 - Le caractère de la ligne source au niveau duquel l’instruction se termine.
 
 ## <a name="see-also"></a>Voir aussi
-- [Lignes, vue](../profiling/lines-view-sampling-data.md)
+- [Vue Lignes](../profiling/lines-view-sampling-data.md)
 - [Lignes, vue - échantillonnage](../profiling/lines-view-dotnet-memory-sampling-data.md)
-- [Lignes, vue](../profiling/lines-view-contention-data.md)
+- [Vue Lignes](../profiling/lines-view-contention-data.md)

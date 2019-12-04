@@ -8,14 +8,15 @@ ms.assetid: 1761311d-c9d5-48f5-b1f8-b3605829940a
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: be5f748f4baa102bda16752904347954f97fea27
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 9ff4b4973bff395cea6b73219a2098543ee6819e
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62980198"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778256"
 ---
 # <a name="startprofile"></a>StartProfile
 La fonction `StartProfile` définit le compteur sur 1 (désactivé) pour le niveau de profilage spécifié.
@@ -28,7 +29,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StartProfile(
                         unsigned int dwId);
 ```
 
-#### <a name="parameters"></a>Paramètres
+#### <a name="parameters"></a>Parameters
  `Level`
 
  Indique le niveau du profil auquel la collecte des données de performances peut être appliquée. Les énumérateurs **PROFILE_CONTROL_LEVEL** suivants peuvent être utilisés pour indiquer un des trois niveaux auxquels la collecte des données de performances peut être appliquée :
@@ -44,7 +45,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StartProfile(
  Identificateur du processus ou du thread généré par le système.
 
 ## <a name="property-valuereturn-value"></a>Valeur de propriété/valeur de retour
- La fonction indique la réussite ou l’échec en utilisant l’énumération **PROFILE_COMMAND_STATUS**. La valeur de retour peut être une des suivantes :
+ La fonction indique la réussite ou l’échec en utilisant l’énumération **PROFILE_COMMAND_STATUS**. La valeur renvoyée peut être l'une des suivantes :
 
 |Enumerator|Description|
 |----------------|-----------------|
@@ -54,7 +55,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StartProfile(
 |PROFILE_ERROR_NOT_YET_IMPLEMENTED|L’appel de fonction du profilage, le niveau de profilage ou la combinaison d’appel et de niveau n’est pas encore implémenté.|
 |PROFILE_OK|L’appel a réussi.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  StartProfile et StopProfile contrôlent l’état Start/Stop pour le niveau de profilage. La valeur par défaut de Start/Stop est 1. La valeur initiale peut être changée dans le Registre. Chaque appel à StartProfile définit Start/Stop sur 1 ; chaque appel à StopProfile le définit sur 0.
 
  Quand Start/Stop est supérieur à 0, l’état de Start/Stop pour le niveau est ON. Quand il est inférieur ou égal à 0, l’état de Start/Stop est OFF.
@@ -67,7 +68,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StartProfile(
 ## <a name="function-information"></a>Informations sur la fonction
  En-tête : déclaré dans *VSPerf.h*
 
- Bibliothèque d’importation : *VSPerf.lib*
+ Bibliothèque d’importation : *VSPerf.lib*
 
 ## <a name="example"></a>Exemple
  L’exemple suivant illustre l’appel de la fonction StartProfile.

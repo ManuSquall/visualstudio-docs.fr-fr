@@ -6,14 +6,15 @@ ms.assetid: cdc0a094-a986-4629-bd1c-dd5fdca323dc
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: bf6bc8ae841ad8ba0d3fd376176bdff2332fb958
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 07ec6d636ec087386fdc9462ae09db55400957a9
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432001"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778412"
 ---
 # <a name="pf"></a>PF
 L’option **PF** de *VSPerfCmd.exe* définit l’événement de profilage qui est échantillonné lors des défauts de page. Elle peut changer le nombre de défauts de page dans un intervalle d’échantillonnage (la valeur par défaut est 10).
@@ -33,26 +34,26 @@ Vous pouvez utiliser **PF** seulement sur une ligne de commande qui contient aus
 VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /PF[:Events] [Options]
 ```
 
-#### <a name="parameters"></a>Paramètres
+#### <a name="parameters"></a>Parameters
  `Events` Valeur entière qui spécifie le nombre d’événements de défaut de page dans un intervalle d’échantillonnage. Si `Events` n’est pas spécifié, l’intervalle est défini sur 10.
 
 ## <a name="required-options"></a>Options obligatoires
  Vous pouvez spécifier **PF** seulement sur une ligne de commande qui contient une des options suivantes.
 
- **Launch :** `AppName` Démarre le profileur et l’application spécifiée par AppName.
+ **Launch :** `AppName` démarre le profileur et l’application spécifiés par AppName.
 
- **Attach :** `PID` Attache le profileur au processus spécifié par AppName.
+ **Attacher :** `PID` attache le profileur au processus spécifié par AppName.
 
 ## <a name="invalid-options"></a>Options non valides
  Vous ne pouvez pas spécifier les options suivantes sur la même ligne de commande que **PF**.
 
- **Timer**[**:**`Cycles`] Définit l’événement d’échantillonnage en fonction des cycles d’horloge du processeur et affecte éventuellement à l’intervalle d’échantillonnage la valeur `Cycles`. L’intervalle de Timer par défaut est 10,000,000.
+ **Timer**[ **:** `Cycles`] Définit l’événement d’échantillonnage en fonction des cycles d’horloge du processeur et affecte éventuellement à l’intervalle d’échantillonnage la valeur `Cycles`. L’intervalle de Timer par défaut est 10,000,000.
 
- **Sys**[**:**`Events`] Définit l’événement d’échantillonnage en fonction des appels de l’application profilée au noyau du système d’exploitation (syscalls), et affecte éventuellement à l’intervalle d’échantillonnage la valeur `Events`. L'intervalle Sys par défaut est 10.
+ **Sys**[ **:** `Events`] Définit l’événement d’échantillonnage en fonction des appels de l’application profilée au noyau du système d’exploitation (syscalls), et affecte éventuellement à l’intervalle d’échantillonnage la valeur `Events`. L'intervalle Sys par défaut est 10.
 
  **Counter:** `Name`[`,Reload`[`,FriendlyName`]] Définit l’événement d’échantillonnage en fonction du compteur de performances du CPU spécifié par `Name`, et affecte éventuellement à l’intervalle d’échantillonnage la valeur `Reload`.
 
- **GC**[**:**{**Allocation**&#124;**Lifetime**}] Collecte les données de mémoire .NET. Par défaut (**Allocation**), les données sont collectées à chaque événement d’allocation mémoire. Quand le paramètre **Lifetime** est spécifié, les données sont aussi collectées à chaque événement de garbage collection.
+ **GC**[ **:** {**Allocation**&#124;**Lifetime**}] Collecte les données de mémoire .NET. Par défaut (**Allocation**), les données sont collectées à chaque événement d’allocation mémoire. Quand le paramètre **Lifetime** est spécifié, les données sont aussi collectées à chaque événement de garbage collection.
 
 ## <a name="example"></a>Exemple
  Cet exemple montre comment définir l’événement d’échantillonnage du profilage sur les défauts de page, et comment définir l’intervalle d’échantillonnage sur 20 défauts de page.

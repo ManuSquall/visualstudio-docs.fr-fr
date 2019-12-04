@@ -2,7 +2,7 @@
 title: Nouveautés de Visual Studio 2019
 titleSuffix: ''
 description: Découvrez les nouvelles fonctionnalités de Visual Studio 2019.
-ms.date: 09/24/2019
+ms.date: 12/03/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,16 +15,16 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 5871e782ee84e49762d26a925380ad481e3623d1
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: eb4282941af9dff8619cb15510399b2e37e0c718
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211332"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777909"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Nouveautés de Visual Studio 2019
 
-**Mise à jour pour la [version 16,3](/visualstudio/releases/2019/release-notes/)**
+**Mise à jour pour la [version 16,4](/visualstudio/releases/2019/release-notes/)**
 
 >[!div class="button"]
 >[Télécharger Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
@@ -33,15 +33,15 @@ Avec Visual Studio 2019, vous allez bénéficier des meilleurs outils et servic
 
 Voici un récapitulatif général des nouveautés :
 
-* **[Développement](#develop)**  : Restez concentré et productif en profitant de performances améliorées, d’un nettoyage instantané du code et de meilleurs résultats de recherche.
-* **[Collaboration](#collaborate)**  : Collaborez naturellement via un workflow « Git-first », une édition et un débogage en temps réel, et des revues de code directement dans Visual Studio.
-* **[Déboguage](#debug)**  : Mettez en évidence des valeurs spécifiques pour y accéder, optimisez l’utilisation de la mémoire et prenez des captures instantanées automatiques de l’exécution de votre application.
+* **[Développement](#develop)** : restez concentré et productif grâce à des performances améliorées, au nettoyage de code instantané et à de meilleurs résultats de recherche.
+* **[Collaborez](#collaborate)** : Profitez de la collaboration naturelle via un flux de travail d’abord git, une modification et un débogage en temps réel et des révisions du code directement dans Visual Studio.
+* **[Débogage](#debug)** : mettez en surbrillance et accédez à des valeurs spécifiques, optimisez l’utilisation de la mémoire et effectuez des instantanés automatiques de l’exécution de votre application.
 
 Pour une liste complète de tout ce qui est nouveau dans cette version, consultez les [notes de publication](/visualstudio/releases/2019/release-notes/).
 
 ## <a name="develop"></a>Développer
 
-Afficher la vidéo suivante pour en savoir plus sur la façon dont vous pouvez gagner du temps avec les nouvelles fonctionnalités. <br><br>*Longueur de la vidéo : 3,00 minutes*
+Afficher la vidéo suivante pour en savoir plus sur la façon dont vous pouvez gagner du temps avec les nouvelles fonctionnalités. <br><br>*Longueur vidéo : 3,00 minutes*
 
 > [!VIDEO https://www.youtube.com/embed/n5sJ4EewKGk]
 
@@ -102,21 +102,21 @@ Avec le lancement de Visual Studio 2019, nous faisons de Visual Studio une appl
 
 Pour plus d’informations, consultez le billet de blog [Better multi-monitor experience with Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/a-better-multi-monitor-experience-with-visual-studio-2019/) (Une meilleure expérience sur plusieurs écrans avec Visual Studio 2019).
 
-### <a name="test-explorer"></a>Explorateur de tests
+### <a name="test-explorer"></a>Explorateur de test
 
-**Nouveautés dans 16.2** : Nous avons mis à jour l’Explorateur de tests pour fournir une meilleure gestion des grands jeux de test, un filtrage plus facile, des commandes plus détectables, des vues de sélection avec onglets et des colonnes personnalisables qui vous permettent d’affiner les informations des tests qui sont affichées.
+**Nouveauté de 16,2**: nous avons mis à jour l’Explorateur de tests pour fournir une meilleure gestion des jeux de test volumineux, un filtrage plus facile, des commandes plus détectables, des vues avec onglets de sélection et des colonnes personnalisables qui vous permettent d’affiner les informations de test affichées.
 
    ![Capture d’écran montrant les améliorations de l’interface utilisateur dans l’Explorateur de tests](media/vs-2019/test-explorer-ui.png)
 
 ### <a name="net-core"></a>.NET Core
 
-**Nouveauté de 16,3**: Nous avons inclus la prise en charge de .NET Core 3,0. Multiplateforme, open source&mdash;et entièrement pris en charge par Microsoft. 
+**Nouveauté de 16,3**: nous avons inclus la prise en charge de .net Core 3,0. Multiplateforme, open source&mdash;et entièrement pris en charge par Microsoft.
 
 Pour plus d’informations, consultez le billet de blog [annonçant .net Core 3,0](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0/) .
 
 ## <a name="collaborate"></a>Collaborer
 
-Afficher la vidéo suivante pour en savoir plus sur la façon dont vous pouvez travailler en équipe pour résoudre les problèmes. <br><br>*Longueur de la vidéo : 4,22 minutes*
+Afficher la vidéo suivante pour en savoir plus sur la façon dont vous pouvez travailler en équipe pour résoudre les problèmes. <br><br>*Longueur vidéo : 4,22 minutes*
 
 > [!VIDEO https://www.youtube.com/embed/dKLJsiK1QU8]
 
@@ -132,7 +132,7 @@ La fenêtre de démarrage vous propose plusieurs options pour vous aider à comm
 
 La fenêtre de démarrage comprend aussi des options pour ouvrir un projet ou une solution, ouvrir un dossier local ou créer un nouveau projet.
 
-Pour plus d’informations, consultez le billet de blog [Accéder au code : Comment nous avons conçu la nouvelle fenêtre de démarrage de Visual Studio](https://devblogs.microsoft.com/visualstudio/get-to-code-how-we-designed-the-new-visual-studio-start-window/).
+Pour plus d’informations, consultez le billet [de blog obtenir le code suivant : comment nous avons conçu le nouveau Visual Studio](https://devblogs.microsoft.com/visualstudio/get-to-code-how-we-designed-the-new-visual-studio-start-window/) .
 
 ### <a name="live-share"></a>Live Share
 
@@ -154,7 +154,7 @@ Pour plus d’informations, consultez le billet de blog [Code reviews using the 
 
 ## <a name="debug"></a>Débogage
 
-Afficher la vidéo suivante pour en savoir plus sur la façon dont vous pouvez vous concentrer sur le ciblage précis pendant le débogage. <br><br>*Longueur de la vidéo : 3,54 minutes*
+Afficher la vidéo suivante pour en savoir plus sur la façon dont vous pouvez vous concentrer sur le ciblage précis pendant le débogage. <br><br>*Longueur vidéo : 3,54 minutes*
 
 > [!VIDEO https://www.youtube.com/embed/hr72Fs8n_9c]
 
@@ -178,7 +178,7 @@ Vous pouvez également mettre en forme une valeur pour changer son apparence dan
 
    ![Nouvelle fenêtre Espion et fonctionnalité de mise en forme des valeurs dans Visual Studio 2019](media/search-watch-window.png)
 
-Pour plus d’informations, consultez le billet de blog [Enhanced in Visual Studio 2019: Search for Objects and Properties in the Watch, Autos, and Locals Windows](https://devblogs.microsoft.com/visualstudio/enhanced-in-visual-studio-2019-search-for-objects-and-properties-in-the-watch-autos-and-locals-windows/).
+Pour plus d’informations, consultez [améliorations dans Visual Studio 2019 : Rechercher des objets et des propriétés dans le billet de blog Windows Watch, auto et variables locales](https://devblogs.microsoft.com/visualstudio/enhanced-in-visual-studio-2019-search-for-objects-and-properties-in-the-watch-autos-and-locals-windows/) .
 
 ### <a name="snapshot-debugger"></a>Débogueur de capture instantanée
 
@@ -192,9 +192,15 @@ Pour plus d’informations, voir la page [Déboguer des applications Azure ASP.N
 
 ### <a name="microsoft-edge-insider-support"></a>Prise en charge de Microsoft Edge Insider
 
-**Nouveautés dans 16.2** : Vous pouvez définir un point d’arrêt dans une application JavaScript et démarrer une session de débogage en utilisant le navigateur [Microsoft Edge Insider](https://www.microsoftedgeinsider.com/). Dans ce cas, Visual Studio ouvre une nouvelle fenêtre de navigateur avec le débogage activé, que vous pouvez ensuite utiliser pour exécuter pas à pas le code JavaScript de l’application dans Visual Studio.
+**Nouveauté de 16,2**: vous pouvez définir un point d’arrêt dans une application JavaScript et démarrer une session de débogage à l’aide du navigateur [Microsoft Edge Insider](https://www.microsoftedgeinsider.com/) . Dans ce cas, Visual Studio ouvre une nouvelle fenêtre de navigateur avec le débogage activé, que vous pouvez ensuite utiliser pour exécuter pas à pas le code JavaScript de l’application dans Visual Studio.
 
    ![Capture d’écran montrant le rendu de code JavaScript dans un navigateur](media/vs-2019/edge-chromium-breakpoint.png)
+
+### <a name="pinnable-properties-tool"></a>Outil Propriétés regroupement
+
+**Nouveauté de 16,4**: il est maintenant plus facile de pouvoir identifier les objets par leurs propriétés lors du débogage avec le nouvel outil de propriétés regroupement. Il vous suffit de pointer le curseur sur une propriété que vous souhaitez afficher dans la fenêtre du débogueur des fenêtres espion, automatique et variables locales, de cliquer sur l’icône d’épingle et de voir immédiatement les informations que vous recherchez en haut de la fenêtre.
+
+   ![Une animation qui montre comment épingler des propriétés dans le débogueur Visual Studio à l’aide de l’outil Propriétés regroupement](media/vs-2019/debugger-pinnable-properties.gif)
 
 ## <a name="whats-next"></a>Étapes suivantes
 

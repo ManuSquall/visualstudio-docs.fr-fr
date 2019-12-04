@@ -10,14 +10,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 37025177c026d0b6578644ca5765a6878be984ea
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 9accd3d0ab5ff1f7a3084d5973cace08e66396b9
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62553001"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779547"
 ---
 # <a name="cpu-and-windows-counters"></a>Compteurs UC et Windows
 
@@ -89,13 +90,13 @@ Pour voir la liste des compteurs disponibles sur un ordinateur à partir de l’
 
 1. Dans l’Explorateur de performances, cliquez avec le bouton droit sur la session de performance, puis cliquez sur **Propriétés**.
 
-2. Effectuez l’une des opérations suivantes :
+2. Effectuez l'une des actions suivantes :
 
    - Cliquez sur **Échantillonnage**, puis sélectionnez **Compteur de performances** dans la liste des événements **Échantillon**. Les compteurs UC sont répertoriés sous **Compteurs de performances disponibles**.
 
       **Remarque** Cliquez sur **Annuler** pour revenir à la configuration d’échantillonnage précédente.
 
-     - ou -
+     \- ou -
 
    - Sélectionnez **Compteurs UC**, puis sélectionnez **Collecter les compteurs UC**. Les compteurs UC sont répertoriés sous **Compteurs disponibles**.
 
@@ -111,7 +112,7 @@ Pour voir la liste des compteurs disponibles sur un ordinateur à partir de l’
 
 4. Dans la liste **Catégorie de compteurs**, sélectionnez un groupe de compteurs. Le compteur Windows du groupe s’affiche dans la zone de liste.
 
-     **Remarque :** cliquez sur **Annuler** pour revenir à la configuration précédente de la collecte de compteur.
+     **Remarque** Cliquez sur **Annuler** pour revenir à la configuration de collecte de compteur précédente.
 
 ### <a name="command-line"></a>Ligne de commande
 
@@ -130,6 +131,6 @@ L’outil en ligne de commande [VSPerfCmd](../profiling/vsperfcmd.md) permet de 
 ## <a name="see-also"></a>Voir aussi
 
 [Vues d’ensemble](../profiling/overviews-performance-tools.md)
-[Guide pratique pour choisir des événements d’échantillonnage](../profiling/how-to-choose-sampling-events.md)
-[Guide pratique pour collecter les données des compteurs CPU](../profiling/how-to-collect-cpu-counter-data.md)
-[Guide pratique pour collecter les données des compteurs Windows](../profiling/how-to-collect-windows-counter-data.md)
+[Comment : choisir des événements d’échantillonnage](../profiling/how-to-choose-sampling-events.md)
+[procédure : collecter des données de compteur UC](../profiling/how-to-collect-cpu-counter-data.md)
+[Comment : collecter des données de compteurs Windows](../profiling/how-to-collect-windows-counter-data.md)

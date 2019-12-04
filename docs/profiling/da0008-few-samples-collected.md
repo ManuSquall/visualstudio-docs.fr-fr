@@ -11,24 +11,25 @@ ms.assetid: 8a5b78aa-7b3d-476c-a47d-abfaff3fae7c
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b33193f30edd19ef18ead5cf15f2e41d352f4d4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 15f8eeb370a3f1e61981e0e936704d33f6b44bbd
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62936616"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779439"
 ---
-# <a name="da0008-few-samples-collected"></a>DA0008 : Peu d’échantillons collectés
+# <a name="da0008-few-samples-collected"></a>DA0008 : Peu d'échantillons collectés
 
 |||
 |-|-|
-|ID de règle|DA0008|
+|ID de la règle|DA0008|
 |Category|Utilisation des outils de profilage|
 |Méthode de profilage|Échantillonnage|
 |Message|Un petit nombre d’échantillons a été collecté. Augmentez la durée d’exécution ou utilisez un taux d’échantillonnage plus rapide pour des résultats plus significatifs.|
-|Type de règle|Information|
+|Type de règle|Informations|
 
 ## <a name="cause"></a>Cause
  Seuls quelques échantillons ont été collectés pendant l’exécution du profilage.

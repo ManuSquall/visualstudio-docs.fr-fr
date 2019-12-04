@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Définir les autorisations | Microsoft Docs'
+title: Guide pratique pour définir les autorisations | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +11,17 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e40438b6b14414371adaba6cb7eafc6377ae1187
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c1ab7705c7ab46b07b08b707ce447f37c581036a
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62539183"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74774587"
 ---
-# <a name="how-to-set-permissions"></a>Procédure : Définir les autorisations
+# <a name="how-to-set-permissions"></a>Guide pratique pour définir les autorisations
 
 Cet article explique comment l’administrateur d’un ordinateur accorde les autorisations de sécurité requises pour le profilage à un utilisateur ou à un groupe qui ne dispose pas des autorisations d’administrateur sur cet ordinateur.
 
@@ -69,7 +70,7 @@ Les membres du groupe Utilisateurs peuvent exécuter les outils de profilage si 
 
 4. Cliquez sur le nom du compte de l’utilisateur dans la zone **Noms de groupes ou d’utilisateurs**.
 
-5. Dans la zone **Autorisations pour \<nom_utilisateur>**, cochez la case en regard de **Contrôle total**.
+5. Dans la zone **Autorisations pour \<nom_utilisateur>** , cochez la case en regard de **Contrôle total**.
 
 6. Cliquez sur **OK**.
 
@@ -85,7 +86,7 @@ Les membres du groupe Utilisateurs peuvent exécuter les outils de profilage si 
     <drive>:\Program Files\Microsoft Visual Studio 14\Team Tools\Performance Tools
     ```
 
-3. Exécutez la commande suivante :
+3. Exécutez la commande suivante : .
 
     ```cmd
     vsperfcmd /admin:driver,start /admin:service,start

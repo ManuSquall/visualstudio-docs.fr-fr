@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 0405488f6f456f22711498e81789881ffc5a0a8a
-ms.sourcegitcommit: 308a2bdbea81df78bffc3a01afce4ab13131fabc
+ms.openlocfilehash: 95693261cebf26bb740861795f7faf5c56503daf
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "73912998"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777931"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Déboguer une application JavaScript ou TypeScript dans Visual Studio
 
@@ -111,7 +111,7 @@ Pour attacher le débogueur de Visual Studio et atteindre des points d’arrêt 
 
     Pour rechercher le code spécifique dans un fichier compilé, utilisez **Ctrl**+**F** (**modifier** > **Rechercher et remplacer** > **recherche rapide**).
 
-    Pour le code côté client, pour atteindre un point d’arrêt dans un fichier de base de code ou un fichier JSX, vous devez généralement utiliser des [mappages de source](#generate_source_maps). Un mappage source doit être configuré correctement pour prendre en charge le débogage dans Visual Studio.
+    Pour le code côté client, pour atteindre un point d’arrêt dans un fichier de base de code, le fichier *. vue*ou jsx requiert généralement l’utilisation de [mappages de source](#generate_source_maps). Un mappage source doit être configuré correctement pour prendre en charge le débogage dans Visual Studio.
 
 2. Sélectionnez votre navigateur cible comme cible de débogage dans Visual Studio, puis appuyez sur **Ctrl**+**F5** (**Déboguer** > exécuter **sans débogage**) pour exécuter l’application dans le navigateur.
 
@@ -127,7 +127,6 @@ Pour attacher le débogueur de Visual Studio et atteindre des points d’arrêt 
     > À compter de Visual Studio 2017, une fois que vous avez attaché le processus la première fois en suivant ces étapes, vous pouvez le rattacher rapidement au même processus en choisissant **Déboguer** > **rattacher au processus**.
 
 4. Dans la boîte de dialogue **attacher au processus** , récupérez une liste filtrée des instances de navigateur auxquelles vous pouvez attacher.
-
     ::: moniker range=">=vs-2019"
     Dans Visual Studio 2019, choisissez le débogueur approprié pour votre navigateur cible, **JavaScript (chrome)** ou **JavaScript (Microsoft Edge-chrome)** dans le champ **attacher à** , tapez **chrome** ou **bord** dans la zone de filtre pour filtrer résultats de la recherche.
     ::: moniker-end
