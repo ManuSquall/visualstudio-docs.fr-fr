@@ -8,14 +8,15 @@ ms.assetid: 54dac8c8-c8ee-4023-af27-b25466e3a6ec
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d7640b4f846dd4fa5a9f8b16ead7019ca3ba821
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f53b51f9e78e2cb5d327abd3a79ebf2faa3a9204
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430939"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778568"
 ---
 # <a name="markprofile"></a>MarkProfile
 La méthode `MarkProfile` insère une marque de profil dans le fichier .*vsp*. Le profilage pour le thread contenant la fonction `MarkProfile` doit être activé pour la marque à insérer.
@@ -26,13 +27,13 @@ La méthode `MarkProfile` insère une marque de profil dans le fichier .*vsp*. L
 PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
 ```
 
-#### <a name="parameters"></a>Paramètres
+#### <a name="parameters"></a>Parameters
  `lMarker`
 
  Marqueur à insérer. La valeur du marqueur doit être supérieure ou égale à zéro.
 
 ## <a name="property-valuereturn-value"></a>Valeur de propriété/valeur de retour
- La fonction indique la réussite ou l’échec en utilisant l’énumération **PROFILE_COMMAND_STATUS**. La valeur de retour peut être une des suivantes :
+ La fonction indique la réussite ou l’échec en utilisant l’énumération **PROFILE_COMMAND_STATUS**. La valeur renvoyée peut être l'une des suivantes :
 
 |Enumerator|Description|
 |----------------|-----------------|
@@ -44,7 +45,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
 |MARK_TEXTTOOLONG|La chaîne dépasse le maximum de 256 caractères. La chaîne de commentaire est tronquée, et la marque et le commentaire sont enregistrés.|
 |MARK_OK|MARK_OK est retourné pour indiquer la réussite.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  La valeur de la marque est insérée dans le fichier .*vsp* chaque fois que le code s’exécute si le thread contenant la fonction MarkProfile est profilé. Vous pouvez appeler MarkProfile plusieurs fois.
 
  Les marques de profil sont globales dans l’étendue. Par exemple, une marque de profil insérée dans un thread peut être utilisée pour marquer le début ou la fin d’un segment de données dans n’importe quel thread du fichier .*vsp*.
@@ -60,7 +61,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
 ## <a name="function-information"></a>Informations sur la fonction
  En-tête : déclaré dans *VSPerf.h*
 
- Bibliothèque d’importation : *VSPerf.lib*
+ Bibliothèque d’importation : *VSPerf.lib*
 
 ## <a name="example"></a>Exemple
  Le code suivant illustre la fonction MarkProfile.
