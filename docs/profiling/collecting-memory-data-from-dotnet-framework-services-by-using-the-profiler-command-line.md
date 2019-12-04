@@ -1,19 +1,20 @@
 ---
-title: 'Ligne de commande du profileur : Obtenir des données de mémoire de services .NET Framework'
+title: 'Ligne de commande du profileur : récupération des données de mémoire .NET Framework services'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: b1361333-8a09-4a65-87a9-4ac94ceb2d9f
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: a4526bc9b4dde74488d3997bf18006454383cb06
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
+ms.openlocfilehash: 25f61b68249dfab7faf04c5e0460800947275db4
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747815"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779465"
 ---
 # <a name="collect-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>Collecter des données de mémoire de services .NET Framework en utilisant la ligne de commande du profileur
 Cette section décrit les procédures et les options de collecte des données d’allocation de mémoire et de durée de vie des objets pour un service .NET Framework utilisant la méthode d’échantillonnage à partir de la ligne de commande.
@@ -46,5 +47,5 @@ Cette section décrit les procédures et les options de collecte des données d�
 ### <a name="analyze-net-memory-data-views-and-reports"></a>Analyser des vues et des rapports de données de mémoire .NET
 - [Vues des données de la mémoire .NET](../profiling/dotnet-memory-data-views.md)
 
-## <a name="reference"></a>Référence
+## <a name="reference"></a>Reference
 - [Informations de référence sur les outils de profilage de ligne de commande](../profiling/command-line-profiling-tools-reference.md)

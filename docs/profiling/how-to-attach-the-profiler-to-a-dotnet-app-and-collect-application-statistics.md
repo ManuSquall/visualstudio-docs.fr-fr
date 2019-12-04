@@ -7,16 +7,17 @@ ms.assetid: b62fcbc1-791f-474e-890a-a6c332e0c9ea
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: c23fe867c3825958f1e2f1c3b7fedc3dd15d840e
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: 9084f2d1dd784172735c66d38da785dffb74d82c
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261603"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779179"
 ---
-# <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>Procédure : Attacher le profileur à une application .NET Framework autonome et collecter des statistiques d’application en utilisant la ligne de commande
+# <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>Guide pratique pour attacher le profileur à une application .NET Framework autonome et collecter des statistiques d’application en utilisant la ligne de commande
 Cet article explique comment utiliser les outils en ligne de commande des Outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour attacher le profileur à une application .NET Framework autonome (cliente) en cours d’exécution et collecter des statistiques de performances à l’aide de la méthode d’échantillonnage.
 
 > [!NOTE]
@@ -24,7 +25,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 >
 > Pour obtenir le chemin d’accès des outils de profilage, voir [Spécifier le chemin d’accès des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes, ou l’ajouter à la commande.
 >
-> Pour ajouter des données d’interaction de couche à une exécution de profilage, vous devez utiliser des procédures spécifiques avec les outils de profilage en ligne de commande. Consultez [Collecter les données d’interaction de couche](../profiling/adding-tier-interaction-data-from-the-command-line.md).
+> L’ajout de données d’interaction de couche à une exécution de profilage nécessite que vous utilisiez des procédures spécifiques pour les outils de profilage en ligne de commande. Consultez [Collecter les données d’interaction de couche](../profiling/adding-tier-interaction-data-from-the-command-line.md).
 
  Pour collecter les données de performances à partir d’une application .NET Framework, les variables d’environnement appropriées doivent être initialisées avant le démarrage de l’application cible. Quand le profileur est attaché à l’application, vous pouvez suspendre et reprendre la collecte des données.
 
@@ -34,15 +35,15 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
 #### <a name="to-attach-the-profiler-to-a-running-net-framework-application"></a>Pour attacher le profileur à une application .NET Framework en cours d’exécution
 
-1. Ouvrez une fenêtre Invite de commandes.
+1. Ouvrez une fenêtre d'invite de commandes.
 
-2. Initialisez les variables d’environnement de profilage. Type :
+2. Initialisez les variables d’environnement de profilage. Type :
 
     **VSPerfClrEnv /sampleon** [ **/samplelineoff**]
 
    - L’option **/samplelineoff** désactive la collecte des données de ligne de code source.
 
-3. Démarrez le profileur. Type :
+3. Démarrer le profileur. Type :
 
     **VSPerfCmd /start:sample /output:** `OutputFile` [`Options`]
 
@@ -62,22 +63,22 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
 4. Si nécessaire, démarrez l’application cible de la façon habituelle.
 
-5. Attachez le profileur à l’application cible. Type :
+5. Attachez le profileur à l’application cible. Type :
 
     **VSPerfCmd /attach:** {`PID`&#124;`ProcessName`} [`Sample Event`] [ **/targetclr:** `Version`]
 
    - `PID` spécifie l’ID de processus de l’application cible. `ProcessName` spécifie le nom du processus. Notez que si vous spécifiez `ProcessName` et que plusieurs processus de même nom sont en cours d’exécution, les résultats sont imprévisibles. Vous pouvez afficher les ID de processus de tous les processus en cours d’exécution dans le gestionnaire des tâches de Windows.
 
-   - [/targetclr](../profiling/targetclr.md) **:** `Version` spécifie la version du common language runtime (CLR) à profiler lorsque plusieurs versions du runtime sont chargées dans une application. Optionnel.
+   - [/targetclr](../profiling/targetclr.md) **:** `Version` spécifie la version du common language runtime (CLR) à profiler lorsque plusieurs versions du runtime sont chargées dans une application. Option facultative.
 
-   - Par défaut, les données de performances sont échantillonnées tous les 10 000 000 cycles d’horloge ininterrompus du processeur. Cela correspond environ à une fois toutes les 10 secondes sur un processeur de 1 GH. Vous pouvez spécifier l’une des options suivantes pour modifier l’intervalle du cycle d’horloge ou pour spécifier un événement d’échantillonnage différent. [/targetclr](../profiling/targetclr.md) **:** `Version` spécifie la version du CLR à profiler lorsque plusieurs versions du runtime sont chargées dans une application. Optionnel.
+   - Par défaut, les données de performances sont échantillonnées tous les 10 000 000 cycles d’horloge ininterrompus du processeur. Cela correspond environ à une fois toutes les 10 secondes sur un processeur de 1 GH. Vous pouvez spécifier l’une des options suivantes pour modifier l’intervalle du cycle d’horloge ou pour spécifier un événement d’échantillonnage différent. [/targetclr](../profiling/targetclr.md) **:** `Version` spécifie la version du CLR à profiler lorsque plusieurs versions du runtime sont chargées dans une application. Option facultative.
 
    |||
    |-|-|
    |Événement d'échantillon|Description|
    |[/timer](../profiling/timer.md) **:** `Interval`|Remplace l’intervalle d’échantillonnage par le nombre de cycles d’horloge ininterrompus spécifiés par `Interval`.|
-   |[/pf](../profiling/pf.md) [ **:** `Interval`]|Remplace l’événement d’échantillonnage par les erreurs de page. Si `Interval` est spécifié, définit le nombre d’erreurs de page entre chaque échantillon. La valeur par défaut est 10.|
-   |[/sys](../profiling/sys-vsperfcmd.md) [ **:** `Interval`]|Remplace l’événement d’échantillonnage par des appels système du processus vers le noyau du système d’exploitation (syscalls). Si `Interval` est spécifié, définit le nombre d’appels entre chaque échantillon. La valeur par défaut est 10.|
+   |[/pf](../profiling/pf.md) [ **:** `Interval`]|Remplace l’événement d’échantillonnage par les erreurs de page. Si `Interval` est spécifié, définit le nombre d’erreurs de page entre chaque échantillon. La valeur par défaut est 10.|
+   |[/sys](../profiling/sys-vsperfcmd.md) [ **:** `Interval`]|Remplace l’événement d’échantillonnage par des appels système du processus vers le noyau du système d’exploitation (syscalls). Si `Interval` est spécifié, définit le nombre d’appels entre chaque échantillon. La valeur par défaut est 10.|
    |[/counter](../profiling/counter.md) **:** `Config`|Remplace l’événement et l’intervalle d’échantillonnage par le compteur de performances du processeur et l’intervalle spécifié dans `Config`.|
 
 ## <a name="control-data-collection"></a>Contrôler la collecte des données
@@ -102,15 +103,15 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
     - Tapez **VSPerfCmd /detach**
 
-         - ou -
+         \- ou -
 
     - Fermez l’application cible.
 
-2. Fermez le profileur. Type :
+2. Fermez le profileur. Type :
 
      **VSPerfCmd**  [/shutdown](../profiling/shutdown.md)
 
-3. (Facultatif) Effacez les variables d’environnement de profilage. Type :
+3. (Facultatif) Effacez les variables d’environnement de profilage. Type :
 
      **VSPerfClrEnv /off**
 

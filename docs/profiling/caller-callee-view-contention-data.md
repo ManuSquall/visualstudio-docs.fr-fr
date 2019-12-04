@@ -8,14 +8,15 @@ ms.assetid: a18a1b1b-9b39-43c7-b1f3-708fd20376f6
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d14296ab4218cbcab0d508f47b0f38f3c50a94f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 083386a808f7b91a18b3ea685ae657118c723978
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777331"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779738"
 ---
 # <a name="callercallee-view----contention-data"></a>Vue Appelant/Appelé - Données de conflit
 La vue Appelant/Appelé affiche des données de conflit pour la fonction sélectionnée, ainsi que pour ses fonctions parentes et enfants. La vue Appelant/Appelé comprend trois grilles.
@@ -32,7 +33,7 @@ La vue Appelant/Appelé affiche des données de conflit pour la fonction sélect
 |**Temps bloqué exclusif**|-   Pour la fonction active, durée pendant laquelle cette fonction n’a pas pu exécuter de code dans le corps de la fonction. Le temps bloqué dans les fonctions appelées par la fonction n’est pas inclus.<br />-   Pour une fonction appelante, partie du temps bloqué exclusif de la fonction active qui s’est produit quand cette fonction a appelé la fonction active.<br />-   Pour une fonction appelée, durée pendant laquelle cette fonction n’a pas pu exécuter son propre code quand cette fonction a été appelée par la fonction active. Le temps bloqué dans les fonctions enfants appelées par la fonction appelée n’est pas inclus.|
 |**% de temps bloqué exclusif**|Pourcentage de tout le temps bloqué au cours de l’exécution de profilage qui était du temps bloqué exclusif pour cette fonction dans ce contexte.|
 |**Conflits exclusifs**|-   Pour la fonction active, nombre de fois où cette fonction n’a pas pu exécuter de code dans le corps de la fonction. Les conflits qui se sont produits dans les fonctions appelées par la fonction ne sont pas inclus.<br />-   Pour une fonction appelante, nombre de conflits exclusifs de la fonction active qui se sont produits quand cette fonction a appelé la fonction active.<br />-   Pour une fonction appelée, nombre de fois où cette fonction n’a pas pu exécuter de code dans le corps de la fonction quand cette fonction a été appelée par la fonction active. Les conflits qui se sont produits dans les fonctions appelées par la fonction appelante ne sont pas inclus.|
-|**% de conflits exclusifs**|Pourcentage de tous les conflits au cours de l’exécution de profilage qui étaient des conflits exclusifs pour cette fonction dans ce contexte.|
+|**% de conflits exclusifs**|Pourcentage de tous les conflits au cours de l’exécution de profilage qui étaient des conflits exclusifs pour cette fonction dans ce contexte.|
 |**Adresse de la fonction**|Adresse de la fonction ou jeton.|
 |**Nom de la fonction**|Nom complet de la fonction.|
 |**Temps bloqué inclusif**|-   Pour la fonction active, durée pendant laquelle cette fonction ou l’une des fonctions appelées par cette fonction n’a pas pu s’exécuter. Le temps bloqué dans les fonctions qui ont été appelées par la fonction active est inclus.<br />-   Pour une fonction appelante, partie du temps bloqué inclusif de la fonction active qui s’est produit quand cette fonction a appelé la fonction active.<br />-   Pour une fonction appelée, durée pendant laquelle cette fonction ou l’une des fonctions appelées par la fonction n’a pas pu s’exécuter quand cette fonction a été appelée par la fonction active. Le temps bloqué dans les fonctions qui ont été appelées par la fonction appelée est inclus.|
@@ -43,12 +44,12 @@ La vue Appelant/Appelé affiche des données de conflit pour la fonction sélect
 |**Nom de module**|Nom du module qui contient la fonction.|
 |**Chemin de module**|Chemin d’accès du module qui contient la fonction.|
 |**ID du processus**|ID du processus (PID) dans lequel les conflits se sont produits.|
-|**Nom du processus**|Nom du processus.|
+|**Nom du processus**|nom du processus.|
 |**Nom de fonction racine**|Nom de la fonction active. Uniquement dans les rapports en ligne de commande [VSPerfReport](../profiling/vsperfreport.md).|
 |**Fichier source**|Fichier source contenant la définition pour cette fonction.|
 
 ## <a name="see-also"></a>Voir aussi
-- [Guide pratique pour personnaliser les colonnes de vue des rapports](../profiling/how-to-customize-report-view-columns.md)
+- [Comment : personnaliser les colonnes de la vue rapport](../profiling/how-to-customize-report-view-columns.md)
 - [Vue Appelant/Appelé](../profiling/caller-callee-view.md)
 - [Vue Appelant/Appelé - Données d’échantillonnage](../profiling/caller-callee-view-sampling-data.md)
 - [Vue Appelant/Appelé - Données d’instrumentation de la mémoire .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)

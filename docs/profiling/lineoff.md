@@ -6,14 +6,15 @@ ms.assetid: 76082063-20ef-47ae-ad64-81b43b654865
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b4de8aa278adab0127f3a39d9adcf105f906e152
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ac671c3b0ba40c462403b2afa850c3936156d6d2
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62995332"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74774124"
 ---
 # <a name="lineoff"></a>LineOff
 Par défaut, le profileur collecte le numéro de ligne du code source et le décalage de numéro de ligne quand vous utilisez la méthode de profilage par échantillonnage. L’option **LineOff** de VSPerfCmd désactive la collecte des numéros de ligne quand VSPerfCmd est utilisé pour démarrer l’application. Les données de profilage sont collectées au niveau de la fonction quand **LineOff** est spécifié.
@@ -26,13 +27,13 @@ Par défaut, le profileur collecte le numéro de ligne du code source et le déc
 VSPerfCmd.exe /Launch:AppName /LineOff [Options]
 ```
 
-#### <a name="parameters"></a>Paramètres
- Aucun.
+#### <a name="parameters"></a>Parameters
+ Aucun
 
 ## <a name="required-options"></a>Options obligatoires
  L’option **LineOff** peut être utilisée seulement sur une ligne de commande qui contient l’option **Launch**.
 
- **Launch :** `AppName` Démarre l’application spécifiée et commence le profilage à l’aide de la méthode d’échantillonnage.
+ **Launch :** `AppName` démarre l’application spécifiée et commence le profilage à l’aide de la méthode d’échantillonnage.
 
 ## <a name="example"></a>Exemple
  Cet exemple démarre l’application et le profileur, et désactive l’échantillonnage au niveau des lignes.

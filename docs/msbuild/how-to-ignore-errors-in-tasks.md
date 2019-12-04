@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Ignorer des erreurs dans des tâches | Microsoft Docs'
+title: 'Comment : ignorer des erreurs dans des tâches | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,14 +9,14 @@ ms.assetid: e2f1ca4f-787b-44bd-bc64-81a036025e96
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 062edb5e7b76b3d3d308046ea1d541c543a6324f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: abd907e86a451ca035d44d9a12084c7b84acd1ed
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000294"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777892"
 ---
-# <a name="how-to-ignore-errors-in-tasks"></a>Procédure : Ignorer des erreurs dans des tâches
+# <a name="how-to-ignore-errors-in-tasks"></a>Guide pratique pour ignorer des erreurs dans des tâches
 Vous souhaiterez parfois qu’une génération soit à tolérance de panne dans certaines tâches. En cas d’échec de ces tâches non critiques, vous souhaiterez continuer la génération, car elle peut toujours produire la sortie requise. Par exemple, si un projet utilise une tâche `SendMail` pour envoyer un message électronique après la génération de chaque composant, vous pouvez juger acceptable de poursuivre la génération jusqu’à son achèvement, même si les serveurs de messagerie ne sont pas disponibles et que les messages d’état ne peuvent pas être envoyés. Si des fichiers intermédiaires sont habituellement supprimés pendant la génération, vous pouvez également estimer que la génération peut se poursuivre jusqu’à son achèvement, même si ces fichiers ne peuvent pas être supprimés.
 
 ## <a name="use-the-continueonerror-attribute"></a>Utiliser l’attribut ContinueOnError
@@ -30,15 +30,17 @@ L’attribut `ContinueOnError` peut contenir l’une des valeurs suivantes :
 
 - **ErrorAndStop** ou **false** (par défaut). En cas d’échec d’une tâche, les tâches restantes de l’élément `Target` et de la génération ne sont pas exécutées, et tout l’élément `Target` ainsi que la génération sont considérés comme étant en échec.
 
-  Les versions de .NET Framework antérieures à 4.5 prenaient en charge uniquement les valeurs `true` et `false`.
+Les versions de .NET Framework antérieures à 4.5 prenaient en charge uniquement les valeurs `true` et `false`.
 
-  La valeur par défaut de `ContinueOnError` est `ErrorAndStop`. Si vous définissez l’attribut sur `ErrorAndStop`, vous rendez le comportement explicite pour tout lecteur du fichier projet.
+La valeur par défaut de `ContinueOnError` est `ErrorAndStop`. Si vous définissez l’attribut sur `ErrorAndStop`, vous rendez le comportement explicite pour tout lecteur du fichier projet.
 
 #### <a name="to-ignore-an-error-in-a-task"></a>Pour ignorer une erreur dans une tâche
 
-- Utilisez l’attribut `ContinueOnError` de la tâche. Par exemple :
+Utilisez l’attribut `ContinueOnError` de la tâche. Par exemple :
 
-    `<Delete Files="@(Files)" ContinueOnError="WarnAndContinue"/>`
+```c#
+<Delete Files="@(Files)" ContinueOnError="WarnAndContinue"/>
+```
 
 ## <a name="example"></a>Exemple
 L’exemple de code suivant montre que la cible `Build` continue de s’exécuter, et la génération est considérée comme un succès, même en cas d’échec de la tâche `Delete`.
@@ -62,4 +64,4 @@ L’exemple de code suivant montre que la cible `Build` continue de s’exécute
 ## <a name="see-also"></a>Voir aussi
 - [MSBuild](../msbuild/msbuild.md)
 - [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)
-- [Tâches](../msbuild/msbuild-tasks.md)
+- [Tâches MSBuild](../msbuild/msbuild-tasks.md)

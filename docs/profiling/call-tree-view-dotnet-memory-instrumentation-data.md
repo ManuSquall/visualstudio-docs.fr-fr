@@ -8,14 +8,15 @@ ms.assetid: dd359707-245a-4a36-8305-2e980b9edd53
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: c7a67d4763337af4b3d75217ce6278951c07bc48
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 2066959578987e358f8c1c91dcbda1eeb6f79f26
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950304"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74773595"
 ---
 # <a name="call-tree-view---net-memory-instrumentation-data"></a>Vue Arborescence des appels - Données d’instrumentation de la mémoire .NET
 La vue Arborescence des appels des données de profilage pour l’allocation de la mémoire .NET qui ont été collectées avec la méthode d’instrumentation montre les chemins d’exécution empruntés par les fonctions dans l’application profilée. La racine de l’arborescence correspond au point d’entrée de l’application ou du composant. Chaque nœud d’une fonction répertorie toutes les fonctions qu’elle a appelées, ainsi que les données concernant la mémoire et la chronologie .NET pour la fonction.
@@ -39,7 +40,7 @@ La vue Arborescence des appels des données de profilage pour l’allocation de 
 |**Numéro de ligne de fonction**|Numéro de ligne du début de cette fonction dans le fichier source.|
 |**Nombre d’appels**|Nombre total d’appels émis vers cette fonction.|
 |**Fichier source**|Fichier source contenant la définition pour cette fonction.|
-|**Nom du module**|Nom du module qui contient la fonction.|
+|**Nom de module**|Nom du module qui contient la fonction.|
 |**Chemin de module**|Chemin d’accès du module qui contient la fonction.|
 |**ID du processus**|ID du processus (PID) de l'exécution du profilage.|
 |**Nom du processus**|Nom assigné au processus.|

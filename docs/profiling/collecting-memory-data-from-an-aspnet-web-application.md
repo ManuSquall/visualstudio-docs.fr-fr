@@ -9,14 +9,15 @@ ms.assetid: 57acf2b0-327a-4c0e-8078-ac2f6d99457d
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 03851869b2067efd014752ab854f30c2d4874711
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: 9e8d9fde00a2390793ae8efe05b684e73caca321
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263539"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74773057"
 ---
 # <a name="collect-memory-data-from-an-aspnet-web-application-by-using-the-profiler-command-line"></a>Collecter des données de mémoire d’une application web ASP.NET en utilisant la ligne de commande du profileur
 Cette section décrit les procédures et les options de collecte des données d’allocation mémoire et de durée de vie des objets pour une application web ASP.NET avec l’outil en ligne de commande **VSPerfCmd**.
@@ -28,7 +29,7 @@ Cette section décrit les procédures et les options de collecte des données d�
 
 |Tâche|Contenu associé|
 |----------|---------------------|
-|**Attacher le profileur à une application ASP.NET en cours d’exécution**|-   [Guide pratique pour attacher le profileur à une application web ASP.NET pour collecter des données de mémoire](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line.md)|
+|**Attacher le profileur à une application ASP.NET en cours d’exécution**|-   [Comment : attacher le profileur à une application web ASP.NET pour collecter des données de mémoire](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line.md)|
 |**Instrumenter des fichiers binaires compilés statiquement**|-   [Guide pratique pour instrumenter une application ASP.NET compilée statiquement et collecter des données de mémoire](../profiling/how-to-instrument-a-statically-compiled-aspnet-app-and-collect-memory-data.md)|
 |**Instrumenter des fichiers binaires compilés dynamiquement**|-   [Guide pratique pour instrumenter une application ASP.NET compilée dynamiquement et collecter des données de mémoire](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data.md)|
 
@@ -52,5 +53,5 @@ Cette section décrit les procédures et les options de collecte des données d�
 ### <a name="analyze-net-memory-data-views-and-reports"></a>Analyser des vues et des rapports de données de mémoire .NET
 - [Vues des données de la mémoire .NET](../profiling/dotnet-memory-data-views.md)
 
-## <a name="reference"></a>Référence
+## <a name="reference"></a>Reference
 - [Informations de référence sur les outils de profilage de ligne de commande](../profiling/command-line-profiling-tools-reference.md)

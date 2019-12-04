@@ -10,16 +10,17 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c8ffa5340ceaa00adb5e86100d8e58c307f41d40
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a365892f606da90c608e43b7ccce73b902ec0e98
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62794432"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74772437"
 ---
-# <a name="performance-explorer-window"></a>Explorateur de performances, fenêtre
+# <a name="performance-explorer-window"></a>Fenêtre Explorateur de performances
 
 La fenêtre **Explorateur de performances** de l’IDE de Visual Studio permet de configurer et de démarrer des sessions de performance à l’aide des Outils de profilage de Visual Studio. Si vous avez besoin d’ouvrir la fenêtre, suivez les instructions indiquées dans [Guide du débutant en profilage des performances](../profiling/beginners-guide-to-cpu-sampling.md).
 

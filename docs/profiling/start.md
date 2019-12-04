@@ -6,16 +6,17 @@ ms.assetid: b85d0fe9-f67a-4b7c-8d48-7eecf3f2dfe9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e85c589866aba54e856afb066cec253c7057aaad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: df3ccda9730be02bafb7f7d069a26193a4528d1e
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979677"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778269"
 ---
-# <a name="start"></a>Start
+# <a name="start"></a>Début
 L’option **Start** est une option de *VSPerfCmd.exe* qui initialise le profileur avec la méthode de profilage spécifiée.
 
 ## <a name="syntax"></a>Syntaxe
@@ -24,7 +25,7 @@ L’option **Start** est une option de *VSPerfCmd.exe* qui initialise le profile
 VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 ```
 
-#### <a name="parameters"></a>Paramètres
+#### <a name="parameters"></a>Parameters
  `Method` Doit correspondre à l’un des mots clés suivants :
 
 - **TRACE** - Spécifie la méthode d’instrumentation.
@@ -38,14 +39,14 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 ## <a name="required-options"></a>Options obligatoires
  L’option **Output** doit être spécifiée quand **Start** est spécifié sur la ligne de commande.
 
- **Sortie :** `filename` Spécifie le nom du fichier de sortie.
+ **Sortie :** `filename` spécifie le nom du fichier de sortie.
 
 ## <a name="exclusive-options"></a>Options exclusives
  Les options suivantes peuvent être utilisées seulement avec l’option **Start** sur une ligne de commande.
 
  **CrossSession**&#124;**CS** Active le profilage interprocessus. Les noms **CrossSession** et **CS** de l’option sont tous deux pris en charge.
 
- **User:**[`domain\`]`username` Permet l’accès client au moniteur à partir du compte spécifié.
+ **User:** [`domain\`]`username` Permet l’accès client au moniteur à partir du compte spécifié.
 
  **WinCounter:** `Path` [**Automark**:`n`] **WinCounter** spécifie un compteur de performances Windows à inclure en tant que marque dans le fichier de données de profilage. **AutoMark** spécifie l’intervalle en millisecondes entre les collectes du fichier de données.
 
@@ -54,7 +55,7 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 
  **Status** **Status** s’applique aux processus profilés. Il répertorie les processus et les threads, ainsi que l’état de leur profil actuel (Activé/Désactivé). Par exemple, si un processus est arrêté, **Status** ne l’indique pas dans le rapport. **Status** indique que le processus est profilé ou non.
 
- **Shutdown**[**:**`Timeout`] Désactive le profileur.
+ **Shutdown**[ **:** `Timeout`] Désactive le profileur.
 
 ## <a name="example"></a>Exemple
  L’exemple suivant montre l’utilisation de l’option **Start** de *VSPerfCmd.exe* pour initialiser le profileur.

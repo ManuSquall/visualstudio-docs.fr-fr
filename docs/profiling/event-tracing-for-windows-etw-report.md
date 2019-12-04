@@ -9,14 +9,15 @@ ms.assetid: 81e88162-b88a-40b6-8b85-a232c8096a47
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d13a3db996537005c0d4ec67b85c185ac2841cc0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 19412d184377637c29f34b2fe3ffd033f176b97c
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447252"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779296"
 ---
 # <a name="event-tracing-for-windows-etw-report"></a>Suivi des événements pour Windows (ETW), rapport
 Le rapport Suivi des événements pour Windows (ETW) liste les événements ETW enregistrés dans une session de performances des Outils de profilage de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Les données ETW sont collectées dans un fichier binaire (.*etl*).

@@ -11,14 +11,15 @@ ms.assetid: 8806954f-cf28-48d5-81b2-d722ceaf7d27
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ebcb58f1bbab478f60f446527dad1611b295996
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 6e5bd33d9924784220addafca85a63f550df02c7
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969756"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779257"
 ---
 # <a name="function-details-view"></a>Vue Informations relatives à la fonction
 La fenêtre **Vue Informations relatives à la fonction** affiche les informations suivantes :

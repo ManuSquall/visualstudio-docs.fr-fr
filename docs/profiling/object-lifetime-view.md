@@ -14,14 +14,15 @@ ms.assetid: d0501fdd-4b3a-4e74-b6ac-51d950a2e15b
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 6127ae8e76ff7233ff7ad4f7b336325555e57b28
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
+ms.openlocfilehash: d4ea486930d0ea9f266b4ee57b69a50f7c570651
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747202"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74772622"
 ---
 # <a name="object-lifetime-view"></a>Mode Durée de vie de l'objet
 La vue Durée de vie des objets est disponible quand l’option **Collecter aussi les informations de durée de vie des objets .NET** est activée dans les pages de propriétés de la **session de performance**.
@@ -36,8 +37,8 @@ La vue Durée de vie des objets est disponible quand l’option **Collecter auss
 |------------|-----------------|
 |**Nom de classe**|Nom de classe du type alloué.|
 |**ID du processus**|ID de processus de l’exécution du profilage.|
-|**Nom du processus**|Nom du processus.|
-|**Nom du module**|Nom du module qui contient la fonction.|
+|**Nom du processus**|nom du processus.|
+|**Nom de module**|Nom du module qui contient la fonction.|
 |**Chemin de module**|Chemin d’accès du module qui contient la fonction.|
 
 ## <a name="instance-data"></a>Données d’instance

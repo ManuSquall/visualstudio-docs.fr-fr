@@ -13,16 +13,17 @@ ms.assetid: b2dbc033-bf95-4d10-8e51-f9462979133e
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c28ef62629011b222ae1a846c04cbf4cdff17d3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0b932d5f9e4a178c94f3e490c66cec64648ce4f6
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440256"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74773333"
 ---
-# <a name="call-tree-view"></a>Mode Arborescence des appels
+# <a name="call-tree-view"></a>Vue Arborescence des appels
 La vue Arborescence des appels affiche les chemins d’exécution de la fonction empruntés dans l’application profilée. La racine de l’arborescence correspond au point d’entrée de l’application ou du composant. Chaque nœud de fonction liste toutes les fonctions appelées par la fonction et les données de performances liées à ces appels de fonction.
 
  La vue Arborescence des appels peut également être développée et mettre en surbrillance le chemin d’exécution d’une fonction qui a exigé le plus de temps ou qui a fait l’objet du plus grand nombre d’échantillonnages. Pour faire apparaître le chemin le plus coûteux en matière de performances, cliquez avec le bouton droit sur la fonction, puis cliquez sur **Développer le chemin réactif**.
@@ -33,7 +34,7 @@ La vue Arborescence des appels affiche les chemins d’exécution de la fonction
 
  La vue Arborescence des appels peut être personnalisée en ajoutant ou en supprimant des colonnes. Cliquez avec le bouton droit sur la **barre de titre des noms de colonne**, puis sélectionnez **Ajouter/Supprimer des colonnes**.
 
- Vous pouvez configurer une réduction du bruit pour la vue Arborescence des appels en limitant la quantité des données qui sont présentées. La réduction du bruit vous permet de repérer plus facilement les problèmes de performances dans la vue. Quand les problèmes de performances sont faciles à distinguer, l’analyse est plus facile. Pour plus d'informations, voir [Procédure : Configurer la réduction du bruit dans les vues des rapports](../profiling/how-to-configure-noise-reduction-in-report-views.md).
+ Vous pouvez configurer une réduction du bruit pour la vue Arborescence des appels en limitant la quantité des données qui sont présentées. La réduction du bruit vous permet de repérer plus facilement les problèmes de performances dans la vue. Quand les problèmes de performances sont faciles à distinguer, l’analyse est plus facile. Pour plus d’informations, consultez [Guide pratique pour configurer la réduction du bruit dans les vues Rapports](../profiling/how-to-configure-noise-reduction-in-report-views.md).
 
 > [!NOTE]
 > Si la réduction du bruit est configurée pour afficher un avertissement quand elle est activée, une barre d’informations s’affiche dans le rapport.

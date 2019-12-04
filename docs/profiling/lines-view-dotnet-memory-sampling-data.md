@@ -8,14 +8,15 @@ ms.assetid: 6631ab87-0e62-4c76-a063-4ea7222b07da
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: c654bbcc9db696d78e651414bfa89d6ad1e2f3e3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 503b3753f4f4fdc98f39804ec767277d7685d0d7
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000069"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74774078"
 ---
 # <a name="lines-view---net-memory-sampling-data"></a>Lignes, vue - données d’échantillonnage de mémoire .NET
 La vue Lignes des données de profilage d’allocation de mémoire .NET qui utilisent la méthode d’échantillonnage répertorie les instructions ayant alloué la mémoire pendant l’exécution du profilage. Les colonnes incluent également la taille et le nombre d’allocations.
@@ -43,9 +44,9 @@ La vue Lignes des données de profilage d’allocation de mémoire .NET qui uti
 |Colonne|Description|
 |------------|-----------------|
 |**ID du processus**|ID du processus (PID) de l'exécution du profilage.|
-|**Nom du processus**|Nom du processus.|
-|**Nom du module**|Nom du module qui contient l’instruction.|
-|**Chemin du module**|Chemin du module qui contient l’instruction.|
+|**Nom du processus**|nom du processus.|
+|**Nom de module**|Nom du module qui contient l’instruction.|
+|**Chemin de module**|Chemin du module qui contient l’instruction.|
 |**Fichier source**|Fichier source qui contient l’instruction.|
 |**Nom de la fonction**|Nom de la fonction qui contient l’instruction.|
 |**Numéro de ligne de fonction**|Numéro de ligne du début de cette fonction dans le fichier source.|
@@ -54,11 +55,11 @@ La vue Lignes des données de profilage d’allocation de mémoire .NET qui uti
 |**Fin ligne source**|Numéro de la ligne de fin dans le fichier source au niveau duquel l’allocation a eu lieu.|
 |**Début caractère source**|Décalage du caractère de début dans la ligne de fichier source au niveau de laquelle l’allocation a eu lieu.|
 |**Fin du caractère source**|Décalage du caractère de fin dans la ligne de fichier source au niveau de laquelle l’allocation a eu lieu.|
-|**Nom de ligne**|Identificateur généré par le profileur de la ligne avec la syntaxe suivante :`Source File`**;[**`Line Number Start`**,**`Character Start`**]->;[**`Line Number Start,Character Start`**]**|
+|**Nom de ligne**|Identificateur généré par le profileur de la ligne avec la syntaxe suivante :`Source File` **;[** `Line Number Start` **,** `Character Start` **]->;[** `Line Number Start,Character Start` **]**|
 |**Allocations exclusives**|Nombre total d’objets créés dans cette ligne.|
 |**% d’allocations exclusives**|Pourcentage de tous les objets créés dans le cadre de l’exécution du profilage qui ont été alloués dans cette ligne.|
 |**Octets exclusifs**|Pourcentage de tous les octets de mémoire alloués dans le cadre de l’exécution du profilage qui ont été alloués dans cette ligne.|
 |**% d’octets exclusifs**|Pourcentage de tous les octets de mémoire alloués dans le cadre de l’exécution du profilage qui ont été alloués dans cette ligne.|
 
 ## <a name="see-also"></a>Voir aussi
-- [Lignes, vue](../profiling/lines-view-sampling-data.md)
+- [Vue Lignes](../profiling/lines-view-sampling-data.md)

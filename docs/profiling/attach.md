@@ -6,14 +6,15 @@ ms.assetid: 79614283-6733-4592-a53a-d428052271ad
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f080957774b33ca00787f061708426a62bd7768f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 634169607a7d581de1b1332d78e8d5abde1a722e
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440292"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74773737"
 ---
 # <a name="attach"></a>Attach
 L’option **Attach** de *VSPerfCmd.exe* démarre le profilage par échantillonnage du processus en cours d’exécution spécifié par le PID (ID de processus).
@@ -29,7 +30,7 @@ L’option **Attach** de *VSPerfCmd.exe* démarre le profilage par échantillonn
 VSPerfCmd.exe /Attach:ProcessID [Options]
 ```
 
-#### <a name="parameters"></a>Paramètres
+#### <a name="parameters"></a>Parameters
  `ProcessID` PID (ID de processus) du processus en cours d’exécution. Le PID d’un processus en cours d’exécution est répertorié sous l’onglet Processus du Gestionnaire des tâches de Windows.
 
 ## <a name="valid-options"></a>Options valides
@@ -37,18 +38,18 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
 
  **Crosssession** Active le profilage d’applications dans d’autres sessions que l’ouverture de session. Obligatoire si l’option **Start** a été spécifiée avec l’option **Crosssession**.
 
- **Start :** `Method` Initialise la session de profilage en ligne de commande, et définit la méthode de profilage spécifiée.
+ **Démarrer :** `Method` initialise la session de profileur de ligne de commande et définit la méthode de profilage spécifiée.
 
  **TargetCLR** Spécifie la version du CLR (Common Language Runtime) du .NET Framework à profiler quand plusieurs versions sont chargées dans une session de profilage. Par défaut, la première version chargée est profilée.
 
  **GlobalOn GlobalOff** Reprend (**GlobalOn**) ou interrompt (**GlobalOff**) le profilage, mais ne met pas fin à la session de profilage.
 
- **ProcessOn :** `PID` **ProcessOff:** `PID` Reprend (**ProcessOn**) ou interrompt (**ProcessOff**) le profilage pour le processus spécifié.
+ **ProcessOn :** `PID` **ProcessOff :** `PID` reprend (**ProcessOn**) ou suspend (**ProcessOff**) le profilage pour le processus spécifié.
 
 ## <a name="interval-options"></a>Options pour l’intervalle
  Une des options d’intervalle d’échantillonnage suivantes peut être spécifiée sur la ligne de commande d’Attach. L’intervalle d’échantillonnage par défaut est de 10 000 000 de cycles d’horloge du processeur.
 
- **Timer**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[<strong>:</strong>Events]**Counter**[**:**`Name`,`Reload`,`FriendlyName`] Spécifie le nombre et le type de l’intervalle d’échantillonnage.
+ **Timer**[ **:** `Cycles`]**PF**[ **:** `Events`]**Sys**[<strong>:</strong>Events]**Counter**[ **:** `Name`,`Reload`,`FriendlyName`] Spécifie le nombre et le type de l’intervalle d’échantillonnage.
 
 - **Timer** : échantillonne tous les `Cycles` cycles d’horloge du processeur. Si `Cycles` n’est pas spécifié, la valeur utilisée est de 10 000 000 cycles.
 

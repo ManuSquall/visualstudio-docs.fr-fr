@@ -8,14 +8,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: dbdc92ff0d8a4020c664de527b60e95ed6113329
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 6a8c5d431b7be54c4c5bc1a1c37619deb67de751
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62535461"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779582"
 ---
 # <a name="collect-net-memory-allocation-and-lifetime-data"></a>Collecter les données liées à l’allocation et à la durée de vie de la mémoire .NET
 
@@ -59,7 +60,7 @@ Les tâches du tableau suivant décrivent les options que vous pouvez spécifier
 
 |Tâche|Contenu associé|
 |----------|---------------------|
-|Dans la page **Général**, spécifiez les détails d’affectation de noms pour le fichier de données de profilage (.vsp) généré.|- [Collecter les données liées à l’allocation et à la durée de vie de la mémoire .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)<br />- [Guide pratique pour définir les options de nom de fichier des données de performances](../profiling/how-to-set-performance-data-file-name-options.md)|
+|Dans la page **Général**, spécifiez les détails d’affectation de noms pour le fichier de données de profilage (.vsp) généré.|- [Collecter les données liées à l’allocation et à la durée de vie de la mémoire .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)<br />- [Guide pratique pour définir les options de nom de fichier des données de performance](../profiling/how-to-set-performance-data-file-name-options.md)|
 |Si votre solution de code contient plusieurs projets .exe, dans la page **Lancer**, spécifiez l’application à démarrer.|- [Collecter les données d’interaction de couche](../profiling/collecting-tier-interaction-data.md)|
 |Dans la page **Interaction de couche** , ajoutez les données d’appel ADO.NET à l’exécution du profilage.|- [Collecter les données d’interaction de couche](../profiling/collecting-tier-interaction-data.md)|
 |Dans la page **Événements Windows**, spécifiez un ou plusieurs événements de suivi d’événements pour Windows (ETW) à collecter avec les données d’échantillonnage.|- [Guide pratique pour collecter les données de suivi d’événements pour Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)|
@@ -72,13 +73,13 @@ Les tâches du tableau suivant correspondent aux options de la boîte de dialogu
 
 |Tâche|Contenu associé|
 |----------|---------------------|
-|Dans la page **Fichiers binaires** , spécifiez un emplacement pour les copies instrumentées des modules. Par défaut, les fichiers binaires d’origine sont déplacés vers un dossier de sauvegarde.|- [Guide pratique pour déplacer les fichiers binaires instrumentés](../profiling/how-to-relocate-instrumented-binaries.md)|
+|Dans la page **Fichiers binaires** , spécifiez un emplacement pour les copies instrumentées des modules. Par défaut, les fichiers binaires d’origine sont déplacés vers un dossier de sauvegarde.|- [Guide pratique pour déplacer des binaires instrumentés](../profiling/how-to-relocate-instrumented-binaries.md)|
 |Dans la page **Instrumentation** , excluez les petites fonctions du profilage pour réduire les surcharges de profilage, profilez le code JavaScript dans des pages web ASP.NET et spécifiez les commandes à exécuter dans une invite de commandes avant et après le processus d’instrumentation.|- [Guide pratique pour exclure ou inclure les fonctions courtes de l’instrumentation](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)<br />- [Guide pratique pour profiler du code JavaScript dans des pages web](../profiling/how-to-profile-javascript-code-in-web-pages.md)<br />- [Guide pratique pour spécifier des commandes de pré-instrumentation et de post-instrumentation](../profiling/how-to-specify-pre-and-post-instrument-commands.md)|
 |Dans la page **Compteurs UC** , spécifiez un ou plusieurs compteurs de performance du processeur à ajouter aux données de profilage.|- [Guide pratique pour collecter les données des compteurs UC](../profiling/how-to-collect-cpu-counter-data.md)|
 |Dans la page **Avancé**, spécifiez les options VSInstr.exe supplémentaires de votre choix, telles que celles permettant d’inclure ou d’exclure des fonctions spécifiques. Pour plus d’informations sur les options de VSInstr, consultez [VSInstr](../profiling/vsinstr.md).|- [Guide pratique pour spécifier des options d’instrumentation supplémentaires](../profiling/how-to-specify-additional-instrumentation-options.md)<br />- [Guide pratique pour limiter l’instrumentation à des fonctions spécifiques](../profiling/how-to-limit-instrumentation-to-specific-functions.md)|
 
 ## <a name="see-also"></a>Voir aussi
 
-[Configurer des sessions de performances](../profiling/configuring-performance-sessions.md)
-[Guide pratique pour choisir des méthodes de collecte](../profiling/how-to-choose-collection-methods.md)
-[Propriétés d’une session de performance](../profiling/performance-session-properties.md)
+[Configurer des sessions de performance](../profiling/configuring-performance-sessions.md)
+[Comment : choisir des méthodes de collecte](../profiling/how-to-choose-collection-methods.md)
+des [Propriétés de session de performance](../profiling/performance-session-properties.md)

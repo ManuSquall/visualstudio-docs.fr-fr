@@ -12,14 +12,15 @@ ms.assetid: 778bc105-7643-46c4-a338-f3620e31125a
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c616564a8d9cc84b4ea85267ae6e2c4c735d16a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 53378c3d210ef9666df251d68a3eec570f8caa2f
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972341"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777996"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 L’outil *VSPerfCmd.exe* est utilisé pour démarrer et arrêter la collecte de données de performances. Il utilise la syntaxe suivante :
@@ -43,7 +44,7 @@ VSPerfCmd [/U] [/options]
 |[WinCounter](../profiling/wincounter.md) **:** *path*|Spécifie un événement de compteur de performance Windows à inclure avec les données de marque du profil. À utiliser uniquement avec **Start**.|
 |[AutoMark](../profiling/automark.md)  **:** *n*|Spécifie l’intervalle de temps (en millisecondes) entre les événements de collecte des données du compteur de performances Windows. À utiliser avec **WinCounter**.|
 |[Events](../profiling/events-vsperfcmd.md) **:** `option`|Contrôle la collecte des événements de suivi d’événements pour Windows (ETW) spécifiés. Les données ETW sont collectées dans un fichier .*itl* qui n’est pas le fichier de données de profilage (.*vsp*).|
-|[État](../profiling/status.md)|Affiche l’état du profileur, des informations sur les processus qui sont en cours de profilage et les comptes qui sont autorisés à contrôler le profileur.|
+|[Status](../profiling/status.md)|Affiche l’état du profileur, des informations sur les processus qui sont en cours de profilage et les comptes qui sont autorisés à contrôler le profileur.|
 |[Shutdown](../profiling/shutdown.md)[ **:** `n`]|Ferme le fichier de données de profilage et désactive le profileur.|
 |[GlobalOn](../profiling/globalon-and-globaloff.md)|Reprend la collecte de données après un appel à **VSPerfCmdGlobalOff**.|
 |[GlobalOff](../profiling/globalon-and-globaloff.md)|Arrête complètement la collecte de données, mais ne met pas fin à la session de profilage.|
@@ -83,8 +84,8 @@ VSPerfCmd [/U] [/options]
 |------------|-----------------|
 |**Admin:Security**, \<**ALLOW&#124;DENY**>, *Right*[ *Right*], \<*Utilisateur*&#124;*Groupe*>|Autorise ou refuse à l’utilisateur ou au groupe spécifié l’accès aux services de profilage.<br /><br /> `Right` peut être :<br /><br /> CrossSession : donne à l’utilisateur l’accès au service pour faire du profilage intersession.<br /><br /> SampleProfiling : donne à l’utilisateur l’accès au pilote pour activer le profilage par échantillonnage. Également utilisé pour accéder aux informations de transition du noyau lors du profilage de trace.<br /><br /> FullAccess : donne à l’utilisateur l’accès CrossSession et SampleProfiling.|
 |**Admin:Security, List**|Répertorie les états des services de profilage et les autorisations des utilisateurs.|
-|**Admin:** \<*Service*&#124;*Pilote*>\<**START**&#124;**STOP**&#124;**INSTALL**&#124;**UNINSTALL**>|Démarre, arrête, installe ou désinstalle le composant du service de profilage (service) ou le pilote de périphérique en mode noyau (driver).|
-|**Admin:** \<*Service*&#124;*Pilote*>**AutoStart**\<**ON**&#124;**OFF**>|Active ou désactive automatiquement le démarrage du service de profilage (service) ou du pilote de périphérique en mode noyau (driver) après un redémarrage.|
+|**Admin:** \<*Service*&#124;*Driver*>\<**START**&#124;**STOP**&#124;**INSTALL**&#124;**UNINSTALL**>|Démarre, arrête, installe ou désinstalle le composant du service de profilage (service) ou le pilote de périphérique en mode noyau (driver).|
+|**Admin:** \<*Service*&#124;*Driver*>**AutoStart**\<**ON**&#124;**OFF**>|Active ou désactive automatiquement le démarrage du service de profilage (service) ou du pilote de périphérique en mode noyau (driver) après un redémarrage.|
 
 ## <a name="vsperfcmd-driver"></a>VSPerfCmd /Driver
  L’option **VSPerfCmd /Driver** est désormais obsolète. Utilisez les options **d’administration VsPerfCmd** pour cette fonctionnalité.

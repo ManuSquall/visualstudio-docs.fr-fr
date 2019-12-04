@@ -9,14 +9,15 @@ ms.assetid: 0ba431c1-9eaf-4af9-8ce0-669c0835cdc2
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: d7ff0ff01e7f99592e33035c7d9502d3b83fc859
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: 4941e9fde651e9274eeafeffc4aefa27483f3730
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263759"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779660"
 ---
 # <a name="collect-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line"></a>Collecter des données d’accès concurrentiel d’une application web ASP.NET en utilisant la ligne de commande du profileur
 La méthode d’accès concurrentiel des outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] vous permet de collecter des données de conflit de ressources.
@@ -27,7 +28,7 @@ La méthode d’accès concurrentiel des outils de profilage [!INCLUDE[vsprvs](.
 |----------|---------------------|
 |Attacher le profileur à une application ASP.NET en cours d’exécution|-   [Guide pratique pour attacher le profileur à une application ASP.NET pour collecter des données concurrentielles](../profiling/how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md)|
 
-## <a name="reference"></a>Référence
+## <a name="reference"></a>Reference
 - [Informations de référence sur les outils de profilage de ligne de commande](../profiling/command-line-profiling-tools-reference.md)
 
 ## <a name="related-tasks"></a>Tâches connexes
@@ -52,5 +53,5 @@ La méthode d’accès concurrentiel des outils de profilage [!INCLUDE[vsprvs](.
 
 - [Visualiseur concurrentiel](../profiling/concurrency-visualizer.md)
 
-## <a name="reference"></a>Référence
+## <a name="reference"></a>Reference
 - [Informations de référence sur les outils de profilage de ligne de commande](../profiling/command-line-profiling-tools-reference.md)
