@@ -36,7 +36,7 @@
           href: container-tools-configure.md
     - name: Concepts
       items:
-        - name: Générer des applications en conteneur
+        - name: Comment Visual Studio génère des applications conteneurisées
           href: container-build.md
     - name: Résolution des problèmes
       href: troubleshooting-docker-errors.md
