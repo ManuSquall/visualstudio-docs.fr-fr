@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 9606b02cb26e8e0ad37f490e330e7d81f3089e27
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 684cd4762eed38d947d76655bd9632fc10d0aacd
+ms.sourcegitcommit: 697f2ab875fd789685811687387e9e8e471a38c4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188999"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74829998"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Tutoriel : Bien démarrer avec Visual Basic dans Visual Studio
 
@@ -132,6 +132,8 @@ Nous allons créer une application qui vous demande votre nom et l’affiche, ai
 
    ![Fenêtre de code affichant le code « Quel est votre nom »](./media/vs-2019/vb-codewindow-what-name-dark.png)
 
+1. Utilisez le bouton vert **Démarrer** ou appuyez sur la touche **F5** pour générer et exécuter votre première application.
+
 1. Quand la fenêtre de console s’ouvre, entrez votre nom. La fenêtre de console doit ressembler à la capture d’écran suivante :
 
    ![Fenêtre de console qui affiche What Is Your Name, la date et l’heure, et le message Press any key to continue](media/vb-console-what-name.png)
@@ -156,6 +158,8 @@ Nous allons créer une application qui vous demande votre nom et l’affiche, ai
     Ce code remplace les instructions <xref:System.Console.WriteLine%2A>, <xref:System.Console.Write%2A> et <xref:System.Console.ReadKey%2A> existantes.
 
    ![Fenêtre de code affichant le code « Quel est votre nom »](./media/vs-2019/vb-codewindow-what-name-dark.png)
+
+1. Utilisez le bouton vert **Démarrer** ou appuyez sur la touche **F5** pour générer et exécuter votre première application.
 
 1. Quand la fenêtre de console s’ouvre, entrez votre nom. La fenêtre de console doit ressembler à la capture d’écran suivante :
 
@@ -257,7 +261,7 @@ Une application console prend une entrée et affiche la sortie dans une fenêtre
 
 .NET Core est la suite logique du .NET Framework. Là où le .NET Framework vous permettait de partager du code entre les langages de programmation, .NET Core ajoute la capacité à partager du code entre des plateformes. De plus, il est open source. (Le .NET Framework et .NET Core incluent des bibliothèques de fonctionnalités prégénérées ainsi qu’un CLR (Common Language Runtime) qui agit comme une machine virtuelle dans laquelle exécuter votre code.)
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 Félicitations ! Vous avez terminé ce didacticiel. Pour en apprendre davantage, consultez le tutoriel suivant.
 
