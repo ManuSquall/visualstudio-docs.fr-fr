@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: Découvrez comment activer l’offre Azure DevTest pour les crédits individuels inclus dans votre abonnement Visual Studio.
-ms.openlocfilehash: 25bb97675c65244258c217901a010ab2211554d0
-ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
+ms.openlocfilehash: 789548f50f7d631f3db190ce5e2638858e8c4707
+ms.sourcegitcommit: c222052906362bf1a3762ec4d4623170e4e06702
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73983769"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74810040"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Utiliser Microsoft Azure dans les abonnements Visual Studio
 En tant qu’abonné Visual Studio, vous pouvez utiliser Microsoft Azure sans frais supplémentaires.  Avec votre [crédit individuel Azure DevTest mensuel](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/), Azure est votre bac à sable personnel pour le développement et les tests.  Vous pouvez provisionner des machines virtuelles, des services cloud et d’autres ressources Azure.  Les montants du crédit varient selon le niveau de votre abonnement.
@@ -38,8 +38,8 @@ En tant qu’abonné Visual Studio, vous pouvez utiliser Microsoft Azure sans fr
 6. Ajoutez un signet au [portail Azure](https://portal.azure.com) pour pouvoir y accéder facilement la prochaine fois.
 
 
-## <a name="eligibility"></a>Éligibilité
-|                 Niveau d’abonnement / Programme                 |           Avantage           |                         Renouvelable ?                          |
+## <a name="eligibility"></a>Eligibility
+|                 Niveau d’abonnement / Programme                 |           Avantage du           |                         Renouvelable ?                          |
 |--------------------------------------------------------------|-----------------------------|-------------------------------------------------------------|
 |              Visual Studio Enterprise Standard               |     Crédit mensuel de 150 dollars US     |                             Oui                             |
 |              Visual Studio Enterprise avec GitHub Enterprise               |     Crédit mensuel de 150 dollars US     |                             Oui                             |
@@ -66,7 +66,7 @@ En tant qu’abonné Visual Studio, vous pouvez utiliser Microsoft Azure sans fr
 
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
 
-## <a name="frequently-asked-questions"></a>FAQ
+## <a name="frequently-asked-questions"></a>Forum aux questions
 ### <a name="q-how-do-i-submit-a-technical-support-incident-from-within-the-azure-portal"></a>Q : comment soumettre un incident de support technique à partir du portail Azure ?
 R : la soumission d’un incident de support à partir du portail Azure est un processus en trois étapes.
 1. Activez votre avantage de support technique et obtenez votre ID d’accès, ID de contrat.
@@ -74,6 +74,9 @@ R : la soumission d’un incident de support à partir du portail Azure est un 
 3. Soumettez un incident de support.
 
 Consultez la documentation [Support technique](vs-tech-support.md) pour plus de détails.
+
+### <a name="q-how-owns-the-intellectual-property-i-create-using-my-azure-devtest-individual-credit"></a>Q : quel est le propriétaire de la propriété intellectuelle que je crée à l’aide de mon crédit Azure DevTest individuel ?
+R : la propriété intellectuelle produite par un employé créé sur les ressources fournies par cette société est donc la propriété intellectuelle de l’entreprise qui fournit la ressource. Ainsi, si vous avez reçu votre abonnement Visual Studio par le biais de votre employeur, ses politiques de propriété intellectuelle s’appliquent. 
 
 ### <a name="q-ive-received-a-message-stating-that-my-access-to-azure-will-end-soon--what-can-i-do-to-continue-using-azure"></a>Q : J’ai reçu un message indiquant que mon accès à Azure va bientôt se terminer.  Que puis-je faire pour continuer à utiliser Azure ?
 R : Vous recevez ce message, car vous utilisez l’avantage Azure associé à votre abonnement Visual Studio, et cet abonnement a expiré ou a été supprimé.  Pour continuer à utiliser Azure, vous disposez de plusieurs options :
@@ -107,7 +110,7 @@ Si vous pensez que vous avez reçu cet e-mail par erreur, contactez le [support 
 - Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 Pour plus d’informations sur les outils et services Microsoft, consultez la documentation relative à :
 - [Azure](/azure/)
 - [Azure DevOps](/azure/devops/)

@@ -3,7 +3,7 @@ title: Modifier Visual Studio 2017
 titleSuffix: ''
 description: Découvrez comment modifier Visual Studio, étape par étape.
 ms.custom: H1Hack27Feb2017,seodec18
-ms.date: 08/23/2019
+ms.date: 12/03/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - modify Visual Studio
@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 628d8fe5d8374d0cb203e6953f63bd63d77d0c58
-ms.sourcegitcommit: 3ba2968a4b44643482aadad4d50e1a55bb36b136
+ms.openlocfilehash: 23e44479bedfdb44b2375baae9f342f47b38700b
+ms.sourcegitcommit: c222052906362bf1a3762ec4d4623170e4e06702
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2019
-ms.locfileid: "74566996"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74810061"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>Modifier Visual Studio en ajoutant ou supprimant des charges de travail et des composants
 
@@ -69,7 +69,7 @@ Voici comment procéder.
 
      Par exemple, sur un ordinateur exécutant Windows 10, sélectionnez **Démarrer**, puis faites défiler jusqu’à la lettre **V** où il est répertorié comme **Visual Studio Installer**.
 
-     ![Visual Studio Installer](media/vs2017-locate-the-visual-studio-installer.PNG "Localiser le programme d’installation de Microsoft Visual Studio")
+     ![Visual Studio Installer](media/locate-the-visual-studio-installer.png "Localiser le programme d’installation de Microsoft Visual Studio")
 
      >[!TIP]
      >Sur certains ordinateurs, le programme d’installation de Visual Studio peut être répertorié sous la lettre **« M »** comme **Microsoft, programme d’installation de Visual Studio**.<br/><br/> Ou bien, vous pouvez trouver Visual Studio Installer à l’emplacement suivant :`C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
@@ -84,7 +84,7 @@ Voici comment procéder.
 
 1. Dans l’écran **Charges de travail**, sélectionnez ou désélectionnez les charges de travail que vous voulez installer ou désinstaller.
 
-    ![Boîte de dialogue d’installation de Visual Studio 2017](media/vs2017-modify-workloads.PNG "Choisir une charge de travail dans Visual Studio 2017")
+    ![Boîte de dialogue d’installation de Visual Studio 2017](media/modify-workloads.png "Choisir une charge de travail dans Visual Studio 2017")
 
 1. Choisissez à nouveau **Modifier**.
 

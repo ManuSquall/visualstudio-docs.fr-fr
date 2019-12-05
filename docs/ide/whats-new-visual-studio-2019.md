@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: eb4282941af9dff8619cb15510399b2e37e0c718
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: 975b9ca88a775e08b97cccf1d1580a96ac4d9d65
+ms.sourcegitcommit: c222052906362bf1a3762ec4d4623170e4e06702
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74777909"
+ms.lasthandoff: 12/04/2019
+ms.locfileid: "74810124"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Nouveautés de Visual Studio 2019
 
@@ -198,7 +198,7 @@ Pour plus d’informations, voir la page [Déboguer des applications Azure ASP.N
 
 ### <a name="pinnable-properties-tool"></a>Outil Propriétés regroupement
 
-**Nouveauté de 16,4**: il est maintenant plus facile de pouvoir identifier les objets par leurs propriétés lors du débogage avec le nouvel outil de propriétés regroupement. Il vous suffit de pointer le curseur sur une propriété que vous souhaitez afficher dans la fenêtre du débogueur des fenêtres espion, automatique et variables locales, de cliquer sur l’icône d’épingle et de voir immédiatement les informations que vous recherchez en haut de la fenêtre.
+**Nouveauté de 16,4**: désormais, il est plus facile d’identifier les objets par leurs propriétés lors du débogage à l’aide de l’outil nouvelles propriétés regroupement. Il vous suffit de pointer le curseur sur une propriété que vous souhaitez afficher dans la fenêtre du débogueur des fenêtres espion, automatique et variables locales, de sélectionner l’icône d’épingle et de voir immédiatement les informations que vous recherchez en haut de la fenêtre.
 
    ![Une animation qui montre comment épingler des propriétés dans le débogueur Visual Studio à l’aide de l’outil Propriétés regroupement](media/vs-2019/debugger-pinnable-properties.gif)
 
