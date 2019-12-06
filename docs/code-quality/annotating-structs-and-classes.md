@@ -24,12 +24,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 93c6826f2903f30fbbdcb9c40ec5f695df32ac05
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 70dc130633e9f191811748b2ab316ad339ad4277
+ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747051"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74879254"
 ---
 # <a name="annotating-structs-and-classes"></a>Structs et classes d'annotation
 
@@ -39,19 +39,19 @@ Vous pouvez annoter des membres de classe et de struct à l’aide d’annotatio
 
 - `_Field_range_(low, high)`
 
-     Le champ se trouve dans la plage (inclusive) comprise entre `low` et `high`.  Équivaut à `_Satisfies_(_Curr_ >= low && _Curr_ <= high)` appliquée à l’objet annoté à l’aide des conditions pre ou postales appropriées.
+     Le champ se trouve dans la plage (inclusive) de `low` à `high`.  Équivaut à `_Satisfies_(_Curr_ >= low && _Curr_ <= high)` appliquée à l’objet annoté à l’aide des conditions pre ou postales appropriées.
 
 - `_Field_size_(size)`, `_Field_size_opt_(size)`, `_Field_size_bytes_(size)`, `_Field_size_bytes_opt_(size)`
 
      Champ qui a une taille accessible en écriture dans les éléments (ou octets) comme spécifié par `size`.
 
-- `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`, `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`
+- `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`,         `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`
 
-     Champ qui a une taille accessible en écriture dans des éléments (ou octets), comme spécifié par `size`, et la `count` de ces éléments qui sont accessibles en lecture.
+     Champ qui a une taille accessible en écriture dans des éléments (ou octets) comme spécifié par `size`, et le `count` de ces éléments (octets) qui sont accessibles en lecture.
 
 - `_Field_size_full_(size)`, `_Field_size_full_opt_(size)`, `_Field_size_bytes_full_(size)`, `_Field_size_bytes_full_opt_(size)`
 
-     Champ qui a à la fois une taille lisible et accessible en écriture dans des éléments (ou octets) comme spécifié par `size`.
+     Champ qui a à la fois une taille lisible et accessible en écriture dans des éléments (ou octets), comme spécifié par `size`.
 
 - `_Field_z_`
 
@@ -59,7 +59,7 @@ Vous pouvez annoter des membres de classe et de struct à l’aide d’annotatio
 
 - `_Struct_size_bytes_(size)`
 
-     S’applique à une déclaration de classe ou de struct.  Indique qu’un objet valide de ce type peut être plus grand que le type déclaré, avec le nombre d’octets spécifié par `size`.  Exemple :
+     S’applique à une déclaration de classe ou de struct.  Indique qu’un objet valide de ce type peut être plus grand que le type déclaré, avec le nombre d’octets spécifié par `size`.  Par exemple :
 
     ```cpp
 
@@ -81,11 +81,9 @@ Vous pouvez annoter des membres de classe et de struct à l’aide d’annotatio
 
 ```cpp
 #include <sal.h>
-// For FIELD_OFFSET macro
-#include <windows.h>
 
 // This _Struct_size_bytes_ is equivalent to what below _Field_size_ means.
-_Struct_size_bytes_(FIELD_OFFSET(MyBuffer, buffer) + bufferSize * sizeof(int))
+_Struct_size_bytes_(__builtin_offsetof(MyBuffer, buffer) + bufferSize * sizeof(int))
 struct MyBuffer
 {
     static int MaxBufferSize;
@@ -99,8 +97,9 @@ struct MyBuffer
 
     _Field_range_(1, MaxBufferSize)
     int bufferSize;
+    
     _Field_size_(bufferSize)        // Prefered way - easier to read and maintain.
-    int buffer[0];
+    int buffer[]; // Using C99 Flexible array member
 };
 ```
 
