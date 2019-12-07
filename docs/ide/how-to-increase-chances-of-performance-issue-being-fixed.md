@@ -5,12 +5,12 @@ author: seaniyer
 ms.author: seiyer
 ms.date: 11/19/2019
 ms.topic: reference
-ms.openlocfilehash: d61e7f47fde06c12b6b133ced76e5a8d72d220b0
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: 3bf61c1ecbed5a3da1fe7ec0bcf9c6d4b7580b8d
+ms.sourcegitcommit: 0b90e1197173749c4efee15c2a75a3b206c85538
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74528433"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74903992"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>Comment augmenter les chances de résolution d’un problème de performances
 
@@ -40,7 +40,7 @@ Vous trouverez ci-dessous des problèmes difficiles à diagnostiquer sans bons f
 
 -   [UC élevée :](#slowness-and-high-cpu-issues) Périodes étendues d’utilisation intensive de l’UC de manière inattendue
 
-## <a name="crashes"></a>Cesse
+## <a name="crashes"></a>Crashes
 Un incident se produit lorsque le processus (Visual Studio) se termine de manière inattendue.
 
 **Blocages directement reproductibles**
@@ -116,9 +116,9 @@ Comme décrit dans la section correspondante sur les incidents, pour les problè
 **Absence de réponse inconnue**
 
 Si une absence de réponse se manifeste de manière imprévisible, à l’occurrence suivante, lancez une nouvelle instance de Visual Studio et signalez un problème à partir de cette instance.
-Dans l' [écran « enregistrement »](https://docs.microsoft.com/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019#record-a-repro), veillez à sélectionner la session Visual Studio qui est bloquée.
+Dans l' [écran « enregistrement »](https://docs.microsoft.com/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019#record-a-repro), veillez à sélectionner la session Visual Studio qui ne répond pas.
 
-Si l’instance de Visual Studio qui est bloquée a été lancée en mode administrateur, la deuxième instance doit également être lancée en mode administrateur.
+Si l’instance de Visual Studio qui ne répond pas a été lancée en mode administrateur, la deuxième instance doit également être lancée en mode administrateur.
 
 >[!NOTE] 
 > **Commentaires les plus importants :** Dans ce cas, les commentaires les plus précieux sont le vidage du tas capturé au moment de l’absence de réponse.
