@@ -6,17 +6,18 @@ manager: lank
 ms.date: 08/07/2019
 ms.topic: conceptual
 description: Découvrez comment bien démarrer avec la gestion des abonnements Visual Studio de votre organisation via le portail d’administration des abonnements.
-ms.openlocfilehash: 6ee33bfaf47452a1213cd5def206e47aee790fc3
-ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
-ms.translationtype: HT
+ms.openlocfilehash: 484ecdca3435ee725853932acd66e307c2eb3cbe
+ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490709"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74879306"
 ---
-# <a name="overview-of-the-visual-studio-subscriptions-administration-portal"></a>Vue d’ensemble du portail d’administration des abonnements Visual Studio
+# <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Vue d’ensemble du portail d’administration des abonnements Visual Studio
+
 Le portail d’administration des abonnements Visual Studio vous offre les outils nécessaires pour gérer les abonnements de votre organisation dans un seul emplacement. 
 
-## <a name="important-considerations"></a>Points importants à prendre en compte
+## <a name="important-considerations"></a>Considérations importantes
 Quand vous utilisez le portail d’administration des abonnements Visual Studio, gardez à l’esprit les points suivants :
 - **Les abonnements Visual Studio sont fournis avec une licence par utilisateur.** Chaque abonné peut utiliser les logiciels sur un nombre illimité d’ordinateurs à des fins de développement et de test.
 - **Attribuez un seul niveau d’abonnement à chaque abonné**, en fonction de l’abonnement Visual Studio que votre organisation a acheté. Si des abonnés ont plusieurs niveaux d’abonnement, modifiez leurs paramètres de sorte qu’un seul niveau d’abonnement leur soit attribué.
@@ -41,7 +42,7 @@ Sur le côté gauche de cette page, vous pouvez voir des informations supplémen
 > ![Page Abonnés dans le portail d’administration des abonnements Visual Studio](_img/using-admin-portal/subscribers-page.png)
 
 ## <a name="the-details-page"></a>Page Détails
-Pour obtenir plus d’informations sur le contrat affiché, sélectionnez l’onglet Détails. Cet onglet indique le statut du contrat, le compte d’achat, des détails sur l’organisation, les super administrateurs et d’autres informations pertinentes.
+Pour plus d’informations sur l’accord que vous êtes en train d’afficher, sélectionnez l’onglet Détails. Elle indique l’état du contrat, le compte d’achat, les détails de l’organisation, les super-administrateurs et d’autres informations pertinentes.
 > [!div class="mx-imgBorder"]
 > ![Page Détails dans le portail d’administration des abonnements Visual Studio](_img/using-admin-portal/details-page.png)
 
@@ -51,10 +52,10 @@ Pour obtenir plus d’informations sur le contrat affiché, sélectionnez l’on
 - [Comparer les fonctionnalités IDE Visual Studio](https://visualstudio.microsoft.com/vs/compare)
 - [Prise en charge des abonnements et de l’administration de Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 En savoir plus sur les responsabilités des administrateurs :
 - [Vue d’ensemble des responsabilités des administrateurs](admin-responsibilities.md)
 - [Inventaire de l’environnement de préproduction](admin-inventory.md)
-- [Gérer de grandes équipes et des fournisseurs externes](manage-teams.md)
-- [Suivre les affectations d’utilisateurs et traiter les commandes](assignments-orders.md)
+- [Gérer des grandes équipes et des prestataires externes](manage-teams.md)
+- [Suivre l’attribution des utilisateurs et traiter les commandes](assignments-orders.md)
 - Utiliser le rapport [Utilisation maximale](maximum-usage.md) pour suivre les engagements d’achat

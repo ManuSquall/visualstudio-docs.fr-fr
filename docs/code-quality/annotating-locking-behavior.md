@@ -32,12 +32,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 26c788319331d0da4024844b50b4c495ed2c3a37
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: 25978ae5fa76afc7cd43c9ccc243f25712495ddd
+ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72806770"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74879280"
 ---
 # <a name="annotating-locking-behavior"></a>Annotation du comportement de verrouillage
 Pour éviter les bogues d'accès concurrentiel dans votre programme multithread, suivez toujours une règle de verrouillage appropriée et utilisez les annotations SAL.
@@ -73,7 +73,7 @@ Le tableau suivant répertorie les annotations de verrouillage.
 |`_Create_lock_level_(name)`|Instruction qui déclare le symbole `name` comme un niveau de verrou afin qu'il puisse être utilisé dans les annotations `_Has_Lock_level_` et `_Lock_level_order_`.|
 |`_Has_lock_kind_(kind)`|Annote n’importe quel objet pour affiner les informations de type d’un objet de ressource. Parfois, un type commun est utilisé pour différents genres de ressources et le type surchargé n’est pas suffisant pour distinguer les exigences sémantiques des différentes ressources. Voici la liste des paramètres `kind` prédéfinis :<br /><br /> `_Lock_kind_mutex_`<br /> ID de type de verrou pour les mutex.<br /><br /> `_Lock_kind_event_`<br /> ID de type de verrou pour les événements.<br /><br /> `_Lock_kind_semaphore_`<br /> ID de type de verrou pour les sémaphores.<br /><br /> `_Lock_kind_spin_lock_`<br /> ID de type de verrou pour les verrous de rotation.<br /><br /> `_Lock_kind_critical_section_`<br /> ID de type de verrou pour les sections critiques.|
 |`_Has_lock_level_(name)`|Annote un objet verrou, en lui donnant le niveau de verrou de `name`.|
-|`_Lock_level_order_(name1, name2)`|Instruction qui donne l’ordre de verrouillage entre `name1` et `name2`.|
+|`_Lock_level_order_(name1, name2)`|Instruction qui donne l’ordre de verrouillage entre `name1` et `name2`.  Les verrous qui ont un niveau `name1` doivent être acquis avant les verrous ayant un niveau `name2`|
 |`_Post_same_lock_(expr1, expr2)`|Annote une fonction et indique qu’à l’état postérieur les deux verrous, `expr1` et `expr2`, sont traités comme s’ils étaient le même objet verrou.|
 |`_Releases_exclusive_lock_(expr)`|Annote une fonction et indique qu'à l'état postérieur la fonction décrémente d'une unité le nombre de verrous exclusifs de l'objet verrou nommé par `expr`.|
 |`_Releases_lock_(expr)`|Annote une fonction et indique qu’à l’état postérieur la fonction décrémente d’une unité le nombre de verrous de l’objet verrou nommé par `expr`.|
@@ -106,15 +106,15 @@ Le tableau suivant répertorie les annotations à utiliser avec l'accès aux don
 |`_Write_guarded_by_(expr)`|Annote une variable et indique qu'à chaque modification de la variable, le nombre de verrous de l'objet verrou nommé par `expr` est d'au moins un.|
 
 ## <a name="smart-lock-and-raii-annotations"></a>Annotations Smart Lock et RAII
-Les verrous intelligents encapsulent généralement les verrous natifs et gèrent leur durée de vie. Le tableau suivant répertorie les annotations qui peuvent être utilisées avec des verrous intelligents et des modèles de codage RAII avec la prise en charge de la sémantique `move`.
+Les verrous intelligents encapsulent généralement les verrous natifs et gèrent leur durée de vie. Le tableau suivant répertorie les annotations qui peuvent être utilisées avec des verrous intelligents et des modèles de codage RAII avec la prise en charge de la sémantique de `move`.
 
 |Annotation|Description|
 |----------------|-----------------|
 |`_Analysis_assume_smart_lock_acquired_`|Indique à l’analyseur de supposer qu’un verrou intelligent a été acquis. Cette annotation attend un type de verrou de référence comme paramètre.|
 |`_Analysis_assume_smart_lock_released_`|Indique à l’analyseur de supposer qu’un verrou intelligent a été relâché. Cette annotation attend un type de verrou de référence comme paramètre.|
-|`_Moves_lock_(target, source)`|Décrit l’opération `move constructor` qui transfère l’état du verrou de l’objet `source` au `target`. Le `target` est considéré comme un objet nouvellement construit, donc tout état qu’il avait avant est perdu et remplacé par l’État `source`. La `source` est également réinitialisée à un état propre sans nombre de verrous ni cible d’alias, mais les alias qui pointent vers celle-ci restent inchangés.|
-|`_Replaces_lock_(target, source)`|Décrit la sémantique `move assignment operator` où le verrou cible est libéré avant de transférer l’État à partir de la source. Cela peut être considéré comme une combinaison de `_Moves_lock_(target, source)` précédée d’une `_Releases_lock_(target)`.|
-|`_Swaps_locks_(left, right)`|Décrit le comportement `swap` standard qui suppose que les objets `left` et `right` échangent leur état. L’État échangé comprend le nombre de verrous et la cible d’alias, le cas échéant. Les alias qui pointent vers les objets `left` et `right` restent inchangés.|
+|`_Moves_lock_(target, source)`|Décrit `move constructor` opération qui transfère l’état du verrou de l’objet `source` à l' `target`. Le `target` est considéré comme un objet nouvellement construit, donc tout état qu’il avait avant est perdu et remplacé par l’État `source`. La `source` est également réinitialisée à un état propre sans nombre de verrous ni cible d’alias, mais les alias qui pointent vers celle-ci restent inchangés.|
+|`_Replaces_lock_(target, source)`|Décrit `move assignment operator` sémantique dans laquelle le verrou cible est libéré avant de transférer l’État à partir de la source. Cela peut être considéré comme une combinaison de `_Moves_lock_(target, source)` précédée d’une `_Releases_lock_(target)`.|
+|`_Swaps_locks_(left, right)`|Décrit le comportement de `swap` standard qui suppose que les objets `left` et `right` échanger leur état. L’État échangé comprend le nombre de verrous et la cible d’alias, le cas échéant. Les alias qui pointent vers les objets `left` et `right` restent inchangés.|
 |`_Detaches_lock_(detached, lock)`|Décrit un scénario dans lequel un type de wrapper de verrou autorise la dissociation avec sa ressource contenue. Cela est similaire à la façon dont `std::unique_ptr` fonctionne avec son pointeur interne : elle permet aux programmeurs d’extraire le pointeur et de conserver son conteneur de pointeur intelligent dans un état propre. Une logique similaire est prise en charge par `std::unique_lock` et peut être implémentée dans des wrappers de verrou personnalisés. Le verrou détaché conserve son état (nombre de verrous et cible d’alias, le cas échéant), tandis que le wrapper est réinitialisé pour contenir zéro nombre de verrous et aucune cible d’alias, tout en conservant ses propres alias. Il n’y a aucune opération sur le nombre de verrous (libération et acquisition). Cette annotation se comporte exactement comme `_Moves_lock_`, sauf que l’argument détaché doit être `return` plutôt que `this`.|
 
 ## <a name="see-also"></a>Voir aussi
