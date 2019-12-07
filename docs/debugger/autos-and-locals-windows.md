@@ -1,5 +1,5 @@
 ---
-title: Inspecter des variables - fenêtres automatique et variables locales | Microsoft Docs
+title: Inspecter les variables-fenêtres automatique et variables locales | Microsoft Docs
 ms.custom: seodec18
 ms.date: 10/18/2018
 ms.topic: conceptual
@@ -15,79 +15,93 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 60bb98644c1905b030176b28b97575b379bed38d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b159f631534135ac568fb03dbffa46ae0360fc47
+ms.sourcegitcommit: 0b90e1197173749c4efee15c2a75a3b206c85538
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564544"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74904086"
 ---
-# <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Inspecter des variables dans les fenêtres automatique et variables locales
+# <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Inspecter les variables dans les fenêtres automatique et variables locales
 
-Le **automatique** et **variables locales** windows affichent les valeurs des variables pendant le débogage. Les fenêtres sont disponibles uniquement pendant une session de débogage. Le **automatique** fenêtre affiche les variables utilisées autour du point d’arrêt actuel. Le **variables locales** fenêtre affiche les variables définies dans la portée locale, qui est généralement la méthode ou la fonction active. S’il s’agit de la première fois que vous avez essayé de déboguer du code, il pouvez que vous souhaitez lire [débogage pour les débutants](../debugger/debugging-absolute-beginners.md) et [techniques et des outils de débogage](../debugger/write-better-code-with-visual-studio.md) avant de poursuivre cet article.
+Les fenêtres **automatique** et **variables locales** affichent des valeurs de variables pendant le débogage. Les fenêtres sont uniquement disponibles pendant une session de débogage. La fenêtre **automatique** affiche les variables utilisées autour du point d’arrêt actuel. La fenêtre variables **locales** affiche les variables définies dans la portée locale, qui est généralement la fonction ou la méthode actuelle. S’il s’agit de la première fois que vous essayez de déboguer du code, vous souhaiterez peut-être lire le [débogage pour les débutants](../debugger/debugging-absolute-beginners.md) et les [techniques de débogage et les outils de débogage](../debugger/write-better-code-with-visual-studio.md) avant de passer en revue cet article.
 
- Le **automatique** fenêtre n’est disponible pour C#, code Visual Basic, C++ et Python, mais pas pour JavaScript ou F#.
+ La fenêtre **automatique** est disponible pour C#le code, C++Visual Basic, et Python, mais pas pour JavaScript ou F#.
 
-Pour ouvrir le **automatique** fenêtre, pendant le débogage, sélectionnez **déboguer** > **Windows** > **automatique**, ou appuyez sur **Ctrl**+**Alt**+**V** > **A**.
+Pour ouvrir la fenêtre **automatique** , pendant le débogage, sélectionnez **déboguer** > **Windows** > **automatique**, ou appuyez sur **CTRL**+**ALT**+**V** > **A**.
 
-Pour ouvrir le **variables locales** fenêtre, pendant le débogage, sélectionnez **déboguer** > **Windows** > **variables locales**, ou appuyez sur **Alt**+**4**.
+Pour ouvrir la fenêtre **variables locales** , pendant le débogage, sélectionnez **déboguer** > **Windows** > **variables locales**ou appuyez sur **ALT**+**4**.
 
 > [!NOTE]
-> Cette rubrique s’applique à Visual Studio sur Windows. Pour Visual Studio pour Mac, consultez [des visualisations de données dans Visual Studio pour Mac](/visualstudio/mac/data-visualizations).
+> Cette rubrique s’applique à Visual Studio sur Windows. Pour Visual Studio pour Mac, consultez [visualisations de données dans Visual Studio pour Mac](/visualstudio/mac/data-visualizations).
 
 ## <a name="use-the-autos-and-locals-windows"></a>Utiliser les fenêtres automatique et variables locales
 
-Affichent les tableaux et les objets dans le **automatique** et **variables locales** windows en tant que contrôles d’arborescence. Sélectionnez la flèche vers la gauche d’un nom de variable pour développer la vue pour afficher les champs et propriétés. Voici un exemple d’un <xref:System.IO.FileStream?displayProperty=fullName> de l’objet dans le **variables locales** fenêtre :
+Les tableaux et les objets apparaissent dans les fenêtres **automatique** et **variables locales** sous la forme de contrôles d’arborescence. Sélectionnez la flèche à gauche d’un nom de variable pour développer la vue et afficher les champs et les propriétés. Voici un exemple d’objet <xref:System.IO.FileStream?displayProperty=fullName> dans la fenêtre **variables locales** :
 
-![Locals-FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")
+![Variables locales-FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")
 
-Une valeur de rouge dans le **variables locales** ou **automatique** fenêtre signifie que la valeur a changé depuis la dernière évaluation. Le changement peut provenir d’une précédente session de débogage, ou parce que vous avez modifié la valeur dans la fenêtre.
+Une valeur rouge dans la fenêtre **variables locales** ou **automatique** signifie que la valeur a changé depuis la dernière évaluation. La modification peut provenir d’une précédente session de débogage ou parce que vous avez modifié la valeur dans la fenêtre.
 
-Le format numérique par défaut dans les fenêtres du débogueur est décimal. Pour modifier cette valeur au format hexadécimal, cliquez sur le **variables locales** ou **automatique** fenêtre et sélectionnez **affichage hexadécimal**. Cette modification affecte toutes les fenêtres du débogueur.
+Le format numérique par défaut dans les fenêtres du débogueur est décimal. Pour le remplacer par une valeur hexadécimale, cliquez avec le bouton droit dans la fenêtre **variables locales** ou **automatique** et sélectionnez **affichage hexadécimal**. Cette modification affecte toutes les fenêtres du débogueur.
 
 ## <a name="edit-variable-values-in-the-autos-or-locals-window"></a>Modifier les valeurs des variables dans la fenêtre automatique ou variables locales
 
-Pour modifier les valeurs de la plupart des variables dans le **automatique** ou **variables locales** windows, double-cliquez sur la valeur et entrez la nouvelle valeur.
+Pour modifier les valeurs de la plupart des variables dans les fenêtres **automatique** ou variables **locales** , double-cliquez sur la valeur et entrez la nouvelle valeur.
 
 Vous pouvez entrer une expression pour une valeur, par exemple `a + b`. Le débogueur accepte la plupart des expressions de langage valides.
 
 Dans le code C++ natif, vous devrez peut-être qualifier le contexte d’un nom de variable. Pour plus d’informations, consultez [Opérateur de contexte (C++)](../debugger/context-operator-cpp.md).
 
 >[!CAUTION]
->Assurez-vous que vous comprenez les conséquences avant de modifier des valeurs et les expressions. Certains problèmes possibles sont :
+>Assurez-vous que vous comprenez les conséquences avant de modifier des valeurs et des expressions. Voici quelques problèmes possibles :
 >
->- Évaluer certaines expressions peut modifier la valeur d’une variable ou affecter d’une manière ou d’une autre l’état de votre programme. Par exemple, l’évaluation `var1 = ++var2` modifie la valeur des deux `var1` et `var2`. Ces expressions sont réputées pour avoir [effets](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)). Effets secondaires peuvent provoquer des résultats inattendus si vous n’êtes pas informé.
+>- Évaluer certaines expressions peut modifier la valeur d’une variable ou affecter d’une manière ou d’une autre l’état de votre programme. Par exemple, l’évaluation de `var1 = ++var2` modifie la valeur de `var1` et `var2`. Ces expressions sont réputées avoir des [effets secondaires](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)). Les effets secondaires peuvent entraîner des résultats inattendus si vous n’en avez pas conscience.
 >
->- Modifier des valeurs à virgule flottante risque d’entraîner quelques légères imprécisions, dues à la conversion en binaire de la partie décimale des composants fractionnaires. Même une modification apparemment anodine peut entraîner des modifications à certaines des bits dans la variable à virgule flottante.
+>- Modifier des valeurs à virgule flottante risque d’entraîner quelques légères imprécisions, dues à la conversion en binaire de la partie décimale des composants fractionnaires. Même une modification apparemment anodine peut entraîner des modifications de certains bits dans la variable à virgule flottante.
 
 ::: moniker range=">= vs-2019" 
 ## <a name="search-in-the-autos-or-locals-window"></a>Rechercher dans la fenêtre automatique ou variables locales
 
-Vous pouvez rechercher des mots clés dans les colonnes Nom, valeur et Type de la **automatique** ou **variables locales** fenêtre à l’aide de la barre de recherche au-dessus de chaque fenêtre. Appuyez sur entrée ou sélectionnez une des flèches pour exécuter une recherche. Pour annuler une recherche en cours, sélectionnez l’icône « x » dans la barre de recherche.
+Vous pouvez rechercher des mots clés dans les colonnes nom, valeur et type de la fenêtre **automatique** ou **variables locales** à l’aide de la barre de recherche au-dessus de chaque fenêtre. Appuyez sur entrée ou sélectionnez l’une des flèches pour exécuter une recherche. Pour annuler une recherche en cours, sélectionnez l’icône « x » dans la barre de recherche.
 
-Utilisez les flèches gauche et droite (MAJ + F3 et F3, respectivement) pour naviguer entre trouvé des correspondances.
+Utilisez les flèches gauche et droite (Maj + F3 et F3, respectivement) pour naviguer entre les correspondances trouvées.
 
-![Recherche dans la fenêtre variables locales](../debugger/media/ee-search-locals.png "recherche dans la fenêtre variables locales")
+![Rechercher dans la fenêtre variables locales](../debugger/media/ee-search-locals.png "Rechercher dans la fenêtre variables locales")
 
-Pour rendre votre recherche plus ou moins complète, utilisez la **recherche approfondie** liste déroulante en haut de la **automatique** ou **variables locales** fenêtre pour sélectionner le nombre de niveaux que vous souhaitez rechercher dans objets imbriqués. 
+Pour rendre votre recherche plus ou moins complète, utilisez la liste déroulante de **recherche plus approfondie** en haut de la fenêtre **automatique** ou **variables locales** pour sélectionner le nombre de niveaux que vous souhaitez rechercher dans les objets imbriqués. 
+
+## <a name="pin-properties-in-the-autos-or-locals-window"></a>Épingler les propriétés dans la fenêtre automatique ou variables locales
+
+> [!NOTE]
+> Cette fonctionnalité est prise en charge pour .NET Core 3,0 ou version ultérieure.
+
+Vous pouvez inspecter rapidement des objets en fonction de leurs propriétés dans les fenêtres automatique et variables locales avec l’outil **Propriétés de regroupement** .  Pour utiliser cet outil, pointez sur une propriété et sélectionnez l’icône d’épingle qui s’affiche ou cliquez avec le bouton droit et sélectionnez l’option **épingler le membre en tant que favori** dans le menu contextuel résultant.  Cela propage cette propriété vers le haut de la liste de propriétés de l’objet, et le nom et la valeur de la propriété s’affichent dans la colonne **valeur** .  Pour désépingler une propriété, sélectionnez à nouveau l’icône d’épingle ou sélectionnez l’option **détacher le membre en tant que favori** dans le menu contextuel.
+
+![Épingler les propriétés dans la fenêtre variables locales](../debugger/media/basic-pin.gif "Épingler les propriétés dans la fenêtre variables locales")
+
+Vous pouvez également activer/désactiver les noms de propriété et exclure les propriétés non épinglées lorsque vous affichez la liste des propriétés de l’objet dans les fenêtres automatique ou variables locales.  Vous pouvez accéder à chaque option en sélectionnant les boutons de la barre d’outils au-dessus des fenêtres automatique ou variables locales.
+
+![Filtrer les propriétés des favoris](../debugger/media/filter-pinned-properties-locals.png "Filtrer les propriétés des favoris")
+![activer/désactiver les noms de propriétés](../debugger/media/toggle-property-names.gif "Activer/désactiver les noms de propriétés")
 
 ::: moniker-end
 
-## <a name="change-the-context-for-the-autos-or-locals-window"></a>Modifier le contexte pour la fenêtre automatique ou variables locales
+## <a name="change-the-context-for-the-autos-or-locals-window"></a>Modifier le contexte de la fenêtre automatique ou variables locales
 
-Vous pouvez utiliser la **emplacement de débogage** barre d’outils pour sélectionner une fonction souhaitée, le thread ou le processus, ce qui modifie le contexte pour le **automatique** et **variables locales** windows.
+Vous pouvez utiliser la barre d’outils **emplacement de débogage** pour sélectionner la fonction, le thread ou le processus souhaité, ce qui modifie le contexte des fenêtres **automatique** et **variables locales** .
 
-Pour activer la **emplacement de débogage** barre d’outils, cliquez dans une partie vide de la zone de barre d’outils, puis sélectionnez **emplacement de débogage** à partir de la liste déroulante, ou sélectionnez **vue**  >   **Barres d’outils** > **emplacement de débogage**.
+Pour activer la barre d’outils **emplacement de débogage** , cliquez dans une partie vide de la zone de la barre d’outils et sélectionnez **emplacement de débogage** dans la liste déroulante, ou sélectionnez **afficher** > **barres d’outils** > **emplacement de débogage**.
 
-Définissez un point d’arrêt et démarrez le débogage. Lorsque le point d’arrêt est atteint, les pauses d’exécution et que vous pouvez voir l’emplacement dans le **emplacement de débogage** barre d’outils.
+Définissez un point d’arrêt et démarrez le débogage. Lorsque le point d’arrêt est atteint, l’exécution s’interrompt et vous pouvez voir l’emplacement dans la barre d’outils **emplacement de débogage** .
 
-![Barre d’outils emplacement de débogage](../debugger/media/debuglocationtoolbar.png "barre d’outils emplacement de débogage")
+![Barre d’outils emplacement de débogage](../debugger/media/debuglocationtoolbar.png "Barre d'outils Emplacement de débogage")
 
-## <a name="bkmk_whatvariables"></a> Variables dans la fenêtre automatique (C#, C++, Visual Basic, Python)
+## <a name="bkmk_whatvariables"></a>Variables dans la fenêtre automatique (C#, C++, Visual Basic, Python)
 
-Affichent les variables différentes dans différents langages le **automatique** fenêtre.
+Les différents langages de code affichent différentes variables dans la fenêtre **automatique** .
 
-- En C# et en Visual Basic, la fenêtre **Automatique** affiche les variables utilisées sur la ligne actuelle ou précédente. Par exemple, dans C# ou Visual Basic du code, déclarez les variables de quatre suivantes :
+- En C# et en Visual Basic, la fenêtre **Automatique** affiche les variables utilisées sur la ligne actuelle ou précédente. Par exemple, dans C# le code ou Visual Basic, déclarez les quatre variables suivantes :
 
    ```csharp
        public static void Main()
@@ -100,13 +114,13 @@ Affichent les variables différentes dans différents langages le **automatique*
        }
    ```
 
-   Définissez un point d’arrêt sur la ligne `c = 3;`, et démarrez le débogueur. Lors de l’exécution s’arrête, le **automatique** fenêtre s’affiche :
+   Définissez un point d’arrêt sur la ligne `c = 3;`et démarrez le débogueur. Lorsque l’exécution est suspendue, la fenêtre **automatique** affiche :
 
-   ![Autos-CSharp](../debugger/media/autos-csharp.png "Autos-CSharp")
+   ![Automatique-CSharp](../debugger/media/autos-csharp.png "Autos-CSharp")
 
    La valeur de `c` est 0, car la ligne `c = 3` n’a pas encore été exécutée.
 
-- En C++, le **automatique** fenêtre affiche les variables utilisées dans au moins trois lignes avant la ligne actuelle où l’exécution est suspendue. Par exemple, dans le code C++, déclarez six variables :
+- Dans C++, la fenêtre **automatique** affiche les variables utilisées dans au moins trois lignes avant la ligne actuelle où l’exécution est suspendue. Par exemple, dans C++ le code, déclarez six variables :
 
    ```C++
        void main() {
@@ -120,16 +134,16 @@ Affichent les variables différentes dans différents langages le **automatique*
        }
    ```
 
-    Définissez un point d’arrêt sur la ligne `e = 5;` et exécutez le débogueur. Lors de l’exécution s’arrête, le **automatique** fenêtre s’affiche :
+    Définissez un point d’arrêt sur la ligne `e = 5;` et exécutez le débogueur. Lorsque l’exécution s’arrête, la fenêtre **automatique** s’affiche :
 
-    ![Autos-C++](../debugger/media/autos-cplus.png "Autos-C++")
+    ![FenêtresC++](../debugger/media/autos-cplus.png "FenêtresC++")
 
     La variable `e` n’est pas initialisée, car la ligne `e = 5` n’a pas encore été exécutée.
 
 ## <a name="bkmk_returnValue"></a> View return values of method calls
- Dans le code .NET et C++, vous pouvez examiner les valeurs de retour dans le **automatique** fenêtre lorsque vous arrivez sur ou hors d’un appel de méthode. Appel de méthode d’affichage valeurs de retour peuvent être utiles lorsqu’elles ne sont pas stockées dans des variables locales. Une méthode peut être utilisée en tant que paramètre, ou en tant que la valeur de retour d’une autre méthode.
+ Dans .NET et C++ le code, vous pouvez examiner les valeurs de retour dans la fenêtre **automatique** lorsque vous exécutez un pas à pas principal ou hors d’un appel de méthode. L’affichage des valeurs de retour des appels de méthode peut s’avérer utile lorsqu’ils ne sont pas stockés dans des variables locales. Une méthode peut être utilisée en tant que paramètre, ou en tant que valeur de retour d’une autre méthode.
 
- Par exemple, ce qui suit C# code ajoute les valeurs de retour de deux fonctions :
+ Par exemple, le code C# suivant ajoute les valeurs de retour de deux fonctions :
 
 ```csharp
 static void Main(string[] args)
@@ -153,17 +167,17 @@ private static int subtractVars(int i, int j)
 }
 ```
 
-Pour afficher les valeurs de retour de la `sumVars()` et `subtractVars()` des appels de méthode dans la fenêtre automatique :
+Pour afficher les valeurs de retour des appels de méthode `sumVars()` et `subtractVars()` dans la fenêtre automatique :
 
 1. Définissez un point d’arrêt sur la ligne `int x = sumVars(a, b) + subtractVars(c, d);` .
 
-1. Démarrez le débogage et lors de l’exécution s’arrête au point d’arrêt, sélectionnez **pas à pas principal** ou appuyez sur **F10**. Vous devez voir les valeurs de retournés suivantes dans le **automatique** fenêtre :
+1. Démarrez le débogage et, lorsque l’exécution s’interrompt au point d’arrêt, sélectionnez **pas à pas principal** ou appuyez sur **F10**. Les valeurs de retour suivantes doivent apparaître dans la fenêtre **automatique** :
 
-  ![Valeur de retour automatique C# ](../debugger/media/autosreturnvaluecsharp2.png "valeur de retour automatiqueC#")
+  ![Valeur de retour automatiqueC#](../debugger/media/autosreturnvaluecsharp2.png "Valeur de retour automatiqueC#")
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Qu’est-ce que le débogage ?](../debugger/what-is-debugging.md)
 - [Techniques et outils de débogage](../debugger/write-better-code-with-visual-studio.md)
-- [Premier aperçu de débogage](../debugger/debugger-feature-tour.md)
+- [Premier aperçu du débogage](../debugger/debugger-feature-tour.md)
 - [Fenêtres du débogueur](../debugger/debugger-windows.md)

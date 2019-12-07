@@ -11,20 +11,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0024716875dce7e81567d60a6e61069be64ec185
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: eb66615abbd7124fd6b781598bd8eb28ea34756d
+ms.sourcegitcommit: 0b90e1197173749c4efee15c2a75a3b206c85538
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911456"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74903863"
 ---
 # <a name="disable-the-just-in-time-debugger"></a>Désactiver le débogueur juste-à-temps
 
 La boîte de dialogue débogueur juste-à-temps peut s’ouvrir lorsqu’une erreur se produit dans une application en cours d’exécution et empêcher l’application de se poursuivre.
 
-Le débogueur juste-à-temps vous donne la possibilité de lancer Visual Studio pour déboguer l’erreur. Vous devez avoir installé [Visual Studio](https://visualstudio.microsoft.com/) ou un autre débogueur sélectionné pour afficher des informations détaillées sur l’erreur ou essayer de la déboguer.
+Le débogueur juste-à-temps vous donne la possibilité de lancer Visual Studio pour déboguer l’erreur. Vous devez avoir installé Visual Studio ou un autre débogueur sélectionné pour afficher des informations détaillées sur l’erreur ou essayer de la déboguer.
 
-Si vous êtes un utilisateur de Visual Studio et que vous souhaitez essayer de déboguer l’erreur, consultez [Déboguer à l’aide du débogueur juste-à-temps](../debugger/debug-using-the-just-in-time-debugger.md). Si vous ne pouvez pas corriger l’erreur ou si vous souhaitez empêcher l’ouverture du débogueur juste-à-temps, vous pouvez [désactiver le débogage juste-à-temps à partir de Visual Studio](debug-using-the-just-in-time-debugger.md#BKMK_Enabling).
+Si vous êtes déjà un utilisateur de Visual Studio et que vous souhaitez essayer de déboguer l’erreur, consultez [Déboguer à l’aide du débogueur juste-à-temps](../debugger/debug-using-the-just-in-time-debugger.md). Si vous ne pouvez pas corriger l’erreur ou si vous souhaitez empêcher l’ouverture du débogueur juste-à-temps, vous pouvez [désactiver le débogage juste-à-temps à partir de Visual Studio](debug-using-the-just-in-time-debugger.md#BKMK_Enabling).
 
 Si vous aviez installé Visual Studio, mais que vous n’en avez plus, vous devrez peut-être [désactiver le débogage juste-à-temps à partir du Registre Windows](debug-using-the-just-in-time-debugger.md#disable-just-in-time-debugging-from-the-windows-registry).
 
