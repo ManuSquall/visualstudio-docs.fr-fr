@@ -1,18 +1,18 @@
 ---
 title: Installer Visual Studio 2019 pour Mac
 description: Instructions sur l’installation de Visual Studio 2019 pour Mac et des composants supplémentaires nécessaires pour le développement multiplateforme.
-author: asb3993
-ms.author: amburns
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 09/18/2019
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: 1ace600f9c4582e99c6fa324cb9dcc61593d3d97
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: dd6afc69c2a7e513358c69eafeacb49fcb06dd52
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73716782"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74983981"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Installer Visual Studio 2019 pour Mac
 
@@ -21,7 +21,7 @@ Pour commencer à développer des applications .NET natives multiplateformes sur
  > [!div class="button"]
  > [Téléchargez Visual Studio pour Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=navigation+cta&utm_content=download+vsmac2019)
 
-## <a name="requirements"></a>spécifications
+## <a name="requirements"></a>Configuration requise pour
 
 - Mac avec macOS High Sierra 10.12 ou ultérieur.
 
@@ -60,7 +60,7 @@ Pour générer des applications Xamarin pour iOS ou macOS, vous devez également
 ||Android uniquement|Sélectionner une plateforme **Android**|Notez que vous devez également sélectionner les dépendances appropriées.|
 ||Mac uniquement|Sélectionner la plateforme **MacOS (cacao)**|Vous devez installer [ **Xcode**](https://developer.apple.com/xcode/)|
 |**Applications .NET Core**|         |Sélectionnez plateforme **.net Core** .|         |
-|**Applications Web ASP.NET Core**|         |Sélectionnez plateforme **.net Core** .|         |
+|**Applications web ASP.NET Core**|         |Sélectionnez plateforme **.net Core** .|         |
 |**Azure Functions**|         |Sélectionnez plateforme **.net Core** .|         |
 |**Développement de jeux Unity multiplateforme**|         |Aucune plateforme supplémentaire ne doit être installée au-delà de Visual Studio pour Mac.| Reportez-vous au [guide d’installation Unity](/visualstudio/mac/setup-vsmac-tools-unity) pour plus d’informations sur l’installation de l’extension Unity.|
 
@@ -91,7 +91,7 @@ Configurez votre réseau de façon à autoriser l’accès aux emplacements suiv
 
 - [Points de terminaison de Visual Studio](/visualstudio/mac/install-behind-a-firewall-or-proxy-server)
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 L’installation de Visual Studio pour Mac vous permet de commencer à écrire du code pour vos applications. Les guides suivants sont fournis pour vous guider à travers les étapes d’écriture et de déploiement de vos projets.
 

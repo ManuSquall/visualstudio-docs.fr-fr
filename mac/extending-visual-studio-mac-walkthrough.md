@@ -1,16 +1,16 @@
 ---
 title: 'Procédure pas à pas : Extension de Visual Studio pour Mac'
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: 7D00512B-9688-4D8D-87A7-F04F207E3D02
-ms.openlocfilehash: cbf0d99bd87b31484b6c74e9a6d67ac88dc5ba99
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c5b3b759b32acfc86b4b584b3f3d52298c138a2c
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62984083"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74983289"
 ---
 # <a name="extending-visual-studio-for-mac-walkthrough"></a>Procédure pas à pas : Extension de Visual Studio pour Mac
 

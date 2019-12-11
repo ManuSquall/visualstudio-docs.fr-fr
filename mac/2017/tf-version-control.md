@@ -1,17 +1,17 @@
 ---
 title: Team Foundation Version Control (TFVC)
 description: Connexion de Visual Studio pour Mac à Team Foundation Server/Azure DevOps avec Team Foundation Version Control (TFVC).
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 06/25/2019
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: e45f80ab1a5aab4969b01a2fddcfd88d9dc4eff7
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: b7b160d58cead031a0eece2a522501d8c2060bd2
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73716124"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985197"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Connexion à Team Foundation Version Control
 
@@ -30,7 +30,7 @@ Visual Studio pour Mac assure une prise en charge complète des référentiels G
 
 La suite de cet article décrit les options ci-dessus.
 
-## <a name="requirements"></a>spécifications
+## <a name="requirements"></a>Configuration requise pour
 
 * Visual Studio Community, Professional ou Enterprise pour Mac version 7.8 et ultérieure.
 * Azure DevOps Services, Team Foundation Server 2013 (ou version ultérieure) ou Azure DevOps Server 2018 (ou version ultérieure).

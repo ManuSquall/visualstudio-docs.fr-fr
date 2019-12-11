@@ -2,15 +2,15 @@
 title: Services connectés
 description: Ajouter le stockage de données Azure, l’authentification et les notifications Push aux applications mobiles à partir de Visual Studio pour Mac
 ms.assetid: 41CB62FF-0F39-4CE8-8917-6A77F058719F
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 11/06/2018
-ms.openlocfilehash: 7f3cf8ce9e82310a8fe2f6ab9542d3d575a30f5b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 241820de009a5118869583bbe228ecb0604f9001
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62932243"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985289"
 ---
 # <a name="connected-services-walkthrough"></a>Procédure pas à pas des services connectés
 
@@ -31,37 +31,37 @@ Cette procédure pas à pas montre comment ajouter un service backend Azure, qui
 3. Les dépendances doivent être ajoutées à la fois à la bibliothèque PCL et aux projets spécifiques à une plateforme pour fonctionner.
   Cochez les cases pour ajouter le service à chaque projet qui le référence (directement ou indirectement) :
 
-    [![Cocher tous les projets qui doivent référencer le service](media/connected-services-image003-sml.png "Cocher tous les projets qui doivent référencer le service")](media/connected-services-image003.png#lightbox)
+    [![Vérifier tous les projets qui doivent référencer le service](media/connected-services-image003-sml.png "Vérifier tous les projets qui doivent référencer le service")](media/connected-services-image003.png#lightbox)
 
 4. Choisissez **Accepter** dans les boîtes de dialogue **Acceptation de la licence** pour les packages NuGet.
   Deux boîtes de dialogue avec l’option Accepter peuvent s’afficher : une pour MobileClient et les dépendances, et une autre pour SQLiteStore, ce qui est nécessaire pour la synchronisation de données hors connexion :
 
-    [![Accepter les termes des contrats de licence](media/connected-services-image004-sml.png "Accepter les termes des contrats de licence")](media/connected-services-image004.png#lightbox)
+    [![Accepter les contrats de licence](media/connected-services-image004-sml.png "Accepter les contrats de licence")](media/connected-services-image004.png#lightbox)
 
-    ![Fenêtre Acceptation de la licence](media/connected-services-image005.png "Fenêtre Acceptation de la licence")
+    ![Fenêtre acceptation de la licence](media/connected-services-image005.png "Fenêtre acceptation de la licence")
 
 5. Une fois que les dépendances sont ajoutées, vous êtes invité à vous connecter avec le compte que vous voulez utiliser pour communiquer avec Azure.
   Si vous êtes déjà connecté avec un ID Microsoft, Visual Studio pour Mac va tenter de récupérer vos abonnements Azure et tous les App Services qui s’y rapportent. Si vous n’avez aucun abonnement, vous pouvez en ajouter un en vous inscrivant pour un essai gratuit ou en achetant un plan d’abonnement dans le portail Azure.
 
 6. Sélectionnez un App Service dans la liste. Cela remplira le code du modèle pour l’objet `MobileServiceClient` avec l’URL correspondante de l’App Service sur Azure :
 
-    [![Sélectionner un App Service dans la liste](media/connected-services-image006-sml.png "Sélectionner un App Service dans la liste")](media/connected-services-image006.png#lightbox)
+    [![Sélectionner App service dans la liste](media/connected-services-image006-sml.png "Sélectionner App service dans la liste")](media/connected-services-image006.png#lightbox)
 
     Si aucun service n’est répertorié, cliquez sur le bouton **Nouveau** (consultez l’étape 9).
 
 7. Copiez le code du modèle pour l’objet `MobileServiceClient` dans la bibliothèque PCL. L’emplacement du fichier n’est pas important tant qu’il n’existe qu’une seule instance de celui-ci.
   L’approche recommandée consiste à créer une classe `AzureService` qui gère toutes les interactions Azure et utilise l’objet `MobileServiceClient` :
 
-    ![Copier le code de configuration dans l’application](media/connected-services-image007.png "Copier le code de configuration dans l’application")
+    ![Copier le code de configuration dans le point d’accès](media/connected-services-image007.png "Copier le code de configuration dans l’application")
 
 8. Suivez la documentation dans **Étapes suivantes** pour ajouter des données, la synchronisation hors connexion, l’authentification et les notifications Push à votre application :
 
-    [![Passer en revue les instructions des étapes suivantes](media/connected-services-image008-sml.png "Passer en revue les instructions des étapes suivantes")](media/connected-services-image008.png#lightbox)
+    [![Passez en revue les instructions suivantes](media/connected-services-image008-sml.png "Passez en revue les instructions suivantes")](media/connected-services-image008.png#lightbox)
 
 9. Si vous n’avez aucun App Service, vous pouvez en créer de nouveaux à partir de Visual Studio pour Mac.
   Cliquez sur le bouton **Nouveau** dans la partie inférieure gauche de la liste des services pour ouvrir la boîte de dialogue **Nouvel App Service** :
 
-    [![Créer un App Service dans Visual Studio pour Mac](media/connected-services-image009-sml.png "Créer un App Service dans Visual Studio pour Mac")](media/connected-services-image009.png#lightbox)
+    [![Créer un app service dans Visual Studio pour Mac](media/connected-services-image009-sml.png "Créer un app service dans Visual Studio pour Mac")](media/connected-services-image009.png#lightbox)
 
 Un nouveau service nécessite les paramètres suivants :
 

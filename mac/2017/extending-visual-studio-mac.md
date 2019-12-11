@@ -1,17 +1,17 @@
 ---
 title: Extension de Visual Studio pour Mac
 description: Les fonctionnalités de Visual Studio pour Mac peuvent être étendues avec des modules appelés « packages d’extension ». La première partie de ce guide crée un package d’extension simple de Visual Studio pour Mac qui permet d’insérer la date et l’heure dans un document. La seconde partie de ce guide présente les concepts de base du système des packages d’extension et certaines des API principales qui sont à la base de Visual Studio pour Mac.
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 87a4fae1bd5430037b34297f803a6d955a052f68
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: dc4538d04a9c683bf1d8e5443b8eb18c206e4721
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73716937"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984972"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Extension de Visual Studio pour Mac
 
@@ -28,7 +28,7 @@ Pour qu’un package d’extension soit créé à partir de Visual Studio pour M
 L’avantage de cette conception modulaire est que Visual Studio pour Mac est extensible : il existe de nombreux points d’extension sur lesquels peuvent être créés des packages d’extension personnalisés. La prise en charge de C# et de F#, des outils de débogage et des modèles de projet sont des exemples de packages d’extension existants.
 
 > [!NOTE]
-> Si vous avez un projet Add-in Maker créé avant Add-in Maker 1.2, vous devez migrer votre projet comme indiqué dans les étapes décrites [ici](https://mhut.ch/addinmaker/1.2).
+> Si vous avez un projet de création de compléments qui a été créé avant Add-in Maker 1,2, vous devez migrer votre projet comme indiqué dans les étapes [ci-dessous](https://mhut.ch/addinmaker/1.2).
 
 <!---The [Walkthrough](~/extending-visual-studio-mac-walkthrough.md) topic explains how to build an extension package that uses a *Command* to insert the date and time into an open text document.--->
 
@@ -155,7 +155,7 @@ Pour plus d’informations sur l’étendue de ce qui peut faire l’objet de d�
 * Versions cibles de .NET Framework
 * Runtime cible
 * Back-ends de système de contrôle de version
-* Refactorisation
+* Refactoring
 * Gestionnaires d’exécution
 * Mise en surbrillance de la syntaxe
 

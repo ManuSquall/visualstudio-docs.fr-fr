@@ -2,15 +2,15 @@
 title: Définir les options d’accessibilité de l’IDE
 description: Présentation de la définition des options d’accessibilité dans Visual Studio pour Mac
 author: alanjclark
-ms.author: alcl
+ms.author: dominicn
 ms.date: 09/23/2019
 ms.assetid: 87D22340-2BE6-40EE-ACFD-3CF1BA886175
-ms.openlocfilehash: b0bafdefe65d4bbfe616d51913096faaaf033eb2
-ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.openlocfilehash: aece4bec978b609dd1fd5f67d2562bd87f847a3a
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71342325"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985120"
 ---
 # <a name="set-ide-accessibility-options"></a>Définir les options d’accessibilité de l’IDE
 

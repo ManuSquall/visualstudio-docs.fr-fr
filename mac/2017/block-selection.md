@@ -1,16 +1,16 @@
 ---
 title: Sélection de bloc
 description: Cet article explique comment utiliser la fonctionnalité de sélection de bloc dans Visual Studio pour Mac
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 11/06/2018
 ms.assetid: E8E0831E-E076-44B1-A82A-A325382916A6
-ms.openlocfilehash: 18f0faecc6f18c4915f0c44a838dfae80a1be3fa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 8369950b4bf6ac834cc736cffa3bc2a402a9c0d5
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62933113"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74983226"
 ---
 # <a name="block-selection"></a>Sélection de bloc
 

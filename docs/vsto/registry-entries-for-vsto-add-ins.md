@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 243766d78f25491f465a712b37dc5fab16c8a985
-ms.sourcegitcommit: 916bbe1d77c9253424daa86c71c40f5e1ec74400
+ms.openlocfilehash: 464820258e5c20474d74f92eb108344deccc49f1
+ms.sourcegitcommit: 0a8855572c6c88f4b2ece232c04aa124fbd9cec3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "74945080"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74955047"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>Entrées de Registre pour les compléments VSTO
   Vous devez créer un ensemble spécifique d'entrées de Registre quand vous déployez des compléments VSTO créés à l'aide de Visual Studio. Ces entrées de Registre fournissent des informations qui permettent à l'application Microsoft Office de découvrir et de charger le complément VSTO.
@@ -50,7 +50,7 @@ ms.locfileid: "74945080"
  Si vous utilisez ClickOnce pour déployer un complément VSTO, ce dernier ne peut être inscrit que pour l'utilisateur actuel. En effet, ClickOnce prend uniquement en charge la création de clés sous **HKEY_CURRENT_USER**. Si vous voulez inscrire un complément VSTO pour tous les utilisateurs d'un ordinateur, vous devez déployer ce complément à l'aide de Windows Installer. Pour plus d’informations sur ces types de déploiement, consultez [déployer une solution Office à l’aide de ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md) et [déployer une solution Office à l’aide de Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md).
 
 ## <a name="registry-entries"></a>Entrées du Registre
- Les entrées de Registre du complément VSTO nécessaires se trouvent sous les clés de Registre suivantes, où la *racine* est **HKEY_CURRENT_USER** ou **HKEY_LOCAL_MACHINE** en fonction de l’installation par utilisateur ou par ordinateur.
+ Les entrées de Registre du complément VSTO nécessaires se trouvent sous les clés de Registre suivantes, où la *racine* est **HKEY_CURRENT_USER** ou **HKEY_LOCAL_MACHINE** en fonction de l’installation pour l’utilisateur actuel ou tous les utilisateurs.
 
 |Application Office|Chemin d'accès de configuration|
 |------------------|------------------|
@@ -58,7 +58,9 @@ ms.locfileid: "74945080"
 |Tout autre|\Software\Microsoft\Office *racine*\\*nom de l’application Office*\Addins\\*ID du complément*|
 
 > [!NOTE]
-> Si le programme d’installation cible Windows 64 bits, il doit inclure deux entrées de Registre, une sous la *racine*\Software\Microsoft et une sous la *racine*\Software\\**WOW6432Node**\Microsoft Hive.  Cela est dû au fait que les utilisateurs peuvent utiliser des versions 32 bits ou 64 bits d’Office sur l’ordinateur.
+> Si le programme d’installation cible tous les utilisateurs sur Windows 64 bits, il est recommandé d’inclure deux entrées de Registre, l’une sous la HKEY_LOCAL_MACHINE \Software\Microsoft et l’autre sous le HKEY_LOCAL_MACHINE \SOFTWARE\\**WOW6432Node**\Microsoft Hive. Cela est dû au fait que les utilisateurs peuvent utiliser des versions 32 bits ou 64 bits d’Office sur l’ordinateur.
+>
+>Si le programme d’installation cible l’utilisateur actuel, il n’a pas besoin d’être installé sur le WOW6432Node, car le chemin d’accès HKEY_CURRENT_USER \Software est partagé.
 >
 >Pour plus d’informations, consultez [données d’Application 32 bits et 64 bits dans le registre](https://docs.microsoft.com/windows/win32/sysinfo/32-bit-and-64-bit-application-data-in-the-registry) .
 

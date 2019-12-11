@@ -1,23 +1,23 @@
 ---
 title: Installer une préversion ou une mise à jour
 description: Instructions pour mettre à jour Visual Studio pour Mac et accéder aux préversions, notamment Visual Studio 2019 pour Mac.
-author: asb3993
-ms.author: amburns
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 09/18/2019
 ms.technology: vs-ide-install
 ms.assetid: 0E1EF257-9DE4-4653-9DF4-805CE007A1A1
-ms.openlocfilehash: 307344404128e9eabec9dc5aa27c29a17961a5b5
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: b29c2531494369f96467a7c266b379b0f54d49cf
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211349"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984018"
 ---
 # <a name="install-a-preview-version-of-visual-studio-for-mac"></a>Installer une préversion de Visual Studio pour Mac
 
 Avant la sortie officielle d’une nouvelle version de Visual Studio pour Mac, une préversion est disponible. La préversion vous donne l’occasion de tester les nouvelles fonctionnalités et d’obtenir les derniers correctifs avant leur intégration au produit.
 
-Les préversions de Visual Studio pour Mac sont distribuées sous forme de mises à jour, et non par le biais de téléchargements séparés. Comme l’explique l’article relatif à la [mise à jour](update.md), Visual Studio pour Mac comporte deux canaux de mise à jour : **Stable** et **Préversion**.
+Les préversions de Visual Studio pour Mac sont distribuées sous forme de mises à jour, et non par le biais de téléchargements séparés. Visual Studio pour Mac a deux canaux de mise à jour, comme décrit dans l’article de [mise à jour](update.md) : **stable** et **Aperçu**.
 
 Si la plupart des préversions sont disponibles par le biais du canal **Préversion**, consultez toujours les [notes de préversion](/visualstudio/releasenotes/vs2019-mac-preview-relnotes) pour obtenir les informations les plus précises.
 
