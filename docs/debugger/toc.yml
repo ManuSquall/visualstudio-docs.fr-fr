@@ -46,6 +46,8 @@
           href: using-breakpoints.md
         - name: Dépannage des points d’arrêt
           href: troubleshooting-breakpoints.md
+        - name: 'Dépannage des points d’arrêt de données C#'
+          href: troubleshoot-data-breakpoint-errors.md
     - name: Inspection des données
       items:
         - name: Inspecter les données dans les fenêtres du débogueur
