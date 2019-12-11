@@ -18,12 +18,12 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 79570fe403c12c89860a67683456a3d6ca3d3f01
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: de26054894783df283d38223a59741c0500d0bc5
+ms.sourcegitcommit: 0a8855572c6c88f4b2ece232c04aa124fbd9cec3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189603"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74955034"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Nouveautés de Visual Studio 2017
 
@@ -42,7 +42,7 @@ Voici un récapitulatif général des changements par rapport à la version ant�
 * **[Développement d’applications Windows](#windows-app-development)** . Avec les modèles UWP fournis dans Visual Studio 2017, créez un projet unique pour tous les appareils Windows 10 &ndash; PC, tablette, téléphone, Xbox, HoloLens, Surface Hub, etc.
 * **[Développement d’applications mobiles](#mobile-app-development)** . Innovez et obtenez des résultats rapides grâce à Xamarin, qui unifie vos exigences pour les mobiles multi-plateformes en une seule base de code et à un même ensemble de compétences.
 * **[Développement multiplateforme](#cross-platform-development)** . Livrez sans plus d’effort des logiciels pour toutes les plateformes ciblées. Étendez les processus DevOps à SQL Server à l’aide de Redgate Data Tools et automatisez en toute sécurité les déploiements de bases de données à partir de Visual Studio. Sinon, utilisez .NET Core pour écrire des applications et des bibliothèques qui s’exécutent sans modification sur les systèmes d’exploitation Windows, Linux et macOS.
-* **[Développement de jeux](#games-development)** . Avec Visual Studio Tools for Unity (VSTU), vous pouvez utiliser Visual Studio pour écrire des scripts d'éditeur et de jeu en C#, puis utiliser son débogueur performant pour rechercher et corriger les erreurs.
+* **[Développement de jeux](#games-development)** . Avec Visual Studio Tools pour Unity (VSTU), vous pouvez utiliser Visual Studio pour écrire des scripts d’éditeur et de jeu en C#, puis utiliser son débogueur performant pour rechercher et corriger les erreurs.
 * **[Développement IA](#ai-development)** . Avec Visual Studio Tools for AI, vous pouvez utiliser les fonctionnalités de productivité de Visual Studio pour accélérer l’innovation en matière d’intelligence artificielle (IA). Générez, testez et déployez des solutions de Deep Learning / IA qui s’intègrent directement à Azure Machine Learning pour des fonctionnalités d’expérimentation robustes.
 
 > [!NOTE]
@@ -200,7 +200,7 @@ En outre, nous avons corrigé plus de 250 bogues et signalé des problèmes dans
 
 Pour plus d’informations, consultez la page [Nouveautés de Visual C++ dans Visual 2017](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio).
 
-### <a name="debugging-and-diagnostics"></a>Débogage et diagnostics
+### <a name="debugging-and-diagnostics"></a>Debugging and diagnostics
 
 #### <a name="run-to-click"></a>Exécuter jusqu’au clic
 
@@ -226,7 +226,7 @@ Vous pouvez parcourir et afficher les captures instantanées à l’aide des bou
 
 Pour plus d’informations, consultez la page [Afficher des captures instantanées avec le retour en arrière IntelliTrace](../debugger/view-historical-application-state.md).
 
-### <a name="containerization"></a>Mise en conteneur
+### <a name="containerization"></a>Conteneurisation
 
 Les conteneurs augmentent la densité des applications et réduisent les coûts de développement, tout en améliorant la productivité et l’agilité DevOps.
 
@@ -389,6 +389,6 @@ Parfois, un message ne suffit pas pour transmettre l’impact complet du problè
 * [Nouveautés du Kit de développement logiciel (SDK) Visual Studio 2017](../extensibility/what-s-new-in-the-visual-studio-2017-sdk.md)
 * [Nouveautés de Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [Nouveautés de C#](/dotnet/csharp/whats-new)
-* [Nouveautés de Team Foundation Server](/tfs/server/whats-new?view=vsts)
+* [Nouveautés de Team Foundation Server](/azure/devops/server/whats-new)
 * [Nouveautés de Visual Studio pour Mac](https://visualstudio.microsoft.com/vs/visual-studio-mac/)
 * [Nouveautés de Visual Studio 2019](whats-new-visual-studio-2019.md)
