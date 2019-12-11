@@ -1,17 +1,17 @@
 ---
 title: Visite guidée de Visual Studio pour Mac
 description: Visual Studio pour Mac fournit un environnement de développement intégré pour créer des applications .NET sur macOS, notamment des sites web ASP.NET Core, ainsi que des projets Xamarin pour iOS, Android, Mac et Xamarin.Forms.
-author: asb3993
-ms.author: amburns
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 09/18/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: 60691ef47b3a3dfdb2fa1148507697a27a99ef7b
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 6d2f0f891f704d3762bc0967da466960ee5170ee
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71213703"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984705"
 ---
 # <a name="visual-studio-2019-for-mac-tour"></a>Visite guidée de Visual Studio 2019 pour Mac
 
@@ -108,7 +108,7 @@ Voici quelques-unes des fonctionnalités suivantes :
 * Interface utilisateur IntelliSense mise à jour
 * Recherche/remplacement amélioré
 * Prise en charge des extraits 
-* Mettre en forme la sélection
+* Sélection du format
 * Ampoules en ligne
 
 Pour plus d’informations sur l’utilisation de l’éditeur de code source dans Visual Studio pour Mac, consultez la documentation de l' [éditeur de code source](/visualstudio/mac/source-editor) .
@@ -117,11 +117,11 @@ Pour que les onglets restent visibles à tout moment, vous pouvez tirer parti de
 
 ![Épinglage d’un onglet](media/ide-tour-tabpin.png)
 
-## <a name="refactoring"></a>Refactorisation
+## <a name="refactoring"></a>Refactoring
 
-Visual Studio pour Mac offre deux méthodes pratiques de refactorisation du code : les actions contextuelles et l’analyse du code source. Pour plus d’informations sur ces méthodes, consultez l’article [Refactorisation](/visualstudio/mac/refactoring).
+Visual Studio pour Mac offre deux méthodes pratiques pour refactoriser votre code : Actions contextuelles et Analyse du code source. Pour plus d’informations sur ces méthodes, consultez l’article [Refactorisation](/visualstudio/mac/refactoring).
 
-## <a name="debugging"></a>Débogage
+## <a name="debugging"></a>Debugging
 
 Visual Studio pour Mac a un débogueur natif qui prend en charge le débogage des applications Xamarin.iOS, Xamarin.Mac et Xamarin.Android. Visual Studio pour Mac utilise le débogueur Mono Soft, qui est implémenté dans le runtime Mono, ce qui permet à l’IDE de déboguer du code managé sur toutes les plateformes. Pour plus d’informations sur le débogage, consultez l’article [Débogage](/visualstudio/mac/debugging).
 
@@ -129,7 +129,7 @@ Le débogueur contient des visualiseurs enrichis pour les types spéciaux, tels 
 
 Pour plus d’informations sur les visualisations des données du débogueur, consultez l’article [Visualisations des données](/visualstudio/mac/data-visualizations).
 
-## <a name="version-control"></a>Gestion de version
+## <a name="version-control"></a>Contrôle de version
 
 Visual Studio pour Mac s’intègre aux systèmes de contrôle du code source Git et Subversion. Les projets soumis au contrôle du code source sont signalés par la branche figurant en regard du nom de la solution :
 
@@ -141,7 +141,7 @@ Les fichiers comportant des modifications non validées sont indiqués par une a
 
 Pour plus d’informations sur l’utilisation de la gestion de versions dans Visual Studio, consultez l’article [Gestion de versions](/visualstudio/mac/version-control).
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 - [Installer Visual Studio pour Mac](installation.md)
 - [Voir les charges de travail disponibles](workloads.md)

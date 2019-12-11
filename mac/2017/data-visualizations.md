@@ -1,17 +1,17 @@
 ---
 title: Débogage - Visualisations des données
 description: Le débogage est une partie courante et nécessaire de la programmation. Visual Studio pour Mac contient une suite complète de fonctionnalités facilitant le débogage. Cet article présente les différentes visualisations des données qui peuvent être affichées lors de l’inspection d’objets dans le débogueur.
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
-ms.openlocfilehash: 0b9ec63855eff0b69f5523b1905b79d360509e67
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 3355b81406d2b510dc13604a026bcd014bf9dbcb
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62932066"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984758"
 ---
 # <a name="data-visualizations"></a>Visualisations des données
 
@@ -23,7 +23,7 @@ Les visualiseurs du panneau de débogage **Local** peuvent être affichés en cl
 
 La liste ci-dessous présente la plupart des nouvelles visualisations disponibles lors du débogage dans Visual Studio pour Mac.
 
-## <a name="point"></a>Point
+## <a name="point"></a>rapport
 Une structure Point/PointF, ou CGPoint dans iOS et Mac, est restituée sous la forme d’un tuple montrant les valeurs X et Y dans le panneau de débogage :
 
 ![Visualisation d’une structure Point](media/data-visualizations-image10.png)
@@ -38,7 +38,7 @@ Une structure Rectangle/RectangleF, ou CGRect dans iOS et Mac, affiche les dimen
 
 ![Visualisation d’une structure Rectangle](media/data-visualizations-image12.png)
 
-## <a name="coordinate"></a>Coordonnée
+## <a name="coordinate"></a>Coordonner
 Les coordonnées sont tracées sur un plan, avec l’emplacement épinglé au centre :
 
 [Visualisation d’une coordonnée](media/data-visualizations-image13.png)
@@ -60,7 +60,7 @@ Le visualiseur affiche un `NSBezierPath` :
 
 ![Visualisation d’une courbe de Bézier](media/data-visualizations-image16.png)
 
-## <a name="string"></a>Chaîne
+## <a name="string"></a>String
 
 Une chaîne de moins de 100 caractères s’affiche en totalité, sans aperçu. Les chaînes plus longues s’affichent en totalité dans l’aperçu. Les chaînes sont modifiables, et le visualiseur comporte un bouton Modifier, qui permet la modification de la valeur de la chaîne dans l’aperçu ou dans l’éditeur de valeur de chaîne, montré ci-dessous :
 
@@ -88,7 +88,7 @@ Voici quelques autres types qui ont leur propre visualiseur :
 
 ![Autre visualisation](media/data-visualizations-image23.png)
 
-* **Primitifs**
+* **Primitives**
   * Ceci affiche la valeur brute du type primitif.
 * **Enum**
   * Ceci affiche la valeur du champ sans le qualificateur de type enum.

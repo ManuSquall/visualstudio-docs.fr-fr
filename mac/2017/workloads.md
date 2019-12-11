@@ -1,23 +1,23 @@
 ---
 title: Charges de travail Visual Studio pour Mac
 description: Cet article décrit les différentes charges de travail utilisables dans Visual Studio pour Mac, notamment les applications mobiles Xamarin, ASP.NET Core et Unity pour les jeux.
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 12/05/2018
 ms.assetid: DDC39599-8C5D-4CB9-8DA5-229E085384CA
-ms.openlocfilehash: 959af3acf8c6da1437ffc6efd66e984902e9e94a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a189abf6b46acbf708b1a56fb33d5a50cd3d740c
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62985431"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985103"
 ---
 # <a name="visual-studio-for-mac-workloads"></a>Charges de travail Visual Studio pour Mac
 
 Visual Studio pour Mac est préinstallé avec des charges de travail destinées au développement des types d’application suivants :
 
 * Applications mobiles multiplateformes avec .NET et Xamarin, sur Android, iOS, tvOS et watchOS
-* Applications de bureau Mac
+* Applications de poste de travail pour Mac
 * Applications .NET Core
 * Applications web ASP.NET Core
 * Jeux Unity multiplateformes

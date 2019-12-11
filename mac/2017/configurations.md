@@ -1,16 +1,16 @@
 ---
 title: Présentation des configurations de build
 description: Cet article décrit les différentes configurations de build dans Visual Studio pour Mac
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 04/14/2017
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
-ms.openlocfilehash: 9902b62b7d62ae2490bc8c32848ffea657f0963d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: 0bd35d415a60ea64c479b19cb506c58c2c346cc0
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824402"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74983596"
 ---
 # <a name="understanding-build-configurations"></a>Présentation des configurations de build
 
@@ -54,7 +54,7 @@ La liste ci-dessous fournit quelques exemples de données qui peuvent être incl
   * Application de démarrage alternative
   * Arguments du démarrage
   * Répertoire de travail
-  * Variables d’environnement
+  * Variables d'environnement
   * Options de runtime Mono (à utiliser uniquement lors de l’exécution sur Mono)
 * Projet Android
   * Point d’entrée (activité, service, récepteur)

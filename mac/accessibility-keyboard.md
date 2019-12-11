@@ -2,15 +2,15 @@
 title: Navigation au clavier dans Visual Studio pour Mac
 description: Utilisation de Visual Studio pour Mac avec des commandes de clavier
 author: alanjclark
-ms.author: alcl
+ms.author: dominicn
 ms.date: 09/23/2019
 ms.assetid: EF574E49-0465-4973-BE67-286DA20B8836
-ms.openlocfilehash: aad28b9cf9c697b05d43f2869ec8327ea6294b4f
-ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.openlocfilehash: 74c3fddad7c7db8f5f190dcc94f08a36ddf3cd54
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/27/2019
-ms.locfileid: "71342342"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985095"
 ---
 # <a name="keyboard-navigation-in-visual-studio-for-mac"></a>Navigation au clavier dans Visual Studio pour Mac
 
@@ -43,7 +43,7 @@ Visual Studio pour Mac a une plage de raccourcis clavier pour différentes tâch
 
 ## <a name="useful-keyboard-shortcuts"></a>Raccourcis clavier utiles
 
-|Fonctionnalité         |Description                                   |Raccourci         |
+|Composant         |Description                                   |Raccourci         |
 |----------------|----------------------------------------------|-----------------|
 |Navigation dans l’interface utilisateur   |Parcourez tous les éléments de l’interface utilisateur.               |**⇥**, **⇧ ⇥**    |
 |Interagir        |Sélectionnez le contrôle actuellement actif.         |**␣**            |

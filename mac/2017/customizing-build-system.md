@@ -1,16 +1,16 @@
 ---
 title: Personnalisation du système de génération
 description: Cet article est une brève introduction au système de génération MSBuild utilisé par Visual Studio pour Mac
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 04/14/2017
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
-ms.openlocfilehash: 0c2a4590b15faa2573ccab3ff51ff5cd54e177ca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 97416ef126ee77f9955d8fa486d7bb7e2ceb725e
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62932787"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74983452"
 ---
 # <a name="customizing-the-build-system"></a>Personnalisation du système de génération
 
@@ -78,7 +78,7 @@ Par exemple, le PropertyGroup pour une pour une application de console simple pe
 
 Les propriétés peuvent être référencées dans des expressions avec la syntaxe `$()`. Par exemple, `$(Foo)` sera évalué comme valeur de la propriété `Foo`. Si la propriété n’a pas été définie, elle est évaluée comme chaîne vide, sans provoquer d’erreur.
 
-#### <a name="items"></a>Éléments
+#### <a name="items"></a>Items
 
 Les éléments offrent un moyen de traiter les entrées dans le système de génération sous formes de listes ou d’ensembles, et représentent en général des fichiers. Chaque élément a un *type*d’élément, une *spécification* d’élément et des *métadonnées* arbitraires facultatives. Notez que MSBuild ne travaille pas sur des éléments individuels, il prend tous les éléments d’un type donné, appelé un *ensemble* d’éléments.
 

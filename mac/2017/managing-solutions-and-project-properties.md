@@ -1,16 +1,16 @@
 ---
 title: Gestion des propriétés des projets et des solutions
 description: Cet article décrit comment gérer les propriétés des projets et des solutions dans Visual Studio pour Mac
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 75247EB8-323A-4AFD-A451-6703A03D5D1F
-ms.openlocfilehash: 8d6a45f8cdd46483dda5ef252a6235e7eb2f0a04
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 514792804515541b7e4f64359a08e9c6093c5018
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62997257"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985270"
 ---
 # <a name="managing-project-and-solution-properties"></a>Gestion des propriétés des projets et des solutions
 

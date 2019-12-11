@@ -1,18 +1,18 @@
 ---
 title: Commenter du code
 description: Cet article décrit l’utilisation de commentaires dans l’éditeur de source de Visual Studio pour Mac
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 0FE5E929-1846-4F48-B5E3-70990FAF9504
-ms.openlocfilehash: 1f792e5ba670854e4a3a9ce703212d18c16e5512
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 038c2bf7205ccc642d613893635b9323afe613b9
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62933027"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74982649"
 ---
-# <a name="comments"></a>Commentaires
+# <a name="comments"></a>Comments
 
 Durant le débogage ou l’expérimentation du code, il peut être utile de commenter des blocs de code, de façon temporaire ou à long terme.
 

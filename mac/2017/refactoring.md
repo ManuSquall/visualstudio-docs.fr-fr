@@ -1,19 +1,19 @@
 ---
 title: Refactorisation du code
 description: La réorganisation du code dans Visual Studio pour Mac est simplifiée via l’utilisation de l’analyse du code source.
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
 ms.custom: video
-ms.openlocfilehash: d7df01e2d2c6e4acb347b40cb82a04bee9394fe1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 7b11f09d8fb70612d4496987f69583b2ac691275
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62988726"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985233"
 ---
-# <a name="refactoring"></a>Refactorisation
+# <a name="refactoring"></a>Refactoring
 
 La refactorisation du code consiste à réorganiser, restructurer et clarifier le code existant tout en garantissant que le comportement global du code ne change pas.
 
@@ -21,7 +21,7 @@ Elle génère une base de code plus saine, rendant le code plus utilisable, lisi
 
 L’intégration de Visual Studio pour Mac à Roslyn, la plateforme de compilateurs .NET open source de Microsoft, permet une refactorisation plus importante.
 
-## <a name="renaming"></a>Renommage
+## <a name="renaming"></a>Renommer
 
 La commande de refactorisation *Renommer* peut être utilisée sur n’importe quel identificateur du code (par exemple un nom de classe, un nom de propriété, etc.) pour rechercher toutes les occurrences de cet identificateur et les changer. Pour renommer un symbole, cliquez avec le bouton droit sur celui-ci et choisissez **Refactoriser > Renommer**, ou la combinaison de touches **Cmd+R** :
 

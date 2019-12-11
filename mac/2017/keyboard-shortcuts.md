@@ -3,18 +3,18 @@ title: Raccourcis clavier par défaut
 description: Cet article répertorie les raccourcis clavier par défaut dans Visual Studio pour Mac
 ms.date: 03/14/2019
 author: bytesguy
-ms.author: crdun
+ms.author: dominicn
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: 371f1e93405d3034bda4259831cee27c6f52a40c
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
-ms.translationtype: HT
+ms.openlocfilehash: c0d51c0b458a1d4079eb935d40b09c260cf01186
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872245"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74983630"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Raccourcis clavier par défaut dans Visual Studio pour Mac
 
-Pour plus d’informations sur l’accessibilité au clavier, consultez [Procédure : Utiliser la navigation au clavier](accessibility.md#how-to-use-keyboard-navigation).
+Pour plus d’informations sur l’accessibilité du clavier, consultez [Comment : utiliser la navigation à l’aide du clavier](accessibility.md#how-to-use-keyboard-navigation).
 
 Pour accéder à diverses commandes dans Visual Studio pour Mac, vous pouvez utiliser les raccourcis clavier appropriés. Ce document répertorie les raccourcis par défaut du schéma de combinaison de touches **Visual Studio**. Pour plus d’informations sur la modification du schéma de combinaison de touches, consultez [Personnalisation de l’IDE](customizing-the-ide.md#key-bindings). Vous pouvez également personnaliser les raccourcis d’une commande à l’aide de l’élément de menu **Visual Studio pour Mac** > **Préférences** et en choisissant **Environnement**  >  **Combinaisons de touches** dans la fenêtre **Préférences**.
 
@@ -23,7 +23,7 @@ Pour accéder à diverses commandes dans Visual Studio pour Mac, vous pouvez uti
 
 ## <a name="code-navigation"></a>Navigation dans le code
 
-|Commandes|Raccourcis clavier|
+|Commands|raccourcis clavier|
 |-|-|
 |Rechercher de références|**⇧⌘R**, **F12**|
 |Atteindre la déclaration|**⇧⌘R**, **F12**|
@@ -34,7 +34,7 @@ Pour accéder à diverses commandes dans Visual Studio pour Mac, vous pouvez uti
 
 ## <a name="debug"></a>Débogage
 
-|Commandes|Raccourcis clavier|
+|Commands|raccourcis clavier|
 |-|-|
 |Activer ou Désactiver le point d’arrêt|**⌥⌘ /** , **⌘F9**|
 |Pause|**⌥⌘P**, **⌥⌘L5**|
@@ -45,18 +45,18 @@ Pour accéder à diverses commandes dans Visual Studio pour Mac, vous pouvez uti
 |Pas à pas détaillé|**⇧⌘I**, **⌘F11**|
 |Pas à pas sortant|**⇧⌘U**, **⇧⌘F11**|
 |Pas à pas principal|**⇧⌘O**, **F10**|
-|Point d'arrêt|**⌘\\** , **F9**|
+|Basculer le point d’arrêt|**⌘\\** , **F9**|
 |Afficher les points d’arrêt|**⌥⌘B**|
 
 ## <a name="designer"></a>Designer
 
-|Commandes|Raccourcis clavier|
+|Commands|raccourcis clavier|
 |-|-|
 |Basculer entre fichiers associés|**⌃⌘↑**|
 
-## <a name="edit"></a>Modifier
+## <a name="edit"></a>Edit
 
-|Commandes|Raccourcis clavier|
+|Commands|raccourcis clavier|
 |-|-|
 |Mode d’édition de contrainte|**⌘E**|
 |Copier|**⌘C**|
@@ -68,7 +68,7 @@ Pour accéder à diverses commandes dans Visual Studio pour Mac, vous pouvez uti
 |Préférences|**⌘,**|
 |Rétablir|**⇧⌘Z**|
 |Renommer|**⌘R**, **F2**|
-|Tout Sélectionner|**⌘A**|
+|Sélectionner tout|**⌘A**|
 |Afficher les préférences de génération du code|**⌘I**|
 |Activer/Désactiver tous les plis|**⌥⇧⌘↑**|
 |Activer/Désactiver les définitions|**⌥⇧⌘↓**|
@@ -80,7 +80,7 @@ Pour accéder à diverses commandes dans Visual Studio pour Mac, vous pouvez uti
 
 ## <a name="f-integration"></a>Intégration F#
 
-|Commandes|Raccourcis clavier|
+|Commands|raccourcis clavier|
 |-|-|
 |Effacer F# Interactive|**⌃⌥C**|
 |F# Interactive|**⌃⌥F**|
@@ -89,78 +89,78 @@ Pour accéder à diverses commandes dans Visual Studio pour Mac, vous pouvez uti
 |Envoyer des références à F# Interactive|**⌃⌥P**|
 |Envoyer une sélection à F# Interactive|**⌃⏎**|
 
-## <a name="file"></a>Fichier
+## <a name="file"></a>File
 
-|Commandes|Raccourcis clavier|
+|Commands|raccourcis clavier|
 |-|-|
 |Fermer tout|**⇧⌘W**|
 |Fermer le fichier|**⌘W**|
 |Fermer l’espace de travail|**⌥⌘W**|
 |Nouveau fichier|**⌘N**|
 |Nouvelle solution|**⇧⌘N**|
-|Ouvrir|**⌘O**|
+|Open|**⌘O**|
 |Imprimer|**⌘P**|
-|Quitter|**⌘Q**|
+|Quit|**⌘Q**|
 |Revenir à la dernière version|**⌘U**|
 |Enregistrer|**⌘S**|
 |Enregistrer tout|**⇧⌘S**|
 
-## <a name="help"></a>Help
+## <a name="help"></a>Aide
 
-|Commandes|Raccourcis clavier|
+|Commands|raccourcis clavier|
 |-|-|
 |Documentation sur l’API|**⌥⌘ ?**|
 |Informations de référence sur l’API Unity|**⌘’**|
 
 ## <a name="other"></a>Autre
 
-|Commandes|Raccourcis clavier|
+|Commands|raccourcis clavier|
 |-|-|
 |Implémenter les messages Unity|**⇧⌘M**|
 |Inspecter|**⌥⌘I**|
 
 ## <a name="project"></a>Projet
 
-|Commandes|Raccourcis clavier|
+|Commands|raccourcis clavier|
 |-|-|
 |Ajouter des fichiers|**⌥⌘A**|
 |Générer|**⌘K**, **⇧F6**|
 |Tout générer|**⌘B**, **F6**|
 |Nettoyer|**⇧⌘K**|
-|Rebuild|**⌃⌘K**|
+|Régénérer|**⌃⌘K**|
 |Tout regénérer|**⌃⌘B**|
-|Démarrer le débogage|**⌘⏎**, **F5**|
-|Démarrer sans débogage|**⌥⌘⏎**, **⌃F5**|
+|Lancement du débogage|**⌘⏎**, **F5**|
+|Exécuter sans débogage|**⌥⌘⏎**, **⌃F5**|
 |Arrêter|**⇧⌘⏎**, **⇧F5**|
 
-## <a name="refactoring"></a>Refactorisation
+## <a name="refactoring"></a>Refactoring
 
-|Commandes|Raccourcis clavier|
+|Commands|raccourcis clavier|
 |-|-|
 |Importer un symbole|**⌃⌥␣**|
 |Correctif rapide|**⌥⏎**|
 
 ## <a name="search"></a>Rechercher
 
-|Commandes|Raccourcis clavier|
+|Commands|raccourcis clavier|
 |-|-|
-|Commande|**⇧⌘P**|
+|Command|**⇧⌘P**|
 |Rechercher dans les fichiers|**⇧⌘F**|
 |Rechercher le suivant|**⌘G**, **F3**|
 |Rechercher la sélection suivante similaire|**⌘E**, **⌘F3**|
-|Rechercher le précédent|**⇧⌘G**, **⇧F3**|
+|Précédent|**⇧⌘G**, **⇧F3**|
 |Rechercher la sélection précédente similaire|**⇧⌘F3**|
-|Find|**⌘F**|
+|Trouver|**⌘F**|
 |Atteindre le fichier|**⇧⌘D**|
 |Atteindre la ligne|**⌘L**|
 |Atteindre le type|**⇧⌘T**|
 |Boîte de dialogue Naviguer vers|**⌘.**|
 |Remplacer dans les fichiers|**⌥⇧⌘F**|
-|Replace|**⌥⌘F**|
+|Remplacer|**⌥⌘F**|
 
 ## <a name="text-editor"></a>Éditeur de texte
 
-|Commandes|Raccourcis clavier|
+|Commands|raccourcis clavier|
 |-|-|
 |Compléter le mot|**⌃␣**|
 |Supprimer le caractère à gauche|**⌃H**|
@@ -209,9 +209,9 @@ Pour accéder à diverses commandes dans Visual Studio pour Mac, vous pouvez uti
 |Permuter les caractères|**⌃T**|
 |Inclure avec &lt;div&gt;|**⌥⇧W**|
 
-## <a name="view"></a>Vue
+## <a name="view"></a>Consultez la rubrique .
 
-|Commandes|Raccourcis clavier|
+|Commands|raccourcis clavier|
 |-|-|
 |Centrage et focus sur le document|**⌃L**|
 |Focus sur le document|**F7**|
@@ -230,7 +230,7 @@ Pour accéder à diverses commandes dans Visual Studio pour Mac, vous pouvez uti
 
 ## <a name="window"></a>Fenêtre
 
-|Commandes|Raccourcis clavier|
+|Commands|raccourcis clavier|
 |-|-|
 |Activer 1|**⌘1**|
 |Activer 2|**⌘2**|
@@ -253,7 +253,7 @@ Pour accéder à diverses commandes dans Visual Studio pour Mac, vous pouvez uti
 
 ## <a name="macos-key-symbols-lookup"></a>Recherche de symboles de touches macOS
 
-|Symbole|Touche|
+|Symbole|Clé|
 |-|-|
 |⌘|**Commande** (**cmd**)|
 |⌥|**Option** (**alt**)|

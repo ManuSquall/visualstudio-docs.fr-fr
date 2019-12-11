@@ -1,21 +1,21 @@
 ---
 title: Utilisation de Git
 description: Utilisation de Git dans Visual Studio pour Mac.
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
 ms.custom: video
-ms.openlocfilehash: 2d18ef3d693c3906c1312cfecb8da605c6a27226
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
-ms.translationtype: HT
+ms.openlocfilehash: 33148c5202251525504864f26177da4497b5fabe
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692966"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74983567"
 ---
 # <a name="working-with-git"></a>Utilisation de Git
 
-Git est un système de gestion de versions distribué qui permet aux équipes de travailler simultanément sur les mêmes documents. Cela signifie qu’il existe un seul serveur contenant tous les fichiers, mais que quand un dépôt est extrait de cette source centrale, l’intégralité du dépôt est clonée sur la machine locale.
+GiT est un système de gestion de versions distribué qui permet aux équipes de travailler simultanément sur les mêmes documents. Cela signifie qu’il existe un seul serveur contenant tous les fichiers, mais que quand un dépôt est extrait de cette source centrale, l’intégralité du dépôt est clonée sur la machine locale.
 
 Dans les sections ci-dessous, nous allons examiner comment Git peut être utilisé pour la gestion de version dans Visual Studio pour Mac.
 
