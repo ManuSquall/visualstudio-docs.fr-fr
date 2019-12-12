@@ -5,19 +5,19 @@ description: Liste des versions publiées et des numéros de build de Visual Stu
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 12/03/2019
+ms.date: 12/10/2019
 ms.topic: reference
 ms.custom: seodec18
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 1520f5f74ea28850d615b93f37278c4cda090988
-ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
+ms.openlocfilehash: 752e1a73686a5932682642555089988f49c0eb1a
+ms.sourcegitcommit: 2485f597d909e8176622af25678bc3764fcd860c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74797234"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000262"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numéros de builds et dates de publication de Visual Studio
 
@@ -29,6 +29,8 @@ Le tableau suivant liste les numéros de build et les dates de publication de Vi
 
 | **Version**| **Canal** | **Date de publication** | **Version de build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.4.1 | Édition | 10 décembre 2019 | 16.4.29609.76 |
+| 16.0.10 | Édition | 10 décembre 2019 | 16.0.28803.631 |
 | 16.5.0 | Préversion 1 | 3 décembre 2019 | 16.5.29521.150 |
 | 16.4.0 | Édition | 3 décembre 2019 | 16.4.29519.181 |
 | 16.4.0 | Préversion 6 | 21 novembre 2019 | 16.4.29519.161 |
@@ -116,6 +118,7 @@ Le tableau suivant répertorie les numéros de build et les dates de publication
 
 | **Version**| **Canal** | **Date de publication** | **Version de build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.18 | Édition | 10 décembre 2019 | 15.9.28307.960 |
 | 15.9.17 | Édition | 15 octobre 2019 | 15.9.28307.905 |
 | 15.9.16 | Édition | 10 septembre 2019 | 15.9.28307.858 |
 | 15.0.27 | Édition | 10 septembre 2019 | 15.0.26228.98 |
