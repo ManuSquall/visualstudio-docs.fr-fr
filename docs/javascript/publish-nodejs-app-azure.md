@@ -1,7 +1,7 @@
 ---
 title: Publier une application Node.js sur App Service Linux
 description: Vous pouvez publier des applications Node.js créées dans Visual Studio sur App Service Linux sur Azure.
-ms.date: 11/1/2018
+ms.date: 11/22/2019
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: e02e232f8ebfd9454842de5aabaa1706a0df6202
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: HT
+ms.openlocfilehash: c304aca5171e1addab9a941105f11fb534eaa5ff
+ms.sourcegitcommit: e825d1223579b44ee2deb62baf4de0153f99242a
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65695921"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74474018"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>Publier une application Node.js sur Azure (App Service Linux)
 
@@ -36,7 +36,7 @@ Dans ce didacticiel, vous apprendrez à :
 > * Créer un service d’applications Linux sur Azure
 > * Déployer sur Linux
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Conditions préalables requises
 
 * Au préalable, vous devez avoir installé Visual Studio et la charge de travail de développement Node.js.
 
@@ -47,7 +47,7 @@ Dans ce didacticiel, vous apprendrez à :
     Si vous n’avez pas encore installé Visual Studio 2017, accédez à la page  [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/)  pour l’installer gratuitement.
     ::: moniker-end
 
-    Si vous devez installer la charge de travail, mais que vous avez déjà installé Visual Studio, cliquez sur **Outils** > **Obtenir les outils et fonctionnalités...**, qui ouvre Visual Studio Installer. Choisissez la charge de travail **Développement Node.js**, puis choisissez **Modifier**.
+    Si vous devez installer la charge de travail, mais que vous avez déjà installé Visual Studio, cliquez sur **Outils** > **Obtenir les outils et fonctionnalités...** , qui ouvre Visual Studio Installer. Choisissez la charge de travail **Développement Node.js**, puis choisissez **Modifier**.
 
     ![Charge de travail Node.js dans Visual Studio Installer](../ide/media/quickstart-nodejs-workload.png)
 
@@ -130,15 +130,17 @@ Pour configurer GitHub pour Visual Studio
     > [!WARNING]
     > Le processus de déploiement du service d’applications utilise un ensemble de paramètres heuristiques pour déterminer le type d’application à essayer d’exécuter. Si un fichier *.sln* est détecté dans le contenu déployé, il part du principe qu’un projet basé sur MSBuild est déployé. Le paramètre ajouté ci-dessus remplace cette logique et spécifie explicitement qu’il s’agit d’une application Node.js. Sans ce paramètre, le déploiement de l’application Node.js échoue si le fichier *.sln* fait partie du dépôt en cours de déploiement sur le service d’applications.
 
-7. Après le déploiement, ouvrez le service d’applications et sélectionnez **Options de déploiement**.
+7. Sous **paramètres**de l’application, ajoutez un autre paramètre avec le nom `WEBSITE_NODE_DEFAULT_VERSION` et la valeur `8.9.0`.
+
+8. Après le déploiement, ouvrez le service d’applications et sélectionnez **Options de déploiement**.
 
     ![Options de déploiement](../javascript/media/azure-deployment-options.png)
 
-8. Cliquez sur **Choisir une source**, choisissez **GitHub**, puis configurez les autorisations requises.
+9. Cliquez sur **Choisir une source**, choisissez **GitHub**, puis configurez les autorisations requises.
 
     ![Autorisations GitHub](../javascript/media/azure-choose-source.png)
 
-9. Sélectionnez le dépôt et la branche à publier, puis sélectionnez **OK**.
+10. Sélectionnez le dépôt et la branche à publier, puis sélectionnez **OK**.
 
     ![Publier sur App Service Linux](../javascript/media/azure-repo-and-branch.png)
 
@@ -173,7 +175,7 @@ Pour configurer GitHub pour Visual Studio
 * Si le processus node.exe s’arrête (autrement dit, si une exception non gérée se produit), le conteneur redémarre.
 * Quand le conteneur démarre, il passe par diverses méthodes heuristiques pour déterminer comment démarrer le processus Node.js. Vous pouvez consulter les détails de l’implémentation dans [generateStartupCommand.js](https://github.com/Azure-App-Service/node/blob/master/8.9.4/startup/generateStartupCommand.js).
 * Vous pouvez vous connecter au conteneur en cours d’exécution par le biais du protocole SSH si vous souhaitez effectuer un examen approfondi. Cette opération peut s’effectuer facilement à l’aide du portail Azure. Sélectionnez le service d’applications et faites défiler la liste des outils jusqu’à atteindre **SSH** sous la section **Outils de développement**.
-* Pour faciliter le dépannage, accédez aux paramètres de **Journaux de diagnostic** du service d’applications et faites passer le paramètre **Journalisation de conteneur Docker** de **Désactivé** à **Système de fichiers**. Les journaux sont créés dans le conteneur sous */home/LogFiles/*_docker.log* et sont accessibles à l’aide de SSH ou FTP(S).
+* Pour faciliter le dépannage, accédez aux paramètres de **Journaux de diagnostic** du service d’applications et faites passer le paramètre **Journalisation de conteneur Docker** de **Désactivé** à **Système de fichiers**. Les journaux sont créés dans le conteneur sous */home/LogFiles/* _docker.log* et sont accessibles à l’aide de SSH ou FTP(S).
 * Vous pouvez assigner un nom de domaine personnalisé au site, à la place de l’URL *. azurewebsites.net affectée par défaut. Pour plus d’informations, consultez la rubrique [Mapper un domaine personnalisé](/azure/app-service/app-service-web-tutorial-custom-domain).
 * Le déploiement sur un site de préproduction afin de procéder à d’autres tests avant de passer en production constitue une bonne pratique. Pour plus d’informations sur la façon de configurer cela, consultez la rubrique [Créer des environnements intermédiaires](/azure/app-service/web-sites-staged-publishing).
 * Pour obtenir des réponses aux questions les plus fréquentes, consultez le [FAQ d’Azure App Service sur Linux](/azure/app-service/containers/app-service-linux-faq).
