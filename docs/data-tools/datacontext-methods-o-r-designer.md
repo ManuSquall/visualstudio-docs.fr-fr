@@ -3,17 +3,17 @@ title: DataContext, méthodes (Concepteur O-R)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c149f4e5-3b61-4c33-892e-3e26d47f3eeb
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0e81f2337931f565e0068a852bf9b8284350690c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b8b9d322ea9c805b7fc1ce55dbf93b72b29958af
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648539"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586703"
 ---
 # <a name="datacontext-methods-or-designer"></a>DataContext, méthodes (Concepteur O/R)
 
@@ -26,7 +26,7 @@ La classe <xref:System.Data.Linq.DataContext> est une classe [!INCLUDE[vbtecdlin
 <xref:System.Data.Linq.DataContext> méthodes qui mappent aux procédures stockées et aux fonctions sont affichées dans le volet de **méthodes** du **Concepteur O/R**. Le volet **Méthodes** est le volet situé le long du côté du volet **Entités** (l’aire de conception principale). Le volet **méthodes** répertorie toutes les méthodes de <xref:System.Data.Linq.DataContext> que vous avez créées à l’aide du **Concepteur O/R**. Par défaut, le volet de **méthodes** est vide. Faites glisser des procédures stockées ou des fonctions de **Explorateur de serveurs** ou **Explorateur de base de données** vers le **Concepteur O/R** pour créer <xref:System.Data.Linq.DataContext> méthodes et remplir le volet de **méthodes** . Pour plus d’informations, consultez [Comment : créer des méthodes DataContext mappées à des procédures stockées et des fonctions (Concepteur O/R)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md).
 
 > [!NOTE]
-> Ouvrez et fermez le volet méthodes en cliquant avec le bouton droit sur le **Concepteur O/R** , puis en cliquant sur **masquer le volet méthodes** ou **afficher le volet méthodes**, ou utilisez le raccourci clavier **CTRL** +**1**.
+> Ouvrez et fermez le volet méthodes en cliquant avec le bouton droit sur le **Concepteur O/R** , puis en cliquant sur **masquer le volet méthodes** ou **afficher le volet méthodes**, ou utilisez le raccourci clavier **CTRL**+**1**.
 
 ## <a name="two-types-of-datacontext-methods"></a>Deux types de méthodes DataContext
 
@@ -34,7 +34,7 @@ Les méthodes DataContext sont les méthodes qui mappent aux procédures stocké
 
 - Méthodes <xref:System.Data.Linq.DataContext> qui retournent un ou plusieurs jeux de résultats :
 
-   Créez ce type de méthode <xref:System.Data.Linq.DataContext> lorsque votre application doit juste exécuter des procédures stockées et des fonctions dans la base de données et retourner les résultats. Pour plus d’informations, consultez [Comment : créer des méthodes DataContext mappées à des procédures stockées et des fonctions (Concepteur O/R)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md), System. Data. Linq. ISingleResult \<T > et <xref:System.Data.Linq.IMultipleResults>.
+   Créez ce type de méthode <xref:System.Data.Linq.DataContext> lorsque votre application doit juste exécuter des procédures stockées et des fonctions dans la base de données et retourner les résultats. Pour plus d’informations, consultez [Comment : créer des méthodes DataContext mappées à des procédures stockées et des fonctions (Concepteur O/R)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md), System. Data. Linq. ISingleResult\<t > et <xref:System.Data.Linq.IMultipleResults>.
 
 - Méthodes <xref:System.Data.Linq.DataContext> qui ne retournent aucun jeu de résultats, par exemple celles qui effectuent des insertions, des mises à jour et des suppressions pour une classe d'entité spécifique.
 

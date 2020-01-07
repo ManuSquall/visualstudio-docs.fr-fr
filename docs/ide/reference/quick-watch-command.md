@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Quick Watch command
 - Debug.Quickwatch command
 ms.assetid: 9670ac3a-8f2f-4874-974d-cb87d3b0cde1
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1de6841f25bcc6f6c45bde93fdd4cf2cb49481ab
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8f6382a79884bf8c3891a3a191b594bf183efb62
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747806"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565628"
 ---
 # <a name="quick-watch-command"></a>Espion express, commande
 Affiche le texte sélectionné ou spécifié dans le champ Expression de la fenêtre [Espion express](../../debugger/watch-and-quickwatch-windows.md). Vous pouvez utiliser cette boîte de dialogue pour calculer la valeur actuelle d’une variable ou d’une expression reconnue par le débogueur, ou le contenu d’un Registre. Vous pouvez aussi modifier la valeur de toute variable non constante ou le contenu de tout Registre.
@@ -32,7 +32,7 @@ Debug.QuickWatchq [text]
 ## <a name="arguments"></a>Arguments
 
 `text`\
-Optionnel. Texte à ajouter à la boîte de dialogue **Espion express**.
+Option facultative. Texte à ajouter à la boîte de dialogue **Espion express**.
 
 ## <a name="remarks"></a>Notes
 
@@ -47,7 +47,7 @@ Si l’argument `text` est omis, le texte ou mot sélectionné au niveau du curs
 ## <a name="see-also"></a>Voir aussi
 
 - [Définir un espion sur les variables à l’aide des fenêtres Espion et Espion express dans Visual Studio](../../debugger/watch-and-quickwatch-windows.md)
-- [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Commande, fenêtre](../../ide/reference/command-window.md)
+- [Visual Studio, commandes](../../ide/reference/visual-studio-commands.md)
+- [Fenêtre Commande](../../ide/reference/command-window.md)
 - [Rechercher/Commande, zone](../../ide/find-command-box.md)
 - [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

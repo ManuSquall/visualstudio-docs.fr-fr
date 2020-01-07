@@ -9,19 +9,19 @@ f1_keywords:
 helpviewer_keywords:
 - Convert dialog box
 ms.assetid: 56f23ef7-17c4-4d76-9ead-982bbcd42061
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f76cd5172df15aa1adc0dcf9dd4f5a8750652eff
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d5348bb82d54f2914a5b8ee26ada0f924f592aab
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654564"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595733"
 ---
-# <a name="convert-dialog-box"></a>Convertir (boîte de dialogue)
+# <a name="convert-dialog-box"></a>Boîte de dialogue Convertir
 
 La boîte de dialogue **Convertir** était utilisée dans les versions précédentes de Visual Studio et elle est maintenant dépréciée.
 

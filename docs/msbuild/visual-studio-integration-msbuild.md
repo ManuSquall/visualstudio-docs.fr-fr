@@ -15,17 +15,17 @@ helpviewer_keywords:
 - MSBuild, in-process compilers
 - MSBuild, design-time target execution
 ms.assetid: 06cd6d7f-8dc1-4e49-8a72-cc9e331d7bca
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00d64b060b340302107ddffaf1d69cad802a283b
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: b1ddb8bdbc913a72791144d5e9d29d206712a3d6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913285"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594420"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Intégration de Visual Studio (MSBuild)
 Visual Studio héberge [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pour charger et générer des projets managés. Dans la mesure où [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] est responsable du projet, la plupart des projets au format [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] peut être utilisé sans problème dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], même si le projet a été créé par un outil différent et possède un processus de génération personnalisé.
@@ -66,9 +66,9 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 > Certains noms de types d'éléments sont spécifiques à [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] mais ne sont pas répertoriés dans cette liste déroulante.
 
 ## <a name="in-process-compilers"></a>Compilateurs in-process
- Lorsque c'est possible, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tente d'utiliser la version intra-processus du compilateur [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] pour améliorer les performances. (Non applicable à [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].) Pour un fonctionnement correct, les conditions suivantes doivent être respectées :
+ Lorsque c'est possible, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tente d'utiliser la version intra-processus du compilateur [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] pour améliorer les performances. (Non applicable à [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].) Pour que cela fonctionne correctement, les conditions suivantes doivent être remplies :
 
-- Une cible du projet doit contenir une tâche nommée `Vbc` pour les projets [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)].
+- Une cible du projet doit contenir une tâche nommée `Vbc` pour les projets [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] .
 
 - Le paramètre `UseHostCompilerIfAvailable` de la tâche doit avoir la valeur true.
 
@@ -120,7 +120,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
  Lorsqu'il faut déterminer l'affichage de l'élément dans l'**Explorateur de solutions**, les expressions conditionnelles associées à des éléments sont toujours ignorées.
 
-## <a name="debugging"></a>Débogage
+## <a name="debugging"></a>débogage
  Pour rechercher et lancer l'assembly de sortie ainsi qu'attacher le débogueur, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] a besoin des propriétés `OutputPath`, `AssemblyName`et `OutputType` correctement définies. Il ne sera pas possible d'attacher le débogueur si le processus de génération n'a pas donné lieu à la génération d'un fichier *.pdb* par le compilateur.
 
 ## <a name="design-time-target-execution"></a>Exécution des cibles au moment du design
@@ -176,12 +176,12 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
    Le système de projet appelle une cible avec le nom connu `ResolveNativeReferences`. Cette cible doit produire des éléments avec le nom de type d'élément `NativeReferenceFile`. Les éléments doivent avoir toutes les métadonnées des éléments d'entrée passés, en plus d'une nouvelle métadonnée nommée `OriginalItemSpec`, contenant la spécification d'élément d'origine de la référence.
 
 ## <a name="performance-shortcuts"></a>Raccourcis de performances
- Si vous utilisez l’IDE de Visual Studio pour démarrer le débogage (en choisissant la touche F5 ou en choisissant **Déboguer** > **Démarrer le débogage** dans la barre de menus) ou **pour générer votre** > projet (par exemple, générer la**solution de build** ) ), le processus de génération utilise une vérification de mise à jour rapide pour améliorer les performances. Dans les cas où les générations personnalisées créent les fichiers qui sont générés à leur tour, la vérification de mise à jour rapide n'identifie pas correctement les fichiers modifiés. Les projets qui ont besoin de vérifications de mise à jour plus complètes peuvent désactiver la vérification rapide en définissant la variable d'environnement `DISABLEFASTUPTODATECHECK=1`. Les projets peuvent également définir cela comme une propriété MSBuild dans le projet ou dans un fichier que le projet importe.
+ Si vous utilisez l’IDE de Visual Studio pour démarrer le débogage (en choisissant la touche F5 ou en choisissant **Déboguer** > **Démarrer le débogage** dans la barre de menus) ou pour générer votre projet (par exemple, **générer** > **générer la solution**), le processus de génération utilise une vérification de mise à jour rapide pour améliorer les performances. Dans les cas où les générations personnalisées créent les fichiers qui sont générés à leur tour, la vérification de mise à jour rapide n'identifie pas correctement les fichiers modifiés. Les projets qui ont besoin de vérifications de mise à jour plus complètes peuvent désactiver la vérification rapide en définissant la variable d'environnement `DISABLEFASTUPTODATECHECK=1`. Les projets peuvent également définir cela comme une propriété MSBuild dans le projet ou dans un fichier que le projet importe.
 
  Pour des builds classiques dans Visual Studio, la vérification des mises à jour rapide ne s'applique pas, et le projet est généré comme si vous appeliez la build dans une invite de commandes.
 
 ## <a name="see-also"></a>Voir aussi
-- [Guide pratique pour étendre le processus de génération Visual Studio](../msbuild/how-to-extend-the-visual-studio-build-process.md)
+- [Comment : étendre le processus de génération Visual Studio](../msbuild/how-to-extend-the-visual-studio-build-process.md)
 - [Démarrer une build à partir de l’IDE](../msbuild/starting-a-build-from-within-the-ide.md)
 - [Inscrire des extensions du .NET Framework](../msbuild/registering-extensions-of-the-dotnet-framework.md)
 - [Concepts MSBuild](../msbuild/msbuild-concepts.md)

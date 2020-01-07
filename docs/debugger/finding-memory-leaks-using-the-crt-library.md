@@ -3,9 +3,6 @@ title: Rechercher les fuites de mémoire avec la bibliothèque CRT | Microsoft D
 ms.date: 10/04/2018
 ms.topic: conceptual
 dev_langs:
-- CSharp
-- VB
-- FSharp
 - C++
 helpviewer_keywords:
 - breakpoints, on memory allocation
@@ -29,18 +26,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb2729dcaf0da41c0adac24b0e1909a6d2697eb6
-ms.sourcegitcommit: 697f2ab875fd789685811687387e9e8e471a38c4
+ms.openlocfilehash: 13a346aa0212f4830c2c88ed866b674fc19d30bd
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74829942"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75404978"
 ---
 # <a name="find-memory-leaks-with-the-crt-library"></a>Rechercher les fuites de mémoire avec la bibliothèque CRT
 
 Les fuites de mémoire sont parmi les bogues les plus subtiles et les plus difficilesC++ à détecter dans C/apps. Les fuites de mémoire résultent de l’échec de la désallocation correcte de la mémoire qui a été précédemment allouée. Une petite fuite de mémoire peut ne pas être remarquée au début, mais au fil du temps peut entraîner des symptômes allant de mauvaises performances au blocage lorsque l’application manque de mémoire. Une application présentant une fuite qui utilise toute la mémoire disponible peut provoquer le blocage d’autres applications, créant ainsi une confusion en ce qui concerne l’application responsable. Même les fuites de mémoire sans incidence peuvent indiquer d’autres problèmes qui doivent être corrigés.
 
- Le débogueur [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] et la bibliothèque Runtime C (CRT) peuvent vous aider à détecter et identifier les fuites de mémoire.
+Le débogueur [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] et la bibliothèque Runtime C (CRT) peuvent vous aider à détecter et identifier les fuites de mémoire.
 
 ## <a name="enable-memory-leak-detection"></a>Activer la détection des fuites de mémoire
 
@@ -216,7 +213,8 @@ _CrtSetBreakAlloc(18);
 ```
 
 ## <a name="compare-memory-states"></a>Comparer les États de la mémoire
- Une autre technique pour détecter les fuites de mémoire consiste à prendre des instantanés de l'état de la mémoire de l'application en certains points clés. Pour prendre un instantané de l’état de la mémoire à un point donné de votre application, créez une structure `_CrtMemState` et transmettez-la à la fonction `_CrtMemCheckpoint`.
+
+Une autre technique pour détecter les fuites de mémoire consiste à prendre des instantanés de l'état de la mémoire de l'application en certains points clés. Pour prendre un instantané de l’état de la mémoire à un point donné de votre application, créez une structure `_CrtMemState` et transmettez-la à la fonction `_CrtMemCheckpoint`.
 
 ```cpp
 _CrtMemState s1;
@@ -259,9 +257,11 @@ if ( _CrtMemDifference( &s3, &s1, &s2) )
 L’une des techniques permettant de rechercher les fuites de mémoire consiste à placer `_CrtMemCheckpoint` appels au début et à la fin de votre application, puis à utiliser `_CrtMemDifference` pour comparer les résultats. Si `_CrtMemDifference` présente une fuite de mémoire, vous pouvez ajouter des appels `_CrtMemCheckpoint` pour diviser votre programme à l’aide d’une recherche binaire, jusqu’à ce que vous ayez isolé la source de la fuite.
 
 ## <a name="false-positives"></a>Faux positifs
+
  `_CrtDumpMemoryLeaks` pouvez fournir des fausses indications de fuites de mémoire si une bibliothèque marque des allocations internes comme blocs normaux plutôt que des blocs CRT ou des blocs client. Dans ce cas, `_CrtDumpMemoryLeaks` est incapable d'indiquer la différence entre les allocations d'utilisateur et les allocations de bibliothèque internes. Si les destructeurs globaux des allocations de la bibliothèque s'exécutent après le point d'appel à `_CrtDumpMemoryLeaks`, chaque allocation de bibliothèque interne est signalée comme une fuite de mémoire. Les versions de la bibliothèque STL (Standard Template Library) antérieures à Visual Studio .NET peuvent entraîner des `_CrtDumpMemoryLeaks` de tels faux positifs.
 
 ## <a name="see-also"></a>Voir aussi
+
 - [Détails du tas de débogage CRT](../debugger/crt-debug-heap-details.md)
 - [Sécurité du débogueur](../debugger/debugger-security.md)
 - [Débogage du code natif](../debugger/debugging-native-code.md)
