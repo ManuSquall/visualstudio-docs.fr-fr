@@ -15,17 +15,17 @@ helpviewer_keywords:
 - XML documents, reading
 - datasets [Visual Basic], reading XML data
 ms.assetid: fae72958-0893-47d6-b3dd-9d42418418e4
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6dec7cad50d818d4b2418442d8196cb8b5ff046a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5f89645b9d5ec8ab0f69fad4fea5a399d8e6764d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641375"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586326"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Lire les données XML dans un dataset
 
@@ -137,13 +137,13 @@ L’interface utilisateur de cette application se compose des éléments suivant
 
 3. Définissez les propriétés suivantes :
 
-    |Contrôle|Property|Paramètre|
+    |Contrôle|Les|Paramètre|
     |-------------|--------------|-------------|
     |`TextBox1`|**Multiline**|`true`|
     ||**ScrollBars**|**Vertical**|
-    |`Button1`|**Nom**|`ReadXmlButton`|
+    |`Button1`|**Name**|`ReadXmlButton`|
     ||**Texte**|`Read XML`|
-    |`Button2`|**Nom**|`ShowSchemaButton`|
+    |`Button2`|**Name**|`ShowSchemaButton`|
     ||**Texte**|`Show Schema`|
 
 ## <a name="create-the-dataset-that-receives-the-xml-data"></a>Créer le DataSet qui reçoit les données XML
@@ -158,7 +158,7 @@ Dans cette étape, vous créez un jeu de données nommé `authors`. Pour plus d�
 
      **DataSet1** est ajouté à la barre d’état des composants.
 
-4. Dans la fenêtre **Propriétés** , définissez les propriétés **Name** et <xref:System.Data.DataSet.DataSetName%2A> pour `AuthorsDataSet`.
+4. Dans la fenêtre **Propriétés** , définissez les propriétés **Name** et <xref:System.Data.DataSet.DataSetName%2A> pour`AuthorsDataSet`.
 
 ## <a name="create-the-event-handler-to-read-the-xml-file-into-the-dataset"></a>Créer le gestionnaire d’événements pour lire le fichier XML dans le jeu de données
 
@@ -179,7 +179,7 @@ Le bouton **lire XML** lit le fichier XML dans le jeu de données. Il définit e
 
 ## <a name="create-the-event-handler-to-display-the-schema-in-the-textbox"></a>Créer le gestionnaire d’événements pour afficher le schéma dans la zone de texte
 
-Le bouton **afficher le schéma** crée un objet <xref:System.IO.StringWriter> qui est rempli avec le schéma et s’affiche dans le <xref:System.Windows.Forms.TextBox>control.
+Le bouton **afficher le schéma** crée un objet <xref:System.IO.StringWriter> qui est rempli avec le schéma et s’affiche dans le contrôle <xref:System.Windows.Forms.TextBox>.
 
 1. Dans **Explorateur de solutions**, sélectionnez **Form1**, puis cliquez sur le bouton **Concepteur de vues** .
 
@@ -206,7 +206,7 @@ Vous pouvez maintenant tester le formulaire pour vous assurer qu’il se comport
 
      La zone de texte affiche le schéma XML pour le fichier XML.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 Cette procédure pas à pas vous apprend les bases de la lecture d’un fichier XML dans un jeu de données, ainsi que la création d’un schéma basé sur le contenu du fichier XML. Voici quelques tâches que vous pouvez effectuer ensuite :
 
