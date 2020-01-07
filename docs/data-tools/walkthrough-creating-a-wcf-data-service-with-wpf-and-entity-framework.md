@@ -11,17 +11,17 @@ helpviewer_keywords:
 - ADO.NET Data Services, Visual Studio
 - WCF data services in Visual Studio
 ms.assetid: da66ad1b-a25d-485c-af13-2d18f0422e3d
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c17872b7fcfd0ecfa7c927880980fce79f432451
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9abdeee9a785a8bccf6cbb580c87bae4fa313036
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648079"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585988"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Procédure pas à pas : Création d’un service de données WCF avec WPF et Entity Framework
 Cette procédure pas à pas montre comment créer un [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] simple qui est hébergé dans une application web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], puis comment y accéder à partir d’une application Windows Forms.
@@ -32,7 +32,7 @@ Dans cette procédure pas à pas, vous allez :
 
 - Créez un [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] qui représente la table `Customers` dans la base de données Northwind.
 
-- Créer un [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)].
+- Créez un [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)].
 
 - Créer une application cliente et ajouter une référence au [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)].
 
@@ -84,7 +84,7 @@ Dans la première étape, vous ajoutez un projet Web pour héberger le service.
 
 3. Dans la zone de texte **nom** , entrez `NorthwindModel`, puis cliquez sur le bouton **Ajouter** .
 
-     L'Assistant Entity Data Model s'affiche.
+     L'Assistant EDM s'affiche.
 
 4. Dans l’Assistant EDM, dans la page **Choisir le contenu du modèle**, choisissez l’élément **Concepteur EF à partir d’une base de données**, puis cliquez sur le bouton **Suivant**.
 
@@ -92,7 +92,7 @@ Dans la première étape, vous ajoutez un projet Web pour héberger le service.
 
     - Si une connexion de données à l'exemple de base de données Northwind est disponible dans la liste déroulante, choisissez-la.
 
-         ou
+         \- ou -
 
     - Choisissez le bouton **Nouvelle connexion** pour configurer une nouvelle connexion de données. Pour plus d’informations, consultez [ajouter de nouvelles connexions](../data-tools/add-new-connections.md).
 
@@ -132,7 +132,7 @@ Dans la première étape, vous ajoutez un projet Web pour héberger le service.
      [!code-vb[WCFDataServiceWalkthrough#2](../data-tools/codesnippet/VisualBasic/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework_2.vb)]
      [!code-csharp[WCFDataServiceWalkthrough#2](../data-tools/codesnippet/CSharp/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework_2.cs)]
 
-6. Dans la barre de menus, choisissez **Déboguer**  >  exécuter**sans débogage** pour exécuter le service. Une fenêtre de navigateur s’ouvre et le schéma XML pour le service s’affiche.
+6. Dans la barre de menus, choisissez **Déboguer** > exécuter **sans débogage** pour exécuter le service. Une fenêtre de navigateur s’ouvre et le schéma XML pour le service s’affiche.
 
 7. Dans la barre d' **adresses** , entrez `Customers` à la fin de l’URL pour **NorthwindCustomers. svc**, puis appuyez sur la touche **entrée** .
 
@@ -152,9 +152,9 @@ Dans la première étape, vous ajoutez un projet de Windows Forms à la solution
 
 ### <a name="to-create-the-client-application"></a>Pour créer l'application cliente
 
-1. Dans la barre de menus, choisissez Fichier, **ajouter**  > **nouveau projet**.
+1. Dans la barre de menus, choisissez Fichier, **ajouter** > **nouveau projet**.
 
-2. Dans la boîte de dialogue **nouveau projet** , développez le nœud **Visual Basic** ou **visuel C# ** , choisissez le nœud **Windows** , puis choisissez **Windows Forms application**.
+2. Dans la boîte de dialogue **nouveau projet** , développez le nœud **Visual Basic** ou **visuel C#**  , choisissez le nœud **Windows** , puis choisissez **Windows Forms application**.
 
 3. Dans la zone de texte **Nom**, entrez `NorthwindClient`, puis choisissez le bouton **OK**.
 
@@ -166,7 +166,7 @@ Dans la première étape, vous ajoutez un projet de Windows Forms à la solution
 
 ### <a name="to-add-a-service-reference"></a>Pour ajouter une référence de service.
 
-1. Dans la barre de menus, choisissez **projet**  > **Ajouter une référence de service**.
+1. Dans la barre de menus, choisissez **projet** > **Ajouter une référence de service**.
 
 2. Dans la boîte de dialogue **Ajouter une référence de service**, choisissez le bouton **Découvrir**.
 
@@ -178,7 +178,7 @@ Dans la première étape, vous ajoutez un projet de Windows Forms à la solution
 
 ### <a name="to-enable-data-binding-to-the-service"></a>Pour activer la liaison de données vers le service
 
-1. Dans la barre de menus, choisissez **afficher**  >  autres**sources de données****Windows**  > .
+1. Dans la barre de menus, choisissez **afficher** > autres **sources de données** **Windows** > .
 
    La fenêtre **Sources de données** s’ouvre.
 
@@ -236,7 +236,7 @@ Dans la première étape, vous ajoutez un projet de Windows Forms à la solution
 
 8. Dans le code que vous avez ajouté à l'étape 4, sélectionnez `http://localhost:53161/NorthwindCustomers.svc/` et remplacez-le par l'URL que vous venez de copier.
 
-9. Dans la barre de menus, choisissez **Déboguer**  > **Démarrer le débogage** pour exécuter l’application. Les informations sur le client sont affichées.
+9. Dans la barre de menus, choisissez **Déboguer** > **Démarrer le débogage** pour exécuter l’application. Les informations sur le client sont affichées.
 
    Vous disposez désormais d'une application opérationnelle qui affiche une liste de clients à partir du service NorthwindCustomers. Si vous souhaitez exposer des données supplémentaires à travers le service, vous pouvez modifier l'[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] pour inclure des tables supplémentaires à partir de la base de données Northwind.
 
@@ -282,7 +282,7 @@ Dans cette étape, vous personnalisez l’application pour filtrer les données 
 
 4. Dans le code précédent, remplacez `http://localhost:53161/NorthwindCustomers.svc` par l'URL du gestionnaire d'événements `Form1_Load`.
 
-5. Dans la barre de menus, choisissez **Déboguer**  > **Démarrer le débogage** pour exécuter l’application.
+5. Dans la barre de menus, choisissez **Déboguer** > **Démarrer le débogage** pour exécuter l’application.
 
 6. Dans la zone de texte, tapez **London**, puis choisissez le bouton. Seuls les clients de Londres sont affichés.
 
