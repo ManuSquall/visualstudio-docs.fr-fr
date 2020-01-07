@@ -12,12 +12,12 @@ caps.latest.revision: 22
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6c7b6370793068ff07f30066ddd51b72dcc924b3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b45716db44dcc316ec60604aa0411e6498797ae0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668702"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595018"
 ---
 # <a name="options-page-environment-node-properties"></a>Page Options, Environnement, propriétés de nœud
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -135,7 +135,7 @@ Ce document décrit les pages (ou collections de propriétés) associées à la 
 
 |Nom de l'élément de propriété|Value|Description|
 |------------------------|-----------|-----------------|
-|OnStartUp|Get/Set (Enum)|Action à exécuter au démarrage, à partir de <xref:EnvDTE.vsStartUp>, avec des valeurs de 0 à 5 :<br /><br /> - 0 : Ouvrir la page d’accueil<br />- 1 : Charger la dernière solution chargée<br />- 2 : Afficher la boîte de dialogue **Ouvrir un projet**<br />- 3 : Afficher la boîte de dialogue **Nouveau projet**<br />- 4 : Afficher l’environnement vide<br />- 5 : Afficher la page de démarrage|
+|OnStartUp|Get/Set (Enum)|Action à exécuter au démarrage, à partir de <xref:EnvDTE.vsStartUp>, avec des valeurs de 0 à 5 :<br /><br /> -   0 : ouvrir la page d’accueil<br />-   1 : charger la dernière solution chargée<br />-   2 : afficher la boîte de dialogue **Ouvrir un projet**<br />-   3 : afficher la boîte de dialogue **Nouveau projet**<br />-   4 : afficher l’environnement vide<br />-   5 : afficher la page de démarrage|
 |StartPageRSSUrl|Get/Set (chaîne)|URL du flux RSS utilisé au démarrage.|
 |StartPageRefreshDownloadedContent|Get/Set (booléen)|Actualise la page de démarrage après chaque passage de l'intervalle spécifié dans StartPageRefreshInterval.|
 |StartPageRefreshInterval|Get/Set (Short)|Intervalle en minutes pour actualiser la page de démarrage.|
@@ -161,4 +161,9 @@ Ce document décrit les pages (ou collections de propriétés) associées à la 
 |ViewSourceExternalProgram|Get/Set (chaîne)|Chemin d’accès de la visionneuse de la source externe.|
 
 ## <a name="see-also"></a>Voir aussi
- [Contrôle des options paramètres](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d) [détermination des noms des éléments de propriété dans les pages d’options](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa) [page Options, polices et couleurs nœud Propriétés](../../ide/reference/options-page-fonts-and-colors-node-properties.md) [options, éditeur de texte Propriétés du nœud](../../ide/reference/options-page-text-editor-node-properties.md) [boîte de dialogue Options](../../ide/reference/environment-options-dialog-box.md) de l’environnement
+
+- [Contrôle des paramètres de la boîte de dialogue Options](https://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d)
+- [Détermination des noms d’éléments de propriété dans les pages Options](https://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)
+- [Page Options, Propriétés du nœud Polices et couleurs](../../ide/reference/options-page-fonts-and-colors-node-properties.md)
+- [Page Options, Propriétés du nœud Éditeur de texte](../../ide/reference/options-page-text-editor-node-properties.md)
+- [Environnement, boîte de dialogue Options](../../ide/reference/environment-options-dialog-box.md)

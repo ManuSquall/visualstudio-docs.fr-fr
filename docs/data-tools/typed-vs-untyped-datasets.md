@@ -6,17 +6,17 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: c83ba0bb-5425-4d47-8891-6b4dbf937701
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: eff5e0d2f13bfe462ff19d6cfb4e8a32a15a6064
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 430e57713f1bfb01219ea1ac8123f321ba0f5680
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72639637"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586105"
 ---
 # <a name="typed-vs-untyped-datasets"></a>Datasets typés et non typés
 Un DataSet typé est un DataSet qui est dérivé d’abord de la classe de <xref:System.Data.DataSet> de base, puis utilise les informations de l' **Concepteur de DataSet**, qui est stockée dans un fichier. xsd, pour générer une nouvelle classe de DataSet fortement typée. Les informations du schéma (tables, colonnes, etc.) sont générées et compilées dans cette nouvelle classe DataSet sous la forme d’un ensemble d’objets et de propriétés de première classe. Étant donné qu’un DataSet typé hérite de la classe de <xref:System.Data.DataSet> de base, la classe typée utilise toutes les fonctionnalités de la classe <xref:System.Data.DataSet> et peut être utilisée avec les méthodes qui prennent une instance d’une classe <xref:System.Data.DataSet> comme paramètre.
