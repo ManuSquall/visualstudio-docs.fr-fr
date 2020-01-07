@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c976f14a4250741d166c189c53a1b8cae8ea891a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2f0e3666c313c55df605cd7b79199827765f40f3
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72736702"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75404355"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Erreur : impossible de démarrer le débogage sur le serveur web
 
@@ -52,6 +52,7 @@ Le message `Unable to start debugging on the Web server` est générique. En rè
 - [Impossible de démarrer le débogage ASP.NET](#aspnet)
 - [Le débogueur ne peut pas se connecter à l’ordinateur distant](#cannot_connect)
 - [Consultez l'aide pour plus d'informations sur les erreurs de configuration usuelles. Exécution de la page Web en dehors du débogueur peut fournir davantage d’informations.](#see_help)
+- [Opération non prise en charge. Erreur inconnue : *errornumber*](#operation_not_supported)
 
 ## <a name="IISlist"></a>IIS ne répertorie pas un site Web qui correspond à l’URL de lancement
 
@@ -76,7 +77,7 @@ Le message `Unable to start debugging on the Web server` est générique. En rè
 ## <a name="msvsmon"></a> Microsoft Visual Studio Remote Debugging Monitor (msvsmon.exe) ne semble pas s’exécuter sur l’ordinateur distant.
 
 - Si vous effectuez un débogage sur un ordinateur distant, assurez-vous que vous avez [installé et que vous exécutez le débogueur distant](../debugger/remote-debugging.md). Si le message mentionne un pare-feu, assurez-vous que les [ports appropriés dans le pare-feu](../debugger/remote-debugger-port-assignments.md) sont ouverts, en particulier si vous utilisez un pare-feu tiers.
-- Si vous utilisez un fichier HOSTs, assurez-vous qu’il est correctement configuré. Par exemple, si vous déboguez à l’aide de la touche **F5** (au lieu de **attacher au processus**), le fichier hosts doit inclure l’URL du projet comme dans les propriétés du projet, les **Propriétés > les serveurs** ou les propriétés du > Web **> le débogage**, en fonction de votre type de projet.
+- Si vous utilisez un fichier HOSTs, assurez-vous qu’il est correctement configuré. Par exemple, si vous déboguez à l’aide de la touche **F5** (au lieu de **attacher au processus**), le fichier hosts doit inclure la même URL de projet que dans les propriétés de votre projet, **Propriétés > serveurs** ou propriétés du > Web **> déboguer**, selon le type de projet.
 
 ## <a name="server_error"></a>Le serveur distant a retourné une erreur
 
@@ -106,6 +107,10 @@ En outre, si vous utilisez un fichier HOSTs, assurez-vous qu’il est correcteme
 
 - Si cela ne fonctionne pas ou si vous effectuez un débogage à distance, suivez les étapes de [la section vérifier votre configuration IIS](#vxtbshttpservererrorsthingstocheck).
 
+## <a name="operation_not_supported"></a>Opération non prise en charge. Erreur inconnue : *errornumber*
+
+Si vous effectuez une réécriture d’URL, testez un fichier Web. config de base sans réécriture d’URL. Consultez la **Remarque** sur le module de réécriture d’URL dans [vérifier votre configuration IIS](#vxtbshttpservererrorsthingstocheck).
+
 ## <a name="vxtbshttpservererrorsthingstocheck"></a>Vérifier la configuration d’IIS
 
 Après avoir pris les mesures décrites ici pour résoudre le problème, et avant de réessayer de déboguer, vous devrez peut-être également réinitialiser IIS. Pour ce faire, ouvrez une invite de commandes avec élévation de privilèges et tapez `iisreset`.
@@ -125,7 +130,7 @@ Après avoir pris les mesures décrites ici pour résoudre le problème, et avan
 
 * Vérifiez que le dossier de votre application Web dispose des autorisations appropriées.
 
-    Veillez à donner à IIS_IUSRS, IUSR ou à l’utilisateur spécifique associé aux droits lecture et exécution du [pool d’applications](/iis/manage/configuring-security/application-pool-identities) pour le dossier d’application Web. Corrigez le problème et redémarrez le pool d’applications.
+    Veillez à donner à IIS_IUSRS, IUSR ou à l’utilisateur spécifique associé aux droits lecture et exécution du [pool d’applications](/iis/manage/configuring-security/application-pool-identities) pour le dossier de l’application Web. Corrigez le problème et redémarrez le pool d’applications.
 
 * Assurez-vous que la version correcte de ASP.NET est installée sur IIS.
 

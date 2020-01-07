@@ -12,12 +12,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bdb99cf487995859b9623f11b3559f1b5e7e3ca7
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: e2154a07d498012c9c45f992ebed51b0218e823a
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018342"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75401018"
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>Procédure pas à pas : analyse du code C/C++ pour rechercher les erreurs
 
@@ -49,7 +49,7 @@ Cette procédure pas à pas montre comment analyserC++ c/code pour identifier le
 
      La boîte de dialogue **pages de propriétés de CodeDefects** s’affiche.
 
-5. Cliquez sur **analyse du code**.
+5. Cliquez sur **Analyse du code**.
 
 6. Activez la case à cocher **activer l'C++ analyse du code pour C/on Build** .
 
@@ -59,7 +59,7 @@ Cette procédure pas à pas montre comment analyserC++ c/code pour identifier le
 
 ### <a name="to-analyze-code-defect-warnings"></a>Pour analyser les avertissements de défauts de code
 
-1. Dans le menu **affichage** , cliquez sur **liste d’erreurs**.
+1. Dans le menu **Affichage** , cliquez sur **Liste d'erreurs**.
 
      En fonction du profil de développeur que vous avez choisi dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], vous devrez peut-être pointer sur **autres fenêtres** dans le menu **affichage** , puis cliquer sur **liste d’erreurs**.
 
@@ -67,9 +67,9 @@ Cette procédure pas à pas montre comment analyserC++ c/code pour identifier le
 
      avertissement C6230 : cast implicite entre les types sémantiquement différents : utilisation de HRESULT dans un contexte booléen.
 
-     L’éditeur de code affiche la ligne qui a provoqué l’avertissement dans la `bool ProcessDomain()`de la fonction. Cet avertissement indique qu’un HRESULT est utilisé dans une instruction’If’où un résultat booléen est attendu.
+     L’éditeur de code affiche la ligne qui a provoqué l’avertissement dans la `bool ProcessDomain()`de la fonction. Cet avertissement indique qu’un `HRESULT` est utilisé dans une instruction’If’où un résultat booléen est attendu.  Il s’agit en général d’une erreur, car lorsque la `S_OK` HRESULT est retournée par la fonction, cette opération indique une réussite, mais lorsqu’elle est convertie en valeur booléenne, elle prend la valeur `false`.
 
-3. Corrigez cet avertissement à l’aide de la macro SUCCEEDED. Votre code doit ressembler au code suivant :
+3. Corrigez cet avertissement à l’aide de la macro `SUCCEEDED`, qui convertit en `true` lorsqu’une `HRESULT` valeur de retour indique la réussite de l’opération. Votre code doit ressembler au code suivant :
 
    ```cpp
    if (SUCCEEDED (ReadUserAccount()) )
@@ -111,7 +111,7 @@ Cette procédure pas à pas montre comment analyserC++ c/code pour identifier le
 
      La boîte de dialogue **pages de propriétés des annotations** s’affiche.
 
-3. Cliquez sur **analyse du code**.
+3. Cliquez sur **Analyse du code**.
 
 4. Cochez la case **activer l’analyse du codeC++ pour C/on Build** .
 
@@ -128,11 +128,11 @@ Cette procédure pas à pas montre comment analyserC++ c/code pour identifier le
 8. Pour corriger cet avertissement, utilisez une instruction’If’pour tester la valeur de retour. Votre code doit ressembler au code suivant :
 
    ```cpp
-   if (NULL != newNode)
+   if (nullptr != newNode)
    {
-   newNode->data = value;
-   newNode->next = 0;
-   node->next = newNode;
+       newNode->data = value;
+       newNode->next = 0;
+       node->next = newNode;
    }
    ```
 
@@ -142,14 +142,10 @@ Cette procédure pas à pas montre comment analyserC++ c/code pour identifier le
 
 ### <a name="to-use-source-code-annotation"></a>Pour utiliser l’annotation de code source
 
-1. Annotez les paramètres formels et la valeur de retour de la fonction `AddTail` à l’aide des conditions pre et postales, comme indiqué dans cet exemple :
+1. Annotez les paramètres formels et la valeur de retour de la fonction `AddTail` pour indiquer que les valeurs de pointeur peuvent être NULL :
 
    ```cpp
-   [returnvalue:SA_Post (Null=SA_Maybe)] LinkedList* AddTail
-   (
-   [SA_Pre(Null=SA_Maybe)] LinkedList* node,
-   int value
-   )
+   _Ret_maybenull_ LinkedList* AddTail(_Maybenull_ LinkedList* node, int value)
    ```
 
 2. Régénérez le projet annotations.
@@ -160,21 +156,18 @@ Cette procédure pas à pas montre comment analyserC++ c/code pour identifier le
 
      Cet avertissement indique que le nœud passé dans la fonction peut avoir la valeur null, et indique le numéro de ligne où l’avertissement a été déclenché.
 
-4. Pour corriger cet avertissement, utilisez une instruction’If’pour tester la valeur de retour. Votre code doit ressembler au code suivant :
+4. Pour corriger cet avertissement, utilisez une instruction’If’au début de la fonction pour tester la valeur passée. Votre code doit ressembler au code suivant :
 
    ```cpp
-   . . .
-   LinkedList *newNode = NULL;
-   if (NULL == node)
+   if (nullptr == node)
    {
-        return NULL;
-        . . .
+        return nullptr;
    }
    ```
 
 5. Régénérez le projet annotations.
 
-     Le projet est généré sans avertissements ou erreurs.
+     Le projet se génère désormais sans avertissements ou erreurs.
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -1,5 +1,5 @@
 ---
-title: Tests codés de l'interface utilisateur
+title: Tests codés de l’interface utilisateur
 ms.date: 12/04/2018
 ms.topic: conceptual
 f1_keywords:
@@ -11,17 +11,17 @@ f1_keywords:
 helpviewer_keywords:
 - automated tests, testing UI interface
 - coded UI test
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a6491a6b9ac9312befbf0c8c6c3fb0f293885ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f3bd667579d9ff0645e7dd2753278257a9796709
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659862"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585637"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>Utiliser un test codé de l’interface utilisateur pour tester votre code
 
@@ -33,7 +33,7 @@ Le **Générateur de test codé de l’interface utilisateur** et l’éditeur s
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-## <a name="requirements"></a>spécifications
+## <a name="requirements"></a>Configuration requise pour
 
 - Visual Studio Enterprise
 - Composant Test codé de l’interface utilisateur
@@ -79,7 +79,7 @@ Pour accédez aux modèles et aux outils de test codé de l’interface utilisat
 
      ![Générateur de test codé de l'interface utilisateur](../test/media/codedui_testbuilder.png)
 
-3. Enregistrez une séquence d’actions.
+3. Enregistrer une séquence d'actions.
 
      **Pour commencer l’enregistrement**, choisissez l’icône **Enregistrer**. Effectuez les actions que vous souhaitez tester dans votre application, y compris le démarrage de l'application si nécessaire. Par exemple, si vous testez une application web, démarrez un navigateur, accédez au site web et connectez-vous à l’application.
 
@@ -92,7 +92,7 @@ Pour accédez aux modèles et aux outils de test codé de l’interface utilisat
 
      **Pour générer le code** appelé à répliquer vos actions, choisissez l’icône **Générer le code**, puis tapez un nom et une description pour votre méthode de test codé de l’interface utilisateur.
 
-4. Vérifiez les valeurs dans des champs de l’interface utilisateur, comme des zones de texte.
+4. Vérifier les valeurs dans les champs d'interface utilisateur tels que les zones de texte.
 
      Choisissez **Ajouter des assertions** dans le **Générateur de test codé de l’interface utilisateur**, puis choisissez un contrôle d’interface utilisateur dans l’application en cours d’exécution. Dans la liste de propriétés qui s’affiche, sélectionnez une propriété, par exemple **Texte** dans une zone de texte. Dans le menu contextuel, choisissez **Ajouter une assertion**. Dans la boîte de dialogue, sélectionnez l'opérateur de comparaison, la valeur de comparaison et le message d'erreur.
 
@@ -105,7 +105,7 @@ Pour accédez aux modèles et aux outils de test codé de l’interface utilisat
 
      Pour plus d’informations, consultez [Valider des propriétés de contrôles](#validate-the-properties-of-ui-controls).
 
-5. Affichez le code de test généré.
+5. Afficher le code de test généré.
 
      Pour afficher le code généré, fermez la fenêtre du Générateur de test codé de l'interface utilisateur. Dans le code figurent les noms que vous avez donnés à chaque étape. Le code se trouve dans le fichier de test codé de l'interface utilisateur que vous avez créé :
 
@@ -124,11 +124,11 @@ Pour accédez aux modèles et aux outils de test codé de l’interface utilisat
     }
     ```
 
-6. Ajoutez d’autres actions et assertions.
+6. Ajouter d'autres actions et assertions.
 
    Placez le curseur au point approprié dans la méthode de test puis, dans le menu contextuel, choisissez **Générer le code pour le test codé de l’interface utilisateur**. Le nouveau code sera inséré à ce point.
 
-7. Modifiez les détails des actions de test et des assertions.
+7. Modifier les détails des actions et assertions du test.
 
      Ouvrez *UIMap.uitest*. Ce fichier s’ouvre dans **l’Éditeur de test codé de l’interface utilisateur**, où vous pouvez modifier n’importe quelle séquence d’actions enregistrée et vos assertions.
 
@@ -136,7 +136,7 @@ Pour accédez aux modèles et aux outils de test codé de l’interface utilisat
 
      Pour plus d’informations, consultez [Modifier des tests codés de l’interface utilisateur à l’aide de l’éditeur de test codé de l’interface utilisateur](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
 
-8. Exécutez le test.
+8. Exécuter le test.
 
    Ouvrez l’Explorateur de tests ou le menu contextuel dans la méthode de test, puis choisissez **Exécuter les tests**. Pour plus d’informations sur la façon d’exécuter les tests, consultez [Exécuter des tests unitaires avec l’Explorateur de tests](../test/run-unit-tests-with-test-explorer.md) et *Options supplémentaires pour l’exécution des tests codés de l’interface utilisateur* dans la section [Quelle est la suite ?](#whats-next) à la fin de cette rubrique.
 
@@ -415,7 +415,7 @@ myWinCheckBox.Checked = true;
 
 - <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A> retourne le type de données approprié, mais cette valeur de retour est convertie en <xref:System.Object>. L'objet <xref:System.Object> retourné doit ensuite être converti en type approprié.
 
-     Exemple :
+     Exemple :
 
      `int i = (int)GetProperty(myHtmlList.PropertyNames.ItemCount);`
 
@@ -425,11 +425,11 @@ myWinCheckBox.Checked = true;
 
 - Pour spécifier la propriété du contrôle à définir, utilisez la chaîne appropriée de la classe `PropertyNames` comme premier paramètre de <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A>, avec la valeur de propriété comme second paramètre.
 
-     Exemple :
+     Exemple :
 
      `SetProperty(myWinCheckBox.PropertyNames.Checked, true);`
 
-## <a name="debug"></a>Débogage
+## <a name="debug"></a>Déboguer
 
 Vous pouvez analyser les tests codés de l’interface utilisateur à l’aide de journaux de tests codés de l’interface utilisateur. Les journaux de tests codés de l’interface utilisateur filtrent et enregistrent des informations importantes sur l'exécution de vos tests codés de l’interface utilisateur. Le format des journaux vous permet de déboguer les problèmes rapidement. Pour plus d’informations, consultez [Analyse des tests codés de l’interface utilisateur à l’aide des journaux de test codé de l’interface utilisateur](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md).
 
