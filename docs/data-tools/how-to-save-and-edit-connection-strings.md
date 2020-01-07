@@ -3,17 +3,17 @@ title: 'Comment : enregistrer et modifier des chaînes de connexion'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f8ef3a2c-029c-423b-9d9e-a4f1add4f640
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a78194ae6e4f462ec732e1ae2a1981aa8d857978
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ed0f0105383667e1122d6636a3baab3aa925a742
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641801"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586456"
 ---
 # <a name="how-to-save-and-edit-connection-strings"></a>Guide pratique pour enregistrer et modifier des chaînes de connexion
 Les chaînes de connexion dans les applications Visual Studio sont enregistrées dans le fichier de configuration de l’application (également appelé paramètres d’application) ou codées en dur directement dans votre application. L'enregistrement des chaînes de connexion dans le fichier de configuration de l'application simplifie la gestion de votre application. Si la chaîne de connexion doit être modifiée, vous pouvez la mettre à jour dans le fichier de paramètres de l’application (au lieu de la modifier dans le code source et de recompiler l’application).
