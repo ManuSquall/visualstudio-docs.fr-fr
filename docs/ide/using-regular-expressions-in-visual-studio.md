@@ -11,17 +11,17 @@ f1_keywords:
 helpviewer_keywords:
 - regular expressions [Visual Studio]
 - regular expressions
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53fd8af330d0cdab84d944dc453dbfe66208608f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f1739d6b2376a4f86edd3c0102f7fad79da5d7cd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647333"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568618"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Utiliser des expressions régulières dans Visual Studio
 
@@ -31,7 +31,7 @@ Visual Studio utilise des [expressions régulières de .NET](/dotnet/standard/ba
 
 Le tableau suivant contient des caractères, des opérateurs, des constructions et des exemples de modèles relatifs aux expressions régulières. Pour obtenir une référence plus complète, consultez [Langage des expressions régulières](/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
-|Objectif|Expression|Exemple|
+|Fonction|Expression|Exemple|
 |-------------|----------------|-------------|
 |Correspond à n'importe quel caractère unique (sauf un saut de ligne). Pour plus d’informations, consultez [N’importe quel caractère](/dotnet/standard/base-types/character-classes-in-regular-expressions#any-character-).|.|`a.o` correspond à « Tao » dans « autour de » et « ABO » dans « about », mais pas à « Acro » dans « sur »|
 |Correspond à zéro ou plusieurs occurrences de l'expression précédente (correspond à autant de caractères que possible). Pour plus d’informations, consultez [Mettre en correspondance zéro occurrence ou plus](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-zero-or-more-times-).|*|`a*r` correspond à "r" dans "rack", à "rar" dans "ark" et à "aar" dans "aardvark"|
@@ -69,9 +69,9 @@ Un groupe de capture délimite une sous-expression d’une expression régulièr
 
 Pour créer un groupe de capture numéroté, placez la sous-expression entre parenthèses dans le modèle d’expression régulière. Les captures sont numérotées automatiquement de la gauche vers la droite en fonction de l'ordre des parenthèses ouvrantes dans l'expression régulière. Pour accéder au groupe capturé :
 
-- **dans l’expression régulière** : Utilisez `\number`. Par exemple, `\1` dans l’expression régulière `(\w+)\s\1` fait référence au premier groupe de capture `(\w+)`.
+- **dans l’expression régulière**: utilisez `\number`. Par exemple, `\1` dans l’expression régulière `(\w+)\s\1` fait référence au premier groupe de capture `(\w+)`.
 
-- **dans un modèle de remplacement** : Utilisez `$number`. Par exemple, l’expression régulière groupée `(\d)([a-z])` définit deux groupes : le premier contient un chiffre décimal unique tandis que le deuxième contient un caractère unique compris entre **a** et **z**. L’expression recherche quatre correspondances dans la chaîne suivante : **1a 2b 3c 4d**. La chaîne de remplacement `z$1` référence le premier groupe uniquement (`$1`) et convertit la chaîne en **z1 z2 z3 z4**.
+- **dans un modèle de remplacement**: utilisez `$number`. Par exemple, l’expression régulière groupée `(\d)([a-z])` définit deux groupes : le premier contient un chiffre décimal unique tandis que le deuxième contient un caractère unique compris entre **a** et **z**. L’expression recherche quatre correspondances dans la chaîne suivante : **1a 2b 3c 4d**. La chaîne de remplacement `z$1` référence le premier groupe uniquement (`$1`) et convertit la chaîne en **z1 z2 z3 z4**.
 
 L’illustration suivante montre une expression régulière `(\w+)\s\1` et une chaîne de remplacement `$1`. L’expression régulière et le modèle de remplacement font référence au premier groupe de capture qui a reçoit automatiquement le numéro 1. Lorsque vous choisissez **Remplacer tout** dans la boîte de dialogue **Remplacement rapide** de Visual Studio, les mots répétés sont supprimés du texte.
 
@@ -86,9 +86,9 @@ Au lieu d’utiliser la numérotation automatique d’un groupe de capture, vous
 
 Les groupes de capture nommés, tout comme les groupes numérotés, peuvent être utilisés dans l’expression régulière elle-même ou dans un modèle de remplacement. Pour accéder au groupe de capture nommé :
 
-- **dans l’expression régulière** : Utilisez `\k<name>`. Par exemple, `\k<repeated>` dans l’expression régulière `(?<repeated>\w+)\s\k<repeated>` fait référence au groupe de capture nommé `repeated` et dont la sous-expression est `\w+`.
+- **dans l’expression régulière**: utilisez `\k<name>`. Par exemple, `\k<repeated>` dans l’expression régulière `(?<repeated>\w+)\s\k<repeated>` fait référence au groupe de capture nommé `repeated` et dont la sous-expression est `\w+`.
 
-- **dans un modèle de remplacement** : Utilisez `${name}`. Par exemple, `${repeated}`.
+- **dans un modèle de remplacement**: utilisez `${name}`. Par exemple, `${repeated}`.
 
 Par exemple, l’illustration suivante montre une expression régulière `(?<repeated>\w+)\s\k<repeated>` et une chaîne de remplacement `${repeated}`. L’expression régulière et le modèle de remplacement font référence au groupe de capture nommé `repeated`. Lorsque vous choisissez **Remplacer tout** dans la boîte de dialogue **Remplacement rapide** de Visual Studio, les mots répétés sont supprimés du texte.
 
