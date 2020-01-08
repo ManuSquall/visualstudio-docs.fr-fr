@@ -1,21 +1,21 @@
 ---
-title: 'Procédure : Configurer les cibles et les tâches | Microsoft Docs'
+title: Guide pratique pour configurer les cibles et les tâches | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 92814100-392a-471d-96fd-e26f637d6cc2
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3f3b272808d0e24747cceb97e4d1339b5989339
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 2f8f1bc76789ef80c1138efb94bda42442702c05
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946662"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596344"
 ---
-# <a name="how-to-configure-targets-and-tasks"></a>Procédure : Configurer les cibles et les tâches
+# <a name="how-to-configure-targets-and-tasks"></a>Guide pratique pour configurer les cibles et les tâches
 Des tâches MSBuild sélectionnées peuvent être définies pour s’exécuter dans l’environnement qu’elles ciblent, quel que soit l’environnement de l’ordinateur de développement. Par exemple, quand vous utilisez un ordinateur 64 bits pour générer une application ciblant une architecture 32 bits, les tâches sélectionnées sont exécutées dans un processus 32 bits.
 
 > [!NOTE]

@@ -4,19 +4,19 @@ ms.date: 12/12/2018
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: tutorial
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 22c48086fb98cc4ae25098cb70c642f77f621209
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 48b3f2c9aae099e3ae5f2cf2d8c438fb0f9062a2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72632571"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590213"
 ---
 # <a name="learn-about-projects-and-solutions-using-visual-basic"></a>Découvrir les projets et les solutions avec Visual Basic
 
@@ -53,7 +53,7 @@ Nous allons commencer notre exploration en créant une solution vide. Une fois q
 
 1. Ouvrez Visual Studio.
 
-1. Dans la barre de menus, choisissez **Fichier** > **Nouveau** > **Projet**.
+1. Dans la barre de menus, choisissez **fichier** > **nouveau** **projet**>.
 
    La boîte de dialogue **Nouveau projet** s'affiche.
 
@@ -87,7 +87,7 @@ Nous allons maintenant ajouter notre premier projet à la solution. Nous allons 
 
 ::: moniker range="vs-2017"
 
-1. Dans le menu contextuel (clic droit) de **Solution 'QuickSolution'** dans l’**Explorateur de solutions**, choisissez **Ajouter** > **Nouveau projet**.
+1. Dans le menu contextuel, cliquez avec le bouton droit de la **solution’QuickSolution'** dans **Explorateur de solutions**, choisissez **Ajouter** > **nouveau projet**.
 
    La boîte de dialogue **Ajouter un nouveau projet** s'ouvre.
 
@@ -104,7 +104,7 @@ Nous allons maintenant ajouter notre premier projet à la solution. Nous allons 
 
 ::: moniker range=">=vs-2019"
 
-1. Dans le menu contextuel (clic droit) de **Solution 'QuickSolution'** dans l’**Explorateur de solutions**, choisissez **Ajouter** > **Nouveau projet**.
+1. Dans le menu contextuel, cliquez avec le bouton droit de la **solution’QuickSolution'** dans **Explorateur de solutions**, choisissez **Ajouter** > **nouveau projet**.
 
    Une boîte de dialogue s’ouvre en indiquant **Ajouter un nouveau projet**.
 
@@ -157,7 +157,7 @@ Les solutions contiennent souvent plusieurs projets, qui font référence les un
 
 Nous allons ajouter un projet de test unitaire à notre solution. Cette fois, nous allons démarrer avec un modèle de projet. Nous n’avons donc pas à ajouter un fichier de code supplémentaire au projet.
 
-1. Dans le menu contextuel (clic droit) de **Solution 'QuickSolution'** dans **l’Explorateur de solutions**, choisissez **Ajouter** > **Nouveau projet**.
+1. Dans le menu contextuel (clic droit) de **Solution 'QuickSolution'** dans l’**Explorateur de solutions**, choisissez **Ajouter** > **Nouveau projet**.
 
 ::: moniker range="Vs-2017"
 
@@ -244,7 +244,7 @@ Si vous souhaitez vérifier que votre test unitaire fonctionne correctement, cho
 > [!TIP]
 > Si **l’Explorateur de tests** ne s’ouvre pas automatiquement, ouvrez-le en choisissant **Tester** > **Windows** > **Explorateur de tests** dans la barre de menus.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 Pour explorer davantage Visual Studio, vous pouvez créer une application en suivant l’un des [tutoriels Visual Basic](index.yml).
 

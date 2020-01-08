@@ -12,17 +12,17 @@ helpviewer_keywords:
 - types [Visual Studio], class diagrams
 - attributes [Visual Studio], applying custom
 ms.assetid: 94458c31-28bc-40e2-9737-85868788a0e5
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1db43fc16202234f24d8179bba656d71ac96d39a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 881a8ed7f1aceb5f97eaed1f0b9285951d1d39f6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72631748"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590174"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Guide pratique pour créer des types à l’aide du Concepteur de classes
 
@@ -63,7 +63,7 @@ Pour concevoir de nouveaux types pour les projets C# et Visual Basic, créez-les
     |Énumérations|Valeurs de champ qui composent l'énumération|
     |Interfaces|Méthodes, propriétés et événements qui composent l'interface|
     |délégué|Paramètres qui définissent le délégué|
-    |Module|Méthodes, propriétés, champs, événements, constructeurs (méthode) et constantes qui définissent le module|
+    |Module, mot clé|Méthodes, propriétés, champs, événements, constructeurs (méthode) et constantes qui définissent le module|
 
      Consultez [Création de membres](creating-and-configuring-type-members.md#create-members).
 
@@ -89,7 +89,7 @@ Pour concevoir de nouveaux types pour les projets C# et Visual Basic, créez-les
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Guide pratique pour créer un héritage entre des types](how-to-create-inheritance-between-types.md)
+- [Guide pratique pour créer l’héritage entre les types](how-to-create-inheritance-between-types.md)
 - [Guide pratique pour créer des associations entre des types](how-to-create-associations-between-types.md)
 - [Création et configuration de membres de type](creating-and-configuring-type-members.md)
 - [Conception des classes et des types](designing-and-viewing-classes-and-types.md)

@@ -13,17 +13,17 @@ helpviewer_keywords:
 - CPUs, targeting specific
 - 64-bit applications [Visual Studio]
 ms.assetid: 845302fc-273d-4f81-820a-7296ce91bd76
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15799ff8b181ddcfff97f7fb7338897c6f23fee2
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 9ba79bb199bba6c606ac603816cadc2dd2042057
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188942"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595317"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Guide pratique pour configurer des projets et cibler des plateformes
 
@@ -56,7 +56,7 @@ Les propriétés de tous les projets qui ciblent la plateforme 64 bits sont mis
 
 Le **Concepteur de projet** permet également de cibler différentes plateformes pour votre projet. Si la sélection de l’une des plateformes incluses dans la liste affichée dans la boîte de dialogue **Nouvelle plateforme de solution** ne fonctionne pas pour votre solution, vous pouvez créer un nom de configuration personnalisée, puis en modifier les paramètres dans le **Concepteur de projet** pour cibler la plateforme appropriée.
 
-L’exécution de cette tâche varie suivant le langage de programmation que vous utilisez. Pour plus d'informations, consultez les liens suivants :
+L’exécution de cette tâche varie suivant le langage de programmation que vous utilisez. Consultez les liens suivants pour plus d'informations :
 
 - Pour les projets [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], consultez [/platform (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/platform).
 

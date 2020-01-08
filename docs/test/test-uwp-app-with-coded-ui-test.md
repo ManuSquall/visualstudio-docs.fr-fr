@@ -2,20 +2,20 @@
 title: Tester une application UWP avec un test codé de l’interface utilisateur
 ms.date: 05/31/2018
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - uwp
-ms.openlocfilehash: 7000cb64a14510e972222d2d4dae30ceee593c43
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fdd3d98bd848bb6fe679809a58f2e316a316f012
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659966"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590356"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>Créer un test codé de l’interface utilisateur pour tester une application UWP
 
@@ -82,7 +82,7 @@ La première étape consiste à créer une application UWP simple sur laquelle e
 
 1. Si votre application UWP n’est pas déjà en cours d’exécution, démarrez-la en appuyant sur **Ctrl**+**F5**.
 
-1. Ouvrez la boîte de dialogue **Générateur de test codé de l’interface utilisateur** en plaçant le curseur dans la méthode `CodedUITestMethod1`, puis en choisissant **Test** > **Générer le code pour le test codé de l’interface utilisateur**  >  **Utiliser le Générateur de test codé de l’interface utilisateur**.
+1. Ouvrez la boîte de dialogue **Générateur de test codé de l’interface utilisateur** en plaçant le curseur dans la méthode `CodedUITestMethod1`, puis en choisissant **Test** > **Générer le code pour le test codé de l’interface utilisateur** > **Utiliser le Générateur de test codé de l’interface utilisateur**.
 
 1. Ajoutez les contrôles au mappage de contrôle d’interface utilisateur. Utilisez la croix du **Générateur de test codé de l’interface utilisateur** pour sélectionner le contrôle de bouton dans l’application UWP. Dans la boîte de dialogue **Ajouter des assertions**, développez le volet **Mappage de contrôle d’interface utilisateur** si nécessaire, puis sélectionnez **Ajouter le contrôle au mappage de contrôle d’interface utilisateur**.
 
@@ -222,7 +222,7 @@ La première étape consiste à créer une application UWP simple sur laquelle e
 
 **R** : Non, seules les applications XAML sont prises en charge.
 
-### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>Q : pourquoi ne puis-je pas modifier le code du fichier UIMap.Designer ?
+### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>Q : Pourquoi ne puis-je pas modifier le code du fichier UIMap.Designer ?
 
 **R** : Toutes les modifications de code que vous effectuez dans le fichier *UIMapDesigner.cs* sont remplacées chaque fois que vous générez du code dans le **Générateur de test codé de l’interface utilisateur**. Si vous devez modifier une méthode enregistrée, copiez-la dans le fichier *UIMap.cs* et renommez-la. Le fichier *UIMap.cs* peut être utilisé pour remplacer les méthodes et les propriétés dans le fichier *UIMapDesigner.cs*. Supprimez la référence à la méthode d’origine dans le fichier *CodedUITest.cs* et remplacez-la par le nom de la méthode renommée.
 

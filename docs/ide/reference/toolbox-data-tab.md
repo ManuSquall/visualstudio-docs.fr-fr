@@ -7,17 +7,17 @@ helpviewer_keywords:
 - Data tab, Toolbox
 - data [Visual Studio], Toolbox
 ms.assetid: 2ae38b2a-29d2-461c-a67d-29dad274bf45
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34707c39a14650023c9caa701813de65999010ef
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e79b80890925bdf4d6d191db759516b5545fc403
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72644614"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590252"
 ---
 # <a name="toolbox-data-tab"></a>Boîte à outils, onglet Données
 
@@ -26,7 +26,7 @@ Affiche des objets de données que vous pouvez ajouter à un formulaire et à de
 > [!TIP]
 > L’exécution de l’Assistant Configuration de source de données crée et configure automatiquement la plupart des éléments de données. Pour plus d’informations, consultez [Ajouter de nouvelles sources de données](../../data-tools/add-new-data-sources.md).
 
-## <a name="ui-element-list"></a>Liste des éléments de l’interface utilisateur
+## <a name="ui-element-list"></a>Liste d'éléments de l'interface utilisateur
 
 Pour accéder directement à la page de référence .NET d’un composant, appuyez sur **F1** avec le pointeur placé sur l’élément dans la **Boîte à outils** ou sur le composant dans la barre d’état du concepteur.
 

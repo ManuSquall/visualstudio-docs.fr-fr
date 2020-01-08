@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Toolbox, HTML tab
 - HTML Designer, setting options
 - HTML tab in Toolbox
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed46bdb9b5562b38f37129d69e7f075e425588b0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0489f534466149a437384d4f21e34f1fa9e98c5b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72644785"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596435"
 ---
 # <a name="toolbox-html-tab"></a>Boîte à outils, onglet HTML
 
@@ -50,7 +50,7 @@ Quand vous faites glisser **Input (Button)** sur la surface en mode Design, une 
 
 **Input (Reset)**
 
-![Capture d'écran HTMLpageResetButton](../../ide/reference/media/vxreset.gif)
+![Capture d'écran de HTMLpageResetButton](../../ide/reference/media/vxreset.gif)
 
 Insère un élément `input` tel que `type="reset"`. Pour changer le texte affiché, modifiez la propriété `name`. Par défaut, `id="Reset1"` est inséré pour le premier bouton de réinitialisation, `id="Reset2"` pour le deuxième, etc.
 
@@ -62,7 +62,7 @@ Quand vous faites glisser **Input (Reset)** sur la surface en mode Design, une b
 
 **Input (Submit)**
 
-![Capture d'écran HTMLpageToolbarSubmitButton](../../ide/reference/media/vxsubmit.gif)
+![Capture d'écran de HTMLpageToolbarSubmitButton](../../ide/reference/media/vxsubmit.gif)
 
 Insère un élément `input` tel que `type="submit"`. Pour changer le texte affiché, modifiez la propriété `name`. Par défaut, `id="Submit1"` est inséré pour le premier bouton d’envoi, `id="Submit2"` pour le deuxième, etc.
 
@@ -74,7 +74,7 @@ Quand vous faites glisser **Input (Submit)** sur la surface en mode Design, une 
 
 **Input (Text)**
 
-![Capture d'écran HTMLpageToolbarTextField](../../ide/reference/media/vxtextfield.gif)
+![Capture d'écran de HTMLpageToolbarTextField](../../ide/reference/media/vxtextfield.gif)
 
 Insère un élément `input` tel que `type="text"` dans votre document. Pour changer le texte affiché par défaut, modifiez l’attribut `value`. Par défaut, `id="Text1"` est inséré pour le premier champ de texte, `id="Text2"` pour le deuxième, etc.
 
@@ -131,7 +131,7 @@ Quand vous faites glisser **Input (Check box)** sur la surface en mode Design, 
 
 **Input (Radio)**
 
-![Capture d'écran VisualStudioHTMLpageRadioButton](../../ide/reference/media/vxradio.gif)
+![Capture d'écran de VisualStudioHTMLpageRadioButton](../../ide/reference/media/vxradio.gif)
 
 Insère un élément `input` tel que `type="radio"`. Pour changer le texte affiché, modifiez la propriété `name`. Par défaut, `id="Radio1"` est inséré pour la première case d’option, `id="Radio2"` pour la deuxième, etc.
 
@@ -170,7 +170,7 @@ Quand vous faites glisser **Textarea** sur la surface en mode Design, une balise
 
 **Table**
 
-![Capture d'écran HTMLpageToolbarTable](../../ide/reference/media/vxtable.gif)
+![Capture d'écran de HTMLpageToolbarTable](../../ide/reference/media/vxtable.gif)
 
 Insère un élément `table`.
 

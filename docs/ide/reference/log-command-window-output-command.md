@@ -8,17 +8,17 @@ helpviewer_keywords:
 - log Command window output command
 - View.LogCommandWindowOutput command
 ms.assetid: d4ecec35-5af4-4954-8d60-2cd24583fbb4
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2056cf335f2cf6024e6ebb4b5daff72e54dd9d50
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b6ba8fb419726018bd089e217386ab5dbd6a9c33
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72610429"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568657"
 ---
 # <a name="log-command-window-output-command"></a>Enregistrer la sortie de la fenêtre Commande, commande
 
@@ -33,7 +33,7 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 ## <a name="arguments"></a>Arguments
 
 `filename`\
-Optionnel. Nom du fichier journal. Par défaut, le fichier est créé dans le dossier du profil de l’utilisateur. Si le nom de fichier existe déjà, le journal est ajouté à la fin du fichier existant. Si aucun fichier n’est spécifié, le dernier fichier spécifié est utilisé. Si aucun fichier n’a été spécifié précédemment, le fichier journal cmdline.log est créé par défaut.
+Option facultative. Nom du fichier journal. Par défaut, le fichier est créé dans le dossier du profil de l’utilisateur. Si le nom de fichier existe déjà, le journal est ajouté à la fin du fichier existant. Si aucun fichier n’est spécifié, le dernier fichier spécifié est utilisé. Si aucun fichier n’a été spécifié précédemment, le fichier journal cmdline.log est créé par défaut.
 
 > [!TIP]
 > Pour modifier l’emplacement d’enregistrement du fichier journal, entrez le chemin complet du fichier, en l’entourant de guillemets s’il comporte des espaces.
@@ -41,13 +41,13 @@ Optionnel. Nom du fichier journal. Par défaut, le fichier est créé dans le do
 ## <a name="switches"></a>Commutateurs
 
 /on\
-Optionnel. Démarre le journal pour la fenêtre **Commande** dans le fichier spécifié et ajoute les nouvelles informations à la fin de ce fichier.
+Option facultative. Démarre le journal pour la fenêtre **Commande** dans le fichier spécifié et ajoute les nouvelles informations à la fin de ce fichier.
 
 /off\
-Optionnel. Arrête le journal pour la fenêtre **Commande**.
+Option facultative. Arrête le journal pour la fenêtre **Commande**.
 
 /overwrite\
-Optionnel. Si le fichier spécifié dans l’argument `filename` est identique à un fichier existant, celui-ci est remplacé.
+Option facultative. Si le fichier spécifié dans l’argument `filename` est identique à un fichier existant, celui-ci est remplacé.
 
 ## <a name="remarks"></a>Notes
 

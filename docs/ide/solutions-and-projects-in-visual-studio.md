@@ -15,17 +15,17 @@ f1_keywords:
 helpviewer_keywords:
 - solutions [Visual Studio]
 - projects [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ca611d7ae1faa86ae7878b2f824ce27b9872713
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ffa561667ea31f215306c7cac4b9820d7b386b5c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72621586"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590083"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Solutions et projets dans Visual Studio
 
@@ -42,7 +42,7 @@ Lorsque vous créez une application ou un site Web dans Visual Studio, vous dém
 
 Visual Studio utilise [MSBuild](../msbuild/msbuild.md) pour générer chaque projet dans une solution, et chaque projet contient un fichier projet MSBuild. L’extension de fichier reflète le type de projet, par exemple un C# projet (. csproj), un projet de Visual Basic (. vbproj) ou un projet de base de données (. dbproj). Le fichier projet est un document XML qui contient toutes les informations et instructions dont MSBuild a besoin pour générer votre projet, y compris le contenu, la plateforme requise, les informations de versioning, les paramètres du serveur Web ou du serveur de base de données, ainsi que les tâches à assurer.
 
-Les fichiers projet sont basés sur le [schéma XML MSBuild](../msbuild/msbuild-project-file-schema-reference.md). Pour examiner le contenu des [fichiers projet de type SDK](../msbuild/how-to-use-project-sdk.md) plus récents dans Visual Studio, cliquez avec le bouton droit sur le nœud du projet dans **Explorateur de solutions** puis sélectionnez **modifier \<projectname \>** . Pour examiner le contenu de .NET Framework et d’autres projets de ce style, déchargez tout d’abord le projet (cliquez avec le bouton droit sur le nœud du projet dans **Explorateur de solutions** puis sélectionnez **décharger le projet**). Ensuite, cliquez avec le bouton droit sur le projet et choisissez **modifier \<projectname \>** .
+Les fichiers projet sont basés sur le [schéma XML MSBuild](../msbuild/msbuild-project-file-schema-reference.md). Pour examiner le contenu des [fichiers projet de type SDK](../msbuild/how-to-use-project-sdk.md) plus récents dans Visual Studio, cliquez avec le bouton droit sur le nœud du projet dans **Explorateur de solutions** puis sélectionnez **modifier \<ProjectName\>** . Pour examiner le contenu de .NET Framework et d’autres projets de ce style, déchargez tout d’abord le projet (cliquez avec le bouton droit sur le nœud du projet dans **Explorateur de solutions** puis sélectionnez **décharger le projet**). Ensuite, cliquez avec le bouton droit sur le projet et choisissez **modifier \<projectname\>** .
 
 > [!NOTE]
 > Vous n’êtes pas obligé d’utiliser des solutions ou des projets dans Visual Studio pour modifier, générer et déboguer du code. Vous pouvez simplement ouvrir le dossier qui contient vos fichiers de code source dans Visual Studio et commencer à les modifier. Pour plus d’informations, consultez [Développer du code dans Visual Studio sans projets ni solutions](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).
@@ -66,11 +66,11 @@ Si vous personnalisez souvent vos projets d’une certaine manière, vous pouvez
 
 Quand vous créez un projet, il est enregistré par défaut dans *%USERPROFILE%\source\repos*. Vous pouvez personnaliser cet emplacement dans le paramètre **Emplacement des projets** sous **Outils** > **Options** > **Projets et solutions** > **Emplacements**. Pour plus d’informations, consultez [Page Projets et solutions, boîte de dialogue Options](../ide/reference/projects-and-solutions-options-dialog-box.md).
 
-## <a name="solution-explorer"></a>l'Explorateur de solutions
+## <a name="solution-explorer"></a>l’Explorateur de solutions
 
 Après avoir créé un nouveau projet, vous pouvez utiliser **l’Explorateur de solutions** pour afficher et gérer le projet et la solution, ainsi que leurs éléments associés. L’illustration suivante montre l’**Explorateur de solutions** avec une solution C# qui contient deux projets :
 
-![l'Explorateur de solutions](../ide/media/vs2015_solution_explorer.png)
+![l’Explorateur de solutions](../ide/media/vs2015_solution_explorer.png)
 
 De nombreuses commandes de menu sont disponibles dans le menu contextuel sur différents éléments de **l’Explorateur de solutions**. Ces commandes incluent la génération d’un projet, la gestion de packages NuGet, l’ajout d’une référence, l’affectation d’un nouveau nom de fichier et l’exécution de tests, entre autres. La barre d’outils en haut de **l’Explorateur de solutions** comprend des boutons pour basculer d’un affichage de solutions à un affichage de dossiers, afficher les fichiers cachés, réduire tous les nœuds et bien plus encore.
 

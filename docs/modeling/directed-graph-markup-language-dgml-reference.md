@@ -2,17 +2,17 @@
 title: Informations de référence sur le langage DGML (Directed Graph Markup Language)
 ms.date: 11/04/2016
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 292ba29e1902053b04f70052989e4eb0efff5b19
-ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
+ms.openlocfilehash: 2363e5131dd499dd85a5822ed15e2bfe473f1e1c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73983675"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596634"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>Informations de référence sur le langage DGML (Directed Graph Markup Language)
 
@@ -33,17 +33,17 @@ Le tableau suivant décrit les types d'éléments utilisés en langage DGML :
 
    La liste suivante décrit des attributs facultatifs que vous pouvez inclure :
 
-   `Background` : couleur de l'arrière-plan de la carte.
+   `Background`-la couleur de l’arrière-plan de la carte
 
-   `BackgroundImage` : emplacement du fichier image à utiliser en tant qu'arrière-plan de la carte.
+   `BackgroundImage` : emplacement d’un fichier image à utiliser comme arrière-plan de la carte.
 
-   `GraphDirection` : quand la carte se présente sous forme d'arborescence (`Sugiyama`), disposez les nœuds de sorte que la plupart des liens suivent la direction spécifiée : `TopToBottom`, `BottomToTop`, `LeftToRight` ou `RightToLeft`. Consultez [modifier la disposition de la carte](../modeling/browse-and-rearrange-code-maps.md#Selecting).
+   `GraphDirection`-lorsque la carte est définie sur disposition de l’arborescence (`Sugiyama`), réorganisez les nœuds de sorte que la plupart des liens circulent dans la direction spécifiée : `TopToBottom`, `BottomToTop`, `LeftToRight`ou `RightToLeft`. Consultez [modifier la disposition de la carte](../modeling/browse-and-rearrange-code-maps.md#Selecting).
 
-   `Layout` : affectez à la carte les dispositions suivantes : `None`, `Sugiyama` (présentation sous forme d'arborescence), `ForceDirected` (clusters rapides) ou `DependencyMatrix`. Consultez [modifier la disposition de la carte](../modeling/browse-and-rearrange-code-maps.md#Selecting).
+   `Layout`-définissez la carte sur les dispositions suivantes : `None`, `Sugiyama` (disposition en arborescence), `ForceDirected` (clusters rapides) ou `DependencyMatrix`. Consultez [modifier la disposition de la carte](../modeling/browse-and-rearrange-code-maps.md#Selecting).
 
-   `NeighborhoodDistance`  : quand la carte se présente sous forme d'arborescence ou de clusters rapides, seuls les nœuds qui possèdent un nombre spécifié de liens (de 1 à 7) éloignés des nœuds sélectionnés s'affichent. Consultez [modifier la disposition de la carte](../modeling/browse-and-rearrange-code-maps.md#Selecting).
+   `NeighborhoodDistance`-lorsque la carte est définie sur disposition de l’arborescence ou sur clusters rapides, Affichez uniquement les nœuds qui sont un nombre spécifié (1-7) de liens hors des nœuds sélectionnés. Consultez [modifier la disposition de la carte](../modeling/browse-and-rearrange-code-maps.md#Selecting).
 
-   Exemple :
+   Exemple :
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -70,7 +70,7 @@ Le tableau suivant décrit les types d'éléments utilisés en langage DGML :
   > [!NOTE]
   > Quand vous faites référence à un nœud non défini dans un élément `<Link/>`, la carte crée automatiquement un élément `<Node/>`.
 
-   Exemple :
+   Exemple :
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -90,7 +90,7 @@ Le tableau suivant décrit les types d'éléments utilisés en langage DGML :
 
    Cet élément doit inclure les attributs suivants :
 
-   `Id` - Nom unique du nœud et valeur par défaut de l'attribut `Label`, lorsqu'aucun attribut `Label` séparé n'est spécifié. Ce nom doit correspondre à l'attribut `Source` ou `Target` du lien qui y fait référence.
+   `Id` : nom unique du nœud et valeur par défaut de l’attribut `Label`, si aucun attribut `Label` distinct n’est spécifié. Ce nom doit correspondre à l'attribut `Source` ou `Target` du lien qui y fait référence.
 
    La liste suivante décrit certains des attributs facultatifs que vous pouvez inclure :
 
@@ -98,17 +98,17 @@ Le tableau suivant décrit les types d'éléments utilisés en langage DGML :
 
    Attributs Style. Consultez [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
-   `Category` - Nom d'une catégorie qui identifie les éléments qui partagent cet attribut. Pour plus d'informations, consultez l'élément `<Category/>`.
+   `Category`-le nom d’une catégorie qui identifie les éléments qui partagent cet attribut. Pour plus d'informations, consultez l'élément `<Category/>`.
 
-   `Property` - Nom d'une propriété qui identifie des éléments qui ont la même valeur de propriété. Pour plus d'informations, consultez l'élément `<Property/>`.
+   `Property`-le nom d’une propriété qui identifie les éléments qui ont la même valeur de propriété. Pour plus d'informations, consultez l'élément `<Property/>`.
 
    `Group` - Si le nœud contient d'autres nœuds, affectez à cet attribut la valeur `Expanded` ou `Collapsed` pour respectivement en afficher ou en masquer le contenu. Un élément `<Link/>` doit inclure l'attribut `Category="Contains"` et spécifier le nœud parent en tant que nœud source et le nœud enfant en tant que nœud cible. Consultez [regrouper des éléments de code](../modeling/customize-code-maps-by-editing-the-dgml-files.md#OrganizeNodes).
 
-   `Visibility` - Affectez à cet attribut la valeur `Visible`, `Hidden` ou `Collapsed`. Utilise `System.Windows.Visibility`. Consultez [masquer ou afficher les nœuds et les liens](../modeling/browse-and-rearrange-code-maps.md#HidingShowing).
+   `Visibility`-définissez cet attribut sur `Visible`, `Hidden`ou `Collapsed`. Utilise `System.Windows.Visibility`. Consultez [masquer ou afficher les nœuds et les liens](../modeling/browse-and-rearrange-code-maps.md#HidingShowing).
 
    `Reference` - Définissez cet attribut pour le lier à un document ou une URL. Consultez [lier des documents ou des URL à des éléments de code et des liens](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AddReferences).
 
-   Exemple :
+   Exemple :
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -133,7 +133,7 @@ Le tableau suivant décrit les types d'éléments utilisés en langage DGML :
 
    Cet élément contient la liste des éléments `<Link>` qui définissent des liens entre des nœuds. Pour plus d'informations, consultez l'élément `<Link/>`.
 
-   Exemple :
+   Exemple :
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -153,21 +153,21 @@ Le tableau suivant décrit les types d'éléments utilisés en langage DGML :
 
    Cet élément doit inclure les attributs suivants :
 
-   `Source` - Nœud source du lien.
+   `Source` : nœud source du lien
 
    `Target` - Nœud cible du lien.
 
    La liste suivante décrit certains des attributs facultatifs que vous pouvez inclure :
 
-   `Label` - Nom complet du lien.
+   `Label` : nom d’affichage du lien
 
    Attributs Style. Consultez [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
-   `Category` - Nom d'une catégorie qui identifie les éléments qui partagent cet attribut. Pour plus d'informations, consultez l'élément `<Category/>`.
+   `Category`-le nom d’une catégorie qui identifie les éléments qui partagent cet attribut. Pour plus d'informations, consultez l'élément `<Category/>`.
 
-   `Property` - Nom d'une propriété qui identifie des éléments qui ont la même valeur de propriété. Pour plus d'informations, consultez l'élément `<Property/>`.
+   `Property`-le nom d’une propriété qui identifie les éléments qui ont la même valeur de propriété. Pour plus d'informations, consultez l'élément `<Property/>`.
 
-   Exemple :
+   Exemple :
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -191,7 +191,7 @@ Le tableau suivant décrit les types d'éléments utilisés en langage DGML :
 
    Cet élément contient la liste des éléments `<Category/>`. Pour plus d'informations, consultez l'élément `<Category/>`.
 
-   Exemple :
+   Exemple :
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -214,13 +214,13 @@ Le tableau suivant décrit les types d'éléments utilisés en langage DGML :
 
    `Label` - Nom convivial de la catégorie.
 
-   `BasedOn` - Catégorie parente dont le `<Category/>` de l'élément actuel hérite.
+   `BasedOn` : catégorie parente dont l' `<Category/>` de l’élément actuel hérite.
 
    Dans l'exemple donné pour cet élément, la catégorie `FailedTest` hérite de son attribut `Stroke` à partir de la catégorie `PassedTest`. Consultez « pour créer des catégories hiérarchiques » dans [personnaliser les cartes de code en modifiant les fichiers dgml](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
    Les catégories proposent également un comportement de modèle de base qui contrôle l'apparence des nœuds et des liens lorsqu'ils s'affichent sur une carte. Consultez [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md).
 
-   Exemple :
+   Exemple :
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -248,7 +248,7 @@ Le tableau suivant décrit les types d'éléments utilisés en langage DGML :
 
    Cet élément contient la liste des éléments `<Property/>`. Pour plus d'informations, consultez l'élément `<Property/>`.
 
-   Exemple :
+   Exemple :
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>
@@ -265,15 +265,15 @@ Le tableau suivant décrit les types d'éléments utilisés en langage DGML :
 
    Cet élément doit inclure les attributs suivants :
 
-  - `Id` - Nom unique de la propriété et valeur par défaut de l'attribut `Label`, lorsqu'aucun attribut `Label` séparé n'est spécifié.
+  - `Id`-le nom unique de la propriété et la valeur par défaut de l’attribut `Label`, si aucun attribut `Label` distinct n’est spécifié.
 
-  - `DataType` - Type de données stockées par la propriété.
+  - `DataType`-le type de données stockées par la propriété
 
     Si vous souhaitez que la propriété s’affiche dans la fenêtre **Propriétés** , utilisez la propriété `Label` pour spécifier le nom d’affichage de la propriété.
 
     Consultez [assigner des catégories aux éléments de code et aux liens](../modeling/customize-code-maps-by-editing-the-dgml-files.md#AssignCategories).
 
-    Exemple :
+    Exemple :
 
   ```xml
   <?xml version="1.0" encoding="utf-8"?>

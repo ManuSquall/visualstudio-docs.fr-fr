@@ -2,17 +2,17 @@
 title: Instructions relatives à l'écriture de modèles de texte T4
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0b1a8c70a0e7ec95e0545ecf3caf932f582b3c5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 24c8afd5e34d4957dac3d9f4d5b0e4409ad20895
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667286"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596539"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>Instructions relatives à l'écriture de modèles de texte T4
 
@@ -115,7 +115,7 @@ Dans **MyReportText-methods.cs**:
 
 Autoriser pour le code personnalisé : fournissez des points d’extension.
 
-Envisagez de générer des méthodes virtuelles dans \< blocs de fonctionnalité de classe # + # >. Cela permet d’utiliser un modèle unique dans de nombreux contextes sans modification. Au lieu de modifier le modèle, vous pouvez construire une classe dérivée qui fournit la logique supplémentaire minimale. La classe dérivée peut être du code normal ou peut être un modèle d’exécution.
+Envisagez de générer des méthodes virtuelles dans \<blocs de fonctionnalité de classe # + # >. Cela permet d’utiliser un modèle unique dans de nombreux contextes sans modification. Au lieu de modifier le modèle, vous pouvez construire une classe dérivée qui fournit la logique supplémentaire minimale. La classe dérivée peut être du code normal ou peut être un modèle d’exécution.
 
 Par exemple, dans MyStandardRunTimeTemplate.tt :
 
@@ -139,7 +139,7 @@ class FabrikamTemplate : MyStandardRunTimeTemplate
 
 Collecte de données distincte à partir de la génération de texte.
 
-Essayez d’éviter de mélanger des blocs de calcul et de texte. Dans chaque modèle de texte, utilisez la première \< # code de bloc # > pour définir des variables et effectuer des calculs complexes. À partir du premier bloc de texte jusqu’à la fin du modèle ou du premier \< le bloc de fonctionnalité de classe # + # >, évitez les expressions longues et évitez les boucles et les conditions, sauf si elles contiennent des blocs de texte. Cette pratique rend le modèle plus facile à lire et à gérer.
+Essayez d’éviter de mélanger des blocs de calcul et de texte. Dans chaque modèle de texte, utilisez la première \<# code de bloc # > pour définir des variables et effectuer des calculs complexes. À partir du premier bloc de texte jusqu’à la fin du modèle ou du premier \<le bloc de fonctionnalité de classe # + # >, évitez les expressions longues et évitez les boucles et les conditions, sauf si elles contiennent des blocs de texte. Cette pratique rend le modèle plus facile à lire et à gérer.
 
 N’utilisez pas `.tt` pour les fichiers include.
 
@@ -151,7 +151,7 @@ Démarrez chaque modèle en tant que prototype fixe.
 
 Envisagez d’utiliser des modèles typés.
 
-Bien que vous puissiez créer un schéma XML ou de base de données pour vos modèles, il peut être utile de créer un langage spécifique à un domaine (DSL). Un DSL présente l’avantage de générer une classe pour représenter chaque nœud dans le schéma et des propriétés pour représenter les attributs. Cela signifie que vous pouvez programmer en termes de modèle d’entreprise. Exemple :
+Bien que vous puissiez créer un schéma XML ou de base de données pour vos modèles, il peut être utile de créer un langage spécifique à un domaine (DSL). Un DSL présente l’avantage de générer une classe pour représenter chaque nœud dans le schéma et des propriétés pour représenter les attributs. Cela signifie que vous pouvez programmer en termes de modèle d’entreprise. Par exemple :
 
 ```
 Team Members:

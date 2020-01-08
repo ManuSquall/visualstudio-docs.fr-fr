@@ -13,17 +13,17 @@ helpviewer_keywords:
 - WriteLinesToFile task [MSBuild]
 - MSBuild, WriteLinesToFile task
 ms.assetid: 9c8862ac-8da5-4437-9430-ecc30421f1c9
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cfe294e94acce70f48b96265b3edc491b37e668
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: cf7f36d0876b1f757dee1a752c8461745783a21e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777891"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595330"
 ---
 # <a name="writelinestofile-task"></a>WriteLinesToFile (tâche)
 Écrit les chemins des éléments spécifiés dans le fichier texte spécifié.
@@ -39,10 +39,10 @@ ms.locfileid: "62777891"
 |`Encoding`|Paramètre `String` facultatif.<br /><br /> Sélectionne l’encodage des caractères, par exemple « Unicode ».  Voir aussi <xref:System.Text.Encoding>.|
 |`WriteOnlyWhenDifferent`|Paramètre `Boolean` facultatif.<br /><br /> Si `true`, le fichier cible spécifié, existe, il sera lu en premier pour effectuer la comparaison avec ce que la tâche aurait écrit. Si les deux sont identiques, le fichier n’est pas enregistré sur le disque et l’horodatage est conservé.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Si `Overwrite` est `true`, crée un fichier, écrit le contenu dans ce fichier, puis le ferme. Si le fichier cible existe déjà, il est remplacé. Si `Overwrite` est `false`, ajoute le contenu au fichier, en créant le fichier cible s’il n’existe pas.
 
- En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).
+ En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension> , qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task> . Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Exemple
  L’exemple suivant utilise la tâche `WriteLinesToFile` pour écrire les chemins des éléments de la collection d’éléments `MyItems` dans le fichier spécifié par la collection d’éléments `MyTextFile`.
@@ -92,5 +92,5 @@ dotnet %~dp0$(AssemblyName).dll %*
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Tâches](../msbuild/msbuild-tasks.md)
+- [Tâches MSBuild](../msbuild/msbuild-tasks.md)
 - [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)
