@@ -9,17 +9,17 @@ helpviewer_keywords:
 - data [Visual Studio], TableAdapters
 - data [Visual Studio], creating table adapters
 ms.assetid: 08630d69-0d6c-4e8f-b42d-2922f45f8415
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f1403d61dd7a0d36401e449806fdafa6adc533b5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4e5a557aeeee3fca2bef0367a630dfaca04b3a74
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648606"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586781"
 ---
 # <a name="create-and-configure-tableadapters"></a>Créer et configurer des TableAdapters
 
@@ -74,7 +74,7 @@ Toutes les modifications que vous apportez à la méthode principale de `Fill` d
 
 Vous pouvez utiliser l’Assistant Configuration de requêtes TableAdapter pour créer et modifier des requêtes supplémentaires pour le TableAdapter. Ces requêtes supplémentaires doivent être conformes au schéma de la table, à moins qu’elles ne retournent une valeur scalaire.  Chaque requête supplémentaire porte un nom que vous spécifiez.
 
-L’exemple suivant montre comment appeler une requête supplémentaire nommée `FillByCity` :
+L’exemple suivant montre comment appeler une requête supplémentaire nommée `FillByCity`:
 
 `CustomersTableAdapter.FillByCity(NorthwindDataSet.Customers, "Seattle")`
 
@@ -82,7 +82,7 @@ L’exemple suivant montre comment appeler une requête supplémentaire nommée 
 
 1. Ouvrez votre dataset dans le **Concepteur de DataSet**.
 
-2. Si vous créez une nouvelle requête, faites glisser un objet **requête** de l’onglet **DataSet** de la **boîte à outils** vers un <xref:System.Data.DataTable> ou sélectionnez Ajouter une **requête** dans le menu contextuel du TableAdapter. Vous pouvez également faire glisser un objet de **requête** dans une zone vide du **Concepteur de DataSet**, ce qui crée un TableAdapter sans <xref:System.Data.DataTable> associé. Ces requêtes peuvent retourner des valeurs uniques (scalaires) ou exécuter des commandes UPDATE, INSERT ou DELETE sur la base de données.
+2. Si vous créez une nouvelle requête, faites glisser un objet **requête** de l’onglet **DataSet** de la **boîte à outils** vers un <xref:System.Data.DataTable>ou sélectionnez Ajouter une **requête** dans le menu contextuel du TableAdapter. Vous pouvez également faire glisser un objet de **requête** dans une zone vide du **Concepteur de DataSet**, ce qui crée un TableAdapter sans <xref:System.Data.DataTable>associé. Ces requêtes peuvent retourner des valeurs uniques (scalaires) ou exécuter des commandes UPDATE, INSERT ou DELETE sur la base de données.
 
 3. Dans l’écran **choisir votre connexion de données** , sélectionnez ou créez la connexion que la requête doit utiliser.
 
