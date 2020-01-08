@@ -11,21 +11,21 @@ helpviewer_keywords:
 - saving data, walkthroughs
 - data [Visual Studio], TableAdapter
 ms.assetid: 74a6773b-37e1-4d96-a39c-63ee0abf49b1
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b73e193f1bb3082a353e004200d437a74f508941
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 16ba6fcab6ef0f7a60f8cb8373a10a7c4383676b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641157"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586209"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Enregistrer des données avec les méthodes DBDirect du TableAdapter
 
-Cette procédure pas à pas fournit des instructions détaillées pour exécuter des instructions SQL directement sur une base de données à l’aide des méthodes DBDirect d’un TableAdapter. Les méthodes DBDirect d’un TableAdapter fournissent un niveau élevé de contrôle sur vos mises à jour de base de données. Vous pouvez les utiliser pour exécuter des instructions SQL et des procédures stockées spécifiques en appelant les méthodes individuelles `Insert`, `Update` et `Delete` selon les besoins de votre application (par opposition à la méthode `Update` surchargée qui exécute la mise à jour, INSERT et les instructions DELETE dans un seul appel).
+Cette procédure pas à pas fournit des instructions détaillées pour exécuter des instructions SQL directement sur une base de données à l’aide des méthodes DBDirect d’un TableAdapter. Les méthodes DBDirect d’un TableAdapter fournissent un niveau élevé de contrôle sur vos mises à jour de base de données. Vous pouvez les utiliser pour exécuter des instructions SQL et des procédures stockées spécifiques en appelant les méthodes individuelles `Insert`, `Update`et `Delete` selon les besoins de votre application (par opposition à la méthode `Update` surchargée qui exécute les instructions UPDATE, INSERT et DELETE dans un seul appel).
 
 Pendant cette procédure pas à pas, vous allez apprendre à :
 
@@ -61,7 +61,7 @@ Cette procédure pas à pas utilise SQL Server Express base de données locale e
 
 La première étape consiste à créer une **Application Windows Forms**.
 
-1. Dans Visual Studio, dans le menu **fichier** , sélectionnez **nouveau**  > **projet**.
+1. Dans Visual Studio, dans le menu **Fichier**, sélectionnez **Nouveau** > **Projet**.
 
 2. Développez **Visual C#**  ou **Visual Basic** dans le volet gauche, puis sélectionnez **Bureau Windows**.
 
@@ -89,7 +89,7 @@ Cette étape utilise l’**Assistant Configuration de source de données** pour 
 
     - Si une connexion de données à l’exemple de base de données Northwind est disponible dans la liste déroulante, sélectionnez-la.
 
-         ou
+         \- ou -
 
     - Sélectionnez **Nouvelle connexion** pour afficher la boîte de dialogue **Ajouter/Modifier la connexion**.
 
@@ -109,7 +109,7 @@ Créez les contrôles liés aux données en faisant glisser des éléments depui
 
 Pour créer des contrôles liés aux données dans le Windows Form, faites glisser le nœud **région** principale de la fenêtre **sources de données** vers le formulaire.
 
-Un contrôle <xref:System.Windows.Forms.DataGridView> et une barre d'outils (<xref:System.Windows.Forms.BindingNavigator>) pour parcourir les enregistrements apparaissent dans le formulaire. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `RegionTableAdapter`, <xref:System.Windows.Forms.BindingSource> et <xref:System.Windows.Forms.BindingNavigator> apparaissent dans la barre d’état des composants.
+Un contrôle <xref:System.Windows.Forms.DataGridView> et une barre d'outils (<xref:System.Windows.Forms.BindingNavigator>) pour parcourir les enregistrements apparaissent dans le formulaire. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `RegionTableAdapter`, <xref:System.Windows.Forms.BindingSource>et <xref:System.Windows.Forms.BindingNavigator> apparaissent dans la barre d’état des composants.
 
 ### <a name="to-add-buttons-that-will-call-the-individual-tableadapter-dbdirect-methods"></a>Pour ajouter des boutons pour appeler les méthodes DbDirect individuelles de TableAdapter
 
@@ -117,7 +117,7 @@ Un contrôle <xref:System.Windows.Forms.DataGridView> et une barre d'outils (<xr
 
 2. Définissez les propriétés **Name** et **Text** suivantes sur chaque bouton.
 
-    |Name|Texte|
+    |Name|Text|
     |----------|----------|
     |`InsertButton`|**Insert**|
     |`UpdateButton`|**Mettre à jour**|
@@ -160,7 +160,7 @@ Un contrôle <xref:System.Windows.Forms.DataGridView> et une barre d'outils (<xr
 
 - Sélectionnez le bouton **supprimer** , puis vérifiez que l’enregistrement est supprimé de la grille.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 Selon les exigences de votre application, vous pouvez effectuer plusieurs étapes après la création d’un formulaire lié aux données. Vous pouvez apporter à cette procédure pas à pas les améliorations suivantes :
 

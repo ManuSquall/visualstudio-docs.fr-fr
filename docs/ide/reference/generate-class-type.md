@@ -2,8 +2,8 @@
 title: Générer une classe ou un type
 ms.date: 01/26/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 f1_keywords:
 - vsl.GenerateFromUsage
@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: d561a77006b83d366506b48d3a164ada380b1a24
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 94786ef10e427a0deb4f80471305509124f1638b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660076"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595629"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>Générer une classe ou un type dans Visual Studio
 
@@ -25,7 +25,7 @@ Cette génération de code s’applique à :
 
 - C#
 
-- Visual Basic
+- Visual Basic
 
 **Quoi :** vous permet de générer immédiatement le code pour une classe ou un type.
 
@@ -52,7 +52,7 @@ Cette génération de code s’applique à :
    - **Souris**
       - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
       - Placez le curseur sur la ligne ondulée rouge, puis cliquez sur l’icône ![ampoule d’erreur](media/error-bulb.png) qui apparaît.
-      - Cliquez sur le bouton ![ampoule d’erreur](media/error-bulb.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne ondulée rouge.
+      - Cliquez sur l'onglet ![ampoule d’erreur](media/error-bulb.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne ondulée rouge.
 
       ![Aperçu de l’action Générer la classe](media/class-preview-cs.png)
 
@@ -72,7 +72,7 @@ Cette génération de code s’applique à :
 
    Sélection | Description
    --- | ---
-   Access | Définissez un accès *Par défaut*, *Interne* ou *Public* pour le type.
+   Accès | Définissez un accès *Par défaut*, *Interne* ou *Public* pour le type.
    Kind | Peut être défini sur *classe* ou *structure*.
    Name | Ce paramètre ne peut pas être modifié et affichera le nom que vous avez déjà tapé.
    Projet | Si votre solution contient plusieurs projets, vous pouvez choisir l’emplacement souhaité pour la classe/structure à utiliser.
@@ -84,7 +84,7 @@ La classe ou le struct est créé. Pour C#, un constructeur est également cré�
 
    ![Résultat de l’action Générer la classe (C#)](media/class-result-cs.png)
 
-- Visual Basic
+- Visual Basic
 
    ![Résultat de l’action Générer la classe (Visual Basic)](media/class-result-vb.png)
 

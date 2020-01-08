@@ -4,19 +4,19 @@ ms.date: 11/15/2018
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 554311f7b7af5c104b48f5a4901677595d60ab41
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5cf5f8d3660abcf941eb5cc429b8f190459d9c56
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647826"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596045"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Bienvenue dans l’IDE Visual Studio | Visual Basic
 
@@ -277,7 +277,7 @@ Nous allons aller plus loin en créant un programme simple.
 
 ::: moniker range="vs-2017"
 
-1. Dans la barre de menus de Visual Studio, choisissez **Fichier** > **Nouveau Projet**.
+1. Dans la barre de menus de Visual Studio, choisissez **fichier** > **nouveau projet**.
 
    ![Fichier > Nouveau projet sur la barre de menus](media/file-new-project-menu.png)
 
@@ -341,7 +341,7 @@ Nous allons aller plus loin en créant un programme simple.
 
 ::: moniker range=">=vs-2019"
 
-1. Dans la barre de menus de Visual Studio, choisissez **Fichier** > **Nouveau Projet**.
+1. Dans la barre de menus de Visual Studio, choisissez **fichier** > **nouveau projet**.
 
    ![Fichier > Nouveau projet sur la barre de menus](media/vs-2019/file-new-project.png)
 
@@ -499,7 +499,7 @@ Définissons un point d’arrêt pour voir la valeur de la variable `username` q
 
 Pour en savoir plus sur le processus de débogage de Visual Studio, consultez [Visite guidée des fonctionnalités de débogage](../../debugger/debugger-feature-tour.md).
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 Explorez davantage Visual Studio en suivant l’un de ces articles d’introduction :
 

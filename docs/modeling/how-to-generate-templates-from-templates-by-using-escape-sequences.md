@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, generating templates from templates
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a9afe2670bb086627407a9f1bc674edfc2fe354
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1460b03a027a2b33844edc7d617f8b5f21208772
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605470"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594641"
 ---
 # <a name="how-to-generate-templates-from-templates-by-using-escape-sequences"></a>Comment : générer des modèles à partir de modèles à l'aide de séquences d'échappement
 Vous pouvez créer un modèle de texte qui crée un autre modèle de texte comme sortie de texte générée. Pour ce faire, vous devez utiliser des séquences d’échappement pour détourer les balises de modèle de texte. Si vous n’utilisez pas de séquences d’échappement, votre modèle de texte généré aura une signification prédéfinie. Pour plus d’informations sur l’utilisation de séquences d’échappement dans les modèles de texte, consultez [utilisation de séquences d’échappement dans des modèles de texte](../modeling/using-escape-sequences-in-text-templates.md).

@@ -13,22 +13,22 @@ helpviewer_keywords:
 - <Otherwise> Element [MSBuild]
 - Otherwise Element [MSBuild]
 ms.assetid: de3997e9-1595-4263-a886-95530b56a319
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fee2dd064b556596f27ae2130697cdd9435d8185
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 460a02b3e2115c7ccb91258ffe960668e64fb363
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963739"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594840"
 ---
 # <a name="otherwise-element-msbuild"></a>Élément Otherwise (MSBuild)
 Spécifie le bloc de code à exécuter si et seulement si les conditions de tous les éléments `When` correspondent à la valeur `false`.
 
- \<Project> \<Choose> \<When> \<Choose> ... \<Otherwise> \<Choose> ...
+ \<projet > \<choisissez > \<lorsque > \<choisir >... \<>...
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -50,7 +50,7 @@ Spécifie le bloc de code à exécuter si et seulement si les conditions de tous
 
 |Élément|Description|
 |-------------|-----------------|
-|[Choose](../msbuild/choose-element-msbuild.md)|Élément facultatif.<br /><br /> Évalue des éléments enfants pour sélectionner une section de code à exécuter. Un élément `Otherwise` peut ne contenir aucun élément `Choose` ou en contenir plusieurs.|
+|[Choose](../msbuild/choose-element-msbuild.md)|Élément facultatif.<br /><br /> Évalue les éléments enfants pour sélectionner une section de code à exécuter. Un élément `Otherwise` peut ne contenir aucun élément `Choose` ou en contenir plusieurs.|
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Élément facultatif.<br /><br /> Contient un ensemble d’éléments [Item](../msbuild/item-element-msbuild.md) définis par l’utilisateur. Un élément `Otherwise` peut ne contenir aucun élément `ItemGroup` ou en contenir plusieurs.|
 |[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|Élément facultatif.<br /><br /> Contient un ensemble d’éléments [Property](../msbuild/property-element-msbuild.md) définis par l’utilisateur. Un élément `Otherwise` peut ne contenir aucun élément `PropertyGroup` ou en contenir plusieurs.|
 
@@ -60,7 +60,7 @@ Spécifie le bloc de code à exécuter si et seulement si les conditions de tous
 |-------------|-----------------|
 |[Choose](../msbuild/choose-element-msbuild.md)|Évalue les éléments enfants pour sélectionner une section de code à exécuter.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Un élément `Choose` ne peut comprendre qu’un seul élément `Otherwise` qui doit figurer en dernière position.
 
  Les éléments `Choose`, `When` et `Otherwise` sont utilisés ensemble pour permettre la sélection d’une section de code spécifique à exécuter parmi plusieurs options possibles. Pour plus d’informations, consultez [Constructions conditionnelles](../msbuild/msbuild-conditional-constructs.md).

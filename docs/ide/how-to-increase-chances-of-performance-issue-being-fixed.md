@@ -5,12 +5,12 @@ author: seaniyer
 ms.author: seiyer
 ms.date: 11/19/2019
 ms.topic: reference
-ms.openlocfilehash: 3bf61c1ecbed5a3da1fe7ec0bcf9c6d4b7580b8d
-ms.sourcegitcommit: 0b90e1197173749c4efee15c2a75a3b206c85538
+ms.openlocfilehash: 57d956a426e791fcc84d5972f564cd554d6e72f8
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74903992"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75406107"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>Comment augmenter les chances de résolution d’un problème de performances
 
@@ -39,6 +39,8 @@ Vous trouverez ci-dessous des problèmes difficiles à diagnostiquer sans bons f
 -   [Problèmes de lenteur :](#slowness-and-high-cpu-issues) Toute action spécifique dans VS est plus lente que souhaitée
 
 -   [UC élevée :](#slowness-and-high-cpu-issues) Périodes étendues d’utilisation intensive de l’UC de manière inattendue
+
+-   [Problèmes hors processus :](#out-of-process-issues) Un problème provoqué par un processus satellite Visual Studio
 
 ## <a name="crashes"></a>Crashes
 Un incident se produit lorsque le processus (Visual Studio) se termine de manière inattendue.
@@ -171,6 +173,23 @@ N’attachez pas directement les traces de performances aux éléments de commen
 **Suivis de performances avancés**
 
 Les fonctionnalités de collecte de trace de l’outil rapport-a-problem sont suffisantes pour la plupart des scénarios. Toutefois, il existe des cas où un plus grand contrôle de la collection de suivis est nécessaire (par exemple, trace avec une plus grande taille de mémoire tampon), auquel cas PerfView est un excellent outil à utiliser. Les étapes pour l’enregistrement manuel des traces de performances à l’aide de l’outil PerfView se trouvent dans la page [enregistrement des traces de performances avec PerfView](https://github.com/dotnet/roslyn/wiki/Recording-performance-traces-with-PerfView) .
+
+## <a name="out-of-process-issues"></a>Problèmes hors processus
+
+> [!NOTE]
+> À compter de Visual Studio 2019 version 16,3, les journaux hors processus sont automatiquement joints aux commentaires envoyés à l’aide de l’outil signaler un problème. Toutefois, si le problème est directement reproductible, le fait de suivre les étapes ci-dessous peut vous aider à ajouter des informations supplémentaires pour mieux diagnostiquer le problème.
+
+Il existe un certain nombre de processus satellites qui s’exécutent parallèlement à Visual Studio et fournissent différentes fonctionnalités à partir de l’extérieur du processus principal de Visual Studio. Si une erreur se produit dans l’un de ces processus satellites, elle est généralement visible côté Visual Studio sous la forme d’un « StreamJsonRpc. RemoteInvocationException » ou d’un « StreamJsonRpc. ConnectionLostException ».
+
+Ce qui rend ces types de problèmes les plus exploitables consiste à fournir des journaux supplémentaires qui peuvent être collectés en procédant comme suit :
+
+1.  S’il s’agit d’un problème directement reproductible, commencez par supprimer le dossier **% temp%/servicehub/logs** . Si vous ne pouvez pas reproduire ce problème, conservez ce dossier intact et ignorez les puces suivantes :
+
+    -   Définir la variable d’environnement globale **ServiceHubTraceLevel** sur **All**
+    -   Reproduisez le problème.
+
+2.  Téléchargez le Microsoft Visual Studio et .NET Framework outil de collecte de journaux [ici](https://aka.ms/vscollect).
+3.  Exécutez l'outil. Cela génère un fichier zip dans **% temp%/vslogs.zip**. Veuillez joindre ce fichier à vos commentaires.
 
 ## <a name="see-also"></a>Voir aussi
 

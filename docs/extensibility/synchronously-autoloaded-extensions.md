@@ -1,6 +1,6 @@
 ---
 title: Extensions chargées automatiquement de façon synchrone
-ms.date: 02/16/2019
+ms.date: 12/11/2019
 ms.topic: conceptual
 ms.assetid: 822e3cf8-f723-4ff1-8467-e0fb42358a1f
 author: madskristensen
@@ -8,48 +8,50 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b18642269326c516c2af0baef57cb306f60ae6a
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: aaa26585ff4cca909a7fb7c955b351b8860436b4
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316712"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75406636"
 ---
 # <a name="synchronously-autoloaded-extensions"></a>Extensions chargées automatiquement de façon synchrone
 
-Mode synchrone les extensions chargées automatiquement ont un impact négatif sur les performances de Visual Studio et doivent être converties pour utiliser autoload asynchrone à la place. À partir de Visual Studio 2019 Preview 2, les utilisateurs sont avertis quand une extension est en cours de façon synchrone chargées automatiquement. L’extension de charge et fonctionner normalement.
+Les extensions chargées de façon synchrone ont un impact négatif sur les performances de Visual Studio et doivent être converties pour utiliser le mode asynchrone asynchrone à la place. Par défaut, Visual Studio 2019 bloque les packages chargés de façon synchrone à partir de n’importe quelle extension et avertit l’utilisateur.
 
-![Avertissement de compatibilité d’extension](media/extension-compatibility-warning.png)
+![Avertissement de compatibilité d’extension](media/extension-compatibility-warning-16-1.png.png)
 
-Les utilisateurs peuvent :
+Vous pouvez effectuer les tâches suivantes :
 
-- Cliquez sur **en savoir plus** pour accéder à cette page d’informations.
+- Cliquez sur **autoriser le chargement synchrone** automatique pour autoriser les extensions à se synchroniser. Pour modifier ce paramètre dans les options de Visual Studio, cliquez sur environnement, sur extensions, puis cochez la case « Autoriser le chargement synchrone des extensions ». 
 
-- Cliquez sur **gérer les performances** pour ouvrir le [boîte de dialogue Gestionnaire de performances](#performance-manager-dialog) qui affiche les problèmes de performances avec les extensions et fenêtres Outil.
+- Cliquez sur **gérer les performances** pour ouvrir la [boîte de dialogue Gestionnaire de performances](#performance-manager-dialog) qui affiche des problèmes de performances avec les extensions et les fenêtres outil.
 
-- Cliquez sur **ne plus afficher ce message** pour faire disparaître la notification. Cette option empêche également toutes les futures notifications à partir de façon synchrone les extensions chargées automatiquement. Les utilisateurs continueront à recevoir des notifications sur les autres fonctionnalités de Visual Studio.
+- Cliquez sur **ne pas afficher ce message pour les extensions actuelles** pour ignorer la notification et empêcher les futures notifications des extensions installées existantes. Si vous ajoutez une nouvelle extension qui se charge de façon synchrone, cette notification s’affichera à nouveau. Vous continuerez à recevoir des notifications sur les autres fonctionnalités de Visual Studio.
 
-## <a name="performance-manager-dialog"></a>Boîte de dialogue Gestionnaire de performances
+## <a name="performance-manager-dialog"></a>Boîte de dialogue Performance Manager
 
-![boîte de dialogue Gestionnaire des performances](media/performance-manager.png)
+![boîte de dialogue Performance Manager](media/performance-manager.png)
 
-Toutes les extensions de façon synchrone chargé tous les packages dans toutes les sessions utilisateur apparaissent dans le **API déconseillées** onglet.
+Toutes les extensions qui chargent de façon synchrone des packages dans toutes les sessions utilisateur s’affichent sous l’onglet **API déconseillées** .
 
-* Les utilisateurs peuvent cliquer sur le **plus d’informations sur ce problème** pour collecter plus d’informations sur les API déconseillées.
-* Les utilisateurs peuvent contacter leurs fournisseurs d’extension de la progression de la migration.
+* Cliquez sur **plus d’informations sur ce problème** pour recueillir plus d’informations sur les API déconseillées.
+* Contactez leurs fournisseurs d’extension pour la progression de la migration.
 
-Auteurs de l’extension peuvent trouver des instructions sur la migration des packages à autoload asynchrone à [migrer vers AsyncPackage](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/AsyncPackageMigration).
+## <a name="specify-synchronous-autoload-settings-using-group-policy"></a>Spécifier les paramètres de chargement synchrone à l’aide de la stratégie de groupe
 
-## <a name="specify-synchronous-autoload-settings-using-group-policy"></a>Spécifiez les paramètres de chargement automatique synchrone à l’aide de la stratégie de groupe
-
-Démarrage de Visual Studio 2019 Update 1, par défaut, le chargement automatique synchrone de Visual Studio installation blocs. Lorsque vous activez la stratégie de groupe, vous pouvez configurer Visual Studio pour autoriser le chargement automatique synchrone sur des ordinateurs individuels. Pour ce faire, définissez une stratégie basée sur le Registre sur la clé suivante :
+Les administrateurs peuvent activer un stratégie de groupe pour autoriser le chargement synchrone synchrone. Pour ce faire, définissez une stratégie basée sur le Registre sur la clé suivante :
 
 **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SynchronousAutoload**
 
-Entrée = **autorisé**
+Entrée = **autorisée**
 
 Value = (DWORD)
-* **0** autoload synchrone ne peut pas
-* **1** autoload synchrone n’est autorisée
+* **0** est un autoload synchrone non autorisé
+* **1** est une autoload synchrone autorisée
 
-Pour plus d’informations sur les paramètres de chargement automatique synchrone dans Visual Studio 2019 Update 1, consultez le [comportement de chargement automatique synchrone](https://aka.ms/AA52xzw) page.
+## <a name="extension-authors"></a>Auteurs d’extensions
+Les auteurs d’extensions peuvent trouver des instructions pour la migration des packages vers le mode asynchrone asynchrone lors de la [migration vers AsyncPackage](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/AsyncPackageMigration).
+
+## <a name="see-also"></a>Voir aussi
+Pour plus d’informations sur les paramètres de chargement synchrone dans Visual Studio 2019, consultez la page [comportement synchrone de chargement](https://aka.ms/AA52xzw) automatique.

@@ -12,17 +12,17 @@ helpviewer_keywords:
 - records, inserting
 - saving data
 ms.assetid: ea118fff-69b1-4675-b79a-e33374377f04
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: aaca23e6aa81fab958fc813fa5e2331f8906a562
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3a3830c9dd1921939ced3577b7bafa22772b49f6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648316"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586417"
 ---
 # <a name="insert-new-records-into-a-database"></a>Insérer de nouveaux enregistrements dans une base de données
 
@@ -46,7 +46,7 @@ Si votre application utilise des jeux de données pour stocker des données, vou
 
 1. Ajoutez de nouveaux enregistrements au <xref:System.Data.DataTable> souhaité en créant un nouveau <xref:System.Data.DataRow> et en l’ajoutant à la collection de <xref:System.Data.DataTable.Rows%2A>.
 
-2. Une fois les nouvelles lignes ajoutées au <xref:System.Data.DataTable>, appelez la méthode `TableAdapter.Update`. Vous pouvez contrôler la quantité de données à mettre à jour en passant une <xref:System.Data.DataSet> entière, un <xref:System.Data.DataTable>, un tableau de <xref:System.Data.DataRow>s ou un <xref:System.Data.DataRow> unique.
+2. Une fois les nouvelles lignes ajoutées au <xref:System.Data.DataTable>, appelez la méthode `TableAdapter.Update`. Vous pouvez contrôler la quantité de données à mettre à jour en transmettant un <xref:System.Data.DataSet>entier, un <xref:System.Data.DataTable>, un tableau de <xref:System.Data.DataRow>s ou un <xref:System.Data.DataRow>unique.
 
    Le code suivant montre comment ajouter un nouvel enregistrement à un <xref:System.Data.DataTable> puis appeler la méthode `TableAdapter.Update` pour enregistrer la nouvelle ligne dans la base de données. (Cet exemple utilise la table `Region` de la base de données Northwind.)
 
@@ -73,7 +73,7 @@ Vous pouvez insérer de nouveaux enregistrements directement dans une base de do
 
 ### <a name="to-insert-new-records-into-a-database-by-using-command-objects"></a>Pour insérer de nouveaux enregistrements dans une base de données à l’aide d’objets de commande
 
-- Créez un nouvel objet de commande, puis définissez ses propriétés `Connection`, `CommandType` et `CommandText`.
+- Créez un nouvel objet de commande, puis définissez ses propriétés `Connection`, `CommandType`et `CommandText`.
 
 L’exemple suivant illustre l’insertion d’enregistrements dans une base de données à l’aide d’un objet Command. Elle insère des données dans la table `Region` de la base de données Northwind.
 

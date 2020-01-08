@@ -10,17 +10,17 @@ helpviewer_keywords:
 - data access [Visual Studio], objects
 - saving data
 ms.assetid: efd6135a-40cf-4b0d-8f8b-41a5aaea7057
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5208b7764949f6ba6d3e862c7a2102608afb7e24
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 509910730d4da095b6db622212716a8f958495d7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648214"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586261"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Enregistrer les données d’un objet dans une base de données
 
@@ -36,7 +36,7 @@ Par défaut, les méthodes de `DBDirect` sont créées sur un TableAdapter qui p
 |Méthode DBDirect du TableAdapter|Description|
 | - |-----------------|
 |`TableAdapter.Insert`|Ajoute de nouveaux enregistrements à une base de données et vous permet de transmettre des valeurs de colonne individuelles en tant que paramètres de méthode.|
-|`TableAdapter.Update`|Met à jour les enregistrements existants dans une base de données. La méthode `Update` prend les valeurs de colonne d’origine et nouvelles comme paramètres de méthode. Les valeurs d’origine sont utilisées pour localiser l’enregistrement d’origine, et les nouvelles valeurs sont utilisées pour mettre à jour cet enregistrement.<br /><br /> La méthode `TableAdapter.Update` est également utilisée pour réconcilier les modifications apportées à un DataSet dans la base de données en acceptant un <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, <xref:System.Data.DataRow> ou un tableau d' <xref:System.Data.DataRow>s comme paramètres de méthode.|
+|`TableAdapter.Update`|Met à jour les enregistrements existants dans une base de données. La méthode `Update` prend les valeurs de colonne d’origine et nouvelles comme paramètres de méthode. Les valeurs d’origine sont utilisées pour localiser l’enregistrement d’origine, et les nouvelles valeurs sont utilisées pour mettre à jour cet enregistrement.<br /><br /> La méthode `TableAdapter.Update` est également utilisée pour réconcilier les modifications apportées à un DataSet dans la base de données en acceptant un <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, <xref:System.Data.DataRow>ou un tableau d' <xref:System.Data.DataRow>s comme paramètres de méthode.|
 |`TableAdapter.Delete`|Supprime les enregistrements existants de la base de données en fonction des valeurs de colonne d’origine passées en tant que paramètres de méthode.|
 
 ## <a name="to-save-new-records-from-an-object-to-a-database"></a>Pour enregistrer de nouveaux enregistrements d’un objet dans une base de données
@@ -74,7 +74,7 @@ Par défaut, les méthodes de `DBDirect` sont créées sur un TableAdapter qui p
 
 ## <a name="net-security"></a>Sécurité .NET
 
-Vous devez être autorisé à effectuer les `INSERT`, `UPDATE` ou `DELETE` sélectionnés sur la table dans la base de données.
+Vous devez être autorisé à effectuer les `INSERT`, `UPDATE`ou `DELETE` sélectionnés sur la table dans la base de données.
 
 ## <a name="see-also"></a>Voir aussi
 

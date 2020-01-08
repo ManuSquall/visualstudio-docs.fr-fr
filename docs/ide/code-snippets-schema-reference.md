@@ -8,17 +8,17 @@ helpviewer_keywords:
 - code snippets [Visual Studio], schema reference
 - IntelliSense Code Snippets, XML Schema
 ms.assetid: 58a60621-725f-4763-93b7-62ea5424ef88
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff2004f11cac6d3ae44fdc61745c9e8cbab231f1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 22f84fbe5188e74acbf24256444ad11dd9c64347
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72631116"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585429"
 ---
 # <a name="code-snippets-schema-reference"></a>Référence de schéma des extraits de code
 
@@ -58,7 +58,7 @@ Spécifie le nom de l'auteur de l'extrait de code. Le **Gestionnaire des extrait
 
 Une valeur texte est requise. Ce texte spécifie l'auteur de l'extrait de code.
 
-## <a name="code-element"></a>Élément de code
+## <a name="code-element"></a>élément de code
 
 Fournit de petits blocs d'extraits de code à un conteneur.
 
@@ -110,7 +110,7 @@ Trois attributs sont disponibles pour l’élément Code :
 
 - **Langage** - Attribut _obligatoire_ qui spécifie le langage de l’extrait de code. Il peut avoir l’une des valeurs suivantes :
 
-   |valeur|Description|
+   |Value|Description|
    |-----|-----------|
    |`VB`|Identifie un extrait de code Visual Basic.|
    |`CSharp`|Identifie un extrait de code C#.|
@@ -123,7 +123,7 @@ Trois attributs sont disponibles pour l’élément Code :
 
 - **Genre** - _Attribut facultatif_ qui spécifie le type de code contenu dans l’extrait de code. Il peut avoir l’une des valeurs suivantes :
 
-   |valeur|Description|
+   |Value|Description|
    |-----|-----------|
    |`method body`|Spécifie que l'extrait de code est un corps de méthode, et par conséquent, qu'il doit être inséré à l'intérieur d'une déclaration de méthode.|
    |`method decl`|Spécifie que l'extrait de code est une méthode, et par conséquent, qu'il doit être inséré à l'intérieur d'une classe ou d'un module.|
@@ -150,7 +150,7 @@ Vous permet de spécifier un titre et plusieurs extraits de code IntelliSense qu
 </CodeSnippet>
 ```
 
-|Attribut|Description|
+|Attribute|Description|
 |---------------|-----------------|
 |`Format`|Attribut requis. Spécifie la version de schéma de l'extrait de code. L'attribut Format doit être une chaîne dont la syntaxe est x.x.x, où chaque "x" représente une valeur numérique du numéro de version. Visual Studio ignore les extraits de code dont il ne comprend pas les attributs `Format`.|
 
@@ -197,7 +197,7 @@ Spécifie les littéraux et les objets qui composent un extrait de code que vous
 | - |-----------------|
 |[Snippet, élément](../ide/code-snippets-schema-reference.md#snippet-element)|Contient les références, importations, déclarations et code de l'extrait de code.|
 
-## <a name="default-element"></a>Default, élément
+## <a name="default-element"></a>Élément Default
 
 Spécifie la valeur par défaut du littéral ou de l'objet d'un extrait de code IntelliSense.
 
@@ -299,7 +299,7 @@ Spécifie une URL qui fournit des informations supplémentaires sur un extrait d
 
 Une valeur texte est facultative. Ce texte spécifie l'URL à visiter pour plus d'informations sur un extrait de code.
 
-## <a name="id-element"></a>ID, élément
+## <a name="id-element"></a>élément ID
 
 Spécifie l'identificateur unique d'un élément `Literal` ou `Object`. Deux littéraux ou deux objets du même extrait de code ne peuvent pas avoir la même valeur texte dans leurs éléments `ID`. Les littéraux et les objets ne peuvent pas contenir d’élément `ID` avec la valeur « end ». La valeur `$end$` est réservée et utilisée pour marquer l'emplacement du curseur après que l'extrait de code a été inséré.
 
@@ -402,7 +402,7 @@ Les littéraux et les objets ne peuvent pas contenir d’élément **ID** avec l
 </Literal>
 ```
 
-|Attribut|Description|
+|Attribute|Description|
 |---------------|-----------------|
 |`Editable`|Attribut `Boolean` facultatif. Spécifie si vous pouvez modifier ou non le littéral une fois l'extrait de code inséré. La valeur par défaut de cet attribut est `true`.|
 
@@ -433,7 +433,7 @@ Spécifie l'espace de noms qui doit être importé pour compiler l'extrait de co
 
 Une valeur texte est requise. Ce texte spécifie un espace de noms que l'extrait de code considère comme importé.
 
-## <a name="object-element"></a>Object, élément
+## <a name="object-element"></a>élément Object
 
 Définit les objets de l'extrait de code que vous pouvez modifier. L'élément `Object` est utilisé pour identifier un élément qui est requis par l'extrait de code, mais qui est vraisemblablement en dehors de l'extrait de code lui-même. Par exemple, les contrôles Windows Forms, les contrôles ASP.NET, les instances d'objet et les instances de type doivent être déclarées comme objets. Les déclarations d'objet requièrent qu'un type soit spécifié, ce qui est fait avec l'élément `Type`.
 
@@ -447,7 +447,7 @@ Définit les objets de l'extrait de code que vous pouvez modifier. L'élément `
 </Object>
 ```
 
-|Attribut|Description|
+|Attribute|Description|
 |---------------|-----------------|
 |`Editable`|Attribut `Boolean` facultatif. Spécifie si vous pouvez modifier ou non le littéral une fois l'extrait de code inséré. La valeur par défaut de cet attribut est `true`.|
 
@@ -503,10 +503,10 @@ Groupe des éléments `Reference` individuels.
 
 ## <a name="shortcut-element"></a>Shortcut, élément
 
-Spécifie le texte de raccourci utilisé pour insérer l'extrait de code. La valeur texte d'un élément `Shortcut` peut contenir uniquement des signes alphanumériques, des traits d'union (-) et des traits de soulignement (_).
+Spécifie le texte de raccourci utilisé pour insérer l'extrait de code. La valeur texte d’un élément `Shortcut` peut contenir uniquement des caractères alphanumériques et des traits de soulignement (_).
 
 > [!CAUTION]
-> _ et - ne sont pas des caractères pris en charge dans les raccourcis de l’extrait de code C++.
+> Le trait de soulignement (_) n' C++ est pas pris en charge dans les raccourcis de l’extrait.
 
 ```xml
 <Shortcut>
@@ -632,7 +632,7 @@ Spécifie le type de l'objet. L'élément `Object` est utilisé pour identifier 
 | - |-----------------|
 |[Object, élément](../ide/code-snippets-schema-reference.md#object-element)|Définit les champs objet de l'extrait de code que vous pouvez modifier.|
 
-Une valeur texte est requise. Ce texte spécifie le type de l'objet. Exemple :
+Une valeur texte est requise. Ce texte spécifie le type de l'objet. Par exemple :
 
 ```xml
 <Type>System.Data.SqlClient.SqlConnection</Type>

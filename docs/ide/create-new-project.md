@@ -6,17 +6,17 @@ f1_keywords:
 - vs.newproject
 helpviewer_keywords:
 - projects [Visual Studio], creating
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a35302e8f749563ab173e7be15e944f8462fdb18
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 77a6a33a1dde4d779a56c9ee559ecfd3b20dfbfb
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652652"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585468"
 ---
 # <a name="create-a-new-project-in-visual-studio"></a>Créer un projet dans Visual Studio
 
@@ -59,7 +59,7 @@ Il existe plusieurs façons de créer un projet dans Visual Studio 2019. Quand 
 
 ![Créer un projet à partir de la fenêtre de démarrage dans Visual Studio 2019](media/vs-2019/start-window-create-new-project.png)
 
-Si l’environnement de développement Visual Studio est déjà ouvert, vous pouvez créer un projet en choisissant **Fichier** > **Nouveau** > **Projet** dans la barre de menus ou en cliquant sur le bouton **Nouveau projet** dans la barre d’outils.
+Si l’environnement de développement Visual Studio est déjà ouvert, vous pouvez créer un nouveau projet en choisissant **fichier** > **nouveau** > **projet** dans la barre de menus ou en cliquant sur le bouton **nouveau projet** dans la barre d’outils.
 
 ![Bouton Nouveau projet dans Visual Studio 2019](media/vs-2019/new-project-button.png)
 

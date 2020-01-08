@@ -2,7 +2,7 @@
 title: Supprimer Visual Studio
 titleSuffix: ''
 description: Découvrez comment supprimer complètement Visual Studio de votre ordinateur, étape par étape.
-ms.date: 03/30/2019
+ms.date: 12/19/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -15,42 +15,50 @@ f1_keywords:
 - clean up
 - clean up Visual Studio
 ms.assetid: 9c81a777-9c95-4934-b517-c60c6dc78799
-author: heaths
+author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: e363065d96169660817a548fb97d39f09cf679c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: fec652e0089a8baae79b6fa9446249710ea2f40d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62810388"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594511"
 ---
 # <a name="remove-visual-studio"></a>Supprimer Visual Studio
 
-Si vous rencontrez une erreur grave et ne parvenez pas à réparer ou à désinstaller Visual Studio, vous pouvez exécuter l’outil `InstallCleanup.exe` pour supprimer les fichiers d’installation et les informations produit de toutes les instances installées de Visual Studio 2017 ou 2019. Cet outil ne doit être exécuté qu’en dernier recours, lorsque la réparation ou la désinstallation échouent. En effet, l’outil peut désinstaller des fonctionnalités d’autres installations de Visual Studio ou d’autres produits qui doivent alors aussi être réparés.
+Si vous rencontrez une erreur catastrophique et que vous ne pouvez pas réparer ou désinstaller Visual Studio, vous pouvez exécuter l’outil `InstallCleanup.exe` pour supprimer les fichiers d’installation et les informations sur les produits pour toutes les instances installées de Visual Studio 2017 ou Visual Studio 2019.
 
-Dans les instructions suivantes, vous pouvez exécuter l’outil avec différents commutateurs de ligne de commande au comportement suivant :
+> [!WARNING]
+> Utilisez l’outil InstallCleanup **uniquement en dernier recours en cas d'** échec de la réparation ou de la désinstallation. Cet outil peut désinstaller des fonctionnalités d’autres installations de Visual Studio ou d’autres produits, qui peuvent être également nécessaires à la réparation ou à la réinstallation.
+
+## <a name="run-installcleanupexe"></a>Exécuter InstallCleanup. exe
+
+Vous pouvez utiliser l’un des commutateurs de ligne de commande suivants avec l’outil `InstallCleanup.exe` :
 
 | Basculer | Comportement |
 | ------ | -------- |
-| `-i`   | Il s’agit du commutateur par défaut si aucun autre commutateur n’est passé. Il supprime uniquement le répertoire d’installation principal et les informations produit. Ce comportement est préférable si vous envisagez de réinstaller la même version après avoir exécuté l’outil `InstallCleanup.exe`. |
-| `-f`   | La spécification de ce commutateur supprime le répertoire d’installation principal, les informations produit et la plupart des autres fonctionnalités installées en dehors du répertoire d’installation, et qui peuvent être partagées avec d’autres installations de Visual Studio ou d’autres produits. Ce comportement est préférable si vous prévoyez de supprimer Visual Studio et de ne pas le réinstaller. |
+| `-i`   | Ce commutateur est la valeur par défaut si aucun autre commutateur n’est passé. Il supprime uniquement le répertoire d’installation principal et les informations sur le produit. Utilisez ce commutateur si vous envisagez de réinstaller la même version de Visual Studio après avoir exécuté l’outil `InstallCleanup.exe`. |
+| `-f`   | Ce commutateur supprime le répertoire d’installation principal, les informations sur le produit et la plupart des autres fonctionnalités installées en dehors du répertoire d’installation, qui peuvent également être partagées avec d’autres installations de Visual Studio ou d’autres produits. Utilisez ce commutateur si vous envisagez de supprimer Visual Studio sans le réinstaller ultérieurement. |
+
+Voici comment exécuter l’outil `InstallCleanup.exe` :
 
 1. Fermez le programme d’installation de Visual Studio.
-2. Ouvrez une invite de commandes administrateur. Pour ouvrir une invite de commandes administrateur, suivez les étapes ci-dessous :
+1. Ouvrez une invite de commandes administrateur. Pour ouvrir une invite de commandes administrateur, suivez les étapes ci-dessous :
    * Tapez **cmd** dans la zone « Tapez ici pour effectuer une recherche ».
-   * Cliquez avec le bouton droit de la souris sur **Invite de commande**, puis cliquez sur **Exécuter en tant qu'administrateur**.
-3. Tapez le chemin complet de l’utilitaire `InstallCleanup.exe` et passez le commutateur de ligne de commande de votre choix. Par défaut, le chemin de l’utilitaire est le suivant :
+   * Cliquez avec le bouton droit sur **Invite de commandes**, puis sélectionnez **Exécuter en tant qu’administrateur**.
+1. Entrez le chemin d’accès complet de l’outil de `InstallCleanup.exe` et ajoutez le commutateur de ligne de commande que vous préférez. Par défaut, le chemin d’accès de l’outil est le suivant :
 
    ```
    C:\Program Files (x86)\Microsoft Visual Studio\Installer\resources\app\layout\InstallCleanup.exe
    ```
 
-Si vous ne trouvez pas `InstallCleanup.exe` dans le répertoire Visual Studio Installer (qui est toujours situé ici : `%ProgramFiles(x86)%\Microsoft Visual Studio`), suivez les instructions de [désinstallation de Visual Studio](install-visual-studio.md), et lorsque l’écran de sélection de la charge de travail s’affiche, fermez la fenêtre, puis suivez de nouveau les étapes précédentes.
+   > [!NOTE]
+   > Si vous ne trouvez pas `InstallCleanup.exe` dans le répertoire Visual Studio Installer, qui se trouve toujours dans `%ProgramFiles(x86)%\Microsoft Visual Studio`, voici ce que vous devez faire ensuite. Suivez les instructions pour [installer Visual Studio](install-visual-studio.md). Ensuite, lorsque l’écran de sélection de la charge de travail s’affiche, fermez la fenêtre et suivez à nouveau les étapes de cette page.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

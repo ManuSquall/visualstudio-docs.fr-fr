@@ -15,17 +15,17 @@ helpviewer_keywords:
 - dependency diagrams
 - diagrams - modeling, layer
 - constraints, architectural
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 07cba8f8ae813ae223ef3da110a046f65c81b091
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 774716dff6562b7792c6fa885c40db2a0a133136
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984082"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594563"
 ---
 # <a name="dependency-diagrams-reference"></a>Diagrammes de dépendance : référence
 
@@ -58,9 +58,9 @@ Le tableau suivant décrit les éléments que vous pouvez utiliser sur un diagra
 
 |**Automatiques**|**Élément**|**Description**|
 |-|-|-|
-|1|**WFP**|Groupe logique d'artefacts physiques dans votre système. Ces artefacts peuvent correspondre à des espaces de noms, des projets, des classes, des méthodes, etc.<br /><br /> Pour afficher les artefacts liés à une couche, ouvrez le menu contextuel de la couche, puis choisissez afficher les **liens** pour ouvrir l' **Explorateur de couches**.<br /><br /> Pour plus d’informations, consultez [Explorateur de couches](#Explorer).<br /><br /> -    les**dépendances d’espace de noms interdits** : spécifie que les artefacts associés à cette couche ne peuvent pas dépendre des espaces de noms spécifiés.<br />-    les**espaces de noms interdits** : spécifie que les artefacts associés à cette couche ne doivent pas appartenir aux espaces de noms spécifiés.<br />-   **espaces de noms requis** : spécifie que les artefacts associés à cette couche doivent appartenir à l’un des espaces de noms spécifiés.|
-|2|**Dépendance**|Indique qu'une couche peut utiliser les fonctionnalités d'une autre couche, mais pas l'inverse.<br /><br /> **direction** de la -    : spécifie la direction de la dépendance.|
-|3|**Dépendance bidirectionnelle**|Indique qu'une couche peut utiliser les fonctionnalités d'une autre couche, et vice versa.<br /><br /> **direction** de la -    : spécifie la direction de la dépendance.|
+|1|**WFP**|Groupe logique d'artefacts physiques dans votre système. Ces artefacts peuvent correspondre à des espaces de noms, des projets, des classes, des méthodes, etc.<br /><br /> Pour afficher les artefacts liés à une couche, ouvrez le menu contextuel de la couche, puis choisissez afficher les **liens** pour ouvrir l' **Explorateur de couches**.<br /><br /> Pour plus d’informations, consultez [Explorateur de couches](#Explorer).<br /><br /> -   les **dépendances d’espace de noms interdits** : spécifie que les artefacts associés à cette couche ne peuvent pas dépendre des espaces de noms spécifiés.<br />-   les **espaces de noms interdits** : spécifie que les artefacts associés à cette couche ne doivent pas appartenir aux espaces de noms spécifiés.<br />-   **espaces de noms requis** : spécifie que les artefacts associés à cette couche doivent appartenir à l’un des espaces de noms spécifiés.|
+|2|**Dépendance**|Indique qu'une couche peut utiliser les fonctionnalités d'une autre couche, mais pas l'inverse.<br /><br /> **direction** de la -   : spécifie la direction de la dépendance.|
+|3|**Dépendance bidirectionnelle**|Indique qu'une couche peut utiliser les fonctionnalités d'une autre couche, et vice versa.<br /><br /> **direction** de la -   : spécifie la direction de la dépendance.|
 |4|**Commentaireaire**|Permet d'ajouter des remarques générales au diagramme ou aux éléments du diagramme.|
 |5|**Lien de commentaire**|Permet de lier des commentaires aux éléments du diagramme.|
 

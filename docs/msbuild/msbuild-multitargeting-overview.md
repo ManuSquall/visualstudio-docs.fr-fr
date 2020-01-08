@@ -3,17 +3,17 @@ title: Vue d’ensemble du multiciblage MSBuild | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: eecbcd65-9fbc-4307-a321-46d3c3b79b12
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc7bbf08ac2d020ac058eaa75791e5b733ceab04
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: d54209624a7413bb5d968f212e669a4be8171b43
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926401"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595915"
 ---
 # <a name="msbuild-multitargeting-overview"></a>Vue d’ensemble du multiciblage MSBuild
 MSBuild vous permet de compiler une application pour l’exécuter sur une version du .NET Framework donnée et sur une plateforme système donnée. Par exemple, vous pouvez compiler une application qui s’exécute sur le .NET Framework version 2.0 sur une plateforme 32 bits, et compiler la même application pour qu’elle s’exécute sur le .NET Framework version 4.5 sur une plateforme 64 bits.

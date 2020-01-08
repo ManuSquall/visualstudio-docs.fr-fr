@@ -6,17 +6,17 @@ helpviewer_keywords:
 - open folder [Visual Studio]
 - anycode [Visual Studio]
 - projects and solutions, develop code without
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a88bfb5f12ae707c98eedd1f57a4be14665aa83c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d7a9459868d569a7466dccf92e4b548c0500bf80
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652504"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596292"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Développer du code dans Visual Studio sans projets ni solutions
 
@@ -118,6 +118,6 @@ Le texte du bouton **Démarrer** évolue pour refléter le fait que le projet es
 ## <a name="see-also"></a>Voir aussi
 
 - [Personnaliser des tâches de génération et de débogage](../ide/customize-build-and-debug-tasks-in-visual-studio.md)
-- [Projets Ouvrir un dossier pour C++](/cpp/build/open-folder-projects-cpp)
-- [Projets CMake dans C++](/cpp/build/cmake-projects-in-visual-studio)
+- [Ouvrir des projets de dossier pour C++](/cpp/build/open-folder-projects-cpp)
+- [Projets CMake en C++](/cpp/build/cmake-projects-in-visual-studio)
 - [Écriture de code dans l’éditeur de code et de texte](../ide/writing-code-in-the-code-and-text-editor.md)

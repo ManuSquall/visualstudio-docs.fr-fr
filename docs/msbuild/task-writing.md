@@ -7,17 +7,17 @@ helpviewer_keywords:
 - tasks, creating for MSBuild
 - MSBuild, creating tasks
 ms.assetid: 3ebc5f87-8f00-46fc-82a1-228f35a6823b
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cf7f82d628c0c093e0d807920b379263c20ff0b
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 369584a815f671c8b7b4f8a99a5280626b493104
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71238195"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594992"
 ---
 # <a name="task-writing"></a>Écriture de tâches
 Les tâches fournissent le code exécuté pendant le processus de génération. Les tâches sont contenues dans les cibles. Une bibliothèque de tâches types est incluse dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. De plus, vous pouvez créer vos propres tâches. Pour plus d’informations sur la bibliothèque de tâches incluse dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], consultez [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md).
@@ -94,7 +94,7 @@ namespace MyTasks
 ## <a name="register-tasks"></a>Inscrire des tâches
  Si un projet va exécuter une tâche, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] doit savoir comment localiser l’assembly qui contient la classe de tâche. Les tâches sont inscrites à l’aide de [l’élément UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).
 
- Le fichier[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]  *Microsoft.Common.Tasks* est un fichier projet qui contient une liste d’éléments `UsingTask` qui inscrivent toutes les tâches fournies avec [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Ce fichier est inclus automatiquement lors de la génération de chaque projet. Si une tâche inscrite dans *Microsoft.Common.Tasks* est également inscrite dans le fichier projet actuel, ce dernier est prioritaire. Autrement dit, vous pouvez remplacer une tâche par défaut par votre propre tâche du même nom.
+ Le fichier[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] *Microsoft.Common.Tasks* est un fichier projet qui contient une liste d’éléments `UsingTask` qui inscrivent toutes les tâches fournies avec [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Ce fichier est inclus automatiquement lors de la génération de chaque projet. Si une tâche inscrite dans *Microsoft.Common.Tasks* est également inscrite dans le fichier projet actuel, ce dernier est prioritaire. Autrement dit, vous pouvez remplacer une tâche par défaut par votre propre tâche du même nom.
 
 > [!TIP]
 > Vous pouvez voir la liste des tâches qui sont fournies avec [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] en affichant le contenu de *Microsoft.Common.Tasks*.
@@ -143,7 +143,7 @@ public string RequiredProperty { get; set; }
 
 ## <a name="how-includevstecmsbuildextensibilityinternalsincludesvstecmsbuild_mdmd-invokes-a-task"></a>Comment [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] appelle une tâche
 
-Lors de l’appel d’une [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] tâche, instancie d’abord la classe de tâche, puis appelle les accesseurs set de propriété de cet objet pour les paramètres de tâche qui sont définis dans l’élément Task du fichier projet. Si l’élément Task ne spécifie pas de paramètre, ou si l’expression spécifiée dans l’élément a la valeur d’une chaîne vide, la méthode setter de la propriété n’est pas appelée.
+Lors de l’appel d’une tâche, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] instancie d’abord la classe de tâche, puis appelle les accesseurs set de propriété de cet objet pour les paramètres de tâche qui sont définis dans l’élément Task du fichier projet. Si l’élément Task ne spécifie pas de paramètre, ou si l’expression spécifiée dans l’élément a la valeur d’une chaîne vide, la méthode setter de la propriété n’est pas appelée.
 
 Par exemple, dans le projet
 
@@ -157,13 +157,13 @@ Par exemple, dans le projet
 </Project>
 ```
 
-seul l’accesseur `Input3` Set pour est appelé.
+seul l’accesseur Set pour `Input3` est appelé.
 
 Une tâche ne doit pas dépendre d’un ordre relatif d’appel d’accesseur Set de propriété de paramètre.
 
 ### <a name="task-parameter-types"></a>Types de paramètres de tâche
 
-Gère [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] en mode natif les propriétés de `string`type `bool`, `ITaskItem` et `ITaskItem[]`. Si une tâche accepte un paramètre d’un type différent, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] <xref:System.Convert.ChangeType%2A> appelle pour effectuer la conversion `string` (avec toutes les références de propriété et d’élément développées) vers le type de destination. Si la conversion échoue pour un paramètre d’entrée [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] , émet une erreur et n’appelle pas la méthode `Execute()` de la tâche.
+Le [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] gère en mode natif les propriétés de type `string`, `bool`, `ITaskItem` et `ITaskItem[]`. Si une tâche accepte un paramètre d’un type différent, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] appelle <xref:System.Convert.ChangeType%2A> pour effectuer une conversion à partir de `string` (avec toutes les références de propriété et d’élément développées) vers le type de destination. Si la conversion échoue pour un paramètre d’entrée, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] émet une erreur et n’appelle pas la méthode `Execute()` de la tâche.
 
 ## <a name="example"></a>Exemple
 

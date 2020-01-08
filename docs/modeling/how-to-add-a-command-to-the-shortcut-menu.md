@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, walkthroughs
 - walkthroughs [Domain-Specific Language Tools]
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e476f1db1e30a04e67e6b53f593f55ee3867fae2
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 75805dc08eb340b3f70884d3bf5078a5b2712ed3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985131"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594732"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Comment : ajouter une commande au menu contextuel
 
@@ -139,7 +139,7 @@ Appliquez la méthode décrite dans cette rubrique dans les cas suivants :
 
 2. Recherchez l'attribut `ProvideMenuResource`.
 
-3. Incrémentez le paramètre `version` de l'attribut, qui est le second paramètre. Si vous le souhaitez, vous pouvez écrire le nom du paramètre de manière explicite, pour vous rappeler sa fonction Exemple :
+3. Incrémentez le paramètre `version` de l'attribut, qui est le second paramètre. Si vous le souhaitez, vous pouvez écrire le nom du paramètre de manière explicite, pour vous rappeler sa fonction Par exemple :
 
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`
 
@@ -159,7 +159,7 @@ La classe de jeu de commandes est dérivée de <xref:Microsoft.VisualStudio.Mode
 
 2. Dans **DslPackage**, créez un dossier nommé **code personnalisé**. Dans ce dossier, créez un nouveau fichier de classe nommé `CommandSet.cs`.
 
-3. Dans le nouveau fichier, écrivez une déclaration partielle dont l'espace de noms et le nom sont les mêmes que ceux de la classe partielle générée. Exemple :
+3. Dans le nouveau fichier, écrivez une déclaration partielle dont l'espace de noms et le nom sont les mêmes que ceux de la classe partielle générée. Par exemple :
 
      `namespace Company.Language1 /* Make sure this is correct */`
 
@@ -220,17 +220,17 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
 
 Les fragments suivants sont souvent utiles dans les méthodes OnStatus :
 
-- `this.CurrentSelection`., La forme sur laquelle l'utilisateur a cliqué avec le bouton droit est toujours incluse dans cette liste. Si l'utilisateur clique sur une partie vierge du diagramme, ce dernier est le seul membre de la liste.
+- `this.CurrentSelection`. La forme sur laquelle l'utilisateur a cliqué avec le bouton droit est toujours incluse dans cette liste. Si l'utilisateur clique sur une partie vierge du diagramme, ce dernier est le seul membre de la liste.
 
-- `this.IsDiagramSelected()`  -  `true` si l’utilisateur a cliqué sur une partie vide du diagramme.
+- `this.IsDiagramSelected()` - `true` si l’utilisateur a cliqué sur une partie vide du diagramme.
 
 - `this.IsCurrentDiagramEmpty()`
 
-- `this.IsSingleSelection()` - l'utilisateur n'a pas sélectionné plusieurs objets.
+- `this.IsSingleSelection()`-l’utilisateur n’a pas sélectionné plusieurs objets
 
-- `this.SingleSelection` - forme ou diagramme sur lequel l'utilisateur a cliqué avec le bouton droit.
+- `this.SingleSelection`-la forme ou le diagramme sur lequel l’utilisateur a cliqué avec le bouton droit
 
-- `shape.ModelElement as MyLanguageElement` - élément de modèle représenté par une forme.
+- `shape.ModelElement as MyLanguageElement` : élément de modèle représenté par une forme.
 
 En règle générale, vous devez faire en sorte que la propriété `Visible` dépende de ce qui est sélectionné et que la propriété `Enabled` dépende de l'état des éléments sélectionnés.
 
@@ -297,7 +297,7 @@ private const int cmdidMyContextMenuCommand = 1;
 > [!NOTE]
 > Si vous modifiez la section Symbols du fichier VSCT, vous devez aussi modifier ces déclarations pour qu'elles correspondent. Vous devez également incrémenter le numéro de version dans Package.tt.
 
- Inscrivez vos commandes de menu dans le cadre de ce jeu de commandes. `GetMenuCommands()` est appelée une fois le diagramme initialisé :
+ Inscrivez vos commandes de menu dans le cadre de ce jeu de commandes. `GetMenuCommands()` est appelée une fois lors de l’initialisation du diagramme :
 
 ```csharp
 protected override IList<MenuCommand> GetMenuCommands()
@@ -329,7 +329,7 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 4. Cliquez avec le bouton droit sur différents éléments du diagramme pour vérifier que la commande est activée ou désactivée correctement et affichée ou masquée de manière appropriée, en fonction de l'élément sélectionné.
 
-## <a name="troubleshoot"></a>Résoudre les problèmes
+## <a name="troubleshoot"></a>Dépannage
 
 **La commande n’apparaît pas dans le menu :**
 

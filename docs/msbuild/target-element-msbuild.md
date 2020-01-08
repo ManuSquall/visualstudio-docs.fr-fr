@@ -13,17 +13,17 @@ helpviewer_keywords:
 - Target element [MSBuild]
 - <Target> element [MSBuild]
 ms.assetid: 350f6fc2-86b3-45f2-a31e-ece0e6bd4dca
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1748064482e13eba95e9aa83e9cb04c93b8066f
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: c69ee5758d5c6e513af853a8d7589057c6537956
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491615"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566421"
 ---
 # <a name="target-element-msbuild"></a>Élément Target (MSBuild)
 Contient un ensemble de tâches que [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] doit exécuter séquentiellement.
@@ -55,7 +55,7 @@ Contient un ensemble de tâches que [!INCLUDE[vstecmsbuild](../extensibility/int
 
 ### <a name="attributes"></a>Attributs
 
-|Attribut|Description|
+|Attribute|Description|
 |---------------|-----------------|
 |`Name`|Attribut requis.<br /><br /> Nom de la cible.|
 |`Condition`|Attribut facultatif.<br /><br /> Condition à évaluer. Si la condition a la valeur `false`, la cible n’exécute pas le corps de la cible ni les cibles définies dans l’attribut `DependsOnTargets`. Pour plus d’informations sur les conditions, consultez l’article [Conditions (Conditions MSBuild)](../msbuild/msbuild-conditions.md).|
@@ -81,7 +81,7 @@ Contient un ensemble de tâches que [!INCLUDE[vstecmsbuild](../extensibility/int
 
 | Élément | Description |
 | - | - |
-| [Project](../msbuild/project-element-msbuild.md) | Élément racine requis d'un fichier projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
+| [Project](../msbuild/project-element-msbuild.md) | Élément racine requis d'un fichier projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
 
 ## <a name="remarks"></a>Notes
  La première cible à exécuter est spécifiée au moment de l’exécution. Les cibles peuvent avoir des relations de dépendance avec d’autres cibles. Par exemple, une cible de déploiement dépend d’une cible de compilation. Le moteur [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] exécute des dépendances dans l’ordre dans lequel elles apparaissent dans l’attribut `DependsOnTargets`, de gauche à droite. Pour plus d’informations, consultez l’article [Targets (Cibles MSBuild)](../msbuild/msbuild-targets.md).
@@ -118,5 +118,5 @@ Contient un ensemble de tâches que [!INCLUDE[vstecmsbuild](../extensibility/int
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Targets (Cibles MSBuild)](../msbuild/msbuild-targets.md)
+- [Cibles MSBuild](../msbuild/msbuild-targets.md)
 - [Informations de référence sur le schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)

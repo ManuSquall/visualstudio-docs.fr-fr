@@ -9,17 +9,17 @@ helpviewer_keywords:
 - data binding, user controls
 - data binding, complex
 - user controls [Visual Studio], complex data binding
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f8da3485ac28d1d4f3ad77f3aa0ba381e0350dae
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 97d9e64a0fcabb207d4606d4819f6afcb61b1043
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648654"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586846"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Créer un contrôle utilisateur Windows Forms prenant en charge la liaison de données complexes
 
@@ -148,7 +148,7 @@ Pour créer des contrôles liés aux données, vous pouvez faire glisser des él
 
 Appuyez sur **F5** pour exécuter l’application.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 Selon les spécifications de votre application, vous pouvez exécuter différentes étapes après la création d'un contrôle prenant en charge la liaison de données. Les étapes ultérieures sont habituellement celles-ci :
 
@@ -160,4 +160,4 @@ Selon les spécifications de votre application, vous pouvez exécuter différent
 
 - [Lier des contrôles Windows Forms à des données dans Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [Définir le contrôle à créer lors d’une opération de glisser-déplacer à partir de la fenêtre Sources de données](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)
-- [Contrôles Windows Forms](/dotnet/framework/winforms/controls/index)
+- [Contrôles Windows Forms](/dotnet/framework/winforms/controls/index)

@@ -14,22 +14,22 @@ helpviewer_keywords:
 - HostInBrowser property (MSBuild)
 - GenerateApplicationManifest task [MSBuild]
 ms.assetid: a494102b-0cb2-4755-8e2a-d2c0f39fac1d
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86593ca3ac437b9a36fb671694898a7d80434eba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 446f4728f92d5a486afea1a7c03c8d5006690bfc
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63003637"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589303"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest (tâche)
 Génère un manifeste d’application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ou un manifeste natif. Un manifeste natif décrit un composant en lui définissant une identité unique et en identifiant tous les assemblys et fichiers qui le composent. Un manifeste d’application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] étend un manifeste natif en indiquant le point d’entrée de l’application et en spécifiant le niveau de sécurité des applications.
 
-## <a name="parameters"></a>Paramètres
+## <a name="parameters"></a>Parameters
 Le tableau ci-dessous décrit les paramètres de la tâche `GenerateApplicationManifest`.
 
 | Paramètre | Description |
@@ -64,8 +64,8 @@ Le tableau ci-dessous décrit les paramètres de la tâche `GenerateApplicationM
 | `TrustInfoFile` | Paramètre <xref:Microsoft.Build.Framework.ITaskItem> facultatif.<br /><br /> Indique un document XML qui définit la sécurité de l’application. L’élément racine dans le document XML doit être un nœud trustInfo dans l’espace de noms asmv2. Si la tâche génère un manifeste natif, ce paramètre est ignoré. |
 | `UseApplicationTrust` | Paramètre `Boolean` facultatif.<br /><br /> Si la valeur est true, les propriétés `Product`, `Publisher` et `SupportUrl` sont écrites dans le manifeste de l’application. |
 
-## <a name="remarks"></a>Remarques
-En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.GenerateManifestBase>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste des paramètres de la classe Task, consultez [Classe de base de tâche](../msbuild/task-base-class.md).
+## <a name="remarks"></a>Notes
+En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.GenerateManifestBase> , qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task> . Pour obtenir la liste des paramètres de la classe Task, consultez [Classe de base de tâche](../msbuild/task-base-class.md).
 
 Pour plus d’informations sur l’utilisation de la tâche `GenerateDeploymentManifest`, consultez [GenerateApplicationManifest, tâche](../msbuild/generateapplicationmanifest-task.md).
 
@@ -350,7 +350,7 @@ Cet exemple crée *Test.exe.manifest*, qui permet de déployer l’application X
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Tâches](../msbuild/msbuild-tasks.md)
+- [Tâches MSBuild](../msbuild/msbuild-tasks.md)
 - [Tâche GenerateDeploymentManifest](../msbuild/generatedeploymentmanifest-task.md)
 - [SignFile, tâche](../msbuild/signfile-task.md)
 - [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)

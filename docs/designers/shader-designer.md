@@ -6,17 +6,17 @@ f1_keywords:
 - vs.graphics.designer.effectdesigner
 - vs.graphics.shaderdesigner
 ms.assetid: 5db09a16-b82c-4ba3-8ec9-630cdc109397
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd82a5c8bee50c778b87927f1074d71a38a21e9f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 85ce7b0f270f0da8728b17610a683dcc17d06189
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72635053"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589927"
 ---
 # <a name="shader-designer"></a>Concepteur Shader
 
@@ -46,7 +46,7 @@ Cette section explique comment ajouter un nuanceur DGSL à un projet C++ Visual 
 
 1. Vérifiez que le composant Visual Studio dont vous avez besoin pour travailler avec les graphismes est installé. Il s’appelle **Éditeurs d’images et de modèles 3D**.
 
-   Pour l’installer, ouvrez Visual Studio Installer en sélectionnant **outils**  > **afficher les outils et les fonctionnalités** dans la barre de menus, puis sélectionnez l’onglet **composants individuels** . Sélectionnez le composant **éditeurs d’images et de modèles 3D** sous le  **Catégorie Jeux et graphismes** , puis sélectionnez **modifier**.
+   Pour l’installer, ouvrez Visual Studio Installer en sélectionnant **outils** > **Afficher outils et fonctionnalités** dans la barre de menus, puis sélectionnez l’onglet **composants individuels** . Sélectionnez le composant **éditeurs d’images et de modèles 3D** sous la catégorie **jeux et graphismes** , puis sélectionnez **modifier**.
 
    ![Composant Éditeurs d’images et de modèles 3D](media/image-3d-model-editors-component.png)
 
@@ -172,17 +172,17 @@ Vous pouvez exporter des nuanceurs en tant que code source HLSL ou bytecode de n
 
 Pour plus d’informations sur la façon d’exporter des nuanceurs, consultez [Guide pratique pour exporter un nuanceur](../designers/how-to-export-a-shader.md).
 
-## <a name="keyboard-shortcuts"></a>Raccourcis clavier
+## <a name="keyboard-shortcuts"></a>raccourcis clavier
 
-|Commande|Raccourcis clavier|
+|Command|raccourcis clavier|
 |-------------| - |
 |Passer en mode **Sélection**|**Ctrl**+**G**, **Ctrl**+**Q**<br /><br /> **S**|
 |Passer en mode **Zoom**|**Ctrl**+**G**, **Ctrl**+**Z**<br /><br /> **Z**|
 |Passer en mode **Panoramique**|**Ctrl**+**G**, **Ctrl**+**P**<br /><br /> **K**|
 |Sélectionner tout|**Ctrl**+**A**|
 |Supprimer la sélection actuelle|**Supprimer**|
-|Annuler la sélection actuelle|**Échappement** (**Échap**)|
-|Zoom avant|**Ctrl**+**Roulette de la souris vers l’avant**<br /><br /> Signe plus ( **+** )|
+|Annuler la sélection actuelle|**Séquence d’échappement** (**Échap**)|
+|Zoom avant.|**Ctrl**+**Roulette de la souris vers l’avant**<br /><br /> Signe plus ( **+** )|
 |Zoom arrière|**Ctrl**+**Roulette de la souris vers l’arrière**<br /><br /> Signe moins ( **-** )|
 |Mouvement panoramique vers le haut de l’aire de conception|**Roulette de la souris vers l’arrière**<br /><br /> **Pg. suiv**|
 |Mouvement panoramique vers le bas de l’aire de conception|**Roulette de la souris vers l’avant**<br /><br /> **Pg. préc**|

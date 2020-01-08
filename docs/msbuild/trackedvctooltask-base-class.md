@@ -7,22 +7,22 @@ dev_langs:
 - CSharp
 - C++
 - jsharp
-author: mikeblome
-ms.author: mblome
+author: ghogen
+ms.author: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a4044416131a27ca313d10d02404094c5f5e219
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 8a4272f7800e0532c0674fe7117e839cb16557d5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62938867"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594927"
 ---
 # <a name="trackedvctooltask-base-class"></a>Classe de base TrackedVCToolTask
 
 De nombreuses tâches héritent au final de la classe <xref:Microsoft.Build.Utilities.Task> et de la classe [ToolTask](/dotnet/api/microsoft.build.utilities.tooltask). Cette classe ajoute plusieurs paramètres aux tâches qui dérivent de [VCToolTask](../msbuild/vctooltask-base-class.md). Ces paramètres sont répertoriés dans ce document.
 
-## <a name="parameters"></a>Paramètres
+## <a name="parameters"></a>Parameters
 
 Le tableau ci-dessous décrit les paramètres de la classe de base **TrackedVCToolTask**.
 
@@ -51,4 +51,4 @@ Le tableau ci-dessous décrit les paramètres de la classe de base **TrackedVCTo
 ## <a name="see-also"></a>Voir aussi
 
 [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)<br/>
-[Tâches](../msbuild/msbuild-tasks.md)
+[Tâches MSBuild](../msbuild/msbuild-tasks.md)

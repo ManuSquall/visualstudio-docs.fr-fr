@@ -42,24 +42,24 @@ helpviewer_keywords:
 - datasets [Visual Basic], namespace
 - data adapters, populating datasets
 ms.assetid: ee57f4f6-9fe1-4e0a-be9a-955c486ff427
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3796a9b7a1d37911601574e02c89e8ccebb684ca
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cb41a4e3e4ed1c0032c579779a18c7df0bc22477
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72642115"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586716"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Outils de dataset dans Visual Studio
 
 > [!NOTE]
 > Les jeux de données et les classes associées sont des technologies .NET héritées des 2000 premières versions qui permettent aux applications d’utiliser des données en mémoire alors que les applications sont déconnectées de la base de données. Ils sont particulièrement utiles pour les applications qui permettent aux utilisateurs de modifier des données et de conserver les modifications dans la base de données. Bien que les jeux de données aient prouvé qu’il s’agit d’une technologie très performante, nous recommandons que les nouvelles applications .NET utilisent Entity Framework. Entity Framework offre un moyen plus naturel de travailler avec des données tabulaires en tant que modèles objet, et il dispose d’une interface de programmation plus simple.
 
-Un objet `DataSet` est un objet en mémoire qui est essentiellement une mini-base de données. Il contient des objets `DataTable`, `DataColumn` et `DataRow` dans lesquels vous pouvez stocker et modifier des données à partir d’une ou plusieurs bases de données sans avoir à maintenir une connexion ouverte. Le DataSet conserve des informations sur les modifications apportées à ses données, de sorte que les mises à jour peuvent être suivies et renvoyées à la base de données lorsque votre application est reconnectée.
+Un objet `DataSet` est un objet en mémoire qui est essentiellement une mini-base de données. Il contient des objets `DataTable`, `DataColumn`et `DataRow` dans lesquels vous pouvez stocker et modifier des données à partir d’une ou plusieurs bases de données sans avoir à maintenir une connexion ouverte. Le DataSet conserve des informations sur les modifications apportées à ses données, de sorte que les mises à jour peuvent être suivies et renvoyées à la base de données lorsque votre application est reconnectée.
 
 Les jeux de données et les classes associées sont définis dans l’espace de noms <xref:System.Data?displayProperty=fullName> dans l’API .NET. Vous pouvez créer et modifier dynamiquement des datasets dans le code à l’aide de ADO.NET. La documentation de cette section montre comment utiliser des jeux de données à l’aide de concepteurs Visual Studio. Les jeux de données créés par le biais de concepteurs utilisent des objets **TableAdapter** pour interagir avec la base de données. Les jeux de données créés par programmation utilisent des objets **DataAdapter** . Pour plus d’informations sur la création de jeux de données par programme, consultez [DataAdapters et DataReaders](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
 

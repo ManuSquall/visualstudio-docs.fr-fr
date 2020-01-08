@@ -1,5 +1,5 @@
 ---
-title: 'Étape 5 : Ajouter des contrôles à votre formulaire'
+title: 'Étape 5 : ajouter des contrôles à votre formulaire'
 ms.date: 08/30/2019
 ms.assetid: dc2746f4-0b5c-4674-9ef7-f40f94150f52
 ms.topic: tutorial
@@ -10,26 +10,26 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b88af1a0ac1ec51f57d3aa339c2c2ec4adb45134
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 77b8fc1f1f9f34a5b19756b7cf1370522f74075e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118998"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589966"
 ---
-# <a name="step-5-add-controls-to-your-form"></a>Étape 5 : Ajouter des contrôles à votre formulaire
+# <a name="step-5-add-controls-to-your-form"></a>Étape 5 : ajouter des contrôles à votre formulaire
 
 Lors de cette étape, vous ajoutez des contrôles à votre formulaire (notamment des contrôles <xref:System.Windows.Forms.PictureBox> et <xref:System.Windows.Forms.CheckBox>). Ensuite, vous ajoutez des contrôles <xref:System.Windows.Forms.Button> à votre formulaire.
 
 ## <a name="how-to-add-controls-to-your-form"></a>Comment ajouter des contrôles à votre formulaire
 
-1. Choisissez l’onglet **boîte à outils** sur le côté gauche de l’IDE de Visual Studio (ou appuyez sur **CTRL**+**ALT**+**X**), puis développez le groupe **contrôles communs** . Il affiche les principaux contrôles que vous apercevez dans les formulaires.
+1. Choisissez l’onglet **boîte à outils** sur le côté gauche de l’IDE de Visual Studio (ou appuyez sur **Ctrl**+**ALT**+**X**), puis développez le groupe **contrôles communs** . Il affiche les principaux contrôles que vous apercevez dans les formulaires.
 
 1. Double-cliquez sur l’élément **PictureBox** pour ajouter un contrôle PictureBox à votre formulaire. Étant donné que le contrôle TableLayoutPanel est ancré pour remplir votre formulaire, l'IDE ajoute le contrôle PictureBox dans la première cellule vide (angle supérieur gauche).
 
 1. Choisissez le nouveau contrôle **PictureBox** pour le sélectionner, puis choisissez le triangle noir sur le nouveau contrôle PictureBox pour afficher sa liste de tâches, comme illustré dans la capture d’écran suivante.
 
-    ![Tâches PictureBox](../ide/media/express_pictureboxtasks.png)<br/>*Tâches* PictureBox * * **
+    ![Tâches PictureBox](../ide/media/express_pictureboxtasks.png)<br/>* de *tâches* PictureBox * * *
 
     > [!NOTE]
     > Si vous ajoutez par erreur un type de contrôle incorrect à votre TableLayoutPanel, vous pouvez le supprimer. Cliquez avec le bouton droit sur le contrôle, puis choisissez **Supprimer** dans le menu contextuel. Vous pouvez également supprimer des contrôles du formulaire à l'aide de la barre de menus. Dans la barre de menus, choisissez **Modification** > **Annuler**, ou **Modification** > **Supprimer**.
@@ -43,9 +43,9 @@ Lors de cette étape, vous ajoutez des contrôles à votre formulaire (notamment
 
 1. Choisissez le contrôle **TableLayoutPanel** dans le formulaire, puis ajoutez un contrôle CheckBox au formulaire. Double-cliquez sur l’élément **CheckBox** dans la **Boîte à outils** pour ajouter un nouveau contrôle CheckBox dans la cellule libre suivante de votre tableau. Étant donné qu'un contrôle PictureBox occupe les deux premières cellules du contrôle TableLayoutPanel, le contrôle CheckBox est ajouté à la cellule inférieure gauche. Choisissez la propriété **Text** et tapez le mot **Stretch**, comme illustré dans l’image suivante.
 
-    ![Contrôle TextBox avec propriété Stretch](../ide/media/express_pictureviewercheckbox.png)<br/>***Contrôle TextBox*** *avec la* ***propriété*** *Stretch*
+    ![Contrôle TextBox avec propriété Stretch](../ide/media/express_pictureviewercheckbox.png)<br/>Contrôle ***TextBox*** *avec* *propriété* Stretch
 
-1. Choisissez le **TableLayoutPanel** sur le formulaire, puis accédez au groupe **conteneurs** dans la **boîte à outils** (où vous avez obtenu votre contrôle TableLayoutPanel) et double-cliquez sur l’élément **FlowLayoutPanel** pour ajouter un nouveau contrôle à la dernière cellule (en bas à droite). Ancrez ensuite le FlowLayoutPanel dans le TableLayoutPanel. Pour ce faire, vous pouvez soit choisir **ancrer dans le conteneur parent** dans la liste des tâches triangle noir du contrôle FlowLayoutPanel, soit définir la propriété **Dock** de FlowLayoutPanel sur **Fill**.
+1. Choisissez le **TableLayoutPanel** dans le formulaire, puis accédez au groupe **conteneurs** dans la **boîte à outils** (où vous avez obtenu votre contrôle TableLayoutPanel) et double-cliquez sur l’élément **FlowLayoutPanel** pour ajouter un nouveau contrôle à la dernière cellule (en bas à droite). Ancrez ensuite le FlowLayoutPanel dans le TableLayoutPanel. Pour ce faire, vous pouvez soit choisir **ancrer dans le conteneur parent** dans la liste des tâches triangle noir du contrôle FlowLayoutPanel, soit définir la propriété **Dock** de FlowLayoutPanel sur **Fill**.
 
     > [!NOTE]
     > Un <xref:System.Windows.Forms.FlowLayoutPanel> est un conteneur qui réorganise les autres contrôles d’une ligne, l’un après l’autre. Quand vous redimensionnez un FlowLayoutPanel, il dispose tous ses contrôles sur une seule ligne, s’il y a de la place pour le faire. Sinon, il les réorganise par lignes, les unes au-dessus des autres. <br/><br/>Ici, vous allez utiliser un FlowLayoutPanel pour contenir quatre boutons. Si les boutons sont disposés les uns au-dessus des autres lorsque vous les ajoutez, veillez à sélectionner le contrôle FlowLayoutPanel avant d’ajouter les boutons. <br/><br/>(En général, chaque cellule contient un seul contrôle. Dans cet exemple, la cellule inférieure droite du contrôle TableLayoutPanel contient quatre contrôles bouton. Pourquoi ?  Comme FlowLayoutPanel est un contrôle conteneur, qui est un contrôle dans une cellule qui contient d’autres contrôles.)
@@ -54,7 +54,7 @@ Lors de cette étape, vous ajoutez des contrôles à votre formulaire (notamment
 
 1. Choisissez le nouveau contrôle FlowLayoutPanel que vous avez ajouté. Accédez à **Contrôles communs** dans la **Boîte à outils** et double-cliquez sur l’élément **Bouton** pour ajouter un contrôle bouton appelé **button1** à votre contrôle FlowLayoutPanel. Répétez la même opération pour ajouter un deuxième bouton. L’IDE détermine qu’il existe déjà un bouton appelé **button1** et appelle donc le suivant, **button2**.
 
-1. En général, vous ajoutez les autres boutons à l’aide de la **boîte à outils**. Cette fois-ci, choisissez **button2**, puis dans la barre de menus, choisissez **modifier** > la**copie** (ou appuyez sur **CTRL**+**C**). Ensuite, choisissez **Edition** > **coller** dans la barre de menus (ou appuyez sur **CTRL**+**V**) pour coller une copie de votre bouton. Maintenant collez-le à nouveau. Notez que l’IDE ajoute **button3** et **Button4** au contrôle FlowLayoutPanel.
+1. En général, vous ajoutez les autres boutons à l’aide de la **boîte à outils**. Cette fois-ci, choisissez **button2**, puis dans la barre de menus, choisissez **modifier** > **copier** (ou appuyez sur **CTRL**+**C**). Ensuite, choisissez **modifier** > **coller** dans la barre de menus (ou appuyez sur **CTRL**+**V**) pour coller une copie de votre bouton. Maintenant collez-le à nouveau. Notez que l’IDE ajoute **button3** et **Button4** au contrôle FlowLayoutPanel.
 
     > [!NOTE]
     > Vous pouvez copier et coller n'importe quel contrôle. L'IDE nomme et place les nouveaux contrôles de façon logique. Si vous collez un contrôle dans un conteneur, l'IDE choisit de le placer dans l'espace logique suivant.
@@ -72,21 +72,21 @@ Lors de cette étape, vous ajoutez des contrôles à votre formulaire (notamment
 
    Après avoir sélectionné tous les boutons, accédez à la fenêtre **Propriétés** et faites défiler jusqu’à la propriété **AutoSize** . Cette propriété indique au bouton qu'il doit se redimensionner automatiquement pour s'ajuster à l'ensemble de son texte. Affectez-lui la valeur **true**.
 
-   Vos boutons doivent maintenant avoir des dimensions correctes et se trouver dans le bon ordre. (Si les quatre boutons sont sélectionnés, vous pouvez modifier les quatre propriétés **AutoSize** en même temps.) L’illustration suivante montre les quatre boutons.
+   Vos boutons doivent maintenant avoir des dimensions correctes et se trouver dans le bon ordre. (Tant que les quatre boutons sont sélectionnés, vous pouvez modifier les quatre propriétés **AutoSize** en même temps.) L’illustration suivante montre les quatre boutons.
 
     ![Visionneuse d’images avec quatre boutons](../ide/media/express_autosize.png)<br/>***Visionneuse d’images*** *avec quatre boutons*
 
 1. Maintenant, exécutez à nouveau votre programme pour voir vos modifications.
 
-   Notez que les boutons et la case à cocher ne sont&mdash;pas encore disponibles, mais ils seront bientôt disponibles.
+   Notez que les boutons et la case à cocher ne font rien encore&mdash;mais ils seront bientôt disponibles.
 
 ## <a name="to-continue-or-review"></a>Pour continuer ou examiner
 
-* Pour passer à l’étape suivante du didacticiel, **consultez [étape 6 : Nommez vos contrôles](../ide/step-6-name-your-button-controls.md)** bouton.
+* Pour passer à l’étape suivante du didacticiel, consultez **[étape 6 : nommer vos contrôles bouton](../ide/step-6-name-your-button-controls.md)** .
 
-* Pour revenir à l’étape précédente du tutoriel, consultez [Étape 4 : Composer votre formulaire avec un contrôle TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).
+* Pour revenir à l’étape précédente du tutoriel, consultez [Étape 4 : composer votre formulaire avec un contrôle TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Tutoriel 2 : Créer un questionnaire mathématique chronométré](tutorial-2-create-a-timed-math-quiz.md)
-* [Tutoriel 3 : Créer un jeu de combinaisons](tutorial-3-create-a-matching-game.md)
+* [Didacticiel 2 : créer un questionnaire mathématique chronométré](tutorial-2-create-a-timed-math-quiz.md)
+* [Didacticiel 3 : créer un jeu de combinaisons](tutorial-3-create-a-matching-game.md)

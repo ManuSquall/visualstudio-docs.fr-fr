@@ -2,18 +2,18 @@
 title: Nouveautés de MSBuild 16.0 | Microsoft Docs
 ms.date: 03/11/2019
 ms.topic: conceptual
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 9fb23c8a48493056c9a37f510cefea3cc3374095
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 3e6ecfc1c08f30eb0232f230d955967d95bc32ee
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777904"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566967"
 ---
 # <a name="whats-new-in-msbuild-160"></a>Nouveautés de MSBuild 16.0
 

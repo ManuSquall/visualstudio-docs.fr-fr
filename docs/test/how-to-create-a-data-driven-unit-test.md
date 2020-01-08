@@ -9,17 +9,17 @@ helpviewer_keywords:
 - unit tests, running
 - unit tests, data-driven
 - data-driven unit tests
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 0a3162dcbbd041a7d2f540a335bd95854afd87d0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: f50dad637d9efa2db347ff9f1b4828abf8c733af
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72643480"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589186"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Comment : créer un test unitaire piloté par les données
 

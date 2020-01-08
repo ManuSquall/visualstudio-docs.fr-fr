@@ -3,16 +3,16 @@ title: Définir plusieurs projets de démarrage
 description: Cet article explique comment définir plusieurs projets à démarrer au moment de l’exécution ou du débogage d’une solution.
 author: sayedihashimi
 ms.author: sayedha
-ms.date: 02/21/2019
+ms.date: 12/13/2019
 ms.topic: conceptual
 ms.prod: visual-studio-mac
 ms.assetid: fd354fff-ce6b-4505-a815-84a2311e39ba
-ms.openlocfilehash: 3c7c3e00615463ba657ad93022f60ca856e026d6
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
-ms.translationtype: HT
+ms.openlocfilehash: 46e6447e07d2ee8439fcd86f5d1519beaa1e4609
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872370"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75406692"
 ---
 # <a name="set-multiple-startup-projects"></a>Définir plusieurs projets de démarrage
 
@@ -44,7 +44,7 @@ Visual Studio pour Mac vous permet de spécifier le mode de démarrage de plusie
 
    Vous pouvez voir que deux projets sont configurés pour démarrer, car les deux projets sont en **gras** dans le panneau Solution. Dans la barre d’outils, la nouvelle configuration d’exécution est définie en tant que configuration d’exécution de solution actuelle.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 - [Compilation et génération dans Visual Studio pour Mac](compiling-and-building.md)
 - [Présentation des configurations de build](configurations.md)

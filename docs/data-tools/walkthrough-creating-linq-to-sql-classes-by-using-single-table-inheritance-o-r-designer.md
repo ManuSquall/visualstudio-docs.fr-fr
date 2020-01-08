@@ -6,17 +6,17 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: 63bc6328-e0df-4655-9ce3-5ff74dbf69a4
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7ab33c2e77de183b5c916fbcfe60843c47c4f83f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c9e6974f1b676b623c58eea451270bde98ddcff7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648054"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585975"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Procédure pas à pas : créer des classes LINQ to SQL à l’aide de l’héritage de table unique (Concepteur O/R)
 Les [outils de LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) prennent en charge l’héritage d’une seule table, car il est généralement implémenté dans les systèmes relationnels. Cette procédure pas à pas s’appuie sur les étapes génériques fournies dans la rubrique [Comment : configurer l’héritage à l’aide du Concepteur O/R](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) et fournit des données réelles pour illustrer l’utilisation de l’héritage dans le [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].
@@ -91,7 +91,7 @@ Maintenant que vous avez créé la table, créez un nouveau projet pour voir la 
 
 ### <a name="to-create-the-new-windows-forms-application"></a>Pour créer l’application de Windows Forms
 
-1. Dans Visual Studio, dans le menu **fichier** , sélectionnez **nouveau**  > **projet**.
+1. Dans Visual Studio, dans le menu **Fichier**, sélectionnez **Nouveau** > **Projet**.
 
 2. Développez **Visual C#**  ou **Visual Basic** dans le volet gauche, puis sélectionnez **Bureau Windows**.
 
@@ -138,7 +138,7 @@ Configurez l’héritage en faisant glisser un objet **Héritage** de la **Boît
 
 11. Affectez à la propriété **Héritage par défaut** la valeur **Personnel**.
 
-12. Générez le projet.
+12. créer le projet ;
 
 ## <a name="query-the-inherited-class-and-display-the-data-on-the-form"></a>Interroger la classe héritée et afficher des données sur le formulaire
 Vous ajoutez à présent du code au formulaire qui interroge une classe spécifique dans le modèle objet.
@@ -174,7 +174,7 @@ Vous ajoutez à présent du code au formulaire qui interroge une classe spécifi
     }
     ```
 
-## <a name="test-the-application"></a>Tester l’application
+## <a name="test-the-application"></a>Tester l'application
 Exécutez l’application et vérifiez que les enregistrements affichés dans la zone de liste sont tous des employés (enregistrements qui ont une valeur 2 dans leur colonne **Type**).
 
 ### <a name="to-test-the-application"></a>Pour tester l'application

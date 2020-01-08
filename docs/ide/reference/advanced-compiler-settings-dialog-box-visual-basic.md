@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - Advanced Compiler Settings dialog box
 ms.assetid: 1f81133a-293f-4dba-bc1c-8baafb01d857
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cb77021818fd77205a598f54a4a64a1929348f2
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 9ebc2da5e71dbdee13df4cf658f3681804879f58
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919358"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596929"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>Paramètres avancés du compilateur, boîte de dialogue (Visual Basic)
 
@@ -30,7 +30,7 @@ Utilisez la boîte de dialogue **Paramètres avancés du compilateur** du **Conc
 
 2. Dans le menu **Projet**, cliquez sur **Propriétés**. Quand le **Concepteur de projets** apparaît, cliquez sur l’onglet **Compiler**.
 
-3. Dans la [page Compiler, Concepteur de projets (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md), sélectionnez **Configuration** et **Plateforme**. Dans les configurations de build simplifiées, les listes **Configuration** et **Plateforme**  ne sont pas affichées. Pour plus d'informations, voir [Procédure : Définir des configurations Debug et Release](../../debugger/how-to-set-debug-and-release-configurations.md).
+3. Dans la [page Compiler, Concepteur de projets (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md), sélectionnez **Configuration** et **Plateforme**. Dans les configurations de build simplifiées, les listes **Configuration** et **Plateforme**  ne sont pas affichées. Pour plus d’informations, consultez [Guide pratique pour définir des configurations Debug et Release](../../debugger/how-to-set-debug-and-release-configurations.md).
 
 4. Cliquez sur **Options avancées de compilation**.
 
@@ -72,14 +72,14 @@ Par défaut, cette case est cochée, spécifiant qu’une constante TRACE est d�
 
  **Constantes personnalisées**
 
-Entrez les constantes personnalisées pour votre application dans cette zone de texte. Les entrées doivent être délimitées par des virgules, au format suivant : **Nom1="Valeur1",Nom2="Valeur2",Nom3="Valeur3"** .
+Entrez les constantes personnalisées pour votre application dans cette zone de texte. Les entrées doivent être délimitées par une virgule selon le format suivant : **Nom1="Valeur1",Nom2="Valeur2",Nom3="Valeur3"** .
 
 ## <a name="other-settings"></a>Autres paramètres
 
 **Générer des assemblys de sérialisation**
 
-Ce paramètre spécifie si le compilateur crée des assemblys de sérialisation XML. Les assemblys de sérialisation peuvent améliorer les performances de démarrage de <xref:System.Xml.Serialization.XmlSerializer> si vous avez utilisé cette classe pour sérialiser les types dans votre code. La valeur par défaut de cette option est **Auto**. **Auto** spécifie que les assemblys de sérialisation ne peuvent être générés que si vous avez utilisé <xref:System.Xml.Serialization.XmlSerializer> pour encoder les types dans votre code en XML. **Inactif** spécifie que les assemblys de sérialisation ne doivent jamais être générés, que votre code utilise <xref:System.Xml.Serialization.XmlSerializer> ou non. **Actif** spécifie que les assemblys de sérialisation doivent toujours être générés. Les assemblys de sérialisation sont appelés `TypeName`.XmlSerializers.dll.
+Ce paramètre spécifie si le compilateur crée des assemblys de sérialisation XML. Les assemblys de sérialisation peuvent améliorer les performances de démarrage de <xref:System.Xml.Serialization.XmlSerializer> si vous avez utilisé cette classe pour sérialiser les types dans votre code. La valeur par défaut de cette option est **auto**. **Auto** spécifie que les assemblys de sérialisation doivent être générés uniquement si vous avez utilisé <xref:System.Xml.Serialization.XmlSerializer> pour encoder les types dans votre code en XML. **Inactif** spécifie que les assemblys de sérialisation ne doivent jamais être générés, que votre code utilise <xref:System.Xml.Serialization.XmlSerializer> ou non. **Actif** spécifie que les assemblys de sérialisation doivent toujours être générés. Les assemblys de sérialisation sont appelés `TypeName`.XmlSerializers.dll.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Page Compiler, Concepteur de projet (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)
+- [Page Compiler, Concepteur de projets (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)

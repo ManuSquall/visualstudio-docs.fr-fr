@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, properties
 ms.assetid: 962912ac-8931-49bf-a88c-0200b6e37362
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e476876234c31009d219af30fbe3c9d1e55f3d96
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 82ae72ee835fa5b5e0d2ebb484ce24a5ffb85b91
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443597"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589238"
 ---
 # <a name="msbuild-properties"></a>MSBuild (propriétés)
 Les propriétés sont des paires nom-valeur qui peuvent être utilisées pour configurer des générations. Elles sont utiles pour transmettre des valeurs aux tâches, évaluer des conditions et stocker les valeurs qui seront référencées dans tout le fichier projet.
@@ -44,7 +44,7 @@ Les propriétés sont des paires nom-valeur qui peuvent être utilisées pour co
 ## <a name="reserved-properties"></a>Propriétés réservées
  MSBuild réserve certains noms de propriété pour stocker des informations sur le fichier projet et les binaires de MSBuild. Ces propriétés sont référencées avec la notation $ comme toute autre propriété. Par exemple, $(MSBuildProjectFile) retourne le nom de fichier complet du fichier projet, y compris l’extension de nom de fichier.
 
- Pour plus d'informations, voir [Procédure : Référencer le nom ou l’emplacement du fichier projet](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) et [Propriétés réservées et connues de MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md).
+ Pour plus d’informations, consultez [Guide pratique pour référencer le nom ou l’emplacement du fichier projet](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) et [Propriétés réservées et connues de MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md).
 
 ## <a name="environment-properties"></a>Propriétés d’environnement
  Vous pouvez référencer des variables d’environnement des fichiers projet de la même façon que les propriétés réservées. Par exemple, pour utiliser la variable d’environnement `PATH` dans votre fichier projet, utilisez $(Path). Si le projet contient une définition de propriété qui porte le même nom qu’une propriété d’environnement, la propriété du projet remplace la valeur de la variable d’environnement.
@@ -56,7 +56,7 @@ Les propriétés sont des paires nom-valeur qui peuvent être utilisées pour co
 > [!TIP]
 > Toutes les variables d’environnement ne sont pas lues pour devenir des propriétés initiales. Une variable d’environnement dont le nom n’est pas un nom de propriété MSBuild valide, par exemple « 386 », est ignoré.
 
- Pour plus d'informations, voir [Procédure : Utiliser des variables d’environnement dans une build](../msbuild/how-to-use-environment-variables-in-a-build.md).
+ Pour plus d’informations, consultez [Guide pratique pour utiliser des variables d’environnement dans une build](../msbuild/how-to-use-environment-variables-in-a-build.md).
 
 ## <a name="registry-properties"></a>Propriétés de Registre
  Vous pouvez lire les valeurs du Registre système à l’aide de la syntaxe suivante, où `Hive` est la ruche du Registre (par exemple, **HKEY_LOCAL_MACHINE**), `MyKey` le nom de la clé, `MySubKey` le nom de la sous-clé, et `Value` la valeur de la sous-clé.
@@ -110,7 +110,7 @@ msbuild.exe MyProj.proj -p:Configuration=DEBUG
 
 - Une propriété peut être émise par une tâche quelconque. Pour émettre une propriété, l’élément [Task](../msbuild/task-element-msbuild.md) doit posséder un élément [Output](../msbuild/output-element-msbuild.md) enfant pourvu d’un attribut `PropertyName`.
 
-- Une propriété peut être émise par la tâche [CreateProperty](../msbuild/createproperty-task.md). Cette utilisation est déconseillée.
+- Une propriété peut être émise par la tâche [CreateProperty](../msbuild/createproperty-task.md). Cette utilisation est dépréciée.
 
 - Depuis .NET Framework 3.5, les éléments `Target` peuvent contenir des éléments `PropertyGroup`, qui peuvent comporter des déclarations de propriété.
 
@@ -138,8 +138,8 @@ msbuild.exe MyProj.proj -p:Configuration=DEBUG
 ## <a name="see-also"></a>Voir aussi
 - [Concepts MSBuild](../msbuild/msbuild-concepts.md)
 - [MSBuild](../msbuild/msbuild.md)
-- [Guide pratique pour utiliser des variables d’environnement dans une build](../msbuild/how-to-use-environment-variables-in-a-build.md)
-- [Guide pratique pour référencer le nom ou l’emplacement du fichier projet](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md)
+- [Comment : utiliser des variables d’environnement dans une build](../msbuild/how-to-use-environment-variables-in-a-build.md)
+- [Comment : référencer le nom ou l’emplacement du fichier projet](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md)
 - [Guide pratique pour générer les mêmes fichiers sources avec des options différentes](../msbuild/how-to-build-the-same-source-files-with-different-options.md)
-- [Propriétés réservées et connues de MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md)
+- [MSBuild, propriétés réservées et connues](../msbuild/msbuild-reserved-and-well-known-properties.md)
 - [Property, élément (MSBuild)](../msbuild/property-element-msbuild.md)

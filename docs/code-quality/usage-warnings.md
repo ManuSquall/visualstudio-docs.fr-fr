@@ -9,17 +9,17 @@ helpviewer_keywords:
 - managed code analysis warnings, usage warnings
 - usage warnings
 ms.assetid: fe7dc2a3-289d-4bf7-a1e4-0947a81287c4
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 423367381c9b4624b9b3f4f739b017231276c76d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ca3a5efb7d75cebfd36ea6ac190f50ab90dcb06c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649068"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587184"
 ---
 # <a name="usage-warnings"></a>avertissements liés à l’utilisation
 
@@ -31,7 +31,7 @@ Les avertissements d’utilisation prennent en charge l’utilisation correcte d
 |----------|-----------------|
 |[CA1801 : Passez en revue les paramètres inutilisés](../code-quality/ca1801.md)|Une signature de méthode inclut un paramètre qui n'est pas utilisé dans le corps de la méthode.|
 |[CA1806 : Ne pas ignorer les résultats de méthode](../code-quality/ca1806.md)|Un nouvel objet est créé mais jamais utilisé ; ou une méthode qui crée et retourne une nouvelle chaîne est appelée et la nouvelle chaîne n'est jamais utilisée ; ou une méthode COM ou P/Invoke retourne un code HRESULT ou d'erreur qui n'est jamais utilisé.|
-|[CA1816 : Appelez GC.SuppressFinalize correctement](../code-quality/ca1816.md)|Une méthode qui est une implémentation de dispose n’appelle pas GC. SuppressFinalize ou une méthode qui n’est pas une implémentation de dispose appelle GC. SuppressFinalize ou une méthode appelle GC. SuppressFinalize et passe autre chose que ce (moi dans Visual Basic).|
+|[CA1816 : Appelez GC.SuppressFinalize correctement](../code-quality/ca1816.md)|Une méthode qui est une implémentation de Dispose n’appelle pas de catalogue global. SuppressFinalize ; ou une méthode qui n’est pas une implémentation de Dispose appelle GC. SuppressFinalize ; ou une méthode appelle GC. SuppressFinalize et passe un élément autre que cette (Me en Visual Basic).|
 |[CA2200 : Levez à nouveau une exception pour conserver les détails de la pile](../code-quality/ca2200.md)|Une exception est à nouveau levée et est spécifiée explicitement dans l'instruction throw. Si une exception est à nouveau levée par sa spécification dans l'instruction throw, la liste des appels de méthode présents entre la méthode d'origine qui a levé l'exception et la méthode actuelle est perdue.|
 |[CA2201 : Ne levez pas des types d’exceptions réservés](../code-quality/ca2201.md)|Cela rend l’erreur d’origine difficile à détecter et à déboguer.|
 |[CA2202 : Ne pas supprimer des objets plusieurs fois](../code-quality/ca2202.md)|Une implémentation de méthode contient des chemins d’accès de code qui peuvent provoquer des appels multiples à System.IDisposable.Dispose ou un Dispose équivalent (par exemple, une méthode Close() sur certains types) sur le même objet.|
@@ -59,7 +59,7 @@ Les avertissements d’utilisation prennent en charge l’utilisation correcte d
 |[CA2228 : Ne distribuez pas des formats de ressources non commercialisés](../code-quality/ca2228.md)|Les fichiers de ressources générés à l’aide des versions préliminaires du .NET peuvent ne pas être utilisables par les versions prises en charge de .NET.|
 |[CA2229 : Implémentez des constructeurs de sérialisation](../code-quality/ca2229.md)|Pour corriger une violation de cette règle, implémentez le constructeur de sérialisation. Dans le cas d'une classe sealed, rendez le constructeur privé ; sinon, attribuez-lui l'état protégé.|
 |[CA2230 : Utilisez le mot clé params pour les arguments de variables](../code-quality/ca2230.md)|Un type public ou protégé contient une méthode publique ou protégée qui utilise la convention d’appel VarArgs au lieu du mot clé params.|
-|[CA2231 : Surchargez l’opérateur égal (equals) en remplaçant ValueType.Equals](../code-quality/ca2231.md)|Un type valeur se substitue à `Object.Equals`, mais n’implémente pas l’opérateur d’égalité.|
+|[CA2231 : Surchargez l’opérateur égal (equals) en remplaçant ValueType.Equals](../code-quality/ca2231.md)|Un type valeur se substitue à `Object.Equals` mais n’implémente pas l’opérateur d’égalité.|
 |[CA2232 : Marquez les points d’entrée Windows Forms avec STAThread](../code-quality/ca2232.md)|STAThreadAttribute indique que le modèle de thread COM pour l'application est un thread cloisonné (STA, Single-Threaded Apartment). Cet attribut doit être présent au point d'entrée de toute application qui utilise des Windows Forms ; s'il est omis, les composants Windows peuvent ne pas fonctionner correctement.|
 |[CA2233 : Les opérations ne doivent pas provoquer de dépassement de capacité](../code-quality/ca2233.md)|Les opérations arithmétiques ne doivent pas être effectuées sans valider au préalable les opérandes, pour s’assurer que le résultat de l’opération n’est pas en dehors de la plage des valeurs possibles pour les types de données impliqués.|
 |[CA2234 : Passez des objets System.Uri au lieu de chaînes](../code-quality/ca2234.md)|Un appel est passé à une méthode qui a un paramètre de chaîne dont le nom contient « uri », « URI », « urn », « URN », « url » ou « URL ».  Le type déclarant de la méthode contient une surcharge de méthode correspondante qui a un paramètre System.Uri.|

@@ -11,17 +11,17 @@ helpviewer_keywords:
 - wavy underlines
 - Text Editor Options dialog box, IntelliSense
 ms.assetid: 3466dedb-e5f4-424c-8dd8-e4941b2f4fc2
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2d1e330788b72ff0b4395d1e5d531d1d233f59e7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 87a167a75f3b06522da77d562b0137df89757975
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666242"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596214"
 ---
 # <a name="options-text-editor-c-intellisense"></a>Options, Éditeur de texte, C#, IntelliSense
 
@@ -86,4 +86,4 @@ Effectue la complétion automatique du nom d’objet pour les membres que vous a
 ## <a name="see-also"></a>Voir aussi
 
 - [Général, Environnement, boîte de dialogue Options](../../ide/reference/general-environment-options-dialog-box.md)
-- [Utilisation de la fonctionnalité IntelliSense](../../ide/using-intellisense.md)
+- [Utilisation d’IntelliSense](../../ide/using-intellisense.md)

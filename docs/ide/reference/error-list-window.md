@@ -1,5 +1,5 @@
 ---
-title: Liste d'erreurs, fenêtre
+title: Fenêtre Liste d'erreurs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,19 +10,19 @@ helpviewer_keywords:
 - Error List window
 - errors [Visual Studio], Error List window
 ms.assetid: b7f6d45a-733b-4ad8-bc2f-737a37509e56
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0921d89caa6428c45dc2522e78f58bde50f84be
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8c6d925f61714c524f97a57690870229b2340d21
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654444"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75569661"
 ---
-# <a name="error-list-window"></a>Liste d'erreurs, fenêtre
+# <a name="error-list-window"></a>Fenêtre Liste d'erreurs
 
 > [!NOTE]
 > La **liste d’erreurs** affiche des informations sur un message d’erreur spécifique. Vous pouvez copier le numéro d’erreur ou le texte de la chaîne d'erreur dans la fenêtre **Sortie**. Pour afficher la fenêtre **Sortie**, appuyez sur **Ctrl**+**Alt**+**O**. Consultez [Sortie, fenêtre](../../ide/reference/output-window.md).
@@ -41,7 +41,7 @@ La fenêtre **Liste d’erreurs** vous permet d’effectuer les tâches suivante
 
 - rechercher des termes spécifiques et limiter la recherche au projet ou au document actif.
 
-Pour afficher la **Liste d’erreurs**, choisissez **Affichage** > **Liste d’erreurs**, ou appuyez sur **Ctrl** + **\\** + **E**.
+Pour afficher la **Liste d’erreurs**, choisissez **Affichage** > **Liste d’erreurs**, ou appuyez sur **Ctrl**+ **\\** +**E**.
 
 Vous pouvez choisir les onglets **Erreurs**, **Avertissements** et **Messages** pour afficher les différents niveaux d’informations.
 
@@ -74,7 +74,7 @@ Utilisez la zone de texte **Rechercher dans la liste des erreurs** située à dr
 
 Vous pouvez copier la liste d'erreurs et l'enregistrer dans un fichier. Sélectionnez les erreurs que vous voulez copier, cliquez avec le bouton droit sur la sélection, puis, dans le menu contextuel, sélectionnez **Copier**. Vous pouvez ensuite coller les erreurs dans un fichier. Si vous collez les erreurs dans une feuille de calcul Excel, les champs apparaissent comme colonnes individuelles.
 
-## <a name="ui-element-list"></a>Liste des éléments de l'interface utilisateur
+## <a name="ui-element-list"></a>Liste d'éléments UI
 
 Gravité
 
@@ -92,7 +92,7 @@ Projet
 
 Affiche le nom du projet actif.
 
-Fichier
+File
 
 Affiche le nom de fichier.
 

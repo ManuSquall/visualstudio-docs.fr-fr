@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a2848f04e2765c23f60de041e865e7684901b924
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: bc90d659a32c14f92e1eff058dd22d4a17d0b1cb
+ms.sourcegitcommit: 0d8488329263cc0743a89d43f6de863028e982ff
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962657"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75678998"
 ---
 # <a name="debug-python-and-c-together"></a>Déboguer conjointement Python et C++
 
@@ -38,7 +38,7 @@ Les fonctionnalités de débogage en mode mixte sont les suivantes, comme expliq
 
 |   |   |
 |---|---|
-| ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regarder une vidéo") | Pour une introduction des modules C natifs de génération, de test et de débogage avec Visual Studio, visionnez la vidéo [Exploration : créer des modules natifs](https://youtu.be/D9RlT06a1EI) (youtube.com, 9 min 09 s). La vidéo s’applique à Visual Studio 2015 et 2017. |
+| ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regardez une vidéo") | Pour introduction des modules C natifs de génération, de test et de débogage avec Visual Studio, visionnez la vidéo [Exploration : créer les modules natifs](https://youtu.be/D9RlT06a1EI) (youtube.com, 9 min09 s). La vidéo s’applique à Visual Studio 2015 et 2017. |
 
 ## <a name="enable-mixed-mode-debugging-in-a-python-project"></a>Activer le débogage en mode mixte dans un projet Python
 
@@ -47,7 +47,7 @@ Les fonctionnalités de débogage en mode mixte sont les suivantes, comme expliq
     ![Activation du débogage du code natif](media/mixed-mode-debugging-enable-native.png)
 
     > [!Tip]
-    > Quand vous activez le débogage du code natif, la fenêtre Sortie Python peut disparaître immédiatement à la fin de l’exécution du programme, sans afficher le message de pause habituel **Appuyez sur une touche pour continuer**. Pour forcer une pause, ajoutez l’option `-i` au champ **Exécuter** > **Arguments de l’interpréteur** sous l’onglet **Déboguer** quand vous activez le débogage du code natif. Avec cet argument, l’interpréteur Python passe en mode interactif à la fin du code, où il attend que vous appuyiez sur **Ctrl**+**Z** > **Entrée** pour quitter.
+    > Quand vous activez le débogage du code natif, la fenêtre de sortie Python peut disparaître immédiatement une fois le programme terminé sans afficher la pause habituelle **Appuyez sur une touche pour continuer**. Pour forcer une pause, ajoutez l’option `-i` au champ **Exécuter** > **Arguments de l’interpréteur** sous l’onglet **Déboguer** quand vous activez le débogage du code natif. Avec cet argument, l’interpréteur Python passe en mode interactif à la fin du code, où il attend que vous appuyiez sur **Ctrl**+**Z** > **Entrée** pour quitter.
 
 1. Quand vous attachez le débogueur en mode mixte à un processus existant (**Débogage** > **Attacher au processus**), utilisez le bouton **Sélectionner** pour ouvrir la boîte de dialogue **Sélectionner le type de code**. Définissez ensuite l’option **Déboguer ces types de codes**, puis sélectionnez à la fois **Natif** et **Python** dans la liste :
 
@@ -69,6 +69,9 @@ Visual Studio (2017 version 15.5 et ultérieur) prend en charge le débogage en 
 1. Sélectionnez l’onglet **Débogage**, choisissez **Débogage Python/natif** dans le **Débogueur à lancer**, puis sélectionnez **OK**.
 
     ![Sélection du débogueur Python/natif dans un projet C/C++](media/mixed-mode-debugging-select-cpp-debugger.png)
+
+> [!Note]
+> Si vous n’avez pas la possibilité de sélectionner le **débogage python/natif** , vous devez d’abord installer les **outils de développement natifs python** à l’aide du programme d’installation de Visual Studio. Vous pouvez le trouver sous la forme d’une option sous la charge de travail développement Python. Pour plus d’informations, consultez [Comment installer la prise en charge de Python dans Visual Studio sur Windows](installing-python-support-in-visual-studio.md).
 
 Avec cette méthode, sachez que vous ne pouvez pas déboguer le lanceur *py.exe* lui-même, car il génère un processus *python.exe* enfant auquel le débogueur ne sera pas attaché. Si vous souhaitez lancer *python.exe* directement avec des arguments, changez l’option **Commande** dans les propriétés de **débogage de Python/natif** (voir image précédente) pour indiquer le chemin complet vers *python.exe*, puis spécifiez les arguments dans **Arguments de commande**.
 
@@ -168,9 +171,9 @@ Le débogueur en mode mixte se différencie du [débogueur Python standard](debu
 
 - Fonctionnalités non prises en charge : points d’arrêt conditionnels, fenêtre de **débogage interactive** et débogage à distance multiplateforme.
 - Fenêtre **Exécution** : disponible mais avec un sous-ensemble de fonctionnalités restreint, incluant notamment toutes les limitations répertoriées dans cette section.
-- Versions Python prises en charge : CPython 2.7 et 3.3+ uniquement.
-- Visual Studio Shell : Lorsque vous utilisez Python avec Visual Studio Shell (par exemple, si vous l’avez installé à l’aide du programme d’installation intégré), Visual Studio n’est pas en mesure d’ouvrir les projets C++, et l’expérience de modification des fichiers C++ se limite à celle d’un éditeur de texte de base. Toutefois, le débogage C/C++ et le débogage en mode mixte sont entièrement pris en charge dans Shell avec le code source, l’exécution d’un pas à pas détaillé dans le code natif et l’évaluation des expressions C++ dans les fenêtres de débogage.
-- Visualisation et développement d’objets : Quand vous visualisez des objets Python dans les fenêtres d’outil de débogage **Variables locales** et **Espion**, le débogueur en mode mixte présente uniquement la structure des objets. Il n’évalue pas automatiquement les propriétés et n’affiche pas les attributs calculés. Dans le cas des collections, il présente uniquement les éléments pour les types de collections intégrés (`tuple`, `list`, `dict`, `set`). Les types de collections personnalisés ne sont pas visualisés sous forme de collections, sauf s’ils sont hérités d’un type de collection intégré.
+- Versions Python prises en charge : CPython 2.7, 3.3 et versions ultérieures uniquement.
+- Visual Studio Shell : lorsque vous utilisez Python avec Visual Studio Shell (par exemple, si vous l’avez installé à l’aide du programme d’installation intégré), Visual Studio n’est pas en mesure d’ouvrir les projets C++, et l’expérience de modification des fichiers C++ se limite à celle d’un éditeur de texte de base. Toutefois, le débogage C/C++ et le débogage en mode mixte sont entièrement pris en charge dans Shell avec le code source, l’exécution d’un pas à pas détaillé dans le code natif et l’évaluation des expressions C++ dans les fenêtres de débogage.
+- Visualisation et développement d’objets : quand vous visualisez des objets Python dans les fenêtres d’outil de débogage **Variables locales** et **Espion**, le débogueur en mode mixte présente uniquement la structure des objets. Il n’évalue pas automatiquement les propriétés et n’affiche pas les attributs calculés. Dans le cas des collections, il présente uniquement les éléments pour les types de collections intégrés (`tuple`, `list`, `dict`, `set`). Les types de collections personnalisés ne sont pas visualisés sous forme de collections, sauf s’ils sont hérités d’un type de collection intégré.
 - Évaluation des expressions : voir ci-dessous.
 
 ### <a name="expression-evaluation"></a>Évaluation des expressions

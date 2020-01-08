@@ -11,20 +11,20 @@ helpviewer_keywords:
 - TaskBody element [MSBuild]
 - <TaskBody> element [MSBuild]
 ms.assetid: 49d8741b-f1ea-4470-94fd-a1ac27341a6a
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f788df1dd3cad2baddd6d2966b04195af01fe7d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ac4e04c1a75fe7afdebc984381e17d7e55913fd4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62938959"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594979"
 ---
 # <a name="taskbody-element-msbuild"></a>Élément TaskBody (MSBuild)
-Contient les données transmises à `UsingTask` `TaskFactory`. Pour plus d’informations, consultez [Élément UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).
+Contient les données passées à un `UsingTask` `TaskFactory`. Pour plus d’informations, voir [Élément UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).
 
  \<Project> \<UsingTask> \<TaskBody>
 
@@ -39,7 +39,7 @@ Contient les données transmises à `UsingTask` `TaskFactory`. Pour plus d’inf
 
 ### <a name="attributes"></a>Attributs
 
-|Attribut|Description|
+|Attribute|Description|
 |---------------|-----------------|
 |`Evaluate`|Attribut booléen facultatif.<br /><br /> Si cet attribut présente la valeur `true`, MSBuild évalue tous les éléments internes et développe des éléments et des propriétés avant de transmettre les informations à l’élément `TaskFactory` lorsque la tâche est instanciée.|
 
@@ -72,6 +72,6 @@ Contient les données transmises à `UsingTask` `TaskFactory`. Pour plus d’inf
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Tâches](../msbuild/msbuild-tasks.md)
+- [Tâches MSBuild](../msbuild/msbuild-tasks.md)
 - [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)
 - [Informations de référence sur le schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)

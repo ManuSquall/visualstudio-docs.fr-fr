@@ -13,17 +13,17 @@ helpviewer_keywords:
 - <PropertyGroup> element [MSBuild]
 - PropertyGroup element [MSBuild]
 ms.assetid: ff1e6c68-b9a1-4263-a1ce-dc3b829a64d4
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 607c5f2c3cda64e7407203b0c45287a58342b807
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f7497578b977b66c83a8b5f9f37f03743f864bcd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974681"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597371"
 ---
 # <a name="propertygroup-element-msbuild"></a>Élément PropertyGroup (MSBuild)
 Contient un ensemble d’éléments [Property](../msbuild/property-element-msbuild.md) définis par l’utilisateur. Chaque élément `Property` utilisé dans un projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] doit être un enfant d’un élément `PropertyGroup`.
@@ -44,7 +44,7 @@ Contient un ensemble d’éléments [Property](../msbuild/property-element-msbui
 
 ### <a name="attributes"></a>Attributs
 
-|Attribut|Description|
+|Attribute|Description|
 |---------------|-----------------|
 |Condition|Attribut facultatif.<br /><br /> Condition à évaluer. Pour plus d’informations, consultez l’article [Conditions (Conditions MSBuild)](../msbuild/msbuild-conditions.md).|
 
@@ -58,7 +58,7 @@ Contient un ensemble d’éléments [Property](../msbuild/property-element-msbui
 
 | Élément | Description |
 | - | - |
-| [Projet](../msbuild/project-element-msbuild.md) | Élément racine requis d'un fichier projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
+| [Project](../msbuild/project-element-msbuild.md) | Élément racine requis d'un fichier projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
 
 ## <a name="example"></a>Exemple
  L’exemple de code suivant montre comment définir des propriétés en fonction d’une condition. Dans cet exemple, si la valeur de la propriété `CompileConfig` est `DEBUG`, les propriétés `Optimization`, `Obfuscate` et `OutputPath` contenues dans l’élément `PropertyGroup` sont définies.

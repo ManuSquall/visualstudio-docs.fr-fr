@@ -13,22 +13,22 @@ helpviewer_keywords:
 - <When> Element [MSBuild]
 - When Element [MSBuild]
 ms.assetid: eb27de6f-4e71-4e87-87e2-d93f7bf5899c
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31c94844e9860f1de9be92c1e23580e314ada367
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 481be1f0e9c5444e56c95b13e938cda1d541af71
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777956"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566895"
 ---
 # <a name="when-element-msbuild"></a>When, élément (MSBuild)
 Spécifie un bloc de code que l’élément `Choose` peut sélectionner.
 
- \<Project> \<Choose> \<When> \<Choose> ... \<Otherwise> \<Choose> ...
+ \<projet > \<choisissez > \<lorsque > \<choisir >... \<>...
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -45,7 +45,7 @@ Spécifie un bloc de code que l’élément `Choose` peut sélectionner.
 
 ### <a name="attributes"></a>Attributs
 
-|Attribut|Description|
+|Attribute|Description|
 |---------------|-----------------|
 |Condition|Attribut requis.<br /><br /> Condition à évaluer. Pour plus d’informations, consultez l’article [Conditions (Conditions MSBuild)](../msbuild/msbuild-conditions.md).|
 
@@ -63,7 +63,7 @@ Spécifie un bloc de code que l’élément `Choose` peut sélectionner.
 |-------------|-----------------|
 |[Choose, élément (MSBuild)](../msbuild/choose-element-msbuild.md)|Évalue les éléments enfants pour sélectionner une section de code à exécuter.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Si l’attribut `Condition` s’évalue à true, les éléments `ItemGroup` et `PropertyGroup` enfants de l’élément `When` sont exécutés et tous les éléments `When` suivants sont ignorés.
 
  Les éléments `Choose`, `When` et `Otherwise` sont utilisés ensemble pour permettre la sélection d’une section de code spécifique à exécuter parmi plusieurs options possibles. Pour plus d’informations, consultez [Constructions conditionnelles](../msbuild/msbuild-conditional-constructs.md).

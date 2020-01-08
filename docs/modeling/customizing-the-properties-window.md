@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, Properties window
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72e0a8393a65d4c0e1549a6617971b0adb8c1df7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b2cd7d4598040721d3c5b6acb7844f668c72ea09
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653966"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589693"
 ---
 # <a name="customize-the-properties-window"></a>Personnaliser le Fenêtre Propriétés
 
@@ -32,7 +32,7 @@ Lorsque vous définissez le nom d’une propriété dans la définition DSL, son
 
 - Dans le code du programme généré. Si vous utilisez les fonctionnalités de la documentation pour extraire la documentation de l’API, celle-ci s’affiche comme description de cette propriété dans l’API.
 
-**Catégorie** : Une catégorie est un titre dans la Fenêtre Propriétés.
+**Category**. Une catégorie est un titre dans la Fenêtre Propriétés.
 
 ## <a name="expose-style-features"></a>Exposer les fonctionnalités de style
 
@@ -40,7 +40,7 @@ Certaines des fonctionnalités dynamiques des éléments graphiques peuvent êtr
 
 Cliquez avec le bouton droit sur une classe de forme dans la définition DSL, pointez sur **Ajouter exposé**, puis choisissez une fonctionnalité.
 
-Sur les formes, vous pouvez exposer les propriétés **FillColor**, **OutlineColor**, **TextColor**, **OutlineDashStyle**, **OutlineThickness** et **FillGradientMode** . Sur les connecteurs, vous pouvez exposer la **couleur** `,` propriétés**TextColor**, **DashStyle**et **Thickness** . Sur les diagrammes, vous pouvez exposer les propriétés **FillColor** et **TextColor** .
+Sur les formes, vous pouvez exposer les propriétés **FillColor**, **OutlineColor**, **TextColor**, **OutlineDashStyle**, **OutlineThickness** et **FillGradientMode** . Sur les connecteurs, vous pouvez exposer la **couleur**`,`propriétés **TextColor**, **DashStyle**et **Thickness** . Sur les diagrammes, vous pouvez exposer les propriétés **FillColor** et **TextColor** .
 
 ## <a name="forwarding-display-properties-of-related-elements"></a>Transfert : afficher les propriétés des éléments associés
 
@@ -183,12 +183,12 @@ Vous définissez un éditeur en écrivant une classe dérivée de <xref:System.D
 
 - <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>, pour spécifier si votre éditeur doit ouvrir une boîte de dialogue ou fournir un menu déroulant.
 
-Vous pouvez également fournir une représentation graphique de la valeur de la propriété qui sera affichée dans la grille des propriétés. Pour ce faire, remplacez `GetPaintValueSupported` et `PaintValue`.  Pour plus d'informations, consultez <xref:System.Drawing.Design.UITypeEditor>.
+Vous pouvez également fournir une représentation graphique de la valeur de la propriété qui sera affichée dans la grille des propriétés. Pour ce faire, remplacez `GetPaintValueSupported`et `PaintValue`.  Pour plus d'informations, consultez <xref:System.Drawing.Design.UITypeEditor>.
 
 > [!NOTE]
 > Ajoutez le code dans un fichier de code séparé dans le projet **DSL** .
 
-Exemple :
+Par exemple :
 
 ```csharp
 internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
@@ -226,7 +226,7 @@ Pour définir une liste de valeurs standard, vous ajoutez à votre propriété d
 (typeof(MyTypeConverter))]
 ```
 
-Définissez une classe qui dérive de <xref:System.ComponentModel.TypeConverter>. Ajoutez le code dans un fichier distinct dans le projet **DSL** . Exemple :
+Définissez une classe qui dérive de <xref:System.ComponentModel.TypeConverter>. Ajoutez le code dans un fichier distinct dans le projet **DSL** . Par exemple :
 
 ```csharp
 /// <summary>

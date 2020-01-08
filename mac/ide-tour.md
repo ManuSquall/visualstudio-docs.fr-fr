@@ -3,15 +3,15 @@ title: Visite guidée de Visual Studio pour Mac
 description: Visual Studio pour Mac fournit un environnement de développement intégré pour créer des applications .NET sur macOS, notamment des sites web ASP.NET Core, ainsi que des projets Xamarin pour iOS, Android, Mac et Xamarin.Forms.
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 09/18/2019
+ms.date: 12/13/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: 6d2f0f891f704d3762bc0967da466960ee5170ee
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.openlocfilehash: f7686efae903912b64d8692a823d6e82592cbec9
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74984705"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75405820"
 ---
 # <a name="visual-studio-2019-for-mac-tour"></a>Visite guidée de Visual Studio 2019 pour Mac
 
@@ -104,7 +104,7 @@ Voici quelques-unes des fonctionnalités suivantes :
 * Prise en charge du langage RTL/BiDi
 * Roslyn 3
 * Prise en charge des signes insertion multiples
-* Retour automatique à la ligne
+* retour automatique à la ligne
 * Interface utilisateur IntelliSense mise à jour
 * Recherche/remplacement amélioré
 * Prise en charge des extraits 
@@ -121,9 +121,9 @@ Pour que les onglets restent visibles à tout moment, vous pouvez tirer parti de
 
 Visual Studio pour Mac offre deux méthodes pratiques pour refactoriser votre code : Actions contextuelles et Analyse du code source. Pour plus d’informations sur ces méthodes, consultez l’article [Refactorisation](/visualstudio/mac/refactoring).
 
-## <a name="debugging"></a>Debugging
+## <a name="debugging"></a>débogage
 
-Visual Studio pour Mac a un débogueur natif qui prend en charge le débogage des applications Xamarin.iOS, Xamarin.Mac et Xamarin.Android. Visual Studio pour Mac utilise le débogueur Mono Soft, qui est implémenté dans le runtime Mono, ce qui permet à l’IDE de déboguer du code managé sur toutes les plateformes. Pour plus d’informations sur le débogage, consultez l’article [Débogage](/visualstudio/mac/debugging).
+Visual Studio pour Mac possède des débogueurs qui prennent en charge les projets .NET Core, .NET Framework, Unity et Xamarin. Visual Studio pour Mac utilise le débogueur .NET Core et le débogueur mono Soft, ce qui permet à l’IDE de déboguer du code managé sur toutes les plateformes. Pour plus d’informations sur le débogage, consultez l’article [Débogage](/visualstudio/mac/debugging).
 
 Le débogueur contient des visualiseurs enrichis pour les types spéciaux, tels que les chaînes, les couleurs, les URL, ainsi que les tailles, les coordonnées et les courbes de Bézier.
 

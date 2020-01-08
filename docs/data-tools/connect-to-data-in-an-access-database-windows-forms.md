@@ -7,17 +7,17 @@ helpviewer_keywords:
 - connecting to data, Access databases
 - Access databases, connecting
 ms.assetid: 4159e815-d430-4ad0-a234-e4125fcbef18
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 65fa8b823a49644110dc773eb614da6022f4e8f5
-ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
+ms.openlocfilehash: deb163779110c50560787b35ad7744f90f6a7f36
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72924515"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586859"
 ---
 # <a name="connect-to-data-in-an-access-database"></a>Se connecter à des données dans une base de données Access
 
@@ -33,7 +33,7 @@ Connectez-vous aux bases de données créées avec Office 365, Access 2013, Acce
 
 1. Ouvrez un Windows Forms ou un projet d’application WPF dans Visual Studio.
 
-2. Pour ouvrir la fenêtre **sources de données** , dans le menu **affichage** , sélectionnez autres**sources de données** **Windows**  > .
+2. Pour ouvrir la fenêtre **sources de données** , dans le menu **affichage** , sélectionnez autres **sources de données** **Windows** > .
 
    ![Afficher d'autres sources de données Windows](../data-tools/media/viewdatasources.png)
 
@@ -75,7 +75,7 @@ Connectez-vous aux bases de données créées avec Access 2000-2003 à l’aide 
 
 1. Ouvrez un Windows Forms ou un projet d’application WPF dans Visual Studio.
 
-2. Dans le menu **affichage** , sélectionnez **autres** Sources de**données**Windows  > .
+2. Dans le menu **affichage** , sélectionnez **autres** Sources de **données**Windows > .
 
    ![Afficher d'autres sources de données Windows](../data-tools/media/viewdatasources.png)
 
@@ -105,7 +105,7 @@ Connectez-vous aux bases de données créées avec Access 2000-2003 à l’aide 
 
     Le jeu de données est ajouté à votre projet, et les tables et vues s’affichent dans la fenêtre **Sources de données**.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 Le DataSet que vous venez de créer est disponible dans la fenêtre **sources de données** . Vous pouvez à présent effectuer l’une des tâches suivantes :
 

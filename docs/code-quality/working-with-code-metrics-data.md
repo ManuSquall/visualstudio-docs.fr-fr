@@ -8,17 +8,17 @@ helpviewer_keywords:
 - code metrics results
 - code metrics results window
 - results window, code metrics
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0824fe608ad1bac86ef904702bd1be907bc9ce7d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6d62baf32685832072266438de003b523399137f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648995"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587080"
 ---
 # <a name="use-the-code-metrics-results-window"></a>Utiliser la fenêtre résultats de la métrique du code
 
@@ -30,9 +30,9 @@ La fenêtre résultats de la **métrique du code** s’affiche automatiquement l
 
 Vous pouvez afficher la fenêtre résultats de la métrique du code à l’aide de l’une des séquences de menu suivantes :
 
-- Dans le menu **analyser** , choisissez **Windows** > **résultats**de la métrique du code.
+- Dans le menu **analyser** , choisissez **Windows** > les résultats de la **métrique du code**.
 
-- Dans le menu **affichage** , choisissez **autres**résultats de la**métrique du code**Windows  > .
+- Dans le menu **affichage** , choisissez **autres** résultats de la **métrique du code**Windows > .
 
 La fenêtre résultats de la **métrique du code** s’ouvre, même si elle ne contient aucun résultat.
 
@@ -109,4 +109,4 @@ Pour plus d’informations sur Azure Boards éléments de travail, consultez [é
 ## <a name="see-also"></a>Voir aussi
 
 - [Valeurs de la métrique du code](../code-quality/code-metrics-values.md)
-- [Comment : générer des données de métriques du code](../code-quality/how-to-generate-code-metrics-data.md)
+- [Comment : générer des données de métrique du code](../code-quality/how-to-generate-code-metrics-data.md)

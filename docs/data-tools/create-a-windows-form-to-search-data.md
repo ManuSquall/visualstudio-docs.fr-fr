@@ -9,17 +9,17 @@ helpviewer_keywords:
 - data [Visual Studio], parameterizing queries
 - data [Visual Studio], searching
 ms.assetid: 65ca79a9-7458-466c-af55-978cd24c549e
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d503f8d1fd18817a30f49c64307d9fc14c74b3ea
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: df6f2245f06a594e35febe07d5aab2d7e83c48fd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72642716"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586807"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Créer un Windows Form pour rechercher des données
 
@@ -29,7 +29,7 @@ L'utilisation des requêtes paramétrables renforce l'efficacité de votre appli
 
 Vous pouvez ajouter des requêtes paramétrables à n’importe quel TableAdapter (et les contrôles pour accepter les valeurs de paramètre et exécuter la requête) à l’aide de la boîte de dialogue **Générateur de critères de recherche** . Ouvrez la boîte de dialogue en sélectionnant la commande **Ajouter une requête** dans le menu **Données** (ou dans n’importe quelle balise active TableAdapter).
 
-Cette procédure pas à pas décrit notamment les tâches suivantes :
+Cette procédure pas à pas décrit notamment les tâches suivantes :
 
 - Création et configuration de la source de données dans votre application à l’aide de l’Assistant **configuration de source de données** .
 
@@ -127,7 +127,7 @@ Vous pouvez ajouter une clause WHERE à la requête d’origine à l’aide de l
 
      Un **FillByCityToolStrip** est ajouté au formulaire.
 
-## <a name="test-the-application"></a>Tester l’application
+## <a name="test-the-application"></a>Tester l'application
 
 L’exécution de l’application ouvre votre formulaire et le rend prêt à prendre le paramètre comme entrée :
 
@@ -137,7 +137,7 @@ L’exécution de l’application ouvre votre formulaire et le rend prêt à pre
 
      La grille de données est remplie avec les clients qui répondent aux critères. Dans cet exemple, la grille de données n’affiche que les clients possédant une valeur **London** dans leur colonne **City**.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 Selon les spécifications de votre application, vous pouvez exécuter différentes étapes après la création d'un formulaire paramétrable. Vous pouvez apporter à cette procédure pas à pas les améliorations suivantes :
 

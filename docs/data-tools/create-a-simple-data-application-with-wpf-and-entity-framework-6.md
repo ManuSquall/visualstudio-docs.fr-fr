@@ -4,17 +4,17 @@ ms.date: 08/22/2017
 ms.topic: conceptual
 dev_langs:
 - CSharp
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6a8fd65c9f7c498f06b0776f0cd61ebc5ce48182
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0c83494fe6a23d4c072581c68f7b759aa9a6e6be
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72642924"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586898"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Créer une application de données simple avec WPF et Entity Framework 6
 
@@ -26,7 +26,7 @@ Cet article se concentre sur l’utilisation des outils de données dans Visual 
 
 Cet exemple utilise SQL Server Express base de données locale et l’exemple de base de données Northwind. Si le fournisseur de données ADO.NET pour ce produit prend en charge Entity Framework, il doit également fonctionner avec d’autres produits de base de données SQL.
 
-1. Si vous n’avez pas SQL Server Express base de données locale, installez-la à partir de la [page de téléchargement SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)ou via le **Visual Studio installer**. Dans le **Visual Studio installer**, vous pouvez installer SQL Server Express base de données locale dans le cadre de la charge de travail **développement .net Desktop** ou en tant que composant individuel.
+1. Si vous n’avez pas SQL Server Express base de données locale, installez-la à partir de la [page de téléchargement SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express)ou via le **Visual Studio installer**. Dans **Visual Studio Installer**, vous pouvez installer SQL Server Express LocalDB dans le cadre de la charge de travail **Développement .NET Desktop**, ou l’installer comme un composant seul.
 
 2. Installez l’exemple de base de données Northwind en procédant comme suit :
 
@@ -46,7 +46,7 @@ Cet exemple utilise SQL Server Express base de données locale et l’exemple de
 
 1. Dans Visual Studio, créez un C# projet d' **application WPF** .
 
-2. Ajoutez le package NuGet pour Entity Framework 6. Dans **Explorateur de solutions**, sélectionnez le nœud du projet. Dans le menu principal, choisissez **projet**  > **gérer les packages NuGet**.
+2. Ajoutez le package NuGet pour Entity Framework 6. Dans **Explorateur de solutions**, sélectionnez le nœud du projet. Dans le menu principal, choisissez **projet** > **gérer les packages NuGet**.
 
      ![Élément de menu gérer les packages NuGet](../data-tools/media/raddata_vs2015_manage_nuget_packages.png)
 
@@ -58,7 +58,7 @@ Cet exemple utilise SQL Server Express base de données locale et l’exemple de
 
 ## <a name="create-the-model"></a>Créer le modèle
 
-1. Cliquez avec le bouton droit sur le nœud du projet dans **Explorateur de solutions** , puis choisissez **Ajouter**  > **nouvel élément**. Dans le volet gauche, sous le C# nœud, choisissez **données** , puis dans le volet central, choisissez **ADO.NET Entity Data Model**.
+1. Cliquez avec le bouton droit sur le nœud du projet dans **Explorateur de solutions** , puis choisissez **Ajouter** > **nouvel élément**. Dans le volet gauche, sous le C# nœud, choisissez **données** , puis dans le volet central, choisissez **ADO.NET Entity Data Model**.
 
    ![Entity Framework un nouvel élément de modèle](../data-tools/media/raddata-ef-new-project-item.png)
 
@@ -86,7 +86,7 @@ Cet exemple utilise SQL Server Express base de données locale et l’exemple de
 
    - Remplacez la seule occurrence de <xref:System.Collections.Generic> (autour de la ligne 431) par <xref:System.Collections.ObjectModel>.
 
-7. Appuyez sur **Ctrl**+**Shift**+**B** pour générer le projet. Une fois la génération terminée, les classes de modèle sont visibles par l’Assistant sources de données.
+7. Appuyez sur **Ctrl**+**MAJ**+**B** pour générer le projet. Une fois la génération terminée, les classes de modèle sont visibles par l’Assistant sources de données.
 
 Vous êtes maintenant prêt à raccorder ce modèle à la page XAML afin que vous puissiez afficher, parcourir et modifier les données.
 
@@ -94,7 +94,7 @@ Vous êtes maintenant prêt à raccorder ce modèle à la page XAML afin que vou
 
 Il est possible d’écrire votre propre code DataBinding, mais il est beaucoup plus facile de laisser Visual Studio le faire pour vous.
 
-1. Dans le menu principal, choisissez **projet**  > **Ajouter une nouvelle source de données** pour afficher l **'Assistant Configuration de source de données**. Choisissez **objet** , car vous effectuez une liaison aux classes de modèle, et non à la base de données :
+1. Dans le menu principal, choisissez **projet** > **Ajouter une nouvelle source de données** pour afficher l **'Assistant Configuration de source de données**. Choisissez **objet** , car vous effectuez une liaison aux classes de modèle, et non à la base de données :
 
      ![Assistant Configuration de source de données avec source de l’objet](../data-tools/media/raddata-data-source-configuration-wizard-with-object-source.png)
 
@@ -114,7 +114,7 @@ Il est possible d’écrire votre propre code DataBinding, mais il est beaucoup 
         </Grid.RowDefinitions>
     ```
 
-5. Maintenant, ouvrez *MainWindow. Xaml* afin de l’afficher dans le concepteur. La fenêtre **sources de données** s’affiche alors en tant qu’option dans la marge de la fenêtre Visual Studio en regard de la **boîte à outils**. Cliquez sur l’onglet pour ouvrir la fenêtre, ou appuyez sur **maj** +**ALT** +**D** ou choisissez **afficher**  > **autres** sources de**données**Windows  > . Nous allons afficher chaque propriété de la classe Customers dans sa propre zone de texte individuelle. Tout d’abord, cliquez sur la flèche dans la zone de liste déroulante **Customers** et choisissez **Details**. Ensuite, faites glisser le nœud sur la partie centrale de l’aire de conception afin que le concepteur sache que vous souhaitez qu’il figure dans la ligne du milieu. Si vous l’avez égaré, vous pouvez spécifier la ligne manuellement plus tard dans le code XAML. Par défaut, les contrôles sont placés verticalement dans un élément Grid, mais à ce stade, vous pouvez les réorganiser comme vous le souhaitez dans le formulaire. Par exemple, il peut être judicieux de placer la zone de texte **nom** en haut, au-dessus de l’adresse. L’exemple d’application de cet article réorganise les champs et les réorganise en deux colonnes.
+5. Maintenant, ouvrez *MainWindow. Xaml* afin de l’afficher dans le concepteur. La fenêtre **sources de données** s’affiche alors en tant qu’option dans la marge de la fenêtre Visual Studio en regard de la **boîte à outils**. Cliquez sur l’onglet pour ouvrir la fenêtre, ou appuyez sur **maj**+**ALT**+**D** ou choisissez **afficher** > **autres** sources de **données**Windows > . Nous allons afficher chaque propriété de la classe Customers dans sa propre zone de texte individuelle. Tout d’abord, cliquez sur la flèche dans la zone de liste déroulante **Customers** et choisissez **Details**. Ensuite, faites glisser le nœud sur la partie centrale de l’aire de conception afin que le concepteur sache que vous souhaitez qu’il figure dans la ligne du milieu. Si vous l’avez égaré, vous pouvez spécifier la ligne manuellement plus tard dans le code XAML. Par défaut, les contrôles sont placés verticalement dans un élément Grid, mais à ce stade, vous pouvez les réorganiser comme vous le souhaitez dans le formulaire. Par exemple, il peut être judicieux de placer la zone de texte **nom** en haut, au-dessus de l’adresse. L’exemple d’application de cet article réorganise les champs et les réorganise en deux colonnes.
 
      ![Liaison de la source de données des clients à des contrôles individuels](../data-tools/media/raddata-customers-data-source-binding-to-individual-controls.png)
 
@@ -387,7 +387,7 @@ La logique de commande comprend quatre parties : (1) les commandes, (2) les lia
     </Window.CommandBindings>
     ```
 
-3. À présent, ajoutez le `StackPanel` avec les boutons de navigation, d’ajout, de suppression et de mise à jour. Tout d’abord, ajoutez ce style à `Windows.Resources` :
+3. À présent, ajoutez le `StackPanel` avec les boutons de navigation, d’ajout, de suppression et de mise à jour. Tout d’abord, ajoutez ce style à `Windows.Resources`:
 
     ```xaml
     <Style x:Key="NavButton" TargetType="{x:Type Button}" BasedOn="{x:Null}">
@@ -417,7 +417,7 @@ La logique de commande comprend quatre parties : (1) les commandes, (2) les lia
 
 ### <a name="add-command-handlers-to-the-mainwindow-class"></a>Ajouter des gestionnaires de commandes à la classe MainWindow
 
-Le code-behind est minimal, à l’exception des méthodes d’ajout et de suppression. La navigation est effectuée en appelant des méthodes sur la propriété View du CollectionViewSource. Le `DeleteOrderCommandHandler` montre comment effectuer une suppression en cascade sur une commande. Nous devons tout d’abord supprimer le Order_Details qui lui est associé. Le `UpdateCommandHandler` ajoute un nouveau client ou une commande au regroupement, ou simplement met à jour un client ou une commande existant avec les modifications apportées par l’utilisateur dans les zones de texte.
+Le code-behind est minimal, à l’exception des méthodes d’ajout et de suppression. La navigation est effectuée en appelant des méthodes sur la propriété View du CollectionViewSource. Le `DeleteOrderCommandHandler` montre comment effectuer une suppression en cascade sur une commande. Nous devons tout d’abord supprimer les Order_Details qui y sont associés. Le `UpdateCommandHandler` ajoute un nouveau client ou une commande au regroupement, ou simplement met à jour un client ou une commande existant avec les modifications apportées par l’utilisateur dans les zones de texte.
 
 Ajoutez ces méthodes de gestionnaire à la classe MainWindow dans *MainWindow.Xaml.cs*. Si votre CollectionViewSource pour la table Customers a un nom différent, vous devez ajuster le nom dans chacune de ces méthodes :
 

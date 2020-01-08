@@ -2,7 +2,7 @@
 title: Nouveautés de Visual Studio 2019
 titleSuffix: ''
 description: Découvrez les nouvelles fonctionnalités de Visual Studio 2019.
-ms.date: 12/03/2019
+ms.date: 12/10/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 975b9ca88a775e08b97cccf1d1580a96ac4d9d65
-ms.sourcegitcommit: c222052906362bf1a3762ec4d4623170e4e06702
+ms.openlocfilehash: 4a9d8babb55a615e12c575f30426c8e73aa1c6e1
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74810124"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75406716"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Nouveautés de Visual Studio 2019
 
@@ -152,7 +152,7 @@ Nous introduisons une nouvelle extension que vous pouvez télécharger et utilis
 
 Pour plus d’informations, consultez le billet de blog [Code reviews using the Visual Studio Pull Requests extension](https://devblogs.microsoft.com/visualstudio/code-reviews-using-the-visual-studio-pull-requests-extension/).
 
-## <a name="debug"></a>Débogage
+## <a name="debug"></a>Déboguer
 
 Afficher la vidéo suivante pour en savoir plus sur la façon dont vous pouvez vous concentrer sur le ciblage précis pendant le débogage. <br><br>*Longueur vidéo : 3,54 minutes*
 
@@ -201,6 +201,8 @@ Pour plus d’informations, voir la page [Déboguer des applications Azure ASP.N
 **Nouveauté de 16,4**: désormais, il est plus facile d’identifier les objets par leurs propriétés lors du débogage à l’aide de l’outil nouvelles propriétés regroupement. Il vous suffit de pointer le curseur sur une propriété que vous souhaitez afficher dans la fenêtre du débogueur des fenêtres espion, automatique et variables locales, de sélectionner l’icône d’épingle et de voir immédiatement les informations que vous recherchez en haut de la fenêtre.
 
    ![Une animation qui montre comment épingler des propriétés dans le débogueur Visual Studio à l’aide de l’outil Propriétés regroupement](media/vs-2019/debugger-pinnable-properties.gif)
+
+Pour plus d’informations, consultez le billet de blog [Propriétés regroupement : Debug & afficher les objets gérés à votre façon](https://devblogs.microsoft.com/visualstudio/pinnable-properties-debug-display-managed-objects-your-way/) .
 
 ## <a name="whats-next"></a>Étapes suivantes
 

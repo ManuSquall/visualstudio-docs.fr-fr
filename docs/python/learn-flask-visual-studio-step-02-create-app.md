@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1786c8c57c841744ed27b03e4969fe2bd21ce2c7
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 03a0eb6808b2298e0727492978d9beb7cfaf2216
+ms.sourcegitcommit: 0d8488329263cc0743a89d43f6de863028e982ff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985196"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75678959"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Étape 2 : Créer une application Flask avec des vues et des modèles de pages
 
@@ -205,15 +205,11 @@ Réponse : l’extension *.html* pour les fichiers de modèle de page est entiè
 
 En fait, quand vous travaillez avec un projet Flask, Visual Studio détecte automatiquement lorsque le fichier HTML que vous êtes en train de modifier est réellement un modèle Flask et fournit certaines fonctionnalités de saisie semi-automatique. Par exemple, quand vous commencez à saisir un commentaire sur le modèle de page Flask, `{#`, Visual Studio vous donne automatiquement les caractères de fermeture `#}`. Les commandes **Commenter la sélection** et **Supprimer les marques de commentaire de la sélection** (sur le menu **Modifier** > **Avancé** et la barre d’outils) utilisent également les commentaires des modèles au lieu des commentaires HTML.
 
-### <a name="question-when-i-run-the-project-i-see-an-error-that-the-template-cannot-be-found-whats-wrong"></a>Question : lorsque j’exécute le projet, je vois une erreur indiquant qu’il est impossible de trouver le modèle. Quel est le problème ?
-
-Réponse : si vous rencontrez des erreurs indiquant que le modèle est introuvable, vérifiez que vous avez ajouté l’application au script *settings.py* du projet Flask dans la liste `INSTALLED_APPS`. Sans cette entrée, Flask ne saura pas qu’il doit rechercher dans le dossier *templates* de l’application.
-
 ### <a name="question-can-templates-be-organized-into-further-subfolders"></a>Question : les modèles peuvent-ils être organisés selon d’autres sous-dossiers ?
 
 Réponse : oui, vous pouvez utiliser des sous-dossiers, puis référencer le chemin relatif sous *templates* dans les appels à `render_template`. Procéder ainsi est un excellent moyen pour créer efficacement des espaces de noms pour vos modèles.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 > [!div class="nextstepaction"]
 > [Prendre en charge les fichiers statiques, ajouter des pages et utiliser l’héritage du modèle](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)

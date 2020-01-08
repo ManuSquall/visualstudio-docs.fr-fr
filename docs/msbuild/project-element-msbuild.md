@@ -14,17 +14,17 @@ helpviewer_keywords:
 - <Project> element [MSBuild]
 - Project element [MSBuild]
 ms.assetid: d1cda56a-dbef-4109-9201-39e962e3f653
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c69d010f9a4e834f9435616747c2776786706445
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 1bb7c49e4f3dc86594c8a3211bacb538d3f10c4f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62999336"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597436"
 ---
 # <a name="project-element-msbuild"></a>Élément Project (MSBuild)
 Élément racine requis d'un fichier projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] .
@@ -54,13 +54,13 @@ ms.locfileid: "62999336"
 
 ### <a name="attributes"></a>Attributs
 
-| Attribut | Description |
+| Attribute | Description |
 |------------------------| - |
 | `DefaultTargets` | Attribut facultatif.<br /><br /> Cible ou cibles par défaut définies comme point d’entrée de la génération si aucune cible n’a été spécifiée. Plusieurs cibles sont séparées par un point-virgule (;).<br /><br /> Si aucune cible par défaut n’est spécifiée dans l’attribut `DefaultTargets` ou la ligne de commande [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], le moteur exécute la première cible dans le fichier projet après l’évaluation des éléments [Import](../msbuild/import-element-msbuild.md). |
 | `InitialTargets` | Attribut facultatif.<br /><br /> Cible ou cibles initiales à exécuter avant les cibles spécifiées dans l’attribut `DefaultTargets` ou sur la ligne de commande. Plusieurs cibles sont séparées par un point-virgule (`;`). Si plusieurs fichiers importés définissent `InitialTargets`, toutes les cibles indiquées seront exécutées, dans l’ordre où elles sont trouvées. |
 | `Sdk` | Attribut facultatif. <br /><br /> Le nom et la version facultative du kit SDK à utiliser pour créer des instructions d’importation implicites qui sont ajoutées au fichier .proj. Si aucune version n’est spécifiée, MSBuild tente de résoudre une version par défaut.  Par exemple, `<Project Sdk="Microsoft.NET.Sdk" />` ou `<Project Sdk="My.Custom.Sdk/1.0.0" />`. |
 | `ToolsVersion` | Attribut facultatif.<br /><br /> Version de l’ensemble d’outils utilisée par MSBuild pour déterminer les valeurs de $(MSBuildBinPath) et de $(MSBuildToolsPath). |
-| `TreatAsLocalProperty` | Attribut facultatif.<br /><br /> Noms des propriétés qui ne sont pas considérées comme étant globales. Cet attribut empêche des propriétés de ligne de commande particulières de remplacer les valeurs de propriété définies dans un fichier projet ou de cibles et dans toutes les importations ultérieures. Plusieurs propriétés sont séparées par un point-virgule (;).<br /><br /> Normalement, les propriétés globales remplacent les valeurs de propriété qui sont définies dans le fichier projet ou de cible. Si la propriété est indiquée dans la valeur `TreatAsLocalProperty`, la valeur de propriété globale ne remplace pas les valeurs de propriété qui sont définies dans ce fichier et dans toutes les importations ultérieures. Pour plus d'informations, voir [Procédure : Générer les mêmes fichiers sources avec des options différentes](../msbuild/how-to-build-the-same-source-files-with-different-options.md). **Remarque :**  pour définir les propriétés générales dans une invite de commande, utilisez le commutateur **-property** (ou **-p**). Vous pouvez également définir ou modifier des propriétés globales pour des projets enfants d’une génération multiprojet à l’aide de l’attribut `Properties` de la tâche MSBuild. Pour plus d’informations, consultez l’article [Tâche MSBuild](../msbuild/msbuild-task.md). |
+| `TreatAsLocalProperty` | Attribut facultatif.<br /><br /> Noms des propriétés qui ne sont pas considérées comme étant globales. Cet attribut empêche des propriétés de ligne de commande particulières de remplacer les valeurs de propriété définies dans un fichier projet ou de cibles et dans toutes les importations ultérieures. Plusieurs propriétés sont séparées par un point-virgule (;).<br /><br /> Normalement, les propriétés globales remplacent les valeurs de propriété qui sont définies dans le fichier projet ou de cible. Si la propriété est indiquée dans la valeur `TreatAsLocalProperty`, la valeur de propriété globale ne remplace pas les valeurs de propriété qui sont définies dans ce fichier et dans toutes les importations ultérieures. Pour plus d’informations, voir [Guide pratique : Générer les mêmes fichiers sources avec des options différentes](../msbuild/how-to-build-the-same-source-files-with-different-options.md). **Remarque :** vous définissez les propriétés générales avec une invite de commande à l’aide du commutateur **-property** (ou **-p**). Vous pouvez également définir ou modifier des propriétés globales pour des projets enfants d’une génération multiprojet à l’aide de l’attribut `Properties` de la tâche MSBuild. Pour plus d’informations, consultez l’article [Tâche MSBuild](../msbuild/msbuild-task.md). |
 | `xmlns` | Attribut facultatif.<br /><br /> Quand il est spécifié, l’attribut `xmlns` doit avoir la valeur `http://schemas.microsoft.com/developer/msbuild/2003`. |
 
 ### <a name="child-elements"></a>Éléments enfants
@@ -82,7 +82,7 @@ ms.locfileid: "62999336"
  Aucun.
 
 ## <a name="see-also"></a>Voir aussi
-- [Guide pratique pour spécifier la cible à générer en premier](../msbuild/how-to-specify-which-target-to-build-first.md)
+- [Comment : spécifier la cible à générer en premier](../msbuild/how-to-specify-which-target-to-build-first.md)
 - [Informations de référence sur la ligne de commande](../msbuild/msbuild-command-line-reference.md)
 - [Informations de référence sur le schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)
 - [MSBuild](../msbuild/msbuild.md)

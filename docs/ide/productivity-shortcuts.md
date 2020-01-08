@@ -3,17 +3,17 @@ title: Raccourcis clavier et souris
 description: Cet article contient des conseils pour les raccourcis clavier et souris dans Visual Studio qui peuvent vous aider à gagner en productivité.
 ms.date: 11/02/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cbe2ddd87f867768c6fd7c041f6b88fbe88c44f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 71116fbc05eade8ffb89c38a922106f375b86021
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666746"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585728"
 ---
 # <a name="shortcut-tips-for-visual-studio"></a>Conseils d’utilisation des raccourcis pour Visual Studio
 
@@ -99,7 +99,7 @@ Pour obtenir la liste complète des raccourcis de commande, consultez [Raccourci
 |Accéder au problème suivant/précédent|**Alt**+**Pg préc** / **Alt**+**Pg suiv**|
 |Menu contextuel de navigation|**Alt**+ **`**|
 
-## <a name="toolbars"></a>Barres d'outils
+## <a name="toolbars"></a>Toolbars
 
 |Tâche|Raccourci|
 |-|-|
@@ -108,7 +108,7 @@ Pour obtenir la liste complète des raccourcis de commande, consultez [Raccourci
 |Mode commande de zone de texte de recherche|Type **>**|
 |Créer un alias|Saisissez **alias \<nouvel alias> \<commande>** dans la fenêtre **Commande**|
 
-## <a name="debugging"></a>Débogage
+## <a name="debugging"></a>débogage
 
 |Tâche|Raccourci|
 |-|-|

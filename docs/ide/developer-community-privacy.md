@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - developer community privacy
 - privacy, developer community
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1856d6421dc61ada2f3040e4fdeed880a6ab201
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 09f3e5fed93cac3a251e4b7cdcaa988e63ff8741
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652480"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596266"
 ---
 # <a name="developer-community-data-privacy"></a>Confidentialité des données de la communauté des développeurs
 
@@ -82,7 +82,7 @@ Si **Signaler un problème** est lancé à partir de Visual Studio, nous collect
 
 > [!NOTE]
 > Les fichiers journaux, les captures d’écran et les données d’enregistrement sont envoyés à Microsoft uniquement lorsque vous fournissez une autorisation en soumettant le rapport de problème avec lequel ils sont inclus. Vous pouvez voir quels fichiers sont inclus dans l’étape « Résumé » de la fenêtre « signaler un problème » (voir la capture d’écran incluse dans cette note). Les journaux et les fichiers collectés sont stockés dans le dossier% Temp% et sont nettoyés régulièrement et après chaque téléchargement. Si vous ne souhaitez pas inclure de journal dans votre rapport de problème, supprimez le fichier du dossier% Temp% avant d’envoyer le rapport.
-  > ![Report un problème : synthèse des journaux collectés ](media/report-a-problem-logs-collected.png)
+  > ![signaler un problème-Résumé des journaux collectés](media/report-a-problem-logs-collected.png)
 
 
 ## <a name="see-also"></a>Voir aussi
