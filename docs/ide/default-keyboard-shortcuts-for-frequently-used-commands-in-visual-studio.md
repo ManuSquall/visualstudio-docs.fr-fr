@@ -2,17 +2,17 @@
 title: Raccourcis clavier par défaut pour les commandes fréquemment utilisées
 ms.date: 11/04/2016
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eda902db03d7211a4025663088cf8bf3718e4a2f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c7aebdc4c734f6831dc6ec1315aa7263b73cd30b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652515"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596721"
 ---
 # <a name="popular-keyboard-shortcuts-for-visual-studio"></a>Raccourcis clavier populaires pour Visual Studio
 
@@ -25,16 +25,16 @@ Le contexte *Global* signifie que le raccourci s’applique dans n’importe que
 
 ## <a name="build"></a>Générer
 
-|Commandes|Raccourcis clavier [Contextes]|
+|Commands|Raccourcis clavier [Contextes]|
 |--------------| - |
 |Build.BuildSolution|**Ctrl+Maj+B** [Global]|
 |Build.Cancel|**Ctrl+Pause** [Global]|
 |Build.Compile|**Ctrl+F7** [Global]|
 |Build.RunCodeAnalysisonSolution|**Alt+F11** [Global]|
 
-## <a name="debug"></a>Débogage
+## <a name="debug"></a>Déboguer
 
-|Commandes|Raccourcis clavier [Contextes]|
+|Commands|Raccourcis clavier [Contextes]|
 |--------------| - |
 |Debug.BreakatFunction|**Ctrl+B** [Global]|
 |Debug.BreakAll|**Ctrl+Alt+Pause** [Global]|
@@ -52,9 +52,9 @@ Le contexte *Global* signifie que le raccourci s’applique dans n’importe que
 |Debug.StopDebugging|**Maj+F5** [Global]|
 |Debug.ToggleBreakpoint|**F9** [Global]|
 
-## <a name="edit"></a>Éditer
+## <a name="edit"></a>Edit
 
-|Commandes|Raccourcis clavier [Contextes]|
+|Commands|Raccourcis clavier [Contextes]|
 |--------------| - |
 |Edit.BreakLine|**Entrée** [Éditeur de texte, Concepteur de rapports, Concepteur Windows Forms]<br /><br />ou **Maj+Entrée** [Éditeur de texte]|
 |Edit.CollapseToDefinitions|**Ctrl+M**, **Ctrl+O** [Éditeur de texte]|
@@ -103,9 +103,9 @@ Le contexte *Global* signifie que le raccourci s’applique dans n’importe que
 |Edit.WordDeleteToEnd|**Ctrl+Suppr** [Éditeur de texte]|
 |Edit.WordDeleteToStart|**Ctrl+Retour arrière** [Éditeur de texte]|
 
-## <a name="file"></a>Fichier
+## <a name="file"></a>File
 
-|Commandes|Raccourcis clavier [Contextes]|
+|Commands|Raccourcis clavier [Contextes]|
 |--------------| - |
 |File.Exit|**Alt+F4** [Global]|
 |File.NewFile|**Ctrl+N** [Global]|
@@ -121,26 +121,26 @@ Le contexte *Global* signifie que le raccourci s’applique dans n’importe que
 
 ## <a name="project"></a>Projet
 
-|Commandes|Raccourcis clavier [Contextes]|
+|Commands|Raccourcis clavier [Contextes]|
 |--------------| - |
 |Project.AddExistingItem|**Maj+Alt+A** [Global]|
 |Project.AddNewItem|**Ctrl+Maj+A** [Global]|
 
 ## <a name="refactor"></a>Refactorisation
 
-|Commande|Raccourci clavier [Contexte]|
+|Command|Raccourci clavier [Contexte]|
 |-------------| - |
 |Refactor.ExtractMethod|**Ctrl+R, Ctrl+M** [Global]|
 
 ## <a name="tools"></a>Outils
 
-|Commande|Raccourci clavier [Contexte]|
+|Command|Raccourci clavier [Contexte]|
 |-------------| - |
 |Tools.AttachtoProcess|**Ctrl+Alt+P** [Global]|
 
-## <a name="view"></a>Vue
+## <a name="view"></a>Consultez la rubrique .
 
-|Commandes|Raccourcis clavier [Contextes]|
+|Commands|Raccourcis clavier [Contextes]|
 |--------------| - |
 |View.ClassView|**Ctrl+Maj+C** [Global]|
 |View.EditLabel|**F2** [Global]|
@@ -161,7 +161,7 @@ Le contexte *Global* signifie que le raccourci s’applique dans n’importe que
 
 ## <a name="window"></a>Fenêtre
 
-|Commandes|Raccourcis clavier [Contextes]|
+|Commands|Raccourcis clavier [Contextes]|
 |--------------| - |
 |Window.ActivateDocumentWindow|**Échap** [Global]|
 |Window.CloseDocumentWindow|**Ctrl+F4** [Global]|

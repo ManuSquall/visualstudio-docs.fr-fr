@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 321e8271806f8f9e2983e82db010cd2ffb49a3ee
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: faf418155708ebc577efea57ed3352953a8d577d
+ms.sourcegitcommit: 5920a8b0c68350f11eabc1652a19b04d0196881a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74777944"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75622568"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutoriel : Créer une application Node.js et React dans Visual Studio
 
@@ -85,7 +85,9 @@ Commencez par créer un projet d’application web Node.js.
 1. Créez un nouveau projet.
 
     ::: moniker range=">=vs-2019"
-    Appuyez sur **Échap** pour fermer la fenêtre de démarrage. Tapez **Ctrl+Q** pour ouvrir la zone de recherche, tapez **Node.js**, puis choisissez **Application web Node.js vide** (JavaScript). Dans la boîte de dialogue qui apparaît, choisissez **Créer**.
+    Appuyez sur **Échap** pour fermer la fenêtre de démarrage. Tapez **CTRL + Q** pour ouvrir la zone de recherche, tapez **node. js**, puis choisissez l' **application Web node. js vide-JavaScript**. (Bien que ce didacticiel utilise le compilateur de machine à écrire, les étapes requièrent que vous démarriez avec le modèle **JavaScript** .)
+    
+    Dans la boîte de dialogue qui apparaît, choisissez **Créer**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**. Dans la boîte de dialogue **Nouveau projet**, développez **JavaScript**, puis choisissez **Node.js**. Dans le volet central, choisissez **Application web Node.js vide**, tapez le nom **NodejsWebAppBlank**, puis choisissez **OK**.
@@ -418,7 +420,7 @@ Pour ce scénario, utilisez Chrome.
 
     `msedge --remote-debugging-port=9222`
 
-    ni
+    ou
 
     `chrome.exe --remote-debugging-port=9222`
     ::: moniker-end
@@ -447,7 +449,7 @@ Pour ce scénario, utilisez Chrome.
 
     ![Définir un point d'arrêt](../javascript/media/tutorial-nodejs-react-set-breakpoint-in-tsx-file.png)
 
-2. Si vous définissez le point d’arrêt dans le fichier *. TSX* (plutôt que *app-bundle. js*), vous devez mettre à jour *WebPack-config. js*. Remplacez le code suivant :
+2. Si vous définissez le point d’arrêt dans le fichier *. TSX* (plutôt que *app-bundle. js*), vous devez mettre à jour *WebPack-config. js*. Remplacez le code suivant :
 
     ```javascript
     output: {
@@ -482,7 +484,7 @@ Pour ce scénario, utilisez Chrome.
 5. Dans la boîte de dialogue **attacher au processus** , récupérez une liste filtrée des instances de navigateur auxquelles vous pouvez attacher.
 
     ::: moniker range=">=vs-2019"
-    Dans Visual Studio 2019, choisissez le débogueur approprié pour votre navigateur cible, **JavaScript (chrome)** ou **JavaScript (Microsoft Edge-chrome)** dans le champ **attacher à** , tapez **chrome** ou **bord** dans la zone de filtre pour filtrer résultats de la recherche.
+    Dans Visual Studio 2019, choisissez le débogueur approprié pour votre navigateur cible, **JavaScript (chrome)** ou **JavaScript (Microsoft Edge-chrome)** dans le champ **attacher à** , tapez **chrome** ou **bord** dans la zone de filtre pour filtrer les résultats de la recherche.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Dans Visual Studio 2017, choisissez **code WebKit** dans le champ **attacher à** , tapez **chrome** dans la zone de filtre pour filtrer les résultats de la recherche.

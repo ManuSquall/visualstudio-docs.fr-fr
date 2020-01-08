@@ -5,19 +5,19 @@ ms.custom: seodec18, get-started
 ms.date: 11/20/2018
 ms.technology: vs-ide-general
 ms.topic: tutorial
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1b5fb79430b081986764f0ee1789f68471667498
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 0cacd56ff6b3b3510505ca2752404b55a2771429
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189081"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590434"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Apprendre à utiliser l’éditeur de code
 
@@ -40,7 +40,7 @@ Dans cette présentation de 10 minutes de l’éditeur de code de Visual Studio
 Cet article suppose de connaître C#. Si ce n’est pas votre cas, nous vous suggérons de commencer par un tutoriel comme [Bien démarrer avec C# et ASP.NET Core dans Visual Studio](tutorial-aspnet-core.md).
 
 > [!TIP]
-> Pour suivre cet article, vérifiez que vous avez sélectionné les paramètres C# pour Visual Studio. Pour plus d’informations sur la sélection des paramètres de l’environnement de développement intégré (IDE), voir [Sélectionner les paramètres de l’environnement](visual-studio-ide.md#select-environment-settings).
+> Pour suivre cet article, vérifiez que vous avez sélectionné les paramètres C# pour Visual Studio. Pour plus d’informations sur la sélection des paramètres pour l’environnement de développement intégré (IDE), consultez [Sélectionner les paramètres d’environnement](visual-studio-ide.md#select-environment-settings).
 
 ## <a name="create-a-new-code-file"></a>Créer un fichier de code
 
@@ -58,7 +58,7 @@ Vous allez commencer par créer un fichier et y ajouter du code.
 
 ::: moniker-end
 
-2. Dans le menu **fichier** de la barre de menus, **choisissez nouveau**  > **fichier**ou appuyez sur **CTRL** +**N**.
+2. Dans le menu **fichier** de la barre de menus, **choisissez nouveau** > **fichier**ou appuyez sur **CTRL**+**N**.
 
 3. Dans la boîte de dialogue **Nouveau fichier**, sous la catégorie **Général**, choisissez **Classe Visual C#** , puis choisissez **Ouvrir**.
 
@@ -80,7 +80,7 @@ Visual Studio fournit des *extraits de code* qui vous aident à créer rapidemen
 
    La signature de la méthode `static void Main()` est ajoutée au fichier. La méthode [Main()](/dotnet/csharp/programming-guide/main-and-command-args/) est le point d’entrée pour les applications C#.
 
-Les extraits de code disponibles diffèrent en fonction des langages de programmation. Vous pouvez consulter les extraits de code disponibles pour votre langage en choisissant **modifier**  > **IntelliSense**  > **Insérer un extrait** ou en appuyant sur **CTRL** +**K**, **CTRL** +**X**, puis en choisissant le dossier de votre langue. Pour C#, la liste ressemble à ceci :
+Les extraits de code disponibles diffèrent en fonction des langages de programmation. Vous pouvez consulter les extraits de code disponibles pour votre langage en choisissant **modifier** > **IntelliSense** > **Insérer un extrait** ou en appuyant sur **CTRL**+**K**, **CTRL**+**X**, puis en choisissant le dossier de votre langue. Pour C#, la liste ressemble à ceci :
 
 ![Liste d’extraits de code C#](../media/tutorial-code-snippet-list.png)
 
@@ -183,7 +183,7 @@ Aucun développeur ne réussit à créer un code parfait dès le départ. L’un
 
    Les deux occurrences de `words` ont été renommées, tout comme la référence à `words` dans le commentaire de code.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 > [!div class="nextstepaction"]
 > [Découvrir les projets et les solutions](../tutorial-projects-solutions.md)
@@ -193,6 +193,6 @@ Aucun développeur ne réussit à créer un code parfait dès le départ. L’un
 - [Extraits de code](../../ide/code-snippets.md)
 - [Naviguer dans le code](../../ide/navigating-code.md)
 - [Mode Plan](../../ide/outlining.md)
-- [Atteindre la définition et Aperçu de la définition](../../ide/go-to-and-peek-definition.md)
+- [Atteindre la définition et l’aperçu de définition](../../ide/go-to-and-peek-definition.md)
 - [Refactorisation](../../ide/refactoring-in-visual-studio.md)
 - [Utiliser IntelliSense](../../ide/using-intellisense.md)

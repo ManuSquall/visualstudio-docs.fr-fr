@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Créer et supprimer les dépendances d’un projet'
+title: Guide pratique pour créer et supprimer les dépendances d’un projet
 ms.date: 06/21/2017
 ms.topic: conceptual
 f1_keywords:
@@ -13,19 +13,19 @@ helpviewer_keywords:
 - projects [Visual Studio], dependencies
 ms.assetid: e2a0a8ff-dae7-40a8-b774-b88aa5235183
 ms.technology: vs-ide-compile
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce26c74aced2dd979f9f9847d5c56ead30f897ce
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
-ms.translationtype: HT
+ms.openlocfilehash: 2c10ea49dfd1398b8271f959cb498c311d98a4ef
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415588"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595278"
 ---
-# <a name="how-to-create-and-remove-project-dependencies"></a>Procédure : Créer et supprimer les dépendances d’un projet
+# <a name="how-to-create-and-remove-project-dependencies"></a>Guide pratique pour créer et supprimer les dépendances d’un projet
 
 Quand vous générez une solution qui contient plusieurs projets, vous pouvez être amené à générer d’abord certains projets pour générer le code utilisé par les autres projets. Quand un projet utilise un code exécutable généré par un autre projet, le projet qui génère le code une dépendance du projet qui utilise le code. Vous pouvez définir ces relations de dépendance dans la boîte de dialogue **Dépendances du projet**.
 

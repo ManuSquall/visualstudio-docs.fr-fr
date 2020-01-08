@@ -2,17 +2,17 @@
 title: Déploiement MSI et VSIX d'un langage spécifique à un domaine
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 73c81d88f055ea7a585e3d14ab4a0086d9236938
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 96922848adf053e3b728196a445407f3d5f86428
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984455"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590187"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Déploiement MSI et VSIX d'un langage spécifique à un domaine
 Vous pouvez installer un langage spécifique à un domaine sur votre ordinateur ou sur d’autres ordinateurs. Visual Studio doit déjà être installé sur l’ordinateur cible.
@@ -35,9 +35,9 @@ Lorsque votre solution DSL est installée par cette méthode, l’utilisateur pe
 
    1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le projet **DslPackage** , puis cliquez sur **ouvrir le dossier dans l’Explorateur de fichiers**.
 
-   2. Localisez le fichier **bin \\ \* \\** _YourProject_ **. DslPackage. vsix**
+   2. Localisez le fichier **bin\\\*\\** _YourProject_ **. DslPackage. vsix**
 
-2. Copiez le fichier **. vsix** sur l’ordinateur cible sur lequel vous souhaitez installer le DSL. Il peut s’agir de votre propre ordinateur ou d’un autre.
+2. Copiez le fichier **. vsix** sur l’ordinateur cible sur lequel vous souhaitez installer le DSL. Il peut s’agir de votre propre ordinateur ou d’un autre ordinateur.
 
    - L’ordinateur cible doit avoir l’une des éditions de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] qui prend en charge DSL au moment de l’exécution. Pour plus d’informations, consultez [éditions de Visual Studio prises en charge pour la visualisation & le kit de développement logiciel Modeling SDK](../modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk.md).
 
@@ -76,7 +76,7 @@ Lorsque votre solution DSL est installée par cette méthode, l’utilisateur pe
 
    1. Ouvrir DslPackage\source.extension.tt
 
-   2. Insérez la ligne suivante avant `<SupportedProducts>` :
+   2. Insérez la ligne suivante avant `<SupportedProducts>`:
 
        ```xml
        <InstalledByMsi>true</InstalledByMsi>
@@ -102,11 +102,11 @@ Lorsque votre solution DSL est installée par cette méthode, l’utilisateur pe
 
     Visual Studio crée un fichier nommé **CreateMsiSetupProject. vdproj**.
 
-6. Dans l’Explorateur Windows, copiez DSL \\ *. vdproj dans un nouveau dossier nommé Setup.
+6. Dans l’Explorateur Windows, copiez Dsl\\\*.vdproj vers un nouveau dossier nommé le programme d’installation.
 
     (Si vous le souhaitez, vous pouvez maintenant exclure CreateMsiSetupProject.tt de votre projet DSL.)
 
-7. Dans **Explorateur de solutions**, ajoutez **le programme d’installation \\ \*. vdproj** en tant que projet existant.
+7. Dans **Explorateur de solutions**, ajoutez **le programme d’installation\\\*. vdproj** en tant que projet existant.
 
 8. Dans le menu **projet** , cliquez sur **dépendances du projet**.
 
@@ -118,9 +118,9 @@ Lorsque votre solution DSL est installée par cette méthode, l’utilisateur pe
 
 10. Dans l’Explorateur Windows, localisez le fichier MSI généré dans votre projet d’installation.
 
-     Copiez le fichier MSI sur un ordinateur sur lequel vous souhaitez installer votre DSL. Double-cliquez sur le fichier MSI. Le programme d’installation s’exécute.
+     Copiez le fichier MSI sur un ordinateur sur lequel vous souhaitez installer votre DSL. Double-cliquez sur le fichier MSI. Le programme d'installation s'exécute.
 
-11. Sur l’ordinateur cible, créez un nouveau fichier qui a l’extension de fichier de votre DSL. Vérifiez les éléments suivants :
+11. Sur l’ordinateur cible, créez un nouveau fichier qui a l’extension de fichier de votre DSL. Vérifiez que :
 
     - Dans le mode liste de l’Explorateur Windows, le fichier apparaît avec l’icône et la description que vous avez définies.
 

@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests, data-driven
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 101b678606febd7cc2a7e2f9cee0c8c281289c9a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ada1f297bbb30fbe636042c87aae42849c1b6b7d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665097"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595356"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>Créer un test codé de l'interface utilisateur piloté par les données
 
@@ -22,7 +22,7 @@ Pour tester différentes conditions, vous pouvez exécuter vos tests à plusieur
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-**Prérequis**
+**Spécifications**
 
 - Visual Studio Enterprise
 - Composant Test codé de l’interface utilisateur
@@ -38,7 +38,7 @@ Cet exemple crée un test codé de l'interface utilisateur qui s'exécute sur l'
     ![Créer un projet de test d'interface utilisateur codé](../test/media/cuit_datadriven_.png)
 
    > [!NOTE]
-   > Si vous ne voyez pas le modèle **projet de test codé de l’interface utilisateur**, vous devez [installer le composant de test codé de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
+   > Si vous ne voyez pas le modèle **Projet de test codé de l’interface utilisateur**, vous devez [installer le composant de test codé de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
 
 2. Choisissez **d’enregistrer les actions**.
 
@@ -140,7 +140,7 @@ Cet exemple crée un test codé de l'interface utilisateur qui s'exécute sur l'
     > [!TIP]
     > Consultez les [exemples d’attributs de source de données](#CreateDataDrivenCUIT_QA_DataSourceAttributes) dans la section des questions et réponses sur l’utilisation d’autres types de source de données tels que XML, SQL Express et Excel.
 
-2. Exécutez le test.
+2. Exécuter le test.
 
      Notez que le test s'exécute via trois itérations. En effet, la source de données qui a été liée contient trois lignes de données. En revanche, vous pouvez remarquer que le test utilise toujours les valeurs de paramètre constantes et additionne 1 + 2 avec une somme de 3 à chaque fois.
 
@@ -227,7 +227,7 @@ Vous devez voir le test s'exécuter via trois itérations à l'aide des valeurs 
 
      `[DataSource("System.Data.SqlClient", "Data Source=.\\sqlexpress;Initial Catalog=tempdb;Integrated Security=True", "Data", DataAccessMethod.Sequential), TestMethod]`
 
-### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>Q : pourquoi ne puis-je pas modifier le code du fichier UIMap.Designer ?
+### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>Q : Pourquoi ne puis-je pas modifier le code du fichier UIMap.Designer ?
 
 **R** : Toutes les modifications de code que vous effectuez dans le fichier *UIMapDesigner.cs* sont remplacées chaque fois que vous générez du code dans UIMap - Générateur de test codé de l’interface utilisateur. Dans cet exemple et dans la plupart des cas, les modifications de code nécessaires pour permettre à un test d’utiliser une source de données peuvent être apportées au fichier de code source du test (c’est-à-dire, *CodedUITest1.cs*).
 

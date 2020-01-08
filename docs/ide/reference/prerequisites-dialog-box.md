@@ -7,17 +7,17 @@ f1_keywords:
 - Microsoft.VisualStudio.Publish.BaseProvider.Dialog.Bootstrapper
 helpviewer_keywords:
 - Prerequisites dialog box
-author: mikejo5000
-ms.author: mikejo
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ab3cb844f518ef5fae553010fe4a800c09d170a
-ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
-ms.translationtype: HT
+ms.openlocfilehash: 0ecbba1a1c5e8670fd9adcafdfed8cec21dd3912
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68533380"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567903"
 ---
 # <a name="prerequisites-dialog-box"></a>Composants requis, boîte de dialogue
 
@@ -46,7 +46,7 @@ Les composants requis qui apparaissent dans la boîte de dialogue **Composants r
 
 |Élément|Description|
 |-------------|-----------------|
-|**.NET Framework 3.5 SP1**|Ce package installe les éléments suivants :<br /><br /> - .NET Framework versions 2.0, 3.0 et 3.5.<br />- Prise en charge de toutes les versions de .NET Framework sur les systèmes d’exploitation 32 bits (x86) et 64 bits (x64).<br />- Modules linguistiques pour chaque version de .NET Framework installée avec le package.<br />- Service Packs pour .NET Framework 2.0 et 3.0.<br /><br /> .NET Framework 3.0 est inclus avec Windows Vista et .NET Framework 3.5 avec Visual Studio. .NET Framework 3.5 est requis pour tous les projets Visual Basic et C# qui sont compilés pour les systèmes d’exploitation 32 bits et dont la version cible de .NET Framework est **.NET Framework 3.5**, ainsi que pour les projets Visual Basic et C# compilés pour les systèmes d’exploitation 64 bits. (IA64 non pris en charge.) Notez que les projets Visual Basic et C# sont compilés par défaut pour toutes les architectures UC. Pour plus d’informations, consultez [Vue d’ensemble du ciblage des frameworks](../../ide/visual-studio-multi-targeting-overview.md) et [Déployer les prérequis pour les applications 64 bits](../../deployment/deploying-prerequisites-for-64-bit-applications.md).|
+|**.NET Framework 3.5 SP1**|Ce package installe les éléments suivants :<br /><br /> - .NET Framework versions 2.0, 3.0 et 3.5.<br />- Prise en charge de toutes les versions de .NET Framework sur les systèmes d’exploitation 32 bits (x86) et 64 bits (x64).<br />- Modules linguistiques pour chaque version de .NET Framework installée avec le package.<br />- Service Packs pour .NET Framework 2.0 et 3.0.<br /><br /> .NET Framework 3.0 est inclus avec Windows Vista et .NET Framework 3.5 avec Visual Studio. .NET Framework 3.5 est requis pour tous les projets Visual Basic et C# qui sont compilés pour les systèmes d’exploitation 32 bits et dont la version cible de .NET Framework est **.NET Framework 3.5**, ainsi que pour les projets Visual Basic et C# compilés pour les systèmes d’exploitation 64 bits. (IA64 n’est pas pris en charge.) Notez que les Visual Basic C# et les projets sont compilés pour toute architecture de processeur par défaut. Pour plus d’informations, consultez [Vue d’ensemble du ciblage des frameworks](../../ide/visual-studio-multi-targeting-overview.md) et [Déployer les prérequis pour les applications 64 bits](../../deployment/deploying-prerequisites-for-64-bit-applications.md).|
 |**Microsoft .NET Framework 4.x**|Ce package installe .NET Framework 4.x pour les plateformes x64 et x86.|
 |**Microsoft System CLR Types pour SQL Server 2014 (x64 et x86)**|Ce package installe Microsoft System CLR Types pour SQL Server 2014 pour les plateformes x64 ou x86.|
 |**SQL Server 2008 R2 Express**|Ce package installe Microsoft SQL Server 2008 R2 Express, qui est une version gratuite de Microsoft SQL Server 2008 R2, une base de données idéale pour les petites applications web, de serveur ou de poste de travail. Il peut être utilisé gratuitement pour le développement et la production.|

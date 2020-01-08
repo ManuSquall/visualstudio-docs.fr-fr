@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Tools.ImportandExportSettings
 - Import and Export Settings command
 ms.assetid: 94a06468-a44d-403d-a931-77bbc9d06e56
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0be61d8690c0605f6e7773efe02f5db351110f9a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 409c0f40adfd374065dedb842965d2d1237bc9a0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658776"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568826"
 ---
 # <a name="import-and-export-settings-command"></a>Importation et exportation de paramètres (commande)
 
@@ -34,15 +34,15 @@ Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
 
 /export:`filename`
 
-Optionnel. Exporte les paramètres actuels dans le fichier spécifié.
+Option facultative. Exporte les paramètres actuels dans le fichier spécifié.
 
 /import:`filename`
 
-Optionnel. Importe les paramètres figurant dans le fichier spécifié.
+Option facultative. Importe les paramètres figurant dans le fichier spécifié.
 
 /reset
 
-Optionnel. Réinitialise les paramètres actuels.
+Option facultative. Réinitialise les paramètres actuels.
 
 ## <a name="remarks"></a>Notes
 

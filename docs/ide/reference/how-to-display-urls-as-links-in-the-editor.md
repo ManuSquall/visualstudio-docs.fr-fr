@@ -7,17 +7,17 @@ helpviewer_keywords:
 - Code Editor, displaying URLs
 - editors, displaying URLs
 ms.assetid: 7c673953-476e-4897-9c2d-1fc15556c172
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9814614ae752a670a8b707e6fd701a5fa151f481
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: aefabb480830f7fc649bc73d47a3b47594100616
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668581"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75569086"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>Guide pratique pour afficher des URL en tant que liens dans l'Éditeur
 
@@ -37,7 +37,7 @@ Vous pouvez choisir de configurer l’éditeur de code pour qu’il traite les U
 
 3. Pour modifier l’option pour un seul langage, développez le dossier pour ce langage et choisissez **Général**.
 
-     - ou -
+     – ou –
 
      Pour modifier l’option pour tous les langages, développez le dossier **Tous les langages** et choisissez **Général**.
 

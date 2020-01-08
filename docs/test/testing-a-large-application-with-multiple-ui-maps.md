@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests, multiple UI maps
 - coded UI tests, for large applications
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86a4ad5c44c124ee7faf9ac633f2a78685adb426
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9fa5afd01ad25d4eebdc0b29e924cb2430d9c775
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659905"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590291"
 ---
 # <a name="test-a-large-application-with-multiple-ui-maps"></a>Tester une application volumineuse avec plusieurs mappages d’interface utilisateur
 
@@ -23,7 +23,7 @@ Cette rubrique explique comment utiliser des tests codés de l'interface utilisa
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-**Prérequis**
+**Spécifications**
 
 - Visual Studio Enterprise
 

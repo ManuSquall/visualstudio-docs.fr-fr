@@ -1,5 +1,5 @@
 ---
-title: Navigateur web, Environnement, boîte de dialogue Options | Microsoft Docs
+title: Navigateur Web, Environnement, boîte de dialogue Options
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,17 +16,17 @@ helpviewer_keywords:
 - Options dialog box, Web settings
 - Internet Explorer, setting options
 ms.assetid: 586db4eb-032d-4cb5-93a6-a7c14de1ae49
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae83add4db8e45fca1b97b9c4148cea5bcba0947
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8915bef3bba477dd515b1d176971cfb9949e9899
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72621914"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596500"
 ---
 # <a name="options-dialog-box-environment--web-browser"></a>Boîte de dialogue Options : environnement \> navigateur Web
 
@@ -56,7 +56,7 @@ Définit l’éditeur utilisé pour ouvrir une page web quand vous choisissez **
 
 - **Éditeur externe** Sélectionnez cette option pour afficher le code source dans un autre éditeur. Spécifiez le chemin de l’éditeur de votre choix, par exemple Notepad.exe.
 
-## <a name="internet-explorer-options"></a>Options Internet Explorer
+## <a name="internet-explorer-options"></a>Options d'Internet Explorer
 
 Cliquez sur ce bouton pour modifier les options relatives à Internet Explorer dans la boîte de dialogue **Propriétés Internet**. Les modifications apportées dans cette boîte de dialogue affectent à la fois le navigateur web interne et les instances d’Internet Explorer lancées en dehors de l’IDE de Visual Studio (par exemple, à partir du menu Démarrer).
 

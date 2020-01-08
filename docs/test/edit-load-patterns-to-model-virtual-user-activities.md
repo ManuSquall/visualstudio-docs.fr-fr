@@ -7,15 +7,15 @@ helpviewer_keywords:
 - load tests, scenarios
 - load tests, virtual users
 ms.assetid: 0ba0363b-7f50-4bde-a919-0e3bce7bc115
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8651b3a11b9db82d4c52ff600706b51855881f02
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0836fdb085ab33b2a646d9774c94bd859b5ca5ad
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665055"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590304"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Modifier les modèles de charge en modèle d’activités des utilisateurs virtuels
 
@@ -79,11 +79,11 @@ Un modèle de charge basé sur des objectifs est semblable au modèle par étape
 
   Le tableau suivant présente un exemple de modèle basé sur les objectifs avec les paramètres de propriété suivants :
 
-|Groupe de propriétés|Property|valeur|
+|Groupe de propriétés|Les|Value|
 |-|--------------|-|
-|Compteur de performance|Category|Processeur|
+|Compteur de performance|Catégorie|Processeur|
 |Compteur de performance|Ordinateur|ContosoServer1|
-|Compteur de performance|Counter|% Temps processeur|
+|Compteur de performance|Counter|% de temps processeur|
 |Compteur de performance|Instance|_Total|
 |Plage cible pour le compteur de performance|Extrémité supérieure|90|
 |Plage cible pour le compteur de performance|Extrémité inférieure|70|

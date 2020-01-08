@@ -11,17 +11,17 @@ helpviewer_keywords:
 - associations, types
 - association lines
 ms.assetid: adccb9c8-2f8a-4086-9fa9-f70f99fb6e00
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74fdc2ce798380aace3a2bce714fd5627799b564
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 61b598505ad465ec9086102b9e16e96cb7aa8275
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72631790"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590382"
 ---
 # <a name="how-to-create-associations-between-types-in-class-designer"></a>Guide pratique pour créer des associations entre les types dans le Concepteur de classes
 
@@ -44,7 +44,7 @@ Même si vous pouvez afficher tous les champs et propriétés comme associations
 
 Sur la surface du diagramme, cliquez sur l'étiquette de la ligne d'association et modifiez-la.
 
-Vous pouvez également effectuer les étapes suivantes :
+Vous pouvez également suivre les étapes ci-dessous :
 
 1. Sélectionnez la forme qui contient la propriété indiquée comme association.
 

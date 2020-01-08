@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Edit.FindInFiles command
 - find in files command
 ms.assetid: 2fc78bfe-b339-4599-97f9-4cafd8a194d9
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 25342f86c545752a263d295550222e14c2aa7866
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 87d313c29be1d5fb4f1be1febe9b5b7cd32e7e11
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748775"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75569580"
 ---
 # <a name="find-in-files-command"></a>Rechercher dans les fichiers, commande
 Recherche des fichiers en utilisant un sous-ensemble des options disponibles sous l’onglet **Rechercher dans les fichiers**  de la fenêtre **Rechercher et remplacer**.
@@ -38,44 +38,44 @@ Requis. Texte à rechercher.
 
 ## <a name="switches"></a>Commutateurs
 /case ou /c\
-Optionnel. Il y a correspondance uniquement si les caractères majuscules et minuscules correspondent exactement à ceux spécifiés dans l’argument `findwhat`.
+Option facultative. Il y a correspondance uniquement si les caractères majuscules et minuscules correspondent exactement à ceux spécifiés dans l’argument `findwhat`.
 
 /ext: `extensions`\
-Optionnel. Spécifie les extensions des fichiers dans lesquels effectuer la recherche. Si aucune extension n’est spécifiée, l’extension précédemment spécifiée est utilisée (le cas échéant).
+Option facultative. Spécifie les extensions des fichiers dans lesquels effectuer la recherche. Si aucune extension n’est spécifiée, l’extension précédemment spécifiée est utilisée (le cas échéant).
 
 /lookin: `searchpath`\
-Optionnel. Répertoire dans lequel effectuer une recherche. Si le chemin contient des espaces, placez le chemin complet entre guillemets.
+Option facultative. Répertoire dans lequel effectuer une recherche. Si le chemin contient des espaces, placez le chemin complet entre guillemets.
 
 /names ou /n\
-Optionnel. Affiche la liste des fichiers qui contiennent des correspondances.
+Option facultative. Affiche la liste des fichiers qui contiennent des correspondances.
 
 /options ou /t\
-Optionnel. Affiche la liste des paramètres de recherche actuels et n’effectue pas de recherche.
+Option facultative. Affiche la liste des paramètres de recherche actuels et n’effectue pas de recherche.
 
 /regex ou /r\
-Optionnel. Utilise des caractères spéciaux prédéfinis dans l’argument `findwhat` comme notations représentant des modèles de texte, plutôt que des caractères littéraux. Pour obtenir la liste complète des caractères d’expressions régulières, consultez [Expressions régulières](../../ide/using-regular-expressions-in-visual-studio.md).
+Option facultative. Utilise des caractères spéciaux prédéfinis dans l’argument `findwhat` comme notations représentant des modèles de texte, plutôt que des caractères littéraux. Pour obtenir la liste complète des caractères d’expressions régulières, consultez [Expressions régulières](../../ide/using-regular-expressions-in-visual-studio.md).
 
 /reset ou /e\
-Optionnel. Rétablit les paramètres par défaut des options de recherche et n’effectue pas de recherche.
+Option facultative. Rétablit les paramètres par défaut des options de recherche et n’effectue pas de recherche.
 
 /stop\
-Optionnel. Arrête l’opération de recherche en cours, le cas échant. La recherche ignore tous les autres arguments si `/stop` est spécifié. Par exemple, pour arrêter la recherche en cours, entrez ce qui suit :
+Option facultative. Arrête l’opération de recherche en cours, le cas échant. La recherche ignore tous les autres arguments si `/stop` est spécifié. Par exemple, pour arrêter la recherche en cours, entrez ce qui suit :
 
 ```cmd
 >Edit.FindinFiles /stop
 ```
 
 /sub ou /s\
-Optionnel. Recherche dans les sous-dossiers du répertoire qui est spécifié dans l’argument /lookin:`searchpath`.
+Option facultative. Recherche dans les sous-dossiers du répertoire qui est spécifié dans l’argument /lookin:`searchpath`.
 
 /text2 ou /2\
-Optionnel. Affiche les résultats de la recherche dans la fenêtre Résultats de la recherche 2.
+Option facultative. Affiche les résultats de la recherche dans la fenêtre Résultats de la recherche 2.
 
 /wild ou /l\
-Optionnel. Utilise des caractères spéciaux prédéfinis dans l’argument `findwhat` comme notations représentant un caractère ou une séquence de caractères.
+Option facultative. Utilise des caractères spéciaux prédéfinis dans l’argument `findwhat` comme notations représentant un caractère ou une séquence de caractères.
 
 /word ou /w\
-Optionnel. Recherche uniquement les mots entiers.
+Option facultative. Recherche uniquement les mots entiers.
 
 ## <a name="example"></a>Exemple
 Cet exemple recherche le texte « btnCancel » dans tous les fichiers .cls situés dans le dossier « My Visual Studio Projects » et affiche les informations de correspondance dans la fenêtre Résultats de la recherche 2.
@@ -87,7 +87,7 @@ Cet exemple recherche le texte « btnCancel » dans tous les fichiers .cls si
 ## <a name="see-also"></a>Voir aussi
 
 - [Rechercher dans les fichiers](../../ide/find-in-files.md)
-- [Commande, fenêtre](../../ide/reference/command-window.md)
+- [Fenêtre Commande](../../ide/reference/command-window.md)
 - [Rechercher/Commande, zone](../../ide/find-command-box.md)
-- [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)
+- [Visual Studio, commandes](../../ide/reference/visual-studio-commands.md)
 - [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

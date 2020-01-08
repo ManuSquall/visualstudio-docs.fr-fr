@@ -9,19 +9,19 @@ helpviewer_keywords:
 - Print method
 - Print command
 ms.assetid: 0412d381-590a-483f-bab4-6e1cca095645
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae87afb11be71af8f0582a0b2899d67ba970186e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3056570e52893f1c21eaf10c7856b21fbbc02c61
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747824"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567838"
 ---
-# <a name="print-command"></a>Imprimer (commande)
+# <a name="print-command"></a>Imprimer, commande
 
 Évalue une expression ou affiche le texte spécifié.
 
@@ -62,7 +62,7 @@ Les deux versions de cette commande retournent la valeur actuelle de l’express
 ## <a name="see-also"></a>Voir aussi
 
 - [Évaluer l’instruction, commande](../../ide/reference/evaluate-statement-command.md)
-- [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Commande, fenêtre](../../ide/reference/command-window.md)
+- [Visual Studio, commandes](../../ide/reference/visual-studio-commands.md)
+- [Fenêtre Commande](../../ide/reference/command-window.md)
 - [Rechercher/Commande, zone](../../ide/find-command-box.md)
 - [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

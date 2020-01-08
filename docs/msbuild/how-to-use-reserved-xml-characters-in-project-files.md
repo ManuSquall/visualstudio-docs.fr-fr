@@ -1,24 +1,24 @@
 ---
-title: 'Procédure : Utiliser des caractères XML réservés dans les fichiers projet | Microsoft Docs'
+title: 'Comment : utiliser des caractères XML réservés dans les fichiers projet | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, using reserved XML characters
 - MSBuild, reserved XML characters
 ms.assetid: 1ae37275-96bf-4e6e-897b-6b048e5bbe93
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c79dfa33af5e0e80db682f272c5673856dbbcd8d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 2f60b7d2c0de74743c021feee56a3d9f3c8f3eb5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840380"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75574325"
 ---
-# <a name="how-to-use-reserved-xml-characters-in-project-files"></a>Procédure : Utiliser des caractères XML réservés dans les fichiers projet
+# <a name="how-to-use-reserved-xml-characters-in-project-files"></a>Guide pratique pour utiliser des caractères XML réservés dans les fichiers projet
 Lorsque vous créez des fichiers projet, vous devrez peut-être utiliser des caractères XML réservés, par exemple, dans les valeurs de propriétés ou dans les valeurs de paramètres de tâche. Toutefois, certains caractères réservés doivent être remplacés par une entité nommée afin que le fichier projet puisse être analysé.
 
 ## <a name="use-reserved-characters"></a>Utiliser des caractères réservés

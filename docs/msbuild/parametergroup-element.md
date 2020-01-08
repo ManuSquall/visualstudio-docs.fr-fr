@@ -11,20 +11,20 @@ helpviewer_keywords:
 - <ParameterGroup> element [MSBuild]
 - ParameterGroup element [MSBuild]
 ms.assetid: c3275e69-a427-4889-bc1d-51bff2c285fa
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d10b2e08b6e3f3c94c0a1f0cc1c24d239675c53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 8d7e77e56196d23a5563c60d5b8251c8f26a00ff
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62999775"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596734"
 ---
 # <a name="parametergroup-element"></a>Élément ParameterGroup
-Contient une liste facultative de paramètres qui seront présents sur la tâche générée par `UsingTask` `TaskFactory`. Pour plus d’informations, consultez [Élément UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).
+Contient une liste facultative de paramètres qui seront présents sur la tâche générée par une `TaskFactory``UsingTask`. Pour plus d’informations, voir [Élément UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).
 
  \<Project> \<UsingTask> \<ParameterGroup>
 
@@ -44,7 +44,7 @@ Contient une liste facultative de paramètres qui seront présents sur la tâche
 
 |Élément|Description|
 |-------------|-----------------|
-|[Paramètre](../msbuild/parameter-element.md)|Contient des informations sur un paramètre spécifique pour une tâche générée par un `UsingTask` `TaskFactory`. Le nom de l’élément est le nom du paramètre.|
+|[Paramètre](../msbuild/parameter-element.md)|Contient des informations sur un paramètre spécifique pour une tâche générée par une `TaskFactory``UsingTask`. Le nom de l’élément est le nom du paramètre.|
 
 ### <a name="parent-elements"></a>Éléments parents
 
@@ -69,6 +69,6 @@ Contient une liste facultative de paramètres qui seront présents sur la tâche
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Tâches](../msbuild/msbuild-tasks.md)
+- [Tâches MSBuild](../msbuild/msbuild-tasks.md)
 - [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)
 - [Informations de référence sur le schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)

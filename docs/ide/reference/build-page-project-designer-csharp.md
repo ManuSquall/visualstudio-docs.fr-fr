@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Build options [C#]
 - Project Designer, Build page
 ms.assetid: 77ff1bfc-d633-4634-ba29-9afdb6d7e362
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ab60524f854b3974d383cb7d8ab37470195fc85e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 619840f417c922b4019bafffca8d66c9b1c939e2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668225"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596864"
 ---
 # <a name="build-page-project-designer-c"></a>Générer, page du Concepteur de projets (C#)
 
@@ -64,7 +64,7 @@ Définit TRACE comme symbole dans tous les fichiers de code source de votre appl
 
 Spécifie le processeur devant être ciblé par le fichier de sortie. Choisissez **x86** pour tout processeur compatible Intel 32 bits ; choisissez **x64** pour tout processeur compatible Intel 64 bits ; choisissez **ARM** pour les processeurs ARM ; ou choisissez **Any CPU** pour spécifier que tout processeur est acceptable. **Any CPU** est la valeur par défaut pour les projets, car elle permet l’exécution de l’application sur la plus large gamme de matériel.
 
-Pour plus d’informations, consultez l’article [/platform (C# Compiler Options) (/platform [Options du compilateur C#])](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option).
+Pour plus d’informations, consultez [/platform (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option).
 
 **Préférer 32 bits**
 
@@ -82,7 +82,7 @@ Cette case à cocher est disponible uniquement si toutes les conditions suivante
 
 **Autoriser les blocs de code unsafe**
 
-Autorise la compilation du code utilisant le mot clé [unsafe](/dotnet/csharp/language-reference/keywords/unsafe). Pour plus d’informations, consultez l’article [/unsafe (C# Compiler Options) (/unsafe [Options du compilateur C#])](/dotnet/csharp/language-reference/compiler-options/unsafe-compiler-option).
+Autorise la compilation du code utilisant le mot clé [unsafe](/dotnet/csharp/language-reference/keywords/unsafe). Pour plus d’informations, consultez [/unsafe (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/unsafe-compiler-option).
 
 **Optimiser le code**
 
@@ -94,11 +94,11 @@ Les paramètres suivants sont utilisés pour configurer les options d’erreur e
 
 **Niveau d’avertissement**
 
-Spécifie le niveau d’affichage pour les avertissements du compilateur. Pour plus d’informations, consultez l’article [/warn (C# Compiler Options) (/warn [Options du compilateur C#])](/dotnet/csharp/language-reference/compiler-options/warn-compiler-option).
+Spécifie le niveau d’affichage pour les avertissements du compilateur. Pour plus d’informations, consultez [/warn (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/warn-compiler-option).
 
 **Supprimer les avertissements**
 
-Empêche le compilateur de générer un ou plusieurs avertissements. Séparez les numéros des avertissements par une virgule ou un point-virgule. Pour plus d’informations, consultez l’article [/nowarn (C# Compiler Options) (/nowarn [Options du compilateur C#])](/dotnet/csharp/language-reference/compiler-options/nowarn-compiler-option).
+Empêche le compilateur de générer un ou plusieurs avertissements. Séparez les numéros des avertissements par une virgule ou un point-virgule. Pour plus d’informations, consultez [/nowarn (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/nowarn-compiler-option).
 
 ## <a name="treat-warnings-as-errors"></a>Considérer les avertissements comme des erreurs
 
@@ -113,7 +113,7 @@ Les paramètres suivants sont utilisés pour spécifier quels avertissements son
 > [!TIP]
 > Si vous ne souhaitez pas que les avertissements de l’analyse du code soient traités comme des erreurs, consultez [FAQ sur l’analyse du code](../../code-quality/analyzers-faq.md#treat-warnings-as-errors).
 
-## <a name="output"></a>Sortie
+## <a name="output"></a>Output
 
 Les paramètres suivants sont utilisés pour configurer les options de sortie pour le processus de génération.
 
@@ -125,7 +125,7 @@ Grâce aux configurations de build simplifiées, le système de projet détermin
 
 **Fichier de documentation XML**
 
-Spécifie le nom d’un fichier dans lequel les commentaires de la documentation seront traités. Pour plus d’informations, consultez l’article [/doc (C# Compiler Options) (/doc [Options du compilateur C#])](/dotnet/csharp/language-reference/compiler-options/doc-compiler-option).
+Spécifie le nom d’un fichier dans lequel les commentaires de la documentation seront traités. Pour plus d’informations, consultez [/doc (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/doc-compiler-option).
 
 **Inscrire pour COM Interop**
 

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Debug.ListRegisters command
 - ListRegisters command
 ms.assetid: 19a9d789-f6c9-46b3-b1f6-4934fc33e055
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0e52f42e495c2bac5e80195d360096947210980
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e87b10a7827b5365b507abb2c72a21506e59c19e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748692"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568683"
 ---
 # <a name="list-registers-command"></a>Afficher les registres, commande
 Affiche la valeur des registres sélectionnés et vous permet de modifier la liste de registres à afficher.
@@ -35,7 +35,7 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 ## <a name="switches"></a>Commutateurs
 /Display [{`register`&#124;`registerGroup`}...]
 
-Affiche les valeurs du `register` ou `registerGroup` spécifié. Si aucun `register` ni `registerGroup` n’est spécifié, la liste par défaut de registres est affichée. Si aucun commutateur n’est spécifié, le comportement est le même. Exemple :
+Affiche les valeurs du `register` ou `registerGroup` spécifié. Si aucun `register` ni `registerGroup` n’est spécifié, la liste par défaut de registres est affichée. Si aucun commutateur n’est spécifié, le comportement est le même. Par exemple :
 
 `Debug.ListRegisters /Display eax`
 
@@ -59,7 +59,7 @@ Supprime une ou plusieurs valeurs de `register` ou `registerGroup` de la liste.
 L’alias `r` peut être utilisé à la place de `Debug.ListRegisters`.
 
 ## <a name="example"></a>Exemple
-Cet exemple utilise l’alias `Debug.ListRegisters` `r` pour afficher les valeurs du groupe de registres `Flags`.
+Cet exemple utilise l’alias `Debug.ListRegisters``r` pour afficher les valeurs du groupe de registres `Flags`.
 
 ```cmd
 r /Display Flags
@@ -67,6 +67,6 @@ r /Display Flags
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)
+- [Visual Studio, commandes](../../ide/reference/visual-studio-commands.md)
 - [Concepts de base du débogage : fenêtre Registres](../../debugger/debugging-basics-registers-window.md)
 - [Guide pratique pour utiliser la fenêtre Registres](../../debugger/how-to-use-the-registers-window.md)

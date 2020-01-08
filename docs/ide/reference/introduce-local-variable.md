@@ -3,17 +3,17 @@ title: Introduire une variable locale
 description: Générer une variable locale pour remplacer une expression existante Sélectionnez l’expression, cliquez avec le bouton droit et choisissez le menu Actions rapides et refactorisations, puis sélectionnez Introduire un élément local pour (toutes les occurrences de) « expression ».
 ms.date: 01/26/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6407810b4143d5edacecf42990ae5b6d63497be2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0fbd5ed752b28cc3f8c0dd734ed2b3ce09e80b78
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668757"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568813"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>Introduire une variable locale dans Visual Studio
 
@@ -21,7 +21,7 @@ Cette génération de code s’applique à :
 
 - C#
 
-- Visual Basic
+- Visual Basic
 
 **Quoi :** vous permet de générer immédiatement une variable locale pour remplacer une expression existante.
 
@@ -47,7 +47,7 @@ Cette génération de code s’applique à :
       - Appuyez sur **Ctrl**+ **.** pour afficher le menu **Actions rapides et refactorisations**.
    - **Souris**
       - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
-      - Cliquez sur le bouton ![Tournevis](media/screwdriver.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne avec l’expression en surbrillance.
+      - Cliquez sur l'onglet ![Tournevis](media/screwdriver.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne avec l’expression en surbrillance.
 
    ![Introduire un aperçu local](media/local-preview-cs.png)
 

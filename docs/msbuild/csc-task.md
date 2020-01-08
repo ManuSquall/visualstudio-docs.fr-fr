@@ -13,22 +13,22 @@ helpviewer_keywords:
 - Csc task [MSBuild]
 - MSBuild, Csc task
 ms.assetid: d8c19b36-f5ca-484b-afa6-8ff3b90e103a
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9df54befff79b82703cb363fea92536285c68232
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: 7443ba29a743f4936ae104d9d0bb556fae3c4e2d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70888031"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595382"
 ---
 # <a name="csc-task"></a>Csc (tâche)
 Encapsule*csc.exe* et produit des fichiers exécutables ( *.exe*), des bibliothèques de liens dynamiques ( *.dll*) ou des modules de code ( *.netmodule*). Pour plus d’informations sur *csc.exe*, consultez [Options du compilateur C#](/dotnet/csharp/language-reference/compiler-options/index).
 
-## <a name="parameters"></a>Paramètres
+## <a name="parameters"></a>Parameters
 Le tableau ci-dessous décrit les paramètres de la tâche `Csc` .
 
 | Paramètre | Description |
@@ -83,7 +83,7 @@ Le tableau ci-dessous décrit les paramètres de la tâche `Csc` .
 ## <a name="remarks"></a>Notes
 En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe `Microsoft.Build.Tasks.ManagedCompiler`, qui hérite de la classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, qui hérite elle-même de la classe <xref:Microsoft.Build.Utilities.ToolTask>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
 L’exemple suivant utilise la tâche `Csc` pour compiler un fichier exécutable à partir des fichiers sources de la collection d’éléments `Compile`.
 
 ```xml
@@ -95,4 +95,4 @@ L’exemple suivant utilise la tâche `Csc` pour compiler un fichier exécutable
 
 ## <a name="see-also"></a>Voir aussi
 - [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)
-- [Tâches](../msbuild/msbuild-tasks.md)
+- [Tâches MSBuild](../msbuild/msbuild-tasks.md)

@@ -11,17 +11,17 @@ helpviewer_keywords:
 - <ImportGroup> element [MSBuild]
 - ImportGroup element [MSBuild]
 ms.assetid: dac3fa2d-6678-4017-af35-93686f53f302
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3dd0b9fc5ef9441e867d5103bbb722a3628ffc78
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a4480442577ccb321d66ad65f94a7c86cdae62ae
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62997516"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75574004"
 ---
 # <a name="importgroup-element"></a>ImportGroup, élément
 Contient une collection d’éléments `Import` regroupés sous une condition facultative. Pour plus d’informations, consultez [Import, élément (MSBuild)](../msbuild/import-element-msbuild.md).
@@ -42,7 +42,7 @@ Contient une collection d’éléments `Import` regroupés sous une condition fa
 
 ### <a name="attributes"></a>Attributs
 
-|Attribut|Description|
+|Attribute|Description|
 |---------------|-----------------|
 |`Condition`|Attribut facultatif.<br /><br /> Condition à évaluer. Pour plus d’informations, consultez l’article [Conditions (Conditions MSBuild)](../msbuild/msbuild-conditions.md).|
 
@@ -56,7 +56,7 @@ Contient une collection d’éléments `Import` regroupés sous une condition fa
 
 | Élément | Description |
 | - | - |
-| [Projet](../msbuild/project-element-msbuild.md) | Élément racine requis d'un fichier projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
+| [Project](../msbuild/project-element-msbuild.md) | Élément racine requis d'un fichier projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
 
 ## <a name="example"></a>Exemple
  L’exemple de code suivant illustre l’élément `ImportGroup`.
@@ -73,4 +73,4 @@ Contient une collection d’éléments `Import` regroupés sous une condition fa
 
 ## <a name="see-also"></a>Voir aussi
 - [Informations de référence sur le schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)
-- [Éléments](../msbuild/msbuild-items.md)
+- [Éléments MSBuild](../msbuild/msbuild-items.md)

@@ -24,17 +24,17 @@ helpviewer_keywords:
 - Class Details window
 - Class Details window, member creation
 ms.assetid: 42af8738-3738-4ca7-82ff-edf573a68f96
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a842ccb936c755a27ab28287f9da8d6355e92fc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bfed51812b034d63f250a56548b88f09a98214fe
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647753"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590408"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Créer et configurer des membres de type dans le Concepteur de classes
 
@@ -42,12 +42,12 @@ Vous pouvez ajouter ces membres aux types dans un diagramme de classes et config
 
 |**Type**|**Membres qu’il peut contenir**|
 |--------------| - |
-|Class|méthode, propriété (pour C# et Visual Basic), champ, événement (pour C# et Visual Basic), constructeur (méthode), destructeur (méthode), constante|
-|Enum|member|
+|Classe|méthode, propriété (pour C# et Visual Basic), champ, événement (pour C# et Visual Basic), constructeur (méthode), destructeur (méthode), constante|
+|Enum|membre|
 |Interface|méthode, propriété, événement (pour C# et Visual Basic)|
-|Classe abstraite|méthode, propriété (pour C# et Visual Basic), champ, événement (pour C# et Visual Basic), constructeur (méthode), destructeur (méthode), constante|
+|Classe Abstract|méthode, propriété (pour C# et Visual Basic), champ, événement (pour C# et Visual Basic), constructeur (méthode), destructeur (méthode), constante|
 |Structure (Struct en C#)|méthode, propriété (pour C# et Visual Basic) champ, événement (pour C# et Visual Basic), constructeur (méthode), constante|
-|délégué|paramètre|
+|délégué|parameter|
 |Module (VB uniquement)|méthode, propriété, champ, événement, constructeur, constante|
 
 > [!NOTE]
@@ -186,7 +186,7 @@ Ajoutez des paramètres aux méthodes à l’aide de la fenêtre **Détails de c
 
 Les lignes de paramètres contiennent les éléments suivants :
 
-- **Nom**
+- **Name**
 
      La colonne **Nom** d’une ligne de paramètre affiche le nom du paramètre. Ce nom est également affiché dans la propriété **Nom** de la fenêtre Propriétés. Vous pouvez utiliser cette cellule pour modifier le nom d'un paramètre ayant les autorisations en lecture-écriture.
 

@@ -5,15 +5,15 @@ ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.XML.Miscellaneous
 ms.assetid: b6538cbe-badd-4313-a1fb-39e906736bbe
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 58de904e1697a820a2f4bc6f88fbff5237cabc30
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: dd468945b1ab9ac83b219b9c8c396f017065e2be
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666592"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568124"
 ---
 # <a name="options-text-editor-xml-miscellaneous"></a>Options, Éditeur de texte, XML, Divers
 
@@ -23,31 +23,31 @@ Utilisez la page d’options **Divers** pour modifier les paramètres de saisie 
 
 **Balises de fermeture**
 
-L’éditeur de texte ajoute des balises de fermeture lors de la création des éléments XML. Si une balise de début d’un élément est sélectionnée, l’éditeur insère la balise de fermeture correspondante, avec un préfixe d’espace de noms correspondant. Elle est activée par défaut.
+L’éditeur de texte ajoute des balises de fermeture lors de la création des éléments XML. Si une balise de début d’un élément est sélectionnée, l’éditeur insère la balise de fermeture correspondante, avec un préfixe d’espace de noms correspondant. Cette case à cocher est sélectionnée par défaut.
 
 **Guillemets d’attribut**
 
-Quand vous créez des attributs XML, l’éditeur insère les caractères `="` et `"`, et place le caret ( **^** ) à l’intérieur des guillemets doubles. Elle est activée par défaut.
+Quand vous créez des attributs XML, l’éditeur insère les caractères `="` et `"`, et place le caret ( **^** ) à l’intérieur des guillemets doubles. Cette case à cocher est sélectionnée par défaut.
 
 **Déclarations d’espaces de noms**
 
-L'éditeur insère automatiquement des déclarations d'espaces de noms chaque fois qu'elles sont nécessaires. Elle est activée par défaut.
+L'éditeur insère automatiquement des déclarations d'espaces de noms chaque fois qu'elles sont nécessaires. Cette case à cocher est sélectionnée par défaut.
 
 **Autre balisage (commentaires, CDATA)**
 
-Les commentaires, CDATA, DOCTYPE, les instructions de traitement et les autres éléments de balisages sont complétés automatiquement. Elle est activée par défaut.
+Les commentaires, CDATA, DOCTYPE, les instructions de traitement et les autres éléments de balisages sont complétés automatiquement. Cette case à cocher est sélectionnée par défaut.
 
 ## <a name="network"></a>Réseau
 
 **Télécharger automatiquement les DTD et les schémas**
 
-Les schémas et les DTD (définitions de type de document) sont automatiquement téléchargés à partir d'emplacements HTTP. Cette fonctionnalité utilise System.Net avec la détection automatique de serveur proxy activée. Elle est activée par défaut.
+Les schémas et les DTD (définitions de type de document) sont automatiquement téléchargés à partir d'emplacements HTTP. Cette fonctionnalité utilise System.Net avec la détection automatique de serveur proxy activée. Cette case à cocher est sélectionnée par défaut.
 
 ## <a name="outlining"></a>mode Plan
 
 **Passer en mode Plan à l’ouverture des fichiers**
 
-Active le mode plan à l'ouverture d'un fichier. Elle est activée par défaut.
+Active le mode plan à l'ouverture d'un fichier. Cette case à cocher est sélectionnée par défaut.
 
 ## <a name="caching"></a>Mise en cache
 

@@ -1,7 +1,7 @@
 ---
 title: Améliorer votre productivité pour le développement .NET
 description: Vue d’ensemble de la navigation, de l’analyse du code, des tests unitaires et d’autres fonctionnalités qui vont vous aider à écrire du code .NET plus performant plus rapidement.
-author: mikadumont
+author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.date: 11/21/2019
@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5777ef318d557b85abddf35d2fbdf37a044b0ead
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: 0aa8e19f2be78671587dd1d9bc6254306c82a78c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491643"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567500"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>Guide de productivité Visual Studio pour les développeurs C#
 
@@ -89,7 +89,7 @@ Vous pouvez utiliser un fichier EditorConfig pour codifier les conventions de co
 
 ::: moniker range=">=vs-2019"
 
-- Créez automatiquement un fichier *.editorconfig* à partir de vos paramètres de style de code dans **Outils** > **Options** > **Éditeur de texte**  > **C#** > **Style de code**.
+- Créez automatiquement un fichier *. editorconfig* en fonction de vos paramètres de style de code dans **outils** > **Options** > **C#** éditeur de **texte** > > style de **code**.
 
    ![Générer un fichier .editorconfig à partir des paramètres dans VS 2019](media/vs-2019/generate-editorconfig-file.png)
 
@@ -181,7 +181,7 @@ Utilisez IntelliCode pour Visual Studio pour obtenir des [complétions de code s
 
 - [Live Unit Testing](../test/live-unit-testing.md) exécute en continu les tests impactés par vos modifications du code et met à jour les icônes de l’éditeur inline pour vous informer de l’état de vos tests. Incluez ou excluez des tests spécifiques ou des projets de test de votre jeu de tests dynamique. (Visual Studio Enterprise Edition uniquement.)
 
-## <a name="debugging"></a>Debugging
+## <a name="debugging"></a>débogage
 
 Voici quelques-unes des fonctionnalités de débogage de Visual Studio :
 
@@ -230,7 +230,7 @@ Voici une liste de fonctionnalités de l’éditeur liées à la productivité p
 |-|-|-|
 | Rechercher un fichier dans l’Explorateur de solutions | Met en évidence le fichier actif dans **Explorateur de solutions** | **Outils** > **Options** > **Projets et solutions** > **Suivre un élément actif dans l’Explorateur de solutions** |
 | Ajouter des instructions using pour les types dans les assemblys de référence et les packages NuGet | Affiche une ampoule d’erreur avec un correctif de code pour installer un package NuGet pour un type non référencé | **Outils** > **Options** > **Éditeur de texte** > **C#**  > **Avancé** > **Suggérer des usings pour les types dans les assemblys de référence** et **Suggérer des usings pour les types dans les packages NuGet** |
-| Activer l’analyse complète de la solution | Visualisez toutes les erreurs de votre solution dans la **Liste d’erreurs** | **Outils** > **Options** > **Éditeur de texte** > **C#**  > **Avancé**   > **Activer l’analyse complète de la solution** |
+| Activer l’analyse complète de la solution | Visualisez toutes les erreurs de votre solution dans la **Liste d’erreurs** | **Outils** > **Options** > **Éditeur de texte** > **C#**  > **Avancé**  > **Activer l’analyse complète de la solution** |
 | Activer la navigation vers les sources décompilées | Permet d’activer la fonctionnalité Atteindre la définition sur les types/membres de sources externes et d’utiliser le décompilateur ILSpy pour afficher les corps de méthodes | **Outils** > **Options** > **Éditeur de texte** > **C#**  > **Avancé** > **Activer la navigation vers les sources décompilées** |
 | Mode de saisie semi-automatique/suggestion | Change le comportement de complétion dans IntelliSense. Les développeurs qui utilisaient IntelliJ ont tendance à utiliser un paramètre qui n’est pas un paramètre par défaut. | **Menu** > **Modifier** > **IntelliSense** > **Activer/Désactiver le mode de saisie semi-automatique** |
 | [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) | Affiche les informations de référence du code et l’historique des modifications dans l’éditeur. (Les indicateurs CodeLens de contrôle de code source ne sont pas disponibles dans l’édition Visual Studio Community.) | **Outils** > **Options** > **Éditeur de texte** > **Tous les langages** > **CodeLens** |
