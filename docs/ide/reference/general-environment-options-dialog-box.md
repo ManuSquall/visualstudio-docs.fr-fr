@@ -15,17 +15,17 @@ helpviewer_keywords:
 - Options dialog box, General Environment
 - General Environment Options dialog box
 - Environment Options dialog box
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36e7efa9176b2e685463330b3ca8dbd714ec4555
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 973e08ca6555f7da7873d3068e2794b8d34e3640
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660045"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75569437"
 ---
 # <a name="options-dialog-box-environment--general"></a>Boîte de dialogue Options : environnement \> général
 
@@ -78,11 +78,11 @@ Utilise l'accélération graphique matérielle si elle est disponible, au lieu d
 
 **Éléments à afficher dans le menu Fenêtre**
 
-Personnalise le nombre de fenêtres qui s’affichent dans la liste Fenêtres du menu **Fenêtre**. Entrez un nombre compris entre 1 et 24. La valeur par défaut est 10.
+Personnalise le nombre de fenêtres qui s’affichent dans la liste Fenêtres du menu **Fenêtre**. Entrez un nombre compris entre 1 et 24. La valeur par défaut est de 10.
 
 **Éléments affichés dans la liste des fichiers récents**
 
-Personnalise le nombre des projets et des fichiers les plus récemment utilisés qui s’affichent dans le menu **Fichier**. Entrez un nombre compris entre 1 et 24. La valeur par défaut est 10. Il s'agit d'un moyen facile de récupérer les projets et les fichiers récemment utilisés.
+Personnalise le nombre des projets et des fichiers les plus récemment utilisés qui s’affichent dans le menu **Fichier**. Entrez un nombre compris entre 1 et 24. La valeur par défaut est de 10. Il s'agit d'un moyen facile de récupérer les projets et les fichiers récemment utilisés.
 
 **Afficher la barre d’état**
 

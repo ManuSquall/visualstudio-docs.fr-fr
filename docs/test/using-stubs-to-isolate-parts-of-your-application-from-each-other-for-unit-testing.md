@@ -2,24 +2,24 @@
 title: Utilisation de stubs pour isoler des parties de votre application pour des tests
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
+author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 6c980ab2d920a80e49450f6ffe4a9433f490b412
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 328551a78464c7b682eea6a988c20e742f2797c9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72982850"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568546"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Utiliser des stubs pour isoler des parties de votre application les unes des autres pour des tests unitaires
 
-Les *types de stub* représentent l’une des deux technologies fournies par le framework Microsoft Fakes pour vous permettre d’isoler facilement un composant que vous testez d’autres composants appelés. Un stub est une petite partie de code qui remplace un autre composant pendant les tests. L'utilisation d'un stub présente l'avantage de retourner des résultats cohérents, ce qui rend le test plus facile à écrire. Vous pouvez également effectuer des tests même si les autres composants ne fonctionnent pas encore.
+Les *types de stub* représentent l’une des deux technologies fournies par le framework Microsoft Fakes pour vous permettre d’isoler facilement un composant que vous testez d’autres composants appelés. Un stub est un petit élément de code qui remplace un autre composant pendant le test. L'utilisation d'un stub présente l'avantage de retourner des résultats cohérents, ce qui facilite l'écriture du test. Vous pouvez également effectuer des tests même si les autres composants ne fonctionnent pas encore.
 
 Pour obtenir une vue d’ensemble et un guide de démarrage rapide de Fakes, consultez [Isoler du code testé avec Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).
 
@@ -218,7 +218,7 @@ Les stubs sont également générés pour les accesseurs Get et les méthodes se
 
 ### <a name="verify-parameter-values"></a>Vérifier les valeurs de paramètre
 
-Vous pouvez vérifier cela lorsque votre composant fait un appel à un autre composant : il passe les valeurs correctes. Vous pouvez placer une assertion dans le stub ou stocker la valeur et la vérifier dans le corps principal du test. Exemple :
+Vous pouvez vérifier cela lorsque votre composant fait un appel à un autre composant : il passe les valeurs correctes. Vous pouvez placer une assertion dans le stub ou stocker la valeur et la vérifier dans le corps principal du test. Par exemple :
 
 ```csharp
 [TestClass]
@@ -338,7 +338,7 @@ stub.ValueSet = (value) => i = value;
 
 Si vous ne fournissez pas les méthodes stub pour la méthode setter ou getter d'une propriété, Microsoft Fakes génère un stub qui stocke les valeurs, afin que la propriété stub fonctionne comme une simple variable.
 
-### <a name="events"></a>événements
+### <a name="events"></a>Events
 
 Les événements sont exposés en tant que champs délégués. Par conséquent, tout événement extrait peut être déclenché simplement en appelant le champ de stockage d'événements. Prenons l’interface suivante pour un stub :
 
@@ -390,7 +390,7 @@ Si le code devait appeler `GetValue<T>` avec une autre instanciation, le stub ap
 
 ### <a name="stubs-of-virtual-classes"></a>Stubs de classes virtuelles
 
-Dans les exemples précédents, les stubs ont été générés à partir d'interfaces. Vous pouvez également générer les stubs à partir d'une classe qui contient des membres virtuels ou abstraits. Exemple :
+Dans les exemples précédents, les stubs ont été générés à partir d'interfaces. Vous pouvez également générer les stubs à partir d'une classe qui contient des membres virtuels ou abstraits. Par exemple :
 
 ```csharp
 // Base class in application under test

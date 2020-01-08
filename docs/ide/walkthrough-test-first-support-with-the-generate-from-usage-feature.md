@@ -8,21 +8,21 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Generate From Usage
 - Test-First Development
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81ab4b1597ea9f91a1b5081e89fd4cb77e0d8c63
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9bf9a7e613a482167a01739320282f9ba8fdea26
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647159"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596890"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Procédure pas à pas : développement basé d’abord sur les tests avec la fonctionnalité Générer à partir de l’utilisation
 
-Cette rubrique montre comment utiliser la fonctionnalité [Générer à partir de l’utilisation](../ide/visual-csharp-intellisense.md#generate-from-usage), qui prend en charge le développement basé d’abord sur les tests.
+Cette rubrique montre comment utiliser la fonctionnalité [Generate From Usage](../ide/visual-csharp-intellisense.md#generate-from-usage) , qui prend en charge le développement basé d’abord sur les tests.
 
  Le*développement basé d’abord sur les tests* est une approche de conception logicielle dans laquelle vous écrivez d’abord des tests unitaires basés sur des spécifications de produits, puis vous écrivez le code source nécessaire pour que les tests réussissent. Visual Studio prend en charge le développement basé d’abord sur les tests en générant de nouveaux types et membres dans le code source lorsque vous y faites référence pour la première fois dans vos cas de test, avant de les définir.
 

@@ -2,17 +2,17 @@
 title: Insérer des commentaires dans la documentation XML
 ms.date: 01/26/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e9153677b833a89a236923a971b511548b064142
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ad29957cc31247c16ca38038ad4880ea75a85182
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668614"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595577"
 ---
 # <a name="how-to-insert-xml-comments-for-documentation-generation"></a>Guide pratique pour insérer des commentaires XML pour la génération de documentation
 
@@ -30,7 +30,7 @@ Le fichier XML généré par le compilateur peut être distribué avec votre ass
 
 1. Placez votre curseur sur l’élément que vous souhaitez documenter, par exemple, une méthode.
 
-1. Effectuez l’une des opérations suivantes :
+1. Effectuez l'une des actions suivantes :
 
    - Tapez `///` en C# ou `'''` en Visual Basic.
 

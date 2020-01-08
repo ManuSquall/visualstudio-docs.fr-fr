@@ -1,5 +1,5 @@
 ---
-title: Exécution (fenêtre)
+title: Fenêtre Exécution
 ms.date: 02/25/2019
 ms.topic: reference
 dev_langs:
@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Immediate window
 - first-chance exception notifications
 ms.assetid: d33e7937-73f3-4c69-9df0-777a8713c6f2
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa5f804c22090fa79586549db00b13d824a54690
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b21cdb9136abe1e960e5b74bbf09e7d1694519d7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662525"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75568956"
 ---
 # <a name="immediate-window"></a>Exécution (fenêtre)
 
@@ -132,7 +132,7 @@ Dans certaines configurations de paramètres, les notifications d’exceptions d
 ## <a name="see-also"></a>Voir aussi
 
 - [Naviguer dans le code avec le débogueur](../../debugger/navigating-through-code-with-the-debugger.md)
-- [Commande, fenêtre](../../ide/reference/command-window.md)
+- [Fenêtre Commande](../../ide/reference/command-window.md)
 - [Présentation du débogueur](../../debugger/debugger-feature-tour.md)
 - [Procédure pas à pas : débogage au moment de la conception](../../debugger/walkthrough-debugging-at-design-time.md)
 - [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
