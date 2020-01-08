@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Advanced
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d1d540f3a49eda22973b25a6b9a91691907efe93
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c2f4c01a627fb2cd1b581331dd086e2d783d475f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666292"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596227"
 ---
 # <a name="options-text-editor-c-advanced"></a>Options, Éditeur de texte, C#, Avancé
 
@@ -128,7 +128,7 @@ Cochez ces cases pour afficher des lignes verticales en pointillés entre accola
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Guide pratique : insérer des commentaires XML pour la génération de documentation](../../ide/reference/generate-xml-documentation-comments.md)
+- [Guide pratique pour insérer des commentaires XML pour la génération de documentation](../../ide/reference/generate-xml-documentation-comments.md)
 - [Commentaires de documentation XML (Guide de programmation C#)](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)
 - [Documenter votre code avec des commentaires XML (Guide C#)](/dotnet/csharp/codedoc)
 - [Définir les options d’éditeur spécifiques au langage](../../ide/reference/setting-language-specific-editor-options.md)

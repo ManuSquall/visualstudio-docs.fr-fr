@@ -10,17 +10,17 @@ helpviewer_keywords:
 - data [Visual Studio], extending TableAdapters
 - TableAdapters, adding functionality
 ms.assetid: 418249c8-c7f3-47ef-a94c-744cb6fe6aaf
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e92b820b04913733095645d21ad682bff40acd84
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 34a5c1601071a36ca11005503e2f443a72ca3dfe
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648492"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586638"
 ---
 # <a name="extend-the-functionality-of-a-tableadapter"></a>Étendre les fonctionnalités d’un TableAdapter
 
@@ -34,7 +34,7 @@ Les classes partielles permettent à du code pour une classe spécifique d’êt
 
 Alors que les TableAdapters sont conçus avec l' **Concepteur de DataSet**, les classes TableAdapter générées ne sont pas des classes imbriquées de <xref:System.Data.DataSet>. Les TableAdapters se trouvent dans un espace de noms basé sur le nom du jeu de données associé du TableAdapter. Par exemple, si votre application contient un dataset nommé `HRDataSet`, les TableAdapters se trouvent dans l’espace de noms `HRDataSetTableAdapters`. (La convention d’affectation de noms suit ce modèle : *DatasetName* + `TableAdapters`).
 
-L’exemple suivant suppose qu’un TableAdapter nommé `CustomersTableAdapter`is dans un projet avec `NorthwindDataSet`.
+L’exemple suivant suppose qu’un TableAdapter nommé `CustomersTableAdapter`se trouve dans un projet avec `NorthwindDataSet`.
 
 ### <a name="to-create-a-partial-class-for-a-tableadapter"></a>Pour créer une classe partielle pour un TableAdapter
 

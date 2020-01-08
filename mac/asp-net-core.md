@@ -6,12 +6,12 @@ ms.author: sayedha
 ms.date: 04/02/2019
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: d07849a362779f3fad8f7544899dc23b9d4538d6
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: d0e00929de11ff3fd820670be2bb6361cfb5fa6c
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913319"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75405005"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Bien démarrer avec ASP.NET Core
 
@@ -29,7 +29,7 @@ Ouvrez Visual Studio pour Mac. Dans l’écran de démarrage, sélectionnez **No
 
 La boîte de dialogue Nouveau projet s’affiche et vous permet de sélectionner un modèle pour créer votre application.
 
-Il existe un grand nombre de projets qui vous offrent un modèle prédéfini pour commencer à créer votre application ASP.NET Core. Ces règles sont les suivantes :
+Il existe un grand nombre de projets qui vous offrent un modèle prédéfini pour commencer à créer votre application ASP.NET Core. Il s'agit des paramètres suivants :
 
 - **.NET Core > Vide**
 - **.NET Core > API**
@@ -42,7 +42,7 @@ Sélectionnez **Application web vide ASP.NET Core** et appuyez sur **Suivant**. 
 
 ![Vue Nouveau projet vide ASP.NET Core](media/asp-net-core-2019-empty-project.png)
 
-Le modèle Vide ASP.NET Core crée une application web avec deux fichiers par défaut : **Program.cs** et **Startup.cs**, qui sont décrits ci-dessous. Elle crée également un dossier de dépendances, qui contient les dépendances du package NuGet de votre projet, comme ASP.NET Core, le framework .NET Core et les cibles MSBuild qui génèrent le projet :
+Le modèle ASP.NET Core vide crée une application Web avec deux fichiers par défaut : **Program.cs** et **Startup.cs**, qui sont expliqués ci-dessous. Elle crée également un dossier de dépendances, qui contient les dépendances du package NuGet de votre projet, comme ASP.NET Core, le framework .NET Core et les cibles MSBuild qui génèrent le projet :
 
 ![Panneau Solution affichant les dépendances](media/asp-net-core-2019-solution-dependencies.png)
 
@@ -64,15 +64,15 @@ Ouvrez et examinez le fichier **Program.cs** de votre projet. Notez que plusieur
     }
 ```
 
-Une application ASP.NET Core crée un serveur web dans sa méthode main en configurant et en lançant un hôte via une instance de [ `WebHostBuilder` ](/aspnet/core/fundamentals/hosting). Ce générateur fournit des méthodes pour permettre la configuration de l’hôte. Dans le modèle d’application, les configurations suivantes sont utilisées :
+Une application ASP.NET Core crée un serveur web dans sa méthode main en configurant et en lançant un hôte via une instance de [`WebHostBuilder`](/aspnet/core/fundamentals/hosting). Ce générateur fournit des méthodes pour permettre la configuration de l’hôte. Dans le modèle d’application, les configurations suivantes sont utilisées :
 
-* `.UseStartup<Startup>()`: Spécifie la classe de démarrage.
+* `.UseStartup<Startup>()` : spécifie la classe de démarrage.
 
 Toutefois, vous pouvez également ajouter des configurations supplémentaires, telles que :
 
-* `UseKestrel`: Spécifie que le serveur Kestrel est utilisé par l’application
-* `UseContentRoot(Directory.GetCurrentDirectory())`: Utilise le dossier racine du projet web comme racine du contenu de l’application quand l’application est démarrée à partir de ce dossier
-* `.UseIISIntegration()`: Spécifie que l’application doit fonctionner avec IIS. Pour utiliser IIS avec ASP.NET Core, `UseKestrel` et `UseIISIntegration` doivent tous deux être spécifiés.
+* `UseKestrel` : spécifie que le serveur Kestrel est utilisé par l’application
+* `UseContentRoot(Directory.GetCurrentDirectory())` : utilise le dossier racine du projet web comme racine du contenu de l’application quand l’application est démarrée à partir de ce dossier
+* `.UseIISIntegration()` : spécifie que l’application doit fonctionner avec IIS. Pour utiliser IIS avec ASP.NET Core, `UseKestrel` et `UseIISIntegration` doivent tous deux être spécifiés.
 
 ### <a name="startupcs"></a>Startup.cs
 
@@ -118,9 +118,9 @@ Vous pouvez configurer des délégués en utilisant les méthodes `Run`, `Map` e
 
 La méthode `Configure` du modèle prédéfini est conçue pour effectuer certaines opérations. Elle configure d’abord une page de gestion des exceptions à utiliser pendant le développement. Ensuite, elle envoie une réponse à la page web qui fait la demande avec un simple « Hello World ».
 
-Ce projet simple « Hello World » peut maintenant s’exécuter sans ajouter de code supplémentaire. Pour exécuter l’application et la voir dans votre navigateur, cliquez sur le bouton (triangulaire) Lecture dans la barre d’outils :
+Ce projet simple « Hello World » peut maintenant s’exécuter sans ajouter de code supplémentaire. Pour exécuter l’application, vous pouvez sélectionner le navigateur dans lequel vous souhaitez exécuter l’application à l’aide de la liste déroulante du bouton de lecture, ou simplement cliquer sur le bouton lecture (triangulaire) pour utiliser votre navigateur par défaut :
 
-![Exécuter une application](media/asp-net-core-2019-run-debug.png)
+![Exécution du navigateur](media/asp-net-web-picker.png)
 
 Visual Studio pour Mac utilise un port aléatoire pour lancer votre projet web. Pour trouver de quel port il s’agit, ouvrez la sortie de l’application, qui se trouve sous **Afficher > Panneaux**. Vous devez trouver une sortie similaire à celle-ci :
 
@@ -130,13 +130,13 @@ Une fois que le projet est en cours d’exécution, votre navigateur web par dé
 
 ![navigateur affichant le texte](media/asp-net-core-image7.png)
 
-## <a name="adding-a-controller"></a>Ajour d’un contrôleur
+## <a name="adding-a-controller"></a>Ajout d'un contrôleur
 
 Les applications ASP.NET Core utilisent le modèle de conception MVC (Modèle-Vue-Contrôleur) pour fournir une séparation logique entre les responsabilités de chaque partie de l’application. Le modèle MVC est constitué des éléments suivants :
 
-- **Modèle** : Classe qui représente les données de l’application.
-- **Vue** : Affiche l’interface utilisateur de l’application (qui est souvent constituée des données du modèle).
-- **Contrôleur** : Classe qui gère les demandes du navigateur et qui répond aux entrées et aux interactions de l’utilisateur.
+- **Modèle** : classe qui représente les données de l’application.
+- **Vue** : affiche l’interface utilisateur de l’application (qui est souvent constituée des données du modèle).
+- **Contrôleur** : classe qui gère les demandes du navigateur et qui répond aux entrées et aux interactions de l’utilisateur.
 
 Pour plus d’informations sur l’utilisation du modèle MVC, consultez le guide [Vue d’ensemble du modèle MVC d’ASP.NET Core](/aspnet/core/mvc/overview).
 

@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Domain-Specific Language, external types
 - Domain-Specific Language, relationships
 - Domain-Specific Language, domain properties
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1823fb808985d27a02dc2cac34859ea1fbca44b6
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 00ade696290e4b8d3c32fa335fc4bf07509aef1c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985155"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594680"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Comment : définir un langage spécifique à un domaine
 Pour définir un langage spécifique à un domaine (DSL), vous devez créer une solution Visual Studio à partir d’un modèle. Le composant principal de la solution est le diagramme de définition DSL, qui est stocké dans DslDefinition.dsl. La définition DSL définit les classes et les formes de la solution DSL. Après avoir modifié et ajouté à ces éléments, vous pouvez ajouter du code programme pour personnaliser la solution DSL plus en détail.
@@ -90,7 +90,7 @@ Pour créer un langage spécifique à un domaine, vous devez créer une nouvelle
 
    Cette solution définit un langage spécifique à un domaine. Pour plus d’informations, consultez [vue d’ensemble de l’interface utilisateur de outils Domain-specific language](../modeling/overview-of-the-domain-specific-language-tools-user-interface.md).
 
-### <a name="test-the-solution"></a>Tester la solution
+### <a name="test-the-solution"></a>test de la solution
  Le modèle de solution fournit une solution DSL opérationnelle, que vous pouvez modifier ou utiliser telle quelle.
 
  Pour tester la solution, appuyez sur F5 ou Ctrl+F5. Une nouvelle instance de Visual Studio s’ouvre en mode expérimental.
@@ -190,7 +190,7 @@ Pour créer un langage spécifique à un domaine, vous devez créer une nouvelle
 
  Cliquez sur **Propriétés de domaine** dans la classe, appuyez sur la touche entrée, puis tapez le nom d’une propriété. Le type par défaut d'une propriété de domaine est String. Si vous souhaitez modifier le type, sélectionnez la propriété de domaine et définissez le **type** dans la fenêtre **Propriétés** . Si le type que vous souhaitez ne figure pas dans la liste déroulante, consultez [Ajout de types de propriété](#addTypes).
 
- **Définissez une propriété de nom d’élément.** Sélectionnez une propriété de domaine qui peut être utilisée pour identifier des éléments dans l’Explorateur de langage. Par exemple, dans la classe de domaine Morceau, vous pourriez sélectionner la propriété de domaine Titre. Dans la fenêtre **Propriétés** , définissez le **nom d’élément** sur `true`.
+ **Définissez une propriété de nom d’élément.** Sélectionnez une propriété de domaine qui peut servir à identifier des éléments dans l'explorateur de langage. Par exemple, dans la classe de domaine Morceau, vous pourriez sélectionner la propriété de domaine Titre. Dans la fenêtre **Propriétés** , définissez le **nom d’élément** sur `true`.
 
 ### <a name="create-derived-domain-classes"></a>Créer des classes de domaine dérivées
  Si vous souhaitez qu'une classe de domaine ait des variantes qui héritent de ses propriétés et relations, créez des classes qui en dérivent. Par exemple, Album peut avoir des classes dérivées WMA et MP3.
@@ -344,7 +344,7 @@ Pour créer un langage spécifique à un domaine, vous devez créer une nouvelle
 
  **Ajustez les multiplicités de chaque rôle**, si nécessaire. Si vous souhaitez que chaque Personne ait au plus un Responsable, affectez la valeur 0..1 à la multiplicité qui apparaît sous l'étiquette Responsable sur le diagramme.
 
- **Ajoutez des propriétés de domaine à la relation.** Dans la figure, la relation artiste-album a une propriété Role.
+ **Ajoutez des propriétés de domaine à la relation.** Sur la figure, la relation Artist-Album a une propriété de rôle.
 
  **Définissez la propriété autoriser les doublons de la relation,** si plusieurs liens de la même classe peuvent exister entre la même paire d’éléments de modèle. Par exemple, vous pourriez autoriser un Enseignant à enseigner plusieurs Sujets au même Étudiant.
 
@@ -396,7 +396,7 @@ Pour créer un langage spécifique à un domaine, vous devez créer une nouvelle
 
 5. **Créer des connexions** entre les formes. Cliquez sur l'outil de connecteur, cliquez sur une forme, puis sur une autre forme.
 
-6. **Vérifiez que vous ne pouvez pas créer de connexions entre des classes inappropriées.** Par exemple, si votre relation est entre des albums et des artistes, vérifiez que vous ne pouvez pas lier des artistes à des artistes.
+6. **Vérifiez que vous ne pouvez pas créer de connexions entre des classes inappropriées.** Par exemple, si votre relation est entre Albums et Artistes, vérifiez que vous ne pouvez pas lier Artistes à Artistes.
 
 7. **Vérifiez que les multiplicités sont correctes. Par exemple, vérifiez que vous ne pouvez pas connecter une personne à plusieurs responsables.**
 
@@ -606,10 +606,10 @@ Pour créer un langage spécifique à un domaine, vous devez créer une nouvelle
 
  Voir aussi [Comment : modifier l’espace de noms d’un langage spécifique à un domaine](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).
 
-## <a name="trouble"></a>Dépannage
+## <a name="trouble"></a> Dépannage
  Le tableau suivant mentionne certains des problèmes les plus courants qui peuvent être rencontrés lors de la conception d'une solution DSL, avec quelques suggestions de solution. D’autres conseils sont disponibles sur le [Forum extensibilité des outils de visualisation](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=dslvsarchx).
 
-| Problème | Suggestion |
+| Problem (Problème) | Suggestion |
 |-|-|
 | Les modifications que j'ai apportées dans le fichier de définition DSL n'ont aucun effet. | Cliquez sur **transformer tous les modèles** dans la barre d’outils ci-dessus Explorateur de solutions, puis régénérez la solution. |
 | Les formes indiquent le nom d'un décorateur au lieu de la valeur de propriété. | Configurez le mappage de décorateur. Sur le diagramme de définition DSL, cliquez sur le mappage d'élément de diagramme, c'est-à-dire la ligne grise entre la classe de domaine et la classe de forme.<br /><br /> Ouvrez la fenêtre **Détails DSL** . Si vous ne le voyez pas, dans le menu Affichage, pointez sur **autres fenêtres**, puis cliquez sur **Détails DSL**.<br /><br /> Cliquez sur l’onglet **mappages décoratifs** . Sélectionnez le nom de l’élément décoratif. Vérifiez que la case correspondante est cochée. Sous **propriété d’affichage**, sélectionnez le nom d’une propriété de domaine.<br /><br /> Pour plus d’informations, consultez [formes sur le diagramme](#shapes). |

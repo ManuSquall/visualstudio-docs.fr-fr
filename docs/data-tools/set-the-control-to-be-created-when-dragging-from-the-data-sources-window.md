@@ -8,17 +8,17 @@ helpviewer_keywords:
 - data [Visual Studio], displaying on Windows Forms
 - data [Visual Studio], Data Sources window
 ms.assetid: 20597ff8-0c98-43ec-8fb1-05376804ba48
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b5c57b73656f75ae9d99211ba28e38935d3164cb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5193f3e3a0a1f4a06cc4830036ecf63806a1dbee
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641041"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586183"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Définir le contrôle à créer lors d’une opération de glisser-déplacer à partir de la fenêtre Sources de données
 
@@ -37,7 +37,7 @@ Dans ce contexte, le terme *objet* fait référence à un objet métier personna
 2. Dans la fenêtre **sources de données** , sélectionnez l’élément qui représente la table de données ou l’objet que vous souhaitez définir.
 
    > [!TIP]
-   > Si la fenêtre **sources de données** n’est pas ouverte, vous pouvez l’ouvrir en sélectionnant **Afficher**  >  d’autres**sources de données** **Windows**  > .
+   > Si la fenêtre **sources de données** n’est pas ouverte, vous pouvez l’ouvrir en sélectionnant **Afficher** > d’autres **sources de données** **Windows** > .
 
 3. Cliquez sur le menu déroulant de l’élément, puis cliquez sur l’un des éléments suivants dans le menu :
 

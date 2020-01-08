@@ -3,20 +3,20 @@ title: Déplacer un type vers un fichier correspondant (refactorisation)
 description: Déplacez un type vers un fichier distinct portant le même nom. Cliquez avec le bouton droit sur le type, sélectionnez Actions rapides et refactorisations, puis sélectionnez Déplacer le type vers <TypeName>.
 ms.date: 01/26/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: ba822981ade5ebdc191732e0a32b02a9a4005fb4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ba082e90c2447d1da7510ce16f888f67a52b5ac0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666488"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585269"
 ---
 # <a name="move-a-type-to-a-matching-file-refactoring"></a>Déplacer un type vers un fichier correspondant (refactorisation)
 
@@ -24,7 +24,7 @@ Cette refactorisation s’applique à :
 
 - C#
 
-- Visual Basic
+- Visual Basic
 
 **Quoi :** vous permet de déplacer le type sélectionné vers un fichier distinct portant le même nom.
 
@@ -34,7 +34,7 @@ Cette refactorisation s’applique à :
 
 ## <a name="how-to"></a>Procédure
 
-1. Placez le curseur dans le nom du type dans lequel il est défini. Exemple :
+1. Placez le curseur dans le nom du type dans lequel il est défini. Par exemple :
 
    ```csharp
    class Person

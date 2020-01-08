@@ -6,21 +6,21 @@ f1_keywords:
 - TypeBrowser.UI
 - ActivityTypeResolver.UI
 ms.assetid: 864b60b6-a070-4e5c-aa5b-a25341b57ea6
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5eac3c2a45f1e220415f7512e601f4bf034c4dd7
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: a526bc9504f4f63a7a135978ade02654bbe63ffd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189800"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597111"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Rechercher et sélectionner un type .NET, boîte de dialogue
 
-Dans la fenêtre **Propriétés** , les boîtes de dialogue ou les concepteurs tels que le concepteur de variables, lorsque vous sélectionnez **Rechercher des types** dans une liste de types de données, est la boîte de dialogue **Parcourir et sélectionner un type .net** (désignée sous la forme abrégée « type »). Browser "). Cette boîte de dialogue vous permet de choisir un type dans une arborescence d'assemblys et de projets.
+Dans la fenêtre **Propriétés** , les boîtes de dialogue ou les concepteurs tels que le concepteur de variables, lorsque vous sélectionnez **Rechercher des types** dans une liste de types de données, est la boîte de dialogue **Parcourir et sélectionner un type .net** (désignée sous la forme abrégée « Explorateur de types »). Cette boîte de dialogue vous permet de choisir un type dans une arborescence d'assemblys et de projets.
 
 Elle est employée dans plusieurs scénarios utilisateur, notamment les suivants :
 
@@ -39,7 +39,7 @@ Elle est employée dans plusieurs scénarios utilisateur, notamment les suivants
 
 1. Dans la zone **nom de type** , entrez le nom du type que vous souhaitez utiliser.
 
-2. Effectuez l’une des opérations suivantes :
+2. Effectuez l'une des actions suivantes :
 
     - Une fois que le nom du type que vous souhaitez utiliser s’affiche dans l’arborescence, dans la zone **nom de type** , double-cliquez sur le type pour le sélectionner.
 
@@ -63,7 +63,7 @@ Les types dans l'Explorateur de types peuvent être filtrés par développeurs d
 
 La liste des types dans la zone **nom de type** est plus petite lorsque vous tapez plus de caractères pour rechercher une correspondance. Seuls les types dont le nom fullyqualified commence par la chaîne que vous avez tapée ou des types dont le nom Short commence par la chaîne que vous avez tapée s’affichent dans la liste filtrée.
 
-Exemple :
+Par exemple :
 
 1. L' **opération** de frappe correspond à <xref:System.OperationCanceledException> mais pas <xref:System.InvalidOperationException>. Pour trouver <xref:System.InvalidOperationException>, commencez par taper System.I ou Invalid.
 

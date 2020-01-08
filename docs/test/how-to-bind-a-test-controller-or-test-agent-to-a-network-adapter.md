@@ -8,15 +8,15 @@ helpviewer_keywords:
 - agents, network adapter
 - controllers, configuring
 ms.assetid: 7eb9290a-f9f6-4e41-9caa-796fcfaf0610
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b0dc70169deb8d09fed45bcb921c783765e87c0e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6383d7a16839ba8934bb7f91664379e99da17a36
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72643781"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594784"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Guide pratique pour lier un contrôleur de test ou un agent de test à une carte réseau
 
@@ -49,7 +49,7 @@ Si un ordinateur, sur lequel le contrôleur de test ou l’agent de test est ins
 
 2. Dans le volet de résultats, sous la colonne **Nom**, cliquez avec le bouton droit sur le service **Visual Studio Test Controller**, puis choisissez **Arrêter**.
 
-     ou
+     \- ou -
 
      Ouvrez une invite de commandes élevée et exécutez la commande suivante à une commande :
 
@@ -95,7 +95,7 @@ Si un ordinateur, sur lequel le contrôleur de test ou l’agent de test est ins
 
 2. Dans le volet de résultats, sous la colonne **Nom**, cliquez avec le bouton droit sur le service **Visual Studio Test Agent**, puis choisissez **Arrêter**.
 
-     ou
+     \- ou -
 
      Ouvrez une invite de commandes élevée et exécutez la commande suivante à une commande :
 

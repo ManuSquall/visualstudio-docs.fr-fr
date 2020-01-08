@@ -14,17 +14,17 @@ helpviewer_keywords:
 - data [Visual Studio], retrieving
 - data [Visual Studio], datasets
 ms.assetid: 55f3bfbe-db78-4486-add3-c62f49e6b9a0
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: fcecafaa36aabf3249bacf0788c2d19f945ad1b1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a79f7b781944bb93a60794e748eefb9375723384
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648472"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586625"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Remplir des datasets à l’aide de TableAdapters
 
@@ -52,18 +52,18 @@ Les TableAdapters sont des composants générés par le concepteur qui se connec
 
 ![Flux de données dans une application cliente](../data-tools/media/clientdatadiagram.gif)
 
-Alors que les TableAdapters sont conçus avec l' **Concepteur de DataSet**, les classes TableAdapter ne sont pas générées en tant que classes imbriquées de <xref:System.Data.DataSet>. Ils se trouvent dans des espaces de noms distincts qui sont spécifiques à chaque jeu de données. Par exemple, si vous avez un dataset nommé `NorthwindDataSet`, les TableAdapters associés à <xref:System.Data.DataTable>s dans le `NorthwindDataSet` se trouvent dans l’espace de noms `NorthwindDataSetTableAdapters`. Pour accéder à un TableAdapter particulier par programme, vous devez déclarer une nouvelle instance du TableAdapter. Exemple :
+Alors que les TableAdapters sont conçus avec l' **Concepteur de DataSet**, les classes TableAdapter ne sont pas générées en tant que classes imbriquées de <xref:System.Data.DataSet>. Ils se trouvent dans des espaces de noms distincts qui sont spécifiques à chaque jeu de données. Par exemple, si vous avez un dataset nommé `NorthwindDataSet`, les TableAdapters associés à <xref:System.Data.DataTable>s dans le `NorthwindDataSet` se trouvent dans l’espace de noms `NorthwindDataSetTableAdapters`. Pour accéder à un TableAdapter particulier par programme, vous devez déclarer une nouvelle instance du TableAdapter. Par exemple :
 
 [!code-csharp[VbRaddataTableAdapters#7](../data-tools/codesnippet/CSharp/fill-datasets-by-using-tableadapters_1.cs)]
 [!code-vb[VbRaddataTableAdapters#7](../data-tools/codesnippet/VisualBasic/fill-datasets-by-using-tableadapters_1.vb)]
 
 ## <a name="associated-datatable-schema"></a>Schéma DataTable associé
 
-Lorsque vous créez un TableAdapter, vous utilisez la requête ou la procédure stockée initiale pour définir le schéma de la <xref:System.Data.DataTable> associée du TableAdapter. Vous exécutez cette requête ou procédure stockée initiale en appelant la méthode `Fill` du TableAdapter (qui remplit le <xref:System.Data.DataTable> associé du TableAdapter). Toutes les modifications apportées à la requête principale du TableAdapter sont reflétées dans le schéma de la table de données associée. Par exemple, la suppression d’une colonne de la requête principale supprime également la colonne de la table de données associée. Si des requêtes supplémentaires sur le TableAdapter utilisent des instructions SQL qui retournent des colonnes qui ne sont pas dans la requête principale, le concepteur tente de synchroniser les modifications de colonne entre la requête principale et les requêtes supplémentaires.
+Lorsque vous créez un TableAdapter, vous utilisez la requête ou la procédure stockée initiale pour définir le schéma de la <xref:System.Data.DataTable>associée du TableAdapter. Vous exécutez cette requête ou procédure stockée initiale en appelant la méthode `Fill` du TableAdapter (qui remplit le <xref:System.Data.DataTable>associé du TableAdapter). Toutes les modifications apportées à la requête principale du TableAdapter sont reflétées dans le schéma de la table de données associée. Par exemple, la suppression d’une colonne de la requête principale supprime également la colonne de la table de données associée. Si des requêtes supplémentaires sur le TableAdapter utilisent des instructions SQL qui retournent des colonnes qui ne sont pas dans la requête principale, le concepteur tente de synchroniser les modifications de colonne entre la requête principale et les requêtes supplémentaires.
 
 ## <a name="tableadapter-update-commands"></a>Commandes de mise à jour de TableAdapter
 
-La fonctionnalité de mise à jour d’un TableAdapter dépend de la quantité d’informations disponibles dans la requête principale de l' **Assistant TableAdapter**. Par exemple, les TableAdapters configurés pour récupérer des valeurs à partir de plusieurs tables (à l’aide d’une `JOIN`), de valeurs scalaires, de vues ou de résultats de fonctions d’agrégation ne sont pas créés initialement avec la possibilité d’envoyer des mises à jour à la base de données sous-jacente. Toutefois, vous pouvez configurer manuellement les commandes `INSERT`, `UPDATE` et `DELETE` dans la fenêtre **Propriétés** .
+La fonctionnalité de mise à jour d’un TableAdapter dépend de la quantité d’informations disponibles dans la requête principale de l' **Assistant TableAdapter**. Par exemple, les TableAdapters configurés pour récupérer des valeurs à partir de plusieurs tables (à l’aide d’une `JOIN`), de valeurs scalaires, de vues ou de résultats de fonctions d’agrégation ne sont pas créés initialement avec la possibilité d’envoyer des mises à jour à la base de données sous-jacente. Toutefois, vous pouvez configurer manuellement les commandes `INSERT`, `UPDATE`et `DELETE` dans la fenêtre **Propriétés** .
 
 ## <a name="tableadapter-queries"></a>requêtes TableAdapter
 
@@ -89,7 +89,7 @@ La classe TableAdapter n’est pas un type .NET. Cela signifie que vous ne pouve
 
 Voici les méthodes et propriétés couramment utilisées des TableAdapters :
 
-|Membre|Description|
+|Member|Description|
 |------------|-----------------|
 |`TableAdapter.Fill`|Remplit la table de données associée du TableAdapter avec les résultats de la commande `SELECT` du TableAdapter.|
 |`TableAdapter.Update`|Renvoie les modifications à la base de données et retourne un entier qui représente le nombre de lignes affectées par la mise à jour. Pour plus d’informations, consultez [mettre à jour des données à l’aide d’un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md).|
@@ -99,16 +99,16 @@ Voici les méthodes et propriétés couramment utilisées des TableAdapters :
 
 ## <a name="tableadapter-update-method"></a>Méthode de mise à jour de TableAdapter
 
-Les TableAdapters utilisent des commandes de données pour lire et écrire à partir de la base de données. Utilisez la requête de `Fill` initiale du TableAdapter comme base pour créer le schéma de la table de données associée, ainsi que les commandes `InsertCommand`, `UpdateCommand` et `DeleteCommand` associées à la méthode `TableAdapter.Update`. L’appel de la méthode `Update` d’un TableAdapter exécute les instructions qui ont été créées lors de la configuration initiale du TableAdapter, pas l’une des requêtes supplémentaires que vous avez ajoutées à l’aide de l' **Assistant Configuration de requêtes TableAdapter**.
+Les TableAdapters utilisent des commandes de données pour lire et écrire à partir de la base de données. Utilisez la requête de `Fill` initiale du TableAdapter comme base pour créer le schéma de la table de données associée, ainsi que les commandes `InsertCommand`, `UpdateCommand`et `DeleteCommand` associées à la méthode `TableAdapter.Update`. L’appel de la méthode `Update` d’un TableAdapter exécute les instructions qui ont été créées lors de la configuration initiale du TableAdapter, pas l’une des requêtes supplémentaires que vous avez ajoutées à l’aide de l' **Assistant Configuration de requêtes TableAdapter**.
 
-Quand vous utilisez un TableAdapter, il effectue les mêmes opérations avec les commandes que vous exécutez généralement. Par exemple, lorsque vous appelez la méthode `Fill` de l’adaptateur, l’adaptateur exécute la commande de données dans sa propriété `SelectCommand` et utilise un lecteur de données (par exemple, <xref:System.Data.SqlClient.SqlDataReader>) pour charger le jeu de résultats dans la table de données. De même, lorsque vous appelez la méthode `Update` de l’adaptateur, il exécute la commande appropriée (dans les propriétés `UpdateCommand`, `InsertCommand` et `DeleteCommand`) pour chaque enregistrement modifié dans la table de données.
+Quand vous utilisez un TableAdapter, il effectue les mêmes opérations avec les commandes que vous exécutez généralement. Par exemple, lorsque vous appelez la méthode `Fill` de l’adaptateur, l’adaptateur exécute la commande de données dans sa propriété `SelectCommand` et utilise un lecteur de données (par exemple, <xref:System.Data.SqlClient.SqlDataReader>) pour charger le jeu de résultats dans la table de données. De même, lorsque vous appelez la méthode `Update` de l’adaptateur, il exécute la commande appropriée (dans les propriétés `UpdateCommand`, `InsertCommand`et `DeleteCommand`) pour chaque enregistrement modifié dans la table de données.
 
 > [!NOTE]
-> S’il y a suffisamment d’informations dans la requête principale, les commandes `InsertCommand`, `UpdateCommand` et `DeleteCommand` sont créées par défaut lors de la génération du TableAdapter. Si la requête principale du TableAdapter est plus qu’une seule table `SELECT` instruction, il est possible que le concepteur ne soit pas en mesure de générer `InsertCommand`, `UpdateCommand` et `DeleteCommand`. Si ces commandes ne sont pas générées, vous risquez de recevoir une erreur lors de l’exécution de la méthode `TableAdapter.Update`.
+> S’il y a suffisamment d’informations dans la requête principale, les commandes `InsertCommand`, `UpdateCommand`et `DeleteCommand` sont créées par défaut lors de la génération du TableAdapter. Si la requête principale du TableAdapter est plus qu’une seule table `SELECT` instruction, il est possible que le concepteur ne soit pas en mesure de générer `InsertCommand`, `UpdateCommand`et `DeleteCommand`. Si ces commandes ne sont pas générées, vous risquez de recevoir une erreur lors de l’exécution de la méthode `TableAdapter.Update`.
 
 ## <a name="tableadapter-generatedbdirectmethods"></a>GenerateDbDirectMethods de TableAdapter
 
-Outre `InsertCommand`, `UpdateCommand` et `DeleteCommand`, les TableAdapters sont créés avec des méthodes que vous pouvez exécuter directement sur la base de données. Vous pouvez appeler ces méthodes (`TableAdapter.Insert`, `TableAdapter.Update` et `TableAdapter.Delete`) directement pour manipuler les données dans la base de données. Cela signifie que vous pouvez appeler ces méthodes individuelles à partir de votre code au lieu d’appeler `TableAdapter.Update` pour gérer les insertions, les mises à jour et les suppressions en attente pour la table de données associée.
+Outre `InsertCommand`, `UpdateCommand`et `DeleteCommand`, les TableAdapters sont créés avec des méthodes que vous pouvez exécuter directement sur la base de données. Vous pouvez appeler ces méthodes (`TableAdapter.Insert`, `TableAdapter.Update`et `TableAdapter.Delete`) directement pour manipuler les données dans la base de données. Cela signifie que vous pouvez appeler ces méthodes individuelles à partir de votre code au lieu d’appeler `TableAdapter.Update` pour gérer les insertions, les mises à jour et les suppressions en attente pour la table de données associée.
 
 Si vous ne souhaitez pas créer ces méthodes directes, définissez la propriété **GenerateDBDirectMethods** du TableAdapter sur `false` (dans la fenêtre **Propriétés** ). Les requêtes supplémentaires ajoutées au TableAdapter sont des requêtes autonomes, elles ne génèrent pas ces méthodes.
 
@@ -126,7 +126,7 @@ La classe TableAdapterManager n’est pas un type .NET. Par conséquent, vous ne
 
 Voici les méthodes et les propriétés fréquemment utilisées de la classe `TableAdapterManager` :
 
-|Membre|Description|
+|Member|Description|
 |------------|-----------------|
 |Méthode `UpdateAll`|Enregistre toutes les données de toutes les tables de données.|
 |Propriété`BackUpDataSetBeforeUpdate`|Détermine si une copie de sauvegarde du DataSet doit être créée avant l’exécution de la méthode `TableAdapterManager.UpdateAll`. Expression.|

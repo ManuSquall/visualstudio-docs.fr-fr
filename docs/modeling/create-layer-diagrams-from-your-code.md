@@ -7,17 +7,17 @@ helpviewer_keywords:
 - dependency diagrams
 - diagrams - modeling, layer
 - constraints, architectural
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d956115da6b129263ee236109e278ac19db63a62
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 51e33d5f9b20230b056c017c9067bb4b2acafce6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747623"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597189"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Créer des diagrammes de dépendance à partir de votre code
 
@@ -51,7 +51,7 @@ Avant de créer un diagramme de dépendances, assurez-vous que votre solution po
 
 4. Dans **Ajouter au projet de modélisation**, recherchez et sélectionnez un projet de modélisation existant dans votre solution.
 
-     ou
+     \- ou -
 
      Choisissez **créer un nouveau projet de modélisation** pour ajouter un nouveau projet de modélisation à la solution.
 
@@ -70,7 +70,7 @@ Avant de créer un diagramme de dépendances, assurez-vous que votre solution po
 
 4. Créer un nouveau diagramme de dépendance pour la solution à l’aide du menu **architecture**
 
-5. Sélectionnez tous les nœuds sur la carte de code (utilisez _Ctrl_  + _A_ou utilisez la sélection de la bande caoutchoutée en appuyant sur la touche _MAJ_ avant de cliquer, faire glisser et relâcher.
+5. Sélectionnez tous les nœuds sur la carte de code (utilisez _Ctrl_ + _A_ou utilisez la sélection de la bande caoutchoutée en appuyant sur la touche _MAJ_ avant de cliquer, faire glisser et relâcher.
 
 6. Glisser-déplacer, ou copier et coller, les éléments sélectionnés dans le nouveau diagramme de validation des dépendances.
 
@@ -87,7 +87,7 @@ Avant de créer un diagramme de dépendances, assurez-vous que votre solution po
 
 |**Pour**|**Procédez comme suit**|
 |-|-|
-|Créer une couche pour un artefact unique|<ol><li>Faites glisser l’élément sur le diagramme de dépendance à partir de ces sources :<br /><br /> <ul><li>**Explorateur de solutions**<br /><br />         Par exemple, vous pouvez faire glisser des fichiers ou des projets.</li><li>Cartes de code<br /><br />         Consultez [mapper les dépendances entre vos solutions](../modeling/map-dependencies-across-your-solutions.md) et [utiliser des cartes de code pour déboguer vos applications](../modeling/use-code-maps-to-debug-your-applications.md).</li><li>Explorateur d' **objets** ou de **affichage de classes**</li></ul><br />     Une couche s’affiche sur le diagramme et est liée à l’artefact.</li><li>Renommez la couche pour refléter les responsabilités du code ou des artefacts associés.</li></ol> **Important :**  Le fait de faire glisser des fichiers binaires vers le diagramme de dépendance n’ajoute pas automatiquement leurs références au projet de modélisation. Vous devez ajouter manuellement au projet de modélisation les fichiers binaires que vous voulez valider. **Pour ajouter des fichiers binaires au projet de modélisation** <ol><li>Dans **Explorateur de solutions**, ouvrez le menu contextuel du projet de modélisation, puis choisissez **Ajouter un élément existant**.</li><li>Dans la boîte de dialogue **Ajouter un élément existant** , accédez aux fichiers binaires, sélectionnez-les, puis choisissez **OK**.     Les fichiers binaires s'affichent dans le projet de modélisation.</li><li>Dans **Explorateur de solutions**, choisissez un fichier binaire que vous avez ajouté, puis appuyez sur **F4** pour ouvrir la fenêtre **Propriétés** .</li><li>Sur chaque fichier binaire, définissez la propriété **action de génération** sur **valider**.</li></ol>|
+|Créer une couche pour un artefact unique|<ol><li>Faites glisser l’élément sur le diagramme de dépendance à partir de ces sources :<br /><br /> <ul><li>**Explorateur de solutions**<br /><br />         Par exemple, vous pouvez faire glisser des fichiers ou des projets.</li><li>Cartes du code<br /><br />         Consultez [mapper les dépendances entre vos solutions](../modeling/map-dependencies-across-your-solutions.md) et [utiliser des cartes de code pour déboguer vos applications](../modeling/use-code-maps-to-debug-your-applications.md).</li><li>Explorateur d' **objets** ou de **affichage de classes**</li></ul><br />     Une couche s’affiche sur le diagramme et est liée à l’artefact.</li><li>Renommez la couche pour refléter les responsabilités du code ou des artefacts associés.</li></ol> **Important :**  Le fait de faire glisser des fichiers binaires vers le diagramme de dépendance n’ajoute pas automatiquement leurs références au projet de modélisation. Vous devez ajouter manuellement au projet de modélisation les fichiers binaires que vous voulez valider. **Pour ajouter des fichiers binaires au projet de modélisation** <ol><li>Dans **Explorateur de solutions**, ouvrez le menu contextuel du projet de modélisation, puis choisissez **Ajouter un élément existant**.</li><li>Dans la boîte de dialogue **Ajouter un élément existant** , accédez aux fichiers binaires, sélectionnez-les, puis choisissez **OK**.     Les fichiers binaires s'affichent dans le projet de modélisation.</li><li>Dans **Explorateur de solutions**, choisissez un fichier binaire que vous avez ajouté, puis appuyez sur **F4** pour ouvrir la fenêtre **Propriétés** .</li><li>Sur chaque fichier binaire, définissez la propriété **action de génération** sur **valider**.</li></ol>|
 |Créer une couche unique pour tous les artefacts sélectionnés|Faites glisser tous les artefacts vers le diagramme de dépendances en même temps.<br /><br /> Une couche qui est liée à tous les artefacts s’affiche sur le diagramme.|
 |Créer une couche pour chaque artefact sélectionné|Maintenez la touche **MAJ** enfoncée tout en faisant glisser en même temps tous les artefacts vers le diagramme de dépendance. **Remarque :**  Si vous utilisez la touche **MAJ** pour sélectionner une plage d’éléments, relâchez la touche après avoir sélectionné les artefacts. Appuyez de nouveau sur celle-ci et maintenez-la enfoncée lorsque vous faites glisser les artefacts vers le diagramme. <br /><br /> Une couche s’affiche sur le diagramme pour chaque artefact, auquel elle est liée.|
 |Ajouter un artefact à une couche|Faites glisser l'artefact vers la couche.|

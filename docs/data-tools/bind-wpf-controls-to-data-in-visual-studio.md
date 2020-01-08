@@ -11,17 +11,17 @@ helpviewer_keywords:
 - WPF Designer, data binding
 - data binding, WPF
 ms.assetid: e05a1e0c-5082-479d-bbc9-d395b0bc6580
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ee858c7c17798f327d323f632d4cb9e8a77b6712
-ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
+ms.openlocfilehash: 5c9136b5047f835ecbf56df71bb226b5f56a6e19
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72924525"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586950"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Lier des contrôles WPF à des données dans Visual Studio
 
@@ -33,7 +33,7 @@ Pour obtenir des informations générales sur la création de contrôles liés a
 
 Le tableau suivant liste les tâches qui peuvent être accomplies en faisant glisser des éléments de la fenêtre **Sources de données** vers le [!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)].
 
-|Tâche|Plus d'informations|
+|Tâche|En savoir plus|
 |----------| - |
 |Créer des contrôles liés aux données.<br /><br /> Lier des contrôles existants à des données.|[Lier des contrôles WPF à un dataset](../data-tools/bind-wpf-controls-to-a-dataset.md)|
 |Créer des contrôles qui affichent les données connexes d'une relation parent-enfant : lorsque l'utilisateur sélectionne un enregistrement de données parentes dans un contrôle, un autre contrôle affiche les données enfants connexes pour l'enregistrement sélectionné.|[Afficher des données associées dans des applications WPF](../data-tools/display-related-data-in-wpf-applications.md)|
@@ -57,7 +57,7 @@ Le tableau suivant répertorie les [!INCLUDE[TLA#tla_titlexaml](../data-tools/in
 | Service | Oui | Non |
 | Objet | Oui | Non |
 
-### <a name="datasets"></a>Groupes de données
+### <a name="datasets"></a>Datasets
 
 Lorsque vous faites glisser une table ou une colonne de la fenêtre **sources de données** vers le concepteur, Visual Studio génère [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] qui effectue les opérations suivantes :
 
@@ -93,7 +93,7 @@ Visual Studio génère du code XAML qui effectue les opérations suivantes :
 
 - Crée une liaison de données pour un contrôle. Si vous faites glisser l'élément vers un contrôle existant dans le concepteur, le code [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] lie le contrôle à l'élément. Si vous faites glisser l’élément vers un conteneur, le [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] crée le contrôle qui a été sélectionné pour l’élément déplacé et lie le contrôle à l’élément. Le contrôle est créé dans une nouvelle <xref:System.Windows.Controls.Grid>.
 
-### <a name="objects"></a>Objets
+### <a name="objects"></a>Objets du
 
 Quand vous faites glisser un objet ou une propriété de la fenêtre **sources de données** vers le concepteur, Visual Studio génère [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] qui crée un contrôle lié aux données (ou lie un contrôle existant à l’objet ou à la propriété). Toutefois, Visual Studio ne génère pas de code pour remplir l’objet avec des données. Vous devez écrire ce code vous-même.
 

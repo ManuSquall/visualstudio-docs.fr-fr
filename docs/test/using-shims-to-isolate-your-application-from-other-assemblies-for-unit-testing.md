@@ -2,18 +2,18 @@
 title: Utilisation de shims afin d’isoler votre application pour des tests unitaires
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
-author: jillre
+author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: e4a59cb4e3372e16634cddde2a163ac94ca73d24
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 480283b4f86f28fdedfb38687682fcee4e67646e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72982811"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585533"
 ---
 # <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>Utiliser des shims pour isoler votre application pour les tests unitaires
 
@@ -23,7 +23,7 @@ Utilisez les *shims* pour isoler votre code des assemblys qui ne font pas partie
 
 Pour obtenir une vue d’ensemble et un guide de démarrage rapide, consultez [isolation du code testé avec Microsoft simulations](../test/isolating-code-under-test-with-microsoft-fakes.md).
 
-**Prérequis**
+**Spécifications**
 
 - Visual Studio Enterprise
 - Un projet .NET Framework
@@ -92,7 +92,7 @@ Il est essentiel de supprimer correctement chaque contexte de shim. En règle g�
 
 ### <a name="write-a-test-with-shims"></a>Écrire un test avec les shims
 
-Dans votre code de test, insérez un *détour* pour la méthode que vous souhaitez falsifier. Exemple :
+Dans votre code de test, insérez un *détour* pour la méthode que vous souhaitez falsifier. Par exemple :
 
 ```csharp
 [TestClass]
@@ -426,7 +426,7 @@ Chaque type shim généré contient une instance de l'interface `IShimBehavior`,
 
 Si le comportement n’a pas été défini explicitement, il utilise l’instance retournée par la propriété statique `ShimsBehaviors.Current`. Par défaut, cette propriété retourne un comportement qui lève une exception `NotImplementedException`.
 
-Ce comportement peut être modifié à tout moment en définissant la propriété `InstanceBehavior` sur toute instance de shim. Par exemple, l’extrait de code suivant remplace le shim par un comportement qui ne fait rien ou retourne la valeur par défaut du type de retour, autrement dit `default(T)` :
+Ce comportement peut être modifié à tout moment en définissant la propriété `InstanceBehavior` sur toute instance de shim. Par exemple, l’extrait de code suivant remplace le shim par un comportement qui ne fait rien ou retourne la valeur par défaut du type de retour, autrement dit `default(T)`:
 
 ```csharp
 // unit test code
@@ -456,7 +456,7 @@ ShimMyClass.Behavior = ShimsBehaviors.NotImplemented;
 ShimMyClass.BehaveAsNotImplemented();
 ```
 
-## <a name="concurrency"></a>Concurrency
+## <a name="concurrency"></a>concurrence
 
 Les types shim s’appliquent à tous les threads de l’AppDomain et n’ont pas d’affinité de thread. C’est un fait important si vous prévoyez d’utiliser un test Runner qui prend en charge l’accès concurrentiel. Les tests impliquant des types shim ne peuvent pas s’exécuter simultanément. Cette propriété n’est pas appliquée par le runtime Fakes.
 
@@ -501,9 +501,9 @@ shim = (fileName, content) => {
 ShimFile.WriteAllTextStringString = shim;
 ```
 
-## <a name="systemenvironment"></a>System. Environment
+## <a name="systemenvironment"></a>System.Environment
 
-Pour <xref:System.Environment?displayProperty=fullName> shim, ajoutez le contenu suivant au fichier mscorlib. simulations après l’élément **assembly** :
+Pour <xref:System.Environment?displayProperty=fullName>shim, ajoutez le contenu suivant au fichier mscorlib. simulations après l’élément **assembly** :
 
 ```xml
 <ShimGeneration>

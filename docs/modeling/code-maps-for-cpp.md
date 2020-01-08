@@ -2,17 +2,17 @@
 title: Voir les dépendances entre C++ les fichiers sources et les fichiers d’en-tête
 ms.date: 05/16/2018
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbba97f47c3ac0686bad15c3a1882e1e9bd85057
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a17015c7efbb51027450e06bd1fb571ef9820d48
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654180"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597241"
 ---
 # <a name="code-maps-for-c-projects"></a>Cartes de code C++ pour les projets
 
@@ -20,7 +20,7 @@ Si vous souhaitez créer des cartes plus complètes pour des projets C++, défin
 
 Lorsque vous ouvrez une solution qui contient des projets Visual C++, la mise à jour de la base de données IntelliSense peut prendre un certain temps. Pendant ce temps, vous ne pourrez peut-être pas créer de cartes de code pour les fichiers d’en-tête ( *. h* ou `#include`) tant que la base de données IntelliSense n’a pas terminé la mise à jour. Vous pouvez surveiller la progression des mises à jour dans la barre d’état de Visual Studio.
 
-- Pour afficher les dépendances entre tous les fichiers sources et les fichiers d’en-tête de votre solution, sélectionnez **Architecture**  > **générer un graphique des fichiers include**.
+- Pour afficher les dépendances entre tous les fichiers sources et les fichiers d’en-tête de votre solution, sélectionnez **Architecture** > **générer un graphique des fichiers include**.
 
    ![Graphique de dépendance pour le code natif](../modeling/media/dependencygraphgeneral_nativecode.png)
 

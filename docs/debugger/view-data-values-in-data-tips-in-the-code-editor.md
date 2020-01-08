@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f121c7aadb605e6eb87089556ddaf1b1f4999dbb
-ms.sourcegitcommit: 0b90e1197173749c4efee15c2a75a3b206c85538
+ms.openlocfilehash: bf5eda8205dbe0629d0b2801473de83c2f91257e
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74903880"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75404278"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>Afficher les valeurs de données dans les DataTips dans l’éditeur de code
 
@@ -96,7 +96,7 @@ Pour modifier la valeur d’une variable ou d’un élément dans un DataTip, s�
 
 ::: moniker range=">= vs-2019"
 
-## <a name="pin-properties-in-datatips-supported-in-visual-studio-2019-version-164-preview-3-or-higher"></a>Épingler les propriétés dans les DataTips (pris en charge dans Visual Studio 2019 version 16,4 Preview 3 ou version ultérieure)
+## <a name="pin-properties-in-datatips"></a>Épingler les propriétés dans les DataTips
 
 > [!NOTE]
 > Cette fonctionnalité est prise en charge pour .NET Core 3,0 ou version ultérieure.

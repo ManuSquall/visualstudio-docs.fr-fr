@@ -6,24 +6,24 @@ helpviewer_keywords:
 - MSBuild, logging
 - logging [MSBuild]
 ms.assetid: 6ba9a754-9cc0-4fed-9fc8-4dcd3926a031
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 385871a47b2a4d73a1f7afacf9d39a02d7c782ca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f756d432d9ff4d3824c1f1165c63710e4d10c2e9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963765"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594888"
 ---
 # <a name="obtain-build-logs-with-msbuild"></a>Obtenir des journaux de génération avec MSBuild
 
 En utilisant des commutateurs avec MSBuild, vous pouvez indiquer le nombre de données de build que vous souhaitez vérifier, et spécifier si vous voulez enregistrer les données de build dans un ou plusieurs fichiers. Vous pouvez également spécifier un enregistreur d’événements personnalisé pour collecter les données de build. Pour plus d’informations sur les commutateurs de ligne de commande MSBuild que cette rubrique ne traite pas, consultez l’article [Command-Line Reference (Informations de référence sur la ligne de commande MSBuild)](../msbuild/msbuild-command-line-reference.md).
 
 > [!NOTE]
-> Si vous générez des projets à l’aide de l’IDE de Visual Studio, vous pouvez résoudre les problèmes de ces builds en passant en revue les journaux de génération. Pour plus d'informations, voir [Procédure : afficher, enregistrer et configurer des fichiers journaux de génération](../ide/how-to-view-save-and-configure-build-log-files.md).
+> Si vous générez des projets à l’aide de l’IDE de Visual Studio, vous pouvez résoudre les problèmes de ces builds en passant en revue les journaux de génération. Pour plus d’informations, consultez [Comment : afficher, enregistrer et configurer des fichiers journaux de génération](../ide/how-to-view-save-and-configure-build-log-files.md).
 
 ## <a name="set-the-level-of-detail"></a>Définir le niveau de détail
 
@@ -35,7 +35,7 @@ En utilisant des commutateurs avec MSBuild, vous pouvez indiquer le nombre de do
 
 - Résumé de la génération
 
-En utilisant le commutateur **-verbosity** (**-v**), vous pouvez contrôler le volume de données affichées dans le journal de sortie. Pour la résolution des problèmes, utilisez un niveau de détail `detailed` (`d`) ou `diagnostic` (`diag`), qui fournit le plus d’informations.
+En utilisant le commutateur **-verbosity** ( **-v**), vous pouvez contrôler le volume de données affichées dans le journal de sortie. Pour la résolution des problèmes, utilisez un niveau de détail `detailed` (`d`) ou `diagnostic` (`diag`), qui fournit le plus d’informations.
 
 Le processus de build peut être plus lent si le commutateur **-verbosity** est défini sur `detailed`, et encore plus si le commutateur **-verbosity** est défini sur `diagnostic`.
 
@@ -49,7 +49,7 @@ Le tableau suivant montre comment le niveau de détail du journal (valeurs de co
 
 |                                       | Quiet | Minimal | Normale | Détaillé | Diagnostic |
 |---------------------------------------|:-----:|:-------:|:------:|:--------:|:----------:|
-| Erreurs                                |   ✅   |    ✅    |    ✅   |     ✅    |      ✅     |
+| Erreurs du                                |   ✅   |    ✅    |    ✅   |     ✅    |      ✅     |
 | Avertissements                              |   ✅   |    ✅    |    ✅   |     ✅    |      ✅     |
 | Messages avec une importance haute              |       |    ✅    |    ✅   |     ✅    |      ✅     |
 | Messages avec une importance normale           |       |         |    ✅   |     ✅    |      ✅     |

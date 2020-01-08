@@ -13,17 +13,17 @@ helpviewer_keywords:
 - Shell, launching exe files
 - Visual Studio, executables from
 ms.assetid: 737fda23-b852-45c4-a9fe-41cbce6ba70f
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 502bb7b1ab6236fd88c7c6dbc789737e50686d89
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 5bf13c7624d6c9d8e64b79f653eb83a0c5f3b3f0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747740"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565875"
 ---
 # <a name="shell-command"></a>Shell, commande
 Lance les programmes exécutables à partir de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
@@ -41,20 +41,20 @@ Requis. Chemin et nom du fichier à exécuter ou du document à ouvrir. Un chemi
 
 `args`
 
-Optionnel. Arguments à passer au programme appelé.
+Option facultative. Arguments à passer au programme appelé.
 
 ## <a name="switches"></a>Commutateurs
 /commandwindow [ou] /command [ou] /c [ou] /cmd
 
-Optionnel. Spécifie que la sortie pour l’exécutable doit s’afficher dans la fenêtre **Commande**.
+Option facultative. Spécifie que la sortie pour l’exécutable doit s’afficher dans la fenêtre **Commande**.
 
 /dir:`folder` [ou] /d: `folder`
 
-Optionnel. Spécifie le répertoire de travail à définir quand le programme est exécuté.
+Option facultative. Spécifie le répertoire de travail à définir quand le programme est exécuté.
 
 /outputwindow [ou] /output [ou] /out [ou] /o
 
-Optionnel. Spécifie que la sortie pour l’exécutable doit s’afficher dans la fenêtre **Sortie**.
+Option facultative. Spécifie que la sortie pour l’exécutable doit s’afficher dans la fenêtre **Sortie**.
 
 ## <a name="remarks"></a>Notes
 Les commutateurs /dir /o /c doivent être spécifiés immédiatement après `Tools.Shell`. Toute syntaxe spécifiée après le nom de l’exécutable est transmise en tant qu’argument de la ligne de commande.
@@ -86,8 +86,8 @@ La commande suivante utilise xcopy.exe pour copier le fichier `MyText.txt` dans 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Commande, fenêtre](../../ide/reference/command-window.md)
-- [Sortie, fenêtre](../../ide/reference/output-window.md)
+- [Visual Studio, commandes](../../ide/reference/visual-studio-commands.md)
+- [Fenêtre Commande](../../ide/reference/command-window.md)
+- [Sortie (fenêtre)](../../ide/reference/output-window.md)
 - [Rechercher/Commande, zone](../../ide/find-command-box.md)
 - [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

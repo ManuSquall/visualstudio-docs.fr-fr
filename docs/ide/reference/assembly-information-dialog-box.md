@@ -1,5 +1,5 @@
 ---
-title: Informations de l’assembly (boîte de dialogue)
+title: Boîte de dialogue Informations d'assembly
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -7,19 +7,19 @@ f1_keywords:
 helpviewer_keywords:
 - Assembly Information dialog box
 ms.assetid: 8f1f6449-e03d-4a5b-9076-d3b1f84ada48
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88d86c077cf129632c78d6266e7c8146325b78fb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ae70a2bf989b73dedc5becaac6f4b49bd0108730
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651906"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595785"
 ---
-# <a name="assembly-information-dialog-box"></a>Informations de l’assembly (boîte de dialogue)
+# <a name="assembly-information-dialog-box"></a>Informations de l’assembly, boîte de dialogue
 
 La boîte de dialogue Informations de l’assembly permet de spécifier les valeurs des attributs d’assembly globaux du .NET Framework, lesquels sont stockés dans le fichier AssemblyInfo créé automatiquement avec votre projet. Dans l’Explorateur de solutions, le fichier AssemblyInfo se trouve dans le nœud **Mon projet** pour les projets Visual Basic (cliquez sur **Afficher tous les fichiers** pour l’afficher). Pour les projets C#, il se trouve sous **Propriétés**. Pour plus d’informations, consultez [Attributs (C#)](/dotnet/csharp/programming-guide/concepts/attributes/index).
 
@@ -27,7 +27,7 @@ Pour accéder à cette boîte de dialogue, sélectionnez un nœud de projet dans
 
 ## <a name="uielement-list"></a>Liste UIElement
 
-**Titre** \
+**Titre**\
 Spécifie un titre pour le manifeste de l’assembly. Correspond à <xref:System.Reflection.AssemblyTitleAttribute>.
 
 **Description**\
@@ -67,5 +67,5 @@ Spécifie si les types dans l’assembly seront disponibles pour COM. Correspond
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Page Application, Concepteur de projet (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md)
+- [Page Application, Concepteur de projets (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md)
 - [Attributs](https://msdn.microsoft.com/Library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)

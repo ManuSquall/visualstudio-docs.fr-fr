@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 087407f511c038a369694beca8a9fe4ecc2ff7b7
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: f66ed17aec8c6e5303ea61741021dd25032fcb37
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74771572"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75406301"
 ---
 # <a name="specify-the-path-to-profiling-tools-command-line-tools"></a>Spécifier le chemin des outils en ligne de commande des outils de profilage
 
@@ -22,9 +22,7 @@ Le chemin d'accès aux outils de profilage en ligne de commande de [!INCLUDE[vsp
 
 ## <a name="32-bit-computers"></a>Ordinateurs 32 bits
 
-::: moniker range="vs-2017"
- Pour le code natif, les API du profileur Visual Studio se trouvent dans *VSPerf.dll*. Le fichier d’en-tête, *VSPerf.h*, et la bibliothèque d’importation, *VSPerf.lib*, se trouvent dans le répertoire *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK*.
-::: moniker-end
+Pour le code natif, les API du profileur Visual Studio se trouvent dans *VSPerf.dll*. Le fichier d’en-tête, *VSPerf.h*, et la bibliothèque d’importation, *VSPerf.lib*, se trouvent dans le répertoire *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK*.
 
  Pour le code managé, les API du profileur se trouvent dans *Microsoft.VisualStudio.Profiler.dll*. Cette DLL se trouve dans le répertoire *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*.
 
@@ -32,12 +30,14 @@ Le chemin d'accès aux outils de profilage en ligne de commande de [!INCLUDE[vsp
 
 Sur les ordinateurs 64 bits, spécifiez le chemin d'accès en fonction de la plateforme cible de l'application profilée.
 
-::: moniker range="vs-2017"
 - Pour les applications 32 bits, le répertoire par défaut des outils de profilage est le suivant :
 
-     (natif) *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK* (managé) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*
+     natif *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK*
+     
+     nage *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*
 
 - Pour les applications 64 bits, le répertoire par défaut des outils de profilage est le suivant :
 
-     (natif) *Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK* (managé) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*
-::: moniker-end
+     natif *Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK*
+
+     nage *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*

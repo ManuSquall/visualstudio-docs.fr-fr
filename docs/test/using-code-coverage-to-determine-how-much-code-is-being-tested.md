@@ -8,15 +8,15 @@ dev_langs:
 - CSharp
 - VB
 - CPP
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dc3c11610d95756b265d5ba01a6f8365f115548a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6dd6dde83720c6e6f37bd6827bb5d97526202aa7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659804"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585598"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Utiliser la couverture du code pour déterminer la quantité de code testé
 
@@ -32,7 +32,7 @@ Vous pouvez avoir recours à la couverture du code lorsque vous exécutez des m�
 
 ::: moniker-end
 
-## <a name="requirements"></a>spécifications
+## <a name="requirements"></a>Configuration requise pour
 
 La fonctionnalité de couverture du code n’est disponible que dans l’édition Visual Studio Enterprise.
 
@@ -54,10 +54,10 @@ La fonctionnalité de couverture du code n’est disponible que dans l’éditio
 
 ::: moniker-end
 
-2. Une fois les tests exécutés, pour voir les lignes qui ont été exécutées, choisissez ![Show icône de coloration de la couverture du code ](../test/media/codecoverage-showcoloringicon.png) afficher la coloration de la **couverture du code** dans la fenêtre résultats de la couverture du **code** . Par défaut, le code qui est couvert par les tests est mis en surbrillance en bleu clair.
+2. Une fois les tests exécutés, pour voir les lignes qui ont été exécutées, choisissez ![icône Afficher la coloration de la couverture du code](../test/media/codecoverage-showcoloringicon.png) **afficher la coloration** de la couverture du code dans la fenêtre résultats de la **couverture du code** . Par défaut, le code qui est couvert par les tests est mis en surbrillance en bleu clair.
 
    > [!TIP]
-   > Pour modifier les couleurs ou utiliser le style gras, choisissez **outils**  > **Options**  > **environnement**  > **polices et couleurs**  > **afficher les paramètres de : éditeur de texte**. Sous **éléments affichés**, ajustez les paramètres pour les éléments de « couverture », par exemple, **zone non touchées**.
+   > Pour modifier les couleurs ou utiliser le style gras, choisissez **outils** > **Options** > **environnement** > **polices et couleurs** > **afficher les paramètres de : éditeur de texte**. Sous **éléments affichés**, ajustez les paramètres pour les éléments de « couverture », par exemple, **zone non touchées**.
    >
    > ![Polices et couleurs de la couverture du code](media/vs-2019/coverage-fonts-and-colors.png)
 
@@ -105,7 +105,7 @@ Dans certains cas, différents blocs de votre code seront utilisés, en fonction
 
 Supposons par exemple que, lorsque vous exécutez un test avec l'entrée « 2 », vous constatez que 50 % d'une fonction spécifique est couvert. Si vous exécutez le test une deuxième fois avec l'entrée « -2 », la deuxième moitié de la fonction apparaît couverte dans la vue avec coloration de la couverture. Fusionnez maintenant les résultats des deux séries de tests. Le rapport et la vue de coloration de couverture indiquent que la fonction a été couverte à 100 %.
 
-Pour cela, utilisez ![Icône du bouton Fusionner dans la fenêtre Couverture du code](../test/media/codecoverage-mergeicon.png) **Fusionner les résultats de la couverture du code**. Vous pouvez choisir n'importe quelle combinaison de séries récentes ou de résultats importés. Si vous souhaitez combiner des résultats exportés, vous devez d'abord les importer.
+Utilisez ![icône pour le bouton fusionner dans la fenêtre de couverture du code](../test/media/codecoverage-mergeicon.png) **fusionner les résultats de la couverture du code** pour ce faire. Vous pouvez choisir n'importe quelle combinaison de séries récentes ou de résultats importés. Si vous souhaitez combiner des résultats exportés, vous devez d'abord les importer.
 
 Utilisez **Exporter les résultats de la couverture du code** pour enregistrer les résultats d’une opération de fusion.
 
@@ -124,7 +124,7 @@ Vous pouvez exclure des éléments spécifiques dans votre code à partir des no
 > [!TIP]
 > Le fait d’exclure une classe n'a pas pour effet d’exclure ses classes dérivées.
 
-Exemple :
+Par exemple :
 
 ```csharp
 using System.Diagnostics.CodeAnalysis;
@@ -243,9 +243,9 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
 Utilisez les macros suivante :
 
-`ExcludeFromCodeCoverage(` *NomExclusion* `, L"` *NomFonction* `");`
+`ExcludeFromCodeCoverage(` *nomexclusion* `, L"` *nomfonction* `");`
 
-`ExcludeSourceFromCodeCoverage(` *NomExclusion* `, L"` *CheminFichierSource* `");`
+`ExcludeSourceFromCodeCoverage(` *nomexclusion* `, L"` *cheminfichiersource* `");`
 
 - *NomExclusion* est un nom unique.
 
@@ -282,13 +282,13 @@ Pour exécuter des tests à partir de la ligne de commande, utilisez *vstest.con
 
    ::: moniker range="vs-2017"
 
-   Dans le menu **Démarrer** de Windows, choisissez **Visual Studio 2017** > **Invite de commandes développeur pour Visual Studio 2017**.
+   Dans le menu **Démarrer** de Windows, choisissez **Visual Studio 2017** > **invite de commandes développeur pour vs 2017**.
 
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-   Dans le menu **Démarrer** de Windows, choisissez **Visual Studio 2019** > **Invite de commandes développeur pour Visual Studio 2019**.
+   Dans le menu **Démarrer** de Windows, choisissez **Visual Studio 2019** > **invite de commandes développeur pour vs 2019**.
 
    ::: moniker-end
 
@@ -300,7 +300,7 @@ Pour exécuter des tests à partir de la ligne de commande, utilisez *vstest.con
 
 Pour plus d’informations, consultez [Options de ligne de commande VSTest.Console.exe](vstest-console-options.md).
 
-## <a name="troubleshoot"></a>Résoudre les problèmes
+## <a name="troubleshoot"></a>Dépannage
 
 Si vous ne voyez pas les résultats de la couverture du code, consultez l’article [Résoudre les problèmes liés à la couverture du code](../test/troubleshooting-code-coverage.md).
 

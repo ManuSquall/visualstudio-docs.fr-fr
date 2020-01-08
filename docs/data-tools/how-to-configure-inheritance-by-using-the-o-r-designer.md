@@ -3,17 +3,17 @@ title: Guide pratique pour configurer l’héritage à l’aide du Concepteur O/
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e594af12-e777-434a-bc08-7dd2dac84cdc
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ddd3d8b25c6e215302af8e0b40b5a971f5f4aa39
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 64a29eb3ebb1a5366eb9aaced1b5c228832fe71e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641918"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586508"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Guide pratique pour configurer l’héritage à l’aide du Concepteur O/R
 Le **Concepteur Objet Relationnel** (**Concepteur O/R**) prend en charge le concept d’héritage de table unique, car il est souvent implémenté dans les systèmes relationnels. L'héritage à table unique fait appel à une seule table de base de données qui contient des champs pour les informations parent et enfant. Avec les données relationnelles, une colonne de discriminateur contient la valeur qui détermine à quelle classe tout enregistrement appartient.
@@ -35,7 +35,7 @@ La création d'un modèle objet qui utilise l'héritage (et correspond aux donn�
     > [!NOTE]
     > Cliquez sur l’élément **Héritage** dans la **Boîte à outils** et relâchez le bouton de la souris, cliquez sur la seconde copie de la classe que vous avez créée à l’étape 3, puis cliquez sur la première classe que vous avez créée à l’étape 2. La flèche sur la ligne d’héritage pointe vers la première classe.
 
-5. Dans chaque classe, supprimez toutes les propriétés d'objet que vous ne souhaitez pas voir apparaître et qui ne sont pas utilisées pour des associations. Vous recevez une erreur si vous tentez de supprimer les propriétés d’objet utilisées pour les associations : [la propriété \<property nom > ne peut pas être supprimée, car elle participe à l’association \<association nom >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md).
+5. Dans chaque classe, supprimez toutes les propriétés d'objet que vous ne souhaitez pas voir apparaître et qui ne sont pas utilisées pour des associations. Vous recevez une erreur si vous tentez de supprimer les propriétés d’objet utilisées pour les associations : [la propriété \<nom de la propriété > ne peut pas être supprimée, car elle participe à l’association \<nom de l’association >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md).
 
     > [!NOTE]
     > Comme une classe dérivée hérite des propriétés définies dans sa classe de base, les mêmes colonnes ne peuvent pas être définies dans chaque classe. (Les colonnes sont implémentées en tant que propriétés.) Vous pouvez activer la création de colonnes dans la classe dérivée en définissant le modificateur d’héritage sur la propriété dans la classe de base. Pour plus d’informations, consultez [principes de base de l’héritage (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics).
@@ -48,7 +48,7 @@ La création d'un modèle objet qui utilise l'héritage (et correspond aux donn�
 
 9. Affectez à la propriété **Valeur de discriminateur de classe de base** la valeur qui désigne l’enregistrement comme type de base. (Il s’agit de la valeur qui est stockée dans la colonne de discriminateur et qui est utilisée pour désigner la classe de base.)
 
-10. En option, vous pouvez également affecter à la propriété **Valeur d’héritage par défaut** la désignation d’un type dans une hiérarchie d’héritage utilisée lors du chargement des lignes ne correspondant à aucun code d’héritage défini. En d’autres termes, si un enregistrement a une valeur dans sa colonne de discriminateur qui ne correspond pas à la valeur dans les propriétés valeur de **discriminateur de classe dérivée** ou **valeur de discriminateur de classe de base** , l’enregistrement se charge dans le type désigné comme  **Héritage par défaut**.
+10. En option, vous pouvez également affecter à la propriété **Valeur d’héritage par défaut** la désignation d’un type dans une hiérarchie d’héritage utilisée lors du chargement des lignes ne correspondant à aucun code d’héritage défini. En d’autres termes, si un enregistrement a une valeur dans sa colonne de discriminateur qui ne correspond pas à la valeur dans les propriétés valeur de **discriminateur de classe dérivée** ou **valeur de discriminateur de classe de base** , l’enregistrement se charge dans le type désigné comme valeur **par défaut d’héritage**.
 
 ## <a name="see-also"></a>Voir aussi
 

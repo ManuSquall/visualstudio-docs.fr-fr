@@ -15,12 +15,12 @@ ms.author: waan
 manager: caslan
 ms.workload:
 - multiple
-ms.openlocfilehash: a61a3181f47af4a660641ef02ce4ba1b31eedc46
-ms.sourcegitcommit: 916bbe1d77c9253424daa86c71c40f5e1ec74400
+ms.openlocfilehash: 18fa63f2a6f4b6d789bad6f813cb3956a636a2d2
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "74951941"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75404087"
 ---
 # <a name="troubleshooting-data-breakpoint-errors"></a>Dépannage des erreurs de point d’arrêt de données
 Cette page vous guidera lors de la résolution des erreurs courantes rencontrées lors de l’utilisation de l’instruction « arrêter quand la valeur est modifiée »
@@ -83,5 +83,5 @@ L’architecture (configuration de plateforme) sur laquelle votre programme s’
 Pour tout problème ou suggestion concernant cette fonctionnalité, faites-le nous savoir via l’aide > Envoyer des commentaires > [signaler un problème](../ide/how-to-report-a-problem-with-visual-studio.md) dans l’IDE ou dans la [communauté des développeurs](https://developercommunity.visualstudio.com/).
 
 ## <a name="see-also"></a>Voir aussi
-- [Utilisation de « arrêter quand la valeur change » dans .net Core 3,0](using-breakpoints.md#BKMK_set_a_data_breakpoint_managed).
+- [Utilisation de « arrêter quand la valeur change » dans .net Core 3,0](using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus).
 - [DevBlog : arrêter lorsque la valeur change : points d’arrêt sur variable pour .NET Core dans Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/break-when-value-changes-data-breakpoints-for-net-core-in-visual-studio-2019/)

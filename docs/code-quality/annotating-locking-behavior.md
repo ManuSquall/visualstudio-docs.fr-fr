@@ -32,12 +32,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 25978ae5fa76afc7cd43c9ccc243f25712495ddd
-ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
+ms.openlocfilehash: ce5e4d1e8ed3505d1f971ef209c7e05ba85e0d69
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74879280"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75402033"
 ---
 # <a name="annotating-locking-behavior"></a>Annotation du comportement de verrouillage
 Pour éviter les bogues d'accès concurrentiel dans votre programme multithread, suivez toujours une règle de verrouillage appropriée et utilisez les annotations SAL.
@@ -73,7 +73,7 @@ Le tableau suivant répertorie les annotations de verrouillage.
 |`_Create_lock_level_(name)`|Instruction qui déclare le symbole `name` comme un niveau de verrou afin qu'il puisse être utilisé dans les annotations `_Has_Lock_level_` et `_Lock_level_order_`.|
 |`_Has_lock_kind_(kind)`|Annote n’importe quel objet pour affiner les informations de type d’un objet de ressource. Parfois, un type commun est utilisé pour différents genres de ressources et le type surchargé n’est pas suffisant pour distinguer les exigences sémantiques des différentes ressources. Voici la liste des paramètres `kind` prédéfinis :<br /><br /> `_Lock_kind_mutex_`<br /> ID de type de verrou pour les mutex.<br /><br /> `_Lock_kind_event_`<br /> ID de type de verrou pour les événements.<br /><br /> `_Lock_kind_semaphore_`<br /> ID de type de verrou pour les sémaphores.<br /><br /> `_Lock_kind_spin_lock_`<br /> ID de type de verrou pour les verrous de rotation.<br /><br /> `_Lock_kind_critical_section_`<br /> ID de type de verrou pour les sections critiques.|
 |`_Has_lock_level_(name)`|Annote un objet verrou, en lui donnant le niveau de verrou de `name`.|
-|`_Lock_level_order_(name1, name2)`|Instruction qui donne l’ordre de verrouillage entre `name1` et `name2`.  Les verrous qui ont un niveau `name1` doivent être acquis avant les verrous ayant un niveau `name2`|
+|`_Lock_level_order_(name1, name2)`|Instruction qui donne l’ordre de verrouillage entre `name1` et `name2`.  Les verrous qui ont des `name1` de niveau doivent être acquis avant les verrous ayant un niveau `name2`.|
 |`_Post_same_lock_(expr1, expr2)`|Annote une fonction et indique qu’à l’état postérieur les deux verrous, `expr1` et `expr2`, sont traités comme s’ils étaient le même objet verrou.|
 |`_Releases_exclusive_lock_(expr)`|Annote une fonction et indique qu'à l'état postérieur la fonction décrémente d'une unité le nombre de verrous exclusifs de l'objet verrou nommé par `expr`.|
 |`_Releases_lock_(expr)`|Annote une fonction et indique qu’à l’état postérieur la fonction décrémente d’une unité le nombre de verrous de l’objet verrou nommé par `expr`.|

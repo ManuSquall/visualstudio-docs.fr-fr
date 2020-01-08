@@ -6,15 +6,15 @@ helpviewer_keywords:
 - Web performance tests, using the API
 - APIs, Web performance tests
 ms.assetid: 93a6a1dd-663b-4ab5-8760-7d6b081561d3
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d22c1962727d22af965c879de3ae5fea6d4e54af
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e869bc46997ffb6ebecae2aa3e49c3cb6b2582fa
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653299"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594331"
 ---
 # <a name="how-to-use-the-web-performance-test-api"></a>Guide pratique pour utiliser l’API de test de performances web
 
@@ -31,7 +31,7 @@ Vous pouvez également créer des plug-ins pour les tests de charge. Pour plus d
 
 ## <a name="to-use-the-webtesting-namespace"></a>Pour utiliser l'espace de noms WebTesting
 
-1. Ouvrez un projet de test de performances web et de charge qui contient un test de performances web.
+1. Ouvrez un projet de test de performances web et de charge contenant un test de performances web.
 
 2. Ajoutez un projet de bibliothèque de classes Visual Basic ou Visual C# à votre solution de test.
 
@@ -43,7 +43,7 @@ Vous pouvez également créer des plug-ins pour les tests de charge. Pour plus d
 
 6. Définissez une classe qui implémente l'interface <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>.
 
-7. Générez le projet.
+7. créer le projet ;
 
 8. Ajoutez le nouveau plug-in de test de performances web avec l’éditeur de test de performances web :
 
@@ -60,7 +60,7 @@ Vous pouvez également créer des plug-ins pour les tests de charge. Pour plus d
 
     4. Cliquez sur **OK**.
 
-9. Exécutez votre test de performances de site web.
+9. Exécutez votre test de performances web.
 
      Pour obtenir un exemple d’implémentation de <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestPlugin>, consultez [Guide pratique pour créer un plug-in de test de performances web](../test/how-to-create-a-web-performance-test-plug-in.md).
 

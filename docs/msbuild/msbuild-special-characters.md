@@ -7,22 +7,22 @@ helpviewer_keywords:
 - escape
 - MSBuild Escape Characters
 ms.assetid: 545e6a59-1093-4514-935e-78679a46fb3c
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf312c1b73dbed58cc261c77a74555d00b0b04ba
-ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
-ms.translationtype: HT
+ms.openlocfilehash: 5f18339dbbddb09e44e8c5fa53ba517f3d60c025
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67195062"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566057"
 ---
 # <a name="msbuild-special-characters"></a>Caractères spéciaux MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] réserve certains caractères à une utilisation précise dans certains contextes. Pour les utiliser littéralement dans le contexte où ils sont réservés, il vous suffit de les placer dans une séquence d’échappement. Par exemple, un astérisque n’a une signification spéciale que dans les attributs `Include` et `Exclude` d’une définition d’élément, et dans les appels à `CreateItem`. Si vous souhaitez qu’un astérisque apparaisse comme un astérisque dans l’un de ces contextes, vous devez le placer dans une séquence d’échappement. Dans tous les autres contextes, tapez simplement l’astérisque là où vous souhaitez qu’il apparaisse.
 
- Pour placer un caractère spécial dans une séquence d’échappement, utilisez la syntaxe %\<xx>, où \<xx> représente la valeur hexadécimale du caractère ASCII. Pour plus d'informations, voir [Procédure : Utiliser des caractères spéciaux d’échappement dans MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md).
+ Pour placer un caractère spécial dans une séquence d’échappement, utilisez la syntaxe %\<xx>, où \<xx> représente la valeur hexadécimale du caractère ASCII. Pour plus d’informations, consultez [Guide pratique pour utiliser des caractères spéciaux d’échappement dans MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md).
 
 ## <a name="special-characters"></a>Caractères spéciaux
  Le tableau suivant répertorie les caractères spéciaux [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] :
@@ -39,4 +39,4 @@ ms.locfileid: "67195062"
 
 ## <a name="see-also"></a>Voir aussi
 - [Concepts avancés](../msbuild/msbuild-advanced-concepts.md)
-- [Éléments](../msbuild/msbuild-items.md)
+- [Éléments MSBuild](../msbuild/msbuild-items.md)

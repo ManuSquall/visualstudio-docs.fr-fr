@@ -6,17 +6,17 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: 2222841f-e443-4a3d-8c70-4506aa905193
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f895bd909ec9fda496d284c163bff4a5168bd057
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8f35173ded1ba4d52e0c5a9800fa228a7f93b981
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648728"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586872"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Créer une application de données simple à l’aide d’ADO.NET
 
@@ -122,7 +122,7 @@ Créez l’exemple de base de données en procédant comme suit :
 ## <a name="store-the-connection-string"></a>Stocker la chaîne de connexion
 Quand votre application tente d'ouvrir une connexion à la base de données, elle doit avoir accès à la chaîne de connexion. Pour éviter d’entrer la chaîne manuellement sur chaque formulaire, stockez la chaîne dans le fichier *app. config* de votre projet, puis créez une méthode qui retourne la chaîne lorsque la méthode est appelée à partir de n’importe quel formulaire de votre application.
 
-Vous pouvez trouver la chaîne de connexion en cliquant avec le bouton droit sur la connexion de données de **vente** dans **Explorateur de serveurs** et en choisissant **Propriétés**. Localisez la propriété **ConnectionString** , puis utilisez **CTRL** +**A**, **CTRL** +**C** pour sélectionner et copier la chaîne dans le presse-papiers.
+Vous pouvez trouver la chaîne de connexion en cliquant avec le bouton droit sur la connexion de données de **vente** dans **Explorateur de serveurs** et en choisissant **Propriétés**. Localisez la propriété **ConnectionString** , puis utilisez **CTRL**+**A**, **CTRL**+**C** pour sélectionner et copier la chaîne dans le presse-papiers.
 
 1. C#Si vous utilisez, dans **Explorateur de solutions**, développez le nœud **Propriétés** sous le projet, puis ouvrez le fichier **Settings. Settings** .
     Si vous utilisez Visual Basic, dans **Explorateur de solutions**, cliquez sur **Afficher tous les fichiers**, développez le nœud **mon projet** , puis ouvrez le fichier **Settings. Settings** .

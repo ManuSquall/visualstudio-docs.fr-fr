@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Visual Studio Workflow Designer [WFD], debugging workflows
 - Workflow Designer [WFD], debugging workflows
 ms.assetid: d71308cf-d464-4536-8711-0d0a8eadb255
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7432e02a4c8e133d7d758909a7ea851f90b88841
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4b8de1ff9875d175c956a45b87d459d0943e783c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650563"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597059"
 ---
 # <a name="debug-workflows-with-the-workflow-designer"></a>Déboguer des flux de travail avec le Concepteur de flux de travail
 
@@ -33,13 +33,13 @@ En général, vous déboguez des workflows comme vous déboguez des programmes �
 - Utilisez le débogage distant. Pour plus d’informations sur l’utilisation du débogage à distance, consultez [Comment : activer le débogage distant](/previous-versions/visualstudio/visual-studio-2010/febz73k0(v=vs.100)).
 
    > [!NOTE]
-   > Si l’application de workflow cible l’architecture x86 et est hébergée sur un ordinateur exécutant un système d’exploitation 64 bits, le débogage à distance ne fonctionnera pas si Visual Studio n’est pas installé sur l’ordinateur distant ou si la cible de l’application de workflow est remplacée **par Any CPU**.
+   > Si l’application de workflow cible l’architecture x86 et est hébergée sur un ordinateur exécutant un système d’exploitation 64 bits, le débogage à distance ne fonctionnera pas, sauf si Visual Studio est installé sur l’ordinateur distant ou si la cible de l’application de workflow est changée en **processeur**.
 
 ## <a name="step-through-code"></a>Exécuter le code pas à pas
 
 - **Pas à pas**détaillé : pas à pas détaillé dans une activité en appuyant sur **F11**. Le débogueur exécute une commande pas à pas dans le gestionnaire défini. Si aucun gestionnaire n'est défini, vous passez outre l'activité ; pour les activités composites qui contiennent d'autres activités, vous effectuez un pas à pas dans l'activité exécutée en premier.
 
-- **Pas à pas sortant :** Pas à pas sortant d’une activité en appuyant sur **maj** +**F11**. La commande de pas à pas sortant permet d'exécuter totalement l'activité en cours et toutes ses activités frères. Le débogueur marque ensuite un arrêt sur le parent de l'activité en cours. Lorsque la commande de pas à pas sortant est exécutée à partir d'un gestionnaire de code, le débogueur marque un arrêt sur l'activité à laquelle le gestionnaire est associé.
+- **Pas à pas sortant :** Pas à pas sortant d’une activité en appuyant sur **maj**+**F11**. La commande de pas à pas sortant permet d'exécuter totalement l'activité en cours et toutes ses activités frères. Le débogueur marque ensuite un arrêt sur le parent de l'activité en cours. Lorsque la commande de pas à pas sortant est exécutée à partir d'un gestionnaire de code, le débogueur marque un arrêt sur l'activité à laquelle le gestionnaire est associé.
 
 - **Pas à pas principal**: pas à pas principal dans une activité en appuyant sur **F10**. Lorsque vous effectuez un pas à pas sur une activité composite, le débogueur marque un arrêt sur le premier enfant exécutable de l'activité composite. Lorsque vous effectuez un pas à pas sur une activité non composite (sur une activité <xref:System.Activities.Statements.Assign>, par exemple), le débogueur exécute l'activité et ses gestionnaires associés, et marque un arrêt sur l'activité suivante. Si l'activité exécutée est la dernière activité enfant d'une activité composite, après l'exécution, le débogueur marque un arrêt sur l'activité parente.
 

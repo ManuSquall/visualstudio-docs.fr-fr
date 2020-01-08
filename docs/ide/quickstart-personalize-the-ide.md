@@ -2,17 +2,17 @@
 title: Définir un thème de couleurs et des polices
 ms.date: 11/20/2017
 ms.topic: quickstart
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 039e48dec17ce902932e2d0df26ebb336c396985
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 11cd73574f42fffb7bcfcda5ab47496fe92565c7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667784"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596942"
 ---
 # <a name="personalize-the-visual-studio-ide-and-editor"></a>Personnaliser l’éditeur et l’IDE de Visual Studio
 
@@ -99,7 +99,7 @@ Nous allons maintenant personnaliser des couleurs de texte dans l’éditeur. To
 
 1. Sous **Environnement**, choisissez la catégorie **Polices et couleurs**.
 
-   Notez que le texte sous **Afficher les paramètres de** indique **Éditeur de texte** &mdash; et c’est ce que nous voulons. Développez la liste déroulante pour voir la liste étendue d’emplacements où vous pouvez personnaliser les polices et la couleur du texte.
+   Notez que le texte sous **Afficher les paramètres de** indique **Éditeur de texte**&mdash; et c’est ce que nous voulons. Développez la liste déroulante pour voir la liste étendue d’emplacements où vous pouvez personnaliser les polices et la couleur du texte.
 
 1. Pour changer la couleur du texte des numéros de ligne, dans la liste **Afficher les éléments**, sélectionnez **Numéro de ligne**. Dans la zone **Premier plan de l’élément**, choisissez **Olive**.
 

@@ -11,19 +11,19 @@ ms.assetid: 169e48f9-52fd-4d0b-83d9-54913bde506b
 dev_langs:
 - CSharp
 - VB
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 082412d6773bbe69306f3cf95d10716f5675f3bb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4297f60c74e32b904d7c36912a8377d33f23ebdf
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664936"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589576"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Générer et exécuter un test de performances de site Web codé
 
-Les tests de performances web sont enregistrés lors de la navigation au sein de votre application web. Les tests sont inclus dans les tests de charge afin de mesurer les performances de votre application web soumise à l’activité de plusieurs utilisateurs. Un test de performances de site web peut être converti en un script basé sur le code que vous pouvez modifier et personnaliser comme tout autre code source. Par exemple, vous pouvez ajouter des boucles et des branchements.
+Les tests de performances de site web sont enregistrés lors de la navigation au sein de votre applications web. Les tests sont inclus dans les tests de charge afin de mesurer les performances de votre applications web soumise à plusieurs utilisateurs. Un test de performances de site web peut être converti en un script basé sur le code que vous pouvez modifier et personnaliser comme tout autre code source. Par exemple, vous pouvez ajouter des boucles et des branchements.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -74,7 +74,7 @@ Les tests de performances web sont enregistrés lors de la navigation au sein de
 
 5. Générez la solution pour vérifier que votre code personnalisé se compile.
 
-6. Exécutez le test.
+6. Exécuter le test.
 
      ![Exécuter le test de performances de site web codé](../test/media/web_test_coded_generate_run.png)
 

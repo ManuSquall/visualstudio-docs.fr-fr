@@ -7,17 +7,17 @@ helpviewer_keywords:
 - analyzers
 - Roslyn analyzers
 - code analyzers
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 388667485f27b59e46a1c39d95b37ddc413240ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 77ee96272733eb519e92262cece405de21c06fa3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649139"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587275"
 ---
 # <a name="overview-of-source-code-analyzers"></a>Vue d’ensemble des analyseurs de code source
 
@@ -25,7 +25,7 @@ Les analyseurs de code .NET Compiler Platform (« Roslyn ») C# inspectent vot
 
 - Certains analyseurs sont intégrés à Visual Studio. L’ID de diagnostic, ou code, de ces analyseurs est au format IDExxxx, par exemple, IDE0067. La plupart de ces analyseurs intégrés inspectent le [style du code](../ide/code-styles-and-code-cleanup.md)et vous pouvez configurer des préférences sur la [page Options](../ide/code-styles-and-code-cleanup.md) de l’éditeur de texte ou dans un [fichier EditorConfig](../ide/editorconfig-code-style-settings-reference.md). Quelques analyseurs intégrés examinent la qualité du code.
 
-- Vous pouvez installer des analyseurs supplémentaires sous la forme d’un package NuGet ou d’une extension Visual Studio. Exemple :
+- Vous pouvez installer des analyseurs supplémentaires sous la forme d’un package NuGet ou d’une extension Visual Studio. Par exemple :
 
   - [Analyseurs FxCop](../code-quality/install-fxcop-analyzers.md), analyseurs de qualité de code recommandés par Microsoft
   - Analyseurs tiers, tels que [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/), [Roslynator](https://www.nuget.org/packages/Roslynator/), les [analyseurs xUnit](https://www.nuget.org/packages/xunit.analyzers/)et l' [analyseur sonar](https://www.nuget.org/packages/SonarAnalyzer.CSharp/)
@@ -40,7 +40,7 @@ Un ou plusieurs *correctifs de code* que vous pouvez appliquer pour corriger le 
 
 L’analyse de la source par les analyseurs Roslyn remplace l' [analyse héritée](../code-quality/code-analysis-for-managed-code-overview.md) du code managé. La plupart des règles d’analyse héritées ont déjà été réécrites en tant qu’analyseurs de code Roslyn. Pour les modèles de projet plus récents tels que .NET Core et les projets .NET Standard, l’analyse héritée n’est même pas disponible.
 
-À l’instar des violations des règles d’analyse héritées, les violations de l’analyse du code source s’affichent dans la fenêtre Liste d’erreurs dans Visual Studio. En outre, les violations de l’analyse du code source s’affichent également dans l’éditeur de code sous forme de *tildes* sous le code incriminé. La couleur de la ligne ondulée dépend du [paramètre de gravité](../code-quality/use-roslyn-analyzers.md#rule-severity) de la règle. L’illustration suivante montre trois violations &mdash;one rouge, un vert et un gris :
+À l’instar des violations des règles d’analyse héritées, les violations de l’analyse du code source s’affichent dans la fenêtre Liste d’erreurs dans Visual Studio. En outre, les violations de l’analyse du code source s’affichent également dans l’éditeur de code sous forme de *tildes* sous le code incriminé. La couleur de la ligne ondulée dépend du [paramètre de gravité](../code-quality/use-roslyn-analyzers.md#rule-severity) de la règle. L’illustration suivante montre trois violations&mdash;un rouge, un vert et un gris :
 
 ![Tildes dans l’éditeur de code dans Visual Studio](media/diagnostics-severity-colors.png)
 
@@ -52,7 +52,7 @@ Les analyseurs de code inspectent le code au moment de la génération, comme l�
 Non seulement les analyseurs de code Roslyn signalent les mêmes types de problèmes que l’analyse héritée, mais ils facilitent la résolution d’une ou de toutes les occurrences de la violation dans votre fichier ou projet. Ces actions sont appelées *correctifs de code*. Les correctifs de code sont spécifiques à l’IDE ; dans Visual Studio, elles sont implémentées en tant qu' [actions rapides](../ide/quick-actions.md). Tous les diagnostics d’analyseur ont un correctif de code associé.
 
 > [!NOTE]
-> L’option de menu **analyser**  > **exécuter l’analyse du code** s’applique uniquement aux analyses héritées.
+> L’option de menu **analyser** > **exécuter l’analyse du code** s’applique uniquement aux analyses héritées.
 
 Pour faire la différence entre les violations des analyseurs de code et des analyses héritées dans la Liste d’erreurs, consultez la colonne **outil** . Si la valeur Outil correspond à l’un des assemblys d’analyseur dans l’**Explorateur de solutions**, par exemple **Microsoft.CodeQuality.Analyzers**, la violation provient d’un analyseur de code. Sinon, elle provient de l’analyse héritée.
 
@@ -69,7 +69,7 @@ Pour faire la différence entre les violations des analyseurs de code et des ana
 
 Les analyseurs de code Roslyn peuvent être installés par projet par le biais d’un package NuGet. Certains sont également disponibles en tant qu’extension Visual Studio, auquel cas ils s’appliquent à toutes les solutions que vous ouvrez dans Visual Studio. Il existe certaines différences de comportement fondamentales entre ces deux méthodes [d’installation d’analyseurs](../code-quality/install-roslyn-analyzers.md).
 
-### <a name="scope"></a>Étendue
+### <a name="scope"></a>Portée
 
 Si vous installez des analyseurs en tant qu’extension Visual Studio, ils s’appliquent au niveau de la solution et à toutes les instances de Visual Studio. Si vous installez les analyseurs comme un package NuGet, qui est la méthode recommandée, ils s’appliquent uniquement au projet dans lequel le package NuGet a été installé. Dans les environnements d’équipe, les analyseurs installés comme des packages NuGet se trouvent dans la portée de *tous les développeurs* qui travaillent sur ce projet.
 
@@ -85,7 +85,7 @@ L’illustration suivante montre la sortie de la génération en ligne de comman
 
 Vous ne pouvez pas configurer la gravité des règles à partir d’analyseurs qui ont été installés en tant qu’extension Visual Studio. Pour configurer la [gravité des règles](../code-quality/use-roslyn-analyzers.md#rule-severity), installez les analyseurs comme un package NuGet.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 > [!div class="nextstepaction"]
 > [Installer des analyseurs de code dans Visual Studio](../code-quality/install-roslyn-analyzers.md)

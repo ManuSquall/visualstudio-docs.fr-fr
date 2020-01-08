@@ -10,17 +10,17 @@ helpviewer_keywords:
 - WPF data binding [Visual Studio], walkthroughs
 - WPF Designer, data binding
 ms.assetid: 177420b9-568b-4dad-9d16-1b0e98a24d71
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 68ffb040e7d642fc2bf285f0510850edc343a5ce
-ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
+ms.openlocfilehash: 8de276bfb6d7ec8bc36380ee41d86de07fc8dd74
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72924543"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586976"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Lier des contrôles WPF à un dataset
 
@@ -60,7 +60,7 @@ Créez un projet WPF pour afficher les enregistrements de produits.
 
 1. Ouvrez Visual Studio.
 
-2. Dans le menu **Fichier**, sélectionnez **Nouveau** > **Projet**.
+2. Dans le menu **fichier** , sélectionnez **nouveau** > **projet**.
 
 3. Développez **Visual Basic** ou **Visual C#** , puis sélectionnez **Windows**.
 
@@ -112,7 +112,7 @@ Avant de pouvoir créer des contrôles liés aux données, vous devez définir u
 
    Visual Studio ajoute un nouveau `AdventureWorksLTDataSet.xsd` fichier au projet et ajoute un élément **AdventureWorksLTDataSet** correspondant à la fenêtre sources de **données** . Le fichier `AdventureWorksLTDataSet.xsd` définit un DataSet typé nommé `AdventureWorksLTDataSet` et un TableAdapter nommé `ProductTableAdapter`. Plus loin dans cette procédure pas à pas, vous allez utiliser le `ProductTableAdapter` pour remplir le dataset avec des données et enregistrer les modifications dans la base de données.
 
-9. Générez le projet.
+9. créer le projet ;
 
 ## <a name="edit-the-default-fill-method-of-the-tableadapter"></a>Modifier la méthode de remplissage par défaut du TableAdapter
 
@@ -154,7 +154,7 @@ Ajoutez plusieurs boutons à la fenêtre en modifiant le code XAML dans le Conce
    <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
    ```
 
-3. Générez le projet.
+3. créer le projet ;
 
 ## <a name="create-data-bound-controls"></a>Créer des contrôles liés aux données
 
@@ -230,7 +230,7 @@ Ajoutez du code permettant aux utilisateurs d’enregistrer les modifications ap
     > [!NOTE]
     > Cet exemple utilise la méthode `Save` de `TableAdapter` pour enregistrer les modifications. Cela nous convient dans cette procédure pas à pas, car une seule table de données est modifiée. Si vous devez enregistrer des modifications dans plusieurs tables de données, utilisez plutôt la méthode `UpdateAll` de `TableAdapterManager` générée par Visual Studio avec votre dataset. Pour plus d’informations, consultez [TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
-## <a name="test-the-application"></a>Tester l’application
+## <a name="test-the-application"></a>Tester l'application
 
 Générez et exécutez l’application. Vérifiez que vous pouvez afficher et mettre à jour les enregistrements produit.
 
@@ -250,7 +250,7 @@ Générez et exécutez l’application. Vérifiez que vous pouvez afficher et me
 
 5. Fermez l'application.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 À l’issue de cette procédure pas à pas, vous pouvez essayer les tâches associées suivantes :
 

@@ -5,19 +5,19 @@ ms.date: 09/24/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: d79260be-6234-4fd3-89b5-a9756b4a93c1
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4c3e8313e1357095a9732c9304a695dd3b13b465
-ms.sourcegitcommit: 0554b59a2a251661e56824fb9cd6e9b1f326cef1
+ms.openlocfilehash: d269102b4ab3edcf62a2101802c4731667b76eb7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71831847"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567201"
 ---
 # <a name="automatically-apply-product-keys-when-deploying-visual-studio"></a>Appliquer automatiquement des clés de produit lors du déploiement de Visual Studio
 
@@ -89,7 +89,7 @@ L’exemple suivant montre une ligne de commande servant à appliquer la licence
 
 Si `StorePID.exe` a correctement appliqué la clé de produit, la valeur 0 est retournée pour `%ERRORLEVEL%`. En cas d’erreurs, il retourne un des codes suivant en fonction de la condition d’erreur :
 
-| Error                     | Code |
+| Erreur du                     | Code |
 |---------------------------|------|
 | `PID_ACTION_SUCCESS`      | 0    |
 | `PID_ACTION_NOTINSTALLED` | 1    |
@@ -97,7 +97,7 @@ Si `StorePID.exe` a correctement appliqué la clé de produit, la valeur 0 est 
 | `PID_ACTION_EXPIRED`      | 3    |
 | `PID_ACTION_INUSE`        | 4    |
 | `PID_ACTION_FAILURE`      | 5    |
-| `PID_ACTION_NOUPGRADE`    | 6\.    |
+| `PID_ACTION_NOUPGRADE`    | 6    |
 
 > [!NOTE]
 > Quand vous exécutez une instance virtuelle de Visual Studio, assurez-vous également de virtualiser le dossier AppData Local et le registre. Pour résoudre les problèmes liés aux instances virtuelles, exécutez `C:\Program Files (x86)\Microsoft Visual Studio\<version>\Common7\IDE\DDConfigCA.exe`.  

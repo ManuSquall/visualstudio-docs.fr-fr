@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Data Sources window
 - displaying data
 ms.assetid: be8b6623-86a6-493e-ab7a-050de4661fd6
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7257bd25adf32b7529d2c5e1dc6d2a753d9b2458
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9e0746de34a16dc181baff3c8b843b123c2ae434
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648857"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587028"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Lier des contrôles à des données dans Visual Studio
 
@@ -45,7 +45,7 @@ Dans le contexte de la liaison de données, une source de données représente l
 
 ## <a name="data-sources-window"></a>Fenêtre Sources de données
 
-Les sources de données peuvent être utilisées par votre projet sous la forme d’éléments dans la fenêtre **Sources de données**. Cette fenêtre est visible quand une aire de conception de formulaire est la fenêtre active dans votre projet, ou vous pouvez l’ouvrir (quand un projet est ouvert) en choisissant **afficher**  >  d’autres**sources de données** **Windows**  > . Vous pouvez faire glisser des éléments à partir de cette fenêtre pour créer des contrôles liés aux données sous-jacentes, et vous pouvez également configurer les sources de données en cliquant avec le bouton droit.
+Les sources de données peuvent être utilisées par votre projet sous la forme d’éléments dans la fenêtre **Sources de données**. Cette fenêtre est visible quand une aire de conception de formulaire est la fenêtre active dans votre projet, ou vous pouvez l’ouvrir (quand un projet est ouvert) en choisissant **afficher** > d’autres **sources de données** **Windows** > . Vous pouvez faire glisser des éléments à partir de cette fenêtre pour créer des contrôles liés aux données sous-jacentes, et vous pouvez également configurer les sources de données en cliquant avec le bouton droit.
 
 ![Fenêtre Sources de données](../data-tools/media/raddata-data-sources-window.png)
 
@@ -55,9 +55,9 @@ Pour chaque type de données qui apparaît dans la fenêtre **Sources de donnée
 
 Le tableau suivant répertorie certaines des tâches les plus courantes que vous effectuez pour lier des contrôles à des données.
 
-|Tâche|Plus d'informations|
+|Tâche|En savoir plus|
 |----------| - |
-|Ouvrez la fenêtre **Sources de données**.|Ouvrez une aire de conception dans l’éditeur, puis choisissez **afficher**  > **sources de données**.|
+|Ouvrez la fenêtre **Sources de données**.|Ouvrez une aire de conception dans l’éditeur, puis choisissez **afficher** > **sources de données**.|
 |Ajoutez une source de données à votre projet.|[Ajouter de nouvelles sources de données](../data-tools/add-new-data-sources.md)|
 |Définissez le contrôle créé lorsque vous faites glisser un élément de la fenêtre **Sources de données** vers le concepteur.|[Définir le contrôle à créer lors d’une opération de glisser-déplacer à partir de la fenêtre Sources de données](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)|
 |Modifiez la liste des contrôles associés aux éléments dans la fenêtre **Sources de données**.|[Ajouter des contrôles personnalisés à la fenêtre Sources de données](../data-tools/add-custom-controls-to-the-data-sources-window.md)|

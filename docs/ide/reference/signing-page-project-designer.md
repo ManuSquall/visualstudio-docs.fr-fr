@@ -15,17 +15,17 @@ helpviewer_keywords:
 - Project Designer, Signing page
 - Signing page in Project Designer
 ms.assetid: dab3ba13-2f92-4827-92bd-1be3c35bc48b
-author: mikejo5000
-ms.author: mikejo
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d4fa326d65606fd06d41fc5c697b80a526c1059
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
-ms.translationtype: HT
+ms.openlocfilehash: 516e2aaf4a55ad6422200f9fef1cbbf2d435af7b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461288"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597332"
 ---
 # <a name="signing-page-project-designer"></a>Page Signature, Concepteur de projets
 
@@ -41,7 +41,7 @@ Pour accéder à la boîte de dialogue **Signature**, sélectionnez un nœud de 
 
 Case à cocher **Signer les manifestes ClickOnce**
 
-Cochez cette case pour signer les manifestes d’application et de déploiement à l’aide d’une paire de clés publique/privée. Pour plus d’informations sur la manière de procéder, consultez [Guide pratique pour signer des manifestes d’application et de déploiement](../../ide/how-to-sign-application-and-deployment-manifests.md).
+Cochez cette case pour signer les manifestes d’application et de déploiement à l’aide d’une paire de clés publique/privée. Pour plus d’informations sur cette procédure, consultez [Guide pratique pour signer des manifestes d’application et de déploiement](../../ide/how-to-sign-application-and-deployment-manifests.md).
 
 Bouton **Sélectionner dans Store**
 
@@ -73,9 +73,9 @@ Spécifie l’adresse d’un serveur qui horodate votre signature. Quand vous fo
 
 Case à cocher **Signer l’assembly**.
 
-Cochez cette case pour signer l’assembly et créer un fichier de clé de nom fort. Pour plus d’informations sur la signature d’assemblys à l’aide du **Concepteur de projet**, consultez [Guide pratique pour signer un assembly (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio).
+Cochez cette case pour signer l’assembly et créer un fichier de clé de nom fort. Pour plus d’informations sur la signature d’assemblys à l’aide du **Concepteur de projet**, consultez [Comment : signer un assembly (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio).
 
-Cette option utilise l’outil Al.exe fourni par le kit SDK Windows pour signer l’assembly. Pour plus d’informations sur Al.exe, consultez [Guide pratique pour signer un assembly avec un nom fort](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name).
+Cette option utilise l’outil Al.exe fourni par le kit SDK Windows pour signer l’assembly. Pour plus d’informations sur Al.exe, consultez [Comment : signer un assembly avec un nom fort](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name).
 
 Liste **Choisir un fichier de clé de nom fort**
 
@@ -104,5 +104,5 @@ Notez qu’un projet à signature différée ne s’exécute pas et ne peut pas 
 - [Gestion d’assembly et signature de manifeste](../../ide/managing-assembly-and-manifest-signing.md)
 - [Guide pratique pour signer des manifestes d’application et de déploiement](../../ide/how-to-sign-application-and-deployment-manifests.md)
 - [Guide pratique pour signer un assembly (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio)
-- [Guide pratique pour signer un assembly avec un nom fort](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)
+- [Comment : signer un assembly avec un nom fort](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)
 - [Assemblys avec nom fort](/dotnet/framework/app-domains/strong-named-assemblies)

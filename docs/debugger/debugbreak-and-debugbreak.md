@@ -19,15 +19,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce99cd360d75472df6326cfaf6a3f4ddb198b6d2
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 097405f98d1a80b8605b6773bdc675ff2c4ab773
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738354"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75404657"
 ---
 # <a name="debugbreak-and-__debugbreak"></a>DebugBreak et __debugbreak
-Vous pouvez appeler la fonction Win32 DebugBreak ou l’objet intrinsèque [__debugbreak](/cpp/intrinsics/debugbreak) à n’importe quel endroit de votre code. `DebugBreak` et `__debugbreak` reviennent à définir un point d'arrêt à cet emplacement.
+Vous pouvez appeler la fonction Win32 [DebugBreak](/windows/win32/api/debugapi/nf-debugapi-debugbreak) ou le [__debugbreak](/cpp/intrinsics/debugbreak) intrinsèque à n’importe quel point de votre code. `DebugBreak` et `__debugbreak` reviennent à définir un point d'arrêt à cet emplacement.
 
  Étant donné que `DebugBreak` est un appel à une fonction système, les symboles de débogage de système doivent être installés pour vérifier que les informations de pile des appels correctes sont affichées après l’arrêt. À défaut, les informations de la pile des appels affichées par le débogueur peuvent être décalées d'un frame. Si vous utilisez `__debugbreak`, les symboles ne sont pas requis.
 

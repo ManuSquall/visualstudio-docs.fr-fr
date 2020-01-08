@@ -9,17 +9,17 @@ f1_keywords:
 helpviewer_keywords:
 - solutions [Visual Studio], creating
 - projects [Visual Studio], creating
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abe2cbd18e87c7045d44e597e3a5bb93a64a1c35
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 503b343299f7b30e9f5e834099274215b262a635
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747963"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589745"
 ---
 # <a name="create-solutions-and-projects"></a>Créer des solutions et des projets
 
@@ -92,7 +92,7 @@ Vous pouvez également créer des solutions vides qui ne contiennent pas de proj
 
 ::: moniker range="vs-2017"
 
-2. Dans le volet gauche (**Modèles**), choisissez **Autres types de projets** > **Solutions Visual Studio** dans la liste développée.
+2. Dans le volet gauche (**modèles**), choisissez **autres Types de projets** > **solutions Visual Studio** dans la liste développée.
 
 3. Dans le volet du milieu, choisissez **Nouvelle Solution**.
 

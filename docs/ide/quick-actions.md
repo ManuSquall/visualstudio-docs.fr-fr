@@ -2,20 +2,20 @@
 title: Actions rapides, ampoules et tournevis
 ms.date: 03/28/2018
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 18df1378218d2188ee78d1b1b2a991e35f5ed689
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2ce8ce85e027a7ed7f78d0da1f68f328c1ca103d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666752"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596955"
 ---
 # <a name="quick-actions"></a>Actions rapides
 
@@ -50,7 +50,7 @@ Des éditeurs tiers peuvent fournir des diagnostics et des suggestions personnal
 
 ## <a name="icons"></a>Icônes
 
-L’icône qui s’affiche quand une action rapide est disponible donne une indication du type de correctif ou de refactorisation disponible. L’icône en forme de *tournevis* ![icône en forme de tournevis](media/screwdriver-icon.png) indique simplement que des actions sont disponibles pour modifier le code, mais vous ne devez pas nécessairement les utiliser. L’icône en forme *d’ampoule jaune* ![icône en forme d’ampoule](media/light-bulb-icon.png) indique qu’il existe des actions disponibles que vous *devez* effectuer pour améliorer votre code. L’icône en forme *d’ampoule d’erreur* ![icône en forme d’ampoule d’erreur](media/error-light-bulb-icon.png) indique qu’une action est disponible pour résoudre une erreur dans votre code.
+L’icône qui s’affiche quand une action rapide est disponible donne une indication du type de correctif ou de refactorisation disponible. Le *tournevis* ![icône de tournevis](media/screwdriver-icon.png) icône indique simplement qu’il y a des actions disponibles pour modifier le code, mais vous ne devez pas nécessairement les utiliser. L’icône d’ampoule *jaune* ![icône d’ampoule](media/light-bulb-icon.png) *indique que des* actions sont disponibles pour améliorer votre code. L' *icône d’ampoule d'* erreur ![icône d’ampoule](media/error-light-bulb-icon.png) icône indique qu’une action est disponible pour corriger une erreur dans votre code.
 
 ## <a name="to-see-a-light-bulb-or-screwdriver"></a>Pour afficher une ampoule ou un tournevis
 

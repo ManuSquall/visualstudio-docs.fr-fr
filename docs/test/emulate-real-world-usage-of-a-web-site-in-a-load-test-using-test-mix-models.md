@@ -6,15 +6,15 @@ helpviewer_keywords:
 - load model, specifying
 - load test load model, specifying
 ms.assetid: b7fae849-0538-40d1-ab35-2bb3a0fe4393
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c3125a229faed10b141834565fec71e3b9f0a0d2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 18e22cd151d8013a50e34a01757069dde9574e79
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664956"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589602"
 ---
 # <a name="test-mix-models-overview"></a>Vue d’ensemble des modèles de combinaison de tests
 
@@ -107,6 +107,6 @@ Vous pouvez sélectionner les tests à exécuter au début et à la fin de la se
 - [Modifier les modèles de combinaison de tests pour spécifier la probabilité d’exécution d’un test par un utilisateur virtuel](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)
 - [Modifier les modèles de charge en modèle d’activités des utilisateurs virtuels](../test/edit-load-patterns-to-model-virtual-user-activities.md)
 - [Modification de la combinaison de tests pour spécifier les tests à inclure dans un scénario de test de charge](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)
-- [Configurer les paramètres d’exécution des tests de charge](../test/configure-load-test-run-settings.md)
+- [Configurer les paramètres de série de tests de charge](../test/configure-load-test-run-settings.md)
 - [Propriétés des scénarios de test de charge](../test/load-test-scenario-properties.md)
 - [Changer le modèle de combinaison de tests dans un scénario](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)

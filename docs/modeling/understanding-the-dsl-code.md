@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, generated code
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44f66ed25ab43db2d08db3cb93263bd61ac3a907
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 1196faa5831ae44a93f21ab1808915357690a0ac
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189449"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565940"
 ---
 # <a name="understanding-the-dsl-code"></a>Fonctionnement du code DSL
 
@@ -70,7 +70,7 @@ Appuyez sur **F5** et expérimentez si vous n’êtes pas familiarisé avec ce m
 
  (Dans l'exemple de solution de composant, l'un des générateurs de connexions se nomme ConnectionBuilder. Il s'agit d'une coïncidence, car la relation de domaine se nomme Connection.)
 
- La relation est créée dans la méthode *relationship* `Builder.Connect()`. La version par défaut vérifie que les éléments de modèle cibles et sources sont acceptables, puis elle instancie la relation. Exemple :
+ La relation est créée dans la méthode *relationship*`Builder.Connect()`. La version par défaut vérifie que les éléments de modèle cibles et sources sont acceptables, puis elle instancie la relation. Par exemple :
 
  `CommentReferencesSubject(sourceAccepted, targetAccepted);`
 
@@ -118,11 +118,11 @@ Appuyez sur **F5** et expérimentez si vous n’êtes pas familiarisé avec ce m
 
    Dans l'exemple de DSL, la classe `Comment` à des accesseurs qui accèdent à son modèle parent par l'intermédiaire de la relation d'incorporation `ComponentModelHasComments`.
 
-- Des constructeurs. Si vous souhaitez les remplacer, définissez a un **constructeur personnalisé** sur la classe de domaine.
+- Constructeurs. Si vous souhaitez les remplacer, définissez a un **constructeur personnalisé** sur la classe de domaine.
 
 - Des méthodes de gestionnaire EGP (Element Group Prototype). Ils sont nécessaires si l’utilisateur peut *fusionner* (ajouter) un autre élément sur des instances de cette classe. En général, l'utilisateur effectue pour cela une opération glisser-déplacer à partir d'un outil d'élément ou d'une autre forme, ou une opération de collage.
 
-   Dans l'exemple de DSL, un port d'entrée ou un port de sortie peuvent être fusionnés sur un composant. De plus, des composants et des commentaires peuvent être fusionnés sur le modèle. La clé publique du signataire doit être fournie à la classe
+   Dans l'exemple de DSL, un port d'entrée ou un port de sortie peuvent être fusionnés sur un composant. De plus, des composants et des commentaires peuvent être fusionnés sur le modèle. Le paramètre
 
    Les méthodes de gestionnaire EGP dans la classe Components autorisent un composant à accepter des ports, mais pas des commentaires. Le gestionnaire EGP dans la classe de modèle racine accepte des commentaires et des composants, mais pas des ports.
 

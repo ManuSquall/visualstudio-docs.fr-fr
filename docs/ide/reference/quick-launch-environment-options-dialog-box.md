@@ -9,18 +9,18 @@ helpviewer_keywords:
 - searching IDE
 - IDE, searching
 ms.assetid: 4200f297-d065-4723-9a30-d91ff2e26c9d
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: f0cc6bcb59bf98a7416221115dbeeef8f24a5e74
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 706b54e3ee925b1833f860da2f84c8d28af9617e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655670"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565667"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Lancement rapide, Environnement, boîte de dialogue Options
 
@@ -34,7 +34,7 @@ Les résultats de recherche de Lancement rapide apparaissent dans quatre catégo
 
 Vous pouvez utiliser les raccourcis suivants pour limiter votre recherche à des catégories spécifiques.
 
-|Category|Raccourci|Description du raccourci|
+|Catégorie|Raccourci|Description du raccourci|
 |--------------|--------------| - |
 |Les dernières utilisées|@mru<br /><br /> Par exemple, `@mru font`.|Affiche jusqu’à cinq des éléments que vous avez **utilisés le plus récemment**.|
 |Menus|@menu<br /><br /> Par exemple, `@menu project`.|Limite la recherche aux éléments de menu.|

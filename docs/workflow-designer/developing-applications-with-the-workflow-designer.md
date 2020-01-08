@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Visual Studio Workflow Designer [WFD]
 - Workflow Designer [WFD], overview
 ms.assetid: 4cd062b1-b496-4668-bbc1-ee85545e066d
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b689628983c50fc891c5a3ebe6a0df5c952468d8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 51c38a16ddbdca376dbc9788ca49783c7956d101
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650531"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597085"
 ---
 # <a name="develop-apps-with-the-workflow-designer"></a>Développer des applications avec le Concepteur de flux de travail
 
@@ -31,7 +31,7 @@ Le Concepteur de flux de travail est un concepteur visuel et un débogueur pour 
 
 Pour utiliser des modèles de projet de workflow dans Visual Studio, installez d’abord le composant **Windows Workflow Foundation** .
 
-1. Ouvrez Visual Studio Installer. Pour l’ouvrir rapidement, vous pouvez sélectionner **outils**  > **obtenir des outils et des fonctionnalités** dans Visual Studio.
+1. Ouvrez Visual Studio Installer. Pour l’ouvrir rapidement, vous pouvez sélectionner **outils** > **obtenir des outils et des fonctionnalités** dans Visual Studio.
 
 1. Dans Visual Studio Installer, sélectionnez l’onglet **composants individuels** .
 

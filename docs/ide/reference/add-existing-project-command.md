@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Add Existing Project command
 - File.AddExistingProject
 ms.assetid: 71cf3e31-c76b-405b-ad6a-1b1bc654bd40
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05d57024c52e0a35d7e387f5ba3cccf0697fe44a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 008802546d87bd44137c6d13ee2aef802877e308
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748853"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595876"
 ---
 # <a name="add-existing-project-command"></a>Ajouter un projet existant, commande
 Ajoute un projet existant à la solution actuelle.
@@ -31,7 +31,7 @@ File.AddExistingProject filename
 
 ## <a name="arguments"></a>Arguments
 `filename`\
-Optionnel. Chemin complet et nom (extension comprise) du projet à ajouter à la solution.
+Option facultative. Chemin complet et nom (extension comprise) du projet à ajouter à la solution.
 
 Si l’argument `filename` comprend des espaces, il doit être placé entre guillemets.
 
@@ -49,7 +49,7 @@ Cet exemple ajoute le projet [!INCLUDE[vbprvb](../../code-quality/includes/vbprv
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Commande, fenêtre](../../ide/reference/command-window.md)
+- [Visual Studio, commandes](../../ide/reference/visual-studio-commands.md)
+- [Fenêtre Commande](../../ide/reference/command-window.md)
 - [Rechercher/Commande, zone](../../ide/find-command-box.md)
 - [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

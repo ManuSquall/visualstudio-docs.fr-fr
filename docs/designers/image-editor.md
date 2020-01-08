@@ -1,21 +1,21 @@
 ---
-title: Éditeur d’images
+title: éditeur d’images
 ms.date: 08/10/2018
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.imageeditor
 - vs.graphics.imageeditor
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f2430dddb4fe7de0d050ce26fc94e54c13a7779
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fd7d9aed75876b47a6574d46b226f5baec336883
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72635320"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589316"
 ---
 # <a name="image-editor"></a>éditeur d'images
 
@@ -121,7 +121,7 @@ Le tableau suivant décrit les éléments de la barre d’outils **Mode de l’�
 |**Zoom sur la taille réelle**|Affiche l’image en utilisant une relation 1:1 entre les pixels de l’image et les pixels de l’écran.|
 |**Zoom pour ajuster**|Affiche l’image entière dans le cadre de la fenêtre.|
 |**Zoom sur la largeur**|Affiche la largeur entière de l’image dans le cadre de la fenêtre.|
-|**Grid**|Active ou désactive la grille qui montre les limites des pixels. Il peut être nécessaire de faire un zoom avant pour faire apparaître la grille.|
+|**Grille**|Active ou désactive la grille qui montre les limites des pixels. Il peut être nécessaire de faire un zoom avant pour faire apparaître la grille.|
 |**Afficher le niveau MIP suivant**|Active le niveau MIP supérieur suivant dans une chaîne de mappage MIP. Le niveau MIP actif est affiché dans l’aire de conception. Cet élément est disponible seulement pour les textures qui ont des niveaux MIP.|
 |**Afficher le niveau MIP précédent**|Active le niveau MIP inférieur dans une chaîne de mappage MIP. Le niveau MIP actif est affiché dans l’aire de conception. Cet élément est disponible seulement pour les textures qui ont des niveaux MIP.|
 |**Canal rouge**<br /><br /> **Canal vert**<br /><br /> **Canal bleu**<br /><br /> **Canal alpha**|Active ou désactive le canal de couleur spécifique. **Remarque :** En activant ou en désactivant de façon systématique des canaux de couleur, vous pouvez isoler les problèmes liés à une ou plusieurs de ces couleurs. Par exemple, vous pourrez identifier une transparence alpha incorrecte.|
@@ -169,7 +169,7 @@ Vous pouvez utiliser la fenêtre **Propriétés** pour spécifier différentes p
 
 Le tableau suivant décrit les propriétés d’une image :
 
-|Property|Description|
+|Les|Description|
 |--------------|-----------------|
 |Largeur|Largeur de l’image.|
 |Hauteur|Hauteur de l’image.|
@@ -240,9 +240,9 @@ Le tableau suivant décrit les propriétés des outils :
 |**Crayon**, **Pinceau**, **Aérographe**, **Primitive 2D**|**Canaux**<br /> Active ou désactive des canaux de couleur spécifiques pour l’affichage et le dessin. Si **Afficher** est défini pour un canal de couleur spécifique, ce canal est visible dans l’image ; sinon, il n’est pas visible. Si **Dessiner** est défini pour un canal de couleur spécifique, ce canal est affecté par les opérations de dessin ; sinon, il ne l’est pas.|
 |**Sélection « Baguette magique »** , **Remplissage**|**Tolérance**<br /> Définit la différence maximale entre des couleurs adjacentes, selon laquelle elles sont considérées comme similaires, de sorte que plus ou moins de couleurs similaires font partie de la zone affectée ou sélectionnée. Par défaut, la valeur est 32, ce qui signifie que les pixels adjacents dans 32 nuances (plus claires ou plus sombres) de la couleur d’origine sont considérés comme faisant partie de la zone.|
 
-## <a name="keyboard-shortcuts"></a>Raccourcis clavier
+## <a name="keyboard-shortcuts"></a>raccourcis clavier
 
-|Commande|Raccourcis clavier|
+|Command|raccourcis clavier|
 |-------------| - |
 |Passer en mode **Sélection**|**S**|
 |Passer en mode **Zoom**|**Z**|
@@ -250,7 +250,7 @@ Le tableau suivant décrit les propriétés des outils :
 |Sélectionner tout|**Ctrl**+**A**|
 |Supprimer la sélection actuelle|**Supprimer**|
 |Annuler la sélection actuelle|**Échap** (Échappement)|
-|Zoom avant|**Ctrl**+**Roulette de la souris vers l’avant**<br /><br /> **Ctrl**+**Pg. préc**<br /><br /> Signe plus ( **+** )|
+|Zoom avant.|**Ctrl**+**Roulette de la souris vers l’avant**<br /><br /> **Ctrl**+**Pg. préc**<br /><br /> Signe plus ( **+** )|
 |Zoom arrière|**Ctrl**-**Roulette de la souris vers l’arrière**<br /><br /> **Ctrl**-**Pg. suiv**<br /><br /> Signe moins ( **-** )|
 |Panoramique de l’image vers le haut|**Roulette de la souris vers l’arrière**<br /><br /> **Pg. suiv**|
 |Panoramique de l’image vers le bas|**Roulette de la souris vers l’avant**<br /><br /> **Pg. préc**|

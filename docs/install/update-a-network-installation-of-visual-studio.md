@@ -8,19 +8,19 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 1AF69C0E-0AC9-451B-845D-AE4EDBCEA65C
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 2157a6142f95b6ffe34503a8ee80419fcb9ca506
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 990b9541e22040b53a5f509fc358013dca777906
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018809"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594433"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Mettre à jour une installation réseau de Visual Studio
 
@@ -32,7 +32,7 @@ Pour actualiser le partage d’installation réseau et inclure les dernières mi
 
 ::: moniker range="vs-2017"
 
-**Nouveautés de la version 15.3** : Si vous avez sélectionné une disposition partielle lors de la création de la disposition réseau, ces paramètres sont enregistrés. Toutes les commandes de disposition futures utilisent les options précédentes ainsi que toutes les nouvelles options que vous indiquez. Si vous vous servez d’une disposition d’une version antérieure, vous devez utiliser les mêmes paramètres de ligne de commande que ceux que vous avez utilisés quand vous avez créé la disposition d’installation réseau (autrement dit, les mêmes charges de travail et langues) pour mettre à jour son contenu.
+**Nouveauté de 15,3**: Si vous avez sélectionné une disposition partielle lorsque vous avez créé la disposition du réseau, ces paramètres sont enregistrés. Toutes les commandes de disposition futures utilisent les options précédentes ainsi que toutes les nouvelles options que vous indiquez. Si vous vous servez d’une disposition d’une version antérieure, vous devez utiliser les mêmes paramètres de ligne de commande que ceux que vous avez utilisés quand vous avez créé la disposition d’installation réseau (autrement dit, les mêmes charges de travail et langues) pour mettre à jour son contenu.
 
 ::: moniker-end
 
@@ -42,7 +42,7 @@ Si vous avez sélectionné une disposition partielle lors de la création de la 
 
 ::: moniker-end
 
-Si vous hébergez une disposition sur un partage de fichiers, vous devez mettre à jour une copie privée de la disposition (par exemple, c:\VSLayout), puis, une fois que tout le contenu mis à jour est téléchargé, copiez-le dans votre partage de fichiers (par exemple, \\Server \ Products \ VS). Si vous ne le faites pas, il est très probable que les utilisateurs exécutant le programme d’installation pendant que vous mettez à jour la disposition ne soient pas en mesure de récupérer tout le contenu de la disposition, puisque celui-ci n’est pas encore totalement à jour.
+Si vous hébergez une disposition sur un partage de fichiers, vous devez mettre à jour une copie privée de la disposition (par exemple, c:\VSLayout), puis, une fois que tout le contenu mis à jour est téléchargé, copiez-le dans votre partage de fichiers (par exemple, \\server\products\VS). Si vous ne le faites pas, il est très probable que les utilisateurs exécutant le programme d’installation pendant que vous mettez à jour la disposition ne soient pas en mesure de récupérer tout le contenu de la disposition, puisque celui-ci n’est pas encore totalement à jour.
 
 Intéressons-nous de plus près à quelques exemples de création et de mise à jour d’une disposition :
 
@@ -64,7 +64,7 @@ Intéressons-nous de plus près à quelques exemples de création et de mise à 
   vs_enterprise.exe --layout c:\VSLayout --passive
   ```
 
-* Voici comment ajouter une charge de travail supplémentaire et une langue localisée.  (Cette commande ajoute la charge de travail *Développement Azure*.)  À présent, Managed Desktop et Azure sont inclus dans cette disposition.  Les ressources de langue pour l’anglais et l’allemand sont également englobées pour toutes ces charges de travail.  De plus, la disposition est mise à jour avec la dernière version disponible.
+* Voici comment ajouter une charge de travail supplémentaire et une langue localisée.  (Cette commande ajoute la charge de travail *développement Azure* .)  Désormais, Managed Desktop et Azure sont inclus dans cette disposition.  Les ressources de langue pour l’anglais et l’allemand sont également englobées pour toutes ces charges de travail.  De plus, la disposition est mise à jour avec la dernière version disponible.
 
   ```cmd
   vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.Azure --lang de-DE
@@ -73,9 +73,9 @@ Intéressons-nous de plus près à quelques exemples de création et de mise à 
     > [!IMPORTANT]
     > Une opération de mise à jour n’installe pas les derniers composants facultatifs ajoutés, même si vous les incluez dans une section d’« ajout » du [fichier réponse](automated-installation-with-response-file.md). Cela est dû au fait que l’opération d’ajout n’est pas utilisée durant une mise à jour.
     >
-    > **Solution de contournement** : Exécutez une opération de modification distincte, après une mise à niveau, pour installer les composants manquants.
+    > **Solution de contournement**: exécutez une opération de modification distincte après une mise à niveau pour installer les composants manquants.
 
-* Et pour finir, voici comment ajouter une charge de travail et une langue localisée supplémentaires sans mettre à jour la version. (Cette commande ajoute la charge de travail *Développement web et ASP.NET*.)  Désormais, les charges de travail Managed Desktop, Azure, Développement web et ASP.NET sont incluses dans cette disposition. Les ressources de langue pour l’anglais, l’allemand et le français sont également englobées pour toutes ces charges de travail.  Toutefois, la disposition n’a été pas mise à jour vers la toute dernière version disponible lors de l’exécution de cette commande. Elle reste à la version existante.
+* Et pour finir, voici comment ajouter une charge de travail et une langue localisée supplémentaires sans mettre à jour la version. (Cette commande ajoute la charge de travail *de développement Web et ASP.net* .)  Les charges de travail de développement Web, Azure et & ASP.NET sont désormais incluses dans cette disposition. Les ressources de langue pour l’anglais, l’allemand et le français sont également englobées pour toutes ces charges de travail.  Toutefois, la disposition n’a été pas mise à jour vers la toute dernière version disponible lors de l’exécution de cette commande. Elle reste à la version existante.
 
   ```cmd
   vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.NetWeb --lang fr-FR --keepLayoutVersion

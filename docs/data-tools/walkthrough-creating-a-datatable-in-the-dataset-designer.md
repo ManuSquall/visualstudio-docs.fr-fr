@@ -7,17 +7,17 @@ helpviewer_keywords:
 - Dataset Designer, creating data tables
 - tables [Visual Studio], creating
 - data [Visual Studio], Dataset Designer
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9dbf7116c614a8eec599f197f975ab4c389bc950
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1526a5f4137ece5b76c282255af3da4ab20ac119
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648067"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586001"
 ---
 # <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>Procédure pas à pas : création d’un DataTable dans le Concepteur de DataSet
 
@@ -25,7 +25,7 @@ Cette procédure pas à pas explique comment créer une <xref:System.Data.DataTa
 
 ## <a name="create-a-new-windows-forms-application"></a>Créer une application Windows Forms
 
-1. Dans Visual Studio, dans le menu **fichier** , sélectionnez **nouveau**  > **projet**.
+1. Dans Visual Studio, dans le menu **Fichier**, sélectionnez **Nouveau** > **Projet**.
 
 2. Développez **Visual C#**  ou **Visual Basic** dans le volet gauche, puis sélectionnez **Bureau Windows**.
 

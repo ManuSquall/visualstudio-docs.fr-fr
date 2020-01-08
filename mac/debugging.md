@@ -1,29 +1,31 @@
 ---
-title: Débogage avec Xamarin
+title: Débogage avec Visual Studio pour Mac
 description: Le débogage est une partie courante et nécessaire de la programmation. Étant un IDE arrivé à maturité, Visual Studio pour Mac contient une suite complète de fonctionnalités facilitant le débogage. Du débogage sans échec à la visualisation des données, cet article explique comment utiliser tout le potentiel du débogage dans Visual Studio pour Mac.
-author: jmatthiesen
-ms.author: jomatthi
-ms.date: 05/06/2018
+author: therealjohn
+ms.author: johmil
+ms.date: 12/13/2019
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
-ms.openlocfilehash: 58844d54000dbeb86548863510ecac63bfb2ade9
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: 8a12880c25e980d668351ef4c24ced1e479577d4
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73716968"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75397921"
 ---
-# <a name="debugging-with-xamarin"></a>Débogage avec Xamarin
+# <a name="debugging-with-visual-studio-for-mac"></a>Débogage avec Visual Studio pour Mac
 
-Visual Studio pour Mac a un débogueur natif qui prend en charge le débogage des applications Xamarin.iOS, Xamarin.Mac et Xamarin.Android.
+Visual Studio pour Mac offre aux débogueurs la prise en charge des applications .Net Core, .NET Framework, Unity et Xamarin.
 
 Visual Studio pour Mac utilise le [*débogueur Mono Soft*](https://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger/), qui est implémenté dans le runtime Mono, ce qui permet de Visual Studio pour Mac de déboguer du code managé sur toutes les plateformes.
 
 ## <a name="the-debugger"></a>Le débogueur
 
-Visual Studio pour Mac utilise le débogueur Mono Soft pour déboguer le code managé (C# ou F#) dans toutes les applications Xamarin. Le débogueur Mono Soft est différent des débogueurs standard dans la mesure où il s’agit d’un débogueur coopératif qui est intégré dans le runtime Mono : le code généré et le runtime Mono fonctionnent conjointement avec l’IDE pour fournir une expérience de débogage. Le runtime Mono expose les fonctionnalités de débogage via un protocole connecté, sur lequel vous pouvez trouver plus d’informations [dans la documentation Mono](https://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger-wire-format/).
+Visual Studio pour Mac utilise le débogueur Mono Soft pour déboguer le code managé (C# ou F#) dans toutes les applications Xamarin. Le débogueur mono soft est différent des débogueurs normaux, car il s’agit d’un débogueur coopératif qui est intégré au runtime mono. le code généré et le runtime mono coopèrent avec l’IDE pour fournir une expérience de débogage. Le runtime Mono expose les fonctionnalités de débogage via un protocole connecté, sur lequel vous pouvez trouver plus d’informations [dans la documentation Mono](https://www.mono-project.com/docs/advanced/runtime/docs/soft-debugger-wire-format/).
 
 Les débogueurs « durs », comme [LLDB]( http://lldb.llvm.org/index.html) ou [GDB]( https://www.gnu.org/software/gdb/), contrôlent un programme sans connaissance ou coopération du programme débogué, mais ils peuvent néanmoins être utiles lors du débogage d’applications de Xamarin dans le cas où vous devez déboguer du code iOS ou Android natif.
+
+Pour les applications .NET Core et ASP.NET Core, Visual Studio pour Mac utilise le débogueur .NET Core. Ce débogueur est également un débogueur coopératif et fonctionne avec le Runtime .NET.
 
 ## <a name="using-the-debugger"></a>Utilisation du débogueur
 
@@ -43,9 +45,10 @@ Vous pouvez afficher tous les points d’arrêt qui ont été définis dans votr
 
 ## <a name="start-debugging"></a>Démarrer le débogage
 
-Pour démarrer le débogage, sélectionnez l’appareil cible ou un émulateur similaire dans votre IDE :
+Pour démarrer le débogage, sélectionnez le navigateur, l’appareil ou le simulateur/émulateur cible :
 
-![Sélectionner un appareil cible](media/debugging-image1.png)
+![](media/debugging-image_0.png)
+de configuration de débogage ![sélectionner un appareil cible](media/debugging-image1.png)
 
 Ensuite, déployez votre application en cliquant sur le bouton **Lecture** ou en appuyant sur **Cmd+Entrée**. Quand vous atteignez un point d’arrêt, le code est mis en surbrillance en jaune :
 
@@ -90,9 +93,9 @@ Les produits Xamarin sont livrés avec le code source pour les bibliothèques de
 
 Comme cette fonctionnalité consomme plus de mémoire pendant le débogage, elle est désactivée par défaut.
 
-Pour activer cette fonctionnalité, accédez à **Visual Studio pour Mac > Préférences > Débogueur** et vérifiez que l’option « **Déboguer uniquement le code du projet ; ignorer le code du framework** ». est **désélectionnée**, comme illustré ci-dessous :
+Pour activer cette fonctionnalité, accédez à **Visual Studio pour Mac > préférences > débogueur** et assurez-vous que l’option «**pas à pas détaillé du code externe**» est **sélectionnée**, comme illustré ci-dessous :
 
-![Option Ignorer le code du framework](media/debugging-image8.png)
+![Pas à pas détaillé de l’option de code externe](media/debugging-image8.png)
 
 ## <a name="see-also"></a>Voir aussi
 

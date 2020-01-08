@@ -4,15 +4,15 @@ ms.date: 03/14/2018
 ms.topic: quickstart
 helpviewer_keywords:
 - load testing, quickstart
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8d74072c506c4ce48ee93b759ba24aff23aa9419
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4f186e8c10d894b98e789480046d43fc957edd8a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646683"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566408"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>Démarrage rapide : Créer un projet de test de charge
 
@@ -46,7 +46,7 @@ Dans cette section, nous créons un projet de test de charge C#. Vous pouvez ég
 
 1. Ouvrez Visual Studio.
 
-2. Dans la barre de menus, choisissez **Fichier** > **Nouveau** > **Projet**.
+2. Choisissez **fichier** > **nouveau** > **projet** dans la barre de menus.
 
    La boîte de dialogue **Nouveau projet** s'affiche.
 
@@ -106,7 +106,7 @@ L’exécution du test de charge démarre. La fenêtre **Résultats des tests** 
 
 ![Fenêtre de l’analyseur de test de charge](media/load-test-analyzer.png)
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 Maintenant que vous avez créé un projet de test de charge simple, l’étape suivante consiste à configurer des scénarios, des ensembles de compteurs et des paramètres d’exécution.
 

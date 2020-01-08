@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Command mode in Command window
 - IDE Command window
 ms.assetid: 48711628-1909-4713-a73e-d7b714c77f8a
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75792518eadc5449f070b90f3f1e8c2da38bf2b3
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: cb855cbed67bffc5ff2fb63b1785c577dd9fea25
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748785"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75570347"
 ---
 # <a name="command-window"></a>Commande, fenêtre
 La fenêtre **Commande** est utilisée pour exécuter des commandes ou des alias directement dans l’environnement de développement intégré (IDE) [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Vous pouvez exécuter à la fois les commandes de menu et les commandes qui n’apparaissent dans aucun menu. Pour afficher la fenêtre **Commande**, sélectionnez **Autres fenêtres** dans le menu **Affichage** et choisissez **Fenêtre Commande**.
@@ -98,7 +98,7 @@ Pratiquement tous les commutateurs pris en charge par une commande peuvent avoir
 Quand une valeur est attribuée à un groupe de commutateurs de forme abrégée, cette valeur s’applique à chacun des commutateurs. Par exemple, `/pgm:123` équivaut à `/p:123 /g:123 /m:123`. Si l’un des commutateurs du groupe n’accepte pas la valeur spécifiée, une erreur se produit.
 
 ## <a name="escape-characters"></a>Caractères d’échappement
-La présence d’un signe d’insertion (^) dans une ligne de commande signifie que le caractère situé juste après ce signe est interprété littéralement, et non comme un caractère de contrôle. Ceci permet d’incorporer des guillemets ("), des espaces, des barres obliques, des accents circonflexes ou tout autre caractère littéral dans une valeur de paramètre ou de commutateur, à l’exception des noms de commutateur. Par exemple :
+La présence d’un signe d’insertion (^) dans une ligne de commande signifie que le caractère situé juste après ce signe est interprété littéralement, et non comme un caractère de contrôle. Ceci permet d’incorporer des guillemets ("), des espaces, des barres obliques, des accents circonflexes ou tout autre caractère littéral dans une valeur de paramètre ou de commutateur, à l’exception des noms de commutateur. Par exemple :
 
 ```cmd
 >Edit.Find ^^t /regex
@@ -112,4 +112,4 @@ Si, par exemple, vous souhaitez ouvrir un fichier qui possède un chemin contena
 ## <a name="see-also"></a>Voir aussi
 
 - [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
-- [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)
+- [Visual Studio, commandes](../../ide/reference/visual-studio-commands.md)

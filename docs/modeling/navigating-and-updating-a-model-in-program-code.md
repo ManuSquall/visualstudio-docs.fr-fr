@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7273019d837a9cc13f6ffb306946372f11ec1f7f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 521ad703b92133f56d38e061123bf13db13d6375
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658357"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566174"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>Accéder à un modèle et le mettre à jour dans le code du programme
 
@@ -55,7 +55,7 @@ Vous pouvez écrire du code pour créer et supprimer des éléments de modèle, 
 
  `henry.Name = "Henry VIII";`
 
- Si, dans la définition DSL, le **genre** d’une propriété est **calculé**, vous ne pouvez pas le définir. Pour plus d’informations, consultez [Propriétés de stockage calculées et personnalisées](../modeling/calculated-and-custom-storage-properties.md).
+ Si, dans la définition DSL, le **genre** d’une propriété est **calculé**, vous ne pouvez pas le définir. Pour plus d’informations, consultez [calculées et les propriétés de stockage personnalisé](../modeling/calculated-and-custom-storage-properties.md).
 
 ### <a name="relationships"></a>Relations
  Les relations de domaine que vous définissez dans la définition DSL deviennent des paires de propriétés, une sur la classe à chaque terminaison de la relation. Les noms des propriétés s’affichent dans le diagramme DslDefinition sous forme d’étiquettes sur les rôles de chaque côté de la relation. Selon la multiplicité du rôle, le type de la propriété est soit la classe à l’autre terminaison de la relation, soit une collection de cette classe.
@@ -80,11 +80,11 @@ Vous pouvez écrire du code pour créer et supprimer des éléments de modèle, 
 
  `link == null || link.Parent == henry && link.Child == edward`
 
- Par défaut, une seule instance d’une relation est autorisée à lier n’importe quelle paire d’éléments de modèle. Toutefois, si dans la définition DSL, l’indicateur `Allow Duplicates` a la valeur true pour la relation, il peut y avoir plusieurs liens, et vous devez utiliser `GetLinks` :
+ Par défaut, une seule instance d’une relation est autorisée à lier n’importe quelle paire d’éléments de modèle. Toutefois, si dans la définition DSL, l’indicateur `Allow Duplicates` a la valeur true pour la relation, il peut y avoir plusieurs liens, et vous devez utiliser `GetLinks`:
 
  `foreach (ParentsHaveChildren link in ParentsHaveChildren.GetLinks(henry, edward)) { ... }`
 
- Il existe également d’autres méthodes pour accéder aux liens. Exemple :
+ Il existe également d’autres méthodes pour accéder aux liens. Par exemple :
 
  `foreach (ParentsHaveChildren link in     ParentsHaveChildren.GetLinksToChildren(henry)) { ... }`
 
@@ -108,7 +108,7 @@ Vous pouvez écrire du code pour créer et supprimer des éléments de modèle, 
  `store.ElementDirectory.GetElement(elementId);`
 
 ## <a name="metadata"></a>Accès aux informations de classe
- Vous pouvez obtenir des informations sur les classes, les relations et d’autres aspects de la définition DSL. Exemple :
+ Vous pouvez obtenir des informations sur les classes, les relations et d’autres aspects de la définition DSL. Par exemple :
 
  `DomainClassInfo personClass = henry.GetDomainClass();`
 
@@ -199,13 +199,13 @@ using (Transaction t =
 
  Il existe trois façons de créer une instance d’une relation. Chacune de ces trois méthodes a le même effet :
 
-- Définissez la propriété de l’acteur de rôle source. Exemple :
+- Définissez la propriété de l’acteur de rôle source. Par exemple :
 
   - `familyTree.People.Add(edward);`
 
   - `edward.Parents.Add(henry);`
 
-- Définissez la propriété de l’acteur de rôle cible. Exemple :
+- Définissez la propriété de l’acteur de rôle cible. Par exemple :
 
   - `edward.familyTreeModel = familyTree;`
 
@@ -215,7 +215,7 @@ using (Transaction t =
 
        La multiplicité de ce rôle étant `0..*`, nous ajoutons à la collection.
 
-- Construisez une instance de la relation explicitement. Exemple :
+- Construisez une instance de la relation explicitement. Par exemple :
 
   - `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`
 
@@ -227,7 +227,7 @@ using (Transaction t =
 
 ## <a name="deleteelements"></a>Supprimer des éléments
 
-Supprimez un élément en appelant `Delete()` :
+Supprimez un élément en appelant `Delete()`:
 
 `henry.Delete();`
 
@@ -262,7 +262,7 @@ Dans certains cas, la suppression est empêchée par l’existence d’un verrou
 
  Ces trois méthodes ont toutes le même effet. Vous ne devez utiliser qu’un seul d’entre eux.
 
- Si le rôle a 0.. 1 ou 1.. 1 multiplicité, vous pouvez le définir sur `null` ou sur une autre valeur :
+ Si le rôle a 0.. 1 ou 1.. 1 multiplicité, vous pouvez le définir sur `null`ou sur une autre valeur :
 
  `edward.FamilyTreeModel = null;`//ou :
 
@@ -285,13 +285,13 @@ Dans certains cas, la suppression est empêchée par l’existence d’un verrou
 
  `link.MoveBefore(role, nextLink);`
 
-## <a name="locks"></a>Verrous
+## <a name="locks"></a> Verrous
  Vos modifications peuvent être bloquées par un verrou. Les verrous peuvent être définis sur des éléments individuels, sur des partitions et sur le magasin. Si l’un de ces niveaux a un verrou qui empêche le type de modification que vous souhaitez effectuer, une exception peut être levée lorsque vous tentez de le faire. Vous pouvez déterminer si les verrous sont définis à l’aide de l’élément. GetLocks (), qui est une méthode d’extension définie dans l’espace de noms <xref:Microsoft.VisualStudio.Modeling.Immutability>.
 
  Pour plus d’informations, consultez [définition d’une stratégie de verrouillage pour créer des segments en lecture seule](../modeling/defining-a-locking-policy-to-create-read-only-segments.md).
 
 ## <a name="copy"></a>Copier et coller
- Vous pouvez copier des éléments ou des groupes d’éléments dans un <xref:System.Windows.Forms.IDataObject> :
+ Vous pouvez copier des éléments ou des groupes d’éléments dans un <xref:System.Windows.Forms.IDataObject>:
 
 ```csharp
 Person person = personShape.ModelElement as Person;

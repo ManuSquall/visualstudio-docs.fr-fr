@@ -10,15 +10,15 @@ helpviewer_keywords:
 - agents, firewalls
 - controllers, firewalls
 ms.assetid: 211edbd7-9fe4-4251-ba85-8bec4363261b
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f29edf1582b709931e393faa0de5a1542a0ee662
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2228f5ac4dce4743fa6dafbb321f0106b5d6cc11
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665193"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595941"
 ---
 # <a name="configure-ports-for-test-controllers-and-test-agents"></a>Configurer les ports des contrôleurs de test et des agents de test
 

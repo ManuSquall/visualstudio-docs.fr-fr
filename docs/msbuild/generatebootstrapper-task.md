@@ -13,17 +13,17 @@ helpviewer_keywords:
 - MSBuild, GenerateBootstrapper task
 - GenerateBootstrapper task [MSBuild]
 ms.assetid: ca3ba2c6-d2ea-41f2-b7e3-0fc2b0730460
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f18b01a6db0068b44ad9c25037e544efa8df35a
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
+ms.openlocfilehash: 660f63f68435f4c4eba8d1c3dfb2438541da4841
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746597"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589290"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper (tâche)
 Fournit un moyen automatisé de détecter, télécharger et installer une application et ses composants requis. Elle constitue un seul programme d’installation qui intègre les programmes d’installation distincts de tous les composants d’une application.
@@ -92,11 +92,11 @@ Le tableau ci-dessous décrit les paramètres de la tâche `GenerateBootstrapper
 
    Indique un emplacement où le programme d’amorçage doit rechercher les composants requis à installer. Ce paramètre peut avoir les valeurs suivantes :
 
-  - `HomeSite`: indique que le prérequis est hébergé par le fournisseur du composant.
+  - `HomeSite` : indique que le composant requis est hébergé par le fournisseur du composant.
 
-  - `Relative`: indique que le prérequis est au même emplacement de l’application.
+  - `Relative` : indique que le composant requis est au même emplacement de l’application.
 
-  - `Absolute`: indique que tous les composants doivent se trouver à une URL centralisée. Cette valeur doit être utilisée conjointement avec le paramètre d’entrée `ComponentsUrl`.
+  - `Absolute` : indique que tous les composants doivent se trouver dans une URL centralisée. Cette valeur doit être utilisée conjointement avec le paramètre d’entrée `ComponentsUrl`.
 
     Si `ComponentsLocation` n’est pas spécifié, `HomeSite` est utilisé par défaut.
 
@@ -148,8 +148,8 @@ Le tableau ci-dessous décrit les paramètres de la tâche `GenerateBootstrapper
 
    Si `true`, le programme d’amorçage exécute la validation XSD sur les éléments de programme d’amorçage d’entrée spécifiés. La valeur par défaut de ce paramètre est `false`.
 
-## <a name="remarks"></a>Remarques
-En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).
+## <a name="remarks"></a>Notes
+En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension> , qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task> . Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Exemple
 L’exemple suivant utilise la tâche `GenerateBootstrapper` pour installer une application qui doit avoir le composant .NET Framework 2.0 installé au titre de prérequis.
@@ -176,5 +176,5 @@ L’exemple suivant utilise la tâche `GenerateBootstrapper` pour installer une 
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Tâches](../msbuild/msbuild-tasks.md)
+- [Tâches MSBuild](../msbuild/msbuild-tasks.md)
 - [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)

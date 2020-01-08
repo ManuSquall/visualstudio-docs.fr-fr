@@ -6,17 +6,17 @@ f1_keywords:
 - VS.CallHierarchy
 helpviewer_keywords:
 - Call Hierarchy
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a03a286d8b097fbd208a828411728aaa7a54690
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: dcedc6a49c0df84b4482f8030524d59d4336bcc8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668205"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595798"
 ---
 # <a name="view-call-hierarchy"></a>Afficher la hiérarchie d'appels
 
@@ -28,7 +28,7 @@ Dans Visual Studio, vous pouvez afficher une hiérarchie d’appels au moment de
 
 Pour afficher la fenêtre **Hiérarchie d’appels**, cliquez avec le bouton droit dans l’éditeur de code sur le nom d’un appel de méthode, de propriété ou de constructeur, puis sélectionnez **Afficher la hiérarchie d’appels**.
 
-Le nom du membre s’affiche dans un volet d’arborescence dans la fenêtre **Hiérarchie d’appels**. Si vous développez le nœud correspondant au membre, les sous-nœuds **Appels à** *nom de membre* et, pour C++, **Appels de** *nom de membre* apparaissent.
+Le nom du membre s’affiche dans un volet d’arborescence dans la fenêtre **Hiérarchie d’appels**. Si vous développez le nœud membre, les **appels à** *nom*de membre C++et pour, les **appels à partir du** *nom de membre*, les sous-nœuds s’affichent.
 
 Pour le code C++, vous pouvez afficher les appels émis et reçus par un membre :
 

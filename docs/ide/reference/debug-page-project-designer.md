@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Project Designer, Debug page
 - Debug page in Project Designer
 ms.assetid: ef11eae9-df96-4e20-aabd-2678ba317140
-author: mikejo5000
-ms.author: mikejo
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1f54485a4dd47b0aec4401f6cdfb39072e9f8cf
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
-ms.translationtype: HT
+ms.openlocfilehash: a2c3e7813e5e07a0fbb8f4ebf5838c883faa0fb8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461405"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595720"
 ---
 # <a name="debug-page-project-designer"></a>Page Déboguer, Concepteur de projets
 
@@ -76,11 +76,11 @@ Pour déboguer l’application à partir d’un ordinateur distant, cochez cette
 
 **Activer le débogage du code natif**
 
-Cette option spécifie si le débogage de code natif est pris en charge. Cochez cette case si vous effectuez des appels vers les objets COM ou si vous démarrez un programme personnalisé écrit en code natif qui appelle votre projet et que vous devez déboguer le code natif. Décochez cette case pour désactiver le débogage de code non managé. Elle est désactivée par défaut.
+Cette option spécifie si le débogage de code natif est pris en charge. Cochez cette case si vous effectuez des appels vers les objets COM ou si vous démarrez un programme personnalisé écrit en code natif qui appelle votre projet et que vous devez déboguer le code natif. Décochez cette case pour désactiver le débogage de code non managé. Cette case est décochée par défaut.
 
 **Activer le débogage SQL Server**
 
-Cochez ou décochez cette case pour activer ou désactiver le débogage des procédures SQL de votre application Visual Basic. Elle est désactivée par défaut.
+Cochez ou décochez cette case pour activer ou désactiver le débogage des procédures SQL de votre application Visual Basic. Cette case est décochée par défaut.
 
 ## <a name="see-also"></a>Voir aussi
 

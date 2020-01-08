@@ -8,17 +8,17 @@ helpviewer_keywords:
 - data [Visual Studio], data sources
 - data sources
 ms.assetid: ed28c625-bb89-4037-bfde-cfa435d182a2
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 99e9d9d466ae32d86b64b17738c96c245bda8f96
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 555d32eb295e944060d2efe0b843e9d157b7c675
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648897"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587054"
 ---
 # <a name="add-new-data-sources"></a>Ajouter de nouvelles sources de données
 
@@ -37,7 +37,7 @@ Dans le contexte de .NET Data Tools dans Visual Studio, le terme « *source de d
 > [!NOTE]
 > Si vous n’utilisez pas les fonctionnalités de liaison de données, DataSets, Entity Framework, LINQ to SQL, WCF ou SharePoint, le concept de « source de données » ne s’applique pas. Il vous suffit de vous connecter directement à la base de données à l’aide des objets SQLCommand et de communiquer directement avec la base de données.
 
-Vous créez et modifiez des sources de données à l’aide de l' **Assistant Configuration de source de données** dans une application Windows Forms ou Windows Presentation Foundation. Par Entity Framework, commencez par créer vos classes d’entité, puis démarrez l’Assistant en sélectionnant **projet**  > **Ajouter une nouvelle source de données** (décrit plus en détail plus loin dans cet article).
+Vous créez et modifiez des sources de données à l’aide de l' **Assistant Configuration de source de données** dans une application Windows Forms ou Windows Presentation Foundation. Par Entity Framework, commencez par créer vos classes d’entité, puis démarrez l’Assistant en sélectionnant **projet** > **Ajouter une nouvelle source de données** (décrit plus en détail plus loin dans cet article).
 
 ![Assistant Configuration de source de données](../data-tools/media/data-source-configuration-wizard.png)
 
@@ -46,7 +46,7 @@ Vous créez et modifiez des sources de données à l’aide de l' **Assistant Co
 Une fois que vous avez créé une source de données, celle-ci s’affiche dans la fenêtre outil **sources de données** .
 
 > [!TIP]
-> Pour ouvrir la **fenêtre sources de données** , assurez-vous que votre projet est ouvert, puis appuyez sur **maj** +**ALT** +**D** ou choisissez **Afficher**  >  autres**sources de données** **Windows**  > .
+> Pour ouvrir la **fenêtre sources de données** , assurez-vous que votre projet est ouvert, puis appuyez sur **maj**+**ALT**+**D** ou choisissez **Afficher** > autres **sources de données** **Windows** > .
 
 Vous pouvez faire glisser une source de données depuis la fenêtre **sources de données** vers une aire de conception de formulaire ou un contrôle. Cela entraîne la génération d’un code réutilisable qui affiche les données du magasin de données.
 
@@ -60,13 +60,13 @@ Vous pouvez créer un DataSet ou un modèle de Entity Framework à utiliser comm
 
 ### <a name="dataset"></a>Groupe de données
 
-Pour créer un DataSet en tant que source de données, exécutez l' **Assistant Configuration de source de données** en sélectionnant **projet**  > **Ajouter une nouvelle source de données**. Choisissez le type **de source de données de la base de** données, puis suivez les invites pour spécifier une connexion de base de données nouvelle ou existante ou un fichier de base de données.
+Pour créer un DataSet en tant que source de données, exécutez l' **Assistant Configuration de source de données** en sélectionnant **projet** > **Ajouter une nouvelle source de données**. Choisissez le type **de source de données de la base de** données, puis suivez les invites pour spécifier une connexion de base de données nouvelle ou existante ou un fichier de base de données.
 
 ### <a name="entity-classes"></a>Classes Entity
 
 Pour créer un modèle de Entity Framework comme source de données :
 
-1. Exécutez l' **assistant Entity Data Model** pour créer les classes d’entité. Sélectionnez **projet**  > **Ajouter un nouvel élément**  > **ADO.NET Entity Data Model**.
+1. Exécutez l' **assistant Entity Data Model** pour créer les classes d’entité. Sélectionnez **projet** > **Ajouter un nouvel élément** > **ADO.NET Entity Data Model**.
 
    ![Nouvel élément de projet de modèle de Entity Framework](../data-tools/media/raddata-new-entity-framework-model-project-item.png)
 

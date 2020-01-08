@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/15/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: e039e862040036f3d96729c3bdf48caafe092136
-ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
+ms.openlocfilehash: b8c732fb847e4d9944e0d6a5405a29e7879cbdc9
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70312249"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75400864"
 ---
 # <a name="container-tools-launch-settings"></a>Paramètres de lancement des outils de conteneur
 
@@ -49,24 +49,40 @@ Dans le dossier *Propriétés* d’un projet ASP.net Core, vous trouverez le fic
 Le paramètre commandName indique que cette section s’applique aux outils de conteneur. Le tableau suivant présente les propriétés qui peuvent être définies dans cette section :
 
 ::: moniker range="vs-2017"
-|Nom du paramètre|Exemple|Description|
+
+|Nom du paramètre|Version|Exemple|Description|
 |------------|-------|-------|---------------|
 |launchBrowser|Visual Studio 2017|« launchBrowser » : true|Indique s’il faut lancer le navigateur après avoir correctement lancé le projet.|
-|launchUrl|Visual Studio 2017|« launchUrl » : «\<Scheme >:/\</ServiceHost >\<: servicePort > »|Cette URL est utilisée lors du lancement du navigateur.  Les jetons de remplacement pris en charge pour cette chaîne sont les suivants :<br>   \<schéma >-remplacé par « http » ou « HTTPS », selon que SSL est utilisé ou non.<br>   \<serviceHost >-généralement remplacé par « localhost ». Toutefois, lorsque vous ciblez des conteneurs Windows sur Windows 10 RS3 ou une version antérieure, elles sont remplacées par l’adresse IP du conteneur.<br>   \<servicePort >-généralement remplacé par sslPort ou httpPort, selon que le protocole SSL est utilisé ou non.  Toutefois, lorsque vous ciblez des conteneurs Windows sur Windows 10 RS3 ou une version antérieure, elles sont remplacées par « 443 » ou « 80 », selon que le protocole SSL est utilisé ou non.|
-::: moniker-end
-::: moniker range=">=vs-2019"
-|Nom du paramètre|Exemple|Description|
-|------------|-------|-------|---------------|
-|commandLineArgs|« commandLineArgs » : « --MySetting MyValue »|Ces arguments de ligne de commande sont utilisés lors du lancement de votre projet dans le conteneur.|
-|environmentVariables|« environmentVariables » : {<br>    "ASPNETCORE_URLS" : "https://+:443; http://+:80",<br>    "ASPNETCORE_HTTPS_PORT": « 44381 »<br>}|Ces valeurs de variable d’environnement sont passées au processus lorsqu’il est lancé dans le conteneur.|
-|httpPort|« httpPort » : 24051|Ce port sur l’hôte est mappé au port 80 du conteneur lors du lancement du conteneur.  S’il n’est pas spécifié, la valeur est extraite de la valeur iisSettings.|
-|launchBrowser|« launchBrowser » : true|Indique s’il faut lancer le navigateur après avoir correctement lancé le projet.|
-|launchUrl|« launchUrl » : «\<Scheme >:/\</ServiceHost >\<: servicePort > »|Cette URL est utilisée lors du lancement du navigateur.  Les jetons de remplacement pris en charge pour cette chaîne sont les suivants :<br>   \<schéma >-remplacé par « http » ou « HTTPS », selon que SSL est utilisé ou non.<br>   \<serviceHost >-généralement remplacé par « localhost ». Toutefois, lorsque vous ciblez des conteneurs Windows sur Windows 10 RS3 ou une version antérieure, elles sont remplacées par l’adresse IP du conteneur.<br>   \<servicePort >-généralement remplacé par sslPort ou httpPort, selon que le protocole SSL est utilisé ou non.  Toutefois, lorsque vous ciblez des conteneurs Windows sur Windows 10 RS3 ou une version antérieure, elles sont remplacées par « 443 » ou « 80 », selon que le protocole SSL est utilisé ou non.|
-|sslPort|« sslPort » : 44381|Ce port sur l’hôte est mappé au port 443 du conteneur lors du lancement du conteneur.  S’il n’est pas spécifié, la valeur est extraite de la valeur iisSettings.|
-|useSSL|« useSSL » : true|Indique s’il faut utiliser SSL lors du lancement du projet.  Si useSSL n’est pas spécifié, SSL est utilisé lorsque sslPort > 0.
+|launchUrl|Visual Studio 2017|« launchUrl » : «\<Scheme >://\<serviceHost >:\<servicePort > »|Cette URL est utilisée lors du lancement du navigateur.  Les jetons de remplacement pris en charge pour cette chaîne sont les suivants :<br>   \<schéma > remplacé par « http » ou « HTTPS », selon que le protocole SSL est utilisé ou non.<br>   \<serviceHost >-généralement remplacé par « localhost ». Toutefois, lorsque vous ciblez des conteneurs Windows sur Windows 10 RS3 ou une version antérieure, elles sont remplacées par l’adresse IP du conteneur.<br>   \<servicePort >-habituellement remplacé par sslPort ou httpPort, selon que le protocole SSL est utilisé ou non.  Toutefois, lorsque vous ciblez des conteneurs Windows sur Windows 10 RS3 ou une version antérieure, elles sont remplacées par « 443 » ou « 80 », selon que le protocole SSL est utilisé ou non.|
+
 ::: moniker-end
 
-## <a name="next-steps"></a>Étapes suivantes
+::: moniker range=">=vs-2019"
+
+| Nom du paramètre         | Exemple                                               | Description                                                                                                             |
+| -------------------- | ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| commandLineArgs      | « commandLineArgs » : « --MySetting MyValue »              | Ces arguments de ligne de commande sont utilisés lors du lancement de votre projet dans le conteneur.                                     |
+| environmentVariables | « environmentVariables » : {                             | Ces valeurs de variable d’environnement sont passées au processus lorsqu’il est lancé dans le conteneur.                       |
+|                      | « ASPNETCORE_URLS » : « https://+:443 ; http://+:80 »,       |                                                                                                                         |
+|                      | « ASPNETCORE_HTTPS_PORT » : « 44381 »                      |                                                                                                                         |
+|                      | }                                                     |                                                                                                                         |
+| httpPort             | « httpPort » : 24051                                     | Ce port sur l’hôte est mappé au port 80 du conteneur lors du lancement du conteneur.                                |
+|                      |                                                       | S’il n’est pas spécifié, la valeur est extraite de la valeur iisSettings.                                                          |
+| launchBrowser        | « launchBrowser » : true                                 | Indique s’il faut lancer le navigateur après avoir correctement lancé le projet.                                       |
+| launchUrl            | « launchUrl » : «<scheme>://<serviceHost>:<servicePort>» | Cette URL est utilisée lors du lancement du navigateur. Les jetons de remplacement pris en charge pour cette chaîne sont les suivants :                          |
+|                      |                                                       | - <scheme> remplacé par « http » ou « HTTPS », selon que SSL est utilisé ou non.                                   |
+|                      |                                                       | - <serviceHost>-habituellement remplacé par « localhost ».                                                                    |
+|                      |                                                       | Toutefois, lorsque vous ciblez des conteneurs Windows sur Windows 10 RS3 ou une version antérieure, elles sont remplacées par l’adresse IP du conteneur.           |
+|                      |                                                       | - <servicePort>-habituellement remplacé par sslPort ou httpPort, selon que le protocole SSL est utilisé ou non.                   |
+|                      |                                                       | Toutefois, lorsque vous ciblez des conteneurs Windows sur Windows 10 RS3 ou une version antérieure, il est remplacé par « 443 » ou « 80 ».         |
+|                      |                                                       | selon que le protocole SSL est utilisé ou non.                                                                                       |
+| sslPort              | « sslPort » : 44381                                      | Ce port sur l’hôte est mappé au port 443 du conteneur lors du lancement du conteneur.                               |
+|                      |                                                       | S’il n’est pas spécifié, la valeur est extraite de la valeur iisSettings.                                                          |
+| useSSL               | « useSSL » : true                                        | Indique s’il faut utiliser SSL lors du lancement du projet. Si useSSL n’est pas spécifié, SSL est utilisé lorsque sslPort > 0. |
+
+::: moniker-end
+
+## <a name="next-steps"></a>Étapes suivantes :
 
 Configurez votre projet en définissant les [Propriétés de build des outils de conteneur](container-msbuild-properties.md).
 

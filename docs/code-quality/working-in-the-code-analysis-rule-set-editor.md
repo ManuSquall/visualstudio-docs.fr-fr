@@ -5,17 +5,17 @@ ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.ruleseteditor
 ms.assetid: 370c97bf-bb29-4b2f-b9ae-ba125bce7b2d
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e23bf15796a8ff581a8a017687f90084c338e74
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8ea828cd0cba0bdab60a1f7cf4f74dbf20bd01d2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649013"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587132"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>Utiliser l’éditeur d’ensembles de règles d’analyse du code
 
@@ -26,10 +26,10 @@ Le tableau suivant présente les options de gravité :
 |Action (gravité)|Description|
 |-|-|
 |Warning|Génère un avertissement dans le **liste d’erreurs** et également au moment de la génération.|
-|Erreur|Génère une erreur dans le **liste d’erreurs** et également au moment de la génération.|
-|Info|Génère un message dans le **liste d’erreurs**.|
+|Erreur du|Génère une erreur dans le **liste d’erreurs** et également au moment de la génération.|
+|Informations|Génère un message dans le **liste d’erreurs**.|
 |Hidden|La violation n’est pas visible pour l’utilisateur. Toutefois, l’IDE est averti de la violation.|
-|aucune.|La règle est supprimée. Le comportement est le même que si la règle a été supprimée de l’ensemble de règles.|
+|Aucun|La règle est supprimée. Le comportement est le même que si la règle a été supprimée de l’ensemble de règles.|
 
 L’éditeur affiche les règles dans une arborescence qui regroupe les règles par un champ d’ensemble de règles que vous spécifiez. Pour ajouter ou supprimer des règles dans un ensemble de règles, effectuez une ou plusieurs des étapes suivantes :
 
@@ -52,7 +52,7 @@ Le tableau suivant décrit les contrôles de la barre d’outils de l’éditeur
 |---------------------|-----------------|
 |**Développer tout**|Affiche les règles dans tous les groupes.|
 |**Réduire tout**|Masque les règles dans tous les groupes.|
-|**Group By**|Spécifie le champ selon lequel les règles sont regroupées. Cliquez sur **\<None >** pour afficher les règles sans les groupes.|
+|**Group By**|Spécifie le champ selon lequel les règles sont regroupées. Cliquez sur **\<aucun >** pour afficher les règles sans les groupes.|
 |**options de colonne**|Spécifie les champs de règle à afficher.|
 |**Masquer les règles qui ne s’appliquent pas à la solution actuelle**|Affiche ou masque les règles qui ne sont pas du même type de cible que la solution.|
 |**Afficher les règles qui peuvent générer des erreurs d’analyse du code**|Affiche ou masque les règles auxquelles l’action d’erreur est assignée.|
@@ -71,7 +71,7 @@ Le tableau suivant décrit les champs d’un ensemble de règles :
 |-----------|-----------------|
 |**ID**|Identificateur de la règle.|
 |**Catégorie**|Outre leur appartenance aux ensembles de règles, les règles d’analyse du code sont également regroupées par catégorie. Pour plus d’informations, consultez [avertissements d’analyse du code](../code-quality/code-analysis-for-managed-code-warnings.md).|
-|**Nom**|Titre de la règle.|
+|**Name**|Titre de la règle.|
 |**Namespace**|Espace de noms de la règle.|
 |**Type de cible**|Indique si la règle est pour le code natif, managé ou de base de données.|
 |**Action**|Action entreprise lorsque la règle n’est pas respectée lors d’une exécution de l’analyse du code. Vous pouvez modifier le champ **action** .|

@@ -2,8 +2,8 @@
 title: Extraire une interface (refactorisation)
 ms.date: 01/26/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 f1_keywords:
 - vs.csharp.refactoring.extractinterface
@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 15da8bdf1a3df60a7ad4816ce578ec5672c85ecf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5055f50d07cf9362c9be1bdc8135e31240a7cc66
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654417"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595668"
 ---
 # <a name="extract-an-interface-refactoring"></a>Extraire une interface (refactorisation)
 
@@ -25,7 +25,7 @@ Cette refactorisation s’applique à :
 
 - C#
 
-- Visual Basic
+- Visual Basic
 
 **Ce qui suit :** Vous permet de créer une interface à l’aide de membres existants à partir d’une classe, d’une structure ou d’une interface.
 

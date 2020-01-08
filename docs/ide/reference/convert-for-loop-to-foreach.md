@@ -2,19 +2,19 @@
 title: Refactoriser du code pour convertir une boucle for en instruction foreach
 ms.date: 05/10/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3d35897bd928166410ffd950534277cfac2c06b7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3539bae5bb2174fa4728fb8b277cce4ce9c48eb9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654551"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75570243"
 ---
 # <a name="refactoring-to-convert-between-a-for-loop-and-a-foreach-statement"></a>Refactorisation pour effectuer une conversion entre une boucle for et une instruction foreach
 
@@ -57,7 +57,7 @@ Cette refactorisation s’applique à :
 
 - C#
 
-- Visual Basic
+- Visual Basic
 
 ### <a name="why-convert"></a>Pourquoi convertir
 

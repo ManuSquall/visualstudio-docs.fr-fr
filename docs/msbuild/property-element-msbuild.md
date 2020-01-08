@@ -11,17 +11,17 @@ helpviewer_keywords:
 - <Property> Element [MSBuild]
 - Property Element [MSBuild]
 ms.assetid: 69ab08ab-3e76-41dd-a01b-49aa1d2e0cac
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2c011e700eb93293ae5fa0b08db5f486ea85ad5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 99970bfbc955fe972d5e3c9a4e38ae6f57e0e0bf
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002463"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597423"
 ---
 # <a name="property-element-msbuild"></a>Élément Property (MSBuild)
 Contient une valeur et un nom de propriété définis par l’utilisateur. Chaque propriété utilisée dans un projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] doit être spécifiée en tant qu’enfant d’un élément `PropertyGroup`.
@@ -41,7 +41,7 @@ Contient une valeur et un nom de propriété définis par l’utilisateur. Chaqu
 
 ### <a name="attributes"></a>Attributs
 
-|Attribut|Description|
+|Attribute|Description|
 |---------------|-----------------|
 |`Condition`|Attribut facultatif.<br /><br /> Condition à évaluer. Pour plus d’informations, consultez l’article [Conditions (Conditions MSBuild)](../msbuild/msbuild-conditions.md).|
 
@@ -59,7 +59,7 @@ Contient une valeur et un nom de propriété définis par l’utilisateur. Chaqu
 
  Ce texte spécifie la valeur de propriété et peut contenir du code XML.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Les noms de propriétés sont limités uniquement aux caractères ASCII. Les valeurs de propriété sont référencées dans le projet en plaçant le nom de propriété entre « `$(` » et « `)` ». Par exemple, `$(builddir)\classes` serait résolu en *build\classes* si la propriété `builddir` avait la valeur `build`. Pour plus d’informations sur les propriétés, voir [Propriétés MSBuild](../msbuild/msbuild-properties.md).
 
 ## <a name="example"></a>Exemple

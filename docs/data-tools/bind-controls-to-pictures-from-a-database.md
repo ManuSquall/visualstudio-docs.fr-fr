@@ -12,17 +12,17 @@ helpviewer_keywords:
 - PictureBox control [Windows Forms], data binding
 - images [Visual Basic], dragging from Data Sources window
 ms.assetid: 9748815e-3556-49e8-86b1-c6aa593c6163
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 64168339e5f6bd9be6b3108268a009f6a87bc22c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a4155a246516bef074a56e5644712912b2ce5af6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648830"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587002"
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>Lier des contrôles à des images d’une base de données
 
@@ -39,7 +39,7 @@ La procédure suivante suppose que la fenêtre **sources de données** est déj�
 2. Dans la fenêtre **sources de données** , développez la table ou l’objet souhaité pour afficher ses colonnes ou ses propriétés.
 
    > [!TIP]
-   > Si la fenêtre **sources de données** n’est pas ouverte, ouvrez-la en sélectionnant **Afficher**  >  d’autres**sources de données** **Windows**  > .
+   > Si la fenêtre **sources de données** n’est pas ouverte, ouvrez-la en sélectionnant **Afficher** > d’autres **sources de données** **Windows** > .
 
 3. Sélectionnez la colonne ou la propriété qui contient vos données image, puis sélectionnez l’un des contrôles suivants dans la liste déroulante de contrôle :
 

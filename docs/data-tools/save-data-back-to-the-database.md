@@ -15,17 +15,17 @@ helpviewer_keywords:
 - datasets [Visual Basic], constraints
 - TableAdapters
 ms.assetid: afe6cb8a-dc6a-428b-b07b-903ac02c890b
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ab2bd92b5636c89027c9c5954567be8048c1b152
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 64d46d4d662b7226dd2be15e6281a17e5b87e577
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648226"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586287"
 ---
 # <a name="save-data-back-to-the-database"></a>Enregistrer les données dans la base de données
 
@@ -96,14 +96,14 @@ L’appel de la méthode <xref:System.Data.DataSet.Merge%2A> avec `preserveChang
 
 Pour apporter des modifications à une ligne de données existante, ajoutez ou mettez à jour des données dans les colonnes individuelles. Si le DataSet contient des contraintes (telles que des clés étrangères ou des contraintes non Nullable), il est possible que l’enregistrement soit temporairement dans un état d’erreur lors de sa mise à jour. Autrement dit, il peut être dans un état d’erreur une fois que vous avez terminé la mise à jour d’une colonne, mais avant d’accéder à la suivante.
 
-Pour éviter les violations de contrainte prématurées, vous pouvez suspendre temporairement les contraintes de mise à jour. Cela répond à deux objectifs :
+Pour éviter les violations de contrainte prématurées, vous pouvez suspendre temporairement les contraintes de mise à jour. Cela a deux objectifs :
 
 - Elle empêche la levée d’une erreur une fois que vous avez terminé la mise à jour d’une colonne, mais que vous n’avez pas commencé à la mettre à jour.
 
 - Il empêche l’déclenchement de certains événements de mise à jour (événements souvent utilisés pour la validation).
 
 > [!NOTE]
-> Dans Windows Forms, l’architecture de liaison de données intégrée au DataGrid interrompt la vérification des contraintes jusqu’à ce que le focus quitte une ligne et que vous n’ayez pas à appeler explicitement les méthodes <xref:System.Data.DataRow.BeginEdit%2A>, <xref:System.Data.DataRow.EndEdit%2A> ou <xref:System.Data.DataRow.CancelEdit%2A>.
+> Dans Windows Forms, l’architecture de liaison de données intégrée au DataGrid interrompt la vérification des contraintes jusqu’à ce que le focus quitte une ligne et que vous n’ayez pas à appeler explicitement les méthodes <xref:System.Data.DataRow.BeginEdit%2A>, <xref:System.Data.DataRow.EndEdit%2A>ou <xref:System.Data.DataRow.CancelEdit%2A>.
 
 Les contraintes sont automatiquement désactivées lorsque la méthode <xref:System.Data.DataSet.Merge%2A> est appelée sur un DataSet. Une fois la fusion terminée, si des contraintes sur le DataSet ne peuvent pas être activées, une <xref:System.Data.ConstraintException> est levée. Dans ce cas, la propriété <xref:System.Data.DataSet.EnforceConstraints%2A> est définie sur `false,` et toutes les violations de contrainte doivent être résolues avant de réinitialiser la propriété <xref:System.Data.DataSet.EnforceConstraints%2A> à `true`.
 
@@ -129,9 +129,9 @@ Le tableau suivant détaille les valeurs possibles de l’énumération <xref:Sy
 | - |-----------------|
 |<xref:System.Data.DataRowState.Added>|La ligne a été ajoutée en tant qu’élément à un <xref:System.Data.DataRowCollection>. (Une ligne dans cet État n’a pas de version d’origine correspondante, car elle n’existait pas lors de l’appel de la dernière méthode de <xref:System.Data.DataRow.AcceptChanges%2A>).|
 |<xref:System.Data.DataRowState.Deleted>|La ligne a été supprimée à l’aide de la <xref:System.Data.DataRow.Delete%2A> d’un objet <xref:System.Data.DataRow>.|
-|<xref:System.Data.DataRowState.Detached>|La ligne a été créée mais ne fait partie d’aucune <xref:System.Data.DataRowCollection>. Un objet <xref:System.Data.DataRow> est dans cet État immédiatement après sa création, avant d’être ajouté à une collection et après avoir été supprimé d’une collection.|
+|<xref:System.Data.DataRowState.Detached>|La ligne a été créée, mais n'appartient à aucun <xref:System.Data.DataRowCollection>. Un objet <xref:System.Data.DataRow> est dans cet État immédiatement après sa création, avant d’être ajouté à une collection et après avoir été supprimé d’une collection.|
 |<xref:System.Data.DataRowState.Modified>|Une valeur de colonne dans la ligne a été modifiée d’une certaine façon.|
-|<xref:System.Data.DataRowState.Unchanged>|La ligne n’a pas été modifiée depuis le dernier appel de <xref:System.Data.DataRow.AcceptChanges%2A>.|
+|<xref:System.Data.DataRowState.Unchanged>|La ligne n'a pas été modifiée depuis le dernier appel à <xref:System.Data.DataRow.AcceptChanges%2A>.|
 
 ### <a name="datarowversion-enumeration"></a>DataRowVersion (énumération)
 
@@ -259,7 +259,7 @@ Toutefois, pour la deuxième ligne, la méthode `Update` appelle automatiquement
    > [!NOTE]
    > Si la propriété `UpdateCommand` du TableAdapter a été définie sur le nom d’une procédure stockée, l’adaptateur ne construit pas d’instruction SQL. Au lieu de cela, il appelle la procédure stockée avec les paramètres appropriés passés.
 
-## <a name="pass-parameters"></a>Passer des paramètres
+## <a name="pass-parameters"></a>Transmettre des paramètres
 
 En général, vous utilisez des paramètres pour transmettre les valeurs des enregistrements qui vont être mis à jour dans la base de données. Lorsque la méthode `Update` du TableAdapter exécute une instruction UPDATE, elle doit remplir les valeurs des paramètres. Elle obtient ces valeurs à partir de la collection `Parameters` pour la commande de données appropriée, dans ce cas, l’objet `UpdateCommand` dans le TableAdapter.
 
@@ -278,5 +278,5 @@ Dans une instruction UPDATE, vous devez spécifier les nouvelles valeurs (celles
 - [Créer et configurer des TableAdapters](create-and-configure-tableadapters.md)
 - [Guide pratique pour mettre à jour les données à l’aide d’un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)
 - [Lier des contrôles à des données dans Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
-- [Valider les données](validate-data-in-datasets.md)
+- [Valider des données](validate-data-in-datasets.md)
 - [Guide pratique pour ajouter, modifier et supprimer des entités (services de données WCF)](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)

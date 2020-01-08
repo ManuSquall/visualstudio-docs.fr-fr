@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b63a0b1801b0a3b559281959975a1faaa5bb99a5
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.openlocfilehash: abaae887e39b85e4f2d363a63ef6cde5845e3fa2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516786"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597397"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Étape 1 : créer un projet et ajouter une table à votre formulaire
 
@@ -25,7 +25,7 @@ La première étape pour créer un jeu de combinaisons consiste à créer le pro
 
 ::: moniker range="vs-2017"
 
-1. Dans la barre de menus, choisissez **Fichier** > **Nouveau** > **Projet**.
+1. Dans la barre de menus, choisissez **fichier** > **nouveau** **projet**>.
 
 1. Choisissez **Visual C#** ou **Visual Basic** dans la partie gauche de la boîte de dialogue **Nouveau projet**, puis, choisissez **Windows Desktop**.
 
@@ -117,10 +117,10 @@ La première étape pour créer un jeu de combinaisons consiste à créer le pro
        > [!NOTE]
        > La police Webdings est une police d'icônes fournie avec le système d'exploitation Windows. Dans votre jeu de combinaisons, cette police vous permet d'afficher les icônes que le joueur doit associer par paires. Au lieu de mettre **c** dans la propriété **Text**, essayez d’entrer des lettres différentes pour voir quelles icônes sont affichées. Un point d'exclamation est une araignée, un N majuscule est un œil et une virgule un piment rouge.
 
-5. Choisissez le contrôle d’étiquette et copiez-le dans la cellule suivante du TableLayoutPanel. (Appuyez sur les touches **Ctrl** +**C** ou, dans la barre de menus, choisissez **modifier**  > **copier**.) Puis collez-le. (Appuyez sur les touches **Ctrl** +**V** , ou dans la barre de menus, choisissez **Edition**  > **coller**.) Une copie de la première étiquette apparaît dans la deuxième cellule du TableLayoutPanel. Collez-le à nouveau, et une autre étiquette s'affiche dans la troisième cellule. Continuez à coller des contrôles d’étiquette jusqu'à ce que toutes les cellules soient remplies.
+5. Choisissez le contrôle d’étiquette et copiez-le dans la cellule suivante du TableLayoutPanel. (Appuyez sur les touches **Ctrl**+**C** ou, dans la barre de menus, choisissez **modifier** > **copier**.) Puis collez-le. (Appuyez sur les touches **Ctrl**+**V** , ou dans la barre de menus, choisissez **Edition** > **coller**.) Une copie de la première étiquette apparaît dans la deuxième cellule du TableLayoutPanel. Collez-le à nouveau, et une autre étiquette s'affiche dans la troisième cellule. Continuez à coller des contrôles Label jusqu'à ce que toutes les cellules soient remplies.
 
    > [!NOTE]
-   > Si vous effectuez un trop grand nombre de collages, l'IDE ajoute une nouvelle ligne au TableLayoutPanel pour fournir la place nécessaire à l'ajout de votre nouveau contrôle d’étiquette. Vous pouvez l'annuler. Pour supprimer la nouvelle cellule, appuyez sur **Ctrl**+**Z** ou, dans la barre de menus, choisissez **Modification** > **Annuler**.
+   > Si vous effectuez un trop grand nombre de collages, l'IDE ajoute une nouvelle ligne au TableLayoutPanel pour qu'il puisse insérer votre nouveau contrôle Label. Vous pouvez l'annuler. Pour supprimer la nouvelle cellule, appuyez sur **Ctrl**+**Z** ou, dans la barre de menus, choisissez **Modification** > **Annuler**.
 
     Votre formulaire est maintenant disposé. Elle doit ressembler à l’image suivante.
 

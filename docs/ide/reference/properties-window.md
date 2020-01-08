@@ -15,17 +15,17 @@ helpviewer_keywords:
 - virtual functions, Properties window
 - Properties window
 ms.assetid: e6e0fa4f-75c4-4a52-af15-281cd61876ca
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4701f5ea882ab2fbb75f11bc3cc6d85fc92b4b8e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d1be1d4fa9f1b088547bb21dfb64254209783d7e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655694"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565706"
 ---
 # <a name="properties-window"></a>Propriétés (fenêtre)
 
@@ -39,7 +39,7 @@ Nom de l’objet\
 Répertorie les objets actuellement sélectionnés. Seuls les objets de l’éditeur ou du concepteur actif sont visibles. Quand vous sélectionnez plusieurs objets, seules les propriétés communes à tous les objets sélectionnés s’affichent.
 
 Par catégorie\
-Répertorie, par catégorie, toutes les propriétés et valeurs de propriété pour l’objet sélectionné. Vous pouvez réduire une catégorie afin de limiter le nombre de propriétés visibles. Quand vous développez ou réduisez une catégorie, un signe plus (+) ou moins (-) s’affiche à gauche du nom de la catégorie. Les catégories sont répertoriées par ordre alphabétique.
+Répertorie, par catégorie, toutes les propriétés et valeurs de propriété pour l’objet sélectionné. Vous pouvez réduire une catégorie afin de limiter le nombre de propriétés visibles. Lorsque vous développez ou réduisez une catégorie, un signe plus (+) ou moins (-) s'affiche à gauche du nom de la catégorie. Les catégories sont répertoriées par ordre alphabétique.
 
 Alphabétique\
 Trie par ordre alphabétique l’ensemble des événements et propriétés au moment du design pour les objets sélectionnés. Pour modifier une propriété non estompée, cliquez dans la cellule située à sa droite et entrez les modifications souhaitées.
@@ -72,7 +72,7 @@ Répertorie toutes les fonctions virtuelles de la classe sélectionnée, et vous
 > Ce contrôle de barre d’outils de la fenêtre **Propriétés** n’est disponible que quand la fenêtre active est **Affichage de classes** dans le contexte d’un projet [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)].
 
 Volet Description\
-Présente le type de la propriété et la décrit brièvement. Vous pouvez activer et désactiver la description de la propriété à l’aide de la commande Description du menu contextuel.
+Présente le type de la propriété et la décrit brièvement. Vous pouvez activer et désactiver la description de la propriété via la commande Description située dans le menu contextuel.
 
 > [!NOTE]
 > Ce contrôle de barre d’outils de la fenêtre **Propriétés** n’est pas disponible lors de la modification de fichiers XAML dans le concepteur.

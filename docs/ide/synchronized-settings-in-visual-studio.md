@@ -3,17 +3,17 @@ title: Synchroniser les paramètres
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.assetid: a3d2ea29-be5d-4012-9820-44b06adbb7dd
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cebfc33b3bc0fc664874dd8c531e6630b3e64c5c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8f7183f20139df82d14f80ee4b57e28b4aed3a66
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647430"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566785"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>Synchroniser les paramètres Visual Studio sur plusieurs ordinateurs
 
@@ -52,7 +52,7 @@ Les paramètres synchronisés pour Visual Studio sont activés par défaut. Vous
 Par exemple, si vous décidez de ne pas synchroniser les paramètres de Visual Studio sur l’ordinateur « A », les changements apportés aux paramètres sur l’ordinateur « A » n’apparaissent pas sur l’ordinateur « B » ou « C ». Les ordinateurs « B » et « C » continuent à se synchroniser entre eux, mais pas avec l’ordinateur « A ».
 
 > [!NOTE]
-> Si vous choisissez de ne pas synchroniser les paramètres en désélectionnant l’option sur la page **Outils** > **Options** > **Environnement**  >  **Comptes**, les autres versions ou éditions de Visual Studio dont vous disposez sur le même ordinateur ne sont pas affectées. Ces installations côte à côte de Visual Studio continuent de synchroniser leurs paramètres (sauf si vous décochez l’option).
+> Si vous choisissez de ne pas synchroniser les paramètres en désélectionnant l’option sur la page **Outils** > **Options** > **Environnement** > **Comptes**, les autres versions ou éditions de Visual Studio dont vous disposez sur le même ordinateur ne sont pas affectées. Ces installations côte à côte de Visual Studio continuent de synchroniser leurs paramètres (sauf si vous décochez l’option).
 
 ## <a name="synchronize-settings-across-visual-studio-family-products-and-editions"></a>Synchroniser les paramètres entre les éditions et les produits de la famille Visual Studio
 

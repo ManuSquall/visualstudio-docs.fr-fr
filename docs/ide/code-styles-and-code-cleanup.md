@@ -2,20 +2,20 @@
 title: Options de style de code et de nettoyage du code
 ms.date: 04/25/2019
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Code_Style.General
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d653898e6c6a8ab856a5b7763d12fd793708b9f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9d540339ca25fc42fc05df4818a6d05204ccae0e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72631104"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585403"
 ---
 # <a name="code-style-preferences"></a>Préférences de style de code
 
@@ -58,7 +58,7 @@ Les options définies dans cette fenêtre sont applicables à votre compte de pe
 
 ### <a name="preference-and-severity"></a>Préférence et gravité
 
-Pour chaque paramètre de style de code de cette page, vous pouvez définir les valeurs **Préférence** et **Gravité** en utilisant les listes déroulantes sur chaque ligne. L’option Gravité peut avoir la valeur **Refactorisation uniquement**, **Suggestion**, **Avertissement** ou **Erreur**. Si vous souhaitez activer les [actions rapides](../ide/quick-actions.md) pour un style de code, vérifiez que la valeur de l’option **Gravité** n’est pas **Refactorisation uniquement**. L’icône d’ampoule **Actions rapides** ![ampoule](media/light-bulb-dropdown.png), d’ampoule d’erreur ![ampoule d’erreur](media/error-bulb.png)ou de tournevis ![tournevis](media/screwdriver.png) apparaît quand un style qui n’est pas un style par défaut est utilisé. Vous pouvez choisir une option dans la liste **Actions rapides** pour réécrire automatiquement le code avec le style par défaut.
+Pour chaque paramètre de style de code de cette page, vous pouvez définir les valeurs **Préférence** et **Gravité** en utilisant les listes déroulantes sur chaque ligne. L’option Gravité peut avoir la valeur **Refactorisation uniquement**, **Suggestion**, **Avertissement** ou **Erreur**. Si vous souhaitez activer les [actions rapides](../ide/quick-actions.md) pour un style de code, vérifiez que la valeur de l’option **Gravité** n’est pas **Refactorisation uniquement**. L’icône d’ampoule **Actions rapides**![ampoule](media/light-bulb-dropdown.png), d’ampoule d’erreur ![ampoule d’erreur](media/error-bulb.png)ou de tournevis ![tournevis](media/screwdriver.png) apparaît quand un style qui n’est pas un style par défaut est utilisé. Vous pouvez choisir une option dans la liste **Actions rapides** pour réécrire automatiquement le code avec le style par défaut.
 
 ## <a name="apply-code-styles"></a>Appliquer des styles de code
 
@@ -82,7 +82,7 @@ La première fois que vous déclenchez la commande **Mettre en forme le document
 
 ::: moniker range=">=vs-2019"
 
-Pour C# les fichiers de code, Visual Studio 2019 a un bouton de **nettoyage de code** en bas de l’éditeur (clavier : **ctrl** +**K**, **CTRL** +**E**) pour appliquer des styles de code à partir d’un fichier EditorConfig ou du **style de code** page d’options. S’il existe un fichier *.editorconfig* pour le projet, ces paramètres sont prioritaires.
+Pour C# les fichiers de code, Visual Studio 2019 a un bouton de **nettoyage de code** en bas de l’éditeur (clavier : **ctrl**+**K**, **CTRL**+**E**) pour appliquer des styles de code à partir d’un fichier EditorConfig ou de la page Options de **style de code** . S’il existe un fichier *.editorconfig* pour le projet, ces paramètres sont prioritaires.
 
 ![Exécuter le nettoyage du code dans Visual Studio 2019](media/execute-code-cleanup.png)
 

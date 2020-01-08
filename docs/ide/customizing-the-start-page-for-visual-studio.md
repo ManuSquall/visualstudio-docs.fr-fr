@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Start Page [Visual Studio]
 - customizing Start Page [Visual Studio]
 - Visual Studio Start Page
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0a415c8a61e360ed1bcc323214d4144b2875cc0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 281a0c43c0163d158151683e9fdc483dfc1709f5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652551"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567214"
 ---
 # <a name="customize-startup"></a>Personnaliser le démarrage
 
@@ -58,7 +58,7 @@ Pour installer une page de démarrage personnalisée, ouvrez le fichier *.vsix*,
 
 ### <a name="to-select-which-custom-start-page-to-display"></a>Pour sélectionner la page de démarrage personnalisée à afficher
 
-1. Dans la barre de menus, choisissez **Outils**>**Options**.
+1. Dans la barre de menus, choisissez **outils** > **options**.
 
 1. Développez **Environnement**, puis choisissez **Démarrage**.
 

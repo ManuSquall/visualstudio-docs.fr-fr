@@ -6,17 +6,17 @@ f1_keywords:
 - vs.codedUItest.testeditor
 helpviewer_keywords:
 - coded UI test, Coded UI Test Editor
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 971b5d178a777b7a0021eda4bfccab06727981ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: 1e861c31fa2959c3bace008af7937f6686b2705f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665000"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589654"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>Modifier des tests codés de l’interface utilisateur à l’aide de l’éditeur de test codé de l’interface utilisateur
 
@@ -24,7 +24,7 @@ L'éditeur de test codé de l'interface utilisateur vous permet de modifier faci
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
-**Prérequis**
+**Spécifications**
 
 - Visual Studio Enterprise
 - Composant Test codé de l’interface utilisateur
@@ -94,7 +94,7 @@ Après avoir effectué vos modifications, enregistrez-les dans le fichier *UIMap
 
 - Parfois, il peut être difficile de visualiser l’emplacement des contrôles dans l’interface utilisateur de l’application testée. L'une des fonctionnalités de l'éditeur de test codé de l'interface utilisateur vous permet de sélectionner un contrôle répertorié dans le mappage de contrôle d'interface utilisateur et d'afficher son emplacement dans l'application testée. Pour plus d’informations, consultez [Localiser un contrôle d’IU dans l’application testée](#locate-a-ui-control-in-the-application-under-test) un peu plus loin dans cet article.
 
-- Il peut s'avérer nécessaire de développer le contrôle conteneur qui contient le contrôle à modifier. Pour plus d’informations, consultez [Localiser un contrôle et ses descendants](#locate-a-control-and-its-descendants) un peu plus loin dans cet article.
+- Il peut s’avérer nécessaire de développer le contrôle conteneur qui contient le contrôle à modifier. Pour plus d’informations, consultez [Localiser un contrôle et ses descendants](#locate-a-control-and-its-descendants) un peu plus loin dans cet article.
 
 ## <a name="delete-unwanted-ui-actions"></a>Supprimer les actions d'interface utilisateur inutiles
 
@@ -125,7 +125,7 @@ Une fois que vous avez terminé de diviser la méthode, enregistrez les modifica
 
 - Vous pouvez renommer la nouvelle méthode. Sélectionnez-la dans le volet **Actions d'interface utilisateur** et choisissez le bouton **Renommer** dans la barre d'outils de l'éditeur de test codé de l'interface utilisateur.
 
-   ou
+   \- ou -
 
    Ouvrez le menu contextuel de la nouvelle méthode de test et choisissez **Renommer**.
 
@@ -188,7 +188,7 @@ Dans le volet **Action d'interface utilisateur** , développez la méthode de te
 
 Une fois que vous avez terminé d’insérer le délai, enregistrez les modifications dans le fichier *UIMap.Designer* en choisissant **Enregistrer** dans la barre d’outils Visual Studio.
 
-Si vous devez vous assurer qu'un contrôle spécifique est disponible avant une action d'interface utilisateur, vous devez envisager d'ajouter du code personnalisé à votre méthode de test à l'aide de la méthode UITestControl.WaitForControlXXX() appropriée. Pour plus d’informations, consultez [Suspension des tests codés de l’interface utilisateur en attendant des événements spécifiques pendant la lecture](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).
+Si vous devez vous assurer qu’un contrôle spécifique est disponible avant une action d’interface utilisateur, vous devez envisager d’ajouter du code personnalisé à votre méthode de test à l’aide de la méthode UITestControl.WaitForControlXXX() appropriée. Pour plus d’informations, consultez [Suspension des tests codés de l’interface utilisateur en attendant des événements spécifiques pendant la lecture](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).
 
 ## <a name="see-also"></a>Voir aussi
 

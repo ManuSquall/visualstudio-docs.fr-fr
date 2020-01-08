@@ -20,17 +20,17 @@ helpviewer_keywords:
 - defaults, colors
 - printers, customizing
 ms.assetid: c767d302-51ed-47a8-a527-c07bce2aa485
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 527c01629fbff856748a50d393ca5df2a413d056
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9d5c9edd47e3db43735d3c6e8f6a4ec1a881214e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667019"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595616"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Polices et couleurs, Environnement, boîte de dialogue Options
 
@@ -104,7 +104,7 @@ Voici certains éléments d'affichage :
 |**Texte brut**|Texte dans l'éditeur.|
 |**Texte sélectionné**|Texte inclus dans la sélection actuelle quand l'éditeur a le focus.|
 |**Texte sélectionné inactif**|Texte inclus dans la sélection actuelle quand l'éditeur a perdu le focus.|
-|**Marge des indicateurs**|Marge de gauche de l'éditeur de code où les points d'arrêt et les icônes de signet sont affichés.|
+|**Marge des indicateurs**|marge à gauche de l'éditeur de code où sont affichés les points d'arrêt et les icônes de signet.|
 |**Numéros de ligne**|Numéros facultatifs qui apparaissent en regard de chaque ligne de code|
 |**Espaces blancs visibles**|Indicateurs des espaces, des onglets et du retour automatique à la ligne|
 |**Signet**|Lignes qui ont des signets. Le **signet** n’est visible que si la marge des indicateurs est désactivée.|
@@ -132,7 +132,7 @@ Voici certains éléments d'affichage :
 |**Zone non couverte**|Code non couvert par un test unitaire.|
 |**Zone partiellement couverte**|Code partiellement couvert par un test unitaire.|
 |**Zone couverte**|Code complètement couvert par un test unitaire.|
-|**Commentaire CSS**|Commentaire dans des feuilles de style en cascade. Exemple :<br /><br /> /* commentaire \*/|
+|**Commentaire CSS**|Commentaire dans des feuilles de style en cascade. Par exemple :<br /><br /> /* commentaire \*/|
 |**Mot clé CSS**|Mots clés dans la feuille de style en cascade.|
 |**Nom de propriété CSS**|Nom d'une propriété, par exemple Background.|
 |**Valeur de propriété CSS**|Valeur assignée à une propriété, par exemple blue.|
@@ -168,7 +168,7 @@ Voici certains éléments d'affichage :
 |**Marqueur SQL DML**|S'applique à l'éditeur Transact-SQL. Les instructions DML dans cet éditeur sont marquées avec un cadre englobant bleu par défaut.|
 |**Code périmé**|Code annulé et remplacé en attente d'une mise à jour. Dans certains cas, Modifier & Continuer ne peut pas appliquer immédiatement les modifications du code, mais ce sera le cas plus tard, durant le débogage. Cela se produit si vous modifiez une fonction qui doit appeler la fonction en cours d'exécution, ou si vous ajoutez plus de 64 octets de nouvelles variables à une fonction en attente dans la pile des appels. Dans ce cas, le débogueur affiche la boîte de dialogue "Avertissement : code périmé". Par ailleurs, le code annulé et remplacé continue à s'exécuter jusqu'à ce que la fonction en question s'arrête et soit appelée à nouveau. Modifier & Continuer applique les modifications du code à ce moment-là.|
 |**String**|Littéraux de chaîne.|
-|**String (C# @ Verbatim)**|Les littéraux de chaîne en C# sont interprétés textuellement. Exemple :<br /><br /> @"x"|
+|**String (C# @ Verbatim)**|Les littéraux de chaîne en C# sont interprétés textuellement. Par exemple :<br /><br /> @"x"|
 |**Erreur de syntaxe**|Erreurs d'analyse.|
 |**Raccourci de la liste des tâches**|Si le raccourci **Liste des tâches** est ajouté à une ligne, et si la marge des indicateurs est désactivée, la ligne est mise en surbrillance.|
 |**Point de trace (Désactivé)**|Non utilisé.|

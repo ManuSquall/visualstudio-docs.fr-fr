@@ -1,19 +1,19 @@
 ---
-title: 'Procédure : créer un nuanceur Lambert de base'
+title: 'Procédure : créer un nuanceur Lambert de base'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ec5c10fb-9600-4240-8280-d59451ea1d68
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2034c09098aeded57671186731729a5928be8e6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d78bc6e1b384f339d80e09fec81d42c1ab8ed103
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72636204"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589498"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>Guide pratique pour créer un nuanceur Lambert de base
 
@@ -53,7 +53,7 @@ Pour plus d’informations sur l’application d’un nuanceur à un modèle 3D,
 ## <a name="see-also"></a>Voir aussi
 
 - [Guide pratique pour appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)
-- [Comment : exporter un nuanceur](../designers/how-to-export-a-shader.md)
+- [Guide pratique pour exporter un nuanceur](../designers/how-to-export-a-shader.md)
 - [Comment : créer un nuanceur Phong de base](../designers/how-to-create-a-basic-phong-shader.md)
 - [Concepteur de nuanceur](../designers/shader-designer.md)
 - [Nœuds du concepteur de nuanceur](../designers/shader-designer-nodes.md)

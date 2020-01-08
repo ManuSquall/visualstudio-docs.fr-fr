@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - databases, managing change
 ms.assetid: 40b51f5a-d52c-44ac-8f84-037a0917af33
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 11e60c43e2b9935f4aaf2ffcc5d5c7e3683665d1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cc8d32ddcc332264278cf76392ac69a6188ca51c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648576"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586729"
 ---
 # <a name="database-projects-and-data-tier-applications"></a>Projets de base de données et applications de la couche données
 

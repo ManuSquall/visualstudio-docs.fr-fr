@@ -2,23 +2,23 @@
 title: Référence API pour les modèles de texte T4
 ms.date: 11/04/2016
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ea5bb78951b144c60b76677f399f74bea4ab51a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 56b857770ac793e7df7f75ecee03cb089df1eeb2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654318"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597212"
 ---
 # <a name="api-reference-for-t4-text-templates"></a>Référence API pour les modèles de texte T4
 
 L’API de création de modèles de texte vous permet d’appeler et de personnaliser la transformation des [modèles de texte](../modeling/code-generation-and-t4-text-templates.md).
 
-## <a name="namespaces"></a>Espaces de noms
+## <a name="namespaces"></a>Espaces de noms des
 
 |Espace de noms|Fonction|
 |-|-|

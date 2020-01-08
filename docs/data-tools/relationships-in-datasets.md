@@ -10,17 +10,17 @@ helpviewer_keywords:
 - datasets [Visual Basic], relationships
 - relationships, datasets
 ms.assetid: cfe274f0-71fe-40f6-994e-7c7f6273c9ba
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c9fab55c020894fe87ec4dc1c31137fb7e38c204
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a9d733892b3bc62c272f31b0d7cc1aa10fbf229d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648252"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586313"
 ---
 # <a name="create-relationships-between-datasets"></a>Créer des relations entre les datasets
 Les jeux de données qui contiennent des tables de données associées utilisent des objets <xref:System.Data.DataRelation> pour représenter une relation parent/enfant entre les tables et pour retourner les enregistrements associés les uns des autres. L’ajout de tables associées à des jeux de données à l’aide de l' **Assistant Configuration de source de données**, ou du **Concepteur de DataSet**, crée et configure l’objet <xref:System.Data.DataRelation> pour vous.
@@ -92,7 +92,7 @@ Les relations entre les tables de données apparaissent sous forme de lignes dan
 
 7. Indiquez si vous souhaitez créer une relation, une contrainte ou les deux.
 
-8. Activez ou désactivez la case à cocher **relation imbriquée** . La sélection de cette option affecte à la propriété <xref:System.Data.DataRelation.Nested%2A> la valeur `true` et entraîne l’imbrication des lignes enfants de la relation dans la colonne parent lorsque ces lignes sont écrites sous forme de données XML ou synchronisées avec <xref:System.Xml.XmlDataDocument>. Pour plus d’informations, consultez [imbrication de DataRelations](/dotnet/framework/data/adonet/dataset-datatable-dataview/nesting-datarelations).
+8. Activez ou désactivez la case à cocher **relation imbriquée** . La sélection de cette option affecte à la propriété <xref:System.Data.DataRelation.Nested%2A> la valeur `true`et entraîne l’imbrication des lignes enfants de la relation dans la colonne parent lorsque ces lignes sont écrites sous forme de données XML ou synchronisées avec <xref:System.Xml.XmlDataDocument>. Pour plus d’informations, consultez [imbrication de DataRelations](/dotnet/framework/data/adonet/dataset-datatable-dataview/nesting-datarelations).
 
 9. Définissez les règles à appliquer lorsque vous apportez des modifications aux enregistrements de ces tables. Pour plus d'informations, consultez <xref:System.Data.Rule>.
 

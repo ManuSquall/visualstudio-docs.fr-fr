@@ -12,17 +12,17 @@ helpviewer_keywords:
 - forms, passing data between
 - Windows Forms, walkthroughs
 ms.assetid: 78bf038b-9296-4fbf-b0e8-d881d1aff0df
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: eb4b1c0af617bfd8e1771e500b4f12699e3f0ec4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 358cdc4822aa0da1d980f22196618aeaada4b1be
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72641434"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586365"
 ---
 # <a name="pass-data-between-forms"></a>Passer des données entre des formulaires
 
@@ -31,7 +31,7 @@ Cette procédure pas à pas fournit des instructions détaillées pour passer de
 > [!NOTE]
 > Cette procédure pas à pas n'indique qu'un seul moyen de passer les données entre formulaires. Il existe d’autres options pour passer des données à un formulaire, notamment la création d’un deuxième constructeur pour la réception de données, ou la création d’une propriété publique qui peut être définie avec les données du premier formulaire.
 
-Cette procédure pas à pas décrit notamment les tâches suivantes :
+Cette procédure pas à pas décrit notamment les tâches suivantes :
 
 - Création d’un projet d' **application de Windows Forms** .
 
@@ -67,7 +67,7 @@ Cette procédure pas à pas utilise SQL Server Express base de données locale e
 
 ## <a name="create-the-windows-forms-app-project"></a>Créer le projet d’application Windows Forms
 
-1. Dans Visual Studio, dans le menu **fichier** , sélectionnez **nouveau**  > **projet**.
+1. Dans Visual Studio, dans le menu **Fichier**, sélectionnez **Nouveau** > **Projet**.
 
 2. Développez **Visual C#**  ou **Visual Basic** dans le volet gauche, puis sélectionnez **Bureau Windows**.
 
@@ -190,7 +190,7 @@ Ajoutez une requête TableAdapter à Form2 pour charger les commandes du client 
 
 - Double-cliquez sur un enregistrement client dans **Form1** pour ouvrir **Form2** avec les commandes de ce client.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 Selon les exigences de votre application, vous pouvez exécuter différentes étapes après le transfert de données entre formulaires. Vous pouvez apporter à cette procédure pas à pas les améliorations suivantes :
 

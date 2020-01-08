@@ -12,17 +12,17 @@ helpviewer_keywords:
 - displaying data, Windows Forms
 - data [Windows Forms], displaying
 ms.assetid: 243338ef-41af-4cc5-aff7-1e830236f0ec
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 24c3549cf98e49f3419ef0e7387a6c236c15e9e6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 244829edb30bbd43384ba445852f0a9ceafafb3f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648843"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587015"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Lier des contrôles Windows Forms à des données dans Visual Studio
 
@@ -31,7 +31,7 @@ Vous pouvez afficher des données pour les utilisateurs de votre application en 
 ![Opération glisser de source de données](../data-tools/media/raddata-data-source-drag-operation.png)
 
 > [!TIP]
-> Si la fenêtre **sources de données** n’est pas visible, vous pouvez l’ouvrir en choisissant **Afficher**  >  d’autres**sources de données** **Windows**  > , ou en appuyant sur **MAJ** +**ALT** +**D**. Pour afficher la fenêtre **sources de données** , vous devez disposer d’un projet ouvert dans Visual Studio.
+> Si la fenêtre **sources de données** n’est pas visible, vous pouvez l’ouvrir en choisissant **Afficher** > d’autres **sources de données** **Windows** > , ou en appuyant sur **MAJ**+**ALT**+**D**. Pour afficher la fenêtre **sources de données** , vous devez disposer d’un projet ouvert dans Visual Studio.
 
 Avant de faire glisser des éléments, vous pouvez définir le type de contrôle auquel vous souhaitez effectuer la liaison. Différentes valeurs s’affichent selon que vous choisissez la table elle-même ou une colonne individuelle.  Vous pouvez également définir des valeurs personnalisées. Pour une table, les **Détails** signifient que chaque colonne est liée à un contrôle distinct.
 
@@ -53,7 +53,7 @@ Le [contrôle BindingNavigator](/dotnet/framework/winforms/controls/bindingnavig
 
 ## <a name="bind-to-data-in-a-datagridview-control"></a>Lier à des données dans un contrôle DataGridView
 
-Pour un [contrôle DataGridView](/dotnet/framework/winforms/controls/datagridview-control-overview-windows-forms), la totalité de la table est liée à ce contrôle unique. Lorsque vous faites glisser un **DataGridView** vers le formulaire, une barre d’outils pour parcourir les enregistrements (<xref:System.Windows.Forms.BindingNavigator>) s’affiche également. Un [jeu de données](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/create-and-configure-tableadapters.md), <xref:System.Windows.Forms.BindingSource> et <xref:System.Windows.Forms.BindingNavigator> apparaissent dans la barre d’état des composants. Dans l’illustration suivante, un [TableAdapterManager](https://msdn.microsoft.com/library/bb384426.aspx) est également ajouté, car la table Customers a une relation avec la table Orders. Ces variables sont toutes déclarées dans le code généré automatiquement comme membres privés dans la classe Form. Le code généré automatiquement pour le remplissage du **DataGridView** se trouve dans le gestionnaire d’événements `Form_Load`. Le code permettant d’enregistrer les données pour mettre à jour la base de données se trouve dans le gestionnaire d’événements `Save` pour le **BindingNavigator**. Vous pouvez déplacer ou modifier ce code en fonction des besoins.
+Pour un [contrôle DataGridView](/dotnet/framework/winforms/controls/datagridview-control-overview-windows-forms), la totalité de la table est liée à ce contrôle unique. Lorsque vous faites glisser un **DataGridView** vers le formulaire, une barre d’outils pour parcourir les enregistrements (<xref:System.Windows.Forms.BindingNavigator>) s’affiche également. Un [jeu de données](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/create-and-configure-tableadapters.md), <xref:System.Windows.Forms.BindingSource>et <xref:System.Windows.Forms.BindingNavigator> apparaissent dans la barre d’état des composants. Dans l’illustration suivante, un [TableAdapterManager](https://msdn.microsoft.com/library/bb384426.aspx) est également ajouté, car la table Customers a une relation avec la table Orders. Ces variables sont toutes déclarées dans le code généré automatiquement comme membres privés dans la classe Form. Le code généré automatiquement pour le remplissage du **DataGridView** se trouve dans le gestionnaire d’événements `Form_Load`. Le code permettant d’enregistrer les données pour mettre à jour la base de données se trouve dans le gestionnaire d’événements `Save` pour le **BindingNavigator**. Vous pouvez déplacer ou modifier ce code en fonction des besoins.
 
 ![GridView avec BindingNavigator](../data-tools/media/raddata-gridview-with-bindingnavigator.png)
 

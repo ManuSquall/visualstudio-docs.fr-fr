@@ -7,15 +7,15 @@ helpviewer_keywords:
 - load tests, walkthroughs
 - load tests, correlating dynamic parameters
 ms.assetid: 92dff25c-36ee-4135-acdd-315c4962fa11
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 265d1510cd4c8a47478344ba06efcf5e4f43f946
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b4328c5b71fa7023ec9c2ab68ae6725f5855ada5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664975"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589641"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Corriger les paramètres dynamiques non détectables dans un test de performances de site Web
 
@@ -25,7 +25,7 @@ Certains sites Web utilisent des paramètres dynamiques pour traiter certaines d
 
 - Valeurs de paramètre dynamique qui sont définies dans les champs masqués des pages HTML, telles que l'état d'affichage ASP.NET. Celles-ci sont gérées automatiquement par l'enregistreur qui ajoute des règles d'extraction de champs masqués au test.
 
-- Valeurs de paramètre dynamique qui sont définies comme paramètres de chaîne de requête ou de publication de formulaire. Celles-ci sont gérées par le biais de la détection des paramètres dynamiques après avoir enregistré un test de performances web.
+- Valeurs de paramètre dynamique qui sont définies comme paramètres de chaîne de requête ou de publication de formulaire. Celles-ci sont gérées via la détection des paramètres dynamiques après avoir enregistré un test de performances de site Web.
 
 Certains types de paramètres dynamiques ne sont pas détectés. Un paramètre dynamique non détecté provoquera l'échec du test de performances de site Web lors de son exécution, car la valeur dynamique sera différente à chaque exécution du test. Pour gérer correctement ces paramètres, vous pouvez ajouter manuellement des règles d'extraction aux paramètres dynamiques dans les tests de performances de site Web.
 
@@ -174,7 +174,7 @@ Pour illustrer un paramètre dynamique détectable et non détectable, nous cré
 
 ## <a name="run-the-test-to-isolate-the-non-detected-dynamic-parameter"></a>Exécuter le test pour isoler le paramètre dynamique non-détecté
 
-1. Exécutez le test.
+1. Exécuter le test.
 
      ![Exécuter le test de performances de site web](../test/media/web_test_dynamicparameter_runtest.png)
 
@@ -245,7 +245,7 @@ Pour illustrer un paramètre dynamique détectable et non détectable, nous cré
 
      ![Paramètres dynamiques détectés et corrélés](../test/media/web_test_dynamicparameter_conclusion.png)
 
-11. Exécutez le test. Il fonctionne maintenant sans échec.
+11. Exécuter le test. Il fonctionne maintenant sans échec.
 
 ## <a name="qa"></a>Questions et réponses
 
@@ -265,4 +265,4 @@ Pour illustrer un paramètre dynamique détectable et non détectable, nous cré
 
 ### <a name="q-do-i-need-to-configure-visual-studio-to-detect-dynamic-parameters"></a>Q : Dois-je configurer Visual Studio pour détecter les paramètres dynamiques ?
 
-**R :** La configuration Visual Studio par défaut consiste à détecter les paramètres dynamiques quand vous enregistrez un test de performances web. Toutefois, si les options Visual Studio sont configurées pour ne pas détecter de paramètres dynamiques, ou si l’application web qui est testée est modifiée à l’aide de paramètres dynamiques supplémentaires, vous pouvez toujours exécuter une détection des paramètres dynamiques dans l’éditeur de test de performances Web.
+**R :** La configuration Visual Studio par défaut consiste à détecter les paramètres dynamiques quand vous enregistrez un test de performances web. Toutefois, si les options Visual Studio sont configurées pour ne pas détecter de paramètres dynamiques, ou si l'application web qui est testée est modifiée à l'aide de paramètres dynamiques supplémentaires, vous pouvez toujours exécuter une détection des paramètres dynamiques dans l'Éditeur de tests de performances de site Web.

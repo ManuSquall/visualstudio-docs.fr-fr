@@ -2,17 +2,17 @@
 title: Action rapide Ajouter un paramètre à une méthode
 ms.date: 09/28/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d1edc9d38ff4476a9fe76886676bfce1c80a61db
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6720421fd5188688214665d85de682542b1c1357
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658805"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595863"
 ---
 # <a name="add-a-parameter-to-a-method-using-a-quick-action"></a>Ajouter un paramètre à une méthode avec une Action rapide
 
@@ -20,7 +20,7 @@ Cette génération de code s’applique à :
 
 - C#
 
-- Visual Basic
+- Visual Basic
 
 **Quoi :** permet d’ajouter automatiquement un paramètre à une méthode, selon l’utilisation.
 

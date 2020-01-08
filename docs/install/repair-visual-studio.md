@@ -5,19 +5,19 @@ description: Découvrez comment réparer une installation de Visual Studio 2017
 ms.date: 07/31/2019
 ms.custom: seodec18
 ms.topic: conceptual
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ed6b7050d2162fc4e893db6ec4f429fbe3f8eb4f
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
-ms.translationtype: HT
+ms.openlocfilehash: 255995f7ca660d36ae40a6a8fead4b3ea5d70424
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681348"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594550"
 ---
 # <a name="repair-visual-studio"></a>Réparer Visual Studio
 
@@ -36,7 +36,7 @@ Il peut arriver que votre installation Visual Studio soit endommagée ou corromp
 
 1. Dans le programme d’installation, choisissez **Plus**, puis choisissez **Réparer**.
 
-    ![Réparer Visual Studio dans Visual Studio Installer](media/repair-visual-studio.png "Réparer Visual Studio dans Visual Studio Installer")
+    ![Réparez Visual Studio à partir de l’Visual Studio Installer](media/repair-visual-studio.png "Réparez Visual Studio à partir de l’Visual Studio Installer")
 
    > [!NOTE]
    > La réparation de Visual Studio réinitialisera l’environnement. Les personnalisations locales comme les extensions par utilisateur installées sans élévation, les paramètres utilisateurs et les profils seront supprimées. Vos paramètres synchronisés tels que les thèmes, les couleurs et les combinaisons de touches seront restaurés.
@@ -53,7 +53,7 @@ Il peut arriver que votre installation Visual Studio soit endommagée ou corromp
 
      Par exemple, sur un ordinateur exécutant Windows 10, sélectionnez **Démarrer**, puis faites défiler jusqu’à la lettre **V** où il est répertorié comme **Visual Studio Installer**.
 
-     ![Ouvrir Visual Studio Installer](media/vs-2019/vs-installer-windows-start.png "Ouvrir Visual Studio Installer")
+     ![Ouvrez le Visual Studio Installer](media/vs-2019/vs-installer-windows-start.png "Ouvrez le Visual Studio Installer")
 
      > [!NOTE]
      > Vous trouverez également Visual Studio Installer à l’emplacement suivant :
