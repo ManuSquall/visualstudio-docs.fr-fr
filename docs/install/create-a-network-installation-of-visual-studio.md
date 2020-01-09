@@ -8,19 +8,19 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 4CABFD20-962E-482C-8A76-E4012052F701
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ca393af528abc7f685ceca83ac4c59ebb75dedfe
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: e7bc45db427a517a9208833cc5be6977bfc62d03
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189490"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591474"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Créer une installation réseau de Visual Studio
 
@@ -39,9 +39,9 @@ Téléchargez un fichier de programme d’amorçage pour l’édition de Visual 
 
 Pour obtenir un programme d’amorçage pour Visual Studio 2017, consultez la page de téléchargement des [versions précédentes de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) pour plus d’informations sur la façon de procéder.
 
-L’exécutable de votre programme d’installation &mdash;or pour être plus précis, le fichier du programme d’amorçage &mdash;should correspond ou est semblable à l’un des éléments suivants.
+L’exécutable du programme d’installation&mdash;ou pour être plus spécifique, le fichier du programme d’amorçage&mdash;doit correspondre ou être similaire à l’un des éléments suivants.
 
-| Édition | Nom de fichier |
+| Édition | NomFichier |
 |-------------|-----------------------|
 |Visual Studio Enterprise | **vs_enterprise.exe** |
 |Visual Studio Professional | **vs_professional.exe** |
@@ -53,7 +53,7 @@ Les autres programmes d’amorçage pris en charge incluent **vs_feedbackclient.
 
 ::: moniker range="vs-2019"
 
-L’exécutable de votre programme d’installation &mdash;or pour être plus précis, un fichier de programme d’amorçage &mdash;should correspondre ou être similaire à l’un des éléments suivants.
+L’exécutable du programme d’installation&mdash;ou pour être plus précis, un fichier de programme d’amorçage&mdash;doit correspondre ou être similaire à l’un des éléments suivants.
 
 |Édition | Télécharger|
 |-------------|-----------------------|
@@ -90,7 +90,7 @@ Vous devez avoir une connexion Internet pour effectuer cette étape. Pour créer
 
 Vous pouvez modifier response.json pour définir les valeurs par défaut qui sont utilisées lors de l’exécution du programme d’installation.  Par exemple, vous pouvez configurer le fichier `response.json` pour sélectionner un ensemble spécifique de charges de travail sélectionnées automatiquement. Pour plus d’informations, consultez [Automatiser l’installation de Visual Studio avec un fichier réponse](automated-installation-with-response-file.md).
 
-Et, si vous rencontrez un problème avec le programme d’amorçage de Visual Studio en levant une erreur lorsque vous le couplez avec un fichier Response. JSON, consultez la section « échec de l’analyse de l’ID du processus parent » de la section [résolution des erreurs liées au réseau lors de l’installation ou de l’utilisation de Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md#error-failed-to-parse-id-from-parent-process) page pour plus d’informations sur la marche à suivre.
+Et, si vous rencontrez un problème avec le programme d’amorçage de Visual Studio en levant une erreur lorsque vous le couplez avec un fichier Response. JSON, consultez la section « échec de l’analyse de l’ID du processus parent » de la page [résoudre les erreurs liées au réseau lorsque vous installez ou utilisez Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md#error-failed-to-parse-id-from-parent-process) pour plus d’informations sur la marche à suivre.
 
 ## <a name="copy-the-layout-to-a-network-share"></a>Copier la disposition sur un partage réseau
 
@@ -100,7 +100,7 @@ L’exemple suivant utilise [xcopy](/windows-server/administration/windows-comma
 
 ::: moniker range="vs-2017"
 
-Exemple :
+Exemple :
 
 ```cmd
 xcopy /e c:\VSLayout \\server\products\VS2017

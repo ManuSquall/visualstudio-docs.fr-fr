@@ -6,15 +6,15 @@ helpviewer_keywords:
 - load tests, command line
 - load tests, run settings, selecting
 ms.assetid: 175d1d58-f09a-4449-b132-a29a394a7c8e
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 09aa92b36058ff714784aff12851e1b82c78a99a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 760cf18062e607e9f9039c6cc5f4adf409134cb5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653458"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588991"
 ---
 # <a name="how-to-select-a-load-test-run-setting-to-use-from-the-command-line"></a>Guide pratique pour sélectionner un paramètre d’exécution des tests de charge à utiliser à partir d’une ligne de commande
 
@@ -36,7 +36,7 @@ Si votre test de charge contient un seul paramètre d'exécution, c'est toujours
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Configurer les paramètres d’exécution des tests de charge](../test/configure-load-test-run-settings.md)
+- [Configurer les paramètres de série de tests de charge](../test/configure-load-test-run-settings.md)
 - [Spécifier les ensembles de compteurs et les règles de seuil des ordinateurs dans un test de charge](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md)
 - [Guide pratique pour ajouter des paramètres d’exécution supplémentaires à un test de charge](../test/how-to-add-additional-run-settings-to-a-load-test.md)
 - [Guide pratique pour sélectionner le paramètre d’exécution actif d’un test de charge](../test/how-to-select-the-active-run-setting-for-a-load-test.md)

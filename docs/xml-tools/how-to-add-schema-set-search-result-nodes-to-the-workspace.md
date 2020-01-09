@@ -3,17 +3,17 @@ title: Ajouter des nœuds de résultat de recherche de jeu de schémas XML à l�
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ff33b3cc-4db9-4b4e-9378-b45ed5999b18
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be024ac139d2b420f56b14158afd33ae5b7e917d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1bdb21c2b9ce3f6a79bf24738c84fcb3064c24cb
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646020"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592787"
 ---
 # <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>Comment : ajouter des nœuds de résultat de recherche de jeu de schémas à l’espace de travail
 
@@ -30,7 +30,7 @@ Cet exemple utilise l’exemple de [schéma de bon de commande](../xml-tools/sam
 
 2. Tapez « purchaseOrder » dans la zone de texte Rechercher de la barre d’outils de l' [Explorateur XML](../xml-tools/xml-schema-explorer.md) , puis cliquez sur le bouton Rechercher.
 
-     ![Recherche par mot clé de l'Explorateur de schémas XML](../xml-tools/media/schemaexplorersearch.gif)
+     ![Recherche par mot clé dans l'Explorateur de schémas XML](../xml-tools/media/schemaexplorersearch.gif)
 
      Les résultats de la recherche sont mis en surbrillance dans l' **Explorateur de schémas XML** et marqués par des graduations sur la barre de défilement verticale.
 

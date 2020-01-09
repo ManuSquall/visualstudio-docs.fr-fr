@@ -9,17 +9,17 @@ helpviewer_keywords:
 - managed code analysis warnings, design warnings
 - warnings, design
 ms.assetid: 34e65a18-560c-423f-814f-519089e318cf
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc714a4663505fe2a40cc145e8c8ca3c7bf86a1e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 301b829341eeb859030afabbf2225ea833e99a22
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649670"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587678"
 ---
 # <a name="design-warnings"></a>Avertissements liés à la conception
 
@@ -31,10 +31,10 @@ Les avertissements de conception prennent en charge l’adhésion aux [règles d
 | - | - |
 | [CA1000 : Ne déclarez pas de membres statiques sur les types génériques](../code-quality/ca1000.md) | Lorsqu'un membre statique d'un type générique est appelé, l'argument de type doit être spécifié pour le type. Lorsqu'un membre d'instance générique qui ne prend pas en charge l'inférence est appelé, l'argument de type doit être spécifié pour le membre. Dans ces deux cas, la syntaxe permettant de spécifier l'argument de type est différente et peut être facilement confondue. |
 | [CA1001 : Les types qui ont des champs supprimables doivent être supprimables](../code-quality/ca1001.md) | Une classe déclare et implémente un champ d’instance qui est un type System. IDisposable et la classe n’implémente pas IDisposable. Une classe qui déclare un champ IDisposable possède indirectement une ressource non managée et doit implémenter l'interface IDisposable. |
-| [CA1002 : N’exposez pas de listes génériques](../code-quality/ca1002.md) | System. Collections. Generic. List < (of \< (T >) >) est une collection générique conçue pour les performances, et non pour l’héritage. Par conséquent, la liste ne contient aucun membre virtuel. Les collections génériques qui sont conçues pour l’héritage doivent être exposées à la place. |
+| [CA1002 : N’exposez pas de listes génériques](../code-quality/ca1002.md) | System.Collections.Generic.List < (de \<(T >) >) est une collection générique qui est conçue pour les performances, pas l’héritage. Par conséquent, la liste ne contient aucun membre virtuel. Les collections génériques qui sont conçues pour l’héritage doivent être exposées à la place. |
 | [CA1003 : Utiliser les instances du gestionnaire d’événements génériques](../code-quality/ca1003.md) | Un type contient un délégué qui retourne void, dont la signature contient deux paramètres (le premier objet et le deuxième un type qui peut être assigné à EventArgs), et l’assembly conteneur cible .NET Framework 2,0. |
 | [CA1004 : Les méthodes génériques doivent fournir un paramètre de type](../code-quality/ca1004.md) | L'inférence désigne la manière dont l'argument de type d'une méthode générique est déterminé par le type d'argument passé à la méthode, au lieu d'utiliser la spécification explicite de l'argument de type. Pour activer l'inférence, la signature de paramètre d'une méthode générique doit contenir un paramètre du même type que le paramètre de type de la méthode. Dans ce cas, il n'est pas nécessaire de spécifier l'argument de type. Quand vous utilisez l’inférence pour tous les paramètres de type, la syntaxe pour appeler des méthodes d’instance génériques et non génériques est identique ; Cela simplifie l’utilisation des méthodes génériques. |
-| [CA1005 : Évitez trop de paramètres sur les types génériques](../code-quality/ca1005.md) | Plus un type générique contient de paramètres de type, plus il est difficile de déterminer et de mémoriser la représentation de chaque paramètre de type. Elle est généralement évidente avec un paramètre de type, comme dans la liste \<T > et, dans certains cas, avec deux paramètres de type, comme dans Dictionary \<TKey, TValue >. Cependant, s’il existe plus de deux paramètres de type, la difficulté devient trop grande pour la plupart des utilisateurs. |
+| [CA1005 : Évitez trop de paramètres sur les types génériques](../code-quality/ca1005.md) | Plus un type générique contient de paramètres de type, plus il est difficile de déterminer et de mémoriser la représentation de chaque paramètre de type. Elle est généralement évidente avec un paramètre de type, comme dans la liste\<T > et, dans certains cas, avec deux paramètres de type, comme dans Dictionary\<TKey, TValue >. Cependant, s’il existe plus de deux paramètres de type, la difficulté devient trop grande pour la plupart des utilisateurs. |
 | [CA1006 : Ne pas imbriquer les types génériques dans les signatures de membre](../code-quality/ca1006.md) | Un argument de type imbriqué est un argument de type qui est également un type générique. Pour appeler un membre dont la signature contient un argument de type imbriqué, l'utilisateur doit instancier un type générique et passer ce type au constructeur d'un deuxième type générique. La procédure et la syntaxe requises sont complexes et doivent être évitées. |
 | [CA1007 : Utiliser des méthodes génériques lorsque cela est approprié](../code-quality/ca1007.md) | Une méthode visible de l'extérieur contient un paramètre de référence de type System.Object. L'utilisation d'une méthode générique autorise le passage de tous les types, soumis à des contraintes, dans la méthode sans cast préalable du type vers le type de paramètre de référence. |
 | [CA1008 : Les énumérations doivent avoir la valeur zéro](../code-quality/ca1008.md) | La valeur par défaut d'une énumération non initialisée, comme d'autres types valeur, est zéro. Une énumération attribuée sans indicateur doit définir un membre à l’aide de la valeur de zéro afin que la valeur par défaut soit une valeur valide de l’énumération. Si une énumération à laquelle l'attribut FlagsAttribute est appliqué définit un membre de valeur zéro, son nom doit être "None" pour indiquer qu'aucune valeur n'a été définie dans l'énumération. |
@@ -88,7 +88,7 @@ Les avertissements de conception prennent en charge l’adhésion aux [règles d
 | [CA1061 : Ne masquez pas les méthodes de la classe de base](../code-quality/ca1061.md) | Une méthode dans un type de base est masquée par une méthode portant le même nom dans un type dérivé, lorsque la signature de paramètre de la méthode dérivée diffère uniquement par les types qui sont dérivés plus faiblement que les types correspondants dans la signature de paramètre de la méthode de base. |
 | [CA1062 : Valider les arguments de méthodes publiques](../code-quality/ca1062.md) | Tous les arguments de référence passés aux méthodes visibles de l'extérieur doivent être vérifiés pour voir s'ils ont la valeur null. |
 | [CA1063 : Implémentez IDisposable correctement](../code-quality/ca1063.md) | Tous les types IDisposable doivent implémenter le modèle Dispose correctement. |
-| [CA1064 : Les exceptions doivent être publiques](../code-quality/ca1064.md) | Une exception interne est uniquement visible à l'intérieur de sa propre portée interne. Lorsque l'exception se situe en dehors de la portée interne, seule l'exception de base peut être utilisée pour intercepter l'exception. Si l’exception interne est héritée de <xref:System.Exception?displayProperty=fullName>, <xref:System.SystemException?displayProperty=fullName> ou <xref:System.ApplicationException?displayProperty=fullName>, le code externe ne disposera pas d’informations suffisantes pour savoir ce qu’il faut faire avec l’exception. |
+| [CA1064 : Les exceptions doivent être publiques](../code-quality/ca1064.md) | Une exception interne est uniquement visible à l'intérieur de sa propre portée interne. Lorsque l'exception se situe en dehors de la portée interne, seule l'exception de base peut être utilisée pour intercepter l'exception. Si l’exception interne est héritée de <xref:System.Exception?displayProperty=fullName>, <xref:System.SystemException?displayProperty=fullName>, ou <xref:System.ApplicationException?displayProperty=fullName>, le code externe n’aura pas d’informations suffisantes pour savoir que faire avec l’exception. |
 | [CA1065 : Ne levez pas d’exceptions dans des emplacements inattendus](../code-quality/ca1065.md) | Une méthode dont l'objet n'est pas de lever des exceptions lève une exception. |
 | [Ca1068 : les paramètres CancellationToken doivent être en dernier](../code-quality/ca1068.md) | Une méthode a un paramètre CancellationToken qui n’est pas le dernier paramètre. |
 | [CA2210 : Les assemblys doivent avoir des noms forts valides](../code-quality/ca2210.md) | Le nom fort protège les clients du chargement à leur insu d'un assembly falsifié. Les assemblys sans noms forts ne doivent pas être déployés hors de scénarios très limités. Si vous partagez ou distribuez des assemblys qui ne sont pas signés correctement, ceux-ci peuvent être falsifiés, le Common Language Runtime peut ne pas les charger ou l'utilisateur peut être amené à désactiver une vérification sur son ordinateur. |

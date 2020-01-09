@@ -5,19 +5,19 @@ ms.topic: conceptual
 helpviewer_keywords:
 - load tests, load patterns
 ms.assetid: 4a69e857-f93b-4907-9a01-fd1b66291205
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a45bcbdc149a6d3665efb0bc203d4a21138c979a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a40f7ce4aacfdc03b5e05becbfc83439945f7e8a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653347"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588913"
 ---
 # <a name="how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern"></a>Guide pratique pour spécifier la propriété de la durée de démarrage de l’étape dans le modèle de charge
 
-Après avoir créé votre test de charge avec **l’Assistant Nouveau test de charge**, vous pouvez utiliser **l’éditeur de test de charge** pour changer les propriétés des scénarios afin de répondre à vos besoins et vos objectifs de test. Pour plus d’informations, consultez [Procédure pas à pas : création et exécution d’un test de charge](../test/walkthrough-create-and-run-a-load-test.md).
+Après avoir créé votre test de charge avec l’**Assistant Nouveau test de charge**, vous pouvez utiliser l’**éditeur de test de charge** pour changer les propriétés des scénarios en fonction de vos besoins et objectifs. Pour plus d’informations, consultez [Procédure pas à pas : création et exécution d’un test de charge](../test/walkthrough-create-and-run-a-load-test.md).
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -51,7 +51,7 @@ La propriété **Durée de démarrage de l’étape** autorise l’accroissement
 
 1. Ouvrez un test de charge.
 
-     **L’Éditeur de test de charge** s’affiche. L'arborescence du test de charge s'affiche.
+     **L’éditeur de test de charge** s’affiche. L'arborescence du test de charge s'affiche.
 
 2. Dans le dossier **Scénarios** des arborescences du test de charge, ouvrez le nœud de scénario pour lequel vous voulez spécifier la durée de démarrage de l’étape.
 
@@ -60,13 +60,13 @@ La propriété **Durée de démarrage de l’étape** autorise l’accroissement
     > [!NOTE]
     > Le modèle de charge du scénario doit être un modèle de charge dans l'étape. Si ce n'est pas le cas, le modèle de charge affichera le type du modèle de charge associé actuellement au scénario. Pour plus d’informations, consultez [Modifier les modèles de charge en modèle d’activités des utilisateurs virtuels](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
-4. Dans le menu **Affichage**, sélectionnez la fenêtre **Propriétés**.
+4. Dans le menu **Affichage**, sélectionnez **Fenêtre Propriétés**.
 
      Les catégories et les propriétés du scénario sont affichées dans la fenêtre **Propriétés**.
 
 5. Définissez la valeur de la propriété **Durée de démarrage de l’étape** en entrant un nombre pour les secondes prises dans chaque étape afin d’ajouter progressivement les utilisateurs spécifiés par la propriété **Nombre d’utilisateurs dans l’étape**.
 
-6. Après avoir fini de changer la propriété, choisissez **Enregistrer** dans le menu **Fichier**. Vous pouvez ensuite exécuter votre test de charge à l’aide de la nouvelle valeur **Durée de démarrage de l’étape**.
+6. Après avoir changé la propriété, choisissez **Enregistrer** dans le menu **Fichier**. Vous pouvez ensuite exécuter votre test de charge à l’aide de la nouvelle valeur **Durée de démarrage de l’étape**.
 
 ## <a name="see-also"></a>Voir aussi
 

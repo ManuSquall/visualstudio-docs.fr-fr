@@ -3,17 +3,17 @@ title: Fenêtres du débogueur XSLT
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 846fdabd-e5c3-4688-9b0d-a93fbeea1b96
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae37db21072e81a5940f09f085bf261839686a69
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bb72acf2db63e54da8a1ee001d2abfaa30850fc3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646087"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592878"
 ---
 # <a name="debugger-user-interface-xslt"></a>Interface utilisateur du débogueur (XSLT)
 
@@ -25,7 +25,7 @@ Pour plus d’informations, consultez le Guide de référence de l' [interface u
 
 La fenêtre Variables locales affiche des informations sur les variables définies dans la feuille de style. Elle comporte trois colonnes d'informations :
 
-**Nom**
+**Name**
 
 Cette colonne contient les noms de toutes les variables locales dans la portée actuelle. Les jeux de nœuds ont un contrôle d’arborescence que vous pouvez descendre pour afficher ses sous-dossiers.
 
@@ -45,7 +45,7 @@ La fenêtre Variables locales affiche également les variables de contexte préd
 |`position()`|Position (index) du nœud de contexte par rapport à la taille du contexte.|
 |`self::node()`|Valeur du nœud de contexte.|
 
-## <a name="output-window"></a>Fenêtre Sortie
+## <a name="output-window"></a>fenêtre Sortie
 
 La fenêtre Sortie affiche les messages d'erreur éventuels ou les exceptions de sécurité qui se produisent pendant le débogage. Il affiche également la sortie du débogueur.
 
@@ -58,13 +58,13 @@ Le **liste des tâches** comprend les erreurs qui se produisent dans les blocs d
 > [!NOTE]
 > Le débogueur XSLT n’a pas d’avertissements, donc ils n’apparaissent jamais dans le **liste des tâches**.
 
-## <a name="breakpoints-window"></a>Points d'arrêt (fenêtre)
+## <a name="breakpoints-window"></a>Fenêtre Points d'arrêt
 
 La fenêtre Points d'arrêt affiche tous les points d'arrêt définis dans le projet actuel. Si un point d'arrêt est ajouté pendant que la fenêtre est affichée, celle-ci est automatiquement mise à jour pour afficher le nouveau point.
 
 La fenêtre Points d'arrêt doit se comporter de la même façon que les autres débogueurs Visual Studio.
 
-## <a name="watch-window"></a>Fenêtre Espion
+## <a name="watch-window"></a>Fenêtre d'observation
 
 La fenêtre Espion permet d'évaluer les variables. Elle permet également de modifier la valeur des variables.
 

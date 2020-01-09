@@ -14,17 +14,17 @@ helpviewer_keywords:
 - MSBuild, tasks
 - MSBuild, dependency diagrams
 - MSBuild, validating code
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fc852b4d5003cf809248c72ca3ac42ad3a6bf23
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 36320daf91380d0b04333b228a1d4b9d58c6693c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981136"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594017"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Valider du code avec des diagrammes de dépendance
 
@@ -42,7 +42,7 @@ Pour vous assurer que le code n’est pas en conflit avec sa conception, validez
 
    Recherchez le code ou les dépendances qui requièrent du travail lorsque vous déplacez le code vers une architecture différente.
 
-**Prérequis**
+**Spécifications**
 
 - Visual Studio
 
@@ -57,7 +57,7 @@ Vous pouvez valider le code manuellement à partir d’un diagramme de dépendan
 > [!IMPORTANT]
 > Si vous souhaitez exécuter la validation de couche à l’aide de Team Foundation Server (TFS), vous devez également installer la même version de Visual Studio sur votre serveur de builds.
 
-## <a name="live-dependency-validation"></a>Validation de dépendances dynamiques
+## <a name="live-dependency-validation"></a>Validation des dépendances en direct
 
 La validation des dépendances se produit en temps réel, et les erreurs sont affichées immédiatement dans le **liste d’erreurs**.
 
@@ -218,7 +218,7 @@ La section suivante décrit la syntaxe utilisée lors de ces erreurs, explique l
 
 |**Syntaxe**|**Description**|
 |-|-|
-|*Artefactn*(*ArtifactTypeN*)|*Artefactn* est un artefact associé à une couche sur le diagramme de dépendance.<br /><br /> *ArtifactTypeN* est le type d' *artefactn*, tel qu’une **classe** ou une **méthode**, par exemple :<br /><br /> MySolution.MyProject.MyClass.MyMethod(Method)|
+|*ArtifactN*(*ArtifactTypeN*)|*Artefactn* est un artefact associé à une couche sur le diagramme de dépendance.<br /><br /> *ArtifactTypeN* est le type d' *artefactn*, tel qu’une **classe** ou une **méthode**, par exemple :<br /><br /> MySolution.MyProject.MyClass.MyMethod(Method)|
 |*NamespaceNameN*|Nom d'un espace de noms.|
 |*LayerNameN*|Nom d’une couche sur le diagramme de dépendance.|
 |*DependencyType*|Type de relation de dépendance entre *artefact 1* et *Artefact2*. Par exemple, *artefact 1* a une relation d' **appels** avec *Artefact2*.|
@@ -229,6 +229,8 @@ La section suivante décrit la syntaxe utilisée lors de ces erreurs, explique l
 | DV1001 : **nom d’espace de noms non valide** | Ce problème est signalé sur un élément de code associé à une couche dans laquelle la propriété « noms d’espaces de noms autorisés » ne contient pas l’espace de noms dans lequel cet élément de code est défini. Il s’agit d’une violation de contrainte de nom. Notez que la syntaxe de « noms d’espaces de noms autorisés » doit être une liste d’espaces de noms dans laquelle les éléments de code associés à sont des éléments de code autorisés à être définis. |
 | DV1002 : **dépendance sur un espace de noms non référencé** | Ce problème est signalé sur un élément de code associé à une couche et référençant un autre élément de code défini dans un espace de noms défini dans la propriété espace de noms non référencé de la couche. Il s’agit d’une violation de contrainte de nom. Notez que la propriété « espaces de noms non référencés » est définie sous la forme d’une liste d’espaces de noms séparés par des points-virgules qui ne doivent pas être référencés dans les éléments de code associés à cette couche. |
 | DV1003 : **nom d’espace de noms non autorisé** | Ce problème est signalé sur un élément de code associé à une couche dans laquelle la propriété « noms d’espaces de noms interdits » contient l’espace de noms dans lequel cet élément de code est défini. Il s’agit d’une violation de contrainte de nom. Notez que la propriété « nom d’espace de noms non autorisé » est définie sous la forme d’une liste d’espaces de noms séparés par des points-virgules, dans laquelle les éléments de code associés à cette couche ne doivent pas être définis. |
+| DV2001 : **présence du diagramme de couche** | Ce problème est signalé sur un projet qui n’inclut pas de fichier de diagramme de dépendance, mais fait référence aux analyseurs de validation des dépendances. Si la validation de dépendance n’a pas été utilisée, vous pouvez supprimer « Microsoft. DependencyValidation. Analyzers » directement à partir de Explorateur de solutions ou supprimer cet avertissement. Pour ajouter un diagramme de dépendance, consultez [créer des diagrammes de dépendance à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md). |
+| DV2002 : **base des types non mappés** | Ce problème est signalé lorsqu’un élément de code n’est mappé à aucune couche. |
 | DV3001 : **lien manquant** | La couche «*NomCouche*» est liée à «*artefact*», qui est introuvable. Vérifiez qu'il ne manque aucune référence d'assembly. |
 | DV9001 : les **analyses architecturales ont trouvé des erreurs internes** | Il est possible que les résultats ne soient pas complets. Pour plus d'informations, consultez le journal des événements de build ou la fenêtre Sortie. |
 

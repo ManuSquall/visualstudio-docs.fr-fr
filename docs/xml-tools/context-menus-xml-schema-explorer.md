@@ -3,17 +3,17 @@ title: Menus contextuels dans l’Explorateur de schémas XML
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 42ab17ca-b8c1-40d7-beda-d033f66fe874
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9310102177e19d2129dd620285d6c45df63ec78
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f7224ca09588858398a0f45c35008ddd5ba0af71
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651205"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592891"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>Menus contextuels (Explorateur de schémas XML)
 
@@ -28,7 +28,7 @@ Le tableau suivant décrit les options disponibles pour un nœud de type jeu de 
 |**Afficher les éléments racines les plus probables**|Recherche et met en surbrillance tous les éléments globaux qui ne sont pas référencés à partir d'éléments globaux autres qu'eux-mêmes.|
 |**Afficher les types globaux**|Recherche et met en surbrillance tous les types globaux dans le jeu de schémas.|
 |**Afficher les éléments globaux**|Recherche et met en surbrillance tous les éléments globaux dans le jeu de schémas.|
-|**Propriétés, fenêtre**|Ouvre la fenêtre **Propriétés** (si elle n’est pas déjà ouverte). Cette fenêtre affiche des informations sur le nœud.|
+|**Propriétés (fenêtre)**|Ouvre la fenêtre **Propriétés** (si elle n’est pas déjà ouverte). Cette fenêtre affiche des informations sur le nœud.|
 
 ## <a name="node-type-namespace"></a>Type de nœud : espace de noms
 Le tableau suivant décrit les options disponibles pour un nœud de type espace de noms.
@@ -39,7 +39,7 @@ Le tableau suivant décrit les options disponibles pour un nœud de type espace 
 |**Afficher toutes les références sortantes**|Pour chaque fichier de l'espace de noms sélectionné, recherche et met en surbrillance les éléments suivants :<br /><br /> -Tous les espaces de noms référencés dans les instructions Import sans attribut `schemaLocation`.<br />-Tous les fichiers dans les espaces de noms autres que celui sélectionné qui sont spécifiés dans l’attribut `schemaLocation` dans les instructions import et include.|
 |**Afficher les types globaux**|Recherche et met en surbrillance tous les types globaux dans l'espace de noms sélectionné.|
 |**Afficher les éléments globaux**|Recherche et met en surbrillance tous les éléments globaux dans l'espace de noms sélectionné.|
-|**Propriétés, fenêtre**|Ouvre la fenêtre **Propriétés** (si elle n’est pas déjà ouverte). Cette fenêtre affiche des informations sur le nœud.|
+|**Propriétés (fenêtre)**|Ouvre la fenêtre **Propriétés** (si elle n’est pas déjà ouverte). Cette fenêtre affiche des informations sur le nœud.|
 
 ## <a name="node-type-file"></a>Type de nœud : fichier
 Le tableau suivant décrit les options disponibles pour un nœud de type fichier.
@@ -51,7 +51,7 @@ Le tableau suivant décrit les options disponibles pour un nœud de type fichier
 |**Afficher les types globaux**|Recherche et met en surbrillance tous les types globaux dans ce fichier.|
 |**Afficher les éléments globaux**|Recherche et met en surbrillance tous les éléments globaux dans ce fichier.|
 |**Afficher le code**|Ouvre le fichier qui contient le nœud sélectionné dans l’éditeur XML. L’élément sélectionné dans l’Explorateur de schémas XML est également sélectionné dans l’éditeur XML.|
-|**Propriétés, fenêtre**|Ouvre la fenêtre **Propriétés** (si elle n’est pas déjà ouverte). Cette fenêtre affiche des informations sur le nœud.|
+|**Propriétés (fenêtre)**|Ouvre la fenêtre **Propriétés** (si elle n’est pas déjà ouverte). Cette fenêtre affiche des informations sur le nœud.|
 
 ## <a name="all-global-node-types"></a>Tous les types de nœuds globaux
 Le tableau suivant décrit les options disponibles pour tous les nœuds globaux.
@@ -61,7 +61,7 @@ Le tableau suivant décrit les options disponibles pour tous les nœuds globaux.
 |**Afficher dans la vue du graphique**|Ouvre la vue du graphique. Si le nœud sélectionné n'est pas dans l'espace de travail, ajoute ce nœud à l'espace de travail et sélectionne le nœud.|
 |**Afficher dans la vue de modèle de contenu**|Ouvre la vue de modèle de contenu. Si le nœud sélectionné n'est pas dans l'espace de travail, ajoute ce nœud à l'espace de travail et sélectionne le nœud.|
 |**Afficher le code**|Ouvre le fichier qui contient le nœud sélectionné dans l’éditeur XML. L’élément sélectionné dans l’Explorateur de schémas XML est également sélectionné dans l’éditeur XML.|
-|**Propriétés, fenêtre**|Ouvre la fenêtre **Propriétés** (si elle n’est pas déjà ouverte). Cette fenêtre affiche des informations sur le nœud.|
+|**Propriétés (fenêtre)**|Ouvre la fenêtre **Propriétés** (si elle n’est pas déjà ouverte). Cette fenêtre affiche des informations sur le nœud.|
 
 ## <a name="node-type-element"></a>Type de nœud : élément
 En plus des options relatives aux nœuds globaux décrites ci-dessus, le menu contextuel pour les nœuds d'élément comprend les options suivantes :

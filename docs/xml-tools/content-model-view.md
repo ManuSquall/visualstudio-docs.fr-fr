@@ -1,19 +1,19 @@
 ---
-title: Vue de modèle de contenu du concepteur de schémas XML
+title: Vue de modèle de contenu du Concepteur de schémas XML
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: e8db7c7d-31cf-479e-9dcc-299759891795
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67453571963ae22910842be0021e008632942de5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 830dbdda0027551a25747235e6ad9dffbbc11b23
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661524"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592911"
 ---
 # <a name="content-model-view"></a>Vue de modèle de contenu
 
@@ -21,7 +21,7 @@ La vue de modèle de contenu fournit une représentation graphique des nœuds de
 
 Dans l’image suivante, le volet **espace de travail** contient six nœuds de schéma. Le nœud `purchaseOrder` est sélectionné dans le panneau **de l’espace de travail** et s’affiche dans l’aire de conception.
 
-![Vue de modèle de contenu du concepteur de schémas XML](../xml-tools/media/xsddesigner_contentmodelview.gif)
+![Vue de modèle de contenu du Concepteur de schémas XML](../xml-tools/media/xsddesigner_contentmodelview.gif)
 
 ## <a name="workspace-panel"></a>Panneau de l’espace de travail
 
@@ -53,7 +53,7 @@ Lorsque vous cliquez avec le bouton droit sur un élément dans l’aire de conc
 |**Afficher la documentation**|Affiche ou masque le contenu du nœud Annotation/Documentation.|
 |**Exporter le diagramme en tant qu’image**|Enregistre l'aire de conception dans un fichier XPS.|
 |**Afficher le code**|Ouvre le fichier qui contient le nœud sélectionné dans l’éditeur XML. L’élément sélectionné dans l’Explorateur de **schémas XML** est également sélectionné dans l’éditeur XML.|
-|**Propriétés, fenêtre**|Ouvre la fenêtre **Propriétés** (si elle n’est pas déjà ouverte). Cette fenêtre affiche des informations sur le nœud.|
+|**Propriétés (fenêtre)**|Ouvre la fenêtre **Propriétés** (si elle n’est pas déjà ouverte). Cette fenêtre affiche des informations sur le nœud.|
 
 Le tableau suivant décrit les options disponibles pour le panneau **de l’espace de travail** .
 
@@ -67,9 +67,9 @@ Le tableau suivant décrit les options disponibles pour le panneau **de l’espa
 |**Générer un exemple de code XML**|Disponible uniquement pour les éléments globaux. Génère un exemple de fichier XML pour l'élément global.|
 |**Tout sélectionner**|Sélectionne tous les nœuds dans le panneau **de l’espace de travail** .|
 |**Afficher le code**|Ouvre le fichier qui contient le nœud sélectionné dans l’éditeur XML. L’élément sélectionné dans l’Explorateur de **schémas XML** est également sélectionné dans l’éditeur XML.|
-|**Propriétés, fenêtre**|Ouvre la fenêtre **Propriétés** (si elle n’est pas déjà ouverte). Cette fenêtre affiche des informations sur le nœud.|
+|**Propriétés (fenêtre)**|Ouvre la fenêtre **Propriétés** (si elle n’est pas déjà ouverte). Cette fenêtre affiche des informations sur le nœud.|
 
-## <a name="properties-window"></a>Fenêtre Propriétés
+## <a name="properties-window"></a>Propriétés (fenêtre)
 
 Utilisez le menu contextuel pour ouvrir initialement la fenêtre **Propriétés** . Par défaut, la fenêtre **Propriétés** s’affiche dans le coin inférieur droit de Visual Studio. Lorsque vous cliquez sur un nœud affiché dans la vue de modèle de contenu, les propriétés de ce nœud s’affichent dans la fenêtre **Propriétés** .
 
@@ -77,7 +77,7 @@ Utilisez le menu contextuel pour ouvrir initialement la fenêtre **Propriétés*
 
 Les boutons de la barre d'outils du Concepteur XSD suivants sont activés lorsque la vue de modèle de contenu est active.
 
-![Barre d'outils du concepteur de schémas XML](../xml-tools/media/xsdcontentmodelviewtoolbar.gif)
+![Barre d'outils du Concepteur de schémas XML](../xml-tools/media/xsdcontentmodelviewtoolbar.gif)
 
 |Option|Description|
 |-|-----------------|

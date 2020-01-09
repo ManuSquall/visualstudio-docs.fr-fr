@@ -8,15 +8,15 @@ helpviewer_keywords:
 - side-by-side installations [Visual Studio]
 - Help [Visual Studio], installing
 - install multiple versions of Visual Studio
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b7fb1e057ffd9f3824fa1fe49e353fd54694da91
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: 62acf1c5e8cab960d4b670f7a05481644e9ffc1e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888684"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594082"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Installer des versions de Visual Studio côte à côte
 
@@ -56,9 +56,9 @@ Pour des informations spécifiques au langage, consultez la rubrique appropriée
 
 ::: moniker range="vs-2017"
 
-| Langue | Rubrique |
+| Language | Rubrique |
 |--------------|-----------|
-| Visual Basic | [Page Application, Concepteur de projet (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md?view=vs-2017) |
+| Visual Basic | [Page Application, Concepteur de projets (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md?view=vs-2017) |
 | Visual C# | [Page Application, Concepteur de projets (C#)](../ide/reference/application-page-project-designer-csharp.md?view=vs-2017) |
 | Visual F# | [Développer avec Visual F# dans Visual Studio](../ide/fsharp-visual-studio.md?view=vs-2017) |
 |C++ | [Comment : modifier le Framework cible et l’ensemble d’outils de plateforme](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
@@ -75,9 +75,9 @@ Pour des informations spécifiques au langage, consultez la rubrique appropriée
 
 ::: moniker range=">= vs-2019"
 
-| Langue | Rubrique |
+| Language | Rubrique |
 |--------------|-----------|
-| Visual Basic | [Page Application, Concepteur de projet (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md) |
+| Visual Basic | [Page Application, Concepteur de projets (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md) |
 | Visual C# | [Page Application, Concepteur de projets (C#)](../ide/reference/application-page-project-designer-csharp.md) |
 | Visual F# | [Développer avec Visual F# dans Visual Studio](../ide/fsharp-visual-studio.md) |
 | C++ | [Comment : modifier le Framework cible et l’ensemble d’outils de plateforme](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |

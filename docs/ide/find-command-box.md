@@ -6,17 +6,17 @@ f1_keywords:
 - vs.findcommandbox
 helpviewer_keywords:
 - Find/Command box
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 024491180528dd4b8335c88623e7d261c0a2bbe2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 99b50c0503d313d4482d8370071220dbf1403d9a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653730"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591526"
 ---
 # <a name="findcommand-box"></a>zone Rechercher/Commande
 
@@ -34,7 +34,7 @@ Par défaut, quand vous spécifiez du texte dans la zone **Rechercher/Commande**
 
 ## <a name="entering-commands"></a>Entrée de commandes
 
-Si vous voulez utiliser la zone **Rechercher/Commande** pour envoyer un alias ou une commande [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] unique au lieu de rechercher du texte, faites précéder la commande du signe « supérieur à » ( **>** ). Exemple :
+Si vous voulez utiliser la zone **Rechercher/Commande** pour envoyer un alias ou une commande [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] unique au lieu de rechercher du texte, faites précéder la commande du signe « supérieur à » ( **>** ). Par exemple :
 
 ```
 >File.NewFile c:\temp\MyFile /t:"General\Text File"
@@ -44,7 +44,7 @@ Vous avez également la possibilité d’utiliser la fenêtre **Commande** pour 
 
 ## <a name="escape-characters"></a>Caractères d’échappement
 
-La présence d’un signe d’insertion ( **^** ) dans une commande signifie que le caractère situé juste après ce signe est interprété littéralement, et non pas comme un caractère de contrôle. Ceci permet d’incorporer des guillemets ( **"** ), des espaces, des barres obliques, des accents circonflexes ou tout autre caractère littéral dans une valeur de paramètre ou de commutateur, à l’exception des noms de commutateur. Exemple :
+La présence d’un signe d’insertion ( **^** ) dans une commande signifie que le caractère situé juste après ce signe est interprété littéralement, et non pas comme un caractère de contrôle. Ceci permet d’incorporer des guillemets ( **"** ), des espaces, des barres obliques, des accents circonflexes ou tout autre caractère littéral dans une valeur de paramètre ou de commutateur, à l’exception des noms de commutateur. Par exemple :
 
 ```
 >Edit.Find ^^t /regex

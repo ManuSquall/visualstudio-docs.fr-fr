@@ -3,17 +3,17 @@ title: Créer un schéma XML
 ms.date: 03/05/2019
 ms.topic: conceptual
 ms.assetid: 1d6700a9-fd67-4794-8997-399589e99bec
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 73563d732aab48192892794c15750bc9e5d3eb6a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 857b75f22d45cbabc22062fd14b385e8f6ea5f14
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645962"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592774"
 ---
 # <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>Procédure : créer un schéma XML à partir d’un document XML
 
@@ -33,7 +33,7 @@ Pour plus d’informations sur le moteur d’inférence de schéma, consultez [d
 
 1. Ouvrez un fichier XML dans Visual Studio.
 
-2. Dans la barre de menus, choisissez **XML**  > **créer un schéma**.
+2. Dans la barre de menus, choisissez **XML** > **créer un schéma**.
 
    Un document de schéma XML est créé et ouvert pour chaque espace de noms trouvé dans le fichier XML. Chaque schéma est ouvert comme un fichier divers temporaire. Les schémas peuvent être enregistrés sur disque, ajoutés à votre projet ou ignorés.
 

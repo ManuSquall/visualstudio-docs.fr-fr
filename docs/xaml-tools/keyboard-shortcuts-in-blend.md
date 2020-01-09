@@ -1,26 +1,26 @@
 ---
-title: Raccourcis clavier
+title: raccourcis clavier
 titleSuffix: Blend for Visual Studio
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3a1b6830-30c2-4a36-bd14-6961f5edf9cb
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8245790cb1a5f5211828b2feaa2fd862c83bfe9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4c72795b80ebb176b3dcfb4fe26b633946e3bb98
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666831"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592944"
 ---
 # <a name="keyboard-shortcuts-in-blend-for-visual-studio"></a>Raccourcis clavier dans Blend pour Visual Studio
 
 ## <a name="project-shortcuts"></a>Raccourcis de Projet
 
-|Tâche|Faites cela|
+|Pour|Procédez comme suit|
 |----------------|-------------|
 |Créer un projet|**Ctrl**+**Maj**+**N**|
 |Ouvrir un projet ou une solution (pas un site)|**Ctrl**+**Maj**+**O**|
@@ -33,14 +33,14 @@ ms.locfileid: "72666831"
 
 ## <a name="document-shortcuts"></a>Raccourcis de Document
 
-|Tâche|Faites cela|
+|Pour|Procédez comme suit|
 |----------------|-------------|
 |Basculer entre les documents ouverts|**Ctrl**+**Tab**|
 |Enregistrer le document actif|**Ctrl**+**S**|
 |Enregistrer tous les documents|**Ctrl**+**Maj**+**S**|
 |Fermer le document actif|**Ctrl**+**W**|
 |Fermer tous les documents ouverts|**Ctrl**+**Maj**+**W**|
-|Annuler l'action précédente|**Ctrl**+Z|
+|Annuler la dernière action|**Ctrl**+Z|
 |Rétablir l'action précédente qui était annulée|**Ctrl**+Y ou **Ctrl**+**Maj**+**Z**|
 |Créer une annotation au moment du design|**Ctrl**+**Maj**+**T**|
 |Couper|**Ctrl**+**X**|
@@ -52,7 +52,7 @@ ms.locfileid: "72666831"
 
 ## <a name="object-shortcuts"></a>Raccourcis du menu Objet
 
-|Tâche|Faites cela|
+|Pour|Procédez comme suit|
 |----------------|-------------|
 |Créer un élément|**Ctrl**+**N**|
 |Dupliquer un objet|Maintenez la touche **Alt** enfoncée et faites glisser l’objet.|
@@ -93,7 +93,7 @@ ms.locfileid: "72666831"
 
 ## <a name="view-shortcuts"></a>Raccourcis de mode
 
-|Tâche|Faites cela|
+|Pour|Procédez comme suit|
 |----------------|-------------|
 |Basculer entre les modes **Design**, **Code** et **Fractionné**|**F11**|
 |Effectuer un zoom avant sur la planche graphique|**Ctrl**+**Signe égal** ( **=** )|
@@ -109,7 +109,7 @@ ms.locfileid: "72666831"
 
 ## <a name="workspace-shortcuts"></a>Raccourcis Espace de travail
 
-|Tâche|Faites cela|
+|Pour|Procédez comme suit|
 |----------------|-------------|
 |Basculer entre les espaces de travail **Animation** et **Conception**|**Ctrl**+**F11**|
 |Afficher ou masquer le panneau **Composants**|**Ctrl**+**Point**|

@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, escape sequences
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e03f5eafc00b8431725ed06da10371a93692fb5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 83e6e5cf163037077d0517e5f7ea460f9124f27c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662920"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594043"
 ---
 # <a name="use-escape-sequences-in-text-templates"></a>Utiliser des séquences d’échappement dans des modèles de texte
 
@@ -30,9 +30,9 @@ Vous pouvez faire de même avec d’autres balises de modèle de texte et de blo
 
 Si un bloc de texte comprend des chaînes utilisées pour échapper des balises de modèle de texte, vous pouvez utiliser les séquences d’échappement suivantes :
 
-- Si une balise de modèle de texte est précédée d’un nombre pair de caractères d’échappement (\\), l’analyseur de modèle inclura la moitié des caractères d’échappement et inclura la séquence comme une balise de modèle de texte. Par exemple, s’il y a quatre caractères d’échappement dans le modèle de texte, il y aura deux caractères « \\ » dans le fichier généré.
+- Si une balise de modèle de texte est précédée d’un nombre pair de caractères d’échappement (\\), l’analyseur de modèle inclura la moitié des caractères d’échappement et inclura la séquence comme une balise de modèle de texte. Par exemple, s’il y a quatre caractères d’échappement dans le modèle de texte, il y aura deux caractères «\\» dans le fichier généré.
 
-- Si la balise de modèle de texte est précédée d’un nombre impair de caractères d’échappement (\\), l’analyseur de modèle inclura la moitié des caractères « \\ » et la balise proprement dite (\< # ou # >). La balise n’est pas considérée comme une balise de modèle de texte.
+- Si la balise de modèle de texte est précédée d’un nombre impair de caractères d’échappement (\\), l’analyseur de modèle inclura la moitié des caractères «\\» et la balise proprement dite (\<# ou # >). La balise n’est pas considérée comme une balise de modèle de texte.
 
 - Si un caractère d’échappement (\\) apparaît n’importe où dans une séquence autre que l’échappement d’un caractère de contrôle ou d’un C# guillemet (dans uniquement), le caractère est généré directement.
 

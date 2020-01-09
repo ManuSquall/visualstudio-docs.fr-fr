@@ -4,16 +4,16 @@ ms.date: 03/07/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - Live Unit Testing
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 ms.workload:
 - dotnet
-ms.openlocfilehash: b5974819e9dca064655cf04eec3dd371f09ee15c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f020de0c08d8869a8ee9e6f807201303a46b2a0d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653003"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588887"
 ---
 # <a name="how-to-configure-and-use-live-unit-testing"></a>Comment configurer et utiliser Live Unit Testing
 
@@ -28,7 +28,7 @@ Lorsque vous utilisez Live Unit Testing pour vos tests, il conserve les données
 
 Live Unit Testing fonctionne avec les trois frameworks de tests unitaires populaires listés dans le tableau suivant. La version minimale prise en charge de leurs adaptateurs et infrastructures est également indiquée. Les frameworks de tests unitaires sont tous disponibles dans NuGet.org.
 
-|Infrastructure de test  |Version minimale de l’adaptateur Visual Studio  |Version minimale du framework  |
+|Framework de test  |Version minimale de l’adaptateur Visual Studio  |Version minimale du framework  |
 |---------|---------|---------|
 |xUnit.net |xunit.runner.visualstudio version 2.2.0-beta3-build1187 |xunit 1.9.2 |
 |NUnit |NUnit3TestAdapter version 3.5.1 |NUnit version 3.5.0 |
@@ -36,14 +36,14 @@ Live Unit Testing fonctionne avec les trois frameworks de tests unitaires popula
 
 Si vous avez des projets de test basés sur MSTest plus anciens qui référencent Microsoft. VisualStudio. QualityTools. UnitTestFramework et que vous ne souhaitez pas passer aux packages NuGet NuGet plus récents, effectuez une mise à niveau vers Visual Studio 2019 ou Visual Studio 2017.
 
-Dans certains cas, vous devrez peut-être restaurer explicitement les packages NuGet référencés par un projet pour que les Live Unit Testing fonctionnent. Pour ce faire, vous pouvez effectuer une génération explicite de la solution (sélectionnez **générer**  > **régénérer la solution** dans le menu Visual Studio de niveau supérieur) ou restaurer les packages dans la solution (cliquez avec le bouton droit sur la solution et sélectionnez **restaurer NuGet Packages**).
+Dans certains cas, vous devrez peut-être restaurer explicitement les packages NuGet référencés par un projet pour que les Live Unit Testing fonctionnent. Vous pouvez effectuer cette opération en procédant à une génération explicite de la solution (sélectionnez **générer** > **régénérer la solution** dans le menu Visual Studio de niveau supérieur) ou en restaurant des packages dans la solution (cliquez avec le bouton droit sur la solution et sélectionnez **restaurer les packages NuGet**).
 
 ## <a name="configure"></a>Configurer
 
-Configurez Live Unit Testing en sélectionnant **outils**  > **options** dans la barre de menus de Visual Studio de niveau supérieur, puis en sélectionnant **Live Unit testing** dans le volet gauche de la boîte de dialogue **options** .
+Configurez Live Unit Testing en sélectionnant **outils** > **options** dans la barre de menus de Visual Studio de niveau supérieur, puis en sélectionnant **Live Unit testing** dans le volet gauche de la boîte de dialogue **options** .
 
 > [!TIP]
-> Une fois que Live Unit Testing est activé (voir la section suivante, [Démarrer, suspendre et arrêter Live Unit testing](#start-pause-and-stop)), vous pouvez également ouvrir la boîte de dialogue **options** en sélectionnant **tester**  > **Live Unit testing** **options**de  > .
+> Une fois que Live Unit Testing est activé (voir la section suivante, [Démarrer, suspendre et arrêter Live Unit testing](#start-pause-and-stop)), vous pouvez également ouvrir la boîte de dialogue **options** en sélectionnant **tester** > **Live Unit testing** **options**de > .
 
 L’illustration suivante montre les options de configuration Live Unit Testing disponibles dans la boîte de dialogue :
 
@@ -79,7 +79,7 @@ Les options configurables sont les suivantes :
 
 ## <a name="start-pause-and-stop"></a>Démarrer, suspendre et arrêter
 
-Pour activer Live Unit Testing, sélectionnez **Test**  > **Live Unit testing**  > **Démarrer** dans le menu Visual Studio de niveau supérieur. Lorsque Live Unit Testing est activé, les options disponibles dans le menu **Live Unit testing** sont modifiées à partir d’un seul élément, **Démarrer**, **suspendre**, **arrêter**et **Réinitialiser le nettoyage**:
+Pour activer Live Unit Testing, sélectionnez **Test** > **Live Unit testing** > **Démarrer** dans le menu Visual Studio de niveau supérieur. Lorsque Live Unit Testing est activé, les options disponibles dans le menu **Live Unit testing** sont modifiées à partir d’un seul élément, **Démarrer**, **suspendre** et **arrêter**:
 
 - L' **interruption** interrompt temporairement Live Unit testing.
 
@@ -87,10 +87,8 @@ Pour activer Live Unit Testing, sélectionnez **Test**  > **Live Unit testing** 
 
 - **Arrêter** arrête complètement Live Unit testing. Live Unit Testing abandonne toutes les données qu’il a collectées.
 
-- La **réinitialisation** des arrêts en mode minimal Live Unit testing, supprime les données persistantes, puis redémarre Live Unit testing.
-
 > [!NOTE]
-> Si vous démarrez Live Unit Testing dans une solution qui n’inclut pas un projet de test unitaire, les options **Pause**, **Arrêter**, et **Réinitialiser** apparaissent dans le menu de **Live Unit Testing**, mais Live Unit Testing ne démarre pas. La fenêtre **sortie** affiche un message qui commence par « aucun adaptateur de test pris en charge n’est référencé par cette solution... ».
+> Si vous démarrez Live Unit Testing dans une solution qui n’inclut pas de projet de test unitaire, les options **suspendre** et **arrêter** s’affichent dans le menu **Live Unit testing** , mais Live Unit testing ne démarre pas. La fenêtre **sortie** affiche un message qui commence par « aucun adaptateur de test pris en charge n’est référencé par cette solution... ».
 
 À tout moment, vous pouvez interrompre temporairement ou arrêter complètement Live Unit Testing. Vous pouvez effectuer cette opération, par exemple, si vous êtes au milieu d’une refactorisation et si vous savez que vos tests seront rompus pendant un certain temps.
 
@@ -119,7 +117,7 @@ Lorsque vous passez la souris sur un test ayant échoué dans l’infobulle, cel
 Lorsque vous accédez au test qui a échoué, Live Unit Testing indique visuellement dans la signature de la méthode les tests qui ont :
 
 - passé (indiqué par un becher demi-complet avec un « ✓ » vert)
-- échec (un becher demi-complet avec un « 🞩 » rouge)
+- échec (un becher demi-complet avec un «🞩» rouge)
 - ne sont pas impliquées dans le Live Unit Testing (un bécher à demi-totalité avec un « ➖ » bleu)
 
 Les méthodes sans test n’affichent aucun un symbole. L’image suivante illustre les quatre types de méthodes.
@@ -132,12 +130,12 @@ Les méthodes sans test n’affichent aucun un symbole. L’image suivante illus
 
 Par exemple, l’échec du test affiché dans l’image précédente était dû à une hypothèse incorrecte dans la méthode de test que les caractères non alphabétiques retournent `true` lorsqu’ils sont passés à la méthode <xref:System.Char.IsLower%2A?displayProperty=fullName>. Une fois que vous avez corrigé la méthode de test, tous les tests doivent réussir. Vous n’avez pas besoin de suspendre ou d’arrêter Live Unit Testing.
 
-## <a name="test-explorer"></a>Explorateur de tests
+## <a name="test-explorer"></a>Explorateur de test
 
 L' **Explorateur de tests** fournit une interface qui vous permet d’exécuter et de déboguer des tests et d’analyser les résultats des tests. Live Unit Testing s’intègre à **l’Explorateur de tests**. Quand Live Unit Testing n’est pas activé ou quand il est arrêté, **l’Explorateur de tests** affiche l’état des tests unitaires lors de la dernière exécution d’un test. Des modifications apportées au code source nécessitent que vous réexécutiez les tests. En revanche, lorsque Live Unit Testing est activé, l’état des tests unitaires dans **l’Explorateur de tests** est mis à jour immédiatement. Vous n’avez pas besoin d’exécuter explicitement les tests unitaires.
 
 > [!TIP]
-> Ouvrez l' **Explorateur de tests** en sélectionnant **tester**  > **Windows**  >  l'**Explorateur de tests** dans le menu Visual Studio de niveau supérieur.
+> Ouvrez l' **Explorateur de tests** en sélectionnant **tester** > **Windows** > l' **Explorateur de tests** dans le menu Visual Studio de niveau supérieur.
 
 Vous remarquerez peut-être dans la fenêtre de l' **Explorateur de tests** que certains tests sont dépassés. Par exemple, lorsque vous activez Live Unit Testing après l’ouverture d’un projet précédemment enregistré, la fenêtre de l' **Explorateur de tests** avait sorti tout sauf le test ayant échoué, comme le montre l’image suivante. Dans ce cas, Live Unit Testing a réexécuté le test qui a échoué, mais il n’a pas réexécuté les tests réussis. Cela est dû au fait que les données persistantes de Live Unit Testing indiquent qu’aucune modification n’a été apportée depuis la dernière exécution réussie des tests.
 
@@ -156,7 +154,7 @@ Il existe certaines différences entre l’exécution automatique des tests et l
 Si votre solution contient au moins 10 projets, Visual Studio affiche la boîte de dialogue suivante lorsque vous :
 
 - Démarrer Live Unit Testing et il n’y a pas de données persistantes
-- sélectionner le  >  de **Test** **Live Unit testing**  > **Réinitialiser le nettoyage**
+- Sélectionnez **outils** > **Options** > **Live Unit testing** > **Supprimer les données persistantes**
 
 ![Boîte de dialogue Live Unit Testing pour les gros projets](media/lut-large-project.png)
 
@@ -177,9 +175,9 @@ Pour sélectionner les projets individuels dans les tests unitaires, procédez c
 
 Vous pouvez utiliser la fenêtre de l’éditeur de code pour inclure ou exclure des méthodes de test. Cliquez avec le bouton droit sur la signature de la méthode de test dans la fenêtre de l’éditeur de code, puis sélectionnez l’une des options suivantes :
 
-- Les **tests en direct**  >  incluent la**méthode \<selected >**
-- **Tests en direct**  > **méthode d’exclusion \<selected >**
-- Les **tests en direct**  > **excluent tout sauf \<selected méthode >**
+- Les **tests en direct** > **incluent \<méthode sélectionnée >**
+- **Tests en direct** > **exclure \<méthode sélectionnée >**
+- Les **tests en direct** > **excluent tout sauf \<méthode sélectionnée >**
 
 ### <a name="exclude-tests-programmatically"></a>Exclure des tests par programmation
 
