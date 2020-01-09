@@ -2,17 +2,17 @@
 title: Ensemble de règles des règles recommandées mixtes
 ms.date: 11/04/2016
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f0daaf22f3e944dd76802060c53c64d40a4da04
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c3fc3f3480e33d2689053053343339690315d574
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649221"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587314"
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>Ensemble de règles des règles recommandées mixtes
 
@@ -139,7 +139,7 @@ Incluez cet ensemble de règles dans tout ensemble de règles personnalisées C+
 |[C6705](../code-quality/c6705.md)|Le nombre d’arguments attendu pour l’annotation ne correspond pas au nombre réel d’arguments pour l’annotation|
 |[C6706](../code-quality/c6706.md)|Erreur d'annotation inattendue pour l'annotation|
 |[C6995](../code-quality/c6995.md)|Échec de l’enregistrement du fichier journal XML|
-|[C26100](../code-quality/c26100.md)|Condition de concurrence critique|
+|[C26100](../code-quality/c26100.md)|Condition de concurrence|
 |[C26101](../code-quality/c26101.md)|Échec de l’utilisation de l’opération verrouillée|
 |[C26110](../code-quality/c26110.md)|Appelant qui ne détient pas de verrou|
 |[C26111](../code-quality/c26111.md)|Échec de libération du verrou par l’appelant|
@@ -151,7 +151,7 @@ Incluez cet ensemble de règles dans tout ensemble de règles personnalisées C+
 |[C28020](../code-quality/c28020.md)|L’expression n’est pas vraie pour cet appel|
 |[C28021](../code-quality/c28021.md)|Le paramètre annoté doit être un pointeur|
 |[C28022](../code-quality/c28022.md)|La ou les classes de fonction sur cette fonction ne correspondent pas à la ou les classes de fonction sur le typedef utilisé pour la définir.|
-|[C28023](../code-quality/c28023.md)|La fonction affectée ou passée doit avoir un \_Function \_class \_ annotation pour au moins une des classes|
+|[C28023](../code-quality/c28023.md)|La fonction affectée ou passée doit avoir une fonction de \_\_classe\_ annotation pour au moins une des classes|
 |[C28024](../code-quality/c28024.md)|Le pointeur de fonction assigné à est annoté avec la classe de fonction, qui n’est pas contenue dans la liste des classes de fonction.|
 |[C28039](../code-quality/c28039.md)|Le type du paramètre réel doit correspondre exactement au type|
 |[C28112](../code-quality/c28112.md)|Une variable qui est accessible via une fonction Interlocked doit toujours être accessible via une fonction verrouillée.|
@@ -169,14 +169,14 @@ Incluez cet ensemble de règles dans tout ensemble de règles personnalisées C+
 |[C28196](../code-quality/c28196.md)|L’exigence n’est pas satisfaite. (L’expression n’est pas évaluée à true.)|
 |[C28202](../code-quality/c28202.md)|Référence non autorisée à un membre non statique|
 |[C28203](../code-quality/c28203.md)|Référence ambiguë à un membre de classe.|
-|[C28205](../code-quality/c28205.md)|\_Success \_ ou \_On \_failure \_ utilisé dans un contexte illégal|
+|[C28205](../code-quality/c28205.md)|\_\_ de réussite ou \_sur\_échec\_ utilisé dans un contexte illégal|
 |[C28206](../code-quality/c28206.md)|L’opérande de gauche pointe vers un struct, utiliser '->'|
 |[C28207](../code-quality/c28207.md)|L’opérande de gauche est un struct, utiliser '.'|
 |[C28209](../code-quality/c28209.md)|La déclaration pour le symbole a une déclaration en conflit|
 |[C28210](../code-quality/c28210.md)|Les annotations pour le contexte __on_failure ne doivent pas se trouver dans un contexte préalable explicite|
 |[C28211](../code-quality/c28211.md)|Nom du contexte statique attendu pour SAL_context|
 |[C28212](../code-quality/c28212.md)|Expression de pointeur attendue pour l'annotation|
-|[C28213](../code-quality/c28213.md)|L’annotation \_Use \_decl \_annotations \_ doit être utilisée pour référencer, sans modification, une déclaration antérieure.|
+|[C28213](../code-quality/c28213.md)|Les \_utilisent\_des annotations decl\_\_ annotation doit être utilisée pour référencer, sans modification, une déclaration antérieure.|
 |[C28214](../code-quality/c28214.md)|Les noms des paramètres d'attribut doivent être p1...p9|
 |[C28215](../code-quality/c28215.md)|Le typefix ne peut pas être appliqué à un paramètre qui contient déjà un typefix|
 |[C28216](../code-quality/c28216.md)|L'annotation checkReturn ne s'applique qu'aux post-conditions pour le paramètre de fonction spécifique.|
@@ -219,7 +219,7 @@ Incluez cet ensemble de règles dans tout ensemble de règles personnalisées C+
 |[C28267](../code-quality/c28267.md)|Une erreur de syntaxe dans les annotations a été trouvée pour l'annotation dans la fonction.|
 |[C28272](../code-quality/c28272.md)|L'annotation pour la fonction, paramètre pendant la vérification est incohérente avec la déclaration de fonction|
 |[C28273](../code-quality/c28273.md)|Pour la fonction, les indices sont incohérents avec la déclaration de fonction|
-|[C28275](../code-quality/c28275.md)|Le paramètre pour \_Macro \_value \_ est null|
+|[C28275](../code-quality/c28275.md)|Le paramètre pour \_valeur de\_de macro\_ est null|
 |[C28279](../code-quality/c28279.md)|Pour le symbole, un 'begin' a été trouvé sans le 'end' correspondant|
 |[C28280](../code-quality/c28280.md)|Pour le symbole, un 'end' a été trouvé sans le 'begin' correspondant|
 |[C28282](../code-quality/c28282.md)|Les chaînes de format doivent être comprises dans des conditions préalables|

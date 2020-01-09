@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97352f60bfc40df28876731ec1e8aee1bff1773c
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 6548b86f075e5da51bea7835c93e5604f2177397
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72576275"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588770"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>Étape 2 : ajouter un objet aléatoire et une liste d'icônes
 
@@ -26,7 +26,7 @@ Dans cette étape, vous créez un ensemble de symboles correspondants pour le je
 
 ## <a name="to-add-a-random-object-and-a-list-of-icons"></a>Pour ajouter un objet aléatoire et une liste d'icônes
 
-1. Dans **Explorateur de solutions**, choisissez *Form1.cs* si C#vous utilisez ou *Formulaire1. vb* si vous utilisez Visual Basic, puis, dans la barre de menus, choisissez **Afficher**  > **code**. Vous pouvez aussi appuyer sur la touche **F7** ou double-cliquer sur **Form1** dans l’**Explorateur de solutions**.
+1. Dans **Explorateur de solutions**, choisissez *Form1.cs* si C#vous utilisez ou *Formulaire1. vb* si vous utilisez Visual Basic, puis, dans la barre de menus, choisissez **Afficher** > **code**. Vous pouvez aussi appuyer sur la touche **F7** ou double-cliquer sur **Form1** dans l’**Explorateur de solutions**.
 
      Cela affiche le module de code derrière Form1.
 
@@ -36,7 +36,7 @@ Dans cette étape, vous créez un ensemble de symboles correspondants pour le je
      [!code-vb[VbExpressTutorial4Step2_3_4#1](../ide/codesnippet/VisualBasic/step-2-add-a-random-object-and-a-list-of-icons_1.vb)]
 
       > [!IMPORTANT]
-      > Utilisez le contrôle de langage de programmation en haut à droite de cette page pour afficher C# l’extrait de code ou le Visual Basic extrait de code.<br><br>contrôle de langage ![Programming pour Docs.Microsoft.com ](../ide/media/docs-programming-language-control.png)
+      > Utilisez le contrôle de langage de programmation en haut à droite de cette page pour afficher C# l’extrait de code ou le Visual Basic extrait de code.<br><br>contrôle du langage de programmation ![pour Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
 
       Si vous utilisez, C#veillez à placer le code après l’accolade ouvrante et juste après la déclaration de classe (`public partial class Form1 : Form`). Si vous utilisez Visual Basic, placez le code juste après la déclaration de classe (`Public Class Form1`).
 
@@ -47,13 +47,13 @@ Dans cette étape, vous créez un ensemble de symboles correspondants pour le je
     > [!NOTE]
     > La fenêtre IntelliSense apparaît seulement quand vous entrez du code manuellement. Si vous effectuez un copier-coller du code, elle n'apparaît pas.
 
-     Si vous examinez le code (et les remarques) par petites sections, vous le comprendrez plus facilement. Vos programmes peuvent utiliser des objets de liste pour effectuer le suivi de nombreux types d'éléments différents. Une liste peut contenir des nombres, des valeurs True/False, du texte ou d'autres objets. Un objet de liste peut même contenir d'autres objets de liste. Une liste est composée d’éléments et chacune d’elles ne contient qu’un seul type d’élément. Ainsi, une liste de nombres ne peut contenir que des nombres et vous ne pouvez pas y ajouter de texte. De même, vous ne pouvez pas ajouter de nombres dans une liste de valeurs true/false.
+     Si vous examinez le code (et les remarques) par petites sections, vous le comprendrez plus facilement. Vos programmes peuvent utiliser des objets de liste pour effectuer le suivi de nombreux types d'éléments différents. Une liste peut contenir des nombres, des valeurs True/False, du texte ou d'autres objets. Un objet de liste peut même contenir d'autres objets de liste. Une liste est composée d'éléments et chacune d'elles ne contient qu'un seul type d'éléments. Ainsi, une liste de nombres ne peut contenir que des nombres et vous ne pouvez pas y ajouter de texte. De même, vous ne pouvez pas ajouter de nombres dans une liste de valeurs true/false.
 
      Lorsque vous créez un objet `List` à l'aide d'une instruction `new`, vous devez spécifier le type de données que vous souhaitez y stocker. C’est la raison pour laquelle l’info-bulle en haut de la fenêtre **IntelliSense** affiche les types d’éléments figurant dans la liste. C’est également ce que `List<string>` (dans C#) et `List(Of String)` (dans Visual Basic) signifie : il s’agit d’un objet `List` qui contient des éléments de `string` type de données. Une chaîne est utilisée par votre programme pour stocker du texte, lequel est indiqué par l’info-bulle à droite de la fenêtre **IntelliSense**.
 
 4. Imaginez pourquoi dans Visual Basic un tableau temporaire doit être créé en premier, mais C#dans, la liste peut être créée avec une instruction. Cela est dû au C# fait que le langage a des *initialiseurs de collection*qui préparent la liste à accepter des valeurs. En Visual Basic, vous pouvez utiliser un initialiseur de collection. Toutefois, nous vous recommandons d'utiliser le code précédent pour des raisons de compatibilité avec la version antérieure de Visual Basic.
 
-     Lorsque vous utilisez un initialiseur de collection avec une instruction `new`, une fois que le nouvel objet de liste a été créé, le programme le remplit avec les données que vous avez fournies entre les accolades. Dans ce cas, vous obtenez une liste de chaînes nommées icônes, et cette liste sera initialisée de manière à contenir seize chaînes. Chacune de ces chaînes est une lettre unique, et elles correspondent toutes aux icônes qui seront dans les contrôles Label. Ainsi, le jeu comportera une paire de points d'exclamation, une paire de lettres N majuscules, une paire de virgules, etc. (Lorsque ces caractères sont définis sur la police Webdings, ils s’affichent sous la forme de symboles, tels qu’un bus, un vélo, un Spider, etc.) Votre objet de liste aura seize chaînes en tout, une pour chaque cellule dans le panneau TableLayoutPanel.
+     Lorsque vous utilisez un initialiseur de collection avec une instruction `new`, une fois que le nouvel objet de liste a été créé, le programme le remplit avec les données que vous avez fournies entre les accolades. Dans ce cas, vous obtenez une liste de chaînes nommées icônes, et cette liste sera initialisée de sorte à contenir seize chaînes. Chacune de ces chaînes est une lettre unique, et elles correspondent toutes aux icônes qui seront dans les contrôles Label. Ainsi, le jeu comportera une paire de points d'exclamation, une paire de lettres N majuscules, une paire de virgules, etc. (Lorsque ces caractères sont définis sur la police Webdings, ils s’affichent sous la forme de symboles, tels qu’un bus, un vélo, un Spider, etc.) Votre objet de liste aura seize chaînes en tout, une pour chaque cellule dans le panneau TableLayoutPanel.
 
     > [!NOTE]
     > Dans Visual Basic, vous obtenez le même résultat, mais les chaînes sont d'abord insérées dans un tableau temporaire, qui est ensuite converti en objet de liste. Un tableau est semblable à une liste, sauf que les tableaux sont créés avec une taille fixe, par exemple. Les listes peuvent se réduire et s'agrandir autant que nécessaire, ce qui est important dans ce programme.

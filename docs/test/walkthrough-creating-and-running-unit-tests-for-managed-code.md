@@ -8,17 +8,17 @@ helpviewer_keywords:
 - unit tests, generating
 - unit tests, running
 - unit tests, authoring
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-author: jillre
-ms.openlocfilehash: 317b014ae0ef684dfc5f7ff73247d6186846a860
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: b1ec115dd960799a1242a0d60bd793d671facb18
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659655"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590707"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Procédure pas à pas : créer et exécuter des tests unitaires pour le code managé
 
@@ -30,11 +30,11 @@ Cet article décrit la création, l’exécution et la personnalisation d’une 
 
 1. Ouvrez Visual Studio.
 
-2. Dans le menu **Fichier**, sélectionnez **Nouveau** > **Projet**.
+2. Dans le menu **fichier** , sélectionnez **nouveau** > **projet**.
 
    La boîte de dialogue **Nouveau projet** s’affiche.
 
-3. Sous la catégorie **Visual C#** > **.NET Core**, choisissez le modèle de projet **Application console (.NET Core)** .
+3. Sous la **catégorie C# Visual** > **.net Core** , choisissez le modèle de projet **application console (.net Core)** .
 
 4. Nommez le projet **Bank**, puis cliquez sur **OK**.
 
@@ -279,7 +279,7 @@ Une méthode de test doit répondre aux spécifications suivantes :
 
 - Elle est décorée avec l’attribut `[TestMethod]`.
 
-- Il retourne `void`.
+- Elle retourne `void`.
 
 - Elle ne peut pas avoir de paramètres.
 

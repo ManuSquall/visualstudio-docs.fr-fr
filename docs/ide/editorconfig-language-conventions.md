@@ -7,18 +7,18 @@ dev_langs:
 - VB
 helpviewer_keywords:
 - language code style rules [EditorConfig]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 38d625b774bc828741e2e4f227a45a293c029235
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d03af1625086a56a6f36e48d59fd00c2461c0751
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652805"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588627"
 ---
 # <a name="language-conventions"></a>Conventions de langage
 
@@ -66,7 +66,7 @@ Gravité | Effet
 
 Pour modifier la Convention de style de code :
 
-1. Pointez sur le tilde dans l’éditeur, puis ouvrez le menu ampoule qui s’affiche. Choisissez **configurer ou supprimer les problèmes**  > **configurer \<rule ID > style de code**.
+1. Pointez sur le tilde dans l’éditeur, puis ouvrez le menu ampoule qui s’affiche. Choisissez **configurer ou supprimer les problèmes** > **configurer \<ID de règle > style de code**.
 
    ![Configurer le style de code à partir du menu ampoule dans Visual Studio](media/vs-2019/configure-code-style.png)
 
@@ -76,7 +76,7 @@ Pour modifier la Convention de style de code :
 
    Visual Studio ajoute ou modifie le paramètre de configuration dans le fichier EditorConfig, comme indiqué dans la zone Aperçu.
 
-Pour modifier la gravité de la violation de style de code, suivez les mêmes étapes, mais choisissez **configurer l’id \<rule > gravité** au lieu de **configurer \<rule ID > style de code**. Pour plus d’informations, consultez [configurer automatiquement la gravité](../code-quality/use-roslyn-analyzers.md#automatically-configure-rule-severity)de la règle.
+Pour modifier la gravité de la violation de style de code, suivez les mêmes étapes, mais choisissez **configurer \<ID de règle > gravité** au lieu de **configurer \<id de règle > style de code**. Pour plus d’informations, consultez [configurer automatiquement la gravité](../code-quality/use-roslyn-analyzers.md#automatically-configure-rule-severity)de la règle.
 
 ::: moniker-end
 
@@ -92,7 +92,7 @@ Les règles de style mentionnées dans cette section s’appliquent aussi bien a
 - [Mots clés de langage plutôt que des noms de types d’infrastructure pour les références de type](#language-keywords)
   - dotnet\_style\_predefined\_type\_for\_locals\_parameters_members
   - dotnet\_style\_predefined\_type\_for\_member_access
-- [Préférences des modificateurs](#normalize-modifiers)
+- [Préférences de modificateur](#normalize-modifiers)
   - dotnet\_style\_require\_accessibility_modifiers
   - csharp\_preferred\_modifier_order
   - visual\_basic\_preferred\_modifier_order
@@ -392,7 +392,7 @@ class MyClass
 |-|-|
 | **Nom de la règle** | visual_basic_preferred_modifier_order |
 | **ID de règle** | IDE0036 |
-| **Langages applicables** | Visual Basic |
+| **Langages applicables** | Visual Basic |
 | **Valeurs** | Un ou plusieurs modificateurs Visual Basic, tels que `Partial`, `Private` et `Public` |
 | **Valeur par défaut de Visual Studio** | `Partial, Default, Private, Protected, Public, Friend, NotOverridable, Overridable, MustOverride, Overloads, Overrides, MustInherit, NotInheritable, Static, Shared, Shadows, ReadOnly, WriteOnly, Dim, Const,WithEvents, Widening, Narrowing, Custom, Async:silent` |
 | **Version introduite** | Visual Studio 2017 version 15.5 |
@@ -1838,7 +1838,7 @@ void M()
 | **Nom de la règle** | csharp_prefer_simple_using_statement |
 | **ID de règle** | IDE0063 |
 | **Langages applicables** | C# 8.0+ |
-| **Valeurs** | `true` - Préférer l’utilisation d’une instruction `using` *simple*<br /><br />`false` - Ne pas préférer l’utilisation d’une instruction `using` *simple* |
+| **Valeurs** | `true`-préférer utiliser une instruction `using` *simple*<br /><br />`false`-ne pas préférer utiliser une instruction `using` *simple* |
 | **Valeur par défaut de Visual Studio** | `true:suggestion` |
 
 Exemples de code :

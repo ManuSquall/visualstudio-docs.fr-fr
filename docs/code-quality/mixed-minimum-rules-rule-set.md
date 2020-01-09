@@ -3,17 +3,17 @@ title: Ensemble de règles des règles minimales mixtes
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: bc8df61c-19af-40ab-a871-315807e5f4bf
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37c72b9526e667216a6791470353ce78132c2a0a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ddb4b5b80ab33e0136b14ce824f5be1b8cb9f6a3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649230"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587327"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Ensemble de règles des règles minimales mixtes
 
@@ -86,13 +86,13 @@ Incluez cet ensemble de règles dans tout ensemble de règles personnalisées C+
 |[C28182](../code-quality/c28182.md)|Déréférencement du pointeur NULL. Le pointeur contient la même valeur NULL qu'un autre pointeur.|
 |[C28202](../code-quality/c28202.md)|Référence non autorisée à un membre non statique|
 |[C28203](../code-quality/c28203.md)|Référence ambiguë à un membre de classe.|
-|[C28205](../code-quality/c28205.md)|\_Success \_ ou \_On \_failure \_ utilisé dans un contexte illégal|
+|[C28205](../code-quality/c28205.md)|\_\_ de réussite ou \_sur\_échec\_ utilisé dans un contexte illégal|
 |[C28206](../code-quality/c28206.md)|L’opérande de gauche pointe vers un struct, utiliser '->'|
 |[C28207](../code-quality/c28207.md)|L’opérande de gauche est un struct, utiliser '.'|
 |[C28210](../code-quality/c28210.md)|Les annotations pour le contexte __on_failure ne doivent pas se trouver dans un contexte préalable explicite|
 |[C28211](../code-quality/c28211.md)|Nom du contexte statique attendu pour SAL_context|
 |[C28212](../code-quality/c28212.md)|Expression de pointeur attendue pour l'annotation|
-|[C28213](../code-quality/c28213.md)|L’annotation \_Use \_decl \_annotations \_ doit être utilisée pour référencer, sans modification, une déclaration antérieure.|
+|[C28213](../code-quality/c28213.md)|Les \_utilisent\_des annotations decl\_\_ annotation doit être utilisée pour référencer, sans modification, une déclaration antérieure.|
 |[C28214](../code-quality/c28214.md)|Les noms des paramètres d'attribut doivent être p1...p9|
 |[C28215](../code-quality/c28215.md)|Le typefix ne peut pas être appliqué à un paramètre qui contient déjà un typefix|
 |[C28216](../code-quality/c28216.md)|L'annotation checkReturn ne s'applique qu'aux post-conditions pour le paramètre de fonction spécifique.|
@@ -134,7 +134,7 @@ Incluez cet ensemble de règles dans tout ensemble de règles personnalisées C+
 |[C28267](../code-quality/c28267.md)|Une erreur de syntaxe dans les annotations a été trouvée pour l'annotation dans la fonction.|
 |[C28272](../code-quality/c28272.md)|L'annotation pour la fonction, paramètre pendant la vérification est incohérente avec la déclaration de fonction|
 |[C28273](../code-quality/c28273.md)|Pour la fonction, les indices sont incohérents avec la déclaration de fonction|
-|[C28275](../code-quality/c28275.md)|Le paramètre pour \_Macro \_value \_ est null|
+|[C28275](../code-quality/c28275.md)|Le paramètre pour \_valeur de\_de macro\_ est null|
 |[C28279](../code-quality/c28279.md)|Pour le symbole, un 'begin' a été trouvé sans le 'end' correspondant|
 |[C28280](../code-quality/c28280.md)|Pour le symbole, un 'end' a été trouvé sans le 'begin' correspondant|
 |[C28282](../code-quality/c28282.md)|Les chaînes de format doivent être comprises dans des conditions préalables|

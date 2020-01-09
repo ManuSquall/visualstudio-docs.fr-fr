@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - code, editing [Visual Studio]
 - code editor [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86cab4db7c732aeb33d9adf61bfdcb2c4563da57
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: de209e0a940fe7f7c64644cea37de3762df0d643
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647044"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588549"
 ---
 # <a name="features-of-the-code-editor"></a>Fonctionnalités de l’éditeur de code
 
@@ -56,7 +56,7 @@ De nombreuses fonctionnalités avancées sont disponibles dans le menu **Éditio
 |Mettre la sélection en forme|Définit la mise en retrait appropriée des lignes de code et place des accolades pour séparer les lignes dans la sélection.|
 |Remplacer les espaces par des tabulations|Remplace les espaces à gauche par des tabulations le cas échéant.|
 |Remplacer les tabulations par des espaces|Remplace les tabulations à gauche par des espaces. Si vous souhaitez convertir tous les espaces de votre fichier en tabulations (ou toutes les tabulations en espaces), vous pouvez utiliser les commandes `Edit.ConvertSpacesToTabs` et `Edit.ConvertTabsToSpaces`. Ces commandes n’apparaissent pas dans les menus de Visual Studio, mais vous pouvez les appeler à partir de la fenêtre **Accès rapide** ou de la fenêtre Commande.|
-|Mettre en majuscules|Met tous les caractères de la sélection en majuscules ou, en l’absence de sélection, met en majuscule le caractère au point d’insertion. Raccourci : **Ctrl**+**Shift**+**U**.|
+|Mettre en majuscules|Met tous les caractères de la sélection en majuscules ou, en l’absence de sélection, met en majuscule le caractère au point d’insertion. Raccourci : **Ctrl**+**MAJ**+**U**.|
 |Mettre en minuscules|Met tous les caractères de la sélection en minuscules ou, en l’absence de sélection, met en minuscule le caractère au point d’insertion. Raccourci : **Ctrl**+**U**.|
 |Déplacer les lignes sélectionnées vers le haut|Déplace la ligne sélectionnée d’une ligne vers le haut. Raccourci : **Alt**+**Haut**.|
 |Déplacer les lignes sélectionnées vers le bas|Déplace la ligne sélectionnée d’une ligne vers le bas. Raccourci : **Alt**+**Bas**.|

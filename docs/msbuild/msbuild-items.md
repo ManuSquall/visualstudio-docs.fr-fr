@@ -6,17 +6,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, Items
 ms.assetid: d762eff4-c92a-4b5f-a944-1ca30aa22319
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cebf824785fed39cfd824b9b90f9d19be5df8c64
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: a8ed6b9789569e9f68706a5b132aa9000b25d910
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71251709"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590642"
 ---
 # <a name="msbuild-items"></a>Éléments MSBuild
 Les éléments MSBuild sont des entrées du système de génération qui représentent généralement des fichiers (spécifiés dans l’attribut `Include`). Les éléments sont regroupés en différents types selon leurs noms d’élément. Les types d’élément sont des listes nommées d’éléments qui peuvent être utilisés comme paramètres pour les tâches. Les tâches utilisent les valeurs d’élément pour exécuter les étapes du processus de génération.
@@ -53,9 +53,9 @@ Les éléments MSBuild sont des entrées du système de génération qui représ
 - Depuis .NET Framework 3.5, les éléments `Target` peuvent contenir des éléments [ItemGroup](../msbuild/itemgroup-element-msbuild.md) qui peuvent comporter des éléments Item.
 
 ## <a name="reference-items-in-a-project-file"></a>Référencer des éléments dans un fichier projet
- Pour référencer des types d’éléments dans tout le fichier projet, vous devez utiliser la syntaxe @(\<ItemType>). Par exemple, vous devez référencer le type d’élément dans l’exemple précédent en utilisant `@(Compile)`. À l’aide de cette syntaxe, vous pouvez transmettre des éléments aux tâches en spécifiant le type d’élément en tant que paramètre de la tâche en question. Pour plus d'informations, voir [Procédure : Sélectionner des fichiers dans une build](../msbuild/how-to-select-the-files-to-build.md).
+ Pour référencer des types d’éléments dans tout le fichier projet, vous devez utiliser la syntaxe @(\<ItemType>). Par exemple, vous devez référencer le type d’élément dans l’exemple précédent en utilisant `@(Compile)`. À l’aide de cette syntaxe, vous pouvez transmettre des éléments aux tâches en spécifiant le type d’élément en tant que paramètre de la tâche en question. Pour plus d’informations, consultez [Guide pratique pour sélectionner des fichiers dans une build](../msbuild/how-to-select-the-files-to-build.md).
 
- Par défaut, les éléments d’un type d’élément développé sont séparés par des points-virgules (;). Vous pouvez utiliser la syntaxe @(\<ItemType>, '\<separator>') pour spécifier un séparateur autre que celui indiqué par défaut. Pour plus d'informations, voir [Procédure : Afficher une liste d’éléments séparés par des virgules](../msbuild/how-to-display-an-item-list-separated-with-commas.md).
+ Par défaut, les éléments d’un type d’élément développé sont séparés par des points-virgules (;). Vous pouvez utiliser la syntaxe @(\<ItemType>, '\<separator>') pour spécifier un séparateur autre que celui indiqué par défaut. Pour plus d’informations, consultez [Guide pratique pour afficher une liste d’éléments séparés par des virgules](../msbuild/how-to-display-an-item-list-separated-with-commas.md).
 
 ## <a name="use-wildcards-to-specify-items"></a>Utiliser des caractères génériques pour spécifier des éléments
 
@@ -79,7 +79,7 @@ L’élément suivant permet de sélectionner tous les fichiers `.vb` sur le lec
 
 Si vous souhaitez inclure des caractères `*` ou `?` littéraux dans un élément sans le développement des caractères génériques, vous devez utiliser des [caractères génériques d’échappement](../msbuild/how-to-escape-special-characters-in-msbuild.md).
 
-Pour plus d’informations sur les caractères génériques, consultez [Guide pratique pour Sélectionner des fichiers dans une build](../msbuild/how-to-select-the-files-to-build.md).
+Pour plus d’informations sur les caractères génériques, consultez [Guide pratique pour sélectionner des fichiers dans une build](../msbuild/how-to-select-the-files-to-build.md).
 
 ## <a name="use-the-exclude-attribute"></a>Utiliser l’attribut Exclude
  Les éléments Item peuvent contenir l’attribut `Exclude` qui exclut des éléments spécifiques (fichiers) du type d’élément. L’attribut `Exclude` est généralement utilisé avec des caractères génériques. Par exemple, le code XML suivant ajoute tous les fichiers *.cs* du répertoire au type d’élément CSFile, à l’exception du fichier *DoNotBuild.cs*.
@@ -97,7 +97,7 @@ Pour plus d’informations sur les caractères génériques, consultez [Guide pr
 <Compile Include="*.res" Exclude="Form1.cs">
 ```
 
- Pour plus d'informations, voir [Procédure : Exclure des fichiers de la build](../msbuild/how-to-exclude-files-from-the-build.md).
+ Pour plus d’informations, consultez [Guide pratique pour exclure des fichiers de la build](../msbuild/how-to-exclude-files-from-the-build.md).
 
 ## <a name="item-metadata"></a>Métadonnées d’élément
  Outre les informations des attributs `Include` et `Exclude`, les éléments peuvent contenir des métadonnées. Ces métadonnées peuvent être utilisées par les tâches qui requièrent plus d’informations sur les éléments ou pour traiter par lot les tâches et les cibles. Pour plus d’informations, consultez l’article [Batching (Traitement par lot MSBuild)](../msbuild/msbuild-batching.md).
@@ -157,7 +157,7 @@ Pour plus d’informations sur les caractères génériques, consultez [Guide pr
  Pour plus d’informations, consultez l’article [Transforms (Transformations MSBuild)](../msbuild/msbuild-transforms.md).
 
 ## <a name="item-definitions"></a>Définitions d’éléments
- Depuis .NET Framework 3.5, vous pouvez ajouter des métadonnées par défaut à tout type d’élément à l’aide de l’[élément ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md). À l’instar des métadonnées connues, les métadonnées par défaut sont associées à tous les éléments du type d’élément que vous spécifiez. Vous pouvez remplacer les métadonnées par défaut dans une définition d’élément de façon explicite. Par exemple, le code XML suivant fournit aux éléments `Compile` *one.cs* et *three.cs* les métadonnées `BuildDay` pourvues de la valeur « Monday ». Le code donne à l’élément *two.cs* les métadonnées `BuildDay` pourvues de la valeur « Tuesday ».
+ Depuis .NET Framework 3.5, vous pouvez ajouter des métadonnées par défaut à tout type d’élément à l’aide de l’[élément ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md). À l’instar des métadonnées connues, les métadonnées par défaut sont associées à tous les éléments du type d’élément que vous spécifiez. Vous pouvez remplacer les métadonnées par défaut dans une définition d’élément de façon explicite. Par exemple, le code XML suivant fournit aux éléments `Compile`*one.cs* et *three.cs* les métadonnées `BuildDay` pourvues de la valeur « Monday ». Le code donne à l’élément *two.cs* les métadonnées `BuildDay` pourvues de la valeur « Tuesday ».
 
 ```xml
 <ItemDefinitionGroup>
@@ -327,7 +327,7 @@ Output:
 - [Concepts MSBuild](../msbuild/msbuild-concepts.md)
 - [MSBuild](../msbuild/msbuild.md)
 - [Guide pratique pour sélectionner des fichiers dans une build](../msbuild/how-to-select-the-files-to-build.md)
-- [Guide pratique pour exclure des fichiers de la build](../msbuild/how-to-exclude-files-from-the-build.md)
-- [Guide pratique pour afficher une liste d’éléments séparés par des virgules](../msbuild/how-to-display-an-item-list-separated-with-commas.md)
+- [Comment : exclure des fichiers de la Build](../msbuild/how-to-exclude-files-from-the-build.md)
+- [Comment : afficher une liste d’éléments séparés par des virgules](../msbuild/how-to-display-an-item-list-separated-with-commas.md)
 - [Définitions d’éléments](../msbuild/item-definitions.md)
 - [Traitement par lots](../msbuild/msbuild-batching.md)

@@ -7,15 +7,15 @@ helpviewer_keywords:
 - Visual Studio templates, updating
 - project templates, updating
 - updating templates [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: ee0118ce4181a12ca4c199b8174a28fb4b431063
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 44f99646330d3c8a75bd94310bc0adf9073f9d49
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656542"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591357"
 ---
 # <a name="how-to-update-existing-templates"></a>Guide pratique pour mettre à jour des modèles existants
 
@@ -69,5 +69,5 @@ Vous pouvez mettre à jour un modèle existant sans utiliser l’**Assistant Exp
 
 - [Personnaliser les modèles](../ide/customizing-project-and-item-templates.md)
 - [Créer des modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)
-- [Informations de référence sur les schémas de modèles Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Paramètres de modèle](../ide/template-parameters.md)

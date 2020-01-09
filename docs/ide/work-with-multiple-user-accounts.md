@@ -1,5 +1,5 @@
 ---
-title: Utiliser plusieurs comptes d’utilisateur
+title: Utiliser plusieurs comptes d'utilisateur
 ms.date: 07/23/2019
 ms.topic: conceptual
 author: jillre
@@ -7,14 +7,14 @@ ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5993d550d85cdc0bd1c9ce6b72553eda6fc280e5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f757489f26ae41319316fcfc9cdc957dbb7d94a2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647077"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590655"
 ---
-# <a name="work-with-multiple-user-accounts"></a>Utiliser plusieurs comptes d’utilisateur
+# <a name="work-with-multiple-user-accounts"></a>Utiliser plusieurs comptes d'utilisateur
 
 Si vous avez plusieurs comptes Microsoft et/ou comptes professionnels ou scolaires, vous pouvez les ajouter à Visual Studio. Vous avez ainsi accès aux ressources de n'importe quel compte sans avoir à vous y connecter séparément. Azure, Application Insights, Azure DevOps et les services Office 365 prennent tous en charge l’expérience de connexion simplifiée.
 
@@ -25,7 +25,7 @@ Une fois que vous aurez ajouté plusieurs comptes sur un ordinateur, vous pourre
 
 Cet article explique comment ajouter plusieurs comptes à Visual Studio. Il montre également comment accéder aux ressources accessibles à partir de ces comptes dans des endroits comme la boîte de dialogue **Ajouter un service connecté**, **l’Explorateur de serveurs** et **Team Explorer**.
 
-## <a name="sign-in-to-visual-studio"></a>Connectez-vous à Visual Studio
+## <a name="sign-in-to-visual-studio"></a>Se connecter à Visual Studio
 
 Connectez-vous à Visual Studio avec un compte Microsoft ou un compte professionnel. Votre nom d’utilisateur doit apparaître dans le coin supérieur de la fenêtre, comme ceci :
 

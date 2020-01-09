@@ -5,19 +5,19 @@ ms.custom: seodec18, get-started
 ms.date: 11/20/2018
 ms.technology: vs-ide-general
 ms.topic: tutorial
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: fd9643e92d4774ca1356534faca9e031395ff4d9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 695b1600aedb30a9e75a7829af4bac400f069922
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72632652"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75584606"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Apprendre à utiliser l’éditeur de code
 
@@ -40,7 +40,7 @@ Dans cette présentation de 10 minutes de l’éditeur de code de Visual Studio
 Cet article part du principe que vous connaissez déjà Visual Basic. Si ce n’est pas le cas, nous vous suggérons de consulter un tutoriel comme [Bien démarrer avec Visual Basic dans Visual Studio](../../get-started/visual-basic/tutorial-console.md) pour commencer.
 
 > [!TIP]
-> Pour suivre cet article, vérifiez que vous avez sélectionné les paramètres Visual Basic pour Visual Studio. Pour plus d’informations sur la sélection des paramètres de l’environnement de développement intégré (IDE), voir [Sélectionner les paramètres de l’environnement](visual-studio-ide.md#select-environment-settings).
+> Pour suivre cet article, vérifiez que vous avez sélectionné les paramètres Visual Basic pour Visual Studio. Pour plus d’informations sur la sélection des paramètres pour l’environnement de développement intégré (IDE), consultez [Sélectionner les paramètres d’environnement](visual-studio-ide.md#select-environment-settings).
 
 ## <a name="create-a-new-code-file"></a>Créer un fichier de code
 
@@ -182,7 +182,7 @@ Aucun développeur ne réussit à créer un code parfait dès le départ. L’un
 
    Les deux occurrences de `words` sont renommées, tout comme la référence à `words` dans le commentaire de code.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 > [!div class="nextstepaction"]
 > [Découvrir les projets et les solutions](tutorial-projects-solutions.md)
@@ -192,6 +192,6 @@ Aucun développeur ne réussit à créer un code parfait dès le départ. L’un
 - [Extraits de code](../../ide/code-snippets.md)
 - [Naviguer dans le code](../../ide/navigating-code.md)
 - [Mode Plan](../../ide/outlining.md)
-- [Atteindre la définition et Aperçu de la définition](../../ide/go-to-and-peek-definition.md)
+- [Atteindre la définition et l’aperçu de définition](../../ide/go-to-and-peek-definition.md)
 - [Refactorisation](../../ide/refactoring-in-visual-studio.md)
 - [Utiliser IntelliSense](../../ide/using-intellisense.md)
