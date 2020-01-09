@@ -6,17 +6,17 @@ f1_keywords:
 - System.Activities.Presentation.View.ArgumentDesigner.UI
 - System.Activities.Presentation.View.DesignTimeArgument.UI
 ms.assetid: 64813fd5-1ea1-499a-98b4-ab2a44b7ee5e
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c3f8216bb0dfe3813e4852151c351b865128d0c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2903c69e3cf50f3ed0392239ee8848a79eb50e20
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650288"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75584554"
 ---
 # <a name="how-to-use-the-argument-designer"></a>Procédure : utiliser le concepteur d’arguments
 
@@ -28,7 +28,7 @@ Le concepteur d’arguments permet d’autoriser facilement le passage des donn�
 
 2. Ouvrez le concepteur d’arguments en cliquant sur le bouton **arguments** dans le coin inférieur gauche de la zone de conception. Le concepteur d’arguments s’affiche.
 
-3. Cliquez sur la ligne vide intitulée **créer un argument**. Cette opération ajoute une nouvelle ligne avec un nouvel argument en utilisant les valeurs par défaut suivantes : argumentx comme pour le **nom** où x est un entier avec une valeur initiale de 1 qui est automatiquement incrémentée pour créer des noms d’arguments uniques **dans** pour la **direction**. et **chaîne** pour le **type d’argument**. Aucune valeur n’est ajoutée pour la **valeur par défaut**. Vous pouvez modifier ces valeurs à tout moment pendant le processus de conception du workflow.
+3. Cliquez sur la ligne vide intitulée **créer un argument**. Cette opération ajoute une nouvelle ligne avec un nouvel argument en utilisant les valeurs par défaut suivantes : argumentx comme pour le **nom** où x est un entier avec une valeur initiale de 1 qui est automatiquement incrémentée pour créer des noms d’arguments uniques, **dans** pour la **direction**et **chaîne** pour le **type d’argument**. Aucune valeur n’est ajoutée pour la **valeur par défaut**. Vous pouvez modifier ces valeurs à tout moment pendant le processus de conception du workflow.
 
     > [!NOTE]
     > Pour supprimer un argument, sélectionnez l’argument en cliquant dessus, puis appuyez sur la touche **Suppr** .

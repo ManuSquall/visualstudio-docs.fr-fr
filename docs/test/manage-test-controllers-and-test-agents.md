@@ -2,17 +2,17 @@
 title: Gérer les contrôleurs de test et les agents de test
 ms.date: 09/18/2018
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 530a3d7ac205988639ed1346f823d889f56adffb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: efcc284291281b6e370cf51ddbe175faf8f1204c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652926"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75584411"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Gérer les contrôleurs de test et les agents de test
 
@@ -36,7 +36,7 @@ Il est possible d'ajouter un agent de test à un contrôleur de test différent 
 
 1. Choisissez **Démarrer** > **Outil de configuration de Test Agent**.
 
-     La boîte de dialogue **Configurer Test Agent** s’affiche.
+     La boîte de dialogue **Configurer l’agent de test** s’affiche.
 
     > [!NOTE]
     > Un agent de test doit déjà être installé pour pouvoir l'ajouter à un contrôleur de test. Pour plus d’informations sur la façon d’installer un agent de test, consultez [Installer et configurer des agents de test](../test/lab-management/install-configure-test-agents.md).
@@ -71,7 +71,7 @@ Il est possible d'ajouter un agent de test à un contrôleur de test différent 
 
       3. Pour vérifier qu'un ordinateur sur lequel est installé un agent de test puisse exécuter des tests après avoir redémarré, vous pouvez configurer l'ordinateur de sorte qu'il ouvre automatiquement une session avec l'utilisateur de l'agent de test. Sélectionnez **Se connecter automatiquement**. Ainsi, le nom d'utilisateur et le mot de passe seront stockés dans un formulaire chiffré dans le Registre.
 
-      4. Pour vérifier que l’écran de veille est désactivé étant donné que cela peut interférer avec tout test automatisé qui doit interagir avec le poste de travail, sélectionnez **S’assurer que l’écran de veille est désactivé**.
+      4. Pour garantir que l’écran de veille est désactivé, car cela peut interférer avec les tests automatisés qui doivent interagir avec le poste de travail, sélectionnez **S’assurer que l’écran de veille est désactivé**.
 
         > [!WARNING]
         > Se connecter automatiquement ou désactiver l'écran de veille présente des risques. En activant la connexion automatique, vous permettez à d'autres utilisateurs de démarrer cet ordinateur et d'utiliser le compte sur lequel il se connecte automatiquement. Si vous désactivez l'écran de veille, l'ordinateur peut ne pas inviter l'utilisateur à ouvrir une session pour déverrouiller l'ordinateur. Tout personne peut ainsi accéder à l'ordinateur, à partir du moment où celle-ci peut y accéder physiquement. Si vous activez ces fonctions sur un ordinateur, vous devez vous assurer que ces ordinateurs sont physiquement sécurisés. S'ils se trouvent, par exemple, dans un lab physiquement sécurisé. (La désactivation de l’option **S’assurer que l’écran de veille est désactivé** ne permet pas d’activer l’écran de veille.)

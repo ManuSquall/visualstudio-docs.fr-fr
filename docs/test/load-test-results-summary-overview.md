@@ -11,21 +11,21 @@ helpviewer_keywords:
 - Load Test Viewer, summary
 - load tests, summary in Load Test Viewer
 ms.assetid: 326b6c3c-5378-452b-8ca3-ba5a06ab3d41
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ba72bc9d4e63e1ccb1e6d8c05d20332880e19ea9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7df3324c2182c376cb9547a4192fca3e601b3dd5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652994"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75584489"
 ---
 # <a name="load-test-results-summary-overview"></a>Présentation du récapitulatif des résultats des tests de charge
 
 Après avoir exécuté un test de charge, vous pouvez consulter le résumé du test de charge pour comprendre rapidement les résultats. Ce résumé fournit les résultats clés dans un format compact et facile à lire. Vous pouvez également l'imprimer. Cela rend son utilisation pratique lorsque vous communiquez des résultats aux parties prenantes. Le résumé du test de charge est également la vue par défaut lorsque vous ouvrez un résultat de test de charge d'un précédemment test de charge exécuté. Pour plus d’informations, consultez [Guide pratique pour accéder aux résultats des tests de charge à des fins d’analyse](../test/how-to-access-load-test-results-for-analysis.md).
 
-![Mode Résumé](../test/media/ltest_summaryview.png)
+![Vue Résumé](../test/media/ltest_summaryview.png)
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -58,7 +58,7 @@ Les sections de fermeture apparaissent à la fin du résumé et peuvent être r�
 
 - Ressources du contrôleur et de l'agent
 
-- Errors
+- Erreurs du
 
 ## <a name="test-run-information"></a>Informations sur les séries de tests
 
@@ -125,7 +125,7 @@ La section relative aux ressources du contrôleur et de l'agent contient une lis
 > [!NOTE]
 > Vous pouvez réduire et développer cette section en cliquant sur la flèche située à gauche du titre de la section.
 
-## <a name="errors"></a>Errors
+## <a name="errors"></a>Erreurs du
 
 La section relative aux erreurs contient une liste de toutes les erreurs qui se sont produites durant le test de charge. Le type et sous-type de l'erreur, le compte et le dernier message sont affichés. Vous pouvez choisir une erreur pour ouvrir la table **Erreurs** et obtenir plus de détails sur cette erreur. Pour plus d’informations, consultez [Analyser les résultats et les erreurs des tests de charge dans la vue Tables](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
