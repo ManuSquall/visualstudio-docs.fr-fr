@@ -3,17 +3,17 @@ title: 'Procédure pas à pas : utilisation des fonctionnalités de l’éditeu
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ea8dc357-2e66-455a-aec2-7ccaccfc9adf
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ce7997e1002ced50dc4d8203d522feb0a6bbb49
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d2cf35730b70fc8c8bbec392c73b444b6e8e0aaa
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72604456"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592462"
 ---
 # <a name="walkthrough-use-xml-editor-features"></a>Procédure pas à pas : utiliser les fonctionnalités de l’éditeur XML
 
@@ -58,7 +58,7 @@ Les étapes de cette procédure pas à pas expliquent la création d'un document
 
     - **employé** pour ajouter l’élément racine.
 
-2. Sélectionnez **&lt; !--** pour ajouter un nœud de commentaire et appuyez sur **entrée**.
+2. Sélectionnez **&lt;!--** pour ajouter un nœud de commentaire et appuyez sur **entrée**.
 
      L'éditeur insère une balise de fin de commentaire et place le curseur entre les balises de début et de fin du commentaire.
 
@@ -96,7 +96,7 @@ Les étapes de cette procédure pas à pas expliquent la création d'un document
 
 ## <a name="to-format-the-xml-document"></a>Pour mettre en forme le document XML
 
-- Sélectionnez le bouton **mettre le document en forme** dans la barre d’outils de l’éditeur XML, ou appuyez sur **CTRL** +**E**,**D**.
+- Sélectionnez le bouton **mettre le document en forme** dans la barre d’outils de l’éditeur XML, ou appuyez sur **CTRL**+**E**,**D**.
 
    ![Bouton mettre en forme le document XML dans Visual Studio](media/format-xml-document.png)
 
@@ -104,7 +104,7 @@ Les étapes de cette procédure pas à pas expliquent la création d'un document
 
 ## <a name="to-save-the-xml-document"></a>Pour enregistrer le document XML
 
-1. Dans le menu **fichier** , sélectionnez **Enregistrer sous**.
+1. Dans le menu **Fichier** , sélectionnez **Enregistrer sous**.
 
      La boîte de dialogue **enregistrer le fichier sous** s’affiche. Le nom de fichier par défaut est *« XMLFile1 »* .
 

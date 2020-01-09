@@ -3,17 +3,17 @@ title: 'Exemple de fichier XSD : schéma simple'
 ms.date: 11/04/2016
 ms.topic: sample
 ms.assetid: f7e1dde1-b4f6-4371-add4-935b68ec77d7
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b6681e47ba33d16cd48f5f34389a5d113fc36ef
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 788de9f31a58561aa743d6ca6286ef650f4297a4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651161"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592540"
 ---
 # <a name="sample-xsd-file-simple-schema"></a>Exemple de fichier XSD : schéma simple
 
@@ -47,4 +47,4 @@ Le fichier XSD suivant est utilisé dans différents exemples de la documentatio
 ```
 
 > [!NOTE]
-> Les noms de sociétés, d'organisations, de produits, de domaines, d'adresses de messagerie, de logos, de personnes, de lieux et d'événements mentionnés dans les exemples sont fictifs. Toute ressemblance avec des noms, des logos, des personnes, des lieux ou des événements réels est purement fortuite et involontaire.
+> Les sociétés, organisations, produits, noms de domaine, adresses de messagerie, logos, personnes, lieux et événements mentionnés dans les exemples sont fictifs. Toute ressemblance avec des noms, des logos, des personnes, des lieux ou des événements réels est purement fortuite et involontaire.

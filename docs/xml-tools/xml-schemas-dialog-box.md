@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - vs.xmleditor.schemasdialog
 ms.assetid: 0271fa26-2205-49bd-96e0-ae1441571808
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11743756ffd8f59520448d2687dbada6d4eaca40
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9d01c56b04a9b046f695a19d61a9b47fcac73e06
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72608045"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592332"
 ---
 # <a name="xml-schemas-dialog-box"></a>Boîte de dialogue Schémas XML
 
@@ -25,7 +25,7 @@ Pour accéder à la boîte de dialogue **schémas XML** , vous pouvez soit cliqu
 
 ## <a name="uielement-list"></a>Liste des éléments d’interface
 
-**Faites**
+**Utilisation**
 
 Sélectionnez la manière dont le schéma XML doit être utilisé.
 
@@ -39,7 +39,7 @@ Sélectionnez la manière dont le schéma XML doit être utilisé.
 
 Affiche l'espace de noms cible associé au schéma XML.
 
-**Nom du fichier**
+**Nom de fichier**
 
 Affiche le nom de fichier du schéma XML.
 

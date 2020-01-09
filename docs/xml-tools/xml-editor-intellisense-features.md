@@ -3,17 +3,17 @@ title: Fonctionnalités IntelliSense de l’éditeur XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2b26f214-cc3a-46bf-b260-14eb8e599182
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a44af076e8663e525e33727a24aa93f9391f4b5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 609684452190bf7471f90fee75f66dbb2fcbec8e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72603962"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592384"
 ---
 # <a name="xml-editor-intellisense-features"></a>Fonctionnalités IntelliSense de l’éditeur XML
 
@@ -87,13 +87,13 @@ Par exemple, si vous sélectionnez l'élément `e:Book` dans la liste IntelliSen
 
 ## <a name="brace-matching"></a>Accolades correspondantes
 
-L'éditeur XML met en évidence les accolades pour indiquer immédiatement quel élément vous venez de fermer. Vous pouvez également utiliser le raccourci clavier (**Ctrl** + **]** ) pour passer d’une accolade à l’accolade correspondante.
+L'éditeur XML met en évidence les accolades pour indiquer immédiatement quel élément vous venez de fermer. Vous pouvez également utiliser le raccourci clavier (**Ctrl**+ **]** ) pour passer d’une accolade à l’accolade correspondante.
 
 L'éditeur XML offre cette fonctionnalité pour les éléments suivants :
 
 - Les étiquettes de début et de fin qui se correspondent.
 
-- Toute paire de crochets « \< » ou « > ».
+- Toute paire de crochets «\<» ou « > ».
 
 - Le début et la fin de commentaires
 
@@ -107,7 +107,7 @@ L'éditeur XML offre cette fonctionnalité pour les éléments suivants :
 
 ## <a name="modify-the-intellisense-options"></a>Modifier les options IntelliSense
 
-Les fonctions IntelliSense et de saisie semi-automatique sont activées par défaut. Toutefois, vous pouvez modifier ce paramètre en modifiant vos **outils**  >  paramètres**options** .
+Les fonctions IntelliSense et de saisie semi-automatique sont activées par défaut. Toutefois, vous pouvez modifier ce paramètre en modifiant vos **outils** > paramètres **options** .
 
 La section **insertion automatique** de la page **divers** contrôle le comportement suivant :
 
@@ -128,5 +128,5 @@ La section **insertion automatique** de la page **divers** contrôle le comporte
 ## <a name="see-also"></a>Voir aussi
 
 - [Éditeur XML](../xml-tools/xml-editor.md)
-- [Utilisation de la fonctionnalité IntelliSense](../ide/using-intellisense.md)
+- [Utilisation d’IntelliSense](../ide/using-intellisense.md)
 - [Procédure pas à pas : utilisation d’IntelliSense XSLT](../xml-tools/walkthrough-using-xslt-intellisense.md)

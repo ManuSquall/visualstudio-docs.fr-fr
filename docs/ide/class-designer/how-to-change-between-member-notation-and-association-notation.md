@@ -8,17 +8,17 @@ helpviewer_keywords:
 - member notation
 - notation, association
 ms.assetid: 65881c5a-d251-4a36-ad0d-73d088436092
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd1bb86e13fb5f5b654ad4f4e1ee7fe7a243f1f1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9f706acfbaee7c6170f74bc655f9172ff6bdd3b4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647743"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592267"
 ---
 # <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>Guide pratique pour changer la notation entre les membres et les associations dans le Concepteur de classes
 
@@ -44,7 +44,7 @@ Sur le diagramme de classes, cliquez avec le bouton droit sur la ligne d’assoc
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Guide pratique pour créer un héritage entre des types](how-to-create-inheritance-between-types.md)
+- [Guide pratique pour créer l’héritage entre les types](how-to-create-inheritance-between-types.md)
 - [Guide pratique pour afficher l’héritage entre des types](how-to-view-inheritance-between-types.md)
 - [Affichage des types et des relations](designing-and-viewing-classes-and-types.md)
 - [Guide pratique pour visualiser une association de collections](how-to-visualize-a-collection-association.md)

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - best practices, MSBuild
 - MSBuild, best practices
 ms.assetid: 90ef8693-e921-410a-a377-fe4d13f58c48
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ad0bd131251259b375a4300807825205da2c6ea
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: b1aee1a6ae3abc06846523df9470ad75d316a50b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62931493"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592085"
 ---
 # <a name="msbuild-best-practices"></a>Bonnes pratiques pour MSBuild
 Nous vous recommandons les meilleures pratiques suivantes pour l'écriture de scripts MSBuild :
