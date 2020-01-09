@@ -3,17 +3,17 @@ title: Supprimer les violations d’analyse du code pour le code généré
 ms.date: 05/13/2019
 ms.topic: conceptual
 ms.assetid: 3a96434e-d419-43a7-81ba-95cccac835b8
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39daa50254f2d1b69514d4065e582154e9ceb6b5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9ab2ffce28103059414cef8f1b556152485a12ff
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649390"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587431"
 ---
 # <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>Comment : supprimer des avertissements d’analyse du code pour du code généré
 
@@ -32,5 +32,5 @@ La case à cocher **Supprimer les résultats du code généré** sur la page de 
 
 3. Activez la case à cocher **Supprimer les résultats du code généré** .
 
-> [!NOTE]
-> Vous pouvez uniquement supprimer les avertissements de l’analyse héritée. Actuellement, vous ne pouvez pas supprimer les avertissements d’analyse du code des [analyseurs](roslyn-analyzers-overview.md).
+> [!IMPORTANT]
+> Vous pouvez uniquement supprimer les avertissements de l’analyse héritée. La page de propriétés avec le paramètre est dépréciée et sera supprimée dans une version future du produit. Actuellement, vous ne pouvez pas supprimer les avertissements d’analyse du code des [analyseurs](roslyn-analyzers-overview.md).

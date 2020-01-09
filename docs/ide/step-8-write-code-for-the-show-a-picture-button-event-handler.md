@@ -13,18 +13,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7afdae8e98dba33184889fe314725e634e3bfa7
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
+ms.openlocfilehash: e249f2ad765063c54df08466bef15b8e443af1bf
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314057"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591721"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Étape 8 : écrire du code pour le gestionnaire d'événements du bouton Afficher une image
 
 Dans cette étape, vous allez faire fonctionner le bouton **afficher une image** comme suit :
 
-- Quand un utilisateur clique sur ce bouton, l’application ouvre une zone <xref:System.Windows.Forms.OpenFileDialog>.
+- Quand un utilisateur clique sur ce bouton, l’application ouvre une boîte de <xref:System.Windows.Forms.OpenFileDialog>.
 
 - Si un utilisateur ouvre un fichier image, l’application affiche cette image dans le <xref:System.Windows.Forms.PictureBox>.
 
@@ -43,7 +43,7 @@ IntelliSense tente de déterminer ce que vous souhaitez faire ensuite et passe a
     > [!NOTE]
     > Votre code risque de ne pas afficher de gestionnaires d’événements dans les lettres « la casse mixte ».
 
-1. La fenêtre **IntelliSense** doit mettre en surbrillance le mot `if`. (Dans le cas contraire, entrez une minuscule `f`, et c’est le cas.) Notez qu’une *info-bulle* située en regard de la fenêtre **IntelliSense** apparaît avec la description, **extrait de code pour l’instruction if**. (Dans Visual Basic, l’info-bulle indique également qu’il s’agit d’un extrait de code, mais avec un libellé légèrement différent.) Vous souhaitez utiliser cet extrait de code, appuyez donc sur la touche **Tab** pour insérer `if` dans votre code. Appuyez ensuite à nouveau sur la touche **Tab** pour utiliser l’extrait de code `if`. (Si vous avez effectué un autre choix et si votre fenêtre **IntelliSense** a disparu, revenez en arrière pour effacer le `i` et retapez-le pour que la fenêtre **IntelliSense** s’ouvre à nouveau.)
+1. La fenêtre **IntelliSense** doit mettre en surbrillance le mot `if`. (Dans le cas contraire, entrez un `f`minuscules, et c’est le cas.) Notez qu’une *info-bulle* située en regard de la fenêtre **IntelliSense** apparaît avec la description, **extrait de code pour l’instruction if**. (Dans Visual Basic, l’info-bulle indique également qu’il s’agit d’un extrait de code, mais avec un libellé légèrement différent.) Vous souhaitez utiliser cet extrait de code, appuyez donc sur la touche **Tab** pour insérer `if` dans votre code. Appuyez ensuite à nouveau sur la touche **Tab** pour utiliser l’extrait de code `if`. (Si vous avez effectué un autre choix et si votre fenêtre **IntelliSense** a disparu, revenez en arrière pour effacer le `i` et retapez-le pour que la fenêtre **IntelliSense** s’ouvre à nouveau.)
 
     ![Code Visual C&#35;](../ide/media/express_highlighttrue.png)
 
@@ -91,7 +91,7 @@ Ensuite, utilisez IntelliSense pour entrer le reste du code destiné à ouvrir u
     >
     >  `If OpenFileDialog1.ShowDialog() = DialogResult.OK Then`
 
- 1. Maintenant, ajoutez une ligne de code supplémentaire. Vous pouvez la taper (ou la copier et la coller), mais utilisez plutôt IntelliSense pour l'ajouter. Plus vous vous familiariserez avec IntelliSense, plus vous pourrez écrire votre propre code rapidement. Votre dernière méthode `showButton_Click()` doit ressembler au code suivant.
+ 1. Maintenant, ajoutez une ligne de code supplémentaire. Vous pouvez la taper (ou la copier et la coller), mais utilisez plutôt IntelliSense pour l'ajouter. Plus vous vous familiariserez avec IntelliSense, plus vous pourrez écrire votre propre code rapidement. Votre méthode de `showButton_Click()` finale doit ressembler au code suivant.
 
     [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
 
@@ -99,7 +99,7 @@ Ensuite, utilisez IntelliSense pour entrer le reste du code destiné à ouvrir u
 
     [!code-vb[VbExpressTutorial1Step8#1](../ide/codesnippet/VisualBasic/step-8-write-code-for-the-show-a-picture-button-event-handler_1.vb)]
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 * Pour passer à l’étape suivante du didacticiel, consultez **[étape 9 : examiner, commenter et tester votre code](../ide/step-9-review-comment-and-test-your-code.md)** .
 

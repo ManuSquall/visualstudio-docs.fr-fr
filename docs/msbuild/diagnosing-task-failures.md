@@ -9,21 +9,21 @@ dev_langs:
 - CSharp
 - C++
 - jsharp
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b77ea7ce288ead0af3d6a9879cab2216ffd6247d
-ms.sourcegitcommit: 628eb202a1153ebfe69c668f966f821b98b34b34
+ms.openlocfilehash: 89dcb8bddf2c92406ad5eff952d1f4050d7f9262
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71720797"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593276"
 ---
 # <a name="diagnosing-task-failures"></a>Diagnostic des échecs de tâches
 
-`MSB6006` est émis lorsqu’une classe dérivée de <xref:Microsoft.Build.Utilities.ToolTask> exécute un processus outil qui retourne un code de sortie différent de zéro si la tâche n’a pas journalisé une erreur plus spécifique.
+`MSB6006` est émis lorsqu’une classe dérivée de <xref:Microsoft.Build.Utilities.ToolTask>exécute un processus outil qui retourne un code de sortie différent de zéro si la tâche n’a pas journal une erreur plus spécifique.
 
 ## <a name="identifying-the-failing-task"></a>Identification de la tâche ayant échoué
 
@@ -49,11 +49,11 @@ Build FAILED.
   S:\MSB6006_demo\MSB6006_demo.csproj(19,5): error MSB6006: "custom tool" exited with code 1.
 ```
 
-Ce résultat indique que l’erreur s’est produite dans une tâche définie à la ligne 19 du fichier `S:\MSB6006_demo\MSB6006_demo.csproj`, dans une cible nommée `InvokeToolTask`, dans le projet `S:\MSB6006_demo\MSB6006_demo.csproj`.
+Ce résultat indique que l’erreur s’est produite dans une tâche définie à la ligne 19 du fichier `S:\MSB6006_demo\MSB6006_demo.csproj`, dans une cible nommée `InvokeToolTask`, dans le `S:\MSB6006_demo\MSB6006_demo.csproj`de projet.
 
 ### <a name="in-visual-studio"></a>Dans Visual Studio
 
-Les mêmes informations sont disponibles dans la liste d’erreurs de Visual Studio dans les colonnes `Project`, `File` et `Line`.
+Les mêmes informations sont disponibles dans la liste d’erreurs de Visual Studio dans les colonnes `Project`, `File`et `Line`.
 
 ## <a name="finding-more-failure-information"></a>Recherche d’informations supplémentaires sur les échecs
 
@@ -61,7 +61,7 @@ Cette erreur est émise lorsque la tâche n’a pas journaliser une erreur spéc
 
 Les outils corrects émettent généralement des informations contextuelles ou d’erreur dans leur flux de sortie ou d’erreur standard, et les tâches capturent et journalisent ces informations par défaut. Recherchez dans les entrées de journal avant que l’erreur ne s’est produite pour obtenir des informations supplémentaires. La réexécution de la build avec un niveau de journalisation plus élevé peut être nécessaire pour conserver ces informations.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 Espérons que le contexte supplémentaire ou les erreurs identifiées dans la journalisation révèlent la cause initiale du problème.
 

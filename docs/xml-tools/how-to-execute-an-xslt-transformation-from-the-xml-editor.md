@@ -3,17 +3,17 @@ title: Exécuter une transformation XSLT
 ms.date: 03/05/2019
 ms.topic: conceptual
 ms.assetid: 56a0fe82-5231-487d-8b6e-a08a9b04e0fc
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fb4aee348ae48a2078f7803a44d4746d3dbacc1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3bd26eaadf921d13fc425a91031a39df5a80ea2a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668805"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592696"
 ---
 # <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Procédure : exécuter une transformation XSLT à partir de l’éditeur XML
 
@@ -31,11 +31,11 @@ Si la propriété de **sortie** spécifie un nom de fichier avec un. *htm* ou. e
 
     - Ajoutez une instruction de traitement `xml-stylesheet` au document XML. Par exemple, ajoutez la ligne suivante au prologue du document : `<?xml-stylesheet type='text/xsl' href='filename.xsl'?>`
 
-       ou
+       \- ou -
 
     - Ajoutez la feuille de style XSLT à l’aide de la fenêtre **Propriétés** . Après avoir ouvert le fichier XML dans l’éditeur, cliquez avec le bouton droit n’importe où dans l’éditeur et choisissez **Propriétés**. Dans la fenêtre **Propriétés** , cliquez dans le champ **feuille de style** et choisissez le bouton Parcourir (...). Sélectionnez la feuille de style XSLT, puis choisissez **ouvrir**.
 
-3. Dans la barre de menus, choisissez **XML**  > **Démarrer XSLT sans débogage**. Ou appuyez sur **Ctrl** +**ALT** +**F5**.
+3. Dans la barre de menus, choisissez **XML** > **Démarrer XSLT sans débogage**. Ou appuyez sur **Ctrl**+**ALT**+**F5**.
 
    La sortie de la transformation XSLT s’affiche dans une nouvelle fenêtre de document.
 
@@ -51,7 +51,7 @@ Si la propriété de **sortie** spécifie un nom de fichier avec un. *htm* ou. e
    > [!NOTE]
    > Le document XML est le document d'entrée utilisé pour la transformation. Si aucun document n’est spécifié lors du démarrage de la transformation XSLT, la boîte de dialogue **ouvrir un fichier** s’affiche et vous pouvez spécifier un document à ce moment-là.
 
-3. Dans la barre de menus, choisissez **XML**  > **Démarrer XSLT sans débogage**. Ou appuyez sur **Ctrl** +**ALT** +**F5**.
+3. Dans la barre de menus, choisissez **XML** > **Démarrer XSLT sans débogage**. Ou appuyez sur **Ctrl**+**ALT**+**F5**.
 
    La sortie de la transformation XSLT s’affiche dans une nouvelle fenêtre de document.
 

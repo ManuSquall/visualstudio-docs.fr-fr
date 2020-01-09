@@ -6,17 +6,17 @@ helpviewer_keywords:
 - MSBuild, overriding ToolsVersion setting
 - MSBuild, building solutions with
 ms.assetid: ccd42c07-0fb6-4e8b-9ebb-a6a6db18aa2e
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 151e714a00a3030c2ed502a739c54c28e5ae75d3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 1706d0e82139da5962fbb43610cdecd6b1477ad1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63006747"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590486"
 ---
 # <a name="override-toolsversion-settings"></a>Écraser les paramètres ToolsVersion
 Vous pouvez changer l’Ensemble d’outils pour les projets et solutions de trois manières :
@@ -28,7 +28,7 @@ Vous pouvez changer l’Ensemble d’outils pour les projets et solutions de tro
 3. En définissant la propriété `$(ProjectToolsVersion)` sur un projet dans une solution. Cela vous permet de générer un projet dans une solution avec une version de l’Ensemble d’outils qui diffère de celle des autres projets.
 
 ## <a name="override-the-toolsversion-settings-of-projects-and-solutions-on-command-line-builds"></a>Écraser les paramètres ToolsVersion de projets et de solutions sur des générations en ligne de commande
- Bien que les projets Visual Studio soient généralement générés avec la version ToolsVersion spécifiée dans le fichier projet, vous pouvez utiliser le commutateur `-ToolsVersion` (ou `-tv`) sur la ligne de commande pour substituer cette valeur et générer tous les projets et leurs dépendances projet-à-projet avec un autre Ensemble d’outils. Par exemple :
+ Bien que les projets Visual Studio soient généralement générés avec la version ToolsVersion spécifiée dans le fichier projet, vous pouvez utiliser le commutateur `-ToolsVersion` (ou `-tv`) sur la ligne de commande pour substituer cette valeur et générer tous les projets et leurs dépendances projet-à-projet avec un autre Ensemble d’outils. Par exemple :
 
 ```cmd
 msbuild.exe someproj.proj -tv:12.0 -p:Configuration=Debug

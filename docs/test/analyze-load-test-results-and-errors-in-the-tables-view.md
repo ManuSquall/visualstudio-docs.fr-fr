@@ -18,15 +18,15 @@ helpviewer_keywords:
 - Load Test Viewer, tables
 - load tests, results tables
 ms.assetid: 0a84bda3-6051-45eb-9c7f-d57419e1f97d
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f6410129d32e521adeda4b31e4b3a0f6aca903fd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c5e337c30a4b6a08f123ef7ee33dee704e9412de
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665387"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565173"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>Analyser les résultats et les erreurs des tests de charge dans la vue Tables de l’analyseur de test de charge
 
@@ -52,13 +52,13 @@ Le tableau suivant répertorie les tables disponibles pour analyser des séries 
 
 |Nom de la table|Description|
 |-|-|
-|Errors|Affiche une liste des erreurs qui se sont produites pendant la série de tests de charge. Pour plus d’informations, consultez [Table Erreurs](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-errors-table) dans cette rubrique, et [Analyser les résultats des tests de charge](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|
+|Erreurs du|Affiche une liste des erreurs qui se sont produites pendant la série de tests de charge. Pour plus d’informations, consultez [Table Erreurs](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-errors-table) dans cette rubrique, et [Analyser les résultats des tests de charge](../test/analyze-load-test-results-using-the-load-test-analyzer.md).|
 |Pages|Affiche une liste de pages consultées pendant une série de tests de charge. Certaines données de cette table ne sont disponibles qu'à l'issue d'un test de charge. Pour plus d’informations, consultez [Guide pratique pour afficher la réponse d’une page web](../test/how-to-view-web-page-response-time-in-a-load-test.md).|
 |Demandes|Affiche des détails relatifs aux demandes émises pendant un test de charge. Cela inclut toutes les demandes HTTP et les demandes dépendantes, telles que les images. Pour plus d’informations, consultez [Table Requêtes](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-requests-table) dans cette rubrique.|
 |Trace SQL|Affiche les résultats du traçage SQL. Cette table n'est disponible qu'à l'issue d'un test de charge et uniquement si le traçage SQL a été utilisé pendant le test. Pour plus d’informations, consultez [Table Données de trace SQL](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-sql-trace-data-table) dans cette rubrique.|
 |Tests|Affiche des détails relatifs aux tests exécutés pendant un test de charge. Pour plus d’informations, consultez [Table Tests](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-tests-table) dans cette rubrique.|
 |Seuils|Affiche une liste des violations de règles de seuil qui se sont produites pendant la série de tests de charge. Pour plus d’informations, consultez [Analyse des violations des règles de seuil](../test/analyze-threshold-rule-violations-in-load-tests.md).|
-|Transactions|Affiche une liste des transactions qui se sont produites pendant une série de tests de charge. Pour plus d’informations, consultez [Table Transactions](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-transactions-table) dans cette rubrique.|
+|transactions|Affiche une liste des transactions qui se sont produites pendant une série de tests de charge. Pour plus d’informations, consultez [Table Transactions](../test/analyze-load-test-results-and-errors-in-the-tables-view.md#the-transactions-table) dans cette rubrique.|
 |Agents|S'affiche uniquement si votre test de charge utilise un contrôleur de test et des agents de test. Affiche une liste des agents utilisés pendant la série de tests de charge. Le tableau Agents indique le nombre de requêtes testées par l'agent et, parmi ces requêtes, le nombre d'échecs. En outre, le tableau Agents indique le nombre de tests que l'agent a effectués dans la combinaison de tests pour le test de charge et le nombre d'échecs.|
 |Détails du test|Affiche des détails des tests inclus dans la combinaison de tests pour le test de charge. Les détails incluent le nom du test, le scénario du test, l'heure de démarrage du test, la durée d'exécution du test et le résultat de test qui indique si le test a réussi ou a échoué. En cas d’échec du test, un lien est fourni dans la colonne **Détails**. Vous pouvez cliquer sur le lien pour accéder à l'éditeur de test de performances Web avec la requête ayant échoué en surbrillance.|
 
@@ -146,9 +146,9 @@ La table d'erreurs contient les colonnes suivantes :
 
 |Colonne|Description|Visible par défaut|
 |-|-|-|
-|Tapez|Type de l'erreur. Par exemple, HttpError.|Oui|
+|Type|Type de l'erreur. Par exemple, HttpError.|Oui|
 |SubType|Sous-type de l'erreur. Par exemple, LoadTestException.|Oui|
-|Count|Nombre d'erreurs de ce type survenues lors du test de charge. Les entrées de cette colonne apparaissent sous forme de liens hypertexte. Vous pouvez cliquer sur un lien hypertexte pour afficher la liste des erreurs.|Oui|
+|Nombre|Nombre d'erreurs de ce type survenues lors du test de charge. Les entrées de cette colonne apparaissent sous forme de liens hypertexte. Vous pouvez cliquer sur un lien hypertexte pour afficher la liste des erreurs.|Oui|
 |Dernier message|Message qui décrit l'erreur. Par exemple, 404 - Non trouvé.|Oui|
 
 Pour plus d’informations, consultez [Utilisation de tables de tests de charge](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).

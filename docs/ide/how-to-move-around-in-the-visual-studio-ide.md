@@ -12,17 +12,17 @@ helpviewer_keywords:
 - Window.NextDocumentWindowNav
 - IDE navigator
 ms.assetid: 6c36b6eb-c93f-496b-af08-4199f7afd8bd
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3aa39c1c9748eb3a9270a66a3a6bbcb43fdcea2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2febdedf5cf472132de936c37cad787df3d77518
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645842"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590993"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Guide pratique pour naviguer dans l’IDE Visual Studio
 
@@ -31,7 +31,7 @@ L’environnement de développement intégré (IDE) a été conçu pour vous per
 > [!NOTE]
 > Les options disponibles dans les boîtes de dialogue, ainsi que les noms et emplacements des commandes de menu que vous voyez, peuvent différer de ce qui est décrit dans cet article, en fonction de vos paramètres actifs ou de votre édition. Cet article concerne les paramètres **Général**. Pour modifier vos paramètres, par exemple pour définir les paramètres **Général** ou **Visual C++** , choisissez **Outils** > **Importation et exportation de paramètres**, puis choisissez **Réinitialiser tous les paramètres**.
 
-## <a name="keyboard-shortcuts"></a>Raccourcis clavier
+## <a name="keyboard-shortcuts"></a>raccourcis clavier
 
 Presque toutes les commandes de menu dans Visual Studio sont associées à un raccourci clavier. Vous pouvez également créer vos propres raccourcis personnalisés. Pour plus d’informations, consultez [Identifier et personnaliser les raccourcis clavier](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
 
@@ -43,7 +43,7 @@ Les options Naviguer vers l’arrière et Naviguer vers l’avant permettent de 
 
 ### <a name="to-move-through-open-files-in-order-of-use"></a>Pour parcourir les documents ouverts par ordre d'utilisation
 
-- Pour activer les documents ouverts dans l’ordre dans lequel ils ont été récemment touchés, appuyez sur **Ctrl**+ **-** (trait d’Union).
+- Pour activer les documents ouverts dans l’ordre dans lequel ils ont été horodatés le plus récemment, appuyez sur **Ctrl**+ **-** (trait d’Union).
 
 - Pour activer les documents ouverts dans l’ordre inverse, appuyez sur **Ctrl**+**MAJ**+ **-** (trait d’Union).
 

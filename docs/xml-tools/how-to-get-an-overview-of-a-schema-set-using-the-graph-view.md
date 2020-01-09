@@ -3,17 +3,17 @@ title: 'Concepteur de schémas XML : obtenir une vue d’ensemble du jeu de sch
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c0df4b0d-52ef-4a6c-9676-1d8311aad7c7
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8acc2ff6a41f7057818c4a7659f2aa9d07c8bac
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5f066bc96cd5acf314150def2e40ec3064d154b8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651175"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592670"
 ---
 # <a name="how-to-get-an-overview-of-a-schema-set-using-the-graph-view"></a>Comment : obtenir une vue d’ensemble d’un jeu de schémas à l’aide de la vue du graphique
 
@@ -33,7 +33,7 @@ Cette rubrique explique comment utiliser la [vue du graphique](../xml-tools/grap
 
 6. Sélectionnez nœud du **jeu de schémas** dans l' **Explorateur de schémas XML** et faites glisser le nœud sur l’aire de conception de la vue du graphique. Tous les nœuds globaux doivent apparaître, ainsi que les flèches connectant les nœuds qui ont des relations.
 
-     ![Vue Graphique](../xml-tools/media/relationshipingraphview.gif)
+     ![Affichage de graphiques](../xml-tools/media/relationshipingraphview.gif)
 
 7. Cliquez sur n'importe quel nœud sur l'aire de conception, puis examinez la barre de fil d'Ariane (breadcrumb) pour déterminer l'emplacement du nœud sélectionné dans le jeu de schémas.
 

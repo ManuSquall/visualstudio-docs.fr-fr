@@ -4,17 +4,17 @@ ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - IntelliTest, Dynamic symbolic execution
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 26befe6612c874c2565e44459cc90fe980296137
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: e5a3248d3f081bcab08c08110d305f0aa6235817
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653188"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591597"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>Génération d’entrées à l’aide de l’exécution symbolique dynamique
 
@@ -61,7 +61,7 @@ Plus tard au cours de l’analyse, quand d’autres méthodes accessibles sont d
 
 Le [solveur de contrainte](#constraint-solver) d’IntelliTest détermine les valeurs d’entrée de test des types primitifs tels que **byte**, **int**, **float** et d’autres, afin de déclencher des chemins d’exécution différents pour le test et le programme testé.
 
-## <a name="objects"></a>Objets
+## <a name="objects"></a>Objets du
 
 IntelliTest peut [créer des instances de classes .NET existantes](#existing-classes) ou vous pouvez utiliser IntelliTest pour automatiquement [créer des objets fictifs](#parameterized-mocks) qui implémentent une interface spécifique et qui se comportent différemment selon leur utilisation.
 
@@ -133,6 +133,6 @@ La classe statique [PexChoose](static-helper-classes.md#pexchoose) peut être ut
 
 Postez vos idées et demandes de fonctionnalités sur la [Communauté des développeurs](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
 
-## <a name="further-reading"></a>Compléments de lecture
+## <a name="further-reading"></a>Informations supplémentaires
 
 * [How does it work?](https://devblogs.microsoft.com/devops/smart-unit-tests-a-mental-model/)

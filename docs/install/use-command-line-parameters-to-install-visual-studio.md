@@ -10,19 +10,19 @@ f1_keywords:
 - switches
 - command prompt
 ms.assetid: 480f3cb4-d873-434e-a8bf-82cff7401cf2
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fd40a1adbf6f1f35a651f38ce5173400d208b2bc
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: 6d985266679d70f24ca2b40077549b5c3354b7f4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888522"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590941"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>Utiliser les paramètres de ligne de commande pour installer Visual Studio
 
@@ -162,8 +162,8 @@ Remplacez `vs_enterprise.exe` comme il convient pour l’édition du produit que
 | `--includeRecommended` | **Facultatif** : inclut les composants recommandés pour toutes les charges de travail installées, mais pas les composants facultatifs. Les charges de travail sont spécifiées avec `--allWorkloads` ou `--add`. |
 | `--includeOptional` | **Facultatif** : inclut les composants recommandés *et* facultatifs pour toutes les charges de travail contenues dans la disposition. Les charges de travail sont spécifiées avec `--add`.  |
 | `--keepLayoutVersion` | **Nouveautés de la version 15.3, facultatif** : application des modifications à la disposition sans mettre à jour la version de la disposition. |
-| `--verify` | **Nouveautés de la version 15.3, facultatif** : vérification du contenu d’une disposition. Tous les fichiers endommagés ou manquants sont listés. |
-| `--fix` | **Nouveautés de la version 15.3, facultatif** : vérification du contenu d’une disposition. Si des fichiers sont endommagés ou manquants, ils sont retéléchargés. Un accès à Internet est obligatoire pour corriger une disposition. |
+| `--verify` | **Nouveautés de la version 15.3, facultatif** : vérification du contenu d’une disposition. Tous les fichiers endommagés ou manquants sont listés. |
+| `--fix` | **Nouveautés de la version 15.3, facultatif** : vérification du contenu d’une disposition. Si des fichiers sont endommagés ou manquants, ils sont retéléchargés. Un accès à Internet est obligatoire pour corriger une disposition. |
 | `--clean <one or more paths to catalogs>` | **Nouveautés de la version 15.3, facultatif** : suppression des anciennes versions des composants d’une disposition qui a été mise à jour vers une version plus récente. |
 
 | **Options d’installation avancées** | **Description** |
@@ -226,7 +226,7 @@ Pour obtenir la liste des ID de charge de travail et de composant triés par pro
 
 ## <a name="list-of-language-locales"></a>Liste des paramètres régionaux de langue
 
-| **Paramètres régionaux de langue** | **Language** |
+| **Paramètres régionaux de langue** | **Langue** |
 | ----------------------- | --------------- |
 | Cs-cz | Tchèque |
 | De-de | Allemand |
@@ -237,7 +237,7 @@ Pour obtenir la liste des ID de charge de travail et de composant triés par pro
 | Ja-jp | Japonais |
 | Ko-kr | Coréen |
 | Pl-pl | Polonais |
-| Pt-br | Portugais - Brésil |
+| Pt-br | Portugais – Brésil |
 | Ru-ru | Russe |
 | Tr-tr | Turc |
 | Zh-cn | Chinois (simplifié) |

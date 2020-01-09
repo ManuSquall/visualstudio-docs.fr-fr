@@ -16,22 +16,22 @@ helpviewer_keywords:
 - MSBuild (C++), CL task
 - CL task (MSBuild (C++))
 ms.assetid: 651ba971-b755-4f03-a549-4816beb3cc0d
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f7704ebee49af51c5cbeff118d2eed8e08ace30
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: effc1b51352052f4e11e42298f9e9567db30d8f1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747358"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593354"
 ---
 # <a name="cl-task"></a>CL (tâche)
 Encapsule l’outil C++ compilateur Microsoft, *CL. exe*. Le compilateur produit des fichiers exécutables ( *.exe*), des fichiers de bibliothèque de liens dynamiques ( *.dll*) ou des fichiers de module de code ( *.netmodule*). Pour plus d’informations, consultez [Options du compilateur](/cpp/build/reference/compiler-options).
 
-## <a name="parameters"></a>Paramètres
+## <a name="parameters"></a>Parameters
  La liste ci-dessous décrit les paramètres de la tâche **CL**. La plupart des paramètres de tâche, et quelques ensembles de paramètres, correspondent à une option de ligne de commande.
 
 - **AdditionalIncludeDirectories**
@@ -394,7 +394,7 @@ Encapsule l’outil C++ compilateur Microsoft, *CL. exe*. Le compilateur produit
 
 - **InlineFunctionExpansion**
 
-   Paramètre **String** facultatif.
+   Paramètre de **chaîne** facultatif.
 
    Spécifie le niveau d’expansion des fonctions inline pour la génération.
 
@@ -436,7 +436,7 @@ Encapsule l’outil C++ compilateur Microsoft, *CL. exe*. Le compilateur produit
 
 - **ObjectFileName**
 
-   Paramètre **String** facultatif.
+   Paramètre de **chaîne** facultatif.
 
    Spécifie un nom de fichier objet (.obj) ou un répertoire à utiliser à la place de la valeur par défaut.
 
@@ -474,7 +474,7 @@ Encapsule l’outil C++ compilateur Microsoft, *CL. exe*. Le compilateur produit
 
 - **Optimization**
 
-   Paramètre **String** facultatif.
+   Paramètre de **chaîne** facultatif.
 
    Spécifie différentes optimisations de code en termes de vitesse et de taille.
 
@@ -492,7 +492,7 @@ Encapsule l’outil C++ compilateur Microsoft, *CL. exe*. Le compilateur produit
 
 - **PrecompiledHeader**
 
-   Paramètre **String** facultatif.
+   Paramètre de **chaîne** facultatif.
 
    Crée ou utilise un fichier d’en-tête précompilé ( *.pch*) pendant la génération.
 
@@ -508,7 +508,7 @@ Encapsule l’outil C++ compilateur Microsoft, *CL. exe*. Le compilateur produit
 
 - **PrecompiledHeaderFile**
 
-   Paramètre **String** facultatif.
+   Paramètre de **chaîne** facultatif.
 
    Spécifie un nom de fichier d’en-tête précompilé à créer ou utiliser.
 
@@ -516,7 +516,7 @@ Encapsule l’outil C++ compilateur Microsoft, *CL. exe*. Le compilateur produit
 
 - **PrecompiledHeaderOutputFile**
 
-   Paramètre **String** facultatif.
+   Paramètre de **chaîne** facultatif.
 
    Spécifie un nom de chemin d’accès pour un en-tête précompilé au lieu d’utiliser le nom du chemin d’accès par défaut.
 

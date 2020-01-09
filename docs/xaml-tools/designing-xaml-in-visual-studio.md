@@ -4,15 +4,15 @@ titleSuffix: ''
 ms.date: 08/05/2019
 ms.topic: conceptual
 ms.assetid: 288e2415-9fcf-408e-bc35-9848315e14fd
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: d9cfa2d216baf89d4b7a886ff9d7b56b8b946b8b
-ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
+ms.openlocfilehash: 97946fc2ed79b83fbc7d3ce3c3dc4960934eb5ab
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73569051"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592979"
 ---
 # <a name="design-xaml-in-visual-studio-and-blend-for-visual-studio"></a>Concevoir du code XAML dans Visual Studio et Blend pour Visual Studio
 
@@ -20,7 +20,7 @@ Visual Studio et Blend pour Visual Studio fournissent tous deux des outils visue
 
 Vous pouvez basculer entre Visual Studio et Blend pour Visual Studio, et vous pouvez même ouvrir un même projet simultanément dans les deux environnements IDE. Les modifications qui ont été enregistrées dans les fichiers XAML dans l’un des environnements IDE peuvent être appliquées par le biais d’un rechargement automatique, lorsque vous basculez vers l’autre environnement IDE. Vous pouvez contrôler le comportement de rechargement en accédant à **Outils** > **Options** > **Environnement** > **Documents**, dans l’un des environnements IDE.
 
-## <a name="installation"></a>Installation
+## <a name="installation"></a>Installation de
 
 - Pour créer des applications WPF, installez la charge de travail **Développement .NET Desktop** dans Visual Studio. Blend pour Visual Studio sera également installé.
 - Pour créer des applications UWP, installez la charge de travail **Développement pour la plateforme Windows universelle** dans Visual Studio. Blend pour Visual Studio sera également installé.
@@ -42,11 +42,11 @@ Pour la plupart des tâches de développement de base, Visual Studio et Blend po
 
 Pour accroître votre productivité, utilisez Blend pour Visual Studio pour les tâches suivantes. Pour ces tâches, Blend pour Visual Studio s’avère plus rapide et plus riche en fonctionnalités que le concepteur Visual Studio ou le code seul.
 
-| Tâche | Visual Studio | Blend pour Visual Studio | Plus d'informations |
+| Tâche | Visual Studio | Blend pour Visual Studio | En savoir plus |
 | - | - | - | - |
 | **Concevoir des états visuels** | Il n’existe pas d’outil permettant de concevoir des états visuels. Vous devez les créer par programmation. | Utilisez les outils de conception pour modifier l’apparence d’un contrôle en fonction de son état. | [États visuels](modify-the-style-of-objects-in-blend.md#visual-states) |
 | **Créer des animations** |Il n'existe aucun outil de conception d'animations ; vous devez les créer par programmation. Cela nécessite une bonne connaissance du système d'animation et de minutage de WPF, ainsi que des compétences étendues en matière de codage.|Vous créez les animations de manière visuelle et pouvez en afficher un aperçu dans Blend pour Visual Studio. Il s'agit d'une méthode plus rapide et plus précise que celle qui consiste à créer des animations dans le code. Vous pouvez ajouter des déclencheurs pour gérer l'interaction des utilisateurs et basculer vers le code pour ajouter des gestionnaires d'événements et d'autres fonctionnalités.|[Animer des objets](../xaml-tools/animate-objects-in-xaml-designer.md)|
-|**Transformer des formes et du texte en tracés pour une manipulation plus facile**|Non prise en charge.|Vous pouvez modifier les formes (telles que des rectangles et des ellipses) de manière subtile ou radicale en les convertissant en tracés, ce qui confère un meilleur contrôle d'édition. Vous pouvez remodeler ou combiner des tracés et créer des tracés composites à partir de plusieurs formes.<br /><br />Vous pouvez aussi convertir des blocs de texte en tracés pour les manipuler en tant qu'images vectorielles.|[Dessiner des formes et des tracés](../xaml-tools/draw-shapes-and-paths.md)|
+|**Transformer des formes et du texte en tracés pour une manipulation plus facile**|Non pris en charge.|Vous pouvez modifier les formes (telles que des rectangles et des ellipses) de manière subtile ou radicale en les convertissant en tracés, ce qui confère un meilleur contrôle d'édition. Vous pouvez remodeler ou combiner des tracés et créer des tracés composites à partir de plusieurs formes.<br /><br />Vous pouvez aussi convertir des blocs de texte en tracés pour les manipuler en tant qu'images vectorielles.|[Dessiner des formes et des tracés](../xaml-tools/draw-shapes-and-paths.md)|
 |**Modifier des contrôles, des modèles et des styles**|Nécessite du codage et une connaissance des styles et modèles WPF.|Transformez une image en contrôle.<br /><br />Utilisez les outils d'édition de modèle pour apporter des modifications à des contrôles, styles et modèles en quelques clics de souris.<br /><br />Par exemple, vous pouvez utiliser les ressources de style Blend pour Visual Studio pour implémenter des contrôles WPF courants (tels que des boutons, zones de liste, barres de défilement, menus, etc.) et modifier leur couleur, style ou modèle sous-jacent directement dans Blend pour Visual Studio. Vous pouvez ensuite basculer vers le code pour apporter des touches finales, le cas échéant.|[Modifier le style des objets](modify-the-style-of-objects-in-blend.md)|
 |**Connecter votre interface utilisateur à des données**|Vous pouvez créer une source de données à partir de ressources, telles que des bases de données SQL Server, des services WCF ou web, des objets ou des listes SharePoint, et lier la source de données aux contrôles de votre interface utilisateur.<br /><br />Des données doivent être créées manuellement au moment de la conception pour une expérience de conception interactive.|Pour les applications .NET Framework, créez des exemples de données en toute simplicité à des fins de prototypage et de test. Passez à des données en direct dès que vous êtes prêt.<br /><br />Les capacités de génération de données de Blend pour Visual Studio sont remarquables (vous pouvez facilement ajouter noms, nombres, URL et photos à la volée) et peuvent vous faire gagner beaucoup de temps.<br /><br />Pour les données en direct, vous pouvez lier les contrôles de votre interface utilisateur à un fichier XML ou à une source de données CLR.|[Afficher des données](display-data-in-blend.md)|
 

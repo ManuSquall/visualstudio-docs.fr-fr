@@ -6,17 +6,17 @@ helpviewer_keywords:
 - code metrics data
 - code metrics results
 - code metrics [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55f9904c95be45c7f293355340c814faafb5de2b
-ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
+ms.openlocfilehash: a71f507aa5ce524e01b2120594ace634056d0850
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73568843"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587470"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Comment : générer des données de métriques du code
 
@@ -62,7 +62,7 @@ Vous pouvez configurer les seuils auxquels les règles de métriques du code dan
 
    Dans cet exemple, la règle [CA1502](ca1502.md) est configurée pour se déclencher lorsque la complexité cyclomatic d’une méthode est supérieure à 10.
 
-3. Dans la fenêtre **Propriétés** de Visual Studio, ou dans le fichier projet, marquez l’action de génération du fichier de configuration en tant que [**AdditionalFiles**](../ide/build-actions.md#build-action-values). Par exemple :
+3. Dans la fenêtre **Propriétés** de Visual Studio, ou dans le fichier projet, marquez l’action de génération du fichier de configuration en tant que [**AdditionalFiles**](../ide/build-actions.md#build-action-values). Par exemple :
 
    ```xml
    <ItemGroup>
@@ -111,7 +111,7 @@ Vous pouvez générer des données de métriques du code à partir C# de la lign
 
 ### <a name="microsoftcodeanalysismetrics-nuget-package"></a>Package NuGet Microsoft. CodeAnalysis. Metrics
 
-Le moyen le plus simple de générer des données de métriques du code à partir de la ligne de commande consiste à installer le package NuGet [Microsoft. CodeAnalysis. Metrics](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) . Une fois le package installé, exécutez `msbuild /t:Metrics` à partir du répertoire qui contient votre fichier projet. Par exemple :
+Le moyen le plus simple de générer des données de métriques du code à partir de la ligne de commande consiste à installer le package NuGet [Microsoft. CodeAnalysis. Metrics](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) . Une fois le package installé, exécutez `msbuild /t:Metrics` à partir du répertoire qui contient votre fichier projet. Par exemple :
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics
@@ -134,7 +134,7 @@ Build succeeded.
     0 Error(s)
 ```
 
-Vous pouvez remplacer le nom du fichier de sortie en spécifiant `/p:MetricsOutputFile=<filename>`. Vous pouvez également recevoir des données de métriques du code [hérité](#previous-versions) en spécifiant `/p:LEGACY_CODE_METRICS_MODE=true`. Par exemple :
+Vous pouvez remplacer le nom du fichier de sortie en spécifiant `/p:MetricsOutputFile=<filename>`. Vous pouvez également recevoir des données de métriques du code [hérité](#previous-versions) en spécifiant `/p:LEGACY_CODE_METRICS_MODE=true`. Par exemple :
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics /p:LEGACY_CODE_METRICS_MODE=true /p:MetricsOutputFile="Legacy.xml"
@@ -231,7 +231,7 @@ Si vous ne souhaitez pas installer le package NuGet, vous pouvez générer et ut
 
 #### <a name="metricsexe-usage"></a>Utilisation des métriques. exe
 
-Pour exécuter *Metrics. exe*, fournissez un projet ou une solution et un fichier XML de sortie comme arguments. Par exemple :
+Pour exécuter *Metrics. exe*, fournissez un projet ou une solution et un fichier XML de sortie comme arguments. Par exemple :
 
 ```shell
 C:\>Metrics.exe /project:ConsoleApp20.csproj /out:report.xml
@@ -265,5 +265,5 @@ D’autres métriques telles que `CyclomaticComplexity` et `MaintainabilityIndex
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Utiliser la fenêtre résultats de la métrique du code](../code-quality/working-with-code-metrics-data.md)
+- [Utiliser la fenêtre Résultats des métriques de Code](../code-quality/working-with-code-metrics-data.md)
 - [Valeurs de la métrique du code](../code-quality/code-metrics-values.md)

@@ -3,22 +3,22 @@ title: Touches de modification de la planche graphique dans Blend
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 50732733-ff49-41ba-8c44-4f6a3875ec1c
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fca85bd48a8fd755e7bec70216572fcfe2f84b36
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 18c9035a092854ae5b9d0cfe0fa0ad8f9aab349f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649722"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593014"
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Touches de modification de la planche graphique dans Blend
 Certains raccourcis clavier ne sont pas associés à des éléments de menu et il est donc impossible d'utiliser l'interface utilisateur [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] pour les découvrir. Le tableau suivant répertorie les raccourcis qui modifient une action, par exemple le redimensionnement d’un objet.
 
-|Pour|Faites cela|
+|Pour|Procédez comme suit|
 | - |-------------|
 |Sélectionner temporairement l’outil **Sélection** tandis qu’un autre outil reste sélectionné (cela réduit le nombre de clics à effectuer sur un élément du panneau **Outils**, en faisant des allées et venues entre les outils **Sélection** et les autres)|Maintenez la touche **Ctrl** enfoncée.|
 |Déplacer les objets sélectionnés alors que l’outil **Sélection** est sélectionné|Appuyez sur les touches de direction.|

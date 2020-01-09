@@ -6,15 +6,15 @@ helpviewer_keywords:
 - load tests, properties
 - load tests, run settings
 ms.assetid: 867a9c21-0909-4963-bc02-d41e9393008c
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4b8ef3edb592b003a8c42ef954129c3bafd3ffc8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fbd3b2a7d7e56870a994af288f5887f1d86256af
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653342"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591643"
 ---
 # <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>Guide pratique pour spécifier la propriété de stockage des détails de minuterie d’un paramètre d’exécution de tests de charge
 
@@ -24,12 +24,12 @@ Après avoir créé votre test de charge à l’aide de **l’Assistant Nouveau 
 
 Vous pouvez modifier la valeur de la propriété **Stockage des détails de minuterie** des paramètres d’exécution dans la fenêtre **Propriétés**. Vous pouvez définir la propriété **Stockage des détails de minuterie** avec l’une des options suivantes :
 
-- **Tous les détails individuels :** Collecte et stocke les données de temporisation individuelles pour chaque test, transaction et page émis pendant le test.
+- **Tous les détails individuels :** collecte et stocke les données de temporisation individuelles pour chaque test, transaction et page émis pendant le test.
 
   > [!NOTE]
-  > L’option **Tous les détails individuels** doit être sélectionnée pour activer les informations relatives aux données des utilisateurs virtuels dans vos résultats de test de charge. Pour plus d’informations, voir [Analyser l’activité des utilisateurs virtuels dans la vue Détails](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
+  > L’option **Tous les détails individuels** doit être sélectionnée pour activer les informations relatives aux données des utilisateurs virtuels dans vos résultats des tests de charge. Pour plus d’informations, voir [Analyser l’activité des utilisateurs virtuels dans la vue Détails](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).
 
-- **Aucune :** Ne collecte aucun détail de minuterie. Toutefois, les valeurs moyennes sont toujours disponibles.
+- **Aucune :** ne collecte aucun détail de minuterie. Toutefois, les valeurs moyennes sont toujours disponibles.
 
 - **Statistiques uniquement :** Stocke les données de temporisation individuelles, mais uniquement en tant que centiles. Cela permet d'économiser les ressources en matière d'espace.
 
@@ -53,7 +53,7 @@ Vous pouvez modifier la valeur de la propriété **Stockage des détails de minu
 
 3. Choisissez les paramètres d’exécution à configurer, par exemple **Paramètres d’exécution1[Actifs]** .
 
-4. Ouvrez la fenêtre **Propriétés**. Dans le menu **Affichage**, sélectionnez la fenêtre **Propriétés**.
+4. Ouvrez la fenêtre **Propriétés**. Dans le menu **Affichage**, sélectionnez **Fenêtre Propriétés**.
 
 5. Sous la catégorie **Résultats**, choisissez la propriété **Stockage des détails de minuterie**, puis sélectionnez **Tous les détails individuels**.
 

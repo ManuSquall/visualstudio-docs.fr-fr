@@ -3,15 +3,15 @@ title: Working with elements in XAML Designer
 ms.date: 05/14/2018
 ms.topic: conceptual
 ms.assetid: a29690bf-f212-4ac6-a77a-adc53d14102e
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: bae8f676a009ef9e5b3560feff15b74410cc52ac
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3f544501a7d8a792af9ddd89c682324a21002c4f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668622"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592923"
 ---
 # <a name="work-with-elements-in-xaml-designer"></a>Utiliser des éléments dans le concepteur XAML
 
@@ -107,7 +107,7 @@ Pour dissocier des éléments et supprimer la disposition, cliquez avec le bouto
 
 Vous pouvez restaurer les valeurs par défaut de propriétés de disposition spécifiques d'un élément à l'aide des commandes de réinitialisation de la disposition. Cette commande vous permet de réinitialiser la marge, l'alignement, la largeur, la hauteur et la taille d'un élément, de manière individuelle ou collective.
 
-Pour réinitialiser la disposition des éléments, cliquez avec le bouton droit sur l’élément souhaité dans la fenêtre Structure du document ou dans la planche graphique, puis choisissez **Disposition** > **Réinitialiser** *nom_propriété*, où *nom_propriété* représente la propriété à réinitialiser (ou choisissez **Disposition** > **Tout réinitialiser** pour réinitialiser toutes les propriétés de disposition de l’élément).
+Pour réinitialiser la disposition des éléments, cliquez avec le bouton droit sur l’élément dans la fenêtre structure du document ou la planche graphique, puis choisissez **disposition** > **Réinitialiser** *PropertyName*, où *PropertyName* est la propriété à réinitialiser (ou choisissez **disposition** > **Réinitialiser tout** pour réinitialiser toutes les propriétés de disposition de l’élément).
 
 ## <a name="see-also"></a>Voir aussi
 

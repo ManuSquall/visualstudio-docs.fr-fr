@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: Comment attribuer des abonnements Visual Studio à vos utilisateurs finaux, pour les partenaires du réseau MPN.
-ms.openlocfilehash: 600d7c651e4e4b4396293e8be60a008a6f6d0bf3
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
-ms.translationtype: HT
+ms.openlocfilehash: 544987556b33358865fc785db7e86d455942a430
+ms.sourcegitcommit: 9186dc1af846ef2236ca78d4facf399c253ab5f7
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605453"
+ms.lasthandoff: 12/26/2019
+ms.locfileid: "75492903"
 ---
 # <a name="manage-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Gérer les abonnements Visual Studio offerts via le réseau MPN
 Les partenaires qui acquièrent une compétence ou qui achètent l’Action Pack MPN sont éligibles aux abonnements Visual Studio. Ces abonnements sont concédés sous licence par utilisateur et sont valides uniquement quand ils sont attribués à un utilisateur nommé spécifique qui travaille pour la société partenaire.
@@ -26,7 +26,7 @@ Abonné Microsoft Action Pack et abonnements Visual Studio
 4. Sélectionnez premier, deuxième ou troisième **Contact technique** et **enregistrez**
 5. Sélectionnez **Configuration requise et ressources**
 6. Sélectionnez **Privilèges**
-7. Sélectionnez **Abonnements Visual Studio** (Remarque : Mise à jour de l’abonnement Visual Studio en attente)
+7. Sélectionnez **Abonnements Visual Studio** (remarque : mise à jour de l’abonnement Visual Studio en attente)
 8. Sélectionnez la **personne** souhaitée
 9. Cliquez sur **Envoyer**
 10. La personne reçoit un e-mail
@@ -53,11 +53,13 @@ Abonné Microsoft Action Pack et abonnements Visual Studio
 
 ## <a name="resources-and-references"></a>Ressources et références
 - Détails concernant les [abonnements Visual Studio](https://partner.microsoft.com/membership/msdn-subscriptions) Microsoft Partner Network
-- Microsoft Partner Network [Program Administrator Guide to Software and Online Services Benefits](https://assets.microsoft.com/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits_1.pdf) (Guide de l’administrateur du programme concernant le logiciel et les avantages des services en ligne)
+- Microsoft Partner Network [Program Administrator Guide to Software and Online Services Benefits](https://assetsprod.microsoft.com/mpn/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits) (Guide de l’administrateur du programme concernant le logiciel et les avantages des services en ligne)
   - Pg 6 - Attribution de rôles de contact et d’abonnements Visual Studio pour Action Pack
   > [!NOTE]
   > Le rôle Contact technique est requis pour les abonnements Visual Studio
   - Pg 8 - Attribution d’abonnements Visual Studio pour les partenaires de compétence
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 Les abonnés et les administrateurs du programme doivent travailler directement avec l’équipe de support de Microsoft Partner Network pour résoudre les problèmes d’accès aux abonnements. Visitez la page [Support pour les partenaires](https://partner.microsoft.com/support) pour obtenir de l’aide. (Vous aurez besoin de vos informations de connexion à MPN.)
+
+https://r.search.yahoo.com/_ylt=AwrWnKI73ARewjwA1C0PxQt. _ylu = X3oDMTEyN2cxcTlwBGNvbG8DZ3ExBHBvcwMxBHZ0aWQDQjg0OTJfMQRzZWMDc3I-/RV = 2/RE = 1577405628/RO = 10/RU = https %3 a %2 f %2 f assetsprod. Microsoft. com% 2fmpn% 2fProgram-administrateur-Guide-to-Software-and-Online-Services-Benefits/RK = 2/RS = xsA5OL. 9t6QqJlvFYZ3OPnZkC_k-

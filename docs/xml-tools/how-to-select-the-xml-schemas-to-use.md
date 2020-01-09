@@ -3,17 +3,17 @@ title: 'Procédure : sélectionner les schémas XML à utiliser'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d6fda3ef-d465-4788-8514-2f2d528d658c
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 275def786a93d42e6b8e110d3b3d785a24e948b1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2acafe0c782b39bb7aa345b5456df7238703cb20
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72601909"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592644"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>Procédure : sélectionner les schémas XML à utiliser
 
@@ -34,13 +34,13 @@ Les schémas que vous spécifiez sont enregistrés dans un fichier d’options u
 
    ![Propriété Schemas pour un fichier XML](media/properties-schemas.png)
 
-   La [boîte de dialogue schémas XML](xml-schemas-dialog-box.md) s’ouvre. La boîte de dialogue répertorie tous les schémas avec un. extension *xsd* dans le cache de schéma (y compris les schémas référencés dans le fichier *Catalog. xml* ), ainsi que tous les schémas qui se trouvent dans la solution actuelle, s’ouvrent dans Visual Studio, référencés dans un attribut `xsd:schemaLocation` ou référencés dans les **schémas** propriété.
+   La [boîte de dialogue schémas XML](xml-schemas-dialog-box.md) s’ouvre. La boîte de dialogue répertorie tous les schémas avec un. extension *xsd* dans le cache de schéma (y compris les schémas référencés dans le fichier *Catalog. xml* ), ainsi que tous les schémas de la solution actuelle, ouverts dans Visual Studio, référencés dans un attribut `xsd:schemaLocation` ou référencés dans la propriété **schemas** .
 
 3. Sélectionnez les schémas à utiliser pour la validation en effectuant l'une des opérations suivantes :
 
    - Sélectionnez un schéma listé dans la boîte de dialogue **schémas XML** , cliquez sur la colonne **utiliser** , puis sélectionnez **utiliser ce schéma**.
 
-     ou
+     \- ou -
 
    - Sélectionnez plusieurs schémas listés dans la boîte de dialogue **schémas XML** , cliquez avec le bouton droit et sélectionnez **utiliser ce schéma**.
 

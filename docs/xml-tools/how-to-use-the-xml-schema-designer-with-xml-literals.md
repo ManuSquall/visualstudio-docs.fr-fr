@@ -3,19 +3,19 @@ title: 'Procédure : utiliser le Concepteur de schémas XML avec des littéraux
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d11803e7-f81a-41a2-a145-ba494a45cc93
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ed987a54004004fe8c4fbfba686ae1a35d12bb06
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b4001e705cc69e07242abeeef5919573b264c5e8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72601853"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592657"
 ---
 # <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Comment : utiliser le concepteur de schémas XML avec des littéraux XML
 
@@ -39,7 +39,7 @@ Cette rubrique décrit comment afficher un schéma associé à un littéral XML 
 
      Le projet XMLLiterals contient maintenant deux fichiers : *Module1. vb* et *PurchaseOrderSchema. xsd*.
 
-## <a name="add-code"></a>Ajouter du code
+## <a name="add-code"></a>Ajout de code
 
 Pour ajouter Visual Basic Code avec un littéral XML, en fonction du fichier XSD inclus dans le projet :
 

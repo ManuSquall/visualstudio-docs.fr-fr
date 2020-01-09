@@ -4,24 +4,24 @@ ms.date: 09/23/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - FxCop analyzers, configuring
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1d2c4f6b44daf83b3fd013167ec24e82c45ce2e8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b1d178adbbb847b2629ee785a7a0fa4e990a46dd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649702"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587717"
 ---
 # <a name="configure-fxcop-analyzers"></a>Configurer les analyseurs FxCop
 
 Le [package des analyseurs FxCop](install-fxcop-analyzers.md) se compose des règles « FxCop » les plus importantes de l’analyse héritée convertie en analyseurs de code basés sur .NET Compiler Platform. Pour certaines règles FxCop, vous pouvez affiner les parties de votre code base à laquelle elles doivent être appliquées via les [options configurables](fxcop-analyzer-options.md). Chaque option est spécifiée en ajoutant une paire clé-valeur à un fichier [baEditorConfig](https://editorconfig.org) . Un fichier de configuration peut être [spécifique à un projet](#per-project-configuration) ou peut être [partagé](#shared-configuration) entre plusieurs projets.
 
 > [!TIP]
-> Ajoutez un fichier. editorconfig à votre projet en cliquant avec le bouton droit sur le projet dans **Explorateur de solutions** et en sélectionnant **Ajouter**  > **nouvel élément**. Dans la fenêtre **Ajouter un nouvel élément** , entrez **editorconfig** dans la zone de recherche. Sélectionnez le modèle **fichier editorconfig (par défaut)** , puis choisissez **Ajouter**.
+> Ajoutez un fichier. editorconfig à votre projet en cliquant avec le bouton droit sur le projet dans **Explorateur de solutions** et en sélectionnant **Ajouter** > **nouvel élément**. Dans la fenêtre **Ajouter un nouvel élément** , entrez **editorconfig** dans la zone de recherche. Sélectionnez le modèle **fichier editorconfig (par défaut)** , puis choisissez **Ajouter**.
 >
 > ![Ajouter un fichier editorconfig au projet dans Visual Studio](media/add-editorconfig-file.png)
 
@@ -46,7 +46,7 @@ La syntaxe de configuration d’une option pour *toutes les* règles est la suiv
 
 |Syntaxe|Exemple|
 |-|-|
-| dotnet_code_quality. Nomoptin = OptionValue | `dotnet_code_quality.api_surface = public` |
+| dotnet_code_quality.OptionName = OptionValue | `dotnet_code_quality.api_surface = public` |
 
 ### <a name="category-of-rules"></a>Catégorie de règles
 
@@ -54,7 +54,7 @@ La syntaxe permettant de configurer une option pour une *catégorie* de règles 
 
 |Syntaxe|Exemple|
 |-|-|
-| dotnet_code_quality. RuleCategory. OptionName = OptionValue | `dotnet_code_quality.Naming.api_surface = public` |
+| dotnet_code_quality.RuleCategory.OptionName = OptionValue | `dotnet_code_quality.Naming.api_surface = public` |
 
 ### <a name="specific-rule"></a>Règle spécifique
 
@@ -62,7 +62,7 @@ La syntaxe de configuration d’une option pour une règle *spécifique* est la 
 
 |Syntaxe|Exemple|
 |-|-|
-| dotnet_code_quality. RuleId. OptionName = OptionValue | `dotnet_code_quality.CA1040.api_surface = public` |
+| dotnet_code_quality.RuleId.OptionName = OptionValue | `dotnet_code_quality.CA1040.api_surface = public` |
 
 ## <a name="per-project-configuration"></a>Configuration par projet
 
