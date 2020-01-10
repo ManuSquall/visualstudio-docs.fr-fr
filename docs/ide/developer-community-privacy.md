@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09f3e5fed93cac3a251e4b7cdcaa988e63ff8741
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 1e87f35778b8aec615410312c0eb7373d4e9969f
+ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596266"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75775890"
 ---
 # <a name="developer-community-data-privacy"></a>Confidentialité des données de la communauté des développeurs
 
@@ -81,7 +81,7 @@ Si **Signaler un problème** est lancé à partir de Visual Studio, nous collect
   - Le fichier dump.
 
 > [!NOTE]
-> Les fichiers journaux, les captures d’écran et les données d’enregistrement sont envoyés à Microsoft uniquement lorsque vous fournissez une autorisation en soumettant le rapport de problème avec lequel ils sont inclus. Vous pouvez voir quels fichiers sont inclus dans l’étape « Résumé » de la fenêtre « signaler un problème » (voir la capture d’écran incluse dans cette note). Les journaux et les fichiers collectés sont stockés dans le dossier% Temp% et sont nettoyés régulièrement et après chaque téléchargement. Si vous ne souhaitez pas inclure de journal dans votre rapport de problème, supprimez le fichier du dossier% Temp% avant d’envoyer le rapport.
+> Les fichiers journaux, les captures d’écran et les données d’enregistrement que vous envoyez peuvent accroître considérablement la capacité de Microsoft à comprendre et à résoudre votre problème.  Nous vous recommandons donc de les inclure. Pour protéger votre confidentialité, les fichiers journaux, captures d’écran et données d’enregistrement joints sont envoyés uniquement à Microsoft lorsque vous fournissez une autorisation en soumettant le rapport de problème avec lequel ils sont inclus. Vous pouvez voir quels fichiers sont inclus dans l’étape « Résumé » de la fenêtre « signaler un problème » avant d’envoyer le rapport. Vous pouvez exclure des fichiers journaux système du rapport en désactivent l’option « joindre les journaux système » dans l’étape « Résumé ». Pour référence, consultez la capture d’écran suivante. 
   > ![signaler un problème-Résumé des journaux collectés](media/report-a-problem-logs-collected.png)
 
 

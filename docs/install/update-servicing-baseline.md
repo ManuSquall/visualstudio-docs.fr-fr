@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3ef0cf63f8063d543cbb8fb69a0588dc331e4c6a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
-ms.translationtype: HT
+ms.openlocfilehash: 4c33420e715f2164f767ba57ff149a409d7d3627
+ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590954"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75776185"
 ---
 # <a name="update-visual-studio-while-on-a-servicing-baseline"></a>Mettre à jour Visual Studio tout en étant sur une ligne de base de maintenance
 
@@ -62,7 +62,7 @@ Une autre option pour contrôler les mises à jour sur un client consiste à [d�
 
 Si une mise à jour d’une base de référence de maintenance est disponible, vous pouvez télécharger les fichiers de la version corrigée du programme d’amorçage pour la mise à jour de maintenance depuis le site [My.VisualStudio.com](https://my.visualstudio.com/Downloads?q=visual%20studio%202019%20version%2016.0).
 
-Les administrateurs qui effectuent un déploiement via une installation réseau doivent mettre à jour l’[emplacement de la disposition](update-a-network-installation-of-visual-studio.md) réseau. Les clients ayant effectué une installation à partir de l’emplacement recevront des notifications de mise à jour. Si la mise à jour doit être déployée sur les clients, suivez [ces instructions](update-a-network-installation-of-visual-studio.md#how-to-deploy-an-update-to-client-machines). Quand vous modifiez le fichier « response.json » pour une mise à jour, n’ajoutez pas de charges de travail, de composants ou de langages supplémentaires. La gestion de ces paramètres doit être effectuée dans un déploiement de « modification » une fois le produit mis à jour.
+Les administrateurs qui effectuent un déploiement via une installation réseau doivent mettre à jour l’[emplacement de la disposition](update-a-network-installation-of-visual-studio.md) réseau. Les clients ayant effectué une installation à partir de l’emplacement recevront des notifications de mise à jour. Si la mise à jour doit être déployée sur les clients, suivez [ces instructions](update-a-network-installation-of-visual-studio.md#deploy-an-update-to-client-machines). Quand vous modifiez le fichier « response.json » pour une mise à jour, n’ajoutez pas de charges de travail, de composants ou de langages supplémentaires. La gestion de ces paramètres doit être effectuée dans un déploiement de « modification » une fois le produit mis à jour.
 
 Dans le cas d’une installation basée sur Internet, exécutez la nouvelle version corrigée du programme d’amorçage avec le paramètre `--channelUri` pointant vers un manifeste de canal inexistant sur le client. Si la mise à jour est déployée en mode silencieux ou passif, utilisez deux commandes distinctes :
 
