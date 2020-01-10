@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, advanced concepts
 ms.assetid: f34a558a-ebd9-49bd-8510-32a2b581a4af
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e66c8b597e999f1eab3a52c663537ee94fe4f40a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 88c051f71cf491efcf126af691dfb55b74e50db2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817438"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592124"
 ---
 # <a name="msbuild-advanced-concepts"></a>Concepts avancés de MSBuild
 Les documents dans cette section décrivent comment utiliser des techniques avancées pour améliorer les builds que vous exécutez à l'aide de MSBuild.

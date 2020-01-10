@@ -2,17 +2,17 @@
 title: Directive du modèle T4
 ms.date: 11/04/2016
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 410bc879ff4822f19436794d3cb99732be9d413e
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: f7ada5558cfdfaadca5793d9edc61f13a6d4d11b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72983705"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591838"
 ---
 # <a name="t4-template-directive"></a>Directive du modèle T4
 
@@ -30,7 +30,7 @@ La directive `template` comporte plusieurs attributs qui vous permettent de spé
 
 ## <a name="compileroptions-attribute"></a>attribut compilerOptions
 
-Exemple :
+Exemple :
 
 `compilerOptions="optimize+"`
 
@@ -44,7 +44,7 @@ Ces options sont appliquées lorsque le modèle a été converti en [!INCLUDE[cs
 
 ## <a name="culture-attribute"></a>attribut de culture
 
-Exemple :
+Exemple :
 
 `culture="de-CH"`
 
@@ -58,7 +58,7 @@ L'attribut de culture spécifie la culture à utiliser lorsqu'un bloc d'expressi
 
 ## <a name="debug-attribute"></a>attribut de débogage
 
-Exemple :
+Exemple :
 
 ```
 debug="true"
@@ -78,7 +78,7 @@ Pour exécuter un modèle au moment du design dans le débogueur, enregistrez le
 
 ## <a name="hostspecific-attribute"></a>attribut hostspecific
 
-Exemple :
+Exemple :
 
 ```
 hostspecific="true"
@@ -96,7 +96,7 @@ Si vous affectez à cet attribut la valeur `true`, une propriété nommée `Host
 
 Étant donné que le type de cette propriété dépend du type d'hôte, elle n'est utile que si vous écrivez un modèle de texte qui fonctionne uniquement avec un hôte spécifique. Elle s’applique aux [modèles au moment du design](../modeling/design-time-code-generation-by-using-t4-text-templates.md), mais pas aux [modèles au moment de l’exécution](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
-Lorsque `hostspecific` est `true` et que vous utilisez Visual Studio, vous pouvez convertir `this.Host` en IServiceProvider pour accéder aux fonctionnalités de Visual Studio. Vous pouvez également utiliser `Host.ResolvePath(filename)` pour obtenir le chemin d’accès absolu d’un fichier dans le projet. Exemple :
+Lorsque `hostspecific` est `true` et que vous utilisez Visual Studio, vous pouvez convertir `this.Host` en IServiceProvider pour accéder aux fonctionnalités de Visual Studio. Vous pouvez également utiliser `Host.ResolvePath(filename)` pour obtenir le chemin d’accès absolu d’un fichier dans le projet. Par exemple :
 
 ```csharp
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -122,7 +122,7 @@ Si vous utilisez les attributs `inherits` et `hostspecific` ensemble, spécifiez
 
 ## <a name="language-attribute"></a>attribut de langage
 
-Exemple :
+Exemple :
 
 `language="VB"`
 
@@ -134,7 +134,7 @@ Valeurs valides :
 
 L’attribut `language` spécifie le langage ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ou [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]) à utiliser pour le code source dans les blocs d’instruction et d’expression. Le fichier de code intermédiaire à partir duquel la sortie est générée utilisera ce langage. Ce langage n'est pas lié au langage que votre modèle génère, qui peut être tout type de texte.
 
-Exemple :
+Par exemple :
 
 ```vb
 <#@ template language="VB" #>
@@ -239,7 +239,7 @@ Pour plus d’informations, consultez [« héritage dans les modèles de texte�
 
 ## <a name="linepragmas-attribute"></a>attribut linePragmas
 
-Exemple :
+Exemple :
 
 `linePragmas="false"`
 
@@ -255,7 +255,7 @@ Cet attribut peut également être utile si vous recherchez les noms de fichiers
 
 ## <a name="visibility-attribute"></a>attribut Visibility
 
-Exemple :
+Exemple :
 
 `visibility="internal"`
 

@@ -3,17 +3,17 @@ title: Supprimer les avertissements du compilateur pour les projets et les packa
 ms.date: 01/24/2018
 ms.technology: vs-ide-compile
 ms.topic: conceptual
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aec3dfb45471a3349e14419671ef1fb3b5e05db5
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: cbcef86187ad03545066f3c595d00b56f83be5c5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747947"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591422"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Guide pratique pour supprimer des avertissements du compilateur
 
@@ -43,7 +43,7 @@ Utilisez la page de propriétés **Propriétés de configuration** pour supprime
 
 1. Choisissez la catégorie **Propriétés de configuration**, la catégorie **C/C++** , puis la page **Avancé**.
 
-1. Effectuez l’une des opérations suivantes :
+1. Effectuez l'une des étapes suivantes :
 
     - Dans la zone **Désactivation des avertissements spécifiques**, spécifiez les codes d’erreur des avertissements que vous souhaitez supprimer, séparés par des points-virgules.
 
@@ -87,7 +87,7 @@ Cet exemple montre comment modifier le fichier *.vbproj* pour supprimer des aver
     ```
 
    > [!NOTE]
-   > Les projets .NET Core ne contiennent pas de groupes de propriétés de configuration de build par défaut. Pour supprimer des avertissements d’un projet .NET Core, ajoutez manuellement la section de configuration de build au fichier. Exemple :
+   > Les projets .NET Core ne contiennent pas de groupes de propriétés de configuration de build par défaut. Pour supprimer des avertissements d’un projet .NET Core, ajoutez manuellement la section de configuration de build au fichier. Par exemple :
    >
    > ```xml
    > <Project Sdk="Microsoft.NET.Sdk">

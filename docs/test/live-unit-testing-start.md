@@ -4,17 +4,17 @@ ms.date: 08/31/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - Live Unit Testing
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a5b136c91873c0af60705ea361a19e53f28e06b0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 748dfc592fbf7a3b9737e9f418362067b92bb8ff
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653059"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594290"
 ---
 # <a name="get-started-with-live-unit-testing"></a>Bien démarrer avec Live Unit Testing
 
@@ -48,7 +48,7 @@ La solution est simplement un conteneur pour un ou plusieurs projets. Pour crée
 
 Maintenant que vous avez créé la solution, vous allez créer une bibliothèque de classes nommée StringLibrary qui contient un certain nombre de méthodes d’extension pour l’utilisation de chaînes.
 
-1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur la solution UtilityLibraries et sélectionnez **Ajouter**  > **nouveau projet**.
+1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur la solution UtilityLibraries et sélectionnez **Ajouter** > **nouveau projet**.
 
 ::: moniker range="vs-2017"
 
@@ -96,7 +96,7 @@ Maintenant que vous avez créé la solution, vous allez créer une bibliothèque
 
 L’étape suivante consiste à créer le projet de test unitaire pour tester la bibliothèque StringLibrary. Créez les tests unitaires en procédant comme suit :
 
-1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur la solution UtilityLibraries et sélectionnez **Ajouter**  > **nouveau projet**.
+1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur la solution UtilityLibraries et sélectionnez **Ajouter** > **nouveau projet**.
 
 ::: moniker range="vs-2017"
 
@@ -150,7 +150,7 @@ Vous avez créé une bibliothèque de classes, ainsi que quelques tests unitaire
 
 ## <a name="enable-live-unit-testing"></a>Activer Live Unit Testing
 
-Jusqu’à présent, bien que vous ayez écrit les tests de la bibliothèque de classes StringLibrary, vous ne les avez pas exécutés. Live Unit Testing les exécute automatiquement une fois que vous l’activez. Pour cela, procédez comme suit :
+Jusqu’à présent, bien que vous ayez écrit les tests de la bibliothèque de classes StringLibrary, vous ne les avez pas exécutés. Live Unit Testing les exécute automatiquement une fois que vous l’activez. Pour ce faire, procédez comme suit :
 
 1. Si vous le souhaitez, sélectionnez la fenêtre de code qui contient le code pour StringLibrary. Il s’agit de *Class1.cs* pour un projet C# ou de *Class1.vb* pour un projet Visual Basic. (Cette étape vous permet d’inspecter visuellement le résultat de vos tests et l’étendue de la couverture du code une fois que vous avez activé Live Unit Testing.)
 

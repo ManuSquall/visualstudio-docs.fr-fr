@@ -6,24 +6,24 @@ f1_keywords:
 - System.Activities.Statements.TryCatch.UI
 - System.Activities.Statements.Catch`1.UI
 ms.assetid: 02a326c2-4009-442f-b7cb-e42121fd2992
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76a7600cdab94499e13592924efabba2fb4c2faf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b70f1d3174990ec12c621dff4a45ce4d899ceb4e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649806"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593068"
 ---
 # <a name="trycatch-activity-designer"></a>Concepteur d'activités TryCatch
 
 Le concepteur d’activités **TryCatch** permet de créer et de configurer une activité <xref:System.Activities.Statements.TryCatch>.
 
 ## <a name="the-trycatch-activity"></a>Activité TryCatch
- L’activité <xref:System.Activities.Statements.TryCatch> contient une activité de <xref:System.Activities.Statements.TryCatch.Try%2A>, une collection de **> de \<TException catch** et une activité <xref:System.Activities.Statements.TryCatch.Finally%2A>. Une <xref:System.Activities.Statements.Catch%601> de type **TException** contient un <xref:System.Activities.Statements.Catch%601.ExceptionType%2A> et un <xref:System.Activities.Statements.Catch%601.Action%2A>. Ensemble, ils permettent d'implémenter un mécanisme classique de gestion des erreurs basé sur les exceptions. Une activité <xref:System.Activities.Statements.TryCatch> essaie d'exécuter son activité <xref:System.Activities.Statements.TryCatch.Try%2A>. Si l’activité <xref:System.Activities.Statements.TryCatch.Try%2A> lève une exception, l’activité <xref:System.Activities.Statements.TryCatch> utilise sa collection **Catch < TException \>** pour correspondre à l’exception. En cas de correspondance, la <xref:System.Activities.Statements.Catch%601.Action%2A> du **\<TException catch correspondant >** est exécutée, servant de logique de gestion des erreurs pour l’exception. Si les activités de la section <xref:System.Activities.Statements.TryCatch.Try%2A> s'achèvent correctement ou les activités de <xref:System.Activities.Statements.TryCatch.Catches%2A> s'achèvent correctement, l'activité <xref:System.Activities.Statements.TryCatch> exécute son activité <xref:System.Activities.Statements.TryCatch.Finally%2A>. Pour plus d’informations, consultez [exceptions de Windows Workflow](/dotnet/framework/windows-workflow-foundation/exceptions).
+ L’activité <xref:System.Activities.Statements.TryCatch> contient une activité de <xref:System.Activities.Statements.TryCatch.Try%2A>, une collection de **captures de\<TException >** et une activité <xref:System.Activities.Statements.TryCatch.Finally%2A>. Une <xref:System.Activities.Statements.Catch%601> de type **TException** contient un <xref:System.Activities.Statements.Catch%601.ExceptionType%2A> et un <xref:System.Activities.Statements.Catch%601.Action%2A>. Ensemble, ils permettent d'implémenter un mécanisme classique de gestion des erreurs basé sur les exceptions. Une activité <xref:System.Activities.Statements.TryCatch> essaie d'exécuter son activité <xref:System.Activities.Statements.TryCatch.Try%2A>. Si l’activité <xref:System.Activities.Statements.TryCatch.Try%2A> lève une exception, l’activité <xref:System.Activities.Statements.TryCatch> utilise sa collection **Catch < TException\>** pour correspondre à l’exception. En cas de correspondance, la <xref:System.Activities.Statements.Catch%601.Action%2A> du **> Catch\<TException** correspondant est exécutée, servant de logique de gestion des erreurs pour l’exception. Si les activités de la section <xref:System.Activities.Statements.TryCatch.Try%2A> s'achèvent correctement ou les activités de <xref:System.Activities.Statements.TryCatch.Catches%2A> s'achèvent correctement, l'activité <xref:System.Activities.Statements.TryCatch> exécute son activité <xref:System.Activities.Statements.TryCatch.Finally%2A>. Pour plus d’informations, consultez [exceptions de Windows Workflow](/dotnet/framework/windows-workflow-foundation/exceptions).
 
 ### <a name="using-the-trycatch-activity-designer"></a>Utilisation du concepteur d'activités TryCatch
 
@@ -37,9 +37,9 @@ Cliquez sur le bouton de développement dans le coin supérieur droit de **TryCa
 
 ### <a name="the-trycatch-properties"></a>Propriétés TryCatch
 
-Le tableau suivant présente les <xref:System.Activities.Statements.TryCatch>properties et décrit comment elles sont utilisées dans le concepteur.
+Le tableau suivant présente les propriétés de <xref:System.Activities.Statements.TryCatch>et décrit comment elles sont utilisées dans le concepteur.
 
-|Nom de propriété|Obligatoire|Utilisation|
+|Nom de propriété|Obligatoire|Contrôle|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Spécifie le nom convivial facultatif de l'activité <xref:System.Activities.Statements.TryCatch>. TryCatch est la valeur par défaut.|
 |<xref:System.Activities.Statements.TryCatch.Try%2A>|False|Première activité exécutée lorsque <xref:System.Activities.Statements.TryCatch> s'exécute.|

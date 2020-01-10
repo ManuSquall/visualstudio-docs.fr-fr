@@ -2,17 +2,17 @@
 title: Directive d'assembly T4
 ms.date: 11/04/2016
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f605748d4bda13567713b646f0232d684ec46fe1
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8d441d74d1ddea5a7b5dd063d302ec93e75fc1c9
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748184"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591890"
 ---
 # <a name="t4-assembly-directive"></a>Directive d'assembly T4
 
@@ -36,7 +36,7 @@ Dans un modèle de texte au moment de la conception de Visual Studio, la directi
 
 - Chemin d’accès absolu de l’assembly
 
-  Vous pouvez utiliser la syntaxe `$(variableName)` pour référencer des variables Visual Studio, comme `$(SolutionDir)`, et `%VariableName%` pour référencer des variables d’environnement. Exemple :
+  Vous pouvez utiliser la syntaxe `$(variableName)` pour référencer des variables Visual Studio, comme `$(SolutionDir)`, et `%VariableName%` pour référencer des variables d’environnement. Par exemple :
 
 ```
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>

@@ -6,15 +6,15 @@ helpviewer_keywords:
 - project templates [Visual Studio], locations
 - item templates [Visual Studio], locations
 - template locations [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: f9035e63fd172727f3bfae44e18a0727599d4edc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 480f583bb997a19bc84fcfbe6824c12a3c638784
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645878"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591045"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Guide pratique pour localiser et organiser les modèles de projet et d’élément
 
@@ -106,9 +106,9 @@ Les catégories des boîtes de dialogue **Nouveau projet** et **Ajouter un nouve
 
 1. Placez tous les modèles de cette catégorie dans le nouveau dossier.
 
-1. Dans le menu **Fichier** , choisissez **Nouveau** > **Projet**.
+1. Dans le menu **fichier** , choisissez **nouveau** > **projet**.
 
-   La catégorie **HelloWorld** apparaît dans la boîte de dialogue **Nouveau projet**, sous **Installé** > **Visual C#** .
+   La catégorie **HelloWorld** apparaît dans la boîte de dialogue **nouveau projet** , sous **installé** > **visuel C#** .
 
 ### <a name="create-new-user-item-template-categories"></a>Créer des catégories de modèles d’élément utilisateur
 
@@ -120,7 +120,7 @@ Les catégories des boîtes de dialogue **Nouveau projet** et **Ajouter un nouve
 
 1. Créez un projet ou ouvrez un projet existant. Ensuite, dans le menu **Projet**, choisissez **Ajouter un nouvel élément**.
 
-   La catégorie **HelloWorld** apparaît dans la boîte de dialogue **Ajouter un nouvel élément**, sous **Installé** > **Éléments Visual C#** .
+   La catégorie **HelloWorld** apparaît dans la boîte de dialogue **Ajouter un nouvel élément** , sous **installé** > **éléments visuels C#** .
 
 ### <a name="display-templates-in-parent-categories"></a>Afficher les modèles dans les catégories parentes
 
@@ -146,7 +146,7 @@ Vous pouvez permettre l’affichage des modèles des sous-catégories dans leur 
 
 1. Enregistrez et fermez le fichier *.vstemplate*.
 
-1. Sélectionnez les fichiers inclus dans votre modèle, cliquez avec le bouton droit sur la sélection, puis choisissez **Envoyer vers** > **Dossier compressé**.
+1. Sélectionnez les fichiers dans votre modèle, cliquez avec le bouton droit sur la sélection, puis choisissez **Envoyer vers** > **dossier compressé (zippé)** .
 
    Les fichiers sont compressés dans un fichier *.zip*.
 

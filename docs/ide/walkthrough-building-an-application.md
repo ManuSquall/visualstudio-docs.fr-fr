@@ -3,17 +3,17 @@ title: 'Procédure pas à pas : générer une application'
 ms.date: 09/25/2017
 ms.technology: vs-ide-compile
 ms.topic: conceptual
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f94cc62cdadb2df3806f5b188278f49e4041235
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 570dd2044346ace8a51096a04842ea88de0a8803
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647173"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594147"
 ---
 # <a name="walkthrough-build-an-application"></a>Procédure pas à pas : générer une application
 
@@ -65,7 +65,7 @@ Ensuite, vous allez générer la solution avec la configuration de build personn
 
 ### <a name="build-the-solution"></a>Générer la solution
 
-- Dans la barre de menus, choisissez **générer**  > **générer la solution**, ou appuyez sur **CTRL** +**MAJ** +**B**.
+- Dans la barre de menus, choisissez **générer** > **générer la solution**, ou appuyez sur **CTRL**+**MAJ**+**B**.
 
     La fenêtre **Sortie** affiche les résultats de la génération. La génération a réussi.
 
@@ -75,7 +75,7 @@ Nous présenterons ensuite du code qui provoque la génération d’un avertisse
 
 1. Dans le projet C#, ouvrez le fichier *ExpenseReportPage.xaml.cs*. Dans la méthode **ExpenseReportPage**, ajoutez le code suivant : `int i;`.
 
-    OR
+    OU
 
     Dans le projet Visual Basic, ouvrez le fichier *ExpenseReportPage.xaml.vb*. Dans le constructeur personnalisé **Public Sub New...** , ajoutez le code suivant : `Dim i`.
 
@@ -154,7 +154,7 @@ Vous pouvez modifier la quantité d’informations relatives au processus de gé
 
      Les informations de build comprennent l’heure à laquelle la génération a commencé (située au début), et l’ordre dans lequel les fichiers ont été traités. Ces informations comprennent également la syntaxe de compilateur que Visual Studio exécute pendant la génération.
 
-     Par exemple, dans la génération C#, l’option [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) contient le code d’avertissement **1762** que vous avez spécifié précédemment dans cette rubrique, ainsi que trois autres avertissements.
+     Par exemple, dans la C# Build, l’option [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) répertorie le code d’avertissement **0168**que vous avez spécifié précédemment dans cette rubrique, ainsi que trois autres avertissements.
 
      Dans la build Visual Basic, comme [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn) n’inclut pas d’avertissements à exclure, aucun avertissement ne s’affiche.
 

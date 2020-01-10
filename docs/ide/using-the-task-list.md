@@ -9,17 +9,17 @@ f1_keywords:
 helpviewer_keywords:
 - task list
 - Visual Studio, task list
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69c0e4c3a19358d9b29e4d7d3616c6718117e059
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: db39850350f99e6c046996f6408973cbc6543868
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647320"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594225"
 ---
 # <a name="use-the-task-list"></a>Utiliser la liste des tâches
 
@@ -104,7 +104,7 @@ Un *raccourci* est un signet dans le code qui est suivi dans la **liste des tâc
 
 ### <a name="create-a-shortcut"></a>Créer un raccourci
 
-Pour créer un raccourci, insérez le pointeur dans le code à l’emplacement souhaité du nouveau raccourci. Choisissez **Edition** > **Signets** > **Ajouter un raccourci vers la liste des tâches** ou appuyez sur **Ctrl** + **K**, **Ctrl**+**H**.
+Pour créer un raccourci, insérez le pointeur dans le code à l’emplacement souhaité du nouveau raccourci. Choisissez **Edition** > **Signets** > **Ajouter un raccourci vers la liste des tâches** ou appuyez sur **Ctrl**+**K**, **Ctrl**+**H**.
 
 Pour parcourir les raccourcis figurant dans le code, choisissez un raccourci dans la liste, puis **Tâche suivante** ou **Tâche précédente** dans le menu contextuel.
 

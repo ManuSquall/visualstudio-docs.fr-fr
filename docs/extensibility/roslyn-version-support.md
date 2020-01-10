@@ -4,17 +4,17 @@ ms.date: 04/29/2019
 ms.topic: reference
 helpviewer_keywords:
 - roslyn package versions
-author: jillre
-ms.author: jillfra
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1965b0a2aa4b87dacee6f7cd1e1d2d7bc5c36819
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9c05b9533461cbf233c2e5fd323f3723f7fc6bec
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647938"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590785"
 ---
 # <a name="net-compiler-platform-package-version-reference"></a>Référence de la version du package .NET Compiler Platform
 
@@ -24,7 +24,7 @@ Par exemple, pour vous assurer que votre analyseur personnalisé fonctionne sur 
 
 | Version du package Roslyn | Version minimale de Visual Studio prise en charge |
 | - | - |
-| 3 | Visual Studio 2019 |
+| 3.x | Visual Studio 2019 |
 | 2.10.0 | Visual Studio 2017 version 15,9 |
 | 2.9.0 | Visual Studio 2017 version 15.8 |
 | 2.8.2 | Visual Studio 2017 version 15.7 |
@@ -38,7 +38,7 @@ Par exemple, pour vous assurer que votre analyseur personnalisé fonctionne sur 
 | 1.3.2 | Mise à jour 3 de Visual Studio 2015 |
 | 1.2.2 | Mise à jour 2 de Visual Studio 2015 |
 | 1.1.1 | Mise à jour 1 de Visual Studio 2015 |
-| 1.0.1 | Version RTM de Visual Studio 2015 |
+| 1.0.1 | Visual Studio 2015 RTM |
 
 > [!TIP]
 > Pour les packages Roslyn où la version minimale prise en charge de Visual Studio est une version 2017 de Visual Studio, toutes les versions de Visual Studio 2019 sont également prises en charge, car elles sont fournies plus tard.

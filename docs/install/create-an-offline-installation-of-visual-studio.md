@@ -9,19 +9,19 @@ f1_keywords:
 - offline install [Visual Studio]
 - layout [Visual Studio]
 ms.assetid: f8625d5e-f6ea-4db0-83c0-619b77fab3cf
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c8b59ce38657bab157b966a25e0cd27109510215
-ms.sourcegitcommit: 58000baf528da220fdf7a999d8c407a4e86c1278
+ms.openlocfilehash: fd47e464eec0fc9bdbd20c854432f5954f8fbcb2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72789986"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591487"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Créer une installation hors connexion de Visual Studio
 
@@ -79,9 +79,9 @@ Vous devez avoir une connexion Internet pour effectuer cette étape.
 
 Pour obtenir un programme d’amorçage pour Visual Studio 2017, consultez la page de téléchargement des [versions précédentes de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) pour plus d’informations sur la façon de procéder.
 
-L’exécutable de votre programme d’installation &mdash;or pour être plus précis, le fichier du programme d’amorçage &mdash;should correspond ou est semblable à l’un des éléments suivants.
+L’exécutable du programme d’installation&mdash;ou pour être plus spécifique, le fichier du programme d’amorçage&mdash;doit correspondre ou être similaire à l’un des éléments suivants.
 
-| Édition | Nom de fichier |
+| Édition | NomFichier |
 |-------------|-----------------------|
 |Communauté Visual Studio | vs_community.exe |
 |Visual Studio Professional | vs_professional.exe |
@@ -94,7 +94,7 @@ L’exécutable de votre programme d’installation &mdash;or pour être plus pr
 
 Commencez par télécharger le programme d’amorçage de Visual Studio pour l’édition de Visual Studio que vous avez choisie. Votre fichier d’installation &mdash;ou programme d’amorçage&mdash; correspond ou est similaire à l’une des valeurs suivantes.
 
-| Édition                    | Fichier                                                                    |
+| Édition                    | File                                                                    |
 |----------------------------|-------------------------------------------------------------------------|
 | Communauté Visual Studio    | [vs_community.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)       |
 | Visual Studio Professional | [vs_professional.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019) |
@@ -188,7 +188,7 @@ Pour obtenir plus d’exemples d’utilisation des [paramètres de ligne de comm
 
 ### <a name="list-of-language-locales"></a>Liste des paramètres régionaux de langue
 
-| **Paramètres régionaux de langue** | **Language** |
+| **Paramètres régionaux de langue** | **Langue** |
 | ----------------------- | --------------- |
 | cs-CZ | Tchèque |
 | de-DE | Allemand |
@@ -199,7 +199,7 @@ Pour obtenir plus d’exemples d’utilisation des [paramètres de ligne de comm
 | ja-JP | Japonais |
 | ko-KR | Coréen |
 | pl-PL | Polonais |
-| pt-BR | Portugais - Brésil |
+| pt-BR | Portugais – Brésil |
 | ru-RU | Russe |
 | tr-TR | Turc |
 | zh-CN | Chinois (simplifié) |

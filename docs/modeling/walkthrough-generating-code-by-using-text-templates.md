@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs [text templates], generating application code
 - walkthroughs [text templates]
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d24a2ea1b614cb0ca82bdcf1c4954aba9a9174c
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: ff583874778a2f1affd589ef260c6b9eac6b5d06
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984407"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593507"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>Procédure pas à pas : générer du code à l’aide de modèles de texte
 
@@ -103,7 +103,7 @@ Le fichier doit faire partie du projet pour que le modèle puisse le lire, mais 
 
 ### <a name="add-a-test-code-file"></a>Ajouter un fichier de code de test
 
-Ajoutez un fichier C# à votre projet et placez-y un exemple du code que vous souhaitez pouvoir écrire. Exemple :
+Ajoutez un fichier C# à votre projet et placez-y un exemple du code que vous souhaitez pouvoir écrire. Par exemple :
 
 ```csharp
 using System;

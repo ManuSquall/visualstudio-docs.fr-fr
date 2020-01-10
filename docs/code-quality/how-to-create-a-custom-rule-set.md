@@ -6,17 +6,17 @@ f1_keywords:
 - vs.codeanalysis.addremoverulesets
 helpviewer_keywords:
 - rule sets
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b904fd484135943228b2d8ac21e2df0d1c02e34
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b9f23b2badb40effd4222e21ab9e67b2907513c2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649510"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587548"
 ---
 # <a name="customize-a-rule-set"></a>Personnaliser un ensemble de règles
 
@@ -24,7 +24,7 @@ Vous pouvez créer un ensemble de règles personnalisé pour répondre à des be
 
 ## <a name="create-a-custom-rule-set-from-an-existing-rule-set"></a>Créer un ensemble de règles personnalisé à partir d’un ensemble de règles existant
 
-Pour créer un ensemble de règles personnalisé, vous pouvez ouvrir un ensemble de règles intégré dans l' **éditeur d’ensembles de règles**. À partir de là, vous pouvez ajouter ou supprimer des règles spécifiques, et vous pouvez modifier l’action qui se produit lorsqu’une règle est violée &mdash;for exemple, afficher un avertissement ou une erreur.
+Pour créer un ensemble de règles personnalisé, vous pouvez ouvrir un ensemble de règles intégré dans l' **éditeur d’ensembles de règles**. À partir de là, vous pouvez ajouter ou supprimer des règles spécifiques, et vous pouvez modifier l’action qui se produit lorsqu’une règle est violée&mdash;par exemple, afficher un avertissement ou une erreur.
 
 1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le projet, puis sélectionnez **Propriétés**.
 
@@ -46,7 +46,7 @@ Pour créer un ensemble de règles personnalisé, vous pouvez ouvrir un ensemble
 
      \- ou -
 
-   - Sélectionnez **\<Browse >** pour spécifier un ensemble de règles existant qui ne figure pas dans la liste.
+   - Sélectionnez **\<parcourir >** pour spécifier un ensemble de règles existant qui ne figure pas dans la liste.
 
 4. Sélectionnez **ouvrir** pour afficher les règles dans l’éditeur d’ensembles de règles.
 
@@ -57,7 +57,7 @@ Pour créer un ensemble de règles personnalisé, vous pouvez ouvrir un ensemble
 
 Vous pouvez créer un nouveau fichier d’ensemble de règles à partir de la boîte de dialogue **nouveau fichier** :
 
-1. Sélectionnez **fichier** > **nouveau** **fichier** >  ou appuyez sur **CTRL**+**N**.
+1. Sélectionnez **fichier** > **nouveau** **fichier**de > ou appuyez sur **CTRL**+**N**.
 
 2. Dans la boîte de dialogue **nouveau fichier** , sélectionnez la catégorie **général** sur la gauche, puis sélectionnez **ensemble de règles d’analyse du code**.
 
@@ -76,13 +76,13 @@ Vous pouvez créer un nouveau fichier d’ensemble de règles à partir de la bo
 
 ::: moniker range="vs-2017"
 
-3. Sélectionnez **\<Choose plusieurs ensembles de règles >** à partir de **exécuter cet ensemble de règles**.
+3. Sélectionnez **\<choisir plusieurs ensembles de règles >** à partir de **exécuter cet ensemble de règles**.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-3. Sélectionnez **\<Choose plusieurs ensembles de règles >** à partir des **règles actives**.
+3. Sélectionnez **\<choisir plusieurs ensembles de règles >** à partir de **règles actives**.
 
 ::: moniker-end
 
@@ -98,7 +98,7 @@ Vous pouvez créer un nouveau fichier d’ensemble de règles à partir de la bo
 
 ## <a name="rule-precedence"></a>Priorité des règles
 
-- Si la même règle est listée deux fois ou plus dans un ensemble de règles avec des gravités différentes, le compilateur génère une erreur. Exemple :
+- Si la même règle est listée deux fois ou plus dans un ensemble de règles avec des gravités différentes, le compilateur génère une erreur. Par exemple :
 
    ```xml
    <RuleSet Name="Rules for ClassLibrary21" Description="Code analysis rules for ClassLibrary21.csproj." ToolsVersion="15.0">
@@ -111,9 +111,9 @@ Vous pouvez créer un nouveau fichier d’ensemble de règles à partir de la bo
 
 - Si la même règle est listée deux fois ou plus dans un ensemble de règles avec la *même* gravité, l’avertissement suivant peut s’afficher dans la **liste d’erreurs**:
 
-   **CA0063 : échec du chargement du fichier d’ensemble de règles' \[your]. RuleSet’ou de l’un de ses fichiers d’ensemble de règles dépendants. Le fichier n’est pas conforme au schéma de l’ensemble de règles.**
+   **CA0063 : échec du chargement du fichier d’ensemble de règles'\[votre]. RuleSet’ou l’un de ses fichiers d’ensemble de règles dépendants. Le fichier n’est pas conforme au schéma de l’ensemble de règles.**
 
-- Si l’ensemble de règles inclut un ensemble de règles enfant à l’aide d’une balise **include** , et que la règle enfant et parent affecte à la fois la même règle, mais avec des niveaux de gravité différents, la gravité de l’ensemble de règles parent est prioritaire. Exemple :
+- Si l’ensemble de règles inclut un ensemble de règles enfant à l’aide d’une balise **include** , et que la règle enfant et parent affecte à la fois la même règle, mais avec des niveaux de gravité différents, la gravité de l’ensemble de règles parent est prioritaire. Par exemple :
 
    ```xml
    <!-- Parent rule set -->
@@ -136,9 +136,9 @@ Vous pouvez créer un nouveau fichier d’ensemble de règles à partir de la bo
 
 ## <a name="name-and-description"></a>Nom et description
 
-Pour modifier le nom complet d’un ensemble de règles qui est ouvert dans l’éditeur, ouvrez la fenêtre **Propriétés** en sélectionnant **affichage** > **fenêtre Propriétés** dans la barre de menus. Entrez le nom d’affichage dans la zone **nom** . Vous pouvez également entrer une description pour l’ensemble de règles.
+Pour modifier le nom complet d’un ensemble de règles qui est ouvert dans l’éditeur, ouvrez la fenêtre **Propriétés** en sélectionnant **Afficher** > **fenêtre Propriétés** dans la barre de menus. Entrez le nom d’affichage dans la zone **nom** . Vous pouvez également entrer une description pour l’ensemble de règles.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 Maintenant que vous disposez d’un ensemble de règles, l’étape suivante consiste à personnaliser les règles en ajoutant ou en supprimant des règles ou en modifiant la gravité des violations de règle.
 

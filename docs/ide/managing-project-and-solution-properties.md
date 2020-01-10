@@ -2,17 +2,17 @@
 title: Gérer les propriétés des projets et des solutions
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99786cc2b646c011a0398e973e0fd3d4dd97583f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 01fcdc09c9d3ee4f5a38a95ef4304bfdf537d527
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72603441"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591305"
 ---
 # <a name="manage-project-and-solution-properties"></a>Gérer les propriétés des projets et des solutions
 

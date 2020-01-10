@@ -1,5 +1,5 @@
 ---
-title: Erreurs d’application d’analyse du code
+title: Erreurs d'application d'analyse du code
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -8,17 +8,17 @@ helpviewer_keywords:
 - managed code, code analysis errors
 - code analysis, policy errors
 ms.assetid: d8fd9475-ac9b-4085-b5a3-b0c807922cac
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13a5322fa4b55d29d791f4aef99037c79d67fa45
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c35ba03c2f93af0705910b8f89dd835c985e3e60
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72610842"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587782"
 ---
 # <a name="code-analysis-application-errors"></a>Erreurs de l’application d’analyse du code
 
@@ -33,7 +33,7 @@ Cette section est une référence des messages d’erreur générés par l’out
 |[CA0052](ca0052.md)|Aucune cible n’a été sélectionnée pour l’analyse.|
 |[CA0053](ca0053.md)|Impossible de charger l’assembly de règle.|
 |[CA0054](ca0054.md)|Un assembly de règle personnalisé a des ressources XML non valides.|
-|[CA0055](ca0055.md)|Impossible de charger le fichier : \<path >|
+|[CA0055](ca0055.md)|Impossible de charger le fichier : chemin d’accès\<|
 |[CA0056](ca0056.md)|Un fichier projet a une version incorrecte de l’outil d’analyse.|
 |[CA0057](ca0057.md)|Les violations ne peuvent pas être mappées à l’ensemble actuel de cibles et de règles.|
 |[CA0058](ca0058.md)|Impossible de charger les assemblys référencés.|
@@ -58,5 +58,5 @@ Cette section est une référence des messages d’erreur générés par l’out
 
 ## <a name="related-sections"></a>Rubriques connexes
 
-- [Erreurs de stratégie d’analyse du code](../code-quality/code-analysis-policy-errors.md)
+- [Code Analysis Policy Errors](../code-quality/code-analysis-policy-errors.md)
 - [Analyse de la qualité d’un code managé](../code-quality/code-analysis-for-managed-code-overview.md)

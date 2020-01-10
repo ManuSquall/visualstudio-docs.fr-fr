@@ -4,17 +4,17 @@ description: Cet article décrit certaines fonctionnalités de base de Visual St
 ms.date: 05/02/2018
 ms.topic: conceptual
 ms.assetid: c3a14d28-d811-4ff3-bd09-21dce14025ca
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0be3965ea8343317cf570ae752109b50fa80dd4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e66d0d1ed8115b214b1da1654cbefdc96f7d1774
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650855"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588614"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Faire fonctionner le code dans Visual Studio
 
@@ -160,7 +160,7 @@ Par ailleurs, Visual Studio affiche la fenêtre **Outils de diagnostic**. Celle-
 
 ## <a name="run-unit-tests"></a>Exécuter des tests unitaires
 
-Les tests unitaires sont votre première ligne de défense contre les bogues du code car, exécutés correctement, ils testent une seule « unité » de code, généralement une seule fonction, et leur débogage est généralement plus facile que celui du programme complet. Visual Studio installe les infrastructures de tests unitaires Microsoft pour le code managé et le code natif. Utilisez une infrastructure de test unitaire pour créer des tests unitaires, les exécuter et signaler les résultats de ces tests. Réexécutez les tests unitaires quand vous apportez des modifications pour vérifier que votre code fonctionne toujours correctement. Avec Visual Studio Enterprise Edition, vous pouvez exécuter automatiquement des tests après chaque build.
+Les tests unitaires sont votre première ligne de défense contre les bogues du code car, exécutés correctement, ils testent une seule « unité » de code, généralement une seule fonction, et leur débogage est généralement plus facile que celui du programme complet. Visual Studio installe les infrastructures de tests unitaires Microsoft pour le code managé et le code natif. Utilisez une infrastructure de tests unitaires pour créer des tests unitaires, les exécuter et signaler les résultats de ces tests. Réexécutez les tests unitaires quand vous apportez des modifications pour vérifier que votre code fonctionne toujours correctement. Avec Visual Studio Enterprise Edition, vous pouvez exécuter automatiquement des tests après chaque build.
 
 Pour commencer, consultez [Générer des tests unitaires pour votre code avec IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md).
 

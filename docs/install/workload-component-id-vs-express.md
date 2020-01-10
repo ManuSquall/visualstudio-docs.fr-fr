@@ -3,8 +3,8 @@ title: ID de composant et de charge de travail de Visual Studio Desktop Express
 titleSuffix: ''
 description: Utilisez les ID de composant et de charge de travail pour installer Visual Studio à l’aide de la ligne de commande ou pour spécifier comme dépendance dans un manifeste VSIX
 keywords: ''
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.date: 11/13/2018
 ms.topic: reference
@@ -16,12 +16,12 @@ ms.assetid: a3c0cc76-e3ce-435c-a1af-a6318b5a4dbe
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 monikerRange: vs-2017
-ms.openlocfilehash: 2447f0eab7ee3931df70f503519f3f110f4ba272
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 6d3d8e78d2a36d9a295fc114784a76641929b7d1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818958"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588445"
 ---
 # <a name="visual-studio-desktop-express-component-directory"></a>Répertoire des composants Visual Studio Desktop Express
 
@@ -40,9 +40,9 @@ Pour plus d’informations sur l’utilisation de ces ID, consultez la page [Uti
 
 ## <a name="express-for-windows-desktop"></a>Express pour Windows Desktop
 
-**ID :** Microsoft.VisualStudio.Workload.WDExpress
+**ID :** Microsoft.VisualStudio.Workload.WDExpress
 
-**Description :** Générez des applications natives et gérées comme WPF, WinForms et Win32 avec modification du code avec prise en charge de la syntaxe, contrôle de code source et gestion des éléments de travail. Inclut la prise en charge de C#, Visual Basic et Visual C++.
+**Description :** générez des applications natives et gérées comme WPF, WinForms et Win32 avec modification du code avec prise en charge de la syntaxe, contrôle de code source et gestion des éléments de travail. Inclut la prise en charge de C#, Visual Basic et Visual C++.
 
 ### <a name="components-included-by-this-workload"></a>Composants inclus par cette charge de travail
 
@@ -55,7 +55,7 @@ Microsoft.Component.VC.Runtime.OSSupport | Runtime Visual C++ pour UWP | 15.6.27
 Microsoft.Net.Component.4.5.1.TargetingPack | Pack de ciblage .NET Framework 4.5.1 | 15.6.27406.0 | Obligatoire
 Microsoft.Net.Component.4.5.2.TargetingPack | Pack de ciblage .NET Framework 4.5.2 | 15.6.27406.0 | Obligatoire
 Microsoft.Net.Component.4.5.TargetingPack | Pack de ciblage .NET Framework 4.5 | 15.6.27406.0 | Obligatoire
-Microsoft.Net.Component.4.6.1.SDK | SDK .NET Framework 4.6.1 | 15.6.27406.0 | Obligatoire
+Microsoft.Net.Component.4.6.1.SDK | Kit de développement logiciel (SDK) .NET Framework 4.6.1 | 15.6.27406.0 | Obligatoire
 Microsoft.Net.Component.4.6.1.TargetingPack | Pack de ciblage .NET Framework 4.6.1 | 15.6.27406.0 | Obligatoire
 Microsoft.Net.Component.4.6.TargetingPack | Pack de ciblage .NET Framework 4.6 | 15.6.27406.0 | Obligatoire
 Microsoft.Net.Component.4.TargetingPack | Pack de ciblage .NET Framework 4 | 15.6.27406.0 | Obligatoire
@@ -80,7 +80,7 @@ Microsoft.VisualStudio.Component.VC.CLI.Support | Prise en charge de C++/CLI | 1
 Microsoft.VisualStudio.Component.VC.Tools.ARM | Compilateurs et bibliothèques Visual C++ pour ARM | 15.8.27825.0 | Obligatoire
 Microsoft.VisualStudio.Component.VC.Tools.ARM64 | Compilateurs et bibliothèques Visual C++ pour ARM64 | 15.9.28230.55 | Obligatoire
 Microsoft.VisualStudio.Component.VisualStudioData | Sources de données et références de service | 15.6.27406.0 | Obligatoire
-Microsoft.VisualStudio.Component.Windows10SDK.14393 | SDK Windows 10 (10.0.14393.0) | 15.6.27406.0 | Obligatoire
+Microsoft.VisualStudio.Component.Windows10SDK.14393 | Kit de développement logiciel (SDK) Windows 10 (10.0.14393.0) | 15.6.27406.0 | Obligatoire
 Microsoft.VisualStudio.Component.Windows10SDK.17134 | SDK Windows 10 (10.0.17134.0) | 15.8.27924.0 | Obligatoire
 
 ## <a name="unaffiliated-components"></a>Composants non affiliés

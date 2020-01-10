@@ -5,17 +5,17 @@ ms.date: 07/31/2019
 ms.topic: conceptual
 f1_keywords:
 - Blend.Start.Dev12
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3955d494d4c04e85eba0541c0cf09749e8ab4de
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f2b9f38d83befcf49ecd3de8da3a2cd26ff3ab46
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649717"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593007"
 ---
 # <a name="blend-for-visual-studio-overview"></a>Vue d’ensemble de Blend for Visual Studio
 

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - load tests, using graphs
 - load test results, graphs
 ms.assetid: 4a919cd8-541c-40ee-be3b-352fabc56140
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4efedd7fc7672331f04440f09d49b9339d90bdb2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: dac639b8513e8ef675c6246476791b9351241130
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665378"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591266"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>Analyser les résultats des tests de charge dans la vue Graphiques de l’analyseur de test de charge
 
@@ -65,21 +65,21 @@ La légende contient les colonnes suivantes :
 |Counter|Nom du compteur|
 |-|-|
 |Instance|Nom de l'instance de compteur.|
-|Category|Nom de la catégorie de compteur.|
+|Catégorie|Nom de la catégorie de compteur.|
 |Ordinateur|Le nom de l'ordinateur sur lequel les données du compteur sont collectées.|
 |Color|Couleur de la ligne sur le graphique.|
 |Range|Indique le nombre représenté par 100 sur le graphique de ce compteur. Par exemple, pour une plage dont la limite supérieure est 10 000, l'étiquette 100 au sommet du graphique, représente 10 000.|
 |Min|Indique la valeur minimale du compteur en millisecondes.|
 |Max|Indique la valeur maximale du compteur en millisecondes.|
 |Moy|Indique la valeur moyenne du compteur en millisecondes.|
-|Last|Affiche la valeur du compteur pendant le dernier intervalle d'échantillonnage en millisecondes.|
+|Dernière|Affiche la valeur du compteur pendant le dernier intervalle d'échantillonnage en millisecondes.|
 
 ## <a name="tasks"></a>Tâches
 
 |Tâches|Rubriques associées|
 |-|-|
 |**Personnaliser les graphiques à l’aide de la légende :** la légende de la vue Graphiques affiche les informations de chaque compteur de performances associé à un graphique. Vous pouvez utiliser la légende pour supprimer les compteurs de performance, mettre en surbrillance les compteurs de performance dans le graphique et personnaliser les options de traçage.|-   [Utilisation de la légende de la vue Graphiques pour analyser des tests de charge](../test/use-the-graphs-view-legend-to-analyze-load-tests.md)|
-|**Afficher des compteurs sur des graphiques :** vous pouvez ajouter différents genres de données au graphique de résultats des tests de charge en y plaçant des compteurs.|-   [Guide pratique : Ajouter et supprimer des compteurs sur des graphiques](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
+|**Afficher des compteurs sur des graphiques :** vous pouvez ajouter différents genres de données au graphique de résultats des tests de charge en y plaçant des compteurs.|-   [Guide pratique pour ajouter et supprimer des compteurs sur des graphiques](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
 |**Faire un zoom sur des graphiques :** à la fin d’un test de charge, vous pouvez utiliser les barres de zoom pour effectuer un zoom avant et accéder à une zone spécifique du graphique. En zoomant en avant, vous pouvez examiner en détail les données générées durant une série de tests de charge.|-   [Guide pratique pour faire un zoom avant sur une région du graphique](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)|
 |**Afficher en mosaïque des graphiques :** vous pouvez réorganiser les graphiques de résultats des tests de charge selon plusieurs modèles. Vous pouvez disposer en mosaïque jusqu'à quatre graphiques.||
 |**Créer des graphiques personnalisés :** vous pouvez concevoir des graphiques qui affichent des informations spécifiques sur les résultats des tests de charge. Vous concevez un graphique personnalisé en spécifiant les compteurs de test de charge que le graphique affichera.|-   [Guide pratique pour créer des graphiques personnalisés](../test/how-to-create-custom-graphs-in-load-test-results.md)|

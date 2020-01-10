@@ -3,8 +3,8 @@ title: ID de charge de travail et de composant Visual Studio
 titleSuffix: ''
 description: Utilisez les ID de composant et de charge de travail pour installer Visual Studio à l’aide d’une ligne de commande ou pour spécifier comme dépendance dans un manifeste VSIX
 keywords: ''
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.date: 09/23/2019
 ms.topic: reference
@@ -16,12 +16,12 @@ ms.custom: seodec18
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 51d5c25b9e8a3125a0f1b09a4fbfd5f6d6139084
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: a5da7186bcc67fb61e80fdd691142423b879f312
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211380"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588432"
 ---
 # <a name="visual-studio-workload-and-component-ids"></a>ID de charge de travail et de composant Visual Studio
 
@@ -44,7 +44,7 @@ Cliquez sur les noms d’éditions dans le tableau suivant pour voir les ID de c
 | [Visual&nbsp;Studio Test&nbsp;Professional&nbsp;2017](workload-component-id-vs-test-professional.md?vs-2017) | Microsoft.VisualStudio.Product.TestProfessional | Visual Studio Test Professional 2017 |
 | [Visual&nbsp;Studio Feedback&nbsp;Client&nbsp;2017](workload-component-id-vs-feedback-client.md?vs-2017) | Microsoft.VisualStudio.Product.FeedbackClient | Outil de Feedback de Visual Studio 2017 |
 
-Pour plus d’informations sur l’utilisation de ces listes, consultez la page [Utiliser les paramètres de ligne de commande pour installer Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md?view=vs-2017) et la page [Guide pratique pour migrer les projets d’extensibilité vers Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md?view=vs-2017).
+Pour plus d’informations sur l’utilisation de ces listes, consultez les pages [Utiliser les paramètres de ligne de commande pour installer Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md?view=vs-2017) et [Guide pratique pour migrer des projets d’extensibilité vers Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md?view=vs-2017).
 
 ::: moniker-end
 
@@ -62,7 +62,7 @@ Pour plus d’informations sur l’utilisation de ces listes, consultez la page 
 | [Visual&nbsp;Studio Test&nbsp;Agent&nbsp;2019](workload-component-id-vs-test-agent.md?vs-2019)  | Microsoft.VisualStudio.Product.TestAgent | Prend en charge l’exécution de tests automatisés et de tests de charge à distance |
 | [Visual&nbsp;Studio Load&nbsp;Test&nbsp;Controller 2019](workload-component-id-vs-test-controller.md?vs-2019) | Microsoft.VisualStudio.Product.TestController | Distribuer des tests automatisés à plusieurs machines |
 
-Pour plus d’informations sur l’utilisation de ces listes, consultez la page [Utiliser les paramètres de ligne de commande pour installer Visual Studio](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019) et la page [Guide pratique pour migrer les projets d’extensibilité vers Visual Studio](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md?view=vs-2019).
+Pour plus d’informations sur l’utilisation de ces listes, consultez la page [utiliser les paramètres de ligne de commande pour installer Visual Studio](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019) et la page [Comment : migrer des projets d’extensibilité vers Visual Studio](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md?view=vs-2019) .
 
 > [!NOTE]
 > Pour obtenir la liste des ID de charge de travail et de composant de la version précédente, voir [ID de charge de travail et de composant de Visual Studio 2017](workload-and-component-ids.md?view=vs-2017).

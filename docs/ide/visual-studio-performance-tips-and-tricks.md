@@ -2,17 +2,17 @@
 title: Conseils pour améliorer les performances
 ms.date: 08/14/2018
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccf785cec859290cac0ebcf5c9685861bd2887e4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 950803d46d7b870804c2c8914f3c85b0b89e5732
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647147"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590668"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Conseils et astuces sur les performances dans Visual Studio
 
@@ -107,13 +107,13 @@ Pour plus d’informations sur les performances de .NET Compiler Platform (« Ro
 
    ::: moniker range="vs-2017"
 
-    Pour désactiver des extensions, accédez à **Outils** > **Extensions et mises à jour** et désactivez une extension particulière.
+    Pour désactiver des extensions, accédez à **outils** > **extensions et mises à jour**, puis désactivez une extension particulière.
 
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-    Pour désactiver des extensions, accédez à **Outils** > **Gérer les extensions** et désactivez une extension particulière.
+    Pour désactiver des extensions, accédez à **extensions** > **gérer les extensions**et désactivez une extension particulière.
 
    ::: moniker-end
 

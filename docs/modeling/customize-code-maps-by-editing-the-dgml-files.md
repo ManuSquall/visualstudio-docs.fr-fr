@@ -15,17 +15,17 @@ helpviewer_keywords:
 - dependency graphs, customizing
 - graph documents, grouping nodes
 - dependency graphs, assigning categories and properties
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ace7da233f135aa795d73d43a5e10e411c0d646f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2b79fd73713de535c11062fd6396abde6b1a0131
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748465"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590512"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Personnaliser des cartes de code en modifiant les fichiers DGML
 
@@ -47,7 +47,7 @@ Modifiez le fichier .dgml de la carte de code dans un éditeur de texte ou un é
 
     Pour ajouter un nouveau groupe, recherchez la section `<Nodes>`. Ajoutez un nouvel élément `<Node/>`.
 
-3. Dans l’élément `<Node/>`, ajoutez un attribut `Group` pour spécifier si le groupe apparaît développé ou réduit. Exemple :
+3. Dans l’élément `<Node/>`, ajoutez un attribut `Group` pour spécifier si le groupe apparaît développé ou réduit. Par exemple :
 
    ```xml
    <Nodes>
@@ -64,7 +64,7 @@ Modifiez le fichier .dgml de la carte de code dans un éditeur de texte ou un é
 
    - un attribut `Category` qui spécifie une relation `Contains` entre l'élément de code de groupe et son élément de code enfant.
 
-     Exemple :
+     Par exemple :
 
    ```xml
    <Links>
@@ -96,7 +96,7 @@ Modifiez le fichier .dgml de la carte de code dans un éditeur de texte ou un é
     Stroke="StrokeValue"
     ```
 
-     Exemple :
+     Par exemple :
 
     ```xml
     <DirectedGraph Background="Green" xmlns="http://schemas.microsoft.com/vs/2009/dgml" >
@@ -201,7 +201,7 @@ Modifiez le fichier .dgml de la carte de code dans un éditeur de texte ou un é
     Shape="ShapeFilePathLocation"
     ```
 
-     Exemple :
+     Par exemple :
 
     ```xml
     <Nodes>
@@ -236,7 +236,7 @@ Modifiez le fichier .dgml de la carte de code dans un éditeur de texte ou un é
     StrokeDashArray="StrokeArrayValues"
     ```
 
-     Exemple :
+     Par exemple :
 
     ```xml
     <Links>
@@ -266,7 +266,7 @@ Modifiez le fichier .dgml de la carte de code dans un éditeur de texte ou un é
 
 2. Dans l'élément `<Style/>`, ajoutez un élément `<Condition/>` contenant un attribut `Expression` pour spécifier une expression qui retourne une valeur booléenne.
 
-    Exemple :
+    Par exemple :
 
    ```xml
    <Condition Expression="MyCategory"/>
@@ -286,35 +286,35 @@ Modifiez le fichier .dgml de la carte de code dans un éditeur de texte ou un é
 
     Cette expression utilise la syntaxe de notation BNF (Backus-Naur) suivante :
 
-    \<Expression >:: = \<BinaryExpression > &#124; \<UnaryExpression > &#124; « ("\<Expression > »)" &#124; \<MemberBindings &#124; &#124; > \<Literal > 1Number >
+    \<expression >:: = \<BinaryExpression > &#124; \<UnaryExpression > &#124; "("\<expression > ")" &#124; \<MemberBindings > &#124; \<littéral &#124; > \<
 
-    \<BinaryExpression >:: = \<Expression > \<Operator > \<Expression >
+    \<BinaryExpression >:: = \<expression > \<opérateur > \<
 
-    \<UnaryExpression >:: = " !"  \<Expression > &#124; « + » \<Expression > &#124; « - » \<Expression >
+    \<UnaryExpression >:: = " !" \<expression > &#124; "+" \<expression > &#124; "-" \<expression >
 
-    \<Operator >:: = "<" &#124; "\< =" &#124; "=" &#124; "> =" &#124; ">" &#124; " ! =" &#124; "ou" &#124; "et" &#124; "+" &#124; "*" &#124; "/" &#124; "-"
+    \<Operator> ::= "<" &#124; "\<=" &#124; "=" &#124; ">=" &#124; ">" &#124; "!=" &#124; "or" &#124; "and" &#124; "+" &#124; "*" &#124; "/" &#124; "-"
 
-    \<MemberBindings >:: = \<MemberBindings > &#124; \<MemberBinding «».  \<MemberBinding >
+    \<MemberBindings >:: = \<MemberBindings > &#124; \<MemberBinding > « . » \<MemberBinding >
 
-    \<MemberBinding >:: = \<MethodCall > &#124; \<PropertyGet >
+    \<MemberBinding >:: = \<MethodCall > &#124; \<PropertyGet (>
 
-    \<MethodCall >:: = \<Identifier > "(" \<MethodArgs > ")"
+    \<MethodCall >:: = \<identificateur > "(" \<MethodArgs > ")"
 
-    \<PropertyGet >:: = identificateur
+    \<PropertyGet (>:: = identificateur
 
-    \<MethodArgs >:: = \<Expression > &#124; \<Expression >», « &#124; \<MethodArgs > \<empty >
+    \<MethodArgs >:: = \<expression > &#124; \<expression > "," \<MethodArgs &#124; > \<vide >
 
-    \<Identifier >:: = [^. ]*
+    Identificateur de \<>:: = [^. ]*
 
-    \<Literal >:: = littéral de chaîne entre guillemets simples ou doubles
+    \<littéral >:: = littéral de chaîne entre guillemets simples ou doubles
 
-    \<Number >:: = chaîne de chiffres avec une virgule décimale facultative
+    \<nombre >:: = chaîne de chiffres avec une virgule décimale facultative
 
     Vous pouvez spécifier plusieurs éléments `<Condition/>`, qui doivent tous avoir la valeur true pour appliquer le style.
 
 3. Sur la ligne suivante, après l'élément `<Condition/>`, ajoutez un ou plusieurs éléments `<Setter/>` pour spécifier un attribut `Property` et un attribut `Value` fixe ou un attribut `Expression` calculé à appliquer à la carte, aux éléments de code ou aux liens qui remplissent la condition.
 
-    Exemple :
+    Par exemple :
 
    ```xml
    <Setter Property="BackGround" Value="Green"/>
@@ -442,7 +442,7 @@ Modifiez le fichier .dgml de la carte de code dans un éditeur de texte ou un é
 
 1. Dans un éditeur XML ou un éditeur de texte, ouvrez le fichier .dgml.
 
-2. Recherchez l'élément `<Node/>` pour cet élément de code. Spécifiez le nom de la propriété et sa valeur. Exemple :
+2. Recherchez l'élément `<Node/>` pour cet élément de code. Spécifiez le nom de la propriété et sa valeur. Par exemple :
 
     ```xml
     <Nodes>
@@ -464,7 +464,7 @@ Modifiez le fichier .dgml de la carte de code dans un éditeur de texte ou un é
 
 2. Recherchez l'élément `<Link/>` qui contient à la fois les noms de l'élément de code source et de l'élément de code cible.
 
-3. Dans l'élément `<Node/>`, spécifiez le nom de la propriété et sa valeur. Exemple :
+3. Dans l'élément `<Node/>`, spécifiez le nom de la propriété et sa valeur. Par exemple :
 
     ```xml
     <Links>
@@ -489,7 +489,7 @@ Modifiez le fichier .dgml de la carte de code dans un éditeur de texte ou un é
 
 - Recherchez l'élément `<Node/>` pour l'élément de code souhaité.
 
-- Dans l'élément `<Node/>`, ajoutez un attribut `Category` pour spécifier le nom de la catégorie. Exemple :
+- Dans l'élément `<Node/>`, ajoutez un attribut `Category` pour spécifier le nom de la catégorie. Par exemple :
 
     ```xml
     <Nodes>
@@ -511,7 +511,7 @@ Modifiez le fichier .dgml de la carte de code dans un éditeur de texte ou un é
 
 2. Recherchez l'élément `<Link/>` qui contient à la fois les noms de l'élément de code source et de l'élément de code cible.
 
-3. Dans l'élément `<Link/>`, ajoutez un attribut `Category` pour spécifier le nom de la catégorie. Exemple :
+3. Dans l'élément `<Link/>`, ajoutez un attribut `Category` pour spécifier le nom de la catégorie. Par exemple :
 
     ```xml
     <Links>
@@ -533,7 +533,7 @@ Modifiez le fichier .dgml de la carte de code dans un éditeur de texte ou un é
 
 2. Ajoutez d'abord un élément `<Category/>` pour la catégorie parente, puis l'attribut `BasedOn` à l'élément `<Category/>` de la catégorie enfant.
 
-     Exemple :
+     Par exemple :
 
     ```xml
     <Nodes>
@@ -582,7 +582,7 @@ Modifiez le fichier .dgml de la carte de code dans un éditeur de texte ou un é
      > [!NOTE]
      > Il ne peut exister qu'un seul attribut `Reference` par élément.
 
-     Exemple :
+     Par exemple :
 
    ```xml
    <Nodes>
@@ -607,7 +607,7 @@ Modifiez le fichier .dgml de la carte de code dans un éditeur de texte ou un é
 
       4. Utilisez l’attribut `Label` pour spécifier le texte à afficher dans le menu contextuel **atteindre la référence** de l’élément de code.
 
-      Exemple :
+      Par exemple :
 
    ```xml
    <Nodes>

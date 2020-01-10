@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, accessing models
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61f69163e4458c62b9f114eca72c954a2317076b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b9ac9fb023797db98f3b83aa4da7b92e71f0e71e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652377"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590616"
 ---
 # <a name="access-models-from-text-templates"></a>Accéder à des modèles à partir de modèles de texte
 
@@ -138,9 +138,9 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 ## <a name="loading-models-dynamically"></a>Chargement dynamique des modèles
  Si vous souhaitez déterminer au moment de l’exécution les modèles à charger, vous pouvez charger un fichier de modèle dynamiquement dans le code de votre programme, au lieu d’utiliser la directive spécifique à DSL.
 
- Toutefois, l’une des fonctions de la directive DSL spécifique consiste à importer l’espace de noms DSL, afin que le code du modèle puisse utiliser les classes de domaine définies dans ce DSL. Étant donné que vous n’utilisez pas la directive, vous devez ajouter des directives de > **> \<assembly** et **\<import** pour tous les modèles que vous pouvez charger. C’est facile si les différents modèles que vous pouvez charger sont toutes des instances du même DSL.
+ Toutefois, l’une des fonctions de la directive DSL spécifique consiste à importer l’espace de noms DSL, afin que le code du modèle puisse utiliser les classes de domaine définies dans ce DSL. Étant donné que vous n’utilisez pas la directive, vous devez ajouter **\<assembly >** et\<directives d' **> d’importation** pour tous les modèles que vous pouvez charger. C’est facile si les différents modèles que vous pouvez charger sont toutes des instances du même DSL.
 
- Pour charger le fichier, la méthode la plus efficace consiste à utiliser Visual Studio ModelBus. Dans un scénario classique, votre modèle de texte utilisera une directive DSL spécifique pour charger le premier modèle de la manière habituelle. Ce modèle contient des références ModelBus à un autre modèle. Vous pouvez utiliser ModelBus pour ouvrir le modèle référencé et accéder à un élément particulier. Pour plus d’informations, consultez [utilisation de Visual Studio Modelbus dans un modèle de texte](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
+ Pour charger le fichier, la méthode la plus efficace consiste à utiliser Visual Studio ModelBus. Dans un scénario classique, votre modèle de texte utilisera une directive DSL spécifique pour charger le premier modèle de la manière habituelle. Ce modèle contient des références ModelBus à un autre modèle. Vous pouvez utiliser ModelBus pour ouvrir le modèle référencé et accéder à un élément particulier. Pour plus d’informations, consultez [à l’aide de Visual Studio ModelBus dans un modèle de texte](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
 
  Dans un scénario moins habituel, vous souhaiterez peut-être ouvrir un fichier de modèle pour lequel vous disposez uniquement d’un nom de fichier et qui ne figure peut-être pas dans le projet Visual Studio actuel. Dans ce cas, vous pouvez ouvrir le fichier à l’aide de la technique décrite dans [Comment : ouvrir un modèle à partir d’un fichier dans le code de programme](../modeling/how-to-open-a-model-from-file-in-program-code.md).
 

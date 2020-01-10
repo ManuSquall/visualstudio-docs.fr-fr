@@ -1,5 +1,5 @@
 ---
-title: Utiliser des cartes du code pour déboguer vos applications
+title: Utiliser des cartes de code pour déboguer vos applications
 ms.date: 09/28/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,19 +11,19 @@ helpviewer_keywords:
 - mapping code relationships
 - code maps
 - mapping relationships in code
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d0b3c65c0a7e5cb08869a6d756ce0c443fa3bf2e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e01857878f927c619529d3bbfc63728f84f0b81d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748273"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594108"
 ---
-# <a name="use-code-maps-to-debug-your-applications"></a>Utiliser des cartes du code pour déboguer vos applications
+# <a name="use-code-maps-to-debug-your-applications"></a>Utiliser des cartes de code pour déboguer vos applications
 
 Les cartes de code peuvent vous éviter de vous perdre dans les bases de code volumineuses, dans du code inconnu ou dans du code hérité. Par exemple, lorsque vous effectuez un débogage, vous devrez peut-être examiner le code dans de nombreux fichiers et projets. Utilisez des cartes de code pour naviguer parmi les éléments de code et comprendre les relations entre eux. Ainsi, vous n'avez pas à effectuer le suivi de ce code dans votre tête, ni à dessiner un diagramme distinct. Si vous devez interrompre votre travail de codage, les cartes de code vous aident à vous rafraîchir la mémoire concernant le code sur lequel vous travaillez.
 
@@ -31,7 +31,7 @@ Les cartes de code peuvent vous éviter de vous perdre dans les bases de code vo
 
 **Une flèche verte indique l’emplacement de votre curseur dans l’éditeur**
 
-Pour plus d’informations sur les commandes et les actions que vous pouvez utiliser lorsque vous travaillez avec des cartes de code, consultez [Parcourir et réorganiser les cartes de code](../modeling/browse-and-rearrange-code-maps.md).
+Pour des informations sur les commandes et les actions que vous pouvez utiliser lorsque vous travaillez avec des cartes de code, consultez [Parcourir et réorganiser des cartes de code](../modeling/browse-and-rearrange-code-maps.md).
 
 > [!NOTE]
 > Pour créer et modifier des cartes de code, vous avez besoin de l’édition Visual Studio Enterprise. Dans les éditions Community et Professional de Visual Studio, vous pouvez ouvrir des diagrammes qui ont été générés dans l’édition Enterprise, mais vous ne pouvez pas les modifier.

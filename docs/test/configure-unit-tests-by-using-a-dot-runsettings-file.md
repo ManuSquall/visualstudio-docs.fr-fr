@@ -2,17 +2,17 @@
 title: Configurer des tests unitaires avec un fichier .runsettings
 ms.date: 10/03/2019
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: aba7ea1c26d38db2f845b2e743aae7a3d90d4d53
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+author: mikejo5000
+ms.openlocfilehash: 3f6690c2443b6c084c3e876cbb1a4340247613e0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74771488"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593250"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurer des tests unitaires à l’aide d’un fichier *.runsettings*
 
@@ -28,7 +28,7 @@ Les fichiers de paramètres d’exécution permettent de configurer des tests qu
 
 ::: moniker range="vs-2017"
 
-Pour spécifier un fichier de paramètres d’exécution dans l’IDE, sélectionnez **Test** > **Paramètres de test** > **Sélectionner le fichier de paramètres des tests**, puis sélectionnez le fichier *.runsettings*.
+Pour spécifier un fichier de paramètres d’exécution dans l’IDE, sélectionnez **tester** les **paramètres de test** > > **Sélectionnez fichier de paramètres de test**, puis sélectionnez le fichier *. RunSettings* .
 
 ![Option de menu Sélectionner le fichier de paramètres des tests dans Visual Studio 2017](media/select-test-settings-file.png)
 
@@ -95,13 +95,13 @@ Pour exécuter des tests depuis la ligne de commande, utilisez *vstest.console.e
 
    ::: moniker range="vs-2017"
 
-   Dans le menu **Démarrer** de Windows, choisissez **Visual Studio 2017** > **Invite de commandes développeur pour Visual Studio 2017**.
+   Dans le menu **Démarrer** de Windows, choisissez **Visual Studio 2017** > **invite de commandes développeur pour vs 2017**.
 
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-   Dans le menu **Démarrer** de Windows, choisissez **Visual Studio 2019** > **Invite de commandes développeur pour Visual Studio 2019**.
+   Dans le menu **Démarrer** de Windows, choisissez **Visual Studio 2019** > **invite de commandes développeur pour vs 2019**.
 
    ::: moniker-end
 

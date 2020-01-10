@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Class Designer [Visual Studio], structures
 ms.assetid: bad18ab6-d956-47a6-a413-811cc26db5f5
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 65fb4738b3124daf48b501c6db416d3803da32ec
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2aa8014835df2b5b2bd3dc68e2aaf0b079e001e8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748919"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590682"
 ---
 # <a name="c-structures-in-class-designer"></a>C++structures dans Concepteur de classes
 
@@ -34,7 +34,7 @@ Pour plus d’informations sur l’utilisation du type `struct`, consultez [stru
 
 Une forme de structure C++ dans un diagramme de classes apparaît. Elle fonctionne comme une forme de classe, mais l’étiquette indique **Struct** et ses angles sont carrés, et non pas arrondis.
 
-|Élément de code|Vue Concepteur de classes|
+|élément de code|Vue Concepteur de classes|
 |------------------| - |
 |`struct StructureName {};`|**StructureName**<br /><br /> Struct|
 

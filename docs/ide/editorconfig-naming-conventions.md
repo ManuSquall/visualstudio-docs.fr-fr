@@ -5,21 +5,21 @@ ms.topic: reference
 helpviewer_keywords:
 - naming conventions [EditorConfig]
 - EditorConfig naming conventions
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ff6c9885bd01a94cc36046faf71067e1fe9c17b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b5c4115f4d63456e105fb4a6770fd1650938770d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650908"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588601"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Conventions de nommage .NET pour EditorConfig
 
-Les conventions de nommage concernent le nommage d’éléments de code tels que les classes, les propriétés et les méthodes. Par exemple, vous pouvez spécifier que les membres publics doivent être en majuscules ou que les méthodes asynchrones doivent se terminer par « Async ». Vous pouvez appliquer ces règles en les spécifiant dans un [fichier .editorconfig](../ide/create-portable-custom-editor-options.md). Les violations des règles de nommage apparaissent dans la **Liste d’erreurs** ou sous forme de suggestion sous le nom, selon la gravité choisie pour vos règles. Il n’est pas nécessaire de générer le projet pour afficher les violations.
+Les conventions de nommage concernent le nommage d’éléments de code tels que les classes, les propriétés et les méthodes. Par exemple, vous pouvez spécifier que les membres publics doivent être en majuscules ou que les champs privés doivent commencer par `_`. Vous pouvez appliquer ces règles en les spécifiant dans un [fichier .editorconfig](../ide/create-portable-custom-editor-options.md). Les violations des règles de nommage apparaissent dans la **Liste d’erreurs** ou sous forme de suggestion sous le nom, selon la gravité choisie pour vos règles. Il n’est pas nécessaire de générer le projet pour afficher les violations.
 
 Pour chaque convention de nommage, vous devez spécifier les symboles auxquels elle s’applique, un style de nommage et un niveau de gravité pour l’application de la convention, en utilisant les propriétés décrites ci-dessous. L’ordre des propriétés n’est pas important.
 
@@ -42,19 +42,19 @@ Pour décrire le type de symboles auquel appliquer la règle de nommage, spécif
 La liste suivante répertorie les valeurs autorisées, et vous pouvez spécifier plusieurs valeurs en les séparant par une virgule.
 
 - \* (Utilisez cette valeur pour spécifier tous les symboles.)
-- namespace
+- Espace de noms
 - classe
 - struct
-- interface
+- Interface
 - enum
 - Propriété
-- méthode
+- method
 - champ
 - événement
 - délégué
-- paramètre
+- parameter
 - type_parameter
-- locaux
+- locales
 - local_function
 
 ### <a name="accessibility-levels-of-symbols"></a>Niveaux d’accessibilité des symboles
@@ -69,10 +69,10 @@ La liste suivante répertorie les valeurs autorisées, et vous pouvez spécifier
 - public
 - internal ou friend
 - private
-- protected
+- ordinateur
 - protected\_internal ou protected_friend
 - private\_protected
-- locaux
+- locales
 
    Le niveau d’accessibilité `local` s’applique aux symboles définis dans une méthode. Il est utile pour définir des conventions d’affectation de noms pour les symboles dont l’accessibilité ne peut être spécifiée dans le code. Par exemple, si vous indiquez `applicable_accessibilities = local` sur une convention d’affectation de noms pour les constantes (`required_modifiers = const`), la règle s’applique uniquement aux constantes définies au sein d’une méthode, et non dans un type.
 

@@ -3,17 +3,17 @@ title: 'Exemple de fichier XSD : schéma de bon de commande'
 ms.date: 11/04/2016
 ms.topic: sample
 ms.assetid: f92b63b5-ec61-43b5-ae1e-63432a7a7e30
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a81cae6bc91e480fb619afd647e8285b6efc410
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d841b75b58dc977b5141dce0b8c7275e4a3ced8a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72601811"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592566"
 ---
 # <a name="sample-xsd-file-purchase-order-schema"></a>Exemple de fichier XSD : schéma de bon de commande
 
@@ -88,4 +88,4 @@ Le fichier XSD suivant est utilisé dans différents exemples de la documentatio
 ```
 
 > [!NOTE]
-> Les noms de sociétés, d'organisations, de produits, de domaines, d'adresses de messagerie, de logos, de personnes, de lieux et d'événements mentionnés dans les exemples sont fictifs. Toute ressemblance avec des noms, des logos, des personnes, des lieux ou des événements réels est purement fortuite et involontaire.
+> Les sociétés, organisations, produits, noms de domaine, adresses de messagerie, logos, personnes, lieux et événements mentionnés dans les exemples sont fictifs. Toute ressemblance avec des noms, des logos, des personnes, des lieux ou des événements réels est purement fortuite et involontaire.

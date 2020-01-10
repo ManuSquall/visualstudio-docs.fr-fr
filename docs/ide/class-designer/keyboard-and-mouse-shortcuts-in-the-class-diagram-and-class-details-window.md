@@ -8,17 +8,17 @@ helpviewer_keywords:
 - class diagrams, keyboard shortcuts
 - class diagrams, mouse shortcuts
 ms.assetid: c12d8dac-9902-4fde-b721-2a8116da53b7
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a755de4df0cd7402debbc964d2f3f9c54802eb85
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 6df4932a1043c984509632951ba67864fefe31ce
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188967"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590759"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window"></a>Raccourcis clavier et souris dans le diagramme de classes et dans la fenêtre Détails de classe
 
@@ -30,13 +30,13 @@ Les actions de la souris suivantes sont prises en charge dans les diagrammes de 
 
 |Combinaison avec la souris|Contexte|Description|
 | - |-------------|-----------------|
-|Double-clic|éléments Shape|Ouvre l'éditeur de code.|
-|Double-clic|Connecteur d'interface lollipop|Développe/réduit l'interface lollipop.|
-|Double-clic|Étiquette du connecteur d'interface lollipop|Appelle la commande **Afficher l’interface**.|
+|Double-cliquez sur|éléments Shape|Ouvre l'éditeur de code.|
+|Double-cliquez sur|Connecteur d'interface lollipop|Développe/réduit l'interface lollipop.|
+|Double-cliquez sur|Étiquette du connecteur d'interface lollipop|Appelle la commande **Afficher l’interface**.|
 |Roulette de la souris|Diagramme de classes|Fait défiler verticalement.|
 |**Maj**+roulette de la souris|Diagramme de classes|Fait défiler horizontalement.|
-|**Ctrl**+roulette de la souris|Diagramme de classes|Effectue un zoom.|
-|**Ctrl**+**Maj**+clic|Diagramme de classes|Effectue un zoom.|
+|**Ctrl**+roulette de la souris|Diagramme de classes|Zoom.|
+|**Ctrl**+**Maj**+clic|Diagramme de classes|Zoom.|
 
 ## <a name="use-the-mouse-in-the-class-details-window"></a>Utiliser la souris dans la fenêtre Détails de classe
 
@@ -56,7 +56,7 @@ Les actions de la souris suivantes sont prises en charge dans les diagrammes de 
 
 Les actions du clavier suivantes sont prises en charge dans les diagrammes de classes :
 
-|Touche|Contexte|Description|
+|Clé|Contexte|Description|
 |---------|-------------|-----------------|
 |**Touches de direction**|À l'intérieur des formes de type|Navigation en arborescence dans le contenu de la forme (habillage de la forme pris en charge). Les touches droite et gauche permettent de développer et réduire l'élément actuel s'il peut être développé ou, sinon, de naviguer vers l'élément parent (voir la section sur la navigation en arborescence pour plus de détails sur le comportement).|
 |**Touches de direction**|Formes de niveau supérieur|Permettent de déplacer les formes dans le diagramme.|
@@ -89,7 +89,7 @@ Utilisez les touches suivantes pour naviguer dans la fenêtre **Détails de clas
 
 |||
 |-|-|
-|Touche|Résultat|
+|Clé|Résultat|
 |**,** (virgule)|Si le curseur se trouve dans une ligne de paramètre, la saisie d'une virgule déplace le curseur dans le champ Nom du paramètre suivant. S’il se trouve dans la dernière ligne de paramètre d’une méthode, le curseur est placé dans le champ \<ajouter un paramètre>, que vous pouvez utiliser pour créer un paramètre.<br /><br /> Si le curseur se trouve ailleurs dans la fenêtre **Détails de classe**, la saisie d’une virgule ajoute simplement une virgule dans le champ actuel.|
 |**;** (point-virgule) ou **)** (parenthèse fermante)|Déplace le curseur dans le champ Nom de la ligne de membre suivante dans la grille de la fenêtre **Détails de classe**.|
 |**Tab**|Déplace le curseur dans le champ suivant (de gauche à droite, puis de haut en bas). Si le curseur quitte un champ dans lequel vous avez tapé du texte, **Détails de classe** traite ce texte et le stocke, sous réserve qu’aucune erreur n’ait été détectée.<br /><br /> Si le curseur se trouve dans un champ vide comme \<ajouter un paramètre>, la touche Tab le place dans le premier champ de la ligne suivante.|

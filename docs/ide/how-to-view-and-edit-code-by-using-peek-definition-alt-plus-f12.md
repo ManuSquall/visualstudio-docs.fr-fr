@@ -2,17 +2,17 @@
 title: Utilisation de l’Aperçu de définition
 ms.date: 01/10/2018
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39d4d9dd4fb7364ddadd5e7568a2f34255c393ae
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9eac5c8c47c208f39f74f542fbbff89c8340a93f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656529"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591344"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Guide pratique pour afficher et modifier le code avec l’Aperçu de définition (ALT+F12)
 
@@ -85,5 +85,5 @@ Vous pouvez utiliser les raccourcis clavier suivants avec la fenêtre **Aperçu 
 ## <a name="see-also"></a>Voir aussi
 
 - [Naviguer dans le code](../ide/navigating-code.md)
-- [Atteindre la définition et Aperçu de la définition](../ide/go-to-and-peek-definition.md)
+- [Atteindre la définition et l’aperçu de définition](../ide/go-to-and-peek-definition.md)
 - [Fonctionnalités de productivité de Visual Studio](../ide/productivity-features.md)

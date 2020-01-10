@@ -7,17 +7,17 @@ helpviewer_keywords:
 - custom dictionary, code analysis
 - dictionary, code analysis
 ms.assetid: 667e3b4e-beff-48be-b3d1-376e1716a895
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26629ed099eea9a1d0c73a2eaa1105525d05dcf3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c3fbcbbfd52e4715dc6ee063ae0bae905eb3e65a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649455"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587522"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>Comment : personnaliser le dictionnaire d’analyse du code
 
@@ -241,7 +241,7 @@ Les termes du nœud Dictionary/Words/DiscreteExceptions sont appliqués aux règ
 
 ### <a name="BKMK_DictionaryAcronymsCasingExceptionsAcronym"></a>Dictionnaire/Acronyms/CasingExceptions/acronyme
 
-Pour inclure un acronyme dans la liste des termes que l’analyse du code identifie comme correctement orthographiés et pour indiquer comment l’acronyme est vérifié par les règles de casse des mots composés, ajoutez le terme comme texte interne d’un dictionnaire/Acronyms/CasingExceptions/ Acronyme, élément. L’acronyme dans l’élément Dictionary/acronymes/CasingExceptions/acronyme respecte la casse.
+Pour inclure un acronyme dans la liste des termes que l’analyse du code identifie comme correctement orthographiés et pour indiquer comment l’acronyme est vérifié par les règles de casse des mots composés, ajoutez le terme comme texte interne d’un élément Dictionary/acronymes/CasingExceptions/acronyme. L’acronyme dans l’élément Dictionary/acronymes/CasingExceptions/acronyme respecte la casse.
 
 **Exemple**
 

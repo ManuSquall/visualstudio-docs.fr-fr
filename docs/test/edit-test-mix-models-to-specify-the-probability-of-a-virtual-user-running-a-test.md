@@ -6,15 +6,15 @@ helpviewer_keywords:
 - load tests, scenarios
 - load tests, virtual users
 ms.assetid: e3b7d952-9012-400a-8131-3444390a6066
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d9c678f1ec5cc984bff8e7f77d3ed95c9d579bfb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 62c817a2df6c56f70ab2217292feeb545cf66c85
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72644457"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593211"
 ---
 # <a name="edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>Modifier les modèles de combinaison de tests pour spécifier la probabilité d’exécution d’un test par un utilisateur virtuel
 
@@ -55,11 +55,11 @@ Après avoir créé votre test de charge à l’aide de l’**Assistant Nouveau 
 
 1. Ouvrez un test de charge.
 
-     **L’Éditeur de test de charge** s’affiche. L'arborescence du test de charge s'affiche.
+     **L’éditeur de test de charge** s’affiche. L'arborescence du test de charge s'affiche.
 
 2. Dans le dossier *Scénarios* de l’arborescence du test de charge, choisissez le nœud de scénario pour lequel vous souhaitez spécifier le nombre maximal d’itérations de tests.
 
-3. Dans le menu **Affichage**, sélectionnez la fenêtre **Propriétés**.
+3. Dans le menu **Affichage**, sélectionnez **Fenêtre Propriétés**.
 
      Les catégories et les propriétés du scénario s'affichent.
 

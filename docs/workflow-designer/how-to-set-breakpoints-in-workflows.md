@@ -3,17 +3,17 @@ title: 'Concepteur de flux de travail : définir des points d’arrêt dans les
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e41b21c9-c061-4358-8e2f-eb5e412864a8
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6d2806a8757f00924d51c76aea82cfc8c6a5673
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4ebebd0efe689c2f3f83e776c0cb3889ee64add2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650331"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593887"
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>Comment : définir des points d’arrêt dans les workflows
 
@@ -25,10 +25,10 @@ Un point d’arrêt a trois États : *en attente*, *lié*et *erreur*. Lorsque v
 > La définition des points d'arrêt sur les workflows appelés n'est pas prise en charge.
 
 > [!NOTE]
-> Veillez à sélectionner l’option **activer uniquement mon code (managé uniquement)** à partir du menu **outils**  > **options**  > **débogage** avant de procéder au débogage. Si l’option n’est pas sélectionnée et que vous avez deux séquences imbriquées dans une autre séquence et que vous définissez un point d’arrêt sur la première séquence interne, le fait d’appuyer sur **F11** ne débogue pas dans la deuxième séquence interne.
+> Veillez à sélectionner l’option **activer uniquement mon code (managé uniquement)** à partir du menu **outils** > **options** > **débogage** avant de procéder au débogage. Si l’option n’est pas sélectionnée et que vous avez deux séquences imbriquées dans une autre séquence et que vous définissez un point d’arrêt sur la première séquence interne, le fait d’appuyer sur **F11** ne débogue pas dans la deuxième séquence interne.
 
 > [!NOTE]
-> Les points d’arrêt dans un workflow ne sont pas atteints si le chemin d’accès complet à la propriété du fichier XAML n’est pas exact. Le chemin d’accès complet au fichier XAML n’est pas exact après le déplacement du projet ou de la solution vers un autre dossier ou vers un autre ordinateur. Sélectionnez **Ctrl** +**S** pour enregistrer et mettre à jour la propriété chemin d’accès complet.
+> Les points d’arrêt dans un workflow ne sont pas atteints si le chemin d’accès complet à la propriété du fichier XAML n’est pas exact. Le chemin d’accès complet au fichier XAML n’est pas exact après le déplacement du projet ou de la solution vers un autre dossier ou vers un autre ordinateur. Sélectionnez **Ctrl**+**S** pour enregistrer et mettre à jour la propriété chemin d’accès complet.
 
 ## <a name="to-set-a-breakpoint-on-an-activity-in-the-design-view"></a>Pour définir un point d'arrêt sur une activité en mode Design
 
@@ -36,7 +36,7 @@ Un point d’arrêt a trois États : *en attente*, *lié*et *erreur*. Lorsque v
 
 2. Dans le menu **Déboguer** , sélectionnez **basculer le point d’arrêt**. Une icône rouge s'affiche dans l'angle supérieur gauche de l'activité.
 
-   Vous pouvez également appuyer sur **F9** après avoir sélectionné l’activité, ou vous pouvez cliquer avec le bouton droit sur l’activité et sélectionner **point d’arrêt**  >  insérer un**point d’arrêt** dans le menu contextuel.
+   Vous pouvez également appuyer sur **F9** après avoir sélectionné l’activité, ou vous pouvez cliquer avec le bouton droit sur l’activité et sélectionner **point d’arrêt** > insérer un **point d’arrêt** dans le menu contextuel.
 
 ## <a name="see-also"></a>Voir aussi
 

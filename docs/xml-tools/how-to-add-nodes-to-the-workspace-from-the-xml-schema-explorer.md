@@ -3,17 +3,17 @@ title: Ajouter des nœuds à l’espace de travail à partir de l’Explorateur 
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3b5a5749-9693-4b29-b0c2-8e07e0e55514
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77e1890df09443e133f9e528905b76374f6070bc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2049b8da1caa4e0af0afc52aec6e75f499d85b8b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72646039"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592813"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>Procédure : ajouter des nœuds à l’espace de travail à partir de l’Explorateur de schémas XML
 
@@ -48,7 +48,7 @@ Cette rubrique explique comment ajouter des nœuds à l' [espace de travail du c
 
 1. Tapez « purchaseOrder » dans la zone de texte Rechercher de la barre d’outils de l' [Explorateur XML](../xml-tools/xml-schema-explorer.md) , puis cliquez sur le bouton Rechercher.
 
-     ![Recherche par mot clé de l'Explorateur de schémas XML](../xml-tools/media/schemaexplorersearch.gif)
+     ![Recherche par mot clé dans l'Explorateur de schémas XML](../xml-tools/media/schemaexplorersearch.gif)
 
      Les résultats de la recherche sont mis en surbrillance dans l' **Explorateur de schémas XML** et marqués par des graduations sur la barre de défilement verticale.
 

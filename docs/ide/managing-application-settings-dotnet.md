@@ -6,17 +6,17 @@ f1_keywords:
 - msvse_settingsdesigner.err.nameblank
 helpviewer_keywords:
 - application settings [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae4215987ee0a61935efe27ab927d826cc1c6ff9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8d792a6147795f81211203fc442539371f3caa91
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654633"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593705"
 ---
 # <a name="manage-application-settings-net"></a>Gérer les paramètres d’application (.NET)
 
@@ -26,7 +26,7 @@ Les paramètres d’application remplacent les propriétés dynamiques utilisée
 
 Chaque paramètre d’application doit avoir un nom unique. Celui-ci peut être toute combinaison de lettres, de nombres ou de traits de soulignement, ne commençant pas par un nombre et ne comportant pas d’espaces. Le nom est modifié par le biais de la propriété `Name`.
 
-Les paramètres d’application peuvent être stockés comme n’importe quel type de données sérialisé par XML ou ayant un `TypeConverter` qui implémente `ToString`/`FromString`. Les types les plus courants sont `String`, `Integer` et `Boolean`, mais vous pouvez également stocker des valeurs en tant que <xref:System.Drawing.Color>, <xref:System.Object> ou chaîne de connexion.
+Les paramètres d’application peuvent être stockés comme n’importe quel type de données sérialisé par XML ou ayant un `TypeConverter` qui implémente `ToString`/`FromString`. Les types les plus courants sont `String`, `Integer`et `Boolean`, mais vous pouvez également stocker des valeurs en tant que <xref:System.Drawing.Color>, <xref:System.Object>ou chaîne de connexion.
 
 Les paramètres d’application comportent également une valeur. La valeur est définie avec la propriété **Value** et doit correspondre au type de données du paramètre.
 

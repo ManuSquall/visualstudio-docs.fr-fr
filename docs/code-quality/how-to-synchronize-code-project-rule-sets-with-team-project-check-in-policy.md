@@ -5,17 +5,17 @@ ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.selecttfsruleset
 ms.assetid: 9b02f934-2db6-41ec-aaff-9c31ceec2f04
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe6e9e49998c3e98335cd7e873d53531c8bfa99a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a765bcdd6eefbb5c256603bb73c0684c8782f803
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649384"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587405"
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Procédure : synchroniser des ensembles de règles de projet de code avec une stratégie d’archivage de projet Azure DevOps
 
@@ -31,9 +31,9 @@ Vous synchronisez les paramètres d’analyse du code des projets de code avec l
 
 ## <a name="to-specify-a-microsoft-standard-rule-set"></a>Pour spécifier un ensemble de règles standard Microsoft
 
-1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le projet de code, puis cliquez sur **Propriétés**.
+1. Dans **l’Explorateur de solutions**, cliquez sur le projet de code, puis cliquez sur **propriétés**.
 
-2. Cliquez sur **analyse du code**.
+2. Cliquez sur **Analyse du code**.
 
 ::: moniker range="vs-2017"
 
@@ -51,19 +51,19 @@ Vous synchronisez les paramètres d’analyse du code des projets de code avec l
 
 1. Si nécessaire, effectuez une opération d’extraction sur le fichier d’ensemble de règles qui spécifie la stratégie d’archivage.
 
-2. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le projet de code, puis cliquez sur **Propriétés**.
+2. Dans **l’Explorateur de solutions**, cliquez sur le projet de code, puis cliquez sur **propriétés**.
 
-3. Cliquez sur **analyse du code**.
+3. Cliquez sur **Analyse du code**.
 
 ::: moniker range="vs-2017"
 
-4. Dans la liste **exécuter cet ensemble de règles** , cliquez sur **\<Browse >** .
+4. Dans la liste **exécuter cet ensemble de règles** , cliquez sur **\<Parcourir >** .
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-4. Dans la liste **règles actives** , cliquez sur **\<Browse >** .
+4. Dans la liste **règles actives** , cliquez sur **\<Parcourir >** .
 
 ::: moniker-end
 

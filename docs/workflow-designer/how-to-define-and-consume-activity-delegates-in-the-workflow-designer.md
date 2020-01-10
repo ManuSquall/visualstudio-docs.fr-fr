@@ -3,17 +3,17 @@ title: 'Concepteur de flux de travail : définir et consommer des délégués d
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c68e42ad-3ec0-4c2d-b104-fe36c6d83b5e
-ms.author: jillfra
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 67e862e3772b157c4a0999ccd44c3698119ae8a8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: TerryGLee
+ms.openlocfilehash: 4309294a2be703b7511355b87c97341fee06d405
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650335"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593900"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Procédure : définir et utiliser des délégués d'activité dans le Concepteur de flux de travail
 
@@ -32,7 +32,7 @@ ms.locfileid: "72650335"
 
 4. Dans l’Concepteur de flux de travail, cliquez sur l’onglet **arguments** .
 
-5. Cliquez sur **Créer un argument**. Nommez les nouveaux arguments **Items**.
+5. Cliquez sur **créer un argument**. Nommez les nouveaux arguments **Items**.
 
 6. Dans la colonne **type d’argument** , sélectionnez **tableau de [T]** .
 

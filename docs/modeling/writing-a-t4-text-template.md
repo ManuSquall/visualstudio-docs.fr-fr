@@ -6,20 +6,20 @@ helpviewer_keywords:
 - text templates, syntax
 - text templates, guide
 - text templates, functions that generate text
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df653dbd449429b6995c987328a401866751fd5e
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 1990377bffe0c663a70520c07bd3ab60b91f8bbd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981247"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593484"
 ---
 # <a name="writing-a-t4-text-template"></a>Écriture d'un modèle de texte T4
-Un modèle de texte contient le texte qui sera généré à partir du modèle. Par exemple, un modèle qui crée une page Web contiendra « \<html >... » et toutes les autres parties standard d’une page HTML. Les *blocs de contrôle*, qui sont des fragments de code de programme, sont insérés dans le modèle. Les blocs de contrôle fournissent des valeurs variables et permettent à certaines parties du texte d'être conditionnelles et répétées.
+Un modèle de texte contient le texte qui sera généré à partir du modèle. Par exemple, un modèle qui crée une page Web contiendra «\<> HTML... » et toutes les autres parties standard d’une page HTML. Les *blocs de contrôle*, qui sont des fragments de code de programme, sont insérés dans le modèle. Les blocs de contrôle fournissent des valeurs variables et permettent à certaines parties du texte d'être conditionnelles et répétées.
 
  Cette structure simplifie le développement de modèle, car vous pouvez commencer avec un prototype du fichier généré et insérer de manière incrémentielle des blocs de contrôle qui font varier le résultat.
 
@@ -155,7 +155,7 @@ private int Square(int i)
  Pour plus d’informations sur les blocs de contrôle, consultez [blocs de contrôle de modèle de texte](../modeling/text-template-control-blocks.md).
 
 ### <a name="class-feature-blocks-can-contain-text-blocks"></a>Les blocs de fonctionnalité de classe peuvent contenir des blocs de texte
- Vous pouvez écrire une méthode qui génère du texte. Exemple :
+ Vous pouvez écrire une méthode qui génère du texte. Par exemple :
 
 ```
 List of Squares:
@@ -178,14 +178,14 @@ private void WriteSquareLine(int i)
 
 ## <a name="using-external-definitions"></a>Utilisation de définitions externes
 
-### <a name="assemblies"></a>Assemblys
+### <a name="assemblies"></a>Assemblies
  Les blocs de code de votre modèle peuvent utiliser des types définis par les assemblys .NET les plus fréquemment utilisés tels que System.dll. De plus, vous pouvez faire référence à d'autres assemblys .NET ou à vos propres assemblys. Vous pouvez fournir un nom de chemin d’accès ou le nom fort d’un assembly :
 
 ```
 <#@ assembly name="System.Xml" #>
 ```
 
- Vous devez utiliser des noms de chemins d’accès absolus ou des noms de macros standard dans le nom du chemin d’accès. Exemple :
+ Vous devez utiliser des noms de chemins d’accès absolus ou des noms de macros standard dans le nom du chemin d’accès. Par exemple :
 
 ```
 <#@ assembly name="$(SolutionDir)library\MyAssembly.dll" #>
@@ -195,7 +195,7 @@ private void WriteSquareLine(int i)
 
  Pour plus d’informations, consultez [directive d’assembly T4](../modeling/t4-assembly-directive.md).
 
-### <a name="namespaces"></a>Espaces de noms
+### <a name="namespaces"></a>Espaces de noms des
  La directive import est identique à la clause `using` en C# ou à la clause `imports` en Visual Basic. Elle vous permet de faire référence à des types dans votre code sans utiliser de nom qualifié complet :
 
 ```

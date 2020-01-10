@@ -2,19 +2,19 @@
 title: Tests unitaires du code Visual C#
 ms.date: 09/27/2019
 ms.topic: conceptual
-ms.author: jillfra
-author: jillre
+ms.author: mikejo
+author: mikejo5000
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 309cf408167cc463db8cde9e39d5c0fe4dbe26d6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 31fbbfaa5d16dd51776f592b89a7846936b3013f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659846"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590863"
 ---
-# <a name="unit-test-c-code"></a>Test unitaire de code C#
+# <a name="unit-test-c-code"></a>Test unitaire du code C#
 
 Cet article décrit une méthode permettant de créer des tests unitaires pour une classe C# dans une application UWP.
 
@@ -30,7 +30,7 @@ Cet article illustre le *développement piloté par les tests*. Dans cette appro
 
 3. Nommez les **maths**du projet.
 
-4. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur la solution et choisissez **Ajouter**  > **nouveau projet**.
+4. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur la solution et choisissez **Ajouter** > **nouveau projet**.
 
 5. Recherchez et sélectionnez le modèle de projet **Application de tests unitaires (Windows universel)** .
 
@@ -62,11 +62,11 @@ Cet article illustre le *développement piloté par les tests*. Dans cette appro
 
 ::: moniker-end
 
-   Le projet de test est généré et exécuté. Soyez patient, car cela peut prendre un peu de temps. La fenêtre **Explorateur de tests** s’affiche, et le test est répertorié sous **Tests réussis**. Le volet **Résumé** situé au bas de la fenêtre fournit des informations supplémentaires sur le test sélectionné.
+   Le projet de test est généré et exécuté. Soyez patient, car cela peut prendre un peu de temps. La fenêtre de **l’Explorateur de tests** s’affiche, et le test est répertorié sous **Tests réussis**. Le volet **Résumé** situé au bas de la fenêtre fournit des informations supplémentaires sur le test sélectionné.
 
 ## <a name="add-the-rooter-class-to-the-maths-project"></a>Ajouter la classe Rooter au projet Maths
 
-1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le projet **maths** , puis choisissez **Ajouter** une**classe** > .
+1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le projet **maths** , puis choisissez **Ajouter** une **classe** > .
 
 2. Nommez le fichier de classe *Rooter.cs*.
 
@@ -96,7 +96,7 @@ Cet article illustre le *développement piloté par les tests*. Dans cette appro
 
 1. Ajoutez une référence du projet RooterTests à l’application maths.
 
-    1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le projet **RooterTests** , puis choisissez **Ajouter** une**référence**de  > .
+    1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le projet **RooterTests** , puis choisissez **Ajouter** une **référence**de > .
 
     2. Dans la boîte de dialogue **Ajouter une référence - RooterTests**, développez **Solution**, puis choisissez **Projets**. Sélectionnez le projet **maths** .
 
@@ -150,7 +150,7 @@ Cet article illustre le *développement piloté par les tests*. Dans cette appro
 
 ::: moniker-end
 
-Vous avez configuré les projets de test et d’application et vérifié que vous pouvez exécuter des tests qui appellent des fonctions dans le projet d’application. Maintenant, vous pouvez commencer à écrire le code et les tests réels.
+Vous avez configuré les projets de test et d’application et vérifié que vous pouvez exécuter des tests qui appellent des fonctions dans le projet d’application. Vous pouvez maintenant commencer à écrire des tests et du code réels.
 
 ## <a name="iteratively-augment-the-tests-and-make-them-pass"></a>Augmenter itérativement les tests et les faire réussir
 
@@ -172,16 +172,16 @@ Vous avez configuré les projets de test et d’application et vérifié que vou
    ```
 
    > [!TIP]
-   > Nous vous recommandons de ne pas modifier les tests ayant réussi. Ajoutez un nouveau test à la place.
+   > Nous vous recommandons de ne pas modifier les tests qui ont réussi. Ajoutez un nouveau test à la place.
 
 2. Exécutez le test **rangetest a échoué** et assurez-vous qu’il échoue.
 
    ![RangeTest a échoué](../test/media/ute_cpp_testexplorer_rangetest_fail.png)
 
    > [!TIP]
-   > Immédiatement après avoir écrit un test, exécutez-le pour vérifier qu’il échoue. Vous évitez ainsi de commettre l'erreur d'écrire un test qui n'échoue jamais.
+   > Immédiatement après avoir écrit un test, exécutez-le pour vérifier qu’il échoue. Cela permet d'éviter l'erreur facile qui consiste à écrire un test qui n'échoue jamais.
 
-3. Améliorez le code testé afin que le nouveau test réussisse. Remplacez la fonction **SquareRoot** dans *Rooter.cs* par ce qui suit :
+3. Améliorez le code testé pour que le nouveau test réussisse. Remplacez la fonction **SquareRoot** dans *Rooter.cs* par ce qui suit :
 
    ```csharp
    public double SquareRoot(double x)
@@ -213,7 +213,7 @@ Vous avez configuré les projets de test et d’application et vérifié que vou
    Les trois tests réussissent maintenant.
 
 > [!TIP]
-> Développez le code en ajoutant les tests individuellement. Assurez-vous que tous les tests réussissent après chaque itération.
+> Développez le code en ajoutant les tests l'un après l'autre. Vérifiez que tous les tests réussissent après chaque itération.
 
 ## <a name="refactor-the-code"></a>Refactoriser le code
 

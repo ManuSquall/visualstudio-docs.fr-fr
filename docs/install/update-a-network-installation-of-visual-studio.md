@@ -1,7 +1,7 @@
 ---
 title: Mettre à jour une installation réseau
 description: Découvrez comment mettre à jour une installation réseau de Visual Studio à l’aide de la commande --layout
-ms.date: 10/07/2019
+ms.date: 01/08/2020
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 990b9541e22040b53a5f509fc358013dca777906
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 774e189306345187ac6a0c29b7060cb5537e8adb
+ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594433"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75776168"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Mettre à jour une installation réseau de Visual Studio
 
@@ -28,17 +28,20 @@ Il est possible de mettre à jour une disposition d’installation réseau de Vi
 
 ## <a name="how-to-update-a-network-layout"></a>Comment mettre à jour une disposition réseau
 
+> [!IMPORTANT]
+> Ces instructions supposent que vous avez déjà créé une disposition d’installation réseau. Pour plus d’informations sur la façon de procéder, consultez la page [créer une installation réseau de Visual Studio](create-a-network-installation-of-visual-studio.md) .
+
 Pour actualiser le partage d’installation réseau et inclure les dernières mises à jour, exécutez la commande `--layout` pour télécharger de manière incrémentielle les packages mis à jour.
 
 ::: moniker range="vs-2017"
 
-**Nouveauté de 15,3**: Si vous avez sélectionné une disposition partielle lorsque vous avez créé la disposition du réseau, ces paramètres sont enregistrés. Toutes les commandes de disposition futures utilisent les options précédentes ainsi que toutes les nouvelles options que vous indiquez. Si vous vous servez d’une disposition d’une version antérieure, vous devez utiliser les mêmes paramètres de ligne de commande que ceux que vous avez utilisés quand vous avez créé la disposition d’installation réseau (autrement dit, les mêmes charges de travail et langues) pour mettre à jour son contenu.
+**Nouveauté de 15,3**: Si vous avez sélectionné une disposition partielle lorsque vous avez [créé la disposition du réseau](create-a-network-installation-of-visual-studio.md), ces paramètres sont enregistrés. Toutes les commandes de disposition futures utilisent les options précédentes ainsi que toutes les nouvelles options que vous indiquez. Si vous vous servez d’une disposition d’une version antérieure, vous devez utiliser les mêmes paramètres de ligne de commande que ceux que vous avez utilisés quand vous avez créé la disposition d’installation réseau (autrement dit, les mêmes charges de travail et langues) pour mettre à jour son contenu.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-Si vous avez sélectionné une disposition partielle lors de la création de la disposition réseau, ces paramètres sont enregistrés. Toutes les commandes de disposition futures utilisent les options précédentes ainsi que toutes les nouvelles options que vous indiquez.
+Si vous avez sélectionné une disposition partielle lorsque vous avez [créé la disposition du réseau](create-a-network-installation-of-visual-studio.md), ces paramètres sont enregistrés. Toutes les commandes de disposition futures utilisent les options précédentes ainsi que toutes les nouvelles options que vous indiquez.
 
 ::: moniker-end
 
@@ -81,7 +84,7 @@ Intéressons-nous de plus près à quelques exemples de création et de mise à 
   vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.NetWeb --lang fr-FR --keepLayoutVersion
   ```
 
-## <a name="how-to-deploy-an-update-to-client-machines"></a>Comment déployer une mise à jour sur les ordinateurs clients
+## <a name="deploy-an-update-to-client-machines"></a>Déployer une mise à jour sur les ordinateurs clients
 
 Selon la configuration de votre environnement réseau, une mise à jour peut être déployée par un administrateur d’entreprise ou lancée à partir d’un ordinateur client.
 
@@ -111,7 +114,7 @@ Selon la configuration de votre environnement réseau, une mise à jour peut êt
 > [!TIP]
 > Pour plus d’informations sur le contrôle du moment de la présentation des notifications de mise à jour aux utilisateurs, consultez [Contrôler les mises à jour applicables aux déploiements de Visual Studio à partir du réseau](controlling-updates-to-visual-studio-deployments.md).
 
-## <a name="how-to-verify-a-layout"></a>Comment vérifier une disposition
+## <a name="verify-a-layout"></a>Vérifier une disposition
 
 Utilisez l’option `--verify` pour effectuer la vérification dans le cache hors connexion fourni. Elle contrôle si des fichiers de package sont manquants ou non valides. À la fin de la vérification, la liste des fichiers manquants et non valides est imprimée.
 
@@ -129,7 +132,7 @@ Comme Microsoft fournit régulièrement des mises à jour de Visual Studio, la v
 > [!NOTE]
 > La vérification fonctionne seulement pour la dernière version d’une version mineure spécifique de Visual Studio. Dès qu’une nouvelle version est publiée, la vérification ne fonctionne plus pour les versions du niveau de correctif antérieures de la même version mineure.
 
-## <a name="how-to-fix-a-layout"></a>Comment corriger une disposition
+## <a name="fix-a-layout"></a>Corriger une disposition
 
 Utilisez `--fix` pour effectuer la même vérification que `--verify` et pour tenter également de résoudre les problèmes identifiés. Le processus `--fix` nécessite une connexion Internet, ainsi vous devez vous assurer que votre ordinateur est connecté à Internet avant d’appeler `--fix`.
 
@@ -139,7 +142,7 @@ vs_enterprise.exe --layout <layoutDir> --fix
 
 Le fichier vs_enterprise.exe peut être appelé à l’intérieur du répertoire layoutDir.
 
-## <a name="how-to-remove-older-versions-from-a-layout"></a>Comment supprimer les versions antérieures d’une disposition
+## <a name="remove-older-versions-from-a-layout"></a>Supprimer les anciennes versions d’une mise en page
 
 Suite aux mises à jour de disposition que vous avez effectuées vers un cache hors connexion, le dossier du cache de disposition peut contenir quelques packages obsolètes qui ne sont plus utiles à la dernière installation en date de Visual Studio. Vous pouvez utiliser l’option `--clean` pour supprimer les packages obsolètes à partir d’un dossier de cache hors connexion.
 
@@ -165,7 +168,13 @@ c:\VSLayout\vs_enterprise.exe --layout c:\VSLayout --clean c:\VSLayout\Archive\1
 
 Lorsque vous exécutez cette commande, le programme d’installation analyse votre dossier de cache hors connexion pour trouver la liste des fichiers à supprimer. Vous avez ensuite la possibilité de revoir les fichiers qui vont être supprimés pour confirmer les suppressions.
 
-[!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
+## <a name="get-support-for-your-offline-installer"></a>Obtenir de l’aide pour votre programme d’installation hors connexion
+
+Si vous rencontrez un problème avec votre installation hors connexion, nous voulons le savoir. Le meilleur moyen de nous en faire part est d’utiliser l’outil [Signaler un problème](../ide/how-to-report-a-problem-with-visual-studio.md). Lorsque vous utilisez cet outil, vous pouvez nous envoyer la télémétrie et des journaux, dont nous avons besoin pour nous aider à diagnostiquer et à résoudre le problème.
+
+Nous offrons également une option de support par [**Conversation en direct**](https://visualstudio.microsoft.com/vs/support/#talktous) (en anglais uniquement) pour les problèmes liés à l’installation.
+
+D’autres options de support sont également à votre disposition. Pour obtenir la liste, consultez notre page [Commentaires](../ide/feedback-options.md).
 
 ## <a name="see-also"></a>Voir aussi
 

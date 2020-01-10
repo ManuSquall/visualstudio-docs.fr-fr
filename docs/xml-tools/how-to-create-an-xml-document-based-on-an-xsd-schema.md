@@ -3,17 +3,17 @@ title: 'Procédure : créer un document XML basé sur un schéma XSD'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 193b195f-e918-4c79-a1a1-8096a1433bde
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f423af7dc4fae7a116acbaf8497c5ee4268653e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3139df600654513912abeae64c1ef2980493574d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645973"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592800"
 ---
 # <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Comment : créer un document XML basé sur un schéma XSD
 
@@ -31,11 +31,11 @@ En règle générale, cette fonctionnalité permet de générer des documents XM
 
 - Contraintes d'identité `xs:key`, `xs:keyref` et `xs:unique`.
 
-- Facettes `xs:pattern`.
+- `xs:pattern` facettes.
 
 - Énumérations du type `xs:QName`.
 
-- Types `xs:ENTITY`, `xs:ENTITIES` et `xs:NOTATION`.
+- `xs:ENTITY`, `xs:ENTITIES`et `xs:NOTATION` types.
 
 Notez également que le contenu `xs:base64Binary` n'est généré que si des énumérations figurent dans le schéma du type correspondant.
 

@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - C#, IntelliSense
 - IntelliSense [C#]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 13a3c16adca29128be275495fe8921895aa84250
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2ed5d86599fa99b9c1360b414b37ef95ab59082d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647227"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594173"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -80,7 +80,7 @@ IntelliSense supprime les membres inutiles de la liste de saisie semi-automatiqu
 
 IntelliSense mémorise les membres que vous avez récemment sélectionnés dans la fenêtre contextuelle [Liste des membres](../ide/using-intellisense.md) pour la saisie semi-automatique du nom d’objet. La prochaine fois que vous utiliserez la **liste des membres**, les membres utilisés récemment seront affichés en haut. L’historique des membres utilisés récemment est effacé entre chaque session de Visual Studio.
 
-### <a name="override"></a>override
+### <a name="override"></a>remplacer
 
 Quand vous tapez [override](/dotnet/csharp/language-reference/keywords/override) et que vous appuyez sur **Barre d’espace**, IntelliSense affiche dans une zone de liste contextuelle tous les membres valides de la classe de base que vous pouvez remplacer. Si vous tapez le type de retour de la méthode après `override`, IntelliSense affiche uniquement les méthodes qui retournent le même type. Quand IntelliSense ne trouve aucune correspondance, il affiche tous les membres de la classe de base.
 

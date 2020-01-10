@@ -12,23 +12,23 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild, GenerateDeploymentManifest task
 - GenerateDeploymentManifest task [MSBuild]
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8a2f4810c8a485d6b9013f658e221db39d8071f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: fc953298241ec7c48bbf5ea87c902aa28b349ce0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63003346"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588302"
 ---
 # <a name="generatedeploymentmanifest-task"></a>GenerateDeploymentManifest (tâche)
 
 Génère un manifeste de déploiement [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]. Un manifeste de déploiement [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] décrit le déploiement d’une application en définissant une identité unique pour le déploiement, en identifiant des caractéristiques de déploiement comme le mode d’installation ou le mode en ligne, en spécifiant les paramètres de mise à jour de l’application et les emplacements de mise à jour, et en indiquant le manifeste d’application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] correspondant.
 
-## <a name="parameters"></a>Paramètres
+## <a name="parameters"></a>Parameters
 
 Le tableau ci-dessous décrit les paramètres de la tâche `GenerateDeploymentManifest`.
 
@@ -40,7 +40,7 @@ Le tableau ci-dessous décrit les paramètres de la tâche `GenerateDeploymentMa
 | `DeploymentUrl` | Paramètre `String` facultatif.<br /><br /> Spécifie l’emplacement de mise à jour de l’application. Si vous ne spécifiez pas ce paramètre, aucun emplacement de mise à jour n’est défini pour l’application. Toutefois, si le paramètre `UpdateEnabled` est `true`, vous devez spécifier l’emplacement de mise à jour. La valeur spécifiée doit être un chemin URL ou UNC complet. |
 | `Description` | Paramètre `String` facultatif.<br /><br /> Spécifie une description facultative pour l’application. |
 | `DisallowUrlActivation` | Paramètre `Boolean` facultatif.<br /><br /> Indique si l’application doit être exécutée automatiquement quand elle est ouverte par le biais d’une URL. Si ce paramètre est `true`, l’application ne peut être lancée que par le menu **Démarrer**. La valeur par défaut de ce paramètre est `false`. Cette entrée s’applique uniquement quand le paramètre `Install` a la valeur `true`. |
-| `EntryPoint` | Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Indique le point d’entrée de l’assembly de manifeste généré. Pour un manifeste de déploiement [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], cette entrée spécifie le manifeste d’application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].<br /><br />Si le paramètre de tâche `EntryPoint` n’est pas spécifié, la balise `<customHostSpecified>` est insérée en tant qu’enfant de la balise `<entryPoint>`, par exemple :<br /><br /> `<entryPoint xmlns="urn:schemas-microsoft-com:asm.v2">`<br /><br /> `<co.v1:customHostSpecified />`<br /><br /> `</entryPoint>`<br /><br /> Vous pouvez ajouter des dépendances de DLL au manifeste d’application en effectuant les étapes suivantes :<br /><br /> 1.  Résolvez les références d’assembly avec un appel à <xref:Microsoft.Build.Tasks.ResolveAssemblyReference>.<br />2.  Passez la sortie de la tâche précédente et l’assembly lui-même à <xref:Microsoft.Build.Tasks.ResolveManifestFiles>.<br />3.  Passez les dépendances à l’aide du paramètre `Dependencies` à <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>. |
+| `EntryPoint` | Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Indique le point d’entrée de l’assembly de manifeste généré. Pour un manifeste de déploiement [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], cette entrée spécifie le manifeste d’application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].<br /><br />Si le paramètre de tâche `EntryPoint` n’est pas spécifié, la balise `<customHostSpecified>` est insérée en tant qu’enfant de la balise `<entryPoint>`, par exemple :<br /><br /> `<entryPoint xmlns="urn:schemas-microsoft-com:asm.v2">`<br /><br /> `<co.v1:customHostSpecified />`<br /><br /> `</entryPoint>`<br /><br /> Vous pouvez ajouter des dépendances de DLL au manifeste d’application en effectuant les étapes suivantes :<br /><br /> 1. résolvez les références d’assembly avec un appel à <xref:Microsoft.Build.Tasks.ResolveAssemblyReference>.<br />2. passer la sortie de la tâche précédente et l’assembly lui-même pour <xref:Microsoft.Build.Tasks.ResolveManifestFiles>.<br />3. passer les dépendances à l’aide du paramètre `Dependencies` pour <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>. |
 | `ErrorReportUrl` | Paramètre <xref:System.String?displayProperty=fullName> facultatif.<br /><br /> Spécifie l’URL de la page web affichée dans les boîtes de dialogue pendant les installations ClickOnce. |
 | `InputManifest` | Paramètre <xref:Microsoft.Build.Framework.ITaskItem> facultatif.<br /><br /> Indique un document XML d’entrée à utiliser comme base pour le générateur de manifeste. Ainsi, les données structurées telles que les définitions de manifeste personnalisées sont reflétées dans le manifeste de sortie. L’élément racine dans le document XML doit être un nœud d’assembly dans l’espace de noms asmv1. |
 | `Install` | Paramètre `Boolean` facultatif.<br /><br /> Indique si l’application est une application installée ou une application en ligne uniquement. Si ce paramètre a la valeur `true`, l’application est installée dans le menu **Démarrer** de l’utilisateur et peut être supprimée à l’aide de la boîte de dialogue **Ajout/Suppression de programmes**. Si ce paramètre a la valeur `false`, l’application est conçue pour une utilisation en ligne à partir d’une page web. La valeur par défaut de ce paramètre est `true`. |
@@ -60,13 +60,13 @@ Le tableau ci-dessous décrit les paramètres de la tâche `GenerateDeploymentMa
 | `UpdateMode` | Paramètre `String` facultatif.<br /><br /> Indique si les mises à jour doivent être vérifiées au premier plan avant de démarrer l’application, ou en arrière-plan pendant l’exécution de l’application. Ce paramètre peut avoir les valeurs suivantes :<br /><br /> -   `Foreground`<br />-   `Background`<br /><br /> La valeur par défaut de ce paramètre est `Background`. Ce paramètre s’applique uniquement quand les paramètres `Install` et `UpdateEnabled` ont tous deux la valeur `true`. |
 | `UpdateUnit` | Paramètre `String` facultatif.<br /><br /> Spécifie les unités pour le paramètre `UpdateInterval`. Ce paramètre peut avoir les valeurs suivantes :<br /><br /> -   `Hours`<br />-   `Days`<br />-   `Weeks`<br /><br /> Ce paramètre s’applique uniquement quand les paramètres `Install` et `UpdateEnabled` ont tous deux la valeur `true`. |
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
-En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.GenerateManifestBase>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste des paramètres de la classe Task, consultez [Classe de base de tâche](../msbuild/task-base-class.md).
+En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.GenerateManifestBase> , qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task> . Pour obtenir la liste des paramètres de la classe Task, consultez [Classe de base de tâche](../msbuild/task-base-class.md).
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Tâches](../msbuild/msbuild-tasks.md)
+- [Tâches MSBuild](../msbuild/msbuild-tasks.md)
 - [GenerateApplicationManifest, tâche](../msbuild/generateapplicationmanifest-task.md)
 - [SignFile, tâche](../msbuild/signfile-task.md)
 - [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)

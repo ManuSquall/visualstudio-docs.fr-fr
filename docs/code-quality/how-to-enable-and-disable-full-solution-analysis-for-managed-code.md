@@ -4,17 +4,17 @@ ms.date: 03/23/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - full solution analysis
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3f7837b1e5ea5b84e1ee1197bf6f8c40d0863c3e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d699dd74315cfc36820c1cdb4120543e0290b1a1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649447"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587509"
 ---
 # <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Comment : activer et désactiver l’analyse complète de la solution pour le code managé
 
@@ -34,7 +34,7 @@ L’illustration suivante montre les résultats de la même solution après la d
 
 1. Pour ouvrir la boîte de dialogue **options** , dans la barre de menus de Visual Studio, choisissez **Outils** > **options**.
 
-1. Dans la boîte de dialogue **options** , **Choisissez éditeur** de**C#** texte  >  ou **Basic**  > **avancé**.
+1. Dans la boîte de dialogue **options** , **Choisissez éditeur** de **C#** texte > ou **Basic** > **avancé**.
 
 1. Cochez la case **activer l’analyse complète** de la solution pour activer l’analyse complète de la solution, ou désactivez la case à cocher pour la désactiver. Lorsque vous avez terminé, choisissez **OK** .
 
@@ -44,4 +44,4 @@ L’illustration suivante montre les résultats de la même solution après la d
 
 Si Visual Studio détecte que 200 Mo ou moins de mémoire système est disponible, il désactive automatiquement l’analyse complète de la solution (et d’autres fonctionnalités) si elle est activée. Dans ce cas, une alerte s’affiche vous informant que Visual Studio a désactivé certaines fonctionnalités. Un bouton vous permet de réactiver l’analyse complète de la solution si vous le souhaitez.
 
-![Texte d’alerte interruption de l’analyse complète de la solution](../code-quality/media/fsa_alert.png)
+![Texte de l’alerte la suspension de l’analyse complète de la solution](../code-quality/media/fsa_alert.png)

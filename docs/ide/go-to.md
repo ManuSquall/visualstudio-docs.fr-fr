@@ -7,17 +7,17 @@ helpviewer_keywords:
 - code editor, go to line
 - go to line
 - go to
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3a810e96b410c0f1f6f5d6ffdaa07b1e007abd6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: bb39f1d395e48351aeacb587556224b0f86aac3e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654641"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593783"
 ---
 # <a name="find-code-using-go-to-commands"></a>Rechercher du code à l’aide des commandes Atteindre
 
@@ -25,7 +25,7 @@ Les commandes **Atteindre** de Visual Studio vous permettent d’effectuer une r
 
 ## <a name="how-to-use-it"></a>Utilisation
 
-Entrée | Fonction
+Input | Fonction
 ------------ | ---
 **Clavier** | Appuyez sur **Ctrl**+**T** ou **Ctrl**+ **,**
 **Souris** | Sélectionnez **Modifier** > **Atteindre** > **Atteindre tout**
@@ -74,7 +74,7 @@ Icône | Description
 
 Si vous utilisez une [casse mixte](https://en.wikipedia.org/wiki/Camel_case) dans votre code, vous pouvez trouver plus rapidement des éléments de code en entrant uniquement les lettres majuscules de leur nom. Par exemple, si votre code a un type appelé `CredentialViewModel`, vous pouvez affiner la recherche en choisissant le filtre **Type** (**t**), puis en entrant simplement les lettres majuscules du nom (`CVM`) dans la boîte de dialogue Atteindre. Cette fonctionnalité peut être particulièrement utile si votre code contient des noms longs.
 
-![Fenêtre Naviguer vers - recherche en lettres majuscules](../ide/media/vside_capitalsearch.png)
+![Fenêtre Naviguer vers - recherche en lettres capitales](../ide/media/vside_capitalsearch.png)
 
 ## <a name="settings"></a>Paramètres
 
@@ -90,4 +90,4 @@ Centrer la fenêtre | Déplacer cette fenêtre pour qu’elle s’affiche en hau
 
 - [Naviguer dans le code](../ide/navigating-code.md)
 - [Atteindre la ligne (boîte de dialogue)](../ide/reference/go-to-line.md)
-- [Atteindre la définition et Aperçu de la définition](../ide/go-to-and-peek-definition.md)
+- [Atteindre la définition et l’aperçu de définition](../ide/go-to-and-peek-definition.md)

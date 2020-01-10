@@ -2,17 +2,17 @@
 title: Exporter et enregistrer des cartes de code
 ms.date: 05/16/2018
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 991773953338e38331bad45bfa1149aeb27c748b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 57989de2cca3582b3193a7b55b81d1d444dcf1c1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72670800"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591929"
 ---
 # <a name="share-code-maps"></a>Partager des cartes de code
 
@@ -22,9 +22,9 @@ Vous pouvez enregistrer des cartes de code dans le cadre d’un projet Visual St
 
 Utilisez le menu **Fichier** pour enregistrer la carte.
 
-ou
+- ou -
 
-Pour enregistrer la carte dans le cadre d’un projet spécifique, dans la barre d’outils de la carte, choisissez **partager**  > **déplacer \<CodeMapName >. dgml vers**, puis choisissez le projet dans lequel vous souhaitez enregistrer la carte.
+Pour enregistrer la carte dans le cadre d’un projet spécifique, dans la barre d’outils de la carte, choisissez **partager** > **déplacer \<CodeMapName >. dgml vers**, puis choisissez le projet dans lequel vous souhaitez enregistrer la carte.
 
 ![Déplacer une carte dans un autre projet](../modeling/media/codemapsmovemapmenu.png)
 
@@ -43,7 +43,7 @@ Visual Studio enregistre la carte en tant que fichier *. dgml* que vous pouvez p
 
 Lorsque vous exportez une carte de code en tant qu’image, vous pouvez la copier dans d’autres applications, telles que Microsoft Word ou PowerPoint.
 
-1. Dans la barre d’outils de la carte de code, choisissez **partager**  > **Envoyer par courrier électronique en tant qu’image** ou **copier l’image**.
+1. Dans la barre d’outils de la carte de code, choisissez **partager** > **Envoyer par courrier électronique en tant qu’image** ou **copier l’image**.
 
 2. Collez l’image dans une autre application.
 
@@ -51,11 +51,11 @@ Lorsque vous exportez une carte de code en tant qu’image, vous pouvez la copie
 
 Lorsque vous exportez une carte de code sous la forme d’un fichier XPS, vous pouvez la voir dans des visionneuses XML ou XAML comme Internet Explorer.
 
-1. Dans la barre d’outils de la carte de code, choisissez **partager**  > **Envoyer par courrier électronique en tant que XPS portable** ou **enregistrer en tant qu’ordinateur portable XPS**.
+1. Dans la barre d’outils de la carte de code, choisissez **partager** > **Envoyer par courrier électronique en tant que XPS portable** ou **enregistrer en tant qu’ordinateur portable XPS**.
 
 2. Accédez à l’emplacement auquel enregistrer le fichier.
 
-3. Nommez la carte de code. Assurez-vous que la zone **type** de fichier est définie sur **fichiers XPS (\*. Xps)** . Choisissez **Enregistrer**.
+3. Nommez la carte de code. Assurez-vous que la zone **type** de fichier est définie sur **fichiers XPS (\*. Xps)**. Choisissez **Enregistrer**.
 
 ## <a name="see-also"></a>Voir aussi
 

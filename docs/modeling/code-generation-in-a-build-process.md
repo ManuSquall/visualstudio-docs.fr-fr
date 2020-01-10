@@ -5,20 +5,20 @@ ms.topic: conceptual
 helpviewer_keywords:
 - text templates, build tasks
 - text templates, transforming by using msbuild
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c9cc0d8a40970e2ec36030ab3121d6fc02748e2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e01136b845124d74c22ceb1c7cab877a8e2d1d04
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654196"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590551"
 ---
 # <a name="invoke-text-transformation-in-the-build-process"></a>Appeler la transformation de texte dans le processus de génération
 
@@ -51,7 +51,7 @@ Si [votre serveur de builds](/azure/devops/pipelines/agents/agents) s’exécute
   - Microsoft. VisualStudio. TextTemplating. Modeling. 15. dll
 
 > [!TIP]
-> Si vous recevez une `MissingMethodException` pour une méthode Microsoft. CodeAnalysis lors de l’exécution des cibles de génération TextTemplating sur un serveur de builds, assurez-vous que les assemblys Roslyn se trouvent dans un répertoire nommé *Roslyn* qui se trouve dans le même répertoire que l’exécutable de génération (par exemple,  *MSBuild. exe*).
+> Si vous recevez une `MissingMethodException` pour une méthode Microsoft. CodeAnalysis lors de l’exécution des cibles de génération TextTemplating sur un serveur de builds, assurez-vous que les assemblys Roslyn se trouvent dans un répertoire nommé *Roslyn* qui se trouve dans le même répertoire que l’exécutable de génération (par exemple, *MSBuild. exe*).
 
 ## <a name="edit-the-project-file"></a>Modifier le fichier projet
 
@@ -198,7 +198,7 @@ Si vous spécifiez un nom de fichier de sortie, il est prioritaire par rapport �
 </ItemGroup>
 ```
 
-La spécification d’un OutputFileName ou d’un OutputFilePath n’est pas recommandée si vous transformez également des modèles dans Visual Studio à l’aide de l’option **transformer tout** ou de l’exécution du générateur de fichier unique. Vous obtiendrez des chemins d’accès de fichiers différents selon la façon dont vous avez déclenché la transformation. Cela peut prêter à confusion.
+La spécification d’un OutputFileName ou d’un OutputFilePath n’est pas recommandée si vous transformez également des modèles dans Visual Studio à l’aide de l’option **transformer tout** ou de l’exécution du générateur de fichier unique. Vous obtiendrez des chemins d’accès de fichiers différents selon la façon dont vous avez déclenché la transformation. Ceci peut prêter à confusion.
 
 ## <a name="add-reference-and-include-paths"></a>Ajouter une référence et inclure des chemins
 
@@ -252,7 +252,7 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 ```
 
 > [!NOTE]
-> `ResolveParameterValue` obtient des données uniquement à partir de `T4ParameterValues` lorsque vous utilisez MSBuild. Lorsque vous transformez le modèle à l’aide de Visual Studio, les paramètres ont des valeurs par défaut.
+> `ResolveParameterValue` obtient les données de `T4ParameterValues` uniquement lorsque vous utilisez MSBuild. Lorsque vous transformez le modèle à l’aide de Visual Studio, les paramètres ont des valeurs par défaut.
 
 ## <a name="msbuild"></a>Utiliser les propriétés de projet dans les directives d’assembly et include
 

@@ -7,15 +7,15 @@ helpviewer_keywords:
 - templates [Visual Studio], Web
 - Web templates [Visual Studio]
 - project templates [Visual Studio], Web
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 7d121d9b970d8012aaf177c0a232cd21f6fe85d9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 245b20dd9cad465129d6c79c38e53b6379c2c09c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645825"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591006"
 ---
 # <a name="how-to-manually-create-web-templates"></a>Guide pratique pour créer manuellement des modèles web
 
@@ -41,7 +41,7 @@ La création d’un modèle web ne ressemble pas à la création d’autres genr
    - CSharp
    - VisualBasic
 
-     Exemple :
+     Par exemple :
 
      ```xml
      <TemplateData>

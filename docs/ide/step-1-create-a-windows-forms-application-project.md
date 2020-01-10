@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 897c4ba0bfa46e73115f8288770d088346498dee
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.openlocfilehash: 0a1c0184c11b745ef6c83c35b524884a139bc3d8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516698"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588783"
 ---
 # <a name="step-1-create-a-windows-forms-app-project"></a>Étape 1 : créer un projet d’application Windows Forms
 
@@ -27,7 +27,7 @@ Lorsque vous créez une visionneuse d’images, la première étape consiste à 
 
 1. Dans la barre de menus, choisissez **Fichier** > **Nouveau** > **Projet**. La boîte de dialogue doit ressembler à la capture d’écran suivante.
 
-     ![Nouveau projet, boîte de dialogue](../ide/media/newprojectdialogcallouts.png)<br/>***Boîte de dialogue*** *Nouveau projet*
+     ![Nouveau projet, boîte de dialogue](../ide/media/newprojectdialogcallouts.png)<br/>*Boîte de dialogue* ***nouveau projet***
 
 2. Sur le côté gauche de la boîte de dialogue **nouveau projet** , choisissez **Visual C#**  ou **Visual Basic**, puis choisissez **Bureau Windows**.
 
@@ -73,7 +73,7 @@ Visual Studio crée une solution pour votre application. Une solution agit comme
 
 1. L’environnement de développement contient trois fenêtres : une fenêtre principale, l’**Explorateur de solutions** et la fenêtre **Propriétés**.
 
-     Si l’une de ces fenêtres est manquante, vous pouvez restaurer la disposition de fenêtre par défaut. Dans la barre de menus, choisissez **fenêtre**  > **Réinitialiser la disposition de fenêtre**.
+     Si l’une de ces fenêtres est manquante, vous pouvez restaurer la disposition de fenêtre par défaut. Dans la barre de menus, choisissez **fenêtre** > **Réinitialiser la disposition de fenêtre**.
 
      Vous pouvez également afficher les fenêtres à l'aide des commandes de menu. Dans la barre de menus, choisissez **Affichage** > **Fenêtre Propriétés** ou **Explorateur de solutions**.
 
@@ -109,7 +109,7 @@ Visual Studio crée une solution pour votre application. Une solution agit comme
 
      Visual Studio renseigne automatiquement le nom du dossier et le nom du projet, puis crée le projet dans votre dossier de projets.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 * Pour passer à l’étape suivante du didacticiel, consultez **[étape 2 : exécuter votre application](../ide/step-2-run-your-program.md)** .
 

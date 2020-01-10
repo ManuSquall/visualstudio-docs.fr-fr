@@ -7,15 +7,15 @@ helpviewer_keywords:
 - load test, iterations
 - load tests, scenarios
 ms.assetid: ac480fb7-f4f7-47dc-9ae5-98be3aca4fba
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ae0f75ac19f858cba9de1e2d75d4ef5529da1d75
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e95ca27ace50c7b28d1ffb1d3fc02589daddee2d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665159"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590980"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>Configurer les itérations de tests dans un scénario de test de charge
 
@@ -53,7 +53,7 @@ La propriété **Nombre maximal d’itérations de test** est utile pour diverse
 
 3. Dans le dossier **Scénarios** des arborescences du test de charge, choisissez le nœud de scénario pour lequel vous souhaitez spécifier le nombre maximal d’itérations de tests.
 
-4. Dans le menu **Affichage**, sélectionnez la fenêtre **Propriétés**.
+4. Dans le menu **Affichage**, sélectionnez **Fenêtre Propriétés**.
 
      Les catégories et les propriétés du scénario s’affichent dans la fenêtre **Propriétés**.
 
@@ -62,7 +62,7 @@ La propriété **Nombre maximal d’itérations de test** est utile pour diverse
     > [!NOTE]
     > L’utilisation de la valeur 0 pour la propriété **Nombre maximal d’itérations de test** indique l’absence d’un nombre maximal d’itérations.
 
-6. Après avoir fini de changer la propriété, choisissez **Enregistrer** dans le menu **Fichier**. Vous pouvez exécuter ensuite votre test de charge à l’aide de la nouvelle valeur associée à **Nombre maximal d’itérations de test**.
+6. Après avoir changé la propriété, choisissez **Enregistrer** dans le menu **Fichier**. Vous pouvez exécuter ensuite votre test de charge à l’aide de la nouvelle valeur associée à **Nombre maximal d’itérations de test**.
 
 ## <a name="specify-think-times-between-test-iterations-for-a-scenario"></a>Spécifier des temps de réflexion entre les itérations de test d’un scénario
 
@@ -77,17 +77,17 @@ La propriété **Temps de réflexion entre les itérations de tests** est utilis
 
 1. Ouvrez un test de charge.
 
-     **L’Éditeur de test de charge** s’affiche. L'arborescence du test de charge s'affiche.
+     **L’éditeur de test de charge** s’affiche. L'arborescence du test de charge s'affiche.
 
 2. Dans le dossier **Scénarios** des arborescences du test de charge, choisissez le nœud de scénario dont vous souhaitez spécifier le temps de réflexion.
 
-3. Dans le menu **Affichage**, sélectionnez la fenêtre **Propriétés**.
+3. Dans le menu **Affichage**, sélectionnez **Fenêtre Propriétés**.
 
      Les catégories et les propriétés du scénario sont affichées dans la fenêtre **Propriétés**.
 
 4. Pour la valeur de la propriété **Temps de réflexion entre les itérations de tests**, indiquez un nombre qui représente le délai d’attente en secondes avant le démarrage de l’itération de test suivante.
 
-5. Après avoir fini de changer la propriété, choisissez **Enregistrer** dans le menu **Fichier**. Vous pouvez exécuter ensuite votre test de charge à l’aide de la nouvelle valeur associée à **Temps de réflexion entre les itérations de tests**.
+5. Après avoir changé la propriété, choisissez **Enregistrer** dans le menu **Fichier**. Vous pouvez exécuter ensuite votre test de charge à l’aide de la nouvelle valeur associée à **Temps de réflexion entre les itérations de tests**.
 
 ## <a name="see-also"></a>Voir aussi
 

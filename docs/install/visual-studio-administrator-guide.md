@@ -10,19 +10,19 @@ helpviewer_keywords:
 - administrator guide, Visual Studio
 - installing Visual Studio, administrator guide
 ms.assetid: 4af353f5-6cfd-4ebe-bcfb-f42306e451a0
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 89f34d027ec238b1e34724924ffb163267d56dc0
-ms.sourcegitcommit: 0bd63f3bc429ae059b9df6e45c6b8dcae6152940
-ms.translationtype: HT
+ms.openlocfilehash: 0508715637a3ac03c1377d3a337a6ded41a906de
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "70026472"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590928"
 ---
 # <a name="visual-studio-administrator-guide"></a>Guide de l’administrateur Visual Studio
 
@@ -40,7 +40,7 @@ Avant de déployer Visual Studio à l’échelle de votre organisation, vous ave
 
 * Déterminez vos besoins de maintenance.
 
-  Si votre entreprise a besoin de rester plus longtemps sur un ensemble de fonctionnalités, mais qu’elle souhaite quand même bénéficier de mises à jour de maintenance régulières, envisagez d’utiliser un planning de référence pour la maintenance. Pour plus d’informations, consultez la section ***Options de support pour les clients Enterprise et Professional*** de la page [Cycle de vie et maintenance des produits Visual Studio](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers), ainsi que la [Procédure pas à pas : Mettre à jour Visual Studio tout en étant sur une page de ligne de base](update-servicing-baseline.md) de maintenance.
+  Si votre entreprise a besoin de rester plus longtemps sur un ensemble de fonctionnalités, mais qu’elle souhaite quand même bénéficier de mises à jour de maintenance régulières, envisagez d’utiliser un planning de référence pour la maintenance. Pour plus d’informations, consultez la section ***options de support pour les entreprises et les clients professionnels*** de la page [cycle de vie et maintenance du produit Visual Studio](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers) , ainsi que la page [Comment : mettre à jour Visual Studio sur une ligne de base de maintenance](update-servicing-baseline.md) .
 
   Si vous envisagez d’appliquer des mises à jour de maintenance parallèlement aux mises à jour cumulatives des fonctionnalités, vous pouvez choisir les derniers composants.
 
@@ -62,7 +62,7 @@ Avant de déployer Visual Studio à l’échelle de votre organisation, vous ave
 
 * Déterminez vos besoins de maintenance.
 
-  Si votre entreprise a besoin de rester plus longtemps sur un ensemble de fonctionnalités, mais qu’elle souhaite quand même bénéficier de mises à jour de maintenance régulières, envisagez d’utiliser un planning de référence pour la maintenance. Pour plus d’informations, consultez la section ***Prise en charge des versions antérieures de Visual Studio*** de la page [Cycle de vie et maintenance des produits Visual Studio](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio), ainsi que la [Procédure pas à pas : Mettre à jour Visual Studio tout en étant sur une page de ligne de base](update-servicing-baseline.md) de maintenance.
+  Si votre entreprise a besoin de rester plus longtemps sur un ensemble de fonctionnalités, mais qu’elle souhaite quand même bénéficier de mises à jour de maintenance régulières, envisagez d’utiliser un planning de référence pour la maintenance. Pour plus d’informations, consultez la section ***prise en charge des versions antérieures de Visual Studio*** de la page de [maintenance et du cycle de vie des produits Visual Studio](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio) , ainsi que la page [Comment : mettre à jour Visual Studio sur une ligne de base de maintenance](update-servicing-baseline.md) .
 
   Si vous envisagez d’appliquer des mises à jour de maintenance parallèlement aux mises à jour cumulatives des fonctionnalités, vous pouvez choisir les derniers composants.
 

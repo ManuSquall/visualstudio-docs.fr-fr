@@ -3,17 +3,17 @@ title: 'Exemple de fichier XSD : relations'
 ms.date: 11/04/2016
 ms.topic: sample
 ms.assetid: 60126510-b7dd-4cb4-92d3-9883590b92f2
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d5342bece15fff25ba970270456aed96c5dc7f2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5a52d152a78ee585cc2724d8504feff1e72558cf
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72601751"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592553"
 ---
 # <a name="sample-xsd-file-relationships"></a>Exemple de fichier XSD : relations
 
@@ -65,4 +65,4 @@ Le fichier XSD suivant est utilisé dans différents exemples de la documentatio
 ```
 
 > [!NOTE]
-> Les noms de sociétés, d'organisations, de produits, de domaines, d'adresses de messagerie, de logos, de personnes, de lieux et d'événements mentionnés dans les exemples sont fictifs. Toute ressemblance avec des noms, des logos, des personnes, des lieux ou des événements réels est purement fortuite et involontaire.
+> Les sociétés, organisations, produits, noms de domaine, adresses de messagerie, logos, personnes, lieux et événements mentionnés dans les exemples sont fictifs. Toute ressemblance avec des noms, des logos, des personnes, des lieux ou des événements réels est purement fortuite et involontaire.

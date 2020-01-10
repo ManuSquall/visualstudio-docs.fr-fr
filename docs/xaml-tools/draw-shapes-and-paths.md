@@ -4,17 +4,17 @@ titleSuffix: Blend for Visual Studio
 ms.date: 07/31/2019
 ms.topic: conceptual
 ms.assetid: d5378c59-e2e5-49f0-91f1-aa82d984a33c
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cd722e6b8690ef5ff059b69db1fbc467eec7ca3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 29c74f74bbee19e414b3ee32948f3ca5338e8d53
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650932"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592986"
 ---
 # <a name="draw-shapes-and-paths"></a>Dessiner des formes et des tracés
 
@@ -88,7 +88,7 @@ Utilisez l’outil **Sélection** pour sélectionner le tracé. Utilisez l’out
 
 Pour modifier une forme à la manière d’un tracé, convertissez la forme en tracé. Sélectionnez la forme, puis sélectionnez **Format** > **Tracé** > **Convertir en tracé**.
 
-**Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.png) [Utilisation de tracés : convertir une forme en tracé](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).
+**Regardez une brève vidéo :** ![configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.png) l' [utilisation des chemins d’accès : convertir une forme en tracé](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).
 
 > [!NOTE]
 > L’option **Convertir en tracé** n’est pas disponible pour les applications UWP qui ont une `TargetPlatformVersion` minimale de 10.0.16299.0 (ou ultérieure).
@@ -105,7 +105,7 @@ Vous pouvez combiner des tracés et des formes pour en faire un seul et même tr
 |![Unir](../designers/media/b1_2.png)|Unir|![Exclure le chevauchement](../designers/media/b1_5.png)|Exclure le chevauchement|
 |![Diviser](../designers/media/b1_3.png)|Diviser|![Soustraire](../designers/media/b1_6.png)|Soustraire|
 
-**Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.png) [Utilisation de tracés : combiner des tracés](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).
+**Regardez une brève vidéo :** ![configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.png) l' [utilisation des chemins d’accès : combiner les chemins](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).
 
 ## <a name="create-a-compound-path"></a>Créer un tracé composite
 
@@ -115,7 +115,7 @@ Vous pouvez à tout moment dissocier un tracé composite après l’avoir créé
 
 ![Dissocier un tracé composite](../designers/media/2157a8aa-d9a7-4de4-8de5-b10d28f08a84.png)
 
-**Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.png) [Utilisation de tracés : créer un tracé composite](https://www.youtube.com/watch?v=Io5bC0-nH6Q).
+**Regardez une brève vidéo :** ![configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.png) l' [utilisation des chemins d’accès : créer un tracé composite](https://www.youtube.com/watch?v=Io5bC0-nH6Q).
 
 ## <a name="create-a-clipping-path"></a>Créer un tracé de détourage
 
@@ -123,4 +123,4 @@ Un tracé de détourage est un tracé ou une forme qui est appliqué à un autre
 
 ![Tracé de détourage](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png)
 
-**Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.png) [Utilisation de tracés : créer un tracé de détourage](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232).
+**Regardez une brève vidéo :** ![configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.png) l' [utilisation des chemins d’accès : créer un tracé de détourage](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232).
