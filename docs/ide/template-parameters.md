@@ -7,15 +7,15 @@ helpviewer_keywords:
 - template parameters [Visual Studio]
 - project templates, parameters
 - item templates, parameters
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 445a4fa7847ea5c9a5cb64da09cf54c763e86d16
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 582c87eee2586eab12f70e2d27341987e7cb7e2a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647398"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585884"
 ---
 # <a name="template-parameters"></a>Paramètres de modèle
 
@@ -23,7 +23,7 @@ Vous pouvez remplacer des valeurs dans votre modèle quand ce dernier est instan
 
 ## <a name="declare-and-enable-template-parameters"></a>Déclarer et activer des paramètres de modèle
 
-Les paramètres de modèle sont déclarés au format $*paramètre*$. Exemple :
+Les paramètres de modèle sont déclarés au format $*paramètre*$. Par exemple :
 
 - $safeprojectname$
 
@@ -58,14 +58,14 @@ Le tableau suivant liste les paramètres de modèle réservés qui peuvent être
 |registeredorganization|Valeur de clé de Registre provenant de HKLM\Software\Microsoft\Windows NT\CurrentVersion\RegisteredOrganization.|
 |rootnamespace|Espace de noms racine du projet actuel. Ce paramètre s’applique uniquement aux modèles d’élément.|
 |safeitemname|Identique à `itemname`, mais avec tous les caractères et espaces potentiellement dangereux remplacés par des caractères de trait de soulignement.|
-|safeitemrootname|Comme pour `safeitemname`.|
+|safeitemrootname|Identique à `safeitemname`.|
 |safeprojectname|Nom fourni par l’utilisateur quand le projet a été créé, dont tous les caractères et espaces potentiellement dangereux ont été supprimés.|
-|heure|Date et heure actuelles au format JJ/MM/AAAA 00:00:00.|
+|time|Date et heure actuelles au format JJ/MM/AAAA 00:00:00.|
 |specifiedSolutionName|Nom du fichier solution. Quand l’option "créer le répertoire de la solution" est cochée, `specifiedSolutionName` porte le nom de la solution. Quand l’option "créer le répertoire de solution" n’est pas cochée, `specifiedSolutionName` est vide.|
 |userdomain|Domaine de l’utilisateur actuel.|
-|Nom d’utilisateur|Nom de l’utilisateur actuel.|
+|nom_utilisateur|Nom de l’utilisateur actuel.|
 |webnamespace|Nom du site web actuel. Ce paramètre est utilisé dans le modèle de formulaire web pour garantir des noms de classes uniques. Si le site web se trouve dans le répertoire racine du serveur web, ce paramètre de modèle correspond à ce répertoire racine.|
-|année|Année actuelle au format AAAA.|
+|year|Année actuelle au format AAAA.|
 
 > [!NOTE]
 > Les paramètres de modèle respectent la casse.

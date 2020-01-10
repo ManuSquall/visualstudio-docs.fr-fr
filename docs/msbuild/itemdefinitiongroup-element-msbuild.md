@@ -13,17 +13,17 @@ helpviewer_keywords:
 - ItemDefinitionGroup Element [MSBuild]
 - <ItemDefinitionGroup> Element [MSBuild]
 ms.assetid: 4e9fb04b-5148-4ae5-a394-42861dd62371
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 130683b114c4601de209ec5f86b7b6f3e8bed027
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c5bfe09fec169495afa5b58a41f7c9f1b9bacfad
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001190"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75573467"
 ---
 # <a name="itemdefinitiongroup-element-msbuild"></a>ItemDefinitionGroup, élément (MSBuild)
 L’élément `ItemDefinitionGroup` vous permet de définir un ensemble de définitions d’élément, correspondant à des valeurs de métadonnées appliquées par défaut à tous les éléments du projet. ItemDefinitionGroup évite d’avoir à utiliser les tâches [CreateItem](../msbuild/createitem-task.md) et [CreateProperty](../msbuild/createproperty-task.md). Pour plus d’informations, consultez [Définitions d’éléments](../msbuild/item-definitions.md).
@@ -52,13 +52,13 @@ Les sections suivantes décrivent des attributs, des éléments enfants et des �
 
 |Élément|Description|
 |-------------|-----------------|
-|[Item](../msbuild/item-element-msbuild.md)|Définit les entrées du processus de génération. Un élément `ItemDefinitionGroup` peut ne contenir aucun élément `Item` ou en contenir plusieurs.|
+|[Item](../msbuild/item-element-msbuild.md)|Définit les entrées du processus de génération. Un élément `Item` peut ne contenir aucun élément `ItemDefinitionGroup` ou en contenir plusieurs.|
 
 ### <a name="parent-elements"></a>Éléments parents
 
 | Élément | Description |
 | - | - |
-| [Projet](../msbuild/project-element-msbuild.md) | Élément racine requis d'un fichier projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
+| [Projet](../msbuild/project-element-msbuild.md) | Élément racine requis d'un fichier projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. |
 
 ## <a name="example"></a>Exemple
 L’exemple de code suivant définit deux éléments de métadonnées, m et n, dans un élément ItemDefinitionGroup. Dans cet exemple, les métadonnées par défaut « m » sont appliquées à l’élément « i », car les métadonnées « m » ne sont pas explicitement définies par l’élément « i ». Cependant, les métadonnées par défaut « n » ne sont pas appliquées à l’élément « i », car les métadonnées « n » sont déjà définies par l’élément « i ».
