@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Analyse du code C/C++ pour détecter les erreurs'
+title: 'Procédure pas à pas : analyse du code C/C++ pour rechercher les erreurs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bdb99cf487995859b9623f11b3559f1b5e7e3ca7
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: e2154a07d498012c9c45f992ebed51b0218e823a
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018342"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75401018"
 ---
-# <a name="walkthrough-analyzing-cc-code-for-defects"></a>Procédure pas à pas : Analyse du code C/C++ pour détecter les erreurs
+# <a name="walkthrough-analyzing-cc-code-for-defects"></a>Procédure pas à pas : analyse du code C/C++ pour rechercher les erreurs
 
 Cette procédure pas à pas montre comment analyserC++ c/code pour identifier les erreurs de code potentielles à l’aideC++ de l’outil d’analyse du code pour c/code.
 
@@ -28,7 +28,7 @@ Cette procédure pas à pas montre comment analyserC++ c/code pour identifier le
 - Traiter l’avertissement comme une erreur.
 - Annoter le code source pour améliorer l’analyse des erreurs de code.
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Configuration requise
 
 - Copie de l' [exemple de démonstration](../code-quality/demo-sample.md).
 - Connaissances de base de CC++/.
@@ -49,7 +49,7 @@ Cette procédure pas à pas montre comment analyserC++ c/code pour identifier le
 
      La boîte de dialogue **pages de propriétés de CodeDefects** s’affiche.
 
-5. Cliquez sur **analyse du code**.
+5. Cliquez sur **Analyse du code**.
 
 6. Activez la case à cocher **activer l'C++ analyse du code pour C/on Build** .
 
@@ -59,17 +59,17 @@ Cette procédure pas à pas montre comment analyserC++ c/code pour identifier le
 
 ### <a name="to-analyze-code-defect-warnings"></a>Pour analyser les avertissements de défauts de code
 
-1. Dans le menu **affichage** , cliquez sur **liste d’erreurs**.
+1. Dans le menu **Affichage** , cliquez sur **Liste d'erreurs**.
 
      En fonction du profil de développeur que vous avez choisi dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], vous devrez peut-être pointer sur **autres fenêtres** dans le menu **affichage** , puis cliquer sur **liste d’erreurs**.
 
 2. Dans la **liste d’erreurs**, double-cliquez sur l’avertissement suivant :
 
-     avertissement C6230 : Cast implicite entre des types sémantiquement différents : utilisation de HRESULT dans un contexte booléen.
+     avertissement C6230 : cast implicite entre les types sémantiquement différents : utilisation de HRESULT dans un contexte booléen.
 
-     L’éditeur de code affiche la ligne qui a provoqué l’avertissement dans la fonction `bool ProcessDomain()`. Cet avertissement indique qu’un HRESULT est utilisé dans une instruction’If’où un résultat booléen est attendu.
+     L’éditeur de code affiche la ligne qui a provoqué l’avertissement dans la `bool ProcessDomain()`de la fonction. Cet avertissement indique qu’un `HRESULT` est utilisé dans une instruction’If’où un résultat booléen est attendu.  Il s’agit en général d’une erreur, car lorsque la `S_OK` HRESULT est retournée par la fonction, cette opération indique une réussite, mais lorsqu’elle est convertie en valeur booléenne, elle prend la valeur `false`.
 
-3. Corrigez cet avertissement à l’aide de la macro SUCCEEDED. Votre code doit ressembler au code suivant :
+3. Corrigez cet avertissement à l’aide de la macro `SUCCEEDED`, qui convertit en `true` lorsqu’une `HRESULT` valeur de retour indique la réussite de l’opération. Votre code doit ressembler au code suivant :
 
    ```cpp
    if (SUCCEEDED (ReadUserAccount()) )
@@ -77,7 +77,7 @@ Cette procédure pas à pas montre comment analyserC++ c/code pour identifier le
 
 4. Dans la **liste d’erreurs**, double-cliquez sur l’avertissement suivant :
 
-     AVERTISSEMENT C6282 : Opérateur incorrect : assignation à une constante dans le contexte de test. Était = = prévu ?
+     AVERTISSEMENT C6282 : opérateur incorrect : assignation à une constante dans le contexte de test. Était = = prévu ?
 
 5. Corrigez cet avertissement en vérifiant l’égalité. Votre code doit ressembler au code suivant :
 
@@ -111,7 +111,7 @@ Cette procédure pas à pas montre comment analyserC++ c/code pour identifier le
 
      La boîte de dialogue **pages de propriétés des annotations** s’affiche.
 
-3. Cliquez sur **analyse du code**.
+3. Cliquez sur **Analyse du code**.
 
 4. Cochez la case **activer l’analyse du codeC++ pour C/on Build** .
 
@@ -119,7 +119,7 @@ Cette procédure pas à pas montre comment analyserC++ c/code pour identifier le
 
 6. Dans la **liste d’erreurs**, double-cliquez sur l’avertissement suivant :
 
-     AVERTISSEMENT C6011 : Suppression de la référence du pointeur NULL’newNode'.
+     AVERTISSEMENT C6011 : suppression de la référence du pointeur NULL’newNode'.
 
      Cet avertissement indique un échec de la vérification par l’appelant de la valeur de retour. Dans ce cas, un appel à **AllocateNode** peut retourner une valeur null (consultez le fichier d’en-tête annotations. h pour la déclaration de fonction pour AllocateNode).
 
@@ -128,11 +128,11 @@ Cette procédure pas à pas montre comment analyserC++ c/code pour identifier le
 8. Pour corriger cet avertissement, utilisez une instruction’If’pour tester la valeur de retour. Votre code doit ressembler au code suivant :
 
    ```cpp
-   if (NULL != newNode)
+   if (nullptr != newNode)
    {
-   newNode->data = value;
-   newNode->next = 0;
-   node->next = newNode;
+       newNode->data = value;
+       newNode->next = 0;
+       node->next = newNode;
    }
    ```
 
@@ -142,40 +142,34 @@ Cette procédure pas à pas montre comment analyserC++ c/code pour identifier le
 
 ### <a name="to-use-source-code-annotation"></a>Pour utiliser l’annotation de code source
 
-1. Annotez les paramètres formels et la valeur de retour de la fonction `AddTail` en utilisant les conditions pre et postérieures comme indiqué dans l’exemple suivant :
+1. Annotez les paramètres formels et la valeur de retour de la fonction `AddTail` pour indiquer que les valeurs de pointeur peuvent être NULL :
 
    ```cpp
-   [returnvalue:SA_Post (Null=SA_Maybe)] LinkedList* AddTail
-   (
-   [SA_Pre(Null=SA_Maybe)] LinkedList* node,
-   int value
-   )
+   _Ret_maybenull_ LinkedList* AddTail(_Maybenull_ LinkedList* node, int value)
    ```
 
 2. Régénérez le projet annotations.
 
 3. Dans la **liste d’erreurs**, double-cliquez sur l’avertissement suivant :
 
-     AVERTISSEMENT C6011 : Suppression de la référence du pointeur NULL « node ».
+     AVERTISSEMENT C6011 : suppression de la référence du pointeur NULL’node'.
 
      Cet avertissement indique que le nœud passé dans la fonction peut avoir la valeur null, et indique le numéro de ligne où l’avertissement a été déclenché.
 
-4. Pour corriger cet avertissement, utilisez une instruction’If’pour tester la valeur de retour. Votre code doit ressembler au code suivant :
+4. Pour corriger cet avertissement, utilisez une instruction’If’au début de la fonction pour tester la valeur passée. Votre code doit ressembler au code suivant :
 
    ```cpp
-   . . .
-   LinkedList *newNode = NULL;
-   if (NULL == node)
+   if (nullptr == node)
    {
-        return NULL;
-        . . .
+        return nullptr;
    }
    ```
 
 5. Régénérez le projet annotations.
 
-     Le projet est généré sans avertissements ou erreurs.
+     Le projet se génère désormais sans avertissements ou erreurs.
 
 ## <a name="see-also"></a>Voir aussi
 
-[Procédure pas à pas : Analyse du code managé pour les erreurs de code @ no__t-0 @ no__t-1[analyse duC++ code pour C/](../code-quality/code-analysis-for-c-cpp-overview.md)
+[Procédure pas à pas : analyse du code managé pour les erreurs de code](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
+l' [analyse du code pour C/C++ ](../code-quality/code-analysis-for-c-cpp-overview.md)

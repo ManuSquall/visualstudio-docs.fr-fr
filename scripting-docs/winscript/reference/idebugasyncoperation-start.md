@@ -1,5 +1,5 @@
 ---
-title: 'IDebugAsyncOperation :: Start | Microsoft Docs'
+title: IDebugAsyncOperation::Start | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -42,7 +42,7 @@ HRESULT Start(
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|valeur|Description|  
+|Valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
 |`E_UNEXPECTED`|Une opération est déjà en attente.|  
@@ -51,7 +51,7 @@ HRESULT Start(
  Cette méthode provoque l’appel de `IDebugSyncOperation::Execute` de façon asynchrone dans le thread obtenu à partir d' `IDebugSyncOperation::GetTargetThread`. Cette méthode doit être appelée uniquement à partir du thread du débogueur ; dans le cas contraire, il ne sera pas retourné tant que l’opération n’est pas terminée.  
   
 ## <a name="see-also"></a>Voir aussi  
- [IDebugAsyncOperation :: Abort](../../winscript/reference/idebugasyncoperation-abort.md)    
- @No__t_1 de l' [interface IDebugAsyncOperation](../../winscript/reference/idebugasyncoperation-interface.md)  
- [IDebugSyncOperation :: execute](../../winscript/reference/idebugsyncoperation-execute.md)    
+ [IDebugAsyncOperation::Abort](../../winscript/reference/idebugasyncoperation-abort.md)   
+   de l' [interface IDebugAsyncOperation](../../winscript/reference/idebugasyncoperation-interface.md)  
+ [IDebugSyncOperation::Execute](../../winscript/reference/idebugsyncoperation-execute.md)   
  [IDebugSyncOperation::GetTargetThread](../../winscript/reference/idebugsyncoperation-gettargetthread.md)

@@ -29,5 +29,5 @@ Vous avez tenté de créer une expression à l’aide de l’opérateur conditio
 - Insérez un signe deux-points entre le deuxième et le troisième opérandes.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Opérateur conditionnel (ternaire) ( ?:)](../../javascript/reference/conditional-ternary-operator-decrement-javascript.md)    
+ [Opérateur conditionnel (ternaire) ( ?:)](../../javascript/reference/conditional-ternary-operator-decrement-javascript.md)   
  [Opérateurs](../../javascript/operators-javascript.md)

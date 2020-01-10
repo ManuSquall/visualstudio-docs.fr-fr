@@ -1,5 +1,5 @@
 ---
-title: IDispatchEx ::D eleteMemberByDispID | Microsoft Docs
+title: IDispatchEx::DeleteMemberByDispID | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -65,6 +65,6 @@ if (SUCCEEDED(pdex->GetDispID(bstrName, fdexNameCaseSensitive, &dispid)))
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- @No__t_1 de l' [interface IDispatchEx](../../winscript/reference/idispatchex-interface.md)  
- [IDispatchEx :: GetDispID](../../winscript/reference/idispatchex-getdispid.md)    
+   de l' [interface IDispatchEx](../../winscript/reference/idispatchex-interface.md)  
+ [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

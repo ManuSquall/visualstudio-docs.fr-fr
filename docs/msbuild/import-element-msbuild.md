@@ -13,17 +13,17 @@ helpviewer_keywords:
 - Import element [MSBuild]
 - <Import> element [MSBuild]
 ms.assetid: 3bfecaf1-69fd-4008-b651-c9dafd4389d9
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0dce682aad7ab0d049488a6da9b8ab4f3b444d88
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
-ms.translationtype: HT
+ms.openlocfilehash: 13ffaff052e672eb900d5ed3a1ce5ae7c2a370df
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531704"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75573991"
 ---
 # <a name="import-element-msbuild"></a>Import, élément (MSBuild)
 Importe le contenu d’un fichier projet dans un autre fichier projet.
@@ -42,23 +42,23 @@ Importe le contenu d’un fichier projet dans un autre fichier projet.
 
 ### <a name="attributes"></a>Attributs
 
-|Attribut|Description|
+|Attribute|Description|
 |---------------|-----------------|
 |`Project`|Attribut requis.<br /><br /> Chemin du fichier projet à importer. Le chemin peut inclure des caractères génériques. Les fichiers correspondants sont importés dans un ordre trié. Cette fonctionnalité vous permet d’ajouter du code à un projet simplement en ajoutant le fichier de code dans un répertoire.|
 |`Condition`|Attribut facultatif.<br /><br /> Condition à évaluer. Pour plus d’informations, consultez l’article [Conditions (Conditions MSBuild)](../msbuild/msbuild-conditions.md).|
 |`Sdk`| Attribut facultatif.<br /><br /> Référence un SDK de projet.|
 
 ### <a name="child-elements"></a>Éléments enfants
- Aucun.
+ Aucun
 
 ### <a name="parent-elements"></a>Éléments parents
 
 | Élément | Description |
 | - | - |
-| [Projet](../msbuild/project-element-msbuild.md) | Élément racine requis d'un fichier projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
+| [Project](../msbuild/project-element-msbuild.md) | Élément racine requis d'un fichier projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
 | [ImportGroup](../msbuild/importgroup-element.md) | Contient une collection d’éléments `Import` regroupés sous une condition facultative. |
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  L’élément `Import` vous permet de réutiliser du code commun à de nombreux fichiers projet. Cela facilite la maintenance du code, car les mises à jour que vous apportez au code partagé sont propagées à tous les projets qui l’importent.
 
  Par convention, les fichiers projet importés partagés sont enregistrés en tant que fichiers *.targets*, mais il s’agit de fichiers projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] standard. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ne vous empêche pas d’importer un projet ayant une extension de nom de fichier différente, mais nous vous recommandons d’utiliser l’extension *.targets* pour des raisons de cohérence.

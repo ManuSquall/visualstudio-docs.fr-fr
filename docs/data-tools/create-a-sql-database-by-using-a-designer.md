@@ -8,17 +8,17 @@ helpviewer_keywords:
 - database files, creating
 - table designer
 ms.assetid: 99c2b06f-47aa-414e-8057-a3453712fd23
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 14d30a366c7400b05a713f146e602ae9ccd7e766
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c8fa89b2cf6eb5afdf1d09a9b4de60cdc9ca11f2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648664"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586885"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Créer une base de données et ajouter des tables dans Visual Studio
 
@@ -26,13 +26,13 @@ Vous pouvez utiliser Visual Studio pour créer et mettre à jour un fichier de b
 
 ## <a name="prerequisites"></a>Configuration requise
 
-Pour effectuer cette procédure pas à pas, vous avez besoin des charges de travail de développement et de **stockage des données** **.net** et de traitement des données installées dans Visual Studio. Pour les installer, ouvrez **Visual Studio installer** et choisissez **modifier** (ou **plus**  > **modifier**) en regard de la version de Visual Studio que vous souhaitez modifier.
+Pour effectuer cette procédure pas à pas, vous avez besoin des charges de travail de développement et de **stockage des données** **.net** et de traitement des données installées dans Visual Studio. Pour les installer, ouvrez **Visual Studio installer** et choisissez **modifier** (ou **plus** > **modifier**) en regard de la version de Visual Studio que vous souhaitez modifier.
 
 ## <a name="create-a-project-and-a-local-database-file"></a>Créer un projet et un fichier de base de données local
 
 1. Créez un projet d' **application de Windows Forms** et nommez-le **ProcédureExempleBaseDonnées**.
 
-2. Dans la barre de menus, sélectionnez **projet**  > **Ajouter un nouvel élément**.
+2. Dans la barre de menus, sélectionnez **projet** > **Ajouter un nouvel élément**.
 
 3. Dans la liste des modèles d’élément, faites défiler vers le dessous et sélectionnez **base de données basée sur les services**.
 
@@ -42,7 +42,7 @@ Pour effectuer cette procédure pas à pas, vous avez besoin des charges de trav
 
 ### <a name="add-a-data-source"></a>Ajouter une source de données
 
-1. Si la **fenêtre sources de données** n’est pas ouverte, ouvrez-la en appuyant sur **maj** +**ALT** +**D** ou en sélectionnant **Afficher**  >  autres**sources de données** **Windows**  >  dans la barre de menus.
+1. Si la **fenêtre sources de données** n’est pas ouverte, ouvrez-la en appuyant sur **maj**+**ALT**+**D** ou en sélectionnant **Afficher** > autres **sources de données** **Windows** > dans la barre de menus.
 
 1. Dans la fenêtre **sources de données** , sélectionnez Ajouter une **nouvelle source de données**.
 
@@ -64,9 +64,9 @@ Pour effectuer cette procédure pas à pas, vous avez besoin des charges de trav
 
 Vous pouvez afficher la chaîne de connexion pour le fichier *SampleDatabase. mdf* en ouvrant le fenêtre Propriétés de la connexion de données :
 
-- Sélectionnez **afficher**  > **Explorateur d’objets SQL Server** pour ouvrir la fenêtre de **Explorateur d’objets SQL Server** . Développez (base de données locale **) \MSSQLLocalDB**  > **bases de données**, puis cliquez avec le bouton droit sur *SampleDatabase. mdf* et sélectionnez **Propriétés**.
+- Sélectionnez **afficher** > **Explorateur d’objets SQL Server** pour ouvrir la fenêtre de **Explorateur d’objets SQL Server** . Développez (base de données locale **) \MSSQLLocalDB** > **bases de données**, puis cliquez avec le bouton droit sur *SampleDatabase. mdf* et sélectionnez **Propriétés**.
 
-- Vous pouvez également sélectionner **afficher**  > **Explorateur de serveurs**si cette fenêtre n’est pas déjà ouverte. Ouvrez le Fenêtre Propriétés en développant le nœud **connexions de données** , en cliquant avec le bouton droit sur *SampleDatabase. mdf*, puis en sélectionnant **Propriétés**.
+- Vous pouvez également sélectionner **afficher** > **Explorateur de serveurs**si cette fenêtre n’est pas déjà ouverte. Ouvrez le Fenêtre Propriétés en développant le nœud **connexions de données** , en cliquant avec le bouton droit sur *SampleDatabase. mdf*, puis en sélectionnant **Propriétés**.
 
   > [!TIP]
   > Si vous ne pouvez pas développer le nœud Connexions de données, ou si la connexion SampleDatabase. mdf ne figure pas dans la liste, sélectionnez le bouton **se connecter à la base de données** dans la barre d’outils Explorateur de serveurs. Dans la boîte de dialogue **Ajouter une connexion** , assurez-vous que **Microsoft SQL Server fichier de base de données** est sélectionné sous **source de données**, puis recherchez et sélectionnez le fichier SampleDatabase. mdf. Terminez l’ajout de la connexion en sélectionnant **OK**.
@@ -83,7 +83,7 @@ Dans cette section, vous allez créer deux tables, une clé primaire dans chaque
 
 2. Cliquez avec le bouton droit sur **tables** , puis sélectionnez **Ajouter une nouvelle table**.
 
-   La Concepteur de tables s’ouvre et affiche une grille avec une ligne par défaut, qui représente une seule colonne dans la table que vous créez. En ajoutant des lignes à la grille, vous définissez des colonnes supplémentaires dans la table.
+   Le Concepteur de tables s'ouvre et affiche une grille avec une ligne par défaut, qui représente une seule colonne de la table que vous créez. En ajoutant des lignes à la grille, vous définissez des colonnes supplémentaires dans la table.
 
 3. Dans la grille, ajoutez une ligne pour chaque entrée suivante :
 
@@ -180,7 +180,7 @@ Dans cette section, vous allez créer deux tables, une clé primaire dans chaque
     > [!IMPORTANT]
     > Vérifiez que tous les ID de commande et quantités commandées sont des entiers et que chaque ID client correspond à une valeur que vous avez spécifiée dans la colonne **CustomerID** de la table Customers.
 
-7. Dans la barre de menus, sélectionnez **fichier**  > **enregistrer tout**.
+7. Dans la barre de menus, sélectionnez **fichier** > **enregistrer tout**.
 
 ## <a name="see-also"></a>Voir aussi
 

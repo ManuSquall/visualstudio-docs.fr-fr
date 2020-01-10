@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, property functions
 ms.assetid: 2253956e-3ae0-4bdc-9d3a-4881dfae4ddb
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a92d5a593c67f54b50649a48b8f973bbfbff8958
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: HT
+ms.openlocfilehash: b0551162a00437b01c7357dfdac16462aad8f2fc
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65694941"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597384"
 ---
 # <a name="property-functions"></a>Fonctions de propriétés
 
@@ -35,7 +35,7 @@ Il y a trois sortes de fonctions de propriété. Chaque fonction a une syntaxe d
 
 ### <a name="string-property-functions"></a>Fonctions de propriété de type chaîne
 
-Toutes les valeurs de propriété de build sont simplement des valeurs de chaîne. Vous pouvez utiliser des méthodes (d'instance) de chaîne pour effectuer des opérations sur toutes les valeurs de propriété. Par exemple, vous pouvez extraire le nom du lecteur (les trois premiers caractères) d'une propriété de build qui représente un chemin d'accès complet à l'aide de ce code :
+Toutes les valeurs de propriété de build sont simplement des valeurs de chaîne. Vous pouvez utiliser des méthodes (d'instance) de chaîne pour effectuer des opérations sur toutes les valeurs de propriété. Par exemple, vous pouvez extraire le nom du lecteur (les trois premiers caractères) d’une propriété de build qui représente un chemin d’accès complet à l’aide de ce code :
 
 ```fundamental
 $(ProjectOutputFolder.Substring(0,3))

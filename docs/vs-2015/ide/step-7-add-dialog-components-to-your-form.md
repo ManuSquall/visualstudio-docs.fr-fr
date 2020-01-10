@@ -16,7 +16,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74295683"
 ---
-# <a name="step-7-add-dialog-components-to-your-form"></a>Étape 7 : ajouter des composants Dialog à votre formulaire
+# <a name="step-7-add-dialog-components-to-your-form"></a>Étape 7 : ajouter des composants de dialogue à votre formulaire
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pour permettre à votre programme d’ouvrir les fichiers image et de choisir une couleur d’arrière-plan, vous devez maintenant ajouter un composant **OpenFileDialog** et un composant **ColorDialog** à votre formulaire.

@@ -11,22 +11,22 @@ helpviewer_keywords:
 - MSBuild, XslTransformation task
 - XslTransformation task [MSBuild]
 ms.assetid: 6f3a7d81-3ae3-4703-9a06-870b32b69d80
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8330cb006143244458c9da0f3e76060275607fa5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 90b56d3b36545ecfe97015fc301ce3ce72e781ba
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777601"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588367"
 ---
 # <a name="xsltransformation-task"></a>XslTransformation (tâche)
 Transforme une entrée XML à l’aide d’une transformation XSLT ou XSLT compilée, et génère la sortie dans un fichier ou un périphérique de sortie.
 
-## <a name="parameters"></a>Paramètres
+## <a name="parameters"></a>Parameters
  Le tableau ci-dessous décrit les paramètres de la tâche `XslTransformation` .
 
 |Paramètre|Description|
@@ -39,9 +39,9 @@ Transforme une entrée XML à l’aide d’une transformation XSLT ou XSLT compi
 |`XslContent`|Paramètre `String` facultatif.<br /><br /> Spécifie l’entrée XSLT sous forme de chaîne.|
 |`XslInputPath`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem> facultatif.<br /><br /> Spécifie le fichier d’entrée XSLT.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  En plus des paramètres répertoriés dans le tableau, cette tâche comprend des paramètres qu’elle hérite de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="see-also"></a>Voir aussi
-- [Tâches](../msbuild/msbuild-tasks.md)
+- [Tâches MSBuild](../msbuild/msbuild-tasks.md)
 - [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)

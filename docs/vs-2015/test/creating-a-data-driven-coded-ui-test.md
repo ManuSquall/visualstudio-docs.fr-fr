@@ -22,7 +22,7 @@ ms.locfileid: "74302598"
 
 Pour tester différentes conditions, vous pouvez exécuter vos tests à plusieurs reprises avec différentes valeurs de paramètre. Les tests codés de l'interface utilisateur pilotés par les données sont un moyen pratique pour cela. Vous définissez des valeurs de paramètre dans une source de données et chaque ligne de la source de données est une itération du test codé de l'interface utilisateur. Le résultat global du test repose sur le résultat de toutes les itérations. Par exemple, si une itération de test échoue, le résultat global du test est un échec.
 
- **Conditions requises**
+ **Requirements**
 
 - Visual Studio Enterprise
 
@@ -142,7 +142,7 @@ Pour tester différentes conditions, vous pouvez exécuter vos tests à plusieur
     > [!TIP]
     > Consultez les [exemples d’attributs de source de données](#CreateDataDrivenCUIT_QA_DataSourceAttributes) dans la section des questions et réponses sur l’utilisation d’autres types de source de données tels que XML, SQL Express et Excel.
 
-2. Exécutez le test.
+2. Exécuter le test.
 
      Notez que le test s'exécute via trois itérations. En effet, la source de données qui a été liée contient trois lignes de données. En revanche, vous pouvez remarquer que le test utilise toujours les valeurs de paramètre constantes et additionne 1 + 2 avec une somme de 3 à chaque fois.
 
@@ -235,7 +235,7 @@ Pour tester différentes conditions, vous pouvez exécuter vos tests à plusieur
      `[DataSource("System.Data.SqlClient", "Data Source=.\\sqlexpress;Initial Catalog=tempdb;Integrated Security=True", "Data", DataAccessMethod.Sequential), TestMethod]`
 
 ### <a name="q-can-i-use-data-driven-tests-on-my-windows-phone-app"></a>Q : puis-je utiliser des tests pilotés par les données dans mon application Windows Phone ?
- **R :** Oui. Les tests codés de l’interface utilisateur pilotés par les données pour Windows Phone sont définis à l’aide de l’attribut DataRow sur une méthode de test. Dans l’exemple suivant, x et y utilisent les valeurs 1 et 2 pour la première itération et -1 et -2 pour la seconde itération du test.
+ **R :** Oui. Les tests codés de l’interface utilisateur pilotés par les données pour Windows Phone sont définis à l’aide de l’attribut DataRow sur une méthode de test. Dans l’exemple suivant, x et y utilisent les valeurs 1 et 2 pour la première itération et -1 et -2 pour la seconde itération du test.
 
 ```
 [DataRow(1, 2, DisplayName = "Add positive numbers")]
@@ -246,7 +246,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 ```
 
 ### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>Q : pourquoi ne puis-je pas modifier le code du fichier UIMap.Designer ?
- **R** : Toutes les modifications de code que vous effectuez dans le fichier UIMapDesigner.cs sont remplacées chaque fois que vous générez du code dans UIMap - Générateur de test codé de l'interface utilisateur. Dans cet exemple et dans la plupart des cas, les modifications de code nécessaires pour permettre à un test d'utiliser une source de données peuvent être apportées au fichier de code source du test (c'est-à-dire, CodedUITest1.cs).
+ **R :** toutes les modifications du code que vous effectuez dans le fichier UIMapDesigner.cs sont remplacées chaque fois que vous générez du code dans UIMap - Générateur de test codé de l’interface utilisateur. Dans cet exemple et dans la plupart des cas, les modifications de code nécessaires pour permettre à un test d'utiliser une source de données peuvent être apportées au fichier de code source du test (c'est-à-dire, CodedUITest1.cs).
 
  Si vous devez modifier une méthode enregistrée, vous devez la copier dans le fichier UIMap.cs et la renommer. Le fichier UIMap.cs peut être utilisé pour remplacer les méthodes et les propriétés dans le fichier UIMapDesigner.cs. Vous devez supprimer la référence à la méthode d’origine dans le fichier Coded UITest.cs et la remplacer par le nom de la méthode renommée.
 
@@ -256,5 +256,5 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 - [Utiliser UI Automation pour tester votre code](../test/use-ui-automation-to-test-your-code.md)
 - [Création de tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)
-- [Meilleures pratiques pour les tests codés de l'interface utilisateur](../test/best-practices-for-coded-ui-tests.md)
-- [Plateformes et configurations prises en charge pour les tests codés de l'interface utilisateur et les enregistrements des actions](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+- [Bonnes pratiques pour les tests codés de l’interface utilisateur](../test/best-practices-for-coded-ui-tests.md)
+- [Plateformes et configurations prises en charge pour les tests codés de l’interface utilisateur et les enregistrements des actions](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

@@ -22,7 +22,7 @@ ms.locfileid: "74291229"
 
 [!INCLUDE [storage-try-azure-tools](./includes/storage-try-azure-tools.md)]
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Overview
 
 Si vous avez installé Azure Tools pour Microsoft Visual Studio, vous pouvez afficher les données relatives aux objets blob, aux files d’attente et aux tables à partir de vos comptes de stockage Azure. Le nœud Azure **Storage** de l’Explorateur de serveurs affiche les données qui se trouvent dans votre compte d’émulateur de stockage local et dans vos autres comptes de stockage Azure.
 
@@ -32,7 +32,7 @@ Pour afficher l’Explorateur de serveurs dans Visual Studio, sélectionnez **Af
 
 ## <a name="view-and-manage-storage-resources-in-visual-studio"></a>Afficher et gérer les ressources de stockage dans Visual Studio
 
-L’Explorateur de serveurs affiche automatiquement la liste des objets blob, des files d’attente et des tables de votre compte d’émulateur de stockage. Le compte d’émulateur de stockage est répertorié dans l’Explorateur de serveurs sous le nœud **Storage**, en tant que nœud **Développement**.
+L'Explorateur de serveurs montre automatiquement une liste d'objets blob, de files d'attente et de tables de votre compte d'émulateur de stockage. Le compte d’émulateur de stockage est répertorié dans l’Explorateur de serveurs sous le nœud **Storage**, en tant que nœud **Développement**.
 
 Pour afficher les ressources du compte de l’émulateur de stockage, développez le nœud **Développement** . Si l’émulateur de stockage n’a pas encore été démarré quand vous développez le nœud **Développement**, il démarre automatiquement. Ce processus peut prendre plusieurs secondes. Vous pouvez continuer à travailler dans d’autres parties de Visual Studio pendant le démarrage de l’émulateur de stockage.
 
@@ -40,7 +40,7 @@ Pour afficher les ressources dans un compte de stockage, développez le nœud du
 
 ## <a name="work-with-blob-resources"></a>Utilisation des ressources d’objets blob
 
-Le nœud **Objets blob** affiche la liste des conteneurs associés au compte de stockage sélectionné. Les conteneurs d’objets blob contiennent des fichiers d’objets blob, que vous pouvez ranger dans des dossiers et des sous-dossiers. Pour plus d’informations, voir [Utilisation du stockage d’objets blob à partir de .NET](/azure/storage/blobs/storage-dotnet-how-to-use-blobs).
+Le nœud **Objets BLOB** affiche une liste de conteneurs pour le compte de stockage sélectionné. Les conteneurs d’objets blob contiennent des fichiers d’objets blob, que vous pouvez ranger dans des dossiers et des sous-dossiers. Pour plus d’informations, voir [Utilisation du stockage d’objets blob à partir de .NET](/azure/storage/blobs/storage-dotnet-how-to-use-blobs).
 
 ### <a name="to-create-a-blob-container"></a>Pour créer un conteneur d’objets blob
 
@@ -78,11 +78,11 @@ Vous pouvez effectuer les opérations suivantes sur les objets blob en utilisant
 
 1. Dans la boîte de dialogue **Télécharger un nouveau fichier**, sélectionnez le bouton **Parcourir** pour spécifier le fichier à charger, puis entrez un nom de dossier dans la zone **Dossier (facultatif)** .
 
-   ![Chargement d’un fichier dans un dossier d’objets blob](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766037.png)
+   ![Téléchargement d'un fichier dans un dossier d'objets blob](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766037.png)
 
    Vous pouvez ajouter des sous-dossiers dans les dossiers du conteneur en suivant la même étape. Si vous ne spécifiez pas de nom de dossier, le fichier est chargé dans le niveau supérieur du conteneur d’objets blob. Le fichier apparaîtra dans le dossier spécifié du conteneur.
 
-   ![Dossier ajouté à un conteneur d’objets blob](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766038.png)
+   ![Dossier ajouté à un conteneur d'objets blob](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766038.png)
 
 1. Double-cliquez sur le dossier ou sélectionnez Entrée pour afficher le contenu du dossier. Une fois le dossier ouvert, vous pouvez retourner à la racine du conteneur en sélectionnant le bouton **Ouvrir le répertoire parent** (flèche).
 
@@ -110,7 +110,7 @@ Dans Cloud Explorer, utilisez une des méthodes suivantes :
 * Choisissez le nom de l’objet blob, puis sélectionnez le bouton **Ouvrir**.
 * Double-cliquez sur le nom de l’objet blob.
 
-La progression du téléchargement d’un objet blob s’affiche dans la fenêtre **Journal des activités Azure** .
+La progression du téléchargement d'un objet blob s'affiche dans la fenêtre **Journal des activités Azure**.
 
 L’objet blob s’ouvre dans l’éditeur par défaut pour ce type de fichier. Si le système d’exploitation reconnaît le type de fichier, le fichier s’ouvre dans une application installée localement. Dans le cas contraire, vous êtes invité à choisir une application qui est appropriée pour le type de fichier de l’objet blob. Le fichier local qui est créé quand vous téléchargez un objet blob est en lecture seule.
 
@@ -142,11 +142,11 @@ Le fichier est téléchargé vers un emplacement temporaire et ouvert sur l’or
 
 ## <a name="work-with-queue-resources"></a>Utiliser des ressources de file d’attente
 
-Les files d’attente des services de stockage sont hébergées dans un compte de stockage Azure. Vous pouvez les utiliser pour permettre à vos rôles de service cloud de communiquer entre eux et avec d’autres services par un mécanisme de transmission de messages. Vous pouvez accéder par programmation à la file d’attente via un service cloud et via un service web pour les clients externes. Vous pouvez également accéder à la file d’attente directement à l’aide de l’Explorateur de serveurs dans Visual Studio.
+Les files d’attente des services de stockage sont hébergées dans un compte de stockage Azure. Vous pouvez les utiliser pour permettre à vos rôles de service cloud de communiquer entre eux et avec d’autres services par un mécanisme de transmission de messages. Vous pouvez accéder par programmation à la file d’attente via un service cloud et via un service web pour les clients externes. Vous pouvez également accéder à la file d'attente directement à l'aide de l'Explorateur de serveurs dans Visual Studio.
 
 Quand vous développez un service cloud qui utilise des files d’attente, vous pouvez utiliser Visual Studio pour créer des files d’attente et les utiliser de manière interactive quand vous développez et testez votre code.
 
-Dans l’Explorateur de serveurs, vous pouvez afficher les files d’attente dans un compte de stockage, créer et supprimer des files d’attente, ouvrir une file d’attente pour consulter ses messages et ajouter des messages à une file d’attente. Quand vous ouvrez une file d’attente, vous pouvez afficher les messages qu’elle contient. De plus, vous pouvez effectuer les actions suivantes sur la file d’attente à l’aide des boutons situés dans l’angle supérieur gauche :
+Dans l'Explorateur de serveurs, vous pouvez afficher les files d'attente dans un compte de stockage, créer et supprimer des files d'attente, ouvrir une file d'attente pour consulter ses messages, et ajouter des messages à une file d'attente. Quand vous ouvrez une file d’attente, vous pouvez afficher les messages qu’elle contient. De plus, vous pouvez effectuer les actions suivantes sur la file d’attente à l’aide des boutons situés dans l’angle supérieur gauche :
 
 * Actualiser la vue de la file d’attente.
 * Ajoutez un message dans la file d’attente.
@@ -177,7 +177,7 @@ Le stockage de table Azure permet de stocker de grandes quantités de données s
 1. Ouvrez le nœud du compte de stockage qui vous intéresse, puis ouvrez le nœud **Tables** pour afficher la liste des tables associées au compte de stockage.
 1. Ouvrez le menu contextuel d’une table, puis sélectionnez **Afficher la table**.
 
-    ![Table Azure dans l’Explorateur de solutions](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC744165.png)
+    ![Table Azure dans l'Explorateur de solution](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC744165.png)
 
 La table est organisée en entités (lignes) et propriétés (colonnes). Par exemple, l’illustration suivante montre les entités répertoriées dans le Concepteur de tables.
 
@@ -200,7 +200,7 @@ Il n’est pas nécessaire que les entités d’une table possèdent les mêmes 
 
     ![Bouton Ajouter une entité](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC655336.png)
 
-1. Dans la boîte de dialogue **Ajouter une entité**, entrez les valeurs des propriétés **PartitionKey** et **RowKey**.
+1. Dans la boîte de dialogue **Ajouter une entité**, saisissez les valeurs des propriétés **PartitionKey** et **RowKey**.
 
     ![Boîte de dialogue Ajouter une entité](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC655335.png)
 
@@ -213,7 +213,7 @@ Vous pouvez personnaliser les entités qui s’affichent dans une table à l’a
 1. Pour ouvrir le Générateur de requêtes, ouvrez une table pour afficher son contenu.
 1. Sélectionnez le bouton **Générateur de requêtes** de la vue de la table.
 
-    La boîte de dialogue **Générateur de requêtes** s’affiche. L’illustration suivante montre la génération d’une requête dans le Générateur de requêtes.
+    La boîte de dialogue **Générateur de requêtes** apparaît. L’illustration suivante montre la génération d’une requête dans le Générateur de requêtes.
 
     ![Générateur de requêtes](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC652231.png)
 1. Quand vous avez terminé la création de la requête, fermez la boîte de dialogue. Le formulaire de texte de la requête qui en résulte s’affiche dans une zone de texte en tant que filtre WCF Data Services.
@@ -249,7 +249,7 @@ Choisissez le nom du compte, puis sélectionnez le bouton **Actualiser** dans la
 
 ## <a name="add-storage-accounts-by-using-server-explorer"></a>Ajouter des comptes de stockage à l’aide de l’Explorateur de serveurs
 
-Il existe deux façons d’ajouter des comptes de stockage à l’aide de l’Explorateur de serveurs. Vous pouvez créer un compte de stockage dans votre abonnement Azure, ou vous pouvez attacher un compte de stockage existant.
+Il existe deux façons d'ajouter des comptes de stockage à l'aide de l'Explorateur de serveurs. Vous pouvez créer un compte de stockage dans votre abonnement Azure, ou vous pouvez attacher un compte de stockage existant.
 
 ### <a name="to-create-a-storage-account-by-using-server-explorer"></a>Pour créer un compte de stockage à l’aide de l’Explorateur de serveurs
 
@@ -259,7 +259,7 @@ Il existe deux façons d’ajouter des comptes de stockage à l’aide de l’Ex
 
    * L’abonnement Azure auquel vous voulez ajouter le compte de stockage
    * Le nom que vous voulez utiliser pour le nouveau compte de stockage
-   * La région ou le groupe d’affinités (comme USA Ouest ou Asie Est)
+   * La région ou le groupe d'affinités (comme USA Ouest ou Asie Est).
    * Le type de réplication que vous voulez utiliser pour le compte de stockage, par exemple localement redondant
 
    ![Créer un compte de stockage Azure](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC744166.png)
@@ -272,12 +272,12 @@ Le nouveau compte de stockage s’affiche dans la liste **Stockage** de l’Expl
 
 1. Dans l’Explorateur de serveurs, ouvrez le menu contextuel du nœud Azure **Stockage**, puis sélectionnez **Attacher un stockage externe**.
 
-    ![Ajout d’un compte de stockage existant](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766039.png)
+    ![Ajout d'un compte de stockage existant](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC766039.png)
 1. Dans la boîte de dialogue **Créer un compte de stockage**, sélectionnez ou entrez les informations suivantes :
 
    * Le nom du compte de stockage existant que vous voulez attacher.
    * La clé du compte de stockage sélectionné. Cette valeur est généralement fournie quand vous sélectionnez un compte de stockage. Si vous voulez que Visual Studio se souvienne de la clé du compte de stockage, cochez la case **Mémoriser la clé du compte**.
-   * Le protocole à utiliser pour se connecter au compte de stockage, par exemple HTTP, HTTPS ou un point de terminaison personnalisé. Pour plus d’informations sur les points de terminaison personnalisés, consultez [Configuration de chaînes de connexion](https://msdn.microsoft.com/library/azure/ee758697.aspx).
+   * Le protocole à utiliser pour se connecter au compte de stockage, comme HTTP, HTTPS ou un point de terminaison personnalisé. Pour plus d’informations sur les points de terminaison personnalisés, consultez [Configuration de chaînes de connexion](https://msdn.microsoft.com/library/azure/ee758697.aspx).
 
 ### <a name="to-view-the-secondary-endpoints"></a>Pour afficher les points de terminaison secondaires
 
@@ -293,6 +293,6 @@ Si vous supprimez un compte de stockage, toutes les informations de clé enregis
 
 Si vous supprimez un compte de stockage à partir de l’Explorateur de serveurs, cela n’affecte pas votre compte de stockage ni les données qu’il contient. Cela supprime simplement sa référence dans l’Explorateur de serveurs. Pour supprimer définitivement un compte de stockage, utilisez le [portail Azure](https://portal.azure.com/).
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 Pour en savoir plus sur l’utilisation des services de stockage Azure, consultez [Présentation du stockage Azure](/azure/storage/common/storage-introduction).

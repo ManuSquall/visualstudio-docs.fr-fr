@@ -1,5 +1,5 @@
 ---
-title: 'IActiveScriptStats :: GetStat | Microsoft Docs'
+title: IActiveScriptStats::GetStat | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -41,7 +41,7 @@ HRESULT GetStat(
  `stid`  
  dans Spécifie les statistiques à retourner. Doit être la valeur :  
   
-|Constante|valeur|Description|  
+|Constante|Valeur|Description|  
 |--------------|-----------|-----------------|  
 |SCRIPTSTAT_STATEMENT_COUNT|1|Retourne le nombre d’instructions exécutées depuis le début du script ou la réinitialisation des statistiques.|  
   
@@ -54,7 +54,7 @@ HRESULT GetStat(
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles incluent, mais ne sont pas limitées aux valeurs du tableau suivant.  
   
-|valeur|Description|  
+|Valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
@@ -62,5 +62,5 @@ HRESULT GetStat(
  Cette méthode retourne l’une des statistiques de script standard.  
   
 ## <a name="see-also"></a>Voir aussi  
- [IActiveScriptStats :: GetStatEx](../../winscript/reference/iactivescriptstats-getstatex.md)    
+ [IActiveScriptStats::GetStatEx](../../winscript/reference/iactivescriptstats-getstatex.md)   
  [Interface IActiveScriptStats](../../winscript/reference/iactivescriptstats-interface.md)

@@ -6,17 +6,17 @@ f1_keywords:
 - vs.graphics.designer.3dscene
 - vs.graphics.modelviewer
 ms.assetid: 5edf1a30-9307-43c3-9b8b-831217be0104
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13ca91c431f574190a5cddbe17f1b042685056bb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7adee409ff6bb5721724b9acc2e76a11d32a4f54
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72635029"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589849"
 ---
 # <a name="model-editor"></a>Éditeur de modèle
 
@@ -45,7 +45,7 @@ Cette section explique comment ajouter un modèle 3D à un projet C++ Visual Stu
 
 1. Vérifiez que le composant Visual Studio dont vous avez besoin pour travailler avec les graphismes est installé. Il s’appelle **Éditeurs d’images et de modèles 3D**.
 
-   Pour l’installer, ouvrez Visual Studio Installer en sélectionnant **outils**  > **afficher les outils et les fonctionnalités** dans la barre de menus, puis sélectionnez l’onglet **composants individuels** . Sélectionnez le composant **éditeurs d’images et de modèles 3D** sous le  **Catégorie Jeux et graphismes** , puis sélectionnez **modifier**.
+   Pour l’installer, ouvrez Visual Studio Installer en sélectionnant **outils** > **Afficher outils et fonctionnalités** dans la barre de menus, puis sélectionnez l’onglet **composants individuels** . Sélectionnez le composant **éditeurs d’images et de modèles 3D** sous la catégorie **jeux et graphismes** , puis sélectionnez **modifier**.
 
    ![Composant Éditeurs d’images et de modèles 3D](media/image-3d-model-editors-component.png)
 
@@ -289,17 +289,17 @@ L'éditeur de modèle utilise une maquette blanche pour identifier le premier ob
 
 Pour supprimer l’association parent-enfant entre deux objets, sélectionnez l’objet enfant puis, dans la barre d’outils **Éditeur de modèle**, choisissez **Scripts** > **Gestion des scènes** > **Détacher du parent**. Lorsque vous détachez le parent d'un objet enfant, l'objet enfant devient un objet racine dans la scène.
 
-## <a name="keyboard-shortcuts"></a>Raccourcis clavier
+## <a name="keyboard-shortcuts"></a>raccourcis clavier
 
-|Commande|Raccourcis clavier|
+|Command|raccourcis clavier|
 |-------------| - |
 |Passer en mode **Sélection**|**Ctrl**+**G**, **Ctrl**+**Q**<br /><br /> **S**|
 |Passer en mode **Zoom**|**Ctrl**+**G**, **Ctrl**+**Z**<br /><br /> **Z**|
 |Passer en mode **Panoramique**|**Ctrl**+**G**, **Ctrl**+**P**<br /><br /> **K**|
 |Sélectionner tout|**Ctrl**+**A**|
 |Supprimer la sélection actuelle|**Supprimer**|
-|Annuler la sélection actuelle|**Échappement** (**Échap**)|
-|Zoom avant|**Roulette de la souris vers l’avant**<br /><br /> **Ctrl**+**Roulette de la souris vers l’avant**<br /><br /> **Maj**+**Roulette de la souris vers l’avant**<br /><br /> **Ctrl**+**Pg. préc**<br /><br /> Signe plus ( **+** )|
+|Annuler la sélection actuelle|**Séquence d’échappement** (**Échap**)|
+|Zoom avant.|**Roulette de la souris vers l’avant**<br /><br /> **Ctrl**+**Roulette de la souris vers l’avant**<br /><br /> **Maj**+**Roulette de la souris vers l’avant**<br /><br /> **Ctrl**+**Pg. préc**<br /><br /> Signe plus ( **+** )|
 |Zoom arrière|**Roulette de la souris vers l’arrière**<br /><br /> **Ctrl**+**Roulette de la souris vers l’arrière**<br /><br /> **Maj**+**Roulette de la souris vers l’arrière**<br /><br /> **Ctrl**+**Pg. suiv**<br /><br /> Signe moins ( **-** )|
 |Mouvement panoramique de la caméra vers le haut|**Pg. suiv**|
 |Mouvement panoramique de la caméra vers le bas|**Pg. préc**|

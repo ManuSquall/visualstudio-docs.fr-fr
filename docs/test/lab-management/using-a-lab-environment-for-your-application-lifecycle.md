@@ -4,17 +4,17 @@ ms.date: 05/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - lab environment, test lab
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: d33562c686365029bc75781c76ad26d772dfcf66
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: c9d7e90e0c4eb48a19c36ad86d8f438080b38d62
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653096"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588900"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>Utiliser un environnement lab pour votre DevOps
 
@@ -92,23 +92,23 @@ Pour plus d’informations sur SCVMM, consultez [Virtual Machine Manager](/azure
 
 Les environnements standard et SCVMM prennent en charge une grande partie de ces fonctionnalités. Il existe cependant des différences importantes. Le tableau ci-dessous permet de comparer les fonctionnalités qui sont disponibles pour les environnements standard et les environnements SCVMM.
 
-|Fonctionnalité|Environnement SCVMM|Environnements standard|
+|Capability|Environnement SCVMM|Environnements standard|
 |-|------------------------|-|
 |**Test**|||
-|Exécuter des tests manuels|Prise en charge|Prise en charge|
-|Exécuter des tests codés de l'interface utilisateur et autres tests automatisés|Prise en charge|Prise en charge|
-|Signaler des bogues riches à l'aide des adaptateurs de diagnostics|Prise en charge|Prise en charge|
+|Exécuter des tests manuels|pris en charge|pris en charge|
+|Exécuter des tests codés de l'interface utilisateur et autres tests automatisés|pris en charge|pris en charge|
+|Signaler des bogues riches à l'aide des adaptateurs de diagnostics|pris en charge|pris en charge|
 |**Déploiement de build**|||
-|Flux de travail Création-Déploiement-Test automatisés|Prise en charge|Prise en charge|
+|Flux de travail Création-Déploiement-Test automatisés|pris en charge|pris en charge|
 |**Création et gestion d’environnements**|||
-|Utiliser des ordinateurs physiques en plus des ordinateurs virtuels|Non pris en charge|Prise en charge|
-|Utiliser des ordinateurs virtuels tiers|Non pris en charge|Prise en charge|
-|Installer automatiquement des agents de test sur les ordinateurs d'un environnement lab|Prise en charge|Prise en charge|
-|Enregistrer et déployer l'état d'un environnement lab à l'aide d'instantanés d'environnement|Prise en charge|Non pris en charge|
-|Créer des environnements lab à partir de modèles d'ordinateurs virtuels|Prise en charge|Non pris en charge|
-|Démarrage, arrêt et prise d'instantané d'environnement|Prise en charge|Non pris en charge|
-|Se connecter à l'environnement à l'aide de la visionneuse d'environnement|Prise en charge|Prise en charge|
-|Exécuter simultanément plusieurs copies d'un environnement grâce à l'isolement réseau|Prise en charge|Non pris en charge|
+|Utiliser des ordinateurs physiques en plus des ordinateurs virtuels|Non pris en charge|pris en charge|
+|Utiliser des ordinateurs virtuels tiers|Non pris en charge|pris en charge|
+|Installer automatiquement des agents de test sur les ordinateurs d'un environnement lab|pris en charge|pris en charge|
+|Enregistrer et déployer l'état d'un environnement lab à l'aide d'instantanés d'environnement|pris en charge|Non pris en charge|
+|Créer des environnements lab à partir de modèles d'ordinateurs virtuels|pris en charge|Non pris en charge|
+|Démarrage, arrêt et prise d'instantané d'environnement|pris en charge|Non pris en charge|
+|Se connecter à l'environnement à l'aide de la visionneuse d'environnement|pris en charge|pris en charge|
+|Exécuter simultanément plusieurs copies d'un environnement grâce à l'isolement réseau|pris en charge|Non pris en charge|
 
 ### <a name="lab-management-concepts"></a>Terminologie Lab management
 

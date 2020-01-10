@@ -1,5 +1,5 @@
 ---
-title: Comment les Extensions aller-retour
+title: Comment aller-retour des extensions
 ms.date: 06/25/2017
 ms.topic: conceptual
 ms.assetid: 2d6cf53c-011e-4c9e-9935-417edca8c486
@@ -8,99 +8,99 @@ ms.author: madsk
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: 392a0157522f5baa8e8736d52c940b31c0a44cde
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 44b5c5c58c46017730f06142548505c628894a11
+ms.sourcegitcommit: b04c603ce73b993d042ebdf7f3722cf4fe2ef7f4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67826031"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74316485"
 ---
-# <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Procédure : Créer des extensions compatible avec Visual Studio 2017 et Visual Studio 2015
+# <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Comment : rendre des extensions compatibles avec Visual Studio 2017 et Visual Studio 2015
 
-Ce document explique comment créer des projets d’extensibilité aller-retour entre Visual Studio 2015 et Visual Studio 2017. À l’issue de cette mise à niveau, un projet seront en mesure d’ouvrir, générer, installer et exécuter dans Visual Studio 2015 et Visual Studio 2017. En tant que référence, certaines extensions que vous peuvent effectuer un aller-retour entre Visual Studio 2015 et Visual Studio 2017 se trouve dans le [exemples d’extensibilité de Visual Studio SDK](https://github.com/Microsoft/VSSDK-Extensibility-Samples).
+Ce document explique comment faire des allers-retours entre Visual Studio 2015 et Visual Studio 2017 pour les projets d’extensibilité. À l’issue de cette mise à niveau, un projet pourra ouvrir, générer, installer et exécuter dans Visual Studio 2015 et Visual Studio 2017. À titre de référence, certaines extensions qui peuvent aller-retour entre Visual Studio 2015 et Visual Studio 2017 se trouvent dans les [exemples d’extensibilité du kit de développement logiciel (SDK) vs](https://github.com/Microsoft/VSSDK-Extensibility-Samples).
 
-Si vous souhaitez uniquement créer dans Visual Studio 2017, mais la sortie VSIX à exécuter dans Visual Studio 2015 et Visual Studio 2017, puis vous référer à la [document de migration d’Extension](how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
+Si vous envisagez de générer uniquement dans Visual Studio 2017, mais que vous souhaitez que le VSIX de sortie s’exécute à la fois dans Visual Studio 2015 et dans Visual Studio 2017, reportez-vous au document sur la [migration des extensions](how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
 
 > [!NOTE]
-> En raison de modifications dans Visual Studio entre les versions, certaines choses qui fonctionnait dans une version ne fonctionnent pas dans un autre. Assurez-vous que les fonctionnalités que vous essayez d’accéder sont disponibles dans les deux versions ou l’extension aura des résultats inattendus.
+> En raison des modifications apportées à Visual Studio entre les versions, certaines choses qui fonctionnaient dans une version ne fonctionnent pas dans une autre. Assurez-vous que les fonctionnalités auxquelles vous essayez d’accéder sont disponibles dans les deux versions ou que l’extension aura des résultats inattendus.
 
-Voici une brève présentation des étapes que vous effectuerez dans ce document pour effectuer un aller-retour d’une extension VSIX :
+Voici un aperçu des étapes que vous allez effectuer dans ce document pour effectuer un aller-retour d’une extension VSIX :
 
-1. Importer les packages NuGet corrects.
-2. Mettre à jour du manifeste d’Extension :
+1. Importez les packages NuGet appropriés.
+2. Mettre à jour le manifeste d’extension :
     * Cible d’installation
-    * Prérequis
-3. Mise à jour CSProj :
-    * Mise à jour `<MinimumVisualStudioVersion>`.
-    * Ajouter le `<VsixType>` propriété.
-    * Ajoutez la propriété débogage `($DevEnvDir)` 3 fois.
-    * Ajouter des conditions pour l’importation des outils de génération et de cibles.
+    * Configuration requise
+3. Mettre à jour CSProj :
+    * Mettez à jour `<MinimumVisualStudioVersion>`.
+    * Ajoutez la propriété `<VsixType>`.
+    * Ajoutez la propriété de débogage `($DevEnvDir)` 3 fois.
+    * Ajoutez des conditions pour importer les outils de génération et les cibles.
 
 4. Générer et tester
 
 ## <a name="environment-setup"></a>Configuration de l’environnement
 
-Ce document suppose que vous avez installé sur votre ordinateur les éléments suivants :
+Ce document suppose que les éléments suivants sont installés sur votre ordinateur :
 
-* Visual Studio 2015 avec le SDK de Visual Studio installé
-* Visual Studio 2017 avec la charge de travail d’extensibilité installé
+* Visual Studio 2015 avec le kit de développement logiciel (SDK) VS installé
+* Visual Studio 2017 avec la charge de travail d’extensibilité installée
 
 ## <a name="recommended-approach"></a>Approche recommandée
 
-Il est vivement recommandé de démarrer cette mise à niveau avec Visual Studio 2015, au lieu de Visual Studio 2017. Le principal avantage du développement dans Visual Studio 2015 est pour vous assurer de ne pas référencer les assemblys qui ne sont pas disponibles dans Visual Studio 2015. Si vous effectuez le développement dans Visual Studio 2017, il existe un risque que vous risquez d’introduire une dépendance sur un assembly qui existe uniquement dans Visual Studio 2017.
+Il est vivement recommandé de démarrer cette mise à niveau avec Visual Studio 2015 au lieu de Visual Studio 2017. Le principal avantage du développement dans Visual Studio 2015 est de vous assurer que vous ne référencez pas les assemblys qui ne sont pas disponibles dans Visual Studio 2015. Si vous effectuez un développement dans Visual Studio 2017, il existe un risque que vous introduisiez une dépendance sur un assembly qui existe uniquement dans Visual Studio 2017.
 
-## <a name="ensure-there-is-no-reference-to-projectjson"></a>Garantir qu'aucune référence au fichier project.json
+## <a name="ensure-there-is-no-reference-to-projectjson"></a>S’assurer qu’il n’existe aucune référence à Project. JSON
 
-Plus loin dans ce document, nous insérera dans les instructions import conditionnelles à votre * *.csproj* fichier. Cela ne fonctionne pas si vos références NuGet sont stockés dans *project.json*. Par conséquent, nous vous recommandons de déplacer toutes les références NuGet à la *packages.config* fichier.
-Si votre projet contient un *project.json* fichier :
+Plus loin dans ce document, nous allons insérer des instructions Import conditionnelles dans votre fichier * *. csproj* . Cela ne fonctionnera pas si vos références NuGet sont stockées dans *Project. JSON*. Par conséquent, il est recommandé de déplacer toutes les références NuGet dans le fichier *packages. config* .
+Si votre projet contient un fichier *Project. JSON* :
 
-* Prenez note des références dans *project.json*.
-* À partir de la **l’Explorateur de solutions**, supprimez le *project.json* fichier à partir du projet. Cette opération supprime le *project.json* de fichiers et supprime du projet.
-* Ajoutez que les références NuGet de nouveau dans le projet :
-  * Avec le bouton droit sur le **Solution** et choisissez **gérer les Packages NuGet pour la Solution**.
-  * Visual Studio crée automatiquement le *packages.config* fichier pour vous.
+* Prenez note des références dans *Project. JSON*.
+* À partir de la **Explorateur de solutions**, supprimez le fichier *Project. JSON* du projet. Cela supprime le fichier *Project. JSON* et le supprime du projet.
+* Rajoutez les références NuGet dans le projet :
+  * Cliquez avec le bouton droit sur la **solution** et choisissez **gérer les packages NuGet pour la solution**.
+  * Visual Studio crée automatiquement le fichier *packages. config* pour vous.
 
 > [!NOTE]
-> Si votre projet contient les packages EnvDTE, ils peuvent avoir à être ajoutés en cliquant avec le bouton droit sur **références** en sélectionnant **ajouter une référence** et l’ajout de la référence appropriée. À l’aide de packages NuGet peut créer des erreurs lors de la tentative générer votre projet.
+> Si votre projet contenait des packages EnvDTE, vous devrez peut-être les ajouter en cliquant avec le bouton droit sur **références** , en sélectionnant **Ajouter une référence** et en ajoutant la référence appropriée. L’utilisation de packages NuGet peut créer des erreurs lors de la tentative de génération de votre projet.
 
-## <a name="add-appropriate-build-tools"></a>Ajouter des outils de génération approprié
+## <a name="add-appropriate-build-tools"></a>Ajouter les outils de génération appropriés
 
-Nous avons besoin pour être sûr qu’ajouter des outils de génération qui nous permettra de créer et déboguer de manière appropriée. Microsoft a créé un assembly pour cette Microsoft.VisualStudio.Sdk.BuildTasks appelée.
+Nous devons veiller à ajouter des outils de génération qui nous permettront de générer et déboguer correctement. Microsoft a créé un assembly pour ce appelé Microsoft. VisualStudio. Sdk. BuildTasks.
 
-Pour générer et déployer un VSIXv3 dans Visual Studio 2015 et 2017, vous aurez besoin des packages NuGet suivants :
+Pour créer et déployer un VSIXv3 dans Visual Studio 2015 et 2017, vous aurez besoin des packages NuGet suivants :
 
-Version | Outils de génération
+Version | Outils intégrés
 --- | ---
-Visual Studio 2015 | Microsoft.VisualStudio.Sdk.BuildTasks.14.0
+Visual Studio 2015 | Microsoft.VisualStudio.Sdk.BuildTasks.14.0
 Visual Studio 2017 | Microsoft.VSSDK.BuildTool
 
 Pour ce faire :
 
-* Ajoutez le package NuGet Microsoft.VisualStudio.Sdk.BuildTasks.14.0 à votre projet.
-* Si votre projet ne contient pas de Microsoft.VSSDK.BuildTools, ajoutez-le.
-* Vérifiez la version de Microsoft.VSSDK.BuildTools est 15.x ou supérieur.
+* Ajoutez le package NuGet Microsoft. VisualStudio. Sdk. BuildTasks. 14.0 à votre projet.
+* Si votre projet ne contient pas Microsoft. VSSDK. BuildTools, ajoutez-le.
+* Assurez-vous que la version de Microsoft. VSSDK. BuildTools est 15. x ou supérieure.
 
 ## <a name="update-extension-manifest"></a>Mettre à jour le manifeste d’extension
 
-### <a name="1-installation-targets"></a>1. Cibles d’installation
+### <a name="1-installation-targets"></a>1. cibles d’installation
 
-Nous devons indiquer à Visual Studio quelles versions à cibler pour la création d’une extension VSIX. En règle générale, ces références sont dans la version 14.0 (Visual Studio 2015), version 15.0 (Visual Studio 2017) ou version 16.0 (Visual Studio 2019). Dans notre cas, nous voulons créer une extension VSIX qui installe une extension pour les deux, donc nous avons besoin cibler les deux versions. Si vous souhaitez que votre projet VSIX pour générer et installer sur les versions antérieures à 14.0, cela est possible en définissant le numéro de version antérieur ; Toutefois, version 10.0 et versions antérieures ne sont plus prises en charge.
+Nous devons indiquer à Visual Studio les versions à cibler pour la création d’une extension VSIX. En règle générale, ces références sont soit vers la version 14,0 (Visual Studio 2015), version 15,0 (Visual Studio 2017), soit vers la version 16,0 (Visual Studio 2019). Dans notre cas, nous voulons créer un VSIX qui installe une extension pour les deux, donc nous devons cibler les deux versions. Si vous souhaitez que votre extension VSIX soit générée et installée sur des versions antérieures à 14,0, vous pouvez effectuer cette opération en définissant le numéro de version antérieure. Toutefois, la version 10,0 et les versions antérieures ne sont plus prises en charge.
 
-* Ouvrez le *source.extension.vsixmanifest* fichier dans Visual Studio.
-* Ouvrez le **cibles d’installation** onglet.
-* Modifier le **plage de versions** à [14.0, 17.0). Le ' [' indique à Visual Studio pour inclure 14.0 et toutes les versions au-delà de celle-ci. Le «) » indique à Visual Studio pour inclure toutes les versions jusqu'à, mais non compris, version 17.0.
-* Enregistrer toutes les modifications et fermez toutes les instances de Visual Studio.
+* Ouvrez le fichier *source. extension. vsixmanifest* dans Visual Studio.
+* Ouvrez l’onglet **installer les cibles** .
+* Remplacez la **plage de versions** par [14,0, 17,0). « [ » Indique à Visual Studio d’inclure 14,0 et toutes les versions qui le dépassent. Le') 'indique à Visual Studio d’inclure toutes les versions jusqu’à la version 17,0, mais pas l’inclusion.
+* Enregistrez toutes les modifications et fermez toutes les instances de Visual Studio.
 
 ![Image de cibles d’installation](media/visual-studio-installation-targets-example.png)
 
-### <a name="2-adding-prerequisites-to-the-extensionvsixmanifest-file"></a>2. Ajout de conditions préalables à la *extension.vsixmanifest* fichier
+### <a name="2-adding-prerequisites-to-the-extensionvsixmanifest-file"></a>2. Ajout des composants requis au fichier *extension. vsixmanifest*
 
-Nous avons besoin de l’éditeur Visual Studio Core comme condition préalable. Ouvrez Visual Studio et utiliser le Concepteur de manifeste mis à jour pour insérer les conditions préalables.
+Nous avons besoin de l’éditeur principal de Visual Studio comme condition préalable. Ouvrez Visual Studio et utilisez le concepteur de manifeste mis à jour pour insérer les composants requis.
 
 Pour effectuer cette opération manuellement :
 
 * Accédez au répertoire du projet dans l’Explorateur de fichiers.
-* Ouvrez le *extension.vsixmanifest* fichier avec un éditeur de texte.
+* Ouvrez le fichier *extension. vsixmanifest* à l’aide d’un éditeur de texte.
 * Ajoutez la balise suivante :
 
 ```xml
@@ -112,22 +112,22 @@ Pour effectuer cette opération manuellement :
 * Enregistrez et fermez le fichier.
 
 > [!NOTE]
-> Vous devrez peut-être modifier manuellement la version prérequise pour vous assurer qu’il est compatible avec toutes les versions de Visual Studio 2017. Il s’agit, car le concepteur insère la version minimale que votre version actuelle de Visual Studio (par exemple, 15.0.26208.0). Toutefois, étant donné que les autres utilisateurs devront peut-être une version antérieure, vous devez modifier manuellement ce 15.0.
+> Vous devrez peut-être modifier manuellement la version requise pour vous assurer qu’elle est compatible avec toutes les versions de Visual Studio 2017. Cela est dû au fait que le concepteur insère la version minimale comme version actuelle de Visual Studio (par exemple, 15.0.26208.0). Toutefois, étant donné que les autres utilisateurs peuvent avoir une version antérieure, vous devez modifier manuellement cette valeur sur 15,0.
 
-À ce stade, votre fichier manifeste doit ressembler à ceci :
+À ce stade, votre fichier manifeste devrait ressembler à ceci :
 
-![Exemple de configuration requise](media/visual-studio-prerequisites-example.png)
+![Exemple de conditions préalables](media/visual-studio-prerequisites-example.png)
 
-## <a name="modify-the-project-file-myprojectcsproj"></a>Modifiez le fichier projet (myproject.csproj)
+## <a name="modify-the-project-file-myprojectcsproj"></a>Modifier le fichier projet (MyProject. csproj)
 
-Il est fortement recommandé d’avoir une référence à une modification .csproj ouvert pendant cette étape. Vous trouverez plusieurs exemples [ici](https://github.com/Microsoft/VSSDK-Extensibility-Samples). Sélectionnez n’importe quel exemple d’extensibilité, recherchez le *.csproj* pour la référence de fichier et exécutez les étapes suivantes :
+Il est fortement recommandé d’utiliser une référence à un. csproj modifié au cours de cette étape. Vous trouverez plusieurs exemples [ici](https://github.com/Microsoft/VSSDK-Extensibility-Samples). Sélectionnez un exemple d’extensibilité, recherchez le fichier *. csproj* pour référence et exécutez les étapes suivantes :
 
-* Accédez au répertoire du projet dans **Explorateur de fichiers**.
-* Ouvrez le *myproject.csproj* fichier avec un éditeur de texte.
+* Accédez au répertoire du projet dans l' **Explorateur de fichiers**.
+* Ouvrez le fichier *MyProject. csproj* à l’aide d’un éditeur de texte.
 
-### <a name="1-update-the-minimumvisualstudioversion"></a>1. Mettre à jour la minimumvisualstudioversion par
+### <a name="1-update-the-minimumvisualstudioversion"></a>1. Mettez à jour le MinimumVisualStudioVersion
 
-* La valeur est la version minimale de visual studio `$(VisualStudioVersion)` et ajouter une instruction conditionnelle pour celle-ci. Ajoutez ces balises si elles n’existent pas. Vérifiez que les balises sont définies comme indiqué ci-dessous :
+* Définissez la version minimale de Visual Studio sur `$(VisualStudioVersion)` et ajoutez une instruction conditionnelle pour celle-ci. Ajoutez ces balises si elles n’existent pas. Vérifiez que les balises sont définies comme suit :
 
 ```xml
 <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
@@ -136,80 +136,81 @@ Il est fortement recommandé d’avoir une référence à une modification .cspr
 
 ### <a name="2-add-the-vsixtype-property"></a>2. Ajoutez la propriété VsixType.
 
-* Ajoutez la balise suivante `<VsixType>v3</VsixType>` à un groupe de propriétés.
+* Ajoutez la balise `<VsixType>v3</VsixType>` suivante à un groupe de propriétés.
 
 > [!NOTE]
-> Il est recommandé d’ajouter ce ci-dessous le `<OutputType></OutputType>` balise.
+> Il est recommandé de l’ajouter sous la balise `<OutputType></OutputType>`.
 
-### <a name="3-add-the-debugging-properties"></a>3. Ajoutez les propriétés de débogage
+### <a name="3-add-the-debugging-properties"></a>3. ajouter les propriétés de débogage
 
-* Ajoutez le groupe de propriétés suivantes :
+* Ajoutez le groupe de propriétés suivant :
 
 ```xml
 <PropertyGroup>
     <StartAction>Program</StartAction>
-    <StartPrograms>$(DevEnvDir)devenv.exe</StartPrograms>
+    <StartProgram>$(DevEnvDir)devenv.exe</StartProgram>
     <StartArguments>/rootsuffix Exp</StartArguments>
 </PropertyGroup>
 ```
 
-* Supprimer toutes les instances de l’exemple de code suivant à partir de la *.csproj* fichier et tout *. csproj.user* fichiers :
+* Supprimez toutes les instances de l’exemple de code suivant à partir du fichier *. csproj* et de tous les fichiers *. csproj. User* :
 
 ```xml
 <StartAction>Program</StartAction>
-<StartPrograms>$(ProgramFiles)\Microsoft Visual Studio 14.0\Common7\IDE\devenv.exe</StartPrograms>
+<StartProgram>$(ProgramFiles)\Microsoft Visual Studio 14.0\Common7\IDE\devenv.exe</StartProgram>
 <StartArguments>/rootsuffix Exp</StartArguments>
 ```
 
-### <a name="4-add-conditions-to-the-build-tools-imports"></a>4. Ajouter des conditions pour les importations d’outils de génération
+### <a name="4-add-conditions-to-the-build-tools-imports"></a>4. ajouter des conditions aux importations des outils de génération
 
-* Ajouter des instructions conditionnelles supplémentaires pour le `<import>` balises ayant une référence Microsoft.VSSDK.BuildTools. Insérer `'$(VisualStudioVersion)' != '14.0' And` au début de l’instruction de condition. Ces instructions seront affiche dans l’en-tête et le pied de page du fichier csproj.
+* Ajoutez des instructions conditionnelles supplémentaires aux balises `<import>` qui ont une référence Microsoft. VSSDK. BuildTools. Insérez `'$(VisualStudioVersion)' != '14.0' And` au début de l’instruction de condition. Ces instructions s’affichent dans l’en-tête et le pied de page du fichier csproj.
 
-Par exemple :
+Exemple :
 
 ```xml
 <Import Project="packages\Microsoft.VSSDK.BuildTools.15.0.26201…" Condition="'$(VisualStudioVersion)' != '14.0' And Exists(…" />
 ```
 
-* Ajouter des instructions conditionnelles supplémentaires pour le `<import>` balises ayant un Microsoft.VisualStudio.Sdk.BuildTasks.14.0. Insérer `'$(VisualStudioVersion)' == '14.0' And` au début de l’instruction de condition. Ces instructions seront affiche dans l’en-tête et le pied de page du fichier csproj.
+* Ajoutez des instructions conditionnelles supplémentaires aux balises `<import>` qui ont un Microsoft. VisualStudio. Sdk. BuildTasks. 14.0. Insérez `'$(VisualStudioVersion)' == '14.0' And` au début de l’instruction de condition. Ces instructions s’affichent dans l’en-tête et le pied de page du fichier csproj.
 
-Par exemple :
+Exemple :
 
 ```xml
 <Import Project="packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" Condition="'$(VisualStudioVersion)' == '14.0' And Exists(…" />
 ```
 
-* Ajouter des instructions conditionnelles supplémentaires pour le `<Error>` balises ayant une référence Microsoft.VSSDK.BuildTools. Cela en insérant `'$(VisualStudioVersion)' != '14.0' And` au début de l’instruction de condition. Ces instructions seront affiche dans le pied de page du fichier csproj.
+* Ajoutez des instructions conditionnelles supplémentaires aux balises `<Error>` qui ont une référence Microsoft. VSSDK. BuildTools. Pour ce faire, insérez `'$(VisualStudioVersion)' != '14.0' And` au début de l’instruction de condition. Ces instructions s’affichent dans le pied de page du fichier csproj.
 
-Par exemple :
+Exemple :
 
 ```xml
 <Error Condition="'$(VisualStudioVersion)' != '14.0' And Exists('packages\Microsoft.VSSDK.BuildTools.15.0.26201…" />
 ```
 
-* Ajouter des instructions conditionnelles supplémentaires pour le `<Error>` balises ayant un Microsoft.VisualStudio.Sdk.BuildTasks.14.0. Insérer `'$(VisualStudioVersion)' == '14.0' And` au début de l’instruction de condition. Ces instructions seront affiche dans le pied de page du fichier csproj.
+* Ajoutez des instructions conditionnelles supplémentaires aux balises `<Error>` qui ont un Microsoft. VisualStudio. Sdk. BuildTasks. 14.0. Insérez `'$(VisualStudioVersion)' == '14.0' And` au début de l’instruction de condition. Ces instructions s’affichent dans le pied de page du fichier csproj.
 
-Par exemple :
+Exemple :
 
 ```xml
 <Error Condition="'$(VisualStudioVersion)' == '14.0' And Exists('packages\Microsoft.VisualStudio.Sdk.BuildTasks.14.0.14.0…" />
 ```
 
-* Enregistrez le fichier csproj, puis fermez-le.
+* Enregistrez le fichier csproj et fermez-le.
 
-## <a name="test-the-extension-installs-in-visual-studio-2015-and-visual-studio-2017"></a>Tester l’extension d’installer dans Visual Studio 2015 et Visual Studio 2017
+## <a name="test-the-extension-installs-in-visual-studio-2015-and-visual-studio-2017"></a>Tester les installations d’extension dans Visual Studio 2015 et Visual Studio 2017
 
-À ce stade, votre projet doit être prêt à générer un VSIXv3 qui peut installer sur Visual Studio 2015 et Visual Studio 2017.
+À ce stade, votre projet doit être prêt à créer un VSIXv3 qui peut être installé sur Visual Studio 2015 et Visual Studio 2017.
 
 * Ouvrez votre projet dans Visual Studio 2015.
-* Générez votre projet et confirmez dans la sortie qu’une extension VSIX est généré correctement.
+* Générez votre projet et confirmez dans la sortie qu’une extension VSIX est correctement générée.
 * Accédez au répertoire de votre projet.
-* Ouvrez le *\bin\Debug* dossier.
-* Double-cliquez sur le fichier VSIX et installer votre extension sur Visual Studio 2015 et Visual Studio 2017.
-* Assurez-vous que vous pouvez voir l’extension dans **outils** > **Extensions et mises à jour** dans le **installé** section.
-* Tentative d’exécution/utiliser l’extension pour vérifier qu’elle fonctionne.
+* Ouvrez le dossier *\bin\Debug* .
+* Double-cliquez sur le fichier VSIX et installez votre extension sur Visual Studio 2015 et Visual Studio 2017.
+* Assurez-vous que vous pouvez voir l’extension dans **outils** > **extensions et mises à jour** dans la section **installé** .
+* Essayez d’exécuter/d’utiliser l’extension pour vérifier qu’elle fonctionne.
 
 ![Rechercher une extension VSIX](media/finding-a-VSIX-example.png)
 
 > [!NOTE]
-> Si votre projet se bloque avec le message **l’ouverture du fichier**, forcer l’arrêt Visual Studio, accédez à votre répertoire de projet, afficher les dossiers cachés et supprimez le *.vs* dossier.
+> Si votre projet se bloque avec le message **ouvrant le fichier**, forcez l’arrêt de Visual Studio, accédez au répertoire de votre projet, affichez les dossiers masqués, puis supprimez le dossier *. vs* .
+ 

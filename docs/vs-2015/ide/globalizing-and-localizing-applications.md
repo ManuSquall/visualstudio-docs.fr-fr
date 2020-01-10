@@ -37,7 +37,7 @@ Si vous prévoyez de distribuer votre application à un public international, vo
 
  [Globaliser des applications](../ide/globalizing-applications.md) Fournit des liens vers des pages sur la création d’applications qui prennent en charge plusieurs cultures.
 
-## <a name="related-sections"></a>Rubriques connexes
+## <a name="related-sections"></a>Sections connexes
  [Globalisation de votre application (applications du Windows Store en JavaScript et html)](https://go.microsoft.com/fwlink/?LinkId=258266) Contient des rubriques de procédures et des instructions pour vous aider à globaliser et à localiser votre application [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] générée à l’aide de JavaScript et HTML.
 
  [La globalisation de votre application (applications du C#WindowsC++ Store à l’aide de/vb/et XAML)](https://go.microsoft.com/fwlink/?LinkId=258267) contient des rubriques de procédures et des instructions pour vous aider à globaliser et à localiser C#votre application [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] générée à C++l’aide de XAML et Visual, Visual Basic ou visuel.

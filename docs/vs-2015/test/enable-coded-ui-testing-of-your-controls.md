@@ -519,7 +519,7 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
 
 #### <a name="to-debug-your-property-provider-or-action-filter"></a>Pour déboguer votre fournisseur de propriétés ou filtre d'action
 
-1. Générez la version debug de votre package d’extension, puis copiez les fichiers .dll et .pdb dans % ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages.
+1. Générez la version debug de votre package d’extension, puis copiez les fichiers .dll et .pdb sur % ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages.
 
 2. Exécutez votre application (pas dans le débogueur).
 

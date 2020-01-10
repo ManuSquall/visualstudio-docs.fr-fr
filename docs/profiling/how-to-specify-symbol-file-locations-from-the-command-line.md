@@ -1,21 +1,22 @@
 ---
-title: 'Procédure : Spécifier les emplacements du fichier de symboles à partir de la ligne de commande | Microsoft Docs'
+title: Guide pratique pour spécifier les emplacements du fichier de symboles à partir de la ligne de commande | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 8aa067bb-e8bf-4081-aff0-cfbcf65934a0
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: fa265a3b7ebde80f7398f0c5972d5265533890f0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3b4c4230ca2539b55f57990b90ae33d1f53726dc
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433469"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778724"
 ---
-# <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Procédure : Spécifier les emplacements du fichier de symboles à partir de la ligne de commande
+# <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Guide pratique pour spécifier les emplacements du fichier de symboles à partir de la ligne de commande
 Pour pouvoir afficher des informations de symboles telles que les noms de fonctions et les numéros de ligne, l’outil en ligne de commande VSPerfReport nécessite l’accès aux fichiers de symboles (.*pdb*) des composants profilés, ainsi qu’aux fichiers système Windows. Les fichiers de symboles sont créés lors de la compilation d’un composant. Pour plus d’informations, consultez [VSPerfReport](../profiling/vsperfreport.md). VSPerfReport recherche automatiquement les fichiers de symboles dans les emplacements suivants :
 
 - Chemins spécifiés dans l’option **/SymbolPath** ou dans la variable d’environnement **_NT_SYMBOL_PATH**.
@@ -35,7 +36,7 @@ Pour pouvoir afficher des informations de symboles telles que les noms de foncti
   Vous pouvez également combiner ces deux méthodes.
 
 > [!NOTE]
-> Si [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] est installé sur l’ordinateur local, un emplacement pour les fichiers de symboles Windows a probablement déjà été défini. Pour plus d'informations, voir [Procédure : référencer les informations de symboles Windows](../profiling/how-to-reference-windows-symbol-information.md). Vous devez toujours configurer VSPerfReport pour utiliser l’emplacement et le serveur comme décrit plus loin dans cette rubrique.
+> Si [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] est installé sur l’ordinateur local, un emplacement pour les fichiers de symboles Windows a probablement déjà été défini. Pour plus d’informations, consultez [Guide pratique pour référencer les informations de symboles Windows](../profiling/how-to-reference-windows-symbol-information.md). Vous devez toujours configurer VSPerfReport pour utiliser l’emplacement et le serveur comme décrit plus loin dans cette rubrique.
 
 ## <a name="specify-windows-symbol-files"></a>Spécifier des fichiers de symboles Windows
 
@@ -45,7 +46,7 @@ Pour pouvoir afficher des informations de symboles telles que les noms de foncti
 
 2. Utilisez la syntaxe suivante pour définir la variable d’environnement **_NT_SYMBOL_PATH** ou l’option VSPerfReport /SymbolPath :
 
-    **SRV\\*** *LocalStore* **\*http://msdl.microsoft.com/downloads/symbols**
+    **SRV\\** * *LocalStore* **\*http://msdl.microsoft.com/download/symbols**
 
     où *LocalStore* est le chemin du répertoire local que vous avez créé.
 
@@ -55,7 +56,7 @@ Pour pouvoir afficher des informations de symboles telles que les noms de foncti
 ## <a name="example"></a>Exemple
  La ligne de commande suivante définit le serveur de symboles Windows comme valeur de la variable d’environnement **_NT_SYMBOL_PATH** et **C:\Symbols** comme répertoire local.
 
- **set _NT_SYMBOL_PATH=srv\*C:\symbols\*http://msdl.microsoft.com/downloads/symbols**
+ **set _NT_SYMBOL_PATH=srv\*C:\symbols\*http://msdl.microsoft.com/download/symbols**
 
  La ligne de commande VSPerfReport suivante ajoute le répertoire *C:\Projects\Symbols* au chemin de recherche à l’aide de l’option **/SymbolPath**.
 

@@ -6,15 +6,15 @@ helpviewer_keywords:
 - load tests, run settings, context parameters
 - load tests, context parameters
 ms.assetid: a8a0b97e-8040-4711-85ab-36548b130ed2
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e630bfccb1741e3b194b6be4c6f8cdb065d8b942
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 05efbba005a9455af3b9d2e8755b580a8af30d0a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664861"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75584476"
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Guide pratique : Ajouter des paramètres de contexte à un paramètre de série de tests de charge
 
@@ -46,7 +46,7 @@ En outre, en assignant des valeurs différentes à un paramètre de contexte en 
 
   **Définissez Test.UseRunSetting= CorporateStagingWebServer**
 
-  -et-
+  et
 
   **mstest /testcontainer:loadtest1.loadtest**
 
@@ -60,7 +60,7 @@ En outre, en assignant des valeurs différentes à un paramètre de contexte en 
 
      Un nouveau paramètre de contexte est ajouté au dossier **Paramètres de contexte** dans le dossier **Paramètres d’exécution** de l’arborescence du test de charge.
 
-     ou
+     \- ou -
 
      Si le paramètre d’exécution contient déjà un dossier **Paramètres de contexte**, vous pouvez cliquer dessus avec le bouton droit, puis choisir **Ajouter un paramètre de contexte**.
 
@@ -72,4 +72,4 @@ En outre, en assignant des valeurs différentes à un paramètre de contexte en 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Configurer les paramètres d’exécution des tests de charge](../test/configure-load-test-run-settings.md)
+- [Configurer les paramètres de série de tests de charge](../test/configure-load-test-run-settings.md)

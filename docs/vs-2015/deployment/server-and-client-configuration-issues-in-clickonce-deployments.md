@@ -138,4 +138,4 @@ Si vous utilisez Internet Information Services (IIS) sur Windows Server et que v
 ## <a name="see-also"></a>Voir aussi  
  [Résolution des problèmes liés aux déploiements ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)   
  [Choix d’une stratégie de déploiement ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)   
- [Composants requis pour le déploiement d'applications](../deployment/application-deployment-prerequisites.md)
+ [Prérequis pour le déploiement d’applications](../deployment/application-deployment-prerequisites.md)

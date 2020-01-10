@@ -2,8 +2,8 @@
 title: ID de composant et de charge de travail de Visual Studio Test Professional
 titleSuffix: ''
 description: Utilisez les ID de composant et de charge de travail de Visual Studio pour fournir des outils de test intégrés pour les testeurs généralistes
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.date: 09/23/2019
 ms.topic: reference
@@ -15,12 +15,12 @@ ms.assetid: 70c03438-8434-4921-ada0-c172519af431
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 monikerRange: vs-2017
-ms.openlocfilehash: d61105a16919e8384aad961d62a81ff3a8688b25
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 9ed75c9731d36f48dcb50be7f929c4cba5ed3b6c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71213653"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590895"
 ---
 # <a name="visual-studio-test-professional-component-directory"></a>Répertoire des composants Visual Studio Test Professional
 
@@ -35,19 +35,19 @@ En outre, notez ce qui suit concernant la page :
 
 Lorsque vous définissez des dépendances dans votre manifeste VSIX, vous devez spécifier les ID de composant uniquement. Utilisez les tableaux de cette page pour déterminer les dépendances minimum des composants. Dans certains scénarios, cela peut vouloir dire que vous ne spécifiez qu’un composant à partir d’une charge de travail. Dans d’autres, cela peut vouloir dire que vous spécifiez plusieurs composants à partir d’une charge de travail unique ou plusieurs composants à partir de plusieurs charges de travail. Pour plus d’informations, consultez la page [Guide pratique pour migrer les projets d’extensibilité vers Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
 
-Pour plus d’informations sur l’utilisation de ces ID, consultez la page [Utiliser les paramètres de ligne de commande pour installer Visual Studio 2017 RC](use-command-line-parameters-to-install-visual-studio.md). Pour obtenir la liste des ID de charge de travail et de composant des autres produits, consultez la page [ID de composant et de charge de travail de Visual Studio 2017](workload-and-component-ids.md).
+Pour plus d’informations sur l’utilisation de ces ID, consultez la page [Utiliser les paramètres de ligne de commande pour installer Visual Studio 2017 RC](use-command-line-parameters-to-install-visual-studio.md). Pour obtenir la liste des ID de charge de travail et de composant triés des autres produits, consultez la page [ID de composant et de charge de travail de Visual Studio 2017](workload-and-component-ids.md).
 
 ## <a name="test-professional"></a>Test Professional
 
 **ID :** Microsoft.VisualStudio.Workload.TestProfessional
 
-**Description :** Test Professional fournit aux testeurs généralistes des outils de test intégrés, qui répondent à leurs besoins tout au long du cycle de vie des tests.
+**Description :** Test Professional fournit des outils de test intégrés qui répondent aux besoins des testeurs généralistes tout au long du cycle de vie des tests.
 
 ### <a name="components-included-by-this-workload"></a>Composants inclus par cette charge de travail
 
 ID de composant | Name | Version | Type de dépendance
 --- | --- | --- | ---
-Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Microsoft Feedback Client | 15.6.27406.0 | Obligatoire
+Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Outil de Feedback Microsoft | 15.6.27406.0 | Obligatoire
 Microsoft.VisualStudio.Component.TestTools.MicrosoftTestManager | Microsoft Test Manager | 15.6.27406.0 | Obligatoire
 
 ## <a name="unaffiliated-components"></a>Composants non affiliés

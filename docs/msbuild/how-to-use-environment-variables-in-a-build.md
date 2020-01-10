@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Utiliser des variables d’environnement dans une build | Microsoft Docs'
+title: 'Comment : utiliser des variables d’environnement dans une génération | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,19 +7,19 @@ helpviewer_keywords:
 - projects [.NET Framework], environment variables
 - MSBuild, environment variables
 ms.assetid: 7f9e4469-8865-4b59-aab3-3ff26bd36e77
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c3e79fdbadffadc188610523eeb505df0ffa15f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4d66fb73972a81e421b6e7343e549b0ef3069001
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412408"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75574416"
 ---
-# <a name="how-to-use-environment-variables-in-a-build"></a>Procédure : Utiliser des variables d’environnement dans une build
+# <a name="how-to-use-environment-variables-in-a-build"></a>Guide pratique pour utiliser des variables d’environnement dans une build
 Lorsque vous générez des projets, il est souvent nécessaire de définir des options de génération à l’aide des informations qui ne figurent pas dans le fichier projet ou dans les fichiers qui composent votre projet. Ces informations sont généralement stockées dans les variables d’environnement.
 
 ## <a name="reference-environment-variables"></a>Référencer des variables d’environnement

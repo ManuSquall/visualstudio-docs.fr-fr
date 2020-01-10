@@ -6,15 +6,15 @@ helpviewer_keywords:
 - Visual Studio templates, creating multi-file item templates
 - multi-file item templates
 - item templates, creating multi-file item templates
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 82047b4a49db4edbea4ce965d1987f87a799a9f7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e8a6e5358a87e3d64b341c89b8ffd4cd3cf3e325
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655939"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593731"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Guide pratique pour créer des modèles d’élément multifichiers
 
@@ -36,7 +36,7 @@ Vous pouvez créer un modèle d’élément multifichier de la même manière qu
 
 1. Créez le modèle d’élément comme vous le feriez manuellement pour un modèle d’élément à un seul fichier, mais incluez chaque fichier qui constitue l’élément multifichier.
 
-1. Dans le fichier XML *.vstemplate*, ajoutez un élément `ProjectItem` pour chaque fichier, puis ajoutez un attribut `TargetFileName` à cet élément. Affectez à l’attribut `TargetFileName` la valeur *$fileinputname$.FileExtension*, où *FileExtension* représente l’extension du fichier inclus dans le modèle. Exemple :
+1. Dans le fichier XML *.vstemplate*, ajoutez un élément `ProjectItem` pour chaque fichier, puis ajoutez un attribut `TargetFileName` à cet élément. Affectez à l’attribut `TargetFileName` la valeur *$fileinputname$.FileExtension*, où *FileExtension* représente l’extension du fichier inclus dans le modèle. Par exemple :
 
     ```xml
     <ProjectItem TargetFileName="$fileinputname$.vb">

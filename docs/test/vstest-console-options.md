@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - vstest.console.exe
 - command-line tests
-ms.author: jillfra
-author: jillre
+ms.author: mikejo
+author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e46cd6f3589e50959ee521552bb66878147cf604
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1d4c44719854714658c1c15bf7059e49f4e668bd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659710"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590421"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Options de ligne de commande VSTest.Console.exe
 
@@ -50,12 +50,12 @@ Le tableau suivant répertorie toutes les options de *VSTest.Console.exe*, ainsi
 |**/ListExecutors**|Répertorie les exécuteurs de test installés.|
 |**/ListLoggers**|Répertorie les journaux de test installés.|
 |**/ListSettingsProviders**|Répertorie les fournisseurs de paramètres installés.|
-|**/Blame**|Effectue le suivi des tests à mesure qu’ils sont exécutés et, si le processus hôte des tests plante, émet les noms des tests dans l’ordre de leur exécution, le dernier test cité étant celui qui était en cours d’exécution au moment du plantage. Cette sortie permet d’isoler le test incriminé et d’établir un diagnostic plus facilement. [Plus d’informations](https://github.com/Microsoft/vstest-docs/blob/master/docs/extensions/blame-datacollector.md).|
+|**/Blame**|Effectue le suivi des tests à mesure qu’ils sont exécutés et, si le processus hôte des tests plante, émet les noms des tests dans l’ordre de leur exécution, le dernier test cité étant celui qui était en cours d’exécution au moment du plantage. Cette sortie permet d’isoler le test incriminé et d’établir un diagnostic plus facilement. [Complément d’information](https://github.com/Microsoft/vstest-docs/blob/master/docs/extensions/blame-datacollector.md).|
 |**/Diag:[*nom de fichier*]**|Écrit les journaux de trace de diagnostic dans le fichier spécifié.|
 |**/ResultsDirectory:[*chemin*]**|Un répertoire de résultats de test sera créé dans le chemin d’accès spécifié s’il n’en existe pas.<br />Exemple : `/ResultsDirectory:<pathToResultsDirectory>`|
 |**/ParentProcessId:[*ID_processus_parent*]**|ID du processus parent chargé de lancer le processus actif.|
 |**/Port:[*port*]**|Port de connexion de socket et de réception des messages d’événement.|
-|**/Collect:[*nom_convivial collecteur_de_données*]**|Active le collecteur de données pour la série de tests. [Plus d’informations](https://aka.ms/vstest-collect).|
+|**/Collect:[*nom_convivial collecteur_de_données*]**|Active le collecteur de données pour la série de tests. [Complément d’information](https://aka.ms/vstest-collect).|
 
 > [!TIP]
 > Les options et les valeurs ne respectent pas la casse.

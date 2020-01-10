@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Référencer le nom ou l’emplacement du fichier projet | Microsoft Docs'
+title: 'Comment : référencer le nom ou l’emplacement du fichier projet | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,19 +11,19 @@ helpviewer_keywords:
 - reserved properties
 - project files, referencing
 ms.assetid: c8fcc594-5d37-4e2e-b070-4d9c012043b5
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88d0eb1e4daa3e68468165589830ecf60a218da5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 739d444fe8ad3951e8b8f2f0026d5d986ea65c52
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386804"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75574780"
 ---
-# <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>Procédure : Référencer le nom ou l’emplacement du fichier projet
+# <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>Guide pratique pour référencer le nom ou l’emplacement du fichier projet
 Vous pouvez utiliser le nom ou l’emplacement du projet dans le fichier projet sans avoir à créer votre propre propriété. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] fournit des propriétés réservées qui référencent le nom du fichier projet et d’autres propriétés associées au projet. Pour plus d’informations sur les propriétés réservées, consultez [MSBuild, propriétés réservées et connues](../msbuild/msbuild-reserved-and-well-known-properties.md).
 
 ## <a name="use-the-project-properties"></a>Utiliser les propriétés du projet
@@ -31,7 +31,7 @@ Vous pouvez utiliser le nom ou l’emplacement du projet dans le fichier projet 
 
 #### <a name="to-use-the-project-properties"></a>Pour utiliser les propriétés du projet
 
-- Référencez la propriété dans le fichier projet avec la notation $(), comme vous le feriez avec n’importe quelle propriété. Par exemple :
+- Référencez la propriété dans le fichier projet avec la notation $(), comme vous le feriez avec n’importe quelle propriété. Par exemple :
 
   ```xml
   <CSC Sources = "@(CSFile)"
@@ -40,6 +40,8 @@ Vous pouvez utiliser le nom ou l’emplacement du projet dans le fichier projet 
   ```
 
   L’un des avantages liés à l’utilisation d’une propriété réservée est que les modifications apportées au nom du fichier projet sont incorporées automatiquement. À la prochaine génération du projet, le fichier de sortie dispose du nouveau nom sans aucune intervention supplémentaire de votre part.
+
+  Pour plus d’informations sur l’utilisation de caractères spéciaux dans les références de fichier ou de projet, consultez [caractères spéciaux MSBuild](../msbuild/msbuild-special-characters.md).
 
 > [!NOTE]
 > Les propriétés réservées ne peuvent pas être redéfinies dans le fichier projet.
@@ -87,4 +89,4 @@ Vous pouvez utiliser le nom ou l’emplacement du projet dans le fichier projet 
 
 ## <a name="see-also"></a>Voir aussi
 - [MSBuild](../msbuild/msbuild.md)
-- [Propriétés réservées et connues de MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md)
+- [MSBuild, propriétés réservées et connues](../msbuild/msbuild-reserved-and-well-known-properties.md)

@@ -34,9 +34,9 @@ Cette rubrique décrit comment créer un ensemble de règles d'activité de stra
 
 1. Cliquez avec le bouton droit sur [PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65019), puis cliquez sur **Propriétés** pour ouvrir la fenêtre **Propriétés** .
 
-2. Cliquez sur la propriété **RuleSetReference**.
+2. Cliquez sur la propriété **RuleSetReference** .
 
-3. Effectuez l’une des opérations suivantes :
+3. Effectuez l'une des opérations suivantes :
 
     - Cliquez sur le **RuleSetReference** ellipses **[...]** , puis sélectionnez un ensemble de règles existant dans la [boîte de dialogue Sélectionner l’ensemble de règles (hérité)](../workflow-designer/select-rule-set-dialog-box-legacy.md). Passez à l'étape 10.
 
@@ -46,19 +46,19 @@ Cette rubrique décrit comment créer un ensemble de règles d'activité de stra
 
          -ou-
 
-    - Tapez un nom d'ensemble de règles. Développez la propriété **RuleSetReference** et sélectionnez le bouton de sélection **[…]** dans la propriété **RuleSet Definition**.
+    - Tapez un nom d'ensemble de règles. Développez la propriété **RuleSetReference** et sélectionnez les ellipses **[...]** dans la propriété **RuleSet Definition** .
 
          La [boîte de dialogue Éditeur d’ensemble de règles (hérité)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) s’ouvre.
 
 4. Dans la [boîte de dialogue Éditeur d’ensemble de règles (hérité)](../workflow-designer/rule-set-editor-dialog-box-legacy.md), cliquez sur **Ajouter une règle** pour ajouter une nouvelle règle à l’ensemble de règles.
 
-5. Entrez le **Nom**, la **Priorité** et les propriétés de **Réévaluation** ou gardez les valeurs par défaut.
+5. Entrez le **nom**, la **priorité**et les propriétés de **réévaluation** , ou conservez les valeurs par défaut.
 
-6. Entrez le texte de la **Condition**.
+6. Entrez le texte de la **condition**.
 
-7. Entrez le texte correspondant dans **Actions THEN** et **Actions ELSE**.
+7. Entrez le texte des actions **Then** et **else**.
 
-8. Cliquez de nouveau sur **Ajouter une règle** pour ajouter une autre règle.
+8. Cliquez à nouveau sur **Ajouter une règle** pour ajouter une autre règle.
 
 9. Lorsque vous avez terminé, cliquez sur **OK**.
 

@@ -6,23 +6,23 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: 03ff1146-706e-4780-91cb-56a83df63eea
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 14b44a16f6652fe8d94669f99107ebe59b790a0e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 105519153e92e3944971f60ae2ff6151fa6a3fdf
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72639168"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585949"
 ---
 # <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>Procédure pas à pas : personnaliser le comportement d’insertion, de mise à jour et de suppression de classes d’entité
 
 Les [outils de LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) fournissent une aire de conception visuelle pour créer et modifier des classes LINQ to SQL (classes d’entité) basées sur des objets dans une base de données. En utilisant [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index), vous pouvez utiliser la technologie LINQ pour accéder aux bases de données SQL. Pour plus d’informations, consultez [LINQ (Language-Integrated Query)](/dotnet/csharp/linq/).
 
-Par défaut, la logique d’exécution des mises à jour est fournie par le runtime LINQ to SQL. Le runtime crée les instructions `Insert`, `Update` et `Delete` par défaut en fonction du schéma de la table (les définitions de colonne et les informations de clé primaire). Si vous ne souhaitez pas utiliser le comportement par défaut, vous pouvez configurer le comportement de mise à jour et désigner des procédures stockées spécifiques pour exécuter les insertions, mises à jour et suppressions nécessaires à la manipulation des données dans la base de données. Vous pouvez également le faire lorsque le comportement par défaut n'est pas généré, par exemple lorsque vos classes d'entité mappent aux vues. En outre, vous pouvez substituer le comportement de mise à jour par défaut lorsque la base de données nécessite un accès aux tables via des procédures stockées. Pour plus d’informations, consultez [Personnalisation des opérations à l’aide de procédures stockées](/dotnet/framework/data/adonet/sql/linq/customizing-operations-by-using-stored-procedures).
+Par défaut, la logique d’exécution des mises à jour est fournie par le runtime LINQ to SQL. Le runtime crée les instructions `Insert`, `Update`et `Delete` par défaut en fonction du schéma de la table (les définitions de colonne et les informations de clé primaire). Si vous ne souhaitez pas utiliser le comportement par défaut, vous pouvez configurer le comportement de mise à jour et désigner des procédures stockées spécifiques pour exécuter les insertions, mises à jour et suppressions nécessaires à la manipulation des données dans la base de données. Vous pouvez également le faire lorsque le comportement par défaut n'est pas généré, par exemple lorsque vos classes d'entité mappent aux vues. En outre, vous pouvez substituer le comportement de mise à jour par défaut lorsque la base de données nécessite un accès aux tables via des procédures stockées. Pour plus d’informations, consultez [Personnalisation des opérations à l’aide de procédures stockées](/dotnet/framework/data/adonet/sql/linq/customizing-operations-by-using-stored-procedures).
 
 > [!NOTE]
 > Cette procédure pas à pas nécessite les procédures stockées **InsertCustomer**, **UpdateCustomer** et **DeleteCustomer** pour la base de données Northwind.
@@ -71,7 +71,7 @@ Cette procédure pas à pas utilise SQL Server Express base de données locale e
 
 ### <a name="to-create-a-new-windows-forms-application-project-that-contains-linq-to-sql-classes"></a>Pour créer un projet d’application de Windows Forms qui contient des classes LINQ to SQL
 
-1. Dans Visual Studio, dans le menu **fichier** , sélectionnez **nouveau**  > **projet**.
+1. Dans Visual Studio, dans le menu **Fichier**, sélectionnez **Nouveau** > **Projet**.
 
 2. Développez **Visual C#**  ou **Visual Basic** dans le volet gauche, puis sélectionnez **Bureau Windows**.
 
@@ -234,7 +234,7 @@ Par défaut, le bouton d'enregistrement n'est pas activé et la fonctionnalité 
 > [!NOTE]
 > Bien qu’il ne s’agisse pas d’un problème pour cette procédure pas à pas, il est intéressant de noter que LINQ to SQL gère automatiquement les valeurs générées par la base de données pour les colonnes Identity (incrémentation automatique), rowguidcol (GUID généré par la base de données) et timestamp pendant les insertions et mises à jour. Les valeurs générées par une base de données dans les autres types de colonne entraînent une valeur null de manière inopinée. Pour retourner les valeurs générées par la base de données, vous devez définir manuellement <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> sur `true` et <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> à l’un des éléments suivants : [AutoSync. Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>), [AutoSync. OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>)ou [AutoSync. OnUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>).
 
-## <a name="test-the-application"></a>Tester l’application
+## <a name="test-the-application"></a>Tester l'application
 
 Exécutez une nouvelle fois l’application pour vérifier que la procédure stockée **UpdateCustomers** met à jour correctement l’enregistrement Customer dans la base de données.
 
@@ -261,7 +261,7 @@ Exécutez une nouvelle fois l’application pour vérifier que la procédure sto
     > [!NOTE]
     > Si votre application utilise SQL Server Express Edition, selon la valeur de la propriété **Copier dans le répertoire de sortie** du fichier de base de données, les modifications peuvent ne pas paraître quand vous appuyez sur **F5** à l’étape 10.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 Selon les spécifications de votre application, vous pouvez effectuer plusieurs étapes après avoir créé LINQ to SQL classes d’entité. Vous pouvez apporter à cette procédure pas à pas les améliorations suivantes :
 

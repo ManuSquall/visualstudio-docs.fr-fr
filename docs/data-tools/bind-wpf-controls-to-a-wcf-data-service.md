@@ -10,17 +10,17 @@ helpviewer_keywords:
 - WPF data binding [Visual Studio], walkthroughs
 - WPF Designer, data binding
 ms.assetid: 8823537c-82f0-41f7-bf30-705f0e5e59fd
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ecc08be8c865cefa9b440d9af61cf9d019865ea0
-ms.sourcegitcommit: bde55773485c9bca50a760ac9e4c919e0a208a51
+ms.openlocfilehash: ef13f400ff762818eb97396c51330d755c0203c4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72924552"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586963"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Lier des contrôles WPF à un service de données WCF
 
@@ -173,7 +173,7 @@ Ajoutez plusieurs boutons à la fenêtre en modifiant le code XAML dans le Conce
    <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>
    ```
 
-3. Générez le projet.
+3. créer le projet ;
 
 ## <a name="create-the-data-bound-controls"></a>Créer les contrôles liés aux données
 
@@ -259,13 +259,13 @@ Ajoutez du code permettant aux utilisateurs d’afficher et d’enregistrer les 
      [!code-csharp[Data_WPFWCF#5](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-wcf-data-service_5.cs)]
      [!code-vb[Data_WPFWCF#5](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_5.vb)]
 
-## <a name="test-the-application"></a>Tester l’application
+## <a name="test-the-application"></a>Tester l'application
 
 Générez et exécutez l’application pour vérifier que vous pouvez afficher et mettre à jour les enregistrements de clients :
 
 1. Dans le menu **générer** , cliquez sur **générer la solution**. Vérifiez que la solution se génère sans erreur.
 
-2. Appuyez sur **Ctrl** +**F5**.
+2. Appuyez sur **Ctrl**+**F5**.
 
      Visual Studio démarre le projet **AdventureWorksService** sans le déboguer.
 
@@ -287,7 +287,7 @@ Générez et exécutez l’application pour vérifier que vous pouvez afficher e
 
 8. Fermez l'application.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 Une fois cette procédure pas à pas terminée, vous pouvez effectuer les tâches associées suivantes :
 

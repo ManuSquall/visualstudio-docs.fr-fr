@@ -1,20 +1,20 @@
 ---
 title: Configuration d’un dépôt Git
 description: Utilisation de Git et de Subversion dans Visual Studio pour Mac.
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 02/15/2018
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: a5a6dd04cd080f57d6a6ba97b3696b0351a0a8aa
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
-ms.translationtype: HT
+ms.openlocfilehash: e6dbe3b04a39a1ffd9a6e1b8f241b497ba8a6563
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692997"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984847"
 ---
 # <a name="set-up-a-git-repository"></a>Configurer un dépôt Git
 
-Git est un système de gestion de versions distribué qui permet aux équipes de travailler simultanément sur les mêmes documents. Cela signifie qu’il existe un seul serveur contenant tous les fichiers, mais que quand un dépôt est extrait de cette source centrale, l’intégralité du dépôt est cloné localement sur votre machine.
+GiT est un système de gestion de versions distribué qui permet aux équipes de travailler simultanément sur les mêmes documents. Cela signifie qu’il existe un seul serveur contenant tous les fichiers, mais que quand un dépôt est extrait de cette source centrale, l’intégralité du dépôt est cloné localement sur votre machine.
 
 Il existe de nombreux hôtes distants qui vous permettent de travailler avec Git pour la gestion de versions, mais le plus répandu est GitHub. L’exemple ci-dessous utilise un hôte GitHub, mais vous pouvez utiliser n’importe quel hôte Git pour la gestion de versions dans Visual Studio pour Mac.
 
@@ -141,7 +141,7 @@ Vous serez probablement obligé d’utiliser un dépôt GitHub qui existe unique
 
     ![url github affichée](media/version-control-git14.png)
 
-4. Remplacez tout le texte du champ d’entrée **URL** sous l’onglet **Se connecter au référentiel**. La plupart des autres champs de cet onglet seront remplis pour vous, comme illustré par l’image de l’étape 2.
+4. Remplacez tout le texte dans le champ d’entrée d' **URL** sous l’onglet **se connecter au référentiel** . La plupart des autres champs de cet onglet sont renseignés pour vous, comme illustré dans l’image de l’étape #2.
 
 5. Entrez le répertoire dans lequel vous souhaitez cloner le dépôt et appuyez sur **Extraire**.
 

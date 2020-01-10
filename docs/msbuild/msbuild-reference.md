@@ -10,17 +10,17 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild, reference
 ms.assetid: 093395e1-70da-4f74-b34d-046c5e2b32e8
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b9f3889cf1d9088f39b4efc4e4d01197ffaaaa77
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 9418143c9d93d960d3123868b89f24a97e1afafd
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72912070"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593965"
 ---
 # <a name="msbuild-reference"></a>Informations de référence sur MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] est le système de génération de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Les liens indiqués ci-dessous renvoient aux rubriques qui contiennent les informations de référence sur [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
@@ -42,7 +42,7 @@ ms.locfileid: "72912070"
 
  Décrit l’utilisation des éléments `Choose`, `When` et `Otherwise`.
 
-- [Propriétés réservées et connues de MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md)
+- [MSBuild, propriétés réservées et connues](../msbuild/msbuild-reserved-and-well-known-properties.md)
 
  Décrit les propriétés réservées de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
 

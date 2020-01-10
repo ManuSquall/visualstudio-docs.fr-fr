@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, incremental builds
 ms.assetid: 325e28c7-4838-4e3f-b672-4586adc7500c
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 820d8b4837e2b7ae3f93a742ca8abe5962cd1893
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: fb4cfc272b24bf014691b5d130f71f97e4849a31
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63007027"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75573818"
 ---
 # <a name="incremental-builds"></a>Builds incrémentielles
 
@@ -76,4 +76,4 @@ En raison de l’inférence de sortie, vous devez ajouter une tâche `CreateProp
 Ce code crée la propriété CompileRan et lui attribue la valeur `true`, mais uniquement si la cible est exécutée. Si la cible est ignorée, CompileRan n’est pas créé.
 
 ## <a name="see-also"></a>Voir aussi
-- [Cibles](../msbuild/msbuild-targets.md)
+- [Cibles MSBuild](../msbuild/msbuild-targets.md)

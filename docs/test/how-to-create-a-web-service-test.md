@@ -7,15 +7,15 @@ helpviewer_keywords:
 - Web services [Visual Studio ALM], creating
 - service tests, Web
 ms.assetid: fbcd57ee-06ad-4260-8694-09f8e0f93e39
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 90dae3add4782af18763168643cfa5755d37cc2e
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 7a6e42d6d92a74a0fc8be96c966b9146b7888b9e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72981269"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589095"
 ---
 # <a name="how-to-create-a-web-service-test"></a>Guide pratique pour créer un test de service web
 
@@ -25,7 +25,7 @@ Vous pouvez utiliser un test de performances web pour tester des services web. �
 
 Les procédures suivantes utilisent un service web contenu dans le Starter Kit Commerce. Vous pouvez le télécharger à partir du lien [Starter Kit ASP.NET Commerce](https://sourceforge.net/projects/ppcsk/).
 
-**Prérequis**
+**Spécifications**
 
 Visual Studio Enterprise
 
@@ -71,7 +71,7 @@ Visual Studio Enterprise
     > [!NOTE]
     > Vous pouvez utiliser la liaison de données dans le corps SOAP pour remplacer n'importe quelle valeur d'espace réservé par des valeurs liées aux données à l'aide de la syntaxe `{{DataSourceName.TableName.ColumnName}}`.
 
-13. Exécutez le test. Dans le volet supérieur de l'**Afficheur des résultats des tests de performances web**, sélectionnez la requête de service web. Dans le volet inférieur, sélectionnez l’onglet navigateur Web. Le code XML retourné par le service Web, ainsi que les résultats de toutes les opérations, s’affichent.
+13. Exécuter le test. Dans le volet supérieur de l'**Afficheur des résultats des tests de performances web**, sélectionnez la requête de service web. Dans le volet inférieur, sélectionnez l’onglet navigateur Web. Le code XML retourné par le service Web, ainsi que les résultats de toutes les opérations, s’affichent.
 
 ## <a name="see-also"></a>Voir aussi
 

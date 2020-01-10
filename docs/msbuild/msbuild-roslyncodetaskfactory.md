@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tasks
 ms.assetid: e72e6506-4a11-4edf-ae8d-cfb5a3b9d8a0
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 826dbefea0a2eb7fa9758631abaf6e5da84d6862
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: eb91ffd6ad626a148c3f3ad71c307fc0d0df2c75
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443414"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585897"
 ---
 # <a name="msbuild-inline-tasks-with-roslyncodetaskfactory"></a>Tâches inline MSBuild avec RoslynCodeTaskFactory
 Comme [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md), RoslynCodeTaskFactory utilise les compilateurs Roslyn multiplateformes pour générer des assemblys de tâches en mémoire à utiliser en tant que tâches inline.  Les tâches RoslynCodeTaskFactory ciblent .NET Standard et peuvent fonctionner sur les runtimes .NET Framework et .NET Core, ainsi que sur d’autres plateformes, comme Linux et Mac OS.
@@ -54,7 +54,7 @@ Comme [CodeTaskFactory](../msbuild/msbuild-inline-tasks.md), RoslynCodeTaskFacto
 
 Les éléments restants de la tâche `DoNothing` sont vides et fournis pour illustrer l’ordre et la structure d’une tâche inline. Un exemple plus pertinent est présenté plus loin dans cette rubrique.
 
-- L’élément `ParameterGroup` est facultatif. Quand il est spécifié, il déclare les paramètres de la tâche. Pour plus d’informations sur les paramètres d’entrée et de sortie, consultez [Paramètres d’entrée et de sortie](#input-and-output-parameters) plus loin dans cette rubrique.
+- L'élément `ParameterGroup` est facultatif. Quand il est spécifié, il déclare les paramètres de la tâche. Pour plus d’informations sur les paramètres d’entrée et de sortie, consultez [Paramètres d’entrée et de sortie](#input-and-output-parameters) plus loin dans cette rubrique.
 
 - L’élément `Task` décrit et contient le code source de la tâche.
 
@@ -67,7 +67,7 @@ Les éléments `Reference` et `Using` sont indépendants du langage. Les tâches
 > [!NOTE]
 > Les éléments contenus dans l’élément `Task` sont propres à la fabrique de tâches, dans le cas présent la fabrique de tâches de code.
 
-### <a name="code-element"></a>Élément de code
+### <a name="code-element"></a>élément de code
 Le dernier élément enfant de l’élément `Task` est l’élément `Code`. L’élément `Code` contient ou identifie le code à compiler dans une tâche. Ce que vous placez dans l’élément `Code` dépend de la façon dont vous souhaitez écrire la tâche.
 
 L’attribut `Language` spécifie le langage dans lequel votre code est écrit. Les valeurs acceptables sont `cs` pour C# et `vb` pour Visual Basic.
@@ -141,7 +141,7 @@ Les paramètres peuvent avoir un ou plusieurs de ces attributs :
 
 - `Output` est un attribut facultatif qui est `false` par défaut. Si cet attribut est `true`, vous devez affecter une valeur au paramètre avant le retour de la méthode Execute.
 
-Par exemple :
+Par exemple :
 
 ```xml
 <ParameterGroup>
@@ -254,5 +254,5 @@ Ces tâches inline peuvent combiner des chemins et obtenir le nom de fichier.
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Tâches](../msbuild/msbuild-tasks.md)
-- [Procédure pas à pas : Créer une tâche inline](../msbuild/walkthrough-creating-an-inline-task.md)
+- [Tâches MSBuild](../msbuild/msbuild-tasks.md)
+- [Procédure pas à pas : Créer une tâche inline](../msbuild/walkthrough-creating-an-inline-task.md)

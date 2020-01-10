@@ -6,15 +6,15 @@ helpviewer_keywords:
 - request-level plug-in, creating
 - Web performance tests, requests
 ms.assetid: d0b5b23c-7e94-4637-be6c-2620a5442d46
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ce0a8030253e69b35deda379cffcf7475dc8bb62
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b6e57f92a3f45983321a866f3524974ea99dba82
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653620"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589147"
 ---
 # <a name="how-to-create-a-request-level-plug-in"></a>Guide pratique pour créer un plug-in de niveau requête
 
@@ -72,11 +72,11 @@ En outre, vous pouvez utiliser des plug-ins de requête de test de performances 
      Le plug-in est ajouté au dossier **Plug-ins de requête**, qui est un dossier enfant de la requête HTTP.
 
     > [!WARNING]
-    > Vous pouvez obtenir une erreur semblable au cas suivant lorsque vous exécutez un test de performances web ou un test de charge qui utilise votre plug-in :
+    > Vous risquez de rencontrer l’erreur suivante si vous exécutez un test de performances web ou un test de charge qui utilise votre plug-in :
     >
-    > **Échec de la requête : exception dans l’événement de > d' \<plug : impossible de charger le fichier ou l’assembly' \< 'nom du plug-in ". dll >, version = \<n. n. n >, culture = neutral, PublicKeyToken = null’ou l’une de ses dépendances. Le système ne peut pas trouver le fichier spécifié.**
+    > **Échec de la requête : exception dans \<plug-in > événement : impossible de charger le fichier ou l’assembly'\<'nom du plug-in ". dll >, version =\<n. n. n. n >, culture = neutral, PublicKeyToken = null’ou l’une de ses dépendances. Le système ne peut pas trouver le fichier spécifié.**
     >
-    > Ceci se produit si vous avez modifié le code de vos plug-ins et créé une nouvelle version **(Version=0.0.0.0)** de la DLL , mais que le plug-in référence encore la version du plug-in d’origine. Pour résoudre ce problème, procédez comme suit :
+    > Cela se produit si vous effectuez des modifications du code dans l’un de vos plug-ins et si vous créez une autre version de la DLL **(Version=0.0.0.0)** . Toutefois, le plug-in fait toujours référence à la version du plug-in d’origine. Pour résoudre ce problème, procédez comme suit :
     >
     > 1. Dans le projet de test de performances web et de charge, un message d'avertissement s'affiche dans les références. Supprimez et rajoutez la référence à la DLL de votre plug-in.
     > 2. Supprimez le plug-in de votre test ou de l'emplacement approprié, puis rajoutez-le.

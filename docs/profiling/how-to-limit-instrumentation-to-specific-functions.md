@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Limiter l’instrumentation à des fonctions spécifiques | Microsoft Docs'
+title: Guide pratique pour limiter l’instrumentation à des fonctions spécifiques | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,16 +8,17 @@ ms.assetid: bd98d6bf-2560-4eba-b063-2facb09f87c4
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 826031c2030c2ed8662ff98517a36c1a7ade3cde
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 34a63645933a173e449cf4292cc3d014cc3ec740
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386650"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74775317"
 ---
-# <a name="how-to-limit-instrumentation-to-specific-functions"></a>Procédure : Limiter l’instrumentation à des fonctions spécifiques
+# <a name="how-to-limit-instrumentation-to-specific-functions"></a>Guide pratique pour limiter l’instrumentation à des fonctions spécifiques
 Vous pouvez limiter l’instrumentation et la collecte de données à une ou plusieurs fonctions en configurant des options dans la page **Avancé** de la **Session de performance** ou dans les pages de propriétés des fichiers binaires cibles :
 
 - Si vous spécifiez des fonctions dans la page de propriétés de la session de performance, seules ces fonctions seront instrumentées dans tous les fichiers binaires instrumentés de la session.
@@ -41,7 +42,7 @@ Vous pouvez limiter l’instrumentation et la collecte de données à une ou plu
 
     **/include:** `FuncSpec` **[;** `FuncSpec` **]** `...`
 
-    `FuncSpec` correspond au nom de l’espace de noms et de la fonction. Son format est le suivant : `Namespace`**::**`FunctionName`. Utilisez un point-virgule pour séparer les fonctions. Utilisez un astérisque (\*) pour spécifier un caractère générique pour un ou plusieurs caractères. Par exemple, **/include:MyNS::\\*** spécifie toutes les fonctions de l’espace de noms MyNS.
+    `FuncSpec` correspond au nom de l’espace de noms et de la fonction. Son format est le suivant : `Namespace` **::** `FunctionName`. Utilisez un point-virgule pour séparer les fonctions. Utilisez un astérisque (\*) pour spécifier un caractère générique pour un ou plusieurs caractères. Par exemple, **/include:MyNS::\\** * spécifie toutes les fonctions de l’espace de noms MyNS.
 
    > [!NOTE]
    > Pour répertorier les fonctions d’un fichier binaire, ouvrez une fenêtre d’invite de commandes dans le répertoire d’installation des outils de profilage (consultez [Spécifier le chemin des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)), puis tapez **vsinstr /DumpFuncs**
@@ -60,7 +61,7 @@ Vous pouvez limiter l’instrumentation et la collecte de données à une ou plu
 
     **/include:** `FuncSpec` **[;** `FuncSpec` **]** `...`
 
-    `FuncSpec` correspond au nom de l’espace de noms et de la fonction. Son format est le suivant : `Namespace`**::**`FunctionName`. Utilisez un point-virgule pour séparer les fonctions. Utilisez un astérisque (\*) pour spécifier un caractère générique pour un ou plusieurs caractères. Par exemple, **/include:MyNS::\\*** spécifie toutes les fonctions de l’espace de noms MyNS.
+    `FuncSpec` correspond au nom de l’espace de noms et de la fonction. Son format est le suivant : `Namespace` **::** `FunctionName`. Utilisez un point-virgule pour séparer les fonctions. Utilisez un astérisque (\*) pour spécifier un caractère générique pour un ou plusieurs caractères. Par exemple, **/include:MyNS::\\** * spécifie toutes les fonctions de l’espace de noms MyNS.
 
    > [!NOTE]
    > Pour répertorier les fonctions d’un fichier binaire, ouvrez une fenêtre d’invite de commandes dans le répertoire d’installation des outils de profilage (consultez [Spécifier le chemin des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)), puis tapez **vsinstr /DumpFuncs**

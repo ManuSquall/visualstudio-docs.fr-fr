@@ -6,17 +6,17 @@ f1_keywords:
 - vs.codeanalysis.policyeditor
 helpviewer_keywords:
 - code analysis, migrating check-in policy
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6d502dc75530bb6b95f38b069b9220c5ad54cac
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d034d65cd356ff44a42d10840ae064d81713457f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649474"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587535"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Comment : créer ou mettre à jour des stratégies d’archivage d’analyse du code standard
 
@@ -39,7 +39,7 @@ Une fois que vous avez spécifié une stratégie d’archivage pour le code mana
 
 1. Dans la boîte de dialogue **contrôle de code source** , sélectionnez l’onglet **stratégie d’archivage** .
 
-1. Effectuez l’une des opérations suivantes :
+1. Effectuez l'une des actions suivantes :
 
     - Cliquez sur **Ajouter** pour créer une nouvelle stratégie d’archivage.
 
@@ -61,7 +61,7 @@ Dans la liste **exécuter cet ensemble de règles** , utilisez l’une des méth
 
 - Sélectionnez un ensemble de règles standard Microsoft.
 
-- Sélectionnez un ensemble de règles personnalisé en cliquant sur **\<Select ensemble de règles à partir du contrôle de code source... >** . Ensuite, tapez le chemin d’accès de contrôle de version de l’ensemble de règles dans le navigateur de contrôle de code source. La syntaxe d’un chemin d’accès de contrôle de version est :
+- Sélectionnez un ensemble de règles personnalisé en cliquant **\<sélectionner l’ensemble de règles à partir du contrôle de code source... >** . Ensuite, tapez le chemin d’accès de contrôle de version de l’ensemble de règles dans le navigateur de contrôle de code source. La syntaxe d’un chemin d’accès de contrôle de version est :
 
    **$/** `TeamProjectName` **/** `VersionControlPath`
 
@@ -69,4 +69,4 @@ Pour plus d’informations sur la création et l’implémentation d’un ensemb
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Créer et utiliser des stratégies d’archivage de l’analyse du code](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)
+- [Implémenter des stratégies d'archivage d'analyse du code personnalisées pour le code managé](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)

@@ -4,15 +4,15 @@ ms.date: 01/02/2018
 ms.topic: troubleshooting
 helpviewer_keywords:
 - templates [Visual Studio], troubleshooting
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 0dbdb2854833f7c28866aa3d6ec0a685803adb3d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1bef6a460f1a59823930597565b955b591ab48a0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656552"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591383"
 ---
 # <a name="how-to-troubleshoot-templates"></a>Guide pratique pour résoudre les problèmes de modèles
 
@@ -45,7 +45,7 @@ Si le fichier *vstemplate* d’un modèle n’est pas conforme au schéma de mod
 1. Vérifiez que le code XML du fichier *vstemplate* adhère au schéma de modèle. Pour plus d’informations sur le schéma *vstemplate*, consultez [Informations de référence sur les schémas de modèles](../extensibility/visual-studio-template-schema-reference.md).
 
     > [!NOTE]
-    > Pour obtenir une prise en charge d’IntelliSense quand vous créez le fichier *vstemplate*, ajoutez un attribut `xmlns` à l’élément `VSTemplate`, puis affectez-lui la valeur http://schemas.microsoft.com/developer/vstemplate/2005.
+    > Pour obtenir une prise en charge d’IntelliSense quand vous créez le fichier *vstemplate*, ajoutez un attribut `xmlns` à l’élément `VSTemplate`, puis affectez-lui la valeur `http://schemas.microsoft.com/developer/vstemplate/2005`.
 
 1. Enregistrez et fermez le fichier *vstemplate*.
 

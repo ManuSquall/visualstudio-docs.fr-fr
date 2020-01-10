@@ -3,17 +3,17 @@ title: 'Procédure : basculer entre les vues et l’éditeur XML'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: cb69fbbd-d99c-439e-9498-5df9050f8df0
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f8049806d14abc8e22154a763e982ce5c86304b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 54e43b00c877f5453d1dc28bbc9d5546fcef056f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72601874"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592622"
 ---
 # <a name="how-to-switch-between-views-and-the-xml-editor"></a>Procédure : basculer entre les vues et l’éditeur XML
 
@@ -33,6 +33,6 @@ Cette rubrique explique comment basculer entre les vues du concepteur de schéma
 
 5. Pour basculer vers la vue de départ à partir de la vue de modèle de contenu à l’aide de la barre d’outils, cliquez sur le bouton **Démarrer l’affichage** dans la barre d’outils XSD.
 
-6. Pour basculer entre les affichages à l’aide des touches d’accès rapide, appuyez sur **ctrl** +**1** pour la vue de départ, sur **CTRL** +**2** pour la vue du graphique, puis sur **CTRL** +**3** pour la vue de modèle de contenu.
+6. Pour basculer entre les affichages à l’aide des touches d’accès rapide, appuyez sur **ctrl**+**1** pour la vue de départ, sur **CTRL**+**2** pour la vue du graphique, puis sur **CTRL**+**3** pour la vue de modèle de contenu.
 
 7. Pour accéder à l’éditeur XML à partir de la vue de modèle de contenu, cliquez avec le bouton droit sur le nœud et sélectionnez **afficher le code** dans le menu contextuel.

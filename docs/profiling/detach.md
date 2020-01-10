@@ -6,14 +6,15 @@ ms.assetid: d9d1b52c-7f28-467d-b1e0-512afc4e46c9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a28551656c7cb47185713a6246479ef2bd96325
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0b151e3ede34d0c8fa3a863d7a4e7474431ae6f4
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446830"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777388"
 ---
 # <a name="detach"></a>Detach
 L’option **Detach** de VSPerfCmd.exe déconnecte le profileur des processus spécifiés, ou de tous les processus si aucun processus n’est spécifié. Le profilage doit avoir été initialisé avec la méthode d’échantillonnage.
@@ -31,7 +32,7 @@ L’option **Detach** de VSPerfCmd.exe déconnecte le profileur des processus sp
 VSPerfCmd.exe /Detach[:PIDs|ProcessNames]
 ```
 
-#### <a name="parameters"></a>Paramètres
+#### <a name="parameters"></a>Parameters
  `PIDs|ProcessNames` `PID` - Identificateur système numérique d’un ou de plusieurs processus.
 
  `ProcessNames` : nom du processus. Si plusieurs instances du processus nommé sont en cours d’exécution, les résultats sont imprévisibles.

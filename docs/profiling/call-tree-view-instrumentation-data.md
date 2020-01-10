@@ -8,14 +8,15 @@ ms.assetid: 306bd176-0ce9-4a10-89ca-20b043d37d4e
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a838a511c5f37a00ed2331d2376b395f399e65d2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 7497f455ad3868f53758555aa28d305b6068e30d
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777318"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74773509"
 ---
 # <a name="call-tree-view---instrumentation-data"></a>Vue Arborescence des appels - Données d’instrumentation
 Les valeurs d’une fonction dans l’arborescence des appels indiquent une durée pour les instances de fonctions qui ont été appelées par la fonction parent dans l’arborescence des appels. Les valeurs en pourcentage sont calculées en comparant la valeur des instances de fonctions au temps inclusif écoulé total de toutes les fonctions comprises dans l’exécution du profilage.
@@ -30,7 +31,7 @@ Les valeurs d’une fonction dans l’arborescence des appels indiquent une dur�
 |**Numéro de ligne de fonction**|Numéro de ligne du début de cette fonction dans le fichier source.|
 |**Nombre d’appels**|Nombre total d’appels passés à cette fonction.|
 |**Fichier source**|Fichier source contenant la définition pour cette fonction.|
-|**Nom du module**|Nom du module qui contient la fonction.|
+|**Nom de module**|Nom du module qui contient la fonction.|
 |**Chemin de module**|Chemin d’accès du module qui contient la fonction.|
 |**ID du processus**|ID du processus (PID) de l'exécution du profilage.|
 |**Nom du processus**|Nom assigné au processus.|
@@ -83,7 +84,7 @@ Les valeurs d’une fonction dans l’arborescence des appels indiquent une dur�
 |**Temps exclusif d’application min.**|Temps exclusif d’application minimal d’un appel à cette fonction dans ce contexte.|
 
 ## <a name="see-also"></a>Voir aussi
-- [Guide pratique pour personnaliser les colonnes de vue des rapports](../profiling/how-to-customize-report-view-columns.md)
+- [Comment : personnaliser les colonnes de la vue rapport](../profiling/how-to-customize-report-view-columns.md)
 - [Mode Arborescence des appels](../profiling/call-tree-view-sampling-data.md)
 - [Vue de l’arborescence des appels - Instrumentation](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)
 - [Vue Arborescence des appels - Échantillonnage](../profiling/call-tree-view-dotnet-memory-sampling-data.md)

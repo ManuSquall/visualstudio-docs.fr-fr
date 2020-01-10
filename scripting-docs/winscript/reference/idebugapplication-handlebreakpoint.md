@@ -1,5 +1,5 @@
 ---
-title: 'IDebugApplication :: HandleBreakPoint | Microsoft Docs'
+title: IDebugApplication::HandleBreakPoint | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -46,7 +46,7 @@ HRESULT HandleBreakPoint(
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|valeur|Description|  
+|Valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
@@ -59,7 +59,7 @@ HRESULT HandleBreakPoint(
  Cette méthode provoque l’appel de `IApplicationDebugger::onHandleBreakPoint`.  
   
 ## <a name="see-also"></a>Voir aussi  
- @No__t_1 de l' [interface IDebugApplication](../../winscript/reference/idebugapplication-interface.md)  
- [IApplicationDebugger :: onHandleBreakPoint](../../winscript/reference/iapplicationdebugger-onhandlebreakpoint.md)    
- @No__t_1 de l' [énumération BREAKREASON](../../winscript/reference/breakreason-enumeration.md)  
+   de l' [interface IDebugApplication](../../winscript/reference/idebugapplication-interface.md)  
+ [IApplicationDebugger :: onHandleBreakPoint](../../winscript/reference/iapplicationdebugger-onhandlebreakpoint.md)   
+   de l' [énumération BREAKREASON](../../winscript/reference/breakreason-enumeration.md)  
  [Énumération BREAKRESUMEACTION](../../winscript/reference/breakresumeaction-enumeration.md)

@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - Domain-Specific Language, decorators
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 567cba4be2d225985b5a6d690f0d8264f24190f4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 3374c07cac01104354b2ce41abddbeabbec0a373
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747500"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566135"
 ---
 # <a name="properties-of-decorators"></a>Propriétés des décorateurs
 Les éléments décoratifs sont des icônes, du texte ou des chevrons de développement/réduction qui peuvent apparaître sur des formes ou des connecteurs sur le diagramme. Les tableaux suivants présentent les propriétés des trois types d’éléments décoratifs. Certaines des propriétés s’affichent uniquement sur les éléments décoratifs de forme ou uniquement sur les éléments décoratifs du connecteur.
@@ -23,11 +23,11 @@ Les éléments décoratifs sont des icônes, du texte ou des chevrons de dévelo
 
 ## <a name="expandcollapse-decorator"></a>Développer/réduire le Decorator
 
-|Property|Description|Valeur par défaut|
+|Les|Description|Valeur par défaut|
 |-|-|-|
 |DisplayName|Nom de l’élément décoratif qui sera affiché dans le concepteur généré.|Développer le dédecoratorur de réduction|
 |Name|Nom de l’élément décoratif.|ExpandCollapseDecorator|
-|Notes|Notes informelles associées à cet élément décoratif.|\<aucune>|
+|Remarques|Notes informelles associées à cet élément décoratif.|\<aucune>|
 |HorizontalOffset|Décalage horizontal par rapport à la position par défaut de l’élément décoratif, en pouces. (Sur les formes uniquement.)|0|
 |VerticalOffset|Décalage vertical par rapport à la position par défaut de l’élément décoratif, en pouces. (Sur les formes uniquement.)|0|
 |OffsetFromLine|Décalage de l’élément décoratif de la ligne par rapport à sa position par défaut, en pouces. (Uniquement sur les connecteurs.)|0|
@@ -36,12 +36,12 @@ Les éléments décoratifs sont des icônes, du texte ou des chevrons de dévelo
 
 ## <a name="icon-decorator"></a>Élément décoratif d’icône
 
-|Property|Description|Valeur par défaut|
+|Les|Description|Valeur par défaut|
 |-|-|-|
 |DefaultIcon|Chemin d’accès de l’icône ou du fichier image à afficher.|\<aucune>|
 |DisplayName|Nom de l’élément décoratif à afficher dans le concepteur généré.|Élément décoratif d’icône|
 |Name|Nom de l’élément décoratif.|IconDecorator|
-|Notes|Notes informelles associées à l’élément décoratif.|\<aucune>|
+|Remarques|Notes informelles associées à l’élément décoratif.|\<aucune>|
 |HorizontalOffset|Décalage horizontal par rapport à la position par défaut de l’élément décoratif, en pouces. (Sur les formes uniquement.)|0|
 |VerticalOffset|Décalage vertical par rapport à la position par défaut de l’élément décoratif, en pouces. (Sur les formes uniquement.)|0|
 |OffsetFromLine|Décalage de l’élément décoratif de la ligne par rapport à sa position par défaut, en pouces. (Uniquement sur les connecteurs.)|0|
@@ -50,14 +50,14 @@ Les éléments décoratifs sont des icônes, du texte ou des chevrons de dévelo
 
 ## <a name="textdecorator"></a>TextDecorator
 
-|Property|Description|Valeur par défaut|
+|Les|Description|Valeur par défaut|
 |-|-|-|
-|DefaultText|Texte par défaut à afficher.|Etiquette|
-|DisplayName|Nom de l’élément décoratif à afficher dans le concepteur généré.|Etiquette|
+|DefaultText|Texte par défaut à afficher.|Ajouter des contrôles|
+|DisplayName|Nom de l’élément décoratif à afficher dans le concepteur généré.|Ajouter des contrôles|
 |FontSize|Taille de police du texte affiché dans l’élément décoratif.|8|
-|FontStyle|Style de police du texte affiché dans l’élément décoratif.|Normale|
-|Name|Nom de l’élément décoratif.|Etiquette|
-|Notes|Notes informelles associées à l’élément décoratif.|\<aucune>|
+|FontStyle|Style de police du texte affiché dans l’élément décoratif.|Regular|
+|Name|Nom de l’élément décoratif.|Ajouter des contrôles|
+|Remarques|Notes informelles associées à l’élément décoratif.|\<aucune>|
 |HorizontalOffset|Décalage horizontal par rapport à la position par défaut de l’élément décoratif, en pouces. (Sur les formes uniquement.)|0|
 |VerticalOffset|Décalage vertical par rapport à la position par défaut de l’élément décoratif, en pouces. (Sur les formes uniquement.)|0|
 |OffsetFromLine|Décalage de l’élément décoratif de la ligne par rapport à sa position par défaut, en pouces. (Uniquement sur les connecteurs.)|0|

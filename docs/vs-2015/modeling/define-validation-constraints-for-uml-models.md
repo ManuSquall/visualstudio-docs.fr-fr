@@ -25,15 +25,15 @@ Vous pouvez définir des contraintes de validation qui vérifient si le modèle 
 
  Vous pouvez également définir des contraintes qui valident le modèle par rapport à des ressources externes telles que des bases de données. Si vous souhaitez valider le code de programme par rapport à un diagramme de couche, consultez [Ajouter une validation d’architecture personnalisée aux diagrammes de couche](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).
 
- Pour connaître les versions de Visual Studio qui prennent en charge les modèles UML, consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Pour connaître les versions de Visual Studio qui prennent en charge les modèles UML, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="requirements"></a>Configuration requise
  Consultez [Spécifications](../modeling/extend-uml-models-and-diagrams.md#Requirements).
 
- Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="applying-validation-constraints"></a>Application de contraintes de validation
- Les contraintes de validation sont appliquées dans trois cas : quand vous enregistrez un modèle, quand vous ouvrez un modèle et quand vous cliquez sur **Valider le modèle UML** dans le menu **Architecture**. Dans chaque cas, seules les contraintes qui ont été définies pour ce cas sont appliquées, bien qu’en général vous définissez chaque contrainte pour qu’elle s’applique dans plusieurs cas.
+ Les contraintes de validation sont appliquées dans trois cas : quand vous enregistrez un modèle, quand vous ouvrez un modèle et quand vous cliquez sur **Valider le modèle UML** dans le menu **Architecture** . Dans chaque cas, seules les contraintes qui ont été définies pour ce cas sont appliquées, bien qu’en général vous définissez chaque contrainte pour qu’elle s’applique dans plusieurs cas.
 
  Les erreurs de validation sont signalées dans la fenêtre d’erreurs de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] et vous pouvez double-cliquer sur l’erreur pour sélectionner les éléments de modèle concernés.
 
@@ -44,15 +44,15 @@ Vous pouvez définir des contraintes de validation qui vérifient si le modèle 
 
 - **Créer une extension de validation dans sa propre extension VSIX à l’aide d’un modèle de projet.** Il s’agit de l’approche la plus rapide. Adoptez-la si vous ne souhaitez pas combiner vos contraintes de validation avec d’autres types d’extensions, telles que les commandes de menu, les éléments de boîte à outils personnalisés ou les gestionnaires de mouvements. Vous pouvez définir plusieurs contraintes dans une classe.
 
-- **Créer une classe de validation et des projets VSIX distincts.** Adoptez cette approche si vous souhaitez combiner plusieurs types d’extensions dans la même extension VSIX. Par exemple, si votre commande de menu prévoit que le modèle observe des contraintes spécifiques, vous pouvez l’incorporer à la même extension VSIX en tant que méthode de validation.
+- **Créer des projets VSIX et une classe de validation distincts.** Adoptez cette approche si vous souhaitez combiner plusieurs types d’extensions dans la même extension VSIX. Par exemple, si votre commande de menu prévoit que le modèle observe des contraintes spécifiques, vous pouvez l’incorporer à la même extension VSIX en tant que méthode de validation.
 
 #### <a name="to-create-a-validation-extension-in-its-own-vsix"></a>Pour créer une extension de validation dans sa propre extension VSIX
 
-1. Dans la boîte de dialogue **Nouveau projet**, sous **Projets de modélisation**, cliquez sur **Extension de validation**.
+1. Dans la boîte de dialogue **Nouveau projet** , sous **Projets de modélisation**, cliquez sur **Extension de validation**.
 
 2. Ouvrez le fichier **.cs** dans le nouveau projet et modifiez la classe pour implémenter votre contrainte de validation.
 
-    Pour plus d'informations, consultez [Évaluation de la contrainte de validation](#Implementing).
+    Pour plus d’informations, consultez [Évaluation de la contrainte de validation](#Implementing).
 
    > [!IMPORTANT]
    > Assurez-vous que vos fichiers **.cs** contiennent l’instruction `using` suivante :
@@ -63,7 +63,7 @@ Vous pouvez définir des contraintes de validation qui vérifient si le modèle 
 
 4. Testez vos contraintes en appuyant sur F5. Pour plus d’informations, consultez [Exécution d’une contrainte de validation](#Executing).
 
-5. Installez la commande de menu sur un autre ordinateur en copiant le fichier **bin\\\*\\\*. vsix** généré par votre projet. Pour plus d'informations, consultez [Installation et désinstallation d'une extension](#Installing).
+5. Installez la commande de menu sur un autre ordinateur en copiant le fichier **bin\\\*\\\*. vsix** généré par votre projet. Pour plus d’informations, consultez [Installation et désinstallation d’une extension](#Installing).
 
    Lors de l’ajout d’autres fichiers **.cs** , les instructions `using` suivantes sont généralement nécessaires :
 
@@ -83,25 +83,25 @@ using Microsoft.VisualStudio.Uml.Classes;
 
 1. Créez un projet de bibliothèque de classes en l’ajoutant à une solution VSIX existante ou en créant une solution.
 
-    1. Dans le menu **Fichier**, choisissez **Nouveau**, **Projet**.
+    1. Dans le menu **Fichier**, sélectionnez **Nouveau**, **Projet**.
 
     2. Sous **Modèles installés**, développez **Visual C#** ou **Visual Basic**puis, dans la colonne du milieu, choisissez **Bibliothèque de classes**.
 
 2. Créez un projet VSIX, sauf si votre solution en comporte déjà un :
 
-    1. Dans l'**Explorateur de solutions**, dans le menu contextuel de la solution, choisissez **Ajouter**, puis **Nouveau projet**.
+    1. Dans l’ **Explorateur de solutions**, dans le menu contextuel de la solution, choisissez  **Ajouter**, puis **Nouveau projet**.
 
-    2. Sous **Modèles installés**, développez **Visual C#** ou **Visual Basic**, puis sélectionnez **Extensibilité**. Dans la colonne du milieu, cliquez sur **Projet VSIX**.
+    2. Sous **Modèles installés**, développez **Visual C#** ou **Visual Basic**, puis sélectionnez **Extensibilité**. Dans la colonne du milieu, cliquez sur **Projet VSIX**.
 
 3. Définissez le projet VSIX comme projet de démarrage de la solution.
 
-    - Dans l'Explorateur de solutions, dans le menu contextuel du projet VSIX, choisissez **Définir comme projet de démarrage**.
+    - Dans l’Explorateur de solutions, dans le menu contextuel du projet VSIX, choisissez **Définir comme projet de démarrage**.
 
 4. Dans **source.extension.vsixmanifest**, sous **Contenu**, ajoutez le projet de bibliothèque de classes en tant que composant MEF :
 
     1. Sous l’onglet **Métadonnées** , nommez le VSIX.
 
-    2. Sous l'onglet **Cibles d'installation**, définissez les versions de Visual Studio comme cibles.
+    2. Sous l’onglet **Cibles d’installation** , définissez les versions de Visual Studio comme cibles.
 
     3. Sous l’onglet **Composants** , choisissez **Nouveau**puis, dans la boîte de dialogue, définissez :
 
@@ -183,15 +183,15 @@ using Microsoft.VisualStudio.Uml.Classes;
 
 #### <a name="to-test-the-validation-constraint"></a>Pour tester la contrainte de validation
 
-1. Appuyez sur **F5**, ou dans le menu **Déboguer**, choisissez **Démarrer le débogage**.
+1. Appuyez sur **F5**, ou dans le menu **Déboguer** , choisissez **Démarrer le débogage**.
 
      Une instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] démarre.
 
-     **Dépannage** : si une nouvelle instance de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ne démarre pas :
+     **Dépannage**: si une nouvelle instance de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ne démarre pas :
 
     - Si vous avez plusieurs projets, vérifiez que le projet VSIX est défini comme projet de démarrage de la solution.
 
-    - Dans l'Explorateur de solutions, dans le menu contextuel du projet de démarrage ou du projet unique, choisissez **Propriétés**. Dans l’éditeur de propriétés du projet, sélectionnez l’onglet **Déboguer** . Assurez-vous que la chaîne dans le champ **Démarrer le programme externe** correspond au chemin d’accès complet de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], généralement :
+    - Dans l’Explorateur de solutions, dans le menu contextuel du projet de démarrage ou du projet unique, choisissez **Propriétés**. Dans l’éditeur de propriétés du projet, sélectionnez l’onglet **Déboguer** . Assurez-vous que la chaîne dans le champ **Démarrer le programme externe** correspond au chemin d’accès complet de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], généralement :
 
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`
 
@@ -203,13 +203,13 @@ using Microsoft.VisualStudio.Uml.Classes;
 
     2. Créez une classe et ajoutez-y deux attributs qui portent le même nom.
 
-4. Dans le menu contextuel n'importe où dans le diagramme, choisissez **Valider**.
+4. Dans le menu contextuel n’importe où dans le diagramme, choisissez **Valider**.
 
 5. Toutes les erreurs dans le modèle seront signalées dans la fenêtre des erreurs.
 
 6. Double-cliquez sur le rapport d’erreurs. Si les éléments mentionnés dans le rapport sont visibles à l’écran, ils sont mis en surbrillance.
 
-     **Dépannage** : si la commande **Valider** n’apparaît pas dans le menu, vérifiez que :
+     **Dépannage**: si la commande **Valider** n’apparaît pas dans le menu, vérifiez que :
 
     - le projet de validation est répertorié en tant que composant MEF sous l’onglet **Composants** de **source.extensions.manifest** dans le projet VSIX ;
 
@@ -223,7 +223,7 @@ using Microsoft.VisualStudio.Uml.Classes;
  La méthode de validation doit déterminer si la contrainte de validation que vous souhaitez appliquer est true ou false. Si la valeur est true, elle ne doit rien faire. Si la valeur est false, elle doit signaler une erreur à l’aide des méthodes fournies par le paramètre `ValidationContext` .
 
 > [!NOTE]
-> Les méthodes de validation ne doivent pas changer le modèle. Le moment et l’ordre d’exécution des contraintes ne sont pas garantis. Si vous devez passer des informations entre des exécutions consécutives d'une méthode de validation lors d'une série de validation, vous pouvez utiliser le cache de contexte décrit dans [Coordination de plusieurs validations](#ContextCache).
+> Les méthodes de validation ne doivent pas changer le modèle. Le moment et l’ordre d’exécution des contraintes ne sont pas garantis. Si vous devez passer des informations entre des exécutions consécutives d’une méthode de validation lors d’une série de validation, vous pouvez utiliser le cache de contexte décrit dans [Coordination de plusieurs validations](#ContextCache).
 
  Par exemple, si vous souhaitez vous assurer que chaque type (classe, interface ou énumérateur) possède un nom comportant au moins trois caractères, vous pouvez utiliser cette méthode :
 
@@ -239,7 +239,7 @@ public void ValidateTypeName(ValidationContext context, IType type)
  }
 ```
 
- Pour plus d'informations sur les méthodes et les types que vous pouvez utiliser pour parcourir et lire le modèle, consultez [Programmation à l'aide de l'API UML](../modeling/programming-with-the-uml-api.md).
+ Pour plus d’informations sur les méthodes et les types que vous pouvez utiliser pour parcourir et lire le modèle, consultez [Programming with the UML API](../modeling/programming-with-the-uml-api.md) .
 
 ### <a name="about-validation-constraint-methods"></a>À propos des méthodes de contrainte de validation
  Chaque contrainte de validation est définie par une méthode au format suivant :
@@ -370,7 +370,7 @@ context.LogError(... , usecase);
 
 1. Sur votre ordinateur, recherchez le fichier **.vsix** généré par votre projet VSIX.
 
-    1. Dans l'**Explorateur de solutions**, dans le menu contextuel du projet VSIX, choisissez **Ouvrir le dossier dans l'Explorateur Windows**.
+    1. Dans l’ **Explorateur de solutions**, dans le menu contextuel du projet VSIX, choisissez **Ouvrir le dossier dans l’Explorateur Windows**.
 
     2. Recherchez le fichier **bin\\\*\\** _YourProject_ **. vsix**
 
@@ -380,13 +380,13 @@ context.LogError(... , usecase);
 
 3. Sur l’ordinateur cible, ouvrez le fichier **.vsix** .
 
-     Le **Programme d’installation des extensions Visual Studio** s’ouvre et installe l’extension.
+     Le**Programme d’installation des extensions Visual Studio** s’ouvre et installe l’extension.
 
 4. Démarrez ou redémarrez [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].
 
 #### <a name="to-uninstall-an-extension"></a>Pour désinstaller une extension
 
-1. Dans le menu **Outils**, choisissez **Extensions et mises à jour**.
+1. Dans le menu **Outils** , choisissez **Extensions et mises à jour**.
 
 2. Développez **Extensions installées**.
 
@@ -394,7 +394,7 @@ context.LogError(... , usecase);
 
    Exceptionnellement, une extension défaillante ne parvient pas à se charger et crée un rapport dans la fenêtre d’erreur, mais ne s’affiche pas dans le Gestionnaire d’extensions. Dans ce cas, vous pouvez supprimer l’extension en supprimant le fichier à l’emplacement *suivant, où* *% LocalAppData%* est généralement le nom de \AppData\Local : \Utilisateurs\\*nom d’utilisateur*:
 
-   *%LocalAppData%* **\Microsoft\VisualStudio\\[version]\Extensions**
+   *% LocalAppData%* **\Microsoft\VisualStudio\\[version] \Extensions**
 
 ## <a name="Example"></a> Exemple
  Cet exemple recherche des boucles dans la relation Dependency entre les éléments.

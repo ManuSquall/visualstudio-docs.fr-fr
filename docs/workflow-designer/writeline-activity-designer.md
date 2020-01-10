@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.WriteLine.UI
 ms.assetid: 1b5f29a8-b7fd-477e-949e-2f689cae3c96
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 475755fed96f8341c45b8260b414658967b3284c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7e3b4da69a2d9154f36e42d3b20657e204767872
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649751"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593022"
 ---
 # <a name="writeline-activity-designer"></a>Concepteur d'activités WriteLine
 
@@ -33,7 +33,7 @@ Accédez au concepteur d’activités **WriteLine** dans la catégorie **primiti
 
 Le tableau suivant présente les propriétés de <xref:System.Activities.Statements.WriteLine> et décrit comment elles sont utilisées dans le concepteur. Ces propriétés peuvent être modifiées dans la grille des propriétés et certaines d’entre elles peuvent être modifiées sur Concepteur de flux de travail surface.
 
-|Nom de propriété|Obligatoire|Utilisation|
+|Nom de propriété|Obligatoire|Contrôle|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Nom convivial de l'activité <xref:System.Activities.Statements.WriteLine>. La valeur par défaut est WriteLine. Bien que la propriété <xref:System.Activities.Activity.DisplayName%2A> ne soit pas strictement obligatoire, il est recommandé d'en utiliser une.|
 |<xref:System.Activities.Statements.WriteLine.Text%2A>|False|Texte à écrire. Pour définir la propriété, tapez une expression Visual Basic dans la zone de **texte** sur le concepteur d’activités **WriteLine** ou dans la grille des propriétés.|
@@ -41,7 +41,7 @@ Le tableau suivant présente les propriétés de <xref:System.Activities.Stateme
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Primitives](../workflow-designer/primitives-activity-designers.md)
+- [Primitifs](../workflow-designer/primitives-activity-designers.md)
 - [Assign](../workflow-designer/assign-activity-designer.md)
 - [Delay](../workflow-designer/delay-activity-designer.md)
 - [InvokeMethod](../workflow-designer/invokemethod-activity-designer.md)

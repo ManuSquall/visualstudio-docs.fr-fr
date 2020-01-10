@@ -2,23 +2,23 @@
 title: 'Substituts Microsoft : générer & code de compilation ; conventions d’affectation des noms'
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: e29b0b05b836dd4072b704bfd48cfb85cde50927
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: 155caf50e82f56c1db0b0b0a65a640f252f44063
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665253"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589329"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Génération et compilation de code et conventions de nommage dans Microsoft Fakes
 
 Cet article traite des options et des problèmes dans la génération et la compilation de code Fakes, et décrit les conventions de nommage pour les types, les membres et les paramètres Fakes générés.
 
-**Prérequis**
+**Spécifications**
 
 - Visual Studio Enterprise
 - Un projet .NET Framework
@@ -134,7 +134,7 @@ Le framework Fakes utilise la même clé pour signer tous les assemblys génér�
 [assembly: InternalsVisibleTo("FileSystem.Fakes, PublicKey=0024000004800000940000000602000000240000525341310004000001000100e92decb949446f688ab9f6973436c535bf50acd1fd580495aae3f875aa4e4f663ca77908c63b7f0996977cb98fcfdb35e05aa2c842002703cad835473caac5ef14107e3a7fae01120a96558785f48319f66daabc862872b2c53f5ac11fa335c0165e202b4c011334c7bc8f4c4e570cf255190f4e3e2cbc9137ca57cb687947bc")]
 ```
 
-Vous pouvez spécifier une autre clé publique pour l’assembly Fakes, par exemple une clé que vous avez créée pour l’assembly ayant fait l’objet d’un shim, en spécifiant le chemin complet au fichier *.snk* qui contient l’autre clé comme valeur d’attribut `KeyFile` dans l’élément `Fakes`\\`Compilation` du fichier *.fakes*. Exemple :
+Vous pouvez spécifier une autre clé publique pour l’assembly Fakes, par exemple une clé que vous avez créée pour l’assembly ayant fait l’objet d’un shim, en spécifiant le chemin complet au fichier *.snk* qui contient l’autre clé comme valeur d’attribut `KeyFile` dans l’élément `Fakes`\\`Compilation` du fichier *.fakes*. Par exemple :
 
 ```xml
 <-- FileSystem.Fakes.fakes -->
@@ -257,10 +257,10 @@ attribute of the Assembly element in the .fakes:
 |-|-|
 |Un **type**`T`|T<br /><br /> L’espace de noms, la structure imbriquée et les tics génériques sont supprimés.|
 |Un **paramètre de sortie**`out T`|`TOut`|
-|Un **paramètre de référence** `ref T`|`TRef`|
+|Un **paramètre ref** `ref T`|`TRef`|
 |Un **type tableau**`T[]`|`TArray`|
-|Un type **tableau multidimensionnel** `T[ , , ]`|`T3`|
-|Un type **pointeur** `T*`|`TPtr`|
+|Un type **tableau multidimensionnel**`T[ , , ]`|`T3`|
+|Un type **pointeur**`T*`|`TPtr`|
 |Un **type générique**`T<R1, ...>`|`TOfR1`|
 |Un **argument de type générique**`!i` de type `C<TType>`|`Ti`|
 |Un **argument de méthode générique**`!!i` de méthode `M<MMethod>`|`Mi`|

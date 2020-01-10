@@ -29,17 +29,17 @@ helpviewer_keywords:
 - $(ProjectName)
 - build events, macros
 ms.assetid: d49b2c57-24bf-4fb2-8351-5c4b6cca938f
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5671a75a847d81caedeffc17ea436eade060f3e
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
-ms.translationtype: HT
+ms.openlocfilehash: 38712c25718670ea15324e3daf6fadc138cb08a6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461316"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567916"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Ligne de commande de l’événement pré-build/post-build, boîte de dialogue
 
@@ -48,7 +48,7 @@ Vous pouvez taper des événements pré-build ou post-build pour la [page Évén
 > [!NOTE]
 > Les événements pré-build ne fonctionnent pas si le projet est à jour et qu’aucune build n’est déclenchée.
 
-## <a name="ui-element-list"></a>Liste des éléments de l'interface utilisateur
+## <a name="ui-element-list"></a>Liste d'éléments UI
 
 **Zone d’édition de la ligne de commande**
 
@@ -99,5 +99,5 @@ Vous pouvez utiliser l’une de ces macros pour spécifier des emplacements de f
 
 - [Spécification d’événements de build personnalisés dans Visual Studio](../../ide/specifying-custom-build-events-in-visual-studio.md)
 - [Événements de build, page du Concepteur de projets (C#)](../../ide/reference/build-events-page-project-designer-csharp.md)
-- [Guide pratique pour Spécifier des événements de build (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
+- [Guide pratique pour spécifier des événements de build (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)
 - [Guide pratique pour spécifier des événements de build (C#)](../../ide/how-to-specify-build-events-csharp.md)

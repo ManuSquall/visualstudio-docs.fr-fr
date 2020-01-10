@@ -20,7 +20,7 @@ ms.locfileid: "74298373"
 
 Le [.NET Compiler Platform](https://github.com/dotnet/roslyn) (« Roslyn ») vous aide à générer des bibliothèques prenant en charge le code. Une bibliothèque de prise en charge du code fournit des fonctionnalités que vous pouvez utiliser et outils (analyseurs Roslyn) pour vous aider à utiliser la bibliothèque de la manière la plus appropriée ou pour éviter les erreurs. Cette rubrique vous montre comment créer un analyseur Roslyn réel pour intercepter les erreurs courantes lors de l’utilisation du package NuGet [: Collections immuables](https://msdn.microsoft.com/library/33f4449d-7078-450a-8d60-d9229f66bbca) . L’exemple montre également comment fournir un correctif de code pour un problème de code trouvé par l’analyseur. Les utilisateurs voient les corrections de code dans l’interface utilisateur de l’ampoule Visual Studio et peuvent appliquer automatiquement un correctif pour le code.
 
-## <a name="getting-started"></a>Commencer
+## <a name="getting-started"></a>Mise en route
 Pour générer cet exemple, vous avez besoin des éléments suivants :
 
 - Visual Studio 2015 (pas une édition Express) ou une version ultérieure. Vous pouvez utiliser l' [édition Visual Studio Community](https://www.visualstudio.com/products/visual-studio-community-vs) gratuite
@@ -102,7 +102,7 @@ Pour que votre analyseur s’affiche dans l’interface utilisateur de Visual St
 internal const string Category = "Naming";
 ```
 
-Modification `"Naming"` à `"API Guidance"`.
+Remplacez `"Naming"` par `"API Guidance"`.
 
 Ensuite, recherchez et ouvrez le fichier Resources. resx dans votre projet à l’aide de l' **Explorateur de solutions**. Vous pouvez insérer une description pour votre analyseur, son titre, etc. Vous pouvez modifier la valeur de toutes ces valeurs pour `“Don’t use ImmutableArray<T> constructor”` pour le moment. Vous pouvez placer des arguments de mise en forme de chaîne dans votre chaîne ({0}, {1}, etc.), et par la suite lorsque vous appelez `Diagnostic.Create()`, vous pouvez fournir un tableau de paramètres d’arguments à passer.
 

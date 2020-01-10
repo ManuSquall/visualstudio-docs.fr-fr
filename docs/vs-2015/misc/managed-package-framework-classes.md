@@ -28,7 +28,7 @@ Les classes MPF (Managed Package Framework) peuvent servir à créer des VSPacka
 ## <a name="mpf-namespaces"></a>Espaces de noms MPF  
  Le tableau suivant répertorie les espaces de noms MPF fournis par le [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)].  
   
-|Espace de noms|Contenu|  
+|Espace de noms|Sommaire|  
 |----------------|--------------|  
 |<xref:Microsoft.VisualStudio>|Contient des classes utiles pour la gestion des erreurs COM, des constantes [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] et des fenêtres Win32.|  
 |<xref:Microsoft.VisualStudio.Package>|Inclut les wrappers de code managé pour les projets [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , les éditeurs et MSBuild.|  

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - data tier
 - n-tier applications, about n-tier applications
 ms.assetid: 1020581d-eaaa-41a2-aca4-bf4c212895f6
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 80b6f89d9c074d7d17c258263c03e97334e6fd90
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 21233b94350823b1f765aa33f9304c10c43e0535
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648274"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586378"
 ---
 # <a name="n-tier-data-applications-overview"></a>Vue d’ensemble des applications de données multiniveaux
 Les applications de données *multicouches* sont des applications de données qui sont séparées en plusieurs *niveaux*. Également appelés « applications distribuées » et « applications multicouches », les applications multicouches séparent le traitement en niveaux discrets répartis entre le client et le serveur. Lorsque vous développez des applications qui accèdent à des données, vous devez disposer d’une séparation claire entre les différents niveaux qui composent l’application.
@@ -33,7 +33,7 @@ Visual Studio contient plusieurs fonctionnalités pour aider les développeurs �
 
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) fournit la méthode <xref:System.Data.Linq.Table%601.Attach%2A> qui vous permet de regrouper le DataContext de différents niveaux dans une application. Pour plus d’informations, consultez [applications multicouches et distantes avec LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql).
 
-## <a name="presentation-tier"></a>Couche présentation
+## <a name="presentation-tier"></a>Niveau Présentation
 La *couche présentation* est le niveau dans lequel les utilisateurs interagissent avec une application. Elle contient souvent également une logique d’application supplémentaire. Les composants standard de la couche présentation sont les suivants :
 
 - Composants de liaison de données, tels que les <xref:System.Windows.Forms.BindingSource> et <xref:System.Windows.Forms.BindingNavigator>.
@@ -57,16 +57,16 @@ La couche *intermédiaire* est la couche que la couche de présentation et la co
 
 L’illustration suivante montre les fonctionnalités et les technologies qui sont disponibles dans Visual Studio et l’endroit où elles peuvent tenir dans la couche intermédiaire d’une application multiniveau.
 
-composants de niveau ![Middle ](../data-tools/media/ntiermid.png) niveau intermédiaire
+![composants de la couche intermédiaire](../data-tools/media/ntiermid.png) niveau intermédiaire
 
 En général, la couche intermédiaire se connecte à la couche données à l’aide d’une connexion de données. Cette connexion de données est généralement stockée dans le composant d’accès aux données.
 
 ## <a name="data-tier"></a>Couche Données
-La *couche données* est fondamentalement le serveur qui stocke les données d’une application (par exemple, un serveur exécutant SQL Server).
+La *couche Données* correspond au serveur stockant les données d’une application (par exemple, dans le cas d’un serveur exécutant SQL Server).
 
 L’illustration suivante montre les fonctionnalités et les technologies qui sont disponibles dans Visual Studio et l’endroit où elles peuvent être intégrées à la couche données d’une application multiniveau.
 
-composants de niveau ![Data ](../data-tools/media/ntierdatatier.png) niveau données
+composants de la couche données ![](../data-tools/media/ntierdatatier.png) couche données
 
 La couche données n’est pas accessible directement à partir du client dans la couche présentation. Au lieu de cela, le composant d’accès aux données de la couche intermédiaire est utilisé pour la communication entre les couches présentation et données.
 

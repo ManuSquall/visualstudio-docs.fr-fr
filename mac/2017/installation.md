@@ -1,18 +1,18 @@
 ---
 title: Installer Visual Studio 2017 pour Mac
 description: Instructions sur l’installation de Visual Studio pour Mac et des composants supplémentaires nécessaires pour le développement multiplateforme.
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 11/03/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: 93159487d4d00b70a801e235f9a22eb35d6183c0
-ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
-ms.translationtype: HT
+ms.openlocfilehash: dfc9f7469f5954aaac56b5d45bb5ae722110dfcc
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66500985"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984913"
 ---
 # <a name="install-visual-studio-2017-for-mac"></a>Installer Visual Studio 2017 pour Mac
 
@@ -23,7 +23,7 @@ ms.locfileid: "66500985"
 
 Pour une expérience optimale, avant de rétrograder, vous devez vous assurer que vous avez [désinstallé](uninstall.md) Visual Studio 2019 pour Mac. Si vous rencontrez des problèmes, veillez à nous le faire savoir en [signalant un problème](report-a-problem.md).
  
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise pour
 
 Pour commencer à développer des applications multiplateformes natives quand vous téléchargez Visual Studio pour Mac, vous devez installer et configurer un certain nombre de choses.
 
@@ -33,7 +33,7 @@ Pour travailler avec iOS dans Visual Studio, vous avez besoin des éléments sui
 - Xcode 9.3 ou version ultérieure. La dernière version stable est généralement recommandée.
 - un ID Apple. Si vous n’avez pas encore d’identifiant Apple, vous pouvez en créer un sur https://appleid.apple.com. Un ID Apple est nécessaire pour installer et se connecter à Xcode.
 
-## <a name="install"></a>Installez
+## <a name="install"></a>Installez .
 
 1. Télécharger Visual Studio pour Mac à partir de [my.visualstudio.com](https://my.visualstudio.com/Downloads?q=Visual%20Studio%202017%20for%20Mac)
 
@@ -55,7 +55,7 @@ Pour travailler avec iOS dans Visual Studio, vous avez besoin des éléments sui
 
 6. Le programme d’installation affiche une liste des composants nécessaires manquants, et qui doivent être téléchargés et installés. Sélectionnez les produits que vous voulez télécharger ici :
 
-   ![Sélectionner des éléments](media/installer-image5.png)
+   ![Sélection d'éléments](media/installer-image5.png)
 
    Si vous ne souhaitez pas installer toutes les plateformes, utilisez le guide ci-dessous pour vous aider à choisir les plateformes à installer :
 
@@ -89,7 +89,7 @@ Pour travailler avec iOS dans Visual Studio, vous avez besoin des éléments sui
 
 10. Une fois l’installation terminée, vous pouvez démarrer le développement d’applications dans Visual Studio en cliquant sur **Démarrer** :
 
-    ![Ouvrir Visual Studio](media/installer-image11.png)
+    ![Ouvrez Visual Studio](media/installer-image11.png)
 
 > [!NOTE]
 > Si vous avez choisi pas installer un outil ou une plateforme lors de l’installation d’origine (en la désélectionnant à l’étape 6), vous devez réexécuter le [programme d’installation](https://visualstudio.microsoft.com/vs/) si vous voulez ajouter les composants plus tard.
@@ -102,7 +102,7 @@ Configurez votre réseau de façon à autoriser l’accès aux emplacements suiv
 
 - [Points de terminaison de Visual Studio](/visualstudio/install/install-visual-studio-behind-a-firewall-or-proxy-server)
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 L’installation de Visual Studio pour Mac vous permet de commencer à écrire du code pour vos applications. Les guides suivants sont fournis pour vous guider à travers les étapes d’écriture et de déploiement de vos projets.
 

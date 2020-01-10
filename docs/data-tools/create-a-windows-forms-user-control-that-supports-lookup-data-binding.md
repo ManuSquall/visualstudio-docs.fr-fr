@@ -10,17 +10,17 @@ helpviewer_keywords:
 - LookupBindingPropertiesAttribute class, examples
 - user controls [Visual Basic], creating
 ms.assetid: c48b4d75-ccfc-4950-8b14-ff8adbfe4208
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2c6542ac89f82443cbe4245862473861c94da3cd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a5d6309818c251b9101b1345450ef66f3fc8f1f8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72642657"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586794"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Créer un contrôle utilisateur Windows Forms prenant en charge la liaison de données de recherche
 
@@ -76,7 +76,7 @@ Cette procédure pas à pas utilise SQL Server Express base de données locale e
 
 La première étape consiste à créer un projet d' **Application Windows Forms** .
 
-1. Dans Visual Studio, dans le menu **fichier** , sélectionnez **nouveau**  > **projet**.
+1. Dans Visual Studio, dans le menu **Fichier**, sélectionnez **Nouveau** > **Projet**.
 
 2. Développez **Visual C#**  ou **Visual Basic** dans le volet gauche, puis sélectionnez **Bureau Windows**.
 

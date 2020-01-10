@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 0405488f6f456f22711498e81789881ffc5a0a8a
-ms.sourcegitcommit: 308a2bdbea81df78bffc3a01afce4ab13131fabc
+ms.openlocfilehash: 3f8fa8fcd859a7464d471972689728dc556a79bd
+ms.sourcegitcommit: 0d8488329263cc0743a89d43f6de863028e982ff
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "73912998"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75678972"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Déboguer une application JavaScript ou TypeScript dans Visual Studio
 
@@ -44,7 +44,7 @@ Vous pouvez déboguer un code JavaScript et TypeScript à l’aide de Visual Stu
 ## <a name="debug-client-side-script"></a>Débogage de script côté client
 
 ::: moniker range=">=vs-2019"
-Visual Studio assure uniquement la prise en charge du débogage côté client pour chrome et Microsoft Edge (chrome). Dans certains scénarios, le débogueur atteint automatiquement les points d’arrêt dans le code JavaScript et TypeScript et dans des scripts incorporés dans des fichiers HTML. Pour déboguer le script côté client dans les applications ASP.NET, consultez le billet de blog [Déboguer du code JavaScript dans Microsoft Edge](https://devblogs.microsoft.com/visualstudio/debug-javascript-in-microsoft-edge-from-visual-studio/) et ce [billet pour Google Chrome](https://devblogs.microsoft.com/aspnet/client-side-debugging-of-asp-net-projects-in-google-chrome).
+Visual Studio assure uniquement la prise en charge du débogage côté client pour chrome et Microsoft Edge (chrome). Dans certains scénarios, le débogueur atteint automatiquement les points d’arrêt dans le code JavaScript et TypeScript et dans des scripts incorporés dans des fichiers HTML. Pour déboguer le script côté client dans les applications ASP.NET, consultez le billet de blog [Déboguer du code JavaScript dans Microsoft Edge](https://devblogs.microsoft.com/visualstudio/debug-javascript-in-microsoft-edge-from-visual-studio/) et ce [billet pour Google Chrome](https://devblogs.microsoft.com/aspnet/client-side-debugging-of-asp-net-projects-in-google-chrome). Pour déboguer la machine à écrire dans ASP.NET Core, consultez également [créer une application ASP.net core avec la machine à écrire](tutorial-aspnet-with-typescript.md).
 ::: moniker-end
 ::: moniker range="vs-2017"
 Visual Studio assure uniquement la prise en charge du débogage côté client pour chrome et Internet Explorer. Dans certains scénarios, le débogueur atteint automatiquement les points d’arrêt dans le code JavaScript et TypeScript et dans des scripts incorporés dans des fichiers HTML. Pour déboguer le script côté client dans les applications ASP.NET, consultez le billet [de blog débogage côté client des projets ASP.net dans Google Chrome](https://devblogs.microsoft.com/aspnet/client-side-debugging-of-asp-net-projects-in-google-chrome/).
@@ -86,7 +86,7 @@ Pour ce scénario, utilisez Chrome.
 
     `msedge --remote-debugging-port=9222`
 
-    ni
+    ou
 
     `chrome.exe --remote-debugging-port=9222`
     ::: moniker-end
@@ -111,7 +111,7 @@ Pour attacher le débogueur de Visual Studio et atteindre des points d’arrêt 
 
     Pour rechercher le code spécifique dans un fichier compilé, utilisez **Ctrl**+**F** (**modifier** > **Rechercher et remplacer** > **recherche rapide**).
 
-    Pour le code côté client, pour atteindre un point d’arrêt dans un fichier de base de code ou un fichier JSX, vous devez généralement utiliser des [mappages de source](#generate_source_maps). Un mappage source doit être configuré correctement pour prendre en charge le débogage dans Visual Studio.
+    Pour le code côté client, pour atteindre un point d’arrêt dans un fichier de base de code, le fichier *. vue*ou jsx requiert généralement l’utilisation de [mappages de source](#generate_source_maps). Un mappage source doit être configuré correctement pour prendre en charge le débogage dans Visual Studio.
 
 2. Sélectionnez votre navigateur cible comme cible de débogage dans Visual Studio, puis appuyez sur **Ctrl**+**F5** (**Déboguer** > exécuter **sans débogage**) pour exécuter l’application dans le navigateur.
 
@@ -127,9 +127,8 @@ Pour attacher le débogueur de Visual Studio et atteindre des points d’arrêt 
     > À compter de Visual Studio 2017, une fois que vous avez attaché le processus la première fois en suivant ces étapes, vous pouvez le rattacher rapidement au même processus en choisissant **Déboguer** > **rattacher au processus**.
 
 4. Dans la boîte de dialogue **attacher au processus** , récupérez une liste filtrée des instances de navigateur auxquelles vous pouvez attacher.
-
     ::: moniker range=">=vs-2019"
-    Dans Visual Studio 2019, choisissez le débogueur approprié pour votre navigateur cible, **JavaScript (chrome)** ou **JavaScript (Microsoft Edge-chrome)** dans le champ **attacher à** , tapez **chrome** ou **bord** dans la zone de filtre pour filtrer résultats de la recherche.
+    Dans Visual Studio 2019, choisissez le débogueur approprié pour votre navigateur cible, **JavaScript (chrome)** ou **JavaScript (Microsoft Edge-chrome)** dans le champ **attacher à** , tapez **chrome** ou **bord** dans la zone de filtre pour filtrer les résultats de la recherche.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Dans Visual Studio 2017, choisissez **code WebKit** dans le champ **attacher à** , tapez **chrome** dans la zone de filtre pour filtrer les résultats de la recherche.
@@ -188,7 +187,7 @@ Visual Studio permet d’utiliser et de générer des mappages de sources sur le
 
 Afin de configurer les paramètres avancés pour les mappages de sources, utilisez un fichier *tsconfig.json* ou les paramètres du projet dans un projet TypeScript, mais pas les deux.
 
-Pour activer le débogage à l’aide de Visual Studio, vous devez vous assurer que la ou les références à votre fichier source dans le mappage source généré sont correctes (cela peut nécessiter des tests). Par exemple, si vous utilisez WebPack, les références figurant dans le fichier de mappage source incluent le préfixe *WebPack:///* , qui empêche Visual Studio de trouver un fichier source de machine à écrire ou jsx. Plus précisément, lorsque vous corrigez ceci à des fins de débogage, la référence au fichier source (par exemple, *app. TSX*) doit être remplacée par une *valeur telle* que *./app.TSX*, qui active le débogage ( le chemin d’accès est relatif à votre fichier source). L’exemple suivant montre comment vous pouvez configurer des mappages de sources dans WebPack, qui est l’un des bundleeurs les plus courants, afin qu’ils fonctionnent avec Visual Studio.
+Pour activer le débogage à l’aide de Visual Studio, vous devez vous assurer que la ou les références à votre fichier source dans le mappage source généré sont correctes (cela peut nécessiter des tests). Par exemple, si vous utilisez WebPack, les références figurant dans le fichier de mappage source incluent le préfixe *WebPack:///* , qui empêche Visual Studio de trouver un fichier source de machine à écrire ou jsx. Plus précisément, lorsque vous corrigez ceci à des fins de débogage, la référence au fichier source (par exemple, *app. TSX*) doit être remplacée par une *valeur telle* que *./app.TSX*, qui active le débogage (le chemin d’accès est relatif à votre fichier source). L’exemple suivant montre comment vous pouvez configurer des mappages de sources dans WebPack, qui est l’un des bundleeurs les plus courants, afin qu’ils fonctionnent avec Visual Studio.
 
 (WebPack uniquement) Si vous définissez le point d’arrêt dans une machine à écrire de fichier JSX (au lieu d’un fichier JavaScript compilé), vous devez mettre à jour la configuration de votre WebPack. Par exemple, dans *WebPack-config. js*, vous devrez peut-être remplacer le code suivant :
 

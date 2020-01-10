@@ -1,5 +1,5 @@
 ---
-title: 'IDebugDocumentHost :: GetDeferredText | Microsoft Docs'
+title: IDebugDocumentHost::GetDeferredText | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -58,10 +58,10 @@ HRESULT GetDeferredText(
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|valeur|Description|  
+|Valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
-|`E_NOTIMPL`|La méthode n’est pas implémentée.|  
+|`E_NOTIMPL`|Cette méthode n'est pas implémentée.|  
   
 ## <a name="remarks"></a>Notes  
  Cette méthode peut retourner `E_NOTIMPL`, si l’hôte n’appelle pas `IDebugDocumentHelper::AddDeferredText`.  
@@ -70,6 +70,6 @@ HRESULT GetDeferredText(
 > Cette méthode retourne le texte du document d’origine. L’hôte n’effectue pas le suivi des modifications ou d’autres modifications apportées au document.  
   
 ## <a name="see-also"></a>Voir aussi  
- @No__t_1 de l' [interface IDebugDocumentHost](../../winscript/reference/idebugdocumenthost-interface.md)  
- [IDebugDocumentHelper :: AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)    
+   de l' [interface IDebugDocumentHost](../../winscript/reference/idebugdocumenthost-interface.md)  
+ [IDebugDocumentHelper::AddDeferredText](../../winscript/reference/idebugdocumenthelper-adddeferredtext.md)   
  [Énumération SOURCE_TEXT_ATTR](../../winscript/reference/source-text-attr-enumeration.md)

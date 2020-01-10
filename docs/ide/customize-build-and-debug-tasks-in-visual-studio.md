@@ -8,17 +8,17 @@ helpviewer_keywords:
 - customize codebases [Visual Studio]
 - tasks.vs.json file [Visual Studio]
 - launch.vs.json file [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a9101db18c8c61f249d9f0b818a75024270a079
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6d10b02908c63d177149f9113c37f71813ee09dc
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652575"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567435"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Personnaliser des tâches de génération et de débogage pour le développement « Ouvrir le dossier »
 
@@ -28,7 +28,7 @@ Si le code base utilise des outils de génération personnalisés que Visual Stu
 
 Personnalisez votre code base sans projet en utilisant les fichiers *.json* suivants :
 
-|Nom de fichier|Fonction|
+|Nom du fichier|Fonction|
 |-|-|
 |*tasks.vs.json*|Spécifiez des commandes de génération personnalisée, des commutateurs de compilation ainsi que des tâches arbitraires (non liées à la génération).<br>Accessible par l’élément de menu contextuel (clic droit) **Configurer les tâches** de **l’Explorateur de solutions**.|
 |*launch.vs.json*|Spécifiez les arguments de ligne de commande pour le débogage.<br>Accessible par l’élément de menu contextuel (clic droit) **Paramètres de débogage et de lancement** de **l’Explorateur de solutions**.|
@@ -310,7 +310,7 @@ Les paramètres lus à partir du fichier *.gitignore* sont appliqués à son ré
 ## <a name="see-also"></a>Voir aussi
 
 - [Développer du code sans projet ou solution](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
-- [Projets Ouvrir un dossier pour C++](/cpp/build/open-folder-projects-cpp)
+- [Ouvrir des projets de dossier pour C++](/cpp/build/open-folder-projects-cpp)
 - [Projets CMake pour C++](/cpp/build/cmake-projects-in-visual-studio)
 - [Référence NMAKE](/cpp/build/reference/nmake-reference)
 - [Fonctionnalités de l’éditeur de code](../ide/writing-code-in-the-code-and-text-editor.md)

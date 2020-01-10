@@ -3,17 +3,17 @@ title: Vue d’ensemble du Concepteur O/R
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 45e477c0-5c6b-41f9-b2d0-2808fb4f6537
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c02dbc42d629385671403de7131b27a449313591
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c1d60f2fd2fdaa239ea9528caa6d39424ad2b85c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648293"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586391"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>Outils LINQ to SQL dans Visual Studio
 
@@ -27,7 +27,7 @@ Le **Concepteur O/R** fournit une aire de conception visuelle pour créer des [L
 
 ## <a name="open-the-or-designer"></a>Ouvrir le Concepteur O/R
 
-Pour ajouter un modèle d’entité LINQ to SQL à votre projet, choisissez **projet**  > **Ajouter un nouvel élément**, puis sélectionnez **LINQ to SQL classes** dans la liste des éléments de projet :
+Pour ajouter un modèle d’entité LINQ to SQL à votre projet, choisissez **projet** > **Ajouter un nouvel élément**, puis sélectionnez **LINQ to SQL classes** dans la liste des éléments de projet :
 
 ![Classes LINQ to SQL](../data-tools/media/raddata-linq-to-sql-classes.png)
 

@@ -8,21 +8,22 @@ ms.assetid: 820cf192-7fd6-4bee-9a51-aa69154aca85
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b2f06778de19c16df9d6e43108ecf4daba539c06
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: acdfe8f96d30ad881d8c9c0f0a9ff48c3353afee
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969886"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779244"
 ---
 # <a name="filter-report-views"></a>Filtrer les vues des rapports
 Vous pouvez appliquer des filtres aux fichiers de données de profilage pour limiter les données qui sont affichées dans les vues des rapports de performances et exportées dans les fichiers de rapport. Vous pouvez limiter un rapport aux données entre des valeurs d’horodatage, et limiter les données à des processus et des threads spécifiques. Vous pouvez enregistrer les filtres dans un fichier, puis créer un filtre sur un autre fichier de données de profilage en important le filtre enregistré.
 
- Vous pouvez également limiter un rapport à un intervalle de temps en utilisant la chronologie graphique de la vue Résumé. Voir [Guide pratique pour filtrer les vues des rapports à partir de la chronologie Résumé](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).
+ Vous pouvez également limiter un rapport à un intervalle de temps en utilisant la chronologie graphique de la vue Résumé. Consultez [Guide pratique pour filtrer les vues de rapport à partir de la chronologie Résumé](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).
 
- Pour exclure le code système et le code tiers d’un rapport, consultez [Guide pratique pour filtrer les vues des rapports des outils de profilage de façon à afficher Uniquement mon code](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md)
+ Pour exclure le code système et le code de tiers d’un rapport, consultez [Guide pratique pour filtrer les vues de rapport des outils de profilage de façon à afficher Uniquement mon code](../profiling/how-to-filter-profiling-tools-report-views-to-display-just-my-code.md)
 
 ## <a name="procedures"></a>Procédures
 

@@ -10,22 +10,23 @@ ms.assetid: 228872da-77d0-4da5-b455-ac57fb1867c9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 46dfce74e02faffb90cf5984651968633c27a16d
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 3b8352095bcf31c137d391c2ed2e832d34e0ec7b
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72910603"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779348"
 ---
 # <a name="da0024-excessive-gc-cpu-time"></a>DA0024 : temps processeur GC excessif
 
 |||
 |-|-|
-|ID de règle|DA0024|
+|ID de la règle|DA0024|
 |Category|Utilisation du .NET Framework|
-|Méthode de profilage|Tout|
+|Méthode de profilage|Toutes les|
 |Message|% de temps dans GC très élevé. % de temps dans GC très élevé. Volume de surcharge de garbage collection trop élevé.|
 |Type de règle|Warning|
 

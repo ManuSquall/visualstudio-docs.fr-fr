@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, template code
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 128be69d356b371cc34f5e089df25546428bc83f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ef39e82ea1abe95b3bea799545ed7fbf5b766fd3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72606074"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591786"
 ---
 # <a name="text-template-control-blocks"></a>Blocs de contrôle des modèles de texte
 Les blocs de contrôle vous permettent d'écrire du code dans votre modèle de texte pour faire varier la sortie. Il existe trois types de blocs de contrôle, distingués par leurs crochets d'ouverture :
@@ -117,7 +117,7 @@ Some text.
 > [!NOTE]
 > Un bloc de contrôle de fonctionnalité de classe ne doit pas être suivi de blocs de contrôle standard dans le même fichier modèle. Toutefois, cette restriction ne s'applique pas au résultat de l'utilisation de directives `<#@include#>`. Chaque fichier inclus peut avoir des blocs standard suivis de blocs de fonctionnalité de classe.
 
- Vous pouvez créer une fonction qui génère une sortie en incorporant des blocs de texte et d'expression dans un bloc de contrôle de fonctionnalité de classe. Exemple :
+ Vous pouvez créer une fonction qui génère une sortie en incorporant des blocs de texte et d'expression dans un bloc de contrôle de fonctionnalité de classe. Par exemple :
 
 ```
 <#+
@@ -145,7 +145,7 @@ Some text.
 
  Vous devez tenir compte des considérations suivantes quand vous utilisez des blocs de contrôle :
 
-- **Sous.** Vous pouvez utiliser du code C# ou Visual Basic dans un modèle de texte. Le langage par défaut est C#, mais vous pouvez spécifier Visual Basic avec le paramètre `language` de la directive `template`. (Pour plus d’informations sur la directive `template`, consultez directives relatives aux [modèles de texte T4](../modeling/t4-text-template-directives.md).)
+- **Langue.** Vous pouvez utiliser du code C# ou Visual Basic dans un modèle de texte. Le langage par défaut est C#, mais vous pouvez spécifier Visual Basic avec le paramètre `language` de la directive `template`. (Pour plus d’informations sur la directive `template`, consultez directives relatives aux [modèles de texte T4](../modeling/t4-text-template-directives.md).)
 
      Le langage que vous utilisez dans les blocs de contrôle n'a aucun rapport avec le langage ou le format du texte que vous générez dans un modèle de texte. Vous pouvez générer du code C# en utilisant du code Visual Basic ou vice versa.
 

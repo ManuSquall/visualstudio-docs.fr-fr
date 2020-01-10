@@ -1,24 +1,24 @@
 ---
-title: 'Procédure : Changer le répertoire de sortie de build'
+title: Guide pratique pour changer le répertoire de sortie de build
 ms.date: 05/15/2019
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
 - output directory, changing
 ms.assetid: a8333c89-afb2-4b1d-b2e2-9146da852402
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 493de227174b60b4834c2732ddbf16a5586fa49e
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 732e48bf5cbea8534cc5c90ac5af80df0cc93e7b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71238188"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594381"
 ---
-# <a name="how-to-change-the-build-output-directory"></a>Procédure : Changer le répertoire de sortie de build
+# <a name="how-to-change-the-build-output-directory"></a>Guide pratique pour changer le répertoire de sortie de build
 
 Vous pouvez spécifier l’emplacement de sortie généré par votre projet en fonction de la configuration (pour Debug, Release ou les deux).
 

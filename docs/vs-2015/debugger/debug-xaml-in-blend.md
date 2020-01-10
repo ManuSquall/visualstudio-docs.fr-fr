@@ -57,7 +57,7 @@ Vous pouvez utiliser les outils de [!INCLUDE[blend_first](../includes/blend-firs
   
 2. Dans la liste des types de projets, cliquez sur **XAML (Windows Store)** .  
   
-3. Dans la liste des modèles de projet, cliquez sur **Application vide**.  
+3. Dans la liste des modèles de projet, cliquez sur **application vide**.  
   
 4. Dans la zone de texte **nom** , tapez `DebuggingSample`.  
   

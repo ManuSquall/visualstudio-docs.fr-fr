@@ -19,7 +19,7 @@ ms.lasthandoff: 11/21/2019
 ms.locfileid: "74289766"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>Test des performances d’un service cloud
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Overview
 Vous pouvez tester les performances d’un service cloud de plusieurs manières :
 
 * Utilisez les diagnostics Azure pour collecter des informations concernant les demandes et les connexions, et pour analyser les statistiques de site qui renseignent sur le fonctionnement du service côté client. Pour la prise en main des diagnostics Azure, consultez [Configuration des diagnostics pour Azure Cloud Services et Azure Virtual Machines](https://go.microsoft.com/fwlink/p/?LinkId=623009).
@@ -74,40 +74,40 @@ Vous avez le choix entre plusieurs méthodes de collecte pour le profilage, selo
 * Vous pouvez également activer le **profilage d’interaction de couche**, qui fournit des informations supplémentaires sur les temps d’exécution des appels ADO.NET synchrones dans les fonctions des applications multicouches qui communiquent avec une ou plusieurs bases de données. Vous pouvez collecter des données d’interaction de couche à l’aide de n’importe quelle méthode de profilage. Pour plus d’informations sur le profilage d’interaction de couche, consultez [Vue Interactions de couche](https://msdn.microsoft.com/library/azure/dd557764.aspx).
 
 ## <a name="configuring-profiling-settings"></a>Configuration des paramètres de profilage
-L’illustration suivante montre comment configurer vos paramètres de profilage à partir de la boîte de dialogue Publication d’application Azure.
+L'illustration suivante indique comment configurer vos paramètres de profilage depuis la boîte de dialogue Application de publication Azure.
 
-![Configurer les paramètres de profilage](./media/vs-azure-tools-performance-profiling-cloud-services/IC526984.png)
+![Configurer les paramètres du profilage](./media/vs-azure-tools-performance-profiling-cloud-services/IC526984.png)
 
 > [!NOTE]
-> Pour cocher la case **Activer le profilage** , le profileur doit être installé sur l'ordinateur local que vous utilisez pour publier votre service cloud. Par défaut, le profileur s’installe lors de l’installation de Visual Studio.
+> Pour activer la case à cocher **Activer le profilage**, le générateur de profils doit être installé sur l'ordinateur local que vous utilisez pour publier votre service cloud. Par défaut, le profileur s’installe lors de l’installation de Visual Studio.
 > 
 > 
 
 ### <a name="to-configure-profiling-settings"></a>Pour configurer les paramètres de profilage
 1. Dans l’Explorateur de solutions, ouvrez le menu contextuel de votre projet Azure, puis choisissez **Publier**. Pour obtenir la procédure détaillée de la publication d’un service cloud, consultez [Publication d’un service cloud à l’aide des outils Azure](https://go.microsoft.com/fwlink/p?LinkId=623012).
-2. Dans la boîte de dialogue **Publication d’application Azure**, choisissez l’onglet **Paramètres avancés**.
-3. Pour activer le profilage, cochez la case **Activer le profilage** .
-4. Pour configurer vos paramètres de profilage, choisissez le lien hypertexte **Paramètres** . La boîte de dialogue Paramètres de profilage s’affiche.
+2. Dans la boîte de dialogue **Publication d'application Azure**, choisissez l'onglet **Paramètres avancés**.
+3. Pour activer le profilage, cochez la case **Activer le profilage**.
+4. Pour configurer vos paramètres de profilage, choisissez le lien hypertexte **Paramètres**. La boîte de dialogue Paramètres de profilage s'affiche.
 5. À l’aide des cases d’option **Quelle méthode de profilage voulez-vous utiliser ?** , choisissez le type de profilage approprié.
-6. Pour collecter les données de profilage d’interaction de couche, cochez la case **Activer le profilage d’interaction de couche** .
-7. Pour enregistrer les paramètres, choisissez le bouton **OK** .
+6. Pour collecter les données de profilage d'interaction de couche, cochez la case **Activer le profilage d'interaction de couche**.
+7. Pour enregistrer les paramètres, choisissez le bouton **OK**.
    
     Quand vous publiez cette application, ces paramètres sont utilisés pour créer la session de profilage pour chaque rôle.
 
 ## <a name="viewing-profiling-reports"></a>Affichage des rapports de profilage
-Une session de profilage est créée pour chaque instance de rôle dans votre service cloud. Pour afficher vos rapports de profilage de chaque session de Visual Studio, affichez la fenêtre Explorateur de serveurs, puis choisissez le nœud de calcul Azure pour sélectionner une instance d’un rôle. Affichez ensuite le rapport de profilage comme indiqué dans l’illustration suivante.
+Une session de profilage est créée pour chaque instance de rôle dans votre service cloud. Pour consulter vos rapports de profilage de chaque session de Visual Studio, vous pouvez consulter la fenêtre Explorateur de serveurs puis choisir le nœud Calcul Azure pour sélectionner une instance d'un rôle. Affichez ensuite le rapport de profilage comme indiqué dans l’illustration suivante.
 
-![Afficher un rapport de profilage à partir d’Azure](./media/vs-azure-tools-performance-profiling-cloud-services/IC748914.png)
+![Afficher le rapport de profilage depuis Azure](./media/vs-azure-tools-performance-profiling-cloud-services/IC748914.png)
 
 ### <a name="to-view-profiling-reports"></a>Pour afficher des rapports de profilage
-1. Pour afficher la fenêtre Explorateur de serveurs dans Visual Studio, dans la barre de menus, choisissez Affichage, Explorateur de serveurs.
-2. Choisissez le nœud de calcul Azure, puis choisissez le nœud de déploiement Azure pour le service cloud pour lequel vous avez activé le profilage lors de la publication à partir de Visual Studio.
-3. Pour afficher les rapports de profilage d'une instance, choisissez le rôle dans le service, ouvrez le menu contextuel d’une instance spécifique, puis choisissez **Afficher le rapport de profilage**.
+1. Pour afficher la fenêtre Explorateur de serveurs dans Visual Studio, sur la barre de menus, choisissez Afficher, Explorateur de serveurs.
+2. Choisissez le nœud Calcul Azure puis choisissez le nœud de déploiement Azure pour le service cloud que vous avez sélectionné pour profiler lorsque vous avez publié depuis Visual Studio.
+3. Pour consulter des rapports de profilage pour une instance, choisissez le rôle dans le service, puis ouvrez le menu contextuel pour une instance spécifique et choisissez **Afficher le rapport de profilage**.
    
     Le rapport, un fichier .vsp, est maintenant téléchargé à partir d’Azure, et l’état du téléchargement apparaît dans le journal des activités Azure. À la fin du téléchargement, le rapport de profilage s’affiche dans un onglet de l’éditeur pour Visual Studio nommé <nom_rôle\> *<numéro_instance\>* <identificateur\>.vsp. Une synthèse du rapport est présentée.
-4. Pour afficher différentes vues du rapport, dans la liste Affichage actuel, choisissez le type de vue souhaité. Pour plus d’informations, consultez [Vues des rapports d’outils de profilage](https://msdn.microsoft.com/library/azure/bb385755.aspx).
+4. Pour afficher différentes vues du rapport, dans la liste Affichage actuel, choisissez le type de vue que vous voulez voir. Pour plus d’informations, consultez [Vues des rapports d’outils de profilage](https://msdn.microsoft.com/library/azure/bb385755.aspx).
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 [Débogage de Cloud Services](vs-azure-tools-debugging-cloud-services-overview.md)
 
 [Publication d’un service cloud Azure depuis Visual Studio](vs-azure-tools-publishing-a-cloud-service.md)

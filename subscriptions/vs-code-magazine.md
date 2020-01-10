@@ -6,12 +6,12 @@ manager: lank
 ms.date: 10/13/2019
 ms.topic: conceptual
 description: En savoir plus sur l’avantage CODE magazine inclus dans votre abonnement Visual Studio.
-ms.openlocfilehash: 6f120bae88a7d613873a9d350e411842904e700e
-ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
+ms.openlocfilehash: 341e21d3411afdd8402d223b455f60bcf39a4a40
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099596"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491657"
 ---
 # <a name="code-magazine-included-in-visual-studio-subscriptions"></a>Magazine de CODE inclus dans les abonnements Visual Studio
 
@@ -39,14 +39,14 @@ Le processus de configuration de votre abonnement CODE magazine est simple.  Pro
       > ![Détails de l’abonnement au magazine de CODE](_img/vs-code-magazine/vs-code-magazine-details.png "Détails et prix de l’abonnement")
 6. Ensuite, vous devez fournir vos informations d’abonné et une adresse de livraison.  (L’adresse de livraison est obligatoire même pour les abonnements numériques, car elle prend en charge les processus de traitement, de sélection d’offre et d’accès numérique.)
 7. Si vous vivez en dehors de la États-Unis et que vous avez choisi de recevoir un abonnement au magazine imprimé, vous pouvez être invité à fournir une adresse de facturation et des informations de paiement pour couvrir les coûts d’expédition. 
-8. Vous pouvez vous abonner au CODE HTML Newletter en cliquant sur la case à cocher.
+8. Vous pouvez choisir de coder le bulletin HTML en cliquant sur la case à cocher.
    > [!div class="mx-imgBorder"]
    > ![Informations sur l’abonné CODE magazine](_img/vs-code-magazine/vs-code-magazine-subscriber-info.png "Informations sur l’abonné et adresse de livraison")
 9. Cliquez sur **passer une commande** pour terminer votre abonnement.  
 Une fois votre commande d’abonnement terminée, une page de confirmation s’affiche, comprenant un lien que vous pouvez utiliser pour identifier les problèmes que vous avez reçus : https://codemag.com/my/fulfillment. 
 
-## <a name="eligibility"></a>Éligibilité
-| Niveau d'abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
+## <a name="eligibility"></a>Eligibility
+| Niveau d'abonnement                                                 |     Channels                                            | Avantage du                                                          | Renouvelable ?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | Licences en volume, Azure, Détail, NFR sélectif<sup>1</sup> | Disponible       |  Non          |
 | Visual Studio Enterprise avec GitHub Enterprise   | LV| Disponible       |  Non          |
@@ -54,7 +54,7 @@ Une fois votre commande d’abonnement terminée, une page de confirmation s’a
 | Visual Studio Professional avec GitHub Enterprise | LV                                      | Disponible                                                            |  Non          |
 | Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Disponible                                             |  Non          |
 | Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Disponible                                              |  Non          |
-| Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure | Non disponible | N/A |
+| Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure | Non disponible | Non applicable |
 
 <sup>1</sup>  *comprend : non pour la revente (NFR), VSIP (Visual Studio Industry Partner), ETP, BizSpark, imagine Premium.  Exclut : le Microsoft Partner Network (MPN), le MVP (Most Valuable Professional), les services Bureau à distance (RD), le développeur de services & MCT Software, les services de & de logiciel MCT, imagine.*
 
@@ -63,19 +63,19 @@ Une fois votre commande d’abonnement terminée, une page de confirmation s’a
 
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
 
-## <a name="frequently-asked-questions"></a>FAQ
+## <a name="frequently-asked-questions"></a>Forum aux questions
 ### <a name="q-if-the-subscription-is-free-why-am-i-being-asked-for-a-credit-card"></a>Q : si l’abonnement est gratuit, pourquoi suis-je invité à entrer une carte de crédit ?  
 R : le coût est prohibitif pour envoyer des copies imprimées gratuites à l’international.  Les abonnés qui choisissent l’édition d’impression du magazine de CODE et qui se trouvent en dehors de la États-Unis sont facturés pour expédition. Pour éviter les frais d’expédition, choisissez la version numérique du magazine. 
 
 ### <a name="q-why-do-i-need-to-provide-a-delivery-address-for-a-digital-subscription"></a>Q : Pourquoi dois-je fournir une adresse de livraison pour un abonnement numérique ?
 R : le magazine de CODE recueille votre adresse, que l’abonnement soit destiné à l’impression ou à l’abonnement numérique pour prendre en charge les processus de traitement, de sélection d’offre et d’accès numérique.  Pour plus d’informations sur ce que CODE magazine utilise avec vos données, consultez la [politique de confidentialité](https://www.codemag.com/Home/Privacy).
 
-## <a name="support-resources"></a>Ressources de support
+## <a name="support-resources"></a>Ressources de support technique
 - Vous avez des questions concernant votre abonnement CODE magazine ?  Contactez le [magazine de code](https://www.codemag.com/contact) par e-mail ou par téléphone, ou soumettez une demande de support en ligne.
 - Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 Découvrez les autres avantages inclus dans votre abonnement. Visitez [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 Si vous n’avez pas encore activé l’avantage de crédit DevTest Azure fourni avec votre abonnement, visitez [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) et cliquez sur la vignette Azure dans la catégorie outils pour configurer votre abonnement Azure et échanger votre crédit Azure DevTest individuel.

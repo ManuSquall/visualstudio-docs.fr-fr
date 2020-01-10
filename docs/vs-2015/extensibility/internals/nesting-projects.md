@@ -23,25 +23,25 @@ ms.locfileid: "68180413"
 # <a name="nesting-projects"></a>Imbriquer des projets
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Les développeurs d’applications d’entreprise qui utilisent votre package VS peuvent facilement regrouper des types [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] similaires de projets dans à l’aide de l' *imbrication de projet*. Par exemple, le projet de modèle d’entreprise utilise des projets imbriqués pour regrouper des projets en catégories. Les projets de façade métier, les projets d’interface utilisateur Web, etc., sont regroupés dans une même catégorie.  
+Les développeurs d’applications d’entreprise qui utilisent votre package VS peuvent facilement regrouper des types similaires de projets dans [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] à l’aide de l' *imbrication de projet*. Par exemple, le projet de modèle d’entreprise utilise des projets imbriqués pour regrouper des projets en catégories. Les projets de façade métier, les projets d’interface utilisateur Web, etc., sont regroupés dans une même catégorie.  
   
  Dans ce scénario, il n’existe aucune limite au nombre de projets que le développeur peut imbriquer sous chaque projet parent, même si le développeur peut fournir des limites par programmation. Ce type de regroupement peut également être récursif. dans ce cas, les projets du même type qu’un projet enfant peuvent être imbriqués sous l’enfant pour devenir un sous-projet de l’enfant, qui est un sous-projet du parent.  
   
- L’imbrication de projets n’est pas une partie [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]intrinsèque de. Vous devez écrire le code pour activer l’imbrication et l’imbrication de sous-projets dans les projets enfants. Le projet parent est un VSPackage spécial, ou type de projet, créé et inscrit avec son propre GUID, qui comprend le code requis pour implémenter l’imbrication de projet.  
+ L’imbrication de projets n’est pas une partie intrinsèque de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Vous devez écrire le code pour activer l’imbrication et l’imbrication de sous-projets dans les projets enfants. Le projet parent est un VSPackage spécial, ou type de projet, créé et inscrit avec son propre GUID, qui comprend le code requis pour implémenter l’imbrication de projet.  
   
  Vous trouverez un exemple de projets imbriqués dans l' C# exemple de projet imbriqué.  
   
 ## <a name="nested-projects-example"></a>Exemple de projets imbriqués  
- ![Solution de projets imbriqués](../../extensibility/internals/media/vsnestedprojects.gif "vsNestedProjects")  
+ ![Projets imbriqués solution](../../extensibility/internals/media/vsnestedprojects.gif "vsNestedProjects")  
 Exemple de projets imbriqués  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour Implémenter des projets imbriqués](../../extensibility/internals/how-to-implement-nested-projects.md)   
- [Considérations sur le déchargement et le rechargement des projets imbriqués](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)   
+ [Comment : implémenter des projets imbriqués](../../extensibility/internals/how-to-implement-nested-projects.md)   
+ [Considérations relatives au déchargement et au rechargement des projets imbriqués](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)   
  [Prise en charge de l’Assistant pour les projets imbriqués](../../extensibility/internals/wizard-support-for-nested-projects.md)   
- [Inscription de modèles de projet et d’élément](../../extensibility/internals/registering-project-and-item-templates.md)   
+ [Enregistrement des modèles de projet et d’élément](../../extensibility/internals/registering-project-and-item-templates.md)   
  [Implémentation de la gestion des commandes pour les projets imbriqués](../../extensibility/internals/implementing-command-handling-for-nested-projects.md)   
  [Filtrage de la boîte de dialogue AddItem pour les projets imbriqués](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)   
- [Liste de contrôle : Création de nouveaux types de projets](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [Liste de vérification : création de nouveaux types de projets](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Paramètres de contexte](../../extensibility/internals/context-parameters.md)   
  [Fichier Assistant (.Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)

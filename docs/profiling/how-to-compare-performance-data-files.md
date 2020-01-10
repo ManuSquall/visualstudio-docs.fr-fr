@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Comparer des fichiers de données de performances | Microsoft Docs'
+title: Guide pratique pour comparer des fichiers de données de performances | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,16 +11,17 @@ ms.assetid: 1905b45d-c6b3-43c8-87b1-1aee734f37f9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 101512cb15bca022e5e3b473c84bd433a7269e15
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c6dc9d485f6f40eb345ade8f9680be9e0b948106
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62973901"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778997"
 ---
-# <a name="how-to-compare-performance-data-files"></a>Procédure : Comparer des fichiers de données de performances
+# <a name="how-to-compare-performance-data-files"></a>Guide pratique pour comparer des fichiers de données de performances
 Vous pouvez comparer les résultats de deux fichiers de données du profileur (.*vsp* ou .*vsps*) en créant un rapport ou une vue de comparaison (« Différences »). Le rapport de comparaison montre les différences, les régressions de performances et les améliorations qui se sont produites d’une session de profilage à l’autre.
 
  Le rapport Différences présente les données sous forme de tableau. Le tableau présente les données delta, c’est-à-dire ce qui a été modifié par rapport à la base de référence. Ces données sont calculées en déterminant la différence entre l’ancienne valeur, la valeur de base de référence et la valeur résultante de la nouvelle analyse.

@@ -26,7 +26,7 @@ ms.locfileid: "74299486"
 # <a name="create-custom-views-of-native-objects"></a>Créer des vues personnalisées d’objets natifs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-L'infrastructure Natvis de Visual Studio vous permet de personnaliser la façon dont Visual Studio affiche les types natifs dans les fenêtres de variables du débogueur (par exemple, les fenêtres **Espion**, **Variables locales** et **DataTips**).  
+L'infrastructure Natvis de Visual Studio vous permet de personnaliser la façon dont Visual Studio affiche les types natifs dans les fenêtres de variables du débogueur (par exemple, les fenêtres **Espion**, **Variables locales**et **DataTips** ).  
 
  Natvis remplace le fichier **autoexp.dat** utilisé dans les versions antérieures de Visual Studio et propose la syntaxe XML, de meilleurs diagnostics, le contrôle de version et la prise en charge de plusieurs fichiers.  
 
@@ -135,7 +135,7 @@ L'infrastructure Natvis de Visual Studio vous permet de personnaliser la façon 
  ![Fenêtre Espion avec affichage simple](../debugger/media/watch-simpleview.png "Watch-SimpleView")  
 
 ## <a name="BKMK_Diagnosing_Natvis_errors"></a> Diagnostic des erreurs Natvis  
- Vous pouvez utiliser les diagnostics Natvis pour résoudre des erreurs de syntaxe et d'analyse. Quand le débogueur rencontre des erreurs dans une entrée de visualisation, il ignore les erreurs et affiche le type dans sa forme brute ou reprend une autre visualisation appropriée. Pour comprendre pourquoi une certaine entrée de visualisation est ignorée et pour voir les erreurs sous-jacentes, vous pouvez activer l'option des diagnostics Natvis **Outils / Options / Débogage / Fenêtre Sortie / Messages de diagnostic Natvis (C++ uniquement)** . Les erreurs sont affichées dans la fenêtre **Sortie**.  
+ Vous pouvez utiliser les diagnostics Natvis pour résoudre des erreurs de syntaxe et d'analyse. Quand le débogueur rencontre des erreurs dans une entrée de visualisation, il ignore les erreurs et affiche le type dans sa forme brute ou reprend une autre visualisation appropriée. Pour comprendre pourquoi une certaine entrée de visualisation est ignorée et pour voir les erreurs sous-jacentes, vous pouvez activer l'option des diagnostics Natvis **Outils / Options / Débogage / Fenêtre Sortie / Messages de diagnostic Natvis (C++ uniquement)** . Les erreurs sont affichées dans la fenêtre **Sortie** .  
 
 ## <a name="BKMK_Syntax_reference"></a> Référence à la syntaxe Natvis  
 
@@ -224,7 +224,7 @@ L'infrastructure Natvis de Visual Studio vous permet de personnaliser la façon 
 ```  
 
 #### <a name="BKMK_Versioning"></a> Élément Version  
- Utilisez l'élément `Version` pour définir l'étendue des visualisations à des modules spécifiques et à leurs versions afin que les collisions de nom soient réduites et que des visualisations différentes puissent être utilisées pour différentes versions des types. Par exemple :  
+ Utilisez l'élément `Version` pour définir l'étendue des visualisations à des modules spécifiques et à leurs versions afin que les collisions de nom soient réduites et que des visualisations différentes puissent être utilisées pour différentes versions des types. Exemple :  
 
 ```xml  
 <Type Name="DirectUI::Border">  
@@ -336,7 +336,7 @@ L'infrastructure Natvis de Visual Studio vous permet de personnaliser la façon 
  ![Données CStringT avec le visualiseur StringView](../debugger/media/dbg-natvis-stringview-cstringt.png "DBG_NATVIS_StringView_CStringT")  
 
 > [!NOTE]
-> Notez que l'expression `{m_pszData,su}` inclut un spécificateur de format C++, `su` , pour afficher la valeur sous forme de chaîne Unicode. Pour plus d'informations, consultez [Spécificateurs de format en C++](../debugger/format-specifiers-in-cpp.md).  
+> Notez que l'expression `{m_pszData,su}` inclut un spécificateur de format C++, `su` , pour afficher la valeur sous forme de chaîne Unicode. Pour plus d'informations, voir [Format Specifiers in C++](../debugger/format-specifiers-in-cpp.md) .  
 
 ### <a name="BKMK_Expand"></a> Expand  
  Le nœud `Expand` est utilisé pour personnaliser les enfants du type visualisé quand l'utilisateur le développe dans les fenêtres de variables. Il accepte la liste des nœuds enfants qui définissent les éléments enfants.  
@@ -630,6 +630,6 @@ L'infrastructure Natvis de Visual Studio vous permet de personnaliser la façon 
  Vous pouvez voir un exemple de UIVisualizer dans l’extension Image Watch utilisée pour afficher des images bitmap en mémoire : [ImageWatch](https://visualstudiogallery.msdn.microsoft.com/e682d542-7ef3-402c-b857-bbfba714f78d)  
 
 ### <a name="customvisualizer-element"></a>Élément CustomVisualizer  
- `CustomVisualizer` est un point d'extensibilité qui spécifie une extension VSIX que vous pouvez écrire pour contrôler la visualisation dans le code qui s'exécute dans Visual Studio. Pour plus d'informations sur l'écriture d'extensions VSIX, consultez [Kit de développement logiciel (SDK) Visual Studio](../extensibility/visual-studio-sdk.md). L'écriture d'un visualiseur personnalisé représente beaucoup plus de travail que l'écriture d'une définition natvis XML, mais vous êtes libre de toute contrainte relative à ce que natvis prend ou non en charge. Les visualiseurs personnalisés ont accès à l'ensemble des API d'extensibilité du débogueur, qui peuvent être utilisées pour interroger et modifier le processus du programme débogué ou pour communiquer avec d'autres parties de Visual Studio.  
+ `CustomVisualizer` est un point d'extensibilité qui spécifie une extension VSIX que vous pouvez écrire pour contrôler la visualisation dans le code qui s'exécute dans Visual Studio. Pour plus d’informations sur l’écriture d’extensions VSIX, consultez [Visual Studio SDK](../extensibility/visual-studio-sdk.md). L'écriture d'un visualiseur personnalisé représente beaucoup plus de travail que l'écriture d'une définition natvis XML, mais vous êtes libre de toute contrainte relative à ce que natvis prend ou non en charge. Les visualiseurs personnalisés ont accès à l'ensemble des API d'extensibilité du débogueur, qui peuvent être utilisées pour interroger et modifier le processus du programme débogué ou pour communiquer avec d'autres parties de Visual Studio.  
 
  Vous pouvez utiliser les attributs `Condition`, `IncludeView`et `ExcludeView` sur les éléments CustomVisualizer.

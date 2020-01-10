@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Web performance tests, recorder plug-in
 ms.assetid: 6fe13be1-aeb5-4927-9bff-35950e194da9
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c8c1c2d5dd2b3ec656a774c10f8bb50ca556a39f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5e32faa4525edc79da3d759d67ad2b5676f38fc2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653642"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589144"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>Guide pratique pour créer un plug-in d’enregistreur
 
@@ -35,7 +35,7 @@ Les procédures suivantes décrivent le mode de création du code rudimentaire p
 
 1. Ouvrez une solution contenant le projet de test de performances web et de charge avec le test de performances web pour lequel vous souhaitez créer un plug-in d’enregistreur.
 
-2. Ajoutez un nouveau projet de **Bibliothèque de classes** à la solution.
+2. Ajoutez ensuite un nouveau projet **Bibliothèque de classes** à la solution.
 
 3. Dans **l’Explorateur de solutions**, dans le dossier de projet de la nouvelle bibliothèque de classes, cliquez avec le bouton droit sur le dossier **Références**, puis sélectionnez **Ajouter une référence**.
 
@@ -97,11 +97,11 @@ Après avoir compilé le plug-in d’enregistreur, placez la DLL ainsi créée d
      À l’issue de l’enregistrement du test de performances web, le nouveau plug-in d’enregistreur sera exécuté.
 
     > [!WARNING]
-    > Vous pouvez obtenir une erreur semblable au cas suivant lorsque vous exécutez un test de performances web ou un test de charge qui utilise votre plug-in :
+    > Vous risquez de rencontrer l’erreur suivante si vous exécutez un test de performances web ou un test de charge qui utilise votre plug-in :
     >
-    > **Échec de la requête : exception dans l’événement de > d' \<plug : impossible de charger le fichier ou l’assembly' \< 'nom du plug-in ". dll >, version = \<n. n. n >, culture = neutral, PublicKeyToken = null’ou l’une de ses dépendances. Le système ne peut pas trouver le fichier spécifié.**
+    > **Échec de la requête : exception dans \<plug-in > événement : impossible de charger le fichier ou l’assembly'\<'nom du plug-in ". dll >, version =\<n. n. n. n >, culture = neutral, PublicKeyToken = null’ou l’une de ses dépendances. Le système ne peut pas trouver le fichier spécifié.**
     >
-    > Ceci se produit si vous avez modifié le code de vos plug-ins et créé une nouvelle version **(Version=0.0.0.0)** de la DLL , mais que le plug-in référence encore la version du plug-in d’origine. Pour résoudre ce problème, procédez comme suit :
+    > Cela se produit si vous effectuez des modifications du code dans l’un de vos plug-ins et si vous créez une autre version de la DLL **(Version=0.0.0.0)** . Toutefois, le plug-in fait toujours référence à la version du plug-in d’origine. Pour résoudre ce problème, procédez comme suit :
     >
     > 1. Dans le projet de test de performances web et de charge, un message d'avertissement s'affiche dans les références. Supprimez et rajoutez la référence à la DLL de votre plug-in.
     > 2. Supprimez le plug-in de votre test ou de l'emplacement approprié, puis rajoutez-le.

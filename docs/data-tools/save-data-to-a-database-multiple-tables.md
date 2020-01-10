@@ -11,17 +11,17 @@ helpviewer_keywords:
 - saving data, walkthroughs
 - data [Visual Studio], updating
 ms.assetid: 7ebe03da-ce8c-4cbc-bac0-a2fde4ae4d07
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: bcb551cdcd5b2505c6ac536a440fcc3e70464bfb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8d4dd98a622a3aa09b2ec11f4f3521ce1839ce8c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648192"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586248"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Enregistrer des données dans une base de données (plusieurs tables)
 
@@ -29,7 +29,7 @@ L'un des scénarios les plus courants dans le développement d'applications cons
 
 Vous pouvez enregistrer des données de votre application dans la base de données en appelant la méthode `Update` d'un TableAdapter. Lorsque vous faites glisser des tables depuis la fenêtre **sources de données** vers un formulaire, le code requis pour enregistrer les données est automatiquement ajouté. Toutes les tables supplémentaires ajoutées à un formulaire nécessitent l’ajout manuel de ce code. Cette procédure pas à pas indique comment ajouter du code pour enregistrer les mises à jour de plusieurs tables.
 
-Cette procédure pas à pas décrit notamment les tâches suivantes :
+Cette procédure pas à pas décrit notamment les tâches suivantes :
 
 - Création et configuration d’une source de données dans votre application à l’aide de l' [Assistant Configuration de source de données](../data-tools/media/data-source-configuration-wizard.png).
 
@@ -79,7 +79,7 @@ Cette étape crée une source de données à partir de la base de données North
 
     - Si une connexion de données à l’exemple de base de données Northwind est disponible dans la liste déroulante, sélectionnez-la.
 
-         ou
+         \- ou -
 
     - Sélectionnez **Nouvelle connexion** pour ouvrir la boîte de dialogue **Ajouter/Modifier la connexion**.
 
@@ -109,7 +109,7 @@ Pour créer des contrôles liés aux données, vous pouvez faire glisser des él
 
 1. Faites glisser le nœud **Customers** depuis la fenêtre **Sources de données** vers **Form1**.
 
-     Les contrôles liés aux données assortis d'étiquettes descriptives apparaissent dans le formulaire, ainsi qu'une barre d'outils (<xref:System.Windows.Forms.BindingNavigator>) pour parcourir les enregistrements. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `CustomersTableAdapter`, <xref:System.Windows.Forms.BindingSource> et <xref:System.Windows.Forms.BindingNavigator> apparaissent dans la barre d’état des composants.
+     Les contrôles liés aux données assortis d'étiquettes descriptives apparaissent dans le formulaire, ainsi qu'une barre d'outils (<xref:System.Windows.Forms.BindingNavigator>) pour parcourir les enregistrements. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `CustomersTableAdapter`, <xref:System.Windows.Forms.BindingSource>et <xref:System.Windows.Forms.BindingNavigator> apparaissent dans la barre d’état des composants.
 
 2. Faites glisser le nœud **Orders** associé depuis la fenêtre **Sources de données** vers **Form1**.
 
@@ -120,7 +120,7 @@ Pour créer des contrôles liés aux données, vous pouvez faire glisser des él
 
 ## <a name="add-code-to-update-the-database"></a>Ajouter du code pour mettre à jour la base de données
 
-Vous pouvez mettre à jour la base de données en appelant les méthodes `Update` des TableAdapters **Customers** et **Orders**. Par défaut, un gestionnaire d’événements pour le bouton **Enregistrer** de l' <xref:System.Windows.Forms.BindingNavigator> est ajouté au code du formulaire pour envoyer des mises à jour à la base de données. Cette procédure modifie le code pour envoyer les mises à jour dans le bon ordre. Cela élimine la possibilité de déclencher des erreurs d’intégrité référentielle. Le code implémente également la gestion des erreurs en enveloppant l'appel de mise à jour dans un bloc try-catch. Vous pouvez modifier le code pour répondre aux besoins de votre application.
+Vous pouvez mettre à jour la base de données en appelant les méthodes `Update` des TableAdapters **Customers** et **Orders**. Par défaut, un gestionnaire d’événements pour le bouton **Enregistrer** de l'<xref:System.Windows.Forms.BindingNavigator> est ajouté au code du formulaire pour envoyer des mises à jour à la base de données. Cette procédure modifie le code pour envoyer les mises à jour dans le bon ordre. Cela élimine la possibilité de déclencher des erreurs d’intégrité référentielle. Le code implémente également la gestion des erreurs en enveloppant l'appel de mise à jour dans un bloc try-catch. Vous pouvez modifier le code pour répondre aux besoins de votre application.
 
 > [!NOTE]
 > Par souci de clarté, cette procédure pas à pas n’utilise pas de transaction. Toutefois, si vous mettez à jour au moins deux tables associées, vous devez inclure toute la logique de mise à jour dans une transaction. Une transaction est un processus qui garantit que toutes les modifications associées à une base de données réussissent avant que les modifications ne soient validées. Pour plus d’informations, consultez [transactions et accès concurrentiel](/dotnet/framework/data/adonet/transactions-and-concurrency).
@@ -134,7 +134,7 @@ Vous pouvez mettre à jour la base de données en appelant les méthodes `Update
      [!code-vb[VbRaddataSaving#10](../data-tools/codesnippet/VisualBasic/save-data-to-a-database-multiple-tables_1.vb)]
      [!code-csharp[VbRaddataSaving#10](../data-tools/codesnippet/CSharp/save-data-to-a-database-multiple-tables_1.cs)]
 
-## <a name="test-the-application"></a>Tester l’application
+## <a name="test-the-application"></a>Tester l'application
 
 1. Appuyez sur **F5**.
 

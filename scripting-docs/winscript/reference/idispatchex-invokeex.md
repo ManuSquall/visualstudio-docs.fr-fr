@@ -55,7 +55,7 @@ HRESULT InvokeEx(
   
  Indicateurs décrivant le contexte de l’appel de `InvokeEx` :  
   
-|valeur|Signification|  
+|Valeur|Signification|  
 |-----------|-------------|  
 |DISPATCH_METHOD|Le membre est appelé en tant que méthode. Si une propriété porte le même nom, vous pouvez définir à la fois cet indicateur et l’indicateur DISPATCH_PROPERTYGET (défini par `IDispatch`).|  
 |DISPATCH_PROPERTYGET|Le membre est récupéré en tant que propriété ou membre de données (défini par `IDispatch`).|  
@@ -81,7 +81,7 @@ HRESULT InvokeEx(
 |-|-|  
 |DISPATCH_CONSTRUCT|Indique que l’élément est utilisé en tant que constructeur.|  
 |`pspCaller`|Le `pspCaller` permet à l’objet d’accéder aux services fournis par l’appelant. Les services spécifiques peuvent être gérés par l’appelant lui-même ou être délégué aux appelants plus loin dans la chaîne d’appel. Par exemple, si un moteur de script à l’intérieur d’un navigateur effectue un appel de `InvokeEx` à un objet externe, l’objet peut suivre la chaîne `pspCaller` pour obtenir des services à partir du moteur de script ou du navigateur. (Notez que la chaîne d’appel n’est pas la même que la chaîne de création, également appelée chaîne de conteneur ou chaîne de site. La chaîne de création peut être disponible par le biais d’un autre mécanisme tel que `IObjectWithSite`.)|  
-|Pointeur `this`|Quand DISPATCH_METHOD est défini dans `wFlags`, il peut y avoir un « paramètre nommé » pour la valeur « This ». Le DISPID sera DISPID_THIS et il doit être le premier paramètre nommé.|  
+|Pointeur `this`|Lorsque DISPATCH_METHOD est défini dans `wFlags`, il peut y avoir un « paramètre nommé » pour la valeur « This ». Le DISPID sera DISPID_THIS et il doit s’agir du premier paramètre nommé.|  
   
  Le paramètre de `riid` inutilisé dans `IDispatch::Invoke` a été supprimé.  
   
@@ -137,6 +137,6 @@ VARIANT var;
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- @No__t_1 de l' [interface IDispatchEx](../../winscript/reference/idispatchex-interface.md)  
- [IDispatchEx :: GetDispID](../../winscript/reference/idispatchex-getdispid.md)    
+   de l' [interface IDispatchEx](../../winscript/reference/idispatchex-interface.md)  
+ [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

@@ -8,14 +8,15 @@ ms.assetid: 9c05b51a-8382-44cf-a8f7-3fabdd2e8f1b
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0b4870a17988c4f926e04aca24e50419c4a27165
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 9d0d9b7ab681a266115673b48f2c2604c5ff869c
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62829955"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74772725"
 ---
 # <a name="modules-view---net-memory-sampling-data"></a>Modules, vue - données d’échantillonnage de la mémoire .NET
 La vue Modules des données d’allocation de mémoire .NET collectées à l’aide de la méthode d’échantillonnage regroupe les données de mémoire selon les modules exécutés dans le cadre de l’exécution du profilage. Chaque module est la racine d’une arborescence hiérarchique. Les fonctions du module sont répertoriées sous le nœud du module.
@@ -24,16 +25,16 @@ La vue Modules des données d’allocation de mémoire .NET collectées à l’
 
 |Colonne|Description|
 |------------|-----------------|
-|**Name**|Nom du module, de la fonction, du numéro de ligne ou de l’adresse d’instruction.|
+|**Nom**|Nom du module, de la fonction, du numéro de ligne ou de l’adresse d’instruction.|
 |**ID du processus**|ID du processus (PID) de l'exécution du profilage.|
-|**Nom du processus**|Nom du processus.|
-|**Nom du module**|Nom du module qui contient la fonction.|
-|**Chemin du module**|Chemin du module.|
+|**Nom du processus**|nom du processus.|
+|**Nom de module**|Nom du module qui contient la fonction.|
+|**Chemin de module**|Chemin du module.|
 |**Fichier source**|Fichier source contenant la définition pour cette fonction.|
 |**Numéro de ligne de fonction**|Numéro de ligne du début de cette fonction dans le fichier source.|
 |**Allocations inclusives**|-   Pour une fonction, nombre total d’objets créés par la fonction. Ce nombre inclut les objets créés dans les fonctions appelées par cette fonction.<br />-   Pour un module, nombre d’objets d’une exécution du profilage alloués alors qu’au moins une fonction du module s’exécutait. Ce nombre inclut les objets créés dans les fonctions appelées par les fonctions de module.<br />-   Pour une ligne ou une instruction, nombre total d’objets alloués par la ligne ou l’instruction.|
 |**% d’allocations inclusives**|Pourcentage de tous les objets alloués dans le cadre de l’exécution du profilage qui étaient des allocations inclusives du module, de la fonction, de la ligne ou de l’instruction.|
-|**Allocations exclusives**|-   Pour la fonction active, nombre d’objets créés quand la fonction exécutait le code du corps de la fonction (autrement dit, quand elle se trouvait en haut de la pile des appels). Ce nombre n’inclut pas les objets créés dans les fonctions appelées par cette fonction.<br />-   Pour un module, somme des allocations exclusives des fonctions présentes dans le module.<br />-   Pour une ligne ou une instruction, nombre total d’objets créés par cette ligne ou cette instruction.|
+|**Allocations exclusives**|- Pour la fonction active, nombre d’objets créés lorsque la fonction exécutait le code du corps de la fonction (autrement dit, lorsque la fonction se trouvait en haut de la pile des appels). Ce nombre n’inclut pas les objets créés dans les fonctions appelées par cette fonction.<br />-   Pour un module, somme des allocations exclusives des fonctions présentes dans le module.<br />-   Pour une ligne ou une instruction, nombre total d’objets créés par cette ligne ou cette instruction.|
 |**% d’allocations exclusives**|Pourcentage de tous les objets alloués dans le cadre de l’exécution du profilage qui étaient des allocations exclusives du module, de la fonction, de la ligne ou de l’instruction.|
 |**Octets inclusifs**|-   Pour une fonction, nombre d’octets alloués par la fonction. Ce nombre inclut les octets alloués dans les fonctions appelées par cette fonction.<br />-   Pour un module, nombre d’octets alloués dans le cadre d’une exécution du profilage qui ont été alloués alors qu’au moins une fonction du module s’exécutait. Ce nombre inclut les objets créés dans toutes les fonctions appelées par les fonctions de module.<br />-   Pour une ligne ou une instruction, nombre total d’objets créés par la ligne ou l’instruction.|
 |**% d’octets inclusifs**|Pourcentage de tous les octets alloués dans le cadre de l’exécution du profilage qui étaient des octets inclusifs du module, de la fonction, de la ligne ou de l’instruction.|
@@ -41,7 +42,7 @@ La vue Modules des données d’allocation de mémoire .NET collectées à l’
 |**% d’octets exclusifs**|Pourcentage de tous les octets alloués dans le cadre de l’exécution du profilage qui étaient des octets exclusifs du module, de la fonction, de la ligne ou de l’instruction.|
 
 ## <a name="see-also"></a>Voir aussi
-- [Guide pratique pour personnaliser les colonnes de vue des rapports](../profiling/how-to-customize-report-view-columns.md)
+- [Comment : personnaliser les colonnes de la vue rapport](../profiling/how-to-customize-report-view-columns.md)
 - [Vue des modules - Instrumentation](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
-- [Modules, mode](../profiling/modules-view-sampling-data.md)
-- [Modules, mode](../profiling/modules-view-instrumentation-data.md)
+- [Vue Modules](../profiling/modules-view-sampling-data.md)
+- [Vue Modules](../profiling/modules-view-instrumentation-data.md)

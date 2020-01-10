@@ -97,7 +97,7 @@ int main()
 **c:\Users\Username\Documents\Visual Studio 2015 \ projects\corecheckexample\coreche**  
 **ckexample\corecheckexample.cpp (6) : avertissement C26494 : la variable’arr’est Uninitialize**  
 **Ed. Initialisez toujours un objet. (type. 5 : https://go.microsoft.com/fwlink/p/?Link**  
-**ID=620421)**  
+**ID = 620421)**  
 **c:\Users\Username\Documents\Visual Studio 2015 \ projects\corecheckexample\coreche**  
 **ckexample\corecheckexample.cpp (7) : avertissement C26485 : expression’arr' : aucun tableau à**  
 **atténuation du pointeur. (Bounds. 3 : https://go.microsoft.com/fwlink/p/?LinkID=620415)**  

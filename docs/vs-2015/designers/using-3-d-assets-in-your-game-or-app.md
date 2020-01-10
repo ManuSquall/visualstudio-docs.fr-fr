@@ -45,7 +45,7 @@ Cet article explique comment vous pouvez utiliser [!INCLUDE[vsprvs](../includes/
     |Modèles 3D|**MeshContentTask(.targets, .props)**|
     |Nuanceurs|**ShaderGraphContentTask(.targets, .props)**|
 
-3. Sélectionnez le bouton **OK** .
+3. Choisissez le bouton **OK**.
 
 ## <a name="including-assets-in-your-build"></a>Inclusion de ressources dans votre build
  Maintenant que votre projet sait quels types de ressources 3D vous voulez utiliser, l'étape suivante consiste à lui indiquer les fichiers qui sont des ressources 3D et les types de ressources auxquels elles correspondent.
@@ -61,13 +61,13 @@ Cet article explique comment vous pouvez utiliser [!INCLUDE[vsprvs](../includes/
    > [!IMPORTANT]
    > Par défaut, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] suppose que de nombreux types de fichiers image doivent être classés à l’aide du type d’élément **Image** intégré à [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Ainsi, vous devez modifier la propriété **Type d’élément** de chaque image qui doit être traitée par le pipeline de contenu d’image. Les autres types de fichiers sources de pipeline de contenu pour les modèles 3D et les graphiques de nuanceurs visuels ont pour valeur par défaut le **Type d’élément** approprié.
 
-4. Sélectionnez le bouton **OK** .
+4. Choisissez le bouton **OK**.
 
    Voici les trois types d'éléments de pipeline de contenu et leurs types de fichiers sources et de sortie associés.
 
 |Type d'élément|Types de fichiers sources|Format des fichiers de sortie|
 |---------------|-----------------------|------------------------|
-|**Pipeline de contenu d’image**|Portable Network Graphics (.png)<br /><br /> JPEG (.jpg, .jpeg, .jpe, .jfif)<br /><br /> Direct Draw Surface (.dds)<br /><br /> Graphics Interchange Format (.gif)<br /><br /> Bitmap (.bmp, .dib)<br /><br /> Tagged Image File Format (.tif, .tiff)<br /><br /> Targa (.tga)|DirectDraw Surface (.dds)|
+|**Pipeline de contenu d’image**|Format PNG (.png, Portable Network Graphics)<br /><br /> JPEG (.jpg, .jpeg, .jpe, .jfif)<br /><br /> Direct Draw Surface (.dds)<br /><br /> Format GIF (.gif, Graphics Interchange Format)<br /><br /> Bitmap (.bmp, .dib)<br /><br /> Tagged Image File Format (.tif, .tiff)<br /><br /> Targa (.tga)|DirectDraw Surface (.dds)|
 |**Pipeline de contenu de maillage**|Fichier d'échange AutoDesk FBX (.fbx)<br /><br /> Fichier DAE Collada (.dae)<br /><br /> Fichier Wavefront OBJ (.obj)|Fichier de maillage 3D (.cmo)|
 |**Pipeline de contenu de nuanceur**|Graphe de nuanceur visuel (.dgsl)|Sortie de nuanceur compilé (.cso)|
 
@@ -82,12 +82,12 @@ Cet article explique comment vous pouvez utiliser [!INCLUDE[vsprvs](../includes/
 
 3. Sous **Propriétés de configuration**, choisissez le nœud de pipeline de contenu (par exemple, **Pipeline de contenu d’image** pour les ressources de texture et d’image) puis, dans la grille des propriétés, affectez aux propriétés les valeurs appropriées. Par exemple, pour générer des mipmaps pour une ressource de texture au moment de la génération, affectez à la propriété **Générer des mips** la valeur **Oui**.
 
-4. Sélectionnez le bouton **OK** .
+4. Choisissez le bouton **OK**.
 
 ### <a name="image-content-pipeline-configuration"></a>Configuration du pipeline de contenu d'image
  Quand vous utilisez l'outil de pipeline de contenu d'image pour générer une ressource de texture, vous pouvez compresser la texture de différentes manières, indiquer si les niveaux MIP doivent être générés au moment de la génération, puis modifier le nom du fichier de sortie.
 
-|Les|Description|
+|Propriété|Description|
 |--------------|-----------------|
 |**Compresser**|Spécifie le type de compression utilisé pour le fichier de sortie.<br /><br /> Les options disponibles sont les suivantes :<br /><br /> -   **Aucune compression**<br />-   **Compression BC1_UNORM**<br />-   **Compression BC1_UNORM_SRGB**<br />-   **Compression BC2_UNORM**<br />-   **Compression BC2_UNORM_SRGB**<br />-   **Compression BC3_UNORM**<br />-   **Compression BC3_UNORM_SRGB**<br />-   **Compression BC4_UNORM**<br />-   **Compression BC4_SNORM**<br />-   **Compression BC5_UNORM**<br />-   **Compression BC5_SNORM**<br />-   **Compression BC6H_UF16**<br />-   **Compression BC6H_SF16**<br />-   **Compression BC7_UNORM**<br />-   **Compression BC7_UNORM_SRGB**<br /><br /> Pour plus d’informations sur les formats de compression pris en charge dans les différentes versions de DirectX, consultez [Guide de programmation pour DXGI](https://go.microsoft.com/fwlink/p/?LinkId=246265).|
 |Convertir dans un format alpha prémultiplié|**Oui** pour convertir l’image dans un format alpha prémultiplié dans le fichier de sortie ; sinon, **Non**. Seul le fichier de sortie est modifié ; l'image source est inchangée.|
@@ -97,14 +97,14 @@ Cet article explique comment vous pouvez utiliser [!INCLUDE[vsprvs](../includes/
 ### <a name="mesh-content-pipeline-configuration"></a>Configuration du pipeline de contenu de maillage
  Quand vous utilisez l'outil de pipeline de contenu de maillage pour générer une ressource de maillage, vous pouvez modifier le nom du fichier de sortie.
 
-|Les|Description|
+|Propriété|Description|
 |--------------|-----------------|
 |**Sortie de contenu**|Spécifie le nom du fichier de sortie. **Important :** La modification de l’extension du nom de fichier de sortie n’a aucun effet sur son format.|
 
 ### <a name="shader-content-pipeline-configuration"></a>Configuration du pipeline de contenu de nuanceur
  Quand vous utilisez l'outil de pipeline de contenu de nuanceur pour générer une ressource de nuanceur, vous pouvez modifier le nom du fichier de sortie.
 
-|Les|Description|
+|Propriété|Description|
 |--------------|-----------------|
 |**Sortie de contenu**|Spécifie le nom du fichier de sortie. **Important :** La modification de l’extension du nom de fichier de sortie n’a aucun effet sur son format.|
 

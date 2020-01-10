@@ -1,5 +1,5 @@
 ---
-title: 'IRemoteDebugApplication :: ConnectDebugger | Microsoft Docs'
+title: IRemoteDebugApplication::ConnectDebugger | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -42,7 +42,7 @@ HRESULT ConnectDebugger(
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|valeur|Description|  
+|Valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
 |`E_FAIL`|Un débogueur est déjà connecté à cette application.|  
@@ -51,5 +51,5 @@ HRESULT ConnectDebugger(
  Une application ne peut avoir qu’un seul débogueur connecté à la fois. Cette méthode échoue si un débogueur est déjà connecté.  
   
 ## <a name="see-also"></a>Voir aussi  
- [IRemoteDebugApplication :: GetDebugger](../../winscript/reference/iremotedebugapplication-getdebugger.md)    
+ [IRemoteDebugApplication::GetDebugger](../../winscript/reference/iremotedebugapplication-getdebugger.md)   
  [Interface IRemoteDebugApplication](../../winscript/reference/iremotedebugapplication-interface.md)

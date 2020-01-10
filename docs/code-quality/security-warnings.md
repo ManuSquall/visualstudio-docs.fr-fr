@@ -10,17 +10,17 @@ helpviewer_keywords:
 - managed code analysis warnings, security warnings
 - warnings, security
 ms.assetid: 60d4e8ea-230a-494f-aa6a-b91db77540e4
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a57236d42ed38070d79843ecf4097c3af80239a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 004f10600df3ed2f9c1f62557e0915638482877e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649077"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587210"
 ---
 # <a name="security-warnings"></a>Avertissements liés à la sécurité
 
@@ -102,7 +102,7 @@ Les avertissements de sécurité prennent en charge des bibliothèques et des ap
 |[CA3012 : passez en revue le code pour les vulnérabilités d’injection Regex](../code-quality/ca3012.md)|Lorsque vous travaillez avec des entrées non fiables, soyez attentif aux attaques par injection de Regex. Une personne malveillante peut utiliser l’injection Regex pour modifier une expression régulière de manière malveillante, pour faire correspondre des résultats inattendus par l’expression régulière, ou pour faire en sorte que l’expression régulière consomme un processeur excessif, entraînant une attaque par déni de service.|
 |[CA3061 : ne pas ajouter de schéma par URL](../code-quality/ca3061.md)|N’utilisez pas la surcharge unsafe de la méthode Add, car elle peut provoquer des références externes dangereuses.|
 |[CA3075 : Traitement DTD non sécurisé](../code-quality/ca3075.md)|Si vous utilisez des instances de DTDProcessing non sécurisées ou référencez des sources d’entités externes, l’analyseur peut accepter une entrée non fiable et divulguer des informations sensibles à des personnes malveillantes.|
-|[CA3076 : Exécution non sécurisée de script XSLT](../code-quality/ca3076.md)|Si vous exécutez le langage XSLT (Extensible Stylesheet Language Transformations) dans les applications .NET de manière non sécurisée, le processeur peut résoudre les références URI non fiables qui pourraient divulguer des informations sensibles à des personnes malveillantes, ce qui aboutirait à des attaques par déni de service et intersites.|
+|[CA3076 : Exécution non sécurisée de script XSLT](../code-quality/ca3076.md)|Si vous exécutez le langage XSLT (Extensible Stylesheet Language Transformations) dans les applications .NET de manière non sécurisée, le processeur peut résoudre les références URI non fiables qui pourraient divulguer des informations sensibles à des personnes malveillantes, ce qui aboutirait à des attaques par déni de service et intersites.|
 |[CA3077 : traitement non sécurisé dans la conception d’API, le document XML et le lecteur de texte XML](../code-quality/ca3077.md)|Lors de la conception d’une API dérivée de XMLDocument et XMLTextReader, tenez compte de DtdProcessing. L’utilisation d’instances de DTDProcessing non sécurisées lors de la référence ou la résolution de sources d’entités externes ou la définition de valeurs non sécurisées dans le code XML peut aboutir à la divulgation d’informations.|
 |[CA3147 : marquer des gestionnaires de verbes avec ValidateAntiForgeryToken](../code-quality/ca3147.md)|Lors de la conception d’un contrôleur MVC ASP.NET, soyez attentif aux attaques de falsification de requête intersites. Une attaque de falsification de requête intersite peut envoyer des demandes malveillantes d’un utilisateur authentifié à votre contrôleur ASP.NET MVC.|
 |[CA5122 : Les déclarations P-Invoke ne doivent pas être critiques sécurisées](../code-quality/ca5122.md)|Les méthodes sont marquées SecuritySafeCritical lorsqu’elles effectuent une opération relative à la sécurité, mais elle peuvent également être utilisées en toute sécurité par du code transparent. Le code transparent peut ne jamais appeler directement du code natif via P/Invoke. Par conséquent, marquer une méthode P/Invoke comme critique sécurisé ne permet pas au code transparent de l’appeler et s’avère trompeur pour l’analyse de sécurité.|

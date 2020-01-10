@@ -8,17 +8,17 @@ helpviewer_keywords:
 - task batching [MSBuild]
 - MSBuild, task batching
 ms.assetid: 31e480f8-fe4d-4633-8c54-8ec498e2306d
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9167c56d976cd79e2e51cf9914213b766f647416
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 641253bc6a7962102a0d9437ddb3981672ae67c3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62996792"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75573636"
 ---
 # <a name="item-metadata-in-task-batching"></a>Métadonnées d’élément dans le traitement par lots des tâches
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] a la capacité de diviser les listes d’éléments en différentes catégories, ou lots, en fonction des métadonnées des éléments, et d’exécuter une tâche une fois avec chaque lot. Il peut être difficile de comprendre exactement quels éléments sont passés avec quel lot. Cette rubrique couvre les scénarios courants suivants qui impliquent un traitement par lots.
@@ -153,7 +153,7 @@ L’exemple suivant montre comment traiter par lots chaque élément d’une lis
 
     <Target Name="ShowMessage">
         <Message
-            Text = "Identity: "%(Identity)" -- Items in ExampColl: @(ExampColl)"/>
+            Text = "Identity: '%(Identity)' -- Items in ExampColl: @(ExampColl)"/>
     </Target>
 
 </Project>
@@ -161,13 +161,13 @@ L’exemple suivant montre comment traiter par lots chaque élément d’une lis
 
 La [tâche Message](../msbuild/message-task.md) affiche les informations suivantes :
 
-```
-Identity: "Item1" -- Items in ExampColl: Item1
-Identity: "Item2" -- Items in ExampColl: Item2
-Identity: "Item3" -- Items in ExampColl: Item3
-Identity: "Item4" -- Items in ExampColl: Item4
-Identity: "Item5" -- Items in ExampColl: Item5
-Identity: "Item6" -- Items in ExampColl: Item6
+```output
+Identity: 'Item1' -- Items in ExampColl: Item1
+Identity: 'Item2' -- Items in ExampColl: Item2
+Identity: 'Item3' -- Items in ExampColl: Item3
+Identity: 'Item4' -- Items in ExampColl: Item4
+Identity: 'Item5' -- Items in ExampColl: Item5
+Identity: 'Item6' -- Items in ExampColl: Item6
 ```
 
 ## <a name="filter-item-lists"></a>Filtrer des listes d’éléments

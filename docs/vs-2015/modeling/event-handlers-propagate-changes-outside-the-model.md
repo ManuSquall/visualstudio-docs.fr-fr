@@ -94,7 +94,7 @@ namespace Company.MusicLib
 ```
 
 ## <a name="using-events-to-make-undoable-adjustments-in-the-store"></a>Utilisation d’événements pour effectuer des ajustements annulables dans le magasin
- Les événements de magasin ne sont normalement pas utilisés pour propager les modifications dans le magasin, car le gestionnaire d’événements s’exécute une fois la transaction validée. Au lieu de cela, vous devez utiliser une règle de magasin. Pour plus d’informations, consultez [propager les modifications dans le modèle de règles](../modeling/rules-propagate-changes-within-the-model.md).
+ Les événements de magasin ne sont normalement pas utilisés pour propager les modifications dans le magasin, car le gestionnaire d’événements s’exécute une fois la transaction validée. Au lieu de cela, vous devez utiliser une règle de magasin. Pour plus d’informations, consultez [règles de propagation des modifications dans le modèle](../modeling/rules-propagate-changes-within-the-model.md).
 
  Toutefois, vous pouvez utiliser un gestionnaire d’événements pour effectuer des mises à jour supplémentaires du magasin, si vous souhaitez que l’utilisateur soit en mesure d’annuler les mises à jour supplémentaires séparément de l’événement d’origine. Supposons, par exemple, que les caractères minuscules constituent la Convention habituelle pour les titres d’albums. Vous pouvez écrire un gestionnaire d’événements Store qui corrige le titre en minuscules après que l’utilisateur l’a tapé en majuscules. Toutefois, l’utilisateur peut utiliser la commande Annuler pour annuler votre correction, en restaurant les caractères majuscules. Une deuxième opération d’annulation supprimerait la modification de l’utilisateur.
 

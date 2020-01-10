@@ -2,17 +2,17 @@
 title: Directive d'inclusion T4
 ms.date: 11/04/2016
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 636260609aa535e3bc45efe0224a517fd782c040
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a1ee58c29be3c4dfb5e2148c54464a7a511d1839
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72606392"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591851"
 ---
 # <a name="t4-include-directive"></a>Directive d'inclusion T4
 
@@ -24,13 +24,13 @@ Dans un modèle de texte dans Visual Studio, vous pouvez inclure du texte à par
 <#@ include file="filePath" [once="true"] #>
 ```
 
-- `filePath` peut être absolu ou relatif au fichier modèle actuel.
+- `filePath` peut être absolu ou relatif au fichier de modèle actuel.
 
    En outre, les extensions Visual Studio spécifiques peuvent spécifier leurs propres répertoires dans lesquels rechercher des fichiers include. Par exemple, lorsque vous avez installé le kit de développement logiciel (SDK) de visualisation et de modélisation (outils DSL), le dossier suivant est ajouté à la liste d’inclusion : `Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates`.
 
    Ces dossiers d'inclusion supplémentaires peuvent dépendre de l'extension du fichier d'inclusion. Par exemple, le dossier d’inclusion des outils DSL est uniquement accessible aux fichiers d’inclusion ayant l’extension de fichier `.tt`
 
-- `filePath` peut inclure des variables d'environnement délimitées par "%". Exemple :
+- `filePath` peut inclure des variables d'environnement délimitées par "%". Par exemple :
 
   ```
   <#@ include file="%HOMEPATH%\MyIncludeFile.t4" #>

@@ -6,14 +6,15 @@ ms.assetid: 2ceb63a7-b835-4988-b756-2afc3fcc4808
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b156de17c1f2ee43ccc215cf3723e14acd3c36b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8caa1a4976da39b155edde36d538ca193bd1addd
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405805"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779491"
 ---
 # <a name="create-portable-profiling-data-files-from-the-command-line"></a>Créer des fichiers de données de profilage portables à partir de la ligne de commande
 Pour faciliter le partage des données de profilage, vous pouvez utiliser l’outil en ligne de commande [VSPerfReport](../profiling/vsperfreport.md) afin d’incorporer les symboles d’une exécution de profilage dans le fichier .*vsp*.
@@ -21,7 +22,7 @@ Pour faciliter le partage des données de profilage, vous pouvez utiliser l’ou
  Vous pouvez également créer un fichier de données de profilage préanalysé (.*vsps*), plus petit et donc plus rapide à charger dans l’IDE.
 
 > [!NOTE]
-> Vérifiez que les fichiers de symboles (.*pdb*) sont accessibles à **VSPerfReport**. Pour plus d'informations, voir [Procédure : Spécifier les emplacements du fichier de symboles à partir de la ligne de commande](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md).
+> Vérifiez que les fichiers de symboles (.*pdb*) sont accessibles à **VSPerfReport**. Pour plus d’informations, consultez [Guide pratique pour spécifier les emplacements du fichier de symboles à partir de la ligne de commande](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md).
 >
 > Pour plus d’informations sur le chemin de **VSReport**, consultez [Spécifier le chemin des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
 >
@@ -39,6 +40,6 @@ Pour faciliter le partage des données de profilage, vous pouvez utiliser l’ou
 
 - Dans une fenêtre d’invite de commandes, tapez la commande suivante :
 
-   \<Chemin><strong>VSPerfReport \<</strong>Fichier VSP> **/SummaryFile** [**/Output:**\<Nom de fichier>]
+   \<Chemin><strong>VSPerfReport \<</strong>Fichier VSP> **/SummaryFile** [ **/Output:** \<Nom de fichier>]
 
    Par défaut, le fichier .*vsps* est nommé à partir du nom de base du fichier .*vsp*. Vous pouvez spécifier un autre nom avec l’option **Output**.

@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 2f14a5f2255f7ba1b077ead60147a6df407970fc
-ms.sourcegitcommit: f9f389e72787de30eb869a55ef7725a10a4011f0
+ms.openlocfilehash: faf418155708ebc577efea57ed3352953a8d577d
+ms.sourcegitcommit: 5920a8b0c68350f11eabc1652a19b04d0196881a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73636555"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75622568"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutoriel : Créer une application Node.js et React dans Visual Studio
 
@@ -82,10 +82,12 @@ Commencez par créer un projet d’application web Node.js.
 
 1. Ouvrez Visual Studio.
 
-1. Créer un nouveau projet.
+1. Créez un nouveau projet.
 
     ::: moniker range=">=vs-2019"
-    Appuyez sur **Échap** pour fermer la fenêtre de démarrage. Tapez **Ctrl+Q** pour ouvrir la zone de recherche, tapez **Node.js**, puis choisissez **Application web Node.js vide** (JavaScript). Dans la boîte de dialogue qui apparaît, choisissez **Créer**.
+    Appuyez sur **Échap** pour fermer la fenêtre de démarrage. Tapez **CTRL + Q** pour ouvrir la zone de recherche, tapez **node. js**, puis choisissez l' **application Web node. js vide-JavaScript**. (Bien que ce didacticiel utilise le compilateur de machine à écrire, les étapes requièrent que vous démarriez avec le modèle **JavaScript** .)
+    
+    Dans la boîte de dialogue qui apparaît, choisissez **Créer**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**. Dans la boîte de dialogue **Nouveau projet**, développez **JavaScript**, puis choisissez **Node.js**. Dans le volet central, choisissez **Application web Node.js vide**, tapez le nom **NodejsWebAppBlank**, puis choisissez **OK**.
@@ -400,6 +402,10 @@ Pour ce scénario, utilisez Chrome.
    D’autres instances de navigateur peuvent empêcher l’ouverture du navigateur avec le débogage activé. (Les extensions de navigateur sont peut-être en cours d’exécution et empêchent le mode de débogage complet. par conséquent, vous devrez peut-être ouvrir le gestionnaire des tâches pour rechercher des instances inattendues de
 
    ::: moniker range=">=vs-2019"
+   Pour Microsoft Edge (chrome), arrêtez également toutes les instances de chrome. Étant donné que les deux navigateurs partagent la base de code de chrome, cela donne les meilleurs résultats.
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
    Pour Microsoft Edge (chrome), arrêtez également toutes les instances de chrome. Étant donné que les deux navigateurs utilisent la base de code de chrome, cela donne les meilleurs résultats.
    ::: moniker-end
 
@@ -414,7 +420,7 @@ Pour ce scénario, utilisez Chrome.
 
     `msedge --remote-debugging-port=9222`
 
-    Ni
+    ou
 
     `chrome.exe --remote-debugging-port=9222`
     ::: moniker-end
@@ -443,7 +449,7 @@ Pour ce scénario, utilisez Chrome.
 
     ![Définir un point d'arrêt](../javascript/media/tutorial-nodejs-react-set-breakpoint-in-tsx-file.png)
 
-2. Si vous définissez le point d’arrêt dans le fichier *. TSX* (plutôt que *app-bundle. js*), vous devez mettre à jour *WebPack-config. js*. Remplacez le code suivant :
+2. Si vous définissez le point d’arrêt dans le fichier *. TSX* (plutôt que *app-bundle. js*), vous devez mettre à jour *WebPack-config. js*. Remplacez le code suivant :
 
     ```javascript
     output: {
@@ -478,7 +484,7 @@ Pour ce scénario, utilisez Chrome.
 5. Dans la boîte de dialogue **attacher au processus** , récupérez une liste filtrée des instances de navigateur auxquelles vous pouvez attacher.
 
     ::: moniker range=">=vs-2019"
-    Dans Visual Studio 2019, choisissez le débogueur approprié pour votre navigateur cible, **JavaScript (chrome)** ou **JavaScript (Microsoft Edge-chrome)** dans le champ **attacher à** , tapez **chrome** ou **bord** dans la zone de filtre pour filtrer résultats de la recherche.
+    Dans Visual Studio 2019, choisissez le débogueur approprié pour votre navigateur cible, **JavaScript (chrome)** ou **JavaScript (Microsoft Edge-chrome)** dans le champ **attacher à** , tapez **chrome** ou **bord** dans la zone de filtre pour filtrer les résultats de la recherche.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Dans Visual Studio 2017, choisissez **code WebKit** dans le champ **attacher à** , tapez **chrome** dans la zone de filtre pour filtrer les résultats de la recherche.
@@ -513,12 +519,11 @@ Pour ce scénario, utilisez Chrome.
       * Vous avez fermé toutes les instances de navigateur, y compris les extensions chrome (à l’aide du gestionnaire des tâches), afin de pouvoir exécuter le navigateur en mode débogage. Veillez à démarrer le navigateur en mode débogage.
 
       * Assurez-vous que votre fichier de mappage source contient une référence à *./app.TSX* et non à *WebPack:///./app.TSX*, ce qui empêche le débogueur Visual Studio de localiser *app. TSX*.
-
        Sinon, si vous devez vous arrêter dans le code dans *app. TSX* et que vous ne pouvez pas le faire, essayez d’utiliser l’instruction `debugger;` dans *app. TSX*, ou définissez des points d’arrêt dans le outils de développement chrome (ou les outils F12 pour Microsoft Edge) à la place.
 
    * Si vous devez vous arrêter dans le code dans *app-bundle. js* et que vous ne pouvez pas le faire, supprimez le fichier de mappage source, *app-bundle. js. map*.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 > [!div class="nextstepaction"]
 > [Déployer l’application sur Linux App Service](../javascript/publish-nodejs-app-azure.md)

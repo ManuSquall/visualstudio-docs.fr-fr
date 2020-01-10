@@ -35,13 +35,13 @@ Vous pouvez créer une page de démarrage personnalisée en utilisant le modèle
   
 2. Une fois que vous avez installé le modèle, utilisez-le pour créer une nouvelle page de démarrage.  
   
-3. Dans le volet gauche de la boîte de dialogue Nouveau projet, sous **Modèles installés**, développez le nœud **Autres types de projets**, puis cliquez sur **Extensibilité**.  
+3. Dans le volet gauche de la boîte de dialogue Nouveau projet, sous **Modèles installés**, développez le nœud **Autres types de projets** , puis cliquez sur **Extensibilité**.  
   
 4. Dans le volet central, cliquez sur **Page de démarrage personnalisée**, puis nommez votre projet et cliquez sur **OK**.  
   
      Visual Studio crée un projet Page de démarrage qui est une copie intégrale de la page de démarrage de Visual Studio.  
   
-5. Dans l’**Explorateur de solutions**, ouvrez **StartPage.xaml**.  
+5. Dans l’ **Explorateur de solutions**, ouvrez **StartPage.xaml**.  
   
 6. Modifiez StartPage.xaml.  
   
@@ -85,15 +85,15 @@ Vous pouvez créer une page de démarrage personnalisée en utilisant le modèle
   
 #### <a name="to-test-a-custom-start-page"></a>Pour afficher une page de démarrage personnalisée  
   
-1. Appuyez sur F5.  
+1. Appuyez sur F5.  
   
     L’instance expérimentale de Visual Studio s’ouvre avec la nouvelle page de démarrage installée, mais non sélectionnée.  
   
-2. Dans l’instance expérimentale de Visual Studio, dans le menu **Outils**, cliquez sur **Options**.  
+2. Dans l’instance expérimentale de Visual Studio, dans le menu **Outils** , cliquez sur **Options**.  
   
-3. Dans la boîte de dialogue **Options**, sous **Environnement**, sélectionnez **Démarrage**. Ensuite, dans la liste **Personnaliser la page de démarrage**, sélectionnez le fichier .xaml, puis cliquez sur **OK**.  
+3. Dans la boîte de dialogue **Options** , sous **Environnement**, sélectionnez **Démarrage**. Ensuite, dans la liste **Personnaliser la page de démarrage** , sélectionnez le fichier .xaml, puis cliquez sur **OK**.  
   
-4. Dans le menu **Affichage**, cliquez sur **Page de démarrage**.  
+4. Dans le menu **Affichage** , cliquez sur **Page de démarrage**.  
   
     La page de démarrage active s’affiche. Vous devez fermer l’instance expérimentale, recopier les fichiers modifiés, puis rouvrir l’instance expérimentale pour voir les modifications.  
   

@@ -3,20 +3,20 @@ title: Actions rapides courantes
 description: Les actions rapides les plus C# populaires pour et Visual Basic notamment la correction des mots clés ou des symboles mal orthographiés, la résolution des conflits de fusion, la suppression des importations nécessaires, la génération de types, l’introduction de variables locales, etc.
 ms.date: 03/28/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bad97ac5574afd65103263b2ce51a4dfba02741c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: db7a3a550f6bfc1250679eeefa0ba3ec6291eef0
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652248"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585520"
 ---
 # <a name="common-quick-actions"></a>Actions rapides courantes
 
@@ -30,7 +30,7 @@ Les actions rapides de cette section corrigent les erreurs dans le code qui prov
 
 ### <a name="correct-misspelled-symbol-or-keyword"></a>Symbole ou mot clé mal orthographié correct
 
-Si par erreur vous orthographiez mal un type ou un mot clé dans Visual Studio, cette action rapide le corrige automatiquement pour vous. Vous verrez ces éléments dans le menu ampoule **« changer » \<misspelled mot > « à » \<correct mot > «»** . Exemple :
+Si par erreur vous orthographiez mal un type ou un mot clé dans Visual Studio, cette action rapide le corrige automatiquement pour vous. Vous verrez ces éléments dans le menu ampoule **« modifier »\<mot mal orthographié > « à »\<mot correct > «»** . Par exemple :
 
 ```csharp
 // Before
@@ -58,7 +58,7 @@ Function MyFunction as Integer
 End Function
 ```
 
-| ID d'erreur | Langages applicables |
+| ID d’erreur | Langages applicables |
 | - | - |
 | CS0103, BC30002 | C# et Visual Basic |
 
@@ -88,7 +88,7 @@ private void MyMethod()
 }
 ```
 
-| ID d'erreur | Langages applicables | Version prise en charge |
+| ID d’erreur | Langages applicables | Version prise en charge |
 | ------- | -------------------- | ---------------- |
 | CS8300, BC37284 | C# et Visual Basic | Visual Studio 2017 version 15,3 et versions ultérieures |
 
@@ -908,7 +908,7 @@ Function MyAsyncMethod() As Integer
 End Function
 ```
 
-| ID d'erreur | Langages applicables |
+| ID d’erreur | Langages applicables |
 | ------- | -------------------- |
 | CS1998, BC42356 | C# et Visual Basic |
 
@@ -946,7 +946,7 @@ Async Function MyAsyncMethod() As Task(Of Integer)
 End Function
 ```
 
-| ID d'erreur | Langages applicables | Version prise en charge |
+| ID d’erreur | Langages applicables | Version prise en charge |
 | ------- | -------------------- | ---------------- |
 | CS4032, BC37057 | C# et Visual Basic | Visual Studio 2017 et versions ultérieures |
 

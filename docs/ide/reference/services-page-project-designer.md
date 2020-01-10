@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - Services page in Project Designer
 - Project Designer, Services page
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd374482d0432a54ed66442610aac1f60ca1828f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d30d8e8ddcdc8c1fa4fe1935da1f1dedd1b18f4b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72655486"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593562"
 ---
 # <a name="services-page-project-designer"></a>Services, page du Concepteur de projets
 
@@ -78,5 +78,5 @@ Ouvre la [boîte de dialogue Paramètres avancés pour les services](../../ide/r
 - [Services d’application cliente](/dotnet/framework/common-client-technologies/client-application-services)
 - [Paramètres avancés pour les services, boîte de dialogue](../../ide/reference/advanced-settings-for-services-dialog-box.md)
 - [Comment : configurer les services d’application cliente](/dotnet/framework/common-client-technologies/how-to-configure-client-application-services)
-- [Page Compiler, Concepteur de projet (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)
+- [Page Compiler, Concepteur de projets (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)
 - [Page Générer, Concepteur de projet (C#)](../../ide/reference/build-page-project-designer-csharp.md)

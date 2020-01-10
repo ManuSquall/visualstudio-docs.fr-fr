@@ -8,20 +8,21 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b04b2d2c3c23b444d011d81002f7f22a12b1ebf0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 20b8438243382b28cccb510894d1674aa5872946
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777860"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779868"
 ---
 # <a name="add-tier-interaction-data-from-the-command-line"></a>Ajouter des données d’interaction de couche à partir de la ligne de commande
 
 Le profilage d’interaction de couche fournit des informations supplémentaires sur les temps d’exécution des appels [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] synchrones, contenus dans les fonctions d’applications multicouches qui communiquent avec une ou plusieurs bases de données.
 
-**Windows 8 et Windows Server 2012**
+**Windows 8 et Windows Server 2012**
 
 Pour collecter des données d’interaction de couche à partir d’applications de bureau Windows 8 ou d’applications Windows Server 2012, vous devez utiliser la méthode d’instrumentation. La collecte de données d’interaction de couche sur les applications UWP n’est pas prise en charge.
 
@@ -31,7 +32,7 @@ Pour collecter des données de profilage d’interaction de couche, vous pouvez 
 
 **Collecter des données TIP sur un ordinateur distant**
 
-Pour collecter des données d’interaction entre niveaux sur un ordinateur distant, vous devez copier le fichier **vs_profiler\_**_\<Plateforme>_**\_**_\<Langage>_**.exe** depuis le dossier _%VSInstallDir%_**\Team Tools\Performance Tools\Setups** d’un ordinateur Visual Studio vers l’ordinateur distant, puis lancer l’installation. Vous ne pouvez pas utiliser les outils de profilage contenus dans le package de téléchargement [Débogage à distance](../debugger/remote-debugging.md).
+Pour collecter des données d’interaction entre niveaux sur un ordinateur distant, vous devez copier le fichier **vs_profiler\_** _\<Plateforme>_ **\_** _\<Langage>_ **.exe** depuis le dossier _%VSInstallDir%_ **\Team Tools\Performance Tools\Setups** d’un ordinateur Visual Studio vers l’ordinateur distant, puis lancer l’installation. Vous ne pouvez pas utiliser les outils de profilage contenus dans le package de téléchargement [Débogage à distance](../debugger/remote-debugging.md).
 
 **Rapports TIP**
 
@@ -58,13 +59,13 @@ Dans l’exemple suivant, une application de bureau Windows est profilée à l�
     vsperfclrenv /interactionon
     ```
 
-3. Démarrez le profileur. Tapez la commande suivante :
+3. Démarrer le profileur. Tapez la commande suivante :
 
     ```cmd
     vsperfcmd /start:trace /output:Desktop_tip.vsp
     ```
 
-4. Démarrez l’application avec VSPerfCmd. Tapez la commande suivante :
+4. Démarrez l’application avec VSPerfCmd. Tapez la commande suivante :
 
     ```cmd
     vsperfcmd /launch:DesktopApp.exe
@@ -72,7 +73,7 @@ Dans l’exemple suivant, une application de bureau Windows est profilée à l�
 
 5. Testez l’application pour collecter des données de profilage, puis fermez-la normalement.
 
-6. Supprimez les variables d’environnement TiP. Tapez la commande suivante :
+6. Supprimez les variables d’environnement TiP. Tapez la commande suivante :
 
     ```cmd
     vsperfclrenv /off
@@ -94,13 +95,13 @@ Dans l’exemple suivant, un service Windows est profilé suivant la méthode pa
 
 2. Ouvrez une fenêtre d’invite de commande en tant qu’administrateur. Cliquez sur **Démarrer**, pointez sur **Tous les programmes**, puis sur **Accessoires**. Cliquez avec le bouton droit de la souris sur **Invite de commande**, puis cliquez sur **Exécuter en tant qu’administrateur**.
 
-3. Initialisez les variables d’environnement du profilage .NET. Tapez la commande suivante :
+3. Initialisez les variables d’environnement du profilage .NET. Tapez la commande suivante :
 
     ```cmd
     vsperfclrenv /globaltraceon
     ```
 
-4. Initialisez les variables d’environnement TiP. Tapez la commande suivante :
+4. Initialisez les variables d’environnement TiP. Tapez la commande suivante :
 
     ```cmd
     vsperfclrenv /globalinteractionon
@@ -110,7 +111,7 @@ Dans l’exemple suivant, un service Windows est profilé suivant la méthode pa
 
 6. Ouvrez une fenêtre d’invite de commande en tant qu’administrateur.
 
-7. Démarrez le profileur. Tapez la commande suivante :
+7. Démarrer le profileur. Tapez la commande suivante :
 
     ```cmd
     vsperfcmd /start:trace /output:MiddleTier_tip.vsp /user:SYSTEM /crosssession
@@ -118,7 +119,7 @@ Dans l’exemple suivant, un service Windows est profilé suivant la méthode pa
 
 8. Si nécessaire, démarrez le service.
 
-9. Attachez le profileur au service. Tapez la commande suivante :
+9. Attachez le profileur au service. Tapez la commande suivante :
 
     ```cmd
     vsperfcmd /attach:MiddleTier.exe /output:MyService_tip.vsp /user:SYSTEM /crosssession
@@ -126,11 +127,11 @@ Dans l’exemple suivant, un service Windows est profilé suivant la méthode pa
 
 10. Testez le service, puis collectez des données de profilage.
 
-11. Arrêtez le profileur. Tapez la commande suivante :
+11. Arrêtez le profileur. Tapez la commande suivante :
 
      `vsperfcmd /detach`
 
-12. Supprimez les variables d’environnement TiP et celles du profilage .NET. Tapez la commande suivante :
+12. Supprimez les variables d’environnement TiP et celles du profilage .NET. Tapez la commande suivante :
 
     ```cmd
     vsperfclrenv /globaloff

@@ -18,17 +18,17 @@ helpviewer_keywords:
 - debug mode
 - custom layouts
 ms.assetid: 7517ff13-76de-4ecf-9c1b-eb9b7ff4d718
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6ca1f34604c314fea6e90130b298be04f3a6189
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c1963c76b67eaedea4cdf013739c112275ecffb2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652533"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596708"
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Personnalisation des dispositions de fenêtres dans Visual Studio
 
@@ -56,7 +56,7 @@ Les groupes d’onglets vous permettent de mieux gérer l’espace de travail li
 
 Quand vous devez afficher ou modifier deux emplacements à la fois dans un document, vous pouvez fractionner les fenêtres. Pour diviser votre document en deux sections qui défilent indépendamment, cliquez sur **Fractionner** dans le menu **Fenêtre** . Cliquez sur **Supprimer le fractionnement** dans le menu **Fenêtre** pour revenir à la vue unique.
 
-### <a name="toolbars"></a>Barres d'outils
+### <a name="toolbars"></a>Toolbars
 
 Vous pouvez organiser les barres d'outils en les faisant glisser ou en utilisant la boîte de dialogue **Personnaliser** . Pour plus d’informations sur le positionnement et la personnalisation des barres d’outils, consultez [Guide pratique pour personnaliser les menus et les barres d’outils](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md).
 

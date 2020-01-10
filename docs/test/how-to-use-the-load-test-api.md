@@ -7,15 +7,15 @@ helpviewer_keywords:
 - plug-ins, load test
 - APIs, load tests
 ms.assetid: e15567bc-1f21-4feb-b81d-f17ba35cfde5
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 571abf14b1e17d85e21667c0ef0dbc3894b3ae76
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3d949b8c73bb155b2e6fe4900c54c6d5314d26c4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653313"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588809"
 ---
 # <a name="how-to-use-the-load-test-api"></a>Guide pratique pour utiliser l’API de test de charge
 
@@ -42,7 +42,7 @@ Vous pouvez également créer des plug-ins pour les tests de performances web. P
 
 6. Créez une classe publique qui implémente l'interface <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>.
 
-7. Générez le projet.
+7. créer le projet ;
 
 8. Ajoutez le nouveau plug-in de test de charge à l'aide de l'éditeur de test de charge :
 

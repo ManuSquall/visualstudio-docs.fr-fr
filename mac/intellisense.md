@@ -4,12 +4,12 @@ description: Informations sur l’utilisation d’IntelliSense dans Visual Studi
 author: cobey
 ms.author: cobey
 ms.date: 08/16/2019
-ms.openlocfilehash: 3e99c31b1ab4d12532d701e4626ac9c1aae7df56
-ms.sourcegitcommit: 0bd63f3bc429ae059b9df6e45c6b8dcae6152940
-ms.translationtype: HT
+ms.openlocfilehash: 07ef1d6292e4ac88ca616d0f35e3fd831cacc649
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "70026568"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75405806"
 ---
 # <a name="intellisense"></a>IntelliSense
 
@@ -25,33 +25,23 @@ La fenêtre de complétion offre également la prise en charge du filtrage des c
 
 | Icône                         | Name          | Mot clé    | Touche d’accès rapide |
 | -----------------------------|---------------| -----------|--------|
-| ![Icône Classes](media/classes-icon.png)  | class         | `class`    |  ⌥C
+| ![Icône Classes](media/classes-icon.png)  | classe         | `class`    |  ⌥C
 | ![Icône de constante](media/constant-icon.png) | constant      | `const`    |  ⌥O
 | ![Icône Délégué](media/delegate-icon.png) | délégué      | `delegate` |  ⌥D
 | ![Icône Énumération](media/enums-icon.png)    | enum          | `enum`     |  ⌥E
 | ![Icône Événement](media/event-icon.png)    | événement         |            |  ⌥V
 | ![Icône de champ](media/fields-icon.png)   | champ         |            |  ⌥F
-| ![Icône Interface](media/interface-icon.png)| interface     | `interface`|  ⌥I
+| ![Icône Interface](media/interface-icon.png)| Interface     | `interface`|  ⌥I
 | ![Icône Mot clé](media/keyword-icon.png)  | keyword       |            |  ⌥K
-| ![Icône Méthode](media/method-icon.png)   | méthode        |            |  ⌥M
-| ![Icône Espace de noms](media/namespace-icon.png)| namespace     | `namespace`|  ⌥N
-| ![Icône Propriétés](media/props-icon.png)    | propriété      |            |  ⌥P
-| ![Icône Extrait de code](media/snippet-icon.png)  | snippet       | `class`    |  ⌥S
-| ![Icône Structure](media/struct-icon.png)   | structure     | `struct`   |  ⌥S
+| ![Icône Méthode](media/method-icon.png)   | method        |            |  ⌥M
+| ![Icône Espace de noms](media/namespace-icon.png)| Espace de noms     | `namespace`|  ⌥N
+| ![Icône Propriétés](media/props-icon.png)    | Propriété      |            |  ⌥P
+| ![Icône Extrait de code](media/snippet-icon.png)  | extrait       | `class`    |  ⌥S
+| ![Icône Structure](media/struct-icon.png)   | Structure     | `struct`   |  ⌥S
 
 En cliquant sur une des icônes ou en appuyant sur les touches de raccourci correspondantes, la liste de complétion se limite aux seuls types définis par l’ensemble de filtres.  
 
 ![Filtrage de type IntelliSense](media/intellisense-typefiltering.gif)
-
-## <a name="show-import-items"></a>Afficher les éléments à importer
-
-Par défaut, la complétion IntelliSense affiche seulement les complétions provenant des bibliothèques qui ont été importées dans votre projet. Par exemple, si vous n’avez pas importé `System.Collections.Generic` via `using`, la complétion pour `List<>` n’est pas proposée. Pour afficher les complétions provenant des bibliothèques qui ne sont pas importées, vous devez activer **Afficher les éléments à importer** dans les préférences de Visual Studio pour Mac. Ce paramètre se trouve sous **Préférences > Éditeur de texte > IntelliSense** :
-
-![IntelliSense - Afficher les éléments à importer](media/intellisense-showimport.png)
-
-Une fois l’option **Afficher les éléments à importer** activée, la liste des complétions inclut les complétions que vous n’avez pas encore importées. Après la sélection d’un élément qui correspond à une bibliothèque non déclarée, l’instruction `using` pour cette bibliothèque est automatiquement ajoutée à l’en-tête du fichier de code. Le nom de la bibliothèque à laquelle la complétion appartient est également listé avec la complétion elle-même.
-
-![Liste Afficher les éléments à importer](media/intellisense-importaction.png)
 
 ## <a name="parameter-window"></a>Fenêtre des paramètres
 

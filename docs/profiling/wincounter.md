@@ -6,14 +6,15 @@ ms.assetid: ff319ffc-f249-4c3f-9eb2-06e392e3ae80
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e93cc526ad61916e2a8663caa9652842ce136c5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 9455d596e27526f6075ad3b667ac441b12511d58
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62960192"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779842"
 ---
 # <a name="wincounter"></a>WinCounter
 L’option **WinCounter** spécifie un compteur de performances Windows ou d’application à collecter à des intervalles définis pendant l’exécution du profil. Les compteurs de performances Windows et d’application sont répertoriés en tant que marques dans le fichier de données de profilage. Vous pouvez spécifier plusieurs compteurs de performances à collecter dans des options distinctes.
@@ -30,18 +31,18 @@ L’option **WinCounter** spécifie un compteur de performances Windows ou d’a
 VSPerfCmd.exe /Start:Method /Wincounter:Path [/WinCounter:Path] [AutoMark:Milliseconds] [Options]
 ```
 
-#### <a name="parameters"></a>Paramètres
+#### <a name="parameters"></a>Parameters
  `Path` Compteur de performances Windows au format de chemin de compteur PDH.
 
 ## <a name="required-options"></a>Options obligatoires
  L’option **WinCounter** peut être utilisée seulement avec l’option **Start**.
 
- **Start :** `Method` L’option **Start** initialise le profileur avec la méthode de profilage spécifiée.
+ **Start :** `Method` l’option **Start** Initialise le profileur avec la méthode de profilage spécifiée.
 
 ## <a name="exclusive-options"></a>Options exclusives
  L’option **AutoMark** peut être utilisée seulement avec l’option **WinCounter**.
 
- **AutoMark :** `Milliseconds` Spécifie le nombre de millisecondes écoulées entre les collectes des données du compteur de performances Windows.
+ **AutoMark :** `Milliseconds` spécifie le nombre de millisecondes entre la collecte des données du compteur de performance Windows.
 
 ## <a name="example"></a>Exemple
  Dans l’exemple suivant, deux compteurs de performance Windows sont configurés être collectés à un intervalle de 1 000 millisecondes.

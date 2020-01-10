@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - testing tools [Visual Studio]
 - unit tests [Visual Studio]
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: e57feede5963b9efc04f98f4c7ba3adfb1eb49b1
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+author: mikejo5000
+ms.openlocfilehash: e6dd0f0df6dde5c1f3553ab86374e71dfef82384
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984642"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594362"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Outils de test dans Visual Studio
 
@@ -24,9 +24,9 @@ Les outils de test de Visual Studio peuvent vous aider vous et votre équipe à 
 > [!NOTE]
 > Les tests unitaires sont disponibles dans toutes les éditions de Visual Studio. D’autres outils de test, comme Live Unit Testing, IntelliTest et les tests codés de l’interface utilisateur, sont disponibles seulement dans l’édition Visual Studio Enterprise. Pour plus d’informations sur les éditions, consultez le [comparatif des IDE Visual Studio](https://visualstudio.microsoft.com/vs/compare/).
 
-## <a name="test-explorer"></a>Explorateur de tests
+## <a name="test-explorer"></a>Explorateur de test
 
-La fenêtre **Explorateur de tests** permet aux développeurs de créer, gérer et exécuter des tests unitaires. Vous pouvez utiliser le framework de tests unitaires Microsoft ou un des frameworks tiers et ouverts.
+La fenêtre **Explorateur de tests** permet aux développeurs de créer, gérer et exécuter des tests unitaires. Vous pouvez utiliser l'infrastructure de test unitaire Microsoft ou une des infrastructures tierces et ouvertes.
 
 ::: moniker range="vs-2017"
 ![Explorateur de tests Visual Studio](media/devtest-testexplorer.png)

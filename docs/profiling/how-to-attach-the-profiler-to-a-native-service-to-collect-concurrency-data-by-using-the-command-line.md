@@ -1,21 +1,22 @@
 ---
-title: 'VSPerfCmd: Attacher le profileur à un service natif pour obtenir des données de concurrence'
+title: 'VSPerfCmd : attacher le profileur au service natif pour accéder aux données d’accès concurrentiel'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 283a1ee1-b43e-4daf-95ae-1311925a42a8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: faa47183040d376724de48fb71f07710cfe51f8f
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
-ms.translationtype: HT
+ms.openlocfilehash: 705e55363f4f8657da20fe66cd4369188f133cdb
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67033071"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74776606"
 ---
-# <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line"></a>Procédure : Attacher le profileur à un service natif pour collecter des données concurrentielles en utilisant la ligne de commande
+# <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line"></a>Guide pratique pour attacher le profileur à un service natif et collecter des données de concurrence en utilisant la ligne de commande
 Cet article explique comment utiliser les outils en ligne de commande des Outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour attacher le profileur à un service natif (C/C++) et collecter des données de concurrence sur les processus et les threads à l’aide de la méthode d’échantillonnage.
 
 > [!NOTE]
@@ -31,7 +32,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
 #### <a name="to-attach-the-profiler-to-a-native-service"></a>Pour attacher le profileur à un service natif
 
-1. Si le service n’est pas en cours d’exécution, démarrez-le.
+1. Si le service n'est pas en cours d'exécution, démarrez-le.
 
 2. Démarrez le profileur en tapant ce qui suit à l’invite de commandes :
 
@@ -72,7 +73,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
     |[/attach](../profiling/attach.md) **:** {`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[ **:** {`PID`&#124;`ProcName`}]|**/attach** commence à collecter des données pour le processus spécifié par l’ID de processus (`PID`) ou le nom de processus (*ProcName*). **/detach** arrête la collecte des données pour le processus spécifié ou pour tous les processus, si aucun processus n’est spécifié.|
 
 ## <a name="end-the-profiling-session"></a>Arrêter la session de profilage
- Pour mettre fin à une session de profilage, le profileur ne doit pas être en train de collecter des données. Vous pouvez arrêter la collecte des données d’un service natif profilé avec la méthode d’accès concurrentiel en arrêtant le service ou en appelant l’option **VSPerfCmd /detach**. Vous devez alors appeler l’option **VSPerfCmd /shutdown** pour désactiver le profileur et fermer le fichier de données de profilage.
+ Pour que vous puissiez mettre fin à une session de profilage, le profileur ne doit pas être en train de collecter des données. Vous pouvez arrêter la collecte des données d’un service natif profilé avec la méthode d’accès concurrentiel en arrêtant le service ou en appelant l’option **VSPerfCmd /detach**. Vous devez alors appeler l’option **VSPerfCmd /shutdown** pour désactiver le profileur et fermer le fichier de données de profilage.
 
 #### <a name="to-end-a-profiling-session"></a>Pour terminer une session de profilage
 

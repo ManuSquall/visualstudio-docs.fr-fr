@@ -12,15 +12,15 @@ ms.assetid: 989124bc-1a86-41f7-b37d-8f9e54dd4f0b
 dev_langs:
 - CSharp
 - VB
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2c2987aa1aca4132b3d134a65dec94726ee0349e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9780a4ee81a4d063b5cfb7f66b1a5ea023d8fa2f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665273"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75573402"
 ---
 # <a name="code-a-custom-validation-rule-for-a-web-performance-test"></a>Coder une règle de validation personnalisée pour un test de performances web
 
@@ -54,7 +54,7 @@ Vous pouvez créer vos propres règles de validation. Pour cela, vous dérivez v
 
      La boîte de dialogue **Ajouter une règle de validation** s’affiche. Votre règle de validation personnalisée apparaît dans la liste **Sélectionner une règle** avec les règles de validation prédéfinies. Sélectionnez votre règle de validation personnalisée, puis choisissez **OK**.
 
-9. Exécutez votre test de performances de site web.
+9. Exécutez votre test de performances web.
 
 ## <a name="example"></a>Exemple
 

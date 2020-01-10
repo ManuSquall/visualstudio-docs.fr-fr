@@ -12,23 +12,23 @@ helpviewer_keywords:
 - Options dialog box, international settings
 - languages, specifying default
 ms.assetid: e3a8815c-6995-4099-8e88-34f91fad55b2
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e55c0e81877c2735571705a2b2d2529b0fa3a74
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1526e1c49636f4883392caa63966714625d066d6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667002"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595512"
 ---
-# <a name="options-dialog-box-environment--international-settings"></a>Boîte de dialogue Options : Environnement \> Paramètres internationaux
+# <a name="options-dialog-box-environment--international-settings"></a>Boîte de dialogue Options : environnement \> paramètres internationaux
 
 La page Paramètres internationaux vous permet de changer la langue par défaut quand vous avez plusieurs versions linguistiques de l’environnement de développement intégré (IDE) installé sur votre ordinateur. Vous pouvez accéder à cette boîte de dialogue en sélectionnant **Options** dans le menu **Outils**, puis en choisissant **Paramètres internationaux** dans le dossier **Environnement**.
 
-**Language**
+**Langue**
 
 Répertorie les langues disponibles pour les versions linguistiques du produit installé. Si plusieurs versions linguistiques de produits ou si une installation mixte de versions linguistiques de produits partagent le même environnement, la langue sélectionnée est changée en **Identique à Microsoft Windows**.
 

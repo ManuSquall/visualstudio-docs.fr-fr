@@ -6,17 +6,17 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: 61107da9-7fa3-4dba-b101-ae46536f52c4
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 83c6addb7aa6cf0b54398db351bee5825bc2d6f2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3ccd83662700794e60572eed923d10452595d726
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648407"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586560"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Guide pratique pour ajouter une validation à des classes d’entité
 La *validation* de classes d’entité est le processus qui consiste à valider que les valeurs entrées dans des objets de données sont conformes aux contraintes du schéma d’un objet et également aux règles établies pour l’application. Il est conseillé de valider les données avant d'envoyer des mises à jour à la base de données sous-jacente pour réduire les erreurs. Une telle validation permet aussi de réduire le nombre potentiel d'allers-retours entre une application et la base de données.

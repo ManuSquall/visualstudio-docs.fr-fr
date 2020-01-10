@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a98164488d548a15c07e67b9a02cad2341f7300b
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 464820258e5c20474d74f92eb108344deccc49f1
+ms.sourcegitcommit: 0a8855572c6c88f4b2ece232c04aa124fbd9cec3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985648"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74955047"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>Entrées de Registre pour les compléments VSTO
   Vous devez créer un ensemble spécifique d'entrées de Registre quand vous déployez des compléments VSTO créés à l'aide de Visual Studio. Ces entrées de Registre fournissent des informations qui permettent à l'application Microsoft Office de découvrir et de charger le complément VSTO.
@@ -40,44 +40,37 @@ ms.locfileid: "72985648"
 ## <a name="register-vsto-add-ins-for-the-current-user-vs-all-users"></a>Inscrire les compléments VSTO pour l’utilisateur actuel et tous les utilisateurs
  Quand un complément VSTO est installé, il peut être inscrit de deux façons :
 
-- Pour l’utilisateur actuel uniquement (autrement dit, il est disponible uniquement pour l’utilisateur qui a ouvert une session sur l’ordinateur lorsque le complément VSTO est installé). Dans ce cas, les entrées de Registre sont créées sous **HKEY_CURRENT_USER**.
+- Pour l’utilisateur actuel uniquement (autrement dit, il est disponible uniquement pour l’utilisateur qui a ouvert une session sur l’ordinateur lorsque le complément VSTO est installé). Dans ce cas, les entrées de Registre sont créées sous le **HKEY_CURRENT_USER**.
 
 - Pour tous les utilisateurs (c’est-à-dire, tout utilisateur qui ouvre une session sur l’ordinateur peut utiliser le complément VSTO). Dans ce cas, les entrées de Registre sont créées sous **HKEY_LOCAL_MACHINE**.
 
   Tous les compléments VSTO que vous créez à l'aide de Visual Studio peuvent être inscrits pour l'utilisateur actuel. En revanche, ils ne peuvent être inscrits pour tous les utilisateurs que dans certains scénarios particuliers. Ces scénarios dépendent de la version de Microsoft Office installée sur l'ordinateur et de la façon dont le complément VSTO a été déployé.
 
-### <a name="microsoft-office-version"></a>Version de Microsoft Office
- Les applications Office peuvent charger les compléments VSTO inscrits sous **HKEY_LOCAL_MACHINE** ou **HKEY_CURRENT_USER**.
-
- Pour charger les compléments VSTO inscrits sous **HKEY_LOCAL_MACHINE**, le package de mise à jour 976477 doit être installé sur les ordinateurs. Pour plus d’informations, consultez [http://go.microsoft.com/fwlink/?LinkId=184923](https://support.microsoft.com/help/976811/a-2007-office-system-application-does-not-load-an-add-in-that-is-devel).
-
 ### <a name="deployment-type"></a>Type de déploiement
  Si vous utilisez ClickOnce pour déployer un complément VSTO, ce dernier ne peut être inscrit que pour l'utilisateur actuel. En effet, ClickOnce prend uniquement en charge la création de clés sous **HKEY_CURRENT_USER**. Si vous voulez inscrire un complément VSTO pour tous les utilisateurs d'un ordinateur, vous devez déployer ce complément à l'aide de Windows Installer. Pour plus d’informations sur ces types de déploiement, consultez [déployer une solution Office à l’aide de ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md) et [déployer une solution Office à l’aide de Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md).
 
 ## <a name="registry-entries"></a>Entrées du Registre
- Les entrées de Registre du complément VSTO nécessaires se trouvent sous la clé de Registre suivante pour toutes les applications, à l’exception de Visio, où la *racine* est **HKEY_CURRENT_USER** ou **HKEY_LOCAL_MACHINE**.
+ Les entrées de Registre du complément VSTO nécessaires se trouvent sous les clés de Registre suivantes, où la *racine* est **HKEY_CURRENT_USER** ou **HKEY_LOCAL_MACHINE** en fonction de l’installation pour l’utilisateur actuel ou tous les utilisateurs.
 
- **Ensemble des applications sauf Visio**
+|Application Office|Chemin d'accès de configuration|
+|------------------|------------------|
+|Visio|\Software\Microsoft *racine*\\*Visio*\Addins\\*ID du complément*|
+|Tout autre|\Software\Microsoft\Office *racine*\\*nom de l’application Office*\Addins\\*ID du complément*|
 
-|version d'Office|Chemin d'accès de configuration|
-|--------------------|------------------------|
-|32 bits|\Software\Microsoft\Office *racine*\\*nom*de l’application \Addins\\*ID du complément*|
-|64 bits|\Software\Wow6432Node\Microsoft\Office *racine*\\*nom*de l’application \Addins\\*ID du complément*|
-
- **Visio**
-
-|version d'Office|Chemin d'accès de configuration|
-|--------------------|------------------------|
-|32 bits|\Software\Microsoft\Visio\Addins *racine*\\*ID du complément*|
-|64 bits|\Software\Wow6432Node\Visio\Addins *racine*\\*ID du complément*|
+> [!NOTE]
+> Si le programme d’installation cible tous les utilisateurs sur Windows 64 bits, il est recommandé d’inclure deux entrées de Registre, l’une sous la HKEY_LOCAL_MACHINE \Software\Microsoft et l’autre sous le HKEY_LOCAL_MACHINE \SOFTWARE\\**WOW6432Node**\Microsoft Hive. Cela est dû au fait que les utilisateurs peuvent utiliser des versions 32 bits ou 64 bits d’Office sur l’ordinateur.
+>
+>Si le programme d’installation cible l’utilisateur actuel, il n’a pas besoin d’être installé sur le WOW6432Node, car le chemin d’accès HKEY_CURRENT_USER \Software est partagé.
+>
+>Pour plus d’informations, consultez [données d’Application 32 bits et 64 bits dans le registre](https://docs.microsoft.com/windows/win32/sysinfo/32-bit-and-64-bit-application-data-in-the-registry) .
 
  Le tableau suivant répertorie les entrées sous cette clé de Registre.
 
-|Entrée|Tapez|valeur|
+|Entrée|Type|Value|
 |-----------|----------|-----------|
 |**Description**|REG_SZ|Requis. Brève description du complément VSTO.<br /><br /> Cette description s'affiche quand l'utilisateur sélectionne le complément VSTO dans le volet **Compléments** de la boîte de dialogue **Options** de l'application Microsoft Office.|
 |**FriendlyName**|REG_SZ|Requis. Nom descriptif du complément VSTO qui s'affiche dans la boîte de dialogue **Compléments COM** de l'application Microsoft Office. La valeur par défaut est l'ID du complément VSTO.|
-|**LoadBehavior**|REG_DWORD|Requis. Valeur qui spécifie le moment où l'application tente de charger le complément VSTO, ainsi que l'état actuel du complément VSTO (chargé ou non chargé).<br /><br /> Par défaut, cette entrée a la valeur 3, ce qui indique que le complément VSTO est chargé au démarrage. Pour plus d’informations, consultez [valeurs LoadBehavior](#LoadBehavior). **Remarque :**  Si un utilisateur désactive le complément VSTO, cette action modifie la valeur **LoadBehavior** dans la ruche de Registre **HKEY_CURRENT_USER** . Pour chaque utilisateur, la valeur de **LoadBehavior** dans la ruche HKEY_CURRENT_USER remplace la valeur **LoadBehavior** par défaut définie dans la ruche **HKEY_LOCAL_MACHINE** .|
+|**LoadBehavior**|REG_DWORD|Requis. Valeur qui spécifie le moment où l'application tente de charger le complément VSTO, ainsi que l'état actuel du complément VSTO (chargé ou non chargé).<br /><br /> Par défaut, cette entrée a la valeur 3, ce qui indique que le complément VSTO est chargé au démarrage. Pour plus d’informations, consultez [valeurs LoadBehavior](#LoadBehavior). **Remarque :**  Si un utilisateur désactive le complément VSTO, cette action modifie la valeur **LoadBehavior** dans la ruche du Registre **HKEY_CURRENT_USER** . Pour chaque utilisateur, la valeur de **LoadBehavior** dans le HKEY_CURRENT_USER Hive remplace la valeur **LoadBehavior** par défaut définie dans la ruche **HKEY_LOCAL_MACHINE** .|
 |**Manifeste**|REG_SZ|Requis. Chemin d'accès complet du manifeste de déploiement du complément VSTO. Le chemin d'accès peut être un emplacement sur l'ordinateur local, un partage réseau (UNC) ou un serveur web (HTTP).<br /><br /> Si vous utilisez Windows Installer pour déployer la solution, vous devez ajouter le préfixe **file:///** au chemin d'accès du **manifeste** . Vous devez également ajouter la chaîne  **&#124;vstolocal** (autrement dit, le caractère **&#124;** de barre verticale suivie de **vstolocal**) à la fin de ce chemin d’accès. Cela permet de garantir que votre solution est chargée à partir du dossier d'installation, et non à partir du cache ClickOnce. Pour plus d’informations, consultez [déployer une solution Office à l’aide de Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md). **Remarque :**  Quand vous générez un complément VSTO sur l’ordinateur de développement, Visual Studio ajoute automatiquement la  **&#124;chaîne vstolocal** à cette entrée de registre.|
 
 ### <a name="OutlookEntries"></a>Entrées de Registre pour les zones de formulaire Outlook

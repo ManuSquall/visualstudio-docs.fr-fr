@@ -1,21 +1,21 @@
 ---
 title: Améliorer votre productivité pour le développement .NET
 description: Vue d’ensemble de la navigation, de l’analyse du code, des tests unitaires et d’autres fonctionnalités qui vont vous aider à écrire du code .NET plus performant plus rapidement.
-author: kuhlenh
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.date: 04/25/2019
+ms.date: 11/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 69dd92c2dae1a042e37601917bcdef628400d8bf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0aa8e19f2be78671587dd1d9bc6254306c82a78c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72652591"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567500"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>Guide de productivité Visual Studio pour les développeurs C#
 
@@ -41,18 +41,19 @@ Certaines extensions offrent également des schémas de clavier :
 
 Le tableau suivant liste les principaux raccourcis de Visual Studio :
 
-| Raccourci (tous les profils) | Commande | Description |
+| Raccourci (tous les profils) | Command | Description |
 |-|-|-|
 | **Ctrl**+**T** | Atteindre tout | Accéder à n’importe quel fichier, type, membre ou toute déclaration de symbole |
 | **F12** (également **Ctrl**+**Clic**) | Atteindre la définition | Accédez à l’emplacement de définition d’un symbole |
 | **Ctrl**+**F12** | Accéder à l’implémentation | Accédez à partir d’un type ou membre de base à ses diverses implémentations |
 | **Maj**+**F12** | Rechercher toutes les références | Affichez toutes les références de symboles et de littéraux |
+| **Alt**+**Début** | Accéder à la base | Naviguer vers le haut de la chaîne d’héritage |
 | **Ctrl**+ **.** (également **Alt**+**Entrée** dans le profil C#) | Actions rapides et refactorisations | Affichez les correctifs de code, les actions de génération de code, les refactorisations et les autres actions rapides qui sont disponibles au niveau de votre curseur ou de votre sélection de code |
 | **Ctrl**+**D** | Dupliquer la ligne | Duplique la ligne de code où se trouve le curseur (disponible dans **Visual Studio 2017 versions 15.6** et ultérieures) |
 | **Maj**+**Alt**+ **+** / **-** | Développer/Réduire la sélection | Développe ou réduit la sélection actuelle dans l’éditeur (disponible dans **Visual Studio 2017 version 15.5** et les versions ultérieures) |
 | **Maj** + **Alt** +  **.** | Insérer un signe insertion à la prochaine correspondance | Ajoute une sélection et un signe insertion à l’emplacement suivant qui correspond à la sélection actuelle (disponible dans **Visual Studio 2017 version 15.8** et ultérieures) |
 | **Ctrl**+**Q** | Rechercher | Effectuez une recherche parmi tous les paramètres Visual Studio |
-| **F5** | Démarrer le débogage | Démarrez le débogage de votre application |
+| **F5** | Lancement du débogage | Démarrez le débogage de votre application |
 | **Ctrl**+**F5** | Exécutez sans déboguer | Exécutez votre application localement sans débogage |
 | **Ctrl**+**K**,**D** (Profil par défaut) ou **Ctrl**+**E**,**D** (Profil C#) | Mettre le document en forme | Nettoie les violations de mise en forme de votre fichier selon les paramètres de saut de ligne, d’espacement et de mise en retrait définis |
 | **Ctrl**+ **\\** ,**Ctrl**+**E** (profil par défaut) ou **Ctrl**+**W**,**E** (profil C#) | Voir la liste des erreurs | Affichez toutes les erreurs de votre document, projet ou solution |
@@ -88,13 +89,17 @@ Vous pouvez utiliser un fichier EditorConfig pour codifier les conventions de co
 
 ::: moniker range=">=vs-2019"
 
-- Créez automatiquement un fichier *.editorconfig* à partir de vos paramètres de style de code dans **Outils** > **Options** > **Éditeur de texte**  > **C#** > **Style de code**.
+- Créez automatiquement un fichier *. editorconfig* en fonction de vos paramètres de style de code dans **outils** > **Options** > **C#** éditeur de **texte** > > style de **code**.
 
    ![Générer un fichier .editorconfig à partir des paramètres dans VS 2019](media/vs-2019/generate-editorconfig-file.png)
 
 ::: moniker-end
 
 - La [fonctionnalité d’inférence de code](/visualstudio/intellicode/code-style-inference) d’IntelliCode pour Visual Studio déduit vos styles de code à partir du code existant. Elle crée ensuite un fichier EditorConfig non vide avec vos préférences de style de code déjà définies.
+
+- Configurez le niveau de gravité d’une règle de style de code directement par le biais de l’éditeur. Si vous n’avez pas de fichier. editorconfig, un fichier est généré pour vous. Placez le curseur sur l’erreur, l’avertissement ou la suggestion, puis tapez **Ctrl**+ **.** pour ouvrir le menu actions rapides et refactorisations. Sélectionnez **configurer ou supprimer les problèmes**. Sélectionnez ensuite la règle, et choisissez le niveau de gravité que vous souhaitez configurer pour celle-ci. Cette opération met à jour votre configuration EditorConfig existante avec la nouvelle gravité de la règle.
+
+   ![Configurer le niveau de gravité d’une règle de style de code directement dans l’éditeur](../ide/media/configure-severity-level.png)
 
 Découvrez la documentation des [options de convention de codage .NET](editorconfig-code-style-settings-reference.md), qui contient également un exemple d’un fichier EditorConfig terminé.
 
@@ -149,7 +154,7 @@ Plusieurs membres de la communauté ont écrit des extensions gratuites qui ajou
 
 Visual Studio contient de nombreuses fonctionnalités qui vous permettent de rechercher et de [parcourir votre code](../ide/navigating-code.md).
 
-| Fonction | Raccourci | Détails/améliorations |
+| Composant | Raccourci | Détails/améliorations |
 |- | - | -|
 | Rechercher toutes les références | **Maj**+**F12**| Les résultats sont en couleur et peuvent être regroupés par projet, définition et type de référence, par exemple lecture ou écriture. Vous pouvez également « verrouiller » les résultats. |
 | Accéder à l’implémentation | **Ctrl**+**F12** | Vous pouvez utiliser Atteindre la définition sur le mot clé `override` pour accéder au membre substitué |
@@ -176,7 +181,7 @@ Utilisez IntelliCode pour Visual Studio pour obtenir des [complétions de code s
 
 - [Live Unit Testing](../test/live-unit-testing.md) exécute en continu les tests impactés par vos modifications du code et met à jour les icônes de l’éditeur inline pour vous informer de l’état de vos tests. Incluez ou excluez des tests spécifiques ou des projets de test de votre jeu de tests dynamique. (Visual Studio Enterprise Edition uniquement.)
 
-## <a name="debugging"></a>Débogage
+## <a name="debugging"></a>débogage
 
 Voici quelques-unes des fonctionnalités de débogage de Visual Studio :
 
@@ -201,7 +206,7 @@ Voici quelques-unes des fonctionnalités de débogage de Visual Studio :
 
 ![Assistance sur l’exception dans Visual Studio](../ide/media/VSGuide_Debugging.png)
 
-## <a name="version-control"></a>Gestion de version
+## <a name="version-control"></a>Contrôle de version
 
 Vous pouvez utiliser git ou TFVC pour stocker et mettre à jour votre code dans Visual Studio.
 
@@ -221,11 +226,11 @@ Vous pouvez utiliser git ou TFVC pour stocker et mettre à jour votre code dans 
 
 Voici une liste de fonctionnalités de l’éditeur liées à la productivité pour rendre l’écriture de code plus efficace. Vous devrez peut-être activer certaines fonctionnalités, car elles sont désactivées par défaut (elles peuvent éventuellement indexer des éléments sur votre machine, être controversées ou être à l’état expérimental).
 
-| Fonction | Détails | Comment activer |
+| Composant | Détails | Comment activer |
 |-|-|-|
 | Rechercher un fichier dans l’Explorateur de solutions | Met en évidence le fichier actif dans **Explorateur de solutions** | **Outils** > **Options** > **Projets et solutions** > **Suivre un élément actif dans l’Explorateur de solutions** |
 | Ajouter des instructions using pour les types dans les assemblys de référence et les packages NuGet | Affiche une ampoule d’erreur avec un correctif de code pour installer un package NuGet pour un type non référencé | **Outils** > **Options** > **Éditeur de texte** > **C#**  > **Avancé** > **Suggérer des usings pour les types dans les assemblys de référence** et **Suggérer des usings pour les types dans les packages NuGet** |
-| Activer l’analyse complète de la solution | Visualisez toutes les erreurs de votre solution dans la **Liste d’erreurs** | **Outils** > **Options** > **Éditeur de texte** > **C#**  > **Avancé**   > **Activer l’analyse complète de la solution** |
+| Activer l’analyse complète de la solution | Visualisez toutes les erreurs de votre solution dans la **Liste d’erreurs** | **Outils** > **Options** > **Éditeur de texte** > **C#**  > **Avancé**  > **Activer l’analyse complète de la solution** |
 | Activer la navigation vers les sources décompilées | Permet d’activer la fonctionnalité Atteindre la définition sur les types/membres de sources externes et d’utiliser le décompilateur ILSpy pour afficher les corps de méthodes | **Outils** > **Options** > **Éditeur de texte** > **C#**  > **Avancé** > **Activer la navigation vers les sources décompilées** |
 | Mode de saisie semi-automatique/suggestion | Change le comportement de complétion dans IntelliSense. Les développeurs qui utilisaient IntelliJ ont tendance à utiliser un paramètre qui n’est pas un paramètre par défaut. | **Menu** > **Modifier** > **IntelliSense** > **Activer/Désactiver le mode de saisie semi-automatique** |
 | [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) | Affiche les informations de référence du code et l’historique des modifications dans l’éditeur. (Les indicateurs CodeLens de contrôle de code source ne sont pas disponibles dans l’édition Visual Studio Community.) | **Outils** > **Options** > **Éditeur de texte** > **Tous les langages** > **CodeLens** |

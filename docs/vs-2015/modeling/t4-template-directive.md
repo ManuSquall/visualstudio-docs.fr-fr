@@ -50,7 +50,7 @@ En général, un modèle de texte T4 [!INCLUDE[vsprvs](../includes/vsprvs-md.md
  L'attribut de culture spécifie la culture à utiliser lorsqu'un bloc d'expression est converti en texte.
 
 ## <a name="debug-attribute"></a>attribut de débogage
- Exemple :
+ Exemple :
 
 ```
 debug="true"
@@ -62,10 +62,10 @@ debug="true"
 
  Pour les modèles au moment du design, le fichier de code intermédiaire sera écrit dans votre répertoire **% temp%** .
 
- Pour exécuter un modèle au moment du design dans le débogueur, enregistrez le modèle de texte, ouvrez le menu contextuel du modèle de texte dans l'Explorateur de solutions, puis choisissez **Déboguer le modèle T4**.
+ Pour exécuter un modèle au moment du design dans le débogueur, enregistrez le modèle de texte, ouvrez le menu contextuel du modèle de texte dans Explorateur de solutions, puis choisissez **déboguer le modèle T4**.
 
 ## <a name="hostspecific-attribute"></a>attribut hostspecific
- Exemple :
+ Exemple :
 
 ```
 hostspecific="true"
@@ -75,9 +75,9 @@ hostspecific="true"
 
  Si vous affectez à cet attribut la valeur `true`, une propriété nommée `Host` est ajoutée à la classe générée par votre modèle de texte. La propriété est une référence à l’hôte du moteur de transformation et est déclarée en tant que [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). Si vous avez défini un hôte personnalisé, vous pouvez effectuer un cast de celui-ci en type d'hôte personnalisé.
 
- Étant donné que le type de cette propriété dépend du type d'hôte, elle n'est utile que si vous écrivez un modèle de texte qui fonctionne uniquement avec un hôte spécifique. Cela s'applique aux [modèles au moment du design](../modeling/design-time-code-generation-by-using-t4-text-templates.md), mais pas aux [modèles au moment de l'exécution](../modeling/run-time-text-generation-with-t4-text-templates.md).
+ Étant donné que le type de cette propriété dépend du type d'hôte, elle n'est utile que si vous écrivez un modèle de texte qui fonctionne uniquement avec un hôte spécifique. Elle s’applique aux [modèles au moment du design](../modeling/design-time-code-generation-by-using-t4-text-templates.md), mais pas aux [modèles au moment de l’exécution](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
- Lorsque `hostspecific` a la valeur `true` et que vous utilisez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vous pouvez effectuer un cast de `this.Host` en IServiceProvider pour accéder aux fonctionnalités de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Vous pouvez également utiliser `Host.ResolvePath(filename)` pour obtenir le chemin d’accès absolu d’un fichier dans le projet. Par exemple :
+ Lorsque `hostspecific` a la valeur `true` et que vous utilisez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vous pouvez effectuer un cast de `this.Host` en IServiceProvider pour accéder aux fonctionnalités de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Vous pouvez également utiliser `Host.ResolvePath(filename)` pour obtenir le chemin d’accès absolu d’un fichier dans le projet. Exemple :
 
 ```csharp
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -110,7 +110,7 @@ Content of myFile is:
 
  L’attribut Language spécifie le langage ([!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ou [!INCLUDE[csprcs](../includes/csprcs-md.md)]) à utiliser pour le code source dans les blocs d’instruction et d’expression. Le fichier de code intermédiaire à partir duquel la sortie est générée utilisera ce langage. Ce langage n'est pas lié au langage que votre modèle génère, qui peut être tout type de texte.
 
- Par exemple :
+ Exemple :
 
 ```vb
 <#@ template language="VB" #>

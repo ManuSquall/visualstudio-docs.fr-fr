@@ -11,19 +11,19 @@ helpviewer_keywords:
 - export installation configuration
 - install Visual Studio
 - Visual Studio installer
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 8150aa3369eb385ebad865d261f9e8c2d71d7dbe
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
-ms.translationtype: HT
+ms.openlocfilehash: dddd34c9d57497a011f58bdb643c670ed84f6ded
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65849033"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596851"
 ---
 # <a name="import-or-export-installation-configurations"></a>Importer ou exporter des configurations d’installation
 
@@ -70,7 +70,7 @@ Lorsque vous êtes prêt à importer un fichier de configuration de l’installa
 
 ## <a name="automatically-install-missing-components"></a>Installer automatiquement les composants manquants
 
-**Nouveau dans Visual Studio 2019** : Lorsque vous enregistrez un fichier .vsconfig dans le répertoire racine de votre solution, puis ouvrez une solution, Visual Studio détecte automatiquement les composants manquants et vous invite à les installer.
+**Nouveauté de Visual studio 2019**: quand vous enregistrez un fichier. vsconfig dans le répertoire racine de votre solution, puis que vous ouvrez une solution, Visual Studio détecte automatiquement les composants manquants et vous invite à les installer.
 
 ![L’Explorateur de solutions suggère des composants supplémentaires](../install/media/vs-2019/solution-explorer-config-file.png)
 
@@ -78,7 +78,7 @@ Vous pouvez également générer un fichier .vsconfig directement à partir de l
 
 1. Cliquez avec le bouton droit sur votre fichier de solution.
 
-1. Choisissez **Ajouter** > **Fichier de configuration de l’installation**.
+1. Choisissez **ajouter** > **fichier de configuration d’installation**.
 
 1. Confirmez l’emplacement où vous souhaitez enregistrer le fichier .vsconfig, puis choisissez **Vérifier les détails**.
 

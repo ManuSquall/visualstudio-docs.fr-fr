@@ -16,7 +16,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74295789"
 ---
-# <a name="step-1-create-a-windows-forms-application-project"></a>Étape 1 : créer un projet d’application Windows Forms
+# <a name="step-1-create-a-windows-forms-application-project"></a>Étape 1 : créer un projet d'application Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Lorsque vous créez une visionneuse d’images, la première étape consiste à créer un projet d’application Windows Forms.
@@ -31,7 +31,7 @@ Lorsque vous créez une visionneuse d’images, la première étape consiste à 
 
 2. Dans la liste **Modèles installés**, choisissez **Visual C#** ou **Visual Basic**.
 
-3. Dans la liste des modèles, choisissez l'icône **Application Windows Forms**. Nommez le nouveau formulaire **PictureViewer**, puis sélectionnez le bouton **OK**.
+3. Dans la liste des modèles, choisissez l’icône **Application Windows Forms**. Nommez le nouveau formulaire **PictureViewer**, puis sélectionnez le bouton **OK**.
 
      Visual Studio crée une solution pour votre programme. Une solution joue le rôle de conteneur pour tous les projets et fichiers requis par votre programme. Ces termes seront expliqués plus en détail dans les prochaines étapes de ce didacticiel.
 
@@ -44,7 +44,7 @@ Lorsque vous créez une visionneuse d’images, la première étape consiste à 
 
      L’interface contient trois fenêtres : une fenêtre principale, l’**Explorateur de solutions** et la fenêtre **Propriétés**.
 
-     Si l'une de ces fenêtres est absente, restaurez la disposition de fenêtre par défaut en sélectionnant dans la barre de menus **Fenêtre**, **Rétablir la disposition de fenêtre**. Vous pouvez également afficher les fenêtres à l'aide des commandes de menu. Dans la barre de menus, choisissez **Affichage**, **Fenêtre Propriétés** ou **Explorateur de solutions**. Si d'autres fenêtres sont ouvertes, fermez-les en choisissant le bouton **Fermer** (x) dans l'angle supérieur droit.
+     Si l’une de ces fenêtres est absente, restaurez la disposition de fenêtre par défaut en sélectionnant dans la barre de menus **Fenêtre**, **Rétablir la disposition de fenêtre**. Vous pouvez également afficher les fenêtres à l'aide des commandes de menu. Dans la barre de menus, choisissez **Affichage**, **Fenêtre Propriétés** ou **Explorateur de solutions**. Si d’autres fenêtres sont ouvertes, fermez-les en choisissant le bouton **Fermer** (x) dans l’angle supérieur droit.
 
 5. L'illustration montre les fenêtres suivantes (dans le sens des aiguilles d'une montre, à partir de l'angle supérieur gauche) :
 
@@ -52,14 +52,14 @@ Lorsque vous créez une visionneuse d’images, la première étape consiste à 
 
     - **Fenêtre Explorateur de solutions** Dans cette fenêtre, vous pouvez afficher tous les éléments de votre solution et y accéder. Si vous sélectionnez un fichier, le contenu de la fenêtre **Propriétés** est modifié. Si vous ouvrez un fichier de code (qui se termine par .cs en Visual C# et par .vb en Visual Basic), le fichier de code ou un concepteur pour le fichier de code s'affiche. Un concepteur est une surface visuelle à laquelle vous pouvez ajouter des contrôles tels que des boutons et des listes. Pour les formulaires Visual Studio, le concepteur est appelé le Concepteur Windows Forms.
 
-    - **Fenêtre Propriétés** Elle vous permet de modifier les propriétés des éléments que vous choisissez dans les autres fenêtres. Par exemple, si vous sélectionnez Form1, vous pouvez modifier son titre en définissant la propriété **Text**, et vous pouvez modifier la couleur d'arrière-plan en définissant la propriété **Backcolor**.
+    - **Fenêtre Propriétés** Elle vous permet de modifier les propriétés des éléments que vous choisissez dans les autres fenêtres. Par exemple, si vous sélectionnez Form1, vous pouvez modifier son titre en définissant la propriété **Text**, et vous pouvez modifier la couleur d’arrière-plan en définissant la propriété **Backcolor**.
 
     > [!NOTE]
     > La première ligne de l’**Explorateur de solutions** affiche **Solution « PictureViewer » (1 projet)** , ce qui signifie que Visual Studio a créé une solution pour vous. Une solution peut contenir plusieurs projets, mais, pour le moment, vous utiliserez des solutions contenant un seul projet.
 
 6. Dans la barre de menus, sélectionnez **Fichier**, **Enregistrer tout**.
 
-     Vous pouvez aussi sélectionner le bouton **Enregistrer tout**, présenté dans l'illustration suivante, dans la barre d'outils.
+     Vous pouvez aussi sélectionner le bouton **Enregistrer tout**, présenté dans l’illustration suivante, dans la barre d’outils.
 
      ![Bouton enregistrer tout de la barre d’outils](../ide/media/express-iconsaveall.png "Express_IconSaveAll") Bouton enregistrer tout de la barre d’outils
 

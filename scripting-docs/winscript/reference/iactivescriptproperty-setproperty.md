@@ -1,5 +1,5 @@
 ---
-title: 'IActiveScriptProperty :: SetProperty | Microsoft Docs'
+title: IActiveScriptProperty::SetProperty | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -52,7 +52,7 @@ HRESULT SetProperty(
   
  Les valeurs autorisées pour `dwProperty` sont décrites dans le tableau suivant.  
   
-|Constante|valeur|Signification|  
+|Constante|Valeur|Signification|  
 |--------------|-----------|-------------|  
 |SCRIPTPROP_INTEGERMODE|0x00003000|Force le moteur de script à diviser en mode entier au lieu du mode à virgule flottante. La valeur par défaut est `False`.|  
 |SCRIPTPROP_STRINGCOMPAREINSTANCE|0x00003001|Permet de remplacer la fonction de comparaison de chaînes du moteur de script.|  
@@ -73,10 +73,10 @@ HRESULT SetProperty(
   
  Pour activer ou désactiver la comparaison de chaînes personnalisée, appelez `SetProperty` et transmettez une valeur `Object`. L’objet que vous transmettez doit implémenter l' [interface IActiveScriptStringCompare](../../winscript/reference/iactivescriptstringcompare-interface.md)de l’interface. La méthode [StrComp](../../winscript/reference/iactivescriptstringcompare-strcomp.md) de l’interface d' [interface IActiveScriptStringCompare](../../winscript/reference/iactivescriptstringcompare-interface.md) est appelée chaque fois qu’une fonction de comparaison de chaînes est exécutée.  
   
- Pour sélectionner l’ensemble de fonctionnalités de langage à prendre en charge lors de l’initialisation du moteur de script [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)], appelez `SetProperty` et transmettez une valeur qui correspond au jeu de fonctionnalités de langage à activer pour SCRIPTPROP_INVOKEVERSIONING. Si cette propriété a la valeur 1 (SCRIPTLANGUAGEVERSION_5_7), les fonctionnalités de langage disponibles sont les mêmes que celles apparues dans la version 5,7 du moteur de script [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]. S’il est défini sur 2 (SCRIPTLANGUAGEVERSION_5_8), les fonctionnalités de langage disponibles sont celles qui sont apparues dans la version 5,7 en plus des nouvelles fonctionnalités qui ont été ajoutées dans la version 5,8. Par défaut, cette propriété a la valeur 0 (SCRIPTLANGUAGEVERSION_DEFAULT), qui est équivalente à l’ensemble de fonctionnalités de langage apparaissant dans la version 5,7, sauf si l’hôte prend en charge un comportement par défaut différent. Par exemple, Internet Explorer 8 choisit les fonctionnalités de langage [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] qui sont prises en charge par la version 5,8 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] moteur de script par défaut lorsque le mode de document par défaut pour Internet Explorer 8 est le mode « Internet Explorer 8 standard ». Le passage du mode de document Internet Explorer 8 à la version standard d’Internet Explorer 7 ou au mode Quirks réinitialise le moteur de script [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] pour prendre en charge uniquement le jeu de fonctionnalités de langage qui existait dans la version 5,7 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] moteur de script.  
+ Pour sélectionner l’ensemble de fonctionnalités de langage à prendre en charge lors de l’initialisation du moteur de script [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)], appelez `SetProperty` et transmettez une valeur qui correspond au jeu de fonctionnalités de langage à activer pour SCRIPTPROP_INVOKEVERSIONING. Si cette propriété a la valeur 1 (SCRIPTLANGUAGEVERSION_5_7), les fonctionnalités de langage disponibles sont les mêmes que celles apparues dans la version 5,7 du moteur de script [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]. S’il est défini sur 2 (SCRIPTLANGUAGEVERSION_5_8), les fonctionnalités de langage disponibles sont celles qui sont apparues dans la version 5,7 en plus des nouvelles fonctionnalités qui ont été ajoutées dans la version 5,8. Par défaut, cette propriété a la valeur 0 (SCRIPTLANGUAGEVERSION_DEFAULT), qui est équivalente à l’ensemble de fonctionnalités de langage apparaissant dans la version 5,7, à moins que l’hôte ne prenne en charge un comportement par défaut différent. Par exemple, Internet Explorer 8 choisit les fonctionnalités de langage [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] qui sont prises en charge par la version 5,8 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] moteur de script par défaut lorsque le mode de document par défaut pour Internet Explorer 8 est le mode « Internet Explorer 8 standard ». Le passage du mode de document Internet Explorer 8 à la version standard d’Internet Explorer 7 ou au mode Quirks réinitialise le moteur de script [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] pour prendre en charge uniquement le jeu de fonctionnalités de langage qui existait dans la version 5,7 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] moteur de script.  
   
 > [!NOTE]
-> SCRIPTPROP_INVOKEVERSIONING doit être défini uniquement lorsque le moteur de script [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] est en cours d’initialisation.  
+> SCRIPTPROP_INVOKEVERSIONING doit être défini uniquement lors de l’initialisation du moteur de script [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
 ## <a name="example"></a>Exemple  
  L’exemple suivant montre comment forcer le moteur de script à utiliser la Division d’entiers et comment autoriser la surcharge de la fonction de comparaison.  
@@ -101,6 +101,6 @@ scriptProperties.SetProperty(SCRIPTPROP_STRCOMPINST,
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Définition](https://docs.microsoft.com/previous-versions/windows/internet-explorer/ie-developer/compatibility/cc288325(v=vs.85)) de la compatibilité des documents    
- [IActiveScriptProperty](../../winscript/reference/iactivescriptproperty.md)    
+ [Définition](https://docs.microsoft.com/previous-versions/windows/internet-explorer/ie-developer/compatibility/cc288325(v=vs.85)) de la compatibilité des documents   
+ [IActiveScriptProperty](../../winscript/reference/iactivescriptproperty.md)   
  [Informations de version](../../javascript/reference/javascript-version-information.md)

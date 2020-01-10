@@ -3,17 +3,17 @@ title: Déboguer les feuilles de style XSLT
 ms.date: 03/05/2019
 ms.topic: conceptual
 ms.assetid: 3db9fa5a-f619-4cb6-86e7-64b364e58e5d
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c1f774757acc293091f19a783ed93f34647d494
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cd5882cc606bf241a281940464ba028e77986807
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72604612"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592475"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>Procédure pas à pas : déboguer une feuille de style XSLT
 
@@ -26,7 +26,7 @@ Pour préparer cette procédure pas à pas, commencez par copier les deux [exemp
 
 ## <a name="start-debugging"></a>Démarrer le débogage
 
-1. Dans le menu **fichier** , choisissez **ouvrir**  > **fichier**.
+1. Dans le menu **fichier** , choisissez **ouvrir** > **fichier**.
 
 2. Recherchez le fichier *Below-Average. xsl* , puis choisissez **ouvrir**.
 
@@ -44,11 +44,11 @@ Pour préparer cette procédure pas à pas, commencez par copier les deux [exemp
 
    - Cliquez n’importe où sur la ligne 12, puis appuyez sur **F9**.
 
-   - Cliquez avec le bouton droit sur la balise de début `xsl:if`, puis choisissez **point d’arrêt**  >  insérer un**point d’arrêt**.
+   - Cliquez avec le bouton droit sur la balise de début `xsl:if`, puis choisissez **point d’arrêt** > insérer un **point d’arrêt**.
 
       ![Insérer un point d’arrêt dans un fichier XSL dans Visual Studio](media/insert-breakpoint.PNG)
 
-6. Dans la barre de menus, choisissez **XML**  > **Démarrer le débogage XSLT** (ou appuyez sur **ALT** +**F5**).
+6. Dans la barre de menus, choisissez **XML** > **Démarrer le débogage XSLT** (ou appuyez sur **ALT**+**F5**).
 
    Le processus de débogage démarre.
 
@@ -56,11 +56,11 @@ Pour préparer cette procédure pas à pas, commencez par copier les deux [exemp
 
    Les fenêtres **automatique**, **variables locales**et **Espion 1** s’affichent en bas de la fenêtre de Visual Studio. La fenêtre variables **locales** affiche toutes les variables locales et leurs valeurs actuelles. Cela comprend les variables définies dans la feuille de style ainsi que celles que le débogueur utilise pour assurer le suivi des nœuds actuellement dans le contexte.
 
-## <a name="watch-window"></a>Fenêtre Espion
+## <a name="watch-window"></a>Fenêtre d'observation
 
 Nous allons ajouter deux variables à la fenêtre **Espion 1** afin que nous puissions examiner leurs valeurs lors du traitement du fichier d’entrée. (Vous pouvez également utiliser la fenêtre **variables locales** pour examiner les valeurs si les variables que vous souhaitez surveiller sont déjà présentes).
 
-1. Dans le menu **Déboguer** , choisissez **Windows**  > **Watch**  > **Espion 1**.
+1. Dans le menu **Déboguer** , choisissez **Windows** > **Watch** > **Espion 1**.
 
    La fenêtre **Espion 1** devient visible.
 
@@ -70,7 +70,7 @@ Nous allons ajouter deux variables à la fenêtre **Espion 1** afin que nous pui
 
 3. Sur la ligne suivante, tapez `self::node()` dans le champ **nom** , puis appuyez sur **entrée**.
 
-   `self::node()` est une expression XPath qui évalue le nœud de contexte actuel. La valeur de l'expression XPath `self::node()` est le premier nœud book. Cette valeur change à mesure que la transformation progresse.
+   `self::node()` est une expression XPath qui prend la valeur du nœud de contexte actuel. La valeur de l'expression XPath `self::node()` est le premier nœud book. Cette valeur change à mesure que la transformation progresse.
 
 4. Développez le nœud `self::node()`, puis développez le nœud dont la valeur est `price`.
 

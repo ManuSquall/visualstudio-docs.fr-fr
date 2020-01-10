@@ -1,21 +1,22 @@
 ---
-title: 'Procédure : Créer un rapport Suivi d’événements pour Windows (ETW) des outils de profilage | Microsoft Docs'
+title: Guide pratique pour créer un rapport Suivi d’événements pour Windows (ETW) des outils de profilage | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: bf5547b3-f6c7-4989-9d47-2fe4f1261444
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1208080a13c807b95e1a279606568324cab2b8cd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ce7b02be682d825205fc5fa50d07c1ca817a24d7
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439137"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74776399"
 ---
-# <a name="how-to-create-a-profiling-tools-etw-report"></a>Procédure : Créer un rapport de suivi d’événements pour Windows (ETW) des outils de profilage
+# <a name="how-to-create-a-profiling-tools-etw-report"></a>Guide pratique pour créer un rapport de suivi d’événements pour Windows (ETW) des outils de profilage
 Le rapport Suivi d’événements pour Windows (ETW) répertorie les événements de suivi d’événements pour Windows enregistrés dans une session de performances des outils de profilage de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Les données ETW sont collectées dans un fichier binaire (.*etl*). Pour plus d’informations sur ce rapport, consultez [Suivi d’événements pour Windows (ETW), rapport](../profiling/event-tracing-for-windows-etw-report.md).
 
 > [!NOTE]
@@ -37,4 +38,4 @@ Le rapport Suivi d’événements pour Windows (ETW) répertorie les événement
     |-|-|
     |*chemin_outils*|Chemin de l’utilitaire Outils de profilage. Pour plus d’informations, consultez [Spécifier le chemin d’accès aux outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).|
     |*fichier_VSP*|Fichier des données de profilage (.*vsp* ou .*vsps*). Les chemins complets et partiels sont acceptés.|
-    |Xml|Génère un rapport au format XML.|
+    |XML|Génère un rapport au format XML.|

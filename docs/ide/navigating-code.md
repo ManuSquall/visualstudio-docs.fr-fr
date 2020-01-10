@@ -1,6 +1,6 @@
 ---
 title: Commandes de navigation dans le code
-ms.date: 08/14/2018
+ms.date: 11/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - code editor, navigation
@@ -13,17 +13,17 @@ helpviewer_keywords:
 - peek definition
 - go to line
 - go to
-author: jillre
-ms.author: jillfra
-manager: jillfra
+author: TerryGLee
+ms.author: tglee
+manager: tglee
 ms.workload:
 - multiple
-ms.openlocfilehash: f1fcfd69e2de9a174c708da1c4f5eaedd397722e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0216a71b675473d54aec9738ea7bdc85b7643841
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667015"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585819"
 ---
 # <a name="navigate-code"></a>Naviguer dans le code
 
@@ -63,7 +63,7 @@ Pour masquer la barre de navigation, changez l’option **Barre de navigation** 
 
 Cette option permet de rechercher toutes les références à l’élément sélectionné dans la solution. Vous pouvez l’utiliser pour vérifier l’existence d’éventuels effets secondaires d’une refactorisation volumineuse or de code « mort ». Appuyez sur **F8** pour basculer d’un résultat à un autre. Pour plus d’informations, consultez [Rechercher des références dans votre code](finding-references.md).
 
-Entrée | Fonction
+Input | Fonction
 ------------ | ---
 **Clavier** | Placez le curseur de texte à l’intérieur du nom de type, puis appuyez sur **Maj**+**F12**
 **Souris** | Sélectionnez **Rechercher toutes les références** dans le menu contextuel (clic droit)
@@ -82,7 +82,7 @@ L’option Atteindre propose les commandes suivantes, disponibles dans le menu *
 
 - **Atteindre le fichier** (**Ctrl**+**1**, **Ctrl**+**F**) : accéder au fichier spécifié dans la solution.
 
-- **Accédez au fichier récent** (**CTRL** +**1**, **CTRL** +**R**) : accéder au fichier spécifié et visité récemment dans la solution.
+- **Accédez au fichier récent** (**CTRL**+**1**, **CTRL**+**R**) : accéder au fichier spécifié et visité récemment dans la solution.
 
 - **Atteindre le type** (**Ctrl**+**1**, **Ctrl**+**T**) : accéder au type spécifié dans la solution.
 
@@ -102,7 +102,7 @@ Découvrez plus en détail ces commandes dans la rubrique [Rechercher du code à
 
 L’option Atteindre la définition permet d’atteindre la définition de l’élément sélectionné. Pour plus d’informations, consultez [Atteindre la définition et Aperçu de la définition](../ide/go-to-and-peek-definition.md).
 
-Entrée | Fonction
+Input | Fonction
 ------------ | ---
 **Clavier** | Placez le curseur de texte à l’intérieur du nom de type, puis appuyez sur **F12**.
 **Souris** | Cliquez avec le bouton droit sur le nom de type et sélectionnez **Atteindre la définition** OU appuyez sur **Ctrl**, puis cliquez sur le nom de type.
@@ -111,7 +111,7 @@ Entrée | Fonction
 
 L’option Aperçu de la définition affiche la définition de l’élément sélectionné dans une fenêtre sans vous obliger à quitter votre emplacement actuel dans l’éditeur de code. Pour plus d’informations, consultez [Guide pratique pour afficher et modifier le code avec l’Aperçu de définition](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md) et [Atteindre la définition et Aperçu de la définition](../ide/go-to-and-peek-definition.md).
 
-Entrée | Fonction
+Input | Fonction
 ------------ | ---
 **Clavier** | Placez le curseur de texte à l’intérieur du nom de type, puis appuyez sur **Alt**+**F12**
 **Souris** | Cliquez avec le bouton droit sur le nom de type et sélectionnez **Aperçu de la définition** OU appuyez sur **Ctrl** et cliquez sur le nom de type (si l’option **Ouvrir la définition dans l’aperçu** est sélectionnée)
@@ -120,16 +120,25 @@ Entrée | Fonction
 
 L’option Accéder à l’implémentation vous permet de naviguer d’un type ou d’une classe de base vers ses implémentations. S’il existe plusieurs implémentations, elles sont répertoriées dans la fenêtre **Résultats de la recherche de symbole** :
 
-Entrée | Fonction
+Input | Fonction
 ------------ | ---
 **Clavier** | Placez le curseur de texte à l’intérieur du nom de type, puis appuyez sur **Ctrl**+**F12**
 **Souris** | Cliquez avec le bouton droit sur le nom de type et sélectionnez **Accéder à l’implémentation**.
+
+## <a name="go-to-base"></a>Accéder à la base
+
+À l’aide de l’option atteindre la base, vous pouvez naviguer vers le haut de la chaîne d’héritage de l’élément sélectionné. S’il y a plusieurs résultats, ceux-ci sont répertoriés dans la fenêtre **atteindre la base** :
+
+Input | Fonction
+------------ | ---
+**Clavier** | Placez le curseur de texte à l’intérieur du nom de type, puis appuyez sur **Alt**+**page d’origine**
+**Souris** | Cliquez avec le bouton droit sur le nom du type et sélectionnez **atteindre la base** .
 
 ## <a name="call-hierarchy"></a>Hiérarchie d'appels
 
 Vous pouvez afficher les appels en provenance et à destination d’une méthode dans la [fenêtre Hiérarchie d’appels](../ide/reference/call-hierarchy.md):
 
-Entrée | Fonction
+Input | Fonction
 ------------ | ---
 **Clavier** | Placez le curseur de texte à l’intérieur du nom de type, puis appuyez sur **Ctrl**+**K**, **Ctrl**+**T**
 **Souris** | Cliquez avec le bouton droit sur le nom du membre, puis sélectionnez **Afficher la hiérarchie d’appels**

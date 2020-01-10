@@ -12,4 +12,4 @@ ms.lasthandoff: 10/15/2019
 ms.locfileid: "72313974"
 ---
 > [!IMPORTANT]
-> Utilisez le contrôle de langage de programmation en haut à droite de cette page pour afficher C# l’extrait de code ou le Visual Basic extrait de code.<br><br>@no__t 0Programming-contrôle de langue pour docs. Microsoft. com @ no__t-1
+> Utilisez le contrôle de langage de programmation en haut à droite de cette page pour afficher C# l’extrait de code ou le Visual Basic extrait de code.<br><br>contrôle du langage de programmation ![pour Docs.Microsoft.com](../media/docs-programming-language-control.png)

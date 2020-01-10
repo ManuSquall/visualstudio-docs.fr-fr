@@ -29,6 +29,6 @@ Vous n’avez pas fourni un tableau en tant qu’argument. Cette erreur s’appl
 - Spécifiez un `Array` ou un objet d' **arguments** comme deuxième argument.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Utilisation de tableaux](../../javascript/advanced/using-arrays-javascript.md)    
- [apply, méthode (Function)](../../javascript/reference/apply-method-function-javascript.md)    
+ [Utilisation de tableaux](../../javascript/advanced/using-arrays-javascript.md)   
+ [apply, méthode (Function)](../../javascript/reference/apply-method-function-javascript.md)   
  [Fonctions](../../javascript/functions-javascript.md)

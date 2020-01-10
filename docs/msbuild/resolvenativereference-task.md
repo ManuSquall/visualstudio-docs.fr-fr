@@ -13,17 +13,17 @@ helpviewer_keywords:
 - MSBuild, ResolveNativeReference task
 - ResolveNativeReference task [MSBuild]
 ms.assetid: 56acd101-de77-4eec-92c6-f5c6d2187579
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f18549fece2db8a4a758dee17f6b4b1283d97e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 417c4536f13aa90505ec5e69b2719219af0d7e81
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62996616"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595161"
 ---
 # <a name="resolvenativereference-task"></a>ResolveNativeReference (tâche)
 Résout des références natives. Implémente la classe <xref:Microsoft.Build.Tasks.ResolveNativeReference>. Cette classe prend en charge l’infrastructure .NET Framework et n’est pas destinée à être directement utilisée à partir de votre code.
@@ -42,9 +42,9 @@ Résout des références natives. Implémente la classe <xref:Microsoft.Build.Ta
 |`ContainingReferenceFiles`|Paramètre de sortie <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Obtient ou définit les fichiers de référence.|
 |`NativeReferences`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` obligatoire.<br /><br /> Obtient ou définit les références d’assemblys natifs Win32.|
 
-## <a name="remarks"></a>Remarques
- En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).
+## <a name="remarks"></a>Notes
+ En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension> , qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task> . Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="see-also"></a>Voir aussi
-- [Tâches](../msbuild/msbuild-tasks.md)
+- [Tâches MSBuild](../msbuild/msbuild-tasks.md)
 - [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)

@@ -10,15 +10,15 @@ helpviewer_keywords:
 - load tests, removing results
 - load test results, deleting
 ms.assetid: c2afe36b-d061-4f0e-9580-c18569ec08f9
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3604c8bee778334d4f1355f6b3ce312c9c8d0efc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 26dc9750a2bf2eaf5d0ee5dd3d08485c458bb74a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653552"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589056"
 ---
 # <a name="how-to-delete-load-test-results-from-a-repository"></a>Guide pratique pour supprimer les résultats d’un test de charge d’un référentiel
 
@@ -38,7 +38,7 @@ Vous pouvez gérer les résultats des tests de charge à partir de l’éditeur 
 
 3. Dans **Entrer un nom de contrôleur pour rechercher les résultats des tests de charge**, sélectionnez un contrôleur. Sélectionnez **\<Local - Aucun contrôleur** pour accéder aux résultats stockés localement.
 
-4. Dans **Afficher les résultats pour le test de charge suivant**, sélectionnez le test de charge dont vous voulez voir les résultats. Sélectionnez **\<Afficher les résultats de tous les tests** pour voir les résultats de tous les tests.
+4. Dans **Afficher les résultats pour le test de charge suivant**, sélectionnez le test de charge dont vous souhaitez consulter les résultats. Sélectionnez **\<Afficher les résultats de tous les tests>** pour consulter les résultats de tous les tests.
 
      Si les résultats du test de charge sont disponibles, ils apparaissent dans la liste **Résultats du test de charge**. Les colonnes sont **Heure**, **Durée**, **Utilisateur**, **Résultat**, **Test** et **Description**. **Test** contient le nom du test et **Description** contient la description facultative qui est ajoutée avant l’exécution du test. La colonne **Description** affiche les descriptions courtes qui sont entrées dans les **Commentaires d’analyse** pour ce résultat de test.
 

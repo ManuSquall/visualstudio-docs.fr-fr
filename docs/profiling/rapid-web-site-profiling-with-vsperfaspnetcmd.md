@@ -8,18 +8,19 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f86ae2e14067a645bb39a1c8fdc0421f415a9e6
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
-ms.translationtype: HT
+ms.openlocfilehash: fff2486c4197cbbe28c3b5deb0099e264805e12b
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681132"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74771690"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Profilage rapide de sites web avec VSPerfASPNETCmd
 
-L’outil en ligne de commande **VSPerfASPNETCmd** vous permet de profiler facilement des applications web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Par rapport à l’outil en ligne de commande [VSPerfCmd](../profiling/vsperfcmd.md), cet outil comporte moins d’options et ne nécessite ni configuration de variables d’environnement, ni redémarrage de l’ordinateur. L’utilisation de **VSPerfASPNETCmd** est la méthode recommandée pour le profilage avec le profileur autonome. Pour plus d'informations, voir [Procédure : installer le profileur autonome](../profiling/how-to-install-the-stand-alone-profiler.md).
+L’outil en ligne de commande **VSPerfASPNETCmd** vous permet de profiler facilement des applications web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Par rapport à l’outil en ligne de commande [VSPerfCmd](../profiling/vsperfcmd.md), cet outil comporte moins d’options et ne nécessite ni configuration de variables d’environnement, ni redémarrage de l’ordinateur. L’utilisation de **VSPerfASPNETCmd** est la méthode recommandée pour le profilage avec le profileur autonome. Pour plus d’informations, consultez [Guide pratique pour installer le profileur autonome](../profiling/how-to-install-the-stand-alone-profiler.md).
 
 > [!NOTE]
 > Les fonctionnalités de sécurité renforcée de Windows 8 et Windows Server 2012 ont imposé des changements importants dans la façon dont le profileur Visual Studio collecte les données sur ces plateformes. Les applications UWP nécessitent aussi de nouvelles techniques de collecte. Consultez [Outils d’analyse des performances sur les applications Windows 8 et Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
@@ -27,7 +28,7 @@ L’outil en ligne de commande **VSPerfASPNETCmd** vous permet de profiler facil
  Dans certains scénarios, comme la collecte des données d’accès concurrentiel, ou la suspension et reprise du profilage, **VSPerfCmd** est la méthode de profilage recommandée.
 
 > [!NOTE]
-> Pour obtenir le chemin des outils de profilage, consultez [Spécifier le chemin des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes, ou l’ajouter à la commande.
+> Pour obtenir le chemin d’accès des outils de profilage, voir [Spécifier le chemin d’accès des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes, ou l’ajouter à la commande.
 
 ## <a name="profile-an-aspnet-application"></a>Profiler une application ASP.NET
 

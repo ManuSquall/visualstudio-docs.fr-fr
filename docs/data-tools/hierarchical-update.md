@@ -16,17 +16,17 @@ helpviewer_keywords:
 - updated data saving
 - related tables, saving
 ms.assetid: 68bae3f6-ec9b-45ee-a33a-69395029f54c
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 33ca9f91c9b1105af43af21a91f25be13e153aa9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 158908c45d33781bc9f983950d5558a23481ad37
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648449"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586573"
 ---
 # <a name="hierarchical-update"></a>Mise à jour hiérarchique
 
@@ -80,7 +80,7 @@ Enregistrez les modifications des tables de données associées du dataset dans 
 
 Une fois que vous avez déposé des éléments provenant de la fenêtre **Sources de données**, du code est ajouté automatiquement à l’événement `Form_Load` pour remplir chaque table (les méthodes `TableAdapter.Fill`). Du code est également ajouté à l’événement Click du bouton **Enregistrer** du <xref:System.Windows.Forms.BindingNavigator> pour enregistrer les données du dataset dans la base de données (la méthode `TableAdapterManager.UpdateAll`).
 
-Le code d'enregistrement généré contient également une ligne de code qui appelle la méthode `CustomersBindingSource.EndEdit`. Plus spécifiquement, il appelle la méthode <xref:System.Windows.Forms.BindingSource.EndEdit%2A> du premier <xref:System.Windows.Forms.BindingSource>that ajouté au formulaire. En d’autres termes, ce code est généré uniquement pour la première table déplacée de la fenêtre **sources de données** vers le formulaire. L'appel de <xref:System.Windows.Forms.BindingSource.EndEdit%2A> valide toutes les modifications en cours de tous les contrôles liés aux données modifiés. Par conséquent, si un contrôle lié aux données a encore le focus et que vous cliquez sur le bouton **Enregistrer**, toutes les modifications en attente dans ce contrôle sont validées avant l’enregistrement réel (la méthode `TableAdapterManager.UpdateAll`).
+Le code d'enregistrement généré contient également une ligne de code qui appelle la méthode `CustomersBindingSource.EndEdit`. Plus spécifiquement, il appelle la méthode <xref:System.Windows.Forms.BindingSource.EndEdit%2A> du premier <xref:System.Windows.Forms.BindingSource>ajouté au formulaire. En d’autres termes, ce code est généré uniquement pour la première table déplacée de la fenêtre **sources de données** vers le formulaire. L'appel de <xref:System.Windows.Forms.BindingSource.EndEdit%2A> valide toutes les modifications en cours de tous les contrôles liés aux données modifiés. Par conséquent, si un contrôle lié aux données a encore le focus et que vous cliquez sur le bouton **Enregistrer**, toutes les modifications en attente dans ce contrôle sont validées avant l’enregistrement réel (la méthode `TableAdapterManager.UpdateAll`).
 
 > [!NOTE]
 > Le **Concepteur de DataSet** ajoute uniquement le code `BindingSource.EndEdit` pour la première table qui est déplacée dans le formulaire. Par conséquent, vous devez ajouter une ligne de code pour appeler la méthode `BindingSource.EndEdit` pour chaque table associée dans le formulaire. Dans cette procédure pas à pas, cela signifie que vous devez ajouter un appel à la méthode `OrdersBindingSource.EndEdit`.
@@ -118,7 +118,7 @@ La classe `TableAdapterManager` n’est pas un type .NET. Par conséquent, vous 
 
 Voici les méthodes et les propriétés fréquemment utilisées de la classe `TableAdapterManager` :
 
-|Membre|Description|
+|Member|Description|
 |------------|-----------------|
 |Méthode `UpdateAll`|Enregistre toutes les données de toutes les tables de données.|
 |Propriété`BackUpDataSetBeforeUpdate`|Détermine si une copie de sauvegarde du DataSet doit être créée avant l’exécution de la méthode `TableAdapterManager.UpdateAll`. Expression.|

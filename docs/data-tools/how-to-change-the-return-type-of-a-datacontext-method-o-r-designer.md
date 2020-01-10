@@ -3,17 +3,17 @@ title: Modifier le type de retour de la méthode DataContext (Concepteur O-R)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c5b66bff-6dbb-43c0-bffa-317133ca5b9e
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 304cd62e83ae2e256e40cdbb8f046b637cbd8d58
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: fac3a26f77151d7e09b620ef084d42a9ab50f1e5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648383"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586534"
 ---
 # <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>Guide pratique pour changer le type de retour d’une méthode DataContext (Concepteur O/R)
 Le type de retour d’une méthode <xref:System.Data.Linq.DataContext> (créée à partir d’une procédure stockée ou d’une fonction) diffère selon l’endroit où vous déposez la procédure stockée ou la fonction dans le **Concepteur O/R**. Si vous déposez directement un élément sur une classe d'entité existante, une méthode <xref:System.Data.Linq.DataContext> ayant le type de retour de la classe d'entité est créée (si le schéma des données a été retourné par la procédure stockée ou si la fonction correspond à la forme de la classe d'entité). Si vous déposez un élément dans une zone vide du **Concepteur O/R**, une <xref:System.Data.Linq.DataContext> méthode qui retourne un type généré automatiquement est créée. Vous pouvez modifier le type de retour d’une méthode <xref:System.Data.Linq.DataContext> après l’avoir ajoutée au volet de méthodes. Pour inspecter ou modifier le type de retour d’une méthode <xref:System.Data.Linq.DataContext>, sélectionnez-la et cliquez sur la propriété **Type de retour** dans la fenêtre **Propriétés**.

@@ -16,17 +16,17 @@ helpviewer_keywords:
 - diagrams - modeling, layer
 - software, designing
 - software, modeling
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95df70a3458c758fb886cbe2bc5d52d3192ba7cc
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: b7015583fef2323e3c53b8e786c9e8a529e0fab6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984440"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590525"
 ---
 # <a name="create-models-for-your-app"></a>Créer des modèles pour votre application
 
@@ -39,12 +39,12 @@ Pour visualiser l'architecture d'un système ou de code existant, créez les dia
 |**Diagramme**|**Éléments décrits**|
 |-|-|
 |[Diagrammes de dépendance : recommandations](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Diagrammes de dépendance : référence](../modeling/layer-diagrams-reference.md)|Architecture de haut niveau du système|
-|Cartes de code<br /><br /> [Mapper les dépendances à travers vos solutions](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [Rechercher des problèmes potentiels à l’aide des analyseurs de carte du code](../modeling/find-potential-problems-using-code-map-analyzers.md)|Dépendances et autres relations dans le code existant|
+|Cartes du code<br /><br /> [Mapper les dépendances à travers vos solutions](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [Rechercher des problèmes potentiels à l’aide des analyseurs de carte du code](../modeling/find-potential-problems-using-code-map-analyzers.md)|Dépendances et autres relations dans le code existant|
 |Diagrammes de classes générés par du code<br /><br /> [Utilisation des diagrammes de classes (Concepteur de classes)](../ide/class-designer/designing-and-viewing-classes-and-types.md)|Types et leurs relations dans le code .NET|
 
 ## <a name="related-tasks"></a>Tâches connexes
 
-|**Sujets**|**Task**|
+|**Rubrique**|**Task**|
 |-|-|
 |[Visualiser du code](../modeling/visualize-code.md)|Créez des cartes de code et des diagrammes de dépendances pour mieux comprendre le code inconnu.|
 |[Modéliser les besoins des utilisateurs](../modeling/model-user-requirements.md)|Utiliser des modèles pour clarifier et communiquer les besoins des utilisateurs.|

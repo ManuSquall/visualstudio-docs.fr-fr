@@ -2,17 +2,17 @@
 title: Action rapide Générer un constructeur
 ms.date: 01/26/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 41bb9a0e3921495629a10d6783432e8b4999a117
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3c8259841af4511bd782bca1be222353634638f5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661739"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75569502"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Générer un constructeur dans Visual Basic
 
@@ -20,7 +20,7 @@ Cette génération de code s’applique à :
 
 - C#
 
-- Visual Basic
+- Visual Basic
 
 **Quoi :** vous permet de générer immédiatement le code pour un nouveau constructeur sur une classe.
 
@@ -48,7 +48,7 @@ Cette génération de code s’applique à :
       - Appuyez sur **Ctrl**+ **.** pour afficher le menu **Actions rapides et refactorisations**.
    - **Souris**
       - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
-      - Cliquez sur le bouton ![Tournevis](media/screwdriver.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne vide dans la classe.
+      - Cliquez sur l'onglet ![Tournevis](media/screwdriver.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne vide dans la classe.
 
    ![Générer l’aperçu du constructeur](media/constructor1-preview-cs.png)
 
@@ -79,7 +79,7 @@ Cette génération de code s’applique à :
       - Appuyez sur **Ctrl**+ **.** pour afficher le menu **Actions rapides et refactorisations**.
    - **Souris**
       - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
-      - Cliquez sur le bouton ![Tournevis](media/screwdriver.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne avec la sélection.
+      - Cliquez sur l'onglet ![Tournevis](media/screwdriver.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne avec la sélection.
 
       ![Aperçu Générer le constructeur](media/constructor2-preview-cs.png)
 
@@ -108,7 +108,7 @@ Cette génération de code s’applique à :
    - **Souris**
       - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
       - Placez le curseur sur la ligne ondulée rouge, puis cliquez sur l’icône ![ampoule d’erreur](media/error-bulb.png) qui apparaît.
-      - Cliquez sur le bouton ![ampoule d’erreur](media/error-bulb.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne ondulée rouge.
+      - Cliquez sur l'onglet ![ampoule d’erreur](media/error-bulb.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne ondulée rouge.
 
       ![Générer l’aperçu du constructeur](media/constructor-preview-cs.png)
 
@@ -142,7 +142,7 @@ Cette génération de code s’applique à :
    - **Souris**
       - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
       - Placez le curseur sur la ligne ondulée rouge, puis cliquez sur l’icône ![ampoule d’erreur](media/error-bulb.png) qui apparaît.
-      - Cliquez sur le bouton ![ampoule d’erreur](media/error-bulb.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne ondulée rouge.
+      - Cliquez sur l'onglet ![ampoule d’erreur](media/error-bulb.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne ondulée rouge.
 
       ![Générer l’aperçu du constructeur](media/constructor4-preview-cs.png)
 
@@ -168,7 +168,7 @@ Vous pouvez également ajouter un paramètre à une méthode existante. Pour plu
       - Appuyez sur **Ctrl**+ **.** pour afficher le menu **Actions rapides et refactorisations**.
    - **Souris**
       - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
-      - Cliquez sur le bouton ![Tournevis](media/screwdriver.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne avec le paramètre ajouté.
+      - Cliquez sur l'onglet ![Tournevis](media/screwdriver.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne avec le paramètre ajouté.
 
    ![Générer l’aperçu du constructeur](media/constructor5-preview-cs.png)
 

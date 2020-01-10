@@ -5,12 +5,12 @@ author: sayedihashimi
 ms.author: sayedha
 ms.date: 05/30/2019
 ms.assetid: 771C2F8E-46BC-4280-AFE8-ED9D5C7790CE
-ms.openlocfilehash: 5aa0b02c87335305f29d098b51c89310cc0a9e5d
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: 5600fd2f0b6d83a3bd27350a4d4f0137ea44ced2
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73717271"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75398281"
 ---
 # <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>Création d’applications ASP.NET Core dans Visual Studio pour Mac
 
@@ -29,7 +29,7 @@ Dans ce labo, vous allez créer et explorer une application ASP.NET Core avec Vi
 
 - [Visual Studio pour Mac](https://www.visualstudio.com/vs/visual-studio-mac)
 
-## <a name="intended-audience"></a>Public concerné
+## <a name="intended-audience"></a>Public visé
 
 Ce labo s’adresse aux développeurs qui connaissent C#. Une expérience approfondie n’est toutefois pas nécessaire.
 
@@ -73,9 +73,9 @@ Ce labo s’adresse aux développeurs qui connaissent C#. Une expérience approf
 
     ![](media/netcore-image8.png)
 
-7. Il existe également plusieurs fichiers de configuration qui servent à gérer le projet, ses packages et l’application au moment de l’exécution. Par exemple, la [configuration](/aspnet/core/fundamentals/configuration) d’application par défaut est stockée dans **appsettings.json**. Toutefois, vous pouvez remplacer certains ou même tous ces paramètres en fonction de l’environnement, par exemple en fournissant un fichier **appsettings.Development.json** pour l’environnement de **Développement**.
+7. Il existe également plusieurs fichiers de configuration qui servent à gérer le projet, ses packages et l’application au moment de l’exécution. Par exemple, la [configuration](/aspnet/core/fundamentals/configuration) d’application par défaut est stockée dans **appsettings.json**. Le fichier appSettings. JSON imbriqué est le **appSettings. Fichier Development. JSON** . Ici, vous pouvez remplacer certains de ces paramètres en fonction de l’environnement. Visual Studio pour Mac imbriquera les fichiers de cette manière à l’aide de la même logique que Visual Studio pour Windows, de sorte que les fichiers auxquels vous devez accéder plus souvent sont au niveau de la Forefront. 
 
-    ![](media/netcore-image9.png)
+    ![](media/netcore-build-nested.png)
 
 ## <a name="task-3-understanding-how-the-application-is-hosted"></a>Tâche 3 : comprendre comment l’application est hébergée
 

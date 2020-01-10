@@ -1,17 +1,17 @@
 ---
 title: Extension de Visual Studio pour Mac
 description: Les fonctionnalités de Visual Studio pour Mac peuvent être étendues avec des modules appelés « packages d’extension ». La première partie de ce guide crée un package d’extension simple de Visual Studio pour Mac qui permet d’insérer la date et l’heure dans un document. La seconde partie de ce guide présente les concepts de base du système des packages d’extension et certaines des API principales qui sont à la base de Visual Studio pour Mac.
-author: conceptdev
-ms.author: crdun
-ms.date: 05/07/2019
+author: heiligerdankgesang
+ms.author: dominicn
+ms.date: 12/20/2019
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 02285a38214b4f13c45b4868599c84f47e67013c
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
-ms.translationtype: MT
+ms.openlocfilehash: 102b03caf2880d9b1311bb757eaf92aad84f8c81
+ms.sourcegitcommit: d04441e3c5f2eff3a63f7aca35ccf7ecac90fb44
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73716830"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75735829"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Extension de Visual Studio pour Mac
 
@@ -72,10 +72,10 @@ Les extensions de commande sont définies en ajoutant des entrées au point d’
 
  ```xml
 <Extension path="/MonoDevelop/Ide/Commands/Edit">
-  <command id="DateInserter.DateInserterCommands.InsertDate"
+  <Command id="DateInserter.DateInserterCommands.InsertDate"
             _label="Insert Date"
             _description="Insert the current date"
-            defaulthandler="DateInserter.InsertDateHandler" />
+            defaultHandler="DateInserter.InsertDateHandler" />
 </Extension>
 ```
 
@@ -92,7 +92,7 @@ L’extrait de code suivant illustre une extension CommandItem qui se connecte a
 
 ```xml
 <Extension path="/MonoDevelop/Ide/MainMenu/Edit">
-  <commanditem id="DateInserter.DateInserterCommands.InsertDate" />
+  <CommandItem id="DateInserter.DateInserterCommands.InsertDate" />
 </Extension>
 ```
 

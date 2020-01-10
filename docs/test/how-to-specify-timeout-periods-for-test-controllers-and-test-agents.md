@@ -8,15 +8,15 @@ helpviewer_keywords:
 - controllers, configuring
 - controllers, timeouts
 ms.assetid: 777d0db5-0073-458a-a2a3-58b1c1f24c60
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2f4e82261b9b36ced471dfa3e93be085e22c4d64
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 64ce566369f2c60a52e9026e8f92fc30836d523c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653322"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594758"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Guide pratique pour spécifier les délais d’expiration des contrôleurs de test et des agents de test
 
@@ -28,7 +28,7 @@ Pour modifier les divers paramètres de délai d'attente d'un contrôleur de tes
 
 - Contrôleur de test : *QTController.exe.config*
 
-    |Nom de la clé|Description|valeur|
+    |Nom de la clé|Description|Value|
     |-|-----------------|-|
     |AgentConnectionTimeoutInSeconds|Nombre de secondes du délai d'attente de la demande de la commande ping de l'agent avant que la connexion ne soit perdue.|"n" secondes.|
     |AgentSyncTimeoutInSeconds|Lorsque vous démarrez une série de tests de synchronisation, nombre de secondes d'attente de la synchronisation de tous les agents avant d'abandonner l'exécution.|"n" secondes.|
@@ -37,7 +37,7 @@ Pour modifier les divers paramètres de délai d'attente d'un contrôleur de tes
 
 - Agent de test : *QTAgentService.exe.config*
 
-    |Nom de la clé|Description|valeur|
+    |Nom de la clé|Description|Value|
     |-|-----------------|-|
     |ControllerConnectionPeriodInSeconds|Nombre de secondes séparant deux tentatives de connexion au contrôleur.|"n" secondes. Valeur par défaut : "30" (trente secondes).|
     |RemotingTimeoutSeconds|Durée maximum d'un appel à distance en secondes.|"n" secondes. Valeur par défaut : "600" (dix minutes).|
@@ -68,7 +68,7 @@ Pour modifier les divers paramètres de délai d'attente d'un contrôleur de tes
     <add key="AgentConnectionTimeoutInSeconds" value="180"/>
     ```
 
-    ou
+    \- ou -
 
     Ajoutez une clé supplémentaire et spécifiez une valeur de délai d'attente. Par exemple, vous pouvez ajouter la clé `AgentInitializeTimeout` dans la section `<appSettings>` et spécifier une valeur de cinq minutes :
 
@@ -102,7 +102,7 @@ Pour modifier les divers paramètres de délai d'attente d'un contrôleur de tes
     <add key="ControllerConnectionPeriodInSeconds" value="60"/>
     ```
 
-    ou
+    \- ou -
 
     Ajoutez une clé supplémentaire et spécifiez une valeur de délai d'attente. Par exemple, vous pouvez ajouter la clé `RemotingTimeoutSeconds` dans la section `<appSettings>` et spécifier une valeur de quinze minutes :
 

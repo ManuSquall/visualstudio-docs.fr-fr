@@ -6,17 +6,17 @@ f1_keywords:
 - StateMachine Designer
 - System.Activities.Statements.StateMachine.UI
 ms.assetid: 474d5fb3-1049-4b3f-bc6b-7524dbbe1672
-ms.author: jillfra
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 2e79e1db2cc6c46361afa7412cdeb493418c0365
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: TerryGLee
+ms.openlocfilehash: e7a270780a953a6104adc7089a02ff6529106fdf
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649913"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593133"
 ---
 # <a name="statemachine-activity-designer"></a>Concepteur d'activités StateMachine
 
@@ -30,7 +30,7 @@ Pour ajouter une activité <xref:System.Activities.Statements.StateMachine>, fai
 
 Le tableau suivant indique les propriétés  <xref:System.Activities.Statements.StateMachine> qui peuvent être définies à l'aide du concepteur de workflow et explique comment elles sont utilisées dans le concepteur. Ces propriétés peuvent être modifiées dans la grille des propriétés et certaines d'entre elles peuvent être modifiées dans l'aire de conception.
 
-|Nom de propriété|Obligatoire|Utilisation|
+|Nom de propriété|Obligatoire|Contrôle|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Spécifie le nom convivial du concepteur d'activités <xref:System.Activities.Statements.StateMachine> dans l'en-tête. La valeur par défaut est **StateMachine**. La valeur peut être modifiée dans la grille Propriétés ou directement dans l'en-tête du concepteur d'activités. <xref:System.Activities.Activity.DisplayName%2A> est utilisé dans l'exploration à l'aide de la barre de navigation qui est affichée en haut du concepteur de workflow.<br /><br /> Bien que la propriété <xref:System.Activities.Activity.DisplayName%2A> ne soit pas strictement obligatoire, il est recommandé d'en utiliser une.|
 

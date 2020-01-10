@@ -3,10 +3,10 @@ title: ID de composant et de charge de travail de Visual Studio Team Explorer
 titleSuffix: ''
 description: Utilisez les ID de composant et de charge de travail de Visual Studio pour fournir des outils de test intégrés pour les testeurs généralistes
 keywords: ''
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.date: 05/22/2019
+ms.date: 12/03/2019
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: c6ef9a3b-d13d-49b4-9faa-51fa06b21e1f
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: f2ffd7b021e3ca3a699acfb136c14e8b53c9a87d
-ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
-ms.translationtype: HT
+ms.openlocfilehash: d76c419db16d511bdc99adf7e3a56980c1d33255
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66037498"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588406"
 ---
 # <a name="visual-studio-team-explorer-component-directory"></a>Répertoire des composants Visual Studio Team Explorer
 

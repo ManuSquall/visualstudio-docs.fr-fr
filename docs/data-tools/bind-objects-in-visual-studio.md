@@ -11,17 +11,17 @@ helpviewer_keywords:
 - object binding
 - binding, to objects
 ms.assetid: ed743ce6-73af-45e5-a8ff-045eddaccc86
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2b046eaa4244d08c9fff9e2412471d018203de42
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 09e3ad2cfc2690c27e4e26e51f6b40d7afd79f54
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648807"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586989"
 ---
 # <a name="bind-objects-as-data-sources-in-visual-studio"></a>Lier des objets en tant que sources de données dans Visual Studio
 
@@ -93,12 +93,12 @@ Vous ajoutez des objets à une collection en appelant la méthode `Add` de votre
 > [!NOTE]
 > La méthode `Add` est fournie automatiquement pour votre collection personnalisée lorsque vous héritez de <xref:System.ComponentModel.BindingList%601>.
 
-Le code suivant montre comment ajouter des objets à la collection typée dans une <xref:System.Windows.Forms.BindingSource> :
+Le code suivant montre comment ajouter des objets à la collection typée dans une <xref:System.Windows.Forms.BindingSource>:
 
 [!code-csharp[VbRaddataConnecting#5](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_3.cs)]
 [!code-vb[VbRaddataConnecting#5](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_3.vb)]
 
-Le code suivant montre comment ajouter des objets à une collection typée qui hérite de <xref:System.ComponentModel.BindingList%601> :
+Le code suivant montre comment ajouter des objets à une collection typée qui hérite de <xref:System.ComponentModel.BindingList%601>:
 
 > [!NOTE]
 > Dans cet exemple, la collection `Orders` est une propriété de l’objet `Customer`.
@@ -126,7 +126,7 @@ Pour afficher les données des objets pour les utilisateurs, créez une source d
 
 Pour modifier des données dans des objets personnalisés qui sont liés aux données de Windows Forms contrôles, modifiez simplement les données du contrôle lié (ou directement dans les propriétés de l’objet). L’architecture de liaison de données met à jour les données dans l’objet.
 
-Si votre application requiert le suivi des modifications et la restauration des modifications proposées à leurs valeurs d’origine, vous devez implémenter cette fonctionnalité dans votre modèle objet. Pour obtenir des exemples de la façon dont les tables de données effectuent le suivi des modifications proposées, consultez <xref:System.Data.DataRowState>, <xref:System.Data.DataSet.HasChanges%2A> et <xref:System.Data.DataTable.GetChanges%2A>.
+Si votre application requiert le suivi des modifications et la restauration des modifications proposées à leurs valeurs d’origine, vous devez implémenter cette fonctionnalité dans votre modèle objet. Pour obtenir des exemples de la façon dont les tables de données effectuent le suivi des modifications proposées, consultez <xref:System.Data.DataRowState>, <xref:System.Data.DataSet.HasChanges%2A>et <xref:System.Data.DataTable.GetChanges%2A>.
 
 ### <a name="save-data-in-objects-back-to-the-database"></a>Réenregistrer les données dans les objets dans la base de données
 
@@ -137,7 +137,7 @@ Visual Studio crée des méthodes DBDirect qui peuvent être exécutées directe
 |Méthode DBDirect du TableAdapter|Description|
 | - |-----------------|
 |`TableAdapter.Insert`|Ajoute de nouveaux enregistrements à une base de données, ce qui vous permet de transmettre des valeurs de colonne individuelles en tant que paramètres de méthode.|
-|`TableAdapter.Update`|Met à jour les enregistrements existants dans une base de données. La méthode Update prend des valeurs de colonne originales et nouvelles comme paramètres de méthode. Les valeurs d’origine sont utilisées pour localiser l’enregistrement d’origine, et les nouvelles valeurs sont utilisées pour mettre à jour cet enregistrement.<br /><br /> La méthode `TableAdapter.Update` est également utilisée pour réconcilier les modifications apportées à un DataSet dans la base de données, en acceptant un <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, <xref:System.Data.DataRow> ou un tableau de <xref:System.Data.DataRow>s comme paramètres de méthode.|
+|`TableAdapter.Update`|Met à jour les enregistrements existants dans une base de données. La méthode Update prend des valeurs de colonne originales et nouvelles comme paramètres de méthode. Les valeurs d’origine sont utilisées pour localiser l’enregistrement d’origine, et les nouvelles valeurs sont utilisées pour mettre à jour cet enregistrement.<br /><br /> La méthode `TableAdapter.Update` est également utilisée pour réconcilier les modifications apportées à un DataSet dans la base de données, en acceptant un <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, <xref:System.Data.DataRow>ou un tableau d' <xref:System.Data.DataRow>s comme paramètres de méthode.|
 |`TableAdapter.Delete`|Supprime les enregistrements existants de la base de données en fonction des valeurs de colonne d’origine passées en tant que paramètres de méthode.|
 
 Pour enregistrer des données à partir d’une collection d’objets, parcourez la collection d’objets (par exemple, à l’aide d’une boucle for-Next). Envoyez les valeurs de chaque objet à la base de données à l’aide des méthodes DBDirect du TableAdapter.

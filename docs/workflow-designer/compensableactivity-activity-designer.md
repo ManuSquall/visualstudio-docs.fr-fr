@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.CompensableActivity.UI
 ms.assetid: e0340d89-d39e-4a52-8557-13e27040d7b5
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f498c6d025e7527b9767284a77c953e538cef377
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7ec70c22ae195dc6dd58aa2cfa893cee35fe6ca8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650661"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597098"
 ---
 # <a name="compensableactivity-activity-designer"></a>Concepteur d'activités CompensableActivity
 
@@ -25,14 +25,14 @@ Le concepteur d’activités **CompensableActivity** permet de créer et de conf
  L'objet <xref:System.Activities.Statements.CompensableActivity> définit une unité de travail qui peut être confirmée ou compensée après avoir été exécutée avec succès.
 
 ### <a name="using-the-compensableactivity-activity-designer"></a>Utilisation du concepteur d'activités CompensableActivity
- Le concepteur d’activités **CompensableActivity** se trouve dans la catégorie **transaction** de la **boîte à outils**. Pour ouvrir la **boîte à outils**, sélectionnez l’onglet **boîte à outils** sur le côté gauche de la concepteur de flux de travail. Vous pouvez également sélectionner **boîte à outils** dans le menu **affichage** ou appuyer sur **CTRL** +**ALT** +**X**.
+ Le concepteur d’activités **CompensableActivity** se trouve dans la catégorie **transaction** de la **boîte à outils**. Pour ouvrir la **boîte à outils**, sélectionnez l’onglet **boîte à outils** sur le côté gauche de la concepteur de flux de travail. Vous pouvez également sélectionner **boîte à outils** dans le menu **affichage** ou appuyer sur **CTRL**+**ALT**+**X**.
 
  Le concepteur d’activités **CompensableActivity** peut être déplacé de la **boîte à outils** et déposé dans l’aire de concepteur de flux de travail. Vous pouvez supprimer le concepteur d’activités à l’intérieur d’un <xref:System.Activities.Statements.Sequence>. La suppression du concepteur d’activités crée une activité <xref:System.Activities.Statements.CompensableActivity> avec un <xref:System.Activities.Activity.DisplayName%2A> par défaut de CompensableActivity. Modifiez la valeur de <xref:System.Activities.Activity.DisplayName%2A> dans l’en-tête du concepteur d’activités **CompensableActivity** . Il peut également être modifié dans la zone **DisplayName** de la grille des propriétés.
 
 ### <a name="the-compensableactivity-properties"></a>Propriétés de CompensableActivity
  Le tableau suivant présente les propriétés de <xref:System.Activities.Statements.CompensableActivity> et décrit comment elles sont utilisées dans le concepteur. La propriété <xref:System.Activities.Activity.DisplayName%2A> et <xref:System.Activities.Activity%601.Result%2A> peut être modifiée dans la grille des propriétés, mais les autres propriétés doivent être modifiées sur l’aire de Concepteur de flux de travail.
 
-|Nom de propriété|Obligatoire|Utilisation|
+|Nom de propriété|Obligatoire|Contrôle|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Nom convivial facultatif de l'activité <xref:System.Activities.Statements.CompensableActivity>. La valeur par défaut est CompensableActivity.|
 |<xref:System.Activities.Activity%601.Result%2A>|False|Spécifie la valeur de retour de l'objet <xref:System.Activities.Statements.CompensableActivity>. Cette propriété doit être modifiée dans la grille des propriétés.|

@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, transformation process
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 518c06f8630ad9fa7742f7b3e85ac27263cd0a86
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 6d6cca9a4a98c4afcffa8322acb75a4cef8a7527
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605805"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565862"
 ---
 # <a name="the-text-template-transformation-process"></a>Processus de transformation du modèle de texte
 Le processus de transformation de modèle de texte prend un fichier de modèle de texte comme entrée et génère un nouveau fichier texte comme sortie. Par exemple, vous pouvez utiliser des modèles de texte pour générer C# Visual Basic ou du code, ou vous pouvez générer un rapport HTML.
@@ -27,9 +27,9 @@ Le processus de transformation de modèle de texte prend un fichier de modèle d
 
 |Composant|Description|Personnalisable (oui/non)|
 |-|-|-|
-|Rotation|Le composant moteur contrôle le processus de transformation de modèle de texte.|Non.|
-|Hôte|L’hôte est l’interface entre le moteur et l’environnement utilisateur. Visual Studio est un hôte du processus de transformation de texte.|Oui. Vous pouvez écrire un hôte personnalisé.|
-|Processeurs de directive|Les processeurs de directive sont des classes qui gèrent les directives dans les modèles de texte. Vous pouvez utiliser des directives pour fournir des données à un modèle de texte à partir d’une source d’entrée.|Oui. Vous pouvez écrire des processeurs de directive personnalisés|
+|Moteur|Le composant moteur contrôle le processus de transformation de modèle de texte.|No.|
+|Hôte|L’hôte est l’interface entre le moteur et l’environnement utilisateur. Visual Studio est un hôte du processus de transformation de texte.|Oui, Vous pouvez écrire un hôte personnalisé.|
+|Processeurs de directive|Les processeurs de directive sont des classes qui gèrent les directives dans les modèles de texte. Vous pouvez utiliser des directives pour fournir des données à un modèle de texte à partir d’une source d’entrée.|Oui, Vous pouvez écrire des processeurs de directive personnalisés|
 
 ## <a name="the-engine"></a>Le moteur
  Le moteur reçoit le modèle en tant que chaîne à partir de l’hôte, qui gère tous les fichiers utilisés dans le processus de transformation. Le moteur demande ensuite à l’hôte de localiser tous les processeurs de directive personnalisés et d’autres aspects de l’environnement. Le moteur compile ensuite et exécute la classe de transformation générée. Le moteur retourne le texte généré à l’hôte, ce qui enregistre normalement le texte dans un fichier.

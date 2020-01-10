@@ -43,7 +43,7 @@ Votre formulaire ne contient qu’un seul PictureBox. Lorsque vous l’avez ajou
 
      ![Onglet Form1.cs avec le code&#35; visual C](../ide/media/express-showbuttoncode.png "Express_ShowButtonCode") Form1.cs onglet avec C# code visuel
 
-4. Examinez attentivement cette partie du code. (Sélectionnez l'onglet **VB** ci-dessous si vous utilisez Visual Basic pour consulter la version Visual Basic du code.)
+4. Examinez attentivement cette partie du code. (Sélectionnez l’onglet **VB** ci-dessous si vous utilisez Visual Basic pour consulter la version Visual Basic du code.)
 
      [!code-csharp[VbExpressTutorial1Step6#1](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial1step6/cs/form1.cs#1)]
      [!code-vb[VbExpressTutorial1Step6#1](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial1step6/vb/form1.vb#1)]

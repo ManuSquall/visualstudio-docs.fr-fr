@@ -5,13 +5,13 @@ ms.author: lank
 manager: lank
 ms.date: 07/23/2019
 ms.topic: conceptual
-description: Découvrez en quoi consiste la responsabilité des administrateurs pour la gestion des abonnements de grandes équipes et de fournisseurs externes.
-ms.openlocfilehash: 91e507358084bcb878d2a9afc7aad4fe4a2b869c
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
-ms.translationtype: HT
+description: En savoir plus sur la responsabilité des administrateurs pour gérer les abonnements pour les équipes de grande taille, ainsi que pour les prestataires externes.
+ms.openlocfilehash: 975db18e207f52db8e9d37aa190f9085d4069163
+ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68493348"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74491694"
 ---
 # <a name="large-teams-and-external-contractors"></a>Grandes équipes et prestataires externes
 Les administrateurs d’abonnements Visual Studio sont chargés de garantir que chaque utilisateur qui interagit avec les logiciels sous licence Visual Studio dispose des licences appropriées avec son propre abonnement Visual Studio.
@@ -33,9 +33,9 @@ Les prestataires externes peuvent apporter des licences pour prendre part à vot
 - [Prise en charge des abonnements et de l’administration de Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [Conditions du programme de licence en volume](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 En savoir plus sur les responsabilités des administrateurs :
 - [Responsabilités de l’administrateur](admin-responsibilities.md)
 - [Inventaire de l’environnement de préproduction](admin-inventory.md)
-- [Suivre les affectations d’utilisateurs et traiter les commandes](assignments-orders.md)
+- [Suivre l’attribution des utilisateurs et traiter les commandes](assignments-orders.md)
 - Utiliser le rapport [Utilisation maximale](maximum-usage.md) pour suivre les engagements d’achat

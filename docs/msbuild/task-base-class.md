@@ -8,22 +8,22 @@ dev_langs:
 - C++
 - jsharp
 ms.assetid: 6c3f6238-b9f0-4325-b8b0-de61090bd0a2
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9662a504232c70662e40db54e3eda27aa4abe835
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 7b3aaef85c53dfacf592251c95772d17b1a6ff96
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62938990"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566395"
 ---
 # <a name="task-base-class"></a>Classe de base Task
 De nombreuses tâches héritent au final de la classe <xref:Microsoft.Build.Utilities.Task>. Cette classe ajoute plusieurs paramètres aux tâches qui en dérivent. Ces paramètres sont répertoriés dans ce document.
 
-## <a name="parameters"></a>Paramètres
+## <a name="parameters"></a>Parameters
  Le tableau ci-dessous décrit les paramètres de cette classe de base.
 
 |Paramètre|Description|
@@ -36,4 +36,4 @@ De nombreuses tâches héritent au final de la classe <xref:Microsoft.Build.Util
 
 ## <a name="see-also"></a>Voir aussi
 - [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)
-- [Tâches](../msbuild/msbuild-tasks.md)
+- [Tâches MSBuild](../msbuild/msbuild-tasks.md)

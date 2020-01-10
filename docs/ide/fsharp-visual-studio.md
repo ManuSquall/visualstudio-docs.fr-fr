@@ -5,17 +5,17 @@ ms.date: 07/11/2018
 ms.topic: reference
 helpviewer_keywords:
 - F# features [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 176504ceb7c80a36028e7d5f1806aa598cdf708e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 75ebee68bf76a4dd5419942f79a3207c29673134
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645367"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565238"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>Développer avec Visual F# dans Visual Studio
 
@@ -41,7 +41,7 @@ Pour plus d’informations sur les modèles d’élément pour l’accès aux do
 
 Le tableau suivant récapitule les fonctionnalités dans les propriétés de projet pour F# :
 
-|Paramètre de projet|Pris en charge en F# ?|Notes|
+|Paramètre de projet|Pris en charge en F# ?|Remarques|
 |---------------|----------------|-----|
 |Fichiers de ressources|Oui||
 |Paramètres de référence, de débogage et de build|Oui||
@@ -54,7 +54,7 @@ Le tableau suivant récapitule les fonctionnalités dans les propriétés de pro
 |Analyse du code|Non|Les outils d’analyse de code peuvent être exécutés manuellement ou dans le cadre d’une commande post-build.|
 |Sécurité (changer les niveaux de confiance)|Non||
 
-## <a name="project-designer"></a>Concepteur de projets
+## <a name="project-designer"></a>Concepteur de projet
 
 Le **Concepteur de projet** se compose de plusieurs pages de propriétés de projet regroupées par fonctionnalités. Les pages disponibles pour les projets F# sont pour la plupart un sous-ensemble de celles disponibles pour d’autres langages, et sont décrites dans le tableau suivant. Des liens sont fournis vers la page C# du **Concepteur de projet** correspondante.
 
@@ -63,10 +63,10 @@ Le **Concepteur de projet** se compose de plusieurs pages de propriétés de pro
 |Application|[Page Application, Concepteur de projet](reference/application-page-project-designer-csharp.md)|Permet de spécifier des paramètres et des propriétés au niveau de l’application, par exemple si vous créez une bibliothèque ou un fichier exécutable, quelle est la version de .NET ciblée par l’application ainsi que des informations sur l’emplacement où sont stockés les fichiers de ressources utilisés par cette application.|
 |Générer|[Page Générer, Concepteur de projets](reference/build-page-project-designer-csharp.md)|Permet de contrôler comment le code est compilé.|
 |Événements de build|[Page Événements de build, Concepteur de projet](reference/build-events-page-project-designer-csharp.md)|Permet de spécifier des commandes à exécuter avant ou après la compilation.|
-|Débogage|[Page Déboguer, Concepteur de projet](reference/debug-page-project-designer.md)|Permet de contrôler comment l’application s’exécute pendant le débogage. Cela comprend les commandes à utiliser et l’identification du répertoire de départ de votre application, ainsi que tout mode de débogage spécial que vous souhaitez activer, tel que le code natif et SQL.|
-|Package (.NET SDK uniquement)|N/A|Permet de définir les métadonnées de package NuGet lors de la publication en tant que package NuGet.|
-|Chemins d'accès des références|[Gérer les références dans un projet](managing-references-in-a-project.md)|Permet de spécifier où rechercher les assemblys dont dépend le code.|
-|Ressources (.NET SDK uniquement)|N/A|Permet de générer et de gérer un fichier de ressources par défaut.|
+|Déboguer|[Page Déboguer, Concepteur de projets](reference/debug-page-project-designer.md)|Permet de contrôler comment l’application s’exécute pendant le débogage. Cela comprend les commandes à utiliser et l’identification du répertoire de départ de votre application, ainsi que tout mode de débogage spécial que vous souhaitez activer, tel que le code natif et SQL.|
+|Package (.NET SDK uniquement)|Non applicable|Permet de définir les métadonnées de package NuGetlors de la publication en tant que package NuGet.|
+|Chemins d’accès des références|[Gérer les références dans un projet](managing-references-in-a-project.md)|Permet de spécifier où rechercher les assemblys dont dépend le code.|
+|Ressources (.NET SDK uniquement)|Non applicable|Permet de générer et de gérer un fichier de ressources par défaut.|
 
 ### <a name="f-specific-settings"></a>Paramètres propres à F#
 
@@ -81,7 +81,7 @@ Le tableau suivant récapitule les paramètres qui sont propres à F# :
 
 Les fonctionnalités suivantes des éditeurs de code et de texte de Visual Studio sont prises en charge en F# :
 
-|Fonctionnalité|Description|Pris en charge en F# ?|
+|Composant|Description|Pris en charge en F# ?|
 |-------|-----------|----------------|
 |Commenter automatiquement|Permet de commenter ou de supprimer les marques de commentaire des sections de code.|Oui|
 |Mettre en forme automatiquement|Remet en forme le code avec une mise en retrait et un style standard.|Non|
@@ -113,7 +113,7 @@ Pour obtenir des informations générales sur la modification du code dans Visua
 
 Le tableau suivant récapitule les fonctionnalités IntelliSense prises en charge et non prises en charge en F# :
 
-|Fonctionnalité|Description|Pris en charge en F# ?|
+|Composant|Description|Pris en charge en F# ?|
 |-------|-----------|----------------|
 |Implémenter automatiquement les interfaces|Génère des stubs de code pour les méthodes d’interface.|Oui|
 |Extraits de code|Injecte du code à partir d’une bibliothèque de constructions de codage courantes dans les rubriques.|Non|
@@ -124,7 +124,7 @@ Le tableau suivant récapitule les fonctionnalités IntelliSense prises en charg
 |Liste des membres|Quand vous tapez l’opérateur d’accès au membre (.), affiche les membres d’un type.|Oui|
 |Organiser les directives using/open|Organise les espaces de noms référencés par des instructions **using** en C# ou des directives **open** en F#.|Non|
 |Informations sur les paramètres|Affiche des informations utiles sur les paramètres à mesure que vous tapez un appel de fonction.|Oui|
-|Info express|Affiche la déclaration complète de tout identificateur dans votre code.|Oui|
+|Infos express|Affiche la déclaration complète de tout identificateur dans votre code.|Oui|
 |Fin d'accolade automatique|Termine automatiquement les constructions de syntaxe de type accolade F# de manière transactionnelle.|Oui|
 
 Pour obtenir des informations générales sur IntelliSense, consultez [Utiliser IntelliSense](using-intellisense.md).
@@ -133,7 +133,7 @@ Pour obtenir des informations générales sur IntelliSense, consultez [Utiliser 
 
 Le tableau suivant récapitule les fonctionnalités qui sont disponibles quand vous déboguez du code F# :
 
-|Fonctionnalité|Description|Pris en charge en F# ?|
+|Composant|Description|Pris en charge en F# ?|
 |-------|-----------|----------------|
 |Automatique (fenêtre)|Affiche les variables automatiques ou temporaires.|Non|
 |Points d’arrêt|Permet de suspendre l’exécution du code à des points spécifiques lors du débogage.|Oui|
@@ -152,19 +152,19 @@ Pour obtenir des informations générales sur le débogueur Visual Studio, consu
 
 Le tableau suivant récapitule la prise en charge de F# dans les outils Visual Studio.
 
-|Tool|Description|Pris en charge en F# ?|
+|Outil|Description|Pris en charge en F# ?|
 |----|-----------|----------------|
 |Hiérarchie d'appels|Affiche la structure imbriquée des appels de fonction dans votre code.|Non|
 |Métrique du code|Rassemble des informations sur votre code, comme le nombre de lignes.|Non|
-|Affichage de classes|Fournit une vue basée sur le type du code dans un projet.|Non|
+|Affichage Classe|Fournit une vue basée sur le type du code dans un projet.|Non|
 |[Fenêtre Liste d’erreurs](reference/error-list-window.md)|Affiche une liste des erreurs dans le code.|Oui|
 |[F# Interactive](/dotnet/fsharp/tutorials/fsharp-interactive/)|Permet de taper (ou copier et coller) du code F# et de l’exécuter immédiatement, indépendamment de la génération de votre projet. La fenêtre F# Interactive est une boucle REPL (Read, Evaluate, Print Loop).|Oui|
 |Explorateur d'objets|Permet d’afficher les types dans un assembly.|Les types F# tels qu’ils apparaissent dans les assemblys compilés n’apparaissent pas exactement comme vous les avez créés. Vous pouvez parcourir la représentation compilée des types F#, mais vous ne pouvez pas afficher les types tels qu’ils apparaissent en F#.|
 |[Fenêtre Sortie](reference/output-window.md)|Affiche la sortie de build.|Oui|
 |Analyse des performances|Fournit des outils pour mesurer les performances de votre code.|Oui|
-|Fenêtre Propriétés|Affiche et autorise la modification des propriétés de l’objet dans l’environnement de développement qui a le focus.|Oui|
+|Propriétés (fenêtre)|Affiche et autorise la modification des propriétés de l’objet dans l’environnement de développement qui a le focus.|Oui|
 |Explorateur de serveurs|Fournit des méthodes pour interagir avec diverses ressources de serveur.|Oui|
-|Explorateur de solutions|Permet d’afficher et de gérer des projets et des fichiers.|Oui|
+|l’Explorateur de solutions|Permet d’afficher et de gérer des projets et des fichiers.|Oui|
 |Liste des tâches|Permet de gérer les éléments de travail en rapport avec votre code.|Non|
 |Projets de test|Fournit des fonctionnalités qui vous aident à tester votre code.|Non|
 |Boîte à outils|Affiche des onglets qui contiennent des objets déplaçables, tels que des contrôles et des sections de texte ou de code.|Oui|

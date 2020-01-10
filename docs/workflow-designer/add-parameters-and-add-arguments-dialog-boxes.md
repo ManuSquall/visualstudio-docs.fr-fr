@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - AddParameters.UI
 ms.assetid: a21fb4fe-134b-40b0-8497-86b842940ca1
-ms.author: jillfra
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 78f773776c3285b60b2747c74e11a90ff08dba8a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: TerryGLee
+ms.openlocfilehash: 68973963d77bdd4134213b8524b24f75a6be5ab1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650761"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597124"
 ---
 # <a name="add-parameters-and-add-arguments-dialog-boxes"></a>Boîtes de dialogue Ajouter des paramètres et Ajouter des arguments
 
@@ -23,7 +23,7 @@ Le tableau suivant décrit les éléments d’interface utilisateur de la boîte
 
 |||
 |-|-|
-|**Direction**|Spécifie si le paramètre représente le flux de données dans la méthode, hors de la méthode, ou les deux.|
+|**Sens**|Spécifie si le paramètre représente le flux de données dans la méthode, hors de la méthode, ou les deux.|
 |**Type**|Nom du type du nouveau paramètre.|
 |**Valeur**|Expression Visual Basic utilisée pour assigner une valeur par défaut au nouveau paramètre|
 
@@ -31,7 +31,7 @@ Le tableau suivant décrit les éléments d’interface utilisateur de la boîte
 
 |||
 |-|-|
-|**Nom**|Nom de l'argument.|
-|**Direction**|Spécifie si l'argument représente le flux de données dans le délégué, hors du délégué, ou les deux.|
+|**Name**|Nom de l'argument.|
+|**Sens**|Spécifie si l'argument représente le flux de données dans le délégué, hors du délégué, ou les deux.|
 |**Type**|Nom du type du nouvel argument.|
 |**Valeur**|Valeur à utiliser pour cette instance de l’argument de délégué.|

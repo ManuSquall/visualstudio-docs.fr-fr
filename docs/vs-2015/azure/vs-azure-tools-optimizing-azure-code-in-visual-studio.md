@@ -25,7 +25,7 @@ Quand vous programmez des applications qui utilisent Microsoft Azure, nous vous 
 L’outil Azure Code Analysis utilise les règles suivantes pour marquer automatiquement votre code quand il trouve des problèmes connus ayant un impact sur la performance. Les problèmes détectés apparaissent sous la forme d’avertissements ou d’erreurs du compilateur. Des corrections du code ou des suggestions pour résoudre l’avertissement ou l’erreur sont souvent fournis via une icône d’ampoule.
 
 ## <a name="avoid-using-default-in-process-session-state-mode"></a>Évitez d'utiliser le mode d'état de session (in-process) par défaut
-### <a name="id"></a>Id
+### <a name="id"></a>ID
 AP0000
 
 ### <a name="description"></a>Description
@@ -42,7 +42,7 @@ L’état de session ASP.NET prend en charge plusieurs options de stockage diff�
 Une solution recommandée consiste à stocker l’état de session sur un service de cache géré. Découvrez commet utiliser le [fournisseur d'état de session Azure pour Redis](https://go.microsoft.com/fwlink/?LinkId=401521) pour stocker l'état de votre session. Vous pouvez également stocker l’état de session dans d’autres endroits pour assurer l’évolutivité de votre application dans le cloud. Pour en savoir plus sur les solutions alternatives, consultez la page [Modes d'état de session](https://msdn.microsoft.com/library/ms178586).
 
 ## <a name="run-method-should-not-be-async"></a>La méthode d'exécution ne doit pas être asynchrone
-### <a name="id"></a>Id
+### <a name="id"></a>ID
 AP1000
 
 ### <a name="description"></a>Description
@@ -87,7 +87,7 @@ public async Task RunAsync()
 ```
 
 ## <a name="use-service-bus-shared-access-signature-authentication"></a>Utiliser l’authentification de signature d’accès partagé Service Bus
-### <a name="id"></a>Id
+### <a name="id"></a>ID
 AP2000
 
 ### <a name="description"></a>Description
@@ -113,7 +113,7 @@ Pour plus d’informations, consultez les rubriques suivantes.
 * [Comment utiliser l’authentification par signature d’accès partagé avec Service Bus](https://msdn.microsoft.com/library/dn205161.aspx)
 
 ## <a name="consider-using-onmessage-method-to-avoid-receive-loop"></a>Envisagez d'utiliser la méthode OnMessage pour éviter l’erreur de « boucle de réception »
-### <a name="id"></a>Id
+### <a name="id"></a>ID
 AP2002
 
 ### <a name="description"></a>Description
@@ -217,7 +217,7 @@ while (true)
 ```
 
 ## <a name="consider-using-asynchronous-service-bus-methods"></a>Envisagez d'utiliser les méthodes asynchrones de Service Bus
-### <a name="id"></a>Id
+### <a name="id"></a>ID
 AP2003
 
 ### <a name="description"></a>Description
@@ -234,7 +234,7 @@ Voir [Classe QueueClient (Microsoft.ServiceBus.Messaging)](https://msdn.microsof
 Pour améliorer les performances de l’infrastructure de messagerie Azure, consultez le modèle de conception [Notions fondamentales sur la messagerie asynchrone](https://msdn.microsoft.com/library/dn589781.aspx).
 
 ## <a name="consider-partitioning-service-bus-queues-and-topics"></a>Envisagez de partitionner les files d’attente et les rubriques Service Bus
-### <a name="id"></a>Id
+### <a name="id"></a>ID
 AP2004
 
 ### <a name="description"></a>Description
@@ -259,7 +259,7 @@ ns.CreateTopic(td);
 Pour plus d’informations, consultez [Files d’attente et rubriques Service Bus partitionnées | Blog Microsoft Azure](https://azure.microsoft.com/blog/2013/10/29/partitioned-service-bus-queues-and-topics/) et consultez l’exemple de [file d’attente Microsoft Azure Service Bus partitionnée](https://code.msdn.microsoft.com/windowsazure/Service-Bus-Partitioned-7dfd3f1f).
 
 ## <a name="do-not-set-sharedaccessstarttime"></a>Ne pas définir SharedAccessStartTime
-### <a name="id"></a>Id
+### <a name="id"></a>ID
 AP3001
 
 ### <a name="description"></a>Description
@@ -291,7 +291,7 @@ blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy(
 ```
 
 ## <a name="shared-access-policy-expiry-time-must-be-more-than-five-minutes"></a>Le délai d'expiration de la stratégie d'accès partagé doit être de plus de cinq minutes
-### <a name="id"></a>Id
+### <a name="id"></a>ID
 AP3002
 
 ### <a name="description"></a>Description
@@ -341,7 +341,7 @@ blobPermissions.SharedAccessPolicies.Add("mypolicy", new SharedAccessBlobPolicy(
 Pour plus d'informations, consultez [Créer et utiliser une signature d’accès partagé](https://msdn.microsoft.com/library/azure/jj721951.aspx).
 
 ## <a name="use-cloudconfigurationmanager"></a>Utiliser CloudConfigurationManager
-### <a name="id"></a>Id
+### <a name="id"></a>ID
 AP4000
 
 ### <a name="description"></a>Description
@@ -350,7 +350,7 @@ L’utilisation de la classe [ConfigurationManager](https://msdn.microsoft.com/l
 Pensez à partager vos idées et vos commentaires sur la page [Commentaires d’analyse du code Azure](https://go.microsoft.com/fwlink/?LinkId=403771).
 
 ### <a name="reason"></a>Raison
-CloudConfigurationManager lit le fichier de configuration approprié pour l’environnement de l’application.
+CloudConfigurationManager lit le fichier de configuration approprié pour l'environnement de l'application.
 
 [CloudConfigurationManager](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.cloudconfigurationmanager.aspx)
 
@@ -378,7 +378,7 @@ Voici un exemple de comment stocker le paramètre de configuration dans un fichi
 ```
 
 ## <a name="avoid-using-hard-coded-connection-strings"></a>Évitez d'utiliser des chaînes de connexion codées en dur
-### <a name="id"></a>Id
+### <a name="id"></a>ID
 AP4001
 
 ### <a name="description"></a>Description
@@ -399,7 +399,7 @@ Stocker les chaînes de connexion dans les fichiers de configuration ou dans les
 Pour plus d’informations sur l’utilisation de fichiers de configuration comme web.config ou app.config, consultez la page [Conseils de configuration ASP.NET web](https://msdn.microsoft.com/library/vstudio/ff400235\(v=vs.100\).aspx). Pour plus d’informations sur le fonctionnement des variables d’environnement Azure, consultez [sites Web Azure : fonctionnement des chaînes d’application et des chaînes de connexion](https://azure.microsoft.com/blog/2013/07/17/windows-azure-web-sites-how-application-strings-and-connection-strings-work/). Pour plus d’informations sur le stockage de la chaîne de connexion dans le contrôle de code source, consultez la rubrique [Éviter de placer des informations sensibles (par exemple, des chaînes de connexion) dans des fichiers stockés dans des référentiels de code source](https://docs.microsoft.com/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/source-control).
 
 ## <a name="use-diagnostics-configuration-file"></a>Utiliser le fichier de configuration des diagnostics
-### <a name="id"></a>Id
+### <a name="id"></a>ID
 AP5000
 
 ### <a name="description"></a>Description
@@ -415,16 +415,16 @@ Depuis WAD 1.3 (fourni avec Azure SDK 2.5), il n’est plus possible d’utilise
 ### <a name="solution"></a>Solution
 Utilisez le concepteur de configuration de diagnostic pour déplacer les paramètres de diagnostic vers le fichier config de diagnostic (diagnostics.wadcfg ou diagnostics.wadcfgx pour le kit SDK 2.5 et ultérieur). Il est également recommandé d'installer [Azure SDK 2.5](https://go.microsoft.com/fwlink/?LinkId=513188) et d’utiliser la fonctionnalité de diagnostic plus récente.
 
-1. Dans le menu contextuel du rôle que vous voulez configurer, choisissez Propriétés, puis sélectionnez l’onglet Configuration.
+1. Dans le menu contextuel du rôle que vous voulez configurer, choisissez Propriétés, puis choisissez l'onglet Configuration.
 2. Dans la section **Diagnostics**, vérifiez que la case à cocher **Activer les diagnostics** est activée.
-3. Cliquez sur le bouton **Configurer** .
+3. Cliquez sur le bouton **Configurer**.
 
-   ![Accès à l’option Activer les diagnostics](./media/vs-azure-tools-optimizing-azure-code-in-visual-studio/IC796660.png)
+   ![Accès à l'option Activer les diagnostics](./media/vs-azure-tools-optimizing-azure-code-in-visual-studio/IC796660.png)
 
    Consultez [Configuration des diagnostics pour Azure Cloud Services et Azure Virtual Machines](vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md) pour plus d’informations.
 
 ## <a name="avoid-declaring-dbcontext-objects-as-static"></a>Éviter de déclarer les objets DbContext comme statiques
-### <a name="id"></a>Id
+### <a name="id"></a>ID
 AP6000
 
 ### <a name="description"></a>Description
@@ -462,5 +462,5 @@ public class BlogsController : Controller
     }
 ```
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 Pour plus d’informations sur l’optimisation et le dépannage des applications Azure, consultez la rubrique [Dépanner une application web dans Azure App Service à l’aide de Visual Studio](/azure/app-service/web-sites-dotnet-troubleshoot-visual-studio).

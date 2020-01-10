@@ -1,5 +1,5 @@
 ---
-title: 'Ligne de commande du profileur : Données de temporisation détaillées pour une application autonome'
+title: 'Ligne de commande du profileur : détails des données de minutage pour l’application autonome'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,14 +9,15 @@ ms.assetid: 4017d9d1-d609-4f41-8e4e-976abae746b3
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 13bc632d70b3d477b70f6e947e55d5c82c6ab064
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: a0c0fae312b5c193774d9acf8934a0688b2ed69e
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66262889"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779608"
 ---
 # <a name="collect-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>Collecter des données de temporisation détaillées pour une application autonome en utilisant la ligne de commande du profileur
 Cette section décrit les procédures et les options de collecte des données de performances détaillées d’un composant client (autonome) utilisant la méthode d’instrumentation à partir de la ligne de commande.
@@ -25,8 +26,8 @@ Cette section décrit les procédures et les options de collecte des données de
 
 |Tâche|Contenu connexe|
 |----------|---------------------|
-|**Profiler une application .NET Framework à l’aide de l’instrumentation**|-   [Guide pratique pour pour instrumenter un composant .NET et collecter des données de minutage détaillées](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md)|
-|**Profiler une application C/C++ à l’aide de l’instrumentation**|-   [Guide pratique pour pour instrumenter un composant natif et collecter des données de minutage détaillées](../profiling/how-to-instrument-a-native-component-and-collect-timing-data.md)|
+|**Profiler une application .NET Framework à l’aide de l’instrumentation**|-   [Guide pratique pour instrumenter un composant .NET et collecter des données de minutage détaillées](../profiling/how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md)|
+|**Profiler une application C/C++ à l’aide de l’instrumentation**|-   [Guide pratique pour instrumenter un composant natif et collecter des données de minutage détaillées](../profiling/how-to-instrument-a-native-component-and-collect-timing-data.md)|
 |**Ajouter des interactions de couche**|-   [Collecter les données d’interaction de couche](../profiling/adding-tier-interaction-data-from-the-command-line.md)|
 
 ## <a name="related-tasks"></a>Tâches connexes
@@ -49,5 +50,5 @@ Cette section décrit les procédures et les options de collecte des données de
 ### <a name="analyze-instrumentation-data-views-and-reports"></a>Analyser des vues et des rapports de données d’instrumentation
 - [Vues de données de la méthode d'instrumentation](../profiling/instrumentation-method-data-views.md)
 
-## <a name="reference"></a>Référence
+## <a name="reference"></a>Reference
 - [Informations de référence sur les outils de profilage de ligne de commande](../profiling/command-line-profiling-tools-reference.md)

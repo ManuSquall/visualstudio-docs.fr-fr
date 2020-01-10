@@ -28,36 +28,36 @@ Si vous écrivez des modèles de texte qui lisent un modèle qui contient [!INCL
 - Le modèle doit hériter de [ModelBusEnabledTextTransformation](/previous-versions/ee844263(v=vs.140)).
 
 > [!NOTE]
-> Si vous souhaitez lire des modèles DSL qui ne contiennent pas de références ModelBus, vous pouvez utiliser les processeurs de directive qui sont générés dans vos projets DSL. Pour plus d’informations, consultez [l’accès à des modèles à partir de modèles de texte](../modeling/accessing-models-from-text-templates.md).
+> Si vous souhaitez lire des modèles DSL qui ne contiennent pas de références ModelBus, vous pouvez utiliser les processeurs de directive qui sont générés dans vos projets DSL. Pour plus d’informations, consultez [accès aux modèles à partir de modèles de texte](../modeling/accessing-models-from-text-templates.md).
 
- Pour plus d’informations sur les modèles de texte, consultez [génération de Code au moment du Design à l’aide de modèles de texte T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
+ Pour plus d’informations sur les modèles de texte, consultez [génération de code au moment du design à l’aide de modèles de texte T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md).
 
 ## <a name="creating-a-model-bus-adapter-for-access-from-text-templates"></a>Création d’un adaptateur de Bus de modèle pour l’accès à partir de modèles de texte
  Pour résoudre une référence ModelBus dans un modèle de texte, DSL cible doit avoir une carte compatible. Les modèles de texte s’exécutent dans un AppDomain distinct du [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] éditeurs de documents, et par conséquent, l’adaptateur doit charger le modèle au lieu d’y accéder via DTE.
 
 #### <a name="to-create-a-modelbus-adapter-that-is-compatible-with-text-templates"></a>Pour créer un adaptateur ModelBus qui est compatible avec les modèles de texte
 
-1. Si la solution DSL cible n’a pas un **ModelBusAdapter** de projet, créez-en un à l’aide de l’Assistant Modelbus Extension :
+1. Si la solution DSL cible n’a pas de projet **ModelBusAdapter** , créez-en une à l’aide de l’Assistant extension ModelBus :
 
-    1. Téléchargez et installez l’extension [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus, si vous ne l’avez pas encore fait. Pour plus d’informations, consultez [Visualization and Modeling SDK](https://go.microsoft.com/fwlink/?LinkID=185579).
+    1. Téléchargez et installez l’extension [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus, si vous ne l’avez pas encore fait. Pour plus d’informations, consultez [Kit de développement logiciel de visualisation et de modélisation](https://go.microsoft.com/fwlink/?LinkID=185579).
 
-    2. Ouvrez le fichier de définition DSL. Cliquez sur l’aire de conception, puis sur **activer Modelbus**.
+    2. Ouvrez le fichier de définition DSL. Cliquez avec le bouton droit sur l’aire de conception, puis cliquez sur **activer ModelBus**.
 
-    3. Dans la boîte de dialogue, sélectionnez **je veux exposer ce DSL au ModelBus**. Vous pouvez sélectionner les deux options si vous souhaitez que ce DSL expose ses modèles et d’utiliser des références aux autres DSL.
+    3. Dans la boîte de dialogue, sélectionnez **je souhaite exposer ce DSL au ModelBus**. Vous pouvez sélectionner les deux options si vous souhaitez que ce DSL expose ses modèles et d’utiliser des références aux autres DSL.
 
     4. Cliquez sur **OK**. Un nouveau projet « ModelBusAdapter » vient s'ajouter à la solution DSL.
 
-    5. Cliquez sur **Transformer tous les modèles**.
+    5. Cliquez sur **transformer tous les modèles**.
 
     6. Régénérez la solution.
 
-2. Si vous souhaitez accéder au DSL à la fois à partir d’un modèle de texte et depuis un autre code, tels que des commandes, dupliquer le **ModelBusAdapter** projet :
+2. Si vous souhaitez accéder au DSL à la fois à partir d’un modèle de texte et à partir d’un autre code, tel que Command, dupliquez le projet **ModelBusAdapter** :
 
-    1. Dans l’Explorateur Windows, copiez et collez le dossier qui contient **ModelBusAdapter.csproj**.
+    1. Dans l’Explorateur Windows, copiez et collez le dossier qui contient **ModelBusAdapter. csproj**.
 
-    2. Renommez le fichier projet (par exemple, pour **T4ModelBusAdapter.csproj**).
+    2. Renommez le fichier projet (par exemple, **T4ModelBusAdapter. csproj**).
 
-    3. Dans **l’Explorateur de solutions**, cliquez sur le nœud solution, pointez sur **ajouter**, puis cliquez sur **projet existant**. Recherchez le nouveau projet d’adaptateur, **T4ModelBusAdapter.csproj**.
+    3. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur le nœud de la solution, pointez sur **Ajouter**, puis cliquez sur **projet existant**. Localisez le nouveau projet d’adaptateur, **T4ModelBusAdapter. csproj**.
 
     4. Dans chaque `*.tt` fichier du nouveau projet, modifiez l’espace de noms.
 
@@ -71,7 +71,7 @@ Si vous écrivez des modèles de texte qui lisent un modèle qui contient [!INCL
         <MefComponent>|T4ModelBusAdapter|</MefComponent>
         ```
 
-    8. **Transformer tous les modèles** et régénérez la solution. Aucune erreur de génération ne doit se produire.
+    8. **Transformez tous les modèles** et régénérez la solution. Aucune erreur de génération ne doit se produire.
 
 3. Dans le nouveau projet d’adaptateur, ajoutez des références aux assemblys suivants :
 
@@ -97,14 +97,14 @@ Si vous écrivez des modèles de texte qui lisent un modèle qui contient [!INCL
 
          Cet attribut filtre l’ensemble de cartes est disponible lorsqu’un consommateur de modelbus recherche pour un adaptateur.
 
-5. **Transformer tous les modèles** et régénérez la solution. Aucune erreur de génération ne doit se produire.
+5. **Transformez tous les modèles** et régénérez la solution. Aucune erreur de génération ne doit se produire.
 
 ## <a name="writing-a-text-template-that-can-resolve-modelbus-references"></a>Écriture d’un modèle de texte qui peut résoudre les références ModelBus
- En règle générale, vous commencez avec un modèle qui lit et génère des fichiers à partir d’une « source » DSL. Ce modèle utilise la directive est générée dans le projet DSL source à lire les fichiers de modèle de source de la manière décrite dans [l’accès à des modèles à partir de modèles de texte](../modeling/accessing-models-from-text-templates.md). Toutefois, le DSL source contient les références ModelBus à une DSL « cible ». Par conséquent, vous souhaitez activer le code du modèle résoudre les références et d’accéder à la cible de DSL. Vous devez par conséquent adapter le modèle en suivant ces étapes :
+ En règle générale, vous commencez avec un modèle qui lit et génère des fichiers à partir d’une « source » DSL. Ce modèle utilise la directive générée dans le projet DSL source pour lire les fichiers de modèle source de la manière décrite dans [accès aux modèles à partir de modèles de texte](../modeling/accessing-models-from-text-templates.md). Toutefois, le DSL source contient les références ModelBus à une DSL « cible ». Par conséquent, vous souhaitez activer le code du modèle résoudre les références et d’accéder à la cible de DSL. Vous devez par conséquent adapter le modèle en suivant ces étapes :
 
 - Remplacez la classe de base du modèle par [ModelBusEnabledTextTransformation](/previous-versions/ee844263(v=vs.140)).
 
-- Inclure `hostspecific="true"` dans la directive de modèle.
+- Incluez `hostspecific="true"` dans la directive de modèle.
 
 - Ajoutez les références d’assembly pour la DSL cible et de sa carte et activer ModelBus.
 
@@ -150,7 +150,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 ```
 
- Lorsque ce modèle de texte est exécuté, le `SourceDsl` directive charge le fichier `Sample.source`. Le modèle peut accéder aux éléments de ce modèle, à partir de `this.ModelRoot`. Le code peut utiliser les classes de domaine et les propriétés de ce DSL.
+ Quand ce modèle de texte est exécuté, la directive `SourceDsl` charge le fichier `Sample.source`. Le modèle peut accéder aux éléments de ce modèle, à partir de `this.ModelRoot`. Le code peut utiliser les classes de domaine et les propriétés de ce DSL.
 
  En outre, le modèle peut résoudre les références ModelBus. Lorsque les références pointent vers le modèle cible, les directives d’assembly permettent au code d’utiliser les classes de domaine et les propriétés du DSL de ce modèle.
 
@@ -166,7 +166,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 ## <a name="walkthrough-testing-a-text-template-that-uses-modelbus"></a>Procédure pas à pas : Test d’un modèle de texte qui utilise le ModelBus
  Dans cette procédure pas à pas, vous suivez ces étapes :
 
-1. Construire deux DSL. Un DSL, le *consommateur*, a un `ModelBusReference` propriété pouvant faire référence à la solution DSL, le *fournisseur*.
+1. Construire deux DSL. Un DSL, le *consommateur*, a une propriété `ModelBusReference` qui peut faire référence à l’autre DSL, le *fournisseur*.
 
 2. Créer deux adaptateurs ModelBus dans le fournisseur : un pour l’accès par les modèles de texte, l’autre pour du code ordinaire.
 
@@ -180,13 +180,13 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 #### <a name="construct-a-dsl-that-is-accessible-to-modelbus"></a>Construire une solution DSL qui est accessible au ModelBus
 
-1. Créer une solution DSL. Pour cet exemple, sélectionnez le modèle de solution flux de tâches. La valeur est le nom du langage `MBProvider` et l’extension de nom de fichier « .provide ».
+1. Créer une solution DSL. Pour cet exemple, sélectionnez le modèle de solution flux de tâches. Définissez le nom de la langue sur `MBProvider` et l’extension de nom de fichier sur « . fournir ».
 
-2. Dans le diagramme de définition DSL, cliquez sur une partie vide du diagramme qui n’est pas près du haut, puis cliquez sur **activer Modelbus**.
+2. Dans le diagramme de définition DSL, cliquez avec le bouton droit sur une partie vide du diagramme qui ne se trouve pas près du haut, puis cliquez sur **activer ModelBus**.
 
-   - Si vous ne voyez pas **activer Modelbus**, vous devez télécharger et installer l’extension ModelBus de VMSDK. Trouvez-en une sur le site VMSDK : [Visualization and Modeling SDK](https://go.microsoft.com/fwlink/?LinkID=185579).
+   - Si vous ne voyez pas **activer ModelBus**, vous devez télécharger et installer l’extension VMSDK ModelBus. Recherchez-le sur le site VMSDK : [Kit de développement logiciel de visualisation et de modélisation](https://go.microsoft.com/fwlink/?LinkID=185579).
 
-3. Dans le **activer Modelbus** boîte de dialogue, sélectionnez **exposer ce DSL au ModelBus**, puis cliquez sur **OK**.
+3. Dans la boîte de dialogue **activer ModelBus** , sélectionnez **exposer ce DSL au ModelBus**, puis cliquez sur **OK**.
 
     Un nouveau projet, `ModelBusAdapter`, est ajouté à la solution.
 
@@ -200,21 +200,21 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
     Renommez le fichier projet T4ModelBusAdapter.csproj.
 
-2. Dans l’Explorateur de solutions, ajoutez T4ModelBusAdapter à la solution MBProvider. Cliquez sur le nœud solution, pointez sur **ajouter**, puis cliquez sur **projet existant**.
+2. Dans l’Explorateur de solutions, ajoutez T4ModelBusAdapter à la solution MBProvider. Cliquez avec le bouton droit sur le nœud de la solution, pointez sur **Ajouter**, puis cliquez sur **projet existant**.
 
-3. Cliquez sur le nœud de projet T4ModelBusAdapter, puis sur Propriétés. Dans la fenêtre Propriétés du projet, modifiez le **nom de l’Assembly** et **Namespace par défaut** à `Company.MBProvider.T4ModelBusAdapters`.
+3. Cliquez sur le nœud de projet T4ModelBusAdapter, puis sur Propriétés. Dans la fenêtre Propriétés du projet, modifiez le nom de l' **assembly** et l' **espace de noms par défaut** en `Company.MBProvider.T4ModelBusAdapters`.
 
 4. Dans chaque fichier *.tt T4ModelBusAdapter, insérer « T4 » dans la dernière partie de l’espace de noms, afin que la ligne ressemble à ce qui suit.
 
     `namespace <#= CodeGenerationUtilities.GetPackageNamespace(this.Dsl) #>.T4ModelBusAdapters`
 
-5. Dans le `DslPackage` de projet, ajoutez une référence de projet à `T4ModelBusAdapter`.
+5. Dans le projet `DslPackage`, ajoutez une référence de projet à `T4ModelBusAdapter`.
 
 6. Dans DslPackage\source.extension.tt, ajoutez la ligne suivante sous `<Content>`.
 
     `<MefComponent>|T4ModelBusAdapter|</MefComponent>`
 
-7. Dans le `T4ModelBusAdapter` de projet, ajoutez une référence à : **Microsoft.VisualStudio.TextTemplating.Modeling.11.0**
+7. Dans le projet `T4ModelBusAdapter`, ajoutez une référence à : **Microsoft. VisualStudio. TextTemplating. Modeling. 11.0**
 
 8. Ouvrez T4ModelBusAdapter\AdapterManager.tt :
 
@@ -252,7 +252,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
        ```
 
-9. Cliquez sur **transformer tous les modèles** dans la barre de titre de Solution Explorateur.
+9. Cliquez sur **transformer tous les modèles** dans la barre de titre de Explorateur de solutions.
 
 10. Régénérez la solution. Cliquez sur F5.
 
@@ -264,25 +264,25 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 1. Créer un nouveau langage DSL à l’aide du modèle de solution de langage Minimal. Nom de la langue MBConsumer et définir l’extension de nom de fichier « .consume ».
 
-2. Dans le projet DSL, ajoutez une référence à l’assembly MBProvider DSL. Avec le bouton droit `MBConsumer\Dsl\References` puis cliquez sur **ajouter une référence**. Dans le **Parcourir** onglet, recherchez `MBProvider\Dsl\bin\Debug\Company.MBProvider.Dsl.dll`
+2. Dans le projet DSL, ajoutez une référence à l’assembly MBProvider DSL. Cliquez avec le bouton droit sur `MBConsumer\Dsl\References`, puis cliquez sur **Ajouter une référence**. Sous l’onglet **Parcourir** , recherchez `MBProvider\Dsl\bin\Debug\Company.MBProvider.Dsl.dll`
 
     Cela vous permet de vous permettent de créer du code qui utilise l’autres DSL. Si vous souhaitez créer des références à plusieurs DSL, ajoutez-les également.
 
-3. Dans le diagramme de définition DSL, cliquez sur le diagramme, puis sélectionnez **activer ModelBus**. Dans la boîte de dialogue, sélectionnez **activer ce DSL consommer le ModelBus**.
+3. Dans le diagramme de définition DSL, cliquez avec le bouton droit sur le diagramme, puis cliquez sur **activer ModelBus**. Dans la boîte de dialogue, sélectionnez **activer ce DSL pour utiliser le ModelBus**.
 
-4. Dans la classe `ExampleElement`, ajouter une nouvelle propriété de domaine `MBR`et dans la fenêtre Propriétés, définissez son type sur `ModelBusReference`.
+4. Dans la `ExampleElement`de la classe, ajoutez une nouvelle propriété de domaine `MBR`et, dans le Fenêtre Propriétés, définissez son type sur `ModelBusReference`.
 
-5. Avec le bouton droit de la propriété de domaine sur le diagramme, puis cliquez sur **propriétés propres à ModelBusReference modifier**. Dans la boîte de dialogue, sélectionnez **un élément de modèle**.
+5. Cliquez avec le bouton droit sur la propriété de domaine dans le diagramme, puis cliquez sur **modifier les propriétés spécifiques d’ModelBusReference**. Dans la boîte de dialogue, sélectionnez **un élément de modèle**.
 
     Définir le filtre de boîte de dialogue de fichier à ce qui suit.
 
     `Provider File|*.provide`
 
-    La sous-chaîne après «&#124;» est un filtre pour la boîte de dialogue de sélection de fichier. Vous pouvez définir pour autoriser tous les fichiers à l’aide de *.\*
+    La sous-chaîne après «&#124;» est un filtre pour la boîte de dialogue de sélection de fichier. Vous pouvez le définir de façon à autoriser tous les fichiers à l’aide de *.\*
 
-    Dans le **type d’élément de modèle** liste, entrez les noms d’une ou classes de domaine plus dans le fournisseur DSL (par exemple, Company.MBProvider.Task). Ils peuvent être des classes abstraites. Si vous ne renseignez pas la liste, l’utilisateur peut définir la référence à n’importe quel élément.
+    Dans la liste **type d’élément de modèle** , entrez les noms d’une ou de plusieurs classes de domaine dans le fournisseur DSL (par exemple, Company. MBProvider. Task). Ils peuvent être des classes abstraites. Si vous ne renseignez pas la liste, l’utilisateur peut définir la référence à n’importe quel élément.
 
-6. Fermez la boîte de dialogue et **transformer tous les modèles**.
+6. Fermez la boîte de dialogue et **transformez tous les modèles**.
 
    Vous avez créé une solution DSL qui peut contenir des références aux éléments dans un autre DSL.
 
@@ -290,17 +290,17 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
 1. Dans la solution MBConsumer, appuyez sur CTRL + F5. Une instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] s’ouvre dans le projet **MBConsumer\Debugging** .
 
-2. Ajouter une copie de Sample.provide à la **MBConsumer\Debugging** projet. Cela est nécessaire, car une référence ModelBus doit faire référence à un fichier dans la même solution.
+2. Ajoutez une copie de l’exemple. fournissez au projet **MBConsumer\Debugging** . Cela est nécessaire, car une référence ModelBus doit faire référence à un fichier dans la même solution.
 
-   1. Cliquez sur le projet de débogage, pointez sur **ajouter**, puis cliquez sur **élément existant**.
+   1. Cliquez avec le bouton droit sur le projet de débogage, pointez sur **Ajouter**, puis cliquez sur **élément existant**.
 
-   2. Dans le **ajouter un élément** boîte de dialogue, définissez le filtre sur **tous les fichiers (\*.\*)** .
+   2. Dans la boîte de dialogue **Ajouter un élément** , définissez le filtre sur **tous les fichiers (\*.\*)** .
 
-   3. Accédez à `MBProvider\Debugging\Sample.provide` puis cliquez sur **ajouter**.
+   3. Accédez à `MBProvider\Debugging\Sample.provide`, puis cliquez sur **Ajouter**.
 
 3. Ouvrez `Sample.consume`.
 
-4. Cliquez sur une forme d’exemple, dans la fenêtre Propriétés, cliquez sur **[...]**  dans la propriété MBR. Dans la boîte de dialogue, cliquez sur **Parcourir** et sélectionnez `Sample.provide`. Dans la fenêtre d’éléments, développez le type de tâche, puis sélectionnez l’un des éléments.
+4. Cliquez sur une forme d’exemple, puis dans la fenêtre Propriétés, cliquez sur **[...]** dans la propriété MBR. Dans la boîte de dialogue, cliquez sur **Parcourir** , puis sélectionnez `Sample.provide`. Dans la fenêtre d’éléments, développez le type de tâche, puis sélectionnez l’un des éléments.
 
 5. Enregistrez le fichier.
 
@@ -346,7 +346,7 @@ inherits="Microsoft.VisualStudio.TextTemplating.Modeling.ModelBusEnabledTextTran
 
      Notez les points suivants :
 
-    1. Le `hostSpecific` et `inherits` les attributs de la `template` directive doit être définie.
+    1. Les attributs `hostSpecific` et `inherits` de la directive `template` doivent être définis.
 
     2. Le modèle de consommateur est accessible de la manière habituelle via le processeur de directive qui a été générée dans ce DSL.
 

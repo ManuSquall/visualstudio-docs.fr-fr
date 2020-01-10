@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : spécifier des commandes de pré-instrumentation et de post-instrumentation | Microsoft Docs'
+title: Guide pratique pour spécifier des commandes de pré-instrumentation et de post-instrumentation | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,16 +12,17 @@ ms.assetid: 6a8d5340-1d1b-4d81-88dd-8e1f435eb828
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: dec06f7f45666845dfcc7080ed4b18db8baba993
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 22ad5558ed01e5bb1b8d12b7a4cc65b4d677d0cd
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62539059"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778711"
 ---
-# <a name="how-to-specify-pre--and-post-instrument-commands"></a>Procédure : Spécifier des commandes de pré-instrumentation et de post-instrumentation
+# <a name="how-to-specify-pre--and-post-instrument-commands"></a>Guide pratique pour spécifier des commandes de pré-instrumentation et de post-instrumentation
 
 Vous pouvez spécifier des commandes qui s’exécutent avant ou après l’instrumentation des fichiers binaires d’une session de performance. Vous pouvez spécifier toute commande pouvant être émise à partir de la ligne de commande comme événement de pré-instrumentation ou de post-instrumentation. Par exemple, vous pouvez spécifier des commandes qui automatisent la nouvelle signature d’un assembly avec une clé de nom fort dans un fichier de commandes exécuté une fois les fichiers binaires instrumentés.
 
@@ -29,11 +30,11 @@ Vous pouvez spécifier des commandes pour tous les fichiers binaires instrument�
 
 Le répertoire de travail dans lequel les commandes sont exécutées dépend du système d’exploitation où vous exécutez [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] et de la plateforme cible de l’application profilée.
 
-Pour obtenir le chemin des outils de profilage, consultez [Spécifier le chemin des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
+Pour obtenir le chemin d’accès des outils de profilage, voir [Spécifier le chemin d’accès des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
 
 ## <a name="to-specify-pre-instrument-commands"></a>Pour spécifier des commandes de pré-instrumentation
 
-1. Effectuez l’une des opérations suivantes :
+1. Effectuez l'une des étapes suivantes :
 
     - Pour spécifier des commandes de pré-instrumentation pour l’ensemble des fichiers binaires dans une session de performance, sélectionnez le nœud de la session de performance dans l’**Explorateur de performances**, puis cliquez avec le bouton droit et sélectionnez **Propriétés**.
 
@@ -52,7 +53,7 @@ Pour obtenir le chemin des outils de profilage, consultez [Spécifier le chemin 
 
 ## <a name="to-specify-post-instrument-commands"></a>Pour spécifier des commandes de post-instrumentation
 
-1. Effectuez l’une des opérations suivantes :
+1. Effectuez l'une des étapes suivantes :
 
     - Pour spécifier des commandes de post-instrumentation pour l’ensemble des fichiers binaires dans une session de performance, sélectionnez le nœud de la session de performance dans l’**Explorateur de performances**, puis cliquez avec le bouton droit et sélectionnez **Propriétés**.
 

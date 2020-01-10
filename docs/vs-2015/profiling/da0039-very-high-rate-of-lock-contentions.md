@@ -27,11 +27,11 @@ Pour obtenir la documentation la plus récente sur Visual Studio, consultez [DA0
   
 |||  
 |-|-|  
-|ID de règle|DA0039|  
+|ID de la règle|DA0039|  
 |Catégorie|Utilisation du .NET Framework|  
 |Méthodes de profilage|Échantillonnage<br /><br /> Instrumentation<br /><br /> Mémoire .NET|  
 |Message|Un taux très élevé de conflits de verrou .NET se produit. Analysez la raison de ce conflit de verrou en exécutant un profil Concurrence.|  
-|Type de règle|Warning|  
+|Type de règle|Avertissement|  
   
  Lorsque vous effectuez un profilage à l’aide de la méthode d’échantillonnage, de mémoire .NET ou de conflit des ressources, vous devez collecter au moins 25 échantillons pour déclencher cette règle.  
   

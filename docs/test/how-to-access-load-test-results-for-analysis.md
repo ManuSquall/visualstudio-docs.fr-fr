@@ -11,15 +11,15 @@ helpviewer_keywords:
 - load tests, results
 - Load Test Viewer, viewing
 ms.assetid: b0a3e694-2894-479b-b270-7e61e9fafacd
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6be8649ab611a44cb9d2791ae1f4a0e61e930d5b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b6a5da728e24d5d7fdbeccd1e28aa2742e04bf48
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664882"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596461"
 ---
 # <a name="how-to-access-load-test-results-for-analysis"></a>Guide pratique : Accéder aux résultats des tests de charge à des fins d’analyse
 
@@ -39,7 +39,7 @@ Le résultat du test de charge pour le test de charge terminé contient des exem
 
 3. Dans **Entrer un nom de contrôleur pour rechercher les résultats des tests de charge**, sélectionnez un contrôleur. Sélectionnez **\<local> - Aucun contrôleur** pour accéder aux résultats stockés localement.
 
-4. Dans **Afficher les résultats pour le test de charge suivant**, sélectionnez le test de charge dont vous voulez voir les résultats. Sélectionnez **\<Afficher les résultats de tous les tests** pour voir les résultats de tous les tests.
+4. Dans **Afficher les résultats pour le test de charge suivant**, sélectionnez le test de charge dont vous souhaitez consulter les résultats. Sélectionnez **\<Afficher les résultats de tous les tests>** pour consulter les résultats de tous les tests.
 
      Si des résultats des tests de charge sont disponibles, ceux-ci apparaissent dans la liste **Résultats du test de charge**. Les colonnes sont **Heure**, **Durée**, **Utilisateur**, **Résultat**, **Test** et **Description**. **Test** contient le nom du test et **Description** contient la description facultative qui est ajoutée avant l’exécution du test.
 

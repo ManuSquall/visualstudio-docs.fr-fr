@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Collecter les données de suivi d’événements pour Windows (ETW) | Microsoft Docs'
+title: Guide pratique pour collecter les données de suivi d’événements pour Windows (ETW) | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,16 +11,17 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d9734c75f078380649009d10da13ed8c926e5e16
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 2fa0547682351d1a7ba4efe4ce3b4350b906462c
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62973862"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779023"
 ---
-# <a name="how-to-collect-event-tracing-for-windows-etw-data"></a>Procédure : Collecter les données de suivi d’événements pour Windows (ETW)
+# <a name="how-to-collect-event-tracing-for-windows-etw-data"></a>Guide pratique pour collecter les données ETW (suivi d’événements pour Windows)
 
 Le suivi d’événements pour Windows (ETW) est une fonctionnalité de traçage efficace de niveau noyau qui permet de journaliser les événements de noyau et les événements définis par l’application du profileur. Les données collectées à partir du fournisseur d’événements ne peuvent être affichées qu’à l’aide de l’option /**Summary:ETW** de l’outil en ligne de commande [VSPerfReport](../profiling/vsperfreport.md). Vous pouvez utiliser ce rapport pour déterminer où se situent les problèmes de performances au sein de l’application.
 

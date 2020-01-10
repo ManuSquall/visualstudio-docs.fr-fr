@@ -3,17 +3,17 @@ title: 'Concepteur de flux de travail : définir et consommer des délégués d
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c68e42ad-3ec0-4c2d-b104-fe36c6d83b5e
-ms.author: jillfra
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 67e862e3772b157c4a0999ccd44c3698119ae8a8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: TerryGLee
+ms.openlocfilehash: 4309294a2be703b7511355b87c97341fee06d405
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650335"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593900"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Procédure : définir et utiliser des délégués d'activité dans le Concepteur de flux de travail
 
@@ -26,7 +26,7 @@ ms.locfileid: "72650335"
    > [!NOTE]
    > Si vous ne voyez pas les modèles de projet de **flux de travail** , installez d’abord le composant **Windows Workflow Foundation** de Visual Studio. Pour obtenir des instructions détaillées, consultez [installer Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
-3. Dans **Explorateur de solutions** , cliquez avec le bouton droit sur le projet, puis sélectionnez **Ajouter**  > **nouvel élément**. Sélectionnez la catégorie **flux de travail** , puis sélectionnez le modèle élément d' **activité** . Nommez la nouvelle activité **MyForEach. Xaml** , puis sélectionnez **OK**.
+3. Dans **Explorateur de solutions** , cliquez avec le bouton droit sur le projet, puis sélectionnez **Ajouter** > **nouvel élément**. Sélectionnez la catégorie **flux de travail** , puis sélectionnez le modèle élément d' **activité** . Nommez la nouvelle activité **MyForEach. Xaml** , puis sélectionnez **OK**.
 
    L’activité s’ouvre dans le concepteur de flux de travail.
 
@@ -42,7 +42,7 @@ ms.locfileid: "72650335"
 
 9. Dans la colonne type d’argument, sélectionnez **Parcourir les types**
 
-10. Dans l’Explorateur de types, entrez **ActivityAction** dans le champ **nom du type** . Sélectionnez **ActivityAction \<T >** dans l’arborescence. Sélectionnez **objet** dans la liste déroulante qui s’affiche pour affecter le type **ActivityAction \<Object >** à l’argument.
+10. Dans l’Explorateur de types, entrez **ActivityAction** dans le champ **nom du type** . Sélectionnez **ActivityAction\<t >** dans l’arborescence. Sélectionnez **objet** dans la liste déroulante qui s’affiche pour affecter le type **ActivityAction\<objet >** à l’argument.
 
 11. Faites glisser une activité <xref:System.Activities.Statements.While> de la section **Flow** de la boîte à outils vers l’aire du concepteur.
 
@@ -70,7 +70,7 @@ ms.locfileid: "72650335"
 
 ## <a name="use-the-custom-activity-in-a-workflow"></a>Utiliser l'activité personnalisée dans un workflow
 
-1. Générez le projet en appuyant sur **Ctrl** +**MAJ** +**B**.
+1. Générez le projet en appuyant sur **Ctrl**+**MAJ**+**B**.
 
 2. Dans **Explorateur de solutions**, ouvrez **Workflow1. Xaml** dans le concepteur.
 
@@ -84,5 +84,5 @@ ms.locfileid: "72650335"
 
 Lorsque le flux de travail est exécuté, la console affiche la sortie suivante :
 
-**1** 
-**ABC**
+**1**
+**abc**

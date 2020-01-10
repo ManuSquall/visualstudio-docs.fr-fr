@@ -1,27 +1,28 @@
 ---
-title: 'Ligne de commande du profileur : Instrumenter une application ASP.NET statique, obtenir les données de minutage'
+title: 'Ligne de commande du profileur : instrument static ASP.NET App, recevoir des données de minutage'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: b260ce68-76e6-4c3b-8062-3c00bd5cf7b8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 9e66eedf0de32e0af6f387a755b5e439a2b2e5e1
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
-ms.translationtype: HT
+ms.openlocfilehash: 7d743dd854bd11449161c47cc896d0735849e1dd
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032976"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778854"
 ---
-# <a name="how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line"></a>Procédure : Instrumenter une application web ASP.NET compilée statiquement et collecter des données chronologiques détaillées avec le profileur en ligne de commande
+# <a name="how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line"></a>Guide pratique pour instrumenter une application web ASP.NET compilée statiquement et collecter des données temporelles détaillées avec le profileur en utilisant la ligne de commande
 Cet article explique comment utiliser les outils en ligne de commande des Outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour instrumenter un site web ou un composant web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] précompilé et pour collecter des données chronologiques détaillées.
 
 > [!NOTE]
 > Pour obtenir le chemin d’accès des outils de profilage, voir [Spécifier le chemin d’accès des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes, ou l’ajouter à la commande.
 >
-> Pour ajouter des données d’interaction de couche à une exécution de profilage, vous devez utiliser des procédures spécifiques avec les outils de profilage en ligne de commande. Consultez [Collecte de données d’interaction de couche](../profiling/adding-tier-interaction-data-from-the-command-line.md).
+> L’ajout de données d’interaction de couche à une exécution de profilage nécessite que vous utilisiez des procédures spécifiques pour les outils de profilage en ligne de commande. Consultez [Collecte de données d’interaction de couche](../profiling/adding-tier-interaction-data-from-the-command-line.md).
 
  Pour collecter des données chronologiques détaillées à partir d’un composant web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] avec la méthode d’instrumentation, vous utilisez l’outil [VSInstr.exe](../profiling/vsinstr.md) pour générer une version instrumentée du composant. Sur l’ordinateur qui héberge le composant, vous remplacez la version non instrumentée du composant par la version instrumentée. Vous utilisez ensuite l’outil [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) pour initialiser les variables d’environnement de profilage globales et redémarrer l’ordinateur hôte. Vous démarrez ensuite le profileur.
 
@@ -33,7 +34,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
 #### <a name="to-instrument-an-aspnet-web-component-and-start-profiling"></a>Pour instrumenter un composant web ASP.NET et démarrer le profilage
 
-1. Ouvrez une fenêtre Invite de commandes.
+1. Ouvrez une fenêtre d'invite de commandes.
 
 2. Utilisez l’outil **VSInstr** pour générer une version instrumentée de l’application cible. Si nécessaire, remplacez les fichiers binaires de l’application sur l’ordinateur hôte ASP.NET avec les fichiers binaires instrumentés.
 
@@ -43,9 +44,9 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
 4. Redémarrez l'ordinateur.
 
-5. Ouvrez une fenêtre Invite de commandes. Si nécessaire, définissez le chemin d’accès des outils du profileur.
+5. Ouvrez une fenêtre d'invite de commandes. Si nécessaire, définissez le chemin d’accès des outils du profileur.
 
-6. Démarrez le profileur. Type :
+6. Démarrer le profileur. Type :
 
     **VSPerfCmd /start:trace /output:** `OutputFile` [`Options`]
 
@@ -91,15 +92,15 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
 1. Fermez l’application web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].
 
-2. Fermez le processus de travail [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Type :
+2. Fermez le processus de travail [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Type :
 
     **IISReset /stop**
 
-3. Fermez le profileur. Type :
+3. Fermez le profileur. Type :
 
     **VSPerfCmd /shutdown**
 
-4. (Facultatif). Effacez les variables d’environnement de profilage. Type :
+4. (Facultatif). Effacez les variables d’environnement de profilage. Type :
 
     **VSPerfCmd /globaloff**
 

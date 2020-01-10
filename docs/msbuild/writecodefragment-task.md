@@ -11,22 +11,22 @@ helpviewer_keywords:
 - MSBuild, WriteCodeFragment task
 - WriteCodeFragment task [MSBuild]
 ms.assetid: 1d2514b4-5bef-43bb-bebe-496da8ef063c
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59938817c06a29b8842cbbe080ef8b477af5d39e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 3745e1c2f300c860d281752a0bf81359806c5d5e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778158"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567396"
 ---
 # <a name="writecodefragment-task"></a>WriteCodeFragment (tâche)
 Génère un fichier de code temporaire à partir du fragment de code généré spécifié. Ne supprime pas le fichier.
 
-## <a name="parameters"></a>Paramètres
+## <a name="parameters"></a>Parameters
  Le tableau ci-dessous décrit les paramètres de la tâche `WriteCodeFragment` .
 
 |Paramètre|Description|
@@ -36,9 +36,9 @@ Génère un fichier de code temporaire à partir du fragment de code généré s
 |`OutputDirectory`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem> facultatif.<br /><br /> Spécifie le dossier de destination du code généré, en général le dossier intermédiaire.|
 |`OutputFile`|Paramètre de sortie <xref:Microsoft.Build.Framework.ITaskItem> facultatif.<br /><br /> Spécifie le chemin du fichier qui a été généré. Si ce paramètre est défini à l’aide d’un nom de fichier, le dossier de destination est ajouté devant le nom de fichier. S’il est défini à l’aide d’une racine, le dossier de destination est ignoré.<br /><br /> Si ce paramètre n’est pas défini, le nom du fichier de sortie est constitué du nom du dossier de destination, d’un nom de fichier arbitraire et de l’extension de nom de fichier par défaut du langage spécifié.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  En plus des paramètres répertoriés dans le tableau, cette tâche comprend des paramètres qu’elle hérite de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="see-also"></a>Voir aussi
-- [Tâches](../msbuild/msbuild-tasks.md)
+- [Tâches MSBuild](../msbuild/msbuild-tasks.md)
 - [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)

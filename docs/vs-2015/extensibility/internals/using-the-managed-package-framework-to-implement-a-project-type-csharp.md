@@ -66,12 +66,12 @@ Managed package Framework (MPF) C# fournit des classes que vous pouvez utiliser 
   
      Microsoft.Build.Tasks.4.0  
   
-5. Générez le projet.  
+5. créer le projet ;  
   
 ## <a name="hierarchy-classes"></a>Classes de hiérarchie  
  Le tableau suivant récapitule les classes du MPFProj qui prennent en charge les hiérarchies de projet. Pour plus d’informations, consultez [hiérarchies et sélection](../../extensibility/internals/hierarchies-and-selection.md).  
   
-|Nom de la classe|  
+|Nom de classe|  
 |----------------|  
 |`Microsoft.VisualStudio.Package.HierarchyNode`|  
 |`Microsoft.VisualStudio.Package.ProjectNode`|  
@@ -88,7 +88,7 @@ Managed package Framework (MPF) C# fournit des classes que vous pouvez utiliser 
 ## <a name="document-handling-classes"></a>Classes de gestion de documents  
  Le tableau suivant répertorie les classes du MPF qui prennent en charge la gestion des documents. Pour plus d’informations, consultez [ouverture et enregistrement d’éléments de projet](../../extensibility/internals/opening-and-saving-project-items.md).  
   
-|Nom de la classe|  
+|Nom de classe|  
 |----------------|  
 |`Microsoft.VisualStudio.Package.DocumentManager`|  
 |`Microsoft.VisualStudio.Package.FileDocumentManager`|  
@@ -96,7 +96,7 @@ Managed package Framework (MPF) C# fournit des classes que vous pouvez utiliser 
 ## <a name="configuration-and-output-classes"></a>Classes de sortie et de configuration  
  Le tableau suivant répertorie les classes du MPF qui permettent aux types de projet de prendre en charge plusieurs configurations, telles que Debug et Release, ainsi que des collections de sortie de projet. Pour plus d’informations, consultez [gestion des options de configuration](../../extensibility/internals/managing-configuration-options.md).  
   
-|Nom de la classe|  
+|Nom de classe|  
 |----------------|  
 |`Microsoft.VisualStudio.Package.ConfigProvider`|  
 |`Microsoft.VisualStudio.Package.ProjectConfig`|  
@@ -107,7 +107,7 @@ Managed package Framework (MPF) C# fournit des classes que vous pouvez utiliser 
 ## <a name="automation-support-classes"></a>Automation-classes de prise en charge  
  Le tableau suivant répertorie les classes du MPF qui prennent en charge l’automatisation afin que les utilisateurs de votre type de projet puissent écrire des compléments.  
   
-|Nom de la classe|  
+|Nom de classe|  
 |----------------|  
 |`Microsoft.VisualStudio.Package.Automation.OAProject`|  
 |`Microsoft.VisualStudio.Package.Automation.OANavigableProjectItems`|  
@@ -118,7 +118,7 @@ Managed package Framework (MPF) C# fournit des classes que vous pouvez utiliser 
 ## <a name="properties-classes"></a>Classes de propriétés  
  Le tableau suivant répertorie les classes du chargeur multifonctions qui permettent aux types de projets d’ajouter des propriétés que les utilisateurs peuvent parcourir et modifier dans un Explorateur de propriétés.  
   
-|Nom de la classe|  
+|Nom de classe|  
 |----------------|  
 |`Microsoft.VisualStudio.Package.LocalizableProperties`|  
 |`Microsoft.VisualStudio.Package.NodeProperties`|  

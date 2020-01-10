@@ -7,17 +7,17 @@ helpviewer_keywords:
 - MSBuild, target batching
 - target batching [MSBuild]
 ms.assetid: f3cc4186-6a4c-4161-bbe5-1ec638b4925b
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff9aa4cdc2e3a406b21aeccf5538bcbfdd6b4249
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 013cf211fe9fdfb8fef07c5ac757fa5f4b35a521
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63006785"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75577276"
 ---
 # <a name="item-metadata-in-target-batching"></a>Métadonnées d’élément dans le traitement par lots des cibles
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] a la capacité d’effectuer une analyse des dépendances sur les entrées et les sorties d’une cible de génération. S’il est déterminé que les entrées ou les sorties de la cible sont à jour, la cible est ignorée et la génération a lieu. Les éléments `Target` utilisent les attributs `Inputs` et `Outputs` pour spécifier les éléments à inspecter pendant l’analyse des dépendances.

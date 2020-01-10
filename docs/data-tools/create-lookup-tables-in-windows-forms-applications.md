@@ -6,17 +6,17 @@ helpviewer_keywords:
 - lookup tables
 - lookup tables, creating
 ms.assetid: 0edd5385-c381-4b17-9096-74e2778db9d5
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f7660eba181c0a08ea3736c36e84bc7c9a574e10
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9fe49ee90dba3edd0e2777817c4903c6101a1b47
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72642245"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586768"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Créer des tables de recherche dans des applications Windows Forms
 
@@ -28,7 +28,7 @@ Prenons l’exemple d’une table de `Orders` dans une base de données Sales. C
 
 ## <a name="to-databind-a-lookup-control"></a>Pour lier un contrôle de recherche
 
-1. Une fois votre projet ouvert, ouvrez la fenêtre **sources de données** en choisissant **Afficher**  >  d’autres**sources de données** **Windows**  > .
+1. Une fois votre projet ouvert, ouvrez la fenêtre **sources de données** en choisissant **Afficher** > d’autres **sources de données** **Windows** > .
 
     > [!NOTE]
     > Les tables de recherche requièrent que deux tables ou objets associés soient disponibles dans la fenêtre **sources de données** . Pour plus d’informations, consultez [relations dans les jeux de données](relationships-in-datasets.md).
@@ -44,13 +44,13 @@ Prenons l’exemple d’une table de `Orders` dans une base de données Sales. C
 
 5. Faites glisser le nœud principal de la table enfant de la fenêtre **sources de données** vers votre formulaire.
 
-     Les contrôles DataBound (avec des étiquettes descriptives) et une barre d’outils (<xref:System.Windows.Forms.BindingNavigator>) s’affichent sur le formulaire. Un [jeu de données](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/create-and-configure-tableadapters.md), <xref:System.Windows.Forms.BindingSource> et <xref:System.Windows.Forms.BindingNavigator> apparaissent dans la barre d’état des composants.
+     Les contrôles DataBound (avec des étiquettes descriptives) et une barre d’outils (<xref:System.Windows.Forms.BindingNavigator>) s’affichent sur le formulaire. Un [jeu de données](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/create-and-configure-tableadapters.md), <xref:System.Windows.Forms.BindingSource>et <xref:System.Windows.Forms.BindingNavigator> apparaissent dans la barre d’état des composants.
 
 6. À présent, faites glisser le nœud de la table parente principale de la fenêtre **sources de données** directement dans le contrôle de recherche (le <xref:System.Windows.Forms.ComboBox>).
 
      Les liaisons de recherche sont désormais établies. Reportez-vous au tableau suivant pour les propriétés spécifiques qui ont été définies sur le contrôle.
 
-    |Property|Explication du paramètre|
+    |Les|Explication du paramètre|
     |--------------| - |
     |**DataSource**|Visual Studio définit cette propriété sur le <xref:System.Windows.Forms.BindingSource> créé pour la table que vous avez fait glisser vers le contrôle (et non sur le <xref:System.Windows.Forms.BindingSource> créé en même temps que le contrôle).<br /><br /> Si vous devez effectuer un ajustement, définissez cette valeur sur la <xref:System.Windows.Forms.BindingSource> de la table avec la colonne que vous souhaitez afficher.|
     |**DisplayMember**|Visual Studio définit cette propriété sur la première colonne après la clé principale contenant un type de données de chaîne pour la table que vous avez fait glisser vers le contrôle.<br /><br /> Si vous devez effectuer un ajustement, définissez cette valeur sur le nom de la colonne que vous souhaitez afficher.|

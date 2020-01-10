@@ -21,7 +21,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74299703"
 ---
-# <a name="visual-studio-sdk"></a>Kit de développement logiciel Visual Studio
+# <a name="visual-studio-sdk"></a>Kit de développement Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Le kit de développement logiciel (SDK) Visual Studio vous aide à étendre les fonctionnalités de Visual Studio ou à intégrer de nouvelles fonctionnalités dans Visual Studio. Vous pouvez distribuer vos extensions à d’autres utilisateurs, ainsi qu’à la Galerie Visual Studio. Voici quelques-unes des façons dont vous pouvez étendre Visual Studio :  

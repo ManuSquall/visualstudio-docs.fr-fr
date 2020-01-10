@@ -13,17 +13,17 @@ caps.latest.revision: 30
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 165214dff519e7db94d5ee8f3a1a6d86856cd4a1
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f27fede436ea6cabe0aab6480cd4841299c42293
+ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72609666"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74302802"
 ---
 # <a name="model-user-requirements"></a>Modéliser les besoins des utilisateurs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio vous aide à comprendre, discuter et communiquer les besoins de vos utilisateurs en dessinant des diagrammes sur leurs activités et le rôle joué par votre système pour les aider à atteindre leurs objectifs. Un modèle d’impératifs est un ensemble de tels diagrammes, chacun étant axé sur un aspect différent des besoins des utilisateurs. Pour obtenir une démonstration vidéo, consultez : [Modeling the Business Domain (Modélisation du domaine d’entreprise)](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/).
+Visual Studio vous aide à comprendre, discuter et communiquer les besoins de vos utilisateurs en dessinant des diagrammes sur leurs activités et le rôle joué par votre système pour les aider à atteindre leurs objectifs. Un modèle d’impératifs est un ensemble de tels diagrammes, chacun étant axé sur un aspect différent des besoins des utilisateurs. Pour obtenir une démonstration vidéo, consultez : [Modeling the Business Domain (Modélisation du domaine d’entreprise)](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain).
 
  Pour connaître les versions de Visual Studio qui prennent en charge chaque type de modèle, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -138,7 +138,7 @@ Visual Studio vous aide à comprendre, discuter et communiquer les besoins de vo
 |Éléments d’un diagramme de classes conceptuelles|[Informations de référence sur les diagrammes de classes UML](../modeling/uml-class-diagrams-reference.md)|
 |Comment développer du code à partir de classes conceptuelles|[Modéliser l’architecture de votre application](../modeling/model-your-app-s-architecture.md)|
 
- Dans un diagramme de classes conceptuelles, il est généralement inutile de placer des flèches sur les associations pour représenter la navigabilité. En effet, le diagramme ne représente pas une implémentation. Les associations représentent des relations entre des objets du monde réel. L’Extension [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] suivante applique par défaut des flèches non directionnelles : [Exemple : fonctionnalités de modélisation de domaine UML](http://go.microsoft.com/fwlink/?LinkId=213849).
+ Dans un diagramme de classes conceptuelles, il est généralement inutile de placer des flèches sur les associations pour représenter la navigabilité. En effet, le diagramme ne représente pas une implémentation. Les associations représentent des relations entre des objets du monde réel. L’Extension [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] suivante applique par défaut des flèches non directionnelles : [Exemple : fonctionnalités de modélisation de domaine UML](https://go.microsoft.com/fwlink/?LinkId=213849).
 
 ## <a name="BusinessRules"></a> Showing Business Rules
  Une règle métier est un impératif qui n’est associé à aucun cas d’usage particulier et doit être respecté à l’échelle du système.
@@ -162,7 +162,7 @@ Visual Studio vous aide à comprendre, discuter et communiquer les besoins de vo
 |Comment développer du code qui respecte des règles métier|[Modéliser l’architecture de votre application](../modeling/model-your-app-s-architecture.md)|
 
 ## <a name="QoSRequirements"></a> Describing Quality of Service Requirements
- Il existe plusieurs catégories d’impératifs de qualité de service. Il s'agit notamment des types suivants :
+ Il existe plusieurs catégories d’impératifs de qualité de service. Il s'agit des dossiers suivants :
 
 - Performances
 
@@ -239,4 +239,4 @@ Visual Studio vous aide à comprendre, discuter et communiquer les besoins de vo
   En examinant les relations entre les vues fournies par différents diagrammes, vous pouvez rapidement comprendre les principaux concepts avec lesquels vos utilisateurs travaillent et les aider à comprendre ce qu’ils ont besoin de la part du système. Vous identifierez aussi plus précisément les impératifs concernant lesquels les parties prenantes ont des doutes. Vous pouvez prévoir de développer ces fonctionnalités, au moins sous une forme simplifiée, à un stade précoce du projet, pour permettre aux utilisateurs d’expérimenter avec elles.
 
 ## <a name="see-also"></a>Voir aussi
- [Modifier des modèles et des diagrammes UML](../modeling/edit-uml-models-and-diagrams.md) [développer des tests à partir d’un modèle](../modeling/develop-tests-from-a-model.md) [utiliser des modèles dans votre modèle de processus de développement](../modeling/use-models-in-your-development-process.md) [architecture de l’exemple d’architecture vs de votre application](../modeling/model-your-app-s-architecture.md) [: exemple de fonctionnalités de modélisation de domaine UML](http://go.microsoft.com/fwlink/?LinkId=213849) - [extension vs : UML Éléments par exemple d'](http://go.microsoft.com/fwlink/?LinkID=213841) [extension vs : lier des éléments UML à des diagrammes, des fichiers et d’autres éléments exemple d'](http://go.microsoft.com/fwlink/?LinkID=213813) [extension vs : aligner des formes sur un diagramme UML](http://go.microsoft.com/fwlink/?LinkID=213809) [vidéo : modélisation du domaine d’entreprise](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/)
+ [Modifier des modèles et des diagrammes UML](../modeling/edit-uml-models-and-diagrams.md) [Développer des tests à partir d’un modèle](../modeling/develop-tests-from-a-model.md) [Utiliser des modèles dans votre processus de développement](../modeling/use-models-in-your-development-process.md) [Modéliser l’architecture de votre application](../modeling/model-your-app-s-architecture.md) [Exemple d'extension VS : Fonctionnalités de modélisation de domaine UML](https://go.microsoft.com/fwlink/?LinkId=213849) [ Exemple d'extension VS : Coloriser les éléments UML par stéréotype](https://go.microsoft.com/fwlink/?LinkID=213841) [Exemple d’extension VS : associer des éléments UML à des diagrammes, des fichiers et d’autres éléments exemple d’extension](https://go.microsoft.com/fwlink/?LinkID=213813) [Exemple d’extension VS : Aligner des formes dans un diagramme UML](https://go.microsoft.com/fwlink/?LinkID=213809) [ Vidéo : Modélisation du domaine professionnel](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain)

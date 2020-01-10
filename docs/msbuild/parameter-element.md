@@ -12,20 +12,20 @@ helpviewer_keywords:
 - Parameter element [MSBuild]
 - <Parameter> element [MSBuild]
 ms.assetid: b273afff-b500-4e97-8cfd-31f39fa64a51
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc410948f3869de5ca3059cba703e5381f93d7eb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 9d1351f47ec8acc5aa5a510ede9c2284ec97c248
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62999674"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590460"
 ---
 # <a name="parameter-element"></a>Élément de paramètre
-Contient des informations sur un paramètre spécifique pour une tâche générée par un `UsingTask` `TaskFactory`.  Le nom de l’élément est le nom du paramètre.  Pour plus d’informations, consultez [Élément UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).
+Contient des informations sur un paramètre spécifique pour une tâche générée par une `TaskFactory``UsingTask`.  Le nom de l’élément est le nom du paramètre.  Pour plus d’informations, voir [Élément UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).
 
  \<Project> \<UsingTask> \<ParameterGroup> \<Parameter>
 
@@ -42,7 +42,7 @@ Contient des informations sur un paramètre spécifique pour une tâche génér�
 
 ### <a name="attributes"></a>Attributs
 
-|Attribut|Description|
+|Attribute|Description|
 |---------------|-----------------|
 |`ParameterType`|Attribut facultatif.<br /><br /> Le type .NET du paramètre, par exemple `System.String`.|
 |`Output`|Attribut booléen facultatif.<br /><br /> Si cet attribut présente la valeur `true`, ce paramètre est un paramètre de sortie pour la tâche. Par défaut, la valeur est définie sur `false`.|
@@ -55,7 +55,7 @@ Contient des informations sur un paramètre spécifique pour une tâche génér�
 
 |Élément|Description|
 |-------------|-----------------|
-|[ParameterGroup](../msbuild/parametergroup-element.md)|Contient une liste facultative de paramètres qui seront présents sur la tâche générée par un `UsingTask` `TaskFactory`.|
+|[ParameterGroup](../msbuild/parametergroup-element.md)|Contient une liste facultative de paramètres qui seront présents sur la tâche générée par une `TaskFactory``UsingTask`.|
 
 ## <a name="example"></a>Exemple
  L'exemple suivant montre comment utiliser l'élément `Parameter`.
@@ -74,6 +74,6 @@ Contient des informations sur un paramètre spécifique pour une tâche génér�
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Tâches](../msbuild/msbuild-tasks.md)
+- [Tâches MSBuild](../msbuild/msbuild-tasks.md)
 - [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)
 - [Informations de référence sur le schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)

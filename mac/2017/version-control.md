@@ -1,18 +1,18 @@
 ---
 title: Gestion de version
 description: Utilisation de Git et de Subversion dans Visual Studio pour Mac.
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 49917483-28AA-4598-A847-71F1F2E0DCB5
-ms.openlocfilehash: 0505177e01afd701fe5506df7dd0fc2a2e1f859c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 47b51306f8d0916eccd7db3a4740843bb7efba85
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62986522"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984726"
 ---
-# <a name="version-control"></a>Gestion de version
+# <a name="version-control"></a>Contrôle de version
 
 La gestion de version est un système de gestion de fichiers sur plusieurs versions auquel contribuent de nombreux développeurs, notamment dans le cadre du développement de logiciels. L’objectif principal d’un système de gestion de version (_VCS_ (Version Control System) est de trouver une solution qui permet à tous les utilisateurs de travailler sur le codebase en même temps.
 
@@ -22,7 +22,7 @@ Si le dépôt est la banque de données centrale, il est logique que chaque util
 
 Subversion est un système de gestion de versions centralisé, ce qui signifie qu’il existe un seul serveur contenant tous les fichiers et révisions, à partir duquel les utilisateurs peuvent extraire n’importe quelle version de n’importe quel fichier. Quand les fichiers sont extraits d’un dépôt Subversion distant, l’utilisateur obtient une capture instantanée du dépôt à ce point dans le temps.
 
-Git est un système de gestion de versions distribué qui permet aux équipes de travailler simultanément sur les mêmes documents. Avec Git, il peut exister un seul serveur contenant tous les fichiers, mais l’intégralité du dépôt est clonée localement sur votre machine quand un dépôt est extrait de cette source centrale.
+GiT est un système de gestion de versions distribué qui permet aux équipes de travailler simultanément sur les mêmes documents. Avec Git, il peut exister un seul serveur contenant tous les fichiers, mais l’intégralité du dépôt est clonée localement sur votre machine quand un dépôt est extrait de cette source centrale.
 
 ## <a name="basic-concepts"></a>Concepts de base
 
@@ -31,7 +31,7 @@ Visual Studio pour Mac prend en charge les systèmes de gestion de version Git e
 * [Configuration d’un dépôt Git](set-up-git-repository.md)
 * [Utilisation de Git](working-with-git.md)
 * [Configuration d’un dépôt Subversion](set-up-subversion-repository.md)
-* [Utilisation de Subversion](working-with-subversion.md)
+* [Utilisation d’une sous-version](working-with-subversion.md)
 
 ## <a name="see-also"></a>Voir aussi
 

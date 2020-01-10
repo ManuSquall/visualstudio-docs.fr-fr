@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 6ed003df875f7fdc75278210dc3010e93d280186
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 77b26b672dc40b65823cdabb6e1a42549112de65
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911737"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75573311"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Utilisation de scripts Windows PowerShell pour publier sur des environnements de développement et de test
 
@@ -44,13 +44,13 @@ Visual Studio génère un dossier au niveau solution appelé **PublishScripts**
 
 Le script de publication contient des étapes de publication spécifiques pour le déploiement sur un site web ou une machine virtuelle. Visual Studio propose la coloration de syntaxe pour le développement de Windows PowerShell. Vous pouvez bénéficier d’une aide sur les fonctions et modifier librement les fonctions dans le script en fonction de l’évolution de vos besoins.
 
-### <a name="windows-powershell-module"></a>Module Windows PowerShell
+### <a name="windows-powershell-module"></a>module Windows PowerShell
 
 Le module Windows PowerShell généré par Visual Studio contient des fonctions que le script de publication utilise. Ces fonctions Azure PowerShell ne sont pas destinées à être modifiées. Consultez [Installation et configuration d’Azure PowerShell](/powershell/azure/overview).
 
 ### <a name="json-configuration-file"></a>Fichier de configuration JSON
 
-Le fichier JSON est créé dans le dossier **Configurations** et contient des données de configuration qui spécifient exactement les ressources à déployer sur Azure. Le nom du fichier généré par Visual Studio est projet-nom-WAWS-dev.json, si vous avez créé un site web, ou projet-nom-VM-dev.json, si vous avez créé une machine virtuelle. Voici un exemple de fichier de configuration JSON généré lorsque vous créez un site web. La plupart des valeurs sont explicites. Le nom du site web est généré par Azure ; il peut donc ne pas correspondre au nom de votre projet.
+Le fichier JSON est créé dans le dossier **Configurations** et contient des données de configuration qui spécifient exactement les ressources à déployer sur Azure. Le nom du fichier généré par Visual Studio est nom_projet-WAWS-dev.json si vous avez créé un site web, ou nom_projet-VM-dev.json si vous avez créé une machine virtuelle. Voici un exemple de fichier de configuration JSON généré lorsque vous créez un site web. La plupart des valeurs sont explicites. Le nom du site web est généré par Azure ; il peut donc ne pas correspondre au nom de votre projet.
 
 ```json
 {
@@ -152,9 +152,9 @@ Si vous n’avez jamais exécuté de script Windows PowerShell auparavant, vous
 
 1. Créez le package Web Deploy pour votre projet. Un package Web Deploy est une archive compressée (fichier .zip) contenant les fichiers que vous souhaitez copier sur votre site web ou sur votre machine virtuelle. Vous pouvez créer des packages Web Deploy dans Visual Studio pour toute application web.
 
-   ![Créer un package Web Deploy](./media/vs-azure-tools-publishing-using-powershell-scripts/IC767885.png)
+   ![Créer un package de déploiement Web](./media/vs-azure-tools-publishing-using-powershell-scripts/IC767885.png)
 
-   Pour plus d’informations, consultez [Comment : créer un package de déploiement Web dans Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx). Vous pouvez également automatiser la création de votre package Web Deploy, comme indiqué dans la section [Personnalisation et extension des scripts de publication](#customizing-and-extending-the-publish-scripts).
+   Pour plus d’informations, consultez [Comment : créer un package de déploiement web dans Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx). Vous pouvez également automatiser la création de votre package Web Deploy, comme indiqué dans la section [Personnalisation et extension des scripts de publication](#customizing-and-extending-the-publish-scripts).
 
 1. Dans l’**Explorateur de solutions**, ouvrez le menu contextuel du script, puis choisissez **Ouvrir avec PowerShell ISE**.
 1. Si vous exécutez des scripts Windows PowerShell sur cet ordinateur pour la première fois, ouvrez une fenêtre d’invite de commandes avec des privilèges d’administrateur et tapez la commande suivante :
@@ -173,7 +173,7 @@ Si vous n’avez jamais exécuté de script Windows PowerShell auparavant, vous
 
     Notez que lorsque vous automatisez le script, cette méthode de renseignement des informations d’identification Azure ne fonctionne pas. À la place, vous devez utiliser le fichier `.publishsettings` pour fournir des informations d’identification. Une fois seulement, vous utilisez la commande **Get-AzurePublishSettingsFile** pour télécharger le fichier à partir d’Azure. Ensuite, vous utilisez **Import-AzurePublishSettingsFile** pour importer le fichier. Pour des instructions détaillées, consultez [Installation et configuration d’Azure PowerShell](/powershell/azure/overview).
 
-1. (Facultatif) Si vous souhaitez créer des ressources Azure telles que la machine virtuelle, la base de données et le site web sans publier votre application web, utilisez la commande **Publish-WebApplication.ps1** avec l’argument **-Configuration** défini dans le fichier de configuration JSON. Cette ligne de commande utilise le fichier de configuration JSON pour déterminer les ressources à créer. Étant donné qu’elle utilise les paramètres par défaut pour les autres arguments de ligne de commande, elle crée les ressources, mais ne publie pas votre application web. L’option –Verbose vous donne plus d’informations sur ce qui se passe.
+1. (Facultatif) Si vous souhaitez créer des ressources Azure telles que la machine virtuelle, la base de données et le site web sans publier votre application web, utilisez la commande **Publish-WebApplication.ps1** avec l’argument **-Configuration** défini dans le fichier de configuration JSON. Cette ligne de commande utilise le fichier de configuration JSON pour déterminer les ressources à créer. Étant donné qu’elle utilise les paramètres par défaut pour les autres arguments de ligne de commande, elle crée les ressources, mais ne publie pas votre application web. L'option –Verbose vous donne plus d'informations sur ce qui se passe.
 
     ```powershell
     Publish-WebApplication.ps1 -Verbose –Configuration C:\Path\WebProject-WAWS-dev.json
@@ -250,7 +250,7 @@ Pour automatiser la création de votre projet, ajoutez le code appelant MSBuild 
         #Write a function to build and package your web application
     ```
 
-    Pour générer votre application web, utilisez MsBuild.exe. Pour obtenir de l’aide, consultez le Guide de référence des lignes de commande MSBuild à l’adresse : [http://go.microsoft.com/fwlink/?LinkId=391339](../msbuild/msbuild-command-line-reference.md).
+    Pour générer votre application web, utilisez MsBuild.exe. Pour obtenir de l’aide, consultez Référence de la [ligne de commande MSBuild](../msbuild/msbuild-command-line-reference.md)
 
     ```powershell
     Write-VerboseWithTime 'Build-WebDeployPackage: Start'
@@ -347,5 +347,5 @@ Pour obtenir de l’aide pour les fonctions que vous pouvez utiliser à l’invi
 | Publish-WebApplication |Crée et déploie des applications web, des machines virtuelles, des bases de données SQL et des comptes de stockage pour un projet web Visual Studio. |
 | Test-WebApplication |Cette fonction n’est pas implémentée. Vous pouvez ajouter des commandes à cette fonction pour tester votre application. |
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 Pour en savoir plus sur l’écriture de scripts PowerShell lisez [Écriture de scripts avec Windows PowerShell](https://technet.microsoft.com/library/bb978526.aspx) et consultez d’autres scripts Azure PowerShell sur le [Centre de scripts](https://azure.microsoft.com/documentation/scripts/).

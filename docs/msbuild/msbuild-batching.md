@@ -6,17 +6,17 @@ helpviewer_keywords:
 - batching [MSBuild]
 - MSBuild, batching
 ms.assetid: d35c085b-27b8-49d7-b6f8-8f2f3a0eec38
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22aa04bb41363eebc20257236515634f5e7e14ee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 7d62e1824d72933d8cb5c3c345ed8788435a6f20
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62931516"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592098"
 ---
 # <a name="msbuild-batching"></a>Traitement par lots MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] a la capacité de diviser les listes d’éléments en différentes catégories, ou lots, en fonction des métadonnées des éléments, et d’exécuter une cible ou une tâche une fois avec chaque lot.
@@ -85,13 +85,13 @@ L’exemple suivant montre un élément `Target` contenant un attribut `Outputs`
 Pour obtenir un autre exemple de traitement par lots des cibles, consultez [Métadonnées d’élément dans le traitement par lots des cibles](../msbuild/item-metadata-in-target-batching.md).
 
 ## <a name="property-functions-using-metadata"></a>Fonctions de propriété utilisant des métadonnées
-Le traitement par lots peut être contrôlé par des fonctions de propriété qui incluent des métadonnées. Par exemple :
+Le traitement par lots peut être contrôlé par des fonctions de propriété qui incluent des métadonnées. Par exemple :
 
 `$([System.IO.Path]::Combine($(RootPath),%(Compile.Identity)))`
 
 utilise <xref:System.IO.Path.Combine%2A> pour combiner un chemin de dossier racine avec un chemin d’élément de compilation.
 
-Les fonctions de propriété ne peuvent pas apparaître dans des valeurs de métadonnées. Par exemple :
+Les fonctions de propriété ne peuvent pas apparaître dans des valeurs de métadonnées. Par exemple :
 
 `%(Compile.FullPath.Substring(0,3))`
 

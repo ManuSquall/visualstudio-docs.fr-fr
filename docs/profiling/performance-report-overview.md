@@ -10,14 +10,15 @@ ms.assetid: 7324c24c-fd09-479b-b2ad-e0c3b613e040
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 04abc2de21469b696df1365b001b60b9b3ba5e8c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 517156677a6d3711fa5dc2e4a15629a55229cfe2
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432019"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74772230"
 ---
 # <a name="performance-report-overview"></a>Vue d’ensemble du rapport Performances
 Vous pouvez afficher les données de profilage d’une session de performance dans la fenêtre **Rapport de performances** de l’environnement de développement intégré (IDE) de Visual Studio Team System Development Edition. Les données de profilage sont enregistrées dans des fichiers .vsp et .vsps. Grâce aux fenêtres de vue Rapport, vous pouvez afficher et analyser les problèmes de performances d’une application.
@@ -34,7 +35,7 @@ Vous pouvez afficher les données de profilage d’une session de performance da
 
  La fenêtre Rapport de performances fournit les vues de données suivantes :
 
-### <a name="summary-view"></a>Vue Résumé
+### <a name="summary-view"></a>Affichage du résumé
  Par défaut, les données de profilage s’affichent dans la vue Résumé. Cette vue constitue un point de départ pour votre examen de problèmes de performances. À partir de chaque ligne de la vue Résumé, vous pouvez passer à des vues plus détaillées en cliquant avec le bouton droit sur le nom de la fonction ou du module. Pour plus d’informations, consultez [Résumé, vue](../profiling/summary-view.md).
 
 ### <a name="callercallee-view"></a>Vue Appelant/Appelé

@@ -1,5 +1,5 @@
 ---
-title: Commandes
+title: Commands
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -7,19 +7,19 @@ helpviewer_keywords:
 - commands, Visual Studio
 - command syntax
 ms.assetid: 76ffa394-ee89-4629-aba9-1a62b72e6cc1
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3af3685288c00e27bb63cd45c682ab8b6354f4e5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ac0284ce274791f21c9c0f85d265d92a7097cb09
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72622120"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596370"
 ---
-# <a name="visual-studio-commands"></a>commandes Visual Studio
+# <a name="visual-studio-commands"></a>Commandes Visual Studio
 
 Vous pouvez entrer des commandes Visual Studio depuis la fenêtre **Commande**, depuis la fenêtre **Exécution** ou depuis la zone **Rechercher/Commande**. Dans chaque cas, le signe Supérieur à (`>`) indique qu’une commande doit suivre, et non pas une opération de recherche ou de débogage.
 
@@ -31,7 +31,7 @@ De nombreuses commandes ont des alias. Pour obtenir la liste des alias de comman
 
 ## <a name="escape-character"></a>Caractère d'échappement
 
-Le caractère d’échappement pour les commandes Visual Studio est l’accent circonflexe (^). Le caractère d'échappement signifie que le caractère situé juste après ce signe est interprété littéralement, et non pas comme un caractère de contrôle. Ceci permet d’incorporer des guillemets ("), des espaces, des barres obliques, des accents circonflexes ou tout autre caractère littéral dans une valeur de paramètre ou de commutateur, à l’exception des noms de commutateur. Exemple :
+Le caractère d’échappement pour les commandes Visual Studio est l’accent circonflexe (^). Le caractère d'échappement signifie que le caractère situé juste après ce signe est interprété littéralement, et non pas comme un caractère de contrôle. Ceci permet d’incorporer des guillemets ("), des espaces, des barres obliques, des accents circonflexes ou tout autre caractère littéral dans une valeur de paramètre ou de commutateur, à l’exception des noms de commutateur. Par exemple :
 
 ```
 >Edit.Find ^^t /regex
@@ -72,7 +72,7 @@ Les commandes suivantes prennent des arguments ou commutateurs :
 | [Définir le thread actuel](../../ide/reference/set-current-thread-command.md) | Vous permet d’afficher un thread spécifique. |
 | [Définir la base](../../ide/reference/set-radix-command.md) | Détermine le nombre d’octets à afficher. |
 | [Shell](../../ide/reference/shell-command.md) | Lance les programmes à partir de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] comme si la commande avait été exécutée à partir de l’invite de commandes. |
-| [Afficher le navigateur web, commande](../../ide/reference/showwebbrowser-command.md) | Affiche l’URL spécifiée dans une fenêtre de navigateur web au sein ou en dehors de l’environnement de développement intégré (IDE). |
+| [Afficher le navigateur Web, commande](../../ide/reference/showwebbrowser-command.md) | Affiche l’URL spécifiée dans une fenêtre de navigateur web au sein ou en dehors de l’environnement de développement intégré (IDE). |
 | [Démarrer](../../ide/reference/start-command.md) | Commence le processus de débogage et permet de spécifier comment les erreurs sont gérées. |
 | [Chemin](../../ide/reference/symbol-path-command.md) | Définit la liste des répertoires où le débogueur recherche des symboles. |
 | [Point d'arrêt](../../ide/reference/toggle-breakpoint-command.md) | Active ou désactive le point d’arrêt, en fonction de son état actuel, à l’emplacement actuel dans le fichier. |

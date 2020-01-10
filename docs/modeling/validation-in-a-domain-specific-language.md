@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, constraints
 - Domain-Specific Language, validation
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb059a9175c61c238abf0881cd96e4179fcf6f65
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 7a37dbb4d9754641b4bcca826ff0ec77c7298d9b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748170"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594004"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Validation dans un langage spécifique à un domaine
 En tant qu'auteur d'un langage spécifique à un domaine (DSL), vous pouvez définir des contraintes de validation afin de vérifier que le modèle créé par l'utilisateur a un sens. Par exemple, si votre DSL permet aux utilisateurs de tracer l'arbre généalogique d'une famille et de ses ancêtres, vous pouvez écrire une contrainte qui garantit que les enfants ont des dates de naissance postérieures à celles de leurs parents.
@@ -82,7 +82,7 @@ En tant qu'auteur d'un langage spécifique à un domaine (DSL), vous pouvez déf
 
     L'attribut ValidationCategories spécifie à quel moment la méthode est exécutée.
 
-   Exemple :
+   Par exemple :
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;
@@ -125,7 +125,7 @@ public partial class ParentsHaveChildren
 
  Notez les points suivants relatifs au code :
 
-- Vous pouvez ajouter des méthodes de validation aux classes de domaine ou relations de domaine. Le code de ces types se trouve dans **Dsl\Generated Code\Domain \*. cs**.
+- Vous pouvez ajouter des méthodes de validation aux classes de domaine ou relations de domaine. Le code de ces types se trouve dans **Dsl\Generated Code\Domain\*. cs**.
 
 - Chaque méthode de validation s'applique à chaque instance de sa classe et de ses sous-classes. Dans le cas d'une relation de domaine, chaque instance est un lien entre deux éléments de modèle.
 
@@ -144,7 +144,7 @@ public partial class ParentsHaveChildren
 ## <a name="validation-categories"></a>Catégories de validation
  Dans l'attribut <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute>, vous spécifiez à quel moment la méthode de validation doit s'exécuter.
 
-|Category|Exécution|
+|Catégorie|Exécution|
 |-|-|
 |<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|Lorsque l'utilisateur appelle la commande de menu Valider.|
 |<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|Lorsque le fichier de modèle est ouvert.|
@@ -173,11 +173,11 @@ public partial class Person
         { ...
 ```
 
- **Agrégation des contraintes de validation.** Pour appliquer la validation dans un ordre prévisible, définissez une méthode de validation unique sur une classe propriétaire, telle que l’élément racine de votre modèle. Cette technique permet aussi de regrouper plusieurs rapports d'erreur au sein d'un seul message.
+ **Agrégation des contraintes de validation.** Pour appliquer la validation dans un ordre prévisible, définissez une méthode de validation unique sur une classe propriétaire, telle que l'élément racine de votre modèle. Cette technique permet aussi de regrouper plusieurs rapports d'erreur au sein d'un seul message.
 
  L'inconvénient est que la méthode combinée est moins facile à gérer et que les contraintes doivent toutes avoir les mêmes `ValidationCategories`. Il est donc recommandé que vous conserviez chaque contrainte dans une méthode distincte si possible.
 
- **Passage de valeurs dans le cache de contexte.** Le paramètre de contexte contient un dictionnaire dans lequel vous pouvez placer des valeurs arbitraires. Le dictionnaire demeure pendant la durée de l'exécution de la validation. Une méthode de validation particulière peut, par exemple, conserver le nombre d'erreurs dans le contexte et l'utiliser pour éviter que la fenêtre d'erreurs ne déborde sous les messages répétés. Exemple :
+ **Passage de valeurs dans le cache de contexte.** Le paramètre de contexte dispose d'un dictionnaire dans lequel vous pouvez placer des valeurs arbitraires. Le dictionnaire demeure pendant la durée de l'exécution de la validation. Une méthode de validation particulière peut, par exemple, conserver le nombre d'erreurs dans le contexte et l'utiliser pour éviter que la fenêtre d'erreurs ne déborde sous les messages répétés. Par exemple :
 
 ```csharp
 List<ParentsHaveChildren> erroneousLinks;
@@ -193,7 +193,7 @@ if (erroneousLinks.Count < 5) { context.LogError( ... ); }
 
  Si vous définissez la multiplicité d'un rôle d'une relation de domaine sur 1..* ou 1..1, mais que l'utilisateur ne crée pas le lien de cette relation, un message d'erreur de validation s'affiche.
 
- Par exemple, si votre DSL a des classes Person et Town et une relation PersonLivesInTown avec une relation **1.. \\** * au rôle ville, alors pour chaque personne qui n’a pas de ville, un message d’erreur s’affiche.
+ Par exemple, si votre DSL a des classes Person et Town et une relation PersonLivesInTown avec une relation **1..\\** * au rôle ville, alors pour chaque personne qui n’a pas de ville, un message d’erreur s’affiche.
 
 ## <a name="running-validation-from-program-code"></a>Exécution de la validation à partir du code de programme
  Vous pouvez exécuter la validation en accédant à un ValidationController ou en en créant un. Si vous souhaitez que les erreurs soient affichées à l’utilisateur dans la fenêtre d’erreur, utilisez l’ValidationController joint au DocData de votre diagramme. Par exemple, si vous écrivez une commande de menu, `CurrentDocData.ValidationController` est disponible dans la classe de l'ensemble de commandes :
@@ -213,7 +213,7 @@ partial class MyLanguageCommandSet
 
  Pour plus d’informations, consultez [Comment : ajouter une commande au menu contextuel](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
 
- Vous pouvez aussi créer un contrôleur de validation distinct et gérer les erreurs vous-même. Exemple :
+ Vous pouvez aussi créer un contrôleur de validation distinct et gérer les erreurs vous-même. Par exemple :
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;
@@ -327,9 +327,9 @@ validationController.ValidateCustom
 
  Cependant, ces techniques ne sont pas recommandées. Il est généralement préférable de laisser l'utilisateur décider de la façon dont un modèle non valide doit être corrigé.
 
- **Ajustez la modification pour restaurer la validité du modèle.** Par exemple, si l’utilisateur définit une propriété au-dessus du maximum autorisé, vous pouvez réinitialiser la propriété à la valeur maximale. Pour ce faire, définissez une règle. Pour plus d’informations, consultez [règles de propagation des modifications dans le modèle](../modeling/rules-propagate-changes-within-the-model.md).
+ **Ajustez la modification pour restaurer la validité du modèle.** Par exemple, si l'utilisateur définit une propriété au-dessus du maximum autorisé, vous pouvez réinitialiser la propriété à sa valeur maximale. Pour ce faire, définissez une règle. Pour plus d’informations, consultez [propager les modifications dans le modèle de règles](../modeling/rules-propagate-changes-within-the-model.md).
 
- **Restaure la transaction en cas de tentative de modification non valide.** Vous pouvez également définir une règle à cet effet, mais dans certains cas, il est possible de remplacer un gestionnaire de propriétés **OnValueChanging ()** , ou de substituer une méthode telle que `OnDeleted().` pour restaurer une transaction, utilisez `this.Store.TransactionManager.CurrentTransaction.Rollback().` pour plus d’informations, consultez [Domain, propriété Gestionnaires de modification de valeur](../modeling/domain-property-value-change-handlers.md).
+ **Restaure la transaction en cas de tentative de modification non valide.** Vous pouvez également définir une règle à cet effet, mais dans certains cas, il est possible de substituer un gestionnaire de propriétés **OnValueChanging ()** , ou de substituer une méthode telle que `OnDeleted().` pour restaurer une transaction, utilisez `this.Store.TransactionManager.CurrentTransaction.Rollback().` pour plus d’informations, consultez [gestionnaires de modification de valeur de propriété de domaine](../modeling/domain-property-value-change-handlers.md).
 
 > [!WARNING]
 > Assurez-vous que l'utilisateur sache que la modification a été ajustée ou annulée. Par exemple, utilisez `System.Windows.Forms.MessageBox.Show("message").`

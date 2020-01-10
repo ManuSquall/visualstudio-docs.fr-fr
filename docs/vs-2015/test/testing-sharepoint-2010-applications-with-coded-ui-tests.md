@@ -20,7 +20,7 @@ ms.locfileid: "74298010"
 
 L'ajout de tests codés de l'interface utilisateur dans une application SharePoint vous permet de vérifier si l'application entière, y compris ses contrôles d'interface utilisateur, fonctionne correctement. Les tests codés de l'interface utilisateur peuvent aussi valider les valeurs et la logique de l'interface utilisateur.
 
- **Conditions requises**
+ **Requirements**
 
 - Visual Studio Enterprise
 
@@ -34,12 +34,12 @@ L'ajout de tests codés de l'interface utilisateur dans une application SharePoi
 - ![Prérequis](../test/media/prereq.png "PREREQ") La prise en charge des contrôles Visio et PowerPoint 2010 dans votre application SharePoint n’est pas prise en charge.
 
 ## <a name="creating-a-coded-ui-test-for-your-sharepoint-app"></a>Créer un test d'interface utilisateur codé pour votre application SharePoint
- La [création de tests codés de l'interface utilisateur](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) pour vos applications SharePoint 2010 est identique à la création de tests pour d'autres types d'applications. L'enregistrement et la lecture sont pris en charge pour tous les contrôles sur l'interface de modification Web. L'interface de sélection des catégories et des composants WebPart est constituée de contrôles Web standard.
+ La[création de tests codés de l'interface utilisateur](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) pour vos applications SharePoint 2010 est identique à la création de tests pour d'autres types d'applications. L'enregistrement et la lecture sont pris en charge pour tous les contrôles sur l'interface de modification Web. L'interface de sélection des catégories et des composants WebPart est constituée de contrôles Web standard.
 
  ![Composants WebPart SharePoint](../test/media/cuit-sharepoint.png "CUIT_SharePoint")
 
 > [!NOTE]
-> Si vous enregistrez une action, validez les actions avant de générer le code. Étant donné que plusieurs comportements sont associés aux pointages de la souris, celle-ci est activée par défaut. Veillez à supprimer les pointages redondants de vos tests codés de l'interface utilisateur. Pour ce faire, modifiez le code du test ou utilisez l'[Éditeur de test codé de l'interface utilisateur](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
+> Si vous enregistrez une action, validez les actions avant de générer le code. Étant donné que plusieurs comportements sont associés aux pointages de la souris, celle-ci est activée par défaut. Veillez à supprimer les pointages redondants de vos tests codés de l'interface utilisateur. Pour ce faire, modifiez le code du test ou utilisez l' [Éditeur de test codé de l'interface utilisateur](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
 
 ## <a name="including-testing-of-office-2010-controls-within-your-sharepoint-app"></a>Inclusion du test des contrôles Office 2010 dans votre application SharePoint
  Pour activer l'automatisation de certains composants WebPart Office 2010 dans votre application SharePoint, vous devez apporter des modifications de code mineures.
@@ -53,7 +53,7 @@ L'ajout de tests codés de l'interface utilisateur dans une application SharePoi
 > [!WARNING]
 > La saisie de texte dans une cellule Excel, suivie d'une pression sur une touche de direction, ne fonctionne pas correctement. Utilisez la souris pour sélectionner des cellules.
 
- Si vous enregistrez des actions dans une cellule vide, vous devez modifier le code en double cliquant sur la cellule puis en effectuant une opération de définition de texte. Cela est nécessaire car un clic sur la cellule, suivi d'une action du clavier, active `textarea` dans la cellule. L'enregistrement simple de `setvalue` dans la cellule vide recherche `editbox` qui n'est pas présent jusqu'à ce qu'un clic soit effectué sur la cellule. Par exemple :
+ Si vous enregistrez des actions dans une cellule vide, vous devez modifier le code en double cliquant sur la cellule puis en effectuant une opération de définition de texte. Cela est nécessaire car un clic sur la cellule, suivi d'une action du clavier, active `textarea` dans la cellule. L'enregistrement simple de `setvalue` dans la cellule vide recherche `editbox` qui n'est pas présent jusqu'à ce qu'un clic soit effectué sur la cellule. Exemple :
 
 ```csharp
 Mouse.DoubliClick(uiItemCell,new Point(31,14));

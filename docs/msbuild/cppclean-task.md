@@ -14,22 +14,22 @@ helpviewer_keywords:
 - MSBuild (C++), CPPClean task
 - CPPClean task (MSBuild (C++))
 ms.assetid: b62a482e-8fb5-4999-b50b-6605a078e291
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d6e893dcf289c5060f519523b18b53b701f8055
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 827014e04c23239274e31b994fd0178cbe8e5883
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748123"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596071"
 ---
 # <a name="cppclean-task"></a>CPPClean, tâche
 Supprime les fichiers temporaires créés par MSBuild lorsqu’un C++ projet est généré. Le processus de suppression des fichiers de build est appelé *nettoyage*.
 
-## <a name="parameters"></a>Paramètres
+## <a name="parameters"></a>Parameters
  Le tableau ci-dessous décrit les paramètres de la tâche **CPPClean**.
 
 |Paramètre|Description|

@@ -1,5 +1,5 @@
 ---
-title: Remote Debugger Port Assignments | Microsoft Docs
+title: Affectations de port du débogueur distant | Microsoft Docs
 ms.custom: ''
 ms.date: 05/18/2018
 ms.topic: reference
@@ -48,10 +48,10 @@ En d’autres termes, le numéro de port attribué au débogueur distant est inc
 
 ## <a name="the-remote-debugger-port-on-64-bit-operating-systems"></a>Port du débogueur distant sur les systèmes d’exploitation 64 bits
 ::: moniker range=">=vs-2019"
- When the 64-bit version of the remote debugger is started, it uses the main port (4024) by default.  If you debug a 32-bit process, the 64-bit version of the remote debugger starts a 32-bit version of the remote debugger on port 4025 (the main port number incremented by 1). Si vous exécutez le débogueur distant 32 bits, il utilise le port 4024, le port 4025 n’est pas utilisé.
+ Quand la version 64 bits du débogueur distant est démarrée, elle utilise le port principal (4024) par défaut.  Si vous déboguez un processus 32 bits, la version 64 bits du débogueur distant démarre une version 32 bits du débogueur distant sur le port 4025 (le numéro de port principal est incrémenté de 1). Si vous exécutez le débogueur distant 32 bits, il utilise le port 4024, le port 4025 n’est pas utilisé.
 ::: moniker-end
 ::: moniker range="vs-2017"
- When the 64-bit version of the remote debugger is started, it uses the main port (4022) by default.  If you debug a 32-bit process, the 64-bit version of the remote debugger starts a 32-bit version of the remote debugger on port 4023 (the main port number incremented by 1). Si vous exécutez le débogueur distant 32 bits, il utilise le port 4022 et 4023 n’est pas utilisé.
+ Quand la version 64 bits du débogueur distant est démarrée, elle utilise le port principal (4022) par défaut.  Si vous déboguez un processus 32 bits, la version 64 bits du débogueur distant démarre une version 32 bits du débogueur distant sur le port 4023 (le numéro de port principal est incrémenté de 1). Si vous exécutez le débogueur distant 32 bits, il utilise le port 4022 et 4023 n’est pas utilisé.
 :::moniker-end
 
  Ce port est configurable à partir de la ligne de commande : **Msvsmon /wow64port \<<numéro_de_port>** .
@@ -72,4 +72,4 @@ En d’autres termes, le numéro de port attribué au débogueur distant est inc
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.FileUpload|32400|32398|
 
 ## <a name="see-also"></a>Voir aussi
-- [Remote Debugging](../debugger/remote-debugging.md)
+- [Débogage à distance](../debugger/remote-debugging.md)

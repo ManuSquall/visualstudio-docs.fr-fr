@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Configurer la réduction du bruit dans les vues des rapports | Microsoft Docs'
+title: Guide pratique pour configurer la réduction du bruit dans les vues Rapports | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,16 +12,17 @@ ms.assetid: b07e0375-bb73-47e3-8d1d-b9b492fb16c9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b55587bfde894c6104d805d9aae291191d1200ae
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ccfb9dab504bc3fa9405bb56c9fce82ed18820ac
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439145"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74776330"
 ---
-# <a name="how-to-configure-noise-reduction-in-report-views"></a>Procédure : Configurer la réduction du bruit dans les vues des rapports
+# <a name="how-to-configure-noise-reduction-in-report-views"></a>Guide pratique pour configurer la réduction du bruit dans les vues Rapports
 Vous pouvez configurer la réduction du bruit dans les rapports de performances en limitant la quantité de données affichées dans la vue Arborescence des appels et la vue Allocation. La réduction du bruit vous permet de repérer plus rapidement les problèmes de performances. Cette fonctionnalité est utile lorsque vous analysez des rapports de performances.
 
  Les options de configuration de la réduction de bruit sont les suivantes :
@@ -38,7 +39,7 @@ Vous pouvez configurer la réduction du bruit dans les rapports de performances 
 
 2. Pour activer la suppression, effectuez les étapes suivantes :
 
-    1. Sélectionnez **Activer la suppression**. Il s'agit du paramètre par défaut.
+    1. Sélectionnez **Activer la suppression**. Il s’agit du paramètre par défaut.
 
         > [!NOTE]
         > Si la réduction du bruit est activée, une barre d’informations s’affiche dans le rapport. Pour plus d’informations, consultez [Arborescence des appels, vue](../profiling/call-tree-view.md) et [Allocations, vue](../profiling/dotnet-memory-allocations-view.md).
@@ -47,7 +48,7 @@ Vous pouvez configurer la réduction du bruit dans les rapports de performances 
 
     3. Configurez le paramètre de seuil de votre choix en tapant un pourcentage dans la zone de texte **Seuil**.
 
-    4. Pour activer l’avertissement de réduction du bruit dans le rapport généré, sélectionnez **Afficher un avertissement dans le rapport généré lorsque l’option Réduction du bruit est activée**. Il s'agit du paramètre par défaut.
+    4. Pour activer l’avertissement de réduction du bruit dans le rapport généré, sélectionnez **Afficher un avertissement dans le rapport généré lorsque l’option Réduction du bruit est activée**. Il s’agit du paramètre par défaut.
 
 3. Pour désactiver la suppression, décochez l’option **Activer la suppression**.
 
@@ -61,7 +62,7 @@ Vous pouvez configurer la réduction du bruit dans les rapports de performances 
 
 2. Pour activer le repli, effectuez les étapes suivantes :
 
-    1. Sélectionnez **Activer le repli**. Il s'agit du paramètre par défaut.
+    1. Sélectionnez **Activer le repli**. Il s’agit du paramètre par défaut.
 
         > [!NOTE]
         > Si la réduction du bruit est activée, une barre d’informations s’affiche dans le rapport. Pour plus d’informations, consultez [Arborescence des appels, vue](../profiling/call-tree-view.md) et [Allocations, vue](../profiling/dotnet-memory-allocations-view.md).
@@ -70,7 +71,7 @@ Vous pouvez configurer la réduction du bruit dans les rapports de performances 
 
     3. Configurez le paramètre de seuil de votre choix en tapant un pourcentage dans la zone de texte **Seuil**.
 
-    4. Pour activer l’avertissement de réduction du bruit dans le rapport généré, sélectionnez **Afficher un avertissement dans le rapport généré lorsque l’option Réduction du bruit est activée**. Il s'agit du paramètre par défaut.
+    4. Pour activer l’avertissement de réduction du bruit dans le rapport généré, sélectionnez **Afficher un avertissement dans le rapport généré lorsque l’option Réduction du bruit est activée**. Il s’agit du paramètre par défaut.
 
 3. Pour désactiver le repli, décochez l’option **Activer le repli**.
 

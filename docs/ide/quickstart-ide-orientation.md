@@ -3,17 +3,17 @@ title: Présentation de l’IDE Visual Studio
 titleSuffix: ''
 ms.date: 02/21/2019
 ms.topic: quickstart
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 072233bde233712024d01fa315e11c679d39e9e5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 490d3edddd35ad5d72733824e3af41888839e946
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667804"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596968"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Démarrage rapide : premier aperçu de l'IDE Visual Studio
 
@@ -97,7 +97,7 @@ Pour continuer à explorer les fonctionnalités de Visual Studio, nous allons cr
 
    ![Éditeur dans Visual Studio](media/editor.png)
 
-## <a name="solution-explorer"></a>l'Explorateur de solutions
+## <a name="solution-explorer"></a>l’Explorateur de solutions
 
 L’**Explorateur de solutions**, qui se trouve généralement sur le côté droit de Visual Studio, affiche une représentation graphique de la hiérarchie des fichiers et des dossiers dans votre projet, solution ou dossier de code. Vous pouvez parcourir la hiérarchie et atteindre un fichier dans **l’Explorateur de solutions**.
 
@@ -119,7 +119,7 @@ La barre de menus en haut de la fenêtre de Visual Studio regroupe les commandes
 
 ::: moniker-end
 
-## <a name="error-list"></a>Liste d'erreurs
+## <a name="error-list"></a>Liste d’erreurs
 
 Ouvrez la fenêtre **Liste d’erreurs** en sélectionnant le menu **Affichage**, puis **Liste d’erreurs**.
 
@@ -127,7 +127,7 @@ La **Liste d’erreurs** affiche les erreurs, avertissements et messages concern
 
 ![Liste d’erreurs dans Visual Studio](media/quickstart-IDE-error-list.png)
 
-## <a name="output-window"></a>Fenêtre Sortie
+## <a name="output-window"></a>fenêtre Sortie
 
 La fenêtre **Sortie** affiche les messages de sortie après la génération de votre projet et les messages retournés par votre fournisseur de contrôle de code source.
 
@@ -187,7 +187,7 @@ Si vous rencontrez des problèmes pendant l’utilisation de Visual Studio, ou s
 
 ::: moniker-end
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 Nous avons exploré quelques fonctionnalités de Visual Studio pour nous familiariser avec l’interface utilisateur. Pour en apprendre davantage :
 

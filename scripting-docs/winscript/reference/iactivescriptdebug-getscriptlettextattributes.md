@@ -52,7 +52,7 @@ HRESULT GetScriptletTextAttributes(
  `dwFlags`  
  dans Indicateurs associés au scriptlet. Peut être une combinaison de ces valeurs :  
   
-|Constante|valeur|Description|  
+|Constante|Valeur|Description|  
 |--------------|-----------|-----------------|  
 |GETATTRTYPE_DEPSCAN|0x0001|Indique que les identificateurs et les opérateurs point doivent être identifiés avec les indicateurs SOURCETEXT_ATTR_IDENTIFIER et SOURCETEXT_ATTR_MEMBERLOOKUP, respectivement.|  
 |GETATTRFLAG_THIS|0x0100|Indique que l’identificateur de l’objet actuel doit être identifié avec l’indicateur SOURCETEXT_ATTR_THIS.|  
@@ -64,7 +64,7 @@ HRESULT GetScriptletTextAttributes(
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|valeur|Description|  
+|Valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
@@ -74,8 +74,8 @@ HRESULT GetScriptletTextAttributes(
  Cet appel est fourni car les scriptlets ont tendance à être des expressions et peuvent avoir une syntaxe différente de celle d’un bloc de script. Si elles ont la même syntaxe, l’implémentation de cette méthode sera identique à l’implémentation de la méthode `GetScriptTextAttributes`.  
   
 ## <a name="see-also"></a>Voir aussi  
- @No__t_1 de l' [interface IActiveScriptDebug](../../winscript/reference/iactivescriptdebug-interface.md)  
- [IActiveScriptDebug :: GetScriptTextAttributes](../../winscript/reference/iactivescriptdebug-getscripttextattributes.md)    
- @No__t_1 de l' [interface IDebugDocumentText](../../winscript/reference/idebugdocumenttext-interface.md)  
- [IDebugDocumentText :: GetText](../../winscript/reference/idebugdocumenttext-gettext.md)    
+   de l' [interface IActiveScriptDebug](../../winscript/reference/iactivescriptdebug-interface.md)  
+ [IActiveScriptDebug :: GetScriptTextAttributes](../../winscript/reference/iactivescriptdebug-getscripttextattributes.md)   
+ [IDebugDocumentText Interface](../../winscript/reference/idebugdocumenttext-interface.md)   
+ [IDebugDocumentText::GetText](../../winscript/reference/idebugdocumenttext-gettext.md)   
  [Énumération SOURCE_TEXT_ATTR](../../winscript/reference/source-text-attr-enumeration.md)

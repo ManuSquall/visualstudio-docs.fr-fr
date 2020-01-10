@@ -6,14 +6,15 @@ ms.assetid: 7c81e88b-a748-4cf5-a7a1-3429608e1b54
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 50b2e269ec292aaf37b8d0c707fa27ff8268a1f0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: e14fef1cfdc2dfc5f0d737ac09a08d90ab1de309
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969706"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74776977"
 ---
 # <a name="gc-vsperfcmd"></a>GC (VSPerfCmd)
 L’option **GC** active la collecte des données d’allocation mémoire et de durée de vie des objets de .NET Framework. L’option **GC** peut être utilisée seulement avec la méthode de profilage par échantillonnage et seulement avec l’option **Launch**.
@@ -28,7 +29,7 @@ L’option **GC** active la collecte des données d’allocation mémoire et de 
 VSPerfCmd.exe /Launch:AppName /GC[:{Allocation|Lifetime}] [Options]
 ```
 
-#### <a name="parameters"></a>Paramètres
+#### <a name="parameters"></a>Parameters
  **Allocation** Valeur par défaut. Collecte les données d’allocation mémoire de .NET Framework.
 
  **Lifetime** Collecte les données d’allocation de mémoire du .NET Framework et les données de durée de vie des objets du .NET Framework.
@@ -36,7 +37,7 @@ VSPerfCmd.exe /Launch:AppName /GC[:{Allocation|Lifetime}] [Options]
 ## <a name="required-options"></a>Options obligatoires
  L’option **GC** peut être utilisée seulement avec l’option **Launch**.
 
- **Launch :** `AppName` Démarre l’application spécifiée et commence le profilage à l’aide de la méthode d’échantillonnage.
+ **Launch :** `AppName` démarre l’application spécifiée et commence le profilage à l’aide de la méthode d’échantillonnage.
 
 ## <a name="example"></a>Exemple
  L’exemple suivant lance une application et collecte les données d’allocation mémoire de .NET Framework.

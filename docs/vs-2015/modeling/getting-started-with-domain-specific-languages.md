@@ -72,7 +72,7 @@ Cette rubrique explique les concepts de base de la définition et de l’utilisa
 
    - Choisissez une extension qui n’est pas associée à une application de votre ordinateur, ou sur n’importe quel ordinateur sur lequel vous souhaitez installer le DSL. Par exemple, **docx** et **htm** sont des extensions de nom de fichier inacceptable.
 
-   - L'Assistant vous avertit si l'extension que vous avez entrée est utilisée actuellement comme DSL. Dans ce cas, utilisez une autre extension de nom de fichier. Vous pouvez aussi réinitialiser l'instance expérimentale du Kit SDK Visual Studio pour effacer les anciennes conceptions expérimentales. Cliquez sur **Démarrer**, **Tous les programmes**, **Microsoft Visual Studio 2010 SDK**, **Outils**, puis **Réinitialiser l'instance expérimentale de Microsoft Visual Studio 2010**.
+   - L'Assistant vous avertit si l'extension que vous avez entrée est utilisée actuellement comme DSL. Dans ce cas, utilisez une autre extension de nom de fichier. Vous pouvez aussi réinitialiser l'instance expérimentale du Kit SDK Visual Studio pour effacer les anciennes conceptions expérimentales. Cliquez **sur Démarrer**, sur **tous les programmes**, **Microsoft Visual Studio Kit de développement logiciel (SDK) 2010**, **Outils**, puis **réinitialisez l’instance Microsoft Visual Studio 2010 expérimentale**.
 
 7. Examinez les autres pages, puis cliquez sur **Terminer**.
 
@@ -101,7 +101,7 @@ Cette rubrique explique les concepts de base de la définition et de l’utilisa
 
 #### <a name="to-experiment-with-the-dsl"></a>Pour expérimenter le DSL
 
-1. Cliquez sur **Transformer tous les modèles** dans la barre d'outils de l'Explorateur de solutions. Cela régénère la majeure partie du code source à partir de DslDefinition. DSL.
+1. Cliquez sur **transformer tous les modèles** dans la barre d’outils Explorateur de solutions. Cela régénère la majeure partie du code source à partir de DslDefinition. DSL.
 
    > [!NOTE]
    > Chaque fois que vous modifiez DslDefinition. DSL, vous devez cliquer sur **transformer tous les modèles** avant de reconstruire la solution. Vous pouvez automatiser cette étape. Pour plus d’informations, consultez [automatisation de la transformation de tous les modèles](https://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).
@@ -216,7 +216,7 @@ Cette rubrique explique les concepts de base de la définition et de l’utilisa
 
     2. Cliquez sur **transformer tous les modèles** dans la barre d’outils de Explorateur de solutions
 
-    3. Appuyez sur F5. Attendez que l’instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] apparaisse.
+    3. Appuyez sur F5. Attendez que l’instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] apparaisse.
 
 4. Dans la solution de débogage de l’instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ouvrez un fichier de modèle de test. Faites glisser des éléments dans la boîte à outils. Notez que les légendes d’outils et les noms de type dans l’Explorateur DSL ont changé.
 
@@ -394,7 +394,7 @@ Cette rubrique explique les concepts de base de la définition et de l’utilisa
 
 #### <a name="to-reset-the-visual-studio-experimental-instance"></a>Pour réinitialiser l’instance expérimentale de Visual Studio
 
-1. Cliquez sur **Démarrer**, **Tous les programmes**, **Microsoft Visual Studio 2010 SDK**, **Outils**, puis **Réinitialiser l'instance expérimentale de Microsoft Visual Studio 2010**.
+1. Cliquez **sur Démarrer**, sur **tous les programmes**, **Microsoft Visual Studio Kit de développement logiciel (SDK) 2010**, **Outils**, puis **réinitialisez l’instance Microsoft Visual Studio 2010 expérimentale**.
 
 2. Reconstruisez les DSL expérimentales ou d’autres extensions expérimentales [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que vous souhaitez utiliser.
 

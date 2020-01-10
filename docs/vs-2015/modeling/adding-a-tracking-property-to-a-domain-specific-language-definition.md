@@ -141,7 +141,7 @@ Cette procédure pas à pas montre comment ajouter une propriété de suivi à u
 
 #### <a name="to-transform-the-text-templates"></a>Pour transformer les modèles de texte
 
-1. Dans la barre d'outils **Explorateur de solutions**, cliquez sur **Transformer tous les modèles**.
+1. Dans la barre d’outils **Explorateur de solutions** , cliquez sur **transformer tous les modèles**.
 
 2. Le système régénère le code pour la solution et enregistre DslDefinition. DSL. Pour plus d’informations sur le format XML des fichiers de définition, consultez [le fichier DslDefinition. DSL](../modeling/the-dsldefinition-dsl-file.md).
 

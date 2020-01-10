@@ -5,17 +5,17 @@ ms.topic: conceptual
 f1_keywords:
 - System.Activities.Presentation.View.DesignTimeVariable.UI
 ms.assetid: 0318dfb0-bf8f-4f92-9b86-ae4c1b2161ad
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59a0da5ad0345ba0733f52d087b262bdc706cd21
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2ec5e6d16d17024b0b49f977b87ddacc275e5860
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650249"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593172"
 ---
 # <a name="how-to-use-the-variable-designer"></a>Procédure : utiliser le concepteur de variables
 
@@ -31,7 +31,7 @@ Le concepteur de variables permet de créer des variables en vue d’une utilisa
 
 3. Ouvrez le concepteur de variables en cliquant sur le bouton **variables** dans le coin inférieur gauche de la zone de conception. Le concepteur de variables s'affiche.
 
-4. Cliquez sur la ligne vide intitulée **créer une variable**. Cette opération ajoute une nouvelle ligne avec une nouvelle variable à l’aide des valeurs par défaut suivantes : VariableX pour le **nom** où x est un entier avec une valeur initiale de 1 qui est automatiquement incrémentée pour créer des noms de variables uniques, **chaîne** pour la **variable type**et **séquence** pour l' **étendue**. Aucune valeur n’est ajoutée pour **default**. Vous pouvez modifier ces valeurs à tout moment pendant le processus de conception du workflow.
+4. Cliquez sur la ligne vide intitulée **créer une variable**. Cette opération ajoute une nouvelle ligne avec une nouvelle variable en utilisant les valeurs par défaut suivantes : VariableX pour le **nom** où x est un entier avec une valeur initiale de 1 qui est automatiquement incrémentée pour créer des noms de variables uniques, une **chaîne** pour le **type de variable**et une **séquence** pour l' **étendue**. Aucune valeur n’est ajoutée pour **default**. Vous pouvez modifier ces valeurs à tout moment pendant le processus de conception du workflow.
 
     > [!NOTE]
     > Pour supprimer une variable, sélectionnez la variable en cliquant dessus, puis appuyez sur la touche **Suppr** .

@@ -37,28 +37,28 @@ helpviewer_keywords:
 - line numbers
 - virtual space
 ms.assetid: 49ee7306-9d46-4170-850f-a1716171752d
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22ab23911baab30c7617525d318795b1be708bb9
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 9815bdec94ce32a3bfcc170dd95d834bc43ea58f
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747850"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566876"
 ---
 # <a name="options-dialog-box-text-editor--all-languages"></a>Boîte de dialogue Options : éditeur de texte \> tous les langages
 
 Cette boîte de dialogue vous permet de modifier le comportement par défaut de l’éditeur de code. Ces paramètres s’appliquent également à d’autres éditeurs basés sur l’éditeur de code, tels que le mode Source du concepteur HTML. Pour ouvrir cette boîte de dialogue, sélectionnez **Options** dans le menu **Outils**. Dans le dossier **Éditeur de texte**, développez le sous-dossier **Tous les langages**, puis choisissez **Général**.
 
 > [!CAUTION]
-> Cette page définit les options par défaut pour tous les langages de développement. N’oubliez pas que la réinitialisation d’une option dans cette boîte de dialogue entraîne la réinitialisation des options générales dans tous les langages quels que soient les choix effectués. Pour modifier les options de l’éditeur de texte pour un seul langage, développez le sous-dossier de ce langage et sélectionnez ses pages d’options.
+> Cette page définit des options par défaut pour tous les langages de développement. N’oubliez pas que la réinitialisation d’une option dans cette boîte de dialogue entraîne la réinitialisation des options générales dans tous les langages quels que soient les choix effectués. Pour modifier les options de l’éditeur de texte pour un seul langage, développez le sous-dossier de ce langage et sélectionnez ses pages d’options.
 
 Une coche grisée s’affiche quand une option a été sélectionnée dans les pages d’options générales pour certains langages de programmation mais pas pour d’autres.
 
-## <a name="statement-completion"></a>Compléter automatiquement les instructions
+## <a name="statement-completion"></a>saisie semi-automatique des instructions
 
 **Répertorier automatiquement les membres**
 
@@ -89,7 +89,7 @@ Lorsque cette option est sélectionnée, toute partie d’une ligne qui dépasse
 
 Lorsque cette option est sélectionnée, un indicateur fléché de retour s’affiche à l’endroit où une ligne longue est automatiquement renvoyée à une deuxième ligne.
 
-![Capture d'écran LineBreakSymbol](../../ide/reference/media/linebreak.gif)
+![Capture d'écran de LineBreakSymbol](../../ide/reference/media/linebreak.gif)
 
 Désactivez cette option si vous préférez ne pas afficher ces indicateurs.
 
@@ -119,7 +119,7 @@ Cette option définit le comportement de l’éditeur lorsque vous placez le poi
 
 - Lorsque cette option est désactivée, la commande Couper supprime les lignes vides. Toutefois, les données figurant dans le Presse-papiers sont conservées. Par conséquent, si vous utilisez ensuite la commande Coller, le contenu le plus récemment copié dans le Presse-papiers est collé. Si vous n'avez rien copié auparavant, rien n'est collé.
 
-Ce paramètre n’a aucun effet sur les actions Copier ni Couper lorsqu’une ligne n’est pas vide. Si rien n'est sélectionné, toute la ligne est copiée ou coupée. Si vous effectuez ensuite une action Coller, le texte de la ligne toute entière et son caractère de ligne de fin sont collés.
+Ce paramètre n'a aucun effet sur les commandes Copier ou Couper lorsqu'une ligne n'est pas vide. Si rien n'est sélectionné, toute la ligne est copiée ou coupée. Si vous effectuez ensuite une action Coller, le texte de la ligne toute entière et son caractère de ligne de fin sont collés.
 
 > [!TIP]
 > Pour afficher les indicateurs d’espaces, de tabulations et de fins de ligne et distinguer ainsi les lignes en retrait de celles qui sont complètement vides, sélectionnez **Avancé** dans le menu **Edition**, puis choisissez **Afficher les espaces blancs**.
@@ -128,4 +128,4 @@ Ce paramètre n’a aucun effet sur les actions Copier ni Couper lorsqu’une li
 
 - [Options, Éditeur de texte, Tous les langages, Onglets](../../ide/reference/options-text-editor-all-languages-tabs.md)
 - [Général, Environnement, boîte de dialogue Options](../../ide/reference/general-environment-options-dialog-box.md)
-- [Utilisation de la fonctionnalité IntelliSense](../../ide/using-intellisense.md)
+- [Utilisation d’IntelliSense](../../ide/using-intellisense.md)

@@ -16,7 +16,7 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74295762"
 ---
-# <a name="step-11-run-your-program-and-try-other-features"></a>Étape 11 : exécuter votre programme et tester d’autres fonctionnalités
+# <a name="step-11-run-your-program-and-try-other-features"></a>Étape 11 : exécuter votre programme et tester d'autres fonctionnalités
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Votre programme est terminé et prêt à fonctionner. Vous pouvez l'exécuter et définir la couleur d'arrière-plan du contrôle PictureBox. Pour découvrir d'autres fonctionnalités, essayez d'améliorer le programme en modifiant la couleur du formulaire, en personnalisant les boutons et la case à cocher, et en modifiant les propriétés du formulaire.
@@ -34,19 +34,19 @@ Votre programme est terminé et prêt à fonctionner. Vous pouvez l'exécuter et
 3. Choisissez une couleur pour définir la couleur d'arrière-plan du contrôle PictureBox. Examinez attentivement la méthode `backgroundButton_Click()` pour comprendre son fonctionnement.
 
     > [!NOTE]
-    > Vous pouvez charger une image à partir d'Internet en collant son URL dans la boîte de dialogue **Ouvrir un fichier**. Essayez de trouver une image avec un arrière-plan transparent, pour que votre couleur d'arrière-plan soit visible.
+    > Vous pouvez charger une image à partir d’Internet en collant son URL dans la boîte de dialogue **Ouvrir un fichier**. Essayez de trouver une image avec un arrière-plan transparent, pour que votre couleur d'arrière-plan soit visible.
 
-4. Choisissez le bouton **Effacer l'image** pour vous assurer qu'elle s'efface. Quittez ensuite le programme en choisissant le bouton **Fermer**.
+4. Choisissez le bouton **Effacer l’image** pour vous assurer qu’elle s’efface. Quittez ensuite le programme en choisissant le bouton **Fermer**.
 
 ### <a name="to-try-other-features"></a>Pour essayer d’autres fonctionnalités
 
 - Modifiez la couleur du formulaire et des boutons à l’aide de la propriété **BackColor**.
 
-- Personnalisez vos boutons et votre case à cocher à l'aide des propriétés **Font** et **ForeColor**.
+- Personnalisez vos boutons et votre case à cocher à l’aide des propriétés **Font** et **ForeColor**.
 
 - Modifiez les propriétés**FormBorderStyle** et **ControlBox** de votre formulaire.
 
-- Utilisez les propriétés **AcceptButton** et **CancelButton** de votre formulaire pour que les boutons soient automatiquement sélectionnés quand l'utilisateur appuie sur la touche Entrée ou Échap. Paramétrez le programme pour qu'il ouvre la boîte de dialogue **Ouvrir un fichier** lorsque l'utilisateur appuie sur la touche ENTRÉE et pour qu'il ferme la boîte de dialogue lorsqu'il appuie sur la touche Échap.
+- Utilisez les propriétés **AcceptButton** et **CancelButton** de votre formulaire pour que les boutons soient automatiquement sélectionnés quand l’utilisateur appuie sur la touche Entrée ou Échap. Paramétrez le programme pour qu’il ouvre la boîte de dialogue **Ouvrir un fichier** quand l’utilisateur appuie sur la touche Entrée et pour qu’il ferme la boîte de dialogue quand il appuie sur la touche Échap.
 
 ### <a name="to-continue-or-review"></a>Pour continuer ou examiner
 

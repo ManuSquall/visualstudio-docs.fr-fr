@@ -3,17 +3,17 @@ title: Glossaire MSBuild
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: f767d8e4-24d8-4803-80eb-e857202dbe2c
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0b5feaa70a79a534af45c67e61b300feb1188bf
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: c3d5f9e402750978b1201c6b2a5b1ef0659e8789
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926355"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593666"
 ---
 # <a name="msbuild-glossary"></a>Glossaire MSBuild
 
@@ -100,7 +100,7 @@ property, function\
 Une fonction de propriété est une propriété système ou une méthode qui peut être utilisée pour évaluer des scripts MSBuild. Les méthodes de propriété permettent de lire l’heure système, de comparer des chaînes, d’établir des correspondances avec des expressions régulières et d’effectuer d’autres actions. Pour plus d’informations, consultez [Fonctions de propriétés](../msbuild/property-functions.md).
 
 property function, nested\
-Les fonctions de propriétés peuvent être combinées pour former des fonctions plus complexes. Par exemple :
+Les fonctions de propriétés peuvent être combinées pour former des fonctions plus complexes. Par exemple :
 
  `$([MSBuild]::BitwiseAnd(32,   $([System.IO.File]::GetAttributes(tempFile))))`
 
@@ -161,7 +161,7 @@ targets file\
 Fichier projet qui contient principalement des cibles et des tâches qui guident la génération. Par convention, il est pourvu de l’extension de fichier *.targets*. Les fichiers de cibles sont généralement importés à la fin des fichiers projet associés.
 
 task\
-Les tâches sont des unités de code exécutable auxquelles les projets [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ont recours pour exécuter des opérations de génération. Par exemple, une tâche peut compiler des fichiers d’entrée ou exécuter un outil externe. Pour plus d’informations, consultez l’article [Tâches MSBuild](../msbuild/msbuild-tasks.md).
+Les tâches sont des unités de code exécutable auxquelles les projets [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ont recours pour exécuter des opérations de génération. Par exemple, une tâche peut compiler des fichiers d'entrée ou exécuter un outil externe. Pour plus d’informations, consultez l’article [Tâches MSBuild](../msbuild/msbuild-tasks.md).
 
 transform\
 Conversion de type un-à-un d’une collection d’éléments en une autre. En plus de permettre à un projet de convertir des collections d’éléments, une transformation permet à une cible d’identifier un mappage direct entre ses entrées et sorties. Pour plus d’informations, consultez l’article [Transforms (Transformations MSBuild)](../msbuild/msbuild-transforms.md).

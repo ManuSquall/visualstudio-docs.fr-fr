@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - WPF Components tab, Choose Toolbox Items dialog box
 - Choose Toolbox Items dialog box, WPF Components tab
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c3de8e1d83a5d74f518eda2d5ab59bd9845b45a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 731fe05e90e01c60f0a7ff3a14917d6d7625bc1e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72630862"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75570555"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Choisir des éléments de boîte à outils, composants WPF
 
@@ -35,7 +35,7 @@ Cet onglet de la boîte de dialogue **Choisir des éléments de boîte à outils
 
 Les colonnes de l’onglet **Composants WPF** contient les informations suivantes :
 
-**Nom**
+**Name**
 
 Répertorie les noms des contrôles WPF dont les entrées correspondantes se trouvent dans le Registre de votre ordinateur.
 
@@ -65,7 +65,7 @@ Efface la chaîne de filtrage.
 
 Ouvre la boîte de dialogue **Ouvrir** qui permet d’accéder aux assemblys contenant des contrôles WPF. Utilisez cette boîte de dialogue pour charger les assemblys qui ne se trouvent pas dans le Global Assembly Cache.
 
-**Language**
+**Langue**
 
 Affiche la langue localisée de l’assembly qui contient le contrôle WPF sélectionné.
 

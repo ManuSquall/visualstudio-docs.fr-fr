@@ -10,17 +10,17 @@ helpviewer_keywords:
 - build events [Visual Studio]
 - builds [Visual Studio], events
 ms.assetid: b4ce1ad9-5215-4b6f-b6a2-798b249aa335
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a28f491ea5af53546f66e066bf8f78575708bc57
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 24f64cdaa52b923e288d704a10cb7a7438b028b4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656584"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591435"
 ---
 # <a name="how-to-specify-build-events-c"></a>Guide pratique pour spécifier des événements de build (C#)
 
@@ -49,7 +49,7 @@ Quand un projet est généré, les événements pré-build sont ajoutés à un f
 6. Dans la zone **Exécuter l’événement post-build**, spécifiez sous quelles conditions exécuter l’événement post-build.
 
    > [!NOTE]
-   > Pour ajouter une syntaxe longue, ou pour sélectionner des macros de génération à partir de la [boîte de dialogue Ligne de commande de l’événement prébuild/postbuild](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md), cliquez sur le bouton de sélection ( **...** ) afin d’afficher une zone d’édition.
+   > Pour ajouter une syntaxe longue, ou pour sélectionner des macros de génération à partir de la [boîte de dialogue Ligne de commande de l’événement prébuild/postbuild](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md), cliquez sur le bouton de sélection (**...**) afin d’afficher une zone d’édition.
 
    La syntaxe de l’événement de build peut inclure toute commande valide à une invite de commandes ou dans un fichier *.bat*. Le nom d’un fichier de commandes doit être précédé par `call` pour vous assurer que toutes les commandes suivantes sont exécutées.
 
@@ -132,7 +132,7 @@ La procédure suivante montre comment définir la version minimale du système d
 
    La commande accepte deux arguments : le chemin du manifeste de l’application (autrement dit, le dossier dans lequel le processus de génération crée le manifeste, en général *Projectname.publish*), et la nouvelle version du système d’exploitation.
 
-4. Générez le projet.
+4. créer le projet ;
 
 5. Copiez le fichier *.exe* dans un répertoire tel que *C:\TEMP\ChangeOSVersionVB.exe*.
 

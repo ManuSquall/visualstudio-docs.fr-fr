@@ -27,7 +27,7 @@ Pour obtenir la documentation la plus récente sur Visual Studio, consultez [DA0
   
 |||  
 |-|-|  
-|ID de règle|DA0038|  
+|ID de la règle|DA0038|  
 |Catégorie|Utilisation du .NET Framework|  
 |Méthode de profilage|Échantillonnage<br /><br /> Instrumentation<br /><br /> Mémoire .NET|  
 |Message|Un taux élevé de conflits de verrou .NET se produit. Analysez la raison de ce conflit de verrou en exécutant un profil Concurrence.|  

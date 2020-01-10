@@ -5,21 +5,21 @@ ms.topic: conceptual
 helpviewer_keywords:
 - analyzer packages, rule sets
 - rule sets for analyzers
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d40e88f123f397cfc77fe44757c2f72305390302
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0b3ed77a309448a854d733453c932fc007f7f591
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72606552"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75573285"
 ---
 # <a name="enable-a-category-of-rules"></a>Activer une catégorie de règles
 
-Les packages de l’analyseur peuvent inclure des fichiers [EditorConfig](use-roslyn-analyzers.md#set-rule-severity-in-an-editorconfig-file) et des [ensembles de règles](using-rule-sets-to-group-code-analysis-rules.md) prédéfinis qui permettent d’activer rapidement et facilement une catégorie de règles, telles que des règles de sécurité ou de conception. Le package de l’analyseur NuGet [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) comprend les deux ensembles de règles (à partir de la version 2.6.2) et les fichiers EditorConfig (à partir de la version 2.9.5). En activant une catégorie spécifique de règles, vous pouvez identifier des problèmes ciblés et des conditions spécifiques.
+Les packages de l’analyseur peuvent inclure des fichiers [EditorConfig](use-roslyn-analyzers.md#rule-severity) et des [ensembles de règles](using-rule-sets-to-group-code-analysis-rules.md) prédéfinis qui permettent d’activer rapidement et facilement une catégorie de règles, telles que des règles de sécurité ou de conception. Le package de l’analyseur NuGet [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) comprend les deux ensembles de règles (à partir de la version 2.6.2) et les fichiers EditorConfig (à partir de la version 2.9.5). En activant une catégorie spécifique de règles, vous pouvez identifier des problèmes ciblés et des conditions spécifiques.
 
 > [!NOTE]
 > L’activation des règles de l’analyseur et la définition de leur gravité à l’aide d’un fichier EditorConfig sont prises en charge à partir de Visual Studio 2019 version 16,3.
@@ -32,13 +32,13 @@ Le package NuGet Analyzer de FxCop comprend des ensembles de règles prédéfini
 - Documentation
 - Globalisation
 - Interopérabilité
-- La facilité
+- Maintenabilité
 - Attribution des noms
 - Performances
 - Porté depuis FxCop
 - Fiabilité
 - Sécurité
-- Utilisation
+- Contrôle
 
 Chacune de ces catégories de règles a un fichier de EditorConfig ou d’ensemble de règles pour :
 
@@ -53,13 +53,13 @@ Chacune de ces catégories de règles a un fichier de EditorConfig ou d’ensemb
 
 ## <a name="predefined-editorconfig-files"></a>Fichiers EditorConfig prédéfinis
 
-Les fichiers EditorConfig prédéfinis pour le package de l’analyseur Microsoft. CodeAnalysis. FxCopAnalyzers se trouvent dans le dossier *% UserProfile% \\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers \\ \<version \> \editorconfig* répertoire. Par exemple, le fichier EditorConfig pour activer toutes les règles de sécurité se trouve à l’emplacement *% UserProfile% \\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers \\ \<version \> \editorconfig\securityrulesenabled \\. editorconfig*.
+Les fichiers EditorConfig prédéfinis pour le package de l’analyseur Microsoft. CodeAnalysis. FxCopAnalyzers se trouvent dans le répertoire *% UserProfile%\\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<version\>\editorconfig* . Par exemple, le fichier EditorConfig pour activer toutes les règles de sécurité se trouve dans *% UserProfile%\\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<version\>\editorconfig\SecurityRulesEnabled\\. EditorConfig*.
 
 Copiez le fichier. editorconfig choisi dans le répertoire racine de votre projet.
 
 ## <a name="predefined-rule-sets"></a>Ensembles de règles prédéfinis
 
-Les fichiers d’ensemble de règles prédéfinis pour le package de l’analyseur Microsoft. CodeAnalysis. FxCopAnalyzers se trouvent dans le dossier *% UserProfile% \\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers \\ \<version \> \rulesets* Directory. Par exemple, le fichier d’ensemble de règles permettant d’activer toutes les règles de sécurité se trouve dans *% UserProfile% \\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers \\ \<version \> \rulesets\securityrulesenabled.RuleSet*.
+Les fichiers d’ensemble de règles prédéfinis pour le package de l’analyseur Microsoft. CodeAnalysis. FxCopAnalyzers se trouvent dans le répertoire *% UserProfile%\\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<version\>\rulesets* . Par exemple, le fichier d’ensemble de règles permettant d’activer toutes les règles de sécurité se trouve à l’emplacement *% UserProfile%\\. nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<version\>\rulesets\SecurityRulesEnabled.RuleSet*.
 
 Copiez un ou plusieurs ensembles de règles et collez-les dans le répertoire qui contient votre projet Visual Studio ou directement dans **Explorateur de solutions**.
 
@@ -80,7 +80,7 @@ Pour qu’une règle définisse l’ensemble de règles actif pour l’analyse d
 </PropertyGroup>
 ```
 
-#### <a name="net-framework"></a>.NET Framework
+#### <a name="net-framework"></a>.NET Framework
 
 Pour définir l’ensemble de règles actif en vue d’une analyse dans des projets .NET Framework, procédez comme suit :
 

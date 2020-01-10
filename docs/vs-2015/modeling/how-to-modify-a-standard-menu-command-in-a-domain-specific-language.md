@@ -22,7 +22,7 @@ ms.locfileid: "74300875"
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Comment : modifier une commande de menu standard dans un langage spécifique à un domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous pouvez modifier le comportement de certaines des commandes standard qui sont définies automatiquement dans votre DSL. Vous pourriez par exemple modifier la commande **Couper** pour qu'elle exclut les informations sensibles. Pour cela, vous devez substituer des méthodes dans une classe de jeu de commandes. Ces classes sont définies dans le fichier CommandSet.cs, dans le projet DslPackage, et son dérivées de <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.
+Vous pouvez modifier le comportement de certaines des commandes standard qui sont définies automatiquement dans votre DSL. Par exemple, vous pouvez modifier **Cut** afin d’exclure les informations sensibles. Pour cela, vous devez substituer des méthodes dans une classe de jeu de commandes. Ces classes sont définies dans le fichier CommandSet.cs, dans le projet DslPackage, et son dérivées de <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.
 
  En résumé, pour modifier une commande :
 
@@ -67,7 +67,7 @@ Vous pouvez modifier le comportement de certaines des commandes standard qui son
 
 2. Dans **DslPackage**, créez un dossier nommé **code personnalisé**. Dans ce dossier, créez un fichier de classe nommé `CommandSet.cs`.
 
-3. Dans le nouveau fichier, écrivez une déclaration partielle dont l'espace de noms et le nom sont les mêmes que ceux de la classe partielle générée. Par exemple :
+3. Dans le nouveau fichier, écrivez une déclaration partielle dont l'espace de noms et le nom sont les mêmes que ceux de la classe partielle générée. Exemple :
 
     ```
     using System;

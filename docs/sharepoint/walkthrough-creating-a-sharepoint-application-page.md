@@ -35,7 +35,7 @@ Cette procédure pas à pas décrit les tâches suivantes :
 - Test de la page de l’application.
 
 > [!NOTE]
-> Il est possible que pour certains des éléments de l'interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L’édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Il est possible que pour certains des éléments de l'interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L'édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Configuration requise
 
@@ -141,7 +141,7 @@ Lorsque vous exécutez le projet, le site SharePoint s’ouvre et la page applic
 
      La page d’application s’actualise et affiche tous les éléments que vous avez créés dans tous les sites de la batterie de serveurs.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 Pour plus d’informations sur les pages d’application SharePoint, consultez [créer des pages d’application pour SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).
 
@@ -154,4 +154,4 @@ Pour plus d’informations sur la façon de concevoir du contenu de page SharePo
 ## <a name="see-also"></a>Voir aussi
 
 [Procédure : créer une page d’application](../sharepoint/how-to-create-an-application-page.md)
-[type de page _ layouts](/previous-versions/office/aa979604(v=office.14)) de l’application
+[Type de page _layouts](/previous-versions/office/aa979604(v=office.14)) de l’application

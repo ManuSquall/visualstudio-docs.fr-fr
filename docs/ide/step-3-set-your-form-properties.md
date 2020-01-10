@@ -1,5 +1,5 @@
 ---
-title: 'Étape 3 : Définir les propriétés de votre formulaire'
+title: 'Étape 3 : définir les propriétés de votre formulaire'
 ms.date: 08/30/2019
 ms.assetid: 634ef037-1525-48c8-ac7f-abf04be69376
 ms.topic: tutorial
@@ -10,14 +10,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 870179243f99501cac7aaa68ce9929ae589ba79e
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 1be9af1badba19932c5d713bb4134448ccf84caf
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118967"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591747"
 ---
-# <a name="step-3-set-your-form-properties"></a>Étape 3 : Définir les propriétés de votre formulaire
+# <a name="step-3-set-your-form-properties"></a>Étape 3 : définir les propriétés de votre formulaire
 
 Ensuite, vous utilisez la fenêtre **Propriétés** pour changer l’apparence de votre formulaire.
 
@@ -28,19 +28,19 @@ Ensuite, vous utilisez la fenêtre **Propriétés** pour changer l’apparence d
 1. Choisissez un endroit quelconque dans le formulaire **Form1** pour le sélectionner. La fenêtre **Propriétés** doit maintenant afficher les propriétés du formulaire. Les formulaires ont plusieurs propriétés. Par exemple, vous pouvez définir la couleur du premier plan et de l'arrière-plan, le texte du titre qui est affiché en haut du formulaire, les dimensions du formulaire, ainsi que d'autres propriétés.
 
    > [!NOTE]
-   > Si la fenêtre **Propriétés** ne s’affiche pas, arrêtez votre application en choisissant le bouton carré **arrêter le débogage** de la barre d’outils, ou fermez simplement la fenêtre. Si l’application est arrêtée et que vous ne voyez toujours pas la fenêtre **Propriétés** , dans la barre de menus, choisissez **Afficher** > la**fenêtre Propriétés**.
+   > Si la fenêtre **Propriétés** ne s’affiche pas, arrêtez votre application en choisissant le bouton carré **arrêter le débogage** de la barre d’outils, ou fermez simplement la fenêtre. Si l’application est arrêtée et que vous ne voyez toujours pas la fenêtre **Propriétés** , dans la barre de menus, choisissez **Afficher** > **fenêtre Propriétés**.
 
 1. Après avoir sélectionné le formulaire, recherchez la propriété **Text** dans la fenêtre **Propriétés**. Suivant la façon dont la liste est triée, vous devrez peut-être la faire défiler. Choisissez **Texte**, tapez **Visionneuse d’images**, puis appuyez sur **Entrée**.  La **visionneuse d’images** de texte doit maintenant être présente dans la barre de titre de votre formulaire, et la fenêtre **Propriétés** doit ressembler à la capture d’écran suivante.
 
     ![Fenêtre Propriétés](../ide/media/express_edittextproperty.png)<br>
-   ***Propriétés*** de *fenêtre*
+   *Fenêtre* propriétés
 
    > [!NOTE]
    > Les propriétés peuvent être classées selon une vue **Par catégorie** ou **Alphabétique**. Vous pouvez passer d’une vue à l’autre à l’aide des boutons de la fenêtre **Propriétés**. Dans ce tutoriel, il est plus facile de rechercher des propriétés via la vue **Alphabétique**.
 
 1. Revenez au **Concepteur Windows Forms**. Sélectionnez la poignée de déplacement située dans l'angle inférieur droit du formulaire, c'est-à-dire le petit carré blanc présenté ci-dessous.
 
-    ![Faire glisser la poignée](../ide/media/express_bottomrt_drag.png)<br>
+    poignée de déplacement ![](../ide/media/express_bottomrt_drag.png)<br>
    *Faire glisser la poignée*
 
     Faites glisser la poignée pour redimensionner le formulaire et le rendre plus large et un peu plus grand.
@@ -55,8 +55,8 @@ Ensuite, vous utilisez la fenêtre **Propriétés** pour changer l’apparence d
 
    - Dans la barre d’outils, choisissez le bouton **Démarrer le débogage**, qui se présente comme suit.
 
-      ![Bouton Démarrer le débogage de la barre d’outils](../ide/media/express_icondebug.png)<br>
-     ***Démarrer le débogage*** *bouton de barre d’outils*
+      ![bouton Démarrer le débogage de la barre d’outils](../ide/media/express_icondebug.png)<br>
+     Bouton ***Démarrer le débogage*** de la *barre d’outils*
 
      Comme auparavant, l’IDE génère et exécute votre application, et une fenêtre s’affiche.
 
@@ -66,17 +66,17 @@ Ensuite, vous utilisez la fenêtre **Propriétés** pour changer l’apparence d
 
    - Dans la barre de menus, choisissez **Débogage** > **Arrêter le débogage**.
 
-   - À l’aide de votre clavier, appuyez sur **MAJ**+**F5**.
+   - À l’aide de votre clavier, appuyez sur **maj**+**F5**.
 
    - Cliquez sur le bouton **X** dans l’angle supérieur de la fenêtre de la **visionneuse d’images** .
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
-* Pour passer à l’étape suivante du didacticiel, **consultez [étape 4 : Composez votre formulaire avec un contrôle](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)** TableLayoutPanel.
+* Pour passer à l’étape suivante du didacticiel, consultez **[étape 4 : composer votre formulaire avec un contrôle TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)** .
 
-* Pour revenir à l’étape précédente du tutoriel, consultez [Étape 2 : Exécutez votre application](../ide/step-2-run-your-program.md)visionneuse d’images.
+* Pour revenir à l’étape précédente du didacticiel, consultez [étape 2 : exécuter votre application visionneuse d’images](../ide/step-2-run-your-program.md).
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Tutoriel 2 : Créer un questionnaire mathématique chronométré](tutorial-2-create-a-timed-math-quiz.md)
-* [Tutoriel 3 : Créer un jeu de combinaisons](tutorial-3-create-a-matching-game.md)
+* [Didacticiel 2 : créer un questionnaire mathématique chronométré](tutorial-2-create-a-timed-math-quiz.md)
+* [Didacticiel 3 : créer un jeu de combinaisons](tutorial-3-create-a-matching-game.md)

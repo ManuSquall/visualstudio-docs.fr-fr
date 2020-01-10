@@ -1,5 +1,5 @@
 ---
-title: 'IDebugApplication :: RemoveGlobalExpressionContextProvider | Microsoft Docs'
+title: IDebugApplication::RemoveGlobalExpressionContextProvider | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -42,7 +42,7 @@ HRESULT RemoveGlobalExpressionContextProvider(
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|valeur|Description|  
+|Valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
@@ -50,5 +50,5 @@ HRESULT RemoveGlobalExpressionContextProvider(
  La méthode `RemoveGlobalExpressionContextProvider` supprime un fournisseur de contexte d’expression globale de cette application.  
   
 ## <a name="see-also"></a>Voir aussi  
- [IDebugApplication :: AddGlobalExpressionContextProvider](../../winscript/reference/idebugapplication-addglobalexpressioncontextprovider.md)    
+ [IDebugApplication::AddGlobalExpressionContextProvider](../../winscript/reference/idebugapplication-addglobalexpressioncontextprovider.md)   
  [Interface IDebugApplication](../../winscript/reference/idebugapplication-interface.md)

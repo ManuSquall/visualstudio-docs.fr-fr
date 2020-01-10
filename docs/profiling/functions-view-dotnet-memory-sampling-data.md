@@ -8,14 +8,15 @@ ms.assetid: 5d9c6302-2ffd-430e-9535-13ce795f9f7c
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: b0e8c14779f9f7b3f14fab2dfc1022db0319aeb4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: cce13da0c2dfee61d70da8bc288d1f0ff4690deb
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974057"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74780037"
 ---
 # <a name="functions-view---net-memory-sampling-data"></a>Fonctions, vue - données d’échantillonnage de la mémoire .NET
 La vue Fonctions des données de profilage de l’allocation mémoire .NET qui ont été collectées avec la méthode d’échantillonnage répertorie les fonctions qui ont alloué de la mémoire lors de l’exécution du profilage, et indique la taille et le nombre des allocations.
@@ -23,8 +24,8 @@ La vue Fonctions des données de profilage de l’allocation mémoire .NET qui o
 |Colonne|Description|
 |------------|-----------------|
 |**ID du processus**|ID du processus (PID) de l'exécution du profilage.|
-|**Nom du processus**|Nom du processus.|
-|**Nom du module**|Nom du module qui contient la fonction.|
+|**Nom du processus**|nom du processus.|
+|**Nom de module**|Nom du module qui contient la fonction.|
 |**Chemin de module**|Chemin d’accès du module qui contient la fonction.|
 |**Fichier source**|Fichier source contenant la définition pour cette fonction.|
 |**Nom de la fonction**|Nom complet de la fonction.|

@@ -3,17 +3,17 @@ title: Propriétés des documents XML, fenêtre Propriétés
 ms.date: 03/05/2019
 ms.topic: reference
 ms.assetid: 9dbb34d9-02ea-4201-b445-c98a0eb0d6db
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99102248a9456de3a2b3aeba28e54de4299fae40
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1b21f4435737597136e1ac4a4dd8651decaf4c65
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72604155"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592423"
 ---
 # <a name="xml-document-properties-properties-window"></a>Propriétés de document XML, Fenêtre Propriétés
 
@@ -22,13 +22,13 @@ La fenêtre **Propriétés** fournit des informations de base sur le document qu
 > [!NOTE]
 > Toutes les propriétés des documents XML sont enregistrées dans la solution. Vous ne devez donc pas réentrer ces valeurs la prochaine fois que vous ouvrez la solution.
 
-**Coda**
+**Encodage**
 
 Encodage de caractères utilisé pour le fichier. La modification de cette propriété entraîne la modification de l'attribut d'encodage dans la déclaration XML et vice versa. Le nouvel encodage est utilisé pour encoder le fichier lorsque vous enregistrez le fichier.
 
 **Entrée**
 
-Document d'entrée associé à la feuille de style XSLT. Il est utilisé par les commandes de **démarrage XSLT** , par exemple, **XML**  > **Démarrer XSLT sans débogage**. Un document peut être sélectionné à l’aide du bouton de navigation ( **...** ).
+Document d'entrée associé à la feuille de style XSLT. Il est utilisé par les commandes de **démarrage XSLT** , par exemple, **XML** > **Démarrer XSLT sans débogage**. Un document peut être sélectionné à l’aide du bouton de navigation ( **...** ).
 
 Cette propriété est visible uniquement lorsqu’un fichier XSLT est ouvert dans l’éditeur.
 

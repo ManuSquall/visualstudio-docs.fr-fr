@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Utiliser des caractères spéciaux d’échappement dans MSBuild | Microsoft Docs'
+title: 'Comment : utiliser des caractères spéciaux d’échappement dans MSBuild | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,19 +8,19 @@ helpviewer_keywords:
 - escape characters
 - MSBuild, escaping special characters
 ms.assetid: 1aa3669c-1647-4960-b770-752e2532102f
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 983e10f26e6fd1d8b4b7ff18c73edd65cb4810f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 955739372605b9e4f9fe58f73669322e2724de31
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968104"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595005"
 ---
-# <a name="how-to-escape-special-characters-in-msbuild"></a>Procédure : Utiliser des caractères spéciaux d’échappement dans MSBuild
+# <a name="how-to-escape-special-characters-in-msbuild"></a>Guide pratique pour utiliser des caractères spéciaux d’échappement dans MSBuild
 
 Certains caractères ont une signification spéciale dans les fichiers projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Il s’agit par exemple des points-virgules (`;`) et des astérisques (`*`). Pour obtenir la liste complète de ces caractères spéciaux, consultez [Caractères spéciaux MSBuild](../msbuild/msbuild-special-characters.md).
 
@@ -28,7 +28,7 @@ Pour pouvoir utiliser ces caractères spéciaux comme littéraux dans un fichier
 
 ## <a name="msbuild-special-characters"></a>Caractères spéciaux MSBuild
 
-Par exemple, les caractères spéciaux sont utilisés dans l’attribut `Include` des listes d’éléments. Par exemple, la liste d’éléments suivante déclare deux éléments : *MyFile.cs* et *MyClass.cs*.
+Par exemple, les caractères spéciaux sont utilisés dans l’attribut `Include` des listes d’éléments. Par exemple, la liste d’éléments suivante déclare deux éléments : *MyFile.cs* et *MyClass.cs*.
 
 ```xml
 <Compile Include="MyFile.cs;MyClass.cs"/>
@@ -53,4 +53,4 @@ Utilisez la notation `%<xx>` à la place du caractère spécial, où `<xx>` repr
 ## <a name="see-also"></a>Voir aussi
 - [Concepts MSBuild](../msbuild/msbuild-concepts.md)
 - [MSBuild](../msbuild/msbuild.md)
-- [Éléments](../msbuild/msbuild-items.md)
+- [Éléments MSBuild](../msbuild/msbuild-items.md)

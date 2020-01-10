@@ -9,17 +9,17 @@ helpviewer_keywords:
 - text searches, replacing text
 - find and replace
 - replace in files
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a30fdbc13222ac23146595af1984b27aeed0f758
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: dddd55714e53516ba1ccd8a11c99761a4db7136a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72621846"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585624"
 ---
 # <a name="replace-in-files"></a>Remplacer dans les fichiers
 
@@ -51,7 +51,7 @@ Pour rechercher une nouvelle chaîne de texte ou expression, entrez-la dans cett
 
 Pour remplacer des instances de la chaîne dans la zone **Rechercher** par une autre chaîne, entrez la chaîne de remplacement dans la zone **Remplacer par**. Pour supprimer des instances de la chaîne dans la zone **Rechercher**, laissez ce champ vide. Ouvrez la liste pour afficher les 20 chaînes que vous avez recherchées le plus récemment. Choisissez le bouton adjacent **Générateur d’expressions** si vous souhaitez utiliser une ou plusieurs expressions régulières dans votre chaîne de remplacement. Pour plus d’informations, consultez [Utiliser des expressions régulières dans Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
 
-## <a name="look-in"></a>Regarder dans
+## <a name="look-in"></a>Chercher dans
 
 L’option choisie dans la liste déroulante **Regarder dans** détermine si l’opération **Remplacer dans les fichiers** porte sur les fichiers actifs uniquement ou sur tous les fichiers figurant dans certains dossiers. Sélectionnez une étendue de recherche dans la liste, tapez le chemin d’un dossier ou cliquez sur le bouton **Parcourir (...)** pour afficher la boîte de dialogue **Choisir des dossiers de recherche** et choisissez un ensemble de dossiers. Vous pouvez également taper un chemin directement dans la zone **Regarder dans**.
 

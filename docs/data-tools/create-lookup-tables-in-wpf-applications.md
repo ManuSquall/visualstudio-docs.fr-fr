@@ -11,17 +11,17 @@ helpviewer_keywords:
 - WPF Designer, data binding
 - data binding, WPF
 ms.assetid: 56a1fbff-c7e8-4187-a1c1-ffd17024bc1b
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a2a2179a759bc11a9466361d3c8cc2df45c12f20
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a14209d895b461c64b30d0f1690b68484f09d970
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648594"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586755"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Créer des tables de recherche dans des applications WPF
 
@@ -81,7 +81,7 @@ Prenons l’exemple d’une table de `Orders` dans une base de données Sales. C
 
      Visual Studio définit des propriétés sur le contrôle pour configurer la liaison de recherche. Le tableau suivant répertorie les propriétés que Visual Studio modifie. Si nécessaire, vous pouvez modifier ces propriétés dans le XAML ou dans la fenêtre **Propriétés** .
 
-    |Property|Explication du paramètre|
+    |Les|Explication du paramètre|
     |--------------| - |
     |<xref:System.Windows.Controls.ItemsControl.ItemsSource%2A>|Cette propriété spécifie la collection ou la liaison utilisée pour récupérer les données affichées dans le contrôle. Visual Studio affecte à cette propriété la <xref:System.Windows.Data.CollectionViewSource> pour les données parentes que vous avez déplacées vers le contrôle.|
     |<xref:System.Windows.Controls.ItemsControl.DisplayMemberPath%2A>|Cette propriété spécifie le chemin d’accès de l’élément de données affiché dans le contrôle. Visual Studio définit cette propriété sur la première colonne ou propriété dans les données parentes, après la clé primaire, qui a un type de données String.<br /><br /> Si vous souhaitez afficher une colonne ou une propriété différente dans les données parentes, remplacez cette propriété par le chemin d’accès d’une autre propriété.|

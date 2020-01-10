@@ -10,19 +10,19 @@ helpviewer_keywords:
 - list of domains, locations, URLs, Visual Studio
 - proxy errors, Visual Studio
 ms.assetid: ''
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: f1b928d04ae581b0df04ab74f3a756d359abc06f
-ms.sourcegitcommit: ba0fef4f5dca576104db9a5b702670a54a0fcced
+ms.openlocfilehash: 44f18e64db08efa848c498f8956d61a79c24846d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713951"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594459"
 ---
 # <a name="troubleshoot-network-related-errors-when-you-install-or-use-visual-studio"></a>Résoudre les erreurs liées au réseau lorsque vous installez ou utilisez Visual Studio
 
@@ -139,7 +139,7 @@ Vous pouvez rencontrer ce message d’erreur lorsque vous utilisez un programme 
 
 Voici pourquoi cette erreur peut se produire : un lecteur réseau mappé ou un partage [UNC](/dotnet/standard/io/file-path-formats#unc-paths) est lié au jeton d’accès d’un utilisateur. Lorsque le contrôle de compte d’utilisateur est activé, deux [jetons d’accès](/windows/win32/secauthz/access-tokens) utilisateur sont créés : un *avec* un accès administrateur et un autre *sans* accès administrateur. Lorsqu’un lecteur réseau ou un partage est créé, le jeton d’accès actuel de l’utilisateur est lié à celui-ci. Étant donné que le programme d’amorçage doit être exécuté en tant qu’administrateur, il ne peut pas accéder au lecteur réseau ou au partage si le lecteur ou le partage n’est pas lié à un jeton d’accès utilisateur disposant d’un accès administrateur.
 
-### <a name="to-fix-this-error"></a>Pour corriger cette erreur
+### <a name="to-fix-this-error"></a>Pour résoudre cette erreur
 
 Vous pouvez utiliser la commande `net use` ou vous pouvez modifier le paramètre de stratégie de groupe du contrôle de compte d’utilisateur. Pour plus d’informations sur ces solutions de contournement et la façon de les implémenter, consultez les articles du support technique Microsoft suivants :
 

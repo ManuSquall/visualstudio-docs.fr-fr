@@ -13,22 +13,22 @@ helpviewer_keywords:
 - MSBuild, Message task
 - Message task [MSBuild]
 ms.assetid: 2293309d-42b6-46dc-9684-8c146f66bc28
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5efcc41a82cab32172aa395b488535f2777b9e13
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
-ms.translationtype: HT
+ms.openlocfilehash: c5a2e2a1adb810a8468d318298747eec226846df
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681159"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592176"
 ---
 # <a name="message-task"></a>Message (tâche)
 Enregistre un message pendant une génération.
 
-## <a name="parameters"></a>Paramètres
+## <a name="parameters"></a>Parameters
  Le tableau ci-dessous décrit les paramètres de la tâche `Message` .
 
 |Paramètre|Description|
@@ -36,16 +36,16 @@ Enregistre un message pendant une génération.
 |`Importance`|Paramètre `String` facultatif.<br /><br /> Spécifie l’importance du message. Ce paramètre peut avoir la valeur `high`, `normal` ou `low`. La valeur par défaut est `normal`.|
 |`Text`|Paramètre `String` facultatif.<br /><br /> Texte d’erreur à consigner.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  La tâche `Message` permet aux projets [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] d’envoyer des messages à des enregistreurs d’événements à différentes étapes du processus de génération.
 
  Si le paramètre `Condition` a la valeur `true`, la valeur du paramètre `Text` est consignée dans le journal et la génération se poursuit. Si un paramètre `Condition` n’existe pas, le texte du message est consigné dans le journal. Pour plus d’informations sur la journalisation, voir [Obtenir des journaux de génération](../msbuild/obtaining-build-logs-with-msbuild.md).
 
  Par défaut, le message est envoyé à l’enregistreur d’événements de la console MSBuild. Ceci peut être modifié en définissant le paramètre <xref:Microsoft.Build.Tasks.TaskExtension.Log%2A>. L’enregistreur d’événements interprète le paramètre `Importance`. En règle générale, un message ayant la valeur `high` est envoyé quand le niveau de détail du journaliseur a la valeur <xref:Microsoft.Build.Framework.LoggerVerbosity>`Minimal` ou une valeur supérieure. Un message ayant la valeur `low` est envoyé quand le niveau de détail du journaliseur a la valeur <xref:Microsoft.Build.Framework.LoggerVerbosity>`Detailed`.
 
- En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).
+ En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension> , qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task> . Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
  L’exemple de code suivant consigne les messages dans tous les enregistreurs d’événements inscrits.
 
 ```xml

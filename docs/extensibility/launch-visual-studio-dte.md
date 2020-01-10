@@ -3,17 +3,17 @@ title: Lancer Visual Studio à l’aide de DTE
 titleSuffix: ''
 ms.date: 04/26/2019
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 92085a42ec2c85eb0fb5571badaabca801c403d0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 79af14e80ef39b0cad732dcd0c9f37af1481bd4c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647961"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590629"
 ---
 # <a name="launch-visual-studio-using-dte"></a>Lancer Visual Studio à l’aide de DTE
 
@@ -21,7 +21,7 @@ ms.locfileid: "72647961"
 
 Le reste de cet article montre le code que vous pouvez utiliser pour lancer Visual Studio 2019 à l’aide de DTE.
 
-## <a name="set-up-the-project"></a>Configurer le projet
+## <a name="set-up-the-project"></a>Configuration du projet
 
 Pour voir le code de lancement en action, créez un projet en procédant comme suit.
 

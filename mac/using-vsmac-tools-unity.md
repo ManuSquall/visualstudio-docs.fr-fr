@@ -3,14 +3,14 @@ title: Utilisation des outils Visual Studio pour Mac pour Unity
 description: Ce guide explique comment utiliser l’extension Outils Visual Studio pour Mac pour Unity
 author: therealjohn
 ms.author: johmil
-ms.date: 06/18/2019
+ms.date: 12/13/2019
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: daffb7721164ae49888a894bec7cad3ac74801a4
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
-ms.translationtype: HT
+ms.openlocfilehash: 4247e5cfb936d79c2b2bea5ac68a16164f0c0ef0
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692221"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75406668"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Utilisation des outils Visual Studio pour Mac pour Unity
 
@@ -29,7 +29,7 @@ Visual Studio pour Mac peut aussi être ouvert sans ouvrir de script dans l’é
 Les outils Visual Studio pour Mac pour Unity offrent un raccourci pour accéder à la documentation de l’API Unity. Pour accéder à la documentation de l’API Unity à partir de Visual Studio pour Mac, placez le curseur sur l’API Unity pour laquelle vous souhaitez obtenir des informations, puis appuyez sur **Commande ⌘ + ‘** .
 
 ## <a name="intellisense-for-unity-messages"></a>IntelliSense pour les messages Unity
-Le moteur Unity diffuse des messages aux scripts MonoBehaviour, ce qui permet aux développeurs d’écrire du code qui réagit aux messages comme OnMouseDown, OnTriggerEnter, etc. Parce qu’il ne s’agit pas de méthodes virtuelles dans la classe de base MonoBehaviour, certains IDE comme MonoDevelop n’ont pas de fonctionnalité de complétion du code pour les messages Unity.
+Le moteur Unity diffuse les messages aux scripts monocomportement, ce qui permet aux développeurs d’écrire du code qui réagit à des messages tels que OnMouseDown, OnTriggerEnter, etc. Étant donné qu’il ne s’agit pas de méthodes virtuelles dans la classe monocomportement de base, certains IDE tels que MonoDevelop n’ont pas de fonctionnalité de saisie semi-automatique de code pour les messages Unity.
 
 Toutefois, les outils Visual Studio pour Mac pour Unity étendent leur fonctionnalité IntelliSense aux messages Unity. De cette façon, l’implémentation des messages Unity dans les scripts MonoBehaviour est plus facile, de même que l’apprentissage de l’API Unity. Pour utiliser IntelliSense pour les messages Unity :
 
@@ -39,7 +39,7 @@ Toutefois, les outils Visual Studio pour Mac pour Unity étendent leur fonctionn
 
 3. Une fois que les lettres « **ont** » ont été tapées, une liste de suggestions IntelliSense s’affiche.
 
-   ![Using IntelliSense](media/using-vsmac-tools-unity-image2.png)
+   ![Utilisation de la fonctionnalité IntelliSense](media/using-vsmac-tools-unity-image2.png)
 
 4. Vous pouvez changer la sélection dans la liste de trois façons :
 
@@ -91,7 +91,7 @@ Les projets Unity peuvent être débogués avec Visual Studio pour Mac.
 
 ### <a name="start-debugging"></a>Démarrer le débogage
 
-Pour démarrer le débogage :
+Pour démarrer le débogage :
 
 1. Connectez Visual Studio à Unity en cliquant sur le bouton **Lire**, ou appuyez sur **Commande + Entrée** ou **F5**.
 

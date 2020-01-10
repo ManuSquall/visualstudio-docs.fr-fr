@@ -15,17 +15,17 @@ helpviewer_keywords:
 - XSD task (MSBuild (C++))
 - MSBuild (C++), XSD task
 ms.assetid: 15c99f5c-7124-4bbc-bc03-70c7bcce8893
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec51406aec9aec8981e5517480e4cd07bc80ffb1
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 31c256e02901d4f7dd7de6f14e9f650626feac25
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748014"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565784"
 ---
 # <a name="xsd-task"></a>XSD (tâche)
 Inclut dans un wrapper l’outil Définition de schéma XML (*xsd.exe*), qui génère des fichiers de schéma ou de classe à partir d’une source.
@@ -33,18 +33,18 @@ Inclut dans un wrapper l’outil Définition de schéma XML (*xsd.exe*), qui gé
 > [!NOTE]
 > À partir de Visual Studio 2017, *xsd.exe* n’est plus pris en charge par les projets C++. Vous pouvez toujours utiliser les API **Microsoft.VisualC.CppCodeProvider** en ajoutant manuellement *CppCodeProvider.dll* au GAC.
 
-## <a name="parameters"></a>Paramètres
+## <a name="parameters"></a>Parameters
  Le tableau ci-dessous décrit les paramètres de la tâche **XSD**.
 
 - **AdditionalOptions**
 
-     Paramètre **String** facultatif.
+     Paramètre de **chaîne** facultatif.
 
      Liste des options comme indiqué sur la ligne de commande. Par exemple, /\<option1> /\<option2> /\<option#>. Utilisez ce paramètre pour spécifier des options qui ne sont pas représentées par un autre paramètre de tâche **XSD**.
 
 - **GenerateFromSchema**
 
-  Paramètre **String** facultatif.
+  Paramètre de **chaîne** facultatif.
 
   Indique les types qui sont générés à partir du schéma spécifié.
 
@@ -54,9 +54,9 @@ Inclut dans un wrapper l’outil Définition de schéma XML (*xsd.exe*), qui gé
 
   - **dataset** -  **/dataset**
 
-- **Language**
+- **Langue**
 
-     Paramètre **String** facultatif.
+     Paramètre de **chaîne** facultatif.
 
      Spécifie le langage de programmation à utiliser pour le code généré.
 
@@ -64,7 +64,7 @@ Inclut dans un wrapper l’outil Définition de schéma XML (*xsd.exe*), qui gé
 
 - **Namespace**
 
-     Paramètre **String** facultatif.
+     Paramètre de **chaîne** facultatif.
 
      Spécifie l'espace de noms du runtime pour les types générés.
 
@@ -82,7 +82,7 @@ Inclut dans un wrapper l’outil Définition de schéma XML (*xsd.exe*), qui gé
 
 - **TrackerLogDirectory**
 
-     Paramètre **String** facultatif.
+     Paramètre de **chaîne** facultatif.
 
      Spécifie le répertoire du journal de Tracker.
 

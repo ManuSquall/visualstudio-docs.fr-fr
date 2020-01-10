@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Spécifier le runtime .NET Framework | Microsoft Docs'
+title: Guide pratique pour spécifier le runtime .NET Framework | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,16 +9,17 @@ ms.assetid: d39f3579-719a-4f47-a97d-5b4232fe4c64
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: f0179be3aa5ca55eef0854cc68a7e1287ac284f1
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
+ms.openlocfilehash: 4ab53a6cf265b36ee423a2df176014187860f635
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746421"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778672"
 ---
-# <a name="how-to-specify-the-net-framework-runtime"></a>Procédure : Spécifier le runtime .NET Framework
+# <a name="how-to-specify-the-net-framework-runtime"></a>Guide pratique pour spécifier le runtime .NET Framework
 
 Avec la publication de .NET Framework 4, les applications peuvent être composées de modules générés avec des versions différentes du runtime .NET Framework. Par défaut, les Outils de profilage de Visual Studio profilent le premier runtime chargé par l’application. Vous pouvez spécifier le runtime à profiler quand vous démarrez une application avec le profileur et quand vous attachez le profileur à une application en cours d’exécution.
 
@@ -28,7 +29,7 @@ Avec la publication de .NET Framework 4, les applications peuvent être compos�
 
      La zone de liste **Version CLR cible** affiche **Automatique** et les versions du runtime .NET Framework installées sur l’ordinateur.
 
-2. Effectuez l’une des opérations suivantes :
+2. Effectuez l'une des étapes suivantes :
 
     - Cliquez sur la version du CLR que vous voulez profiler.
 
@@ -42,7 +43,7 @@ Avec la publication de .NET Framework 4, les applications peuvent être compos�
 
      La zone de liste **Version CLR cible** affiche **Automatique** et les versions du runtime .NET Framework installées sur l’ordinateur.
 
-3. Effectuez l’une des opérations suivantes :
+3. Effectuez l'une des étapes suivantes :
 
     - Cliquez sur la version du CLR que vous voulez profiler.
 

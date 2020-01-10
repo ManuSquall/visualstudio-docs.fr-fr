@@ -28,4 +28,4 @@ Les concepteurs d'activités de gestion des erreurs permettent de gérer la gest
 
 ## <a name="reference"></a>Référence
 
-## <a name="related-sections"></a>Rubriques connexes
+## <a name="related-sections"></a>Sections connexes

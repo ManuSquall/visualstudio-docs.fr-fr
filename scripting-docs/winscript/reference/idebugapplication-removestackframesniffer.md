@@ -1,5 +1,5 @@
 ---
-title: 'IDebugApplication :: RemoveStackFrameSniffer | Microsoft Docs'
+title: IDebugApplication::RemoveStackFrameSniffer | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -42,7 +42,7 @@ HRESULT RemoveStackFrameSniffer(
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|valeur|Description|  
+|Valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
@@ -50,6 +50,6 @@ HRESULT RemoveStackFrameSniffer(
  La méthode `RemoveStackFrameSniffer` supprime un fournisseur d’énumérateur de frame de pile de cette application.  
   
 ## <a name="see-also"></a>Voir aussi  
- [IDebugApplication :: AddStackFrameSniffer](../../winscript/reference/idebugapplication-addstackframesniffer.md)    
- @No__t_1 de l' [interface IDebugApplication](../../winscript/reference/idebugapplication-interface.md)  
+ [IDebugApplication::AddStackFrameSniffer](../../winscript/reference/idebugapplication-addstackframesniffer.md)   
+   de l' [interface IDebugApplication](../../winscript/reference/idebugapplication-interface.md)  
  [Interface IDebugStackFrameSniffer](../../winscript/reference/idebugstackframesniffer-interface.md)

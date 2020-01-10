@@ -7,17 +7,17 @@ helpviewer_keywords:
 - TFSConfig
 - CodeIndex command [Team Foundation Server]
 ms.assetid: b79568d4-6a64-4ca9-a1ee-3e57f92a9c5c
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 378a5965f8ca9e9cc2d1c7214180e99f080d7873
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4bd2a6cc947c5f52212029bebe590d59906f5aee
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72630961"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591162"
 ---
 # <a name="codeindex-command"></a>CodeIndex, commande
 
@@ -36,7 +36,7 @@ Pour utiliser la commande **CodeIndex**, vous devez être membre du groupe de s�
 TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /ignoreList:[ add | remove | removeAll | view ] ServerPath | /listLargeFiles [/fileCount:FileCount] [/minSize:MinSize] | /reindexAll | /destroyCodeIndex [/noPrompt] | /temporaryDataSizeLimit:[ view | <SizeInGBs> | disable ] | /indexHistoryPeriod:[ view | all | <NumberOfMonths> ] [/collectionName:CollectionName | /collectionId:CollectionId]
 ```
 
-### <a name="parameters"></a>Paramètres
+### <a name="parameters"></a>Parameters
 
 |**Argument**|**Description**|
 |------------------| - |
@@ -49,18 +49,18 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 |**/indexingStatus**|Affichez l'état et la configuration du service d'indexation de code.|
 |**/setIndexing:** [ on &#124; off &#124; keepupOnly ]|-   **on** : démarrer l’indexation de tous les ensembles de modifications.<br />-   **off** : arrêter l’indexation de tous les ensembles de modifications.<br />-   **off** : arrêter l’indexation des ensembles de modifications créés précédemment et commencer l’indexation de nouveaux ensembles de modifications uniquement.|
 |**/ignoreList:** [ add &#124; remove &#124; removeAll &#124; view ] `ServerPath`<br /><br /> Vous pouvez utiliser le caractère générique (*) au début, à la fin ou aux deux extrémités du chemin d’accès au serveur.|Spécifie une liste de fichiers de code et leurs chemins d’accès à ne pas indexer.<br /><br /> -   **add** : ajouter le fichier à ne pas indexer à la liste des fichiers ignorés.<br />-   **remove** : supprimer le fichier à indexer de la liste des fichiers ignorés.<br />-   **removeAll** : effacer la liste des fichiers ignorés et démarrer l’indexation de tous les fichiers.<br />-   **view** : afficher tous les fichiers qui ne sont pas indexés.|
-|**/listLargeFiles [/fileCount:** `FileCount` **/minSize:** `MinSize`]|Indique le nombre spécifié de fichiers qui dépassent la taille spécifiée en Ko. Vous pouvez ensuite utiliser l’option **/ignoreList** pour exclure ces fichiers de l’indexation.|
+|**/listLargeFiles [/FileCount :** `FileCount` **/MinSize :** `MinSize`]|Indique le nombre spécifié de fichiers qui dépassent la taille spécifiée en Ko. Vous pouvez ensuite utiliser l’option **/ignoreList** pour exclure ces fichiers de l’indexation.|
 |**/reindexAll**|Effacez les données indexées précédemment et redémarrez l'indexation.|
 |**/destroyCodeIndex [/noPrompt]**|Supprimez l'index de code et supprimez toutes les données indexées. Confirmation inutile si vous utilisez l’option **/noPrompt**.|
 |**/temporaryDataSizeLimit**:[ view &#124; <`SizeInGBs`> &#124; disable ]|Contrôle la quantité de données temporaires que CodeLens crée lors du traitement des ensembles de modifications. La limite par défaut est 2 Go.<br /><br /> -   **view** : afficher la limite de taille actuelle.<br />-   `SizeInGBs` : modifier la limite de taille.<br />-   **disable** : supprimer la limite de taille.<br /><br /> Cette limite est vérifiée avant que CodeLens ne traite un nouvel ensemble de modifications. Si les données temporaires dépassent cette limite, CodeLens suspend le traitement des ensembles de modifications passés, pas celui des nouveaux. CodeLens redémarre le traitement une fois que les données sont nettoyées et que leur taille est inférieure à cette limite. Le nettoyage s'exécute automatiquement une fois par jour. Cela signifie que les données temporaires peuvent dépasser cette limite tant que l'opération de nettoyage n'a pas commencé.|
 |**/indexHistoryPeriod**:[ view &#124; all &#124; <`NumberOfMonths`> ]|Contrôler la durée d'indexation de votre historique des modifications. Cela affecte la quantité d'historique que CodeLens affiche. La limite par défaut est 12 mois. Cela signifie que l'historique des modifications affiché par CodeLens englobe uniquement les 12 derniers mois.<br /><br /> -   **view** : afficher le nombre de mois actuel.<br />-   **all** : indexer tout l’historique des modifications.<br />-   `NumberOfMonths` : modifier le nombre de mois utilisés pour indexer l’historique des modifications.|
-|**/collectionName:** `CollectionName`|Spécifie le nom de la collection de projets sur laquelle exécuter la commande **CodeIndex**. Nécessaire si vous n’utilisez pas **/CollectionId**.|
-|**/collectionId :** `CollectionId`|Spécifie le numéro d’identification de la collection de projets sur laquelle exécuter la commande **CodeIndex**. Nécessaire si vous n’utilisez pas **/CollectionName**.|
+|**/CollectionName :** `CollectionName`|Spécifie le nom de la collection de projets sur laquelle exécuter la commande **CodeIndex**. Nécessaire si vous n’utilisez pas **/CollectionId**.|
+|**/CollectionId :** `CollectionId`|Spécifie le numéro d’identification de la collection de projets sur laquelle exécuter la commande **CodeIndex**. Nécessaire si vous n’utilisez pas **/CollectionName**.|
 
 ## <a name="examples"></a>Exemples
 
 > [!NOTE]
-> Les noms de sociétés, d'organisations, de produits, de domaines, d'adresses de messagerie, de logos, de personnes, de lieux et d'événements mentionnés dans les exemples sont fictifs.  Toute ressemblance avec des noms ou des événements réels est purement fortuite et involontaire.
+> Les exemples de sociétés, d'organisations, de produits, de noms de domaine, d'adresses de messagerie, de logos, de personnes, de lieux et d'événements mentionnés ici sont fictifs.  Toute ressemblance avec des noms ou des événements réels est purement fortuite et involontaire.
 
 Pour consulter l'état et la configuration d'indexation du code :
 
@@ -125,4 +125,4 @@ TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Website"
 ## <a name="see-also"></a>Voir aussi
 
 - [Rechercher les modifications de code et d’autres historiques avec CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md)
-- [Gestion de la configuration du serveur avec TFSConfig](/tfs/server/ref/command-line/tfsconfig-cmd)
+- [Gestion de la configuration du serveur avec TFSConfig](/azure/devops/server/command-line/tfsconfig-cmd)

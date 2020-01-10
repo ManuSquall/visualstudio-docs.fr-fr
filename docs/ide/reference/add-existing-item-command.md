@@ -8,17 +8,17 @@ helpviewer_keywords:
 - File.AddExistingItem command
 - Add Existing Item command
 ms.assetid: 41f56131-d4c7-4f81-83b7-bdac713ea870
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89910a9504f587f97b0555f7f0d5ef7257ab4ae4
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 4d49f0fde7bbf13a1219296420b84970f4350860
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748838"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585702"
 ---
 # <a name="add-existing-item-command"></a>Ajouter un élément existant, commande
 Ajoute un fichier existant à la solution actuelle et l’ouvre.
@@ -35,7 +35,7 @@ Requis. Chemin complet et nom de fichier, avec l’extension, de l’élément �
 
 ## <a name="switches"></a>Commutateurs
 /e: `editorname`\
-Optionnel. Nom de l’éditeur dans lequel le fichier doit être ouvert. Si l’argument est spécifié, mais qu’aucun nom d’éditeur n’est fourni, la boîte de dialogue **Ouvrir avec** s’affiche.
+Option facultative. Nom de l’éditeur dans lequel le fichier doit être ouvert. Si l’argument est spécifié, mais qu’aucun nom d’éditeur n’est fourni, la boîte de dialogue **Ouvrir avec** s’affiche.
 
 La syntaxe de l’argument /e:`editorname` utilise les noms d’éditeur tels qu’ils apparaissent dans la **boîte de dialogue Ouvrir avec**, entre guillemets. Par exemple, pour ouvrir une feuille de style dans l’éditeur de code source, entrez les informations suivantes pour l’argument /e:`editorname`.
 
@@ -55,7 +55,7 @@ Cet exemple ajoute le fichier Form1.frm à la solution actuelle.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)
-- [Commande, fenêtre](../../ide/reference/command-window.md)
+- [Visual Studio, commandes](../../ide/reference/visual-studio-commands.md)
+- [Fenêtre Commande](../../ide/reference/command-window.md)
 - [Rechercher/Commande, zone](../../ide/find-command-box.md)
 - [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)

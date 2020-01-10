@@ -1,5 +1,4 @@
-### YamlMime:YamlDocument
-documentType: LandingData
+## YamlMime:Landing
 title: Outils de conteneur dans Visual Studio
 metadata:
   title: Documentation sur les outils de développement de conteneur Docker
@@ -9,116 +8,64 @@ metadata:
   ms.prod: visual-studio-windows
   ms.technology: vs-azure
   ms.topic: landing-page
-  ms.date: 02/15/2019
+  ms.date: 11/25/2019
   ms.author: ghogen
-sections:
-  - title: ''
-    items:
-      - type: paragraph
-        text: 'Explorez les outils Docker et Kubernetes, ainsi que les services Azure qui peuvent être utiles pour gérer les projets de développement basés sur un conteneur.'
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 3
-        items:
-          - href: container-tools.md
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_docker.svg'
-            title: "Démarrage rapide\_: Docker dans Visual Studio"
-          - href: tutorial-multicontainer.md
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_docker.svg'
-            title: Application à plusieurs conteneurs avec Docker Compose
-          - href: /visualstudio/install/build-tools-container
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_build.svg'
-            title: Exécuter des outils de build dans un conteneur
-          - href: tutorial-kubernetes-tools.md
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_kubernetes.svg'
-            title: Visual Studio Tools pour Kubernetes
-  - title: .NET Core
-    items:
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 3
-        items:
-          - href: /dotnet/core/docker/intro-net-docker
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_NETcore.svg'
-            title: Introduction à .NET et à Docker
-          - href: /dotnet/core/docker/docker-basics-dotnet-core
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_docker.svg'
-            title: Apprendre les bases de Docker
-          - href: /dotnet/core/docker/building-net-docker-images
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_build.svg'
-            title: Créer des images Docker
-          - href: /aspnet/core/host-and-deploy/docker/visual-studio-tools-for-docker
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_web.svg'
-            title: Outils de conteneur ASP.NET
-          - href: 'https://docs.microsoft.com/azure/vs-azure-tools-docker-hosting-web-apps-in-docker'
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_azure.svg'
-            title: Déployer sur Azure Container Registry
-          - href: /dotnet/standard/containerized-lifecycle-architecture/
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_architecture.svg'
-            title: Guide de l’architecture en microservices
-  - title: Azure
-    items:
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 3
-        items:
-          - href: /azure/aks
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/azure/media/index/ContainerService.svg'
-            title: Azure Kubernetes Service (AKS)
-          - href: /azure/dev-spaces
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/azure/media/index/AzureDevSpaceController_50x.svg'
-            title: Azure Dev Spaces
-          - href: /azure/container-instances/container-instances-tutorial-prepare-app
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/azure/media/index/ContainerInstances.svg'
-            title: Azure Container Instances
-          - href: /azure/container-registry/
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/azure/media/index/container-registry.svg'
-            title: Azure Container Registry
-          - href: /azure/docker
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_docker.svg'
-            title: Docker sur Azure
-  - title: Vidéos
-    items:
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 3
-        items:
-          - href: 'https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T111'
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_video.svg'
-            title: "Channel 9\_: Développement Docker"
+landingContent:
+  - title: Outils de conteneur
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Outils de conteneur dans Visual Studio
+            url: overview.md
+  - title: Prise en main
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Docker dans Visual Studio
+            url: container-tools.md
+          - text: Exécuter des outils de build dans un conteneur
+            url: /visualstudio/install/build-tools-container
+          - text: Visual Studio Tools pour Kubernetes
+            url: tutorial-kubernetes-tools.md
+  - title: Développer des applications conteneurisées
+    linkLists:
+      - linkListType: tutorial
+        links:
+          - text: Application à plusieurs conteneurs avec Docker Compose
+            url: tutorial-multicontainer.md
+          - text: Application React.js dans un conteneur
+            url: container-tools-react.md
+          - text: Débogage des applications Docker
+            url: edit-and-refresh.md
+  - title: Déployer des conteneurs Docker
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Déployer sur Azure Container Registry
+            url: hosting-web-apps-in-docker.md
+          - text: Déployer sur Azure App Service
+            url: deploy-app-service.md
+          - text: Déployer sur Docker Hub
+            url: deploy-docker-hub.md
+  - title: Tâches de développement de conteneur
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: "Procédure\_: Configurer l’environnement de build et de débogage"
+            url: container-build.md
+          - text: "Procédure\_: Afficher et diagnostiquer des conteneurs"
+            url: view-and-diagnose-containers.md
+          - text: "Procédure\_: Résoudre les problèmes des outils de développement de conteneur"
+            url: troubleshooting-docker-errors.md
+  - title: Paramètres des outils de conteneur
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Paramètres de lancement de conteneur
+            url: container-launch-settings.md
+          - text: Propriétés MSBuild de conteneur
+            url: container-msbuild-properties.md
+          - text: Propriétés MSBuild Docker Compose
+            url: docker-compose-properties.md
+          - text: Configurer les outils de conteneur
+            url: container-tools-configure.md

@@ -29,5 +29,5 @@ Vous n’avez pas inclus l’accolade fermante qui marque la fin du corps de la 
 - Ajoutez l’accolade droite qui marque la fin de la fonction, de la boucle, du bloc ou de l’initialiseur d’objet.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Objet de fonction](../../javascript/reference/function-object-javascript.md)    
+ [Objet de fonction](../../javascript/reference/function-object-javascript.md)   
  [Contrôle du flux de programme](../../javascript/controlling-program-flow-javascript.md)

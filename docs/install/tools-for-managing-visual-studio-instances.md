@@ -9,19 +9,19 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 85686707-14C0-4860-9B7A-66485D43D241
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 006a3fa3d41799a87449b8f9e111ca341a698bf5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: e90eb90f79d717e45e558fe5151d9e27534bee95
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62935410"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594498"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Outils de détection et de gestion des instances de Visual Studio
 
@@ -32,8 +32,8 @@ Il existe plusieurs outils qui vous permettent de détecter et gérer les instal
 Nous avons mis à disposition plusieurs outils qui vous aideront à détecter et à gérer les instances de Visual Studio installées sur les ordinateurs clients :
 
 * [vswhere](https://github.com/microsoft/vswhere) : exécutable intégré à Visual Studio ou disponible dans le cadre d’une distribution distincte qui permet de trouver l’emplacement de toutes les instances de Visual Studio sur un ordinateur.
-* [VSSetup.PowerShell](https://github.com/microsoft/vssetup.powershell) : Scripts PowerShell qui utilisent l’API de configuration de l’installation pour identifier les instances installées de Visual Studio.
-* [VS-Setup-Samples](https://github.com/microsoft/vs-setup-samples) : Exemples C# et C++ qui montrent comment utiliser l’API de configuration de l’installation pour interroger une installation existante.
+* [VSSetup.PowerShell](https://github.com/microsoft/vssetup.powershell) : scripts PowerShell qui utilisent l’API de configuration de l’installation pour identifier les instances installées de Visual Studio.
+* [VS-Setup-Samples](https://github.com/microsoft/vs-setup-samples) : exemples C# et C++ qui montrent comment utiliser l’API de configuration de l’installation pour interroger une installation existante.
 
 De plus, l’[API de configuration de l’installation](<xref:Microsoft.VisualStudio.Setup.Configuration>) fournit des interfaces destinées aux développeurs qui veulent créer leurs propres utilitaires d’interrogation des instances de Visual Studio.
 
@@ -64,7 +64,7 @@ Comme ces entrées ne sont pas stockées dans le Registre global, il existe des 
 
 1. Sélectionnez le nœud `HKEY_LOCAL_MACHINE`.
 
-1. Dans le menu principal de Regedit, sélectionnez **Fichier** > **Charger la ruche...**, puis sélectionnez le fichier du Registre privé, qui est stocké dans le dossier **AppData\Local**. Par exemple :
+1. Dans le menu principal de Regedit, sélectionnez **Fichier** > **Charger la ruche...** , puis sélectionnez le fichier du Registre privé, qui est stocké dans le dossier **AppData\Local**. Par exemple :
 
    ```
    %localappdata%\Microsoft\VisualStudio\<config>\privateregistry.bin

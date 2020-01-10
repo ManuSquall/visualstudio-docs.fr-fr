@@ -30,17 +30,17 @@ helpviewer_keywords:
 - WCF services, endpoints
 - service method, called asynchronously[Visual Studio]
 ms.assetid: d56f12cb-e139-4fec-b3e4-488383356642
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8654e42db8ec2a285c9104c6f43bc34beb22ad22
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: abcfde777223ada130e06ab7766319e1d982258c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72806957"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585936"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Services Windows Communication Foundation et services de données WCF dans Visual Studio
 
@@ -52,13 +52,13 @@ Windows Communication Foundation (WCF) est une infrastructure unifiée pour la c
 
 ### <a name="what-are-wcf-data-services"></a>Que sont les WCF Data Services
 
-WCF Data Services est une implémentation de la norme de protocole OData (Open Data).  WCF Data Services vous permet d’exposer des données tabulaires sous la forme d’un ensemble d’API REST, ce qui vous permet de retourner des données à l’aide de verbes HTTP standard, tels que obtenir, poster, PUT ou DELETE. Côté serveur, WCF Data Services sont remplacés par [API Web ASP.net](https://dotnet.microsoft.com/apps/aspnet/apis) pour la création de nouveaux services OData. La bibliothèque cliente WCF Data Services continue d’être un bon choix pour l’utilisation des services OData dans une application .NET à partir de Visual Studio (**projet**  > **Ajouter une référence de service**). Pour plus d’informations, consultez [WCF Data Services 4.5](http://go.microsoft.com/fwlink/?LinkID=119952).
+WCF Data Services est une implémentation de la norme de protocole OData (Open Data).  WCF Data Services vous permet d’exposer des données tabulaires sous la forme d’un ensemble d’API REST, ce qui vous permet de retourner des données à l’aide de verbes HTTP standard, tels que obtenir, poster, PUT ou DELETE. Côté serveur, WCF Data Services sont remplacés par [API Web ASP.net](https://dotnet.microsoft.com/apps/aspnet/apis) pour la création de nouveaux services OData. La bibliothèque cliente WCF Data Services continue d’être un bon choix pour l’utilisation des services OData dans une application .NET à partir de Visual Studio (**projet** > **Ajouter une référence de service**). Pour plus d’informations, consultez [WCF Data Services 4.5](/dotnet/framework/data/wcf).
 
 ### <a name="wcf-programming-model"></a>Modèle de programmation WCF
 
 Le modèle de programmation WCF repose sur la communication entre deux entités : un service WCF et un client WCF. Le modèle de programmation est encapsulé dans l’espace de noms <xref:System.ServiceModel> dans .NET.
 
-### <a name="wcf-service"></a>Service WCF
+### <a name="wcf-service"></a>principal
 
 Un service WCF est basé sur une interface qui définit un contrat entre le service et le client. Elle est marquée avec un attribut <xref:System.ServiceModel.ServiceContractAttribute>, comme illustré dans le code suivant :
 
@@ -171,7 +171,7 @@ Dans ce cas, vous pouvez spécifier le `endpointConfigurationName` en tant que p
 
      Si la référence de service fournit plusieurs points de terminaison, il y aura au moins deux balises `<Endpoint`.
 
-4. À l’intérieur de la balise `<EndPoint>`, vous trouverez un paramètre `name="`*SomeService* `"` (où *SomeService* représente un nom de point de terminaison). Il s’agit du nom du point de terminaison qui peut être passé à la surcharge `endpointConfigurationName As String` d’un constructeur pour une référence de service.
+4. À l’intérieur de la balise `<EndPoint>`, vous trouverez un paramètre `name="`*SomeService*`"` (où *SomeService* représente un nom de point de terminaison). Il s’agit du nom du point de terminaison qui peut être passé à la surcharge `endpointConfigurationName As String` d’un constructeur pour une référence de service.
 
 ## <a name="how-to-call-a-service-method-asynchronously"></a>Comment : appeler une méthode de service de façon asynchrone
 

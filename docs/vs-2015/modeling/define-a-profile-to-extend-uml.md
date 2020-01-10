@@ -26,11 +26,11 @@ ms.locfileid: "74295666"
 # <a name="define-a-profile-to-extend-uml"></a>Définir un profil pour étendre UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous pouvez définir un *profil UML* pour personnaliser les éléments de modèles standard à des fins spécifiques. Un profil définit un ou plusieurs *stéréotypes UML*. Un stéréotype permet de marquer un type comme représentant un genre d'objet particulier. Un stéréotype peut également étendre la liste de propriétés d'un élément.
+Vous pouvez définir un *profil UML* pour personnaliser les éléments de modèle standard à des fins spécifiques. Un profil définit un ou plusieurs *stéréotypes UML*. Un stéréotype permet de marquer un type comme représentant un genre d'objet particulier. Un stéréotype peut également étendre la liste de propriétés d'un élément.
 
- Plusieurs profils sont installés avec les éditions prises en charge de Visual Studio. Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport). Pour plus d’informations sur ces profils et sur la façon d’appliquer des stéréotypes, consultez [personnaliser votre modèle avec des profils et des stéréotypes](../modeling/customize-your-model-with-profiles-and-stereotypes.md).
+ Plusieurs profils sont installés avec les éditions prises en charge de Visual Studio. Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport). Pour plus d’informations sur ces profils et sur la façon d’appliquer des stéréotypes, consultez [personnaliser votre modèle avec des profils et des stéréotypes](../modeling/customize-your-model-with-profiles-and-stereotypes.md).
 
- Vous pouvez définir vos propres profils pour adapter et étendre UML à votre propre secteur d'activité ou architecture. Par exemple :
+ Vous pouvez définir vos propres profils pour adapter et étendre UML à votre propre secteur d'activité ou architecture. Exemple :
 
 - Si vous définissez fréquemment des sites web, vous pouvez définir votre propre profil qui fournit un stéréotype « Pageweb » qui peut être appliqué aux classes dans les diagrammes de classes. Vous pouvez ensuite utiliser des diagrammes de classes pour planifier un site web. Chaque classe « Pageweb » aurait des propriétés supplémentaires pour le contenu de la page, le style et ainsi de suite.
 
@@ -51,11 +51,11 @@ Vous pouvez définir un *profil UML* pour personnaliser les éléments de modèl
 
 1. Créez un fichier XML avec l'extension de nom de fichier `.profile`.
 
-2. Ajoutez des définitions de stéréotypes en suivant les instructions fournies dans [Structure d'un profil](#Schema).
+2. Ajoutez des définitions de stéréotypes conformément aux instructions décrites dans [la structure d’un profil](#Schema).
 
 3. Ajoutez le profil à une Extension Visual Studio (fichier `.vsix`). Vous pouvez créer une extension pour votre profil ou ajouter le profil à une extension existante.
 
-     Consultez la section suivante, [Comment ajouter un profil à une Extension Visual Studio](#AddProfile).
+     Consultez la section suivante, [comment ajouter un profil à une extension Visual Studio](#AddProfile).
 
 4. Installez l'extension sur votre ordinateur.
 
@@ -67,9 +67,9 @@ Vous pouvez définir un *profil UML* pour personnaliser les éléments de modèl
 
     1. Sélectionnez le modèle dans l'Explorateur UML.
 
-    2. Dans la fenêtre Propriétés, cliquez sur la propriété **Profils**. Votre profil apparaît dans le menu. Cochez la case en regard du profil.
+    2. Dans le Fenêtre Propriétés, cliquez sur la propriété **profils** . Votre profil apparaît dans le menu. Cochez la case en regard du profil.
 
-    3. Sélectionnez un élément pour lequel votre profil définit des stéréotypes. Dans la fenêtre Propriétés, cliquez sur la propriété **Stéréotypes**. Vos stéréotypes apparaissent dans la liste. Cochez la case en regard de l'un des stéréotypes.
+    3. Sélectionnez un élément pour lequel votre profil définit des stéréotypes. Dans l’Fenêtre Propriétés, cliquez sur la propriété **stéréotypes** . Vos stéréotypes apparaissent dans la liste. Cochez la case en regard de l'un des stéréotypes.
 
     4. Si votre profil définit des propriétés supplémentaires pour ce stéréotype, développez la propriété du stéréotype pour les afficher.
 
@@ -87,33 +87,33 @@ Vous pouvez définir un *profil UML* pour personnaliser les éléments de modèl
 
    1. Dans le menu **Fichier** , pointez sur **Nouveau**, puis cliquez sur **Projet**.
 
-   2. Dans la boîte de dialogue **Nouveau projet**, sous **Modèles installés**, développez **Visual C#** , cliquez sur **Extensibilité**, puis sur **Projet VSIX**. Définissez le nom du projet et cliquez sur **OK**.
+   2. Dans la boîte de dialogue **nouveau projet** , sous **modèles installés**, développez **Visual C#** , cliquez sur **extensibilité**, puis sur **projet VSIX**. Définissez le nom du projet et cliquez sur **OK**.
 
 2. Ajoutez votre profil au projet.
 
-   - Dans l'Explorateur de solutions, cliquez avec le bouton droit sur le projet, pointez sur **Ajouter**, puis cliquez sur **Élément existant**. Dans la boîte de dialogue, recherchez votre fichier de profil.
+   - Dans Explorateur de solutions, cliquez avec le bouton droit sur le projet, pointez sur **Ajouter**, puis cliquez sur **élément existant**. Dans la boîte de dialogue, recherchez votre fichier de profil.
 
-3. Définissez la propriété **Copier dans le répertoire de sortie** du fichier de profil.
+3. Définissez la propriété **copier dans la sortie** du fichier de profil.
 
-   1. Dans l'Explorateur de solutions, cliquez avec le bouton droit sur le fichier de projet, puis cliquez sur **Propriétés**.
+   1. Dans Explorateur de solutions, cliquez avec le bouton droit sur le fichier de profil, puis cliquez sur **Propriétés**.
 
-   2. Dans la fenêtre Propriétés, affectez la valeur **Toujours copier** à la propriété **Copier dans le répertoire de sortie**.
+   2. Dans la Fenêtre Propriétés, définissez la propriété **copier dans le répertoire de sortie** sur **toujours copier**.
 
 4. Dans l'Explorateur de solutions, ouvrez `source.extension.vsixmanifest`.
 
     Le fichier s'ouvre dans l'éditeur de manifeste d'extension.
 
-5. Dans la page **Composants**, ajoutez une ligne décrivant le profil :
+5. Dans la page **composants** , ajoutez une ligne décrivant le profil :
 
-   - Cliquez sur **Nouveau**. Définissez les champs dans la boîte de dialogue **Ajouter un nouveau composant** comme suit.
+   - Cliquez sur **Nouveau**. Définissez les champs dans la boîte de dialogue **Ajouter un nouvel élément** multimédia comme suit.
 
-   - Affectez **comme**Type`Microsoft.VisualStudio.UmlProfile`.
+   - Définir le **type** sur `Microsoft.VisualStudio.UmlProfile`
 
         Cette option ne figure pas dans la liste déroulante. Vous devez entrer ce nom au clavier.
 
-   - Cliquez sur **Fichier sur le système de fichiers** et sélectionnez le nom de votre fichier de profil, par exemple `MyProfile.profile`.
+   - Cliquez sur **fichier sur le système de fichiers** , puis sélectionnez le nom de votre fichier de profil, par exemple `MyProfile.profile`
 
-6. Générez le projet.
+6. créer le projet ;
 
 7. **Pour déboguer le profil**, appuyez sur F5.
 
@@ -168,7 +168,7 @@ Vous pouvez définir un *profil UML* pour personnaliser les éléments de modèl
 
 4. Placez les trois fichiers dans un fichier compressé.
 
-     Dans l'Explorateur Windows, sélectionnez les trois fichiers, cliquez avec le bouton droit, pointez sur **Envoyer vers**, puis cliquez sur **Dossier compressé**.
+     Dans l’Explorateur Windows, sélectionnez les trois fichiers, cliquez avec le bouton droit, pointez sur **Envoyer vers**, puis cliquez sur **dossier compressé (zippé)** .
 
 5. Renommez le fichier compressé et remplacez son extension de nom de fichier `.zip` par `.vsix`.
 
@@ -178,9 +178,9 @@ Vous pouvez définir un *profil UML* pour personnaliser les éléments de modèl
 
 1. Double-cliquez sur le fichier `.vsix` dans l'Explorateur Windows ou ouvrez-le dans Visual Studio.
 
-2. Cliquez sur **Installer** dans la boîte de dialogue qui s'affiche.
+2. Cliquez sur **installer** dans la boîte de dialogue qui s’affiche.
 
-3. Pour désinstaller ou désactiver momentanément l'extension, ouvrez **Extensions et mises à jour** dans le menu **Outils**.
+3. Pour désinstaller ou désactiver temporairement l’extension, ouvrez **extensions et mises à jour** dans le menu **Outils** .
 
 ## <a name="Localized"></a>Comment définir des profils localisés
  Vous pouvez définir différents profils pour différentes cultures ou langues, et tous les empaqueter dans la même extension. Quand un utilisateur chargera votre extension, ils verra le profil que vous avez défini pour sa culture.
@@ -257,7 +257,7 @@ Vous pouvez définir un *profil UML* pour personnaliser les éléments de modèl
 
 - `<stereotypes>`-les définitions de stéréotype. Chaque définition comprend les noms et les types de propriétés qui sont ajoutés à l'élément de modèle cible.
 
-#### <a name="property-types"></a>Types de propriétés
+#### <a name="property-types"></a>Types de propriété
  La section `<propertyTypes>` déclare une liste de types utilisés pour les propriétés dans la section `<stereotypes>`. Il existe deux genres de types de propriétés : externe et énumération.
 
  Un type externe déclare le nom qualifié complet d'un type .NET standard :
@@ -289,7 +289,7 @@ Vous pouvez définir un *profil UML* pour personnaliser les éléments de modèl
       name="Microsoft.VisualStudio.Uml.Components.IComponent" />
 ```
 
- Pour obtenir la liste complète des types de relations et d'éléments de modèles que vous pouvez utiliser comme métaclasses, consultez [Types d'éléments de modèles](#Elements).
+ Pour obtenir la liste complète des types d’éléments de modèles et de relations que vous pouvez utiliser en tant que reclasses, consultez [types d’éléments de modèle](#Elements).
 
 #### <a name="stereotype-definition"></a>Définition de stéréotype
  La section `<stereotypes>` contient une ou plusieurs définitions de stéréotypes :
@@ -349,7 +349,7 @@ Vous devez sélectionner votre profil dans un package ou un modèle. Les stéré
 
 3. Vérifiez que la syntaxe est décrite ici et, comme illustré dans _lecteur_ **: \Program Files\Microsoft Visual Studio [version] \Common7\IDE\Extensions\Microsoft\Architecture Tools\UmlProfiles\\** .
 
-4. Désinstallez l'extension défectueuse. Dans le menu **Outils**, choisissez **Extensions et mises à jour**.
+4. Désinstallez l'extension défectueuse. Dans le menu **Outils** , choisissez **Extensions et mises à jour**.
 
    - Si l'extension n'apparaît pas, consultez le paragraphe suivant.
 
@@ -358,7 +358,7 @@ Vous devez sélectionner votre profil dans un package ou un modèle. Les stéré
    L’extension n’apparaît pas dans le gestionnaire d’extensions, mais lorsque vous essayez de la réinstaller, le message suivant s’affiche : **l’extension est déjà installée pour tous les produits applicables.**
    1. Supprimez le fichier d’extension d’un sous-dossier de *LocalAppData*\Microsoft\VisualStudio\\[version] \Extensions\
 
-   - Pour voir *LocalAppData*, vous devez définir Afficher les fichiers et dossiers cachés sous l'onglet Affichage des Options des dossiers de l'Explorateur Windows.
+   - Pour voir *LocalAppData*, vous devez définir afficher les fichiers et les dossiers masqués sous l’onglet Affichage des options des dossiers de l’Explorateur Windows.
 
    - *LocalAppData* se trouve généralement dans C:\Users\\*nom_utilisateur*\AppData\Local\
 

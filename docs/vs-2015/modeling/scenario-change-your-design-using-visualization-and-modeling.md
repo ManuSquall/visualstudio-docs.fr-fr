@@ -29,7 +29,7 @@ ms.locfileid: "74296028"
 
 Assurez-vous que votre système logiciel répond aux besoins des utilisateurs à l’aide des outils de visualisation et de modélisation dans Visual Studio. Utilisez des outils comme les diagrammes UML (Unified Modeling Language), les cartes de code, les diagrammes de couche et les diagrammes de classes pour effectuer les tâches ci-dessous :
 
- Pour connaître les versions de Visual Studio qui prennent en charge chaque outil, consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Pour connaître les versions de Visual Studio qui prennent en charge chaque outil, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 - Clarifier les besoins des utilisateurs et les processus d’entreprise.
 
@@ -101,7 +101,7 @@ Assurez-vous que votre système logiciel répond aux besoins des utilisateurs à
 
 - [Créer des diagrammes de couche à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md)
 
-- [Mapper les dépendances dans vos solutions](../modeling/map-dependencies-across-your-solutions.md)
+- [Mapper les dépendances à travers vos solutions](../modeling/map-dependencies-across-your-solutions.md)
 
 - [Guide pratique pour ajouter des diagrammes de classes aux projets (Concepteur de classes)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)
 
@@ -120,7 +120,7 @@ Assurez-vous que votre système logiciel répond aux besoins des utilisateurs à
 - [Valider du code avec des diagrammes de couche](../modeling/validate-code-with-layer-diagrams.md)
 
   > [!NOTE]
-  > Certaines versions de Visual Studio prennent en charge la validation de couche et les versions en lecture seule des cartes de code et des diagrammes UML à des fins de visualisation et de modélisation. Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+  > Certaines versions de Visual Studio prennent en charge la validation de couche et les versions en lecture seule des cartes de code et des diagrammes UML à des fins de visualisation et de modélisation. Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="UnderstandingCommunicating"></a> Présentation et communication des informations sur le système
  Il n’y a pas d’ordre impératif pour l’utilisation des diagrammes de modélisation Visual Studio. Vous pouvez donc les utiliser comme vous le voulez, en fonction de vos besoins ou de votre approche. En règle générale, les équipes revoient leurs modèles de façon répétée et fréquente au cours d’un projet. Chaque diagramme possède ses propres atouts pour vous aider à comprendre, décrire et communiquer différents aspects du système en cours de développement.
@@ -317,7 +317,7 @@ Assurez-vous que votre système logiciel répond aux besoins des utilisateurs à
 
    Pour voir le modèle, dans le menu **Architecture** , pointez sur  **Fenêtres**, puis cliquez sur **Explorateur de modèles UML**.
 
-- Dans certains cas, vous pouvez faire glisser des éléments de l’**Explorateur de modèles UML** vers un diagramme UML. Certains éléments au sein du même modèle peuvent être utilisés sur plusieurs ou différents diagrammes pour représenter d’autres vues de l’architecture. Par exemple, faites glisser un composant vers un autre diagramme de composant ou vers un diagramme de séquence à utiliser en tant qu’acteur.
+- Dans certains cas, vous pouvez faire glisser des éléments de l’ **Explorateur de modèles UML** vers un diagramme UML. Certains éléments au sein du même modèle peuvent être utilisés sur plusieurs ou différents diagrammes pour représenter d’autres vues de l’architecture. Par exemple, faites glisser un composant vers un autre diagramme de composant ou vers un diagramme de séquence à utiliser en tant qu’acteur.
 
 - Visual Studio prend en charge UML 2.1.2. Cette vue d’ensemble décrit uniquement les principales fonctionnalités des diagrammes UML disponibles dans cette version, mais il existe de nombreux ouvrages traitant du langage UML et de son utilisation plus en détail.
 
@@ -419,30 +419,30 @@ Assurez-vous que votre système logiciel répond aux besoins des utilisateurs à
 
   Reportez-vous à :
 
-- [Diagrammes de cas d'usage UML : référence](../modeling/uml-use-case-diagrams-reference.md)
+- [Informations de référence sur les diagrammes de cas d’usage UML](../modeling/uml-use-case-diagrams-reference.md)
 
-- [Diagrammes de cas d'usage UML : indications](../modeling/uml-use-case-diagrams-guidelines.md)
+- [Diagrammes de cas d’usage UML : recommandations](../modeling/uml-use-case-diagrams-guidelines.md)
 
 #### <a name="drawing-a-use-case-diagram"></a>Dessin d’un diagramme de cas d’usage
  Un diagramme de cas d’usage comporte les principales fonctionnalités suivantes :
 
-- Les *acteurs* représentent les rôles joués par les personnes, les organisations, les ordinateurs ou les systèmes logiciels. Par exemple, Client, Restaurant et Système de paiement de Dinner Now sont des acteurs.
+- Les*acteurs* représentent les rôles joués par les personnes, les organisations, les ordinateurs ou les systèmes logiciels. Par exemple, Client, Restaurant et Système de paiement de Dinner Now sont des acteurs.
 
-- Les *cas d’usage* représentent les interactions entre les acteurs et le système en cours de développement.  Ils peuvent représenter tout niveau d’interaction depuis un clic de souris ou un message unique jusqu’à une transaction qui se déroule sur plusieurs jours.
+- Les*cas d’usage* représentent les interactions entre les acteurs et le système en cours de développement.  Ils peuvent représenter tout niveau d’interaction depuis un clic de souris ou un message unique jusqu’à une transaction qui se déroule sur plusieurs jours.
 
-- Les *associations* lient les acteurs aux cas d’usage.
+- Les*associations* lient les acteurs aux cas d’usage.
 
 - Un cas d’usage plus large peut *inclure* plusieurs cas d’usage plus petits (par exemple, Créer une commande inclut Sélectionner un restaurant). Vous pouvez *étendre* un cas d’usage, ce qui ajoute des objectifs et des étapes au cas d’usage étendu, pour indiquer qu’il se produit uniquement sous certaines conditions. Les cas d’usage peuvent également hériter les uns des autres.
 
 - Un *sous-système* représente le système logiciel en cours de développement ou l’un de ses composants. Il s’agit d’une grande « boîte » qui contient des cas d’usage. Un diagramme de cas d’usage clarifie ce qui est à l’intérieur ou à l’extérieur des limites du sous-système. Pour indiquer que l’utilisateur doit remplir certains objectifs d’une autre manière, dessinez ces cas d’usage en dehors des limites du sous-système.
 
-- Les *artefacts* lient des éléments d’un diagramme à d’autres diagrammes ou documents.
+- Les*artefacts* lient des éléments d’un diagramme à d’autres diagrammes ou documents.
 
   Reportez-vous à :
 
-- [Diagrammes de cas d'usage UML : référence](../modeling/uml-use-case-diagrams-reference.md)
+- [Informations de référence sur les diagrammes de cas d’usage UML](../modeling/uml-use-case-diagrams-reference.md)
 
-- [Diagrammes de cas d'usage UML : indications](../modeling/uml-use-case-diagrams-guidelines.md)
+- [Diagrammes de cas d’usage UML : recommandations](../modeling/uml-use-case-diagrams-guidelines.md)
 
 #### <a name="summary-strengths-of-use-case-diagrams"></a>Résumé : atouts des diagrammes de cas d’usage
  Les diagrammes de cas d’usage vous aident à visualiser :
@@ -480,9 +480,9 @@ Assurez-vous que votre système logiciel répond aux besoins des utilisateurs à
 
  Reportez-vous à :
 
-- [Diagrammes d'activités UML : référence](../modeling/uml-activity-diagrams-reference.md)
+- [Informations de référence sur les diagrammes d’activités UML](../modeling/uml-activity-diagrams-reference.md)
 
-- [Diagrammes d'activités UML : instructions](../modeling/uml-activity-diagrams-guidelines.md)
+- [Diagrammes d’activités UML : conseils](../modeling/uml-activity-diagrams-guidelines.md)
 
 #### <a name="drawing-an-activity-diagram"></a>Dessin d’un diagramme d’activités
  Un diagramme d’activités comporte les principales fonctionnalités suivantes :
@@ -491,23 +491,23 @@ Assurez-vous que votre système logiciel répond aux besoins des utilisateurs à
 
    Le diagramme doit toujours comporter un de ces nœuds.
 
-- Des *actions* qui décrivent les étapes au cours desquelles l’utilisateur ou le logiciel effectuent une tâche.
+- Des*actions* qui décrivent les étapes au cours desquelles l’utilisateur ou le logiciel effectuent une tâche.
 
-- Des *flux de contrôle* qui montrent le flux entre les actions.
+- Des*flux de contrôle* qui montrent le flux entre les actions.
 
-- Des *nœuds de décision* qui représentent les branches conditionnelles dans le flux.
+- Des*nœuds de décision* qui représentent les branches conditionnelles dans le flux.
 
-- Des *nœuds de bifurcation* qui divisent les flux uniques en flux simultanés.
+- Des*nœuds de bifurcation* qui divisent les flux uniques en flux simultanés.
 
-- Des *nœuds finaux de l’activité* qui montrent la fin de l’activité.
+- Des*nœuds finaux de l’activité* qui montrent la fin de l’activité.
 
    Ces nœuds sont facultatifs, mais il est préférable de les inclure dans le diagramme pour indiquer la fin de l’activité.
 
   Reportez-vous à :
 
-- [Diagrammes d'activités UML : référence](../modeling/uml-activity-diagrams-reference.md)
+- [Informations de référence sur les diagrammes d’activités UML](../modeling/uml-activity-diagrams-reference.md)
 
-- [Diagrammes d'activités UML : instructions](../modeling/uml-activity-diagrams-guidelines.md)
+- [Diagrammes d’activités UML : conseils](../modeling/uml-activity-diagrams-guidelines.md)
 
 #### <a name="summary-strengths-of-activity-diagrams"></a>Résumé : atouts des diagrammes d’activités
  Les diagrammes d’activités vous aident à visualiser et décrire le flux de contrôle et d’informations entre les actions d’une entreprise, d’un système ou d’un programme. Il s’agit d’un moyen simple et pratique de décrire le flux de travail pour communiquer avec d’autres personnes.
@@ -556,28 +556,28 @@ Assurez-vous que votre système logiciel répond aux besoins des utilisateurs à
 
 - [Informations de référence sur les diagrammes de composants UML](../modeling/uml-component-diagrams-reference.md)
 
-- [Diagrammes de composants UML : instructions](../modeling/uml-component-diagrams-guidelines.md)
+- [Diagrammes de composants UML : recommandations](../modeling/uml-component-diagrams-guidelines.md)
 
 #### <a name="drawing-a-component-diagram"></a>Dessin d’un diagramme de composant
  Un diagramme de composant comporte les principales fonctionnalités suivantes :
 
-- Des *composants* qui représentent des parties séparables des fonctionnalités du système.
+- Des*composants* qui représentent des parties séparables des fonctionnalités du système.
 
-- Des *ports d’interface fournie* qui représentent des groupes de messages ou d’appels que les composants implémentent et qui servent à d’autres composants ou systèmes externes.
+- Des*ports d’interface fournie* qui représentent des groupes de messages ou d’appels que les composants implémentent et qui servent à d’autres composants ou systèmes externes.
 
-- Des *ports d’interface requise* qui représentent des groupes de messages ou d’appels que les composants envoient à d’autres composants ou systèmes externes. Ce type de port décrit les opérations qu’un composant attend au minimum des autres composants ou systèmes externes.
+- Des*ports d’interface requise* qui représentent des groupes de messages ou d’appels que les composants envoient à d’autres composants ou systèmes externes. Ce type de port décrit les opérations qu’un composant attend au minimum des autres composants ou systèmes externes.
 
-- Les *parties* sont membres de composants et sont généralement des instances d’autres composants. Une partie est un fragment de la conception interne du composant parent.
+- Les*parties* sont membres de composants et sont généralement des instances d’autres composants. Une partie est un fragment de la conception interne du composant parent.
 
-- Des *dépendances* qui indiquent que les composants nécessitent les fonctionnalités d’autres composants.
+- Des*dépendances* qui indiquent que les composants nécessitent les fonctionnalités d’autres composants.
 
-- Des *délégations* qui indiquent que des parties d’un composant gèrent les messages envoyés ou reçus par le composant parent.
+- Des*délégations* qui indiquent que des parties d’un composant gèrent les messages envoyés ou reçus par le composant parent.
 
   Reportez-vous à :
 
 - [Informations de référence sur les diagrammes de composants UML](../modeling/uml-component-diagrams-reference.md)
 
-- [Diagrammes de composants UML : instructions](../modeling/uml-component-diagrams-guidelines.md)
+- [Diagrammes de composants UML : recommandations](../modeling/uml-component-diagrams-guidelines.md)
 
 #### <a name="summary-strengths-of-component-diagrams"></a>Résumé : atouts des diagrammes de composant
  Les diagrammes de composant vous aident à visualiser :
@@ -643,7 +643,7 @@ Assurez-vous que votre système logiciel répond aux besoins des utilisateurs à
 
      Pour obtenir un aperçu rapide du code compilé, créez une carte de code vide, puis faites glisser des fichiers d’assembly ou des fichiers binaires vers la surface de la carte.
 
-- Pour explorer du code spécifique ou des éléments de solution, utilisez l’Explorateur de solutions pour sélectionner les éléments et les relations que vous voulez visualiser. Vous pouvez ensuite générer une nouvelle carte ou ajouter les éléments sélectionnés à une carte existante. Consultez [Mapper les dépendances dans vos solutions](../modeling/map-dependencies-across-your-solutions.md).
+- Pour explorer du code spécifique ou des éléments de solution, utilisez l’Explorateur de solutions pour sélectionner les éléments et les relations que vous voulez visualiser. Vous pouvez ensuite générer une nouvelle carte ou ajouter les éléments sélectionnés à une carte existante. Consultez [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md).
 
 - Pour explorer la carte plus facilement, réorganisez la disposition pour qu’elle corresponde aux types de tâches à effectuer.
 
@@ -682,20 +682,20 @@ Assurez-vous que votre système logiciel répond aux besoins des utilisateurs à
 
  Reportez-vous à :
 
-- [Diagrammes de séquence UML : référence](../modeling/uml-sequence-diagrams-reference.md)
+- [Informations de référence sur les diagrammes de séquence UML](../modeling/uml-sequence-diagrams-reference.md)
 
 - [Diagrammes de séquence UML : recommandations](../modeling/uml-sequence-diagrams-guidelines.md)
 
-- [Mapper les dépendances dans vos solutions](../modeling/map-dependencies-across-your-solutions.md)
+- [Mapper les dépendances à travers vos solutions](../modeling/map-dependencies-across-your-solutions.md)
 
 #### <a name="drawing-a-sequence-diagram"></a>Dessin d’un diagramme de séquence
  Un diagramme de séquence comporte les principales fonctionnalités suivantes :
 
 - Les *lignes de vie* verticales représentent les acteurs ou les instances des objets logiciels.
 
-   Pour ajouter un symbole d’acteur, qui indique qu’un participant est en dehors du système en cours de développement, cliquez sur la ligne de vie. Dans la fenêtre **Propriétés**, affectez à **Acteur** la valeur **True**. Si la fenêtre **Propriétés** n’est pas ouverte, appuyez sur **F4**.
+   Pour ajouter un symbole d’acteur, qui indique qu’un participant est en dehors du système en cours de développement, cliquez sur la ligne de vie. Dans la fenêtre **Propriétés** , affectez à **Acteur** la valeur **True**. Si la fenêtre **Propriétés** n’est pas ouverte, appuyez sur **F4**.
 
-- Les *messages* horizontaux représentent des appels de méthode, des messages de service web ou d’autres communications. Les *occurrences d’exécution* sont des rectangles grisés verticaux qui apparaissent sur les lignes de vie et qui représentent les périodes pendant lesquelles les objets de destination traitent les appels.
+- Les *messages* horizontaux représentent des appels de méthode, des messages de service web ou d’autres communications. Les*occurrences d’exécution* sont des rectangles grisés verticaux qui apparaissent sur les lignes de vie et qui représentent les périodes pendant lesquelles les objets de destination traitent les appels.
 
 - Pendant un message *synchrone* , l’objet expéditeur attend que le contrôle <\<retourner > > comme dans un appel de fonction normal. Pendant un message *asynchrone* , l’expéditeur peut continuer immédiatement.
 
@@ -703,7 +703,7 @@ Assurez-vous que votre système logiciel répond aux besoins des utilisateurs à
 
   Reportez-vous à :
 
-- [Diagrammes de séquence UML : référence](../modeling/uml-sequence-diagrams-reference.md)
+- [Informations de référence sur les diagrammes de séquence UML](../modeling/uml-sequence-diagrams-reference.md)
 
 - [Diagrammes de séquence UML : recommandations](../modeling/uml-sequence-diagrams-guidelines.md)
 
@@ -743,7 +743,7 @@ Assurez-vous que votre système logiciel répond aux besoins des utilisateurs à
 
 - [Informations de référence sur les diagrammes de classes UML](../modeling/uml-class-diagrams-reference.md)
 
-- [Diagrammes de classes UML : indications](../modeling/uml-class-diagrams-guidelines.md)
+- [Diagrammes de classes UML : recommandations](../modeling/uml-class-diagrams-guidelines.md)
 
 #### <a name="drawing-a-class-diagram"></a>Dessin d’un diagramme de classes
  Un diagramme de classes comporte les principales fonctionnalités suivantes :
@@ -782,7 +782,7 @@ Assurez-vous que votre système logiciel répond aux besoins des utilisateurs à
 
 - [Informations de référence sur les diagrammes de classes UML](../modeling/uml-class-diagrams-reference.md)
 
-- [Diagrammes de classes UML : indications](../modeling/uml-class-diagrams-guidelines.md)
+- [Diagrammes de classes UML : recommandations](../modeling/uml-class-diagrams-guidelines.md)
 
 - [Guide pratique pour ajouter des diagrammes de classes aux projets (Concepteur de classes)](../ide/how-to-add-class-diagrams-to-projects-class-designer.md)
 
@@ -848,7 +848,7 @@ Assurez-vous que votre système logiciel répond aux besoins des utilisateurs à
 
   - Si une couche contient d'autres couches liées à des artefacts, la couche du conteneur est également liée à ces artefacts, même si le nombre indiqué sur la couche du conteneur ne comprend pas ces artefacts.
 
-    Pour voir les artefacts liés à une couche, cliquez avec le bouton droit sur la couche, puis cliquez sur **Afficher les liens** pour ouvrir l’**Explorateur de couches**.
+    Pour voir les artefacts liés à une couche, cliquez avec le bouton droit sur la couche, puis cliquez sur **Afficher les liens** pour ouvrir l’ **Explorateur de couches**.
 
 - Une *dépendance* indique qu’une couche peut utiliser la fonctionnalité d’une autre couche, mais pas l’inverse. Une *dépendance bidirectionnelle* indique qu’une couche peut utiliser la fonctionnalité d’une autre couche, et vice versa.
 
@@ -858,9 +858,9 @@ Assurez-vous que votre système logiciel répond aux besoins des utilisateurs à
 
 - [Créer des diagrammes de couche à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md)
 
-- [Diagrammes de couche : référence](../modeling/layer-diagrams-reference.md)
+- [Informations de référence sur les diagrammes de couche](../modeling/layer-diagrams-reference.md)
 
-- [Diagrammes de couche : indications](../modeling/layer-diagrams-guidelines.md)
+- [Diagrammes de couche : recommandations](../modeling/layer-diagrams-guidelines.md)
 
 - [Valider du code avec des diagrammes de couche](../modeling/validate-code-with-layer-diagrams.md)
 

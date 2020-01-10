@@ -9,14 +9,15 @@ ms.assetid: 1bb05441-c4ff-4323-9fef-f3924fba4430
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e0d4cdfd393961566a0aef0c649e6ff788fdc8ac
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d9f0c9a3259186e1581a4673cdc18d1554e92b3c
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403616"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778490"
 ---
 # <a name="nameprofile"></a>NameProfile
 La fonction `NameProfile` affecte une chaîne au processus ou au thread spécifié.
@@ -32,7 +33,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
                                    unsigned int dwId);
 ```
 
-#### <a name="parameters"></a>Paramètres
+#### <a name="parameters"></a>Parameters
  `pszName`
 
  Nom de l’élément de profilage. Un nom n’est pas valide (NameProfileA retournant alors NAME_ERROR_INVALID_NAME) si :
@@ -60,7 +61,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
  Identificateur de niveau de profilage. Utilisez l’identificateur de processus ou de thread généré par le système.
 
 ## <a name="property-valuereturn-value"></a>Valeur de propriété/valeur de retour
- La fonction indique la réussite ou l’échec en utilisant l’énumération **PROFILE_COMMAND_STATUS**. La valeur de retour peut être une des suivantes :
+ La fonction indique la réussite ou l’échec en utilisant l’énumération **PROFILE_COMMAND_STATUS**. La valeur renvoyée peut être l'une des suivantes :
 
 |Enumerator|Description|
 |----------------|-----------------|
@@ -73,7 +74,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
 |NAME_ERROR_TEXTTRUNCATED|Le texte du nom dépassait 32 caractères, y compris le caractère null, et a donc été tronqué.|
 |NAME_OK|Le nom a été inscrit.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Vous ne pouvez affecter qu’un seul nom à chaque processus ou thread. Une fois qu’un élément de profilage est nommé, les appels suivants à NameProfile pour cet élément sont ignorés.
 
  Si un même nom est affecté à différents threads ou processus, le rapport comprend les données provenant de tous les éléments de ce niveau portant ce nom.

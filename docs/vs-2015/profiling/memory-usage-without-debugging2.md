@@ -64,7 +64,7 @@ Vous pouvez utiliser l’outil **Utilisation de la mémoire** sans débogage pou
  Pour collecter des instantanés, démarrez une nouvelle session de diagnostic. Choisissez **Prendre un instantané** quand vous voulez capturer les données de mémoire. Pour générer un rapport, choisissez **Arrêter**.  
   
 ## <a name="BKMK_Memory_Usage_overview_page"></a> Page de vue d’ensemble de l’utilisation de la mémoire  
- Une fois que vous avez arrêté la collection des données, l’outil Utilisation de la mémoire arrête l’application et affiche le rapport de vue d’ensemble.  
+ Une fois que vous avez arrêté la collecte des données, l'outil Utilisation de la mémoire arrête l'application et affiche le rapport de vue d'ensemble.  
   
  ![Page vue d’ensemble de l’utilisation de la mémoire](../profiling/media/memuse-reportoverview.png "MEMUSE__ReportOverview")  
   
@@ -95,7 +95,7 @@ Vous pouvez utiliser l’outil **Utilisation de la mémoire** sans débogage pou
  Les arborescences de tas managé [Arborescence Tas managé (détails de l’instantané)](../profiling/memory-usage-without-debugging2.md#BKMK_Managed_Heap_tree__Snapshot_details_) et [Arborescence Tas managé (comparaison d’instantanés)](../profiling/memory-usage-without-debugging2.md#BKMK_Managed_Heap_tree__Snapshot_diff_) indiquent les types et instances présents dans le rapport. La sélection d’un type ou d’une instance affiche les arborescences **Chemins d’accès à la racine** et **Objets référencés** pour l’élément sélectionné.  
   
 #### <a name="BKMK_Paths_to_Root"></a> Chemins d’accès à la racine  
- L’[arborescence Chemins d’accès à la racine (détails de l’instantané)](../profiling/memory-usage-without-debugging2.md#BKMK_Paths_to_Root_tree__Snapshot_details_) et l’[arborescence Chemins d’accès à la racine (comparaison d’instantanés)](../profiling/memory-usage-without-debugging2.md#BKMK_Paths_to_Root_tree__Snapshot_diff_) affichent la chaîne d’objets qui font référence au type ou à l’instance. Le récupérateur de mémoire .NET Framework nettoie la mémoire d’un objet uniquement quand toutes les références à cet objet ont été libérées.  
+ L’[arborescence Chemins d’accès à la racine (détails de l’instantané)](../profiling/memory-usage-without-debugging2.md#BKMK_Paths_to_Root_tree__Snapshot_details_) et l’[arborescence Chemins d’accès à la racine (comparaison d’instantanés)](../profiling/memory-usage-without-debugging2.md#BKMK_Paths_to_Root_tree__Snapshot_diff_) affichent la chaîne d’objets qui font référence au type ou à l’instance. Le récupérateur de mémoire .NET Framework nettoie la mémoire d'un objet uniquement quand toutes les références à cet objet ont été libérées.  
   
 #### <a name="BKMK_Referenced_Objects"></a> Objets référencés  
  L’[arborescence Objets référencés (détails de l’instantané)](../profiling/memory-usage-without-debugging2.md#BKMK_Referenced_Objects_tree__Snapshot_details_) et l’[arborescence Objets référencés (comparaison d’instantanés)](../profiling/memory-usage-without-debugging2.md#BKMK_Referenced_Objects_tree__Snapshot_diff_) affichent les objets auxquels l’instance ou le type sélectionné fait référence.  
@@ -122,7 +122,7 @@ Vous pouvez utiliser l’outil **Utilisation de la mémoire** sans débogage pou
  Le filtre **Uniquement mon code** masque la plupart des instances générées par du code externe. Les types externes sont détenus par le système d'exploitation ou les composants Framework. Ils peuvent aussi être générés par le compilateur.  
   
 ## <a name="BKMK_Snapshot_details_reports"></a> Rapports détaillés d’instantané  
- Vous utilisez un rapport détaillé d'instantané pour vous concentrer sur un seul instantané d'une session de diagnostic. Pour ouvrir un rapport détaillé, choisissez l'un des deux liens dans une vue d'instantané, comme indiqué dans l'image suivante. Les deux liens ouvrent le même rapport. La seule différence concerne l’ordre de tri de départ de l’arborescence **Tas managé** dans le rapport. Dans les deux cas, vous pouvez modifier l'ordre de tri après ouverture du rapport.  
+ Vous utilisez un rapport détaillé d'instantané pour vous concentrer sur un seul instantané d'une session de diagnostic. Pour ouvrir un rapport détaillé, choisissez l'un des deux liens dans une vue d'instantané, comme indiqué dans l'image suivante. Les deux liens ouvrent le même rapport. La seule différence concerne l’ordre de tri de départ de l’arborescence **Tas managé** dans le rapport. Dans les deux cas, vous pouvez modifier l'ordre de tri après l'ouverture du rapport.  
   
  ![Liens vers le rapport d’instantané dans une vue d’instantané](../profiling/media/memuse-snapshotview-snapshotdetailslinks.png "MEMUSE_SnapshotView_SnapshotDetailsLinks")  
   
@@ -143,7 +143,7 @@ Vous pouvez utiliser l’outil **Utilisation de la mémoire** sans débogage pou
 |**Taille inclusive (octets)**|Taille des instances du type ou taille d'une seule instance, y compris la taille des objets contenus.|  
   
 ### <a name="BKMK_Paths_to_Root_tree__Snapshot_details_"></a> Arborescence Chemins d’accès à la racine (détails de l’instantané)  
- L’arborescence **Chemins d’accès à la racine** indique la chaîne d’objets faisant référence au type ou à l’instance. Le récupérateur de mémoire .NET Framework nettoie la mémoire d’un objet uniquement quand toutes les références à cet objet ont été libérées.  
+ L’arborescence **Chemins d’accès à la racine** indique la chaîne d’objets faisant référence au type ou à l’instance. Le récupérateur de mémoire .NET Framework nettoie la mémoire d'un objet uniquement quand toutes les références à cet objet ont été libérées.  
   
  ![Chemins d’accès à l’arborescence racine pour les types](../profiling/media/memuse-snapshotdetails-type-pathstoroottree.png "MEMUSE_SnapshotDetails_Type_PathsToRootTree")  
   
@@ -161,7 +161,7 @@ Vous pouvez utiliser l’outil **Utilisation de la mémoire** sans débogage pou
 |**Taille inclusive (octets)**|Taille totale des instances du type ou taille de l'instance, y compris la taille des objets contenus.|  
   
 ## <a name="BKMK_Snapshot_difference__diff__reports"></a> Rapports différentiels d’instantanés  
- Un rapport différentiel d'instantanés indique les modifications entre un instantané principal et l'instantané qui a été pris immédiatement avant. Pour ouvrir un rapport différentiel, choisissez l'un des deux liens dans une vue d'instantané, comme indiqué dans l'image suivante. Les deux liens ouvrent le même rapport. La seule différence concerne l’ordre de tri de départ de l’arborescence **Tas managé** dans le rapport. Vous pouvez modifier l'ordre de tri après ouverture du rapport.  
+ Un rapport différentiel d'instantanés montre les modifications entre un instantané principal et l'instantané qui a été pris immédiatement avant. Pour ouvrir un rapport différentiel, choisissez l'un des deux liens dans une vue d'instantané, comme indiqué dans l'image suivante. Les deux liens ouvrent le même rapport. La seule différence concerne l’ordre de tri de départ de l’arborescence **Tas managé** dans le rapport. Vous pouvez modifier l'ordre de tri après l'ouverture du rapport.  
   
  ![Liens vers le rapport de différences dans une vue d’instantané](../profiling/media/memuse-snapshotview-snapshotdifflinks.png "MEMUSE_SnapshotView_SnapshotDiffLinks")  
   
@@ -187,7 +187,7 @@ Vous pouvez utiliser l’outil **Utilisation de la mémoire** sans débogage pou
 |**Diff. de taille inclusive (octets)**|Pour un type, différence de taille de toutes les instances du type entre l'instantané principal et l'instantané précédent, y compris la taille des objets contenus dans les objets. Le champ est vide pour une instance.|  
   
 ### <a name="BKMK_Paths_to_Root_tree__Snapshot_diff_"></a> Arborescence Chemins d’accès à la racine (comparaison d’instantanés)  
- L’arborescence **Chemins d’accès à la racine** indique la chaîne d’objets faisant référence au type ou à l’instance. Le récupérateur de mémoire .NET Framework nettoie la mémoire d’un objet uniquement quand toutes les références à cet objet ont été libérées.  
+ L’arborescence **Chemins d’accès à la racine** indique la chaîne d’objets faisant référence au type ou à l’instance. Le récupérateur de mémoire .NET Framework nettoie la mémoire d'un objet uniquement quand toutes les références à cet objet ont été libérées.  
   
  ![Arborescence chemins d’accès à la racine pour les instances dans une vue diff](../profiling/media/memuse-snapshotdiff-pathstoroot-instance-all.png "MEMUSE_SnapshotDiff_PathsToRoot_Instance_All")  
   

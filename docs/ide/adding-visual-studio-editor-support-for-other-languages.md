@@ -11,17 +11,17 @@ helpviewer_keywords:
 - TextMate language grammar
 - language support
 ms.assetid: d78c43ee-4ef2-42e5-984e-d137de4e7e92
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e43325a6d749653c063c06f2c1c10c69f708da9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d4fafaf9356d8862808e1ac6ad125207d71769b5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647797"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590876"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Ajouter la prise en charge de l’éditeur Visual Studio pour d’autres langages
 
@@ -37,8 +37,8 @@ Actuellement, Visual Studio fournit la prise en charge de la coloration syntaxiq
 
 |||||||
 |-|-|-|-|-|-|
-|Bat|F#|Java|Markdown|Rust|Visual Basic|
-|Clojure|Go|JavaDoc|Objective-C|ShaderLab|C#|
+|Bat|F#|Java|Markdown|Rust|Visual Basic|
+|Clojure|Aller|JavaDoc|Objective-C|ShaderLab|C#|
 |CMake|Groovy|JSON|Perl|ShellScript|Visual C++|
 |CoffeeScript|HTML|LESS|Python|SQL|VBNet|
 |CSS|INI|LUA|R|Swift|XML|
@@ -54,9 +54,9 @@ Outre la coloration syntaxique et la saisie semi-automatique des instructions de
 
 - JavaScript
 
-- Visual Basic
+- Visual Basic
 
-- Go
+- Aller
 
 - Java
 
@@ -74,7 +74,7 @@ Ajoutez les nouvelles grammaires TextMate pour Visual Studio dans le dossier sui
 
 Sous ce chemin de base, ajoutez les dossiers suivants s’ils s’appliquent à votre situation :
 
-|Nom du dossier|Description|
+|Folder Name|Description|
 |-----------------|-----------------|
 |\\ *\<nom_langage>*|Dossier du langage. Remplacez *\<nom_langage>* par le nom du langage. Par exemple, *\Matlab*.|
 |*\Syntaxes*|Dossier de la grammaire. Contient les fichiers *.json* de grammaire du langage, tels que *Matlab.json*.|

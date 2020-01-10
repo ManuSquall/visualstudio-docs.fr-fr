@@ -13,22 +13,22 @@ helpviewer_keywords:
 - SGen task [MSBuild]
 - MSBuild, SGen task
 ms.assetid: 22c5ade4-4159-4667-b891-0c1aa06f4df5
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c326dc31f6ce80026f1c83c5b71f8e27faabf93e
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: a97133892926e60adc1d9f0165415868732066ca
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887633"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595122"
 ---
 # <a name="sgen-task"></a>SGen (tâche)
 Crée un assembly de sérialisation XML pour les types dans l’assembly spécifié. Cette tâche encapsule l’outil XML Serializer Generator (*Sgen.exe*). Pour plus d’informations, consultez [Outil XML Serializer Generator (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).
 
-## <a name="parameters"></a>Paramètres
+## <a name="parameters"></a>Parameters
  Le tableau ci-dessous décrit les paramètres de la tâche `SGen` .
 
 | Paramètre | Description |
@@ -50,9 +50,9 @@ Crée un assembly de sérialisation XML pour les types dans l’assembly spécif
 | `UseProxyTypes` | Paramètre `Boolean` requis.<br /><br /> Si `true`, la tâche SGen génère du code de sérialisation uniquement pour les types de proxy de service web XML. |
 
 ## <a name="remarks"></a>Notes
- En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.ToolTask>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).
+ En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.ToolTaskExtension> , qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.ToolTask> . Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).
 
 ## <a name="see-also"></a>Voir aussi
 - [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)
-- [Tâches](../msbuild/msbuild-tasks.md)
+- [Tâches MSBuild](../msbuild/msbuild-tasks.md)
 - [Concepts MSBuild](../msbuild/msbuild-concepts.md)

@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, providing overridable classes
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c2386b7a7472f6b80457a5a803f6dfe886cc1d0
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c3374f67f4fba11543e3dbbca47fef621dd2e714
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658332"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595889"
 ---
 # <a name="override-and-extend-the-generated-classes"></a>Remplacer et étendre les classes générées
 
@@ -76,11 +76,11 @@ Un point d’extension avec indicateur est un emplacement dans la définition DS
 
 Dans chaque cas, lorsque vous définissez l’indicateur et régénérez le code, une erreur de génération se produit. Double-cliquez sur l’erreur pour afficher un commentaire qui explique ce que vous devez fournir.
 
-### <a name="rules"></a>Règles
+### <a name="rules"></a>règles
 
 Le gestionnaire de transactions vous permet de définir des règles qui s’exécutent avant la fin d’une transaction dans laquelle un événement désigné s’est produit, tel qu’une modification d’une propriété. Les règles sont généralement utilisées pour maintenir la synchronisation entre les différents éléments du magasin. Par exemple, les règles sont utilisées pour s’assurer que le diagramme affiche l’état actuel du modèle.
 
-Les règles sont définies pour chaque classe, ce qui vous permet de ne pas avoir de code qui enregistre la règle pour chaque objet. Pour plus d’informations, consultez [règles de propagation des modifications dans le modèle](../modeling/rules-propagate-changes-within-the-model.md).
+Les règles sont définies pour chaque classe, ce qui vous permet de ne pas avoir de code qui enregistre la règle pour chaque objet. Pour plus d’informations, consultez [propager les modifications dans le modèle de règles](../modeling/rules-propagate-changes-within-the-model.md).
 
 ### <a name="store-events"></a>Stocker les événements
 

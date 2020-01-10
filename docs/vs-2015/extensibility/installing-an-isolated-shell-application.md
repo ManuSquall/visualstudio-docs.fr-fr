@@ -178,8 +178,8 @@ Pour installer une application Shell, vous devez effectuer les étapes suivantes
   
     |*NomProjet*. reg|ApplicationRegisty.wxs|  
     |-----------------------|----------------------------|  
-    |[HKEY_CLASSES_ROOT \CLSID\\{bb431796-A179-4df7-B65D-c0df6bda7cc6}]<br /><br /> @ = « Objet DTE de PhotoStudio »|\<RegistryKey Id='DteClsidRegKey' Root='HKCR' Key='$(var.DteClsidRegKey)' Action='createAndRemoveOnUninstall'><br /><br /> \<RegistryValue type = 'String’name = ' @ 'value = ' $ (var. ShortProductName) objet DTE'/><br /><br /> \</RegistryKey >|  
-    |[HKEY_CLASSES_ROOT\CLSID\\{bb431796-a179-4df7-b65d-c0df6bda7cc6}\LocalServer32]<br /><br /> @="$RootFolder$\PhotoStudio.exe"|\<RegistryKey Id='DteLocSrv32RegKey' Root='HKCR' Key='$(var.DteClsidRegKey)\LocalServer32' Action='createAndRemoveOnUninstall'><br /><br /> \<RegistryValue Type='string' Name='@' Value='[INSTALLDIR]$(var.ShortProductName).exe' /><br /><br /> \</RegistryKey >|  
+    |[HKEY_CLASSES_ROOT \CLSID\\{bb431796-A179-4df7-B65D-c0df6bda7cc6}]<br /><br /> @ = « Objet DTE de PhotoStudio »|\<RegistryKey ID = 'DteClsidRegKey’root = 'HKCR’key = ' $ (var. DteClsidRegKey) 'action = 'createAndRemoveOnUninstall' ><br /><br /> \<RegistryValue type = 'String’name = ' @ 'value = ' $ (var. ShortProductName) objet DTE'/><br /><br /> \</RegistryKey >|  
+    |[HKEY_CLASSES_ROOT \CLSID\\{bb431796-A179-4df7-B65D-c0df6bda7cc6} \LocalServer32]<br /><br /> @="$RootFolder$\PhotoStudio.exe"|\<RegistryKey ID = 'DteLocSrv32RegKey’root = 'HKCR’key = ' $ (var. DteClsidRegKey) \LocalServer32 'action = 'createAndRemoveOnUninstall' ><br /><br /> \<RegistryValue type = 'String’name = ' @ 'value = ' [INSTALLDIR] $ (var. ShortProductName). exe'/><br /><br /> \</RegistryKey >|  
   
      Dans cet exemple, var. DteClsidRegKey correspond à la clé de Registre dans la ligne supérieure. Var. ShortProductName correspond à `PhotoStudio`.  
   

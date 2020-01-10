@@ -37,5 +37,5 @@ Vous avez tenté de décoder un URI mal formé (Uniform Resource Identifier). Le
 - Vérifiez que vous essayez de décoder uniquement les URI valides. Vous ne pouvez pas décoder des chaînes de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] normales, car elles peuvent contenir des caractères non valides.  
   
 ## <a name="see-also"></a>Voir aussi  
- [fonction Decodeuri](../../javascript/reference/decodeuri-function-javascript.md)    
+ [fonction Decodeuri](../../javascript/reference/decodeuri-function-javascript.md)   
  [Fonction decodeURIComponent](../../javascript/reference/decodeuricomponent-function-javascript.md)

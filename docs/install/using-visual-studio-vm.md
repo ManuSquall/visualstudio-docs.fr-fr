@@ -2,7 +2,7 @@
 title: Utilisation de Visual Studio sur une machine virtuelle Azure
 titleSuffix: ''
 description: En savoir plus sur l’utilisation de Visual Studio sur une machine virtuelle Azure
-ms.date: 09/24/2019
+ms.date: 12/06/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,21 +10,21 @@ helpviewer_keywords:
 - virtual machine
 - installation
 - visual studio
-author: PhilLee-MSFT
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 88e11bf7bd84fdac5d584c06042488c895b7aa09
-ms.sourcegitcommit: 5c9ca18eadc7ed0ed095cc5a3e1df40bbc13e70c
+ms.openlocfilehash: a659d01edd62defc7f49d05058e0c9e1d1df554b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "74174141"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590915"
 ---
-# <a id="top"> </a> Images Visual Studio sur Azure
+# <a id="top"></a> Images Visual Studio sur Azure
 
 L’utilisation de Visual Studio sur une machine virtuelle Azure préconfigurée est un moyen simple et rapide d’accéder à un environnement de développement opérationnel en partant de rien. Des images du système avec différentes configurations de Visual Studio sont disponibles sur la [Place de marché Microsoft Azure](https://azuremarketplace.microsoft.com/marketplace/apps/category/compute?filters=virtual-machine-images%3Bmicrosoft%3Bwindows&page=1&subcategories=application-infrastructure).
 
@@ -36,11 +36,11 @@ Sur la Place de marché Microsoft Azure, vous trouverez des images des versions 
 
 | Version commerciale                                                                                                                                          | Éditions              |    Version du produit    |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------:|:---------------------:|:-----------------------:|
-| [Visual Studio 2019: Latest (Version 16.3)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019latest?tab=Overview) | Enterprise, Community | Version 16.3.9    |
-| [Visual Studio 2019: RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019?tab=Overview)                         | Entreprise            | Version 16.0.9    |
-| [Visual Studio 2017: Latest (Version 15.9)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)           | Enterprise, Community | Version 15.9.17   |
-| [Visual Studio 2017: RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)                             | Enterprise, Community | Version 15.0.27   |
-| [Visual Studio 2015: Latest (Update 3)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)               | Enterprise, Community | Version 14.0.25431.01 |
+| [Visual Studio 2019 : dernière version (version 16,4)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019latest?tab=Overview) | Enterprise, Community | Version 16.4.0    |
+| [Visual Studio 2019 : RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio2019?tab=Overview)                         | Enterprise            | Version 16.0.9    |
+| [Visual Studio 2017 : dernière version (version 15,9)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)           | Enterprise, Community | Version 15.9.17   |
+| [Visual Studio 2017 : RTW](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)                             | Enterprise, Community | Version 15.0.27   |
+| [Visual Studio 2015 : dernière version (Update 3)](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftvisualstudio.visualstudio?tab=Overview)               | Enterprise, Community | Version 14.0.25431.01 |
 
 > [!NOTE]
 > Conformément à la politique de Microsoft en matière de maintenance, la version d’origine (RTW) de Visual Studio 2015 a expiré en ce qui concerne la maintenance. Visual Studio 2015 Update 3 est la seule version restante proposée pour la ligne de produits Visual Studio 2015.
@@ -55,7 +55,7 @@ Chaque image contient l’ensemble de fonctionnalités recommandé pour cette é
 * Kits SDK .NET 4.6.2 et .NET 4.7, packs de ciblage et outils de développement
 * Visual F#
 * Extension GitHub pour Visual Studio
-* Outils LINQ to SQL
+* Outils de LINQ to SQL
 
 Nous utilisons la ligne de commande suivante pour installer Visual Studio durant la génération des images :
 
@@ -117,7 +117,7 @@ Pour plus d’informations, consultez [Créer une image managée d’une machine
 
 En outre, vos technologies ou tâches de développement peuvent nécessiter une nouvelle mise à l’échelle, pour mettre par exemple en place des configurations de développement variées ou des configurations de machines multiples. Vous pouvez utiliser Azure DevTest Labs pour créer des _recettes_ permettant d’automatiser la création de votre « image idéale ». Vous pouvez également utiliser DevTest Labs pour gérer les stratégies des machines virtuelles exécutées de votre équipe. [Utiliser Azure DevTest Labs pour développeurs](/azure/devtest-lab/devtest-lab-developer-lab) est la meilleure source d’informations pour en savoir plus sur DevTest Labs.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 Maintenant que vous en savez un peu plus sur les images Visual Studio préconfigurées, l’étape suivante consiste à créer une machine virtuelle :
 

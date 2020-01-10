@@ -11,17 +11,17 @@ helpviewer_keywords:
 - .targets files
 - MSBuild, .targets files
 ms.assetid: f6d98eb4-d2fa-49b7-8e3c-bae1ca3cf596
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5dc3964524536b1d0452462512e5847311e8bfeb
-ms.sourcegitcommit: 3a19319e2599bd193fb2ca32020ca53942974bfd
+ms.openlocfilehash: 4dc5df9c4eba4195400b6a41fa50a5c88257d70e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73983824"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75566551"
 ---
 # <a name="msbuild-targets-files"></a>Fichiers .targets MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] inclut plusieurs fichiers *.targets* contenant des éléments, des propriétés, des cibles et des tâches pour les scénarios courants. Ces fichiers sont importés automatiquement dans la plupart des fichiers projet [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour en simplifier la maintenance et la lisibilité.

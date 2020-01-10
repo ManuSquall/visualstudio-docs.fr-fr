@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, msbuild properties
 ms.assetid: b9da45ae-d6a6-4399-8628-397deed31486
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8217a6aa349a31921ed454e76ddea306785dea9d
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
-ms.translationtype: HT
+ms.openlocfilehash: 51f7f65dd4e4d1922663ea020e55f551245a7444
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825899"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596123"
 ---
 # <a name="compare-properties-and-items"></a>Comparer des propriétés et des éléments
 Les propriétés et les éléments MSBuild permettent de transmettre des informations aux tâches, d’évaluer des conditions et de stocker les valeurs qui peuvent être référencées dans le fichier projet.
@@ -40,7 +40,7 @@ Pour voir comment les propriétés peuvent représenter plusieurs valeurs, exami
 </PropertyGroup>
 ```
 
-La propriété `BuildDependsOn` est généralement utilisée comme argument d’un attribut `DependsOnTargets` cible, le convertissant effectivement en une liste d’éléments. Cette propriété peut être remplacée pour ajouter une cible ou modifier l’ordre d’exécution des cibles. Par exemple :
+La propriété `BuildDependsOn` est généralement utilisée comme argument d’un attribut `DependsOnTargets` cible, le convertissant effectivement en une liste d’éléments. Cette propriété peut être remplacée pour ajouter une cible ou modifier l’ordre d’exécution des cibles. Par exemple :
 
 ```xml
 <PropertyGroup>

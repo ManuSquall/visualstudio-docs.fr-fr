@@ -3,17 +3,17 @@ title: Avertissements de chiffrement
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: d96723ea-a293-488d-b9db-adb437e50cdd
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2414a12c00b7d496e09f01982783a90874721cdc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 78923dfd2873b53790421cde3fe01f024e267202
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649683"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587695"
 ---
 # <a name="cryptography-warnings"></a>Avertissements de chiffrement
 Les avertissements de chiffrement prennent en charge la sécurité des bibliothèques et des applications grâce à une utilisation correcte du chiffrement. Ces avertissements contribuent à empêcher la présence de défauts de sécurité dans votre programme. Si vous désactivez chacun de ces avertissements, vous devez indiquer clairement le motif de l’opération dans le code et également en informer le responsable de la sécurité désigné pour votre projet de développement.

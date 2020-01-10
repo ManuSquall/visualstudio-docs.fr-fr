@@ -44,7 +44,7 @@ Vous pouvez consacrer moins de temps au débogage de votre application quand vou
   
   Vous pouvez utiliser IntelliTrace dans Visual Studio Enterprise Edition (mais pas dans les éditions Professional ou Community).  
   
-## <a name="what-do-you-want-to-do"></a>Que voulez-vous faire ?  
+## <a name="what-do-you-want-to-do"></a>Que souhaitez-vous faire ?  
   
 |||  
 |-|-|  
@@ -128,7 +128,7 @@ Vous pouvez consacrer moins de temps au débogage de votre application quand vou
   
 - **Événements .NET Framework**  
   
-   Par défaut, IntelliTrace enregistre les événements .NET Framework les plus courants. Par exemple :  
+   Par défaut, IntelliTrace enregistre les événements .NET Framework les plus courants. Exemple :  
   
   - Pour un événement d'accès au fichier, IntelliTrace collecte le nom de fichier.  
   

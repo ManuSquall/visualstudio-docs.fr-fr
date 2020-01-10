@@ -36,5 +36,5 @@ o.f();
   
 ## <a name="see-also"></a>Voir aussi  
  [Objet Date](../../javascript/reference/date-object-javascript.md)   
- [GETDATE, méthode (date)](../../javascript/reference/getdate-method-date-javascript.md)    
+ [GETDATE, méthode (date)](../../javascript/reference/getdate-method-date-javascript.md)   
  [Objets intrinsèques](../../javascript/intrinsic-objects-javascript.md)

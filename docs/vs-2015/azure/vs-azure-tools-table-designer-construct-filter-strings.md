@@ -19,7 +19,7 @@ ms.lasthandoff: 11/21/2019
 ms.locfileid: "74290984"
 ---
 # <a name="constructing-filter-strings-for-the-table-designer"></a>Construction de chaînes de filtre pour le Concepteur de tables
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Overview
 Pour filtrer les données d’une table Azure affichée dans le **Concepteur de tables** Visual Studio, vous devez créer une chaîne de filtrage, puis entrer celle-ci dans le champ de filtre. La syntaxe de la chaîne de filtrage est définie par les services de données WCF et est similaire à une clause SQL WHERE. Cependant, elle est envoyée au service de Table via une demande HTTP. Le **Concepteur de tables** est chargé de l’encodage. Si vous voulez filtrer les données à l’aide d’une valeur de propriété, il vous suffit donc de taper dans le champ de filtrage le nom de la propriété, l’opérateur de comparaison, la valeur des critères et éventuellement, l’opérateur booléen. Il n’est pas nécessaire d’inclure l’option de requête $filter comme vous le feriez pour créer une URL dans le but d’interroger la table via les [informations de référence de l’API REST Storage Services](https://go.microsoft.com/fwlink/p/?LinkId=400447).
 
 Les services de données WCF sont basés sur le protocole OData ( [Open Data Protocol](https://go.microsoft.com/fwlink/p/?LinkId=214805) ). Pour plus d’informations sur l’option de requête du système de filtrage ( **$filter**), consultez les [spécifications des conventions d’URI OData](https://go.microsoft.com/fwlink/p/?LinkId=214806).

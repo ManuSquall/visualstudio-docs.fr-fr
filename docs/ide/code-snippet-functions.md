@@ -7,17 +7,17 @@ helpviewer_keywords:
 - snippets [Visual Studio], functions
 - IntelliSense code snippets, functions
 ms.assetid: c0a2bf21-8fa5-4457-9281-f599beb53e7d
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85124837e378ea4377de0ca08c5a8680034240c2
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c7df85c429794d61028d5304108d289dfe9bf496
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647542"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594238"
 ---
 # <a name="code-snippet-functions"></a>Fonctions des extraits de code
 
@@ -27,7 +27,7 @@ Trois fonctions peuvent être utilisées avec les extraits de code C#. Les fonc
 
 Le tableau suivant décrit les fonctions qui peuvent être utilisées avec l’élément `Function` dans les extraits de code.
 
-|Fonction|Description|Langue|
+|Fonction|Description|Language|
 |--------------|-----------------|--------------|
 |`GenerateSwitchCases(EnumerationLiteral)`|Génère une instruction switch et un ensemble d’instructions case pour les membres de l’énumération spécifiée par le paramètre `EnumerationLiteral`. Le paramètre `EnumerationLiteral` doit être une référence à un littéral d’énumération ou un type d’énumération.|C#|
 |`ClassName()`|Retourne le nom de la classe qui contient l’extrait de code inséré.|C#|

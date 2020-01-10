@@ -1,8 +1,8 @@
 ---
-title: Installer Visual Studio
+title: Installation de Visual Studio
 titleSuffix: ''
 description: Découvrez comment installer Visual Studio, étape par étape.
-ms.date: 10/07/2019
+ms.date: 12/13/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -13,21 +13,21 @@ helpviewer_keywords:
 - set up Visual Studio
 - Visual Studio setup
 - Visual Studio installer
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 6cd91fadea397955b756461383ed8e17030b4c3b
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 078c54a680fccda0d7d6af88446b709765f277a2
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018853"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590122"
 ---
-# <a name="install-visual-studio"></a>Installer Visual Studio
+# <a name="install-visual-studio"></a>Installation de Visual Studio
 
 ::: moniker range="vs-2019"
 
@@ -131,7 +131,7 @@ Exécutez le fichier du programme d’amorçage pour installer Visual Studio Ins
 
 2. Vous devez accepter les [Termes du contrat de licence](https://visualstudio.microsoft.com/license-terms/) Microsoft et la [Déclaration de confidentialité](https://privacy.microsoft.com/privacystatement) Microsoft. Choisissez **Continuer**.
 
-   ![Termes du contrat de licence et déclaration de confidentialité](media/privacy-and-license-terms.png "Termes du contrat de licence et déclaration de confidentialité Microsoft")
+   ![Termes du contrat de licence et déclaration de confidentialité](media/privacy-and-license-terms.png "Termes du contrat de licence Microsoft et déclaration de confidentialité")
 
 ## <a name="step-4---choose-workloads"></a>Étape 4 : Choisir les charges de travail
 
@@ -139,9 +139,9 @@ Une fois le programme d’installation installé, vous pouvez l’utiliser pour 
 
  ::: moniker range="vs-2017"
 
-1. Recherchez la charge de travail que vous voulez dans l’écran **Installation de Visual Studio**.
+1. Recherchez la charge de travail de votre choix dans la **Visual Studio installer**.
 
-   ![Visual Studio 2017 : Installer une charge de travail](../install/media/vs-installer-installing-workloads.png)
+   ![Visual Studio 2017 : installer une charge de travail](../install/media/vs-installer-installing-workloads.png)
 
      Par exemple, choisissez la charge de travail « Développement .NET Desktop ». Elle comprend l’éditeur principal par défaut, qui inclut une prise en charge de la modification du code de base pour plus de 20 langues, la possibilité d’ouvrir et de modifier le code dans n’importe quel dossier sans projet et un contrôle de code source intégré.
 
@@ -153,9 +153,9 @@ Une fois le programme d’installation installé, vous pouvez l’utiliser pour 
 
 ::: moniker range="vs-2019"
 
-1. Une fois les nouveaux composants et charges de travail installés, choisissez **Lancer**.
+1. Recherchez la charge de travail de votre choix dans la **Visual Studio installer**.
 
-   ![Visual Studio 2019 : Installer une charge de travail](../install/media/vs-2019/vs-installer-workloads.png)
+   ![Visual Studio 2019 : installer une charge de travail](../install/media/vs-2019/vs-installer-workloads.png)
 
      Par exemple, choisissez la charge de travail « Développement web et ASP.NET ». Elle comprend l’éditeur principal par défaut, qui inclut une prise en charge de la modification du code de base pour plus de 20 langues, la possibilité d’ouvrir et de modifier le code dans n’importe quel dossier sans projet et un contrôle de code source intégré.
 
@@ -170,17 +170,17 @@ Une fois le programme d’installation installé, vous pouvez l’utiliser pour 
 
 ## <a name="step-5---choose-individual-components-optional"></a>Étape 5 : Choisir des composants individuels (facultatif)
 
-Si vous ne voulez pas utiliser la fonctionnalité Charges de travail pour personnaliser votre installation de Visual Studio, ou si vous voulez ajouter d’autres composants qui ne s’installent pas avec une charge de travail, installez ou ajoutez des composants individuels à partir de l’onglet **Composants individuels**. Choisissez ce que vous souhaitez, puis suivez les invites.
+Si vous ne souhaitez pas utiliser la fonctionnalité charges de travail pour personnaliser votre installation de Visual Studio, ou si vous souhaitez ajouter d’autres composants qu’une charge de travail, vous pouvez le faire en installant ou en ajoutant des composants individuels à partir de l’onglet **composants individuels** . Choisissez ce que vous souhaitez, puis suivez les invites.
 
 ::: moniker range="vs-2017"
 
-  ![Visual Studio 2017 - Installer des composants individuels](media/vs-installer-installing-components.png "Installer des composants individuels de Visual Studio")
+  ![Visual Studio 2017-installer des composants individuels](media/vs-installer-installing-components.png "Installer les composants individuels de Visual Studio")
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-  ![Visual Studio 2019 - Installer des composants individuels](media/vs-2019/vs-installer-individual-components.png "Installer des composants individuels de Visual Studio")
+  ![Visual Studio 2019-installer des composants individuels](media/vs-2019/vs-installer-individual-components.png "Installer les composants individuels de Visual Studio")
 
 ::: moniker-end
 
@@ -190,13 +190,13 @@ Par défaut, le programme d’installation essaie d’installer la langue du sys
 
 ::: moniker range="vs-2017"
 
-  ![Visual Studio 2017 - Installer des modules linguistiques](media/vs-installer-installing-language-packs.png "Installer des modules linguistiques de Visual Studio")
+  ![Visual Studio 2017-installer des modules linguistiques](media/vs-installer-installing-language-packs.png "Installer les modules linguistiques de Visual Studio")
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-  ![Visual Studio 2019 - Installer des modules linguistiques](media/vs-2019/vs-installer-language-packs.png "Installer des modules linguistiques de Visual Studio")
+  ![Visual Studio 2019-installer des modules linguistiques](media/vs-2019/vs-installer-language-packs.png "Installer les modules linguistiques de Visual Studio")
 
 ::: moniker-end
 
@@ -208,9 +208,9 @@ Une autre façon de changer la langue par défaut consiste à exécuter le progr
 
 ::: moniker range="vs-2017"
 
-**Nouveautés de la version 15.7** : Vous pouvez désormais réduire l’encombrement de l’installation de Visual Studio sur votre lecteur système. Vous pouvez choisir de déplacer le cache de téléchargement, les composants partagés, les SDK et les outils vers d’autres lecteurs et de conserver Visual Studio sur le lecteur qui l’exécute le plus rapidement.
+**Nouveauté de la version 15.7** : vous pouvez désormais réduire l’encombrement de l’installation de Visual Studio sur votre lecteur système. Vous pouvez choisir de déplacer le cache de téléchargement, les composants partagés, les SDK et les outils vers d’autres lecteurs et de conserver Visual Studio sur le lecteur qui l’exécute le plus rapidement.
 
-  ![Visual Studio 2017 - Changer l’emplacement d’installation](media/installation-options-by-location.png "Changer l’emplacement d’installation")
+  ![Visual Studio 2017-modifier les emplacements d’installation](media/installation-options-by-location.png "Modifier l’emplacement d’installation")
 
 ::: moniker-end
 
@@ -218,7 +218,7 @@ Une autre façon de changer la langue par défaut consiste à exécuter le progr
 
 Vous pouvez réduire l’empreinte de l’installation de Visual Studio sur votre lecteur système. Vous pouvez choisir de déplacer le cache de téléchargement, les composants partagés, les SDK et les outils vers d’autres lecteurs et de conserver Visual Studio sur le lecteur qui l’exécute le plus rapidement.
 
-  ![Visual Studio 2019 – Sélectionner des emplacements d’installation](media/vs-2019/vs-installer-installation-locations.png "Sélectionner l’emplacement d’installation")
+  ![Visual Studio 2019-sélectionner les emplacements d’installation](media/vs-2019/vs-installer-installation-locations.png "Sélectionner l’emplacement d’installation")
 
 ::: moniker-end
 

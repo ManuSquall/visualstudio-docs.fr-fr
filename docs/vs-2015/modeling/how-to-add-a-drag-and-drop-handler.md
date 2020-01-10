@@ -19,7 +19,7 @@ ms.locfileid: "74298940"
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Comment : ajouter un gestionnaire glisser-déplacer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous pouvez ajouter des gestionnaires pour les événements glisser-déplacer à votre DSL, de telle sorte que les utilisateurs puissent faire glisser des éléments vers votre diagramme à partir d'autres diagrammes ou d'autres parties de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Vous pouvez aussi ajouter des gestionnaires pour des événements tels que les doubles clics. Les gestionnaires d'opérations glisser-déplacer et double-cliquer sont connus collectivement sous le nom de *gestionnaires de mouvements*.
+Vous pouvez ajouter des gestionnaires pour les événements glisser-déplacer à votre DSL, de telle sorte que les utilisateurs puissent faire glisser des éléments vers votre diagramme à partir d'autres diagrammes ou d'autres parties de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Vous pouvez aussi ajouter des gestionnaires pour des événements tels que les doubles clics. Ensemble, les gestionnaires de glisser-déplacer et de double-clic sont appelés *gestionnaires de mouvements*.
 
  Cette rubrique traite des mouvements de type glisser-déplacer dont l'origine se situe sur d'autres diagrammes. Pour déplacer et copier des événements au sein d'un seul diagramme, pensez à l'autre solution qui consiste à définir une sous-classe d'`ElementOperations`. Pour plus d’informations, consultez [Personnalisation du comportement](../modeling/customizing-copy-behavior.md)de la copie. Vous avez aussi la possibilité de personnaliser la définition DSL.
 
@@ -29,13 +29,13 @@ Vous pouvez ajouter des gestionnaires pour les événements glisser-déplacer à
 
   - [Définition des gestionnaires de mouvements en remplaçant les méthodes ShapeElement](#overrideShapeElement). `OnDragDrop`, `OnDoubleClick`, `OnDragOver`et d’autres méthodes peuvent être substituées.
 
-  - [Définition des gestionnaires de mouvements avec MEF](#MEF). Utilisez cette méthode si vous souhaitez que les développeurs tiers puissent définir leurs propres gestionnaires sur votre DSL. Les utilisateurs peuvent choisir d'installer les extensions tierces après avoir installé votre DSL.
+  - [Définition de gestionnaires de mouvements à l’aide de MEF](#MEF). Utilisez cette méthode si vous souhaitez que les développeurs tiers puissent définir leurs propres gestionnaires sur votre DSL. Les utilisateurs peuvent choisir d'installer les extensions tierces après avoir installé votre DSL.
 
 - [Comment décoder l’élément déplacé](#extracting). Les éléments peuvent être déplacés à partir de n'importe quelle fenêtre, du Bureau ou d'un DSL.
 
 - [Comment faire glisser l’élément d’origine](#getOriginal). Si l'élément déplacé est un élément DSL, vous pouvez ouvrir le modèle source et accéder à l'élément.
 
-- [Utilisation d'actions de la souris : faire glisser des éléments de compartiment](#mouseActions). Cet exemple montre un gestionnaire de niveau inférieur qui intercepte les actions de la souris sur les champs d'une forme. Cet exemple permet à l'utilisateur de réordonner les éléments dans un compartiment en les faisant glisser avec la souris.
+- [Utilisation d’actions de la souris : faire glisser des éléments de compartiment](#mouseActions). Cet exemple montre un gestionnaire de niveau inférieur qui intercepte les actions de la souris sur les champs d'une forme. Cet exemple permet à l'utilisateur de réordonner les éléments dans un compartiment en les faisant glisser avec la souris.
 
 ## <a name="overrideShapeElement"></a>Définition des gestionnaires de mouvements en remplaçant les méthodes ShapeElement
  Ajoutez un nouveau fichier de code à votre projet DSL. Pour un gestionnaire d'événements, vous devez avoir au moins les instructions `using` suivantes :
@@ -86,7 +86,7 @@ using System.Linq;
 
    Pour plus d’informations, consultez [Comment : intercepter un clic sur une forme ou un Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
 
-  Définissez `IsAcceptableDropItem(e)` pour déterminer si l'élément déplacé est acceptable et ProcessDragDropItem(e) pour mettre à jour votre modèle quand l'élément est déposé. Ces méthodes doivent d'abord extraire l'élément des arguments de l'événement. Pour plus d'informations à ce sujet, consultez [Comment obtenir une référence à l'élément déplacé](#extracting).
+  Définissez `IsAcceptableDropItem(e)` pour déterminer si l'élément déplacé est acceptable et ProcessDragDropItem(e) pour mettre à jour votre modèle quand l'élément est déposé. Ces méthodes doivent d'abord extraire l'élément des arguments de l'événement. Pour plus d’informations sur la façon de procéder, consultez [Comment obtenir une référence à l’élément déplacé](#extracting).
 
 ## <a name="MEF"></a>Définition de gestionnaires de mouvements à l’aide de MEF
  MEF (Managed Extensibility Framework) vous permet de définir des composants qui peuvent être installés avec une configuration minimale. Pour plus d’informations, consultez [Vue d’ensemble de Managed Extensibility Framework](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).
@@ -129,7 +129,7 @@ using System.Linq;
 
      Vous pouvez créer plusieurs composants de gestionnaire de mouvements, comme lorsque vous avez différents types d'objets déplacés.
 
-3. Ajoutez les définitions de classe partielle pour la forme cible, les classes de connecteurs ou de diagrammes, et définissez les méthodes `IsAcceptableDropItem()` et `ProcessDragDropItem()`. Ces méthodes doivent commencer par extraire l'élément déplacé des arguments de l'événement. Pour plus d'informations, consultez [Comment obtenir une référence à l'élément déplacé](#extracting).
+3. Ajoutez les définitions de classe partielle pour la forme cible, les classes de connecteurs ou de diagrammes, et définissez les méthodes `IsAcceptableDropItem()` et `ProcessDragDropItem()`. Ces méthodes doivent commencer par extraire l'élément déplacé des arguments de l'événement. Pour plus d’informations, consultez [Comment obtenir une référence à l’élément déplacé](#extracting).
 
 ## <a name="extracting"></a>Comment décoder l’élément déplacé
  Lorsque l'utilisateur déplace un élément sur votre diagramme, ou d'une partie de votre diagramme vers une autre, les informations sur l'élément déplacé sont disponibles dans `DiagramDragEventArgs`. Comme l'opération de déplacement peut avoir démarré sur n'importe quel objet de l'écran, les données peuvent être disponibles dans l'un des nombreux formats existants. Votre code doit identifier les formats qu'il est capable de gérer.
@@ -140,11 +140,11 @@ using System.Linq;
 
   - diagramEventArgs.Data.GetDataFormats() – Répertorie les formats dans lesquels vous pouvez décoder l'objet déplacé. Par exemple, si l'utilisateur déplace un fichier à partir du Bureau, les formats disponibles incluent le nom de fichier (« `FileNameW` »).
 
-  - `diagramEventArgs.Data.GetData(format)` : décode l’objet déplacé dans le format spécifié. Effectuez une conversion de type de l'objet dans le type approprié. Par exemple :
+  - `diagramEventArgs.Data.GetData(format)` : décode l’objet déplacé dans le format spécifié. Effectuez une conversion de type de l'objet dans le type approprié. Exemple :
 
        `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
 
-       Vous pouvez aussi transmettre des objets tels que les références de bus de modèles à partir de la source et dans votre propre format personnalisé. Pour plus d'informations, consultez [Comment envoyer les références de bus de modèles dans une opération de glisser-déplacer](#mbr).
+       Vous pouvez aussi transmettre des objets tels que les références de bus de modèles à partir de la source et dans votre propre format personnalisé. Pour plus d’informations, consultez [Comment envoyer des références de bus de modèles dans un glisser-déplacer](#mbr).
 
 - <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> `Prototype` : utilisez cette propriété si vous souhaitez que les utilisateurs fassent glisser des éléments à partir d’un modèle DSL ou UML. Un prototype de groupe d'éléments contient un ou plusieurs objets, les liens et les valeurs de leurs propriétés. Il est également utilisé dans les opérations de collage et lorsque vous ajoutez un élément à partir de la boîte à outils. Dans un prototype, les objets et leurs types sont identifiés par un GUID. Par exemple, ce code permet à l'utilisateur de déplacer les éléments de classe à partir d'un diagramme UML ou de l'Explorateur de modèles UML :
 
@@ -170,11 +170,11 @@ using System.Linq;
 
 1. Rendez le DSL source accessible par [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Model Bus :
 
-    1. Téléchargez et installez l'extension Visual Studio Model Bus, si ce n'est déjà fait. Pour plus d’informations, consultez [Visualization and Modeling SDK](https://go.microsoft.com/fwlink/?LinkID=185579).
+    1. Téléchargez et installez l'extension Visual Studio Model Bus, si ce n'est déjà fait. Pour plus d’informations, consultez [Kit de développement logiciel de visualisation et de modélisation](https://go.microsoft.com/fwlink/?LinkID=185579).
 
-    2. Ouvrez le fichier de définition DSL du DSL source dans le concepteur DSL. Cliquez sur l’aire de conception, puis sur **activer Modelbus**. Dans la boîte de dialogue, choisissez l'une ou l'autre des options.  Cliquez sur **OK**. Un nouveau projet « ModelBus » vient s'ajouter à la solution DSL.
+    2. Ouvrez le fichier de définition DSL du DSL source dans le concepteur DSL. Cliquez avec le bouton droit sur l’aire de conception, puis cliquez sur **activer ModelBus**. Dans la boîte de dialogue, choisissez l'une ou l'autre des options.  Cliquez sur **OK**. Un nouveau projet « ModelBus » vient s'ajouter à la solution DSL.
 
-    3. Cliquez sur **Transformer tous les modèles** et régénérez la solution.
+    3. Cliquez sur **transformer tous les modèles** et reconstruisez la solution.
 
 ### <a name="mbr"></a>Pour envoyer un objet à partir d’une source DSL
 
@@ -339,7 +339,7 @@ using System.Linq;
 ## <a name="mouseActions"></a>Utilisation d’actions de la souris : faire glisser des éléments de compartiment
  Vous pouvez écrire un gestionnaire qui intercepte les actions de la souris sur les champs d'une forme. L'exemple suivant permet à l'utilisateur de réordonner les éléments dans un compartiment en les faisant glisser avec la souris.
 
- Pour générer cet exemple, créez une solution à l'aide du modèle de solution **Diagrammes de classe**. Ajoutez un fichier de code et ajoutez le code suivant. Adaptez l'espace de noms pour qu'il soit identique au vôtre.
+ Pour générer cet exemple, créez une solution à l’aide du modèle de solution **diagrammes de classes** . Ajoutez un fichier de code et ajoutez le code suivant. Adaptez l'espace de noms pour qu'il soit identique au vôtre.
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;

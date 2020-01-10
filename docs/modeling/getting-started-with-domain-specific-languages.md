@@ -2,24 +2,24 @@
 title: Mise en route des langages spécifiques à un domaine
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c86383ddc833a6b76affa451f21180ed4941ad14
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 226111f7bd2c064fa2aec3cbd4f94a0adeb0e5b8
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985053"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596565"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Bien démarrer avec les langages spécifiques à un domaine
 
 Cette rubrique explique les concepts de base de la définition et de l’utilisation d’un langage spécifique à un domaine (DSL) créé avec le kit de développement logiciel (SDK) de modélisation pour Visual Studio.
 
 > [!NOTE]
-> Le kit SDK de transformation de modèle de texte et le kit de développement logiciel (SDK) de modélisation Visual Studio sont installés automatiquement lorsque vous installez des fonctionnalités spécifiques de Visual Studio. Pour plus d’informations, consultez ce billet de [blog](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
+> Le kit SDK de transformation de modèle de texte et le kit de développement logiciel (SDK) de modélisation Visual Studio sont installés automatiquement lorsque vous installez des fonctionnalités spécifiques de Visual Studio. Pour plus d’informations, consultez [ce billet de blog](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
 Si vous débutez avec DSL, nous vous recommandons d’utiliser le **laboratoire d’outils DSL**, que vous trouverez dans ce site : [Kit de développement logiciel de visualisation et de modélisation](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db)
 
@@ -147,7 +147,7 @@ La définition DSL peut spécifier la façon dont le modèle s’affiche sur un 
 
 Vous pouvez afficher un modèle sous la forme d’une arborescence dans l’affichage de l' **Explorateur** pendant que vous modifiez un modèle. À mesure que vous ajoutez des formes au diagramme, les éléments de modèle s’affichent également dans l’Explorateur. L’Explorateur peut être utilisé même s’il n’y a aucun diagramme.
 
-Si vous ne voyez pas l’Explorateur dans l’instance de débogage de Visual Studio, dans le menu **affichage** , pointez sur **autres fenêtres**, puis cliquez sur *\<Your Language >* **Explorer**.
+Si vous ne voyez pas l’Explorateur dans l’instance de débogage de Visual Studio, dans le menu **affichage** , pointez sur **autres fenêtres**, puis cliquez sur *\<votre langue >* **Explorer**.
 
 ### <a name="the-api-of-your-dsl"></a>L’API de votre DSL
 
@@ -209,7 +209,7 @@ Renommez les classes et les relations de domaine existantes. Par exemple, à par
 
     2. Ouvrez le Fenêtre Propriétés et positionnez-le de sorte que vous puissiez voir l’Explorateur et les propriétés DSL en même temps.
 
-    3. Dans l’Explorateur DSL, développez **éditeur**, **onglets de la boîte à outils**, *\<your DSL >* , puis **Outils**.
+    3. Dans l’Explorateur DSL, développez **éditeur**, **onglets de la boîte à outils**, *\<votre > DSL*, puis **Outils**.
 
     4. Cliquez sur **ExampleElement**. Il s’agit de l’élément de boîte à outils utilisé pour créer des éléments.
 
@@ -225,7 +225,7 @@ Renommez les classes et les relations de domaine existantes. Par exemple, à par
 
     2. Cliquez sur **transformer tous les modèles** dans la barre d’outils de Explorateur de solutions
 
-    3. Appuyez sur F5. Attendez que l’instance expérimentale de Visual Studio apparaisse.
+    3. Appuyez sur la touche F5. Attendez que l’instance expérimentale de Visual Studio apparaisse.
 
 4. Dans la solution de débogage de l’instance expérimentale de Visual Studio, ouvrez un fichier de modèle de test. Faites glisser des éléments dans la boîte à outils. Notez que les légendes d’outils et les noms de type dans l’Explorateur DSL ont changé.
 
@@ -333,7 +333,7 @@ Renommez les classes et les relations de domaine existantes. Par exemple, à par
 
     1. Dans l' **Explorateur DSL**, développez **éditeur** , puis onglets de la **boîte à outils**.
 
-    2. Cliquez avec le bouton droit sur *\<your > DSL* , puis cliquez sur l' **outil Ajouter un nouvel élément**.
+    2. Cliquez avec le bouton droit sur *\<votre > DSL* , puis cliquez sur l' **outil Ajouter un nouvel élément**.
 
     3. Définissez la propriété **Name** du nouvel outil et définissez sa propriété **Class** sur Town.
 
@@ -341,7 +341,7 @@ Renommez les classes et les relations de domaine existantes. Par exemple, à par
 
 7. Créez un outil de connecteur pour créer un lien entre des villes et des personnes.
 
-    1. Cliquez avec le bouton droit sur *\<your > DSL* , puis cliquez sur **Ajouter un nouvel outil de connecteur**.
+    1. Cliquez avec le bouton droit sur *\<votre > DSL* , puis cliquez sur **Ajouter un nouvel outil de connecteur**.
 
     2. Définissez la propriété Name du nouvel outil.
 

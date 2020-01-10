@@ -98,7 +98,7 @@ ms.locfileid: "74295941"
 
 - <xref:System.Object.GetHashCode%2A>
 
-- [M:IEqualityComparer.GetHashCode(T)](https://go.microsoft.com/fwlink/?LinkId=113477)
+- [M :IEqualityComparer.GetHashCode (T)](https://go.microsoft.com/fwlink/?LinkId=113477)
 
   **GetHashCode** doit toujours retourner une valeur. Dans le cas contraire, vous pouvez perdre des éléments dans la table de hachage.
 

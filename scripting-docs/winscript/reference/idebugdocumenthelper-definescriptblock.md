@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper ::D efineScriptBlock | Microsoft Docs
+title: IDebugDocumentHelper::DefineScriptBlock | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -58,7 +58,7 @@ HRESULT DefineScriptBlock(
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|valeur|Description|  
+|Valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
@@ -70,6 +70,6 @@ HRESULT DefineScriptBlock(
  La méthode `DefineScriptBlock` doit être appelée une fois que le texte a été ajouté (par exemple, à l’aide de la méthode `IDebugDocumentHelper::AddDBCSText`) mais avant que le bloc de script ait été analysé (par exemple, à l’aide de la méthode `IActiveScriptParse ::ParseScriptText`).  
   
 ## <a name="see-also"></a>Voir aussi  
- @No__t_1 de l' [interface IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)  
- [IDebugDocumentHelper :: AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)    
+   de l' [interface IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)  
+ [IDebugDocumentHelper::AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)   
  [IDebugDocumentHelper::AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)

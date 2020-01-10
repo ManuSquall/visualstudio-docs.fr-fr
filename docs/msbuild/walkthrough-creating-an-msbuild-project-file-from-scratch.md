@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tutorial
 ms.assetid: e3acff7c-cb4e-4ae1-8be2-a871bcff847b
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e13399d80e74f41774542da31d0edd8c36a42c7e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 0c7b79347416df5fd0790baf7ebe6495c739f7c4
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748035"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565966"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>Procédure pas à pas : créer un fichier projet MSBuild en partant de zéro
 Les langages de programmation qui ciblent .NET Framework utilisent des fichiers projet MSBuild pour décrire et contrôler le processus de génération d'application. Quand vous utilisez Visual Studio pour créer un fichier projet MSBuild, le code XML approprié est ajouté automatiquement au fichier. Il peut cependant être utile de comprendre comment le code XML est organisé et comment vous pouvez le modifier pour contrôler une build.

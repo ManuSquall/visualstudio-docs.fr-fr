@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Complete word
 - List members
 - IntelliSense [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 011542bc45680f6fb5b7bd2b83283605922189ee
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 34e038256d46909e135f8285cb1b3edc45d0ba3e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647354"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75565342"
 ---
 # <a name="intellisense-in-visual-studio"></a>IntelliSense dans Visual Studio
 
@@ -56,7 +56,7 @@ Lorsque vous annotez des fonctions et des paramètres avec les commentaires de d
 
 Vous pouvez appeler manuellement la fonctionnalité Informations sur les paramètres en choisissant **Edition** > **IntelliSense** > **Informations sur les paramètres**, en appuyant sur **Ctrl**+**Maj**+**Barre d’espace** ou en choisissant le bouton **Informations sur les paramètres** dans la barre d’outils de l’éditeur.
 
-## <a name="quick-info"></a>Info express
+## <a name="quick-info"></a>Infos express
 
 Infos express affiche la déclaration complète de tout identificateur dans votre code.
 
@@ -111,6 +111,6 @@ MessageBox( hWnd, "String literal|")
 
 - [Visual Basic IntelliSense](../ide/visual-basic-specific-intellisense.md)
 - [C# IntelliSense](../ide/visual-csharp-intellisense.md)
-- [JavaScript IntelliSense](../ide/javascript-intellisense.md)
+- [IntelliSense JavaScript](../ide/javascript-intellisense.md)
 - [Écrire et refactoriser du code (C++)](/cpp/ide/writing-and-refactoring-code-cpp)
 - [Insérer des commentaires dans le code XML](reference/generate-xml-documentation-comments.md)

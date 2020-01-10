@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Text Editor Options dialog box, formatting
 - ClangFormat
 ms.assetid: cb6f1cbb-5305-48da-a8e8-33fd70775d46
-author: mikeblome
-ms.author: mblome
+author: TerryGLee
+ms.author: tglee
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b866d09dbd448950a641ebb59501c13c3bf35188
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
-ms.translationtype: HT
+ms.openlocfilehash: d7a6029058ab0bc02a623df0e1733eb8548102d5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461806"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596253"
 ---
 # <a name="options-text-editor-cc-formatting"></a>Options, Éditeur de texte, C/C++, Mise en forme
 
@@ -32,9 +32,9 @@ Utilisez les pages de propriétés pour changer le comportement par défaut de l
 Pour accéder à cette page, dans la boîte de dialogue **Options**, dans le volet gauche, développez **Éditeur de texte**, développez **C/C++** , puis cliquez sur **Mise en forme**.
 
 > [!NOTE]
-> Il est possible que pour certains des éléments de l’interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L’édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
+> Il est possible que pour certains des éléments de l'interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L'édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="general-page"></a>Page Général
+## <a name="general-page"></a>page Général
 
 Cette page propose des options pour mettre en forme des instructions et des blocs à mesure que vous les tapez.
 
@@ -44,7 +44,7 @@ Cette page propose des options pour mettre en forme des instructions et des bloc
 
 ::: moniker-end
 
-la page comporte également des options pour la configuration de la prise en charge de [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) version 5.0. ClangFormat est un utilitaire qui simplifie l’application de style et de mise en forme à votre code en fonction d’un ensemble de règles qui peuvent être configurées dans un fichier .clang-format ou _clang-format.
+La page contient également des options pour la configuration de la prise en charge de [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) version 5,0. ClangFormat est un utilitaire qui simplifie l’application de style et de mise en forme à votre code en fonction d’un ensemble de règles qui peuvent être configurées dans un fichier .clang-format ou _clang-format.
 
 ### <a name="configuring-clangformat-options"></a>Configuration des options de ClangFormat
 
@@ -65,4 +65,4 @@ Ces pages permettent d’effectuer diverses personnalisations de mise en forme, 
 ## <a name="see-also"></a>Voir aussi
 
 - [Général, Environnement, boîte de dialogue Options](../../ide/reference/general-environment-options-dialog-box.md)
-- [Utilisation de la fonctionnalité IntelliSense](../../ide/using-intellisense.md)
+- [Utilisation d’IntelliSense](../../ide/using-intellisense.md)

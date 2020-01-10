@@ -34,7 +34,7 @@ Le shell intégré de Visual Studio comprend l’environnement de développement
   
 |||  
 |-|-|  
-|Domaine de fonctionnalités|Fonction|  
+|Domaine de fonctionnalités|Composant|  
 |Prise en charge linguistique|-Aucun|  
 |IDE|<ul><li>Paramètres<br /><br /> <ul><li>Créer des paramètres</li><li>Importer et exporter des paramètres</li><li>Réinitialiser les paramètres</li></ul></li><li>Intégration de la **boîte à outils**</li><li>Intégration de **liste des tâches**</li><li>Intégration de l’aide</li><li>**Options** , boîte de dialogue</li><li>Gestion des polices et des couleurs</li><li>Fenêtre **sortie**</li><li>Fenêtre **commande**</li><li>Gestion des fenêtres</li><li>Commandes, menus et combinaisons de touches</li><li>Runtime de langage spécifique à un domaine (DSL)</li></ul>|  
 |Système de projet et types de projets|-Solutions et dossiers de solution<br />-Gestionnaire de configuration de solution<br />-Gestion des éléments<br />-Solutions à projet unique et à projets multiples<br />-Concepteur d’applications (propriétés simplifiées du projet)<br />-Ajouter une référence Web<br />-Ajouter une référence de service<br />-Projet unique<br />-Types de projets de site Web<br />-Projets d’application Web|  
@@ -47,7 +47,7 @@ Le shell intégré de Visual Studio comprend l’environnement de développement
 |Contrôle de code source (SCC)|-Intégration SCC de base. Voir la remarque 3.<br />-Vérification des outils et options|  
 |Extensibilité|-Utiliser les VSPackages et les composants MEF|  
   
-## <a name="notes"></a>Notes  
+## <a name="notes"></a>Remarques  
   
 #### <a name="1-data-tools"></a>1. outils de données  
  L’environnement intégré comprend des outils de développement de base de données tels que la prise en charge de l’extensibilité des données et le **Explorateur de solutions**simplifié. Toutefois, les rapports SQL Server Express, SQL Reporting et Crystal ne sont pas inclus dans l’interpréteur de commandes intégré.  

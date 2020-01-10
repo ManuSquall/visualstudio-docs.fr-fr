@@ -1,5 +1,5 @@
 ---
-title: 'IDebugHelper :: CreatePropertyBrowserEx | Microsoft Docs'
+title: IDebugHelper::CreatePropertyBrowserEx | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -58,7 +58,7 @@ HRESULT CreatePropertyBrowserEx(
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|valeur|Description|  
+|Valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
@@ -66,6 +66,6 @@ HRESULT CreatePropertyBrowserEx(
  Cette méthode retourne un Explorateur de propriétés qui encapsule une variante et permet la conversion personnalisée de valeurs de type VARIANT ou de types VARTYPE en chaînes.  
   
 ## <a name="see-also"></a>Voir aussi  
- [IDebugHelper :: CreatePropertyBrowser](../../winscript/reference/idebughelper-createpropertybrowser.md)    
- @No__t_1 de l' [interface IDebugHelper](../../winscript/reference/idebughelper-interface.md)  
+ [IDebugHelper::CreatePropertyBrowser](../../winscript/reference/idebughelper-createpropertybrowser.md)   
+   de l' [interface IDebugHelper](../../winscript/reference/idebughelper-interface.md)  
  [Interface IDebugProperty](../../winscript/reference/idebugproperty-interface.md)

@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, security
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eab987d406d6a2c05c8350aaac9dd1ecfc13e4a8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 25815bcb7f027501fb849dcd29d14b040c24d7fa
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72660088"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591968"
 ---
 # <a name="security-of-text-templates"></a>Sécurité des modèles de texte
 Les modèles de texte présentent les problèmes de sécurité suivants :
@@ -24,7 +24,7 @@ Les modèles de texte présentent les problèmes de sécurité suivants :
 - Si le mécanisme utilisé par l’hôte pour rechercher un processeur de directive n’est pas sécurisé, un processeur de directive malveillant peut être exécuté.
 
 ## <a name="arbitrary-code"></a>Code arbitraire
- Lorsque vous écrivez un modèle, vous pouvez placer n’importe quel code dans les balises \< # # >. Cela permet d’exécuter du code arbitraire à partir d’un modèle de texte.
+ Lorsque vous écrivez un modèle, vous pouvez placer n’importe quel code dans les balises \<# # >. Cela permet d’exécuter du code arbitraire à partir d’un modèle de texte.
 
  Veillez à obtenir des modèles à partir de sources approuvées. Veillez à prévenir les utilisateurs finaux de votre application de ne pas exécuter les modèles qui ne proviennent pas de sources approuvées.
 

@@ -3,23 +3,23 @@ title: Installer et utiliser Visual Studio pour Mac derrière un pare-feu ou un 
 description: Ce document présente la liste des hôtes qui doivent figurer dans la liste verte du pare-feu pour permettre à Visual Studio pour Mac (et ses charges de travail, dont Xamarin) de fonctionner dans un environnement professionnel.
 ms.topic: troubleshooting
 ms.assetid: 79C0F1A3-0C13-4E55-A820-1138A4082B77
-author: asb3993
-ms.author: amburns
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 09/18/2019
-ms.openlocfilehash: 3c5fce37b7cb26ef9aeceaba700e72e79e809d7d
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 717eb9cd58f213c3d2c31a18c546a83ab8feb645
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71213638"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74984029"
 ---
 # <a name="install-and-use-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Installer et utiliser Visual Studio pour Mac derrière un pare-feu ou un serveur proxy
 
 Si vous ou votre organisation utilisez des mesures de sécurité comme un pare-feu ou un serveur proxy, vous pouvez souhaiter ajouter des domaines à une « liste verte » et ouvrir des ports et des protocoles afin de bénéficier d’une expérience optimale pendant l’installation et l’utilisation de Visual Studio pour Mac et des services Azure.
 
-- [**Installer Visual Studio pour Mac**](#install-visual-studio-for-mac) : Ces tableaux comportent les domaines qui doivent autoriser la connectivité afin que vous ayez accès à toutes les fonctionnalités et charges de travail de Visual Studio pour Mac.
+- [**Installer Visual Studio pour Mac**](#install-visual-studio-for-mac): ces tables incluent les domaines qui doivent autoriser la connectivité afin que vous ayez accès à toutes les fonctionnalités et charges de travail de Visual Studio pour Mac.
 
-- [**Utiliser Visual Studio pour Mac**](#use-visual-studio-for-mac) : Ces tables incluent des domaines qui doivent autoriser la connectivité afin que vous ayez accès aux fonctionnalités connexes.
+- [**Utilisez Visual Studio pour Mac**](#use-visual-studio-for-mac): ces tables incluent des domaines qui doivent autoriser la connectivité afin que vous ayez accès aux fonctionnalités associées.
 
 ## <a name="install-visual-studio-for-mac"></a>Installer Visual Studio pour Mac
 
@@ -27,7 +27,7 @@ Dans la mesure où le programme d’installation de Visual Studio pour Mac effec
 
 ### <a name="microsoft-domains"></a>Domaines Microsoft
 
-| Domaine| Objectif |
+| Domaine| Fonction |
 | ----------------------------------- |---------------------------|
 | *.live.com| Gestion des informations d’identification |
 | app.vssps.visualstudio.com| Métadonnées du programme d’installation|
@@ -44,7 +44,7 @@ Dans la mesure où le programme d’installation de Visual Studio pour Mac effec
 
 ### <a name="third-party-domains"></a>Domaines tiers
 
-| Domaine| Objectif |
+| Domaine| Fonction |
 | --------------------------|-------------------------|
 | dl.google.com | Kit de développement logiciel Android SDK |
 | download.oracle.com | Kit SDK Java|
@@ -56,7 +56,7 @@ Nous vous recommandons, pour avoir accès à toutes les fonctionnalités dont vo
 
 ### <a name="general"></a>Général
 
-| Domaine | Port(s)|Objectif|
+| Domaine | Port(s)|Fonction|
 | ----------------------|------------------|------------------|
 | go.microsoft.com | 80/443|Résolution d’URL Microsoft |
 | vsstartpage.blob.core.windows.net| 80/443| Données de la page de démarrage|
@@ -65,9 +65,9 @@ Nous vous recommandons, pour avoir accès à toutes les fonctionnalités dont vo
 | visualstudio-devdiv-c2s.msedge.net | 80/443| Notifications et fonctionnalité expérimentale |
 | targetednotifications.azurewebsites.net|  80/443| Permet de filtrer une liste de notifications globale sur une liste qui s’applique uniquement à certains types de scénarios de machines/d’utilisation|
 
-### <a name="identity"></a>Identité
+### <a name="identity"></a>Identity
 
-| Domaine | Port(s)|Objectif|
+| Domaine | Port(s)|Fonction|
 | ----------------------|------------------|------------------|
 | login.microsoftonline.com | 80/443| Fournisseur d’identité|
 | secure.aadcdn.microsoftonline-p.com | 80/443|Fournisseur d’identité|
@@ -76,14 +76,14 @@ Nous vous recommandons, pour avoir accès à toutes les fonctionnalités dont vo
 
 ### <a name="nuget"></a>NuGet
 
-| Domaine | Port(s)|Objectif|
+| Domaine | Port(s)|Fonction|
 | ----------------------|------------------|------------------|
 | api.nuget.org | 80/443|API NuGet|
 | secure.aadcdn.microsoftonline-p.com |80/443| Fournisseur d’identité|
 
 ### <a name="android-projects"></a>Projets Android
 
-| Domaine| Objectif|
+| Domaine| Fonction|
 | ------------------------------------|------------------------------------|
 | time.android.com| Serveur de temps pour l’Émulateur Android |
 | connectivitycheck.gstatic.com | Connectivité pour l’Émulateur Android|

@@ -1,5 +1,5 @@
 ---
-title: IDebugApplicationNode ::D Etach | Microsoft Docs
+title: IDebugApplicationNode::Detach | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -39,7 +39,7 @@ HRESULT Detach();
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|valeur|Description|  
+|Valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
@@ -47,5 +47,5 @@ HRESULT Detach();
  Cette méthode supprime ce nœud d’application de l’arborescence du projet.  
   
 ## <a name="see-also"></a>Voir aussi  
- [IDebugApplicationNode :: Attach](../../winscript/reference/idebugapplicationnode-attach.md)    
+ [IDebugApplicationNode::Attach](../../winscript/reference/idebugapplicationnode-attach.md)   
  [Interface IDebugApplicationNode](../../winscript/reference/idebugapplicationnode-interface.md)

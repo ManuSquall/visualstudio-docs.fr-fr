@@ -8,14 +8,15 @@ ms.assetid: 7c8de6e6-bb88-4353-92c3-ce7290310d61
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 85b05c5d6b477fffdb56377fe4a8d13dda6219cc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 1eb0d0f41b17c4f23c3898b044ad49182d47aae0
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62422989"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778191"
 ---
 # <a name="suspendprofile"></a>SuspendProfile
 La méthode `SuspendProfile` incrémente le compteur Suspend/Resume pour le niveau de profilage spécifié.
@@ -28,7 +29,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI SuspendProfile(
                        unsigned int dwId);
 ```
 
-#### <a name="parameters"></a>Paramètres
+#### <a name="parameters"></a>Parameters
  `Level`
 
  Indique le niveau du profil auquel la collecte des données de performances peut être appliquée. Les énumérateurs **PROFILE_CONTROL_LEVEL** suivants peuvent être utilisés pour indiquer un des trois niveaux auxquels la collecte des données de performances peut être appliquée :
@@ -44,7 +45,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI SuspendProfile(
  Identificateur du processus ou du thread généré par le système.
 
 ## <a name="property-valuereturn-value"></a>Valeur de propriété/valeur de retour
- La fonction indique la réussite ou l’échec en utilisant l’énumération **PROFILE_COMMAND_STATUS**. La valeur de retour peut être une des suivantes :
+ La fonction indique la réussite ou l’échec en utilisant l’énumération **PROFILE_COMMAND_STATUS**. La valeur renvoyée peut être l'une des suivantes :
 
 |Enumerator|Description|
 |----------------|-----------------|
@@ -54,7 +55,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI SuspendProfile(
 |PROFILE_ERROR_NOT_YET_IMPLEMENTED|L’appel de fonction du profilage, le niveau de profilage ou la combinaison d’appel et de niveau n’est pas encore implémenté.|
 |PROFILE_OK|L’appel a réussi.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  La valeur initiale du compteur de pauses/reprises est 0. Chaque appel à SuspendProfile ajoute 1 au nombre de Suspend/Resume ; chaque appel à ResumeProfile soustrait 1.
 
  Quand le nombre de Suspend/Resume est supérieur à 0, l’état Suspend/Resume pour le niveau est ON. Quand le nombre est inférieur ou égal à 0, l’état Suspend/Resume est ON.
@@ -67,7 +68,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI SuspendProfile(
 ## <a name="function-information"></a>Informations sur la fonction
  En-tête : déclaré dans *VSPerf.h*
 
- Bibliothèque d’importation : *VSPerf.lib*
+ Bibliothèque d’importation : *VSPerf.lib*
 
 ## <a name="example"></a>Exemple
  L’exemple suivant montre la méthode SuspendProfile. Cet exemple suppose qu’un appel antérieur à StartProfile a été effectué pour le processus ou le thread identifié par [PROFILE_CURRENTID](../profiling/profile-currentid.md).

@@ -63,7 +63,7 @@ Les tests unitaires offrent aux développeurs et aux testeurs une méthode rapid
 
  Fournit des liens vers des informations sur l'utilisation de Visual Studio plutôt que [!INCLUDE[TCMext](../includes/tcmext-md.md)] pour exécuter des tests automatisés.
 
-## <a name="reference"></a>Reference
+## <a name="reference"></a>Référence
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting> décrit l’espace de noms UnitTesting qui fournit des attributs, des exceptions, des assertions et d’autres classes qui prennent en charge les tests unitaires.
 
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Web> décrit l’espace de noms UnitTesting. Web, qui étend l’espace de noms UnitTesting en fournissant la prise en charge de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] et des tests unitaires de service Web.
@@ -79,7 +79,7 @@ Les tests unitaires offrent aux développeurs et aux testeurs une méthode rapid
 ### <a name="guidance"></a>Conseils
  [Test de la livraison continue avec Visual Studio 2012 - Chapitre 2 : Tests unitaires : tester l’intérieur](https://go.microsoft.com/fwlink/?LinkID=255188)
 
-### <a name="reference"></a>Reference
+### <a name="reference"></a>Référence
  [Index de contenu des tests unitaires](https://go.microsoft.com/fwlink/?LinkID=254719)
 
 ## <a name="see-also"></a>Voir aussi

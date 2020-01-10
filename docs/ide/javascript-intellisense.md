@@ -20,17 +20,17 @@ helpviewer_keywords:
 - IntelliSense [JavaScript], about
 - IntelliSense extensibility [JavaScript]
 - XML documentation comments [JavaScript]
-author: mikejo5000
-ms.author: mikejo
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ee40d877af75469dcc1abc176d67f43c8bdcfb3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 9d2459c9ab7b6dc6e49bbbe86729d25a2adb5bdb
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62538172"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593718"
 ---
 # <a name="javascript-intellisense"></a>IntelliSense JavaScript
 
@@ -143,5 +143,5 @@ Si vous ne souhaitez pas utiliser l’acquisition automatique, désactivez-la en
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Utilisation de la fonctionnalité IntelliSense](../ide/using-intellisense.md)
+- [Utilisation d’IntelliSense](../ide/using-intellisense.md)
 - [Prise en charge de JavaScript (Visual Studio pour Mac)](/visualstudio/mac/javascript)

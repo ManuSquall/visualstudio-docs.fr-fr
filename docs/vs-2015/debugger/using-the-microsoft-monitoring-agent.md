@@ -21,7 +21,7 @@ ms.locfileid: "74297103"
 
 Pour obtenir la documentation la plus récente sur Visual Studio, consultez [utilisation de l’Microsoft Monitoring agent](https://docs.microsoft.com/visualstudio/debugger/using-the-microsoft-monitoring-agent).
 
-**Microsoft Monitoring Agent** vous permet de surveiller localement les applications web ASP.NET hébergées sur IIS et les applications SharePoint 2010 ou 2013 pour diagnostiquer les erreurs, les problèmes de performances ou autres dysfonctionnements. Vous pouvez enregistrer les événements de diagnostic de l’agent dans un journal IntelliTrace (.iTrace), Vous pouvez ensuite ouvrir le fichier journal dans Visual Studio Enterprise (mais pas dans les éditions Professional ou Community) pour déboguer les problèmes avec tous les outils de diagnostic de Visual Studio. Vous pouvez également collecter des données de diagnostic et de méthode IntelliTrace en exécutant l’agent en mode **Trace** . Microsoft Monitoring Agent peut être intégré à [Application Insights](/azure/azure-monitor/app/app-insights-overview) et [System Center Operations Manager](https://technet.microsoft.com/library/hh205987.aspx). Microsoft Monitoring Agent modifie l’environnement du système cible quand il est installé.  
+**Microsoft Monitoring Agent**vous permet de surveiller localement les applications web ASP.NET hébergées sur IIS et les applications SharePoint 2010 ou 2013 pour diagnostiquer les erreurs, les problèmes de performances ou autres dysfonctionnements. Vous pouvez enregistrer les événements de diagnostic de l’agent dans un journal IntelliTrace (.iTrace), Vous pouvez ensuite ouvrir le fichier journal dans Visual Studio Enterprise (mais pas dans les éditions Professional ou Community) pour déboguer les problèmes avec tous les outils de diagnostic de Visual Studio. Vous pouvez également collecter des données de diagnostic et de méthode IntelliTrace en exécutant l’agent en mode **Trace** . Microsoft Monitoring Agent peut être intégré à [Application Insights](/azure/azure-monitor/app/app-insights-overview) et [System Center Operations Manager](https://technet.microsoft.com/library/hh205987.aspx). Microsoft Monitoring Agent modifie l’environnement du système cible quand il est installé.  
   
 > [!NOTE]
 > Vous pouvez également collecter des données de diagnostic et de méthode IntelliTrace pour les applications web, SharePoint, WPF et Windows Forms s’exécutant sur des ordinateurs distants sans avoir à modifier l’environnement cible, en utilisant le **collecteur autonome IntelliTrace**. Le collecteur autonome a plus d’impact sur les performances que Microsoft Monitoring Agent exécuté en mode **Monitor** . Consultez [utilisation du collecteur autonome IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md).  
@@ -69,7 +69,7 @@ Pour obtenir la documentation la plus récente sur Visual Studio, consultez [uti
 ### <a name="q--a"></a>Q et R  
   
 #### <a name="PowerShell2"></a> Q : Que faire si j’utilise Windows PowerShell 2.0 ?  
- **R :** Nous vous recommandons vivement d’utiliser PowerShell 3.0. Sinon, vous devrez importer les applets de commande PowerShell de Microsoft Monitoring Agent chaque fois que vous exécuterez PowerShell. De plus, vous n’aurez pas accès au contenu d’aide téléchargeable.  
+ **R :** Nous vous recommandons vivement d’utiliser PowerShell 3.0. Sinon, vous devrez importer les applets de commande PowerShell de Microsoft Monitoring Agent chaque fois que vous exécuterez PowerShell. De plus, vous n’aurez pas accès au contenu d’aide téléchargeable.  
   
 1. Ouvrez une fenêtre d’invite de commandes **Windows PowerShell** ou **Windows PowerShell ISE** en tant qu’administrateur.  
   
@@ -80,7 +80,7 @@ Pour obtenir la documentation la plus récente sur Visual Studio, consultez [uti
 3. [Visitez TechNet](https://technet.microsoft.com/systemcenter/default) pour obtenir le contenu d’aide le plus récent.  
   
 #### <a name="FullPermissionsITLog"></a> Q : Comment définir les autorisations pour le pool d’applications ?  
- **R :** Utilisez la commande Windows **icacls** ou l’Explorateur Windows (ou l’Explorateur de fichiers). Par exemple :  
+ **R :** Utilisez la commande Windows **icacls** ou l’Explorateur Windows (ou l’Explorateur de fichiers). Exemple :  
   
 - Pour définir des autorisations avec la commande Windows **icacls** :  
   
@@ -137,7 +137,7 @@ Pour obtenir la documentation la plus récente sur Visual Studio, consultez [uti
   
     |||  
     |-|-|  
-    |*"\<appName>"*|Spécifiez le chemin d’accès au site web et le nom de l’application web dans IIS. Vous pouvez également inclure le chemin d’accès à IIS, si vous le souhaitez.<br /><br /> *"\<IISWebsiteName>\\<IISWebAppName\>"*<br /><br /> -ou-<br /><br /> **« IIS : \ sites** *\\< IISWebsiteName\>\\< IISWebAppName\>»*<br /><br /> Ce chemin d’accès est indiqué dans le Gestionnaire des services IIS. Par exemple :<br /><br /> ![Chemin d’accès au site Web IIS et à l’application Web](../debugger/media/ffr-iismanager.png "FFR_IISManager»)<br /><br /> Vous pouvez aussi utiliser les commandes [Get-WebSite](https://technet.microsoft.com/library/ee807832.aspx) et [Get WebApplication](https://technet.microsoft.com/library/ee790554.aspx) .|  
+    |*"\<appName>"*|Spécifiez le chemin d’accès au site web et le nom de l’application web dans IIS. Vous pouvez également inclure le chemin d’accès à IIS, si vous le souhaitez.<br /><br /> *"\<IISWebsiteName>\\<IISWebAppName\>"*<br /><br /> -ou-<br /><br /> **« IIS : \ sites** *\\< IISWebsiteName\>\\< IISWebAppName\>»*<br /><br /> Ce chemin d’accès est indiqué dans le Gestionnaire des services IIS. Exemple :<br /><br /> ![Chemin d’accès au site Web IIS et à l’application Web](../debugger/media/ffr-iismanager.png "FFR_IISManager»)<br /><br /> Vous pouvez aussi utiliser les commandes [Get-WebSite](https://technet.microsoft.com/library/ee807832.aspx) et [Get WebApplication](https://technet.microsoft.com/library/ee790554.aspx) .|  
     |*\<monitoringMode>*|Spécifiez un mode de surveillance :<br /><br /> <ul><li>**Monitor**: enregistre le minimum de détails sur les événements d’exception et les événements de performances. Ce mode utilise le plan de collecte par défaut.</li><li>**Trace**: enregistre les détails au niveau des fonctions ou surveille les applications SharePoint 2010 et SharePoint 2013 à l’aide du plan de collecte spécifié. Ce mode peut ralentir votre application.<br /><br /> <ul><li>[Q : Comment définir les autorisations pour le pool d’applications ?](#FullPermissionsITLog)</li><li>[Q : Comment puis-je obtenir le maximum de données sans ralentir mon application ?](#Minimizing)</li></ul><br />     Cet exemple enregistre les événements pour une application SharePoint hébergée sur un site SharePoint :<br /><br />     **Start-WebApplicationMonitoring « FabrikamSharePointSite\FabrikamSharePointApp » trace « C:\Program Files\Microsoft Monitoring Agent\Agent\IntelliTraceCollector\ collection_plan. ASP. NET. default. xml » « C:\IntelliTraceLogs »**</li><li>**Custom**: enregistre les détails personnalisés sur la base du plan de collecte personnalisé spécifié. Si vous modifiez le plan de collecte au cours d’un processus de surveillance, vous devrez redémarrer la surveillance.</li></ul>|  
     |*"\<outputPath>"*|Spécifiez le chemin d’accès complet du répertoire de stockage des journaux IntelliTrace. Veillez à créer ce répertoire avant de commencer la surveillance.|  
     |*\<UInt32>*|Spécifiez la taille maximale du journal IntelliTrace. Par défaut, la taille maximale du journal IntelliTrace est de 250 Mo.<br /><br /> Quand le journal atteint cette limite, l’agent supprime les entrées les plus anciennes du journal pour faire de la place aux nouvelles entrées. Pour changer cette limite, utilisez l’option **-MaximumFileSizeInMegabytes** ou modifiez l’attribut `MaximumLogFileSize` défini dans le plan de collecte.|  
@@ -150,7 +150,7 @@ Pour obtenir la documentation la plus récente sur Visual Studio, consultez [uti
 ### <a name="q--a"></a>Q et R  
   
 #### <a name="Minimizing"></a> Q : Comment puis-je obtenir le maximum de données sans ralentir mon application ?  
- **R :** Microsoft Monitoring Agent peut collecter beaucoup de données. L’impact de la collecte sur les performances de votre application dépend donc des données collectées et du mode de collecte choisi. Voici quelques méthodes permettant d’obtenir le maximum de données sans ralentir votre application :  
+ **R :** Microsoft Monitoring Agent peut collecter beaucoup de données. L’impact de la collecte sur les performances de votre application dépend donc des données collectées et du mode de collecte choisi. Voici quelques méthodes permettant d’obtenir le maximum de données sans ralentir votre application :  
   
 - Pour les applications web et SharePoint, l’agent enregistre les données pour chaque application partageant le pool d’applications spécifié. La collecte peut donc ralentir n’importe quelle application partageant le même pool d’applications, même si vous choisissez de limiter la collecte aux modules d’une seule application. Pour éviter de ralentir d’autres applications, hébergez chaque application dans son propre pool d’applications.  
   
@@ -162,7 +162,7 @@ Pour obtenir la documentation la plus récente sur Visual Studio, consultez [uti
   
    Si l’attribut `enabled` n’existe pas, l’événement est activé.  
   
-   Par exemple :  
+   Exemple :  
   
   - Désactivez les événements Windows Workflow pour les applications qui n’utilisent pas Windows Workflow.  
   
@@ -211,7 +211,7 @@ Pour obtenir la documentation la plus récente sur Visual Studio, consultez [uti
   
    **Q : Pourquoi ne pas simplement exclure des modules à la place ?**  
   
-   **R :** Par défaut, les plans de collecte excluent les modules en définissant l'attribut `isExclusionList` avec la valeur `true`. Toutefois, malgré l’exclusion des modules, il est possible que des données soient collectées dans des modules qui ne répondent pas aux critères de la liste d’exclusion ou qui ne vous intéressent pas (par exemple, les modules tiers ou open source).  
+   **R :** Par défaut, les plans de collecte excluent les modules en définissant l’attribut `isExclusionList` avec la valeur `true`. Toutefois, malgré l’exclusion des modules, il est possible que des données soient collectées dans des modules qui ne répondent pas aux critères de la liste d’exclusion ou qui ne vous intéressent pas (par exemple, les modules tiers ou open source).  
   
 #### <a name="q-what-values-does-the-agent-collect"></a>Q : Quelles sont les valeurs collectées par l’agent ?  
  **R :** Pour réduire l’impact sur les performances, l’agent limite la collecte des données aux valeurs suivantes :  
@@ -246,7 +246,7 @@ Pour obtenir la documentation la plus récente sur Visual Studio, consultez [uti
   
     **Checkpoint-WebApplicationMonitoring "IIS : \ sites** *\\< IISWebsiteName\>\\< IISWebAppName\>"*  
   
-    Par exemple :  
+    Exemple :  
   
     **PS C :\\> point de contrôle-WebApplicationMonitoring "Fabrikam\FabrikamFiber.Web"**  
   
@@ -280,7 +280,7 @@ Pour obtenir la documentation la plus récente sur Visual Studio, consultez [uti
   
     **Stop-WebApplicationMonitoring -All**  
   
-    Par exemple :  
+    Exemple :  
   
     **PS C :\\> Stop-WebApplicationMonitoring "Fabrikam\iFabrikamFiber.Web"**  
   

@@ -6,14 +6,15 @@ ms.assetid: 07840ab2-3a92-4744-ac87-48b19e0ceecd
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f9b2de87e77abc701f14211cb49e82220c4c935d
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: 17217a51c58e1d30b6e6854ee9dbb0c1fb662a3a
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263006"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779686"
 ---
 # <a name="collect-application-statistics-for-services-by-using-the-profiler-sampling-method"></a>Collecter des statistiques d’application des services en utilisant la méthode d’échantillonnage du profileur
 Cette section décrit les procédures et les options de collecte des statistiques de performances des services Windows utilisant la méthode d’échantillonnage à partir de la ligne de commande.

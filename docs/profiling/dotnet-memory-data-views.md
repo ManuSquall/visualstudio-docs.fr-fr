@@ -9,14 +9,15 @@ ms.assetid: 79184d8e-769b-4ace-be2b-521147772081
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b1a866ba73669caba0c8d96647a134123f4ae753
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 7e74027512eba0d64593133a3bbe758570cbf567
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970042"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779270"
 ---
 # <a name="net-memory-data-views"></a>Vues des données de la mémoire .NET
 Cette section contient des informations de référence sur les vues et les rapports des fichiers de données du profileur qui comprennent des données de profilage de mémoire .NET.
@@ -50,11 +51,11 @@ Cette section contient des informations de référence sur les vues et les rappo
 
  Répertorie les données d’allocation de mémoire des fonctions lors de l’exécution du profilage.
 
-- [Vue Lignes - Échantillonnage](../profiling/lines-view-dotnet-memory-sampling-data.md)
+- [Lignes, vue - Échantillonnage](../profiling/lines-view-dotnet-memory-sampling-data.md)
 
  Répertorie les données d’allocation de mémoire des lignes de code source lors de l’exécution du profilage.
 
-- [Vue Pointeurs d’instruction (IP) - Échantillonnage](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)
+- [Pointeurs d’instruction (IP), vue - Échantillonnage](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)
 
  Répertorie les données d’allocation de mémoire des instructions de fonctions lors de l’exécution du profilage.
 
@@ -74,23 +75,23 @@ Cette section contient des informations de référence sur les vues et les rappo
 
  Répertorie les données d’allocation de mémoire des fonctions instrumentées lors de l’exécution du profilage.
 
-## <a name="reference"></a>Référence
+## <a name="reference"></a>Reference
 - [Vue Informations relatives à la fonction](../profiling/function-details-view.md)
 
  Affiche un graphique de la relation qui existe entre une fonction sélectionnée et les fonctions qui l’ont appelée et qui ont été appelées par celle-ci.
 
-- [Vue Processus](../profiling/process-view.md)
+- [Processus, vue](../profiling/process-view.md)
 
  Répertorie les heures de début et de fin des processus et des threads.
 
-- [Vue Marques](../profiling/marks-view.md)
+- [Marques, vue](../profiling/marks-view.md)
 
  Répertorie les événements ETW et les événements d’échantillonnage insérés dans un fichier de données de profilage.
 
 ## <a name="related-sections"></a>Rubriques connexes
 - [Vues de données de la méthode d’échantillonnage](../profiling/profiler-sampling-method-data-views.md)
 
- Informations de référence sur les vues et les rapports des fichiers de données du profileur générés à l’aide de la méthode d’échantillonnage.
+ Informations de référence pour les vues et rapports des fichiers de données du profileur générés à l’aide de la méthode d’échantillonnage.
 
 - [Vues de données de la méthode d’instrumentation](../profiling/instrumentation-method-data-views.md)
 

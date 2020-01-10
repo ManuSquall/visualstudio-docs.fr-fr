@@ -5,20 +5,20 @@ ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs [text templates], connecting host to processor
 - text templates, custom directive hosts
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: d474de7da459e9639e8ec9f29f34e59267388b50
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: a27b856b9c5129f725381afa34bd134009002216
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984420"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593978"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>Procédure pas à pas : connecter un hôte à un processeur de directive généré
 
@@ -96,17 +96,17 @@ Une fois que vous avez généré le processeur de directive, vous connectez le p
 
 3. Ajoutez les références suivantes :
 
-    - Microsoft. VisualStudio. Modeling. Sdk. 11.0
+    - Microsoft.VisualStudio.Modeling.Sdk.11.0
 
-    - Microsoft. VisualStudio. Modeling. Sdk. Diagrams. 11.0
+    - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0
 
-    - Microsoft. VisualStudio. TextTemplating. 11.0
+    - Microsoft.VisualStudio.TextTemplating.11.0
 
-    - Microsoft. VisualStudio. TextTemplating. interfaces. 11.0
+    - Microsoft.VisualStudio.TextTemplating.Interfaces.11.0
 
-    - Microsoft. VisualStudio. TextTemplating. Modeling. 11.0
+    - Microsoft.VisualStudio.TextTemplating.Modeling.11.0
 
-    - Microsoft. VisualStudio. TextTemplating. VSHost. 11.0
+    - Microsoft.VisualStudio.TextTemplating.VSHost.11.0
 
 4. En haut de Program.cs ou Module1. vb, ajoutez la ligne de code suivante :
 
@@ -118,7 +118,7 @@ Une fois que vous avez généré le processeur de directive, vous connectez le p
     Imports Microsoft.Win32
     ```
 
-5. Recherchez le code de la propriété `StandardAssemblyReferences` et remplacez-le par le code suivant :
+5. Recherchez le code de la propriété `StandardAssemblyReferences`et remplacez-le par le code suivant :
 
     > [!NOTE]
     > Dans cette étape, vous ajoutez des références aux assemblys qui sont requis par le processeur de directive généré que votre hôte prendra en charge.
@@ -154,7 +154,7 @@ Une fois que vous avez généré le processeur de directive, vous connectez le p
     }
     ```
 
-6. Recherchez le code de la fonction `ResolveDirectiveProcessor` et remplacez-le par le code suivant :
+6. Recherchez le code de la fonction `ResolveDirectiveProcessor`et remplacez-le par le code suivant :
 
     > [!IMPORTANT]
     > Ce code contient des références codées en dur au nom du processeur de directive généré auquel vous souhaitez vous connecter. Vous pouvez facilement le rendre plus général, auquel cas il recherche tous les processeurs de directive listés dans le registre et tente de trouver une correspondance. Dans ce cas, l’hôte fonctionne avec n’importe quel processeur de directive généré.
@@ -312,13 +312,13 @@ Pour tester l’hôte de modèle de texte personnalisé, vous devez d’abord é
     #>
     ```
 
-3. Dans le code, remplacez \<YOUR chemin d’accès > par le chemin d’accès du fichier Sample. min à partir du langage spécifique à la conception que vous avez créé dans la première procédure.
+3. Dans le code, remplacez \<votre chemin d’accès > par le chemin d’accès du fichier Sample. min à partir du langage spécifique à la conception que vous avez créé dans la première procédure.
 
 4. Enregistrez et fermez le fichier.
 
 ### <a name="test-the-custom-host"></a>Tester l’hôte personnalisé
 
-1. Ouvrez une fenêtre Invite de commandes.
+1. Ouvrez une fenêtre d'invite de commandes.
 
 2. Tapez le chemin d’accès du fichier exécutable de l’hôte personnalisé, mais n’appuyez pas encore sur ENTRÉE.
 

@@ -2,17 +2,17 @@
 title: 'Comment : utiliser des transactions pour mettre à jour le modèle'
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a08ea67477f42008c35b6f141351beaeee03d27b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 33d6c249845c72e25b7201bed5e640ff523c5d81
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661137"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594602"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>Comment : utiliser des transactions pour mettre à jour le modèle
 Les transactions permettent de s’assurer que les modifications apportées au magasin sont traitées comme un groupe. Les modifications regroupées peuvent être validées ou restaurées en tant qu’unité unique.
@@ -88,7 +88,7 @@ catch (Exception ex)
 
  Cela est particulièrement utile pour transférer des informations entre des règles.
 
-## <a name="transaction-state"></a>État de la transaction
+## <a name="transaction-state"></a>État des transactions
  Dans certains cas, vous devez éviter de propager une modification si la modification est due à l’inactivité ou à la réopération d’une transaction. Cela peut se produire, par exemple, si vous écrivez un gestionnaire de valeurs de propriété qui peut mettre à jour une autre valeur dans le magasin. Étant donné que l’opération d’annulation réinitialise toutes les valeurs du magasin à leurs États précédents, il n’est pas nécessaire de calculer les valeurs mises à jour. Utilisez ce code :
 
 ```csharp

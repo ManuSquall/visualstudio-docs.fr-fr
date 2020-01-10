@@ -13,17 +13,17 @@ helpviewer_keywords:
 - <Output> Element [MSBuild]
 - Output Element [MSBuild]
 ms.assetid: 34bc7cd1-efd3-4b57-b691-4584eeb6a0e9
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb8f7a02183fe34dcd882e23ee7bf8b90f9a2cc6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: bcd27951390cf86712f846fada2835c4d87ec7fe
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963921"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594849"
 ---
 # <a name="output-element-msbuild"></a>Élément Output (MSBuild)
 Stocke les valeurs de sortie d’une tâche dans les éléments et les propriétés.
@@ -43,7 +43,7 @@ Stocke les valeurs de sortie d’une tâche dans les éléments et les propriét
 
 ### <a name="attributes"></a>Attributs
 
-|Attribut|Description|
+|Attribute|Description|
 |---------------|-----------------|
 |`TaskParameter`|Attribut requis.<br /><br /> Nom du paramètre de sortie de la tâche.|
 |`PropertyName`|L’attribut `PropertyName` ou `ItemName` est obligatoire.<br /><br /> Propriété recevant la valeur du paramètre de sortie de la tâche. Votre projet peut alors faire référence à la propriété avec la syntaxe $(\<nom_propriété>). Ce nom de propriété peut être un nouveau nom de propriété ou un nom déjà défini dans le projet.<br /><br /> Cet attribut n’est pas utilisable si `ItemName` est également utilisé.|
@@ -81,4 +81,4 @@ Stocke les valeurs de sortie d’une tâche dans les éléments et les propriét
 
 ## <a name="see-also"></a>Voir aussi
 - [Informations de référence sur le schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)
-- [Tâches](../msbuild/msbuild-tasks.md)
+- [Tâches MSBuild](../msbuild/msbuild-tasks.md)

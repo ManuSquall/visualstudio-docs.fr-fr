@@ -7,15 +7,15 @@ helpviewer_keywords:
 - response times in load tests
 - load test results, response times
 ms.assetid: e61c49f3-3161-45b1-9220-08b5459065a2
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5fbaa3f8f322bc6633e4f5081ba4cae38b581b95
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: cf8bc1205658899a51cf1a50e83a9a8b34034b25
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653290"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594316"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Guide pratique pour afficher le temps de réponse d’une page web dans un test de charge à l’aide de l’analyseur de test de charge
 

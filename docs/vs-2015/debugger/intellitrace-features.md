@@ -38,7 +38,7 @@ Vous pouvez utiliser IntelliTrace pour enregistrer les événements et les appel
   
  IntelliTrace est disponible dans Visual Studio Enterprise Edition, mais pas dans les éditions Visual Studio Professional ou Community.  
   
- Pour confirmer qu'IntelliTrace est activé, ouvrez la page d'options **Outils / Options / IntelliTrace**. L’option **Activer IntelliTrace** doit être activée par défaut.  
+ Pour confirmer qu’IntelliTrace est activé, ouvrez la page **Outils/Options/Options IntelliTrace** . L’option **Activer IntelliTrace** doit être activée par défaut.  
   
 > [!NOTE]
 > L’étendue de tous les paramètres dans la page d’options **IntelliTrace** est Visual Studio tout entier, et non pas des projets ou des solutions spécifiques. Une modification de ces paramètres s'applique à toutes les instances de Visual Studio, à toutes les sessions de débogage et à tous les projets ou solutions.  
@@ -46,10 +46,10 @@ Vous pouvez utiliser IntelliTrace pour enregistrer les événements et les appel
 ## <a name="ChooseEvents"></a>Choisir les événements qu’IntelliTrace enregistre  
  Vous pouvez activer ou désactiver l'enregistrement d'événements IntelliTrace spécifiques.  
   
- Si vous êtes en cours de débogage, interrompez-le. Accédez à **Outils / Options / IntelliTrace / Événements IntelliTrace**. Choisissez les événements IntelliTrace à enregistrer.  
+ Si vous êtes en cours de débogage, interrompez-le. Accédez à **Outils/Options/IntelliTrace/événements IntelliTrace**. Choisissez les événements IntelliTrace à enregistrer.  
   
 ## <a name="GoingFurther"></a>Collecter les événements IntelliTrace et les informations sur les appels  
- Cette fonctionnalité n'est pas activée par défaut, mais IntelliTrace peut enregistrer les appels de méthode en plus des événements. Pour activer la collecte des appels de méthode, accédez à  **Outils / Options / IntelliTrace / Général**, puis sélectionnez **Événements IntelliTrace et informations d'appel**.  
+ Cette fonctionnalité n'est pas activée par défaut, mais IntelliTrace peut enregistrer les appels de méthode en plus des événements. Pour activer la collecte des appels de méthode, accédez à **Outils/Options/IntelliTrace/général**, puis sélectionnez **événements IntelliTrace et informations sur les appels**.  
   
  Cette opération vous permet de consulter l'historique de la pile des appels et de vous déplacer vers l'arrière ou vers l'avant dans les appels de votre code. IntelliTrace enregistre des données comme les noms des méthodes, les points d'entrée et de sortie des méthodes, ainsi que certaines valeurs de paramètres et de retour.  
   
@@ -59,7 +59,7 @@ Vous pouvez utiliser IntelliTrace pour enregistrer les événements et les appel
 > Vous pouvez réduire la surcharge de performances en limitant la liste des événements enregistrés par IntelliTrace et en réduisant au minimum le nombre de modules que vous collectez. Pour plus d’informations, consultez [Vérifier le nombre d’informations sur les appels qu’IntelliTrace enregistre](../debugger/intellitrace-features.md#ControlCallData).  
   
 ### <a name="using-the-navigation-gutter"></a>Utilisation de la marge de navigation  
- Vous pouvez utiliser la marge de navigation affichée à gauche de la fenêtre de code. Si la marge de navigation n'est pas visible, accédez à **Outils / Options / IntelliTrace / Avancé**, puis sélectionnez **Afficher la marge de navigation en mode débogage**.  
+ Vous pouvez utiliser la marge de navigation affichée à gauche de la fenêtre de code. Si vous ne voyez pas la marge de navigation, accédez à **Outils/Options/IntelliTrace/avancé**, puis sélectionnez **afficher la marge de navigation en mode débogage**.  
   
  La marge de navigation vous permet de vous déplacer vers l'avant et vers l'arrière parmi les appels de méthode et les événements en mode de débogage d'historique. Pour plus d’informations sur le débogage d’historique, consultez [Débogage d’historique](../debugger/historical-debugging.md). Elle comporte plusieurs commandes :  
   
@@ -76,21 +76,21 @@ Vous pouvez utiliser IntelliTrace pour enregistrer les événements et les appel
  Vous pouvez rechercher des méthodes uniquement quand les informations sur les appels de méthode ont été activées. Vous pouvez consulter l'historique d'IntelliTrace à la recherche d'une ligne ou d'une méthode spécifique. Quand l’exécution du débogueur est interrompue, cliquez avec le bouton droit dans le corps de la fonction pour afficher le menu contextuel et cliquez sur **Rechercher cette ligne dans IntelliTrace** ou **Rechercher cette méthode dans IntelliTrace**.  
   
 ### <a name="ControlCallData"></a> Vérifier le nombre d’informations sur les appels qu’IntelliTrace enregistre  
- Par défaut, IntelliTrace enregistre des informations pour tous les modules utilisés par votre solution. Vous pouvez configurer IntelliTrace pour qu'il enregistre des informations sur les appels uniquement pour les modules qui vous intéressent. Dans **Outils / Options / IntelliTrace / Modules**, vous pouvez spécifier les modules à inclure ou à exclure d'IntelliTrace. IntelliTrace recueille uniquement les événements provenant des modules que vous avez spécifiés et les appels de méthode qui se sont produits dans les modules qui vous intéressent.  
+ Par défaut, IntelliTrace enregistre des informations pour tous les modules utilisés par votre solution. Vous pouvez configurer IntelliTrace pour qu'il enregistre des informations sur les appels uniquement pour les modules qui vous intéressent. Dans **Outils/Options/IntelliTrace/modules**, vous pouvez spécifier les modules à inclure ou les modules à exclure d’IntelliTrace. IntelliTrace recueille uniquement les événements provenant des modules que vous avez spécifiés et les appels de méthode qui se sont produits dans les modules qui vous intéressent.  
   
  Pour ajouter plusieurs modules, utilisez le caractère générique * au début ou à la fin de la chaîne. Pour les noms de modules, utilisez des noms de fichiers, et non des noms d'assemblys. Les chemins d’accès de fichiers ne sont pas acceptés.  
   
  Essayez de réduire le nombre de modules au minimum. Vous obtiendrez de meilleures performances car il y aura moins de données à recueillir. Vous obtiendrez également moins de bruit dans l'interface utilisateur car il y aura moins de données à parcourir.  
   
 ## <a name="SaveSession"></a>Enregistrement des données IntelliTrace dans un fichier  
- Vous pouvez enregistrer les données recueillies par IntelliTrace en accédant à **Déboguer / IntelliTrace / Enregistrer la session IntelliTrace** pendant que vous déboguez et que l'application est dans un état d'arrêt. L'élément de menu est désactivé et vous ne pourrez pas enregistrer les données recueillies par IntelliTrace si l'application est encore en cours d'exécution ou si vous avez arrêté le débogage.  
+ Vous pouvez enregistrer les données collectées par IntelliTrace, en accédant à **Déboguer/IntelliTrace/enregistrer la session IntelliTrace** pendant le débogage et l’application est dans un état d’arrêt. L'élément de menu est désactivé et vous ne pourrez pas enregistrer les données recueillies par IntelliTrace si l'application est encore en cours d'exécution ou si vous avez arrêté le débogage.  
   
- Vous pouvez configurer IntelliTrace pour enregistrer automatiquement les données dans un fichier en accédant à **Outils / Options / IntelliTrace / Avancé** et en sélectionnant **Stocker les enregistrements IntelliTrace dans ce répertoire**. Vous pouvez aussi configurer une taille fixe pour le fichier généré. Dans ce cas, IntelliTrace remplace les anciennes données quand l'espace libre est insuffisant. Visual Studio crée deux fichiers pour chaque session IntelliTrace quand elles sont enregistrées automatiquement et que le processus d'hébergement Visual Studio (vshost.exe) est activé.  
+ Vous pouvez configurer IntelliTrace pour enregistrer automatiquement dans un fichier en accédant à **Outils/Options/IntelliTrace/avancé** , puis en sélectionnant **stocker les enregistrements IntelliTrace dans ce répertoire**. Vous pouvez aussi configurer une taille fixe pour le fichier généré. Dans ce cas, IntelliTrace remplace les anciennes données quand l'espace libre est insuffisant. Visual Studio crée deux fichiers pour chaque session IntelliTrace quand elles sont enregistrées automatiquement et que le processus d'hébergement Visual Studio (vshost.exe) est activé.  
   
 > [!TIP]
 > Pour économiser de l'espace disque, désactivez l'enregistrement automatique des fichiers quand vous n'en avez plus besoin. Les fichiers existants ne seront pas supprimés. Vous pouvez toujours enregistrer les données dans un fichier à la demande à partir du menu contextuel.  
   
- Quand vous enregistrez des données IntelliTrace dans un fichier, vous obtenez un fichier .itrace pour chaque processus à partir duquel IntelliTrace a recueilli des données. Vous pouvez ensuite ouvrir le fichier .itrace dans Visual Studio en accédant à **Fichier / Ouvrir / Fichier** et en sélectionnant le fichier .itrace dans la boîte de dialogue Ouvrir un fichier. Pour plus d’informations, consultez [Utilisation des données IntelliTrace enregistrées](../debugger/using-saved-intellitrace-data.md).  
+ Quand vous enregistrez des données IntelliTrace dans un fichier, vous obtenez un fichier .itrace pour chaque processus à partir duquel IntelliTrace a recueilli des données. Vous pouvez ensuite ouvrir le fichier. iTrace dans Visual Studio en accédant à **fichier/ouvrir/fichier** , puis en sélectionnant le fichier. iTrace dans la boîte de dialogue Ouvrir un fichier. Pour plus d’informations, consultez [Utilisation des données IntelliTrace enregistrées](../debugger/using-saved-intellitrace-data.md).  
   
 ## <a name="blogs"></a>Blogs  
  [IntelliTrace dans Visual Studio Enterprise 2015](https://devblogs.microsoft.com/devops/intellitrace-in-visual-studio-ultimate-2015/)  

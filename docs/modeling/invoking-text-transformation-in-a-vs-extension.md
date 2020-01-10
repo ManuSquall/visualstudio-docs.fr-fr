@@ -2,17 +2,17 @@
 title: Appel d'une transformation de texte dans une extension VS
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8729a96d236fd565f31c827ebff6911dbc0b81d6
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7ab846d1d7121d0c36c4187d937330d2ade52eb1
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667764"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594589"
 ---
 # <a name="invoke-text-transformation-in-a-visual-studio-extension"></a>Appeler la transformation de texte dans une extension Visual Studio
 
@@ -140,6 +140,6 @@ Vous pouvez passer des valeurs en dehors d'un modèle de texte à l'aide d'une c
 
 Pour générer du texte à partir d’un modèle de texte prétraité : appelez la méthode `TransformText()` de la classe générée. Pour plus d’informations, consultez [génération de texte au moment de l’exécution avec des modèles de texte T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
-Pour générer du texte en dehors d’une extension Visual Studio : définissez un hôte personnalisé. Pour plus d’informations, consultez [traitement des modèles de texte à l’aide d’un hôte personnalisé](../modeling/processing-text-templates-by-using-a-custom-host.md).
+Pour générer du texte en dehors d’une extension Visual Studio : définissez un hôte personnalisé. Pour plus d’informations, consultez [de traitement des modèles de texte à l’aide d’un hôte personnalisé](../modeling/processing-text-templates-by-using-a-custom-host.md).
 
 Pour générer du code source qui peut être compilé et exécuté ultérieurement : appelez la méthode [PreprocessTemplate](/previous-versions/visualstudio/visual-studio-2012/ee844321(v=vs.110)) de [ITextTemplating](/previous-versions/visualstudio/visual-studio-2012/bb932392(v=vs.110)).

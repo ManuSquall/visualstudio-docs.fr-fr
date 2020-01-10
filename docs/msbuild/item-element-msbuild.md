@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Item Element [MSBuild]
 - <Item> Element [MSBuild]
 ms.assetid: dcef5f91-0613-4bfc-8ee9-d7004bb6d3a9
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d94058f1f14f1da644cff672d73cd77e0840c68
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 730e7d317ffa3fd5a450978f35659df3fe5629f3
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63006796"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75573662"
 ---
 # <a name="item-element-msbuild"></a>Item, élément (MSBuild)
 Contient un élément défini par l'utilisateur et ses métadonnées. Chaque élément utilisé dans un projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] doit être spécifié en tant qu'enfant d'un élément `ItemGroup`.
@@ -66,7 +66,7 @@ Par exemple, pour spécifier une liste de packages NuGet, vous utiliseriez norma
 
 ### <a name="attributes"></a>Attributs
 
-|Attribut|Description|
+|Attribute|Description|
 |---------------|-----------------|
 |`Include`|Attribut facultatif.<br /><br /> Fichier ou caractère générique à inclure dans la liste des éléments.|
 |`Exclude`|Attribut facultatif.<br /><br /> Fichier ou caractère générique à exclure de la liste des éléments.|
@@ -89,7 +89,7 @@ Par exemple, pour spécifier une liste de packages NuGet, vous utiliseriez norma
 |-------------|-----------------|
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Élément grouping pour d’autres éléments.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Les éléments `Item` définissent les entrées du système de génération et sont regroupés en collections d'éléments, selon leur nom de collection défini par l'utilisateur. Ces collections d’éléments peuvent être utilisées comme paramètres des [tâches](../msbuild/msbuild-tasks.md), lesquelles utilisent les éléments d’une collection pour exécuter les étapes du processus de génération. Pour plus d’informations, consultez l’article [Éléments MSBuild](../msbuild/msbuild-items.md).
 
 La notation @(\<monType>) permet de développer une collection d’éléments de type \<monType> en une liste de chaînes séparées par des points-virgules, et de la transmettre à un paramètre. Si le paramètre est de type `string`, la valeur du paramètre correspond à la liste des éléments séparés par des points-virgules. Si le paramètre est un tableau de chaînes (`string[]`), chaque élément est inséré dans le tableau selon l'emplacement des points-virgules. Si le paramètre de tâche est de type <xref:Microsoft.Build.Framework.ITaskItem>`[]`, la valeur correspond au contenu de la collection d'éléments et à toutes les métadonnées associées. Pour délimiter chaque élément à l’aide d’un caractère autre que le point-virgule, utilisez la syntaxe @(\<myType>, '\<séparateur>').
@@ -119,7 +119,7 @@ L’exemple de code suivant montre comment utiliser l’attribut `Update` pour m
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Éléments](../msbuild/msbuild-items.md)
+- [Éléments MSBuild](../msbuild/msbuild-items.md)
 - [Éléments communs des projets MSBuild](../msbuild/common-msbuild-project-items.md)
 - [Propriétés MSBuild](../msbuild/msbuild-properties.md)
 - [Informations de référence sur le schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)

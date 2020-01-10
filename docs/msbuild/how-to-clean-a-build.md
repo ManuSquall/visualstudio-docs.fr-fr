@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Nettoyer une build | Microsoft Docs'
+title: Guide pratique pour nettoyer une génération | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -8,19 +8,19 @@ helpviewer_keywords:
 - directories [.NET Framework], for output items
 - output, removing items
 ms.assetid: 999ba473-b0c4-45c7-930a-63ea7a510509
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d737ecf51b6726bf46a525104c99f8ac61569964
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 8d183026ffdfce3ada7fc96c29c83570ee18c694
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977296"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585217"
 ---
-# <a name="how-to-clean-a-build"></a>Procédure : Nettoyer une build
+# <a name="how-to-clean-a-build"></a>Guide pratique pour nettoyer une build
 Quand vous nettoyez une build, tous les fichiers intermédiaires et de sortie sont supprimés ; seuls les fichiers projet et de composants sont conservés. De nouvelles instances des fichiers intermédiaires et de sortie peuvent alors être générées à partir des fichiers projet et de composants. La bibliothèque de tâches courantes qui est fournie avec [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] inclut une tâche [Exec](../msbuild/exec-task.md) que vous pouvez utiliser pour exécuter des commandes système. Pour plus d’informations sur la bibliothèque de tâches, consultez [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md).
 
 ## <a name="create-a-directory-for-output-items"></a>Créer un répertoire pour les éléments de sortie
@@ -32,7 +32,7 @@ Quand vous nettoyez une build, tous les fichiers intermédiaires et de sortie so
 
      `<builtdir>BuiltApp</builtdir>`
 
-2. Utilisez la tâche [MakeDir](../msbuild/makedir-task.md) pour créer le répertoire s’il n’existe pas. Par exemple :
+2. Utilisez la tâche [MakeDir](../msbuild/makedir-task.md) pour créer le répertoire s’il n’existe pas. Par exemple :
 
      ```xml
      <MakeDir Directories = "$(builtdir)"
@@ -44,14 +44,14 @@ Quand vous nettoyez une build, tous les fichiers intermédiaires et de sortie so
 
 #### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>Pour supprimer un répertoire et tous les fichiers contenus dans le répertoire
 
-- Utilisez la tâche `RemoveDir` pour supprimer le répertoire. Par exemple :
+- Utilisez la tâche `RemoveDir` pour supprimer le répertoire. Par exemple :
 
      `<RemoveDir Directories="$(builtdir)" />`
 
 ## <a name="example"></a>Exemple
  L’exemple de projet de code suivant contient une nouvelle cible `Clean`, qui utilise la tâche `RemoveDir` pour supprimer un répertoire, ainsi que tous les fichiers et répertoires qu’il contient. De plus, dans cet exemple, la cible `Compile` crée un répertoire distinct pour les éléments de sortie qui sont supprimés quand la build est nettoyée.
 
- `Compile` est défini comme cible par défaut et est donc utilisée automatiquement, sauf si vous spécifiez une ou plusieurs cibles différentes. Vous utilisez le commutateur de ligne de commande **-target** pour spécifier une autre cible. Par exemple :
+ `Compile` est défini comme cible par défaut et est donc utilisée automatiquement, sauf si vous spécifiez une ou plusieurs cibles différentes. Vous utilisez le commutateur de ligne de commande **-target** pour spécifier une autre cible. Par exemple :
 
  `msbuild <file name>.proj -target:Clean`
 
@@ -104,4 +104,4 @@ Quand vous nettoyez une build, tous les fichiers intermédiaires et de sortie so
 - [Tâche MakeDir](../msbuild/makedir-task.md)
 - [Tâche RemoveDir](../msbuild/removedir-task.md)
 - [Tâche Csc](../msbuild/csc-task.md)
-- [Cibles](../msbuild/msbuild-targets.md)
+- [Cibles MSBuild](../msbuild/msbuild-targets.md)

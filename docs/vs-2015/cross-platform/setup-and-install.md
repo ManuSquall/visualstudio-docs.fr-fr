@@ -68,11 +68,11 @@ Si vous rencontrez des problèmes d’utilisation de Xamarin après les phases d
   
 3. Cochez les cases suivantes :  
   
-   1. **Développement multiplateforme pour appareils mobiles > C#/.NET (Xamarin)** . Différents outils Android sont aussi automatiquement sélectionnés sous Kits de développement logiciel (SDK) et outils courants. Cette option permet également de mettre à jour les installations Xamarin existantes.  
+   1. **Développement mobile multiplateforme > C#/.NET (Xamarin)** . Différents outils Android sont aussi automatiquement sélectionnés sous Kits de développement logiciel (SDK) et outils courants. Cette option permet également de mettre à jour les installations Xamarin existantes.  
   
         ![Sélectionnez l’option Xamarin sous développement&#45;multiplateforme pour appareils mobiles](../cross-platform/media/cross-plat-xamarin-setup-2.png "Installation plat Xamarin 2")  
   
-   2. Pour Windows 8+ : **Développement multiplateforme pour appareils mobiles > Émulateur Microsoft Visual Studio pour Android**. Remarque : Si vous utilisez un ordinateur Windows 7 (ou version antérieure), ou si vous exécutez Windows sur un Mac, vérifiez que cette case est *décochée*. Consultez « Remarque pour les émulateurs sur des ordinateurs Windows » après l’étape 5. Vous pouvez également laisser cette case décochée, si vous avez l’intention de déboguer uniquement sur les appareils Android physiques.  
+   2. Pour Windows 8 (et versions ultérieures) : **Développement mobile multiplateforme > Émulateur Microsoft Visual Studio pour Android**. Remarque : Si vous utilisez un ordinateur Windows 7 (ou version antérieure), ou si vous exécutez Windows sur un Mac, vérifiez que cette case est *décochée*. Consultez « Remarque pour les émulateurs sur des ordinateurs Windows » après l’étape 5. Vous pouvez également laisser cette case décochée, si vous avez l’intention de déboguer uniquement sur les appareils Android physiques.  
   
    3. (Facultatif) Si vous prévoyez de cibler des appareils Windows, cochez aussi **Développement d’applications Windows et web > Outils de développement d’applications Windows universelles** et/ou **Outils Windows 8.1 et Windows Phone 8.0/8.1**. Des options y sont proposées pour l’installation d’images d’émulateurs dont le chargement prend davantage de temps : vous pouvez toujours revenir au programme d’installation de Visual Studio pour les ajouter ultérieurement.  
   

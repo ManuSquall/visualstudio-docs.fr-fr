@@ -16,17 +16,17 @@ helpviewer_keywords:
 - validating data, datasets
 - updating datasets, validating data
 ms.assetid: 79500596-1e4d-478e-a991-a636fd73a622
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f370e55c600baa3f017f6bbb58feab38c23e51ab
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: ed115e851e9c2291dfc9d00f4bb36f670a7f3e00
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648112"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586066"
 ---
 # <a name="validate-data-in-datasets"></a>Valider les données dans des datasets
 La validation des données est le processus qui consiste à confirmer que les valeurs entrées dans les objets de données sont conformes aux contraintes dans le schéma d’un DataSet. Le processus de validation confirme également que ces valeurs suivent les règles qui ont été établies pour votre application. Il est conseillé de valider les données avant d’envoyer des mises à jour à la base de données sous-jacente. Cela réduit les erreurs ainsi que le nombre potentiel d’allers-retours entre une application et la base de données.
@@ -35,7 +35,7 @@ Vous pouvez vérifier que les données écrites dans un jeu de données sont val
 
 Le meilleur emplacement pour ajouter la validation à votre application se trouve dans le fichier de classe partielle du jeu de données. Dans [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ou [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], ouvrez le **Concepteur de DataSet** et double-cliquez sur la colonne ou la table pour laquelle vous souhaitez créer la validation. Cette action crée automatiquement un gestionnaire d’événements <xref:System.Data.DataTable.ColumnChanging> ou <xref:System.Data.DataTable.RowChanging>.
 
-## <a name="validate-data"></a>Valider les données
+## <a name="validate-data"></a>Valider des données
 La validation dans un DataSet s’effectue des manières suivantes :
 
 - En créant votre propre validation propre à l’application qui peut vérifier des valeurs dans une colonne de données individuelle pendant les modifications. Pour plus d’informations, consultez [Comment : valider des données pendant les modifications de colonnes](validate-data-in-datasets.md).
@@ -44,7 +44,7 @@ La validation dans un DataSet s’effectue des manières suivantes :
 
 - En créant des clés, des contraintes uniques, et ainsi de suite dans le cadre de la définition de schéma réelle du jeu de données.
 
-- En définissant les propriétés de l’objet <xref:System.Data.DataColumn>, comme <xref:System.Data.DataColumn.MaxLength%2A>, <xref:System.Data.DataColumn.AllowDBNull%2A> et <xref:System.Data.DataColumn.Unique%2A>.
+- En définissant les propriétés de l’objet <xref:System.Data.DataColumn>, comme <xref:System.Data.DataColumn.MaxLength%2A>, <xref:System.Data.DataColumn.AllowDBNull%2A>et <xref:System.Data.DataColumn.Unique%2A>.
 
 Plusieurs événements sont déclenchés par l’objet <xref:System.Data.DataTable> lorsqu’une modification se produit dans un enregistrement :
 
@@ -60,11 +60,11 @@ L’événement que vous choisissez dépend du niveau de granularité souhaité 
 
 Lorsque les enregistrements sont mis à jour, l’objet <xref:System.Data.DataTable> déclenche des événements auxquels vous pouvez répondre au fur et à mesure que des modifications se produisent et une fois les modifications apportées.
 
-Si votre application utilise un DataSet typé, vous pouvez créer des gestionnaires d’événements fortement typés. Cela ajoute quatre événements typés supplémentaires pour lesquels vous pouvez créer des gestionnaires : `dataTableNameRowChanging`, `dataTableNameRowChanged`, `dataTableNameRowDeleting` et `dataTableNameRowDeleted`. Ces gestionnaires d’événements typés passent un argument qui comprend les noms de colonnes de votre table qui facilitent l’écriture et la lecture de code.
+Si votre application utilise un DataSet typé, vous pouvez créer des gestionnaires d’événements fortement typés. Cela ajoute quatre événements typés supplémentaires pour lesquels vous pouvez créer des gestionnaires : `dataTableNameRowChanging`, `dataTableNameRowChanged`, `dataTableNameRowDeleting`et `dataTableNameRowDeleted`. Ces gestionnaires d’événements typés passent un argument qui comprend les noms de colonnes de votre table qui facilitent l’écriture et la lecture de code.
 
 ## <a name="data-update-events"></a>Événements de mise à jour des données
 
-|événement|Description|
+|Event|Description|
 |-----------|-----------------|
 |<xref:System.Data.DataTable.ColumnChanging>|La valeur d’une colonne est en cours de modification. L’événement passe la ligne et la colonne à vous, ainsi que la nouvelle valeur proposée.|
 |<xref:System.Data.DataTable.ColumnChanged>|La valeur d’une colonne a été modifiée. L’événement passe la ligne et la colonne à vous, ainsi que la valeur proposée.|
@@ -73,7 +73,7 @@ Si votre application utilise un DataSet typé, vous pouvez créer des gestionnai
 |<xref:System.Data.DataTable.RowDeleting>|Une ligne est en cours de suppression. L’événement vous transmet la ligne, avec une valeur indiquant le type d’action (suppression) en cours d’exécution.|
 |<xref:System.Data.DataTable.RowDeleted>|Une ligne a été supprimée. L’événement vous transmet la ligne, avec une valeur indiquant le type d’action (suppression) en cours d’exécution.|
 
-Les événements <xref:System.Data.DataTable.ColumnChanging>, <xref:System.Data.DataTable.RowChanging> et <xref:System.Data.DataTable.RowDeleting> sont déclenchés pendant le processus de mise à jour. Vous pouvez utiliser ces événements pour valider des données ou effectuer d’autres types de traitement. Étant donné que la mise à jour est en cours pendant ces événements, vous pouvez l’annuler en levant une exception, ce qui empêche la fin de la mise à jour.
+Les événements <xref:System.Data.DataTable.ColumnChanging>, <xref:System.Data.DataTable.RowChanging>et <xref:System.Data.DataTable.RowDeleting> sont déclenchés pendant le processus de mise à jour. Vous pouvez utiliser ces événements pour valider des données ou effectuer d’autres types de traitement. Étant donné que la mise à jour est en cours pendant ces événements, vous pouvez l’annuler en levant une exception, ce qui empêche la fin de la mise à jour.
 
 Les événements <xref:System.Data.DataTable.ColumnChanged>, <xref:System.Data.DataTable.RowChanged> et <xref:System.Data.DataTable.RowDeleted> sont des événements de notification déclenchés lorsque la mise à jour est terminée. Ces événements sont utiles lorsque vous souhaitez effectuer des actions supplémentaires en fonction d’une mise à jour réussie.
 
@@ -191,7 +191,7 @@ Le passage de la valeur <xref:System.Data.DataRowVersion> avec l’index de colo
 
 - Accédez à la valeur d’une colonne en passant le <xref:System.Data.DataRowVersion> de la ligne que vous souhaitez retourner.
 
-     L’exemple suivant montre comment utiliser une valeur <xref:System.Data.DataRowVersion> pour obtenir la valeur d’origine d’un champ `CompanyName` dans un <xref:System.Data.DataRow> :
+     L’exemple suivant montre comment utiliser une valeur <xref:System.Data.DataRowVersion> pour obtenir la valeur d’origine d’un champ `CompanyName` dans un <xref:System.Data.DataRow>:
 
      [!code-csharp[VbRaddataEditing#21](../data-tools/codesnippet/CSharp/validate-data-in-datasets_6.cs)]
      [!code-vb[VbRaddataEditing#21](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_6.vb)]
@@ -202,7 +202,7 @@ Le passage de la valeur <xref:System.Data.DataRowVersion> avec l’index de colo
 
 - Accédez à la valeur d’une colonne, puis ajoutez un paramètre à l’index qui indique la version d’une ligne que vous souhaitez retourner.
 
-     L’exemple suivant montre comment utiliser une valeur <xref:System.Data.DataRowVersion> pour obtenir la valeur actuelle d’un champ `CompanyName` dans un <xref:System.Data.DataRow> :
+     L’exemple suivant montre comment utiliser une valeur <xref:System.Data.DataRowVersion> pour obtenir la valeur actuelle d’un champ `CompanyName` dans un <xref:System.Data.DataRow>:
 
      [!code-csharp[VbRaddataEditing#22](../data-tools/codesnippet/CSharp/validate-data-in-datasets_7.cs)]
      [!code-vb[VbRaddataEditing#22](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_7.vb)]

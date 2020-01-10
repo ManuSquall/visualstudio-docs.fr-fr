@@ -8,8 +8,8 @@ f1_keywords:
 helpviewer_keywords:
 - surround with
 - code snippets
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
@@ -17,12 +17,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 09f6e2e9b4b89c7e6fd1fe9a342d4fd05b12e7a9
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c06f9f7dc7e5a672e3fd5da3f3fc834fe223a783
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747977"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75585416"
 ---
 # <a name="code-snippets"></a>Extraits de code
 
@@ -31,7 +31,7 @@ Les extraits de code sont de petits blocs de code réutilisables que l’on peut
 > [!NOTE]
 > Cette rubrique s’applique à Visual Studio sur Windows. Pour Visual Studio pour Mac, consultez [Extraits de code (Visual Studio pour Mac)](/visualstudio/mac/snippets).
 
-Les extraits de code sont disponibles dans de nombreux langages : C#, C++, Visual Basic, XML, T-SQL, etc. Pour afficher tous les extraits de code installés disponibles pour une langue, ouvrez **le gestionnaire des extraits de code** à partir du menu **Outils** (ou appuyez sur **ctrl** +**K**, **CTRL** +**B**), puis choisissez la langue dans le menu déroulant. en haut.
+Les extraits de code sont disponibles dans de nombreux langages : C#, C++, Visual Basic, XML, T-SQL, etc. Pour afficher tous les extraits de code installés disponibles pour une langue, ouvrez le **Gestionnaire des extraits de code** à partir du menu **Outils** (ou appuyez sur **CTRL**+**K**, **CTRL**+**B**), puis choisissez la langue dans le menu déroulant en haut.
 
 ![Boîte de dialogue Gestionnaire des extraits de code](media/code-snippets-manager.png)
 
@@ -41,7 +41,7 @@ Pour accéder aux extraits de code, plusieurs méthodes générales s’offrent 
 
 - Dans le menu contextuel (clic droit) de l’éditeur de code, choisissez **Extrait** > **Insérer un extrait**.
 
-- À partir du clavier, appuyez sur **ctrl** +**K**,**CTRL** +**X**
+- À partir du clavier, appuyez sur **ctrl**+**K**,**CTRL**+**X**
 
 ## <a name="expansion-snippets-and-surround-with-snippets"></a>Extraits d’expansion et extraits Entourer de
 
@@ -60,7 +60,7 @@ finally
 }
 ```
 
-Vous pouvez insérer cet extrait de code en cliquant sur **Insérer un extrait** dans le menu contextuel (menu contextuel) de la fenêtre de code, puis sur **visuel C#** , puis tapez `tryf` et appuyez sur la touche **Tab**. Vous pouvez taper `tryf` et appuyer deux fois sur la **touche Tab** .
+Vous pouvez insérer cet extrait de code en cliquant sur **Insérer un extrait** dans le menu contextuel (menu contextuel) de la fenêtre de code, puis sur **visuel C#** , puis tapez `tryf`et appuyez sur la touche **Tab**. Vous pouvez taper `tryf` et appuyer deux fois sur la **touche Tab** .
 
 Exemple d'extrait de code d'encerclement : en C++, le raccourci `if` peut être utilisé comme un extrait d'insertion ou comme un extrait de code d'encerclement. Si vous sélectionnez une ligne de code (par exemple, `return FALSE;`), et que vous choisissez ensuite **Entourer de** > **if**, l’extrait est développé autour de la ligne :
 

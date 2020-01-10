@@ -4,18 +4,18 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
 - CPP
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
 - cplusplus
-ms.openlocfilehash: 33c91a7c21a04624d71692d12b7a7f15a16e1d67
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 2be19729b61831e6f15ff40b6b4e1d7b4b0bb541
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72639501"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586053"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>Outils de données Visual Studio pour C++
 
@@ -41,7 +41,7 @@ Pour tirer parti des fonctionnalités personnalisées de SQL Server 2005 et vers
 
 4. Téléchargez l’exemple de SDK Windows ODBC et décompressez-le vers un nouvel emplacement. Cet exemple montre les commandes ODBC de base qui permettent de se connecter à une base de données et d’émettre des requêtes et des commandes. Vous pouvez en savoir plus sur ces fonctions dans le [Open Database Connectivity Microsoft (ODBC)](/sql/odbc/microsoft-open-database-connectivity-odbc). Lorsque vous chargez la solution pour la première fois ( C++ dans le dossier), Visual Studio vous propose de mettre à niveau la solution vers la version actuelle de Visual Studio. Cliquez sur **Oui**.
 
-5. Pour utiliser Native Client, vous avez besoin de son fichier d' *en-tête* et de son fichier *lib* . Ces fichiers contiennent des fonctions et des définitions spécifiques à SQL Server, au-delà des fonctions ODBC définies dans SQL. h. Dans **Project**  > **Propriétés**  > **Répertoires VC + +** , ajoutez le répertoire include suivant :
+5. Pour utiliser Native Client, vous avez besoin de son fichier d' *en-tête* et de son fichier *lib* . Ces fichiers contiennent des fonctions et des définitions spécifiques à SQL Server, au-delà des fonctions ODBC définies dans SQL. h. Dans **Project** > **Propriétés** > **Répertoires VC + +** , ajoutez le répertoire include suivant :
 
    **%ProgramFiles%\Microsoft SQL Server\110\SDK\Include**
 
@@ -58,7 +58,7 @@ Pour tirer parti des fonctionnalités personnalisées de SQL Server 2005 et vers
 
     Notez que l’exemple n’utilise pas réellement les fonctionnalités Native Client, donc les étapes précédentes ne sont pas nécessaires pour la compilation et l’exécution. Mais le projet est maintenant configuré pour que vous utilisiez cette fonctionnalité. Pour plus d’informations, consultez [Programmation de SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client).
 
-7. Spécifiez le pilote à utiliser dans le sous-système ODBC. L’exemple passe l’attribut de chaîne de connexion du pilote dans en tant qu’argument de ligne de commande. Dans **Project**  > **Propriétés**  >  le**débogage**, ajoutez cet argument de commande :
+7. Spécifiez le pilote à utiliser dans le sous-système ODBC. L’exemple passe l’attribut de chaîne de connexion du pilote dans en tant qu’argument de ligne de commande. Dans **Project** > **Propriétés** > le **débogage**, ajoutez cet argument de commande :
 
    ```cpp
    DRIVER="SQL Server Native Client 11.0"

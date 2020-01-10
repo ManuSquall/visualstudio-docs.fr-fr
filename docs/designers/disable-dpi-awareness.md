@@ -2,16 +2,16 @@
 title: Désactiver la prise en charge DPI dans Visual Studio
 description: Décrit les limitations du Concepteur Windows Forms sur des moniteurs HDPI et explique comment exécuter Visual Studio comme processus sans prise en charge DPI.
 ms.date: 04/05/2019
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.topic: conceptual
-ms.openlocfilehash: a368108f1b8f9682151ed8c7b0a6d8b83b1b8a1f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8e7a5a5871b66fd388d7c5a9f774a22163d06729
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72637404"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589563"
 ---
 # <a name="disable-dpi-awareness-in-visual-studio"></a>Désactiver la prise en charge DPI dans Visual Studio
 
@@ -68,7 +68,7 @@ Vous pouvez marquer Visual Studio comme processus sans prise en charge DPI en mo
 > [!NOTE]
 > Si vous utilisez l’édition Professional ou Enterprise de Visual Studio, remplacez **Community** par **Professional** ou **Enterprise** dans l’entrée. Le cas échéant, remplacez également la lettre de lecteur.
 
-**Type**: REG_SZ
+**Type** : REG_SZ
 
 **Valeur**: DPIUNAWARE
 
@@ -91,7 +91,7 @@ Pour désactiver les notifications, choisissez **Outils** > **Options** afin d�
 
 Pour réactiver par la suite les notifications de mise à l’échelle, affectez la valeur **True** à la propriété.
 
-## <a name="troubleshoot"></a>Résoudre les problèmes
+## <a name="troubleshoot"></a>Dépannage
 
 Si le passage au mode avec prise en charge DPI ne fonctionne pas comme prévu dans Visual Studio, vérifiez si la valeur `dpiAwareness` est présente dans la sous-clé **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\devenv.exe** de l’Éditeur du Registre. Si cette valeur est présente, supprimez-la.
 

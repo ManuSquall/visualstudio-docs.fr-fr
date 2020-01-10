@@ -5,20 +5,20 @@ ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs [text templates], custom host
 - text templates, custom host walkthrough
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 999e8f27a9c60d776d65dc87eb2b42adeec2226c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3d578161d43de68d85f3b7704c9fd69fe4e268ea
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666972"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593536"
 ---
 # <a name="walkthrough-create-a-custom-text-template-host"></a>Procédure pas à pas : créer un hôte de modèle de texte personnalisé
 
@@ -41,7 +41,7 @@ Pour effectuer cette procédure pas à pas, vous devez disposer des éléments s
 
 - Visual Studio 2010 ou version ultérieure
 
-- SDK Visual Studio
+- Kit de développement Visual Studio SDK
 
 ## <a name="create-a-custom-text-template-host"></a>Créer un hôte de modèle de texte personnalisé
 
@@ -51,7 +51,7 @@ Dans cette procédure pas à pas, vous allez créer un hôte personnalisé dans 
 
 2. Ajoutez des références aux assemblys suivants :
 
-   - **Microsoft. VisualStudio. TextTemplating. \*.0**
+   - **Microsoft.VisualStudio.TextTemplating.\*.0**
 
    - **Microsoft. VisualStudio. TextTemplating. interfaces. 10.0 et versions ultérieures**
 
@@ -730,7 +730,7 @@ Pour tester l'hôte personnalisé, vous allez écrire un modèle de texte, puis 
 
      Vous pouvez utiliser n'importe quel éditeur de texte (tel que le Bloc-notes) pour créer le fichier.
 
-2. Ajoutez le code suivant au fichier :
+2. Ajoutez le fragment de code suivant au fichier :
 
     > [!NOTE]
     > Le langage de programmation du modèle de texte ne doit pas nécessairement correspondre à celui de l'hôte personnalisé.
@@ -817,7 +817,7 @@ Pour tester l'hôte personnalisé, vous allez écrire un modèle de texte, puis 
     This is a test
     ```
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 Dans cette procédure pas à pas, vous avez créé un hôte de transformation de modèle de texte qui prend en charge les fonctionnalités de transformation de base. Vous pouvez développer votre hôte pour prendre en charge des modèles de texte qui appellent des processeurs de directive personnalisés ou générés. Pour plus d’informations, consultez [procédure pas à pas : connexion d’un hôte à un processeur de directive généré](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md).
 

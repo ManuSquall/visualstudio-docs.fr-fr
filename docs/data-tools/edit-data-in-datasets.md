@@ -9,17 +9,17 @@ helpviewer_keywords:
 - datasets [Visual Basic], editing data
 - data [Visual Studio], editing in datasets
 ms.assetid: 50d5c580-fbf7-408f-be70-e63ac4f4d0eb
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 98b19d889ab9afc651939b27120ad132d8332c14
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: b51b5b4be12f76e2237ff93659617e1c1843722a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648495"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586651"
 ---
 # <a name="edit-data-in-datasets"></a>Modifier des données dans des datasets
 Vous pouvez modifier des données dans des tables de données de la même façon que vous modifiez les données d’une table dans une base de données. Le processus peut inclure l’insertion, la mise à jour et la suppression d’enregistrements dans la table. Dans un formulaire lié aux données, vous pouvez spécifier les champs modifiables par l’utilisateur. Dans ce cas, l’infrastructure de liaison de données gère l’ensemble du suivi des modifications afin que les modifications puissent être renvoyées ultérieurement à la base de données. Si vous apportez par programmation des modifications aux données et que vous envisagez de les envoyer à la base de données, vous devez utiliser les objets et méthodes qui effectuent le suivi des modifications pour vous.
@@ -42,7 +42,7 @@ Si vous connaissez l’index de ligne, vous pouvez accéder aux lignes et les mo
 ## <a name="to-insert-new-rows-into-a-dataset"></a>Pour insérer de nouvelles lignes dans un jeu de données
 Les applications qui utilisent des contrôles liés aux données ajoutent généralement de nouveaux enregistrements par le biais du bouton **Ajouter un nouveau** sur un [contrôle BindingNavigator](/dotnet/framework/winforms/controls/bindingnavigator-control-windows-forms).
 
-Pour ajouter manuellement de nouveaux enregistrements à un DataSet, créez une nouvelle ligne de données en appelant la méthode sur le DataTable. Ensuite, ajoutez la ligne à la collection de <xref:System.Data.DataRow> (<xref:System.Data.DataTable.Rows%2A>) de la <xref:System.Data.DataTable> :
+Pour ajouter manuellement de nouveaux enregistrements à un DataSet, créez une nouvelle ligne de données en appelant la méthode sur le DataTable. Ensuite, ajoutez la ligne à la collection de <xref:System.Data.DataRow> (<xref:System.Data.DataTable.Rows%2A>) de la <xref:System.Data.DataTable>:
 
 [!code-csharp[VbRaddataEditing#1](../data-tools/codesnippet/CSharp/edit-data-in-datasets_3.cs)]
 [!code-vb[VbRaddataEditing#1](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_3.vb)]
@@ -70,7 +70,7 @@ Lorsque des modifications sont apportées aux enregistrements d’un jeu de donn
 
 Les modifications sont suivies de deux façons dans chaque ligne de données :
 
-- Chaque ligne de données contient des informations relatives à son <xref:System.Data.DataRow.RowState%2A> (par exemple, <xref:System.Data.DataRowState.Added>, <xref:System.Data.DataRowState.Modified>, <xref:System.Data.DataRowState.Deleted> ou <xref:System.Data.DataRowState.Unchanged>).
+- Chaque ligne de données contient des informations relatives à son <xref:System.Data.DataRow.RowState%2A> (par exemple, <xref:System.Data.DataRowState.Added>, <xref:System.Data.DataRowState.Modified>, <xref:System.Data.DataRowState.Deleted>ou <xref:System.Data.DataRowState.Unchanged>).
 
 - Chaque ligne de données modifiée contient plusieurs versions de cette ligne (<xref:System.Data.DataRowVersion>), la version d’origine (avant les modifications) et la version actuelle (après modification). Pendant la période pendant laquelle une modification est en attente (l’heure à laquelle vous pouvez répondre à l’événement <xref:System.Data.DataTable.RowChanging>), une troisième version (la version proposée) est également disponible.
 
@@ -80,7 +80,7 @@ La méthode <xref:System.Data.DataSet.HasChanges%2A> d’un jeu de données reto
 
 - Appelez la méthode <xref:System.Data.DataSet.HasChanges%2A> d’un jeu de données pour rechercher les lignes modifiées.
 
-L’exemple suivant montre comment vérifier la valeur de retour de la méthode <xref:System.Data.DataSet.HasChanges%2A> pour déterminer s’il existe des lignes modifiées dans un dataset nommé `NorthwindDataset1` :
+L’exemple suivant montre comment vérifier la valeur de retour de la méthode <xref:System.Data.DataSet.HasChanges%2A> pour déterminer s’il existe des lignes modifiées dans un dataset nommé `NorthwindDataset1`:
 
 [!code-csharp[VbRaddataEditing#12](../data-tools/codesnippet/CSharp/edit-data-in-datasets_5.cs)]
 [!code-vb[VbRaddataEditing#12](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_5.vb)]
@@ -98,7 +98,7 @@ L’exemple suivant montre comment vérifier un dataset nommé `NorthwindDataset
 [!code-vb[VbRaddataEditing#13](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_6.vb)]
 
 ## <a name="to-locate-rows-that-have-errors"></a>Pour rechercher les lignes qui contiennent des erreurs
-Lorsque vous utilisez des colonnes et des lignes de données individuelles, vous pouvez rencontrer des erreurs. Vous pouvez vérifier la propriété `HasErrors` pour déterminer si des erreurs existent dans une <xref:System.Data.DataSet>, <xref:System.Data.DataTable> ou <xref:System.Data.DataRow>.
+Lorsque vous utilisez des colonnes et des lignes de données individuelles, vous pouvez rencontrer des erreurs. Vous pouvez vérifier la propriété `HasErrors` pour déterminer si des erreurs existent dans une <xref:System.Data.DataSet>, <xref:System.Data.DataTable>ou <xref:System.Data.DataRow>.
 
 1. Vérifiez la propriété `HasErrors` pour voir s’il existe des erreurs dans le jeu de données.
 

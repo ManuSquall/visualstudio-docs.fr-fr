@@ -2,17 +2,17 @@
 title: Directive de sortie T4
 ms.date: 11/04/2016
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1da8ec010e878ff80a9f46748993705b87193d99
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: eb1634da6374ad49f1386be4403e72e8edeff2ca
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72606228"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591812"
 ---
 # <a name="t4-output-directive"></a>Directive de sortie T4
 
@@ -39,7 +39,7 @@ Dans les modèles de texte Visual Studio, la directive `output` est utilisée po
 
  La valeur par défaut est **. cs**
 
- Exemples : `<#@ output extension=".txt" #>`
+ Exemples : `<#@ output extension=".txt" #>`
 
  `<#@ output extension=".htm" #>`
 
@@ -50,7 +50,7 @@ Dans les modèles de texte Visual Studio, la directive `output` est utilisée po
  Valeurs acceptables : toute extension de nom de fichier valide.
 
 ## <a name="encoding-attribute"></a>attribut d’encodage
- Spécifie l'encodage à utiliser lors de la génération du fichier de sortie. Exemple :
+ Spécifie l'encodage à utiliser lors de la génération du fichier de sortie. Par exemple :
 
  `<#@ output encoding="utf-8"#>`
 

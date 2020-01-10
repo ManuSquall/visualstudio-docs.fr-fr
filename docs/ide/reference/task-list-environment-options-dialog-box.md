@@ -17,23 +17,23 @@ helpviewer_keywords:
 - tokens, and the Task List
 - Task List, comment tasks
 ms.assetid: 88327e04-fa3e-48db-995b-ad89e0dc4ed2
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2d0ba45ffea940ddb57a6da1e6df55e3da8867b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 05c337a6e809f85490e651fecf405b44e9f28930
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72644862"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592007"
 ---
 # <a name="options-dialog-box-environment--task-list"></a>Boîte de dialogue Options : \> de l’environnement Liste des tâches
 
 Cette page Options vous permet d’ajouter, de supprimer et de modifier les jetons de commentaire qui génèrent des rappels de la **liste des tâches**. Pour afficher ces paramètres, sélectionnez **Options** dans le menu **Outils**, développez le dossier **Environnement**, puis choisissez **Liste des tâches**.
 
-## <a name="task-list-tokens"></a>Jetons de la Liste des tâches
+## <a name="task-list-tokens"></a>Jetons de la liste des tâches
 
 Quand vous insérez un commentaire dans votre code dont le texte commence par un jeton de la **liste des jetons**, la **Liste des tâches** affiche votre commentaire comme nouvelle entrée chaque fois que le fichier est ouvert pour modification. Cliquez sur une entrée de la **Liste des tâches** pour accéder directement à la ligne de commentaire dans votre code. Pour plus d’informations, consultez [Utilisation de la liste des tâches](../../ide/using-the-task-list.md).
 

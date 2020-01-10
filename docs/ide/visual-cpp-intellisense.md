@@ -2,17 +2,17 @@
 title: IntelliSense pour C++
 ms.date: 10/08/2018
 ms.topic: conceptual
-author: mikeblome
-ms.author: mblome
+author: TerryGLee
+ms.author: tglee
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7a0acaea4cf01d9c0158dfbf6d9feab37238f88f
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
-ms.translationtype: HT
+ms.openlocfilehash: c0d1be12f733a858bf223fb1dce6a091c0dc6c50
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461706"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594212"
 ---
 # <a name="visual-c-intellisense-features"></a>Fonctionnalités IntelliSense pour Visual C++
 
@@ -38,17 +38,17 @@ Pour obtenir la liste des icônes et leurs significations, consultez [Affichage 
 
 ![Fenêtre Compléter le mot de Visual C&#43;&#43;](../ide/media/vs2015_cpp_complete_word.png)
 
-Au premier appel de la liste des membres, seuls les membres accessibles dans le contexte actuel sont affichés. Si vous appuyez ensuite sur **Ctrl**+**J**, elle affiche tous les membres indépendamment de leur accessibilité. Si vous l'appelez une troisième fois, la liste qui s'affiche présente encore plus d'éléments de code. Vous pouvez désactiver la liste des membres dans la boîte de dialogue **Options** sous **Éditeur de texte** > **C/C++**  > **Général**  >  **Répertorier automatiquement les membres**.
+Au premier appel de la liste des membres, seuls les membres accessibles dans le contexte actuel sont affichés. Si vous appuyez ensuite sur **Ctrl**+**J**, elle affiche tous les membres indépendamment de leur accessibilité. Si vous l'appelez une troisième fois, la liste qui s'affiche présente encore plus d'éléments de code. Vous pouvez désactiver la liste des membres dans la boîte de dialogue **Options** sous **Éditeur de texte** > **C/C++**  > **Général** > **Répertorier automatiquement les membres**.
 
 ![Liste de membres Visual C&#43;&#43;](../ide/media/vs2015_cpp_list_members.png)
 
 ## <a name="parameter-help"></a>Aide sur les paramètres
 
-Quand vous tapez une accolade ouvrante dans un appel de fonction, ou un crochet pointu dans une déclaration de variable de modèle de classe, l'éditeur ouvre une petite fenêtre qui affiche les types de paramètre pour chaque surcharge de la fonction ou du constructeur. Le paramètre « actuel »&mdash;basé sur l'emplacement du curseur&mdash;est indiqué en gras. Vous pouvez désactiver les informations de paramètre dans la boîte de dialogue **Options** sous **Éditeur de texte** > **C/C++**  > **Général**  >  **Informations de paramètre**.
+Quand vous tapez une accolade ouvrante dans un appel de fonction, ou un crochet pointu dans une déclaration de variable de modèle de classe, l'éditeur ouvre une petite fenêtre qui affiche les types de paramètre pour chaque surcharge de la fonction ou du constructeur. Le paramètre « actuel »&mdash;basé sur l'emplacement du curseur&mdash;est indiqué en gras. Vous pouvez désactiver les informations de paramètre dans la boîte de dialogue **Options** sous **Éditeur de texte** > **C/C++**  > **Général** > **Informations de paramètre**.
 
 ![Aide sur les paramètres Visual C&#43;&#43;](../ide/media/vs_2015_cpp_param_help.png)
 
-## <a name="quick-info"></a>Info express
+## <a name="quick-info"></a>Infos express
 
 Quand vous placez le curseur sur une variable, une petite fenêtre inline s'affiche, présentant les informations de type et l'en-tête où le type est défini. Placez le curseur sur un appel de fonction pour afficher la signature de la fonction. Vous pouvez désactiver la fonctionnalité Info express dans la boîte de dialogue **Options** sous **Éditeur de texte** > **C/C++**  > **Avancé** > **Info express auto**.
 
@@ -106,5 +106,5 @@ Par défaut, IntelliSense pour fichier unique utilise uniquement les répertoire
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Utilisation de la fonctionnalité IntelliSense](../ide/using-intellisense.md)
+- [Utilisation d’IntelliSense](../ide/using-intellisense.md)
 - [Configurer un projet C++ pour IntelliSense](visual-cpp-intellisense-configuration.md)

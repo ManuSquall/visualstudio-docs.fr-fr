@@ -13,22 +13,22 @@ dev_langs:
 helpviewer_keywords:
 - MSBuild (C++), CustomBuild task
 - CustomBuild task (MSBuild (C++))
-author: mikeblome
-ms.author: mblome
+author: ghogen
+ms.author: ghogen
 ms.workload:
 - multiple
-ms.openlocfilehash: 678068d1b6acc055fa65e6d0305b07152ed28695
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: d95b6e7d4197487adc13050572ac31310701c759
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748112"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595343"
 ---
 # <a name="custombuild-task"></a>Tâche CustomBuild
 
 Encapsule l’outil C++ compilateur Microsoft, cmd. exe. Cette classe est dérivée de [TrackedVCToolTask](../msbuild/trackedvctooltask-base-class.md), mais elle n’utilise pas le suivi de fichiers pour découvrir les dépendances de fichiers. Toutes les dépendances doivent être explicitement spécifiées avec AdditionalDependencies pour que la génération incrémentielle fonctionne correctement.
 
-## <a name="parameters"></a>Paramètres
+## <a name="parameters"></a>Parameters
 
 Le tableau ci-dessous décrit les paramètres de la tâche **CustomBuild**.
 

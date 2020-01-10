@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Déplacer des binaires instrumentés | Microsoft Docs'
+title: 'Comment : déplacer des binaires instrumentés | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,16 +12,17 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 96faf382145d7c4541f1fe66f872ad3622f64631
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: cddbb0b3e27b841441937b7256ea32d722e25f5e
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62539297"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74774898"
 ---
-# <a name="how-to-relocate-instrumented-binaries"></a>Procédure : Déplacer les fichiers binaires instrumentés
+# <a name="how-to-relocate-instrumented-binaries"></a>Guide pratique pour déplacer des binaires instrumentés
 
 Lors de l’instrumentation, des sondes sont insérées dans le fichier binaire pour mesurer les performances de l’application. Quand vous choisissez de déplacer le fichier binaire instrumenté, une copie du fichier binaire d’origine est instrumentée et placée à l’emplacement spécifié. Cette option est utile si vous ne voulez pas que le profileur renomme votre fichier binaire d’origine. Si le fichier binaire n’est pas déplacé, la version d’origine du fichier binaire est remplacée.
 

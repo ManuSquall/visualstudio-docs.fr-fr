@@ -2,17 +2,17 @@
 title: Créer un test codé de l'interface utilisateur
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 268d170926e3a60ba0aa5131795f22bb31cd2ba9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: f1e22a39035e5d3500f4dd45481319e1daecfa04
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659643"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592059"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>Procédure pas à pas : créer, modifier et gérer un test codé de l’interface utilisateur
 
@@ -111,7 +111,7 @@ Dans cette procédure pas à pas, vous allez apprendre à créer, modifier et g�
 2. Recherchez et sélectionnez le modèle de projet **Projet de test codé de l’interface utilisateur** et continuez les étapes jusqu’à ce que le projet soit créé.
 
    > [!NOTE]
-   > Si vous ne voyez pas le modèle **projet de test codé de l’interface utilisateur**, vous devez [installer le composant de test codé de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
+   > Si vous ne voyez pas le modèle **Projet de test codé de l’interface utilisateur**, vous devez [installer le composant de test codé de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
 
      Le nouveau projet de test codé de l’interface utilisateur nommé **CodedUITestProject1** est ajouté à votre solution et la boîte de dialogue **Générer le code pour le test codé de l’interface utilisateur** s’affiche.
 
@@ -331,9 +331,9 @@ Dans cette procédure pas à pas, vous allez apprendre à créer, modifier et g�
 
 ## <a name="videos"></a>Vidéos
 
-![lien vers la vidéo](../data-tools/media/playvideo.gif) [Bien démarrer avec les tests codés de l’interface utilisateur](https://onedrive.live.com/?id=2DB0E1EFE1C1D3B8%21110&cid=2DB0E1EFE1C1D3B8)
+![lien vers la vidéo](../data-tools/media/playvideo.gif) [prise en main des tests codés de l’interface utilisateur](https://onedrive.live.com/?id=2DB0E1EFE1C1D3B8%21110&cid=2DB0E1EFE1C1D3B8)
 
-## <a name="faq"></a>Questions fréquentes (FAQ)
+## <a name="faq"></a>Forum aux questions
 
 [FAQ concernant les tests codés de l’interface utilisateur](https://social.msdn.microsoft.com/Forums/vsautotest/3a74dd2c-cef8-4923-abbf-7a91f489e6c4/faqs)
 

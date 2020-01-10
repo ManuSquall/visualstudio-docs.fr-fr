@@ -1,6 +1,6 @@
 ---
 title: Déboguer des machines virtuelles Azure ASP.NET et des groupes identiques
-description: Découvrez comment définir des snappoints et afficher des instantanés avec le Débogueur de capture instantanée.
+description: Découvrez comment définir des snappoints et afficher des captures instantanées avec le Débogueur de capture instantanée.
 ms.custom: ''
 ms.date: 02/06/2019
 ms.topic: conceptual
@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 52ce973f1521f3ca9ba83513f6711287c49db7bb
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: ef314cf78c685251496274309af91e3bb2108a1b
+ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415757"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75776119"
 ---
 # <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>Déboguer des applications ASP.NET en production sur des machines virtuelles Azure et des groupes de machines virtuelles identiques Azure à l’aide du Débogueur de capture instantanée
 
@@ -33,24 +33,27 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 > * Définir un snappoint et afficher un instantané
 > * Définir un logpoint
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Configuration requise
 
 * Les Débogueur de capture instantanée pour les machines virtuelles Azure et Azure Virtual Machine Scale Sets sont uniquement disponibles pour Visual Studio 2019 Enterprise ou une version ultérieure avec la **charge de travail de développement Azure**. (Dans l’onglet **Composants individuels**, vous le trouverez sous **Débogage et test** > **Débogueur de capture instantanée**.)
 
     S’il n’est pas déjà installé, installez [Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/vs/).
 
-* La collecte d’instantanés est disponible pour les applications Web des groupes de machines virtuelles identiques Azure Machines\Virtual suivants:
+* La collecte d’instantanés est disponible pour les applications Web des groupes de machines virtuelles identiques Azure Machines\Virtual suivants :
   * Applications ASP.NET exécutées sur .NET Framework version 4.6.1 ou ultérieure.
   * Applications ASP.NET Core exécutées sur .NET Core version 2.0 ou ultérieure sur Windows.
 
-## <a name="open-your-project-and-start-the-snapshot-debugger"></a>Ouvrir le projet et lancer le Débogueur de capture instantanée
+  > [!NOTE]
+  >  Visual Studio Enterprise s’exécutant sur Windows 32 bits ne sera pas en mesure d’afficher les instantanés.
 
-1. Ouvrez le projet pour lequel vous souhaitez exécuter le débogage de capture instantanée.
+## <a name="open-your-project-and-start-the-snapshot-debugger"></a>Ouvrir votre projet et démarrer le Débogueur de capture instantanée
+
+1. Ouvrez le projet pour lequel vous souhaitez exécuter le débogage d’instantané.
 
     > [!IMPORTANT]
     > Pour déboguer un instantané, vous devez ouvrir la *même version du code source* qui est publiée sur votre service de groupe de machines virtuelles identiques Azure Machine\Virtual.
 
-1. Choisissez **Déboguer > Joindre le Débogueur de capture instantanée…** . Sélectionnez le jeu de mise à l’échelle de machine virtuelle Azure Machine\Virtual sur lequel votre application Web est déployée et un compte de stockage Azure, puis cliquez sur **attacher**. Débogueur de capture instantanée prend également en charge le [service Azure Kubernetes](debug-live-azure-kubernetes.md) et [Azure App service](debug-live-azure-applications.md).
+1. Choisissez **Déboguer > attacher débogueur de capture instantanée...** . Sélectionnez le jeu de mise à l’échelle de machine virtuelle Azure Machine\Virtual sur lequel votre application Web est déployée et un compte de stockage Azure, puis cliquez sur **attacher**. Débogueur de capture instantanée prend également en charge le [service Azure Kubernetes](debug-live-azure-kubernetes.md) et [Azure App service](debug-live-azure-applications.md).
 
     ![Lancer le Débogueur de capture instantanée à partir du menu Déboguer](../debugger/media/snapshot-debug-menu-attach.png)
 
@@ -70,7 +73,7 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
     > [!NOTE]
     > Pour VMSS, l’utilisateur doit mettre à niveau manuellement les instances dans leur Virtual Machine Scale Sets après avoir attaché le Débogueur de capture instantanée pour la première fois.
 
-    La fenêtre **modules** affiche une fois que tous les modules ont été chargés pour le groupe de machines virtuelles identiques Azure Machine\Virtual (choisissez déboguer **> modules Windows >** pour ouvrir cette fenêtre).
+    La fenêtre **modules** affiche une fois que tous les modules ont été chargés pour le groupe de machines virtuelles identiques Azure Machine\Virtual (choisissez **déboguer > modules Windows >** pour ouvrir cette fenêtre).
 
     ![Fenêtre Vérifier les modules](../debugger/media/snapshot-modules.png)
 
@@ -145,7 +148,7 @@ Nous avons vu comment prendre une capture instantanée lorsqu’un snappoint est
 
     Si **Envoyer au journal des applications** est sélectionné, le message s’affiche partout où apparaissent les messages de `System.Diagnostics.Trace` (ou `ILogger` dans .NET Core), par exemple [App Insights](/azure/application-insights/app-insights-asp-net-trace-logs), lorsque le logpoint est atteint.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 Dans ce tutoriel, vous avez appris comment utiliser le Débogueur de capture instantanée pour les machines virtuelles Azure et les groupes de machines virtuelles identiques Azure. Peut-être souhaitez-vous en savoir plus sur cette fonctionnalité.
 

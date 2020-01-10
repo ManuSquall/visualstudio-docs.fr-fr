@@ -3,17 +3,17 @@ title: Modifier le style des objets
 titleSuffix: Blend for Visual Studio
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 225a9e85493711a1e2903c1f6a632ae68f31136f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f38bfc7a6899ff1d61b8103204bb58df5c5106a6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668828"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592951"
 ---
 # <a name="modify-the-style-of-objects-in-blend-for-visual-studio"></a>Modifier le style des objets dans Blend pour Visual Studio
 
@@ -75,7 +75,7 @@ Dans la boîte de dialogue **Créer une ressource de style**, vous pouvez soit n
 
 > [!NOTE]
 > Vous ne pouvez pas créer de styles ou de modèles pour chaque type de contrôle. Si un contrôle ne les prend pas en charge, le bouton de la barre de navigation ne s’affiche pas au-dessus de la planche graphique.
-> Pour revenir à l’étendue d’édition de votre document principal, cliquez sur **Rétablir l’étendue à** ![Icône Rétablir l’étendue à](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png).
+> Pour revenir à la portée d’édition de votre document principal, cliquez sur l' **étendue de retour pour** ![afficher l’étendue sur l’icône](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png).
 
 ### <a name="apply-a-style-or-template-to-a-control"></a>Appliquer un style ou un modèle à un contrôle
 
@@ -93,7 +93,7 @@ Les états visuels vous permettent de modifier l’apparence d’un contrôle en
 
 ![État de pointage avec la souris](../designers/media/a95c671a-5639-40b9-83db-1e6b214330d5.png)
 
-**Regarder une courte vidéo :** ![Bouton Lecture](../designers/media/bldadminconsoleinitialconfigicon.PNG) [Gérer l’état de vos contrôles WPF](https://www.youtube.com/watch?v=m0PlkF5i6uw).
+**Regardez une brève vidéo :** ![bouton de lecture](../designers/media/bldadminconsoleinitialconfigicon.PNG) [gérer l’état de vos contrôles WPF](https://www.youtube.com/watch?v=m0PlkF5i6uw).
 
 ## <a name="resources-create-colors-styles-and-templates-and-reuse-them-later"></a>Ressources : créer des couleurs, des styles et des modèles et les réutiliser ultérieurement
 

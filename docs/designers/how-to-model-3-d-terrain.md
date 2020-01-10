@@ -3,17 +3,17 @@ title: Guide pratique pour modéliser un terrain 3D
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f779b1fd-82a9-4a11-8ab7-c1c9caabc883
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82ee7791c8356f13ebfdce5ad5bd3ba8be0674d4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a863834790683b229c17ad55b9930a2b382c027b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72635420"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589420"
 ---
 # <a name="how-to-model-3d-terrain"></a>Guide pratique pour modéliser un terrain 3D
 
@@ -29,7 +29,7 @@ Lorsque vous avez terminé, le modèle doit se présenter comme suit :
 
 Avant de commencer, assurez-vous que la fenêtre **Propriétés** et la **Boîte à outils** sont affichées.
 
-1. Créer un modèle 3D avec lequel travailler. Pour plus d’informations sur la façon d’ajouter un modèle à votre projet, consultez la section Bien démarrer de l’article [Éditeur de modèle](../designers/model-editor.md).
+1. Créez un modèle 3D avec lequel travailler. Pour plus d’informations sur la façon d’ajouter un modèle à votre projet, consultez la section Bien démarrer de l’article [Éditeur de modèle](../designers/model-editor.md).
 
 2. Ajoutez un plan à la scène. Dans la **Boîte à outils**, sous **Formes**, sélectionnez **Plan** et déplacez-le vers l’aire de conception.
 

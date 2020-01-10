@@ -9,14 +9,15 @@ ms.assetid: 5c4e8ec3-d0d3-485a-93bd-9060df4eb739
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d0655c0faf57a72d6e99ba65f9f84db059e5fe0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 558cef408ceca48a55563ae31f2399da0e951b8e
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406017"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779751"
 ---
 # <a name="call-tree-view---sampling-data"></a>Vue Arborescence des appels - Données d’échantillonnage
 La vue Arborescence des appels affiche les chemins d’exécution de la fonction empruntés dans l’application profilée.
@@ -39,8 +40,8 @@ La vue Arborescence des appels affiche les chemins d’exécution de la fonction
 |Colonne|Description|
 |------------|-----------------|
 |**ID du processus**|ID du processus (PID) de l'exécution du profilage.|
-|**Nom du processus**|Nom du processus.|
-|**Nom du module**|Nom du module qui contient la fonction.|
+|**Nom du processus**|nom du processus.|
+|**Nom de module**|Nom du module qui contient la fonction.|
 |**Chemin de module**|Chemin d’accès du module qui contient la fonction.|
 |**Fichier source**|Fichier source contenant la définition pour cette fonction.|
 |**Nom de la fonction**|Nom complet de la fonction.|
@@ -48,12 +49,12 @@ La vue Arborescence des appels affiche les chemins d’exécution de la fonction
 |**Adresse de la fonction**|Adresse de la fonction.|
 |**Niveau**|Niveau d’imbrication de cette fonction dans l’arborescence des appels. Uniquement dans les rapports en ligne de commande [VSPerfReport](../profiling/vsperfreport.md).|
 |**Échantillons exclusifs**|Nombre d’échantillons collectés dans cette fonction quand celle-ci a été appelée par la fonction parent dans l’arborescence des appels. Ce nombre n’inclut pas les échantillons collectés dans les fonctions appelées par cette fonction.|
-|**% d’échantillons exclusifs**|Pourcentage de tous les échantillons de l’exécution du profilage qui étaient des échantillons exclusifs de cette fonction lorsque celle-ci a été appelée par la fonction parent dans l’arborescence des appels.|
+|**% d’échantillons exclusifs**|Pourcentage de tous les échantillons de l’exécution du profilage qui étaient des échantillons exclusifs de cette fonction lorsque celle-ci a été appelée par la fonction parent dans l’arborescence des appels.|
 |**Échantillons inclusifs**|Nombre d’échantillons collectés dans cette fonction quand celle-ci a été appelée par la fonction parent dans l’arborescence des appels. Ce nombre inclut les échantillons collectés dans les fonctions appelées par la fonction.|
-|**% des échantillons inclusifs**|Pourcentage de tous les échantillons de l’exécution du profilage qui étaient des échantillons inclusifs de cette fonction lorsque celle-ci a été appelée par la fonction parent dans l’arborescence des appels.|
+|**% d’échantillons inclusifs**|Pourcentage de tous les échantillons de l’exécution du profilage qui étaient des échantillons inclusifs de cette fonction lorsque celle-ci a été appelée par la fonction parent dans l’arborescence des appels.|
 
 ## <a name="see-also"></a>Voir aussi
-- [Guide pratique pour personnaliser les colonnes de vue des rapports](../profiling/how-to-customize-report-view-columns.md)
+- [Comment : personnaliser les colonnes de la vue rapport](../profiling/how-to-customize-report-view-columns.md)
 - [Vue de l’arborescence des appels - Données d’échantillonnage du profileur](../profiling/call-Tree-view-sampling-data.md)
 - [Vue Arborescence des appels - Échantillonnage](../profiling/call-tree-view-dotnet-memory-sampling-data.md)
 - [Vue de l’arborescence des appels - Instrumentation](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)

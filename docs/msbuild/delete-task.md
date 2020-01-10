@@ -13,22 +13,22 @@ helpviewer_keywords:
 - Delete task [MSBuild]
 - MSBuild, Delete task
 ms.assetid: 916bb2e3-3017-4828-ae27-c0b5c99bbb48
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4995d948cc4ad452da1585404987e3feb15e233e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: b89e7238be3440e260e95f305274304e31fe20e7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821102"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567461"
 ---
 # <a name="delete-task"></a>Delete (tâche)
 Supprime les fichiers spécifiés.
 
-## <a name="parameters"></a>Paramètres
+## <a name="parameters"></a>Parameters
 Le tableau ci-dessous décrit les paramètres de la tâche `Delete` .
 
 |Paramètre|Description|
@@ -37,8 +37,8 @@ Le tableau ci-dessous décrit les paramètres de la tâche `Delete` .
 |`Files`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` obligatoire.<br /><br /> Spécifie les fichiers à supprimer.|
 |`TreatErrorsAsWarnings`|Paramètre `Boolean` facultatif.<br /><br /> Si `true`, les erreurs sont consignées en tant qu’avertissements. La valeur par défaut est `false`.|
 
-## <a name="remarks"></a>Remarques
-En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).
+## <a name="remarks"></a>Notes
+En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension> , qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task> . Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Exemple
 L’exemple suivant supprime le fichier *MyApp.pdb*.
@@ -57,5 +57,5 @@ L’exemple suivant supprime le fichier *MyApp.pdb*.
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Tâches](../msbuild/msbuild-tasks.md)
+- [Tâches MSBuild](../msbuild/msbuild-tasks.md)
 - [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)

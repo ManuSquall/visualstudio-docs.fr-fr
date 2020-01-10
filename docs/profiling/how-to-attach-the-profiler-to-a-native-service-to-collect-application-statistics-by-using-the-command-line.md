@@ -1,21 +1,22 @@
 ---
-title: 'VSPerfCmd: Attacher le profileur à un service natif pour obtenir des statistiques d’application'
+title: 'VSPerfCmd : attacher le profileur au service natif pour recevoir les statistiques de l’application'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f783817f-77a0-4eb8-985b-ec3b77eadc42
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 10dfd24a0864cf3f0564e657e22c68a88eb3af8d
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
-ms.translationtype: HT
+ms.openlocfilehash: 00f0d3cedf2ef1875d93f7706f7cfa48a8b6b274
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67033148"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779088"
 ---
-# <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line"></a>Procédure : Attacher le profileur à un service natif et collecter des statistiques d’application en utilisant la ligne de commande
+# <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line"></a>Guide pratique pour attacher le profileur à un service natif et collecter des statistiques d’application en utilisant la ligne de commande
 Cet article explique comment utiliser les outils en ligne de commande des Outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour attacher le profileur à un service natif et collecter des statistiques de performances à l’aide de la méthode d’échantillonnage.
 
 > [!NOTE]
@@ -36,7 +37,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
 2. Ouvrez une fenêtre d’invite de commandes.
 
-3. Démarrez le profileur. Type :
+3. Démarrer le profileur. Type :
 
     **VSPerfCmd /start:sample**  [/output](../profiling/output.md) **:** `OutputFile` [`Options`]
 
@@ -57,7 +58,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
    | [/automark](../profiling/automark.md) **:** `Interval` | À utiliser avec **/wincounter** uniquement. Spécifie le nombre de millisecondes écoulées entre les événements de collecte du compteur de performances Windows. La valeur par défaut est de 500 ms. |
    | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | Spécifie l’événement du Suivi d’événements pour Windows (ETW) qui doit être collecté au cours du profilage. Les événements ETW sont collectés dans un fichier séparé (.etl). |
 
-4. Attachez le profileur au service. Type :
+4. Attachez le profileur au service. Type :
 
     **VSPerfCmd /attach:** `PID` [`Sample Event`]
 
@@ -65,11 +66,11 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
     Par défaut, les données de performances sont échantillonnées tous les 10 000 000 cycles d’horloge ininterrompus du processeur. Ceci correspond environ à une fois toutes les 10 secondes sur un processeur à 1 GHz. Vous pouvez spécifier l’une des options suivantes pour modifier l’intervalle de cycle d’horloge ou pour spécifier un autre événement d’échantillonnage.
 
-   |Événement d’échantillonnage|Description|
+   |Exemple d'événement|Description|
    |------------------|-----------------|
    |[/timer](../profiling/timer.md) **:** `Interval`|Remplace l’intervalle d’échantillonnage par le nombre de cycles d’horloge sans interruption spécifié par `Interval`.|
-   |[/pf](../profiling/pf.md)[ **:** `Interval`]|Remplace l’événement d’échantillonnage par les erreurs de page. Si `Interval` est spécifié, définit le nombre d’erreurs de page entre chaque échantillon. La valeur par défaut est 10.|
-   |[/sys](../profiling/sys-vsperfcmd.md) [ **:** `Interval`]|Remplace l’événement d’échantillonnage par des appels système du processus vers le noyau du système d’exploitation (syscalls). Si `Interval` est spécifié, définit le nombre d’appels entre chaque échantillon. La valeur par défaut est 10.|
+   |[/pf](../profiling/pf.md)[ **:** `Interval`]|Remplace l’événement d’échantillonnage par les erreurs de page. Si `Interval` est spécifié, définit le nombre d’erreurs de page entre chaque échantillon. La valeur par défaut est 10.|
+   |[/sys](../profiling/sys-vsperfcmd.md) [ **:** `Interval`]|Remplace l’événement d’échantillonnage par des appels système du processus vers le noyau du système d’exploitation (syscalls). Si `Interval` est spécifié, définit le nombre d’appels entre chaque échantillon. La valeur par défaut est 10.|
    |[/counter](../profiling/counter.md) **:** `Config`|Remplace l’événement et l’intervalle d’échantillonnage par le compteur de performances du processeur et l’intervalle spécifiés dans `Config`.|
 
 ## <a name="control-data-collection"></a>Contrôler la collecte des données
@@ -94,11 +95,11 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
     - Arrêtez le service.
 
-         -ou-
+         \- ou -
 
     - Tapez **VSPerfCmd /detach**
 
-2. Fermez le profileur. Type :
+2. Fermez le profileur. Type :
 
      **VSPerfCmd /shutdown**
 

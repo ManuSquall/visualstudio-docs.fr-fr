@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - Build options [C#], advanced
 ms.assetid: 141f2dee-1563-4ce6-ba37-32920b082519
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 78817f65197c2dd295a6f2202f913c48b54e1ed9
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f25f9d96cd8de8dcb140c79c7dfb3a7a5981986c
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748807"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595850"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>Paramètres de build avancés, boîteC#de dialogue ()
 
@@ -56,13 +56,13 @@ Spécifie si une instruction arithmétique entière hors de portée des mots cl�
 
 Spécifie si mscorlib.dll doit être importé dans votre programme, en définissant l’intégralité de l’espace de noms <xref:System>. Cochez cette case pour définir ou créer vos propres objets et espaces de noms <xref:System>. Pour plus d’informations, consultez l’article [/nostdlib (C# Compiler Options) (/nostdlib [Options du compilateur C#])](/dotnet/csharp/language-reference/compiler-options/nostdlib-compiler-option).
 
-## <a name="output"></a>Sortie
+## <a name="output"></a>Output
 
 Les options suivantes permettent de spécifier des options de sortie avancées.
 
 **Informations de débogage**
 
-Indique le type d'informations de débogage générées par le compilateur. Pour plus d’informations sur la configuration des performances de débogage d’une application, consultez [Simplification du débogage d’une image](/dotnet/framework/debug-trace-profile/making-an-image-easier-to-debug). Ce paramètre a les options suivantes :
+Indique le type d'informations de débogage générées par le compilateur. Pour plus d’informations sur la configuration des performances de débogage d’une application, consultez [Simplification du débogage d’une image](/dotnet/framework/debug-trace-profile/making-an-image-easier-to-debug). Ce paramètre est assorti des options suivantes :
 
 - **none**
 
@@ -92,7 +92,7 @@ Spécifie la taille des sections dans le fichier de sortie. Les valeurs valides 
 
 **Adresse de base de la bibliothèque**
 
-Spécifie l'adresse de base préférée à laquelle charger une DLL. L’adresse de base par défaut d’une DLL est définie par le Common Language Runtime (CLR) .NET Framework. Pour plus d’informations, consultez l’article [/baseaddress (C# Compiler Options) (/baseaddress [Options du compilateur C#])](/dotnet/csharp/language-reference/compiler-options/baseaddress-compiler-option).
+Spécifie l'adresse de base préférée à laquelle charger une DLL. L’adresse de base par défaut d’une DLL est définie par le Common Language Runtime (CLR) .NET Framework. Pour plus d’informations, consultez [/baseaddress (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/baseaddress-compiler-option).
 
 ## <a name="see-also"></a>Voir aussi
 

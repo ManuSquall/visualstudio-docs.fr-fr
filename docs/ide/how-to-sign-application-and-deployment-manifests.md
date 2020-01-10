@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Signer des manifestes d’application et de déploiement'
+title: Guide pratique pour signer des manifestes d’application et de déploiement
 ms.date: 11/04/2016
 ms.technology: vs-ide-deployment
 ms.topic: conceptual
@@ -13,19 +13,19 @@ helpviewer_keywords:
 - key files [Visual Studio]
 - assemblies [Visual Studio], signing
 ms.assetid: 64173505-8bfb-41cf-a0de-b9075173f3a2
-author: mikejo5000
-ms.author: mikejo
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2edc0e1e63a716f5e2e649660a9b0333ec8bc923
-ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
+ms.openlocfilehash: fbf25301095ac5ff438514c37f61337e46342860
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71079368"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596162"
 ---
-# <a name="how-to-sign-application-and-deployment-manifests"></a>Procédure : Signer des manifestes d’application et de déploiement
+# <a name="how-to-sign-application-and-deployment-manifests"></a>Guide pratique pour signer des manifestes d’application et de déploiement
 
 Si vous souhaitez publier une application à l’aide du déploiement ClickOnce, vous devez signer les manifestes d’application et de déploiement avec une paire de clés publique/privée et à l’aide de la technologie Authenticode. Vous pouvez signer les manifestes à l’aide d’un certificat à partir du magasin de certificats Windows ou d’un fichier de clé.
 
@@ -33,7 +33,7 @@ Pour plus d’informations sur le déploiement ClickOnce, consultez [Sécurité 
 
 La signature des manifestes ClickOnce est facultative pour les applications *.exe*. Pour plus d’informations, consultez la section « Générer des manifestes non signés » de ce document.
 
-Pour plus d’informations sur la création des fichiers de clés, consultez [Guide pratique pour créer une paire de clés publique/privée](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair).
+Pour plus d’informations sur la création de fichiers de clés, consultez [Guide pratique pour créer une paire de clés publique/privée](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair).
 
 > [!NOTE]
 > Visual Studio prend uniquement en charge les fichiers de clés PFX (Personal Information Exchange) ayant l’extension *.pfx*. Toutefois, vous pouvez sélectionner d’autres types de certificats à partir du magasin de certificats Windows de l’utilisateur actuel en cliquant sur **Sélectionner dans Store** dans la page **Signature** des propriétés du projet.
@@ -71,7 +71,7 @@ Pour plus d’informations sur la création des fichiers de clés, consultez [Gu
 4. Entrez le mot de passe pour accéder au fichier de clé, puis sélectionnez **Entrée**.
 
 > [!NOTE]
-> Le fichier *.pfx* ne peut pas inclure d’informations de chaînage des certificats. Si c’est le cas, l’erreur d’importation suivante se produit : **Impossible de trouver le certificat et la clé privée pour le déchiffrement**. Pour supprimer les informations de chaînage de certificats, vous pouvez utiliser *Certmgr. msc* et [désactiver l’option](/previous-versions/aa730868(v=vs.80)) permettant d' **inclure tous les certificats** lors de l’exportation du fichier *. pfx.
+> Le fichier *.pfx* ne peut pas inclure d’informations de chaînage des certificats. Si c’est le cas, l’erreur d’importation suivante se produit : **le certificat et la clé privée sont introuvables pour le déchiffrement**. Pour supprimer les informations de chaînage de certificats, vous pouvez utiliser *Certmgr. msc* et [désactiver l’option](/previous-versions/aa730868(v=vs.80)) permettant d' **inclure tous les certificats** lors de l’exportation du fichier *. pfx.
 
 ## <a name="sign-using-a-test-certificate"></a>Signer en utilisant un certificat de test
 
@@ -96,7 +96,7 @@ Par défaut, ClickOnce génère automatiquement des manifestes signés, sauf si 
 
 2. Dans la page **Signature**, décochez la case **Signer les manifestes ClickOnce**.
 
-3. Redéfinissez la version de publication afin qu’une seule version de votre application soit disponible. Par défaut, Visual Studio incrémente automatiquement le numéro de révision de la version de publication chaque fois que vous publiez une application. Pour plus d'informations, voir [Procédure : Définir la version de publication ClickOnce](../deployment/how-to-set-the-clickonce-publish-version.md).
+3. Redéfinissez la version de publication afin qu’une seule version de votre application soit disponible. Par défaut, Visual Studio incrémente automatiquement le numéro de révision de la version de publication chaque fois que vous publiez une application. Pour plus d’informations, consultez [Guide pratique pour définir la version de publication ClickOnce](../deployment/how-to-set-the-clickonce-publish-version.md).
 
 4. Publiez l'application.
 

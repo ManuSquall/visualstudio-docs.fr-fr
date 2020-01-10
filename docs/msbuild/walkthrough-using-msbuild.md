@@ -1,23 +1,23 @@
 ---
-title: 'Procédure pas à pas : Utilisation de MSBuild | Microsoft Docs'
+title: 'Procédure pas à pas : utilisation de MSBuild | Microsoft Docs'
 ms.date: 03/20/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, tutorial
 ms.assetid: b8a8b866-bb07-4abf-b9ec-0b40d281c310
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee57e0fb78eadce226a7fa8371d395181c6060a1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d874d8b9c96cc8cc58466bb42d8ac189e1aabc11
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445294"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75567292"
 ---
-# <a name="walkthrough-use-msbuild"></a>Procédure pas à pas : Utiliser MSBuild
+# <a name="walkthrough-use-msbuild"></a>Procédure pas à pas : utiliser MSBuild
 
 MSBuild est la plateforme de génération pour Microsoft et Visual Studio. Cette procédure pas à pas vous présente les blocs de construction de MSBuild, et vous indique comment écrire, manipuler et déboguer des projets MSBuild. Vous allez découvrir comment :
 
@@ -38,14 +38,14 @@ Vous pouvez exécuter MSBuild à partir de Visual Studio ou à partir de la **f
 1. Ouvrez Visual Studio et créez un projet.
 
     ::: moniker range=">=vs-2019"
-    Appuyez sur **Échap** pour fermer la fenêtre de démarrage. Tapez **Ctrl+Q** pour ouvrir la zone de recherche, tapez **winforms**, puis choisissez **Créer une application Windows Forms (.NET Framework)**. Dans la boîte de dialogue qui apparaît, choisissez **Créer**.
+    Appuyez sur **Échap** pour fermer la fenêtre de démarrage. Tapez **Ctrl+Q** pour ouvrir la zone de recherche, tapez **winforms**, puis choisissez **Créer une application Windows Forms (.NET Framework)** . Dans la boîte de dialogue qui apparaît, choisissez **Créer**.
 
-    Dans la zone **Nom** , tapez `BuildApp`. Entrez un **Emplacement** pour la solution, par exemple, *D :\\*. Acceptez les valeurs par défaut de **Solution**, **Nom de la solution** (**BuildApp**) et **Framework**.
+    Dans la zone **Nom**, tapez `BuildApp`. Entrez un **Emplacement** pour la solution, par exemple, *D :\\* . Acceptez les valeurs par défaut de **Solution**, **Nom de la solution** (**BuildApp**) et **Framework**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**. Dans le volet gauche de la boîte de dialogue **Nouveau projet**, développez **Visual C#** > **Windows Desktop**, puis choisissez **Application Windows Forms (.NET Framework)**. Choisissez ensuite **OK**.
+    Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**. Dans le volet gauche de la boîte de dialogue **Nouveau projet**, développez **Visual C#**  > **Windows Desktop**, puis choisissez **Application Windows Forms (.NET Framework)** . Choisissez ensuite **OK**.
 
-    Dans la zone **Nom** , tapez `BuildApp`. Entrez un **Emplacement** pour la solution, par exemple, *D :\\*. Acceptez les valeurs par défaut des options **Créer le répertoire pour la solution** (sélectionnée), **Ajouter au contrôle de code source** (non sélectionnée) et **Nom de la solution** (**BuildApp**).
+    Dans la zone **Nom**, tapez `BuildApp`. Entrez un **Emplacement** pour la solution, par exemple, *D :\\* . Acceptez les valeurs par défaut des options **Créer le répertoire pour la solution** (sélectionnée), **Ajouter au contrôle de code source** (non sélectionnée) et **Nom de la solution** (**BuildApp**).
     ::: moniker-end
 
 1. Cliquez sur **OK** ou **Créer** pour créer le fichier projet.
@@ -175,7 +175,7 @@ La tâche Message prend la valeur de chaîne de l’attribut Text en tant qu’e
 </PropertyGroup>
 ```
 
- Toutes les propriétés sont des éléments enfants des éléments PropertyGroup. Le nom de la propriété est le nom de l’élément enfant, et la valeur de la propriété est l’élément de texte de l’élément enfant. Par exemple :
+ Toutes les propriétés sont des éléments enfants des éléments PropertyGroup. Le nom de la propriété est le nom de l’élément enfant, et la valeur de la propriété est l’élément de texte de l’élément enfant. Par exemple :
 
 ```xml
 <TargetFrameworkVersion>v15.0</TargetFrameworkVersion>
@@ -243,7 +243,7 @@ $(PropertyName)
 
 ### <a name="conditional-properties"></a>Propriétés conditionnelles
 
- Plusieurs propriétés, comme la propriété Configuration, sont définies de manière conditionnelle, autrement dit, l’attribut Condition s’affiche dans l’élément de propriété. Les propriétés conditionnelles sont définies ou redéfinies uniquement si la condition a la valeur « true ». Notez que les propriétés non définies ont la valeur par défaut d’une chaîne vide. Par exemple :
+ Plusieurs propriétés, comme la propriété Configuration, sont définies de manière conditionnelle, autrement dit, l’attribut Condition s’affiche dans l’élément de propriété. Les propriétés conditionnelles sont définies ou redéfinies uniquement si la condition a la valeur « true ». Notez que les propriétés non définies ont la valeur par défaut d’une chaîne vide. Par exemple :
 
 ```xml
 <Configuration   Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -255,11 +255,11 @@ $(PropertyName)
 
 ### <a name="reserved-properties"></a>Propriétés réservées
 
- MSBuild réserve certains noms de propriété pour stocker des informations sur le fichier projet et les binaires de MSBuild. MSBuildToolsPath est un exemple de propriété réservée. Les propriétés réservées sont référencées avec la notation $ comme toute autre propriété. Pour plus d'informations, voir [Procédure : Référencer le nom ou l’emplacement du fichier projet](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) et [Propriétés réservées et connues de MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md).
+ MSBuild réserve certains noms de propriété pour stocker des informations sur le fichier projet et les binaires de MSBuild. MSBuildToolsPath est un exemple de propriété réservée. Les propriétés réservées sont référencées avec la notation $ comme toute autre propriété. Pour plus d’informations, consultez [Guide pratique pour référencer le nom ou l’emplacement du fichier projet](../msbuild/how-to-reference-the-name-or-location-of-the-project-file.md) et [Propriétés réservées et connues de MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md).
 
-### <a name="environment-variables"></a>Variables d’environnement
+### <a name="environment-variables"></a>Variables d'environnement
 
- Vous pouvez référencer des variables d’environnement dans les fichiers projet de la même façon que les propriétés de génération. Par exemple, pour utiliser la variable d’environnement PATH dans votre fichier projet, utilisez $(Path). Si le projet contient une définition de propriété qui porte le même nom qu’une variable d’environnement, la propriété du projet remplace la valeur de la variable d’environnement. Pour plus d'informations, voir [Procédure : Utiliser des variables d’environnement dans une build](../msbuild/how-to-use-environment-variables-in-a-build.md).
+ Vous pouvez référencer des variables d’environnement dans les fichiers projet de la même façon que les propriétés de génération. Par exemple, pour utiliser la variable d’environnement PATH dans votre fichier projet, utilisez $(Path). Si le projet contient une définition de propriété qui porte le même nom qu’une variable d’environnement, la propriété du projet remplace la valeur de la variable d’environnement. Pour plus d’informations, consultez [Guide pratique pour utiliser des variables d’environnement dans une build](../msbuild/how-to-use-environment-variables-in-a-build.md).
 
 ## <a name="set-properties-from-the-command-line"></a>Définir les propriétés à partir de la ligne de commande
 
@@ -315,7 +315,7 @@ Pour plus d’informations, consultez l’article [Caractères spéciaux MSBuild
 
  Un élément est une information, généralement un nom de fichier, qui est utilisée comme entrée dans le système de génération. Par exemple, une collection d’éléments représentant des fichiers sources peut être transmise à une tâche nommée Compile pour les compiler dans un assembly.
 
- Tous les éléments sont des éléments enfants des éléments ItemGroup. Le nom de l’élément est le nom de l’élément enfant, et la valeur de l’élément est la valeur de l’attribut Include de l’élément enfant. Les valeurs des éléments du même nom sont collectées dans les types d’élément de ce nom.  Par exemple :
+ Tous les éléments sont des éléments enfants des éléments ItemGroup. Le nom de l’élément est le nom de l’élément enfant, et la valeur de l’élément est la valeur de l’attribut Include de l’élément enfant. Les valeurs des éléments du même nom sont collectées dans les types d’élément de ce nom.  Par exemple :
 
 ```xml
 <ItemGroup>
@@ -324,7 +324,7 @@ Pour plus d’informations, consultez l’article [Caractères spéciaux MSBuild
 </ItemGroup>
 ```
 
- définit un groupe de deux éléments. Le type d’élément Compile a deux valeurs : *Program.cs* et *Properties\AssemblyInfo.cs*.
+ définit un groupe de deux éléments. Le type d’élément Compile possède deux valeurs : *Program.cs* et *Properties\AssemblyInfo.cs*.
 
  Le code suivant crée le même type d’élément en déclarant les deux fichiers dans un attribut Include, séparés par un point-virgule.
 
@@ -411,7 +411,7 @@ Modifiez la tâche Message afin d’utiliser des retours chariot et des sauts de
     ```
 
 ### <a name="include-exclude-and-wildcards"></a>Caractères génériques et attributs Include et Exclude
- Vous pouvez utiliser les caractères génériques « * », « \*\* » et « ? » avec l’attribut Include pour ajouter des éléments à un type d’élément. Par exemple :
+ Vous pouvez utiliser les caractères génériques « * », « \*\* » et « ? » avec l’attribut Include pour ajouter des éléments à un type d’élément. Par exemple :
 
 ```xml
 <Photos Include="images\*.jpeg" />
@@ -423,9 +423,9 @@ Modifiez la tâche Message afin d’utiliser des retours chariot et des sauts de
 <Photos Include="images\**\*.jpeg" />
 ```
 
- ajoute tous les fichiers pourvus de l’extension de fichier *.jpeg* du dossier *images* et de l’ensemble de ses sous-dossiers, au type d’élément Photos. Pour plus d'exemples, consultez [Procédure : Sélectionner des fichiers dans une build](../msbuild/how-to-select-the-files-to-build.md).
+ ajoute tous les fichiers pourvus de l’extension de fichier *.jpeg* du dossier *images* et de l’ensemble de ses sous-dossiers, au type d’élément Photos. Pour plus d’informations, consultez [Guide pratique pour sélectionner des fichiers dans une build](../msbuild/how-to-select-the-files-to-build.md).
 
- Notez que les éléments sont ajoutés au type d’élément à mesure qu’ils sont déclarés. Par exemple :
+ Notez que les éléments sont ajoutés au type d’élément à mesure qu’ils sont déclarés. Par exemple :
 
 ```xml
 <Photos Include="images\*.jpeg" />
@@ -438,15 +438,15 @@ Modifiez la tâche Message afin d’utiliser des retours chariot et des sauts de
 <Photos Include="images\*.jpeg;images\*.gif" />
 ```
 
- Vous pouvez exclure un élément d’un type d’élément avec l’attribut Exclude. Par exemple :
+ Vous pouvez exclure un élément d’un type d’élément avec l’attribut Exclude. Par exemple :
 
 ```xml
 <Compile Include="*.cs" Exclude="*Designer*">
 ```
 
- ajoute tous les fichiers portant l’extension de fichier  *.cs* au type d’élément Compile, à l’exception des fichiers dont les noms contiennent la chaîne *Designer*. Pour plus d'exemples, consultez [Procédure : Exclure des fichiers de la build](../msbuild/how-to-exclude-files-from-the-build.md).
+ ajoute tous les fichiers portant l’extension de fichier  *.cs* au type d’élément Compile, à l’exception des fichiers dont les noms contiennent la chaîne *Designer*. Pour plus d’exemples, consultez [Guide pratique pour exclure des fichiers de la build](../msbuild/how-to-exclude-files-from-the-build.md).
 
-L’attribut Exclude affecte uniquement les éléments ajoutés par l’attribut Include dans l’élément Item qui les contient. Par exemple :
+L’attribut Exclude affecte uniquement les éléments ajoutés par l’attribut Include dans l’élément Item qui les contient. Par exemple :
 
 ```xml
 <Compile Include="*.cs" />
@@ -600,7 +600,7 @@ Notez que les métadonnées exprimées dans cette syntaxe ne provoquent pas le t
 
 ## <a name="whats-next"></a>Étapes suivantes
 
- Pour découvrir comment créer pas à pas un fichier projet simple, consultez la [Procédure pas à pas : Création d’un fichier projet MSBuild à partir de zéro](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).
+ Pour découvrir comment créer pas à pas un fichier projet simple, consultez la [Procédure pas à pas : création d’un fichier projet MSBuild à partir de zéro](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md).
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff8c43e42d63208c1119f1f545697a57173fdd7a
-ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
+ms.openlocfilehash: 615b112c8ad3e35449a1e3a6c2817db9c7699a73
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72313963"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589979"
 ---
 # <a name="step-6-name-your-button-controls"></a>Étape 6 : affecter un nom à vos contrôles bouton
 
@@ -74,7 +74,7 @@ Onglet ***Form1.cs*** *avec C# code*
 1. Pour ajouter une méthode, ouvrez le fichier de code du contrôle **CheckBox** dans le **Concepteur Windows Forms** pour que l’IDE ajoute une méthode `checkBox1_CheckedChanged()`. Cette méthode est appelée chaque fois que l’utilisateur active ou désactive la case à cocher.
 
    > [!TIP]
-   > Lorsque vous travaillez sur une application, vous passez souvent de l’éditeur de code à l' **Concepteur Windows Forms**. L’IDE vous permet de naviguer facilement dans votre projet. Utilisez **Explorateur de solutions** pour ouvrir **Concepteur Windows Forms** en double-cliquant sur Form1.cs C# dans ou *Formulaire1. vb* dans Visual Basic, ou dans la barre de menus, choisissez **Afficher** > **Designer**.
+   > Lorsque vous travaillez sur une application, vous passez souvent de l’éditeur de code à l' **Concepteur Windows Forms**. L’IDE vous permet de naviguer facilement dans votre projet. Utilisez **Explorateur de solutions** pour ouvrir **Concepteur Windows Forms** en double-cliquant sur Form1.cs C# dans ou sur *Form1. vb* dans Visual Basic, ou dans la barre de menus, choisissez **Afficher** les > **Designer**.
 
     Les éléments suivants montrent le nouveau code qui est affiché dans l’éditeur de code.
 
@@ -97,7 +97,7 @@ Onglet ***Form1.cs*** *avec C# code*
 
     Si vous décidez de modifier un nom de variable de code, cliquez avec le bouton droit sur la variable dans le code, puis choisissez **Refactoriser** > **Renommer**. Toutes les instances de cette variable dans le code sont renommées. Pour plus d’informations, consultez [refactorisation de changement de nom](../ide/reference/rename.md).
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 * Pour passer à l’étape suivante du didacticiel, consultez **[étape 7 : ajouter des composants de boîte de dialogue à votre formulaire](../ide/step-7-add-dialog-components-to-your-form.md)** .
 

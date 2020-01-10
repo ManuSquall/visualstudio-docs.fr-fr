@@ -46,5 +46,5 @@ HRESULT PrepareProfilerStop();
  L’appel de `IActiveScriptProfilerControl2::PrepareProfilerStop` garantit que les événements pour les fonctions de la pile des appels sont envoyés. Cette méthode doit être appelée avant d’arrêter le profilage sur un moteur de script qui se trouve sous l’onglet actuel. La méthode peut être appelée pour tout moteur de script.  
   
 ## <a name="see-also"></a>Voir aussi  
- [IActiveScriptProfilerControl2 :: CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md)    
+ [IActiveScriptProfilerControl2::CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md)   
  [Interface IActiveScriptProfilerControl2](../../winscript/reference/iactivescriptprofilercontrol2-interface.md)

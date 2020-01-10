@@ -10,17 +10,17 @@ helpviewer_keywords:
 - code generation
 - text templates
 - generating code
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8d3684ac79ce0dde8641e11a455238d927f2adb
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f0eba8b4850ee845414084ef766fce30f9efd7e6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748508"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597202"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>Génération de code et modèles de texte T4
 
@@ -42,7 +42,7 @@ Remarquez que le modèle ressemble à la sortie générée. La ressemblance du m
 
 De plus, le modèle contient des fragments de code du programme. Vous pouvez utiliser ces fragments pour répéter des sections de texte, organiser des sections conditionnelles et afficher des données de votre application.
 
-Pour générer la sortie, votre application appelle une fonction générée par le modèle. Exemple :
+Pour générer la sortie, votre application appelle une fonction générée par le modèle. Par exemple :
 
 ```csharp
 string webResponseText = new MyTemplate().TransformText();

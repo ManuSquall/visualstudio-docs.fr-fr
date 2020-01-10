@@ -8,14 +8,15 @@ ms.assetid: 36f5b4de-5686-4f40-9e72-f4aee27d833c
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: f3e07510f38c18f7d8e4a52d788935400b5a9388
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 50e278e858ea086c83b29ef4eebf6b48ee8e477e
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62776742"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74773307"
 ---
 # <a name="callercallee-view---net-memory-sampling-data"></a>Vue Appelant/Appelé - Données d’échantillonnage de la mémoire .NET
 La vue Appelant/Appelé affiche des données de profilage de mémoire .NET pour la fonction sélectionnée, ainsi que pour ses fonctions parents et enfants. La vue Appelant/Appelé comprend trois grilles.
@@ -31,8 +32,8 @@ La vue Appelant/Appelé affiche des données de profilage de mémoire .NET pour 
 |Colonne|Description|
 |------------|-----------------|
 |**ID du processus**|ID du processus (PID) de l'exécution du profilage.|
-|**Nom du processus**|Nom du processus.|
-|**Nom du module**|Nom du module qui contient la fonction.|
+|**Nom du processus**|nom du processus.|
+|**Nom de module**|Nom du module qui contient la fonction.|
 |**Chemin de module**|Chemin d’accès du module qui contient la fonction.|
 |**Fichier source**|Fichier source contenant la définition pour cette fonction.|
 |**Nom de la fonction**|Nom complet de la fonction.|
@@ -50,7 +51,7 @@ La vue Appelant/Appelé affiche des données de profilage de mémoire .NET pour 
 |**% d’octets exclusifs**|Pourcentage de tous les octets de mémoire alloués lors de l’exécution du profilage qui étaient des allocations exclusives de cette fonction.|
 
 ## <a name="see-also"></a>Voir aussi
-- [Guide pratique pour personnaliser les colonnes de vue des rapports](../profiling/how-to-customize-report-view-columns.md)
+- [Comment : personnaliser les colonnes de la vue rapport](../profiling/how-to-customize-report-view-columns.md)
 - [Vue Appelant/Appelé - Données d’instrumentation de la mémoire .NET](../profiling/caller-callee-view-net-memory-instrumentation-data.md)
 - [Vue Appelant/Appelé - Données d’échantillonnage](../profiling/caller-callee-view-sampling-data.md)
 - [Vue Appelant/appelé - Données d’instrumentation](../profiling/caller-callee-view-instrumentation-data.md)

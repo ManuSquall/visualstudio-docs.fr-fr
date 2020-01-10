@@ -21,18 +21,18 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 10/18/2019
 ms.locfileid: "72576510"
 ---
-# <a name="expected-"></a>' @No__t_0 'attendu
-Vous avez tenté de créer une variable à utiliser avec des instructions de compilation conditionnelle à l’aide de l’instruction `@set`, mais n’avez pas placé un arobase « **@** » avant le nom de la variable.  
+# <a name="expected-"></a>'\@'attendu
+Vous avez tenté de créer une variable qui doit être utilisé avec les instructions de compilation conditionnelle à l’aide de la `@set` instruction, mais ne pas placer une arobase « **@** » avant le nom de variable.  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
-- Ajoutez un arobase « **@** » immédiatement avant le nom de la variable. Exemple :  
+- Ajouter un signe « **@** « juste avant le nom de variable. Exemple :  
   
     ```JavaScript  
     @set @myvar = 1  
     ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [instruction @set](../../javascript/reference/at-set-statement-javascript.md)    
- @No__t_1 de [compilation conditionnelle](../../javascript/advanced/conditional-compilation-javascript.md)  
+ [instruction@set](../../javascript/reference/at-set-statement-javascript.md)   
+   de [compilation conditionnelle](../../javascript/advanced/conditional-compilation-javascript.md)  
  [Variables de compilation conditionnelle](../../javascript/advanced/conditional-compilation-variables-javascript.md)

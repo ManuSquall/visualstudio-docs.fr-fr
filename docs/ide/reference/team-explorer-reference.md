@@ -5,20 +5,20 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 ms.manager: jillfra
-ms.openlocfilehash: 6a7c1e9d0f5e8b8ef48a033d58038818d2d620e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: b1a956579b527de9df9d24bd09dda6ae48eff961
+ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945074"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74538573"
 ---
 # <a name="team-explorer-reference"></a>Informations de référence sur Team Explorer
 
 Cet article fournit des liens vers des articles Azure DevOps sur les diverses fonctions proposées dans **Team Explorer**.
 
-Utilisez la fenêtre de l’outil **Team Explorer** pour coordonner vos efforts de codage avec d’autres membres d’équipe afin de développer un projet, et pour gérer le travail assigné à vous-même, à votre équipe ou à vos projets. **Team Explorer** connecte Visual Studio aux dépôts Git et GitHub, aux référentiels Team Foundation Version Control (TFVC) et aux projets hébergés sur [Azure DevOps Services](/azure/devops/user-guide/what-is-azure-devops-services) ou un serveur [Azure DevOps Server](/tfs/index) sur site (anciennement appelé TFS). Vous pouvez gérer le code source, les éléments de travail et les générations.
+Utilisez la fenêtre de l’outil **Team Explorer** pour coordonner vos efforts de codage avec d’autres membres d’équipe afin de développer un projet, et pour gérer le travail assigné à vous-même, à votre équipe ou à vos projets. **Team Explorer** connecte Visual Studio aux dépôts Git et GitHub, aux référentiels Team Foundation Version Control (TFVC) et aux projets hébergés sur [Azure DevOps Services](/azure/devops/user-guide/what-is-azure-devops-services) ou un serveur [Azure DevOps Server](/azure/devops/index-all) sur site (anciennement appelé TFS). Vous pouvez gérer le code source, les éléments de travail et les générations.
 
-## <a name="home-page"></a>page d'accueil
+## <a name="home-page"></a>Page d'accueil
 
 Une fois que vous vous êtes [connecté à un projet](../connect-team-project.md) dans **Team Explorer**, les liens suivants sont disponibles dans la section **Projet** :
 

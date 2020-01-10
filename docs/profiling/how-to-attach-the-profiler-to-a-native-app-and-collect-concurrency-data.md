@@ -7,16 +7,17 @@ ms.assetid: 12d3e0f3-4b74-4e66-8fbf-8ac99bd4f91c
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 180c520b3bec53610f539ecb8ac21f86b5c5aa38
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: 367c91035f5d37bd8b0c20f1df84c7a2ee2d487a
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261444"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74776925"
 ---
-# <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-concurrency-data-by-using-the-command-line"></a>Procédure : Attacher le profileur à une application autonome native et collecter des données concurrentielles en utilisant la ligne de commande
+# <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-concurrency-data-by-using-the-command-line"></a>Guide pratique pour attacher le profileur à une application autonome native et collecter des données de concurrence en utilisant la ligne de commande
 Cet article explique comment utiliser les outils en ligne de commande des Outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour attacher le profileur à une application native (C/C++) autonome en cours d’exécution et collecter des données sur les contentions de threads.
 
 > [!NOTE]
@@ -28,7 +29,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
 #### <a name="to-attach-the-profiler-to-a-running-native-application"></a>Pour attacher le profileur à une application native en cours d’exécution
 
-1. À l’invite de commandes, tapez la commande suivante :
+1. À l'invite de commande, tapez la commande suivante :
 
      [VSPerfCmd](../profiling/vsperfcmd.md) **/start:concurrency**
 
@@ -62,7 +63,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
     |[/attach](../profiling/attach.md) **:** {`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[ **:** {`PID`&#124;`ProcName`}]|**/attach** commence à collecter des données pour le processus spécifié par l’ID de processus (`PID`) ou le nom de processus (*ProcName*). **/detach** arrête la collecte des données pour le processus spécifié ou pour tous les processus, si aucun processus n’est spécifié.|
 
 ## <a name="end-the-profiling-session"></a>Arrêter la session de profilage
- Pour mettre fin à une session de profilage, le profileur ne doit pas être en train de collecter des données. Vous pouvez arrêter la collecte des données d’une application profilée avec la méthode d’échantillonnage en fermant l’application ou en appelant l’option **VSPerfCmd /detach**. Vous devez alors appeler l’option **VSPerfCmd /shutdown** pour désactiver le profileur et fermer le fichier de données de profilage.
+ Pour que vous puissiez mettre fin à une session de profilage, le profileur ne doit pas être en train de collecter des données. Vous pouvez arrêter la collecte des données d’une application profilée avec la méthode d’échantillonnage en fermant l’application ou en appelant l’option **VSPerfCmd /detach**. Vous devez alors appeler l’option **VSPerfCmd /shutdown** pour désactiver le profileur et fermer le fichier de données de profilage.
 
 #### <a name="to-end-a-profiling-session"></a>Pour terminer une session de profilage
 

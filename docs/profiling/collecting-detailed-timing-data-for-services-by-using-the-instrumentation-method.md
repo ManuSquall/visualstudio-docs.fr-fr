@@ -1,19 +1,20 @@
 ---
-title: 'Ligne de commande du profileur : Instrumenter pour obtenir des détails de minutage de service'
+title: 'Ligne de commande du profileur : instrument pour récupérer les détails de minutage de service'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 6116e1df-ed3e-4b0d-ac7f-22f7d7ac00ea
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e9271974857da4fffa7d053afdb2b160fb72ede4
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
-ms.translationtype: HT
+ms.openlocfilehash: 915999dbad4cb24fe25fd182c093b8e83e11314e
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67033048"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779595"
 ---
 # <a name="collect-detailed-timing-data-for-services-by-using-the-instrumentation-method-from-the-profiler-command-line"></a>Collecter des données temporelles détaillées des services en utilisant la méthode d’instrumentation à partir de la ligne de commande du profileur
 Cette section décrit les procédures et les options de collecte des données de performances détaillées pour les services Windows avec la méthode d’instrumentation à partir de la ligne de commande.

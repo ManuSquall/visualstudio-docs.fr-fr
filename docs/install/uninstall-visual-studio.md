@@ -2,26 +2,26 @@
 title: Désinstaller Visual Studio
 titleSuffix: ''
 description: Découvrez comment désinstaller Visual Studio, étape par étape.
-ms.date: 07/31/2019
+ms.date: 12/19/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
 - uninstall
 - uninstall Visual Studio
 ms.assetid: 0e445255-b796-426d-ad93-a4d8e36da2c5
-author: TerryGLee
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 9e9212bc5dda2ea69f685077eb2cbe86470d4064
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
-ms.translationtype: HT
+ms.openlocfilehash: a895d9a94ada22ecce340488c6ba00662a599969
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681350"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594472"
 ---
 # <a name="uninstall-visual-studio"></a>Désinstaller Visual Studio
 
@@ -36,7 +36,7 @@ Cette page vous guide dans la désinstallation de Visual Studio, notre suite int
 
      Par exemple, sur un ordinateur exécutant la Mise à jour anniversaire Windows 10 ou une version ultérieure, sélectionnez **Démarrer**, puis faites défiler la liste jusqu’à la lettre **V**, où se trouve **Visual Studio Installer**.
 
-     ![Programme d’installation de Visual Studio](media/vs2017-locate-the-visual-studio-installer.PNG "Localiser le programme d’installation de Microsoft Visual Studio")
+     ![Visual Studio Installer](media/locate-the-visual-studio-installer.png "Localiser le programme d’installation de Microsoft Visual Studio")
 
    > [!NOTE]
    > Sur certains ordinateurs, le programme d’installation de Visual Studio peut être répertorié sous la lettre **« M »** comme **Microsoft, programme d’installation de Visual Studio**.<br/><br/> Ou bien, vous pouvez trouver Visual Studio Installer à l’emplacement suivant :`C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
@@ -67,7 +67,7 @@ Pour supprimer complètement toutes les installations de Visual Studio 2017 et 
 
      Par exemple, sur un ordinateur exécutant Windows 10, sélectionnez **Démarrer**, puis faites défiler jusqu’à la lettre **V** où il est répertorié comme **Visual Studio Installer**.
 
-     ![Ouvrir Visual Studio Installer](media/vs-2019/vs-installer-windows-start.png "Ouvrir Visual Studio Installer")
+     ![Ouvrez le Visual Studio Installer](media/vs-2019/vs-installer-windows-start.png "Ouvrez le Visual Studio Installer")
 
      > [!NOTE]
      > Vous trouverez également Visual Studio Installer à l’emplacement suivant :
@@ -78,11 +78,11 @@ Pour supprimer complètement toutes les installations de Visual Studio 2017 et 
 
 1. Dans le programme d’installation, recherchez l’édition de Visual Studio que vous avez installée. Choisissez ensuite **Plus**, puis **Désinstaller**.
 
-     ![Désinstaller Visual Studio 2019](media/vs-2019/vs-installer-uninstall.png "Désinstaller Visual Studio 2019")
+     ![Désinstaller Visual Studio 2019](media/vs-2019/vs-installer-uninstall.png "Désinstaller Visual Studio 2019")
 
 1. Cliquez sur **OK** pour confirmer votre choix.
 
-     ![Confirmation de la désinstallation de Visual Studio ](media/vs-2019/uninstall-visualstudio-confirm.png "Confirmer que vous voulez désinstaller Visual Studio 2019")
+     ![Désinstaller la confirmation de Visual Studio](media/vs-2019/uninstall-visualstudio-confirm.png "Confirmer que vous souhaitez désinstaller Visual Studio 2019")
 
 Si vous changez d’avis ultérieurement et voulez réinstaller Visual Studio 2019, redémarrez Visual Studio Installer, choisissez l’onglet **Disponibles**, choisissez l’édition de Visual Studio à installer, puis sélectionnez  **Installer**.
 
@@ -98,10 +98,13 @@ Pour supprimer toutes les installations de Visual Studio 2019 et de Visual Stud
 
 ::: moniker-end
 
+## <a name="remove-all-files"></a>Supprimer tous les fichiers
+
+Si vous rencontrez une erreur catastrophique et que vous ne pouvez pas désinstaller Visual Studio à l’aide des instructions précédentes, vous pouvez envisager d’utiliser à la place une option « dernier recours ». Pour plus d’informations sur la suppression complète de tous les fichiers d’installation et informations sur les produits de Visual Studio, consultez la page [supprimer Visual Studio](remove-visual-studio.md) .
+
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Voir aussi
 
 * [Modifier Visual Studio](modify-visual-studio.md)
 * [Mettre à jour Visual Studio](update-visual-studio.md)
-* [Désinstaller Visual Studio pour Mac](/visualstudio/mac/uninstall)

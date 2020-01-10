@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper ::D Etach | Microsoft Docs
+title: IDebugDocumentHelper::Detach | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -39,7 +39,7 @@ HRESULT Detach();
 ## <a name="return-value"></a>Valeur de retour  
  La méthode retourne `HRESULT`. Les valeurs possibles sont notamment celles figurant dans le tableau suivant.  
   
-|valeur|Description|  
+|Valeur|Description|  
 |-----------|-----------------|  
 |`S_OK`|La méthode a réussi.|  
   
@@ -47,5 +47,5 @@ HRESULT Detach();
  Cette méthode supprime ce document de l’arborescence du document.  
   
 ## <a name="see-also"></a>Voir aussi  
- [IDebugDocumentHelper :: Attach](../../winscript/reference/idebugdocumenthelper-attach.md)    
+ [IDebugDocumentHelper::Attach](../../winscript/reference/idebugdocumenthelper-attach.md)   
  [Interface IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)

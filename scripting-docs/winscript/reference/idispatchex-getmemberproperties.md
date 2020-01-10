@@ -44,7 +44,7 @@ HRESULT GetMemberProperties(
  `grfdexFetch`  
  Détermine les propriétés à récupérer. Il peut s’agir d’une combinaison des valeurs listées sous `pgrfdex` et/ou d’une combinaison des valeurs suivantes :  
   
-|valeur|Signification|  
+|Valeur|Signification|  
 |-----------|-------------|  
 |grfdexPropCanAll|Combine fdexPropCanGet, fdexPropCanPut, fdexPropCanPutRef, fdexPropCanCall, fdexPropCanConstruct et fdexPropCanSourceEvents.|  
 |grfdexPropCannotAll|Combine fdexPropCannotGet, fdexPropCannotPut, fdexPropCannotPutRef, fdexPropCannotCall, fdexPropCannotConstruct et fdexPropCannotSourceEvents.|  
@@ -54,7 +54,7 @@ HRESULT GetMemberProperties(
  `pgrfdex`  
  Adresse d’un `DWORD` qui reçoit les propriétés demandées. Il peut s’agir d’une combinaison des valeurs suivantes :  
   
-|valeur|Signification|  
+|Valeur|Signification|  
 |-----------|-------------|  
 |fdexPropCanGet|Le membre peut être obtenu à l’aide de DISPATCH_PROPERTYGET.|  
 |fdexPropCannotGet|Le membre ne peut pas être obtenu à l’aide de DISPATCH_PROPERTYGET.|  
@@ -65,7 +65,7 @@ HRESULT GetMemberProperties(
 |fdexPropNoSideEffects|Le membre n’a aucun effet secondaire. Par exemple, un débogueur peut obtenir/définir/appeler ce membre sans risque sans modifier l’état du script en cours de débogage.|  
 |fdexPropDynamicType|Le membre est dynamique et peut changer pendant la durée de vie de l’objet.|  
 |fdexPropCanCall|Le membre peut être appelé comme une méthode à l’aide de DISPATCH_METHOD.|  
-|fdexPropCannotCall|Le membre ne peut pas être appelé en tant que méthode à l’aide de DISPATCH_METHOD.|  
+|fdexPropCannotCall|Le membre ne peut pas être appelé comme une méthode à l’aide de DISPATCH_METHOD.|  
 |fdexPropCanConstruct|Le membre peut être appelé en tant que constructeur à l’aide de DISPATCH_CONSTRUCT.|  
 |fdexPropCannotConstruct|Le membre ne peut pas être appelé en tant que constructeur à l’aide de DISPATCH_CONSTRUCT.|  
 |fdexPropCanSourceEvents|Le membre peut déclencher des événements.|  
@@ -97,6 +97,6 @@ BSTR bstrName;
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- @No__t_1 de l' [interface IDispatchEx](../../winscript/reference/idispatchex-interface.md)  
- [IDispatchEx :: GetDispID](../../winscript/reference/idispatchex-getdispid.md)    
+   de l' [interface IDispatchEx](../../winscript/reference/idispatchex-interface.md)  
+ [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

@@ -1,5 +1,5 @@
 ---
-title: 'IActiveScriptProperty :: GetProperty | Microsoft Docs'
+title: IActiveScriptProperty::GetProperty | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -52,7 +52,7 @@ HRESULT GetProperty(
   
  Les valeurs autorisées pour `dwProperty` sont décrites dans le tableau suivant.  
   
-|Constante|valeur|Signification|  
+|Constante|Valeur|Signification|  
 |--------------|-----------|-------------|  
 |SCRIPTPROP_INTEGERMODE|0x00003000|Force le moteur de script à diviser en mode entier au lieu du mode à virgule flottante.|  
 |SCRIPTPROP_STRINGCOMPAREINSTANCE|0x00003001|Permet de remplacer la fonction de comparaison de chaînes du moteur de script.|  
@@ -71,9 +71,9 @@ HRESULT GetProperty(
 ## <a name="remarks"></a>Notes  
  L’hôte peut utiliser la propriété SCRIPTPROP_ABBREVIATE_GLOBALNAME_RESOLUTION pour informer un moteur de script qu’aucun autre moteur de script n’existe pour contribuer à l’objet global. Par exemple, Internet Explorer peut informer le moteur de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] que la page rendue contient uniquement des scripts [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]. Ainsi, seul le moteur de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] peut ajouter de nouvelles propriétés à la fenêtre d’objets globale, et il n’existe aucun moteur d’Visual Basic Scripting Edition (VBScript) pour faire de même. Le moteur peut ignorer cet indicateur ou peut l’utiliser pour optimiser la gestion des nouveaux membres qui sont ajoutés à l’objet global.  
   
- L’hôte peut utiliser la propriété SCRIPTPROP_INVOKEVERSIONING pour sélectionner l’ensemble de fonctionnalités de langage à prendre en charge lors du démarrage du moteur de script [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]. Si cette propriété a la valeur 1 (SCRIPTLANGUAGEVERSION_5_7), les fonctionnalités de langage disponibles sont les mêmes que celles apparues dans la version 5,7 du moteur de script [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]. S’il est défini sur 2 (SCRIPTLANGUAGEVERSION_5_8), les fonctionnalités de langage disponibles sont celles qui sont apparues dans la version 5,7 en plus des fonctionnalités qui ont été ajoutées dans la version 5,8. Par défaut, cette propriété a la valeur 0 (SCRIPTLANGUAGEVERSION_DEFAULT), qui est équivalente à l’ensemble de fonctionnalités de langage apparaissant dans la version 5,7, sauf si l’hôte prend en charge un comportement par défaut différent. Par exemple, Internet Explorer 8 s’intègre aux fonctionnalités de langage de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] prises en charge par la version 5,8 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] moteur de script par défaut lorsque le mode de document pour Internet Explorer 8 est le mode « Internet Explorer 8 standard ».  
+ L’hôte peut utiliser la propriété SCRIPTPROP_INVOKEVERSIONING pour sélectionner l’ensemble de fonctionnalités de langage à prendre en charge lors du démarrage du moteur de script [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]. Si cette propriété a la valeur 1 (SCRIPTLANGUAGEVERSION_5_7), les fonctionnalités de langage disponibles sont les mêmes que celles apparues dans la version 5,7 du moteur de script [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]. S’il est défini sur 2 (SCRIPTLANGUAGEVERSION_5_8), les fonctionnalités de langage disponibles sont celles qui sont apparues dans la version 5,7 en plus des fonctionnalités qui ont été ajoutées dans la version 5,8. Par défaut, cette propriété a la valeur 0 (SCRIPTLANGUAGEVERSION_DEFAULT), qui est équivalente à l’ensemble de fonctionnalités de langage apparaissant dans la version 5,7, à moins que l’hôte ne prenne en charge un comportement par défaut différent. Par exemple, Internet Explorer 8 s’intègre aux fonctionnalités de langage de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] prises en charge par la version 5,8 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] moteur de script par défaut lorsque le mode de document pour Internet Explorer 8 est le mode « Internet Explorer 8 standard ».  
   
 ## <a name="see-also"></a>Voir aussi  
- [Définition](https://docs.microsoft.com/previous-versions/windows/internet-explorer/ie-developer/compatibility/cc288325(v=vs.85)) de la compatibilité des documents    
- [IActiveScriptProperty](../../winscript/reference/iactivescriptproperty.md)    
+ [Définition](https://docs.microsoft.com/previous-versions/windows/internet-explorer/ie-developer/compatibility/cc288325(v=vs.85)) de la compatibilité des documents   
+ [IActiveScriptProperty](../../winscript/reference/iactivescriptproperty.md)   
  [Informations de version](../../javascript/reference/javascript-version-information.md)

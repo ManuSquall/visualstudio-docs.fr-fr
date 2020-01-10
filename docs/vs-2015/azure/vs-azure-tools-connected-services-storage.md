@@ -68,7 +68,7 @@ Quand vous avez terminé la boîte de dialogue, Visual Studio ajoute des référ
 - Projet de service cloud (rôles web et de travail) : [Que s’est-il passé ? – Projets de service cloud](https://go.microsoft.com/fwlink/p/?LinkId=516965)
 - Projets de tâche web - [Que s’est-il passé ? – Projets de tâche web](/azure/visual-studio/vs-storage-webjobs-what-happened)
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 - [Forum MSDN : stockage Azure](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
 - [Blog de l’équipe Stockage Microsoft Azure](https://blogs.msdn.microsoft.com/windowsazurestorage/)
 - [Documentation d’Azure Storage](https://docs.microsoft.com/azure/storage/)

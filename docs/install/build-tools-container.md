@@ -6,19 +6,19 @@ ms.date: 07/03/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: d5c038e2-e70d-411e-950c-8a54917b578a
-author: heaths
-ms.author: tglee
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0a16f9501b9ce1e7c69eaa8f2460a50affd6d579
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: cdec0c6059775f4542e7b012709e20ad45c249cc
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888709"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595967"
 ---
 # <a name="install-build-tools-into-a-container"></a>Installer Build Tools dans un conteneur
 
@@ -134,6 +134,9 @@ Enregistrez l’exemple Dockerfile suivant dans un nouveau fichier sur votre dis
    > Consultez la page [Compatibilité des versions de conteneur Windows](/virtualization/windowscontainers/deploy-containers/version-compatibility) pour voir quelles versions de conteneur du système d’exploitation sont prises en charge sur les versions de système d’exploitation hôte, et la page [Problèmes connus liés aux conteneurs](build-tools-container-issues.md) pour les problèmes connus.
 
    ::: moniker-end
+   
+   > [!NOTE]
+   > Le code d’erreur `3010` est utilisé pour indiquer la réussite d’un redémarrage requis. pour plus d’informations, consultez [les messages d’erreur de MsiExec. exe](/windows/win32/msi/error-codes) .
 
 1. Exécutez la commande suivante dans ce répertoire.
 

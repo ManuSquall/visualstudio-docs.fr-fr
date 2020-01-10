@@ -1,5 +1,5 @@
 ---
-title: 'IDebugProperty :: GetPropertyInfo | Microsoft Docs'
+title: IDebugProperty::GetPropertyInfo | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -48,9 +48,9 @@ HRESULT GetPropertyInfo (
  à Retourne la structure `DebugPropertyInfo` qui décrit la propriété.  
   
 ## <a name="return-value"></a>Valeur de retour  
- Retourne un `HRESULT` valide, généralement `S_OK`.  
+ Retourne un `HRESULT`valide, généralement `S_OK`.  
   
 ## <a name="see-also"></a>Voir aussi  
- @No__t_1 de l' [interface IDebugProperty](../../winscript/reference/idebugproperty-interface.md)  
- [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)    
+   de l' [interface IDebugProperty](../../winscript/reference/idebugproperty-interface.md)  
+ [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)   
  [Structure DebugPropertyInfo](../../winscript/reference/debugpropertyinfo-structure.md)

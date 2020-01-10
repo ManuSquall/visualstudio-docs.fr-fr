@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/17/2019
 ms.topic: conceptual
 description: Découvrez comment tirer le meilleur parti de vos abonnements Visual Studio.
-ms.openlocfilehash: dcbcbc9c11dc5c695a1ca2ed523ad982ff18f5c5
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
-ms.translationtype: HT
+ms.openlocfilehash: a8a58cd3fca2443ca84db712cbd2a356351d4499
+ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68493354"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74706968"
 ---
 # <a name="managing-subscriptions"></a>Gestion des abonnements
 
@@ -43,12 +43,12 @@ Dans la page Avantages, l’abonnement actif est affiché en surbrillance dans l
 ## <a name="renewing-my-subscriptions"></a>Renouvellement de vos abonnements
 
 **Abonnements standard**
-- Microsoft Store : si vous avez acheté votre abonnement sur [Microsoft Store](http://www.microsoft.com/store), vous pouvez aussi le renouveler à partir de cet emplacement.
-- Licence en volume :  si votre entreprise achète les abonnements avec une licence en volume, votre administrateur doit contacter un revendeur pour faire renouveler votre abonnement.
+- Microsoft Store : si vous avez acheté votre abonnement sur [Microsoft Store](https://www.microsoft.com/store), vous pouvez aussi le renouveler à cet endroit.
+- Licence en volume : si votre entreprise achète les abonnements avec une licence en volume, votre administrateur doit contacter un revendeur pour faire renouveler votre abonnement.
 
-**Abonnements cloud :**  les abonnements cloud n’ont pas besoin d’être renouvelés. Ils restent actifs tant que leur paiement est à jour.
+**Abonnements cloud :** ces abonnements n’ont pas besoin d’être renouvelés. Ils restent actifs tant que leur paiement est à jour.
 
-**Abonnements acquis via des programmes :**  si vous obtenez votre abonnement via un programme, votre abonnement est lié à votre participation à ce programme. Vous pouvez obtenir plus d’informations auprès des contacts désignés pour les différents programmes.
+**Abonnements achetés via des programmes :** si vous obtenez votre abonnement via un programme, votre abonnement est lié à votre participation au programme. Vous pouvez obtenir plus d’informations auprès des contacts désignés pour les différents programmes.
 
 - [Imagine](https://imagine.microsoft.com/about)
 - [BizSpark](https://bizspark.microsoft.com/About/Offers)
@@ -94,7 +94,7 @@ Pour ajouter un autre compte :
 
 Une fois que vous avez ajouté un autre compte, vous pouvez le mettre à jour ou le supprimer à tout moment en cliquant sur l’onglet **Abonnements** et en choisissant l’option appropriée dans la section **Liens connexes**.
 
-## <a name="frequently-asked-questions"></a>FAQ
+## <a name="frequently-asked-questions"></a>Forum aux questions
 
 ### <a name="q-if-i-do-not-renew-my-subscription-how-long-will-microsoft-keep-my-data"></a>Q : Si je ne renouvelle pas mon abonnement, combien de temps Microsoft conserve mes données ?
 R : En fonction du canal d’achat, Microsoft conserve les données des clients pendant une durée définie.

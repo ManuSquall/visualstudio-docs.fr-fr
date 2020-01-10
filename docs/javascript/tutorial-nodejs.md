@@ -87,15 +87,15 @@ Dans ce tutoriel, vous commencez avec un projet simple contenant du code pour un
 
 1. Ouvrez Visual Studio.
 
-1. Créer un nouveau projet.
+1. Créez un nouveau projet.
 
     ::: moniker range=">=vs-2019"
     Appuyez sur **Échap** pour fermer la fenêtre de démarrage. Tapez **Ctrl+Q** pour ouvrir la zone de recherche, tapez **Node.js**, puis choisissez **Créer une nouvelle application Azure Node.js Express 4 de base** (JavaScript). Dans la boîte de dialogue qui apparaît, choisissez **Créer**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**. Dans la boîte de dialogue **Nouveau projet**, développez **JavaScript**, puis choisissez **Node.js**. Dans le volet central, choisissez **Application Azure Node.js Express 4 de base**, puis choisissez **OK**.
+    Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**. Dans la boîte de dialogue **Nouveau projet**, développez **JavaScript**, puis choisissez **Node.js**. Dans le volet central, choisissez **Application Azure Node.js Express 4 de base**, puis **OK**.
     ::: moniker-end
-    Si vous ne voyez pas le modèle de projet **Application Azure Node.js Express 4 de base**, vous devez ajouter la charge de travail **Développement Node.js**. Pour obtenir des instructions détaillées, consultez les [Prérequis](#prerequisites).
+    Si vous ne voyez pas le modèle de projet **Application Azure Node.js Express 4 de base**, vous devez ajouter la charge de travail **Développement Node.js**. Pour obtenir des instructions détaillées, consultez les [Prérequis](#prerequisites).
 
     Visual Studio crée la solution et ouvre votre projet dans le volet droit. Le fichier projet *app.js* s’ouvre dans l’éditeur (volet gauche).
 
@@ -267,7 +267,7 @@ Vous allez ensuite exécuter l’application avec le débogueur Visual Studio at
 
 Félicitations ! Vous avez terminé ce didacticiel.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 > [!div class="nextstepaction"]
 > [Déployer l’application sur Linux App Service](../javascript/publish-nodejs-app-azure.md)

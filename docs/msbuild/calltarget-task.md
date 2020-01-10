@@ -11,17 +11,17 @@ helpviewer_keywords:
 - CallTarget task [MSBuild]
 - MSBuild, CallTarget task
 ms.assetid: bb1fe2c4-4383-436f-8326-c24cc4a46150
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7aac5078f5fec4da59538543a9d6123f4473c03
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 1bad6ab828af1f62818636b3af11232294256c03
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823265"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593380"
 ---
 # <a name="calltarget-task"></a>CallTarget (tâche)
 Appelle les cibles spécifiées dans le fichier projet.
@@ -36,12 +36,12 @@ Appelle les cibles spécifiées dans le fichier projet.
 | `Targets` | Paramètre `String[]` facultatif.<br /><br /> Spécifie la ou les cibles à générer. |
 | `UseResultsCache` | Paramètre `Boolean` facultatif.<br /><br /> Si `true`, le résultat mis en cache est retourné, le cas échéant.<br /><br /> **Remarque** Si une tâche MSBuild est exécutée, son résultat est mis en cache dans une portée (ProjectFileName, GlobalProperties)[TargetNames] sous la forme d’une liste d’éléments de build. |
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Si une cible spécifiée dans `Targets` échoue, et si `RunEachTargetSeparately` est `true`, la tâche continue à générer les cibles restantes.
 
  Si vous souhaitez générer les cibles par défaut, utilisez la [tâche MSBuild](../msbuild/msbuild-task.md) et définissez le paramètre `Projects` sur la valeur `$(MSBuildProjectFile)`.
 
- En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).
+ En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension> , qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task> . Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Exemple
  L’exemple suivant appelle `TargetA` à partir de `CallOtherTargets`.
@@ -63,4 +63,4 @@ Appelle les cibles spécifiées dans le fichier projet.
 
 ## <a name="see-also"></a>Voir aussi
 - [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)
-- [Cibles](../msbuild/msbuild-targets.md)
+- [Cibles MSBuild](../msbuild/msbuild-targets.md)

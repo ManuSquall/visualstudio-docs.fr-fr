@@ -2,20 +2,20 @@
 title: Renommer un nom de fichier pour qu’il corresponde à un type
 ms.date: 01/26/2018
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 640df80d1763a2e942b4e38b34e72e5bd4a2a7fb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5b7a42a174fecd078e804f2ab3c35fbe442364a6
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72645209"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594394"
 ---
 # <a name="sync-a-type-to-a-filename-or-a-filename-to-a-type-refactoring"></a>Synchroniser un type avec un nom de fichier ou un nom de fichier avec un type (refactorisation)
 
@@ -23,7 +23,7 @@ Cette refactorisation s’applique à :
 
 - C#
 
-- Visual Basic
+- Visual Basic
 
 **Quoi :** vous permet de renommer un type pour qu’il corresponde au nom de fichier, ou de renommer un nom de fichier afin qu’il corresponde au type qu’il contient.
 

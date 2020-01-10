@@ -1,5 +1,5 @@
 ---
-title: 'DA0029 : version CLR non prise en charge | Microsoft Docs'
+title: 'DA0029 : version CLR non prise en charge | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,20 +13,21 @@ ms.assetid: 76247259-c6f3-44c4-b3f9-d8dac16b5e0d
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a3855b8975684b088b2838a866db36e6ec19e665
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: dbc0bfcdb49557e56711b60dca11977a3504d907
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62936287"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74777513"
 ---
 # <a name="da0029-unsupported-clr-version"></a>DA0029 : version CLR non prise en charge
 
 |||
 |-|-|
-|ID de règle|DA0029|
+|ID de la règle|DA0029|
 |Category|Utilisation des outils de profilage|
 |Méthode de profilage|Profilage à partir de la ligne de commande|
 |Message|Une version CLR non prise en charge a été détectée lors de la collection. Les symboles managés peuvent ne pas être résolus correctement.|

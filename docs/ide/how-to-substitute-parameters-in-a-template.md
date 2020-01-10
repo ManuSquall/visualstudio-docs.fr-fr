@@ -6,15 +6,15 @@ helpviewer_keywords:
 - template parameters
 - template parameters, substituting
 - Visual Studio templates, using parameters
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 09d86c52fcd9ddce3c986e0bfa6c9c96f746c663
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 9ddfe065d30b958e52e22f30f946d01d626fcf0e
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656561"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591409"
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>Guide pratique pour substituer des paramètres dans un modèle
 
@@ -26,7 +26,7 @@ La section suivante vous montre comment modifier un modèle pour remplacer le no
 
 ## <a name="example---namespace-name"></a>Exemple : nom d’espace de noms
 
-1. Ajoutez le paramètre dans l'un ou plusieurs des fichiers de code du modèle. Exemple :
+1. Ajoutez le paramètre dans l'un ou plusieurs des fichiers de code du modèle. Par exemple :
 
     ```csharp
     namespace $safeprojectname$
@@ -44,5 +44,5 @@ La section suivante vous montre comment modifier un modèle pour remplacer le no
 
 - [Créer des modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)
 - [Paramètres de modèle](../ide/template-parameters.md)
-- [Informations de référence sur les schémas de modèles Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
+- [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [ProjectItem, élément (modèles d’élément Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md)

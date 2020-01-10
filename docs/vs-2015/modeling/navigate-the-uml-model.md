@@ -45,7 +45,7 @@ Cette rubrique présente les principaux types du modèle UML.
 
  Si vous supprimez un élément du modèle, toute relation à laquelle il participe est supprimée automatiquement et la propriété à l'autre extrémité est mise à jour.
 
- Si la spécification UML assigne une multiplicité de 0..1 à une propriété, elle peut avoir la valeur `null`. Une multiplicité dont la limite maximale est supérieure à 1 signifie que la propriété .NET a le type : `IEnumerable<`*Type*`>`.
+ Si la spécification UML assigne une multiplicité de 0..1 à une propriété, elle peut avoir la valeur `null`. Une multiplicité avec un maximum supérieur à 1 signifie que la propriété .NET a le type : `IEnumerable<`*type*`>`.
 
  Pour plus d’informations sur le parcours des relations, consultez [Parcourir les relations avec l’API UML](../modeling/navigate-relationships-with-the-uml-api.md).
 

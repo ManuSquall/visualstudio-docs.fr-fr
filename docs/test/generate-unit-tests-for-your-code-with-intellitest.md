@@ -4,17 +4,17 @@ ms.date: 10/05/2015
 ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateIntelliTest
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: cd808e23fbb94259df0805125e7d6f3e27dbaeac
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: 65b1de58f195b957d080bd21144c22479b1aafed
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664901"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589589"
 ---
 # <a name="how-to-generate-unit-tests-by-using-intellitest"></a>Comment : générer des tests unitaires à l’aide de IntelliTest
 
@@ -122,7 +122,7 @@ Si vous ajoutez une hypothèse et que vous relancez IntelliTest, les données de
 
 ### <a name="q-can-i-add-assertions-to-the-parameterized-unit-test"></a>Q : Puis-je ajouter des assertions au test unitaire paramétrable ?
 
-**R :** Oui. IntelliTest vérifie que les assertions dans votre instruction sont correctes quand il exécute les tests unitaires. Utilisez la classe <xref:Microsoft.Pex.Framework.PexAssert> ou l'API d'assertion qui est fournie avec le framework de test pour ajouter des assertions. Par exemple, vous pouvez ajouter une assertion selon laquelle deux variables sont égales.
+**R :** Oui. IntelliTest vérifie que les assertions dans votre instruction sont correctes quand il exécute les tests unitaires. Utilisez la classe <xref:Microsoft.Pex.Framework.PexAssert> ou l'API d'assertion qui est fournie avec l'infrastructure de test pour ajouter des assertions. Par exemple, vous pouvez ajouter une assertion selon laquelle deux variables sont égales.
 
 `PexAssert.AreEqual(a, b);`
 
@@ -139,12 +139,12 @@ Acceptez le format par défaut pour générer vos tests ou modifiez la façon do
 ![Créer IntelliTest avec MSTest par défaut](../test/media/pexcreateintellitestmstest.png)
 
 <a name="extend-framework"></a>
-### <a name="q-can-i-use-other-unit-test-frameworks-with-intellitest"></a>Q : Puis-je utiliser d’autres frameworks de tests unitaires avec IntelliTest ?
+### <a name="q-can-i-use-other-unit-test-frameworks-with-intellitest"></a>Q : Puis-je utiliser d’autres infrastructures de tests unitaires avec IntelliTest ?
 
-**R :** Oui, suivez ces étapes pour [rechercher et installer d’autres infrastructures](../test/install-third-party-unit-test-frameworks.md).
+**R :** Oui, suivez ces étapes pour [rechercher et installer d’autres frameworks](../test/install-third-party-unit-test-frameworks.md).
 Les extensions de Framework de test sont également disponibles dans Visual Studio Marketplace, par exemple, [nunit Test Generator](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371).
 
-Après avoir redémarré Visual Studio et rouvert votre solution, cliquez avec le bouton droit sur la classe ou la méthode, puis choisissez **Créer IntelliTest**. Sélectionnez le framework installé ici :
+Après avoir redémarré Visual Studio et rouvert votre solution, cliquez avec le bouton droit sur la classe ou la méthode, puis choisissez **Créer IntelliTest**. Sélectionnez l’infrastructure installée ici :
 
 ![Sélectionner un autre framework de test unitaire pour IntelliTest](../test/media/pexcreateintellitestextensions.png)
 

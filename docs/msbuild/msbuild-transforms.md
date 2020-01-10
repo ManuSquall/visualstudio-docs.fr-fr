@@ -6,17 +6,17 @@ helpviewer_keywords:
 - MSBuild, transforms
 - transforms [MSBuild]
 ms.assetid: d0bcfc3c-14fa-455e-805c-63ccffa4a3bf
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a3875e508105bbe23b1d5cbdcd863a058592537
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
-ms.translationtype: HT
+ms.openlocfilehash: 5c4262ed1a7b92170565f7006c9ed06ed884f928
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "67852188"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75593770"
 ---
 # <a name="msbuild-transforms"></a>Transformations MSBuild
 Une transformation est une conversion de type un-à-un d’une liste d’éléments en une autre. En plus de permettre à un projet de convertir des listes d’éléments, une transformation permet à une cible d’identifier un mappage direct entre ses entrées et ses sorties. Cette rubrique explique les transformations et comment [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] les utilise pour générer des projets plus efficacement.
@@ -47,7 +47,7 @@ Par exemple, si les éléments de la liste d’éléments @(RESXFile) sont *Form
 ## <a name="dependency-analysis"></a>Analyse des dépendances
  Les transformations garantissent un mappage de type un-à-un entre la liste d’éléments transformée et la liste d’éléments d’origine. Par conséquent, si une cible crée des sorties qui sont des transformations des entrées, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] peut analyser les horodatages des entrées et des sorties, et décider s’il faut ignorer, générer ou partiellement regénérer une cible.
 
- Dans la [tâche de copie](../msbuild/copy-task.md) de l’exemple suivant, chaque fichier de la liste d’éléments `BuiltAssemblies` est mappé à un fichier du dossier de destination de la tâche, spécifié en utilisant une transformation dans l’attribut `Outputs`. Si un fichier de la liste d’éléments `BuiltAssemblies` change, la tâche `Copy` s’exécute uniquement pour le fichier modifié. Tous les autres fichiers sont ignorés. Pour plus d’informations sur l’analyse des dépendances et sur la façon d’utiliser des transformations, consultez [Guide pratique pour effectuer des builds incrémentielles](../msbuild/how-to-build-incrementally.md).
+ Dans la [tâche de copie](../msbuild/copy-task.md) de l’exemple suivant, chaque fichier de la liste d’éléments `BuiltAssemblies` est mappé à un fichier du dossier de destination de la tâche, spécifié en utilisant une transformation dans l’attribut `Outputs`. Si un fichier de la liste d’éléments `BuiltAssemblies` change, la tâche `Copy` s’exécute uniquement pour le fichier modifié. Tous les autres fichiers sont ignorés. Pour plus d’informations sur l’analyse des dépendances et sur la façon d’utiliser des transformations, consultez [Guide pratique pour effectuer des générations incrémentielles](../msbuild/how-to-build-incrementally.md).
 
 ```xml
 <Target Name="CopyOutputs"
@@ -61,7 +61,7 @@ Par exemple, si les éléments de la liste d’éléments @(RESXFile) sont *Form
 </Target>
 ```
 
-## <a name="example"></a>Exemples
+## <a name="example"></a>Exemple
 
 ### <a name="description"></a>Description
  L’exemple suivant montre un fichier projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] qui utilise des transformations. Cet exemple suppose qu’il n’y a qu’un seul fichier *.xsd* dans le répertoire *c:\sub0\sub1\sub2\sub3*, et que le répertoire de travail est *c:\sub0*.
@@ -87,7 +87,7 @@ Par exemple, si les éléments de la liste d’éléments @(RESXFile) sont *Form
 </Project>
 ```
 
-### <a name="comments"></a>Commentaires
+### <a name="comments"></a>Comments
  Cet exemple génère la sortie suivante :
 
 ```

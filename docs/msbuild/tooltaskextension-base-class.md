@@ -8,22 +8,22 @@ dev_langs:
 - C++
 - jsharp
 ms.assetid: 258ae433-f68a-49f1-b276-da20e3472e68
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7734f852da997836cf2f42fd3f6b96e9decdf8dd
-ms.sourcegitcommit: 628eb202a1153ebfe69c668f966f821b98b34b34
+ms.openlocfilehash: 947a1df101a169b7bdad4efda74cab1ae042964a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71720570"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75594966"
 ---
 # <a name="tooltaskextension-base-class"></a>Classe de base ToolTaskExtension
 De nombreuses tâches héritent de la classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, laquelle hérite de la classe <xref:Microsoft.Build.Utilities.ToolTask>, qui hérite elle-même de la classe <xref:Microsoft.Build.Utilities.Task>. Cette chaîne d'héritage ajoute plusieurs paramètres aux tâches qui en dérivent. Ces paramètres sont répertoriés dans ce document.
 
-## <a name="parameters"></a>Paramètres
+## <a name="parameters"></a>Parameters
  Le tableau ci-dessous décrit les paramètres des classes de base.
 
 | Paramètre | Description |
@@ -47,4 +47,4 @@ De nombreuses tâches héritent de la classe <xref:Microsoft.Build.Tasks.ToolTas
 
 ## <a name="see-also"></a>Voir aussi
 - [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)
-- [Tâches](../msbuild/msbuild-tasks.md)
+- [Tâches MSBuild](../msbuild/msbuild-tasks.md)

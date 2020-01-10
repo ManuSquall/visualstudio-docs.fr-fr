@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, disable
 - disable code analysis
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cb1a41642e405046459f6196a98cd6290a217223
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d25254cabecd88c6e876646c3c276503aadf7eb7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649663"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75587665"
 ---
 # <a name="how-to-disable-source-code-analysis-for-managed-code"></a>Comment désactiver l’analyse du code source pour le code managé
 
@@ -27,7 +27,7 @@ Cette page vous aide à désactiver l’analyse du code dans Visual Studio. Il e
 
 - Package de l’analyseur NuGet et des analyseurs VSIX ou intégrés
 
-  Actuellement, vous ne pouvez pas désactiver l’analyse du code en temps réel pour les analyseurs intégrés, par exemple, l’ID de règle IDE0067. De même, vous ne pouvez pas désactiver l’analyse du code en temps réel pour les analyseurs qui ont été installés dans le cadre d’une extension Visual Studio (VSIX). Pour supprimer les erreurs et les avertissements des analyseurs intégrés et basés sur VSIX, choisissez **analyser**  > **générer et supprimer les problèmes actifs** dans la barre de menus. Vous *pouvez* désactiver l’analyse en temps réel et intégrée des analyseurs installés dans le cadre d’un package NuGet.
+  Actuellement, vous ne pouvez pas désactiver l’analyse du code en temps réel pour les analyseurs intégrés, par exemple, l’ID de règle IDE0067. De même, vous ne pouvez pas désactiver l’analyse du code en temps réel pour les analyseurs qui ont été installés dans le cadre d’une extension Visual Studio (VSIX). Pour supprimer les erreurs et les avertissements des analyseurs intégrés et basés sur VSIX, choisissez **analyser** > **générer et supprimer les problèmes actifs** dans la barre de menus. Vous *pouvez* désactiver l’analyse en temps réel et intégrée des analyseurs installés dans le cadre d’un package NuGet.
 
 - Analyse de la source et analyse héritée
 
@@ -45,7 +45,7 @@ Pour ouvrir cette page, cliquez avec le bouton droit sur le nœud du projet dans
 - Pour désactiver l’analyse de la source dynamique, décochez l’option **exécuter sur l’analyse en direct** .
 
 > [!NOTE]
-> Les analyseurs intégrés et VSIX continuent à fournir une analyse en temps réel de votre code, même si l’option **exécuter sur l’analyse en direct** est désactivée. Si vous souhaitez supprimer les erreurs et les avertissements de ces analyseurs, choisissez **analyser**  > **générer et supprimer les problèmes actifs** dans la barre de menus.
+> Les analyseurs intégrés et VSIX continuent à fournir une analyse en temps réel de votre code, même si l’option **exécuter sur l’analyse en direct** est désactivée. Si vous souhaitez supprimer les erreurs et les avertissements de ces analyseurs, choisissez **analyser** > **générer et supprimer les problèmes actifs** dans la barre de menus.
 
 ## <a name="net-framework-projects"></a>Projets .NET Framework
 
@@ -57,7 +57,7 @@ Pour désactiver l’analyse du code source pour les analyseurs installés dans 
 | `RunAnalyzersDuringLiveAnalysis` | Contrôle si les analyseurs NuGet analysent le code en temps réel au moment du Design. | `true` |
 | `RunAnalyzers` | Désactive les analyseurs NuGet à la fois au moment de la génération et de la conception. Cette propriété est prioritaire sur `RunAnalyzersDuringBuild` et `RunAnalyzersDuringLiveAnalysis`. | `true` |
 
-Exemples :
+Exemples :
 
 ```xml
 <RunAnalyzersDuringBuild>false</RunAnalyzersDuringBuild>
@@ -71,7 +71,7 @@ Exemples :
 
 ## <a name="source-analysis"></a>Analyse du code source
 
-Vous ne pouvez pas désactiver l’analyse de la [source](roslyn-analyzers-overview.md) dans Visual Studio 2017. Si vous souhaitez effacer les erreurs de l’analyseur de la Liste d’erreurs, vous pouvez supprimer toutes les violations en cours en choisissant **analyser**  > **exécuter l’analyse du code et supprimer les problèmes actifs** dans la barre de menus. Pour plus d’informations, consultez [Supprimer les violations](use-roslyn-analyzers.md#suppress-violations).
+Vous ne pouvez pas désactiver l’analyse de la [source](roslyn-analyzers-overview.md) dans Visual Studio 2017. Si vous souhaitez effacer les erreurs de l’analyseur de la Liste d’erreurs, vous pouvez supprimer toutes les violations en cours en choisissant **analyser** > **exécuter l’analyse du code et supprimer les problèmes actifs** dans la barre de menus. Pour plus d’informations, consultez [Supprimer les violations](use-roslyn-analyzers.md#suppress-violations).
 
 À compter de Visual Studio 2019 version 16,3, vous pouvez désactiver l’analyse du code source NuGet. Envisagez une mise à niveau vers Visual Studio 2019.
 

@@ -3,15 +3,15 @@ title: Organiser les objets en conteneurs de disposition dans le concepteur XAML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 29c80c38-0fa3-48d6-b3a8-3b864f482e44
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: bdda64792195ecac41affeb6ec8a7f4f383ac8a4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3f05874459553b0b83c5e43f326a5deb6b0d4798
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72668823"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75592937"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Organiser les objets en conteneurs de disposition dans le concepteur XAML
 
@@ -43,7 +43,7 @@ Permet de disposer les objets dans des régions de grille égales ou uniformes. 
 
 ![Panneau de disposition UniformGrid](../designers/media/928b9284-a7e8-4678-875a-656b80b78076.png)
 
-### <a name="canvas"></a>Canvas
+### <a name="canvas"></a>Zone de dessin
 
 Permet de disposer les objets librement. Quand les utilisateurs exécutent votre application, ces éléments ont des positions fixes sur l'écran.
 
@@ -71,7 +71,7 @@ Permet de disposer les objets de telle sorte qu’il restent, ou s’*ancrent*, 
 
 ![Panneau de disposition DockPanel](../designers/media/72d46b58-9a49-4dd5-8af7-6843c0440226.png)
 
-**Regarder une courte vidéo :** ![Bouton Lecture](../designers/media/bldadminconsoleinitialconfigicon.PNG) [WPF - DockPanel](https://www.youtube.com/watch?v=EBH_OIM-zPo).
+**Regardez une brève vidéo :** ![bouton de lecture](../designers/media/bldadminconsoleinitialconfigicon.PNG) [WPF-DockPanel](https://www.youtube.com/watch?v=EBH_OIM-zPo)
 
 ## <a name="layout-controls"></a>Contrôles de disposition
 

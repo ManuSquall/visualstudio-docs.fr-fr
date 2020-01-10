@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - agents, configuring for interaction with desktop
 ms.assetid: 3a94dd07-6d17-402c-ae8f-7947143755c9
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 55cf32d138d2644e2d2a7a08406eb575a2895400
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f4ef2d589e75c50a6cecb5364d5b458cffdfd145
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653426"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588965"
 ---
 # <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Guide pratique pour configurer votre agent de test afin d’exécuter des tests qui interagissent avec le Bureau
 
@@ -38,7 +38,7 @@ Utilisez la procédure suivante pour configurer les agents assignés à un rôle
 
 1. Pour configurer l'agent de test que vous avez installé afin qu'il s'exécute en tant que processus, accédez à **Démarrer** > **Outil de configuration de Test Agent**.
 
-   La boîte de dialogue **Configurer Test Agent** s’affiche.
+   La boîte de dialogue **Configurer l’agent de test** s’affiche.
 
    ![Configurer Visual Studio Test Agent](media/configure-test-agent.png)
 
@@ -57,7 +57,7 @@ Utilisez la procédure suivante pour configurer les agents assignés à un rôle
    > [!NOTE]
    > Lorsque vous êtes connecté à l'environnement lab à l'aide d'une connexion Bureau à distance ou d'une connexion basée sur invité, des déconnexions fréquentes et inattendues peuvent se produire. Cela peut être dû au fait que l'ordinateur est configuré pour se connecter automatiquement au réseau.
 
-5. Pour vérifier que l’écran de veille est désactivé étant donné que cela peut interférer avec tout test automatisé qui doit interagir avec le poste de travail, sélectionnez **S’assurer que l’écran de veille est désactivé**.
+5. Pour garantir que l’écran de veille est désactivé, car cela peut interférer avec les tests automatisés qui doivent interagir avec le poste de travail, sélectionnez **S’assurer que l’écran de veille est désactivé**.
 
    > [!WARNING]
    > Se connecter automatiquement ou désactiver l'écran de veille présente des risques. En activant la connexion automatique, vous permettez à d'autres utilisateurs de démarrer cet ordinateur et d'utiliser le compte sur lequel il se connecte automatiquement. Si vous désactivez l'écran de veille, l'ordinateur peut ne pas inviter l'utilisateur à ouvrir une session pour déverrouiller l'ordinateur. Cela permet à n'importe quelle personne d'accéder à l'ordinateur dès lors qu'elle peut y accéder physiquement. Si vous activez ces fonctions sur un ordinateur, vous devez vous assurer que ces ordinateurs sont physiquement sécurisés. S'ils se trouvent, par exemple, dans un lab physiquement sécurisé. Si vous désactivez **S’assurer que l’écran de veille est désactivé**, ceci n’active pas votre écran de veille.

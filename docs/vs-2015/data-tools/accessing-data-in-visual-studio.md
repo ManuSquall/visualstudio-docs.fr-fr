@@ -42,7 +42,7 @@ Dans Visual Studio, vous pouvez créer des applications qui se connectent à des
 
 ||||
 |-|-|-|
-|SQL Database|DocumentDB|Stockage (objets BLOB, tables, files d’attente, fichiers)|
+|Base de données SQL|DocumentDB|Stockage (objets BLOB, tables, files d’attente, fichiers)|
 |SQL Data Warehouse|SQL Server Stretch Database|StorSimple|
 
  Et plus encore...

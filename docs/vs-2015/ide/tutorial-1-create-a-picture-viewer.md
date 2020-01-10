@@ -21,7 +21,7 @@ ms.locfileid: "74299907"
 
 Dans ce didacticiel, vous générez un programme qui charge une image à partir d'un fichier et l'affiche dans une fenêtre. Vous apprenez à faire glisser des contrôles (par exemple, des boutons et des zones d'image) sur votre formulaire, définir leurs propriétés et utiliser des conteneurs pour redimensionner facilement le formulaire. Vous commencez également à écrire du code. Vous apprenez à :
 
-- Créer un nouveau projet.
+- Créez un nouveau projet.
 
 - Tester (déboguer) une application.
 
@@ -62,4 +62,4 @@ Dans ce didacticiel, vous générez un programme qui charge une image à partir 
 |[Étape 8 : écrire du code pour le gestionnaire d’événements du bouton Afficher une image](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)|Écrivez du code à l'aide de l'outil IntelliSense.|
 |[Étape 9 : examiner, commenter et tester votre code](../ide/step-9-review-comment-and-test-your-code.md)|Vérifiez et testez votre code. Ajoutez autant de commentaires que nécessaire.|
 |[Étape 10 : écrire du code pour des boutons supplémentaires et une case à cocher](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)|Écrivez du code à l'aide d'IntelliSense pour faire fonctionner d'autres boutons et une case à cocher.|
-|[Étape 11 : exécuter votre programme et tester d'autres fonctionnalités](../ide/step-11-run-your-program-and-try-other-features.md)|Exécutez votre programme et définissez la couleur d'arrière-plan. Essayez d'autres fonctionnalités, telles que la modification des couleurs, des polices et des bordures.|
+|[Étape 11 : exécuter votre programme et tester d’autres fonctionnalités](../ide/step-11-run-your-program-and-try-other-features.md)|Exécutez votre programme et définissez la couleur d'arrière-plan. Essayez d'autres fonctionnalités, telles que la modification des couleurs, des polices et des bordures.|

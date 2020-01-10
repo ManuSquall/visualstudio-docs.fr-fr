@@ -8,14 +8,15 @@ ms.assetid: 895b9589-1987-4160-916f-53b898a69cf0
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: be1c3b972397246823512f67e6fe2a0e2ecabbd5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f6449ad30edf11d3d315532cc33db2a79c14f90b
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830031"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74778529"
 ---
 # <a name="modules-view---instrumentation-data"></a>Modules, vue - données d’instrumentation
 La vue Modules affiche les données de performances regroupées selon les modules contenus dans les données de profilage. Les fonctions du module sont répertoriées sous le nœud du module.
@@ -25,11 +26,11 @@ La vue Modules affiche les données de performances regroupées selon les module
 
 |Colonne|Description|
 |------------|-----------------|
-|**Name**|Nom de la fonction ou du module.|
+|**Nom**|Nom de la fonction ou du module.|
 |**Numéro de ligne de fonction**|Numéro de ligne du début de cette fonction dans le fichier source.|
 |**Nombre d’appels**|Nombre total d’appels effectués à cette fonction ou à ce module.|
 |**Fichier source**|Fichier source contenant la définition pour cette fonction.|
-|**Nom du module**|Nom du module qui contient la fonction.|
+|**Nom de module**|Nom du module qui contient la fonction.|
 |**Chemin de module**|Chemin d’accès du module qui contient la fonction.|
 |**ID du processus**|ID du processus (PID) de l'exécution du profilage.|
 |**Nom du processus**|Nom du processus dans lequel le module ou la fonction s’exécutait.|
@@ -70,7 +71,7 @@ La vue Modules affiche les données de performances regroupées selon les module
 |**Temps inclusif d’application min.**|-   Pour une fonction, temps inclusif d’application minimal d’un appel à ce module ou à cette fonction.<br />-   Pour un module, temps inclusif d’application minimal de tous les appels aux fonctions du module.|
 
 ## <a name="application-exclusive-values"></a>Valeurs de temps exclusif d’application
- Les valeurs de temps exclusif d’application indiquent le temps passé dans le module ou la fonction. Ces valeurs n’incluent ni le temps passé dans les fonctions enfants, ni le temps consacré aux appels au système d’exploitation, comme dans le cas de changements de contexte ou d’opérations d’E/S.
+ Les valeurs de temps exclusif d’application indiquent le temps passé dans le module ou la fonction. Ces valeurs n’incluent ni le temps passé dans les fonctions enfants, ni le temps consacré aux appels émis vers le système d’exploitation, comme dans le cas de changements de contexte ou d’opérations d’E/S.
 
 |Colonne|Description|
 |------------|-----------------|
@@ -81,6 +82,6 @@ La vue Modules affiche les données de performances regroupées selon les module
 |**Temps exclusif d’application min.**|-   Pour une fonction, temps exclusif d’application minimal d’un appel à ce module ou à cette fonction.<br />-   Pour un module, temps exclusif d’application minimal de tous les appels aux fonctions du module.|
 
 ## <a name="see-also"></a>Voir aussi
-- [Modules, mode](../profiling/modules-view-sampling-data.md)
+- [Vue Modules](../profiling/modules-view-sampling-data.md)
 - [Vue des modules - Instrumentation](../profiling/modules-view-dotnet-memory-instrumentation-data.md)
 - [Modules, vue - échantillonnage](../profiling/modules-view-dotnet-memory-sampling-data.md)

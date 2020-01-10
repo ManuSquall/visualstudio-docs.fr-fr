@@ -44,7 +44,7 @@ Un langage spécifique à un domaine (DSL) est créé à l’aide d’une soluti
 
    1. Dans le menu **Fichier** , pointez sur **Nouveau**, puis cliquez sur **Projet**.
 
-   2. La boîte de dialogue **Nouveau projet** s’affiche.
+   2. La boîte de dialogue **Nouveau projet** s'affiche.
 
    3. Sous **types de projets**, développez le nœud **autres types de projets** , puis cliquez sur **extensibilité**.
 
@@ -69,7 +69,7 @@ Un langage spécifique à un domaine (DSL) est créé à l’aide d’une soluti
 
    - Si vous avez utilisé l’extension de nom de fichier dans les DSL expérimentaux précédents qui n’ont pas été entièrement installés, vous pouvez les supprimer à l’aide de l’outil **réinitialisation de l’instance expérimentale** , qui se trouve dans le menu du kit de développement logiciel (SDK) [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
-   - Si une autre extension de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] qui utilise cette extension de fichier a été entièrement installée sur votre ordinateur, envisagez de la désinstaller. Dans le menu **Outils**, cliquez sur **Gestionnaire d'extensions**.
+   - Si une autre extension de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] qui utilise cette extension de fichier a été entièrement installée sur votre ordinateur, envisagez de la désinstaller. Dans le menu **Outils** , cliquez sur **Gestionnaire d’extensions**.
 
 4. Inspectez et, si nécessaire, ajustez les champs dans les pages restantes de l’Assistant. Lorsque vous êtes satisfait des paramètres, cliquez sur **Terminer**. Pour plus d’informations sur les paramètres, consultez [Concepteur DSL pages](#settings)de l’Assistant.
 
@@ -106,7 +106,7 @@ Tapez une nouvelle extension de fichier.
 
      \- ou -
 
-- Si une extension de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] qui utilise cette extension de fichier a été entièrement installée sur votre ordinateur, désinstallez-la. Dans le menu **Outils**, cliquez sur **Gestionnaire d'extensions**.
+- Si une extension de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] qui utilise cette extension de fichier a été entièrement installée sur votre ordinateur, désinstallez-la. Dans le menu **Outils** , cliquez sur **Gestionnaire d’extensions**.
 
 ### <a name="product-settings-page"></a>Page Paramètres du produit
  **Quel est le nom du produit auquel appartient le nouveau langage spécifique à un domaine ?**

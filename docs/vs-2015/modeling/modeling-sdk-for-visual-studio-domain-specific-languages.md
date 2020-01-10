@@ -45,7 +45,7 @@ En utilisant le kit de développement logiciel (SDK) de modélisation pour [!INC
 
  [Exemples](https://go.microsoft.com/fwlink/?LinkId=186128) pour le kit de développement logiciel de modélisation pour Visual Studio.
 
- Pour obtenir des conseils sur les techniques avancées et la résolution des problèmes, visitez [forum Visual Studio DSL & extensibilité des outils de modélisation](https://go.microsoft.com/fwlink/?LinkID=186074).
+ Pour obtenir des conseils sur les techniques avancées et la résolution des problèmes, consultez le [Forum d’extensibilité des outils de modélisation de Visual Studio &](https://go.microsoft.com/fwlink/?LinkID=186074).
 
 ## <a name="in-this-section"></a>Dans cette section
  [Bien démarrer avec les langages spécifiques à un domaine](../modeling/getting-started-with-domain-specific-languages.md)

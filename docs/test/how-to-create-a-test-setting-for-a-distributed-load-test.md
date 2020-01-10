@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - test settings, for distributed load tests
 ms.assetid: b63d4b71-3b74-4872-b2d1-f0bd1a9a8544
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4704ae4d6a43eb3ac23b928b26515b545164e495
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3129aa5139533db0783c168c3489e071fe9339b5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653658"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589139"
 ---
 # <a name="how-to-create-a-test-settings-file-for-a-distributed-load-test"></a>Comment : créer un fichier de paramètres de test pour un test de charge distribué
 
@@ -71,10 +71,10 @@ Utilisez les étapes suivantes pour créer et supprimer des paramètres de test 
 
 10. Pour exécuter vos tests à distance, ou pour exécuter vos tests à distance et collecter des données à distance, utilisez la liste déroulante **Méthode d’exécution des tests** et sélectionnez **Exécution distante**.
 
-11. Utilisez la liste déroulante **Contrôleur** pour sélectionner un **contrôleur** de test pour les agents de test, qui sera utilisé pour exécuter vos tests ou pour collecter des données.
+11. Utilisez la liste déroulante **Contrôleur** pour sélectionner un contrôleur de test pour les agents de test, qui sera utilisé pour exécuter vos tests ou pour collecter des données.
 
     > [!NOTE]
-    > Si vous ajoutez un contrôleur pour la première fois, aucun contrôleur n’est répertorié dans la liste déroulante. La liste est remplie par les contrôleurs précédents que vous avez définis dans d'autres paramètres de test. Vous devez taper le nom du contrôleur dans la zone (par exemple **TestControllerMachine1**).
+    > Si vous ajoutez un contrôleur pour la première fois, aucun contrôleur n'est répertorié dans la liste déroulante. La liste est remplie par les contrôleurs précédents que vous avez définis dans d'autres paramètres de test. Vous devez taper le nom du contrôleur dans la zone (par exemple **TestControllerMachine1**).
 
 12. Pour ajouter les rôles que vous souhaitez utiliser pour exécuter des tests et collecter des données, sous **Rôles**, choisissez **Ajouter**.
 
@@ -122,9 +122,9 @@ Utilisez les étapes suivantes pour créer et supprimer des paramètres de test 
     |**Profileur ASP.NET :** vous pouvez créer un paramètre de test incluant le profilage ASP.NET, qui collecte des données de performances relatives aux applications web ASP.NET.|L’adaptateur de données de diagnostic du profileur ASP.NET profile le processus Internet Information Services (IIS) : il ne fonctionne donc pas avec un serveur web de développement. Pour profiler le site web dans votre test de charge, vous devez installer un agent de test sur l’ordinateur sur lequel IIS est en cours d’exécution. L'agent de test ne générera pas charge, mais sera uniquement un agent de collection. Pour plus d’informations, consultez [Installer et configurer des agents de test](../test/lab-management/install-configure-test-agents.md).|[Guide pratique pour configurer le profileur ASP.NET pour les tests de charge à l’aide de paramètres de test](../test/how-to-configure-aspnet-profiler-for-load-tests-using-test-settings.md)|
     |**Journal des événements :** vous pouvez configurer un paramètre de test pour inclure la collecte des journaux des événements, qui sera intégrée aux résultats des tests.||[Guide pratique pour configurer la collecte des journaux des événements en utilisant les paramètres de test](https://msdn.microsoft.com/48d67891-6018-4549-83e3-213d5d824a02)|
     |**Émulation de réseau :** vous pouvez spécifier que vous voulez appliquer une charge réseau artificielle à votre test à l’aide d’un paramètre de test. L'émulation de réseau affecte les communications établies vers et depuis l'ordinateur en émulant une vitesse de connexion réseau particulière (par exemple, une connexion d'accès à distance). **Remarque :** L’émulation de réseau ne peut pas être utilisée pour augmenter la vitesse de connexion réseau.|L'adaptateur de l'émulation de réseau est ignoré par les tests de charge. Les tests de charge utilisent plutôt les paramètres spécifiés dans la combinaison de réseaux du scénario de test de charge.<br /><br /> Pour plus d’informations, consultez [Spécifier des types de réseaux virtuels](../test/specify-virtual-network-types-in-a-load-test-scenario.md).||
-    |**Informations système :** Vous pouvez configurer un paramètre de test pour inclure les informations système sur les ordinateurs où est exécuté le collecteur de données et de diagnostic des informations système. Les informations système sont spécifiées dans les résultats des tests à l'aide d'un paramètre de test.|![Icône d'informations](../test/media/vc364f4.gif)<br /><br /> Vous pouvez collecter les informations système à la fois sur les agents de charge et le système en cours de test.|Aucune configuration n'est requise pour collecter ces informations.|
+    |**Informations système :** Vous pouvez configurer un paramètre de test pour inclure les informations système sur les ordinateurs où est exécuté le collecteur de données et de diagnostic des informations système. Les informations système sont spécifiées dans les résultats des tests à l'aide d'un paramètre de test.|![Icône Informations](../test/media/vc364f4.gif)<br /><br /> Vous pouvez collecter les informations système à la fois sur les agents de charge et le système en cours de test.|Aucune configuration n'est requise pour collecter ces informations.|
     |**Impact de test :** vous pouvez collecter des informations sur les méthodes de votre code d’application utilisées lors de l’exécution d’un cas de test. Associées aux modifications apportées au code d'application par les développeurs, ces informations peuvent servir à déterminer les tests impactés par ces modifications.|Les données d'impact de test ne sont pas collectées avec les tests de charge.||
-    |**Enregistreur vidéo :** vous pouvez créer un enregistrement vidéo de votre session sur le poste de travail quand vous exécutez un test automatisé. Cet enregistrement permet d'afficher les actions utilisateur associées à un test codé de l'interface utilisateur. La vidéo peut aider d'autres membres de l'équipe à isoler les problèmes liés aux applications qui sont difficiles à reproduire. **Remarque :** Quand les tests sont exécutés à distance, l’enregistreur vidéo ne fonctionne pas, sauf si l’agent s’exécute en mode interactif.|![Icône Important](../test/media/vc364f3.gif) **Avertissement :** Nous ne recommandons pas l’utilisation de l’adaptateur Enregistreur vidéo pour les tests de charge.|[Guide pratique pour inclure des enregistrements d’écran et vocaux pendant des tests à l’aide des paramètres des tests](../test/how-to-include-recordings-of-the-screen-and-voice-during-tests.md)|
+    |**Enregistreur vidéo :** vous pouvez créer un enregistrement vidéo de votre session sur le poste de travail quand vous exécutez un test automatisé. Cet enregistrement permet d'afficher les actions utilisateur associées à un test codé de l'interface utilisateur. La vidéo peut aider d'autres membres de l'équipe à isoler les problèmes liés aux applications qui sont difficiles à reproduire. **Remarque :** Quand les tests sont exécutés à distance, l’enregistreur vidéo ne fonctionne pas, sauf si l’agent s’exécute en mode interactif.|![icône importante](../test/media/vc364f3.gif) **Avertissement :** nous ne recommandons pas l’utilisation de l’adaptateur d’enregistreur vidéo pour les tests de charge.|[Guide pratique pour inclure des enregistrements d’écran et vocaux pendant des tests à l’aide des paramètres des tests](../test/how-to-include-recordings-of-the-screen-and-voice-during-tests.md)|
 
 19. Choisissez **Déploiement**.
 

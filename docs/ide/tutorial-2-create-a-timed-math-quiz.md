@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e092e11474aa872903977e1b07c699b160bef8a2
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.openlocfilehash: 884047237652f6b69bd437b5faf47d820903b824
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516600"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588666"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Tutoriel 2 : créer un questionnaire mathématique chronométré
 
@@ -52,7 +52,7 @@ Lorsque vous avez terminé, votre quiz ressemble à la capture d’écran suivan
 
 D’autres ressources de formation vidéo gratuites sont également disponibles. Pour en savoir plus sur la C#programmation dans, consultez [ C# notions de base : développement pour les débutants](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners). Pour en savoir plus sur la programmation en Visual Basic, consultez [Notions de base de Visual Basic : développement pour grands débutants](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners).
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 Pour commencer le didacticiel, commencez à l' **[étape 1 : créer un projet et ajouter des étiquettes à votre formulaire](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)** .
 

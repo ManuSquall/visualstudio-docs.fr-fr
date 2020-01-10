@@ -1,5 +1,5 @@
 ---
-title: 'Tutoriel : Créer une application console C# simple'
+title: 'Didacticiel : créer une application C# console simple'
 description: Découvrez comment créer une application console C# dans Visual Studio, étape par étape.
 ms.custom: seodec18, get-started
 ms.date: 03/23/2019
@@ -15,14 +15,14 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: bef87392ca9e08e38950f5e3eed53223dd38bd00
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.openlocfilehash: 740968740306bed4c2cf52191c4ff661b6247bd0
+ms.sourcegitcommit: 697f2ab875fd789685811687387e9e8e471a38c4
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180243"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74830006"
 ---
-# <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Tutoriel : Créer une application console C# simple dans Visual Studio
+# <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Didacticiel : créer une application C# console simple dans Visual Studio
 
 Dans ce tutoriel pour C#, vous allez utiliser Visual Studio afin de créer et d’exécuter une application console tout en découvrant certaines fonctionnalités de l’IDE (environnement de développement intégré) Visual Studio.
 
@@ -57,7 +57,7 @@ Commençons par créer un projet d’application C#. Le type de projet inclut to
 
 Si vous ne voyez pas le modèle de projet **Application console (.NET Core)** , vous pouvez l’obtenir en ajoutant la charge de travail **Développement multiplateforme .NET Core**. Voici comment procéder.
 
-#### <a name="option-1-use-the-new-project-dialog-box"></a>Option 1 : Utiliser la boîte de dialogue Nouveau projet
+#### <a name="option-1-use-the-new-project-dialog-box"></a>Option 1 : Utiliser la boîte de dialogue Nouveau projet
 
 1. Cliquez sur le lien **Ouvrir Visual Studio Installer** dans le volet gauche de la boîte de dialogue **Nouveau projet**.
 
@@ -67,7 +67,7 @@ Si vous ne voyez pas le modèle de projet **Application console (.NET Core)** , 
 
    ![Charge de travail Développement multiplateforme .Net Core dans Visual Studio Installer](./media/dot-net-core-xplat-dev-workload.png)
 
-#### <a name="option-2-use-the-tools-menu-bar"></a>Option 2 : Utiliser la barre de menus Outils
+#### <a name="option-2-use-the-tools-menu-bar"></a>Option 2 : Utiliser la barre de menus Outils
 
 1. Quittez la boîte de dialogue **Nouveau projet** puis, dans la barre de menus supérieure, choisissez **Outils** > **Obtenir les outils et fonctionnalités**.
 
@@ -136,7 +136,7 @@ Commençons par quelques notions mathématiques de base relatives aux entiers en
 
     ![Animation de code mathématique avec des entiers qui illustre la fonctionnalité de saisie semi-automatique IntelliSense dans l’IDE Visual Studio](./media/integer-math-intellisense.gif)
 
-1. Cliquez sur **Calculator** pour exécuter votre programme, ou appuyez sur **F5**.
+1. Choisissez le bouton vert **Démarrer** en regard de **calculatrice** pour générer et exécuter votre programme, ou appuyez sur **F5**.
 
    ![Cliquer sur le bouton Calculator pour exécuter l’application à partir de la barre d’outils](./media/csharp-console-calculator-button.png)
 
@@ -303,7 +303,7 @@ Nous allons modifier le code pour gérer cette erreur.
 
    ![La section « commutateur » modifiée dans l’éditeur de code Visual Studio](./media/csharp-console-calculator-switch-code.png)
 
-Maintenant, quand vous divisez n’importe quel nombre par zéro, l’application vous demande un autre nombre. Encore mieux : Elle ne s’arrêtera pas de demander jusqu'à ce que vous fournissiez un nombre différent de zéro.
+Maintenant, quand vous divisez n’importe quel nombre par zéro, l’application vous demande un autre nombre. Mieux encore : il ne s’arrête pas de demander tant que vous n’avez pas fourni un nombre autre que zéro.
 
    ![L’éditeur de code Visual Studio affiche l’erreur de division par zéro](./media/csharp-console-calculator-dividebyzero.png)
 
@@ -592,7 +592,7 @@ namespace Calculator
 
 ```
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 Félicitations ! Vous avez terminé ce didacticiel. Pour plus d’informations, passez aux tutoriels suivants.
 

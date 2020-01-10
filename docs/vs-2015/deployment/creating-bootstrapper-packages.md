@@ -36,7 +36,7 @@ Le programme d'installation est un programme d'installation générique qui peut
  Le programme d'amorçage détecte d'abord si l'un des composants requis est déjà installé. Si des composants requis ne sont pas installés, le programme d'amorçage commence par afficher les contrats de licence. Une fois que l'utilisateur a accepté les contrats de licence, l'installation des composants requis s'exécute. Si tous les composants requis sont détectés, le programme d'amorçage démarre simplement le programme d'installation de l'application.  
   
 ## <a name="creating-custom-packages"></a>Création de packages personnalisés  
- Vous pouvez générer les manifestes à l'aide de l'Éditeur XML de Visual Studio. Pour plus d’informations, consultez [How to: Create a Package Manifest](../deployment/how-to-create-a-package-manifest.md) et [How to: Create a Product Manifest](../deployment/how-to-create-a-product-manifest.md). Pour obtenir un exemple de création d'un package de programme d'amorçage, consultez [Procédure pas à pas : création d'un programme d'amorçage personnalisé pour afficher une invite de confidentialité](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
+ Vous pouvez générer les manifestes à l'aide de l'Éditeur XML de Visual Studio. Pour plus d’informations, consultez [How to: Create a Package Manifest](../deployment/how-to-create-a-package-manifest.md) et [How to: Create a Product Manifest](../deployment/how-to-create-a-product-manifest.md). Pour accéder à un exemple de création de package de programme d’amorçage, consultez [Walkthrough: Creating a Custom Bootstrapper to Show a Privacy Prompt](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).  
   
  Pour créer un package de programme d'amorçage, vous devez fournir le composant redistribuable sous la forme d'un fichier EXE ou MSI au générateur de manifeste de programme d'amorçage. Ce dernier crée ensuite les fichiers suivants :  
   
@@ -70,7 +70,7 @@ Le programme d'installation est un programme d'installation générique qui peut
   
   `package.xml`  
   
-  Pour finir, copiez les fichiers redistribuables dans l'emplacement correspondant au dossier du programme d'amorçage. Pour plus d'informations, consultez [Procédure : création d'un package de programme d'amorçage localisé](../deployment/how-to-create-a-localized-bootstrapper-package.md).  
+  Pour finir, copiez les fichiers redistribuables dans l'emplacement correspondant au dossier du programme d'amorçage. Pour plus d'informations, consultez [How to: Create a Localized Bootstrapper Package](../deployment/how-to-create-a-localized-bootstrapper-package.md).  
   
 ```  
 \Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages  
@@ -100,7 +100,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
   
  Le tableau suivant présente les propriétés qui sont automatiquement remplies par le programme d'amorçage.  
   
-|Les|Description|  
+|Propriété|Description|  
 |--------------|-----------------|  
 |ApplicationName|Nom de l'application.|  
 |ProcessorArchitecture|Processeur et bits par mot de la plateforme ciblée par un exécutable. Les valeurs sont notamment les suivantes :<br /><br /> -   Intel<br />-   IA64<br />-   AMD64|  

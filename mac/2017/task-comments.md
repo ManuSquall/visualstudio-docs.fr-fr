@@ -1,16 +1,16 @@
 ---
 title: Commentaires des tâches
 description: Ajout de commentaires sur des tâches à votre code
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 562DCB46-D8FA-4DC4-AAEA-F274448C4CD2
-ms.openlocfilehash: 3caef73ba46afd8eaf90826540248cb2d5c4efef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 4f7f3d1567972c3841af6deb37677a7e01cdb825
+ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62987067"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74985173"
 ---
 # <a name="task-comments"></a>Commentaires des tâches
 
@@ -18,7 +18,7 @@ Quand vous écrivez du code, il est d’usage de commenter explicitement le code
 
 ![Préférences de la liste des tâches](media/source-editor-image10.png)
 
-Pour ajouter un nouveau commentaire de tâche, ajoutez un commentaire qui inclut le mot clé « task ». Par exemple :
+Pour ajouter un nouveau commentaire de tâche, ajoutez un commentaire qui inclut le mot clé « task ». Par exemple :
 
 ```csharp
 //TODO: Finish this for all properties.

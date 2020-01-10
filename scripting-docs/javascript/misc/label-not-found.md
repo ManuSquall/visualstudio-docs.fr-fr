@@ -31,7 +31,7 @@ Vous avez fait référence à une étiquette qui n’existe pas. Les étiquettes
 - Vérifiez que toutes les références d’étiquette sont effectuées aux étiquettes qui ont été définies dans l’étendue actuelle (y compris les définitions anticipées).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Instruction étiquetée](../../javascript/reference/labeled-statement-javascript.md)    
- [instruction switch](../../javascript/reference/switch-statement-javascript.md)    
+ [Instruction étiquetée](../../javascript/reference/labeled-statement-javascript.md)   
+ [instruction switch](../../javascript/reference/switch-statement-javascript.md)   
  [break, instruction](../../javascript/reference/break-statement-javascript.md)   
  [Instruction continue](../../javascript/reference/continue-statement-javascript.md)

@@ -86,9 +86,9 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
 
 ##### <a name="to-create-the-project"></a>Pour créer le projet
 
-1. Dans le menu **Fichier**, cliquez sur **Nouveau**, puis sur **Projet**.
+1. Dans le menu **Fichier** , cliquez sur **Nouveau** , puis sur **Projet**.
 
-2. Cliquez sur le nœud **Visual C#** puis, dans le volet **Modèles**, cliquez sur **Application console**.
+2. Cliquez sur le nœud **Visual C#** puis, dans le volet **Modèles** , cliquez sur **Application console**.
 
 ### <a name="add-a-prototype-xml-file-to-the-project"></a>Ajouter un fichier XML de prototype au projet
  L’objectif de ce fichier consiste à fournir des exemples des types de nœuds XML que vous souhaitez que votre application puisse lire. Il peut s’agir d’un fichier qui sera utilisé pour tester votre application. Le modèle produira une classe C# pour chaque type de nœud dans ce fichier.
@@ -97,9 +97,9 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
 
 ##### <a name="to-add-an-xml-file"></a>Pour ajouter un fichier XML
 
-1. Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur le projet, cliquez sur **Ajouter**, puis sur **Nouvel élément**.
+1. Dans l’ **Explorateur de solutions**, cliquez avec le bouton droit sur le projet, cliquez sur **Ajouter** , puis sur **Nouvel élément**.
 
-2. Dans la boîte de dialogue **Ajouter un nouvel élément**, sélectionnez **Fichier XML** dans le volet **Modèles**.
+2. Dans la boîte de dialogue **Ajouter un nouvel élément** , sélectionnez **Fichier XML** dans le volet **Modèles** .
 
 3. Ajoutez votre exemple de contenu au fichier.
 
@@ -108,7 +108,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
    .
 
 ### <a name="add-a-test-code-file"></a>Ajouter un fichier de code de test
- Ajoutez un fichier C# à votre projet et placez-y un exemple du code que vous souhaitez pouvoir écrire. Par exemple :
+ Ajoutez un fichier C# à votre projet et placez-y un exemple du code que vous souhaitez pouvoir écrire. Exemple :
 
 ```
 using System;
@@ -137,9 +137,9 @@ namespace MyProject
 
 ##### <a name="to-add-a-text-template-file-to-your-project"></a>Pour ajouter un fichier de modèle de texte à votre projet
 
-1. Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur le projet, cliquez sur **Ajouter**, puis sur **Nouvel élément**.
+1. Dans l’ **Explorateur de solutions**, cliquez avec le bouton droit sur le projet, cliquez sur **Ajouter**, puis sur **Nouvel élément**.
 
-2. Dans la boîte de dialogue **Ajouter un nouvel élément**, sélectionnez **Modèle de texte** dans le volet **Modèles**.
+2. Dans la boîte de dialogue **Ajouter un nouvel élément** , sélectionnez **Modèle de texte** dans le volet **Modèles** .
 
    > [!NOTE]
    > Vérifiez que vous ajoutez bien un Modèle de texte, et non un Modèle de texte prétraité.
@@ -405,7 +405,7 @@ namespace MyProject
 ## <a name="conclusion"></a>Conclusion
  Cette procédure pas à pas illustre plusieurs techniques et avantages de la génération de code :
 
-- La *génération de code* est la création d’une partie du code source de votre application à partir d’un *modèle*. Le modèle contient des informations dans un format adapté au domaine d’application, et il peut changer pendant la durée de vie de l’application.
+- La*génération de code* est la création d’une partie du code source de votre application à partir d’un *modèle*. Le modèle contient des informations dans un format adapté au domaine d’application, et il peut changer pendant la durée de vie de l’application.
 
 - Le typage fort est l’un des avantages de la génération de code. Tandis que le modèle représente les informations dans un format plus adapté à l’utilisateur, le code généré permet à d’autres parties de l’application de traiter les informations à l’aide d’un ensemble de types.
 

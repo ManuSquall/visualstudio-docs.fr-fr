@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Sélectionner des fichiers dans une build | Microsoft Docs'
+title: Guide pratique pour sélectionner des fichiers dans une build | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,19 +7,19 @@ helpviewer_keywords:
 - MSBuild, including files
 - Include attribute [MSBuild]
 ms.assetid: f5ff182f-7b3a-46fb-9335-37df54cfb8eb
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f8f582a0148f5fddd88393e008593d9ad9a05ce
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a9ad869fc091035de711ec59e20d10fd0af5e21b
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386185"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75574611"
 ---
-# <a name="how-to-select-the-files-to-build"></a>Procédure : Sélectionner des fichiers dans une build
+# <a name="how-to-select-the-files-to-build"></a>Guide pratique pour sélectionner des fichiers dans une build
 Quand vous générez un projet contenant plusieurs fichiers, vous pouvez lister chaque fichier un à un dans le fichier projet ou utiliser des caractères génériques pour inclure tous les fichiers d’un répertoire ou d’un ensemble imbriqué de répertoires.
 
 ## <a name="specify-inputs"></a>Spécifier les entrées
@@ -170,5 +170,5 @@ L’exemple de code suivant utilise un caractère générique pour inclure tous 
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Guide pratique pour exclure des fichiers de la build](../msbuild/how-to-exclude-files-from-the-build.md)
-- [Éléments](../msbuild/msbuild-items.md)
+- [Comment : exclure des fichiers de la Build](../msbuild/how-to-exclude-files-from-the-build.md)
+- [Éléments MSBuild](../msbuild/msbuild-items.md)

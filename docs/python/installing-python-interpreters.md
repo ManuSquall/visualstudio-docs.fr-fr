@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b91d18fe5924abe12240f31295b4853c1e932333
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.openlocfilehash: 13290aef7acfe599c7693af4be771c625e713596
+ms.sourcegitcommit: d04441e3c5f2eff3a63f7aca35ccf7ecac90fb44
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72984617"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75735816"
 ---
 # <a name="install-python-interpreters"></a>Installer les interpréteurs Python
 
@@ -42,7 +42,7 @@ Visual Studio affiche tous les environnements connus dans la fenêtre [**Environ
 
 | Interpréteur | Description |
 | --- | --- |
-| [CPython](https://www.python.org/) | Interpréteur « natif » et le plus couramment utilisé, disponible en versions 32 bits et 64 bits (version 32 bits recommandée). Il inclut les dernières fonctionnalités du langage, une compatibilité des packages Python maximale, la prise en charge complète du débogage et l’interopérabilité avec [IPython](https://ipython.org/). Consultez aussi : [Should I use Python 2 or Python 3 ?](https://wiki,python.org/moin/Python2orPython3). Notez que Visual Studio 2015 et les versions antérieures ne prennent pas en charge Python 3.6+, et qu’ils peuvent générer des erreurs telles que **Python version 3.6 n’est pas pris en charge**. Utilisez à la place Python 3.5 ou antérieur. |
+| [CPython](https://www.python.org/) | Interpréteur « natif » et le plus couramment utilisé, disponible en versions 32 bits et 64 bits (version 32 bits recommandée). Il inclut les dernières fonctionnalités du langage, une compatibilité des packages Python maximale, la prise en charge complète du débogage et l’interopérabilité avec [IPython](https://ipython.org/). Consultez aussi : [Should I use Python 2 or Python 3 ?](https://wiki.python.org/moin/Python2orPython3). Notez que Visual Studio 2015 et les versions antérieures ne prennent pas en charge Python 3.6+, et qu’ils peuvent générer des erreurs telles que **Python version 3.6 n’est pas pris en charge**. Utilisez à la place Python 3.5 ou antérieur. |
 | [IronPython](https://github.com/IronLanguages/ironpython2) | Implémentation .NET de Python, disponible en versions 32 bits et 64 bits, fournissant une interopérabilité C#/F#/Visual Basic, un accès aux API .NET, le débogage Python standard (mais pas le débogage en mode mixte C++) et le débogage mixte IronPython/C#. Toutefois, IronPython, ne prend pas en charge les environnements virtuels. |
 | [Anaconda](https://www.continuum.io) | Une plateforme de science des données ouverte alimentée par Python, qui inclut la dernière version de CPython et la plupart des packages difficiles à installer. Nous vous la recommandons si vous ne pouvez pas décider autrement. |
 | [PyPy](https://www.pypy.org/) | Une implémentation JIT de suivi hautes performances de Python qui convient aux programmes longs et aux situations dans lesquelles vous identifiez des problèmes de performances, mais que vous ne trouvez pas d’autres solutions. Fonctionne avec Visual Studio, mais avec une prise en charge limitée des fonctionnalités de débogage avancées. |
@@ -69,6 +69,6 @@ Ce processus garantit que les entrées de Registre qui identifient l’emplaceme
 
 - [Gérer des environnements Python](managing-python-environments-in-visual-studio.md)
 - [Sélectionner un interpréteur pour un projet](selecting-a-python-environment-for-a-project.md)
-- [Utiliser requirements.txt pour les dépendances](managing-required-packages-with-requirements-txt.md)
+- [Utilisation requirements.txt pour les dépendances](managing-required-packages-with-requirements-txt.md)
 - [Chemins de recherche](search-paths.md)
 - [Référence sur la fenêtre Environnements Python](python-environments-window-tab-reference.md)

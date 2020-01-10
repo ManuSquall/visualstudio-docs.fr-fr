@@ -12,15 +12,15 @@ helpviewer_keywords:
 - load test results, analyzing threshold violations
 - thresholds in load tests
 ms.assetid: 969ed346-cf2e-4d48-82b3-edb3e075e1c0
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7ffff5818c5d3c7085ef3bebcc29c31a363a09b9
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0a20c5e3f30a6d006175e78fc70dab79d0b9bf8a
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665340"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75591279"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analyse des violations de règles de seuil dans les tests de charge dans l’analyseur de test de charge
 
@@ -36,8 +36,8 @@ Le tableau des violations de seuils affiche les 1 000 premières violations. L
 
 |Colonne|Description|Visible par défaut|
 |-|-|-|
-|Time|Heure à laquelle la violation s'est produite lors du test de charge.|Oui|
-|Ordinateur|Nom de l'ordinateur testé sur lequel la violation s'est produite. **Remarque :**  Ceci est important lorsque vous exécutez des tests de charge sur des plateformes de test.|Oui|
+|Heure|Heure à laquelle la violation s'est produite lors du test de charge.|Oui|
+|Ordinateur|Nom de l'ordinateur testé sur lequel la violation s'est produite. **Remarque :** Ceci est important quand vous exécutez des tests de charge sur des plateformes de test.|Oui|
 |Catégorie|Catégorie du compteur de performance sur lequel la violation s'est produite.|Oui|
 |Counter|Nom du compteur de performance sur lequel la violation s'est produite.|Oui|
 |Instance|Instance de compteur de performance sur laquelle la violation s'est produite.|Oui|

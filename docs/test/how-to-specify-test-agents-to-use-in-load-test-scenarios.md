@@ -9,15 +9,15 @@ helpviewer_keywords:
 - tests agents, load tests, specifying
 - load tests, test agents
 ms.assetid: e86806dd-5897-4e4c-bfd4-8d687fb72a6e
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 207adc18d3a992f3079b929c46005ea29304074b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d23d565752d81bff960027090ddaaf88e9d78ed5
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653407"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75588926"
 ---
 # <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>Guide pratique pour spécifier les agents de test à utiliser dans les scénarios de test de charge
 
@@ -47,17 +47,17 @@ Si l'utilisation de l'UC d'un ordinateur agent de test est supérieure à 75 % 
 
 1. Ouvrez un test de charge.
 
-     **L’Éditeur de test de charge** s’affiche. L'arborescence du test de charge s'affiche.
+     **L’éditeur de test de charge** s’affiche. L'arborescence du test de charge s'affiche.
 
 2. Dans le dossier **Scénarios** des arborescences du test de charge, choisissez le nœud de scénario pour lequel vous souhaitez spécifier les agents à utiliser.
 
-3. Dans le menu **Affichage**, sélectionnez la fenêtre **Propriétés**.
+3. Dans le menu **Affichage**, sélectionnez **Fenêtre Propriétés**.
 
      Les catégories et les propriétés du scénario s’affichent dans la fenêtre **Propriétés**.
 
 4. Dans la zone de texte de la propriété **Agents à utiliser**, tapez la liste des agents sur lesquels le scénario peut s’exécuter.
 
-     Les agents doivent être séparés par des virgules, par exemple « **Agent1, Agent2, Agent3** ». Si vous laissez la propriété vide, le scénario doit utiliser tous les agents disponibles.
+     Les agents doivent être séparés par des virgules, par exemple « **Agent1, Agent2, Agent3** ». Si vous laissez la propriété vide, le scénario doit utiliser tous les agents disponibles.
 
     > [!NOTE]
     > La propriété **Agents à utiliser** est ignorée pour les exécutions locales. Pour les exécutions distantes, s’il n’existe aucun agent spécifié dans **Agents à utiliser**, les tests du scénario ne s’exécutent pas.

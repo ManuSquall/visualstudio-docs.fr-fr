@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Exclure des fichiers de la build | Microsoft Docs'
+title: 'Comment : exclure des fichiers de la génération | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,23 +7,23 @@ helpviewer_keywords:
 - MSBuild, excluding files
 - wildcards, MSBuild
 ms.assetid: 1be36e45-01da-451c-972d-f9fc0e7d663c
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e16b11d2c54c500bc2b4e7d52e0bc5a46492ab5e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3c55033d253b5c7dfeb2bed968f2418637ca3f0d
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446558"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75576054"
 ---
-# <a name="how-to-exclude-files-from-the-build"></a>Procédure : Exclure des fichiers de la build
+# <a name="how-to-exclude-files-from-the-build"></a>Guide pratique pour exclure des fichiers de la build
 Dans un fichier projet, vous pouvez utiliser des caractères génériques pour inclure tous les fichiers d’un répertoire ou un ensemble imbriqué de répertoires comme des entrées d’une génération. Toutefois, il se peut que vous ne souhaitiez pas inclure un fichier du répertoire ou un répertoire d’un ensemble imbriqué de répertoires comme entrée d’une génération. Vous pouvez explicitement exclure ce fichier ou ce répertoire de la liste d’entrées. Il peut également s’agir d’un fichier d’un projet que vous ne souhaitez inclure que dans certaines conditions. Vous pouvez déclarer explicitement les conditions dans lesquelles un fichier est inclus dans une génération.
 
 ## <a name="exclude-a-file-or-directory-from-the-inputs-for-a-build"></a>Exclure un fichier ou un répertoire des entrées d’une build
- Les listes d’éléments constituent les fichiers d’entrée d’une génération. Les éléments que vous souhaitez inclure sont déclarés séparément ou en tant que groupe à l’aide de l’attribut `Include`. Par exemple :
+ Les listes d’éléments constituent les fichiers d’entrée d’une génération. Les éléments que vous souhaitez inclure sont déclarés séparément ou en tant que groupe à l’aide de l’attribut `Include`. Par exemple :
 
 ```xml
 <CSFile Include="Form1.cs"/>
@@ -123,6 +123,6 @@ Dans un fichier projet, vous pouvez utiliser des caractères génériques pour i
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Éléments](../msbuild/msbuild-items.md)
+- [Éléments MSBuild](../msbuild/msbuild-items.md)
 - [MSBuild](../msbuild/msbuild.md)
 - [Guide pratique pour sélectionner des fichiers dans une build](../msbuild/how-to-select-the-files-to-build.md)

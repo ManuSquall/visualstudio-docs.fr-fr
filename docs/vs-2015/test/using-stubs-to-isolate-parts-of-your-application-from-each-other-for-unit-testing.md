@@ -15,10 +15,10 @@ ms.contentlocale: fr-FR
 ms.lasthandoff: 11/21/2019
 ms.locfileid: "74301397"
 ---
-# <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Utilisation de stubs pour isoler des parties de votre application les unes des autres pour des tests unitaires
+# <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Utilisation de stubs pour isoler des parties de votre application les unes des autres en vue d'effectuer un test unitaire
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Les types de stub* représentent l’une des deux technologies fournies par le framework Microsoft Fakes pour vous permettre d’isoler facilement un composant que vous testez d’autres composants appelés. Un stub est une petite partie de code qui remplace un autre composant pendant les tests. L'utilisation d'un stub présente l'avantage de retourner des résultats cohérents, ce qui rend le test plus facile à écrire. Vous pouvez également effectuer des tests même si les autres composants ne fonctionnent pas encore.
+Les types de stub* représentent l’une des deux technologies fournies par le framework Microsoft Fakes pour vous permettre d’isoler facilement un composant que vous testez d’autres composants appelés. Un stub est un petit élément de code qui remplace un autre composant pendant le test. L'utilisation d'un stub présente l'avantage de retourner des résultats cohérents, ce qui facilite l'écriture du test. Vous pouvez également effectuer des tests même si les autres composants ne fonctionnent pas encore.
 
  Pour obtenir une vue d’ensemble et un guide de démarrage rapide de Fakes, consultez [Isolation du code sous test avec Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).
 
@@ -30,7 +30,7 @@ Les types de stub* représentent l’une des deux technologies fournies par le f
 
  Les stubs comptent sur votre capacité à structurer votre code de cette manière. C'est pour cela que vous utilisez généralement les stubs pour isoler une partie de votre application des autres parties. Pour l'isoler des autres assemblys qui ne sont pas sous votre contrôle, comme System.dll, il utilise généralement des shims. Consultez [Utilisation de shims pour isoler votre application des autres assemblys pour des tests unitaires](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).
 
- **Conditions requises**
+ **Requirements**
 
 - Visual Studio Enterprise
 
@@ -224,7 +224,7 @@ End Class
  Les stubs sont également générés pour les accesseurs Get et les méthodes setter de propriétés, les événements et les méthodes génériques.
 
 ### <a name="mocks"></a> Vérifier les valeurs de paramètre
- Vous pouvez vérifier cela lorsque votre composant fait un appel à un autre composant : il passe les valeurs correctes. Vous pouvez placer une assertion dans le stub ou stocker la valeur et la vérifier dans le corps principal du test. Par exemple :
+ Vous pouvez vérifier cela lorsque votre composant fait un appel à un autre composant : il passe les valeurs correctes. Vous pouvez placer une assertion dans le stub ou stocker la valeur et la vérifier dans le corps principal du test. Exemple :
 
 ```csharp
 [TestClass]
@@ -400,7 +400,7 @@ public void TestGetValue()
  Si le code devait appeler `GetValue<T>` avec une autre instanciation, le stub appellerait simplement le comportement.
 
 ### <a name="BKMK_Partial_stubs"></a> Stubs de classes virtuelles
- Dans les exemples précédents, les stubs ont été générés à partir d'interfaces. Vous pouvez également générer les stubs à partir d'une classe qui contient des membres virtuels ou abstraits. Par exemple :
+ Dans les exemples précédents, les stubs ont été générés à partir d'interfaces. Vous pouvez également générer les stubs à partir d'une classe qui contient des membres virtuels ou abstraits. Exemple :
 
 ```csharp
 // Base class in application under test

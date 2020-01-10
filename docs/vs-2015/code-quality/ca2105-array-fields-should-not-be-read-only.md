@@ -29,7 +29,7 @@ ms.locfileid: "72666010"
 |-|-|
 |TypeName|ArrayFieldsShouldNotBeReadOnly|
 |CheckId|CA2105|
-|Category|Microsoft.Security|
+|Catégorie|Microsoft.Security|
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
@@ -53,7 +53,7 @@ ms.locfileid: "72666010"
  L’exclusion d’un avertissement de cette règle est fortement déconseillée. Presque aucun scénario ne se produit lorsque le contenu d’un champ en lecture seule n’est pas important. Si c’est le cas avec votre scénario, supprimez le modificateur `readonly` au lieu d’exclure le message.
 
 ## <a name="example"></a>Exemple
- Cet exemple illustre les dangers liés à la violation de cette règle. La première partie montre un exemple de bibliothèque de type, `MyClassWithReadOnlyArrayField`, qui contient deux champs (`grades` et `privateGrades`) qui ne sont pas sécurisés. Le champ `grades` est public et, par conséquent, vulnérable à n’importe quel appelant. Le champ `privateGrades` est privé, mais reste vulnérable, car il est retourné aux appelants par la méthode `GetPrivateGrades`. Le champ `securePrivateGrades` est exposé de manière sécurisée par la méthode `GetSecurePrivateGrades`. Elle est déclarée comme privée pour suivre les bonnes pratiques de conception. La deuxième partie affiche le code qui modifie les valeurs stockées dans les membres `grades` et `privateGrades`.
+ Cet exemple illustre les dangers liés à la violation de cette règle. La première partie montre un exemple de bibliothèque de type, `MyClassWithReadOnlyArrayField`, qui contient deux champs (`grades` et `privateGrades`) qui ne sont pas sécurisés. Le champ `grades` est public et, par conséquent, vulnérable à n’importe quel appelant. Le champ `privateGrades` est privé mais reste vulnérable, car il est retourné aux appelants par la méthode `GetPrivateGrades`. Le champ `securePrivateGrades` est exposé de manière sécurisée par la méthode `GetSecurePrivateGrades`. Elle est déclarée comme privée pour suivre les bonnes pratiques de conception. La deuxième partie affiche le code qui modifie les valeurs stockées dans les membres `grades` et `privateGrades`.
 
  L’exemple de bibliothèque de classes s’affiche dans l’exemple suivant.
 
@@ -66,7 +66,7 @@ ms.locfileid: "72666010"
 
  La sortie de cet exemple est la suivante :
 
- **Avant la falsification : grades : 90, 90, 90 grades privés : 90, 90, 90 Notes sécurisées, 90, 90, 90** 
+ **Avant la falsification : grades : 90, 90, 90 grades privés : 90, 90, 90 Notes sécurisées, 90, 90, 90**
 **après falsification : grades : 90, 555, 90 grades privés : 90, 555, 90 Secure grades, 90,** 90, 90
 ## <a name="see-also"></a>Voir aussi
  <xref:System.Array?displayProperty=fullName> <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>

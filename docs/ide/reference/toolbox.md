@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - Toolbox [Visual Studio]
 - custom controls [Visual Studio]
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5311c9a910c3140d5a5053a42befe7ed7f5b1278
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c7decdb80cd06b1af3230b2926c4ebd37b48e422
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72651124"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596448"
 ---
 # <a name="toolbox"></a>Boîte à outils
 
@@ -61,7 +61,7 @@ Vous pouvez réorganiser les éléments d’un onglet de **Boîte à outils** ou
 
 ## <a name="create-and-distribute-custom-toolbox-controls"></a>Créer et distribuer des contrôles de boîte à outils personnalisés
 
-Vous pouvez créer des contrôles **Boîte à outils** personnalisés en commençant par un modèle de projet basé sur [Windows Presentation Foundation](../../extensibility/creating-a-wpf-toolbox-control.md) ou [Windows Forms](../../extensibility/creating-a-windows-forms-toolbox-control.md). Vous pouvez ensuite distribuer votre contrôle personnalisé à vos collègues ou le publier sur le web à l’aide du [programme d’installation de contrôles de Boîte à outils](http://download.microsoft.com/download/8/3/6/836657BD-9CCB-4ED4-B9D2-FB769473B284/TCI_whitepaper.docx).
+Vous pouvez créer des contrôles **Boîte à outils** personnalisés en commençant par un modèle de projet basé sur [Windows Presentation Foundation](../../extensibility/creating-a-wpf-toolbox-control.md) ou [Windows Forms](../../extensibility/creating-a-windows-forms-toolbox-control.md). Vous pouvez ensuite distribuer votre contrôle personnalisé à vos collègues ou le publier sur le web à l’aide du [programme d’installation de contrôles de Boîte à outils](https://download.microsoft.com/download/8/3/6/836657BD-9CCB-4ED4-B9D2-FB769473B284/TCI_whitepaper.docx).
 
 ## <a name="help-on-toolbox-tabs"></a>Aide sur les onglets de Boîte à outils
 

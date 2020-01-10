@@ -2,17 +2,17 @@
 title: Personnalisation de l'analyse de couverture du code
 ms.date: 08/21/2019
 ms.topic: conceptual
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: 7392397748d26224a0fba0d5510fccb6655d7642
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: d90292d339c87c74892d715f2a376b5159226dd7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665066"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590330"
 ---
 # <a name="customize-code-coverage-analysis"></a>Personnaliser l’analyse de la couverture du code
 
@@ -51,7 +51,7 @@ Pour personnaliser la couverture du code, effectuez les étapes suivantes :
 
 ::: moniker range="vs-2017"
 
-Pour activer ou désactiver les paramètres personnalisés, désélectionnez ou sélectionnez le fichier dans le menu **Test** > **Paramètres de test**.
+Pour activer et désactiver les paramètres personnalisés, désélectionnez ou sélectionnez le fichier dans le menu **test** > les **paramètres de test** .
 
 ![Menu Paramètres de test avec le fichier de paramètres de test dans Visual Studio 2017](../test/media/codecoverage-settingsfile.png)
 
@@ -111,8 +111,8 @@ Le tableau suivant montre les différentes façons dont les assemblys et les mem
 | CompanyName | Correspond aux assemblys par l’attribut **Company** . |
 | PublicKeyToken | Correspond aux assemblys signés par le jeton de clé publique. |
 | Source | Met en correspondance les éléments par le nom de chemin d’accès du fichier source dans lequel ils sont définis. |
-| Attribut | Met en correspondance les éléments qui ont l’attribut spécifié. Spécifiez le nom complet de l’attribut, par exemple `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>`.<br/><br/>Si vous excluez l’attribut <xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute>, le code qui utilise des fonctionnalités du langage comme `async`, `await` et `yield return`, et des propriétés implémentées automatiquement, est exclu de l’analyse de couverture du code. Pour exclure le code réellement généré, excluez seulement l’attribut <xref:System.CodeDom.Compiler.GeneratedCodeAttribute>. |
-| Fonction | Met en correspondance des procédures, des fonctions ou des méthodes par nom qualifié complet, y compris la liste de paramètres. Vous pouvez également faire correspondre une partie du nom à l’aide d’une [expression régulière](#regular-expressions).<br/><br/>Exemples :<br/><br/>`Fabrikam.Math.LocalMath.SquareRoot(double);` (C#)<br/><br/>`Fabrikam::Math::LocalMath::SquareRoot(double)` (C++) |
+| Attribute | Met en correspondance les éléments qui ont l’attribut spécifié. Spécifiez le nom complet de l’attribut, par exemple `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>`.<br/><br/>Si vous excluez l’attribut <xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute>, le code qui utilise des fonctionnalités du langage comme `async`, `await` et `yield return`, et des propriétés implémentées automatiquement, est exclu de l’analyse de couverture du code. Pour exclure le code réellement généré, excluez seulement l’attribut <xref:System.CodeDom.Compiler.GeneratedCodeAttribute>. |
+| Fonction | Met en correspondance des procédures, des fonctions ou des méthodes par nom qualifié complet, y compris la liste de paramètres. Vous pouvez également faire correspondre une partie du nom à l’aide d’une [expression régulière](#regular-expressions).<br/><br/>Exemples :<br/><br/>`Fabrikam.Math.LocalMath.SquareRoot(double);` (C#)<br/><br/>`Fabrikam::Math::LocalMath::SquareRoot(double)` (C++) |
 
 ### <a name="regular-expressions"></a>Expressions régulières
 

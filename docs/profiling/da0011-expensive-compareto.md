@@ -1,5 +1,5 @@
 ---
-title: 'DA0011 : Fonction CompareTo coûteuse | Microsoft Docs'
+title: 'DA0011 : Fonction CompareTo coûteuse'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 239a381d-0d97-4367-8668-746c93f5af2c
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ee5839e91e2205a98a38ed27823a26a4a127e1ac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d0eb4566fd4c8a513b1492cecffc16cb94a1fd83
+ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62936585"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74779426"
 ---
-# <a name="da0011-expensive-compareto"></a>DA0011 : Fonction CompareTo coûteuse
+# <a name="da0011-expensive-compareto"></a>DA0011 : CompareTo coûteux
 
 |||
 |-|-|
-|ID de règle|DA0011|
+|ID de la règle|DA0011|
 |Category|Utilisation du .NET Framework|
 |Méthodes de profilage|Échantillonnage<br /><br /> Mémoire .NET|
 |Message|Les fonctions CompareTo doivent être peu coûteuses et n’allouer aucune mémoire. Réduisez si possible la complexité de la fonction CompareTo.|

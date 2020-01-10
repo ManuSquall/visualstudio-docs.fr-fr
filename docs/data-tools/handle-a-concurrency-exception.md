@@ -13,17 +13,17 @@ helpviewer_keywords:
 - updating datasets, errors
 - concurrency control, walkthroughs
 ms.assetid: 73ee9759-0a90-48a9-bf7b-9d6fc17bff93
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6096e8919d21a93af0dbf6beea2f263bd500d26c
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 462d0a9beb88a8fb6d73bf0672bb012c75b8ea93
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648432"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586599"
 ---
 # <a name="handle-a-concurrency-exception"></a>Gérer une exception d’accès concurrentiel
 
@@ -67,7 +67,7 @@ Cette procédure pas à pas utilise SQL Server Express base de données locale e
 
 Commencez par créer une nouvelle Windows Forms application :
 
-1. Dans Visual Studio, dans le menu **fichier** , sélectionnez **nouveau**  > **projet**.
+1. Dans Visual Studio, dans le menu **Fichier**, sélectionnez **Nouveau** > **Projet**.
 
 2. Développez **Visual C#**  ou **Visual Basic** dans le volet gauche, puis sélectionnez **Bureau Windows**.
 
@@ -83,7 +83,7 @@ Ensuite, créez un jeu de données nommé **NorthwindDataSet**:
 
 1. Dans le menu **données** , choisissez **Ajouter une nouvelle source de données**.
 
-   L’Assistant Configuration de source de données s’ouvre.
+   L'Assistant Configuration de source de données s'ouvre.
 
 2. Dans l’écran **choisir un type de source de données** , sélectionnez **base de**données.
 
@@ -122,7 +122,7 @@ Vous pouvez maintenant tester le formulaire pour vous assurer qu’il se comport
 
      Le formulaire s’affiche avec un contrôle de <xref:System.Windows.Forms.DataGridView> qui est rempli avec les données de la table Customers.
 
-2. Dans le menu **Déboguer** , sélectionnez **arrêter le débogage**.
+2. Dans le menu **Déboguer**, sélectionnez **Arrêter le débogage**.
 
 ## <a name="handle-concurrency-errors"></a>Gérer les erreurs d’accès concurrentiel
 
@@ -191,7 +191,7 @@ Vous pouvez maintenant tester le formulaire pour vous assurer qu’il se comport
 
 2. Une fois que le formulaire s’affiche, laissez-le s’exécuter et basculez vers l’IDE de Visual Studio.
 
-3. Dans le menu **affichage** , choisissez **Explorateur de serveurs**.
+3. Dans le menu **Affichage**, cliquez sur **Explorateur de serveurs**.
 
 4. Dans **Explorateur de serveurs**, développez la connexion que votre application utilise, puis développez le nœud **tables** .
 

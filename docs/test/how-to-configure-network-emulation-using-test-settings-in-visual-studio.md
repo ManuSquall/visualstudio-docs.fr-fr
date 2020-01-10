@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - test settings, network emulation
 ms.assetid: ff275cfb-5df9-4710-9a91-9caabaaad34f
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f49f7952b287989d6e828d92b4c3479731dc2c21
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 350640a4db6a81d19801aedb03d0d490895f97ef
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664810"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75589212"
 ---
 # <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>Guide pratique pour configurer l’émulation réseau à l’aide de paramètres de test dans Visual Studio
 
@@ -76,9 +76,9 @@ Avant d’effectuer les étapes de cette procédure, vous devez ouvrir les param
 
 4. Si vous incluez l'adaptateur de données de diagnostic de l'émulation du réseau dans les paramètres de test et que vous prévoyez de l'utiliser sur votre ordinateur local, vous devez également lier le pilote d'émulation des cartes réseau de votre ordinateur. Le pilote d'émulation de réseau est obligatoire pour que l'adaptateur de données de diagnostic de l'émulation du réseau fonctionne. Le pilote d'émulation de réseau est installé et lié à votre adaptateur de deux manières :
 
-    - **Pilote d’émulation de réseau installé avec Microsoft Visual Studio Test Agent :** Microsoft Visual Studio Test Agent peut être utilisé sur des ordinateurs distants et sur votre ordinateur local. Lorsque vous installez Visual Studio Test Agent, le processus d'installation inclut une étape de configuration qui lie le pilote d'émulation de réseau à votre carte réseau. Pour plus d’informations, consultez [Installer et configurer des agents de test](../test/lab-management/install-configure-test-agents.md).
+    - **Pilote d’émulation réseau installé avec Microsoft Visual Studio Test Agent :** Microsoft Visual Studio Test Agent peut être utilisé sur des ordinateurs distants et sur votre machine locale. Lorsque vous installez Visual Studio Test Agent, le processus d'installation inclut une étape de configuration qui lie le pilote d'émulation de réseau à votre carte réseau. Pour plus d’informations, consultez [Installer et configurer des agents de test](../test/lab-management/install-configure-test-agents.md).
 
-    - **Pilote d’émulation de réseau installé avec Microsoft Visual Studio Test Professional :** quand vous utilisez l’émulation de réseau pour la première fois, vous êtes invité à lier le pilote d’émulation de réseau à une carte réseau.
+    - **Pilote d’émulation réseau installé avec Microsoft Visual Studio Test Professional :** quand vous utilisez l’émulation réseau pour la première fois, vous êtes invité à lier le pilote d’émulation réseau à une carte réseau.
 
     > [!TIP]
     > Vous pouvez également installer le pilote d’émulation réseau à partir de la ligne de commande sur votre machine locale sans installer Visual Studio Test Agent, à l’aide de la commande suivante : **VSTestConfig NETWORKEMULATION /install**

@@ -23,7 +23,7 @@ ms.locfileid: "74299292"
 
 Pour faciliter la création d'un élément ou d'un groupe d'éléments d'après un modèle que vous utilisez souvent, vous pouvez ajouter de nouveaux outils à la boîte à outils des diagrammes de modélisation dans Visual Studio. Vous pouvez distribuer ces éléments de boîte à outils à d'autres utilisateurs de Visual Studio.
 
- Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+ Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
  Un outil personnalisé crée un ou plusieurs éléments dans un diagramme. Par exemple, vous pouvez créer un outil personnalisé pour créer des éléments tels que les suivants :
 
@@ -42,7 +42,7 @@ Pour faciliter la création d'un élément ou d'un groupe d'éléments d'après 
 
     - Ces éléments peuvent avoir des relations entre eux et peuvent avoir des éléments auxiliaires tels que des ports, des attributs, des opérations ou des broches.
 
-2. Enregistrez le diagramme en utilisant le nom que vous souhaitez donner au nouvel outil. Dans le menu **Fichier**, utilisez la commande **Enregistrer sous**.
+2. Enregistrez le diagramme en utilisant le nom que vous souhaitez donner au nouvel outil. Dans le menu **fichier** , cliquez sur **Enregistrer... Comme**.
 
 3. À l'aide de l'Explorateur Windows, copiez les deux fichiers de diagrammes dans le dossier suivant ou dans n'importe quel sous-dossier :
 
@@ -131,7 +131,7 @@ Pour faciliter la création d'un élément ou d'un groupe d'éléments d'après 
 |tabName|L'onglet de boîte à outils sous lequel l'élément doit apparaître. Vous pouvez spécifier le nom de l'onglet normal pour ce type de diagramme ou un nom distinct.|
 |image|Emplacement du fichier bitmap ( **. bmp**), qui doit avoir une hauteur et une largeur de 16, et une profondeur de couleur de 24 bits.|
 |f1Keyword|Le mot clé qui localise une rubrique d'aide.|
-|tooltip|Une info-bulle pour cet outil.|
+|info-bulle|Une info-bulle pour cet outil.|
 
  Vous pouvez modifier le fichier bitmap dans Visual Studio et affecter la valeur 16 à sa hauteur et sa largeur dans la fenêtre Propriétés.
 
@@ -147,7 +147,7 @@ Pour faciliter la création d'un élément ou d'un groupe d'éléments d'après 
 
 1. [Créez et testez un ou plusieurs outils personnalisés](#DefineTool).
 
-2. [Créez un fichier .tbxinfo](#tbxinfo) qui fait référence aux outils.
+2. [Créez un fichier. fichier tbxinfo](#tbxinfo) qui référence les outils.
 
 3. Ouvrez un projet d'extension Visual Studio existant.
 
@@ -155,13 +155,13 @@ Pour faciliter la création d'un élément ou d'un groupe d'éléments d'après 
 
      Définissez un nouveau projet d'extension Visual Studio.
 
-    1. Dans le menu **Fichier**, choisissez **Nouveau**, **Projet**.
+    1. Dans le menu **Fichier**, sélectionnez **Nouveau**, **Projet**.
 
-    2. Dans la boîte de dialogue **Nouveau projet**, sous **Modèles installés**, choisissez **Visual C#** , **Extensibilité**, **Projet VSIX**.
+    2. Dans la boîte de dialogue **nouveau projet** , sous **modèles installés**, **Choisissez C#visuel** , **extensibilité**, **projet VSIX**.
 
 4. Ajoutez vos définitions de boîte à outils au projet. Incluez le fichier **. fichier tbxinfo** , les fichiers de diagramme, les fichiers bitmap et les fichiers de ressources, et assurez-vous qu’ils sont inclus dans le VSIX.
 
-    - Dans l'Explorateur de solutions, dans le menu contextuel du projet VSIX, choisissez **Ajouter**, **Élément existant**. Dans la boîte de dialogue, définissez **Type d'objets : tous les fichiers**. Recherchez les fichiers, sélectionnez-les tous, puis choisissez **Ajouter**.
+    - Dans Explorateur de solutions, dans le menu contextuel du projet VSIX, choisissez **Ajouter**, **élément existant**. Dans la boîte de dialogue, définissez **les objets de type : tous les fichiers**. Recherchez les fichiers, sélectionnez-les tous, puis choisissez **Ajouter**.
 
         > [!NOTE]
         > Dans ce projet, vous ne pouvez pas ouvrir les fichiers de diagrammes dans l'éditeur de modèle.
@@ -176,9 +176,9 @@ Pour faciliter la création d'un élément ou d'un groupe d'éléments d'après 
 
 6. Ouvrez **source.extension.vsixmanifest**. Le fichier s'ouvre dans l'éditeur de manifeste d'extension.
 
-7. Sous **Métadonnées**, ajoutez une description des outils personnalisés.
+7. Sous **métadonnées**, ajoutez une description pour les outils personnalisés.
 
-     Sous **Composants**, choisissez **Nouveau**, puis définissez les champs dans la boîte de dialogue comme suit :
+     Sous **ressources**, choisissez **nouveau** , puis définissez les champs dans la boîte de dialogue comme suit :
 
     - **Type** = **type d’extension personnalisé**
 
@@ -191,7 +191,7 @@ Pour faciliter la création d'un élément ou d'un groupe d'éléments d'après 
 
     - **Path** = votre fichier **. fichier tbxinfo** , par exemple **mytools. fichier tbxinfo**
 
-8. Générez le projet.
+8. créer le projet ;
 
 9. **Pour vérifier que l’extension fonctionne**, appuyez sur F5. L'instance expérimentale de Visual Studio démarre.
 
@@ -203,9 +203,9 @@ Pour faciliter la création d'un élément ou d'un groupe d'éléments d'après 
 
 1. Ouvrez le fichier `.vsix` dans l'Explorateur Windows ou dans Visual Studio.
 
-2. Choisissez **Installer** dans la boîte de dialogue qui s'affiche.
+2. Choisissez **installer** dans la boîte de dialogue qui s’affiche.
 
-3. Pour désinstaller ou désactiver momentanément l'extension, ouvrez **Extensions et mises à jour** dans le menu **Outils**.
+3. Pour désinstaller ou désactiver temporairement l’extension, ouvrez **extensions et mises à jour** dans le menu **Outils** .
 
 ## <a name="localization"></a>Localisation
  Vous pouvez créer une extension qui, une fois installée sur un autre ordinateur, affiche les noms d'outils et les info-bulles dans la langue de l'ordinateur cible.
@@ -231,7 +231,7 @@ Pour faciliter la création d'un élément ou d'un groupe d'éléments d'après 
 ## <a name="other-toolbox-operations"></a>Autres opérations de boîte à outils
  En règle générale, dans [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] vous pouvez personnaliser la boîte à outils en renommant les outils, en les déplaçant vers différents onglets de la boîte à outils et en les supprimant. Toutefois, ces modifications ne sont pas conservées pour les outils de modélisation personnalisés créés avec les procédures décrites dans cette rubrique. Quand vous redémarrez [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], les outils personnalisés réapparaissent avec leurs noms et leurs emplacements dans la boîte à outils définis.
 
- De plus, vos outils personnalisés disparaissent si vous exécutez la commande **Réinitialiser la boîte à outils**. Cependant, ils réapparaissent quand vous redémarrez [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].
+ En outre, vos outils personnalisés disparaissent si vous exécutez la commande **Réinitialiser la boîte à outils** . Cependant, ils réapparaissent quand vous redémarrez [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].
 
 ## <a name="see-also"></a>Voir aussi
  [Étendre des modèles et des diagrammes UML](../modeling/extend-uml-models-and-diagrams.md) [définir un profil pour étendre UML](../modeling/define-a-profile-to-extend-uml.md) [définir une commande de menu sur un diagramme de modélisation](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [définir des contraintes de validation pour les modèles UML](../modeling/define-validation-constraints-for-uml-models.md)

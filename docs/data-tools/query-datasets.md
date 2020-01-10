@@ -6,17 +6,17 @@ dev_langs:
 - VB
 - CSharp
 ms.assetid: 7b1a91cf-8b5a-4fc0-ac36-0dc2d336fa1b
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 056d88790cda6e763ebd0531d61f7007d16d82eb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 4080866de58e17c5e11ed01d61740c2f83aed9a7
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648236"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75586339"
 ---
 # <a name="query-datasets"></a>Interroger des datasets
 Pour rechercher des enregistrements spécifiques dans un DataSet, utilisez la méthode `FindBy` sur le DataTable, écrivez votre propre instruction foreach pour effectuer une boucle sur la collection Rows de la table ou utilisez [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).
@@ -53,7 +53,7 @@ Toutefois, le respect de la casse peut être un facteur déterminant la façon d
 
 #### <a name="to-find-rows-based-on-the-values-in-any-column"></a>Pour rechercher des lignes en fonction des valeurs d’une colonne
 
-- Les tables de données sont créées avec la méthode <xref:System.Data.DataTable.Select%2A>, qui retourne un tableau de <xref:System.Data.DataRow>s en fonction de l’expression transmise à la méthode <xref:System.Data.DataTable.Select%2A>. Pour plus d’informations sur la création d’expressions valides, consultez la section « syntaxe des expressions » de la page sur la propriété <xref:System.Data.DataColumn.Expression%2A>.
+- Les tables de données sont créées à l’aide de la méthode <xref:System.Data.DataTable.Select%2A>, qui retourne un tableau de <xref:System.Data.DataRow>s en fonction de l’expression transmise à la méthode <xref:System.Data.DataTable.Select%2A>. Pour plus d’informations sur la création d’expressions valides, consultez la section « syntaxe des expressions » de la page sur la propriété <xref:System.Data.DataColumn.Expression%2A>.
 
      L’exemple suivant montre comment utiliser la méthode <xref:System.Data.DataTable.Select%2A> de la <xref:System.Data.DataTable> pour rechercher des lignes spécifiques.
 
@@ -70,13 +70,13 @@ Cette page fournit des exemples à l’aide de datasets typés. Pour plus d’in
 > [!NOTE]
 > Si vous travaillez dans une application Windows Forms et que vous utilisez les fonctionnalités de liaison de données pour afficher les données, le formulaire généré par le concepteur peut fournir suffisamment de fonctionnalités pour votre application. Pour plus d’informations, consultez [lier des contrôles à des données dans Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). Plus précisément, consultez [relations dans les jeux de données](relationships-in-datasets.md).
 
-Les exemples de code suivants montrent comment parcourir les relations vers le haut et vers le haut dans des datasets typés. Les exemples de code utilisent la <xref:System.Data.DataRow>s typée (`NorthwindDataSet.OrdersRow`) et les méthodes FindBy*PrimaryKey* (`FindByCustomerID`) générées pour localiser une ligne souhaitée et retourner les enregistrements associés. Les exemples se compilent et s’exécutent correctement uniquement si vous disposez des éléments suivants :
+Les exemples de code suivants montrent comment parcourir les relations vers le haut et vers le haut dans des datasets typés. Les exemples de code utilisent des <xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) typées et les méthodes FindBy*PrimaryKey* (`FindByCustomerID`) générées pour localiser une ligne souhaitée et retourner les enregistrements associés. Les exemples se compilent et s’exécutent correctement uniquement si vous disposez des éléments suivants :
 
 - Une instance d’un dataset nommé `NorthwindDataSet` avec une table `Customers`.
 
 - Table `Orders`.
 
-- Une relation nommée `FK_Orders_Customers`relating les deux tables.
+- Une relation nommée `FK_Orders_Customers`qui associe les deux tables.
 
 En outre, les deux tables doivent être remplies de données pour tous les enregistrements à retourner.
 
