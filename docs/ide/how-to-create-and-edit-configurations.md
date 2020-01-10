@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Créer et modifier des configurations'
+title: Guide pratique pour créer et modifier des configurations
 ms.date: 06/21/2017
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -14,19 +14,19 @@ helpviewer_keywords:
 - project build configurations, creating
 - project build configurations, editing
 ms.assetid: 19be121c-148e-4ece-bbfc-d20b08cfc3f7
-author: ghogen
-ms.author: ghogen
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6fdf3fa790a29f94a5bf3b40bc0d2ada703bc5b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: bb47a1b136f4f1e584b9b1b6f99fde7008ecc902
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925760"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75595291"
 ---
-# <a name="how-to-create-and-edit-configurations"></a>Procédure : Créer et modifier des configurations
+# <a name="how-to-create-and-edit-configurations"></a>Guide pratique pour créer et modifier des configurations
 
 Vous pouvez créer plusieurs configurations de build pour une solution. Par exemple, vous pouvez configurer une build de débogage que vos testeurs peuvent utiliser pour rechercher et résoudre des problèmes. Vous pouvez également configurer différents types de builds que vous pouvez distribuer à des clients différents.
 
