@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eed389a3847145a0f37eb3141526a38e4374d368
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 6de07c705129aaef705d0c9651d53fdf35e6d0c0
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297911"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850750"
 ---
 # <a name="network-usage"></a>Utilisation du réseau
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,5 +75,5 @@ L’outil de diagnostic **Réseau** de Visual Studio collecte les données relat
   
 ## <a name="see-also"></a>Voir aussi  
  [Exécuter les outils de profilage sans débogage](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
- [Blog Visual Studio : Présentation de l’inspecteur de réseau de Visual Studio](https://go.microsoft.com/fwlink/?LinkId=535022)   
+ [Blog Visual Studio : Présentation de l’inspecteur de réseau de Visual Studio](https://blogs.msdn.com/b/visualstudio/)   
  [Vidéo Channel 9 : Diagnostics tools – New Network Profiler](https://channel9.msdn.com/Series/ConnectOn-Demand/206)

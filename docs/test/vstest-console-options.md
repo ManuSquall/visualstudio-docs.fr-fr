@@ -10,12 +10,12 @@ author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d4c44719854714658c1c15bf7059e49f4e668bd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c65b9da1e8273b7e765d45c3d965e26b11d26632
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590421"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850279"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Options de ligne de commande VSTest.Console.exe
 
@@ -55,7 +55,7 @@ Le tableau suivant répertorie toutes les options de *VSTest.Console.exe*, ainsi
 |**/ResultsDirectory:[*chemin*]**|Un répertoire de résultats de test sera créé dans le chemin d’accès spécifié s’il n’en existe pas.<br />Exemple : `/ResultsDirectory:<pathToResultsDirectory>`|
 |**/ParentProcessId:[*ID_processus_parent*]**|ID du processus parent chargé de lancer le processus actif.|
 |**/Port:[*port*]**|Port de connexion de socket et de réception des messages d’événement.|
-|**/Collect:[*nom_convivial collecteur_de_données*]**|Active le collecteur de données pour la série de tests. [Complément d’information](https://aka.ms/vstest-collect).|
+|**/Collect:[*nom_convivial collecteur_de_données*]**|Active le collecteur de données pour la série de tests. [Complément d’information](https://github.com/Microsoft/vstest-docs/blob/master/docs/analyze.md).|
 
 > [!TIP]
 > Les options et les valeurs ne respectent pas la casse.

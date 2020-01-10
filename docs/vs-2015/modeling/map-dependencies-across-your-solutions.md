@@ -29,12 +29,12 @@ caps.latest.revision: 245
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b25d23b7c65742ffddadbe178d7550dc1794414a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 4395dbc212514a71f8c4119d8f0778280dee81aa
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296335"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847627"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Mapper les dépendances dans vos solutions
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,11 +45,11 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
 
  **Voici quelques vidéos**:
 
-- [Comprendre les dépendances existant dans votre code grâce à la virtualisation](https://go.microsoft.com/fwlink/?LinkID=252065)
+- [Comprendre les dépendances existant dans votre code grâce à la virtualisation](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Understand-your-code-dependencies-through-visualization)
 
-- [Visualisation de l’impact d’une modification](https://go.microsoft.com/fwlink/?LinkID=252068)
+- [Visualisation de l’impact d’une modification](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Visualize-the-impact-of-a-change)
 
-- [Présentation du code complexe avec des cartes de code](https://go.microsoft.com/fwlink/?LinkID=259869)
+- [Présentation du code complexe avec des cartes de code](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Understanding-complex-code-with-Code-Map-ENU)
 
 ## <a name="GetStarted"></a> Prise en main des cartes de code
  **Pour utiliser des cartes de code, il vous l’un des éléments suivants**:
@@ -181,7 +181,7 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
 
      ![Sélectionner des éléments pour afficher les relations](../modeling/media/codemapsviewnewrelationships.png "CodeMapsViewNewRelationships")
 
-    Voir aussi :
+    Voir aussi :
 
 - [Parcourir et réorganiser des cartes de code](../modeling/browse-and-rearrange-code-maps.md)
 
@@ -205,7 +205,7 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
 
 ### <a name="see-specific-dependencies-in-your-solution"></a>Visualiser les dépendances spécifiques dans votre solution
 
-1. Ouvrez l'**Explorateur de solutions**. Sélectionnez les projets, références d’assembly, dossiers, fichiers, types et membres qui vous intéressent. Pour rechercher les éléments qui ont des dépendances sur les types ou les membres, ouvrez le menu contextuel du type ou du membre depuis l’ **Explorateur de solutions**. Choisissez le type de dépendance, puis sélectionnez les résultats.
+1. Ouvrez l’ **Explorateur de solutions**. Sélectionnez les projets, références d’assembly, dossiers, fichiers, types et membres qui vous intéressent. Pour rechercher les éléments qui ont des dépendances sur les types ou les membres, ouvrez le menu contextuel du type ou du membre depuis l’ **Explorateur de solutions**. Choisissez le type de dépendance, puis sélectionnez les résultats.
 
 2. Créez une carte de vos éléments et de leurs membres. Dans la barre d’outils **Explorateur de solutions** , cliquez sur **afficher sur la carte de code**![créer un graphique à partir des nœuds sélectionnés](../modeling/media/createnewgraphfromselectedbutton.gif "CreateNewGraphFromSelectedButton").
 
@@ -232,7 +232,7 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
 
      Pour afficher les membres qui figurent dans le code, mais qui n’apparaissent pas sur la carte, cliquez sur l’icône récupérer à l’icône des **enfants** récupérer les ![enfants](../modeling/media/dependencygraph-deletednodesicon.png "DependencyGraph_DeletedNodesIcon") dans le coin supérieur gauche d’un groupe.
 
-6. Pour afficher d’autres d’éléments associés à ceux présents sur la carte, sélectionnez un élément et choisissez **Afficher les éléments associés** dans la barre d’outils de la carte de code, puis sélectionnez le type d’éléments associés à ajouter à la carte. Vous pouvez également sélectionner un ou plusieurs éléments, ouvrir le menu contextuel, puis choisir l’option **Afficher** pour le type d’éléments associés à ajouter à la carte. Exemple :
+6. Pour afficher d’autres d’éléments associés à ceux présents sur la carte, sélectionnez un élément et choisissez **Afficher les éléments associés** dans la barre d’outils de la carte de code, puis sélectionnez le type d’éléments associés à ajouter à la carte. Vous pouvez également sélectionner un ou plusieurs éléments, ouvrir le menu contextuel, puis choisir l’option **Afficher** pour le type d’éléments associés à ajouter à la carte. Par exemple :
 
      Pour un **assembly**, choisissez :
 
@@ -316,7 +316,7 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
 ||Le fichier de base de données du programme (.pdb) peut ne pas être généré.<br /><br /> Un fichier .pdb stocke des informations de débogage, telles que des informations sur le type, la méthode et le fichier source.|Activez l’option **/DEBUG** dans l’éditeur de liens.<br /><br /> Consultez [/DEBUG (Generate Debug Info)](https://msdn.microsoft.com/library/1af389ae-3f8b-4d76-a087-1cdf861e9103).|
 ||Impossible d’ouvrir ou de localiser le fichier .pdb aux emplacements attendus.|Assurez-vous que le fichier .pdb existe dans les emplacements attendus.|
 ||Les informations de débogage ont été supprimées du fichier .pdb.|Si l’option **/PDBSTRIPPED** a été utilisée dans l’éditeur de liens, incluez à la place le fichier .pdb complet.<br /><br /> Consultez [/PDBSTRIPPED (Strip Private Symbols)](https://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55).|
-||L’appelant n’est pas une fonction ; il correspond à un thunk dans le fichier binaire ou à un pointeur dans la section de données.|Lorsque l’appelant est un thunk, essayez d’utiliser `_declspec(dllimport)` pour éviter le thunk.<br /><br /> Reportez-vous à :<br /><br /> -   [règles générales et limitations](https://msdn.microsoft.com/library/6c48902d-4259-4761-95d4-e421d69aa050)<br />-   [importation des appels de fonction à l’aide de __declspec (dllimport)](https://msdn.microsoft.com/library/6b53c616-0c6d-419a-8e2a-d2fff20510b3)<br />-   [dllexport, DllImport](https://msdn.microsoft.com/library/ff95b645-ef55-4e72-b848-df44657b3208)|
+||L’appelant n’est pas une fonction ; il correspond à un thunk dans le fichier binaire ou à un pointeur dans la section de données.|Lorsque l’appelant est un thunk, essayez d’utiliser `_declspec(dllimport)` pour éviter le thunk.<br /><br /> Consultez :<br /><br /> -   [règles générales et limitations](https://msdn.microsoft.com/library/6c48902d-4259-4761-95d4-e421d69aa050)<br />-   [importation des appels de fonction à l’aide de __declspec (dllimport)](https://msdn.microsoft.com/library/6b53c616-0c6d-419a-8e2a-d2fff20510b3)<br />-   [dllexport, dllimport](https://msdn.microsoft.com/library/ff95b645-ef55-4e72-b848-df44657b3208)|
 
 ## <a name="RenderMoreQuickly"></a> Accélérer le rendu des cartes de code
  Quand vous générez une carte pour la première fois, Visual Studio indexe toutes les dépendances qu’il trouve. Ce processus peut prendre un certain temps, en particulier pour les solutions importantes, mais il améliore les performances ultérieures. Si votre code change, Visual Studio réindexe uniquement le code mis à jour. Pour réduire le temps nécessaire au rendu de la carte, considérez les points suivants :
@@ -344,9 +344,9 @@ Pour comprendre les dépendances présentes dans votre code, vous pouvez les vis
 ### <a name="share-the-map-with-other-visual-studio-users"></a>Partager la carte avec d’autres utilisateurs de Visual Studio
  Utilisez le menu **Fichier** pour enregistrer la carte.
 
- -ou-
+ \- ou -
 
- Pour enregistrer la carte dans le cadre d’un projet spécifique, dans la barre d’outils de la carte, choisissez **Partager**, puis **Déplacer** \<*CodeMapName*> **.dgml vers**, puis choisissez le projet dans lequel vous souhaitez enregistrer la carte.
+ Pour enregistrer la carte dans le cadre d’un projet spécifique, dans la barre d’outils de la carte, choisissez **partager**, **déplacez** \<*CodeMapName*> **. dgml dans**, puis choisissez le projet dans lequel vous souhaitez enregistrer la carte.
 
  ![Déplacer un mappage dans un autre projet](../modeling/media/codemapsmovemapmenu.png "CodeMapsMoveMapMenu")
 

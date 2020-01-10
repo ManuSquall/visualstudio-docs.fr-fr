@@ -18,17 +18,17 @@ caps.latest.revision: 31
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 16232a72cd37f8d1d68760f032b6050e0bdf74c5
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 65059e285777e48633da5eb7e8723e3997f37dfa
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300357"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844448"
 ---
 # <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>Comment : dépanner les échecs de mise à niveau de projets Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Parfois, Visual Studio ne peut pas convertir entièrement un projet à partir d’une version antérieure de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Si les conseils des sections suivantes ne permettent pas de résoudre votre problème spécifique, vous pouvez trouver plus d’informations sur TechNet [wiki : portail de développement](https://go.microsoft.com/fwlink/?LinkId=254808).
+Parfois, Visual Studio ne peut pas convertir entièrement un projet à partir d’une version antérieure de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Si les conseils des sections suivantes ne permettent pas de résoudre votre problème spécifique, vous pouvez trouver plus d’informations sur TechNet [wiki : portail de développement](https://social.technet.microsoft.com/wiki/contents/articles/706.wiki-development-portal.aspx#Visual_Studio).
 
 ## <a name="the-project-does-not-run-because-files-are-not-found"></a>Le projet ne s’exécute pas, car les fichiers sont introuvables
  Un fichier projet contient des chemins d’accès aux fichiers codés en dur que [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] utilise pour exécuter le projet quand vous appuyez sur F5. Ces chemins d’accès peuvent inclure l’emplacement de devenv. exe et d’autres fichiers requis. Dans une version mise à niveau de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], les chemins d’accès de ces fichiers ont peut-être été modifiés.

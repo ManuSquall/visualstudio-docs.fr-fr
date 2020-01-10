@@ -10,12 +10,12 @@ ms.assetid: 800fc739-acd2-4242-84cb-1d83b4d82cf9
 caps.latest.revision: 38
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8c7ec729c81f11096a55e87cea528764e500b535
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 737311167fc1f444d5c0f8a5d2c27e2fe321da75
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297966"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851250"
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>Utilisation de la couverture du code pour déterminer la quantité de code testé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Pour déterminer la proportion de code de votre projet qui sera réellement test
 
  ![Résultats de couverture du code avec coloration](../test/media/codecoverage1.png "CodeCoverage1")
 
- **Requirements**
+ **Spécifications**
 
 - Visual Studio Enterprise
 
@@ -36,7 +36,7 @@ Pour déterminer la proportion de code de votre projet qui sera réellement test
 
 1. Dans le menu **Test**, choisissez **Analyser la couverture du code**.
 
-2. Pour afficher les lignes qui ont été exécutées, choisissez afficher l’icône de coloration de la ![couverture du](../test/media/codecoverage-showcoloringicon.png "CodeCoverage-ShowColoringIcon")code afficher la coloration de la**couverture du code**.
+2. Pour voir les lignes qui ont été exécutées, choisissez ![Icône Afficher la coloration de la couverture du code](../test/media/codecoverage-showcoloringicon.png "CodeCoverage-ShowColoringIcon")**Afficher la coloration de la couverture du code**.
 
      Pour modifier les couleurs ou utiliser des caractères gras, choisissez **Outils**, **Options**, **Environnement**, **Polices et couleurs**, **Afficher les paramètres de : Éditeur de texte**. Sous **Éléments affichés**, ajustez les éléments de couverture.
 
@@ -81,7 +81,7 @@ Pour déterminer la proportion de code de votre projet qui sera réellement test
 
  Supposons par exemple que, lorsque vous exécutez un test avec l'entrée « 2 », vous constatez que 50 % d'une fonction spécifique est couvert. Lorsque vous exécutez le test une deuxième fois avec l'entrée « -2 », vous constatez dans la vue de coloration de couverture que le reste de la fonction (50 %) est couvert. Fusionnez maintenant les résultats des deux séries de tests. Le rapport et la vue de coloration de couverture indiquent que la fonction a été couverte à 100 %.
 
- Utilisez l' ![icône pour le bouton fusionner dans la fenêtre de couverture du code](../test/media/codecoverage-mergeicon.png "CodeCoverage-MergeIcon")**fusionner les résultats de couverture du code** pour ce faire. Vous pouvez choisir n'importe quelle combinaison de séries récentes ou de résultats importés. Si vous souhaitez combiner des résultats exportés, vous devez d'abord les importer.
+ Pour cela, utilisez ![Icône du bouton Fusionner dans la fenêtre Couverture du code](../test/media/codecoverage-mergeicon.png "CodeCoverage-MergeIcon")**Fusionner les résultats de la couverture du code**. Vous pouvez choisir n'importe quelle combinaison de séries récentes ou de résultats importés. Si vous souhaitez combiner des résultats exportés, vous devez d'abord les importer.
 
  Utilisez **Exporter les résultats de la couverture du code** pour enregistrer les résultats d’une opération de fusion.
 
@@ -96,7 +96,7 @@ Pour déterminer la proportion de code de votre projet qui sera réellement test
 ## <a name="excluding-elements-from-the-code-coverage-results"></a>Exclusion d'éléments des résultats de la couverture du code
  Vous pouvez exclure des éléments spécifiques dans votre code à partir des notes de couverture, par exemple si le code est généré à partir d'un modèle de texte. Ajoutez l'attribut `System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage` aux éléments de code suivants : classe, structure, méthode, propriété, accesseur Set ou accesseur Get de propriété, événement. Notez que l'exclusion d'une classe n'exclut pas ses classes dérivées.
 
- Exemple :
+ Par exemple :
 
 ```csharp
 
@@ -221,9 +221,9 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
  Utilisez les macros suivante :
 
- `ExcludeFromCodeCoverage(` *NomExclusion* `, L"` *NomFonction* `");`
+ `ExcludeFromCodeCoverage(` *nomexclusion* `, L"` *nomfonction* `");`
 
- `ExcludeSourceFromCodeCoverage(` *NomExclusion* `, L"` *CheminFichierSource* `");`
+ `ExcludeSourceFromCodeCoverage(` *nomexclusion* `, L"` *cheminfichiersource* `");`
 
 - *NomExclusion* est un nom unique.
 
@@ -280,8 +280,8 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 
 ## <a name="external-resources"></a>Ressources externes
 
-### <a name="guidance"></a>Conseils
- [Test de la livraison continue avec Visual Studio 2012 - Chapitre 2 : Tests unitaires : tester l’intérieur](https://go.microsoft.com/fwlink/?LinkID=255188)
+### <a name="guidance"></a>Aide
+ [Tester la livraison continue avec Visual Studio 2012 - Chapitre 2 : Tests unitaires : tester l’intérieur](https://msdn.microsoft.com/library/jj159340.aspx)
 
 ## <a name="see-also"></a>Voir aussi
  [Personnalisation de l’analyse de couverture du code](../test/customizing-code-coverage-analysis.md) [résolution des problèmes](../test/troubleshooting-code-coverage.md) [unitaires de](../test/unit-test-your-code.md) couverture du code

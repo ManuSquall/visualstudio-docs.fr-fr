@@ -24,12 +24,12 @@ caps.latest.revision: 43
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: da4e0e3bab904b660f3d843e105b7d256a63a1b5
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 06e83e254cad77d4ede9716a18a51f6476fb51ad
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297222"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850178"
 ---
 # <a name="uml-class-diagrams-reference"></a>Diagrammes de classes UML : référence
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "74297222"
 Un diagramme de classes UML décrit les structures des objets et des informations utilisés par votre application, à la fois en interne et en communication avec ses utilisateurs. Il décrit les informations sans référence à une implémentation particulière. Ses classes et relations peuvent être implémentées de différentes manières, par exemple avec des tables de bases de données, des nœuds XML ou des compositions d'objets logiciels.
 
 > [!NOTE]
-> Cette rubrique concerne les diagrammes de classes UML. Il existe un autre genre de diagramme de classes, le diagramme de classes .NET, qui sert à visualiser le code de programme. Pour plus d’informations, consultez [conception et affichage des classes et des types](https://go.microsoft.com/fwlink/?LinkId=142231).
+> Cette rubrique concerne les diagrammes de classes UML. Il existe un autre genre de diagramme de classes, le diagramme de classes .NET, qui sert à visualiser le code de programme. Pour plus d’informations, consultez [conception et affichage des classes et des types](https://msdn.microsoft.com/library/ab7aty24.aspx).
 
  Pour créer un diagramme de classes UML, dans le menu **architecture** , choisissez **nouveau diagramme UML ou diagramme de couche**. Pour plus d’informations sur la façon de dessiner des diagrammes de classes UML, consultez [diagrammes de classes UML : indications](../modeling/uml-class-diagrams-guidelines.md). Pour plus d’informations sur la création et le dessin de diagrammes de modélisation, consultez [modifier des modèles et des diagrammes UML](../modeling/edit-uml-models-and-diagrams.md).
 
@@ -76,9 +76,9 @@ Un diagramme de classes UML décrit les structures des objets et des information
 |Forme|Élément|Description|
 |-----------|-------------|-----------------|
 |10|**Interface**|Définition d'une partie du comportement extérieurement visible d'un objet. Pour plus d’informations, consultez [Propriétés de types dans des diagrammes de classes UML](../modeling/properties-of-types-on-uml-class-diagrams.md).|
-|11|**Enumeration**|Classifieur composé d'un ensemble de valeurs littérales.|
+|11|**Énumération**|Classifieur composé d'un ensemble de valeurs littérales.|
 |12|**Package**|Groupe de classifieurs, associations, actions, lignes de vie, composants et packages. Un diagramme de classes logique montre que les packages et les classifieurs de membres sont contenus dans le package.<br /><br /> Les noms sont étendus au sein des packages afin que **Class1** dans **package1** soit distinct de **Class1** en dehors de ce package. Le nom du package s’affiche dans les propriétés de **nom qualifié** de son contenu.<br /><br /> Vous pouvez définir la propriété **package lié** d’un diagramme UML pour faire référence à un package. Tous les éléments que vous créez dans ce diagramme feront alors partie du package. Ils s’affichent sous le package dans l' **Explorateur de modèles UML**.|
-|13|**Importerer**|Relation entre des packages, indiquant qu'un package inclut toutes les définitions d'un autre.|
+|13|**Import**|Relation entre des packages, indiquant qu'un package inclut toutes les définitions d'un autre.|
 |14|**Dépendance**|La définition ou l'implémentation du classifieur dépendant peut changer si le classifieur à l'extrémité fléchée est modifié.|
 
  ![Réalisation affichée avec connecteur et Lollipop](../modeling/media/uml-classovrealize.png "UML_ClassOvRealize")

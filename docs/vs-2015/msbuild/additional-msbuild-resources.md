@@ -599,12 +599,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 031ffa0daa899429454faf64819a6778022a5645
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 6460d26ea7b7240cf54dfe3379ec75634bc5465d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298220"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847058"
 ---
 # <a name="additional-msbuild-resources"></a>Ressources MSBuild supplémentaires
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -615,12 +615,12 @@ Si vous tentez de résoudre un problème et ne trouvez pas les informations dont
  Vous pouvez explorer la Base de connaissances en ligne pour rechercher des articles sur les problèmes du produit. Tous les problèmes ne possèdent pas un article dans la Base de connaissances, mais les erreurs rencontrées par un nombre significatif de clients sont en principe documentées. Vous pouvez accéder aux articles de la Base de connaissances sur le site web [Base de connaissances (résultats de la recherche MSBuild)](https://search.microsoft.com/supportresults.aspx?q=knowledge+base+MSBuild&x=0&y=0).  
   
 ## <a name="community-forums"></a>Forums de communautés  
- Dans les forums, vous pouvez dialoguer avec les autres développeurs et avec les employés Microsoft. Si vous rencontrez une erreur pour laquelle vous ne trouvez pas de résolution, vous pouvez publier vos questions sur le problème dans un forum. Vous pouvez aussi explorer les groupes de discussion pour voir si d’autres utilisateurs ont déjà soumis le même problème. Vous pouvez accéder au forum Visual Studio MSBuild sur le site web [Forums MSDN](https://go.microsoft.com/fwlink/?LinkId=48931).  
+ Dans les forums, vous pouvez dialoguer avec les autres développeurs et avec les employés Microsoft. Si vous rencontrez une erreur pour laquelle vous ne trouvez pas de résolution, vous pouvez publier vos questions sur le problème dans un forum. Vous pouvez aussi explorer les groupes de discussion pour voir si d’autres utilisateurs ont déjà soumis le même problème. Vous pouvez accéder au forum Visual Studio MSBuild sur le site web [Forums MSDN](https://social.msdn.microsoft.com/forums/en-US/msbuild/threads/).  
   
  Vous pouvez accéder aux ressources de la communauté [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] sur le site web [Channel 9 MSBuild](https://channel9.msdn.com/).  
   
 ## <a name="product-support"></a>Support technique  
- Si vous avez encore des questions après avoir consulté les autres ressources, contactez les services de support technique Microsoft en visitant le site web [Aide et support Microsoft](https://go.microsoft.com/fwlink/?linkid=1782). Pour plus d’informations sur le support technique disponible dans votre région, consultez [Nous contacter](../ide/talk-to-us.md).  
+ Si vous avez encore des questions après avoir consulté les autres ressources, contactez les services de support technique Microsoft en visitant le site web [Aide et support Microsoft](https://support.microsoft.com/). Pour plus d’informations sur le support technique disponible dans votre région, consultez [Nous contacter](../ide/talk-to-us.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Dépannage des erreurs de ciblage du .NET Framework](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)

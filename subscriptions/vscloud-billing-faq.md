@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: Questions relatives à la facturation pour les abonnements cloud.
-ms.openlocfilehash: 12ff77a052e54520885642cb3cd6ed1dea31506b
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: c4544df196d3e861522dfcbb877a90a5656ad7ba
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491261"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851412"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>FAQ sur la facturation des abonnements cloud Visual Studio
 [Comparez les avantages des abonnements cloud et les prix](https://visualstudio.microsoft.com/vs/pricing/) afin de bien comprendre les avantages offerts par chaque abonnement Visual Studio. Découvrez les différences entre les abonnements standard et cloud de Visual Studio, obtenez des détails sur les avantages offerts aux abonnés et bien plus encore.
@@ -37,7 +37,7 @@ R : L’approche la plus simple pour déterminer si vous avez les autorisations
 Vous devez sélectionner un abonnement Azure (qui est un compte de facturation) dans la liste des abonnements Azure qui sont actuellement liés à votre connexion.
 Étant donné que le nom de l’abonnement Azure est par défaut le type de compte de facturation (« Paiement à l’utilisation », « Contrat Entreprise » et ainsi de suite), il est souvent facile de savoir si l’abonnement Azure fait partie de votre contrat Entreprise.
 
-Une autre approche consiste à essayer d’accéder à [Azure Enterprise Portal](https://ea.azure.com).  Si vous pouvez y accéder, cela signifie que vous avez déjà le rôle d’administrateur d’entreprise ou de propriétaire de compte. Seuls les propriétaires de compte peuvent définir de nouveaux comptes de facturation Azure dans un contrat Entreprise. Si vous ne pouvez pas accéder à Azure Enterprise Portal, renseignez-vous au sein de votre organisation pour savoir qui est votre administrateur d’entreprise et demandez-lui de vous ajouter en tant que propriétaire de compte dans Azure Enterprise Portal.  Si vous ne parvenez pas à identifier l’administrateur d’entreprise, vous pouvez [envoyer un ticket de support](https://aka.ms/AzureEntSupport) et demander les informations de contact.  Pour le ticket de support, vous avez besoin du nom de votre organisation et de votre numéro d’inscription Contrat Entreprise.
+Une autre approche consiste à essayer d’accéder à [Azure Enterprise Portal](https://ea.azure.com).  Si vous pouvez y accéder, cela signifie que vous avez déjà le rôle d’administrateur d’entreprise ou de propriétaire de compte. Seuls les propriétaires de compte peuvent définir de nouveaux comptes de facturation Azure dans un contrat Entreprise. Si vous ne pouvez pas accéder à Azure Enterprise Portal, renseignez-vous au sein de votre organisation pour savoir qui est votre administrateur d’entreprise et demandez-lui de vous ajouter en tant que propriétaire de compte dans Azure Enterprise Portal.  Si vous ne parvenez pas à identifier l’administrateur d’entreprise, vous pouvez [envoyer un ticket de support](https://support.microsoft.com/supportrequestform/cf791efa-485b-95a3-6fad-3daf9cd4027c) et demander les informations de contact.  Pour le ticket de support, vous avez besoin du nom de votre organisation et de votre numéro d’inscription Contrat Entreprise.
 
 ### <a name="q-can-i-use-the-azure-monetary-commitment-funds-from-my-enterprise-agreement-to-buy-visual-studio-cloud-subscriptions"></a>Q : Puis-je utiliser les crédits de contrat de licence prépayé Azure de mon contrat Entreprise pour acheter des abonnements cloud Visual Studio ?
 R : Non, ces crédits prépayés ne sont pas éligibles pour l’achat d’abonnements cloud Visual Studio. Quand vous choisissez un abonnement Azure qui a été créé pour votre contrat Entreprise afin d’acheter des abonnements cloud Visual Studio, les frais figureront sur votre prochaine facture de « dépassement ». En général, cela se produit chaque mois, mais en raison des règles d’historique pour certains clients avec un contrat Entreprise, une facture de dépassement peut ne pas être émise avant plusieurs mois. Veuillez consulter un spécialiste en licences pour votre contrat Entreprise si vous souhaitez connaître le montant des achats supplémentaires (achats qui ne sont pas éligibles pour les crédits de contrat de licence prépayé Azure) qui déclenchera une facture de dépassement.
@@ -65,7 +65,7 @@ R : Vous bénéficiez d’une remise de 5 % à partir du sixième abonnement *
 
 * Visual Studio Professional mensuel
 * Visual Studio Professional annuel
-* Visual Studio Enterprise, mensuel
+* Visual Studio Enterprise mensuel
 * Visual Studio Enterprise, annuel
 
 Par exemple, si vous achetez six abonnements mensuels Visual Studio Professional et cinq abonnements mensuels Visual Studio Enterprise, vous payez le prix normal pour cinq abonnements Professional, vous bénéficiez d’une remise de 5 % sur le sixième abonnement Professional, et vous payez le prix normal pour les cinq abonnements Enterprise.
@@ -73,7 +73,7 @@ Par exemple, si vous achetez six abonnements mensuels Visual Studio Professional
 En outre, la remise s’applique uniquement aux frais durant une période de facturation mensuelle donnée. Ainsi, si vous achetez cinq abonnements annuels Visual Studio Professional durant un mois, et que vous achetez ensuite cinq abonnements supplémentaires le mois suivant, vous payez le prix normal pour les dix abonnements.
 
 > [!NOTE]
-> Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à consulter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
+> Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à accéder à [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
 
 ## <a name="other-questions"></a>Autres questions
 ### <a name="q-can-i-use-the-monthly-azure-devtest-individual-credit-as-a-visual-studio-subscriber-to-buy-more-visual-studio-cloud-subscriptions"></a>Q : puis-je utiliser le crédit individuel Azure DevTest mensuel en tant qu’abonné Visual Studio pour acheter davantage d’abonnements Cloud Visual Studio ?
@@ -82,7 +82,7 @@ Avant d’effectuer des achats, vous devrez [supprimer votre limite de dépense]
 
 ### <a name="q-whats-the-difference-between-annual-and-monthly-cloud-subscriptions"></a>Q : Quelle est la différence entre les abonnements cloud annuels et mensuels ?
 R : Les abonnements cloud mensuels incluent Visual Studio, et l’utilisation d’Azure DevOps Services et de TFS. Les abonnements Cloud annuels en ont également besoin, mais incluent également les avantages de l’abonné, y compris l’utilisation de Windows et d’autres logiciels Microsoft pour l’installation et l’exécution pour le développement et le test, un crédit Azure mensuel DevTest individuel à utiliser pour expérimenter avec Azure les services et le développement et le test dans le Cloud, la formation, le support et bien plus encore.
-[Comparer les avantages et les prix des abonnements cloud](https://visualstudio.microsoft.com/vs/pricing/)
+[Comparer les avantages et les tarifs des abonnements cloud](https://visualstudio.microsoft.com/vs/pricing/)
 
 ### <a name="q-do-i-get-new-versions-of-visual-studio-if-i-buy-a-visual-studio-cloud-subscription"></a>Q : Est-ce que j’ai accès aux nouvelles versions de Visual Studio si je souscris un abonnement cloud Visual Studio ?
 R : oui. Vous pouvez télécharger et exécuter les nouvelles versions dès leur publication. Vous pouvez aussi continuer à exécuter les versions précédentes.

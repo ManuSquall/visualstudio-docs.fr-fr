@@ -14,12 +14,12 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 879d8457a0f5fd4bf63a2d69a4f3f026ce4c6fe1
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: d230d9a4719e1757820de87b60bcc7566a785f99
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74294668"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844018"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Création d'une interface utilisateur à l'aide du concepteur XAML dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Le concepteur XAML dans Visual Studio fournit une interface visuelle pour vous a
 
  **Lignes d’alignement** : les lignes d’alignement sont des *limites d’alignement* qui apparaissent sous forme de lignes en pointillés rouges quand les bords des contrôles sont alignés ou que les lignes de base de texte sont alignées. Les limites d'alignement n'apparaissent que si l' **alignement sur les lignes d'alignement** est activé.
 
- **Quadrillages** : les quadrillages de `Grid` permettent de gérer les lignes et les colonnes dans un panneau [Grille](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx). Vous pouvez créer et supprimer des lignes et des colonnes, ainsi qu'ajuster leurs largeurs et hauteurs relatives. Le quadrillage de grille vertical, qui apparaît à gauche de la planche graphique, est utilisé pour les lignes, et la ligne horizontale, qui apparaît en haut, est utilisée pour les colonnes.
+ Des **rails de grille** `Grid` rails permettent de gérer les lignes et les colonnes dans un panneau [grille](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx) . Vous pouvez créer et supprimer des lignes et des colonnes, ainsi qu'ajuster leurs largeurs et hauteurs relatives. Le quadrillage de grille vertical, qui apparaît à gauche de la planche graphique, est utilisé pour les lignes, et la ligne horizontale, qui apparaît en haut, est utilisée pour les colonnes.
 
  **Ornements de grille** : un ornement de `Grid` apparaît sous la forme d’un triangle avec une ligne verticale ou horizontale qui y est rattachée sur le quadrillage de `Grid`. Quand vous faites glisser un ornement `Grid` , les largeurs ou hauteurs des lignes ou colonnes adjacentes se mettent à jour au fur et à mesure que vous déplacez la souris.
 
@@ -128,12 +128,12 @@ Le concepteur XAML dans Visual Studio fournit une interface visuelle pour vous a
 
   **Rétablir l’étendue à la racine de la page** : l’option en haut de la fenêtre Structure du document, qui présente un symbole de flèche vers le haut, rétablit la structure du document à l’étendue précédente. La portée supérieure n'est applicable que quand vous êtes dans la portée d'un style ou d'un modèle.
 
-## <a name="properties-window"></a>Fenêtre Propriétés
+## <a name="properties-window"></a>Propriétés (fenêtre)
  La fenêtre Propriétés vous permet de définir des valeurs de propriété sur les contrôles. Il ressemble à ceci :
 
  ![Fenêtre Propriétés](../designers/media/xaml-editor-prop-window.png "xaml_editor_prop_window")
 
- Plusieurs options apparaissent en haut de la fenêtre Propriétés. Vous pouvez modifier le nom de l'élément actuellement sélectionné à l'aide de la zone **Nom** . Dans le coin supérieur gauche, il existe une icône qui représente l'élément actuellement sélectionné. Pour réorganiser les propriétés par catégorie ou par ordre alphabétique, cliquez sur **Catégorie**, **Nom**ou **Source** dans la liste **Réorganiser par** . Pour afficher la liste des événements pour un contrôle, cliquez sur le bouton **Événements** , symbolisé par un éclair. Pour rechercher une propriété, commencez à taper son nom dans la zone **Propriétés de recherche** . La fenêtre Propriétés affiche les propriétés correspondant aux termes de recherche en cours de frappe. Certaines propriétés vous permettent de définir des propriétés avancées en sélectionnant un bouton de flèche vers le bas. Pour plus d’informations sur l’utilisation des propriétés et la gestion des événements, consultez [Démarrage rapide : ajout de contrôles et gestion des événements](https://go.microsoft.com/fwlink/?LinkID=247983)
+ Plusieurs options apparaissent en haut de la fenêtre Propriétés. Vous pouvez modifier le nom de l'élément actuellement sélectionné à l'aide de la zone **Nom** . Dans le coin supérieur gauche, il existe une icône qui représente l'élément actuellement sélectionné. Pour réorganiser les propriétés par catégorie ou par ordre alphabétique, cliquez sur **Catégorie**, **Nom**ou **Source** dans la liste **Réorganiser par** . Pour afficher la liste des événements pour un contrôle, cliquez sur le bouton **Événements** , symbolisé par un éclair. Pour rechercher une propriété, commencez à taper son nom dans la zone **Propriétés de recherche** . La fenêtre Propriétés affiche les propriétés correspondant aux termes de recherche en cours de frappe. Certaines propriétés vous permettent de définir des propriétés avancées en sélectionnant un bouton de flèche vers le bas. Pour plus d’informations sur l’utilisation des propriétés et la gestion des événements, consultez [Démarrage rapide : ajout de contrôles et gestion des événements](https://msdn.microsoft.com/library/windows/apps/xaml/hh465336.aspx)
 
  À droite de chaque valeur de propriété figure un *marqueur de propriété* qui apparaît comme un symbole de zone. L'apparence du marqueur de propriété indique s'il y a une liaison de données ou une ressource appliquée à la propriété. Par exemple, un symbole de zone vide indique une valeur par défaut, un symbole de zone noire indique généralement qu'une ressource locale a été appliquée, et enfin une zone orange indique généralement qu'une liaison de données a été appliquée. Quand vous cliquez sur le marqueur de propriété, vous pouvez accéder à la définition d'un style, ouvrir le générateur de liaisons de données ou ouvrir le sélecteur de ressources.
 

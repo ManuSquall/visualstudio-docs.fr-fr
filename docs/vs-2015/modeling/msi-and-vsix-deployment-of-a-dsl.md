@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4917fc81f439ef0185a753fb1c4c85e460eb7681
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 5770fb604c1c700919f2e738a00ee07cc969b355
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297739"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850117"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Déploiement MSI et VSIX d'un langage spécifique à un domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +71,7 @@ Vous pouvez installer un langage spécifique à un domaine sur votre ordinateur 
 
  Pour plus d’informations sur les fichiers MSI et d’autres options de déploiement, consultez [déploiement d’applications, de services et de composants](../deployment/deploying-applications-services-and-components.md).
 
- Pour créer un MSI, vous devez ajouter un projet d’installation à votre solution [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. La méthode la plus simple pour créer un projet d’installation consiste à utiliser le modèle CreateMsiSetupProject.tt, que vous pouvez télécharger à partir du [site VMSDK](https://go.microsoft.com/fwlink/?LinkID=186128).
+ Pour créer un MSI, vous devez ajouter un projet d’installation à votre solution [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. La méthode la plus simple pour créer un projet d’installation consiste à utiliser le modèle CreateMsiSetupProject.tt, que vous pouvez télécharger à partir du [site VMSDK](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
 
 #### <a name="to-deploy-a-dsl-in-an-msi"></a>Pour déployer un DSL dans un MSI
 
@@ -99,13 +99,13 @@ Vous pouvez installer un langage spécifique à un domaine sur votre ordinateur 
 
    - Dans le menu **générer** , ouvrez **Configuration Manager**, puis sélectionnez la configuration que vous souhaitez générer, par exemple **version finale** ou **débogage**.
 
-4. Accédez à la [page d’hébergement du kit de développement logiciel de visualisation et de modélisation](https://go.microsoft.com/fwlink/?LinkID=186128), puis, sous l’onglet **téléchargements** , téléchargez **CreateMsiSetupProject.TT**.
+4. Accédez à la [page d’hébergement du kit de développement logiciel de visualisation et de modélisation](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples), puis, sous l’onglet **téléchargements** , téléchargez **CreateMsiSetupProject.TT**.
 
 5. Ajoutez **CreateMsiSetupProject.TT** à votre projet DSL.
 
     [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] créera un fichier nommé **CreateMsiSetupProject. vdproj**.
 
-6. Dans l’Explorateur Windows, copiez DSL\\*. vdproj dans un nouveau dossier nommé Setup.
+6. Dans l’Explorateur Windows, copiez Dsl\\\*.vdproj vers un nouveau dossier nommé le programme d’installation.
 
     (Si vous le souhaitez, vous pouvez maintenant exclure CreateMsiSetupProject.tt de votre projet DSL.)
 
@@ -123,13 +123,13 @@ Vous pouvez installer un langage spécifique à un domaine sur votre ordinateur 
 
      Copiez le fichier MSI sur un ordinateur sur lequel vous souhaitez installer votre DSL. Double-cliquez sur le fichier MSI. Le programme d'installation s'exécute.
 
-11. Sur l’ordinateur cible, créez un nouveau fichier qui a l’extension de fichier de votre DSL. Vérifiez les éléments suivants :
+11. Sur l’ordinateur cible, créez un nouveau fichier qui a l’extension de fichier de votre DSL. Vérifiez que :
 
     - Dans le mode liste de l’Explorateur Windows, le fichier apparaît avec l’icône et la description que vous avez définies.
 
     - Lorsque vous double-cliquez sur le fichier, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] démarre et ouvre le fichier DSL dans votre éditeur DSL.
 
-    Si vous préférez, vous pouvez créer le projet d’installation manuellement, au lieu d’utiliser le modèle de texte. Pour obtenir une procédure pas à pas qui comprend cette procédure, consultez le chapitre 5 du [laboratoire de visualisation et de modélisation SDK](https://go.microsoft.com/fwlink/?LinkId=208878).
+    Si vous préférez, vous pouvez créer le projet d’installation manuellement, au lieu d’utiliser le modèle de texte. Pour obtenir une procédure pas à pas qui comprend cette procédure, consultez le chapitre 5 du [laboratoire de visualisation et de modélisation SDK](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
 
 #### <a name="to-uninstall-a-dsl-that-was-installed-from-an-msi"></a>Pour désinstaller un DSL qui a été installé à partir d’un MSI
 

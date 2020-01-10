@@ -13,17 +13,17 @@ caps.latest.revision: 48
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: a146872561c4be5fe48016c17eb64ad6f854106a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 1ef2d51e35a198dbe6da3c1a034dd7c8d1bf8922
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298025"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851028"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Installer des versions de Visual Studio côte à côte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio peut être installé sur un ordinateur sur lequel une version antérieure de Visual Studio l’est déjà. Si vous rencontrez un problème d’installation, vous pouvez utiliser l’ [outil de collecte de journaux](https://go.microsoft.com/fwlink/?LinkId=262077) pour collecter des informations sur les échecs de sorte que vous puissiez déboguer les problèmes vous-même.
+Visual Studio peut être installé sur un ordinateur sur lequel une version antérieure de Visual Studio l’est déjà. Si vous rencontrez un problème d’installation, vous pouvez utiliser l’ [outil de collecte de journaux](https://www.microsoft.com/download/details.aspx?id=12493) pour collecter des informations sur les échecs de sorte que vous puissiez déboguer les problèmes vous-même.
 
 > [!NOTE]
 > Nous vous recommandons d’installer des versions de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dans leur ordre de commercialisation. Par exemple, installez Visual Studio 2013 avant d’installer Visual Studio 2015.
@@ -36,7 +36,7 @@ Visual Studio peut être installé sur un ordinateur sur lequel une version ant�
 
 - Si vous désinstallez une version de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sur un ordinateur ayant plusieurs versions installées, les associations de fichiers pour [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sont supprimées pour toutes les versions. Vous pouvez remapper ces associations de fichiers à l’aide du bouton **Restaurer les associations de fichiers** sous les onglets **Environnement**, **Général** de la boîte de dialogue [Options](../ide/reference/general-environment-options-dialog-box.md) .
 
-- Visual Studio ne met pas automatiquement à niveau les extensions, car elles ne sont pas toutes compatibles. Vous devez réinstaller les extensions à partir de [Visual Studio Marketplace](https://go.microsoft.com/fwlink/?LinkId=178891) ou de l’éditeur du logiciel.
+- Visual Studio ne met pas automatiquement à niveau les extensions, car elles ne sont pas toutes compatibles. Vous devez réinstaller les extensions à partir de [Visual Studio Marketplace](https://visualstudiogallery.msdn.microsoft.com/) ou de l’éditeur du logiciel.
 
 ## <a name="net-framework-versions-and-side-by-side-installations"></a>Versions du .NET Framework et installations côte à côte
 
@@ -51,7 +51,7 @@ Visual Studio peut être installé sur un ordinateur sur lequel une version ant�
     |[!INCLUDE[vbprvb](../includes/vbprvb-md.md)]|[Page Application, Concepteur de projets (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)|
     |Visual C#|[Page Application, Concepteur de projets (C#)](../ide/reference/application-page-project-designer-csharp.md)|
     |Visual F#|[Configuration de projets](https://msdn.microsoft.com/library/a1489abb-6294-4f8f-b71f-2cb126393526)|
-    |C++|[Guide pratique pour modifier le framework cible et l’ensemble d’outils de la plateforme](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)|
+    |C++|[Guide pratique pour modifier le framework cible et l’ensemble d’outils de plateforme](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)|
     |[!INCLUDE[jsprjscript](../includes/jsprjscript-md.md)]|[Exécution d’une application JScript sur une version précédente du Common Language Runtime](https://msdn.microsoft.com/bbea51b5-ac03-4e6c-b9a6-f487ef63eda5)|
 
 ## <a name="see-also"></a>Voir aussi

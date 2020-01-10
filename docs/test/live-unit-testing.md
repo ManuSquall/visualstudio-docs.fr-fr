@@ -8,12 +8,12 @@ author: mikejo5000
 ms.author: mikejo
 ms.workload:
 - dotnet
-ms.openlocfilehash: f020de0c08d8869a8ee9e6f807201303a46b2a0d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 1e1a0ec1fd6f2fbdf4f016b1d22db5a6929b5e24
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588887"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851442"
 ---
 # <a name="how-to-configure-and-use-live-unit-testing"></a>Comment configurer et utiliser Live Unit Testing
 
@@ -198,6 +198,6 @@ Utilisez les attributs suivants pour exclure l’intégralité d’un assembly d
 ## <a name="see-also"></a>Voir aussi
 
 - [Outils de test de code](https://visualstudio.microsoft.com/vs/testing-tools/)
-- [Blog sur Live Unit Testing](https://go.microsoft.com/fwlink/?linkid=842514)
+- [Blog sur Live Unit Testing](https://devblogs.microsoft.com/visualstudio/live-unit-testing-in-visual-studio-2017-enterprise/)
 - [FAQ Live Unit Testing](live-unit-testing-faq.md)
 - [Vidéo Channel 9 : Live Unit Testing dans Visual Studio](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105)

@@ -14,12 +14,12 @@ caps.latest.revision: 64
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3e6cd77e785adb59fc8b2cf3b28724ed0efe1ae3
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: eea557035ef4e5f1ffa2585e620a331fb6b5cce2
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300280"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852080"
 ---
 # <a name="create-layer-diagrams-from-your-code"></a>Créer des diagrammes de couche à partir de votre code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Pour visualiser l’architecture logique de haut niveau de votre système logici
 
 4. Dans **Ajouter au projet de modélisation**, recherchez et sélectionnez un projet de modélisation existant dans votre solution.
 
-     -ou-
+     \- ou -
 
      Choisissez **créer un nouveau projet de modélisation** pour ajouter un nouveau projet de modélisation à la solution.
 
@@ -136,4 +136,4 @@ Pour visualiser l’architecture logique de haut niveau de votre système logici
 - [Rechercher des problèmes potentiels à l’aide des analyseurs de carte du code](../modeling/find-potential-problems-using-code-map-analyzers.md)
 
 ## <a name="see-also"></a>Voir aussi
- [Vidéo Channel 9 : concevoir et valider votre architecture à l’aide](https://go.microsoft.com/fwlink/?LinkID=252073) de diagrammes de couche [diagrammes de couche :](../modeling/layer-diagrams-reference.md) [indications](../modeling/layer-diagrams-guidelines.md) [valider le code avec des diagrammes de couche](../modeling/validate-code-with-layer-diagrams.md) [visualiser le code](../modeling/visualize-code.md)
+ [Vidéo Channel 9 : concevoir et valider votre architecture à l’aide](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Using-layer-diagrams-to-design-and-validate-your-architecture) de diagrammes de couche [diagrammes de couche :](../modeling/layer-diagrams-reference.md) [indications](../modeling/layer-diagrams-guidelines.md) [valider le code avec des diagrammes de couche](../modeling/validate-code-with-layer-diagrams.md) [visualiser le code](../modeling/visualize-code.md)

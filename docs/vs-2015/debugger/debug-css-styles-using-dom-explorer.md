@@ -20,12 +20,12 @@ caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a9f07fc064a87910f59f5734d4d635aa3b5d6b77
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 676a4ef2570873998f3ebc890e06d6d5ccae4cf2
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299502"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852425"
 ---
 # <a name="debug-css-styles-using-dom-explorer"></a>Déboguer les styles CSS avec l’explorateur DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,7 +100,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content. 
     > [!TIP]
     > Une fois que l’application s’affiche dans le simulateur, positionnez le simulateur en regard de la fenêtre Visual Studio afin de pouvoir afficher immédiatement les résultats de vos sélections et des modifications que vous apportez aux styles CSS.  
   
-6. Passez dans Visual Studio et cliquez sur **Sélectionner un élément** dans l’explorateur DOM (ou appuyez sur Ctrl+B). Le mode de sélection est alors modifié pour vous permettre de sélectionner un élément en cliquant dessus, et l’application est mise en premier plan. Le mode est restauré à la suite d’un seul clic. Le bouton **Sélectionner un élément** se présente comme suit : ![Bouton Sélectionner un élément dans l’Explorateur DOM](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button»)  
+6. Passez dans Visual Studio et cliquez sur **Sélectionner un élément** dans l’explorateur DOM (ou appuyez sur Ctrl+B). Le mode de sélection est alors modifié pour vous permettre de sélectionner un élément en cliquant dessus, et l’application est mise au premier plan. Le mode est restauré à la suite d’un seul clic. Le bouton **Sélectionner un élément** se présente comme suit : ![Bouton Sélectionner un élément dans l’Explorateur DOM](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button")  
   
     > [!TIP]
     > Vous pouvez également sélectionner des éléments HTML directement dans l’explorateur DOM. Pour plus d’informations sur la sélection des éléments, consultez [démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md).  
@@ -160,4 +160,4 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content. 
  [Démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md)   
  [Déboguer la disposition à l’aide de l’Explorateur DOM](../debugger/debug-layout-using-dom-explorer.md)   
  [Afficher les écouteurs d’événements DOM](../debugger/view-dom-event-listeners.md)   
- [Support technique et accessibilité](https://go.microsoft.com/fwlink/?LinkId=253502)
+ [Support technique et accessibilité](https://msdn.microsoft.com/library/tzbxw1af(VS.110).aspx)

@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 952c4d9ab82275ff7b1550a3704e89b93c6260a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: b8c70b3c1b8282f87c8eb5aff5d8dde769c613d4
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62954809"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848568"
 ---
 # <a name="python-web-application-project-templates"></a>Modèles de projet d’application web Python
 
@@ -75,11 +75,11 @@ Quand vous créez un projet à partir d’un modèle propre au framework, une bo
 
 Si vous utilisez le contrôle de code source, vous pouvez généralement ignorer le dossier d’environnement virtuel car cet environnement peut être recréé en utilisant uniquement *requirements.txt*. La meilleure façon d’exclure le dossier est de commencer par sélectionner l’option **I will install them myself** (Je les installerai moi-même) dans l’invite illustrée ci-dessus, puis de désactiver la validation automatique avant de créer l’environnement virtuel. Pour plus d’informations, consultez [Tutoriel d’apprentissage de Django - Étapes 1-2 et 1-3](learn-django-in-visual-studio-step-01-project-and-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository) et [Tutoriel d’apprentissage de Flask - Étapes 1-2 et 1-3](learn-flask-visual-studio-step-01-project-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository).
 
-Lors du déploiement sur Microsoft Azure App Service, sélectionnez une version de Python comme [extension de site](https://aka.ms/PythonOnAppService) et installez manuellement les packages. En outre, étant donné qu’Azure App Service n’installe **pas** automatiquement les packages à partir d’un fichier *requirements.txt* en cas de déploiement à partir de Visual Studio, suivez les instructions de configuration fournies sur la page [aka.ms/PythonOnAppService](https://aka.ms/PythonOnAppService).
+Lors du déploiement sur Microsoft Azure App Service, sélectionnez une version de Python comme [extension de site](https://docs.microsoft.com/visualstudio/python/managing-python-on-azure-app-service?view=vs-2019) et installez manuellement les packages. En outre, étant donné qu’Azure App Service n’installe **pas** automatiquement les packages à partir d’un fichier *requirements.txt* en cas de déploiement à partir de Visual Studio, suivez les instructions de configuration fournies sur la page [aka.ms/PythonOnAppService](https://docs.microsoft.com/visualstudio/python/managing-python-on-azure-app-service?view=vs-2019).
 
 Microsoft Azure Cloud Services *prend en charge* le fichier *requirements.txt*. Voir [Projets de service cloud Azure](python-azure-cloud-service-project-template.md) pour plus d’informations.
 
-## <a name="debugging"></a>Débogage
+## <a name="debugging"></a>débogage
 
 Quand un projet web est démarré à des fins de débogage, Visual Studio démarre un serveur web local sur un port aléatoire et ouvre votre navigateur par défaut sur cette adresse et ce port. Pour spécifier des options supplémentaires, cliquez avec le bouton droit sur le projet, sélectionnez **Propriétés**, puis sélectionnez l’onglet **Lanceur web** :
 
@@ -113,7 +113,7 @@ Le modèle de **projet Web Bottle** inclut un code réutilisable qui effectue la
 
 - Groupe **Debug Server Command** (Commande du serveur de débogage) :
   - **Commande** : `bottle` (module)
-  - **Arguments** : `--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
+  - **Arguments** `--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
 L’option `--reload` n’est pas recommandée en cas d’utilisation de Visual Studio pour le débogage.
 
@@ -122,7 +122,7 @@ L’option `--reload` n’est pas recommandée en cas d’utilisation de Visual 
 Pour l’instant, la méthode de création recommandée pour les applications Pyramid consiste à utiliser l’outil en ligne de commande `pcreate`. Une fois qu’une application a été créée, elle peut être importée à l’aide du modèle [**À partir de code Python existant**](managing-python-projects-in-visual-studio.md#create-a-project-from-existing-files). Après cela, sélectionnez la personnalisation **Projet web générique** pour configurer les options. Ces paramètres reposent sur l’hypothèse que Pyramid est installé dans un environnement virtuel à l’emplacement `..\env`.
 
 - Groupe **Débogage** :
-  - **Port du serveur** : 6543 (ou tout port configuré dans les fichiers  *.ini*)
+  - **Port du serveur** : 6543 (ou tout port configuré dans les fichiers *.ini*)
 
 - Groupe **Run Server Command** (Commande du serveur d’exécution) :
   - Commande : `..\env\scripts\pserve-script.py` (script)

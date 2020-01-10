@@ -29,12 +29,12 @@ caps.latest.revision: 62
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 03cd890802e5563ce2daeb78438c56f4452d74f0
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: b30e171756527352976dcb03abb0d1c32370c442
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299508"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849891"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Attacher aux processus en cours d'exécution avec le débogueur Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -111,7 +111,7 @@ Vous pouvez attacher un débogueur à plusieurs programmes à la fois, mais un s
 
 Si vous essayez d’établir un attachement à un processus appartenant à un compte d’utilisateur non fiable, une boîte de dialogue d’avertissement de sécurité s’affiche avec un message de confirmation. Pour plus d’informations, consultez [avertissement de sécurité : l’attachement à un processus appartenant à un utilisateur non fiable peut être dangereux. Si les informations suivantes semblent suspectes ou si vous avez des doutes, n’attachez pas ce processus](/visualstudio/debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user?view=vs-2015).
 
-Dans certains cas, lors du débogage dans une session Bureau à distance (services Terminal Server), la liste **Processus disponibles** n’affiche pas tous les processus disponibles. Si vous exécutez Visual Studio avec un compte d’utilisateur limité, la liste **Processus disponibles** n’affiche pas les processus qui s’exécutent dans la session 0, qui est utilisée pour les services et les autres processus serveur, notamment w3wp.exe. Vous pouvez résoudre le problème en exécutant [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sous un compte administrateur ou en exécutant [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] à partir de la console du serveur au lieu d’une session Terminal Server. Si aucune de ces solutions de contournement n’est possible, la troisième option consiste à attacher le débogueur au processus en exécutant `vsjitdebugger.exe -p` *ProcessId* à partir de la ligne de commande Windows. Vous pouvez déterminer l’ID de processus à l’aide de tlist.exe. Pour obtenir tlist.exe, téléchargez et installez les outils de débogage pour Windows, qui sont disponibles dans  [Téléchargements relatifs au WDK et à WinDbg](https://go.microsoft.com/fwlink/?LinkId=168279).
+Dans certains cas, lors du débogage dans une session Bureau à distance (services Terminal Server), la liste **Processus disponibles** n’affiche pas tous les processus disponibles. Si vous exécutez Visual Studio avec un compte d’utilisateur limité, la liste **Processus disponibles** n’affiche pas les processus qui s’exécutent dans la session 0, qui est utilisée pour les services et les autres processus serveur, notamment w3wp.exe. Vous pouvez résoudre le problème en exécutant [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sous un compte administrateur ou en exécutant [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] à partir de la console du serveur au lieu d’une session Terminal Server. Si aucune de ces solutions n’est possible, une troisième option consiste à attacher le processus en exécutant `vsjitdebugger.exe -p` *ProcessID* à partir de la ligne de commande Windows. Vous pouvez déterminer l’ID de processus à l’aide de tlist.exe. Pour obtenir tlist.exe, téléchargez et installez les outils de débogage pour Windows, qui sont disponibles dans  [Téléchargements relatifs au WDK et à WinDbg](https://docs.microsoft.com/windows-hardware/drivers/dashboard/).
 
 ## <a name="BKMK_Scenarios"></a>Scénarios de débogage courants
 
@@ -127,11 +127,11 @@ Pour certains types d’applications (comme les applications du Windows Store), 
 |Déboguer une application managée ou native sur l’ordinateur local|Utiliser l’attachement au processus ou au [débogage standard](../debugger/getting-started-with-the-debugger.md)|*appname*. exe|Pour accéder rapidement à la boîte de dialogue, utilisez **CTRL + ALT + P** , puis tapez la première lettre du nom du processus.|
 |Déboguer des applications ASP.NET sur l’ordinateur local après le démarrage de l’application sans le débogueur|Utiliser l’attachement au processus|iiexpress. exe|Cela peut être utile pour accélérer le chargement de votre application, par exemple lors du profilage. |
 |Débogage à distance ASP.NET 4 ou 4,5 sur un serveur IIS|Utiliser les outils de contrôle à distance et attacher au processus|w3wp.exe|Voir [débogage à distance ASP.net sur un ordinateur IIS distant](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
-|Débogage à distance ASP.NET Core sur un serveur IIS|Utiliser les outils de contrôle à distance et attacher au processus|DNX. exe|Pour le déploiement d’applications, consultez [publier sur IIS](https://docs.asp.net/en/latest/publishing/iis.html). Pour le débogage, consultez [débogage à distance ASP.net sur un ordinateur IIS distant](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md) .|
+|Débogage à distance ASP.NET Core sur un serveur IIS|Utiliser les outils de contrôle à distance et attacher au processus|dnx.exe|Pour le déploiement d’applications, consultez [publier sur IIS](https://docs.asp.net/en/latest/publishing/iis.html). Pour le débogage, consultez [débogage à distance ASP.net sur un ordinateur IIS distant](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md) .|
 |Déboguer d’autres types d’applications pris en charge sur un processus serveur|Utiliser les outils de contrôle à distance (si le serveur est distant) et attacher au processus|iexplore. exe ou autres processus|Si nécessaire, utilisez le gestionnaire des tâches pour identifier le processus. Consultez [débogage distant](../debugger/remote-debugging.md) et sections ultérieures dans cette rubrique.|
-|Débogage à distance d’une application de bureau Windows|Outils de contrôle à distance et F5|N/A| Voir [débogage distant](../debugger/remote-debugging.md)|
-|Débogage à distance d’une application Windows universelle (UWP), OneCore, HoloLens ou IoT|Déboguer un package d’application installé|N/A|Utiliser déboguer **/autres cibles de débogage/déboguer le package d’application installé** au lieu de **attacher au processus**|
-|Déboguer une application Windows universelle (UWP), OneCore, HoloLens ou IoT que vous n’avez pas démarrée à partir de Visual Studio|Déboguer un package d’application installé|N/A|Utiliser déboguer **/autres cibles de débogage/déboguer le package d’application installé** au lieu de **attacher au processus**|
+|Débogage à distance d’une application de bureau Windows|Outils de contrôle à distance et F5|Non applicable| Voir [débogage distant](../debugger/remote-debugging.md)|
+|Débogage à distance d’une application Windows universelle (UWP), OneCore, HoloLens ou IoT|Déboguer un package d’application installé|Non applicable|Utiliser déboguer **/autres cibles de débogage/déboguer le package d’application installé** au lieu de **attacher au processus**|
+|Déboguer une application Windows universelle (UWP), OneCore, HoloLens ou IoT que vous n’avez pas démarrée à partir de Visual Studio|Déboguer un package d’application installé|Non applicable|Utiliser déboguer **/autres cibles de débogage/déboguer le package d’application installé** au lieu de **attacher au processus**|
 
 > [!WARNING]
 > Pour attacher une application universelle Windows écrite en JavaScript, vous devez d’abord activer le débogage de l’application. Consultez [Attach the debugger](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger) dans le Centre de développement Windows.

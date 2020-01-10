@@ -9,19 +9,19 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2d79bf8205e4233a89effcd04196b18f9c11df26
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: bff0467cfe9447b1cc7814d471f56ab323bb853d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295762"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851577"
 ---
 # <a name="step-11-run-your-program-and-try-other-features"></a>Étape 11 : exécuter votre programme et tester d'autres fonctionnalités
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Votre programme est terminé et prêt à fonctionner. Vous pouvez l'exécuter et définir la couleur d'arrière-plan du contrôle PictureBox. Pour découvrir d'autres fonctionnalités, essayez d'améliorer le programme en modifiant la couleur du formulaire, en personnalisant les boutons et la case à cocher, et en modifiant les propriétés du formulaire.
 
- ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo") Pour obtenir une version vidéo de cette rubrique, consultez [didacticiel 1 : créer une visionneuse d’images dans Visual Basic-vidéo 5](https://go.microsoft.com/fwlink/?LinkId=205216) ou [didacticiel 1 : créer une C# visionneuse d’images dans la vidéo 5](https://go.microsoft.com/fwlink/?LinkId=205206). Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d’interface utilisateur. Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio.
+ ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo") Pour obtenir une version vidéo de cette rubrique, consultez [didacticiel 1 : créer une visionneuse d’images dans Visual Basic-vidéo 5](https://msdn.microsoft.com/vbasic/gg315356.aspx) ou [didacticiel 1 : créer une C# visionneuse d’images dans la vidéo 5](https://msdn.microsoft.com/vcsharp/gg278413.aspx). Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d’interface utilisateur. Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio.
 
 ### <a name="to-run-your-program-and-set-the-background-color"></a>Pour exécuter votre programme et définir la couleur d'arrière-plan.
 

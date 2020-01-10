@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a510c522723cf991c7a3fff21542a069a3de000a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 63390672b246add079806c68a23b69f0e0132c2d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299486"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850204"
 ---
 # <a name="create-custom-views-of-native-objects"></a>Créer des vues personnalisées d’objets natifs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ L'infrastructure Natvis de Visual Studio vous permet de personnaliser la façon 
 ## <a name="BKMK_Why_create_visualizations_"></a> Pourquoi créer des visualisations Natvis ?  
  Vous pouvez utiliser l'infrastructure Natvis pour créer des règles de visualisation pour les types que vous créez, afin que les développeurs puissent les voir facilement en phase de débogage.  
 
- Par exemple, l’image ci-dessous montre une variable de type [Windows::UI::Xaml::Controls::TextBox](https://go.microsoft.com/fwlink/?LinkId=258422) qui s’affiche dans le débogueur sans aucune visualisation personnalisée appliquée.  
+ Par exemple, l’image ci-dessous montre une variable de type [Windows::UI::Xaml::Controls::TextBox](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.textbox.aspx) qui s’affiche dans le débogueur sans aucune visualisation personnalisée appliquée.  
 
  ![Visualisation par défaut de la zone de texte](../debugger/media/dbg-natvis-textbox-default.png "DBG_NATVIS_TextBox_Default")  
 
@@ -150,7 +150,7 @@ L'infrastructure Natvis de Visual Studio vous permet de personnaliser la façon 
 </AutoVisualizer>  
 ```  
 
-### <a name="BKMK_Type"></a> Élément Type  
+### <a name="BKMK_Type"></a> Type, élément  
  Un Type de base ressemble à ceci :  
 
 ```xml  
@@ -224,7 +224,7 @@ L'infrastructure Natvis de Visual Studio vous permet de personnaliser la façon 
 ```  
 
 #### <a name="BKMK_Versioning"></a> Élément Version  
- Utilisez l'élément `Version` pour définir l'étendue des visualisations à des modules spécifiques et à leurs versions afin que les collisions de nom soient réduites et que des visualisations différentes puissent être utilisées pour différentes versions des types. Exemple :  
+ Utilisez l'élément `Version` pour définir l'étendue des visualisations à des modules spécifiques et à leurs versions afin que les collisions de nom soient réduites et que des visualisations différentes puissent être utilisées pour différentes versions des types. Par exemple :  
 
 ```xml  
 <Type Name="DirectUI::Border">  

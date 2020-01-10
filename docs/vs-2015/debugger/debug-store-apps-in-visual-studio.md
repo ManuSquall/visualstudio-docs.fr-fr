@@ -14,12 +14,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2be61a066157b203e4d09ff5f5dff5340dc0ec67
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: d2916bd43571ddade68e3e642b5d006c26269670
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298339"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850505"
 ---
 # <a name="debug-store-apps-in-visual-studio"></a>Déboguer des applications du Windows Store dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,4 +39,4 @@ Le débogueur Visual Studio vous permet de contrôler l'exécution d'un programm
 |[Déclencher des événements de suspension, de reprise et d’arrière-plan pour Windows Store](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)|Le débogueur désactive les événements de gestion de la durée de vie des processus (PLM) qui suspendent, reprennent et arrêtent les applications. Vous pouvez déclencher ces événements à partir de la barre d'outils du débogueur.<br /><br /> Les tâches en arrière-plan vous permettent d'effectuer d'importantes opérations, même quand votre application a été suspendue. Le débogueur vous permet de démarrer et de déboguer ces tâches en arrière-plan.|
 
 ## <a name="see-also"></a>Voir aussi
- [Débogage dans Visual Studio (dans MSDN Library)](https://go.microsoft.com/fwlink/?LinkID=226896)
+ [Débogage dans Visual Studio (dans MSDN Library)](https://msdn.microsoft.com/library/sc65sadd(VS.110).aspx)

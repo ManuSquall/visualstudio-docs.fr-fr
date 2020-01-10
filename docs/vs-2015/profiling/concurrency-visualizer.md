@@ -16,12 +16,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8c407475f72684360551cd97852c1a1bfde5088f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: becaa70d2eed862d77f4c666b0a408054eaf5926
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300612"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850947"
 ---
 # <a name="concurrency-visualizer"></a>Visualiseur concurrentiel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ REMARQUE]
   
  Le visualiseur concurrentiel vous permet de voir comment votre application multithread s’exécute. Les vues du visualiseur concurrentiel fournissent des données graphiques, tabulaires et textuelles qui montrent les relations temporelles entre les threads de votre programme et le système en général. Vous pouvez utiliser le visualiseur concurrentiel pour localiser les goulots d’étranglement au niveau des performances, la sous-utilisation de l’UC, les conflits de threads, la migration de threads inter-cœurs, les délais de synchronisation, l’activité DirectX, les zones d’E/S avec chevauchement et d’autres informations. Les vues fournissent des données exploitables en liant leur sortie graphique aux piles des appels et au code source.  
   
- Le visualiseur concurrentiel s’appuie sur la fonctionnalité [Suivi d’événements pour Windows](https://go.microsoft.com/fwlink/?LinkId=234579) .  
+ Le visualiseur concurrentiel s’appuie sur la fonctionnalité [Suivi d’événements pour Windows](https://msdn.microsoft.com/library/bb968803(VS.85).aspx) .  
   
 > [!NOTE]
 > Le visualiseur concurrentiel ne prend pas en charge les projets web.  
@@ -46,10 +46,10 @@ REMARQUE]
 |Titre|Description|  
 |-----------|-----------------|  
 |[Vue Utilisation](../profiling/utilization-view.md)|Explique comment consulter et analyser l’activité système sur tous les processeurs.|  
-|[Vue Threads](../profiling/threads-view-parallel-performance.md)|Explique comment analyser les interactions entre les threads dans votre programme.|  
+|[vue Threads](../profiling/threads-view-parallel-performance.md)|Explique comment analyser les interactions entre les threads dans votre programme.|  
 |[Vue Cœurs](../profiling/cores-view.md)|Explique comment analyser la migration de threads entre les cœurs.|  
 |[Modèles courants pour des applications multithread au comportement médiocre](../profiling/common-patterns-for-poorly-behaved-multithreaded-applications.md)|Décrit plusieurs modèles courants et indique comment ils apparaissent dans le visualiseur concurrentiel.|  
-|[Blog Parallel Development in Visual Studio](https://go.microsoft.com/fwlink/?LinkId=235385)|Fournit des conseils et les meilleures pratiques pour le visualiseur concurrentiel.|  
+|[Blog Parallel Development in Visual Studio](https://blogs.msdn.com/b/visualizeparallel)|Fournit des conseils et les meilleures pratiques pour le visualiseur concurrentiel.|  
 |[Vues du rapport de performances](../profiling/performance-report-views.md)|Cette section fournit des informations de référence pour les rapports et les vues des outils de profilage de Visual Studio.|  
 |[SDK du visualiseur concurrentiel](../profiling/concurrency-visualizer-sdk.md)|Décrit comment instrumenter votre code source pour afficher des informations supplémentaires dans le visualiseur concurrentiel.|  
 |[Utilitaire de ligne de commande du visualiseur concurrentiel (CVCollectionCmd)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md)|Décrit comment utiliser l’utilitaire de ligne de commande du visualiseur concurrentiel (CVCollectionCmd.exe) pour collecter et traiter les traces sur les ordinateurs qui n’ont pas Visual Studio.|  

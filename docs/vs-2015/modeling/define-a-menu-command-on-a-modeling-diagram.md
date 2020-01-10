@@ -11,19 +11,19 @@ caps.latest.revision: 63
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 23ba1a6900559d7ee13639bb1da696127e47e536
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 5dac0a77b47f604ae5a10f4c8bcfb9d54b51f26c
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299269"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850460"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>Définir une commande de menu sur un diagramme de modélisation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Dans Visual Studio, vous pouvez définir des éléments de menu supplémentaires dans les menus contextuels d’un diagramme UML. Vous pouvez contrôler si la commande de menu apparaît et est activée dans le menu contextuel d’un élément sur le diagramme, et vous pouvez écrire du code qui s’exécute quand l’utilisateur choisit l’élément de menu. Vous pouvez empaqueter ces extensions dans une extension d’intégration Visual Studio ([VSIX](https://go.microsoft.com/fwlink/?LinkId=160780)) et les distribuer à d’autres utilisateurs de Visual Studio.
+Dans Visual Studio, vous pouvez définir des éléments de menu supplémentaires dans les menus contextuels d’un diagramme UML. Vous pouvez contrôler si la commande de menu apparaît et est activée dans le menu contextuel d’un élément sur le diagramme, et vous pouvez écrire du code qui s’exécute quand l’utilisateur choisit l’élément de menu. Vous pouvez empaqueter ces extensions dans une extension d’intégration Visual Studio ([VSIX](https://msdn.microsoft.com/library/dd393694(VS.100).aspx)) et les distribuer à d’autres utilisateurs de Visual Studio.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Configuration requise pour
  Consultez [Spécifications](../modeling/extend-uml-models-and-diagrams.md#Requirements).
 
  Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
@@ -31,7 +31,7 @@ Dans Visual Studio, vous pouvez définir des éléments de menu supplémentaires
 ## <a name="defining-the-menu-command"></a>Définition de la commande de menu
  Pour créer une commande de menu pour un concepteur UML, vous devez créer une classe qui définit le comportement de la commande et incorporer cette classe dans une Extension d’intégration Visual Studio (VSIX). Cette dernière joue le rôle de conteneur capable d’installer la commande. Deux autres méthodes permettent de définir une commande de menu :
 
-- **Créer une commande de menu dans sa propre extension VSIX à l’aide d’un modèle de projet.** Il s’agit de l’approche la plus rapide. Adoptez-la si vous ne souhaitez pas combiner vos commandes de menu avec d’autres types d’extensions, telles que les extensions de validation, les éléments de boîte à outils personnalisés ou les gestionnaires de mouvements.
+- **Créer une commande de menu dans sa propre extension VSIX à l’aide d’un modèle de projet.** . Il s’agit de la méthode la plus rapide. Adoptez-la si vous ne souhaitez pas combiner vos commandes de menu avec d’autres types d’extensions, telles que les extensions de validation, les éléments de boîte à outils personnalisés ou les gestionnaires de mouvements.
 
 - **Créer des projets VSIX et des commandes de menu distincts.** Adoptez cette approche si vous souhaitez combiner plusieurs types d’extensions dans la même extension VSIX. Par exemple, si votre commande de menu prévoit que le modèle observe des contraintes spécifiques, vous pouvez l’incorporer à la même extension VSIX en tant que méthode de validation.
 
@@ -55,7 +55,7 @@ Dans Visual Studio, vous pouvez définir des éléments de menu supplémentaires
 
 1. Créez un projet de bibliothèque de classes dans une nouvelle solution Visual Studio ou dans une solution existante.
 
-   1. Dans le menu **Fichier**, sélectionnez **Nouveau**, **Projet**.
+   1. Dans le menu **Fichier** , choisissez **Nouveau**, **Projet**.
 
    2. Sous **Modèles installés**, sélectionnez **Visual C#** ou **Visual Basic**. Dans la colonne du milieu, choisissez **Bibliothèque de classes**.
 
@@ -65,7 +65,7 @@ Dans Visual Studio, vous pouvez définir des éléments de menu supplémentaires
 
 2. Ajoutez les références suivantes à votre projet.
 
-   |                                                                                                    Référence                                                                                                    |                                                                                                  Ce que cela vous permet de faire                                                                                                  |
+   |                                                                                                    Reference                                                                                                    |                                                                                                  Ce que cela vous permet de faire                                                                                                  |
    |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    |                                                                                        System.ComponentModel.Composition                                                                                        |                                         Définir des composants à l’aide de [Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).                                          |
    |                                                                                      Microsoft.VisualStudio.Uml.Interfaces                                                                                      |                                                                                        Lire et modifier des propriétés d’éléments de modèle.                                                                                         |
@@ -363,4 +363,4 @@ namespace SwapClassNames
 ```
 
 ## <a name="see-also"></a>Voir aussi
- [Définir et installer une extension de modélisation](../modeling/define-and-install-a-modeling-extension.md) [étendre des modèles et des diagrammes UML](../modeling/extend-uml-models-and-diagrams.md) [définir un gestionnaire de mouvements sur un diagramme de modélisation](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) [définir un élément de boîte à outils de modélisation personnalisé](../modeling/define-a-custom-modeling-toolbox-item.md) [définir des contraintes de validation pour les modèles UML](../modeling/define-validation-constraints-for-uml-models.md) [modifier des diagrammes de séquence UML](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md) à l’aide de la programmation de l’API UML [avec l’exemple d’API UML](../modeling/programming-with-the-uml-api.md) [: commande pour aligner des formes sur un diagramme UML](https://go.microsoft.com/fwlink/?LinkID=213809)
+ [Définir et installer une extension de modélisation](../modeling/define-and-install-a-modeling-extension.md) [étendre des modèles et des diagrammes UML](../modeling/extend-uml-models-and-diagrams.md) [définir un gestionnaire de mouvements sur un diagramme de modélisation](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) [définir un élément de boîte à outils de modélisation personnalisé](../modeling/define-a-custom-modeling-toolbox-item.md) [définir des contraintes de validation pour les modèles UML](../modeling/define-validation-constraints-for-uml-models.md) [modifier des diagrammes de séquence UML](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md) à l’aide de la programmation de l’API UML [avec l’exemple d’API UML](../modeling/programming-with-the-uml-api.md) [: commande pour aligner des formes sur un diagramme UML](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)

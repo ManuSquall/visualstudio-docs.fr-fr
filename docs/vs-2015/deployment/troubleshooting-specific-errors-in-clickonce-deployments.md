@@ -20,12 +20,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c66a25830e34571648727bd6ec71791e5e637ca8
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 9a27a2fc17f9d3450a20596d53695070bd84f0f2
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74294733"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850611"
 ---
 # <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>Dépannage d'erreurs spécifiques lors de déploiements de ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,7 +105,7 @@ Cette rubrique répertorie les erreurs courantes suivantes qui peuvent se produi
  Si vous publiez avec une URL, assurez-vous que l’ordinateur de destination a FrontPage Server Extensions activé.  
   
 #### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>Message d’erreur : impossible de créer le site Web'\<site > '. Les composants de communication avec FrontPage Server Extensions ne sont pas installés.  
- Assurez-vous que le Microsoft Visual Studio web Authoring Component est installé sur l’ordinateur à partir duquel vous effectuez la publication. Pour les utilisateurs Express, ce composant n’est pas installé par défaut. Pour plus d’informations, consultez [http://go.microsoft.com/fwlink/?LinkId=102310](https://go.microsoft.com/fwlink/?LinkId=102310).  
+ Assurez-vous que le Microsoft Visual Studio web Authoring Component est installé sur l’ordinateur à partir duquel vous effectuez la publication. Pour les utilisateurs Express, ce composant n’est pas installé par défaut. Pour plus d’informations, consultez [http://go.microsoft.com/fwlink/?LinkId=102310](https://support.microsoft.com/kb/945358/en-us).  
   
 #### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>Message d’erreur : impossible de trouver le fichier’Microsoft. Windows. Common-Controls, version = 6.0.0.0, culture = *, PublicKeyToken = 6595b64144ccf1df, ProcessorArchitecture =\*, type = Win32 '  
  Ce message d’erreur s’affiche lorsque vous tentez de publier une application WPF avec les styles visuels activés. Pour résoudre ce problème, consultez [Comment : publier une application WPF avec les styles visuels activés](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md).  

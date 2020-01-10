@@ -11,18 +11,18 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: f1cf5634985683fc86a738d93a6cfa352b52bd24
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: c76113f014d8be3bd706ef02ec1135a84cbcae82
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74290984"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849959"
 ---
 # <a name="constructing-filter-strings-for-the-table-designer"></a>Construction de chaînes de filtre pour le Concepteur de tables
-## <a name="overview"></a>Overview
-Pour filtrer les données d’une table Azure affichée dans le **Concepteur de tables** Visual Studio, vous devez créer une chaîne de filtrage, puis entrer celle-ci dans le champ de filtre. La syntaxe de la chaîne de filtrage est définie par les services de données WCF et est similaire à une clause SQL WHERE. Cependant, elle est envoyée au service de Table via une demande HTTP. Le **Concepteur de tables** est chargé de l’encodage. Si vous voulez filtrer les données à l’aide d’une valeur de propriété, il vous suffit donc de taper dans le champ de filtrage le nom de la propriété, l’opérateur de comparaison, la valeur des critères et éventuellement, l’opérateur booléen. Il n’est pas nécessaire d’inclure l’option de requête $filter comme vous le feriez pour créer une URL dans le but d’interroger la table via les [informations de référence de l’API REST Storage Services](https://go.microsoft.com/fwlink/p/?LinkId=400447).
+## <a name="overview"></a>Vue d'ensemble de
+Pour filtrer les données d’une table Azure affichée dans le **Concepteur de tables** Visual Studio, vous devez créer une chaîne de filtrage, puis entrer celle-ci dans le champ de filtre. La syntaxe de la chaîne de filtrage est définie par les services de données WCF et est similaire à une clause SQL WHERE. Cependant, elle est envoyée au service de Table via une demande HTTP. Le **Concepteur de tables** est chargé de l’encodage. Si vous voulez filtrer les données à l’aide d’une valeur de propriété, il vous suffit donc de taper dans le champ de filtrage le nom de la propriété, l’opérateur de comparaison, la valeur des critères et éventuellement, l’opérateur booléen. Il n’est pas nécessaire d’inclure l’option de requête $filter comme vous le feriez pour créer une URL dans le but d’interroger la table via les [informations de référence de l’API REST Storage Services](https://msdn.microsoft.com/library/dd179355.aspx).
 
-Les services de données WCF sont basés sur le protocole OData ( [Open Data Protocol](https://go.microsoft.com/fwlink/p/?LinkId=214805) ). Pour plus d’informations sur l’option de requête du système de filtrage ( **$filter**), consultez les [spécifications des conventions d’URI OData](https://go.microsoft.com/fwlink/p/?LinkId=214806).
+Les services de données WCF sont basés sur le protocole OData ( [Open Data Protocol](https://www.odata.org/) ). Pour plus d’informations sur l’option de requête du système de filtrage ( **$filter**), consultez les [spécifications des conventions d’URI OData](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/).
 
 ## <a name="comparison-operators"></a>Opérateurs de comparaison
 Les opérateurs logiques suivants sont pris en charge par tous les types de propriétés :
@@ -36,14 +36,14 @@ Les opérateurs logiques suivants sont pris en charge par tous les types de prop
 | le |Inférieur ou égal à |Prix le 100 |
 | ne |Différence |Ville ne 'Londres' |
 | et |Et |Prix le 200 and prix gt 3,5 |
-| or |Ou |Prix le 3,5 or prix gt 200 |
+| ou |Ou |Prix le 3,5 or prix gt 200 |
 | not |not |not isAvailable |
 
 Quand vous créez une chaîne de filtrage, il est important de suivre les règles suivantes :
 
 * Utilisez les opérateurs logiques pour comparer une propriété à une valeur. Notez qu’il n’est pas possible de comparer une propriété à une valeur dynamique, car l’une des parties de l’expression doit avoir une valeur constante.
 * Toutes les parties de la chaîne de filtrage respectent la casse.
-* Pour que le filtre retourne des résultats valides, la valeur constante doit être du même type de données que la propriété. Pour plus d’informations sur les types de propriétés pris en charge, consultez [Présentation du modèle de données du service de Table](https://go.microsoft.com/fwlink/p/?LinkId=400448).
+* Pour que le filtre retourne des résultats valides, la valeur constante doit être du même type de données que la propriété. Pour plus d’informations sur les types de propriétés pris en charge, consultez [Présentation du modèle de données du service de Table](https://msdn.microsoft.com/library/dd179338.aspx).
 
 ## <a name="filtering-on-string-properties"></a>Filtrage par propriété de chaîne
 Quand vous filtrez des données selon des propriétés de chaîne, placez la constante de chaîne entre guillemets simples.
@@ -103,7 +103,7 @@ not IsActive
 ```
 
 ## <a name="filtering-on-datetime-properties"></a>Filtrage par propriété DateTime
-Pour filtrer les données à l’aide d’une valeur DateTime, spécifiez le mot clé **datetime** , suivi de la constante Date/Heure entre guillemets simples. La constante Date/Heure doit être au format UTC combiné, comme décrit dans [Mise en forme des valeurs de propriété DateTime](https://go.microsoft.com/fwlink/p/?LinkId=400449).
+Pour filtrer les données à l’aide d’une valeur DateTime, spécifiez le mot clé **datetime** , suivi de la constante Date/Heure entre guillemets simples. La constante Date/Heure doit être au format UTC combiné, comme décrit dans [Mise en forme des valeurs de propriété DateTime](https://msdn.microsoft.com/library/azure/dd894027.aspx).
 
 L’exemple suivant retourne les entités dont la propriété CustomerSince a la valeur « 10 juillet 2008 » :
 

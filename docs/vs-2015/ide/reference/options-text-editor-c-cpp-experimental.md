@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5979363f16f2e9d78a2f50ffbb6511d03146caaa
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 6e4f239c5be290f6d79f52f55dbcb6da60d10785
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297860"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851701"
 ---
 # <a name="options-text-editor-cc-experimental"></a>Options, Éditeur de texte, C/C++, Expérimental
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ En modifiant ces options, vous pouvez changer le comportement lié à IntelliSen
 ## <a name="intellisense"></a>IntelliSense
  **Liste des membres point par flèche** Remplace « . » par « -> » le cas échéant pour la liste des membres.
 
-## <a name="refactoring"></a>Refactorisation
+## <a name="refactoring"></a>Refactoring
  **Activer l’extraction de fonction** Extrayez le code sélectionné dans sa propre fonction et remplacez le code par un appel à la nouvelle fonction. Pour accéder à cette fonctionnalité, cliquez avec le bouton droit sur le code sélectionné et sélectionnez **Actions rapides**, ou appuyez simplement sur le raccourci par défaut Ctrl+point [Ctrl+.].
 
  **Activer la signature de modification** Ajoutez, réorganisez et supprimez les paramètres d’une fonction et Propagez les modifications à tous les sites d’appel. Pour accéder à cette fonctionnalité, cliquez avec le bouton droit sur toute utilisation de la fonction et sélectionnez **Actions rapides**, ou appuyez simplement sur le raccourci par défaut Ctrl+point [Ctrl+.].
@@ -46,7 +46,7 @@ En modifiant ces options, vous pouvez changer le comportement lié à IntelliSen
 
  **Activer développer la précédence** Si cette option est activée, vous pouvez entourer le texte sélectionné de parenthèses en tapant « ( » dans l’éditeur de texte.
 
- Pour obtenir d’autres fonctionnalités de l’éditeur de texte dans la galerie Visual Studio, consultez la liste [ici](https://go.microsoft.com/fwlink/?LinkId=692016). Par exemple, les [Corrections rapides C++](https://visualstudiogallery.msdn.microsoft.com/be91feef-8dc3-4f7a-ac9f-f34e7ca5918f)prennent en charge les éléments suivants :
+ Pour obtenir d’autres fonctionnalités de l’éditeur de texte dans la galerie Visual Studio, consultez la liste [ici](https://marketplace.visualstudio.com/). Par exemple, les [Corrections rapides C++](https://visualstudiogallery.msdn.microsoft.com/be91feef-8dc3-4f7a-ac9f-f34e7ca5918f)prennent en charge les éléments suivants :
 
 - **Ajouter un #include manquant** : propose des éléments #include pertinents pour les symboles inconnus dans votre code
 

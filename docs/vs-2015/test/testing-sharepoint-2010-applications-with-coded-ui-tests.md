@@ -8,26 +8,26 @@ ms.assetid: 51b53778-469c-4cc9-854c-4e4992d6389b
 caps.latest.revision: 32
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 73dd0e406e8e0a00260d922e38dee70135c3645d
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: b44e921a8e1ba13d3f0786d4633f942f94f3eaaa
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298010"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851289"
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>Test des applications SharePoint 2010 avec des tests codés de l'interface utilisateur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 L'ajout de tests codés de l'interface utilisateur dans une application SharePoint vous permet de vérifier si l'application entière, y compris ses contrôles d'interface utilisateur, fonctionne correctement. Les tests codés de l'interface utilisateur peuvent aussi valider les valeurs et la logique de l'interface utilisateur.
 
- **Requirements**
+ **Spécifications**
 
 - Visual Studio Enterprise
 
 ## <a name="what-else-should-i-know-about-coded-ui-tests"></a>Que dois-je savoir d'autre sur les tests codés de l'interface utilisateur ?
- Pour en savoir plus sur les avantages de l’utilisation de tests codés de l’interface utilisateur, consultez [Utiliser UI Automation pour tester votre code](../test/use-ui-automation-to-test-your-code.md) et [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5 Automating System Tests (Test de la livraison continue avec Visual Studio 2012 - Chapitre 5 Automatisation des tests système)](https://go.microsoft.com/fwlink/?LinkID=255196).
+ Pour en savoir plus sur les avantages de l’utilisation de tests codés de l’interface utilisateur, consultez [Utiliser UI Automation pour tester votre code](../test/use-ui-automation-to-test-your-code.md) et [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5 Automating System Tests (Test de la livraison continue avec Visual Studio 2012 - Chapitre 5 Automatisation des tests système)](https://msdn.microsoft.com/library/jj159335.aspx).
 
- **Remarques**
+ **Notes**
 
 - ![Prérequis](../test/media/prereq.png "PREREQ") Les tests codés de l’interface utilisateur pour les applications SharePoint sont pris en charge uniquement avec SharePoint 2010.
 
@@ -53,7 +53,7 @@ L'ajout de tests codés de l'interface utilisateur dans une application SharePoi
 > [!WARNING]
 > La saisie de texte dans une cellule Excel, suivie d'une pression sur une touche de direction, ne fonctionne pas correctement. Utilisez la souris pour sélectionner des cellules.
 
- Si vous enregistrez des actions dans une cellule vide, vous devez modifier le code en double cliquant sur la cellule puis en effectuant une opération de définition de texte. Cela est nécessaire car un clic sur la cellule, suivi d'une action du clavier, active `textarea` dans la cellule. L'enregistrement simple de `setvalue` dans la cellule vide recherche `editbox` qui n'est pas présent jusqu'à ce qu'un clic soit effectué sur la cellule. Exemple :
+ Si vous enregistrez des actions dans une cellule vide, vous devez modifier le code en double cliquant sur la cellule puis en effectuant une opération de définition de texte. Cela est nécessaire car un clic sur la cellule, suivi d'une action du clavier, active `textarea` dans la cellule. L'enregistrement simple de `setvalue` dans la cellule vide recherche `editbox` qui n'est pas présent jusqu'à ce qu'un clic soit effectué sur la cellule. Par exemple :
 
 ```csharp
 Mouse.DoubliClick(uiItemCell,new Point(31,14));
@@ -137,11 +137,11 @@ uiGridKeyboardInputEdit.Text=value;
 
  [Content Index for Coded UI Test](https://blogs.msdn.microsoft.com/mathew_aniyan/2013/02/18/content-index-for-coded-ui-test/)
 
-### <a name="guidance"></a>Conseils
- [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5 Automating System Tests (Test de la livraison continue avec Visual Studio 2012 - Chapitre 5 : Automatisation des tests système)](https://go.microsoft.com/fwlink/?LinkID=255196)
+### <a name="guidance"></a>Aide
+ [test de la livraison continue avec Visual Studio 2012 – Chapitre 5 Automating System Tests](https://msdn.microsoft.com/library/jj159335.aspx)
 
 ### <a name="forum"></a>Forum
- [Blog Visual Studio ALM + Team Foundation Server](https://go.microsoft.com/fwlink/?LinkID=254496)
+ [Blog Visual Studio ALM + Team Foundation Server](https://blogs.msdn.com/b/visualstudioalm/)
 
 ## <a name="see-also"></a>Voir aussi
  [Utiliser UI Automation pour tester votre code](../test/use-ui-automation-to-test-your-code.md) [performances Web et test de charge des applications sharepoint 2010 et 2013](https://msdn.microsoft.com/library/20c2e469-0e4e-4296-a739-c0e8fff36e54) [créer des solutions SharePoint](https://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631) [vérification et débogage de code SharePoint](https://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c) [création et débogage de solutions SharePoint](https://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae) [profilage des performances des applications SharePoint](https://msdn.microsoft.com/library/61ae02e7-3f37-4230-bae1-54a498c2fae8)

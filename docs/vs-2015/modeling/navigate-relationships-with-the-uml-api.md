@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f19208e886eb499c825b119ad4ade7e8b52ab88f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 74a8234dfc38ef5ef41cd77b2ce10eaf54018622
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300232"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850088"
 ---
 # <a name="navigate-relationships-with-the-uml-api"></a>Naviguer parmi les relations avec l'API UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -152,9 +152,9 @@ IEnumerable<IUseCase>GetIncludingCases(this IUseCase usecase);
 ```
 
 ## <a name="enumerating-relationships"></a>Énumération de relations
- Toutes les propriétés du modèle UML qui retournent plusieurs valeurs sont conformes à l’interface IEnumerable < >. Cela signifie que vous pouvez utiliser des [expressions de requête LINQ](https://go.microsoft.com/fwlink/?LinkId=168834) et les méthodes d’extension définies dans l’espace de noms **System. Linq** .
+ Toutes les propriétés du modèle UML qui retournent plusieurs valeurs sont conformes à l’interface IEnumerable < >. Cela signifie que vous pouvez utiliser des [expressions de requête LINQ](https://docs.microsoft.com/dotnet/csharp/linq/index) et les méthodes d’extension définies dans l’espace de noms **System. Linq** .
 
- Exemple :
+ Par exemple :
 
 ```
 from shape in     Context.CurrentDiagram.GetSelectedShapes<IClassifier>()

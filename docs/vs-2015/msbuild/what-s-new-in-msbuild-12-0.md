@@ -9,17 +9,17 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9d088844a3d8c1137b762b541b0393f939cdc194
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: ba733b7ef20c9a03ad19d9847a4046e4d72ebdef
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301295"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844454"
 ---
 # <a name="what39s-new-in-msbuild-120"></a>Nouveautés de MSBuild 12.0
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-MSBuild est désormais installé dans le cadre de Visual Studio et non dans celui de .NET Framework. La version actuelle de MSBuild porte le numéro 12.0. Si vous souhaitez installer MSBuild séparément, téléchargez le package d’installation à partir de [MSBuild Download (Téléchargement de MSBuild)](https://go.microsoft.com/fwlink/?LinkId=309745).  
+MSBuild est désormais installé dans le cadre de Visual Studio et non dans celui de .NET Framework. La version actuelle de MSBuild porte le numéro 12.0. Si vous souhaitez installer MSBuild séparément, téléchargez le package d’installation à partir de [MSBuild Download (Téléchargement de MSBuild)](https://www.microsoft.com/download/details.aspx?id=40760).  
   
 ## <a name="changed-path"></a>Chemin d’accès modifié  
  MSBuild est désormais installé directement sous *%ProgramFiles%* , par exemple, dans C:\Program Files\MSBuild\\.  

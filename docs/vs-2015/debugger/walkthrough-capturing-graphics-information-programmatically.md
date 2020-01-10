@@ -9,12 +9,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 54097420fd212ec9057f4a968e2c6d5de199e56e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 9de8e2a2ee69911f5505937494d2912c724326e9
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296903"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847810"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Procédure pas à pas : capture d'informations Graphics par programmation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -145,7 +145,7 @@ Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../inc
 ### <a name="preparing-your-computer-to-use-programmatic-capture"></a>Préparation de votre ordinateur à l'utilisation de la capture par programmation  
  L'API de capture par programmation utilise les Outils de contrôle à distance de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour proposer la fonctionnalité de capture. Les Outils de contrôle à distance doivent être installés sur l'ordinateur destiné à exécuter l'application, même quand vous utilisez la capture par programmation sur votre ordinateur local. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] n'a pas besoin de s'exécuter quand vous effectuez une capture par programmation sur un ordinateur local.  
   
- Pour utiliser les API de capture distante dans une application qui s'exécute sur un ordinateur, vous devez d'abord installer les Outils de contrôle à distance de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sur cet ordinateur. Les plateformes matérielles prises en charge varient en fonction de la version des Outils de contrôle à distance. Pour plus d’informations sur l’installation des outils de contrôle à distance, consultez la [page de téléchargement des outils de contrôle à distance](https://go.microsoft.com/fwlink/p/?LinkId=246691) sur le site web des téléchargements Microsoft.  
+ Pour utiliser les API de capture distante dans une application qui s'exécute sur un ordinateur, vous devez d'abord installer les Outils de contrôle à distance de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sur cet ordinateur. Les plateformes matérielles prises en charge varient en fonction de la version des Outils de contrôle à distance. Pour plus d’informations sur l’installation des outils de contrôle à distance, consultez la [page de téléchargement des outils de contrôle à distance](https://visualstudio.microsoft.com/downloads#remote-tools) sur le site web des téléchargements Microsoft.  
   
  Sinon, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] installe les composants nécessaires pour assurer la capture distante pour les applications 32 bits.  
   

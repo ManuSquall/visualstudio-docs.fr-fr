@@ -13,27 +13,27 @@ caps.latest.revision: 5
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9b65a46d5d0061eeaf3ad707affea1423e5fca5d
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7546f752ef7ee1053d1b0b785334a8da814720c6
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297537"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851483"
 ---
 # <a name="activity-views-legacy"></a>Vues d'activité (héritées)
 La plupart des activités fournies par [!INCLUDE[wf](../includes/wf-md.md)], et depuis lesquelles sont composés les workflows, proposent plusieurs vues de création disponibles dans le [!INCLUDE[wfd1](../includes/wfd1-md.md)] hérité. Quand vous faites glisser un concepteur d’activités de la **boîte à outils** vers l’aire de conception, et ensuite, chaque fois que vous sélectionnez l’activité, vous pouvez basculer entre les différentes vues de conception à l’aide du menu **Workflow** ou en cliquant avec le bouton droit sur l’activité sélectionnée. De la même façon, lorsque vous déplacez le pointeur sur le nom d’une activité sélectionnée, un jeu déroulant d’onglets apparaît, que vous pouvez utiliser pour alterner entre les différentes vues.
 
- Chaque activité a au moins une vue ; Il s’agit de la vue par défaut affichée lorsque vous faites glisser un concepteur d’activités de la **boîte à outils** vers l’aire de conception. Cette vue par défaut de l’activité est disponible sous l’option **vue [type d’activité]** dans les menus et onglets, par exemple **afficher en parallèle**. La plupart des activités possède des vues supplémentaires et des activités différentes peuvent posséder des vues différentes. Par exemple, l’activité [activité TransactionScopeActivity](https://go.microsoft.com/fwlink?LinkID=65093) a la vue compensation et l’activité [activité EventHandlingScopeActivity](https://go.microsoft.com/fwlink?LinkID=65030) a une vue événements. La plupart des activités fournies avec Windows Workflow Foundation ont des vues de conception **afficher le gestionnaire d’annulation** et afficher les **erreurs** pour afficher les [CancellationHandlerActivity](https://go.microsoft.com/fwlink?LinkID=65050) et les [FaultHandlersActivity](https://go.microsoft.com/fwlink?LinkID=65055) associés.
+ Chaque activité a au moins une vue ; Il s’agit de la vue par défaut affichée lorsque vous faites glisser un concepteur d’activités de la **boîte à outils** vers l’aire de conception. Cette vue par défaut de l’activité est disponible sous l’option **vue [type d’activité]** dans les menus et onglets, par exemple **afficher en parallèle**. La plupart des activités possède des vues supplémentaires et des activités différentes peuvent posséder des vues différentes. Par exemple, l’activité [activité TransactionScopeActivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.transactionscopeactivity.aspx) a la vue compensation et l’activité [activité EventHandlingScopeActivity](https://msdn2.microsoft.com/library/system.workflow.activities.eventhandlingscopeactivity.aspx) a une vue événements. La plupart des activités fournies avec Windows Workflow Foundation ont des vues de conception **afficher le gestionnaire d’annulation** et afficher les **erreurs** pour afficher les [CancellationHandlerActivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.cancellationhandleractivity.aspx) et les [FaultHandlersActivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.faulthandlersactivity.aspx) associés.
 
  Le tableau suivant contient le nom et la description de chaque vue.
 
 |Option de menu/d'onglet|Description|
 |----------------------|-----------------|
 |**Vue [type d’activité]**|Sélectionnez cette option de menu ou d'onglet pour afficher la représentation graphique par défaut de l'activité sélectionnée.|
-|**Afficher le gestionnaire d’annulation**|Sélectionnez cette vue de menu ou d’onglet pour afficher le [CancellationHandlerActivity](https://go.microsoft.com/fwlink?LinkID=65050) associé à l’activité sélectionnée.|
-|**Afficher le gestionnaire d’erreurs**|Sélectionnez cette vue de menu ou d’onglet pour afficher le [FaultHandlersActivity](https://go.microsoft.com/fwlink?LinkID=65055) associé à l’activité sélectionnée.|
-|**Afficher le gestionnaire de compensation**|Sélectionnez cette vue de menu ou d’onglet pour afficher le [CompensationHandlerActivity](https://go.microsoft.com/fwlink?LinkID=65053) associé au [activité TransactionScopeActivity](https://go.microsoft.com/fwlink?LinkID=65093)sélectionné.|
-|**Gestionnaire d’événements d’affichage**|Sélectionnez cette vue de menu ou d’onglet pour afficher le [EventHandlersActivity](https://go.microsoft.com/fwlink?LinkID=65018) associé au [activité EventHandlingScopeActivity](https://go.microsoft.com/fwlink?LinkID=65030)sélectionné.|
+|**Afficher le gestionnaire d’annulation**|Sélectionnez cette vue de menu ou d’onglet pour afficher le [CancellationHandlerActivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.cancellationhandleractivity.aspx) associé à l’activité sélectionnée.|
+|**Afficher le gestionnaire d’erreurs**|Sélectionnez cette vue de menu ou d’onglet pour afficher le [FaultHandlersActivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.faulthandlersactivity.aspx) associé à l’activité sélectionnée.|
+|**Afficher le gestionnaire de compensation**|Sélectionnez cette vue de menu ou d’onglet pour afficher le [CompensationHandlerActivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.compensationhandleractivity.aspx) associé au [activité TransactionScopeActivity](https://msdn2.microsoft.com/library/system.workflow.componentmodel.transactionscopeactivity.aspx)sélectionné.|
+|**Gestionnaire d’événements d’affichage**|Sélectionnez cette vue de menu ou d’onglet pour afficher le [EventHandlersActivity](https://msdn2.microsoft.com/library/system.workflow.activities.eventhandlersactivity.aspx) associé au [activité EventHandlingScopeActivity](https://msdn2.microsoft.com/library/system.workflow.activities.eventhandlingscopeactivity.aspx)sélectionné.|
 
  Pour plus d’informations sur les vues similaires, consultez [vues de workflow séquentielles (héritées)](../workflow-designer/sequential-workflow-views-legacy.md).
 

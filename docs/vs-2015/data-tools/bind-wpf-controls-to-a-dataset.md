@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f0ad4ea108cb0ec3b874c7f360be2e1f0e25ef45
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 937e28e923c26a72940b0181da16cf34199bb9aa
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299424"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852157"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Lier des contrôles WPF à un dataset
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Dans cette procédure pas à pas, vous allez créer une application WPF qui cont
 
 - [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
 
-- Accès à une instance en cours d'exécution de SQL Server ou SQL Server Express à laquelle est attaché l'exemple de base de données AdventureWorksLT. Vous pouvez télécharger la base de données AdventureWorksLT à partir du [site Web CodePlex](https://go.microsoft.com/fwlink/?linkid=87843).
+- Accès à une instance en cours d'exécution de SQL Server ou SQL Server Express à laquelle est attaché l'exemple de base de données AdventureWorksLT. Vous pouvez télécharger la base de données AdventureWorksLT à partir du [site Web CodePlex](https://codeplex.com/SqlServerSamples).
 
   La connaissance préalable des concepts suivants s'avère également utile, mais n'est pas obligatoire pour suivre cette procédure pas à pas :
 
@@ -70,7 +70,7 @@ Dans cette procédure pas à pas, vous allez créer une application WPF qui cont
 
 4. Sélectionnez le modèle de projet **Application WPF**.
 
-5. Dans la zone **nom** , tapez `AdventureWorksProductsEditor`, puis cliquez sur **OK**.
+5. Dans la zone **Name** (Nom), entrez `AdventureWorksProductsEditor` et cliquez sur **OK**.
 
      Visual Studio crée le projet `AdventureWorksProductsEditor`.
 
@@ -101,7 +101,7 @@ Dans cette procédure pas à pas, vous allez créer une application WPF qui cont
 
 7. Dans la page **Choisir vos objets de base de données**, développez **Tables**, puis sélectionnez la table **Product (SalesLT)** .
 
-8. Cliquez sur **Terminer**.
+8. Cliquez sur **Finish**.
 
      Visual Studio ajoute un nouveau fichier AdventureWorksLTDataSet. xsd au projet et ajoute un élément **AdventureWorksLTDataSet** correspondant à la fenêtre sources de **données** . Le fichier AdventureWorksLTDataSet.xsd définit un dataset typé nommé `AdventureWorksLTDataSet` et un TableAdapter nommé `ProductTableAdapter`. Plus loin dans cette procédure pas à pas, vous allez utiliser le `ProductTableAdapter` pour remplir le dataset avec des données et enregistrer les modifications dans la base de données.
 
@@ -126,7 +126,7 @@ Dans cette procédure pas à pas, vous allez créer une application WPF qui cont
     WHERE ThumbnailPhotoFileName <> 'no_image_available_small.gif'
     ```
 
-4. Cliquez sur **Terminer**.
+4. Cliquez sur **Finish**.
 
 ## <a name="define-the-user-interface"></a>Définir l’interface utilisateur
  Ajoutez plusieurs boutons à la fenêtre en modifiant le code XAML dans le Concepteur WPF. Plus loin dans cette procédure pas à pas, vous allez ajouter du code permettant aux utilisateurs de parcourir les produits et d'enregistrer les modifications apportées à ces derniers à l'aide de ces boutons.

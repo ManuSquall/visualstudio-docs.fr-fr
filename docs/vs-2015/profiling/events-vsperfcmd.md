@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 265dc7f84fbd1ec19b520e2e30d3554e2c66683b
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 0d24fc7a01a8eebe356f37704c1a821332f5dca1
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302131"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850765"
 ---
 # <a name="events-vsperfcmd"></a>Events (VSPerfCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ L’option **Events** de VSPerfCmd.exe contrôle la journalisation du suivi d’
 VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]  
 ```  
   
-#### <a name="parameters"></a>Paramètres  
+#### <a name="parameters"></a>Parameters  
  **On**&#124;**Off**  
  Démarre ou arrête la collecte des données d’événement.  
   
@@ -86,7 +86,7 @@ C:\<path>VSPerfCmd -events on, \".NET Common Language Runtime\", 0x7fffffff, 5
 ```  
   
 > [!IMPORTANT]
-> Si vous n’excluez pas les événements de démarrage, comme ces événements ne sont pas listés dans le fichier MOF (Managed Object Format), ils apparaissent sous forme de GUID dans le rapport. Pour plus d’informations, consultez cette page sur le site web de Microsoft : [Exemple de fichier MOF (Managed Object Format)](https://go.microsoft.com/fwlink/?linkid=37118).  
+> Si vous n’excluez pas les événements de démarrage, comme ces événements ne sont pas listés dans le fichier MOF (Managed Object Format), ils apparaissent sous forme de GUID dans le rapport. Pour plus d’informations, consultez cette page sur le site web de Microsoft : [Exemple de fichier MOF (Managed Object Format)](https://msdn.microsoft.com/library/default.aspx).  
   
 ## <a name="see-also"></a>Voir aussi  
  [VSPerfCmd](../profiling/vsperfcmd.md)   

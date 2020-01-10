@@ -9,19 +9,19 @@ caps.latest.revision: 22
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 89ca4c02a1cbb1171619060b9478b5f2d3ccaa36
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a6e66c8192b1fa409482bd33287cec04f74c1304
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295719"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851529"
 ---
-# <a name="step-5-add-controls-to-your-form"></a>Étape 5 : ajouter des contrôles à votre formulaire
+# <a name="step-5-add-controls-to-your-form"></a>Étape 5 : ajouter des contrôles à votre formulaire
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Lors de cette étape, vous ajoutez des contrôles à votre formulaire (notamment des contrôles `PictureBox` et `CheckBox`). Vous ajoutez ensuite des boutons à votre formulaire.
 
- ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo") Pour obtenir une version vidéo de cette rubrique, consultez [didacticiel 1 : créer une visionneuse d’images dans Visual Basic-vidéo 2](https://go.microsoft.com/fwlink/?LinkId=205211) ou [didacticiel 1 : créer une C# visionneuse d’images dans la vidéo 2](https://go.microsoft.com/fwlink/?LinkId=205200). Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d’interface utilisateur. Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio.
+ ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo") Pour obtenir une version vidéo de cette rubrique, consultez [didacticiel 1 : créer une visionneuse d’images dans Visual Basic-vidéo 2](https://msdn.microsoft.com/vbasic/gg315945.aspx) ou [didacticiel 1 : créer une C# visionneuse d’images dans la vidéo 2](https://msdn.microsoft.com/vcsharp/gg278410.aspx). Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d’interface utilisateur. Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio.
 
 ### <a name="to-add-controls-to-your-form"></a>Pour ajouter des contrôles à votre formulaire
 

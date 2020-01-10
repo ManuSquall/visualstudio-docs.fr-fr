@@ -13,21 +13,21 @@ caps.latest.revision: 6
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 24594edc9be8589acfbe99e92b5952e1ebfdcc9a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 9c6cc7a101a854611228b1a3bc38f63fffff45c1
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301448"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846169"
 ---
 # <a name="select-rule-set-dialog-box-legacy"></a>Sélectionner l'ensemble de règles, boîte de dialogue (héritée)
 Cette rubrique décrit comment utiliser la boîte de dialogue **Sélectionner l’ensemble de règles** dans le [!INCLUDE[wfd1](../includes/wfd1-md.md)]hérité. Utilisez le [!INCLUDE[wfd2](../includes/wfd2-md.md)] hérité lorsque vous devez cibler le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
- La boîte de dialogue **Sélectionner l’ensemble de règles** permet de sélectionner un ensemble de règles que vous pouvez utiliser avec une activité [PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65019) . Pour plus d’informations sur l’accès à la boîte de dialogue **Sélectionner l’ensemble de règles** , consultez [procédure : Créez un ensemble de règles PolicyActivity (hérité)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
+ La boîte de dialogue **Sélectionner l’ensemble de règles** permet de sélectionner un ensemble de règles que vous pouvez utiliser avec une activité [PolicyActivity](https://msdn2.microsoft.com/library/system.workflow.activities.policyactivity.aspx) . Pour plus d’informations sur l’accès à la boîte de dialogue **Sélectionner l’ensemble de règles** , voir [procédure : créer un ensemble de règles PolicyActivity (hérité)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).
 
  Le tableau suivant décrit les éléments d’interface utilisateur de la boîte de dialogue **Sélectionner l’ensemble de règles** .
 
-|Élément d'interface utilisateur|Description|
+|Élément de l'interface utilisateur|Description|
 |----------------|-----------------|
 |**Nouveau...**|Cliquez pour ouvrir la [boîte de dialogue Éditeur d’ensemble de règles (hérité)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) pour créer une nouvelle condition de règle.|
 |**Modifier...**|Cliquez pour ouvrir la [boîte de dialogue Éditeur d’ensemble de règles (hérité)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) pour modifier la condition de règle sélectionnée.|
@@ -41,7 +41,7 @@ Cette rubrique décrit comment utiliser la boîte de dialogue **Sélectionner l�
 > [!WARNING]
 > L'éditeur de règles du [!INCLUDE[wfd2](../includes/wfd2-md.md)] hérité utilisé pour cibler le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] ne prend pas en charge le multi-ciblage.
 
- Pour plus d’informations sur les conditions, consultez [utilisation de conditions dans les workflows](https://go.microsoft.com/fwlink?LinkID=65009).
+ Pour plus d’informations sur les conditions, consultez [utilisation de conditions dans les workflows](https://msdn2.microsoft.com/library/bb628447.aspx).
 
 ## <a name="see-also"></a>Voir aussi
- [PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65019) [Éditeur d’ensemble de règles, boîte de dialogue (héritée)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) [Utilisation de l’activité PolicyActivity](https://go.microsoft.com/fwlink?LinkID=65004) [Utilisation de conditions dans les workflows](https://go.microsoft.com/fwlink?LinkID=65009)
+ [PolicyActivity](https://msdn2.microsoft.com/library/system.workflow.activities.policyactivity.aspx) [Éditeur d’ensemble de règles, boîte de dialogue (héritée)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) [Utilisation de l’activité PolicyActivity](https://msdn2.microsoft.com/library/bb675229.aspx) [Utilisation de conditions dans les workflows](https://msdn2.microsoft.com/library/bb628447.aspx)

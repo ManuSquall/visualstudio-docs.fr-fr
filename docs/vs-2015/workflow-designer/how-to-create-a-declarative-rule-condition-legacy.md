@@ -13,12 +13,12 @@ caps.latest.revision: 5
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2dc63fc58b22792e566df91bd86cac40e3fd2e65
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 0c23fed64d7f3a7681fce96663262f6d633299a9
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297483"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849338"
 ---
 # <a name="how-to-create-a-declarative-rule-condition-legacy"></a>Procédure : créer une condition de règle déclarative (héritée)
 Cette rubrique décrit comment déclarer une condition de règle à l'aide du [!INCLUDE[wfd1](../includes/wfd1-md.md)] hérité qui cible le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
@@ -27,17 +27,17 @@ Cette rubrique décrit comment déclarer une condition de règle à l'aide du [!
 
  Les conditions de règle déclaratives sont utilisées dans les activités Windows Workflow Foundation prédéfinies suivantes :
 
-- [ConditionedActivityGroup](https://go.microsoft.com/fwlink?LinkID=65017)
+- [ConditionedActivityGroup](https://msdn2.microsoft.com/library/system.workflow.activities.conditionedactivitygroup.aspx)
 
-- [IfElseBranchActivity](https://go.microsoft.com/fwlink?LinkID=65034)
+- [IfElseBranchActivity](https://msdn2.microsoft.com/library/system.workflow.activities.ifelsebranchactivity.aspx)
 
-- [ReplicatorActivity](https://go.microsoft.com/fwlink?LinkID=65039)
+- [ReplicatorActivity](https://msdn2.microsoft.com/library/system.workflow.activities.replicatoractivity.aspx)
 
-- [WhileActivity](https://go.microsoft.com/fwlink?LinkID=65049)
+- [WhileActivity](https://msdn2.microsoft.com/library/system.workflow.activities.whileactivity.aspx)
 
-- [SequentialWorkflowActivity](https://go.microsoft.com/fwlink?LinkID=65040)
+- [SequentialWorkflowActivity](https://msdn2.microsoft.com/library/system.workflow.activities.sequentialworkflowactivity.aspx)
 
-- [StateMachineWorkflowActivity](https://go.microsoft.com/fwlink?LinkID=65045)
+- [StateMachineWorkflowActivity](https://msdn2.microsoft.com/library/system.workflow.activities.statemachineworkflowactivity.aspx)
 
 ### <a name="to-create-a-declarative-rule-condition-using-the-rule-condition-editor"></a>Pour créer une condition de règle déclarative à l'aide de l'Éditeur de conditions de règle
 
@@ -64,4 +64,4 @@ Cette rubrique décrit comment déclarer une condition de règle à l'aide du [!
      Pour plus d’informations sur l’utilisation de la boîte de dialogue **Sélectionner une condition** , consultez boîte [de dialogue Sélectionner une condition (hérité)](../workflow-designer/select-condition-dialog-box-legacy.md).
 
 ## <a name="see-also"></a>Voir aussi
- [Activités de flux de travail héritées](../workflow-designer/legacy-workflow-activities.md) [utilisant ConditionedActivityGroup](https://go.microsoft.com/fwlink?LinkID=65066) [à l’aide de l’activité IfElseBranchActivity](https://go.microsoft.com/fwlink?LinkID=65075) à l’aide de l' [activité duplicateur](https://go.microsoft.com/fwlink?LinkID=65080) [à l’aide de la boîte de](https://go.microsoft.com/fwlink?LinkID=65091) [dialogue Éditeur de conditions de règle](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) d’activité en cours (hérité) boîte de dialogue [Sélectionner une condition (hérité)](../workflow-designer/select-condition-dialog-box-legacy.md) [utilisation des conditions dans les workflows](https://go.microsoft.com/fwlink?LinkID=65009)
+ [Activités de flux de travail héritées](../workflow-designer/legacy-workflow-activities.md) [utilisant ConditionedActivityGroup](https://msdn2.microsoft.com/library/bb675237.aspx) [à l’aide de l’activité IfElseBranchActivity](https://msdn2.microsoft.com/library/bb628465.aspx) à l’aide de l' [activité duplicateur](https://msdn2.microsoft.com/library/bb628544.aspx) [à l’aide de la boîte de](https://msdn2.microsoft.com/library/bb628552.aspx) [dialogue Éditeur de conditions de règle](../workflow-designer/rule-condition-editor-dialog-box-legacy.md) d’activité en cours (hérité) boîte de dialogue [Sélectionner une condition (hérité)](../workflow-designer/select-condition-dialog-box-legacy.md) [utilisation des conditions dans les workflows](https://msdn2.microsoft.com/library/bb628447.aspx)

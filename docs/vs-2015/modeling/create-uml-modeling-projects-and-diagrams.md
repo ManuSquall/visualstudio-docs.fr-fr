@@ -25,12 +25,12 @@ caps.latest.revision: 50
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d5884dcd3f9e3cb8f1910d2e23ec80f910ed2fc9
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 52c55b2cfdf000d91a83071b53e8e9450187b720
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300998"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852018"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>Créer des projets et des diagrammes de modélisation UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Les modèles UML vous aident à comprendre, à expliquer et à concevoir les sys
  Les diagrammes de modélisation UML et les diagrammes de couche ne peuvent exister qu'à l'intérieur d'un projet de modélisation. Chaque projet de modélisation contient un modèle UML partagé et plusieurs diagrammes UML. Chaque diagramme est une vue partielle du modèle. Le modèle UML contient tous les éléments des diagrammes UML et peut être affiché à l'aide de l'Explorateur de modèles UML. Pour plus d’informations sur les modèles et leur relation aux diagrammes, consultez [modifier des modèles et des diagrammes UML](../modeling/edit-uml-models-and-diagrams.md). Pour plus d’informations sur la modélisation des projets sous contrôle de version, consultez [gérer les modèles et les diagrammes sous contrôle de version](../modeling/manage-models-and-diagrams-under-version-control.md) et [structurer votre solution de modélisation](../modeling/structure-your-modeling-solution.md)
 
 > [!NOTE]
-> Il existe un autre type de diagramme, le diagramme de classes .NET, qui permet de visualiser le code du programme. Pour plus d’informations, consultez [conception et affichage des classes et des types](https://go.microsoft.com/fwlink/?LinkId=142231).
+> Il existe un autre type de diagramme, le diagramme de classes .NET, qui permet de visualiser le code du programme. Pour plus d’informations, consultez [conception et affichage des classes et des types](https://msdn.microsoft.com/library/ab7aty24.aspx).
 
 ## <a name="CreatingModelingDiagrams"></a>Créer un diagramme dans un projet de modélisation
  Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
@@ -129,7 +129,7 @@ Les modèles UML vous aident à comprendre, à expliquer et à concevoir les sys
     > [!NOTE]
     > Le projet de modélisation contient un dossier de définition de modèle nommé **ModelDefinition**.
 
-2. Dans le menu **projet** , cliquez sur **Ajouter un élément existant**.
+2. Dans le menu **Projet** , cliquez sur **Ajouter un élément existant**.
 
 3. Dans la boîte de dialogue **Ajouter un élément existant** , recherchez le fichier de diagramme, sélectionnez le fichier, puis cliquez sur **Ajouter**.
 

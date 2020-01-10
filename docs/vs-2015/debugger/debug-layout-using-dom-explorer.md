@@ -18,19 +18,19 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5dd40381b8f5ba4807e95cfcf5e5b7d54afd77e2
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 1a3c9b3a6ae2ed11e8512f8cf8857d27b3d0043b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298382"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850073"
 ---
 # <a name="debug-layout-using-dom-explorer"></a>Déboguer la disposition avec l’Explorateur DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content. png « windows_and_phone_content »)  
   
- L’onglet **Disposition** de l’Explorateur DOM affiche le [modèle de boîte CSS](https://go.microsoft.com/fwlink/?LinkID=238778) pour l’élément sélectionné dans une application [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] , une application du Windows Phone Store ou une application créée à l’aide de Visual Studio Tools pour Apache Cordova. Vous pouvez utiliser cette représentation visuelle du modèle de boîte pour identifier et modifier les valeurs relatives à la disposition qui affectent l’apparence des éléments.  
+ L’onglet **Disposition** de l’Explorateur DOM affiche le [modèle de boîte CSS](https://www.w3.org/TR/CSS2/box.html) pour l’élément sélectionné dans une application [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] , une application du Windows Phone Store ou une application créée à l’aide de Visual Studio Tools pour Apache Cordova. Vous pouvez utiliser cette représentation visuelle du modèle de boîte pour identifier et modifier les valeurs relatives à la disposition qui affectent l’apparence des éléments.  
   
 > [!TIP]
 > Les modifications que vous effectuez dans l’onglet **Disposition** ne sont pas définitives. Vous pouvez apporter des modifications permanentes à votre code source, puis actualiser votre application à l’aide du bouton **Actualiser l’application Windows** (applications du Windows Store et Windows Phone Store uniquement) de la barre d’outils Déboguer. Ainsi, vous pouvez éviter de redémarrer le débogueur.  
@@ -80,7 +80,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content. 
   
      Lors du chargement de Section 4, vous constatez que les images inférieures ne s’affichent pas correctement. Chaque image d’élément apparaît divisée en deux (la moitié gauche étant manquante).  
   
-8. Basculez vers Visual Studio et choisissez **Sélectionner un élément** dans l’explorateur DOM (ou appuyez sur Ctrl+B). Le mode de sélection est alors modifié pour vous permettre de sélectionner un élément en cliquant dessus, et l’application est mise en premier plan. Le mode est restauré à la suite d’un seul clic.  
+8. Basculez vers Visual Studio et choisissez **Sélectionner un élément** dans l’explorateur DOM (ou appuyez sur Ctrl+B). Le mode de sélection est alors modifié pour vous permettre de sélectionner un élément en cliquant dessus, et l’application est mise au premier plan. Le mode est restauré à la suite d’un seul clic.  
   
     > [!TIP]
     > Vous pouvez aussi utiliser les touches de direction ou d’autres méthodes pour sélectionner directement les éléments HTML dans l’explorateur DOM. Pour plus d’informations sur la sélection des éléments, consultez [démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md).  

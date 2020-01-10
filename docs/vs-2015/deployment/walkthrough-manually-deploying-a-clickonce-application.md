@@ -21,12 +21,12 @@ caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1e1099eaf8d766088612abbb399bdf004e6378e4
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: cba55c9f4a8f7436b97099b6b548b916ea6e5ecb
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74294676"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844941"
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application"></a>Procédure pas à pas : déploiement manuel d'une application ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Si vous ne pouvez pas utiliser Visual Studio pour déployer votre application [!
   
 - Installez Mage. exe et MageUI. exe.  
   
-     Mage. exe et MageUI. exe font partie du [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Vous devez avoir le [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] installé ou la version du [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] inclus dans Visual Studio. Pour plus d’informations, consultez [SDK Windows](https://go.microsoft.com/fwlink/?LinkId=158044) sur MSDN.  
+     Mage. exe et MageUI. exe font partie du [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Vous devez avoir le [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] installé ou la version du [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] inclus dans Visual Studio. Pour plus d’informations, consultez [SDK Windows](https://msdn.microsoft.com/windowsserver/bb980924.aspx) sur MSDN.  
   
 - Fournissez une application à déployer.  
   
@@ -61,7 +61,7 @@ Si vous ne pouvez pas utiliser Visual Studio pour déployer votre application [!
   
 - Assurez-vous que l’application n’a pas de manifeste avec les informations de contrôle de compte d’utilisateur.  
   
-     Vous devez déterminer si votre application contient un manifeste avec des informations de contrôle de compte d’utilisateur (UAC, User Account Control), telles qu’un élément `<dependentAssembly>`. Pour examiner un manifeste d’application, vous pouvez utiliser l’utilitaire [sigcheck](https://go.microsoft.com/fwlink/?LinkId=158035) de Windows Sysinternals.  
+     Vous devez déterminer si votre application contient un manifeste avec des informations de contrôle de compte d’utilisateur (UAC, User Account Control), telles qu’un élément `<dependentAssembly>`. Pour examiner un manifeste d’application, vous pouvez utiliser l’utilitaire [sigcheck](https://technet.microsoft.com/sysinternals/bb897441.aspx) de Windows Sysinternals.  
   
      Si votre application contient un manifeste avec les détails du contrôle de compte d’utilisateur, vous devez la regénérer sans les informations de contrôle de compte d’utilisateur. Pour un C# projet dans Visual Studio, ouvrez les propriétés du projet, puis sélectionnez l’onglet application. Dans la liste déroulante **manifeste** , sélectionnez **créer une application sans manifeste**. Pour un projet de Visual Basic dans Visual Studio, ouvrez les propriétés du projet, sélectionnez l’onglet application, puis cliquez sur **afficher les paramètres du contrôle de compte d’utilisateur**. Dans le fichier manifeste ouvert, supprimez tous les éléments dans l’élément `<asmv1:assembly>` unique.  
   
@@ -117,7 +117,7 @@ Si vous ne pouvez pas utiliser Visual Studio pour déployer votre application [!
     mage -Sign AppToDeploy.application -CertFile mycert.pfx -Password passwd  
     ```  
   
-     or  
+     ou  
   
     ```  
     mage -Sign AppToDeploy.exe.manifest -CertFile cngCert.pfx  
@@ -162,11 +162,11 @@ Si vous ne pouvez pas utiliser Visual Studio pour déployer votre application [!
   
 13. Si vous avez un certificat stocké en tant que fichier sur votre système de fichiers, utilisez l’option **signer avec le fichier de certificat** , puis sélectionnez le certificat dans le système de fichiers à l’aide du bouton de sélection ( **...** ). Tapez ensuite votre mot de passe de certificat.  
   
-     -ou-  
+     \- ou -  
   
      Si votre certificat est conservé dans un magasin de certificats accessible à partir de votre ordinateur, sélectionnez l’option **signer avec le certificat stocké** , puis sélectionnez le certificat dans la liste fournie.  
   
-14. Cliquez sur **OK** pour signer le manifeste de votre application. La boîte de dialogue Enregistrer sous apparaît.  
+14. Cliquez sur **OK** pour signer le manifeste de votre application. La boîte de dialogue Enregistrer sous s'affiche.  
   
 15. Dans la boîte de dialogue Enregistrer sous, spécifiez le répertoire de la version, puis cliquez sur **Enregistrer**.  
   
@@ -190,11 +190,11 @@ Si vous ne pouvez pas utiliser Visual Studio pour déployer votre application [!
   
 25. Si vous avez un certificat stocké en tant que fichier sur votre système de fichiers, utilisez l’option **signer avec le fichier de certificat** , puis sélectionnez le certificat dans le système de fichiers à l’aide du bouton de sélection ( **...** ). Tapez ensuite votre mot de passe de certificat.  
   
-     -ou-  
+     \- ou -  
   
      Si votre certificat est conservé dans un magasin de certificats accessible à partir de votre ordinateur, sélectionnez l’option **signer avec le certificat stocké** , puis sélectionnez le certificat dans la liste fournie.  
   
-26. Cliquez sur **OK** pour signer votre manifeste de déploiement. La boîte de dialogue Enregistrer sous apparaît.  
+26. Cliquez sur **OK** pour signer votre manifeste de déploiement. La boîte de dialogue Enregistrer sous s'affiche.  
   
 27. Dans la boîte de dialogue **Enregistrer sous** , déplacez un répertoire vers la racine de votre déploiement, puis cliquez sur **Enregistrer**.  
   
@@ -210,4 +210,4 @@ Si vous ne pouvez pas utiliser Visual Studio pour déployer votre application [!
  [MageUI.exe (outil Manifest Generation and Editing, client graphique)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)   
  [Publication d’applications ClickOnce](../deployment/publishing-clickonce-applications.md)   
    du [manifeste de déploiement ClickOnce](../deployment/clickonce-deployment-manifest.md)  
- [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
+ [Manifeste d’application ClickOnce](../deployment/clickonce-application-manifest.md)

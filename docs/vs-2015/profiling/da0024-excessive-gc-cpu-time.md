@@ -13,12 +13,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e0414e8bc4b5789f08751749b52f870c7c5e5167
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 99b538231346c8bad644c8a55e468c60e39b90ea
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300098"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852326"
 ---
 # <a name="da0024-excessive-gc-cpu-time"></a>DA0024 : Temps CPU GC excessif
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,4 +47,4 @@ ID de règle | DA0024 |
 ## <a name="how-to-investigate-a-warning"></a>Comment rechercher la cause d’un avertissement  
  Double-cliquez sur le message dans la fenêtre Liste d’erreurs pour accéder à la [vue Marques](../profiling/marks-view.md) des données de profilage. Accédez à la colonne **Mémoire CLR .NET\\% temps dans le GC**. Déterminez s’il existe des phases spécifiques de l’exécution du programme durant lesquelles la surcharge du garbage collection de mémoire managée est plus importante. Comparez les valeurs de la colonne % temps dans le GC au taux du garbage collection des colonnes **Nombre de collections de la génération 0**, **Nombre de collections de la génération 1** et **Nombre de collections de la génération 2**.  
   
- La colonne % temps dans le GC contient le pourcentage de temps qu’une application a consacré au garbage collection, proportionnellement au temps total de traitement. Toutefois, il se peut que cette valeur soit très élevée, sans qu’un garbage collection excessif ne soit en cause. Pour plus d’informations sur la façon dont est calculée la valeur de la colonne % temps dans le GC, consultez [Difference Between Perf Data Reported by Different Tools – 4](https://go.microsoft.com/fwlink/?LinkId=177863) du blog **Weblog de Maoni** sur le site MSDN. Si des erreurs de page se produisent ou si l’application est devancée par d’autres tâches prioritaires sur l’ordinateur pendant le garbage collection, les valeurs du compteur % temps dans le GC refléteront ces retards supplémentaires.
+ La colonne % temps dans le GC contient le pourcentage de temps qu’une application a consacré au garbage collection, proportionnellement au temps total de traitement. Toutefois, il se peut que cette valeur soit très élevée, sans qu’un garbage collection excessif ne soit en cause. Pour plus d’informations sur la façon dont est calculée la valeur de la colonne % temps dans le GC, consultez [Difference Between Perf Data Reported by Different Tools – 4](https://blogs.msdn.com/maoni/archive/2007/01/11/difference-between-perf-data-reported-by-different-tools-4.aspx) du blog **Weblog de Maoni** sur le site MSDN. Si des erreurs de page se produisent ou si l’application est devancée par d’autres tâches prioritaires sur l’ordinateur pendant le garbage collection, les valeurs du compteur % temps dans le GC refléteront ces retards supplémentaires.

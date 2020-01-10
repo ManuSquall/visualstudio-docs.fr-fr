@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.date: 10/16/2019
 ms.technology: vs-azure
 monikerRange: vs-2019
-ms.openlocfilehash: 355a08b2ff322226d347d999f4ec8a9ebb7ba5fc
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: bdf326bc337456a0a9b4ba085d308ead2c90d49b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188724"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846944"
 ---
 # <a name="how-to-view-and-diagnose-containers-and-images-in-visual-studio"></a>Comment afficher et diagnostiquer des conteneurs et des images dans Visual Studio
 
@@ -21,11 +21,11 @@ Vous pouvez voir ce qui se passe dans les conteneurs qui hébergent votre applic
 ## <a name="prerequisites"></a>Configuration requise
 
 - [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-- [Visual studio 2019 version 16,4 Preview 2](https://visualstudio.microsoft.com/downloads) ou version ultérieure, ou si vous utilisez une version antérieure de visual studio 2019, installez l' [extension de fenêtre conteneurs](https://aka.ms/vscontainerspreview).
+- [Visual studio 2019 version 16,4 Preview 2](https://visualstudio.microsoft.com/downloads) ou version ultérieure, ou si vous utilisez une version antérieure de visual studio 2019, installez l' [extension de fenêtre conteneurs](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-containers-tools-extensions).
 
 ## <a name="view-information-about-your-containers"></a>Afficher des informations sur vos conteneurs
 
-La fenêtre **conteneurs** s’ouvre automatiquement lorsque vous démarrez un projet .net en conteneur. Pour afficher vos conteneurs dans Visual Studio à tout moment, utilisez **Ctrl** +**Q** pour activer la zone de recherche Visual studio, puis tapez `Containers` et choisissez le premier élément. Vous pouvez également ouvrir la fenêtre **conteneurs** à partir du menu principal. Utilisez la **vue** chemin d’accès du menu  >  d’autres**conteneurs** **Windows**  > .  
+La fenêtre **conteneurs** s’ouvre automatiquement lorsque vous démarrez un projet .net en conteneur. Pour afficher vos conteneurs dans Visual Studio à tout moment, utilisez **Ctrl**+**Q** pour activer la zone de recherche Visual studio, puis tapez `Containers` et choisissez le premier élément. Vous pouvez également ouvrir la fenêtre **conteneurs** à partir du menu principal. Utilisez la **vue** chemin d’accès du menu > d’autres **conteneurs** **Windows** > .  
 
 ![Capture d’écran de l’onglet environnement dans la fenêtre conteneurs](media/view-and-diagnose-containers/container-window.png)
 
@@ -60,7 +60,7 @@ L’onglet **journaux** affiche les résultats de la commande `docker logs`. Par
 Pour effacer les journaux, utilisez le bouton **Effacer** sous l’onglet **journaux** .  Pour récupérer tous les journaux, utilisez le bouton **Actualiser** .
 
 > [!NOTE]
-> Visual Studio redirige automatiquement stdout et stderr vers la fenêtre **sortie** lorsque vous exécutez sans débogage avec des conteneurs Windows. les conteneurs Windows démarrés à partir de Visual Studio à l’aide de la **touche Ctrl** +**F5** n’affichent donc pas les journaux Cet onglet ; Utilisez la fenêtre de **sortie** à la place.
+> Visual Studio redirige automatiquement stdout et stderr vers la fenêtre **sortie** lorsque vous exécutez sans débogage avec des conteneurs Windows. ainsi, les conteneurs Windows démarrés à partir de Visual Studio à l’aide de la **touche Ctrl**+**F5** n’affichent pas les journaux dans cet onglet. Utilisez la fenêtre de **sortie** à la place.
 
 ## <a name="view-the-filesystem"></a>Afficher le système de fichiers
 
@@ -104,7 +104,7 @@ Vous pouvez également afficher des images sur l’ordinateur local à l’aide 
 
 Pour supprimer une image, cliquez avec le bouton droit sur l’image dans le TreeView, choisissez **supprimer**ou sélectionnez l’image, puis utilisez le bouton **supprimer** dans la barre d’outils.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 Pour plus d’informations sur les outils de conteneur disponibles dans Visual Studio, consultez [vue d’ensemble des outils de conteneur](overview.md).
 

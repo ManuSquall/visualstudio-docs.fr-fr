@@ -11,17 +11,17 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 33689ed44f4228411243d3b9716a2407b751d32b
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 14bced870cd24badcaf2a687fc4a1a2edeb740c0
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300644"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851008"
 ---
 # <a name="concurrency-visualizer-sdk"></a>Kit SDK du visualiseur concurrentiel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous pouvez instrumenter votre code source à l’aide du kit SDK du visualiseur concurrentiel pour afficher des informations supplémentaires dans le visualiseur concurrentiel. Vous pouvez associer les données supplémentaires à des phases et à des événements de votre code. Ces visualisations supplémentaires sont appelées *marqueurs*.  Pour obtenir une introduction pas à pas, consultez [Introducing the Concurrency Visualizer SDK](https://go.microsoft.com/fwlink/?LinkId=235405).
+Vous pouvez instrumenter votre code source à l’aide du kit SDK du visualiseur concurrentiel pour afficher des informations supplémentaires dans le visualiseur concurrentiel. Vous pouvez associer les données supplémentaires à des phases et à des événements de votre code. Ces visualisations supplémentaires sont appelées *marqueurs*.  Pour obtenir une introduction pas à pas, consultez [Introducing the Concurrency Visualizer SDK](https://blogs.msdn.com/b/visualizeparallel/archive/2011/10/17/introducing-the-concurrency-visualizer-sdk.aspx).
 
 ## <a name="properties"></a>Propriétés
  Les indicateurs, les intervalles et les messages ont deux propriétés : la catégorie et l’importance. Dans la boîte de dialogue [Paramètres avancés](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md), vous pouvez utiliser ces propriétés pour filtrer l’affichage des marqueurs. Ces propriétés ont également un impact sur la représentation visuelle des marqueurs. Par exemple, la taille des indicateurs est utilisée pour représenter l’importance. La couleur, quant à elle, est utilisée pour indiquer la catégorie.

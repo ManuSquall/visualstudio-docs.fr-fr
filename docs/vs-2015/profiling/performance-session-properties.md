@@ -13,19 +13,19 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: af214f6a29e12dcdf2fe8bd2de75e05283894922
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: cd521a853d9ec8c1a3fee8e50e87217621a73a89
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74290112"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848166"
 ---
 # <a name="performance-session-properties"></a>Propriétés d’une session de performance
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Une **session de performance** vous permet de configurer les paramètres qui déterminent le profilage de l’application. Elle stocke également les rapports générés pour la session de profilage.  
   
- **Requirements**  
+ **Spécifications**  
   
 - [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
@@ -38,15 +38,15 @@ Une **session de performance** vous permet de configurer les paramètres qui dé
 ## <a name="general"></a>Général  
  Ces paramètres vous permettent de sélectionner la méthode de profilage, d’ajouter la collection d’objets .NET et les données de durée de vie, ainsi que de spécifier l’emplacement des rapports par défaut et les conventions d’affectation de noms.  
   
- Pour plus d'informations, voir :  
+ Pour plus d'informations, consultez .  
   
  [Guide pratique pour choisir des méthodes de collecte](../profiling/how-to-choose-collection-methods.md)  
   
- [Collecte de données liées à l’allocation et à la durée de vie de la mémoire .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)  
+ [Collecte des données liées à la durée de vie des objets et à l’allocation de mémoire .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)  
   
  [Guide pratique pour définir les options de nom de fichier de données de profilage](../profiling/how-to-set-performance-data-file-name-options.md)  
   
-## <a name="launch"></a>Lancer  
+## <a name="launch"></a>Launch  
  Ces paramètres vous permettent de sélectionner des fichiers binaires dans une liste et de spécifier l’ordre de démarrage des fichiers binaires.  
   
  Pour plus d’informations, consultez [Guide pratique pour spécifier le fichier binaire à démarrer](../profiling/how-to-specify-the-binary-to-start.md).  
@@ -66,7 +66,7 @@ Une **session de performance** vous permet de configurer les paramètres qui dé
   
   Pour plus d’informations, consultez [Guide pratique pour choisir des événements d’échantillonnage](../profiling/how-to-choose-sampling-events.md).  
   
-## <a name="binary"></a>Binary  
+## <a name="binary"></a>Binaire  
  Ces paramètres vous permettent de spécifier si vous souhaitez déplacer le fichier binaire instrumenté vers un autre emplacement. Par exemple, si vous profilez My.DLL et que vous choisissez de ne pas déplacer le fichier binaire instrumenté, une copie de sauvegarde de My.DLL nommée My.Orig.DLL est créée. Ensuite, My.DLL est modifié en insérant des sondes pour collecter des données. Si vous déplacez le fichier binaire instrumenté, le fichier binaire d’origine n’est pas renommé et le fichier binaire instrumenté est copié dans l’emplacement spécifié pour être utilisé pendant l’instrumentation.  
   
  Pour plus d’informations, consultez [Guide pratique pour spécifier le fichier binaire à démarrer](../profiling/how-to-specify-the-binary-to-start.md).  
@@ -77,7 +77,7 @@ Une **session de performance** vous permet de configurer les paramètres qui dé
 ## <a name="instrumentation"></a>Instrumentation  
  Ces paramètres vous permettent de collecter les données de performance pour le code JScript dans les pages web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] et de spécifier les événements de **pré-instrumentation** et de **post-instrumentation** devant se produire avant ou après le processus d’instrumentation.  
   
- Pour plus d'informations, voir :  
+ Pour plus d'informations, consultez .  
   
  [Guide pratique pour profiler du code JavaScript dans des pages web](../profiling/how-to-profile-javascript-code-in-web-pages.md)  
   
@@ -89,9 +89,9 @@ Une **session de performance** vous permet de configurer les paramètres qui dé
  Pour plus d’informations, consultez [Guide pratique pour collecter les données des compteurs UC](../profiling/how-to-collect-cpu-counter-data.md).  
   
 ## <a name="windows-events"></a>Événements Windows  
- Pendant le profilage, vous pouvez collecter des données à partir de fournisseurs de suivi d’événements. Vous pouvez afficher les données à l’aide de l’option `/calltrace` de l’outil en ligne de commande VSPerfReport.exe. Pour plus d’informations sur le suivi d’événements pour Windows (ETW), consultez [À propos du suivi d’événements](https://go.microsoft.com/fwlink/?linkid=90752).  
+ Pendant le profilage, vous pouvez collecter des données à partir de fournisseurs de suivi d’événements. Vous pouvez afficher les données à l’aide de l’option `/calltrace` de l’outil en ligne de commande VSPerfReport.exe. Pour plus d’informations sur le suivi d’événements pour Windows (ETW), consultez [À propos du suivi d’événements](https://msdn2.microsoft.com/library/aa363668.aspx).  
   
- Pour plus d'informations, voir :  
+ Pour plus d'informations, consultez .  
   
  [Guide pratique pour collecter les données de suivi d’événements pour Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)  
   
@@ -105,7 +105,7 @@ Une **session de performance** vous permet de configurer les paramètres qui dé
 ## <a name="advanced"></a>Avancé  
  Ces paramètres vous permettent d’ajouter des options au processus d’instrumentation en spécifiant une ou plusieurs options de l’outil de profilage en ligne de commande [VSInstr](../profiling/vsinstr.md). Vous pouvez également spécifier la version du Common Runtime à profiler quand l’application utilise plusieurs versions.  
   
- Pour plus d'informations, voir :  
+ Pour plus d'informations, consultez .  
   
  [Guide pratique pour spécifier le runtime .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)  
   

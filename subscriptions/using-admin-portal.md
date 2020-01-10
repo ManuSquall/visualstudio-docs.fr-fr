@@ -6,12 +6,12 @@ manager: lank
 ms.date: 08/07/2019
 ms.topic: conceptual
 description: Découvrez comment bien démarrer avec la gestion des abonnements Visual Studio de votre organisation via le portail d’administration des abonnements.
-ms.openlocfilehash: 484ecdca3435ee725853932acd66e307c2eb3cbe
-ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
+ms.openlocfilehash: b7a6d93e3c284e3778d9574eb86c4e998324c559
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74879306"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850546"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Vue d’ensemble du portail d’administration des abonnements Visual Studio
 
@@ -47,7 +47,7 @@ Pour plus d’informations sur l’accord que vous êtes en train d’afficher, 
 > ![Page Détails dans le portail d’administration des abonnements Visual Studio](_img/using-admin-portal/details-page.png)
 
 ## <a name="resources"></a>Ressources
-- [Livre blanc sur la gestion des licences Visual Studio](https://aka.ms/vslicensing)
+- [Livre blanc sur la gestion des licences Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [Comparer les options et les prix des abonnements](https://visualstudio.microsoft.com/vs/pricing)
 - [Comparer les fonctionnalités IDE Visual Studio](https://visualstudio.microsoft.com/vs/compare)
 - [Prise en charge des abonnements et de l’administration de Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
@@ -56,6 +56,6 @@ Pour plus d’informations sur l’accord que vous êtes en train d’afficher, 
 En savoir plus sur les responsabilités des administrateurs :
 - [Vue d’ensemble des responsabilités des administrateurs](admin-responsibilities.md)
 - [Inventaire de l’environnement de préproduction](admin-inventory.md)
-- [Gérer des grandes équipes et des prestataires externes](manage-teams.md)
-- [Suivre l’attribution des utilisateurs et traiter les commandes](assignments-orders.md)
+- [Gérer de grandes équipes et des fournisseurs externes](manage-teams.md)
+- [Suivre les affectations d’utilisateurs et traiter les commandes](assignments-orders.md)
 - Utiliser le rapport [Utilisation maximale](maximum-usage.md) pour suivre les engagements d’achat

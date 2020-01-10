@@ -22,12 +22,12 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 158bc4c2fc7734957c7d3e946390ab1339a322ba
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 065a6ae3901f2426db6556cb19e80f543cb8a78f
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299439"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846669"
 ---
 # <a name="accessing-data-in-visual-studio"></a>Accès aux données dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ Dans Visual Studio, vous pouvez créer des applications qui se connectent à des
  De nombreux fournisseurs de bases de données et tiers prennent en charge l’intégration de Visual Studio par les packages NuGet. Vous pouvez explorer les offres sur nuget.org ou par le biais du gestionnaire de package NuGet dans Visual Studio (**outils** > **Gestionnaire de package NuGet** > **gérer les packages NuGet pour la solution**). D’autres produits de base de données s’intègrent à Visual Studio en tant qu’extension.   Vous pouvez parcourir ces offres dans la Galerie Visual Studio en accédant à **outils** > **extensions et mises à jour** , puis en sélectionnant **en ligne** dans le volet gauche de la boîte de dialogue.  Pour plus d’informations, consultez [installation de systèmes de base de données, d’outils et d’exemples](../data-tools/installing-database-systems-tools-and-samples.md).
 
 > [!NOTE]
-> La prise en charge étendue de SQL Server 2005 a pris fin le 12 avril 2016.   Il n’existe aucune garantie que les outils de données dans Visual Studio 2015 et versions ultérieures continuent de fonctionner avec SQL Server 2005 après cette date. Pour plus d’informations, consultez l' [annonce de fin de support pour SQL Server 2005](https://www.microsoft.com/sql-server/sql-server-2005).
+> Le support étendu pour SQL Server 2005 a pris fin le 12 avril 2016.   Il n’existe aucune garantie que les outils de données dans Visual Studio 2015 et versions ultérieures continuent de fonctionner avec SQL Server 2005 après cette date. Pour plus d’informations, consultez l' [annonce de fin de support pour SQL Server 2005](https://www.microsoft.com/sql-server/sql-server-2005).
 
 ### <a name="net-languages"></a>Langages .NET
  Tous les accès aux données .NET, y compris dans .NET Core, sont basés sur ADO.NET, un ensemble de classes qui définit une interface pour accéder à n’importe quel type de source de données, à la fois relationnelles et non relationnelles. Visual Studio propose plusieurs outils et concepteurs qui fonctionnent avec ADO.NET pour vous aider à vous connecter aux bases de données, à manipuler les données et à présenter les données à l’utilisateur. La documentation de cette section décrit comment utiliser ces outils. Vous pouvez également programmer directement par rapport aux objets de commande ADO.NET. Pour plus d’informations sur l’appel direct des API ADO.NET, consultez [ADO.net](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx) dans MSDN Library.
@@ -133,7 +133,7 @@ Dans Visual Studio, vous pouvez créer des applications qui se connectent à des
 
  [ADO.NET Entity Framework](https://msdn.microsoft.com/data/ef) Décrit comment créer des applications de données qui permettent aux développeurs de programmer par rapport à un modèle conceptuel plutôt que directement sur une base de données relationnelle.
 
- [WCF Data Services 4,5](https://msdn.microsoft.com/library/73d2bec3-7c92-4110-b905-11bb0462357a) Décrit comment utiliser [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] pour déployer des services de données sur le Web ou sur un intranet qui implémentent le [Open Data Protocol (OData)](https://go.microsoft.com/fwlink/?LinkID=182204).
+ [WCF Data Services 4,5](https://msdn.microsoft.com/library/73d2bec3-7c92-4110-b905-11bb0462357a) Décrit comment utiliser [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] pour déployer des services de données sur le Web ou sur un intranet qui implémentent le [Open Data Protocol (OData)](https://www.odata.org/).
 
  [Données dans les solutions Office](https://msdn.microsoft.com/library/8478c095-864b-4ed3-8a70-1fc19b411c6a) Contient des liens vers des rubriques qui expliquent le fonctionnement des données dans les solutions Office. Cela comprend des informations sur la programmation orientée schéma, la mise en cache des données et l’accès aux données côté serveur.
 

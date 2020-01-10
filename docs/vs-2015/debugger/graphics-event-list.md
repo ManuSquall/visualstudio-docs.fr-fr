@@ -11,12 +11,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5b1d8bdeb4497af57c385e73ff0dcd34041a2097
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 9e56f2d8ef72121e8b34117436019251449fbb75
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297323"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845047"
 ---
 # <a name="graphics-event-list"></a>Liste des événements Graphics
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ La liste des événements Graphics dans Visual Studio Graphics Analyzer vous per
 ### <a name="color-coded-events-in-direct3d-12"></a>Événements à code de couleurs dans Direct3D 12  
  Direct3D 12 expose plusieurs files d'attente qui correspondent à différentes fonctionnalités matérielles. Pour faciliter l'identification de la file d'attente associée à un événement graphique particulier dans Direct3D 12, les événements apparaissent dans la liste des événements sous forme d'événements à code de couleurs en fonction de leur file d'attente quand vous travaillez sur une capture d'une application Direct3D 12.  
   
-|File d'attente Direct3D 12|Couleur|  
+|File d'attente Direct3D 12|Color|  
 |-----------------------|-----------|  
 |File d'attente de rendu|Vert|  
 |File d'attente de calcul|Jaune|  
@@ -93,7 +93,7 @@ La liste des événements Graphics dans Visual Studio Graphics Analyzer vous per
 ### <a name="user-defined-events-in-direct3d-11-and-earlier"></a>Événements définis par l'utilisateur dans Direct3D 11 et les versions antérieures  
  Pour créer des groupes et des marqueurs dans Direct3D 11 ou les versions antérieures, utilisez les API décrites dans cette section. Le tableau ci-dessous récapitule les API que vous pouvez utiliser pour les différentes versions de Direct3D 11, ainsi que les versions antérieures de Direct3D.  
   
-|Description de l'API|[ID3D11DeviceContext2](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11devicecontext2) (Direct3D 11.2)|[ID3DUserDefinedAnnotation](https://go.microsoft.com/fwlink/p/?LinkID=250967) (Direct3D 11.1)|Famille d’API D3DPerf_ (Direct3D 11.0 et antérieur)|  
+|Description de l'API|[ID3D11DeviceContext2](/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11devicecontext2) (Direct3D 11.2)|[ID3DUserDefinedAnnotation](https://msdn.microsoft.com/library/windows/desktop/hh446881(v=vs.85).aspx) (Direct3D 11.1)|Famille d’API D3DPerf_ (Direct3D 11.0 et antérieur)|  
 |---------------------|---------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|--------------------------------------------------------|  
 |Commencer un groupe d'événements|`BeginEventInt`|`BeginEvent`|`D3DPerf_BeginEvent`|  
 |Terminer un groupe d'événements|`EndEventInt`|`EndEvent`|`D3DPerf_EndEvent`|  

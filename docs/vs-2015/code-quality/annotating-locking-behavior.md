@@ -33,12 +33,12 @@ caps.latest.revision: 11
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: a5b34253485da233ba6e25841b6592068de6fb69
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a40697c56468ce05bcf132e6ef2594aaa8d61569
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295830"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850169"
 ---
 # <a name="annotating-locking-behavior"></a>Annotation du comportement de verrouillage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -117,4 +117,4 @@ Pour éviter les bogues d'accès concurrentiel dans votre programme multithread,
  [Spécification du moment et de l’endroit où une annotation s’applique](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [Fonctions intrinsèques](../code-quality/intrinsic-functions.md)   
  [Meilleures pratiques et exemples](../code-quality/best-practices-and-examples-sal.md)   
- [Blog de l’équipe d’analyse du code](https://go.microsoft.com/fwlink/p/?LinkId=251197)
+ [Blog de l’équipe d’analyse du code](https://blogs.msdn.com/b/codeanalysis/)

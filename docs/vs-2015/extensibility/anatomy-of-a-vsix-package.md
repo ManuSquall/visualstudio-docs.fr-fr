@@ -12,12 +12,12 @@ ms.assetid: 8b86d62f-c274-4e91-82e0-38cdb9a423d5
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 156b221265b4c3c23b795b09b9a50ccb27a63bcf
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 2a769b0d04f76a2a32c00e262ff03b400af02feb
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295643"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852289"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>Anatomie d’un package VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,4 +59,4 @@ Un package VSIX est un fichier. vsix qui contient une ou plusieurs extensions Vi
 ## <a name="content_typesxml"></a>[Content_Types].xml  
  Le fichier [Content_Types]. XML identifie les types de fichiers dans le fichier. vsix développé. Visual Studio utilise ce fichier lors de l’installation du package, mais n’installe pas le fichier lui-même. Pour plus d’informations sur ce fichier, consultez [la structure de l’Content_Types fichier\]. xml](../extensibility/the-structure-of-the-content-types-dot-xml-file.md).  
   
- Un fichier [Content_Types]. xml est requis par la norme OPC (Open Packaging Conventions). Pour plus d’informations sur OPC, consultez [OPC : nouvelle norme pour l’empaquetage de vos données](https://go.microsoft.com/fwlink/?LinkID=148207) sur le site Web MSDN.
+ Un fichier [Content_Types]. xml est requis par la norme OPC (Open Packaging Conventions). Pour plus d’informations sur OPC, consultez [OPC : nouvelle norme pour l’empaquetage de vos données](https://msdn.microsoft.com/magazine/cc163372.aspx) sur le site Web MSDN.

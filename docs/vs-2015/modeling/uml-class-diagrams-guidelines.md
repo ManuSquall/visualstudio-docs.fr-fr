@@ -17,14 +17,14 @@ caps.latest.revision: 56
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c170827825d772f4d97cd22f0b5754232e8d2257
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 4f4fd6eed634da3aea956cddca8d2e1ff6220a94
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297284"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850189"
 ---
-# <a name="uml-class-diagrams-guidelines"></a>Diagrammes de classes UML : indications
+# <a name="uml-class-diagrams-guidelines"></a>Diagrammes de classes UML : instructions
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Dans Visual Studio, vous pouvez utiliser un *diagramme de classes UML* pour décrire les types de données et leurs relations indépendamment de leur implémentation. Le diagramme permet de se concentrer sur les aspects logiques des classes, plutôt que sur leur implémentation.
@@ -34,7 +34,7 @@ Dans Visual Studio, vous pouvez utiliser un *diagramme de classes UML* pour déc
  Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 > [!NOTE]
-> Cette rubrique concerne les diagrammes de classes UML. Il existe un autre genre de diagramme de classes, que vous pouvez créer et utiliser pour visualiser le code du programme. Consultez [conception et affichage des classes et des types](https://go.microsoft.com/fwlink/?LinkId=142231).
+> Cette rubrique concerne les diagrammes de classes UML. Il existe un autre genre de diagramme de classes, que vous pouvez créer et utiliser pour visualiser le code du programme. Consultez [conception et affichage des classes et des types](https://msdn.microsoft.com/library/ab7aty24.aspx).
 
 ## <a name="Using"></a>Utilisation de diagrammes de classes UML
  Vous pouvez utiliser un diagramme de classes UML à diverses fins :
@@ -262,7 +262,7 @@ visibility attribute-name : Type
 visibility operation-name (parameter1 : Type1, ...) : Type
 ```
 
- Exemple :
+ Par exemple :
 
 ```
 + AddItem (item : MenuItem, quantity : Integer) : Boolean
@@ -289,7 +289,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
  Toutefois, vous ne pouvez définir que les propriétés **is static** et **is abstract** dans la fenêtre **Propriétés** .
 
 #### <a name="full-signature"></a>Signature complète
- Lorsque vous modifiez la signature d'un attribut ou d'une opération, certaines propriétés supplémentaires peuvent apparaître à la fin de la ligne et après chaque paramètre. Elles apparaissent entre accolades {…}. Vous pouvez modifier ou ajouter ces propriétés. Exemple :
+ Lorsque vous modifiez la signature d'un attribut ou d'une opération, certaines propriétés supplémentaires peuvent apparaître à la fin de la ligne et après chaque paramètre. Elles apparaissent entre accolades {…}. Vous pouvez modifier ou ajouter ces propriétés. Par exemple :
 
 ```
 + AddItems (items: MenuItem [1..*] {unique, ordered})
@@ -322,7 +322,7 @@ visibility operation-name (parameter1 : Type1, ...) : Type
 
  L'attribut est calculé à partir de valeurs d'autres attributs ou associations.
 
- « / » apparaît avant le nom d'un attribut. Exemple :
+ « / » apparaît avant le nom d'un attribut. Par exemple :
 
 ```
 /TotalPrice: Integer

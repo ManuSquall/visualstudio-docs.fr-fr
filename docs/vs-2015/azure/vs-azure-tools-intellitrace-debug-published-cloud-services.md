@@ -1,5 +1,5 @@
 ---
-title: Débogage d’un service Cloud Azure publié avec Visual Studio et IntelliTrace | Microsoft Docs
+title: Débogage d’un service cloud Azure publié avec Visual Studio et IntelliTrace | Microsoft Docs
 description: Découvrez comment déboguer un service cloud avec Visual Studio et IntelliTrace
 author: mikejo5000
 manager: jillfra
@@ -11,28 +11,28 @@ ms.date: 03/21/2017
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: 00e13c6f217c54b99dfe103b86f1e775e36fd62a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: b1617ab8bd61857b29d78dc800ca70e26a7c8ff2
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74293545"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852272"
 ---
 # <a name="debugging-a-published-azure-cloud-service-with-visual-studio-and-intellitrace"></a>Débogage d’un service cloud Azure publié avec Visual Studio et IntelliTrace
 Avec IntelliTrace, vous pouvez enregistrer des informations de débogage détaillées pour une instance de rôle exécutée dans Azure. Si vous devez identifier la cause d’un problème, utilisez les journaux IntelliTrace pour exécuter pas à pas votre code à partir de Visual Studio comme s’il était exécuté dans Azure. En effet, IntelliTrace enregistre les principales données sur l’exécution du code et sur l’environnement quand votre application Azure est exécutée en tant que service cloud dans Azure. IntelliTrace vous permet d’examiner les données enregistrées à partir de Visual Studio. 
 
 Vous pouvez utiliser IntelliTrace si Visual Studio Enterprise est installé et que votre application Azure cible .NET Framework 4 ou une version ultérieure. IntelliTrace collecte des informations pour vos rôles Azure. Les machines virtuelles pour ces rôles exécutent toujours des systèmes d’exploitation 64 bits.
 
-Vous pouvez également utiliser le [débogage distant](https://go.microsoft.com/fwlink/p/?LinkId=623041) pour l’attachement direct à un service cloud exécuté dans Azure.
+Vous pouvez également utiliser le [débogage distant](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-debugging-cloud-services-overview?view=vs-2019) pour l’attachement direct à un service cloud exécuté dans Azure.
 
 > [!IMPORTANT]
 > IntelliTrace est conçu uniquement pour des scénarios de débogage et ne doit pas être utilisé dans le cadre d’un déploiement de production.
 > 
 
 ## <a name="configure-an-azure-application-for-intellitrace"></a>Configurer une application Azure pour IntelliTrace
-Pour activer IntelliTrace pour une application Azure, vous devez créer et publier l’application à partir d’un projet Azure Visual Studio. Configurez IntelliTrace pour votre application Azure avant de la publier dans Azure. Si vous publiez votre application sans configurer IntelliTrace, vous devez republier le projet. Pour plus d’informations, voir [Publication d’un projet Azure Cloud Services à l’aide de Visual Studio](https://go.microsoft.com/fwlink/p/?LinkId=623012).
+Pour activer IntelliTrace pour une application Azure, vous devez créer et publier l’application à partir d’un projet Azure Visual Studio. Configurez IntelliTrace pour votre application Azure avant de la publier dans Azure. Si vous publiez votre application sans configurer IntelliTrace, vous devez republier le projet. Pour plus d’informations, voir [Publication d’un projet Azure Cloud Services à l’aide de Visual Studio](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-publishing-a-cloud-service?view=vs-2019).
 
-1. Lorsque vous êtes prêt à déployer votre application Windows Azure, vérifiez que les cibles de génération de votre projet sont définies sur **Déboguer**.
+1. Quand vous êtes prêt à déployer votre application Azure, vérifiez que les cibles de publication de votre projet sont définies sur **Debug**.
 
 1. Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur le projet, puis, dans le menu contextuel, sélectionnez **Publier**.
    
@@ -46,7 +46,7 @@ Pour activer IntelliTrace pour une application Azure, vous devez créer et publi
 
     ![Lien Paramètres IntelliTrace](./media/vs-azure-tools-intellitrace-debug-published-cloud-services/intellitrace-settings-link.png)
    
-1. Dans la boîte de dialogue **Paramètres IntelliTrace**, vous pouvez spécifier les événements à enregistrer dans le journal, si les informations d’appel doivent être collectées ou non, pour quels modules et processus collecter les journaux, et la quantité d’espace à allouer à l’enregistrement. Pour plus d’informations sur IntelliTrace, consultez [Débogage avec IntelliTrace](https://go.microsoft.com/fwlink/?LinkId=214468).
+1. Dans la boîte de dialogue **Paramètres IntelliTrace**, vous pouvez spécifier les événements à enregistrer dans le journal, si les informations d’appel doivent être collectées ou non, pour quels modules et processus collecter les journaux, et la quantité d’espace à allouer à l’enregistrement. Pour plus d’informations sur IntelliTrace, consultez [Débogage avec IntelliTrace](https://msdn.microsoft.com/library/dd264915.aspx).
    
     ![Paramètres IntelliTrace](./media/vs-azure-tools-intellitrace-debug-published-cloud-services/IC519063.png)
 

@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9d7736365e8e2bb371a71580492401bb2660fcc3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 34ceb2ec7cc923f6642977cf4c70fbfae07bf523
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429654"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848426"
 ---
 # <a name="how-to-select-a-python-environment-for-a-project"></a>Guide pratique pour sélectionner l’environnement Python d’un projet
 
@@ -26,7 +26,7 @@ Tous les nouveaux projets Python dans Visual Studio sont initialement configuré
 ![Environnement Python global par défaut indiqué dans l’Explorateur de solutions](media/environments/environments-project.png)
 
 ::: moniker range="vs-2017"
-Pour changer l’environnement d’un projet, cliquez avec le bouton droit sur le nœud **Environnements Python**, puis sélectionnez **Ajouter/Supprimer des environnements Python**. Dans la liste affichée, qui inclut les environnements de type global, virtuel et conda, sélectionnez tous ceux que vous souhaitez voir apparaître sous le nœud **Environnements Python** :
+Pour changer l’environnement d’un projet, cliquez avec le bouton droit sur le nœud **Environnements Python**, puis sélectionnez **Ajouter/Supprimer des environnements Python**. Dans la liste affichée, qui comprend les environnements globaux, virtuels et Conda, sélectionnez tous ceux que vous souhaitez voir apparaître sous le nœud **environnements python** :
 
 ![Boîte de dialogue Ajouter/supprimer des environnements Python](media/environments/environments-add-remove.png)
 
@@ -38,11 +38,11 @@ Pour activer rapidement un autre environnement, cliquez dessus avec le bouton dr
 
 Le menu contextuel sur le nœud **Environnements Python** propose également des commandes supplémentaires :
 
-| Commande | Description |
+| Command | Description |
 | --- | --- |
 | **Ajouter un environnement virtuel** | Commence le processus de création d’un environnement virtuel dans le projet. Voir [Créer un environnement virtuel](#create-a-virtual-environment). |
 | **Ajouter un environnement virtuel existant** | Vous invite à sélectionner un dossier contenant un environnement virtuel et l’ajoute à la liste sous **Environnements Python**, mais ne l’active pas. Consultez [Activer un environnement virtuel existant](#activate-an-existing-virtual-environment). |
-| **Créer un environnement Conda** | Bascule vers la **fenêtre** *Environnements Python*, dans laquelle vous pouvez entrer un nom pour l’environnement et spécifier son interpréteur de base. Consultez [Environnements Conda](managing-python-environments-in-visual-studio.md#conda-environments). |
+| **Créer un environnement Conda** | Bascule vers la *fenêtre* **environnements python** dans laquelle vous entrez un nom pour l’environnement et spécifiez son interpréteur de base. Consultez [Environnements Conda](managing-python-environments-in-visual-studio.md#conda-environments). |
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
@@ -61,7 +61,7 @@ Si vous déjà ajouté un environnement autre que l’environnement global par d
 
 Un environnement virtuel est une combinaison unique entre un interpréteur Python donné et un ensemble précis de bibliothèques, qui diffère des autres environnements globaux et conda. Un environnement virtuel est spécifique à un projet et conservé dans un dossier de projet. Ce dossier contient les bibliothèques installées de l’environnement, ainsi qu’un fichier *pyvenv.cfg* qui spécifie le chemin de l’*interpréteur de base* de l’environnement, ailleurs sur le système de fichiers. (Autrement dit, un environnement virtuel ne contient pas de copie de l’interpréteur, mais uniquement un lien vers celui-ci.)
 
-Un des avantages de l’utilisation d’un environnement virtuel est qu’au fur et à mesure du développement du projet, l’environnement virtuel reflète toujours les dépendances exactes du projet. (En revanche, un environnement global partagé contient un certain nombre de bibliothèques, que vous les utilisiez ou non dans votre projet.) Vous pouvez donc facilement créer un fichier *requirements.txt* à partir de l’environnement virtuel, lequel est ensuite utilisé pour réinstaller ces dépendances sur un autre ordinateur de développement ou de production. Pour plus d’informations, consultez [Gérer les packages requis avec requirements.txt](managing-required-packages-with-requirements-txt.md).
+Un des avantages de l’utilisation d’un environnement virtuel est qu’au fur et à mesure du développement du projet, l’environnement virtuel reflète toujours les dépendances exactes du projet. (Un environnement global partagé, en revanche, contient un nombre quelconque de bibliothèques, que vous les utilisiez ou non dans votre projet.) Vous pouvez ensuite facilement créer un fichier *Requirements. txt* à partir de l’environnement virtuel, qui est ensuite utilisé pour réinstaller ces dépendances sur un autre ordinateur de développement ou de production. Pour plus d’informations, consultez [Gérer les packages requis avec requirements.txt](managing-required-packages-with-requirements-txt.md).
 
 Quand vous ouvrez un projet contenant un fichier *requirements.txt* dans Visual Studio, ce dernier vous propose automatiquement de recréer l’environnement virtuel. Sur les ordinateurs où Visual Studio n’est pas installé, vous pouvez utiliser `pip install -r requirements.txt` pour restaurer les packages.
 
@@ -125,7 +125,7 @@ Vous pouvez créer un nouvel environnement virtuel directement dans Visual Studi
     | --- | --- |
     | Définir en tant qu’environnement actuel | Active le nouvel environnement dans le projet sélectionné lorsque l’environnement est créé. |
     | Définir en tant qu’environnement par défaut pour les nouveaux projets | Définit et active automatiquement l’environnement virtuel dans tous les nouveaux projets créés dans Visual Studio. Lorsque vous utilisez cette option, l’environnement virtuel doit être placé dans un emplacement en dehors d’un projet spécifique.  |
-    | Afficher dans la fenêtre des environnements Python | Spécifie l’ouverture ou non de la fenêtre **Environnements Python** après la création de l’environnement. |
+    | Afficher dans la fenêtre Environnements Python | Spécifie l’ouverture ou non de la fenêtre **Environnements Python** après la création de l’environnement. |
     | Rendre cet environnement disponible globalement | Spécifie si l’environnement virtuel joue également un environnement global. Lorsque vous utilisez cette option, l’environnement virtuel doit être placé dans un emplacement en dehors d’un projet spécifique. |
 
 1. Sélectionnez **Créer** pour finaliser l’environnement virtuel. Visual Studio affiche une barre de progression pendant qu’il configure l’environnement et télécharge les packages nécessaires. Lorsque l’opération est terminée, l’environnement virtuel est activé et apparaît sous le nœud **Environnements Python** dans l’**Explorateur de solutions** et dans la fenêtre **Environnements Python** du projet auquel il appartient.
@@ -169,11 +169,11 @@ Sachez que les entrées affichées ne sont pas toujours exactes, et que l’inst
 Sachez également que Visual Studio ne prend pas en charge pour le moment l’utilisation de `conda` pour installer des packages dans un environnement conda. Utilisez plutôt `conda` en ligne de commande.
 
 > [!Tip]
-> Il est courant que pip ne parvienne pas à installer un package quand celui-ci inclut du code source pour les composants natifs dans les fichiers *\*.pyd*. Si la version requise de Visual Studio n’est pas installée, pip n’est pas en mesure de compiler ces composants. Le message d’erreur affiché dans ce cas est **erreur : vcvarsall.bat est introuvable**. `easy_install` est souvent capable de télécharger des binaires précompilés, et vous pouvez télécharger un compilateur approprié pour les versions antérieures de Python à partir de [https://aka.ms/VCPython27](https://aka.ms/VCPython27). Pour plus d’informations, consultez le billet [How to deal with the pain of "unable to find vcvarsallbat"](https://devblogs.microsoft.com/python/unable-to-find-vcvarsall-bat/) (Comment gérer l’erreur « unable to find vcvarsallbat ») sur le blog de l’équipe Python Tools.
+> Il est courant que pip ne parvienne pas à installer un package quand celui-ci inclut du code source pour les composants natifs dans les fichiers *\*.pyd*. Si la version requise de Visual Studio n’est pas installée, pip n’est pas en mesure de compiler ces composants. Le message d’erreur affiché dans ce cas est **erreur : vcvarsall.bat est introuvable**. `easy_install` est souvent capable de télécharger des binaires précompilés, et vous pouvez télécharger un compilateur approprié pour les versions antérieures de Python à partir de [https://www.microsoft.com/download/details.aspx?id=44266](https://www.microsoft.com/download/details.aspx?id=44266). Pour plus d’informations, consultez le billet [How to deal with the pain of "unable to find vcvarsallbat"](https://devblogs.microsoft.com/python/unable-to-find-vcvarsall-bat/) (Comment gérer l’erreur « unable to find vcvarsallbat ») sur le blog de l’équipe Python Tools.
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Gérer les environnements Python dans Visual Studio](managing-python-environments-in-visual-studio.md)
-- [Utiliser requirements.txt pour les dépendances](managing-required-packages-with-requirements-txt.md)
+- [Utilisation requirements.txt pour les dépendances](managing-required-packages-with-requirements-txt.md)
 - [Chemins de recherche](search-paths.md)
 - [Référence sur la fenêtre Environnements Python](python-environments-window-tab-reference.md)

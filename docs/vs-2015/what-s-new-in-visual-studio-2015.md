@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ce064209ca96abda1f9e44825fa869c2ba250a32
-ms.sourcegitcommit: 08105865a9643fb20dce9b8b7580452cfbbe7ee7
+ms.openlocfilehash: f7065967ec86f7cde63c90de816fca95afce2171
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74538986"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851489"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Nouveautés de Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ Pour en savoir plus sur les nombreuses améliorations et nouvelles fonctionnalit
  Visual Studio Tools pour Apache Cordova est le fruit d'une étroite collaboration entre Microsoft et la communauté Open Source d'Apache Cordova. Ces outils permettent le développement multiplateforme pour appareils mobiles en HTML, CSS et JavaScript (ou TypeScript). Vous pouvez cibler des plateformes Android, iOS et Windows avec une base de code unique, et tirer parti de la richesse de l'IDE de Visual Studio, notamment avec JavaScript IntelliSense, l'explorateur DOM, la console JavaScript, les points d'arrêt, les espions, les variables locales, Uniquement mon code, etc.  Avec Visual Studio Tools pour Apache Cordova, vos applications ont accès aux fonctionnalités natives des appareils sur toutes les plateformes grâce à des plug-ins qui fournissent une API JavaScript commune. Pour commencer, consultez [prise en main de Visual Studio Tools pour Apache Cordova](https://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42).
 
 ### <a name="cross-platform-mobile-games-in-c-with-unity"></a>Jeux mobiles multiplateformes en C# avec Unity
- Unity est une plateforme largement utilisée pour le développement de jeux 2D et 3D multiplateforme. Vous pouvez écrire votre jeu en C# et l'exécuter de façon native sur Android, iOS, Windows Phone et de nombreuses autres plateformes. Visual Studio Tools for Unity est une extension qui intègre Unity à l'IDE de Visual Studio. Avec cette extension, vous obtenez toutes les fonctionnalités de l'IDE de Visual Studio et de son débogueur, en plus des fonctionnalités de productivité conçues pour les développeurs Unity. Visual Studio Tools for Unity 2.0 Preview 2 ajoute la prise en charge de Visual Studio 2015 et d'un certain nombre de nouvelles fonctionnalités, notamment une meilleure visualisation des objets dans les fenêtres Variables locales et Espion. Microsoft a récemment acquis SyntaxTree, la société des créateurs de Visual Studio Tools for Unity. Pour télécharger Visual Studio Tools for Unity 2.0 Preview 2 et pour plus d’informations sur Visual Studio Tools for Unity, consultez [Visual Studio Tools for Unity 2.0](https://aka.ms/vstu).
+ Unity est une plateforme largement utilisée pour le développement de jeux 2D et 3D multiplateforme. Vous pouvez écrire votre jeu en C# et l'exécuter de façon native sur Android, iOS, Windows Phone et de nombreuses autres plateformes. Visual Studio Tools for Unity est une extension qui intègre Unity à l'IDE de Visual Studio. Avec cette extension, vous obtenez toutes les fonctionnalités de l'IDE de Visual Studio et de son débogueur, en plus des fonctionnalités de productivité conçues pour les développeurs Unity. Visual Studio Tools for Unity 2.0 Preview 2 ajoute la prise en charge de Visual Studio 2015 et d'un certain nombre de nouvelles fonctionnalités, notamment une meilleure visualisation des objets dans les fenêtres Variables locales et Espion. Microsoft a récemment acquis SyntaxTree, la société des créateurs de Visual Studio Tools for Unity. Pour télécharger Visual Studio Tools for Unity 2.0 Preview 2 et pour plus d’informations sur Visual Studio Tools for Unity, consultez [Visual Studio Tools for Unity 2.0](https://visualstudio.microsoft.com/vs/features/game-development/#tab-4b0d0be8de5f65564ad).
 
 ### <a name="cross-platform-apps-and-libraries-for-native-c"></a>Applications et bibliothèques multiplateformes pour du code C++ natif
  C++ est un langage disponible en mode natif sur la plupart des appareils mobiles. Vous pouvez l'utiliser pour écrire des bibliothèques de code partagé multiplateformes qui peuvent être générées pour plusieurs plateformes mobiles cibles. Vous pouvez même créer des applications mobiles tout en C++. Visual C++ offre les outils nécessaires pour modifier, générer, déployer et déboguer votre code multiplateforme. Outre les modèles pour les applications Windows, vous pouvez créer des projets à partir de modèles pour des applications Android Native Activity, des applications iOS ou des projets de bibliothèque de code partagé pour plusieurs plateformes qui incluent des applications hybrides Xamarin. La technologie IntelliSense spécifique à la plateforme vous permet d'explorer les API et de générer le code approprié pour des cibles Android, iOS ou Windows. Vous pouvez configurer votre build pour les plateformes natives x86 ou ARM et déployer votre code dans un simulateur iOS ou sur des appareils iOS sur un Mac connecté au réseau, sur des appareils Android directement connectés, ou exploiter les performances de l'émulateur Microsoft Visual Studio pour Android à des fins de test. Vous pouvez définir des points d'arrêt, espionner des variables, consulter la pile et exécuter le code C++ pas à pas dans le débogueur Visual Studio. Vous pouvez partager tout le code (hormis le plus spécifique à une plateforme) entre plusieurs plateformes d'applications, puis générer l'ensemble avec une seule solution dans Visual Studio.
@@ -139,7 +139,7 @@ Pour plus d’informations sur les nouveautés des diagnostics, consultez [Nouve
 
 Voici une liste d'outils nouveaux ou améliorés qui effectuent différents types d'analyses et de diagnostics sur votre code :
 
-### <a name="perftips"></a>Conseils sur les performances
+### <a name="perftips"></a>conseils sur les performances
  Les conseils pour les performances indiquent le temps d'exécution des méthodes durant le débogage, ce qui vous permet d'identifier rapidement les goulots d'étranglement, sans avoir à invoquer le profileur. Pour commencer, consultez [Conseils sur les performances : Performance Information at-a-glance while Debugging with Visual Studio](https://devblogs.microsoft.com/devops/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio/)
 
 ### <a name="error-list"></a>Liste d’erreurs
@@ -158,7 +158,7 @@ Voici une liste d'outils nouveaux ou améliorés qui effectuent différents type
 ### <a name="synchronized-settings-roaming-settings"></a>Paramètres synchronisés (paramètres d'itinérance)
  Visual Studio 2013 a introduit les paramètres synchronisés pour certains des paramètres les plus souvent configurés, par exemple l’éditeur de texte, les combinaisons de touches, les thèmes, les polices et couleurs, le démarrage et les alias d’environnement.  Visual Studio 2015 améliore cette expérience en synchronisant davantage de paramètres, et en les synchronisant pour l'ensemble des applications de la famille Visual Studio (par exemple, les versions Professional, Enterprise, Express et Blend). Quand vous vous connectez à Visual Studio 2015 pour la première fois avec le compte utilisé dans Visual Studio 2013, vos paramètres synchronisés sont appliqués à partir de Visual Studio 2013. Vous pouvez accéder à vos paramètres en tapant « sync » dans la barre d’outils **Lancement rapide**, ou en naviguant vers **Outils > Options > Environnement > Paramètres synchronisés**.
 
-### <a name="automatic-extension-updates"></a>mises à jour d'extensions automatiques
+### <a name="automatic-extension-updates"></a>Mises à jour d'extensions automatiques
  Les extensions Visual Studio installées sont automatiquement mises à jour lorsqu'une nouvelle version est disponible dans la galerie Visual Studio. Consultez [Recherche et utilisation des extensions Visual Studio](./ide/finding-and-using-visual-studio-extensions.md) pour plus d'informations sur la personnalisation des mises à jour d'extensions automatiques.
 
 ### <a name="title-case-menus"></a>Menus avec 1re lettre des mots en majuscule
@@ -177,7 +177,7 @@ Voici une liste d'outils nouveaux ou améliorés qui effectuent différents type
  ![Élément de menu de disposition personnalisée de Visual Studio](./ide/media/vs2015-customlayout.png "VS2015_CustomLayout")
 
 ### <a name="notification-hub"></a>Hub de notification
- L'interface utilisateur du hub de notification a été simplifiée pour faciliter des analyses rapides. Des types de notifications ont été ajoutés, qui concernent notamment des problèmes de performances, des problèmes de rendu et des défaillances. Vous pouvez aussi désormais indiquer à Visual Studio d'arrêter d'afficher une notification. Pour plus d'informations, consultez [Notifications de Visual Studio](./ide/visual-studio-notifications.md).
+ L'interface utilisateur du hub de notification a été simplifiée pour faciliter des analyses rapides. Des types de notifications ont été ajoutés, qui concernent notamment des problèmes de performances, des problèmes de rendu et des défaillances. Vous pouvez aussi désormais indiquer à Visual Studio d'arrêter d'afficher une notification. Pour plus d’informations, consultez [Notifications de Visual Studio](./ide/visual-studio-notifications.md).
 
 ### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens : découvrez ce qui est arrivé à votre code (éditions Enterprise et Professional uniquement)
  Ne perdez pas le fil : recherchez des informations relatives à votre code sans quitter l’éditeur. Vous pouvez examiner les modifications et autres éléments de l’historique pour les éléments de travail, bogues, révisions du code, etc. pour le code stocké dans Visual Studio Online (VSO) ou dans Team Foundation Server (TFS).
@@ -257,7 +257,7 @@ Voici une liste d'outils nouveaux ou améliorés qui effectuent différents type
 ### <a name="send-a-frown"></a>Envoyer un smiley mécontent
  Il est important pour nous d'identifier les zones du produit à améliorer. Cela nous permet de mieux gérer notre backlog et de nous pencher en priorité sur ce qui importe le plus à nos clients. Si quelque chose vous importune, utilisez la fonctionnalité **Envoyer un smiley mécontent** pour nous en faire part directement dans l'IDE. La procédure à suivre est très simple :
 
- Cliquez sur l'émoticône jaune dans la barre de titre, puis cliquez sur **Envoyer un smiley mécontent**. Indiquez ce qui vous dérange, puis cliquez sur le bouton Envoyer un smiley mécontent. Pour plus d'informations, consultez [Talk to Us](./ide/talk-to-us.md).
+ Cliquez sur l'émoticône jaune dans la barre de titre, puis cliquez sur **Envoyer un smiley mécontent**. Indiquez ce qui vous dérange, puis cliquez sur le bouton Envoyer un smiley mécontent. Pour plus d’informations, consultez [Nous contacter](./ide/talk-to-us.md).
 
 ### <a name="report-crashes-hangs-and-performance-issues"></a>Signaler les accidents, blocages et problèmes de performance
  Parfois, une note rapide dans un smiley mécontent ne suffit pas à rendre pleinement compte d'un problème. Si vous vous heurtez à un blocage, un incident ou un problème de performance, vous pouvez facilement partager les étapes de reproduction, les vidages sur incident et les fichiers de trace dans la boîte de dialogue qui apparaît après l'envoi d'un smiley mécontent.
@@ -267,7 +267,7 @@ Voici une liste d'outils nouveaux ou améliorés qui effectuent différents type
 ## <a name="see-also"></a>Voir aussi
 
 * [Créer des applications interplateformes avec Apache Cordova](https://msdn.microsoft.com/library/34d3c1be-22b3-4812-97fb-10b4e8ad2134)
-* [Créer des applications avec l’interface utilisateur native en utilisant Xamarin dans Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)
+* [Générer des applications Xamarin avec une interface utilisateur native dans Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)
 * [Générer des applications interplateformes avec Visual C++](./misc/build-cross-platform-mobile-apps-with-visual-cpp.md)
 * [Générer des tests unitaires pour votre code avec IntelliTest](./test/generate-unit-tests-for-your-code-with-intellitest.md)
 * [Utiliser plusieurs comptes d’utilisateur](./ide/work-with-multiple-user-accounts.md)

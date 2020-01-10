@@ -12,17 +12,17 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ab048fe69ca89086e9811e5277dccb86aeee6194
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7d1fba3b956a492740171bf2ad747e980b41df29
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300849"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851977"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Guide pratique pour créer et appliquer une ressource
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Les styles et les modèles des éléments du concepteur XAML sont stockés dans des entités réutilisables appelées ressources. Les styles vous permettent de définir les propriétés des éléments et de réutiliser ces paramètres pour que l'apparence des différents éléments demeure cohérente. Un [ControlTemplate](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.controltemplate.aspx) définit l’apparence d’un contrôle et peut également être appliqué en tant que ressource. Pour plus d’informations, consultez [Démarrage rapide : contrôles de styles](https://go.microsoft.com/fwlink/?LinkID=248239) et [Démarrage rapide : modèles de contrôles](https://go.microsoft.com/fwlink/?LinkID=247982).
+Les styles et les modèles des éléments du concepteur XAML sont stockés dans des entités réutilisables appelées ressources. Les styles vous permettent de définir les propriétés des éléments et de réutiliser ces paramètres pour que l'apparence des différents éléments demeure cohérente. Un [ControlTemplate](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.controltemplate.aspx) définit l’apparence d’un contrôle et peut également être appliqué en tant que ressource. Pour plus d’informations, consultez [Démarrage rapide : contrôles de styles](https://msdn.microsoft.com/library/windows/apps/xaml/hh465381.aspx) et [Démarrage rapide : modèles de contrôles](https://msdn.microsoft.com/library/windows/apps/xaml/hh465374.aspx).
 
  Quand vous créez une ressource à partir d’une propriété existante, [Style](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.style.aspx) ou `ControlTemplate`, la boîte de dialogue **Créer une ressource** vous permet de définir la ressource au niveau de l’application, du document ou de l’élément. Ces niveaux déterminent où vous pouvez utiliser la ressource. Par exemple, si vous définissez la ressource au niveau de l'élément, elle peut être appliquée uniquement à l'élément sur lequel vous l'avez créée. Vous pouvez également choisir de stocker la ressource dans un dictionnaire de ressources. Il s'agit d'un fichier distinct que vous pouvez réutiliser dans un autre projet.
 
@@ -34,7 +34,7 @@ Les styles et les modèles des éléments du concepteur XAML sont stockés dans 
 
      La boîte de dialogue appropriée pour la création d'une ressource s'affiche. Cette boîte de dialogue apparaît quand vous créez une ressource à partir d'un pinceau :
 
-     ![Boîte de dialogue créer une ressource](../designers/media/xaml-create-resource.png "xaml_create_resource")
+     ![Create Resource Dialog Box](../designers/media/xaml-create-resource.png "xaml_create_resource")
 
 3. Dans la zone **Nom (Clé)** , entrez un nom de clé. C'est le nom que vous pouvez utiliser pour que d'autres éléments fassent référence à la ressource.
 
@@ -54,7 +54,7 @@ Les styles et les modèles des éléments du concepteur XAML sont stockés dans 
 
 1. Dans la fenêtre Structure du document, choisissez l'élément auquel vous souhaitez appliquer une ressource.
 
-2. Effectuez l'une des opérations suivantes :
+2. Effectuez l'une des actions suivantes :
 
    - Appliquer une ressource à une propriété. Dans la fenêtre Propriétés, cliquez sur le marqueur de propriété en regard de la valeur de propriété, choisissez **Ressource locale** ou **Ressource système**, puis sélectionnez une ressource disponible dans la liste qui apparaît.
 
@@ -65,7 +65,7 @@ Les styles et les modèles des éléments du concepteur XAML sont stockés dans 
      > [!NOTE]
      > **Modifier un modèle** est utilisé pour appliquer des modèles de contrôle. **Modifier d’autres modèles** est utilisé pour appliquer d’autres types de modèle.
 
-     Les ressources sont applicables si elles sont compatibles. Par exemple, une ressource de pinceau peut être appliquée à la propriété **Foreground** d’un contrôle <xref:Windows.UI.Xaml.Controls.TextBox>.
+     Les ressources sont applicables si elles sont compatibles. Par exemple, une ressource de pinceau peut être appliquée à la propriété **Foreground<xref:Windows.UI.Xaml.Controls.TextBox> d’un contrôle** .
 
 ### <a name="to-edit-a-resource"></a>Pour modifier une ressource
 

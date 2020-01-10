@@ -12,12 +12,12 @@ ms.assetid: c191de3e-3f3b-471e-b828-29ec24e80e2c
 caps.latest.revision: 64
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8c861099ac5253c9610e8ae75d3c429a5ce88a9d
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7a8b9a4b52fce5fb838c12ccf057fd0e80619cd7
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301432"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851259"
 ---
 # <a name="unit-test-your-code"></a>Tests unitaires sur votre code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ Les tests unitaires offrent aux développeurs et aux testeurs une méthode rapid
 |**Utiliser la couverture du code pour identifier la proportion du code de votre projet qui est testée à l’aide de tests unitaires :** découvrez la fonctionnalité de couverture du code des outils de test [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)].|-   [Utilisation de la couverture du code pour déterminer la quantité de code testé](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)|
 |**Effectuer une analyse de contraintes et de performances à l’aide de tests de charge pour vos tests unitaires :** vous pouvez créer un test de charge et lui ajouter vos tests unitaires pour isoler les problèmes de contraintes et de performances de votre application. **Remarque :** La création et l’utilisation de tests de charge nécessitent Visual Studio Enterprise.|-   [Création et modification de tests de charge](https://msdn.microsoft.com/e2985d15-60a7-4177-93b4-f986c2936337)<br />-   [Guide pratique pour ajouter des tests de performances web et des tests unitaires à un scénario de test de charge](https://msdn.microsoft.com/03cc073e-9bdf-4530-ae46-504a51884594)<br />-   [Guide pratique pour supprimer des tests web et des tests unitaires d’un scénario de test de charge](https://msdn.microsoft.com/3d6128d2-82b0-42fc-bda2-23a8aa03be07)|
 |**Définir et appliquer des niveaux de qualité :** vous pouvez créer des niveaux de qualité pour que les tests soient exécutés avant que le code ne soit archivé pour vérifier la qualité du code.|-   [Définir et appliquer des niveaux de qualité](https://msdn.microsoft.com/library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)|
-|**Étendre le type de test unitaire :** vous pouvez ajouter des fonctionnalités à vos tests qui peuvent ne pas être dans le framework de tests unitaires. Par exemple, vous pouvez ajouter une propriété de test qui spécifie si un test doit s'exécuter comme utilisateur normal ou pas. Vous pouvez également étendre le framework pour ajouter des attributs de ligne à une méthode et utiliser les données de cette ligne dans le test.|Pour obtenir un exemple de code permettant d’étendre le framework de tests unitaires, consultez le [site web Microsoft](https://go.microsoft.com/fwlink/?LinkId=185591) suivant.|
+|**Étendre le type de test unitaire :** vous pouvez ajouter des fonctionnalités à vos tests qui peuvent ne pas être dans le framework de tests unitaires. Par exemple, vous pouvez ajouter une propriété de test qui spécifie si un test doit s'exécuter comme utilisateur normal ou pas. Vous pouvez également étendre le framework pour ajouter des attributs de ligne à une méthode et utiliser les données de cette ligne dans le test.|Pour obtenir un exemple de code permettant d’étendre le framework de tests unitaires, consultez le [site web Microsoft](https://msdn.microsoft.com/vstudio/ff420671.aspx) suivant.|
 |**Définir les options de test :** par exemple, vous pouvez spécifier l’emplacement de stockage des résultats des tests.|[Configurer des tests unitaires à l’aide d’un fichier .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)|
 
 ## <a name="related-tasks"></a>Tâches connexes
@@ -63,7 +63,7 @@ Les tests unitaires offrent aux développeurs et aux testeurs une méthode rapid
 
  Fournit des liens vers des informations sur l'utilisation de Visual Studio plutôt que [!INCLUDE[TCMext](../includes/tcmext-md.md)] pour exécuter des tests automatisés.
 
-## <a name="reference"></a>Référence
+## <a name="reference"></a>Reference
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting> décrit l’espace de noms UnitTesting qui fournit des attributs, des exceptions, des assertions et d’autres classes qui prennent en charge les tests unitaires.
 
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Web> décrit l’espace de noms UnitTesting. Web, qui étend l’espace de noms UnitTesting en fournissant la prise en charge de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] et des tests unitaires de service Web.
@@ -71,16 +71,16 @@ Les tests unitaires offrent aux développeurs et aux testeurs une méthode rapid
 ## <a name="external-resources"></a>Ressources externes
 
 ### <a name="videos"></a>Vidéos
- [Channel 9 : Unit testing your Windows Store apps built using XAML (Tests unitaires de vos applications du Windows Store en XAML)](https://go.microsoft.com/fwlink/?LinkId=226285)
+ [Channel 9 : Unit testing your Windows Store apps built using XAML (Tests unitaires de vos applications du Windows Store en XAML)](https://channel9.msdn.com/Events/BUILD/BUILD2011/TOOL-529T)
 
 ### <a name="forums"></a>Forums
- [Visual Studio Unit Testing (Tests unitaires Visual Studio)](https://go.microsoft.com/fwlink/?LinkId=224477)
+ [Visual Studio Unit Testing (Tests unitaires Visual Studio)](https://social.msdn.microsoft.com/Forums/en/vsunittest/threads)
 
-### <a name="guidance"></a>Conseils
- [Test de la livraison continue avec Visual Studio 2012 - Chapitre 2 : Tests unitaires : tester l’intérieur](https://go.microsoft.com/fwlink/?LinkID=255188)
+### <a name="guidance"></a>Aide
+ [Tester la livraison continue avec Visual Studio 2012 - Chapitre 2 : Tests unitaires : tester l’intérieur](https://msdn.microsoft.com/library/jj159340.aspx)
 
-### <a name="reference"></a>Référence
- [Index de contenu des tests unitaires](https://go.microsoft.com/fwlink/?LinkID=254719)
+### <a name="reference"></a>Reference
+ [Index de contenu des tests unitaires](https://blogs.msdn.com/b/mathew_aniyan/archive/2012/05/17/content-index-for-unit-test.aspx)
 
 ## <a name="see-also"></a>Voir aussi
  [Améliorer la qualité du code](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945) [test de l’application](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)

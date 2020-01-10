@@ -23,12 +23,12 @@ caps.latest.revision: 48
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1ed9a341e1b0f7247175e62aceafc6051f83e8f9
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: d0763f2cf86d94f96f6f9c907ee306c731994f22
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300160"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852086"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Guide pratique pour ajouter ou supprimer des références à l’aide du gestionnaire de références
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Vous pouvez utiliser la boîte de dialogue **Gestionnaire de références** pour
 - Parcourir, avec le sous-groupe Récent.
 
 ## <a name="assemblies-tab"></a>Onglet Assemblys
- L’onglet **Assemblys** répertorie tous les assemblys .NET Framework qui sont disponibles pour le référencement. L’onglet **Assemblys** ne répertorie par les assemblys du Global Assembly Cache (GAC), car ils appartiennent à l’environnement d’exécution. Si vous déployez ou copiez une application qui contient une référence à un assembly enregistré dans le GAC, cet assembly ne sera ni déployé ni copié avec l'application, quelle que soit la valeur du paramètre Copie locale. Pour plus d’informations, consultez [Références de projet](https://go.microsoft.com/fwlink/?LinkId=238512).
+ L’onglet **Assemblys** répertorie tous les assemblys .NET Framework qui sont disponibles pour le référencement. L’onglet **Assemblys** ne répertorie par les assemblys du Global Assembly Cache (GAC), car ils appartiennent à l’environnement d’exécution. Si vous déployez ou copiez une application qui contient une référence à un assembly enregistré dans le GAC, cet assembly ne sera ni déployé ni copié avec l'application, quelle que soit la valeur du paramètre Copie locale. Pour plus d’informations, consultez [Références de projet](https://msdn.microsoft.com/library/ez524kew.aspx).
 
  Lorsque vous ajoutez manuellement une référence à l'un des espaces de noms EnvDTE (EnvDTE, EnvDTE80, EnvDTE90, EnvDTE90a ou EnvDTE100), attribuez la valeur False à la propriété Incorporer les types interop, dans la fenêtre Propriétés. Si cette propriété a la valeur True, des problèmes de génération risquent de survenir car certaines propriétés EnvDTE ne peuvent pas être incorporées.
 

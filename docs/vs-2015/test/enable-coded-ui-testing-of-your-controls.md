@@ -8,12 +8,12 @@ ms.assetid: 5ef1188f-89dc-413d-801d-0efdaf9b0427
 caps.latest.revision: 24
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 331dabfe8e219383fdc04187482b17b9048886a9
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7190a7f698868642c58d1de2ff801e328859b9db
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302571"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851808"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Activer le test codé de l'interface utilisateur de vos contrôles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -519,7 +519,7 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
 
 #### <a name="to-debug-your-property-provider-or-action-filter"></a>Pour déboguer votre fournisseur de propriétés ou filtre d'action
 
-1. Générez la version debug de votre package d’extension, puis copiez les fichiers .dll et .pdb sur % ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages.
+1. Générez la version debug de votre package d'extension, puis copiez les fichiers .dll et .pdb sur % ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages.
 
 2. Exécutez votre application (pas dans le débogueur).
 
@@ -535,8 +535,8 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
 
 ## <a name="external-resources"></a>Ressources externes
 
-### <a name="guidance"></a>Conseils
- [Test de la livraison continue avec Visual Studio 2012 - Chapitre 2 : Tests unitaires : tester l’intérieur](https://go.microsoft.com/fwlink/?LinkID=255188)
+### <a name="guidance"></a>Aide
+ [Tester la livraison continue avec Visual Studio 2012 - Chapitre 2 : Tests unitaires : tester l’intérieur](https://msdn.microsoft.com/library/jj159340.aspx)
 
 ## <a name="see-also"></a>Voir aussi
 

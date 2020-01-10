@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 54c2ec423653d1649e7bac9dd302c5f272731477
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e18e50537f35080f9796f4a090b3806953ae5170
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594056"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845807"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Plateformes et configurations prises en charge pour les tests codés de l’interface utilisateur et les enregistrements des actions
 
@@ -54,7 +54,7 @@ Les plateformes et configurations prises en charge pour les tests codés de l’
 | Internet Explorer 6<br /><br /> Internet Explorer 7 | Non pris en charge. |
 | Chrome<br /><br /> Firefox | L’enregistrement des étapes d’action n’est pas pris en charge. Les tests codés de l’interface utilisateur peuvent être lus sur les navigateurs Chrome et Firefox avec Visual Studio 2012 Update 4 ou version ultérieure. Cliquez [ici](using-different-web-browsers-with-coded-ui-tests.md) pour plus d’informations. |
 | Opera<br /><br /> Safari | Non pris en charge. |
-| Silverlight | Non pris en charge.<br /><br /> Cependant, pour Visual Studio 2013, vous pouvez télécharger le [plug-in de test codé de l’interface utilisateur Microsoft Visual Studio 2013 pour Silverlight](https://go.microsoft.com/fwlink/?LinkId=691026) à partir de la galerie Visual Studio. |
+| Silverlight | Non pris en charge.<br /><br /> Cependant, pour Visual Studio 2013, vous pouvez télécharger le [plug-in de test codé de l’interface utilisateur Microsoft Visual Studio 2013 pour Silverlight](https://marketplace.visualstudio.com/items?itemName=PrachiBoraMSFT.MicrosoftVisualStudio2013CodedUITestPluginforSilve) à partir de la galerie Visual Studio. |
 | Flash/Java | Non pris en charge. |
 | Windows Forms 2.0 et versions ultérieures | Prise en charge intégrale. **Remarque :** Les contrôles NetFx sont entièrement pris en charge. En revanche, certains contrôles tiers ne sont pas pris en charge. |
 | WPF 3.5 et versions ultérieures | Prise en charge intégrale.<br /><br /> **Remarque** Les contrôles NetFx sont entièrement pris en charge ; en revanche, certains contrôles tiers ne sont pas pris en charge. |

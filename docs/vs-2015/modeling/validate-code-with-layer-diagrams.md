@@ -21,12 +21,12 @@ caps.latest.revision: 84
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 596711c5c59738d5356437bb761e80caeddfbd6b
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 45b82ece15cfef4d313764027c0220453a6d4849
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301354"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845437"
 ---
 # <a name="validate-code-with-layer-diagrams"></a>Valider du code avec des diagrammes de couche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Pour vous assurer que le code n'est pas en conflit avec sa conception, validez v
 
    Recherchez le code ou les dépendances qui requièrent du travail lorsque vous déplacez le code vers une architecture différente.
 
-  **Requirements**
+  **Spécifications**
 
 - Visual Studio
 
@@ -53,7 +53,7 @@ Pour vous assurer que le code n'est pas en conflit avec sa conception, validez v
 
   Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-  Vous pouvez valider manuellement le code depuis un diagramme de couche ouvert dans Visual Studio ou depuis une invite de commandes. Vous pouvez également valider le code automatiquement en exécutant des builds locales ou Team Foundation Build. Voir [vidéo Channel 9 : concevoir et valider votre architecture à l’aide de diagrammes de couche](https://go.microsoft.com/fwlink/?LinkID=252073).
+  Vous pouvez valider manuellement le code depuis un diagramme de couche ouvert dans Visual Studio ou depuis une invite de commandes. Vous pouvez également valider le code automatiquement en exécutant des builds locales ou Team Foundation Build. Voir [vidéo Channel 9 : concevoir et valider votre architecture à l’aide de diagrammes de couche](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Using-layer-diagrams-to-design-and-validate-your-architecture).
 
 > [!IMPORTANT]
 > Si vous souhaitez effectuer la validation de couche à l'aide de Team Foundation Build, vous devez aussi installer la même version de Visual Studio sur votre serveur de builds.
@@ -205,7 +205,7 @@ Pour vous assurer que le code n'est pas en conflit avec sa conception, validez v
 
 - [Personnaliser votre modèle de processus de génération](https://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)
 
-- [Surveiller la progression d’une build en cours d’exécution](https://msdn.microsoft.com/library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)
+- [Surveiller la progression d'une build en cours d'exécution](https://msdn.microsoft.com/library/e51e3bad-2d1d-4b7b-bfcc-c43439c6c8ef)
 
 ## <a name="TroubleshootingValidation"></a>Résoudre les problèmes de validation de couche
  Le tableau suivant décrit les problèmes liés à la validation de couche et propose une résolution. Ces problèmes ne sont pas liés aux erreurs qui résultent de conflits entre le code et la conception. Pour plus d’informations sur ces erreurs, consultez [comprendre et résoudre les erreurs de validation de couche](#UnderstandingValidationErrors).
@@ -227,7 +227,7 @@ Pour vous assurer que le code n'est pas en conflit avec sa conception, validez v
 
 |**Syntaxe**|**Description**|
 |----------------|---------------------|
-|*Artefactn*(*ArtifactTypeN*)|*Artefactn* est un artefact associé à une couche sur le diagramme de couche.<br /><br /> *ArtifactTypeN* est le type d' *artefactn*, tel qu’une **classe** ou une **méthode**, par exemple :<br /><br /> MySolution.MyProject.MyClass.MyMethod(Method)|
+|*ArtifactN*(*ArtifactTypeN*)|*Artefactn* est un artefact associé à une couche sur le diagramme de couche.<br /><br /> *ArtifactTypeN* est le type d' *artefactn*, tel qu’une **classe** ou une **méthode**, par exemple :<br /><br /> MySolution.MyProject.MyClass.MyMethod(Method)|
 |*NamespaceNameN*|Nom d'un espace de noms.|
 |*LayerNameN*|Nom d'une couche sur le diagramme de couche.|
 |*DependencyType*|Type de relation de dépendance entre *artefact 1* et *Artefact2*. Par exemple, *artefact 1* a une relation d' **appels** avec *Artefact2*.|

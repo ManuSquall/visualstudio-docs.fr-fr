@@ -8,19 +8,19 @@ ms.assetid: 41981ad6-673e-492e-b739-9863b14157b1
 caps.latest.revision: 26
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 266c4fd418b71c61391ac3b9b20ac93e5c77428c
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: dbc83731cfc1c04f33fc4de05f28ffd1a54f3e4d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302549"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851776"
 ---
 # <a name="making-coded-ui-tests-wait-for-specific-events-during-playback"></a>Suspension des tests codés de l'interface utilisateur en attendant des événements spécifiques pendant la lecture
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Dans une lecture de test codé de l'interface utilisateur, vous pouvez faire en sorte que le test attende que certains événements se produisent (par exemple qu'une fenêtre s'affiche, que la barre de progression disparaisse, et ainsi de suite). Pour cela, utilisez la méthode UITestControl.WaitForControlXXX() appropriée, comme décrit dans le tableau suivant. Pour obtenir un exemple de test codé de l’interface utilisateur qui attend l’activation d’un contrôle à l’aide de la méthode <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.WaitForControlEnabled%2A>, consultez [Procédure pas à pas : création, édition et gestion d’un test codé de l’interface utilisateur](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
 
- **Requirements**
+ **Spécifications**
 
  Visual Studio Enterprise
 
@@ -109,7 +109,7 @@ UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText
 
  **Aide**
 
- Pour obtenir des informations supplémentaires, consultez [Test de la livraison continue avec Visual Studio 2012 - Chapitre 5 : Automatisation des tests système](https://go.microsoft.com/fwlink/?LinkID=255196)
+ Pour obtenir des informations supplémentaires, consultez [Test de la livraison continue avec Visual Studio 2012 - Chapitre 5 : Automatisation des tests système](https://msdn.microsoft.com/library/jj159335.aspx)
 
 ## <a name="see-also"></a>Voir aussi
  [Utiliser UI Automation pour tester votre code](../test/use-ui-automation-to-test-your-code.md) [création de tests codés](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) de l’interface utilisateur [procédure pas à pas : création, édition et gestion d’un test codé de l’interface utilisateur](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md) [anatomie d’un test codé de l’interface utilisateur](../test/anatomy-of-a-coded-ui-test.md) [configurations et plateformes pour les tests codés de l’interface utilisateur et enregistrements des actions](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [Comment : insérer un délai avant une action d’interface utilisateur à l’aide de l’éditeur de test](https://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0)

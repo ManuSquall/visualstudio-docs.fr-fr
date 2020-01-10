@@ -9,17 +9,17 @@ caps.latest.revision: 20
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: c8f29a909f6aef75976a551546d4cbeafdf03b37
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a184ad6ebc1b3fc2dc21b7a1774b37fef8d359ec
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291883"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848466"
 ---
 # <a name="understanding-sal"></a>Présentation de SAL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Le langage SAL (source-code d’annotation) de Microsoft fournit un ensemble d’annotations que vous pouvez utiliser pour décrire comment une fonction utilise ses paramètres, les hypothèses qu’elle émet à leur sujet et les garanties qu’elle effectue lorsqu’elle se termine. Les annotations sont définies dans le fichier d’en-tête `<sal.h>`. L’analyse du code Visual C++ Studio pour utilise des annotations SAL pour modifier son analyse des fonctions. Pour plus d’informations sur le développement de pilotes Windows SAL 2,0 pour Windows, consultez [les annotations sal 2,0 pour les pilotes Windows](https://go.microsoft.com/fwlink/?LinkId=250979).  
+Le langage SAL (source-code d’annotation) de Microsoft fournit un ensemble d’annotations que vous pouvez utiliser pour décrire comment une fonction utilise ses paramètres, les hypothèses qu’elle émet à leur sujet et les garanties qu’elle effectue lorsqu’elle se termine. Les annotations sont définies dans le fichier d’en-tête `<sal.h>`. L’analyse du code Visual C++ Studio pour utilise des annotations SAL pour modifier son analyse des fonctions. Pour plus d’informations sur le développement de pilotes Windows SAL 2,0 pour Windows, consultez [les annotations sal 2,0 pour les pilotes Windows](https://msdn.microsoft.com/library/windows/hardware/hh454237.aspx).  
   
  En mode natif, C C++ et offrent uniquement des moyens limités aux développeurs d’exprimer de manière cohérente l’intention et l’invariance. À l’aide des annotations SAL, vous pouvez décrire vos fonctions plus en détail afin que les développeurs qui les utilisent puissent mieux comprendre comment les utiliser.  
   
@@ -409,7 +409,7 @@ bool GetValue(_Out_ int *pInt, bool flag)
   Vous pouvez aussi annoter tous les paramètres pour clarifier votre intention et faciliter la vérification des annotations.  
   
 ## <a name="related-resources"></a>Ressources connexes  
- [Blog de l’équipe d’analyse du code](https://go.microsoft.com/fwlink/p/?LinkId=251197)  
+ [Blog de l’équipe d’analyse du code](https://blogs.msdn.com/b/codeanalysis/)  
   
 ## <a name="see-also"></a>Voir aussi  
  [Utilisation d’annotations SAL pour réduireC++ les erreurs C/code](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   

@@ -11,12 +11,12 @@ ms.date: 11/11/2016
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
-ms.openlocfilehash: 2185641d5e3f9facf416e6ea999a1e8dcec0b37b
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a22d16606cad7ecbfcf3862d6b7e85b65e7aafe4
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74294210"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850393"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Débogage d'un service cloud ou d'une machine virtuelle Azure dans Visual Studio
 
@@ -30,7 +30,7 @@ L’émulateur simule le service de calcul Azure et s’exécute dans votre envi
 
 ### <a name="to-debug-your-cloud-service-on-your-local-computer"></a>Pour déboguer votre service cloud sur votre ordinateur local
 
-1. Dans la barre de menus, choisissez **Déboguer**, **Démarrer le débogage** pour exécuter votre projet de service cloud Azure. Vous pouvez aussi appuyer sur F5. Un message s’affiche, indiquant que l’émulateur de calcul est en cours de démarrage. Une icône s’affiche dans la zone de notification pour confirmer le démarrage de l’émulateur.
+1. Dans la barre de menus, sélectionnez **Déboguer**, **Démarrer le débogage** pour exécuter votre projet de service cloud Azure. Vous pouvez aussi appuyer sur F5. Un message s’affiche, indiquant que l’émulateur de calcul est en cours de démarrage. Une icône s’affiche dans la zone de notification pour confirmer le démarrage de l’émulateur.
 
     ![Émulateur Azure dans la barre d'état système](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC783828.png)
 
@@ -50,7 +50,7 @@ Pour déboguer un service cloud à partir d’une machine distante, vous devez a
 L’activation du débogage distant pour un service cloud n’entraîne pas de baisse des performances, ni de coûts supplémentaires. N’utilisez pas le débogage distant pour un service de production, car cela peut avoir un impact pour les clients qui utilisent ce service.
 
 > [!NOTE]
-> Quand vous publiez un service cloud à partir de Visual Studio, vous pouvez activer **IntelliTrace** pour tous les rôles de ce service qui ciblent .NET Framework 4 ou .NET Framework 4.5. Avec **IntelliTrace**, vous pouvez examiner des événements qui se sont déjà produits dans une instance de rôle et reproduire le contexte de ce moment-là. Consultez [Débogage d’un service cloud publié avec IntelliTrace et Visual Studio](https://go.microsoft.com/fwlink/?LinkID=623016) et [Utilisation d’IntelliTrace](https://msdn.microsoft.com/library/dd264915.aspx).
+> Quand vous publiez un service cloud à partir de Visual Studio, vous pouvez activer **IntelliTrace** pour tous les rôles de ce service qui ciblent .NET Framework 4 ou .NET Framework 4.5. Avec **IntelliTrace**, vous pouvez examiner des événements qui se sont déjà produits dans une instance de rôle et reproduire le contexte de ce moment-là. Consultez [Débogage d’un service cloud publié avec IntelliTrace et Visual Studio](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-intellitrace-debug-published-cloud-services?view=vs-2019) et [Utilisation d’IntelliTrace](https://msdn.microsoft.com/library/dd264915.aspx).
 
 ### <a name="to-enable-remote-debugging-for-a-cloud-service"></a>Pour activer le débogage distant pour un service cloud
 
@@ -80,9 +80,9 @@ L’activation du débogage distant pour un service cloud n’entraîne pas de b
 
     ![Boîte de dialogue Sélectionner un type de code](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
-4. Pour identifier les processus auxquels le débogueur est attaché, sélectionnez Déboguer, Windows, Processus dans la barre de menus pour ouvrir la boîte de dialogue Processus. (Clavier : CTRL + ALT + Z) Pour détacher un processus spécifique, ouvrez son menu contextuel, puis sélectionnez **détacher le processus**. Vous pouvez aussi afficher le nœud d’instance dans l’Explorateur de serveurs, rechercher le processus et ouvrir son menu contextuel, puis sélectionnez **Détacher le processus**.
+4. Pour identifier les processus auxquels le débogueur est attaché, sélectionnez Déboguer, Windows, Processus dans la barre de menus pour ouvrir la boîte de dialogue Processus. (Raccourci : Ctrl+Alt+Z) Pour détacher un processus spécifique, ouvrez son menu contextuel, puis sélectionnez **Détacher le processus**. Vous pouvez aussi afficher le nœud d’instance dans l’Explorateur de serveurs, rechercher le processus et ouvrir son menu contextuel, puis sélectionnez **Détacher le processus**.
 
-    ![Processus de débogage](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC690787.gif)
+    ![Déboguer les processus](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC690787.gif)
 
 > [!WARNING]
 > Évitez les arrêts longs aux points d'arrêt avec le débogage à distance. Azure considère qu’un processus arrêté depuis plusieurs minutes ne répond pas, et cesse d’envoyer du trafic vers cette instance. Si l’arrêt est trop long, msvsmon.exe est détaché du processus.
@@ -98,7 +98,7 @@ Pour détacher le débogueur de tous les processus dans votre instance ou rôle,
 
   * Erreur lors de la validation du fichier .cscfg par rapport au fichier .csdef.
     La plage de ports réservée ('range') pour le point de terminaison Microsoft.WindowsAzure.Plugins.RemoteDebugger.Connector du rôle ('role') chevauche une plage ou un port déjà défini.
-  * L’allocation a échoué. Réessayez ultérieurement, essayez de réduire la taille de la machine virtuelle ou le nombre d’instances de rôle, ou essayez de déployer dans une autre région.
+  * Allocation failed. Réessayez ultérieurement, essayez de réduire la taille de la machine virtuelle ou le nombre d’instances de rôle, ou essayez de déployer dans une autre région.
 
 ## <a name="debugging-azure-virtual-machines"></a>Déboguer des machines virtuelles Azure
 
@@ -141,16 +141,16 @@ Les projets Visual Studio ASP.NET permettent de créer une machine virtuelle que
 
 1. Dans Visual Studio, créez une application web ASP.NET.
 
-2. Dans la boîte de dialogue Nouveau projet ASP.NET, dans la section Azure, sélectionnez **Machine virtuelle** dans la liste déroulante. Laissez la case à cocher **Créer des ressources distantes** activée. Sélectionnez **OK** pour poursuivre.
+2. Dans la boîte de dialogue Nouveau projet ASP.NET, dans la section Azure, sélectionnez **Machine virtuelle** dans la liste déroulante. Laissez la case **Créer des ressources distantes** cochée. Sélectionnez **OK** pour poursuivre.
 
-    La boîte de dialogue **Créer une machine virtuelle sur Azure** apparaît.
+    La boîte de dialogue **Créer une machine virtuelle dans Azure** s’affiche.
 
     ![Boîte de dialogue Créer un projet Web ASP.NET](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746723.png)
 
     > [!NOTE]
     > Vous êtes invité à vous connecter à votre compte Azure le cas échéant.
 
-3. Sélectionnez les différents paramètres de la machine virtuelle, puis sélectionnez **OK**. Pour plus d’informations, consultez [Machines virtuelles](https://go.microsoft.com/fwlink/?LinkId=623033) .
+3. Sélectionnez les différents paramètres de la machine virtuelle, puis sélectionnez **OK**. Pour plus d’informations, consultez [Machines virtuelles](https://docs.microsoft.com/previous-versions/azure/jj156003(v=azure.100)?redirectedfrom=MSDN) .
 
     Le nom que vous entrez dans le champ Nom DNS sera le nom de votre machine virtuelle.
 
@@ -168,11 +168,11 @@ Les projets Visual Studio ASP.NET permettent de créer une machine virtuelle que
 
     ![Journal des activités Azure](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746721.png)
 
-6. Publiez votre projet comme indiqué dans [Comment : déployer un projet Web à l’aide de la publication en un clic dans Visual Studio](https://msdn.microsoft.com/library/dd465337.aspx). Comme vous voulez effectuer le débogage sur la machine virtuelle, sur la page **Paramètres** de l’Assistant **Publier le site web**, sélectionnez la configuration **Débogage**. Ceci permet de s’assurer que les symboles de code sont disponibles pendant le débogage.
+6. Publiez votre projet comme décrit dans la rubrique [Déploiement d’un projet web à l’aide de la publication en un clic dans Visual Studio](https://msdn.microsoft.com/library/dd465337.aspx). Comme vous voulez effectuer le débogage sur la machine virtuelle, sur la page **Paramètres** de l’Assistant **Publier le site web**, sélectionnez la configuration **Débogage**. Ceci permet de s’assurer que les symboles de code sont disponibles pendant le débogage.
 
     ![Paramètres de publication](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718349.png)
 
-7. Dans les **Options de publication des fichiers**, sélectionnez **Supprimer les fichiers supplémentaires à la destination** si le projet a déjà été déployé précédemment.
+7. Dans **Options de publication des fichiers**, sélectionnez **Supprimer les fichiers supplémentaires à la destination** si le projet a déjà été déployé précédemment.
 
 8. Une fois le projet publié, dans le menu contextuel de la machine virtuelle dans l’Explorateur de serveurs, sélectionnez **Attacher le débogueur...**
 
@@ -188,6 +188,6 @@ Les projets Visual Studio ASP.NET permettent de créer une machine virtuelle que
 
 ## <a name="next-steps"></a>Étapes suivantes :
 
-* Utilisez **IntelliTrace** pour collecter un journal des appels et des événements à partir d’un serveur de mise en production. Consultez [Débogage d’un service cloud publié avec IntelliTrace et Visual Studio](https://go.microsoft.com/fwlink/?LinkID=623016).
+* Utilisez **IntelliTrace** pour collecter un journal des appels et des événements à partir d’un serveur de mise en production. Consultez [Débogage d’un service cloud publié avec IntelliTrace et Visual Studio](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-intellitrace-debug-published-cloud-services?view=vs-2019).
 
-* Utilisez les **Diagnostics Azure** pour collecter des informations détaillées du code actuellement exécuté dans des rôles qui sont eux-mêmes exécutés dans l’environnement de développement ou dans Azure. Consultez [Collecter des données de journalisation avec les diagnostics Azure](https://go.microsoft.com/fwlink/p/?LinkId=400450).
+* Utilisez les **Diagnostics Azure** pour collecter des informations détaillées du code actuellement exécuté dans des rôles qui sont eux-mêmes exécutés dans l’environnement de développement ou dans Azure. Consultez [Collecter des données de journalisation avec les diagnostics Azure](https://msdn.microsoft.com/library/gg433048.aspx).

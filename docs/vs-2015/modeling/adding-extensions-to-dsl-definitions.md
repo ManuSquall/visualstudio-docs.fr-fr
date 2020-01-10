@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: aeeac82b27b4b5bb71ed05ba658bf9ee048bd85d
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 72c5968fccb55a265639ff05c600bd5f97a9f90a
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74292146"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852103"
 ---
 # <a name="adding-extensions-to-dsl-definitions"></a>Ajout d'extensions à des définitions DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ L’extension de définition DSL vous permet de créer un package d’extensions
 
   Un utilisateur d’un DSL étendu peut créer et enregistrer un modèle qui contient des instances des fonctionnalités supplémentaires, et celles-ci peuvent être lues par d’autres utilisateurs qui ont installé l’extension appropriée. Les utilisateurs qui n’ont pas installé l’extension ne peuvent pas utiliser les fonctionnalités supplémentaires, mais ils peuvent mettre à jour et enregistrer un modèle sans perdre les fonctionnalités supplémentaires.
 
-  Pour obtenir un exemple de code et des informations supplémentaires sur cette fonctionnalité, consultez le site Web du [Kit de développement logiciel de visualisation et de modélisation de Visual Studio](https://go.microsoft.com/fwlink/?LinkID=186128) .
+  Pour obtenir un exemple de code et des informations supplémentaires sur cette fonctionnalité, consultez le site Web du [Kit de développement logiciel de visualisation et de modélisation de Visual Studio](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) .
 
 ## <a name="see-also"></a>Voir aussi
- [Kit de développement logiciel de visualisation et de modélisation Visual Studio](https://go.microsoft.com/fwlink/?LinkID=186128)
+ [Kit de développement logiciel de visualisation et de modélisation Visual Studio](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)

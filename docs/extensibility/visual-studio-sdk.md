@@ -14,14 +14,14 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73c14c61702ec978d8ffec896b13204c238762a2
-ms.sourcegitcommit: 97623fd6190c43fed0d2ee7af92b01c375282622
+ms.openlocfilehash: 5949a651c99c0ce45f963b5f2042cdfe6cb40b87
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73568833"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848574"
 ---
-# <a name="visual-studio-sdk"></a>Kit de développement logiciel Visual Studio
+# <a name="visual-studio-sdk"></a>Kit de développement Visual Studio SDK
 Le kit de développement logiciel (SDK) Visual Studio vous aide à étendre les fonctionnalités de Visual Studio ou à intégrer de nouvelles fonctionnalités dans Visual Studio. Vous pouvez distribuer vos extensions à d’autres utilisateurs, ainsi qu’à la Visual Studio Marketplace. Voici quelques-unes des façons dont vous pouvez étendre Visual Studio :
 
 - Ajouter des commandes, des boutons, des menus et d’autres éléments d’interface utilisateur à l’IDE
@@ -60,7 +60,7 @@ Le kit de développement logiciel (SDK) Visual Studio vous aide à étendre les 
  Vous trouverez les informations de référence sur l’API du SDK Visual Studio à la [Référence du kit de développement Visual Studio SDK](../extensibility/visual-studio-sdk-reference.md).
 
 ## <a name="visual-studio-sdk-samples"></a>Exemples du kit de développement logiciel Visual Studio
- Vous trouverez des exemples Open source d’extensions VS SDK sur GitHub dans [exemples Visual Studio](https://aka.ms/vs2015sdksamples). Ce référentiel GitHub contient des exemples qui illustrent diverses fonctionnalités extensibles dans Visual Studio.
+ Vous trouverez des exemples Open source d’extensions VS SDK sur GitHub dans [exemples Visual Studio](https://github.com/Microsoft/VSSDK-Extensibility-Samples). Ce référentiel GitHub contient des exemples qui illustrent diverses fonctionnalités extensibles dans Visual Studio.
 
 ## <a name="other-visual-studio-sdk-resources"></a>Autres ressources du kit de développement logiciel (SDK) Visual Studio
  Si vous avez des questions sur le VSSDK ou que vous souhaitez partager vos expériences en développant des extensions, vous pouvez utiliser le [Forum extensibilité de Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx) ou le [Gitter de Gitter ExtendVS](https://gitter.im/Microsoft/extendvs).

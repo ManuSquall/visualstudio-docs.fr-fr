@@ -12,16 +12,16 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 33adad7117678ccc5550db86baada43a1c487916
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: e869a02475917f2444bedbb1bc9b7373b893d098
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72588869"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846902"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Installer et configurer des outils de génération en utilisant iOS
 
-Vous pouvez utiliser Visual Studio avec le **développement mobile multiplateforme avec C++**  les outils permettant de modifier, déboguer et déployer du code iOS sur le simulateur iOS ou sur un appareil iOS. Toutefois, en raison des restrictions de licences, le code doit être généré et exécuté à distance sur un Mac. Pour générer et exécuter des applications iOS à l’aide de Visual Studio, vous devez installer et configurer l’agent distant, [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988), sur votre Mac. L’agent distant gère les demandes de génération de Visual Studio et exécute l’application sur un appareil iOS connecté au Mac ou dans le simulateur iOS sur le Mac.
+Vous pouvez utiliser Visual Studio avec le **développement mobile multiplateforme avec C++**  les outils permettant de modifier, déboguer et déployer du code iOS sur le simulateur iOS ou sur un appareil iOS. Toutefois, en raison des restrictions de licences, le code doit être généré et exécuté à distance sur un Mac. Pour générer et exécuter des applications iOS à l’aide de Visual Studio, vous devez installer et configurer l’agent distant, [vcremote](https://www.npmjs.com/package/vcremote), sur votre Mac. L’agent distant gère les demandes de génération de Visual Studio et exécute l’application sur un appareil iOS connecté au Mac ou dans le simulateur iOS sur le Mac.
 
 > [!NOTE]
 > Pour plus d’informations sur l’utilisation des services Mac hébergés dans le cloud plutôt que sur un Mac, consultez [Configurer Visual Studio pour vous connecter à votre Mac hébergé dans le cloud](/visualstudio/cross-platform/tools-for-cordova/tips-workarounds/host-a-mac-in-the-cloud?view=toolsforcordova-2017#configure-visual-studio-to-connect-to-your-cloud-hosted-mac). Les instructions portent sur la génération à l’aide de Visual Studio Tools pour Apache Cordova. Pour utiliser les instructions de génération à C++l’aide de, remplacez `vcremote` par `remotebuild`.
@@ -64,11 +64,11 @@ Pour installer et utiliser l’agent distant en vue de développer du code pour 
 
 - [Node.js](https://nodejs.org/) version 8.11.3 et npm version 5.6.0
 
-   Installez la version 8.11.3 de Node.js sur votre Mac. Si vous installez le package Node.js, celui-ci est normalement accompagné de npm version 5.6.0. Les autres versions de node. js et NPM peuvent ne pas prendre en charge certains modules utilisés dans l' `vcremote` de l’agent distant, ce qui peut entraîner l’échec de l’installation de `vcremote`.
+   Installez la version 8.11.3 de Node.js sur votre Mac. Si vous installez le package Node.js, celui-ci est normalement accompagné de npm version 5.6.0. Les autres versions de node. js et NPM peuvent ne pas prendre en charge certains modules utilisés dans l' `vcremote`de l’agent distant, ce qui peut entraîner l’échec de l’installation de `vcremote`.
 
 ## <a name="Install"></a> Installer l’agent distant pour iOS
 
-Lorsque vous installez le développement mobile avec C++ une charge de travail, Visual Studio peut communiquer avec [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988), un agent distant en cours d’exécution sur votre Mac pour transférer des fichiers, générer et exécuter votre application iOS et envoyer des commandes de débogage.
+Lorsque vous installez le développement mobile avec C++ une charge de travail, Visual Studio peut communiquer avec [vcremote](https://www.npmjs.com/package/vcremote), un agent distant en cours d’exécution sur votre Mac pour transférer des fichiers, générer et exécuter votre application iOS et envoyer des commandes de débogage.
 
 Avant d’installer l’agent distant, assurez-vous que vous avez respecté les [conditions préalables](#prerequisites) et effectué les étapes d’installation décrites dans [installer le C++développement mobile multiplateforme avec ](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#install-the-tools).
 
@@ -83,7 +83,7 @@ Avant d’installer l’agent distant, assurez-vous que vous avez respecté les 
    Pendant l’installation, `vcremote` est installé et le mode développeur est activé sur votre Mac. [Homebrew](https://brew.sh/) et deux packages npm, `vcremote-lib` et `vcremote-utils`, sont également installés. Une fois l’installation terminée, ne tenez pas compte des avertissements relatifs aux dépendances facultatives ignorées.
 
    > [!NOTE]
-   > Pour installer Homebrew, vous devez disposer d’un accès sudo (administrateur). Si vous devez installer `vcremote` sans sudo, vous pouvez installer Homebrew manuellement dans un emplacement usr/local et ajouter son dossier bin à votre chemin d’accès. Pour plus d’informations, consultez la [documentation Homebrew](https://github.com/Homebrew/homebrew/wiki/Installation). Pour activer manuellement le mode développeur, entrez cette commande dans l’application Terminal : `DevToolsSecurity -enable`
+   > Pour installer Homebrew, vous devez disposer d’un accès sudo (administrateur). Si vous devez installer `vcremote` sans sudo, vous pouvez installer Homebrew manuellement dans un emplacement usr/local et ajouter son dossier bin à votre chemin d’accès. Pour plus d’informations, consultez la [documentation Homebrew](https://github.com/Homebrew/homebrew/wiki/Installation). Pour activer manuellement le mode développeur, entrez cette commande dans l’application Terminal : `DevToolsSecurity -enable`
 
 Si vous avez mis à jour Visual Studio vers une nouvelle version, vous devez aussi mettre à jour l’agent distant vers la version actuelle. Pour mettre à jour l’agent distant, répétez la procédure de téléchargement et d’installation de l’agent à distance.
 
@@ -125,7 +125,7 @@ Une fois l’agent distant démarré, vous pouvez l’utiliser dans Visual Studi
 
 #### <a name="to-stop-the-remote-agent"></a>Pour arrêter l’agent distant
 
-- Dans la fenêtre de terminal `vcremote` s’exécute dans, entrez **Control** +**C**.
+- Dans la fenêtre de terminal `vcremote` s’exécute dans, entrez **Control**+**C**.
 
 ## <a name="ConfigureVS"></a> Configurer l’agent distant dans Visual Studio
 
@@ -150,7 +150,7 @@ Pour vous connecter à l’agent distant dans Visual Studio, vous devez spécifi
 
 1. Si vous utilisez l’agent distant en mode de connexion sécurisée par défaut, cochez la case **Sécuriser** , puis entrez la valeur de code confidentiel spécifiée par l’agent distant dans le champ **Code confidentiel** . Si vous utilisez l’agent distant en mode de connexion non sécurisée, décochez la case **Sécuriser** et laisser le champ **Code confidentiel** vide.
 
-1. Choisissez **Coupler** pour activer le couplage.
+1. Choisissez **Coupler** pour activer le jumelage.
 
    ![Configurer la connexion vcremote pour les builds iOS](../cross-platform/media/cppmdd_options_ios.PNG "CPPMDD_Options_iOS")
 

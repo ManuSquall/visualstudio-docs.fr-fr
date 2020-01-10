@@ -13,12 +13,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 067544e6b97e2709ed217ae0232771e833800e52
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 0dcfa4d3522d88b58e971c0a4ff3f27649c2d21b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300124"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844632"
 ---
 # <a name="da0022-high-rate-of-gen-2-garbage-collections"></a>DA0022 : Taux élevé de garbage collection Gen 2
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,4 +50,4 @@ ID de règle | DA0022 |
   
  Pour comprendre la façon dont l’application utilise la mémoire managée, profilez-la de nouveau en exécutant un profil d’allocation de mémoire .NET et sélectionnez l’option de profilage Durée de vie des objets.  
   
- Pour plus d’informations sur l’amélioration des performances du garbage collection, consultez [Garbage Collector Basics and Performance Hints](https://go.microsoft.com/fwlink/?LinkId=148226) sur le site de Microsoft. Pour plus d’informations sur la surcharge du garbage collection automatique, consultez [Le tas des objets volumineux dévoilé](https://go.microsoft.com/fwlink/?LinkId=177836).
+ Pour plus d’informations sur l’amélioration des performances du garbage collection, consultez [Garbage Collector Basics and Performance Hints](https://msdn2.microsoft.com/library/ms973837.aspx) sur le site de Microsoft. Pour plus d’informations sur la surcharge du garbage collection automatique, consultez [Le tas des objets volumineux dévoilé](https://msdn.microsoft.com/magazine/cc534993.aspx).

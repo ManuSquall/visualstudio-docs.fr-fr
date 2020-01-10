@@ -37,19 +37,19 @@ caps.latest.revision: 60
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a9f20629c39bc37ca20550c3b88d8ecb2aca470f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7e1b37a357113be010ea336fc5666beb8cd33dbc
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300251"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852007"
 ---
 # <a name="create-models-for-your-app"></a>Créer des modèles pour votre application
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Les diagrammes de modélisation vous aident à comprendre, clarifier et communiquer vos idées concernant votre code et les besoins des utilisateurs que votre système logiciel doit prendre en charge. Par exemple, pour décrire et communiquer les besoins des utilisateurs, vous pouvez utiliser des diagrammes de cas d'usage, d'activités, de classe et de séquence UML (Unified Modeling Language). Pour décrire et communiquer les fonctionnalités de votre système, vous pouvez utiliser des diagrammes de composants, de classes, d'activités et de séquence UML.
 
- Voir [vidéo Channel 9 : améliorer l’architecture grâce à la modélisation](https://go.microsoft.com/fwlink/?LinkID=252078).
+ Voir [vidéo Channel 9 : améliorer l’architecture grâce à la modélisation](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Improving-architecture-through-modeling).
 
  Vous pouvez créer les diagrammes UML suivants dans cette version :
 
@@ -73,7 +73,7 @@ Les diagrammes de modélisation vous aident à comprendre, clarifier et communiq
 
 ## <a name="common-tasks"></a>Tâches courantes
 
-|**Sujets**|**Task**|
+|**Rubrique**|**Task**|
 |---------------|--------------|
 |[Créer des projets et des diagrammes de modélisation UML](../modeling/create-uml-modeling-projects-and-diagrams.md)|**Créer des modèles** et ajouter des diagrammes.|
 |[Modifier des modèles et des diagrammes UML](../modeling/edit-uml-models-and-diagrams.md)|**Dessinez des diagrammes** pour modifier le modèle.|
@@ -83,9 +83,9 @@ Les diagrammes de modélisation vous aident à comprendre, clarifier et communiq
 |[Lier des éléments de modèle et des éléments de travail](../modeling/link-model-elements-and-work-items.md)|**Créer des liens entre des éléments de modèle et des éléments de travail** pour faciliter le suivi des tâches, des cas de test, des bogues, des spécifications, des problèmes ou d’autres genres de travaux associés à des parties spécifiques de votre modèle.|
 |[Exporter des diagrammes en tant qu’images](../modeling/export-diagrams-as-images.md)|**Enregistrez votre modèle et vos diagrammes** pour pouvoir les partager avec d’autres utilisateurs, y compris ceux qui n’utilisent pas [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)].|
 
-## <a name="related-tasks"></a>Tâches associées
+## <a name="related-tasks"></a>Tâches connexes
 
-|**Sujets**|**Task**|
+|**Rubrique**|**Task**|
 |---------------|--------------|
 |[Visualiser du code](../modeling/visualize-code.md)|Créer des cartes de code et des diagrammes de couche pour mieux comprendre le code inconnu.|
 |[Modéliser les besoins des utilisateurs](../modeling/model-user-requirements.md)|Utiliser des modèles pour clarifier et communiquer les besoins des utilisateurs.|
@@ -96,6 +96,6 @@ Les diagrammes de modélisation vous aident à comprendre, clarifier et communiq
 
 ## <a name="external-resources"></a>Ressources externes
 
-|**Catégorie**|**Liens**|
+|**Catégorie**|**Links**|
 |------------------|---------------|
-|**Forums**|-   [Outils de visualisation et de modélisation Visual Studio](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Kit de développement logiciel (SDK) Visual Studio Visualization and Modeling (outils DSL)](https://go.microsoft.com/fwlink/?LinkId=184721)|
+|**Forums**|-   [Outils de visualisation et de modélisation Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [Kit de développement logiciel (SDK) Visual Studio Visualization and Modeling (outils DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|

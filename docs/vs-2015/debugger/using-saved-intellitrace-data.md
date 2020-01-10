@@ -16,12 +16,12 @@ caps.latest.revision: 112
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5b44ec3fcab0512e50af1debcf6010c1dc584ed0
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 8f6047e6104467b5b0516fba26fc39f402dfaac9
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297130"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845657"
 ---
 # <a name="using-saved-intellitrace-data"></a>Utilisation des données IntelliTrace enregistrées
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -102,11 +102,11 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
   
      ![Afficher les détails des événements de performances](../debugger/media/ffr-itsummarypageperformance.png "FFR_ITSummaryPagePerformance")  
   
-     Vous pouvez aussi simplement double-cliquer sur l’événement.  
+     Vous pouvez aussi uniquement double-cliquer sur l’événement.  
   
 2. Dans la page d’événement, examinez les durées d’exécution de ces appels. Recherchez un appel lent dans l’arborescence d’exécution.  
   
-     Les appels les plus lents s’affichent dans leur propre section quand vous avez plusieurs appels, imbriqués ou non.  
+     Les appels les plus lents s’affichent dans leur propre section lorsque vous avez plusieurs appels, imbriqués ou non.  
   
 3. Développez cet appel pour examiner les appels imbriqués et les valeurs de paramètre qui ont été enregistrés à ce moment précis.  
   
@@ -133,7 +133,7 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
   
      ![Démarrer le débogage à partir d’un événement d’exception](../debugger/media/ffr-itsummarypageexception.png "FFR_ITSummaryPageException")  
   
-     Vous pouvez aussi simplement double-cliquer sur l’événement. Si les événements ne sont pas regroupés, choisissez **Déboguer cet événement**.  
+     Vous pouvez aussi uniquement double-cliquer sur l’événement. Si les événements ne sont pas regroupés, choisissez **Déboguer cet événement**.  
   
      Si l’exception s’est produite dans votre code d’application, Visual Studio accède à l’emplacement où l’exception s’est produite.  
   
@@ -161,7 +161,7 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
   
 1. Copiez l’ID de corrélation SharePoint à partir de sa source.  
   
-    Exemple :  
+    Par exemple :  
   
     ![ID &#45; de corrélation &#45; d’erreur SharePoint IntelliTrace](../debugger/media/sharepointerror-intellitrace.png "SharePointError_IntelliTrace")  
   
@@ -225,7 +225,7 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
 |**Colonne**|**Affiche**|  
 |----------------|-------------------|  
 |**ID**|Numéro d’ID de thread|  
-|**Nom**|Nom du thread. Les threads sans nom apparaissent en tant que « \<Sans nom> ».|  
+|**Name**|Nom du thread. Les threads sans nom apparaissent en tant que « \<Sans nom> ».|  
 |**Heure de début**|Heure de création du thread.|  
 |**Heure de fin**|Heure à laquelle le thread s’est terminé|  
   
@@ -260,7 +260,7 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
 |**Chemin du module**|Emplacement de chargement du module sur le disque|  
 |**ID de module**|Identificateur unique du module, spécifique à la version et qui contribue aux fichiers de symboles correspondants (PDB). Consultez [Finding symbol (.pdb) files and source files](https://msdn.microsoft.com/05384c85-d264-4e18-abaa-aa482ab25470).|  
   
-### <a name="where-can-i-get-more-information"></a>Q : Où puis-je obtenir plus d’informations ?  
+### <a name="where-can-i-get-more-information"></a>Où peut-on obtenir plus d’informations ?  
  [Utilisation du collecteur autonome IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)  
   
  [Fonctionnalités IntelliTrace](../debugger/intellitrace-features.md)  
@@ -270,7 +270,7 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
  [IntelliTrace](../debugger/intellitrace.md)  
   
 #### <a name="forums"></a>Forums  
- [Débogueur Visual Studio](https://go.microsoft.com/fwlink/?LinkId=262263)  
+ [Débogueur Visual Studio](https://social.msdn.microsoft.com/Forums/vsdebug)  
   
-#### <a name="guidance"></a>Conseils  
- [Test de la livraison continue avec Visual Studio 2012 - Chapitre 6 : Boîte à outils de test](https://go.microsoft.com/fwlink/?LinkID=255203)
+#### <a name="guidance"></a>Aide  
+ [Test de la livraison continue avec Visual Studio 2012 - Chapitre 6 : Boîte à outils de test](https://msdn.microsoft.com/library/jj159337.aspx)

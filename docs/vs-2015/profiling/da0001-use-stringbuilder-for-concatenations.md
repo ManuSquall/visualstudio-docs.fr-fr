@@ -14,14 +14,14 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cb8da704832031d69156eee8863b689e7956f025
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: faa0cf18bfd9810d84e01028b3f787b3b2c99578
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295962"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844741"
 ---
-# <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001 : Utiliser StringBuilder pour les concaténations
+# <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001 : Utilisez StringBuilder pour les concaténations
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pour obtenir la documentation la plus récente sur Visual Studio, consultez [DA0001 : utiliser StringBuilder pour les concaténations](https://docs.microsoft.com/visualstudio/profiling/da0001-use-stringbuilder-for-concatenations).  
@@ -32,7 +32,7 @@ Pour obtenir la documentation la plus récente sur Visual Studio, consultez [DA0
 |Catégorie|Utilisation du .NET Framework|  
 |Méthodes de profilage|Échantillonnage<br /><br /> Instrumentation|  
 |Message|Utilisez StringBuilder pour les concaténations de chaînes|  
-|Type de message|Avertissement|  
+|Type de message|Warning|  
   
 ## <a name="cause"></a>Cause  
  Les appels à System.String.Concat représentent une part importante des données de profilage. Envisagez l’utilisation de la classe <xref:System.Text.StringBuilder> pour construire des chaînes à partir de plusieurs segments.  
@@ -45,4 +45,4 @@ Pour obtenir la documentation la plus récente sur Visual Studio, consultez [DA0
 ## <a name="how-to-investigate-a-warning"></a>Comment rechercher la cause d’un avertissement  
  Double-cliquez sur le message dans la fenêtre Liste d’erreurs pour accéder à la [vue Informations relatives à la fonction](../profiling/function-details-view.md) des données de profilage par échantillonnage. Recherchez les sections du programme qui utilisent le plus fréquemment la concaténation de chaînes. Utilisez la classe StringBuilder pour les manipulations de chaînes complexes, y compris les opérations fréquentes de concaténation de chaînes.  
   
- Pour plus d’informations sur l’utilisation des chaînes, consultez la section [String Operations](https://go.microsoft.com/fwlink/?LinkId=177816) de la rubrique [Chapter 5 - Improving Managed Code Performance](https://go.microsoft.com/fwlink/?LinkId=177817) dans la bibliothèque Microsoft Patterns and Practices.
+ Pour plus d’informations sur l’utilisation des chaînes, consultez la section [String Operations](https://msdn.microsoft.com/library/ms998547.aspx#scalenetchapt05_topic26) de la rubrique [Chapter 5 - Improving Managed Code Performance](https://msdn.microsoft.com/library/ms998547.aspx) dans la bibliothèque Microsoft Patterns and Practices.

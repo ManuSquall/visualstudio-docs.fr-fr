@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5f86c3b146bb74a38910b151a80c3c2d439ef023
-ms.sourcegitcommit: ab18c9d850192fc9ccec10961f1126e8b0cba8da
+ms.openlocfilehash: a913fa6abdcf59a64d8514f17656b8f8531d476d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73061167"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845672"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Utiliser Python dans Visual Studio sur Windows
 
@@ -56,7 +56,7 @@ La fenêtre **Environnements Python** de Visual Studio (illustrée ci-dessous da
 
 Utilisez la commande **Ouvrir une fenêtre interactive** pour exécuter Python en mode interactif dans le contexte de Visual Studio. Utilisez la commande **Ouvrir dans PowerShell** pour ouvrir une fenêtre de commande distincte dans le dossier de l’environnement sélectionné. À partir de cette fenêtre de commande, vous pouvez exécuter n’importe quel script Python.
 
-Pour plus d'informations :
+Pour plus d'informations, consultez .
 
 - [Gérer des environnements Python](managing-python-environments-in-visual-studio.md)
 - [Référence sur les environnements Python](python-environments-window-tab-reference.md)
@@ -67,7 +67,7 @@ Visual Studio fournit un éditeur Python de première classe, notamment la color
 
 ![Complétions de code pour le code Python dans Visual Studio](media/code-editing-completions-simple.png)
 
-Pour plus d'informations :
+Pour plus d'informations, consultez .
 
 - Documentation : [Modifier le code Python](editing-python-code-in-visual-studio.md)
 - Documentation : [Code du format](formatting-python-code.md)
@@ -85,7 +85,7 @@ Visual Studio fournit également une intégration étroite entre l’éditeur de
 
 Visual Studio prend également en charge IPython/Jupyter dans l’environnement REPL, notamment les tracés inline, .NET et WPF (Windows Presentation Foundation).
 
-Pour plus d'informations :
+Pour plus d'informations, consultez .
 
 - [Fenêtre interactive](python-interactive-repl-in-visual-studio.md)
 - [IPython dans Visual Studio](interactive-repl-ipython.md)
@@ -105,7 +105,7 @@ Les modèles de projet et d’élément automatisent le processus de configurati
 
 [![Modèles de projet et d’élément Python dans Visual Studio](media/project-and-item-templates.png)](media/project-and-item-templates.png#lightbox)
 
-Pour plus d'informations :
+Pour plus d'informations, consultez .
 
 - Documentation : [Gérer les projets Python](managing-python-projects-in-visual-studio.md)
 - Documentation : [Référence de modèles d’élément](python-item-templates.md)
@@ -124,7 +124,7 @@ L’un des points forts de Visual Studio est son puissant débogueur. Pour Pytho
 Dans Visual Studio 2019, vous pouvez exécuter et déboguer du code sans fichier projet Visual Studio. Pour obtenir un exemple [, consultez démarrage rapide : ouvrir et exécuter du code python dans un dossier](quickstart-05-python-visual-studio-open-folder.md) .
 ::: moniker-end
 
-Pour plus d'informations :
+Pour plus d'informations, consultez .
 
 - Documentation : [Déboguer Python](debugging-python-in-visual-studio.md)
 - Documentation : [Débogage en mode mixte Python/C++](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
@@ -137,7 +137,7 @@ Le profilage collecte les données relatives à l’utilisation de votre applica
 
 [![Résultats du profileur Visual Studio pour un projet Python](media/profiling-results.png)](media/profiling-results.png#lightbox)
 
-Pour plus d'informations :
+Pour plus d'informations, consultez .
 
 - Documentation : [Outils de profilage Python](profiling-python-code-in-visual-studio.md)
 - Documentation générale sur les fonctionnalités Visual Studio : [Visite guidée des fonctionnalités de profilage](../profiling/profiling-feature-tour.md). (Certaines fonctionnalités de profilage Visual Studio ne sont pas disponibles pour Python.)
@@ -148,7 +148,7 @@ Découvrez, exécutez et gérez les tests dans l’**Explorateur de tests** Visu
 
 ![Débogage d’un test unitaire Python dans Visual Studio](media/unit-test-debugging.png)
 
-Pour plus d'informations :
+Pour plus d'informations, consultez .
 
 - Documentation : [Outils de test unitaire pour Python](unit-testing-python-in-visual-studio.md)
 - Documentation générale sur les fonctionnalités Visual Studio : [Tests unitaires de votre code](../test/unit-test-your-code.md).
@@ -163,15 +163,15 @@ Pour plus d’informations, consultez [SDK Azure pour Python](/azure/python/) et
 
 **Q. la prise en charge de Python est-elle disponible avec Visual Studio pour Mac ?**
 
-Un fichier . Pas pour l’instant, mais vous pouvez voter pour la demande sur [Communauté des développeurs](https://developercommunity.visualstudio.com/content/idea/351820/python-tools-for-visual-studio-mac.html). La documentation [Visual Studio pour Mac](/visualstudio/mac/) identifie les types actuels de développement qu’il prend en charge. En attendant, Visual Studio Code sur Windows, Mac et Linux [fonctionne bien avec Python via les extensions disponibles](https://code.visualstudio.com/docs/languages/python).
+A. Pas pour l’instant, mais vous pouvez voter pour la demande sur [Communauté des développeurs](https://developercommunity.visualstudio.com/content/idea/351820/python-tools-for-visual-studio-mac.html). La documentation [Visual Studio pour Mac](/visualstudio/mac/) identifie les types actuels de développement qu’il prend en charge. En attendant, Visual Studio Code sur Windows, Mac et Linux [fonctionne bien avec Python via les extensions disponibles](https://code.visualstudio.com/docs/languages/python).
 
 **Q. que puis-je utiliser pour créer une interface utilisateur avec Python ?**
 
-Un fichier . Dans ce domaine, le principal moyen est d’utiliser [Qt Project](https://www.qt.io/qt-for-application-development/), avec des liaisons pour Python appelées [PySide (la liaison officielle)](https://wiki.qt.io/PySide) (consultez également les [téléchargements PySide](https://download.qt.io/official_releases/pyside/.)) et [PyQt](https://wiki.python.org/moin/PyQt). Pour l’instant, la prise en charge de Python dans Visual Studio n’inclut pas d’outils spécifiques pour le développement d’interface utilisateur.
+A. Dans ce domaine, le principal moyen est d’utiliser [Qt Project](https://www.qt.io/qt-for-application-development/), avec des liaisons pour Python appelées [PySide (la liaison officielle)](https://wiki.qt.io/PySide) (consultez également les [téléchargements PySide](https://download.qt.io/official_releases/pyside/.)) et [PyQt](https://wiki.python.org/moin/PyQt). Pour l’instant, la prise en charge de Python dans Visual Studio n’inclut pas d’outils spécifiques pour le développement d’interface utilisateur.
 
 **Q. un projet python peut-il produire un exécutable autonome ?**
 
-Un fichier . Python est généralement un langage interprété, avec lequel le code est exécuté à la demande dans un environnement approprié prenant en charge le langage Python tel que Visual Studio et les serveurs web. Visual Studio ne fournit pas d’outils permettant de créer un exécutable autonome, qui désigne essentiellement un programme avec un interpréteur Python incorporé. La communauté Python a cependant fourni différents moyens de créer des exécutables sur [StackOverflow](https://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython prend également en charge l’incorporation dans une application native, comme indiqué dans le billet de blog [Using CPython’s embeddable zip file](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/).
+A. Python est généralement un langage interprété, avec lequel le code est exécuté à la demande dans un environnement approprié prenant en charge le langage Python tel que Visual Studio et les serveurs web. Visual Studio ne fournit pas d’outils permettant de créer un exécutable autonome, qui désigne essentiellement un programme avec un interpréteur Python incorporé. La communauté Python a cependant fourni différents moyens de créer des exécutables sur [StackOverflow](https://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython prend également en charge l’incorporation dans une application native, comme indiqué dans le billet de blog [Using CPython’s embeddable zip file](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/).
 
 ::: moniker range="<=vs-2017"
 
@@ -222,7 +222,7 @@ Visual Studio 2015 et versions antérieures sont disponibles à l’adresse [vis
 |  Explorateur d’objets/Affichage de classes   | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 |        Barre de navigation        | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 |       Atteindre la définition       | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
-|         Accéder à          | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|         Accédez à          | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 |     Rechercher toutes les références      | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 |       Mise en retrait automatique       | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 |       Mise en forme du code        | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
@@ -262,7 +262,7 @@ Visual Studio 2015 et versions antérieures sont disponibles à l’adresse [vis
 |   Déployer sur un site web   | &#10004; | &#10004; | &#10004;  |   &#10007;   |       &#10004;       |       &#10004;       |       &#10004;       | &#10004;<sup>2</sup> |
 |   Déployer sur un rôle web   | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004;<sup>4</sup> | &#10004;<sup>4</sup> | &#10004;<sup>3</sup> |       &#10007;       |
 | Déployer sur un rôle de travail  |    ?     |    ?     |     ?     |   &#10007;   | &#10004;<sup>4</sup> | &#10004;<sup>4</sup> | &#10004;<sup>3</sup> |       &#10007;       |
-| Exécution dans l’émulateur Azure  |    ?     |    ?     |     ?     |   &#10007;   | &#10004;<sup>4</sup> | &#10004;<sup>4</sup> | &#10004;<sup>3</sup> |       &#10007;       |
+| Exécuter dans l'émulateur Azure  |    ?     |    ?     |     ?     |   &#10007;   | &#10004;<sup>4</sup> | &#10004;<sup>4</sup> | &#10004;<sup>3</sup> |       &#10007;       |
 |    Débogage distant    | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004;<sup>6</sup> | &#10004;<sup>8</sup> | &#10004;<sup>8</sup> |       &#10007;       |
 | Attacher l’Explorateur de serveurs | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004;<sup>7</sup> | &#10004;<sup>7</sup> |       &#10007;       |       &#10007;       |
 
@@ -270,15 +270,15 @@ Visual Studio 2015 et versions antérieures sont disponibles à l’adresse [vis
 
 |           Modèles Django           |   2017+   |   2015   | 2013 Comm | 2013 Desktop |       2013 web       |      2013 Pro+       | 2012 Pro+ | 2010 SP1 Pro+ |
 |--------------------------------------|----------|----------|-----------|--------------|----------------------|----------------------|-----------|---------------|
-|              Débogage               | &#10004; | &#10004; | &#10004;  |   &#10007;   |       &#10004;       |       &#10004;       | &#10004;  |   &#10004;    |
+|              débogage               | &#10004; | &#10004; | &#10004;  |   &#10007;   |       &#10004;       |       &#10004;       | &#10004;  |   &#10004;    |
 |            Saisie semi-automatique             | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004;<sup>5</sup> | &#10004;<sup>5</sup> | &#10004;  |   &#10004;    |
 | Saisie semi-automatique pour CSS et JavaScript | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004;<sup>5</sup> | &#10004;<sup>5</sup> | &#10007;  |   &#10007;    |
 
 <br/>
 
-|                  Débogage                  |   2017+   |   2015   | 2013 Comm | 2013 Desktop | 2013 web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+|                  débogage                  |   2017+   |   2015   | 2013 Comm | 2013 Desktop | 2013 web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |---------------------------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
-|                  Débogage                  | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|                  débogage                  | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 |         Débogage sans projet         | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 |        Débogage - Attachement à la modification        | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10007; | &#10004;  | &#10004;  |   &#10004;    |
 |            Débogage en mode mixte             | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10007;    |
@@ -305,17 +305,17 @@ Visual Studio 2015 et versions antérieures sont disponibles à l’adresse [vis
 
 1. Une prise en charge de Git pour Visual Studio 2012 est disponible dans l’extension Visual Studio Tools pour Git, accessible dans [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=TFSPowerToolsTeam.VisualStudioToolsforGit).
 
-1. Le déploiement vers un site web Azure requiert le [kit SDK pour .NET 2.1 - Visual Studio 2010 SP1](https://go.microsoft.com/fwlink/?LinkId=313855). Les versions ultérieures ne prennent pas en charge Visual Studio 2010.
+1. Le déploiement vers un site web Azure requiert le [kit SDK pour .NET 2.1 - Visual Studio 2010 SP1](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/VS2010SP1AzurePack.2E2.2E1.appids). Les versions ultérieures ne prennent pas en charge Visual Studio 2010.
 
-1. La prise en charge du rôle Web et du rôle de travail Azure nécessite le [kit SDK Azure pour .NET 2.3 - VS 2012](https://go.microsoft.com/fwlink/?LinkId=323511) ou une version ultérieure.
+1. La prise en charge du rôle Web et du rôle de travail Azure nécessite le [kit SDK Azure pour .NET 2.3 - VS 2012](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/VWDOrVs11AzurePack.appids) ou une version ultérieure.
 
-1. La prise en charge du rôle Web et du rôle de travail Azure nécessite le [kit SDK Azure pour .NET 2.3 - VS 2013](https://go.microsoft.com/fwlink/?LinkId=323510) ou une version ultérieure.
+1. La prise en charge du rôle Web et du rôle de travail Azure nécessite le [kit SDK Azure pour .NET 2.3 - VS 2013](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/VWDOrVs2013AzurePack.appids) ou une version ultérieure.
 
 1. L’éditeur de modèle Django dans Visual Studio 2013 présente certains problèmes connus qui sont résolus par l’installation d’Update 2.
 
-1. Requiert Windows 8 ou une version ultérieure. Visual Studio 2013 Express pour le web ne comporte pas la boîte de dialogue **Attacher au processus**. Toutefois, le débogage à distance du site web Azure reste possible à l’aide de la commande **Attacher le débogueur (Python)** dans l’**Explorateur de serveurs**. Le débogage à distance nécessite le [kit SDK Azure pour .NET 2.3 - Visual Studio 2013](https://go.microsoft.com/fwlink/?LinkId=323510) ou une version ultérieure.
+1. Requiert Windows 8 ou une version ultérieure. Visual Studio 2013 Express pour le web ne comporte pas la boîte de dialogue **Attacher au processus**. Toutefois, le débogage à distance du site web Azure reste possible à l’aide de la commande **Attacher le débogueur (Python)** dans l’**Explorateur de serveurs**. Le débogage à distance nécessite le [kit SDK Azure pour .NET 2.3 - Visual Studio 2013](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/VWDOrVs2013AzurePack.appids) ou une version ultérieure.
 
-1. Requiert Windows 8 ou une version ultérieure. La commande **Attacher le débogueur (Python)** dans l’**Explorateur de serveurs** nécessite le [kit Azure SDK pour .NET 2.3 - Visual Studio 2013](https://go.microsoft.com/fwlink/?LinkId=323510) ou une version ultérieure.
+1. Requiert Windows 8 ou une version ultérieure. La commande **Attacher le débogueur (Python)** dans l’**Explorateur de serveurs** nécessite le [kit Azure SDK pour .NET 2.3 - Visual Studio 2013](https://www.microsoft.com/web/handlers/webpi.ashx/getinstaller/VWDOrVs2013AzurePack.appids) ou une version ultérieure.
 
 1. Requiert Windows 8 ou une version ultérieure.
 ::: moniker-end

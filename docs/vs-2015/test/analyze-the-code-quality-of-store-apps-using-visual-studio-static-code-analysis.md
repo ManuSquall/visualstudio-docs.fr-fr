@@ -9,17 +9,17 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4633b32c1d59a59c91848f72403571955263472f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: c47a1583a1d4695905c0fb7067faaa6226fb2d7a
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297550"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851868"
 ---
 # <a name="analyze-the-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analyser la qualité du code des applications du Windows Store à l'aide de l'analyse statique du code Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-L'outil d'analyse du code dans Visual Studio Express examine votre code à la recherche d'un ensemble d'erreurs courantes et du non-respect d'une bonne approche en matière de programmation. Les avertissements de l'analyse du code diffèrent des erreurs et des avertissements du compilateur parce que l'outil d'analyse du code recherche des modèles de code spécifiques qui sont valides, mais qui peuvent créer des problèmes pour vous ou d'autres utilisateurs de votre code. L'analyse du code peut également trouver des erreurs dans votre code qui seraient difficiles à détecter en testant. L'exécution de l'outil d'analyse du code à intervalles réguliers pendant le processus de développement peut améliorer la qualité de votre application finale.
+L'outil d'analyse du code dans Visual Studio Express examine votre code à la recherche d'un ensemble d'erreurs courantes et du non-respect d'une bonne approche en matière de programmation. Les avertissements de l'analyse du code diffèrent des erreurs et des avertissements du compilateur parce que l'outil d'analyse du code recherche des modèles de code spécifiques qui sont valides, mais qui peuvent créer des problèmes pour vous ou d'autres utilisateurs de votre code. L'analyse du code peut également trouver des erreurs dans votre code qui seraient difficiles à détecter en testant. L'exécution de l'outil d'analyse du code à intervalles réguliers pendant le processus de développement peut améliorer la qualité de votre application terminée.
 
 > [!NOTE]
 > L'analyse du code n'est pas disponible pour le code JavaScript.
@@ -35,5 +35,5 @@ L'outil d'analyse du code dans Visual Studio Express examine votre code à la re
 
 |||
 |-|-|
-|[Analyse du code dans MSDN Library](https://go.microsoft.com/fwlink/?LinkID=227580)|Découvrez plus d'informations sur l'utilisation de l'analyse du code dans Visual Studio Ultimate, Visual Studio Premium et Visual Studio Professional.|
-|[Blog de l'équipe d'analyse du code MSDN](https://go.microsoft.com/fwlink/?LinkId=227200)|Découvrez plus d'informations, notamment des articles techniques et des exemples, sur le blog de l'équipe d'analyse du code.|
+|[Analyse du code dans MSDN Library](https://msdn.microsoft.com/library/dd264897.aspx)|Découvrez plus d'informations sur l'utilisation de l'analyse du code dans Visual Studio Ultimate, Visual Studio Premium et Visual Studio Professional.|
+|[Blog de l'équipe d'analyse du code MSDN](https://blogs.msdn.com/codeanalysis/)|Découvrez plus d'informations, notamment des articles techniques et des exemples, sur le blog de l'équipe d'analyse du code.|

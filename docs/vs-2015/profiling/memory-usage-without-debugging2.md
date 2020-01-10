@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0ab8aaff0ddf793fe64dd3695adc58c281290f98
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 37db8a095e8f7b420f14df29de30f265aee49bb6
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295698"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850816"
 ---
 # <a name="memory-usage-without-debugging"></a>Utilisation de la mémoire sans débogage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,10 +81,10 @@ Vous pouvez utiliser l’outil **Utilisation de la mémoire** sans débogage pou
   
 |||  
 |-|-|  
-|![Étape 1](../profiling/media/procguid-1.png "ProcGuid_1")|Le texte du lien indique le nombre total d'octets dans la mémoire au moment où l'instantané a été pris.<br /><br /> Choisissez ce lien pour afficher un rapport détaillé de l'instantané, trié selon la taille totale des instances du type.|  
-|![Étape 2](../profiling/media/procguid-2.png "ProcGuid_2")|Le texte du lien indique le nombre total d'objets dans la mémoire au moment où l'instantané a été pris.<br /><br /> Choisissez ce lien pour afficher un rapport détaillé de l'instantané, trié selon le nombre total d'instances des types.|  
-|![Étape 3](../profiling/media/procguid-3.png "ProcGuid_3")|Le texte du lien indique la différence entre la taille totale des objets dans la mémoire au moment de l'instantané et la taille totale de l'instantané précédent.<br /><br /> Le texte du lien est un nombre positif quand la taille de la mémoire de cet instantané est supérieure à celle du précédent, et un nombre négatif quand la taille est inférieure. Le texte du lien **Planning de référence** indique que cet instantané est le premier de la session de diagnostic. **Aucune différence** indique que la différence est nulle.<br /><br /> Choisissez ce lien pour afficher un rapport différentiel des instantanés, trié selon la différence de taille totale des instances des types.|  
-|![Étape 4](../profiling/media/procguid-4.png "ProcGuid_4")|Le texte du lien indique la différence entre le nombre total d'objets mémoire dans cet instantané et le nombre d'objets de l'instantané précédent.<br /><br /> Choisissez ce lien pour afficher un rapport différentiel des instantanés, trié selon le nombre total d'instances des types.|  
+|![Étape 1](../profiling/media/procguid-1.png "ProcGuid_1")|Le texte du lien indique le nombre total d'octets dans la mémoire au moment où l'instantané a été pris.<br /><br /> Choisissez ce lien pour afficher un rapport détaillé de l'instantané, trié selon la taille totale des instances du type.|  
+|![Étape 2](../profiling/media/procguid-2.png "ProcGuid_2")|Le texte du lien indique le nombre total d'objets dans la mémoire au moment où l'instantané a été pris.<br /><br /> Choisissez ce lien pour afficher un rapport détaillé de l'instantané, trié selon le nombre total d'instances des types.|  
+|![Étape 3](../profiling/media/procguid-3.png "ProcGuid_3")|Le texte du lien indique la différence entre la taille totale des objets dans la mémoire au moment de l'instantané et la taille totale de l'instantané précédent.<br /><br /> Le texte du lien est un nombre positif quand la taille de la mémoire de cet instantané est supérieure à celle du précédent, et un nombre négatif quand la taille est inférieure. Le texte du lien **Planning de référence** indique que cet instantané est le premier de la session de diagnostic. **Aucune différence** indique que la différence est nulle.<br /><br /> Choisissez ce lien pour afficher un rapport différentiel des instantanés, trié selon la différence de taille totale des instances des types.|  
+|![Étape 4](../profiling/media/procguid-4.png "ProcGuid_4")|Le texte du lien indique la différence entre le nombre total d'objets mémoire dans cet instantané et le nombre d'objets de l'instantané précédent.<br /><br /> Choisissez ce lien pour afficher un rapport différentiel des instantanés, trié selon le nombre total d'instances des types.|  
   
 ## <a name="BKMK_Snapshot_reports"></a> Rapports d’instantané  
  ![Rapport d’instantané de l’utilisation de la mémoire](../profiling/media/memuse-snapshotreport-all.png "MEMUSE_SnapshotReport_All")  
@@ -137,7 +137,7 @@ Vous pouvez utiliser l’outil **Utilisation de la mémoire** sans débogage pou
   
 |||  
 |-|-|  
-|**Type d’objet**|Nom du type ou instance de l'objet.|  
+|**Type d’objet**|Nom du type ou de l'instance de l'objet.|  
 |**Nombre**|Nombre d'instances d'objet du type. Le nombre est toujours égal à 1 pour une instance.|  
 |**Taille (octets)**|Pour un type, taille de toutes les instances du type dans l'instantané de la mémoire, sans compter la taille des objets contenus dans les instances.<br /><br /> Pour une instance ou un type, taille de l'objet sans compter la taille des objets contenus dans l'instance. instances.|  
 |**Taille inclusive (octets)**|Taille des instances du type ou taille d'une seule instance, y compris la taille des objets contenus.|  
@@ -156,7 +156,7 @@ Vous pouvez utiliser l’outil **Utilisation de la mémoire** sans débogage pou
   
 |||  
 |-|-|  
-|**Type d’objet/Instance**|Nom du type ou instance de l'objet.|  
+|**Type d’objet/Instance**|Nom du type ou de l'instance de l'objet.|  
 |**Taille (octets)**|Pour un type, taille de toutes les instances du type, sans compter la taille des objets contenus dans le type.<br /><br /> Pour une instance, taille de l'objet, sans compter la taille des objets contenus dans l'objet.|  
 |**Taille inclusive (octets)**|Taille totale des instances du type ou taille de l'instance, y compris la taille des objets contenus.|  
   
@@ -178,7 +178,7 @@ Vous pouvez utiliser l’outil **Utilisation de la mémoire** sans débogage pou
   
 |||  
 |-|-|  
-|**Type d’objet**|Nom du type ou instance de l'objet.|  
+|**Type d’objet**|Nom du type ou de l'instance de l'objet.|  
 |**Nombre**|Nombre d'instances d'un type dans l'instantané principal. La valeur **Nombre** est toujours égale à 1 pour une instance.|  
 |**Différence de nombre**|Pour un type, différence du nombre d'instances du type entre l'instantané principal et l'instantané précédent. Le champ est vide pour une instance.|  
 |**Taille (octets)**|Taille des objets dans l'instantané principal, sans compter la taille des objets contenus dans les objets. Pour un type, **Taille (octets)** et **Taille inclusive (octets)** sont les totaux des tailles des instances du type.|  
@@ -198,7 +198,7 @@ Vous pouvez utiliser l’outil **Utilisation de la mémoire** sans débogage pou
   
 |||  
 |-|-|  
-|**Type d’objet/Instance**|Nom du type ou instance de l'objet.|  
+|**Type d’objet/Instance**|Nom du type ou de l'instance de l'objet.|  
 |**Taille (octets)**|Pour une instance, taille de l'objet dans l'instantané principal, sans compter la taille des objets contenus dans l'instance.<br /><br /> Pour un type, taille totale des instances du type dans l'instantané principal, sans compter la taille des objets contenus dans l'instance.|  
 |**Taille inclusive (octets)**|Taille des objets dans l'instantané principal, y compris la taille des objets contenus dans les objets.|  
   
@@ -207,4 +207,4 @@ Vous pouvez utiliser l’outil **Utilisation de la mémoire** sans débogage pou
  [Analyser les performances des applications](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)   
  [Exécuter les outils de performance et diagnostic](https://msdn.microsoft.com/library/788279d8-f56b-40a0-9bef-facc3dfba471)   
  [Meilleures pratiques pour les performances des applications du Windows Store en C++, C# et Visual Basic](https://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
- [Diagnostic des problèmes de mémoire avec le nouvel outil Utilisation de la mémoire de Visual Studio](https://go.microsoft.com/fwlink/p/?LinkId=394706)
+ [Diagnostic des problèmes de mémoire avec le nouvel outil Utilisation de la mémoire de Visual Studio](https://blogs.msdn.com/b/visualstudioalm/archive/2014/04/02/diagnosing-memory-issues-with-the-new-memory-usage-tool-in-visual-studio.aspx)
