@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/31/2017
 ms.author: ghogen
-ms.openlocfilehash: 9a95cd84ede6befded37f9d875535f39846de50a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 12f94605ee6a1f4e4cc0142e6dd59ec02ed619c9
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291058"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849940"
 ---
 # <a name="accessing-azure-virtual-machines-from-server-explorer"></a>Accès aux machines virtuelles Azure à partir de l’Explorateur de serveurs
 
@@ -24,22 +24,22 @@ Si vous avez des machines virtuelles hébergées par Azure, vous pouvez y accéd
 
 1. Dans Cloud Explorer, choisissez une machine virtuelle, puis appuyez sur la touche F4 pour afficher sa fenêtre de propriétés.
 
-    Le tableau suivant indique les propriétés disponibles. Toutes les propriétés sont en lecture seule. Utilisez le [portail Azure](https://go.microsoft.com/fwlink/p/?LinkID=525040) pour les changer.
+    Le tableau suivant indique les propriétés disponibles. Toutes les propriétés sont en lecture seule. Utilisez le [portail Azure](https://portal.azure.com/) pour les changer.
 
-   | Propriété | Description |
+   | Les | Description |
    | --- | --- |
    | Nom DNS |URL comportant l’adresse Internet de la machine virtuelle. |
    | Environnement |Pour une machine virtuelle, la valeur de cette propriété est toujours Production. |
-   | Nom |Nom de l'ordinateur virtuel. |
+   | Name |Nom de l'ordinateur virtuel. |
    | Taille |Taille de la machine virtuelle, qui reflète la quantité de mémoire et d’espace disque disponibles. Pour plus d’informations, consultez [Tailles de machines virtuelles](https://docs.microsoft.com/azure/cloud-services/cloud-services-sizes-specs). |
-   | Statut |Les valeurs incluent : Démarrage en cours, Démarré, En cours d’arrêt, Arrêté et Extraction de l’état. Si Extraction de l’état s’affiche, l’état actuel est inconnu. Les valeurs de cette propriété ne sont pas les mêmes que celles qui sont utilisées dans le [portail Azure](https://go.microsoft.com/fwlink/p/?LinkID=525040). |
-   | SubscriptionID |ID d’abonnement de votre compte Azure. Vous pouvez obtenir cette information sur le [portail Azure](https://go.microsoft.com/fwlink/p/?LinkID=525040) en affichant les propriétés de l’abonnement. |
-2. Sélectionnez un nœud de point de terminaison, puis affichez la fenêtre **Propriétés**.
-3. Le tableau suivant décrit les propriétés des points de terminaison disponibles. Toutes ces propriétés sont en lecture seule. Pour ajouter ou modifier les points de terminaison d’une machine virtuelle, utilisez le [portail Azure](https://go.microsoft.com/fwlink/p/?LinkID=525040). 
+   | Status |Les valeurs incluent : Démarrage en cours, Démarré, En cours d’arrêt, Arrêté et Extraction de l’état. Si Extraction de l’état s’affiche, l’état actuel est inconnu. Les valeurs de cette propriété ne sont pas les mêmes que celles qui sont utilisées dans le [portail Azure](https://portal.azure.com/). |
+   | SubscriptionID |ID d’abonnement de votre compte Azure. Vous pouvez obtenir cette information sur le [portail Azure](https://portal.azure.com/) en affichant les propriétés de l’abonnement. |
+2. Sélectionnez un nœud de point de terminaison, puis ouvrez la fenêtre **Propriétés** .
+3. Le tableau suivant décrit les propriétés des points de terminaison disponibles. Toutes ces propriétés sont en lecture seule. Pour ajouter ou modifier les points de terminaison d’une machine virtuelle, utilisez le [portail Azure](https://portal.azure.com/). 
 
-   | Propriété | Description |
+   | Les | Description |
    | --- | --- |
-   | Nom |Identificateur du point de terminaison. |
+   | Name |Identificateur du point de terminaison. |
    | Port privé |Port d’accès réseau interne à votre application. |
    | Protocole |Protocole utilisé par la couche de transport du point de terminaison (TCP ou UDP). |
    | Port public |Port utilisé pour l’accès public à votre application. |

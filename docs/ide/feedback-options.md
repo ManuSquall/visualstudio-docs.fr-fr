@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 1c7d9ce8382ee208b160fa5cec845c8ff9508d74
-ms.sourcegitcommit: 2148f3fd69569d8ec54fd21a66370932ce610ce4
+ms.openlocfilehash: 6577d49094cd4e2718507eb0c1f4f83ff146da05
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74853488"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847460"
 ---
 # <a name="visual-studio-feedback-options"></a>Options de commentaires de Visual Studio
 
@@ -75,12 +75,12 @@ Vous pouvez nous aider à améliorer la documentation de deux façons :
 
 ## <a name="contact-microsoft-support"></a>Contacter le support Microsoft
 
-Pour plus d’informations sur le support de Visual Studio, consultez la page [Cycle de vie et maintenance du produit](/visualstudio/releases/2019/servicing/). Pour les autres produits et services Microsoft, consultez [Support Microsoft](https://go.microsoft.com/fwlink/?LinkID=99019) pour accéder à l’aide en ligne.
+Pour plus d’informations sur le support de Visual Studio, consultez la page [Cycle de vie et maintenance du produit](/visualstudio/releases/2019/servicing/). Pour les autres produits et services Microsoft, consultez [Support Microsoft](https://support.microsoft.com/) pour accéder à l’aide en ligne.
 
 > [!NOTE]
 > Le support hors des États-Unis et du Canada peut varier. Pour obtenir la liste des contacts régionaux, consultez les [sites mondiaux Microsoft](https://www.microsoft.com/worldwide/).
 
-Des contrats sont possibles via différentes offres de Support Entreprise pour les grandes organisations qui ont besoin d’un support technique géré directement par Microsoft. Pour plus d’informations, consultez la page [Solutions de support Entreprise de Microsoft](https://go.microsoft.com/fwlink/?LinkId=258223).
+Des contrats sont possibles via différentes offres de Support Entreprise pour les grandes organisations qui ont besoin d’un support technique géré directement par Microsoft. Pour plus d’informations, consultez la page [Solutions de support Entreprise de Microsoft](https://www.microsoft.com/industry/services/support).
 
 Si le produit est fourni installé avec un nouvel ordinateur ou appareil, le fabricant de matériel fournit le support technique et l’assistance pour ce logiciel. Contactez directement le fabricant pour le support technique.
 

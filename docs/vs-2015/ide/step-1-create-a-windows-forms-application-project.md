@@ -9,19 +9,19 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a9651c04c1d94459052d92cdda0afa58e344b650
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: cdba2105c6b8af42d51669e0d1fc8ce49085d513
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295789"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851613"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>Étape 1 : créer un projet d'application Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Lorsque vous créez une visionneuse d’images, la première étape consiste à créer un projet d’application Windows Forms.
 
- ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo") Pour obtenir une version vidéo de cette rubrique, consultez [didacticiel 1 : créer une visionneuse d’images dans Visual Basic vidéo 1](https://go.microsoft.com/fwlink/?LinkId=205209) ou [didacticiel 1 : créer une visionneuse d’images dans C# la vidéo 1](https://go.microsoft.com/fwlink/?LinkId=205199). Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d’interface utilisateur. Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio.
+ ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo") Pour obtenir une version vidéo de cette rubrique, consultez [didacticiel 1 : créer une visionneuse d’images dans Visual Basic vidéo 1](https://msdn.microsoft.com/vbasic/gg315352.aspx) ou [didacticiel 1 : créer une visionneuse d’images dans C# la vidéo 1](https://msdn.microsoft.com/vcsharp/gg278409.aspx). Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d’interface utilisateur. Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio.
 
 ### <a name="to-create-a-windows-forms-application-project"></a>Pour créer un projet Application Windows Forms
 

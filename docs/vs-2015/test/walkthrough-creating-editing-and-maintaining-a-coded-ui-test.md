@@ -8,12 +8,12 @@ ms.assetid: f7c25ba7-5c9c-455b-9242-701cda56f90c
 caps.latest.revision: 43
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4b4d3e7c597766c3b416a7cb637cf0e5e99f71d5
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: d14de396e24874f39a09172a483ebef81a5886f2
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302057"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851230"
 ---
 # <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>Procédures pas à pas : création, édition et gestion d'un test codé de l'interface utilisateur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Dans cette procédure pas à pas, vous allez créer une simple application WPF (
 
 1. Dans le menu **FICHIER**, pointez sur **Nouveau** puis sélectionnez **Projet**.
 
-     La boîte de dialogue **Nouveau projet** s'affiche.
+     La boîte de dialogue **Nouveau projet** s’affiche.
 
 2. Dans le volet **Installé**, développez **Visual C#** puis sélectionnez **Bureau Windows**.
 
@@ -369,22 +369,22 @@ Dans cette procédure pas à pas, vous allez créer une simple application WPF (
 ## <a name="external-resources"></a>Ressources externes
 
 ### <a name="videos"></a>Vidéos
- ![lien vers](../data-tools/media/playvideo.gif "PlayVideo") [les tests codés de l’interface utilisateur-DeepDive-Episode1-gettingstarted](https://go.microsoft.com/fwlink/?LinkID=230573)
+ ![lien vers](../data-tools/media/playvideo.gif "PlayVideo") [les tests codés de l’interface utilisateur-DeepDive-Episode1-gettingstarted](https://skydrive.live.com/?cid=2db0e1efe1c1d3b8&id=2DB0E1EFE1C1D3B8%21118)
 
- ![lien vers](../data-tools/media/playvideo.gif "PlayVideo") [les tests codés de l’interface utilisateur-DeepDive-Episode2-maintenanceetdébogage](https://go.microsoft.com/fwlink/?LinkID=230574)
+ ![lien vers](../data-tools/media/playvideo.gif "PlayVideo") [les tests codés de l’interface utilisateur-DeepDive-Episode2-maintenanceetdébogage](https://skydrive.live.com/?cid=2db0e1efe1c1d3b8&id=2DB0E1EFE1C1D3B8%21116)
 
- ![lien vers](../data-tools/media/playvideo.gif "PlayVideo") [les tests codés de l’interface utilisateur-DeepDive-Episode3-codagemanuel](https://go.microsoft.com/fwlink/?LinkID=230575)
+ ![lien vers](../data-tools/media/playvideo.gif "PlayVideo") [les tests codés de l’interface utilisateur-DeepDive-Episode3-codagemanuel](https://skydrive.live.com/?cid=2db0e1efe1c1d3b8&id=2DB0E1EFE1C1D3B8%21117)
 
 ### <a name="hands-on-lab"></a>Ateliers pratiques
- [Laboratoire virtuel MSDN : Introduction à la création de tests codés de l’interface utilisateur avec Visual Studio 2010](https://go.microsoft.com/fwlink/?LinkID=22508)
+ [Laboratoire virtuel MSDN : Introduction à la création de tests codés de l’interface utilisateur avec Visual Studio 2010](https://windows.microsoft.com/en-US/windows/products/windows-media-player)
 
 ### <a name="faq"></a>Forum aux questions
- [FAQ concernant les tests codés de l’interface utilisateur - 1](https://go.microsoft.com/fwlink/?LinkID=230576)
+ [FAQ concernant les tests codés de l’interface utilisateur - 1](https://blogs.msdn.com/b/mathew_aniyan/archive/tags/faq/)
 
- [FAQ concernant les tests codés de l’interface utilisateur - 2](https://go.microsoft.com/fwlink/?LinkID=230578)
+ [FAQ concernant les tests codés de l’interface utilisateur - 2](https://social.msdn.microsoft.com/Forums/en-US/vsautotest/thread/3a74dd2c-cef8-4923-abbf-7a91f489e6c4)
 
 ### <a name="forum"></a>Forum
- [Tests d’automation de l’interface utilisateur de Visual Studio (inclut CodedUI)](https://go.microsoft.com/fwlink/?LinkID=224497)
+ [Tests de Visual Studio UI Automation (inclut CodedUI)](https://social.msdn.microsoft.com/Forums/en-US/vsautotest)
 
 ## <a name="see-also"></a>Voir aussi
  [Utiliser UI Automation pour tester votre Code](../test/use-ui-automation-to-test-your-code.md) [prise en main avec les](https://msdn.microsoft.com/18e61d03-b96a-4058-a166-8ec6b3f6116b) [plateformes et configurations prises en charge par le Concepteur WPF pour les tests codés de l’interface utilisateur et les enregistrements des actions](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md) [modification des tests codés de l’interface utilisateur à l’aide de l’éditeur de test codé](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)

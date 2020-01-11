@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 13fd54eeebf0323fcb9b8cad6a8cd8b75ae11fb3
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: e702b402d5350641aa01d341106634efe5f6c6c4
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74292890"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849267"
 ---
 # <a name="how-to-invoke-the-workflow-debugger"></a>Procédure : appeler le débogueur de workflow
 En général, vous déboguez des workflows comme vous déboguez des programmes écrits dans d'autres langages de programmation Visual Studio. Vous pouvez démarrer le débogueur de workflow de plusieurs façons :
@@ -23,7 +23,7 @@ En général, vous déboguez des workflows comme vous déboguez des programmes �
 
 - Appuyez sur **F5** pour commencer à exécuter une instance du workflow, ou pour continuer à s’exécuter après qu’un point d’arrêt a été atteint.
 
-- Utilisez le débogage distant. Pour plus d’informations sur l’utilisation du débogage à distance, consultez [Comment : activer le débogage distant](https://go.microsoft.com/fwlink/?LinkId=196257).
+- Utilisez le débogage distant. Pour plus d’informations sur l’utilisation du débogage à distance, consultez [Comment : activer le débogage distant](https://msdn.microsoft.com/library/febz73k0.aspx).
 
     > [!NOTE]
     > Si l’application de workflow cible l’architecture x86 et est hébergée sur un ordinateur exécutant un système d’exploitation 64 bits, le débogage à distance ne fonctionnera pas, sauf si [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] est installé sur l’ordinateur distant ou si la cible de l’application de workflow est remplacée par **n’importe quel processeur**.

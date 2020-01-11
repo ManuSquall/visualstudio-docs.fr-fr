@@ -8,12 +8,12 @@ ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9fbba44ef5ac0e531198b3569008a260118aefcf
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: fd54c5e730f757a0e198ad7cf1d8577e686b9ea9
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298373"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845875"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analyseurs Roslyn et bibliothèque de code pour ImmutableArrays
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Pour générer cet exemple, vous avez besoin des éléments suivants :
 
 - [Visual Studio SDK](../extensibility/visual-studio-sdk.md). Vous pouvez également, lors de l’installation de Visual Studio, cocher Outils d’extensibilité de Visual Studio sous outils courants pour installer le kit de développement logiciel (SDK) en même temps. Si vous avez déjà installé Visual Studio, vous pouvez également installer ce kit de développement logiciel (SDK) en accédant au menu principal **fichier &#124; nouveau &#124;projet...** , en sélectionnant C# dans le volet de navigation gauche, puis en choisissant extensibilité. Quand vous choisissez le modèle de projet «**installer le outils d’extensibilité de Visual Studio**», vous êtes invité à télécharger et à installer le kit de développement logiciel (SDK).
 
-- [Kit de développement logiciel (SDK) .NET Compiler Platform (« Roslyn »)](https://aka.ms/roslynsdktemplates). Vous pouvez également installer ce kit de développement logiciel (SDK) en accédant au menu principal **fichier &#124; nouveau &#124; projet...** , en choisissant **C#** dans le volet de navigation gauche, puis en choisissant **extensibilité**. Lorsque vous choisissez le modèle de projet «**Télécharger le kit de développement logiciel (SDK) .NET Compiler Platform**», vous êtes invité à télécharger et à installer le kit de développement logiciel (SDK). Ce kit de développement logiciel (SDK) comprend le [Syntax Visualizer Roslyn](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer). Cet outil extrêmement utile vous aide à déterminer les types de modèles de code que vous devez rechercher dans votre analyseur. L’infrastructure de l’analyseur appelle dans votre code pour des types de modèle de code spécifiques, de sorte que votre code s’exécute uniquement lorsque cela est nécessaire et peut se concentrer uniquement sur l’analyse du code pertinent.
+- [Kit de développement logiciel (SDK) .NET Compiler Platform (« Roslyn »)](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.NETCompilerPlatformSDK). Vous pouvez également installer ce kit de développement logiciel (SDK) en accédant au menu principal **fichier &#124; nouveau &#124; projet...** , en choisissant **C#** dans le volet de navigation gauche, puis en choisissant **extensibilité**. Lorsque vous choisissez le modèle de projet «**Télécharger le kit de développement logiciel (SDK) .NET Compiler Platform**», vous êtes invité à télécharger et à installer le kit de développement logiciel (SDK). Ce kit de développement logiciel (SDK) comprend le [Syntax Visualizer Roslyn](https://github.com/dotnet/roslyn/wiki/Syntax%20Visualizer). Cet outil extrêmement utile vous aide à déterminer les types de modèles de code que vous devez rechercher dans votre analyseur. L’infrastructure de l’analyseur appelle dans votre code pour des types de modèle de code spécifiques, de sorte que votre code s’exécute uniquement lorsque cela est nécessaire et peut se concentrer uniquement sur l’analyse du code pertinent.
 
 ## <a name="whats-the-problem"></a>Quel est le problème?
 Imaginez que vous fournissez une bibliothèque avec la prise en charge de ImmutableArray (par exemple, <xref:System.Collections.Immutable.ImmutableArray%601?displayProperty=fullName>). C#les développeurs ont beaucoup d’expérience avec les tableaux .NET. Toutefois, en raison de la nature des techniques de ImmutableArrays et d’optimisation utilisées dans C# l’implémentation, les intuitions des développeurs empêchent les utilisateurs de votre bibliothèque d’écrire du code endommagé, comme expliqué ci-dessous. En outre, les utilisateurs ne voient pas leurs erreurs jusqu’au moment de l’exécution, ce qui n’est pas l’expérience de qualité dans lequel ils sont utilisés dans Visual Studio avec .NET.
@@ -102,7 +102,7 @@ Pour que votre analyseur s’affiche dans l’interface utilisateur de Visual St
 internal const string Category = "Naming";
 ```
 
-Remplacez `"Naming"` par `"API Guidance"`.
+Modification `"Naming"` à `"API Guidance"`.
 
 Ensuite, recherchez et ouvrez le fichier Resources. resx dans votre projet à l’aide de l' **Explorateur de solutions**. Vous pouvez insérer une description pour votre analyseur, son titre, etc. Vous pouvez modifier la valeur de toutes ces valeurs pour `“Don’t use ImmutableArray<T> constructor”` pour le moment. Vous pouvez placer des arguments de mise en forme de chaîne dans votre chaîne ({0}, {1}, etc.), et par la suite lorsque vous appelez `Diagnostic.Create()`, vous pouvez fournir un tableau de paramètres d’arguments à passer.
 

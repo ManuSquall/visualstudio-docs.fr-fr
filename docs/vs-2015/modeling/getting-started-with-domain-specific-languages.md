@@ -9,19 +9,19 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: a2757201f482682b8fdf26275f510984629204f6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 71aa8b31023cedcc41a08a775f9fdf28a4489d1e
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300912"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847191"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Mise en route des langages spécifiques à un domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette rubrique explique les concepts de base de la définition et de l’utilisation d’un langage spécifique à un domaine (DSL) créé avec le kit de développement logiciel (SDK) de modélisation pour Visual Studio.
 
- Si vous débutez avec DSL, nous vous recommandons d’utiliser le **laboratoire d’outils DSL**, que vous trouverez dans ce site : [création et Modeling SDK](https://go.microsoft.com/fwlink/?LinkID=186128)
+ Si vous débutez avec DSL, nous vous recommandons d’utiliser le **laboratoire d’outils DSL**, que vous trouverez dans ce site : [création et Modeling SDK](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)
 
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>Que pouvez-vous faire avec un langage spécifique à un domaine ?
  Un langage spécifique à un domaine est une notation, généralement graphique, conçue pour être utilisée à des fins particulières. En revanche, les langages tels que UML sont à usage général. Dans une solution DSL, vous pouvez définir les types d’élément de modèle et leurs relations, et la façon dont ils sont présentés à l’écran.
@@ -41,8 +41,8 @@ Cette rubrique explique les concepts de base de la définition et de l’utilisa
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://go.microsoft.com/fwlink/?LinkId=185579)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://go.microsoft.com/fwlink/?LinkId=185580)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://www.visualstudio.com/)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://docs.microsoft.com/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts)|
 |SDK Modeling pour Visual Studio|[Télécharger MSDK](https://www.microsoft.com/download/details.aspx?id=48148)|
 
 ## <a name="creating-a-dsl-solution"></a>Création d’une solution DSL
@@ -216,7 +216,7 @@ Cette rubrique explique les concepts de base de la définition et de l’utilisa
 
     2. Cliquez sur **transformer tous les modèles** dans la barre d’outils de Explorateur de solutions
 
-    3. Appuyez sur F5. Attendez que l’instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] apparaisse.
+    3. Appuyez sur la touche F5. Attendez que l’instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] apparaisse.
 
 4. Dans la solution de débogage de l’instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ouvrez un fichier de modèle de test. Faites glisser des éléments dans la boîte à outils. Notez que les légendes d’outils et les noms de type dans l’Explorateur DSL ont changé.
 
@@ -399,4 +399,4 @@ Cette rubrique explique les concepts de base de la définition et de l’utilisa
 2. Reconstruisez les DSL expérimentales ou d’autres extensions expérimentales [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que vous souhaitez utiliser.
 
 ## <a name="see-also"></a>Voir aussi
- [Comprendre les modèles, les classes et les relations](../modeling/understanding-models-classes-and-relationships.md) [comment définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md) [création et Modeling SDK](https://go.microsoft.com/fwlink/?LinkID=186128)
+ [Comprendre les modèles, les classes et les relations](../modeling/understanding-models-classes-and-relationships.md) [comment définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md) [création et Modeling SDK](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)

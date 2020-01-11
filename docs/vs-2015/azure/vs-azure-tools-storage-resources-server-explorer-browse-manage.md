@@ -11,18 +11,18 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
-ms.openlocfilehash: 36b2691525eb66bf946317c1bb5254796d5cd639
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7b7ec05e8d849f7e802ab1c1ff4464e0552ab6d6
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291229"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849870"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>Parcourir et gérer des ressources de stockage avec l’Explorateur de serveurs
 
 [!INCLUDE [storage-try-azure-tools](./includes/storage-try-azure-tools.md)]
 
-## <a name="overview"></a>Overview
+## <a name="overview"></a>Vue d'ensemble de
 
 Si vous avez installé Azure Tools pour Microsoft Visual Studio, vous pouvez afficher les données relatives aux objets blob, aux files d’attente et aux tables à partir de vos comptes de stockage Azure. Le nœud Azure **Storage** de l’Explorateur de serveurs affiche les données qui se trouvent dans votre compte d’émulateur de stockage local et dans vos autres comptes de stockage Azure.
 
@@ -40,7 +40,7 @@ Pour afficher les ressources dans un compte de stockage, développez le nœud du
 
 ## <a name="work-with-blob-resources"></a>Utilisation des ressources d’objets blob
 
-Le nœud **Objets BLOB** affiche une liste de conteneurs pour le compte de stockage sélectionné. Les conteneurs d’objets blob contiennent des fichiers d’objets blob, que vous pouvez ranger dans des dossiers et des sous-dossiers. Pour plus d’informations, voir [Utilisation du stockage d’objets blob à partir de .NET](/azure/storage/blobs/storage-dotnet-how-to-use-blobs).
+Le nœud **Objets blob** affiche la liste des conteneurs associés au compte de stockage sélectionné. Les conteneurs d’objets blob contiennent des fichiers d’objets blob, que vous pouvez ranger dans des dossiers et des sous-dossiers. Pour plus d’informations, voir [Utilisation du stockage d’objets blob à partir de .NET](/azure/storage/blobs/storage-dotnet-how-to-use-blobs).
 
 ### <a name="to-create-a-blob-container"></a>Pour créer un conteneur d’objets blob
 
@@ -110,7 +110,7 @@ Dans Cloud Explorer, utilisez une des méthodes suivantes :
 * Choisissez le nom de l’objet blob, puis sélectionnez le bouton **Ouvrir**.
 * Double-cliquez sur le nom de l’objet blob.
 
-La progression du téléchargement d'un objet blob s'affiche dans la fenêtre **Journal des activités Azure**.
+La progression du téléchargement d’un objet blob s’affiche dans la fenêtre **Journal des activités Azure** .
 
 L’objet blob s’ouvre dans l’éditeur par défaut pour ce type de fichier. Si le système d’exploitation reconnaît le type de fichier, le fichier s’ouvre dans une application installée localement. Dans le cas contraire, vous êtes invité à choisir une application qui est appropriée pour le type de fichier de l’objet blob. Le fichier local qui est créé quand vous téléchargez un objet blob est en lecture seule.
 
@@ -122,11 +122,11 @@ Par défaut, un objet blob est téléchargé dans un répertoire temporaire. Pou
 
 Pour charger des objets blob, sélectionnez le bouton **Charger l’objet blob** quand le conteneur est ouvert sur la vue du conteneur d’objets blob.
 
-Vous pouvez choisir un ou plusieurs fichiers à charger, et vous pouvez charger des fichiers de tout type. La fenêtre **Journal d’activité Azure** affiche la progression du chargement. Pour plus d’informations sur l’utilisation des données d’objets blob, consultez [Utilisation du stockage d’objets blob Azure dans .NET](https://go.microsoft.com/fwlink/p/?LinkId=267911).
+Vous pouvez choisir un ou plusieurs fichiers à charger, et vous pouvez charger des fichiers de tout type. La fenêtre **Journal d’activité Azure** affiche la progression du chargement. Pour plus d’informations sur l’utilisation des données d’objets blob, consultez [Utilisation du stockage d’objets blob Azure dans .NET](https://www.windowsazure.com/develop/net/how-to-guides/blob-storage/).
 
 ### <a name="to-view-logs-transferred-to-blobs"></a>Pour afficher les journaux transférés vers des objets blob
 
-Si vous utilisez les diagnostics Azure pour enregistrer des données à partir de votre application Azure et si vous avez transféré des journaux vers votre compte de stockage, vous verrez les conteneurs qu’Azure a créés pour ces journaux. L’affichage de ces journaux dans l’Explorateur de serveurs permet d’identifier facilement les problèmes de votre application, en particulier si elle est déployée sur Azure.
+CnE UE VS TM [MD] L’affichage de ces journaux dans l’Explorateur de serveurs permet d’identifier facilement les problèmes de votre application, en particulier si elle est déployée sur Azure.
 
 Pour plus d’informations sur les diagnostics Azure, consultez [Collecte des données de journalisation avec les diagnostics Azure](https://msdn.microsoft.com/library/azure/gg433048.aspx).
 
@@ -157,7 +157,7 @@ L’illustration suivante montre une file d’attente contenant deux messages :
 
 ![Affichage d’une file d’attente](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC651470.png)
 
-Pour plus d’informations sur les files d’attente de services de stockage, consultez [Prise en main du stockage de files d’attente Azure à l’aide de .NET](https://go.microsoft.com/fwlink/?LinkID=264702). Pour plus d’informations sur le service web des files d’attente des services de stockage, consultez [Concepts de File d’attente](https://go.microsoft.com/fwlink/?LinkId=264788). Pour plus d’informations sur la façon d’envoyer des messages vers une file d’attente des services de stockage à l’aide de Visual Studio, consultez [Envoi de messages à une file d’attente de services de stockage](/azure/visual-studio/vs-storage-cloud-services-getting-started-queues).
+Pour plus d’informations sur les files d’attente de services de stockage, consultez [Prise en main du stockage de files d’attente Azure à l’aide de .NET](https://www.windowsazure.com/develop/net/how-to-guides/queue-service/). Pour plus d’informations sur le service web des files d’attente des services de stockage, consultez [Concepts de File d’attente](https://msdn.microsoft.com/library/windowsazure/dd179353.aspx). Pour plus d’informations sur la façon d’envoyer des messages vers une file d’attente des services de stockage à l’aide de Visual Studio, consultez [Envoi de messages à une file d’attente de services de stockage](/azure/visual-studio/vs-storage-cloud-services-getting-started-queues).
 
 > [!NOTE]
 > Les files d’attente de services de stockage sont différentes des files d’attente Azure Service Bus. Pour plus d’informations sur les files d’attente Service Bus, consultez [Files d’attente, rubriques et abonnements Service Bus](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions).
@@ -200,7 +200,7 @@ Il n’est pas nécessaire que les entités d’une table possèdent les mêmes 
 
     ![Bouton Ajouter une entité](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC655336.png)
 
-1. Dans la boîte de dialogue **Ajouter une entité**, saisissez les valeurs des propriétés **PartitionKey** et **RowKey**.
+1. Dans la boîte de dialogue **Ajouter une entité**, entrez les valeurs des propriétés **PartitionKey** et **RowKey**.
 
     ![Boîte de dialogue Ajouter une entité](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC655335.png)
 
@@ -213,7 +213,7 @@ Vous pouvez personnaliser les entités qui s’affichent dans une table à l’a
 1. Pour ouvrir le Générateur de requêtes, ouvrez une table pour afficher son contenu.
 1. Sélectionnez le bouton **Générateur de requêtes** de la vue de la table.
 
-    La boîte de dialogue **Générateur de requêtes** apparaît. L’illustration suivante montre la génération d’une requête dans le Générateur de requêtes.
+    La boîte de dialogue **Générateur de requêtes** s’affiche. L’illustration suivante montre la génération d’une requête dans le Générateur de requêtes.
 
     ![Générateur de requêtes](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC652231.png)
 1. Quand vous avez terminé la création de la requête, fermez la boîte de dialogue. Le formulaire de texte de la requête qui en résulte s’affiche dans une zone de texte en tant que filtre WCF Data Services.

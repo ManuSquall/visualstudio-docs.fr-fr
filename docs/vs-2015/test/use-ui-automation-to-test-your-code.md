@@ -17,12 +17,12 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: 87
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2eb0a4ee7c69ebe2bf753d4bbde63160b6e0043e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 6478de1573a90c0a7171285df1d04675f77435e2
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297980"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851264"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Utiliser UI Automation pour tester votre code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Vous pouvez créer des tests automatisés qui vérifient l’interface utilisate
 
  Le Générateur de test codé de l'interface utilisateur et l'éditeur spécial simplifient la création et la modification des tests codés de l'interface utilisateur même si vos compétences principales sont axées sur les tests plutôt que sur le codage. Si vous êtes développeur et que vous souhaitez approfondir le test, le code est structuré pour être facile à copier et à adapter. Par exemple, vous pouvez enregistrer un test d’achat d’un article sur un site web, puis modifier le code généré et ajouter une boucle qui achète de nombreux articles.
 
- **Requirements**
+ **Spécifications**
 
 - Visual Studio Enterprise
 
@@ -465,22 +465,22 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - [Extension des tests codés de l’interface utilisateur et des enregistrements des actions pour prendre en charge Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
 
-  Les tests codés de l'interface utilisateur servent souvent à automatiser des tests manuels. Pour obtenir de l’aide supplémentaire, consultez [Test de la livraison continue avec Visual Studio 2012 - Chapitre 5 : Automatisation des tests système](https://go.microsoft.com/fwlink/?LinkID=255196). Pour plus d’informations sur les tests manuels, consultez [&#91;retirée&#93; Création de cas de test manuels à l’aide de Microsoft Test Manager](https://msdn.microsoft.com/library/9989e184-c8e4-444b-998d-a1a5ec94461e). Pour plus d’informations sur les tests système automatisés, consultez [Création de tests automatisés à l’aide de Microsoft Test Manager](https://msdn.microsoft.com/7b5075ee-ddfe-411d-b1d4-94283550a5d0).
+  Les tests codés de l'interface utilisateur servent souvent à automatiser des tests manuels. Pour obtenir de l’aide supplémentaire, consultez [Test de la livraison continue avec Visual Studio 2012 - Chapitre 5 : Automatisation des tests système](https://msdn.microsoft.com/library/jj159335.aspx). Pour plus d’informations sur les tests manuels, consultez [&#91;retirée&#93; Création de cas de test manuels à l’aide de Microsoft Test Manager](https://msdn.microsoft.com/library/9989e184-c8e4-444b-998d-a1a5ec94461e). Pour plus d’informations sur les tests système automatisés, consultez [Création de tests automatisés à l’aide de Microsoft Test Manager](https://msdn.microsoft.com/7b5075ee-ddfe-411d-b1d4-94283550a5d0).
 
 ## <a name="external-resources"></a>Ressources externes
 
-### <a name="guidance"></a>Conseils
-- [Test de la livraison continue avec Visual Studio 2012 - Chapitre 2 : Tests unitaires : tester l’intérieur](https://go.microsoft.com/fwlink/?LinkID=255188)
+### <a name="guidance"></a>Aide
+- [Tester la livraison continue avec Visual Studio 2012 - Chapitre 2 : Tests unitaires : tester l’intérieur](https://msdn.microsoft.com/library/jj159340.aspx)
 
-- [Test de la livraison continue avec Visual Studio 2012 - Chapitre 5 : Automatisation des tests système](https://go.microsoft.com/fwlink/?LinkID=255196)
+- [Test de la livraison continue avec Visual Studio 2012 - Chapitre 5 : Automatisation des tests système](https://msdn.microsoft.com/library/jj159335.aspx)
 
 ### <a name="faq"></a>Forum aux questions
-- [FAQ concernant les tests codés de l’interface utilisateur - 1](https://go.microsoft.com/fwlink/?LinkID=230576)
+- [FAQ concernant les tests codés de l’interface utilisateur - 1](https://blogs.msdn.com/b/mathew_aniyan/archive/tags/faq/)
 
-- [FAQ concernant les tests codés de l’interface utilisateur - 2](https://go.microsoft.com/fwlink/?LinkID=230578)
+- [FAQ concernant les tests codés de l’interface utilisateur - 2](https://social.msdn.microsoft.com/Forums/en-US/vsautotest/thread/3a74dd2c-cef8-4923-abbf-7a91f489e6c4)
 
 ### <a name="forum"></a>Forum
-- [Tests d’automation de l’interface utilisateur de Visual Studio (inclut CodedUI)](https://go.microsoft.com/fwlink/?LinkID=224497)
+- [Tests de Visual Studio UI Automation (inclut CodedUI)](https://social.msdn.microsoft.com/Forums/en-US/vsautotest)
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d3a17275730cd093f8f9fa433aa28c7f9ca86e80
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 02ab48e2fcd014508277a9bc361cde65d62ef38c
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298138"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850789"
 ---
 # <a name="t4-template-directive"></a>Directive du modèle T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ hostspecific="true"
 
  Étant donné que le type de cette propriété dépend du type d'hôte, elle n'est utile que si vous écrivez un modèle de texte qui fonctionne uniquement avec un hôte spécifique. Elle s’applique aux [modèles au moment du design](../modeling/design-time-code-generation-by-using-t4-text-templates.md), mais pas aux [modèles au moment de l’exécution](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
- Lorsque `hostspecific` a la valeur `true` et que vous utilisez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vous pouvez effectuer un cast de `this.Host` en IServiceProvider pour accéder aux fonctionnalités de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Vous pouvez également utiliser `Host.ResolvePath(filename)` pour obtenir le chemin d’accès absolu d’un fichier dans le projet. Exemple :
+ Lorsque `hostspecific` a la valeur `true` et que vous utilisez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vous pouvez effectuer un cast de `this.Host` en IServiceProvider pour accéder aux fonctionnalités de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Vous pouvez également utiliser `Host.ResolvePath(filename)` pour obtenir le chemin d’accès absolu d’un fichier dans le projet. Par exemple :
 
 ```csharp
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -110,7 +110,7 @@ Content of myFile is:
 
  L’attribut Language spécifie le langage ([!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ou [!INCLUDE[csprcs](../includes/csprcs-md.md)]) à utiliser pour le code source dans les blocs d’instruction et d’expression. Le fichier de code intermédiaire à partir duquel la sortie est générée utilisera ce langage. Ce langage n'est pas lié au langage que votre modèle génère, qui peut être tout type de texte.
 
- Exemple :
+ Par exemple :
 
 ```vb
 <#@ template language="VB" #>
@@ -211,7 +211,7 @@ This is the common footer.
 
  Pour un modèle de texte au moment du design, vous pouvez spécifier toute classe de base dérivée de <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>. Utilisez la directive `<#@assembly#>` pour charger l'assembly ou le projet qui contient la classe de base.
 
- Pour plus d’informations, consultez [« héritage dans les modèles de texte » dans le blog de Gareth Jones](https://go.microsoft.com/fwlink/?LinkId=208373).
+ Pour plus d’informations, consultez [« héritage dans les modèles de texte » dans le blog de Gareth Jones](https://blogs.msdn.microsoft.com/garethj/2011/01/03/vs2010-sp1-t4-template-inheritance-part-i-sample-metadata/).
 
 ## <a name="linepragmas-attribute"></a>Attribut LinePragmas
  Exemple : `linePragmas="false"`

@@ -14,14 +14,14 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: deb6d8f759080caf1933c75f1f3f05428d3cff9d
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 54626c07fb8d15f585e800f03911dd465395d795
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300303"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850257"
 ---
-# <a name="da0012-significant-amount-of-reflection"></a>DA0012 : Quantité importante de réflexion
+# <a name="da0012-significant-amount-of-reflection"></a>DA0012 : Quantité importante de réflexion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ID de règle | DA0012 |  
@@ -36,7 +36,7 @@ ID de règle | DA0012 |
 ## <a name="rule-description"></a>Description de la règle  
  La réflexion est une fonctionnalité souple du .NET Framework qui peut être utilisée pour créer une liaison tardive entre votre application et un assembly de runtime dépendant, ou pour créer et exécuter dynamiquement de nouveaux types pendant l’exécution. Toutefois, ces techniques peuvent dégrader les performances si elles sont fréquemment utilisées ou appelées dans des boucles serrées.  
   
- Pour plus d’informations, consultez la section [Reflection and Late Binding](https://go.microsoft.com/fwlink/?LinkId=177826) de la rubrique Chapter 5 — Improving Managed Code Performance qui fait partie de la documentation Improving .NET Application Performance and Scalability, disponible sur le site MSDN, dans la bibliothèque Microsoft Patterns and Practices.  
+ Pour plus d’informations, consultez la section [Reflection and Late Binding](https://msdn.microsoft.com/library/ms998547.aspx#scalenetchapt05_topic31) de la rubrique Chapter 5 — Improving Managed Code Performance qui fait partie de la documentation Improving .NET Application Performance and Scalability, disponible sur le site MSDN, dans la bibliothèque Microsoft Patterns and Practices.  
   
 ## <a name="how-to-investigate-a-warning"></a>Comment rechercher la cause d’un avertissement  
  Double-cliquez sur le message dans la fenêtre Liste d’erreurs pour accéder à la [vue Informations relatives à la fonction](../profiling/function-details-view.md) des données de profilage. Examinez les fonctions appelantes de la méthode System.Type ou System.Reflection pour rechercher les sections du programme qui utilisent le plus fréquemment les API de réflexion .NET. Évitez d’utiliser des méthodes qui retournent des métadonnées. Si les performances de votre application sont critiques, évitez d’utiliser des liaisons tardives et de créer dynamiquement des types au moment de l’exécution.

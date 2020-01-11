@@ -12,12 +12,12 @@ caps.latest.revision: 79
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 505c17635c80a165a7a094d3ce2bec3c32bd7101
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 0673f7511276799804dc327bab67637f3fc450b7
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297685"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850098"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Kit de développement logiciel de modélisation pour Visual Studio - Langages spécifiques à un domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,9 +43,9 @@ En utilisant le kit de développement logiciel (SDK) de modélisation pour [!INC
 ## <a name="samples-and-the-latest-information"></a>Exemples et dernières informations
  [Télécharger le kit de développement logiciel Modeling SDK pour Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=48148)
 
- [Exemples](https://go.microsoft.com/fwlink/?LinkId=186128) pour le kit de développement logiciel de modélisation pour Visual Studio.
+ [Exemples](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) pour le kit de développement logiciel de modélisation pour Visual Studio.
 
- Pour obtenir des conseils sur les techniques avancées et la résolution des problèmes, consultez le [Forum d’extensibilité des outils de modélisation de Visual Studio &](https://go.microsoft.com/fwlink/?LinkID=186074).
+ Pour obtenir des conseils sur les techniques avancées et la résolution des problèmes, visitez [forum Visual Studio DSL & extensibilité des outils de modélisation](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=dslvsarchx).
 
 ## <a name="in-this-section"></a>Dans cette section
  [Bien démarrer avec les langages spécifiques à un domaine](../modeling/getting-started-with-domain-specific-languages.md)

@@ -14,12 +14,12 @@ caps.latest.revision: 28
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5abbb647f93c991d2de626a84e82f47e03f6f71e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 4d825e625313febfa67cfb85f6a9c6bccb7f3608
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299620"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844275"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Procédure pas à pas : Création d’un service de données WCF avec WPF et Entity Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Cette procédure pas à pas montre comment créer un [!INCLUDE[ss_data_service](
 
 - Exemple de base de données Northwind.
 
-     Si cette base de données n’est pas disponible sur votre ordinateur de développement, vous pouvez la télécharger à partir du [Centre de téléchargement Microsoft](https://go.microsoft.com/fwlink/?LinkID=98088). Pour obtenir des instructions, consultez [téléchargement d’exemples de bases de données](https://msdn.microsoft.com/library/ef9d69a1-9461-43fe-94bb-7c836754bcb5).
+     Si cette base de données n’est pas disponible sur votre ordinateur de développement, vous pouvez la télécharger à partir du [Centre de téléchargement Microsoft](https://www.microsoft.com/downloads). Pour obtenir des instructions, consultez [téléchargement d’exemples de bases de données](https://msdn.microsoft.com/library/ef9d69a1-9461-43fe-94bb-7c836754bcb5).
 
 ## <a name="creating-the-service"></a>Création du service
  Pour créer un [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)], vous devez ajouter un projet Web, créer un [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)], puis créer le service à partir du modèle.
@@ -82,7 +82,7 @@ Cette procédure pas à pas montre comment créer un [!INCLUDE[ss_data_service](
 
    - Si une connexion de données à l'exemple de base de données Northwind est disponible dans la liste déroulante, choisissez-la.
 
-        -ou-
+        \- ou -
 
    - Choisissez le bouton **Nouvelle connexion** pour configurer une nouvelle connexion de données. Pour plus d’informations, consultez [ajouter de nouvelles connexions](../data-tools/add-new-connections.md).
 

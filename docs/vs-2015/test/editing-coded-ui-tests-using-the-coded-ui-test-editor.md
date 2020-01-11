@@ -12,19 +12,19 @@ ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: 42
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d408f21555deee835cd8f00926bb9c73fd3167f3
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: ab2651767e36abd8e85efff0dadea8071fc7db5b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302641"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851840"
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>Modification des tests codés de l'interface utilisateur à l'aide de l'éditeur de test codé de l'interface utilisateur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 L'éditeur de test codé de l'interface utilisateur vous permet de modifier facilement vos tests codés de l'interface utilisateur. À l'aide de l'éditeur de test codé de l'interface utilisateur, vous pouvez localiser, afficher et modifier les propriétés de vos méthodes de test et actions d'interface utilisateur. De plus, vous pouvez utiliser le mappage de contrôle d'interface utilisateur pour afficher et modifier leurs contrôles correspondants.
 
- **Requirements**
+ **Spécifications**
 
 - Visual Studio Enterprise
 
@@ -33,7 +33,7 @@ L'éditeur de test codé de l'interface utilisateur vous permet de modifier faci
 
  ![Éditeur de test de l’interface utilisateur](../test/media/uitesteditor.png "UITestEditor")
 
-1. [Trouver](../ide/finding-and-replacing-text.md) vous permet de localiser des actions et contrôles d'interface utilisateur.
+1. [Trouver](../ide/finding-and-replacing-text.md) vous permet de localiser des actions et des contrôles d’interface utilisateur.
 
 2. [Supprimer](#CodedUITestEditor_DeleteUIActions) supprime les actions d'interface utilisateur inutiles.
 
@@ -51,7 +51,7 @@ L'éditeur de test codé de l'interface utilisateur vous permet de modifier faci
 
 9. [Localiser tout](#CodedUITestEditor_LocateDecendants) permet de vérifier la propriété des contrôles et les modifications importantes apportées aux contrôles de l'application.
 
-## <a name="how-do-i-do-this"></a>Comment faire ?
+## <a name="how-do-i-do-this"></a>Comment faire ?
  Dans [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], l'ouverture du fichier UIMap.uitest affilié à votre test codé de l'interface utilisateur dans votre projet de test codé de l'interface utilisateur affiche automatiquement le test codé de l'interface utilisateur dans l'éditeur de test codé de l'interface utilisateur. Les procédures suivantes décrivent comment vous pouvez localiser et modifier vos méthodes de test, les propriétés des actions d'interface utilisateur et les contrôles à l'aide de la barre d'outils et des menus contextuels de l'éditeur.
 
 ## <a name="open-a-coded-ui-test"></a>Ouvrir un test codé de l'interface utilisateur
@@ -65,9 +65,9 @@ L'éditeur de test codé de l'interface utilisateur vous permet de modifier faci
 > Quand vous sélectionnez une action d'interface utilisateur qui se trouve dans une méthode dans le volet **Actions d'interface utilisateur** , le contrôle correspondant est mis en surbrillance. Vous pouvez également modifier l'action d'interface utilisateur ou les propriétés des contrôles.
 
  *Je ne vois pas* l'éditeur de test codé de l'interface utilisateur.
-Vous utilisez peut-être une version de Visual Studio Enterprise antérieure à la version 2012. L'éditeur de test codé de l'interface utilisateur était également disponible dans Visual Studio 2010 Feature Pack 2 avec un abonnement MSDN. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Microsoft Visual Studio 2010 Feature Pack 2](https://go.microsoft.com/fwlink/?LinkID=204119).
+Vous utilisez peut-être une version de Visual Studio Enterprise antérieure à la version 2012. L'éditeur de test codé de l'interface utilisateur était également disponible dans Visual Studio 2010 Feature Pack 2 avec un abonnement MSDN. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Microsoft Visual Studio 2010 Feature Pack 2](https://msdn.microsoft.com/library/gg269474.aspx).
 
-## <a name="CodedUITestEditor_EditActionAndControlProperties"></a> Modifier les propriétés des actions d’interface utilisateur et les propriétés de leurs contrôles correspondants
+## <a name="CodedUITestEditor_EditActionAndControlProperties"></a> Modifier les propriétés des actions d'interface utilisateur et les propriétés de leurs contrôles correspondants
  À l'aide de l'éditeur de test codé de l'interface utilisateur, vous pouvez rapidement localiser et afficher toutes les actions d'interface utilisateur dans vos méthodes de test. Quand vous sélectionnez l'action d'interface utilisateur dans l'éditeur, le contrôle correspondant est automatiquement mis en surbrillance. De même, si vous sélectionnez un contrôle, les actions d'interface utilisateur associées sont mises en surbrillance. Quand vous sélectionnez un contrôle ou une action d'interface utilisateur, il est alors facile d'utiliser la fenêtre Propriétés pour modifier les propriétés qui lui correspondent.
 
  ![Propriétés de l’action d’interface utilisateur](../test/media/codeduiedituiaction.png "CodedUIEditUIAction") Modifier les propriétés d’une action d’interface utilisateur
@@ -84,20 +84,20 @@ Vous utilisez peut-être une version de Visual Studio Enterprise antérieure à 
 
  Après avoir effectué vos modifications, enregistrez-les dans le fichier UIMap.Designer en choisissant **Enregistrer** dans la barre d'outils [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
- *Que dois-je savoir de plus ?*
+ *Que dois-je savoir de plus ?*
  **Conseils**
 
 - ![Conseil](../test/media/tip.png "Conseil") Si la Fenêtre Propriétés n’est pas affichée, maintenez la **touche Alt** enfoncée et appuyez sur **entrée**, ou appuyez sur **F4**.
 
 - ![Conseil](../test/media/tip.png "Conseil") Pour annuler les modifications apportées aux propriétés, sélectionnez **Annuler** dans le menu **Edition** ou appuyez sur Ctrl + Z.
 
-- ![Conseil](../test/media/tip.png "Conseil") Vous pouvez utiliser le bouton **Rechercher** dans la barre d’outils de l’éditeur de test codé de l’interface utilisateur pour ouvrir l’outil Rechercher et remplacer dans Visual Studio. Vous pouvez ensuite utiliser le contrôle de recherche pour localiser une action d'interface utilisateur dans l'éditeur de test codé de l'interface utilisateur. Par exemple, vous pouvez essayer de trouver « Cliquez sur le bouton de connexion ». Cela peut être utile dans les tests de grande taille. Notez que vous ne pouvez pas utiliser la fonctionnalité de remplacement de l'outil Rechercher et remplacer dans l'éditeur de test codé de l'interface utilisateur. Pour plus d’informations, consultez la rubrique relative au contrôle de recherche dans [Finding and Replacing Text](../ide/finding-and-replacing-text.md).
+- ![Conseil](../test/media/tip.png "Conseil") Vous pouvez utiliser le bouton **Rechercher** dans la barre d’outils de l’éditeur de test codé de l’interface utilisateur pour ouvrir l’outil Rechercher et remplacer dans Visual Studio. Vous pouvez ensuite utiliser le contrôle de recherche pour localiser une action d'interface utilisateur dans l'éditeur de test codé de l'interface utilisateur. Par exemple, vous pouvez essayer de trouver « Cliquez sur le bouton de connexion ». Cela peut être utile dans les tests de grande taille. Notez que vous ne pouvez pas utiliser la fonctionnalité de remplacement de l'outil Rechercher et remplacer dans l'éditeur de test codé de l'interface utilisateur. Pour plus d’informations, consultez la rubrique relative au contrôle de recherche dans [Recherche et remplacement de texte](../ide/finding-and-replacing-text.md).
 
 - ![Conseil](../test/media/tip.png "Conseil") Parfois, il peut être difficile de visualiser l’emplacement des contrôles dans l’interface utilisateur de l’application testée. L'une des fonctionnalités de l'éditeur de test codé de l'interface utilisateur vous permet de sélectionner un contrôle répertorié dans le mappage de contrôle d'interface utilisateur et d'afficher son emplacement dans l'application testée. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Localisation d’un contrôle d’interface utilisateur dans l’application testée](#CodedUITestEditor_LocateUIControl) un peu plus loin dans cette rubrique.
 
 - ![Conseil](../test/media/tip.png "Conseil") Il peut s’avérer nécessaire de développer le contrôle conteneur qui contient le contrôle que vous souhaitez modifier. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Localisation d’un contrôle et de ses descendants](#CodedUITestEditor_LocateDecendants) un peu plus loin dans cette rubrique.
 
-## <a name="CodedUITestEditor_DeleteUIActions"></a> Supprimer les actions d’interface utilisateur inutiles
+## <a name="CodedUITestEditor_DeleteUIActions"></a> Supprimer les actions d'interface utilisateur inutiles
  Vous pouvez facilement supprimer les actions d'interface utilisateur inutiles dans votre test codé de l'interface utilisateur.
 
  ![Supprimer l’action d’interface utilisateur](../test/media/codeduideleteuiaction.png "CodedUIDeleteUIAction")
@@ -115,7 +115,7 @@ Vous utilisez peut-être une version de Visual Studio Enterprise antérieure à 
 
  Une fois que vous avez terminé de fractionner la méthode, enregistrez les modifications dans le fichier UIMap.Designer en choisissant **Enregistrer** dans la barre d'outils [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
- *Que dois-je savoir de plus ?*
+ *Que dois-je savoir de plus ?*
  **Problèmes importants**
 
 - ![Icône](../test/media/caution.gif "attention") **AVERTISSEMENT AVERTISSEMENT :** si vous fractionnez une méthode, vous devez modifier tout code qui appelle la méthode existante pour appeler également la nouvelle méthode que vous êtes sur le bouton de créer si vous souhaitez toujours inclure ces actions d’interface utilisateur. Quand vous fractionnez une méthode, une boîte de dialogue Microsoft Visual Studio s'affiche. Elle vous avertit que vous devez modifier tout code qui appelle la méthode existante de sorte à appeler également la nouvelle méthode que vous êtes sur le point de créer. Cliquez sur **Oui**.
@@ -126,7 +126,7 @@ Vous utilisez peut-être une version de Visual Studio Enterprise antérieure à 
 
 - ![Conseil](../test/media/tip.png "Conseil") Vous pouvez renommer la nouvelle méthode. Sélectionnez-la dans le volet Actions d'interface utilisateur et choisissez le bouton **Renommer** dans la barre d'outils de l'éditeur de test codé de l'interface utilisateur.
 
-   -ou-
+   \- ou -
 
    Ouvrez le menu contextuel de la nouvelle méthode de test et choisissez **Renommer**.
 
@@ -139,7 +139,7 @@ Vous utilisez peut-être une version de Visual Studio Enterprise antérieure à 
 
  Une fois que vous avez terminé de déplacer la méthode, enregistrez les modifications dans le fichier UIMap.Designer en choisissant **Enregistrer** dans la barre d'outils [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
- *Que dois-je savoir de plus ?*
+ *Que dois-je savoir de plus ?*
  **Problèmes importants**
 
 - ![Icône attention](../test/media/caution.gif "attention") **Avertissement :** une fois que vous avez déplacé une méthode, vous ne pouvez plus la modifier à l’aide de l’éditeur de test codé de l’interface utilisateur. Vous devez ajouter le code personnalisé et le gérer à l'aide de l'éditeur de code. Quand vous déplacez une méthode, une boîte de dialogue Microsoft Visual Studio s'affiche. Elle vous informe que la méthode sera déplacée du fichier UIMap.uitest vers le fichier UIMap.cs ou UIMap.vb et que vous ne pourrez plus la modifier à l'aide de l'éditeur de test codé de l'interface utilisateur. Cliquez sur **Oui**.
@@ -157,7 +157,7 @@ Vous utilisez peut-être une version de Visual Studio Enterprise antérieure à 
 
  Dans le volet **Mappage de contrôle d'interface utilisateur** , sélectionnez le contrôle à localiser dans l'application associée au test. Ensuite, ouvrez le menu contextuel du contrôle, puis choisissez **Localiser le contrôle IU**. Dans l'application testée, le contrôle est signalé par une bordure bleue.
 
- *Que dois-je savoir de plus ?*
+ *Que dois-je savoir de plus ?*
  **Problèmes importants**
 
 - ![Icône attention](../test/media/caution.gif "attention") **Avertissement :** avant de localiser un contrôle d’interface utilisateur, vérifiez que l’application associée au test est en cours d’exécution.
@@ -175,12 +175,12 @@ Vous utilisez peut-être une version de Visual Studio Enterprise antérieure à 
 
  Dans le volet **Mappage de contrôle d'interface utilisateur** , sélectionnez le contrôle conteneur à localiser et dont vous voulez afficher tous les descendants. Ensuite, ouvrez le menu contextuel du contrôle et choisissez **Localiser tout**. Le contrôle conteneur et tous ses contrôles descendants sont marqués dans l'éditeur de test codé de l'interface utilisateur avec une coche verte ou un « X » rouge. Ces marques vous permettent de savoir si les contrôles ont été correctement localisés dans l'application testée.
 
- *Que dois-je savoir de plus ?*
+ *Que dois-je savoir de plus ?*
  **Problèmes importants**
 
 - ![Icône attention](../test/media/caution.gif "attention") **Avertissement :** avant de localiser les contrôles d’interface utilisateur, vérifiez que l’application associée au test est en cours d’exécution.
 
-## <a name="CodedUITestEditor_InsertDelay"></a> Insertion d’un délai avant une action d’interface utilisateur
+## <a name="CodedUITestEditor_InsertDelay"></a> Insertion d'un délai avant une action d'interface utilisateur
  Parfois, vous pouvez avoir besoin que le test attende que certains événements se produisent, notamment qu'une fenêtre s'affiche, que la barre de progression disparaisse, etc. À l'aide de l'éditeur de test codé de l'interface utilisateur, vous pouvez définir cette attente en insérant un délai avant une action d'interface utilisateur. Vous pouvez indiquer le nombre de secondes du délai.
 
  ![Insérer un délai avant une action d’interface utilisateur](../test/media/codeduidelay.png "CodedUIDelay")
@@ -191,8 +191,8 @@ Vous utilisez peut-être une version de Visual Studio Enterprise antérieure à 
 
  Une fois que vous avez terminé d'insérer le délai, enregistrez les modifications dans le fichier UIMap.Designer en choisissant **Enregistrer** dans la barre d'outils [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .
 
- *Que dois-je savoir de plus ?*
- **Remarques**
+ *Que dois-je savoir de plus ?*
+ **Notes**
 
 - ![Prérequis](../test/media/prereq.png "PREREQ") Si vous devez vous assurer qu’un contrôle spécifique est disponible avant une action d’interface utilisateur, vous devez envisager d’ajouter du code personnalisé à votre méthode de test à l’aide de la méthode UITestControl. WaitForControlXXX () appropriée. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Suspension des tests codés de l’interface utilisateur en attendant des événements spécifiques pendant la lecture](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md).
 
@@ -202,16 +202,16 @@ Vous utilisez peut-être une version de Visual Studio Enterprise antérieure à 
 
 ## <a name="external-resources"></a>Ressources externes
 
-### <a name="guidance"></a>Conseils
- [Test de la livraison continue avec Visual Studio 2012 - Chapitre 2 : Tests unitaires : tester l’intérieur](https://go.microsoft.com/fwlink/?LinkID=255188)
+### <a name="guidance"></a>Aide
+ [Tester la livraison continue avec Visual Studio 2012 - Chapitre 2 : Tests unitaires : tester l’intérieur](https://msdn.microsoft.com/library/jj159340.aspx)
 
 ### <a name="faq"></a>Forum aux questions
- [FAQ concernant les tests codés de l’interface utilisateur - 1](https://go.microsoft.com/fwlink/?LinkID=230576)
+ [FAQ concernant les tests codés de l’interface utilisateur - 1](https://blogs.msdn.com/b/mathew_aniyan/archive/tags/faq/)
 
- [FAQ concernant les tests codés de l’interface utilisateur - 2](https://go.microsoft.com/fwlink/?LinkID=230578)
+ [FAQ concernant les tests codés de l’interface utilisateur - 2](https://social.msdn.microsoft.com/Forums/en-US/vsautotest/thread/3a74dd2c-cef8-4923-abbf-7a91f489e6c4)
 
 ### <a name="forum"></a>Forum
- [Tests d’automation de l’interface utilisateur de Visual Studio (inclut CodedUI)](https://go.microsoft.com/fwlink/?LinkID=224497)
+ [Tests de Visual Studio UI Automation (inclut CodedUI)](https://social.msdn.microsoft.com/Forums/en-US/vsautotest)
 
 ## <a name="see-also"></a>Voir aussi
  [Utiliser UI Automation pour tester votre code](../test/use-ui-automation-to-test-your-code.md) [création de tests codés](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) de l’interface utilisateur [création d’un test codé de l’interface utilisateur piloté par les données](../test/creating-a-data-driven-coded-ui-test.md) [génération d’un test codé de l’interface utilisateur à partir d’une](https://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497) [procédure pas à pas : création, édition et gestion d’un test codé de l’interface utilisateur](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)

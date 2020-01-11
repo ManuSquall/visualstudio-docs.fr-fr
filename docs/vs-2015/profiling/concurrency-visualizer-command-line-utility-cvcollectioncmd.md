@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 23c6f008050cc2695a5b86d2164093823726a7b2
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 9b08035deec65c8c42fe875d380d9cc3d15533a4
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300648"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850269"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Utilitaire en ligne de commande du visualiseur concurrentiel (CVCollectionCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "74300648"
 Vous pouvez utiliser l’utilitaire en ligne de commande Visualiseur concurrentiel (CVCollectionCmd.exe) pour recueillir des traces à partir de la ligne de commande de façon à les afficher dans le Visualiseur concurrentiel pour Visual Studio. Vous pouvez utiliser ces outils sur des ordinateurs sur lesquels Visual Studio n’est pas installé.  
   
 > [!NOTE]
-> À compter de Visual Studio 2013, le Visualiseur concurrentiel est une extension facultative (Auparavant, elle avait été incluse dans Visual Studio.) Vous pouvez télécharger les [outils de collecte du visualiseur concurrentiel pour Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=49103) à partir du centre de téléchargement.  
+> À compter de Visual Studio 2013, le Visualiseur concurrentiel est une extension facultative (Auparavant, elle avait été incluse dans Visual Studio.) Vous pouvez télécharger les [outils de collecte du visualiseur concurrentiel pour Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=49103) à partir du centre de téléchargement.  
   
 ## <a name="download-the-concurrency-visualizer-command-line-utility"></a>Télécharger l’utilitaire en ligne de commande Visualiseur concurrentiel  
  Pour télécharger et installer l’utilitaire en ligne de commande, accédez aux [outils de collecte du visualiseur concurrentiel pour Visual Studio 2015](https://www.microsoft.com/download/details.aspx?id=49103) , puis suivez les instructions. Par défaut, CVCollectionCmd.exe est installé dans %ProgramFiles%\Microsoft Concurrency Visualizer Collection Tools\ (%ProgramFiles(x86)%\Microsoft Concurrency Visualizer Collection Tools\ sur les ordinateurs x64).  
@@ -41,17 +41,17 @@ Vous pouvez utiliser l’utilitaire en ligne de commande Visualiseur concurrenti
   
  **CvCollectionCmd /?**  
   
-|Option|Description|Paramètres|Valeurs de retour|  
+|Option|Description|Parameters|Valeurs de retour|  
 |------------|-----------------|----------------|-------------------|  
-|Query|Retourne une valeur qui indique si la collecte peut démarrer.|Aucune|0 si la collecte peut démarrer.<br /><br /> 1 si la collecte est déjà en cours.<br /><br /> 2 si la collecte n’est pas en cours, mais qu’une ou plusieurs des sessions [ETW](https://msdn.microsoft.com/library/ac99a063-e2d2-40cc-b659-d23c2f783f92) nécessaires sont déjà activées.|  
-|Lancer|Exécute le processus spécifié sous le Visualiseur concurrentiel.|Chemin de l’exécutable.|0 si l’exécution a réussi.<br /><br /> 1 si l’exécution a échoué en raison de l’impossibilité de démarrer l’application cible.<br /><br /> 13 si l’exécution a échoué en raison des autorisations de CVCollectionCmd, insuffisantes pour écrire dans le répertoire de sortie spécifié.|  
-|Attach|Commence la collecte d’une trace à l’échelle du système ; sinon, établit une liaison avec un processus si vous en avez spécifié un.|None.|0 si l’attachement a abouti.<br /><br /> 1 si l’attachement a échoué en raison de la non validité et du caractère ambigu du processus spécifié.<br /><br /> 13 si l’attachement a échoué en raison des autorisations de CVCollectionCmd, insuffisantes pour écrire dans le répertoire de sortie spécifié.|  
-|Detach|Arrête la collecte.|None.|0 si le détachement a réussi.<br /><br /> 1 si le détachement a échoué, car la collecte n’est pas en cours.<br /><br /> 2 si le détachement a échoué pour cause d’impossibilité d’arrêter la collecte.|  
-|Analyser|Analyse la trace spécifiée.|Chemin du fichier CVTrace.|0 si l’analyse a abouti.<br /><br /> 1 si l’analyse n’a pas pu démarrer, car la trace spécifiée était à l’échelle du système, mais aucun processus cible n’a été spécifié.<br /><br /> 2 si l’analyse n’a pas pu démarrer, car la trace n’était pas à l’échelle du système et un processus a été spécifié.<br /><br /> 3 si l’analyse a échoué en raison de la non validité du processus spécifié.<br /><br /> 4 si l’analyse a échoué en raison de la non validité du fichier CVTrace spécifié.|  
-|LaunchArgs|Spécifie les arguments exécutables cibles. Cette option s’applique uniquement à la commande Launch.|Arguments en ligne de commande de l’application.|None.|  
-|Outdir|Spécifie le répertoire dans lequel enregistrer les fichiers de trace. S’applique aux commandes Launch et Attach.|Chemin d’un répertoire ou chemin relatif.|None.|  
-|Processus|Spécifie le processus auquel s’attacher en cas d’exécution de la commande Attach ou le processus d’une trace à analyser en cas d’exécution de la commande Analyze. S’applique aux commandes Attach et Analyze.|PID ou nom du processus.|None.|  
-|Config|Spécifie le chemin du fichier de configuration, si vous souhaitez appliquer des paramètres de collecte autres que les paramètres par défaut.   S’applique aux commandes Launch, Attach et Analyze.|Chemin du répertoire ou chemin relatif du fichier de configuration XML.|None.|  
+|Query|Retourne une valeur qui indique si la collecte peut démarrer.|Aucun|0 si la collecte peut démarrer.<br /><br /> 1 si la collecte est déjà en cours.<br /><br /> 2 si la collecte n’est pas en cours, mais qu’une ou plusieurs des sessions [ETW](https://msdn.microsoft.com/library/ac99a063-e2d2-40cc-b659-d23c2f783f92) nécessaires sont déjà activées.|  
+|Launch|Exécute le processus spécifié sous le Visualiseur concurrentiel.|Chemin de l’exécutable.|0 si l’exécution a réussi.<br /><br /> 1 si l’exécution a échoué en raison de l’impossibilité de démarrer l’application cible.<br /><br /> 13 si l’exécution a échoué en raison des autorisations de CVCollectionCmd, insuffisantes pour écrire dans le répertoire de sortie spécifié.|  
+|Attach|Commence la collecte d’une trace à l’échelle du système ; sinon, établit une liaison avec un processus si vous en avez spécifié un.|Aucun.|0 si l’attachement a abouti.<br /><br /> 1 si l’attachement a échoué en raison de la non validité et du caractère ambigu du processus spécifié.<br /><br /> 13 si l’attachement a échoué en raison des autorisations de CVCollectionCmd, insuffisantes pour écrire dans le répertoire de sortie spécifié.|  
+|Detach|Arrête la collecte.|Aucun.|0 si le détachement a réussi.<br /><br /> 1 si le détachement a échoué, car la collecte n’est pas en cours.<br /><br /> 2 si le détachement a échoué pour cause d’impossibilité d’arrêter la collecte.|  
+|Analyze|Analyse la trace spécifiée.|Chemin du fichier CVTrace.|0 si l’analyse a abouti.<br /><br /> 1 si l’analyse n’a pas pu démarrer, car la trace spécifiée était à l’échelle du système, mais aucun processus cible n’a été spécifié.<br /><br /> 2 si l’analyse n’a pas pu démarrer, car la trace n’était pas à l’échelle du système et un processus a été spécifié.<br /><br /> 3 si l’analyse a échoué en raison de la non validité du processus spécifié.<br /><br /> 4 si l’analyse a échoué en raison de la non validité du fichier CVTrace spécifié.|  
+|LaunchArgs|Spécifie les arguments exécutables cibles. Cette option s’applique uniquement à la commande Launch.|Arguments en ligne de commande de l’application.|Aucun.|  
+|Outdir|Spécifie le répertoire dans lequel enregistrer les fichiers de trace. S’applique aux commandes Launch et Attach.|Chemin d’un répertoire ou chemin relatif.|Aucun.|  
+|Processus|Spécifie le processus auquel s’attacher en cas d’exécution de la commande Attach ou le processus d’une trace à analyser en cas d’exécution de la commande Analyze. S’applique aux commandes Attach et Analyze.|PID ou nom du processus.|Aucun.|  
+|Config|Spécifie le chemin du fichier de configuration, si vous souhaitez appliquer des paramètres de collecte autres que les paramètres par défaut.   S’applique aux commandes Launch, Attach et Analyze.|Chemin du répertoire ou chemin relatif du fichier de configuration XML.|Aucun.|  
   
 ## <a name="customizing-configuration-settings"></a>Personnalisation des paramètres de configuration  
  Si vous utilisez CVCollectionCmd pour recueillir des traces et que vous voulez personnaliser les paramètres de collecte, utilisez un fichier de configuration pour les spécifier.  
@@ -64,19 +64,19 @@ Vous pouvez utiliser l’utilitaire en ligne de commande Visualiseur concurrenti
 ### <a name="configuration-file-tags"></a>Balises du fichier de configuration  
  Le fichier de configuration est basé sur la norme XML. Voici les balises et les valeurs valides :  
   
-|Tag|Description|Valeurs|  
+|Balise|Description|Valeurs|  
 |---------|-----------------|------------|  
 |Config|Délimite le fichier de configuration dans son ensemble.|Doit contenir les éléments suivants :<br /><br /> -   MinorVersion<br />-   MajorVersion|  
 |MajorVersion|Spécifie la version majeure du fichier de configuration.|Doit avoir la valeur 1 pour les projets [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] . Si la valeur est différente de 1, l’utilitaire ne fonctionne pas.|  
 |MinorVersion|Spécifie la version mineure du fichier de configuration.|Doit avoir la valeur 0 pour les projets [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] . Si la valeur est différente de 0, l’utilitaire ne fonctionne pas.|  
 |IncludeEnvSymbolPath|Définit une valeur qui détermine si le chemin du symbole d’environnement (_NT_SYMBOL_PATH) est utilisé.|-   True<br />-   False|  
 |DeleteEtlsAfterAnalysis|Définit une valeur qui détermine si les fichiers ETL sont supprimés une fois l’analyse terminée.|-   True<br />-   False|  
-|SymbolPath|Spécifie le chemin du serveur de symboles. Pour plus d’informations, consultez [Utiliser le serveur de symboles Microsoft pour obtenir des fichiers de symboles de débogage](https://go.microsoft.com/fwlink/?LinkID=149389).|Nom de répertoire ou URL.|  
-|Markers|Contient la liste des fournisseurs de marqueurs.|Peut contenir zéro, un ou plusieurs éléments MarkerProvider.|  
+|SymbolPath|Spécifie le chemin du serveur de symboles. Pour plus d’informations, consultez [Utiliser le serveur de symboles Microsoft pour obtenir des fichiers de symboles de débogage](https://support.microsoft.com/kb/311503).|Nom de répertoire ou URL.|  
+|Marqueurs|Contient la liste des fournisseurs de marqueurs.|Peut contenir zéro, un ou plusieurs éléments MarkerProvider.|  
 |MarkerProvider|Spécifie un fournisseur de marqueurs unique.|Doit contenir les éléments suivants :<br /><br /> -   Level<br />-   GUID<br />-   Name<br /><br /> Peut contenir les éléments suivants :<br /><br /> -   Categories<br />-   IsEnabled|  
-|Level|Définit le niveau d’importance d’un MarkerProvider.|-   Low<br />-   Normal<br />-   High<br />-   Critical<br />-   Everything|  
-|Guid|Identificateur global unique du fournisseur de marqueurs ETW.|GUID.|  
-|Nom|Spécifie la description du fournisseur de marqueurs.|une chaîne.|  
+|Niveau|Définit le niveau d’importance d’un MarkerProvider.|-   Low<br />-   Normal<br />-   High<br />-   Critical<br />-   Everything|  
+|GUID|Identificateur global unique du fournisseur de marqueurs ETW.|GUID.|  
+|Name|Spécifie la description du fournisseur de marqueurs.|Chaîne.|  
 |catégories ;|Spécifie les catégories recueillies pour le fournisseur de marqueurs.|Chaîne de nombres ou de plages de nombres délimitée par des virgules.|  
 |IsEnabled|Définit une valeur qui détermine si le fournisseur de marqueurs est activé pour la collecte.|-   True<br />-   False|  
 |FilterConfig|Spécifie la liste d’options de configuration des événements ETW filtrés à partir de la collecte.|Peut contenir les éléments suivants :<br /><br /> -   CollectClrEvents<br />-   ClrCollectionOptions<br />-   CollectSampleEvents<br />-   CollectGpuEvents<br />-   CollectFileIO|  

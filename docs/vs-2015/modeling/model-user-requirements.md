@@ -13,12 +13,12 @@ caps.latest.revision: 30
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f27fede436ea6cabe0aab6480cd4841299c42293
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 3d70a7c8b7dbf6015e992cfabb5204f3b307238a
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302802"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844916"
 ---
 # <a name="model-user-requirements"></a>Modéliser les besoins des utilisateurs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -138,12 +138,12 @@ Visual Studio vous aide à comprendre, discuter et communiquer les besoins de vo
 |Éléments d’un diagramme de classes conceptuelles|[Informations de référence sur les diagrammes de classes UML](../modeling/uml-class-diagrams-reference.md)|
 |Comment développer du code à partir de classes conceptuelles|[Modéliser l’architecture de votre application](../modeling/model-your-app-s-architecture.md)|
 
- Dans un diagramme de classes conceptuelles, il est généralement inutile de placer des flèches sur les associations pour représenter la navigabilité. En effet, le diagramme ne représente pas une implémentation. Les associations représentent des relations entre des objets du monde réel. L’Extension [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] suivante applique par défaut des flèches non directionnelles : [Exemple : fonctionnalités de modélisation de domaine UML](https://go.microsoft.com/fwlink/?LinkId=213849).
+ Dans un diagramme de classes conceptuelles, il est généralement inutile de placer des flèches sur les associations pour représenter la navigabilité. En effet, le diagramme ne représente pas une implémentation. Les associations représentent des relations entre des objets du monde réel. L’Extension [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] suivante applique par défaut des flèches non directionnelles : [Exemple : fonctionnalités de modélisation de domaine UML](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
 
 ## <a name="BusinessRules"></a> Showing Business Rules
  Une règle métier est un impératif qui n’est associé à aucun cas d’usage particulier et doit être respecté à l’échelle du système.
 
- De nombreuses règles métier sont des contraintes sur les relations entre les classes conceptuelles. Vous pouvez écrire ces *règles métier statiques* en tant que commentaires associés aux classes pertinentes sur un diagramme de classes conceptuelles. Exemple :
+ De nombreuses règles métier sont des contraintes sur les relations entre les classes conceptuelles. Vous pouvez écrire ces *règles métier statiques* en tant que commentaires associés aux classes pertinentes sur un diagramme de classes conceptuelles. Par exemple :
 
  ![Règle dans le commentaire joint à la classe Order.](../modeling/media/uml-reqmcd2.png "UML_ReqmCD2")
 
@@ -188,11 +188,11 @@ Visual Studio vous aide à comprendre, discuter et communiquer les besoins de vo
 ## <a name="Workflow"></a>Présentation du workflow de travail entre les utilisateurs et votre système
  Vous pouvez utiliser un diagramme d’activités pour montrer le flux de travail entre différents cas d’usage. Il est souvent utile de commencer un modèle d’impératifs en dessinant un diagramme d’activités qui montre les principales tâches effectuées par les utilisateurs, à la fois dans et en dehors du système.
 
- Exemple :
+ Par exemple :
 
  ![Activité avec trois actions et une boucle.](../modeling/media/uc-reqmwfact.png "UC_ReqmWFAct")
 
- Vous pouvez dessiner des diagrammes de cas d’usage et des diagrammes d’activités pour montrer différentes vues des mêmes informations.  Le diagramme de cas d’usage convient mieux à l’affichage de l’imbrication de petites actions dans une activité plus grande, mais il ne montre pas le flux de travail. Exemple :
+ Vous pouvez dessiner des diagrammes de cas d’usage et des diagrammes d’activités pour montrer différentes vues des mêmes informations.  Le diagramme de cas d’usage convient mieux à l’affichage de l’imbrication de petites actions dans une activité plus grande, mais il ne montre pas le flux de travail. Par exemple :
 
  ![Cas d’usage pour les actions précédentes](../modeling/media/uml-reqmwfuc.png "UML_ReqmWFUC")
 
@@ -209,7 +209,7 @@ Visual Studio vous aide à comprendre, discuter et communiquer les besoins de vo
 ## <a name="Sequences"></a>Montrer les interactions entre les utilisateurs et votre système
  Vous pouvez utiliser un diagramme de séquence pour montrer l’échange de messages entre votre système et des acteurs externes ou entre différentes parties de votre système. Vous obtenez ainsi une vue des étapes dans un cas d’usage qui montre très clairement la séquence d’interactions. Les diagrammes de séquence sont particulièrement utiles quand plusieurs parties interagissent dans un cas d’usage ou quand votre système a une API.
 
- Exemple :
+ Par exemple :
 
  ![Diagramme de séquence avec le système et les acteurs.](../modeling/media/uml-reqmseq.png "UML_ReqmSeq")
 
@@ -239,4 +239,4 @@ Visual Studio vous aide à comprendre, discuter et communiquer les besoins de vo
   En examinant les relations entre les vues fournies par différents diagrammes, vous pouvez rapidement comprendre les principaux concepts avec lesquels vos utilisateurs travaillent et les aider à comprendre ce qu’ils ont besoin de la part du système. Vous identifierez aussi plus précisément les impératifs concernant lesquels les parties prenantes ont des doutes. Vous pouvez prévoir de développer ces fonctionnalités, au moins sous une forme simplifiée, à un stade précoce du projet, pour permettre aux utilisateurs d’expérimenter avec elles.
 
 ## <a name="see-also"></a>Voir aussi
- [Modifier des modèles et des diagrammes UML](../modeling/edit-uml-models-and-diagrams.md) [Développer des tests à partir d’un modèle](../modeling/develop-tests-from-a-model.md) [Utiliser des modèles dans votre processus de développement](../modeling/use-models-in-your-development-process.md) [Modéliser l’architecture de votre application](../modeling/model-your-app-s-architecture.md) [Exemple d'extension VS : Fonctionnalités de modélisation de domaine UML](https://go.microsoft.com/fwlink/?LinkId=213849) [ Exemple d'extension VS : Coloriser les éléments UML par stéréotype](https://go.microsoft.com/fwlink/?LinkID=213841) [Exemple d’extension VS : associer des éléments UML à des diagrammes, des fichiers et d’autres éléments exemple d’extension](https://go.microsoft.com/fwlink/?LinkID=213813) [Exemple d’extension VS : Aligner des formes dans un diagramme UML](https://go.microsoft.com/fwlink/?LinkID=213809) [ Vidéo : Modélisation du domaine professionnel](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain)
+ [Modifier des modèles et des diagrammes UML](../modeling/edit-uml-models-and-diagrams.md) [Développer des tests à partir d’un modèle](../modeling/develop-tests-from-a-model.md) [Utiliser des modèles dans votre processus de développement](../modeling/use-models-in-your-development-process.md) [Modéliser l’architecture de votre application](../modeling/model-your-app-s-architecture.md) [Exemple d'extension VS : Fonctionnalités de modélisation de domaine UML](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) [ Exemple d'extension VS : Coloriser les éléments UML par stéréotype](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) [Exemple d’extension VS : associer des éléments UML à des diagrammes, des fichiers et d’autres éléments exemple d’extension](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) [Exemple d’extension VS : Aligner des formes dans un diagramme UML](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) [ Vidéo : Modélisation du domaine professionnel](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain)

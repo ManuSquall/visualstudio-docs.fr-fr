@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: a0df5b9c-0932-4e54-86f0-28530ad9d684
 caps.latest.revision: 22
 manager: jillfra
-ms.openlocfilehash: ceb78d3310f37a58850199b11fb2b2fed86f6799
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: fba7f1e0801b6f977d47b13af025538f5d2fe031
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299323"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850986"
 ---
 # <a name="creating-your-own-start-page"></a>Création de votre propre page de démarrage
 Vous pouvez créer une page de démarrage personnalisée en utilisant le modèle de projet Page de démarrage ou en créant une page de démarrage vierge.  
@@ -28,7 +28,7 @@ Vous pouvez créer une page de démarrage personnalisée en utilisant le modèle
   
 #### <a name="to-create-a-custom-start-page-by-using-the-start-page-project-template"></a>Pour créer une page de démarrage personnalisée à l’aide du modèle de projet Page de démarrage  
   
-1. Téléchargez et installez le [modèle de projet Page de démarrage](https://go.microsoft.com/fwlink/?LinkId=186204) à partir de la galerie Visual Studio.  
+1. Téléchargez et installez le [modèle de projet Page de démarrage](https://visualstudiogallery.msdn.microsoft.com/f655a5dc-1a2d-4eca-b774-76c352c03b87) à partir de la galerie Visual Studio.  
   
     > [!WARNING]
     > À l’heure actuelle, le modèle de projet Page de démarrage Visual Studio 2010 n’a pas encore été mis à jour. Pour plus d’informations sur la mise à niveau de ce modèle, consultez [Comment : mettre à niveau une page de démarrage personnalisée Visual Studio](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).  
@@ -85,7 +85,7 @@ Vous pouvez créer une page de démarrage personnalisée en utilisant le modèle
   
 #### <a name="to-test-a-custom-start-page"></a>Pour afficher une page de démarrage personnalisée  
   
-1. Appuyez sur F5.  
+1. Appuyez sur la touche F5.  
   
     L’instance expérimentale de Visual Studio s’ouvre avec la nouvelle page de démarrage installée, mais non sélectionnée.  
   

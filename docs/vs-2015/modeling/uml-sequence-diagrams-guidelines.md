@@ -23,12 +23,12 @@ caps.latest.revision: 55
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8c5906084fc7db96ddf304e8362bf7692dac62d5
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: cdd853307bdea28c48762a6a3f0416e698b577ff
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297148"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850122"
 ---
 # <a name="uml-sequence-diagrams-guidelines"></a>Diagrammes de séquence UML : instructions
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -144,7 +144,7 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de séquence* pour affich
 
   - Cliquez avec le bouton droit sur la vie, puis choisissez **créer une classe**.
 
-     -ou-
+     \- ou -
 
   - Sélectionnez la vie, appuyez sur **F4**, puis, dans la fenêtre **Propriétés** , définissez la propriété **type** sur un type existant ou spécifiez le nom d’un nouveau type. Cliquez avec le bouton droit sur l’étiquette du message, puis choisissez **créer une opération**.
 
@@ -262,7 +262,7 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de séquence* pour affich
 |**À cet effet**|**Utiliser ce format**|
 |--------------------------|-------------------------|
 |Instance anonyme d'un type.<br /><br /> À utiliser si vous n'avez qu'une seule ligne de vie de chaque type.|*typeName*|
-|Instance nommée d'un type.<br /><br /> À utiliser si vous souhaitez montrer une séquence qui implique plusieurs instances du même type.|*ObjectName*:*TypeName*|
+|Instance nommée d'un type.<br /><br /> À utiliser si vous souhaitez montrer une séquence qui implique plusieurs instances du même type.|*objectName*:*typeName*|
 
 ### <a name="creating-lifelines-from-types"></a>Création de lignes de vie à partir de types
  Vous pouvez créer des lignes de vie à partir de classes que vous avez déjà définies, par exemple sur un diagramme de classes.
@@ -443,4 +443,4 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de séquence* pour affich
 5. Pour ajouter de nouveaux messages à un fragment, utilisez les outils de message ou copiez et collez.
 
 ## <a name="see-also"></a>Voir aussi
- [Diagrammes de séquence UML : référence](../modeling/uml-sequence-diagrams-reference.md) [modifier les modèles UML et les diagrammes](../modeling/edit-uml-models-and-diagrams.md) [diagrammes de cas d’usage UML : référence](../modeling/uml-use-case-diagrams-reference.md) diagrammes de [classes UML : référence](../modeling/uml-class-diagrams-reference.md) [diagrammes de composants UML : référence](../modeling/uml-component-diagrams-reference.md) [diagrammes de composants UML](../modeling/uml-component-diagrams-reference.md) : référence [vidéo : esquisser des interactions à l’aide de diagrammes de séquence](https://go.microsoft.com/fwlink/?LinkId=201113)
+ [Diagrammes de séquence UML : référence](../modeling/uml-sequence-diagrams-reference.md) [modifier les modèles UML et les diagrammes](../modeling/edit-uml-models-and-diagrams.md) [diagrammes de cas d’usage UML : référence](../modeling/uml-use-case-diagrams-reference.md) diagrammes de [classes UML : référence](../modeling/uml-class-diagrams-reference.md) [diagrammes de composants UML : référence](../modeling/uml-component-diagrams-reference.md) [diagrammes de composants UML](../modeling/uml-component-diagrams-reference.md) : référence [vidéo : esquisser des interactions à l’aide de diagrammes de séquence](https://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-2-Organizing-Features-Into-Use-Cases)

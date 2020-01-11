@@ -9,12 +9,12 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ebe3813ad01566e2994b0a16b4a3fdc735de8c8c
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 4d4d703dbe28776cd93c7a438fc457d9f50ac4f7
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295706"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851126"
 ---
 # <a name="step-6-name-your-button-controls"></a>Étape 6 : affecter un nom à vos contrôles bouton
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Votre formulaire ne contient qu’un seul PictureBox. Lorsque vous l’avez ajou
 
  Il existe quatre boutons dans votre formulaire, et l’IDE les a nommés **button1**, **button2**, **button3**et **button4**. Leurs noms actuels ne vous permettent pas de savoir s’il s’agit du bouton **Fermer** ou du bouton **Afficher une image** . C’est pourquoi il est utile de donner à vos contrôles bouton des noms plus informatifs.
 
- ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo") Pour obtenir une version vidéo de cette rubrique, consultez [didacticiel 1 : créer une visionneuse d’images dans Visual Basic vidéo 3](https://go.microsoft.com/fwlink/?LinkId=205213) ou [didacticiel 1 : créer une visionneuse d' C# images vidéo 3](https://go.microsoft.com/fwlink/?LinkId=205202). Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d’interface utilisateur. Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio.
+ ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo") Pour obtenir une version vidéo de cette rubrique, consultez [didacticiel 1 : créer une visionneuse d’images dans Visual Basic vidéo 3](https://msdn.microsoft.com/vbasic/gg315354.aspx) ou [didacticiel 1 : créer une visionneuse d' C# images vidéo 3](https://msdn.microsoft.com/vcsharp/gg278411.aspx). Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d’interface utilisateur. Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio.
 
 ### <a name="to-name-your-button-controls"></a>Pour nommer vos contrôles bouton
 
@@ -35,7 +35,7 @@ Votre formulaire ne contient qu’un seul PictureBox. Lorsque vous l’avez ajou
      ![Fenêtre Propriétés avec le nom closeButton](../ide/media/express-setnameproperty.png "Express_SetNameProperty") Fenêtre Propriétés avec le nom closeButton
 
     > [!NOTE]
-    > Si vous essayez de modifier le nom de votre bouton en **closeButton**(autrement dit avec un espace entre les mots close et Button), l’IDE affiche un message d’erreur : « Valeur de propriété non valide ». Les espaces (et quelques autres caractères) ne sont pas autorisés dans les noms de contrôle.
+    > Si vous essayez de modifier le nom de votre bouton en **closeButton** (autrement dit avec un espace entre les mots close et Button), l'IDE affiche un message d'erreur : « Valeur de propriété non valide ». Les espaces (et quelques autres caractères) ne sont pas autorisés dans les noms de contrôle.
 
 2. Renommez les trois autres boutons en **backgroundButton**, **clearButton**et **showButton**. Vous pouvez vérifier les noms en sélectionnant la liste déroulante du sélecteur de contrôles dans la fenêtre **Propriétés** . Les nouveaux noms de boutons apparaissent.
 
@@ -77,4 +77,4 @@ Votre formulaire ne contient qu’un seul PictureBox. Lorsque vous l’avez ajou
 
 - Pour passer à l’étape suivante du didacticiel, consultez [Étape 7 : ajouter des composants Dialog à votre formulaire](../ide/step-7-add-dialog-components-to-your-form.md).
 
-- Pour revenir à l’étape précédente du didacticiel, consultez [Step 5: Add Controls to Your Form](../ide/step-5-add-controls-to-your-form.md).
+- Pour revenir à l’étape précédente du didacticiel, consultez [Étape 5 : ajouter des contrôles à votre formulaire](../ide/step-5-add-controls-to-your-form.md).

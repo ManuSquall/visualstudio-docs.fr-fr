@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e17e29e36be5636662e6105a05446a9cbe0aa724
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 791e2e077ebd2ed3e97aecd4c7c6e52316b4fe3b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301180"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845285"
 ---
 # <a name="customizing-copy-behavior"></a>Personnalisation du comportement de la commande copier
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,13 +46,13 @@ Dans un langage spécifique à un domaine (DSL, Domain-Specific Language) créé
  **Activez ou désactivez copier, couper et coller.**
 Dans l’Explorateur DSL, définissez la propriété **activer la copie de collage** du nœud **éditeur** .
 
- **Copier les liens vers la même cible.** Par exemple, pour qu’une zone de commentaire copiée soit liée au même élément subject.
+ **Copier les liens vers la même cible.** Par exemple, pour qu'une zone de commentaires copiée soit liée au même élément de sujet.
 Affectez à la propriété **propager la copie** du rôle la valeur **propager la copie au lien uniquement**. Pour plus d’informations, consultez Personnalisation du comportement de la [copie des liens](#customizeLinks).
 
  Copier des éléments liés. Par exemple, quand vous copiez un nouvel élément, des copies de toute zone de commentaires liée sont également créées.
 Définissez la propriété **propager la copie** du rôle sur **propager la copie au lien et à l’acteur de rôle opposé**. Pour plus d’informations, consultez Personnalisation du comportement de la [copie des liens](#customizeLinks).
 
- **Dupliquez rapidement les éléments en les copiant et collant.** Normalement, l’élément que vous venez de copier est toujours sélectionné et vous ne pouvez pas coller le même type d’élément sur celui-ci.
+ **Dupliquez rapidement les éléments en les copiant et collant.** Normalement, l'élément que vous venez de copier est encore sélectionné et vous ne pouvez pas y coller le même type d'élément.
 Ajoutez une directive de fusion d'élément à la classe de domaine et configurez-la pour transférer les fusions vers la classe parente. L'effet sera le même sur les opérations de déplacement. Pour plus d’informations, consultez Personnalisation de la [création et du déplacement d’éléments](../modeling/customizing-element-creation-and-movement.md).
 
  \- ou -
@@ -77,7 +77,7 @@ partial class MyDslClipboardCommandSet
 
 ```
 
- **Créer des liens supplémentaires lorsque l’utilisateur colle sur une cible sélectionnée.** Par exemple, lorsqu’une zone de commentaire est collée sur un élément, un lien est créé entre eux.
+ **Créer des liens supplémentaires lorsque l’utilisateur colle sur une cible sélectionnée.** Par exemple, quand une zone de commentaires est collée sur un élément, un lien est créé entre eux.
 Ajoutez une directive de fusion d'élément à la classe de domaine cible et configurez-la pour traiter la fusion en ajoutant des liens. L'effet sera le même sur les opérations de déplacement. Pour plus d’informations, consultez Personnalisation de la [création et du déplacement d’éléments](../modeling/customizing-element-creation-and-movement.md).
 
  \- ou -
@@ -91,7 +91,7 @@ Remplacez *MyDsl*`ClipboardCommandSet.ProcessOnMenuCopyCommand()` dans le projet
 Remplacez *MyDsl*`ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` dans le projet DslPackage.
 
  **Conserver la disposition des formes à l’aide de la copie et du collage.**
-Quand l'utilisateur copie plusieurs formes, vous pouvez conserver leurs positions relatives quand elles sont collées. Cette technique est illustrée dans l’exemple de l’exemple de [diagrammes de circuit](https://go.microsoft.com/fwlink/?LinkId=213879).
+Quand l'utilisateur copie plusieurs formes, vous pouvez conserver leurs positions relatives quand elles sont collées. Cette technique est illustrée dans l’exemple de l’exemple de [diagrammes de circuit](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
 
  Pour obtenir cet effet, ajoutez les formes et les connecteurs à l'ElementGroupPrototype copié. La méthode la plus simple à substituer est ElementOperations.CreateElementGroupPrototype(). Pour cela, ajoutez le code suivant au projet DSL :
 
@@ -148,7 +148,7 @@ partial class MyDslDiagram // EDIT NAME
 ```
 
  **Coller des formes à un emplacement choisi, par exemple la position actuelle du curseur.**
-Quand l'utilisateur copie plusieurs formes, vous pouvez conserver leurs positions relatives quand elles sont collées. Cette technique est illustrée dans l’exemple de l’exemple de [diagrammes de circuit](https://go.microsoft.com/fwlink/?LinkId=213879).
+Quand l'utilisateur copie plusieurs formes, vous pouvez conserver leurs positions relatives quand elles sont collées. Cette technique est illustrée dans l’exemple de l’exemple de [diagrammes de circuit](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
 
  Pour obtenir cet effet, substituez `ClipboardCommandSet.ProcessOnMenuPasteCommand()` pour utiliser la version d'`ElementOperations.Merge()` spécifique à l'emplacement. Pour cela, ajoutez le code suivant au projet DslPackage :
 
@@ -564,4 +564,4 @@ namespace Company.MyDsl
 ```
 
 ## <a name="see-also"></a>Voir aussi
- [Personnalisation de la création et du déplacement des éléments](../modeling/customizing-element-creation-and-movement.md) [Comment : ajouter un gestionnaire de glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md) [Personnalisation du comportement de suppression](../modeling/customizing-deletion-behavior.md) [exemple : exemples de diagrammes de circuit VMSDK](https://go.microsoft.com/fwlink/?LinkId=213879)
+ [Personnalisation de la création et du déplacement des éléments](../modeling/customizing-element-creation-and-movement.md) [Comment : ajouter un gestionnaire de glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md) [Personnalisation du comportement de suppression](../modeling/customizing-deletion-behavior.md) [exemple : exemples de diagrammes de circuit VMSDK](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)

@@ -11,12 +11,12 @@ caps.latest.revision: 33
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ac299f18e544ef4f3215707abbdc3d9e8d266de6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 0a038150519ea7a40a52fb1be16ed93045c09eed
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299292"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851517"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>Définir un élément de boîte à outils de modélisation personnalisé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -139,7 +139,7 @@ Pour faciliter la création d'un élément ou d'un groupe d'éléments d'après 
 > Si vous commencez à utiliser un fichier .tbxinfo après avoir utilisé des fichiers de diagrammes seuls, vous constaterez peut-être que la boîte à outils contient à la fois les anciennes et les nouvelles versions d'un élément de boîte à outils. Cela peut également se produire si le nom du fichier de diagramme a été tapé incorrectement dans le fichier .tbxinfo. Si cela se produit, dans le menu contextuel de la boîte à outils, choisissez **Réinitialiser la boîte à outils**. Les éléments de boîte à outils personnalisés disparaîtront. Redémarrez Visual Studio et les éléments personnalisés corrects apparaîtront.
 
 ## <a name="Extension"></a>Comment distribuer des éléments de boîte à outils dans une extension Visual Studio
- Vous pouvez distribuer des éléments de boîte à outils à d’autres [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] utilisateurs en les empaquetant dans une extension Visual Studio (VSIX). Vous pouvez empaqueter des commandes, des profils et d'autres extensions dans le même fichier VSIX. Pour plus d’informations, consultez [déploiement d’extensions Visual Studio](https://go.microsoft.com/fwlink/?LinkId=160780).
+ Vous pouvez distribuer des éléments de boîte à outils à d’autres [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] utilisateurs en les empaquetant dans une extension Visual Studio (VSIX). Vous pouvez empaqueter des commandes, des profils et d'autres extensions dans le même fichier VSIX. Pour plus d’informations, consultez [déploiement d’extensions Visual Studio](https://msdn.microsoft.com/library/dd393694(VS.100).aspx).
 
  L'approche habituelle pour créer une extension Visual Studio consiste à utiliser le modèle de projet VSIX. Pour ce faire, vous devez avoir installé [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)].
 
@@ -155,7 +155,7 @@ Pour faciliter la création d'un élément ou d'un groupe d'éléments d'après 
 
      Définissez un nouveau projet d'extension Visual Studio.
 
-    1. Dans le menu **Fichier**, sélectionnez **Nouveau**, **Projet**.
+    1. Dans le menu **Fichier** , choisissez **Nouveau**, **Projet**.
 
     2. Dans la boîte de dialogue **nouveau projet** , sous **modèles installés**, **Choisissez C#visuel** , **extensibilité**, **projet VSIX**.
 
@@ -170,7 +170,7 @@ Pour faciliter la création d'un élément ou d'un groupe d'éléments d'après 
 
      **Copier dans le répertoire de sortie** = **toujours copier**
 
-      = le **contenu** de l' **action de génération**
+     **Action de génération** = **Contenu**
 
      **Include dans VSIX** = **true**
 
@@ -220,7 +220,7 @@ Pour faciliter la création d'un élément ou d'un groupe d'éléments d'après 
 
 3. Placez chaque assembly supplémentaire dans un dossier dont le nom est le code de culture de la langue. Par exemple, placez une version française de l’assembly dans un dossier nommé **fr**.
 
-4. Vous devez utiliser un code de culture neutre, en général deux lettres, et non une culture spécifique telle que `fr-CA`. Pour plus d’informations sur les codes de culture, consultez [CultureInfo. GetCultures, méthode](https://go.microsoft.com/fwlink/?LinkId=160782), qui fournit une liste complète des codes de culture.
+4. Vous devez utiliser un code de culture neutre, en général deux lettres, et non une culture spécifique telle que `fr-CA`. Pour plus d’informations sur les codes de culture, consultez [CultureInfo. GetCultures, méthode](https://msdn.microsoft.com/library/system.globalization.cultureinfo.getcultures(VS.100).aspx), qui fournit une liste complète des codes de culture.
 
 5. Générez l'Extension Visual Studio et distribuez-la.
 

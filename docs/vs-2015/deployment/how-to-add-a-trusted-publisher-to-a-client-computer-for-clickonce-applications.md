@@ -16,12 +16,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9b535737860b846aadecb6b73b4bd26659db37b1
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 296aec3b2b5cd307400b230375a7171f158fee60
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74289708"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847695"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>Comment : ajouter un éditeur approuvé à un ordinateur client pour les applications ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Avec le déploiement d’applications approuvées, vous pouvez configurer les or
   
 1. Obtenez un certificat numérique à partir d’une autorité de certification.  
   
-2. Exportez le certificat au format Base64 X.509 (.cer). Pour plus d’informations sur les formats de certificats, consultez [Exporter un certificat](https://go.microsoft.com/fwlink/?LinkId=164793).  
+2. Exportez le certificat au format Base64 X.509 (.cer). Pour plus d’informations sur les formats de certificats, consultez [Exporter un certificat](https://technet.microsoft.com/library/cc730988(WS.10).aspx).  
   
 3. À partir de l’invite de commandes sur les ordinateurs clients, exécutez la commande suivante :  
   
@@ -51,7 +51,7 @@ Avec le déploiement d’applications approuvées, vous pouvez configurer les or
   
 1. Obtenez un certificat numérique à partir d’une autorité de certification.  
   
-2. Exportez le certificat au format Base64 X.509 (.cer). Pour plus d’informations sur les formats de certificats, consultez [Exporter un certificat](https://go.microsoft.com/fwlink/?LinkId=164793).  
+2. Exportez le certificat au format Base64 X.509 (.cer). Pour plus d’informations sur les formats de certificats, consultez [Exporter un certificat](https://technet.microsoft.com/library/cc730988(WS.10).aspx).  
   
 3. À partir de l’invite de commandes sur les ordinateurs clients, exécutez la commande suivante :  
   
@@ -66,8 +66,8 @@ Avec le déploiement d’applications approuvées, vous pouvez configurer les or
  [ClickOnce et Authenticode](../deployment/clickonce-and-authenticode.md)   
  [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)   
  [Guide pratique pour activer les paramètres de sécurité ClickOnce](../deployment/how-to-enable-clickonce-security-settings.md)   
- [How to: Set a Security Zone for a ClickOnce Application](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
- [How to: Set Custom Permissions for a ClickOnce Application](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [Guide pratique pour définir une zone de sécurité pour une application ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
+ [Guide pratique pour définir des autorisations personnalisées pour une application ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
  [How to: Debug a ClickOnce Application with Restricted Permissions](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
  [Comment : ajouter un éditeur approuvé à un ordinateur client pour les applications ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)   
  [Comment : signer à nouveau les manifestes d’application et de déploiement](../deployment/how-to-re-sign-application-and-deployment-manifests.md)   

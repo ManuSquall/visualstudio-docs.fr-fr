@@ -1,5 +1,5 @@
 ---
-title: 'Meilleures pratiques de développement : Compléments COM, VSTO & VBA dans Office'
+title: 'Meilleures pratiques de développement : COM, VSTO, & les compléments VBA dans Office'
 ms.date: 07/25/2017
 ms.topic: conceptual
 dev_langs:
@@ -11,27 +11,27 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 35b39aef2865f0438e6165bd6bf2c5418e8fbcb0
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 24cc456058f4a87426261ce53fbecb2d919d6a2d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254643"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846362"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Meilleures pratiques de développement pour les compléments COM, VSTO et VBA dans Office
-  Si vous développez des compléments COM, VSTO ou VBA pour Office, suivez les meilleures pratiques de développement décrites dans cet article.   Cela permet de garantir les éléments suivants :
+  Si vous développez des compléments COM, VSTO ou VBA pour Office, suivez les meilleures pratiques de développement décrites dans cet article.   afin de garantir :
 
 - Compatibilité de vos compléments dans les différentes versions et déploiements d’Office.
 - Réduction de la complexité du déploiement des compléments pour les utilisateurs et les administrateurs informatiques.
 - Des échecs d’installation ou d’exécution involontaires de votre complément n’ont pas lieu.
 
->Remarque : L’utilisation du [pont Desktop](/windows/uwp/porting/desktop-to-uwp-root) pour préparer votre complément COM, VSTO ou VBA pour le Windows Store n’est pas prise en charge. Les compléments COM, VSTO et VBA ne peuvent pas être distribués dans le Windows Store ou dans l’Office Store.
+>Remarque : l’utilisation du [pont Desktop](/windows/uwp/porting/desktop-to-uwp-root) pour préparer votre complément COM, VSTO ou VBA pour le Windows Store n’est pas prise en charge. Les compléments COM, VSTO et VBA ne peuvent pas être distribués dans le Windows Store ou dans l’Office Store.
 
 ## <a name="do-not-check-for-office-during-installation"></a>Ne pas vérifier pour Office pendant l’installation
  Nous vous déconseillons de faire en sorte que votre complément détecte si Office est installé lors du processus d’installation du complément. Si Office n’est pas installé, vous pouvez installer le complément et l’utilisateur pourra y accéder après l’installation d’Office.
 
 ## <a name="use-embedded-interop-types-nopia"></a>Utiliser des types Interop incorporés (NoPIA)
-Si votre solution utilise .NET 4,0 ou une version ultérieure, utilisez les types Interop incorporés (NoPIA) au lieu de dépendre du package redistribuable des assemblys PIA (Primary Interop Assembly) d’Office. L’utilisation de l’incorporation de type réduit la taille d’installation de votre solution et garantit la compatibilité future. Office 2010 était la dernière version d’Office qui a fourni le package redistribuable PIA. Pour plus d’informations, consultez [Procédure pas à pas : Incorporation d’informations de type à partir](https://msdn.microsoft.com/library/ee317478.aspx) d’assemblys et d’équivalences de types Microsoft Office et de [types Interop incorporés](/windows/uwp/porting/desktop-to-uwp-root).
+Si votre solution utilise .NET 4,0 ou une version ultérieure, utilisez les types Interop incorporés (NoPIA) au lieu de dépendre du package redistribuable des assemblys PIA (Primary Interop Assembly) d’Office. L’utilisation de l’incorporation de type réduit la taille d’installation de votre solution et garantit la compatibilité future. Office 2010 était la dernière version d’Office qui a fourni le package redistribuable PIA. Pour plus d’informations, consultez [procédure pas à pas : incorporation d’informations de type à partir de Microsoft Office assemblys](https://msdn.microsoft.com/library/ee317478.aspx) et de l' [équivalence de type et types Interop incorporés](/windows/uwp/porting/desktop-to-uwp-root).
 
 Si votre solution utilise une version antérieure de .NET, nous vous recommandons de mettre à jour votre solution pour utiliser .NET 4,0 ou une version ultérieure. L’utilisation de .NET 4,0 ou version ultérieure réduit les prérequis au moment de l’exécution sur les versions plus récentes de Windows.
 
@@ -46,7 +46,7 @@ Lors de l’écriture de code VBA, utilisez des instructions Declare 64 bits et 
 ## <a name="support-restricted-environments"></a>Prendre en charge les environnements restreints
 Votre solution ne doit pas nécessiter d’élévation de compte d’utilisateur ni de privilèges d’administrateur. En outre, la solution ne doit pas dépendre de la définition ou de la modification :
 
-- Répertoire de travail actuel.
+- Le répertoire de travail actuel
 - Répertoires de chargement des DLL.
 - Variable de chemin d’accès.
 
@@ -61,7 +61,7 @@ Les clients demandent aux ISV de fournir des instructions de prise en charge pou
 
 Pour fournir des instructions de prise en charge pour les applications clientes Office (par exemple, Word ou Excel), vérifiez d’abord que vos compléments s’exécutent dans la version d’Office actuelle, puis validez pour fournir des mises à jour si votre complément s’arrête dans une version ultérieure. Vous n’avez pas besoin de tester vos compléments lorsque Microsoft publie une nouvelle version ou une mise à jour d’Office. Microsoft modifie rarement la plate-forme d’extensibilité COM, VSTO et VBA dans Office, et ces modifications sont bien documentées.
 
->Important : Microsoft gère la liste des compléments pris en charge pour les rapports de disponibilité et les informations de contact ISV. Pour obtenir votre complément dans la liste, consultez [https://aka.ms/readyforwindows](https://aka.ms/readyforwindows).
+>Important : Microsoft gère la liste des compléments pris en charge pour les rapports de disponibilité et les informations de contact ISV. Pour obtenir la liste des compléments, consultez [https://docs.microsoft.com/configmgr/desktop-analytics/ready-for-windows](https://docs.microsoft.com/configmgr/desktop-analytics/ready-for-windows).
 
 ## <a name="use-process-monitor-to-help-debug-installation-or-loading-issues"></a>Utiliser process Monitor pour déboguer les problèmes d’installation ou de chargement
 Si votre complément présente des problèmes de compatibilité lors de l’installation ou du chargement, ceux-ci peuvent être liés à des problèmes d’accès aux fichiers ou au registre. Utilisez [Process Monitor](/sysinternals/downloads/procmon) ou un outil de débogage similaire pour consigner et comparer le comportement par rapport à un environnement de travail pour aider à identifier le problème.

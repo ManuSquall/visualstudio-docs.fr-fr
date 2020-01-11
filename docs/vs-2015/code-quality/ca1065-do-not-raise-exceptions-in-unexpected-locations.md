@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 439c6b5fc30be2e76eb6c0b6a44b1ec5226633b1
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 2df740abf25344253627b614fdbd80dce86c7bfa
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295941"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847472"
 ---
 # <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065 : Ne pas lever d'exceptions dans des emplacements inattendus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,7 +89,7 @@ ms.locfileid: "74295941"
 
 - <xref:System.Object.Equals%2A?displayProperty=fullName>
 
-- [M:IEquatable.Equals](https://go.microsoft.com/fwlink/?LinkId=113472)
+- [M:IEquatable.Equals](https://msdn2.microsoft.com/library/ms131190(VS.80).aspx)
 
   Une méthode **Equals** doit retourner `true` ou `false` au lieu de lever une exception. Par exemple, si est passé deux types incompatibles, il doit simplement retourner `false` au lieu de lever une <xref:System.ArgumentException>.
 
@@ -98,7 +98,7 @@ ms.locfileid: "74295941"
 
 - <xref:System.Object.GetHashCode%2A>
 
-- [M :IEqualityComparer.GetHashCode (T)](https://go.microsoft.com/fwlink/?LinkId=113477)
+- [M:IEqualityComparer.GetHashCode(T)](https://msdn2.microsoft.com/library/system.collections.iequalitycomparer.gethashcode.aspx)
 
   **GetHashCode** doit toujours retourner une valeur. Dans le cas contraire, vous pouvez perdre des éléments dans la table de hachage.
 

@@ -9,14 +9,14 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: fb296346d54b0774bdd9a738581ee28fe99b1de0
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: 54239b49344a5e29e7f837d22840f997c4b9fbe2
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777471"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845073"
 ---
-# <a name="installation"></a>Installation
+# <a name="installation"></a>Installation de
 
 Visual Studio Tools pour IA peut être installé sur les systèmes d’exploitation Windows 64 bits.
 
@@ -24,7 +24,7 @@ Visual Studio Tools pour IA peut être installé sur les systèmes d’exploitat
 
 Cette extension fonctionne avec Visual Studio 2015 et Visual Studio 2017 Community Edition ou version ultérieure.
 
-Vous pouvez télécharger les outils sur [Visual Studio Marketplace](https://aka.ms/vstoolsforai) ou dans Visual Studio :
+Vous pouvez télécharger les outils sur [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.vstoolsai-vs2017) ou dans Visual Studio :
 
 1. Sélectionnez **Outils** > **Extensions et mises à jour**.
 
@@ -156,7 +156,7 @@ Rendez-vous [ici](https://caffe2.ai/docs/getting-started.html) pour une généra
 
 ### <a name="mxnet"></a>MXNet
 
-[Apache MXNet (en développement)](https://mxnet.incubator.apache.org/) est un framework deep learning conçu pour l’efficacité et la flexibilité. Il vous permet de **mélanger** une [programmation symbolique et impérative](http://mxnet.io/architecture/index.html#deep-learning-system-design-concepts) afin d’optimiser l’efficacité et la productivité.
+[Apache MXNet (en développement)](https://mxnet.incubator.apache.org/) est un framework deep learning conçu pour l’efficacité et la flexibilité. Elle vous permet de **mélanger** [des symboles et des programmations impératives](http://mxnet.io/architecture/index.html#deep-learning-system-design-concepts) pour optimiser l’efficacité et la productivité.
 
 Pour installer MXNet, exécutez la commande suivante dans un terminal :
 

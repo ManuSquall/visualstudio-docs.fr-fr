@@ -11,23 +11,23 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3dd76deb3b72d3b12d3b5892c2e5664273425c4c
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 32f249b971e8a37bc5b596203cde6bc7b0bcf6f1
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295836"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849737"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>Définir des contraintes de validation pour les modèles UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous pouvez définir des contraintes de validation qui vérifient si le modèle remplit une condition spécifiée. Par exemple, vous pouvez définir une contrainte pour vous assurer qu’un utilisateur ne crée pas de boucle de relations d’héritage. La contrainte, qui est appelée quand l’utilisateur essaie d’ouvrir ou d’enregistrer le modèle, peut également être appelée manuellement. Si la contrainte échoue, un message d’erreur que vous définissez est ajouté à la fenêtre d’erreur. Vous pouvez empaqueter ces contraintes dans une extension d’intégration Visual Studio ([VSIX](https://go.microsoft.com/fwlink/?LinkId=160780)) et la distribuer à d’autres utilisateurs de Visual Studio.
+Vous pouvez définir des contraintes de validation qui vérifient si le modèle remplit une condition spécifiée. Par exemple, vous pouvez définir une contrainte pour vous assurer qu’un utilisateur ne crée pas de boucle de relations d’héritage. La contrainte, qui est appelée quand l’utilisateur essaie d’ouvrir ou d’enregistrer le modèle, peut également être appelée manuellement. Si la contrainte échoue, un message d’erreur que vous définissez est ajouté à la fenêtre d’erreur. Vous pouvez empaqueter ces contraintes dans une extension d’intégration Visual Studio ([VSIX](https://msdn.microsoft.com/library/dd393694(VS.100).aspx)) et la distribuer à d’autres utilisateurs de Visual Studio.
 
  Vous pouvez également définir des contraintes qui valident le modèle par rapport à des ressources externes telles que des bases de données. Si vous souhaitez valider le code de programme par rapport à un diagramme de couche, consultez [Ajouter une validation d’architecture personnalisée aux diagrammes de couche](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).
 
  Pour connaître les versions de Visual Studio qui prennent en charge les modèles UML, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Configuration requise pour
  Consultez [Spécifications](../modeling/extend-uml-models-and-diagrams.md#Requirements).
 
  Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
@@ -42,7 +42,7 @@ Vous pouvez définir des contraintes de validation qui vérifient si le modèle 
 ## <a name="defining-a-validation-extension"></a>Définition d’une extension de validation
  Pour créer une extension de validation pour un concepteur UML, vous devez créer une classe qui définit les contraintes de validation et incorporer cette classe dans une Extension d’intégration Visual Studio (VSIX). Cette dernière joue le rôle de conteneur capable d’installer la contrainte. Deux autres méthodes permettent de définir une extension de validation :
 
-- **Créer une extension de validation dans sa propre extension VSIX à l’aide d’un modèle de projet.** Il s’agit de l’approche la plus rapide. Adoptez-la si vous ne souhaitez pas combiner vos contraintes de validation avec d’autres types d’extensions, telles que les commandes de menu, les éléments de boîte à outils personnalisés ou les gestionnaires de mouvements. Vous pouvez définir plusieurs contraintes dans une classe.
+- **Créer une extension de validation dans sa propre extension VSIX à l’aide d’un modèle de projet.** . Il s’agit de la méthode la plus rapide. Adoptez-la si vous ne souhaitez pas combiner vos contraintes de validation avec d’autres types d’extensions, telles que les commandes de menu, les éléments de boîte à outils personnalisés ou les gestionnaires de mouvements. Vous pouvez définir plusieurs contraintes dans une classe.
 
 - **Créer des projets VSIX et une classe de validation distincts.** Adoptez cette approche si vous souhaitez combiner plusieurs types d’extensions dans la même extension VSIX. Par exemple, si votre commande de menu prévoit que le modèle observe des contraintes spécifiques, vous pouvez l’incorporer à la même extension VSIX en tant que méthode de validation.
 
@@ -83,7 +83,7 @@ using Microsoft.VisualStudio.Uml.Classes;
 
 1. Créez un projet de bibliothèque de classes en l’ajoutant à une solution VSIX existante ou en créant une solution.
 
-    1. Dans le menu **Fichier**, sélectionnez **Nouveau**, **Projet**.
+    1. Dans le menu **Fichier** , choisissez **Nouveau**, **Projet**.
 
     2. Sous **Modèles installés**, développez **Visual C#** ou **Visual Basic**puis, dans la colonne du milieu, choisissez **Bibliothèque de classes**.
 
@@ -394,7 +394,7 @@ context.LogError(... , usecase);
 
    Exceptionnellement, une extension défaillante ne parvient pas à se charger et crée un rapport dans la fenêtre d’erreur, mais ne s’affiche pas dans le Gestionnaire d’extensions. Dans ce cas, vous pouvez supprimer l’extension en supprimant le fichier à l’emplacement *suivant, où* *% LocalAppData%* est généralement le nom de \AppData\Local : \Utilisateurs\\*nom d’utilisateur*:
 
-   *% LocalAppData%* **\Microsoft\VisualStudio\\[version] \Extensions**
+   *%LocalAppData%* **\Microsoft\VisualStudio\\[version]\Extensions**
 
 ## <a name="Example"></a> Exemple
  Cet exemple recherche des boucles dans la relation Dependency entre les éléments.

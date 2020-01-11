@@ -18,28 +18,28 @@ caps.latest.revision: 45
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b4bcd1f1f023c9e439fb870c9e31f07aa5be215d
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 8050e0245708d855d78dbba94e1bb56399343ecf
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299558"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850702"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Comment : définir un langage spécifique à un domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pour définir un langage spécifique à un domaine (DSL, Domain-Specific Language), vous devez créer une solution [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] à partir d'un modèle. Le composant principal de la solution est le diagramme de définition DSL, qui est stocké dans DslDefinition.dsl. La définition DSL définit les classes et les formes de la solution DSL. Après avoir modifié et ajouté à ces éléments, vous pouvez ajouter du code programme pour personnaliser la solution DSL plus en détail.
 
- Si vous débutez avec DSL, nous vous recommandons d’utiliser le **laboratoire d’outils DSL**, que vous trouverez dans ce site : [création et Modeling SDK](https://go.microsoft.com/fwlink/?LinkID=186128)
+ Si vous débutez avec DSL, nous vous recommandons d’utiliser le **laboratoire d’outils DSL**, que vous trouverez dans ce site : [création et Modeling SDK](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)
 
 ## <a name="templates"></a>Sélection d’une solution de modèle
  Pour définir un DSL, vous devez avoir installé les composants suivants :
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://go.microsoft.com/fwlink/?LinkId=185579)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://go.microsoft.com/fwlink/?LinkId=185580)|
-|Kit de développement logiciel (SDK) Visual Studio Visualization and Modeling|[http://go.microsoft.com/fwlink/?LinkID=186128](https://go.microsoft.com/fwlink/?LinkID=186128)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://www.visualstudio.com/)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://docs.microsoft.com/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts)|
+|Kit de développement logiciel (SDK) Visual Studio Visualization and Modeling|[http://go.microsoft.com/fwlink/?LinkID=186128](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)|
 
  Pour créer un langage spécifique domaine, vous devez créer une solution [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] à l'aide du modèle de projet Langage spécifique à un domaine.
 
@@ -82,7 +82,7 @@ Pour définir un langage spécifique à un domaine (DSL, Domain-Specific Languag
 
 4. Vous pouvez ajuster les paramètres sur les autres pages ou conserver les valeurs par défaut.
 
-5. Cliquez sur **Terminer**.
+5. Cliquez sur **Finish**.
 
     L'Assistant crée une solution qui contient deux ou trois projets et il génère du code à partir de la définition DSL.
 
@@ -192,7 +192,7 @@ Pour définir un langage spécifique à un domaine (DSL, Domain-Specific Languag
 
  Cliquez sur **Propriétés de domaine** dans la classe, appuyez sur la touche entrée, puis tapez le nom d’une propriété. Le type par défaut d'une propriété de domaine est String. Si vous souhaitez modifier le type, sélectionnez la propriété de domaine et définissez le **type** dans la fenêtre **Propriétés** . Si le type que vous souhaitez ne figure pas dans la liste déroulante, consultez [Ajout de types de propriété](#addTypes).
 
- **Définissez une propriété de nom d’élément.** Sélectionnez une propriété de domaine qui peut être utilisée pour identifier des éléments dans l’Explorateur de langage. Par exemple, dans la classe de domaine Morceau, vous pourriez sélectionner la propriété de domaine Titre. Dans la fenêtre **Propriétés** , définissez le **nom d’élément** sur `true`.
+ **Définissez une propriété de nom d’élément.** Sélectionnez une propriété de domaine qui peut servir à identifier des éléments dans l'explorateur de langage. Par exemple, dans la classe de domaine Morceau, vous pourriez sélectionner la propriété de domaine Titre. Dans la fenêtre **Propriétés** , définissez le **nom d’élément** sur `true`.
 
 ### <a name="create-derived-domain-classes"></a>Créer des classes de domaine dérivées
  Si vous souhaitez qu'une classe de domaine ait des variantes qui héritent de ses propriétés et relations, créez des classes qui en dérivent. Par exemple, Album peut avoir des classes dérivées WMA et MP3.
@@ -346,7 +346,7 @@ Pour définir un langage spécifique à un domaine (DSL, Domain-Specific Languag
 
  **Ajustez les multiplicités de chaque rôle**, si nécessaire. Si vous souhaitez que chaque Personne ait au plus un Responsable, affectez la valeur 0..1 à la multiplicité qui apparaît sous l'étiquette Responsable sur le diagramme.
 
- **Ajoutez des propriétés de domaine à la relation.** Dans la figure, la relation artiste-album a une propriété Role.
+ **Ajoutez des propriétés de domaine à la relation.** Sur la figure, la relation Artist-Album a une propriété de rôle.
 
  **Définissez la propriété autoriser les doublons de la relation,** si plusieurs liens de la même classe peuvent exister entre la même paire d’éléments de modèle. Par exemple, vous pourriez autoriser un Enseignant à enseigner plusieurs Sujets au même Étudiant.
 
@@ -398,7 +398,7 @@ Pour définir un langage spécifique à un domaine (DSL, Domain-Specific Languag
 
 5. **Créer des connexions** entre les formes. Cliquez sur l'outil de connecteur, cliquez sur une forme, puis sur une autre forme.
 
-6. **Vérifiez que vous ne pouvez pas créer de connexions entre des classes inappropriées.** Par exemple, si votre relation est entre des albums et des artistes, vérifiez que vous ne pouvez pas lier des artistes à des artistes.
+6. **Vérifiez que vous ne pouvez pas créer de connexions entre des classes inappropriées.** Par exemple, si votre relation est entre Albums et Artistes, vérifiez que vous ne pouvez pas lier Artistes à Artistes.
 
 7. **Vérifiez que les multiplicités sont correctes. Par exemple, vérifiez que vous ne pouvez pas connecter une personne à plusieurs responsables.**
 
@@ -417,7 +417,7 @@ Pour définir un langage spécifique à un domaine (DSL, Domain-Specific Languag
 
  Dans une définition DSL, le moyen le plus simple d'obtenir cet effet consiste à définir une classe de domaine pour le conteneur et une classe de domaine pour chaque liste. La classe de conteneur est mappée à la forme de compartiment.
 
- ![Mappage de forme](../modeling/media/music-mapcomp.png "Music_MapComp")
+ ![Carte de formes](../modeling/media/music-mapcomp.png "Music_MapComp")
 
  Pour plus d’informations, consultez [Propriétés des formes de compartiments](../modeling/properties-of-compartment-shapes.md).
 
@@ -608,8 +608,8 @@ Pour définir un langage spécifique à un domaine (DSL, Domain-Specific Languag
 
  Voir aussi [Comment : modifier l’espace de noms d’un langage spécifique à un domaine](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md).
 
-## <a name="trouble"></a>Dépannage
- Le tableau suivant mentionne certains des problèmes les plus courants qui peuvent être rencontrés lors de la conception d'une solution DSL, avec quelques suggestions de solution. D’autres conseils sont disponibles sur le [Forum trouverez outils de visualisation](https://go.microsoft.com/fwlink/?LinkId=186074).
+## <a name="trouble"></a> Dépannage
+ Le tableau suivant mentionne certains des problèmes les plus courants qui peuvent être rencontrés lors de la conception d'une solution DSL, avec quelques suggestions de solution. D’autres conseils sont disponibles sur le [Forum trouverez outils de visualisation](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=dslvsarchx).
 
 |Problem (Problème)|Suggestion|
 |-------------|----------------|

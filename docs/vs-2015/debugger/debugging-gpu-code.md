@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 28ea84e4de92ae2cd3bad8b6fea4f9036fd65014
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 5092a2d2a823db6b101ee73d9d5c5dddef5c4526
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298284"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75843987"
 ---
 # <a name="debugging-gpu-code"></a>Débogage du code GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Vous pouvez déboguer du code C++ qui s'exécute sur l'unité de traitement grap
 2. La commande **Exécuter le tile actuel au curseur** exécute votre application jusqu’à ce que tous les threads de la mosaïque active atteignent le curseur, puis s’interrompt.  
   
 ## <a name="debugging-windows"></a>Fenêtres de débogage  
- L'utilisation de certaines fenêtres de débogage vous permet d'examiner, de marquer et de geler des threads GPU. Pour plus d'informations, voir :  
+ L'utilisation de certaines fenêtres de débogage vous permet d'examiner, de marquer et de geler des threads GPU. Pour plus d'informations, consultez .  
   
 - [Utilisation de la fenêtre Piles parallèles](../debugger/using-the-parallel-stacks-window.md)  
   
@@ -80,9 +80,9 @@ Vous pouvez déboguer du code C++ qui s'exécute sur l'unité de traitement grap
  Cette erreur se produit si vous effectuez un débogage sur un ordinateur distant. Le débogueur ne peut pas déterminer avant l'exécution si les pilotes sont installés sur l'ordinateur distant. Les pilotes sont disponibles auprès du fabricant de la carte graphique.  
   
 ### <a name="error-timeout-detection-and-recovery-tdr-must-be-disabled-at-the-remote-site"></a>Erreur : la fonctionnalité TDR (Timeout Detection and Recovery) doit être désactivée sur le site distant.  
- Les calculs C++ AMP peuvent dépasser l'intervalle de temps par défaut qui est défini par le processus Windows TDR. Lorsque cela se produit, le calcul est annulé et les données sont perdues. Pour plus d’informations, consultez [Handling TDRs in C++ AMP](https://go.microsoft.com/fwlink/p/?LinkId=249154).  
+ Les calculs C++ AMP peuvent dépasser l'intervalle de temps par défaut qui est défini par le processus Windows TDR. Lorsque cela se produit, le calcul est annulé et les données sont perdues. Pour plus d’informations, consultez [Handling TDRs in C++ AMP](https://blogs.msdn.com/b/nativeconcurrency/archive/2012/03/07/handling-tdrs-in-c-amp.aspx).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Procédure pas à pas : débogage d’une C++ application amp](https://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)   
  [Paramètres de projet pour une configuration Debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
- [Start GPU Debugging in Visual Studio](https://go.microsoft.com/fwlink/p/?LinkId=255381)
+ [Start GPU Debugging in Visual Studio](https://blogs.msdn.com/b/nativeconcurrency/archive/2012/03/17/start-gpu-debugging-in-visual-studio-11.aspx)

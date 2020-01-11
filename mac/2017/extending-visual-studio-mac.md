@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: dc4538d04a9c683bf1d8e5443b8eb18c206e4721
-ms.sourcegitcommit: 370cc7fd2e11ede6d8215c8d81963a8307614550
+ms.openlocfilehash: 29c5bb9c45ae8d859316bd9c63eec10a6a425571
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74984972"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851956"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Extension de Visual Studio pour Mac
 
@@ -162,7 +162,7 @@ Pour plus d’informations sur l’étendue de ce qui peut faire l’objet de d�
 ## <a name="additional-information"></a>Informations supplémentaires
 
 > [!NOTE]
-> Nous travaillons actuellement à améliorer les scénarios d’extensibilité pour Visual Studio pour Mac. Si vous créez des extensions et que vous avez besoin d’aide ou d’informations supplémentaires, ou que vous avez des commentaires à partager, veuillez remplir le formulaire [Création d’extensions Visual Studio pour Mac](https://aka.ms/vsmac-extensions-survey).
+> Nous travaillons actuellement à améliorer les scénarios d’extensibilité pour Visual Studio pour Mac. Si vous créez des extensions et que vous avez besoin d’aide ou d’informations supplémentaires, ou que vous avez des commentaires à partager, veuillez remplir le formulaire [Création d’extensions Visual Studio pour Mac](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR3YufGX_azhFl7MkrQO9i9JUNVMyMklVVlAzQVdURDg2NjQxTFRBVTJURC4u).
 
 ## <a name="see-also"></a>Voir aussi
 

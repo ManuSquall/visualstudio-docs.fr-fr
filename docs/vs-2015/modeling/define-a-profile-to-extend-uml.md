@@ -16,12 +16,12 @@ caps.latest.revision: 44
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bdb6620f8d73bf7fae7b7dbb1b92af38e71345b6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: b680c2e27b871e654618b4c0ada0904744751282
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295666"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850480"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>Définir un profil pour étendre UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Vous pouvez définir un *profil UML* pour personnaliser les éléments de modèl
 
  Plusieurs profils sont installés avec les éditions prises en charge de Visual Studio. Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport). Pour plus d’informations sur ces profils et sur la façon d’appliquer des stéréotypes, consultez [personnaliser votre modèle avec des profils et des stéréotypes](../modeling/customize-your-model-with-profiles-and-stereotypes.md).
 
- Vous pouvez définir vos propres profils pour adapter et étendre UML à votre propre secteur d'activité ou architecture. Exemple :
+ Vous pouvez définir vos propres profils pour adapter et étendre UML à votre propre secteur d'activité ou architecture. Par exemple :
 
 - Si vous définissez fréquemment des sites web, vous pouvez définir votre propre profil qui fournit un stéréotype « Pageweb » qui peut être appliqué aux classes dans les diagrammes de classes. Vous pouvez ensuite utiliser des diagrammes de classes pour planifier un site web. Chaque classe « Pageweb » aurait des propriétés supplémentaires pour le contenu de la page, le style et ainsi de suite.
 
@@ -76,7 +76,7 @@ Vous pouvez définir un *profil UML* pour personnaliser les éléments de modèl
 6. Envoyez le fichier d'extension à d'autres utilisateurs de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour qu'ils l'installent sur leurs ordinateurs.
 
 ## <a name="AddProfile"></a>Comment ajouter un profil à une extension Visual Studio
- Pour installer un profil et pouvoir l'envoyer à d'autres utilisateurs, vous devez ajouter le profil à une Extension Visual Studio. Pour plus d’informations, consultez [déploiement d’extensions Visual Studio](https://go.microsoft.com/fwlink/?LinkId=160780).
+ Pour installer un profil et pouvoir l'envoyer à d'autres utilisateurs, vous devez ajouter le profil à une Extension Visual Studio. Pour plus d’informations, consultez [déploiement d’extensions Visual Studio](https://msdn.microsoft.com/library/dd393694(VS.100).aspx).
 
 #### <a name="to-define-a-profile-in-a-new-visual-studio-extension"></a>Pour définir un profil dans une nouvelle Extension Visual Studio
 
@@ -196,7 +196,7 @@ Vous pouvez définir un *profil UML* pour personnaliser les éléments de modèl
     > [!NOTE]
     > Si vous générez l'extension à l'aide d'un projet d'Extension Visual Studio, utilisez l'Explorateur de solutions pour ajouter un nouveau dossier au projet.
 
-3. Modifiez le nom du nouveau répertoire avec le code court ISO de la culture localisée, par exemple `bg` pour le bulgare ou `fr` pour le français. Vous devez utiliser un code de culture neutre, en général deux lettres, et non une culture spécifique telle que `fr-CA`. Pour plus d’informations sur les codes de culture, consultez [CultureInfo. GetCultures, méthode](https://go.microsoft.com/fwlink/?LinkId=160782), qui fournit une liste complète des codes de culture.
+3. Modifiez le nom du nouveau répertoire avec le code court ISO de la culture localisée, par exemple `bg` pour le bulgare ou `fr` pour le français. Vous devez utiliser un code de culture neutre, en général deux lettres, et non une culture spécifique telle que `fr-CA`. Pour plus d’informations sur les codes de culture, consultez [CultureInfo. GetCultures, méthode](https://msdn.microsoft.com/library/system.globalization.cultureinfo.getcultures(VS.100).aspx), qui fournit une liste complète des codes de culture.
 
 4. Ajoutez une copie de votre profil par défaut au nouveau répertoire. Ne modifiez pas son nom de fichier.
 
@@ -220,7 +220,7 @@ Vous pouvez définir un *profil UML* pour personnaliser les éléments de modèl
 7. Générez l'Extension Visual Studio en créant le projet d'extension ou en compressant tous les fichiers, comme décrit dans les sections précédentes.
 
 ## <a name="Schema"></a>Structure d’un profil
- Le fichier XSD pour les profils UML se trouve dans l’exemple suivant : [définition de stéréotypes et de profils XSD](https://go.microsoft.com/fwlink/?LinkID=213811). Pour vous aider à modifier les fichiers de profils, installez le fichier `.xsd` dans :
+ Le fichier XSD pour les profils UML se trouve dans l’exemple suivant : [définition de stéréotypes et de profils XSD](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples). Pour vous aider à modifier les fichiers de profils, installez le fichier `.xsd` dans :
 
  **%ProgramFiles%\Microsoft Visual Studio [version] \Xml\Schemas**
 
@@ -365,4 +365,4 @@ Vous devez sélectionner votre profil dans un package ou un modèle. Les stéré
 6. Redémarrez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
 ## <a name="see-also"></a>Voir aussi
- [Ajouter des stéréotypes à des éléments de modèle UML](../modeling/add-stereotypes-to-uml-model-elements.md) [personnaliser votre modèle à l’aide de profils et](../modeling/customize-your-model-with-profiles-and-stereotypes.md) de stéréotypes stéréotypes [standard pour les modèles UML](../modeling/standard-stereotypes-for-uml-models.md) [exemple : Color UML elements by stéréotype](https://go.microsoft.com/fwlink/?LinkID=213841) [Sample : définition de stéréotypes, profils XSD](https://go.microsoft.com/fwlink/?LinkID=213811)
+ [Ajouter des stéréotypes à des éléments de modèle UML](../modeling/add-stereotypes-to-uml-model-elements.md) [personnaliser votre modèle à l’aide de profils et](../modeling/customize-your-model-with-profiles-and-stereotypes.md) de stéréotypes stéréotypes [standard pour les modèles UML](../modeling/standard-stereotypes-for-uml-models.md) [exemple : Color UML elements by stéréotype](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) [Sample : définition de stéréotypes, profils XSD](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)

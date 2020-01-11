@@ -12,12 +12,12 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b8b154ccd18472d0b0bca502c78a6612aeccdda6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7f4c490abbcd5b970c5bf9586ea881be4c5d62a4
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301040"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849801"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>Étendre des diagrammes et des modèles UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Cette rubrique résume les différentes manière d’étendre les outils de mod�
 
  L’équipe Fabrikam responsable des outils effectue une série d’améliorations pour aider les équipes de développement. Les sections suivantes décrivent les différents genres d’extensions que vous pouvez définir. Vous pouvez combiner plusieurs de ces techniques dans une même extension Visual Studio.
 
- Pour plus d’informations, consultez la vidéo suivante : ![lien vers la vidéo de](../data-tools/media/playvideo.gif "PlayVideo")[la série de procédures MSDN : outils UML et extensibilité](https://go.microsoft.com/fwlink/?LinkId=214467).
+ Pour plus d’informations, consultez la vidéo suivante : ![lien vers la vidéo de](../data-tools/media/playvideo.gif "PlayVideo")[la série de procédures MSDN : outils UML et extensibilité](https://msdn.microsoft.com/vstudio/ff859492).
 
 ## <a name="Requirements"></a> Configuration requise
 
@@ -111,12 +111,12 @@ Cette rubrique résume les différentes manière d’étendre les outils de mod�
 
 ## <a name="external-resources"></a>Ressources externes
 
-|**Catégorie**|**Liens**|
+|**Catégorie**|**Links**|
 |------------------|---------------|
-|**Vidéos**|![lien vers la vidéo de](../data-tools/media/playvideo.gif "PlayVideo") [la série de procédures MSDN : outils UML et extensibilité](https://go.microsoft.com/fwlink/?LinkId=214467)<br /><br /> ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9 : UML avec Visual Studio](https://go.microsoft.com/fwlink/?LinkId=199957)|
-|**Forums**|-   [Outils de visualisation et de modélisation Visual Studio](https://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Kit de développement logiciel (SDK) Visual Studio Visualization and Modeling (outils DSL)](https://go.microsoft.com/fwlink/?LinkId=184721)|
-|**Blogs**|[Blog Visual Studio ALM + Team Foundation Server](https://go.microsoft.com/fwlink/?LinkID=201340)|
-|**Articles et journaux techniques**|[Centre d’architecture MSDN](https://go.microsoft.com/fwlink/?LinkId=201343)|
+|**Vidéos**|![lien vers la vidéo de](../data-tools/media/playvideo.gif "PlayVideo") [la série de procédures MSDN : outils UML et extensibilité](https://msdn.microsoft.com/vstudio/ff859492)<br /><br /> ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9 : UML avec Visual Studio](https://channel9.msdn.com/posts/clinted/)|
+|**Forums**|-   [Outils de visualisation et de modélisation Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />-   [Kit de développement logiciel (SDK) Visual Studio Visualization and Modeling (outils DSL)](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
+|**Blogs**|[Blog Visual Studio ALM + Team Foundation Server](https://blogs.msdn.com/b/visualstudioalm)|
+|**Articles et journaux techniques**|[Centre d’architecture MSDN](https://msdn.microsoft.com/architecture/default.aspx)|
 
 ## <a name="see-also"></a>Voir aussi
  [Créer des modèles pour votre application](../modeling/create-models-for-your-app.md) [référence API pour l’extensibilité de la modélisation UML](../modeling/api-reference-for-uml-modeling-extensibility.md)

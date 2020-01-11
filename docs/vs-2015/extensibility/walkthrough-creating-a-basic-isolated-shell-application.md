@@ -12,12 +12,12 @@ ms.assetid: 8b12e223-aae3-4c23-813d-ede1125f5f69
 caps.latest.revision: 55
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b6dc84dd8d9f19012c4d09ba9bfd974ec181b9f6
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 6192eb5583e7d0bc37518e995aacccad643cc9ec
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291264"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850350"
 ---
 # <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>Procédure pas à pas : création d’une application Shell isolée de base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -163,7 +163,7 @@ Cette procédure pas à pas montre comment créer une solution de Shell isolé, 
 6. Régénérez la solution et démarrez le débogage de l’interpréteur de commandes isolé. La zone aide/à propos de doit être approximativement carrée.  
   
 ## <a name="before-you-deploy-the-isolated-shell-application"></a>Avant de déployer l’application Shell isolé  
- Votre application d’interpréteur de commandes isolé peut être installée sur n’importe quel ordinateur disposant du package redistribuable Visual Studio Shell (isolé). Pour plus d’informations sur le package redistribuable, consultez le site Web téléchargements de l' [extensibilité Visual Studio](https://go.microsoft.com/fwlink/?LinkID=119298) .  
+ Votre application d’interpréteur de commandes isolé peut être installée sur n’importe quel ordinateur disposant du package redistribuable Visual Studio Shell (isolé). Pour plus d’informations sur le package redistribuable, consultez le site Web téléchargements de l' [extensibilité Visual Studio](https://msdn.microsoft.com/vstudio/bb984878.aspx) .  
   
 ## <a name="deploying-the-isolated-shell-application"></a>Déploiement de l’application Shell isolée  
  Vous déployez votre application Shell isolée sur un ordinateur cible en créant un projet d’installation. Vous devez spécifier les éléments suivants :  
@@ -248,7 +248,7 @@ Cette procédure pas à pas montre comment créer une solution de Shell isolé, 
   
 18. Dans le volet **que voulez-vous trouver ?** , choisissez **entrée de registre** dans la liste déroulante, puis cliquez sur **suivant**.  
   
-19. Dans le volet **Comment voulez-vous le Rechercher ?** , sélectionnez **HKEY_LOCAL_MACHINE** comme racine du Registre. Entrez **SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\14.0\isoshell** pour les systèmes 64 bits ou **SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\isoshell** pour les systèmes 32 bits, puis entrez **install** comme valeur de registre. Cliquez sur **Suivant**.  
+19. Dans le volet **Comment voulez-vous le Rechercher ?** , sélectionnez **HKEY_LOCAL_MACHINE** comme racine du Registre. Entrez **SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\14.0\isoshell** pour les systèmes 64 bits ou **SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\isoshell** pour les systèmes 32 bits, puis entrez **install** comme valeur de registre. Cliquez sur **Next**.  
   
 20. Dans le volet **que voulez-vous faire avec la valeur ?** , entrez **ce produit nécessite l’installation du package redistribuable Visual Studio 2015 isolated Shell.** comme texte d’affichage, puis cliquez sur **Terminer**.  
   

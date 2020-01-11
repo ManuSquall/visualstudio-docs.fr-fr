@@ -14,12 +14,12 @@ ms.assetid: 1f7c348a-114c-4243-b392-3531e9c9c6fd
 caps.latest.revision: 57
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 59ef6ae6b042b1616997821febe156ef5cac3b7f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 27dce16d9fe02063eae935af96c26184285e583d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299703"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850378"
 ---
 # <a name="visual-studio-sdk"></a>Kit de développement Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ Le kit de développement logiciel (SDK) Visual Studio vous aide à étendre les 
  Vous trouverez les informations de référence sur l’API du SDK Visual Studio à la [Référence du kit de développement Visual Studio SDK](../extensibility/visual-studio-sdk-reference.md).  
   
 ## <a name="visual-studio-sdk-samples"></a>Exemples du kit de développement logiciel Visual Studio  
- Vous trouverez des exemples Open source d’extensions VS SDK sur GitHub dans [exemples Visual Studio](https://aka.ms/vs2015sdksamples). Ce référentiel GitHub contient des exemples qui illustrent diverses fonctionnalités extensibles dans Visual Studio.  
+ Vous trouverez des exemples Open source d’extensions VS SDK sur GitHub dans [exemples Visual Studio](https://github.com/Microsoft/VSSDK-Extensibility-Samples). Ce référentiel GitHub contient des exemples qui illustrent diverses fonctionnalités extensibles dans Visual Studio.  
   
 ## <a name="other-visual-studio-sdk-resources"></a>Autres ressources du kit de développement logiciel (SDK) Visual Studio  
  Si vous avez des questions sur le VSSDK ou que vous souhaitez partager vos expériences en développant des extensions, vous pouvez utiliser le [Forum extensibilité de Visual Studio](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx) ou la [conversation de groupe ExtendVS](https://gitter.im/Microsoft/extendvs).  

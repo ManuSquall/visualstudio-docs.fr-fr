@@ -13,17 +13,17 @@ caps.latest.revision: 5
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 451544a84237bc6fa4e069df9dd1e17feccf86f7
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: f88d7ebe714fcdc9bf404e1cf58c4c86cf37047d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301011"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851470"
 ---
 # <a name="bind-to-an-activity39s-property-dialog-box-legacy"></a>Boîte de dialogue lier&#39;à une propriété d’activité (héritée)
 Cette rubrique décrit comment utiliser la boîte de dialogue de **Propriétés lier à la propriété d’une activité** dans le [!INCLUDE[wfd1](../includes/wfd1-md.md)]hérité. Utilisez le [!INCLUDE[wfd2](../includes/wfd2-md.md)] hérité lorsque vous devez cibler le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
- Vous pouvez lier un type d'instance de propriété de dépendance à la propriété publique ou à un événement d'une autre activité. Pour plus d’informations sur la liaison d’activité, consultez [utilisation des propriétés de dépendance](https://go.microsoft.com/fwlink?LinkID=65007).
+ Vous pouvez lier un type d'instance de propriété de dépendance à la propriété publique ou à un événement d'une autre activité. Pour plus d’informations sur la liaison d’activité, consultez [utilisation des propriétés de dépendance](https://msdn2.microsoft.com/library/bb675255.aspx).
 
  Vous sélectionnez une propriété à lier à l’aide de la boîte de dialogue **lier à la propriété d’une activité** . Pour ouvrir cette boîte de dialogue, cliquez sur les points de suspension **[...]** à la fin de la zone de texte de la propriété sélectionnée dans la fenêtre **Propriétés** , ou cliquez sur l’icône de point d’exclamation bleue qui s’affiche en regard du nom de la propriété dans l’Explorateur de propriétés.
 
@@ -35,4 +35,4 @@ Cette rubrique décrit comment utiliser la boîte de dialogue de **Propriétés 
 |**Lier à un nouveau membre**|Créez un nouveau membre ou une nouvelle propriété à lier. Entrez un **nouveau nom de membre**. Choisissez si vous souhaitez créer une propriété de dépendance ou un champ public en sélectionnant **créer un champ** ou **créer une propriété**. Cliquez sur **OK** pour créer le nouveau membre.|
 
 ## <a name="see-also"></a>Voir aussi
- [Utilisation des propriétés](https://go.microsoft.com/fwlink?LinkID=65013) de [l’activité à l'](https://go.microsoft.com/fwlink?LinkID=65007) aide des propriétés [de dépendance concepteur hérité pour Windows Workflow Foundation l’aide de l’interface utilisateur](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)
+ [Utilisation des propriétés](https://msdn2.microsoft.com/library/bb628510.aspx) de [l’activité à l'](https://msdn2.microsoft.com/library/bb675255.aspx) aide des propriétés [de dépendance concepteur hérité pour Windows Workflow Foundation l’aide de l’interface utilisateur](../workflow-designer/legacy-designer-for-windows-workflow-foundation-ui-help.md)

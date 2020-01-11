@@ -12,19 +12,19 @@ caps.latest.revision: 39
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 9c0fa4e92c62ffb5b9c41cf5e297ed11ca63c38e
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: c38150dd84ef8898b2aa894a614dfb79e289b593
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298723"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850449"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>Définir et installer une extension de modélisation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Dans Visual Studio, vous pouvez définir des extensions de diagrammes de modélisation. De cette manière, vous pouvez adapter les diagrammes et les modèles à vos besoins. Par exemple, vous pouvez définir des commandes de menu, des profils UML, des contraintes de validation et des éléments de boîte à outils. Vous pouvez définir plusieurs composants dans une même extension. Vous pouvez aussi distribuer ces extensions à d’autres utilisateurs de Visual Studio sous la forme d’une [Extension d’intégration Visual Studio (VSIX)](https://go.microsoft.com/fwlink/?LinkId=160780). Vous pouvez créer une extension VSIX à l’aide d’un projet VSIX dans Visual Studio.
+Dans Visual Studio, vous pouvez définir des extensions de diagrammes de modélisation. De cette manière, vous pouvez adapter les diagrammes et les modèles à vos besoins. Par exemple, vous pouvez définir des commandes de menu, des profils UML, des contraintes de validation et des éléments de boîte à outils. Vous pouvez définir plusieurs composants dans une même extension. Vous pouvez aussi distribuer ces extensions à d’autres utilisateurs de Visual Studio sous la forme d’une [Extension d’intégration Visual Studio (VSIX)](https://msdn.microsoft.com/library/dd393694(VS.100).aspx). Vous pouvez créer une extension VSIX à l’aide d’un projet VSIX dans Visual Studio.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Configuration requise pour
  Consultez [Spécifications](../modeling/extend-uml-models-and-diagrams.md#Requirements).
 
  Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
@@ -42,7 +42,7 @@ Dans Visual Studio, vous pouvez définir des extensions de diagrammes de modéli
 
 #### <a name="to-create-a-class-library-project-for-menu-commands-gesture-handlers-or-validation"></a>Pour créer un projet de bibliothèque de classes pour des commandes de menu, des gestionnaires de mouvements ou la validation
 
-1. Dans le menu **Fichier**, sélectionnez **Nouveau**, **Projet**.
+1. Dans le menu **Fichier** , choisissez **Nouveau**, **Projet**.
 
 2. Sous **Modèles installés**, sélectionnez **Visual C#** ou **Visual Basic**, puis choisissez **Bibliothèque de classes**.
 
@@ -74,9 +74,9 @@ Dans Visual Studio, vous pouvez définir des extensions de diagrammes de modéli
 
         |||
         |-|-|
-        | = de **type**|**Microsoft. VisualStudio. MefComponent**|
+        |**Type** =|**Microsoft.VisualStudio.MefComponent**|
         |**Source** =|**Projet dans la solution actuelle**|
-        | = du **projet**|*Votre projet de bibliothèque de classes*|
+        |**Project** =|*Votre projet de bibliothèque de classes*|
         |**Incorporer dans ce dossier** =|*vidé*|
 
          Pour les autres types de composants, consultez les liens dans la section suivante.
@@ -97,7 +97,7 @@ Dans Visual Studio, vous pouvez définir des extensions de diagrammes de modéli
 
 #### <a name="to-run-an-extension-during-its-development"></a>Pour exécuter une extension durant son développement
 
-1. Dans le menu [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **de** , choisissez **Start deging**.
+1. Dans le menu **Déboguer** [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], choisissez **Démarrer le débogage**.
 
      Le projet est généré et une nouvelle instance de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] démarre en mode expérimental.
 
@@ -138,7 +138,7 @@ Dans Visual Studio, vous pouvez définir des extensions de diagrammes de modéli
 
    Exceptionnellement, une extension défaillante ne parvient pas à se charger et crée un rapport dans la fenêtre d’erreur, mais ne s’affiche pas dans le Gestionnaire d’extensions. Dans ce cas, vous pouvez supprimer l’extension en supprimant le fichier à l’emplacement *suivant, où* *% LocalAppData%* est généralement le nom de \AppData\Local : \Utilisateurs\\*nom d’utilisateur*:
 
-   *% LocalAppData%* **\Microsoft\VisualStudio\\[version] \Extensions**
+   *%LocalAppData%* **\Microsoft\VisualStudio\\[version]\Extensions**
 
 ## <a name="see-also"></a>Voir aussi
  [Définir un profil pour étendre UML](../modeling/define-a-profile-to-extend-uml.md) [définir un élément de boîte à outils de modélisation personnalisé](../modeling/define-a-custom-modeling-toolbox-item.md) [définir des contraintes de validation pour les modèles UML](../modeling/define-validation-constraints-for-uml-models.md) [définir une commande de menu sur un diagramme de modélisation](../modeling/define-a-menu-command-on-a-modeling-diagram.md)

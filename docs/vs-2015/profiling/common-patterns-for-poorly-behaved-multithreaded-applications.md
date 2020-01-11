@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b103c2611216a5024d600aafba212919592ff3b3
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 414b5ea6a6cf6bf0277ad8d2df51b20c39f558e1
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300660"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852170"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Modèles courants pour des applications multithread au comportement médiocre
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Le visualiseur concurrentiel permet aux développeurs de visualiser le comportem
   
  Comme le montre l’illustration suivante, le visualiseur concurrentiel peut également exposer ce symptôme dans la vue Utilisation de l’UC, où vous voyez que, malgré la présence de plusieurs threads, l’application n’utilise qu’un seul cœur logique.  
   
- Pour plus d’informations, consultez « Performance Pattern 1: Identifying Lock Contention » dans le blog [Parallel Performance Tools For Windows](https://go.microsoft.com/fwlink/?LinkID=160569) d’Hazim Shafi, sur MSDN Blogs.  
+ Pour plus d’informations, consultez « Performance Pattern 1: Identifying Lock Contention » dans le blog [Parallel Performance Tools For Windows](https://blogs.msdn.com/hshafi) d’Hazim Shafi, sur MSDN Blogs.  
   
  ![Contention de verrouillage](../profiling/media/lockcontention-2.png "LockContention_2")  
   
@@ -67,4 +67,4 @@ Le visualiseur concurrentiel permet aux développeurs de visualiser le comportem
  Les convois de verrouillage se produisent lorsque l’application acquiert des verrous dans un ordre de premier arrivé, premier servi, alors que le taux d’arrivée au verrou est supérieur au taux d’acquisition. La combinaison de ces deux conditions provoque l’envoi de demandes de sauvegarde au verrou. Une des méthodes possibles pour résoudre ce problème consiste à utiliser des verrous inéquitables, qui permettent au premier thread qui les trouve à l’état déverrouillé de les acquérir. L’illustration précédente montre ce comportement de convoi. Pour résoudre ce problème, essayez de réduire le nombre de conflits au niveau des objets de synchronisation et d’utiliser des verrous inéquitables.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Vue Threads](../profiling/threads-view-parallel-performance.md)
+ [vue Threads](../profiling/threads-view-parallel-performance.md)

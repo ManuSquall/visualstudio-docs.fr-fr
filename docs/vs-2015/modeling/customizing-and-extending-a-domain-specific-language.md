@@ -11,12 +11,12 @@ caps.latest.revision: 50
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8de964bebb59507da06bb4444ffd6067ffc43b63
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 37ac181c2e2182dc8ff57931fbbb51a4f7fc9fc4
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299339"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852416"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Personnalisation et extension d'un langage spécifique à un domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,8 +45,8 @@ Le kit de développement logiciel (SDK) de modélisation et de visualisation de 
 |L’icône sur la forme change pour indiquer l’État.|Définissez la visibilité du mappage de l’élément décoratif dans la fenêtre Détails DSL. Localisez plusieurs décorateurs d’images à la même position. Consultez [mise à jour des formes et des connecteurs pour refléter le modèle](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md).<br /><br /> Ou substituez `ImageField.GetDisplayImage()`. Consultez l’exemple dans <xref:Microsoft.VisualStudio.Modeling.Diagrams.ImageField>.|
 |Définir une image d’arrière-plan sur n’importe quelle forme|Remplacez InitializeInstanceResources () pour ajouter un ImageField ancré. Consultez [Personnalisation de la présentation dans le diagramme](../modeling/customizing-presentation-on-the-diagram.md).|
 |Imbriquer des formes à n’importe quelle profondeur|Configurez une arborescence d’incorporation récursive. Définissez BoundsRules pour contenir les formes. Consultez [Personnalisation de la présentation dans le diagramme](../modeling/customizing-presentation-on-the-diagram.md).|
-|Attachez des connecteurs à des points fixes sur les limites d’un élément.|Définissez les éléments terminaux incorporés, représentés par de petits ports sur le diagramme. Utilisez BoundsRules pour corriger les ports en place. Consultez l’exemple de schéma de circuit dans le [Kit de développement logiciel de visualisation et de modélisation](https://go.microsoft.com/fwlink/?LinkID=186128).|
-|Champ de texte affiche une valeur dérivée d’autres valeurs.|Mappez l’élément décoratif de texte à une propriété de domaine de stockage calculée ou personnalisée. Pour plus d’informations, consultez [Propriétés de stockage calculées et personnalisées](../modeling/calculated-and-custom-storage-properties.md).|
+|Attachez des connecteurs à des points fixes sur les limites d’un élément.|Définissez les éléments terminaux incorporés, représentés par de petits ports sur le diagramme. Utilisez BoundsRules pour corriger les ports en place. Consultez l’exemple de schéma de circuit dans le [Kit de développement logiciel de visualisation et de modélisation](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).|
+|Champ de texte affiche une valeur dérivée d’autres valeurs.|Mappez l’élément décoratif de texte à une propriété de domaine de stockage calculée ou personnalisée. Pour plus d’informations, consultez [calculées et les propriétés de stockage personnalisé](../modeling/calculated-and-custom-storage-properties.md).|
 |Propager les modifications entre les éléments de modèle ou entre les formes|Consultez [validation dans un langage spécifique à un domaine](../modeling/validation-in-a-domain-specific-language.md).|
 |Propage les modifications à des ressources telles que d’autres extensions de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] en dehors du magasin.|Consultez [les gestionnaires d’événements pour propager les modifications en dehors du modèle](../modeling/event-handlers-propagate-changes-outside-the-model.md).|
 |La fenêtre Propriétés affiche les propriétés d’un élément associé.|Configurez le transfert de propriété. Consultez [Personnalisation de la fenêtre Propriétés](../modeling/customizing-the-properties-window.md).|

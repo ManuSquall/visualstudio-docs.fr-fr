@@ -14,17 +14,17 @@ caps.latest.revision: 57
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 51cb71d4bc2f66377b677d5be292c4eafa1dbd18
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 21376668eef88d3d8ce42ff73785b972be045cb2
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299460"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850632"
 ---
-# <a name="layer-diagrams-guidelines"></a>Diagrammes de couche : indications
+# <a name="layer-diagrams-guidelines"></a>Diagrammes de couche : instructions
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Décrivez l’architecture de votre application à un niveau élevé en créant des *diagrammes de couche* dans Visual Studio. Assurez-vous que votre code demeure conforme à cette conception en le validant avec un diagramme de couche. Vous pouvez également inclure la validation de couche dans votre processus de génération. Voir [vidéo Channel 9 : concevoir et valider votre architecture à l’aide de diagrammes de couche](https://go.microsoft.com/fwlink/?LinkID=252073).
+Décrivez l’architecture de votre application à un niveau élevé en créant des *diagrammes de couche* dans Visual Studio. Assurez-vous que votre code demeure conforme à cette conception en le validant avec un diagramme de couche. Vous pouvez également inclure la validation de couche dans votre processus de génération. Voir [vidéo Channel 9 : concevoir et valider votre architecture à l’aide de diagrammes de couche](https://s.ch9.ms/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Using-layer-diagrams-to-design-and-validate-your-architecture).
 
  Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -66,14 +66,14 @@ Décrivez l’architecture de votre application à un niveau élevé en créant 
 ## <a name="CreateLayers"></a>Définir des couches pour représenter des zones fonctionnelles ou des composants
  Les couches représentent des groupes logiques d' *artefacts*, tels que des projets, des fichiers de code, des espaces de noms, des classes et des méthodes. Vous pouvez créer des couches à partir d'artefacts de projets Visual C# .NET et Visual Basic .NET, ou vous pouvez attacher des spécifications ou des plans à une couche en liant des documents, tels que des fichiers Word ou des présentations PowerPoint. Chaque couche apparaît comme un rectangle sur le diagramme et indique le nombre d’artefacts qui lui sont liés. Une couche peut contenir des couches imbriquées qui décrivent des tâches plus spécifiques.
 
- En règle générale, nommez les couches selon leur fonction : par exemple, « Présentation » ou « Services ». Si les artefacts sont étroitement interdépendants, placez-les dans la même couche. Si les artefacts peuvent être mis à jour séparément ou utilisés dans des applications distinctes, placez-les dans des couches différentes. Pour en savoir plus sur les modèles de superposition, visitez le site patterns & Practices à l’adresse [http://go.microsoft.com/fwlink/?LinkId=145794](https://go.microsoft.com/fwlink/?LinkId=145794).
+ En règle générale, nommez les couches selon leur fonction : par exemple, « Présentation » ou « Services ». Si les artefacts sont étroitement interdépendants, placez-les dans la même couche. Si les artefacts peuvent être mis à jour séparément ou utilisés dans des applications distinctes, placez-les dans des couches différentes. Pour en savoir plus sur les modèles de superposition, visitez le site patterns & Practices à l’adresse [http://go.microsoft.com/fwlink/?LinkId=145794](https://apparch.codeplex.com/Wiki/View.aspx?title=Application Patterns&referringTitle=Home).
 
 > [!TIP]
 > Il existe certains types d’artefacts que vous pouvez lier aux couches, mais qui ne prennent pas en charge la validation par rapport au diagramme de couche. Pour voir si l’artefact prend en charge la validation, ouvrez l' **Explorateur de couches** pour examiner la propriété **prend en charge la validation** du lien d’artefact. Consultez [découvrir les dépendances existantes entre les couches](#Generate).
 
  Lors de la mise à jour d'une application peu familière, vous pouvez également créer des cartes de code. Ces diagrammes peuvent vous aider à découvrir des modèles et des dépendances quand vous explorez le code. Utilisez l'Explorateur de solutions pour explorer des espaces de noms et des classes, qui correspondent souvent à des couches existantes. Assignez ces artefacts de code à des couches en les faisant glisser de l'Explorateur de solutions vers des diagrammes de couche. Vous pouvez ensuite utiliser les diagrammes de couche pour vous aider à mettre à jour le code et à garantir sa cohérence avec votre conception.
 
- Reportez-vous à :
+ Consultez :
 
 - [Créer des diagrammes de couche à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md)
 
@@ -115,7 +115,7 @@ Décrivez l’architecture de votre application à un niveau élevé en créant 
 ## <a name="NewAreas"></a>Concevoir de nouvelles zones de votre application
  Lorsque vous démarrez le développement d'un nouveau projet, ou d'une nouvelle partie d'un nouveau projet, vous pouvez dessiner des couches et des dépendances pour aider à identifier les principaux composants avant de commencer à développer le code.
 
-- **Affichez les modèles architecturaux identifiables** dans vos diagrammes de couche, si possible. Par exemple, un diagramme de couche qui décrit une application bureautique peut inclure des couches telles que Présentation, Logique de domaine et Magasin de données. Un diagramme de couche qui couvre une fonctionnalité unique au sein d'une application peut avoir des couches telles que Modèle, Vue et Contrôleur. Pour plus d’informations sur ces modèles, consultez [patterns & Practices : architecture d’application](https://go.microsoft.com/fwlink/?LinkId=145794).
+- **Affichez les modèles architecturaux identifiables** dans vos diagrammes de couche, si possible. Par exemple, un diagramme de couche qui décrit une application bureautique peut inclure des couches telles que Présentation, Logique de domaine et Magasin de données. Un diagramme de couche qui couvre une fonctionnalité unique au sein d'une application peut avoir des couches telles que Modèle, Vue et Contrôleur. Pour plus d’informations sur ces modèles, consultez [patterns & Practices : architecture d’application](https://apparch.codeplex.com/Wiki/View.aspx?title=Application Patterns&referringTitle=Home).
 
      Si vous créez fréquemment des modèles similaires, créez un outil personnalisé. Consultez [définir un élément de boîte à outils de modélisation personnalisé](../modeling/define-a-custom-modeling-toolbox-item.md).
 
@@ -139,7 +139,7 @@ Décrivez l’architecture de votre application à un niveau élevé en créant 
 ## <a name="Validate"></a>Valider le code par rapport au diagramme
  Quand vous avez modifié le diagramme, vous pouvez le valider manuellement par rapport au code à tout moment ou automatiquement chaque fois que vous exécutez une génération locale ou [!INCLUDE[esprbuild](../includes/esprbuild-md.md)].
 
- Reportez-vous à :
+ Consultez :
 
 - [Valider du code avec des diagrammes de couche](../modeling/validate-code-with-layer-diagrams.md)
 

@@ -11,12 +11,12 @@ caps.latest.revision: 34
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 89f43167a12bce77ef260fcf3d72764072f80143
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: b55100fa6aaf74dee6277db2a079a0a908dc265c
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299937"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851067"
 ---
 # <a name="talk-to-us"></a>Nous contacter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,13 +38,13 @@ Vos idées nous intéressent pour améliorer notre documentation. Nous ne pouvon
  Les versions préliminaires de Visual Studio possèdent l’élément de menu **Évaluer ce produit** qui vous permet d’envoyer des commentaires sur la qualité de la build que vous exécutez. Il n’apparaît pas dans les versions finales du produit.
 
 ## <a name="i-need-help"></a>J’ai besoin d’aide !
- Consultez le [Support technique Microsoft](https://go.microsoft.com/fwlink/?LinkID=99019) pour obtenir de l’aide en ligne.
+ Consultez le [Support technique Microsoft](https://support.microsoft.com/) pour obtenir de l’aide en ligne.
 
  Le support hors des États-Unis et du Canada peut varier. Pour obtenir la liste des contacts régionaux, consultez les [Sites mondiaux Microsoft](https://www.microsoft.com/worldwide/).
 
  Pour plus d’options, consultez la [vue d’ensemble du support technique](https://visualstudio.microsoft.com/support/).
 
- Pour les organisations de plus grande taille qui requièrent un support technique géré directement à partir de Microsoft, les contrats sont disponibles via différentes offres de Support Premier. Pour plus d’informations, consultez [Support Premier de Microsoft Services](https://go.microsoft.com/fwlink/?LinkId=258223).
+ Pour les organisations de plus grande taille qui requièrent un support technique géré directement à partir de Microsoft, les contrats sont disponibles via différentes offres de Support Premier. Pour plus d’informations, consultez [Support Premier de Microsoft Services](https://www.microsoft.com/industry/services/support).
 
  Si le produit est fourni installé avec un nouvel ordinateur ou appareil, le fabricant de matériel fournit le support technique et l’assistance pour ce logiciel. Contactez directement le fabricant pour le support technique.
 

@@ -19,12 +19,12 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 787be52eeb546d2ab184a172464862d10cb43288
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 8116d4ab4a2f20f79f3849ae7f8b324af9832dd5
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299579"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850238"
 ---
 # <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>Procédure pas à pas : affichage de données connexes dans une application WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,9 +44,9 @@ Dans cette procédure pas à pas, vous allez créer une application WPF qui affi
 ## <a name="prerequisites"></a>Configuration requise
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :
 
-- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]
+- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
-- Accès à une instance en cours d'exécution de SQL Server ou SQL Server Express à laquelle est attaché l'exemple de base de données AdventureWorksLT. Vous pouvez télécharger la base de données AdventureWorksLT à partir du [site Web CodePlex](https://go.microsoft.com/fwlink/?linkid=87843).
+- Accès à une instance en cours d'exécution de SQL Server ou SQL Server Express à laquelle est attaché l'exemple de base de données AdventureWorksLT. Vous pouvez télécharger la base de données AdventureWorksLT à partir du [site Web CodePlex](https://codeplex.com/SqlServerSamples).
 
   La connaissance préalable des concepts suivants s'avère également utile, mais n'est pas obligatoire pour suivre cette procédure pas à pas :
 
@@ -94,7 +94,7 @@ Dans cette procédure pas à pas, vous allez créer une application WPF qui affi
 
    - Si une connexion de données à l'exemple de base de données AdventureWorksLT est disponible dans la liste déroulante, sélectionnez-la.
 
-      -ou-
+      \- ou -
 
    - Cliquez sur **nouvelle connexion** et créez une connexion à la base de données AdventureWorksLT.
 
@@ -106,7 +106,7 @@ Dans cette procédure pas à pas, vous allez créer une application WPF qui affi
 
    - **SalesOrderHeader**
 
-7. Cliquez sur **Terminer**.
+7. Cliquez sur **Finish**.
 
 8. créer le projet ;
 
@@ -139,11 +139,11 @@ Dans cette procédure pas à pas, vous allez créer une application WPF qui affi
 
    - **CreditCardApprovalCode**
 
-   - **Sous**
+   - **SubTotal**
 
    - **TaxAmt**
 
-   - **Fret**
+   - **Freight**
 
    - **rowguid**
 

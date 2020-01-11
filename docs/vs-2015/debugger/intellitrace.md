@@ -22,12 +22,12 @@ caps.latest.revision: 142
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: db7430d03bbce065b75e890736253c6ba05752d0
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7bc1e36f6d5dea12a8c46e88a3e1f450cc30caa6
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298919"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847212"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -128,7 +128,7 @@ Vous pouvez consacrer moins de temps au débogage de votre application quand vou
   
 - **Événements .NET Framework**  
   
-   Par défaut, IntelliTrace enregistre les événements .NET Framework les plus courants. Exemple :  
+   Par défaut, IntelliTrace enregistre les événements .NET Framework les plus courants. Par exemple :  
   
   - Pour un événement d'accès au fichier, IntelliTrace collecte le nom de fichier.  
   
@@ -136,11 +136,11 @@ Vous pouvez consacrer moins de temps au débogage de votre application quand vou
   
 - **Événements d'application SharePoint 2010 et SharePoint 2013**  
   
-   Vous pouvez enregistrer des événements de profil utilisateur et un sous-ensemble d'événements ULS (Unified Logging System) pour les applications SharePoint 2010 et 2013 qui s'exécutent en dehors de Visual Studio. Vous pouvez enregistrer ces événements dans un fichier .iTrace. Requiert Visual Studio Enterprise 2015, une version précédente de Visual Studio Ultimate ou [Microsoft Monitoring agent](https://go.microsoft.com/fwlink/?LinkId=320384) s’exécutant en mode **trace** .  
+   Vous pouvez enregistrer des événements de profil utilisateur et un sous-ensemble d'événements ULS (Unified Logging System) pour les applications SharePoint 2010 et 2013 qui s'exécutent en dehors de Visual Studio. Vous pouvez enregistrer ces événements dans un fichier .iTrace. Requiert Visual Studio Enterprise 2015, une version précédente de Visual Studio Ultimate ou [Microsoft Monitoring agent](https://go.microsoft.com/fwlink/?LinkID=309771) s’exécutant en mode **trace** .  
   
    Lorsque vous ouvrez le fichier .iTrace, vous pouvez entrer un ID de corrélation SharePoint pour rechercher sa requête web correspondante, afficher les événements inscrits, puis démarrer le débogage à partir d'un événement spécifique. Si le fichier contient des exceptions non gérées, vous pouvez choisir un ID de corrélation pour commencer à déboguer une exception.  
   
-   Reportez-vous à :  
+   Consultez :  
   
   - [Utilisation du collecteur autonome IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)  
   
@@ -186,7 +186,7 @@ Vous pouvez consacrer moins de temps au débogage de votre application quand vou
  [Utilisation des données IntelliTrace enregistrées](../debugger/using-saved-intellitrace-data.md)  
   
 ### <a name="blogs"></a>Blogs  
- [Visual Studio ALM + Team Foundation Server](https://go.microsoft.com/fwlink/?LinkID=201340)  
+ [Visual Studio ALM + Team Foundation Server](https://blogs.msdn.com/b/visualstudioalm)  
   
 ### <a name="forums"></a>Forums  
- [Diagnostics Visual Studio](https://go.microsoft.com/fwlink/?LinkId=262263)
+ [Diagnostics Visual Studio](https://social.msdn.microsoft.com/Forums/vsdebug)

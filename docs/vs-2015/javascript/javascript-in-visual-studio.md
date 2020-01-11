@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 175cb6f6a8a3f240c244e139406841b0546209cc
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 778912c3149f9f146c01dbab15afa4fabeaa49b8
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295904"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852256"
 ---
 # <a name="javascript-in-visual-studio"></a>JavaScript dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ JavaScript est un langage de premier ordre dans Visual Studio. Vous pouvez utili
 
  Des versions ou des extensions spécifiques de Visual Studio peuvent être nécessaires pour développer des types d’applications et des services particuliers en HTML et JavaScript. La liste suivante comporte des liens permettant d'accéder à des informations complémentaires.
 
-- Pour créer des applications multiplateformes avec Apache Cordova, [procurez-vous Visual Studio Tools pour Apache Cordova](https://go.microsoft.com/fwlink/p/?LinkId=397606).
+- Pour créer des applications multiplateformes avec Apache Cordova, [procurez-vous Visual Studio Tools pour Apache Cordova](https://taco.visualstudio.com/docs/install-vs-tools-apache-cordova/).
 
 - Pour créer des applications [Windows Store](https://developer.microsoft.com/), [Windows Phone](https://developer.microsoft.com/) et universelles (prenant en charge les deux plateformes), [procurez-vous les outils](https://developer.microsoft.com/windows/downloads).
 
@@ -45,7 +45,7 @@ JavaScript est un langage de premier ordre dans Visual Studio. Vous pouvez utili
 |-------------|-----------------|
 |Classes|La nouvelle syntaxe prend en charge la déclaration de [classes](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/class).|
 |Promesses|Les [promesses](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise) permettent d’effectuer un codage asynchrone simplifié et épuré. Les constructeurs de promesses sont pris en charge, ainsi que les méthodes utilitaires `all` et `race`.|
-|Itérateurs|Vous pouvez désormais itérer des objets (tableaux et objets apparentés, itérateurs), en appelant un hook d'itération personnalisé contenant des instructions à exécuter pour la valeur de chaque propriété distincte. Pour plus d’informations, consultez [Itérateurs et générateurs](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Iterators_and_Generators). **Remarque :** Les générateurs ne sont pas pris en charge pour l’instant.|
+|Iterators|Vous pouvez désormais itérer des objets (tableaux et objets apparentés, itérateurs), en appelant un hook d'itération personnalisé contenant des instructions à exécuter pour la valeur de chaque propriété distincte. Pour plus d’informations, consultez [Itérateurs et générateurs](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Iterators_and_Generators). **Remarque :** Les générateurs ne sont pas pris en charge pour l’instant.|
 |Fonctions de flèche|La fonction de flèche (=>) fournit une syntaxe raccourcie pour le mot clé `function` contenant une liaison `this` lexicale.|
 |Nouvelles méthodes pour les objets intégrés|Les objets prédéfinis [Tableau](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array), [Mathématiques](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math), [Nombre](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number), [Objet](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object) et [Chaîne](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) comportent de nombreuses fonctions et propriétés nouvelles pour la manipulation et l’inspection de données.|
 |Améliorations du littéral d’objet|Les objets prennent désormais en charge les propriétés calculées, les définitions de méthode concises, et une syntaxe raccourcie pour les propriétés dont la valeur est initialisée à une variable du même nom. Pour plus d’informations, consultez [Création d’objets](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object).|

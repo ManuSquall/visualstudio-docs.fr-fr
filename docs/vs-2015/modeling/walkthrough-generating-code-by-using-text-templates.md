@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c2a86689fd41b7c0233db0df544082ef22c4931a
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 89f78e129d64b313de7bada3c72a449f1fb2aece
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295508"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849930"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>Procédure pas à pas : génération de code à l'aide de modèles de texte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ La génération de code vous permet de générer du code de programme qui est fo
  Dans cet exemple de projet, un modèle lit un exemple de fichier XML et génère des classes qui correspondent à chaque type de nœud. Dans le code écrit manuellement, vous pouvez utiliser ces classes pour parcourir le fichier XML. Vous pouvez également exécuter votre application sur tout autre fichier qui utilise les mêmes types de nœuds. L’objectif de l’exemple de fichier XML est de fournir des exemples de tous les types de nœuds que vous souhaitez que votre application puisse gérer.
 
 > [!NOTE]
-> L’application [xsd.exe](https://go.microsoft.com/fwlink/?LinkId=178765), qui est fournie avec [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], peut générer des classes fortement typées à partir de fichiers XML. Le modèle présenté ici est fourni comme exemple.
+> L’application [xsd.exe](https://docs.microsoft.com/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe), qui est fournie avec [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], peut générer des classes fortement typées à partir de fichiers XML. Le modèle présenté ici est fourni comme exemple.
 
  Voici l’exemple de fichier :
 
@@ -108,7 +108,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
    .
 
 ### <a name="add-a-test-code-file"></a>Ajouter un fichier de code de test
- Ajoutez un fichier C# à votre projet et placez-y un exemple du code que vous souhaitez pouvoir écrire. Exemple :
+ Ajoutez un fichier C# à votre projet et placez-y un exemple du code que vous souhaitez pouvoir écrire. Par exemple :
 
 ```
 using System;

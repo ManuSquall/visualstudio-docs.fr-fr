@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5acbb4d2966e89f7913fa1479b882fad5c9650f7
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 0d9887e3c7cf283bff453e458502400a7ade1a41
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295809"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849564"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Définition d'une stratégie de verrouillage pour créer des segments en lecture seule
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ L’API d’immuabilité du kit de développement logiciel (SDK) [!INCLUDE[vsprv
 > [!NOTE]
 > Une stratégie de verrouillage peut être contournée à l’aide de la réflexion. Il fournit une limite claire pour les développeurs tiers, mais ne fournit pas une sécurité renforcée.
 
- Des informations supplémentaires et des exemples sont disponibles sur le site Web du [Kit de développement logiciel (SDK) [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visualization and Modeling](https://go.microsoft.com/fwlink/?LinkId=186128) .
+ Des informations supplémentaires et des exemples sont disponibles sur le site Web du [Kit de développement logiciel (SDK) [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visualization and Modeling](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) .
 
 ## <a name="setting-and-getting-locks"></a>Définition et obtention de verrous
  Vous pouvez définir des verrous sur le magasin, sur une partition ou sur un élément individuel. Par exemple, cette instruction empêchera la suppression d’un élément de modèle, et empêchera également la modification de ses propriétés :
@@ -77,16 +77,16 @@ partition.SetLocks(Locks.Delete);
 
   Vous ne pouvez pas définir un verrou sur une partition ou un magasin et désactiver en même temps le verrou sur un élément individuel.
 
-|Valeur|Cela signifie que si `IsLocked(Value)` a la valeur true|
+|Value|Cela signifie que si `IsLocked(Value)` a la valeur true|
 |-----------|------------------------------------------|
-|Aucune|Aucune restriction.|
-|Propriété|Les propriétés de domaine des éléments ne peuvent pas être modifiées. Cela ne s’applique pas aux propriétés générées par le rôle d’une classe de domaine dans une relation.|
+|Aucun|Aucune restriction.|
+|Les|Les propriétés de domaine des éléments ne peuvent pas être modifiées. Cela ne s’applique pas aux propriétés générées par le rôle d’une classe de domaine dans une relation.|
 |Ajouter|Impossible de créer des éléments et des liens dans une partition ou un magasin.<br /><br /> Non applicable aux `ModelElement`.|
-|Déplacer|L’élément ne peut pas être déplacé entre des partitions si `element.IsLocked(Move)` a la valeur true ou si `targetPartition.IsLocked(Move)` a la valeur true.|
+|Déplacement|L’élément ne peut pas être déplacé entre des partitions si `element.IsLocked(Move)` a la valeur true ou si `targetPartition.IsLocked(Move)` a la valeur true.|
 |Supprimer|Un élément ne peut pas être supprimé si ce verrou est défini sur l’élément lui-même, ou sur l’un des éléments dans lequel la suppression se propage, comme des éléments et des formes incorporés.<br /><br /> Vous pouvez utiliser `element.CanDelete()` pour déterminer si un élément peut être supprimé.|
 |Réorganiser|L’ordre des liens au niveau d’un rolePlayer ne peut pas être modifié.|
 |RolePlayer|L’ensemble de liens qui sont associés à cet élément ne peut pas être modifié. Par exemple, les nouveaux éléments ne peuvent pas être incorporés sous cet élément. Cela n’affecte pas les liens pour lesquels cet élément est la cible.<br /><br /> Si cet élément est un lien, sa source et sa cible ne sont pas affectées.|
-|Tout|Or au niveau du bit des autres valeurs.|
+|Toutes les|Or au niveau du bit des autres valeurs.|
 
 ## <a name="locking-policies"></a>Stratégies de verrouillage
  En tant qu’auteur d’une solution DSL, vous pouvez définir une *stratégie de verrouillage*. Une stratégie de verrouillage permet de modérer le fonctionnement de SetLocks (), afin que vous puissiez empêcher des verrous spécifiques d’être définis ou d’imposer que des verrous spécifiques soient définis. En règle générale, vous utilisez une stratégie de verrouillage pour dissuader les utilisateurs ou les développeurs de transgresser accidentellement l’utilisation prévue d’un DSL, de la même manière que vous pouvez déclarer une variable `private`.
@@ -115,7 +115,7 @@ public interface ILockingPolicy
 
  Ces méthodes sont appelées lorsqu’un appel est effectué pour `SetLocks()` sur un magasin, une partition ou un ModelElement. Dans chaque méthode, vous disposez d’un ensemble de verrous proposés. Vous pouvez retourner l’ensemble proposé, ou vous pouvez ajouter et soustraire des verrous.
 
- Exemple :
+ Par exemple :
 
 ```
 using Microsoft.VisualStudio.Modeling;

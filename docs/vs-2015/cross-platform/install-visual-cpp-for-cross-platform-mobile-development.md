@@ -11,19 +11,19 @@ caps.latest.revision: 17
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 8046b261021a1147dbf0356c6854968b3d23a1df
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 70f1266581bb633086fa33a28b43e04befc7e6f9
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299805"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844328"
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>Installer Visual C++ pour le développement mobile multiplateforme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual C++ pour le développement mobile multiplateforme] (https://go.microsoft.com/fwlink/p/?LinkId=536383) est un composant installable de Visual Studio 2015. Il inclut des modèles Visual Studio multiplateformes et installe les outils multiplateformes ainsi que les Kits de développement logiciel pour une prise en main rapide, sans que vous n’ayez à effectuer les recherches, le téléchargement ni la configuration. Vous pouvez utiliser ces outils dans Visual Studio pour créer, modifier, déboguer et tester facilement des projets multiplateformes. Cette rubrique décrit comment installer les outils et les logiciels tiers requis pour développer des applications multiplateformes à l’aide de Visual Studio. Pour obtenir une vue d’ensemble du composant, consultez [Développement multiplateforme en Visual C++ pour appareils mobiles](https://go.microsoft.com/fwlink/p/?LinkId=536387)  
   
- [Configuration requise](#Requirements)   
+ [Spécifications](#Requirements)   
  [Se procurer les outils](#GetTheTools)   
  [Installer les outils](#InstallTheTools)   
  [Install tools for iOS](#InstallForiOS)   
@@ -38,14 +38,14 @@ Visual C++ pour le développement mobile multiplateforme] (https://go.microsoft.
   
   Pour créer des applications pour des plateformes d’appareils spécifiques, il y a quelques spécifications requises supplémentaires :  
   
-- Les émulateurs Windows Phone et l’émulateur Microsoft Visual Studio pour Android requièrent un ordinateur qui peut exécuter Hyper-V. La fonctionnalité Hyper-V de Windows doit être activée pour permettre l’installation et l’exécution des émulateurs. Pour plus d’informations, consultez la [configuration système requise](https://msdn.microsoft.com/4d5bb438-231a-4cd2-84b7-e9660b0e3baf)de l’émulateur.  
+- Les émulateurs Windows Phone et l’émulateur Microsoft Visual Studio pour Android requièrent un ordinateur qui peut exécuter Hyper-V. La fonctionnalité Hyper-V de Windows doit être activée pour permettre l’installation et l’exécution des émulateurs. Pour plus d’informations, consultez la [configuration requise](https://msdn.microsoft.com/4d5bb438-231a-4cd2-84b7-e9660b0e3baf) de l’émulateur.  
   
-- Les émulateurs Android x86 fournis avec le SDK Android offrent des performances optimales sur des ordinateurs pouvant exécuter le pilote Intel HAXM. Ce pilote nécessite un processeur Intel x64 avec prise en charge de Execute Disable Bit et de VT-x. Pour plus d’informations, consultez les [Instructions d’installation pour le gestionnaire d’exécution à accélération matérielle Intel® - Microsoft Windows](https://go.microsoft.com/fwlink/p/?LinkId=536385).  
+- Les émulateurs Android x86 fournis avec le SDK Android offrent des performances optimales sur des ordinateurs pouvant exécuter le pilote Intel HAXM. Ce pilote nécessite un processeur Intel x64 avec prise en charge de Execute Disable Bit et de VT-x. Pour plus d’informations, consultez les [Instructions d’installation pour le gestionnaire d’exécution à accélération matérielle Intel® - Microsoft Windows](https://github.com/intel/haxm).  
   
 - La génération du code pour iOS nécessite un identifiant Apple, un compte iOS Developer Program et un ordinateur Mac pouvant exécuter [Xcode 6](https://go.microsoft.com/fwlink/p/?LinkId=536387) (ou ultérieur) sur OS X Mavericks (ou ultérieur). Pour obtenir une procédure d’installation simple, consultez [Install tools for iOS](#InstallForiOS).  
   
-## <a name="GetTheTools"></a> Obtenir les outils  
- Visual C++ pour le développement mobile multiplateforme est un composant installable inclus dans les éditions Visual Studio Community, Professional et Enterprise. Pour obtenir Visual Studio, accédez à la page [Téléchargements de Visual Studio 2015](https://go.microsoft.com/fwlink/p/?linkid=517106) et téléchargez Visual Studio 2015 avec Update 2 ou version ultérieure.  
+## <a name="GetTheTools"></a> Se procurer les outils  
+ Visual C++ pour le développement mobile multiplateforme est un composant installable inclus dans les éditions Visual Studio Community, Professional et Enterprise. Pour obtenir Visual Studio, accédez à la page [Téléchargements de Visual Studio 2015](https://visualstudio.microsoft.com/downloads/) et téléchargez Visual Studio 2015 avec Update 2 ou version ultérieure.  
   
 ## <a name="InstallTheTools"></a> Installer les outils  
  Le programme d’installation de Visual Studio 2015 comprend une option d’installation de Visual C++ pour le développement mobile multiplateforme. Cette option installe les outils, modèles et composants de langage C++ pour les ensembles d’outils Visual Studio, GCC et Clang nécessaires aux builds Android et au débogage, ainsi que les composants permettant de communiquer avec un Mac pour le développement iOS. Elle installe également tous les outils tiers et kits de développement logiciel qui sont requis pour prendre en charge le développement d’applications iOS et Android. La plupart de ces outils tiers sont des logiciels open source nécessaires pour la prise en charge de la plateforme Android.  
@@ -68,7 +68,7 @@ Visual C++ pour le développement mobile multiplateforme] (https://go.microsoft.
   
      Pour générer des applications Windows universelles et partager du code entre ces applications et vos projets Android et iOS, dans **Sélectionner les fonctionnalités**, développez **Développement d’applications Windows et web**, puis cochez **Outils de développement d’applications Windows universelles**. Si vous ne prévoyez pas de créer des applications Windows universelles, vous pouvez ignorer cette option.  
   
-     Cliquez sur **Suivant** pour continuer.  
+     Choisissez **Suivant** pour continuer.  
   
 3. Les composants tiers ont leurs propres termes du contrat de licence. Vous pouvez afficher les termes du contrat de licence en cliquant sur le lien **Termes du contrat de licence** en regard de chaque composant. Choisissez **Installer** pour ajouter les composants et installer Visual Studio et Visual C++ pour le développement mobile multiplateforme.  
   

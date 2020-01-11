@@ -15,12 +15,12 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2439f280ee590f1b13e339b69c6f3f147bb1ea39
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: abd8f8e9ee35c234a79af74199b11d5491e6fbee
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297809"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851634"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Lancement rapide, Environnement, boîte de dialogue Options
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Vous pouvez utiliser **Lancement rapide** pour rechercher et exécuter rapidemen
 ## <a name="show-previous-results"></a>Afficher les résultats précédents
  Par défaut, le terme de recherche que vous entrez n'est pas conservé entre les sessions de recherche. La chaîne de recherche est effacée si vous recherchez un terme, que vous déplacez le curseur en dehors de la zone **Lancement rapide**, puis que vous y revenez. Pour conserver les résultats de recherche, accédez à la boîte de dialogue **Options**, choisissez **Lancement rapide**, puis cochez la case **Afficher les résultats de la dernière recherche si le menu de lancement rapide est activé** . La prochaine fois que vous effectuez une recherche, quittez la zone Lancement rapide et revenez-y : la zone Lancement rapide conserve alors le dernier terme de recherche utilisé et vous montre également les résultats de recherche.
 
- Pour obtenir les conseils et astuces les plus récents liés à l’utilisation de **Lancement rapide**, consultez [The Visual Studio Blog](https://go.microsoft.com/fwlink/?LinkId=236054).
+ Pour obtenir les conseils et astuces les plus récents liés à l’utilisation de **Lancement rapide**, consultez [The Visual Studio Blog](https://blogs.msdn.com/b/visualstudio/).
 
 ## <a name="see-also"></a>Voir aussi
  [Éléments généraux de l’interface utilisateur (Visual Studio) boîte de](../../ide/reference/general-user-interface-elements-visual-studio.md) [dialogue Options](../../ide/reference/environment-options-dialog-box.md) de l’environnement

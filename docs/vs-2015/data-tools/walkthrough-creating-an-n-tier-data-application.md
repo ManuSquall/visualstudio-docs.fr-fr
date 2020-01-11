@@ -17,12 +17,12 @@ caps.latest.revision: 51
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bd77006eda03b716e3c54c0b5b52ac633a383377
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 195a3a36b53e5f84f6052a15e01007bb5ed77fac
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299592"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844198"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Procédure pas à pas : création d'une application de données multicouche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Les applications de données multicouches sont des applications qui accèdent au
 
 - écrire du code pour remplir les tables de données.
 
-  ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo") Pour obtenir une version vidéo de cette rubrique, consultez [vidéo : création d’une application de données multicouches](https://go.microsoft.com/fwlink/?LinkId=115188).
+  ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo") Pour obtenir une version vidéo de cette rubrique, consultez [vidéo : création d’une application de données multicouches](https://msdn2.microsoft.com/library/cc178916.aspx).
 
 ## <a name="prerequisites"></a>Configuration requise
  Pour exécuter cette procédure pas à pas, vous avez besoin des éléments suivants :
@@ -118,7 +118,7 @@ Les applications de données multicouches sont des applications qui accèdent au
 
      Si une connexion de données à l'exemple de base de données Northwind est disponible dans la liste déroulante, sélectionnez-la.
 
-     -ou-
+     \- ou -
 
      Cliquez sur **nouvelle connexion** pour ouvrir la boîte de dialogue **Ajouter une connexion** .
 
@@ -185,7 +185,7 @@ Les applications de données multicouches sont des applications qui accèdent au
 
 6. Dans la page **Choisir les méthodes à générer**, tapez **GetCustomers** dans le champ **Nom de la méthode** de la section **Retourner un DataTable**.
 
-7. Cliquez sur **Terminer**.
+7. Cliquez sur **Finish**.
 
 #### <a name="to-create-a-method-in-the-data-access-tier-that-returns-the-orders-table"></a>Pour créer une méthode dans la couche d'accès aux données qui retourne la table Orders
 
@@ -199,7 +199,7 @@ Les applications de données multicouches sont des applications qui accèdent au
 
 5. Dans la page **Choisir les méthodes à générer**, tapez **GetOrders** dans le champ **Nom de la méthode** de la section **Retourner un DataTable**.
 
-6. Cliquez sur **Terminer**.
+6. Cliquez sur **Finish**.
 
 7. Dans le menu **Générer** , cliquez sur **Générer la solution**.
 
@@ -374,7 +374,7 @@ Les applications de données multicouches sont des applications qui accèdent au
 
 #### <a name="to-test-the-application"></a>Pour tester l'application
 
-1. Appuyez sur F5.
+1. Appuyez sur la touche F5.
 
 2. Les données des tables Customers et Orders sont récupérées à partir du service de données et affichées dans le formulaire.
 

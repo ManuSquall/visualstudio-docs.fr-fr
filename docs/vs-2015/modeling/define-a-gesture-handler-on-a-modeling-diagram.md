@@ -12,21 +12,21 @@ caps.latest.revision: 36
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: bf749d1073faf4cf22febafce716af36b47c6484
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 67946ffb674a7f4a2346229b958ba8316d6ff919
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299306"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850494"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Définir un gestionnaire de mouvements sur un diagramme de modélisation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Dans Visual Studio,vous pouvez définir des commandes qui sont exécutées quand l’utilisateur double-clique sur des éléments ou les fait glisser sur un diagramme UML. Vous pouvez empaqueter ces extensions dans une extension d’intégration Visual Studio ([VSIX](https://go.microsoft.com/fwlink/?LinkId=160780)) et les distribuer à d’autres utilisateurs de Visual Studio.
+Dans Visual Studio,vous pouvez définir des commandes qui sont exécutées quand l’utilisateur double-clique sur des éléments ou les fait glisser sur un diagramme UML. Vous pouvez empaqueter ces extensions dans une extension d’intégration Visual Studio ([VSIX](https://msdn.microsoft.com/library/dd393694(VS.100).aspx)) et les distribuer à d’autres utilisateurs de Visual Studio.
 
  Si un comportement intégré existe déjà pour le type de diagramme et le type d’élément que vous souhaitez faire glisser, il se peut que vous ne puissiez pas effectuer d’ajouts à ce comportement ni le substituer.
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Configuration requise pour
  Consultez [Spécifications](../modeling/extend-uml-models-and-diagrams.md#Requirements).
 
  Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
@@ -34,7 +34,7 @@ Dans Visual Studio,vous pouvez définir des commandes qui sont exécutées quand
 ## <a name="creating-a-gesture-handler"></a>Création d’un gestionnaire de mouvements
  Pour définir un gestionnaire de mouvements pour un concepteur UML, vous devez créer une classe qui définit le comportement du gestionnaire de mouvements, puis incorporer cette classe dans une extension d’intégration Visual Studio (VSIX). Cette dernière joue le rôle d’un conteneur capable d’installer le gestionnaire. Deux autres méthodes permettent de définir un gestionnaire de mouvements :
 
-- **Créer un gestionnaire de mouvements dans son propre VSIX à l’aide d’un modèle de projet.** Il s’agit de l’approche la plus rapide. Choisissez cette méthode si vous ne souhaitez pas combiner votre gestionnaire avec d’autres types d’extensions, telles que les extensions de validation, les éléments de boîte à outils personnalisés ou les commandes de menu.
+- **Créer un gestionnaire de mouvements dans son propre VSIX à l’aide d’un modèle de projet.** . Il s’agit de la méthode la plus rapide. Choisissez cette méthode si vous ne souhaitez pas combiner votre gestionnaire avec d’autres types d’extensions, telles que les extensions de validation, les éléments de boîte à outils personnalisés ou les commandes de menu.
 
 - **Créer des gestionnaires de mouvements et des projets VSIX distincts.** Adoptez cette approche si vous souhaitez combiner plusieurs types d’extensions dans la même extension VSIX. Par exemple, si votre gestionnaire de mouvements prévoit que le modèle observe des contraintes spécifiques, vous pouvez l’incorporer au même VSIX en tant que méthode de validation.
 
@@ -56,7 +56,7 @@ Dans Visual Studio,vous pouvez définir des commandes qui sont exécutées quand
 
 1. Créez un projet de bibliothèque de classes dans une nouvelle solution [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ou dans une solution existante.
 
-   1. Dans le menu **Fichier**, sélectionnez **Nouveau**, **Projet**.
+   1. Dans le menu **Fichier** , choisissez **Nouveau**, **Projet**.
 
    2. Sous **Modèles installés**, développez **Visual C#** ou **Visual Basic**, puis dans la colonne du milieu, choisissez **Bibliothèque de classes**.
 
@@ -243,7 +243,7 @@ Dans Visual Studio,vous pouvez définir des commandes qui sont exécutées quand
 
    - Si vous avez plusieurs projets, vérifiez que le projet VSIX est défini comme projet de démarrage de la solution.
 
-   - Dans l’Explorateur de solutions, dans le menu contextuel du projet de démarrage ou du projet unique, choisissez Propriétés. Dans l’éditeur de propriétés du projet, choisissez l’onglet **Déboguer** . Assurez-vous que la chaîne dans le champ **Démarrer le programme externe** correspond au chemin d’accès complet de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], généralement :
+   - Dans l'Explorateur de solutions, dans le menu contextuel du projet de démarrage ou du projet unique, choisissez Propriétés. Dans l’éditeur de propriétés du projet, choisissez l’onglet **Déboguer** . Assurez-vous que la chaîne dans le champ **Démarrer le programme externe** correspond au chemin d’accès complet de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], généralement :
 
         `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`
 
@@ -280,7 +280,7 @@ Dans Visual Studio,vous pouvez définir des commandes qui sont exécutées quand
 
  Les paramètres de ces méthodes sont les suivants :
 
-- `ShapeElement target` Forme ou diagramme sur lequel l’utilisateur a fait glisser quelque chose.
+- `ShapeElement target`. Forme ou diagramme sur lequel l’utilisateur a fait glisser quelque chose.
 
     `ShapeElement` est une classe dans l’implémentation qui est sous-jacente aux outils de modélisation UML. Pour réduire le risque de mettre le modèle UML et les diagrammes dans un état incohérent, nous vous recommandons de ne pas utiliser directement les méthodes de cette classe. Au lieu de cela, encapsulez l’élément dans un `IShape`, puis utilisez les méthodes décrites dans [afficher un modèle UML sur des diagrammes](../modeling/display-a-uml-model-on-diagrams.md).
 
@@ -311,7 +311,7 @@ Dans Visual Studio,vous pouvez définir des commandes qui sont exécutées quand
       target.Store.GetService(typeof(EnvDTE.DTE)) as EnvDTE.DTE
       ```
 
-- `DiagramDragEventArgs eventArgs` Ce paramètre achemine la forme sérialisée de l’objet source d’une opération de glissement :
+- `DiagramDragEventArgs eventArgs`. Ce paramètre achemine la forme sérialisée de l’objet source d’une opération de glissement :
 
     ```
     System.Windows.Forms.IDataObject data = eventArgs.Data;

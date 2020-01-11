@@ -126,12 +126,12 @@ caps.latest.revision: 17
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: dd9a0e09d4032feff398a9ba8c7333c84cb46550
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: fb2b8120665c7eb08f1462dd7b3299538079ae9b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295849"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75852393"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Annotation de paramètres de fonction et valeurs de retour
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -219,7 +219,7 @@ Cet article décrit les utilisations typiques des annotations pour les paramètr
   
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`  
   
-     En d’autres termes, tous les éléments qui existent dans la mémoire tampon jusqu’à `s` dans le pré-État sont valides dans l’État postérieur.  Exemple :  
+     En d’autres termes, tous les éléments qui existent dans la mémoire tampon jusqu’à `s` dans le pré-État sont valides dans l’État postérieur.  Par exemple :  
   
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`  
   
@@ -247,7 +247,7 @@ Cet article décrit les utilisations typiques des annotations pour les paramètr
   
      `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`  
   
-     En d’autres termes, tous les éléments qui existent dans la mémoire tampon jusqu’à `s` dans le pré-État sont valides dans l’État postérieur.  Exemple :  
+     En d’autres termes, tous les éléments qui existent dans la mémoire tampon jusqu’à `s` dans le pré-État sont valides dans l’État postérieur.  Par exemple :  
   
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`  
   
@@ -484,7 +484,7 @@ Cet article décrit les utilisations typiques des annotations pour les paramètr
   
 - `_Struct_size_bytes_(size)`  
   
-     S’applique à une déclaration de classe ou de struct.  Indique qu’un objet valide de ce type peut être plus grand que le type déclaré, avec le nombre d’octets spécifié par `size`.  Exemple :  
+     S’applique à une déclaration de classe ou de struct.  Indique qu’un objet valide de ce type peut être plus grand que le type déclaré, avec le nombre d’octets spécifié par `size`.  Par exemple :  
   
      `typedef _Struct_size_bytes_(nSize) struct MyStruct {    size_t nSize;    ... };`  
   
@@ -493,7 +493,7 @@ Cet article décrit les utilisations typiques des annotations pour les paramètr
      `min(pM->nSize, sizeof(MyStruct))`  
   
 ## <a name="related-resources"></a>Ressources connexes  
- [Blog de l’équipe d’analyse du code](https://go.microsoft.com/fwlink/?LinkId=251197)  
+ [Blog de l’équipe d’analyse du code](https://blogs.msdn.com/b/codeanalysis/)  
   
 ## <a name="see-also"></a>Voir aussi  
  [Utilisation d’annotations SAL pour réduireC++ les erreurs C/code](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   

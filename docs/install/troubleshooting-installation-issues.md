@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 24a6a642528fbf8fed7b8000434a963e32cc85ee
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: fe581d9c754ee78f66771901661e8870fd91b4b3
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594485"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75849594"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Résolution des problèmes d’installation et de mise à niveau de Visual Studio
 
@@ -127,11 +127,11 @@ Pour plus d’informations sur la résolution des problèmes liés à une [insta
 
 Les journaux d’installation sont nécessaires pour résoudre la plupart des problèmes d’installation. Lorsque vous envoyez un problème à l’aide de [Signaler un problème](../ide/how-to-report-a-problem-with-visual-studio.md) dans Visual Studio Installer, ces journaux sont automatiquement inclus dans votre rapport.
 
-Si vous contactez le Support Microsoft, vous devrez peut-être fournir ces journaux d’installation à l’aide de l’outil [Microsoft Visual Studio and .NET Framework Log Collection Tool](https://aka.ms/vscollect). L’outil de collecte des journaux permet de collecter des journaux d’installation à partir de tous les composants installés par Visual Studio, y compris .NET Framework, SDK Windows et SQL Server. Il permet également de collecter des informations sur l’ordinateur, un inventaire de Windows Installer et des informations du journal des événements Windows pour Visual Studio Installer, le programme d’installation de Windows et la restauration du système.
+Si vous contactez le Support Microsoft, vous devrez peut-être fournir ces journaux d’installation à l’aide de l’outil [Microsoft Visual Studio and .NET Framework Log Collection Tool](https://www.microsoft.com/download/details.aspx?id=12493). L’outil de collecte des journaux permet de collecter des journaux d’installation à partir de tous les composants installés par Visual Studio, y compris .NET Framework, SDK Windows et SQL Server. Il permet également de collecter des informations sur l’ordinateur, un inventaire de Windows Installer et des informations du journal des événements Windows pour Visual Studio Installer, le programme d’installation de Windows et la restauration du système.
 
 Pour collecter les journaux :
 
-1. [Télécharger l’outil](https://aka.ms/vscollect).
+1. [Télécharger l’outil](https://www.microsoft.com/download/details.aspx?id=12493).
 2. Ouvrez une invite de commandes d’administration.
 3. Exécutez `Collect.exe` à partir du répertoire dans lequel vous avez enregistré l’outil.
 4. Le fichier `vslogs.zip` résultant se trouve dans le répertoire `%TEMP%`, par exemple, `C:\Users\YourName\AppData\Local\Temp\vslogs.zip`.

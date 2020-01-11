@@ -5,16 +5,16 @@ author: seaniyer
 ms.author: seiyer
 ms.date: 11/19/2019
 ms.topic: reference
-ms.openlocfilehash: 57d956a426e791fcc84d5972f564cd554d6e72f8
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: bce4fa8c824b6a4f1332145c1383131eb6488b6c
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75406107"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847381"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>Comment augmenter les chances de résolution d’un problème de performances
 
-L’outil «[signaler un problème](https://aka.ms/vs-rap)» est largement utilisé par les utilisateurs de Visual Studio pour signaler une série de problèmes. L’équipe Visual Studio parvient à faire face aux tendances de blocage et de lenteur des commentaires des utilisateurs et à résoudre les problèmes qui ont un impact sur un large SWATH d’utilisateurs. Plus un ticket de commentaires spécifique est exploitable, plus il est probable qu’il sera diagnostiqué et résolu rapidement par l’équipe du produit. Ce document décrit les meilleures pratiques lors de la création de rapports sur les incidents ou les problèmes de lenteur afin de les rendre plus exploitables.
+L’outil «[signaler un problème](https://docs.microsoft.com/visualstudio/ide/how-to-report-a-problem-with-visual-studio?view=vs-2019)» est largement utilisé par les utilisateurs de Visual Studio pour signaler une série de problèmes. L’équipe Visual Studio parvient à faire face aux tendances de blocage et de lenteur des commentaires des utilisateurs et à résoudre les problèmes qui ont un impact sur un large SWATH d’utilisateurs. Plus un ticket de commentaires spécifique est exploitable, plus il est probable qu’il sera diagnostiqué et résolu rapidement par l’équipe du produit. Ce document décrit les meilleures pratiques lors de la création de rapports sur les incidents ou les problèmes de lenteur afin de les rendre plus exploitables.
 
 ## <a name="general-best-practices"></a>Meilleures pratiques générales
 
@@ -188,7 +188,7 @@ Ce qui rend ces types de problèmes les plus exploitables consiste à fournir de
     -   Définir la variable d’environnement globale **ServiceHubTraceLevel** sur **All**
     -   Reproduisez le problème.
 
-2.  Téléchargez le Microsoft Visual Studio et .NET Framework outil de collecte de journaux [ici](https://aka.ms/vscollect).
+2.  Téléchargez le Microsoft Visual Studio et .NET Framework outil de collecte de journaux [ici](https://www.microsoft.com/download/details.aspx?id=12493).
 3.  Exécutez l'outil. Cela génère un fichier zip dans **% temp%/vslogs.zip**. Veuillez joindre ce fichier à vos commentaires.
 
 ## <a name="see-also"></a>Voir aussi

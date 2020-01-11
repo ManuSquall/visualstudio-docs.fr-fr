@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 70217cc4c83a1f281e8a2fdebec404fa9757bf01
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: a151e16537eb143f27e9fd518cdc2495ac954563
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299025"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851369"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Configuration de votre projet Azure dans Visual Studio pour utiliser plusieurs configurations de service
 
@@ -57,7 +57,7 @@ Par défaut, les diagnostics sont activés pour le rôle web. Le projet de servi
 
 ## <a name="settings-page"></a>Page Paramètres
 
-Sur la page **Paramètres**, vous pouvez ajouter des paramètres à une configuration sous la forme de paires nom-valeur. Le code exécuté dans le rôle peut lire les valeurs de vos paramètres de configuration à l'exécution à l'aide des classes fournies par la [bibliothèque managée Azure](https://go.microsoft.com/fwlink?LinkID=171026), spécifiquement la méthode [GetConfigurationSettingValue](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleenvironment.getconfigurationsettingvalue.aspx).
+Sur la page **Paramètres**, vous pouvez ajouter des paramètres à une configuration sous la forme de paires nom-valeur. Le code exécuté dans le rôle peut lire les valeurs de vos paramètres de configuration à l'exécution à l'aide des classes fournies par la [bibliothèque managée Azure](https://msdn.microsoft.com/library/azure/dn602775(v=azure.11).aspx), spécifiquement la méthode [GetConfigurationSettingValue](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleenvironment.getconfigurationsettingvalue.aspx).
 
 ### <a name="configuring-a-connection-string-for-a-storage-account"></a>Configuration d’une chaîne de connexion pour un compte de stockage
 

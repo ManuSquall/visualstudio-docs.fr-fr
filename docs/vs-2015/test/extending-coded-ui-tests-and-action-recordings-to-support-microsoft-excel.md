@@ -8,19 +8,19 @@ ms.assetid: 6b0f72a4-70ca-4e55-b236-2ea1034fd8a7
 caps.latest.revision: 32
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 4e8e167f42a2f00553f1462db058e1b4e6d81b0f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: c4cac9981a582d5ba9527e0f8dc47d14b6fba18b
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302563"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851765"
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>Extension des tests codés de l'interface utilisateur t enregistrements des actions pour prendre charge Microsoft Excel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 L'infrastructure de test pour les tests codés de l'interface utilisateur et les enregistrements des actions ne prend pas en charge toutes les interfaces utilisateur possibles. Elle risque de ne pas prendre en charge l’interface utilisateur spécifique que vous souhaitez tester. Par exemple, vous ne pouvez pas créer immédiatement un test codé de l'interface utilisateur ou un enregistrement des actions pour une feuille de calcul [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)]. Toutefois, vous pouvez créer votre propre extension de l'infrastructure de test codé de l'interface utilisateur, qui prend en charge votre interface utilisateur spécifique en tirant parti de l'extensibilité de l'infrastructure de test codé de l'interface utilisateur. La rubrique suivante fournit un exemple montrant comment étendre l'infrastructure pour prendre en charge la création de tests codés de l'interface utilisateur et les enregistrements des actions pour [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)]. Pour plus d’informations sur les plateformes prises en charge, consultez [Configurations et plateformes prises en charge pour les tests codés de l’interface utilisateur et les enregistrements des actions](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md).
 
- **Requirements**
+ **Spécifications**
 
 - Visual Studio Enterprise
 
@@ -39,7 +39,7 @@ L'infrastructure de test pour les tests codés de l'interface utilisateur et les
 
 - SampleTestProject
 
-  Récupérez l’exemple à partir de ce [billet de blog](https://go.microsoft.com/fwlink/?LinkID=185592).
+  Récupérez l’exemple à partir de ce [billet de blog](https://blogs.msdn.com/b/gautamg/archive/2010/01/05/3-introducing-sample-excel-extension.aspx).
 
 > [!NOTE]
 > L'exemple est conçu pour être utilisé avec Microsoft Excel 2010. L'exemple peut fonctionner avec d'autres versions de Microsoft Excel, mais il n'est pas pris en charge actuellement.

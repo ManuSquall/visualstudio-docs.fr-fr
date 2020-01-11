@@ -10,19 +10,19 @@ ms.assetid: 5838f02d-001f-49ce-adce-c9ea1afaec2f
 caps.latest.revision: 58
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3aec055c0fb0253f0b233f51e50485ccb4ee3382
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 1db35e1eb98ad23a4414a48389092a3b05485527
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74302598"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851849"
 ---
 # <a name="creating-a-data-driven-coded-ui-test"></a>Création d'un test codé de l'interface utilisateur piloté par les données
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pour tester différentes conditions, vous pouvez exécuter vos tests à plusieurs reprises avec différentes valeurs de paramètre. Les tests codés de l'interface utilisateur pilotés par les données sont un moyen pratique pour cela. Vous définissez des valeurs de paramètre dans une source de données et chaque ligne de la source de données est une itération du test codé de l'interface utilisateur. Le résultat global du test repose sur le résultat de toutes les itérations. Par exemple, si une itération de test échoue, le résultat global du test est un échec.
 
- **Requirements**
+ **Spécifications**
 
 - Visual Studio Enterprise
 
@@ -205,7 +205,7 @@ Pour tester différentes conditions, vous pouvez exécuter vos tests à plusieur
 
    **Aide**
 
-   Pour plus d’informations, consultez [Test de livraison continue avec Visual Studio 2012 - Chapitre 2 : Tests unitaires : tester l’intérieur](https://go.microsoft.com/fwlink/?LinkID=255188) et [Test de livraison continue avec Visual Studio 2012 - Chapitre 5 : Automatisation des tests système](https://go.microsoft.com/fwlink/?LinkID=255196)
+   Pour plus d’informations, consultez [Test de livraison continue avec Visual Studio 2012 - Chapitre 2 : Tests unitaires : tester l’intérieur](https://msdn.microsoft.com/library/jj159340.aspx) et [Test de livraison continue avec Visual Studio 2012 - Chapitre 5 : Automatisation des tests système](https://msdn.microsoft.com/library/jj159335.aspx)
 
 ## <a name="q--a"></a>Q et R
 

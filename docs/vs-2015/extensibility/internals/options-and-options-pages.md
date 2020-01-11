@@ -14,12 +14,12 @@ ms.assetid: e6c0e636-5ec3-450e-b395-fc4bb9d75918
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1e30be26c40834d3122d491f8d150f02b6f3b776
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 4512867f636e2362aa28d52c5af28bf8eb9697f9
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300698"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851151"
 ---
 # <a name="options-and-options-pages"></a>Options et pages Options
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Cliquez sur **options** dans le menu **Outils** pour ouvrir la boîte de dialogu
 - <xref:System.ComponentModel.DescriptionAttribute> détermine la description de l’option.  
   
   > [!NOTE]
-  > Les attributs équivalents, SRCategory, LocDisplayName et SRDescription, utilisent des ressources de type chaîne pour la localisation et sont définis dans l' [exemple de projet managé](https://go.microsoft.com/fwlink/?LinkId=122774).  
+  > Les attributs équivalents, SRCategory, LocDisplayName et SRDescription, utilisent des ressources de type chaîne pour la localisation et sont définis dans l' [exemple de projet managé](https://msdn.com/vsx).  
   
   Prenons le fragment de code suivant :  
   

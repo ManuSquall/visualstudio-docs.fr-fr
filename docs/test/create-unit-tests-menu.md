@@ -9,19 +9,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c562d6f750db7096e37b863c46d6330eb484912
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 3eb001d2022bb57981f21fd99c051c54aeb08301
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588822"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844319"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Créer des stubs de méthodes de tests unitaires avec la commande Créer des tests unitaires
 
 La commande **Créer des tests unitaires** permet de créer des stubs de méthodes de tests unitaires. Cette fonctionnalité permet de configurer facilement un projet de test, la classe de test et le stub de méthode de test qui y est contenu.
 
+::: moniker range="vs-2017"
 > [!NOTE]
 > La commande de menu **Créer des tests unitaires** est disponible seulement pour le code managé qui cible le .NET Framework (mais pas .NET Core).
+::: moniker-end
+::: moniker range=">=vs-2019"
+> [!NOTE]
+> La commande de menu **créer des tests unitaires** est uniquement disponible pour le code managé.
+::: moniker-end
 
 La commande de menu **Créer des tests unitaires** est extensible et peut servir à générer des tests pour MSTest, MSTest V2, NUnit et xUnit.
 

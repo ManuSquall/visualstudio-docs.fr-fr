@@ -12,18 +12,18 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 25bd88886b6bed447ec7d091543fccdb478db9c5
-ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
+ms.openlocfilehash: bda6d8e20064ab2197408db6b9a55a86325515e8
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72588880"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846735"
 ---
-# <a name="install-cross-platform-mobile-development-with-c"></a>Installez le développement mobile multiplateforme avecC++
+# <a name="install-cross-platform-mobile-development-with-c"></a>Installer le développement mobile multiplateforme avec C++
 
 Vous pouvez utiliser C++ dans Visual Studio pour créer des applications de bureau Windows, des applications de la plateforme Windows universelle (UWP), des applications Linux et, désormais, des applications pour Android et iOS. La charge de travail **Développement mobile en C++** est un ensemble installable de composants dans Visual Studio qui inclut des modèles Visual Studio multiplateformes iOS, Android et UWP. Elle installe les outils multiplateformes ainsi que les Kits de développement logiciel nécessaires à une prise en main rapide, sans que vous n’ayez à effectuer les recherches, le téléchargement ni la configuration. Vous pouvez utiliser ces outils dans Visual Studio pour créer, modifier, déboguer et tester facilement vos projets multiplateformes. Cet article explique comment installer les outils et les logiciels tiers requis pour développer des applications multiplateformes dans à C++ l’aide de Visual Studio. Pour obtenir une vue d’ensemble, consultez [Développement multiplateforme en Visual C++ pour appareils mobiles](https://visualstudio.microsoft.com/vs/features/cplusplus-mdd/)
 
-## <a name="requirements"></a>spécifications
+## <a name="requirements"></a>Configuration requise pour
 
 ::: moniker range="vs-2017"
 
@@ -48,7 +48,7 @@ Pour créer des applications pour des plateformes d’appareils spécifiques, il
 
 - La génération de code pour iOS nécessite un ID Apple, un compte iOS Developer Program et un ordinateur Mac pouvant exécuter [Xcode](https://developer.apple.com/xcode/) version 10,2 ou ultérieure sur OS X Mavericks (version 10,9) ou versions ultérieures. Pour obtenir un lien pointant vers la procédure d’installation, consultez [Installer les outils pour iOS](#install-tools-for-ios).
 
-- Les émulateurs Windows Phone nécessitent un ordinateur qui peut exécuter Hyper-V. La fonctionnalité Hyper-V de Windows doit être activée pour permettre l’installation et l’exécution des émulateurs. Pour plus d’informations, consultez la [configuration système requise](system-requirements-for-the-visual-studio-emulator-for-android.md)de l’émulateur.
+- Les émulateurs Windows Phone nécessitent un ordinateur qui peut exécuter Hyper-V. La fonctionnalité Hyper-V de Windows doit être activée pour permettre l’installation et l’exécution des émulateurs. Pour plus d’informations, consultez la [configuration requise](system-requirements-for-the-visual-studio-emulator-for-android.md) de l’émulateur.
 
 ## <a name="get-the-tools"></a>Se procurer les outils
 
@@ -96,7 +96,7 @@ Vous pouvez utiliser Visual Studio pour modifier, déboguer et déployer du code
 
 Si vous décidez de ne pas installer une ou plusieurs dépendances tierces à l’aide du programme d’installation de Visual Studio quand vous installez la charge de travail **Développement mobile en C++** (ou l’option Développement mobile Visual C++ dans Visual Studio 2015), vous pouvez les installer ultérieurement à l’aide de la procédure décrite dans [Installer les outils](#install-the-tools). Le programme d’installation de Visual Studio est régulièrement mis à jour pour installer les derniers composants tiers. Vous pouvez l’utiliser pour installer Kits de développement logiciel (SDK) et les NDK. Vous pouvez également les installer ou les mettre à jour indépendamment de Visual Studio.
 
-Vous pouvez réexécuter l’application SDK Manager dans le répertoire Android SDK pour mettre à jour le kit SDK et installer des outils facultatifs, ainsi que des niveaux d’API supplémentaires. L’installation des mises à jour risque d’échouer, sauf si vous utilisez **Exécuter en tant qu’administrateur** pour exécuter l’application du Gestionnaire du SDK. Si vous rencontrez des problèmes lors de la génération d’une application Android, recherchez des mises à jour pour les Kits de développement logiciel installés dans le Gestionnaire du SDK.
+Vous pouvez réexécuter l’application SDK Manager dans le répertoire Android SDK pour mettre à jour le kit SDK et installer des outils facultatifs, ainsi que des niveaux d’API supplémentaires. L’installation des mises à jour risque d’échouer, sauf si vous utilisez **Exécuter en tant qu’administrateur** pour exécuter l’application du Gestionnaire du SDK. Si vous rencontrez des problèmes lors de la génération d’une application Android, recherchez des mises à jour pour les kits SDK installés dans le Gestionnaire du SDK.
 
 Pour utiliser certains émulateurs Android fournis avec le Android SDK, vous devrez peut-être configurer l’accélération matérielle. Pour plus d’informations, consultez [accélération matérielle pour les performances de l’émulateur (Hyper-V & HAXM)](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/hardware-acceleration?tabs=vswin).
 
@@ -117,4 +117,4 @@ Dans la plupart des cas, Visual Studio peut détecter les configurations pour le
 ## <a name="see-also"></a>Voir aussi
 
 - [Installer et configurer des outils de génération en utilisant iOS](install-and-configure-tools-to-build-using-ios.md)
-- [Développement multiplateforme en Visual C++ pour appareils mobiles](https://go.microsoft.com/fwlink/p/?LinkId=536383)
+- [Développement multiplateforme en Visual C++ pour appareils mobiles](https://visualstudio.microsoft.com/vs/features/cplusplus-mdd/)

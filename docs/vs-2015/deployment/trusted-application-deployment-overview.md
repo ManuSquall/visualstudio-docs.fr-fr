@@ -17,14 +17,14 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a95392525826fcfb2595e1bac7d45ebea20317fc
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 673cc3d9b936131e6423a015af5c78486846fbe7
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74294694"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847705"
 ---
-# <a name="trusted-application-deployment-overview"></a>Vue d'ensemble du déploiement d'applications approuvées
+# <a name="trusted-application-deployment-overview"></a>Trusted Application Deployment Overview
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette rubrique offre une vue d’ensemble du déploiement d’applications [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] qui ont des autorisations élevées à l’aide de la technologie de déploiement d’applications approuvées.  
@@ -39,7 +39,7 @@ Cette rubrique offre une vue d’ensemble du déploiement d’applications [!INC
   
 |Objet ou rôle|Description|  
 |--------------------|-----------------|  
-|administrateur|Entité organisationnelle responsable de la mise à jour et la maintenance des ordinateurs client|  
+|Administrateur de|Entité organisationnelle responsable de la mise à jour et la maintenance des ordinateurs client|  
 |gestionnaire de confiance|Sous-système dans le Common Language Runtime (CLR) chargé d'appliquer la sécurité des applications clientes.|  
 |publisher|Entité qui écrit et gère l'application.|  
 |système de déploiement|Entité qui assemble et distribue l'application aux utilisateurs.|  
@@ -74,7 +74,7 @@ Cette rubrique offre une vue d’ensemble du déploiement d’applications [!INC
 ### <a name="add-the-publisher-to-the-trusted-publishers-store"></a>Ajouter l'éditeur au magasin d'éditeurs approuvés  
  Pour que votre application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] reçoive un niveau supérieur de confiance, vous devez ajouter votre certificat en tant qu'éditeur approuvé à chaque ordinateur client sur lequel l'application s'exécutera. Cette tâche est une configuration unique. Une fois terminée, vous pouvez déployer autant d'applications [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] signées avec le certificat de votre éditeur que vous souhaitez, et elles s'exécuteront toutes avec un niveau de confiance élevé.  
   
- Si vous déployez votre application dans un environnement de bureau géré, par exemple, un intranet d'entreprise exécutant le système d'exploitation Windows, vous pouvez ajouter des éditeurs approuvés au magasin d'un client en créant une nouvelle liste de certificats de confiance (CTL) avec la stratégie de groupe. Pour plus d’informations, consultez [Créer une liste de certificats de confiance pour un objet Stratégie de groupe](https://go.microsoft.com/fwlink/?LinkId=102576).  
+ Si vous déployez votre application dans un environnement de bureau géré, par exemple, un intranet d'entreprise exécutant le système d'exploitation Windows, vous pouvez ajouter des éditeurs approuvés au magasin d'un client en créant une nouvelle liste de certificats de confiance (CTL) avec la stratégie de groupe. Pour plus d’informations, consultez [Créer une liste de certificats de confiance pour un objet Stratégie de groupe](https://technet.microsoft.com/library/2c03582f-00b2-43e5-ae1d-493894ad0fd7).  
   
  Si vous ne déployez pas votre application dans un environnement de bureau géré, vous disposez des options suivantes pour ajouter un certificat au magasin d'éditeurs approuvés :  
   

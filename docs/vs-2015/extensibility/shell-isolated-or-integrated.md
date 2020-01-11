@@ -14,17 +14,17 @@ ms.assetid: c64a9bf0-9bf8-45c3-8fa2-306fa6cab66a
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0db0ab2c2a97f7cedde5b9b3a5ab925467a25146
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: aa346ebfe321e4672ea3fa71a4dcc872ebf22cda
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300479"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850232"
 ---
 # <a name="shell-isolated-or-integrated"></a>Shell (isolé ou intégré)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous pouvez créer votre propre application basée sur Visual Studio en mode intégré ou isolé. En mode intégré, de nombreuses fonctionnalités de Visual Studio sont disponibles en plus de votre application. En mode isolé, vous choisissez un sous-ensemble de fonctionnalités Visual Studio que vous souhaitez distribuer avec votre propre extension.  
+Vous pouvez créer votre propre application basée sur Visual Studio en mode intégré ou isolé. En mode intégré, de nombreuses fonctionnalités de Visual Studio sont disponibles en plus de votre application. En mode isolé, vous choisissez un sous-ensemble de fonctionnalités de Visual Studio que vous souhaitez distribuer avec votre propre extension.  
   
 ## <a name="integrated-mode"></a>Mode intégré  
  Le mode intégré permet à vos utilisateurs d’utiliser les fonctionnalités Visual Studio standard, ainsi que vos outils personnalisés. L’interpréteur de commandes intégré est principalement destiné à l’hébergement des langages de programmation et des outils de développement de logiciels.  
@@ -55,7 +55,7 @@ Vous pouvez créer votre propre application basée sur Visual Studio en mode int
 > - votre propre CLUF qui oblige vos clients à accepter les termes qui protègent le shell intégré ou isolé de Visual Studio au moins aussi bien que les termes du contrat de licence utilisateur final Microsoft pour le logiciel de Shell  
   
 ## <a name="additional-resources"></a>Ressources supplémentaires  
- Pour plus d’informations sur les packages redistribuables, consultez le site Web des téléchargements de l' [extensibilité Visual Studio](https://go.microsoft.com/fwlink/?LinkID=119298) .  
+ Pour plus d’informations sur les packages redistribuables, consultez le site Web des téléchargements de l' [extensibilité Visual Studio](https://msdn.microsoft.com/vstudio/bb984878.aspx) .  
   
 ## <a name="see-also"></a>Voir aussi  
  [Publication d’extensions Visual Studio](../extensibility/shipping-visual-studio-extensions.md)

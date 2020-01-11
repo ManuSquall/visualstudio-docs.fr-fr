@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d8e25ad181202a2c7994c116e2220426ca3d8509
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 922be22619ee0bd16e2e5ac563999be7db81d45e
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297640"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851424"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Rechercher et sélectionner un type .NET, boîte de dialogue
 Dans la fenêtre **Propriétés** , les boîtes de dialogue ou les concepteurs tels que le concepteur de variables, lorsque vous sélectionnez **Parcourir les types...** dans une liste de types de données, est la boîte de dialogue **Parcourir et sélectionner un type .net** (référencée sous la forme abrégée de l' « Explorateur de types »). Cette boîte de dialogue vous permet de choisir un type dans une arborescence d'assemblys et de projets.
@@ -31,7 +31,7 @@ Dans la fenêtre **Propriétés** , les boîtes de dialogue ou les concepteurs t
 - lors de l'ajout d'un catch sur l'activité <xref:System.Activities.Statements.TryCatch>.
 
 > [!NOTE]
-> L'explorateur de types peut afficher des types de tableau en escalier Visual Basic, mais pas des types de tableau multidimensionnel. Pour plus d’informations, consultez [tableaux en escalier](https://go.microsoft.com/fwlink/?LinkId=195226) et [tableaux multidimensionnels](https://go.microsoft.com/fwlink/?LinkId=195227) .
+> L'explorateur de types peut afficher des types de tableau en escalier Visual Basic, mais pas des types de tableau multidimensionnel. Pour plus d’informations, consultez [tableaux en escalier](https://msdn.microsoft.com/library/hkhhsz9t(VS.90).aspx) et [tableaux multidimensionnels](https://msdn.microsoft.com/library/d2de1t93(VS.90).aspx) .
 
 ## <a name="selecting-a-value-or-reference-type-from-the-type-browser"></a>Sélection d'un type valeur ou référence dans l'Explorateur de types
 
@@ -39,7 +39,7 @@ Dans la fenêtre **Propriétés** , les boîtes de dialogue ou les concepteurs t
 
 1. Dans la zone **nom de type** , entrez le nom du type que vous souhaitez utiliser.
 
-2. Effectuez l'une des opérations suivantes :
+2. Effectuez l'une des actions suivantes :
 
     - Une fois que le nom du type que vous souhaitez utiliser s’affiche dans l’arborescence, dans la zone **nom de type** , double-cliquez sur le type pour le sélectionner.
 
@@ -61,7 +61,7 @@ Dans la fenêtre **Propriétés** , les boîtes de dialogue ou les concepteurs t
 ## <a name="filtering-search-results-in-the-type-browser"></a>Filtrage des résultats de la recherche dans l'Explorateur de types
  La liste des types dans la zone **nom de type** est plus petite lorsque vous tapez plus de caractères pour rechercher une correspondance. Seuls les types dont le nom complet ou le nom court commence par la chaîne tapée s'affichent dans la liste filtrée.
 
- Exemple :
+ Par exemple :
 
 1. L' **opération** de frappe correspond à <xref:System.OperationCanceledException> mais pas <xref:System.InvalidOperationException>. Pour trouver <xref:System.InvalidOperationException>, commencez par taper System.I ou Invalid.
 

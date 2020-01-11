@@ -11,25 +11,25 @@ helpviewer_keywords:
 ms.assetid: abbd3c3c-3a6e-4539-bd6c-a5891dead234
 caps.latest.revision: 12
 manager: jillfra
-ms.openlocfilehash: 8436b8eee0193715e4ae886db18f91f7148dcb3b
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 1f3b0c173d5d1f4b3642bf61d2cca9fb6fd231e6
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300432"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850323"
 ---
 # <a name="how-to-create-a-toolbox-control-that-uses-windows-forms"></a>Comment : créer un contrôle de boîte à outils qui utilise Windows Forms
 Le modèle de contrôle de boîte à outils Windows Forms inclus dans le [!INCLUDE[vssdk_dev11_long](../includes/vssdk-dev11-long-md.md)] vous permet de créer des contrôles Windows Forms qui sont automatiquement ajoutés à la **boîte à outils** au moment où l’extension est installée. Cette rubrique vous montre comment utiliser le modèle pour créer un contrôle de **boîte à outils** que vous pouvez distribuer à d’autres utilisateurs.  
   
 > [!NOTE]
-> Pour savoir comment télécharger le Kit de développement logiciel (SDK) Visual Studio, consultez [Centre de développement d’extensibilité Visual Studio](https://go.microsoft.com/fwlink/?linkid=121964) sur le site web MSDN.  
+> Pour savoir comment télécharger le Kit de développement logiciel (SDK) Visual Studio, consultez [Centre de développement d’extensibilité Visual Studio](https://msdn.microsoft.com/vsx/default.aspx) sur le site web MSDN.  
   
 ## <a name="creating-a-toolbox-control"></a>Création d’un contrôle de boîte à outils  
  Pour créer le projet, utilisez le modèle de contrôle de boîte à outils Windows Forms, puis générez une interface utilisateur (IU) dans le concepteur.  
   
 #### <a name="to-create-a-windows-forms-toolbox-control-project"></a>Pour créer un projet de contrôle de boîte à outils Windows Forms  
   
-1. Dans le menu **Fichier**, cliquez sur **Nouveau**, puis sur **Projet**.  
+1. Dans le menu **Fichier** , cliquez sur **Nouveau**, puis sur **Projet**.  
   
 2. Dans la boîte de dialogue **Nouveau projet** , sous **Modèles installés**, cliquez sur le nœud correspondant à votre langage de programmation préféré, puis cliquez sur **Extensibilité**. Dans la liste des types de projets, sélectionnez **Contrôle de boîte à outils Windows Forms**.  
   
@@ -67,7 +67,7 @@ Le modèle de contrôle de boîte à outils Windows Forms inclus dans le [!INCLU
   
 #### <a name="to-build-and-test-the-control"></a>Pour générer et tester le contrôle  
   
-1. Appuyez sur F5.  
+1. Appuyez sur la touche F5.  
   
 2. Dans la nouvelle instance de Visual Studio, créez un projet d’application Windows Forms.  
   

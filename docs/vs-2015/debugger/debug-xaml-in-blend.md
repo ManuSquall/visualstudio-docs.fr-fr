@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d90e495ba64018479758e4fa38de0035601a8f0d
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: eeda91dad54cc189fba6f23ce6d21e6aa9a6c5da
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298317"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850515"
 ---
 # <a name="debug-xaml-in-blend"></a>Déboguer XAML dans Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Vous pouvez utiliser les outils de [!INCLUDE[blend_first](../includes/blend-firs
   
 - Il existe un élément XAML à un emplacement non autorisé.  
   
-  Pour plus d’informations sur la syntaxe XAML de base, consultez la page [Guide de base de la syntaxe XAML](https://go.microsoft.com/fwlink/?LinkId=329942).  
+  Pour plus d’informations sur la syntaxe XAML de base, consultez la page [Guide de base de la syntaxe XAML](https://msdn.microsoft.com/library/windows/apps/hh700351.aspx).  
   
   Vous pouvez également identifier et résoudre des erreurs de syntaxe code-behind simples, des erreurs de compilation et des erreurs d'exécution dans [!INCLUDE[blend_subs](../includes/blend-subs-md.md)]. Toutefois, il peut être plus facile d'identifier et de résoudre les erreurs code-behind dans Visual Studio.  
   
@@ -123,7 +123,7 @@ Vous pouvez utiliser les outils de [!INCLUDE[blend_first](../includes/blend-firs
 ## <a name="debugging-in-visual-studio"></a>Débogage dans Visual Studio  
  Vous pouvez ouvrir les projets [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] dans Visual Studio afin de déboguer plus facilement le code dans votre application. Pour ouvrir un projet [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] dans Visual Studio, cliquez avec le bouton droit dans le volet **Projets**, puis cliquez sur **Modifier dans Visual Studio**. Une fois la session de débogage terminée dans Visual Studio, appuyez sur Ctrl+Maj+S pour enregistrer toutes vos modifications, puis revenez à [!INCLUDE[blend_subs](../includes/blend-subs-md.md)]. Vous êtes alors invité à recharger le projet. Cliquez sur **Oui pour tout** pour poursuivre votre travail dans [!INCLUDE[blend_subs](../includes/blend-subs-md.md)].  
   
- Pour plus d’informations sur le débogage de votre application, consultez [Déboguer des applications du Windows Store dans Visual Studio](https://go.microsoft.com/fwlink/?LinkId=329944).  
+ Pour plus d’informations sur le débogage de votre application, consultez [Déboguer des applications du Windows Store dans Visual Studio](https://msdn.microsoft.com/library/windows/apps/hh441472.aspx).  
   
 ## <a name="getting-help"></a>Obtenir de l’aide  
- Si vous avez besoin d’aide supplémentaire sur le débogage de votre application [!INCLUDE[blend_subs](../includes/blend-subs-md.md)], vous pouvez rechercher des publications relatives à votre problème dans les forums de la [communauté des applications Windows Store](https://go.microsoft.com/fwlink/?LinkId=280308) ou publier une question.
+ Si vous avez besoin d’aide supplémentaire sur le débogage de votre application [!INCLUDE[blend_subs](../includes/blend-subs-md.md)], vous pouvez rechercher des publications relatives à votre problème dans les forums de la [communauté des applications Windows Store](https://social.msdn.microsoft.com/Forums/windowsapps/home?category=windowsapps) ou publier une question.

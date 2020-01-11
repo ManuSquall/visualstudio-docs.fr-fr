@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e78b021e41caf584a74172cbdf00135e525df265
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 77ac5ffd14f97fd6fdd753327fe193ceb80ea57e
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590499"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846928"
 ---
 # <a name="unit-test-basics"></a>Concepts de base des tests unitaires
 
@@ -91,13 +91,16 @@ Il est souvent plus rapide de générer le projet de test unitaire et les stubs 
 
    ::: moniker range="vs-2017"
    ![À partir de la fenêtre de l'éditeur, affichez le menu contextuel](../test/media/createunittestsrightclick.png)
-   ::: moniker-end
-   ::: moniker range=">=vs-2019"
-   ![À partir de la fenêtre de l'éditeur, affichez le menu contextuel](../test/media/vs-2019/basics-create-unit-tests.png)
-   ::: moniker-end
 
    > [!NOTE]
    > La commande de menu **Créer des tests unitaires** est uniquement disponible pour le code managé qui cible le .NET Framework (mais pas .NET Core).
+   ::: moniker-end
+   ::: moniker range=">=vs-2019"
+   ![À partir de la fenêtre de l'éditeur, affichez le menu contextuel](../test/media/vs-2019/basics-create-unit-tests.png)
+
+   > [!NOTE]
+   > La commande de menu **créer des tests unitaires** est uniquement disponible pour le code managé.
+   ::: moniker-end
 
 2. Cliquez sur **OK** pour accepter les valeurs par défaut pour créer vos tests unitaires, ou changez les valeurs utilisées pour créer et nommer le projet de test unitaire et les tests unitaires. Vous pouvez sélectionner le code qui est ajouté par défaut aux méthodes de test unitaire.
 

@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d47e31b70e56ed0b0e0957d2407a043329a5a10
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 383331e8fee2b009282aa38a8eb20af8b181f7e5
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594537"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845905"
 ---
 # <a name="sign-in-to-visual-studio"></a>Se connecter à Visual Studio
 
@@ -30,7 +30,7 @@ Quand vous vous connectez, vous bénéficiez de nombreux avantages supplémentai
 
 Voici une liste complète de tous les avantages dont vous pouvez éventuellement bénéficier après votre connexion :
 
-- **Accédez à Visual Studio Dev Essentials** : ce programme inclut des logiciels gratuits, des formations, un support technique, et plus encore. Voir [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp) pour obtenir de plus amples informations.
+- **Accédez à Visual Studio Dev Essentials** : ce programme inclut des logiciels gratuits, des formations, un support technique, et plus encore. Voir [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) pour obtenir de plus amples informations.
 
 - **Synchronisez vos paramètres Visual Studio** : les paramètres que vous personnalisez, comme les combinaisons de touches, la disposition des fenêtres et le thème de couleur, s’appliquent immédiatement quand vous vous connectez à Visual Studio sur un appareil. Consultez [Paramètres synchronisés dans Visual Studio](../ide/synchronized-settings-in-visual-studio.md).
 

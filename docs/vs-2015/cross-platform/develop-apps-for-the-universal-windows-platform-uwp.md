@@ -9,17 +9,17 @@ caps.latest.revision: 50
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: ac6ce00002e40c6d8bd1d5db65b8c7bb5e6bc7cd
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: b3f38f519444de7876046baf242f74a18b8c5a59
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299841"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75844367"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Développer des applications pour la plateforme Windows universelle (UWP)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Avec la plateforme Windows universelle et notre noyau Windows, vous pouvez exécuter la même application sur n'importe quel appareil Windows 10, des téléphones jusqu'aux ordinateurs de bureau. Créez ces applications Windows universelles avec Visual Studio 2015 et les outils de développement d’applications Windows universelles.
+Avec la plateforme Windows universelle et notre noyau Windows, vous pouvez exécuter la même application sur n’importe quel appareil Windows 10, des téléphones jusqu’aux ordinateurs de bureau. Créez ces applications Windows universelles avec Visual Studio 2015 et les outils de développement d’applications Windows universelles.
 
  ![Plateforme Windows universelle](../cross-platform/media/uwp-coreextensions.png "UWP_CoreExtensions")
 
@@ -33,14 +33,14 @@ Avec la plateforme Windows universelle et notre noyau Windows, vous pouvez exéc
 
  C’est tout simplement un ensemble de contrats et de versions, qui vous permettent de choisir les cibles d’exécution de votre application. Vous ne ciblez plus un système d’exploitation. À présent, vous ciblez votre application sur une ou plusieurs familles d’appareils. En savoir plus grâce à ce [guide de plateforme](https://msdn.microsoft.com/library/windows/apps/dn894631.aspx).
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Configuration requise pour
  Les outils de développement d’applications Windows universelles sont fournis avec des émulateurs qui vous permettent de vérifier l’apparence de votre application sur différents appareils. Si vous souhaitez utiliser ces émulateurs, vous devez installer ce logiciel sur un ordinateur physique. L’ordinateur physique doit exécuter Windows 8.1 (x64) Professionnel ou une version ultérieure, et être équipé d’un processeur qui prend en charge Hyper-V Client et la conversion SLAT (Second Level Address Translation). Vous ne pouvez pas utiliser les émulateurs quand Visual Studio est installé sur un ordinateur virtuel.
 
  Voici la liste des logiciels dont vous avez besoin :
 
 - [Windows 10](https://windows.microsoft.com/windows/downloads)
 
-- [Visual Studio 2015](https://go.microsoft.com/fwlink/p/?LinkId=526725). Assurez-vous que les outils de développement d’applications Windows universelles sont sélectionnés dans la liste des fonctionnalités facultatives. Sans ces outils, vous ne pourrez pas créer d’applications universelles.
+- [Visual Studio 2015](https://visualstudio.microsoft.com/downloads/). Assurez-vous que les outils de développement d’applications Windows universelles sont sélectionnés dans la liste des fonctionnalités facultatives. Sans ces outils, vous ne pourrez pas créer d’applications universelles.
 
   Après avoir installé ce logiciel, vous devez [activer votre appareil Windows 10](https://msdn.microsoft.com/library/windows/apps/xaml/dn706236.aspx) pour le développement. (Vous n’avez plus besoin d’une licence de développeur par appareil Windows 10.)
 

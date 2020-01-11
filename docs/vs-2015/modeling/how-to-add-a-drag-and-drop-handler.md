@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6ca68005f71d642650a2d9b024a16883de5eaddf
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: f3bbb4500eb4792f77a7011bd95dd06d05d0ff8d
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298940"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850420"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Comment : ajouter un gestionnaire glisser-déplacer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -140,7 +140,7 @@ using System.Linq;
 
   - diagramEventArgs.Data.GetDataFormats() – Répertorie les formats dans lesquels vous pouvez décoder l'objet déplacé. Par exemple, si l'utilisateur déplace un fichier à partir du Bureau, les formats disponibles incluent le nom de fichier (« `FileNameW` »).
 
-  - `diagramEventArgs.Data.GetData(format)` : décode l’objet déplacé dans le format spécifié. Effectuez une conversion de type de l'objet dans le type approprié. Exemple :
+  - `diagramEventArgs.Data.GetData(format)` : décode l’objet déplacé dans le format spécifié. Effectuez une conversion de type de l'objet dans le type approprié. Par exemple :
 
        `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
 
@@ -170,9 +170,9 @@ using System.Linq;
 
 1. Rendez le DSL source accessible par [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Model Bus :
 
-    1. Téléchargez et installez l'extension Visual Studio Model Bus, si ce n'est déjà fait. Pour plus d’informations, consultez [Kit de développement logiciel de visualisation et de modélisation](https://go.microsoft.com/fwlink/?LinkID=185579).
+    1. Téléchargez et installez l'extension Visual Studio Model Bus, si ce n'est déjà fait. Pour plus d’informations, consultez [Visualization and Modeling SDK](https://www.visualstudio.com/).
 
-    2. Ouvrez le fichier de définition DSL du DSL source dans le concepteur DSL. Cliquez avec le bouton droit sur l’aire de conception, puis cliquez sur **activer ModelBus**. Dans la boîte de dialogue, choisissez l'une ou l'autre des options.  Cliquez sur **OK**. Un nouveau projet « ModelBus » vient s'ajouter à la solution DSL.
+    2. Ouvrez le fichier de définition DSL du DSL source dans le concepteur DSL. Cliquez sur l’aire de conception, puis sur **activer Modelbus**. Dans la boîte de dialogue, choisissez l'une ou l'autre des options.  Cliquez sur **OK**. Un nouveau projet « ModelBus » vient s'ajouter à la solution DSL.
 
     3. Cliquez sur **transformer tous les modèles** et reconstruisez la solution.
 

@@ -11,12 +11,12 @@ caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 29ca6b2110038a427c76622d50f769321cda9ff9
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: ca0a1613f46f8542a3ede4ce2053b3584824590e
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296897"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75847825"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Diagnostics des graphiques Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,10 +37,10 @@ Visual Studio*Graphics Diagnostics* est un ensemble d’outils pour l’enregist
  [Vue d’ensemble](../debugger/overview-of-visual-studio-graphics-diagnostics.md)  
  Présente le flux de travail et les outils de Graphics Diagnostics.  
   
- [Prise en main](../debugger/getting-started-with-visual-studio-graphics-diagnostics.md)  
+ [Bien démarrer](../debugger/getting-started-with-visual-studio-graphics-diagnostics.md)  
  Dans cette section, vous apprendrez à installer Visual Studio Graphics Diagnostics, et à utiliser Graphics Diagnostics avec votre application Direct3D.  
   
- [Capture d’informations graphiques](../debugger/capturing-graphics-information.md)  
+ [Capturing Graphics Information](../debugger/capturing-graphics-information.md)  
  Pour examiner un problème de rendu dans votre application à l'aide de Graphics Diagnostics, vous devez d'abord enregistrer des informations indiquant comment l'application utilise DirectX. Au cours de la session d’enregistrement, pendant l’exécution normale de l’application, vous *capturez* (ou sélectionnez) les frames qui vous intéressent. Les captures contiennent des informations détaillées sur le rendu des frames. Vous pouvez enregistrer les informations capturées sous forme de document journal de graphisme pour l’examiner ultérieurement ou le partager avec d’autres membres de votre équipe.  
   
  [Utilisation du GPU](../debugger/gpu-usage.md)  
@@ -79,9 +79,9 @@ Visual Studio*Graphics Diagnostics* est un ensemble d’outils pour l’enregist
  [Exemples](../debugger/graphics-diagnostics-examples.md)  
  Plusieurs exemples montrent comment utiliser conjointement les outils Graphics Diagnostics pour diagnostiquer différents types de problèmes de rendu.  
   
-## <a name="related-sections"></a>Sections connexes  
+## <a name="related-sections"></a>Rubriques connexes  
   
 |Titre|Description|  
 |-----------|-----------------|  
 |[Débogage dans Visual Studio](../debugger/debugging-in-visual-studio.md)|Présente la fonctionnalité de débogage de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
-|[Graphiques et jeux DirectX](https://go.microsoft.com/fwlink/?LinkId=256498)|Fournit des articles ayant trait aux technologies graphiques DirectX.|
+|[Graphiques et jeux DirectX](https://msdn.microsoft.com/library/ee663274(v=vs.85).aspx)|Fournit des articles ayant trait aux technologies graphiques DirectX.|

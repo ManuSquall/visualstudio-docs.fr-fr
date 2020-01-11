@@ -21,12 +21,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f90344c156ea6c012c6ac086ffa40bf30e78a682
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: daf72a4466cd0f02eb6ef3a357276ed690fd26bf
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300731"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845518"
 ---
 # <a name="creating-bootstrapper-packages"></a>Création de packages de programme d'amorçage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ Le programme d'installation est un programme d'installation générique qui peut
 \Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages  
 ```  
   
- or  
+ ou  
   
 ```  
 \Program Files (x86)\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages  
@@ -100,7 +100,7 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
   
  Le tableau suivant présente les propriétés qui sont automatiquement remplies par le programme d'amorçage.  
   
-|Propriété|Description|  
+|Les|Description|  
 |--------------|-----------------|  
 |ApplicationName|Nom de l'application.|  
 |ProcessorArchitecture|Processeur et bits par mot de la plateforme ciblée par un exécutable. Les valeurs sont notamment les suivantes :<br /><br /> -   Intel<br />-   IA64<br />-   AMD64|  
@@ -128,4 +128,4 @@ HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0
  [Guide pratique pour installer des composants requis avec une application ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
  [Composants requis, boîte de dialogue](../ide/reference/prerequisites-dialog-box.md)   
  [Référence du schéma de produit et de Package](../deployment/product-and-package-schema-reference.md)   
- [Utiliser le programme d’amorçage de Visual Studio 2005 pour démarrer rapidement votre installation](https://go.microsoft.com/fwlink/?LinkId=107537)
+ [Utiliser le programme d’amorçage de Visual Studio 2005 pour démarrer rapidement votre installation](https://msdn.microsoft.com/magazine/cc163899.aspx)

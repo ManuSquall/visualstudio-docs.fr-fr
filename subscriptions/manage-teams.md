@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/23/2019
 ms.topic: conceptual
 description: En savoir plus sur la responsabilité des administrateurs pour gérer les abonnements pour les équipes de grande taille, ainsi que pour les prestataires externes.
-ms.openlocfilehash: 975db18e207f52db8e9d37aa190f9085d4069163
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: 379bb6b868d40a332d563a33f3a30a575aa235b7
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491694"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850053"
 ---
 # <a name="large-teams-and-external-contractors"></a>Grandes équipes et prestataires externes
 Les administrateurs d’abonnements Visual Studio sont chargés de garantir que chaque utilisateur qui interagit avec les logiciels sous licence Visual Studio dispose des licences appropriées avec son propre abonnement Visual Studio.
@@ -29,7 +29,7 @@ Chaque organisation est différente, mais voici une liste type des équipes impl
 Les prestataires externes peuvent apporter des licences pour prendre part à votre environnement sous licence Visual Studio. Les partenaires Microsoft Certified Partner peuvent recevoir quelques abonnements Visual Studio gratuits pour un usage interne. Toutefois, ces abonnements n’englobent pas les activités génératrices de revenus telles que le développement de logiciels personnalisés pour un client. Demandez aux partenaires de vous envoyer une lettre décrivant les licences qu’ils fournissent et celles qu’ils vous demandent de fournir.
 
 ## <a name="resources"></a>Ressources
-- [Livre blanc sur la gestion des licences Visual Studio](https://aka.ms/vslicensing)
+- [Livre blanc sur la gestion des licences Visual Studio](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [Prise en charge des abonnements et de l’administration de Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [Conditions du programme de licence en volume](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
@@ -37,5 +37,5 @@ Les prestataires externes peuvent apporter des licences pour prendre part à vot
 En savoir plus sur les responsabilités des administrateurs :
 - [Responsabilités de l’administrateur](admin-responsibilities.md)
 - [Inventaire de l’environnement de préproduction](admin-inventory.md)
-- [Suivre l’attribution des utilisateurs et traiter les commandes](assignments-orders.md)
+- [Suivre les affectations d’utilisateurs et traiter les commandes](assignments-orders.md)
 - Utiliser le rapport [Utilisation maximale](maximum-usage.md) pour suivre les engagements d’achat

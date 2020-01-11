@@ -11,28 +11,28 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 29eb35e807c467b64a89f48705c555d4083ceef7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 08005b69a1af16b07212cb29547875fad89e1d6a
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328847"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848937"
 ---
 # <a name="hierarchies-in-visual-studio"></a>Hiérarchies dans Visual Studio
-Le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] l’environnement de développement intégré (IDE) affiche un projet comme étant un *hiérarchie*. Dans l’IDE, une hiérarchie est une arborescence de nœuds, où chaque nœud possède un ensemble de propriétés associées. Un *hiérarchie du projet* est un conteneur qui contient les éléments du projet, les relations d’éléments et les propriétés associées et les commandes.
+L’environnement de développement intégré (IDE) [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] affiche un projet sous la forme d’une *hiérarchie*. Dans l’IDE, une hiérarchie est une arborescence de nœuds, où chaque nœud a un ensemble de propriétés associées. Une *hiérarchie de projet* est un conteneur qui contient les éléments du projet, les relations des éléments, ainsi que les propriétés et les commandes associées des éléments.
 
- Dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], gérer les hiérarchies de projet à l’aide de l’interface de la hiérarchie, <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>. Le <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> interface redirige les commandes que vous appelez à partir d’éléments de projet dans la fenêtre de hiérarchie appropriée au lieu du Gestionnaire de commandes standard.
+ Dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], vous gérez les hiérarchies de projet à l’aide de l’interface de hiérarchie, <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>. L’interface <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> redirige les commandes que vous appelez à partir d’éléments de projet vers la fenêtre de hiérarchie appropriée à la place du gestionnaire de commandes standard.
 
 ## <a name="project-hierarchies"></a>Hiérarchies de projet
- Chaque hiérarchie de projet contient des éléments que vous pouvez afficher et modifier. Ces éléments varient selon le type de projet. Par exemple, un projet de base de données peut contenir des procédures stockées, les vues de base de données et les tables de base de données. Un projet de langage de programmation, quant à eux, inclura probablement fichiers sources et fichiers de ressources pour les bitmaps et boîtes de dialogue. Les hiérarchies peuvent être imbriqués, ce qui vous donne une certaine flexibilité ajoutée lorsque vous créez une hiérarchie de projet.
+ Chaque hiérarchie de projet contient des éléments que vous pouvez afficher et modifier. Ces éléments varient en fonction du type de projet. Par exemple, un projet de base de données peut contenir des procédures stockées, des vues de base de données et des tables de base de données. Un projet de langage de programmation, en revanche, inclut probablement des fichiers sources et des fichiers de ressources pour les bitmaps et les boîtes de dialogue. Les hiérarchies peuvent être imbriquées, ce qui vous offre une flexibilité accrue lorsque vous créez une hiérarchie de projet.
 
- Lorsque vous créez un nouveau type de projet, le type de projet détermine l’ensemble complet des éléments qui peuvent être modifiées qu’il contient. Toutefois, les projets peuvent contenir des éléments pour lesquels ils n’ont pas dans édition prise en charge. Par exemple, les projets Visual C++ peuvent contenir des fichiers HTML, bien que Visual C++ ne fournit pas de n’importe quel éditeur personnalisé pour le type de fichier HTML.
+ Lorsque vous créez un nouveau type de projet, le type de projet contrôle l’ensemble complet des éléments qui peuvent être modifiés dans celui-ci. Toutefois, les projets peuvent contenir des éléments pour lesquels ils n’ont pas de prise en charge de la modification. Par exemple, les C++ projets visuels peuvent contenir des fichiers HTML, même C++ si Visual ne fournit pas d’éditeur personnalisé pour le type de fichier html.
 
- Hiérarchies de gérer la persistance des éléments qu’ils contiennent. L’implémentation de la hiérarchie doit contrôler toutes les propriétés spéciales qui affectent la persistance des éléments dans la hiérarchie. Par exemple, si les éléments représentent des objets dans un référentiel au lieu de fichiers, l’implémentation de la hiérarchie doit contrôler la persistance de ces objets. L’IDE lui-même dirige la hiérarchie pour enregistrer les éléments en conformité avec les entrées d’utilisateur, mais l’IDE ne contrôle pas les actions requises pour enregistrer les éléments. Au lieu de cela, le projet est dans le contrôle.
+ Les hiérarchies gèrent la persistance des éléments qu’elles contiennent. L’implémentation de la hiérarchie doit contrôler toutes les propriétés spéciales qui affectent la persistance des éléments dans la hiérarchie. Par exemple, si les éléments représentent des objets dans un dépôt au lieu de fichiers, l’implémentation de la hiérarchie doit contrôler la persistance de ces objets. L’IDE lui-même dirige la hiérarchie pour enregistrer les éléments en conformité avec l’entrée d’utilisateur, mais l’IDE ne contrôle pas les actions requises pour enregistrer ces éléments. Au lieu de cela, le projet est sous contrôle.
 
- Lorsqu’un utilisateur ouvre un élément dans un éditeur, la hiérarchie des contrôles de cet élément est sélectionnée et devient la hiérarchie active. La hiérarchie sélectionnée détermine l’ensemble des commandes disponibles pour agir sur l’élément. Suivi de focus de l’utilisateur de cette manière permet à la hiérarchie afin de refléter le contexte de l’utilisateur actuel.
+ Lorsqu’un utilisateur ouvre un élément dans un éditeur, la hiérarchie qui contrôle cet élément est sélectionnée et devient la hiérarchie Active. La hiérarchie sélectionnée détermine l’ensemble des commandes disponibles pour agir sur l’élément. Le suivi du focus utilisateur de cette manière permet à la hiérarchie de refléter le contexte actuel de l’utilisateur.
 
 ## <a name="see-also"></a>Voir aussi
 - [Types de projets](../../extensibility/internals/project-types.md)
-- [Sélection et la devise dans l’IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)
-- [Exemples d’extensibilité Visual Studio](https://aka.ms/vs2015sdksamples)
+- [Sélection et devise dans l’IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)
+- [Exemples VSSDK](https://github.com/Microsoft/VSSDK-Extensibility-Samples)

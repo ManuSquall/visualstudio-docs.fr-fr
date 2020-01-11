@@ -12,12 +12,12 @@ caps.latest.revision: 30
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: ae28c59f9c5f19e87b833c90e7dbc6bf3b7497ea
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: bffaf0bcff0c0fc93201badeb01b95928edc2979
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297927"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850714"
 ---
 # <a name="code-generation-in-a-build-process"></a>Génération de code dans un processus de génération
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -284,5 +284,5 @@ Si vous mettez à jour un fichier inclus ou tout autre fichier lu par le modèle
 Vous trouverez de bons conseils dans le modèle T4 MSbuild, $(VSToolsPath)\TextTemplating\Microsoft.TextTemplating.targets
 
 - [Écriture d’un modèle de texte T4](../modeling/writing-a-t4-text-template.md)
-- [Kit de développement logiciel de visualisation et de modélisation Visual Studio](https://go.microsoft.com/fwlink/?LinkID=185579)
+- [Kit de développement logiciel de visualisation et de modélisation Visual Studio](https://www.visualstudio.com/)
 - [Oleg Sych : Understanding T4 : intégration de MSBuild](https://github.com/olegsych/T4Toolbox)

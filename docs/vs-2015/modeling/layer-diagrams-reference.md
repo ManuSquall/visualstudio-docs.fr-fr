@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: dd2b2d19e55cbaf9af63ddeafdbdf9f6d677c5bc
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 448a74b739bbb339d5f3b3e56c0ba59072994109
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301618"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850617"
 ---
 # <a name="layer-diagrams-reference"></a>Diagrammes de couche : référence
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Dans Visual Studio, vous pouvez utiliser un *diagramme de couche* pour visualise
 
 - renforcer l'architecture prévue pendant le développement et la maintenance de votre code en incluant la validation avec vos opérations de build et d'archivage.
 
-  Cette rubrique décrit les éléments que vous pouvez utiliser sur un diagramme de couche. Pour plus d’informations sur la création et le dessin de diagrammes de couche, consultez [diagrammes de couche : instructions](../modeling/layer-diagrams-guidelines.md). Pour plus d’informations sur les modèles de superposition, consultez le [site patterns & Practices](https://go.microsoft.com/fwlink/?LinkId=145794).
+  Cette rubrique décrit les éléments que vous pouvez utiliser sur un diagramme de couche. Pour plus d’informations sur la création et le dessin de diagrammes de couche, consultez [diagrammes de couche : instructions](../modeling/layer-diagrams-guidelines.md). Pour plus d’informations sur les modèles de superposition, consultez le [site patterns & Practices](https://apparch.codeplex.com/Wiki/View.aspx?title=Application Patterns&referringTitle=Home).
 
 ## <a name="reading-layer-diagrams"></a>Lecture des diagrammes de couche
  ![Éléments sur les diagrammes de couche](../modeling/media/uml-layerrefreading.png "UML_LayerRefReading")

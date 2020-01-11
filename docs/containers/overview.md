@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.topic: overview
 ms.date: 03/20/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 312c827c3b748e10951b243070f43cce559e3a60
-ms.sourcegitcommit: bbff780cda82bb64862d77fe8f407f1803beb876
+ms.openlocfilehash: d785ed9416959484f9829e12e1cd20cd2924adb8
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2019
-ms.locfileid: "74127191"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75846754"
 ---
 # <a name="container-tools-in-visual-studio"></a>Outils de conteneur dans Visual Studio
 
@@ -31,7 +31,7 @@ La prise en charge de Docker est disponible pour les projets ASP.NET, les projet
 
 La prise en charge de Docker dans Visual Studio a été modifiée sur un certain nombre de versions pour répondre aux besoins des clients. Il existe deux niveaux de prise en charge de Docker que vous pouvez ajouter à un projet, et les options prises en charge varient selon le type de projet et la version de Visual Studio. Pour certains types de projets pris en charge, si vous souhaitez utiliser un conteneur dans un seul projet, sans orchestration, ajoutez la prise en charge de Docker.  Le niveau suivant est la prise en charge de l’orchestration de conteneur, qui ajoute les fichiers de prise en charge appropriés pour l’orchestrateur spécifique que vous choisissez.  
 
-Avec Visual Studio 2017, vous pouvez utiliser Docker Compose et Service Fabric comme services d’orchestration de conteneur.  Vous pouvez également utiliser Kubernetes si vous installez [Visual Studio Tools pour Kubernetes](https://aka.ms/get-vsk8stools).
+Avec Visual Studio 2017, vous pouvez utiliser Docker Compose et Service Fabric comme services d’orchestration de conteneur.  Vous pouvez également utiliser Kubernetes si vous installez [Visual Studio Tools pour Kubernetes](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-tools-for-kubernetes).
 
 > [!NOTE]
 > Si vous utilisez une version de Visual Studio 2017 antérieure à 15.8, ou si vous utilisez le modèle de projet .NET Framework (et non pas .NET Core), lorsque vous ajoutez la prise en charge de Docker, la prise en charge de l’orchestration à l’aide de Docker Compose est automatiquement ajoutée. La prise en charge de l’orchestration de conteneur, via Docker Compose, est automatiquement ajoutée dans Visual Studio 2017 versions 15.0 à 15.7 et dans les projets .NET Framework.
@@ -116,7 +116,7 @@ Répétez le processus avec les autres projets que vous souhaitez contrôler à 
 ## <a name="kubernetes-support"></a>Prise en charge de Kubernetes
 
 ::: moniker range="vs-2017"
-Pour ajouter la prise en charge de Kubernetes, installez [Visual Studio Tools pour Kubernetes](https://aka.ms/get-vsk8stools).
+Pour ajouter la prise en charge de Kubernetes, installez [Visual Studio Tools pour Kubernetes](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-tools-for-kubernetes).
 ::: moniker-end
 
 Avec la prise en charge de Kubernetes, vous pouvez établir une connexion entre votre projet local et un cluster Kubernetes exécuté dans [Azure Kubernetes Service (AKS)](/azure/aks) et ainsi modifier et déboguer vos services en cours d’exécution dans AKS à l’aide de Visual Studio.  Ce service est fourni par [Azure Dev Spaces](/azure/dev-spaces/quickstart-netcore-visualstudio). Azure Dev Spaces vous permet également de définir des branches distinctes de vos services Kubernetes, appelées *dev spaces*, à des fins de développement, et ainsi d’isoler efficacement les services de production des versions en cours de développement, tout en séparant de façon nette les différentes modifications.
@@ -146,7 +146,7 @@ Pour Service Fabric, consultez [Didacticiel : déployer votre application ASP.n
 
 Pour Kubernetes, consultez [Déployer une application de conteneur Docker sur Azure Kubernetes Service](/azure/devops/pipelines/apps/cd/deploy-aks?view=azure-devops).
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 Pour plus d’informations sur l’implémentation des services et l’utilisation des outils Visual Studio avec des conteneurs, lisez les articles suivants :
 

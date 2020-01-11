@@ -9,19 +9,19 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 54e4713abef096d5a23cf1ebf74a9d90db0d6409
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: f61a308fcd68b03852176087438c22c245078693
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295740"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851548"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Étape 4 : composer votre formulaire avec un contrôle TableLayoutPanel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Dans cette étape, vous allez ajouter un contrôle `TableLayoutPanel` à votre formulaire. Le contrôle TableLayoutPanel permet d'aligner correctement les contrôles du formulaire que vous ajouterez ultérieurement.
 
- ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo") Pour obtenir une version vidéo de cette rubrique, consultez [didacticiel 1 : créer une visionneuse d’images dans Visual Basic-vidéo 2](https://go.microsoft.com/fwlink/?LinkId=205211) ou [didacticiel 1 : créer une C# visionneuse d’images dans la vidéo 2](https://go.microsoft.com/fwlink/?LinkId=205200). Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d’interface utilisateur. Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio.
+ ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo") Pour obtenir une version vidéo de cette rubrique, consultez [didacticiel 1 : créer une visionneuse d’images dans Visual Basic-vidéo 2](https://msdn.microsoft.com/vbasic/gg315945.aspx) ou [didacticiel 1 : créer une C# visionneuse d’images dans la vidéo 2](https://msdn.microsoft.com/vcsharp/gg278410.aspx). Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d’interface utilisateur. Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio.
 
 ### <a name="to-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Pour composer votre formulaire avec un contrôle TableLayoutPanel
 
@@ -75,7 +75,7 @@ Dans cette étape, vous allez ajouter un contrôle `TableLayoutPanel` à votre f
 
 11. Dans la liste déroulante **Afficher** en haut de la fenêtre, sélectionnez **Lignes**. Affectez les valeurs 90 pour cent à **Ligne1** et 10 pour cent à **Ligne2**.
 
-12. Choisissez le bouton **OK**. Votre TableLayoutPanel doit maintenant avoir une grande ligne en haut, une petite ligne en bas, une petite colonne à gauche et une grande colonne à droite. Vous pouvez redimensionner les lignes et les colonnes de TableLayoutPanel en choisissant tableLayoutPanel1 dans le formulaire, puis en faisant glisser ses bordures de ligne et de colonne.
+12. Sélectionnez le bouton **OK** . Votre TableLayoutPanel doit maintenant avoir une grande ligne en haut, une petite ligne en bas, une petite colonne à gauche et une grande colonne à droite. Vous pouvez redimensionner les lignes et les colonnes de TableLayoutPanel en choisissant tableLayoutPanel1 dans le formulaire, puis en faisant glisser ses bordures de ligne et de colonne.
 
      ![Form1 avec TableLayoutPanel redimensionné](../ide/media/vs-formafterlayoutpanel.png "VS_FormAfterLayoutPanel") Form1 avec TableLayoutPanel redimensionné
 

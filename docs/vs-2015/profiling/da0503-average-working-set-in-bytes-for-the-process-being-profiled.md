@@ -13,14 +13,14 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 898208530eb1ba71a5a1443fcb97ac1f1a1081e1
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 31d36a89473cd0c6a0b55e484fee2ce1d7045b15
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300052"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850893"
 ---
-# <a name="da0503-average-working-set-in-bytes-for-the-process-being-profiled"></a>DA0503 : Jeu de travail moyen en octets pour le processus en cours de profilage
+# <a name="da0503-average-working-set-in-bytes-for-the-process-being-profiled"></a>DA0503 : jeu de travail moyen, en octets, pour le processus en cours de profilage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 ID de règle | DA0503 |  
@@ -40,7 +40,7 @@ ID de règle | DA0503 |
   
  La taille du jeu de travail du processus correspond à la mémoire virtuelle que le processus utilise activement. Elle est également affectée par la quantité de mémoire physique (ou RAM) disponible pour exécuter l’application, et par les conflits entre cette mémoire physique et d’autres processus en cours d’exécution. Si la mémoire physique est limitée, la valeur du jeu de travail de processus peut varier considérablement lorsque les systèmes d’exploitation tentent d’équilibrer l’utilisation de la mémoire entre les processus actifs en supprimant périodiquement les pages relativement inactives des jeux de travail de processus.  
   
- Pour plus d’informations sur les jeux de travail de processus, consultez [Jeu de travail](https://go.microsoft.com/fwlink/?LinkId=177830) dans la documentation MSDN relative à la gestion de la mémoire dans Windows.  
+ Pour plus d’informations sur les jeux de travail de processus, consultez [Jeu de travail](https://msdn.microsoft.com/library/cc441804.aspx) dans la documentation MSDN relative à la gestion de la mémoire dans Windows.  
   
 ## <a name="how-to-use-rule-data"></a>Comment utiliser des données de règle  
  Utilisez la valeur de la règle pour comparer les performances des différentes versions du programme ou pour comprendre les performances de l’application dans différents scénarios de profilage.  

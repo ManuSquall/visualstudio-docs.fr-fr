@@ -9,12 +9,12 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 744b5f3c62ac2c5636ed2499653986d3b669fce3
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 090aeb83f6d0480c511acd808498953ae6c01940
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299967"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851103"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Étape 9 : examiner, commenter et tester votre code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Ensuite, ajoutez un commentaire à votre code. Un commentaire est une annotation
 
    Les instructions permettent à vos programmes d'effectuer des actions. En Visual C#, une instruction se termine toujours par un point-virgule. En Visual Basic, la fin d'une ligne indique la fin d'une instruction. (Aucun point-virgule n’est nécessaire dans Visual Basic.) L’instruction précédente indique à votre `PictureBox` contrôle de charger le fichier que l’utilisateur a sélectionné avec le composant **OpenFileDialog** .
 
-  ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo") Pour obtenir une version vidéo de cette rubrique, consultez [didacticiel 1 : créer une visionneuse d’images dans Visual Basic-vidéo 5](https://go.microsoft.com/fwlink/?LinkId=205216) ou [didacticiel 1 : créer une C# visionneuse d’images dans la vidéo 5](https://go.microsoft.com/fwlink/?LinkId=205206). Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d’interface utilisateur. Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio.
+  ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo") Pour obtenir une version vidéo de cette rubrique, consultez [didacticiel 1 : créer une visionneuse d’images dans Visual Basic-vidéo 5](https://msdn.microsoft.com/vbasic/gg315356.aspx) ou [didacticiel 1 : créer une C# visionneuse d’images dans la vidéo 5](https://msdn.microsoft.com/vcsharp/gg278413.aspx). Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d’interface utilisateur. Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio.
 
 ### <a name="to-add-comments"></a>Pour ajouter des commentaires
 

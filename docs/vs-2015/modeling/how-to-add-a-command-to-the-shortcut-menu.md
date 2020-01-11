@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8d5373ae27797aa3bfe4627fb84ce393dce9e910
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 2d5ddea477aa7295c41097177265b43483b7aa45
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300881"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850416"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Comment : ajouter une commande au menu contextuel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Vous pouvez ajouter des commandes de menu à votre langage spécifique à un dom
 
 3. [Écrivez des méthodes dans la classe commandSet](#CommandSet) pour rendre la commande visible et pour définir ce que la commande doit faire.
 
-   Pour obtenir des exemples, consultez le [site Web du kit de développement logiciel de visualisation et de modélisation](https://go.microsoft.com/fwlink/?LinkID=185579).
+   Pour obtenir des exemples, consultez le [site Web du kit de développement logiciel de visualisation et de modélisation](https://www.visualstudio.com/).
 
 > [!NOTE]
 > Vous pouvez aussi modifier le comportement de certaines commandes existantes telles que Couper, Coller, Sélectionner tout et Imprimer en substituant des méthodes dans CommandSet.cs. Pour plus d’informations, consultez [Comment : modifier une commande de menu standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).
@@ -143,7 +143,7 @@ Vous pouvez ajouter des commandes de menu à votre langage spécifique à un dom
 
 2. Recherchez l'attribut `ProvideMenuResource`.
 
-3. Incrémentez le paramètre `version` de l'attribut, qui est le second paramètre. Si vous le souhaitez, vous pouvez écrire le nom du paramètre de manière explicite, pour vous rappeler sa fonction Exemple :
+3. Incrémentez le paramètre `version` de l'attribut, qui est le second paramètre. Si vous le souhaitez, vous pouvez écrire le nom du paramètre de manière explicite, pour vous rappeler sa fonction Par exemple :
 
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`
 
@@ -162,7 +162,7 @@ Vous pouvez ajouter des commandes de menu à votre langage spécifique à un dom
 
 2. Dans **DslPackage**, créez un dossier nommé **code personnalisé**. Dans ce dossier, créez un nouveau fichier de classe nommé `CommandSet.cs`.
 
-3. Dans le nouveau fichier, écrivez une déclaration partielle dont l'espace de noms et le nom sont les mêmes que ceux de la classe partielle générée. Exemple :
+3. Dans le nouveau fichier, écrivez une déclaration partielle dont l'espace de noms et le nom sont les mêmes que ceux de la classe partielle générée. Par exemple :
 
      `namespace Company.Language1 /* Make sure this is correct */`
 
@@ -223,7 +223,7 @@ private void OnStatusMyContextMenuCommand(object sender, EventArgs e)
 
  Les fragments suivants sont souvent utiles dans les méthodes OnStatus :
 
-- `this.CurrentSelection` La forme sur laquelle l'utilisateur a cliqué avec le bouton droit est toujours incluse dans cette liste. Si l'utilisateur clique sur une partie vierge du diagramme, ce dernier est le seul membre de la liste.
+- `this.CurrentSelection`. La forme sur laquelle l'utilisateur a cliqué avec le bouton droit est toujours incluse dans cette liste. Si l'utilisateur clique sur une partie vierge du diagramme, ce dernier est le seul membre de la liste.
 
 - `this.IsDiagramSelected()` - `true` si l’utilisateur a cliqué sur une partie vide du diagramme.
 
