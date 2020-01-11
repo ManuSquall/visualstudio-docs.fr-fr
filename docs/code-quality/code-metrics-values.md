@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6caf63b2d1fb6b9206fe43da5c7a63818fd299f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: ece5c08ca3aa4a9f5e5329dbf6d5fd6c9087d085
+ms.sourcegitcommit: aa302af53de342e75793bd05b10325939dc69b53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587696"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75886413"
 ---
 # <a name="code-metrics-values"></a>Valeurs de métriques de code
 
@@ -36,10 +36,19 @@ La liste suivante présente le code des résultats de la métrique qui calcule d
 
 - **COUPLAGE de classe** -mesure le couplage avec des classes uniques via des paramètres, variables locales, types de retour, les appels de méthode, des instanciations génériques ou de modèle, classes de base, les implémentations d’interface, champs définis sur les types externes, et décoration de l’attribut. Une bonne conception logicielle détermine les types et méthodes doivent avoir une forte cohésion et un couplage bas. COUPLAGE élevé indique une conception qui est difficile à réutiliser et tenir à jour en raison de ses nombreuses interdépendances sur d’autres types. Pour plus d’informations, consultez le billet de blog sur la [classe couplage](https://blogs.msdn.microsoft.com/zainnab/2011/05/25/code-metrics-class-coupling/) .
 
+::: moniker range=">=vs-2019"
+
+- **Lignes de code source** -indique le nombre exact de lignes de code source présentes dans votre fichier source, y compris les lignes vides. Cette mesure est disponible à partir de Visual Studio 2019 version 16,4 et Microsoft. CodeAnalysis. mesures (2.9.5).
+
+- **Lignes de code exécutable** -indique le nombre approximatif de lignes de code ou d’opérations exécutables. Il s’agit du nombre d’opérations dans le code exécutable. Cette mesure est disponible à partir de Visual Studio 2019 version 16,4 et Microsoft. CodeAnalysis. mesures (2.9.5). La valeur est généralement une correspondance proche de la métrique précédente, **lignes de code**, qui est la métrique basée sur les instructions MSIL utilisée en mode hérité.
+::: moniker-end
+::: moniker range="vs-2017"
+
 - **Lignes de Code** -indique le nombre approximatif de lignes dans le code. Le nombre est basé sur le code de langage intermédiaire et est donc pas le nombre exact de lignes dans le fichier de code source. Un nombre élevé peut indiquer qu’un type ou une méthode tente de faire trop de travail et doit être fractionné. Cela peut également indiquer que le type ou la méthode peut être difficile à maintenir.
 
    > [!NOTE]
    > Le [version de ligne de commande](../code-quality/how-to-generate-code-metrics-data.md#command-line-code-metrics) du code outil métrique nombre réel de lignes de code, car il analyse le code source au lieu de langage intermédiaire.
+::: moniker-end
 
 ## <a name="anonymous-methods"></a>Méthodes anonymes
 

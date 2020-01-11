@@ -9,16 +9,19 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f273294d9da0c0cf71f96ae3bde8e5e0457259c9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 0614552bbbadd9a472e0780db6f277d423446966
+ms.sourcegitcommit: aa302af53de342e75793bd05b10325939dc69b53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592972"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75886453"
 ---
 # <a name="display-data-in-blend-for-visual-studio"></a>Afficher des données dans Blend pour Visual Studio
 
 Vous pouvez afficher des exemples de données dans votre concepteur à mesure que vous personnalisez la disposition de vos pages. Vous pouvez générer des exemples de données de toutes pièces ou en utilisant une classe existante. Vous pouvez aussi vous connecter à des *données en direct* qui s’affichent dans votre application au moment où vous l’exécutez.
+
+> [!NOTE]
+> Le volet **données** dans Blend est pris en charge uniquement pour les projets qui ciblent .NET Framework. Elle n’est pas prise en charge pour les projets UWP ou les projets qui ciblent .NET Core. 
 
 ## <a name="generate-sample-data"></a>Générer un échantillon de données
 
