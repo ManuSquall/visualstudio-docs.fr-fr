@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/26/2017
 ms.author: ghogen
-ms.openlocfilehash: 8b03d1e698108fac2f81d1e3263d7b38ff82b1dc
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 3acb009d27a9fa47f890235f6957d1f29ed2f4a0
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75852350"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916693"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>Ajout de stockage Azure à l’aide des services connectés de Visual Studio
 Avec Visual Studio, vous pouvez connecter les éléments suivants au Stockage Azure à l’aide de la boîte de dialogue **Ajouter des services connectés** :
@@ -63,12 +63,12 @@ Une fois cette opération terminée, la boîte de dialogue **Ajouter des service
 ## <a name="how-your-project-is-modified"></a>Modifications apportées à votre projet
 Quand vous avez terminé la boîte de dialogue, Visual Studio ajoute des références et modifie certains fichiers de configuration. Les modifications spécifiques varient selon le type de projet :
 
-- Projet ASP.NET : [Que s’est-il passé ? – Projets ASP.NET](https://docs.microsoft.com/azure/visual-studio/vs-storage-aspnet-getting-started-blobs)
-- Projet Core ASP.NET : [Que s’est-il passé ? – Projets ASP.NET 5](https://docs.microsoft.com/azure/visual-studio/vs-storage-aspnet5-getting-started-blobs)
-- Projet de service cloud (rôles web et de travail) : [Que s’est-il passé ? – Projets de service cloud](https://docs.microsoft.com/azure/visual-studio/vs-storage-cloud-services-getting-started-blobs)
+- Projet ASP.NET : [Que s’est-il passé ? – Projets ASP.NET](/azure/visual-studio/vs-storage-aspnet-getting-started-blobs)
+- Projet Core ASP.NET : [Que s’est-il passé ? – Projets ASP.NET 5](/azure/visual-studio/vs-storage-aspnet5-getting-started-blobs)
+- Projet de service cloud (rôles web et de travail) : [Que s’est-il passé ? – Projets de service cloud](/azure/visual-studio/vs-storage-cloud-services-getting-started-blobs)
 - Projets de tâche web - [Que s’est-il passé ? – Projets de tâche web](/azure/visual-studio/vs-storage-webjobs-what-happened)
 
 ## <a name="next-steps"></a>Étapes suivantes :
 - [Forum MSDN : Stockage Azure](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
 - [Blog de l’équipe Stockage Microsoft Azure](https://blogs.msdn.microsoft.com/windowsazurestorage/)
-- [Documentation d’Azure Storage](https://docs.microsoft.com/azure/storage/)
+- [Documentation d’Azure Storage](/azure/storage/)

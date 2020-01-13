@@ -15,29 +15,29 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 5988d472317540ca1b1a7f91acd75a48fa9743b4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 1e85929202d36be2e6dcc2b08b5b2a60e7656b27
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669117"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919186"
 ---
 # <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715 : Les identificateurs doivent être dotés d'un préfixe correct
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Pour obtenir la documentation la plus récente sur Visual Studio, consultez [CA1715 : les identificateurs doivent avoir un préfixe correct](https://docs.microsoft.com/visualstudio/code-quality/ca1715-identifiers-should-have-correct-prefix).
+Pour obtenir la documentation la plus récente sur Visual Studio, consultez [CA1715 : les identificateurs doivent avoir un préfixe correct](/visualstudio/code-quality/ca1715-identifiers-should-have-correct-prefix).
 
 |||
 |-|-|
 |TypeName|IdentifiersShouldHaveCorrectPrefix|
 |CheckId|CA1715|
-|Category|Microsoft. Naming|
+|Catégorie|Microsoft.Naming|
 |Modification avec rupture|Avec rupture : lorsqu’elle est déclenchée sur les interfaces.<br /><br /> Sans rupture-en cas de déclenchement sur des paramètres de type générique.|
 
 ## <a name="cause"></a>Cause
  Le nom d’une interface extérieurement visible ne commence pas par un « I » majuscule.
 
- ou
+ \- ou -
 
  Le nom d’un paramètre de type générique sur un type ou une méthode extérieurement visible ne commence pas par un « t » majuscule.
 
@@ -48,7 +48,7 @@ Pour obtenir la documentation la plus récente sur Visual Studio, consultez [CA1
 
  Les noms de paramètre de type générique doivent commencer par un « t » majuscule et éventuellement être suivis par une autre lettre majuscule. Cette règle signale des violations pour les noms de paramètre de type générique tels que’V’et’type'.
 
- Les conventions d’affectation de noms fournissent une recherche commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit la courbe d’apprentissage requise pour les nouvelles bibliothèques logicielles et augmente la confiance des clients dans la mesure où la bibliothèque a été développée par une personne ayant une expertise dans le développement de code géré.
+ Les conventions d’affectation de noms fournissent une apparence commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit la courbe d’apprentissage requise pour les nouvelles bibliothèques logicielles et augmente la confiance des clients dans la mesure où la bibliothèque a été développée par une personne ayant une expertise dans le développement de code géré.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Renommez l’identificateur afin qu’il soit correctement préfixé.

@@ -6,16 +6,16 @@ ms.author: ghogen
 ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: c2f96bcc9df16b5de7d7f3ff485431352800d27e
-ms.sourcegitcommit: 9801fc66a14c0f855b9ff601fb981a9e5321819e
+ms.openlocfilehash: c528d1ca2d767b914bba2fd554699985c37d6ba1
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2019
-ms.locfileid: "74072725"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916928"
 ---
 # <a name="docker-compose-build-properties"></a>Docker Compose les propriétés de build
 
-En plus des propriétés qui contrôlent des projets d’ancrage individuels, décrits dans les [Propriétés de génération des outils de conteneur](container-msbuild-properties.md), vous pouvez également personnaliser la façon dont Visual Studio génère vos projets docker compose en définissant les propriétés de docker compose que MSBuild utilise pour générer votre solution. Vous pouvez également contrôler la façon dont le débogueur Visual Studio exécute vos applications Docker Composees en définissant des étiquettes de fichier dans Docker Compose fichiers de configuration.
+En plus des propriétés qui contrôlent des projets d’ancrage individuels, décrits dans les [Propriétés de génération des outils de conteneur](container-msbuild-properties.md), vous pouvez également personnaliser la façon dont Visual Studio génère vos projets docker compose en définissant les propriétés de docker compose utilisées par MSBuild pour générer votre solution. Vous pouvez également contrôler la façon dont le débogueur Visual Studio exécute vos applications Docker Composees en définissant des étiquettes de fichier dans Docker Compose fichiers de configuration.
 
 ## <a name="how-to-set-the-msbuild-properties"></a>Comment définir les propriétés MSBuild
 
@@ -29,19 +29,19 @@ Pour définir la valeur d’une propriété, modifiez le fichier projet. Pour le
 
 Vous pouvez ajouter le paramètre de propriété à un élément `PropertyGroup` existant ou, s’il n’en existe pas, créer un nouvel élément `PropertyGroup`.
 
-## <a name="docker-compose-msbuild-properties"></a>Docker Compose les propriétés MSBuild
+## <a name="docker-compose-msbuild-properties"></a>Propriétés MSBuild Docker Compose
 
 Le tableau suivant présente les propriétés MSBuild disponibles pour les projets Docker Compose.
 
 | Nom de propriété | Emplacement | Description | Valeur par défaut  |
 |---------------|----------|-------------|----------------|
-|AdditionalComposeFiles|dcproj|Spécifie des fichiers compose supplémentaires dans une liste délimitée par des points-virgules à envoyer à docker-compose. exe pour toutes les commandes. Les chemins d’accès relatifs du fichier projet dockr-compose (dcproj) sont autorisés.|-|
-|DockerComposeBaseFilePath|dcproj|Spécifie la première partie des noms de fichiers des fichiers de l’ancrage-compose, sans l’extension *. yml* . Exemple : <br>1. DockerComposeBaseFilePath = null/non défini : utilisez le chemin d’accès *de fichier de base dockr-compose*, et les fichiers sont nommés *docker-compose. yml* et *docker-compose. override. yml*<br>2. DockerComposeBaseFilePath = *mydockercompose*: les fichiers sont nommés *mydockercompose. yml* et *mydockercompose. override. yml*<br> 3. DockerComposeBaseFilePath = *.. \mydockercompose*: les fichiers sont situés un niveau. |docker-compose|
+|AdditionalComposeFilePaths|dcproj|Spécifie des fichiers compose supplémentaires dans une liste délimitée par des points-virgules à envoyer à docker-compose. exe pour toutes les commandes. Les chemins d’accès relatifs du fichier projet dockr-compose (dcproj) sont autorisés.|-|
+|DockerComposeBaseFilePath|dcproj|Spécifie la première partie des noms de fichiers des fichiers de l’ancrage-compose, sans l’extension *. yml* . Par exemple : <br>1. DockerComposeBaseFilePath = null/non défini : utilisez le chemin d’accès *de fichier de base dockr-compose*, et les fichiers sont nommés *docker-compose. yml* et *docker-compose. override. yml*<br>2. DockerComposeBaseFilePath = *mydockercompose*: les fichiers sont nommés *mydockercompose. yml* et *mydockercompose. override. yml*<br> 3. DockerComposeBaseFilePath = *.. \mydockercompose*: les fichiers sont situés un niveau. |docker-compose|
 |DockerComposeBuildArguments|dcproj|Spécifie les paramètres supplémentaires à passer à la commande `docker-compose build`. Par exemple, `--parallel --pull`. |
 |DockerComposeDownArguments|dcproj|Spécifie les paramètres supplémentaires à passer à la commande `docker-compose down`. Par exemple, `--timeout 500`.|-|  
 |DockerComposeProjectPath|csproj ou vbproj|Chemin d’accès relatif au fichier de projet d’ancrage-compose (dcproj). Définissez cette propriété lors de la publication du projet de service pour rechercher les paramètres de génération d’image associés stockés dans le fichier docker-compose. yml.|-|
 |DockerComposeUpArguments|dcproj|Spécifie les paramètres supplémentaires à passer à la commande `docker-compose up`. Par exemple, `--timeout 500`.|-|
-|DockerLaunchAction| dcproj | Spécifie l’action de lancement à exécuter sur F5 ou CTRL + F5.  Les valeurs autorisées sont None, LaunchBrowser et LaunchWCFTestClient|aucune.|
+|DockerLaunchAction| dcproj | Spécifie l’action de lancement à exécuter sur F5 ou CTRL + F5.  Les valeurs autorisées sont None, LaunchBrowser et LaunchWCFTestClient|Aucun|
 |DockerLaunchBrowser| dcproj | Indique s’il faut lancer le navigateur. Ignoré si DockerLaunchAction est spécifié. | False |
 |DockerServiceName| dcproj|Si DockerLaunchAction ou DockerLaunchBrowser sont spécifiés, DockerServiceName est le nom du service qui doit être lancé.  Utilisez cette propriété pour déterminer lequel des projets potentiellement référencés par un fichier d’ancrage-compose sera lancé.|-|
 |DockerServiceUrl| dcproj | URL à utiliser lors du lancement du navigateur.  Les jetons de remplacement valides sont « {ServiceIPAddress} », « {ServicePort} » et « {Scheme} ».  Par exemple : {Scheme}://{ServiceIPAddress} : {ServicePort}|-|
@@ -92,7 +92,7 @@ services:
 
 ## <a name="docker-compose-file-labels"></a>Étiquettes de fichier Docker Compose
 
-Vous pouvez également remplacer certains paramètres en plaçant un fichier nommé *docker-compose. vs. Debug. yml* (pour la configuration **Debug** ) ou *docker-compose. vs. Release. yml* (pour la configuration **Release** ) dans le même répertoire que votre  *fichier docker-compose. yml* .  Dans ce fichier, vous pouvez spécifier les paramètres comme suit :
+Vous pouvez également remplacer certains paramètres en plaçant un fichier nommé *docker-compose. vs. Debug. yml* (pour la configuration **Debug** ) ou *docker-compose. vs. Release. yml* (pour la configuration **Release** ) dans le même répertoire que votre fichier *docker-compose. yml* .  Dans ce fichier, vous pouvez spécifier les paramètres comme suit :
 
 ```yml
 services:
@@ -103,14 +103,14 @@ services:
 
 Utilisez des guillemets doubles autour des valeurs, comme dans l’exemple précédent, et utilisez la barre oblique inverse comme caractère d’échappement pour les barres obliques inverses dans les chemins d’accès.
 
-|Nom d'étiquette|Description|
+|Nom de l'étiquette|Description|
 |----------|-----------|
 |com. Microsoft. VisualStudio. Debugger. arguments|Arguments passés au programme lors du démarrage du débogage. Pour les applications .NET Core, ces arguments sont généralement des chemins de recherche supplémentaires pour les packages NuGet, suivis du chemin d’accès à l’assembly de sortie du projet.|
 |com. Microsoft. VisualStudio. Debugger. killprogram|Cette commande permet d’arrêter le programme débogué qui s’exécute dans le conteneur (si nécessaire).|
 |com. Microsoft. VisualStudio. Debugger. Program|Le programme est lancé au démarrage du débogage. Pour les applications .NET Core, ce paramètre est généralement **dotnet**.|
 |com. Microsoft. VisualStudio. Debugger. WorkingDirectory|Répertoire utilisé comme répertoire de démarrage lors du démarrage du débogage. Ce paramètre est généralement */app* pour les conteneurs Linux ou *C:\app* pour les conteneurs Windows.|
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 Pour plus d’informations sur les propriétés MSBuild en général, consultez [propriétés MSBuild](../msbuild/msbuild-properties.md).
 
@@ -120,4 +120,4 @@ Pour plus d’informations sur les propriétés MSBuild en général, consultez 
 
 [Paramètres de lancement des outils de conteneur](container-launch-settings.md)
 
-[Propriétés réservées et connues de MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md)
+[MSBuild, propriétés réservées et connues](../msbuild/msbuild-reserved-and-well-known-properties.md)

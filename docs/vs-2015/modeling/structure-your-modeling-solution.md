@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: d0c001ec8310759309c88c49c37050516b110b81
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 83c8d8e7a1afe0946c1b1f5eb25c8650e2b512f5
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850805"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917312"
 ---
 # <a name="structure-your-modeling-solution"></a>Structurer votre solution de modélisation
 
@@ -34,7 +34,7 @@ Dans un projet de taille moyenne ou grande, la structure de l'équipe est basée
 
 #### <a name="to-divide-an-application-into-layers"></a>Pour diviser une application en couches
 
-1. Vous devez baser la structure de vos solutions sur la structure de votre application, qu'il s'agisse d'une application web, d'une application de service ou d'une application de bureau. Une série d’architectures courantes est présentée dans [application archétypes dans le Guide de l’architecture des applications Microsoft](https://docs.microsoft.com/previous-versions/msp-n-p/ee658107(v=pandp.10)?redirectedfrom=MSDN).
+1. Vous devez baser la structure de vos solutions sur la structure de votre application, qu'il s'agisse d'une application web, d'une application de service ou d'une application de bureau. Une série d’architectures courantes est présentée dans [application archétypes dans le Guide de l’architecture des applications Microsoft](/previous-versions/msp-n-p/ee658107(v=pandp.10)).
 
 2. Créez une solution [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], que nous appellerons la solution Architecture. Nous l'utiliserons pour créer la conception globale du système. Elle contiendra des modèles, mais pas de code.
 

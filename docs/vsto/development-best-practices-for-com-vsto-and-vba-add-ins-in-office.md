@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 24cc456058f4a87426261ce53fbecb2d919d6a2d
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 716345cd2df3e941ea3d50cfc1519dc86dcd7077
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75846362"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918626"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Meilleures pratiques de développement pour les compléments COM, VSTO et VBA dans Office
   Si vous développez des compléments COM, VSTO ou VBA pour Office, suivez les meilleures pratiques de développement décrites dans cet article.   afin de garantir :
@@ -61,7 +61,7 @@ Les clients demandent aux ISV de fournir des instructions de prise en charge pou
 
 Pour fournir des instructions de prise en charge pour les applications clientes Office (par exemple, Word ou Excel), vérifiez d’abord que vos compléments s’exécutent dans la version d’Office actuelle, puis validez pour fournir des mises à jour si votre complément s’arrête dans une version ultérieure. Vous n’avez pas besoin de tester vos compléments lorsque Microsoft publie une nouvelle version ou une mise à jour d’Office. Microsoft modifie rarement la plate-forme d’extensibilité COM, VSTO et VBA dans Office, et ces modifications sont bien documentées.
 
->Important : Microsoft gère la liste des compléments pris en charge pour les rapports de disponibilité et les informations de contact ISV. Pour obtenir la liste des compléments, consultez [https://docs.microsoft.com/configmgr/desktop-analytics/ready-for-windows](https://docs.microsoft.com/configmgr/desktop-analytics/ready-for-windows).
+>Important : Microsoft gère la liste des compléments pris en charge pour les rapports de disponibilité et les informations de contact ISV. Pour obtenir la liste des compléments, consultez [/ConfigMgr/Desktop-Analytics/Ready-for-Windows](/configmgr/desktop-analytics/ready-for-windows).
 
 ## <a name="use-process-monitor-to-help-debug-installation-or-loading-issues"></a>Utiliser process Monitor pour déboguer les problèmes d’installation ou de chargement
 Si votre complément présente des problèmes de compatibilité lors de l’installation ou du chargement, ceux-ci peuvent être liés à des problèmes d’accès aux fichiers ou au registre. Utilisez [Process Monitor](/sysinternals/downloads/procmon) ou un outil de débogage similaire pour consigner et comparer le comportement par rapport à un environnement de travail pour aider à identifier le problème.

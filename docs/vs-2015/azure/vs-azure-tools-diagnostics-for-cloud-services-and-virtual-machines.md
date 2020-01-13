@@ -10,12 +10,12 @@ ms.date: 06/28/2018
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: 96df8bbf1c991b98571a427a5118374cd6f3ba3b
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: d7099eb47007b1fc657164d085e8a5bb6f09e1db
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851451"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915652"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Configurer les diagnostics pour Azure Cloud Services et les machines virtuelles Azure
 CnE UE VS TM [MD] Les diagnostics capturent les données système et les données de journalisation sur les machines virtuelles et sur les instances de machine virtuelle qui exécutent votre service cloud. Les données de diagnostic sont transférées à un compte de stockage que vous choisissez. Pour plus d’informations sur la journalisation des diagnostics dans Azure, consultez [Activer la journalisation des diagnostics pour les applications web dans Azure App Service](/azure/app-service/web-sites-enable-diagnostic-log).
@@ -110,7 +110,7 @@ Dans Visual Studio, vous pouvez collecter des données de diagnostic pour des ma
     ![Installer une extension de machine virtuelle Azure](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC766024.png)
 
     > [!NOTE]
-   > D’autres extensions des diagnostics sont disponibles pour vos machines virtuelles. Pour plus d’informations, consultez [Extensions et fonctionnalités de machine virtuelle pour Windows](https://docs.microsoft.com/azure/virtual-machines/windows/extensions-features).
+   > D’autres extensions des diagnostics sont disponibles pour vos machines virtuelles. Pour plus d’informations, consultez [Extensions et fonctionnalités de machine virtuelle pour Windows](/azure/virtual-machines/windows/extensions-features).
    >
    >
 5. Pour ajouter l’extension et afficher sa boîte de dialogue **Configuration des diagnostics**, sélectionnez **Ajouter**.

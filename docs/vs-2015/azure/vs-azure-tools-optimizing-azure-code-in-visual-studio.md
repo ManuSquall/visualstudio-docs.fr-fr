@@ -11,12 +11,12 @@ ms.date: 11/11/2016
 ms.author: ghogen
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: 83500f599b909f189de86305e4f017abfd015059
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: e34c51db062528c83e08e2cb463a1cc44ab476f7
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75846565"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915761"
 ---
 # <a name="optimizing-your-azure-code"></a>Optimisation de votre code Azure
 Quand vous programmez des applications qui utilisent Microsoft Azure, nous vous recommandons de suivre certaines pratiques de codage pour éviter des problèmes relatifs à l’évolutivité, au comportement et à la performance dans un environnement cloud. Microsoft fournit un outil Azure Code Analysis, qui reconnaît et identifie plusieurs des problèmes couramment rencontrés et qui vous aide à les résoudre. Vous pouvez télécharger l'outil dans Visual Studio via NuGet.
@@ -30,8 +30,6 @@ AP0000
 
 ### <a name="description"></a>Description
 Si vous utilisez le mode d’état de session (in-process) par défaut pour les applications cloud, vous pouvez perdre l’état de la session.
-
-Pensez à partager vos idées et vos commentaires sur la page [Commentaires d’analyse du code Azure](https://social.msdn.microsoft.com/Forums/en-US/home).
 
 ### <a name="reason"></a>Raison
 Par défaut, le mode d’état de session spécifié dans le fichier web.config est in-process. En outre, si aucune entrée n’est spécifiée dans le fichier de configuration, le mode d’état de session par défaut passe à in-process. Le mode in-process stocke l’état de la session en mémoire sur le serveur web. Lorsqu’une instance est redémarrée ou qu’une nouvelle instance est utilisée pour l’équilibrage de charge ou la prise en charge du basculement, l’état de session stocké en mémoire sur le serveur web n’est pas enregistré. Cette situation bloque l’évolutivité de l’application dans le cloud.
@@ -93,8 +91,6 @@ AP2000
 ### <a name="description"></a>Description
 Utilisez la signature d’accès partagé (SAP) pour l’authentification. Le service de contrôle d’accès (ACS) est obsolète pour l’authentification Service Bus.
 
-Pensez à partager vos idées et vos commentaires sur la page [Commentaires d’analyse du code Azure](https://social.msdn.microsoft.com/Forums/en-US/home).
-
 ### <a name="reason"></a>Raison
 Pour une sécurité renforcée, Azure Active Directory remplace l’authentification du service de contrôle d’accès (ACS) par l’authentification de signature d’accès partagé (SAP). Consultez [Azure Active Directory est le futur d’ACS](https://cloudblogs.microsoft.com/enterprisemobility/2013/06/22/azure-active-directory-is-the-future-of-acs/) pour des informations sur le plan de transition.
 
@@ -109,8 +105,7 @@ BrokeredMessage receivedMessage = sc.Receive();
 
 Pour plus d’informations, consultez les rubriques suivantes.
 
-* Pour une vue d’ensemble, consultez [Authentification de signature d’accès partagé avec Service Bus](https://msdn.microsoft.com/library/dn170477.aspx)
-* [Comment utiliser l’authentification par signature d’accès partagé avec Service Bus](https://msdn.microsoft.com/library/dn205161.aspx)
+* [Comment utiliser l’authentification par signature d’accès partagé avec Service Bus](/azure/service-bus-messaging/service-bus-sas)
 
 ## <a name="consider-using-onmessage-method-to-avoid-receive-loop"></a>Envisagez d'utiliser la méthode OnMessage pour éviter l’erreur de « boucle de réception »
 ### <a name="id"></a>Id
@@ -118,8 +113,6 @@ AP2002
 
 ### <a name="description"></a>Description
 Pour éviter d’entrer dans une « boucle de réception », l’appel de la méthode **OnMessage** est une meilleure solution pour la réception des messages que l’appel de la méthode **Receive**. Toutefois, si vous devez utiliser la méthode **Receive** et que vous spécifiez un délai d’attente de serveur autre que celui par défaut, vérifiez que le délai d’attente de serveur est de plus d’une minute.
-
-Pensez à partager vos idées et vos commentaires sur la page [Commentaires d’analyse du code Azure](https://social.msdn.microsoft.com/Forums/en-US/home).
 
 ### <a name="reason"></a>Raison
 Lors de l’appel de **OnMessage**, le client démarre une pompe de messages interne qui interroge en permanence la file d’attente ou l’abonnement. Cette pompe de messages contient une boucle infinie qui émet un appel pour recevoir des messages. Dès que l’appel expire, il émet un nouvel appel. L’intervalle de délai d’expiration est déterminé par la valeur de la propriété [OperationTimeout](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.messagingfactorysettings.operationtimeout.aspx) de [MessagingFactory](https://msdn.microsoft.com/library/microsoft.servicebus.messaging.messagingfactory.aspx) utilisée.
@@ -223,8 +216,6 @@ AP2003
 ### <a name="description"></a>Description
 Les méthodes asynchrones de Service Bus permettent d’améliorer les performances avec la messagerie répartie.
 
-Pensez à partager vos idées et vos commentaires sur la page [Commentaires d’analyse du code Azure](https://social.msdn.microsoft.com/Forums/en-US/home).
-
 ### <a name="reason"></a>Raison
 Les méthodes asynchrones permettent l’utilisation simultanée de programmes d’application, car l’exécution de chaque appel ne bloque pas le thread principal. Lors de l’utilisation des méthodes de messagerie Service Bus, les opérations (envoi, réception, suppression, etc.) prennent du temps. Ce temps comprend le traitement de l’opération par le service Service Bus en plus de la latence de la demande et de la réponse. Pour augmenter le nombre d’opérations par période, les opérations doivent s’exécuter simultanément. Pour plus d’informations, consultez [Meilleures pratiques relatives aux améliorations de performances à l’aide de la messagerie répartie Service Bus](https://msdn.microsoft.com/library/azure/hh528527.aspx).
 
@@ -239,8 +230,6 @@ AP2004
 
 ### <a name="description"></a>Description
 Partitionnement des files d’attente et des rubriques Service Bus pour de meilleures performances avec la messagerie Service Bus.
-
-Pensez à partager vos idées et vos commentaires sur la page [Commentaires d’analyse du code Azure](https://social.msdn.microsoft.com/Forums/en-US/home).
 
 ### <a name="reason"></a>Raison
 Le partitionnement des rubriques et des files d’attente Service Bus améliore les performances et la disponibilité du service, car le débit global d’une file d’attente ou d’une rubrique partitionnée n’est plus limité par les performances d’un seul répartiteur ou magasin de messagerie. En outre, la panne temporaire d’un magasin de messagerie ne rend pas une rubrique ou une file d’attente partitionnée indisponible. Pour plus d’informations, consultez la rubrique [Partitionnement des entités de messagerie](https://msdn.microsoft.com/library/azure/dn520246.aspx).
@@ -264,8 +253,6 @@ AP3001
 
 ### <a name="description"></a>Description
 Évitez d’utiliser SharedAccessStartTime défini à l’heure actuelle pour démarrer immédiatement la stratégie d’accès partagé. Ne définissez cette propriété que si vous voulez démarrer la stratégie d’accès partagé ultérieurement.
-
-Pensez à partager vos idées et vos commentaires sur la page [Commentaires d’analyse du code Azure](https://social.msdn.microsoft.com/Forums/en-US/home).
 
 ### <a name="reason"></a>Raison
 La synchronisation de l’heure provoque une légère différence d’heure entre les centres de données. Par exemple, il serait logique de définir l’heure de début d’une stratégie de signature d’accès partagé à l’heure actuelle avec DateTime.Now ou une méthode similaire, pour faire en sorte que la stratégie de signature d’accès partagé prenne effet immédiatement. Cependant, la légère différence d’heure entre les différents centres de données peut provoquer des problèmes, dans la mesure où certains centres de données peuvent être légèrement en retard par rapport à l’heure de début, tandis que d’autres centres sont en avance. La stratégie de signature d’accès partagé peut donc expirer rapidement (voire immédiatement) si la durée de vie de la stratégie est trop courte.
@@ -347,8 +334,6 @@ AP4000
 ### <a name="description"></a>Description
 L’utilisation de la classe [ConfigurationManager](https://msdn.microsoft.com/library/system.configuration.configurationmanager\(v=vs.110\).aspx) pour les projets comme les sites web Azure et les services mobiles Azure ne présente aucun problème d’exécution. Il est toutefois conseillé d’utiliser Cloud[ConfigurationManager](https://msdn.microsoft.com/library/system.configuration.configurationmanager\(v=vs.110\).aspx) de façon unifiée pour gérer les configurations de toutes les applications cloud Azure.
 
-Pensez à partager vos idées et vos commentaires sur la page [Commentaires d’analyse du code Azure](https://social.msdn.microsoft.com/Forums/en-US/home).
-
 ### <a name="reason"></a>Raison
 CloudConfigurationManager lit le fichier de configuration approprié pour l'environnement de l'application.
 
@@ -384,8 +369,6 @@ AP4001
 ### <a name="description"></a>Description
 Si vous utilisez des chaînes de connexion codées en dur et que vous devez effectuer une mise à jour ultérieurement, vous devrez apporter des modifications à votre code source et recompiler l’application. Si vous stockez vos chaînes de connexion dans un fichier de configuration, il suffit de mettre à jour le fichier de configuration.
 
-Pensez à partager vos idées et vos commentaires sur la page [Commentaires d’analyse du code Azure](https://social.msdn.microsoft.com/Forums/en-US/home).
-
 ### <a name="reason"></a>Raison
 Le codage des chaînes de connexion en dur est une mauvaise pratique, car elle présente des problèmes lorsque les chaînes de connexion doivent être modifiées rapidement. En outre, si le projet doit être archivé pour contrôle du code source, les chaînes de connexion codées en dur introduisent des vulnérabilités de sécurité dans la mesure où ces chaînes peuvent être consultées dans le code source.
 
@@ -396,7 +379,7 @@ Stocker les chaînes de connexion dans les fichiers de configuration ou dans les
 * Pour les applications web hébergées par IIS, utilisez web.config pour stocker les chaînes de connexion.
 * Pour les applications ASP.NET vNext, utilisez configuration.json pour stocker les chaînes de connexion.
 
-Pour plus d’informations sur l’utilisation de fichiers de configuration comme web.config ou app.config, consultez la page [Conseils de configuration ASP.NET web](https://msdn.microsoft.com/library/vstudio/ff400235\(v=vs.100\).aspx). Pour plus d’informations sur le fonctionnement des variables d’environnement Azure, consultez [Sites web Microsoft Azure : Fonctionnement des chaînes d’application et des chaînes de connexion](https://azure.microsoft.com/blog/2013/07/17/windows-azure-web-sites-how-application-strings-and-connection-strings-work/). Pour plus d’informations sur le stockage de la chaîne de connexion dans le contrôle de code source, consultez la rubrique [Éviter de placer des informations sensibles (par exemple, des chaînes de connexion) dans des fichiers stockés dans des référentiels de code source](https://docs.microsoft.com/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/source-control).
+Pour plus d’informations sur l’utilisation de fichiers de configuration comme web.config ou app.config, consultez la page [Conseils de configuration ASP.NET web](https://msdn.microsoft.com/library/vstudio/ff400235\(v=vs.100\).aspx). Pour plus d’informations sur le fonctionnement des variables d’environnement Azure, consultez [Sites web Microsoft Azure : Fonctionnement des chaînes d’application et des chaînes de connexion](https://azure.microsoft.com/blog/2013/07/17/windows-azure-web-sites-how-application-strings-and-connection-strings-work/). Pour plus d’informations sur le stockage de la chaîne de connexion dans le contrôle de code source, consultez la rubrique [Éviter de placer des informations sensibles (par exemple, des chaînes de connexion) dans des fichiers stockés dans des référentiels de code source](/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/source-control).
 
 ## <a name="use-diagnostics-configuration-file"></a>Utiliser le fichier de configuration des diagnostics
 ### <a name="id"></a>Id
@@ -404,8 +387,6 @@ AP5000
 
 ### <a name="description"></a>Description
 Au lieu de configurer les paramètres de diagnostic dans votre code, par exemple à l’aide de l’API de programmation Microsoft.WindowsAzure.Diagnostics, vous devez configurer les paramètres de diagnostic dans le fichier diagnostics.wadcfg (ou diagnostics.wadcfgx si vous utilisez Azure SDK 2.5). Vous pouvez ainsi modifier les paramètres de diagnostic sans avoir à recompiler votre code.
-
-Pensez à partager vos idées et vos commentaires sur la page [Commentaires d’analyse du code Azure](https://social.msdn.microsoft.com/Forums/en-US/home).
 
 ### <a name="reason"></a>Raison
 Avant Azure SDK 2.5 (qui utilise Diagnostics Azure 1.3), Diagnostics Azure (WAD) pouvait être configuré via différentes méthodes, notamment en l’ajoutant à l’objet blob de configuration dans le stockage en utilisant du code impératif, une configuration déclarative ou la configuration par défaut. Toutefois, la meilleure façon de configurer les diagnostics consiste à utiliser un fichier config XML (diagnostics.wadcfg ou diagnostics.wadcfgx pour le kit SDK 2.5 et les versions ultérieures) dans le projet d’application. Dans cette approche, le fichier diagnostics.wadcfg définit complètement la configuration, et peut être mis à jour et redéployé à volonté. Mélanger l’utilisation du fichier de configuration Diagnostics. wadcfg avec les méthodes de définition de configuration par programmation à l’aide des classes [DiagnosticMonitor](https://msdn.microsoft.com/library/microsoft.windowsazure.diagnostics.diagnosticmonitor.aspx)ou [RoleInstanceDiagnosticManager](https://msdn.microsoft.com/library/microsoft.windowsazure.diagnostics.management.roleinstancediagnosticmanager.aspx) peut entraîner une confusion. Consultez la rubrique [Initialiser ou modifier la configuration des diagnostics Azure](https://msdn.microsoft.com/library/azure/hh411537.aspx) pour plus d’informations.
@@ -429,8 +410,6 @@ AP6000
 
 ### <a name="description"></a>Description
 Pour économiser la mémoire, évitez de déclarer les objets DBContext comme statiques.
-
-Pensez à partager vos idées et vos commentaires sur la page [Commentaires d’analyse du code Azure](https://social.msdn.microsoft.com/Forums/en-US/home).
 
 ### <a name="reason"></a>Raison
 Les objets DBContext contiennent les résultats de requête de chaque appel. Les objets DBContext statiques ne sont pas supprimés jusqu’à ce que le domaine d’application soit déchargé. Par conséquent, un objet DBContext statique peut consommer de grandes quantités de mémoire.

@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b8c70b3c1b8282f87c8eb5aff5d8dde769c613d4
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 73420f5fa6a90638f4a3dbbdf484178c5e177ce9
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75848568"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917387"
 ---
 # <a name="python-web-application-project-templates"></a>Modèles de projet d’application web Python
 
@@ -75,7 +75,7 @@ Quand vous créez un projet à partir d’un modèle propre au framework, une bo
 
 Si vous utilisez le contrôle de code source, vous pouvez généralement ignorer le dossier d’environnement virtuel car cet environnement peut être recréé en utilisant uniquement *requirements.txt*. La meilleure façon d’exclure le dossier est de commencer par sélectionner l’option **I will install them myself** (Je les installerai moi-même) dans l’invite illustrée ci-dessus, puis de désactiver la validation automatique avant de créer l’environnement virtuel. Pour plus d’informations, consultez [Tutoriel d’apprentissage de Django - Étapes 1-2 et 1-3](learn-django-in-visual-studio-step-01-project-and-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository) et [Tutoriel d’apprentissage de Flask - Étapes 1-2 et 1-3](learn-flask-visual-studio-step-01-project-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository).
 
-Lors du déploiement sur Microsoft Azure App Service, sélectionnez une version de Python comme [extension de site](https://docs.microsoft.com/visualstudio/python/managing-python-on-azure-app-service?view=vs-2019) et installez manuellement les packages. En outre, étant donné qu’Azure App Service n’installe **pas** automatiquement les packages à partir d’un fichier *requirements.txt* en cas de déploiement à partir de Visual Studio, suivez les instructions de configuration fournies sur la page [aka.ms/PythonOnAppService](https://docs.microsoft.com/visualstudio/python/managing-python-on-azure-app-service?view=vs-2019).
+Lors du déploiement sur Microsoft Azure App Service, sélectionnez une version de Python comme [extension de site](/visualstudio/python/managing-python-on-azure-app-service?view=vs-2019) et installez manuellement les packages. En outre, étant donné qu’Azure App Service n’installe **pas** automatiquement les packages à partir d’un fichier *requirements.txt* en cas de déploiement à partir de Visual Studio, suivez les instructions de configuration fournies sur la page [aka.ms/PythonOnAppService](managing-python-on-azure-app-service.md).
 
 Microsoft Azure Cloud Services *prend en charge* le fichier *requirements.txt*. Voir [Projets de service cloud Azure](python-azure-cloud-service-project-template.md) pour plus d’informations.
 

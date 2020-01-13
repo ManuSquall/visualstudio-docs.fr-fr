@@ -16,12 +16,12 @@ caps.latest.revision: 44
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b680c2e27b871e654618b4c0ada0904744751282
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: a495a566f78ceb2b89f8e2070837f038da352a4d
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850480"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918880"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>Définir un profil pour étendre UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -220,7 +220,8 @@ Vous pouvez définir un *profil UML* pour personnaliser les éléments de modèl
 7. Générez l'Extension Visual Studio en créant le projet d'extension ou en compressant tous les fichiers, comme décrit dans les sections précédentes.
 
 ## <a name="Schema"></a>Structure d’un profil
- Le fichier XSD pour les profils UML se trouve dans l’exemple suivant : [définition de stéréotypes et de profils XSD](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples). Pour vous aider à modifier les fichiers de profils, installez le fichier `.xsd` dans :
+
+ Pour vous aider à modifier les fichiers de profils, installez le fichier `.xsd` dans :
 
  **%ProgramFiles%\Microsoft Visual Studio [version] \Xml\Schemas**
 
@@ -365,4 +366,5 @@ Vous devez sélectionner votre profil dans un package ou un modèle. Les stéré
 6. Redémarrez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
 ## <a name="see-also"></a>Voir aussi
- [Ajouter des stéréotypes à des éléments de modèle UML](../modeling/add-stereotypes-to-uml-model-elements.md) [personnaliser votre modèle à l’aide de profils et](../modeling/customize-your-model-with-profiles-and-stereotypes.md) de stéréotypes stéréotypes [standard pour les modèles UML](../modeling/standard-stereotypes-for-uml-models.md) [exemple : Color UML elements by stéréotype](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) [Sample : définition de stéréotypes, profils XSD](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)
+ [Ajouter des stéréotypes à des éléments de modèle UML](../modeling/add-stereotypes-to-uml-model-elements.md) [personnaliser votre modèle avec des profils et](../modeling/customize-your-model-with-profiles-and-stereotypes.md) des stéréotypes de stéréotypes [standard pour les modèles UML](../modeling/standard-stereotypes-for-uml-models.md)
+ 

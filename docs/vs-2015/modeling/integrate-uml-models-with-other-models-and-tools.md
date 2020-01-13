@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 87d7742c988e0193c8175621a08478b6225c8670
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 72ea0c562bb9c2a8050fc1365fac19df20232f80
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850641"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918351"
 ---
 # <a name="integrate-uml-models-with-other-models-and-tools"></a>Intégrer des modèles UML à d'autres modèles et outils
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,17 +40,11 @@ Dans un élément UML, vous pouvez stocker des liens vers d'autres éléments UM
 
    Pour plus d’informations, consultez [définir un profil pour étendre UML](../modeling/define-a-profile-to-extend-uml.md).
 
-   Pour obtenir un exemple de projet dans lequel un profil est déployé avec des commandes de menu et des gestionnaires de mouvements, consultez [Sample : UML Profiles](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
-
 - **Référence.** Vous pouvez attacher un ensemble de chaînes à n'importe quel élément UML. Vous pouvez écrire du code qui stocke des informations telles qu'un nom de fichier ou le GUID d'un autre élément. Pour cela, nul besoin de fournir des définitions supplémentaires. Les références ne sont pas directement visibles par l'utilisateur.
 
-   Pour plus d’informations, consultez [attacher des chaînes de référence à des éléments de modèle UML](../modeling/attach-reference-strings-to-uml-model-elements.md). Pour obtenir un exemple, consultez [lier des éléments UML à des diagrammes ou à d’autres fichiers](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
-
-  Il existe deux manières d'encoder des références à des éléments de modèle :
+Il existe deux manières d'encoder des références à des éléments de modèle :
 
 - **GUID et nom de fichier** de l’élément de modèle cible et du modèle qui le contient, ou un diagramme particulier qui l’affiche.
-
-   Pour obtenir un exemple, consultez [lier des éléments UML à des diagrammes ou à d’autres fichiers](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
 
 - **Références ModelBus.** ModelBus est une infrastructure pour la création et la résolution des références entre les modèles. Elle comprend le sélecteur ModelBus, qui permet à l'utilisateur de sélectionner un élément dans un modèle. Elle aide aussi l'utilisateur à résoudre les références qui sont perdues suite à des modifications dans le modèle cible.
 
@@ -61,8 +55,6 @@ Dans un élément UML, vous pouvez stocker des liens vers d'autres éléments UM
 
 1. Les **règles VMSDK** peuvent être utilisées pour propager les modifications à l’intérieur du même modèle.
 
-    Pour obtenir un exemple, consultez [lier des éléments UML à des diagrammes ou à d’autres fichiers](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
-
 2. Les **événements VMSDK** peuvent être utilisés pour propager des modifications en dehors du modèle, par exemple pour modifier le nom de fichier d’un document lié, ou pour modifier un élément dans un autre modèle.
 
    Pour plus d’informations sur ces deux mécanismes, consultez [Comment : répondre à des modifications dans un modèle UML](../misc/how-to-respond-to-changes-in-a-uml-model.md).
@@ -71,30 +63,5 @@ Dans un élément UML, vous pouvez stocker des liens vers d'autres éléments UM
 
    Pour plus d’informations, consultez [définir un gestionnaire de mouvements sur un diagramme de modélisation](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) et [Comment : ajouter un gestionnaire de glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md).
 
-## <a name="samples"></a>Exemples
- Consultez l’exemple de code [lier des éléments UML à des diagrammes ou à d’autres fichiers](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples). Cet exemple permet aux utilisateurs de faire glisser un fichier sur n'importe quel élément UML et d'ouvrir ultérieurement le fichier en double-cliquant sur l'élément. Vous pouvez par exemple lier un diagramme d'activités à un élément de cas d'usage. Une icône indique les éléments qui ont des liens.
-
- Cet exemple de code illustre les techniques suivantes :
-
-- [Attacher des chaînes de référence à des éléments de modèle UML](../modeling/attach-reference-strings-to-uml-model-elements.md)
-
-   L'exemple de code stocke des chemins de fichiers et des GUID d'éléments dans des chaînes de référence qui sont associées à l'élément.
-
-- Comment ajouter des éléments décoratifs à des éléments UML. Pour obtenir des informations générales sur les éléments décoratifs, consultez [Personnalisation des champs de texte et d’image](../modeling/customizing-text-and-image-fields.md).
-
-   L'exemple ajoute un élément décoratif d'image aux formes UML.
-
-- [Guide pratique pour répondre à des modifications dans un modèle UML](../misc/how-to-respond-to-changes-in-a-uml-model.md)
-
-   L'exemple montre comment définir une règle qui répond à l'apparition de nouvelles formes sur un diagramme.
-
-- [Définir une commande de menu sur un diagramme de modélisation](../modeling/define-a-menu-command-on-a-modeling-diagram.md)
-
-- [Définir un gestionnaire de mouvements sur un diagramme de modélisation](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)
-
-   L'exemple montre comment gérer les éléments déplacés à partir de l'Explorateur Windows (ou de l'Explorateur de fichiers), de l'Explorateur de solutions et d'autres éléments UML.
-
-  Pour obtenir un exemple dans lequel un modèle UML est lu par un DSL, consultez [Comment : ajouter un gestionnaire de glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md).
-
 ## <a name="see-also"></a>Voir aussi
- [Définir une commande de menu sur un diagramme de modélisation](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [définir un gestionnaire de mouvements sur un diagramme de modélisation](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) [Comment : ajouter un gestionnaire de glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md) [Comment : répondre aux modifications dans un exemple de modèle UML](../misc/how-to-respond-to-changes-in-a-uml-model.md) [: profils](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) UML [lier des éléments UML à des diagrammes ou à d’autres fichiers](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)
+ [Définir une commande de menu sur un diagramme de modélisation](../modeling/define-a-menu-command-on-a-modeling-diagram.md) [définir un gestionnaire de mouvements sur un diagramme de modélisation](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md) [Comment : ajouter un gestionnaire de glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md) [Comment : répondre aux modifications dans un modèle UML](../misc/how-to-respond-to-changes-in-a-uml-model.md)

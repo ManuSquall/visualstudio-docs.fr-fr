@@ -11,19 +11,19 @@ ms.assetid: 0b40d495-f17f-4bb9-ace8-b365a7172784
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4f6e88e5c430129faa80f34a45f9b6620d5b0d13
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 6220afc2bdf75cc22529c65d5514f5f9e0766555
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850357"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919212"
 ---
 # <a name="visual-studio-shell-integrated"></a>Visual Studio Shell (intégré)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Le shell intégré de Visual Studio comprend l’environnement de développement intégré (IDE), le débogueur et l’intégration du contrôle de code source. Aucun langage de programmation n’est inclus. Toutefois, l’interpréteur de commandes intégré fournit une infrastructure qui vous permet d’ajouter des langages de programmation.  
   
- L’interpréteur de commandes intégré de Visual Studio est en fait une combinaison de l’interpréteur de commandes isolé de Visual Studio plus une installation supplémentaire qui inclut des composants intégrés à l’interpréteur de commandes.  Votre application shell intégrée doit inclure à la fois le package redistribuable Shell isolé de [Microsoft Visual Studio Shell (isolé) package redistribuable](https://docs.microsoft.com/collaborate/connect-redirect?ProgramID=8963&InvitationID=VS15-2R69-RB8J) , ainsi que le package redistribuable Shell intégré de [Microsoft Visual Studio Shell (intégré) package redistribuable](https://docs.microsoft.com/collaborate/connect-redirect?ProgramID=8963&InvitationID=VS15-2R69-RB8J).  
+ L’interpréteur de commandes intégré de Visual Studio est en fait une combinaison de l’interpréteur de commandes isolé de Visual Studio plus une installation supplémentaire qui inclut des composants intégrés à l’interpréteur de commandes.  Votre application shell intégrée doit inclure à la fois le package redistribuable Shell isolé et le package redistribuable Shell intégré, à la fois à partir des [Packages redistribuables de l’interpréteur](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/)de commandes Microsoft Visual Studio.  
   
 > [!NOTE]
 > avant de pouvoir accéder aux packages redistribuables du shell isolé et intégré, vous serez invité à répondre à un petit questionnaire.  Une fois le questionnaire rempli, vous serez redirigé vers une page Visual Studio Connect avec des liens de téléchargement de packages redistribuables.  Vous trouverez les liens de téléchargement lors des visites suivantes sur le site Visual Studio Connect sous l’onglet  **&#124; programmes Visual Studio 2015 intégré et environnement isolé** .  

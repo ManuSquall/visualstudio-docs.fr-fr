@@ -15,12 +15,12 @@ caps.latest.revision: 26
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: d4e45ade24ce792999d1f9b0f52d9c82703fc5a0
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: f8ec0706530cd61653d44533654cf453d25eb42e
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849879"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919069"
 ---
 # <a name="analyzing-application-quality-by-using-code-analysis-tools"></a>Analyse de la qualité des applications à l'aide des outils d'analyse du code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Dans cette section, analyse de la [qualité du code managé](../code-quality/ana
 
  [Analyse de la qualité du pilote à l’aide des outils d’analyse du code](/windows-hardware/drivers/devtest/tools-for-verifying-drivers) L’analyse du code pour les pilotes est un outil de vérification statique au moment de la compilation qui détecte les C++ erreurs de codage de base dans les programmes C et, et comprend un module spécialisé conçu pour détecter les erreurs dans le code du pilote en mode noyau (principalement). Le vérificateur de pilote statique (SDV, Static Driver Verifier) est un outil de vérification statique qui analyse systématiquement le code source des pilotes en mode noyau de Windows. SDV détermine si le pilote interagit correctement avec le noyau du système d'exploitation Windows.
 
- [Avertissements de l’analyse du code pour les pilotes](https://msdn.microsoft.com/library/windows/hardware/ff550572(v=VS.85).aspx) Décrit les avertissements signalés par l’analyse du code pour les pilotes lorsqu’il détecte une erreur possible dans le code du pilote.
+ [Avertissements de l’analyse du code pour les pilotes](/windows-hardware/drivers/devtest/prefast-for-drivers-warnings) Décrit les avertissements signalés par l’analyse du code pour les pilotes lorsqu’il détecte une erreur possible dans le code du pilote.
 
 ## <a name="related-tasks"></a>Tâches connexes
  [Mesure de la complexité et de la facilité de maintenance du code managé](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md) Insérez la description ici.

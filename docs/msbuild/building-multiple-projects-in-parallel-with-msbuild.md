@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ee3cace6940b4fe402595cfba7b316a273c1d50
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: a0f63ac8fa782dcb504b8bd00ad7e32ce96e1eab
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593393"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917808"
 ---
 # <a name="build-multiple-projects-in-parallel-with-msbuild"></a>Générer plusieurs projets en parallèle avec MSBuild
 Vous pouvez utiliser MSBuild pour générer plus rapidement plusieurs projets en les exécutant en parallèle. Pour exécuter des builds en parallèle, vous utilisez les paramètres suivants sur un ordinateur multicœur ou multiprocesseur :
@@ -43,7 +43,7 @@ msbuild.exe myproj.proj -maxcpucount:3
 ```
 
 ## <a name="buildinparallel-task-parameter"></a>Paramètre de tâche BuildInParallel
-`BuildInParallel` est un paramètre booléen facultatif sur une tâche [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Quand `BuildInParallel` a la valeur `true` (sa valeur par défaut est `false`), plusieurs processus de travail sont créés pour générer le plus de projets possible simultanément. Pour que cela fonctionne correctement, vous devez affecter une valeur supérieure à 1 au commutateur `-maxcpucount`, et le système doit avoir au moins deux cœurs ou deux processeurs.
+`BuildInParallel` est un paramètre booléen facultatif sur une tâche [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Quand `BuildInParallel` a la valeur `true` (sa valeur par défaut est `true`), plusieurs processus de travail sont créés pour générer le plus de projets possible simultanément. Pour que cela fonctionne correctement, vous devez affecter une valeur supérieure à 1 au commutateur `-maxcpucount`, et le système doit avoir au moins deux cœurs ou deux processeurs.
 
 Voici un exemple tiré de *microsoft.common.targets* qui décrit comment définir le paramètre `BuildInParallel`.
 

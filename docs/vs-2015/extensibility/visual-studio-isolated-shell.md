@@ -14,12 +14,12 @@ ms.assetid: d2620e71-be9e-44c9-b5b7-03a4c8d9cf0b
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 01917b9e78ee6129f09811ca2dc3e18c149c06f6
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: ef2d1cbffab5e38e603b0e50beb896f1c6efa23d
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850390"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919207"
 ---
 # <a name="visual-studio-isolated-shell"></a>Shell isolé Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ L’interpréteur de commandes isolé de Visual Studio vous permet de créer de
   
  Pour utiliser un projet Shell isolé, vous devez installer le kit de développement logiciel (SDK) Visual Studio. À compter de Visual Studio 2015, vous n’installez pas le kit de développement logiciel (SDK) Visual Studio à partir du centre de téléchargement. Il est inclus en tant que fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le kit de développement logiciel (SDK) Visual Studio plus tard. Pour plus d’informations, consultez [installation du kit de développement logiciel (SDK) Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
   
- Pour créer une application Shell isolée, démarrez avec un projet isolé Visual Studio Shell. Ce projet contient tout ce dont vous avez besoin pour développer et tester votre propre application d’interpréteur de commandes isolé. Lorsque vous êtes prêt à écrire le programme d’installation qui déploie votre application, vous devez récupérer le package redistribuable Shell isolé à partir de [Microsoft Visual Studio Shell (isolé) package redistribuable](https://docs.microsoft.com/collaborate/connect-redirect?ProgramID=8963&InvitationID=VS15-2R69-RB8J).  
+ Pour créer une application Shell isolée, démarrez avec un projet isolé Visual Studio Shell. Ce projet contient tout ce dont vous avez besoin pour développer et tester votre propre application d’interpréteur de commandes isolé. Lorsque vous êtes prêt à écrire le programme d’installation qui déploie votre application, vous devez récupérer le package redistribuable Shell isolé à partir de [Microsoft Visual Studio Shell (isolé) package redistribuable](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/).  
   
 > [!NOTE]
 > Avant de pouvoir accéder au package redistribuable de l’interpréteur de commandes isolé, vous serez invité à fournir une brève enquête client.  Une fois le questionnaire rempli, vous serez redirigé vers une page Visual Studio Connect avec des liens de téléchargement de packages redistribuables.  Vous trouverez les liens de téléchargement lors des visites suivantes sur le site Visual Studio Connect sous l’onglet  **&#124; programmes Visual Studio 2015 intégré et environnement isolé** .  

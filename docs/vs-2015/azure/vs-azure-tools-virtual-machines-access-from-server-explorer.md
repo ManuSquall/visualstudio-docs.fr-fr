@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/31/2017
 ms.author: ghogen
-ms.openlocfilehash: 12f94605ee6a1f4e4cc0142e6dd59ec02ed619c9
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: f4c1ff547d9d550cbbc2e77435b159543fc16bf6
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849940"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917097"
 ---
 # <a name="accessing-azure-virtual-machines-from-server-explorer"></a>Accès aux machines virtuelles Azure à partir de l’Explorateur de serveurs
 
@@ -31,7 +31,7 @@ Si vous avez des machines virtuelles hébergées par Azure, vous pouvez y accéd
    | Nom DNS |URL comportant l’adresse Internet de la machine virtuelle. |
    | Environnement |Pour une machine virtuelle, la valeur de cette propriété est toujours Production. |
    | Name |Nom de l'ordinateur virtuel. |
-   | Taille |Taille de la machine virtuelle, qui reflète la quantité de mémoire et d’espace disque disponibles. Pour plus d’informations, consultez [Tailles de machines virtuelles](https://docs.microsoft.com/azure/cloud-services/cloud-services-sizes-specs). |
+   | Taille |Taille de la machine virtuelle, qui reflète la quantité de mémoire et d’espace disque disponibles. Pour plus d’informations, consultez [Tailles de machines virtuelles](/azure/cloud-services/cloud-services-sizes-specs). |
    | Status |Les valeurs incluent : Démarrage en cours, Démarré, En cours d’arrêt, Arrêté et Extraction de l’état. Si Extraction de l’état s’affiche, l’état actuel est inconnu. Les valeurs de cette propriété ne sont pas les mêmes que celles qui sont utilisées dans le [portail Azure](https://portal.azure.com/). |
    | SubscriptionID |ID d’abonnement de votre compte Azure. Vous pouvez obtenir cette information sur le [portail Azure](https://portal.azure.com/) en affichant les propriétés de l’abonnement. |
 2. Sélectionnez un nœud de point de terminaison, puis ouvrez la fenêtre **Propriétés** .

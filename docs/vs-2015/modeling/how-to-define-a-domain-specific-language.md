@@ -18,28 +18,26 @@ caps.latest.revision: 45
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 8050e0245708d855d78dbba94e1bb56399343ecf
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 03c0da634ea740517380896542e9df5e6c7a5fbd
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850702"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918594"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Comment : définir un langage spécifique à un domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pour définir un langage spécifique à un domaine (DSL, Domain-Specific Language), vous devez créer une solution [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] à partir d'un modèle. Le composant principal de la solution est le diagramme de définition DSL, qui est stocké dans DslDefinition.dsl. La définition DSL définit les classes et les formes de la solution DSL. Après avoir modifié et ajouté à ces éléments, vous pouvez ajouter du code programme pour personnaliser la solution DSL plus en détail.
 
- Si vous débutez avec DSL, nous vous recommandons d’utiliser le **laboratoire d’outils DSL**, que vous trouverez dans ce site : [création et Modeling SDK](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)
-
 ## <a name="templates"></a>Sélection d’une solution de modèle
  Pour définir un DSL, vous devez avoir installé les composants suivants :
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://www.visualstudio.com/)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://docs.microsoft.com/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts)|
-|Kit de développement logiciel (SDK) Visual Studio Visualization and Modeling|[http://go.microsoft.com/fwlink/?LinkID=186128](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[https://www.visualstudio.com/](https://www.visualstudio.com/)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[SDK Visual Studio](../extensibility/visual-studio-sdk.md)|
+|Kit de développement logiciel (SDK) Visual Studio Visualization and Modeling|[Téléchargement du SDK Modeling](https://www.microsoft.com/download/details.aspx?id=48148)|
 
  Pour créer un langage spécifique domaine, vous devez créer une solution [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] à l'aide du modèle de projet Langage spécifique à un domaine.
 

@@ -15,23 +15,23 @@ caps.latest.revision: 30
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 3c8022a9dfba3012e8c81523b076b7bbfbb6ee8d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c4da0414c9923a8ed7bb01456f38000433641522
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669188"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919234"
 ---
 # <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709 : La casse des identificateurs doit être correcte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Pour obtenir la dernière documentation sur Visual Studio, consultez [CA1709 : la casse des identificateurs doit être correcte](https://docs.microsoft.com/visualstudio/code-quality/ca1709-identifiers-should-be-cased-correctly).
+Pour obtenir la dernière documentation sur Visual Studio, consultez [CA1709 : la casse des identificateurs doit être correcte](/visualstudio/code-quality/ca1709-identifiers-should-be-cased-correctly).
 
 |||
 |-|-|
 |TypeName|IdentifiersShouldBeCasedCorrectly|
 |CheckId|CA1709|
-|Category|Microsoft. Naming|
+|Catégorie|Microsoft.Naming|
 |Modification avec rupture|Avec rupture-en cas de déclenchement sur les assemblys, les espaces de noms, les types, les membres et les paramètres.<br /><br /> Sans rupture-en cas de déclenchement sur des paramètres de type générique.|
 
 ## <a name="cause"></a>Cause
@@ -46,7 +46,7 @@ Pour obtenir la dernière documentation sur Visual Studio, consultez [CA1709 : 
  Le nom d’un identificateur contient un acronyme de trois lettres majuscules ou plus.
 
 ## <a name="rule-description"></a>Description de la règle
- Les conventions d’affectation de noms fournissent une recherche commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit la courbe d’apprentissage requise pour les nouvelles bibliothèques logicielles et augmente la confiance des clients dans la mesure où la bibliothèque a été développée par une personne ayant une expertise dans le développement de code géré.
+ Les conventions d’affectation de noms fournissent une apparence commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit la courbe d’apprentissage requise pour les nouvelles bibliothèques logicielles et augmente la confiance des clients dans la mesure où la bibliothèque a été développée par une personne ayant une expertise dans le développement de code géré.
 
  Par Convention, les noms de paramètres utilisent la casse mixte. les noms d’espaces de noms, de types et de membres utilisent la casse Pascal. Dans un nom à casse mixte, la première lettre est en minuscules et la première lettre de tous les mots restants dans le nom est en majuscules. « PacketSniffer », « ioFile » et « fatalErrorCode » sont des exemples de noms à casse mixte : « », « » et «». Dans un nom en respectant la casse Pascal, la première lettre est en majuscule et la première lettre des mots restants dans le nom est en majuscules. « PacketSniffer », « IOFile » et « FatalErrorCode » sont des exemples de noms en respectant la casse Pascal.
 

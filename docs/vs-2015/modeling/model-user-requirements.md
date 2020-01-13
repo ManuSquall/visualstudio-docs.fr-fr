@@ -13,12 +13,12 @@ caps.latest.revision: 30
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3d70a7c8b7dbf6015e992cfabb5204f3b307238a
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: a94a4bd479c3ad48efe44d3a92e91dc3a050efcd
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75844916"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918272"
 ---
 # <a name="model-user-requirements"></a>Modéliser les besoins des utilisateurs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -138,7 +138,7 @@ Visual Studio vous aide à comprendre, discuter et communiquer les besoins de vo
 |Éléments d’un diagramme de classes conceptuelles|[Informations de référence sur les diagrammes de classes UML](../modeling/uml-class-diagrams-reference.md)|
 |Comment développer du code à partir de classes conceptuelles|[Modéliser l’architecture de votre application](../modeling/model-your-app-s-architecture.md)|
 
- Dans un diagramme de classes conceptuelles, il est généralement inutile de placer des flèches sur les associations pour représenter la navigabilité. En effet, le diagramme ne représente pas une implémentation. Les associations représentent des relations entre des objets du monde réel. L’Extension [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] suivante applique par défaut des flèches non directionnelles : [Exemple : fonctionnalités de modélisation de domaine UML](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
+ Dans un diagramme de classes conceptuelles, il est généralement inutile de placer des flèches sur les associations pour représenter la navigabilité. En effet, le diagramme ne représente pas une implémentation. Les associations représentent des relations entre des objets du monde réel.
 
 ## <a name="BusinessRules"></a> Showing Business Rules
  Une règle métier est un impératif qui n’est associé à aucun cas d’usage particulier et doit être respecté à l’échelle du système.
@@ -239,4 +239,4 @@ Visual Studio vous aide à comprendre, discuter et communiquer les besoins de vo
   En examinant les relations entre les vues fournies par différents diagrammes, vous pouvez rapidement comprendre les principaux concepts avec lesquels vos utilisateurs travaillent et les aider à comprendre ce qu’ils ont besoin de la part du système. Vous identifierez aussi plus précisément les impératifs concernant lesquels les parties prenantes ont des doutes. Vous pouvez prévoir de développer ces fonctionnalités, au moins sous une forme simplifiée, à un stade précoce du projet, pour permettre aux utilisateurs d’expérimenter avec elles.
 
 ## <a name="see-also"></a>Voir aussi
- [Modifier des modèles et des diagrammes UML](../modeling/edit-uml-models-and-diagrams.md) [Développer des tests à partir d’un modèle](../modeling/develop-tests-from-a-model.md) [Utiliser des modèles dans votre processus de développement](../modeling/use-models-in-your-development-process.md) [Modéliser l’architecture de votre application](../modeling/model-your-app-s-architecture.md) [Exemple d'extension VS : Fonctionnalités de modélisation de domaine UML](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) [ Exemple d'extension VS : Coloriser les éléments UML par stéréotype](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) [Exemple d’extension VS : associer des éléments UML à des diagrammes, des fichiers et d’autres éléments exemple d’extension](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) [Exemple d’extension VS : Aligner des formes dans un diagramme UML](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) [ Vidéo : Modélisation du domaine professionnel](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain)
+ [Modifier des modèles et des diagrammes UML](../modeling/edit-uml-models-and-diagrams.md) [développer des tests à partir d’un modèle](../modeling/develop-tests-from-a-model.md) [Utilisez des modèles dans votre modèle de processus de développement vidéo sur](../modeling/use-models-in-your-development-process.md) l' [architecture de votre application](../modeling/model-your-app-s-architecture.md) [: modélisation du domaine d’entreprise](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain)

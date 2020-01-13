@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 21e724e585f2a5bf0e1fe2a6b70f89c1bd5f5eec
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 960511fcfb83dfc6ac3c58a806d8a23f1ff61597
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74298190"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918774"
 ---
 # <a name="getting-started-with-python"></a>Mise en route de Python
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ Les ressources suivantes vous permettront de démarrer :
 
 - [Guide d’installation](https://github.com/Microsoft/PTVS/wiki/PTVS-Installation)    
 - [Petites vidéos de démarrage et d’exploration](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)  
-- Démonstration de l’installation et des fonctionnalités (27 min)] (https://www.youtube.com/watch?v=JNNAOypc6Ek)  
+- Installation et démonstration des fonctionnalités (27 min)](https://www.youtube.com/watch?v=JNNAOypc6Ek)  
 - [Documentation](https://github.com/Microsoft/PTVS/wiki)  
 
 Notez que Visual Studio ne permet pas, à l’heure actuelle, de créer un exécutable autonome à l’aide de Python, ce qui signifie essentiellement un programme avec un interpréteur python incorporé. Toutefois, la communauté Python décrit différents moyens de le faire sur [StackOverflow](https://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython prend également en charge l’incorporation dans une application native, comme décrit dans le billet de blog, [Using CPython’s Embeddable Zip File](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/) (Utilisation d’un fichier zip incorporable dans CPython).
@@ -69,11 +69,11 @@ Notez que Visual Studio ne permet pas, à l’heure actuelle, de créer un exéc
 
 La principale offre pour créer une interface utilisateur avec Python est le [projet QT](https://www.qt.io/qt-for-application-development/), avec des liaisons pour Python appelées [PySide (la liaison officielle)](https://wiki.qt.io/PySide) (voir également [PySide downloads](https://download.qt.io/official_releases/pyside/.)) et [PyQt](https://wiki.python.org/moin/PyQt). Pour l’instant, la prise en charge de Python dans Visual Studio n’inclut pas d’outils spécifiques pour le développement d’interface utilisateur.
 
-## <a name="azure-sdk-for-python"></a>Kit SDK Azure pour Python
+## <a name="azure-sdk-for-python"></a>Kit de développement logiciel (SDK) Azure pour Python
   
 Le Kit SDK Azure pour Python, qui prend en charge Windows, Mac et Linux, facilite l’utilisation et la gestion des services Microsoft Azure. Pour plus d’informations, reportez-vous aux ressources suivantes : 
 
-- Pour installer le kit SDK, utilisez l’[index de packages Python](https://pypi.python.org/pypi/azure) ou suivez les instructions de la rubrique [Installation de Python et du Kit de développement logiciel (SDK)](https://docs.microsoft.com/azure/python/python-sdk-azure-install) dans la documentation Azure. 
+- Pour installer le kit SDK, utilisez l’[index de packages Python](https://pypi.python.org/pypi/azure) ou suivez les instructions de la rubrique [Installation de Python et du Kit de développement logiciel (SDK)](/azure/python/python-sdk-azure-install) dans la documentation Azure. 
 - Le [Centre de développement Kit de développement logiciel (SDK) Azure pour Python](https://azure.microsoft.com/develop/python/) propose une aide complète, de l’installation jusqu’à la documentation avec didacticiels.  Voici quelques points clés :  
 - Guides pratiques :
   - [Objet blob de stockage](https://azure.microsoft.com/develop/python/how-to-guides/blob-service/)  

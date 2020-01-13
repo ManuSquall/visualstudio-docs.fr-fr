@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9c7d223b9ea542177176045c9abd103958e5ae33
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: dc663115e98d7553e03a186874d59b75eb68cb90
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738114"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916318"
 ---
 # <a name="debugging-preparation-c-project-types"></a>Préparation du débogage : C++ types de projets
 Cette section explique le débogage de types de projets de base, créés par les modèles de projet [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)].
@@ -68,7 +68,7 @@ Cette section explique le débogage de types de projets de base, créés par les
 
 ### <a name="BKMK_To_debug_a_C_or_C___Win32_application"></a> Pour déboguer une application Win32 C ou C++
 
-1. Ouvrez le projet dans Visual Studio.
+1. Ouvrez le projet dans Visual Studio.
 
 2. Dans le menu **Déboguer**, choisissez **Démarrer**.
 
@@ -97,7 +97,7 @@ Cette section explique le débogage de types de projets de base, créés par les
    [Dans cette rubrique](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)
 
 ## <a name="BKMK_Windows_Forms_Applications___NET_"></a> Applications Windows Forms (.NET)
- Le modèle **Application Windows Forms (.NET)** crée une application Windows Forms [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. Pour plus d'informations, consultez [How to: Create a Windows Application Project](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).
+ Le modèle **Application Windows Forms (.NET)** crée une application Windows Forms [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. Pour plus d'informations, consultez [How to: Create a Windows Application Project](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100)).
 
  Le débogage de ce type d'application dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] est semblable à celui réalisé dans les applications Windows Forms managées.
 
@@ -114,4 +114,4 @@ Cette section explique le débogage de types de projets de base, créés par les
 - [Paramètres de projet pour une configuration Debug C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [Attachement à un ou plusieurs programmes en cours d’exécution](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
 - [Configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md)
-- [Guide pratique pour créer un projet d’application Windows](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))
+- [Guide pratique pour créer un projet d’application Windows](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))

@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: a6d6611c8ce8bdb09023794b5eca029b6b972afb
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 264647dbb22e90d722bc8a80a5b05c08d6e8366b
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849989"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917492"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Utilisation de scripts Windows PowerShell pour publier sur des environnements de développement et de test
 
@@ -28,7 +28,7 @@ Lorsque vous créez une application web dans Visual Studio, vous pouvez génér
 
 * Kit de développement logiciel (SDK) Azure 2.3 ou version ultérieure. Voir [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/). (Vous n’avez pas besoin du kit de développement logiciel (SDK) Azure pour générer les scripts pour les projets web. Cette fonctionnalité s’adresse aux projets web, et non aux rôles web dans les services cloud.)
 * Azure PowerShell 0.7.4 ou version ultérieure. Consultez [Installation et configuration d’Azure PowerShell](/powershell/azure/overview).
-* [Windows PowerShell 3.0](https://docs.microsoft.com/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/source-control) ou version ultérieure.
+* [Windows PowerShell 3.0](/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/source-control) ou version ultérieure.
 
 ## <a name="additional-tools"></a>Outils supplémentaires
 

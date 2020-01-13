@@ -8,12 +8,12 @@ ms.assetid: c64aac80-a411-463f-b7bd-8b7607a52ece
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6735f929f52387f4cb40406d6918894e72bb40d3
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: d47e40a5c38eeb7898aa179282fa55bbe17ef1d5
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299687"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917328"
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>Nouveautés&#39;du kit de développement logiciel (SDK) Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Le kit de développement logiciel (SDK) Visual Studio propose les fonctionnalit�
  À partir du kit de développement logiciel (SDK) Visual Studio 2015, vous disposez de différentes options pour créer des extensions, en fonction du langage de programmation que vous utilisez.
 
 ### <a name="visual-c-and-visual-basic"></a>Visual C# et Visual Basic
- Pour C# et Visual Basic, il existe une gamme complète de modèles d’élément de projet qui vous permettent de créer des VSPackages, des commandes de menu, des fenêtres outil, des classifieurs de l’éditeur, des ornements de l’éditeur et des extensions de marge de l’éditeur. Vous pouvez ajouter tout ou partie de ces derniers au projet VSIX standard. Pour plus d'informations, voir :
+ Pour C# et Visual Basic, il existe une gamme complète de modèles d’élément de projet qui vous permettent de créer des VSPackages, des commandes de menu, des fenêtres outil, des classifieurs de l’éditeur, des ornements de l’éditeur et des extensions de marge de l’éditeur. Vous pouvez ajouter tout ou partie de ces derniers au projet VSIX standard. Pour plus d'informations, consultez .
 
 - [Création d’une extension avec une commande de menu](../extensibility/creating-an-extension-with-a-menu-command.md)
 
@@ -56,7 +56,7 @@ Le kit de développement logiciel (SDK) Visual Studio propose les fonctionnalit�
  Pour C++, l’Assistant VSPackage prend en charge les commandes de menu, les fenêtres outil et les éditeurs personnalisés. Recherchez-le dans la boîte de dialogue **nouveau projet** dans  **C++ Visual/Extensibility**.
 
 ## <a name="vs-sdk-reference-assemblies-via-nuget"></a>Assemblys de référence du kit de développement logiciel VS SDK via NuGet
- Pour une portabilité et un partage des projets d’extensibilité accrus, vous pouvez utiliser les versions NuGet des assemblys de référence du kit de développement logiciel (SDK) VS.  Celles-ci sont disponibles sur [NuGet.org](https://www.nuget.org/) publié par [VisualStudioExtensibility](https://www.nuget.org/profiles/VisualStudioExtensibility) et peuvent être facilement ajoutées à votre projet ou votre solution par le biais de la boîte de dialogue **références/gestion des packages NuGet** de Visual Studio. Vous pouvez ajouter des références individuelles à des assemblys d’extensibilité spécifiques ou ajouter tous les assemblys de référence du kit de développement logiciel (SDK) Visual Studio à la fois à l’aide du [package méta](https://www.nuget.org/packages/VSSDK_Reference_Assemblies)SDK vs. Pour en savoir plus sur NuGet, consultez [vue d’ensemble de NuGet](https://docs.microsoft.com/nuget/) et [gérer les packages NuGet à l’aide de la boîte de dialogue](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-visual-studio).
+ Pour une portabilité et un partage des projets d’extensibilité accrus, vous pouvez utiliser les versions NuGet des assemblys de référence du kit de développement logiciel (SDK) VS.  Celles-ci sont disponibles sur [NuGet.org](https://www.nuget.org/) publié par [VisualStudioExtensibility](https://www.nuget.org/profiles/VisualStudioExtensibility) et peuvent être facilement ajoutées à votre projet ou votre solution par le biais de la boîte de dialogue **références/gestion des packages NuGet** de Visual Studio. Vous pouvez ajouter des références individuelles à des assemblys d’extensibilité spécifiques ou ajouter tous les assemblys de référence du kit de développement logiciel (SDK) Visual Studio à la fois à l’aide du [package méta](https://www.nuget.org/packages/VSSDK_Reference_Assemblies)SDK vs. Pour en savoir plus sur NuGet, consultez [vue d’ensemble de NuGet](/nuget/) et [gérer les packages NuGet à l’aide de la boîte de dialogue](/nuget/consume-packages/install-use-packages-visual-studio).
 
  Quand vous utilisez les versions NuGet des assemblys de référence du kit de développement logiciel (SDK) VS, un autre utilisateur n’a pas besoin d’installer le kit de développement logiciel (SDK) Visual Studio pour ouvrir et générer votre projet.  Les assemblys de référence NuGet et les outils de génération du kit de développement logiciel VS SDK seront automatiquement installés sur leur ordinateur pour ce projet.
 

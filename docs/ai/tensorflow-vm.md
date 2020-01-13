@@ -10,20 +10,20 @@ ms.topic: tutorial
 ms.devlang: python
 ms.workload:
 - multiple
-ms.openlocfilehash: adb3720f1624f355b99d75bfe446fafab1c5e0ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 9cb06220c99abb86c24808f6831cf98280133f2e
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62427541"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915827"
 ---
 # <a name="train-a-tensorflow-model-in-the-cloud"></a>Former un modèle TensorFlow dans le cloud
 
-Dans ce didacticiel, nous allons apprendre à former un modèle TensorFlow avec le [jeu de données MNIST](http://yann.lecun.com/exdb/mnist/) sur une machine virtuelle Azure [Deep Learning](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/deep-learning-dsvm-overview).
+Dans ce didacticiel, nous allons apprendre à former un modèle TensorFlow avec le [jeu de données MNIST](http://yann.lecun.com/exdb/mnist/) sur une machine virtuelle Azure [Deep Learning](/azure/machine-learning/data-science-virtual-machine/deep-learning-dsvm-overview).
 
 La base de données MNIST a un jeu d’apprentissage constitué de 60 000 exemples et un jeu de test de 10 000 exemples de chiffres manuscrits.
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Configuration requise
 Avant de commencer, vérifiez que les composants suivants sont installés et configurés :
 
 ### <a name="setup-azure-deep-learning-virtual-machine"></a>Configurer la machine virtuelle Azure Deep Learning
@@ -31,7 +31,7 @@ Avant de commencer, vérifiez que les composants suivants sont installés et con
 > [!NOTE]
 > Définissez Linux comme **type de système d’exploitation**.
 
-Des instructions de configuration de la machine virtuelle Deep Learning sont accessibles [ici](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/provision-deep-learning-dsvm).
+Des instructions de configuration de la machine virtuelle Deep Learning sont accessibles [ici](/azure/machine-learning/data-science-virtual-machine/provision-deep-learning-dsvm).
 
 ### <a name="remove-comment-in-parens"></a>Supprimer le commentaire entre parenthèses
 

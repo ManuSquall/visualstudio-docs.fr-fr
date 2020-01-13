@@ -15,12 +15,12 @@ caps.latest.revision: 43
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: f4c5bd99c47517156f1ec89de9da1a163223b99a
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: e17171b79e06a273e9a9f4bb5032781963e8d818
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850436"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918825"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Comment : créer une solution de langage spécifique à un domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ Un langage spécifique à un domaine (DSL) est créé à l’aide d’une soluti
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185579](https://www.visualstudio.com/)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](https://docs.microsoft.com/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts)|
-|Kit de développement logiciel (SDK) Visual Studio Visualization and Modeling|[http://go.microsoft.com/fwlink/?LinkID=185581](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[https://www.visualstudio.com/](https://www.visualstudio.com/)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[SDK Visual Studio](../extensibility/visual-studio-sdk.md)|
+|Kit de développement logiciel (SDK) Visual Studio Visualization and Modeling|[Téléchargement du SDK Modeling](https://www.microsoft.com/download/details.aspx?id=48148)|
 
 ## <a name="creating-a-domain-specific-language-solution"></a>Création d’une solution de langage spécifique à un domaine
 
@@ -127,7 +127,7 @@ Par défaut, il s’agit d’un nom composé des noms de votre entreprise et de 
 
  **Utiliser une clé de nom fort existante** Utilisez cette option si vous souhaitez intégrer votre DSL à un autre assembly.
 
- Pour plus d’informations sur l’affectation d’un nom fort, consultez [création et utilisation d’assemblys avec nom fort](https://docs.microsoft.com/dotnet/standard/assembly/create-use-strong-named?redirectedfrom=MSDN).
+ Pour plus d’informations sur l’affectation d’un nom fort, consultez [création et utilisation d’assemblys avec nom fort](/dotnet/standard/assembly/create-use-strong-named).
 
 ## <a name="see-also"></a>Voir aussi
- [Comment définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md) [Outils Domain-specific language Glossaire](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Comment définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md) [Outils Domain-specific language Glossaire](/previous-versions/bb126564(v=vs.100))

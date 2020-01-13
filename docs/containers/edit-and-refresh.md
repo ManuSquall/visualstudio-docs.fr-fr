@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.workload: multiple
 ms.date: 07/25/2019
 ms.technology: vs-azure
-ms.openlocfilehash: b04f0e7dad4847e654560139f9a3978a4d85685b
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 9f1d80d540e9a25a3ef62ee0819c6f6655b9b3ab
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75846920"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916521"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>Déboguer des applications dans un conteneur d’ancrage local
 
@@ -60,6 +60,28 @@ Si vous avez un projet et que vous avez ajouté la prise en charge de l’ancrag
 Pour effectuer une itération rapide des modifications, vous pouvez démarrer votre application dans un conteneur. Ensuite, continuez à apporter des modifications, en les affichant comme vous le feriez avec IIS Express.
 
 1. Assurez-vous que l’arrimeur est configuré pour utiliser le type de conteneur (Linux ou Windows) que vous utilisez. Cliquez avec le bouton droit sur l’icône de l’ancrage dans la barre des tâches, puis choisissez **basculer vers les conteneurs Linux** ou **basculez vers les conteneurs Windows** , le cas échéant.
+
+1. (.NET Core 3 et versions ultérieures uniquement) La modification de votre code et l’actualisation du site en cours d’exécution, comme décrit dans cette section, ne sont pas activées dans les modèles par défaut de .NET Core > = 3,0. Pour l’activer, ajoutez le package NuGet [Microsoft. AspNetCore. Mvc. Razor. RuntimeCompilation](https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation/). Dans *Startup.cs*, ajoutez un appel à la méthode d’extension `IMvcBuilder.AddRazorRuntimeCompilation` au code dans la méthode `ConfigureServices`. Vous n’avez besoin que de cette option activée en mode débogage, donc codez-la comme suit :
+
+    ```csharp
+    public IWebHostEnvironment Env { get; set; }
+    
+    public void ConfigureServices(IServiceCollection services)
+    {
+        IMvcBuilder builder = services.AddRazorPages();
+    
+    #if DEBUG
+        if (Env.IsDevelopment())
+        {
+            builder.AddRazorRuntimeCompilation();
+        }
+    #endif
+    
+        // code omitted for brevity
+    }
+    ```
+
+   Pour plus d’informations, consultez la rubrique [compilation de fichiers Razor dans ASP.net Core](/aspnet/core/mvc/views/view-compilation?view=aspnetcore-3.1).
 
 1. Définissez **configuration** de la solution à **Déboguer**. Ensuite, appuyez sur **Ctrl**+**F5** pour générer votre image d’ancrage et l’exécuter localement.
 
@@ -139,5 +161,5 @@ Pour plus d’informations, consultez [comment Visual Studio génère des applic
 
 * En savoir plus sur le [développement de conteneurs avec Visual Studio](/visualstudio/containers).
 * Pour générer et déployer un conteneur d’ancrage, consultez [intégration de l’amarrage pour Azure pipelines](https://marketplace.visualstudio.com/items?itemName=ms-vscs-rm.docker).
-* Pour obtenir un index des articles Windows Server et nano Server, consultez les [informations relatives au conteneur Windows](https://docs.microsoft.com/virtualization/windowscontainers/).
+* Pour obtenir un index des articles Windows Server et nano Server, consultez les [informations relatives au conteneur Windows](/virtualization/windowscontainers/).
 * Découvrez [Azure Kubernetes service](https://azure.microsoft.com/services/kubernetes-service/) et consultez la [documentation du service Azure Kubernetes](/azure/aks).

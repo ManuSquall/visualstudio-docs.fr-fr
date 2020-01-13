@@ -11,18 +11,18 @@ ms.date: 11/11/2016
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: 0f4e7635e62c8d21b6bdb3b1fd28a2fed0c60262
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: b1e5a5d4d5312968571965df8c9e28d31379720d
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851896"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915604"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>Test des performances d’un service cloud
 ## <a name="overview"></a>Vue d'ensemble de
 Vous pouvez tester les performances d’un service cloud de plusieurs manières :
 
-* CnE UE VS TM [MD] Pour la prise en main des diagnostics Azure, consultez [Configuration des diagnostics pour Azure Cloud Services et Azure Virtual Machines](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines?view=vs-2019).
+* CnE UE VS TM [MD] Pour la prise en main des diagnostics Azure, consultez [Configuration des diagnostics pour Azure Cloud Services et Azure Virtual Machines](vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md).
 * Utilisez le profileur Visual Studio pour obtenir une analyse approfondie des ressources de calcul nécessaires à l’exécution du service. Comme l’explique cette rubrique, le profileur permet de mesurer les performances d’un service exécuté dans Azure. Pour plus d’informations sur l’utilisation du profileur pour mesurer les performances pendant l’exécution locale d’un service dans un émulateur de calcul, consultez [Test des performances d’un service cloud local dans l’émulateur de calcul Azure avec le profileur Visual Studio](https://azure.microsoft.com/documentation/articles/cloud-services-performance-testing-visual-studio-profiler/).
 
 ## <a name="choosing-a-performance-testing-method"></a>Choix d’une méthode de test des performances
@@ -84,7 +84,7 @@ L'illustration suivante indique comment configurer vos paramètres de profilage 
 > 
 
 ### <a name="to-configure-profiling-settings"></a>Pour configurer les paramètres de profilage
-1. Dans l’Explorateur de solutions, ouvrez le menu contextuel de votre projet Azure, puis choisissez **Publier**. Pour obtenir la procédure détaillée de la publication d’un service cloud, consultez [Publication d’un service cloud à l’aide des outils Azure](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-publishing-a-cloud-service?view=vs-2019).
+1. Dans l’Explorateur de solutions, ouvrez le menu contextuel de votre projet Azure, puis choisissez **Publier**. Pour obtenir la procédure détaillée de la publication d’un service cloud, consultez [Publication d’un service cloud à l’aide des outils Azure](vs-azure-tools-publishing-a-cloud-service.md).
 2. Dans la boîte de dialogue **Publication d’application Azure**, choisissez l’onglet **Paramètres avancés**.
 3. Pour activer le profilage, cochez la case **Activer le profilage** .
 4. Pour configurer vos paramètres de profilage, choisissez le lien hypertexte **Paramètres** . La boîte de dialogue Paramètres de profilage s'affiche.

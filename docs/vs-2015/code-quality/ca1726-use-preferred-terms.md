@@ -14,23 +14,23 @@ caps.latest.revision: 24
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: f5d184684a6ec30c216b7274313905781843071b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 639a42e26442e31f7bbbbb2245af0289c6a04fd8
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671568"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918222"
 ---
 # <a name="ca1726-use-preferred-terms"></a>CA1726 : Utilisez les termes par défaut
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Pour obtenir la documentation la plus récente sur Visual Studio, consultez [CA1726 : utiliser les termes préférés](https://docs.microsoft.com/visualstudio/code-quality/ca1726-use-preferred-terms).
+Pour obtenir la documentation la plus récente sur Visual Studio, consultez [CA1726 : utiliser les termes préférés](/visualstudio/code-quality/ca1726-use-preferred-terms).
 
 |||
 |-|-|
 |TypeName|UsePreferredTerms|
 |CheckId|CA1726|
-|Category|Microsoft. Naming|
+|Catégorie|Microsoft.Naming|
 |Modification avec rupture|Avec rupture : en cas de déclenchement sur les assemblys<br /><br /> Sans rupture-en cas de déclenchement sur les paramètres de type|
 
 ## <a name="cause"></a>Cause

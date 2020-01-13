@@ -12,12 +12,12 @@ manager: crdun
 ms.workload:
 - azure
 - unity
-ms.openlocfilehash: c0a2cc0464d643fdf6f17da045b3d56ccc678fb9
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: e9a07a7f04cae433803d012302555821fc851075
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75846683"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916827"
 ---
 # <a name="program-with-unity-and-azure"></a>Programmer avec Unity et Azure
 
@@ -30,12 +30,12 @@ Azure fournit une solution scalable pour le stockage des données de télémétr
 
 Consultez le bac à sable [Sandbox](/sandbox/) pour tester les kits SDK Azure expérimentaux suivants avec Unity :
 
-* [Kit SDK Azure Storage pour Unity](https://docs.microsoft.com/sandbox/gamedev/unity/azure-storage-unity?wt.mc_id=azgamedev-sandbox-brpeek)
-* [Kit SDK Azure Event Hubs pour Unity](https://docs.microsoft.com/sandbox/gamedev/unity/azure-event-hubs-unity?WT.mc_id=azgamedev-sandbox-brpeek)
-* [Kit SDK Azure Mobile Apps pour Unity](https://docs.microsoft.com/sandbox/gamedev/unity/azure-mobile-apps-unity?WT.mc_id=azgamedev-sandbox-brpeek)
+* [Kit SDK Azure Storage pour Unity](/sandbox/gamedev/unity/azure-storage-unity?wt.mc_id=azgamedev-sandbox-brpeek)
+* [Kit SDK Azure Event Hubs pour Unity](/sandbox/gamedev/unity/azure-event-hubs-unity?WT.mc_id=azgamedev-sandbox-brpeek)
+* [Kit SDK Azure Mobile Apps pour Unity](/sandbox/gamedev/unity/azure-mobile-apps-unity?WT.mc_id=azgamedev-sandbox-brpeek)
 
 ## <a name="azure-sdk-sample"></a>Exemple de SDK Azure
 
-Vous disposez également d’un [exemple de jeu simple](https://docs.microsoft.com/sandbox/gamedev/unity/samples/azure-mobile-apps-unity-racer) en utilisant le Kit SDK Easy Tables et Unity. Le jeu utilise le stockage de données Azure Easy Tables pour effectuer le suivi des meilleurs scores et stocker les données de télémétrie du jeu. Il peut être [téléchargé à partir de GitHub](https://github.com/BrianPeek/AzureSamples-Unity).
+Vous disposez également d’un [exemple de jeu simple](/sandbox/gamedev/unity/samples/azure-mobile-apps-unity-racer) en utilisant le Kit SDK Easy Tables et Unity. Le jeu utilise le stockage de données Azure Easy Tables pour effectuer le suivi des meilleurs scores et stocker les données de télémétrie du jeu. Il peut être [téléchargé à partir de GitHub](https://github.com/BrianPeek/AzureSamples-Unity).
 
 ![Capture d’écran d’un exemple de jeu](media/vstu_azure-test-sample-game-image2.png)

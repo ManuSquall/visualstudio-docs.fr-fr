@@ -12,12 +12,12 @@ caps.latest.revision: 49
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 47e1b1f11fd885afbb5e84e1530a171442938af0
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 17ec8199e99e76d5995e49570c82ad8523505ebe
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851295"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915992"
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>Procédure pas à pas : connexion d'un hôte à un processeur de directive généré
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ Vous pouvez écrire votre propre hôte qui traite les modèles de texte. Un hôt
 
 |||
 |-|-|
-|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185579](https://www.visualstudio.com/)|
-|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[http://go.microsoft.com/fwlink/?LinkId=185580](https://docs.microsoft.com/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts)|
-|Kit de développement logiciel (SDK) Visual Studio Visualization and Modeling|[http://go.microsoft.com/fwlink/?LinkID=186128](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)|
+|[!INCLUDE[vsprvs](../includes/vsprvs-md.md)]|[https://www.visualstudio.com/](https://www.visualstudio.com/)|
+|[!INCLUDE[vssdk_current_short](../includes/vssdk-current-short-md.md)]|[SDK Visual Studio](../extensibility/visual-studio-sdk.md)|
+|Kit de développement logiciel (SDK) Visual Studio Visualization and Modeling|[Téléchargement du SDK Modeling](https://www.microsoft.com/download/details.aspx?id=48148)|
 
  En outre, vous devez avoir créé la transformation de modèle de texte personnalisée dans [procédure pas à pas : création d’un hôte de modèle de texte personnalisé](../modeling/walkthrough-creating-a-custom-text-template-host.md).
 

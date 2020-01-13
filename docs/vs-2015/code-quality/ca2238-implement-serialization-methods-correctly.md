@@ -15,23 +15,23 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 57e735db68d90130b537f9f5f4b220bd688c7675
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0f5239ca22a30b171c53c96f3be33062b860f78b
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72666684"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918761"
 ---
 # <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238 : Implémentez les méthodes de sérialisation comme il se doit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Pour obtenir la documentation la plus récente sur Visual Studio, consultez [CA2238 : implémenter les méthodes de sérialisation correctement](https://docs.microsoft.com/visualstudio/code-quality/ca2238-implement-serialization-methods-correctly).
+Pour obtenir la documentation la plus récente sur Visual Studio, consultez [CA2238 : implémenter les méthodes de sérialisation correctement](/visualstudio/code-quality/ca2238-implement-serialization-methods-correctly).
 
 |||
 |-|-|
 |TypeName|ImplementSerializationMethodsCorrectly|
 |CheckId|CA2238|
-|Category|Microsoft. usage|
+|Catégorie|Microsoft.Usage|
 |Modification avec rupture|Avec rupture : si la méthode est visible à l’extérieur de l’assembly.<br /><br /> Sans rupture : si la méthode n’est pas visible à l’extérieur de l’assembly.|
 
 ## <a name="cause"></a>Cause
@@ -48,7 +48,7 @@ Pour obtenir la documentation la plus récente sur Visual Studio, consultez [CA2
 
 - <xref:System.Runtime.Serialization.OnDeserializedAttribute?displayProperty=fullName>
 
-  Les gestionnaires d’événements de sérialisation acceptent un seul paramètre de type <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>, retournent `void` et ont une visibilité `private`.
+  Les gestionnaires d’événements de sérialisation acceptent un seul paramètre de type <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>, retournent `void`et ont `private` visibilité.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, corrigez la signature, le type de retour ou la visibilité du gestionnaire d’événements de sérialisation.

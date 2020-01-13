@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d792f13e073f11c8e6d3a652c1d041902f1209c9
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 2a1611f8fcc1ba7f754b6d178b70180678cd06d6
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75848918"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917610"
 ---
 # <a name="image-service-and-catalog"></a>Service d’images et catalogue
 Ce livre de recettes contient des conseils et des pratiques recommandées pour l’adoption du service d’images Visual Studio et du catalogue d’images introduit dans Visual Studio 2015.
@@ -720,7 +720,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 3. Mettez à jour votre code pour utiliser le service d’images pour demander des monikers via le mappage mis à jour. (Cela peut signifier la mise à jour vers **CrispImages** pour le code managé, ou la demande de HBITMAPs ou de HICONs à partir du service d’image et leur transmission pour du code natif.)
 
 ## <a name="testing-your-images"></a>Test de vos images
- Vous pouvez utiliser l’outil visionneuse de la bibliothèque d’images pour tester vos manifestes d’image afin de vérifier que tout est correctement créé. Vous pouvez trouver cet outil dans le [Kit de développement logiciel (SDK) Visual Studio 2015](visual-studio-sdk.md). Vous trouverez la documentation de cet outil et d’autres informations [ici](https://docs.microsoft.com/visualstudio/extensibility/internals/vssdk-utilities?view=vs-2015&redirectedfrom=MSDN).
+ Vous pouvez utiliser l’outil visionneuse de la bibliothèque d’images pour tester vos manifestes d’image afin de vérifier que tout est correctement créé. Vous pouvez trouver cet outil dans le [Kit de développement logiciel (SDK) Visual Studio 2015](visual-studio-sdk.md). Vous trouverez la documentation de cet outil et d’autres informations [ici](/visualstudio/extensibility/internals/vssdk-utilities?view=vs-2015).
 
 ## <a name="additional-resources"></a>Ressources supplémentaires
 

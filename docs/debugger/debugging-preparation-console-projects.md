@@ -18,16 +18,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e92e27b123102cb45069c47ebf9de3971039801d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: e612228bf5440936c336d286962820a02d6bd071
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738131"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916271"
 ---
 # <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>Préparation du débogage : projets console (C#, C++, Visual Basic, F#)
 
-La préparation du débogage d’un projet de console est semblable à la préparation du débogage d’un projet Windows, avec des considérations supplémentaires telles que la définition des arguments de ligne de commande et la façon de suspendre l’application pour le débogage. Pour plus d’informations, consultez [les Applications Windows Forms](../debugger/debugging-preparation-windows-forms-applications.md), et [préparation du débogage : applications Windows Forms (.NET)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100)) En raison de la similarité de toutes les applications console, cette rubrique couvre les types de projets suivants :
+La préparation du débogage d’un projet de console est semblable à la préparation du débogage d’un projet Windows, avec des considérations supplémentaires telles que la définition des arguments de ligne de commande et la façon de suspendre l’application pour le débogage. Pour plus d’informations, consultez [les Applications Windows Forms](../debugger/debugging-preparation-windows-forms-applications.md), et [préparation du débogage : applications Windows Forms (.NET)](/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100)) En raison de la similarité de toutes les applications console, cette rubrique couvre les types de projets suivants :
 
 - C#, Visual Basic et F# application console
 
@@ -43,13 +43,13 @@ Vous pouvez être amené à spécifier des arguments de ligne de commande pour v
 
 Comme toutes les propriétés de projet, ces arguments persistent entre les sessions de débogage et celles de Visual Studio. Par conséquent, si vous avez débogué précédemment l’application console, n’oubliez pas qu’il existe peut-être des arguments provenant des sessions précédentes dans la boîte de dialogue **Pages de propriétés de \<Projet>** .
 
-## <a name="start-the-application"></a>Démarrer l’application
+## <a name="start-the-application"></a>Lancer l’application
 
  Lorsque certaines applications console démarrent, elles s'exécutent jusqu'à la fin, puis se ferment. Ce comportement peut ne pas vous fournir suffisamment de temps pour interrompre l'exécution et le débogage. Pour pouvoir déboguer une application, utilisez l'une des procédures suivantes pour démarrer l'application :
 
 - Définissez un point d’arrêt dans votre code et démarrez votre application.
 
-- Démarrez votre application à l’aide de la touche **F10** (**déboguer** > **pas à pas principal**) ou **F11** (**Déboguer** > **pas à pas**détaillé), puis parcourez le code en utilisant d’autres options telles que **exécuter pour cliquer**.
+- Démarrez votre application à l’aide de la touche **F10** (**déboguer** > **pas à pas principal**) ou **F11** (**Déboguer** > **pas à pas**détaillé), puis parcourez le code à l’aide d’autres options telles que **Exécuter jusqu’à cliquer**.
 
 - Dans l’éditeur de code, cliquez avec le bouton droit sur une ligne et sélectionnez **Exécuter jusqu’au curseur**.
 

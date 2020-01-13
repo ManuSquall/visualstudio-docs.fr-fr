@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 97c8c50dec18d730d92021d88361701a96b99590
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: a8f068099ec77f35919f880512e6c66f8e648cbe
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75844994"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918815"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problèmes de configuration de serveur et de client lors de déploiements ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -132,8 +132,6 @@ Si vous utilisez Internet Information Services (IIS) sur Windows Server et que v
  Avec [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], vous pouvez effectuer des téléchargements qui utilisent la compression HTTP, une technologie de serveur Web qui utilise l’algorithme GZIP pour compresser un flux de données avant d’envoyer le flux au client. Le client (dans ce cas, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]) décompresse le flux avant de lire les fichiers.  
   
  Si vous utilisez IIS, vous pouvez facilement activer la compression HTTP. Toutefois, lorsque vous activez la compression HTTP, elle est activée uniquement pour certains types de fichiers, à savoir les fichiers HTML et texte. Pour activer la compression pour les assemblys (. dll), XML (. Xml), les manifestes de déploiement (. application) et les manifestes d’application (. manifest), vous devez ajouter ces types de fichiers à la liste de types à compresser pour IIS. Tant que vous n’ajoutez pas les types de fichiers à votre déploiement, seuls les fichiers texte et HTML sont compressés.  
-  
- Pour obtenir des instructions détaillées sur les services Internet (IIS), consultez [comment spécifier des types de documents supplémentaires pour la compression http](https://support.microsoft.com/kb/234497).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Résolution des problèmes liés aux déploiements ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)   

@@ -11,12 +11,12 @@ ms.date: 11/11/2016
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
-ms.openlocfilehash: a22d16606cad7ecbfcf3862d6b7e85b65e7aafe4
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: ac1f47d3daabf800a308d73727f750f971ace4e6
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850393"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919162"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Débogage d'un service cloud ou d'une machine virtuelle Azure dans Visual Studio
 
@@ -50,7 +50,7 @@ Pour déboguer un service cloud à partir d’une machine distante, vous devez a
 L’activation du débogage distant pour un service cloud n’entraîne pas de baisse des performances, ni de coûts supplémentaires. N’utilisez pas le débogage distant pour un service de production, car cela peut avoir un impact pour les clients qui utilisent ce service.
 
 > [!NOTE]
-> Quand vous publiez un service cloud à partir de Visual Studio, vous pouvez activer **IntelliTrace** pour tous les rôles de ce service qui ciblent .NET Framework 4 ou .NET Framework 4.5. Avec **IntelliTrace**, vous pouvez examiner des événements qui se sont déjà produits dans une instance de rôle et reproduire le contexte de ce moment-là. Consultez [Débogage d’un service cloud publié avec IntelliTrace et Visual Studio](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-intellitrace-debug-published-cloud-services?view=vs-2019) et [Utilisation d’IntelliTrace](https://msdn.microsoft.com/library/dd264915.aspx).
+> Quand vous publiez un service cloud à partir de Visual Studio, vous pouvez activer **IntelliTrace** pour tous les rôles de ce service qui ciblent .NET Framework 4 ou .NET Framework 4.5. Avec **IntelliTrace**, vous pouvez examiner des événements qui se sont déjà produits dans une instance de rôle et reproduire le contexte de ce moment-là. Consultez [Débogage d’un service cloud publié avec IntelliTrace et Visual Studio](vs-azure-tools-intellitrace-debug-published-cloud-services.md) et [Utilisation d’IntelliTrace](../debugger/intellitrace.md).
 
 ### <a name="to-enable-remote-debugging-for-a-cloud-service"></a>Pour activer le débogage distant pour un service cloud
 
@@ -150,7 +150,7 @@ Les projets Visual Studio ASP.NET permettent de créer une machine virtuelle que
     > [!NOTE]
     > Vous êtes invité à vous connecter à votre compte Azure le cas échéant.
 
-3. Sélectionnez les différents paramètres de la machine virtuelle, puis sélectionnez **OK**. Pour plus d’informations, consultez [Machines virtuelles](https://docs.microsoft.com/previous-versions/azure/jj156003(v=azure.100)?redirectedfrom=MSDN) .
+3. Sélectionnez les différents paramètres de la machine virtuelle, puis sélectionnez **OK**. Pour plus d’informations, consultez [Machines virtuelles](/previous-versions/azure/jj156003(v=azure.100)) .
 
     Le nom que vous entrez dans le champ Nom DNS sera le nom de votre machine virtuelle.
 
@@ -188,6 +188,6 @@ Les projets Visual Studio ASP.NET permettent de créer une machine virtuelle que
 
 ## <a name="next-steps"></a>Étapes suivantes :
 
-* Utilisez **IntelliTrace** pour collecter un journal des appels et des événements à partir d’un serveur de mise en production. Consultez [Débogage d’un service cloud publié avec IntelliTrace et Visual Studio](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-intellitrace-debug-published-cloud-services?view=vs-2019).
+* Utilisez **IntelliTrace** pour collecter un journal des appels et des événements à partir d’un serveur de mise en production. Consultez [Débogage d’un service cloud publié avec IntelliTrace et Visual Studio](vs-azure-tools-intellitrace-debug-published-cloud-services.md).
 
 * Utilisez les **Diagnostics Azure** pour collecter des informations détaillées du code actuellement exécuté dans des rôles qui sont eux-mêmes exécutés dans l’environnement de développement ou dans Azure. Consultez [Collecter des données de journalisation avec les diagnostics Azure](https://msdn.microsoft.com/library/gg433048.aspx).

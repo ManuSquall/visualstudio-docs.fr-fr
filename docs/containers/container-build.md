@@ -6,14 +6,14 @@ ms.author: ghogen
 ms.date: 11/20/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: e1b2f332563503dcb4d63faf301000db83eed5ea
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: 6f11082a0e309d4e34dd25a1085c1f8c971f28f7
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74706791"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916940"
 ---
-# <a name="how-visual-studio-builds-containerized-apps"></a>Comment Visual Studio génère des applications en conteneur
+# <a name="how-visual-studio-builds-containerized-apps"></a>Comment Visual Studio génère des applications conteneurisées
 
 Que vous génériez à partir de l’IDE de Visual Studio ou que vous configurez une génération à partir de la ligne de commande, vous devez savoir comment Visual Studio utilise fichier dockerfile pour générer vos projets.  Pour des raisons de performances, Visual Studio suit un processus spécial pour les applications en conteneur. Il est particulièrement important de comprendre comment Visual Studio génère vos projets lorsque vous personnalisez votre processus de génération en modifiant le fichier dockerfile.
 
@@ -64,7 +64,7 @@ La dernière étape redémarre à partir de `base`, et comprend le `COPY --from=
 
 Si vous souhaitez générer en dehors de Visual Studio, vous pouvez utiliser `docker build` ou `MSBuild` pour générer à partir de la ligne de commande.
 
-### <a name="docker-build"></a>version de l’arrimeur
+### <a name="docker-build"></a>docker build
 
 Pour générer une solution en conteneur à partir de la ligne de commande, vous pouvez généralement utiliser la `docker build <context>` de commande pour chaque projet de la solution. Vous fournissez l’argument de *contexte de génération* . Le *contexte de génération* d’un fichier dockerfile est le dossier sur l’ordinateur local utilisé comme dossier de travail pour générer l’image. Par exemple, il s’agit du dossier à partir duquel vous copiez des fichiers lorsque vous copiez dans le conteneur.  Dans les projets .NET Core, utilisez le dossier qui contient le fichier solution (. sln).  Exprimée sous la forme d’un chemin d’accès relatif, cet argument correspond généralement à « .. » pour un fichier dockerfile dans un dossier de projet, et au fichier solution dans son dossier parent.  Pour les projets .NET Framework, le contexte de génération est le dossier du projet, et non le dossier de la solution.
 
@@ -103,7 +103,7 @@ Le préchauffage ne s’effectuera qu’en mode **rapide** , donc le conteneur e
 
 ## <a name="volume-mapping"></a>Mappage de volume
 
-Pour que le débogage fonctionne dans des conteneurs, Visual Studio utilise le mappage de volume pour mapper le débogueur et les dossiers NuGet à partir de l’ordinateur hôte. Voici les volumes montés dans votre conteneur :
+Pour que le débogage fonctionne dans des conteneurs, Visual Studio utilise le mappage de volume pour mapper le débogueur et les dossiers NuGet à partir de l’ordinateur hôte. Le mappage de volume est décrit dans la documentation de l’ancrage [ici](https://docs.docker.com/storage/volumes/). Voici les volumes montés dans votre conteneur :
 
 |||
 |-|-|
@@ -116,11 +116,11 @@ Pour les applications Web ASP.NET Core, il peut y avoir deux dossiers supplémen
 
 ## <a name="ssl-enabled-aspnet-core-apps"></a>Applications ASP.NET Core compatibles SSL
 
-Les outils de conteneur de Visual Studio prennent en charge le débogage d’une application ASP.NET Core compatible SSL avec un certificat de développement, de la même façon que vous pouvez vous attendre à ce qu’elle fonctionne sans conteneurs. Pour ce faire, Visual Studio ajoute quelques étapes supplémentaires pour exporter le certificat et le mettre à la disposition du conteneur. Voici le flow :
+Les outils de conteneur de Visual Studio prennent en charge le débogage d’une application ASP.NET Core compatible SSL avec un certificat de développement, de la même façon que vous pouvez vous attendre à ce qu’elle fonctionne sans conteneurs. Pour ce faire, Visual Studio ajoute quelques étapes supplémentaires pour exporter le certificat et le mettre à la disposition du conteneur. Voici le Flow géré par Visual Studio lors du débogage dans le conteneur :
 
-1. Assurez-vous que le certificat de développement local est présent et approuvé sur l’ordinateur hôte par le biais de l’outil `dev-certs`.
-2. Exportez le certificat vers%APPDATA%\ASP.NET\Https avec un mot de passe sécurisé stocké dans le magasin de secrets de l’utilisateur pour cette application particulière.
-3. Monter en volume les répertoires suivants :
+1. Garantit que le certificat de développement local est présent et approuvé sur l’ordinateur hôte par le biais de l’outil `dev-certs`.
+2. Exporte le certificat vers%APPDATA%\ASP.NET\Https avec un mot de passe sécurisé stocké dans le magasin de secrets de l’utilisateur pour cette application particulière.
+3. Monte en volume les répertoires suivants :
 
    - *%APPDATA%\Microsoft\UserSecrets*
    - *%APPDATA%\ASP.NET\Https*
@@ -140,9 +140,11 @@ ASP.NET Core recherche un certificat qui correspond au nom de l’assembly dans 
 }
 ```
 
-Pour plus d’informations sur l’utilisation de SSL avec les applications de ASP.NET Core dans les conteneurs, consultez [hébergement d’images ASP.net core avec l’arrimeur sur https](https://docs.microsoft.com/aspnet/core/security/docker-https).
+Si votre configuration prend en charge les builds en conteneur et non en conteneur, vous devez utiliser les variables d’environnement, car les chemins d’accès sont spécifiques à l’environnement de conteneur.
 
-## <a name="debugging"></a>Debugging
+Pour plus d’informations sur l’utilisation de SSL avec les applications de ASP.NET Core dans les conteneurs, consultez [hébergement d’images ASP.net core avec le dockeur sur https](/aspnet/core/security/docker-https)).
+
+## <a name="debugging"></a>débogage
 
 Lors de la génération dans la configuration de **débogage** , Visual Studio propose plusieurs optimisations qui facilitent les performances du processus de génération pour les projets en conteneur. Le processus de génération pour les applications en conteneur n’est pas aussi simple que de suivre les étapes décrites dans fichier dockerfile. La génération dans un conteneur est beaucoup plus lente que la génération sur l’ordinateur local.  Ainsi, quand vous générez dans la configuration de **débogage** , Visual Studio génère en fait vos projets sur l’ordinateur local, puis partage le dossier de sortie vers le conteneur à l’aide du montage de volume. Une génération avec cette optimisation activée est appelée « génération en mode *rapide* ».
 
@@ -190,5 +192,5 @@ Découvrez comment personnaliser davantage vos builds en définissant des propri
 ## <a name="see-also"></a>Voir aussi
 
 [MSBuild](../msbuild/msbuild.md)
-[fichier dockerfile sur Windows](/virtualization/windowscontainers/manage-docker/manage-windows-dockerfile)
-les [conteneurs Linux sur Windows](/virtualization/windowscontainers/deploy-containers/linux-containers)
+[dockerfile sur Windows](/virtualization/windowscontainers/manage-docker/manage-windows-dockerfile)
+[Linux conteneurs sur Windows](/virtualization/windowscontainers/deploy-containers/linux-containers)

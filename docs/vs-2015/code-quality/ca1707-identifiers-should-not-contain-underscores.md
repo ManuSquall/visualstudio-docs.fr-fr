@@ -15,23 +15,23 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 526f0333cc4a233996c00576e3439bac4593c29f
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5a06e87f8d28ceb225e240d7702a47e00122feea
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669214"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919175"
 ---
 # <a name="ca1707-identifiers-should-not-contain-underscores"></a>CA1707 : Les identificateurs ne doivent pas contenir de traits de soulignement
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Pour obtenir la documentation la plus récente sur Visual Studio, consultez [CA1707 : les identificateurs ne doivent pas contenir de traits de soulignement](https://docs.microsoft.com/visualstudio/code-quality/ca1707-identifiers-should-not-contain-underscores).
+Pour obtenir la documentation la plus récente sur Visual Studio, consultez [CA1707 : les identificateurs ne doivent pas contenir de traits de soulignement](/visualstudio/code-quality/ca1707-identifiers-should-not-contain-underscores).
 
 |||
 |-|-|
 |TypeName|IdentifiersShouldNotContainUnderscores|
 |CheckId|CA1707|
-|Category|Microsoft. Naming|
+|Catégorie|Microsoft.Naming|
 |Modification avec rupture|Avec rupture-en cas de déclenchement sur les assemblys<br /><br /> Sans rupture-en cas de déclenchement sur les paramètres de type|
 
 ## <a name="cause"></a>Cause
@@ -40,7 +40,7 @@ Pour obtenir la documentation la plus récente sur Visual Studio, consultez [CA1
 ## <a name="rule-description"></a>Description de la règle
  Par convention, les noms d'identificateurs ne contiennent pas de trait de soulignement (_). La règle vérifie les espaces de noms, les types, les membres et les paramètres.
 
- Les conventions d’affectation de noms fournissent une recherche commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit la courbe d’apprentissage requise pour les nouvelles bibliothèques logicielles et augmente la confiance des clients dans la mesure où la bibliothèque a été développée par une personne ayant une expertise dans le développement de code géré.
+ Les conventions d’affectation de noms fournissent une apparence commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit la courbe d’apprentissage requise pour les nouvelles bibliothèques logicielles et augmente la confiance des clients dans la mesure où la bibliothèque a été développée par une personne ayant une expertise dans le développement de code géré.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Supprimez tous les traits de soulignement du nom.

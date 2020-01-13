@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 791e2e077ebd2ed3e97aecd4c7c6e52316b4fe3b
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 5e4cb74b075a0dc9fe538ec8a09a455b30d2964b
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75845285"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918918"
 ---
 # <a name="customizing-copy-behavior"></a>Personnalisation du comportement de la commande copier
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,7 +91,7 @@ Remplacez *MyDsl*`ClipboardCommandSet.ProcessOnMenuCopyCommand()` dans le projet
 Remplacez *MyDsl*`ClipboardCommandSet.CopyModelElementsIntoElementGroupPrototype()` dans le projet DslPackage.
 
  **Conserver la disposition des formes à l’aide de la copie et du collage.**
-Quand l'utilisateur copie plusieurs formes, vous pouvez conserver leurs positions relatives quand elles sont collées. Cette technique est illustrée dans l’exemple de l’exemple de [diagrammes de circuit](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
+Quand l'utilisateur copie plusieurs formes, vous pouvez conserver leurs positions relatives quand elles sont collées. 
 
  Pour obtenir cet effet, ajoutez les formes et les connecteurs à l'ElementGroupPrototype copié. La méthode la plus simple à substituer est ElementOperations.CreateElementGroupPrototype(). Pour cela, ajoutez le code suivant au projet DSL :
 
@@ -148,7 +148,7 @@ partial class MyDslDiagram // EDIT NAME
 ```
 
  **Coller des formes à un emplacement choisi, par exemple la position actuelle du curseur.**
-Quand l'utilisateur copie plusieurs formes, vous pouvez conserver leurs positions relatives quand elles sont collées. Cette technique est illustrée dans l’exemple de l’exemple de [diagrammes de circuit](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
+Quand l'utilisateur copie plusieurs formes, vous pouvez conserver leurs positions relatives quand elles sont collées.
 
  Pour obtenir cet effet, substituez `ClipboardCommandSet.ProcessOnMenuPasteCommand()` pour utiliser la version d'`ElementOperations.Merge()` spécifique à l'emplacement. Pour cela, ajoutez le code suivant au projet DslPackage :
 
@@ -564,4 +564,5 @@ namespace Company.MyDsl
 ```
 
 ## <a name="see-also"></a>Voir aussi
- [Personnalisation de la création et du déplacement des éléments](../modeling/customizing-element-creation-and-movement.md) [Comment : ajouter un gestionnaire de glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md) [Personnalisation du comportement de suppression](../modeling/customizing-deletion-behavior.md) [exemple : exemples de diagrammes de circuit VMSDK](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)
+ [Personnalisation de la création et du déplacement des éléments](../modeling/customizing-element-creation-and-movement.md) [Comment : ajouter un gestionnaire de glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md) [Personnalisation du comportement de suppression](../modeling/customizing-deletion-behavior.md)
+ 

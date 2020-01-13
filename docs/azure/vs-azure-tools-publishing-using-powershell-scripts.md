@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 77b26b672dc40b65823cdabb6e1a42549112de65
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 775c68b433073931f7f6a1b73fae89fcce6ca2b2
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75573311"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916016"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Utilisation de scripts Windows PowerShell pour publier sur des environnements de développement et de test
 
@@ -26,7 +26,7 @@ Lorsque vous créez une application web dans Visual Studio, vous pouvez génér
 
 * Visual Studio 2015 ou version ultérieure avec la **charge de travail Azure** installée, ou Visual Studio 2013 et Kit de développement logiciel (SDK) Azure 2.3 ou version ultérieure. Voir [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads). (Vous n’avez pas besoin du kit de développement logiciel (SDK) Azure pour générer les scripts pour les projets web. Cette fonctionnalité s’adresse aux projets web, et non aux rôles web dans les services cloud.)
 * Azure PowerShell 0.7.4 ou version ultérieure. Consultez [Installation et configuration d’Azure PowerShell](/powershell/azure/overview).
-* [Windows PowerShell 3.0](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770458(v=ws.10)) ou version ultérieure.
+* [Windows PowerShell 3.0](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770458(v=ws.10)) ou version ultérieure.
 
 ## <a name="additional-tools"></a>Outils supplémentaires
 

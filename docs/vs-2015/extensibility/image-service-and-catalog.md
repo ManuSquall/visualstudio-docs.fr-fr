@@ -6,12 +6,12 @@ ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 42c42a845ef98fb3a6ebe9b5e017ae2783365f1b
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 4352575c811d76241721fc8343b6a48c012eddb7
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851361"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917407"
 ---
 # <a name="image-service-and-catalog"></a>Catalogue et service d’images
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -650,7 +650,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 3. Mettez à jour votre code pour utiliser le service d’images pour demander des monikers via le mappage mis à jour. (Cela peut signifier la mise à jour vers **CrispImages** pour le code managé, ou la demande de HBITMAPs ou de HICONs à partir du service d’image et leur transmission pour du code natif.)  
 
 ## <a name="testing-your-images"></a>Test de vos images  
- Vous pouvez utiliser l’outil visionneuse de la bibliothèque d’images pour tester vos manifestes d’image afin de vérifier que tout est correctement créé. Vous pouvez trouver cet outil dans le [Kit de développement logiciel (SDK) Visual Studio 2015](https://msdn.microsoft.com/library/bb166441.aspx). Vous trouverez la documentation de cet outil et d’autres informations [ici](https://docs.microsoft.com/visualstudio/extensibility/internals/vssdk-utilities?view=vs-2015&redirectedfrom=MSDN).  
+ Vous pouvez utiliser l’outil visionneuse de la bibliothèque d’images pour tester vos manifestes d’image afin de vérifier que tout est correctement créé. Vous pouvez trouver cet outil dans le [Kit de développement logiciel (SDK) Visual Studio 2015](visual-studio-sdk.md). Vous trouverez la documentation de cet outil et d’autres informations [ici](internals/vssdk-utilities.md).  
 
 ## <a name="additional-resources"></a>Ressources supplémentaires  
 

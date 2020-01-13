@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d3df97bf8e180eae99e6ba27466fbde7a8466ad
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: 15c4d31c8cc835884f1093dc78083bbfa9448bc3
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777770"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916881"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Développement mobile multiplateforme dans Visual Studio
 
@@ -27,7 +27,7 @@ Si vous souhaitez créer un jeu ou une application graphique immersive, installe
 
 ## <a name="build-an-app-for-android-ios-and-windows-net-framework"></a>Générer une application pour Android, iOS et Windows (.NET Framework)
 
-![Appareil](../cross-platform/media/homedevices.png "HomeDevices")
+![Appareils](../cross-platform/media/homedevices.png "HomeDevices")
 
 Avec Visual Studio Tools pour Xamarin, vous pouvez cibler Android, iOS et Windows dans la même solution, tout en partageant du code et même l’IU.
 
@@ -81,8 +81,8 @@ Avec Visual Studio Tools pour Xamarin, vous pouvez cibler Android, iOS et Window
 |--------------------|
 |[Introduction à la plateforme Windows universelle](/windows/uwp/get-started/universal-application-platform-guide)|
 |[Créer sa première application](/windows/uwp/get-started/your-first-app)|
-|[Développer des applications pour la plateforme Windows universelle (UWP)](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md)|
-|[Migrer des applications vers la plateforme Windows universelle (UWP)](https://msdn.microsoft.com/library/mt148501.aspx)|
+|[Développer des applications pour la plateforme universelle Windows (UWP)](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md)|
+|[Migrer des applications vers la plateforme Windows universelle](https://msdn.microsoft.com/library/mt148501.aspx)|
 
 ::: moniker range="vs-2017"
 
@@ -155,7 +155,7 @@ Avec Visual Studio Tools pour Xamarin, vous pouvez cibler Android, iOS et Window
 
  ![Environnement de développement VSTU](../cross-platform/media/vstu_overview.png "Présentation de Outils Visual Studio pour Unity")
 
- Avec Visual Studio Tools for Unity (VSTU), vous pouvez utiliser Visual Studio pour écrire des scripts d'éditeur et de jeu en C#, puis utiliser son débogueur performant pour rechercher et corriger les erreurs. La dernière version de VSTU prend en charge Unity 2018.1 et inclut la coloration syntaxique pour le langage du nuanceur ShaderLab d’Unity, une meilleure synchronisation avec Unity, un débogage plus performant et une amélioration de la génération du code pour l’Assistant MonoBehavior. VSTU apporte également vos fichiers de projet Unity et vos messages de console, et offre la possibilité de démarrer votre jeu dans Visual Studio, afin de perdre moins de temps à aller et venir de l’éditeur Unity en cours d’écriture.
+ Avec Visual Studio Tools pour Unity (VSTU), vous pouvez utiliser Visual Studio pour écrire des scripts d’éditeur et de jeu en C#, puis utiliser son débogueur performant pour rechercher et corriger les erreurs. La dernière version de VSTU prend en charge Unity 2018.1 et inclut la coloration syntaxique pour le langage du nuanceur ShaderLab d’Unity, une meilleure synchronisation avec Unity, un débogage plus performant et une amélioration de la génération du code pour l’Assistant MonoBehavior. VSTU apporte également vos fichiers de projet Unity et vos messages de console, et offre la possibilité de démarrer votre jeu dans Visual Studio, afin de perdre moins de temps à aller et venir de l’éditeur Unity en cours d’écriture.
 
 |**En savoir plus**|
 |--------------------|
@@ -168,6 +168,6 @@ Avec Visual Studio Tools pour Xamarin, vous pouvez cibler Android, iOS et Window
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Ajouter les API Office 365 à un projet Visual Studio](https://docs.microsoft.com/office/developer-program/office-365-developer-program)
+- [Ajouter les API Office 365 à un projet Visual Studio](/office/developer-program/office-365-developer-program)
 - [Azure App Services - Mobile Apps](https://azure.microsoft.com/services/app-service/mobile/)
-- [Visual Studio App Center](https://docs.microsoft.com/appcenter)
+- [Visual Studio App Center](/appcenter)
