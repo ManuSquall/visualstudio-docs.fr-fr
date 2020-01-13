@@ -24,12 +24,14 @@
       href: running-profiling-tools-with-or-without-the-debugger.md
 - name: Guides pratiques
   items:
-    - name: Utilisation de l’UC
+    - name: Utilisation du processeur
       href: cpu-usage.md
     - name: Utilisation de la mémoire
       items:
         - name: Analyser l’utilisation de la mémoire
           href: analyze-memory-usage.md
+        - name: Analyser l’utilisation de la mémoire pour les objets .NET
+          href: dotnet-alloc-tool.md
         - name: Événements de tas ETW natifs personnalisés
           href: custom-native-etw-heap-events.md
         - name: Utilisation de la mémoire sans le débogueur

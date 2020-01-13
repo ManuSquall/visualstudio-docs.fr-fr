@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - requirements
 - stories
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68aa46b3dc07813b73921b8acb5970289c30aecc
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0c09e45250ad95d50d5d2cd0ca2753a70bb95748
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72658412"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75590239"
 ---
 # <a name="model-user-requirements"></a>Modéliser les besoins des utilisateurs
 
@@ -60,7 +60,7 @@ Notez que la plupart des types de diagrammes peuvent être utilisés à d’autr
 
 Une règle métier est un impératif qui n’est associé à aucun cas d’usage particulier et doit être respecté à l’échelle du système.
 
-De nombreuses règles métier sont des contraintes sur les relations entre les classes conceptuelles. Vous pouvez écrire ces *règles métier statiques* en tant que commentaires associés aux classes pertinentes sur un diagramme de classes conceptuelles. Exemple :
+De nombreuses règles métier sont des contraintes sur les relations entre les classes conceptuelles. Vous pouvez écrire ces *règles métier statiques* en tant que commentaires associés aux classes pertinentes sur un diagramme de classes conceptuelles. Par exemple :
 
 ![Règle dans le commentaire associé à la classe Order.](../modeling/media/uml_reqmcd2.png)
 
@@ -78,7 +78,7 @@ Les rubriques suivantes fournissent des informations supplémentaires :
 
 ## <a name="QoSRequirements"></a> Describing Quality of Service Requirements
 
-Il existe plusieurs catégories d’impératifs de qualité de service. Il s'agit notamment des types suivants :
+Il existe plusieurs catégories d’impératifs de qualité de service. Il s'agit des dossiers suivants :
 
 - Performances
 
