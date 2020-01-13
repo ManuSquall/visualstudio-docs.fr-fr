@@ -2,17 +2,17 @@
 title: Génération de code à partir d'un langage spécifique à un domaine
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5000b8b6150fe630959f4cc4bbc58617e98d4a3a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 34b834957dfe18e3fc03a86130a95071dda0badf
+ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72662022"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75596578"
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>Génération de code à partir d'un langage spécifique à un domaine
 
@@ -36,21 +36,21 @@ Cette section décrit quelques-unes des façons de créer, de modifier et de dé
 
 ## <a name="in-this-section"></a>Dans cette section
 
-[Accès aux modèles à partir de modèles de texte](../modeling/accessing-models-from-text-templates.md) \
+[Accès aux modèles à partir de modèles de texte](../modeling/accessing-models-from-text-templates.md)\
 Fournit des informations de base sur la référence à un langage spécifique à un domaine dans des modèles de texte.
 
-[Procédure pas à pas : débogage d’un modèle de texte qui accède à un modèle](../modeling/walkthrough-debugging-a-text-template-that-accesses-a-model.md) \
+[Procédure pas à pas : débogage d’un modèle de texte qui accède à un modèle](../modeling/walkthrough-debugging-a-text-template-that-accesses-a-model.md)\
 Décrit comment effectuer des procédures de dépannage et de débogage sur un modèle de texte qui fait référence à un langage spécifique à un domaine.
 
-[Procédure pas à pas : connexion d’un hôte à un processeur de directive généré](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md) \
+[Procédure pas à pas : connexion d’un hôte à un processeur de directive généré](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)\
 Décrit comment connecter un hôte personnalisé à un processeur de directive généré.
 
-[Commande DslTextTransform](../modeling/the-dsltexttransform-command.md) \
+[Commande DslTextTransform](../modeling/the-dsltexttransform-command.md)\
 Décrit le fichier de commandes qui exécute l’exécutable TextTransform sur la ligne de commande pour les modèles de texte qui font référence à des langages spécifiques à un domaine.
 
 ## <a name="reference"></a>Reference
 
-[Écriture d’un modèle de texte T4](../modeling/writing-a-t4-text-template.md) \
+[Écriture d’un modèle de texte T4](../modeling/writing-a-t4-text-template.md)\
 Fournit la syntaxe des directives de modèle de texte et des blocs de contrôle.
 
 ## <a name="related-sections"></a>Rubriques connexes
@@ -58,5 +58,5 @@ Fournit la syntaxe des directives de modèle de texte et des blocs de contrôle.
 [Génération de code au moment du design à l’aide de modèles de texte T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)\
 Explique le processus de transformation du modèle de texte.
 
-[Génération de code dans un processus de génération](../modeling/code-generation-in-a-build-process.md) \
+[Génération de code dans un processus de génération](../modeling/code-generation-in-a-build-process.md)\
 Lisez cette rubrique si vous générez des fichiers à partir d’un DSL sur un serveur de builds.

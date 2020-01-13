@@ -1,19 +1,19 @@
 ---
-title: 'Tutoriel : Azure Functions'
-description: Utilisation de fonctions Azure dans Visual Studio pour Mac.
+title: 'Tutoriel : Azure Functions'
+description: Utilisation des fonctions Azure dans Visual Studio pour Mac.
 author: sayedihashimi
 ms.author: sayedha
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: 6bea12b37bc7fe1f608c27cd72e48c7cdc7e13d8
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
-ms.translationtype: HT
+ms.openlocfilehash: 1a3c4f3283ab10cfc4f8ee8364113dcb7f075af8
+ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70108141"
+ms.lasthandoff: 12/25/2019
+ms.locfileid: "75398174"
 ---
-# <a name="tutorial-getting-started-with-azure-functions"></a>Tutoriel : Bien démarrer avec Azure Functions
+# <a name="tutorial-getting-started-with-azure-functions"></a>Tutoriel : Bien démarrer avec Azure Functions
 
 Dans cet atelier, vous allez apprendre à créer des fonctions Azure à l’aide de Visual Studio pour Mac. Vous verrez également comment les intégrer à des tables de stockage Azure, qui figurent parmi les nombreux types de liaisons et de déclencheurs à la disposition des développeurs Azure Functions.
 
@@ -24,18 +24,18 @@ Dans cet atelier, vous allez apprendre à créer des fonctions Azure à l’aide
 > * Intégrer des fonctions à des ressources de stockage web et Azure
 > * Orchestrer un flux de travail impliquant plusieurs fonctions Azure
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Configuration requise pour
 
 - Visual Studio pour Mac 7.5 ou ultérieur
-- Un abonnement Azure (disponible gratuitement sur le site [https://azure.com/free](https://azure.com/free))
+- Un abonnement Azure (disponible gratuitement sur le site [https://azure.com/free](https://azure.com/free?ref=visualstudio))
 
-## <a name="exercise-1-creating-an-azure-functions-project"></a>Exercice 1 : Création d’un projet Azure Functions
+## <a name="exercise-1-creating-an-azure-functions-project"></a>Exercice 1 : Création d’un projet Azure Functions
 
 1. Lancez **Visual Studio pour Mac**.
 
 2. Sélectionnez **Fichier > Nouvelle solution**.
 
-3. Dans la catégorie **Cloud > Général**, sélectionnez le modèle **Azure Functions**. Vous allez utiliser C# pour créer une bibliothèque de classes .NET qui héberge Azure Functions. Cliquez sur **Suivant**.
+3. Dans la catégorie **Cloud > Général**, sélectionnez le modèle **Azure Functions**. Vous allez utiliser C# pour créer une bibliothèque de classes .NET qui héberge Azure Functions. Cliquez sur **Next**.
 
     ![Sélection du modèle Azure Functions](media/azure-functions-lab-image1.png)
 
@@ -52,7 +52,7 @@ Dans cet atelier, vous allez apprendre à créer des fonctions Azure à l’aide
 
     ![Panneau Solutions montrant le fichier local.settings.json](media/azure-functions-lab-image3.png)
 
-## <a name="exercise-2-creating-an-azure-storage-account"></a>Exercice 2 : Création d’un compte de stockage Azure
+## <a name="exercise-2-creating-an-azure-storage-account"></a>Exercice 2 : Création d’un compte de stockage Azure
 
 1. Connectez-vous à votre compte Azure à l’adresse [https://portal.azure.com](https://portal.azure.com).
 
@@ -86,7 +86,7 @@ Dans cet atelier, vous allez apprendre à créer des fonctions Azure à l’aide
 
     ![Fichier de paramètres locaux avec clé de connexion entrée](media/azure-functions-lab-image10.png)
 
-## <a name="example-3-creating-and-debugging-an-azure-function"></a>Exemple 3 : Création et débogage d’une fonction Azure
+## <a name="example-3-creating-and-debugging-an-azure-function"></a>Exemple 3 : Création et débogage d’une fonction Azure
 
 1. Vous êtes prêt à ajouter du code. Quand vous utilisez une bibliothèque de classes .NET, les fonctions Azure sont ajoutées comme méthodes statiques. Dans le **Panneau Solutions**, cliquez avec le bouton droit sur le nœud de projet **AzureFunctions**, puis sélectionnez **Ajouter > Ajouter une fonction** :
 
@@ -126,7 +126,7 @@ Dans cet atelier, vous allez apprendre à créer des fonctions Azure à l’aide
 
     ![Nouvelle méthode Run avec l’attribut FunctionName mis en surbrillance](media/azure-functions-lab-image13.png)
 
-1. Ensuite, la méthode est marquée comme étant une méthode publique statique (**public static**). Cette étape est obligatoire. Vous remarquez également que la valeur de retour est un **int**. Sauf indication contraire au moyen d’attributs de méthode, toute valeur de retour non void d’une fonction Azure est retournée au client sous forme de texte. Par défaut, elle est retournée au format **XML**, mais vous pourrez la retourner au format **JSON** plus loin dans cet atelier.
+1. Ensuite, la méthode est marquée comme étant une méthode publique statique (**public static**). Cette étape est obligatoire. Vous remarquerez également que la valeur de retour est un **entier**. Sauf spécification contraire à l’aide des attributs de méthode, toute valeur de retour non void d’une fonction Azure est retournée au client sous forme de texte. Par défaut, elle est retournée au format **XML**, mais vous pourrez la retourner au format **JSON** plus loin dans cet atelier.
 
     ![Nouvelle méthode Run avec mise en surbrillance de l’initialisation de la méthode](media/azure-functions-lab-image14.png)
 
@@ -190,7 +190,7 @@ Dans cet atelier, vous allez apprendre à créer des fonctions Azure à l’aide
 
 1. Arrêtez la session de débogage.
 
-## <a name="exercise-4-working-with-functionjson"></a>Exercice 4 : Utilisation de function.json
+## <a name="exercise-4-working-with-functionjson"></a>Exercice 4 : Utilisation de function.json
 
 1. Dans un exercice précédent, il est mentionné que Visual Studio pour Mac « génère » une fonction de travail pour la fonction Azure définie dans la bibliothèque. Cela vient du fait qu’Azure Functions n’utilise pas réellement les attributs de méthode au moment de l’exécution. Au lieu de cela, il utilise une convention de système de fichiers au moment de la compilation pour configurer où et comment les fonctions Azure sont mises à disposition. Dans le **Panneau Solutions**, cliquez avec le bouton droit sur votre nœud de projet et sélectionnez **Révéler dans le Finder**.
 
@@ -302,9 +302,9 @@ Dans cet atelier, vous allez apprendre à créer des fonctions Azure à l’aide
 
 1. La méthode aboutit une fois de plus, tirant (pull) les paramètres du chemin et produisant une somme.
 
-1. Revenez à **Visual Studio pour Mac** et mettez fin à la session de débogage.
+1. Revenez à **Visual Studio pour Mac** et terminez la session de débogage.
 
-## <a name="exercise-5-working-with-azure-storage-tables"></a>Exercice 5 : Utilisation des tables de stockage Azure
+## <a name="exercise-5-working-with-azure-storage-tables"></a>Exercice 5 : Utilisation des tables de stockage Azure
 
 Les services que vous générez sont souvent beaucoup plus complexes que ceux que nous avons générés jusqu’à présent, et leur exécution nécessite des ressources importantes en termes de temps et/ou d’infrastructure. Dans ce cas, il peut être judicieux d’accepter les demandes qui sont en file d’attente de traitement quand les ressources deviennent disponibles, ce qu’il est possible de faire avec Azure Functions. Dans d’autres cas, vous pouvez stocker les données de manière centralisée. Pour y parvenir rapidement, utilisez des tables de stockage Azure.
 
@@ -388,7 +388,7 @@ Les services que vous générez sont souvent beaucoup plus complexes que ceux qu
 
     ![Sortie du Terminal montrant un nouveau processus](media/azure-functions-lab-image34.png)
 
-1. Revenez à **Visual Studio pour Mac** et mettez fin à la session de débogage.
+1. Revenez à **Visual Studio pour Mac** et terminez la session de débogage.
 
 <!--
 1. Finally, let's take a look at what it's like to work with multiple input records. Rather than specify a specific **TableRow**, you can request an **IQueryable<TableRow>** using the same attributes, and the runtime will fill it with the appropriate resource you need. Add the code below to create a **List** function that lists all items that currently exist in the Azure table we've been working with. Also note that we're specifying that the MIME type of the response is **application/json**, so the runtime will automatically render as JSON.
