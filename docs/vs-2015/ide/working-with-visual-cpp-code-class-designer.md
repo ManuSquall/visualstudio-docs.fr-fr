@@ -19,12 +19,12 @@ caps.latest.revision: 27
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: cb2b5a55f778b8025ea9da25713eca903f9cbf74
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 020535ac73c48be74e56100c7b6f9c49b69e50dc
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296217"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851313"
 ---
 # <a name="working-with-visual-c-code-class-designer"></a>Utilisation du code Visual C++ (Concepteur de classes)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Le Concepteur de classes affiche une aire de conception visuelle appelée *diagr
 - TypeDef
 
 > [!NOTE]
-> Cela est différent du diagramme de classes UML, que vous pouvez créer dans un projet de modélisation. Pour plus d’informations, consultez [Diagrammes de classes UML : indications](../modeling/uml-class-diagrams-reference.md).
+> Cela est différent du diagramme de classes UML, que vous pouvez créer dans un projet de modélisation. Pour plus d'informations, consultez [Diagrammes de classes UML : Référence](../modeling/uml-class-diagrams-reference.md).
 
 ## <a name="troubleshooting-type-resolution-and-display-issues"></a>Résolution des problèmes de résolution de type et d’affichage
 
@@ -63,7 +63,7 @@ Le Concepteur de classes affiche une aire de conception visuelle appelée *diagr
 ### <a name="type-resolution-issues"></a>Problèmes de résolution de type
  Le Concepteur de classes peut ne pas être en mesure de résoudre des types pour les raisons suivantes :
 
-- Le type se trouve dans un projet ou un assembly non référencé à partir du projet qui contient le diagramme de classes. Pour corriger cette erreur, ajoutez une référence au projet ou à l'assembly qui contient le type. Pour plus d’informations, consultez [Comment : ajouter ou supprimer des références à l’aide de la boîte de dialogue Ajouter une référence](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
+- Le type se trouve dans un projet ou un assembly non référencé à partir du projet qui contient le diagramme de classes. Pour corriger cette erreur, ajoutez une référence au projet ou à l'assembly qui contient le type. Pour plus d'informations, voir [NIB Guide pratique pour ajouter ou supprimer des références à l’aide de la boîte de dialogue Ajouter une référence](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
 
 - Le type ne se trouve pas dans la portée correcte ; le Concepteur de classes ne peut donc pas le localiser. Vérifiez qu'il ne manque pas une instruction `using`, `imports` ou `#include` au code. Assurez-vous également que vous n'avez pas déplacé le type (ou un type connexe) hors de l'espace de noms dans lequel il a été initialement localisé.
 
@@ -77,12 +77,12 @@ Le Concepteur de classes affiche une aire de conception visuelle appelée *diagr
 
 - Assurez-vous que le Concepteur de classes prend en charge le type que vous avez entré. Consultez [Limitations pour les éléments de code C++](#limitations).
 
-- Essayez de résoudre le type. Le type se trouve peut-être dans un projet ou un assembly non référencé à partir du projet qui contient le diagramme de classes. Pour corriger cette erreur, ajoutez une référence au projet ou à l'assembly qui contient le type. Pour plus d’informations, consultez [NIB Comment : ajouter ou supprimer des références à l’aide de la boîte de dialogue Ajouter une référence](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
+- Essayez de résoudre le type. Le type se trouve peut-être dans un projet ou un assembly non référencé à partir du projet qui contient le diagramme de classes. Pour corriger cette erreur, ajoutez une référence au projet ou à l'assembly qui contient le type. Pour plus d'informations, voir [NIB Guide pratique pour ajouter ou supprimer des références à l’aide de la boîte de dialogue Ajouter une référence](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).
 
 - Assurez-vous que le type se trouve dans la portée correcte afin que le Concepteur de classes puisse le localiser. Vérifiez qu'il ne manque pas une instruction `using`, `imports` ou `#include` au code. Assurez-vous également que vous n'avez pas déplacé le type (ou un type connexe) hors de l'espace de noms dans lequel il a été initialement localisé.
 
 ### <a name="troubleshooting-other-error-messages"></a>Résolution d'autres messages d'erreur
- Vous pouvez trouver de l'aide sur la résolution des erreurs et des avertissements dans les forums publics Microsoft Developer Network (MSDN). Consultez le [Forum du Concepteur de classes Visual Studio](https://go.microsoft.com/fwlink/?linkid=160754).
+ Vous pouvez trouver de l'aide sur la résolution des erreurs et des avertissements dans les forums publics Microsoft Developer Network (MSDN). Consultez le [Forum du Concepteur de classes Visual Studio](https://social.msdn.microsoft.com/Forums/en-US/vsclassdesigner/threads?page=1).
 
 ## <a name="limitations"></a> Limitations pour les éléments de code C++
 

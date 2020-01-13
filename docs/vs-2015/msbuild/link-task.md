@@ -31,12 +31,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 181c32017a84328037ea46d49698821fa3cb41ea
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 930cec012bfda49c61116ada2ba6df10c3a48f51
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295875"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75850995"
 ---
 # <a name="link-task"></a>Lier la tâche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ Encapsule l’outil Éditeur de liens Visual C++, link.exe. L’outil Éditeur 
   
    Spécifie les attributs qui sont placés dans la section `dependency` du fichier manifeste.  
   
-   Pour plus d’informations, consultez l’article [/MANIFESTDEPENDENCY (Spécifier les dépendances de manifeste)](https://msdn.microsoft.com/library/e4b68313-33a2-4c3e-908e-ac2b9f7d6a73). Consultez également la page « Publisher Configuration Files » (Fichiers de configuration des serveurs de publication) sur le site web [MSDN](https://go.microsoft.com/fwlink/?LinkId=737).  
+   Pour plus d’informations, consultez l’article [/MANIFESTDEPENDENCY (Spécifier les dépendances de manifeste)](https://msdn.microsoft.com/library/e4b68313-33a2-4c3e-908e-ac2b9f7d6a73). Consultez également la page « Publisher Configuration Files » (Fichiers de configuration des serveurs de publication) sur le site web [MSDN](https://msdn.microsoft.com/).  
   
 - **AdditionalOptions**  
   

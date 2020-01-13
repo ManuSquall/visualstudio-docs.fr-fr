@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: dc49a628cdf5695df7744295d2c1d990986bcfbe
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: ead3faa5354dae198524e2a816a85b05bc5d8f08
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74295629"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75845548"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Autorisations utilisateur et Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,10 +34,10 @@ Pour des raisons de sécurité, vous devez exécuter Visual Studio en tant qu'ut
 |Domaine|Tâche|Pour plus d'informations|
 |----------|----------|--------------------------|
 |Installation|Installation de Visual Studio.|[Installation de Visual Studio 2015](../install/install-visual-studio-2015.md)|
-||Mise à niveau d'une édition d'évaluation de Visual Studio.|[Guide pratique pour effectuer une mise à niveau à partir d’une version d’évaluation de Visual Studio](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md)|
+||Mise à niveau d'une édition d'évaluation de Visual Studio.|[Guide pratique pour effectuer une mise à niveau à partir d'une version d'évaluation de Visual Studio](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md)|
 ||Installation, mise à jour ou suppression du contenu d'Aide locale.|[Installer et gérer un contenu local](../ide/install-and-manage-local-content.md)|
 |Types d'applications|Développement de solutions SharePoint 2010.|[Configuration requise pour développer des solutions SharePoint](https://msdn.microsoft.com/library/ae8ff69d-4540-4380-ab0b-845f7108e89c)|
-||Acquisition d'une licence de développeur pour [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)].|[Obtention d’une licence de développeur (applications Windows Store)](https://go.microsoft.com/fwlink/?LinkID=241313)|
+||Acquisition d'une licence de développeur pour [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)].|[Obtention d’une licence de développeur (applications Windows Store)](https://msdn.microsoft.com/library/windows/apps/hh974578.aspx)|
 |Boîte à outils|Ajout de contrôles COM classiques à la **Boîte à outils**.|[Utilisation de la boîte à outils](../ide/using-the-toolbox.md)|
 |Compléments|Installation et utilisation des compléments qui ont été écrits à l'aide de COM classique dans l'IDE.|[Création de compléments et d’Assistants](https://msdn.microsoft.com/library/c5a47c21-6668-4de3-898d-afa969317e73)|
 |Génération en cours|Utilisation des événements post-build qui inscrivent un composant.|[Présentation des étapes de génération personnalisée et des événements de build](https://msdn.microsoft.com/library/beb2f017-3e9f-4b2c-9b57-2572fd2628e4)|
@@ -45,11 +45,11 @@ Pour des raisons de sécurité, vous devez exécuter Visual Studio en tant qu'ut
 |Débogage|Débogage d'applications exécutées avec des autorisations élevées.|[Paramètres et préparation du débogueur](../debugger/debugger-settings-and-preparation.md)|
 ||Débogage d’applications exécutées sous un compte utilisateur différent, comme les sites web ASP.NET.|[Débogage d’applications ASP.NET et AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)|
 ||Débogage dans la zone pour les applications du navigateur XAML (XBAP).|[Hôte WPF (PresentationHost.exe)](https://msdn.microsoft.com/library/3215bfa1-722c-4ac8-a7c5-bdd02d30afbd)|
-||Utilisation de l'émulateur pour déboguer des projets de service cloud pour Microsoft Azure.|[Débogage d’un service cloud dans Visual Studio](https://go.microsoft.com/fwlink/?LinkId=266725)|
+||Utilisation de l'émulateur pour déboguer des projets de service cloud pour Microsoft Azure.|[Débogage d’un service cloud dans Visual Studio](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-debug-cloud-services-virtual-machines?view=vs-2019)|
 ||Configuration d'un pare-feu pour un débogage distant.|[Configurer les outils de contrôle à distance sur le périphérique](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)|
 |Outils d'analyse des performances|Profilage d'une application.|[Guide du débutant en profilage des performances](../profiling/beginners-guide-to-performance-profiling.md)|
-|Déploiement|Déploiement d'une application web vers les Services IIS (Internet Information Services) sur un ordinateur local.|[Déploiement d’une application Web ASP.NET vers un fournisseur d’hébergement à l’aide de Visual Studio ou Visual Web Developer : déploiement vers IIS comme environnement de test](https://go.microsoft.com/fwlink/?LinkId=266478)|
-|Envoi de commentaires à Microsoft|Modification de votre mode de participation au Programme d'amélioration du produit Visual Studio.|[Comment : envoyer des commentaires](../misc/how-to-send-feedback-about-visual-studio.md)|
+|Déploiement|Déploiement d'une application web vers les Services IIS (Internet Information Services) sur un ordinateur local.|[Déploiement d’une application web ASP.NET vers un fournisseur d’hébergement à l’aide de Visual Studio ou Visual Web Developer : Déploiement vers IIS comme environnement de test](https://www.asp.net/web-forms/tutorials/deployment/deployment-to-a-hosting-provider/Deployment-to-a-Hosting-Provider-Deploying-to-IIS-as-a-Test-Environment-5-of-12)|
+|Envoi de commentaires à Microsoft|Modification de votre mode de participation au Programme d'amélioration du produit Visual Studio.|[Guide pratique pour envoyer des commentaires](../misc/how-to-send-feedback-about-visual-studio.md)|
 
 ## <a name="running-visual-studio-as-an-administrator"></a>Exécution de Visual Studio comme administrateur
  Lancez Visual Studio avec des autorisations d'administration chaque fois que vous démarrez l'IDE, ou modifiez le raccourci d'application afin qu'il soit toujours exécuté avec des autorisations d'administration. Pour plus d'informations, consultez l'aide de Windows.
@@ -71,4 +71,4 @@ Pour des raisons de sécurité, vous devez exécuter Visual Studio en tant qu'ut
      Au démarrage de Visual Studio, **(Administrateur)** apparaît après le nom de produit dans la barre de titre.
 
 ## <a name="see-also"></a>Voir aussi
- [Portage, migration et mise à niveau des projets Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [Installation de Visual Studio 2015](../install/install-visual-studio-2015.md)
+ [Portage, migration et mise à niveau de projets Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [installation de Visual Studio 2015](../install/install-visual-studio-2015.md)
