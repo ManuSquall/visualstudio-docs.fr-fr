@@ -8,12 +8,12 @@ ms.assetid: 20221de4-2a9e-4787-b99a-b5855bb90872
 caps.latest.revision: 18
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 6ff1d953dc853beba8ef836b1eab03140ee0b1e0
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: ffcab2800168ab6d66426c2e7beb77a158ced1eb
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300392"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851829"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Génération et compilation de code et conventions de nommage dans Microsoft Fakes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -142,7 +142,7 @@ Cette rubrique traite des options et des problèmes dans la génération et la c
 [assembly: InternalsVisibleTo("FileSystem.Fakes, PublicKey=0024000004800000940000000602000000240000525341310004000001000100e92decb949446f688ab9f6973436c535bf50acd1fd580495aae3f875aa4e4f663ca77908c63b7f0996977cb98fcfdb35e05aa2c842002703cad835473caac5ef14107e3a7fae01120a96558785f48319f66daabc862872b2c53f5ac11fa335c0165e202b4c011334c7bc8f4c4e570cf255190f4e3e2cbc9137ca57cb687947bc")]
 ```
 
- Vous pouvez spécifier une autre clé publique pour l’assembly Fakes, par exemple une clé que vous avez créée pour l’assembly ayant fait l’objet d’un shim, en spécifiant le chemin complet au fichier **.snk** qui contient l’autre clé comme valeur d’attribut `KeyFile` dans l’élément `Fakes`\\`Compilation` du fichier **.fakes**. Par exemple :
+ Vous pouvez spécifier une autre clé publique pour l’assembly Fakes, par exemple une clé que vous avez créée pour l’assembly ayant fait l’objet d’un shim, en spécifiant le chemin complet au fichier **.snk** qui contient l’autre clé comme valeur d’attribut `KeyFile` dans l’élément `Fakes`\\`Compilation` du fichier **.fakes**. Exemple :
 
 ```xml
 <-- FileSystem.Fakes.fakes -->
@@ -239,7 +239,7 @@ attribute of the Assembly element in the .fakes:
 
   Les **noms des méthodes spéciales** telles que les accesseurs Get ou Set des propriétés sont traités comme décrit dans le tableau suivant.
 
-|Si la méthode est...|Exemples|Nom de la méthode ajoutée|
+|Si la méthode est...|Exemple|Nom de la méthode ajoutée|
 |-------------------|-------------|--------------------------|
 |Un **constructeur**|`.ctor`|`Constructor`|
 |Un **constructeur** statique|`.cctor`|`StaticConstructor`|
@@ -268,8 +268,8 @@ attribute of the Assembly element in the .fakes:
 |Un **paramètre de sortie**`out T`|`TOut`|
 |Un **paramètre de référence** `ref T`|`TRef`|
 |Un **type tableau**`T[]`|`TArray`|
-|Un type **tableau multidimensionnel** `T[ , , ]`|`T3`|
-|Un type **pointeur** `T*`|`TPtr`|
+|Un type **tableau multidimensionnel**`T[ , , ]`|`T3`|
+|Un type **pointeur**`T*`|`TPtr`|
 |Un **type générique**`T<R1, …>`|`TOfR1`|
 |Un **argument de type générique**`!i` de type `C<TType>`|`Ti`|
 |Un **argument de méthode générique**`!!i` de méthode `M<MMethod>`|`Mi`|
@@ -285,7 +285,7 @@ attribute of the Assembly element in the .fakes:
 ## <a name="BKMK_External_resources"></a> Ressources externes
 
 ### <a name="BKMK_Guidance"></a> Conseils
- [Test de la livraison continue avec Visual Studio 2012 - Chapitre 2 : Tests unitaires : tester l’intérieur](https://go.microsoft.com/fwlink/?LinkID=255188)
+ [Tester la livraison continue avec Visual Studio 2012 – Chapitre 2 : Test unitaire : Test de l’intérieur](https://msdn.microsoft.com/library/jj159340.aspx)
 
 ## <a name="see-also"></a>Voir aussi
  [Isolation du code testé avec Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)

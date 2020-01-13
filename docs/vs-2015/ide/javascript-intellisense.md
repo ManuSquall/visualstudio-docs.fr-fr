@@ -26,12 +26,12 @@ caps.latest.revision: 67
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e367ff6d6abbf40cdf7efebed04aee6fc74a384c
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 962c724e231275c9fa716d6c823b7451292392cf
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74300747"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75848385"
 ---
 # <a name="javascript-intellisense"></a>IntelliSense JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -127,7 +127,7 @@ IntelliSense vous aide à écrire du code plus vite et avec moins d'erreurs en f
 ### <a name="UserDefined"></a>Variables, fonctions et objets définis par l’utilisateur
  Lorsque vous modifiez un fichier JavaScript, [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] analyse les documents ouverts et référencés pour déterminer toutes les ressources de code disponibles. Ceci inclut les variables, fonctions et objets que vous avez créés. Ces ressources sont ensuite disponibles pour JavaScript IntelliSense.
 
- Pour plus d'informations sur les variables, fonctions et objets définis par l'utilisateur, consultez [Création de vos propres objets](https://go.microsoft.com/fwlink/?LinkId=108671) sur le site web MSDN.
+ Pour plus d'informations sur les variables, fonctions et objets définis par l'utilisateur, consultez [Création de vos propres objets](https://msdn.microsoft.com/library/202863ha.aspx) sur le site web MSDN.
 
 ### <a name="External"></a>Références de fichiers externes
  Vous pouvez inclure divers types de références de fichiers externes pour mettre en place la prise en charge d'IntelliSense dans votre code. Les références de fichiers externes peuvent être des références de script ou des directives de référence, ou elles peuvent être spécifiées à l'aide de groupes de référence.
@@ -157,7 +157,7 @@ IntelliSense vous aide à écrire du code plus vite et avec moins d'erreurs en f
 </asp:ScriptManager>
 ```
 
- IntelliSense prend également en charge des fichiers de script qui sont incorporés comme ressources dans un assembly des applications Web ASP.NET AJAX. Pour plus d'informations sur les ressources de script incorporées, consultez [Procédure pas à pas : Incorporation d'un fichier JavaScript en tant que ressource dans un assembly](https://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89).
+ IntelliSense prend également en charge des fichiers de script qui sont incorporés comme ressources dans un assembly des applications Web ASP.NET AJAX. Pour plus d'informations sur les ressources de script incorporées, consultez [Procédure pas à pas : Incorporation d’un fichier JavaScript en tant que ressource dans un assembly](https://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89).
 
 #### <a name="ReferenceDirectives"></a>Directives de référence
  Une directive `reference` permet à [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] d'établir une relation entre le script vous modifiez actuellement et d'autres scripts. La directive `reference` vous permet d'inclure un fichier de script dans le contexte de script du fichier de script actuel. Cela permet à IntelliSense de référencer des fonctions définies extérieurement, des types et des champs lors de l'écriture de code.
@@ -283,6 +283,6 @@ IntelliSense vous aide à écrire du code plus vite et avec moins d'erreurs en f
 - [Extension de JavaScript IntelliSense](../ide/extending-javascript-intellisense.md)
 - [Saisie semi-automatique des instructions pour les identificateurs](../ide/statement-completion-for-identifiers.md)
 - [Commentaires sur la documentation XML](../ide/xml-documentation-comments-javascript.md)
-- [À propos du modèle objet DHTML](https://go.microsoft.com/fwlink/?LinkID=92344)
+- [À propos du modèle objet DHTML](https://msdn2.microsoft.com/library/ms533022.aspx)
 - [Liste des membres](https://msdn.microsoft.com/1b9cc469-9cd4-4d42-9999-1f9479635ff8)
-- [Attribut SRC &#124; Propriété src](https://go.microsoft.com/fwlink/?LinkId=92345)
+- [Attribut SRC &#124; Propriété src](https://msdn2.microsoft.com/library/ms534642.aspx)
