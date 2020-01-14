@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: b7ca3179d3e4883f8a2867e13cbdd5e874d60462
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 4474f2a0823b5599da30706daedff6e5cd1fc0f5
+ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297782"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75851658"
 ---
 # <a name="toolbox-html-tab"></a>Boîte à outils, onglet HTML
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,16 +31,16 @@ L’onglet **HTML** de la boîte à outils fournit des composants utiles sur les
 
 ## <a name="tasks"></a>Tâches
 
-- [Comment : gérer la fenêtre Boîte à outils](https://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)
+- [Guide pratique pour gérer la fenêtre Boîte à outils](https://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)
 
-- [Comment : manipuler des onglets de boîte à outils](https://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)
+- [Guide pratique pour manipuler des onglets de Boîte à outils](https://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)
 
 ## <a name="ui-elements"></a>Éléments de l'interface utilisateur
  Les outils suivants sont disponibles par défaut sous l’onglet HTML.
 
  **Pointeur** ![HtmlPage ASP.net Mobile designer](../../ide/reference/media/vxpointer.gif "|::ref1::|")
 
- Cet outil est sélectionné par défaut quand un onglet de boîte à outils s’ouvre. Il ne peut pas être supprimé. Le pointeur vous permet de faire glisser des objets sur la surface en mode Design, de les redimensionner et de les repositionner sur la page ou le formulaire. Pour plus d’informations, consultez [Comment : gérer la fenêtre Boîte à outils](https://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2) et [Comment : manipuler des onglets de boîte à outils](https://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).
+ Cet outil est sélectionné par défaut quand un onglet de boîte à outils s’ouvre. Il ne peut pas être supprimé. Le pointeur vous permet de faire glisser des objets sur la surface en mode Design, de les redimensionner et de les repositionner sur la page ou le formulaire. Pour plus d'informations, voir [Procédure : Gérer la fenêtre Boîte à outils](https://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2) et [Guide pratique pour manipuler des onglets de Boîte à outils](https://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).
 
  ![Bouton de page Web HTML](../../ide/reference/media/vxbutton.gif "|::ref2::|") **d’entrée (bouton)**
 
@@ -52,7 +52,7 @@ L’onglet **HTML** de la boîte à outils fournit des composants utiles sur les
 <input id="Button1" type="button" value="Button" name="Button1">
 ```
 
- Pour plus d’informations, voir [Contrôles de saisie HTML](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Syntaxe déclarative du contrôle serveur HtmlInputButton](https://msdn.microsoft.com/99ccf7fb-7e2a-4ba1-bcd9-981b619a16aa), [NIB : Guide pratique pour créer des scripts et modifier des gestionnaires d’événements](https://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d), [Représentation du contenu des contrôles serveur web de type bouton](https://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf), <xref:System.Web.UI.HtmlControls.HtmlInputButton>, <xref:System.Web.UI.HtmlControls.HtmlButton> et <xref:System.Web.UI.WebControls.Button>.
+ Pour plus d’informations, voir [Contrôles de saisie HTML](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Syntaxe déclarative du contrôle serveur HtmlInputButton](https://msdn.microsoft.com/99ccf7fb-7e2a-4ba1-bcd9-981b619a16aa), [NIB : Procédure : Créer des scripts et modifier les gestionnaires d’événements](https://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d), [Représentation du contenu des contrôles serveur web de type bouton](https://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf), <xref:System.Web.UI.HtmlControls.HtmlInputButton>, <xref:System.Web.UI.HtmlControls.HtmlButton> et <xref:System.Web.UI.WebControls.Button>.
 
  Capture **d’écran d’entrée (Reset)** ![HTMLpageResetButton](../../ide/reference/media/vxreset.gif "|::ref3::|")
 
@@ -118,10 +118,10 @@ L’onglet **HTML** de la boîte à outils fournit des composants utiles sur les
 <input id="Password1" type="password" name="Password1">
 ```
 
- Pour plus d’informations, consultez [Contrôles Input HTML](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Syntaxe déclarative des contrôles serveur HtmlInputPassword](https://msdn.microsoft.com/df703dd0-1624-4e5a-a547-c97f2f331b9f), [Comment : définir un contrôle serveur Web TextBox pour l’entrée de mots de passe](https://msdn.microsoft.com/library/5b5069f3-64a1-435a-aee6-da263f4e6310) et [Procédure pas à pas : validation des entrées d’utilisateur dans une page Web Forms](https://msdn.microsoft.com/library/7141d6ba-34f3-410b-b5cd-2102a24cb436).
+ Pour plus d’informations, voir [Contrôles de saisie HTML](https://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Syntaxe déclarative du contrôle serveur HtmlInputPassword](https://msdn.microsoft.com/df703dd0-1624-4e5a-a547-c97f2f331b9f) et [Guide pratique pour définir un contrôle serveur web TextBox pour la saisie de mot de passe](https://msdn.microsoft.com/library/5b5069f3-64a1-435a-aee6-da263f4e6310) et [Procédure pas à pas : Validation de l’entrée utilisateur dans une page Web Forms](https://msdn.microsoft.com/library/7141d6ba-34f3-410b-b5cd-2102a24cb436).
 
 > [!IMPORTANT]
-> Si votre application transmet des noms d’utilisateurs et des mots de passe, vous devez configurer votre site web afin qu’il utilise SSL (Secure Sockets Layer) pour chiffrer la transmission. Pour plus d’informations, consultez la rubrique relative à la sécurisation des connexions avec SSL dans le [Guide des opérations IIS](https://go.microsoft.com/fwlink/?linkid=47856). Il est, en outre, recommandé de valider toutes les entrées d’utilisateur. Pour plus d’informations, consultez [Validation des entrées d’utilisateur dans des pages Web ASP.NET](https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).
+> Si votre application transmet des noms d’utilisateurs et des mots de passe, vous devez configurer votre site web afin qu’il utilise SSL (Secure Sockets Layer) pour chiffrer la transmission. Pour plus d’informations, consultez la rubrique relative à la sécurisation des connexions avec SSL dans le [Guide des opérations IIS](https://technet.microsoft.com/library/cc732976(v=WS.10).aspx). Il est, en outre, recommandé de valider toutes les entrées d’utilisateur. Pour plus d’informations, consultez [Validation des entrées d’utilisateur dans des pages Web ASP.NET](https://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).
 
  **Entrée (case à cocher)** ![page Web HTML boîte à outils case à cocher](../../ide/reference/media/vxcheckbox.gif "|::ref8::|")
 
@@ -210,7 +210,7 @@ L’onglet **HTML** de la boîte à outils fournit des composants utiles sur les
 
  Vous pouvez créer un élément `select` multiligne en augmentant la valeur de la propriété size.
 
- Pour plus d’informations, voir [Syntaxe déclarative du contrôle serveur HtmlSelect](https://msdn.microsoft.com/ee93bdec-b343-441a-a8ff-56ffcafe9ae5), [NIB : Guide pratique pour créer des scripts et modifier des gestionnaires d’événements](https://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d), [Vue d’ensemble du contrôle serveur web DropDownList](https://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608), [Vue d’ensemble du contrôle serveur web ListBox](https://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97), <xref:System.Web.UI.HtmlControls.HtmlSelect> et <xref:System.Web.UI.WebControls.DropDownList>.
+ Pour plus d’informations, voir [Syntaxe déclarative du contrôle serveur HtmlSelect](https://msdn.microsoft.com/ee93bdec-b343-441a-a8ff-56ffcafe9ae5), [NIB : Procédure : Créer des scripts et modifier des gestionnaires d’événements](https://msdn.microsoft.com/69d71d13-c68b-4ecd-869b-a42edf6d1f6d), [Vue d’ensemble du contrôle serveur web DropDownList](https://msdn.microsoft.com/library/517dd1a4-8df3-4c9f-8c89-1549a1aee608), [Vue d’ensemble du contrôle serveur web ListBox](https://msdn.microsoft.com/library/c08ee025-787a-408d-858e-a4a5fdb61d97), <xref:System.Web.UI.HtmlControls.HtmlSelect> et <xref:System.Web.UI.WebControls.DropDownList>.
 
  Règle **horizontale** - ![élément de règle horizontale de la page HTML](../../ide/reference/media/vxhorizontal.gif "|::ref15::|")
 
