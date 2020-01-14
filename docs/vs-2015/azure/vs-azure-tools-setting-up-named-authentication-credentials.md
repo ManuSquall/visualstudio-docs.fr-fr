@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 23abafcae0e777216a8880adc05ecac38d5b3f0f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 27837390306ad29da55c7c5262ecd8fa6bcf75b3
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961948"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917363"
 ---
 # <a name="set-up-named-authentication-credentials"></a>Configurer des informations d’identification d’authentification nommées
 
@@ -37,9 +37,9 @@ Dans l’Explorateur de serveurs, cliquez avec le bouton droit sur le nœud **Az
 
 Si vous souhaitez créer vous-même un certificat, vous pouvez consulter les instructions fournies dans [Créer et charger un certificat de gestion pour Azure](https://msdn.microsoft.com/library/windowsazure/gg551722.aspx), puis charger manuellement le certificat sur le [portail Azure](https://portal.azure.com/).
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
-- [Vue d’ensemble de Web Apps](https://docs.microsoft.com/azure/app-service/)
-- [Déploiement de votre application dans Azure App Service](https://docs.microsoft.com/azure/app-service/app-service-deploy-local-git) 
-- [Déployer WebJobs avec Visual Studio](https://docs.microsoft.com/azure/app-service/websites-dotnet-deploy-webjobs)
-- [Création et déploiement d’un service cloud](https://docs.microsoft.com/azure/cloud-services/cloud-services-how-to-create-deploy-portal)
+- [Vue d’ensemble de Web Apps](/azure/app-service/)
+- [Déploiement de votre application dans Azure App Service](/azure/app-service/app-service-deploy-local-git) 
+- [Déployer WebJobs avec Visual Studio](/azure/app-service/websites-dotnet-deploy-webjobs)
+- [Création et déploiement d’un service cloud](/azure/cloud-services/cloud-services-how-to-create-deploy-portal)

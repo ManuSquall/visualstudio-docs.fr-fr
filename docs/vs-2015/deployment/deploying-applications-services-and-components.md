@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5ca4d6a4097848021073bb77323fd0456f3dddc1
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 42e3a4afec71b90a087ac927f5cbbbc0b181fadd
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74289819"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917552"
 ---
 # <a name="deploying-applications-services-and-components"></a>Déploiement d'applications, de services et de composants
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ En déployant une application, un service ou un composant, vous le distribuez po
 |**Publier dans le Cloud :** Vous pouvez rendre des applications, des services et des données disponibles n’importe où à l’aide de Visual Studio pour les déployer sur Microsoft Azure.|[Publication d’applications sur Microsoft Azure](/visualstudio/deployment/quickstart-deploy-to-azure)|  
 |**Publier une application du Windows Store :** Vous pouvez facilement créer, envoyer et vendre vos applications à partir du Windows Store à des clients dans le monde entier.|[Empaquetage, déploiement et interrogation d’applications du Windows Store](https://msdn.microsoft.com/library/hh446593\(v=vs.85\).aspx)|  
 |**Publier une application Windows Phone :** Vous pouvez soumettre une nouvelle application ou une mise à jour à une application existante pour la certification dans le centre de développement Windows Phone.|[Publier une application Windows Phone](https://developer.microsoft.com/)|  
-|**Déployer une application ou un service ASP.net :** Vous pouvez déployer des applications et des services ASP.NET de différentes manières.|[Déploiement d’applications et de services Web ASP.NET](https://docs.microsoft.com/aspnet/mvc/overview/deployment/)|  
+|**Déployer une application ou un service ASP.net :** Vous pouvez déployer des applications et des services ASP.NET de différentes manières.|[Déploiement d’applications et de services Web ASP.NET](/aspnet/mvc/overview/deployment/)|  
 |**Déployer une application ou un service LightSwitch :** Après avoir créé des applications et des services OData à l’aide de LightSwitch, vous pouvez les déployer sur un serveur Web ou sur Microsoft Azure.|[Déploiement d’applications LightSwitch](https://msdn.microsoft.com/library/4818d933-295c-4ecc-9148-7ad9ca28dcdb)|  
 |**Publier une application pour SharePoint :** Vous pouvez publier une application pour SharePoint dans Office Store ou dans un catalogue d’applications pour une organisation interne.|[Publier une application pour SharePoint à l’aide de Visual Studio](https://msdn.microsoft.com/library/office/jj220044\(v=office.15\).aspx)|  
 |**Publier une application pour Office :** Vous pouvez publier une application pour Office dans l’Office Store ou dans un catalogue d’applications pour une organisation interne.|[Publication de votre application pour Office](https://msdn.microsoft.com/library/office/fp123515.aspx)|  

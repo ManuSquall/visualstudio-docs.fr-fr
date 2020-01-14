@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: ae6449613d273c6e0f8302b8a0b604fe91ebc847
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: d8257e0833da470554ce331c30cd0edf74122093
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911752"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915954"
 ---
 # <a name="publishing-a-cloud-service-using-visual-studio"></a>Publication d’un service cloud avec Visual Studio
 
@@ -31,13 +31,13 @@ Utilisez les procédures suivantes pour publier votre application Azure et mettr
 
 Lorsque vous publiez votre application Azure, vous pouvez effectuer l'une des tâches suivantes :
 
-- Créer un package de services : vous pouvez utiliser ce package et le fichier de configuration de service pour publier votre application dans un environnement de déploiement à partir de la [portail Azure](https://portal.azure.com).
+- Créer un package de services : vous pouvez utiliser ce package et le fichier de configuration de service pour publier votre application dans un environnement de déploiement à partir du [portail Azure](https://portal.azure.com).
 
-- Publier votre projet Azure à partir de Visual Studio : pour publier votre application directement dans Azure, vous utilisez l’Assistant Publication. Pour plus d’informations, consultez [Assistant Publication d’application Azure](vs-azure-tools-publish-azure-application-wizard.md).
+- Publier votre projet Azure à partir de Visual Studio : Pour publier votre application directement dans Azure, utilisez l'Assistant Publication. Pour plus d’informations, consultez [Assistant Publication d’application Azure](vs-azure-tools-publish-azure-application-wizard.md).
 
 ### <a name="to-create-a-service-package-from-visual-studio"></a>Pour créer un package de services à partir de Visual Studio
 
-1. Lorsque vous êtes prêt à publier votre application, ouvrez l'Explorateur de solutions, ouvrez le menu contextuel du projet Azure qui contient vos rôles, puis choisissez Publier.
+1. Lorsque vous êtes prêt à publier votre application, ouvrez l'Explorateur de solutions, puis le menu contextuel du projet Windows Azure qui contient vos rôles et sélectionnez Publier.
 
 1. Pour créer un package de services uniquement, procédez comme suit :
 
@@ -67,13 +67,13 @@ Si l'infrastructure principale de votre application est stable, mais que les rô
 
 ### <a name="requirements-for-using-web-deploy"></a>Configuration requise pour l’utilisation de Web Deploy
 
-- **À des fins de développement et de test uniquement**: les modifications sont apportées directement à la machine virtuelle sur laquelle le rôle Web s’exécute. Si cette machine virtuelle doit être recyclée, les modifications sont perdues car le package d'origine que vous avez publié sert à recréer la machine virtuelle pour le rôle. Republiez votre application afin d’obtenir les dernières modifications pour le rôle web.
+- **À des fins de développement et de test uniquement :** les modifications sont apportées directement à la machine virtuelle sur laquelle le rôle web est en cours d'exécution. Si cette machine virtuelle doit être recyclée, les modifications sont perdues car le package d'origine que vous avez publié sert à recréer la machine virtuelle pour le rôle. Republiez votre application afin d’obtenir les dernières modifications pour le rôle web.
 
-- **Seuls les rôles Web peuvent être mis à jour**: les rôles de travail ne peuvent pas être mis à jour. En outre, vous ne pouvez pas mettre à jour `RoleEntryPoint` dans `web role.cs`.
+- **Seuls les rôles web peuvent être mis à jour :** les rôles de travail ne peuvent pas être mis à jour. En outre, vous ne pouvez pas mettre à jour `RoleEntryPoint` dans `web role.cs`.
 
-- **Ne peut prendre en charge qu’une seule instance d’un rôle Web**: vous ne pouvez pas avoir plusieurs instances d’un rôle Web dans votre environnement de déploiement. Toutefois, plusieurs rôles web, chacun avec une seule instance, sont pris en charge.
+- **Peut prendre en charge une seule instance d'un rôle web :** vous ne pouvez pas avoir plusieurs instances d'un rôle web dans votre environnement de déploiement. Toutefois, plusieurs rôles web, chacun avec une seule instance, sont pris en charge.
 
-- **Activer les connexions Bureau à distance**: cette exigence permet à Web Deploy d’utiliser l’utilisateur et le mot de passe pour se connecter à la machine virtuelle afin de déployer les modifications sur le serveur qui exécute Internet Information Services (IIS). En outre, vous devrez peut-être vous connecter à la machine virtuelle pour ajouter un certificat approuvé à IIS sur cette machine virtuelle. (Ce certificat assure la sécurité de la connexion à distance pour IIS utilisée par Web Deploy.)
+- **Activer les connexions Bureau à distance :** cette exigence permet que le Web Deploy utilise le nom d'utilisateur et le mot de passe pour se connecter à la machine virtuelle pour déployer les modifications sur le serveur qui exécute Internet Information Services (IIS). En outre, vous devrez peut-être vous connecter à la machine virtuelle pour ajouter un certificat approuvé à IIS sur cette machine virtuelle. (Ce certificat assure la sécurité de la connexion à distance pour IIS utilisée par Web Deploy.)
 
 La procédure suivante suppose que vous utilisez l’Assistant **Publication d’application Azure** .
 
@@ -120,7 +120,7 @@ La procédure suivante suppose que vous utilisez l’Assistant **Publication d�
 
    a. Pour vous connecter à la machine virtuelle qui exécute le rôle web, sélectionnez l’instance du rôle web dans **Cloud Explorer** ou l’**Explorateur de serveurs**, puis choisissez la commande **Connexion à l’aide de Bureau à distance**. Pour plus de détails sur les étapes de connexion à la machine virtuelle, consultez [Activer une connexion Bureau à distance pour un rôle dans Azure Cloud Services avec PowerShell](/azure/cloud-services/cloud-services-role-enable-remote-desktop-visual-studio). Votre navigateur vous invite à télécharger un `.rdp` fichier.
 
-   b. Pour ajouter un certificat SSL, ouvrez le service de gestion dans le Gestionnaire des services IIS. Dans le Gestionnaire des services IIS, activez SSL en ouvrant le lien **Liaisons** dans le volet **Action**. La boîte de dialogue **Ajouter la liaison de Site** s'affiche. Choisissez **Ajouter**, puis sélectionnez HTTPS dans la liste déroulante **Type**. Dans la liste **Certificat SSL**, sélectionnez le certificat SSL signé par une autorité de certification et que vous avez téléchargé sur le portail Azure. Pour plus d'informations, consultez [Configurer des paramètres de connexion pour le service de gestion](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770458(v=ws.10)).
+   b. Pour ajouter un certificat SSL, ouvrez le service de gestion dans le Gestionnaire des services IIS. Dans le Gestionnaire des services IIS, activez SSL en ouvrant le lien **Liaisons** dans le volet **Action**. La boîte de dialogue **Ajouter la liaison de Site** s'affiche. Choisissez **Ajouter**, puis sélectionnez HTTPS dans la liste déroulante **Type**. Dans la liste **Certificat SSL**, sélectionnez le certificat SSL signé par une autorité de certification et que vous avez téléchargé sur le portail Azure. Pour plus d'informations, consultez [Configurer des paramètres de connexion pour le service de gestion](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770458(v=ws.10)).
 
       > [!NOTE]
       > Si vous ajoutez un certificat SSL approuvé, le triangle d'avertissement jaune n'apparaît plus dans l’ **Assistant Publication**.
@@ -145,7 +145,7 @@ Vous devrez peut-être inclure des fichiers spécifiques dans votre package de s
 
     La référence est ajoutée à la liste sous le dossier **Références** .
 
-1. Ouvrez le menu contextuel pour l'assembly que vous avez ajouté, puis choisissez **Propriétés**. La fenêtre Propriétés apparaît.
+1. Ouvrez le menu contextuel pour l'assembly que vous avez ajouté, puis choisissez **Propriétés**. La fenêtre Propriétés s'affiche.
 
 1. Pour inclure cet assembly dans le package de services, dans la **liste de copie locale**, choisissez **True**.
 
@@ -153,6 +153,6 @@ Vous devrez peut-être inclure des fichiers spécifiques dans votre package de s
 
 1. Pour inclure dans le package de services des fichiers qui ont été ajoutés à votre projet de rôle web, ouvrez le menu contextuel du fichier, puis choisissez **Propriétés**. Dans la fenêtre **Propriétés**, choisissez **Copier si plus récent** dans la liste déroulante **Copier dans le répertoire de sortie**.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 Pour en savoir plus sur la publication sur Azure depuis Visual Studio, consultez [Assistant Publication d’application Azure](vs-azure-tools-publish-azure-application-wizard.md).

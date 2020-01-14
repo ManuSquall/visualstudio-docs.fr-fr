@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e5f7f21206953b8d99306a9b1da6935604c88b8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: ee89472ba4773e3b8692b293118bea154504fb55
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62815466"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916805"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Configuration système requise pour l'Émulateur Visual Studio pour Android
 
@@ -40,7 +40,7 @@ Configuration requise
 
 - Processeur qui prend en charge SSSE3 ou version ultérieure.
 
-Configuration réseau requise
+Configuration du réseau
 
 - DHCP
 
@@ -73,13 +73,13 @@ Pour vérifier la configuration requise pour la RAM et Windows, dans le Panneau 
 
 ![Vérifier la configuration requise](../cross-platform/media/android_emu_system_requirements.png "Android_Emu_System_Requirements")
 
-## <a name="network-requirements"></a>Configuration réseau requise
+## <a name="network-requirements"></a>Configuration du réseau
 
 Votre réseau doit remplir les conditions suivantes :
 
 - DHCP
 
-   L’émulateur nécessite le protocole DHCP, car il se configure lui-même comme périphérique distinct sur le réseau avec sa propre adresse IP.
+   L'émulateur nécessite le protocole DHCP, car il se configure lui-même comme périphérique distinct sur le réseau avec sa propre adresse IP.
 
 - Paramètres DNS et de passerelle configurés automatiquement
 
@@ -87,7 +87,7 @@ Votre réseau doit remplir les conditions suivantes :
 
   Pour résoudre les problèmes de mise en réseau dans l’émulateur, consultez les rubriques suivantes :
 
-- [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)
+- [Résolution des problèmes liés à l’émulateur Visual Studio pour Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)
 
 ## <a name="hyper-v-requirements"></a>Configuration requise pour Hyper-V
 
@@ -105,9 +105,9 @@ Configuration requise pour Hyper-V dans Windows
 
 Quand les paramètres du BIOS et de votre ordinateur sont déjà configurés pour prendre en charge Hyper-V, le programme d’installation active et démarre Hyper-V. Dans le cas contraire, vous devrez peut-être activer manuellement ces composants requis.
 
-|Spécification|Comment vérifier et activer cette spécification|
+|Configuration requise|Comment vérifier et activer cette spécification|
 |-----------------|----------------------------------------------|
-|Hyper-V doit être installé|Suivez les mêmes instructions que celles utilisées pour [activer Hyper-V pour l’émulateur Windows Phone](https://docs.microsoft.com/previous-versions/windows/apps/jj863509(v=vs.105)).<br /><br /> Vérifiez l’état du service **Gestion d’ordinateurs virtuels Hyper-V** dans le composant logiciel enfichable Services.|
+|Hyper-V doit être installé|Suivez les mêmes instructions que celles utilisées pour [activer Hyper-V pour l’émulateur Windows Phone](/previous-versions/windows/apps/jj863509(v=vs.105)).<br /><br /> Vérifiez l’état du service **Gestion d’ordinateurs virtuels Hyper-V** dans le composant logiciel enfichable Services.|
 |Hyper-V doit être en cours d’exécution.|Pour plus d’informations sur la gestion des services, consultez les rubriques suivantes :<br /><br /> -   [Démarrer, arrêter, suspendre, reprendre ou redémarrer un service](https://technet.microsoft.com/library/cc736564\(v=WS.10\).aspx)<br />-   [Configurer le démarrage d’un service](https://technet.microsoft.com/%20library/cc739213\(v=ws.10\))|
 
  Vous devez être membre du groupe local Administrateurs Hyper-V.
@@ -119,14 +119,14 @@ Quand les paramètres du BIOS et de votre ordinateur sont déjà configurés pou
 > [!IMPORTANT]
 > Une fois que vous avez rejoint le groupe, déconnectez-vous ou redémarrez l’ordinateur pour que la modification prenne effet.
 
- ![Entrée dans le groupe de sécurité Administrateurs Hyper&#45;V](../cross-platform/media/android_emu_hyperv_admin.png "Android_Emu_HyperV_Admin")
+ ![Joindre le groupe&#45;de sécurité administrateurs Hyper-V](../cross-platform/media/android_emu_hyperv_admin.png "Android_Emu_HyperV_Admin")
 
  Pour vous ajouter à un groupe manuellement, ouvrez le composant logiciel enfichable Utilisateurs et groupes locaux.
 
-## <a name="running-the-emulator-from-a-bootable-vhd-is-not-supported"></a>L’exécution de l’émulateur à partir d’un disque dur virtuel démarrable n’est pas prise en charge
- Si vous essayez d’exécuter une application sur l’émulateur Visual Studio pour Android pendant que vous exécutez Windows à partir d’un disque dur virtuel démarrable, le démarrage de l’émulateur prend généralement plusieurs minutes ou échoue. Quand le démarrage de l’émulateur échoue, le message suivant s’affiche : Échec du déploiement de l’application. Réessayez.
+## <a name="running-the-emulator-from-a-bootable-vhd-is-not-supported"></a>L'exécution de l'émulateur à partir d'un disque dur virtuel démarrable n'est pas prise en charge
+ Si vous essayez d’exécuter une application sur l’émulateur Visual Studio pour Android pendant que vous exécutez Windows à partir d’un disque dur virtuel démarrable, le démarrage de l’émulateur prend généralement plusieurs minutes ou échoue. Quand le démarrage de l’émulateur échoue, le message suivant s’affiche : Échec du déploiement de l’application. Réessayez.
 
- Cette configuration n’est pas prise en charge. Pour plus d’informations sur les problèmes connexes, consultez [Résoudre les problèmes de l’émulateur Visual Studio pour Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md).
+ Cette configuration n'est pas prise en charge. Pour plus d’informations sur les problèmes connexes, consultez [Résoudre les problèmes de l’émulateur Visual Studio pour Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md).
 
 ## <a name="hyper-v-requires-uncompressed-and-unencrypted-files"></a>Hyper-V nécessite des fichiers non compressés et non chiffrés
  Sur un disque dur configuré avec le système de fichiers NTFS, les fichiers de disque dur virtuel utilisés par Hyper-V doivent être non compressés et non chiffrés. Assurez-vous que les répertoires suivants ne sont pas compressés ou chiffrés :

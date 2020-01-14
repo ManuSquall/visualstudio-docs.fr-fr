@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4087541b11b240f455dc6c0109ef44c0cb8d72ad
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 3a53561e8c62fcf523f13d17d5228d33a6a0af6d
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587093"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916719"
 ---
 # <a name="access-data-in-visual-studio"></a>Accéder aux données dans Visual Studio
 
@@ -108,7 +108,7 @@ Il n’est pas nécessaire d’utiliser ces technologies. Dans certains scénari
 
 ## <a name="native-c"></a>C++ natif
 
-C++dans la plupart des cas, les applications qui se connectent à SQL Server doivent utiliser [Microsoft® ODBC Driver 13,1 pour SQL Server](https://www.microsoft.com/download/details.aspx?id=53339) . Si les serveurs sont liés, OLE DB est nécessaire et pour que vous utilisiez le [SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client). Vous pouvez accéder à d’autres bases de données à l’aide de pilotes [ODBC](https://docs.microsoft.com/sql/odbc/microsoft-open-database-connectivity-odbc?view=sql-server-2017) ou OLE DB directement. ODBC est l’interface de base de données standard actuelle, mais la plupart des systèmes de base de données fournissent des fonctionnalités personnalisées qui ne sont pas accessibles par le biais de l’interface ODBC. OLE DB est une technologie héritée d’accès aux données COM qui est toujours prise en charge mais non recommandée pour les nouvelles applications. Pour plus d’informations, consultez [accès aux données C++dans Visual ](/cpp/data/data-access-in-cpp).
+C++dans la plupart des cas, les applications qui se connectent à SQL Server doivent utiliser [Microsoft® ODBC Driver 13,1 pour SQL Server](https://www.microsoft.com/download/details.aspx?id=53339) . Si les serveurs sont liés, OLE DB est nécessaire et pour que vous utilisiez le [SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client). Vous pouvez accéder à d’autres bases de données à l’aide de pilotes [ODBC](/sql/odbc/microsoft-open-database-connectivity-odbc?view=sql-server-2017) ou OLE DB directement. ODBC est l’interface de base de données standard actuelle, mais la plupart des systèmes de base de données fournissent des fonctionnalités personnalisées qui ne sont pas accessibles par le biais de l’interface ODBC. OLE DB est une technologie héritée d’accès aux données COM qui est toujours prise en charge mais non recommandée pour les nouvelles applications. Pour plus d’informations, consultez [accès aux données C++dans Visual ](/cpp/data/data-access-in-cpp).
 
 C++les programmes qui utilisent des services REST peuvent utiliser le [ C++ Kit de développement logiciel Rest](https://github.com/Microsoft/cpprestsdk).
 

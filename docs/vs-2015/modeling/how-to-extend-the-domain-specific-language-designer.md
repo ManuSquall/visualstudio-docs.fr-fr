@@ -9,19 +9,17 @@ caps.latest.revision: 10
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 023559143a526732cb92bd72e06e19147261fba7
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: faac29c59b78d8f3f1a0260b0b7a8ace16169f9d
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850683"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916796"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Comment : étendre le concepteur de langage spécifique à un domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez créer des extensions pour le concepteur que vous utilisez pour modifier les définitions DSL. Les types d’extensions que vous pouvez effectuer incluent l’ajout de commandes de menu, l’ajout de gestionnaires pour les gestes par glisser-cliquer et le double-clic, et les règles qui sont déclenchées quand des types particuliers de valeurs ou de relations changent. Les extensions peuvent être empaquetées en tant qu’extension d’intégration Visual Studio (VSIX) et distribuées à d’autres utilisateurs.
-
- Pour obtenir un exemple de code et des informations supplémentaires sur cette fonctionnalité, consultez le [site Web du kit de développement logiciel (SDK) Visual Studio Visualization and Modeling SDK (VMSDK)](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
 
 ## <a name="setting-up-the-solution"></a>Configuration de la solution
  Configurez un projet qui contient le code de votre extension et un projet VSIX qui exporte le projet. Votre solution peut contenir d’autres projets incorporés dans la même extension VSIX.

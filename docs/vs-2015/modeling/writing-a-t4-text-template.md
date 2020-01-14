@@ -13,12 +13,12 @@ caps.latest.revision: 45
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: e590af12e8979d16a946339cae530fd5ccc1b08d
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: c3e970ac2d6f7de86908a88aff6235c598ead810
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850740"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918475"
 ---
 # <a name="writing-a-t4-text-template"></a>Écriture d'un modèle de texte T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -242,7 +242,7 @@ private void WriteSquareLine(int i)
 <# string fileContent = File.ReadAllText(@"C:\myData.txt"); ...
 ```
 
- **Chargez un fichier en tant que modèle navigable**. Une méthode plus puissante consiste à lire les données en tant que modèle navigable par votre code de modèle de texte. Par exemple, vous pouvez charger un fichier XML et le parcourir avec des expressions XPath. Vous pouvez également utiliser [xsd. exe](https://docs.microsoft.com/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe) pour créer un ensemble de classes avec lequel vous pouvez lire les données XML.
+ **Chargez un fichier en tant que modèle navigable**. Une méthode plus puissante consiste à lire les données en tant que modèle navigable par votre code de modèle de texte. Par exemple, vous pouvez charger un fichier XML et le parcourir avec des expressions XPath. Vous pouvez également utiliser [xsd. exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe) pour créer un ensemble de classes avec lequel vous pouvez lire les données XML.
 
  **Modifiez le fichier de modèle dans un diagramme ou un formulaire.** [!INCLUDE[dsl](../includes/dsl-md.md)] fournit des outils qui vous permettent de modifier un modèle en tant que diagramme ou Windows Form. Il est ainsi plus facile de discuter du modèle avec les utilisateurs de l'application générée. [!INCLUDE[dsl](../includes/dsl-md.md)] crée également un ensemble de classes fortement typées qui reflètent la structure du modèle. Pour plus d’informations, consultez [génération de code à partir d’un langage spécifique à un domaine](../modeling/generating-code-from-a-domain-specific-language.md).
 

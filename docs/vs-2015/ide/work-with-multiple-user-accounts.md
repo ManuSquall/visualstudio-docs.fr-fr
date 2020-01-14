@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2f68328fb243c00c43c8ef454f10ad94c7d004a4
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 7dc2ba585c500fe045d143a2b8baa2d193466fdf
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74296786"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917783"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Utiliser plusieurs comptes d'utilisateur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Si vous avez plusieurs comptes Microsoft et/ou comptes professionnels ou scolair
 
  Cette procédure pas à pas montre comment ajouter plusieurs comptes à Visual Studio et comment déterminer si les ressources accessibles à partir de ces comptes sont reflétées dans des endroits comme la boîte de dialogue **Ajouter un service connecté** , l' **Explorateur de serveurs**et **Team Explorer**.
 
-#### <a name="sign-in-to-visual-studio"></a>Connectez-vous à Visual Studio
+#### <a name="sign-in-to-visual-studio"></a>Se connecter à Visual Studio
 
 1. Connectez-vous à Visual Studio 2015 avec un compte Microsoft ou un compte professionnel. Votre nom d'utilisateur doit apparaître dans le coin supérieur droit de la fenêtre, comme ceci :
 
@@ -56,7 +56,7 @@ Si vous avez plusieurs comptes Microsoft et/ou comptes professionnels ou scolair
 
  ![Boîte de dialogue Modifier l’authentification pour ASP.NET](../ide/media/vs2015-change-authentication.png "VS2015_change_authentication")
 
- Pour plus d’informations sur les différents types d’authentification dans ASP.NET, consultez [Creating ASP.NET Web Projects in Visual Studio 2013](https://docs.microsoft.com/aspnet/visual-studio/overview/2013/creating-web-projects-in-visual-studio#orgauth) (les informations relatives à l’authentification sont toujours applicables à Visual Studio 2015).
+ Pour plus d’informations sur les différents types d’authentification dans ASP.NET, consultez [Creating ASP.NET Web Projects in Visual Studio 2013](/aspnet/visual-studio/overview/2013/creating-web-projects-in-visual-studio#orgauth) (les informations relatives à l’authentification sont toujours applicables à Visual Studio 2015).
 
 ### <a name="access-your-visual-studio-team-services-account"></a>Accéder à votre compte Visual Studio Team Services
  Dans le menu principal, choisissez **Équipe > Se connecter à Team Foundation Server** pour afficher la fenêtre **Team Explorer**. Cliquez sur **Sélectionner les projets d’équipe**puis, dans la zone de liste sous **Sélectionner un serveur Team Foundation Server**, vous devriez voir l’URL de votre compte Visual Studio Team Services. Lorsque vous sélectionnez l'URL, vous êtes connecté sans avoir à entrer une nouvelle fois vos informations d'identification.

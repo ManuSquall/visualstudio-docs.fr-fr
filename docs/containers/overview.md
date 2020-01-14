@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.topic: overview
 ms.date: 03/20/2019
 ms.technology: vs-azure
-ms.openlocfilehash: d785ed9416959484f9829e12e1cd20cd2924adb8
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 0d5859016a02de259c24c213c6cfef8cb5fce005
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75846754"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916563"
 ---
 # <a name="container-tools-in-visual-studio"></a>Outils de conteneur dans Visual Studio
 
@@ -44,7 +44,7 @@ Avec Visual Studio 2017, vous pouvez utiliser Docker Compose et Service Fabric c
 
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) avec la charge de travail **Développement web**, **Outils Azure** et/ou la charge de travail **Développement multiplateforme .NET Core** installée
-* [Outils de développement .NET core 2.2](https://dotnet.microsoft.com/download/dotnet-core/2.2) pour le développement avec .NET Core 2.2
+* [Outils de développement .net Core](https://dotnet.microsoft.com/download/dotnet-core/) pour le développement avec .net core.
 * Pour publier sur Azure Container Registry, un abonnement Azure. [Inscrivez-vous pour obtenir un essai gratuit](https://azure.microsoft.com/offers/ms-azr-0044p/).
 
 ## <a name="docker-support-in-visual-studio"></a>Prise en charge de Docker dans Visual Studio
@@ -56,7 +56,7 @@ La prise en charge de Docker dans Visual Studio a été modifiée sur un certain
 Visual Studio 2019 vous permet d’utiliser Docker Compose, Kubernetes et Service Fabric comme services d’orchestration de conteneur.
 
 > [!NOTE]
-> Si vous utilisez le modèle de projet de console .NET Framework complet, lorsque vous ajoutez la prise en charge de Docker, la prise en charge de l’orchestration à l’aide de Docker Compose est automatiquement ajoutée.
+> Si vous utilisez le modèle de projet de console .NET Framework complète, l’option prise en charge est **Ajouter la prise en charge d’Orchestrator Container** après la création du projet, avec des options pour utiliser Service Fabric ou docker compose. L’ajout de la prise en charge lors de la création du projet et l’ajout de la **prise en charge** d’un seul projet sans orchestration ne sont pas des options disponibles.
 
 Dans Visual Studio 2019 version 16,4 et versions ultérieures, la fenêtre **conteneurs** est disponible, ce qui vous permet d’afficher les conteneurs en cours d’exécution, de parcourir les images disponibles, d’afficher les variables d’environnement, les journaux et les mappages de port, d’inspecter le système de fichiers, d’attacher un débogueur ou d’ouvrir une fenêtre de terminal dans l’environnement de conteneur. Consultez [afficher et diagnostiquer des conteneurs et des images dans Visual Studio](view-and-diagnose-containers.md).
 

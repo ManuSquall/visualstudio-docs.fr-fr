@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4af96ad0f76414468fd194b7079b3c4dbdaf2a4c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 250f1ad55f8d60396b8423098e58801d0ed81e77
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586664"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916735"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Entity Framework Tools dans Visual Studio
 
@@ -43,7 +43,7 @@ Il s’agit des outils spécifiques qui composent Entity Framework Tools dans Vi
 
 Les outils génèrent ou modifient un fichier *. edmx* . Ce fichier *. edmx* contient des informations qui décrivent le modèle conceptuel, le modèle de stockage et les mappages entre eux. Pour plus d’informations, consultez [edmx](/ef/ef6/).
 
-[Entity Framework Power Tools](https://marketplace.visualstudio.com/items?itemName=EntityFrameworkTeam.EntityFrameworkPowerToolsBeta4) vous aide à créer des applications qui utilisent le Entity Data Model. Les outils Power Tools peuvent générer un modèle conceptuel, valider un modèle existant, produire des fichiers de code source qui contiennent des classes d’objets basées sur le modèle conceptuel et produire des fichiers de code source qui contiennent des vues générées par le modèle. Pour plus d’informations, consultez [vues de mappage prégénérées](https://docs.microsoft.com/ef/ef6/fundamentals/performance/pre-generated-views).
+[Entity Framework Power Tools](https://marketplace.visualstudio.com/items?itemName=EntityFrameworkTeam.EntityFrameworkPowerToolsBeta4) vous aide à créer des applications qui utilisent le Entity Data Model. Les outils Power Tools peuvent générer un modèle conceptuel, valider un modèle existant, produire des fichiers de code source qui contiennent des classes d’objets basées sur le modèle conceptuel et produire des fichiers de code source qui contiennent des vues générées par le modèle. Pour plus d’informations, consultez [vues de mappage prégénérées](/ef/ef6/fundamentals/performance/pre-generated-views).
 
 ## <a name="related-topics"></a>Rubriques connexes
 

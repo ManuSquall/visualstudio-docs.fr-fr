@@ -9,19 +9,19 @@ caps.latest.revision: 8
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 51330c4b6626399bbc73ad75dc8dc61cc1fcc52a
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 198497c0f609401639218a54321427e51eb682ff
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851987"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918897"
 ---
 # <a name="creating-a-wpf-based-domain-specific-language"></a>Création d'un langage spécifique à un domaine basé sur WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez créer un langage spécifique à un domaine qui a un Concepteur WPF au lieu d’un concepteur graphique.
 
- Vous trouverez des informations et des exemples sur cette fonctionnalité sur le site Web outils de visualisation et de modélisation de Visual Studio sur [http://go.microsoft.com/fwlink/?LinkId=186128](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples)
+ Vous trouverez des informations et des exemples sur cette fonctionnalité dans le [Kit de développement logiciel (SDK) de visualisation et de modélisation de Visual Studio](https://www.microsoft.com/download/details.aspx?id=48148).
 
 ## <a name="see-also"></a>Voir aussi
  [Guide pratique pour définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md)

@@ -10,18 +10,18 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 497287e2f281a5884ba50a850169770f6750bbed
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: 0c16a51381a1ef22d780f7d3c2b26821d7029e8f
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777464"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915971"
 ---
 # <a name="visual-studio-tools-for-ai"></a>Visual Studio Tools pour l’IA
 
 Visual Studio Tools pour IA est une extension permettant de générer, tester et déployer des solutions de deep learning/IA. Il s’intègre de manière fluide à Azure Machine Learning pour offrir de puissantes fonctionnalités d’expérimentation, notamment mais pas exclusivement pour l’envoi des tâches de préparation des données et d’apprentissage des modèles en toute transparence à différentes cibles de calcul. En outre, il assure la prise en charge des métriques personnalisées et du suivi de l’historique d’exécution, ce qui permet l’audit et la reproductibilité de science des données. La collaboration d’entreprise permet de travailler en toute sécurité sur un projet avec d’autres personnes.
 
-Découvrez le deep learning en utilisant [CNTK (Microsoft Cognitive Toolkit)](https://docs.microsoft.com/cognitive-toolkit/), [Google TensorFlow](https://www.tensorflow.org) ou d’autres frameworks deep learning dès aujourd’hui.
+Découvrez le deep learning en utilisant [CNTK (Microsoft Cognitive Toolkit)](/cognitive-toolkit/), [Google TensorFlow](https://www.tensorflow.org) ou d’autres frameworks deep learning dès aujourd’hui.
 
 ## <a name="develop-debug-and-deploy-deep-learning-models-and-ai-solutions"></a>Développer, déboguer et déployer des modèles Deep Learning et des solutions d’IA
 Utilisez les fonctionnalités de productivité de Visual Studio pour accélérer l’innovation IA aujourd’hui. Utilisez les fonctionnalités intégrées de l’éditeur de code comme la coloration syntaxique, IntelliSense et la mise en forme automatique du texte. Vous pouvez tester de façon interactive votre application deep learning dans votre environnement local avec un débogage détaillé des variables locales et modèles.
@@ -45,5 +45,5 @@ Cette extension facilite la formation des modèles sur votre ordinateur local. V
 ## <a name="supported-operating-systems"></a>Supported Operating Systems
 Pour l’instant, cette extension prend en charge les systèmes d’exploitation Windows 64 bits.
 
-## <a name="support"></a>Assistance
+## <a name="support"></a>Prise en charge de
 La prise en charge de cette extension est assurée sur le [suivi des problèmes GitHub](https://github.com/Microsoft/vs-tools-for-ai/issues). Vous pouvez envoyer un rapport de bogue ou une suggestion de fonctionnalité et participer aux discussions.

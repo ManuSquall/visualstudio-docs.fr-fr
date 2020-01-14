@@ -9,17 +9,17 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a4297cfee592977cd09ba9c0abe36e12f7986181
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: d1c63b866b35ef9b029364002360d29fa72f2b9b
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75845611"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918968"
 ---
 # <a name="using-the-microsoft-monitoring-agent"></a>Utilisation de Microsoft Monitoring Agent
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Pour obtenir la documentation la plus récente sur Visual Studio, consultez [utilisation de l’Microsoft Monitoring agent](https://docs.microsoft.com/visualstudio/debugger/using-the-microsoft-monitoring-agent).
+Pour obtenir la documentation la plus récente sur Visual Studio, consultez [utilisation de l’Microsoft Monitoring agent](/visualstudio/debugger/using-the-microsoft-monitoring-agent).
 
 **Microsoft Monitoring Agent**vous permet de surveiller localement les applications web ASP.NET hébergées sur IIS et les applications SharePoint 2010 ou 2013 pour diagnostiquer les erreurs, les problèmes de performances ou autres dysfonctionnements. Vous pouvez enregistrer les événements de diagnostic de l’agent dans un journal IntelliTrace (.iTrace), Vous pouvez ensuite ouvrir le fichier journal dans Visual Studio Enterprise (mais pas dans les éditions Professional ou Community) pour déboguer les problèmes avec tous les outils de diagnostic de Visual Studio. Vous pouvez également collecter des données de diagnostic et de méthode IntelliTrace en exécutant l’agent en mode **Trace** . Microsoft Monitoring Agent peut être intégré à [Application Insights](/azure/azure-monitor/app/app-insights-overview) et [System Center Operations Manager](https://technet.microsoft.com/library/hh205987.aspx). Microsoft Monitoring Agent modifie l’environnement du système cible quand il est installé.  
   

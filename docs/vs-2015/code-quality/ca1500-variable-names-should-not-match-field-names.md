@@ -15,23 +15,23 @@ caps.latest.revision: 25
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: b46594a53e6562c2c6a069a9a25d58b3e32865eb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 5753cc660d626098d234fbce93c0bf0269e52bb3
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72607938"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919048"
 ---
 # <a name="ca1500-variable-names-should-not-match-field-names"></a>CA1500 : Les noms de variables ne doivent pas être identiques aux noms de champs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Pour obtenir la documentation la plus récente sur Visual Studio, consultez [ca1500 : les noms de variables ne doivent pas correspondre aux noms de champs](https://docs.microsoft.com/visualstudio/code-quality/ca1500-variable-names-should-not-match-field-names).
+Pour obtenir la documentation la plus récente sur Visual Studio, consultez [ca1500 : les noms de variables ne doivent pas correspondre aux noms de champs](/visualstudio/code-quality/ca1500-variable-names-should-not-match-field-names).
 
 |||
 |-|-|
 |TypeName|VariableNamesShouldNotMatchFieldNames|
 |CheckId|CA1500|
-|Category|Microsoft. maintenabilité|
+|Catégorie|Microsoft.Maintainability|
 |Modification avec rupture|En cas de déclenchement sur un paramètre portant le même nom qu’un champ :<br /><br /> -Sans rupture : si le champ et la méthode qui déclarent le paramètre ne peuvent pas être vus à l’extérieur de l’assembly, quelle que soit la modification que vous apportez.<br />-Break : Si vous modifiez le nom du champ et que vous pouvez le voir à l’extérieur de l’assembly.<br />-Break : Si vous modifiez le nom du paramètre et que la méthode qui le déclare peut être affichée à l’extérieur de l’assembly.<br /><br /> En cas de déclenchement sur une variable locale qui porte le même nom qu’un champ :<br /><br /> -Sans rupture : si le champ ne peut pas être affiché à l’extérieur de l’assembly, quelle que soit la modification que vous apportez.<br />-Sans rupture : Si vous modifiez le nom de la variable locale et que vous ne modifiez pas le nom du champ.<br />-Break : Si vous modifiez le nom du champ et qu’il est visible à l’extérieur de l’assembly.|
 
 ## <a name="cause"></a>Cause

@@ -33,12 +33,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5303a8003d84af5e2a059d9f509e560204afa528
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 45b681b8d146fcc4ca8b056cd94bb0ef65cae826
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301094"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918957"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>Gestion des exceptions avec le débogueur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -150,7 +150,7 @@ Une exception est une indication d'un état d'erreur qui se produit pendant qu'u
   
 3. Vous pouvez modifier ce paramètre pour une exception particulière (en sélectionnant l'exception, en cliquant avec le bouton droit, puis en sélectionnant/désélectionnant **Continuer en cas d'exception non gérée dans le code utilisateur**) ou pour une catégorie entière d'exceptions (par exemple, toutes les exceptions Common Language Runtime).  
   
-   Par exemple, les applications web ASP.NET gèrent les exceptions en les convertissant en code d’état HTTP 500 ([Gestion des exceptions dans l’API ASP.NET](https://docs.microsoft.com/aspnet/web-api/overview/error-handling/exception-handling)), ce qui peut compliquer l’identification de la source de l’exception. Dans l'exemple ci-dessous, le code utilisateur appelle `String.Format()` qui lève une exception <xref:System.FormatException>. L'exécution s'interrompt de la façon suivante :  
+   Par exemple, les applications web ASP.NET gèrent les exceptions en les convertissant en code d’état HTTP 500 ([Gestion des exceptions dans l’API ASP.NET](/aspnet/web-api/overview/error-handling/exception-handling)), ce qui peut compliquer l’identification de la source de l’exception. Dans l'exemple ci-dessous, le code utilisateur appelle `String.Format()` qui lève une exception <xref:System.FormatException>. L'exécution s'interrompt de la façon suivante :  
   
    ![interruptions sur&#45;l’exception unhanlded de l’utilisateur](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
   

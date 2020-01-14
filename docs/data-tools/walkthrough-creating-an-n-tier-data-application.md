@@ -14,12 +14,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f84e334409f4e3546d8963a51bb5cf79b31f0afd
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: a88f0382a93027cc952dfe44f0027e6ab1076a45
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585962"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916493"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>Procédure pas à pas : création d’une application de données multicouches
 Les applications de données *multiniveaux* sont des applications qui accèdent aux données et sont divisées en plusieurs couches logiques, ou *niveaux*. La séparation des composants de l'application en couches distinctes favorise la possibilité de tenir à jour et de monter en charge l'application. Cela est possible grâce à une application plus facile des nouvelles technologies sur chaque couche sans avoir à reconcevoir toute la solution. L'architecture multicouche inclut une couche Présentation, une couche intermédiaire et une couche Données. La couche intermédiaire inclut généralement une couche d’accès aux données, une couche logique métier et des composants partagés tels que l’authentification et la validation. La couche Données inclut une base de données relationnelle. Les applications multicouches stockent généralement les informations sensibles dans la couche d'accès aux données de la couche intermédiaire, pour la tenir hors de portée des utilisateurs finaux qui accèdent à la couche Présentation. Pour plus d’informations, consultez [vue d’ensemble des applications de données multicouches](../data-tools/n-tier-data-applications-overview.md).
@@ -48,7 +48,7 @@ Au cours de cette procédure pas à pas, vous effectuez les étapes suivantes :
 
 - écrire du code pour remplir les tables de données.
 
-![lien vers la vidéo](../data-tools/media/playvideo.gif) pour obtenir une version vidéo de cette rubrique, consultez [Video How to : Création d’une application de données multiniveaux](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/cc178916(v=vs.90)).
+![lien vers la vidéo](../data-tools/media/playvideo.gif) pour obtenir une version vidéo de cette rubrique, consultez [Video How to : Création d’une application de données multiniveaux](/previous-versions/visualstudio/visual-studio-2008/cc178916(v=vs.90)).
 
 ## <a name="prerequisites"></a>Configuration requise
 Cette procédure pas à pas utilise SQL Server Express base de données locale et l’exemple de base de données Northwind.

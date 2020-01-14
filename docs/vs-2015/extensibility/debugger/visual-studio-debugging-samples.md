@@ -12,12 +12,12 @@ ms.assetid: fbcc42a7-7851-487f-b981-8c4ae7ec7347
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3cebab63c1f811c83c1cf0db00a21474f0102aff
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 73af28d8cb84e30f053000b601cb497ed052b310
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849972"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917577"
 ---
 # <a name="visual-studio-debugging-samples"></a>Exemples de débogage Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,4 +26,4 @@ Deux exemples montrent comment étendre le débogueur Visual Studio à l’aide 
   
 - L’exemple de l’évaluateur d’expression du débogueur, pour les langages managés, est inclus dans la [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)]. Dans la fenêtre [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)], cliquez sur l’onglet **exemples** , cliquez sur **C#** **tous** ou dans la liste des langues, puis cliquez sur **débogueur**.  
   
-- L’exemple de moteur de débogage Visual Studio, pour les langages natifs, est disponible dans la Galerie de code MSDN. Pour plus d’informations, consultez cette page sur le site Web Microsoft : [exemple de moteur de débogage Visual Studio](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples).
+- L’exemple de moteur de débogage Visual Studio, pour les langages natifs, est disponible dans la Galerie de code MSDN. Pour plus d’informations, consultez l’exemple dans GitHub : [exemple de moteur de débogage Visual Studio](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/Visual%20Studio%20Product%20Team/Visual%20Studio%20Debug%20Engine%20Sample).

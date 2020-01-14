@@ -8,18 +8,18 @@ manager: jillfra
 ms.technology: vs-azure
 ms.workload:
 - azure
-ms.openlocfilehash: 7556bf2e8568b8685cb92209bb1ae6bbfb3d211e
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: f5868f97301eba62d16ea68cdaa0c97c8e20edd1
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75847092"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916947"
 ---
 # <a name="get-started-with-visual-studio-kubernetes-tools"></a>Prise en main des outils Kubernetes de Visual Studio
 
 Les outils de Kubernetes de Visual Studio permettent de rationaliser le développement d’applications en conteneur ciblant Kubernetes. Visual Studio peut créer automatiquement les fichiers de configuration en tant que code nécessaires pour prendre en charge le déploiement de Kubernetes, tels que les graphiques fichiers dockerfile et Helm. Vous pouvez déboguer votre code dans un cluster Azure Kubernetes service (AKS) en direct à l’aide d’Azure Dev Spaces ou publier directement sur un cluster AKS à partir de Visual Studio.
 
-Ce didacticiel décrit l’utilisation de Visual Studio pour ajouter la prise en charge de Kubernetes à un projet et sa publication sur AKS. Si vous êtes principalement intéressé par l’utilisation de [Azure dev Spaces](https://docs.microsoft.com/azure/dev-spaces/) pour déboguer et tester votre projet s’exécutant dans AKS, vous pouvez accéder au [didacticiel Azure dev Spaces](/azure/dev-spaces/get-started-netcore-visualstudio) à la place.
+Ce didacticiel décrit l’utilisation de Visual Studio pour ajouter la prise en charge de Kubernetes à un projet et sa publication sur AKS. Si vous êtes principalement intéressé par l’utilisation de [Azure dev Spaces](/azure/dev-spaces/) pour déboguer et tester votre projet s’exécutant dans AKS, vous pouvez accéder au [didacticiel Azure dev Spaces](/azure/dev-spaces/get-started-netcore-visualstudio) à la place.
 
 ## <a name="prerequisites"></a>Configuration requise
 
@@ -51,124 +51,124 @@ Pour tirer parti de cette nouvelle fonctionnalité, vous avez besoin des éléme
 
 Une fois que vous avez installé les outils appropriés, lancez Visual Studio et créez un nouveau projet. Sous **Cloud**, choisissez le type **de projet application conteneur pour Kubernetes** . Sélectionnez ce type de projet et choisissez **OK**.
 
-![Capture d’écran de la création d’un projet d’application Kubernetes](media/tutorial-kubernetes-tools/k8s-tools-new-k8s-app.png)
+![Screenshot of creating a new Kubernetes app project](media/tutorial-kubernetes-tools/k8s-tools-new-k8s-app.png)
 
 ::: moniker-end
 ::: moniker range=">= vs-2019"
 
 Dans la fenêtre de démarrage de Visual Studio, recherchez *Kubernetes*, puis choisissez l' **application conteneur pour Kubernetes**.
 
-![Capture d’écran de la création d’un projet d’application Kubernetes](media/tutorial-kubernetes-tools/vs-2019/k8s-tools-new-k8s-app1.png)
+![Screenshot of creating a new Kubernetes app project](media/tutorial-kubernetes-tools/vs-2019/k8s-tools-new-k8s-app1.png)
 
-Indiquez le nom du projet.
+Provide the project name.
 
-![Capture d’écran de la création d’un projet d’application Kubernetes](media/tutorial-kubernetes-tools/vs-2019/k8s-tools-new-k8s-app2.png)
+![Screenshot of creating a new Kubernetes app project](media/tutorial-kubernetes-tools/vs-2019/k8s-tools-new-k8s-app2.png)
 
 ::: moniker-end
 
-Vous pouvez ensuite choisir le type d’ASP.NET Core application Web à créer. Choisissez **Application web**. L’option d’activation de la **prise en charge de l’ancrer** habituelle n’apparaît pas dans cette boîte de dialogue.  La prise en charge de l’ancrage est activée par défaut pour une application de conteneur pour Kubernetes.
+You can then choose which type of ASP.NET Core web application to create. Choisissez **Application web**. The usual **Enable Docker Support** option does not appear on this dialog.  Docker support is enabled by default for a container application for Kubernetes.
 
 ::: moniker range="vs-2017"
 
-![Capture d’écran de la sélection de l’application Web](media/tutorial-kubernetes-tools/k8s-tools-web-app-selection-screen.png)
+![Screenshot of web app selection](media/tutorial-kubernetes-tools/k8s-tools-web-app-selection-screen.png)
 
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 
-![Capture d’écran de la sélection de l’application Web](media/tutorial-kubernetes-tools/vs-2019/k8s-tools-web-app-selection-screen-2019.png)
+![Screenshot of web app selection](media/tutorial-kubernetes-tools/vs-2019/k8s-tools-web-app-selection-screen-2019.png)
 
 ::: moniker-end
 
-## <a name="add-kubernetes-support-to-an-existing-project"></a>Ajouter la prise en charge de Kubernetes à un projet existant
+## <a name="add-kubernetes-support-to-an-existing-project"></a>Add Kubernetes support to an existing project
 
-Vous pouvez également ajouter la prise en charge de Kubernetes à un projet d’application Web ASP.NET Core existant. Pour ce faire, cliquez avec le bouton droit sur le projet, puis choisissez **ajouter** > **prise en charge d’Orchestrator de conteneur**.
+Alternatively, you can add Kubernetes support to an existing ASP.NET Core web application project. To do this, right-click on the project, and choose **Add** > **Container Orchestrator Support**.
 
 ::: moniker range="vs-2017"
 
-![Capture d’écran de l’élément de menu Add Container Orchestrator](media/tutorial-kubernetes-tools/k8s-tools-add-container-orchestrator.png)
+![Screenshot of Add Container Orchestrator menu item](media/tutorial-kubernetes-tools/k8s-tools-add-container-orchestrator.png)
 
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 
-![Capture d’écran de l’élément de menu Add Container Orchestrator](media/tutorial-kubernetes-tools/vs-2019/k8s-tools-add-container-orchestrator-2019.png)
+![Screenshot of Add Container Orchestrator menu item](media/tutorial-kubernetes-tools/vs-2019/k8s-tools-add-container-orchestrator-2019.png)
 
 ::: moniker-end
 
-Dans la boîte de dialogue, sélectionnez **Kubernetes/Helm** , puis choisissez **OK**.
+In the dialog box, select **Kubernetes/Helm** and choose **OK**.
 
-![Capture d’écran de la boîte de dialogue Ajouter un conteneur d’Orchestrator](media/tutorial-kubernetes-tools/k8s-tools-add-container-orchestrator-dialog-box.PNG)
+![Screenshot of Add Container Orchestrator dialog box](media/tutorial-kubernetes-tools/k8s-tools-add-container-orchestrator-dialog-box.PNG)
 
-## <a name="what-visual-studio-creates-for-you"></a>Ce que Visual Studio crée pour vous
+## <a name="what-visual-studio-creates-for-you"></a>What Visual Studio creates for you
 
-Après avoir créé une nouvelle **application conteneur pour** le projet Kubernetes ou ajouté la prise en charge d’Orchestrator de conteneur Kubernetes à un projet existant, vous voyez des fichiers supplémentaires dans votre projet qui facilitent le déploiement dans Kubernetes.
+After creating a new **Container Application for Kubernetes** project or adding Kubernetes container orchestrator support to an existing project, you see some additional files in your project that facilitate deploying to Kubernetes.
 
 ::: moniker range="vs-2017"
 
-![Capture d’écran de Explorateur de solutions après l’ajout de la prise en charge de Container Orchestrator](media/tutorial-kubernetes-tools/k8s-tools-solution-explorer.png)
+![Screenshot of Solution Explorer after adding Container Orchestrator support](media/tutorial-kubernetes-tools/k8s-tools-solution-explorer.png)
 
 ::: moniker-end
 ::: moniker range="vs-2019"
 
-![Capture d’écran de Explorateur de solutions après l’ajout de la prise en charge de Container Orchestrator](media/tutorial-kubernetes-tools/vs-2019/k8s-tools-solution-explorer-2019.png)
+![Screenshot of Solution Explorer after adding Container Orchestrator support](media/tutorial-kubernetes-tools/vs-2019/k8s-tools-solution-explorer-2019.png)
 
 ::: moniker-end
 
-Les fichiers ajoutés sont les suivants :
+The added files are:
 
-- un fichier dockerfile, qui vous permet de générer une image de conteneur d’ancrage qui héberge cette application Web. Comme vous le verrez, les outils Visual Studio tirent parti de ce fichier dockerfile lors du débogage et du déploiement sur Kubernetes. Si vous préférez travailler directement avec l’image de l’Ancreur, vous pouvez cliquer avec le bouton droit sur le fichier dockerfile et choisir générer une image de l' **ancreur**.
+- a Dockerfile, which allows you to generate a Docker container image hosting this web application. As you'll see, the Visual Studio tooling leverages this Dockerfile when debugging and deploying to Kubernetes. If you prefer to work directly with the Docker image, you can right-click on the Dockerfile and choose **Build Docker Image**.
 
-   ![Capture d’écran de l’option de l’image de la station de conception](media/tutorial-kubernetes-tools/k8s-tools-build-docker-image.png)
+   ![Screenshot of Build Docker Image option](media/tutorial-kubernetes-tools/k8s-tools-build-docker-image.png)
 
-- un graphique Helm et un dossier *Charts* . Ces fichiers YAML composent le graphique Helm de l’application, que vous pouvez utiliser pour le déployer sur Kubernetes. Pour plus d’informations sur Helm, consultez [https://www.helm.sh](https://www.helm.sh).
+- a Helm chart, and a *charts* folder. These yaml files make up the Helm chart for the application, which you can use to deploy it to Kubernetes. For more information on Helm, see [https://www.helm.sh](https://www.helm.sh).
 
-- *azds.yaml*. Il contient les paramètres de Azure Dev Spaces, qui offre une expérience de débogage rapide et itérative dans le service Azure Kubernetes. Pour plus d’informations, consultez [la documentation Azure dev Spaces](https://docs.microsoft.com/azure/dev-spaces/azure-dev-spaces).
+- *azds.yaml*. This contains settings for Azure Dev Spaces, which provides a rapid, iterative debugging experience in Azure Kubernetes Service. For more information, see [the Azure Dev Spaces documentation](/azure/dev-spaces/azure-dev-spaces).
 
 ::: moniker range="vs-2017"
 
-## <a name="publish-to-azure-kubernetes-service-aks"></a>Publier sur le service Azure Kubernetes (AKS)
+## <a name="publish-to-azure-kubernetes-service-aks"></a>Publish to Azure Kubernetes Service (AKS)
 
-Une fois tous ces fichiers en place, vous pouvez utiliser l’IDE de Visual Studio pour écrire et déboguer votre code d’application, comme vous le feriez toujours. Vous pouvez également utiliser [Azure dev Spaces](https://docs.microsoft.com/azure/dev-spaces/) pour exécuter et déboguer rapidement votre code qui s’exécute en temps réel dans un cluster AKS. Pour plus d’informations, veuillez vous référer au [didacticiel Azure dev Spaces](https://docs.microsoft.com/azure/dev-spaces/get-started-netcore-visualstudio)
+With all these files in place, you can use the Visual Studio IDE to write and debug your application code, just as you always have. You can also use [Azure Dev Spaces](/azure/dev-spaces/) to quickly run and debug your code running live in an AKS cluster. For more information, please reference the [Azure Dev Spaces tutorial](/azure/dev-spaces/get-started-netcore-visualstudio)
 
-Une fois que votre code fonctionne comme vous le souhaitez, vous pouvez le publier directement à partir de Visual Studio vers un cluster AKS.
+Once you have your code running the way you want, you can publish directly from Visual Studio to an AKS cluster.
 
-Pour ce faire, vous devez d’abord vérifier que vous avez installé tout ce qui est décrit dans la section [conditions préalables](#prerequisites) sous l’élément à publier dans AKS et exécuter toutes les étapes de la ligne de commande indiquées dans les liens. Puis, configurez un profil de publication qui publie votre image conteneur sur Azure Container Registry (ACR). Ensuite, AKS peut extraire votre image de conteneur de ACR et la déployer dans le cluster.
+To do this, you first need to double-check that you've installed everything as described in the [Prerequisites](#prerequisites) section under the item for publishing to AKS, and run through all the command line steps given in the links. Then, set up a publish profile that publishes your container image to Azure Container Registry (ACR). Then AKS can pull your container image from ACR and deploy it into the cluster.
 
-1. Dans **Explorateur de solutions**, cliquez avec le bouton droit sur votre *projet* et choisissez **publier**.
+1. In **Solution Explorer**, right-click on your *project* and choose **Publish**.
 
-   ![Capture d’écran de l’élément de menu publier](media/tutorial-kubernetes-tools/k8s-tools-publish-project.png)
+   ![Screenshot of Publish menu item](media/tutorial-kubernetes-tools/k8s-tools-publish-project.png)
 
-2. Dans l’écran **publier** , choisissez **Container Registry** comme cible de publication, puis suivez les invites pour sélectionner votre registre de conteneurs. Si vous ne disposez pas déjà d’un registre de conteneurs, choisissez **créer un nouveau Azure Container Registry** pour en créer un à partir de Visual Studio. Pour plus d’informations, consultez [publier votre conteneur sur Azure Container Registry](hosting-web-apps-in-docker.md).
+2. In the **Publish** screen, choose **Container Registry** as the publish target, and follow the prompts to select your container registry. If you don't already have a container registry, choose **Create New Azure Container Registry** to create one from Visual Studio. For more information, see [Publish your container to Azure Container Registry](hosting-web-apps-in-docker.md).
 
-   ![Capture d’écran de l’écran choisir une cible de publication](media/tutorial-kubernetes-tools/k8s-tools-publish-to-acr.png)
+   ![Screenshot of Pick a publish target screen](media/tutorial-kubernetes-tools/k8s-tools-publish-to-acr.png)
 
-3. Dans Explorateur de solutions, cliquez avec le bouton droit sur votre *solution* , puis cliquez sur **publier sur Azure AKS**.
+3. Back in Solution Explorer, right click on your *solution* and click **Publish to Azure AKS**.
 
-   ![Capture d’écran de l’élément de menu publier sur Azure AKS](media/tutorial-kubernetes-tools/k8s-tools-publish-solution.png)
+   ![Screenshot of Publish to Azure AKS menu item](media/tutorial-kubernetes-tools/k8s-tools-publish-solution.png)
 
-4. Choisissez votre abonnement et votre cluster AKS, ainsi que le profil de publication ACR que vous venez de créer. Cliquez ensuite sur **OK**.
+4. Choose your subscription and your AKS cluster, along with the ACR publish profile that you just created. Cliquez ensuite sur **OK**.
 
-   ![Capture d’écran de l’écran publier sur AKS](media/tutorial-kubernetes-tools/k8s-tools-publish-to-aks.png)
+   ![Screenshot of Publish to AKS screen](media/tutorial-kubernetes-tools/k8s-tools-publish-to-aks.png)
 
-   Vous accédez à l’écran **publier sur Azure AKS** .
+   This takes you to the **Publish to Azure AKS** screen.
 
-5. Cliquez sur le lien **configurer Helm** pour mettre à jour la ligne de commande utilisée pour installer les graphiques Helm sur le serveur.
+5. Choose the **Configure Helm** link to update the command line used to install the Helm charts on the server.
 
-   ![Capture d’écran du lien configurer Helm](media/tutorial-kubernetes-tools/k8s-tools-configure-helm.png)
+   ![Screenshot of Configure Helm link](media/tutorial-kubernetes-tools/k8s-tools-configure-helm.png)
 
-   La mise à jour de la ligne de commande est utile si vous souhaitez spécifier des arguments de ligne de commande personnalisés, tels qu’un contexte de Kubernetes ou un nom de graphique différent.
+   Updating the command line is useful if there are custom command line arguments that you wish to specify, such as a different Kubernetes context or chart name.
 
-   ![Capture d’écran de l’écran de configuration de Helm](media/tutorial-kubernetes-tools/k8s-tools-helm-configure-screen.png)
+   ![Screenshot of Helm configure screen](media/tutorial-kubernetes-tools/k8s-tools-helm-configure-screen.png)
 
-6. Lorsque vous êtes prêt à effectuer le déploiement, cliquez sur le bouton **publier** pour publier votre application sur AKS.
+6. When you are ready to deploy, click the **Publish** button to publish your application to AKS.
 
-   ![Capture d’écran de l’écran publier sur Azure AKS](media/tutorial-kubernetes-tools/k8s-tools-publish-screen.png)
+   ![Screenshot of publish to Azure AKS screen](media/tutorial-kubernetes-tools/k8s-tools-publish-screen.png)
 
 ::: moniker-end
 
-Félicitations ! Vous pouvez maintenant utiliser toute la puissance de Visual Studio pour l’ensemble de votre développement d’applications Kubernetes.
+Félicitations ! You can now use the full power of Visual Studio for all your Kubernetes app development.
 
 ## <a name="next-steps"></a>Étapes suivantes :
 
 Pour en savoir plus sur le développement Kubernetes sur Azure, consultez la [documentation de AKS](/azure/aks).
 
-En savoir plus sur Azure Dev Spaces en lisant la [documentation de Azure dev Spaces](https://docs.microsoft.com/azure/dev-spaces/)
+En savoir plus sur Azure Dev Spaces en lisant la [documentation de Azure dev Spaces](/azure/dev-spaces/)

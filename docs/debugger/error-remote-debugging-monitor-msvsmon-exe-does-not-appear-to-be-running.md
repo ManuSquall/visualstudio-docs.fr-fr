@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a2c35befa92e72e08fe2e058afe10d19ac116e0
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: cc9558ff4d470d30df19ea5982eb6acbcc708eea
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188137"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916255"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a>Erreur : Microsoft Visual Studio Remote Debugging Monitor (MSVSMON.EXE) ne semble pas s’exécuter sur l’ordinateur distant
 Ce message d’erreur indique que Visual Studio n’a pas pu trouver l’instance appropriée de Visual Studio Remote Debugging Monitor sur l’ordinateur distant. Visual Studio Remote Debugging Monitor doit être installé pour que le débogage distant fonctionne. Pour plus d’informations sur le téléchargement et la configuration du débogueur distant, consultez [débogage distant](../debugger/remote-debugging.md).
@@ -30,7 +30,7 @@ Ce message d’erreur indique que Visual Studio n’a pas pu trouver l’instanc
 > Si vous pensez que vous avez reçu ce message en raison d’un bogue produit, veuillez [signaler ce problème à Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md). Si vous avez besoin d’aide supplémentaire, consultez [Talk to Us](../ide/feedback-options.md) pour savoir comment contacter Microsoft.
 
 ## <a name="i-got-this-message-while-i-was-debugging-in-visual-studio-2010-or-earlier"></a>J’ai reçu ce message pendant une session de débogage dans Visual Studio 2010 ou version antérieure
- Si vous utilisez Visual Studio 2010 ou version antérieure, vous pouvez également recevoir cette erreur si le partage de fichiers et d’imprimantes n’est pas activé. Pour en savoir plus sur ce problème, reportez-vous à la version de Visual Studio 2010 de cette documentation : [Erreur : Microsoft Visual Studio Remote Debugging Monitor (MSVSMON.EXE) ne semble pas s’exécuter sur l’ordinateur distant - Visual Studio 2010](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms164726(v=vs.100)).
+ Si vous utilisez Visual Studio 2010 ou version antérieure, vous pouvez également recevoir cette erreur si le partage de fichiers et d’imprimantes n’est pas activé. Pour en savoir plus sur ce problème, reportez-vous à la version de Visual Studio 2010 de cette documentation : [Erreur : Microsoft Visual Studio Remote Debugging Monitor (MSVSMON.EXE) ne semble pas s’exécuter sur l’ordinateur distant - Visual Studio 2010](/previous-versions/visualstudio/visual-studio-2010/ms164726(v=vs.100)).
 
 ## <a name="i-got-this-message-while-i-was-debugging-locally"></a>J’ai reçu ce message pendant une session de débogage locale
  Si ce message s’affiche pendant un débogage local, il est possible que le problème provienne de votre antivirus ou d’un pare-feu tiers. Visual Studio étant une application 32 bits, elle utilise la version 64 bits du débogueur distant pour déboguer les applications 64 bits. Les deux processus communiquent à l’aide du réseau local au sein de l’ordinateur local. Aucun trafic ne quitte l’ordinateur, mais il peut arriver que des logiciels de sécurité tiers bloquent la communication.

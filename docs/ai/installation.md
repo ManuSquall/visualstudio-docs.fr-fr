@@ -9,12 +9,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 54239b49344a5e29e7f837d22840f997c4b9fbe2
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: c1160c68c79dd595e82ecf761c6e441ecc906f62
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75845073"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75915814"
 ---
 # <a name="installation"></a>Installation de
 
@@ -137,7 +137,7 @@ pip3.5 install -U numpy scipy
 > [!NOTE]
 > CNTK ne prend actuellement pas en charge macOS.
 
-Pour installer le package CNTK Python, consultez [Guide pratique pour installer CNTK](https://docs.microsoft.com/cognitive-toolkit/Setup-CNTK-on-your-machine).
+Pour installer le package CNTK Python, consultez [Guide pratique pour installer CNTK](/cognitive-toolkit/Setup-CNTK-on-your-machine).
 
 ### <a name="tensorflow"></a>TensorFlow
 

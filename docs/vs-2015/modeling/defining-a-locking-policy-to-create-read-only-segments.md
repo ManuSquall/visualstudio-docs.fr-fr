@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 0d9887e3c7cf283bff453e458502400a7ade1a41
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 85573309e594fab49db75115a48b5a4e98e44de3
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849564"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918855"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Définition d'une stratégie de verrouillage pour créer des segments en lecture seule
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ L’API d’immuabilité du kit de développement logiciel (SDK) [!INCLUDE[vsprv
 > [!NOTE]
 > Une stratégie de verrouillage peut être contournée à l’aide de la réflexion. Il fournit une limite claire pour les développeurs tiers, mais ne fournit pas une sécurité renforcée.
 
- Des informations supplémentaires et des exemples sont disponibles sur le site Web du [Kit de développement logiciel (SDK) [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visualization and Modeling](https://docs.microsoft.com/samples/browse/?redirectedfrom=MSDN-samples) .
+ Des informations supplémentaires sont disponibles sur le site Web du [Kit de développement logiciel (SDK) [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visualization and Modeling](https://www.microsoft.com/download/details.aspx?id=48148) .
 
 ## <a name="setting-and-getting-locks"></a>Définition et obtention de verrous
  Vous pouvez définir des verrous sur le magasin, sur une partition ou sur un élément individuel. Par exemple, cette instruction empêchera la suppression d’un élément de modèle, et empêchera également la modification de ses propriétés :

@@ -15,23 +15,23 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: a571be6b713cd59ca290906e9398b78c8c021ba8
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0ce4aa6aef9c70d0d628603afa7a256c309f280d
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72661164"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917943"
 ---
 # <a name="ca1822-mark-members-as-static"></a>CA1822 : Marquez les membres comme static
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Pour obtenir la documentation la plus récente sur Visual Studio, consultez [CA1822 : marquer les membres comme statiques](https://docs.microsoft.com/visualstudio/code-quality/ca1822-mark-members-as-static).
+Pour obtenir la documentation la plus récente sur Visual Studio, consultez [CA1822 : marquer les membres comme statiques](/visualstudio/code-quality/ca1822-mark-members-as-static).
 
 |||
 |-|-|
 |TypeName|MarkMembersAsStatic|
 |CheckId|CA1822|
-|Category|Microsoft. performance|
+|Catégorie|Microsoft. performance|
 |Modification avec rupture|Sans rupture : si le membre n’est pas visible à l’extérieur de l’assembly, quelle que soit la modification que vous apportez.<br /><br /> Sans rupture : Si vous changez simplement le membre en membre d’instance avec le mot clé `this`.<br /><br /> Avec rupture : Si vous remplacez le membre d’un membre d’instance par un membre statique et qu’il est visible à l’extérieur de l’assembly.|
 
 ## <a name="cause"></a>Cause

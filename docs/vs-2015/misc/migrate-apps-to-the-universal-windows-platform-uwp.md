@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 5794aa5ab7dc14932c65a9156ea9252e71731155
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 60951091914474f07f19672799fb59c8b2d0aa56
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74299476"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919138"
 ---
 # <a name="migrate-apps-to-the-universal-windows-platform-uwp"></a>Migrer des applications vers la plateforme Windows universelle (UWP)
 Apportez les modifications manuelles nécessaires à vos fichiers de projet existants pour les applications Windows Store 8.1, les applications Windows Phone 8.1 ou les applications Windows universelles créées avec Visual Studio 2015 RC pour pouvoir les utiliser avec Visual Studio 2015 RTM. (Si vous disposez d’une application Windows 8.1 universelle avec un projet d’application Windows et un projet Windows Phone, vous devez suivre les étapes de migration de chaque projet.)
@@ -292,7 +292,7 @@ Apportez les modifications manuelles nécessaires à vos fichiers de projet exis
         </PropertyGroup>
         ```
 
-4. Remplacez toutes les instances de l’élément \<PlatformToolset > par la valeur V140. Exemple :
+4. Remplacez toutes les instances de l’élément \<PlatformToolset > par la valeur V140. Par exemple :
 
     ```xml
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -379,7 +379,7 @@ Apportez les modifications manuelles nécessaires à vos fichiers de projet exis
 
 5. Recherchez la \<composants requis > élément et supprimez cet élément et tous les éléments enfants qu’il contient.
 
-6. Ajoutez l’espace de noms **UAP** aux éléments de > de ressource \<suivants : Scale, DXFeatureLevel. Exemple :
+6. Ajoutez l’espace de noms **UAP** aux éléments de > de ressource \<suivants : Scale, DXFeatureLevel. Par exemple :
 
    ```xml
    <Resources>
@@ -390,7 +390,7 @@ Apportez les modifications manuelles nécessaires à vos fichiers de projet exis
 
    ```
 
-7. Ajoutez l’espace de noms **UAP** aux éléments suivants \<> fonctionnalité : DocumentsLibrary, PicturesLibrary, VideosLibrary, MusicLibrary, EnterpriseAuthentication, SharedUserCertificates, removableStorage, rendez-vous et contacts. Exemple :
+7. Ajoutez l’espace de noms **UAP** aux éléments suivants \<> fonctionnalité : DocumentsLibrary, PicturesLibrary, VideosLibrary, MusicLibrary, EnterpriseAuthentication, SharedUserCertificates, removableStorage, rendez-vous et contacts. Par exemple :
 
    ```xml
    <Capabilities>
@@ -400,7 +400,7 @@ Apportez les modifications manuelles nécessaires à vos fichiers de projet exis
 
    ```
 
-8. Ajoutez l’espace de noms **UAP** à l’élément \<VisualElements > et à l’un de ses éléments enfants. Exemple :
+8. Ajoutez l’espace de noms **UAP** à l’élément \<VisualElements > et à l’un de ses éléments enfants. Par exemple :
 
    ```xml
    <uap:VisualElements
@@ -444,7 +444,7 @@ Apportez les modifications manuelles nécessaires à vos fichiers de projet exis
 
    ```
 
-9. Ajoutez l’espace de noms **UAP** au \<ApplicationContentUriRules > et tous ses éléments enfants. Exemple :
+9. Ajoutez l’espace de noms **UAP** au \<ApplicationContentUriRules > et tous ses éléments enfants. Par exemple :
 
     ```xml
     <uap:ApplicationContentUriRules>
@@ -454,7 +454,7 @@ Apportez les modifications manuelles nécessaires à vos fichiers de projet exis
 
     ```
 
-10. Ajoutez l’espace de noms **UAP** à l’Extension de \<suivante > éléments et tous ses éléments enfants : Windows. accountPictureProvide, Windows. Alarm, Windows. appointmentsProvider Windows. autoPlayContent, Windows. autoPlayDevice, Windows. cachedFileUpdate, Windows. cameraSettings, Windows. fileOpenPicker, Windows. fileTypeAssociation, Windows. fileSavePicke, Windows. lockScreenCall, Windows. printTaskSettings, Windows. Protocol, Windows. Search, Windows. shareTarget. Exemple :
+10. Ajoutez l’espace de noms **UAP** à l’Extension de \<suivante > éléments et tous ses éléments enfants : Windows. accountPictureProvide, Windows. Alarm, Windows. appointmentsProvider Windows. autoPlayContent, Windows. autoPlayDevice, Windows. cachedFileUpdate, Windows. cameraSettings, Windows. fileOpenPicker, Windows. fileTypeAssociation, Windows. fileSavePicke, Windows. lockScreenCall, Windows. printTaskSettings, Windows. Protocol, Windows. Search, Windows. shareTarget. Par exemple :
 
     ```xml
     <Extensions>
@@ -469,7 +469,7 @@ Apportez les modifications manuelles nécessaires à vos fichiers de projet exis
 
     ```
 
-11. Ajoutez l’espace de noms **uap** aux tâches en arrière-plan de type chatMessageNotification. Exemple :
+11. Ajoutez l’espace de noms **uap** aux tâches en arrière-plan de type chatMessageNotification. Par exemple :
 
     ```xml
     <Extension Category="windows.backgroundTasks" EntryPoint="Fabrikam.BackgroundTask" Executable="MyBackground.exe">
@@ -505,7 +505,7 @@ Apportez les modifications manuelles nécessaires à vos fichiers de projet exis
 
      Utilisez les valeurs appropriées de Publisher et MinVersion pour l’infrastructure réelle que vous utilisez. N’oubliez pas que ces noms peuvent changer pour Windows 10.
 
-13. Remplacez les tâches de type gattCharacteristicNotification et rfcommConnection en arrière-plan par une tâche de type Bluetooth. Exemple :
+13. Remplacez les tâches de type gattCharacteristicNotification et rfcommConnection en arrière-plan par une tâche de type Bluetooth. Par exemple :
 
      **ANCIEN**
 
@@ -528,7 +528,7 @@ Apportez les modifications manuelles nécessaires à vos fichiers de projet exis
     </Extension>
     ```
 
-14. Remplacez les fonctionnalités d’appareil Bluetooth bluetooth.rfcomm et bluetooth.genericAttributeProfile par une fonctionnalité Bluetooth générique. Exemple :
+14. Remplacez les fonctionnalités d’appareil Bluetooth bluetooth.rfcomm et bluetooth.genericAttributeProfile par une fonctionnalité Bluetooth générique. Par exemple :
 
      **ANCIEN**
 
@@ -566,7 +566,7 @@ Apportez les modifications manuelles nécessaires à vos fichiers de projet exis
 
        - Élément \<ApplicationView >
 
-         Exemple :
+         Par exemple :
 
        ```xml
        <m2:VisualElements
@@ -691,7 +691,7 @@ Apportez les modifications manuelles nécessaires à vos fichiers de projet exis
 
    ```
 
-8. Recherchez la \<ItemGroup > qui a \<référencer > éléments enfants dans des packages NuGet. Notez les packages NuGet référencés, car vous avez besoin de ces informations pour une prochaine étape. Une différence importante concernant le format de projet Windows 10 entre Visual Studio 2015 RC et Visual Studio 2015 RTM est que le format RTM utilise [NuGet](https://docs.microsoft.com/nuget/) version 3.
+8. Recherchez la \<ItemGroup > qui a \<référencer > éléments enfants dans des packages NuGet. Notez les packages NuGet référencés, car vous avez besoin de ces informations pour une prochaine étape. Une différence importante concernant le format de projet Windows 10 entre Visual Studio 2015 RC et Visual Studio 2015 RTM est que le format RTM utilise [NuGet](/nuget/) version 3.
 
     Supprimez le \<ItemGroup > et tous ses enfants. Par exemple, un projet de plateforme Windows universelle créé à l’aide de Visual Studio RC inclut les packages NuGet suivants qu’il convient de supprimer :
 
@@ -739,7 +739,7 @@ Apportez les modifications manuelles nécessaires à vos fichiers de projet exis
 
     2. Enregistrez les modifications apportées.
 
-14. Utilisez le gestionnaire NuGet pour ajouter les packages que vous avez supprimés à l’étape précédente. Une différence importante concernant le format de projet Windows 10 entre Visual Studio 2015 RC et Visual Studio 2015 RTM est que le format RTM utilise [NuGet](https://docs.microsoft.com/nuget/) version 3.
+14. Utilisez le gestionnaire NuGet pour ajouter les packages que vous avez supprimés à l’étape précédente. Une différence importante concernant le format de projet Windows 10 entre Visual Studio 2015 RC et Visual Studio 2015 RTM est que le format RTM utilise [NuGet](/nuget/) version 3.
 
     Vous pouvez désormais coder, générer et déboguer votre application.
 

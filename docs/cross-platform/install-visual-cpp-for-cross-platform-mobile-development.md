@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: bda6d8e20064ab2197408db6b9a55a86325515e8
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: c3ea8c91c54586cf54b82566a4803b464e01750c
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75846735"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916485"
 ---
 # <a name="install-cross-platform-mobile-development-with-c"></a>Installer le développement mobile multiplateforme avec C++
 
@@ -98,7 +98,7 @@ Si vous décidez de ne pas installer une ou plusieurs dépendances tierces à l�
 
 Vous pouvez réexécuter l’application SDK Manager dans le répertoire Android SDK pour mettre à jour le kit SDK et installer des outils facultatifs, ainsi que des niveaux d’API supplémentaires. L’installation des mises à jour risque d’échouer, sauf si vous utilisez **Exécuter en tant qu’administrateur** pour exécuter l’application du Gestionnaire du SDK. Si vous rencontrez des problèmes lors de la génération d’une application Android, recherchez des mises à jour pour les kits SDK installés dans le Gestionnaire du SDK.
 
-Pour utiliser certains émulateurs Android fournis avec le Android SDK, vous devrez peut-être configurer l’accélération matérielle. Pour plus d’informations, consultez [accélération matérielle pour les performances de l’émulateur (Hyper-V & HAXM)](https://docs.microsoft.com/xamarin/android/get-started/installation/android-emulator/hardware-acceleration?tabs=vswin).
+Pour utiliser certains émulateurs Android fournis avec le Android SDK, vous devrez peut-être configurer l’accélération matérielle. Pour plus d’informations, consultez [accélération matérielle pour les performances de l’émulateur (Hyper-V & HAXM)](/xamarin/android/get-started/installation/android-emulator/hardware-acceleration?tabs=vswin).
 
 Dans la plupart des cas, Visual Studio peut détecter les configurations pour les logiciels tiers que vous avez installés et gère les chemins d’installation dans des variables d’environnement internes. Vous pouvez remplacer les chemins par défaut de ces outils de développement multiplateformes dans l’IDE de Visual Studio.
 

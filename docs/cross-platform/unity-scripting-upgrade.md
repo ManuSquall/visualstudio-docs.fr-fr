@@ -8,12 +8,12 @@ ms.assetid: E2C9420F-A5D5-4472-9020-2B63FB27A133
 ms.technology: vs-unity-tools
 ms.workload:
 - unity
-ms.openlocfilehash: 01363ab1588507f31dc74800c85b159039c9bab6
-ms.sourcegitcommit: 9c7d8693108ecd2042a70c04cebe3c44af657baf
+ms.openlocfilehash: 01f604de756ca86e40426a97776f1a1d43b024f1
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74239431"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916852"
 ---
 # <a name="using-net-4x-in-unity"></a>Utilisation de .NET 4.x dans Unity
 
@@ -38,7 +38,7 @@ Pour activer le runtime de script .NET 4.x, effectuez les étapes suivantes :
 
 ## <a name="choosing-between-net-4x-and-net-standard-20-profiles"></a>Choix entre les profils .NET 4.x et .NET Standard 2.0
 
-Une fois que vous êtes passé au runtime de script équivalent à .NET 4.x, vous pouvez spécifier le **niveau de compatibilité d’API** dans le menu déroulant de PlayerSettings (**Edit (Edition) > Project Settings (Paramètres du projet) > Player (Lecteur)** ). Il existe deux options :
+Une fois que vous êtes passé au runtime de script équivalent à .NET 4.x, vous pouvez spécifier le **niveau de compatibilité d’API** dans le menu déroulant de PlayerSettings (**Edit (Edition) > Project Settings (Paramètres du projet) > Player (Lecteur)** ). Deux options s’offrent à vous :
 
 * **.NET Standard 2.0**. Ce profil correspond au [profil .NET Standard 2.0](https://github.com/dotnet/standard/blob/master/docs/versions/netstandard2.0.md) publié par .NET Foundation. Unity recommande .NET Standard 2.0 pour les nouveaux projets. Il est plus petit que .NET 4.x, ce qui est avantageux pour les plateformes limitées en taille. De plus, Unity s’est engagé à prendre en charge ce profil sur toutes les plateformes prises en charge par Unity.
 
@@ -146,7 +146,7 @@ public int Health { get; set; } = 100;
 
 ### <a name="string-interpolation"></a>Interpolation de chaîne
 
-Avec l’ancien runtime .NET 3.5, la concaténation de chaînes nécessitait une syntaxe compliquée. Désormais, avec le runtime .NET 4.x et grâce à [, la fonctionnalité d’`$`interpolation de chaînes](https://docs.microsoft.com/dotnet/csharp/language-reference/tokens/interpolated), vous pouvez insérer des expressions dans des chaînes à l’aide d’une syntaxe plus directe et plus lisible :
+Avec l’ancien runtime .NET 3.5, la concaténation de chaînes nécessitait une syntaxe compliquée. Désormais, avec le runtime .NET 4.x et grâce à [, la fonctionnalité d’`$`interpolation de chaînes](/dotnet/csharp/language-reference/tokens/interpolated), vous pouvez insérer des expressions dans des chaînes à l’aide d’une syntaxe plus directe et plus lisible :
 
 ```csharp
 // .NET 3.5
@@ -159,7 +159,7 @@ Debug.Log($"Player health: {Health}");
 
 ### <a name="expression-bodied-members"></a>Membres expression-bodied
 
-Avec la nouvelle syntaxe C# disponible dans le runtime .NET 4.x, les [expressions lambda](https://docs.microsoft.com/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions) peuvent remplacer le corps des fonctions pour les rendre plus succinctes :
+Avec la nouvelle syntaxe C# disponible dans le runtime .NET 4.x, les [expressions lambda](/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions) peuvent remplacer le corps des fonctions pour les rendre plus succinctes :
 
 ```csharp
 // .NET 3.5
@@ -181,9 +181,9 @@ public string PlayerHealthUiText => $"Player health: {Health}";
 
 ### <a name="task-based-asynchronous-pattern-tap"></a>Modèle asynchrone basé sur les tâches (TAP, Task-based Asynchronous Pattern)
 
-La [programmation asynchrone](https://docs.microsoft.com/dotnet/csharp/async) permet d’effectuer des opérations longues sans entraîner d’absence de réponse de la part de votre application. Cette fonctionnalité permet également à votre code d’attendre la fin des opérations longues avant de poursuivre l’exécution de tout autre code dépendant des résultats de ces opérations. Par exemple, vous pouvez attendre la fin du chargement d’un fichier ou d’une opération réseau.
+La [programmation asynchrone](/dotnet/csharp/async) permet d’effectuer des opérations longues sans entraîner d’absence de réponse de la part de votre application. Cette fonctionnalité permet également à votre code d’attendre la fin des opérations longues avant de poursuivre l’exécution de tout autre code dépendant des résultats de ces opérations. Par exemple, vous pouvez attendre la fin du chargement d’un fichier ou d’une opération réseau.
 
-Dans Unity, vous effectuez généralement la programmation asynchrone à l’aide de [coroutines](https://docs.unity3d.com/Manual/Coroutines.html). Toutefois, depuis C# 5, la méthode de programmation asynchrone préférée pour le développement .NET est le [modèle TAP (modèle asynchrone basé sur les tâches)](https://docs.microsoft.com/dotnet/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap) à l’aide des mots clés `async` et `await` avec [System.Threading.Task](https://docs.microsoft.com/dotnet/api/system.threading.tasks.task). En résumé, dans une fonction `async`, vous pouvez appliquer `await` à l’exécution d’une tâche sans bloquer la mise à jour du reste de votre application :
+Dans Unity, vous effectuez généralement la programmation asynchrone à l’aide de [coroutines](https://docs.unity3d.com/Manual/Coroutines.html). Toutefois, depuis C# 5, la méthode de programmation asynchrone préférée pour le développement .NET est le [modèle TAP (modèle asynchrone basé sur les tâches)](/dotnet/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap) à l’aide des mots clés `async` et `await` avec [System.Threading.Task](/dotnet/api/system.threading.tasks.task). En résumé, dans une fonction `async`, vous pouvez appliquer `await` à l’exécution d’une tâche sans bloquer la mise à jour du reste de votre application :
 
 ```csharp
 // Unity coroutine
@@ -229,7 +229,7 @@ TAP est un sujet complexe, avec des nuances spécifiques à Unity dont les déve
 
 Ces conseils peuvent vous aider à bien démarrer avec TAP dans Unity :
 
-* Les fonctions asynchrones destinées à être attendues doivent avoir le type de retour [`Task`](https://docs.microsoft.com/dotnet/api/system.threading.tasks.task) ou [`Task<TResult>`](https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1).
+* Les fonctions asynchrones destinées à être attendues doivent avoir le type de retour [`Task`](/dotnet/api/system.threading.tasks.task) ou [`Task<TResult>`](/dotnet/api/system.threading.tasks.task-1).
 * Les fonctions asynchrones qui retournent une tâche doivent avoir le suffixe **« Async »** accolé à leurs noms. Le suffixe « Async » permet d’indiquer qu’une fonction doit toujours être attendue.
 * Utilisez uniquement le type de retour `async void` pour les fonctions qui déclenchent des fonctions asynchrones à partir du code synchrone classique. De telles fonctions ne peuvent pas être attendues et ne doivent pas comporter le suffixe « Async » dans leurs noms.
 * Unity utilise UnitySynchronizationContext pour garantir l’exécution des fonctions asynchrones sur le thread principal par défaut. L’API Unity n’est pas accessible en dehors du thread principal.
@@ -274,7 +274,7 @@ private void RecordHighScore(string playerName)
 
 ### <a name="caller-info-attributes"></a>Attributs d’informations de l’appelant
 
-Les [attributs d’informations de l’appelant](https://docs.microsoft.com/dotnet/csharp/programming-guide/concepts/caller-information) fournissent des informations sur l’appelant d’une méthode. Vous devez fournir une valeur par défaut pour chaque paramètre à utiliser avec un attribut d’informations de l’appelant :
+Les [attributs d’informations de l’appelant](/dotnet/csharp/programming-guide/concepts/caller-information) fournissent des informations sur l’appelant d’une méthode. Vous devez fournir une valeur par défaut pour chaque paramètre à utiliser avec un attribut d’informations de l’appelant :
 
 ```csharp
 private void Start ()
@@ -300,7 +300,7 @@ public void ShowCallerInfo(string message,
 
 ### <a name="using-static"></a>Using static
 
-[Using static](https://docs.microsoft.com/dotnet/csharp/language-reference/keywords/using-static) vous permet d’utiliser des fonctions statiques sans taper leur nom de classe. Avec using static, vous pouvez gagner de la place et du temps si vous devez utiliser plusieurs fonctions statiques provenant de la même classe :
+[Using static](/dotnet/csharp/language-reference/keywords/using-static) vous permet d’utiliser des fonctions statiques sans taper leur nom de classe. Avec using static, vous pouvez gagner de la place et du temps si vous devez utiliser plusieurs fonctions statiques provenant de la même classe :
 
 ```csharp
 // .NET 3.5
@@ -344,8 +344,8 @@ Il s’agit d’exemples d’utilisation de plusieurs fonctionnalités .NET 4.x
 ## <a name="additional-resources"></a>Ressources supplémentaires
 
 * [Blog Unity - Améliorations du runtime de script dans Unity 2018.2](https://blogs.unity3d.com/2018/07/11/scripting-runtime-improvements-in-unity-2018-2/)
-* [Historique de C#](https://docs.microsoft.com/dotnet/csharp/whats-new/csharp-version-history)
-* [Nouveautés de C# 6](https://docs.microsoft.com/dotnet/csharp/whats-new/csharp-6)
+* [Historique de C#](/dotnet/csharp/whats-new/csharp-version-history)
+* [Nouveautés de C# 6](/dotnet/csharp/whats-new/csharp-6)
 * [Programmation asynchrone dans Unity, utilisation de coroutines et de TAP](https://blogs.msdn.microsoft.com/appconsult/2017/09/01/unity-coroutine-tap)
 * [Utilisation de Async-Await à la place de coroutines dans Unity 2017](http://www.stevevermeulen.com/index.php/2017/09/using-async-await-in-unity3d-2017/)
 * [Forum Unity - Préversions de fonctionnalités de script expérimentales](https://forum.unity.com/forums/experimental-scripting-previews.107/)

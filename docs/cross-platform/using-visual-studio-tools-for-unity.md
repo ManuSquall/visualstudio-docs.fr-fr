@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 39be02226a46aaa95742caa760e94fe6be4efdf4
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 5a0595fdf7331c8b2825c6092b5b29a19974887b
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253041"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916579"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>Utiliser Visual Studio Tools pour Unity
 
@@ -45,7 +45,7 @@ La saisie semi-automatique de code IntelliSense facilite l’implémentation de 
 
 3. Une fois les lettres « **ontri** » tapées, une liste de suggestions IntelliSense apparaît.
 
-   ![Using IntelliSense](media/vstu_intellisense1.png)
+   ![Utilisation de la fonctionnalité IntelliSense](media/vstu_intellisense1.png)
 
 4. Vous pouvez changer la sélection dans la liste de trois façons :
 
@@ -83,17 +83,17 @@ Pour créer des définitions de méthode MonoBehavior vides avec l’Assistant M
 
 6. Cliquez sur le bouton **OK** pour quitter l’Assistant et insérer les méthodes dans votre code.
 
-   ![La boîte de dialogue de l’Assistant Monobehavior.](../cross-platform/media/vstu_monobehavior_wizard_full.png "vstu_monobehavior_wizard_full")
+   ![Boîte de dialogue de l’Assistant monobehavior.](../cross-platform/media/vstu_monobehavior_wizard_full.png "vstu_monobehavior_wizard_full")
 
 ## <a name="unity-project-explorer"></a>Explorateur de projets de Unity
 
-![La fenêtre Explorateur de projet Unity.](../cross-platform/media/vstu_unity_project_explorer.png "vstu_unity_project_explorer")
+![Fenêtre de l’Explorateur de projets Unity.](../cross-platform/media/vstu_unity_project_explorer.png "vstu_unity_project_explorer")
 
 L’Explorateur de projets Unity affiche tous les fichiers projet et répertoires Unity de la même manière que l’éditeur Unity. Ce n’est pas la même chose que de parcourir les scripts Unity avec l’Explorateur de solutions normal de Visual Studio, qui les organise en projets et une solution générée par Visual Studio.
 
-- Dans le menu principal de Visual Studio, choisissez **Affichage > Explorateur de projets Unity**. Raccourci clavier : **Alt**+**Maj**+**E**
+- Dans le menu principal de Visual Studio, choisissez **Affichage > Explorateur de projets Unity**. Raccourci clavier : **Alt**+**Maj**+**E**
 
-   ![Afficher la fenêtre Explorateur de projet Unity.](../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_unity_project_explorer")
+   ![Affichez la fenêtre Explorateur de projets Unity.](../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_view_unity_project_explorer")
 
 ## <a name="unity-debugging"></a>Débogage Unity
 
@@ -151,11 +151,11 @@ Il est possible de déboguer les builds de développement de différents lecteur
 
 - Dans le menu principal de Visual Studio, choisissez **Déboguer > Attacher le débogueur Unity**.
 
-   ![Attacher le débogueur Unity.](../cross-platform/media/vstu_debugging_attach_unity_debugger.png "vstu_debugging_attach_unity_debugger")
+   ![Attachez le débogueur d’Unity.](../cross-platform/media/vstu_debugging_attach_unity_debugger.png "vstu_debugging_attach_unity_debugger")
 
    La boîte de dialogue **Sélectionner l’instance Unity** affiche des informations sur chaque instance Unity à laquelle vous pouvez vous connecter.
 
-   ![Choisissez une instance de Unity à laquelle vous connecter.](../cross-platform/media/vstu_attach-debugger.png "vstu_connection_to_unity")
+   ![Choisissez une instance Unity à laquelle se connecter.](../cross-platform/media/vstu_attach-debugger.png "vstu_connection_to_unity")
 
    **Project**
 
@@ -163,7 +163,7 @@ Il est possible de déboguer les builds de développement de différents lecteur
 
    **Machine** Nom de l’ordinateur ou de l’appareil sur lequel cette instance Unity est en cours d’exécution.
 
-   **Type** **Éditeur** si cette instance Unity est en cours d’exécution dans l’éditeur Unity ; **Lecteur** si cette instance Unity est un lecteur autonome.
+   **Éditeur** de type si cette instance Unity s’exécute dans le cadre de l’éditeur Unity ; **Lecteur** si cette instance Unity est un lecteur autonome.
 
    **Port** Numéro de port du socket UDP sur lequel communique cette instance Unity.
 
@@ -181,7 +181,7 @@ Notez que le scénario décrit ici suppose que vous disposiez du code source, au
 
 #### <a name="to-debug-a-managed-dll-project-used-in-your-unity-project"></a>Pour déboguer un projet DLL managée utilisé dans votre projet Unity
 
-1. Ajoutez votre projet DLL existant à la solution Visual Studio générée par Visual Studio Tools pour Unity. Moins couramment, vous pouvez aussi démarrer un nouveau projet de DLL managée pour qu'il contienne les composants de code de votre projet Unity ; si tel est le cas, vous pouvez à la place ajouter un nouveau projet DLL managée à la solution Visual Studio. Pour plus d’informations sur l’ajout d’un projet nouveau ou existant à une solution, consultez [Guide pratique pour ajouter des projets à une solution](https://msdn.microsoft.com/library/ff460187.aspx).
+1. Ajoutez votre projet DLL existant à la solution Visual Studio générée par Visual Studio Tools pour Unity. Moins couramment, vous pouvez aussi démarrer un nouveau projet de DLL managée pour qu'il contienne les composants de code de votre projet Unity ; si tel est le cas, vous pouvez à la place ajouter un nouveau projet DLL managée à la solution Visual Studio. Pour plus d’informations sur l’ajout d’un projet nouveau ou existant à une solution, consultez [Comment : ajouter des projets à une solution](https://msdn.microsoft.com/library/ff460187.aspx).
 
    ![Ajoutez votre projet DLL existant à la solution.](../cross-platform/media/vstu_debugging_dll_add_existing.png "vstu_debugging_dll_add_existing")
 
@@ -192,7 +192,7 @@ Notez que le scénario décrit ici suppose que vous disposiez du code source, au
 > [!NOTE]
 > Ce qui suit n’est requis que si vous utilisez le runtime hérité d’Unity. Si vous utilisez le nouveau runtime Unity, vous n’avez plus besoin d’utiliser ces profils 3.5 dédiés. Utilisez un profil 4.x .NET compatible avec votre version d’Unity.
 
-   ![Définissez Unity comme framework cible de la DLL.](../cross-platform/media/vstu_debugging_dll_target_framework.png "vstu_debugging_dll_target_framework")
+   ![Définissez Framework cible de la DLL sur Framework Unity.](../cross-platform/media/vstu_debugging_dll_target_framework.png "vstu_debugging_dll_target_framework")
 
 3. Copiez la DLL dans le dossier Composants de votre projet Unity. Dans Unity, les composants désignent les fichiers regroupés et déployés au même titre que votre application Unity afin de pouvoir être chargés au moment de l'exécution. Étant donné que les dll sont liées au moment de l’exécution, les dll doivent être déployées en tant que ressources. Pour que la DLL soit déployée comme composant, l'éditeur Unity requiert que les DLL soient placées dans le dossier Composants de votre projet Unity. Il existe deux façons de procéder :
 
@@ -202,15 +202,15 @@ Notez que le scénario décrit ici suppose que vous disposiez du code source, au
 
    Les fichiers PDB sont nécessaires pour le débogage, car ils contiennent les symboles de débogage de la DLL et mappent le code de la DLL sur la forme de son code source. Si vous ciblez le runtime hérité, Visual Studio Tools pour Unity utilise les informations à partir de la DLL et des fichiers PDB pour créer un fichier DLL.MDB, qui est le format des symboles de débogage utilisé par le moteur de script Unity hérité. Si vous ciblez le nouveau runtime, et Portable-PDB, Visual Studio Tools pour Unity n’essaie pas convertir les symboles, car le nouveau runtime Unity peut consommer les fichiers Portable-PDB en mode natif.
 
-   Des informations supplémentaires sur la création de fichiers PDB sont disponibles [ici](https://docs.microsoft.com/visualstudio/debugger/how-to-set-debug-and-release-configurations). Si vous ciblez le nouveau runtime, assurez-vous que l’option « Informations de débogage » est définie sur « Portable », afin de générer correctement un fichier Portable-PDB. Si vous ciblez le runtime hérité, vous devez utiliser l’option « Complet ».
+   Des informations supplémentaires sur la création de fichiers PDB sont disponibles [ici](/visualstudio/debugger/how-to-set-debug-and-release-configurations). Si vous ciblez le nouveau runtime, assurez-vous que l’option « Informations de débogage » est définie sur « Portable », afin de générer correctement un fichier Portable-PDB. Si vous ciblez le runtime hérité, vous devez utiliser l’option « Complet ».
 
 4. Déboguez votre code. Vous pouvez maintenant déboguer le code source de votre DLL ainsi que le code source de votre projet Unity, et utiliser toutes les fonctionnalités de débogage auxquelles vous êtes habitué, telles que les points d'arrêt et le parcours du code pas à pas.
 
-## <a name="keyboard-shortcuts"></a>Raccourcis clavier
+## <a name="keyboard-shortcuts"></a>raccourcis clavier
 
 Vous pouvez accéder rapidement aux fonctionnalités des outils Unity pour Visual Studio à l'aide de leurs raccourcis clavier. Voici un résumé des raccourcis disponibles.
 
-|Commande|Raccourci|Nom de la commande du raccourci|
+|Command|Raccourci|Nom de la commande du raccourci|
 |-------------|--------------|---------------------------|
 |Ouvrir l'Assistant MonoBehavior|**Ctrl**+**Maj**+**M**|**EditorContextMenus.CodeWindow.ImplementMonoBehaviours**|
 |Ouvrir l'Explorateur de projets Unity|**Alt**+**Maj**+**E**|**View.UnityProjectExplorer**|

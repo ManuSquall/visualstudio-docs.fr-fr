@@ -8,12 +8,12 @@ ms.assetid: 8202717a-e990-45cf-b092-438651ccb38a
 caps.latest.revision: 66
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 27f6ee12d7404c77e4994a4e89cf23c9b3cdef0f
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 1efc8ea7f40c3098e681cc80ac90789b629630a9
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297899"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918295"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Développement mobile multiplateforme dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Vous pouvez créer des applications pour des appareils Android, iOS et Windows �
 
  Si vous souhaitez créer un jeu ou une application graphique immersive, installez les Visual Studio Tools pour Unity et profitez de toutes les puissantes fonctionnalités de productivité de Visual Studio avec Unity, un moteur de jeu/moteur graphique multiplateforme très répandu, qui est aussi un environnement de développement pour les applications qui s’exécutent sur iOS, Android, Windows et d’autres plateformes.
 
- **Dans cet article :**
+ **Dans cet article :**
 
 - [Générer une application pour Android, iOS et Windows (.NET Framework)](#NET)
 
@@ -39,7 +39,7 @@ Vous pouvez créer des applications pour des appareils Android, iOS et Windows �
 - [Créer un jeu multiplateforme pour Android, iOS et Windows à l’aide de Visual Studio Tools pour Unity](#Unity)
 
 ## <a name="NET"></a> Générer une application pour Android, iOS et Windows (.NET Framework)
- ![Appareil](../cross-platform/media/homedevices.png "HomeDevices")
+ ![Appareils](../cross-platform/media/homedevices.png "HomeDevices")
 
  Avec Xamarin, vous pouvez cibler Windows, iOS et Android dans la même solution, partager du code et même l’interface utilisateur.
 
@@ -76,7 +76,7 @@ Vous pouvez créer des applications pour des appareils Android, iOS et Windows �
 
 |**En savoir plus**|
 |--------------------|
-|Décidez si vous voulez partager votre code à l'aide de projets partagés, de projets de bibliothèque de classes portables ou les deux.<br /><br /> [Partage de code entre plateformes](https://devblogs.microsoft.com/dotnet/sharing-code-across-platforms/) (blog de .NET Framework)<br /><br /> [Sharing Code Options](https://docs.microsoft.com/xamarin/cross-platform/app-fundamentals/code-sharing) (Xamarin)<br /><br /> [Options de partage de code avec .NET Framework](https://msdn.microsoft.com/library/dn720832.aspx) (MSDN Library)|
+|Décidez si vous voulez partager votre code à l'aide de projets partagés, de projets de bibliothèque de classes portables ou les deux.<br /><br /> [Partage de code entre plateformes](https://devblogs.microsoft.com/dotnet/sharing-code-across-platforms/) (blog de .NET Framework)<br /><br /> [Sharing Code Options](/xamarin/cross-platform/app-fundamentals/code-sharing) (Xamarin)<br /><br /> [Options de partage de code avec .NET Framework](https://msdn.microsoft.com/library/dn720832.aspx) (MSDN Library)|
 
 ### <a name="WindowsHTML"></a> Cibler les appareils Windows 10
  ![Appareils Windows](../cross-platform/media/windowsdevices.png "Appareils Windows")
@@ -95,7 +95,7 @@ Vous pouvez créer des applications pour des appareils Android, iOS et Windows �
 |[Migrer des applications vers la plateforme Windows universelle](../misc/migrate-apps-to-the-universal-windows-platform-uwp.md)|
 
 ## <a name="HTML"></a> Générer une application pour Android, iOS et Windows (HTML/JavaScript)
- ![Appareil](../cross-platform/media/homedevices.png "HomeDevices")
+ ![Appareils](../cross-platform/media/homedevices.png "HomeDevices")
 
  Si vous êtes un développeur web et si vous connaissez bien les langages HTML et JavaScript, vous pouvez cibler Windows, Android et iOS en utilisant Visual Studio Tools pour Apache Cordova. Ces applications peuvent cibler les trois plateformes et vous pouvez les créer en utilisant les compétences et les processus qui vous sont les plus familiers.
 
@@ -111,12 +111,12 @@ Vous pouvez créer des applications pour des appareils Android, iOS et Windows �
 
  Quand vous êtes prêt à exécuter votre application et votre code pas à pas, choisissez un émulateur, par exemple l’émulateur Apache Ripple ou l’émulateur Visual Studio (Android ou Windows Phone), un navigateur ou un appareil que vous avez connecté directement à votre ordinateur. Ensuite, démarrez votre application. Si vous développez votre application sur un ordinateur Windows, vous pouvez même l'exécuter sur cet ordinateur. Toutes ces options sont intégrées à Visual Studio via Visual Studio Tools pour Apache Cordova.
 
- Les modèles de projet pour créer des applications Windows universelles sont toujours disponibles dans Visual Studio donc n'hésitez pas à les utiliser si vous envisagez de cibler uniquement des appareils Windows. Si vous décidez plus tard de cibler Android et iOS, vous pouvez toujours porter votre code vers un projet Cordova. Il existe des versions open source des API WinJS. Vous pouvez donc réutiliser tout code utilisant ces API. Ceci dit, si vous envisagez de cibler d'autres plateformes à l'avenir, nous vous recommandons de commencer avec Visual Studio Tools pour Apache Cordova.
+ Les modèles de projet pour créer des applications Windows universelles sont toujours disponibles dans Visual Studio donc n'hésitez pas à les utiliser si vous envisagez de cibler uniquement des périphériques Windows. Si vous décidez plus tard de cibler Android et iOS, vous pouvez toujours porter votre code vers un projet Cordova. Il existe des versions open source des API WinJS. Vous pouvez donc réutiliser tout code utilisant ces API. Ceci dit, si vous envisagez de cibler d'autres plateformes à l'avenir, nous vous recommandons de commencer avec Visual Studio Tools pour Apache Cordova.
 
 |**En savoir plus**|
 |--------------------|
 |[Installer Visual Studio](https://visualstudio.microsoft.com/vs/community/) (VisualStudio.com)|
-|[Prise en main de Visual Studio Tools pour Apache Cordova](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) (taco.visualstudio.com)|
+|[Prise en main de Visual Studio Tools pour Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) (taco.visualstudio.com)|
 |[En savoir plus sur l’émulateur Visual Studio pour Android](https://visualstudio.microsoft.com/vs/msft-android-emulator/) (VisualStudio.com)|
 
 ## <a name="CPP"></a> Générer une application pour Android et Windows (C++)

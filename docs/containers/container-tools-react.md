@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 10/16/2019
 ms.technology: vs-azure
 ms.topic: quickstart
-ms.openlocfilehash: 8083d2d6446c872791501f76cb0167a92a9ef660
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.openlocfilehash: af859c1c06820aa477869f6968e9c652bd525de6
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516445"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75916746"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>Démarrage rapide : utiliser l’amarrage avec une application à page unique REACT dans Visual Studio
 
@@ -47,9 +47,9 @@ Pour l’installation de l’ordinateur d’amarrage, commencez par examiner les
 
    ![Capture d’écran du nouveau projet React.js](media/container-tools-react/vs2017/new-react-project.png)
 
-1. Cliquez avec le bouton de droite sur le nœud du projet, puis choisissez **Ajouter** > **Support Docker** pour ajouter un fichier Dockerfile à votre projet.
+1. Cliquez avec le bouton droit sur le nœud du projet, puis choisissez **ajouter** > **prise en charge** de l’ancrage pour ajouter un fichier dockerfile à votre projet.
 
-   ![Ajouter la prise en charge de l’ancrage](media/container-tools-react/vs2017/add-docker-support.png)
+   ![Ajouter la prise en charge Docker](media/container-tools-react/vs2017/add-docker-support.png)
 
 1. Sélectionnez le type de conteneur, puis cliquez sur **OK**.
 ::: moniker-end
@@ -59,9 +59,9 @@ Pour l’installation de l’ordinateur d’amarrage, commencez par examiner les
 
    ![Capture d’écran du nouveau projet React.js](media/container-tools-react/vs2019/new-react-project.png)
 
-1. Cliquez avec le bouton de droite sur le nœud du projet, puis choisissez **Ajouter** > **Support Docker** pour ajouter un fichier Dockerfile à votre projet.
+1. Cliquez avec le bouton droit sur le nœud du projet, puis choisissez **ajouter** > **prise en charge** de l’ancrage pour ajouter un fichier dockerfile à votre projet.
 
-   ![Ajouter la prise en charge de l’ancrage](media/container-tools-react/vs2017/add-docker-support.png)
+   ![Ajouter la prise en charge Docker](media/container-tools-react/vs2017/add-docker-support.png)
 
 1. Sélectionnez le type de conteneur.
 ::: moniker-end
@@ -175,7 +175,7 @@ Mettez à jour le fichier dockerfile en ajoutant les lignes suivantes. Cela va c
 
 1. Mettez à jour le fichier. dockerignore en supprimant le `**/bin`.
 
-## <a name="debug"></a>Débogage
+## <a name="debug"></a>Déboguer
 
 Sélectionnez **Docker** dans la liste déroulante de débogage dans la barre d’outils et démarrez le débogage de l’application. Vous pouvez être amené à voir s’afficher un message vous invitant à approuver un certificat. Choisissez d’approuver le certificat pour continuer.  La première fois que vous générez, l’arrimeur télécharge les images de base, ce qui peut prendre un peu plus de temps.
 
@@ -227,7 +227,7 @@ Une fois le cycle de développement et de débogage de l’application effectué
     | **Préfixe DNS** | Nom globalement unique | Nom qui identifie uniquement votre registre de conteneurs. |
     | **Abonnement** | Choisissez votre abonnement | Abonnement Azure à utiliser. |
     | **[Groupe de ressources](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  Nom du groupe de ressources où créer votre registre de conteneurs. Choisissez **Nouveau** pour créer un groupe de ressources.|
-    | **[SKU](https://docs.microsoft.com/azure/container-registry/container-registry-skus)** | Standard | Niveau de service du registre de conteneurs  |
+    | **[SKU](/azure/container-registry/container-registry-skus)** | Standard | Niveau de service du registre de conteneurs  |
     | **Emplacement du registre** | Un emplacement proche de vous | Choisissez un emplacement dans une [région](https://azure.microsoft.com/regions/) près de chez vous ou près d’autres services que votre registre de conteneurs va utiliser. |
 
     ![Boîte de dialogue de création d’un registre de conteneurs Azure dans Visual Studio][0]
@@ -236,7 +236,7 @@ Une fois le cycle de développement et de débogage de l’application effectué
 
    ![Capture d’écran affichant la réussite de la publication](media/container-tools/publish-succeeded.png)
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 Vous pouvez désormais extraire le conteneur à partir du registre sur tout hôte en mesure d’exécuter des images Docker, par exemple [Azure Container Instances](/azure/container-instances/container-instances-tutorial-deploy-app).
 

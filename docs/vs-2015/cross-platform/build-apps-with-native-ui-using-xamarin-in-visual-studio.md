@@ -8,12 +8,12 @@ ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
 caps.latest.revision: 33
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 7a0284ab6b8d2e89e1c0129c2bc98fb486918f90
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 204d3ee68aace07ed19e5913309a122d6d775a0e
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74297914"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918346"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Générer des applications Xamarin avec une interface utilisateur native dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,13 +40,13 @@ Une fois que vous avez effectué les étapes dans [Configurer et installer](../c
 > Si vous êtes confronté à des difficultés ou des erreurs, publiez vos questions sur [forums.xamarin.com](https://forums.xamarin.com/). Vous pouvez résoudre de nombreuses erreurs en effectuant une mise à jour vers les derniers kits SDK nécessaires à Xamarin, comme indiqué dans les [notes de publication Xamarin](https://developer.xamarin.com/) de chaque plateforme.
 >
 > [!NOTE]
-> La documentation du développeur Xamarin comporte également plusieurs procédures pas à pas, avec les sections de démarrage rapide (Quickstart) et d’exploration (Deep Dive) présentées ci-dessous : Dans chacune de ces pages, vérifiez que « Visual Studio » est sélectionné en haut à droite de la page pour afficher les procédures pas à pas s’appliquant à Visual Studio.
+> La documentation du développeur Xamarin comporte également plusieurs procédures pas à pas, avec les sections de démarrage rapide (Quickstart) et d’approfondissement (Deep Dive) présentées ci-dessous : Dans chacune de ces pages, vérifiez que « Visual Studio » est sélectionné en haut à droite de la page pour afficher les procédures pas à pas s’appliquant à Visual Studio.
 >
 > - Applications Xamarin avec une interface utilisateur native :
 >
 >   - [Hello, Android](https://developer.xamarin.com/guides/android/getting_started/hello,android/) (application simple avec un seul écran)
 >   - [Hello, Android Multiscreen](https://developer.xamarin.com/guides/android/getting_started/hello,android_multiscreen/) (application avec une navigation entre des écrans)
->   - [Android Fragments Walkthrough](https://docs.microsoft.com/xamarin/android/platform/fragments/implementing-with-fragments/) (utilisé entre autres choses pour des écrans maître/détails)
+>   - [Android Fragments Walkthrough](/xamarin/android/platform/fragments/implementing-with-fragments/) (utilisé entre autres choses pour des écrans maître/détails)
 >   - [Hello, iOS](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS/)
 >   - [Hello, iOS Multiscreen](https://developer.xamarin.com/guides/ios/getting_started/hello,_iOS_multiscreen/)
 >   - Applications Xamarin avec Xamarin.Forms (interface utilisateur partagée)
@@ -85,7 +85,7 @@ Une fois que vous avez effectué les étapes dans [Configurer et installer](../c
 
    - Vérifiez que la valeur définie pour le champ **Version** est **Dernière stable** .
 
-   - Cliquez sur **Installer**.
+   - Cliquez sur **Suivant**.
 
    - ![Recherche et installation du package NuGet Newtonsoft. JSON](../cross-platform/media/crossplat-xamarin-formsguide-5.png "CrossPlat Xamarin FormsGuide 5")
 
@@ -230,7 +230,7 @@ Une fois que vous avez effectué les étapes dans [Configurer et installer](../c
 1. Dans l’**Explorateur de solutions**, développez le dossier **WeatherApp.Droid**>**Ressources**>**disposition**, puis ouvrez **Main.axml**. Le fichier s’ouvre dans le concepteur visuel. (Si une erreur liée à Java s’affiche, consultez ce [billet de blog](https://forums.xamarin.com/discussion/32365/connection-to-the-layout-renderer-failed-in-xs-5-7-and-xamarinvs-3-9).)
 
     > [!TIP]
-    > Le projet contient de nombreux autres fichiers. Ils ne sont pas abordés dans cette rubrique, mais si vous souhaitez étudier plus en détail la structure d’un projet Android, consultez [Part 2 Deep Dive](https://docs.microsoft.com/xamarin/android/get-started/hello-android/hello-android-deepdive?pivots=windows) dans la rubrique Hello Android sur xamarin.com.
+    > Le projet contient de nombreux autres fichiers. Ils ne sont pas abordés dans cette rubrique, mais si vous souhaitez étudier plus en détail la structure d’un projet Android, consultez [Part 2 Deep Dive](/xamarin/android/get-started/hello-android/hello-android-deepdive?pivots=windows) dans la rubrique Hello Android sur xamarin.com.
 
 2. Sélectionnez et supprimez le bouton par défaut qui apparaît dans le concepteur.
 
@@ -247,9 +247,9 @@ Une fois que vous avez effectué les étapes dans [Configurer et installer](../c
 
 7. Dans la fenêtre **Propriétés**, définissez les propriétés suivantes (vous pouvez éventuellement trier la liste par ordre alphabétique à l’aide du bouton de tri situé dans la barre d’outils de la fenêtre Propriétés) :
 
-    |Propriété|Valeur|
+    |Les|Value|
     |--------------|-----------|
-    |**text**|**Search by Zip Code**|
+    |**texte**|**Search by Zip Code**|
     |**ID**|`@+id/ZipCodeSearchLabel`|
     |**layout_marginLeft**|`10dp`|
     |**textColor**|`@android:color/white`|
@@ -279,9 +279,9 @@ Une fois que vous avez effectué les étapes dans [Configurer et installer](../c
 
 9. Dans la fenêtre **Propriétés** , définissez les propriétés suivantes :
 
-    |Propriété|Valeur|
+    |Les|Value|
     |--------------|-----------|
-    |**text**|**Code postal**|
+    |**texte**|**Code postal**|
     |**ID**|`@+id/ZipCodeLabel`|
     |**layout_marginLeft**|`10dp`|
     |**layout_marginTop**|`5dp`|
@@ -301,7 +301,7 @@ Une fois que vous avez effectué les étapes dans [Configurer et installer](../c
 
 10. À partir de la **Boîte à outils**, faites glisser un contrôle **Number** sur **RelativeLayout**, placez-le sous l’étiquette **Zip Code**. Définissez ensuite les propriétés suivantes :
 
-    |Propriété|Valeur|
+    |Les|Value|
     |--------------|-----------|
     |**ID**|`@+id/zipCodeEntry`|
     |**layout_marginLeft**|`10dp`|
@@ -324,10 +324,10 @@ Une fois que vous avez effectué les étapes dans [Configurer et installer](../c
 
 11. À partir de la **Boîte à outils**, faites glisser un contrôle **Button** sur le contrôle **RelativeLayout**, puis placez-le à droite du contrôle zipCodeEntry. Définissez ensuite ces propriétés :
 
-    |Propriété|Valeur|
+    |Les|Value|
     |--------------|-----------|
     |**ID**|`@+id/weatherBtn`|
-    |**text**|**Obtenir la météo**|
+    |**texte**|**Obtenir la météo**|
     |**layout_marginLeft**|`20dp`|
     |**layout_alignBottom**|`@id/zipCodeEntry`|
     |**width**|`165dp`|
@@ -636,11 +636,11 @@ Une fois que vous avez effectué les étapes dans [Configurer et installer](../c
 
  Étendez cet exemple en ajoutant une IU native pour iOS. Pour cela, vous devez vous connecter à un Mac sur votre réseau local, où sont installés Xcode et Xamarin. Vous pourrez ensuite utiliser le concepteur iOS directement dans Visual Studio. Consultez le [dépôt mobile-samples sur GitHub](https://github.com/xamarin/mobile-samples/tree/master/Weather) pour obtenir une application complète.
 
- Consultez également la procédure pas à pas [Hello, iOS](https://docs.microsoft.com/xamarin/ios/get-started/hello-ios/hello-ios-quickstart?pivots=windows) (xamarin.com). Vérifiez que « Visual Studio » est bien sélectionné en haut à droite des pages de xamarin.com pour que les instructions appropriées s’affichent.
+ Consultez également la procédure pas à pas [Hello, iOS](/xamarin/ios/get-started/hello-ios/hello-ios-quickstart?pivots=windows) (xamarin.com). Vérifiez que « Visual Studio » est bien sélectionné en haut à droite des pages de xamarin.com pour que les instructions appropriées s’affichent.
 
  **Ajouter du code spécifique à une plateforme dans un projet partagé**
 
- Le code partagé d’une bibliothèque PCL est indépendant de la plateforme, car la bibliothèque PCL est compilée une seule fois et incluse dans chaque package de l’application spécifique à la plateforme. Si vous souhaitez écrire du code partagé qui utilise la compilation conditionnelle pour isoler le code spécifique à la plateforme, vous pouvez utiliser un projet *partagé*. Pour plus d’informations, consultez [Options de partage du code](https://docs.microsoft.com/xamarin/cross-platform/app-fundamentals/code-sharing) (xamarin.com).
+ Le code partagé d’une bibliothèque PCL est indépendant de la plateforme, car la bibliothèque PCL est compilée une seule fois et incluse dans chaque package de l’application spécifique à la plateforme. Si vous souhaitez écrire du code partagé qui utilise la compilation conditionnelle pour isoler le code spécifique à la plateforme, vous pouvez utiliser un projet *partagé*. Pour plus d’informations, consultez [Options de partage du code](/xamarin/cross-platform/app-fundamentals/code-sharing) (xamarin.com).
 
 ## <a name="see-also"></a>Voir aussi
- [Site de développement Xamarin](https://docs.microsoft.com/xamarin/) [fenêtre](https://dev.windows.com/en-us) [de référence rapide C# et rapide](https://aka.ms/scposter) du centre de développement Windows
+ [Site de développement Xamarin](/xamarin/) [fenêtre](https://dev.windows.com/en-us) [de référence rapide C# et rapide](https://aka.ms/scposter) du centre de développement Windows

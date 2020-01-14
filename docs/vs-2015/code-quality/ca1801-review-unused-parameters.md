@@ -16,17 +16,17 @@ caps.latest.revision: 31
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: caf1ec865d604545940b0a5442947ef61bd60f9a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 0f5789b514d645fc670acf9307e4714c160c3b4c
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72671532"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918171"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801 : Passez en revue les paramètres inutilisés
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Pour obtenir la documentation la plus récente sur Visual Studio, consultez [CA1801 : examiner les paramètres inutilisés](https://docs.microsoft.com/visualstudio/code-quality/ca1801-review-unused-parameters).
+Pour obtenir la documentation la plus récente sur Visual Studio, consultez [CA1801 : examiner les paramètres inutilisés](/visualstudio/code-quality/ca1801-review-unused-parameters).
 
 |||
 |-|-|

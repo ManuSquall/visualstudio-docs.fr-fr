@@ -15,23 +15,23 @@ caps.latest.revision: 21
 author: jillre
 ms.author: jillfra
 manager: wpickett
-ms.openlocfilehash: 76ce346430a249b562f00e17c3173e79128d1708
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 854e9a492f422957e64e1a4b6a00bc7c39b81c46
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72669249"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75919235"
 ---
 # <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702 : La casse des mots composés doit être correcte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Pour obtenir la documentation la plus récente sur Visual Studio, consultez [ca1702 : la casse des mots composés doit être correcte](https://docs.microsoft.com/visualstudio/code-quality/ca1702-compound-words-should-be-cased-correctly).
+Pour obtenir la documentation la plus récente sur Visual Studio, consultez [ca1702 : la casse des mots composés doit être correcte](/visualstudio/code-quality/ca1702-compound-words-should-be-cased-correctly).
 
 |||
 |-|-|
 |TypeName|CompoundWordsShouldBeCasedCorrectly|
 |CheckId|CA1702|
-|Category|Microsoft. Naming|
+|Catégorie|Microsoft.Naming|
 |Modification avec rupture|Avec rupture-en cas de déclenchement sur les assemblys.<br /><br /> Sans rupture-en cas de déclenchement sur les paramètres de type.|
 
 ## <a name="cause"></a>Cause
@@ -40,7 +40,7 @@ Pour obtenir la documentation la plus récente sur Visual Studio, consultez [ca1
 ## <a name="rule-description"></a>Description de la règle
  Le nom de l’identificateur est fractionné en mots basés sur la casse. Chaque combinaison contiguë à deux mots est vérifiée par la bibliothèque du vérificateur d’orthographe Microsoft. S’il est reconnu, l’identificateur produit une violation de la règle. Les exemples de mots composés qui provoquent une violation sont « CheckSum » et « multipart », qui doivent respecter la casse « checksum » et « multipart », respectivement. En raison de l’utilisation courante précédente, plusieurs exceptions sont intégrées à la règle, et plusieurs mots uniques sont signalés, tels que « Toolbar » et « filename », qui doivent respecter la casse de deux mots distincts (dans ce cas, « ToolBar » et « FileName »).
 
- Les conventions d’affectation de noms fournissent une recherche commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit la courbe d’apprentissage requise pour les nouvelles bibliothèques logicielles et augmente la confiance des clients dans la mesure où la bibliothèque a été développée par une personne ayant une expertise dans le développement de code géré.
+ Les conventions d’affectation de noms fournissent une apparence commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit la courbe d’apprentissage requise pour les nouvelles bibliothèques logicielles et augmente la confiance des clients dans la mesure où la bibliothèque a été développée par une personne ayant une expertise dans le développement de code géré.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Modifiez le nom pour qu’il respecte la casse.

@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 2d7081fc7531c8c1c1fcf13564f9f90bc9964f17
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 008dd927f38c7fd79996bde39531e256314f2e24
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849998"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917356"
 ---
 # <a name="how-to-manage-service-configurations-and-profiles"></a>Guide pratique pour gérer les configurations et les profils de service
 ## <a name="overview"></a>Vue d'ensemble de
@@ -80,7 +80,7 @@ Lorsque vous exécutez l'Assistant pour la première fois, un profil par défaut
    
     Le nouveau profil apparaît dans la liste Profil cible.
 6. Dans la liste **Profil cible** , sélectionnez le profil que vous venez de créer. Les paramètres de l'Assistant Publication sont renseignés avec les options de profil que vous avez sélectionnées.
-7. Sélectionnez les boutons **Précédent** et **Suivant** pour afficher chaque page de l’Assistant Publication, puis personnalisez les paramètres de ce profil. Pour plus d’informations, consultez [Assistant Publication d’application Azure](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-publish-azure-application-wizard?view=vs-2019) .
+7. Sélectionnez les boutons **Précédent** et **Suivant** pour afficher chaque page de l’Assistant Publication, puis personnalisez les paramètres de ce profil. Pour plus d’informations, consultez [Assistant Publication d’application Azure](vs-azure-tools-publish-azure-application-wizard.md) .
 8. Une fois la personnalisation des paramètres terminée, sélectionnez **Suivant** pour revenir à la page Paramètres. Le profil est enregistré quand vous publiez le service avec ces paramètres ou si vous sélectionnez **Enregistrer** en regard de la liste de profils.
 
 ### <a name="to-rename-or-delete-a-profile"></a>Pour renommer ou supprimer un profil
@@ -93,9 +93,9 @@ Lorsque vous exécutez l'Assistant pour la première fois, un profil par défaut
 ### <a name="to-change-a-profile"></a>Pour modifier un profil
 1. Ouvrez le menu contextuel de votre projet Azure, puis sélectionnez **Publier**.
 2. Dans la liste **Profil cible** , sélectionnez le profil que vous voulez modifier.
-3. Sélectionnez les boutons **Précédent** et **Suivant** pour afficher chaque page de l’Assistant Publication, puis modifiez les paramètres de votre choix. Pour plus d’informations, consultez [Assistant Publication d’application Azure](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-publish-azure-application-wizard?view=vs-2019) .
+3. Sélectionnez les boutons **Précédent** et **Suivant** pour afficher chaque page de l’Assistant Publication, puis modifiez les paramètres de votre choix. Pour plus d’informations, consultez [Assistant Publication d’application Azure](vs-azure-tools-publish-azure-application-wizard.md) .
 4. Une fois la modification des paramètres terminée, sélectionnez **Suivant** pour revenir à la page **Paramètres**.
 5. (Facultatif) Sélectionnez **Publier** pour publier le service cloud avec les nouveaux paramètres. Si vous ne souhaitez pas publier votre service cloud à ce stade et que vous fermez l'Assistant Publication, Visual Studio vous demandera si vous souhaitez enregistrer les modifications apportées au profil.
 
 ## <a name="next-steps"></a>Étapes suivantes :
-Pour en savoir plus sur la configuration des autres parties de votre projet Azure à partir de Visual Studio, consultez [Configuration d’un projet Azure](https://docs.microsoft.com/visualstudio/azure/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address?view=vs-2019)
+Pour en savoir plus sur la configuration des autres parties de votre projet Azure à partir de Visual Studio, consultez [Configuration d’un projet Azure](vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address.md)

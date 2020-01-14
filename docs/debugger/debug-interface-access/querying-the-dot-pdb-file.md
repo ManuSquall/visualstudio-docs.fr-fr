@@ -13,15 +13,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68efbd59abe1b0aff717a55383f3ac330586164a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: a22bc8fbe65795a3c5162607a12690081e565666
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72738579"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75917107"
 ---
 # <a name="querying-the-pdb-file"></a>Interrogation du fichier .Pdb
-Un fichier de base de données de programme (extension. pdb) est un fichier binaire qui contient des informations de débogage de type et symboliques rassemblées au cours de la compilation et de la liaison du projet. Un fichier PDB est créé lors de la compilation d’unC++ programme C/Program avec **/Zi** ou **/zi** ou d’un programme [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] ou [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)] avec l’option **/Debug** . Les fichiers objets contiennent des références dans le fichier. pdb pour les informations de débogage. Pour plus d’informations sur les fichiers PDB, consultez [fichiers PDB](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/yd4f8bd1(v=vs.100)). Une application DIA peut utiliser les étapes générales suivantes pour obtenir des détails sur les différents symboles, objets et éléments de données dans une image exécutable.
+Un fichier de base de données de programme (extension. pdb) est un fichier binaire qui contient des informations de débogage de type et symboliques rassemblées au cours de la compilation et de la liaison du projet. Un fichier PDB est créé lors de la compilation d’unC++ programme C/Program avec **/Zi** ou **/zi** ou d’un programme [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]ou [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)] avec l’option **/Debug** . Les fichiers objets contiennent des références dans le fichier. pdb pour les informations de débogage. Pour plus d’informations sur les fichiers PDB, consultez [fichiers PDB](/previous-versions/visualstudio/visual-studio-2010/yd4f8bd1(v=vs.100)). Une application DIA peut utiliser les étapes générales suivantes pour obtenir des détails sur les différents symboles, objets et éléments de données dans une image exécutable.
 
 ### <a name="to-query-the-pdb-file"></a>Pour interroger le fichier. pdb
 
