@@ -12,17 +12,17 @@ ms.assetid: b1b41012-a777-4ccf-81a6-3b41f0e96583
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9403121a235d71a42639121458fc37607180b18a
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: df6ef440202057bb8e0612af0987782fa281c952
+ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851339"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75944254"
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>Comment : générer des informations de Registre pour un programme d’installation
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-L’utilitaire RegPkg. exe peut être utilisé pour générer un manifeste d’inscription pour un VSPackage managé. Le manifeste peut être incorporé dans un package d’installation Windows Installer. RegPkg peut également générer un fichier qui peut être inclus dans un fichier source d’installation basé sur le [Windows Installer ensemble d’outils XML](http://wix.sourceforge.net/).  
+L’utilitaire RegPkg. exe peut être utilisé pour générer un manifeste d’inscription pour un VSPackage managé. Le manifeste peut être incorporé dans un package d’installation Windows Installer. RegPkg peut également générer un fichier qui peut être inclus dans un fichier source d’installation basé sur le [Windows Installer ensemble d’outils XML](https://documentation.help/WiX-Toolset/index.html).
   
 > [!IMPORTANT]
 > RegPkg génère des noms de chemin d’accès spécifiques à votre système de développement. par conséquent, chaque fois que vous utilisez RegPkg, vous devez modifier la sortie pour utiliser les propriétés mises en forme appropriées Windows Installer. Par exemple, la valeur InprocServer32 doit être **[SystemFolder] Mscoree. dll** et les chemins doivent utiliser **[#filekey]** et **[$componentkey]** . L’ajustement de la sortie de cette manière prend en charge les ordinateurs sur lesquels Windows est installé sur un autre lecteur ou dans un répertoire différent, les noms de répertoire localisés et les chemins que les utilisateurs peuvent choisir. Pour plus d’informations, consultez [mise en forme](https://msdn.microsoft.com/library/default.asp?url=/library/msi/setup/formatted.asp) dans le kit de développement logiciel (SDK) Windows Installer. Si vous suivez les conventions RegPkg pour vos chemins d’accès système de développement (par exemple, les ID de fichier de la forme File_*nom*de fichier), vous devez effectuer moins de modifications.  

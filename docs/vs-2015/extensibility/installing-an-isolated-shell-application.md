@@ -11,12 +11,12 @@ ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4d9a7b39dc322ab92458dbd6c7304f672468db17
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 0adc81cfe9ea4462940c31a02c6429be89709565
+ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851713"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75944263"
 ---
 # <a name="installing-an-isolated-shell-application"></a>Installation d’une application avec Shell isolé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Pour installer une application Shell, vous devez effectuer les étapes suivantes
   
 - Le SDK de Visual Studio  
   
-- [Ensemble d’outils XML Windows Installer](http://wix.sourceforge.net/) version 3,6  
+- [Ensemble d’outils XML Windows Installer](https://documentation.help/WiX-Toolset/index.html/) version 3,6  
   
   L’exemple requiert également le kit de développement logiciel (SDK) de visualisation et de modélisation Microsoft, ce qui n’est pas obligatoire pour tous les Shell.  
   
@@ -54,7 +54,7 @@ Pour installer une application Shell, vous devez effectuer les étapes suivantes
 2. Pour chaque projet qui contient un manifeste VSIX, modifiez les tâches de génération pour générer le contenu à l’emplacement à partir duquel votre MSI sera installé. Incluez le manifeste VSIX dans la sortie de la génération, mais ne générez pas de fichier. vsix.  
   
 ## <a name="creating-an-msi-for-your-shell"></a>Création d’un MSI pour votre shell  
- Pour générer votre package MSI, nous vous recommandons d’utiliser l' [ensemble d’outils XML Windows Installer](http://wix.sourceforge.net/) , car il offre une plus grande flexibilité qu’un projet d’installation standard.  
+ Pour générer votre package MSI, nous vous recommandons d’utiliser l' [ensemble d’outils XML Windows Installer](https://documentation.help/WiX-Toolset/index.html) , car il offre une plus grande flexibilité qu’un projet d’installation standard.  
   
  Dans votre fichier Product. wxs, définissez des blocs de détection et la disposition des composants de l’interpréteur de commandes.  
   

@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c72b6749dcba857d9a5059a36adc0fae6e0bacf
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 2876e1b25380719a4424c5828c8b37fb5bb72b41
+ms.sourcegitcommit: 9a5cf730d8e43eed6eba25369b7b44cae0b26b98
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254616"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75929236"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Mesurer l’utilisation de la mémoire dans Visual Studio
 
@@ -22,7 +22,7 @@ Recherchez les fuites de mémoire et les utilisations inefficaces de la mémoire
 
 L’illustration suivante montre la fenêtre **Outils de diagnostic** (disponible dans Visual Studio 2015 Update 1 et ultérieur) :
 
-![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")
+![Outils&#45;Update 1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")
 
 Bien que vous puissiez collecter des instantanés de la mémoire à tout moment dans l’outil **Utilisation de la mémoire** , vous pouvez utiliser le débogueur Visual Studio pour contrôler la façon dont votre application s’exécute lors de l’examen des problèmes de performances. La définition de points d’arrêt, l’exécution pas à pas, Interrompre tout et d’autres actions du débogueur peuvent vous aider à concentrer vos investigations en matière de performances sur les chemins du code qui sont les plus pertinents. Le fait d’effectuer ces actions pendant l’exécution de votre application peut éliminer le bruit du code qui ne vous intéresse pas et réduire considérablement le temps nécessaire pour diagnostiquer un problème.
 
@@ -54,13 +54,13 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 
 4. Choisissez **Utilisation de la mémoire** avec **Sélectionner les outils** dans la barre d’outils.
 
-     ![Afficher les outils de diagnostics](../profiling/media/diag-tools-select-tool-2.png "DiagToolsSelectTool")
+     ![Afficher les outils de diagnostic](../profiling/media/diag-tools-select-tool-2.png "DiagToolsSelectTool")
 
 5. Cliquez sur **Déboguer / Démarrer le débogage** (ou **Démarrer** dans la barre d’outils, ou **F5**).
 
      Lorsque l’application est chargée, la vue Résumé des outils de diagnostics s’affiche.
 
-     ![Onglet Résumé des outils de diagnostics](../profiling/media/diag-tools-summary-tab-2.png "DiagToolsSummaryTab")
+     ![Onglet Résumé des outils de diagnostic](../profiling/media/diag-tools-summary-tab-2.png "DiagToolsSummaryTab")
 
      > [!NOTE]
      > Comme la collecte des données de la mémoire peut affecter les performances du débogage de vos applications natives ou en mode mixte, les instantanés de la mémoire sont désactivés par défaut. Pour activer les instantanés dans des applications natives ou en mode mixte, démarrez une session de débogage (touche de raccourci : **F5**). Quand la fenêtre **Outils de diagnostic** apparaît, choisissez l’onglet **Utilisation de la mémoire**, puis choisissez **Profilage du tas**.
@@ -89,7 +89,7 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 ## <a name="analyze-memory-usage-data"></a>Analyser l’utilisation de la mémoire
 Les lignes du tableau récapitulatif Utilisation de la mémoire listent les instantanés que vous avez pris pendant la session de débogage et fournissent des liens vers des vues plus détaillées.
 
-![Tableau récapitulatif de la mémoire](../profiling/media/dbgdiag_mem_summarytable.png "DBGDIAG_MEM_SummaryTable")
+![Table de résumé de la mémoire](../profiling/media/dbgdiag_mem_summarytable.png "DBGDIAG_MEM_SummaryTable")
 
  Les noms des colonnes varient selon le mode de débogage que vous choisissez dans les propriétés du projet : .NET, natif ou mixte (.NET et natif).
 
@@ -101,7 +101,7 @@ Quand vous avez pris plusieurs instantanés, les cellules de la table de résum�
 
 Pour analyser l’utilisation de la mémoire, cliquez sur un des liens qui ouvrent un rapport détaillé de l’utilisation de la mémoire :
 
-- Pour voir les détails de la différence entre l’instantané actif et l’instantané précédent, cliquez sur le lien Modification à gauche de la flèche (![Augmentation de l’utilisation de la mémoire](../profiling/media/prof-tour-mem-usage-up-arrow.png "Augmentation de l’utilisation de la mémoire")). Une flèche rouge indique une augmentation de l’utilisation de la mémoire et une flèche verte indique une baisse.
+- Pour afficher les détails de la différence entre l’instantané actuel et l’instantané précédent, cliquez sur le lien modifier à gauche de la flèche (![augmentation de l’utilisation](../profiling/media/prof-tour-mem-usage-up-arrow.png "Augmentation de l’utilisation de la mémoire")de la mémoire). Une flèche rouge indique une augmentation de l’utilisation de la mémoire et une flèche verte indique une baisse.
 
 > [!TIP]
 > Pour aider à identifier les problèmes de mémoire plus rapidement, les rapports de comparaison sont triés selon les types d’objets dont le nombre total a le plus augmenté (cliquez sur le lien de modification dans la colonne **Objets (Diff.)** ) ou qui ont le plus augmenté dans la taille de segment totale (cliquez sur le lien de modification dans la colonne **Taille du tas (Diff.)** ).
@@ -113,52 +113,52 @@ Pour analyser l’utilisation de la mémoire, cliquez sur un des liens qui ouvre
 ### <a name="managed-types-reports"></a>Rapports sur les types managés
  Choisissez le lien actif d’une cellule **Objets (Diff.)** ou **Allocations (Diff.)** dans le tableau récapitulatif Utilisation de la mémoire.
 
- ![Rapport de type managé du Débogueur &#45; Chemins d’accès à la racine](../profiling/media/dbgdiag_mem_managedtypesreport_pathstoroot.png "DBGDIAG_MEM_ManagedTypesReport_PathsToRoot")
+ ![Chemins d’accès du rapport &#45; de type managé du débogueur à la racine](../profiling/media/dbgdiag_mem_managedtypesreport_pathstoroot.png "DBGDIAG_MEM_ManagedTypesReport_PathsToRoot")
 
  Le volet du haut affiche le nombre et la taille des types de l’instantané, y compris la taille de tous les objets qui sont référencés par le type (**Taille inclusive**).
 
  L’arborescence **Chemins d’accès à la racine** du volet du bas affiche les objets qui référencent le type sélectionné dans le volet du haut. Le Garbage Collector .NET Framework nettoie la mémoire pour un objet seulement quand le dernier type qui le référence a été publié.
 
- L’arborescence **Types référencés** affiche les références qui sont détenues par le type sélectionné dans le volet du haut.
+ L’arborescence **objets référencés** affiche les références qui sont détenues par le type sélectionné dans le volet supérieur.
 
- ![Affichage Rapport des types référencés managés](../profiling/media/dbgdiag_mem_managedtypesreport_referencedtypes.png "DBGDIAG_MEM_ManagedTypesReport_ReferencedTypes")
+ ![Vue de rapport des objets référencés managés](../profiling/media/dbgdiag_mem_managedtypesreport_referencedtypes.png "DBGDIAG_MEM_ManagedTypesReport_ReferencedTypes")
 
- Pour afficher les instances d’un type sélectionné dans le volet du haut, choisissez l’icône ![Icône d’instance](../profiling/media/dbgdiag_mem_instanceicon.png "DBGDIAG_MEM_InstanceIcon").
+ Pour afficher les instances d’un type sélectionné dans le volet supérieur, choisissez l’icône ![icône d’instance](../profiling/media/dbgdiag_mem_instanceicon.png "DBGDIAG_MEM_InstanceIcon") .
 
- ![Vue Instances](../profiling/media/dbgdiag_mem_managedtypesreport_instances.png "DBGDIAG_MEM_ManagedTypesReport_Instances")
+ ![Vue instances](../profiling/media/dbgdiag_mem_managedtypesreport_instances.png "DBGDIAG_MEM_ManagedTypesReport_Instances")
 
  La vue **Instances** affiche les instances de l’objet sélectionné dans l’instantané dans le volet du haut. Les volets **Chemins d’accès à la racine** et **Objets référencés** affichent les objets qui référencent l’instance sélectionnée, ainsi que les types référencés par l’instance sélectionnée. Quand le débogueur est arrêté du point où l’instantané a été pris, vous pouvez pointer sur la cellule **Valeur** pour afficher les valeurs de l’objet dans une info-bulle.
 
 ### <a name="native-type-reports"></a>Rapports sur les types natifs
  Cliquez sur le lien actif d’une cellule **Allocations (Diff.)** ou **Taille du tas (Diff.)** dans la table récapitulative Utilisation de la mémoire de la fenêtre **Outils de diagnostic**.
 
- ![Affichage du type natif](../profiling/media/dbgdiag_mem_native_typesview.png "DBGDIAG_MEM_Native_TypesView")
+ ![Affichage de type natif](../profiling/media/dbgdiag_mem_native_typesview.png "DBGDIAG_MEM_Native_TypesView")
 
  La **vue Types** affiche le nombre et la taille des types dans l’instantané.
 
-- Cliquez sur l’icône des instances (![L’icône d’instance dans la colonne Type d’objet](../profiling/media/dbg_mma_instancesicon.png "DBG_MMA_InstancesIcon")) d’un type sélectionné pour afficher des informations sur les objets du type sélectionné dans l’instantané.
+- Choisissez l’icône des instances (![l’icône d’instance dans la colonne type d’objet](../profiling/media/dbg_mma_instancesicon.png "DBG_MMA_InstancesIcon")) d’un type sélectionné pour afficher des informations sur les objets du type sélectionné dans l’instantané.
 
      La vue **Instances** affiche chaque instance du type sélectionné. La sélection d’une instance affiche la pile des appels qui a entraîné la création de l’instance dans le volet **Pile des appels d’allocation** .
 
-     ![Vue Instances](../profiling/media/dbgdiag_mem_native_instances.png "DBGDIAG_MEM_Native_Instances")
+     ![Vue instances](../profiling/media/dbgdiag_mem_native_instances.png "DBGDIAG_MEM_Native_Instances")
 
 - Choisissez **Affichage des piles** dans la liste **Mode Affichage** pour afficher la pile des allocations pour le type sélectionné.
 
-     ![Vue Piles](../profiling/media/dbgdiag_mem_native_stacksview.png "DBGDIAG_MEM_Native_StacksView")
+     ![Affichage des piles](../profiling/media/dbgdiag_mem_native_stacksview.png "DBGDIAG_MEM_Native_StacksView")
 
 ### <a name="change-diff-reports"></a>Rapports sur les modifications (Différences)
 
 - Cliquez sur le lien Modification dans une cellule du tableau récapitulatif de l’onglet **Utilisation de la mémoire** dans la fenêtre **Outils de diagnostic** .
 
-   ![Choisir un rapport de modification &#40;diff&#41;](../profiling/media/dbgdiag_mem_choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")
+   ![Choisir un rapport &#40;de&#41; différences de modification](../profiling/media/dbgdiag_mem_choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")
 
 - Choisissez un instantané dans la liste **Comparer à** d’un rapport sur la mémoire managée ou native.
 
-   ![Choisir un instantané dans la liste Comparer à](../profiling/media/dbgdiag_mem_choosecompareto.png "DBGDIAG_MEM_ChooseCompareTo")
+   ![Choisissez un instantané dans la liste comparer à](../profiling/media/dbgdiag_mem_choosecompareto.png "DBGDIAG_MEM_ChooseCompareTo")
 
 Le rapport des modifications ajoute des colonnes (marquées par la mention **(Diff)** ) au rapport de base, qui affichent la différence entre la valeur de l’instantané de base et celle de l’instantané comparé. Voici à quoi peut ressembler un rapport des différences de la vue des types natifs :
 
-![Affichage Diff des types natifs](../profiling/media/dbgdiag_mem_native_typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")
+![Vue diff des types natifs](../profiling/media/dbgdiag_mem_native_typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")
 
 ## <a name="blogs-and-videos"></a>Blogs et vidéos
 
@@ -166,7 +166,7 @@ Le rapport des modifications ajoute des colonnes (marquées par la mention **(Di
 
 [Blog Visual C++ : Profilage de la mémoire dans Visual C++ 2015](https://devblogs.microsoft.com/cppblog/memory-profiling-in-visual-c-2015/)
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 Dans ce didacticiel, vous avez appris comment collecter et analyser les données d’utilisation de la mémoire. Si vous avez déjà fait la [visite guidée du profileur](../profiling/profiling-feature-tour.md), vous pouvez souhaiter avoir une vue d’ensemble rapide de la manière d’analyser l’utilisation de l’UC dans vos applications.
 

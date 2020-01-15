@@ -20,12 +20,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 130387fedce065948ebe09ea605e32cf89ad820b
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 523867a8f9aa074e9122c74deb8bcd91cddd8bee
+ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71210591"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75944226"
 ---
 # <a name="whats-new-for-the-debugger-in-visual-studio-2017"></a>Nouveautés du débogueur dans Visual Studio 2017
 
@@ -44,9 +44,9 @@ Le débogueur comprend les nouvelles fonctionnalités suivantes :
 
     Vous pouvez parcourir et afficher les captures instantanées à l’aide des boutons **Étape précédente** et **Étape suivante** situés dans la barre d’outils de débogage. Utilisez ces boutons pour accéder aux événements figurant sous l’onglet **Événements** de la fenêtre **Outils de diagnostic**.
 
-    ![Boutons Étape précédente et Étape suivante](../debugger/media/intellitrace-step-back-icons-description.png  "Boutons Étape précédente et Étape suivante")
+    ![Boutons précédent et suivant](../debugger/media/intellitrace-step-back-icons-description.png  "Boutons précédent et suivant")
 
-    Pour plus d’informations, consultez la page [Inspecter les états antérieurs de l’application avec IntelliTrace](../debugger/view-historical-application-state.md).
+    Pour plus d’informations, consultez la page [Inspecter les états antérieurs de l’application avec IntelliTrace](view-historical-application-state.md).
 
 - L' **assistance** de l’exception remplace l’Assistant exception et s’affiche dans une boîte de dialogue non modale dans laquelle l’erreur s’est produite. L' **assistance** de l’exception fournit un accès plus rapide à toutes les exceptions internes, une analyse supplémentaire par le débogueur (si disponible) et un accès immédiat aux **paramètres d’exception** pour l’exception. L’assistance de l’exception peut également être déplacée vers une vue flottante si elle bloque une action que vous devez voir.
 
@@ -54,7 +54,7 @@ Le débogueur comprend les nouvelles fonctionnalités suivantes :
 
     ![Assistance sur l’exception du débogueur](../debugger/media/dbg-exception-helper.png "DbgExceptionHelper")
 
-    Pour plus d’informations, consultez le billet de blog sur l’[utilisation de la nouvelle assistance d’exception dans Visual Studio](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/).
+    Pour plus d’informations, consultez le billet de blog sur l’[utilisation de la nouvelle assistance d’exception dans Visual Studio](https://devblogs.microsoft.com/devops/using-the-new-exception-helper-in-visual-studio-15-preview/).
 
 - Vous pouvez maintenant exécuter jusqu’à une ligne de code pendant que vous êtes en pause dans le débogueur en sélectionnant l’icône de flèche verte **exécuter l’exécution jusqu’ici** (l’icône s’affiche lorsque vous pointez sur une ligne de code). Cela élimine la nécessité de définir des points d’arrêt temporaires.
 
@@ -68,7 +68,7 @@ Le débogueur comprend les nouvelles fonctionnalités suivantes :
 
     ![Rechercher dans attacher au processus](../debugger/media/dbg-attach-to-process-search.png "DbgAttachToProcessSearch")
 
-Pour plus d’informations sur ces nouvelles fonctionnalités, consultez les [notes de [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]publication de ](/visualstudio/releasenotes/vs2017-relnotes).
+Pour plus d’informations sur ces nouvelles fonctionnalités, consultez les [notes de publication de [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]](/visualstudio/releasenotes/vs2017-relnotes).
 
 ## <a name="see-also"></a>Voir aussi
 
