@@ -12,17 +12,17 @@ caps.latest.revision: 26
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 83794267cbd13b0bde0b1ba6217d08275fe12e05
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 60ba1ad7f1ed467cb1a396f80228b8915bd62a31
+ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75850334"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75918800"
 ---
 # <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>Procédure : Mettre à niveau des projets Visual C++ vers Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Pour obtenir la documentation la plus récente sur Visual Studio 2017, consultez [Guide du portage et de la mise à niveau de Visual C++](https://docs.microsoft.com/cpp/porting/visual-cpp-porting-and-upgrading-guide).
+Pour obtenir la documentation la plus récente sur Visual Studio 2017, consultez [Guide du portage et de la mise à niveau de Visual C++](/cpp/porting/visual-cpp-porting-and-upgrading-guide).
 
 Lorsque vous ouvrez pour la première fois un projet Visual C++ créé dans une version antérieure de Visual Studio, vous pouvez être invité à le mettre à jour. Le message vous demande si vous souhaitez effectuer une mise à niveau vers la version la plus récente du compilateur et des bibliothèques Visual C++. Les options de mise à niveau dépendent de la version de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] qui a été utilisée pour créer le projet.
 
@@ -54,4 +54,4 @@ Lorsque vous ouvrez pour la première fois un projet Visual C++ créé dans une 
  Si vous souhaitez continuer à utiliser un PlatformToolset personnalisé dans [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)], l’ensemble d’outils doit se trouver sous %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ sur un ordinateur x86, ou sous %ProgramFiles (x86)%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ sur un ordinateur x64. Pour plus d’informations sur la création d’un PlatformToolset personnalisé, consultez le billet sur le [multi-ciblage natif C++](https://blogs.msdn.com/b/vcblog/archive/2009/12/08/c-native-multi-targeting.aspx) dans le blog de l’équipe Visual C++.
 
 ## <a name="see-also"></a>Voir aussi
- Portage [, migration et mise à niveau des projets Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) dans le [Guide de Portage et de mise à niveau visuel C++ ](https://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb)
+ [Guide du portage et de la mise à niveau de Visual C++](https://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb) [Portage, migration et mise à niveau des projets Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)
