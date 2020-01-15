@@ -721,6 +721,8 @@
                   href: ca3077.md
                 - name: "CA3147\_: Marquer les gestionnaires de verbe avec ValidateAntiForgeryToken"
                   href: ca3147.md
+                - name: "CA5358\_: Ne pas utiliser de modes de chiffrement non sécurisés"
+                  href: ca5358.md
                 - name: "CA5361\_: Ne pas désactiver l’utilisation du chiffrement fort par SChannel"
                   href: ca5361.md
                 - name: "CA5363\_: Ne pas désactiver la validation de demandes"
