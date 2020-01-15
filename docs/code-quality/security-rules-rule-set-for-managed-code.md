@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: babfc00dfadc6b26f8338faf37b5b4a1f7c1d8e5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 49fe666884c3a96a5c8eb632308e7f732150805e
+ms.sourcegitcommit: 9a5cf730d8e43eed6eba25369b7b44cae0b26b98
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587223"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75929221"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>Ensemble de règles des règles de sécurité pour le code managé
 
@@ -86,4 +86,5 @@ Utilisez le jeu de règles des règles de sécurité Microsoft pour l’analyse 
 |[CA3010](../code-quality/ca3010.md)|Passez en revue le code pour détecter les vulnérabilités de l’injection XAML|
 |[CA3011](../code-quality/ca3011.md)|Passez en revue le code pour détecter les vulnérabilités de l’injection de DLL|
 |[CA3012](../code-quality/ca3012.md)|Passez en revue le code pour détecter les vulnérabilités de l’injection regex|
+|[CA5358](../code-quality/ca5358.md)|Ne pas utiliser les modes de chiffrement non sécurisés|
 |[CA5403](../code-quality/ca5403.md)|Ne pas coder en dur le certificat|

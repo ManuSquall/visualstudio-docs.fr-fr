@@ -12,18 +12,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cc8ab1ac26f4aa01342d9949243772edd3de91f
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: b1928176ef1c2612585c7fa46ea653f3ff800050
+ms.sourcegitcommit: 9a5cf730d8e43eed6eba25369b7b44cae0b26b98
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189409"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75929251"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Démarrage rapide : découvrir les outils de profilage
 
 Visual Studio propose des outils de profilage pour vous aider à diagnostiquer différents types de problèmes de performances en fonction de votre type d’application.
 
-Les outils de profilage auxquels vous avez accès pendant une session de débogage sont disponibles dans la fenêtre Outils de diagnostic. Cette fenêtre apparaît automatiquement, sauf si vous l’avez désactivée. Pour afficher la fenêtre, cliquez sur **Déboguer / Fenêtres / Afficher les outils de diagnostic**. Une fois la fenêtre ouverte, vous pouvez sélectionner les outils dont vous souhaitez collecter les données.
+Les outils de profilage auxquels vous avez accès pendant une session de débogage sont disponibles dans la fenêtre Outils de diagnostic. La fenêtre Outils de diagnostic apparaît automatiquement, sauf si vous l’avez désactivée. Pour afficher la fenêtre, cliquez sur **Déboguer / Fenêtres / Afficher les outils de diagnostic**. Une fois la fenêtre ouverte, vous pouvez sélectionner les outils dont vous souhaitez collecter les données.
 
 ![Fenêtre Outils de diagnostic](../profiling/media/prof-tour-diagnostic-tools.png "Outils de diagnostic")
 
@@ -38,7 +38,7 @@ La fenêtre **Outils de diagnostic** est souvent la meilleure méthode pour prof
 
 ## <a name="analyze-cpu-usage"></a>Analyser l'utilisation de l'UC
 
-L’outil Utilisation de l’UC est un bon point de départ pour analyser les performances de votre application. Il vous en dit plus sur les ressources du processeur qu’utilise votre application. Pour obtenir une description plus détaillée de l’outil Utilisation de l’UC, consultez [Guide du débutant en profilage des performances](../profiling/beginners-guide-to-performance-profiling.md).
+L’outil Utilisation de l’UC est un bon point de départ pour analyser les performances de votre application. Il vous en dit plus sur les ressources du processeur qu’utilise votre application. Pour obtenir une description plus détaillée de l’outil utilisation de l’UC, consultez mesurer les performances de l' [application en analysant l’utilisation de l’UC](../profiling/beginners-guide-to-performance-profiling.md).
 
 Dans la vue **Résumé** des outils de diagnostic, choisissez **Activer le profilage de l’UC** (vous devez être dans une session de débogage).
 

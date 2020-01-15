@@ -7,12 +7,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 950803d46d7b870804c2c8914f3c85b0b89e5732
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e3cd7fe9781048f6612ff6bd81c0bf0cbc00a30b
+ms.sourcegitcommit: 9a66f1c31cc9eba0b5231af72da1d18761a9c56a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590668"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75944204"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Conseils et astuces sur les performances dans Visual Studio
 
@@ -63,7 +63,7 @@ En règle générale, si vous manquez de mémoire pendant le débogage des sessi
 
     Définissez les options sur **Uniquement les modules spécifiés** au lieu de **Tous les modules**, puis spécifiez les modules que vous voulez charger. Pendant le débogage, vous pouvez également cliquer avec le bouton droit sur des modules spécifiques dans la fenêtre **Modules** pour inclure explicitement un module dans le chargement de symboles. (Pour ouvrir la fenêtre pendant le débogage, choisissez **Déboguer** > **Fenêtres** > **Modules**.)
 
-    Pour plus d’informations, consultez [Présentation des fichiers de symboles](https://blogs.msdn.microsoft.com/visualstudioalm/2015/01/05/understanding-symbol-files-and-visual-studios-symbol-settings/).
+    Pour plus d’informations, consultez [Présentation des fichiers de symboles](/visualstudio/ide/visual-studio-performance-tips-and-tricks?view=vs-2019).
 
 - **Désactiver les outils de diagnostic**
 
