@@ -4,17 +4,17 @@ ms.date: 05/02/2017
 ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Warnings and errors
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-author: jillre
-ms.openlocfilehash: b9349e2c1c9ebb52e6172cc37ab1113aff95d511
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+author: mikejo5000
+ms.openlocfilehash: b948aa83d5055fdf3d628a84002881eba9c91ac2
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653128"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76112529"
 ---
 # <a name="warnings-and-errors"></a>Avertissements et erreurs
 
@@ -114,7 +114,7 @@ void ParameterizedTest(int n) {
 }
 ```
 
-Vous pouvez modifier l’option **MaxConditions** d’un attribut dérivé de **PexSettingsAttributeBase**, comme [PexClass](attribute-glossary.md#pexclass) ou [PexMethod](attribute-glossary.md#pexmethod). Exemple :
+Vous pouvez modifier l’option **MaxConditions** d’un attribut dérivé de **PexSettingsAttributeBase**, comme [PexClass](attribute-glossary.md#pexclass) ou [PexMethod](attribute-glossary.md#pexmethod). Par exemple :
 
 ```csharp
 [PexMethod(MaxConditions=10000)]
@@ -209,7 +209,7 @@ public void MyTest(...) {
 <a name="cannot-concretize-solution"></a>
 ## <a name="cannot-concretize-solution"></a>Impossible de concrétiser la solution
 
-Cette erreur est souvent la conséquence d’une erreur antérieure. IntelliTest utilise un [solveur de contrainte](input-generation.md#constraint-solver) pour déterminer les nouvelles entrées de test. Parfois, les entrées de test proposées par le [solveur de contrainte](input-generation.md#constraint-solver) ne sont pas valides. Ceci peut se produire quand :
+Cette erreur est souvent la conséquence d’une erreur antérieure. IntelliTest utilise un [solveur de contrainte](input-generation.md#constraint-solver) pour déterminer les nouvelles entrées de test. Parfois, les entrées de test proposées par le [solveur de contrainte](input-generation.md#constraint-solver) ne sont pas valides. Ceci peut se produire lorsque :
 
 * Certaines contraintes ne sont pas connues.
 * Si des valeurs sont créées d’une façon définie par l’utilisateur, entraînant des erreurs dans le code utilisateur.

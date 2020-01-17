@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 620ffa1ea23c2c892e8385bd9e81a07fb640411a
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: fda60ffb97ecb44bd4a881cb42e4d9199cc958b8
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918899"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115343"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>Spécifier des événements de build personnalisés
 
@@ -60,4 +60,4 @@ Pour de meilleurs résultats, suivez ces conseils de mise en forme :
 - [Compiler et générer](../ide/compiling-and-building-in-visual-studio.md)
 - [Ligne de commande de l’événement pré-build/post-build, boîte de dialogue](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)
 - [Caractères spéciaux MSBuild](../msbuild/msbuild-special-characters.md)
-- [Procédure pas à pas : Générer une application](../ide/walkthrough-building-an-application.md)
+- [Procédure pas à pas : générer une application](../ide/walkthrough-building-an-application.md)

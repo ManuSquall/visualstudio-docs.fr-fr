@@ -9,17 +9,17 @@ helpviewer_keywords:
 - TableAdapters, n-tier applications
 - n-tier applications, extending TableAdapters
 ms.assetid: dafac00e-df9d-4d4a-95a6-e34b4d099425
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 246ba595cf1da7e4713e0ddc03ea015eeb61eb64
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e5d240726030a3a08d184b3015f56f65d9168e9f
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648932"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76113319"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>Ajouter du code aux TableAdapters dans des applications multiniveaux
 Vous pouvez étendre les fonctionnalités d’un TableAdapter en créant un fichier de classe partielle pour le TableAdapter et en y ajoutant du code (au lieu d’ajouter du code au fichier *NomGroupeDonnées. DataSet. designer* ). Les classes partielles permettent à du code pour une classe spécifique d’être divisé entre plusieurs fichiers physiques. Pour plus d’informations, consultez [Partial](/dotnet/visual-basic/language-reference/modifiers/partial) ou [Partial (type)](/dotnet/csharp/language-reference/keywords/partial-type).
@@ -48,7 +48,7 @@ Par défaut, après avoir séparé le jeu de données et le code du TableAdapter
 
 4. Ajoutez du code à l’intérieur de la déclaration de classe partielle.
 
-5. L’exemple suivant indique où ajouter du code au `CustomersTableAdapter` dans le `NorthwindDataSet` :
+5. L’exemple suivant indique où ajouter du code au `CustomersTableAdapter` dans le `NorthwindDataSet`:
 
     ```vb
     Partial Public Class CustomersTableAdapter

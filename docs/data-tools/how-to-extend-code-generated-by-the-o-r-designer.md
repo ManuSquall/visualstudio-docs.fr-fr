@@ -3,17 +3,17 @@ title: Guide pratique pour étendre le code généré par le Concepteur O/R
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d6d1122e-2f55-4607-8d8b-48c3c22600fb
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e89410d224adf0980e51c691dbf581655cc2ff3e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 588eb0f61dbc16fb1625752417ac5257bf48320f
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648360"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76113686"
 ---
 # <a name="how-to-extend-code-generated-by-the-or-designer"></a>Guide pratique pour étendre le code généré par le Concepteur O/R
 Le code généré par le **Concepteur O/R** est régénéré lorsque des modifications sont apportées aux classes d’entité et à d’autres objets sur l’aire du concepteur. En raison de cette régénération de code par le concepteur, tout code ajouté au code généré est en général remplacé lors de cette opération. Le **Concepteur O/R** offre la possibilité de générer des fichiers de classe partielle dans lesquels vous pouvez ajouter du code qui n’est pas remplacé. Un exemple d’ajout de votre propre code au code généré par le **Concepteur O/R** consiste à ajouter la validation de données aux classes LINQ to SQL (entité). Pour plus d’informations, consultez [Comment : ajouter une validation à des classes d’entité](../data-tools/how-to-add-validation-to-entity-classes.md).

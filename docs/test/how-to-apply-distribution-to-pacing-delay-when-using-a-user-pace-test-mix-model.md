@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - load tests, test mix model
 ms.assetid: ae8b35f9-d465-4d72-8d7d-7b56ae6ffd22
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3241017a381370f215ed4f9211ae646dc6c80b65
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 953c1ac4cb6e0f87d2a36080cc751ea26f66d63e
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664830"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114491"
 ---
 # <a name="how-to-apply-distribution-to-pacing-delay-for-a-user-pace-test-mix-model"></a>Guide pratique afin d’appliquer une distribution au rythme pour un modèle de combinaison de tests dépendant du rythme de l’utilisateur
 
@@ -40,11 +40,11 @@ La valeur de la propriété **Appliquer une distribution au rythme** peut avoir 
 
 1. Ouvrez un test de charge.
 
-   **L’Éditeur de test de charge** s’affiche. L'arborescence du test de charge s'affiche.
+   **L’éditeur de test de charge** s’affiche. L'arborescence du test de charge s'affiche.
 
 2. Dans le dossier **Scénarios** de l’arborescence du test de charge, sélectionnez le nœud de scénario auquel vous souhaitez appliquer une distribution au rythme.
 
-3. Dans le menu **Affichage**, sélectionnez la fenêtre **Propriétés**.
+3. Dans le menu **Affichage**, sélectionnez **Fenêtre Propriétés**.
 
    Les catégories et les propriétés du scénario s’affichent dans la fenêtre **Propriétés**.
 

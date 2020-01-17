@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Spécifier des événements de build (Visual Basic)'
+title: Guide pratique pour spécifier des événements de build (Visual Basic)
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -15,14 +15,14 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c516b6fc412d393d0528536afe0bb69629c87c44
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
-ms.translationtype: HT
+ms.openlocfilehash: 33cf9cadc8fbf091fb213926fb25b232d14dc0d7
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461512"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115105"
 ---
-# <a name="how-to-specify-build-events-visual-basic"></a>Procédure : Spécifier des événements de build (Visual Basic)
+# <a name="how-to-specify-build-events-visual-basic"></a>Guide pratique pour spécifier des événements de build (Visual Basic)
 
 Vous pouvez utiliser des événements de build en Visual Basic pour exécuter des scripts, des macros ou d’autres actions dans le cadre du processus de compilation. Les événements pré-build se produisent avant la compilation, tandis que les événements post-build se produisent après la compilation.
 
@@ -49,7 +49,7 @@ Les événements de build sont spécifiés dans la boîte de dialogue **Événem
     > [!NOTE]
     > Si votre événement pré-build ou post-build ne s’exécute pas correctement, vous pouvez terminer la génération en faisant en sorte que l’action d’événement s’achève avec un code autre que zéro (0), qui indique une action réussie.
 
-## <a name="example-how-to-change-manifest-information-using-a-post-build-event"></a>Exemple : comment changer des informations de manifeste à l’aide d’un événement postbuild
+## <a name="example-how-to-change-manifest-information-using-a-post-build-event"></a>Exemple : comment changer des informations de manifeste à l’aide d’un événement postbuild
 
 La procédure suivante montre comment définir la version minimale du système d’exploitation dans le manifeste de l’application à l’aide d’une commande *.exe* appelée à partir d’un événement postbuild (fichier *.exe.manifest* dans le répertoire du projet). La version minimale du système d’exploitation est un nombre en quatre parties, tel que 4.10.0.0. Pour ce faire, la commande modifie la section `<dependentOS>` du manifeste :
 

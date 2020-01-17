@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Rethrow.UI
 ms.assetid: 9cfa2eda-395f-4cf3-9154-83fadd4f7452
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d015ad500537a17cfc2c48c8076df43a38534ea
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 3cb73a674e702d54f970c5dea7ec051f100382c9
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650006"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114754"
 ---
 # <a name="rethrow-activity-designer"></a>Concepteur d'activités Rethrow
 
@@ -33,7 +33,7 @@ Accédez au concepteur d’activités **Rethrow** dans la catégorie **gestion d
 
 Le tableau suivant présente les propriétés de <xref:System.Activities.Statements.Rethrow> et décrit comment elles sont utilisées dans le concepteur :
 
-|Nom de propriété|Obligatoire|Utilisation|
+|Nom de propriété|Obligatoire|Contrôle|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Spécifie le nom convivial facultatif de l'activité <xref:System.Activities.Statements.Rethrow>. La valeur par défaut est Rethrow.|
 

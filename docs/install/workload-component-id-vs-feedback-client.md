@@ -3,8 +3,8 @@ title: ID de composant et de charge de travail de Visual Studio Feedback Client
 titleSuffix: ''
 description: Utiliser les ID de composant et de charge de travail Visual Studio pour fournir un feedback détaillé pour Azure DevOps Services ou Team Foundation Server
 keywords: ''
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.date: 11/13/2018
 ms.topic: reference
@@ -16,12 +16,12 @@ ms.assetid: 7392a100-100c-458c-9394-828695109015
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 monikerRange: vs-2017
-ms.openlocfilehash: f23af12a79e1b04c193e85c6fa31ac225af68a6d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 5cba73bd7ea3e0251174ea7a702cd80509fbd954
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62960747"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76113846"
 ---
 # <a name="visual-studio-feedback-client-component-directory"></a>Répertoire des composants Visual Studio Feedback Client
 
@@ -48,7 +48,7 @@ Pour plus d’informations sur l’utilisation de ces ID, consultez la page [Uti
 
 ID de composant | Name | Version | Type de dépendance
 --- | --- | --- | ---
-Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Microsoft Feedback Client | 15.6.27406.0 | Obligatoire
+Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Outil de Feedback Microsoft | 15.6.27406.0 | Obligatoire
 
 ## <a name="unaffiliated-components"></a>Composants non affiliés
 

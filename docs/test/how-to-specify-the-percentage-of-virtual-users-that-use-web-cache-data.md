@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - load tests, virtual users
 ms.assetid: f66d5d43-4121-4487-b27f-d0a0baaf7601
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bc8baf2586e0c0ce682436387bfd612af14e18bd
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 8cac3368d0f03c268e086cc8636f1175a15effdd
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653380"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76113356"
 ---
 # <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>Guide pratique pour spécifier le pourcentage des utilisateurs virtuels qui utilisent les données du cache web
 
@@ -34,17 +34,17 @@ Si vous exécutez un test de charge sur un site web présentant un nombre signif
 
 1. Ouvrez un test de charge.
 
-     **L’Éditeur de test de charge** s’affiche. L'arborescence du test de charge s'affiche.
+     **L’éditeur de test de charge** s’affiche. L'arborescence du test de charge s'affiche.
 
 2. Dans le dossier **Scénarios** des arborescences du test de charge, choisissez le nœud de scénario pour lequel vous voulez modifier le pourcentage de nouveaux utilisateurs.
 
-3. Dans le menu **Affichage**, sélectionnez la fenêtre **Propriétés**.
+3. Dans le menu **Affichage**, sélectionnez **Fenêtre Propriétés**.
 
      Les catégories et les propriétés du scénario sont affichées dans la fenêtre **Propriétés**.
 
 4. Définissez la valeur de la propriété **Pourcentage de nouveaux utilisateurs** en entrant un nombre pour le pourcentage de nouveaux utilisateurs.
 
-5. Après avoir fini de changer la propriété, choisissez **Enregistrer** dans le menu **Fichier**. Vous pouvez ensuite exécuter votre test de charge en utilisant la nouvelle valeur de **Pourcentage de nouveaux utilisateurs**.
+5. Après avoir changé la propriété, choisissez **Enregistrer** dans le menu **Fichier**. Vous pouvez ensuite exécuter votre test de charge en utilisant la nouvelle valeur de **Pourcentage de nouveaux utilisateurs**.
 
 ## <a name="see-also"></a>Voir aussi
 

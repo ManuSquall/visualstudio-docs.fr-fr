@@ -12,17 +12,17 @@ helpviewer_keywords:
 - change [Visual Studio]
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.ProductUpdates
-author: jillre
-ms.author: jillfra
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a094941cd0df3a245a61cd89c11bd174f98bcda
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: fe2be648703964328f9d678570137173429d84ed
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588510"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115075"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Mettre à jour Visual Studio avec la version la plus récente
 
@@ -94,7 +94,7 @@ Comme dans les versions antérieures de Visual Studio, vous pouvez utiliser Visu
 1. Ouvrez le programme d’installation. Avant de poursuivre, le programme d’installation de Visual Studio peut nécessiter une mise à jour.
 
    > [!NOTE]
-   > Sur un ordinateur exécutant Windows 10, le programme d’installation se trouve sous la lettre **V** comme **Visual Studio Installer (programme d’installation de Visual Studio)** ou sous la lettre **M** comme **Microsoft Visual Studio Installer (programme d’installation de Microsoft Visual Studio)**.
+   > Sur un ordinateur exécutant Windows 10, le programme d’installation se trouve sous la lettre **V** comme **Visual Studio Installer (programme d’installation de Visual Studio)** ou sous la lettre **M** comme **Microsoft Visual Studio Installer (programme d’installation de Microsoft Visual Studio)** .
 
 1. Dans la page **Produit** du programme d’installation, recherchez l’édition de Visual Studio installée précédemment.
 
@@ -150,7 +150,7 @@ Si vous choisissez d’ignorer une notification, Visual Studio cesse de l’affi
 1. Ouvrez le programme d’installation. Vous devrez peut-être mettre à jour le programme d’installation avant de continuer. Si c’est le cas, vous êtes invité à le faire.
 
    > [!NOTE]
-   > Sur un ordinateur exécutant Windows 10, le programme d’installation se trouve sous la lettre **V** comme **Visual Studio Installer (programme d’installation de Visual Studio)** ou sous la lettre **M** comme **Microsoft Visual Studio Installer (programme d’installation de Microsoft Visual Studio)**.
+   > Sur un ordinateur exécutant Windows 10, le programme d’installation se trouve sous la lettre **V** comme **Visual Studio Installer (programme d’installation de Visual Studio)** ou sous la lettre **M** comme **Microsoft Visual Studio Installer (programme d’installation de Microsoft Visual Studio)** .
 
 1. Dans la page **Produit** du programme d’installation, recherchez l’édition de Visual Studio qui est installée.
 

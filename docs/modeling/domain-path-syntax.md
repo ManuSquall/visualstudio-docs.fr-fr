@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, domain path
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37255345c1d394130872dc65a8568309a3091347
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 9d7ab5f080328338e40bed080ec8a4c7a85eabdb
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747574"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114642"
 ---
 # <a name="domain-path-syntax"></a>Syntaxe du chemin de domaine
 Les définitions DSL utilisent une syntaxe semblable à XPath pour rechercher des éléments spécifiques dans un modèle.
@@ -23,7 +23,7 @@ Les définitions DSL utilisent une syntaxe semblable à XPath pour rechercher de
 
  Un chemin d'accès de domaine prend la forme suivante :
 
- *RelationshipName. PropertyName/ ! Actif*
+ *RelationshipName.PropertyName/!Role*
 
  ![Relation de référence CommentReferencesSubjects](../modeling/media/dsl_reference.png)
 

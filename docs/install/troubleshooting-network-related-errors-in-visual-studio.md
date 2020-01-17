@@ -10,19 +10,19 @@ helpviewer_keywords:
 - list of domains, locations, URLs, Visual Studio
 - proxy errors, Visual Studio
 ms.assetid: ''
-author: jillre
-ms.author: jillfra
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 44f18e64db08efa848c498f8956d61a79c24846d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 0e127006976c484d1e4fc2fe011af979af7eb7a9
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594459"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114988"
 ---
 # <a name="troubleshoot-network-related-errors-when-you-install-or-use-visual-studio"></a>Résoudre les erreurs liées au réseau lorsque vous installez ou utilisez Visual Studio
 

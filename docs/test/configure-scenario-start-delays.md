@@ -5,15 +5,15 @@ ms.topic: conceptual
 helpviewer_keywords:
 - load tests, scenarios, start delays
 ms.assetid: 2f634fba-8dfa-4c7a-a8b9-be867b78d16a
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d6144312741b2ef75d0b06979495571d97baf0b7
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f962306462538717df694d3bc47719fe31b1e1fe
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72665184"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76111474"
 ---
 # <a name="configure-scenario-start-delays-in-load-tests"></a>Configurer les retards de début de scénario dans les tests de charge
 
@@ -47,7 +47,7 @@ Comme autre exemple, vous pouvez être amené à exécuter un scénario uniqueme
 
 2. Dans le dossier **Scénarios** des arborescences du test de charge, choisissez le nœud de scénario pour lequel vous souhaitez retarder l’heure de début.
 
-3. Dans le menu **Affichage**, sélectionnez la fenêtre **Propriétés**.
+3. Dans le menu **Affichage**, sélectionnez **Fenêtre Propriétés**.
 
      Les catégories et les propriétés du scénario s’affichent dans la fenêtre **Propriétés**.
 
@@ -71,17 +71,17 @@ La propriété **Désactiver pendant le préchauffage** est utilisée pour indiq
 
 1. Ouvrez un test de charge.
 
-     **L’Éditeur de test de charge** s’affiche. L'arborescence du test de charge s'affiche.
+     **L’éditeur de test de charge** s’affiche. L'arborescence du test de charge s'affiche.
 
 2. Dans le dossier **Scénarios** des arborescences du test de charge, choisissez le nœud de scénario dont vous souhaitez modifier le comportement de préchauffage.
 
-3. Dans le menu **Affichage**, sélectionnez la fenêtre **Propriétés**.
+3. Dans le menu **Affichage**, sélectionnez **Fenêtre Propriétés**.
 
      Les catégories et les propriétés du scénario sont affichées dans la fenêtre **Propriétés**.
 
      Dans la propriété **Désactiver pendant le préchauffage**, sélectionnez **True** ou **False**.
 
-4. Après avoir fini de changer la propriété, choisissez **Enregistrer** dans le menu **Fichier**. Vous pouvez exécuter ensuite votre test de charge à l’aide de la nouvelle valeur associée à **Désactiver pendant le préchauffage**.
+4. Après avoir changé la propriété, choisissez **Enregistrer** dans le menu **Fichier**. Vous pouvez exécuter ensuite votre test de charge à l’aide de la nouvelle valeur associée à **Désactiver pendant le préchauffage**.
 
 ## <a name="see-also"></a>Voir aussi
 

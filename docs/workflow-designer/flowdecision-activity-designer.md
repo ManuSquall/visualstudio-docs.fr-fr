@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.FlowDecision.UI
 ms.assetid: 4a49edc3-3662-4b7b-812e-0a5ba00d6c94
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2274333de9255ff818b4ee6952bfa1b2a99c59b3
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 79e405f82bcf33bc01ad07f1092879c17dec5849
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650427"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76111437"
 ---
 # <a name="flowdecision-activity-designer"></a>Concepteur d'activités FlowDecision
 
@@ -27,7 +27,7 @@ Utilisez <xref:System.Activities.Statements.FlowDecision> lorsque le flux peut f
 
 ### <a name="using-the-flowdecision-designer"></a>Utilisation du concepteur FlowDecision
 
-Le concepteur **FlowDecision** se trouve dans la catégorie **organigramme** de la **boîte à outils**, accessible en cliquant sur l’onglet **boîte à outils** dans la concepteur de flux de travail. Vous pouvez également sélectionner **boîte à outils** dans le menu **affichage** ou appuyer sur **CTRL** +**ALT** +**X**.
+Le concepteur **FlowDecision** se trouve dans la catégorie **organigramme** de la **boîte à outils**, accessible en cliquant sur l’onglet **boîte à outils** dans la concepteur de flux de travail. Vous pouvez également sélectionner **boîte à outils** dans le menu **affichage** ou appuyer sur **CTRL**+**ALT**+**X**.
 
 Le concepteur **FlowDecision** peut être déplacé de la **boîte à outils** et déposé dans l’aire de concepteur de flux de travail dans un concepteur d’activités **Flowchart** . Cela crée une <xref:System.Activities.Statements.FlowDecision> **décision** étiquetée dans l’activité de <xref:System.Activities.Statements.Flowchart>. La souris sur le concepteur et les poignées carrées **true** et **false** pour les deux branches s’affichent.
 
@@ -39,7 +39,7 @@ L’expression qui déclare la <xref:System.Activities.Statements.FlowDecision.C
 
 Le tableau suivant présente les propriétés de <xref:System.Activities.Statements.FlowDecision> et décrit comment elles sont utilisées dans le concepteur. Ces propriétés peuvent être modifiées dans la grille des propriétés ou dans l'aire du concepteur.
 
-|Nom de la propriété|Obligatoire|Usage|
+|Nom de propriété|Obligatoire|Contrôle|
 |-|--------------|-|
 |<xref:System.Activities.Statements.FlowDecision.Condition%2A>|True|Condition qui détermine le chemin d'accès emprunté par le contrôle de flux.|
 |<xref:System.Activities.Statements.FlowDecision.True%2A>|False|Chemin d'accès emprunté par le contrôle de flux si la propriété <xref:System.Activities.Statements.FlowDecision.Condition%2A> est satisfaite.|

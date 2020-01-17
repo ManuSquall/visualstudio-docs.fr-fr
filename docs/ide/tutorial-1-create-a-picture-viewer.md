@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c751f6b55bc50a064473468d95c07a54aba76ae
-ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.openlocfilehash: f9af5a3e8796af3aeaefae569d61e78a1039d84e
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72516622"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115093"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Tutoriel 1 : créer une visionneuse d'images
 
@@ -26,7 +26,7 @@ Dans ce didacticiel, vous allez créer une application qui charge une image à p
 
 Ce didacticiel vous guide tout au long des tâches suivantes :
 
-* Créer un nouveau projet.
+* Créez un nouveau projet.
 
 * Tester (déboguer) une application.
 
@@ -62,7 +62,7 @@ Lorsque vous avez terminé, votre application doit ressembler à l’image suiva
 
 D’autres ressources de formation vidéo gratuites sont également disponibles. Pour en savoir plus sur la C#programmation dans, consultez [ C# notions de base : développement pour les débutants](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners). Pour en savoir plus sur la programmation en Visual Basic, consultez [Notions de base de Visual Basic : développement pour grands débutants](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners).
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 Pour commencer le didacticiel, commencez à l' **[étape 1 : créer un projet d’application Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md)** .
 

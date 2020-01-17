@@ -6,31 +6,31 @@ f1_keywords:
 - vs.dsltools.dsldesigner.swimlane
 helpviewer_keywords:
 - Domain-Specific Language, swimlane
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a21473f983c56181e3a5d2fc7f9e97cd1c2d6e7
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 0cceeacab44f17eb30184c90f1128b8d2c3528bb
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748261"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115368"
 ---
 # <a name="properties-of-swimlanes"></a>Propriétés des couloirs
 Vous pouvez ajouter des couloirs à un diagramme. Les couloirs divisent un diagramme en zones verticales ou horizontales. Vous pouvez définir d’autres formes à afficher à l’intérieur des couloirs. Pour plus d’informations, consultez [comment définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md). Pour plus d’informations sur l’utilisation de ces propriétés, consultez [personnalisation et extension d’un langage spécifique à un domaine](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
  Les couloirs ont les propriétés répertoriées dans le tableau suivant.
 
-|Property|Description|Valeur par défaut|
+|Les|Description|Valeur par défaut|
 |-|-|-|
-|Couleur de remplissage du corps|Couleur de remplissage du corps du couloir.|ajourée|
-|Couleur de remplissage d’en-tête|Couleur de remplissage de l’en-tête du couloir.|Gris foncé|
+|Couleur de remplissage du corps|Couleur de remplissage du corps du couloir.|Blanc|
+|Couleur de remplissage d’en-tête|Couleur de remplissage de l’en-tête du couloir.|DarkGray|
 |Couleur du séparateur|Couleur de la ligne de séparation.|LightGray|
-|Style de ligne de séparateur|Style de la ligne de séparation (`Solid`, `Dash`, `Dot`, `DashDot`, `DashDotDot` ou `Custom`).|`Dash`|
-|Épaisseur du séparateur|Épaisseur de la ligne de séparation, en pouces.|0,03125|
-|Couleur du texte|Couleur utilisée pour les éléments décoratifs de texte associés à ce couloir.|Noir|
+|Style de ligne de séparateur|Style de la ligne de séparation (`Solid`, `Dash`, `Dot`, `DashDot`, `DashDotDot`ou `Custom`).|`Dash`|
+|Épaisseur du séparateur|Épaisseur de la ligne de séparation, en pouces.|0.03125|
+|Couleur du texte|Couleur utilisée pour les éléments décoratifs de texte associés à ce couloir.|Black|
 |Modificateur d'accès|Niveau d’accès de la classe (`public` ou `internal`).|Public|
 |Attributs personnalisés|Utilisé pour ajouter des attributs à la classe de code générée à partir de ce couloir.|\<aucune>|
 |Génère un doublon dérivé|Si `True`, une classe de base et une classe partielle (pour prendre en charge la personnalisation via des substitutions) sont générées. Pour plus d’informations, consultez [substitution et extension des classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|False|
@@ -39,8 +39,8 @@ Vous pouvez ajouter des couloirs à un diagramme. Les couloirs divisent un diagr
 |Couloir de base|Classe de base de ce couloir.|(aucune)|
 |Name|Nom de ce couloir.|Nom actuel|
 |Espace de noms|Espace de noms affilié à ce couloir.|Espace de noms actuel|
-|Type d’info-bulle|Comment l’info-bulle est définie (`fixed`, `variable` ou `none`). Si `fixed`, la valeur de la propriété `Fixed Tooltip Text` est utilisée ; Si `variable`, l’info-bulle est définie dans le code personnalisé.|\<aucune>|
-|Notes|Notes informelles associées à ce couloir.|\<aucune>|
+|Type d’info-bulle|Comment l’info-bulle est définie (`fixed`, `variable`ou `none`). Si `fixed`, la valeur de la propriété `Fixed Tooltip Text` est utilisée ; Si `variable`, l’info-bulle est définie dans le code personnalisé.|\<aucune>|
+|Remarques|Notes informelles associées à ce couloir.|\<aucune>|
 |Alignement|Alignement horizontal ou vertical.|Vertical|
 |Hauteur initiale|Hauteur initiale de ce couloir, en pouces. S’applique uniquement aux couloirs horizontaux.|0|
 |Largeur initiale|Largeur initiale de ce couloir, en pouces. S’applique uniquement aux couloirs verticaux.|0|

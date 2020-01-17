@@ -8,15 +8,15 @@ helpviewer_keywords:
 - load tests, adding browsers
 - load tests, removing browsers
 ms.assetid: 47f981d9-3038-45cc-a486-82b9daf9a9a1
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b3f80da91181e4cb555d0ce96a5b4d2fb797eb0d
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 394331ae06760e0547cfc2b5a37a6dcd357e3614
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72664989"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114534"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario"></a>Modifier la combinaison de tests pour spécifier les types de navigateurs web dans un scénario de test de charge
 
@@ -69,7 +69,7 @@ Le contrôle de combinaison vous permet d'ajuster le pourcentage de charge distr
 
 Lorsque vous déplacez un curseur, les valeurs en pourcentage de tous les éléments disponibles changent. Si plus de deux éléments sont disponibles, la charge que vous ajoutez ou supprimez est répartie de manière égale entre les autres éléments. Il est possible de modifier ce comportement. Si vous activez la case à cocher dans la colonne de verrouillage d'un élément particulier, vous verrouillez la valeur en pourcentage spécifiée pour cet élément. Ensuite, lorsque vous déplacez un curseur, la charge que vous ajoutez ou supprimez ne s'applique qu'aux éléments non verrouillés restants.
 
-Le bouton **Distribuer** permet d’allouer les valeurs en pourcentage de manière égale entre tous les éléments. Par exemple, si trois éléments sont disponibles et que vous choisissez **Distribuer**, les pourcentages sont 34, 33 et 33.
+Le bouton **Distribuer** permet d’allouer les valeurs en pourcentage de manière égale entre tous les éléments. Par exemple, si trois éléments sont disponibles et si vous choisissez **Distribuer**, les pourcentages sont 34, 33 et 33.
 
 > [!WARNING]
 > Le bouton **Distribuer** permet de remplacer les éléments verrouillés.

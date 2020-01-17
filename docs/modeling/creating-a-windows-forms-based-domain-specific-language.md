@@ -2,17 +2,17 @@
 title: Création d'un langage spécifique à un domaine basé sur Windows Forms
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc9d043f64204c50be06952ecc39be75e15087cf
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f565184dcb9570ecc34b61f1f2d4d0e2ce2a4110
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72654109"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114881"
 ---
 # <a name="create-a-windows-forms-based-domain-specific-language"></a>Créer un langage spécifique à un domaine basé sur Windows Forms
 
@@ -33,13 +33,13 @@ Le modèle DSL du **Concepteur WinForm minimal** crée un DSL minimal que vous p
    | | |
    |-|-|
    | Nom de la solution et du DSL | FarmApp |
-   | Espace de noms | Société. FarmApp |
+   | Espace de noms | Company.FarmApp |
 
 2. Expérimentez l’exemple initial fourni par le modèle :
 
    1. Transformez tous les modèles.
 
-   2. Générez et exécutez l’exemple (**Ctrl** +**F5**).
+   2. Générez et exécutez l’exemple (**Ctrl**+**F5**).
 
    3. Dans l’instance expérimentale de Visual Studio, ouvrez le fichier `Sample` dans le projet de débogage.
 
@@ -53,7 +53,7 @@ Le modèle DSL du **Concepteur WinForm minimal** crée un DSL minimal que vous p
 
 - `DslDefinition.dsl` ne contient aucun élément de diagramme. Cela est dû au fait que vous n’utiliserez pas de diagrammes DSL pour afficher les modèles d’instance de ce DSL. Au lieu de cela, vous allez lier un Windows Form au modèle, et les éléments du formulaire afficheront le modèle.
 
-- En plus des projets `Dsl` et `DslPackage`, la solution contient un troisième projet nommé `UI.` projet d'**interface utilisateur** contenant la définition d’un contrôle Windows Forms. `DslPackage` dépend de `UI` et `UI` dépend de `Dsl`.
+- En plus des projets `Dsl` et `DslPackage`, la solution contient un troisième projet nommé `UI.`projet d' **interface utilisateur** contenant la définition d’un contrôle Windows Forms. `DslPackage` dépend de `UI`et `UI` dépend de `Dsl`.
 
 - Dans le projet `DslPackage`, `UI\DocView.cs` contient le code qui affiche le contrôle Windows Forms qui est défini dans le projet `UI`.
 
@@ -71,7 +71,7 @@ Lorsque vous mettez à jour le fichier de définition DSL pour définir votre pr
 
 La définition DSL suivante est utilisée dans cette procédure pas à pas.
 
-![WPF&#45;&#45;de DSL 1](../modeling/media/dsl-wpf-1.png)
+![DSL&#45;Wpf&#45;1](../modeling/media/dsl-wpf-1.png)
 
 1. Ouvrez DslDefinition. DSL dans le concepteur DSL.
 
@@ -162,7 +162,7 @@ La définition DSL suivante est utilisée dans cette procédure pas à pas.
 
      Définissez la propriété **DataMember** sur **animaux** ou **champs**.
 
-10. Définissez les propriétés **DataSource** de `AnimalGridView` sur `AnimalBinding` et de `FieldGridView` sur `FieldBinding`.
+10. Définissez les propriétés **DataSource** de `AnimalGridView` sur `AnimalBinding`et de `FieldGridView` sur `FieldBinding`.
 
 11. Ajustez la disposition du contrôle de la batterie de serveurs à votre goût.
 
@@ -174,7 +174,7 @@ La définition DSL suivante est utilisée dans cette procédure pas à pas.
 
 - Cela garantit que, lorsque l’utilisateur sélectionne une ligne, le Fenêtre Propriétés affiche les propriétés de l’élément de modèle correspondant, au lieu de la ligne de la grille de données.
 
-  ![DslWpf4 ](../modeling/media/dslwpf4.png) schéma de liens entre les sources de données et les vues.
+  ![DslWpf4](../modeling/media/dslwpf4.png) schéma de liens entre les sources de données et les vues.
 
 ### <a name="complete-the-bindings-to-the-dsl"></a>Terminer les liaisons au DSL
 
@@ -300,7 +300,7 @@ La solution DSL peut désormais être générée et exécutée, bien que vous pu
 
     Vous devez être en mesure de modifier le nom de l’élément dans la vue de grille de données. Vous pouvez également le supprimer.
 
-   ![WPF&#45;&#45;de DSL 2](../modeling/media/dsl-wpf-2.png)
+   ![DSL&#45;Wpf&#45;2](../modeling/media/dsl-wpf-2.png)
 
 ### <a name="about-the-code-to-add-an-element"></a>À propos du code pour ajouter un élément
 

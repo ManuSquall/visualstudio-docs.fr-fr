@@ -9,15 +9,15 @@ helpviewer_keywords:
 - load tests, virtual networks
 - network mix
 ms.assetid: 3c4f7874-081a-4ec4-9510-4d6d7d863a11
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dbf5dbbd9f2726eee368a3066bda686f803d46fb
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 60fa2bd38f3d7e594e9af7ba8ec544518bdbb920
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659946"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115300"
 ---
 # <a name="specify-virtual-network-types-in-a-load-test-scenario"></a>Spécifier des types de réseaux virtuels dans un scénario de test de charge
 
@@ -90,7 +90,7 @@ Le contrôle de combinaison vous permet d'ajuster le pourcentage de charge distr
 
 Lorsque vous déplacez un curseur, les valeurs en pourcentage de tous les éléments disponibles changent. Si plus de deux éléments sont disponibles, la charge que vous ajoutez ou supprimez est répartie de manière égale entre les autres éléments. Il est possible de modifier ce comportement. Si vous activez la case à cocher dans la colonne de verrouillage d'un élément particulier, vous verrouillez la valeur en pourcentage spécifiée pour cet élément. Ensuite, lorsque vous déplacez un curseur, la charge que vous ajoutez ou supprimez ne s'applique qu'aux éléments non verrouillés restants.
 
-Le bouton **Distribuer** permet d’allouer les valeurs en pourcentage de manière égale entre tous les éléments. Par exemple, si trois éléments sont disponibles et que vous choisissez **Distribuer**, les pourcentages sont 34, 33 et 33.
+Le bouton **Distribuer** permet d’allouer les valeurs en pourcentage de manière égale entre tous les éléments. Par exemple, si trois éléments sont disponibles et si vous choisissez **Distribuer**, les pourcentages sont 34, 33 et 33.
 
 > [!WARNING]
 > Le bouton **Distribuer** permet de remplacer les éléments verrouillés.
