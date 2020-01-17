@@ -3,19 +3,19 @@ title: ID de composant et de charge de travail de Visual Studio Professional 20
 titleSuffix: ''
 description: Utilisez les ID de composant et de charge de travail pour installer Visual Studio à l’aide de la ligne de commande ou pour spécifier comme dépendance dans un manifeste VSIX
 keywords: ''
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.date: 12/03/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 414c68f544c88b1ee4de7ed1290b55be0000959e
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: a785f03f5588b951f9473ef6c4a88099c33d44f1
+ms.sourcegitcommit: 3b48ce4649d38a7e3b095bd087739d6131e49d1b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74795834"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76158964"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-professional-2019"></a>Éditeur de base de Visual Studio (inclus avec Visual Studio Professional 2019)
 
@@ -829,7 +829,7 @@ Component.Xamarin.Profiler | Xamarin Profiler | 16.0.28315.86
 Component.Xamarin.Workbooks | Xamarin Workbooks | 16.0.28315.86
 Microsoft.Component.ClickOnce | Publication ClickOnce | 16.4.29409.204
 Microsoft.Component.HelpViewer | Visionneuse d'aide | 16.0.28625.61
-Microsoft.Net.Component.4.6.1.SDK | SDK .NET Framework 4.6.1 | 16.4.29409.204
+Microsoft.Net.Component.4.6.1.SDK | Kit de développement logiciel (SDK) .NET Framework 4.6.1 | 16.4.29409.204
 Microsoft.Net.Component.4.6.2.SDK | SDK .NET Framework 4.6.2 | 16.4.29409.204
 Microsoft.Net.Component.4.7.1.SDK | SDK .NET Framework 4.7.1 | 16.4.29409.204
 Microsoft.Net.Component.4.7.2.SDK | Kit SDK .NET Framework 4.7.2 | 16.4.29409.204
