@@ -3,25 +3,25 @@ title: ID de composant et de charge de travail de Visual Studio Test Agent 2017
 titleSuffix: ''
 description: Utiliser les ID de composant et de charge de travail de Visual Studio pour exécuter des tests automatisés et de chargement à distance
 keywords: ''
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.date: 2/12/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 0a1661b885db877f216c0c9d3d8363825ea5f8eb
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
-ms.translationtype: HT
+ms.openlocfilehash: e3dda1867ee4f54588456c668639e51652d7f8e1
+ms.sourcegitcommit: 3b48ce4649d38a7e3b095bd087739d6131e49d1b
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68177544"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76159003"
 ---
 ## <a name="test-agent"></a>Agent de test
 
 **ID :** Microsoft.VisualStudio.Workload.TestAgent
 
-**Description :** Prend en charge l’exécution de tests automatisés et de tests de charge à distance
+**Description :** prend en charge l’exécution de tests automatisés et de tests de chargement à distance
 
 ### <a name="components-included-by-this-workload"></a>Composants inclus par cette charge de travail
 
