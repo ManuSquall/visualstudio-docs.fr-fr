@@ -2,17 +2,17 @@
 title: Générer et configurer votre application à partir de modèles
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13d943b8d86bd9ca912816e0f19993959ca303c1
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8ea3fe0027827396a49eec4c6b245a9ea59652b7
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748389"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114902"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Générer et configurer votre application à partir de modèles
 Vous pouvez générer ou configurer certaines parties de votre application à partir d'un modèle.
@@ -20,7 +20,7 @@ Vous pouvez générer ou configurer certaines parties de votre application à pa
  Il représente les impératifs plus directement que le code. En dérivant le comportement de l'application directement à partir du modèle, vous pouvez répondre aux changements d'impératifs avec beaucoup plus de rapidité et de fiabilité que par la mise à jour du code. Bien qu'un travail initial soit nécessaire pour configurer la dérivation, cet investissement est rentable si vous prévoyez que les impératifs changeront ou si vous envisagez de créer plusieurs variantes du produit.
 
 ## <a name="generating-the-code-of-your-application-from-a-model"></a>Génération du code de votre application à partir d'un modèle
- Pour générer du code, le plus simple consiste à utiliser des modèles de texte. Vous pouvez générer du code dans la même solution Visual Studio que celle dans laquelle vous conservez le modèle. Pour plus d'informations, voir :
+ Pour générer du code, le plus simple consiste à utiliser des modèles de texte. Vous pouvez générer du code dans la même solution Visual Studio que celle dans laquelle vous conservez le modèle. Pour plus d'informations, consultez .
 
 - [Génération de code au moment du design à l’aide de modèles de texte T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 
@@ -35,7 +35,7 @@ Vous pouvez générer ou configurer certaines parties de votre application à pa
   Toutefois, si vous commencez avec une application existante, vous constaterez peut-être que de nombreuses opérations de refactorisation sont nécessaires pour séparer les différents comportements régis par le modèle, pour qu'ils puissent varier indépendamment. Nous vous recommandons d'évaluer cet aspect de l'application lors de l'estimation du coût de votre projet.
 
 ## <a name="configuring-your-application-from-a-model"></a>Configuration de votre application à partir d'un modèle
- Si vous souhaitez faire varier le comportement de votre application au moment de l'exécution, vous ne pouvez pas utiliser la génération de code, qui génère le code source avant que l'application soit compilée. Au lieu de cela, vous pouvez concevoir votre application pour lire le modèle et faire varier son comportement en conséquence. Pour plus d'informations, voir :
+ Si vous souhaitez faire varier le comportement de votre application au moment de l'exécution, vous ne pouvez pas utiliser la génération de code, qui génère le code source avant que l'application soit compilée. Au lieu de cela, vous pouvez concevoir votre application pour lire le modèle et faire varier son comportement en conséquence. Pour plus d'informations, consultez .
 
 - [Guide pratique pour ouvrir un modèle depuis un fichier dans le code du programme](../modeling/how-to-open-a-model-from-file-in-program-code.md)
 

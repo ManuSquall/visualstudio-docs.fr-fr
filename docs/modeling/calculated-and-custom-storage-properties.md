@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain properties
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: def432c5c2861716b4b3fb6e2f93f20a93a54a28
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 52915f0bac2bd172daf909541ecfa86396d90a5d
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748537"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115198"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Propriétés de stockage calculées et personnalisées
 Toutes les propriétés de domaine dans un langage spécifique à un domaine (DSL) peuvent être affichées à l’utilisateur sur le diagramme et dans l’Explorateur de langage, et être accessibles par le code du programme. Toutefois, les propriétés diffèrent dans la façon dont leurs valeurs sont stockées.
@@ -26,7 +26,7 @@ Toutes les propriétés de domaine dans un langage spécifique à un domaine (DS
 |-|-|
 |**Standard** (par défaut)|Propriété de domaine enregistrée dans le *magasin* et sérialisée dans un fichier.|
 |**Calculé**|Propriété de domaine en lecture seule qui n’est pas enregistrée dans le magasin, mais qui est calculée à partir d’autres valeurs.<br /><br /> Par exemple, `Person.Age` peut être calculé à partir de `Person.BirthDate`.<br /><br /> Vous devez fournir le code qui effectue le calcul. En règle générale, vous calculez la valeur à partir d’autres propriétés de domaine. Toutefois, vous pouvez également utiliser des ressources externes.|
-|**Stockage personnalisé**|Propriété de domaine qui n’est pas enregistrée directement dans le magasin, mais qui peut être à la fois obtenue et définie.<br /><br /> Vous devez fournir les méthodes qui obtiennent et définissent la valeur.<br /><br /> Par exemple, `Person.FullAddress` peut être stocké dans `Person.StreetAddress`, `Person.City` et `Person.PostalCode`.<br /><br /> Vous pouvez également accéder à des ressources externes, par exemple pour obtenir et définir des valeurs à partir d’une base de données.<br /><br /> Votre code ne doit pas définir de valeurs dans le magasin lorsque `Store.InUndoRedoOrRollback` a la valeur true. Consultez [transactions et méthodes setter personnalisées](#setters).|
+|**Stockage personnalisé**|Propriété de domaine qui n’est pas enregistrée directement dans le magasin, mais qui peut être à la fois obtenue et définie.<br /><br /> Vous devez fournir les méthodes qui obtiennent et définissent la valeur.<br /><br /> Par exemple, `Person.FullAddress` peut être stocké dans `Person.StreetAddress`, `Person.City`et `Person.PostalCode`.<br /><br /> Vous pouvez également accéder à des ressources externes, par exemple pour obtenir et définir des valeurs à partir d’une base de données.<br /><br /> Votre code ne doit pas définir de valeurs dans le magasin lorsque `Store.InUndoRedoOrRollback` a la valeur true. Consultez [transactions et méthodes setter personnalisées](#setters).|
 
 ## <a name="providing-the-code-for-a-calculated-or-custom-storage-property"></a>Fourniture du code pour une propriété de stockage calculée ou personnalisée
  Si vous définissez le type d’une propriété de domaine sur stockage calculé ou personnalisé, vous devez fournir des méthodes d’accès. Lorsque vous générez votre solution, un rapport d’erreurs vous indique ce qui est requis.
@@ -52,7 +52,7 @@ Toutes les propriétés de domaine dans un langage spécifique à un domaine (DS
     > [!NOTE]
     > Ce fichier est généré à partir de DslDefinition. DSL. Si vous modifiez ce fichier, vos modifications seront perdues la prochaine fois que vous cliquerez sur **transformer tous les modèles**. Au lieu de cela, ajoutez la méthode requise dans un fichier séparé.
 
-6. Créez ou ouvrez un fichier de classe dans un dossier séparé, par exemple CustomCode \\*YourDomainClass*. cs.
+6. Créez ou ouvrez un fichier de classe dans un dossier séparé, par exemple CustomCode\\*YourDomainClass*. cs.
 
      Assurez-vous que l’espace de noms est le même que dans le code généré.
 
@@ -66,7 +66,7 @@ Toutes les propriétés de domaine dans un langage spécifique à un domaine (DS
     }  }
     ```
 
-8. Si vous définissez **type** sur **stockage personnalisé**, vous devrez également fournir une méthode de `Set`. Exemple :
+8. Si vous définissez **type** sur **stockage personnalisé**, vous devrez également fournir une méthode de `Set`. Par exemple :
 
     ```
     void SetAgeValue(int value)
@@ -90,7 +90,7 @@ Toutes les propriétés de domaine dans un langage spécifique à un domaine (DS
 
 - Toutefois, il doit mettre à jour toutes les ressources externes, telles que le contenu d’une base de données ou d’un fichier, ou des objets en dehors du magasin. Cela permet de s’assurer qu’ils sont conservés dans synchroniser avec les valeurs du magasin.
 
-  Exemple :
+  Par exemple :
 
 ```
 void SetAgeValue(int value)

@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c2f4c01a627fb2cd1b581331dd086e2d783d475f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8f6bd03b9d652909022adab169682160ae541677
+ms.sourcegitcommit: 3b48ce4649d38a7e3b095bd087739d6131e49d1b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596227"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76124502"
 ---
 # <a name="options-text-editor-c-advanced"></a>Options, Éditeur de texte, C#, Avancé
 
@@ -87,7 +87,7 @@ Utilisez la page d’options **Avancé** pour modifier les paramètres de mise e
    using System.Linq;
    ```
 
-- Suggérer des usings pour les types dans les assemblys de référence
+- Suggérer des usings pour les types dans les assemblys .NET Framework
 - Suggérer des usings pour les types dans les packages NuGet
 
    Quand ces options sont sélectionnées, une [Action rapide](../quick-actions.md) est disponible pour installer un package NuGet et ajouter une directive `using` pour les types non référencés.

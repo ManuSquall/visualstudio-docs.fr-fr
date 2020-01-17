@@ -5,17 +5,17 @@ ms.topic: reference
 f1_keywords:
 - WFDKeyboardShortcuts.UI
 ms.assetid: 9be75438-a4a3-4781-94e5-45b7ec082358
-author: jillre
-ms.author: jillfra
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f36e8b6d67d2405fbc74c0b1bf854b3a3baaf4da
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a8892f46585179ae5857d48deffd982e1cfc0dee
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72650153"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115384"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Raccourcis clavier dans Workflow Designer
 
@@ -82,7 +82,7 @@ Par défaut, les raccourcis clavier par défaut pour la modification de texte Vi
   - Couper
   - Copier
   - Coller
-  - Tout Sélectionner
+  - Sélectionner tout
   - Annuler
   - Rétablir
 

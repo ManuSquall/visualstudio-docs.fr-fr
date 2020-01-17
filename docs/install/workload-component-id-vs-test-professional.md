@@ -2,8 +2,8 @@
 title: ID de composant et de charge de travail de Visual Studio Test Professional
 titleSuffix: ''
 description: Utilisez les ID de composant et de charge de travail de Visual Studio pour fournir des outils de test intégrés pour les testeurs généralistes
-author: jillre
-ms.author: jillfra
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.date: 09/23/2019
 ms.topic: reference
@@ -15,12 +15,12 @@ ms.assetid: 70c03438-8434-4921-ada0-c172519af431
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 monikerRange: vs-2017
-ms.openlocfilehash: 9ed75c9731d36f48dcb50be7f929c4cba5ed3b6c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c662732a4ba1cd05b1c9affa8fb86305f65b10a7
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590895"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114316"
 ---
 # <a name="visual-studio-test-professional-component-directory"></a>Répertoire des composants Visual Studio Test Professional
 

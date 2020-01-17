@@ -8,17 +8,17 @@ helpviewer_keywords:
 - captions, data-bound
 - Data Sources Window, label captions
 ms.assetid: 6d4d15f8-4d78-42fd-af64-779ae98d62c8
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 932d50d44fbfaa810225ef90c2f5361bc26d9b72
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: f7780cfb3b266de6f477e74d1b352cf6b24aab42
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72648567"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76113663"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personnaliser la façon dont Visual Studio crée des légendes pour les contrôles liés aux données
 
@@ -26,13 +26,13 @@ Lorsque vous faites glisser des éléments depuis la [fenêtre sources de donné
 
 ::: moniker range="vs-2017"
 
-Vous pouvez personnaliser la façon dont ces étiquettes sont créées en définissant les valeurs **SmartCaptionExpression**, **SmartCaptionReplacement**et **SmartCaptionSuffix** dans **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0** Clé de registre des concepteurs \data.
+Vous pouvez personnaliser la façon dont ces étiquettes sont créées en définissant les valeurs **SmartCaptionExpression**, **SmartCaptionReplacement**et **SmartCaptionSuffix** dans la clé de Registre **HKEY_CURRENT_USER \software\microsoft\visualstudio\15.0\data concepteurs** .
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Vous pouvez personnaliser la façon dont ces étiquettes sont créées en définissant les valeurs **SmartCaptionExpression**, **SmartCaptionReplacement**et **SmartCaptionSuffix** dans **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0** Clé de registre des concepteurs \data.
+Vous pouvez personnaliser la façon dont ces étiquettes sont créées en définissant les valeurs **SmartCaptionExpression**, **SmartCaptionReplacement**et **SmartCaptionSuffix** dans la clé de Registre **HKEY_CURRENT_USER \software\microsoft\visualstudio\16.0\data concepteurs** .
 
 ::: moniker-end
 
@@ -68,7 +68,7 @@ Le tableau suivant répertorie les paramètres par défaut internes pour ces val
 
 2. Tapez `regedit` dans la boîte de dialogue **exécuter** , puis cliquez sur **OK**.
 
-3. Développez le nœud **HKEY_CURRENT_USER**  > **Software**  > **Microsoft**  > **VisualStudio** .
+3. Développez le nœud **HKEY_CURRENT_USER** > **logiciel** > **Microsoft** > **VisualStudio** .
 
 ::: moniker range="vs-2017"
 
@@ -108,7 +108,7 @@ Le tableau suivant répertorie les paramètres par défaut internes pour ces val
 
 2. Tapez `regedit` dans la boîte de dialogue **exécuter** , puis cliquez sur **OK**.
 
-3. Développez le nœud **HKEY_CURRENT_USER**  > **Software**  > **Microsoft**  > **VisualStudio** .
+3. Développez le nœud **HKEY_CURRENT_USER** > **logiciel** > **Microsoft** > **VisualStudio** .
 
 ::: moniker range="vs-2017"
 

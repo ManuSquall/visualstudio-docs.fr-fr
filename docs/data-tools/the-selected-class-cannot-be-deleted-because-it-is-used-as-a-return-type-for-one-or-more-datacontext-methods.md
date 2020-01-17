@@ -3,17 +3,17 @@ title: Impossible de supprimer la classe sélectionnée car elle est utilisée c
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: d68254a0-f3a1-47e2-aed3-a83471e1d711
-author: jillre
-ms.author: jillfra
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: aff8d7c01291c410f81b00c689f600507841965b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 249a5338985983509f04e0ff268b2f30e2773f71
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72640054"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76113559"
 ---
 # <a name="the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods"></a>Impossible de supprimer la classe sélectionnée car elle est utilisée comme type de retour pour une ou plusieurs méthodes DataContext
 

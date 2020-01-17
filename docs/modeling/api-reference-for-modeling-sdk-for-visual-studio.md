@@ -1,45 +1,45 @@
 ---
-title: Informations de référence sur l’API pour modeler SDK
+title: Référence des API pour la modélisation du Kit de développement logiciel
 ms.date: 11/04/2016
 ms.topic: reference
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30a0ef7a4b94e6d9cb55583c8bc7317e28d08b93
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 0e4be65a94892aa87dbc7f146ce3671336a37558
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747641"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76113731"
 ---
 # <a name="api-reference-for-modeling-sdk-for-visual-studio"></a>Référence des API pour le Kit de développement logiciel de modélisation pour Visual Studio
 
-Le kit de développement logiciel (SDK) de visualisation et de modélisation de Visual Studio fournit la plate-forme sur laquelle vos outils DSL (langage spécifique à un domaine) sont générés.
+Le Visual Studio Visualization and Modeling SDK fournit la plateforme sur laquelle reposent vos outils de langages spécifiques à un domaine (DSL).
 
-Cette section contient des documents de référence pour les espaces de noms dont le nom commence par « Microsoft. VisualStudio. Modeling ».
+Cette section contient des documents de référence pour les espaces de noms qui ont des noms qui commencent par « Microsoft.VisualStudio.Modeling ».
 
 |Espace de noms|Contenu|
 |-|-|
-|<xref:Microsoft.VisualStudio.Modeling?displayProperty=fullName>|Les classes telles que ModelElement, qui est la classe de base de toutes les classes de domaine que vous définissez dans une solution DSL.|
-|<xref:Microsoft.VisualStudio.Modeling.Design?displayProperty=fullName>|Les classes qui font partie d’une définition DSL.|
-|<xref:Microsoft.VisualStudio.Modeling.Diagnostics?displayProperty=fullName>|Visionneuse du magasin de modèles et outils de mesure des performances.|
-|<xref:Microsoft.VisualStudio.Modeling.Diagrams?displayProperty=fullName>|Les classes telles que ShapeElement, qui est la classe de base de toutes les formes que vous définissez dans un DSL.|
-|<xref:Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement?displayProperty=fullName>|Méthodes de mouvement et de sélection.|
-|<xref:Microsoft.VisualStudio.Modeling.DslDefinition?displayProperty=fullName>|API du concepteur de définitions DSL.|
-|<xref:Microsoft.VisualStudio.Modeling.DslDefinition.Design?displayProperty=fullName>|Classes internes du concepteur de définitions DSL.|
-|<xref:Microsoft.VisualStudio.Modeling.DslDefinition.ExtensionEnablement?displayProperty=fullName>|Attributs qui vous permettent d’étendre le concepteur DSL avec les commandes, les gestes et la validation.|
-|<xref:Microsoft.VisualStudio.Modeling.Extensibility?displayProperty=fullName>|Méthodes d’extension pour ModelElement qui implémentent l’extensibilité DSL.|
-|<xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement?displayProperty=fullName>|Attributs d’extensibilité|
-|<xref:Microsoft.VisualStudio.Modeling.Immutability?displayProperty=fullName>|Vous permet de créer des parties d’un modèle en lecture seule.|
-|[Microsoft. VisualStudio. Modeling. Integration](/previous-versions/ee904412(v=vs.140))|L’API ModelBus, qui vous permet d’intégrer différents modèles.|
-|[Microsoft. VisualStudio. Modeling. Integration. Picker](/previous-versions/ee904394(v=vs.140))|La boîte de dialogue qui permet aux utilisateurs d’accéder aux modèles et aux éléments pour créer des références ModelBus.|
-|`Microsoft.VisualStudio.Modeling.Integration.Picker.Hosting`|Service du sélecteur.|
-|[Microsoft. VisualStudio. Modeling. Integration. Shell](/previous-versions/ee869435(v=vs.140))|Infrastructure d’adaptateur ModelBus pour Visual Studio.|
-|[Microsoft. VisualStudio. Modeling. Integration. Shell. Picker](/previous-versions/ee886769(v=vs.140))|Boîte de dialogue du sélecteur qui permet aux utilisateurs d’accéder aux modèles et aux éléments pour créer des références ModelBus.|
-|<xref:Microsoft.VisualStudio.Modeling.Shell?displayProperty=fullName>|Interface entre DSL et Visual Studio.|
-|<xref:Microsoft.VisualStudio.Modeling.Shell.ExtensionEnablement?displayProperty=fullName>|Vous permet de définir des commandes de menu de raccourci (contexte).|
+|<xref:Microsoft.VisualStudio.Modeling?displayProperty=fullName>|Classes telles que l’élément de modèle, qui est la classe de base de toutes les classes de domaine que vous définissez dans une solution DSL.|
+|<xref:Microsoft.VisualStudio.Modeling.Design?displayProperty=fullName>|Classes qui font partie d’une définition DSL.|
+|<xref:Microsoft.VisualStudio.Modeling.Diagnostics?displayProperty=fullName>|Les outils de mesure de modèle Observateur de Store et les performances.|
+|<xref:Microsoft.VisualStudio.Modeling.Diagrams?displayProperty=fullName>|Classes telles que ShapeElement, qui est la classe de base de toutes les formes que vous définissez dans une solution DSL.|
+|<xref:Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement?displayProperty=fullName>|Méthodes de mouvement et la sélection.|
+|<xref:Microsoft.VisualStudio.Modeling.DslDefinition?displayProperty=fullName>|L’API du Concepteur de définition DSL.|
+|<xref:Microsoft.VisualStudio.Modeling.DslDefinition.Design?displayProperty=fullName>|Classes internes du Concepteur de définition DSL.|
+|<xref:Microsoft.VisualStudio.Modeling.DslDefinition.ExtensionEnablement?displayProperty=fullName>|Attributs qui vous permettent d’étendre le concepteur DSL avec des commandes, mouvements et la validation.|
+|<xref:Microsoft.VisualStudio.Modeling.Extensibility?displayProperty=fullName>|Méthodes d’extension pour l’élément de modèle qui implémentent l’extensibilité de DSL.|
+|<xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement?displayProperty=fullName>|Attributs de l’extensibilité|
+|<xref:Microsoft.VisualStudio.Modeling.Immutability?displayProperty=fullName>|Vous permet de rendre des parties d’un modèle en lecture seule.|
+|[Microsoft. VisualStudio. Modeling. Integration](/previous-versions/ee904412(v=vs.140))|L’API de Modelbus, qui vous permet d’intégrer des modèles différents.|
+|[Microsoft. VisualStudio. Modeling. Integration. Picker](/previous-versions/ee904394(v=vs.140))|La boîte de dialogue qui permet aux utilisateurs d’accéder à des modèles et des éléments pour créer les références Modelbus.|
+|`Microsoft.VisualStudio.Modeling.Integration.Picker.Hosting`|Le service de sélecteur.|
+|[Microsoft. VisualStudio. Modeling. Integration. Shell](/previous-versions/ee869435(v=vs.140))|Infrastructure d’adaptateurs ModelBus de Visual Studio.|
+|[Microsoft. VisualStudio. Modeling. Integration. Shell. Picker](/previous-versions/ee886769(v=vs.140))|La boîte de dialogue de sélecteur qui permet aux utilisateurs d’accéder à des modèles et des éléments pour créer les références Modelbus.|
+|<xref:Microsoft.VisualStudio.Modeling.Shell?displayProperty=fullName>|L’interface entre plusieurs DSL et Visual Studio.|
+|<xref:Microsoft.VisualStudio.Modeling.Shell.ExtensionEnablement?displayProperty=fullName>|Vous permet de définir des commandes du menu contextuel (contexte).|
 |<xref:Microsoft.VisualStudio.Modeling.Validation?displayProperty=fullName>|Vous permet de définir des contraintes de validation.|
 
 ## <a name="see-also"></a>Voir aussi

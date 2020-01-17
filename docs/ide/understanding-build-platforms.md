@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dbe00e53942827c96831889339f82d2f5e4dff7a
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 996c863612907593ce2c198d4910cda150737c3c
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925827"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115062"
 ---
 # <a name="understand-build-platforms"></a>Présentation des plateformes de build
 
@@ -30,14 +30,14 @@ Vous pouvez stocker différentes versions de propriétés de solution et de proj
 
 ## <a name="in-this-section"></a>Dans cette section
 
-[Guide pratique pour configurer des projets pour des plateformes cibles](../ide/how-to-configure-projects-to-target-platforms.md)\
+[Comment : configurer des projets pour cibler des plateformes](../ide/how-to-configure-projects-to-target-platforms.md)\
 Explique comment configurer un projet pour cibler une plateforme spécifique.
 
-[Guide pratique pour configurer des projets pour qu’ils ciblent plusieurs plateformes](../ide/how-to-configure-projects-to-target-multiple-platforms.md)\
+[Comment : configurer des projets pour cibler plusieurs plateformes](../ide/how-to-configure-projects-to-target-multiple-platforms.md)\
 Explique comment configurer un projet pour cibler plusieurs plateformes.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Procédure pas à pas : Générer une application](../ide/walkthrough-building-an-application.md)
+- [Procédure pas à pas : générer une application](../ide/walkthrough-building-an-application.md)
 - [Générer et nettoyer des solutions et des projets dans Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
 - [Compiler et générer](../ide/compiling-and-building-in-visual-studio.md)

@@ -4,23 +4,23 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1443cacd6d2e7c8f980e0bf423832d9b013e560f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: f4923a858d9d46c477f50df2a08440a10e9309ef
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748382"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114525"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Comment : intercepter un événement Click sur une forme ou un décorateur
 Les procédures suivantes montrent comment intercepter un clic sur une forme ou un élément décoratif d’icône. Vous pouvez intercepter les clics, les double-clics, les glissements et autres gestes, et faire en sorte que l’élément réponde.
 
 ## <a name="to-intercept-clicks-on-shapes"></a>Pour intercepter des clics sur des formes
- Dans le projet DSL, dans un fichier de code distinct des fichiers de code générés, écrivez une définition de classe partielle pour la classe Shape. Remplacez `OnDoubleClick()` ou l’une des autres méthodes dont le nom commence par `On...`. Exemple :
+ Dans le projet DSL, dans un fichier de code distinct des fichiers de code générés, écrivez une définition de classe partielle pour la classe Shape. Substituez `OnDoubleClick()` ou l’une des autres méthodes dont le nom commence par `On...`. Par exemple :
 
 ```csharp
 public partial class MyShape // change

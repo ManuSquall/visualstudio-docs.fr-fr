@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - Domain-Specific Language, definition file
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99145768ef4e0c37f729477ee598628a3b8d0e9a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 97736dd9893f3a5d0c07f464ae75849395270d4b
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72605988"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114923"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>Le fichier DslDefinition.dsl
 
@@ -26,9 +26,9 @@ Les exemples dans cette rubrique sont tirés du modèle de solution Diagramme de
 
 ## <a name="sections-of-the-dsldefinitiondsl-file"></a>Sections du fichier DslDefinition.dsl
 
-L’élément racine est \<Dsl > et ses attributs identifient le nom du langage spécifique à un domaine, l’espace de noms et les numéros de version majeure et mineure pour le contrôle de version. Le schéma `DslDefinitionModel` définit le contenu et la structure d'un fichier DslDefinition.dsl valide.
+L’élément racine est \<> DSL, et ses attributs identifient le nom du langage spécifique à un domaine, l’espace de noms et les numéros de version majeure et mineure pour le contrôle de version. Le schéma `DslDefinitionModel` définit le contenu et la structure d'un fichier DslDefinition.dsl valide.
 
-Les éléments enfants de l’élément racine \<Dsl > sont les suivants :
+Les éléments enfants de l’élément racine \<DSL > sont les suivants :
 
 ### <a name="classes"></a>Classes
 
@@ -40,7 +40,7 @@ Cette section définit chaque relation dans le modèle. La source et la cible re
 
 ### <a name="types"></a>Types
 
-Cette section définit chaque type et son espace de noms. Il existe deux types de propriétés de domaine. Les `DomainEnumerations` sont définies dans le modèle et génèrent des types dans DomainModel.cs. Les `ExternalTypes` font référence à des types qui sont définis ailleurs (par exemple `String` ou `Int32`) et ils ne génèrent rien.
+Cette section définit chaque type et son espace de noms. Il existe deux types de propriétés de domaine. `DomainEnumerations` sont définis dans le modèle et génèrent des types dans DomainModel.cs. `ExternalTypes` font référence à des types qui sont définis ailleurs (par exemple, `String` ou `Int32`) et ne génèrent rien.
 
 ### <a name="shapes"></a>Formes
 
@@ -148,7 +148,7 @@ Chaque classe a un ensemble de propriétés et peut avoir une classe de base. Da
 </DomainClass>
 ```
 
-`NamedElement` est la base de plusieurs des autres classes, telle que `Component`, qui possède ses propres propriétés en plus de la propriété `Name`, qu'elle a hérité de `NamedElement`. Le nœud enfant BaseClass contient une référence de moniker. La classe référencée étant dans le même espace de noms, seul son nom est nécessaire dans le moniker :
+`NamedElement` est la base de plusieurs des autres classes comme `Component`, qui possède ses propres propriétés en plus de la propriété `Name`, qu’elle a héritée de `NamedElement`. Le nœud enfant BaseClass contient une référence de moniker. La classe référencée étant dans le même espace de noms, seul son nom est nécessaire dans le moniker :
 
 ```xml
 <DomainClass Name="Component" Namespace="Fabrikam.CmptDsl5"              DisplayName="Component">
@@ -168,13 +168,13 @@ Chaque classe de domaine (y compris les relations, les formes, les connecteurs e
 
 - **ID.** Cet attribut est un GUID. Si vous ne spécifiez pas de valeur dans le fichier, le concepteur de langage spécifique à un domaine crée une valeur. (Dans les illustrations de ce document, cet attribut est généralement omis pour des raisons d'espace.)
 
-- **Nom et espace de noms.** Ces attributs spécifient le nom et l’espace de noms de la classe dans le code généré. Ensemble, ils doivent être uniques dans le langage spécifique à un domaine.
+- **Nom et espace de noms.** Ces attributs spécifient le nom et l'espace de noms de la classe dans le code généré. Ensemble, ils doivent être uniques dans le langage spécifique à un domaine.
 
-- **InheritanceModifier.** Cet attribut est « abstract », « sealed » ou None.
+- **InheritanceModifier.** Cet attribut est « abstract », « sealed » ou aucun.
 
 - **NomComplet.** Cet attribut est le nom qui apparaît dans la fenêtre **Propriétés** . L'attribut DisplayName peut contenir des espaces et autres signes de ponctuation.
 
-- **GeneratesDoubleDerived.** Si cet attribut a la valeur true, deux classes sont générées et l’une est une sous-classe de l’autre. Toutes les méthodes générées sont dans la base et les constructeurs sont dans la sous-classe. En définissant cet attribut, vous pouvez substituer toute méthode générée dans le code personnalisé.
+- **GeneratesDoubleDerived.** Si cet attribut à la valeur True, deux classes sont générées et l'une d'elles est une sous-classe de l'autre. Toutes les méthodes générées sont dans la base et les constructeurs sont dans la sous-classe. En définissant cet attribut, vous pouvez substituer toute méthode générée dans le code personnalisé.
 
 - **HasCustomConstructor**. Si cet attribut à la valeur True, le constructeur est omis du code généré pour que vous puissiez écrire votre propre version.
 
@@ -212,7 +212,7 @@ Chaque propriété de domaine peut aussi avoir les attributs suivants :
 
 - **IsElementName**. Si cet attribut à la valeur True, sa valeur est définie automatiquement sur une valeur unique quand une instance de la classe parente est créée. Cet attribut peut prendre la valeur True pour une seule propriété dans chaque classe, qui doit être de type String. Dans l'exemple Diagramme de composant, la propriété `Name` dans `NamedElement` a `IsElementName` définie sur True. Chaque fois qu'un utilisateur crée un élément `Component` (qui hérite de `NamedElement`), le nom est initialisé automatiquement avec une valeur telle que « Component6 ».
 
-- `DefaultValue`., Si vous avez spécifié cet attribut, la valeur que vous avez spécifiée est assignée à cet attribut pour les nouvelles instances de cette classe. Si `IsElementName` est définie, l'attribut DefaultValue spécifie la partie initiale de la nouvelle chaine.
+- `DefaultValue`. Si vous avez spécifié cet attribut, la valeur que vous avez spécifiée est assignée à cet attribut pour les nouvelles instances de cette classe. Si `IsElementName` est définie, l'attribut DefaultValue spécifie la partie initiale de la nouvelle chaine.
 
 - **Category** est l’en-tête sous lequel la propriété s’affiche dans la fenêtre **Propriétés** .
 
@@ -465,7 +465,7 @@ Le fichier sérialisé contient :
 
 (La relation Connection possède ses propres données de classe XML, qui fournissent ses noms d'éléments et d'attributs.)
 
-Si l’attribut **OmitElement** est défini sur true, le nom de rôle de relation est omis, ce qui permet d’abréger le fichier sérialisé et n’est pas ambigu si les deux classes n’ont pas plus d’une relation. Exemple :
+Si l’attribut **OmitElement** est défini sur true, le nom de rôle de relation est omis, ce qui permet d’abréger le fichier sérialisé et n’est pas ambigu si les deux classes n’ont pas plus d’une relation. Par exemple :
 
 ```xml
 <component name="Component3">
@@ -498,7 +498,7 @@ Le fichier DslDefinition.dsl est lui-même un fichier sérialisé et il est conf
       <XmlClassData ...>...</XmlClassData>
 ```
 
-- ConnectorHasDecorators est la relation d'incorporation entre `Connector` et `Decorator`. `UseFullForm` a été définie pour que le nom de la relation apparaisse avec sa liste de propriétés pour chaque lien à partir de l'objet Connector. Toutefois, `OmitElement` a également été définie pour qu'aucun `RoleElementName` n'englobe les différents liens incorporés dans `Connector` :
+- ConnectorHasDecorators est la relation d'incorporation entre `Connector` et `Decorator`. `UseFullForm` a été défini de sorte que le nom de la relation s’affiche avec sa liste de propriétés pour chaque lien de l’objet connecteur. Toutefois, `OmitElement` a également été définie pour qu'aucun `RoleElementName` n'englobe les différents liens incorporés dans `Connector` :
 
 ```xml
 <Connector Name="AssociationLink" ...>

@@ -8,15 +8,15 @@ helpviewer_keywords:
 - load test, results graph
 - load test results, graphs
 ms.assetid: 81536233-1962-40d9-9511-0b4633814d90
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b589e45fe32aff1ce0eea338675d42c3e3ea944a
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: acb08edf74d3ca35a2449f588976681d679caeb4
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72644359"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115179"
 ---
 # <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>Comment : ajouter et supprimer des compteurs sur des graphiques dans les résultats des tests de charge
 
@@ -34,7 +34,7 @@ Voici quelques instructions sur les taux d'échantillonnage :
 
 |Durée du test de charge|Taux d'échantillonnage recommandé|
 |-|-----------------------------|
-|\< 1 heure|5 secondes|
+|\< 1 heure|5 secondes|
 |1 à 8 heures|15 secondes|
 |8 à 24 heures|30 secondes|
 |> 24 heures|60 secondes|

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - reliability warnings
 - managed code analysis warnings, reliability warnings
 ms.assetid: 77886846-10a2-4585-968a-7eb60ebe07e8
-author: jillre
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 602f372e11c4a9a8506186535958fc4f22da7806
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e936222a95681796f5c5ca423d122995e1ea5f79
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72649115"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76113254"
 ---
 # <a name="reliability-warnings"></a>Avertissements liés à la fiabilité
 
@@ -33,4 +33,4 @@ Les avertissements de fiabilité prennent en charge la fiabilité des bibliothè
 |[CA2003 : Ne traitez pas les fibres comme des threads](../code-quality/ca2003.md)|Un thread managé est traité comme un thread Win32.|
 |[CA2004 : Supprimez les appels à GC.KeepAlive](../code-quality/ca2004.md)|Si vous effectuez une conversion en utilisation SafeHandle, supprimez tous les appels à GC. KeepAlive (objet). Dans ce cas, les classes n’ont pas besoin d’appeler GC. KeepAlive, en supposant qu’ils n’ont pas de finaliseur, mais qu’ils reposent sur SafeHandle pour finaliser le handle du système d’exploitation.|
 |[CA2006 : Utilisez SafeHandle pour encapsuler les ressources natives](../code-quality/ca2006.md)|L'utilisation de IntPtr dans du code managé peut être le signe d'un problème potentiel de sécurité et de fiabilité. Toute utilisation de IntPtr doit être passée en revue pour déterminer s’il est nécessaire de recourir à un SafeHandle ou une technologie similaire à la place.|
-|[Ca2007 : ne pas attendre directement une tâche](../code-quality/ca2007.md)|Une méthode asynchrone [attend](/dotnet/csharp/language-reference/keywords/await) un <xref:System.Threading.Tasks.Task> directement.|
+|[Ca2007 : ne pas attendre directement une tâche](../code-quality/ca2007.md)|Une méthode asynchrone [attend](/dotnet/csharp/language-reference/keywords/await) une <xref:System.Threading.Tasks.Task> directement.|

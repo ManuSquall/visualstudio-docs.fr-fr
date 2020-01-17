@@ -2,17 +2,17 @@
 title: Partage de classes entre plusieurs DSL à l'aide d'une bibliothèque DSL
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: jillre
-ms.author: jillfra
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a09622a2cc7ae6d2a2451ac1de6b628020cff19f
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 4bfadc1777dfb4ba0c8ea712cfd39becc47f54a1
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747406"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76111363"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>Partage de classes entre plusieurs DSL à l'aide d'une bibliothèque DSL
 Dans le kit de développement logiciel (SDK) de visualisation et de modélisation Visual Studio, vous pouvez créer une définition DSL incomplète que vous pouvez importer dans un autre langage DSL. Cela vous permet de factoriser des parties courantes de modèles similaires.
@@ -39,9 +39,9 @@ Dans le kit de développement logiciel (SDK) de visualisation et de modélisatio
 
 5. Cliquez sur **transformer tous les modèles**.
 
-6. Générez le projet.
+6. créer le projet ;
 
-7. Lorsque vous distribuez le DSL pour d’autres personnes à utiliser, vous devez fournir à la fois l’assembly compilé (DLL) et le `DslDefinition.dsl` de fichiers. Vous pouvez trouver l’assembly compilé dans un dossier sous `Dsl\bin\*`
+7. Lorsque vous distribuez le DSL pour d’autres personnes à utiliser, vous devez fournir à la fois l’assembly compilé (DLL) et le `DslDefinition.dsl`de fichiers. Vous pouvez trouver l’assembly compilé dans un dossier sous `Dsl\bin\*`
 
 #### <a name="to-import-a-dsl-library"></a>Pour importer une bibliothèque DSL
 
@@ -53,7 +53,7 @@ Dans le kit de développement logiciel (SDK) de visualisation et de modélisatio
 
 3. Vous pouvez utiliser les classes importées comme classes de base. Créez une classe de domaine dans le DSL d’importation et, dans le Fenêtre Propriétés, définissez **classe de base** sur une classe importée.
 
-4. Cliquez sur transformer tous les modèles.
+4. Cliquez sur Transformer tous les modèles.
 
 5. Ajoutez au projet DSL une référence à l’assembly (DLL) qui a été généré par le projet de bibliothèque DSL.
 
