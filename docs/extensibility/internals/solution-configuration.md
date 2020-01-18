@@ -10,12 +10,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 243af2549862f1d29c44ba5bfc3060d87d5c6f85
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 4d0a4243d0d64fbd9a436b49f42c99c275e9714b
+ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72723831"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "76269107"
 ---
 # <a name="solution-configuration"></a>Configuration de la solution
 Les configurations de solution stockent les propriétés au niveau de la solution. Ils dirigent le comportement de la clé de **démarrage** (F5) et des commandes de **génération** . Par défaut, ces commandes génèrent et démarrent la configuration Debug. Les deux commandes s’exécutent dans le contexte d’une configuration de solution. Cela signifie que l’utilisateur peut s’attendre à ce que la touche F5 démarre et génère la configuration de la solution active par le biais des paramètres. L’environnement est conçu pour optimiser les solutions plutôt que les projets lorsqu’il s’agit de générer et d’exécuter.
@@ -23,7 +23,7 @@ Les configurations de solution stockent les propriétés au niveau de la solutio
  La barre d’outils standard de Visual Studio contient un bouton Démarrer et une liste déroulante de configuration de solution à droite du bouton Démarrer. Cette liste permet aux utilisateurs de choisir la configuration à démarrer lorsque la touche F5 est enfoncée, de créer leurs propres configurations de solution ou de modifier une configuration existante.
 
 > [!NOTE]
-> Il n’existe aucune interface d’extensibilité pour créer ou modifier les configurations de solution. Vous devez utiliser `DTE.SolutionBuilder`. Toutefois, il existe des API d’extensibilité pour la gestion de la génération de la solution. Pour plus d'informations, consultez <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2>.
+> Il n’existe aucune interface d’extensibilité pour créer ou modifier les configurations de solution. Vous devez utiliser `DTE.SolutionBuild`. Toutefois, il existe des API d’extensibilité pour la gestion de la génération de la solution. Pour plus d'informations, consultez <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2>.
 
  Voici comment vous pouvez implémenter les configurations de solutions prises en charge par votre type de projet :
 
@@ -39,7 +39,7 @@ Les configurations de solution stockent les propriétés au niveau de la solutio
 
    Si un projet ne prend pas en charge les configurations, la colonne de configuration affiche la valeur aucun et est désactivée.
 
-- Plate-forme
+- Platform
 
    Affiche la plateforme pour laquelle la configuration de projet sélectionnée est générée et répertorie toutes les plateformes disponibles pour le projet lorsque vous cliquez sur le bouton fléché. L’environnement appelle la méthode <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetPlatformNames%2A> pour remplir cette liste. Si la méthode <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgProviderProperty%2A> indique que le projet prend en charge la modification de la plateforme, les sélections nouveau ou modifier sont également affichées sous le titre de la plateforme. Chacune de ces sélections lance des boîtes de dialogue qui appellent `IVsCfgProvider2` méthodes pour modifier les plateformes disponibles du projet.
 

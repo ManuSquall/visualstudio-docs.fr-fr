@@ -12,26 +12,23 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d8cb2a8a7a1711b01bcb167fceb13faa30e571c
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 8b5f00b3e71f0deb15d6266640db39751f2ae22f
+ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114717"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "76269105"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Compiler et générer dans Visual Studio
 
-Quand vous générez le code source, le moteur de génération crée des assemblys et des applications exécutables. D’une façon générale, le processus de génération est très similaire entre de nombreux types différents de projets, comme Windows, ASP.NET, des applications mobiles, etc. Le processus de génération est également similaire entre langages de programmation, comme C#, Visual Basic, C++ et F#.
-
-En générant souvent une build à partir de votre code, vous pouvez identifier rapidement les erreurs de compilation, comme une syntaxe incorrecte, des mots clés mal orthographiés et des incompatibilités de types. Vous pouvez aussi détecter et corriger les erreurs d’exécution, comme les erreurs de logique et les erreurs sémantiques, en générant et en exécutant les versions Debug du code.
-
-Une génération réussie valide que le code source de l’application contient une syntaxe correcte et que toutes les références statiques aux bibliothèques, assemblys et autres composants peuvent être résolues. Le résultat est une application exécutable dont le fonctionnement peut être testé à la fois dans un [environnement de débogage](../debugger/index.yml) et par différents tests manuels et automatisés pour [vérifier la qualité du code](../test/improve-code-quality.md). Une fois que l’application a été entièrement testée, vous pouvez alors compiler une version Release à déployer auprès de vos clients. Vous trouverez une présentation de ce processus sur la page [Procédure pas à pas : générer une application](../ide/walkthrough-building-an-application.md).
+Vous trouverez une première présentation de la génération dans l’environnement IDE sur la page [Procédure pas à pas : Générer une application](walkthrough-building-an-application.md).
 
 Il existe plusieurs méthodes permettant de générer une application : l’environnement IDE Visual Studio, les outils en ligne de commande de MSBuild et Azure Pipelines :
 
 | Méthode de génération | Avantages |
 | --- |--- | --- |
 | IDE |- Créer des builds immédiatement et les tester dans un débogueur.<br />- Exécuter des builds multiprocesseurs pour des projets C++ et C#.<br />- Personnaliser différents aspects du système de génération. |
+| CMake | -Générer des projets à l’aide de l’outil CMake<br />-Utilisez le même système de génération sur les plateformes Linux et Windows. |
 | Ligne de commande MSBuild| - Générer des projets sans installer Visual Studio.<br />- Exécuter des builds multiprocesseurs pour tous les types de projets.<br />- Personnaliser la plupart des éléments du système de génération.|
 | Azure Pipelines | - Automatiser votre processus de génération dans un pipeline d’intégration continue/de livraison continue.<br />- Appliquer des tests automatisés avec chaque build.<br />- Utiliser des ressources cloud virtuellement illimitées pour les processus de génération.<br />- Modifier le flux de travail de la génération et créer des activités de génération pour effectuer des tâches fortement personnalisées.|
 
@@ -60,3 +57,4 @@ Consultez ensuite [Génération et nettoyage des solutions et de projets dans Vi
 
 - [Génération (compilation) de projets de site web](https://msdn.microsoft.com/Library/a9cbb88c-8fff-4c67-848b-98fbfd823193)
 - [Compiler et générer (Visual Studio pour Mac)](/visualstudio/mac/compiling-and-building)
+- [Projets CMake dans Visual Studio](/cpp/build/cmake-projects-in-visual-studio)
