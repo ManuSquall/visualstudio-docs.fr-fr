@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82ce8a1b9cbc79925ff2f4a1c1df9d832bb96f7b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 78cbcc9b2efd37aa99906d7ed7708621ec213b2e
+ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72632517"
+ms.lasthandoff: 01/18/2020
+ms.locfileid: "76269077"
 ---
 # <a name="walkthrough-display-statement-completion"></a>Procédure pas à pas : saisie semi-automatique des instructions
 Vous pouvez implémenter la saisie semi-automatique des instructions basées sur le langage en définissant les identificateurs pour lesquels vous souhaitez fournir la saisie semi-automatique, puis en déclenchant une session de saisie semi-automatique. Vous pouvez définir la saisie semi-automatique des instructions dans le contexte d’un service de langage, définir votre propre extension de nom de fichier et le type de contenu, puis afficher la saisie semi-automatique uniquement pour ce type. Ou vous pouvez déclencher l’achèvement d’un type de contenu existant, par exemple, « texte en clair ». Cette procédure pas à pas montre comment déclencher la saisie semi-automatique des instructions pour le type de contenu « texte en clair », qui est le type de contenu des fichiers texte. Le type de contenu « texte » est l’ancêtre de tous les autres types de contenu, y compris le code et les fichiers XML.
@@ -27,7 +27,7 @@ Vous pouvez implémenter la saisie semi-automatique des instructions basées sur
 
  Cette procédure pas à pas montre comment implémenter la saisie semi-automatique des instructions pour un ensemble d’identificateurs codés en dur. Dans les implémentations complètes, le service de langage et la documentation du langage sont responsables de la fourniture de ce contenu.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Prerequisites
  À compter de Visual Studio 2015, vous n’installez pas le kit de développement logiciel (SDK) Visual Studio à partir du centre de téléchargement. Il est inclus en tant que fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le kit de développement logiciel (SDK) Visual Studio plus tard. Pour plus d’informations, consultez [installer le kit de développement logiciel (SDK) Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-mef-project"></a>Créer un projet MEF
@@ -40,19 +40,19 @@ Vous pouvez implémenter la saisie semi-automatique des instructions basées sur
 
 3. Supprimez les fichiers de classe existants.
 
-4. Ajoutez les références suivantes au projet et assurez-vous que **CopyLocal** a la valeur `false` :
+4. Ajoutez les références suivantes au projet et assurez-vous que **CopyLocal** a la valeur `false`:
 
-     Microsoft. VisualStudio. Editor
+     Microsoft.VisualStudio.Editor
 
      Microsoft.VisualStudio.Language.Intellisense
 
      Microsoft. VisualStudio. OLE. Interop
 
-     Microsoft. VisualStudio. Shell. 14.0
+     Microsoft. VisualStudio. Shell. 15
 
-     Microsoft. VisualStudio. Shell. immuable. 10.0
+     Microsoft.VisualStudio.Shell.Immutable.10.0
 
-     Microsoft. VisualStudio. TextManager. Interop
+     Microsoft.VisualStudio.TextManager.Interop
 
 ## <a name="implement-the-completion-source"></a>Implémenter la source de saisie semi-automatique
  La source de saisie semi-automatique est responsable de la collecte de l’ensemble des identificateurs et de l’ajout du contenu à la fenêtre de saisie semi-automatique lorsqu’un utilisateur tape un déclencheur de saisie semi-automatique, par exemple les premières lettres d’un identificateur. Dans cet exemple, les identificateurs et leurs descriptions sont codés en dur dans la méthode <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource.AugmentCompletionSession%2A>. Dans la plupart des utilisations réelles, vous pouvez utiliser l’analyseur de votre langage pour récupérer les jetons afin de remplir la liste de saisie semi-automatique.
@@ -66,7 +66,7 @@ Vous pouvez implémenter la saisie semi-automatique des instructions basées sur
      [!code-csharp[VSSDKCompletionTest#1](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_1.cs)]
      [!code-vb[VSSDKCompletionTest#1](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_1.vb)]
 
-3. Modifiez la déclaration de classe pour `TestCompletionSource` afin qu’elle implémente <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource> :
+3. Modifiez la déclaration de classe pour `TestCompletionSource` afin qu’elle implémente <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>:
 
      [!code-csharp[VSSDKCompletionTest#2](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_2.cs)]
      [!code-vb[VSSDKCompletionTest#2](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_2.vb)]
@@ -133,7 +133,7 @@ Vous pouvez implémenter la saisie semi-automatique des instructions basées sur
      [!code-csharp[VSSDKCompletionTest#12](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_12.cs)]
      [!code-vb[VSSDKCompletionTest#12](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_12.vb)]
 
-4. Importez le <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>, qui permet la conversion d’un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> en <xref:Microsoft.VisualStudio.Text.Editor.ITextView>, un <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker> et un <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> qui permet d’accéder aux services Visual Studio standard.
+4. Importez le <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>, qui permet la conversion d’un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> en <xref:Microsoft.VisualStudio.Text.Editor.ITextView>, un <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>et un <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> qui permet d’accéder aux services Visual Studio standard.
 
      [!code-csharp[VSSDKCompletionTest#13](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_13.cs)]
      [!code-vb[VSSDKCompletionTest#13](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_13.vb)]
@@ -148,7 +148,7 @@ Vous pouvez implémenter la saisie semi-automatique des instructions basées sur
 
 #### <a name="to-implement-the-completion-command-handler"></a>Pour implémenter le gestionnaire de commandes de saisie semi-automatique
 
-1. Ajoutez une classe nommée `TestCompletionCommandHandler` qui implémente <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> :
+1. Ajoutez une classe nommée `TestCompletionCommandHandler` qui implémente <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>:
 
     [!code-csharp[VSSDKCompletionTest#15](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_15.cs)]
     [!code-vb[VSSDKCompletionTest#15](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_15.vb)]
