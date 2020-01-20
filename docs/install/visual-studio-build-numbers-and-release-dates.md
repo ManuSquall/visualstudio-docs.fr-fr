@@ -2,22 +2,21 @@
 title: Numéros de builds et dates de publication de Visual Studio
 titleSuffix: ''
 description: Liste des versions publiées et des numéros de build de Visual Studio, triées par date.
-author: jillre
-ms.author: jillfra
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
-ms.date: 12/17/2019
+ms.date: 01/15/2020
 ms.topic: reference
-ms.custom: seodec18
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ceb37a57910676f6e64bdd4c8d9390bd385bf0f7
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 6864f6ad7819cf163c20f0d604d90370454b53a4
+ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590892"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76114175"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numéros de builds et dates de publication de Visual Studio
 
@@ -29,6 +28,8 @@ Le tableau suivant liste les numéros de build et les dates de publication de Vi
 
 | **Version**| **Canal** | **Date de publication** | **Version de build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.4.3 | Édition | 14 janvier 2020 | 16.4.29709.97 |
+| 16.0.11 | Édition | 14 janvier 2020 | 16.0.28803.653 |
 | 16.4.2 | Édition | 17 décembre 2019 | 16.4.29613.14 |
 | 16.4.1 | Édition | 10 décembre 2019 | 16.4.29609.76 |
 | 16.0.10 | Édition | 10 décembre 2019 | 16.0.28803.631 |
@@ -119,6 +120,7 @@ Le tableau suivant répertorie les numéros de build et les dates de publication
 
 | **Version**| **Canal** | **Date de publication** | **Version de build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.19 | Édition | 14 janvier 2020 | 15.9.28307.1000 |
 | 15.0.28 | Édition | 11 décembre 2019 | 15.0.26228.102 |
 | 15.9.18 | Édition | 10 décembre 2019 | 15.9.28307.960 |
 | 15.9.17 | Édition | 15 octobre 2019 | 15.9.28307.905 |
