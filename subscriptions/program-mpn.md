@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: MPN donne des détails sur les abonnements proposés, sur les règles qui s’appliquent et sur le nombre d’abonnements.
-ms.openlocfilehash: 8847d320ec950b6601f99875e2c35ca80105e5b4
-ms.sourcegitcommit: b5cb0eb09369677514ee1f44d5d7050d34c7fbc1
+ms.openlocfilehash: 1a103f76b56df72b5829f9ce87f587070519726e
+ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74491671"
+ms.lasthandoff: 01/20/2020
+ms.locfileid: "76281696"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Abonnements Visual Studio offerts aux partenaires du réseau MPN (Microsoft Partner Network)
 
@@ -47,7 +47,7 @@ Quel que soit le nombre de compétences qu’un partenaire gagne, le nombre d’
 
 ## <a name="subscriptions-for-partners-purchasing-the-action-pack"></a>Abonnements pour les partenaires achetant l’Action Pack
 
-Les partenaires ayant une compétence ne sont pas éligibles pour l’achat de l’Action Pack. Un partenaire ne peut acheter qu’un seul Action Pack.
+Les partenaires disposant d’une compétence sont éligibles pour acheter le Action Pack. Un partenaire ne peut acheter qu’un seul Action Pack.
 
 Avec l’Action Pack, le partenaire gagne **trois abonnements Visual Studio Professional (MPN)** . Visual Studio Professional (MPN) est une offre personnalisée sans équivalent commercial sur le marché. Voici ce qu’il inclut :
 
