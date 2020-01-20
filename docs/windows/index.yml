@@ -10,12 +10,12 @@ metadata:
   monikerRange: '>=vs-2017'
   f1_keywords:
   - MSDNSTART
-  ms.openlocfilehash: 2b2fffb32ba16111449c2876769e70d9c687b976
-  ms.sourcegitcommit: e825d1223579b44ee2deb62baf4de0153f99242a
+  ms.openlocfilehash: cfe00b21654e9ab07b79b3a1b6ec38a4a4792780
+  ms.sourcegitcommit: aabd9d10a0cb7e7344532a04df763a70be20acf0
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 11/25/2019
-  ms.locfileid: "74474003"
+  ms.lasthandoff: 01/17/2020
+  ms.locfileid: "76256474"
 highlightedContent:
   items:
   - title: Configuration et installation
@@ -178,7 +178,7 @@ additionalContent:
         url: ../python/data-science-and-analytical-applications-workload.md
       - text: Développement Office/Sharepoint
         url: https://developer.microsoft.com/office/docs
-    - title: Windows
+    - title: Bureau et mobile
       links:
       - text: Développement .NET Desktop
         url: /dotnet/framework/develop-client-apps
@@ -186,17 +186,17 @@ additionalContent:
         url: ../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md
       - text: Développement Windows avec C++
         url: /cpp/windows/desktop-applications-visual-cpp
-    - title: Mobile et jeux
-      links:
       - text: Développement mobile avec .NET (Xamarin)
         url: /xamarin/
-      - text: Développement de jeux avec Unity
-        url: ../cross-platform/visual-studio-tools-for-unity.md
+      - text: Développement mobile avec C++
+        url: /visualstudio/cross-platform/
       - text: Développement mobile avec JavaScript
         url: /visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017
         note: (Visual Studio 2017 et 2015 uniquement)
-      - text: Développement mobile avec C++
-        url: /visualstudio/cross-platform/
+    - title: Jeux
+      links:
+      - text: Développement de jeux avec Unity
+        url: ../cross-platform/visual-studio-tools-for-unity.md
       - text: Développement de jeux avec C++
         url: /windows/uwp/gaming/e2e
     - title: Autres boîtes à outils
@@ -207,4 +207,4 @@ additionalContent:
         url: /cpp/linux/
       - text: Développement multiplateforme .NET Core
         url: /dotnet/core/
-  footer: '[Blogs](https://devblogs.microsoft.com/visualstudio/) - [Twitter](https://twitter.com/VisualStudio) - [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-studio) - [Signalement de problèmes](../ide/talk-to-us.md)  -  [Communauté des développeurs](https://developercommunity.visualstudio.com/spaces/8/index.html)'
+  footer: '[Blogs](https://devblogs.microsoft.com/visualstudio/) - [Twitter](https://twitter.com/VisualStudio) - [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-studio) - [Signalement de problèmes](../ide/talk-to-us.md) - [Communauté des développeurs](https://developercommunity.visualstudio.com/spaces/8/index.html)'
