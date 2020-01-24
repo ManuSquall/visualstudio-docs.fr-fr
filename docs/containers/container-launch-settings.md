@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/15/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: b8c732fb847e4d9944e0d6a5405a29e7879cbdc9
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 1c9786c29573da3b0149a9ec6578f2ce58c4de9f
+ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75400864"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76542592"
 ---
 # <a name="container-tools-launch-settings"></a>Paramètres de lancement des outils de conteneur
 
@@ -53,7 +53,7 @@ Le paramètre commandName indique que cette section s’applique aux outils de c
 |Nom du paramètre|Version|Exemple|Description|
 |------------|-------|-------|---------------|
 |launchBrowser|Visual Studio 2017|« launchBrowser » : true|Indique s’il faut lancer le navigateur après avoir correctement lancé le projet.|
-|launchUrl|Visual Studio 2017|« launchUrl » : «\<Scheme >://\<serviceHost >:\<servicePort > »|Cette URL est utilisée lors du lancement du navigateur.  Les jetons de remplacement pris en charge pour cette chaîne sont les suivants :<br>   \<schéma > remplacé par « http » ou « HTTPS », selon que le protocole SSL est utilisé ou non.<br>   \<serviceHost >-généralement remplacé par « localhost ». Toutefois, lorsque vous ciblez des conteneurs Windows sur Windows 10 RS3 ou une version antérieure, elles sont remplacées par l’adresse IP du conteneur.<br>   \<servicePort >-habituellement remplacé par sslPort ou httpPort, selon que le protocole SSL est utilisé ou non.  Toutefois, lorsque vous ciblez des conteneurs Windows sur Windows 10 RS3 ou une version antérieure, elles sont remplacées par « 443 » ou « 80 », selon que le protocole SSL est utilisé ou non.|
+|launchUrl|Visual Studio 2017|« launchUrl » : « {Scheme}://{ServiceHost} : {ServicePort} »|Cette URL est utilisée lors du lancement du navigateur.  Les jetons de remplacement pris en charge pour cette chaîne sont les suivants :<br>   {Scheme} : remplacé par « http » ou « https » selon que le protocole SSL est utilisé ou non.<br>   {ServiceHost} : généralement remplacé par « localhost ». Toutefois, lorsque vous ciblez des conteneurs Windows sur Windows 10 RS3 ou une version antérieure, elles sont remplacées par l’adresse IP du conteneur.<br>   {ServicePort} : généralement remplacé par sslPort ou httpPort, selon que le protocole SSL est utilisé ou non.  Toutefois, lorsque vous ciblez des conteneurs Windows sur Windows 10 RS3 ou une version antérieure, elles sont remplacées par « 443 » ou « 80 », selon que le protocole SSL est utilisé ou non.|
 
 ::: moniker-end
 
@@ -69,11 +69,11 @@ Le paramètre commandName indique que cette section s’applique aux outils de c
 | httpPort             | « httpPort » : 24051                                     | Ce port sur l’hôte est mappé au port 80 du conteneur lors du lancement du conteneur.                                |
 |                      |                                                       | S’il n’est pas spécifié, la valeur est extraite de la valeur iisSettings.                                                          |
 | launchBrowser        | « launchBrowser » : true                                 | Indique s’il faut lancer le navigateur après avoir correctement lancé le projet.                                       |
-| launchUrl            | « launchUrl » : «<scheme>://<serviceHost>:<servicePort>» | Cette URL est utilisée lors du lancement du navigateur. Les jetons de remplacement pris en charge pour cette chaîne sont les suivants :                          |
-|                      |                                                       | - <scheme> remplacé par « http » ou « HTTPS », selon que SSL est utilisé ou non.                                   |
-|                      |                                                       | - <serviceHost>-habituellement remplacé par « localhost ».                                                                    |
+| launchUrl            | « launchUrl » : « {Scheme}://{ServiceHost} : {ServicePort} » | Cette URL est utilisée lors du lancement du navigateur. Les jetons de remplacement pris en charge pour cette chaîne sont les suivants :                          |
+|                      |                                                       | -{Scheme} : remplacé par « http » ou « https » selon que le protocole SSL est utilisé ou non.                                   |
+|                      |                                                       | -{ServiceHost} : généralement remplacé par « localhost ».                                                                    |
 |                      |                                                       | Toutefois, lorsque vous ciblez des conteneurs Windows sur Windows 10 RS3 ou une version antérieure, elles sont remplacées par l’adresse IP du conteneur.           |
-|                      |                                                       | - <servicePort>-habituellement remplacé par sslPort ou httpPort, selon que le protocole SSL est utilisé ou non.                   |
+|                      |                                                       | -{ServicePort}-généralement remplacé par sslPort ou httpPort, selon que le protocole SSL est utilisé ou non.                   |
 |                      |                                                       | Toutefois, lorsque vous ciblez des conteneurs Windows sur Windows 10 RS3 ou une version antérieure, il est remplacé par « 443 » ou « 80 ».         |
 |                      |                                                       | selon que le protocole SSL est utilisé ou non.                                                                                       |
 | sslPort              | « sslPort » : 44381                                      | Ce port sur l’hôte est mappé au port 443 du conteneur lors du lancement du conteneur.                               |

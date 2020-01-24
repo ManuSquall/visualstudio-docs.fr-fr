@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 995508380fd551af33d98ebd48ab02a8287d0284
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: a46967d5f46c4f495a07d80e5f73cfc9f9d60c1a
+ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72637955"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76542631"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>Procédure pas à pas : écriture d’un visualiseur en C\#
 Cette procédure pas à pas explique comment écrire un visualiseur simple à l’aide de C#. Le visualiseur que permet de créer cette procédure pas à pas affiche le contenu d’une chaîne à l’aide d’un message Windows Forms. Ce visualiseur de chaîne simple n’est pas particulièrement utile dans lui-même, mais il montre les étapes de base que vous devez suivre pour créer des visualiseurs plus utiles pour d’autres types de données.
@@ -35,13 +35,13 @@ Suivez les étapes ci-dessous pour créer un visualiseur.
 
 ### <a name="to-create-a-class-library-project"></a>Pour créer un projet Bibliothèque de classes
 
-1. Créez un projet de bibliothèque de classes.
+1. Créez un projet Bibliothèque de classes.
 
     ::: moniker range=">=vs-2019"
-    Appuyez sur **Échap** pour fermer la fenêtre de démarrage. Tapez **CTRL + Q** pour ouvrir la zone de recherche, tapez **bibliothèque de classes**, choisissez **modèles**, puis **créer une bibliothèque de classes (.NET standard)** . Dans la boîte de dialogue qui apparaît, choisissez **Créer**.
+    Appuyez sur **Échap** pour fermer la fenêtre de démarrage. Tapez **CTRL + Q** pour ouvrir la zone de recherche, tapez **bibliothèque de classes**, choisissez **modèles**, puis **créer une bibliothèque de classes (.NET Framework)** . Dans la boîte de dialogue qui apparaît, choisissez **Créer**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**. Dans le volet gauche de la boîte de dialogue **nouveau projet** , **sous C#Visual** , choisissez **.NET standard**, puis dans le volet central, choisissez **bibliothèque de classes (.NET standard)** .
+    Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**. Dans le volet gauche de la boîte de dialogue **nouveau projet** , **sous C#Visual** , choisissez **.NET Framework**, puis dans le volet central, choisissez **bibliothèque de classes (.NET Framework)** .
     ::: moniker-end
 
 2. Tapez un nom approprié pour la bibliothèque de classes, par exemple `MyFirstVisualizer`, puis cliquez sur **créer** ou **OK**.
@@ -61,7 +61,7 @@ Suivez les étapes ci-dessous pour créer un visualiseur.
 
 4. Dans la boîte de dialogue **Ajouter une référence** , sous l’onglet **Parcourir** , sélectionnez **Parcourir** et recherchez Microsoft. VisualStudio. DebuggerVisualizers. dll.
 
-    Vous pouvez trouver la DLL dans le répertoire d’installation de *\<Visual Studio >* sous-répertoire \Common7\IDE\PublicAssemblies du répertoire d’installation de Visual Studio.
+    Vous pouvez trouver la DLL dans *\<répertoire d’installation de Visual studio >* sous-répertoire \Common7\IDE\PublicAssemblies du répertoire d’installation de Visual Studio.
 
 5. Cliquez sur **OK**.
 
@@ -135,7 +135,7 @@ Suivez les étapes ci-dessous pour créer un visualiseur.
 
 ### <a name="to-add-the-debuggee-side-code"></a>Pour ajouter le code côté débogué
 
-1. Ajoutez le code d’attribut suivant à DebuggerSide.cs, après les directives `using`, mais avant `namespace MyFirstVisualizer` :
+1. Ajoutez le code d’attribut suivant à DebuggerSide.cs, après les directives `using`, mais avant `namespace MyFirstVisualizer`:
 
    ```csharp
    [assembly:System.Diagnostics.DebuggerVisualizer(
@@ -242,7 +242,7 @@ Tout d’abord, vous devez créer un projet de bibliothèque de classes.
 
 1. Dans le menu **Fichier**, choisissez **Nouveau > Projet**.
 
-2. Dans la boîte de dialogue **nouveau projet** , **sous C#visuel** , sélectionnez **.NET standard**.
+2. Dans la boîte de dialogue **nouveau projet** , **sous C#visuel** , sélectionnez **.NET Framework**.
 
 3. Dans le volet central, choisissez **bibliothèque de classes**.
 
