@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Démarrer Spy ++ | Microsoft Docs'
+title: 'Procédure : Démarrer Spy + + | Microsoft Docs'
 ms.date: 12/16/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,45 +10,45 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc247a6391df0357905e2cbdb895bec4e469a248
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 70874d70dd5f845e7b627f2aeb7ae51bafe45995
+ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63387535"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76542618"
 ---
-# <a name="how-to-start-spy"></a>Procédure : Démarrer Spy++
+# <a name="how-to-start-spy"></a>Comment : démarrer Spy++
 
-Vous pouvez démarrer Spy ++ à partir de Visual Studio ou à une invite de commandes.
+Vous pouvez démarrer Spy + + à partir de Visual Studio ou à partir d’une invite de commandes.
 
- Lorsque vous démarrez Spy ++, si un message s’affiche pour demander l’autorisation d’apporter des modifications à l’ordinateur, sélectionnez **Oui**.
-
-> [!NOTE]
-> Vous pouvez exécuter qu’une seule instance de Spy ++. Si vous essayez de démarrer une deuxième instance, en fait l’instance en cours d’exécution obtenir le focus.
-
-## <a name="prerequisites"></a>Prérequis
-
-Spy ++ requiert les composants suivants. Vous pouvez sélectionner ces composants à partir de Visual Studio Installer en sélectionnant le **composants individuels** onglet, puis en sélectionnant les composants suivants.
-
-* Sous débogage et test, sélectionnez  **C++ outils de profilage**
-* Sous les activités de développement, sélectionnez **Visual Studio C++ fonctionnalités de base**
-
-Si vous apporté des modifications, suivez les invites pour installer ces composants.
-
-## <a name="start-spy-from-visual-studio"></a>Démarrer Spy ++ à partir de Visual Studio
-
-Sur le **outils** menu, sélectionnez **Spy ++**.
-
-Étant donné que Spy ++ s’exécute indépendamment, après le démarrage, vous pouvez fermer Visual Studio.
+ Quand vous démarrez Spy + +, si un message s’affiche pour demander l’autorisation d’apporter des modifications à l’ordinateur, sélectionnez **Oui**.
 
 > [!NOTE]
-> Si vous consignez des messages avec Spy ++, il peut entraîner le système d’exploitation exécute plus lentement.
+> Vous ne pouvez exécuter qu’une seule instance de Spy + +. Si vous essayez de démarrer une deuxième instance, l’instance en cours d’exécution est simplement en train d’obtenir le focus.
 
-## <a name="start-spy-at-a-command-prompt"></a>Démarrer Spy ++ à une invite de commandes
+## <a name="prerequisites"></a>Prerequisites
 
-1. Dans une fenêtre d’invite de commandes, accédez au dossier qui contient spyxx.exe. En règle générale, le chemin d’accès à ce dossier est... \\ *Dossier d’installation de visual Studio*\Common7\Tools\\.
+Spy + + requiert les composants suivants. Vous pouvez sélectionner ces composants à partir de la Visual Studio Installer en sélectionnant l’onglet **composants individuels** , puis en sélectionnant les composants suivants.
 
-2. Entrez **spyxx.exe**.
+* Sous débogage et test, sélectionnez  **C++ outils de profilage.**
+* Sous activités de développement, sélectionnez  **C++ fonctionnalités principales.**
+
+Si vous avez apporté des modifications, suivez les invites pour installer ces composants.
+
+## <a name="start-spy-from-visual-studio"></a>Démarrer Spy + + à partir de Visual Studio
+
+Dans le menu **Outils** , sélectionnez **Spy + +** .
+
+Étant donné que Spy + + s’exécute indépendamment, après son démarrage, vous pouvez fermer Visual Studio.
+
+> [!NOTE]
+> Lorsque vous consignez des messages avec Spy + +, le système d’exploitation peut s’exécuter plus lentement.
+
+## <a name="start-spy-at-a-command-prompt"></a>Démarrer Spy + + à partir d’une invite de commandes
+
+1. Dans une fenêtre d’invite de commandes, accédez au dossier qui contient spyxx. exe. En général, le chemin d’accès à ce dossier est..\\*dossier d’installation de Visual Studio*\Common7\Tools\\.
+
+2. Entrez **spyxx. exe**.
 
 ## <a name="see-also"></a>Voir aussi
 - [Utilisation de Spy++](../debugger/using-spy-increment.md)

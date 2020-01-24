@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: d03af1625086a56a6f36e48d59fd00c2461c0751
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 471932f6a097879da194dc6bb4f18807f2323397
+ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588627"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76542657"
 ---
 # <a name="language-conventions"></a>Conventions de langage
 
@@ -1558,7 +1558,7 @@ csharp_prefer_braces = true:silent
 | **Nom de la règle** | csharp_prefer_braces |
 | **ID de règle** | IDE0011 |
 | **Langages applicables** | C# |
-| **Valeurs** | `true` - Préférer les accolades même pour une seule ligne de code<br /><br />`false` - Préférer n’avoir aucune accolade si cela est autorisé |
+| **Valeurs** | `true` - Préférer les accolades même pour une seule ligne de code<br /><br />`false` - Préférer n’avoir aucune accolade si cela est autorisé<br /><br />`when_multiline`-préférer des accolades sur plusieurs lignes |
 | **Valeur par défaut de Visual Studio** | `true:silent` |
 
 Exemples de code :
