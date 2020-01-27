@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b38089a088186a30ebd13cae68d19ac23235bf9
-ms.sourcegitcommit: 697f2ab875fd789685811687387e9e8e471a38c4
+ms.openlocfilehash: df27ca8ccae6795750dbd1f10b5e1f0199c17330
+ms.sourcegitcommit: 0c3c4bd38455f7046c5c5a448eaaa5e407ad5bf4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74829986"
+ms.lasthandoff: 01/24/2020
+ms.locfileid: "76726050"
 ---
 # <a name="tutorial-learn-to-debug-visual-basic-code-using-visual-studio"></a>Tutoriel : Apprendre à déboguer du code Visual Basic avec Visual Studio
 
@@ -34,7 +34,7 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 > * Inspecter des variables dans des bulles d’informations et dans les fenêtres du débogueur
 > * Examiner la pile des appels
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Prerequisites
 
 ::: moniker range=">=vs-2019"
 
@@ -63,18 +63,46 @@ Si vous devez installer la charge de travail, mais que vous avez déjà install�
 
 ## <a name="create-a-project"></a>Créer un projet
 
-1. Ouvrez Visual Studio.
+Tout d’abord, vous allez créer un projet d’application console .NET Core. Le type de projet inclut tous les fichiers de modèle dont vous aurez besoin au départ.
 
-    ::: moniker range=">=vs-2019"
-    Appuyez sur **Échap** pour fermer la fenêtre de démarrage. Tapez **CTRL + Q** pour ouvrir la zone de recherche, tapez **Visual Basic**, choisissez **modèles**, puis choisissez **créer un projet d’application console (.net Core)** ou **créer un projet d’application console (.NET Framework)** . Dans la boîte de dialogue qui s’affiche, tapez un nom comme **get-started-debugging**, puis choisissez **Créer**.
-    ::: moniker-end
-    ::: moniker range="vs-2017"
-    Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**. Dans le volet gauche de la boîte de dialogue **Nouveau projet**, sous **Visual Basic**, choisissez **Windows Desktop** puis, dans le volet central, choisissez **Application console (.NET Framework)** . Ensuite, tapez un nom comme **get-started-debugging**, puis cliquez sur **OK**.
-    ::: moniker-end
+::: moniker range="vs-2017"
 
-    Si vous ne voyez pas le modèle de projet **Application console (.NET Framework)** , accédez à **Outils** > **Obtenir les outils et fonctionnalités...** , qui ouvre Visual Studio Installer. Choisissez la charge de travail **Développement .NET Desktop**, puis choisissez **Modifier**.
+1. Ouvrez Visual Studio 2017.
 
-    Visual Studio crée le projet.
+2. Dans la barre de menus supérieure, choisissez **fichier** > **nouveau** > **projet**.
+
+3. Dans la boîte de dialogue **Nouveau projet**, dans le volet gauche, développez **Visual Basic**, puis choisissez **.NET Core**. Dans le volet central, choisissez **Application console (.NET Core)** . Nommez ensuite le projet *-Démarrer-débogage*.
+
+     Si vous ne voyez pas le modèle de projet **Application console (.NET Core)** , cliquez sur le lien **Ouvrir Visual Studio Installer** dans le volet gauche de la boîte de dialogue **Nouveau projet**.
+
+     Visual Studio Installer est lancé. Choisissez la charge de travail **Développement multiplateforme .NET Core**, puis choisissez **Modifier**.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Ouvrez Visual Studio 2019.
+
+   Si la fenêtre de démarrage n’est pas ouverte, choisissez **fichier** > **fenêtre démarrer**.
+
+1. Dans la fenêtre de démarrage, choisissez **Créer un projet**.
+
+1. Dans la fenêtre **Créer un projet**, entrez ou tapez *console* dans la zone de recherche. Ensuite, choisissez **Visual Basic** dans la liste des langages, puis choisissez **Windows** dans la liste des plateformes. 
+
+   Après avoir appliqué les filtres de langage et de plateforme, choisissez le modèle **Application console (.NET Core)** , puis choisissez **Suivant**.
+
+   ![Choisir le C# modèle pour l’application console (.net Core)](../../debugger/media/vs-2019/get-started-create-console-project-vb.png)
+
+   > [!NOTE]
+   > Si vous ne voyez pas le modèle **Application console (.NET Core)** , vous pouvez l’installer à partir de la fenêtre **Créer un projet**. Dans le **Vous ne trouvez pas ce que vous cherchez ?** , choisissez le lien **Installer plus d’outils et de fonctionnalités**. Ensuite, dans Visual Studio Installer, choisissez la charge de travail **Développement multiplateforme .NET Core**.
+
+1. Dans la fenêtre **configurer votre nouveau projet** , tapez ou entrez « *Démarrer-démarré-débogage »* dans la zone Nom du **projet** . Choisissez ensuite **Créer**.
+
+   Visual Studio ouvre votre nouveau projet.
+
+::: moniker-end
+
+## <a name="create-the-application"></a>Créer l’application
 
 1. Dans *Module1. vb*, remplacez tout le code par défaut
 
@@ -212,7 +240,9 @@ Si vous devez installer la charge de travail, mais que vous avez déjà install�
 
      Dans ce tutoriel, nous examinons cette application plus en détail avec le débogueur et nous regardons les fonctionnalités du débogueur.
 
-2. Arrêtez le débogueur en appuyant sur le bouton rouge arrêter ![arrêter le débogage](../../debugger/media/dbg-tour-stop-debugging.png "Arrêter le débogage") .
+2. Arrêtez le débogueur en appuyant sur le bouton rouge arrêter ![arrêter le débogage](../../debugger/media/dbg-tour-stop-debugging.png "Activer les outils de diagnostic durant le débogage") .
+
+3. Fermez la fenêtre de console.
 
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>Définir un point d’arrêt et démarrer le débogueur
 
@@ -254,6 +284,8 @@ Nous utilisons ici principalement des raccourcis clavier, car c’est un bon moy
 
 ## <a name="navigate-code-using-run-to-click"></a>Parcourir le code avec Exécuter jusqu’au clic
 
+1. Cliquez avec le bouton droit sur le point d’arrêt que vous avez défini précédemment et choisissez **supprimer le point d’arrêt** (ou appuyez sur **Ctrl** + **MAJ** + **F9** pour supprimer tous les points d’arrêt).
+
 1. Dans l’éditeur de code, faites défiler ![l’affichage jusqu'](../../debugger/media/dbg-tour-run-to-click.png "RunToClick") à la méthode `Console.WriteLine` dans la classe `Triangle` jusqu’à ce que le bouton vert **exécuter pour cliquer** sur s’affiche à gauche. L’info-bulle du bouton indique « Lancer l’exécution jusqu’ici ».
 
      ![Utiliser la fonctionnalité exécuter pour cliquer](../visual-basic/media/get-started-run-to-click-vb.png "Exécuter jusqu’au clic")
@@ -287,6 +319,8 @@ Supposons que vous avez terminé d’examiner la méthode `Draw` de la classe `T
      Cette commande reprend l’exécution de l’application (et fait avancer le débogueur) jusqu’au retour de la fonction active.
 
      Vous devez normalement être revenu dans la boucle `For Each` de la méthode `Main`. Si ce n’est pas le cas, appuyez sur **maj** + **F11** une deuxième fois.
+
+1. Cliquez dans la marge de gauche pour ajouter un nouveau point d’arrêt dans la boucle `for`.
 
 ## <a name="restart-your-app-quickly"></a>Redémarrer rapidement votre application
 
