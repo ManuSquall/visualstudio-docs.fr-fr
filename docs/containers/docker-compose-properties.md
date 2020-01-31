@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: c528d1ca2d767b914bba2fd554699985c37d6ba1
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 226078127d2fe61675a592bbafa06d732afc7c49
+ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916928"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76826456"
 ---
 # <a name="docker-compose-build-properties"></a>Docker Compose les propriétés de build
 
@@ -109,6 +109,20 @@ Utilisez des guillemets doubles autour des valeurs, comme dans l’exemple préc
 |com. Microsoft. VisualStudio. Debugger. killprogram|Cette commande permet d’arrêter le programme débogué qui s’exécute dans le conteneur (si nécessaire).|
 |com. Microsoft. VisualStudio. Debugger. Program|Le programme est lancé au démarrage du débogage. Pour les applications .NET Core, ce paramètre est généralement **dotnet**.|
 |com. Microsoft. VisualStudio. Debugger. WorkingDirectory|Répertoire utilisé comme répertoire de démarrage lors du démarrage du débogage. Ce paramètre est généralement */app* pour les conteneurs Linux ou *C:\app* pour les conteneurs Windows.|
+
+## <a name="customize-the-app-startup-process"></a>Personnaliser le processus de démarrage de l’application
+
+Vous pouvez exécuter une commande ou un script personnalisé avant de lancer votre application à l’aide du paramètre `entrypoint` et de la rendre dépendante de la configuration. Par exemple, si vous devez configurer un certificat uniquement en mode **débogage** en exécutant `update-ca-certificates`, mais pas en mode **Release** , vous pouvez ajouter le code suivant uniquement dans *docker-compose. vs. Debug. yml*:
+
+```yml
+services:
+  webapplication1:
+    entrypoint: "sh -c 'update-ca-certificates && tail -f /dev/null'"
+    labels:
+      ...
+```
+
+Si vous omettez *docker-compose. vs. Release. yml* ou *docker-compose. vs. Debug. yml* , Visual Studio en génère un en fonction des paramètres par défaut.
 
 ## <a name="next-steps"></a>Étapes suivantes :
 

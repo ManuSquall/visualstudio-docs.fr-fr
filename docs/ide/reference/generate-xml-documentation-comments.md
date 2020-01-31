@@ -1,18 +1,18 @@
 ---
 title: Insérer des commentaires dans la documentation XML
-ms.date: 01/26/2018
+ms.date: 01/22/2020
 ms.topic: reference
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ad29957cc31247c16ca38038ad4880ea75a85182
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 20381dd78f169e2b549e077992ac0d1dc1b5c44c
+ms.sourcegitcommit: 6375001ab26786af8d4d449f5846f8a49779ed18
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595577"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76892132"
 ---
 # <a name="how-to-insert-xml-comments-for-documentation-generation"></a>Guide pratique pour insérer des commentaires XML pour la génération de documentation
 
@@ -30,7 +30,7 @@ Le fichier XML généré par le compilateur peut être distribué avec votre ass
 
 1. Placez votre curseur sur l’élément que vous souhaitez documenter, par exemple, une méthode.
 
-1. Effectuez l'une des actions suivantes :
+2. Effectuez l'une des actions suivantes :
 
    - Tapez `///` en C# ou `'''` en Visual Basic.
 
@@ -44,9 +44,13 @@ Le fichier XML généré par le compilateur peut être distribué avec votre ass
 
    ![Modèle de commentaire XML (Visual Basic)](media/doc-preview-vb.png)
 
-1. Entrez la description de chaque élément XML pour documenter entièrement l’élément de code.
+3. Entrez la description de chaque élément XML pour documenter entièrement l’élément de code.
 
    ![Commentaire terminé](media/doc-result-cs.png)
+
+Vous pouvez utiliser des styles dans des commentaires XML qui s’affichent dans Info Express lorsque vous pointez sur l’élément. Ces styles sont notamment les suivants : italique, gras, puces et lien hypertexte.
+
+   ![Commentaire terminé](media/doc-styles-cs.png) 
 
 > [!NOTE]
 > Une [option](../../ide/reference/options-text-editor-csharp-advanced.md) permet d’activer et de désactiver les commentaires de documentation XML après la saisie des caractères `///` en C# ou `'''` en Visual Basic. Dans la barre de menus, choisissez **Outils** > **Options** pour ouvrir la boîte de dialogue **Options**. Ensuite, accédez à **Éditeur de texte** > **C#** ou **Basic** > **Avancé**. Dans la section **Aide sur l’éditeur**, recherchez l’option **Générer des commentaires sur la documentation XML**.

@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/24/2019
 ms.topic: conceptual
 description: Découvrez comment les administrateurs peuvent attribuer des licences aux abonnés
-ms.openlocfilehash: 8785d4d4253fa3217341c8200a94dab923ae4a5f
-ms.sourcegitcommit: af9bbf9116a63c0631ff2f4f3a878564aa63cd8c
+ms.openlocfilehash: 4ebec96f488a480ccd9b96387f2656aadd6ba2f9
+ms.sourcegitcommit: 6375001ab26786af8d4d449f5846f8a49779ed18
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "74797366"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76892179"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>Attribuer des licences dans le portail d’administration des abonnements Visual Studio
 En tant qu’administrateur des abonnements Visual Studio, vous pouvez utiliser le portail d’administration pour attribuer des abonnements à des utilisateurs individuels ou à des groupes d’utilisateurs.
@@ -33,7 +33,7 @@ Voici comment attribuer une licence d’abonnement Visual Studio à un nouvel ut
    > [!div class="mx-imgBorder"]
    > ![Accéder aux téléchargements](media/access-to-downloads.png)
 
-       If you'd like to add your own reference notes to the subscription, you can do so in the **Add reference** section.
+    Pour ajouter vos propres notes de référence à l’abonnement, utilisez la section **Ajouter une référence**.
    > [!div class="mx-imgBorder"]
    > ![Ajouter vos propres notes de référence à chaque abonnement](media/add-subscriber-reference-notes.png)
 

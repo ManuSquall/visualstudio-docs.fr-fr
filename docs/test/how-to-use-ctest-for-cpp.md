@@ -1,18 +1,18 @@
 ---
 title: Guide pratique pour utiliser CTest pour C++
-ms.date: 05/01/2019
+ms.date: 01/23/2020
 ms.topic: conceptual
-ms.author: mblome
+ms.author: corob
 manager: jillfra
 ms.workload:
 - cplusplus
-author: mikeblome
-ms.openlocfilehash: cc0ced6205444e1436ffbffa73ba647a6b682c5c
-ms.sourcegitcommit: 628eb202a1153ebfe69c668f966f821b98b34b34
+author: corob-msft
+ms.openlocfilehash: 78759a017575916bce3b3fff643cbce8ff303fd6
+ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71720547"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76826521"
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio-2017-and-later"></a>Guide pratique pour utiliser CTest pour C++ dans Visual Studio 2017 et ultérieur
 
@@ -20,7 +20,7 @@ CMake (qui comprend CTest) est intégré par défaut à l’IDE de Visual Studio
 
 ## <a name="to-write-tests"></a>Écrire des tests
 
-La prise en charge de CMake dans Visual Studio n’implique pas le système de projet de Visual Studio. Par conséquent, écrivez et configurez les tests CTest comme vous le feriez dans n’importe quel environnement CMake. Utilisez la commande `enable_testing()` pour activer le test et la commande `add_test()` pour ajouter un nouveau test. Pour en savoir plus sur CTest, consultez la [documentation de cmake](https://gitlab.kitware.com/cmake/community/wikis/doc/ctest/Testing-With-CTest). 
+La prise en charge de CMake dans Visual Studio n’implique pas le système de projet de Visual Studio. Par conséquent, écrivez et configurez les tests CTest comme vous le feriez dans n’importe quel environnement CMake. Utilisez la commande `enable_testing()` pour activer le test et la commande `add_test()` ou `gtest_discover_tests()` pour ajouter un nouveau test. Pour en savoir plus sur CTest, consultez la [documentation de cmake](https://gitlab.kitware.com/cmake/community/wikis/doc/ctest/Testing-With-CTest). 
 
 Pour plus d’informations sur l’utilisation de CMake dans Visual Studio, consultez la page [Projets CMake dans Visual Studio](/cpp/build/cmake-projects-in-visual-studio).
 
