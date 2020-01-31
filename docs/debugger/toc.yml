@@ -52,6 +52,8 @@
       items:
         - name: Inspecter les données dans les fenêtres du débogueur
           href: debugger-windows.md
+        - name: Inspecter des exceptions
+          href: exception-helper.md
         - name: Inspecter des variables
           href: autos-and-locals-windows.md
         - name: Surveiller des variables
