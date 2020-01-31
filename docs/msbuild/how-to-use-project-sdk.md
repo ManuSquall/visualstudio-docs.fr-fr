@@ -9,16 +9,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d40e437763ba3eb75daa80a3a1bbf55ba9d896c9
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 74ccc29417cdee7a9f93c39509c0f7d06a5c72ff
+ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75574455"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76826469"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>Guide pratique pour utiliser les kits SDK de projet MSBuild
 
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 15.0 a introduit le concept de « kit SDK de projet », qui simplifie l’utilisation de kits de développement logiciel qui nécessitent l’importation des propriétés et des cibles.
+MSBuild 15,0 a introduit le concept de « kit de développement logiciel (SDK) de projet », qui simplifie l’utilisation de kits de développement de logiciels qui nécessitent l’importation de propriétés et de cibles.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -28,7 +28,7 @@ ms.locfileid: "75574455"
 </Project>
 ```
 
-Durant l’évaluation du projet, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ajoute des importations implicites au début et à la fin de votre projet :
+Pendant l’évaluation du projet, MSBuild ajoute des importations implicites en haut et en bas du fichier projet :
 
 ```xml
 <Project>
@@ -46,9 +46,9 @@ Durant l’évaluation du projet, [!INCLUDE[vstecmsbuild](../extensibility/inter
 
 ## <a name="reference-a-project-sdk"></a>Référencer un kit SDK de projet
 
- Il existe trois manières de référencer un kit SDK de projet :
+Il existe trois manières de référencer un kit SDK de projet :
 
-1. Utilisez l'attribut `Sdk` sur l'élément `<Project/>` :
+- Utilisez l'attribut `Sdk` sur l'élément `<Project/>` :
 
     ```xml
     <Project Sdk="My.Custom.Sdk">
@@ -56,9 +56,9 @@ Durant l’évaluation du projet, [!INCLUDE[vstecmsbuild](../extensibility/inter
     </Project>
     ```
 
-    Une importation implicite est ajoutée au début et à la fin du projet, comme expliqué ci-dessus.
+    Une importation implicite est ajoutée au début et à la fin du projet, comme indiqué précédemment.
     
-    Pour spécifier une version spécifique du SDK, vous pouvez l’ajouter à l’attribut `Sdk` :
+    Pour spécifier une version spécifique du kit de développement logiciel (SDK), ajoutez-la à l’attribut `Sdk` :
 
     ```xml
     <Project Sdk="My.Custom.Sdk/1.2.3">
@@ -69,7 +69,7 @@ Durant l’évaluation du projet, [!INCLUDE[vstecmsbuild](../extensibility/inter
     > [!NOTE]
     > C’est actuellement le seul moyen possible de faire référence à un kit SDK de projet dans Visual Studio pour Mac.
 
-2. Utilisez l'élément `<Sdk/>` de niveau supérieur :
+- Utilisez l'élément `<Sdk/>` de niveau supérieur :
 
     ```xml
     <Project>
@@ -78,9 +78,11 @@ Durant l’évaluation du projet, [!INCLUDE[vstecmsbuild](../extensibility/inter
     </Project>
    ```
 
-   Une importation implicite est ajoutée au début et à la fin du projet, comme expliqué ci-dessus.  L'attribut `Version` n'est pas requis.
+   Une importation implicite est ajoutée au début et à la fin du projet, comme indiqué précédemment.
+   
+   L'attribut `Version` n'est pas requis.
 
-3. Utilisez l’élément `<Import/>` à un endroit quelconque de votre projet :
+- Utilisez l’élément `<Import/>` à un endroit quelconque de votre projet :
 
     ```xml
     <Project>
@@ -95,19 +97,23 @@ Durant l’évaluation du projet, [!INCLUDE[vstecmsbuild](../extensibility/inter
 
    L’inclusion explicite des importations dans votre projet vous permet d’avoir un contrôle total de l’ordre.
 
-   Quand vous utilisez l’élément `<Import/>`, vous pouvez également spécifier un attribut `Version` facultatif.  Par exemple, vous pouvez spécifier `<Import Project="Sdk.props" Sdk="My.Custom.Sdk" Version="1.2.3" />`.
+   Quand vous utilisez l’élément `<Import/>`, vous pouvez également spécifier un attribut `Version` facultatif. Par exemple, vous pouvez spécifier `<Import Project="Sdk.props" Sdk="My.Custom.Sdk" Version="1.2.3" />`.
 
 ## <a name="how-project-sdks-are-resolved"></a>Méthode de résolution des kits SDK de projet
 
-Durant l’évaluation de l’importation, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] résout dynamiquement le chemin d’accès au kit SDK de projet en fonction du nom et de la version que vous avez spécifiés.  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] contient également une liste des programmes de résolution de kits SDK inscrits, qui sont des plug-ins permettant de localiser les kits SDK de projet sur votre ordinateur.  Ces plug-ins sont les suivants :
+Lors de l’évaluation de l’importation, MSBuild résout dynamiquement le chemin d’accès au kit de développement logiciel (SDK) du projet en fonction du nom et de la version que vous avez spécifiés.  MSBuild dispose également d’une liste de programmes de résolution du kit de développement logiciel (SDK) inscrits, qui sont des plug-ins qui localisent les Kits SDK de projet sur votre ordinateur. Ces plug-ins sont les suivants :
 
-1. Un programme de résolution basé sur NuGet qui interroge vos flux de packages configurés pour localiser les packages NuGet qui correspondent à l’ID et à la version du kit SDK que vous avez spécifié.<br/>
-   Ce programme de résolution est uniquement actif si vous avez spécifié une version facultative, et il peut être utilisé pour tout kit SDK de projet personnalisé.
-2. Un programme de résolution d’interface CLI .NET qui résout les kits SDK installés avec l’interface CLI .NET.<br/>
-   Ce programme de résolution localise les kits SDK de projet tels que `Microsoft.NET.Sdk` et `Microsoft.NET.Sdk.Web` qui font partie du produit.
-3. Un programme de résolution par défaut qui résout les kits SDK installés avec MSBuild.
+- Un programme de résolution basé sur NuGet qui interroge vos flux de packages configurés pour localiser les packages NuGet qui correspondent à l’ID et à la version du kit SDK que vous avez spécifié.
 
-Le programme de résolution de kits SDK basé sur NuGet prend en charge la spécification d’une version dans votre fichier [global.json](/dotnet/core/tools/global-json), ce qui vous permet de contrôler la version du kit SDK de projet à partir d’un seul emplacement, et non de chaque projet individuel :
+   Ce programme de résolution n’est actif que si vous avez spécifié une version facultative. Il peut être utilisé pour n’importe quel kit de développement logiciel (SDK) de projet personnalisé.
+   
+- Un programme de résolution de l’interface CLI .NET qui résout les kits de développement logiciel installés avec l' [interface CLI .net](/dotnet/core/tools/).
+
+   Ce programme de résolution localise les kits de développement logiciel (SDK) de projet tels que `Microsoft.NET.Sdk` et les `Microsoft.NET.Sdk.Web` qui font partie du produit.
+   
+- Un programme de résolution par défaut qui résout les kits SDK installés avec MSBuild.
+
+Le programme de résolution SDK NuGet prend en charge la spécification d’une version dans le fichier [global. JSON](/dotnet/core/tools/global-json) , qui vous permet de contrôler la version du SDK Project dans un emplacement plutôt que dans chaque projet individuel :
 
 ```json
 {
@@ -118,7 +124,7 @@ Le programme de résolution de kits SDK basé sur NuGet prend en charge la spéc
 }
 ```
 
-Seule une version de chaque kit SDK de projet peut être utilisée durant une build.  Si vous référencez deux versions différentes du même kit SDK de projet, MSBuild émet un avertissement.  Il est recommandé de ne **pas** spécifier de version dans vos projets si une version est spécifiée dans votre fichier *global.json*.
+Seule une version de chaque kit SDK de projet peut être utilisée durant une build. Si vous référencez deux versions différentes du même Kit de développement logiciel (SDK) de projet, MSBuild émet un avertissement. Il est recommandé de **ne pas** spécifier de version dans vos projets si une version est spécifiée dans le fichier *global. JSON* .
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -8,12 +8,12 @@ ms.devlang: dotnet
 ms.topic: article
 ms.date: 03/08/2019
 ms.author: ghogen
-ms.openlocfilehash: 5d1f160435fd8c62a44d3e5d3192870143558de4
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 9952ade8cae70b7e542b9de0b9ca36967f3bd8bb
+ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188795"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76826555"
 ---
 # <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>Déployer un conteneur ASP.NET Core sur Azure App Service à l’aide de Visual Studio
 
@@ -21,7 +21,7 @@ Ce didacticiel vous guide tout au long de l’utilisation de Visual Studio pour 
 
 Si vous n’avez pas d’abonnement Azure, créez un [compte gratuit](https://azure.microsoft.com/free/dotnet/?utm_source=acr-publish-doc&utm_medium=docs&utm_campaign=docs) avant de commencer.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Prerequisites
 
 Pour suivre ce didacticiel :
 
@@ -53,13 +53,13 @@ La procédure suivante vous accompagne dans la création d’une application ASP
 1. Choisissez **Application web**.
 1. Indiquez si vous souhaitez ou non une prise en charge de SSL via la case à cocher **Configurer pour HTTPS**.
 1. Cochez la case **Activer la prise en charge de Docker**.
-1. Sélectionnez le type de conteneur **Linux** , puis cliquez sur **créer**. Les conteneurs Windows ne sont pas pris en charge pour le déploiement sur Azure App Service en tant que conteneur.
+1. Sélectionnez le type de conteneur, puis cliquez sur **créer**. Les conteneurs Windows ne sont pas pris en charge pour le déploiement sur Azure App Service en tant que conteneur.
 ::: moniker-end
 
 ## <a name="deploy-the-container-to-azure"></a>Déployer le conteneur sur Azure
 
 1. Cliquez avec le bouton droit sur votre projet dans l’**Explorateur de solutions** et choisissez **Publier**.
-1. Dans la boîte de dialogue cible de publication, choisissez **app service Linux**.
+1. Dans la boîte de dialogue cible de publication, choisissez **app service Linux** ou **app service**. Il s’agit du système d’exploitation qui hébergera le serveur Web.
 1. Vous pouvez publier uniquement sur App Service, ou vous pouvez publier sur App Service et Azure Container Registry (ACR). Pour publier le conteneur dans une Azure Container Registry (ACR), choisissez **créer un nouveau App service pour conteneurs**, puis cliquez sur **publier**.
 
    ![Capture d’écran de la boîte de dialogue publier](media/deploy-app-service/publish-app-service-linux.PNG)
@@ -79,7 +79,18 @@ La procédure suivante vous accompagne dans la création d’une application ASP
    ![Capture d’écran de l’application Web](media/deploy-app-service/web-application-running.png)
 
 1. Le profil de publication est enregistré avec tous les détails que vous avez sélectionnés, tels que le groupe de ressources et le registre de conteneurs.
-1. Pour effectuer un nouveau déploiement avec le même profil de publication, utilisez le bouton **publier** , le bouton **publier** dans la fenêtre **activité de publication Web** , ou cliquez avec le bouton droit sur le projet dans **Explorateur de solutions** et choisissez l’élément **publier** sur le menu contextuel.
+
+1. Pour effectuer un nouveau déploiement avec le même profil de publication, utilisez le bouton **publier** , le bouton **publier** dans la fenêtre **activité de publication Web** , ou cliquez avec le bouton droit sur le projet dans **Explorateur de solutions** et choisissez l’élément **publier** dans le menu contextuel.
+
+## <a name="view-container-settings"></a>Afficher les paramètres du conteneur
+
+Dans le [portail Azure](https://portal.azure.com), vous pouvez ouvrir votre App service déployée.
+
+Vous pouvez afficher les paramètres de votre App Service déployée en ouvrant le menu **paramètres de conteneur* (lorsque vous utilisez Visual Studio 2019 version 16,4 ou ultérieure).
+
+![Capture d’écran du menu des paramètres de conteneur dans le Portail Azure](media/deploy-app-service/container-settings-menu.png)
+
+À partir de là, vous pouvez afficher les informations du conteneur, afficher ou télécharger des journaux ou configurer un déploiement continu. Consultez [Azure App service ci/CD de déploiement continu](/azure/app-service/containers/app-service-linux-ci-cd).
 
 ## <a name="clean-up-resources"></a>Nettoyer les ressources
 
@@ -87,9 +98,9 @@ Pour supprimer toutes les ressources Azure associées à ce didacticiel, supprim
 
 Dans la Portail Azure, choisissez **groupes de ressources**, sélectionnez le groupe de ressources pour ouvrir la page de détails correspondante. Vérifiez qu’il s’agit du groupe de ressources approprié, puis choisissez **supprimer le groupe de ressources**, tapez le nom et choisissez **supprimer**.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
-Configurez l’intégration et la livraison continues (CI/CD) avec [Azure pipelines](/azure/devops/pipelines/?view=azure-devops).
+En savoir plus sur [Azure App service Linux](/azure/app-service/containers/app-service-linux-intro).
 
 ## <a name="see-also"></a>Voir aussi
 
