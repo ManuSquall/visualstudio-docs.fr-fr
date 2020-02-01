@@ -6,16 +6,16 @@ ms.author: ghogen
 ms.date: 02/01/2019
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 63d2f021aabc3d9152900ad62f072ec1a35a8e5b
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: ae6548892010035564bf29a8eda25b736db97d2a
+ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75928110"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76922976"
 ---
 Avec Visual Studio, vous pouvez facilement générer, déboguer et exécuter des applications de ASP.NET Core en conteneur et les publier sur Azure Container Registry (ACR), un hub d’ancrage, Azure App Service ou votre propre registre de conteneurs. Dans cet article, nous allons effectuer la publication sur ACR.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Prerequisites
 
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) avec la charge de travail **Développement web**, **Azure Tools** et/ou la charge de travail **Développement multiplateforme .NET Core**
@@ -29,12 +29,14 @@ Pour l’installation de l’ordinateur d’amarrage, commencez par examiner les
 
 1. Dans le menu Visual Studio, sélectionnez **Fichier > Nouveau > Projet**.
 1. Sous la section **Modèles** de la boîte de dialogue **Nouveau projet**, sélectionnez **Visual C# > Web**.
-1. Sélectionnez **Nouvelle application web ASP.NET Core**.
+1. Sélectionnez **ASP.net Core application Web** ou si vous souhaitez utiliser le .NET Framework au lieu de .net Core, sélectionnez **application Web ASP.net**.
 1. Donnez un nom à votre nouvelle application (ou utilisez la valeur par défaut) et sélectionnez **OK**.
 1. Sélectionnez **Application web**.
 1. Cochez la case **Activer la prise en charge de Docker**.
 
    ![Case Activer la prise en charge de Docker](../../media/container-tools/enable-docker-support.PNG)
+
+   La capture d’écran montre .NET Core ; Si vous utilisez .NET Framework, cela semble un peu différent.
 
 1. Sélectionnez le type de conteneur souhaité (Windows ou Linux) et cliquez sur **OK**.
 
@@ -65,7 +67,7 @@ COPY --from=publish /app .
 ENTRYPOINT ["dotnet", "HelloDockerTools.dll"]
 ```
 
-Le *Dockerfile* précédent est basé sur l’image [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/). Il comprend des instructions pour modifier l’image de base en générant votre projet et en l’ajoutant au conteneur.
+Le *Dockerfile* précédent est basé sur l’image [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/). Il comprend des instructions pour modifier l’image de base en générant votre projet et en l’ajoutant au conteneur. Si vous utilisez le .NET Framework, l’image de base sera différente.
 
 Quand la case **Configurer pour HTTPS** de la boîte de dialogue du nouveau projet est cochée, le fichier *Dockerfile* expose deux ports. Un port est utilisé pour le trafic HTTP tandis que l’autre est utilisé pour HTTPS. Si la case n’est pas cochée, un seul port (80) est exposé pour le trafic HTTP.
 
