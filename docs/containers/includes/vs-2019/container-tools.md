@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Tools pour Docker avec ASP.NET Core
+title: Visual Studio Tools pour Docker avec ASP.NET
 author: ghogen
 description: Découvrez comment utiliser les outils Visual Studio 2019 et Docker pour Windows
 ms.author: ghogen
@@ -7,20 +7,20 @@ ms.date: 02/01/2019
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: d0da02773913a610c77d7165fdb0f9becfc59e9c
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 3869cf025b4ed0e744a7fea929aac38acb7dd816
+ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75927870"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76922980"
 ---
 Avec Visual Studio, vous pouvez facilement générer, déboguer et exécuter des applications .NET, ASP.NET et ASP.NET Core en conteneur, et les publier sur Azure Container Registry (ACR), sur le hub d’ancrage, Azure App Service ou sur votre propre registre de conteneurs. Dans cet article, nous allons publier une application ASP.NET Core sur ACR.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Prerequisites
 
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) avec la charge de travail **Développement web**, **Outils Azure** et/ou la charge de travail **Développement multiplateforme .NET Core** installée
-* [Outils de développement .NET core 2.2](https://dotnet.microsoft.com/download/dotnet-core/2.2) pour le développement avec .NET Core 2.2
+* [Outils de développement .net Core](https://dotnet.microsoft.com/download/dotnet-core/) pour le développement avec .net Core
 * Pour publier sur Azure Container Registry, un abonnement Azure. [Inscrivez-vous pour obtenir un essai gratuit](https://azure.microsoft.com/offers/ms-azr-0044p/).
 
 ## <a name="installation-and-setup"></a>Installation et configuration
@@ -29,10 +29,12 @@ Pour l’installation de l’ordinateur d’amarrage, commencez par examiner les
 
 ## <a name="add-a-project-to-a-docker-container"></a>Ajouter un projet à un conteneur Docker
 
-1. Créez un nouveau projet à l’aide du modèle **Application web ASP.NET Core**.
+1. Créez un projet à l’aide du modèle d' **application web ASP.net Core** ou si vous souhaitez utiliser le .NET Framework au lieu de .net Core, choisissez **application web ASP.net (.NET Framework)** .
 1. Sélectionnez **application Web**et assurez-vous que la case **activer la prise en charge** de l’ancrage est cochée.
 
    ![Case Activer la prise en charge de Docker](../../media/container-tools/vs-2019/create-new-web-application.PNG)
+
+   La capture d’écran montre .NET Core ; Si vous utilisez .NET Framework, cela semble un peu différent.
 
 1. Sélectionnez le type de conteneur souhaité (Windows ou Linux) et cliquez sur **Créer**.
 
@@ -63,7 +65,7 @@ COPY --from=publish /app .
 ENTRYPOINT ["dotnet", "HelloDockerTools.dll"]
 ```
 
-Le *Dockerfile* précédent est basé sur l’image [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/). Il comprend des instructions pour modifier l’image de base en générant votre projet et en l’ajoutant au conteneur.
+Le *Dockerfile* précédent est basé sur l’image [microsoft/aspnetcore](https://hub.docker.com/r/microsoft/aspnetcore/). Il comprend des instructions pour modifier l’image de base en générant votre projet et en l’ajoutant au conteneur. Si vous utilisez le .NET Framework, l’image de base sera différente.
 
 Quand la case **Configurer pour HTTPS** de la boîte de dialogue du nouveau projet est cochée, le fichier *Dockerfile* expose deux ports. Un port est utilisé pour le trafic HTTP tandis que l’autre est utilisé pour HTTPS. Si la case n’est pas cochée, un seul port (80) est exposé pour le trafic HTTP.
 
@@ -71,7 +73,7 @@ Quand la case **Configurer pour HTTPS** de la boîte de dialogue du nouveau proj
 
 Sélectionnez **Docker** dans la liste déroulante de débogage dans la barre d’outils et démarrez le débogage de l’application. Vous pouvez être amené à voir s’afficher un message vous invitant à approuver un certificat. Choisissez d’approuver le certificat pour continuer.
 
-L’option **Outil conteneur** dans la fenêtre **Sortie** indique les actions en cours.
+L’option **Outil conteneur** dans la fenêtre **Sortie** indique les actions en cours. La première fois, elle peut prendre un certain temps pour télécharger l’image de base, mais elle est beaucoup plus rapide lors des exécutions suivantes.
 
 ## <a name="containers-window"></a>Fenêtre conteneurs
 

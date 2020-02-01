@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: d74cb5b1594c0e4d347e2f8a4e1924cf68d64eed
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 3ba3ca41fe1bf675bc4f17e9932525921060aaa9
+ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114938"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76922870"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installer et utiliser Visual Studio et les services Azure derrière un pare-feu ou un serveur proxy
 
@@ -76,6 +76,10 @@ Sachant que Visual Studio Installer télécharge des fichiers à partir de diff�
 | www\.incredibuild.com | Développement de jeux avec C++ (Incredibuild) |
 | incredibuildvs2017i.azureedge.net | Développement de jeux avec C++ (Incredibuild) |
 | www\.python.org | Développement Python (Python) <br /><br />Applications de science des données et analytiques (Python) |
+| developerservices2.apple.com | Approvisionnement Xamarin. iOS |
+| developer.apple.com | Approvisionnement Xamarin. iOS |
+| appstoreconnect.apple.com | Approvisionnement Xamarin. iOS |
+| idmsa.apple.com | Approvisionnement Xamarin. iOS |
 | | |
 
 ## <a name="use-visual-studio-and-azure-services"></a>Utiliser Visual Studio et les services Azure

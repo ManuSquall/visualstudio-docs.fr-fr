@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.workload: multiple
 ms.date: 10/13/2017
 ms.author: ghogen
-ms.openlocfilehash: ca43098740a1e8e940f27eae8d2c4d405c23230b
-ms.sourcegitcommit: 16d8ffc624adb716753412a22d586eae68a29ba2
+ms.openlocfilehash: ce7645b8b4f71cf94d7320a0072d15b2b8083dec
+ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "70312162"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76923003"
 ---
 # <a name="troubleshoot-visual-studio-development-with-docker"></a>Résoudre les problèmes de développement Visual Studio avec Docker
 
@@ -73,13 +73,25 @@ Vous devez être membre du groupe « docker-utilisateurs » pour avoir les aut
 1. Ajoutez vos comptes d’utilisateur.
 1. Déconnectez-vous, puis reconnectez-vous pour que ces modifications prennent effet.
 
-Vous pouvez également utiliser la `net localgroup` commande à l’invite de commandes de l’administrateur pour ajouter des utilisateurs à des groupes spécifiques.
+Vous pouvez également utiliser la commande `net localgroup` à l’invite de commandes de l’administrateur pour ajouter des utilisateurs à des groupes spécifiques.
 
 ```cmd
 net localgroup docker-users DOMAIN\username /add
 ```
 
 Dans PowerShell, utilisez la fonction [Add-LocalGroupMember](/powershell/module/microsoft.powershell.localaccounts/add-localgroupmember) .
+
+## <a name="low-disk-space"></a>Espace disque faible
+
+Par défaut, l’arrimeur stocke les images dans le dossier *% ProgramData%/docker/* , qui se trouve généralement sur le lecteur système, * C:\ProgramData\Docker\*. Pour empêcher les images d’occuper de l’espace sur le lecteur système, vous pouvez modifier l’emplacement du dossier d’images.  À partir de l’icône de l’Ancreur, dans la barre des tâches, ouvrez paramètres de l’ancrage, choisissez **démon**et passez de **basique** à **avancé**. Dans le volet de modification, ajoutez le paramètre de propriété `graph` avec la valeur de l’emplacement souhaité pour les images de l’ancrage :
+
+```json
+    "graph": "D:\\mypath\\images"
+```
+
+![Capture d’écran du paramètre d’emplacement de l’image de l’ancrage](media/troubleshooting-docker-errors/docker-settings-image-location.png)
+
+Cliquez sur **appliquer** pour redémarrer l’ancrage. Ces étapes modifient le fichier de configuration sur *%ProgramData%\docker\config\daemon.JSON*. Les images générées précédemment ne sont pas déplacées.
 
 ## <a name="microsoftdockertools-github-repo"></a>Référentiel GitHub Microsoft/DockerTools
 
