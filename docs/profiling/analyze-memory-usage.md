@@ -8,19 +8,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 124b792e134b31a5964c8f202c7870a58bc0878b
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.openlocfilehash: 98382cdcde1e8413d7b6592b52aaee09e6c4274c
+ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128252"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76923335"
 ---
 # <a name="analyze-memory-usage"></a>Analyser l’utilisation de la mémoire
 Utilisez l’outil de diagnostic **Utilisation de la mémoire** intégré au débogueur pour rechercher les fuites de mémoire et les utilisations inefficaces de la mémoire. L’outil Utilisation de la mémoire vous permet de prendre un ou plusieurs *instantanés* du tas de mémoire managée et native. Vous pouvez collecter des instantanés d’applications .NET, ASP.NET, natives ou en mode mixte (.NET et natives).
 
 - Vous pouvez analyser un instantané pour comprendre l’impact relatif des types d’objets sur l’utilisation de la mémoire et pour rechercher le code dans votre application qui utilise la mémoire de manière inefficace.
 
-- Vous pouvez aussi comparer (diff) deux instantanés d’une application pour rechercher les sections de votre code qui provoquent une augmentation de l’utilisation de la mémoire au fil du temps.
+- Vous pouvez aussi comparer (diff) deux instantanés d'une application pour rechercher les sections de votre code qui provoquent une augmentation de l'utilisation de la mémoire au fil du temps.
 
 Pour obtenir des instructions détaillées, consultez le didacticiel [Analyser l’utilisation de la mémoire](../profiling/memory-usage.md).  Actuellement, pour mesurer l’utilisation de la mémoire faite par une application .NET Core, vous devez utiliser l’outil avec le débogueur joint. Pour les autres applications managées et natives, vous pouvez utiliser l’outil avec ou sans débogueur.
 
@@ -36,3 +36,4 @@ Vous pouvez utiliser les Outils de profilage sans débogueur avec Windows 7 et 
 
 - [Profilage dans Visual Studio](../profiling/index.yml)
 - [Découvrir les outils de profilage](../profiling/profiling-feature-tour.md)
+- [Analyser l’utilisation de la mémoire sans le débogueur](../profiling/memory-usage-without-debugging2.md)
