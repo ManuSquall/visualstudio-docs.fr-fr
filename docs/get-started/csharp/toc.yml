@@ -1,6 +1,6 @@
 - name: 'Didacticiels C#'
   href: index.yml
-- name: Vue d'ensemble
+- name: Vue d’ensemble
   items:
     - name: À propos de Visual Studio
       href: visual-studio-ide.md
@@ -38,15 +38,17 @@
 - name: Formation à Visual Studio
   expanded: true
   items:
+    - name: Exécuter un programme
+      href: run-program.md
     - name: Ouvrir un projet à partir d’un référentiel
       href: ../tutorial-open-project-from-repo.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
     - name: Écrire et modifier du code
       href: tutorial-editor.md
-    - name: Compiler et générer
+    - name: Compilation et génération
       href: ../../ide/compiling-and-building-in-visual-studio.md
     - name: Déboguer votre code
       href: ../csharp/tutorial-debugger.md
-    - name: Test unitaire
+    - name: Test des unités
       href: ../../test/getting-started-with-unit-testing.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
     - name: Déployer votre projet
       href: ../../deployment/index.yml
