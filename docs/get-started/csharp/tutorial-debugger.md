@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2890ee9879d3cab2ff134fdbfcd4edabb36d512
-ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
+ms.openlocfilehash: e81d1c50f66925064dc008d7d50bcdbe69606914
+ms.sourcegitcommit: 4a4eed115525c6d34a1fbdf87b793893cd43b70d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76923164"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "77001523"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Tutoriel : Apprendre à déboguer le code C# avec Visual Studio
 
@@ -36,7 +36,7 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 > * Inspecter des variables dans des bulles d’informations et dans les fenêtres du débogueur
 > * Examiner la pile des appels
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Configuration requise
 
 ::: moniker range=">=vs-2019"
 
@@ -187,7 +187,7 @@ Nous utilisons ici principalement des raccourcis clavier, car c’est un bon moy
 
      `SendMessage(name, a[i]);`
 
-2. Appuyez une fois de plus sur **F11** pour effectuer un pas à pas détaillé dans la méthode `SendMessage`.
+1. Appuyez une fois de plus sur **F11** pour effectuer un pas à pas détaillé dans la méthode `SendMessage`.
 
      Le pointeur jaune passe à la méthode `SendMessage`.
 
@@ -203,7 +203,9 @@ Nous utilisons ici principalement des raccourcis clavier, car c’est un bon moy
 
      Vous devez revenir à la boucle `for` dans la méthode `Main`, suspendue au moment de l’appel de la méthode `SendMessage`.
 
-3. Quand vous êtes en pause au niveau de l’appel de méthode, appuyez sur **F10** (ou choisissez **déboguer > pas à pas principal**) une fois.
+1. Appuyez sur **F11** jusqu’à ce que vous reobteniez à nouveau l’appel de la méthode `SendMessage`.
+
+1. Quand vous êtes en pause au niveau de l’appel de méthode, appuyez sur **F10** (ou choisissez **déboguer > pas à pas principal**) une fois.
 
      ![Utilisez F10 pour effectuer un pas à pas principal dans le code](../csharp/media/get-started-step-over.png "F10 pas à pas principal")
 
@@ -262,7 +264,7 @@ Les fonctionnalités qui vous permettent d’inspecter des variables sont parmi 
 
 1. Développez la variable `letters` pour afficher les éléments qu’elle contient.
 
-     ![Inspecter les variables dans la fenêtre automatique](../csharp/media/get-started-locals-window.png "Fenêtre automatique")
+     ![Inspecter les variables dans la fenêtre variables locales](../csharp/media/get-started-locals-window.png "Fenêtre Variables locales")
 
     La fenêtre **Variables locales** montre les variables qui se trouvent dans l’[étendue](https://www.wikipedia.org/wiki/Scope_(computer_science)) actuelle, c’est-à-dire le contexte d’exécution actif.
 
