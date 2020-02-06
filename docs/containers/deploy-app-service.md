@@ -6,14 +6,14 @@ manager: jillfra
 ms.technology: vs-azure
 ms.devlang: dotnet
 ms.topic: article
-ms.date: 03/08/2019
+ms.date: 01/27/2020
 ms.author: ghogen
-ms.openlocfilehash: 9952ade8cae70b7e542b9de0b9ca36967f3bd8bb
-ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
+ms.openlocfilehash: 6c1d56f788294826853ad441313597255308bb39
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76826555"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027291"
 ---
 # <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>Déployer un conteneur ASP.NET Core sur Azure App Service à l’aide de Visual Studio
 
@@ -21,26 +21,26 @@ Ce didacticiel vous guide tout au long de l’utilisation de Visual Studio pour 
 
 Si vous n’avez pas d’abonnement Azure, créez un [compte gratuit](https://azure.microsoft.com/free/dotnet/?utm_source=acr-publish-doc&utm_medium=docs&utm_campaign=docs) avant de commencer.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Conditions préalables requises
 
-Pour suivre ce didacticiel :
+Pour suivre ce tutoriel :
 
 ::: moniker range="vs-2017"
 - Installer la dernière version de [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) avec la charge de travail « Développement web et ASP.NET »
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) avec la charge de travail de *développement Web et ASP.net* .
+- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) avec la charge de travail *Développement ASP.NET et web*.
 ::: moniker-end
 - Installer le Bureau de l' [ancrage](https://docs.docker.com/docker-for-windows/install/)
 
-## <a name="create-an-aspnet-core-web-app"></a>Créer une application web ASP.NET Core
+## <a name="create-an-aspnet-core-web-app"></a>Créez une application web ASP.NET Core
 
 La procédure suivante vous accompagne dans la création d’une application ASP.NET Core qui sera utilisée dans ce didacticiel.
 
 ::: moniker range="vs-2017"
 1. Dans le menu Visual Studio, sélectionnez **Fichier > Nouveau > Projet**.
 2. Sous la section **Modèles** de la boîte de dialogue **Nouveau projet**, sélectionnez **Visual C# > Web**.
-3. Sélectionnez **Nouvelle application web ASP.NET Core**.
+3. Sélectionnez **Application web ASP.NET Core**.
 4. Donnez un nom à votre nouvelle application (ou utilisez la valeur par défaut) et sélectionnez **OK**.
 5. Sélectionnez **Application web**.
 6. Cochez la case **Activer la prise en charge de Docker**.
@@ -70,7 +70,7 @@ La procédure suivante vous accompagne dans la création d’une application ASP
 
    ![Capture d’écran des paramètres de publication](media/deploy-app-service/publish-app-service-linux2.png)
 
-1. Choisissez **créer**. Votre conteneur est déployé sur Azure dans le groupe de ressources et le registre de conteneurs que vous avez sélectionnés. Ce processus prend un peu de temps. Une fois l’opération terminée, l’onglet **publier** affiche des informations sur ce qui a été publié, y compris l’URL du site.
+1. Cliquez sur **Créer**. Votre conteneur est déployé sur Azure dans le groupe de ressources et le registre de conteneurs que vous avez sélectionnés. Ce processus prend un peu de temps. Une fois l’opération terminée, l’onglet **publier** affiche des informations sur ce qui a été publié, y compris l’URL du site.
 
    ![Capture d’écran de l’onglet publier](media/deploy-app-service/publish-succeeded.PNG)
 
@@ -98,7 +98,7 @@ Pour supprimer toutes les ressources Azure associées à ce didacticiel, supprim
 
 Dans la Portail Azure, choisissez **groupes de ressources**, sélectionnez le groupe de ressources pour ouvrir la page de détails correspondante. Vérifiez qu’il s’agit du groupe de ressources approprié, puis choisissez **supprimer le groupe de ressources**, tapez le nom et choisissez **supprimer**.
 
-## <a name="next-steps"></a>Étapes suivantes :
+## <a name="next-steps"></a>Étapes suivantes
 
 En savoir plus sur [Azure App service Linux](/azure/app-service/containers/app-service-linux-intro).
 

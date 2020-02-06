@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2797e8b51bba0e71db07ec748d7a6813183250fb
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: e8f99bc18f4fdc834d0c5fdc7818d945d116251e
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596188"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027627"
 ---
 # <a name="common-msbuild-project-properties"></a>Propriétés communes des projets MSBuild
 Le tableau ci-dessous répertorie les propriétés fréquemment utilisées qui sont définies dans les fichiers projet Visual Studio ou incluses dans les fichiers *.targets* fournis par MSBuild.
@@ -78,17 +78,18 @@ Le tableau ci-dessous répertorie les propriétés fréquemment utilisées qui s
 | NoStdLib | Valeur booléenne qui indique s’il faut éviter de référencer la bibliothèque standard (*mscorlib.dll*). La valeur par défaut est `false`. |
 | NoVBRuntimeReference | Valeur booléenne qui indique si le runtime [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] (*Microsoft.VisualBasic.dll*) doit être inclus comme référence dans le projet. |
 | NoWin32Manifest | Valeur booléenne qui indique si les informations de manifeste de Contrôle de compte d'utilisateur seront incorporées dans l'exécutable de l'application. S'applique uniquement aux projets Visual Studio ciblant [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)]. Dans les projets déployés à l'aide de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] et de COM sans inscription, cet élément est ignoré. `False` (valeur par défaut) spécifie que les informations de manifeste de Contrôle de compte d'utilisateur doivent être incorporées dans le fichier exécutable de l'application. `True` spécifie que les informations de manifeste de Contrôle de compte d'utilisateur ne doivent pas être incorporées.<br /><br /> Cette propriété s'applique uniquement aux projets [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ciblant [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)]. Dans les projets déployés à l'aide de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] et de COM sans inscription, cette propriété est ignorée.<br /><br /> Vous ne devez ajouter NoWin32Manifest que si vous ne voulez pas que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] incorpore la moindre information de manifeste dans l’exécutable de l’application ; ce processus s’appelle *virtualisation*. Pour utiliser la virtualisation, définissez `<ApplicationManifest>` conjointement à `<NoWin32Manifest>`, comme suit :<br /><br /> -   Pour les projets [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], supprimez le nœud `<ApplicationManifest>`. (Dans les projets [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], `<NoWin32Manifest>` est ignoré s’il existe un nœud `<ApplicationManifest>`.)<br />-   Pour les projets [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], affectez à `<ApplicationManifest>` la valeur `False` et à `<NoWin32Manifest>` la valeur `True`. (Dans les projets [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], `<ApplicationManifest>` remplace `<NoWin32Manifest>`.)<br /> Cette propriété est équivalente au commutateur `/nowin32manifest` du compilateur *vbc.exe*. |
-| Optimize | Valeur booléenne qui, lorsqu'elle correspond à `true`, active les optimisations du compilateur. Cette propriété est équivalente au commutateur `/optimize` du compilateur. |
+| Optimiser | Valeur booléenne qui, lorsqu'elle correspond à `true`, active les optimisations du compilateur. Cette propriété est équivalente au commutateur `/optimize` du compilateur. |
 | OptionCompare | Spécifie la façon dont sont effectuées les comparaisons de chaînes. Les valeurs valides sont "binary" et "text". Cette propriété est équivalente au commutateur `/optioncompare` du compilateur *vbc.exe*. |
 | OptionExplicit | Valeur booléenne qui, lorsqu'elle correspond à `true`, requiert une déclaration explicite des variables dans le code source. Cette propriété est équivalente au commutateur `/optionexplicit` du compilateur. |
 | OptionInfer | Valeur booléenne qui, lorsqu'elle correspond à `true`, active l'inférence de type des variables. Cette propriété est équivalente au commutateur `/optioninfer` du compilateur. |
 | OptionStrict | Valeur booléenne qui, lorsqu'elle correspond à `true`, pousse la tâche de génération à appliquer une sémantique de type stricte pour restreindre les conversions de types implicites. Cette propriété est équivalente au commutateur `/optionstrict` du compilateur *vbc.exe*. |
+| OutDir | Indique l’emplacement de sortie final pour le projet ou la solution. Lors de la génération d’une solution, OutDir peut être utilisé pour regrouper plusieurs sorties de projet à un seul emplacement. En outre, OutDir est inclus dans AssemblySearchPaths utilisé pour la résolution des références. Par exemple, *bin\Debug*. |
 | OutputPath | Spécifie le chemin du répertoire de sortie, relatif au répertoire de projet, par exemple *bin\Debug*. |
 | OutputType | Spécifie le format de fichier du fichier de sortie. Ce paramètre peut prendre l'une des valeurs suivantes :<br /><br /> -   Library. Crée une bibliothèque de code. (Valeur par défaut)<br />-   Exe. Crée une application console.<br />-   Module. Crée un module.<br />-   Winexe. Crée un programme Windows.<br /><br /> Cette propriété est équivalente au commutateur `/target` du compilateur *vbc.exe*. |
 | OverwriteReadOnlyFiles | Valeur booléenne qui indique si vous souhaitez permettre à la génération de remplacer les fichiers en lecture seule ou de générer une erreur. |
 | PathMap | Valeur qui indique comment mapper les chemins d’accès physiques avec les noms de chemins d’accès sources générés en sortie par le compilateur. Cette propriété est équivalente au commutateur `/pathmap` du compilateur *csc.exe*. |
 | PdbFile | Nom du fichier *.pdb* que vous émettez. Cette propriété est équivalente au commutateur `/pdb` du compilateur *csc.exe*. |
-| Platform | Système d'exploitation pour lequel vous générez la cible. Les valeurs valides sont « Any CPU », « x86 » et « x64 ». |
+| Plateforme | Système d'exploitation pour lequel vous générez la cible. Les valeurs valides sont « Any CPU », « x86 » et « x64 ». |
 | ProduceReferenceAssembly | Valeur booléenne qui, lorsqu’elle est définie sur `true`, permet la production d’[assemblys de référence](/dotnet/standard/assembly/reference-assemblies) pour l’assembly actuel. `Deterministic` doit être `true` lors de l’utilisation de cette fonctionnalité. Cette propriété correspond au commutateur `/refout` des compilateurs *vbc.exe* et *csc.exe*. |
 | ProduceOnlyReferenceAssembly | Valeur booléenne qui spécifie que le compilateur doit seulement émettre un assembly de référence, plutôt que le code compilé. Non utilisable avec `ProduceReferenceAssembly`.  Cette propriété correspond au commutateur `/refonly` des compilateurs *vbc.exe* et *csc.exe*. |
 | RemoveIntegerChecks | Valeur booléenne indiquant s'il convient de désactiver les contrôles d'erreurs de dépassement sur les entiers. La valeur par défaut est `false`. Cette propriété est équivalente au commutateur `/removeintchecks` du compilateur *vbc.exe*. |

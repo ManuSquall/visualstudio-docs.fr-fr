@@ -6,18 +6,18 @@ ms.author: ghogen
 ms.date: 01/10/2020
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 5d6b867c2f237f20747628533af055e5c4900ceb
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: b9e1a2fc7c9027c34aeb8a0e0d1d44fdb0211e65
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916509"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027332"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>Didacticiel : créer une application à plusieurs conteneurs avec Docker Compose
 
 Dans ce didacticiel, vous allez apprendre à gérer plusieurs conteneurs et à communiquer entre eux quand vous utilisez des outils de conteneur dans Visual Studio.  La gestion de plusieurs conteneurs nécessite l' *orchestration de conteneur* et nécessite un orchestrateur, comme docker compose, Kubernetes ou service fabric. Ici, nous allons utiliser Docker Compose. Docker Compose est idéal pour le débogage et les tests locaux au cours du cycle de développement.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Conditions préalables requises
 
 ::: moniker range="vs-2017"
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
@@ -84,6 +84,9 @@ Ajoutez un projet à la même solution et appelez-le *MyWebAPI*. Sélectionnez *
        }
     }
    ```
+   
+    > [!NOTE]
+    > Dans le code réel, vous ne devez pas supprimer `HttpClient` après chaque demande. Pour connaître les meilleures pratiques, consultez [utiliser HttpClientFactory pour implémenter des demandes http résilientes](https://docs.microsoft.com/dotnet/architecture/microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests).
 
    Pour .NET Core 3,1 dans Visual Studio 2019 ou version ultérieure, le modèle d’API Web utilise une API WeatherForecast. par conséquent, supprimez les marques de commentaire de la ligne et commentez la ligne pour ASP.NET 2. x.
 
@@ -185,7 +188,7 @@ Ajoutez un projet à la même solution et appelez-le *MyWebAPI*. Sélectionnez *
 
    L’application Web pour .NET 3,1 affiche les données météorologiques au format JSON.
 
-## <a name="next-steps"></a>Étapes suivantes :
+## <a name="next-steps"></a>Étapes suivantes
 
 Examinez les options de déploiement de vos [conteneurs sur Azure](/azure/containers).
 

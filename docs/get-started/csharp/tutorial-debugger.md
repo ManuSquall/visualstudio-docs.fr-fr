@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e81d1c50f66925064dc008d7d50bcdbe69606914
-ms.sourcegitcommit: 4a4eed115525c6d34a1fbdf87b793893cd43b70d
+ms.openlocfilehash: 6ede47c9daf37011195d66c746498cdfc809d24b
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "77001523"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027250"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Tutoriel : Apprendre à déboguer le code C# avec Visual Studio
 
@@ -28,7 +28,7 @@ Cet article présente les fonctionnalités du débogueur Visual Studio dans une 
 
 Bien que l’application de démonstration soit écrite en C#, la plupart des fonctionnalités sont applicables à C++, Visual Basic, F#, Python, JavaScript et d’autres langages pris en charge par Visual Studio (F# ne prend pas en charge Modifier et continuer. F# et JavaScript ne prennent pas en charge la fenêtre **Automatique**). Les captures d’écran sont en C#.
 
-Dans ce didacticiel, vous allez effectuer les actions suivantes :
+Ce didacticiel présente les procédures suivantes :
 
 > [!div class="checklist"]
 > * Démarrer le débogueur et atteindre des points d’arrêt
@@ -36,7 +36,7 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 > * Inspecter des variables dans des bulles d’informations et dans les fenêtres du débogueur
 > * Examiner la pile des appels
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Conditions préalables requises
 
 ::: moniker range=">=vs-2019"
 
@@ -63,13 +63,13 @@ Si vous n’avez pas encore installé Visual Studio, accédez à la page [Télé
 
 Si vous devez installer la charge de travail, mais que vous avez déjà installé Visual Studio, cliquez sur **Outils** > **Obtenir les outils et fonctionnalités...** , qui ouvre Visual Studio Installer. Visual Studio Installer est lancé. Choisissez la charge de travail **développement multiplateforme .net Core** , puis choisissez **modifier**.
 
-## <a name="create-a-project"></a>Créer un projet
+## <a name="create-a-project"></a>Création d’un projet
 
 Tout d’abord, vous allez créer un projet d’application console .NET Core. Le type de projet inclut tous les fichiers de modèle dont vous aurez besoin au départ.
 
 ::: moniker range="vs-2017"
 
-1. Ouvrez Visual Studio 2017.
+1. Ouvrez Visual Studio 2017.
 
 2. Dans la barre de menus supérieure, choisissez **fichier** > **nouveau** > **projet**.
 
@@ -98,13 +98,13 @@ Tout d’abord, vous allez créer un projet d’application console .NET Core. L
    > [!NOTE]
    > Si vous ne voyez pas le modèle **Application console (.NET Core)** , vous pouvez l’installer à partir de la fenêtre **Créer un projet**. Dans le **Vous ne trouvez pas ce que vous cherchez ?** , choisissez le lien **Installer plus d’outils et de fonctionnalités**. Ensuite, dans Visual Studio Installer, choisissez la charge de travail **Développement multiplateforme .NET Core**.
 
-1. Dans la fenêtre **configurer votre nouveau projet** , tapez ou entrez « *Démarrer-démarré-débogage »* dans la zone Nom du **projet** . Choisissez ensuite **Créer**.
+1. Dans la fenêtre **configurer votre nouveau projet** , tapez ou entrez *GetStartedDebugging* dans la zone **nom du projet** . Choisissez ensuite **Créer**.
 
    Visual Studio ouvre votre nouveau projet.
    
 ::: moniker-end
 
-## <a name="create-the-application"></a>Créer l’application
+## <a name="create-the-application"></a>Création de l'application
 
 1. Dans *Program.cs*, remplacez tout le code par défaut par le code suivant à la place :
 
@@ -134,7 +134,7 @@ Tout d’abord, vous allez créer un projet d’application console .NET Core. L
 
 ## <a name="start-the-debugger"></a>Démarrez le débogueur !
 
-1. Appuyez sur **F5** (**déboguer > Démarrer le débogage**) ou sur le bouton **Démarrer** le débogage ![Démarrer le débogage](../../debugger/media/dbg-tour-start-debugging.png "Lancement du débogage") dans la barre d’outils déboguer.
+1. Appuyez sur **F5** (**déboguer > Démarrer le débogage**) ou sur le bouton **Démarrer** le débogage ![Démarrer le débogage](../../debugger/media/dbg-tour-start-debugging.png "Démarrer le débogage") dans la barre d’outils déboguer.
 
      **F5** démarre l’application avec le débogueur attaché au processus de l’application, mais jusqu’à présent, nous n’avons rien fait de spécial pour examiner le code. L’application se charge juste et vous voyez la sortie de la console.
 
@@ -153,7 +153,7 @@ Tout d’abord, vous allez créer un projet d’application console .NET Core. L
 
      Dans ce tutoriel, nous examinons cette application plus en détail avec le débogueur et nous regardons les fonctionnalités du débogueur.
 
-2. Arrêtez le débogueur en appuyant sur le bouton rouge arrêter le ![débogage](../../debugger/media/dbg-tour-stop-debugging.png "Activer les outils de diagnostic durant le débogage") (**MAJ** + **F5**).
+2. Arrêtez le débogueur en appuyant sur le bouton rouge arrêter le ![débogage](../../debugger/media/dbg-tour-stop-debugging.png "Arrêter le débogage") (**MAJ** + **F5**).
 
 3. Dans la fenêtre de console, appuyez sur une touche pour fermer la fenêtre de console.
 
@@ -163,11 +163,11 @@ Tout d’abord, vous allez créer un projet d’application console .NET Core. L
 
     `name += letters[i];`
 
-    Un point d' ![arrêt](../../debugger/media/dbg-breakpoint.png "Point d'arrêt") de cercle rouge s’affiche à l’endroit où vous définissez le point d’arrêt.
+    Un point d' ![arrêt](../../debugger/media/dbg-breakpoint.png "Point d’arrêt") de cercle rouge s’affiche à l’endroit où vous définissez le point d’arrêt.
 
     Les points d’arrêt sont l’une des fonctionnalités les plus basiques et essentielles du débogage fiable. Quand vous définissez un point d'arrêt, Visual Studio interrompt l'exécution du code à l'emplacement du point d'arrêt pour vous permettre d'examiner les valeurs des variables, le comportement de la mémoire ou encore la bonne exécution ou non d'une branche de code.
 
-2. Appuyez sur **F5** ou cliquez sur le bouton **Démarrer** le débogage ![Démarrer le débogage](../../debugger/media/dbg-tour-start-debugging.png "Lancement du débogage"). l’application démarre et le débogueur s’exécute sur la ligne de code où vous définissez le point d’arrêt.
+2. Appuyez sur **F5** ou cliquez sur le bouton **Démarrer** le débogage ![Démarrer le débogage](../../debugger/media/dbg-tour-start-debugging.png "Démarrer le débogage"). l’application démarre et le débogueur s’exécute sur la ligne de code où vous définissez le point d’arrêt.
 
     ![Définir et atteindre un point d’arrêt](../csharp/media/get-started-set-breakpoint.png)
 
@@ -203,7 +203,7 @@ Nous utilisons ici principalement des raccourcis clavier, car c’est un bon moy
 
      Vous devez revenir à la boucle `for` dans la méthode `Main`, suspendue au moment de l’appel de la méthode `SendMessage`.
 
-1. Appuyez sur **F11** jusqu’à ce que vous reobteniez à nouveau l’appel de la méthode `SendMessage`.
+1. Appuyez plusieurs fois sur **F11** jusqu’à ce que vous obteniez à nouveau l’appel de la méthode `SendMessage`.
 
 1. Quand vous êtes en pause au niveau de l’appel de méthode, appuyez sur **F10** (ou choisissez **déboguer > pas à pas principal**) une fois.
 
@@ -213,7 +213,9 @@ Nous utilisons ici principalement des raccourcis clavier, car c’est un bon moy
 
 ## <a name="navigate-code-using-run-to-click"></a>Parcourir le code avec Exécuter jusqu’au clic
 
-1. Dans l’éditeur de code, faites défiler la liste vers le dessous et pointez sur la méthode `Console.WriteLine` dans le message `SendMessage` jusqu’à ce que ![le bouton vert](../../debugger/media/dbg-tour-run-to-click.png "RunToClick") **exécuter pour cliquer** sur s’affiche à gauche. L’info-bulle du bouton indique « Lancer l’exécution jusqu’ici ».
+1. Appuyez sur **F5** pour avancer à nouveau jusqu’au point d’arrêt.
+
+1. Dans l’éditeur de code, faites défiler ![l’affichage jusqu'](../../debugger/media/dbg-tour-run-to-click.png "RunToClick") à la méthode `Console.WriteLine` dans la méthode `SendMessage` jusqu’à ce que le bouton vert **exécuter pour cliquer** sur s’affiche à gauche. L’info-bulle du bouton indique « Lancer l’exécution jusqu’ici ».
 
      ![Utiliser la fonctionnalité exécuter pour cliquer](../csharp/media/get-started-run-to-click.png "Exécuter jusqu’au clic")
 
@@ -234,7 +236,7 @@ Quand vous appuyez sur **Redémarrer**, vous gagnez du temps par rapport à l’
 
 Le débogueur s’arrête à nouveau au point d’arrêt que vous avez défini précédemment à l’intérieur de la `for` boucle.
 
-## <a name="inspect-variables-with-data-tips"></a>Inspecter des variables avec des bulles d’informations (datatips)
+## <a name="inspect-variables-with-data-tips"></a>Inspecter des variables avec des bulles d’informations
 
 Les fonctionnalités qui vous permettent d’inspecter des variables sont parmi les plus pratiques du débogueur : vous pouvez faire cela de différentes façons. Souvent, quand vous essayez de déboguer un problème, vous essayez de déterminer si les variables stockent les valeurs que vous prévoyez à un moment donné.
 
@@ -264,7 +266,7 @@ Les fonctionnalités qui vous permettent d’inspecter des variables sont parmi 
 
 1. Développez la variable `letters` pour afficher les éléments qu’elle contient.
 
-     ![Inspecter les variables dans la fenêtre variables locales](../csharp/media/get-started-locals-window.png "Fenêtre Variables locales")
+     ![Inspecter les variables dans la fenêtre variables locales](../csharp/media/get-started-locals-window.png "Variables locales (fenêtre)")
 
     La fenêtre **Variables locales** montre les variables qui se trouvent dans l’[étendue](https://www.wikipedia.org/wiki/Scope_(computer_science)) actuelle, c’est-à-dire le contexte d’exécution actif.
 
@@ -278,7 +280,7 @@ Les fonctionnalités qui vous permettent d’inspecter des variables sont parmi 
 
 ## <a name="examine-the-call-stack"></a>Examiner la pile des appels
 
-1. Alors que l’exécution est mise en pause dans la boucle `for`, cliquez sur la fenêtre **Pile des appels** qui est ouverte par défaut dans le volet inférieur droit.
+1. Alors que l’exécution est mise en pause dans la boucle `for`, cliquez sur la fenêtre **Pile des appels**, qui est ouverte par défaut dans le volet inférieur droit.
 
     Si elle est fermée, ouvrez-la pendant que l’exécution est mise en pause dans le débogueur en choisissant **Déboguer** > **Windows** > **Pile des appels**.
 
@@ -316,7 +318,7 @@ Les fonctionnalités qui vous permettent d’inspecter des variables sont parmi 
 
     Félicitations ! Vous avez terminé ce didacticiel.
 
-## <a name="next-steps"></a>Étapes suivantes :
+## <a name="next-steps"></a>Étapes suivantes
 
 Dans ce tutoriel, vous avez découvert comment démarrer le débogueur, parcourir le code pas à pas et inspecter des variables. Vous pouvez obtenir une présentation générale des fonctionnalités du débogueur et suivre des liens qui donnent accès à plus d’informations.
 
