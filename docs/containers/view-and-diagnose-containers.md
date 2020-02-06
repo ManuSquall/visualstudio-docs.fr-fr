@@ -4,21 +4,21 @@ description: Décrit comment améliorer votre capacité à déboguer et à diagn
 author: ghogen
 ms.author: ghogen
 ms.topic: conceptual
-ms.date: 10/16/2019
+ms.date: 01/20/2020
 ms.technology: vs-azure
 monikerRange: vs-2019
-ms.openlocfilehash: bdf326bc337456a0a9b4ba085d308ead2c90d49b
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: b4670c003c06f8d16979589a4dce5abf33d5e27d
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75846944"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027303"
 ---
 # <a name="how-to-view-and-diagnose-containers-and-images-in-visual-studio"></a>Comment afficher et diagnostiquer des conteneurs et des images dans Visual Studio
 
 Vous pouvez voir ce qui se passe dans les conteneurs qui hébergent votre application à l’aide de la fenêtre **conteneurs** . Si vous utilisez l’invite de commandes pour exécuter les commandes de l’éditeur de ligne de commande pour afficher et diagnostiquer ce qui se passe avec vos conteneurs, cette fenêtre offre un moyen plus pratique de surveiller vos conteneurs sans quitter l’IDE de Visual Studio.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Conditions préalables requises
 
 - [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 - [Visual studio 2019 version 16,4 Preview 2](https://visualstudio.microsoft.com/downloads) ou version ultérieure, ou si vous utilisez une version antérieure de visual studio 2019, installez l' [extension de fenêtre conteneurs](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-containers-tools-extensions).
@@ -51,7 +51,7 @@ Sous l’onglet **ports** , vous pouvez vérifier les mappages de port en vigueu
 
 Les ports connus sont liés. ainsi, si le contenu est disponible sur un port, vous pouvez cliquer sur le lien pour ouvrir le navigateur.
 
-## <a name="view-logs"></a>Afficher les journaux
+## <a name="view-logs"></a>Afficher les journaux d’activité
 
 L’onglet **journaux** affiche les résultats de la commande `docker logs`. Par défaut, l’onglet affiche les flux STDOUT et stderr sur un conteneur, mais vous pouvez configurer la sortie. Pour plus d’informations, consultez [journalisation](https://docs.docker.com/config/containers/logging/)de l’ancrage.  Par défaut, l’onglet **journaux** diffuse les journaux, mais vous pouvez le désactiver en choisissant le bouton **arrêter** sous l’onglet.
 
@@ -104,7 +104,7 @@ Vous pouvez également afficher des images sur l’ordinateur local à l’aide 
 
 Pour supprimer une image, cliquez avec le bouton droit sur l’image dans le TreeView, choisissez **supprimer**ou sélectionnez l’image, puis utilisez le bouton **supprimer** dans la barre d’outils.
 
-## <a name="next-steps"></a>Étapes suivantes :
+## <a name="next-steps"></a>Étapes suivantes
 
 Pour plus d’informations sur les outils de conteneur disponibles dans Visual Studio, consultez [vue d’ensemble des outils de conteneur](overview.md).
 

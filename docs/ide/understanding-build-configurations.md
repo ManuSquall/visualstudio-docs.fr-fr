@@ -1,6 +1,6 @@
 ---
 title: Présentation des configurations de build
-ms.date: 11/04/2016
+ms.date: 01/20/2020
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 f1_keywords:
@@ -26,12 +26,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47a76c054a71d88800bf1af225c332c9df3d2035
-ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
+ms.openlocfilehash: 6b472ca78d36247a76bf397989f48e04230ccd7d
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2020
-ms.locfileid: "76269135"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027615"
 ---
 # <a name="understand-build-configurations"></a>Présentation des configurations de build
 
@@ -48,7 +48,7 @@ Vous pouvez créer vos propres configurations de build au niveau de la solution 
 
 Pour créer, sélectionner, modifier ou supprimer une configuration, vous pouvez utiliser le **Gestionnaire de configurations**. Pour l’ouvrir, dans la barre de menus, choisissez **Générer** > **Gestionnaire de configurations**, ou tapez simplement **Configuration** dans la zone de recherche. Vous pouvez également utiliser la liste **Configurations de solutions** dans la barre d’outils **Standard** pour sélectionner une configuration ou ouvrir le **Gestionnaire de configurations**.
 
-![Gestionnaire de configurations](media/understanding-build-configurations/config-manager.png)
+![Gestionnaire de configuration](media/understanding-build-configurations/config-manager.png)
 
 > [!NOTE]
 > Si les paramètres de configuration de solution ne figurent pas dans la barre d’outils et si vous ne pouvez pas accéder au **Gestionnaire de configurations**, les paramètres de développement de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] peuvent être appliqués. Pour plus d’informations, consultez [Guide pratique pour gérer les configurations de build en appliquant les paramètres du développeur Visual Basic](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).
@@ -93,7 +93,7 @@ Visual Studio utilise les critères ci-après pour assigner des configurations d
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Procédure pas à pas : générer une application](../ide/walkthrough-building-an-application.md)
+- [Procédure pas à pas : générer une application](../ide/walkthrough-building-an-application.md)
 - [Compiler et générer](../ide/compiling-and-building-in-visual-studio.md)
 - [Solutions et projets](../ide/solutions-and-projects-in-visual-studio.md)
 - [Informations de référence sur les builds C/C++](/cpp/build/reference/c-cpp-building-reference)
