@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 11/20/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 6f11082a0e309d4e34dd25a1085c1f8c971f28f7
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: d91dd01879ac3bb62b981109463f6762046382ef
+ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916940"
+ms.lasthandoff: 02/05/2020
+ms.locfileid: "77027260"
 ---
 # <a name="how-visual-studio-builds-containerized-apps"></a>Comment Visual Studio génère des applications conteneurisées
 
@@ -32,7 +32,7 @@ EXPOSE 80
 EXPOSE 443
 ```
 
-Les lignes du fichier dockerfile commencent par l’image nano Server de Microsoft Container Registry (mcr.microsoft.com) et créent une image intermédiaire `base` qui expose les ports 80 et 443, puis définit le répertoire de travail sur `/app`.
+Les lignes de la fichier dockerfile commencent par l’image Debian de Microsoft Container Registry (mcr.microsoft.com) et créent une image intermédiaire `base` qui expose les ports 80 et 443, puis définit le répertoire de travail sur `/app`.
 
 L’étape suivante est `build`, qui se présente comme suit :
 
@@ -64,7 +64,7 @@ La dernière étape redémarre à partir de `base`, et comprend le `COPY --from=
 
 Si vous souhaitez générer en dehors de Visual Studio, vous pouvez utiliser `docker build` ou `MSBuild` pour générer à partir de la ligne de commande.
 
-### <a name="docker-build"></a>docker build
+### <a name="docker-build"></a>version de l’arrimeur
 
 Pour générer une solution en conteneur à partir de la ligne de commande, vous pouvez généralement utiliser la `docker build <context>` de commande pour chaque projet de la solution. Vous fournissez l’argument de *contexte de génération* . Le *contexte de génération* d’un fichier dockerfile est le dossier sur l’ordinateur local utilisé comme dossier de travail pour générer l’image. Par exemple, il s’agit du dossier à partir duquel vous copiez des fichiers lorsque vous copiez dans le conteneur.  Dans les projets .NET Core, utilisez le dossier qui contient le fichier solution (. sln).  Exprimée sous la forme d’un chemin d’accès relatif, cet argument correspond généralement à « .. » pour un fichier dockerfile dans un dossier de projet, et au fichier solution dans son dossier parent.  Pour les projets .NET Framework, le contexte de génération est le dossier du projet, et non le dossier de la solution.
 
@@ -144,7 +144,7 @@ Si votre configuration prend en charge les builds en conteneur et non en contene
 
 Pour plus d’informations sur l’utilisation de SSL avec les applications de ASP.NET Core dans les conteneurs, consultez [hébergement d’images ASP.net core avec le dockeur sur https](/aspnet/core/security/docker-https)).
 
-## <a name="debugging"></a>débogage
+## <a name="debugging"></a>Débogage
 
 Lors de la génération dans la configuration de **débogage** , Visual Studio propose plusieurs optimisations qui facilitent les performances du processus de génération pour les projets en conteneur. Le processus de génération pour les applications en conteneur n’est pas aussi simple que de suivre les étapes décrites dans fichier dockerfile. La génération dans un conteneur est beaucoup plus lente que la génération sur l’ordinateur local.  Ainsi, quand vous générez dans la configuration de **débogage** , Visual Studio génère en fait vos projets sur l’ordinateur local, puis partage le dossier de sortie vers le conteneur à l’aide du montage de volume. Une génération avec cette optimisation activée est appelée « génération en mode *rapide* ».
 
@@ -185,12 +185,12 @@ Visual Studio utilise un point d’entrée de conteneur personnalisé en fonctio
 
 Le point d’entrée de conteneur ne peut être modifié que dans des projets dockr-compose, et non dans des projets à conteneur unique.
 
-## <a name="next-steps"></a>Étapes suivantes :
+## <a name="next-steps"></a>Étapes suivantes
 
 Découvrez comment personnaliser davantage vos builds en définissant des propriétés MSBuild supplémentaires dans vos fichiers projet. Consultez [propriétés MSBuild pour les projets de conteneur](container-msbuild-properties.md).
 
 ## <a name="see-also"></a>Voir aussi
 
 [MSBuild](../msbuild/msbuild.md)
-[dockerfile sur Windows](/virtualization/windowscontainers/manage-docker/manage-windows-dockerfile)
-[Linux conteneurs sur Windows](/virtualization/windowscontainers/deploy-containers/linux-containers)
+[fichier dockerfile sur Windows](/virtualization/windowscontainers/manage-docker/manage-windows-dockerfile)
+les [conteneurs Linux sur Windows](/virtualization/windowscontainers/deploy-containers/linux-containers)
