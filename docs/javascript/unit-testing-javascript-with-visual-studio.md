@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 90a440ce88690c12792c17729e93f9fa287dabb6
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: 792c74a3b5da5ed6528fa3919a0c60625d1a38ef
+ms.sourcegitcommit: 5806d463780368515e59c2614ed9cfaaa4ab4b91
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888629"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77071945"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>Test unitaire JavaScript et TypeScript dans Visual Studio
 
@@ -99,7 +99,7 @@ Vous pouvez exécuter les tests à partir de [l’invite de commandes développe
 vstest.console.exe <path to project file>\NodejsConsoleApp23.njsproj /TestAdapterPath:<VisualStudioFolder>\Common7\IDE\Extensions\Microsoft\NodeJsTools\TestAdapter
 ```
 
-Cette commande affiche une sortie similaire à la suivante :
+Cette commande propose une sortie du type suivant :
 
 ```
 Microsoft (R) Test Execution Command Line Tool Version 15.5.0
@@ -173,3 +173,5 @@ En plus des propriétés ci-dessus, vous devez également installer le package N
     <GenerateProgramFile>false</GenerateProgramFile>
 </PropertyGroup>
 ```
+
+Certaines infrastructures de test peuvent nécessiter des packages NPM supplémentaires pour la détection des tests. Par exemple, Jest requiert le package NPM jest-Editor-support. Si nécessaire, consultez la documentation relative à l’infrastructure spécifique.
