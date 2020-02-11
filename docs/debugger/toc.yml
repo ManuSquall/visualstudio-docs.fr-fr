@@ -18,7 +18,7 @@
       href: quickstart-debug-with-cplusplus.md
     - name: Déboguer une application ASP.NET
       href: quickstart-debug-aspnet.md
-- name: Didacticiels
+- name: Tutoriels
   items:
     - name: 'Apprendre à déboguer C#'
       href: /visualstudio/get-started/csharp/tutorial-debugger?toc=/visualstudio/debugger/toc.json
@@ -268,6 +268,10 @@
                   href: visualizer-api-reference.md
         - name: Restaurer des commandes de débogueur masquées
           href: how-to-restore-hidden-debugger-commands.md
+    - name: Code source
+      items:
+        - name: Décompiler des assemblys .NET
+          href: decompilation.md
     - name: Débogage distant
       items:
         - name: Débogage distant

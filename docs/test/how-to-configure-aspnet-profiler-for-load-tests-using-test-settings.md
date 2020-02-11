@@ -6,14 +6,14 @@ helpviewer_keywords:
 - test settings, ASP.NET
 ms.assetid: 6832fe39-04d5-4d94-8a18-3e2730bad423
 author: jillre
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1de7e890c60374730e297296116cb56828fa256b
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 77c501f6c7915c7eff1ebd8a4f9308c89bd46e8d
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72643757"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77091702"
 ---
 # <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Guide pratique pour configurer le profileur ASP.NET pour les tests de charge à l’aide de paramètres de test dans Visual Studio
 

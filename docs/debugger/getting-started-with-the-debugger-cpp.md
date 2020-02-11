@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 96c928606c0fbc306a72347f85841677d0f69ec8
-ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
+ms.openlocfilehash: 47b1a031a6c4e4e823a1fcc12aba228750aee27e
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "77027400"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77091806"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Tutoriel : Apprendre à déboguer C++ avec Visual Studio
 
@@ -74,9 +74,11 @@ Tout d’abord, vous allez C++ créer un projet d’application console. Le type
 
 3. Dans la boîte de dialogue **nouveau projet** , dans le volet gauche, développez  **C++ visuel** , puis choisissez **Bureau Windows**. Dans le volet central, choisissez **application console Windows**. Nommez ensuite le projet *-Démarrer-débogage*.
 
-     Si vous ne voyez pas le modèle de projet d' **application console** , cliquez sur le lien **ouvrir Visual Studio installer** dans le volet gauche de la boîte de dialogue **nouveau projet** .
+     Si vous ne voyez pas le modèle de projet d' **application console** , cliquez sur le lien **ouvrir Visual Studio installer** dans le volet gauche de la boîte de dialogue **nouveau projet** . Visual Studio Installer est lancé. Choisissez la charge de travail **Développement multiplateforme .NET Core**, puis choisissez **Modifier**.
 
-     Visual Studio Installer est lancé. Choisissez la charge de travail **Développement multiplateforme .NET Core**, puis choisissez **Modifier**.
+4. Cliquez sur **OK**.
+
+   Visual Studio ouvre votre nouveau projet.
 
 ::: moniker-end
 

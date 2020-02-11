@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 67c96c8d28014ee22a387c3ba3ca828b37f267dd
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 61a8cce68a55f6db26de7754bdfc9dda196c457a
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75405208"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77091780"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger-using-the-natvis-framework"></a>Créer des vues personnalisées d' C++ objets dans le débogueur à l’aide de l’infrastructure Natvis
 
@@ -186,7 +186,7 @@ L’élément `AutoVisualizer` est le nœud racine du fichier *.natvis* et conti
 
 L’élément `AutoVisualizer` peut avoir des enfants de [type](#BKMK_Type), [HRESULT](#BKMK_HResult), [UIVisualizer](#BKMK_UIVisualizer)et [CustomVisualizer](#BKMK_CustomVisualizer) .
 
-### <a name="BKMK_Type"></a> Élément Type
+### <a name="BKMK_Type"></a> Type, élément
 
 Un `Type` de base ressemble à cet exemple :
 
@@ -690,3 +690,9 @@ Chaque type défini dans le fichier *. natvis* doit répertorier explicitement l
 Il y a beaucoup plus de travail pour écrire un visualiseur personnalisé qu’une définition de Natvis XML, mais vous êtes libre des contraintes concernant ce que Natvis ne prend pas en charge. Les visualiseurs personnalisés ont accès à l’ensemble complet des API d’extensibilité du débogueur, qui peuvent interroger et modifier le processus du programme débogué ou communiquer avec d’autres parties de Visual Studio.
 
  Vous pouvez utiliser les attributs `Condition`, `IncludeView`et `ExcludeView` sur `CustomVisualizer` éléments.
+
+ ## <a name="limitations"></a>Limites
+
+Les personnalisations Natvis fonctionnent avec les classes et les structs, mais pas les typedefs.
+
+Natvis ne prend pas en charge les visualiseurs pour les types primitifs (par exemple, `int`, `bool`) ou pour les pointeurs vers des types primitifs. Dans ce scénario, une option consiste à utiliser le [spécificateur de format](../debugger/format-specifiers-in-cpp.md) approprié à votre cas d’usage. Par exemple, si vous utilisez `double* mydoublearray` dans votre code, vous pouvez utiliser un spécificateur de format de tableau dans la fenêtre **Espion** du débogueur, telle que l’expression `mydoublearray, [100]`, qui affiche les 100 premiers éléments.
