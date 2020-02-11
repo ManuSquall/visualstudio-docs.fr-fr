@@ -4,17 +4,17 @@ ms.date: 05/02/2017
 ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Exploration bounds
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
 author: jillre
-ms.openlocfilehash: f6b29b8bc2a9755f5f2e2ced237a5a1ce6acfd6e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 03f23aacbe95615b565dfcee54d2b620c0ae1cd9
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72653222"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77091832"
 ---
 # <a name="exploration-bounds"></a>Limites de l’exploration
 
@@ -166,7 +166,7 @@ La motivation derrière cette limite de l’exploration est de traiter (très pr
 <a name="testemissionfilter"></a>
 ## <a name="testemissionfilter"></a>TestEmissionFilter
 
-Indique les types de tests qu’IntelliTest doit émettre. Les valeurs possibles sont :
+Indique les types de tests qu’IntelliTest doit émettre. Les valeurs possibles sont les suivantes :
 
 * **All** : émet des tests pour tout, dont les violations d’hypothèses.
 * **FailuresAndIncreasedBranchHits** (valeur par défaut) : émet des tests pour tous les échecs uniques et chaque fois qu’un cas de test augmente la couverture sous le contrôle de [TestEmissionBranchHits](#testemissionbranchhits).

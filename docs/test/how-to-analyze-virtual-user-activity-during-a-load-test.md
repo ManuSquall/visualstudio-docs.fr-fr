@@ -6,14 +6,14 @@ helpviewer_keywords:
 - virtual user activity chart, viewing
 ms.assetid: 8bda19b3-91c1-4daf-b6c7-09108bddadff
 author: jillre
-ms.author: jillfra
+ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 97abfe3740ea9209768e82eca1b269cd0a381233
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: dda1f35a63d3f7788faf9a94f16888c8323529c4
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72644167"
+ms.lasthandoff: 02/08/2020
+ms.locfileid: "77091715"
 ---
 # <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Guide pratique pour analyser l’activité des utilisateurs virtuels lors d’un test de charge à l’aide du graphique d’activités des utilisateurs virtuels
 
@@ -29,7 +29,7 @@ Les procédures suivantes montrent comment consulter le **graphique d'activités
 
 2. Après l'exécution de votre test de charge, la page de résumé des résultats des tests s'affiche. Choisissez le bouton **Détail de l’utilisateur** dans la barre d’outils.
 
-     ou
+     -ou-
 
      Ouvrez la vue Graphiques en choisissant le bouton **Graphiques** dans la barre d’outils. Cliquez avec le bouton droit sur un graphique, puis sélectionnez **Accéder au détail de l’utilisateur**.
 
@@ -55,9 +55,9 @@ Les procédures suivantes montrent comment consulter le **graphique d'activités
 
    - **Navigateur** (ne s’affiche pas dans un test ou une transaction)
 
-   - **Network**
+   - **Réseau**
 
-   - **Heure de début**
+   - **Start Time**
 
    - **Durée**
 
