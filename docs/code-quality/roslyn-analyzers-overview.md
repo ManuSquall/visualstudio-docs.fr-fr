@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 77ee96272733eb519e92262cece405de21c06fa3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 34225858e88f4ee969f0e51013bcdb04812d425f
+ms.sourcegitcommit: a86ee68e3ec23869b6eaaf6c6b7946b1d9a88d01
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587275"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77144773"
 ---
 # <a name="overview-of-source-code-analyzers"></a>Vue d’ensemble des analyseurs de code source
 
@@ -28,7 +28,7 @@ Les analyseurs de code .NET Compiler Platform (« Roslyn ») C# inspectent vot
 - Vous pouvez installer des analyseurs supplémentaires sous la forme d’un package NuGet ou d’une extension Visual Studio. Par exemple :
 
   - [Analyseurs FxCop](../code-quality/install-fxcop-analyzers.md), analyseurs de qualité de code recommandés par Microsoft
-  - Analyseurs tiers, tels que [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/), [Roslynator](https://www.nuget.org/packages/Roslynator/), les [analyseurs xUnit](https://www.nuget.org/packages/xunit.analyzers/)et l' [analyseur sonar](https://www.nuget.org/packages/SonarAnalyzer.CSharp/)
+  - Analyseurs tiers, tels que [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/), [Roslynator](https://www.nuget.org/packages/Roslynator.Analyzers/), les [analyseurs xUnit](https://www.nuget.org/packages/xunit.analyzers/)et l' [analyseur sonar](https://www.nuget.org/packages/SonarAnalyzer.CSharp/)
 
 Si des violations de règle sont détectées par un analyseur, elles sont signalées dans l’éditeur de code (sous forme de *tilde* sous le code incriminé) et dans la fenêtre de liste d’erreurs.
 
@@ -69,7 +69,7 @@ Pour faire la différence entre les violations des analyseurs de code et des ana
 
 Les analyseurs de code Roslyn peuvent être installés par projet par le biais d’un package NuGet. Certains sont également disponibles en tant qu’extension Visual Studio, auquel cas ils s’appliquent à toutes les solutions que vous ouvrez dans Visual Studio. Il existe certaines différences de comportement fondamentales entre ces deux méthodes [d’installation d’analyseurs](../code-quality/install-roslyn-analyzers.md).
 
-### <a name="scope"></a>Portée
+### <a name="scope"></a>Étendue
 
 Si vous installez des analyseurs en tant qu’extension Visual Studio, ils s’appliquent au niveau de la solution et à toutes les instances de Visual Studio. Si vous installez les analyseurs comme un package NuGet, qui est la méthode recommandée, ils s’appliquent uniquement au projet dans lequel le package NuGet a été installé. Dans les environnements d’équipe, les analyseurs installés comme des packages NuGet se trouvent dans la portée de *tous les développeurs* qui travaillent sur ce projet.
 
@@ -85,7 +85,7 @@ L’illustration suivante montre la sortie de la génération en ligne de comman
 
 Vous ne pouvez pas configurer la gravité des règles à partir d’analyseurs qui ont été installés en tant qu’extension Visual Studio. Pour configurer la [gravité des règles](../code-quality/use-roslyn-analyzers.md#rule-severity), installez les analyseurs comme un package NuGet.
 
-## <a name="next-steps"></a>Étapes suivantes :
+## <a name="next-steps"></a>Étapes suivantes
 
 > [!div class="nextstepaction"]
 > [Installer des analyseurs de code dans Visual Studio](../code-quality/install-roslyn-analyzers.md)

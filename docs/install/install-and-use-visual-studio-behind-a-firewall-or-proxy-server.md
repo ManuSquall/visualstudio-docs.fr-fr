@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 474042f88b0bee90f2bdd61298e09c5fabfa122c
-ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
-ms.translationtype: MT
+ms.openlocfilehash: c99a8c08ff5969f09d2bcaae63eb4130d9813e78
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "77027564"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77125336"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installer et utiliser Visual Studio et les services Azure derrière un pare-feu ou un serveur proxy
 
@@ -87,7 +87,7 @@ Sachant que Visual Studio Installer télécharge des fichiers à partir de diff�
 
 ### <a name="urls-to-add-to-an-allow-list-and-ports-and-protocols-to-open"></a>URL à ajouter à une liste verte et ports et protocoles à ouvrir
 
-Pour être certain d’avoir accès à tout ce dont vous avez besoin pendant que vous utilisez Visual Studio ou les services Azure derrière un pare-feu ou un serveur proxy, vous trouverez ici les URL que vous devez ajouter à une liste verte ainsi que les ports et les protocoles que vous pouvez souhaiter ouvrir.
+Pour vous assurer que vous avez accès à tout ce que vous souhaitez quand vous utilisez Visual Studio ou des services Azure derrière un pare-feu ou un serveur proxy, Voici les URL que vous devez ajouter à une liste verte et les ports et protocoles que vous souhaitez peut-être ouvrir.
 
 | Scénario ou service | Point de terminaison DNS | Protocol | Port | Description |
 | - | - | - | - | - |

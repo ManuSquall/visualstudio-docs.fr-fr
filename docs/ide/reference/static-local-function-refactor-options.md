@@ -1,6 +1,6 @@
 ---
-title: Refactorisations de fonction locale statique
-ms.date: 09/28/2019
+title: Options de refactorisation de fonction locale statique
+ms.date: 02/10/2020
 ms.topic: reference
 author: governesss
 ms.author: midumont
@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: adbf84b9ae7566cd5e58a7c757ce09a37252b754
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: c297457c910c484c05c974c581e89c75e0ad44e5
+ms.sourcegitcommit: a86ee68e3ec23869b6eaaf6c6b7946b1d9a88d01
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74782278"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77144839"
 ---
 # <a name="static-local-function-refactorings-and-quick-actions"></a>Refactorisations de fonction locale statique et actions rapides
 
@@ -34,7 +34,7 @@ Dans les **cas suivants :** Vous souhaitez que votre fonction locale soit stati
 
 **Pourquoi :** Les fonctions locales statiques améliorent la lisibilité : sachant que le code spécifique est isolé, il est plus facile à comprendre, à relire et à réutiliser. Les fonctions locales statiques fournissent également une étendue pour empêcher la pollution d’une classe avec une fonction statique appelée uniquement dans une méthode unique.
 
-### <a name="how-to"></a>Procédure
+### <a name="how-to"></a>Procédures
 
 1. Placez le signe insertion sur le nom de la fonction locale.
 
@@ -56,7 +56,7 @@ Dans les **cas suivants :** Vous souhaitez qu’une fonction locale soit statiq
 
 **Pourquoi :** L’utilisation de fonctions locales statiques apporte des éclaircissements aux lecteurs, car ils savent qu’ils ne peuvent être déclarés et appelés que dans un contexte spécifique du programme. Il offre la possibilité de définir des variables en dehors de ce contexte, tout en étant en mesure de les transmettre en tant qu’arguments à la fonction locale statique.
 
-### <a name="how-to"></a>Procédure
+### <a name="how-to"></a>Procédures
 
 1. Placez le signe insertion sur la variable où elle est utilisée dans la fonction locale statique.
 

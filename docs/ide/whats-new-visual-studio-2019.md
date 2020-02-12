@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a9d8babb55a615e12c575f30426c8e73aa1c6e1
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 35891f081e19420374a1579e73c68d7b93930e54
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75406716"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77125362"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Nouveautés de Visual Studio 2019
 
@@ -102,7 +102,7 @@ Avec le lancement de Visual Studio 2019, nous faisons de Visual Studio une appl
 
 Pour plus d’informations, consultez le billet de blog [Better multi-monitor experience with Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/a-better-multi-monitor-experience-with-visual-studio-2019/) (Une meilleure expérience sur plusieurs écrans avec Visual Studio 2019).
 
-### <a name="test-explorer"></a>Explorateur de test
+### <a name="test-explorer"></a>Explorateur de tests
 
 **Nouveauté de 16,2**: nous avons mis à jour l’Explorateur de tests pour fournir une meilleure gestion des jeux de test volumineux, un filtrage plus facile, des commandes plus détectables, des vues avec onglets de sélection et des colonnes personnalisables qui vous permettent d’affiner les informations de test affichées.
 
@@ -114,13 +114,13 @@ Pour plus d’informations, consultez le billet de blog [Better multi-monitor ex
 
 Pour plus d’informations, consultez le billet de blog [annonçant .net Core 3,0](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0/) .
 
-## <a name="collaborate"></a>Collaborer
+## <a name="collaborate"></a>Travailler en collaboration
 
 Afficher la vidéo suivante pour en savoir plus sur la façon dont vous pouvez travailler en équipe pour résoudre les problèmes. <br><br>*Longueur vidéo : 4,22 minutes*
 
 > [!VIDEO https://www.youtube.com/embed/dKLJsiK1QU8]
 
-### <a name="cloud-first-workflow"></a>Workflow « cloud-first »
+### <a name="git-first-workflow"></a>Flux de travail git-First
 
 La nouvelle fenêtre de démarrage est l’une des choses que vous remarquez quand vous lancez Visual Studio 2019.
 
@@ -152,7 +152,7 @@ Nous introduisons une nouvelle extension que vous pouvez télécharger et utilis
 
 Pour plus d’informations, consultez le billet de blog [Code reviews using the Visual Studio Pull Requests extension](https://devblogs.microsoft.com/visualstudio/code-reviews-using-the-visual-studio-pull-requests-extension/).
 
-## <a name="debug"></a>Déboguer
+## <a name="debug"></a>Débogage
 
 Afficher la vidéo suivante pour en savoir plus sur la façon dont vous pouvez vous concentrer sur le ciblage précis pendant le débogage. <br><br>*Longueur vidéo : 3,54 minutes*
 
