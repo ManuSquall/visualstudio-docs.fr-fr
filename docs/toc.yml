@@ -382,6 +382,8 @@
                   href: ide/reference/invert-conditional-logical.md
                 - name: Inverser une instruction if
                   href: ide/reference/invert-if-statement.md
+                - name: Options de refactorisation de fonction locale statique
+                  href: ide/reference/static-local-function-refactor-options.md
                 - name: Déplacer la déclaration près de la référence
                   href: ide/reference/move-declaration-near-reference.md
                 - name: Déplacer le type vers le fichier correspondant
