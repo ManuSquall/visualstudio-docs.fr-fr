@@ -6,12 +6,12 @@ manager: lank
 ms.date: 11/18/2019
 ms.topic: conceptual
 description: Apprenez-en davantage sur l’abonnement de formation Pluralsight inclus dans certains abonnements Visual Studio.
-ms.openlocfilehash: 2e57d3b1ede0320cdf0766e3b4ab64d67b16b808
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.openlocfilehash: f76db59053451ca58890ec055295758add482725
+ms.sourcegitcommit: 41f4f55af0176bed1ed949426929d4bdb53105a7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74706997"
+ms.lasthandoff: 02/13/2020
+ms.locfileid: "77192414"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Avantage Pluralsight dans les abonnements Visual Studio
 
@@ -50,28 +50,28 @@ Le tableau ci-dessous présente les avantages de l’abonnement Pluralsight offe
 
 7. Entrez le nom d’utilisateur fourni dans l’e-mail de bienvenue et le mot de passe que vous venez de créer, puis cliquez sur **Sign in** (Connexion).
 
-8. C’est tout !  Vous êtes maintenant prêt à commencer votre apprentissage à l’aide des milliers de cours Pluralsight disponibles.
+8. Et voilà !  Vous êtes maintenant prêt à commencer votre apprentissage à l’aide des milliers de cours Pluralsight disponibles.
 
 ## <a name="eligibility"></a>Eligibility
 
-|                          Niveau d'abonnement                          |     Channels      |    Avantage du    |   Renouvelable ?   |
+|                          Niveau de l’abonnement                          |     Canaux      |    Avantage    |   Renouvelable ?   |
 |----------------------------------------------------------------------|-------------------|---------------|----------------|
-|          Visual Studio Enterprise (Standard)           | Licences en volume, Azure, Détail |   6 mois    | Oui<sup>2</sup> |
-|          Visual Studio Enterprise avec GitHub Enterprise          | LV  |   6 mois    | Oui<sup>2</sup> |
-|         Visual Studio Professional (Standard)          | Licences en volume, Azure, Détail |   3 mois    | Oui<sup>2</sup> |
-|         Visual Studio Professional avec GitHub Enterprise          | LV  |   3 mois    | Oui<sup>2</sup> |
-|              Visual Studio Test Professional (Standard)              |    Licences en volume, Détail     |   3 mois    | Oui<sup>2</sup>  |
-|                      Plateformes MSDN (Standard)                       |    Licences en volume, Détail     |   3 mois    | Oui<sup>2</sup>  |
-| Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) |       Azure       | Non disponible |       NA       |
-|             Visual Studio Enterprise (NFR<sup>1</sup>)              |      Programme      | Non disponible |       NA       |
+|          Visual Studio Enterprise (Standard)           | Licences en volume, Azure, Détail |   6 mois    | Oui<sup>2</sup> |
+|          Visual Studio Enterprise avec GitHub Enterprise          | LV  |   6 mois    | Oui<sup>2</sup> |
+|         Visual Studio Professional (Standard)          | Licences en volume, Azure, Détail |   3 mois    | Oui<sup>2</sup> |
+|         Visual Studio Professional avec GitHub Enterprise          | LV  |   3 mois    | Oui<sup>2</sup> |
+|              Visual Studio Test Professional (Standard)              |    Licences en volume, Détail     |   Non disponible    | N/D  |
+|                      Plateformes MSDN (Standard)                       |    Licences en volume, Détail     |   Non disponible    | N/D  |
+| Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) |       Azure       | Non disponible |       N/D       |
+|             Visual Studio Enterprise (NFR<sup>1</sup>)              |      Programme      | Non disponible |       N/D       |
 ||
 
-<sup>1</sup>  *comprend : la revente interdite (not for Resale), VSIP (Visual Studio Industry Partner), BizSpark, MCT Software & Services Developer, MCT Software & service, MVP (Most Valuable Professional), RD (Regional Director), Microsoft Partner Network (MPN), ETP, imagine.*
+<sup>1</sup>  *comprend : la revente interdite (not for Resale), VSIP (Visual Studio Industry Partner), BizSpark, MCT Software & Services Developer, MCT Software &AMP; service, MVP (Most Valuable Professional), RD (Regional Director), Microsoft Partner Network (MPN), ETP, imagine.*
 
 <sup>2</sup>  *l’avantage de Pluralsight dans les abonnements Visual Studio sélectionnés renouvelle votre abonnement. Par exemple, si vous avez un abonnement annuel que vous renouvelez chaque année, l’avantage est disponible chaque année lorsque vous le renouvelez. Si vous avez un abonnement de plusieurs années, l’avantage Pluralsight est disponible une fois pendant la durée de l’abonnement.  Si vous renouvelez un abonnement de plusieurs années, l’avantage sera à nouveau disponible après le renouvellement.*
 
 > [!NOTE]
-> Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à consulter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
+> Microsoft n’offre plus les abonnements Visual Studio Professional annuel et Visual Studio Enterprise annuel dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à consulter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
 
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
 
@@ -97,7 +97,7 @@ R : À la fin de votre abonnement Pluralsight gratuit, vous pouvez choisir d’
 - Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="next-steps"></a>Étapes suivantes :
+## <a name="next-steps"></a>Étapes suivantes
 Une fois que vous avez créé votre compte, vous êtes prêt à commencer la formation.  Visitez [https://www.pluralsight.com](https://www.pluralsight.com) et appuyez sur **Log in** en haut à droite de la page pour démarrer un nouveau cours ou revenir à un cours déjà commencé.
 
 Tirez parti de votre propre bac à sable (sandbox) de développement en activant votre [crédit individuel Azure DevTest](vs-azure.md). 
