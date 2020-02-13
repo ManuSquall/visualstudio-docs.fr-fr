@@ -13,18 +13,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cec341df3cfe81f339322f5e7c584151d9030490
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: 0b1e2739532512bde5edeed4facc92b807187293
+ms.sourcegitcommit: a86ee68e3ec23869b6eaaf6c6b7946b1d9a88d01
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911576"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77144797"
 ---
 # <a name="debugging-gpu-code"></a>Débogage du code GPU
 Vous pouvez déboguer du code C++ qui s'exécute sur l'unité de traitement graphique (GPU). La prise en charge du débogage GPU dans Visual Studio inclut la détection de concurrence, les processus de lancement et leur attachement, ainsi que l'intégration dans les fenêtres de débogage.
 
 ## <a name="supported-platforms"></a>Plateformes prises en charge
- Le débogage est pris en charge sur [!INCLUDE[win7](../debugger/includes/win7_md.md)], [!INCLUDE[win8](../debugger/includes/win8_md.md)], [!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)] et [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)]. Pour effectuer un débogage sur l'émulateur de logiciel, [!INCLUDE[win8](../debugger/includes/win8_md.md)] ou [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)] est requis. Pour effectuer un débogage sur le matériel, vous devez installer les pilotes de votre carte graphique. Tous les fournisseurs de matériel n'implémentent pas toutes les fonctionnalités de débogage. Consultez la documentation du fournisseur pour connaître les limitations.
+ Le débogage est pris en charge sur [!INCLUDE[win7](../debugger/includes/win7_md.md)], [!INCLUDE[win8](../debugger/includes/win8_md.md)], Windows 10, [!INCLUDE[winsvr08_r2](../debugger/includes/winsvr08_r2_md.md)], [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)] et Windows Server 2016. Pour le débogage sur l’émulateur de logiciel, [!INCLUDE[win8](../debugger/includes/win8_md.md)], Windows 10 ou [!INCLUDE[winserver8](../debugger/includes/winserver8_md.md)], Windows Server 2016 est requis. Pour effectuer un débogage sur le matériel, vous devez installer les pilotes de votre carte graphique. Tous les fournisseurs de matériel n'implémentent pas toutes les fonctionnalités de débogage. Consultez la documentation du fournisseur pour connaître les limitations.
 
 > [!NOTE]
 > Les fournisseurs de matériel indépendants qui souhaitent prendre en charge le débogage GPU dans Visual Studio doivent créer une DLL qui implémente l'interface VSD3DDebug pour cibler leurs propres pilotes.
@@ -47,7 +47,7 @@ Vous pouvez déboguer du code C++ qui s'exécute sur l'unité de traitement grap
 2. La commande **Exécuter le tile actuel au curseur** exécute votre application jusqu’à ce que tous les threads de la mosaïque active atteignent le curseur, puis s’interrompt.
 
 ## <a name="debugging-windows"></a>Fenêtres de débogage
- L'utilisation de certaines fenêtres de débogage vous permet d'examiner, de marquer et de geler des threads GPU. Pour plus d'informations, voir :
+ L'utilisation de certaines fenêtres de débogage vous permet d'examiner, de marquer et de geler des threads GPU. Pour plus d'informations, consultez les pages suivantes :
 
 - [Utilisation de la fenêtre Piles parallèles](../debugger/using-the-parallel-stacks-window.md)
 
@@ -62,10 +62,10 @@ Vous pouvez déboguer du code C++ qui s'exécute sur l'unité de traitement grap
 ## <a name="data-synchronization-exceptions"></a>Exceptions de synchronisation de données
  Le débogueur peut identifier plusieurs conditions de synchronisation de données pendant l’exécution. Lorsqu'une condition est détectée, le débogueur passe à l'état d'arrêt. Vous disposez de deux options : **Arrêter** ou **Continuer**. À l’aide de la boîte de dialogue **Exceptions**, vous pouvez configurer si le débogueur détecte ces conditions, mais également les conditions pour lesquelles il s’arrêtera. Pour plus d’informations, consultez [gestion des exceptions avec le débogueur](../debugger/managing-exceptions-with-the-debugger.md). Vous pouvez également utiliser la boîte de dialogue **Options** pour spécifier que le débogueur doit ignorer les exceptions si les données écrites ne modifient pas la valeur des données. Pour plus d'informations, consultez [General, Debugging, Options Dialog Box](../debugger/general-debugging-options-dialog-box.md).
 
-## <a name="troubleshooting"></a>Résolution des problèmes
+## <a name="troubleshooting"></a>Dépannage
 
 ### <a name="specifying-an-accelerator"></a>Spécification d'un accélérateur
- Les points d’arrêt dans le code GPU sont uniquement atteints si le code s’exécute sur l’accélérateur [accelerator::direct3d_ref](/cpp/parallel/amp/reference/accelerator-class#direct3d_ref) (REF). Si vous ne spécifiez aucun accélérateur dans votre code, l’accélérateur REF est automatiquement sélectionné comme **Type d’accélérateur de débogage** dans les propriétés du projet. Si votre code sélectionne explicitement un accélérateur, l'accélérateur REF ne sera pas utilisé pendant le débogage et les points d'arrêt ne seront pas atteints tant que votre matériel GPU disposera de la prise en charge du débogage. Vous pouvez y remédier dans la rédaction du code afin qu'il utilise l'accélérateur REF pendant le débogage. Pour plus d’informations, consultez Propriétés de projet et [utilisation d’accélérateurs et d’objets accelerator_view](/cpp/parallel/amp/using-accelerator-and-accelerator-view-objects) et [paramètres de projet pour une C++ configuration de débogage](../debugger/project-settings-for-a-cpp-debug-configuration.md).
+ Les points d’arrêt dans le code GPU sont uniquement atteints si le code s’exécute sur l’accélérateur [accelerator::direct3d_ref](/cpp/parallel/amp/reference/accelerator-class#direct3d_ref) (REF). Si vous ne spécifiez aucun accélérateur dans votre code, l’accélérateur REF est automatiquement sélectionné comme **Type d’accélérateur de débogage** dans les propriétés du projet. Si votre code sélectionne explicitement un accélérateur, l'accélérateur REF ne sera pas utilisé pendant le débogage et les points d'arrêt ne seront pas atteints tant que votre matériel GPU disposera de la prise en charge du débogage. Vous pouvez y remédier dans la rédaction du code afin qu'il utilise l'accélérateur REF pendant le débogage. Pour plus d’informations, consultez Propriétés du projet et [utilisation des objets accélérateur et accelerator_view](/cpp/parallel/amp/using-accelerator-and-accelerator-view-objects) et [des C++ paramètres de projet pour une configuration Debug](../debugger/project-settings-for-a-cpp-debug-configuration.md).
 
 ### <a name="conditional-breakpoints"></a>Points d'arrêt conditionnels
  Les points d'arrêt conditionnels dans le code GPU sont pris en charge, mais chaque expression ne peut pas être évaluée sur le périphérique. Lorsqu'une expression ne peut pas être évaluée sur le périphérique, elle est évaluée dans le débogueur. Le débogueur risque de s'exécuter plus lentement que le périphérique.

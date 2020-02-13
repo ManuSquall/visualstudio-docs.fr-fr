@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: ffd5f2e4bfc13f79b519fbdf9b3cf517793cd324
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+ms.openlocfilehash: 5087c439533aa447708d0f1bfae653054fd16089
+ms.sourcegitcommit: a86ee68e3ec23869b6eaaf6c6b7946b1d9a88d01
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "77091932"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77144788"
 ---
 # <a name="generate-source-code-from-net-assemblies-while-debugging"></a>Générer du code source à partir d’assemblys .NET pendant le débogage
 
@@ -80,8 +80,27 @@ Lors du débogage du code qui a été décompilé à partir d’un assembly qui 
 - Les points d’arrêt ne sont pas toujours liés à l’emplacement de l’approvisionnement correspondant.
 - L’exécution pas à pas ne passe pas toujours à l’emplacement correct.
 - Les variables locales peuvent ne pas avoir de noms exacts.
+- Certaines variables peuvent ne pas être disponibles pour l’évaluation.
 
 Pour plus d’informations, consultez le problème GitHub : [IChsarpCompiler. décompilateur Integration dans vs Debugger](https://github.com/icsharpcode/ILSpy/issues/1901).
+
+### <a name="decompilation-reliability"></a>Fiabilité de la décompilation
+
+Un pourcentage relativement faible de tentatives de décompilation peut entraîner un échec. Cela est dû à une erreur de référence null de point de séquence dans ILSpy.  Nous avons atténué l’échec en interceptant ces problèmes et en faisant échouer la tentative de décompilation.
+
+Pour plus d’informations, consultez le problème GitHub : [IChsarpCompiler. décompilateur Integration dans vs Debugger](https://github.com/icsharpcode/ILSpy/issues/1901).
+
+### <a name="limitations-with-async-code"></a>Limitations du code asynchrone
+
+Les résultats de la décompilation des modules avec des modèles de code Async/await peuvent être incomplets ou échouer entièrement. L’implémentation ILSpy de Async/await et yield State-machines n’est implémentée que partiellement. 
+
+Pour plus d’informations, consultez le problème GitHub : [État du générateur PDB](https://github.com/icsharpcode/ILSpy/issues/1422).
+
+### <a name="just-my-code"></a>Uniquement mon code
+
+Les paramètres [uniquement mon code (uniquement mon code)](https://docs.microsoft.com/visualstudio/debugger/just-my-code) permettent à Visual Studio d’effectuer un pas à pas principal dans le système, l’infrastructure, la bibliothèque et d’autres appels non utilisateur. Pendant une session de débogage, la fenêtre **modules** affiche les modules de code que le débogueur traite comme mon code (code utilisateur).
+
+La décompilation des modules optimisés ou de version génère du code non-utilisateur. Si le débogueur s’arrête dans votre code non-utilisateur décompilé, par exemple, la fenêtre **aucune source** s’affiche. Pour désactiver Uniquement mon code, accédez à **outils** > **options** (ou **options**de **débogage** > ) > **débogage** > **général**, puis désactivez l’option **activer uniquement mon code**.
 
 ### <a name="extracted-sources"></a>Sources extraites
 

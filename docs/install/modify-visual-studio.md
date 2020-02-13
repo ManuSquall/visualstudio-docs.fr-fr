@@ -2,7 +2,7 @@
 title: Modifier Visual Studio 2017
 titleSuffix: ''
 description: Découvrez comment modifier Visual Studio, étape par étape.
-ms.date: 12/29/2019
+ms.date: 02/10/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - modify Visual Studio
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 2abb8ad86315a4be4c2c44488bd97d413415e614
-ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
+ms.openlocfilehash: 57aa5531eb6d6517b520991ababefc38b25a9a2d
+ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76922876"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77125349"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>Modifier Visual Studio en ajoutant ou supprimant des charges de travail et des composants
 
@@ -38,7 +38,7 @@ Nous avons simplifié le travail de personnalisation des tâches Visual Studio, 
 
 ::: moniker-end
 
-Voici comment procéder.
+Voici comment faire.
 
 >[!IMPORTANT]
 >Pour installer, mettre à jour ou modifier Visual Studio, vous devez vous connecter avec un compte qui dispose d’autorisations Administrateur. Pour plus d’informations, consultez [Autorisations utilisateur et Visual Studio](../ide/user-permissions-and-visual-studio.md).
@@ -123,6 +123,9 @@ Voici comment procéder.
 ::: moniker range="vs-2019"
 
  Les charges de travail contiennent les fonctionnalités dont vous avez besoin pour le langage de programmation ou la plateforme que vous utilisez. Utilisez les charges de travail pour modifier Visual Studio pour qu’il prenne en charge le travail à effectuer, au moment où vous voulez l’effectuer.
+
+ > [!TIP]
+>Pour plus d’informations sur les outils et les groupes de composants dont vous avez besoin pour le développement, consultez [charges de travail Visual Studio](https://visualstudio.microsoft.com/vs/#workloads).
 
 1. Dans le Visual Studio Installer, choisissez l’onglet **charges de travail** , puis sélectionnez ou désélectionnez les charges de travail de votre choix.
 
