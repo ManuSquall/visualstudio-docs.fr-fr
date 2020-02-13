@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 85ee317b315f8f8d21f5a2d97d91a9950fd395f9
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 3c8f72d4e1d1caeacd5dfefef5310dc2cef83b92
+ms.sourcegitcommit: 83d9f2b56955f7a5267a1438bb28ef804775f88b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114406"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77173089"
 ---
 # <a name="application-property-page-uwp-projects"></a>Page de propriétés de l’application (projets UWP)
 
@@ -38,7 +38,7 @@ Pour accéder à cette propriété par programmation, consultez <xref:VSLangProj
 
 **Informations de l’assembly**&mdash;Cliquez sur ce bouton pour afficher la [boîte de dialogue Informations de l’assembly](../../ide/reference/assembly-information-dialog-box.md).
 
-**Manifeste du package**&mdash;Cliquez sur ce bouton pour ouvrir le concepteur de manifeste. Le concepteur de manifeste est également accessible en cliquant sur le fichier _Package.appxmanifest_ dans **l’Explorateur de solutions**. Pour plus d'informations, consultez [Configurer un package avec le concepteur de manifeste](/windows/uwp/packaging/packaging-uwp-apps#configure-an-app-package).
+**Manifeste du package**&mdash;Cliquez sur ce bouton pour ouvrir le concepteur de manifeste. Le concepteur de manifeste est également accessible en cliquant sur le fichier _Package.appxmanifest_ dans **l’Explorateur de solutions**. Pour plus d'informations, consultez [Configurer un package avec le concepteur de manifeste](/windows/msix/package/packaging-uwp-apps#configure-your-project).
 
 ## <a name="targeting-section"></a>Section Ciblage
 
