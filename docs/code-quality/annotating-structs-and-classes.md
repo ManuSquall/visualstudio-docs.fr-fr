@@ -19,17 +19,17 @@ f1_keywords:
 - _Field_size_full_opt_
 - _Field_z_
 ms.assetid: b8278a4a-c86e-4845-aa2a-70da21a1dd52
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 70dc130633e9f191811748b2ab316ad339ad4277
-ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
+ms.openlocfilehash: 0ebcd88df8508ae534ab51289016261193f54380
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74879254"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271037"
 ---
 # <a name="annotating-structs-and-classes"></a>Structs et classes d'annotation
 
@@ -45,7 +45,7 @@ Vous pouvez annoter des membres de classe et de struct à l’aide d’annotatio
 
      Champ qui a une taille accessible en écriture dans les éléments (ou octets) comme spécifié par `size`.
 
-- `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`,         `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`
+- `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`, `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`
 
      Champ qui a une taille accessible en écriture dans des éléments (ou octets) comme spécifié par `size`, et le `count` de ces éléments (octets) qui sont accessibles en lecture.
 
@@ -105,7 +105,7 @@ struct MyBuffer
 
 Remarques pour cet exemple :
 
-- `_Field_z_` équivaut à `_Null_terminated_`.  `_Field_z_` pour le champ nom spécifie que le champ nom est une chaîne terminée par le caractère null.
+- `_Field_z_` équivaut à `_Null_terminated_`.  `_Field_z_` pour le champ nom spécifie que le champ nom est une chaîne terminée par le caractère null.
 - `_Field_range_` pour `bufferSize` spécifie que la valeur de `bufferSize` doit être comprise entre 1 et `MaxBufferSize` (les deux incluses).
 - Les résultats finaux des annotations d' `_Struct_size_bytes_` et de `_Field_size_` sont équivalents. Pour les structures ou les classes qui ont une disposition similaire, `_Field_size_` est plus facile à lire et à gérer, car il a moins de références et de calculs que l’annotation `_Struct_size_bytes_` équivalente. `_Field_size_` ne nécessite pas de conversion en taille d’octet. Si la taille d’octet est la seule option, par exemple, pour un champ de pointeur void, `_Field_size_bytes_` peut être utilisée. Si `_Struct_size_bytes_` et `_Field_size_` existent, les deux seront disponibles pour les outils. C’est à l’outil qu’il faut faire si les deux annotations ne sont pas en désaccord.
 

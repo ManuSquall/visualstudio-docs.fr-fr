@@ -123,15 +123,15 @@ f1_keywords:
 - _Ret_null_
 ms.assetid: 82826a3d-0c81-421c-8ffe-4072555dca3a
 caps.latest.revision: 17
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: fb2b8120665c7eb08f1462dd7b3299538079ae9b
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: bd9107bed68b9b5b6f88a239b3b155440b0e654c
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75852393"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271614"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Annotation de paramètres de fonction et valeurs de retour
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -447,7 +447,7 @@ Cet article décrit les utilisations typiques des annotations pour les paramètr
   
      Le résultat doit être valide dans après l’État, mais peut avoir la valeur null dans l’état de publication. Pointe vers une mémoire tampon valide de `s` octets d’éléments valides.  
   
-## <a name="return-values"></a>Retourne des valeurs  
+## <a name="return-values"></a>Valeurs de retour  
  La valeur de retour d’une fonction ressemble à un paramètre de `_Out_` mais se trouve à un niveau de déréférencement différent, et vous n’avez pas à considérer le concept du pointeur sur le résultat.  Pour les annotations suivantes, la valeur de retour est l’objet annoté (un scalaire, un pointeur vers un struct ou un pointeur vers une mémoire tampon). Ces annotations ont la même sémantique que l’annotation `_Out_` correspondante.  
   
 |||  
@@ -492,7 +492,7 @@ Cet article décrit les utilisations typiques des annotations pour les paramètr
   
      `min(pM->nSize, sizeof(MyStruct))`  
   
-## <a name="related-resources"></a>Ressources connexes  
+## <a name="related-resources"></a>Ressources associées  
  [Blog de l’équipe d’analyse du code](https://blogs.msdn.com/b/codeanalysis/)  
   
 ## <a name="see-also"></a>Voir aussi  

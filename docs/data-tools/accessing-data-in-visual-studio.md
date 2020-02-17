@@ -1,5 +1,5 @@
 ---
-title: Outils et accès aux données
+title: Utiliser des données dans Visual Studio
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,34 +12,39 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3a53561e8c62fcf523f13d17d5228d33a6a0af6d
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 7c7aa1544f998a88424c0087fadceab63757d23b
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916719"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77272092"
 ---
-# <a name="access-data-in-visual-studio"></a>Accéder aux données dans Visual Studio
+# <a name="work-with-data-in-visual-studio"></a>Utiliser des données dans Visual Studio
 
 Dans Visual Studio, vous pouvez créer des applications qui se connectent à des données dans pratiquement n’importe quel produit ou service de base de données, dans n’importe quel format, en tout lieu, sur un ordinateur local, sur un réseau local, ou dans un cloud public, privé ou hybride.
 
 Pour les applications en JavaScript, Python, PHP, Ruby ou C++, vous vous connectez à des données comme vous le faites autrement, en obtenant des bibliothèques et en écrivant du code. Pour les applications .NET, Visual Studio fournit des outils que vous pouvez utiliser pour explorer des sources de données, créer des modèles objet pour stocker et manipuler des données en mémoire, et lier des données à l’interface utilisateur. Microsoft Azure fournit des kits de développement logiciel (SDK) pour .NET, Java, node. js, PHP, Python, Ruby et Mobile Apps, ainsi que des outils dans Visual Studio pour la connexion au stockage Azure.
 
+::: moniker range="vs-2017"
 Les listes suivantes présentent quelques-uns des nombreux systèmes de stockage et de base de données qui peuvent être utilisés à partir de Visual Studio. Les offres de [Microsoft Azure](https://azure.microsoft.com/) sont des services de données qui incluent l’approvisionnement et l’administration du magasin de données sous-jacent. La charge de travail **développement Azure** dans [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) vous permet d’utiliser des magasins de données Azure directement à partir de Visual Studio.
+::: moniker-end
+::: moniker range=">=vs-2019"
+Les listes suivantes présentent quelques-uns des nombreux systèmes de stockage et de base de données qui peuvent être utilisés à partir de Visual Studio. Les offres de [Microsoft Azure](https://azure.microsoft.com/) sont des services de données qui incluent l’approvisionnement et l’administration du magasin de données sous-jacent. La charge de travail **développement Azure** dans [Visual Studio 2019](https://visualstudio.microsoft.com/downloads) vous permet d’utiliser des magasins de données Azure directement à partir de Visual Studio.
+::: moniker-end
 
-![Charge de travail Développement Azure](media/azure-development-workload.png)
+![Charge de travail de développement Azure](media/azure-development-workload.png)
 
 La plupart des autres produits de base de données SQL et NoSQL répertoriés ici peuvent être hébergés sur un ordinateur local, sur un réseau local ou dans Microsoft Azure sur un ordinateur virtuel. Si vous hébergez la base de données dans une machine virtuelle Microsoft Azure, vous êtes responsable de la gestion de la base de données elle-même.
 
 **Microsoft Azure**
 
-- Base de données SQL
+- SQL Database
 - Azure Cosmos DB
 - Stockage (objets BLOB, tables, files d’attente, fichiers)
 - SQL Data Warehouse
 - SQL Server Stretch Database
 - StorSimple
-- Et plus encore...
+- Et bien plus...
 
 **SQL**
 
@@ -50,18 +55,18 @@ La plupart des autres produits de base de données SQL et NoSQL répertoriés ic
 - Oracle
 - PostgreSQL
 - SQLite
-- Et plus encore...
+- Et bien plus...
 
 **NoSQL**
 
-- Apache Cassandra
+- Apache cassandra
 - CouchDB
 - MongoDB
 - NDatabase
 - OrientDB|
 - RavenDB
 - VelocityDB
-- Et plus encore...
+- Et bien plus...
 
 ::: moniker range="vs-2017"
 
@@ -94,7 +99,7 @@ Si vous vous connectez aux services Azure, veillez à télécharger les derniers
 
 Pour qu’une base de données soit consommable dans ADO.NET, elle doit avoir un *fournisseur de données ADO.net* personnalisé ou doit exposer une interface ODBC ou OLE DB. Microsoft fournit une [liste de fournisseurs de données ADO.net](/dotnet/framework/data/adonet/ado-net-overview) pour les produits SQL Server, ainsi que les fournisseurs ODBC et OLE DB.
 
-### <a name="data-modeling"></a>Modélisation des données
+### <a name="data-modeling"></a>Modélisation de données
 
 Dans .NET, vous avez trois possibilités de modélisation et de manipulation des données en mémoire après les avoir récupérées d’une source de données :
 

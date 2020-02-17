@@ -7,17 +7,17 @@ helpviewer_keywords:
 - code analysis, walkthroughs
 - code, analyzing C/C++
 - code analysis tool, walkthroughs
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e2154a07d498012c9c45f992ebed51b0218e823a
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: 74a878b8c64955927357e45c668c4d100007d373
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75401018"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271813"
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>Procédure pas à pas : analyse du code C/C++ pour rechercher les erreurs
 
@@ -28,7 +28,7 @@ Cette procédure pas à pas montre comment analyserC++ c/code pour identifier le
 - Traiter l’avertissement comme une erreur.
 - Annoter le code source pour améliorer l’analyse des erreurs de code.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Conditions préalables requises
 
 - Copie de l' [exemple de démonstration](../code-quality/demo-sample.md).
 - Connaissances de base de CC++/.
@@ -45,7 +45,7 @@ Cette procédure pas à pas montre comment analyserC++ c/code pour identifier le
 
 3. Dans **Explorateur de solutions**, sélectionnez le projet CodeDefects.
 
-4. Dans le menu **Projet**, cliquez sur **Propriétés**.
+4. Dans le menu **Projet** , cliquez sur **Propriétés**.
 
      La boîte de dialogue **pages de propriétés de CodeDefects** s’affiche.
 
@@ -107,7 +107,7 @@ Cette procédure pas à pas montre comment analyserC++ c/code pour identifier le
 
 1. Dans Explorateur de solutions, sélectionnez le projet annotations.
 
-2. Dans le menu **Projet**, cliquez sur **Propriétés**.
+2. Dans le menu **Projet** , cliquez sur **Propriétés**.
 
      La boîte de dialogue **pages de propriétés des annotations** s’affiche.
 

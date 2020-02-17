@@ -123,17 +123,17 @@ f1_keywords:
 - _Scanf_s_format_string_
 - _Printf_format_string_
 ms.assetid: 82826a3d-0c81-421c-8ffe-4072555dca3a
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 16e7ffb30dc7ec4ae1b78647a0964b81932617ab
-ms.sourcegitcommit: 174c992ecdc868ecbf7d3cee654bbc2855aeb67d
+ms.openlocfilehash: 18de1a42a72172d137215d27d9af3a9a409e9086
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74879267"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271086"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Annotation de paramètres de fonction et valeurs de retour
 Cet article décrit les utilisations typiques des annotations pour les paramètres de fonction simples (scalaires et pointeurs vers les structures et les classes) et la plupart des types de mémoires tampons.  Cet article présente également les modèles d’utilisation courants pour les annotations. Pour les annotations supplémentaires liées aux fonctions, consultez [annotation du comportement](../code-quality/annotating-function-behavior.md)de la fonction.
@@ -251,7 +251,7 @@ Pour les annotations dans le tableau suivant, quand un paramètre de pointeur es
 
      Pointeur vers un tableau pour lequel `p - _Curr_` (c’est-à-dire `p` moins `_Curr_`) est une expression valide.  Les éléments antérieurs à `p` doivent être valides dans un état antérieur.
 
-    Par exemple :
+    Par exemple :
     ```cpp
     int ReadAllElements(_In_reads_to_ptr_(EndOfArray) const int *Array, const int *EndOfArray);
     ```
@@ -430,7 +430,7 @@ Le paramètre de référence est couramment utilisé pour les paramètres de sor
 
      Le résultat doit être valide dans après l’État, mais peut avoir la valeur null dans l’état de publication. Pointe vers une mémoire tampon valide de `s` octets d’éléments valides.
 
-## <a name="return-values"></a>Retourne des valeurs
+## <a name="return-values"></a>Valeurs de retour
 
 La valeur de retour d’une fonction ressemble à un paramètre de `_Out_` mais se trouve à un niveau de déréférencement différent, et vous n’avez pas à considérer le concept du pointeur sur le résultat.  Pour les annotations suivantes, la valeur de retour est l’objet annoté (un scalaire, un pointeur vers un struct ou un pointeur vers une mémoire tampon). Ces annotations ont la même sémantique que l’annotation `_Out_` correspondante.
 
@@ -524,7 +524,7 @@ La valeur de retour d’une fonction ressemble à un paramètre de `_Out_` mais 
 
      `min(pM->nSize, sizeof(MyStruct))`
 
-## <a name="related-resources"></a>Ressources connexes
+## <a name="related-resources"></a>Ressources associées
 
 [Blog de l’équipe d’analyse du code](https://blogs.msdn.microsoft.com/codeanalysis/)
 

@@ -2,17 +2,17 @@
 title: Utilisation des vérificateurs C++ Core Guidelines
 ms.date: 08/14/2018
 ms.topic: conceptual
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 dev_langs:
 - CPP
-ms.openlocfilehash: 762ba639c1443bb737087233d04c9e3753f2f455
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: 95b3af7db7fc0e4c71d78716714031fd07dbdab5
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72807074"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271771"
 ---
 # <a name="use-the-c-core-guidelines-checkers"></a>Utiliser les vérificateurs de C++ Core Guidelines
 
@@ -59,7 +59,7 @@ Cet exemple illustre quelques-uns des avertissements que les C++ règles de cont
 
 - C26485 est une limite de règle. 3 : aucune atténuation de tableau à pointeur.
 
-- C26481 est une limite de règle. 1 : n’utilisez pas l’arithmétique de pointeur. Utilisez plutôt `span`.
+- C26481 est une limite de règle. 1 : n’utilisez pas l’arithmétique de pointeur. Utilisez `span` à la place.
 
 Si les C++ ensembles de règles d’analyse du code de contrôle de base sont installés et activés lorsque vous compilez ce code, les deux premiers avertissements sont générés, mais le troisième est supprimé. Voici la sortie de la génération de l’exemple de code :
 
@@ -73,7 +73,7 @@ c:\users\username\documents\visual studio 2015\projects\corecheckexample\coreche
 ========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
 ```
 
-Les C++ recommandations de base sont là pour vous aider à écrire du code plus sécurisé. Toutefois, si vous avez une instance dans laquelle une règle ou un profil ne doit pas être appliqué, il est facile de la supprimer directement dans le code. Vous pouvez utiliser l’attribut `gsl::suppress` pour garantir C++ une vérification de base de la détection et du signalement d’une violation d’une règle dans le bloc de code suivant. Vous pouvez marquer des instructions individuelles pour supprimer des règles spécifiques. Vous pouvez même supprimer le profil de limites entier en écrivant `[[gsl::suppress(bounds)]]` sans inclure un numéro de règle spécifique.
+Les C++ recommandations de base sont là pour vous aider à écrire du code plus sécurisé. Toutefois, si vous avez une instance dans laquelle une règle ou un profil ne doit pas être appliqué, il est facile de la supprimer directement dans le code. Vous pouvez utiliser l’attribut `gsl::suppress` pour garder C++ le contrôle principal de la détection et du signalement d’une violation d’une règle dans le bloc de code suivant. Vous pouvez marquer des instructions individuelles pour supprimer des règles spécifiques. Vous pouvez même supprimer le profil de limites entier en écrivant `[[gsl::suppress(bounds)]]` sans inclure un numéro de règle spécifique.
 
 ## <a name="supported-rule-sets"></a>Ensembles de règles pris en charge
 À mesure que de nouvelles règles sont C++ ajoutées à l’outil de vérification des instructions de base, le nombre d’avertissements générés pour le code préexistant peut augmenter. Vous pouvez utiliser des ensembles de règles prédéfinis pour filtrer les genres de règles à activer.
@@ -97,7 +97,7 @@ Les rubriques de référence pour la plupart des règles sont sous [référence 
 - **Règles de classe** Quelques règles qui se concentrent sur l’utilisation correcte des fonctions membres spéciales et des spécifications virtuelles. Il s’agit d’un sous-ensemble de vérifications recommandé pour les [classes et les hiérarchies](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-class)de classes.
 - **Règles d’accès concurrentiel** Une seule règle, qui intercepte les objets Guard mal déclarés. Pour plus d’informations, consultez [instructions relatives à l’accès concurrentiel](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-concurrency).
 - **Règles de déclaration** Quelques règles des instructions de l' [interface](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-interfaces) qui se concentrent sur la façon dont les variables globales sont déclarées.
-- **Règles de fonction** Deux contrôles qui permettent d’adopter le spécificateur `noexcept`. Cela fait partie des indications relatives à la [conception et](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-functions)à l’implémentation de la fonction Clear.
+- **Règles de fonction** Deux contrôles qui permettent d’adopter le spécificateur de `noexcept`. Cela fait partie des indications relatives à la [conception et](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-functions)à l’implémentation de la fonction Clear.
 - **Règles de pointeur partagé** Dans le cadre de l’application des règles de [gestion des ressources](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-resource) , nous avons ajouté quelques règles spécifiques à la façon dont les pointeurs partagés sont passés dans des fonctions ou utilisés localement.
 - **Règles de style** Un contrôle simple mais important, qui interdit l’utilisation de [goto](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-goto). Il s’agit de la première étape d’amélioration du style de codage et de l’utilisation C++des expressions et des instructions dans.
 
@@ -223,21 +223,21 @@ Si vous utilisez un système de génération qui ne repose pas sur MSBuild, vous
 Vous devez définir certaines variables d’environnement et utiliser les options de ligne de commande appropriées pour le compilateur. Il est préférable de travailler dans l’environnement « invite de commandes des outils natifs » afin de ne pas avoir à rechercher des chemins spécifiques pour le compilateur, les répertoires Include, etc.
 
 1. **Variables d’environnement**
-   - `set esp.extensions=cppcorecheck.dll` indique au moteur de charger le C++ module instructions principales.
-   - `set esp.annotationbuildlevel=ignore` désactive la logique qui traite les annotations SAL. Les annotations n’affectent pas l' C++ analyse du code dans le vérificateur des instructions de base, mais leur traitement prend du temps (parfois à long terme). Ce paramètre est facultatif, mais fortement recommandé.
+   - `set esp.extensions=cppcorecheck.dll` cela indique au moteur de charger le C++ module instructions principales.
+   - `set esp.annotationbuildlevel=ignore` cela désactive la logique qui traite les annotations SAL. Les annotations n’affectent pas l' C++ analyse du code dans le vérificateur des instructions de base, mais leur traitement prend du temps (parfois à long terme). Ce paramètre est facultatif, mais fortement recommandé.
    - `set caexcludepath=%include%` nous vous recommandons vivement de désactiver les avertissements qui se déclenchent sur les en-têtes standard. Vous pouvez ajouter d’autres chemins ici, par exemple, le chemin d’accès aux en-têtes courants dans votre projet.
 2. **Options de ligne de commande**
    - `/analyze` active l’analyse du code (envisagez également d’utiliser/Analyze : uniquement et/Analyze : quiet).
-   - `/analyze:plugin EspXEngine.dll` cette option charge le moteur d’extensions d’analyse du code dans le préfast. Ce moteur charge, à son tour, C++ le vérificateur des instructions de base.
+   - `/analyze:plugin EspXEngine.dll` cette option permet de charger le moteur des extensions d’analyse du code dans le préfast. Ce moteur charge, à son tour, C++ le vérificateur des instructions de base.
 
 ## <a name="use-the-guideline-support-library"></a>Utiliser la bibliothèque de prise en charge des instructions
-La bibliothèque de prise en charge des instructions est conçue pour vous aider à suivre les instructions principales. Le portail GSL comprend des définitions qui vous permettent de remplacer des constructions sujettes aux erreurs par des alternatives plus sûres. Par exemple, vous pouvez remplacer une paire `T*, length` de paramètres par le type `span<T>`. Le portail GSL est disponible au [http://www.nuget.org/packages/Microsoft.Gsl](https://www.nuget.org/packages/Microsoft.Gsl). La bibliothèque étant Open source, vous pouvez afficher les sources, créer des commentaires ou contribuer. Le projet se trouve à l’adresse [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).
+La bibliothèque de prise en charge des instructions est conçue pour vous aider à suivre les instructions principales. Le portail GSL comprend des définitions qui vous permettent de remplacer des constructions sujettes aux erreurs par des alternatives plus sûres. Par exemple, vous pouvez remplacer une paire `T*, length` de paramètres par le type `span<T>`. Le portail GSL est disponible sur [http://www.nuget.org/packages/Microsoft.Gsl](https://www.nuget.org/packages/Microsoft.Gsl). La bibliothèque étant Open source, vous pouvez afficher les sources, créer des commentaires ou contribuer. Le projet se trouve sur [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).
 
 ## <a name="vs2015_corecheck"></a>Utiliser les C++ instructions de contrôle de base dans les projets Visual Studio 2015
 
 Si vous utilisez Visual Studio 2015, les C++ ensembles de règles d’analyse du code de contrôle de base ne sont pas installés par défaut. Vous devez effectuer quelques étapes supplémentaires avant de pouvoir activer les C++ outils d’analyse du code de vérification de base dans Visual Studio 2015. Microsoft fournit une prise en charge pour les projets Visual Studio 2015 à l’aide d’un package NuGet. Le package est nommé Microsoft. CppCoreCheck et est disponible sur [http://www.nuget.org/packages/Microsoft.CppCoreCheck](https://www.nuget.org/packages/Microsoft.CppCoreCheck). Pour ce package, vous devez avoir au moins Visual Studio 2015 avec la mise à jour 1 installée.
 
-Le package installe également un autre package en tant que dépendance, une bibliothèque de prise en charge des instructions en en-tête uniquement (GSL). Le portail GSL est également disponible sur GitHub au [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).
+Le package installe également un autre package en tant que dépendance, une bibliothèque de prise en charge des instructions en en-tête uniquement (GSL). Le portail GSL est également disponible sur GitHub à l’adresse [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).
 
 En raison du mode de chargement des règles d’analyse du code, vous devez installer le package NuGet Microsoft. CppCoreCheck C++ dans chaque projet que vous souhaitez vérifier dans Visual Studio 2015.
 

@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: e869a02475917f2444bedbb1bc9b7373b893d098
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 37ef83cc968276fb29ae5380544ee9c27ffd485d
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75846902"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77272279"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Installer et configurer des outils de génération en utilisant iOS
 
@@ -28,7 +28,7 @@ Vous pouvez utiliser Visual Studio avec le **développement mobile multiplatefor
 
 Une fois que vous avez installé les outils de génération à l’aide d’iOS, reportez-vous à cet article pour savoir comment configurer et mettre à jour rapidement l’agent distant pour le développement iOS dans Visual Studio et sur votre Mac.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Conditions préalables requises
 
 Pour installer et utiliser l’agent distant en vue de développer du code pour iOS, vous devez tout d’abord disposer des éléments suivants :
 
@@ -62,9 +62,9 @@ Pour installer et utiliser l’agent distant en vue de développer du code pour 
 
    Si vous souhaitez effectuer la signature manuellement, vous devez créer un profil de provisionnement pour votre application. Pour plus d’informations sur la création de profils de provisionnement, consultez [Create a development provisioning profile](https://help.apple.com/developer-account/#/devf2eb157f8). 
 
-- [Node.js](https://nodejs.org/) version 8.11.3 et npm version 5.6.0
+- [Node. js](https://nodejs.org/) version 12.14.1 et NPM version 6.13.4
 
-   Installez la version 8.11.3 de Node.js sur votre Mac. Si vous installez le package Node.js, celui-ci est normalement accompagné de npm version 5.6.0. Les autres versions de node. js et NPM peuvent ne pas prendre en charge certains modules utilisés dans l' `vcremote`de l’agent distant, ce qui peut entraîner l’échec de l’installation de `vcremote`.
+   Installez la version 12.14.1 de node. js sur votre Mac. Si vous installez le package node. js, il doit être fourni avec NPM version 6.13.4. Les autres versions de node. js et NPM peuvent ne pas prendre en charge certains modules utilisés dans l' `vcremote`de l’agent distant, ce qui peut entraîner l’échec de l’installation de `vcremote`. Nous vous recommandons d’installer node. js à l’aide d’un gestionnaire de package tel que [node version Manager](https://nodejs.org/en/download/package-manager/#nvm). Évitez d’utiliser la commande `sudo` pour installer node. js, car certains modules peuvent échouer à s’installer lors de l’utilisation de `sudo`.
 
 ## <a name="Install"></a> Installer l’agent distant pour iOS
 
@@ -74,11 +74,17 @@ Avant d’installer l’agent distant, assurez-vous que vous avez respecté les 
 
 ### <a name="DownloadInstall"></a> Pour télécharger et installer l’agent distant
 
-- Dans l’application Terminal de votre Mac, entrez :
+- À partir de l’application Terminal sur votre Mac, vérifiez que la version node. js en cours d’utilisation est la version requise 12.14.1. Pour vérifier la version, exécutez la commande :
 
-   `sudo npm install -g --unsafe-perm vcremote`
+  `node -v`
+  
+  S’il ne s’agit pas de la bonne version, vous devrez peut-être suivre les instructions d’installation de node. js dans les conditions préalables. Ensuite, redémarrez node. js.
 
-   Le commutateur d’installation globale ( **-g**) est recommandé, mais pas obligatoire.
+- Après avoir vérifié que le node. js requis est en cours d’utilisation, exécutez la commande suivante pour installer vcremote sous cette version node. js :
+
+   `npm install -g --unsafe-perm vcremote`
+
+   Le commutateur d’installation globale ( **-g**) est recommandé, mais pas obligatoire. Si vous n’utilisez pas le commutateur d’installation global, vcremote est installé sous le chemin d’accès actif actuel dans l’application Terminal.
 
    Pendant l’installation, `vcremote` est installé et le mode développeur est activé sur votre Mac. [Homebrew](https://brew.sh/) et deux packages npm, `vcremote-lib` et `vcremote-utils`, sont également installés. Une fois l’installation terminée, ne tenez pas compte des avertissements relatifs aux dépendances facultatives ignorées.
 
@@ -216,7 +222,7 @@ Vous pouvez configurer l’agent distant à l’aide de différentes options de 
 
    Quand vous utilisez cette option, décochez la case **Sécuriser** et laissez le champ **Code PIN** vide pendant la configuration de l’agent dans Visual Studio.
 
-- Pour spécifier l’emplacement des fichiers de l’agent distant, entrez :
+- Pour spécifier l’emplacement des fichiers de l’agent distant, entrez :
 
    `vcremote --serverDir directory_path`
 

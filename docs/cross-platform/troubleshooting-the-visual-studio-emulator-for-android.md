@@ -1,6 +1,7 @@
 ---
 title: Résolution des problèmes liés à l’émulateur Visual Studio pour Android | Microsoft Docs
 ms.custom: ''
+ms.prod: visual-studio-dev15
 ms.date: 11/04/2016
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
@@ -8,14 +9,15 @@ ms.assetid: f3fb5df4-3aae-40e4-9450-bbe15b0c5af5
 author: conceptdev
 ms.author: crdun
 manager: crdun
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 56978bfee49bc3a38e900eb41004307ef40d0403
-ms.sourcegitcommit: 57bc1c3887838d707c13feff72a677b3bad3be4b
+ms.openlocfilehash: 85a7748f25e284a7c746d5779b3d177a15e1d37b
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72777812"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77272072"
 ---
 # <a name="troubleshoot-the-visual-studio-emulator-for-android"></a>Résoudre les problèmes de l’émulateur Visual Studio pour Android
 Cette rubrique contient des informations pour vous aider à résoudre les problèmes que vous pouvez rencontrer quand vous utilisez l’Émulateur Visual Studio pour Android.
@@ -94,7 +96,7 @@ Cette rubrique contient des informations pour vous aider à résoudre les probl�
 ## <a name="ManualNetworkConfig"></a> Impossible de se connecter à des destinations réseau quand des paramètres réseau nécessitent une configuration manuelle
  Pour vous connecter à des destinations réseau à partir de l'émulateur, votre réseau doit remplir les conditions suivantes :
 
-- DHCP. L'émulateur nécessite le protocole DHCP, car il se configure lui-même comme périphérique distinct sur le réseau avec sa propre adresse IP.
+- DHCP. L’émulateur nécessite le protocole DHCP, car il se configure lui-même comme périphérique distinct sur le réseau avec sa propre adresse IP.
 
 - Paramètres DNS et de passerelle configurés automatiquement. Vous ne pouvez pas configurer les paramètres DNS et de passerelle manuellement pour l’émulateur.
 
@@ -103,7 +105,7 @@ Cette rubrique contient des informations pour vous aider à résoudre les probl�
 ## <a name="SlowStart"></a> L’émulateur démarre lentement, son démarrage échoue en raison d’un dépassement de délai d’attente ou d’un échec de déploiement d’application
  Dans certaines conditions, le démarrage de l'émulateur prend plusieurs minutes ou échoue à cause d'un dépassement de délai d'attente. Quand le démarrage de l'émulateur échoue, le message suivant s'affiche : `App deployment failed. Please try again`. Les conditions suivantes peuvent provoquer cette erreur.
 
-- Exécution de l'Émulateur Visual Studio pour Android à partir d'un disque dur virtuel démarrable. Cette configuration n'est pas prise en charge.
+- Exécution de l'Émulateur Visual Studio pour Android à partir d'un disque dur virtuel démarrable. Cette configuration n’est pas prise en charge.
 
 - Disque dur défaillant. Exécutez le programme chkdsk.
 
@@ -193,7 +195,7 @@ Cette rubrique contient des informations pour vous aider à résoudre les probl�
 
    Les produits suivants peuvent nécessiter une mise à niveau pour la compatibilité avec Windows 8 : VirtualBox, Virtual PC 7, VMWare, certains clients VPN, pare-feu logiciels, versions de clients VPN Cisco et autres systèmes de virtualisation. Collaborez avec le développeur du logiciel de virtualisation en question pour l'inciter à mettre à niveau le logiciel pour le rendre compatible avec Windows 8 et Hyper-V.
 
-   En guise de *solution de contournement*, vous pouvez désactiver tous les pilotes et applications tiers susceptibles d’interférer avec le réseau virtuel utilisé par l’émulateur pour communiquer avec Visual Studio. Il peut s'agir notamment :
+   En guise de *solution de contournement*, vous pouvez désactiver tous les pilotes et applications tiers susceptibles d’interférer avec le réseau virtuel utilisé par l’émulateur pour communiquer avec Visual Studio. Parmi celles-ci :
 
   - d'applications antivirus (qui se raccordent à la pile réseau) ;
 
@@ -225,19 +227,19 @@ Cette rubrique contient des informations pour vous aider à résoudre les probl�
 
      - Pilote de protocole LLDP Microsoft
 
-     - Pilote E/S Mappage de découverte de couche liaison
+     - Pilote E/S de mappage de découverte de topologie de la couche de liaison
 
-     - Répondeur de découverte de la topologie de la couche de liaison
+     - Pilote E/S de mappage de découverte de topologie de la couche de liaison
 
-     - Protocole Internet version 6 (TCP/IPv6)
+     - Protocole IPv6 (TCP/IPv6)
 
-     - Protocole Internet version 4 (TCP/IPv4)
+     - Protocole IPv4 (TCP/IPv4)
 
   4. Désactivez tous les autres éléments.
 
      L'inconvénient de cette technique est que chaque fois qu'un nouveau produit tiers installe des pilotes non pris en charge ou chaque fois que l'émulateur est installé, vous devez répéter ces étapes.
 
-     Après avoir désinstallé des produits tiers, vous devrez peut-être restaurer le commutateur interne de l'émulateur Windows Phone. Pour cela :
+     Après avoir désinstallé des produits tiers, vous devrez peut-être restaurer le commutateur interne de l'émulateur Windows Phone. Pour ce faire :
 
   - Ouvrez Hyper V et accédez au Gestionnaire de commutateur virtuel. Créez un commutateur virtuel nommé « Commutateur interne de l'émulateur Windows Phone » et sélectionnez **Réseau interne**comme type de connexion.
 
@@ -302,7 +304,7 @@ Cette rubrique contient des informations pour vous aider à résoudre les probl�
 ## <a name="Resolution"></a> La résolution de capture d'écran est incorrecte
  Si vous prenez une capture d'écran à l'aide de l'onglet Capture d'écran de la fenêtre **Outils supplémentaires** et que l'image résultante a une taille inattendue, vous devrez peut-être ajuster le niveau de zoom de l'écran avant de choisir **Capturer**. L'émulateur prend des captures d'écran à la résolution de l'écran sur votre moniteur d'ordinateur hôte.
 
-## <a name="OpenGL"></a> L'émulateur ne parvient pas à afficher le contenu OpenGL
+## <a name="OpenGL"></a> L’émulateur ne parvient pas à afficher le contenu OpenGL
  L’émulateur affiche le contenu OpenGL à l’aide du GPU de votre ordinateur hôte et utilise le projet ANGLE pour convertir ces appels vers et à partir de DirectX. Si votre application s'affiche correctement sur un appareil mais de façon incorrecte sur l'émulateur, il est probable que l'appareil atténue un appel OpenGL incorrect (par exemple, à l'aide de variables de nuanceur qui ne correspondent pas).
 
 ## <a name="Multitouch"></a> L'émulateur ne répond pas aux entrées tactiles multipoints
