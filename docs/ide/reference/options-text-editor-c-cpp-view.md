@@ -6,17 +6,17 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C/C++.View
 - VS.ToolsOptionsPages.Text_Editor.C%2FC%2B%2B.View
 - VS.ToolsOptionsPages.Text_Editor.C\C++.View
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b867d81e4f0719ebf239bc89a6200fe833bc27b1
-ms.sourcegitcommit: 4f82de3fb0cfae226aef1abb40c47e63d2036a5c
+ms.openlocfilehash: 95963245b15828f374e9812a9bb09d015b21a94b
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72919031"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77278693"
 ---
 # <a name="options-text-editor-cc-view"></a>Options, Éditeur de texte, C/C++, Affichage
 
@@ -46,7 +46,7 @@ Vous pouvez activer ou désactiver les paramètres suivants pour gérer la faço
 
 - **Surligner les jetons correspondants** : surligne les accolades englobantes ou la syntaxe en correspondance où le curseur est positionné.
 
-## <a name="outlining"></a>mode Plan
+## <a name="outlining"></a>Mode Plan
 
 - **Activer le mode Plan** : passe en mode Plan quand un fichier s’ouvre.
 
@@ -56,5 +56,5 @@ Vous pouvez activer ou désactiver les paramètres suivants pour gérer la faço
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Définition d’options d’éditeur spécifiques du langage](../../ide/reference/setting-language-specific-editor-options.md)
-- [Refactorisation en C++ (blog VC)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/)
+- [Définition d’options de l’éditeur spécifiques à un langage](../../ide/reference/setting-language-specific-editor-options.md)
+- [Refactoring in C++ (blog VC)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/)

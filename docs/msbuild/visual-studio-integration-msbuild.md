@@ -20,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1ddb8bdbc913a72791144d5e9d29d206712a3d6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 9a48725c0877110e969a98deb8c03b3181d31153
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594420"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77277703"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Intégration de Visual Studio (MSBuild)
 Visual Studio héberge [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pour charger et générer des projets managés. Dans la mesure où [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] est responsable du projet, la plupart des projets au format [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] peut être utilisé sans problème dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], même si le projet a été créé par un outil différent et possède un processus de génération personnalisé.
@@ -68,7 +68,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="in-process-compilers"></a>Compilateurs in-process
  Lorsque c'est possible, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tente d'utiliser la version intra-processus du compilateur [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] pour améliorer les performances. (Non applicable à [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].) Pour que cela fonctionne correctement, les conditions suivantes doivent être remplies :
 
-- Une cible du projet doit contenir une tâche nommée `Vbc` pour les projets [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] .
+- Une cible du projet doit contenir une tâche nommée `Vbc` pour les projets [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)].
 
 - Le paramètre `UseHostCompilerIfAvailable` de la tâche doit avoir la valeur true.
 
@@ -83,7 +83,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
 - Les conditions répertoriées dans la section [Compilateurs in-process](#in-process-compilers) doivent être respectées.
 
-## <a name="build-solutions"></a>Solutions de build
+## <a name="build-solutions"></a>Créer des solutions
  Dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], l'ordre des générations de projets et du fichier solution est contrôlé par [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] lui-même. Lors de la génération d'une solution avec *msbuild.exe* à partir de la ligne de commande, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] analyse le fichier solution et classe les générations de projets. Dans les deux cas, les projets sont générés individuellement en fonction de l'ordre des dépendances et les références entre projets ne sont pas parcourues. En revanche, lors de la génération de projets individuels avec *msbuild.exe*, les références entre projets sont parcourues.
 
  Lors de la génération dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], la propriété `$(BuildingInsideVisualStudio)` a la valeur `true`. Vous pouvez l'utiliser dans vos fichiers projet ou *.targets* pour que la génération se comporte différemment.
@@ -111,6 +111,9 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 </ItemGroup>
 ```
 
+> [!NOTE]
+> Les métadonnées de `Visible` sont ignorées C++ par Explorateur de solutions pour les projets. Les éléments s’affichent toujours même si `Visible` est défini sur false.
+
  Les éléments déclarés dans les fichiers importés dans le projet ne sont pas affichés par défaut. Les éléments créés pendant le processus de génération ne sont jamais affichés dans l'**Explorateur de solutions**.
 
 ## <a name="conditions-on-items-and-properties"></a>Conditions appliquées aux éléments et aux propriétés
@@ -120,11 +123,11 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
  Lorsqu'il faut déterminer l'affichage de l'élément dans l'**Explorateur de solutions**, les expressions conditionnelles associées à des éléments sont toujours ignorées.
 
-## <a name="debugging"></a>débogage
+## <a name="debugging"></a>Débogage
  Pour rechercher et lancer l'assembly de sortie ainsi qu'attacher le débogueur, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] a besoin des propriétés `OutputPath`, `AssemblyName`et `OutputType` correctement définies. Il ne sera pas possible d'attacher le débogueur si le processus de génération n'a pas donné lieu à la génération d'un fichier *.pdb* par le compilateur.
 
 ## <a name="design-time-target-execution"></a>Exécution des cibles au moment du design
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tente d'exécuter des cibles portant certains noms lorsqu'il charge un projet. Il s'agit notamment des cibles `Compile`, `ResolveAssemblyReferences`, `ResolveCOMReferences`, `GetFrameworkPaths` et `CopyRunEnvironmentFiles`. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] exécute ces cibles afin que le compilateur puisse être initialisé pour fournir IntelliSense, que le débogueur puisse être initialisé et que les références affichées dans l'Explorateur de solutions puissent être résolues. En l'absence de ces cibles, le projet se charge et effectue une génération correcte, mais l'expérience au moment du design dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ne sera pas complètement fonctionnelle.
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tente d'exécuter des cibles portant certains noms lorsqu'il charge un projet. Il s'agit notamment des cibles `Compile`, `ResolveAssemblyReferences`, `ResolveCOMReferences`, `GetFrameworkPaths`et `CopyRunEnvironmentFiles`. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] exécute ces cibles afin que le compilateur puisse être initialisé pour fournir IntelliSense, que le débogueur puisse être initialisé et que les références affichées dans l'Explorateur de solutions puissent être résolues. En l'absence de ces cibles, le projet se charge et effectue une génération correcte, mais l'expérience au moment du design dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ne sera pas complètement fonctionnelle.
 
 ## <a name="edit-project-files-in-visual-studio"></a>Modifier des fichiers projet dans Visual Studio
  Pour modifier directement un projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] , vous pouvez ouvrir le fichier projet dans l'Éditeur XML de Visual Studio.
@@ -144,7 +147,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 4. Dans l' **Explorateur de solutions**, ouvrez le menu contextuel du projet indisponible et choisissez **Recharger le projet**.
 
 ## <a name="intellisense-and-validation"></a>IntelliSense et validation
- Lors de l'utilisation de l'Éditeur XML pour modifier des fichiers projet, IntelliSense et la validation sont pilotés par les fichiers de schéma [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . Ceux-ci sont installés dans le cache des schémas, qui se trouve dans *\<Répertoire d’installation de Visual Studio>\Xml\Schemas\1033\MSBuild*.
+ Lors de l'utilisation de l'Éditeur XML pour modifier des fichiers projet, IntelliSense et la validation sont pilotés par les fichiers de schéma [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Ceux-ci sont installés dans le cache des schémas, qui se trouve dans *\<Répertoire d’installation de Visual Studio>\Xml\Schemas\1033\MSBuild*.
 
  Les types [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] principaux sont définis dans *Microsoft.Build.Core.xsd* et les types communs utilisés par [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sont définis dans *Microsoft.Build.CommonTypes.xsd*. Pour personnaliser les schémas afin de disposer d'IntelliSense et de la validation pour les noms, les propriétés et les tâches des types d'éléments personnalisés, vous pouvez modifier *Microsoft.Build.xsd* ou créer votre propre schéma incluant les schémas CommonTypes ou Core. Si vous créez votre propre schéma, vous devez indiquer à l'Éditeur XML de l'utiliser à l'aide de la fenêtre **Propriétés** .
 

@@ -3,15 +3,15 @@ title: Avantage LinkedIn Learning dans les abonnements Visual Studio | Microsoft
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 08/02/2019
+ms.date: 02/12/2020
 ms.topic: conceptual
 description: Découvrez l’avantage LinkedIn Learning, qui est lié à un abonnement LinkedIn Premium inclus dans certains abonnements Visual Studio.
-ms.openlocfilehash: b91db8c5b8ec27e947e2c73ac59ab3b07502f9d2
-ms.sourcegitcommit: ca3bb6db949f5e405f6ffe1afa5f430662c1173f
+ms.openlocfilehash: f6c5206055835605ae529f1f07159611bcd6bf7d
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74099650"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77278851"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Avantage LinkedIn Learning dans les abonnements Visual Studio
 
@@ -49,7 +49,7 @@ Pour activer votre abonnement LinkedIn Premium et l’avantage LinkedIn Learning
 
 12. Selon les préférences et les informations personnelles que vous avez fournies jusqu’à présent, vous voyez une sélection de relations recommandées pour commencer à créer votre réseau.  Vous pouvez choisir d’ajouter des relations ou d’ignorer cette étape.
 
-13. Pour ajouter une photo à votre profil, cliquez sur **Charger une photo**.  Sinon, vous pouvez ignorer cette étape.  (Vous pouvez ajouter une photo ultérieurement.)
+13. Pour ajouter une photo à votre profil, cliquez sur **Charger une photo**.  Dans le cas contraire, vous pouvez ignorer cette étape.  (Vous pouvez ajouter une photo ultérieurement.)
 
 14. Vous pouvez télécharger l’application LinkedIn sur votre téléphone pour accéder à votre réseau depuis n’importe où.  Vous pouvez envoyer un lien vers votre téléphone, ou effectuer le téléchargement directement à partir de l’App Store ou de Google Play.  Vous pouvez également cliquer sur **Suivant** pour ignorer cette étape et télécharger l’application plus tard.
 
@@ -66,30 +66,30 @@ Pour activer votre abonnement LinkedIn Premium et l’avantage LinkedIn Learning
    > [!div class="mx-imgBorder"]
    > ![LinkedIn Learning, Accueil](_img/vs-linkedin/vs-linkedin-learning-home.png)
 
-## <a name="eligibility"></a>Éligibilité
+## <a name="eligibility"></a>Eligibility
 
-| Niveau d'abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
+| Niveau de l’abonnement                                                 |     Canaux                                            | Avantage                                                          | Renouvelable ?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | Licences en volume, Azure, Détail, NFR sélectif<sup>1</sup> | 6 mois       |  Non.  Disponible pour les nouveaux abonnés uniquement          |
-| Visual Studio Enterprise avec GitHub Enterprise   | LV | 6 mois       |  Non.  Disponible pour les nouveaux abonnés uniquement          |
-| Visual Studio Professional (Standard) | Licences en volume, Azure, Détail                                       | 3 mois                                                            |Non.  Disponible pour les nouveaux abonnés uniquement         |
-| Visual Studio Professional avec GitHub Enterprise | LV | 3 mois      | Non.  Disponible pour les nouveaux abonnés uniquement         |
-| Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | 3 mois                                             |  Non.  Disponible pour les nouveaux abonnés uniquement         |
-| Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | 3 mois                                              | Non.  Disponible pour les nouveaux abonnés uniquement         |
-| Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure                                       | Non disponible                                                           |NA|
+| Visual Studio Enterprise (Standard)   | Licences en volume, Azure, Détail, NFR sélectif<sup>1</sup> | 6 mois       |  Non.  Disponible pour les nouveaux abonnés uniquement          |
+| Visual Studio Enterprise avec GitHub Enterprise   | LV | 6 mois       |  Non.  Disponible pour les nouveaux abonnés uniquement          |
+| Visual Studio Professional (Standard) | Licences en volume, Azure, Détail                                       | 3 mois                                                            |Non.  Disponible pour les nouveaux abonnés uniquement         |
+| Visual Studio Professional avec GitHub Enterprise | LV | 3 mois      | Non.  Disponible pour les nouveaux abonnés uniquement         |
+| Visual Studio Test Professional (Standard)                         | Licences en volume, Détail                                              | Non disponible                                            |  N/D         |
+| Plateformes MSDN (Standard)                                          | Licences en volume, Détail                                              | Non disponible                                              | N/D         |
+| Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure                                       | Non disponible                                                           |N/D|
 
 <sup>1</sup>  *comprend : non pour la revente (NFR), VSIP (Visual Studio Industry Partner).  Exclut : Microsoft Partner Network (MPN), FTE, MCT Software & Developer Services Developer, BizSpark, imagine, MVP (Most Valuable Professional), RD (Regional Director).  Services de & de logiciel MCT.*
 
 > [!NOTE]
-> Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à consulter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
+> Microsoft n’offre plus les abonnements Visual Studio Professional annuel et Visual Studio Enterprise annuel dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à consulter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
 
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
 
-## <a name="frequently-asked-questions"></a>FAQ
+## <a name="frequently-asked-questions"></a>Forum aux questions
 ### <a name="q-if-i-renew-my-subscription-does-my-linkedin-learning-benefit-also-renew"></a>Q : Si je renouvelle mon abonnement, mon avantage LinkedIn Learning est-il également renouvelé ?
 R : Non, l’offre LinkedIn Learning est réservée uniquement aux nouveaux abonnés.
 
-## <a name="support-resources"></a>Ressources de support
+## <a name="support-resources"></a>Ressources de support technique
 - Besoin d’aide avec LinkedIn Learning ?  Consultez les ressources suivantes :
   - Aide sur [l’utilisation de LinkedIn Learning](https://www.linkedin.com/help/learning).
   - Aide sur des questions générales relatives à [LinkedIn](https://www.linkedin.com/help/linkedin), telles que la création de comptes et de profils, ou la gestion de votre réseau.
@@ -97,6 +97,6 @@ R : Non, l’offre LinkedIn Learning est réservée uniquement aux nouveaux abo
 - Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Étapes suivantes
-Découvrez les autres avantages inclus dans votre abonnement. Visitez [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
+Découvrez les autres avantages inclus dans votre abonnement. Rendez-vous sur [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 Si vous n’avez pas encore activé l’avantage de crédit DevTest Azure fourni avec votre abonnement, visitez [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) et cliquez sur la vignette Azure dans la catégorie outils pour configurer votre abonnement Azure et échanger votre crédit Azure DevTest individuel.

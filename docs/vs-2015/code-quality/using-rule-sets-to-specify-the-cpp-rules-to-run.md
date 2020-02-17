@@ -1,78 +1,78 @@
 ---
-title: À l’aide de la règle définit pour spécifier les règles C++ à exécuter | Microsoft Docs
+title: Utilisation d’ensembles de règles pour C++ spécifier les règles à exécuter | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
 ms.topic: conceptual
 ms.assetid: ac3877e6-5349-4c03-9541-3d5be259f1e8
 caps.latest.revision: 7
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: e8361ec9f93ff150d3fd29bce315f635bd00048b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ff105af1d817613b324e1158130457eb906c753f
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68142156"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77277853"
 ---
 # <a name="using-rule-sets-to-specify-the-c-rules-to-run"></a>Utilisation des ensembles de règles pour spécifier les règles C++ à exécuter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Dans [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] et [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], vous pouvez créer et modifier un personnalisé *ensemble de règles* pour répondre aux besoins spécifiques de projet associés à l’analyse du code. Pour créer une règle de C++ personnalisée défini, un projet C/C++ doit être ouvert dans l’IDE Visual Studio. Vous puis ouvrez un ensemble de règles standard dans l’éditeur d’ensemble de règles et puis ajoutez ou supprimez des règles spécifiques et éventuellement modifiez l’action qui se produit lorsque l’analyse du code détermine qu’une règle a été violée.  
+Dans [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] et [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], vous pouvez créer et modifier un *ensemble de règles* personnalisé pour répondre à des besoins de projet spécifiques associés à l’analyse du code. Pour créer un ensemble C++ de règles personnalisé, un projetC++ C/doit être ouvert dans l’IDE de Visual Studio. Vous ouvrez ensuite un ensemble de règles standard dans l’éditeur d’ensembles de règles, puis vous ajoutez ou supprimez des règles spécifiques et modifiez éventuellement l’action qui se produit lorsque l’analyse du code détermine qu’une règle a été violée.  
   
- Pour créer une nouvelle règle personnalisée définie, vous l’enregistrez à l’aide d’un nouveau nom de fichier. L’ensemble de règles personnalisé est automatiquement affecté au projet.  
+ Pour créer un ensemble de règles personnalisé, enregistrez-le à l’aide d’un nouveau nom de fichier. L’ensemble de règles personnalisé est automatiquement affecté au projet.  
   
-## <a name="opening-the-rule-set-editor"></a>Ouverture de la règle d’éditeur d’ensembles  
+## <a name="opening-the-rule-set-editor"></a>Ouverture de l’éditeur d’ensembles de règles  
   
 #### <a name="to-create-a-custom-rule-from-a-single-existing-rule-set"></a>Pour créer une règle personnalisée à partir d’un seul ensemble de règles existant  
   
-1. Dans l’Explorateur de solutions, ouvrez le menu contextuel du projet, puis choisissez **propriétés**.  
+1. Dans Explorateur de solutions, ouvrez le menu contextuel du projet, puis choisissez **Propriétés**.  
   
-2. Sur le **propriétés** , choisir **analyse du Code**.  
+2. Sous l’onglet **Propriétés** , choisissez **analyse du code**.  
   
-3. Dans le **l’ensemble de règles** liste déroulante, effectuez l’une des opérations suivantes :  
+3. Dans la liste déroulante **ensemble de règles** , effectuez l’une des opérations suivantes :  
   
    - Choisissez l’ensemble de règles que vous souhaitez personnaliser.  
   
      \- ou -  
   
-   - Choisissez  **\<Parcourir... >** pour spécifier une règle existante définie qui n’est pas dans la liste.  
+   - Choisir **\<parcourir... >** pour spécifier un ensemble de règles existant qui ne figure pas dans la liste.  
   
-4. Choisissez **Open** pour afficher les règles dans l’éditeur d’ensemble de règles.  
+4. Choisissez **ouvrir** pour afficher les règles dans l’éditeur d’ensembles de règles.  
   
-#### <a name="to-modify-a-rule-set-in-the-rule-set-editor"></a>Pour modifier une règle définie dans l’éditeur d’ensemble de règles  
+#### <a name="to-modify-a-rule-set-in-the-rule-set-editor"></a>Pour modifier un ensemble de règles dans l’éditeur d’ensembles de règles  
   
-- Pour modifier le nom complet de l’ensemble de règles, dans le **vue** menu, choisissez **fenêtre Propriétés**. Entrez le nom d’affichage dans le **nom** boîte. Notez que le nom de l’affichage peut différer du nom du fichier.  
+- Pour modifier le nom complet de l’ensemble de règles, dans le menu **affichage** , choisissez **fenêtre Propriétés**. Entrez le nom d’affichage dans la zone **nom** . Notez que le nom d’affichage peut être différent du nom de fichier.  
   
-- Pour ajouter toutes les règles du groupe à un ensemble de règles personnalisé, sélectionnez la case à cocher du groupe. Pour supprimer toutes les règles du groupe, désactivez la case à cocher.  
+- Pour ajouter toutes les règles du groupe à un ensemble de règles personnalisé, activez la case à cocher du groupe. Pour supprimer toutes les règles du groupe, désactivez la case à cocher.  
   
-- Pour ajouter une règle spécifique à l’ensemble de règles personnalisé, sélectionnez la case à cocher de la règle. Pour supprimer la règle à partir de l’ensemble de règles, désactivez la case à cocher.  
+- Pour ajouter une règle spécifique à l’ensemble de règles personnalisé, activez la case à cocher de la règle. Pour supprimer la règle de l’ensemble de règles, désactivez la case à cocher.  
   
-- Pour modifier l’action effectuée lorsqu’une règle est violée dans une analyse du code, choisissez la **Action** champ pour la règle et choisissez l’une des valeurs suivantes :  
+- Pour modifier l’action entreprise lorsqu’une règle est violée dans une analyse du code, choisissez le champ **action** pour la règle, puis choisissez l’une des valeurs suivantes :  
   
-     **Avertir** -génère un avertissement.  
+     **WARN** -génère un avertissement.  
   
-     **Erreur** -génère une erreur.  
+     **Erreur** : génère une erreur.  
   
-     **Aucun** -désactive la règle. Cette action est le même que la suppression de la règle de l’ensemble de règles.  
+     **None** : désactive la règle. Cette action revient à supprimer la règle de l’ensemble de règles.  
   
-#### <a name="to-group-filter-or-change-the-fields-in-the-rule-set-editor-by-using-the-rule-set-editor-toolbar"></a>Pour regrouper, filtrer ou modifier les champs dans l’éditeur d’ensemble de règles à l’aide de la barre d’outils Éditeur de règle ensemble  
+#### <a name="to-group-filter-or-change-the-fields-in-the-rule-set-editor-by-using-the-rule-set-editor-toolbar"></a>Pour regrouper, filtrer ou modifier les champs de l’éditeur d’ensembles de règles à l’aide de la barre d’outils Éditeur d’ensemble de règles  
   
-- Pour développer les règles dans tous les groupes, choisissez **développer tout**.  
+- Pour développer les règles de tous les groupes, choisissez **développer tout**.  
   
-- Pour réduire les règles dans tous les groupes, choisissez **réduire tout**.  
+- Pour réduire les règles de tous les groupes, choisissez **réduire tout**.  
   
-- Pour modifier le champ dont les règles sont regroupés, choisissez le champ à partir de la **Group By** liste. Pour afficher les règles non groupées, choisissez  **\<None >** .  
+- Pour modifier le champ par lequel les règles sont regroupées, choisissez le champ dans la liste **regrouper par** . Pour afficher les règles non groupées, choisissez **\<aucun >** .  
   
-- Pour ajouter ou supprimer des champs dans les colonnes de la règle, choisissez **Options de colonne**.  
+- Pour ajouter ou supprimer des champs dans les colonnes de règles, choisissez **options de colonne**.  
   
-- Pour masquer les règles qui ne s’appliquent pas à la solution actuelle, choisissez **masquer des règles qui ne s’appliquent pas à la solution actuelle**.  
+- Pour masquer les règles qui ne s’appliquent pas à la solution actuelle, choisissez **Masquer les règles qui ne s’appliquent pas à la solution actuelle**.  
   
-- Pour basculer entre l’affichage et masquage des règles qui sont affectés à l’action d’erreur, choisissez **afficher les règles qui peuvent générer des erreurs d’analyse du Code**.  
+- Pour basculer entre l’affichage et le masquage des règles affectées par l’action d’erreur, choisissez **afficher les règles qui peuvent générer des erreurs d’analyse du code**.  
   
-- Pour basculer entre l’affichage et masquage des règles qui sont affectés à l’action de l’avertissement, choisissez **afficher les règles qui peuvent générer des avertissements d’analyse du Code**.  
+- Pour basculer entre l’affichage et le masquage des règles affectées par l’action d’avertissement, choisissez **afficher les règles qui peuvent générer des avertissements d’analyse du code**.  
   
-- Pour basculer entre l’affichage et masquage des règles qui sont affectées la **aucun** action, choisissez **afficher les règles qui ne sont pas activés**.  
+- Pour basculer entre l’affichage et le masquage des règles affectées par l’action **aucun** , choisissez **afficher les règles qui ne sont pas activées**.  
   
-- Pour ajouter ou supprimer des ensembles de règles de valeur par défaut à l’ensemble de règles actuel de Microsoft, choisissez **ajouter ou supprimer des ensembles de règles enfants**.
+- Pour ajouter ou supprimer des ensembles de règles par défaut Microsoft pour l’ensemble de règles actuel, choisissez **Ajouter ou supprimer des ensembles de règles enfants**.

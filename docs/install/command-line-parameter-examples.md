@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 095fbcf35337ff2a619b6f3dcc6d5c28773ae975
-ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
+ms.openlocfilehash: 8fc43cef8526b2ca79bb0b88a1d56ef4f4a2a65a
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76542644"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77275254"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-installation"></a>Exemples de paramètres de ligne de commande pour l’installation de Visual Studio
 
@@ -51,7 +51,7 @@ Pour obtenir la liste des charges de travail et des composants que vous pouvez i
    ```
 
   > [!NOTE]
-  > Les deux commandes sont requises. La première commande met à jour le programme d’installation de Visual Studio. La seconde commande met à jour l’instance de Visual Studio. Pour éviter l’affichage d’une boîte de dialogue Contrôle de compte d’utilisateur, exécutez l’invite de commande en tant qu’administrateur.
+  > Les deux commandes sont recommandées. La première commande met à jour le programme d’installation de Visual Studio. La seconde commande met à jour l’instance de Visual Studio. Pour éviter l’affichage d’une boîte de dialogue Contrôle de compte d’utilisateur, exécutez l’invite de commande en tant qu’administrateur.
 
 * Installez une instance de bureau de Visual Studio en mode silencieux, avec le module linguistique français, avec un retour uniquement une fois le produit installé.
 
@@ -75,7 +75,7 @@ Pour obtenir la liste des charges de travail et des composants que vous pouvez i
    $exitCode = Start-Process -FilePath vs_enterprise.exe -ArgumentList "--installPath", "C:\VS", "--passive", "--wait" -Wait -PassThru
    ```
 
-   ou
+   or
 
    ```powershell
     $startInfo = New-Object System.Diagnostics.ProcessStartInfo

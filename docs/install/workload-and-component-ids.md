@@ -6,7 +6,7 @@ keywords: ''
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 09/23/2019
+ms.date: 12/03/2019
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -16,12 +16,12 @@ ms.custom: seodec18
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 05a5a1cb55356dbdd0d0d0127793abbd2e73e109
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: f53d43b841719b974d0b943eacb08ab738a5b506
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114155"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77278667"
 ---
 # <a name="visual-studio-workload-and-component-ids"></a>ID de charge de travail et de composant Visual Studio
 
@@ -31,7 +31,7 @@ Cliquez sur les noms d’éditions dans le tableau suivant pour voir les ID de c
 
 **Mis à jour pour la [version 15.9](/visualstudio/releasenotes/vs2017-relnotes/)**
 
-| **Édition** | **ID** | **Description** |
+| **Édition** | **Identifiant** | **Description** |
 | ----------- | ------ | --------------- |
 | [Visual&nbsp;Studio Enterprise&nbsp;2017](workload-component-id-vs-enterprise.md?vs-2017) | Microsoft.VisualStudio.Product.Enterprise | Solution Microsoft DevOps axée sur la productivité et la coordination des équipes de toutes tailles |
 | [Visual&nbsp;Studio Professional&nbsp;2017](workload-component-id-vs-professional.md?vs-2017) | Microsoft.VisualStudio.Product.Professional | Outils et services de développement professionnels pour les équipes de petite taille |
@@ -50,9 +50,9 @@ Pour plus d’informations sur l’utilisation de ces listes, consultez les page
 
 ::: moniker range="vs-2019"
 
-**Mise à jour pour la [version 16,3](/visualstudio/releases/2019/release-notes/)**
+**Mise à jour pour la [version 16,4](/visualstudio/releases/2019/release-notes/)**
 
-| **Édition** | **ID** | **Description** |
+| **Édition** | **Identifiant** | **Description** |
 | ----------- | ------ | --------------- |
 | [Visual&nbsp;Studio Enterprise&nbsp;2019](workload-component-id-vs-enterprise.md?vs-2019) | Microsoft.VisualStudio.Product.Enterprise | Solution Microsoft DevOps axée sur la productivité et la coordination des équipes de toutes tailles |
 | [Visual&nbsp;Studio Professional&nbsp;2019](workload-component-id-vs-professional.md?vs-2019) | Microsoft.VisualStudio.Product.Professional | Outils et services de développement professionnels pour les équipes de petite taille |
