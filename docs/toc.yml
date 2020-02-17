@@ -362,6 +362,8 @@
                   href: ide/reference/convert-local-function-method.md
                 - name: Convertir une boucle foreach en syntaxe LINQ
                   href: ide/reference/convert-foreach-linq.md
+                - name: Convertir l’instruction if en instruction switch ou en expression switch
+                  href: ide/reference/convert-if-statement-to-switch-statement-or-switch-expression.md
                 - name: Convertir une requête LINQ en instruction foreach
                   href: ide/reference/convert-linq-to-foreach.md
                 - name: Convertir l’instruction switch en expression switch
@@ -398,6 +400,8 @@
                   href: ide/reference/remove-unreachable-code.md
                 - name: Renommer
                   href: ide/reference/rename.md
+                - name: Simplifier l’interpolation de chaîne
+                  href: ide/reference/simplify-string-interpolation.md
                 - name: Trier les instructions Using
                   href: ide/reference/sort-usings.md
                 - name: "Fractionner ou fusionner des instructions\_if"
