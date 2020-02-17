@@ -6,15 +6,15 @@ ms.date: 11/15/2016
 ms.topic: conceptual
 ms.assetid: a2098fd9-8334-4e95-9b8d-bc3da689d9e3
 caps.latest.revision: 11
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: ccc44b77c4524e7d707ce3fe407d204d729017ff
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.openlocfilehash: 946b46bfb5101154832e10b61cd861b0c104dc14
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291236"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77275302"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Utilisation des vérificateurs C++ Core Guidelines
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,7 +83,7 @@ int main()
   
 - C26485 est une limite de règle. 3 : aucune atténuation de tableau à pointeur.  
   
-- C26481 est une limite de règle. 1 : n’utilisez pas l’arithmétique de pointeur. Utilisez plutôt `span` .  
+- C26481 est une limite de règle. 1 : n’utilisez pas l’arithmétique de pointeur. Utilisez `span` à la place.  
   
   Si les C++ ensembles de règles d’analyse du code de contrôle de base sont installés et activés lorsque vous compilez ce code, les deux premiers avertissements sont générés, mais le troisième est supprimé. Voici la sortie de la génération de l’exemple de code :  
   

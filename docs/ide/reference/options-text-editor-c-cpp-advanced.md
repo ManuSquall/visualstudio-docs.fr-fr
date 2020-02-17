@@ -9,17 +9,17 @@ f1_keywords:
 helpviewer_keywords:
 - Text Editor Options dialog box, advanced
 ms.assetid: 67c82ae5-fddd-49df-baec-8e7498b156f3
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cbdbadd93eec07c43aba99e40072cb6173e0e83d
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 2e7e031836c9762d9666a5624e78ecc7c8cc7dd9
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72747828"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77275202"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Options, Éditeur de texte, C/C++, Avancé
 
@@ -28,7 +28,7 @@ En modifiant ces options, vous pouvez changer le comportement lié à IntelliSen
 Pour accéder à cette page, dans le volet gauche de la boîte de dialogue **Options**, développez **Éditeur de texte**, **C/C++** , puis choisissez **Avancé**.
 
 > [!NOTE]
-> Il est possible que pour certains des éléments de l'interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L’édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Consultez [Personnaliser l’IDE Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
+> Il est possible que pour certains des éléments de l’interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L’édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Consultez [Personnaliser l’IDE Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="browsingnavigation"></a>Navigation de fichiers/répertoires
 
@@ -182,7 +182,7 @@ Ajoute une ligne quand vous appuyez sur la touche Entrée à la fin du mot compl
 
 Remplace « . » par « -> » le cas échéant pour la liste des membres.
 
-## <a name="references"></a>Références
+## <a name="references"></a>References
 
 **Désactiver la résolution**
 
@@ -208,4 +208,4 @@ Si cette option est activée, vous pouvez entourer le texte sélectionné de par
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Définition d’options d’éditeur spécifiques du langage](../../ide/reference/setting-language-specific-editor-options.md)
+- [Définition d’options de l’éditeur spécifiques à un langage](../../ide/reference/setting-language-specific-editor-options.md)

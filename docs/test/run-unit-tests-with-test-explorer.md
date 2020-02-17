@@ -10,32 +10,32 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2a0b9a69d035db5b1d2d638d97995613b50def0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 1b183c1939ed48351bc15dacff31c85af46286ad
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585442"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77278517"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Exécuter des tests unitaires avec l'Explorateur de tests
 
 Utilisez l’Explorateur de tests pour exécuter des tests unitaires à partir de projets de tests unitaires Visual Studio ou tiers. Vous pouvez également utiliser l’Explorateur de tests pour regrouper les tests par catégories, filtrer la liste de tests, et créer, enregistrer et exécuter des playlists de tests. Vous pouvez déboguer des tests et analyser les performances des tests et la couverture du code.
 
-Visual Studio inclut les infrastructures de tests unitaires Microsoft pour le code managé comme pour le code natif. Toutefois, l'Explorateur de tests peut également exécuter toute infrastructure de tests unitaires qui a implémenté un adaptateur pour l'Explorateur de tests. Pour plus d’informations sur l’installation des frameworks de tests unitaires tiers, consultez [Installer des frameworks de tests unitaires tiers](../test/install-third-party-unit-test-frameworks.md).
+Visual Studio inclut les infrastructures de tests unitaires Microsoft pour le code managé comme pour le code natif. Toutefois, l'Explorateur de tests peut également exécuter tout framework de tests unitaires qui a implémenté un adaptateur pour l'Explorateur de tests. Pour plus d’informations sur l’installation des frameworks de tests unitaires tiers, consultez [Installer des frameworks de tests unitaires tiers](../test/install-third-party-unit-test-frameworks.md).
 
-**L’Explorateur de tests** peut exécuter des tests à partir de plusieurs projets de tests dans une solution et à partir de classes de test qui font partie des projets de code en production. Les projets de test peuvent utiliser différentes infrastructures de tests unitaires. Quand le code testé est écrit pour .NET, le projet de test peut être écrit dans n’importe quel langage qui cible également .NET, quel que soit le langage du code cible. Les projets de code C/C++ natifs doivent être testés à l'aide d'une infrastructure de tests unitaires C++. Pour plus d’informations, consultez [Écrire des tests unitaires pour C/C++](writing-unit-tests-for-c-cpp.md).
+**L’Explorateur de tests** peut exécuter des tests à partir de plusieurs projets de tests dans une solution et à partir de classes de test qui font partie des projets de code en production. Les projets de test peuvent utiliser différentes infrastructures de tests unitaires. Quand le code testé est écrit pour .NET, le projet de test peut être écrit dans n’importe quel langage qui cible également .NET, quel que soit le langage du code cible. Les projets de code C/C++ natifs doivent être testés à l'aide d'un framework de tests unitaires C++. Pour plus d’informations, consultez [Écrire des tests unitaires pour C/C++](writing-unit-tests-for-c-cpp.md).
 
-## <a name="run-tests-in-test-explorer"></a>Exécuter des tests dans l'Explorateur de tests
+## <a name="run-tests-in-test-explorer"></a>Exécuter des tests dans l’explorateur de tests
 
 
-Quand vous générez le projet de test, les tests s'affichent dans l'Explorateur de tests. Si l’explorateur de tests n’est pas visible, sélectionnez **Test** dans le menu Visual Studio et choisissez **Fenêtres**, puis **Explorateur de tests**.
+Quand vous générez le projet de test, les tests s’affichent dans l’explorateur de tests. Si l’explorateur de tests n’est pas visible, sélectionnez **Test** dans le menu Visual Studio et choisissez **Fenêtres**, puis **Explorateur de tests**.
 
 
 ::: moniker range="vs-2017"
 ![Explorateur de tests unitaires](../test/media/ute_failedpassednotrunsummary.png)
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-![Explorateur de test](../test/media/vs-2019/test-explorer-16-2.png)
+![Explorateur de tests](../test/media/vs-2019/test-explorer-16-2.png)
 ::: moniker-end
 
 ::: moniker range="vs-2017"
@@ -57,7 +57,7 @@ Vous pouvez effectuer la majeure partie du travail de recherche, d’organisatio
 ### <a name="run-tests"></a>Exécuter les tests
 
 ::: moniker range="vs-2017"
-Vous pouvez exécuter tous les tests de la solution, tous les tests d'un groupe ou un ensemble de tests que vous sélectionnez. Effectuez l'une des actions suivantes :
+Vous pouvez exécuter tous les tests dans la solution, tous les tests dans un groupe, ou un ensemble de tests que vous sélectionnez. Effectuez l’une des actions suivantes :
 
 - Pour exécuter tous les tests dans une solution, choisissez **Exécuter tout**.
 
@@ -70,7 +70,7 @@ Vous pouvez exécuter tous les tests de la solution, tous les tests d'un groupe 
 La **barre Réussite/Échec** en haut de la fenêtre **Explorateur de tests** est animée pendant l’exécution des tests. À la fin de la série de tests, la **barre Réussite/Échec** devient verte si tous les tests ont réussi ou rouge si un test a échoué.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-Vous pouvez exécuter tous les tests de la solution, tous les tests d'un groupe ou un ensemble de tests que vous sélectionnez. Effectuez l'une des actions suivantes :
+Vous pouvez exécuter tous les tests dans la solution, tous les tests dans un groupe, ou un ensemble de tests que vous sélectionnez. Effectuez l’une des actions suivantes :
 
 - Pour exécuter tous les tests d’une solution, choisissez l’icône **Exécuter tout**.
 
@@ -83,7 +83,7 @@ Vous pouvez exécuter tous les tests de la solution, tous les tests d'un groupe 
 
 ### <a name="run-tests-after-every-build"></a>Exécuter des tests après chaque génération
 ::: moniker range="vs-2017"
-|Button|Description|
+|Bouton|Description|
 |-|-|
 |![Exécuter après les builds](../test/media/ute_runafterbuild_btn.png)|Pour exécuter vos tests unitaires après chaque génération locale, choisissez **Test** dans le menu standard, puis **Exécuter les tests après la génération** dans la barre d’outils de **l’Explorateur de tests**.|
 
@@ -111,17 +111,17 @@ Pour afficher les détails d'un test individuel, sélectionnez le test.
 
 Le volet d'informations de test affiche les informations suivantes :
 
-- Le nom du fichier source et le numéro de ligne de la méthode de test
+- Nom du fichier source et numéro de ligne de la méthode de test.
 
-- L'état du test
+- Statut du test.
 
-- La durée nécessaire à l'exécution de la méthode de test
+- Temps d'exécution de la méthode.
 
-Si le test échoue, le volet d'informations affiche également ce qui suit :
+Si le test échoue, le volet d'informations affiche également :
 
-- Le message retourné par l'infrastructure de tests unitaires pour le test
+- Le message retourné par l'infrastructure de tests unitaires pour le test.
 
-- La trace de la pile au moment où le test a échoué.
+- La trace de la pile au moment de l'échec du test.
 
 ### <a name="view-the-source-code-of-a-test-method"></a>Afficher le code source d'une méthode de test
 
@@ -156,16 +156,16 @@ Vous pouvez définir vos propres niveaux de hiérarchie et effectuer un regroupe
 |**Durée**|Regroupe les tests selon la durée d'exécution : **Rapide**, **Moyenne**et **Lente**.|
 |**Résultat**|Regroupe les tests selon les résultats de l'exécution : **Échecs de tests**, **Tests ignorés**, **Tests réussis**.|
 |**Caractéristiques**|Regroupe les tests selon les paires catégorie/valeur que vous définissez. La syntaxe permettant de spécifier les catégories et les valeurs des caractéristiques est définie par l'infrastructure de tests unitaires.|
-|**Project**|Regroupe les tests selon le nom des projets.|
+|**Projet**|Regroupe les tests selon le nom des projets.|
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 |Groupe|Description|
 |-|-----------------|
 |**Durée**|Regroupe les tests par heure d’exécution : **rapide**, **moyenne**et **lente**.|
-|**État**|Groupes de tests par résultats d’exécution : **échecs de tests**, **tests ignorés**, **tests réussis**, **non exécutés**|
+|**State**|Groupes de tests par résultats d’exécution : **échecs de tests**, **tests ignorés**, **tests réussis**, **non exécutés**|
 |**Framework cible** | Regroupe les tests en fonction du framework ciblé par leurs projets |
-|**Namespace**|Regroupe les tests en fonction de l’espace de noms conteneur.|
-|**Project**|Regroupe les tests en fonction du projet conteneur.|
+|**Espace de noms**|Regroupe les tests en fonction de l’espace de noms conteneur.|
+|**Projet**|Regroupe les tests en fonction du projet conteneur.|
 |**Classe**|Regroupe les tests en fonction de la classe conteneur.|
 ::: moniker-end
 
@@ -173,14 +173,14 @@ Vous pouvez définir vos propres niveaux de hiérarchie et effectuer un regroupe
 
 Une caractéristique est habituellement une paire nom/valeur de catégorie, mais elle peut également être une catégorie unique. Des caractéristiques peuvent être assignées aux méthodes identifiées comme une méthode de test par l'infrastructure de tests unitaires. Une infrastructure de tests unitaires peut définir des catégories de caractéristiques. Vous pouvez ajouter des valeurs aux catégories de caractéristiques pour définir vos propres paires nom/valeur de catégorie. La syntaxe permettant de spécifier les catégories et les valeurs des caractéristiques est définie par l'infrastructure de tests unitaires.
 
-**Caractéristiques dans l'infrastructure de tests unitaires Microsoft pour le code managé**
+**Caractéristiques dans le framework de tests unitaires Microsoft pour le code managé**
 
-Dans l'infrastructure de tests unitaires Microsoft pour les applications managées, vous définissez une paire nom/valeur de caractéristique dans un attribut  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> . Le framework de tests contient également les caractéristiques prédéfinies suivantes :
+Dans l'infrastructure de tests unitaires Microsoft pour les applications managées, vous définissez une paire nom/valeur de caractéristique dans un attribut  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> . L'infrastructure de tests contient également les caractéristiques prédéfinies suivantes :
 
 |Caractéristique|Description|
 |-|-----------------|
-|<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|La catégorie Owner est définie par le framework de tests unitaires et vous demande de fournir une valeur de chaîne du propriétaire.|
-|<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|La catégorie Priority est définie par le framework de tests unitaires et vous demande de fournir une valeur entière de la priorité.|
+|<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|La catégorie Owner est définie par l'infrastructure de tests unitaires et nécessite que vous fournissiez une valeur de chaîne du propriétaire.|
+|<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|La catégorie Priority est définie par l'infrastructure de tests unitaires et nécessite que vous fournissiez une valeur entière de la priorité.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute>|L'attribut TestCategory vous permet de fournir une catégorie sans valeur.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute>|L'attribut TestProperty vous permet de définir la paire catégorie/valeur de caractéristique.|
 
@@ -269,8 +269,8 @@ Pour filtrer selon un autre critère :
 |Qualificateur|Description|
 |-|-----------------|
 |**Caractéristique**|Recherche la catégorie et la valeur de caractéristique pour les correspondances. La syntaxe permettant de spécifier les catégories et les valeurs des caractéristiques est définie par l'infrastructure de tests unitaires.|
-|**Project**|Recherche les noms de projet de test pour les correspondances.|
-|**Message d'erreur**|Recherche les messages d'erreur définis par l'utilisateur retournés par des assertions ayant échoué pour les correspondances.|
+|**Projet**|Recherche les noms de projet de test pour les correspondances.|
+|**Message d’erreur**|Recherche les messages d'erreur définis par l'utilisateur retournés par des assertions ayant échoué pour les correspondances.|
 |**Chemin d'accès au fichier**|Recherche le nom de fichier qualifié complet des fichiers sources de test pour les correspondances.|
 |**Nom qualifié complet**|Recherche des correspondances dans le nom complet des espaces de noms, des classes et des méthodes de test.|
 |**Sortie**|Recherche les messages d'erreur définis par l'utilisateur qui sont écrits dans la sortie standard (stdout) ou une erreur standard (stderr). La syntaxe permettant de spécifier les messages de sortie est définie par l'infrastructure de tests unitaires.|
@@ -279,12 +279,12 @@ Pour filtrer selon un autre critère :
 ::: moniker range=">=vs-2019"
 |Qualificateur|Description|
 |-|-----------------|
-|**État**|Recherche les noms de catégorie de l'Explorateur de tests pour les correspondances : **Échecs de tests**, **Tests ignorés**, **Tests réussis**.|
+|**State**|Recherche les noms de catégorie de l'Explorateur de tests pour les correspondances : **Échecs de tests**, **Tests ignorés**, **Tests réussis**.|
 |**Caractéristiques**|Recherche la catégorie et la valeur de caractéristique pour les correspondances. La syntaxe permettant de spécifier les catégories et les valeurs des caractéristiques est définie par l'infrastructure de tests unitaires.|
 |**Nom qualifié complet**|Recherche des correspondances dans le nom complet des espaces de noms, des classes et des méthodes de test.|
-|**Project**|Recherche les noms de projet de test pour les correspondances.|
+|**Projet**|Recherche les noms de projet de test pour les correspondances.|
 |**Framework cible**|Recherche les noms de catégorie de l'Explorateur de tests pour les correspondances : **Échecs de tests**, **Tests ignorés**, **Tests réussis**.|
-|**Namespace**|Recherche des correspondances dans les espaces de noms de test.|
+|**Espace de noms**|Recherche des correspondances dans les espaces de noms de test.|
 |**Classe**|Recherche des correspondances dans les noms des classes de test.|
 ::: moniker-end
 
@@ -298,12 +298,12 @@ Par exemple, `FullName:"MyClass" - FullName:"PerfTest"` retourne tous les tests 
 
 ## <a name="debug-and-analyze-unit-tests"></a>Déboguer et analyser des tests unitaires
 
-Vous pouvez utiliser l'Explorateur de tests pour démarrer une session de débogage pour vos tests. L’exécution pas à pas de votre code avec le débogueur Visual Studio vous conduit de manière transparente à des allers et retours entre les tests unitaires et le projet testé. Pour démarrer le débogage :
+Vous pouvez utiliser l'Explorateur de tests pour démarrer une session de débogage de vos tests. L'exécution pas à pas de votre code avec le débogueur Visual Studio vous conduit de manière transparente à des allers et retours entre les tests unitaires et le projet testé. Pour démarrer le débogage :
 
-1. Dans l'éditeur Visual Studio, définissez un point d'arrêt dans une ou plusieurs méthodes de test que vous souhaitez déboguer.
+1. Dans l’éditeur Visual Studio, définissez un point d’arrêt dans une ou plusieurs méthodes de test que vous souhaitez déboguer.
 
     > [!NOTE]
-    > Les méthodes de test pouvant s'exécuter dans n'importe quel ordre, définissez des points d'arrêt dans toutes les méthodes de test que vous souhaitez déboguer.
+    > Comme les méthodes de test peuvent s'exécuter dans n'importe quel ordre, définissez les points d'arrêt dans toutes les méthodes de test que vous souhaitez déboguer.
 
 2. Dans l’Explorateur de tests, sélectionnez les méthodes de test, puis choisissez **Déboguer les tests sélectionnés** dans le menu contextuel (clic droit).
 
@@ -311,11 +311,11 @@ Vous pouvez utiliser l'Explorateur de tests pour démarrer une session de débog
 
 ### <a name="diagnose-test-method-performance-issues"></a>Diagnostiquer les problèmes de performances de méthode de test
 
-Pour diagnostiquer la lenteur d’une méthode de test, sélectionnez-la dans l’Explorateur de tests, puis choisissez **Profiler le test sélectionné** dans le menu contextuel. Consultez [Explorateur de performances](../profiling/performance-explorer.md).
+Pour diagnostiquer la lenteur d’une méthode de test, sélectionnez-la dans l’Explorateur de tests, puis choisissez **Profiler le test sélectionné** dans le menu contextuel. Consultez [rapport de profilage par instrumentation](../profiling/understanding-instrumentation-data-values.md?view=vs-2017).
 
 ### <a name="analyze-unit-test-code-coverage"></a>Analyser la couverture du code de test unitaire
 
-Vous pouvez déterminer la quantité de code produit qui est réellement testée par vos tests unitaires à l'aide de l'outil de couverture de code Visual Studio disponible dans l’édition Visual Studio Enterprise. Vous pouvez exécuter la couverture de code sur les tests sélectionnés ou sur tous les tests d'une solution.
+Vous pouvez déterminer la quantité de code produit qui est réellement testée par vos tests unitaires à l'aide de l'outil de couverture de code Visual Studio disponible dans l’édition Visual Studio Enterprise. Vous pouvez exécuter la couverture de code sur les tests sélectionnés ou sur tous les tests d’une solution.
 
 Pour exécuter la couverture du code pour les méthodes de test dans une solution :
 

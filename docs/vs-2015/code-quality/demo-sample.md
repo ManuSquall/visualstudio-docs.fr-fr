@@ -9,28 +9,28 @@ helpviewer_keywords:
 - code analysis, samples
 ms.assetid: 09e1b9f7-5916-4ed6-a001-5c2d7e710682
 caps.latest.revision: 23
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 9e85944e93b952b8239015761e8fb364cb265291
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3a49859a8cd1c4ffb01f93bf2539fc16c42f8c4c
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68201435"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77277884"
 ---
 # <a name="demo-sample"></a>Exemple de démonstration
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Les procédures suivantes montrent comment créer l’exemple pour [Procédure pas à pas : Analyse du Code C/C++ pour rechercher les erreurs](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md). Les procédures créent :  
+Les procédures suivantes vous montrent comment créer l’exemple pour la [procédure pas à pas :C++ analyse du code C/code pour les défauts](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md). Les procédures créent :  
   
-- Un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solution nommée CppDemo.  
+- Une solution [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nommée CppDemo.  
   
 - Un projet de bibliothèque statique nommé CodeDefects.  
   
 - Un projet de bibliothèque statique nommé Annotations.  
   
-  Les procédures fournissent également le code pour les fichiers d’en-tête et .cpp pour les bibliothèques statiques.  
+  Les procédures fournissent également le code pour les fichiers d’en-tête et. cpp pour les bibliothèques statiques.  
   
 ### <a name="create-the-cppdemo-solution-and-the-codedefects-project"></a>Créer la solution CppDemo et le projet CodeDefects  
   
@@ -56,7 +56,7 @@ Les procédures suivantes montrent comment créer l’exemple pour [Procédure p
   
 3. Dans la liste **Général**, sélectionnez le texte dans la colonne en regard d’**Extension cible** et tapez **.lib**.  
   
-4. Dans **Paramètres par défaut du projet** , cliquez sur la colonne en regard de **Type de configuration**, puis cliquez sur **Bibliothèque statique (.lib)** .  
+4. Dans **Paramètres par défaut du projet** , cliquez sur la colonne à côté de **Type de configuration**, puis cliquez sur **Bibliothèque statique (.lib)** .  
   
 ### <a name="add-the-header-and-source-file-to-the-codedefects-project"></a>Ajouter le fichier source et d’en-tête au projet CodeDefects  
   
@@ -66,7 +66,7 @@ Les procédures suivantes montrent comment créer l’exemple pour [Procédure p
   
 3. Dans le champ **Nom**, tapez **Bug.cpp**, puis cliquez sur **Ajouter**.  
   
-4. Copiez le code suivant et collez-le dans le **Bug.cpp** de fichiers dans le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] éditeur.  
+4. Copiez le code suivant et collez-le dans le fichier **bug. cpp** dans l’éditeur de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
     ```  
     #include <windows.h>  
@@ -88,13 +88,13 @@ Les procédures suivantes montrent comment créer l’exemple pour [Procédure p
     const int ACCOUNT_DOMAIN_LEN = 128;  
     ```  
   
-5. Dans l’Explorateur de solutions, cliquez sur **Fichiers sources**, pointez sur **Nouveau** et cliquez sur **Nouvel élément**.  
+5. Dans l’Explorateur de solutions, cliquez sur **Fichiers sources**, pointez sur **Nouveau**, puis cliquez sur **Nouvel élément**.  
   
 6. Dans la boîte de dialogue **Ajouter un nouvel élément**, cliquez sur **Fichier C++ (.cpp)** .  
   
 7. Dans le champ **Nom**, tapez **Bug.cpp**, puis cliquez sur **Ajouter**.  
   
-8. Copiez le code suivant et collez-le dans le fichier Bug.h dans le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] éditeur.  
+8. Copiez le code suivant et collez-le dans le fichier bug. h dans l’éditeur de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
     ```  
     #include <stdlib.h>  
@@ -166,7 +166,7 @@ Les procédures suivantes montrent comment créer l’exemple pour [Procédure p
   
 4. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur **Annotations**, puis cliquez sur **Propriétés**.  
   
-5. Développez **Propriétés de configuration** et cliquez sur **Général**.  
+5. Développez **Propriétés de configuration**, puis cliquez sur **Général**.  
   
 6. Dans la liste **Général**, sélectionnez le texte dans la colonne en regard d’**Extension cible** et tapez **.lib**.  
   
@@ -180,7 +180,7 @@ Les procédures suivantes montrent comment créer l’exemple pour [Procédure p
   
 3. Dans la zone **Nom**, tapez **annotations.h**, puis cliquez sur **Ajouter**.  
   
-4. Copiez le code suivant et collez-le dans le **annotations.h** de fichiers dans le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] éditeur.  
+4. Copiez le code suivant et collez-le dans le fichier **Annotations. h** dans l’éditeur de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
     ```  
     #include <CodeAnalysis/SourceAnnotations.h>  
@@ -197,13 +197,13 @@ Les procédures suivantes montrent comment créer l’exemple pour [Procédure p
   
     ```  
   
-5. Dans l’Explorateur de solutions, cliquez sur **Fichiers sources**, pointez sur **Nouveau** et cliquez sur **Nouvel élément**.  
+5. Dans l’Explorateur de solutions, cliquez sur **Fichiers sources**, pointez sur **Nouveau**, puis cliquez sur **Nouvel élément**.  
   
 6. Dans la boîte de dialogue **Ajouter un nouvel élément**, cliquez sur **Code** et sur **Fichier C++ (.cpp)** .  
   
 7. Dans la zone **Nom**, tapez **annotations.cpp**, puis cliquez sur **Ajouter**.  
   
-8. Copiez le code suivant et collez-le dans le **annotations.cpp** de fichiers dans le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] éditeur.  
+8. Copiez le code suivant et collez-le dans le fichier **Annotations. cpp** dans l’éditeur de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
     ```  
     #include <CodeAnalysis/SourceAnnotations.h>  

@@ -15,19 +15,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4d3afc8ff48355c74544edf123689495bfde1302
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 27024f3b28b97a1a5d0befc3d70dbf8144fb9e24
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189123"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77277649"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Procédure pas à pas : profilage d’une application SharePoint
   Cette procédure pas à pas montre comment utiliser les outils de profilage dans Visual Studio pour optimiser les performances d'une application SharePoint. L'application d'exemple est un récepteur d'événements de fonctionnalité SharePoint qui contient une boucle inactive qui dégrade les performances du récepteur d'événements de fonctionnalité. Le profileur Visual Studio vous permet de localiser et d’éliminer la partie la plus coûteuse (la plus lente) du projet, également appelée *chemin réactif*.
 
  Cette procédure pas à pas décrit les tâches suivantes :
 
-- [Addg un récepteur d’événements de fonctionnalité et](#add-a-feature-and-feature-event-receiver)de fonctionnalité.
+- [Ajoutez une fonctionnalité et un récepteur d’événements de fonctionnalité](#add-a-feature-and-feature-event-receiver).
 
 - [Configurez et déployez l’application SharePoint](#configure-and-deploy-the-sharepoint-application).
 
@@ -37,19 +37,19 @@ ms.locfileid: "73189123"
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Configuration requise
- Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :
+## <a name="prerequisites"></a>Conditions préalables requises
+ Vous devez disposer des éléments suivants pour exécuter cette procédure pas à pas :
 
 - Éditions prises en charge de Microsoft Windows et SharePoint.
 
-- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].,
+- [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)].
 
 ## <a name="create-a-sharepoint-project"></a>Créer un projet SharePoint
  Commencez par créer un projet SharePoint.
 
 ### <a name="to-create-a-sharepoint-project"></a>Pour créer un projet SharePoint
 
-1. Dans la barre de menus, choisissez **fichier**  > **nouveau**  > **projet** pour afficher la boîte de dialogue **nouveau projet** .
+1. Dans la barre de menus, choisissez **fichier** > **nouveau** > **projet** pour afficher la boîte de dialogue **nouveau projet** .
 
 2. Développez le nœud **SharePoint** sous **Visual C#**  ou **Visual Basic**, puis choisissez le nœud **2010** .
 
@@ -273,7 +273,6 @@ ms.locfileid: "73189123"
      Comme l'appel à la boucle inactive a été supprimé, la fonctionnalité doit s'activer beaucoup plus rapidement. Le rapport de profilage d'échantillon doit le refléter.
 
 ## <a name="see-also"></a>Voir aussi
-- [Explorateur de performances](../profiling/performance-explorer.md)
 - [Vue d’ensemble de la session de performance](../profiling/performance-session-overview.md)
 - [Guide du débutant en profilage des performances](../profiling/beginners-guide-to-performance-profiling.md)
 - [Rechercher des goulots d’étranglement d’application avec le profileur Visual Studio](https://msdn.microsoft.com/magazine/cc337887.aspx)

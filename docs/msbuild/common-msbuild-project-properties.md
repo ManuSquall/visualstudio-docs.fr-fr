@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8f99bc18f4fdc834d0c5fdc7818d945d116251e
-ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
+ms.openlocfilehash: dd3ccd23775c93fb7222960c4db3ae5d35eb349f
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "77027627"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77275491"
 ---
 # <a name="common-msbuild-project-properties"></a>Propriétés communes des projets MSBuild
 Le tableau ci-dessous répertorie les propriétés fréquemment utilisées qui sont définies dans les fichiers projet Visual Studio ou incluses dans les fichiers *.targets* fournis par MSBuild.
@@ -43,8 +43,8 @@ Le tableau ci-dessous répertorie les propriétés fréquemment utilisées qui s
 | AssemblySearchPaths | Liste d'emplacements dans lesquels il convient de rechercher au cours de la résolution de l'assembly de référence au moment de la génération. L'ordre dans lequel les chemins d'accès apparaissent dans cette liste est significatif, car les chemins répertoriés antérieurement ont priorité sur les entrées ultérieures. |
 | AssemblyName | Nom de l'assembly de sortie définitif après génération du projet. |
 | BaseAddress | Spécifie l'adresse de base de l'assembly de sortie principal. Cette propriété est équivalente au commutateur `/baseaddress` du compilateur. |
-| BaseOutputPath | Spécifie le chemin d'accès de base du fichier de sortie. S'il est défini, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] utilise `OutputPath = $(BaseOutputPath)\$(Configuration)\`. Exemple de syntaxe : `<BaseOutputPath>c:\xyz\bin\</BaseOutputPath>` |
 | BaseIntermediateOutputPath | Dossier de niveau supérieur dans lequel tous les dossiers de sortie intermédiaires spécifiques à la configuration sont créés. La valeur par défaut est `obj\`. Le code suivant est un exemple : `<BaseIntermediateOutputPath>c:\xyz\obj\</BaseIntermediateOutputPath>` |
+| BaseOutputPath | Spécifie le chemin d'accès de base du fichier de sortie. S'il est défini, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] utilise `OutputPath = $(BaseOutputPath)\$(Configuration)\`. Exemple de syntaxe : `<BaseOutputPath>c:\xyz\bin\</BaseOutputPath>` |
 | BuildInParallel | Valeur booléenne qui indique si les références de projet sont générées ou nettoyées en parallèle lorsque [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] est utilisé en multiprocesseur. La valeur par défaut est `true`, ce qui signifie que les projets seront générés en parallèle si le système possède plusieurs cœurs ou processeurs. |
 | BuildProjectReferences | Valeur booléenne qui indique si les références de projet sont générées par [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Affectez automatiquement la valeur `false` si vous générez votre projet dans l’environnement de développement intégré (IDE) [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ou `true` dans le cas contraire. `-p:BuildProjectReferences=false` peut être spécifié sur la ligne de commande pour éviter de vérifier si les projets référencés sont à jour. |
 | CleanFile | Nom du fichier qui sera utilisé comme « nettoyeur de cache ». Ce fichier contient une liste de fichiers générés à supprimer pendant l'opération de nettoyage. Le fichier est placé dans le chemin de sortie intermédiaire par le processus de génération.<br /><br /> Cette propriété spécifie uniquement des noms de fichier qui n'ont pas d'informations de chemin d'accès. |
@@ -72,8 +72,8 @@ Le tableau ci-dessous répertorie les propriétés fréquemment utilisées qui s
 | IntermediateOutputPath | Chemin de sortie intermédiaire complet dérivé de `BaseIntermediateOutputPath`, si aucun chemin d'accès n'est spécifié. Par exemple, *\obj\debug\\* . |
 | KeyContainerName | Nom du conteneur de clé de nom fort. |
 | KeyOriginatorFile | Nom du fichier de clé de nom fort. |
-| MSBuildProjectExtensionsPath | Spécifie le chemin dans lequel se trouvent les extensions de projet. Sa valeur par défaut est la même que `BaseIntermediateOutputPath`. |
 | ModuleAssemblyName | Nom de l'assembly dans lequel le module compilé doit être incorporé. Cette propriété est équivalente au commutateur `/moduleassemblyname` du compilateur. |
+| MSBuildProjectExtensionsPath | Spécifie le chemin dans lequel se trouvent les extensions de projet. Sa valeur par défaut est la même que `BaseIntermediateOutputPath`. |
 | NoLogo | Valeur booléenne qui indique si vous souhaitez que le logo du compilateur soit désactivé. Cette propriété est équivalente au commutateur `/nologo` du compilateur. |
 | NoStdLib | Valeur booléenne qui indique s’il faut éviter de référencer la bibliothèque standard (*mscorlib.dll*). La valeur par défaut est `false`. |
 | NoVBRuntimeReference | Valeur booléenne qui indique si le runtime [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] (*Microsoft.VisualBasic.dll*) doit être inclus comme référence dans le projet. |
@@ -90,13 +90,10 @@ Le tableau ci-dessous répertorie les propriétés fréquemment utilisées qui s
 | PathMap | Valeur qui indique comment mapper les chemins d’accès physiques avec les noms de chemins d’accès sources générés en sortie par le compilateur. Cette propriété est équivalente au commutateur `/pathmap` du compilateur *csc.exe*. |
 | PdbFile | Nom du fichier *.pdb* que vous émettez. Cette propriété est équivalente au commutateur `/pdb` du compilateur *csc.exe*. |
 | Plateforme | Système d'exploitation pour lequel vous générez la cible. Les valeurs valides sont « Any CPU », « x86 » et « x64 ». |
-| ProduceReferenceAssembly | Valeur booléenne qui, lorsqu’elle est définie sur `true`, permet la production d’[assemblys de référence](/dotnet/standard/assembly/reference-assemblies) pour l’assembly actuel. `Deterministic` doit être `true` lors de l’utilisation de cette fonctionnalité. Cette propriété correspond au commutateur `/refout` des compilateurs *vbc.exe* et *csc.exe*. |
-| ProduceOnlyReferenceAssembly | Valeur booléenne qui spécifie que le compilateur doit seulement émettre un assembly de référence, plutôt que le code compilé. Non utilisable avec `ProduceReferenceAssembly`.  Cette propriété correspond au commutateur `/refonly` des compilateurs *vbc.exe* et *csc.exe*. |
-| RemoveIntegerChecks | Valeur booléenne indiquant s'il convient de désactiver les contrôles d'erreurs de dépassement sur les entiers. La valeur par défaut est `false`. Cette propriété est équivalente au commutateur `/removeintchecks` du compilateur *vbc.exe*. |
-| SGenUseProxyTypes | Valeur booléenne qui indique si les types de proxy doivent être générés par *SGen.exe*. Cela vaut uniquement quand *GenerateSerializationAssemblies* est défini sur on et pour le .NET Framework uniquement.<br /><br /> La cible SGen utilise cette propriété pour définir l'indicateur UseProxyTypes. Cette propriété a true comme valeur par défaut et aucune option d'interface utilisateur ne permet de modifier cela. Pour générer l’assembly de sérialisation pour les types non-webservice, ajoutez cette propriété au fichier projet et affectez-lui la valeur false avant d’importer *Microsoft.Common.Targets* ou *C#/VB.targets*. |
-| SGenToolPath | Chemin de l’outil facultatif qui indique où obtenir *SGen.exe* quand la version actuelle de *SGen.exe* est remplacée. Cette propriété est utilisée pour le .NET Framework uniquement.|
-| StartupObject | Spécifie la classe ou le module qui contient la méthode Main ou la procédure Sub Main. Cette propriété est équivalente au commutateur `/main` du compilateur. |
 | ProcessorArchitecture | Architecture de processeur utilisée lorsque les références d'assembly sont résolues. Les valeurs valides sont "msil", "x86", "amd64" et "ia64". |
+| ProduceOnlyReferenceAssembly | Valeur booléenne qui spécifie que le compilateur doit seulement émettre un assembly de référence, plutôt que le code compilé. Non utilisable avec `ProduceReferenceAssembly`.  Cette propriété correspond au commutateur `/refonly` des compilateurs *vbc.exe* et *csc.exe*. |
+| ProduceReferenceAssembly | Valeur booléenne qui, lorsqu’elle est définie sur `true`, permet la production d’[assemblys de référence](/dotnet/standard/assembly/reference-assemblies) pour l’assembly actuel. `Deterministic` doit être `true` lors de l’utilisation de cette fonctionnalité. Cette propriété correspond au commutateur `/refout` des compilateurs *vbc.exe* et *csc.exe*. |
+| RemoveIntegerChecks | Valeur booléenne indiquant s'il convient de désactiver les contrôles d'erreurs de dépassement sur les entiers. La valeur par défaut est `false`. Cette propriété est équivalente au commutateur `/removeintchecks` du compilateur *vbc.exe*. |
 | RootNamespace | Espace de noms racine à utiliser lorsque vous nommez une ressource incorporée. Cet espace de noms fait partie du nom du manifeste de ressources incorporées. |
 | Satellite_AlgorithmId | ID de l’algorithme de hachage *AL.exe* à utiliser quand les assemblys satellites sont créés. |
 | Satellite_BaseAddress | Adresse de base à utiliser lorsque les assemblys satellites spécifiques à la culture sont générés en utilisant la cible `CreateSatelliteAssemblies`. |
@@ -117,6 +114,9 @@ Le tableau ci-dessous répertorie les propriétés fréquemment utilisées qui s
 | Satellite_Version | Spécifie les informations de version concernant l'assembly satellite. |
 | Satellite_Win32Icon | Insère un fichier icône *.ico* dans l’assembly satellite. |
 | Satellite_Win32Resource | Insère une ressource Win32 (fichier *.res*) dans l’assembly satellite. |
+| SGenToolPath | Chemin de l’outil facultatif qui indique où obtenir *SGen.exe* quand la version actuelle de *SGen.exe* est remplacée. Cette propriété est utilisée pour le .NET Framework uniquement.|
+| SGenUseProxyTypes | Valeur booléenne qui indique si les types de proxy doivent être générés par *SGen.exe*. Cela vaut uniquement quand *GenerateSerializationAssemblies* est défini sur on et pour le .NET Framework uniquement.<br /><br /> La cible SGen utilise cette propriété pour définir l'indicateur UseProxyTypes. Cette propriété a true comme valeur par défaut et aucune option d'interface utilisateur ne permet de modifier cela. Pour générer l’assembly de sérialisation pour les types non-webservice, ajoutez cette propriété au fichier projet et affectez-lui la valeur false avant d’importer *Microsoft.Common.Targets* ou *C#/VB.targets*. |
+| StartupObject | Spécifie la classe ou le module qui contient la méthode Main ou la procédure Sub Main. Cette propriété est équivalente au commutateur `/main` du compilateur. |
 | SubsystemVersion | Spécifie la version minimale du sous-système utilisable par le fichier exécutable généré. Cette propriété est équivalente au commutateur `/subsystemversion` du compilateur. Pour plus d’informations sur la valeur par défaut de cette propriété, consultez [/subsystemversion (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/subsystemversion) ou [/subsystemversion (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/subsystemversion-compiler-option). |
 | TargetCompactFramework | Version du .NET Compact Framework requise pour exécuter l'application que vous générez. La spécification de ce paramètre vous permet de référencer certains assemblys Framework que vous ne pourriez peut-être pas référencer autrement. |
 | TargetFrameworkVersion | Version du .NET Framework nécessaire pour exécuter l’application que vous générez. La spécification de ce paramètre vous permet de référencer certains assemblys Framework que vous ne pourriez peut-être pas référencer autrement. |

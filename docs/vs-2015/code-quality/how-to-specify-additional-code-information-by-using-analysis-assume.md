@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Spécifier les informations de Code supplémentaire en utilisant __analysis_assume | Microsoft Docs'
+title: 'Comment : spécifier des informations de code supplémentaires à l’aide de __analysis_assume | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -10,29 +10,29 @@ helpviewer_keywords:
 - __analysis_assume
 ms.assetid: 51205d97-4084-4cf4-a5ed-3eeaf67deb1b
 caps.latest.revision: 12
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
-ms.openlocfilehash: dfae7d858dbb462ec6a93de9eb63b1b3b2a711ab
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: f2f18c9284ec96de7a7b8663aff485962d194282
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685819"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77277975"
 ---
-# <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>Procédure : Spécifier des informations de code supplémentaire en utilisant __analysis_assume
+# <a name="how-to-specify-additional-code-information-by-using-__analysis_assume"></a>Comment : spécifier des informations de code supplémentaire en utilisant __analysis_assume
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous pouvez fournir des indications à l’outil d’analyse de code pour le code C/C++ qui aideront le processus d’analyse et réduire les avertissements. Pour fournir des informations supplémentaires, utilisez la fonction suivante :  
+Vous pouvez fournir des indications sur l’outil d’analyse du code pourC++ C/code qui aide le processus d’analyse et réduire les avertissements. Pour fournir des informations supplémentaires, utilisez la fonction suivante :  
   
  `__analysis_assume(`  `expr`  `)`  
   
- `expr` -toute expression qui est supposée être évaluée à true.  
+ `expr`-toute expression supposée avoir la valeur true.  
   
- L’outil d’analyse de code suppose que la condition représentée par l’expression est remplie au point où la fonction s’affiche et le reste jusqu'à ce que l’expression est modifiée, par exemple, par assignation à une variable.  
+ L’outil d’analyse du code suppose que la condition représentée par l’expression est vraie au point où la fonction apparaît et reste true jusqu’à ce que l’expression soit modifiée, par exemple, en l’assignant à une variable.  
   
 > [!NOTE]
-> `__analysis_assume` ne pas avoir un impact sur l’optimisation du code. En dehors de l’outil d’analyse de code, `__analysis_assume` est défini comme une absence d’opération.  
+> `__analysis_assume` n’a pas d’impact sur l’optimisation du code. En dehors de l’outil d’analyse du code, `__analysis_assume` est défini comme une absence d’opération.  
   
 ## <a name="example"></a>Exemple  
  Le code suivant utilise `__analysis_assume` pour corriger l’avertissement d’analyse du code [C6388](../code-quality/c6388.md):  

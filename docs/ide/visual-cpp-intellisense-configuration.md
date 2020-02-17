@@ -2,17 +2,17 @@
 title: Configurer un projet C++ pour IntelliSense
 ms.date: 10/08/2018
 ms.topic: conceptual
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b0a909c25af3de22019327bb890da9e26bcce1c8
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8c43c48a797619f86f81e219e31ccf2afab5ba87
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748594"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77279314"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Configurer un projet C++ pour IntelliSense
 
@@ -76,7 +76,7 @@ Les erreurs de l’analyseur de balises s’affichent dans la fenêtre **Liste d
 
 Pour vérifier que le compilateur IntelliSense utilise les bonnes options, chemins d’accès Include et macros de préprocesseur compris, activez la journalisation des diagnostics des lignes de commande IntelliSense dans **Outils > Options > Éditeur de texte > C/C++ > Avancé > Journalisation des diagnostics**. Définissez **Activer la journalisation** sur True, **Niveau de journalisation** sur 5 (le plus détaillé), et **Filtre de journalisation** sur 8 (journalisation IntelliSense).
 
-La Fenêtre Sortie affiche maintenant les lignes de commande transmises au compilateur IntelliSense. Voici un exemple de sortie :
+La Fenêtre Sortie affiche maintenant les lignes de commande transmises au compilateur IntelliSense. Voici un exemple de sortie :
 
 ```output
 [IntelliSense] Configuration Name: Debug|Win32

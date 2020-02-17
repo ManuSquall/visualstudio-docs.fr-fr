@@ -6,17 +6,17 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C/C++.Experimental
 - VS.ToolsOptionsPages.Text_Editor.C%2FC%2B%2B.Experimental
 - VS.ToolsOptionsPages.Text_Editor.C\C++.Experimental
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 75f36d66ea46e7a0474c3b76ae000f745337fc45
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
-ms.translationtype: HT
+ms.openlocfilehash: 7e239ad3d2091f334f18ec00a367fc47d5c21db3
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461382"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77278702"
 ---
 # <a name="options-text-editor-cc-experimental"></a>Options, Éditeur de texte, C/C++, Expérimental
 
@@ -43,7 +43,7 @@ La fonctionnalité IntelliSense prédictive limite le nombre de résultats affic
 
 ## <a name="enable-faster-project-load"></a>Activer le chargement accéléré de projet
 
-À compter de Visual Studio 2017 version 15.3, cette fonctionnalité est appelée [Activer la mise en cache du projet](vcpp-project-settings-projects-and-solutions-options-dialog-box.md) et a été déplacée dans la page de propriétés **Paramètres de projet VC++** .
+À compter de Visual Studio 2017 version 15.3, cette fonctionnalité est appelée **Activer la mise en cache du projet** et a été déplacée dans la page de propriétés [Paramètres de projet VC++](vcpp-project-settings-projects-and-solutions-options-dialog-box.md).
 
 Cette option permet à Visual Studio de mettre en cache des données de projet pour que, lors de la prochaine ouverture du projet, il puisse charger ces données mises en cache au lieu de les recalculer à partir des fichiers projet. L’utilisation de données mises en cache peut accélérer considérablement la vitesse de chargement du projet.
 
@@ -61,10 +61,10 @@ Vous pouvez parcourir d’autres fonctionnalités de l’éditeur de texte dans 
 
 - **Aide en ligne** : recherchez vos messages d’erreur dans l’aide en ligne
 
-- Et plus encore...
+- Et bien plus...
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Définition d’options d’éditeur spécifiques du langage](../../ide/reference/setting-language-specific-editor-options.md)
-- [Refactorisation en C++ (blog VC)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/
+- [Définition d’options de l’éditeur spécifiques à un langage](../../ide/reference/setting-language-specific-editor-options.md)
+- [Refactoring in C++ (blog VC)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/
 )
