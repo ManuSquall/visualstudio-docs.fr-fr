@@ -2,24 +2,24 @@
 title: Meilleures pratiques et exemples (SAL)
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: eb95e793421ecede6d4583d8d7f4730eb56df1a0
-ms.sourcegitcommit: 58000baf528da220fdf7a999d8c407a4e86c1278
+ms.openlocfilehash: 601d90ed7e310f058fbf816469fef7374363951f
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72789782"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77265138"
 ---
 # <a name="best-practices-and-examples-sal"></a>Meilleures pratiques et exemples (SAL)
 Voici quelques méthodes pour tirer le meilleur parti du langage SAL (code source annotation Language) et éviter certains problèmes courants.
 
-## <a name="_in_"></a>\_In\_
+## <a name="_in_"></a>\_Dans\_
 
-Si la fonction est supposée écrire dans l’élément, utilisez `_Inout_` au lieu de `_In_`. Cela s’avère particulièrement utile en cas de conversion automatisée de macros plus anciennes en SAL. Avant SAL, de nombreux programmeurs utilisaient des macros comme commentaires, c’est-à-dire des macros nommées `IN`, `OUT`, `IN_OUT`ou des variantes de ces noms. Bien que nous vous déconseillons de convertir ces macros en SAL, nous vous invitons également à être vigilants lorsque vous les convertissez, car le code peut avoir changé depuis l’écriture du prototype d’origine et l’ancienne macro peut ne plus refléter ce que fait le code. Soyez particulièrement vigilant avec la macro de commentaire `OPTIONAL`, car elle est souvent placée de manière incorrecte, par exemple, du côté incorrect d’une virgule.
+Si la fonction est supposée écrire dans l’élément, utilisez `_Inout_` au lieu de `_In_`. Cela s’avère particulièrement utile en cas de conversion automatisée de macros plus anciennes en SAL. Avant SAL, de nombreux programmeurs utilisaient des macros comme commentaires, c’est-à-dire des macros nommées `IN`, `OUT`, `IN_OUT`ou des variantes de ces noms. Bien que nous vous déconseillons de convertir ces macros en SAL, nous vous invitons également à être vigilants lorsque vous les convertissez, car le code peut avoir changé depuis l’écriture du prototype d’origine et l’ancienne macro peut ne plus refléter ce que fait le code. Soyez particulièrement vigilant avec la macro `OPTIONAL` comment, car elle est souvent placée de manière incorrecte, par exemple, du côté incorrect d’une virgule.
 
 ```cpp
 
@@ -61,9 +61,9 @@ void Func2(_Out_ int *p1)
 }
 ```
 
-## <a name="_pre_defensive_-and-_post_defensive_"></a>\_\_\_ défensive et \_\_défensive
+## <a name="_pre_defensive_-and-_post_defensive_"></a>\_\_\_ défensive et \_\_défensive\_
 
-Si une fonction s’affiche dans une limite d’approbation, nous vous recommandons d’utiliser l’annotation `_Pre_defensive_`.  Le modificateur « défensive » modifie certaines annotations pour indiquer que, au moment de l’appel, l’interface doit être vérifiée strictement, mais dans le corps de l’implémentation, elle doit supposer que des paramètres incorrects peuvent être passés. Dans ce cas, `_In_ _Pre_defensive_` est préférable à une limite d’approbation pour indiquer que même si un appelant recevra une erreur s’il tente de passer la valeur NULL, le corps de la fonction sera analysé comme si le paramètre avait la valeur NULL, et toute tentative de déréférencer le pointeur sans la première la vérification de la valeur NULL sera signalée.  Une annotation `_Post_defensive_` est également disponible, pour une utilisation dans les rappels où le tiers de confiance est supposé être l’appelant et le code non fiable est le code appelé.
+Si une fonction s’affiche dans une limite d’approbation, nous vous recommandons d’utiliser l’annotation `_Pre_defensive_`.  Le modificateur « défensive » modifie certaines annotations pour indiquer que, au moment de l’appel, l’interface doit être vérifiée strictement, mais dans le corps de l’implémentation, elle doit supposer que des paramètres incorrects peuvent être passés. Dans ce cas, `_In_ _Pre_defensive_` est préférable à une limite d’approbation pour indiquer que même si un appelant recevra une erreur s’il tente de passer la valeur NULL, le corps de la fonction sera analysé comme si le paramètre avait la valeur NULL, et toute tentative de déréférencer le pointeur sans avoir d’abord vérifié la valeur NULL sera marquée.  Une annotation `_Post_defensive_` est également disponible, pour une utilisation dans les rappels où le tiers de confiance est supposé être l’appelant et le code non fiable est le code appelé.
 
 ## <a name="_out_writes_"></a>\_\_les écritures\_
 
@@ -126,7 +126,7 @@ void Func1(_In_ WCHAR* wszFileName);
 void Func2(_In_ PWSTR wszFileName);
 ```
 
-Il manque la spécification correcte de la terminaison NULL. Utilisez la version `STR` appropriée pour remplacer le type, comme indiqué dans l’exemple suivant.
+Il manque la spécification correcte de la terminaison NULL. Utilisez la version de `STR` appropriée pour remplacer le type, comme indiqué dans l’exemple suivant.
 
 ```cpp
 

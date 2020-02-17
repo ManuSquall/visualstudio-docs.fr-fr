@@ -27,17 +27,17 @@ f1_keywords:
 - _Lock_level_order_
 - _Lock_kind_event_
 ms.assetid: 07769c25-9b97-4ab7-b175-d1c450308d7a
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: ce5e4d1e8ed3505d1f971ef209c7e05ba85e0d69
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: ae15230557ee0c415082f981a7ad3588694eadea
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75402033"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77265136"
 ---
 # <a name="annotating-locking-behavior"></a>Annotation du comportement de verrouillage
 Pour éviter les bogues d'accès concurrentiel dans votre programme multithread, suivez toujours une règle de verrouillage appropriée et utilisez les annotations SAL.
@@ -48,7 +48,7 @@ Malheureusement, ces règles de verrouillage apparemment simples peuvent être �
 
 Les annotations SAL d'accès concurrentiel sont conçues pour vous aider à spécifier les effets secondaires du verrouillage, le responsable du verrouillage, la tutelle de données, la hiérarchie d'ordre de verrou et d'autres comportements de verrouillage prévus. En transformant des règles implicites en règles explicites, les annotations d'accès concurrence SAL vous permettent de documenter la façon dont votre code utilise des règles de verrouillage. Les annotations d'accès concurrentiel améliorent également la capacité des outils d'analyse du code à rechercher des conditions de concurrence, des interblocages, des opérations de synchronisation incompatibles et d'autres erreurs subtiles d'accès concurrentiel.
 
-## <a name="general-guidelines"></a>Indications générales
+## <a name="general-guidelines"></a>Instructions générales
 Les annotations permettent aux programmeurs de déclarer les contrats sous-entendus par les définitions de fonction entre les implémentations (appelés) et les clients (appelants) et d'exprimer les invariants et d'autres propriétés du programme qui peuvent améliorer davantage l'analyse.
 
 SAL prend en charge de nombreux types de primitives de verrouillage, tels que les sections critiques, les mutex, les verrous de rotation et d'autres objets de ressource. De nombreuses annotations d’accès concurrentiel prennent une expression de verrou comme paramètre. Par Convention, un verrou est indiqué par l’expression de chemin d’accès de l’objet de verrouillage sous-jacent.
