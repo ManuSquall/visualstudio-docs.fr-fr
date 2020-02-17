@@ -2,17 +2,17 @@
 title: Comment tester une C++ dll pour les applications UWP
 ms.date: 05/01/2019
 ms.topic: conceptual
-ms.author: mblome
+ms.author: corob
 manager: jillfra
 ms.workload:
 - uwp
-author: mikeblome
-ms.openlocfilehash: 18d8382bcb4f3e348443050e818f0b59c2a18688
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+author: corob-msft
+ms.openlocfilehash: 540ff59838343988e7a27f42f8a10d723de1f649
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748077"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77274448"
 ---
 # <a name="how-to-test-a-c-dll"></a>Comment tester une C++ dll
 
@@ -26,7 +26,7 @@ Cette rubrique crée également une solution Visual Studio unique et des projets
 
 ::: moniker range="vs-2019"
 
-Commencez par créer un projet de test. Dans le menu **Fichier**, choisissez **Nouveau** > **Projet**. Dans la boîte de dialogue **Créer un projet**, tapez « test » dans la zone de recherche, puis définissez **Langage** sur C++. Choisissez ensuite **Application de tests unitaires (Windows universel)** dans la liste des modèles de projet.
+Commencez par créer un projet de test. Dans le menu **Fichier** , choisissez **Nouveau** > **Projet**. Dans la boîte de dialogue **Créer un projet**, tapez « test » dans la zone de recherche, puis définissez **Langage** sur C++. Choisissez ensuite **Application de tests unitaires (Windows universel)** dans la liste des modèles de projet.
 
    ![Créer un projet de test UWP](media/vs-2019/cpp-new-uwp-test-project-vs2019.png)
 
@@ -34,7 +34,7 @@ Commencez par créer un projet de test. Dans le menu **Fichier**, choisissez **N
 
 ::: moniker range="vs-2017"
 
-Commencez par créer un projet de test. Dans le menu **Fichier**, choisissez **Nouveau** > **Projet**. Dans la boîte de dialogue **Nouveau projet**, développez **Installé** > **Visual C++** , puis choisissez **Windows universel**. Choisissez ensuite **Application de tests unitaires (Windows universel)** dans la liste des modèles de projet.
+Commencez par créer un projet de test. Dans le menu **Fichier** , choisissez **Nouveau** > **Projet**. Dans la boîte de dialogue **Nouveau projet**, développez **Installé** > **Visual C++** , puis choisissez **Windows universel**. Choisissez ensuite **Application de tests unitaires (Windows universel)** dans la liste des modèles de projet.
 
 ::: moniker-end
 
@@ -48,7 +48,7 @@ Commencez par créer un projet de test. Dans le menu **Fichier**, choisissez **N
 
      ![unittest1.cpp](../test/media/ute_cpp_windows_unittest1_cpp.png)
 
-     Sachez que :
+     Prenez note de ce qui suit :
 
     - Chaque test est défini à l'aide de `TEST_METHOD(YourTestName){...}`.
 
@@ -60,7 +60,7 @@ Commencez par créer un projet de test. Dans le menu **Fichier**, choisissez **N
 
 ## <a name="Verify_that_the_tests_run_in_Test_Explorer"></a> Vérifier que les tests s’exécutent dans l’Explorateur de tests
 
-1. Insérez le code de test :
+1. Insérez du code de test :
 
     ```cpp
     TEST_METHOD(TestMethod1)
@@ -118,7 +118,7 @@ Dans **l’Explorateur de solutions**, choisissez le nom de la solution. Dans le
     };
     ```
 
-     Les commentaires expliquent la signification du bloc ifdef non seulement au développeur de la DLL, mais aussi à toute personne qui référence la DLL dans son projet. Vous pouvez ajouter le symbole ROOTERLIB_EXPORTS à la ligne de commande en utilisant les propriétés du projet de la DLL.
+     Les commentaires donnent la signification du bloc ifdef non seulement au développeur de la DLL, mais aussi à toute personne qui fait référence à la DLL dans son projet. Vous pouvez ajouter le symbole ROOTERLIB_EXPORTS à la ligne de commande en utilisant les propriétés du projet de la DLL.
 
      La classe `CRooterLib` déclare un constructeur et la méthode d'estimation `SqareRoot`.
 
@@ -194,11 +194,11 @@ Dans **l’Explorateur de solutions**, choisissez le nom de la solution. Dans le
 
     ![Test de base réussi](../test/media/ute_cpp_testexplorer_basictest.png)
 
-   Vous avez configuré le test et les projets de code, et vérifié que vous pouviez exécuter des tests exécutant les fonctions du projet de code. Maintenant, vous pouvez commencer à écrire le code et les tests réels.
+   Vous avez configuré le test et les projets de code, et vérifié qu'il est possible d'exécuter des tests qui exécutent des fonctions dans le projet de code. Vous pouvez maintenant commencer à écrire des tests et du code réels.
 
 ## <a name="Iteratively_augment_the_tests_and_make_them_pass"></a> Augmenter itérativement les tests et les faire réussir
 
-1. Ajoutez un nouveau test :
+1. Ajoutez un nouveau test :
 
     ```cpp
     TEST_METHOD(RangeTest)
@@ -215,9 +215,9 @@ Dans **l’Explorateur de solutions**, choisissez le nom de la solution. Dans le
     ```
 
     > [!TIP]
-    > Nous vous recommandons de ne pas modifier les tests ayant réussi. Ajoutez à la place un nouveau test, mettez à jour le code afin que le test réussisse, puis ajoutez un autre test, et ainsi de suite.
+    > Nous vous recommandons de ne pas modifier les tests qui ont réussi. Ajoutez à la place un nouveau test, mettez à jour le code afin que le test réussisse, puis ajoutez un autre test, et ainsi de suite.
     >
-    > Lorsque vos utilisateurs modifient leurs spécifications, désactivez les tests qui ne sont plus corrects. Écrivez de nouveaux tests et utilisez-les l'un après l'autre, de la même façon incrémentielle.
+    > Quand les utilisateurs modifient leurs spécifications, désactivez les tests qui ne sont plus corrects. Écrivez de nouveaux tests et exécutez-les individuellement, de la même façon incrémentielle.
 
 2. Dans **l’Explorateur de tests**, choisissez **Exécuter tout**.
 
@@ -226,9 +226,9 @@ Dans **l’Explorateur de solutions**, choisissez le nom de la solution. Dans le
      ![RangeTest a échoué](../test/media/ute_cpp_testexplorer_rangetest_fail.png)
 
     > [!TIP]
-    > Vérifiez que chaque test échoue immédiatement après que vous l'avez écrit. Vous évitez ainsi de commettre l'erreur d'écrire un test qui n'échoue jamais.
+    > Vérifiez que chaque test échoue immédiatement après l'avoir écrit. Cela permet d'éviter l'erreur facile qui consiste à écrire un test qui n'échoue jamais.
 
-4. Améliorez le code testé afin que le nouveau test réussisse. Ajoutez ce qui suit à *RooterLib.cpp* :
+4. Améliorez le code testé pour que le nouveau test réussisse. Ajoutez ce qui suit à *RooterLib.cpp* :
 
     ```cpp
     #include <math.h>
@@ -254,7 +254,7 @@ Dans **l’Explorateur de solutions**, choisissez le nom de la solution. Dans le
      Les deux tests réussissent.
 
 > [!TIP]
-> Développez le code en ajoutant les tests individuellement. Assurez-vous que tous les tests réussissent après chaque itération.
+> Développez le code en ajoutant les tests l'un après l'autre. Vérifiez que tous les tests réussissent après chaque itération.
 
 ## <a name="Debug_a_failing_test"></a> Déboguer un test ayant échoué
 
@@ -295,13 +295,13 @@ Dans **l’Explorateur de solutions**, choisissez le nom de la solution. Dans le
 
     ![NegativeRangeTests, échec](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
 
-3. Pour voir pourquoi le test échoue, parcourez la fonction :
+3. Pour comprendre pourquoi le test échoue, parcourez la fonction :
 
    1. Définissez un point d'arrêt au début de la fonction `SquareRoot`.
 
    2. Dans le menu contextuel du test ayant échoué, choisissez **Déboguer les tests sélectionnés**.
 
-        Lorsque l'exécution s'arrête au point d'arrêt, parcourez le code.
+        Quand l'exécution s'arrête au point d'arrêt, parcourez le code.
 
    3. Ajoutez du code à *RooterLib.cpp* pour intercepter l’exception :
 
@@ -321,7 +321,7 @@ Dans **l’Explorateur de solutions**, choisissez le nom de la solution. Dans le
 
    1. Dans **l’Explorateur de tests**, choisissez **Exécuter tout** pour tester la méthode corrigée et vérifier que vous n’avez pas introduit une régression.
 
-   Toutes les tests réussissent maintenant.
+   Maintenant, tous les tests réussissent.
 
    ![Tous les tests sont concluants](../test/media/ute_ult_alltestspass.png)
 

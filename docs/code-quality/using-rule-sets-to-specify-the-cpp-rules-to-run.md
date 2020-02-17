@@ -4,17 +4,17 @@ ms.date: 04/28/2018
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.rulesets.native
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8e25e28c2ff20a628058d5dfa71de0368fbe9249
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: ec2d9c812de9ec6be5ba5f42ca2a4484703d0b84
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72445611"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271783"
 ---
 # <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>Utiliser des ensembles de règles pour C++ spécifier les règles à exécuter
 
@@ -38,7 +38,7 @@ Pour créer un ensemble de règles personnalisé, enregistrez-le à l’aide d�
 
      \- ou -
 
-   - Choisissez **\<Browse... >** pour spécifier un ensemble de règles existant qui ne figure pas dans la liste.
+   - Choisir **\<parcourir... >** pour spécifier un ensemble de règles existant qui ne figure pas dans la liste.
 
 4. Choisissez **ouvrir** pour afficher les règles dans l’éditeur d’ensembles de règles.
 
@@ -66,7 +66,7 @@ Pour créer un ensemble de règles personnalisé, enregistrez-le à l’aide d�
 
 - Pour réduire les règles de tous les groupes, choisissez **réduire tout**.
 
-- Pour modifier le champ par lequel les règles sont regroupées, choisissez le champ dans la liste **regrouper par** . Pour afficher les règles non groupées, choisissez **\<None >** .
+- Pour modifier le champ par lequel les règles sont regroupées, choisissez le champ dans la liste **regrouper par** . Pour afficher les règles non groupées, choisissez **\<aucun >** .
 
 - Pour ajouter ou supprimer des champs dans les colonnes de règles, choisissez **options de colonne**.
 
@@ -82,7 +82,7 @@ Pour créer un ensemble de règles personnalisé, enregistrez-le à l’aide d�
 
 ## <a name="to-create-a-rule-set-in-a-text-editor"></a>Pour créer un ensemble de règles dans un éditeur de texte
 
-Vous pouvez créer un ensemble de règles personnalisé dans un éditeur de texte, le stocker dans n’importe quel emplacement avec une extension `.ruleset`, et l’appliquer à l’aide de l’option de compilateur [/analyze : RuleSet](/cpp/build/reference/analyze-code-analysis) .
+Vous pouvez créer un ensemble de règles personnalisé dans un éditeur de texte, le stocker dans n’importe quel emplacement avec une extension de `.ruleset` et l’appliquer à l’aide de l’option de compilateur [/analyze : RuleSet](/cpp/build/reference/analyze-code-analysis) .
 
 L’exemple suivant montre un fichier d’ensemble de règles de base que vous pouvez utiliser comme point de départ :
 

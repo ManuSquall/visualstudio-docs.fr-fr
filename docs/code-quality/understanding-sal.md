@@ -3,17 +3,17 @@ title: Présentation de SAL
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: a94d6907-55f2-4874-9571-51d52d6edcfd
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: df04186fd7524649dfe7ac89e53ca4ca907cc5c4
-ms.sourcegitcommit: 8589d85cc10710ef87e6363a2effa5ee5610d46a
+ms.openlocfilehash: e2cb2cb263344e45d83a2b143f6c56f138f77bf5
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72807091"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271824"
 ---
 # <a name="understanding-sal"></a>Présentation de SAL
 
@@ -27,7 +27,7 @@ Simplement exprimé, SAL est un moyen peu coûteux de permettre au compilateur d
 
 ### <a name="sal-makes-code-more-valuable"></a>SAL rend le code plus précieux
 
-SAL peut vous aider à rendre votre conception de code plus compréhensible, aussi bien pour l’homme que pour les outils d’analyse du code. Prenons l’exemple suivant qui illustre la fonction Runtime C `memcpy` :
+SAL peut vous aider à rendre votre conception de code plus compréhensible, aussi bien pour l’homme que pour les outils d’analyse du code. Prenons l’exemple suivant qui illustre la fonction Runtime C `memcpy`:
 
 ```cpp
 
@@ -38,18 +38,18 @@ void * memcpy(
 );
 ```
 
-Pouvez-vous indiquer ce que fait cette fonction ? Lorsqu’une fonction est implémentée ou appelée, certaines propriétés doivent être gérées pour garantir l’exactitude du programme. En examinant simplement une déclaration telle que celle de l’exemple, vous ne savez pas ce qu’elles sont. Sans annotations SAL, vous devez vous appuyer sur la documentation ou des commentaires de code. Voici ce que la documentation MSDN pour `memcpy` dit :
+Pouvez-vous indiquer ce que fait cette fonction ? Lorsqu’une fonction est implémentée ou appelée, certaines propriétés doivent être gérées pour garantir l’exactitude du programme. En examinant simplement une déclaration telle que celle de l’exemple, vous ne savez pas ce qu’elles sont. Sans annotations SAL, vous devez vous appuyer sur la documentation ou des commentaires de code. Voici ce que la documentation MSDN pour `memcpy` indique :
 
 > «Copie le nombre d’octets de SRC vers dest. Si la source et la destination se chevauchent, le comportement de memcpy n’est pas défini. Utilisez memmove pour gérer les régions qui se chevauchent.
 > **Remarque relative à la sécurité :** Assurez-vous que la taille de la mémoire tampon de destination est supérieure ou égale à la mémoire tampon source. Pour plus d’informations, consultez éviter les dépassements de mémoire tampon.»
 
 La documentation contient quelques bits d’informations qui suggèrent que votre code doit gérer certaines propriétés pour garantir l’exactitude du programme :
 
-- `memcpy` copie le `count` des octets de la mémoire tampon source vers la mémoire tampon de destination.
+- `memcpy` copie le `count` d’octets de la mémoire tampon source vers la mémoire tampon de destination.
 
 - La mémoire tampon de destination doit être au moins aussi grande que la mémoire tampon source.
 
-Toutefois, le compilateur ne peut pas lire la documentation ou des commentaires informels. Il ne sait pas qu’il existe une relation entre les deux tampons et `count`, et il ne peut pas non plus deviner une relation de manière efficace. SAL peut fournir plus de clarté sur les propriétés et l’implémentation de la fonction, comme illustré ici :
+Toutefois, le compilateur ne peut pas lire la documentation ou des commentaires informels. Il ne sait pas qu’il existe une relation entre les deux mémoires tampons et `count`, et il ne peut pas non plus deviner une relation de manière efficace. SAL peut fournir plus de clarté sur les propriétés et l’implémentation de la fonction, comme illustré ici :
 
 ```cpp
 
@@ -60,7 +60,7 @@ void * memcpy(
 );
 ```
 
-Notez que ces annotations ressemblent aux informations contenues dans la documentation MSDN, mais qu’elles sont plus concises et qu’elles suivent un modèle sémantique. Lorsque vous lisez ce code, vous pouvez rapidement comprendre les propriétés de cette fonction et éviter les problèmes de sécurité de dépassement de mémoire tampon. Mieux encore, les modèles sémantiques fournis par SAL peuvent améliorer l’efficacité et l’efficacité des outils d’analyse du code automatisés lors de la découverte précoce des bogues potentiels. Imaginez que quelqu’un écrit cette implémentation de bogue de `wmemcpy` :
+Notez que ces annotations ressemblent aux informations contenues dans la documentation MSDN, mais qu’elles sont plus concises et qu’elles suivent un modèle sémantique. Lorsque vous lisez ce code, vous pouvez rapidement comprendre les propriétés de cette fonction et éviter les problèmes de sécurité de dépassement de mémoire tampon. Mieux encore, les modèles sémantiques fournis par SAL peuvent améliorer l’efficacité et l’efficacité des outils d’analyse du code automatisés lors de la découverte précoce des bogues potentiels. Imaginez que quelqu’un écrit cette implémentation de bogue de `wmemcpy`:
 
 ```cpp
 
@@ -154,7 +154,7 @@ void BadInCaller()
 }
 ```
 
-Si vous utilisez Visual Studio Code analyse sur cet exemple, il vérifie que les appelants passent un pointeur non null à une mémoire tampon initialisée pour `pInt`. Dans ce cas, le pointeur `pInt` ne peut pas être NULL.
+Si vous utilisez Visual Studio Code analyse sur cet exemple, il vérifie que les appelants passent un pointeur non null à une mémoire tampon initialisée pour `pInt`. Dans ce cas, `pInt` pointeur ne peut pas avoir la valeur NULL.
 
 ### <a name="example-the-_in_opt_-annotation"></a>Exemple : \_dans\_\_ annotation
 
@@ -266,7 +266,7 @@ void BadInOutCaller()
 }
 ```
 
-Visual Studio Code analyse vérifie que les appelants passent un pointeur non NULL à une mémoire tampon initialisée pour `pInt`, et que, avant le retour, `pInt` est toujours non NULL et que la mémoire tampon est initialisée.
+Visual Studio Code analyse vérifie que les appelants passent un pointeur non NULL à une mémoire tampon initialisée pour `pInt`et que, avant le retour, `pInt` est toujours non NULL et que la mémoire tampon est initialisée.
 
 ### <a name="example-the-_inout_opt_-annotation"></a>Exemple : \_INOUT\_\_ annotation
 
@@ -295,7 +295,7 @@ void InOutOptCaller()
 }
 ```
 
-Visual Studio Code analyse valide que cette fonction vérifie la valeur NULL avant d’accéder à la mémoire tampon, et si `pInt` n’est pas NULL, que la mémoire tampon est initialisée par la fonction avant de retourner.
+Visual Studio Code analyse vérifie que cette fonction recherche la valeur NULL avant d’accéder à la mémoire tampon, et si `pInt` n’a pas la valeur NULL, la mémoire tampon est initialisée par la fonction avant d’être retournée.
 
 ### <a name="example-the-_outptr_-annotation"></a>Exemple : l’annotation \_Outptr\_
 
@@ -357,7 +357,7 @@ void OutPtrOptCaller()
 }
 ```
 
-Visual Studio Code analyse vérifie que cette fonction recherche la valeur NULL avant que `*pInt` soit déréférencé, et que la mémoire tampon est initialisée par la fonction avant qu’elle ne soit retournée.
+Visual Studio Code analyse vérifie que cette fonction recherche la valeur NULL avant que `*pInt` soit déréférencée, et que la mémoire tampon soit initialisée par la fonction avant qu’elle ne soit retournée.
 
 ### <a name="example-the-_success_-annotation-in-combination-with-_out_"></a>Exemple : l’annotation de réussite de la \_\_ en combinaison avec \_\_
 
@@ -400,7 +400,7 @@ Voici quelques recommandations :
 
 Vous pouvez aussi annoter tous les paramètres pour clarifier votre intention et faciliter la vérification des annotations.
 
-## <a name="related-resources"></a>Ressources connexes
+## <a name="related-resources"></a>Ressources associées
 
 [Blog de l’équipe d’analyse du code](https://blogs.msdn.microsoft.com/codeanalysis/)
 

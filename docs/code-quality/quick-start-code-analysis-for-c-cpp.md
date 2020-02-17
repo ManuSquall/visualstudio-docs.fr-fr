@@ -6,17 +6,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - C/C++ code analysis
 - code analysis,C/C++
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4beaff14e896eae15d4ce68acf35331d03203246
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 41d5c5a5ea966d1e092e7038d2fc3734c9bd9f15
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72445634"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77272323"
 ---
 # <a name="quickstart-code-analysis-for-cc"></a>Démarrage rapide : analyse du code pour C/C++
 
@@ -101,7 +101,7 @@ Vous pouvez utiliser la fonctionnalité de suivi des éléments de travail pour 
 
 ## <a name="search-and-filter-code-analysis-results"></a>Rechercher et filtrer les résultats de l’analyse du code
 
-Vous pouvez effectuer une recherche dans de longues listes de messages d'avertissement, et vous pouvez filtrer les avertissements dans les solutions à projets multiples.
+Vous pouvez effectuer une recherche dans de longues listes de messages d'avertissement et filtrer les avertissements dans les solutions à projets multiples.
 
 - **Pour filtrer les avertissements par titre ou ID d’avertissement**: entrez le mot clé dans la zone de recherche.
 

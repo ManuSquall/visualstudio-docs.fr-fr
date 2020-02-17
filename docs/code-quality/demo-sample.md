@@ -6,17 +6,17 @@ helpviewer_keywords:
 - demo sample [Visual Studio ALM]
 - code analysis, samples
 ms.assetid: 09e1b9f7-5916-4ed6-a001-5c2d7e710682
-author: mikeblome
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 84f6ddc2012617a5216c58fa0761dc100fb8942f
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.openlocfilehash: a7e06b29b4778bf2a9b1b327d015bb7eb12e8ec5
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75402744"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271283"
 ---
 # <a name="sample-c-project-for-code-analysis"></a>Exemple de projet C++ pour l’analyse du code
 
@@ -48,7 +48,7 @@ Les procédures fournissent également le code pour les fichiers d’en-tête et
 
 1. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur **CodeDefects**, puis cliquez sur **Propriétés**.
 
-2. Développez **Propriétés de configuration** et cliquez sur **Général**.
+2. Développez **Propriétés de configuration**, puis cliquez sur **Général**.
 
 3. Dans la liste **général** , remplacez **type de configuration**par **bibliothèque statique (. lib)** .
 
@@ -80,7 +80,7 @@ const int USER_ACCOUNT_LEN = 256;
 const int ACCOUNT_DOMAIN_LEN = 128;
 ```
 
-5. Dans l’Explorateur de solutions, cliquez sur **Fichiers sources**, pointez sur **Nouveau** et cliquez sur **Nouvel élément**.
+5. Dans l’Explorateur de solutions, cliquez sur **Fichiers sources**, pointez sur **Nouveau**, puis cliquez sur **Nouvel élément**.
 
 6. Dans la boîte de dialogue **Ajouter un nouvel élément**, cliquez sur **Fichier C++ (.cpp)** .
 
@@ -156,7 +156,7 @@ int path_dependent(int n)
 
 4. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur **Annotations**, puis cliquez sur **Propriétés**.
 
-5. Développez **Propriétés de configuration** et cliquez sur **Général**.
+5. Développez **Propriétés de configuration**, puis cliquez sur **Général**.
 
 6. Dans la liste **général** , modifiez le **type de configuration**, puis cliquez sur **bibliothèque statique (. lib)** .
 
@@ -188,7 +188,7 @@ typedef struct LinkedList LinkedList;
 _Ret_maybenull_ LinkedList* AllocateNode();
 ```
 
-5. Dans l’Explorateur de solutions, cliquez sur **Fichiers sources**, pointez sur **Nouveau** et cliquez sur **Nouvel élément**.
+5. Dans l’Explorateur de solutions, cliquez sur **Fichiers sources**, pointez sur **Nouveau**, puis cliquez sur **Nouvel élément**.
 
 6. Dans la boîte de dialogue **Ajouter un nouvel élément**, cliquez sur **Code** et sur **Fichier C++ (.cpp)** .
 

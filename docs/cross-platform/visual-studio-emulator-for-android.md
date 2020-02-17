@@ -1,21 +1,23 @@
 ---
 title: Émulateur Visual Studio pour Android | Microsoft Docs
 ms.custom: ''
-ms.date: 07/03/2018
+ms.prod: visual-studio-dev15
+ms.date: 02/13/2020
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 ms.assetid: 80f0104f-a4db-44dd-bd55-37bb67776c62
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d7bda9882a8f46f3b32c658db952a2eaf73d3fb7
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: 73dd10cf1923caa6703acc0ef9d4fde82c13f5bb
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916474"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77272035"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Émulateur Visual Studio pour Android
 
@@ -35,11 +37,11 @@ L'Émulateur Visual Studio pour Android est une application de bureau qui émule
  Vous pouvez tester votre application sur un profil d'appareil unique pour chacune des plateformes Android, résolutions d'écran et autres propriétés matérielles prises en charge par l'Émulateur Visual Studio pour Android.
 
 ## <a name="Installing"></a> Installation et désinstallation
- Installation de .
+ Installation
 
  L'Émulateur Visual Studio pour Android fait partie des outils multiplateformes disponibles dans Visual Studio, que vous pouvez installer lors d'une installation personnalisée de Visual Studio. Pour ce faire, sélectionnez Développement multiplateforme pour appareils mobiles, Kits de développement logiciel (SDK) et outils courants, puis Émulateur Microsoft Visual Studio pour Android.
 
- Désinstallation de
+ Désinstallation
 
  Vous pouvez désinstaller l'émulateur Visual Studio pour Android dans Ajout/Suppression de programmes, dans le Panneau de configuration.
 

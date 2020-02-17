@@ -11,15 +11,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3856c658c4d3d2598b69cc9bf77f95c219b187b4
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 1d5c40af3e60add88948f8f1c5c36abf3b980eca
+ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590044"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "77271175"
 ---
 # <a name="walkthrough-create-an-inline-task"></a>Procédure pas à pas : Créer une tâche inline
-Les tâches MSBuild sont généralement créées en compilant une classe qui implémente l’interface <xref:Microsoft.Build.Framework.ITask>. À compter du .NET Framework version 4, vous pouvez créer des tâches inline dans le fichier projet. Vous n’êtes pas obligé de créer un assembly séparé pour héberger la tâche. Pour plus d’informations, voir [Tâches inline](../msbuild/msbuild-inline-tasks.md).
+Les tâches MSBuild sont généralement créées en compilant une classe qui implémente l’interface <xref:Microsoft.Build.Framework.ITask>. À compter du .NET Framework version 4, vous pouvez créer des tâches inline dans le fichier projet. Vous n’êtes pas obligé de créer un assembly distinct pour héberger la tâche. Pour plus d’informations, voir [Tâches inline](../msbuild/msbuild-inline-tasks.md).
 
  Cette procédure pas à pas montre comment créer et exécuter les tâches inline suivantes :
 
@@ -46,7 +46,7 @@ Pour créer et exécuter les tâches, utilisez Visual Studio et la **fenêtre d�
 
 1. Dans le menu **Fichier** de Visual Studio, pointez sur **Nouveau**, puis cliquez sur **Projet**.
 
-2. Dans la boîte de dialogue **Nouveau projet**, sélectionnez le type de projet **Visual C#** , puis le modèle **Application Windows Forms**. Dans la zone **Nom**, tapez `InlineTasks`. Tapez un **Emplacement** pour la solution, par exemple, *D:\\* . Vérifiez que l’option **Créer un répertoire pour la solution** est sélectionnée, que l’option **Ajouter au contrôle de code source** ne l’est pas et que **Nom de solution** correspond à **InlineTasks**.
+2. Dans la boîte de dialogue **Nouveau projet**, sélectionnez le type de projet **Visual C#** , puis le modèle **Application Windows Forms**. Dans le champ **Nom**, saisissez `InlineTasks`. Tapez un **Emplacement** pour la solution, par exemple, *D:\\* . Vérifiez que l’option **Créer un répertoire pour la solution** est sélectionnée, que l’option **Ajouter au contrôle de code source** ne l’est pas et que **Nom de solution** correspond à **InlineTasks**.
 
 3. Cliquez sur **OK** pour créer le fichier projet.
 
@@ -74,7 +74,7 @@ Pour créer et exécuter les tâches, utilisez Visual Studio et la **fenêtre d�
      <ParameterGroup />
      <Task>
        <Code Type="Fragment" Language="cs">
-         Log.LogMessage("Hello, world!", MessageImportance.High);
+         Log.LogMessage(MessageImportance.High, "Hello, world!");
        </Code>
      </Task>
    </UsingTask>
@@ -121,7 +121,7 @@ Pour créer et exécuter les tâches, utilisez Visual Studio et la **fenêtre d�
      </ParameterGroup>
      <Task>
        <Code Type="Fragment" Language="cs">
-         Log.LogMessage(Text, MessageImportance.High);
+         Log.LogMessage(MessageImportance.High, Text);
        </Code>
      </Task>
    </UsingTask>
@@ -258,5 +258,5 @@ Pour créer et exécuter les tâches, utilisez Visual Studio et la **fenêtre d�
 
 ## <a name="see-also"></a>Voir aussi
 - [Tâches inline](../msbuild/msbuild-inline-tasks.md)
-- [Tâches MSBuild](../msbuild/msbuild-tasks.md)
-- [Cibles MSBuild](../msbuild/msbuild-targets.md)
+- [Tâches :](../msbuild/msbuild-tasks.md)
+- [Cibles](../msbuild/msbuild-targets.md)
