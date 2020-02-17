@@ -69,7 +69,7 @@ landingContent:
       url: /azure/cosmos-db/sql-api-get-started
     - text: Cosmos DB - Application web .NET
       url: /azure/cosmos-db/sql-api-dotnet-application
-    - text: Azure Data Lake Analytics
+    - text: Service Analytique Azure Data Lake
       url: /azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started
     - text: HDInsight
       url: /azure/hdinsight/hdinsight-hadoop-visual-studio-tools-get-started
