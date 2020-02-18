@@ -48,7 +48,7 @@ Commencez par créer un projet de test. Dans le menu **Fichier** , choisissez **
 
      ![unittest1.cpp](../test/media/ute_cpp_windows_unittest1_cpp.png)
 
-     Prenez note de ce qui suit :
+     Notez les points suivants :
 
     - Chaque test est défini à l'aide de `TEST_METHOD(YourTestName){...}`.
 
