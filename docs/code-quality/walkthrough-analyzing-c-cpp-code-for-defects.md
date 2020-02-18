@@ -28,7 +28,7 @@ Cette procédure pas à pas montre comment analyserC++ c/code pour identifier le
 - Traiter l’avertissement comme une erreur.
 - Annoter le code source pour améliorer l’analyse des erreurs de code.
 
-## <a name="prerequisites"></a>Conditions préalables requises
+## <a name="prerequisites"></a>Composants requis
 
 - Copie de l' [exemple de démonstration](../code-quality/demo-sample.md).
 - Connaissances de base de CC++/.

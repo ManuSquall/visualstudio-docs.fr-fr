@@ -82,7 +82,7 @@ Cette implémentation contient une erreur courante. Heureusement, l’auteur du 
 ### <a name="sal-basics"></a>Principes de base du SAL
 SAL définit quatre types de paramètres de base, classés par modèle d’utilisation.
 
-|Category|Annotation de paramètre|Description|
+|Catégorie|Annotation de paramètre|Description|
 |--------------|--------------------------|-----------------|
 |**Entrée de la fonction appelée**|`_In_`|Les données sont passées à la fonction appelée et sont traitées en lecture seule.|
 |**Entrée de la fonction appelée et sortie vers l’appelant**|`_Inout_`|Les données utilisables sont transmises à la fonction et peuvent éventuellement être modifiées.|

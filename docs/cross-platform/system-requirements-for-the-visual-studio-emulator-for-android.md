@@ -32,7 +32,7 @@ Le programme d’installation tente de satisfaire à ces conditions préalables 
 
 Voici une liste de vérification rapide des composants requis pour l’exécution de l’émulateur Visual Studio pour Android. Pour obtenir des informations détaillées, consultez les sections suivantes de cette rubrique.
 
-Configuration système requise
+Configuration requise
 
 - Prise en charge d’Hyper-V (voir la configuration requise pour Hyper-V ci-dessous)
 
@@ -42,7 +42,7 @@ Configuration système requise
 
 - Processeur qui prend en charge SSSE3 ou version ultérieure.
 
-Configuration requise pour le réseau
+Configuration réseau requise
 
 - DHCP
 
@@ -62,7 +62,7 @@ Configuration requise pour Hyper-V
 
 - Vous devez être membre du groupe local Administrateurs Hyper-V.
 
-## <a name="system-requirements"></a>Configuration système requise
+## <a name="system-requirements"></a>Configuration requise
  Votre ordinateur doit remplir les conditions suivantes :
 
 - Prise en charge Hyper-V (consultez [Configuration requise pour Hyper-V](#hyper-v-requirements))
@@ -75,7 +75,7 @@ Pour vérifier la configuration requise pour la RAM et Windows, dans le Panneau 
 
 ![Vérifier la configuration requise](../cross-platform/media/android_emu_system_requirements.png "Android_Emu_System_Requirements")
 
-## <a name="network-requirements"></a>Configuration requise pour le réseau
+## <a name="network-requirements"></a>Configuration réseau requise
 
 Votre réseau doit remplir les conditions suivantes :
 
@@ -107,7 +107,7 @@ Configuration requise pour Hyper-V dans Windows
 
 Quand les paramètres du BIOS et de votre ordinateur sont déjà configurés pour prendre en charge Hyper-V, le programme d’installation active et démarre Hyper-V. Dans le cas contraire, vous devrez peut-être activer manuellement ces composants requis.
 
-|Condition requise|Comment vérifier et activer cette spécification|
+|Configuration requise|Comment vérifier et activer cette spécification|
 |-----------------|----------------------------------------------|
 |Hyper-V doit être installé|Suivez les mêmes instructions que celles utilisées pour [activer Hyper-V pour l’émulateur Windows Phone](/previous-versions/windows/apps/jj863509(v=vs.105)).<br /><br /> Vérifiez l’état du service **Gestion d’ordinateurs virtuels Hyper-V** dans le composant logiciel enfichable Services.|
 |Hyper-V doit être en cours d’exécution.|Pour plus d’informations sur la gestion des services, consultez les rubriques suivantes :<br /><br /> -   [Démarrer, arrêter, suspendre, reprendre ou redémarrer un service](https://technet.microsoft.com/library/cc736564\(v=WS.10\).aspx)<br />-   [Configurer le démarrage d’un service](https://technet.microsoft.com/%20library/cc739213\(v=ws.10\))|
