@@ -23,12 +23,12 @@ Utilisez l’Explorateur de tests pour exécuter des tests unitaires à partir d
 
 Visual Studio inclut les infrastructures de tests unitaires Microsoft pour le code managé comme pour le code natif. Toutefois, l'Explorateur de tests peut également exécuter tout framework de tests unitaires qui a implémenté un adaptateur pour l'Explorateur de tests. Pour plus d’informations sur l’installation des frameworks de tests unitaires tiers, consultez [Installer des frameworks de tests unitaires tiers](../test/install-third-party-unit-test-frameworks.md).
 
-**L’Explorateur de tests** peut exécuter des tests à partir de plusieurs projets de tests dans une solution et à partir de classes de test qui font partie des projets de code en production. Les projets de test peuvent utiliser différentes infrastructures de tests unitaires. Quand le code testé est écrit pour .NET, le projet de test peut être écrit dans n’importe quel langage qui cible également .NET, quel que soit le langage du code cible. Les projets de code C/C++ natifs doivent être testés à l'aide d'un framework de tests unitaires C++. Pour plus d’informations, consultez [Écrire des tests unitaires pour C/C++](writing-unit-tests-for-c-cpp.md).
+**L’Explorateur de tests** peut exécuter des tests à partir de plusieurs projets de tests dans une solution et à partir de classes de test qui font partie des projets de code en production. Les projets de test peuvent utiliser différentes infrastructures de tests unitaires. Quand le code testé est écrit pour .NET, le projet de test peut être écrit dans n’importe quel langage qui cible également .NET, quel que soit le langage du code cible. Les projets de code C/C++ natifs doivent être testés à l'aide d'une infrastructure de tests unitaires C++. Pour plus d’informations, consultez [Écrire des tests unitaires pour C/C++](writing-unit-tests-for-c-cpp.md).
 
-## <a name="run-tests-in-test-explorer"></a>Exécuter des tests dans l’explorateur de tests
+## <a name="run-tests-in-test-explorer"></a>Exécuter des tests dans l'Explorateur de tests
 
 
-Quand vous générez le projet de test, les tests s’affichent dans l’explorateur de tests. Si l’explorateur de tests n’est pas visible, sélectionnez **Test** dans le menu Visual Studio et choisissez **Fenêtres**, puis **Explorateur de tests**.
+Quand vous générez le projet de test, les tests s'affichent dans l'Explorateur de tests. Si l’explorateur de tests n’est pas visible, sélectionnez **Test** dans le menu Visual Studio et choisissez **Fenêtres**, puis **Explorateur de tests**.
 
 
 ::: moniker range="vs-2017"
@@ -57,7 +57,7 @@ Vous pouvez effectuer la majeure partie du travail de recherche, d’organisatio
 ### <a name="run-tests"></a>Exécuter les tests
 
 ::: moniker range="vs-2017"
-Vous pouvez exécuter tous les tests dans la solution, tous les tests dans un groupe, ou un ensemble de tests que vous sélectionnez. Effectuez l’une des actions suivantes :
+Vous pouvez exécuter tous les tests de la solution, tous les tests d'un groupe ou un ensemble de tests que vous sélectionnez. Effectuez l’une des actions suivantes :
 
 - Pour exécuter tous les tests dans une solution, choisissez **Exécuter tout**.
 
@@ -70,7 +70,7 @@ Vous pouvez exécuter tous les tests dans la solution, tous les tests dans un gr
 La **barre Réussite/Échec** en haut de la fenêtre **Explorateur de tests** est animée pendant l’exécution des tests. À la fin de la série de tests, la **barre Réussite/Échec** devient verte si tous les tests ont réussi ou rouge si un test a échoué.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-Vous pouvez exécuter tous les tests dans la solution, tous les tests dans un groupe, ou un ensemble de tests que vous sélectionnez. Effectuez l’une des actions suivantes :
+Vous pouvez exécuter tous les tests de la solution, tous les tests d'un groupe ou un ensemble de tests que vous sélectionnez. Effectuez l’une des actions suivantes :
 
 - Pour exécuter tous les tests d’une solution, choisissez l’icône **Exécuter tout**.
 
@@ -111,17 +111,17 @@ Pour afficher les détails d'un test individuel, sélectionnez le test.
 
 Le volet d'informations de test affiche les informations suivantes :
 
-- Nom du fichier source et numéro de ligne de la méthode de test.
+- Le nom du fichier source et le numéro de ligne de la méthode de test
 
-- Statut du test.
+- L'état du test
 
-- Temps d'exécution de la méthode.
+- La durée nécessaire à l'exécution de la méthode de test
 
-Si le test échoue, le volet d'informations affiche également :
+Si le test échoue, le volet d'informations affiche également ce qui suit :
 
-- Le message retourné par l'infrastructure de tests unitaires pour le test.
+- Le message retourné par l'infrastructure de tests unitaires pour le test
 
-- La trace de la pile au moment de l'échec du test.
+- La trace de la pile au moment où le test a échoué.
 
 ### <a name="view-the-source-code-of-a-test-method"></a>Afficher le code source d'une méthode de test
 
@@ -298,12 +298,12 @@ Par exemple, `FullName:"MyClass" - FullName:"PerfTest"` retourne tous les tests 
 
 ## <a name="debug-and-analyze-unit-tests"></a>Déboguer et analyser des tests unitaires
 
-Vous pouvez utiliser l'Explorateur de tests pour démarrer une session de débogage de vos tests. L'exécution pas à pas de votre code avec le débogueur Visual Studio vous conduit de manière transparente à des allers et retours entre les tests unitaires et le projet testé. Pour démarrer le débogage :
+Vous pouvez utiliser l'Explorateur de tests pour démarrer une session de débogage pour vos tests. L'exécution pas à pas de votre code avec le débogueur Visual Studio vous conduit de manière transparente à des allers et retours entre les tests unitaires et le projet testé. Pour démarrer le débogage :
 
 1. Dans l’éditeur Visual Studio, définissez un point d’arrêt dans une ou plusieurs méthodes de test que vous souhaitez déboguer.
 
     > [!NOTE]
-    > Comme les méthodes de test peuvent s'exécuter dans n'importe quel ordre, définissez les points d'arrêt dans toutes les méthodes de test que vous souhaitez déboguer.
+    > Les méthodes de test pouvant s'exécuter dans n'importe quel ordre, définissez des points d'arrêt dans toutes les méthodes de test que vous souhaitez déboguer.
 
 2. Dans l’Explorateur de tests, sélectionnez les méthodes de test, puis choisissez **Déboguer les tests sélectionnés** dans le menu contextuel (clic droit).
 

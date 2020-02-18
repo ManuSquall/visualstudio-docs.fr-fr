@@ -1,7 +1,7 @@
 ---
 title: Déboguer une application parallèle | Microsoft Docs
 description: Déboguer à l’aide des fenêtres tâches parallèles et piles parallèles dans Visual Studio
-ms.date: 03/22/2018
+ms.date: 02/14/2020
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2213da69561e8868c158a3b2cbcaa8efc6adfaf
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c9079fc17da9f89ceae61cbd7d4f086f1db133cf
+ms.sourcegitcommit: 6ef52c2030b37ea7a64fddb32f050ecfb77dd918
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72728598"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77416423"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>Procédure pas à pas : débogage d’une application parallèle dansC#Visual Studio ( C++, Visual Basic,)
 
@@ -45,10 +45,10 @@ Cette procédure pas à pas indique comment utiliser les fenêtres **Tâches par
 
 - Comment les fenêtres gèrent l'échelle avec les fonctionnalités de regroupement, de zoom et autres.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Conditions préalables requises
  Cette procédure pas à pas suppose que **uniquement mon code** est activé (il est activé par défaut dans les versions plus récentes de Visual Studio). Dans le menu **Outils**, cliquez sur **Options**, développez le nœud **Débogage**, sélectionnez **Général**, puis **Activer Uniquement mon code (Managé uniquement)** . Si vous ne définissez pas cette fonctionnalité, vous pouvez quand même effectuer cette procédure pas à pas, mais vos résultats peuvent différer de ceux des illustrations.
 
-## <a name="c-sample"></a>Exemple C#
+## <a name="c-sample"></a>Exemple de code C#
  Si vous utilisez l'exemple C#, cette procédure pas à pas suppose également que le code externe est masqué. Pour afficher ou masquer le code externe, cliquez avec le bouton droit sur l’en-tête de table **Nom** de la fenêtre **Pile des appels**, puis activez ou désactivez **Afficher le code externe**. Si vous ne définissez pas cette fonctionnalité, vous pouvez quand même effectuer cette procédure pas à pas, mais vos résultats peuvent différer de ceux des illustrations.
 
 ## <a name="c-sample"></a>Exemple C++
@@ -64,25 +64,37 @@ Cette procédure pas à pas indique comment utiliser les fenêtres **Tâches par
 
 1. Ouvrez Visual Studio et créez un projet.
 
-    ::: moniker range=">=vs-2019"
-    Appuyez sur **Échap** pour fermer la fenêtre de démarrage. Tapez **CTRL + Q** pour ouvrir la zone de recherche, tapez **console** (ou **c++** ), choisissez **modèles**, puis :
+   ::: moniker range=">=vs-2019"
 
-    - Pour C# ou Visual Basic, choisissez **créer un nouveau projet d’application console (.NET Framework)** pour C# ou Visual Basic. Dans la boîte de dialogue qui apparaît, choisissez **Créer**.
-    - Pour C++, choisissez **créer un projet d’application console** pour C++. Dans la boîte de dialogue qui apparaît, choisissez **Créer**.
+   Si la fenêtre de démarrage n’est pas ouverte, choisissez **fichier** > **fenêtre démarrer**.
 
-    Ensuite, tapez un nom ou utilisez le nom par défaut, puis cliquez sur **créer**.
-    ::: moniker-end
-    ::: moniker range="vs-2017"
-    Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**. Dans le volet gauche de la boîte de dialogue **nouveau projet** , choisissez ce qui suit :
+   Dans la fenêtre de démarrage, choisissez **Créer un projet**.
 
-    - Pour une C# application, sous **Visual C#** , choisissez **Bureau Windows**, puis dans le volet central, choisissez **application console (.NET Framework)** .
-    - Pour une application Visual Basic, sous **Visual Basic**, choisissez **Bureau Windows**, puis dans le volet central, choisissez **application console (.NET Framework)** .
-    - Pour une C++ application, sous **Visual C++** , choisissez **Bureau Windows**,, puis **application console Windows**.
+   Dans la fenêtre **Créer un projet**, entrez ou tapez *console* dans la zone de recherche. Ensuite, choisissez **C#** , **C++** ou **Visual Basic** dans la liste langue, puis choisissez **Windows** dans la liste plateforme. 
 
-    Ensuite, tapez un nom ou utilisez le nom par défaut, puis cliquez sur **OK**.
-    ::: moniker-end
+   Après avoir appliqué les filtres de langue et de plateforme, choisissez l' **application console (.net Core)** ou C++, pour, le modèle d' **application console** , puis choisissez **suivant**.
 
-    Si vous ne voyez pas le modèle de projet **Application console**, accédez à **Outils** > **Obtenir les outils et fonctionnalités...** , qui ouvre Visual Studio Installer. Choisissez la charge de travail **Développement .NET Desktop** ou **Développement Desktop avec C++** , puis choisissez **Modifier**.
+   > [!NOTE]
+   > Si vous ne voyez pas le modèle approprié, accédez à **outils** > **obtenir les outils et fonctionnalités...** , qui ouvre le Visual Studio installer. Choisissez la charge de travail **Développement .NET Desktop** ou **Développement Desktop avec C++** , puis choisissez **Modifier**.
+
+   Dans la fenêtre **configurer votre nouveau projet** , tapez un nom ou utilisez le nom par défaut dans la zone **nom du projet** . Choisissez ensuite **Créer**.
+
+   ::: moniker-end
+   ::: moniker range="vs-2017"
+   Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**. Dans le volet gauche de la boîte de dialogue **nouveau projet** , choisissez ce qui suit :
+
+   - Pour une C# application, sous **Visual C#** , choisissez **Bureau Windows**, puis dans le volet central, choisissez **application console (.NET Framework)** .
+   - Pour une application Visual Basic, sous **Visual Basic**, choisissez **Bureau Windows**, puis dans le volet central, choisissez **application console (.NET Framework)** .
+   - Pour une C++ application, sous **Visual C++** , choisissez **Bureau Windows**,, puis **application console Windows**.
+
+   Si vous ne voyez pas **l’application console (.net Core)** ou, C++pour, le modèle de projet d' **application console** , accédez à **Outils** > **obtenir les outils et fonctionnalités...** , qui ouvre le Visual Studio installer. Choisissez la charge de travail **Développement .NET Desktop** ou **Développement Desktop avec C++** , puis choisissez **Modifier**.
+
+   Ensuite, tapez un nom ou utilisez le nom par défaut, puis cliquez sur **OK**.
+
+   Sélectionnez **OK**.
+   ::: moniker-end
+
+   Un nouveau projet console s'affiche. Une fois le projet créé, un fichier source s’affiche.
 
 1. Ouvrez le fichier de code .cpp, .cs ou .vb dans le projet. Supprimez son contenu pour créer un fichier de code vide.
 
@@ -92,14 +104,14 @@ Cette procédure pas à pas indique comment utiliser les fenêtres **Tâches par
    [!code-cpp[Debugger#1](../debugger/codesnippet/CPP/walkthrough-debugging-a-parallel-application_1.cpp)]
    [!code-vb[Debugger#1](../debugger/codesnippet/VisualBasic/walkthrough-debugging-a-parallel-application_1.vb)]
 
-1. Dans le menu **Fichier**, cliquez sur **Enregistrer tout**.
+1. Dans le menu **Fichier** , cliquez sur **Enregistrer tout**.
 
 1. Dans le menu **Générer**, cliquez sur **Régénérer la solution**.
 
     Notez qu'il y a quatre appels à `Debugger.Break` (`DebugBreak` dans l'exemple C++). Vous n'avez donc pas à insérer de points d'arrêt. La simple exécution de l'application entraînera son arrêt dans le débogueur jusqu'à quatre fois.
 
 ## <a name="using-the-parallel-stacks-window-threads-view"></a>Utilisation de la fenêtre Piles parallèles : vue Threads
- Dans le menu **Déboguer**, cliquez sur **Démarrer le débogage**. Attendez que le premier point d'arrêt soit atteint.
+ Dans le menu **Déboguer** , cliquez sur **Démarrer le débogage**. Attendez que le premier point d'arrêt soit atteint.
 
 #### <a name="to-view-the-call-stack-of-a-single-thread"></a>Pour afficher la pile des appels d'un thread unique
 
@@ -244,7 +256,7 @@ Cette procédure pas à pas indique comment utiliser les fenêtres **Tâches par
 
      ![Deux tâches en attente dans la fenêtre tâches](../debugger/media/pdb_walkthrough_7.png "PDB_Walkthrough_7")
 
-     La tâche 4, ensuite, attend un gestionnaire possédé par le thread assigné à la tâche 2. (Cliquez avec le bouton droit sur la ligne d’en-tête et choisissez **colonnes**  >  l'**affectation de threads** pour afficher la valeur d’affectation de thread pour la tâche 2).
+     La tâche 4, ensuite, attend un gestionnaire possédé par le thread assigné à la tâche 2. (Cliquez avec le bouton droit sur la ligne d’en-tête et choisissez **colonnes** > l' **affectation de threads** pour afficher la valeur d’affectation de thread pour la tâche 2).
 
      ![Tâche en attente et info-bulle dans la fenêtre tâches](../debugger/media/pdb_walkthrough_7a.png "PDB_Walkthrough_7A")
 
@@ -308,7 +320,7 @@ Cette procédure pas à pas indique comment utiliser les fenêtres **Tâches par
 
      Vous pouvez verrouiller le thread sous-jacent d'une ou plusieurs tâches, ainsi que verrouiller tous les threads sauf celui qui est assigné. Un thread figé est représenté dans la fenêtre **tâches** comme il le fait dans la fenêtre **Threads** , par une icône de *Pause* bleue.
 
-## <a name="summary"></a>Récapitulatif
+## <a name="summary"></a>Résumé
  Cette procédure pas à pas a présenté les fenêtres de débogage **Tâches parallèles** et **Piles parallèles**. Vous pouvez utiliser ces fenêtres sur de véritables projets qui utilisent du code multithread. Vous pouvez examiner le code parallèle rédigé en C++, C# ou Visual Basic.
 
 ## <a name="see-also"></a>Voir aussi
@@ -316,6 +328,6 @@ Cette procédure pas à pas indique comment utiliser les fenêtres **Tâches par
 - [Présentation du débogueur](../debugger/debugger-feature-tour.md)
 - [Débogage du code managé](../debugger/debugging-managed-code.md)
 - [Programmation parallèle](/dotnet/standard/parallel-programming/index)
-- [Runtime d’accès concurrentiel](/cpp/parallel/concrt/concurrency-runtime)
+- [Le runtime d’accès concurrentiel](/cpp/parallel/concrt/concurrency-runtime)
 - [Utilisation de la fenêtre Piles parallèles](../debugger/using-the-parallel-stacks-window.md)
 - [Utilisation de la fenêtre Tâches](../debugger/using-the-tasks-window.md)
