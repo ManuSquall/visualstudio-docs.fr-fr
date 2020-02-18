@@ -15,22 +15,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3acdaabffc35122616cced4113abbc5a43beb9a1
-ms.sourcegitcommit: 16175e0cea6af528e9ec76f0b94690faaf1bed30
+ms.openlocfilehash: 9340657704900feb5ebdc188103109872ee39f5d
+ms.sourcegitcommit: e3b9cbeea282f1b531c6a3f60515ebfe1688aa0e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2019
-ms.locfileid: "71481973"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77439118"
 ---
 # <a name="verifyfilehash-task"></a>VerifyFileHash, tâche
 
-Vérifie qu’un fichier correspond au hachage de fichier attendu.
+Vérifie qu’un fichier correspond au hachage de fichier attendu. Si le hachage ne correspond pas, la tâche échoue.
 
 Cette tâche a été ajoutée dans la version 15.8, mais nécessite une [solution de contournement](https://github.com/Microsoft/msbuild/pull/3999#issuecomment-458193272) pour une utilisation avec les versions de MSBuild antérieures à 16.0.
 
 ## <a name="task-parameters"></a>Paramètres de tâche
 
- Le tableau ci-dessous décrit les paramètres de la tâche `VerifyFileHash` .
+ Le tableau ci-dessous décrit les paramètres de la tâche `VerifyFileHash`.
 
 |Paramètre|Description|
 |---------------|-----------------|
@@ -61,7 +61,31 @@ L’exemple suivant utilise la tâche `VerifyFileHash` pour vérifier sa propre 
 </Project>
 ```
 
+Sur MSBuild 16,5 et versions ultérieures, si vous ne souhaitez pas que la génération échoue lorsque le hachage ne correspond pas, par exemple, si vous utilisez la comparaison de hachage comme condition pour le workflow de contrôle, vous pouvez rétrograder l’avertissement à un message à l’aide du code suivant :
+
+```xml
+  <PropertyGroup>
+    <MSBuildWarningsAsMessages>$(MSBuildWarningsAsMessages);MSB3952</MSBuildWarningsAsMessages>
+  </PropertyGroup>
+
+  <Target Name="DemoVerifyCheck">
+    <VerifyFileHash File="$(MSBuildThisFileFullPath)"
+                    Hash="1"
+                    ContinueOnError="WarnAndContinue" />
+
+    <PropertyGroup>
+      <HashMatched>$(MSBuildLastTaskResult)</HashMatched>
+    </PropertyGroup>
+
+    <Message Condition=" '$(HashMatched)' != 'true'"
+             Text="The hash didn't match" />
+
+    <Message Condition=" '$(HashMatched)' == 'true'"
+             Text="The hash did match" />
+  </Target>
+```
+
 ## <a name="see-also"></a>Voir aussi
 
-- [Tâches](../msbuild/msbuild-tasks.md)
+- [Tâches :](../msbuild/msbuild-tasks.md)
 - [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)

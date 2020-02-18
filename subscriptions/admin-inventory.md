@@ -3,15 +3,15 @@ title: Inventaire des environnements de préproduction | Visual Studio Marketpla
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/23/2019
+ms.date: 02/17/2020
 ms.topic: conceptual
 description: Découvrir en quoi consiste la responsabilité des administrateurs pour l’exécution des inventaires de préproduction
-ms.openlocfilehash: 8218b1802a6369aed00be63572c80cba7b5c29f3
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 0eacd177b0901d866bbb974aca81a0e77cdaf25d
+ms.sourcegitcommit: e3b9cbeea282f1b531c6a3f60515ebfe1688aa0e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75849822"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77439115"
 ---
 # <a name="inventory-of-pre-production-environment"></a>Inventaire de l’environnement de préproduction
 Les abonnements Visual Studio simplifient la gestion des actifs en comptant les utilisateurs plutôt que les appareils.
@@ -29,9 +29,15 @@ Voici plusieurs façons de simplifier l’inventaire de votre environnement de p
 - [Prise en charge des abonnements et de l’administration de Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [Conditions du programme de licence en volume](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
-## <a name="next-steps"></a>Étapes suivantes :
+## <a name="next-steps"></a>Étapes suivantes
 En savoir plus sur les responsabilités des administrateurs :
 - [Responsabilités de l’administrateur](admin-responsibilities.md)
-- [Gérer de grandes équipes et des fournisseurs externes](manage-teams.md)
-- [Suivre les affectations d’utilisateurs et traiter les commandes](assignments-orders.md)
+- [Gérer des grandes équipes et des prestataires externes](manage-teams.md)
+- [Suivre l’attribution des utilisateurs et traiter les commandes](assignments-orders.md)
 - Utiliser le rapport [Utilisation maximale](maximum-usage.md) pour suivre les engagements d’achat
+
+## <a name="see-also"></a>Voir aussi
+- [Documentation de Visual Studio](/visualstudio/)
+- [Documentation Azure DevOps](/azure/devops/)
+- [Documentation Azure](/azure/)
+- [Documentation Microsoft 365](/microsoft-365/)

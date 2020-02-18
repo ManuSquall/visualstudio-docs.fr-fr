@@ -4,7 +4,7 @@ description: Écrivez un meilleur code avec moins de bogues à l’aide de Visua
 ms.custom:
 - debug-experiment
 - seodec18
-ms.date: 01/24/2019
+ms.date: 02/14/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - debugger
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1fe0a9bb1e966bd1451bb5d816eaab814071fb5
-ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
+ms.openlocfilehash: 2ac595098d793e44d65312a09fc8857225f150ef
+ms.sourcegitcommit: 6ef52c2030b37ea7a64fddb32f050ecfb77dd918
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72000173"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77416384"
 ---
 # <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>Techniques et outils de débogage pour vous aider à écrire du code plus performant
 
@@ -42,14 +42,26 @@ Le code suivant présente des bogues que vous pouvez corriger à l’aide de l�
 
 Pour créer l’application :
 
-1. Ouvrez Visual Studio et choisissez **fichier** > **nouveau** **projet** > . Sous **Visual C#** , choisissez **Bureau Windows** ou **.net Core**, puis dans le volet central, choisissez une **application console**.
+1. Vous devez avoir installé Visual Studio et le **développement .net Core multiplateforme** ou la charge de travail **développement .net Desktop** , selon le type d’application que vous souhaitez créer.
 
-    > [!NOTE]
-    > Si vous ne voyez pas le modèle de projet **Application console**, cliquez sur le lien **Ouvrir Visual Studio Installer** dans le volet gauche de la boîte de dialogue **Nouveau projet**. Visual Studio Installer est lancé. Choisissez la charge de travail **Développement .NET Desktop** ou **Développement multiplateforme .NET Core**, puis **Modifier**.
+    Si vous n’avez pas encore installé Visual Studio, accédez à la page  [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/)  pour l’installer gratuitement.
 
-2. Dans le champ **nom** , tapez **Console_Parse_JSON** , puis cliquez sur **OK**. Visual Studio crée le projet.
+    Si vous devez installer la charge de travail, mais que vous avez déjà installé Visual Studio, cliquez sur **Outils** > **Obtenir des outils et fonctionnalités**. Visual Studio Installer est lancé. Choisissez la charge de travail développement **multiplateforme .net Core** ou **développement bureautique .net** , puis choisissez **modifier**.
 
-3. Remplacez le code par défaut dans le fichier *Program.cs* du projet par l’exemple de code ci-dessous.
+1. Ouvrez Visual Studio.
+
+    ::: moniker range=">=vs-2019"
+    Dans la fenêtre de démarrage, choisissez **Créer un projet**. Tapez **console** dans la zone de recherche, puis choisissez **application console (.net Core)** ou **application console (.NET Framework)** . Sélectionnez **Suivant**. Tapez un nom de projet comme **Console_Parse_JSON** , puis cliquez sur **créer**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**. Dans le volet gauche de la boîte de dialogue **nouveau projet** , **sous C#Visual** , choisissez **application console**, puis dans le volet central, choisissez **application console (.net Core)** ou **application console (.NET Framework)** . Tapez un nom comme **Console_Parse_JSON** , puis cliquez sur **OK**.
+    ::: moniker-end
+
+    Si vous ne voyez pas le modèle de projet **application console (.net Core)** ou **application console (.NET Framework)** , accédez à **Outils** > **obtenir outils et fonctionnalités**pour ouvrir le Visual Studio installer. Choisissez la charge de travail **développement multiplateforme .net Core** ou **développement bureautique .net** , puis choisissez **modifier**.
+
+    Visual Studio crée le projet de console, qui apparaît dans l’Explorateur de solutions dans le volet droit.
+
+1. Remplacez le code par défaut dans le fichier *Program.cs* du projet par l’exemple de code ci-dessous.
 
 ```csharp
 using System;
@@ -209,7 +221,7 @@ Pour corriger cette erreur, modifiez le `points` membre de la classe `User` à p
 internal string points;
 ```
 
-en ceci :
+par ceci :
 
 ```csharp
 [DataMember]
@@ -241,7 +253,7 @@ Le tilde vert disparaît.
 
 Une fois que vous avez corrigé tous les tildes rouges et résolus, ou au moins examiné--tous les tildes verts, vous êtes prêt à démarrer le débogueur et à exécuter l’application.
 
-Appuyez sur **F5** (**Déboguer > Démarrer le débogage**) ou sur le bouton **Démarrer le débogage** ![Démarrer le débogage](../debugger/media/dbg-tour-start-debugging.png "Démarrer le débogage ") dans la barre d’outils Débogage.
+Appuyez sur **F5** (**déboguer > Démarrer le débogage**) ou sur le bouton **Démarrer** le débogage ![Démarrer le débogage](../debugger/media/dbg-tour-start-debugging.png "Démarrer le débogage") dans la barre d’outils déboguer.
 
 À ce stade, l’exemple d’application lève une exception `SerializationException` (une erreur d’exécution). Autrement dit, l’application s’amaigrissement sur les données qu’elle tente de sérialiser. Étant donné que vous avez démarré l’application en mode débogage (débogueur attaché), le programme d’assistance de l’exception du débogueur vous amène directement sur le code qui a levé l’exception et vous donne un message d’erreur utile.
 
@@ -251,7 +263,7 @@ Le message d’erreur vous indique que la valeur `4o` ne peut pas être analysé
 
 Quand vous avez rencontré une exception, vous devez poser (et répondre) à quelques questions :
 
-* S’agit-il simplement d’un bogue que vous pouvez résoudre ? Ou
+* S’agit-il simplement d’un bogue que vous pouvez résoudre ? Ou,
 
 * S’agit-il d’une exception que vos utilisateurs peuvent rencontrer ?
 
@@ -261,7 +273,7 @@ Si c’est le premier, corrigez le bogue. (Dans l’exemple d’application, cel
 users = ser.ReadObject(ms) as User[];
 ```
 
-par le code suivant :
+par ce code :
 
 ```csharp
 try
@@ -300,7 +312,7 @@ Pour l’exemple d’application, corrigez les `SerializationException` dans la 
 
 ## <a name="clarify-your-code-intent-by-using-assert"></a>Clarifier votre intention de code à l’aide d’Assert
 
-Cliquez sur le bouton **Redémarrer** ![Redémarrer l’application](../debugger/media/dbg-tour-restart.png "RestartApp") dans la barre d’outils Débogage (**Ctrl** + **Maj**  + **F5**). L’application est redémarrée en moins d’étapes. La sortie suivante s’affiche dans la fenêtre de console.
+Cliquez sur le bouton **redémarrer l'** ![application de redémarrage](../debugger/media/dbg-tour-restart.png "RestartApp") dans la barre d’outils déboguer (**CTRL** + **MAJ** + **F5**). L’application est redémarrée en moins d’étapes. La sortie suivante s’affiche dans la fenêtre de console.
 
 ![Valeur null dans la sortie](../debugger/media/write-better-code-using-assert-null-output.png)
 
@@ -336,7 +348,7 @@ En ajoutant `assert` instructions de ce type à vos fonctions pendant le process
 
 En spécifiant l’intention de cette manière, vous appliquez vos exigences. Il s’agit d’une méthode simple et pratique que vous pouvez utiliser pour exposer des bogues pendant le développement. (les instructions`assert` sont également utilisées en tant qu’élément principal dans les tests unitaires.)
 
-Cliquez sur le bouton **Redémarrer** ![Redémarrer l’application](../debugger/media/dbg-tour-restart.png "RestartApp") dans la barre d’outils Débogage (**Ctrl** + **Maj**  + **F5**).
+Cliquez sur le bouton **redémarrer l'** ![application de redémarrage](../debugger/media/dbg-tour-restart.png "RestartApp") dans la barre d’outils déboguer (**CTRL** + **MAJ** + **F5**).
 
 > [!NOTE]
 > Le code `assert` est actif uniquement dans une version Debug.
@@ -358,7 +370,7 @@ if (existingUser == false)
     User user = new User();
 ```
 
-par le code suivant :
+par ce code :
 
 ```csharp
 if (existingUser == false && users[i].firstname != null && users[i].lastname != null)
@@ -405,7 +417,7 @@ Pour savoir comment utiliser les fonctionnalités essentielles du débogueur, co
 
 Les bogues d’un autre genre incluent du code inefficace qui entraîne un ralentissement de l’exécution de votre application ou l’utilisation d’une trop grande quantité de mémoire. En général, l’optimisation des performances est une opération que vous effectuez plus tard dans le développement de vos applications. Toutefois, vous pouvez rencontrer des problèmes de performances plus tôt (par exemple, vous constatez que certaines parties de votre application s’exécutent lentement) et vous devrez peut-être tester votre application avec les outils de profilage au début. Pour plus d’informations sur les outils de profilage, tels que l’outil utilisation de l’UC et l’analyseur de mémoire, consultez [tout d’abord les outils de profilage](../profiling/profiling-feature-tour.md).
 
-## <a name="next-steps"></a>Étapes suivantes :
+## <a name="next-steps"></a>Étapes suivantes
 
 Dans cet article, vous avez appris comment éviter et résoudre de nombreux bogues courants dans votre code et quand utiliser le débogueur. Ensuite, en savoir plus sur l’utilisation du débogueur Visual Studio pour corriger les bogues.
 
