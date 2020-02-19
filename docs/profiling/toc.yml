@@ -10,7 +10,7 @@
       href: quickstart-cpu-usage-managed.md
     - name: Analyser l’utilisation de l’UC (native)
       href: quickstart-cpu-usage-native.md
-    - name: Analyser l’utilisation de l’UC (ASP.NET)
+    - name: Analyser l’utilisation du processeur (ASP.NET Core)
       href: quickstart-cpu-usage-aspnet.md
 - name: Didacticiels
   items:
