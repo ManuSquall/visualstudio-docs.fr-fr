@@ -17,12 +17,12 @@ ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe2be648703964328f9d678570137173429d84ed
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 19da163c76724ae56c0e3d83f1ed795333d081d5
+ms.sourcegitcommit: e3b9cbeea282f1b531c6a3f60515ebfe1688aa0e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76115075"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77453393"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Mettre à jour Visual Studio avec la version la plus récente
 
@@ -166,7 +166,7 @@ Si vous choisissez d’ignorer une notification, Visual Studio cesse de l’affi
 
 Nous vous encourageons à effectuer la mise à jour vers la [version la plus récente](/visualstudio/releases/2019/release-notes/) de Visual Studio 2019 afin de toujours bénéficier des fonctionnalités, correctifs et améliorations les plus récents.
 
-Et si vous n’avez pas encore installé Visual Studio 2019, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads) pour l’installer gratuitement.
+Si vous n’avez pas encore installé Visual Studio 2019, accédez à la page [téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads) pour l’installer gratuitement. Si vous utilisez actuellement une autre version de Visual Studio, vous pouvez soit [installer les versions de Visual Studio côte à côte](../install/install-visual-studio-versions-side-by-side.md), soit [désinstaller les versions antérieures de Visual Studio](../install/uninstall-visual-studio.md).
 
 > [!IMPORTANT]
 > Pour installer, mettre à jour ou modifier Visual Studio, vous devez vous connecter avec un compte qui dispose d’autorisations Administrateur. Pour plus d’informations, consultez [Autorisations utilisateur et Visual Studio](../ide/user-permissions-and-visual-studio.md).
@@ -204,7 +204,7 @@ Voici comment mettre à jour Visual&nbsp;Studio&nbsp;2019.
 
 Pour rechercher une mise à jour et l’installer, vous pouvez utiliser la barre de menus ou la zone de recherche dans Visual Studio 2019.
 
-### <a name="open-visual-studio"></a>Ouvrez Visual Studio
+### <a name="open-visual-studio"></a>Ouvrez Visual Studio.
 
 1. Dans le menu **Démarrer** de Windows, choisissez **Visual Studio 2019**.
 
@@ -228,7 +228,7 @@ Pour rechercher une mise à jour et l’installer, vous pouvez utiliser la barre
 
    Visual Studio se met à jour, se ferme, puis se rouvre.
 
-### <a name="in-visual-studio"></a>Dans Visual Studio
+### <a name="in-visual-studio"></a>Dans Visual Studio
 
 1. Dans la barre de menus, choisissez **Aide**, puis **Rechercher les mises à jour**.
 
@@ -273,7 +273,7 @@ Il existe deux modes d’installation au choix :
 
 Vous pouvez également choisir le paramètre **Télécharger automatiquement les mises à jour**, qui autorise le téléchargement des mises à jour à télécharger alors que votre ordinateur est inactif.
 
-Voici comment :
+Voici comment faire :
 
 1. Dans la barre de menus, choisissez **outils** > **options**.
 
