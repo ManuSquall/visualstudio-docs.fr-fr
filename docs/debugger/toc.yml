@@ -16,9 +16,9 @@
       href: quickstart-debug-with-managed.md
     - name: Déboguer une application C++
       href: quickstart-debug-with-cplusplus.md
-    - name: Déboguer une application ASP.NET
+    - name: Déboguer une application ASP.NET Core
       href: quickstart-debug-aspnet.md
-- name: Tutoriels
+- name: Didacticiels
   items:
     - name: 'Apprendre à déboguer C#'
       href: /visualstudio/get-started/csharp/tutorial-debugger?toc=/visualstudio/debugger/toc.json
