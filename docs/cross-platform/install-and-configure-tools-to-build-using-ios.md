@@ -28,7 +28,7 @@ Vous pouvez utiliser Visual Studio avec le **développement mobile multiplatefor
 
 Une fois que vous avez installé les outils de génération à l’aide d’iOS, reportez-vous à cet article pour savoir comment configurer et mettre à jour rapidement l’agent distant pour le développement iOS dans Visual Studio et sur votre Mac.
 
-## <a name="prerequisites"></a>Conditions préalables requises
+## <a name="prerequisites"></a>Composants requis
 
 Pour installer et utiliser l’agent distant en vue de développer du code pour iOS, vous devez tout d’abord disposer des éléments suivants :
 

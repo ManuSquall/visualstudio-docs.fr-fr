@@ -356,7 +356,7 @@ Les étapes suivantes montrent comment créer un projet DLL dans Visual Studio 2
     >
     > Maintenez la refactorisation distincte des autres modifications.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-steps"></a>Étapes suivantes :
 
 - **Isolement.** La plupart des DLL dépendent d'autres sous-systèmes tels que des bases de données et d'autres DLL. Ces autres composants sont souvent développés en parallèle. Pour permettre que le test unitaire soit exécuté pendant que les autres composants ne sont pas encore disponibles, vous devez remplacer
 

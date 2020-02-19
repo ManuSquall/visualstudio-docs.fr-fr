@@ -1,7 +1,7 @@
 ---
 title: Débogage du code pour grands débutants
 description: Si vous effectuez un débogage pour la première fois, découvrez quelques principes qui vous aideront à exécuter votre application en mode débogage avec Visual Studio.
-ms.date: 07/06/2018
+ms.date: 02/14/2020
 ms.topic: tutorial
 helpviewer_keywords:
 - debugger
@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f5cfe112aff36910ca4b4861d3a65cc7ea61655
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: HT
+ms.openlocfilehash: 5c3cf9d5e4d72ed316344d1bda930d0416e9efe5
+ms.sourcegitcommit: 6ef52c2030b37ea7a64fddb32f050ecfb77dd918
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679383"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77416393"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Guide du débogage pour grands débutants
 
@@ -31,7 +31,7 @@ Cela aide d’identifier clairement le problème que vous avez rencontré avant 
 
 * Que devait faire votre code initialement ?
 
-* Que s’est-il passé à la place ?
+* Que s’est-il passé en réalité ?
 
     Si vous avez rencontré une erreur (exception) pendant l’exécution de votre application, cela peut être une bonne chose ! Une exception est un événement inattendu rencontré lors de l’exécution de code, généralement une erreur quelconque. Un outil de débogage vous permet d’accéder à l’emplacement exact dans votre code où l’exception s’est produite, et peut vous aider à examiner les solutions possibles.
 
@@ -54,7 +54,7 @@ Avant d’étudier un bogue ou une erreur, réfléchissez aux hypothèses qui vo
 * Connaissez-vous l’intention du code ? Il est souvent plus difficile de déboguer le code rédigé par quelqu’un d’autre. Si ce n’est pas votre code, vous devrez peut-être consacrer du temps à apprendre ce que fait exactement le code avant de pouvoir le déboguer efficacement.
 
     > [!TIP]
-    > Lors de l’écriture de code, commencez à petite échelle et avec du code qui fonctionne ! (Un bon exemple de code est utile ici.) Parfois, il est plus facile de corriger un ensemble volumineux ou complexe de code en commençant par un petit segment de code qui illustre le but principal que vous voulez atteindre. Ensuite, vous pouvez modifier ou ajouter du code de façon incrémentielle, en effectuant des tests à chaque stade.
+    > Lors de l’écriture de code, commencez à petite échelle et avec du code qui fonctionne ! (Un bon exemple de code est utile ici.) Parfois, il est plus facile de corriger un ensemble de code volumineux ou complexe en commençant par un petit morceau de code qui illustre la tâche principale que vous essayez d’atteindre. Ensuite, vous pouvez modifier ou ajouter du code de façon incrémentielle, en effectuant des tests à chaque stade.
 
 Par la remise en question de vos hypothèses, vous pouvez réduire le temps nécessaire pour identifier un problème dans votre code. Vous pouvez également réduire le temps nécessaire pour résoudre un problème.
 
@@ -64,7 +64,7 @@ Quand vous exécutez normalement une application, vous voyez les erreurs et les 
 
 Quand vous exécutez une application dans un débogueur (autrement dit en *mode débogage*), le débogueur surveille activement tout ce qui se produit durant l’exécution du programme. Cela vous permet également de suspendre l’exécution de l’application à tout moment pour examiner son état, et de parcourir votre code ligne par ligne afin d’observer chaque détail à mesure qu’il se produit.
 
-Dans Visual Studio, vous basculez en mode débogage à l’aide de la touche **F5** (ou de la commande de menu **Déboguer** > **Démarrer le débogage** ou du bouton **Démarrer le débogage** ![Démarrer le débogage](../debugger/media/dbg-tour-start-debugging.png "Démarrer le débogage") dans la barre d’outils Débogage). Si des exceptions se produisent, l’Assistance sur l’exception de Visual Studio vous amène au point exact où l’exception s’est produite et fournit d’autres informations utiles. Pour plus d’informations sur la prise en charge des exceptions dans le code, consultez [Techniques et outils de débogage](../debugger/write-better-code-with-visual-studio.md).
+Dans Visual Studio, vous devez passer en mode de débogage à l’aide de la touche **F5** (ou de la commande de menu **déboguer** > **Démarrer le débogage** ou du bouton **Démarrer** le débogage ![Démarrer le débogage](../debugger/media/dbg-tour-start-debugging.png "Démarrer le débogage") dans la barre d’outils déboguer). Si des exceptions se produisent, l’Assistance sur l’exception de Visual Studio vous amène au point exact où l’exception s’est produite et fournit d’autres informations utiles. Pour plus d’informations sur la prise en charge des exceptions dans le code, consultez [Techniques et outils de débogage](../debugger/write-better-code-with-visual-studio.md).
 
 Si aucune exception ne s’est produite, vous avez probablement une bonne idée de l’endroit où rechercher le problème dans votre code. C’est dans ce cas-là que l’on utilise des *points d’arrêt* avec le débogueur, pour pouvoir examiner le code plus attentivement. Les points d'arrêt constituent une fonctionnalité élémentaire et essentielle de toute procédure de débogage fiable. Quand vous définissez un point d’arrêt, Visual Studio interrompt l’exécution du code à l’emplacement du point d’arrêt pour vous permettre d’examiner les valeurs des variables, le comportement de la mémoire ou la séquence d’exécution du code.
 
@@ -85,13 +85,13 @@ Nous allons maintenant créer une application qui comporte quelques bogues.
 1. Ouvrez Visual Studio.
 
     ::: moniker range=">=vs-2019"
-    Dans la fenêtre de démarrage, choisissez **Créer un projet**. Tapez **console** dans la zone de recherche, puis choisissez **Application console (.NET Framework)** ou **Application console (.NET Core)**. Sélectionnez **Suivant**. Tapez un nom de projet comme **ConsoleApp-FirstApp**, puis cliquez sur **Créer**.
+    Dans la fenêtre de démarrage, choisissez **Créer un projet**. Tapez **console** dans la zone de recherche, puis choisissez **application console (.net Core)** ou **application console (.NET Framework)** . Sélectionnez **Suivant**. Tapez un nom de projet comme **ConsoleApp-FirstApp**, puis cliquez sur **Créer**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**. Dans le volet gauche de la boîte de dialogue **Nouveau projet**, sous **Visual C#**, choisissez **Application console** puis, dans le volet central, choisissez **Application console (.NET Framework)** ou **Application console (.NET Core)**. Tapez un nom comme **ConsoleApp-FirstApp**, puis cliquez sur **OK**.
+    Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**. Dans le volet gauche de la boîte de dialogue **Nouveau projet**, sous **Visual C#** , choisissez **Application console** puis, dans le volet central, choisissez **Application console (.NET Framework)** ou **Application console (.NET Core)** . Tapez un nom comme **ConsoleApp-FirstApp**, puis cliquez sur **OK**.
     ::: moniker-end
 
-    Si vous ne voyez pas le modèle de projet **Application console (.NET Framework)** ou **Application console (.NET Core)**, accédez à **Outils** > **Obtenir les outils et fonctionnalités**, ce qui ouvre Visual Studio Installer. Choisissez la charge de travail **Développement .NET Desktop** ou **Développement multiplateforme .NET Core**, puis choisissez **Modifier**.
+    Si vous ne voyez pas le modèle de projet **Application console (.NET Framework)** ou **Application console (.NET Core)** , accédez à **Outils** > **Obtenir les outils et fonctionnalités**, ce qui ouvre Visual Studio Installer. Choisissez la charge de travail **développement multiplateforme .net Core** ou **développement bureautique .net** , puis choisissez **modifier**.
 
     Visual Studio crée le projet de console, qui apparaît dans l’Explorateur de solutions dans le volet droit.
 
@@ -180,9 +180,9 @@ Nous allons maintenant créer une application qui comporte quelques bogues.
 
     *nom de la galaxie*, *distance*, *type de galaxie*.
 
-### <a name="run-the-app"></a>Exécuter l'application
+### <a name="run-the-app"></a>Exécuter l’application
 
-1. Appuyez sur **F5** ou sur le bouton **Démarrer le débogage** ![Démarrer le débogage](../debugger/media/dbg-tour-start-debugging.png "Démarrer le débogage") dans la barre d’outils Débogage située au-dessus de l’éditeur de code.
+1. Appuyez sur **F5** ou cliquez sur le bouton **Démarrer** le débogage ![Démarrer le débogage](../debugger/media/dbg-tour-start-debugging.png "Démarrer le débogage") dans la barre d’outils déboguer, située au-dessus de l’éditeur de code.
 
     L’application démarre et aucune exception n’est signalée par le débogueur. Toutefois, la sortie visible dans la fenêtre de console n’est pas celle à laquelle vous vous attendez. Voici la sortie attendue :
 
@@ -223,7 +223,7 @@ Nous allons maintenant créer une application qui comporte quelques bogues.
 
     Puisque nous constatons la présence d’un problème dans la sortie, nous allons commencer le débogage en examinant le code précédent qui définit la sortie dans le débogueur.
 
-1. Cliquez sur le bouton **Redémarrer** ![Redémarrer l’application](../debugger/media/dbg-tour-restart.png "RestartApp") dans la barre d’outils Débogage (**Ctrl** + **Maj** + **F5**).
+1. Cliquez sur le bouton **redémarrer l'** ![application de redémarrage](../debugger/media/dbg-tour-restart.png "RestartApp") dans la barre d’outils déboguer (**CTRL** + **MAJ** + **F5**).
 
     L’application s’interrompt au point d’arrêt que vous avez défini. La mise en surbrillance jaune indique où le débogueur est suspendu (la ligne de code jaune n’a pas encore été exécutée).
 
@@ -255,7 +255,7 @@ Nous allons maintenant créer une application qui comporte quelques bogues.
     public GType GalaxyType { get; set; }
     ```
 
-1. Cliquez sur le bouton **Redémarrer** ![Redémarrer l’application](../debugger/media/dbg-tour-restart.png "RestartApp") dans la barre d’outils Débogage (**Ctrl** + **Maj**  + **F5**) pour recompiler le code et redémarrer.
+1. Cliquez sur le bouton **redémarrer l'** ![application de redémarrage](../debugger/media/dbg-tour-restart.png "RestartApp") dans la barre d’outils déboguer (**CTRL** + **MAJ** + **F5**) pour recompiler le code et redémarrer.
 
     Maintenant, quand le débogueur s’arrête sur `Console.WriteLine`, vous pouvez pointer sur `theGalaxy.GalaxyType.MyGType` et vérifier que la valeur est définie correctement.
 
@@ -280,7 +280,7 @@ Nous allons maintenant créer une application qui comporte quelques bogues.
 
     Ce code étant celui où le type de galaxie est défini, nous devons l’examiner plus en détail.
 
-1. Cliquez sur le bouton **Redémarrer** ![Redémarrer l’application](../debugger/media/dbg-tour-restart.png "RestartApp") dans la barre d’outils Débogage (**Ctrl** + **Maj**  + **F5**) pour redémarrer.
+1. Cliquez sur le bouton **redémarrer l'** ![application de redémarrage](../debugger/media/dbg-tour-restart.png "RestartApp") dans la barre d’outils déboguer (**CTRL** + **MAJ** + **F5**) pour redémarrer.
 
     Le débogueur s’arrête sur la ligne de code où vous avez défini le point d’arrêt.
 
@@ -308,7 +308,7 @@ Nous allons maintenant créer une application qui comporte quelques bogues.
 
     Appuyez sur n’importe quelle touche pour fermer l’application.
 
-## <a name="summary"></a>Récapitulatif
+## <a name="summary"></a>Résumé
 
 Quand vous constatez un problème, utilisez le débogueur et les [commandes de pas à pas](../debugger/navigating-through-code-with-the-debugger.md) telles que **F10** et **F11** pour rechercher la région de code où se trouve le problème.
 

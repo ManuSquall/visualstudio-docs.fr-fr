@@ -38,7 +38,7 @@ La plupart des autres produits de base de données SQL et NoSQL répertoriés ic
 
 **Microsoft Azure**
 
-- SQL Database
+- Base de données SQL
 - Azure Cosmos DB
 - Stockage (objets BLOB, tables, files d’attente, fichiers)
 - SQL Data Warehouse
@@ -59,7 +59,7 @@ La plupart des autres produits de base de données SQL et NoSQL répertoriés ic
 
 **NoSQL**
 
-- Apache cassandra
+- Apache Cassandra
 - CouchDB
 - MongoDB
 - NDatabase

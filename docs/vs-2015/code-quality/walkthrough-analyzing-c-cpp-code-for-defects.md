@@ -38,7 +38,7 @@ Cette procédure pas à pas montre comment analyserC++ c/code pour identifier le
   
 - Annoter le code source pour améliorer l’analyse des erreurs de code.  
   
-## <a name="prerequisites"></a>Conditions préalables requises  
+## <a name="prerequisites"></a>Composants requis  
   
 - [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] ou [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)].  
   
