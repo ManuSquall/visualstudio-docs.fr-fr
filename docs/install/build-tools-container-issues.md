@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: a43c5dd9bec88ca7e972b4d681bc25c47a86bf0d
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: a281113f75484940544e5cbd53292207114d21c0
+ms.sourcegitcommit: e3b9cbeea282f1b531c6a3f60515ebfe1688aa0e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76115210"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77453380"
 ---
 # <a name="known-issues-for-containers"></a>Problèmes connus liés aux conteneurs
 
@@ -40,11 +40,11 @@ Les problèmes connus suivants se produisent quand vous installez Visual Studio 
 * Passez `--norestart` sur la ligne de commande. Au moment de la rédaction de cet article, le redémarrage d’un conteneur Windows au sein même de celui-ci retourne `ERROR_TOO_MANY_OPEN_FILES` à l’hôte.
 * Si vous basez votre image directement sur microsoft/windowsservercore, l’installation du .NET Framework risque de ne pas s’effectuer correctement et aucune erreur d’installation ne sera signalée. Le code managé risque de ne pas s’exécuter une fois l’installation terminée. Basez plutôt votre image sur [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) ou une version ultérieure. Par exemple, vous pouvez voir une erreur lors de la génération avec MSBuild qui est similaire à ceci :
 
-  > C:\BuildTools\MSBuild\15.0\bin\Roslyn\Microsoft.CSharp.Core.targets(84,5) : erreur MSB6003: Impossible d’exécuter la tâche exécutable spécifiée "csc.exe". Impossible de charger le fichier ou l’assembly 'System.IO.FileSystem, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a', ou l’une de ses dépendances. Le système ne parvient pas à localiser le fichier spécifié.
+  > C:\BuildTools\MSBuild\15.0\bin\Roslyn\Microsoft.CSharp.Core.targets(84,5) : erreur MSB6003: Impossible d’exécuter la tâche exécutable spécifiée "csc.exe". Impossible de charger le fichier ou l’assembly 'System.IO.FileSystem, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a', ou l’une de ses dépendances. Le système ne peut pas trouver le fichier spécifié.
 
 ::: moniker range="vs-2017"
 
-* Vous ne pouvez pas installer Visual Studio 2017 version 15.8 ou antérieure (n’importe quel produit) sur mcr.microsoft.com/windows/servercore:1809 ou ultérieur. Pour plus d'informations, voir https://aka.ms/setup/containers/servercore1809.
+* Vous ne pouvez pas installer Visual Studio 2017 version 15.8 ou antérieure (n’importe quel produit) sur mcr.microsoft.com/windows/servercore:1809 ou ultérieur. Consultez la rubrique https://aka.ms/setup/containers/servercore1809 (éventuellement en anglais) pour plus d'informations.
 
 ::: moniker-end
 
@@ -54,7 +54,11 @@ Les problèmes connus suivants peuvent se produire lorsque vous utilisez un cont
 
 * L’utilisation d’IntelliTrace au sein d’un conteneur peut ne pas fonctionner dans [certains scénarios](https://github.com/Microsoft/vstest/issues/940).
 * Dans les versions antérieures de Docker pour Windows, la taille des images du conteneur par défaut est de seulement 20 Go et n’ajuste pas Build Tools. Suivez [instructions pour modifier la taille des images](/virtualization/windowscontainers/manage-containers/container-storage#storage-limits) à 127 Go ou plus.
-
+Pour confirmer un problème d’espace disque, consultez les fichiers journaux pour plus d’informations. Votre fichier `vslogs\dd_setup_<timestamp>_errors.log` inclura les éléments suivants si l’espace disque est insuffisant : 
+```
+Pre-check verification: Visual Studio needs at least 91.99 GB of disk space. Try to free up space on C:\ or change your target drive.
+Pre-check verification failed with error(s) :  SizePreCheckEvaluator.
+```
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Voir aussi
