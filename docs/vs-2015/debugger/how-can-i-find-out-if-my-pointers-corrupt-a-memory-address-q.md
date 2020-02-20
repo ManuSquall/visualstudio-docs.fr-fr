@@ -1,5 +1,5 @@
 ---
-title: Comment puis-je savoir si mes pointeurs endommagent une adresse mémoire ? | Microsoft Docs
+title: Comment puis-je savoir si mes pointeurs endommagent une adresse mémoire ? | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,12 +22,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 80947590215258521c3de5042bd981de7582fbda
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1d4f23b885b2e72e53d288946df18e038d9d956d
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68205476"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476779"
 ---
 # <a name="how-can-i-find-out-if-my-pointers-corrupt-a-memory-address"></a>Comment puis-je savoir si mes pointeurs endommagent une adresse mémoire ?
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Description du problème
   
 #### <a name="check-for-heap-corruption"></a>Vérifier l'altération du tas  
   
-- La plus grande partie de l'altération de la mémoire est provoquée par l'altération du tas. Servez-vous de l'utilitaire Global Flags (gflags.exe) ou de pageheap.exe. Consultez [ http://support.microsoft.com/default.aspx?scid=kb; en-us ; 286470](http://support.microsoft.com/default.aspx?scid=kb;en-us;286470).  
+- La plus grande partie de l'altération de la mémoire est provoquée par l'altération du tas. Servez-vous de l'utilitaire Global Flags (gflags.exe) ou de pageheap.exe. Consultez [Gflags et pageheap](/windows-hardware/drivers/debugger/gflags-and-pageheap) et [comment utiliser l’utilitaire pageheap pour détecter les erreurs de mémoire dans un projet C++ Microsoft Visual](https://support.microsoft.com/help/264471/how-to-use-the-pageheap-utility-to-detect-memory-errors-in-a-microsoft).
   
 #### <a name="to-find-where-the-memory-address-is-modified"></a>Pour rechercher la modification de l'adresse mémoire :  
   

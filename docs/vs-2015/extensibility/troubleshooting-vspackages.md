@@ -1,5 +1,5 @@
 ---
-title: Dépannage de VSPackages | Microsoft Docs
+title: Dépannage des VSPackages | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -11,97 +11,97 @@ ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 62c1847e9ff476e364ed99cabc4b47a970c4c4da
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: b092c910b0303a62289e75b168e39628cbd0314b
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65695503"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476990"
 ---
 # <a name="troubleshooting-vspackages"></a>Dépannage de VSPackages
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Voici les problèmes courants que vous pourriez rencontrer avec votre VSPackage et conseils pour résoudre les problèmes.  
+Voici les problèmes courants que vous pouvez rencontrer avec le VSPackage et des conseils pour résoudre les problèmes.  
   
-### <a name="to-troubleshoot-a-vspackage-that-keeps-visual-studio-from-starting"></a>Pour résoudre les problèmes d’un VSPackage qui empêche le démarrage de Visual Studio  
+### <a name="to-troubleshoot-a-vspackage-that-keeps-visual-studio-from-starting"></a>Pour dépanner un VSPackage qui empêche le démarrage de Visual Studio  
   
-- Démarrer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] en mode sans échec.  
+- Démarrez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] en mode sans échec.  
   
-     Pour démarrer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] en mode sans échec, à l’invite de commandes, tapez **devenv.exe /safemode**.  
+     Pour démarrer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] en mode sans échec, à l’invite de commandes, tapez **devenv. exe/safemode**.  
   
-     Pendant ce processus, aucun VSPackages ne sont chargés, sauf les VSPackages sont inclus avec [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+     Pendant ce processus, aucun VSPackages n’est chargé, à l’exception des VSPackages inclus avec [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-### <a name="to-troubleshoot-a-vspackage-that-does-not-load"></a>Pour résoudre les problèmes d’un VSPackage qui ne se charge pas  
+### <a name="to-troubleshoot-a-vspackage-that-does-not-load"></a>Pour dépanner un VSPackage qui ne se charge pas  
   
-1. Assurez-vous que vous utilisez la racine de Registre dans laquelle le VSPackage est inscrit à exécuter, généralement la racine de Registre expérimentale.  
+1. Assurez-vous que vous utilisez la racine de Registre dans laquelle le VSPackage est inscrit pour s’exécuter, généralement la racine de Registre expérimentale.  
   
-     Pour plus d’informations, consultez [l’Instance expérimentale](../extensibility/the-experimental-instance.md).  
+     Pour plus d’informations, consultez [l’instance expérimentale](../extensibility/the-experimental-instance.md).  
   
-2. Si le VSPackage est ciblé pour s’exécuter dans la racine de Registre expérimentale, assurez-vous que vous exécutiez la version expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+2. Si le VSPackage est ciblé pour s’exécuter dans la racine expérimentale du Registre, assurez-vous que vous exécutez la version expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-     Pour exécuter la version expérimentale, tapez la commande suivante dans une fenêtre de commande : **devenv /rootsuffix exp**.  
+     Pour exécuter la version expérimentale, tapez la commande suivante dans une fenêtre de commande : **devenv/rootsuffix exp**.  
   
-3. Vérifiez vos entrées de Registre du VSPackage.  
+3. Vérifiez vos entrées de Registre VSPackage.  
   
-     Pour plus d’informations, consultez [l’inscription de VSPackages](internals/registering-vspackages.md) et [la gestion de VSPackages](../extensibility/managing-vspackages.md).  
+     Pour plus d’informations, consultez [inscription de VSPackages](internals/registering-vspackages.md) et [gestion des VSPackages](../extensibility/managing-vspackages.md).  
   
-4. Ouvrez le **sortie** fenêtre de l’instance de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] qui ne peut pas charger le VSPackage. Plus d’informations sur la raison pour laquelle le VSPackage ne peut pas charger peuvent être affichés dans cette fenêtre.  
+4. Ouvrez la fenêtre **sortie** de l’instance de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] qui ne parvient pas à charger le VSPackage. Des informations sur la raison de l’échec du chargement du VSPackage peuvent s’afficher dans cette fenêtre.  
   
     > [!NOTE]
-    > Si vous démarrez la version expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] à partir de la [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] l’environnement de développement intégré (IDE), Inspectez la **sortie** fenêtre des deux versions.  
+    > Si vous démarrez la version expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] à partir de l’environnement de développement intégré (IDE) [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], examinez la fenêtre **sortie** des deux versions.  
   
 5. Examinez le journal d’activité.  
   
-     Pour plus d'informations, voir [Procédure : Utiliser le journal d’activité](../extensibility/how-to-use-the-activity-log.md).  
+     Pour plus d’informations, consultez [procédure : utiliser le journal d’activité](../extensibility/how-to-use-the-activity-log.md).  
   
-6. Pour plus d’informations sur les exceptions levées par l’IDE, cliquez sur **Exceptions** sur le **déboguer** menu pour activer les exceptions. Dans le **Exceptions** boîte de dialogue Sélectionner les types d’exceptions sur lequel vous souhaitez plus d’informations.  
+6. Pour plus d’informations sur les exceptions levées par l’IDE, cliquez sur **exceptions** dans le menu **Déboguer** pour activer les exceptions. Dans la boîte de dialogue **exceptions** , sélectionnez les types d’exceptions pour lesquels vous souhaitez obtenir plus d’informations.  
   
-### <a name="to-troubleshoot-a-vspackage-that-does-not-register"></a>Pour résoudre les problèmes d’un VSPackage qui n’a pas été inscrit  
+### <a name="to-troubleshoot-a-vspackage-that-does-not-register"></a>Pour dépanner un VSPackage qui ne s’inscrit pas  
   
-1. Assurez-vous que l’assembly VSPackage réside dans un emplacement approuvé. RegPkg ne peut pas inscrire des assemblys dans un emplacement non approuvé ou niveau de confiance partiel, tel qu’un partage réseau dans la configuration de sécurité par défaut .net. Bien qu’un avertissement s’affiche chaque fois qu’un utilisateur crée un projet dans un emplacement non approuvé, la case à cocher « ne plus afficher ce message » peut empêcher cet avertissement ne se reproduisent.  
+1. Assurez-vous que l’assembly VSPackage se trouve dans un emplacement approuvé. RegPkg ne peut pas inscrire les assemblys dans un emplacement de confiance partielle ou non fiable, tel qu’un partage réseau dans la configuration de sécurité .NET par défaut. Bien qu’un avertissement s’affiche chaque fois qu’un utilisateur crée un projet dans un emplacement non approuvé, la case à cocher ne plus afficher ce message peut empêcher que cet avertissement se reproduise.  
   
-### <a name="to-troubleshoot-a-command-that-is-not-visible-or-that-generates-an-error-when-you-click-a-command"></a>Pour résoudre les problèmes d’une commande qui n’est pas visible, ou qui génère une erreur lorsque vous cliquez sur une commande  
+### <a name="to-troubleshoot-a-command-that-is-not-visible-or-that-generates-an-error-when-you-click-a-command"></a>Pour dépanner une commande qui n’est pas visible ou qui génère une erreur lorsque vous cliquez sur une commande  
   
-1. Fusionner les commandes de menu Nouveau ou modifié et celles figurant déjà dans l’IDE en tapant ce qui suit à la [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] invite de commandes : **devenv /rootsuffix Exp /setup**.  
+1. Fusionnez les commandes de menu nouvelles ou modifiées et celles déjà présentes dans l’IDE en tapant ce qui suit à l’invite de commandes [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] : **devenv/Rootsuffix exp/Setup**.  
   
-2. Assurez-vous que l’option [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] trouverez UI.dll pour votre VSPackage.  
+2. Assurez-vous que [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] peut trouver UI. dll pour votre VSPackage.  
   
-    1. Rechercher le CLSID du VSPackage dans la section de Packages du Registre :  
+    1. Recherchez le CLSID du VSPackage dans la section packages du Registre :  
   
-         HKLM\Software\Microsoft\Visual Studio\\*\<version>* \Packages  
+         HKLM\Software\Microsoft\Visual Studio\\ *\<version >* \Packages  
   
-    2. Vérifiez que le chemin d’accès donné par la sous-clé SatelliteDll est correct.  
+    2. Vérifiez que le chemin d’accès spécifié par la sous-clé SatelliteDll est correct.  
   
-### <a name="to-troubleshoot-a-vspackage-that-behaves-unexpectedly"></a>Pour résoudre les problèmes d’un VSPackage qui fonctionne de manière inattendue  
+### <a name="to-troubleshoot-a-vspackage-that-behaves-unexpectedly"></a>Pour dépanner un VSPackage qui se comporte de manière inattendue  
   
 1. Définissez les points d'arrêt dans votre code.  
   
-     Bons points de départ pour le débogage sont le constructeur et la méthode d’initialisation. Vous pouvez également définir des points d’arrêt dans la zone que vous souhaitez évaluer, par exemple une commande de menu. Pour activer des points d’arrêt, vous devez exécuter sous le débogueur.  
+     Les bons points de départ pour le débogage sont le constructeur et la méthode d’initialisation. Vous pouvez également définir des points d’arrêt dans la zone que vous souhaitez évaluer, par exemple une commande de menu. Pour activer les points d’arrêt, vous devez exécuter sous le débogueur.  
   
-    1. Dans le menu **Projet**, cliquez sur **Propriétés**.  
+    1. Dans le menu **Projet** , cliquez sur **Propriétés**.  
   
-    2. Sur le **Pages de propriétés** boîte de dialogue, sélectionnez le **déboguer** onglet.  
+    2. Dans la boîte de dialogue **pages de propriétés** , sélectionnez l’onglet **Déboguer** .  
   
-    3. Dans le **arguments de ligne de commande** , tapez le suffixe de la racine de l’environnement de développement qui ciblée par votre VSPackage. Par exemple, pour sélectionner la build expérimentale, tapez : **RootSuffix Exp**.  
+    3. Dans la zone **arguments de ligne de commande** , tapez le suffixe racine de l’environnement de développement que votre VSPackage cible. Par exemple, pour sélectionner la build expérimentale, tapez : **/RootSuffix exp**.  
   
-    4. Sur le **déboguer** menu, cliquez sur **démarrer le débogage** ou appuyez sur F5.  
+    4. Dans le menu **Déboguer** , cliquez sur **Démarrer le débogage** ou appuyez sur F5.  
   
         > [!NOTE]
-        > Si vous déboguez un projet, créer ou charger une instance existante de votre projet maintenant.  
+        > Si vous déboguez un projet, créez ou chargez maintenant une instance existante de votre projet.  
   
-2. Utiliser le journal d’activité.  
+2. Utilisez le journal d’activité.  
   
-     Comportement de VSPackage de trace en écrivant des informations dans le journal d’activité à des points clés. Cette technique est particulièrement utile lorsque vous exécutez un VSPackage dans un environnement de détail. Pour plus d'informations, voir [Procédure : Utiliser le journal d’activité](../extensibility/how-to-use-the-activity-log.md).  
+     Suivre le comportement du VSPackage en écrivant des informations dans le journal d’activité à des points clés. Cette technique est particulièrement utile lorsque vous exécutez un VSPackage dans un environnement de vente au détail. Pour plus d’informations, consultez [procédure : utiliser le journal d’activité](../extensibility/how-to-use-the-activity-log.md).  
   
-3. Utilisez les symboles publics.  
+3. Utilisez des symboles publics.  
   
      Pour améliorer la lisibilité lors du débogage, vous pouvez joindre des symboles au débogueur.  
   
-    1. À partir de la **Outils/Options** menu, accédez à la **débogage/symboles** boîte de dialogue.  
+    1. Dans le menu **Outils/Options** , accédez à la boîte de dialogue **débogage/symboles** .  
   
-    2. Ajoutez ce **de symboles (.pdb) emplacement_fichier**:  
+    2. Ajoutez l' **emplacement de ce fichier de symboles (. pdb)** :  
   
-         [http://msdl.microsoft.com/download/symbols](http://msdl.microsoft.com/download/symbols)  
+         `https://msdl.microsoft.com/download/symbols`  
   
     3. Pour améliorer les performances, spécifiez un dossier de cache de symboles, par exemple :  
   
@@ -109,21 +109,21 @@ Voici les problèmes courants que vous pourriez rencontrer avec votre VSPackage 
         C:\symbols  
         ```  
   
-### <a name="to-troubleshoot-a-missing-vspackage-or-one-of-its-dependencies"></a>Pour résoudre les problèmes d’un VSPackage manquant ou une de ses dépendances  
+### <a name="to-troubleshoot-a-missing-vspackage-or-one-of-its-dependencies"></a>Pour résoudre les problèmes liés à un VSPackage manquant ou à l’une de ses dépendances  
   
 1. Pour le code managé, assurez-vous que les chemins d’accès de référence sont corrects.  
   
-   1. Dans le menu **Projet**, cliquez sur **Propriétés**.  
+   1. Dans le menu **Projet** , cliquez sur **Propriétés**.  
   
-   2. Sélectionnez le **références** onglet dans le **Pages de propriétés** boîte de dialogue et assurez-vous que tous les chemins d’accès sont corrects. Vous pouvez également utiliser le **Explorateur d’objets** pour rechercher les objets référencés.  
+   2. Sélectionnez l’onglet **références** de la boîte de dialogue **pages de propriétés** et vérifiez que tous les chemins d’accès sont corrects. Vous pouvez également utiliser l’Explorateur d' **objets** pour rechercher les objets référencés.  
   
-        Pour le code managé, vous pouvez utiliser la [Fuslogvw.exe (Visionneuse Journal de liaison d’Assembly)](https://msdn.microsoft.com/library/e32fa443-0778-4cc3-bf36-5c8ea297d296) pour afficher les détails des chargements d’assemblys ayant échoué.  
+        Pour le code managé, vous pouvez utiliser [Fuslogvw. exe (visionneuse du journal de liaison d’assembly)](https://msdn.microsoft.com/library/e32fa443-0778-4cc3-bf36-5c8ea297d296) pour afficher les détails des chargements d’assembly ayant échoué.  
   
-2. Du code non managé, rechercher le CLSID du VSPackage dans le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nœud de Registre CLSID :  
+2. Pour le code non managé, recherchez le CLSID du VSPackage dans le nœud de Registre [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] CLSID :  
   
-    HKLM\Software\Microsoft\Visual Studio\\*\<version>* \CLSID  
+    HKLM\Software\Microsoft\Visual Studio\\ *\<version >* \CLSID  
   
-   Vérifiez que l’entrée InprocServer32 a le chemin correct de la dll de VSPackage.  
+   Assurez-vous que l’entrée InprocServer32 contient le chemin d’accès correct de la dll VSPackage.  
   
 ## <a name="see-also"></a>Voir aussi  
  [VSPackages](../extensibility/internals/vspackages.md)

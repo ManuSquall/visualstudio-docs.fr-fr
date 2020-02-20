@@ -1,5 +1,5 @@
 ---
-title: Élément LocalizedName (schéma du module linguistique VSIX) | Microsoft Docs
+title: LocalizedName, élément (schéma du module linguistique VSIX) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -8,17 +8,17 @@ ms.assetid: 57b7f502-3b04-42d9-90d5-f57772a7c757
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: fcbda9f8c7a98d0830c898c81471854efc3a6403
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 58e491290122a9d525ff8129333ac0f52ac5f778
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65686139"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77477034"
 ---
-# <a name="localizedname-element-vsix-language-pack-schema"></a>Élément LocalizedName (schéma du module linguistique VSIX)
+# <a name="localizedname-element-vsix-language-pack-schema"></a>LocalizedName, élément (schéma du module linguistique VSIX)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Obligatoire. Le nom localisé de l’extension à installer.  
+Obligatoire. Nom localisé de l’extension à installer.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -45,21 +45,21 @@ Obligatoire. Le nom localisé de l’extension à installer.
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[Élément VSIXLanguagePack](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|Obligatoire. Fournit l’élément racine pour un module linguistique VSIX.|  
+|[Élément VSIXLanguagePack](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|Obligatoire. Fournit l’élément racine d’un module linguistique VSIX.|  
   
-## <a name="text-value"></a>Valeur texte  
- Obligatoire. Le nom du module linguistique dans le langage cible.  
+## <a name="text-value"></a>Valeur de texte  
+ Obligatoire. Nom du module linguistique dans la langue cible.  
   
-## <a name="element-information"></a>Informations sur les éléments  
+## <a name="element-information"></a>Informations sur l'élément  
   
 |                 |                                                           |
 |-----------------|-----------------------------------------------------------|
-|    Espace de noms    | http://schemas.microsoft.com/developer/vsx-schema-lp/2010 |
+|    Espace de noms    | `http://schemas.microsoft.com/developer/vsx-schema-lp/2010` |
 |   Nom du schéma   |                 Schéma du module linguistique VSIX                 |
-| Fichier de validation |                VSIXLanguagePackSchema.xsd                 |
+| Fichier de validation |                VSIXLanguagePackSchema. xsd                 |
 |  Peut être vide   |                      Non applicable                       |
   
 ## <a name="see-also"></a>Voir aussi  
  [Référence de schéma du module linguistique VSX](../extensibility/vsx-language-pack-schema-reference.md)   
- [Localisation de Packages VSIX](../extensibility/localizing-vsix-packages.md)   
- [Référence du schéma 1.0 Extension VSIX](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
+ [Localisation des packages VSIX](../extensibility/localizing-vsix-packages.md)   
+ [Informations de référence sur le schéma d’extension VSIX 1,0](/previous-versions/dd393700(v=vs.110))

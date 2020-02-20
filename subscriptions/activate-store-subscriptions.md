@@ -6,12 +6,12 @@ manager: lank
 ms.date: 02/17/2020
 ms.topic: conceptual
 description: Découvrez comment activer les abonnements Visual Studio achetés dans le Microsoft Store.
-ms.openlocfilehash: 8df8125280e17eba941e099d8d27b37a19de79b1
-ms.sourcegitcommit: e3b9cbeea282f1b531c6a3f60515ebfe1688aa0e
+ms.openlocfilehash: 2fb3d958206cd3fcd76654b95d5be4b8d8e8a3a4
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77439151"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476764"
 ---
 # <a name="how-do-i-activate-a-subscription-acquired-from-the-microsoft-store"></a>Comment activer un abonnement acheté auprès du Microsoft Store ?
 Si vous avez acheté un abonnement Visual Studio dans le Microsoft Store, vous pouvez initier les étapes d’activation à partir de « la page de confirmation » ou de « l’e-mail de confirmation » que vous avez reçu suite à votre achat.
@@ -35,7 +35,8 @@ Si vous avez acheté un abonnement Visual Studio dans le Microsoft Store, vous p
 Consultez la page [Avantages](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) pour voir tous les avantages liés aux outils, aux services, à la formation et au support inclus dans votre abonnement.  Nous vous recommandons de configurer vos produits [Visual Studio](vs-ide-benefit.md) et [Azure DevOps](vs-azure-devops.md) pour commencer. 
 
 ## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](/visualstudio/)
-- [Documentation Azure DevOps](/azure/devops/)
-- [Documentation Azure](/azure/)
-- [Documentation Microsoft 365](/microsoft-365/)
+- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentation Azure](https://docs.microsoft.com/azure/)
+- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+

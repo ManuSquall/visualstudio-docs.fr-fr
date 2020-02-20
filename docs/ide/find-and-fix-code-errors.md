@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e66d0d1ed8115b214b1da1654cbefdc96f7d1774
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 48fa03dec65bcdc1e6c3af94200cfb6c46907e49
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588614"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476872"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Faire fonctionner le code dans Visual Studio
 
@@ -78,7 +78,7 @@ Visual Studio comprend un ensemble prédéfini d’[analyseurs .NET Compiler Pla
 
 ### <a name="c-code-analysis"></a>Analyse du code C++
 
-Pour analyser du code C++, exécutez une [analyse statique du code](../code-quality/quick-start-code-analysis-for-c-cpp.md). Prenez l’habitude d’effectuer cette analyse après avoir résolu les erreurs évidentes qui font obstacle à la génération, et consacrez du temps au traitement des avertissements qu’elle peut produire. Cela vous épargnera quelques maux de tête, et vous pouvez même apprendre quelques techniques relatives au style du code.
+Pour analyser du code C++, exécutez une [analyse statique du code](/cpp/code-quality/quick-start-code-analysis-for-c-cpp). Prenez l’habitude d’effectuer cette analyse après avoir résolu les erreurs évidentes qui font obstacle à la génération, et consacrez du temps au traitement des avertissements qu’elle peut produire. Cela vous épargnera quelques maux de tête, et vous pouvez même apprendre quelques techniques relatives au style du code.
 
 Appuyez sur **Alt**+**F11** (ou sélectionnez **Analyser** > **Exécuter l’analyse du code sur la solution** dans le menu du haut) pour démarrer l’analyse statique du code.
 

@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Activer le débogage pour les Applications ASP.NET | Microsoft Docs'
+title: 'Comment : activer le débogage pour les applications ASP.NET | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -18,20 +18,20 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 07036fd7c1db7dc8b56502ab9c914f1ba808e876
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 5726e964a0db2fae1b902f54a14e206dbc03a148
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65703664"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77477009"
 ---
-# <a name="how-to-enable-debugging-for-aspnet-applications"></a>Procédure : Activer le débogage pour les Applications ASP.NET
+# <a name="how-to-enable-debugging-for-aspnet-applications"></a>Comment :  activer le débogage pour les applications ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Pour activer le débogage, vous devez l’activer à la fois dans la page **Propriétés du projet** et dans le fichier web.config de l’application.  
   
 > [!NOTE]  
-> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Paramètres Visual Studio](https://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Les boîtes de dialogue et les commandes de menu affichées peuvent différer de celles décrites dans l'Aide selon les paramètres actifs ou le mode d'édition. Pour modifier vos paramètres, choisissez **Paramètres d'importation et d'exportation** dans le menu **Outils** . Pour plus d’informations, consultez [Paramètres Visual Studio](/previous-versions/zbhkx167(v=vs.140)).  
   
 ### <a name="to-enable-aspnet-debugging-in-the-project-properties-visual-basicc"></a>Pour activer le débogage ASP.NET dans les propriétés de projet (Visual Basic/C#)  
   
@@ -48,7 +48,7 @@ Pour activer le débogage, vous devez l’activer à la fois dans la page **Prop
     > [!NOTE]  
     > Vous ne pouvez pas accéder au fichier à distance si vous utilisez un navigateur web. Pour des raisons de sécurité, [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] configure Microsoft IIS pour empêcher le navigateur d’accéder directement aux fichiers web.config. Si vous essayez d’accéder à un fichier de configuration à l’aide d’un navigateur, vous obtenez une erreur 403 d’accès HTTP (interdit).  
   
-2. Le fichier web.config est un fichier XML qui contient des sections imbriquées marquées par des balises. Recherchez l’élément `configuration/system.web/compilation` . Si l’élément de compilation n’existe pas, créez-le.  
+2. Le fichier web.config est un fichier XML qui contient des sections imbriquées marquées par des balises. Recherchez l’élément `configuration/system.web/compilation`. Si l’élément de compilation n’existe pas, créez-le.  
   
 3. Si l’élément `compilation` ne contient pas d’attribut `debug` , ajoutez cet attribut à l’élément.  
   
@@ -83,7 +83,7 @@ Le fichier web.config doit ressembler à l’exemple suivant. Notez qu’il peut
   
 Un site web peut contenir plusieurs répertoires et sous-répertoires virtuels, et chacun d’eux peut contenir des fichiers web.config. Les applications [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] héritent des paramètres des fichiers web.config à des niveaux supérieurs dans le chemin d’URL. Les fichiers de configuration hiérarchiques permettent de modifier les paramètres de plusieurs applications [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] en même temps, par exemple, les paramètres de toutes les applications situées à un niveau inférieur dans la hiérarchie. Toutefois, si `debug` est défini dans un fichier situé à un niveau hiérarchique inférieur, il remplace la valeur la plus élevée.  
   
-Par exemple, vous pouvez spécifier `debug="true"` dans www.microsoft.com/aaa/Web.config. Ainsi, les applications contenues dans le dossier aaa ou dans ses sous-dossiers hériteront de ce paramètre. Par conséquent, si votre [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] application se trouve dans www.microsoft.com/aaa/bbb, elle héritera de ce paramètre, tout comme les [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] applications dans www.microsoft.com/aaa/ccc, www.microsoft.com/aaa/ddd et ainsi de suite. La seule exception concerne le cas où l’une de ces applications remplace le paramètre à l’aide de son propre fichier Web.config de niveau inférieur.  
+Par exemple, vous pouvez spécifier `debug="true"` dans `www.microsoft.com/aaa/Web.config`et toute application du dossier AAA ou de n’importe quel sous-dossier d’AAA héritera de ce paramètre. Par conséquent, si votre application [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] est `www.microsoft.com/aaa/bbb`, elle hérite de ce paramètre, tout comme les applications [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] dans `www.microsoft.com/aaa/ccc`, `www.microsoft.com/aaa/ddd`, etc. La seule exception concerne le cas où l’une de ces applications remplace le paramètre à l’aide de son propre fichier Web.config de niveau inférieur.  
   
 L’activation du mode débogage affecte considérablement les performances de votre application [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] . Pensez à désactiver le mode débogage avant de déployer une application release ou de mesurer les performances.  
   

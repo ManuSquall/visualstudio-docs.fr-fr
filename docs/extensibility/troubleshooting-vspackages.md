@@ -11,12 +11,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94cb575969f232c9b4d60e7ddc93f9f727132951
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: a231d8d02ce7432188053293684d09c7243dfd5e
+ms.sourcegitcommit: 260d093d2287ba791f28bdc7103493beabf80b2e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72718714"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77506401"
 ---
 # <a name="troubleshooting-vspackages"></a>Dépannage de VSPackages
 Voici les problèmes courants que vous pouvez rencontrer avec le VSPackage et des conseils pour résoudre les problèmes.
@@ -66,7 +66,7 @@ Voici les problèmes courants que vous pouvez rencontrer avec le VSPackage et de
 
    1. Recherchez le CLSID du VSPackage dans la section packages du Registre :
 
-        HKLM\Software\Microsoft\Visual Studio \\ *\<version >* \Packages
+        HKLM\Software\Microsoft\Visual Studio\\ *\<version >* \Packages
 
    2. Vérifiez que le chemin d’accès spécifié par la sous-clé SatelliteDll est correct.
 
@@ -76,7 +76,7 @@ Voici les problèmes courants que vous pouvez rencontrer avec le VSPackage et de
 
      Les bons points de départ pour le débogage sont le constructeur et la méthode d’initialisation. Vous pouvez également définir des points d’arrêt dans la zone que vous souhaitez évaluer, par exemple une commande de menu. Pour activer les points d’arrêt, vous devez exécuter sous le débogueur.
 
-    1. Dans le menu **Projet**, cliquez sur **Propriétés**.
+    1. Dans le menu **Projet** , cliquez sur **Propriétés**.
 
     2. Dans la boîte de dialogue **pages de propriétés** , sélectionnez l’onglet **Déboguer** .
 
@@ -99,7 +99,7 @@ Voici les problèmes courants que vous pouvez rencontrer avec le VSPackage et de
 
     2. Ajoutez l' **emplacement de ce fichier de symboles (. pdb)** :
 
-         [http://msdl.microsoft.com/download/symbols](http://msdl.microsoft.com/download/symbols)
+         `https://msdl.microsoft.com/download/symbols`
 
     3. Pour améliorer les performances, spécifiez un dossier de cache de symboles, par exemple :
 
@@ -111,7 +111,7 @@ Voici les problèmes courants que vous pouvez rencontrer avec le VSPackage et de
 
 1. Pour le code managé, assurez-vous que les chemins d’accès de référence sont corrects.
 
-   1. Dans le menu **Projet**, cliquez sur **Propriétés**.
+   1. Dans le menu **Projet** , cliquez sur **Propriétés**.
 
    2. Sélectionnez l’onglet **références** de la boîte de dialogue **pages de propriétés** et vérifiez que tous les chemins d’accès sont corrects. Vous pouvez également utiliser l’Explorateur d' **objets** pour rechercher les objets référencés.
 
@@ -119,7 +119,7 @@ Voici les problèmes courants que vous pouvez rencontrer avec le VSPackage et de
 
 2. Pour le code non managé, recherchez le CLSID du VSPackage dans le nœud de Registre [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] CLSID :
 
-    HKLM\Software\Microsoft\Visual Studio \\ *\<version >* \CLSID
+    HKLM\Software\Microsoft\Visual Studio\\ *\<version >* \CLSID
 
    Assurez-vous que l’entrée InprocServer32 contient le chemin d’accès correct de la dll VSPackage.
 

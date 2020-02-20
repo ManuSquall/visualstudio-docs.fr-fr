@@ -12,17 +12,17 @@ ms.assetid: 47b48f84-8a96-401f-84df-0baa8a96d26e
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1ddb35af1d9f6541c85466a28bf9479ed4ce2fa4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d3ea3086931ab655209a5ca26d4d1527462fb205
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68195845"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476798"
 ---
 # <a name="idebugengine3setsymbolpath"></a>IDebugEngine3::SetSymbolPath
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Définit le chemin d’accès ou les chemins d’accès des symboles de débogage sont recherchés.  
+Définit le ou les chemins d’accès dans lesquels sont recherchés les symboles de débogage.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -46,23 +46,23 @@ int SetSymbolPath(
   
 |Paramètre|Description|  
 |---------------|-----------------|  
-|`szSymbolSearchPath`|[in] Chaîne contenant le chemin de recherche de symbole ou les chemins d’accès. Pour plus d’informations, consultez « Remarques ». Ne peut pas être null.|  
-|`szSymbolCachePath`|[in] Chaîne contenant le chemin d’accès local où les symboles peuvent être mis en cache. Ne peut pas être null.|  
-|`Flags`|[in] Pas utilisé ; toujours défini sur 0.|  
+|`szSymbolSearchPath`|dans Chaîne contenant le chemin d’accès ou les chemins d’accès de recherche des symboles. Pour plus d’informations, consultez « Remarques ». Ne peut pas avoir la valeur null.|  
+|`szSymbolCachePath`|dans Chaîne contenant le chemin d’accès local dans lequel les symboles peuvent être mis en cache. Ne peut pas avoir la valeur null.|  
+|`Flags`|dans Non utilisé ; toujours défini sur 0.|  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- La chaîne `szSymbolSearchPath` est une liste d’un ou plusieurs chemins séparés par des points-virgules, pour rechercher des symboles. Ces chemins d’accès peuvent être un chemin d’accès local, un chemin d’accès UNC-style ou une URL. Ces chemins d’accès peuvent également être un mélange de types différents. Si le chemin d’accès est UNC (par exemple, \\\Symserver\Symbols), puis le moteur de débogage doit déterminer si le chemin d’accès à un serveur de symbole et doit être en mesure de charger les symboles à partir de ce serveur, la mise en cache dans le chemin d’accès spécifié par `szSymbolCachePath`.  
+ La chaîne `szSymbolSearchPath` est une liste d’un ou plusieurs chemins d’accès, séparés par des points-virgules, pour rechercher des symboles. Ces chemins d’accès peuvent être un chemin d’accès local, un chemin d’accès de style UNC ou une URL. Ces chemins d’accès peuvent également être une combinaison de différents types. Si le chemin d’accès est UNC (par exemple, \\\Symserver\Symbols), le moteur de débogage doit déterminer si le chemin d’accès est un serveur de symboles et doit être en mesure de charger les symboles à partir de ce serveur, en les mettant en cache dans le chemin d’accès spécifié par `szSymbolCachePath`.  
   
- Le chemin des symboles peut également contenir un ou plusieurs emplacements de cache. Les caches sont répertoriés par ordre de priorité, avec le cache de priorité le plus élevé en premier et séparées par des * symboles. Par exemple :  
+ Le chemin d’accès aux symboles peut également contenir un ou plusieurs emplacements du cache. Les caches sont répertoriés par ordre de priorité, avec le cache avec la priorité la plus élevée en premier, et séparés par des symboles *. Par exemple :  
   
 ```  
-\\symbols\symbols;\\someotherserver\symbols;c:\symbols\httpsymbols*http://msdl.microsoft.com  
+\\symbols\symbols;\\someotherserver\symbols;c:\symbols\httpsymbols*https://msdl.microsoft.com  
 ```  
   
- Le [LoadSymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md) méthode effectue la charge réelle des symboles.  
+ La méthode [LoadSymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md) effectue la charge réelle des symboles.  
   
 ## <a name="see-also"></a>Voir aussi  
  [LoadSymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md)   

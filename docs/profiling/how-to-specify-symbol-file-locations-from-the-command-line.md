@@ -9,12 +9,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b4c4230ca2539b55f57990b90ae33d1f53726dc
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.openlocfilehash: 604863cbef5e42b31450ea09dffa56a1a00ae992
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74778724"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476889"
 ---
 # <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Guide pratique pour spécifier les emplacements du fichier de symboles à partir de la ligne de commande
 Pour pouvoir afficher des informations de symboles telles que les noms de fonctions et les numéros de ligne, l’outil en ligne de commande VSPerfReport nécessite l’accès aux fichiers de symboles (.*pdb*) des composants profilés, ainsi qu’aux fichiers système Windows. Les fichiers de symboles sont créés lors de la compilation d’un composant. Pour plus d’informations, consultez [VSPerfReport](../profiling/vsperfreport.md). VSPerfReport recherche automatiquement les fichiers de symboles dans les emplacements suivants :
@@ -46,9 +46,9 @@ Pour pouvoir afficher des informations de symboles telles que les noms de foncti
 
 2. Utilisez la syntaxe suivante pour définir la variable d’environnement **_NT_SYMBOL_PATH** ou l’option VSPerfReport /SymbolPath :
 
-    **SRV\\** * *LocalStore* **\*http://msdl.microsoft.com/download/symbols**
+    `srv*<LocalStore>*https://msdl.microsoft.com/download/symbols`
 
-    où *LocalStore* est le chemin du répertoire local que vous avez créé.
+    où *<LocalStore>* est le chemin d’accès du répertoire local que vous avez créé.
 
 ## <a name="specify-component-symbol-files"></a>Spécifier des fichiers de symboles de composants
  Les Outils de profilage recherchent les fichiers .*pdb* des composants que vous souhaitez profiler dans leurs emplacements d’origine, qui sont stockés dans les composants ou dans le dossier contenant le fichier de données de profilage. Vous pouvez spécifier d’autres emplacements dans lesquels effectuer la recherche en ajoutant un ou plusieurs chemins à **_NT_SYMBOL_PATH** ou à l’option **/SymbolPath**. Séparez les chemins par des points-virgules.
@@ -56,8 +56,10 @@ Pour pouvoir afficher des informations de symboles telles que les noms de foncti
 ## <a name="example"></a>Exemple
  La ligne de commande suivante définit le serveur de symboles Windows comme valeur de la variable d’environnement **_NT_SYMBOL_PATH** et **C:\Symbols** comme répertoire local.
 
- **set _NT_SYMBOL_PATH=srv\*C:\symbols\*http://msdl.microsoft.com/download/symbols**
+ ```cmd
+  set  _NT_SYMBOL_PATH=srv*C:\symbols*https://msdl.microsoft.com/download/symbols
+ ```
 
  La ligne de commande VSPerfReport suivante ajoute le répertoire *C:\Projects\Symbols* au chemin de recherche à l’aide de l’option **/SymbolPath**.
 
- **VSPerfReport**  *MyApp* **.exe /SymbolPath:C:\Projects\Symbols /summary:all**
+ **VSPerfReport**  *MyApp* **. exe/SymbolPath : C:\Projects\Symbols/Summary : All**

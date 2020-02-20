@@ -20,17 +20,17 @@ caps.latest.revision: 15
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 04f32fa0426039f50c0a0352ef0b04900d705a98
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: c0e54f68ab7e34f1cfb6abb228f552cc3792a8b7
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72657438"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476917"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personnaliser la façon dont Visual Studio crée des légendes pour les contrôles liés aux données
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Lorsque vous faites glisser des éléments depuis la [fenêtre sources de données](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) vers le Concepteur Windows Forms, une attention particulière est prise en compte : les noms des colonnes dans les étiquettes de légende sont reformatés dans une chaîne plus lisible quand deux mots ou plus sont trouvés pour être concaténés réunis. Vous pouvez personnaliser la façon dont ces étiquettes sont créées, en définissant les valeurs **SmartCaptionExpression**, **SmartCaptionReplacement**et **SmartCaptionSuffix** dans **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\ 10.0 \** clé de registre des concepteurs de données.
+Lorsque vous faites glisser des éléments depuis la [fenêtre sources de données](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) vers le Concepteur Windows Forms, une attention particulière est prise en compte : les noms des colonnes dans les étiquettes de légende sont reformatés dans une chaîne plus lisible quand deux mots ou plus sont trouvés pour être concaténés. Vous pouvez personnaliser la façon dont ces étiquettes sont créées, en définissant les valeurs **SmartCaptionExpression**, **SmartCaptionReplacement**et **SmartCaptionSuffix** dans la clé de Registre **HKEY_CURRENT_USER \software\microsoft\visualstudio\10.0\data concepteurs** .
 
 > [!NOTE]
 > Cette clé de Registre n’existe pas tant que vous ne l’avez pas créée.
@@ -49,14 +49,12 @@ Lorsque vous faites glisser des éléments depuis la [fenêtre sources de donné
 
 |Élément de Registre|Valeur par défaut|Explication|
 |-------------------|-------------------|-----------------|
-|**SmartCaptionExpression**|(\\ \p{Ll}) (\\ \p{Lu}) &#124;_+|Correspond à un caractère minuscule suivi d’un caractère majuscule ou un trait de soulignement.|
+|**SmartCaptionExpression**|(\\\p{Ll}) (\\\p{Lu}) &#124;_+|Correspond à un caractère minuscule suivi d’un caractère majuscule ou un trait de soulignement.|
 |**SmartCaptionReplacement**|$1 $2|$1 représente tous les caractères correspondants dans les premières parenthèses de l’expression, et $2 représente tous les caractères correspondants dans les secondes. Le remplacement correspond à la première correspondance, à un espace, puis à la deuxième correspondance.|
 |**SmartCaptionSuffix**|:|Représente un caractère ajouté à la chaîne retournée. Par exemple, si la légende est `Company Name`, le suffixe le rend `Company Name:`|
 
 > [!CAUTION]
 > Vous devez être très prudent lorsque vous faites quoi que ce soit dans l’éditeur du Registre. Sauvegardez le registre avant de le modifier. Si vous utilisez l’éditeur du registre de façon incorrecte, vous risquez de provoquer de sérieux problèmes pouvant vous obliger à réinstaller votre système d’exploitation. Microsoft ne garantit pas que les problèmes que vous provoquez à l’aide de l’éditeur du Registre peuvent être résolus de manière incorrecte. Les opérations exécutées dans l'Éditeur du Registre le sont à vos propres risques.
->
-> L’article de la base de connaissances suivant contient des instructions pour la sauvegarde, la modification et la restauration du Registre : [Description du Registre Microsoft Windows](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb  ; en-US ; 256986)
 
 ### <a name="to-modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Pour modifier le comportement de la légende intelligente de la fenêtre sources de données
 
