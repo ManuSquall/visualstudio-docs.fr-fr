@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 5087c439533aa447708d0f1bfae653054fd16089
-ms.sourcegitcommit: a86ee68e3ec23869b6eaaf6c6b7946b1d9a88d01
+ms.openlocfilehash: 46c6110cb977e3a309f27fc5a014522494f18c9a
+ms.sourcegitcommit: 260d093d2287ba791f28bdc7103493beabf80b2e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77144788"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77506516"
 ---
 # <a name="generate-source-code-from-net-assemblies-while-debugging"></a>Générer du code source à partir d’assemblys .NET pendant le débogage
 
@@ -82,13 +82,13 @@ Lors du débogage du code qui a été décompilé à partir d’un assembly qui 
 - Les variables locales peuvent ne pas avoir de noms exacts.
 - Certaines variables peuvent ne pas être disponibles pour l’évaluation.
 
-Pour plus d’informations, consultez le problème GitHub : [IChsarpCompiler. décompilateur Integration dans vs Debugger](https://github.com/icsharpcode/ILSpy/issues/1901).
+Pour plus d’informations, consultez le problème GitHub : [icsharpcode. décompilateur Integration dans vs Debugger](https://github.com/icsharpcode/ILSpy/issues/1901).
 
 ### <a name="decompilation-reliability"></a>Fiabilité de la décompilation
 
 Un pourcentage relativement faible de tentatives de décompilation peut entraîner un échec. Cela est dû à une erreur de référence null de point de séquence dans ILSpy.  Nous avons atténué l’échec en interceptant ces problèmes et en faisant échouer la tentative de décompilation.
 
-Pour plus d’informations, consultez le problème GitHub : [IChsarpCompiler. décompilateur Integration dans vs Debugger](https://github.com/icsharpcode/ILSpy/issues/1901).
+Pour plus d’informations, consultez le problème GitHub : [icsharpcode. décompilateur Integration dans vs Debugger](https://github.com/icsharpcode/ILSpy/issues/1901).
 
 ### <a name="limitations-with-async-code"></a>Limitations du code asynchrone
 

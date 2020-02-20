@@ -2,7 +2,7 @@
 title: 'Didacticiel : créer une application C# console simple'
 description: Découvrez comment créer une application console C# dans Visual Studio, étape par étape.
 ms.custom: seodec18, get-started
-ms.date: 03/23/2019
+ms.date: 02/18/2020
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 740968740306bed4c2cf52191c4ff661b6247bd0
-ms.sourcegitcommit: 697f2ab875fd789685811687387e9e8e471a38c4
+ms.openlocfilehash: e72cba384d3780c738c29698f74cbc3b4898bb04
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74830006"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476721"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Didacticiel : créer une application C# console simple dans Visual Studio
 
@@ -38,13 +38,13 @@ Si vous n’avez pas encore installé Visual Studio, accédez à la page [Télé
 
 ::: moniker-end
 
-## <a name="create-a-project"></a>Créer un projet
+## <a name="create-a-project"></a>Création d’un projet
 
 Commençons par créer un projet d’application C#. Le type de projet inclut tous les fichiers de modèle dont vous aurez besoin au départ.
 
 ::: moniker range="vs-2017"
 
-1. Ouvrez Visual Studio 2017.
+1. Ouvrez Visual Studio 2017.
 
 2. Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**.
    (Vous pouvez également appuyer sur **Ctrl**+**Maj**+**N**.)
@@ -55,7 +55,7 @@ Commençons par créer un projet d’application C#. Le type de projet inclut to
 
 ### <a name="add-a-workload-optional"></a>Ajouter une charge de travail (facultatif)
 
-Si vous ne voyez pas le modèle de projet **Application console (.NET Core)** , vous pouvez l’obtenir en ajoutant la charge de travail **Développement multiplateforme .NET Core**. Voici comment procéder.
+Si vous ne voyez pas le modèle de projet **Application console (.NET Core)** , vous pouvez l’obtenir en ajoutant la charge de travail **Développement multiplateforme .NET Core**. Voici comment faire.
 
 #### <a name="option-1-use-the-new-project-dialog-box"></a>Option 1 : Utiliser la boîte de dialogue Nouveau projet
 
@@ -69,7 +69,7 @@ Si vous ne voyez pas le modèle de projet **Application console (.NET Core)** , 
 
 #### <a name="option-2-use-the-tools-menu-bar"></a>Option 2 : Utiliser la barre de menus Outils
 
-1. Quittez la boîte de dialogue **Nouveau projet** puis, dans la barre de menus supérieure, choisissez **Outils** > **Obtenir les outils et fonctionnalités**.
+1. Quittez la boîte de dialogue **nouveau projet** et, dans la barre de menus supérieure, choisissez **Outils** > **accéder à outils et fonctionnalités**.
 
 1. Visual Studio Installer est lancé. Choisissez la charge de travail **Développement multiplateforme .NET Core**, puis choisissez **Modifier**.
 
@@ -133,6 +133,9 @@ Commençons par quelques notions mathématiques de base relatives aux entiers en
     ```
 
     Notez que, quand vous procédez ainsi, la fonctionnalité IntelliSense dans Visual Studio vous offre la possibilité de renseigner automatiquement l’entrée.
+
+    > [!NOTE]
+    > L’animation suivante n’est pas destinée à dupliquer le code précédent. Il est destiné uniquement à illustrer le fonctionnement de la fonctionnalité de saisie semi-automatique.
 
     ![Animation de code mathématique avec des entiers qui illustre la fonctionnalité de saisie semi-automatique IntelliSense dans l’IDE Visual Studio](./media/integer-math-intellisense.gif)
 
@@ -268,18 +271,21 @@ Toutefois, l’application ne produit qu’un résultat décimal. Apportons quel
 
 Nous avons amélioré notre application de calculatrice de base, mais elle ne dispose pas encore des filets de sécurité nécessaires pour gérer les exceptions, comme les erreurs des entrées utilisateur.
 
-Par exemple, si vous essayez de diviser un nombre par zéro, ou entrez un caractère alphabétique lorsque l’application attend un caractère numérique (ou vice versa), l’application cesse de fonctionner et retourne une erreur.
+Par exemple, si vous essayez de diviser un nombre par zéro, ou d’entrer un caractère alpha lorsque l’application attend un caractère numérique (ou vice versa), l’application peut cesser de fonctionner, retourner une erreur ou retourner un résultat non numérique inattendu.
 
-Nous allons passer en revue quelques erreurs d’entrée utilisateur courantes, les rechercher dans le débogueur et les corriger dans le code.
+Passons en revue quelques-unes des erreurs d’entrée utilisateur courantes, localisez-les dans le débogueur s’ils y apparaissent, puis corrigez-les dans le code.
 
->[!TIP]
->Pour plus d’informations sur le débogueur et son fonctionnement, consultez la page [Premier aperçu du débogueur Visual Studio](../../debugger/debugger-feature-tour.md).
+> [!TIP]
+> Pour plus d’informations sur le débogueur et son fonctionnement, consultez la page [Premier aperçu du débogueur Visual Studio](../../debugger/debugger-feature-tour.md).
 
 ### <a name="fix-the-divide-by-zero-error"></a>Corriger l’erreur de division par zéro
 
-Lorsque vous essayez de diviser un nombre par zéro, l’application console se bloque. Visual Studio vous montre alors ce qui est incorrect dans l’éditeur de code.
+Lorsque vous essayez de diviser un nombre par zéro, l’application console peut se figer, puis vous montrer ce qui est incorrect dans l’éditeur de code.
 
    ![L’éditeur de code Visual Studio affiche l’erreur de division par zéro](./media/csharp-console-calculator-dividebyzero-error.png)
+
+> [!NOTE]
+> Parfois, l’application ne se bloque pas et le débogueur n’affiche pas d’erreur de division par zéro. Au lieu de cela, l’application peut retourner un résultat non numérique inattendu, tel qu’un symbole infini. Le correctif de code suivant s’applique toujours.
 
 Nous allons modifier le code pour gérer cette erreur.
 
@@ -321,7 +327,7 @@ Plutôt que de nous appuyer sur la classe `program` pour gérer tout le code, no
 
 La classe `Calculator` gérera le gros du travail de calcul et la classe `Program` gèrera l’interface utilisateur et le travail de capture d’erreur.
 
-Allons-y.
+Nous pouvons commencer.
 
 1. Supprimez tout ce qui se situe *après* le bloc de code suivant :
 
@@ -592,7 +598,7 @@ namespace Calculator
 
 ```
 
-## <a name="next-steps"></a>Étapes suivantes :
+## <a name="next-steps"></a>Étapes suivantes
 
 Félicitations ! Vous avez terminé ce didacticiel. Pour plus d’informations, passez aux tutoriels suivants.
 

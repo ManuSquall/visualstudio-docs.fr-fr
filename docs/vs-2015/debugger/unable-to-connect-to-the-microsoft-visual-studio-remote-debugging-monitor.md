@@ -1,5 +1,5 @@
 ---
-title: Impossible de se connecter à Microsoft Visual Studio Remote Debugging Monitor | Microsoft Docs
+title: Impossible de se connecter au Microsoft Visual Studio Remote Debugging Monitor | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9d604c8505612ff2c33e4b14241288358f920c2c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: d62e7ce1c419a9c53e40e1ecf2f71497d60d7a23
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65684831"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77477062"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Impossible de se connecter à l'ordinateur Microsoft Visual Studio Remote Debugging Monitor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "65684831"
 Ce message d’erreur apparaît lorsque vous entrez un nom non valide pour Visual Studio Remote Debugging Monitor dans la boîte de dialogue **Attacher au processus** . Le nom Remote Debugging Monitor est généralement le même que celui de l’ordinateur auquel vous tentez de vous connecter pour le débogage distant. Ce message peut survenir, car l’ordinateur distant n’existe pas sur le réseau, Remote Debugging Monitor n’est pas installé correctement sur l’ordinateur distant ou l’ordinateur distant est inaccessible en raison de problèmes de réseau ou de la présence d’un pare-feu.  
   
 > [!IMPORTANT]
-> Si vous pensez avoir reçu ce message en raison d’un bogue présent dans le produit, veuillez signaler ce problème à Visual Studio à l’aide de la fonctionnalité [Envoyer un sourire](https://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b). Si vous avez besoin d’aide supplémentaire, consultez [Talk to Us](../ide/talk-to-us.md) pour savoir comment contacter Microsoft.  
+> Si vous avez besoin d’aide supplémentaire, consultez [Talk to Us](../ide/talk-to-us.md) pour savoir comment contacter Microsoft.  
   
 ## <a name="i-got-this-message-while-i-was-debugging-locally"></a>J’ai reçu ce message pendant une session de débogage locale  
  Si ce message s’affiche pendant un débogage local, il est possible que le problème provienne de votre antivirus ou d’un pare-feu tiers. Visual Studio étant une application 32 bits, elle utilise la version 64 bits du débogueur distant pour déboguer les applications 64 bits. Les deux processus communiquent à l’aide du réseau local au sein de l’ordinateur local. Aucun trafic réseau ne quitte l’ordinateur, mais il peut arriver que des logiciels de sécurité tiers bloquent la communication.  
@@ -38,7 +38,7 @@ Ce message d’erreur apparaît lorsque vous entrez un nom non valide pour Visua
   
 ## <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
-- Assurez-vous que Visual Studio Remote Debugging Monitor est installé et exécuté sur l’ordinateur distant. Pour plus d’informations sur le débogueur distant et comment l’installer, consultez [le débogage à distance](../debugger/remote-debugging.md).  
+- Assurez-vous que Visual Studio Remote Debugging Monitor est installé et exécuté sur l’ordinateur distant. Pour plus d’informations sur le débogueur distant et son installation, consultez [débogage distant](../debugger/remote-debugging.md).  
   
 - Dans Visual Studio, examinez les propriétés du projet (**Projet/Propriétés/Débogage**). Assurez-vous que le **nom du serveur distant** est correct.  
   
@@ -48,9 +48,10 @@ Ce message d’erreur apparaît lorsque vous entrez un nom non valide pour Visua
  Essayez d’exécuter une commande [ping](https://technet.microsoft.com/library/ee624059\(v=ws.10\).aspx) sur l’ordinateur distant. S’il ne répond pas à la commande ping, les outils à distance ne pourront pas non plus se connecter. Essayez de redémarrer l’ordinateur distant et vérifiez qu’il est correctement configuré sur le réseau.  
   
 ## <a name="the-version-of-the-remote-debugger-doesnt-match-the-version-of-visual-studio"></a>La version du débogueur distant ne correspond pas à la version de Visual Studio  
- La version de Visual Studio que vous exécutez localement doit correspondre à la version de Remote Debugging Monitor qui s’exécute sur l’ordinateur distant. Pour résoudre ce problème, téléchargez et installez la version correspondante de Remote Debugging Monitor. Accédez au [Centre de téléchargement](http://www.microsoft.com/download) pour rechercher la version appropriée du débogueur distant.  
-  
+ La version de Visual Studio que vous exécutez localement doit correspondre à la version de Remote Debugging Monitor qui s’exécute sur l’ordinateur distant. Pour résoudre ce problème, téléchargez et installez la version correspondante de Remote Debugging Monitor. Accédez à [abonnements Visual Studio](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015) pour trouver la version appropriée du débogueur distant pour votre version de Visual Studio.
+
 ## <a name="the-local-and-remote-machines-have-different-authentication-modes"></a>Les ordinateurs locaux et distants utilisent des modes d’authentification différents  
+
  Les ordinateurs locaux et distants doivent utiliser le même mode d’authentification. Pour résoudre ce problème, assurez-vous que les deux ordinateurs utilisent le même mode d’authentification. Vous pouvez modifier le mode d’authentification du débogueur distant dans la boîte de dialogue **Outils/Options** .  
   
  Pour plus d’informations sur les modes d’authentification, consultez [Vue d’ensemble de l’authentification Windows](https://technet.microsoft.com/library/hh831472.aspx).  
@@ -84,4 +85,4 @@ Ce message d’erreur apparaît lorsque vous entrez un nom non valide pour Visua
  **res://C:\Program%20Files\Microsoft%20Visual%20Studio%2014.0\Common7\IDE\Remote%20Debugger\x64\msvsmon.exe/help.htm**  
   
 ## <a name="see-also"></a>Voir aussi  
- [Remote Debugging](../debugger/remote-debugging.md)
+ [Débogage à distance](../debugger/remote-debugging.md)

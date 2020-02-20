@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: feae3dbc18f0b009b88872c05d43e9a6c280aef5
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: d590bf618693a5ced1aa17969b888c0fff130c4c
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72656178"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476957"
 ---
 # <a name="schema-cache"></a>Cache de schéma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,22 +28,22 @@ L'éditeur XML fournit un cache de schéma dans le répertoire %InstallRoot%\Xml
 |     Nom de fichier      |                                                      Description                                                      |
 |-------------------|-----------------------------------------------------------------------------------------------------------------------|
 |    catalog.xsd    |             Schéma pour des fichiers catalogue de schémas de l'éditeur XML. Pour des informations sur les catalogues de schémas, voir ci-dessous.             |
-| DotNetConfig.xsd  |                 Schéma pour les fichiers Web. config, « <http://schemas.microsoft.com/.NETConfiguration/v2.0> ».                 |
-|    msbuild.xsd    |              Schéma pour les fichiers Make de MSBuild, "<http://schemas.microsoft.com/developer/msbuild/2003>".              |
+| DotNetConfig.xsd  |                 Schéma pour les fichiers Web. config, `http://schemas.microsoft.com/.NETConfiguration/v2.0`.                 |
+|    msbuild.xsd    |              Schéma pour les fichiers Make de MSBuild, `http://schemas.microsoft.com/developer/msbuild/2003`.              |
 |    msdata.xsd     | Schéma pour les annotations XSD ajoutées par la classe <xref:System.Data.DataSet>, « urn:schemas-microsoft-com:xml-msdata ». |
 |     msxsl.xsd     |                  Schéma pour les extensions de bloc de script Microsoft XSLT, urn:schemas-microsoft-com:xslt.                   |
 | SnippetFormat.xsd |                 Schéma pour les fichiers XML d'extrait de code. Pour des exemples, consultez %InstallDir%\VC#\Expansions.                 |
-|    Soap1.1.xsd    |            Schéma pour le protocole SOAP (Simple Object Access Protocol) 1,1, http://schemas.xmlsoap.org/soap/envelope/.            |
+|    Soap1.1.xsd    |            Schéma pour le protocole SOAP (Simple Object Access Protocol) 1,1, `http://schemas.xmlsoap.org/soap/envelope/`.            |
 |    Soap1.2.xsd    |                                     Schéma pour Simple Object Access Protocol 1.2.                                     |
-| SiteMapSchema.xsd |            Schéma pour le fichier XML Sitemap ASP.NET, « <http://schemas.microsoft.com/AspNet/SiteMap-File-1.0> ».             |
-|     wsdl.xsd      |                    Schéma pour le langage de description de service Web, http://schemas.xmlsoap.org/wsdl/.                     |
-|     xenc.xsd      |                            Schéma pour le chiffrement XML, http://www.w3.org/2000/09/xmldsig#.                             |
-|     xhtml.xsd     |                                    Schéma pour les http://www.w3.org/1999/xhtml XHTML.                                     |
-|     xlink.xsd     |                                  Schéma pour XLink 1.0, http://www.w3.org/1999/xlink.                                   |
-|      xml.xsd      |              Schéma décrivant les attributs XML : Space et XML : lang, http://www.w3.org/XML/1998/namespace.               |
-|    xmlsig.xsd     |                        Schéma pour les signatures numériques XML, http://www.w3.org/2000/09/xmldsig#.                         |
-|   xsdschema.xsd   |                            Schéma décrivant le XSD lui-même, http://www.w3.org/2001/XMLSchema.                            |
-|     xslt.xsd      |                           Schéma pour les transformations XML, http://www.w3.org/1999/XSL/Transform.                            |
+| SiteMapSchema.xsd |            Schéma pour le fichier XML Sitemap ASP.NET, `http://schemas.microsoft.com/AspNet/SiteMap-File-1.0`.             |
+|     wsdl.xsd      |                    Schéma pour le langage de description de service Web, `http://schemas.xmlsoap.org/wsdl/`.                     |
+|     xenc.xsd      |                            Schéma pour le chiffrement XML, `http://www.w3.org/2000/09/xmldsig#`.                             |
+|     xhtml.xsd     |                                    Schéma pour les `http://www.w3.org/1999/xhtml`XHTML.                                     |
+|     xlink.xsd     |                                  Schéma pour XLink 1.0, `http://www.w3.org/1999/xlink`.                                   |
+|      xml.xsd      |              Schéma décrivant les attributs XML : Space et XML : lang, `http://www.w3.org/XML/1998/namespace`.               |
+|    xmlsig.xsd     |                        Schéma pour les signatures numériques XML, `http://www.w3.org/2000/09/xmldsig#`.                         |
+|   xsdschema.xsd   |                            Schéma décrivant le XSD lui-même, `http://www.w3.org/2001/XMLSchema`.                            |
+|     xslt.xsd      |                           Schéma pour les transformations XML, `http://www.w3.org/1999/XSL/Transform`.                            |
 
 ## <a name="updating-schemas-in-the-cache"></a>Mise à jour des schémas dans le cache
  L'éditeur charge le répertoire de cache de schéma lors du chargement du package de l'éditeur XML et contrôle si des modifications ont été apportées pendant l'exécution. Si un schéma a été ajouté, il est automatiquement chargé dans un index en mémoire des schémas connus. Si un schéma a été supprimé, il est automatiquement effacé de l'index en mémoire. Si un schéma a été mise à jour, il invalide automatiquement le cache en mémoire de ce schéma.
@@ -69,7 +69,7 @@ L'éditeur XML fournit un cache de schéma dans le répertoire %InstallRoot%\Xml
 
 - ProgramFiles
 
-- Programs
+- Programmes
 
 - CommonProgramFiles
 
@@ -77,7 +77,7 @@ L'éditeur XML fournit un cache de schéma dans le répertoire %InstallRoot%\Xml
 
 - CommonApplicationData
 
-- dans le dossier HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\
+- LCID
 
   Le document de catalogue peut contenir un élément `Catalog` pointant vers d'autres catalogues. Vous pouvez utiliser l'élément `Catalog` pour pointer vers un catalogue central partagé par votre équipe ou votre entreprise ou vers un catalogue en ligne partagé avec vos partenaires commerciaux. L’attribut `href` est le chemin de fichier ou l’URL http des autres catalogues. Voici un exemple d'élément `Catalog` :
 
@@ -96,7 +96,7 @@ L'éditeur XML fournit un cache de schéma dans le répertoire %InstallRoot%\Xml
 
  Dans l'exemple suivant, un nouvel élément `Schema` a été créé et il utilise la variable %LCID% pour pointer vers le schéma localisé.
 
-```
+```xml
 <Schema href="%InstallRoot%/Common7/IDE/Policy/Schemas/%LCID%/TDLSchema.xsd"
   targetNamespace="http://www.microsoft.com/schema/EnterpriseTemplates/TDLSchema"/>
 ```
@@ -109,7 +109,7 @@ L'éditeur XML fournit un cache de schéma dans le répertoire %InstallRoot%\Xml
 
 #### <a name="to-change-the-schema-cache-location"></a>Pour modifier l'emplacement du cache de schéma
 
-1. Dans le menu **Outils** , sélectionnez **options**.
+1. Dans le menu **Outils** , sélectionnez **Options**.
 
 2. Développez **éditeur de texte**, développez **XML**, puis cliquez sur **divers**.
 
@@ -123,7 +123,7 @@ L'éditeur XML fournit un cache de schéma dans le répertoire %InstallRoot%\Xml
 
 2. Ajoutez-y un nouvel élément `<Catalog href="…"/>` pointant vers le répertoire contenant les schémas supplémentaires.
 
-3. Enregistrez les modifications apportées.
+3. Enregistrez vos modifications.
 
      Le catalogue est automatiquement rechargé.
 

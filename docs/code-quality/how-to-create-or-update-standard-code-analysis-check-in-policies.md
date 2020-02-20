@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d034d65cd356ff44a42d10840ae064d81713457f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 11f64d2776b0d442d074c99c82287f1e7c482f1e
+ms.sourcegitcommit: 260d093d2287ba791f28bdc7103493beabf80b2e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587535"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77506507"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Comment : créer ou mettre à jour des stratégies d’archivage d’analyse du code standard
 
@@ -29,7 +29,7 @@ Les stratégies d’archivage de l’analyse du code sont définies dans les par
 
 - Pour le code managé, vous définissez la stratégie d’archivage en spécifiant un *ensemble de règles* qui contient un sous-ensemble de règles d’analyse du code.
 
-- Pour C/C++ code, dans Visual Studio 2017 version 15,6 et les versions antérieures, la stratégie d’archivage requiert l’exécution de toutes les règles d’analyse du code. Vous pouvez ajouter des directives de préprocesseur pour désactiver des règles spécifiques pour les projets de code individuels dans votre projet Azure DevOps. Dans 15,7 et versions ultérieures, vous pouvez utiliser **/analyze : RuleSet** pour spécifier les règles à exécuter. Pour plus d’informations, consultez [utilisation d’ensembles de règles C++ pour spécifier les règles à exécuter](using-rule-sets-to-specify-the-cpp-rules-to-run.md).
+- Pour C/C++ code, dans Visual Studio 2017 version 15,6 et les versions antérieures, la stratégie d’archivage requiert l’exécution de toutes les règles d’analyse du code. Vous pouvez ajouter des directives de préprocesseur pour désactiver des règles spécifiques pour les projets de code individuels dans votre projet Azure DevOps. Dans 15,7 et versions ultérieures, vous pouvez utiliser **/analyze : RuleSet** pour spécifier les règles à exécuter. Pour plus d’informations, consultez [utilisation d’ensembles de règles C++ pour spécifier les règles à exécuter](/cpp/code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run).
 
 Une fois que vous avez spécifié une stratégie d’archivage pour le code managé, les membres de l’équipe peuvent synchroniser leurs paramètres d’analyse du code pour les projets de code sur les paramètres de stratégie de projet Azure DevOps.
 
@@ -39,7 +39,7 @@ Une fois que vous avez spécifié une stratégie d’archivage pour le code mana
 
 1. Dans la boîte de dialogue **contrôle de code source** , sélectionnez l’onglet **stratégie d’archivage** .
 
-1. Effectuez l'une des actions suivantes :
+1. Effectuez l’une des actions suivantes :
 
     - Cliquez sur **Ajouter** pour créer une nouvelle stratégie d’archivage.
 

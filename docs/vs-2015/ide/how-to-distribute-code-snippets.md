@@ -11,26 +11,26 @@ caps.latest.revision: 20
 author: jillre
 ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 2c080f1b5d4b36093cca44daaac644276039718e
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: e1a692ee29ea9d43e1a0a4fbed5c52934d69256d
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72667965"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476989"
 ---
 # <a name="how-to-distribute-code-snippets"></a>Guide pratique pour distribuer des extraits de code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez vous contenter de donner vos extraits de code à vos amis pour qu'ils les installent sur leurs propres ordinateurs à l'aide du Gestionnaire des extraits de code. Toutefois, si vous avez plusieurs extraits de code à distribuer ou que vous souhaitez les distribuer plus largement, vous pouvez inclure votre fichier d'extraits de code dans une extension Visual Studio, que les utilisateurs de Visual Studio peuvent installer.
 
- Vous devez installer le kit SDK Visual Studio pour pouvoir créer des extensions Visual Studio. Recherchez la version du VSSDK qui correspond à votre installation de Visual Studio lors des [téléchargements de Visual studio 2015](http://www.visualstudio.com/downloads/visual-studio-2015-downloads-vs.aspx).
+ Vous devez installer le kit SDK Visual Studio pour pouvoir créer des extensions Visual Studio. Recherchez la version du VSSDK qui correspond à votre installation de Visual Studio lors des [téléchargements de Visual studio 2015](https://visualstudio.microsoft.com/vs/older-downloads/).
 
 ## <a name="setting-up-the-extension"></a>Configuration de l’extension
  Dans cette procédure, nous utiliserons l’extrait de code Hello World qui a été créé dans [Procédure pas à pas : création d’un extrait de code](../ide/walkthrough-creating-a-code-snippet.md). Nous fournirons le texte .snippet afin que vous n'ayez pas à revenir en arrière et à en créer un.
 
 1. Créez un projet VSIX nommé **TestSnippet**. (**Fichier / Nouveau / Projet / Visual C# (ou Visual Basic) / Extensibilité**)
 
-2. Dans le projet **TestSnippet**, ajoutez un nouveau fichier XML et appelez-le **VBCodeSnippet.snippet**. Remplacez le contenu par celui-ci :
+2. Dans le projet **TestSnippet**, ajoutez un nouveau fichier XML et appelez-le **VBCodeSnippet.snippet**. Remplacez le contenu par ce qui suit :
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>

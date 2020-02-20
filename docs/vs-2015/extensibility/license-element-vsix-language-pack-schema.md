@@ -1,5 +1,5 @@
 ---
-title: Élément (schéma du module linguistique VSIX) de licence | Microsoft Docs
+title: License, élément (schéma du module linguistique VSIX) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -8,17 +8,17 @@ ms.assetid: 57dac3b7-0cdd-405c-9af5-30ed9ca45e53
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a079dee3fc01995d70f77a9fa9791a5ab0f42561
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: f1299d97cbda78049732d3367a9231272397e2ec
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65680590"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77477074"
 ---
 # <a name="license-element-vsix-language-pack-schema"></a>License, élément (schéma du module linguistique VSIX)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Facultatif. Le chemin d’accès d’une version localisée du fichier de licence pour l’extension.  
+facultatif. Chemin d’accès d’une version localisée du fichier de licence pour l’extension.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -45,24 +45,24 @@ Facultatif. Le chemin d’accès d’une version localisée du fichier de licenc
   
 |Élément|Description|  
 |-------------|-----------------|  
-|[Élément VSIXLanguagePack](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|Obligatoire. Fournit l’élément racine pour un module linguistique VSIX.|  
+|[Élément VSIXLanguagePack](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|Obligatoire. Fournit l’élément racine d’un module linguistique VSIX.|  
   
-## <a name="text-value"></a>Valeur texte  
- Le chemin d’accès relatif du fichier de licence localisé à afficher.  
+## <a name="text-value"></a>Valeur de texte  
+ Chemin d’accès relatif du fichier de licence localisé à afficher.  
   
 ## <a name="remarks"></a>Notes  
- Si le `License` élément est défini, puis le texte du fichier de licence désigné est affiché pendant l’installation et l’utilisateur doit accepter la licence pour continuer.  
+ Si l’élément `License` est défini, le texte du fichier de licence désigné s’affiche pendant l’installation et l’utilisateur doit accepter la licence pour continuer.  
   
-## <a name="element-information"></a>Informations sur les éléments  
+## <a name="element-information"></a>Informations sur l'élément  
   
 |                 |                                                           |
 |-----------------|-----------------------------------------------------------|
-|    Espace de noms    | http://schemas.microsoft.com/developer/vsx-schema-lp/2010 |
+|    Espace de noms    | `http://schemas.microsoft.com/developer/vsx-schema-lp/2010` |
 |   Nom du schéma   |                 Schéma du module linguistique VSIX                 |
-| Fichier de validation |                VSIXLanguagePackSchema.xsd                 |
+| Fichier de validation |                VSIXLanguagePackSchema. xsd                 |
 |  Peut être vide   |                      Non applicable                       |
   
 ## <a name="see-also"></a>Voir aussi  
  [Référence de schéma du module linguistique VSX](../extensibility/vsx-language-pack-schema-reference.md)   
- [Localisation de Packages VSIX](../extensibility/localizing-vsix-packages.md)   
- [Référence du schéma 1.0 Extension VSIX](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
+ [Localisation des packages VSIX](../extensibility/localizing-vsix-packages.md)   
+ [Informations de référence sur le schéma d’extension VSIX 1,0](/previous-versions/dd393700(v=vs.110))
