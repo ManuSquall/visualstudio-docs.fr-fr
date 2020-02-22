@@ -466,9 +466,7 @@
                       href: how-to-attach-the-profiler-to-a-dotnet-framework-app-to-collect-memory-data.md
                     - name: Instrumenter un composant .NET Framework autonome et collecter des données de mémoire avec le profileur en utilisant la ligne de commande
                       href: how-to-instrument-a-dotnet-framework-component-and-collect-memory-data.md
-                - name: "Procédure pas à pas\_: Profilage en ligne de commande avec l’échantillonnage"
-                  href: walkthrough-command-line-profiling-using-sampling.md
-            - name: Applications web ASP.NET
+            - name: applications Web ASP.NET
               items:
                 - name: Profilage d’applications web ASP.NET à partir de la ligne de commande
                   href: command-line-profiling-of-aspnet-web-applications.md
