@@ -331,6 +331,8 @@
                   href: ide/reference/generate-deconstructor.md
                 - name: Ajouter un paramètre à une méthode
                   href: ide/reference/add-parameter.md
+                - name: Générer un champ privé à partir d’un constructeur
+                  href: ide/reference/generate-private-field-from-constructor.md
                 - name: Générer le remplacement
                   href: ide/reference/generate-override.md
                 - name: Générer des substitutions de méthode Equals et GetHashCode
@@ -374,6 +376,8 @@
                   href: ide/reference/extract-interface.md
                 - name: Extraire la méthode
                   href: ide/reference/extract-method.md
+                - name: Extraire la fonction locale
+                  href: ide/reference/extract-local-function.md
                 - name: Générer un paramètre
                   href: ide/reference/generate-parameter.md
                 - name: Variable temporaire inline
@@ -386,6 +390,8 @@
                   href: ide/reference/invert-if-statement.md
                 - name: Options de refactorisation de fonction locale statique
                   href: ide/reference/static-local-function-refactor-options.md
+                - name: Rendre le membre statique
+                  href: ide/reference/make-member-static.md
                 - name: Déplacer la déclaration près de la référence
                   href: ide/reference/move-declaration-near-reference.md
                 - name: Déplacer le type vers le fichier correspondant
@@ -416,10 +422,8 @@
                   href: ide/reference/use-block-body-lambda.md
                 - name: 'Affectations, variables et paramètres de valeur inutilisés'
                   href: ide/reference/unused-values-parameters.md
-                - name: Mettre à la ligne et aligner des chaînes d’appels
-                  href: ide/reference/wrap-and-align-call-chains.md
-                - name: 'Mettre à la ligne, mettre en retrait et aligner des paramètres'
-                  href: ide/reference/wrap-align-indent-parameters.md
+                - name: 'Mettre à la ligne, mettre en retrait et aligner des refactorisations'
+                  href: ide/reference/wrap-indent-align-refactorings.md
             - name: "Procédure pas à pas\_: Générer du code à partir de l’utilisation"
               href: ide/walkthrough-test-first-support-with-the-generate-from-usage-feature.md
         - name: IntelliSense
