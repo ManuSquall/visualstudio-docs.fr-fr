@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 5be0303d89ba33a56c22f8a149e42c107094a04b
-ms.sourcegitcommit: 83d9f2b56955f7a5267a1438bb28ef804775f88b
+ms.openlocfilehash: 37715080d341c15fad1f5839990e2db28deedabf
+ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "77155213"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77476856"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numéros de builds et dates de publication de Visual Studio
 
@@ -28,6 +28,7 @@ Le tableau suivant liste les numéros de build et les dates de publication de Vi
 
 | **Version**| **Canal** | **Date de publication** | **Version de build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.5.0 | Préversion 3 | 19 février 2020 | 16.5.29814.53 |
 | 16.4.5 | Édition | 11 février 2020 | 16.4.29806.167 |
 | 16.4.4 | Édition | 31 janvier 2020 | 16.4.29728.190 |
 | 16.5.0 | Préversion 2 | 22 janvier 2020 | 16.5.29721.120 |
