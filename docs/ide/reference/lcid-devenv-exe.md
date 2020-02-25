@@ -18,12 +18,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80c4af137edc80166d6a652c676d5607d8c2328d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: cabbf36adb5019543b3cfb72b0b0e56976517d2d
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595525"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557937"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
 
@@ -39,7 +39,7 @@ devenv {/LCID|/L} LocaleID
 
 - *LocaleID*
 
-  Requis. Identificateur de paramètres régionaux (LCID) de la langue spécifiée.
+  Obligatoire. Identificateur de paramètres régionaux (LCID) de la langue spécifiée.
 
 ## <a name="remarks"></a>Notes
 
@@ -49,17 +49,22 @@ Si la langue spécifiée n’est pas disponible sur le système, le commutateur 
 
 Le tableau suivant indique les identificateurs LCID des langues prises en charge par Visual Studio.
 
-|Language|LCID.|
+|Langage|LCID|
 |--------------|----------|
 |Chinois (simplifié)|2052|
 |Chinois (traditionnel)|1028|
+|Tchèque|1029|
 |Anglais|1033|
 |Français|1036|
 |Allemand|1031|
 |Italien|1040|
 |Japonais|1041|
 |Coréen|1042|
+|Polonais|1045|
+|Portugais (Brésil)|1046|
+|Russe|1049|
 |Espagnol|3082|
+|Turc|1055
 
 ## <a name="example"></a>Exemple
 

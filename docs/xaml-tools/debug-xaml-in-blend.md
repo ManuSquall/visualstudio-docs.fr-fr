@@ -9,12 +9,12 @@ manager: jillfra
 ms.technology: vs-ide-debug
 ms.workload:
 - uwp
-ms.openlocfilehash: 5d6f0e54c37c394fce464b07440daa99b4dd7d5e
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 9ac692c756aaa29b2b13f20eecd039154a28d80b
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73188897"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77558183"
 ---
 # <a name="debug-xaml-in-blend"></a>Déboguer XAML dans Blend
 
@@ -89,7 +89,7 @@ L’exemple suivant vous guide à travers une session de débogage XAML simple d
     </Grid>
     ```
 
-10. Appuyez sur **Ctrl**+**Shift**+**B** pour générer le projet.
+10. Appuyez sur **Ctrl**+**MAJ**+**B** pour générer le projet.
 
     Un message d’erreur s’affiche vous indiquant que le projet ne peut pas être généré et le volet **Résultats** listant les erreurs apparaît au bas de l’application.
 
@@ -103,17 +103,17 @@ Quand des erreurs XAML sont détectées, l'aire de conception affiche une alert
 
 1. Double-cliquez sur la première erreur de la liste. La description est « la valeur «< » n’est pas valide dans un attribut.» Lorsque vous double-cliquez sur l'erreur, le pointeur trouve l'emplacement correspondant dans le code. Le `<` est valide, étant placé devant `Button` et non pas devant un attribut, comme indiqué dans le message d'erreur. Si vous examinez la ligne de code précédente, vous remarquez que le guillemet anglais fermant de l'attribut `Top` est manquant. Tapez le guillemet anglais fermant. Notez que la liste d’erreurs dans le volet **Résultats** est mise à jour au fur et à mesure de vos modifications.
 
-2. Double-cliquez sur la description « 0 » n’est pas valide au début d’un nom.» `Margin="0,149,0,0"` semble être correctement construit. Toutefois, notez que le codage en couleur de `Margin` n'est pas le même que celui des autres instances de `Margin` dans le code. L'absence de guillemets anglais fermants dans la paire nom/valeur précédente (`VerticalAlignment="Top`) fait que `Margin="` est lu comme faisant partie de la valeur de l'attribut précédent, et 0 est lu comme le début de la paire nom/ valeur. Tapez le guillemet anglais fermant pour `Top`. La liste d’erreurs dans le volet **Résultats** est mise à jour au fur et à mesure de vos modifications.
+2. Double-cliquez sur la description « 0 » n’est pas valide au début d’un nom.» `Margin="0,149,0,0"` semble bien formée. Toutefois, notez que le codage en couleur de `Margin` n'est pas le même que celui des autres instances de `Margin` dans le code. L'absence de guillemets anglais fermants dans la paire nom/valeur précédente (`VerticalAlignment="Top`) fait que `Margin="` est lu comme faisant partie de la valeur de l'attribut précédent, et 0 est lu comme le début de la paire nom/ valeur. Tapez le guillemet anglais fermant pour `Top`. La liste d’erreurs dans le volet **Résultats** est mise à jour au fur et à mesure de vos modifications.
 
 3. Double-cliquez sur l'erreur restante : « Le Bouton de balise XML de fermeture ne correspond pas » Le pointeur se trouve sur la balise **Grid** de début (`</Grid>`), indiquant que l’erreur est située à l’intérieur de l’objet `Grid`. Notez que l’étiquette de fermeture est manquante dans le deuxième objet `Button`. Une fois le `/` de fermeture ajouté, la liste du volet **Résultats** est mise à jour. Ces erreurs initiales sont à présent résolues, mais deux erreurs supplémentaires ont été identifiées.
 
 4. Double-cliquez sur « Le membre "contenu" n'est pas reconnu ou n'est pas accessible. ». Le `c` dans `content` devrait être en majuscules. Remplacez le « c » minuscule par un « c » majuscule.
 
-5. Double-cliquez sur « la propriété «mame » n’existe pas dans l’espace de noms « <http://schemas.microsoft.com/winfx/2006/xaml> ». Le « M » dans « Mame » devrait être un « N ». Remplacez le « M » par un « N ». Maintenant que le code XAML peut être analysé, l'application s'affiche sur l'aire de conception.
+5. Double-cliquez sur « la propriété’mame’n’existe pas dans l’espace de noms `http://schemas.microsoft.com/winfx/2006/xaml` ». Le « M » dans « Mame » devrait être un « N ». Remplacez le « M » par un « N ». Maintenant que le code XAML peut être analysé, l'application s'affiche sur l'aire de conception.
 
     ![Débogage XAML dans Blend pour Visual Studio](../debugger/media/blend_debugartboard_xaml.png "blend_debugArtboard_XAML")
 
-    Appuyez sur **Ctrl**+**Shift**+**B** pour générer votre projet et confirmer qu’il n’y a pas d’erreurs restantes.
+    Appuyez sur **Ctrl**+**MAJ**+**B** pour générer votre projet et confirmer qu’il n’y a pas d’erreurs restantes.
 
 ## <a name="debug-in-visual-studio"></a>Déboguer dans Visual Studio
 

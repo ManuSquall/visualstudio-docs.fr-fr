@@ -13,15 +13,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9bb10232c725eb2f538df73f6a7ca98e534a4c14
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f577b52ad2a9b1fd66ed9c24fb2737621aa8554c
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341805"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557776"
 ---
 # <a name="commandtable-element"></a>Élément CommandTable
-CommandTable est l’élément racine de la *.vsct* fichier. Il s’agit du fichier qui définit la disposition réelle et le type des commandes qu’un VSPackage fournit à l’IDE. Commandes peuvent inclure des éléments de menu, des menus, des barres d’outils et des zones de liste déroulante. Pour plus d’informations, consultez [fichiers Visual Studio command table (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
+CommandTable est l’élément racine du fichier *. vsct* . Il s’agit du fichier qui définit la disposition et le type réels des commandes qu’un VSPackage fournit à l’IDE. Les commandes peuvent inclure des éléments de menu, des menus, des barres d’outils et des zones de liste modifiable. Pour plus d’informations, consultez [fichiers de table de commandes Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -46,22 +46,22 @@ CommandTable est l’élément racine de la *.vsct* fichier. Il s’agit du fich
 
 | Attribut | Description |
 |-----------| - |
-| xmlns | Obligatoire. Espaces de noms XML :<br /><br /> xmlns="<http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable>"<br /><br /> xmlns:xs="<http://www.w3.org/2001/XMLSchema>" |
-| language | Facultatif. L’attribut de langage peut être utilisé pour spécifier la langue par défaut de tous les \<chaînes > éléments dans la table de commande.  Si la langue n’est pas spécifiée, la langue du processus en cours est utilisée :<br /><br /> language="en-us" |
+| xmlns | Obligatoire. Espaces de noms XML :<br /><br /> `xmlns=http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable`<br /><br /> xmlns : XS = "<http://www.w3.org/2001/XMLSchema>" |
+| langage | facultatif. L’attribut Language peut être utilisé pour spécifier la langue par défaut de toutes les chaînes de \<> éléments dans la table de commandes.  Si la langue n’est pas spécifiée, la langue du processus en cours sera utilisée :<br /><br /> Language = "en-US" |
 
 ### <a name="child-elements"></a>Éléments enfants
 
 |Élément|Description|
 |-------------|-----------------|
-|[Élément extern](../extensibility/extern-element.md)|Facultatif. Contient des directives de préprocesseur pour le compilateur.|
-|[Élément Include](../extensibility/include-element.md)|Facultatif. Contient les chemins d’accès à tous les fichiers à inclure dans la compilation.|
-|[Définir l’élément](../extensibility/define-element.md)|Facultatif. Définit un symbole donné son nom et sa valeur.|
-|[Élément Commands](../extensibility/commands-element.md)|Facultatif. L’élément parent définissant toutes les commandes pour le VSPackage qui contient tous les autres éléments.|
-|[Élément CommandPlacements](../extensibility/commandplacements-element.md)|Facultatif. Définit où sur la barre de commandes les commandes doivent être placés.|
-|[Élément VisibilityConstraints](../extensibility/visibilityconstraints-element.md)|Facultatif. Détermine la visibilité statique des commandes et des barres d’outils.|
-|[Élément KeyBindings](../extensibility/keybindings-element.md)|Facultatif. Spécifie les combinaisons de touches de raccourci, le cas échéant, pour les commandes.|
-|[Élément UsedCommands](../extensibility/usedcommands-element.md)|Facultatif. Permet à un VSPackage pour éventuellement implémenter sa propre version de la fonctionnalité à l’origine de la prise en charge par les autres VSPackages.|
-|[Élément Symbols](https://www.microsoft.com/download/details.aspx?id=55984)|Facultatif. Contient les données de symbole--GUID, ID et ainsi de suite--pour le compilateur.|
+|[Élément extern](../extensibility/extern-element.md)|facultatif. Contient des directives de préprocesseur pour le compilateur.|
+|[Élément Include](../extensibility/include-element.md)|facultatif. Contient les chemins d’accès à tous les fichiers à inclure dans la compilation.|
+|[Définir l’élément](../extensibility/define-element.md)|facultatif. Définit un symbole en fonction de son nom et de sa valeur.|
+|[Élément Commands](../extensibility/commands-element.md)|facultatif. Élément parent qui définit toutes les commandes pour le VSPackage qui contient tous les autres éléments.|
+|[Élément CommandPlacements](../extensibility/commandplacements-element.md)|facultatif. Définit l’emplacement où les commandes doivent être placées dans la barre de commandes.|
+|[Élément VisibilityConstraints](../extensibility/visibilityconstraints-element.md)|facultatif. Détermine la visibilité statique des commandes et des barres d’outils.|
+|[KeyBindings (élément)](../extensibility/keybindings-element.md)|facultatif. Spécifie les combinaisons de touches de raccourci, le cas échéant, pour les commandes.|
+|[Élément UsedCommands](../extensibility/usedcommands-element.md)|facultatif. Permet à un VSPackage d’implémenter éventuellement sa propre version de fonctionnalité prise en charge à l’origine par d’autres VSPackages.|
+|[Élément Symbols](https://www.microsoft.com/download/details.aspx?id=55984)|facultatif. Contient des données de symboles (GUID, ID, etc.) pour le compilateur.|
 
 ### <a name="parent-elements"></a>Éléments parents
 
@@ -70,4 +70,4 @@ CommandTable est l’élément racine de la *.vsct* fichier. Il s’agit du fich
 |None||
 
 ## <a name="see-also"></a>Voir aussi
-- [Visual Studio fichiers command table (.vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Fichiers de table de commandes Visual Studio (. vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

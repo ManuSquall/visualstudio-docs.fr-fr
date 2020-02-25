@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: Gestion des abonnements dans l’offre Visual Studio + GitHub Enterprise
-ms.openlocfilehash: 29df2d7c43f934e44b7585e975e0f77328305ba5
-ms.sourcegitcommit: a2df993dc5e11c5131dbfcba686f0028a589068f
+ms.openlocfilehash: 524002b875375c22da67bbf98d98f4ebc149c14b
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71150135"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77558154"
 ---
 # <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>Gérer des abonnements Visual Studio avec GitHub Enterprise
 Les clients qui ont des contrats entreprise avec Microsoft peuvent acheter une nouvelle offre d’abonnement qui regroupe des abonnements Visual Studio standard et GitHub Enterprise. Il s’agit d’un moyen simple et économique pour les abonnés Visual Studio d’acquérir GitHub Enterprise. 
@@ -42,27 +42,27 @@ GitHub est disponible dans le cloud à l’adresse GitHub.com ou au niveau local
 
 ### <a name="githubcom"></a>GitHub.com 
 Pour plus d’informations sur la gestion de GitHub.com, veuillez extraire les rubriques suivantes sur [l’Aide GitHub](https://help.github.com/en).
-- [Liste complète des rubriques d’aide](https://help.github.com/en)
-- [Gestion de l’appartenance dans votre organisation](https://help.github.com/en/articles/managing-membership-in-your-organization)
-> - [Inviter des utilisateurs à rejoindre votre organisation](https://help.github.com/en/articles/inviting-users-to-join-your-organization)
-> - [Suppression d’utilisateurs appartenant à des équipes/organisations](https://help.github.com/en/articles/removing-a-member-from-your-organization)
-> - [Réactivation d’un ancien membre de votre organisation](https://help.github.com/en/articles/reinstating-a-former-member-of-your-organization)
-- [Gestion de l’accès à l’aide de rôles](https://help.github.com/en/articles/managing-peoples-access-to-your-organization-with-roles)
-- [Organisation d’utilisateurs en équipes](https://help.github.com/en/articles/organizing-members-into-teams)
-- [Gestion de l’accès aux dépôts de votre organisation](https://help.github.com/en/articles/managing-access-to-your-organizations-repositories)
++ [Liste complète des rubriques d’aide](https://help.github.com/en)
++ [Gestion de l’appartenance dans votre organisation](https://help.github.com/en/articles/managing-membership-in-your-organization)
++ [Inviter des utilisateurs à rejoindre votre organisation](https://help.github.com/en/articles/inviting-users-to-join-your-organization)
+    - [Suppression d’utilisateurs appartenant à des équipes/organisations](https://help.github.com/en/articles/removing-a-member-from-your-organization)
+    - [Réactivation d’un ancien membre de votre organisation](https://help.github.com/en/articles/reinstating-a-former-member-of-your-organization)
++ [Gestion de l’accès à l’aide de rôles](https://help.github.com/en/articles/managing-peoples-access-to-your-organization-with-roles)
++ [Organisation d’utilisateurs en équipes](https://help.github.com/en/articles/organizing-members-into-teams)
++ [Gestion de l’accès aux dépôts de votre organisation](https://help.github.com/en/articles/managing-access-to-your-organizations-repositories)
 
 ### <a name="github-enterprise-server"></a>GitHub Enterprise Server
 L’aide de GitHub fournit un éventail de guides d’administration pour répondre à vos questions et vous donner des conseils sur la gestion de l’implémentation de GitHub Enterprise Server dans votre organisation.
 
-- [Afficher tous les guides d’administration](https://help.github.com/en/enterprise/2.16/admin)
-- [Gestion des utilisateurs](https://help.github.com/en/enterprise/2.16/admin/user-management)
-> - [Organisations et équipes](https://help.github.com/en/enterprise/2.16/admin/user-management/organizations-and-teams)
-> > - [Création d’organisations](https://help.github.com/en/enterprise/2.16/admin/user-management/creating-organizations)
-> > - [Création d’équipes](https://help.github.com/en/enterprise/2.16/admin/user-management/creating-teams)
-> > - [Ajout de membres à des équipes](https://help.github.com/en/enterprise/2.16/admin/user-management/adding-people-to-teams)
-> > - [Suppression de personnes appartenant à des équipes et à des organisations](https://help.github.com/en/enterprise/2.16/admin/user-management/removing-users-from-teams-and-organizations)
-> - [Sécurité utilisateur](https://help.github.com/en/enterprise/2.16/admin/user-management/user-security)
-- [Installation et configuration de GitHub Enterprise Server](https://help.github.com/en/enterprise/2.16/admin/installation)
++ [Afficher tous les guides d’administration](https://help.github.com/en/enterprise/2.16/admin)
++ [Gestion des utilisateurs](https://help.github.com/en/enterprise/2.16/admin/user-management)
+    - [Organisations et équipes](https://help.github.com/en/enterprise/2.16/admin/user-management/organizations-and-teams)
+        - [Création d’organisations](https://help.github.com/en/enterprise/2.16/admin/user-management/creating-organizations)
+        - [Création d’équipes](https://help.github.com/en/enterprise/2.16/admin/user-management/creating-teams)
+        - [Ajout de membres à des équipes](https://help.github.com/en/enterprise/2.16/admin/user-management/adding-people-to-teams)
+        - [Suppression de personnes appartenant à des équipes et à des organisations](https://help.github.com/en/enterprise/2.16/admin/user-management/removing-users-from-teams-and-organizations)
+    - [Sécurité utilisateur](https://help.github.com/en/enterprise/2.16/admin/user-management/user-security)
++ [Installation et configuration de GitHub Enterprise Server](https://help.github.com/en/enterprise/2.16/admin/installation)
 
 ## <a name="support-resources"></a>Ressources de support
 - Vous trouverez des réponses à vos questions dans le large éventail de rubriques GitHub de l’[aide de GitHub](https://help.github.com/en).

@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Inclure les composants requis avec une Application ClickOnce | Microsoft Docs'
+title: 'Comment : inclure des composants requis avec une application ClickOnce | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -9,20 +9,20 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cdeb1b847b746807c80509f4390daf445f65d90f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 9639da1f735095f6d04a59d1f2302f822423e006
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65697656"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557676"
 ---
-# <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Procédure : Inclure des prérequis dans une application ClickOnce
+# <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Comment : inclure les composants requis avec une application ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Avant de distribuer les logiciels requis avec une application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], vous devez d'abord télécharger les packages d'installation de ces composants requis sur votre ordinateur de développement. Lorsque vous publiez une application et choisissez **télécharger les composants requis à partir du même emplacement que mon application**, une erreur se produit si les packages de programme d’installation ne sont pas dans le **Packages** dossier.  
+Avant de distribuer les logiciels requis avec une application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], vous devez d'abord télécharger les packages d'installation de ces composants requis sur votre ordinateur de développement. Lorsque vous publiez une application et choisissez **Télécharger les composants requis à partir du même emplacement que mon application**, une erreur se produit si les packages d’installation ne se trouvent pas dans le dossier **packages** .  
   
 > [!NOTE]
-> Pour ajouter un package d’installation pour le .NET Framework, consultez [Guide de déploiement de .NET Framework pour les développeurs](https://msdn.microsoft.com/library/ee942965\(v=vs.110\).aspx).  
+> Pour ajouter un package d’installation pour le .NET Framework, consultez [Guide de déploiement .NET Framework pour les développeurs](/dotnet/framework/deployment/deployment-guide-for-developers).  
   
 ## <a name="Package"></a> Pour ajouter un package d’installation à l’aide de Package.xml  
   
@@ -34,10 +34,10 @@ Avant de distribuer les logiciels requis avec une application [!INCLUDE[ndpteccl
   
 3. Dans le Bloc-notes, ouvrez le fichier **Package.xml**.  
   
-4. Recherchez le **nom** élément contenant **http://go.microsoft.com/fwlink** , puis copiez l’URL. Incluez la partie **LinkID**.  
+4. Localisez l’élément **Name** qui contient `http://go.microsoft.com/fwlink`, puis copiez l’URL. Incluez la partie **LinkID**.  
   
     > [!NOTE]
-    > Si aucun **nom** élément contient **http://go.microsoft.com/fwlink** , ouvrez le **Product.xml** de fichiers dans le dossier racine pour les composants requis et recherchez le **fwlink** chaîne.  
+    > Si aucun élément **Name** ne contient `http://go.microsoft.com/fwlink`, ouvrez le fichier **Product. xml** dans le dossier racine pour le composant requis et recherchez la chaîne **fwlink** .  
   
     > [!IMPORTANT]
     > Certains composants requis ont plusieurs packages d'installation (par exemple, pour les systèmes 32 bits ou 64 bits). Si plusieurs éléments **Name** contiennent **fwlink**, vous devez répéter les étapes restantes pour chacun d’entre eux.  
@@ -53,4 +53,4 @@ Avant de distribuer les logiciels requis avec une application [!INCLUDE[ndpteccl
      Vous pouvez maintenant distribuer le package d'installation avec votre application.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour installer des prérequis avec une application ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
+ [Guide pratique pour installer des composants prérequis avec une application ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
