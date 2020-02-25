@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd3ccd23775c93fb7222960c4db3ae5d35eb349f
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: b4fd82cee49c698c9244a2851d4e671ae6a94508
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77275491"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557888"
 ---
 # <a name="common-msbuild-project-properties"></a>Propriétés communes des projets MSBuild
 Le tableau ci-dessous répertorie les propriétés fréquemment utilisées qui sont définies dans les fichiers projet Visual Studio ou incluses dans les fichiers *.targets* fournis par MSBuild.
@@ -68,6 +68,7 @@ Le tableau ci-dessous répertorie les propriétés fréquemment utilisées qui s
 | FileAlignment | Spécifie, en octets, où les sections du fichier de sortie doivent être alignées. Les valeurs valides sont 512, 1024, 2048, 4096, 8192. Cette propriété est équivalente au commutateur `/filealignment` du compilateur. |
 | FrameworkPathOverride | Spécifie l’emplacement de *mscorlib.dll* et de *microsoft.visualbasic.dll*. Ce paramètre est équivalent au commutateur `/sdkpath` du compilateur *vbc.exe*. |
 | GenerateDocumentation | (C#, Visual Basic) Paramètre booléen qui indique si la documentation est générée par la Build. Si sa valeur est `true`, les informations de documentation sont générées et placées dans un fichier *.xml* avec le nom de la bibliothèque ou du fichier exécutable créé par la tâche de génération. |
+| GenerateFullPaths | (C#) Générer des chemins d’accès complets pour les noms de fichiers dans la sortie à l’aide de l’option [de compilateur-fullpaths](/dotnet/csharp/language-reference/compiler-options/fullpaths-compiler-option) . |
 | GenerateSerializationAssemblies | Indique si les assemblys de sérialisation XML doivent être générés par *SGen.exe*, qui peut être défini sur on, auto ou off. Cette propriété est utilisée pour les assemblys qui ciblent le .NET Framework uniquement. Pour générer des assemblys de sérialisation XML pour des assemblys .NET Standard ou .NET Core, référencez le package NuGet *Microsoft.XmlSerializer.Generator*. |
 | IntermediateOutputPath | Chemin de sortie intermédiaire complet dérivé de `BaseIntermediateOutputPath`, si aucun chemin d'accès n'est spécifié. Par exemple, *\obj\debug\\* . |
 | KeyContainerName | Nom du conteneur de clé de nom fort. |

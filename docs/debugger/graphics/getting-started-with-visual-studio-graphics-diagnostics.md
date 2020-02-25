@@ -8,22 +8,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb651d9b35dd4531f4d14e169ab6f04376d4dfff
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 575b0254768ac359e43cd5b04c23a220549ac973
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72735690"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557919"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Prise en main de Visual Studio Graphics Diagnostics
 Dans cette section, vous allez vous préparer à utiliser Graphics Diagnostics pour la première fois, puis vous allez capturer des frames à partir d’une application Direct3D et les examiner dans Graphics Analyzer.
 
-## <a name="requirements"></a>spécifications
+## <a name="requirements"></a>Spécifications
  Pour utiliser Graphics Diagnostics dans Visual Studio, vous devez utiliser Visual Studio Enterprise, Visual Studio Professional ou Visual Studio Community.  D’autres éditions, y compris les Visual Studio Code, ne contiennent pas cette fonctionnalité.
 
  [!INCLUDE[downloadvs](../includes/downloadvs_md.md)]
 
-### <a name="windows-10-prerequisites"></a>Composants requis pour Windows 10
+### <a name="windows-10-prerequisites"></a>Prérequis pour Windows 10
  La fonctionnalité Windows facultative *Outils Graphics* fournit l’infrastructure de capture et de lecture nécessaire à Graphics Diagnostics sur Windows 10.
 
  Pour plus d’informations sur l’installation de la fonctionnalité Outils Graphics, consultez [Installer Outils Graphics pour Windows 10](#InstallGraphicsTools).
@@ -35,11 +35,11 @@ Dans cette section, vous allez vous préparer à utiliser Graphics Diagnostics p
 
 1. Dans Rechercher, tapez **applications et fonctionnalités** , puis ouvrez les paramètres **applications & fonctionnalités** .
 
-2. Sur le côté droit de la boîte de dialogue **applications & fonctionnalités** , choisissez **gérer les fonctionnalités facultatives** (sous **applications & fonctionnalités**).
+2. Sur le côté droit des paramètres **applications & fonctionnalités** , choisissez **fonctionnalités facultatives** (sous **applications & fonctionnalités**).
 
-   La boîte de dialogue **Gérer les fonctionnalités facultatives** s’affiche.
+   Les paramètres **facultatifs des fonctionnalités** s’affichent.
 
-3. Dans la boîte de dialogue **Gérer les fonctionnalités facultatives**, choisissez **Ajouter une fonctionnalité**. Une liste de fonctionnalités facultatives que vous pouvez installer s'affiche.
+3. Dans les paramètres **fonctionnalités facultatives** , choisissez **Ajouter une fonctionnalité**. Une liste de fonctionnalités facultatives que vous pouvez installer s'affiche.
 
 4. Sélectionnez **Outils Graphics** dans la liste des fonctionnalités, puis choisissez **Installer**.
 
@@ -49,7 +49,7 @@ Dans cette section, vous allez vous préparer à utiliser Graphics Diagnostics p
 > La fonctionnalité facultative Outils Graphics de Windows 10 fournit des fonctionnalités légères de capture et de lecture (telles que le programme en ligne de commande de capture **dxcap.exe**) qui peuvent être utilisées dans les scénarios de prise en charge, de test et de diagnostic sur les ordinateurs où les outils de développement ne sont pas installés. Pour plus d’informations, consultez la rubrique [Outil en ligne de commande de capture](command-line-capture-tool.md).
 
 ## <a name="using-graphics-diagnostics-for-the-first-time"></a>Utilisation de Graphics Diagnostics pour la première fois
- Une fois que vous avez tout ce dont vous avez besoin, vous êtes prêt à utiliser Graphics Diagnostics. Procédez comme suit :
+ Une fois que vous avez tout ce dont vous avez besoin, vous êtes prêt à utiliser Graphics Diagnostics. Suivez simplement cette procédure.
 
 ### <a name="1---create-a-direct3d-app"></a>1 - Créer une application Direct3D
  Si vous avez déjà votre propre application Direct3D pour explorer Graphics Diagnostics avec, c’est génial ! Dans le cas contraire, utilisez l’une des options suivantes :

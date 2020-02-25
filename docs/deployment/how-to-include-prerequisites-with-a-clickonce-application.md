@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6826ae1f957778ac6eea556fdbbe9589ab3390b
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 94ed90b9fcdd0c4ffe35789d00de4bbbd4aaa355
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72727909"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557631"
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Guide pratique pour inclure les composants requis avec une application ClickOnce
 Avant de distribuer les logiciels requis avec une application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], vous devez d'abord télécharger les packages d'installation de ces composants requis sur votre ordinateur de développement. Quand vous publiez une application et que vous choisissez **Télécharger les composants requis à partir de l’emplacement de mon application**, une erreur se produit lorsque les packages d’installation ne sont pas dans le dossier **Packages**.
@@ -31,10 +31,10 @@ Avant de distribuer les logiciels requis avec une application [!INCLUDE[ndpteccl
 
 3. Dans le Bloc-notes, ouvrez le fichier *Package.xml*.
 
-4. Localisez l’élément **Name** qui contient **http://go.microsoft.com/fwlink** , puis copiez l’URL. Incluez la partie **LinkID**.
+4. Localisez l’élément **Name** qui contient `http://go.microsoft.com/fwlink`, puis copiez l’URL. Incluez la partie **LinkID**.
 
    > [!NOTE]
-   > Si aucun élément **Name** ne contient **http://go.microsoft.com/fwlink** , ouvrez le fichier **Product. xml** dans le dossier racine pour le composant requis et recherchez la chaîne **fwlink** .
+   > Si aucun élément **Name** ne contient `http://go.microsoft.com/fwlink`, ouvrez le fichier **Product. xml** dans le dossier racine pour le composant requis et recherchez la chaîne **fwlink** .
 
    > [!IMPORTANT]
    > Certains composants requis ont plusieurs packages d'installation (par exemple, pour les systèmes 32 bits ou 64 bits). Si plusieurs éléments **Name** contiennent **fwlink**, vous devez répéter les étapes restantes pour chacun d’entre eux.

@@ -18,12 +18,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 794d417d3995e35b48dc6102bfdeddfa8b992548
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.openlocfilehash: 82181d906adc3454dfe77ef4fb21d8bdf99df16f
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77476905"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557987"
 ---
 # <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>Comment : spécifier l'emplacement à partir duquel les utilisateurs finaux effectueront l'installation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,9 +40,9 @@ Lors de la publication d’une application [!INCLUDE[ndptecclick](../includes/nd
   
 1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.  
   
-2. Cliquez sur l'onglet **Publier**.  
+2. Cliquez sur l’onglet **Publier**.  
   
-3. Dans le champ URL d’installation, entrez l’emplacement d’installation à l’aide d’une URL complète au format https://www.microsoft.com/ApplicationName, ou un chemin d’accès UNC au format \\\Server\ApplicationName.  
+3. Dans le champ URL d’installation, entrez l’emplacement d’installation à l’aide d’une URL complète au format `https://www.contoso.com/ApplicationName`ou d’un chemin d’accès UNC au format `\\Server\ApplicationName`.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Guide pratique pour spécifier l’endroit où Visual Studio copie les fichiers](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)   

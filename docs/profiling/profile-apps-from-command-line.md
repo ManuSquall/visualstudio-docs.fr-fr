@@ -1,8 +1,8 @@
 ---
-title: Mesurer l’utilisation du processeur à partir de la ligne de commande
-description: Mesurez les performances du processeur dans votre application à partir de la ligne de commande.
+title: Mesurer les performances à partir de la ligne de commande
+description: Mesurez les performances de l’UC et l’utilisation de la mémoire managée dans votre application à partir de la ligne de commande.
 ms.custom: ''
-ms.date: 02/19/2019
+ms.date: 02/21/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools, command-line
@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 87bf0c236f34e753866ea114dfc7f45e8f16a979
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c109e2ae1db28f8e08ed7c34a7ee0871a6efe670
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972414"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77558119"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>Mesurer les performances d’une application à partir de la ligne de commande
 
@@ -27,7 +27,7 @@ Vous pouvez collecter des informations sur le niveau de performance d’une appl
 
 Dans l’exemple décrit dans cet article, vous collectez des informations sur le niveau de performance du Bloc-notes Microsoft, mais la même méthode peut servir à profiler n’importe quel processus.
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Conditions préalables requises
 
 * Visual Studio 2019 Preview 3 ou versions ultérieures
 
@@ -74,7 +74,7 @@ Pour des raisons pratiques, vous pouvez stocker ces informations dans un fichier
 ```<Visual Studio installation folder>\2019\Preview\Team Tools\DiagnosticsHub\Collector\AgentConfigs\```
 
 * CpuUsage configurations (Base/High/Low), qui correspond aux données collectées pour l’outil de profilage [Utilisation de l’UC](../profiling/cpu-usage.md).
-* DotNetObjectAlloc configurations (Base/Low), qui correspond aux données collectées pour l’[outil d’allocation d’objets .NET](https://devblogs.microsoft.com/visualstudio/visual-studio-2017-version-15-8-preview-3/#tooling).
+* DotNetObjectAlloc configurations (Base/Low), qui correspond aux données collectées pour l’[outil d’allocation d’objets .NET](../profiling/dotnet-alloc-tool.md).
 
 Les configurations Base/Low/High font référence au taux d’échantillonnage. Par exemple, Low correspond à 100 échantillons/seconde et High à 4 000 échantillons/seconde.
 

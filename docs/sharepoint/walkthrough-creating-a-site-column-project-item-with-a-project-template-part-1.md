@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6c8d4949bc8bbef0231986d2eeedfd36a2f678ea
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.openlocfilehash: 843d56482a82c2a8210de50455753c9703698503
+ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73189170"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "77557841"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>Procédure pas à pas : création d’un élément de projet colonne de site avec un modèle de projet, partie 1
   Les projets SharePoint sont des conteneurs pour un ou plusieurs éléments de projet SharePoint. Vous pouvez étendre le système de projet SharePoint dans Visual Studio en créant vos propres types d’éléments de projet SharePoint, puis en les associant à un modèle de projet. Dans cette procédure pas à pas, vous allez définir un type d’élément de projet pour la création d’une colonne de site, puis vous allez créer un modèle de projet qui peut être utilisé pour créer un projet qui contient un élément de projet de colonne de site.
@@ -40,12 +40,12 @@ ms.locfileid: "73189170"
 > [!NOTE]
 > Pour obtenir une série d’exemples de flux de travail, consultez [exemples de flux](/sharepoint/dev/general-development/sharepoint-workflow-samples)de travail SharePoint.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Conditions préalables requises
  Pour effectuer cette procédure pas à pas, vous avez besoin des composants suivants sur l’ordinateur de développement :
 
 - Éditions prises en charge de Microsoft Windows, SharePoint et [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-- L’[!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]opérateur Cette procédure pas à pas utilise le modèle de **projet VSIX** dans le kit de développement logiciel (SDK) pour créer un package VSIX afin de déployer l’élément de projet. Pour plus d’informations, consultez [étendre les outils SharePoint dans Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).
+- Le [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. Cette procédure pas à pas utilise le modèle de **projet VSIX** dans le kit de développement logiciel (SDK) pour créer un package VSIX afin de déployer l’élément de projet. Pour plus d’informations, consultez [étendre les outils SharePoint dans Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).
 
   La connaissance du concept suivant est utile, mais pas obligatoire, pour effectuer la procédure pas à pas :
 
@@ -431,7 +431,7 @@ ms.locfileid: "73189170"
 
    - Ajoute `ProjectItem` éléments pour chaque filethat inclus dans chaque instance de projet.
 
-   - Utilise l’espace de noms «<http://schemas.microsoft.com/developer/vstemplate/2005>». Les autres fichiers projet de cette solution utilisent l’espace de noms «<http://schemas.microsoft.com/developer/msbuild/2003>». Par conséquent, les messages d’avertissement de schéma XML sont générés, mais vous pouvez les ignorer dans cette procédure pas à pas.
+   - Utilise l’espace de noms `http://schemas.microsoft.com/developer/vstemplate/2005`. Les autres fichiers projet de cette solution utilisent l’espace de noms `http://schemas.microsoft.com/developer/msbuild/2003`. Par conséquent, les messages d’avertissement de schéma XML sont générés, mais vous pouvez les ignorer dans cette procédure pas à pas.
 
      Pour plus d’informations sur le contenu des fichiers *. vstemplate* , consultez [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md).
 
@@ -702,7 +702,7 @@ ms.locfileid: "73189170"
 
 6. Dans **Explorateur de solutions**, choisissez le nœud **champ1** , puis appuyez sur la touche **F4** .
 
-     La fenêtre **Propriétés** s’ouvre.
+     La fenêtre **Propriétés** apparaît.
 
 7. Dans la liste Propriétés, vérifiez que la **propriété exemple** de propriété s’affiche.
 
