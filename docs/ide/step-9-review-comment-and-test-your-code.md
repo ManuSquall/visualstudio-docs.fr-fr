@@ -8,17 +8,17 @@ ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 - VB
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39be6feffb70dd43823af2af0fce719daafc6f78
-ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.openlocfilehash: 1b31532bf6c26512e471ee787dc7219620e6db62
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72572484"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579745"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Étape 9 : examiner, commenter et tester votre code
 
@@ -48,7 +48,7 @@ Vous venez de générer un programme qui fonctionne, et bien qu'il ne soit pas e
   pictureBox1.Load(openFileDialog1.FileName)
   ```
 
-   Les instructions permettent à vos programmes d'effectuer des actions. Dans C#, une instruction se termine toujours par un point-virgule. En Visual Basic, la fin d'une ligne indique la fin d'une instruction. (Aucun point-virgule n’est nécessaire dans Visual Basic.) L’instruction précédente indique à votre contrôle <xref:System.Windows.Forms.PictureBox> de charger le fichier que l’utilisateur a sélectionné avec le composant **OpenFileDialog** .
+   Les instructions permettent à vos programmes d'effectuer des actions. Dans C#, une instruction se termine toujours par un point-virgule. En Visual Basic, la fin d'une ligne indique la fin d'une instruction. (Aucun point-virgule n’est nécessaire dans Visual Basic.) L’instruction précédente indique à votre <xref:System.Windows.Forms.PictureBox> contrôle de charger le fichier que l’utilisateur a sélectionné avec le composant **OpenFileDialog** .
 
 ## <a name="to-add-comments"></a>Pour ajouter des commentaires
 
@@ -60,12 +60,12 @@ Vous venez de générer un programme qui fonctionne, et bien qu'il ne soit pas e
 
      [!code-vb[VbExpressTutorial1Step9_10#1](../ide/codesnippet/VisualBasic/step-9-review-comment-and-test-your-code_1.vb)]
 
-    Le gestionnaire d’événements <xref:System.Windows.Forms.Control.Click> du bouton **showButton** est maintenant terminé, et il fonctionne. Vous avez commencé votre code par une instruction `if`. Une instruction `if` est la manière dont vous indiquez à votre application, « vérifiez cette chose et, si elle est vraie, effectuez ces actions ». Dans ce cas, vous indiquez à votre application d’ouvrir la boîte de dialogue **ouvrir un fichier** , et si l’utilisateur sélectionne un fichier et choisit le bouton **OK** , chargez ce fichier dans le **PictureBox**.
+    Le gestionnaire d’événements **du bouton**showButton<xref:System.Windows.Forms.Control.Click> est maintenant terminé, et il fonctionne. Vous avez commencé votre code par une instruction `if`. Une instruction `if` est la manière dont vous indiquez à votre application, « vérifiez cette chose et, si elle est vraie, effectuez ces actions ». Dans ce cas, vous indiquez à votre application d’ouvrir la boîte de dialogue **ouvrir un fichier** , et si l’utilisateur sélectionne un fichier et choisit le bouton **OK** , chargez ce fichier dans le **PictureBox**.
 
     > [!TIP]
     > L’IDE est conçu pour vous aider à écrire votre code rapidement, notamment grâce aux *extraits de code*. Un extrait est un raccourci qui se développe en petit bloc de code.
     >
-    >  Vous pouvez consulter tous les extraits de code disponibles. Dans la barre de menus, choisissez **Outils** > **Gestionnaire des extraits de code**. Pour C#, l’extrait de code `if` est en **visuel C#**  . Par Visual Basic, les extraits de code `if` se trouvent dans des **modèles de Code**  >  des**conditions et des boucles**. Vous pouvez utiliser ce gestionnaire pour parcourir les extraits existants ou ajouter les vôtres.
+    >  Vous pouvez consulter tous les extraits de code disponibles. Dans la barre de menus, choisissez **Outils** > **Gestionnaire des extraits de code**. Pour C#, l’extrait de `if` est **en C# visuel** . Par Visual Basic, les extraits de code `if` se trouvent dans des **modèles de Code** > des **conditions et des boucles**. Vous pouvez utiliser ce gestionnaire pour parcourir les extraits existants ou ajouter les vôtres.
     >
     >  Pour activer un extrait de code lorsque vous écrivez du code, tapez-le et appuyez sur la touche **Tab**. De nombreux extraits de code étant affichés dans la fenêtre **IntelliSense**, vous devez appuyer deux fois sur la touche **Tab**, d’abord pour sélectionner l’extrait de code dans la fenêtre **IntelliSense**, puis pour indiquer à l’IDE de l’utiliser. (IntelliSense prend en charge l'extrait `if`, mais pas `ifelse`.)
 
@@ -74,7 +74,7 @@ Vous venez de générer un programme qui fonctionne, et bien qu'il ne soit pas e
      ![Enregistrer tout, bouton de barre d’outils](../ide/media/express_iconsaveall.png)<br>
 *Bouton* ***enregistrer tout***
 
-     Vous pouvez également enregistrer votre application en choisissant **fichier** > **enregistrer tout** à partir de la barre de menus (ou en appuyant sur **Ctrl**+**Shift**+**S**). Il est conseillé d'enregistrer votre travail régulièrement.
+     Vous pouvez également enregistrer votre application en choisissant **fichier** > **enregistrer tout** dans la barre de menus (ou en appuyant sur **CTRL**+**MAJ**+**S**). Il est conseillé d'enregistrer votre travail régulièrement.
 
      Lorsqu’il est en cours d’exécution, votre programme doit ressembler à l’image suivante.
 

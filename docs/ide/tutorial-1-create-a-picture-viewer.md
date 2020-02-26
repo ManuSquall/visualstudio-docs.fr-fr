@@ -5,17 +5,17 @@ ms.assetid: 3071d6df-2b2f-4e95-ab68-bef727323136
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9af5a3e8796af3aeaefae569d61e78a1039d84e
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 5f1431d56516c749004cef1b35ada482a6c53446
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76115093"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579727"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Tutoriel 1 : créer une visionneuse d'images
 
@@ -26,7 +26,7 @@ Dans ce didacticiel, vous allez créer une application qui charge une image à p
 
 Ce didacticiel vous guide tout au long des tâches suivantes :
 
-* Créez un nouveau projet.
+* Créez un projet.
 
 * Tester (déboguer) une application.
 
@@ -46,7 +46,7 @@ Lorsque vous avez terminé, votre application doit ressembler à l’image suiva
 
 ## <a name="tutorial-links"></a>Liens de tutoriels
 
-|Titre|Description|
+|Intitulé|Description|
 |-----------|-----------------|
 |[Étape 1 : créer un projet d’application Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md)|Commencez par créer un projet d’application Windows Forms.|
 |[Étape 2 : exécuter votre application visionneuse d’images](../ide/step-2-run-your-program.md)|Exécutez le projet d’application Windows Forms que vous avez créé à l’étape précédente.|
@@ -62,7 +62,7 @@ Lorsque vous avez terminé, votre application doit ressembler à l’image suiva
 
 D’autres ressources de formation vidéo gratuites sont également disponibles. Pour en savoir plus sur la C#programmation dans, consultez [ C# notions de base : développement pour les débutants](https://channel9.msdn.com/Series/C-Sharp-Fundamentals-Development-for-Absolute-Beginners). Pour en savoir plus sur la programmation en Visual Basic, consultez [Notions de base de Visual Basic : développement pour grands débutants](https://channel9.msdn.com/Series/Visual-Basic-Development-for-Absolute-Beginners).
 
-## <a name="next-steps"></a>Étapes suivantes :
+## <a name="next-steps"></a>Étapes suivantes
 
 Pour commencer le didacticiel, commencez à l' **[étape 1 : créer un projet d’application Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md)** .
 

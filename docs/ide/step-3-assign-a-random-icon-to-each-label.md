@@ -8,17 +8,17 @@ dev_langs:
 - CSharp
 - VB
 ms.assetid: 0ba5ed7a-9aaa-41f4-95d2-e3c2d567bc79
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 115220a33fda1a8c65beec9b712481604c88e483
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 366f6d7a07d2f30b5b8110fb7dae7a2311fcce23
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72621553"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579398"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>Étape 3 : assigner une icône aléatoire à chaque étiquette
 
@@ -32,7 +32,7 @@ Si les icônes se trouvent dans les mêmes cellules à chaque partie, le jeu ne 
      [!code-vb[VbExpressTutorial4Step2_3_4#2](../ide/codesnippet/VisualBasic/step-3-assign-a-random-icon-to-each-label_1.vb)]
 
       > [!IMPORTANT]
-      > Utilisez le contrôle de langage de programmation en haut à droite de cette page pour afficher C# l’extrait de code ou le Visual Basic extrait de code.<br><br>contrôle de langage ![Programming pour Docs.Microsoft.com ](../ide/media/docs-programming-language-control.png)
+      > Utilisez le contrôle de langage de programmation en haut à droite de cette page pour afficher C# l’extrait de code ou le Visual Basic extrait de code.<br><br>contrôle du langage de programmation ![pour Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
 
 2. Ajoutez la méthode `AssignIconsToSquares()`, comme indiqué dans l'étape précédente. Vous pouvez l’insérer juste en dessous du code que vous avez ajouté à l’[Étape 2 : ajouter un objet aléatoire et une liste d’icônes](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
 
@@ -44,7 +44,7 @@ Si les icônes se trouvent dans les mêmes cellules à chaque partie, le jeu ne 
     > [!NOTE]
     > Les noms « iconLabel » et « control » sont utilisés car ils sont explicites. Vous pouvez les remplacer par des noms quelconques : le code fonctionnera exactement de la même façon à condition que vous modifiiez le nom dans chaque instruction à l'intérieur de la boucle.
 
-     La méthode `AssignIconsToSquares()` effectue une itération sur les contrôles Label dans le TableLayoutPanel et exécute les mêmes instructions pour chacun d'eux. Ces instructions tirent une icône aléatoire de la liste que vous avez ajoutée à l’[Étape 2 : ajouter un objet aléatoire et une liste d’icônes](../ide/step-2-add-a-random-object-and-a-list-of-icons.md). (C'est la raison pour laquelle vous avez inclus deux fois chaque icône dans la liste : ainsi, des paires d'icônes sont assignées de façon aléatoire aux contrôles d’étiquettes.)
+     La méthode `AssignIconsToSquares()` effectue une itération sur les contrôles Label dans le TableLayoutPanel et exécute les mêmes instructions pour chacun d'eux. Ces instructions tirent une icône aléatoire de la liste que vous avez ajoutée à l’[Étape 2 : ajouter un objet aléatoire et une liste d’icônes](../ide/step-2-add-a-random-object-and-a-list-of-icons.md). (C'est la raison pour laquelle vous avez inclus deux fois la même icône dans la liste, afin qu'il y ait une paire d'icônes assignée aux contrôles Label aléatoires.)
 
      Examinez plus attentivement le code qui s'exécute à l'intérieur de la boucle `foreach` ou `For Each`. Ce code est reproduit ici.
 

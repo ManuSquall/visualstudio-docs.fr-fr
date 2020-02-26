@@ -20,17 +20,17 @@ helpviewer_keywords:
 - MSBuild (C++), LIB task
 - LIB task (MSBuild (C++))
 ms.assetid: e062c7f9-cc69-4a83-9361-1bb5355e5fe8
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa43cef2176d9b2197e16b46a50e153da135502e
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c9daeb5264a4bebb67cfd486a5f05708d7e025f3
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72748091"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578544"
 ---
 # <a name="lib-task"></a>LIB (tâche)
 Inclut dans un wrapper l’outil Gestionnaire de bibliothèques 32 bits de Microsoft, *lib.exe*. Le gestionnaire de bibliothèques crée et gère une bibliothèque de fichiers objets COFF (Common Object File Format). Il peut également créer des fichiers d'exportation et des bibliothèques d'importation pour référencer des définitions exportées. Pour plus d’informations, consultez [Informations de référence sur LIB](/cpp/build/reference/lib-reference) et [Exécution de LIB](/cpp/build/reference/running-lib).
@@ -58,12 +58,12 @@ Inclut dans un wrapper l’outil Gestionnaire de bibliothèques 32 bits de Micro
 |**RemoveObjects**|Paramètre **String[]** facultatif.<br /><br /> Omet l'objet spécifié de la bibliothèque de sortie. *Lib.exe* crée une bibliothèque de sortie en combinant tous les objets (qu’ils se trouvent dans des fichiers objets ou des bibliothèques), puis en supprimant tous les objets spécifiés par cette option.<br /><br /> Ce paramètre correspond à l’option **/REMOVE** de*lib.exe* qui prend un argument `membername`.|
 |**Sources**|Paramètre `ITaskItem[]` requis.<br /><br /> Spécifie la liste des fichiers sources séparés par des espaces.|
 |**SubSystem**|Paramètre **String** facultatif.<br /><br /> Spécifie l'environnement pour l'exécutable. Le choix du sous-système affecte le symbole de point d'entrée ou la fonction de point d'entrée.<br /><br /> Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.<br /><br /> -   **Console** -  **/SUBSYSTEM:CONSOLE**<br />-   **Windows** -  **/SUBSYSTEM:WINDOWS**<br />-   **Native** -  **/SUBSYSTEM:NATIVE**<br />-   **EFI Application** -  **/SUBSYSTEM:EFI_APPLICATION**<br />-   **EFI Boot Service Driver** -  **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**<br />-   **EFI ROM** -  **/SUBSYSTEM:EFI_ROM**<br />-   **EFI Runtime** -  **/SUBSYSTEM:EFI_RUNTIME_DRIVER**<br />-   **WindowsCE** -  **/SUBSYSTEM:WINDOWSCE**<br />-   **POSIX** -  **/SUBSYSTEM:POSIX**<br /><br /> Pour plus d’informations, consultez [/SUBSYSTEM (Spécifier le sous-système)](/cpp/build/reference/subsystem-specify-subsystem).|
-|**SuppressStartupBanner**|Paramètre **Boolean** facultatif.<br /><br /> Si la valeur est `true`, empêche l'affichage du message de copyright et de numéro de version quand la tâche démarre.<br /><br /> Pour plus d’informations, consultez l’option **/NOLOGO** dans [Exécution de LIB](/cpp/build/reference/running-lib).|
+|**SuppressStartupBanner**|Paramètre **booléen** facultatif.<br /><br /> Si la valeur est `true`, empêche l'affichage du message de copyright et de numéro de version quand la tâche démarre.<br /><br /> Pour plus d’informations, consultez l’option **/NOLOGO** dans [Exécution de LIB](/cpp/build/reference/running-lib).|
 |**TargetMachine**|Paramètre **String** facultatif.<br /><br /> Spécifie la plateforme cible du programme ou de la DLL.<br /><br /> Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.<br /><br /> -   **MachineARM** -  **/MACHINE:ARM**<br />-   **MachineEBC** -  **/MACHINE:EBC**<br />-   **MachineIA64** -  **/MACHINE:IA64**<br />-   **MachineMIPS** -  **/MACHINE:MIPS**<br />-   **MachineMIPS16** -  **/MACHINE:MIPS16**<br />-   **MachineMIPSFPU** - **/MACHINE:MIPSFPU**<br />-   **MachineMIPSFPU16** -  **/MACHINE:MIPSFPU16**<br />-   **MachineSH4** -  **/MACHINE:SH4**<br />-   **MachineTHUMB** -  **/MACHINE:THUMB**<br />-   **MachineX64** -  **/MACHINE:X64**<br />-   **MachineX86** -  **/MACHINE:X86**<br /><br /> Pour plus d’informations, consultez [/MACHINE (Spécifier la plateforme cible)](/cpp/build/reference/machine-specify-target-platform).|
 |**TrackerLogDirectory**|Paramètre **String** facultatif.<br /><br /> Spécifie le répertoire du journal de Tracker.|
-|**TreatLibWarningAsErrors**|Paramètre **Boolean** facultatif.<br /><br /> Si la valeur est `true`, empêche la tâche **LIB** de générer un fichier de sortie si *lib.exe* génère un avertissement. Si la valeur est `false`, un fichier de sortie est généré.<br /><br /> Pour plus d’informations, consultez l’option **/WX** dans [Exécution de LIB](/cpp/build/reference/running-lib).|
-|**UseUnicodeResponseFiles**|Paramètre **Boolean** facultatif.<br /><br /> Si la valeur est `true`, indique au système de projet de générer des fichiers réponse UNICODE quand le générateur de bibliothèques est créé dynamiquement. Spécifiez `true` quand les fichiers du projet ont des chemins d'accès UNICODE.|
-|**Verbose**|Paramètre **Boolean** facultatif.<br /><br /> Si la valeur est `true`, affiche des détails sur la progression de la session ; ceux-ci incluent les noms des fichiers *.obj* en cours d’ajout. Les informations sont envoyées vers la sortie standard et peuvent être redirigées vers un fichier.<br /><br /> Pour plus d’informations, consultez l’option **/VERBOSE** dans [Exécution de LIB](/cpp/build/reference/running-lib).|
+|**TreatLibWarningAsErrors**|Paramètre **booléen** facultatif.<br /><br /> Si la valeur est `true`, empêche la tâche **LIB** de générer un fichier de sortie si *lib.exe* génère un avertissement. Si la valeur est `false`, un fichier de sortie est généré.<br /><br /> Pour plus d’informations, consultez l’option **/WX** dans [Exécution de LIB](/cpp/build/reference/running-lib).|
+|**UseUnicodeResponseFiles**|Paramètre **booléen** facultatif.<br /><br /> Si la valeur est `true`, indique au système de projet de générer des fichiers réponse UNICODE quand le générateur de bibliothèques est créé dynamiquement. Spécifiez `true` quand les fichiers du projet ont des chemins d'accès UNICODE.|
+|**Verbose**|Paramètre **booléen** facultatif.<br /><br /> Si la valeur est `true`, affiche des détails sur la progression de la session ; ceux-ci incluent les noms des fichiers *.obj* en cours d’ajout. Les informations sont envoyées vers la sortie standard et peuvent être redirigées vers un fichier.<br /><br /> Pour plus d’informations, consultez l’option **/VERBOSE** dans [Exécution de LIB](/cpp/build/reference/running-lib).|
 
 ## <a name="see-also"></a>Voir aussi
 - [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)

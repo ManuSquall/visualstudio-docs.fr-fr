@@ -1,5 +1,5 @@
 ---
-title: 'Tutoriel : Bien démarrer avec C# et ASP.NET Core'
+title: 'Didacticiel : prise en main C# de et ASP.net Core'
 titleSuffix: ''
 description: Découvrez comment créer une application web ASP.NET Core dans Visual Studio avec C#, pas à pas.
 ms.custom: seodec18, get-started
@@ -8,28 +8,28 @@ ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: CSharp
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 4c2e9c890b0b676216a02a526cad5380df4ceb57
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: ef41e28d994f27f66f616623d1b2c9798b65ede4
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71252461"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77580050"
 ---
-# <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Tutoriel : Prise en main de C# et d’ASP.NET Core dans Visual Studio
+# <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Tutoriel : Bien démarrer avec C# et ASP.NET Core dans Visual Studio
 
 Dans ce tutoriel pour le développement C# avec ASP.NET Core à l’aide de Visual Studio, vous allez créer une application web C# ASP.NET Core, y apporter des changements, explorer certaines fonctionnalités de l’environnement IDE, puis exécuter l’application.
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-### <a name="install-visual-studio"></a>Installer Visual Studio
+### <a name="install-visual-studio"></a>Installation de Visual Studio
 
 ::: moniker range="vs-2017"
 
@@ -51,15 +51,15 @@ Si vous avez déjà installé Visual Studio, veillez à exécuter la version la 
 
 Ce tutoriel contient des captures d’écran qui utilisent le thème foncé. Si vous n’utilisez pas le thème foncé, mais que vous aimeriez l’utiliser, consultez la page [Personnaliser l’éditeur et l’IDE de Visual Studio](../../ide/quickstart-personalize-the-ide.md) pour savoir comment faire.
 
-## <a name="create-a-project"></a>Créer un projet
+## <a name="create-a-project"></a>Création d’un projet
 
 Tout d’abord, nous allons créer un projet ASP.NET Core. Le type de projet inclut tous les fichiers de modèles nécessaires à un site web parfaitement fonctionnel, avant même d’avoir ajouté quoi que ce soit !
 
 ::: moniker range="vs-2017"
 
-1. Ouvrez Visual Studio 2017.
+1. Ouvrez Visual Studio 2017.
 
-2. Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**.
+2. Dans la barre de menus supérieure, choisissez **fichier** > **nouveau** > **projet**.
 
 3. Dans la boîte de dialogue **Nouveau projet**, dans le volet gauche, développez **Visual C#** , **Web**, puis choisissez **.NET Core**. Dans le volet central, choisissez **Application web ASP.NET Core**. Nommez ensuite le fichier *MyCoreApp*, puis choisissez **OK**.
 
@@ -69,7 +69,7 @@ Tout d’abord, nous allons créer un projet ASP.NET Core. Le type de projet inc
 
 Si vous ne voyez pas le modèle de projet **Application web ASP.NET Core**, vous pouvez l’obtenir en ajoutant la charge de travail **Développement web et ASP.NET**. Vous pouvez ajouter cette charge de travail de l’une des deux manières suivantes, en fonction des mises à jour de Visual Studio 2017 qui sont installées sur votre ordinateur.
 
-#### <a name="option-1-use-the-new-project-dialog-box"></a>Option 1 : Utiliser la boîte de dialogue Nouveau projet
+#### <a name="option-1-use-the-new-project-dialog-box"></a>Option 1 : Utiliser la boîte de dialogue Nouveau projet
 
 1. Sélectionnez le lien **Ouvrir Visual Studio Installer** dans le volet gauche de la boîte de dialogue **Nouveau projet**. (Selon vos paramètres d’affichage, vous devrez peut-être faire défiler l’écran pour le voir.)
 
@@ -81,7 +81,7 @@ Si vous ne voyez pas le modèle de projet **Application web ASP.NET Core**, vous
 
    (Vous devrez peut-être fermer Visual Studio pour pouvoir continuer l’installation de la nouvelle charge de travail.)
 
-#### <a name="option-2-use-the-tools-menu-bar"></a>Option 2 : Utiliser la barre de menus Outils
+#### <a name="option-2-use-the-tools-menu-bar"></a>Option 2 : Utiliser la barre de menus Outils
 
 1. Annulez la boîte de dialogue **Nouveau projet**. Dans la barre de menus, choisissez ensuite **Outils** > **Obtenir les outils et les fonctionnalités**.
 
@@ -298,7 +298,7 @@ Cette solution suit le modèle de conception **Razor Pages**. Il diffère du mod
 
 1. Retournez dans Visual Studio, puis appuyez sur **MAJ+F5** pour arrêter le mode Déboguer. Cela ferme également le projet dans la fenêtre du navigateur.
 
-1. Dans Visual Studio, ouvrez **privacy. cshtml** pour le modifier. Ensuite, supprimez les mots _Utilisez cette page pour détailler la politique de confidentialité de votre site_ et, à la place, ajoutez les mots _que @ViewDatacette page est en cours de construction en tant que [« timestamp »]_ .
+1. Dans Visual Studio, ouvrez **privacy. cshtml** pour le modifier. Ensuite, supprimez les mots _Utilisez cette page pour détailler la politique de confidentialité de votre site_ et, à la place, ajoutez les mots _que cette page est en cours de construction à partir de @ViewData[« timestamp »]_ .
 
     ![Modifier le texte dans le fichier privacy. cshtml](media/vs-2019/csharp-aspnet-privacy-cshtml-code-changed.png)
 
@@ -310,9 +310,9 @@ Cette solution suit le modèle de conception **Razor Pages**. Il diffère du mod
 
    Choisissez maintenant **aperçu des modifications** pour voir ce qui va changer.
 
-   ![Aperçu des modifications](media/vs-2019/csharp-aspnet-preview-changes.png)
+   ![Prévisualiser les modifications](media/vs-2019/csharp-aspnet-preview-changes.png)
 
-   Choisissez **appliquer**. Visual Studio supprime les directives `using` inutiles du fichier.
+   Choisissez **Appliquer**. Visual Studio supprime les directives `using` inutiles du fichier.
 
 1. Ensuite, remplacez le corps de la méthode `OnGet()` par le code suivant :
 

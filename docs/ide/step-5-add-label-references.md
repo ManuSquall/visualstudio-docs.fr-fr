@@ -8,17 +8,17 @@ dev_langs:
 - CSharp
 - VB
 ms.assetid: d418350c-0396-494e-8149-71fa61b395c5
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a1fe8f4e8003da2db0e8a599c3eca504945f3e4
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: de89d7194425e1a8cba9e11f2734372d80b256b3
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647518"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579330"
 ---
 # <a name="step-5-add-label-references"></a>Étape 5 : ajouter des références d’étiquettes
 Le programme doit effectuer le suivi des contrôles d’étiquette choisis par le joueur. Pour le moment, le programme indique l'ensemble des étiquettes choisies par le joueur. Mais nous allons changer cela. Une fois que le joueur a choisi le premier contrôle d'étiquette, le programme doit afficher son icône. Une fois que le joueur a choisi le deuxième contrôle d'étiquette, le programme doit afficher brièvement les deux icônes, puis les masquer à nouveau. Votre programme vérifiera à présent quel contrôle d'étiquette le joueur a choisi en premier et en deuxième à l'aide de *variables de référence*.
@@ -31,7 +31,7 @@ Le programme doit effectuer le suivi des contrôles d’étiquette choisis par l
      [!code-csharp[VbExpressTutorial4Step5#5](../ide/codesnippet/CSharp/step-5-add-label-references_1.cs)]
 
      > [!IMPORTANT]
-     > Utilisez le contrôle de langage de programmation en haut à droite de cette page pour afficher C# l’extrait de code ou le Visual Basic extrait de code.<br><br>contrôle de langage ![Programming pour Docs.Microsoft.com ](../ide/media/docs-programming-language-control.png)
+     > Utilisez le contrôle de langage de programmation en haut à droite de cette page pour afficher C# l’extrait de code ou le Visual Basic extrait de code.<br><br>contrôle du langage de programmation ![pour Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
 
      Ces variables de référence sont identiques aux instructions que vous avez utilisées avant pour ajouter des objets (comme les objets <xref:System.Windows.Forms.Timer>, <xref:System.Collections.Generic.List%601> et <xref:System.Random> ) à votre formulaire. Toutefois, ces instructions n'entraînent pas l'affichage de deux contrôles d'étiquette supplémentaires dans le formulaire étant donné qu'il n'existe aucun `new` mot-clé dans l'une ou l'autre des deux instructions. Sans le `new` mot-clé, aucun objet n'est créé. C'est la raison pour laquelle `firstClicked` et `secondClicked` sont appelées variables de référence : elles sont uniquement chargées de suivre (ou de référencer) les objets d’étiquette.
 

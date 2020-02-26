@@ -13,22 +13,22 @@ helpviewer_keywords:
 - build tasks using the Microsoft build engine [WPF MSBuild], compile markup and process resources
 - WPF MSBuild task reference [WPF MSBuild]
 ms.assetid: 96df0370-e50f-4ffc-9771-b12fb8721143
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 121c3da6d3e2609c1a271177e089e0f38a0d89fe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 84aeae06a5440bfc82eb9590919800ebcdd425d5
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778292"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578189"
 ---
 # <a name="wpf-msbuild-task-reference"></a>Informations de référence sur les tâches MSBuild WPF
 Le processus de génération de Windows Presentation Foundation (WPF) étend Microsoft Build Engine (MSBuild) avec un ensemble de tâches de génération supplémentaires, notamment des tâches pour compiler le balisage et traiter les ressources.
 
-## <a name="in-this-section"></a>Dans cette section
+## <a name="in-this-section"></a>Contenu de cette section
 - [FileClassifier](../msbuild/fileclassifier-task.md)
 
  Classifie un ensemble de ressources sources comme devant être incorporées dans un assembly. Si une ressource n’est pas localisable, elle est incorporée dans l’assembly principal de l’application ; autrement, elle est incorporée dans un assembly satellite.
@@ -55,7 +55,7 @@ Le processus de génération de Windows Presentation Foundation (WPF) étend Mic
 
 - [ResourcesGenerator](../msbuild/resourcesgenerator-task.md)
 
- Incorpore une ou plusieurs ressources (*.jpg*, *.ico*, *.bmp*, [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] au format binaire et d’autres types d’extensions) dans un fichier *.resources*.
+ Incorpore une ou plusieurs ressources ( *.jpg*, *.ico*, *.bmp*, [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] au format binaire et d’autres types d’extensions) dans un fichier *.resources*.
 
 - [UidManager](../msbuild/uidmanager-task.md)
 
@@ -63,7 +63,7 @@ Le processus de génération de Windows Presentation Foundation (WPF) étend Mic
 
 - [UpdateManifestForBrowserApplication](../msbuild/updatemanifestforbrowserapplication-task.md)
 
- Ajoute l’élément **\<hostInBrowser />** au manifeste de l’application (*\<nom_proket>.exe.manifest*) lors de la génération d’un projet [!INCLUDE[TLA#tla_xbap](../msbuild/includes/tlasharptla_xbap_md.md)].
+ Ajoute l’élément **\<hostInBrowser />** au manifeste de l’application ( *\<nom_proket>.exe.manifest*) lors de la génération d’un projet [!INCLUDE[TLA#tla_xbap](../msbuild/includes/tlasharptla_xbap_md.md)].
 
 ## <a name="see-also"></a>Voir aussi
 - [MSBuild](../msbuild/msbuild.md)

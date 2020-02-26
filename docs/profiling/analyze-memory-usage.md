@@ -8,21 +8,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98382cdcde1e8413d7b6592b52aaee09e6c4274c
-ms.sourcegitcommit: 4be64917e4224fd1fb27ba527465fca422bc7d62
+ms.openlocfilehash: 5ddb082bf2451759be239d5c16404e82bcd84733
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76923335"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578158"
 ---
 # <a name="analyze-memory-usage"></a>Analyser l’utilisation de la mémoire
-Utilisez l’outil de diagnostic **Utilisation de la mémoire** intégré au débogueur pour rechercher les fuites de mémoire et les utilisations inefficaces de la mémoire. L’outil Utilisation de la mémoire vous permet de prendre un ou plusieurs *instantanés* du tas de mémoire managée et native. Vous pouvez collecter des instantanés d’applications .NET, ASP.NET, natives ou en mode mixte (.NET et natives).
 
-- Vous pouvez analyser un instantané pour comprendre l’impact relatif des types d’objets sur l’utilisation de la mémoire et pour rechercher le code dans votre application qui utilise la mémoire de manière inefficace.
+pour rechercher les fuites de mémoire et l’utilisation inefficace de la mémoire, vous pouvez utiliser des outils tels que l’outil d’allocation de mémoire intégré au débogueur ou les outils du profileur de performances, tels que l’outil d’allocation d’objets .NET et l’outil d’utilisation de la mémoire après mortem. L’outil Utilisation de la mémoire vous permet de prendre un ou plusieurs *instantanés* du tas de mémoire managée et native. Vous pouvez collecter des instantanés d’applications .NET, ASP.NET, natives ou en mode mixte (.NET et natives). 
 
-- Vous pouvez aussi comparer (diff) deux instantanés d'une application pour rechercher les sections de votre code qui provoquent une augmentation de l'utilisation de la mémoire au fil du temps.
+L’outil utilisation de la **mémoire** peut s’exécuter sur un projet Visual Studio ouvert, sur une application Microsoft Store installée, ou attaché à une application ou à un processus en cours d’exécution. Vous pouvez exécuter l’outil sur des ordinateurs locaux ou distants, ou sur un simulateur ou un émulateur. Pour plus d’informations, consultez [Exécution des outils de profilage avec ou sans débogueur](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
-Pour obtenir des instructions détaillées, consultez le didacticiel [Analyser l’utilisation de la mémoire](../profiling/memory-usage.md).  Actuellement, pour mesurer l’utilisation de la mémoire faite par une application .NET Core, vous devez utiliser l’outil avec le débogueur joint. Pour les autres applications managées et natives, vous pouvez utiliser l’outil avec ou sans débogueur.
+Vous pouvez exécuter l’outil utilisation de la **mémoire** avec ou sans débogage. Dans le débogueur, vous pouvez activer et désactiver le profilage de la mémoire et voir une répartition par objet de l’utilisation de la mémoire. Vous pouvez afficher les résultats de l’utilisation de la mémoire lorsque l’exécution est suspendue, par exemple à un point d’arrêt.
+
+L’outil d' **allocation d’objets .net** s’exécute uniquement comme un outil d’autopsie.
+
+Pour obtenir des instructions détaillées qui décrivent comment utiliser les outils d’analyse de la mémoire, consultez le didacticiel [analyse de l’utilisation](../profiling/memory-usage.md) de la mémoire et l' [outil d’allocation d’objets .net](../profiling/dotnet-alloc-tool.md).
 
 Vous pouvez utiliser les Outils de profilage sans débogueur avec Windows 7 et les versions ultérieures. Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Outils de profilage avec le débogueur (fenêtre **Outils de diagnostic**).
 

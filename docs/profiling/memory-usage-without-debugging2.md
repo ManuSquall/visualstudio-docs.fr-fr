@@ -13,22 +13,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56ecf4cb1d777362daf381646094c20f82f30f85
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.openlocfilehash: eaf853cd19a44af4cb8510fde11da95bfa7de5c1
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72910345"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578345"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>Analyser l’utilisation de la mémoire sans débogage
 
 L’outil **Utilisation de la mémoire** permet de superviser l’utilisation de la mémoire par votre application. Vous pouvez l’utiliser pour étudier les effets en temps réel sur la mémoire des scénarios que vous développez activement dans Visual Studio. Vous pouvez prendre des instantanés des états de la mémoire de l’application, et comparer les instantanés pour trouver les causes racines des problèmes de mémoire.
 
 L’outil **Utilisation de la mémoire** peut s’exécuter avec ou sans le débogueur. Les instructions suivantes indiquent comment utiliser l’outil **Utilisation de la mémoire** sans le débogueur dans le **Profileur de performances** de Visual Studio.
-
->[!NOTE]
->- Pour mesurer l’utilisation de la mémoire pour une application .NET Core, vous devez utiliser l’outil **Utilisation de la mémoire** avec le débogueur. Pour obtenir des instructions, consultez [Profiler l’utilisation de la mémoire dans Visual Studio](memory-usage.md).
->- Pour analyser l’utilisation de mémoire dans les applications JavaScript ou HTML UWP, utilisez l’outil [Mémoire JavaScript](../profiling/javascript-memory.md) dans le **Profileur de performances**.
 
 ## <a name="memory-usage-diagnostic-sessions"></a>Sessions de diagnostic d’utilisation de la mémoire
 
@@ -99,7 +95,7 @@ Dans le rapport d’instantané :
 
 - L’arborescence **Tas managé** montre les types et instances du rapport. La sélection d’un type ou d’une instance affiche les arborescences **Chemins d’accès à la racine** et **Objets référencés** pour l’élément sélectionné.
 
-- L’arborescence **Chemins d’accès à la racine** montre la chaîne d’objets qui référencent un type ou une instance. Le récupérateur de mémoire .NET Framework nettoie la mémoire d’un objet uniquement quand toutes les références à cet objet ont été libérées.
+- L’arborescence **Chemins d’accès à la racine** montre la chaîne d’objets qui référencent un type ou une instance. Le récupérateur de mémoire .NET Framework nettoie la mémoire d'un objet uniquement quand toutes les références à cet objet ont été libérées.
 
 - L’arborescence **Types référencés** ou **Objets référencés** montre les objets référencés par le type ou l’instance sélectionné.
 
@@ -133,13 +129,13 @@ L’arborescence **Tas managé** dans un rapport détaillé d’instantané comp
 |||
 |-|-|
 |**Type d’objet**|Nom du type ou instance de l'objet.|
-|**Nombre**|Nombre d'instances d'objet du type. La valeur **Nombre** est toujours égale à 1 pour une instance.|
+|**Count**|Nombre d'instances d'objet du type. La valeur **Nombre** est toujours égale à 1 pour une instance.|
 |**Taille (octets)**|Pour un type, taille de toutes les instances du type dans l’instantané, moins la taille des objets contenus dans les instances.<br /><br /> Pour une instance, taille de l’objet, moins la taille des objets contenus dans l’instance. |
 |**Taille inclusive (octets)**|Taille des instances du type ou taille d’une seule instance, y compris la taille des objets contenus.|
 |**Module**|Module qui contient l’objet.|
 
 ### <a name="BKMK_Paths_to_Root_tree__Snapshot_details_"></a> Arborescence Chemins d’accès à la racine (rapports de détails de l’instantané)
-L’arborescence **Chemins d’accès à la racine** montre la chaîne d’objets qui référencent un type ou une instance. Le récupérateur de mémoire .NET Framework nettoie la mémoire d’un objet uniquement quand toutes les références à cet objet ont été libérées.
+L’arborescence **Chemins d’accès à la racine** montre la chaîne d’objets qui référencent un type ou une instance. Le récupérateur de mémoire .NET Framework nettoie la mémoire d'un objet uniquement quand toutes les références à cet objet ont été libérées.
 
 Pour un type dans l’arborescence **Chemins d’accès à la racine**, le nombre d’objets qui comportent des références à ce type est affiché dans la colonne **Nombre de références**.
 
@@ -179,7 +175,7 @@ L’arborescence **Tas managé** dans un rapport différentiel d’instantanés 
 |||
 |-|-|
 |**Type d’objet**|Nom du type ou instance de l'objet.|
-|**Nombre**|Nombre d'instances d'un type dans l'instantané principal. La valeur **Nombre** est toujours égale à 1 pour une instance.|
+|**Count**|Nombre d'instances d'un type dans l'instantané principal. La valeur **Nombre** est toujours égale à 1 pour une instance.|
 |**Différence de nombre**|Pour un type, différence du nombre d'instances du type entre l'instantané principal et l'instantané précédent. Le champ est vide pour une instance.|
 |**Taille (octets)**|Taille des objets dans l’instantané principal, moins la taille des objets dans les objets. Pour un type, **Taille (octets)** et **Taille inclusive (octets)** sont les totaux des tailles des instances du type.|
 |**Diff. taille totale (octets)**|Pour un type, différence de taille totale des instances du type entre l’instantané principal et l’instantané précédent, moins la taille des objets dans les instances. Le champ est vide pour une instance.|
@@ -189,7 +185,7 @@ L’arborescence **Tas managé** dans un rapport différentiel d’instantanés 
 
 ### <a name="BKMK_Paths_to_Root_tree__Snapshot_diff_"></a> Arborescence Chemins d’accès à la racine (rapports différentiels d’instantanés)
 
-L’arborescence **Chemins d’accès à la racine** montre la chaîne d’objets qui référencent un type ou une instance. Le récupérateur de mémoire .NET Framework nettoie la mémoire d’un objet uniquement quand toutes les références à cet objet ont été libérées.
+L’arborescence **Chemins d’accès à la racine** montre la chaîne d’objets qui référencent un type ou une instance. Le récupérateur de mémoire .NET Framework nettoie la mémoire d'un objet uniquement quand toutes les références à cet objet ont été libérées.
 
 Pour un type dans l’arborescence **Chemins d’accès à la racine**, le nombre d’objets qui comportent des références à ce type est affiché dans la colonne **Nombre de références**. La différence de nombre par rapport à l’instantané précédent se trouve dans la colonne **Différence au niveau du nombre de références**.
 

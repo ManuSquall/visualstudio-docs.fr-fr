@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1928176ef1c2612585c7fa46ea653f3ff800050
-ms.sourcegitcommit: 9a5cf730d8e43eed6eba25369b7b44cae0b26b98
+ms.openlocfilehash: 8e4868899af67ebeb25ae508cbe7e5b0c83137bf
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2020
-ms.locfileid: "75929251"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578084"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Démarrage rapide : découvrir les outils de profilage
 
@@ -58,7 +58,7 @@ Double-cliquez sur une fonction digne d’intérêt ; apparaît alors une vue �
 
 La fenêtre **Outils de diagnostic** vous permet également d’évaluer l’utilisation de la mémoire dans votre application. Par exemple, vous pouvez consulter le nombre et la taille des objets sur le tas. Pour obtenir des instructions plus détaillées sur l’analyse de la mémoire, consultez [Analyser l’utilisation de la mémoire](../profiling/memory-usage.md).
 
-Pour analyser l’utilisation de la mémoire, vous devez prendre au moins un instantané de la mémoire pendant le débogage. Souvent, la meilleure façon d’analyser la mémoire consiste à prendre deux instantanés, le premier juste avant un problème de mémoire suspecté et le second juste après. Ensuite, vous pouvez visualiser une comparaison des deux instantanés et voir exactement ce qui a changé.
+Pour analyser l’utilisation de la mémoire pendant le débogage, vous devez prendre au moins un instantané de la mémoire. Souvent, la meilleure façon d’analyser la mémoire consiste à prendre deux instantanés, le premier juste avant un problème de mémoire suspecté et le second juste après. Ensuite, vous pouvez visualiser une comparaison des deux instantanés et voir exactement ce qui a changé.
 
 ![Prendre un instantané dans le Outils de diagnostic](../profiling/media/prof-tour-take-snapshots.gif "Outils de diagnostic prendre des captures instantanées")
 
@@ -81,21 +81,21 @@ Les mêmes événements s’affichent aussi dans l’éditeur de code, sous la f
 
 ![Profilage de la visite guidée PerfTips](../profiling/media/prof-tour-perf-tips.png "Profilage de la visite guidée PerfTips")
 
-## <a name="examine-ui-performance-and-accessibility-events-uwp"></a>Examiner les événements d’accessibilité et de performances de l’IU (UWP)
-
-Dans vos applications UWP, vous pouvez activer **Analyse de l’IU** dans la fenêtre **Outils de diagnostic**. L’outil recherche les problèmes de performances ou d’accessibilité et les affiche dans la vue **Événements** pendant le débogage. Les descriptions des événements fournissent des informations qui peuvent aider à résoudre les problèmes.
-
-![Afficher les événements d’analyse de l’interface utilisateur dans les outils de diagnostic](../profiling/media/prof-tour-ui-analysis.png "Outils de diagnostic afficher les événements d’analyse de l’interface utilisateur")
-
 ## <a name="post_mortem"></a> Profiler les builds de version Release sans le débogueur
 
-Vous pouvez utiliser les Outils de profilage, par exemple Utilisation de l’UC et Utilisation de la mémoire, avec le débogueur (consultez les sections précédentes), ou vous pouvez exécuter les Outils de profilage post mortem à l’aide du profileur de performances, qui vise à fournir une analyse des builds de version **Release**. Dans le profileur de performances, vous pouvez collecter des informations de diagnostic pendant l’exécution de l’application, puis examiner ces informations après l’arrêt de l’application. Pour plus d’informations sur ces différentes approches, consultez [Exécuter les Outils de profilage avec ou sans le débogueur](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
+Vous pouvez utiliser les Outils de profilage, par exemple Utilisation de l’UC et Utilisation de la mémoire, avec le débogueur (consultez les sections précédentes), ou vous pouvez exécuter les Outils de profilage post mortem à l’aide du profileur de performances, qui vise à fournir une analyse des builds de version **Release**. Dans le profileur de performances, vous pouvez collecter des informations de diagnostic pendant l’exécution de l’application, puis examiner ces informations après l’arrêt de l’application. Pour plus d’informations sur ces différentes approches, consultez [Exécuter les Outils de profilage avec ou sans le débogueur](../profiling/running-profiling-tools-with-or-without-the-debugger.md). Des outils supplémentaires, tels que l' [outil d’allocation d’objets .net](../profiling/dotnet-alloc-tool.md) , sont également disponibles dans le profileur de performances.
 
 ![Profileur de performances](../profiling/media/prof-tour-performance-profiler.png "Profileur de performances")
 
 Ouvrez le profileur de performances en choisissant **Déboguer** > **Profileur de performances**.
 
-La fenêtre vous permet de sélectionner plusieurs outils de profilage dans certains scénarios. Les outils comme Utilisation de l’UC peuvent fournir des données complémentaires que vous pouvez utiliser dans votre analyse.
+La fenêtre vous permet de sélectionner plusieurs outils de profilage dans certains scénarios. Les outils comme Utilisation de l’UC peuvent fournir des données complémentaires que vous pouvez utiliser dans votre analyse. Vous pouvez également utiliser le [profileur de ligne de commande](../profiling/profile-apps-from-command-line.md) pour activer des scénarios impliquant plusieurs outils de profilage.
+
+## <a name="examine-ui-performance-and-accessibility-events-uwp"></a>Examiner les événements d’accessibilité et de performances de l’IU (UWP)
+
+Dans vos applications UWP, vous pouvez activer **Analyse de l’IU** dans la fenêtre **Outils de diagnostic**. L’outil recherche les problèmes de performances ou d’accessibilité et les affiche dans la vue **Événements** pendant le débogage. Les descriptions des événements fournissent des informations qui peuvent aider à résoudre les problèmes.
+
+![Afficher les événements d’analyse de l’interface utilisateur dans les outils de diagnostic](../profiling/media/prof-tour-ui-analysis.png "Outils de diagnostic afficher les événements d’analyse de l’interface utilisateur")
 
 ## <a name="analyze-resource-consumption-xaml"></a>Analyser la consommation des ressources (XAML)
 
@@ -105,7 +105,7 @@ La présence de taux de trames faibles dans le graphique **Débit visuel** peut 
 
 ![Outil de profilage chronologie de l’application](../profiling/media/prof-tour-application-timeline.gif "chronologie de l’application de la visite guidée du profilage")
 
-La vue Détails de la chronologie comprend des informations telles que le type d’activité (ou l’élément d’interface utilisateur impliqué), ainsi que la durée de l’activité. Par exemple, dans l’illustration, un événement **Layout** (disposition) pour un contrôle de grille prend 57,53 ms.
+Dans la vue Détails de la chronologie, vous pouvez trouver des informations telles que le type d’activité (ou l’élément d’interface utilisateur impliqué), ainsi que la durée de l’activité. Par exemple, dans l’illustration, un événement **Layout** (disposition) pour un contrôle de grille prend 57,53 ms.
 
 Pour plus d’informations, consultez [Chronologie de l’application](../profiling/application-timeline.md).
 
@@ -149,7 +149,13 @@ Pour plus d’informations, consultez [Utilisation du réseau](../profiling/netw
 
 ## <a name="analyze-performance-legacy-tools"></a>Analyser les performances (outils hérités)
 
+::: moniker range="vs-2017"
 Si vous avez besoin de fonctionnalités qui ne sont pas présentes dans les outils Utilisation de l’UC ou Utilisation de la mémoire, telles que l’instrumentation, et que vous exécutez des applications de bureau ou ASP.NET, vous pouvez utiliser l’Explorateur de performances pour le profilage. (Non pris en charge dans les applications UWP). Pour plus d’informations, consultez [Explorateur de performances](../profiling/performance-explorer.md).
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+Dans Visual Studio 2019, les Explorateur de performances héritées et les outils de profilage associés tels que l’Assistant Performance ont été repliés dans le profileur de performances, que vous pouvez ouvrir à l’aide du **profileur de performances**de **débogage** > . Dans le profileur de performances, les outils de diagnostic disponibles dépendent de la cible choisie et du projet de démarrage actuel ouvert. L’outil utilisation de l’UC fournit la fonctionnalité d’échantillonnage précédemment prise en charge dans l’Assistant performance. L’outil d’instrumentation fournit la fonctionnalité de profilage instrumenté (pour les nombres d’appels et les durées précis) qui étaient dans l’Assistant performance. Des outils mémoire supplémentaires s’affichent également dans le profileur de performances.
+::: moniker-end
 
 ![Outil Explorateur de performances](../profiling/media/prof-tour-performance-explorer.png "Explorateur de performances")
 
@@ -158,30 +164,31 @@ Si vous avez besoin de fonctionnalités qui ne sont pas présentes dans les outi
 Voici un tableau qui recense les différents outils proposés par Visual Studio, ainsi que les différents types de projet avec lesquels vous pouvez les utiliser :
 
 ::: moniker range=">=vs-2019"
-|Outil d’analyse des performances|Bureau Windows|UWP|ASP.NET/ASP.NET Core|
+|Outil d’analyse des performances|Ordinateurs Windows|UWP|ASP.NET/ASP.NET Core|
 |----------------------|---------------------|-------------|-------------|
-|[Utilisation de l'UC](../profiling/cpu-usage.md)|oui|oui|oui|
-|[Utilisation de la mémoire](../profiling/memory-usage.md)|oui|oui|oui|
-|[Utilisation du GPU](/visualstudio/debugger/graphics/gpu-usage)|oui|oui|Non|
-|[Chronologie de l'application](../profiling/application-timeline.md)|oui|oui|Non|
-|[PerfTips](../profiling/perftips.md)|oui|oui pour XAML, non pour HTML|oui|
-|[Explorateur de performances](../profiling/performance-explorer.md)|oui|Non|oui|
+|[Utilisation du processeur](../profiling/cpu-usage.md)|Oui|Oui|Oui|
+|[Utilisation de la mémoire](../profiling/memory-usage.md)|Oui|Oui|Oui|
+|[Allocation d’objets .NET](../profiling/dotnet-alloc-tool.md)|Oui (.NET uniquement)|Oui|Oui|
+|[Utilisation du GPU](/visualstudio/debugger/graphics/gpu-usage)|Oui|Oui|non|
+|[Chronologie de l’application](../profiling/application-timeline.md)|Oui|Oui|non|
+|[Conseils sur les performances](../profiling/perftips.md)|Oui|oui pour XAML, non pour HTML|Oui|
+|[Explorateur de performances](../profiling/performance-explorer.md)|Oui|non|Oui|
 |[IntelliTrace](../debugger/intellitrace.md)|.NET avec Visual Studio Enterprise uniquement|.NET avec Visual Studio Enterprise uniquement|.NET avec Visual Studio Enterprise uniquement|
 ::: moniker-end
 
 ::: moniker range="vs-2017"
-|Outil d’analyse des performances|Bureau Windows|UWP|ASP.NET/ASP.NET Core|
+|Outil d’analyse des performances|Ordinateurs Windows|UWP|ASP.NET/ASP.NET Core|
 |----------------------|---------------------|-------------|-------------|
-|[Utilisation de l'UC](../profiling/cpu-usage.md)|oui|oui|oui|
-|[Utilisation de la mémoire](../profiling/memory-usage.md)|oui|oui|oui|
-|[Utilisation du GPU](/visualstudio/debugger/graphics/gpu-usage)|oui|oui|Non|
-|[Chronologie de l'application](../profiling/application-timeline.md)|oui|oui|Non|
-|[PerfTips](../profiling/perftips.md)|oui|oui pour XAML, non pour HTML|oui|
-|[Explorateur de performances](../profiling/performance-explorer.md)|oui|Non|oui|
+|[Utilisation du processeur](../profiling/cpu-usage.md)|Oui|Oui|Oui|
+|[Utilisation de la mémoire](../profiling/memory-usage.md)|Oui|Oui|Oui|
+|[Utilisation du GPU](/visualstudio/debugger/graphics/gpu-usage)|Oui|Oui|non|
+|[Chronologie de l’application](../profiling/application-timeline.md)|Oui|Oui|non|
+|[Conseils sur les performances](../profiling/perftips.md)|Oui|oui pour XAML, non pour HTML|Oui|
+|[Explorateur de performances](../profiling/performance-explorer.md)|Oui|non|Oui|
 |[IntelliTrace](../debugger/intellitrace.md)|.NET avec Visual Studio Enterprise uniquement|.NET avec Visual Studio Enterprise uniquement|.NET avec Visual Studio Enterprise uniquement|
-|[Utilisation du réseau](../profiling/network-usage.md)|Non|oui|Non|
-|[Réactivité de l’interface utilisateur HTML](../profiling/html-ui-responsiveness.md)|Non|oui pour HTML, non pour XAML|Non|
-|[Mémoire JavaScript](../profiling/javascript-memory.md)|Non|oui pour HTML, non pour XAML|Non|
+|[Utilisation du réseau](../profiling/network-usage.md)|non|Oui|non|
+|[Réactivité de l’interface utilisateur HTML](../profiling/html-ui-responsiveness.md)|non|oui pour HTML, non pour XAML|non|
+|[Mémoire JavaScript](../profiling/javascript-memory.md)|non|oui pour HTML, non pour XAML|non|
 ::: moniker-end
 
 

@@ -7,19 +7,19 @@ ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: vb
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 684cd4762eed38d947d76655bd9632fc10d0aacd
-ms.sourcegitcommit: 697f2ab875fd789685811687387e9e8e471a38c4
+ms.openlocfilehash: 279bfb00a2466120d21c5c868c0987ec19202acc
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74829998"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579936"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Tutoriel : Bien démarrer avec Visual Basic dans Visual Studio
 
@@ -37,15 +37,15 @@ Si vous n’avez pas encore installé Visual Studio, accédez à la page [Télé
 
 ::: moniker-end
 
-## <a name="create-a-project"></a>Créer un projet
+## <a name="create-a-project"></a>Création d’un projet
 
 Tout d’abord, nous allons créer un projet d’application Visual Basic. Le type de projet inclut tous les fichiers de modèle dont vous aurez besoin au départ.
 
 ::: moniker range="vs-2017"
 
-1. Ouvrez Visual Studio 2017.
+1. Ouvrez Visual Studio 2017.
 
-2. Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**.
+2. Dans la barre de menus supérieure, choisissez **fichier** > **nouveau** > **projet**.
 
 3. Dans la boîte de dialogue **Nouveau projet**, dans le volet gauche, développez **Visual Basic**, puis choisissez **.NET Core**. Dans le volet central, choisissez **Application console (.NET Core)** . Nommez ensuite le projet *WhatIsYourName*.
 
@@ -67,7 +67,7 @@ Si vous ne voyez pas le modèle de projet **Application console (.NET Core)** , 
 
 #### <a name="option-2-use-the-tools-menu-bar"></a>Option 2 : Utiliser la barre de menus Outils
 
-1. Quittez la boîte de dialogue **Nouveau projet** puis, dans la barre de menus supérieure, choisissez **Outils** > **Obtenir les outils et fonctionnalités**.
+1. Quittez la boîte de dialogue **nouveau projet** et, dans la barre de menus supérieure, choisissez **Outils** > **accéder à outils et fonctionnalités**.
 
 1. Visual Studio Installer est lancé. Choisissez la charge de travail **Développement multiplateforme .NET Core**, puis choisissez **Modifier**.
 
@@ -111,7 +111,7 @@ Si vous ne voyez pas le modèle de projet **Application console (.NET Core)** , 
 
 ## <a name="create-a-what-is-your-name-application"></a>Créer une application « Quel est votre nom »
 
-Nous allons créer une application qui vous demande votre nom et l’affiche, ainsi que la date et l’heure. Voici comment :
+Nous allons créer une application qui vous demande votre nom et l’affiche, ainsi que la date et l’heure. Voici comment faire :
 
  ::: moniker range="vs-2017"
 
@@ -173,7 +173,7 @@ Nous allons créer une application qui vous demande votre nom et l’affiche, ai
 
 ::: moniker range="vs-2017"
 
-1. Ouvrez Visual Studio 2017 puis, dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**.
+1. Ouvrez Visual Studio 2017, puis dans la barre de menus supérieure, choisissez **fichier** > **nouveau** > **projet**.
 
 1. Dans la boîte de dialogue **Nouveau projet**, dans le volet gauche, développez **Visual Basic**, puis choisissez **.NET Core**. Dans le volet central, choisissez **Application console (.NET Core)** . Ensuite, nommez le fichier *CalculateThis*.
 
@@ -261,7 +261,7 @@ Une application console prend une entrée et affiche la sortie dans une fenêtre
 
 .NET Core est la suite logique du .NET Framework. Là où le .NET Framework vous permettait de partager du code entre les langages de programmation, .NET Core ajoute la capacité à partager du code entre des plateformes. De plus, il est open source. (Le .NET Framework et .NET Core incluent des bibliothèques de fonctionnalités prégénérées ainsi qu’un CLR (Common Language Runtime) qui agit comme une machine virtuelle dans laquelle exécuter votre code.)
 
-## <a name="next-steps"></a>Étapes suivantes :
+## <a name="next-steps"></a>Étapes suivantes
 
 Félicitations ! Vous avez terminé ce didacticiel. Pour en apprendre davantage, consultez le tutoriel suivant.
 

@@ -8,17 +8,17 @@ dev_langs:
 - CSharp
 - vb
 ms.assetid: 16bdbc7c-4129-411d-bace-f4a3e5375975
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0699faebfd210390eea11f8ad11b48d4c4bbd980
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 7049271dddb4e763bf5ecb3760358bdd63e38df5
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72621428"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579348"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>Étape 4 : ajouter un gestionnaire d'événements Click à chaque étiquette
 
@@ -50,7 +50,7 @@ Le jeu de combinaisons fonctionne comme suit :
      [!code-vb[VbExpressTutorial4Step2_3_4#4](../ide/codesnippet/VisualBasic/step-4-add-a-click-event-handler-to-each-label_1.vb)]
 
      > [!IMPORTANT]
-     > Utilisez le contrôle de langage de programmation en haut à droite de cette page pour afficher C# l’extrait de code ou le Visual Basic extrait de code.<br><br>contrôle de langage ![Programming pour Docs.Microsoft.com ](../ide/media/docs-programming-language-control.png)
+     > Utilisez le contrôle de langage de programmation en haut à droite de cette page pour afficher C# l’extrait de code ou le Visual Basic extrait de code.<br><br>contrôle du langage de programmation ![pour Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
 
     > [!NOTE]
     > Si vous effectuez un copier-coller du bloc de code `label_Click()` au lieu d'écrire le code manuellement, veillez à remplacer le code `label_Click()` existant. Sinon, vous obtiendrez au final un bloc de code en double.

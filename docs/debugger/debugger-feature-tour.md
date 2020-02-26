@@ -12,16 +12,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89debcfdeec2c9d363c6935bd2cfdd1ebf403f76
-ms.sourcegitcommit: d55438841123aad56a524a65332a86ad67af386b
+ms.openlocfilehash: 93973322c40ca62396414317c2ad8875e9b94854
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73599300"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578958"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Premier aperçu du débogueur Visual Studio
 
-Cette rubrique présente les outils du débogueur fournis par Visual Studio. Dans le contexte Visual Studio, quand vous *déboguez votre application*, cela signifie généralement que vous exécutez votre application en y ayant attaché le débogueur (c’est-à-dire en mode Débogueur). Quand vous faites cela, le débogueur fournit de nombreuses façons de voir ce que fait votre code pendant qu’il s’exécute. Vous pouvez parcourir votre code et examiner les valeurs stockées dans des variables, vous pouvez définir des espions sur des variables pour voir quand les valeurs changent, vous pouvez examiner le chemin d’exécution de votre code, et al. S’il s’agit de la première fois que vous tentez de déboguer du code, vous souhaiterez peut-être lire [débogage pour les débutants absolus](../debugger/debugging-absolute-beginners.md) avant de passer par cette rubrique.
+Cette rubrique présente les outils du débogueur fournis par Visual Studio. Dans le contexte Visual Studio, quand vous *déboguez votre application*, cela signifie généralement que vous exécutez votre application en y ayant attaché le débogueur (c’est-à-dire en mode Débogueur). Quand vous faites cela, le débogueur fournit de nombreuses façons de voir ce que fait votre code pendant qu’il s’exécute. Vous pouvez parcourir votre code pas à pas et examiner les valeurs stockées dans les variables, vous pouvez définir des espions sur des variables pour voir quand les valeurs changent, vous pouvez examiner le chemin d’exécution de votre code, etc. Si c’est la première fois que vous essayez de déboguer du code, vous pouvez lire [Débogage pour grands débutants](../debugger/debugging-absolute-beginners.md) avant de poursuivre cette rubrique.
 
 Les fonctionnalités décrites ici sont applicables à C#, C++, Visual Basic, JavaScript et à d’autres langages pris en charge par Visual Studio (sauf indication contraire).
 
@@ -47,7 +47,7 @@ Pour démarrer votre application avec le débogueur attaché, appuyez sur **F11*
 
 La flèche jaune représente l’instruction sur laquelle le débogueur s’est mis en pause, ce qui interrompt également l’exécution de l’application au même point (cette instruction n’a pas encore été exécutée).
 
-F11 est un bon moyen pour examiner le flux de l’exécution de la façon la plus détaillée. (Pour aller plus rapidement dans le code, nous vous présentons également d’autres options.) Par défaut, le débogueur ignore le code non-utilisateur (si vous souhaitez plus d’informations, consultez [uniquement mon code](../debugger/just-my-code.md)).
+F11 est un bon moyen pour examiner le flux de l’exécution de la façon la plus détaillée. (Pour avancer plus rapidement dans le code, il existe d’autres options, que nous allons vous montrer.) Par défaut, le débogueur ignore le code non-utilisateur (si vous voulez plus d’informations, consultez [Uniquement mon code](../debugger/just-my-code.md)).
 
 >[!NOTE]
 > Dans le code managé, vous voyez une boîte de dialogue vous demandant si vous voulez être averti quand vous effectuez automatiquement un pas à pas principal dans les propriétés et les opérateurs (le comportement par défaut). Si vous voulez changer ce paramètre ultérieurement, désactivez le paramètre **Pas à pas principal dans les propriétés et les opérateurs** dans le menu **Outils > Options** sous **Débogage**.
@@ -126,7 +126,7 @@ Pour plus d’informations sur l’utilisation de la fonctionnalité et sur les 
 
 Pour modifier le code XAML pendant une session de débogage, consultez [écrire et déboguer du code XAML en cours d’exécution avec le rechargement à chaud XAML](../xaml-tools/xaml-hot-reload.md).
 
-## <a name="inspect-variables-with-data-tips"></a>Inspecter des variables avec des bulles d’informations
+## <a name="inspect-variables-with-data-tips"></a>Inspecter des variables avec des bulles d’informations (datatips)
 
 Maintenant que vous vous débrouillez un peu, vous pouvez commencer à examiner l’état de votre application (ses variables) avec le débogueur. Les fonctionnalités qui vous permettent d’inspecter des variables sont parmi les plus pratiques du débogueur : vous pouvez faire cela de différentes façons. Souvent, quand vous essayez de déboguer un problème, vous essayez de déterminer si les variables stockent les valeurs que vous prévoyez dans un état donné de l’application.
 
@@ -136,7 +136,7 @@ Avec l’exécution en pause dans le débogueur, placez le curseur sur un objet 
 
 Développez l’objet pour voir toutes ses propriétés (comme la propriété `FullPath` dans cet exemple).
 
-Souvent, lors du débogage, vous voulez un moyen rapide de vérifier les valeurs des propriétés sur des objets : les bulles d’informations sont un bon moyen de le faire.
+Souvent, lors du débogage, vous voulez un moyen rapide de vérifier les valeurs des propriétés sur des objets : les datatips sont un bon moyen de le faire.
 
 > [!TIP]
 > Dans la plupart des langages pris en charge, vous pouvez modifier le code pendant une session de débogage. Pour plus d’informations, consultez [Modifier & Continuer](../debugger/edit-and-continue.md).
@@ -154,7 +154,7 @@ Dans la fenêtre **Automatique**, vous voyez des variables, avec leur valeur act
 
 Ensuite, examinez la fenêtre **Variables locales**. La fenêtre **Variables locales** vous montre les variables qui se trouvent actuellement dans l’étendue.
 
-![Fenêtre variables locales](../debugger/media/dbg-tour-locals-window.png "Fenêtre Variables locales")
+![Variables locales, fenêtre](../debugger/media/dbg-tour-locals-window.png "Fenêtre Variables locales")
 
 Dans cet exemple, l’objet `this` et l’objet `f` sont dans l’étendue. Pour plus d’informations, consultez [Inspecter les variables dans les fenêtres Automatique et Variables locales](../debugger/autos-and-locals-windows.md).
 
@@ -164,7 +164,7 @@ Vous pouvez utiliser une fenêtre **Espion** pour spécifier une variable (ou un
 
 Pendant le débogage, cliquez avec le bouton droit sur un objet et choisissez **Ajouter un espion**.
 
-![Fenêtre Espion](../debugger/media/dbg-tour-watch-window.png "Fenêtre Espion")
+![Espion, fenêtre](../debugger/media/dbg-tour-watch-window.png "Fenêtre Espion")
 
 Dans cet exemple, vous avez un espion défini sur l’objet `f` et vous pouvez voir sa valeur changer au fil de votre déplacement dans le débogueur. Contrairement à d’autres fenêtres de variables, la fenêtre **Espion** montre toujours les variables que vous observez (elles apparaissent en grisé quand elles sont en dehors de l’étendue).
 
@@ -183,7 +183,7 @@ La fenêtre **Pile des appels** montre l’ordre dans lequel les méthodes et le
 
 Vous pouvez double-cliquer sur une ligne de code pour accéder à ce code source ; ceci change également l’étendue active inspectée par le débogueur. Ceci ne fait pas avancer le débogueur.
 
-Vous pouvez également utiliser les menus contextuels de la fenêtre **Pile des appels** pour faire d’autres choses. Par exemple, vous pouvez insérer des points d’arrêt dans des fonctions spécifiques, redémarrer votre application avec **Exécuter jusqu’au curseur** et aller examiner le code source. Consultez [Guide pratique pour examiner la pile des appels](../debugger/how-to-use-the-call-stack-window.md).
+Vous pouvez également utiliser les menus contextuels de la fenêtre **Pile des appels** pour faire d’autres choses. Par exemple, vous pouvez insérer des points d’arrêt dans des fonctions spécifiques, redémarrer votre application avec **Exécuter jusqu’au curseur** et aller examiner le code source. Voir [Guide pratique pour examiner la pile des appels](../debugger/how-to-use-the-call-stack-window.md).
 
 ## <a name="exception"></a> Examiner une exception
 
@@ -208,7 +208,7 @@ Vous pouvez configurer votre projet pour qu’il soit généré comme une [confi
 
 Les propriétés de débogage sont spécifiques à chaque type de projet. Par exemple, vous pouvez spécifier un argument à passer à l’application lorsque vous la démarrez. Vous pouvez accéder aux propriétés spécifiques au projet en cliquant avec le bouton droit sur le projet dans Explorateur de solutions et en sélectionnant **Propriétés**. Les propriétés de débogage apparaissent généralement sous l’onglet **générer** ou **Déboguer** , en fonction du type de projet particulier.
 
-![Propriétés du projet](../debugger/media/dbg-tour-project-properties.png "Propriétés de projet")
+![Propriétés d’un projet](../debugger/media/dbg-tour-project-properties.png "Propriétés de projet")
 
 ## <a name="debug-live-aspnet-apps-in-azure-app-service"></a>Déboguer des applications ASP.NET en production dans Azure App Service
 
@@ -220,7 +220,7 @@ La collecte de captures instantanées est disponible pour les applications ASP.N
 
 Pour plus d’informations, consultez [Déboguer des applications ASP.NET en production avec le débogueur de capture instantanée](../debugger/debug-live-azure-applications.md).
 
-## <a name="view-snapshots-with-intellitrace-step-back-visual-studio-enterprise"></a>Afficher des captures instantanées avec le retour en arrière IntelliTrace (Visual Studio Enterprise)
+## <a name="view-snapshots-with-intellitrace-step-back-visual-studio-enterprise"></a>Examiner des captures instantanées avec le retour en arrière IntelliTrace (Visual Studio Enterprise)
 
 Le **retour en arrière IntelliTrace** crée automatiquement une capture instantanée de votre application à chaque événement de point d’arrêt et d’étape du débogueur. Les captures instantanées enregistrées vous permettent de revenir à des étapes ou points d’arrêt précédents pour afficher un état antérieur de l’application. Le retour en arrière IntelliTrace peut vous faire gagner du temps quand vous souhaitez afficher un état précédent de l’application sans avoir à redémarrer le débogage ou à recréer l’état de l’application souhaité.
 
@@ -229,6 +229,10 @@ Vous pouvez parcourir et afficher les captures instantanées à l’aide des bou
 ![Boutons précédent et suivant](../debugger/media/intellitrace-step-back-icons-description.png  "Boutons précédent et suivant")
 
 Pour plus d’informations, consultez la page [Inspecter les états antérieurs de l’application avec IntelliTrace](../debugger/view-historical-application-state.md).
+
+## <a name="debug-performance-issues"></a>Problèmes de performances de débogage
+
+Si votre application s’exécute trop lentement ou utilise trop de mémoire, vous devrez peut-être tester votre application avec les outils de profilage au plus tôt. Pour plus d’informations sur les outils de profilage, tels que l’outil utilisation de l’UC et l’analyseur de mémoire, consultez [tout d’abord les outils de profilage](../profiling/profiling-feature-tour.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

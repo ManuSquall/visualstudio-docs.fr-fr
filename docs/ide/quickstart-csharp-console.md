@@ -8,21 +8,21 @@ ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: quickstart
 ms.devlang: vb
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 94e7a0917a07a3e36ec46b0f9e530dd55728e4ee
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.openlocfilehash: 20b2cf2bf12e9b24ca12d0a73b43e4a56e8246f4
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180110"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579490"
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>Démarrage rapide : Utiliser Visual Studio pour créer une première application console C#
+# <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>Démarrage rapide : Utiliser Visual Studio pour créer une première application console C#
 
 Dans cette présentation de 5-10 minutes de l’environnement de développement intégré (IDE) de Visual Studio, vous allez créer une application C# simple qui s’exécute dans la console.
 
@@ -38,15 +38,15 @@ Si vous n’avez pas encore installé Visual Studio, accédez à la page [Télé
 
 ::: moniker-end
 
-## <a name="create-a-project"></a>Créer un projet
+## <a name="create-a-project"></a>Création d’un projet
 
 Vous allez d’abord créer un projet d’application C#. Le type de projet inclut tous les fichiers de modèle dont vous aurez besoin au départ.
 
 ::: moniker range="vs-2017"
 
-1. Ouvrez Visual Studio 2017.
+1. Ouvrez Visual Studio 2017.
 
-2. Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**.
+2. Dans la barre de menus supérieure, choisissez **fichier** > **nouveau** > **projet**.
 
 3. Dans le volet gauche de la boîte de dialogue **Nouveau projet**, développez **C#** , puis choisissez **.NET Core**. Dans le volet central, choisissez **Application console (.NET Core)** . Ensuite, nommez le projet *HelloWorld*.
 
@@ -95,7 +95,7 @@ Vous allez d’abord créer un projet d’application C#. Le type de projet incl
    
 ::: moniker-end
 
-## <a name="create-the-application"></a>Créer l’application
+## <a name="create-the-application"></a>Création de l'application
 
 ::: moniker range="vs-2017"
 
@@ -131,7 +131,7 @@ Nous allons ajouter du code pour suspendre l’application afin que la fenêtre 
 
    ![Ajouter du code pour suspendre l’application Hello World](../ide/media/csharp-console-helloworld-add-code.png)
 
-## <a name="run-the-application"></a>Exécuter l'application
+## <a name="run-the-application"></a>Exécution de l'application
 
 1. Cliquez sur le bouton **HelloWorld** dans la barre d’outils pour exécuter l’application en mode débogage. (Vous pouvez également appuyer sur **F5**.)
 

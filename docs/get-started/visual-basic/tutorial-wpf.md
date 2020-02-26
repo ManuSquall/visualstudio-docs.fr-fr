@@ -9,19 +9,19 @@ ms.topic: conceptual
 dev_langs:
 - VB
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4108298eb095cf31e5f5f7089cbc7cd8780e8977
-ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
+ms.openlocfilehash: d850f709921120fcb85f78f46eb0307d29801d11
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70864703"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579951"
 ---
-# <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Tutoriel : Créer une application simple avec Visual Basic
+# <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Didacticiel : créer une application simple avec Visual Basic
 
 Avec ce didacticiel, vous allez vous familiariser avec la plupart des outils, boîtes de dialogue et concepteurs que vous pouvez utiliser lorsque vous développez des applications avec Visual Studio. Vous allez créer une application « Hello, World », concevoir l’interface utilisateur, ajouter du code et déboguer des erreurs, tout en découvrant l’utilisation de l’environnement de développement intégré ([IDE](visual-studio-ide.md)).
 
@@ -63,7 +63,7 @@ Lorsque vous créez une application dans Visual Studio, vous créez d'abord un p
 
 ::: moniker range="vs-2017"
 
-1. Créer un nouveau projet. Dans la barre de menus, sélectionnez **Fichier** > **Nouveau** > **Projet**.
+1. Créez un projet. Dans la barre de menus, sélectionnez **Fichier** > **Nouveau** > **Projet**.
 
      ![Dans la barre de menus, choisissez Fichier, Nouveau, Projet](../media/exploreide-filenewproject.png)
 
@@ -110,7 +110,7 @@ Nous allons ajouter trois types de contrôles à cette application : un contrôl
 
 ### <a name="add-a-textblock-control"></a>Pour ajouter un contrôle TextBlock
 
-1. Appuyez sur **CTRL**+**Q** pour activer la zone de recherche et tapez **boîte à outils**. Choisissez **Affichage > Boîte à outils** dans la liste des résultats.
+1. Appuyez sur **Ctrl**+**Q** pour activer la zone de recherche et tapez **boîte à outils**. Choisissez **Affichage > Boîte à outils** dans la liste des résultats.
 
 2. Dans la fenêtre **Boîte à outils**, développez le nœud **Contrôles WPF communs** pour afficher le contrôle TextBlock.
 
@@ -152,7 +152,7 @@ Vous ajouterez ensuite deux contrôles [RadioButton](/dotnet/framework/wpf/contr
 
      ![Formulaire Greetings avec contrôle TextBlock et deux cases d’option](../media/exploreide-greetingswithradiobuttons.png)
 
-3. Dans la fenêtre **Propriétés** du contrôle RadioButton de gauche, affectez à la propriété **Nom** (propriété en haut de la fenêtre **Propriétés**) la valeur `HelloButton`.
+3. Dans la fenêtre **Propriétés** du contrôle RadioButton de gauche, affectez à la propriété **Nom** (propriété en haut de la fenêtre **Propriétés** ) la valeur `HelloButton`.
 
      ![Fenêtre Propriétés de RadioButton](../media/exploreide-buttonproperties.png)
 
@@ -162,7 +162,7 @@ Vous pouvez maintenant afficher du texte pour chaque contrôle RadioButton. La p
 
 ### <a name="add-display-text-for-each-radio-button"></a>Ajouter un texte à afficher pour chaque case d’option
 
-Mettez à jour l’attribut content `HelloButton` pour `GoodbyeButton` et `"Hello"` vers `"Goodbye"` et dans le XAML. Le balisage XAML doit maintenant ressembler à l’exemple suivant :
+Mettez à jour l’attribut **content** pour le `HelloButton` et `GoodbyeButton` à `"Hello"` et `"Goodbye"` dans le XAML. Le balisage XAML doit maintenant ressembler à l’exemple suivant :
 
    ```xaml
    <Grid>
@@ -210,7 +210,7 @@ Quand cette application s’exécute, un message s’affiche si un utilisateur c
     End Sub
     ```
 
-2. Entrez le code suivant :
+2. Entrez le code suivant :
 
     ```vb
     If HelloButton.IsChecked = True Then
@@ -259,7 +259,7 @@ Redémarrez le débogueur (appuyez sur **F5**). Vous devez voir la fenêtre **Gr
 
  Maintenant, fermez la fenêtre d’application pour arrêter le débogage.
 
-### <a name="debug-with-breakpoints"></a>Déboguer avec des points d’arrêt
+### <a name="debug-with-breakpoints"></a>Déboguer à l’aide de points d’arrêt
 
 Vous pouvez tester le code pendant le débogage en ajoutant des points d’arrêt. Vous pouvez ajouter des points d’arrêt en choisissant **Déboguer** > **Basculer le point d’arrêt**, en cliquant dans la marge gauche de l’éditeur à côté de la ligne de code où mettre le point d’arrêt, ou en appuyant sur **F9**.
 
@@ -305,7 +305,7 @@ Dans l’application en cours d’exécution, vous devriez voir un widget qui ap
 
 ### <a name="build-a-release-version-of-the-application"></a>Générer une version Release de l'application
 
-Maintenant que vous avez vérifié que tout fonctionne, vous pouvez préparer une version Release de l’application.
+Maintenant que vous avez vérifié que tout fonctionne correctement, vous pouvez préparer une build de version release de l’application.
 
 1. Dans le menu principal, sélectionnez **Générer** > **Nettoyer la solution** pour supprimer les fichiers intermédiaires et les fichiers de sortie créés lors des builds précédentes. Cette opération n'est pas nécessaire, mais elle nettoie les sorties des versions Debug.
 

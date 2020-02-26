@@ -5,17 +5,17 @@ ms.assetid: 634ef037-1525-48c8-ac7f-abf04be69376
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1be9af1badba19932c5d713bb4134448ccf84caf
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 82dbef4baee72be8ff96f83e436b2587e9a020ea
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591747"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579854"
 ---
 # <a name="step-3-set-your-form-properties"></a>Étape 3 : définir les propriétés de votre formulaire
 
@@ -70,7 +70,7 @@ Ensuite, vous utilisez la fenêtre **Propriétés** pour changer l’apparence d
 
    - Cliquez sur le bouton **X** dans l’angle supérieur de la fenêtre de la **visionneuse d’images** .
 
-## <a name="next-steps"></a>Étapes suivantes :
+## <a name="next-steps"></a>Étapes suivantes
 
 * Pour passer à l’étape suivante du didacticiel, consultez **[étape 4 : composer votre formulaire avec un contrôle TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)** .
 

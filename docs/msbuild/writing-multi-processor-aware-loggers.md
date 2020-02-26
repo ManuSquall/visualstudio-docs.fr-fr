@@ -7,17 +7,17 @@ helpviewer_keywords:
 - multi-proc loggers
 - loggers, multi-proc
 ms.assetid: ff987d1b-1798-4803-9ef6-cc8fcc263516
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24378a9aa5bb78fdc2ae18a2793dafcf87be2605
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3611a98a55d25e1ac31b8c8e0370a68b858441c9
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443136"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579471"
 ---
 # <a name="write-multi-processor-aware-loggers"></a>Écrire des journaux multiprocesseurs
 La capacité de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] à tirer parti de plusieurs processeurs peut accélérer le temps de génération d’un projet. Toutefois, elle rend plus complexe la journalisation des événements de build. Dans un environnement à un seul processeur, les événements, messages, avertissements et erreurs arrivent au journal (logger) de manière prévisible et séquentielle. Toutefois, dans un environnement multiprocesseur, les événements provenant de différentes sources peuvent arriver en même temps ou dans le désordre. Pour résoudre ce problème, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] fournit un journal multiprocesseur, ainsi qu’un nouveau modèle de journalisation, qui vous permet de créer des « journaux de transfert » personnalisés.
@@ -33,7 +33,7 @@ La capacité de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vste
 ### <a name="central-logging-model"></a>Modèle de journalisation centralisé
  Dans le modèle de journalisation centralisé, une seule instance de *MSBuild.exe* agit comme « nœud central », et les instances enfants du nœud central (les « nœuds secondaires ») sont jointes au nœud central pour l’aider à effectuer les tâches de génération.
 
- ![Modèle de journal centralisé](../msbuild/media/centralnode.png "CentralNode")
+ ![Modèle d’enregistreur d’événements central](../msbuild/media/centralnode.png "CentralNode")
 
  Les journaux de différents types qui sont joints au nœud central sont appelés « journaux centraux ». Une seule instance de chaque type de journal peut être jointe au nœud central.
 

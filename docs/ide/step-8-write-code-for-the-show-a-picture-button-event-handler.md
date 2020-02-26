@@ -8,17 +8,17 @@ ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 - VB
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e249f2ad765063c54df08466bef15b8e443af1bf
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d74c9ecda0e3ab23c1f2ab1cb2180a60701c069a
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591721"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579810"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Étape 8 : écrire du code pour le gestionnaire d'événements du bouton Afficher une image
 
@@ -69,14 +69,14 @@ Ensuite, utilisez IntelliSense pour entrer le reste du code destiné à ouvrir u
  1. Quand vous utilisez une méthode sur un contrôle ou un composant (opération désignée sous le nom d’*appel de méthode*), vous devez ajouter des parenthèses. Ajoutez des parenthèses ouvrantes et fermantes immédiatement après le « g » dans `ShowDialog`: `()`. Le code doit maintenant indiquer « openFileDialog1.ShowDialog() ».
 
     > [!NOTE]
-    > Les méthodes sont une partie importante d’une application, et ce didacticiel a montré plusieurs façons d’utiliser des méthodes. Vous pouvez appeler la méthode d’un composant pour lui demander d’effectuer une action, comme quand vous avez appelé la méthode `ShowDialog()` du composant **OpenFileDialog**. Vous pouvez créer vos propres méthodes pour que votre application effectue des opérations, comme celle que vous générez maintenant, appelée la méthode `showButton_Click()`, qui ouvre une boîte de dialogue et une image lorsqu’un utilisateur choisit un bouton.
+    > Les méthodes sont une partie importante d’une application, et ce didacticiel a montré plusieurs façons d’utiliser des méthodes. Vous pouvez appeler la méthode d’un composant pour lui demander d’effectuer une action, comme quand vous avez appelé la méthode **du composant**OpenFileDialog`ShowDialog()`. Vous pouvez créer vos propres méthodes pour que votre application effectue des opérations, comme celle que vous générez maintenant, appelée la méthode `showButton_Click()`, qui ouvre une boîte de dialogue et une image lorsqu’un utilisateur choisit un bouton.
 
  1. Pour C#, ajoutez un espace, puis ajoutez deux signes égal (`==`). Pour Visual Basic, ajoutez un espace, puis un seul signe égal (`=`). (C# et Visual Basic utilisent des opérateurs d’égalité différents.)
 
  1. Ajoutez un autre espace. Une fois terminé, une autre fenêtre **IntelliSense** s’ouvre. Commencez à taper `DialogResult` et appuyez sur la touche **Tab** pour l’ajouter.
 
     > [!NOTE]
-    > Lorsque vous écrivez du code pour appeler une méthode, elle retourne parfois une valeur. Ici, la méthode <xref:System.Windows.Forms.CommonDialog.ShowDialog> du composant **OpenFileDialog** retourne une valeur <xref:System.Windows.Forms.DialogResult>. DialogResult est une valeur spéciale qui vous indique ce qui s'est passé dans une boîte de dialogue. Un composant **OpenFileDialog** permet à l’utilisateur de choisir **OK** ou **Annuler** : sa méthode `ShowDialog()` retournera donc `DialogResult.OK` ou `DialogResult.Cancel`.
+    > Lorsque vous écrivez du code pour appeler une méthode, elle retourne parfois une valeur. Ici, la méthode **du composant**OpenFileDialog<xref:System.Windows.Forms.CommonDialog.ShowDialog> retourne une valeur <xref:System.Windows.Forms.DialogResult>. DialogResult est une valeur spéciale qui vous indique ce qui s'est passé dans une boîte de dialogue. Un composant **OpenFileDialog** permet à l’utilisateur de choisir **OK** ou **Annuler** : sa méthode `ShowDialog()` retournera donc `DialogResult.OK` ou `DialogResult.Cancel`.
 
  1. Tapez un point pour ouvrir la fenêtre **IntelliSense** de la valeur DialogResult. Tapez la lettre `O` et appuyez sur la touche **Tab pour in**sérer **OK**.
 
@@ -99,7 +99,7 @@ Ensuite, utilisez IntelliSense pour entrer le reste du code destiné à ouvrir u
 
     [!code-vb[VbExpressTutorial1Step8#1](../ide/codesnippet/VisualBasic/step-8-write-code-for-the-show-a-picture-button-event-handler_1.vb)]
 
-## <a name="next-steps"></a>Étapes suivantes :
+## <a name="next-steps"></a>Étapes suivantes
 
 * Pour passer à l’étape suivante du didacticiel, consultez **[étape 9 : examiner, commenter et tester votre code](../ide/step-9-review-comment-and-test-your-code.md)** .
 

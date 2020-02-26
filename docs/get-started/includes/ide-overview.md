@@ -2,16 +2,16 @@
 ms.date: 03/19/2019
 ms.technology: vs-ide-general
 ms.custom: vs-get-started
-ms.author: jillfra
-author: jillre
+ms.author: tglee
+author: TerryGLee
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: 973af983d0f07b0aceeedfc865280deea115f179
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: 69b1bccf20c242965462b807b2a1b64d3c60d671
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72632451"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77590758"
 ---
 *L’environnement de développement intégré* de Visual Studio est une plateforme de lancement créative avec laquelle vous pouvez modifier, déboguer et générer du code, puis publier une application. Un environnement de développement intégré (IDE) est un programme riche en fonctionnalités qui peut être utilisé pour de nombreux aspects du développement de logiciels. Au-delà de l’éditeur et du débogueur standard fournis par la plupart des IDE, Visual Studio inclut des compilateurs, des outils de complétion de code, des concepteurs graphiques et de nombreuses autres fonctionnalités afin de faciliter le processus de développement logiciel.
 
@@ -116,7 +116,7 @@ Voici quelques-unes des fonctionnalités populaires de Visual Studio qui vous ai
 
    Modifiez et déboguez de manière collaborative avec d’autres utilisateurs en temps réel, quel que soit le type de votre application ou le langage de programmation. Vous pouvez partager instantanément et en toute sécurité votre projet puis partager au besoin des sessions de débogage, des instances de terminal, des applications web localhost, des appels vocaux, etc.
 
-- [Hiérarchie des appels](../../ide/reference/call-hierarchy.md)
+- [Hiérarchie d’appels](../../ide/reference/call-hierarchy.md)
 
    La fenêtre **Hiérarchie d’appels** affiche les méthodes qui appellent une méthode sélectionnée. Ces informations peuvent être utiles quand vous envisagez de changer ou de supprimer la méthode, ou quand vous essayez de repérer un bogue.
 
@@ -168,7 +168,7 @@ Nous allons aller plus loin en créant un programme simple.
 
 1. Ouvrez Visual Studio.
 
-1. Dans la barre de menus, choisissez **Fichier** > **Nouveau** > **Projet**.
+1. Dans la barre de menus, choisissez **fichier** > **nouveau** **projet**>.
 
    ![Fichier > Nouveau projet sur la barre de menus](../media/file-new-project-menu.png)
 
@@ -185,7 +185,7 @@ Nous allons aller plus loin en créant un programme simple.
 
    Quelque chose qui ressemble à ce qui suit doit s’afficher :
 
-   ![Environnement IDE de Visual Studio](../media/overview-ide-console-app.png)
+   ![IDE Visual Studio](../media/overview-ide-console-app.png)
 
    Le code C# de votre application figure dans la fenêtre d’éditeur, qui occupe la majeure partie de l’espace. Notez que le texte est colorisé automatiquement pour indiquer les différentes parties du code, comme les mots clés et les types. En outre, les petites lignes en pointillés verticales du code indiquent les accolades correspondant entre elles et les numéros de ligne vous aident à localiser le code. Vous pouvez cliquer sur les signes moins encadrés pour réduire ou développer des blocs de code. Cette fonctionnalité de surlignage de code vous permet de masquer le code dont vous n’avez pas besoin, ce qui contribue à réduire l’encombrement à l’écran. Vos fichiers projet sont répertoriés sur le côté droit dans une fenêtre appelée **Explorateur de solutions**.
 
@@ -218,7 +218,7 @@ Nous allons aller plus loin en créant un programme simple.
    Console.WriteLine($"\nHello {name}!");
    ```
 
-1. Réexécutez l’application en sélectionnant **Déboguer** > **Démarrer sans débogage** ou en appuyant sur **Ctrl**+**F5**.
+1. Réexécutez l’application en sélectionnant **Déboguer** > exécuter **sans débogage** ou en appuyant sur **CTRL**+**F5**.
 
    Visual Studio régénère l’application et une fenêtre de console s’ouvre et vous demande votre nom.
 
@@ -244,7 +244,7 @@ Nous allons aller plus loin en créant un programme simple.
 
 1. Pour rechercher le modèle souhaité, tapez ou entrez **console .net core** dans la zone de recherche. La liste des modèles disponibles est automatiquement filtrée en fonction des mots clés que vous avez entrés. Vous pouvez filtrer davantage les résultats de modèles en choisissant **C#** dans la liste déroulante **Langage**. Sélectionnez le modèle **Application console (.NET Core)** , puis choisissez **Suivant**.
 
-    ![Créer un projet dans Visual Studio](../media/vs-2019/create-new-project.png)
+    ![Création d'un projet dans Visual Studio](../media/vs-2019/create-new-project.png)
 
 1. Dans la fenêtre **Configurer votre nouveau projet**, entrez **HelloWorld** dans la zone **Nom du projet**, changez éventuellement l’emplacement du répertoire pour vos fichiers projet, puis choisissez **Créer**.
 
@@ -254,7 +254,7 @@ Nous allons aller plus loin en créant un programme simple.
 
    Quelque chose qui ressemble à ce qui suit doit s’afficher :
 
-   ![Environnement IDE de Visual Studio](../media/vs-2019/overview-ide-console-app.png)
+   ![IDE Visual Studio](../media/vs-2019/overview-ide-console-app.png)
 
    Le code C# de votre application figure dans la fenêtre d’éditeur, qui occupe la majeure partie de l’espace. Notez que le texte est colorisé automatiquement pour indiquer les différentes parties du code, comme les mots clés et les types. En outre, les petites lignes en pointillés verticales du code indiquent les accolades correspondant entre elles et les numéros de ligne vous aident à localiser le code. Vous pouvez cliquer sur les signes moins encadrés pour réduire ou développer des blocs de code. Cette fonctionnalité de surlignage de code vous permet de masquer le code dont vous n’avez pas besoin, ce qui contribue à réduire l’encombrement à l’écran. Vos fichiers projet sont répertoriés sur le côté droit dans une fenêtre appelée **Explorateur de solutions**.
 
@@ -287,7 +287,7 @@ Nous allons aller plus loin en créant un programme simple.
    Console.WriteLine($"\nHello {name}!");
    ```
 
-1. Réexécutez l’application en sélectionnant **Déboguer** > **Démarrer sans débogage** ou en appuyant sur **Ctrl**+**F5**.
+1. Réexécutez l’application en sélectionnant **Déboguer** > exécuter **sans débogage** ou en appuyant sur **CTRL**+**F5**.
 
    Visual Studio régénère l’application et une fenêtre de console s’ouvre et vous demande votre nom.
 
@@ -413,7 +413,7 @@ Vous pouvez personnaliser l’interface utilisateur de Visual Studio, notamment 
 
 ::: moniker range="vs-2017"
 
-2. Dans la page d’options **Environnement** > **Général**, remplacez la sélection du **Thème de couleur** par **Sombre**, puis choisissez **OK**.
+2. Dans la page **environnement** > options **générales** , remplacez la sélection **thème de couleur** par **foncé**, puis cliquez sur **OK**.
 
    Le thème de couleur de l’ensemble de l’IDE devient **Sombre**.
 
@@ -423,7 +423,7 @@ Vous pouvez personnaliser l’interface utilisateur de Visual Studio, notamment 
 
 ::: moniker range=">=vs-2019"
 
-2. Dans la page d’options **Environnement** > **Général**, remplacez la sélection du **Thème de couleur** par **Sombre**, puis choisissez **OK**.
+2. Dans la page **environnement** > options **générales** , remplacez la sélection **thème de couleur** par **foncé**, puis cliquez sur **OK**.
 
    Le thème de couleur de l’ensemble de l’IDE devient **Sombre**.
 

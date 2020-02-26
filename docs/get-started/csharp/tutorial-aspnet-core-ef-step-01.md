@@ -10,33 +10,33 @@ monikerRange: vs-2019
 ms.topic: tutorial
 ms.devlang: CSharp
 author: ardalis
-ms.author: tglee
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 1851c497579d45aa45c36dc1cd20945ce2b9c1e1
-ms.sourcegitcommit: 6c55c40da74ed8969dcba56acbd30458fdb69c5a
+ms.openlocfilehash: d900c0f51b14450f38caf06738739daef2549235
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/13/2019
-ms.locfileid: "70977437"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77580091"
 ---
-# <a name="tutorial-create-your-first-aspnet-core-app-using-entity-framework-with-visual-studio-2019"></a>Tutoriel : Créer une application ASP.NET Core à l’aide d’Entity Framework avec Visual Studio 2019
+# <a name="tutorial-create-your-first-aspnet-core-app-using-entity-framework-with-visual-studio-2019"></a>Didacticiel : créer votre première ASP.NET Core application à l’aide de Entity Framework avec Visual Studio 2019
 
 Ce tutoriel explique comment créer une application web ASP.NET Core qui utilise des données et la déployer sur Azure. Il se compose des étapes suivantes :
 
-- [Étape 1 : Installer Visual Studio 2019](#step-1-install-visual-studio-2019)
-- [Étape 2 : Créer une application web ASP.NET Core](tutorial-aspnet-core-ef-step-02.md)
-- [Étape 3 : Travailler avec des données à l’aide d’Entity Framework](tutorial-aspnet-core-ef-step-03.md)
-- [Étape 4 : Exposer une API web à partir d’une application ASP.NET Core](tutorial-aspnet-core-ef-step-04.md)
-- [Étape 5 : Déployer une application ASP.NET Core sur Azure](tutorial-aspnet-core-ef-step-05.md)
+- [Étape 1 : installer Visual Studio 2019](#step-1-install-visual-studio-2019)
+- [Étape 2 : créer votre première ASP.NET Core application Web](tutorial-aspnet-core-ef-step-02.md)
+- [Étape 3 : utiliser des données à l’aide de Entity Framework](tutorial-aspnet-core-ef-step-03.md)
+- [Étape 4 : exposer une API Web à partir de votre application ASP.NET Core](tutorial-aspnet-core-ef-step-04.md)
+- [Étape 5 : déploiement de votre application ASP.NET Core sur Azure](tutorial-aspnet-core-ef-step-05.md)
 
-## <a name="step-1-install-visual-studio-2019"></a>Étape 1 : Installer Visual Studio 2019
+## <a name="step-1-install-visual-studio-2019"></a>Étape 1 : installer Visual Studio 2019
 
-Découvrez comment installer Visual Studio 2019 avec ce tutoriel vidéo et des instructions détaillées. Si vous avez déjà installé Visual Studio, passez directement à [Étape 2 : Créer une application web ASP.NET Core](tutorial-aspnet-core-ef-step-02.md).
+Découvrez comment installer Visual Studio 2019 avec ce tutoriel vidéo et des instructions détaillées. Si vous avez déjà installé Visual Studio, passez directement à [l’étape 2 : créer votre première ASP.net Core application Web](tutorial-aspnet-core-ef-step-02.md).
 
 _Regardez cette vidéo et suivez les instructions pour installer Visual Studio et créer votre première application ASP.NET Core._
 
@@ -58,7 +58,7 @@ Visual Studio peut être utilisé dans différents contextes de développement ;
 
 ![Visual Studio 2019 – Choisir les charges de travail](media/vs-2019/vs2019-choose-workloads.png)
 
-## <a name="install"></a>Installation
+## <a name="install"></a>Installer
 
 Cliquez sur **Installer** et laissez le programme d’installation télécharger et installer Visual Studio.
 
@@ -70,10 +70,10 @@ Visual Studio devrait se lancer automatiquement une fois l’installation termin
 
 ## <a name="explore-aspnet-core-project-types"></a>Explorer les types de projets ASP.NET Core
 
-Vous pouvez choisir le nom et l’emplacement de votre projet, puis sélectionner **Créer**. Sélectionnez le modèle à utiliser pour votre application ASP.NET Core. Vous pouvez choisir parmi les options suivantes :
+Vous pouvez choisir le nom et l’emplacement de votre projet, puis sélectionner **Créer**. Sélectionnez le modèle à utiliser pour votre application ASP.NET Core. Vous pouvez choisir parmi les options suivantes :
 
-- Vide : modèle de projet vide permettant de partir de zéro.
-- API : modèle idéal pour les API web.
+- vide. modèle de projet vide permettant de partir de zéro.
+- . modèle idéal pour les API web.
 - Application web : application web ASP.NET Core standard conçue avec Razor Pages.
 - Application web (modèle-vue-contrôleur) : application web ASP.NET Core standard suivant le modèle modèle-vue-contrôleur.
 - Angular.
@@ -86,7 +86,7 @@ Notez que, pour la plupart des modèles de projet, vous pouvez également choisi
 - Aucune authentification.
 - Comptes d’utilisateur individuels : comptes stockés dans une base de données locale ou Azure.
 - Comptes professionnels ou scolaires : authentification avec Active Directory, Azure AD ou Office 365.
-- Authentification Windows : authentification adaptée aux applications intranet.
+- Authentification Windows. authentification adaptée aux applications intranet.
 
 Sélectionnez le modèle application Web standard sans authentification, puis cliquez sur **créer**.
 
@@ -96,8 +96,8 @@ Sélectionnez le modèle application Web standard sans authentification, puis cl
 
 Dans la vidéo suivante, vous aborderez votre premier projet ASP.NET Core.
 
-[Tutoriel : Créer une application web ASP.NET Core](tutorial-aspnet-core-ef-step-02.md)
+[Didacticiel : création de votre première application Web ASP.NET Core](tutorial-aspnet-core-ef-step-02.md)
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Tutoriel : Bien démarrer avec C# et ASP.NET Core](tutorial-aspnet-core.md) : tutoriel plus détaillé sans procédure pas à pas vidéo
+- [Didacticiel : prise en main C# de et ASP.net Core](tutorial-aspnet-core.md) Didacticiel plus détaillé sans vidéo pas à pas

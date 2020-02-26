@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d99a6ae3d2b1a2c0acfe4aee160801181c72cbe7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c0d1c8cfb94b74f54eaaddd6b8d6d0fd17216b94
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62994917"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77577949"
 ---
 # <a name="overview-of-tools-for-measuring-performance-in-visual-studio"></a>Vue d’ensemble des outils de mesure des performances dans Visual Studio
 
@@ -26,3 +26,5 @@ Les outils de profilage et de diagnostic vous aident à diagnostiquer l’utilis
 * [Analyser l’utilisation de l’UC](../profiling/cpu-usage.md) pour obtenir des informations détaillées sur l’outil d’utilisation de l’UC.
 
 * [Analyser l’utilisation de la mémoire](../profiling/memory-usage.md) pour identifier les goulots d’étranglement de performances.
+
+* [Analyser l’utilisation de la mémoire à l’aide de l’outil d’allocation d’objets .net](../profiling/dotnet-alloc-tool.md) pour identifier les goulots d’étranglement dans les applications .net.

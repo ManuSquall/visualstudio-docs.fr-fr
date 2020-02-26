@@ -8,17 +8,17 @@ ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 - VB
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 414e477dcc2e7b3bd4fcde6c82fe6c0ef77f1df0
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: e0dc7281b51d0efe0d19020df6a154e332ad9bb0
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76113376"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579440"
 ---
 # <a name="step-10-write-code-for-additional-buttons-and-a-check-box"></a>Étape 10 : écrire du code pour des boutons supplémentaires et une case à cocher
 
@@ -42,7 +42,7 @@ Ajoutez le code suivant à votre fichier de code **Form1** (*Form1.cs* ou *Form1
 > [!NOTE]
 > Votre code risque de ne pas afficher les lettres « la casse mixte ».
 
-## <a name="next-steps"></a>Étapes suivantes :
+## <a name="next-steps"></a>Étapes suivantes
 
 * Pour passer à l’étape suivante du didacticiel, consultez **[étape 11 : exécuter votre application et essayer d’autres fonctionnalités](../ide/step-11-run-your-program-and-try-other-features.md)** .
 

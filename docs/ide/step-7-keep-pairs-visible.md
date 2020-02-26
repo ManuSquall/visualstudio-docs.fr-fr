@@ -8,17 +8,17 @@ dev_langs:
 - CSharp
 - VB
 ms.assetid: 42e1d08c-7b2e-4efd-9f47-85d6206afe35
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 60b058883e30587ed656690796732b15750b6277
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.openlocfilehash: eeca594849625b548857a23b9d5c8e278dcdf07c
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72647448"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579289"
 ---
 # <a name="step-7-keep-pairs-visible"></a>Étape 7 : garder les paires visibles
 Le jeu fonctionne correctement tant que le joueur se contente de choisir des paires d'icônes qui ne correspondent pas. Voyons ce qui doit se produire lorsque le joueur choisit une paire d'icônes identiques. Au lieu de faire disparaître les icônes en activant le minuteur (à l'aide de la méthode <xref:System.Windows.Forms.Timer.Start>), le jeu doit se réinitialiser pour arrêter le suivi de tous les contrôles Label à l'aide des variables de référence `firstClicked` et `secondClicked`, sans réinitialiser les couleurs des deux contrôles Label choisis.
@@ -57,7 +57,7 @@ Le jeu fonctionne correctement tant que le joueur se contente de choisir des pai
     firstClicked = null;
     ```
 
-     La première de ces deux instructions vérifie si deux icônes sont identiques. Étant donné que deux valeurs sont comparées C# , le programme utilise l’opérateur d’égalité `==`. En fait, la deuxième instruction modifie la valeur (appelée *assignation*) en affectant la valeur `null` à la variable de référence `firstClicked` pour la réinitialiser. C'est la raison pour laquelle elle utilise plutôt l'opérateur d'assignation `=`. C#utilise `=` pour définir des valeurs et `==` de les comparer. Le langage Visual Basic utilise `=` pour l'affectation et la comparaison des variables.
+     La première de ces deux instructions vérifie si deux icônes sont identiques. Étant donné que deux valeurs sont comparées C# , le programme utilise l’opérateur d’égalité `==`. En fait, la deuxième instruction modifie la valeur (appelée *assignation*) en affectant la valeur `firstClicked` à la variable de référence `null` pour la réinitialiser. C'est la raison pour laquelle elle utilise plutôt l'opérateur d'assignation `=`. C#utilise `=` pour définir des valeurs et `==` de les comparer. Le langage Visual Basic utilise `=` pour l'affectation et la comparaison des variables.
 
 2. Enregistrez et exécutez le programme, puis commencez à choisir des icônes sur le formulaire. Si vous choisissez une paire qui ne correspond pas, l'événement Tick du minuteur se déclenche et les deux icônes disparaissent. Si vous choisissez une paire correspondante, la nouvelle instruction `if` s’exécute et l’instruction return indique à la méthode d’ignorer le code qui démarre le minuteur, de sorte que les icônes restent visibles, comme le montre l’image suivante.
 

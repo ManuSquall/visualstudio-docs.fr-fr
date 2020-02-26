@@ -5,17 +5,17 @@ ms.assetid: 61acde79-e115-4bad-bb06-1fbe37717a3e
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3f4ca58506e99331c48b33717903d1925874912
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d827077266adbe0a1ba8cabd1f19ae6d815df833
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590018"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579382"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Étape 4 : composer votre formulaire avec un contrôle TableLayoutPanel
 
@@ -88,7 +88,7 @@ Fenêtre ***Propriétés*** *avec* ***remplissage*** *sélectionné*
      ![Form1 avec TableLayoutPanel redimensionné](../ide/media/vs_formafterlayoutpanel.png)<br>
 ***Form1*** *(visionneuse d’images) avec TableLayoutPanel redimensionné*
 
-## <a name="next-steps"></a>Étapes suivantes :
+## <a name="next-steps"></a>Étapes suivantes
 
 * Pour passer à l’étape suivante du didacticiel, consultez **[étape 5 : ajouter des contrôles à votre formulaire](../ide/step-5-add-controls-to-your-form.md)** .
 

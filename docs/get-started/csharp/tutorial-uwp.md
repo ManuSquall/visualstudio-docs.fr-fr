@@ -7,21 +7,21 @@ ms.date: 09/20/2019
 ms.technology: vs-ide-general
 ms.topic: tutorial
 ms.devlang: CSharp
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 1be0e656489c4bbff9064db329fb8b015b446297
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 8be56581374aefbef41a5173836d1189cceff290
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186838"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579998"
 ---
-# <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Tutoriel : Créer votre première application de plateforme Windows universelle dans Visual Studio avec XAML et C&#35;
+# <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>Didacticiel : créer votre première plateforme Windows universelle application dans Visual Studio avec XAML et C&#35;
 
 Dans cette présentation de l’environnement de développement intégré (IDE) Visual Studio, vous allez créer une application « Hello World » qui s’exécute sur n’importe quel appareil Windows 10. Pour ce faire, vous allez utiliser un modèle de projet de plateforme Windows universelle (UWP), le langage XAML (Extensible Application Markup Language) et le langage de programmation C#.
 
@@ -32,14 +32,14 @@ Si vous n’avez pas encore installé Visual Studio, accédez à la page [Télé
 Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads) pour l’installer gratuitement.
 ::: moniker-end
 
-## <a name="create-a-project"></a>Créer un projet
+## <a name="create-a-project"></a>Création d’un projet
 
 Créez tout d’abord un projet de plateforme Windows universelle. Le type de projet inclut tous les fichiers de modèle dont vous avez besoin au départ.
 
 ::: moniker range="vs-2017"
 1. Ouvrez Visual Studio.
 
-1. Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**.
+1. Dans la barre de menus supérieure, choisissez **fichier** > **nouveau** > **projet**.
 
 1. Dans le volet gauche de la boîte de dialogue **Nouveau projet**, développez **Visual C#** , puis choisissez **Windows universel**. Dans le volet central, choisissez **Application vide (Windows universel)** . Ensuite, nommez le projet *HelloWorld* et choisissez **OK**.
 
@@ -76,7 +76,7 @@ Créez tout d’abord un projet de plateforme Windows universelle. Le type de pr
    > S’il s’agit de la première fois que vous avez utilisé Visual Studio pour créer une application UWP, une boîte de dialogue **Paramètres** peut s’afficher. Choisissez **Mode développeur**, puis **Oui**.<br><br>
    > ![Activer le mode développeur dans la boîte de dialogue Paramètres du projet UWP](media/enable-developer-mode.png)<br><br>Visual Studio installe un autre package en mode développeur pour vous. Une fois l’installation du package terminée, fermez la boîte de dialogue **Paramètres**.
 
-## <a name="create-the-application"></a>Créer l’application
+## <a name="create-the-application"></a>Création de l'application
 
 Il est temps de commencer à développer. Vous allez ajouter un contrôle bouton, ajouter une action au bouton, puis démarrer l’application « Hello World » pour voir à quoi elle ressemble.
 
@@ -91,7 +91,7 @@ Il est temps de commencer à développer. Vous allez ajouter un contrôle bouton
    ![Ouvrir MainPage.xaml à partir de l’Explorateur de solutions](media/vs-2019/uwp-solution-explorer-mainpage-xaml.png)
    ::: moniker-end
 
-   Il existe deux volets : le **concepteur XAML**, qui comprend une zone de conception et l’**éditeur XAML** où vous pouvez ajouter et modifier le code.
+   Il existe deux volets : **le concepteur XAML**, qui comprend une zone de conception et **l’éditeur XAML**, où vous pouvez ajouter ou modifier le code.
 
    ![Volet du concepteur XAML dans l’éditeur XAML](media/uwp-xaml-editor.png)
 
@@ -125,7 +125,7 @@ Il est temps de commencer à développer. Vous allez ajouter un contrôle bouton
 
 ### <a name="add-an-event-handler"></a>Ajouter un gestionnaire d’événements
 
-Un « gestionnaire d’événements » semble compliqué, mais il s’agit simplement d’un autre nom pour le code qui est appelé quand un événement se produit. Dans ce cas, il ajoute une action au bouton « Hello World! » disproportionnée.
+Un « gestionnaire d’événements » semble compliqué, mais il s’agit simplement d’un autre nom pour le code qui est appelé quand un événement se produit. Dans ce cas, il ajoute une action au bouton « Hello World! » .
 
 1. Double-cliquez sur le contrôle bouton dans la zone de conception.
 
@@ -156,11 +156,11 @@ Un « gestionnaire d’événements » semble compliqué, mais il s’agit simpl
 
 Le code utilise des API Windows pour créer un objet de synthèse vocale, puis lui donne du texte à dire. (Pour plus d’informations sur l’utilisation de `SpeechSynthesis`, consultez <xref:System.Speech.Synthesis>.)
 
-## <a name="run-the-application"></a>Exécuter l'application
+## <a name="run-the-application"></a>Exécution de l'application
 
 
 ::: moniker range="vs-2017"
-Il est temps de générer, déployer et lancer l’application UWP « Hello World » pour voir à quoi elle ressemble. Voici comment procéder.
+Il est temps de générer, déployer et lancer l’application UWP « Hello World » pour voir à quoi elle ressemble. Voici comment faire.
 
 1. Utilisez le bouton Lecture (il contient le texte **Ordinateur local**) pour démarrer l’application sur l’ordinateur local.
 
@@ -180,7 +180,7 @@ Il est temps de générer, déployer et lancer l’application UWP « Hello Worl
 
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-Il est temps de générer, déployer et lancer l’application UWP « Hello World » pour voir à quoi elle ressemble. Voici comment procéder.
+Il est temps de générer, déployer et lancer l’application UWP « Hello World » pour voir à quoi elle ressemble. Voici comment faire.
 
 1. Utilisez le bouton Lecture (il contient le texte **Ordinateur local**) pour démarrer l’application sur l’ordinateur local.
 
@@ -202,7 +202,7 @@ Il est temps de générer, déployer et lancer l’application UWP « Hello Worl
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Félicitations ! Vous avez terminé ce didacticiel. Nous espérons que vous avez appris quelques principes fondamentaux sur UWP et l’IDE Visual Studio. Pour en savoir plus, passez au tutoriel suivant :
+Félicitations ! Vous avez terminé ce didacticiel. Nous espérons que vous avez appris quelques principes fondamentaux sur UWP et l’IDE Visual Studio. Pour en savoir plus, passez au tutoriel suivant :
 
 > [!div class="nextstepaction"]
 > [Créer une interface utilisateur](/windows/uwp/design/basics/xaml-basics-ui)

@@ -6,20 +6,20 @@ ms.date: 11/06/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: quickstart
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: c87fd68a68076ab0ccab2d86f758f2217e956e26
-ms.sourcegitcommit: 292ccebc601d465931fb94218a1c289c5cf77795
+ms.openlocfilehash: 1873c11d8f2e6243a0dc0f867e579f1927cd1607
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73753975"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579965"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Démarrage rapide : utiliser Visual Studio pour créer votre première application web ASP.NET Core
 
@@ -27,7 +27,7 @@ Dans cette introduction de 5 à 10 minutes à l’utilisation de Visual Studio, 
 
 ## <a name="before-you-begin"></a>Avant de commencer
 
-### <a name="install-visual-studio"></a>Installer Visual Studio
+### <a name="install-visual-studio"></a>Installation de Visual Studio
 
 ::: moniker range="vs-2017"
 
@@ -45,15 +45,15 @@ Si vous n’avez pas encore installé Visual Studio, accédez à la page [Télé
 
 Ce tutoriel de démarrage rapide contient des captures d’écran qui utilisent le thème foncé. Si vous n’utilisez pas le thème foncé, mais que vous aimeriez l’utiliser, consultez la page [Personnaliser l’éditeur et l’IDE de Visual Studio](quickstart-personalize-the-ide.md) pour savoir comment faire.
 
-## <a name="create-a-project"></a>Créer un projet
+## <a name="create-a-project"></a>Création d’un projet
 
 Pour commencer, vous allez créer un projet d’application web ASP.NET Core. Le type de projet s’accompagne d’entrée de jeu de tous les modèles de fichiers permettant de créer une application web.
 
 ::: moniker range="vs-2017"
 
-1. Ouvrez Visual Studio 2017.
+1. Ouvrez Visual Studio 2017.
 
-1. Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**.
+1. Dans la barre de menus supérieure, choisissez **fichier** > **nouveau** > **projet**.
 
 1. Dans le volet gauche de la boîte de dialogue **Nouveau projet**, développez **Visual C#** , puis choisissez **.NET Core**. Dans le volet central, choisissez **Application web ASP.NET Core**. <br/><br/>Ensuite, nommez votre fichier `HelloWorld` et choisissez **OK**.
 
@@ -208,7 +208,7 @@ Félicitations ! Vous avez terminé ce guide de démarrage rapide. Nous espéro
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Pour en savoir plus, passez au tutoriel suivant :
+Pour en savoir plus, passez au tutoriel suivant :
 
 > [!div class="nextstepaction"]
 > [Bien démarrer avec C# et ASP.NET dans Visual Studio](../get-started/csharp/tutorial-aspnet-core.md)

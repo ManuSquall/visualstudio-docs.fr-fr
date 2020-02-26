@@ -12,20 +12,20 @@ helpviewer_keywords:
 - ResourcesGenerator task [WPF MSBuild]
 - ResourcesGenerator task [WPF MSBuild], parameters
 ms.assetid: e782bbac-9ee6-472b-8171-3ee008c77b4e
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ef54bdc3b3c692869b4883cf4f92293551a1958
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 703cd7bc3d0dd0e2229365dde39418ff32ad0a3e
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62996779"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579605"
 ---
 # <a name="resourcesgenerator-task"></a>ResourcesGenerator, tâche
-La tâche <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> incorpore une ou plusieurs ressources (*.jpg*, *.ico*, *.bmp*, [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] au format binaire et d’autres types d’extensions) dans un fichier *.resources*.
+La tâche <xref:Microsoft.Build.Tasks.Windows.ResourcesGenerator> incorpore une ou plusieurs ressources ( *.jpg*, *.ico*, *.bmp*, [!INCLUDE[TLA2#tla_xaml](../msbuild/includes/tla2sharptla_xaml_md.md)] au format binaire et d’autres types d’extensions) dans un fichier *.resources*.
 
 ## <a name="task-parameters"></a>Paramètres de tâche
 

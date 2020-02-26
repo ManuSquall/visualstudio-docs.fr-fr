@@ -5,17 +5,17 @@ ms.assetid: 16ac2422-e720-4e3a-b511-bc2a54201a86
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a1c0184c11b745ef6c83c35b524884a139bc3d8
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2d5e34d825d2a4d296a8a394105b412195b4e3fb
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588783"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579914"
 ---
 # <a name="step-1-create-a-windows-forms-app-project"></a>Étape 1 : créer un projet d’application Windows Forms
 
@@ -109,7 +109,7 @@ Visual Studio crée une solution pour votre application. Une solution agit comme
 
      Visual Studio renseigne automatiquement le nom du dossier et le nom du projet, puis crée le projet dans votre dossier de projets.
 
-## <a name="next-steps"></a>Étapes suivantes :
+## <a name="next-steps"></a>Étapes suivantes
 
 * Pour passer à l’étape suivante du didacticiel, consultez **[étape 2 : exécuter votre application](../ide/step-2-run-your-program.md)** .
 

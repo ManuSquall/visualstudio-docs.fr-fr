@@ -5,17 +5,17 @@ ms.assetid: ea98c55e-6213-4893-ba7b-f19d7f119527
 ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 319cfee254aa0b0f1709fa566e4e1bbca208eb9a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: a9697bf6cf84c2a74daac2017b4f63d52a7019b6
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589953"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579279"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>Étape 7 : ajouter des composants de dialogue à votre formulaire
 
@@ -49,7 +49,7 @@ Pour permettre à votre application d’ouvrir des fichiers image et de choisir 
     > [!TIP]
     > Pour voir un exemple de boîte de dialogue **Ouvrir un fichier** dans une application différente, ouvrez le **Bloc-notes** ou **Paint** et, dans la barre de menus, choisissez **Fichier** >  **Ouvrir**. Notez qu’il y a une liste déroulante en regard du nom de fichier qui vous permet de choisir le type de fichier. <br/><br/>Vous venez d’utiliser la propriété **Filter** dans le composant **OpenFileDialog** pour la configurer dans votre application. Notez également que les propriétés **Title** et **Filter** sont affichées en gras dans la fenêtre **Propriétés**. L'IDE utilise ce style pour vous montrer toutes les propriétés dont les valeurs par défaut ont été modifiées.
 
-## <a name="next-steps"></a>Étapes suivantes :
+## <a name="next-steps"></a>Étapes suivantes
 
 * Pour passer à l’étape suivante du didacticiel, consultez **[étape 8 : écrire du code pour le gestionnaire d’événements du bouton afficher une image](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)** .
 

@@ -5,17 +5,17 @@ ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.assetid: 1cac4ba4-f3cd-43bd-ad5d-50fc599234e8
-author: TerryGLee
-ms.author: tglee
+author: ornellaalt
+ms.author: ornella
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abaae887e39b85e4f2d363a63ef6cde5845e3fa2
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c1134fb5bb02bd8c78f347ef582f12da35074c36
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75597397"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579922"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Étape 1 : créer un projet et ajouter une table à votre formulaire
 
@@ -90,7 +90,7 @@ La première étape pour créer un jeu de combinaisons consiste à créer le pro
 
    5. Dans la barre des tâches, choisissez deux fois **Ajouter une ligne** pour ajouter deux lignes supplémentaires, puis choisissez deux fois **Ajouter une colonne** pour ajouter deux colonnes supplémentaires.
 
-   6. Dans la barre des tâches, choisissez **Modifier les lignes et les colonnes** pour afficher la fenêtre **Styles de ligne et de colonne**. Choisissez chacune des colonnes, choisissez la case d’option **Pour cent**, puis affectez à chaque colonne une largeur égale à 25 % de la largeur totale. Sélectionnez ensuite **Lignes** dans la zone de liste déroulante en haut de la fenêtre et affectez une hauteur de 25 pour cent à chaque ligne. Une fois terminé, choisissez le bouton **OK**.
+   6. Dans la barre des tâches, choisissez **Modifier les lignes et les colonnes** pour afficher la fenêtre **Styles de ligne et de colonne**. Choisissez chacune des colonnes, choisissez la case d’option **Pour cent**, puis affectez à chaque colonne une largeur égale à 25 % de la largeur totale. Sélectionnez ensuite **Lignes** dans la zone de liste déroulante en haut de la fenêtre et affectez une hauteur de 25 pour cent à chaque ligne. Lorsque vous avez terminé, choisissez le bouton **OK** .
 
       Votre TableLayoutPanel doit désormais correspondre à une grille 4x4 de seize cellules carrées de même taille. Les images des icônes apparaîtront ultérieurement dans ces lignes et colonnes.
 

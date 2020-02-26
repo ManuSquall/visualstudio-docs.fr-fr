@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b833d8b68af418b727861226df41c700d582805e
-ms.sourcegitcommit: d55438841123aad56a524a65332a86ad67af386b
+ms.openlocfilehash: 792b5e2d40f7299bf019fd3f9c86697bf008c391
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73599290"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77578772"
 ---
 # <a name="find-your-debugging-task-in-visual-studio"></a>Rechercher votre tâche de débogage dans Visual Studio
 
@@ -130,3 +130,7 @@ Consultez [attacher à un processus en cours d’exécution](attach-to-running-p
 ### <a name="debug-multithreaded-applications"></a>Déboguer les applications multithread
 
 Consultez [débogage d’applications multithread](debug-multithreaded-applications-in-visual-studio.md).
+
+### <a name="fix-performance-issues"></a>Résoudre les problèmes de performances
+
+Consultez d' [abord les outils de profilage](../profiling/profiling-feature-tour.md)

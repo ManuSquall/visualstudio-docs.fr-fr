@@ -12,17 +12,17 @@ helpviewer_keywords:
 - non-localizable resources [WPF MSBuild], classifying to embed in an assembly
 - FileClassifier task [WPF MSBuild]
 ms.assetid: 14e03310-fcc0-4bb2-a84d-cda12be66367
-author: mikejo5000
-ms.author: mikejo
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d9dd845a69243cd8bedb095c63f75670f39afff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: cd533507e1c498ae315529bd8ab17dd175b7f836
+ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830169"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77579685"
 ---
 # <a name="fileclassifier-task"></a>FileClassifier, tâche
 La tâche <xref:Microsoft.Build.Tasks.Windows.FileClassifier> classifie un ensemble de ressources sources comme devant être incorporées dans un assembly. Si une ressource n’est pas localisable, elle est incorporée dans l’assembly principal de l’application ; autrement, elle est incorporée dans un assembly satellite.
@@ -31,16 +31,16 @@ La tâche <xref:Microsoft.Build.Tasks.Windows.FileClassifier> classifie un ensem
 
 |Paramètre|Description|
 |---------------|-----------------|
-|`CLREmbeddedResource`|Non utilisé.|
-|`CLRResourceFiles`|Non utilisé.|
-|`CLRSatelliteEmbeddedResource`|Non utilisé.|
+|`CLREmbeddedResource`|Inutilisé.|
+|`CLRResourceFiles`|Inutilisé.|
+|`CLRSatelliteEmbeddedResource`|Inutilisé.|
 |`Culture`|Paramètre **String** facultatif.<br /><br /> Spécifie la culture de la build. Cette valeur peut être **null** si la build n’est pas localisable. Si la valeur est **null**, la valeur par défaut est la valeur en minuscules retournée par **CultureInfo.InvariantCulture**.|
 |`MainEmbeddedFiles`|Paramètre de sortie **ITaskItem[]** facultatif.<br /><br /> Spécifie les ressources non localisables incorporées dans l’assembly principal.|
 |`OutputType`|Paramètre **String** obligatoire.<br /><br /> Spécifie le type de fichier dans lequel incorporer les fichiers sources spécifiés. Les valeurs valides sont **exe**, **winexe** et **library**.|
 |`SatelliteEmbeddedFiles`|Paramètre de sortie **ITaskItem[]** facultatif.<br /><br /> Spécifie les fichiers localisables incorporés dans l’assembly satellite pour la culture spécifiée par le paramètre **Culture**.|
 |`SourceFiles`|Paramètre **ITaskItem[]** obligatoire.<br /><br /> Spécifie la liste des fichiers à classifier.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Si le paramètre **Culture** n’est pas défini, toutes les ressources spécifiées à l’aide du paramètre **SourceFiles** sont non localisables ; sinon, elles sont localisables, sauf si elles sont associées à un attribut **Localizable** dont la valeur est **false**.
 
 ## <a name="example"></a>Exemple
