@@ -5,18 +5,18 @@ description: Liste des versions publiées et des numéros de build de Visual Stu
 author: ornellaalt
 ms.author: ornella
 manager: jillfra
-ms.date: 02/11/2020
+ms.date: 02/25/2020
 ms.topic: reference
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 37715080d341c15fad1f5839990e2db28deedabf
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.openlocfilehash: 5af5f9bb35f3f98061e84201eb6d7b80478f50cc
+ms.sourcegitcommit: b873fce7ba40d825fcb59555360c002bbfcecd9e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77476856"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77611144"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Numéros de builds et dates de publication de Visual Studio
 
@@ -28,6 +28,7 @@ Le tableau suivant liste les numéros de build et les dates de publication de Vi
 
 | **Version**| **Canal** | **Date de publication** | **Version de build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.5.0 | Préversion 4 | 25 février 2020 | 16.5.29820.132 |
 | 16.5.0 | Préversion 3 | 19 février 2020 | 16.5.29814.53 |
 | 16.4.5 | Édition | 11 février 2020 | 16.4.29806.167 |
 | 16.4.4 | Édition | 31 janvier 2020 | 16.4.29728.190 |
