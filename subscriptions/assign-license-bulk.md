@@ -6,12 +6,12 @@ manager: lank
 ms.date: 02/26/2020
 ms.topic: conceptual
 description: Découvrez comment les administrateurs peuvent attribuer des licences à plusieurs abonnés à l’aide de la fonctionnalité d’ajout en bloc ou de groupes de Microsoft Azure Active Directory
-ms.openlocfilehash: a9bb8e1d96b3448a4ba803b7e6348057635950b4
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: ae16c64f90f90b820332e0ee7f1753a8dd6e5c32
+ms.sourcegitcommit: a80489d216c4316fde2579a0a2d7fdb54478abdf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77634611"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77652818"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Attribuer des abonnements à plusieurs utilisateurs
 Le portail d’administration des abonnements vous permet d’ajouter des utilisateurs un à la fois ou dans des grands groupes.  Pour ajouter des utilisateurs individuels, consultez [Ajouter des utilisateurs uniques](assign-license.md).
@@ -102,9 +102,9 @@ Grâce à cette fonctionnalité, il est facile de rester au-dessus de vos affect
 R : non--tous les membres du groupe reçoivent le même abonnement. 
 
 ### <a name="q-can-i-edit-subscriber-details-of-individuals-added-in-an-azure-ad-group"></a>Q : puis-je modifier les détails de l’abonné des personnes ajoutées à un groupe de Azure AD ?  
-R : non : pour modifier les informations d’un abonné individuel, vous devez les supprimer du groupe de sécurité Azure AD et leur attribuer un abonnement individuellement.  
+R : non--pour modifier les informations d’un abonné individuel, vous devez les supprimer du groupe de sécurité Azure AD et leur attribuer un abonnement individuellement.  
 
-### <a name="q-i-added-someone-to-my-azure-ad-security-group-but-i-dont-see-them-add-in-the-subscriptions-administration-portal-and-they-dont-have-a-subscription-why-not"></a>Q : J’ai ajouté une personne à mon Azure AD groupe de sécurité, mais je ne vois pas les ajouter dans le portail d’administration des abonnements et ils n’ont pas d’abonnement. Pourquoi ?  
+### <a name="q-i-added-someone-to-my-azure-ad-security-group-but-i-dont-see-them-added-in-the-subscriptions-administration-portal-and-they-dont-have-a-subscription-why-not"></a>Q : J’ai ajouté une personne à mon Azure AD groupe de sécurité, mais je ne l’ai pas ajoutée dans le portail d’administration des abonnements et il n’y a pas d’abonnement. Pourquoi ?  
 R : selon la façon dont votre organisation a configuré Azure AD, vous pouvez constater des retards jusqu’à 24 heures avant l’ajout de l’utilisateur. S’il s’agit d’une durée supérieure à 24 heures, [Contactez le support technique](https://visualstudio.microsoft.com/support/support-overview-vs).  
 
 
@@ -116,7 +116,7 @@ R : selon la façon dont votre organisation a configuré Azure AD, vous pouvez 
 
 ## <a name="next-steps"></a>Étapes suivantes :
 - Vous n’avez qu’un ou deux abonnés à ajouter ?  Consultez [Ajouter des utilisateurs uniques](assign-license.md)
-- Vous avez besoin d'aide ? Contactez le [Support technique sur l’administration et les abonnements Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs).
+- Vous avez besoin d’aide ? Contactez le [Support technique sur l’administration et les abonnements Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs).
 
 
 

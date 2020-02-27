@@ -6,18 +6,18 @@ ms.topic: conceptual
 helpviewer_keywords:
 - xaml edit and continue
 - xaml hot reload
-author: mikejo5000
-ms.author: mikejo
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: f1232620d40a26c894b6b2f38fc7d8c10a44c405
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: d977d79ce55bdd3abcb467d7bf7518b88bad7402
+ms.sourcegitcommit: 9de7d25056da59df0941508c80c0b12766ba6580
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72450932"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77706363"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Écrire et déboguer du code XAML en cours d’exécution avec le rechargement à chaud XAML dans Visual Studio
 
@@ -48,16 +48,16 @@ L’illustration suivante montre l’utilisation de l’arborescence d’éléme
 
 Voici les limitations connues du rechargement à chaud XAML. Pour contourner toute limitation que vous exécutez dans, arrêtez simplement le débogueur, puis terminez l’opération.
 
-|Limitation|WPF|UWP|Notes|
+|Limitation|WPF|UWP|Remarques|
 |-|-|-|-|
-|Câblage des événements aux contrôles pendant l’exécution de l’application|Non prise en charge|Non pris en charge|Voir erreur : *Vérifiez que l’événement a échoué*. Notez que, dans WPF, vous pouvez référencer un gestionnaire d’événements existant. Dans les applications UWP, le référencement d’un gestionnaire d’événements existant n’est pas pris en charge.|
+|Câblage des événements aux contrôles pendant l’exécution de l’application|Non pris en charge|Non pris en charge|Voir erreur : *Vérifiez que l’événement a échoué*. Notez que, dans WPF, vous pouvez référencer un gestionnaire d’événements existant. Dans les applications UWP, le référencement d’un gestionnaire d’événements existant n’est pas pris en charge.|
 |Création d’objets de ressource dans un dictionnaire de ressources, tels que ceux de la page/fenêtre ou *app. Xaml* de votre application|Prise en charge à partir de Visual Studio 2019 Update 2|Prise en charge|Exemple : ajout d’un `SolidColorBrush` dans un dictionnaire de ressources pour une utilisation en tant que `StaticResource`.</br>Remarque : les ressources statiques, les convertisseurs de style et les autres éléments écrits dans un dictionnaire de ressources peuvent être appliqués/utilisés lors de l’utilisation du rechargement à chaud XAML. Seule la création de la ressource n’est pas prise en charge.</br> Modification de la propriété `Source` du dictionnaire de ressources.|
-|Ajout de nouveaux contrôles, classes, fenêtres ou autres fichiers à votre projet pendant que l’application est en cours d’exécution|Non prise en charge|Non prise en charge|aucune.|
-|Gestion des packages NuGet (ajout/suppression/mise à jour de packages)|Non prise en charge|Non prise en charge|aucune.|
+|Ajout de nouveaux contrôles, classes, fenêtres ou autres fichiers à votre projet pendant que l’application est en cours d’exécution|Non pris en charge|Non pris en charge|Aucune|
+|Gestion des packages NuGet (ajout/suppression/mise à jour de packages)|Non pris en charge|Non pris en charge|Aucune|
 |Modification de la liaison de données qui utilise l’extension de balisage {x :Bind}|N/A|Prise en charge à partir de Visual Studio 2019|Cela nécessite Windows 10 version 1809 (Build 10.0.17763). Non pris en charge dans Visual Studio 2017 ou versions antérieures.|
-|La modification des directives x :Uid n’est pas prise en charge|N/A|Non prise en charge|aucune.|
+|La modification des directives x :Uid n’est pas prise en charge|N/A|Non pris en charge|Aucune|
 
-## <a name="error-messages"></a>Messages d’erreur
+## <a name="error-messages"></a>Messages d'erreur
 
 Vous pouvez rencontrer les erreurs suivantes lors de l’utilisation du rechargement à chaud XAML.
 
@@ -69,5 +69,5 @@ Vous pouvez rencontrer les erreurs suivantes lors de l’utilisation du recharge
 ## <a name="see-also"></a>Voir aussi
 
 * [Résolution des problèmes liés au rechargement à chaud XAML](xaml-hot-reload-troubleshooting.md)
-* [Rechargement à chaud XAML pour Xamarin. Forms](/xamarin/xamarin-forms/xaml/hot-reload)
+* [Rechargement à chaud XAML pour Xamarin.Forms](/xamarin/xamarin-forms/xaml/hot-reload)
 * [Modifier & Continuer (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)

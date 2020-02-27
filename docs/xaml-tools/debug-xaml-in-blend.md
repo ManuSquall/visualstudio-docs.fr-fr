@@ -3,18 +3,18 @@ title: Déboguer du code XAML dans Blend | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 29a37182-2a2c-47e4-a4a9-2d5412738fed
-author: mikejo5000
-ms.author: mikejo
+author: TerryGLee
+ms.author: tglee
 manager: jillfra
 ms.technology: vs-ide-debug
 ms.workload:
 - uwp
-ms.openlocfilehash: 9ac692c756aaa29b2b13f20eecd039154a28d80b
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.openlocfilehash: 04bd4540de47ec8a9da86069acb33770f9c800b8
+ms.sourcegitcommit: 9de7d25056da59df0941508c80c0b12766ba6580
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "77558183"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77706370"
 ---
 # <a name="debug-xaml-in-blend"></a>Déboguer XAML dans Blend
 
@@ -121,6 +121,6 @@ Vous pouvez ouvrir Blend Projects dans Visual Studio pour déboguer plus facilem
 
 Pour plus d’informations sur le débogage de votre application, consultez [Déboguer des applications UWP dans Visual Studio](../debugger/debugging-windows-store-and-windows-universal-apps.md).
 
-## <a name="get-help"></a>Obtenir de l’aide
+## <a name="get-help"></a>Obtenir de l'aide
 
 Si vous avez besoin d’aide supplémentaire sur le débogage de votre application Blend, vous pouvez rechercher des publications relatives à votre problème sur les forums de la [communauté d’applications UWP](https://social.msdn.microsoft.com/Forums/windowsapps/home?category=windowsapps) ou publier une question.

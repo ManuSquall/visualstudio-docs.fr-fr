@@ -7,12 +7,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 20381dd78f169e2b549e077992ac0d1dc1b5c44c
-ms.sourcegitcommit: 6375001ab26786af8d4d449f5846f8a49779ed18
+ms.openlocfilehash: 0e21d0617f954c0cc34975b7f8626b83966f6b5d
+ms.sourcegitcommit: 9de7d25056da59df0941508c80c0b12766ba6580
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76892132"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "77706390"
 ---
 # <a name="how-to-insert-xml-comments-for-documentation-generation"></a>Guide pratique pour insérer des commentaires XML pour la génération de documentation
 
@@ -30,7 +30,7 @@ Le fichier XML généré par le compilateur peut être distribué avec votre ass
 
 1. Placez votre curseur sur l’élément que vous souhaitez documenter, par exemple, une méthode.
 
-2. Effectuez l'une des actions suivantes :
+2. Effectuez l'une des opérations suivantes :
 
    - Tapez `///` en C# ou `'''` en Visual Basic.
 
@@ -50,7 +50,7 @@ Le fichier XML généré par le compilateur peut être distribué avec votre ass
 
 Vous pouvez utiliser des styles dans des commentaires XML qui s’affichent dans Info Express lorsque vous pointez sur l’élément. Ces styles sont notamment les suivants : italique, gras, puces et lien hypertexte.
 
-   ![Commentaire terminé](media/doc-styles-cs.png) 
+   ![Commentaire terminé](media/doc-style-cs.png) 
 
 > [!NOTE]
 > Une [option](../../ide/reference/options-text-editor-csharp-advanced.md) permet d’activer et de désactiver les commentaires de documentation XML après la saisie des caractères `///` en C# ou `'''` en Visual Basic. Dans la barre de menus, choisissez **Outils** > **Options** pour ouvrir la boîte de dialogue **Options**. Ensuite, accédez à **Éditeur de texte** > **C#** ou **Basic** > **Avancé**. Dans la section **Aide sur l’éditeur**, recherchez l’option **Générer des commentaires sur la documentation XML**.
