@@ -22,21 +22,23 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06171f3a1543f6fa827c1b6fd477b992d099fff6
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 81a9c3b1c22277261276ced1940f1f2e83d11882
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75590473"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634251"
 ---
 # <a name="downloadfile-task"></a>DownloadFile, tâche
+
 Télécharge les fichiers spécifiés à l’aide du protocole HTTP (Hyper-Text Transfer Protocol).
 
 >[!NOTE]
 >La tâche DownloadFile est disponible dans MSBuild 15.8 et versions ultérieures uniquement.
 
-## <a name="parameters"></a>Parameters
-Le tableau ci-dessous décrit les paramètres de la tâche `DownloadFile` .
+## <a name="parameters"></a>Paramètres
+
+Le tableau ci-dessous décrit les paramètres de la tâche `DownloadFile`.
 
 |Paramètre|Description|
 |---------------|-----------------|
@@ -49,9 +51,11 @@ Le tableau ci-dessous décrit les paramètres de la tâche `DownloadFile` .
 |`SourceUrl`|Paramètre `String` requis.<br /><br /> Spécifie l’URL à télécharger.|
 
 ## <a name="remarks"></a>Notes
-En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension> , qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task> . Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).
+
+En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Exemple
+
 L’exemple suivant télécharge un fichier et l’inclut dans les éléments `Content` avant de générer le projet.
 
 ```xml
@@ -73,5 +77,6 @@ L’exemple suivant télécharge un fichier et l’inclut dans les éléments `C
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Tâches MSBuild](../msbuild/msbuild-tasks.md)
+
+- [Tâches :](../msbuild/msbuild-tasks.md)
 - [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)

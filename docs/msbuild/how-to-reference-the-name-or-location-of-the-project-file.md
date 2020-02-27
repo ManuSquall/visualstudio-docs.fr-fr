@@ -16,18 +16,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 739d444fe8ad3951e8b8f2f0026d5d986ea65c52
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 2b54a63b135f844ff20b45ffac430662c4df1f19
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75574780"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633835"
 ---
 # <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>Guide pratique pour référencer le nom ou l’emplacement du fichier projet
-Vous pouvez utiliser le nom ou l’emplacement du projet dans le fichier projet sans avoir à créer votre propre propriété. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] fournit des propriétés réservées qui référencent le nom du fichier projet et d’autres propriétés associées au projet. Pour plus d’informations sur les propriétés réservées, consultez [MSBuild, propriétés réservées et connues](../msbuild/msbuild-reserved-and-well-known-properties.md).
+
+Vous pouvez utiliser le nom ou l’emplacement du projet dans le fichier projet sans avoir à créer votre propre propriété. MSBuild fournit des propriétés réservées qui référencent le nom du fichier projet et d’autres propriétés relatives au projet. Pour plus d’informations sur les propriétés réservées, consultez [MSBuild, propriétés réservées et connues](../msbuild/msbuild-reserved-and-well-known-properties.md).
 
 ## <a name="use-the-project-properties"></a>Utiliser les propriétés du projet
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] fournit quelques propriétés réservées que vous pouvez utiliser dans vos fichiers projet sans les définir à chaque fois. Par exemple, la propriété réservée `MSBuildProjectName` fournit une référence au nom du fichier projet. La propriété réservée `MSBuildProjectDirectory` fournit une référence à l’emplacement du fichier projet.
+
+ MSBuild fournit des propriétés réservées que vous pouvez utiliser dans vos fichiers projet sans les définir à chaque fois. Par exemple, la propriété réservée `MSBuildProjectName` fournit une référence au nom du fichier projet. La propriété réservée `MSBuildProjectDirectory` fournit une référence à l’emplacement du fichier projet.
 
 #### <a name="to-use-the-project-properties"></a>Pour utiliser les propriétés du projet
 
@@ -47,6 +49,7 @@ Vous pouvez utiliser le nom ou l’emplacement du projet dans le fichier projet 
 > Les propriétés réservées ne peuvent pas être redéfinies dans le fichier projet.
 
 ## <a name="example"></a>Exemple
+
  L’exemple de fichier projet suivant référence le nom du projet en tant que propriété réservée pour spécifier le nom de la sortie.
 
 ```xml
@@ -75,6 +78,7 @@ Vous pouvez utiliser le nom ou l’emplacement du projet dans le fichier projet 
 ```
 
 ## <a name="example"></a>Exemple
+
  L’exemple de fichier projet suivant utilise la propriété réservée `MSBuildProjectDirectory` pour créer le chemin complet à un fichier à l’emplacement du fichier projet.
 
 ```xml
@@ -87,6 +91,9 @@ Vous pouvez utiliser le nom ou l’emplacement du projet dans le fichier projet 
 </Project>
 ```
 
+L’exemple utilise la syntaxe de [fonction de propriété](property-functions.md) pour appeler la méthode .NET Framework statique <xref:System.IO.Path.Combine*?displayProperty=fullName>.
+
 ## <a name="see-also"></a>Voir aussi
+
 - [MSBuild](../msbuild/msbuild.md)
-- [MSBuild, propriétés réservées et connues](../msbuild/msbuild-reserved-and-well-known-properties.md)
+- [Propriétés réservées et connues de MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md)

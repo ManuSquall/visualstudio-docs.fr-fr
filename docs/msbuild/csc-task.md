@@ -18,18 +18,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7443ba29a743f4936ae104d9d0bb556fae3c4e2d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 3c88e5aaef9262d320cdf61564078246dee46b10
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595382"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634264"
 ---
 # <a name="csc-task"></a>Csc (tâche)
+
 Encapsule*csc.exe* et produit des fichiers exécutables ( *.exe*), des bibliothèques de liens dynamiques ( *.dll*) ou des modules de code ( *.netmodule*). Pour plus d’informations sur *csc.exe*, consultez [Options du compilateur C#](/dotnet/csharp/language-reference/compiler-options/index).
 
-## <a name="parameters"></a>Parameters
-Le tableau ci-dessous décrit les paramètres de la tâche `Csc` .
+## <a name="parameters"></a>Paramètres
+
+Le tableau ci-dessous décrit les paramètres de la tâche `Csc`.
 
 | Paramètre | Description |
 |------------------------------| - |
@@ -65,13 +67,13 @@ Le tableau ci-dessous décrit les paramètres de la tâche `Csc` .
 | `OutputRefAssembly` | Paramètre `String` facultatif.<br /><br /> Spécifie le nom du fichier d’assembly de la référence de sortie. Pour plus d’informations, consultez [-refout (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/refout-compiler-option). |
 | `PdbFile` | Paramètre `String` facultatif.<br /><br /> Spécifie le nom de fichier des informations de débogage. Le nom par défaut est le nom du fichier de sortie avec l’extension *.pdb*. |
 | `Platform` | Paramètre `String` facultatif.<br /><br /> Spécifie la plateforme de processeur ciblée par le fichier de sortie. Ce paramètre peut avoir la valeur `x86`, `x64` ou `anycpu`. La valeur par défaut est `anycpu`. Pour plus d’informations, consultez [-platform (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option). |
-| `References` | Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Provoque l’importation par la tâche des informations de type public dans le projet actuel à partir des éléments spécifiés. Pour plus d’informations, consultez [-reference (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/reference-compiler-option).<br /><br /> Vous pouvez spécifier un alias de référence [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] dans un fichier [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] en ajoutant les métadonnées `Aliases` à l’élément « Reference » d’origine. Par exemple, pour définir l’alias « LS1 » dans la ligne de commande CSC suivante :<br /><br /> `CSC /r:LS1=MyCodeLibrary.dll /r:LS2=MyCodeLibrary2.dll *.cs`<br /><br /> Vous devez utiliser :<br /><br /> `<Reference Include="MyCodeLibrary"> <Aliases>LS1</Aliases> </Reference>` |
+| `References` | Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Provoque l’importation par la tâche des informations de type public dans le projet actuel à partir des éléments spécifiés. Pour plus d’informations, consultez [-reference (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/reference-compiler-option).<br /><br /> Vous pouvez spécifier un C# alias de référence dans un fichier MSBuild en ajoutant les métadonnées `Aliases` à l’élément « référence » d’origine. Par exemple, pour définir l’alias « LS1 » dans la ligne de commande CSC suivante :<br /><br /> `CSC /r:LS1=MyCodeLibrary.dll /r:LS2=MyCodeLibrary2.dll *.cs`<br /><br /> Vous devez utiliser :<br /><br /> `<Reference Include="MyCodeLibrary"> <Aliases>LS1</Aliases> </Reference>` |
 | `Resources` | Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Incorpore une ressource .NET Framework dans le fichier de sortie.<br /><br /> Les éléments transmis dans ce paramètre peuvent posséder des entrées de métadonnées facultatives nommées `LogicalName` et `Access`. `LogicalName` correspond au paramètre `identifier` du commutateur `/resource`, et `Access` correspond au paramètre `accessibility-modifier`. Pour plus d’informations, consultez [-resource (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/resource-compiler-option). |
 | `ResponseFiles` | Paramètre `String` facultatif.<br /><br /> Spécifie le fichier réponse qui contient les commandes correspondant à cette tâche. Pour plus d’informations, consultez [@ (Spécifier un fichier réponse)](/dotnet/csharp/language-reference/compiler-options/response-file-compiler-option). |
-| `Sources` | Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Spécifie un ou plusieurs fichiers sources [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. |
+| `Sources` | Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Spécifie un ou C# plusieurs fichiers sources. |
 | `TargetType` | Paramètre `String` facultatif.<br /><br /> Spécifie le format de fichier du fichier de sortie. Ce paramètre peut avoir la valeur `library`, qui crée une bibliothèque de codes, `exe`, qui crée une application console, `module`, qui crée un module, ou `winexe`, qui crée un programme Windows. La valeur par défaut est `library`. Pour plus d’informations, consultez [-target (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/target-compiler-option). |
 | `TreatWarningsAsErrors` | Paramètre `Boolean` facultatif.<br /><br /> Si `true`, traite tous les avertissements comme des erreurs. Pour plus d’informations, consultez [-warnaserror (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option). |
-| `UseHostCompilerIfAvailable` | Paramètre `Boolean` facultatif.<br /><br /> Demande à la tâche d’utiliser l’objet de compilateur in-process s’il est disponible. Son utilisation est réservée à [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. |
+| `UseHostCompilerIfAvailable` | Paramètre `Boolean` facultatif.<br /><br /> Demande à la tâche d’utiliser l’objet de compilateur in-process s’il est disponible. Utilisé uniquement par Visual Studio. |
 | `Utf8Output` | Paramètre `Boolean` facultatif.<br /><br /> Enregistre les résultats de la compilation au format d’encodage UTF-8. Pour plus d’informations, consultez [-utf8output (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/utf8output-compiler-option). |
 | `WarningLevel` | Paramètre `Int32` facultatif.<br /><br /> Spécifie le niveau d’avertissement que le compilateur doit afficher. Pour plus d’informations, consultez [-warn (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/warn-compiler-option). |
 | `WarningsAsErrors` | Paramètre `String` facultatif.<br /><br /> Spécifie une liste d'avertissements à traiter comme des erreurs. Pour plus d’informations, consultez [-warnaserror (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option).<br /><br /> Ce paramètre remplace le paramètre `TreatWarningsAsErrors`. |
@@ -81,9 +83,11 @@ Le tableau ci-dessous décrit les paramètres de la tâche `Csc` .
 | `Win32Resource` | Paramètre `String` facultatif.<br /><br /> Insère un fichier de ressources Win32 ( *.res*) dans le fichier de sortie. Pour plus d’informations, consultez [-win32res (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/win32res-compiler-option). |
 
 ## <a name="remarks"></a>Notes
+
 En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe `Microsoft.Build.Tasks.ManagedCompiler`, qui hérite de la classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, qui hérite elle-même de la classe <xref:Microsoft.Build.Utilities.ToolTask>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).
 
 ## <a name="example"></a>Exemple
+
 L’exemple suivant utilise la tâche `Csc` pour compiler un fichier exécutable à partir des fichiers sources de la collection d’éléments `Compile`.
 
 ```xml
@@ -94,5 +98,6 @@ L’exemple suivant utilise la tâche `Csc` pour compiler un fichier exécutable
 ```
 
 ## <a name="see-also"></a>Voir aussi
+
 - [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)
-- [Tâches MSBuild](../msbuild/msbuild-tasks.md)
+- [Tâches :](../msbuild/msbuild-tasks.md)

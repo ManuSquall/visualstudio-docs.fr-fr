@@ -8,12 +8,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3d5f9e402750978b1201c6b2a5b1ef0659e8789
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8f20fdb4cd809e422bc33535f3143b45db99842f
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593666"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633341"
 ---
 # <a name="msbuild-glossary"></a>Glossaire MSBuild
 
@@ -58,7 +58,7 @@ function, item\
 Voir fonction d’élément.
 
 item\
-Les éléments correspondent aux entrées du système de génération et sont regroupés en types d’élément basés sur leurs noms d’élément. Les éléments représentent généralement des fichiers. Comme les éléments sont nommés en fonction du type d’élément dont ils font partie, les termes *élément* et *valeur d’élément* peuvent être utilisés indifféremment. Pour plus d’informations, consultez l’article [Éléments MSBuild](../msbuild/msbuild-items.md).
+Les éléments correspondent aux entrées du système de génération et sont regroupés en types d’élément basés sur leurs noms d’élément. Les éléments représentent généralement des fichiers. Comme les éléments sont nommés en fonction du type d’élément dont ils font partie, les termes *élément* et *valeur d’élément* peuvent être utilisés indifféremment. Pour plus d’informations, consultez l’article [Éléments](../msbuild/msbuild-items.md).
 
 item definition\
 Les groupes de définitions d’élément contiennent des définitions d’élément qui ajoutent les métadonnées par défaut à tout type d’élément. À l’instar des métadonnées connues, les métadonnées par défaut sont associées à tous les éléments du type d’élément spécifié. Les métadonnées par défaut peuvent être remplacées de façon explicite dans une définition d’élément. Pour plus d’informations, consultez [Définitions d’éléments](../msbuild/item-definitions.md).
@@ -70,13 +70,13 @@ item metadata\
 Voir *métadonnées, élément*.
 
 item type\
-Les types d’élément sont des listes nommées d’éléments qui peuvent être utilisés comme paramètres pour les tâches. Les tâches utilisent les valeurs d’élément pour exécuter les étapes du processus de génération. Pour plus d’informations, consultez l’article [Éléments MSBuild](../msbuild/msbuild-items.md).
+Les types d’élément sont des listes nommées d’éléments qui peuvent être utilisés comme paramètres pour les tâches. Les tâches utilisent les valeurs d’élément pour exécuter les étapes du processus de génération. Pour plus d’informations, consultez l’article [Éléments](../msbuild/msbuild-items.md).
 
 metadata, item\
-Les métadonnées d’élément correspondent à une collection de paires nom-valeur qui est associée à un élément. Les métadonnées fournissent des informations descriptives sur l’élément et sont facultatives, à l’exception des métadonnées connues. Pour plus d’informations, consultez l’article [Éléments MSBuild](../msbuild/msbuild-items.md).
+Les métadonnées d’élément correspondent à une collection de paires nom-valeur qui est associée à un élément. Les métadonnées fournissent des informations descriptives sur l’élément et sont facultatives, à l’exception des métadonnées connues. Pour plus d’informations, consultez l’article [Éléments](../msbuild/msbuild-items.md).
 
 metadata, well-known\
-Les métadonnées connues sont des métadonnées d’élément en lecture seule qui sont initialisées à l’aide d’une valeur prédéfinie. Les métadonnées connues fournissent des informations descriptives sur un élément qui référence un fichier. Par exemple, la valeur de la métadonnée connue `FullPath` est le chemin d’accès complet du fichier référencé. Pour plus d’informations, consultez l’article [Éléments MSBuild](../msbuild/msbuild-items.md).
+Les métadonnées connues sont des métadonnées d’élément en lecture seule qui sont initialisées à l’aide d’une valeur prédéfinie. Les métadonnées connues fournissent des informations descriptives sur un élément qui référence un fichier. Par exemple, la valeur de la métadonnée connue `FullPath` est le chemin d’accès complet du fichier référencé. Pour plus d’informations, consultez l’article [Éléments](../msbuild/msbuild-items.md).
 
 multitargeting\
 Possibilité pour un projet d’application ou d’assembly de cibler différents CLR et frameworks à partir de MSBuild et de Visual Studio.
@@ -100,7 +100,7 @@ property, function\
 Une fonction de propriété est une propriété système ou une méthode qui peut être utilisée pour évaluer des scripts MSBuild. Les méthodes de propriété permettent de lire l’heure système, de comparer des chaînes, d’établir des correspondances avec des expressions régulières et d’effectuer d’autres actions. Pour plus d’informations, consultez [Fonctions de propriétés](../msbuild/property-functions.md).
 
 property function, nested\
-Les fonctions de propriétés peuvent être combinées pour former des fonctions plus complexes. Par exemple :
+Les fonctions de propriétés peuvent être combinées pour former des fonctions plus complexes. Par exemple,
 
  `$([MSBuild]::BitwiseAnd(32,   $([System.IO.File]::GetAttributes(tempFile))))`
 
@@ -161,7 +161,7 @@ targets file\
 Fichier projet qui contient principalement des cibles et des tâches qui guident la génération. Par convention, il est pourvu de l’extension de fichier *.targets*. Les fichiers de cibles sont généralement importés à la fin des fichiers projet associés.
 
 task\
-Les tâches sont des unités de code exécutable auxquelles les projets [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ont recours pour exécuter des opérations de génération. Par exemple, une tâche peut compiler des fichiers d'entrée ou exécuter un outil externe. Pour plus d’informations, consultez l’article [Tâches MSBuild](../msbuild/msbuild-tasks.md).
+Les tâches sont des unités de code exécutable que les projets MSBuild utilisent pour effectuer des opérations de génération. Par exemple, une tâche peut compiler des fichiers d’entrée ou exécuter un outil externe. Pour plus d’informations, consultez l’article [Tâches MSBuild](../msbuild/msbuild-tasks.md).
 
 transform\
 Conversion de type un-à-un d’une collection d’éléments en une autre. En plus de permettre à un projet de convertir des collections d’éléments, une transformation permet à une cible d’identifier un mappage direct entre ses entrées et sorties. Pour plus d’informations, consultez l’article [Transforms (Transformations MSBuild)](../msbuild/msbuild-transforms.md).

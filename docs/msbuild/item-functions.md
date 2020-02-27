@@ -10,17 +10,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65ca003375e54248852f5942bd2b5f62fe21a06c
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: af4fb872206611ea5eb1aa93b7aa759615b56e41
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75573792"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633679"
 ---
 # <a name="item-functions"></a>fonctions d'élément
-À compter de MSBuild 4.0, le code dans les tâches et les cibles peut appeler des fonctions d’élément pour obtenir des informations sur les éléments du projet. Ces fonctions simplifient l’obtention des éléments Distinct() et sont plus rapides que l’exécution d’une boucle dans les éléments.
+
+Le code des tâches et des cibles peut appeler des fonctions d’élément pour obtenir des informations sur les éléments du projet (dans MSBuild 4,0 et versions ultérieures). Ces fonctions simplifient l’obtention d’éléments distincts et sont plus rapides que l’itération dans les éléments.
 
 ## <a name="string-item-functions"></a>Fonctions d’élément de type chaîne
+
 Vous pouvez utiliser des méthodes et des propriétés de chaîne dans le .NET Framework pour manipuler n’importe quelle valeur d’élément. Pour les méthodes <xref:System.String>, spécifiez le nom de la méthode. Pour les propriétés <xref:System.String>, spécifiez le nom de la propriété après « get_ ».
 
 Pour les éléments qui ont plusieurs chaînes, la méthode ou la propriété de chaîne s’exécute sur chaque chaîne.
@@ -49,6 +51,7 @@ L’exemple suivant montre comment utiliser ces méthodes d’élément de type 
 ```
 
 ## <a name="intrinsic-item-functions"></a>Fonctions d’élément intrinsèques
+
 Le tableau ci-dessous liste les fonctions intrinsèques disponibles pour les éléments.
 
 |Fonction|Exemple|Description|
@@ -100,4 +103,5 @@ L’exemple suivant montre comment utiliser des fonctions d’élément intrins�
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Éléments MSBuild](../msbuild/msbuild-items.md)
+
+- [Éléments](../msbuild/msbuild-items.md)

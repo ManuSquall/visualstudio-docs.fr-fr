@@ -18,18 +18,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fbe0dbda58a0c57cacd64c40b66cc640b779bca
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: d021bdb485846749ea2c7e9dfe483e09738fda46
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593315"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633991"
 ---
 # <a name="getframeworksdkpath-task"></a>GetFrameworkSdkPath (tâche)
-Récupère le chemin au [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)].
 
+Récupère le chemin d’accès au kit de développement logiciel (SDK) Windows.
 ## <a name="task-parameters"></a>Paramètres de tâche
-Le tableau ci-dessous décrit les paramètres de la tâche `GetFrameworkSdkPath` .
+
+Le tableau ci-dessous décrit les paramètres de la tâche `GetFrameworkSdkPath`.
+Le tableau ci-dessous décrit les paramètres de la tâche `GetFrameworkSdkPath`.
 
 |Paramètre|Description|
 |---------------|-----------------|
@@ -39,10 +41,12 @@ Le tableau ci-dessous décrit les paramètres de la tâche `GetFrameworkSdkPath`
 |`Path`|Paramètre de sortie `String` facultatif.<br /><br /> Contient le chemin de la dernière version du SDK .NET, si une version est présente. Sinon, retourne `String.Empty`.|
 
 ## <a name="remarks"></a>Notes
-En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension> , qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task> . Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).
+
+En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Exemple
-L’exemple suivant utilise la tâche `GetFrameworkSdkPath` pour stocker le chemin du [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] dans la propriété `SdkPath`.
+
+L’exemple suivant utilise la tâche `GetFrameworkSdkPath` pour stocker le chemin d’accès au SDK Windows dans la propriété `SdkPath`.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -58,5 +62,6 @@ L’exemple suivant utilise la tâche `GetFrameworkSdkPath` pour stocker le chem
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Tâches MSBuild](../msbuild/msbuild-tasks.md)
+
+- [Tâches :](../msbuild/msbuild-tasks.md)
 - [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)

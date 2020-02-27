@@ -11,17 +11,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f60b7d2c0de74743c021feee56a3d9f3c8f3eb5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: a041802af1c2fe8cfa195990e6eda3e9b49d773a
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75574325"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633770"
 ---
 # <a name="how-to-use-reserved-xml-characters-in-project-files"></a>Guide pratique pour utiliser des caractères XML réservés dans les fichiers projet
+
 Lorsque vous créez des fichiers projet, vous devrez peut-être utiliser des caractères XML réservés, par exemple, dans les valeurs de propriétés ou dans les valeurs de paramètres de tâche. Toutefois, certains caractères réservés doivent être remplacés par une entité nommée afin que le fichier projet puisse être analysé.
 
 ## <a name="use-reserved-characters"></a>Utiliser des caractères réservés
+
  Le tableau suivant décrit les caractères XML réservés qui doivent être remplacés par l’entité nommée correspondante afin que le fichier projet puisse être analysé.
 
 |Caractère réservé|Entité nommée|
@@ -29,7 +31,7 @@ Lorsque vous créez des fichiers projet, vous devrez peut-être utiliser des car
 |\<|&amp;lt;|
 |>|&amp;gt;|
 |&|&amp;amp;|
-|"|&amp;quot;|
+|«|&amp;quot;|
 |'|&amp;apos;|
 
 #### <a name="to-use-double-quotes-in-a-project-file"></a>Pour utiliser des guillemets doubles dans un fichier projet
@@ -41,6 +43,7 @@ Lorsque vous créez des fichiers projet, vous devrez peut-être utiliser des car
     ```
 
 ## <a name="example"></a>Exemple
+
  Dans l’exemple de code suivant, des guillemets doubles sont utilisés pour mettre en surbrillance le nom de fichier dans le message qui est sorti par le fichier projet.
 
 ```xml
@@ -71,5 +74,6 @@ Lorsque vous créez des fichiers projet, vous devrez peut-être utiliser des car
 ```
 
 ## <a name="see-also"></a>Voir aussi
+
 - [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)
 - [MSBuild](../msbuild/msbuild.md)

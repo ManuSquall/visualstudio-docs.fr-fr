@@ -11,33 +11,40 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd377318d92989f7e1341d166b2ca3d3978a148d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: f5dc62112324f7ad19c47b346ac8c1e3f86570b0
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595239"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631300"
 ---
 # <a name="use-multiple-processors-to-build-projects"></a>Utiliser plusieurs processeurs pour générer des projets
-MSBuild permet d’exploiter des systèmes dotés de plusieurs processeurs ou de processeurs à plusieurs cœurs. Un processus de génération séparé est créé pour chaque processeur disponible. Par exemple, si le système comporte quatre processeurs, quatre processus de génération sont créés. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] peut traiter ces builds simultanément, et par conséquent la durée globale de génération est réduite. Toutefois, la génération parallèle introduit des modifications dans le déroulement du processus de génération. Cette rubrique aborde ces modifications.
+
+MSBuild permet d’exploiter des systèmes dotés de plusieurs processeurs ou de processeurs à plusieurs cœurs. Un processus de génération séparé est créé pour chaque processeur disponible. Par exemple, si le système comporte quatre processeurs, quatre processus de génération sont créés. MSBuild peut traiter ces builds simultanément et, par conséquent, le temps de génération global est réduit. Toutefois, la génération parallèle introduit des modifications dans le déroulement du processus de génération. Cette rubrique aborde ces modifications.
 
 ## <a name="project-to-project-references"></a>Références entre projets
- Si [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] rencontre une référence entre projets (P2P) durant l’exécution de builds parallèles pour générer un projet, il génère la référence une seule fois. Si deux projets ont la même référence P2P, elle n’est pas régénérée pour chaque projet. Au lieu de cela, le moteur de génération retourne la même référence P2P aux deux projets qui en dépendent. La même référence P2P est fournie aux futures demandes de la session concernant la même cible.
+
+ Lorsque le Microsoft Build Engine rencontre une référence entre projets (P2P) alors qu’il utilise des générations parallèles pour générer un projet, il ne génère la référence qu’une seule fois. Si deux projets ont la même référence P2P, elle n’est pas régénérée pour chaque projet. Au lieu de cela, le moteur de génération retourne la même référence P2P aux deux projets qui en dépendent. La même référence P2P est fournie aux futures demandes de la session concernant la même cible.
 
 ## <a name="cycle-detection"></a>Détection de cycle
- La détection de cycle fonctionne de la même manière que dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0, mais [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] peut désormais signaler la détection de cycle pendant la génération ou à un autre moment.
+
+ La détection de cycle fonctionne de la même façon que dans MSBuild 2,0, à ceci près que MSBuild peut désormais signaler la détection du cycle à une heure différente ou dans la Build.
 
 ## <a name="errors-and-exceptions-during-parallel-builds"></a>Erreurs et exceptions pendant les générations parallèles
- Dans les builds parallèles, les erreurs et exceptions ne se produisent pas nécessairement aux mêmes moments que dans une build non parallèle, et quand la build d’un projet échoue, les autres builds de projet continuent. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] n’arrête aucune génération de projet qui s’exécute parallèlement à celle qui a échoué. La génération d’autres projets continue jusqu’à ce qu’elles réussissent ou échouent. Toutefois, si <xref:Microsoft.Build.Framework.IBuildEngine.ContinueOnError%2A> a été activé, aucune génération ne s’arrête, même si une erreur se produit.
+
+ Dans les builds parallèles, les erreurs et exceptions ne se produisent pas nécessairement aux mêmes moments que dans une build non parallèle, et quand la build d’un projet échoue, les autres builds de projet continuent. MSBuild n’arrêtera aucune génération de projet générée en parallèle avec celle qui a échoué. La génération d’autres projets continue jusqu’à ce qu’elles réussissent ou échouent. Toutefois, si <xref:Microsoft.Build.Framework.IBuildEngine.ContinueOnError%2A> a été activé, aucune génération ne s’arrête, même si une erreur se produit.
 
 ## <a name="c-project-vcxproj-and-solution-sln-files"></a>C++fichiers de projet (. vcxproj) et de solution (. sln)
- Les fichiers de [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] ( *. vcxproj*) et de solution ( *. sln*) peuvent être passés à la [tâche MSBuild](../msbuild/msbuild-task.md). Pour les projets [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], VCWrapperProject est appelé, puis le projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] interne est créé. Pour les solutions [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], un SolutionWrapperProject est créé, puis le projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] interne. Dans les deux cas, le projet résultant est traité comme tout autre projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
+
+ Les C++ fichiers de projet ( *. vcxproj*) et de solution ( *. sln*) peuvent être passés à la [tâche MSBuild](../msbuild/msbuild-task.md). Pour C++ les projets, VCWrapperProject est appelé, puis le projet MSBuild interne est créé. Pour C++ les solutions, un SolutionWrapperProject est créé, puis le projet MSBuild interne est créé. Dans les deux cas, le projet résultant est traité de la même façon que n’importe quel autre projet MSBuild.
 
 ## <a name="multi-process-execution"></a>Exécution de plusieurs processus
- Presque toutes les activités liées à la génération nécessitent un répertoire constant durant le processus de génération pour éviter les erreurs liées aux chemins. Les projets ne peuvent donc pas s’exécuter sur des threads différents dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] car ils provoqueraient la création de plusieurs répertoires.
 
- Pour éviter ce problème tout en autorisant la génération multiprocesseur, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] utilise « l’isolation des processus ». Grâce à l’isolation des processus, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] peut créer au maximum `n` processus, où `n` représente le nombre de processeurs disponibles sur le système. Par exemple, si [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] génère une solution sur un système à deux processeurs, seuls deux processus de génération sont créés. Ces processus sont réutilisés pour générer tous les projets dans la solution.
+ Presque toutes les activités liées à la génération nécessitent un répertoire constant durant le processus de génération pour éviter les erreurs liées aux chemins. Par conséquent, les projets ne peuvent pas s’exécuter sur différents threads dans MSBuild, car ils provoquent la création de plusieurs répertoires.
+
+ Pour éviter ce problème tout en permettant d’activer les builds multiprocesseurs, MSBuild utilise l’isolation des processus. En utilisant l’isolation des processus, MSBuild peut créer un maximum de `n` processus, où `n` est égal au nombre de processeurs disponibles sur le système. Par exemple, si MSBuild génère une solution sur un système qui a deux processeurs, seuls deux processus de génération sont créés. Ces processus sont réutilisés pour générer tous les projets dans la solution.
 
 ## <a name="see-also"></a>Voir aussi
+
 - [Générer plusieurs projets en parallèle](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)
-- [Tâches MSBuild](../msbuild/msbuild-tasks.md)
+- [Tâches :](../msbuild/msbuild-tasks.md)

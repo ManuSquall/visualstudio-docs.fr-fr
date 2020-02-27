@@ -21,17 +21,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31ec191345e1a232e79a2eea21563bf41e5d555c
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.openlocfilehash: 28fd0033f5ef6f83ca29432f95d6b635fcd36116
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "77558165"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634368"
 ---
 # <a name="copy-task"></a>Copy (tâche)
+
 Copie les fichiers à un nouvel emplacement du système de fichiers.
 
 ## <a name="parameters"></a>Paramètres
+
 Le tableau ci-dessous décrit les paramètres de la tâche `Copy`.
 
 |Paramètre|Description|
@@ -47,6 +49,7 @@ Le tableau ci-dessous décrit les paramètres de la tâche `Copy`.
 |`UseHardlinksIfPossible`|Paramètre `Boolean` facultatif.<br /><br /> Si `true`, crée des liens physiques pour les fichiers copiés au lieu de copier les fichiers.|
 
 ## <a name="warnings"></a>Avertissements
+
 Des avertissements sont enregistrés, notamment ceux-ci :
 
 - `Copy.DestinationIsDirectory`
@@ -66,11 +69,13 @@ Des avertissements sont enregistrés, notamment ceux-ci :
 - `Copy.RemovingReadOnlyAttribute`
 
 ## <a name="remarks"></a>Notes
+
 Le paramètre `DestinationFolder` ou `DestinationFiles` doit être spécifié, mais pas les deux. Si les deux paramètres sont spécifiés, la tâche échoue, et une erreur est enregistrée.
 
 En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Exemple
+
 L’exemple suivant copie les éléments de la collection d’éléments `MySourceFiles` dans le dossier *c:\MyProject\Destination*.
 
 ```xml
@@ -91,6 +96,7 @@ L’exemple suivant copie les éléments de la collection d’éléments `MySour
 ```
 
 ## <a name="example"></a>Exemple
+
 L’exemple suivant illustre la procédure à suivre pour effectuer une copie récursive. Ce projet copie tous les fichiers de manière récursive depuis *c:\MySourceTree* vers *c:\MyDestinationTree*, tout en conservant la structure de répertoires.
 
 ```xml
@@ -111,5 +117,6 @@ L’exemple suivant illustre la procédure à suivre pour effectuer une copie r�
 ```
 
 ## <a name="see-also"></a>Voir aussi
+
 - [Tâches :](../msbuild/msbuild-tasks.md)
 - [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)

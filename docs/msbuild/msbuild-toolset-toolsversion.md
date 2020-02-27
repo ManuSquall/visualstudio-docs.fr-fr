@@ -13,18 +13,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4af4816440c2eb285a0f30db50e18108ce79265f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: b6aaa6309e04f5143b70ff233c0b621ab2350b9c
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593805"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633120"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Ensemble d'outils MSBuild (ToolsVersion)
 
-MSBuild utilise un ensemble d’outils de tâches, de cibles et d’outils pour générer une application. Un ensemble d’outils MSBuild comprend généralement un fichier *microsoft.common.tasks*, un fichier *microsoft.common.targets* et des compilateurs comme *csc.exe* et *vbc.exe*. La plupart des ensembles d'outils peuvent être utilisés pour compiler des applications pour plusieurs versions de .NET Framework et pour plusieurs plateformes système. Cependant, l'ensemble d'outils MSBuild 2.0 ne peut être utilisé que pour cibler .NET Framework 2.0.
+MSBuild utilise un ensemble d’outils de tâches, de cibles et d’outils pour générer une application. En général, un ensemble d’outils MSBuild comprend un fichier *Microsoft. Common. Tasks* , un fichier *Microsoft. Common. targets* et des compilateurs tels que *CSC. exe* et *vbc. exe*. La plupart des ensembles d'outils peuvent être utilisés pour compiler des applications pour plusieurs versions de .NET Framework et pour plusieurs plateformes système. Cependant, l'ensemble d'outils MSBuild 2.0 ne peut être utilisé que pour cibler .NET Framework 2.0.
 
 ## <a name="toolsversion-attribute"></a>Attribut ToolsVersion
+
 ::: moniker range=">=vs-2019"
  Spécifiez l’ensemble d’outils dans l’attribut `ToolsVersion` de l’élément [Project](../msbuild/project-element-msbuild.md) du fichier projet. L’exemple suivant spécifie que le projet doit être généré à l’aide de l’ensemble d’outils MSBuild « actuel ».
 

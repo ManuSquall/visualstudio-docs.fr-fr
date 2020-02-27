@@ -15,25 +15,25 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d050aa095868e229887e4928285d746e1b5906a5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 13c0731781efec98a117c11a7172645c46028af3
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593874"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633159"
 ---
 # <a name="msbuild-task-reference"></a>Informations de référence sur les tâches MSBuild
 
-Les tâches fournissent le code exécuté pendant le processus de génération. Les tâches de la liste suivante sont incluses dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Quand [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] est installé, des tâches supplémentaires sont disponibles pour générer des projets [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. Pour plus d’informations, consultez [ C++ tâches](../msbuild/msbuild-tasks-specific-to-visual-cpp.md).
+Les tâches fournissent le code exécuté pendant le processus de génération. Les tâches de la liste suivante sont incluses dans MSBuild. Lorsque la C++ charge de travail est installée, des tâches supplémentaires qui sont utilisées pour C++ générer des projets sont disponibles. Pour plus d’informations, consultez [ C++ tâches](../msbuild/msbuild-tasks-specific-to-visual-cpp.md).
 
 Outre les paramètres répertoriés dans les rubriques de cette section, chaque tâche comprend les paramètres suivants :
 
 | Paramètre | Description |
 |-------------------| - |
-| `Condition` | Paramètre `String` facultatif.<br /><br /> Expression `Boolean` utilisée par le moteur [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pour déterminer si cette tâche va être exécutée. Pour plus d’informations sur les conditions prises en charge par [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], consultez [Conditions](../msbuild/msbuild-conditions.md). |
+| `Condition` | Paramètre `String` facultatif.<br /><br /> Expression `Boolean` que le moteur MSBuild utilise pour déterminer si cette tâche sera exécutée. Pour plus d’informations sur les conditions prises en charge par MSBuild, consultez [conditions](../msbuild/msbuild-conditions.md). |
 | `ContinueOnError` | Paramètre facultatif. Peut contenir l’une des valeurs suivantes :<br /><br /> -   **WarnAndContinue** ou **true**. En cas d’échec d’une tâche, l’exécution des tâches suivantes de l’élément [Target](../msbuild/target-element-msbuild.md) et de la génération se poursuit, et toutes les erreurs de la tâche sont considérées comme des avertissements.<br />-   **ErrorAndContinue**. En cas d’échec d’une tâche, l’exécution des tâches suivantes de l’élément `Target` et de la génération se poursuit, et toutes les erreurs de la tâche sont considérées comme des erreurs.<br />-   **ErrorAndStop** ou **false** (par défaut). En cas d’échec d’une tâche, les tâches restantes de l’élément `Target` et de la génération ne sont pas exécutées, et tout l’élément `Target` ainsi que la génération sont considérés comme étant en échec.<br /><br /> Les versions de .NET Framework antérieures à 4.5 prenaient en charge uniquement les valeurs `true` et `false`.<br /><br /> Pour plus d’informations, voir [Guide pratique : Ignorer les erreurs dans les tâches](../msbuild/how-to-ignore-errors-in-tasks.md). |
 
-## <a name="in-this-section"></a>Dans cette section
+## <a name="in-this-section"></a>Contenu de cette section
 
 - [Classe de base Task](../msbuild/task-base-class.md)
 
@@ -85,7 +85,7 @@ Outre les paramètres répertoriés dans les rubriques de cette section, chaque 
 
 - [Tâche CreateCSharpManifestResourceName](../msbuild/createcsharpmanifestresourcename-task.md)
 
- Crée un nom de manifeste de style [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] à partir d’un nom de fichier *.resx* donné ou d’une autre ressource.
+ Crée un C#nom de manifeste de style à partir d’un nom de fichier *. resx* donné ou d’une autre ressource.
 
 - [Tâche CreateItem](../msbuild/createitem-task.md)
 
@@ -97,7 +97,7 @@ Outre les paramètres répertoriés dans les rubriques de cette section, chaque 
 
 - [Tâche CreateVisualBasicManifestResourceName](../msbuild/createvisualbasicmanifestresourcename-task.md)
 
- Crée un nom de manifeste de style [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] à partir d’un nom de fichier *.resx* donné ou d’une autre ressource.
+ Crée un nom de manifeste de style Visual Basic à partir d’un nom de fichier *. resx* donné ou d’une autre ressource.
 
 - [Tâche Csc](../msbuild/csc-task.md)
 
@@ -141,7 +141,7 @@ Outre les paramètres répertoriés dans les rubriques de cette section, chaque 
 
 - [GenerateApplicationManifest, tâche](../msbuild/generateapplicationmanifest-task.md)
 
- Génère un manifeste d’application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ou un manifeste natif.
+ Génère un manifeste d’application ClickOnce ou un manifeste natif.
 
 - [Tâche GenerateBootstrapper](../msbuild/generatebootstrapper-task.md)
 
@@ -149,7 +149,7 @@ Outre les paramètres répertoriés dans les rubriques de cette section, chaque 
 
 - [Tâche GenerateDeploymentManifest](../msbuild/generatedeploymentmanifest-task.md)
 
- Génère un manifeste de déploiement [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].
+ Génère un manifeste de déploiement ClickOnce.
 
 - [Tâche GenerateResource](../msbuild/generateresource-task.md)
 
@@ -173,11 +173,11 @@ Outre les paramètres répertoriés dans les rubriques de cette section, chaque 
 
 - [Tâche GetFrameworkSdkPath](../msbuild/getframeworksdkpath-task.md)
 
- Récupère le chemin au [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)].
+ Récupère le chemin d’accès au kit de développement logiciel (SDK) Windows.
 
 - [Tâche GetReferenceAssemblyPaths](../msbuild/getreferenceassemblypaths-task.md)
 
- Retourne les chemins des assemblys de référence des différents frameworks.
+ Retourne les chemins des assemblys de référence des différentes infrastructures.
 
 - [Tâche LC](../msbuild/lc-task.md)
 
@@ -197,7 +197,7 @@ Outre les paramètres répertoriés dans les rubriques de cette section, chaque 
 
 - [Tâche MSBuild](../msbuild/msbuild-task.md)
 
- Génère des projets [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] à partir d’un autre projet [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
+ Génère des projets MSBuild à partir d’un autre projet MSBuild.
 
 - [Tâche ReadLinesFromFile](../msbuild/readlinesfromfile-task.md)
 
@@ -229,7 +229,7 @@ Outre les paramètres répertoriés dans les rubriques de cette section, chaque 
 
 - [Tâche ResolveComReference](../msbuild/resolvecomreference-task.md)
 
- Prend une liste d’un ou plusieurs noms de bibliothèques de types ou de fichiers *.tlb* et résout ces bibliothèques de types aux emplacements sur le disque.
+ Prend une liste d’un ou plusieurs noms de bibliothèques de types ou de fichiers *.tlb* et résout ces bibliothèques de types sous forme d’emplacements sur le disque.
 
 - [Tâche ResolveKeySource](../msbuild/resolvekeysource-task.md)
 
@@ -241,7 +241,7 @@ Outre les paramètres répertoriés dans les rubriques de cette section, chaque 
 
 - [Tâche ResolveNativeReference](../msbuild/resolvenativereference-task.md)
 
- Résout des références natives.
+ Résout les références natives.
 
 - [Tâche ResolveNonMSBuildProjectOutput](../msbuild/resolvenonmsbuildprojectoutput-task.md)
 
@@ -311,4 +311,4 @@ Outre les paramètres répertoriés dans les rubriques de cette section, chaque 
 
 - [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)
 - [Écriture de tâches](../msbuild/task-writing.md)
-- [Tâches MSBuild](../msbuild/msbuild-tasks.md)
+- [Tâches :](../msbuild/msbuild-tasks.md)

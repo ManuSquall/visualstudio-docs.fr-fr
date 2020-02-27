@@ -10,14 +10,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 891b0f1197ad178a705de5d64026beebc62615dd
-ms.sourcegitcommit: 8cbced0fb46959a3a2494852df1e41db1177a26c
+ms.openlocfilehash: b6a8b380791cbb8adcc43b363e5f0a332935e131
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76826495"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631105"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>Procédure pas à pas : créer un fichier projet MSBuild en partant de zéro
+
 Les langages de programmation qui ciblent .NET Framework utilisent des fichiers projet MSBuild pour décrire et contrôler le processus de génération d'application. Quand vous utilisez Visual Studio pour créer un fichier projet MSBuild, le code XML approprié est ajouté automatiquement au fichier. Il peut cependant être utile de comprendre comment le code XML est organisé et comment vous pouvez le modifier pour contrôler une build.
 
  Pour plus d’informations sur la création d’un C++ fichier projet pour un projet, consultez [MSBuild (C++)](/cpp/build/msbuild-visual-cpp).
@@ -47,6 +48,7 @@ Cette procédure pas à pas montre comment créer le projet sur l'invite de comm
 Pour effectuer la procédure pas à pas, vous devez avoir installé le .NET Framework (version 2,0, 3,5, 4,0, 4,5 ou ultérieure), car il comprend MSBuild C# et le compilateur visuel, qui sont requis pour la procédure pas à pas.
 
 ## <a name="create-a-minimal-application"></a>Créer une application minimale
+
  Cette section montre comment créer un fichier source C# d’application minimal à l’aide d’un éditeur de texte.
 
 1. À l’invite de commandes, accédez au dossier où vous voulez créer l’application, par exemple, *\Mes documents\\* ou *\Bureau\\* .
@@ -84,6 +86,7 @@ Pour effectuer la procédure pas à pas, vous devez avoir installé le .NET Fram
 8. Supprimez l’application en entrant **del helloworld.exe** à l’invite de commandes.
 
 ## <a name="create-a-minimal-msbuild-project-file"></a>Créer un fichier projet MSBuild minimal
+
  Maintenant que vous avez un fichier source d'application minimal, vous pouvez créer un fichier projet minimal pour générer l'application. Ce fichier projet contient les éléments suivants :
 
 - Le nœud `Project` racine requis.
@@ -164,7 +167,8 @@ Avant de pouvoir accéder à MSBuild, vous devez étendre la variable d'environn
 
 Si vous avez installé Visual Studio, vous pouvez également utiliser le **invite de commandes développeur pour Visual Studio**, qui contient un chemin d’accès qui inclut le dossier *MSBuild* .
 
-## <a name="build-the-application"></a>Générer l’application
+## <a name="build-the-application"></a>Créer l’application
+
  Maintenant, pour créer l'application, utilisez le fichier projet que vous venez de créer.
 
 1. Dans l’invite de commandes, tapez **msbuild helloworld.csproj -t:Build**.
@@ -181,6 +185,7 @@ Si vous avez installé Visual Studio, vous pouvez également utiliser le **invit
 > **msbuild helloworld.csproj -t:Build -verbosity:detailed**
 
 ## <a name="add-build-properties"></a>Ajouter des propriétés de build
+
  Vous pouvez ajouter des propriétés de build au fichier projet pour contrôler davantage la génération. Ajoutez maintenant ces propriétés :
 
 - Une propriété `AssemblyName` pour spécifier le nom de l'application.
@@ -216,7 +221,7 @@ Si vous avez installé Visual Studio, vous pouvez également utiliser le **invit
 
      Ceci demande au compilateur Visual C# de produire un assembly dont le nom est donné par la propriété `AssemblyName` et de le placer dans le dossier dont le nom est donné par la propriété `OutputPath`.
 
-5. Enregistrez les modifications apportées.
+5. Enregistrez vos modifications.
 
 Votre fichier projet doit maintenant ressembler au code suivant :
 
@@ -237,7 +242,7 @@ Votre fichier projet doit maintenant ressembler au code suivant :
 ```
 
 > [!NOTE]
-> Nous vous recommandons d’ajouter le délimiteur de chemin (\\) (barre oblique inverse) à la fin du nom du dossier quand vous le spécifiez dans l’élément `OutputPath`, au lieu de l’ajouter dans l’attribut `OutputAssembly` de la tâche `Csc`. Par conséquent,
+> Nous vous recommandons d’ajouter le délimiteur de chemin (\\) (barre oblique inverse) à la fin du nom du dossier quand vous le spécifiez dans l’élément `OutputPath`, au lieu de l’ajouter dans l’attribut `OutputAssembly` de la tâche `Csc`. Par conséquent :
 >
 > `<OutputPath>Bin\</OutputPath>`
 >
@@ -250,6 +255,7 @@ Votre fichier projet doit maintenant ressembler au code suivant :
 > `OutputAssembly=="$(OutputPath)\$(AssemblyName).exe" />`
 
 ## <a name="test-the-build-properties"></a>Tester les propriétés de build
+
  Vous pouvez maintenant générer l'application en utilisant le fichier projet où vous avez utilisé des propriétés de build pour spécifier le dossier de sortie et le nom de l'application.
 
 1. Dans l’invite de commandes, tapez **msbuild helloworld.csproj -t:Build**.
@@ -263,6 +269,7 @@ Votre fichier projet doit maintenant ressembler au code suivant :
      Le message **Hello, world!** doit s’afficher.
 
 ## <a name="add-build-targets"></a>Ajouter des cibles de génération
+
  Ensuite, ajoutez deux cibles de plus au fichier projet, comme suit :
 
 - Une cible Clean qui supprime les anciens fichiers.
@@ -315,6 +322,7 @@ Votre fichier projet doit maintenant ressembler au code suivant :
 ```
 
 ## <a name="test-the-build-targets"></a>Tester les cibles de génération
+
  Vous pouvez utiliser les nouvelles cibles de génération pour tester ces fonctionnalités dans le fichier projet :
 
 - Création de la génération par défaut
@@ -354,6 +362,7 @@ Votre fichier projet doit maintenant ressembler au code suivant :
      Pour vérifier que le dossier *\Bin\\* contient l’application *MSBuildSample*, entrez **dir Bin**.
 
 ## <a name="build-incrementally"></a>Générer de façon incrémentielle
+
  Vous pouvez indiquer à MSBuild de générer une cible seulement si les fichiers source ou les fichiers cible dont dépend la cible ont changé. MSBuild utilise l'horodatage d'un fichier pour déterminer s'il a changé.
 
 ### <a name="to-build-incrementally"></a>Pour générer de façon incrémentielle
@@ -391,7 +400,7 @@ Votre fichier projet doit maintenant ressembler au code suivant :
 
      MSBuild ignore la cible Build, car aucun des fichiers source n'a changé depuis la dernière génération de l'application.
 
-## <a name="c-example"></a>Exemple C#
+## <a name="c-example"></a>Exemple en code C#
 
 L’exemple suivant montre un fichier projet qui compile une C# application et consigne un message contenant le nom du fichier de sortie.
 
@@ -466,6 +475,7 @@ L’exemple suivant montre un fichier projet qui compile une application Visual 
 ```
 
 ## <a name="whats-next"></a>Étapes suivantes
+
  Visual Studio peut faire automatiquement la plus grande partie du travail qui est montré dans cette procédure pas à pas. Pour découvrir comment utiliser Visual Studio pour créer, modifier, générer et tester des fichiers projet MSBuild, consultez la [Procédure pas à pas : utiliser MSBuild](../msbuild/walkthrough-using-msbuild.md).
 
 ## <a name="see-also"></a>Voir aussi

@@ -15,14 +15,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5c0793cc6d9f11cd1074c5cd0091687b154c069
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: cf34ff63b00cf523ba9ef704f4417be4d5cdbf77
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77579459"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77630703"
 ---
 # <a name="writecontexttlogs"></a>WriteContextTLogs
+
 Écrit des fichiers journaux pour le contexte actuel.
 
 ## <a name="syntax"></a>Syntaxe
@@ -32,6 +33,7 @@ HRESULT WINAPI WriteContextTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRoot
 ```
 
 #### <a name="parameters"></a>Paramètres
+
 [in] `intermediateDirectory`
 
  Répertoire où stocker le journal de suivi.
@@ -41,10 +43,13 @@ HRESULT WINAPI WriteContextTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRoot
  Nom racine du nom du fichier journal.
 
 ## <a name="return-value"></a>Valeur retournée
+
  **HRESULT** avec le bit **SUCCEEDED** défini si le contexte de suivi a été créé.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
+
  **En-tête :** *FileTracker. h*
 
 ## <a name="see-also"></a>Voir aussi
+
 - [WriteAllTLogs](../msbuild/writealltlogs.md)

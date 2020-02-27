@@ -13,15 +13,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 641253bc6a7962102a0d9437ddb3981672ae67c3
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 92613b96d5d85a959e3426df86168c7110b74fed
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75573636"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633653"
 ---
 # <a name="item-metadata-in-task-batching"></a>Métadonnées d’élément dans le traitement par lots des tâches
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] a la capacité de diviser les listes d’éléments en différentes catégories, ou lots, en fonction des métadonnées des éléments, et d’exécuter une tâche une fois avec chaque lot. Il peut être difficile de comprendre exactement quels éléments sont passés avec quel lot. Cette rubrique couvre les scénarios courants suivants qui impliquent un traitement par lots.
+
+MSBuild a la capacité de diviser les listes d’éléments en différentes catégories, ou lots, en fonction des métadonnées de l’élément, et d’exécuter une tâche une fois avec chaque lot. Il peut être difficile de comprendre exactement quels éléments sont passés avec quel lot. Cette rubrique couvre les scénarios courants suivants qui impliquent un traitement par lots.
 
 - Division d’une liste d’éléments en lots
 
@@ -31,12 +32,13 @@ ms.locfileid: "75573636"
 
 - Filtrage de listes d’éléments
 
-Pour plus d’informations sur le traitement par lots avec [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], consultez [Traitement par lots](../msbuild/msbuild-batching.md).
+Pour plus d’informations sur le traitement par lot avec MSBuild, consultez [traitement par lot](../msbuild/msbuild-batching.md).
 
 ## <a name="divide-an-item-list-into-batches"></a>Diviser une liste d’éléments en lots
+
 Le traitement par lots vous permet de diviser une liste d’éléments en différents lots en fonction des métadonnées des éléments et de passer chacun des lots séparément dans une tâche. Ceci est utile pour générer des assemblys satellites.
 
-L’exemple suivant montre comment diviser une liste d’éléments en lots en fonction des métadonnées des éléments. La liste d’éléments `ExampColl` est divisée en trois lots en fonction des métadonnées de l’élément `Number`. La présence de `%(ExampColl.Number)` dans l’attribut `Text` indique à [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] qu’un traitement par lots doit être effectué. La liste d’éléments `ExampColl` est divisée en trois lots en fonction des métadonnées `Number` et chaque lot est passé séparément dans la tâche.
+L’exemple suivant montre comment diviser une liste d’éléments en lots en fonction des métadonnées des éléments. La liste d’éléments `ExampColl` est divisée en trois lots en fonction des métadonnées de l’élément `Number`. La présence de `%(ExampColl.Number)`dans l’attribut `Text` notifie MSBuild que le traitement par lots doit être effectué. La liste d’éléments `ExampColl` est divisée en trois lots en fonction des métadonnées `Number` et chaque lot est passé séparément dans la tâche.
 
 ```xml
 <Project
@@ -80,12 +82,13 @@ La [tâche Message](../msbuild/message-task.md) affiche les informations suivant
 `Number: 3 -- Items in ExampColl: Item3;Item6`
 
 ## <a name="divide-several-item-lists-into-batches"></a>Diviser plusieurs listes d’éléments en lots
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] peut diviser plusieurs listes d’éléments en lots en fonction des métadonnées identiques. Ceci facilite la division de différentes listes d’éléments en lots pour générer plusieurs assemblys. Par exemple, vous pouvez avoir une liste d’éléments de fichiers *.cs* divisée en un lot d’application et un lot d’assembly, et une liste d’éléments de fichiers de ressources divisée en un lot d’application et un lot d’assembly. Vous pouvez ensuite utiliser le traitement par lots pour passer ces listes d’éléments dans une même tâche et générer l’application et l’assembly.
+
+MSBuild peut diviser plusieurs listes d’éléments en lots en fonction des mêmes métadonnées. Ceci facilite la division de différentes listes d’éléments en lots pour générer plusieurs assemblys. Par exemple, vous pouvez avoir une liste d’éléments de fichiers *.cs* divisée en un lot d’application et un lot d’assembly, et une liste d’éléments de fichiers de ressources divisée en un lot d’application et un lot d’assembly. Vous pouvez ensuite utiliser le traitement par lots pour passer ces listes d’éléments dans une même tâche et générer l’application et l’assembly.
 
 > [!NOTE]
 > Si une liste d’éléments passée dans une tâche ne contient aucun élément avec les métadonnées référencées, chaque élément de cette liste est passé dans chaque lot.
 
-L’exemple suivant montre comment diviser une liste de plusieurs éléments en lots en fonction des métadonnées des éléments. Les listes d’éléments `ExampColl` et `ExampColl2` sont divisées en trois lots en fonction des métadonnées de l’élément `Number`. La présence de `%(Number)` dans l’attribut `Text` indique à [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] qu’un traitement par lots doit être effectué. Les listes d’éléments `ExampColl` et `ExampColl2` sont divisées en trois lots en fonction des métadonnées `Number` et chaque lot est passé séparément dans la tâche.
+L’exemple suivant montre comment diviser une liste de plusieurs éléments en lots en fonction des métadonnées des éléments. Les listes d’éléments `ExampColl` et `ExampColl2` sont divisées en trois lots en fonction des métadonnées de l’élément `Number`. La présence de `%(Number)`dans l’attribut `Text` notifie MSBuild que le traitement par lots doit être effectué. Les listes d’éléments `ExampColl` et `ExampColl2` sont divisées en trois lots en fonction des métadonnées `Number` et chaque lot est passé séparément dans la tâche.
 
 ```xml
 <Project
@@ -132,9 +135,10 @@ La [tâche Message](../msbuild/message-task.md) affiche les informations suivant
 `Number: 3 -- Items in ExampColl: Item3 ExampColl2: Item6`
 
 ## <a name="batch-one-item-at-a-time"></a>Traiter par lots un élément à la fois
+
 Le traitement par lots peut également être effectué sur les métadonnées d’éléments connus qui sont affectés à chaque élément à la création. Cela garantit que chaque élément d’une collection a des métadonnées à utiliser pour le traitement par lots. La valeur des métadonnées `Identity` est unique pour chaque élément et est utile pour diviser chaque élément d’une liste d’éléments en un lot distinct. Pour obtenir la liste complète des métadonnées d’élément connues, consultez [Métadonnées d’élément connues](../msbuild/msbuild-well-known-item-metadata.md).
 
-L’exemple suivant montre comment traiter par lots chaque élément d’une liste d’éléments un à la fois. Comme la valeur des métadonnées `Identity` de chaque élément est unique, la liste d’éléments `ExampColl` est divisée en six lots, chacun contenant un élément de la liste d’éléments. La présence de `%(Identity)` dans l’attribut `Text` indique à [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] qu’un traitement par lots doit être effectué.
+L’exemple suivant montre comment traiter par lots chaque élément d’une liste d’éléments un à la fois. Comme la valeur des métadonnées `Identity` de chaque élément est unique, la liste d’éléments `ExampColl` est divisée en six lots, chacun contenant un élément de la liste d’éléments. La présence de `%(Identity)`dans l’attribut `Text` notifie MSBuild que le traitement par lots doit être effectué.
 
 ```xml
 <Project
@@ -171,6 +175,7 @@ Identity: 'Item6' -- Items in ExampColl: Item6
 ```
 
 ## <a name="filter-item-lists"></a>Filtrer des listes d’éléments
+
 Le traitement par lots peut être utilisé pour filtrer certains éléments d’une liste d’éléments avant de la passer à une tâche. Par exemple, le filtrage sur les valeurs de métadonnées d’éléments connues `Extension` vous permet d’exécuter une tâche seulement sur des fichiers avec une extension spécifique.
 
 L’exemple suivant montre comment diviser une liste d’éléments en lots en fonction des métadonnées des éléments, puis filtrer ces lots quand ils sont passés dans une tâche. La liste d’éléments `ExampColl` est divisée en trois lots en fonction des métadonnées de l’élément `Number`. L’attribut `Condition` de la tâche spécifie que seuls les lots avec une valeur de métadonnées d’élément `Number` égale à `2` doivent être passés dans la tâche.
@@ -218,6 +223,7 @@ Items in ExampColl: Item2;Item5
 ```
 
 ## <a name="see-also"></a>Voir aussi
+
 - [Métadonnées d’élément connues](../msbuild/msbuild-well-known-item-metadata.md)
 - [Item, élément (MSBuild)](../msbuild/item-element-msbuild.md)
 - [ItemMetadata, élément (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)

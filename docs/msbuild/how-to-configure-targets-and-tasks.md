@@ -8,20 +8,23 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f8f1bc76789ef80c1138efb94bda42442702c05
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: fe2955feb50a28e5ba631cdeddd169973a42ed25
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596344"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633887"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>Guide pratique pour configurer les cibles et les tâches
+
+Des tâches MSBuild sélectionnées peuvent être définies pour s’exécuter dans l’environnement qu’elles ciblent, quel que soit l’environnement de l’ordinateur de développement. Par exemple, quand vous utilisez un ordinateur 64 bits pour générer une application ciblant une architecture 32 bits, les tâches sélectionnées sont exécutées dans un processus 32 bits.
 Des tâches MSBuild sélectionnées peuvent être définies pour s’exécuter dans l’environnement qu’elles ciblent, quel que soit l’environnement de l’ordinateur de développement. Par exemple, quand vous utilisez un ordinateur 64 bits pour générer une application ciblant une architecture 32 bits, les tâches sélectionnées sont exécutées dans un processus 32 bits.
 
 > [!NOTE]
 > Si une tâche de génération est écrite dans un langage .NET, comme Visual C# ou Visual Basic, et qu’elle n’utilise pas des ressources natives ou des outils natifs, elle est exécutée dans un contexte cible sans adaptation.
 
 ## <a name="usingtask-attributes-and-task-parameters"></a>Attributs UsingTask et paramètres de tâche
+
 Les attributs `UsingTask` suivants affectent toutes les opérations d’une tâche dans un processus de génération spécifique :
 
 - L’attribut `Runtime`, s’il est présent, définit la version du common language runtime (CLR) et peut prendre une des valeurs suivantes : `CLR2`, `CLR4`, `CurrentRuntime` ou `*` (n’importe quel runtime).
@@ -74,6 +77,7 @@ Avant que MSBuild exécute une tâche, il recherche un attribut `UsingTask` qui 
 ```
 
 ## <a name="task-factories"></a>Fabriques de tâches
+
 Avant d’exécuter une tâche, MSBuild vérifie si elle est désignée pour s’exécuter dans le contexte logiciel actif. Si la tâche est bien désignée pour cela, MSBuild la passe à AssemblyTaskFactory, qui s’exécute dans le processus actif ; dans le cas contraire, MSBuild passe la tâche à TaskHostFactory, qui exécute la tâche dans un processus qui correspond au contexte cible. Même si le contexte actif et le contexte cible correspondent, vous pouvez forcer une tâche à s’exécuter hors processus (pour l’isolation, la sécurité ou pour d’autres raisons) en définissant `TaskFactory` sur `TaskHostFactory`.
 
 ```xml
@@ -84,6 +88,7 @@ Avant d’exécuter une tâche, MSBuild vérifie si elle est désignée pour s�
 ```
 
 ## <a name="phantom-task-parameters"></a>Paramètres de tâche fantôme
+
 Comme tous les autres paramètres de tâche, `MSBuildRuntime` et `MSBuildArchitecture` peuvent être définis à partir de propriétés de génération.
 
 ```xml
@@ -108,4 +113,5 @@ Les paramètres `MSBuildRuntime` et `MSBuildArchitecture` représentent le moyen
 > Les paramètres de tâche sont évalués dans le contexte du nœud parent et non dans le contexte de l’hôte de tâche. Les variables d’environnement qui dépendent du runtime ou de l’architecture (par exemple, l’emplacement des *fichiers programme*) correspondent à la valeur associée au nœud parent. Toutefois, si la même variable d’environnement est lue directement par la tâche, elle est correctement évaluée dans le contexte de l’hôte de tâche.
 
 ## <a name="see-also"></a>Voir aussi
+
 - [Configurer les cibles et les tâches](../msbuild/configuring-targets-and-tasks.md)

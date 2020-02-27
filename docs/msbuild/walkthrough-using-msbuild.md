@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d874d8b9c96cc8cc58466bb42d8ac189e1aabc11
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c3e3f0ec3938136370daf15954d8c13da5905ba4
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75567292"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631079"
 ---
 # <a name="walkthrough-use-msbuild"></a>Procédure pas à pas : utiliser MSBuild
 
@@ -40,12 +40,12 @@ Vous pouvez exécuter MSBuild à partir de Visual Studio ou à partir de la **f
     ::: moniker range=">=vs-2019"
     Appuyez sur **Échap** pour fermer la fenêtre de démarrage. Tapez **Ctrl+Q** pour ouvrir la zone de recherche, tapez **winforms**, puis choisissez **Créer une application Windows Forms (.NET Framework)** . Dans la boîte de dialogue qui apparaît, choisissez **Créer**.
 
-    Dans la zone **Nom**, tapez `BuildApp`. Entrez un **Emplacement** pour la solution, par exemple, *D :\\* . Acceptez les valeurs par défaut de **Solution**, **Nom de la solution** (**BuildApp**) et **Framework**.
+    Dans le champ **Nom**, saisissez `BuildApp`. Entrez un **Emplacement** pour la solution, par exemple, *D :\\* . Acceptez les valeurs par défaut de **Solution**, **Nom de la solution** (**BuildApp**) et **Framework**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**. Dans le volet gauche de la boîte de dialogue **Nouveau projet**, développez **Visual C#**  > **Windows Desktop**, puis choisissez **Application Windows Forms (.NET Framework)** . Choisissez ensuite **OK**.
 
-    Dans la zone **Nom**, tapez `BuildApp`. Entrez un **Emplacement** pour la solution, par exemple, *D :\\* . Acceptez les valeurs par défaut des options **Créer le répertoire pour la solution** (sélectionnée), **Ajouter au contrôle de code source** (non sélectionnée) et **Nom de la solution** (**BuildApp**).
+    Dans le champ **Nom**, saisissez `BuildApp`. Entrez un **Emplacement** pour la solution, par exemple, *D :\\* . Acceptez les valeurs par défaut des options **Créer le répertoire pour la solution** (sélectionnée), **Ajouter au contrôle de code source** (non sélectionnée) et **Nom de la solution** (**BuildApp**).
     ::: moniker-end
 
 1. Cliquez sur **OK** ou **Créer** pour créer le fichier projet.
@@ -121,7 +121,7 @@ MSBuild effectue le suivi des cibles d’une génération et garantit que chaque
 
 3. Enregistrez le fichier projet.
 
-La tâche Message est l’une des nombreuses tâches fournies avec MSBuild. Pour obtenir la liste complète des tâches disponibles et les informations sur leur utilisation, consultez l’article [Informations de référence sur les tâches MSBuild](../msbuild/msbuild-task-reference.md).
+La tâche Message est l’une des nombreuses tâches fournies avec MSBuild. Pour obtenir la liste complète des tâches disponibles et des informations sur leur utilisation, voir [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md).
 
 La tâche Message prend la valeur de chaîne de l’attribut Text en tant qu’entrée et l’affiche sur le périphérique de sortie. La cible HelloWorld exécute la tâche Message à deux reprises : tout d’abord pour afficher « Hello », puis pour afficher « World ».
 
@@ -160,7 +160,7 @@ La tâche Message prend la valeur de chaîne de l’attribut Text en tant qu’e
 
  En alternant entre l’éditeur de code et la fenêtre Commande, vous pouvez modifier le fichier projet et observer rapidement les résultats.
 
-## <a name="build-properties"></a>Propriétés de build
+## <a name="build-properties"></a>Propriétés de la build
 
  Les propriétés de génération sont des paires nom-valeur qui guident la génération. Plusieurs propriétés de génération sont déjà définies en haut du fichier projet :
 
@@ -175,7 +175,7 @@ La tâche Message prend la valeur de chaîne de l’attribut Text en tant qu’e
 </PropertyGroup>
 ```
 
- Toutes les propriétés sont des éléments enfants des éléments PropertyGroup. Le nom de la propriété est le nom de l’élément enfant, et la valeur de la propriété est l’élément de texte de l’élément enfant. Par exemple :
+ Toutes les propriétés sont des éléments enfants des éléments PropertyGroup. Le nom de la propriété est le nom de l’élément enfant, et la valeur de la propriété est l’élément de texte de l’élément enfant. Par exemple,
 
 ```xml
 <TargetFrameworkVersion>v15.0</TargetFrameworkVersion>
@@ -183,7 +183,7 @@ La tâche Message prend la valeur de chaîne de l’attribut Text en tant qu’e
 
  définit la propriété nommée TargetFrameworkVersion, en lui attribuant la valeur de chaîne « v15.0 ».
 
- Les propriétés de génération peuvent être redéfinies à tout moment. If
+ Les propriétés de génération peuvent être redéfinies à tout moment. Si
 
 ```xml
 <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
@@ -192,6 +192,7 @@ La tâche Message prend la valeur de chaîne de l’attribut Text en tant qu’e
  apparaît plus loin dans le fichier projet ou dans un fichier importé ultérieurement dans le fichier projet, TargetFrameworkVersion prend la nouvelle valeur « v3.5 ».
 
 ## <a name="examine-a-property-value"></a>Examiner une valeur de propriété
+
  Pour obtenir la valeur d’une propriété, utilisez la syntaxe suivante, où PropertyName est le nom de la propriété :
 
 ```xml
@@ -243,7 +244,7 @@ $(PropertyName)
 
 ### <a name="conditional-properties"></a>Propriétés conditionnelles
 
- Plusieurs propriétés, comme la propriété Configuration, sont définies de manière conditionnelle, autrement dit, l’attribut Condition s’affiche dans l’élément de propriété. Les propriétés conditionnelles sont définies ou redéfinies uniquement si la condition a la valeur « true ». Notez que les propriétés non définies ont la valeur par défaut d’une chaîne vide. Par exemple :
+ Plusieurs propriétés, comme la propriété Configuration, sont définies de manière conditionnelle, autrement dit, l’attribut Condition s’affiche dans l’élément de propriété. Les propriétés conditionnelles sont définies ou redéfinies uniquement si la condition a la valeur « true ». Notez que les propriétés non définies ont la valeur par défaut d’une chaîne vide. Par exemple,
 
 ```xml
 <Configuration   Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -315,7 +316,7 @@ Pour plus d’informations, consultez l’article [Caractères spéciaux MSBuild
 
  Un élément est une information, généralement un nom de fichier, qui est utilisée comme entrée dans le système de génération. Par exemple, une collection d’éléments représentant des fichiers sources peut être transmise à une tâche nommée Compile pour les compiler dans un assembly.
 
- Tous les éléments sont des éléments enfants des éléments ItemGroup. Le nom de l’élément est le nom de l’élément enfant, et la valeur de l’élément est la valeur de l’attribut Include de l’élément enfant. Les valeurs des éléments du même nom sont collectées dans les types d’élément de ce nom.  Par exemple :
+ Tous les éléments sont des éléments enfants des éléments ItemGroup. Le nom de l’élément est le nom de l’élément enfant, et la valeur de l’élément est la valeur de l’attribut Include de l’élément enfant. Les valeurs des éléments du même nom sont collectées dans les types d’élément de ce nom.  Par exemple,
 
 ```xml
 <ItemGroup>
@@ -334,7 +335,7 @@ Pour plus d’informations, consultez l’article [Caractères spéciaux MSBuild
 </ItemGroup>
 ```
 
-Pour plus d’informations, consultez l’article [Éléments MSBuild](../msbuild/msbuild-items.md).
+Pour plus d’informations, consultez l’article [Éléments](../msbuild/msbuild-items.md).
 
 > [!NOTE]
 > Les chemins d’accès aux fichiers sont relatifs au dossier contenant le fichier projet MSBuild.
@@ -411,7 +412,8 @@ Modifiez la tâche Message afin d’utiliser des retours chariot et des sauts de
     ```
 
 ### <a name="include-exclude-and-wildcards"></a>Caractères génériques et attributs Include et Exclude
- Vous pouvez utiliser les caractères génériques « * », « \*\* » et « ? » avec l’attribut Include pour ajouter des éléments à un type d’élément. Par exemple :
+
+ Vous pouvez utiliser les caractères génériques « * », « \*\* » et « ? » avec l’attribut Include pour ajouter des éléments à un type d’élément. Par exemple,
 
 ```xml
 <Photos Include="images\*.jpeg" />
@@ -425,7 +427,7 @@ Modifiez la tâche Message afin d’utiliser des retours chariot et des sauts de
 
  ajoute tous les fichiers pourvus de l’extension de fichier *.jpeg* du dossier *images* et de l’ensemble de ses sous-dossiers, au type d’élément Photos. Pour plus d’informations, consultez [Guide pratique pour sélectionner des fichiers dans une build](../msbuild/how-to-select-the-files-to-build.md).
 
- Notez que les éléments sont ajoutés au type d’élément à mesure qu’ils sont déclarés. Par exemple :
+ Notez que les éléments sont ajoutés au type d’élément à mesure qu’ils sont déclarés. Par exemple,
 
 ```xml
 <Photos Include="images\*.jpeg" />
@@ -438,7 +440,7 @@ Modifiez la tâche Message afin d’utiliser des retours chariot et des sauts de
 <Photos Include="images\*.jpeg;images\*.gif" />
 ```
 
- Vous pouvez exclure un élément d’un type d’élément avec l’attribut Exclude. Par exemple :
+ Vous pouvez exclure un élément d’un type d’élément avec l’attribut Exclude. Par exemple,
 
 ```xml
 <Compile Include="*.cs" Exclude="*Designer*">
@@ -446,7 +448,7 @@ Modifiez la tâche Message afin d’utiliser des retours chariot et des sauts de
 
  ajoute tous les fichiers portant l’extension de fichier  *.cs* au type d’élément Compile, à l’exception des fichiers dont les noms contiennent la chaîne *Designer*. Pour plus d’exemples, consultez [Guide pratique pour exclure des fichiers de la build](../msbuild/how-to-exclude-files-from-the-build.md).
 
-L’attribut Exclude affecte uniquement les éléments ajoutés par l’attribut Include dans l’élément Item qui les contient. Par exemple :
+L’attribut Exclude affecte uniquement les éléments ajoutés par l’attribut Include dans l’élément Item qui les contient. Par exemple,
 
 ```xml
 <Compile Include="*.cs" />
@@ -486,6 +488,7 @@ n’exclut pas le fichier *Form1.cs*, qui a été ajouté dans l’élément Ite
     ```
 
 ## <a name="item-metadata"></a>Métadonnées d’élément
+
  Outre les informations collectées à partir des attributs Include et Exclude, les éléments peuvent contenir des métadonnées. Ces métadonnées peuvent être utilisées par les tâches qui requièrent plus d’informations sur les éléments que leur seule valeur.
 
  Les métadonnées d’élément sont déclarées dans le fichier projet en créant un élément avec le nom des métadonnées comme élément enfant de l’élément. Un élément peut comporter zéro ou plusieurs valeurs de métadonnées. Par exemple, l’élément CSFile suivant contient les métadonnées Culture de valeur « Fr » :

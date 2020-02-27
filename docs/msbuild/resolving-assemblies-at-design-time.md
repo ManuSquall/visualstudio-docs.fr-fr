@@ -10,20 +10,23 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d46b2042755df9f9f0e1abcb43c07a5318c92593
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 69f5ba2627e2d659665fa0bd3fbf706f9cad5573
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595148"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632561"
 ---
 # <a name="resolve-assemblies-at-design-time"></a>Résoudre des assemblys au moment du design
+
 Quand vous ajoutez une référence à un assembly par l’intermédiaire de l’onglet **.NET** de la boîte de dialogue **Ajouter une référence**, la référence pointe vers un assembly de référence intermédiaire, autrement dit un assembly qui contient toutes les informations de type et de signature, mais pas nécessairement du code. L’onglet **.NET** liste les assemblys de référence qui correspondent aux assemblys runtime de .NET Framework. Il présente aussi ceux qui correspondent aux assemblys runtime des dossiers AssemblyFoldersEx inscrits et utilisés par des tiers.
 
 ## <a name="multi-targeting"></a>Multi-ciblage
- [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] vous permet de cibler des versions du .NET Framework qui s’exécutent sur le Common Language Runtime (CLR) version 2.0 ou version 4. Il s’agit des versions .NET Framework 2.0, 3.0, 3.5, 4, 4.5 et 4.5.1, et des versions Silverlight 1.0, 2.0 et 3.0. Si une nouvelle version du .NET Framework basée sur le CLR version 2.0 ou version 4 est publiée, le Framework peut être installé à l’aide d’un pack de ciblage, et il apparaîtra automatiquement en tant que cible dans Visual Studio.
+
+ Visual Studio vous permet de cibler des versions du .NET Framework qui s’exécutent sur plusieurs versions du .NET Framework. Quand une nouvelle version de .NET Framework est publiée, l’infrastructure peut être installée à l’aide d’un pack de ciblage, et elle apparaît automatiquement en tant que cible dans Visual Studio.
 
 ## <a name="how-type-resolution-works"></a>Fonctionnement de la résolution de type
+
  Au moment de l’exécution, le CLR résout les types dans l’assembly en recherchant dans le GAC, le répertoire *bin* et dans tous les chemins d’accès de détection. Ceci est géré par le chargeur de fusion. Mais comment le chargeur de fusion sait-il ce qu’il doit rechercher ? Cela dépend d’une résolution effectuée au moment du design, lors de la génération de l’application.
 
  Pendant la génération, le compilateur résout les types d’applications à l’aide d’assemblys de référence. Dans les versions 2.0, 3.0, 3.5, 4, 4.5 et 4.5.1 de .NET Framework, les assemblys de référence sont installés lors de l’installation de .NET Framework.

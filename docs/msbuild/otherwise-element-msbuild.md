@@ -18,17 +18,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 460a02b3e2115c7ccb91258ffe960668e64fb363
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 384886ad4292661648f5cbfde1a583d8d75b1c03
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594840"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633042"
 ---
 # <a name="otherwise-element-msbuild"></a>Élément Otherwise (MSBuild)
+
 Spécifie le bloc de code à exécuter si et seulement si les conditions de tous les éléments `When` correspondent à la valeur `false`.
 
- \<projet > \<choisissez > \<lorsque > \<choisir >... \<>...
+ \<projet > \<choisissez > \<lorsque > \<choisir >... \<>...\<
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -41,31 +42,35 @@ Spécifie le bloc de code à exécuter si et seulement si les conditions de tous
 ```
 
 ## <a name="attributes-and-elements"></a>Attributs et éléments
+
  Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.
 
 ### <a name="attributes"></a>Attributs
- Aucun.
+
+ None.
 
 ### <a name="child-elements"></a>Éléments enfants
 
 |Élément|Description|
 |-------------|-----------------|
-|[Choose](../msbuild/choose-element-msbuild.md)|Élément facultatif.<br /><br /> Évalue les éléments enfants pour sélectionner une section de code à exécuter. Un élément `Otherwise` peut ne contenir aucun élément `Choose` ou en contenir plusieurs.|
-|[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Élément facultatif.<br /><br /> Contient un ensemble d’éléments [Item](../msbuild/item-element-msbuild.md) définis par l’utilisateur. Un élément `Otherwise` peut ne contenir aucun élément `ItemGroup` ou en contenir plusieurs.|
-|[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|Élément facultatif.<br /><br /> Contient un ensemble d’éléments [Property](../msbuild/property-element-msbuild.md) définis par l’utilisateur. Un élément `Otherwise` peut ne contenir aucun élément `PropertyGroup` ou en contenir plusieurs.|
+|[Choose](../msbuild/choose-element-msbuild.md)|Élément facultatif.<br /><br /> Évalue des éléments enfants pour sélectionner une section de code à exécuter. Un élément `Choose` peut ne contenir aucun élément `Otherwise` ou en contenir plusieurs.|
+|[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Élément facultatif.<br /><br /> Contient un ensemble d’éléments [Item](../msbuild/item-element-msbuild.md) définis par l’utilisateur. Un élément `ItemGroup` peut ne contenir aucun élément `Otherwise` ou en contenir plusieurs.|
+|[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|Élément facultatif.<br /><br /> Contient un ensemble d’éléments [Property](../msbuild/property-element-msbuild.md) définis par l’utilisateur. Un élément `PropertyGroup` peut ne contenir aucun élément `Otherwise` ou en contenir plusieurs.|
 
 ### <a name="parent-elements"></a>Éléments parents
 
 |Élément|Description|
 |-------------|-----------------|
-|[Choose](../msbuild/choose-element-msbuild.md)|Évalue les éléments enfants pour sélectionner une section de code à exécuter.|
+|[Choose](../msbuild/choose-element-msbuild.md)|Évalue des éléments enfants pour sélectionner une section de code à exécuter.|
 
 ## <a name="remarks"></a>Notes
- Un élément `Choose` ne peut comprendre qu’un seul élément `Otherwise` qui doit figurer en dernière position.
+
+ Un élément `Otherwise` ne peut comprendre qu’un seul élément `Choose` qui doit figurer en dernière position.
 
  Les éléments `Choose`, `When` et `Otherwise` sont utilisés ensemble pour permettre la sélection d’une section de code spécifique à exécuter parmi plusieurs options possibles. Pour plus d’informations, consultez [Constructions conditionnelles](../msbuild/msbuild-conditional-constructs.md).
 
 ## <a name="example"></a>Exemple
+
  Le projet suivant utilise l’élément `Choose` pour sélectionner l’ensemble de valeurs de propriété à définir dans les éléments `When`. Si les attributs `Condition` des deux éléments `When` s’évaluent à `false`, les valeurs des propriétés dans l’élément `Otherwise` sont définies.
 
 ```xml
@@ -114,5 +119,6 @@ Spécifie le bloc de code à exécuter si et seulement si les conditions de tous
 ```
 
 ## <a name="see-also"></a>Voir aussi
+
 - [Constructions conditionnelles](../msbuild/msbuild-conditional-constructs.md)
 - [Informations de référence sur le schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)

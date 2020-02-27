@@ -17,17 +17,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: adac07fff84bf0a447875b7084a3003e61a9767d
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: d3225777c020272a24ac124bf6d039c2154e2ff3
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77578175"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77630949"
 ---
 # <a name="wpf-targets-files"></a>Fichiers .Targets WPF
-[!INCLUDE[TLA#tla_winclient](../misc/includes/tlasharptla_winclient_md.md)]étend [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)] en ajoutant un ensemble de tâches propres à [!INCLUDE[TLA2#tla_wpf](../msbuild/includes/tla2sharptla_wpf_md.md)] qui sont regroupées dans un fichier *.targets* spécial, *Microsoft.WinFX.targets*. Ce fichier combine l’ensemble des tâches [!INCLUDE[TLA2#tla_msbuild](../msbuild/includes/tla2sharptla_msbuild_md.md)] qui sont nécessaires pour créer un projet [!INCLUDE[TLA2#tla_msbuild](../msbuild/includes/tla2sharptla_msbuild_md.md)] dans [!INCLUDE[TLA#tla_winclient](../misc/includes/tlasharptla_winclient_md.md)].
+
+Windows Presentation Foundation (WPF) étend MSBuild en ajoutant un ensemble de tâches spécifiques à WPF qui sont combinées dans un fichier *. targets* spécial, *Microsoft. WinFX. targets*. Ce fichier combine l’ensemble des tâches MSBuild requises pour générer un projet MSBuild dans WPF.
 
 ## <a name="see-also"></a>Voir aussi
+
 - [Fichiers .targets MSBuild](../msbuild/msbuild-dot-targets-files.md)
 - [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)
 - [Génération d’une application WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)

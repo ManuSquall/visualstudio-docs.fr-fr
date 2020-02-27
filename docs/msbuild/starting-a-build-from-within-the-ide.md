@@ -10,22 +10,25 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01ce9401174a26d58b7ef88d536a24bfb9017154
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: f8c4792590565c027a316ed95abb067faa30f5dc
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75595083"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632119"
 ---
 # <a name="start-a-build-from-within-the-ide"></a>Démarrer une build à partir de l’environnement IDE
+
 Les systèmes de projet personnalisés doivent utiliser <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> pour démarrer des builds. Cet article explique les raisons de cette exigence et décrit la procédure.
 
 ## <a name="parallel-builds-and-threads"></a>Builds et threads parallèles
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] autorise les builds parallèles, ce qui nécessite une médiation pour l’accès aux ressources communes. Les systèmes de projet peuvent exécuter des builds en mode asynchrone, mais ils ne doivent pas appeler de fonctions de génération à partir des rappels.
+
+ Visual Studio autorise les builds parallèles, ce qui nécessite une médiation pour l’accès aux ressources communes. Les systèmes de projet peuvent exécuter des builds en mode asynchrone, mais ils ne doivent pas appeler de fonctions de génération à partir des rappels.
 
  Si le système de projet modifie des variables d’environnement, il doit définir le NodeAffinity de la build sur OutOfProc. En raison de cette exigence, il n’est pas possible d’utiliser des objets hôtes, puisqu’ils exigent le nœud in-process.
 
 ## <a name="use-ivsbuildmanageraccessor"></a>Utiliser IVSBuildManagerAccessor
+
  Le code ci-dessous présente une méthode qui peut être utilisée par un système de projet pour démarrer une build :
 
 ```csharp

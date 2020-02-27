@@ -12,17 +12,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c55033d253b5c7dfeb2bed968f2418637ca3f0d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 1914f709a69dbb120e4439ddceeda8b70ad570b4
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75576054"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633861"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>Guide pratique pour exclure des fichiers de la build
+
 Dans un fichier projet, vous pouvez utiliser des caractères génériques pour inclure tous les fichiers d’un répertoire ou un ensemble imbriqué de répertoires comme des entrées d’une génération. Toutefois, il se peut que vous ne souhaitiez pas inclure un fichier du répertoire ou un répertoire d’un ensemble imbriqué de répertoires comme entrée d’une génération. Vous pouvez explicitement exclure ce fichier ou ce répertoire de la liste d’entrées. Il peut également s’agir d’un fichier d’un projet que vous ne souhaitez inclure que dans certaines conditions. Vous pouvez déclarer explicitement les conditions dans lesquelles un fichier est inclus dans une génération.
 
 ## <a name="exclude-a-file-or-directory-from-the-inputs-for-a-build"></a>Exclure un fichier ou un répertoire des entrées d’une build
+
  Les listes d’éléments constituent les fichiers d’entrée d’une génération. Les éléments que vous souhaitez inclure sont déclarés séparément ou en tant que groupe à l’aide de l’attribut `Include`. Par exemple :
 
 ```xml
@@ -42,7 +44,7 @@ Dans un fichier projet, vous pouvez utiliser des caractères génériques pour i
     <CSFile Include="*.cs" Exclude="Form2.cs"/>
     ```
 
-    ou
+    or
 
     ```xml
     <VBFile Include="*.vb" Exclude="Form2.vb"/>
@@ -56,7 +58,7 @@ Dans un fichier projet, vous pouvez utiliser des caractères génériques pour i
     <CSFile Include="*.cs" Exclude="Form2.cs;Form3.cs"/>
     ```
 
-    ou
+    or
 
     ```xml
     <VBFile Include="*.vb" Exclude="Form2.vb;Form3.vb"/>
@@ -76,6 +78,7 @@ Dans un fichier projet, vous pouvez utiliser des caractères génériques pour i
     > Vous devez spécifier le chemin d’accès pour les deux attributs. Si vous utilisez un chemin d’accès absolu pour spécifier les emplacements des fichiers dans l’attribut `Include`, vous devez également utiliser un chemin d’accès absolu dans l’attribut `Exclude` ; si vous utilisez un chemin d’accès relatif dans l’attribut `Include`, vous devez également utiliser un chemin d’accès relatif dans l’attribut `Exclude`.
 
 ## <a name="use-conditions-to-exclude-a-file-or-directory-from-the-inputs-for-a-build"></a>Utiliser des conditions pour exclure un fichier ou un répertoire des entrées d’une build
+
  Si vous souhaitez inclure des éléments, par exemple, dans une version Debug, mais pas dans une version Release, vous pouvez utiliser l’attribut `Condition` pour spécifier les conditions dans lesquelles inclure l’élément.
 
 #### <a name="to-include-the-file-formulavb-only-in-release-builds"></a>Pour inclure le fichier *Formula.vb* uniquement dans les versions Release
@@ -89,6 +92,7 @@ Dans un fichier projet, vous pouvez utiliser des caractères génériques pour i
     ```
 
 ## <a name="example"></a>Exemple
+
  L’exemple de code suivant génère un projet avec l’ensemble des fichiers *.cs* du répertoire à l’exception du fichier *Form2.cs*.
 
 ```xml
@@ -123,6 +127,7 @@ Dans un fichier projet, vous pouvez utiliser des caractères génériques pour i
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Éléments MSBuild](../msbuild/msbuild-items.md)
+
+- [Éléments](../msbuild/msbuild-items.md)
 - [MSBuild](../msbuild/msbuild.md)
 - [Guide pratique pour sélectionner des fichiers dans une build](../msbuild/how-to-select-the-files-to-build.md)

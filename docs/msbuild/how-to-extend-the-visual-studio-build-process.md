@@ -14,22 +14,26 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 995bf368d367d51a3d38e02dbab2d6e55ff4ab13
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: cca0c55951d4928347528814d043bb8a7c55be9a
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75575924"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633848"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Guide pratique pour étendre le processus de génération Visual Studio
-Le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] processus de génération est défini par une série de fichiers [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] *. targets* importés dans votre fichier projet. Parmi ces fichiers importés, *Microsoft.Common.targets* peut être étendu de manière à exécuter des tâches personnalisées à différentes étapes du processus de génération. Cet article décrit deux méthodes que vous pouvez utiliser pour étendre le processus de génération [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] :
+
+Le processus de génération Visual Studio est défini par une série de fichiers MSBuild *. targets* importés dans votre fichier projet. Parmi ces fichiers importés, *Microsoft.Common.targets* peut être étendu de manière à exécuter des tâches personnalisées à différentes étapes du processus de génération. Cet article décrit deux méthodes que vous pouvez utiliser pour étendre le processus de génération de Visual Studio :
 
 - Substitution de cibles prédéfinies spécifiques définies dans les cibles communes (*Microsoft. Common. targets* ou les fichiers qu’il importe).
 
 - Substitution des propriétés « DependsOn » définies dans les cibles courantes.
+## <a name="override-predefined-targets"></a>Substituer des cibles prédéfinies
 
 ## <a name="override-predefined-targets"></a>Substituer des cibles prédéfinies
-Les cibles courantes contiennent un ensemble de cibles vides prédéfinies qui sont appelées avant et après certaines des cibles majeures dans le processus de génération. Par exemple, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] appelle la cible `BeforeBuild` avant la cible principale `CoreBuild` et appelle la cible `AfterBuild` après la cible `CoreBuild`. Par défaut, les cibles vides dans les cibles courantes ne font rien, mais vous pouvez remplacer leur comportement par défaut en définissant les cibles souhaitées dans un fichier projet qui importe les cibles communes. En substituant les cibles prédéfinies, vous pouvez utiliser les tâches [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pour avoir plus de contrôle sur le processus de génération.
+
+Les cibles courantes contiennent un ensemble de cibles vides prédéfinies qui sont appelées avant et après certaines des cibles majeures dans le processus de génération. Par exemple, MSBuild appelle la cible `BeforeBuild` avant la cible principale du `CoreBuild` et la cible `AfterBuild` après la cible `CoreBuild`. Par défaut, les cibles vides dans les cibles courantes ne font rien, mais vous pouvez remplacer leur comportement par défaut en définissant les cibles souhaitées dans un fichier projet qui importe les cibles communes. En substituant les cibles prédéfinies, vous pouvez utiliser des tâches MSBuild pour mieux contrôler le processus de génération.
+Les cibles courantes contiennent un ensemble de cibles vides prédéfinies qui sont appelées avant et après certaines des cibles majeures dans le processus de génération. Par exemple, MSBuild appelle la cible `BeforeBuild` avant la cible principale du `CoreBuild` et la cible `AfterBuild` après la cible `CoreBuild`. Par défaut, les cibles vides dans les cibles courantes ne font rien, mais vous pouvez remplacer leur comportement par défaut en définissant les cibles souhaitées dans un fichier projet qui importe les cibles communes. En substituant les cibles prédéfinies, vous pouvez utiliser des tâches MSBuild pour mieux contrôler le processus de génération.
 
 > [!NOTE]
 > Les projets de style SDK ont une importation implicite des cibles *après la dernière ligne du fichier projet*. Cela signifie que vous ne pouvez pas remplacer les cibles par défaut, sauf si vous spécifiez vos importations manuellement, comme décrit dans Guide pratique [pour utiliser des kits de développement](how-to-use-project-sdk.md)logiciel (SDK) de projet MSBuild.
@@ -67,7 +71,8 @@ Le tableau suivant répertorie toutes les cibles dans les cibles courantes que v
 |`BeforeResGen`, `AfterResGen`|Les tâches insérées dans l’une de ces cibles sont exécutées avant ou après la génération des ressources.|
 
 ## <a name="override-dependson-properties"></a>Substituer des propriétés DependsOn
-La substitution de cibles prédéfinies est un moyen facile d’étendre le processus de génération. Toutefois, étant donné que [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] évalue la définition des cibles de manière séquentielle, il n’existe aucun moyen d’empêcher un autre projet qui importe votre projet de substituer les cibles que vous avez déjà substituées. Ainsi, par exemple, la dernière cible `AfterBuild` définie dans le fichier projet, une fois que tous les autres projets ont été importés, sera celle utilisée pour la génération.
+
+La substitution de cibles prédéfinies est un moyen simple d’étendre le processus de génération, mais, étant donné que MSBuild évalue la définition des cibles de manière séquentielle, il n’existe aucun moyen d’empêcher un autre projet qui importe votre projet de remplacer les cibles que vous avez déjà cas substitution. Ainsi, par exemple, la dernière cible `AfterBuild` définie dans le fichier projet, une fois que tous les autres projets ont été importés, sera celle utilisée pour la génération.
 
 Vous pouvez vous protéger contre les substitutions involontaires de cibles en substituant les propriétés DependsOn utilisées dans les attributs de `DependsOnTargets` dans les cibles courantes. Par exemple, la cible `Build` contient une valeur d’attribut `DependsOnTargets` égale à `"$(BuildDependsOn)"`. Réfléchissez aux points suivants :
 
@@ -120,13 +125,14 @@ Les projets qui importent vos fichiers projet peuvent substituer ces propriété
 
 ### <a name="commonly-overridden-dependson-properties"></a>Propriétés DependsOn communément substituées
 
-|Nom de propriété|Description|
+|Nom de la propriété|Description|
 |-------------------|-----------------|
 |`BuildDependsOn`|Propriété à substituer si vous souhaitez insérer des cibles personnalisées avant ou après l’intégralité du processus de génération.|
 |`CleanDependsOn`|Propriété à substituer si vous souhaitez nettoyer la sortie de votre processus de génération.|
 |`CompileDependsOn`|Propriété à substituer si vous souhaitez insérer des processus personnalisés avant ou après l’étape de compilation.|
 
 ## <a name="see-also"></a>Voir aussi
+
 - [Intégration Visual Studio](../msbuild/visual-studio-integration-msbuild.md)
 - [Concepts MSBuild](../msbuild/msbuild-concepts.md)
 - [Fichiers .targets](../msbuild/msbuild-dot-targets-files.md)

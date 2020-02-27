@@ -13,20 +13,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d183026ffdfce3ada7fc96c29c83570ee18c694
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 6b7848189c866481e6e97d05d95b5fb97a3d4893
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585217"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633913"
 ---
 # <a name="how-to-clean-a-build"></a>Guide pratique pour nettoyer une build
-Quand vous nettoyez une build, tous les fichiers intermédiaires et de sortie sont supprimés ; seuls les fichiers projet et de composants sont conservés. De nouvelles instances des fichiers intermédiaires et de sortie peuvent alors être générées à partir des fichiers projet et de composants. La bibliothèque de tâches courantes qui est fournie avec [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] inclut une tâche [Exec](../msbuild/exec-task.md) que vous pouvez utiliser pour exécuter des commandes système. Pour plus d’informations sur la bibliothèque de tâches, consultez [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md).
+
+Quand vous nettoyez une build, tous les fichiers intermédiaires et de sortie sont supprimés ; seuls les fichiers projet et de composants sont conservés. De nouvelles instances des fichiers intermédiaires et de sortie peuvent alors être générées à partir des fichiers projet et de composants. 
 
 ## <a name="create-a-directory-for-output-items"></a>Créer un répertoire pour les éléments de sortie
+
  Par défaut, le fichier *.exe* qui est créé quand vous compilez un projet est placé dans le même répertoire que les fichiers projet et les fichiers sources. En général, les éléments de sortie sont cependant créés dans un répertoire distinct.
 
-#### <a name="to-create-a-directory-for-output-items"></a>Pour créer un répertoire pour les éléments de sortie
+### <a name="to-create-a-directory-for-output-items"></a>Pour créer un répertoire pour les éléments de sortie
 
 1. Utilisez l’élément `Property` pour définir l’emplacement et le nom du répertoire. Par exemple, créez un répertoire nommé *BuiltApp* dans le répertoire qui contient les fichiers projet et les fichiers sources :
 
@@ -40,6 +42,7 @@ Quand vous nettoyez une build, tous les fichiers intermédiaires et de sortie so
      ```
 
 ## <a name="remove-the-output-items"></a>Supprimer les éléments de sortie
+
  Avant de créer de nouvelles instances des fichiers intermédiaires et de sortie, vous pouvez si nécessaire effacer toutes les instances précédentes de ces fichiers. Utilisez la tâche [RemoveDir](../msbuild/removedir-task.md) pour supprimer d’un disque un répertoire, ainsi que tous les fichiers et répertoires qu’il contient.
 
 #### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>Pour supprimer un répertoire et tous les fichiers contenus dans le répertoire
@@ -49,6 +52,7 @@ Quand vous nettoyez une build, tous les fichiers intermédiaires et de sortie so
      `<RemoveDir Directories="$(builtdir)" />`
 
 ## <a name="example"></a>Exemple
+
  L’exemple de projet de code suivant contient une nouvelle cible `Clean`, qui utilise la tâche `RemoveDir` pour supprimer un répertoire, ainsi que tous les fichiers et répertoires qu’il contient. De plus, dans cet exemple, la cible `Compile` crée un répertoire distinct pour les éléments de sortie qui sont supprimés quand la build est nettoyée.
 
  `Compile` est défini comme cible par défaut et est donc utilisée automatiquement, sauf si vous spécifiez une ou plusieurs cibles différentes. Vous utilisez le commutateur de ligne de commande **-target** pour spécifier une autre cible. Par exemple :
@@ -100,8 +104,8 @@ Quand vous nettoyez une build, tous les fichiers intermédiaires et de sortie so
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Tâche Exec](../msbuild/exec-task.md)
+
 - [Tâche MakeDir](../msbuild/makedir-task.md)
 - [Tâche RemoveDir](../msbuild/removedir-task.md)
 - [Tâche Csc](../msbuild/csc-task.md)
-- [Cibles MSBuild](../msbuild/msbuild-targets.md)
+- [Cibles](../msbuild/msbuild-targets.md)

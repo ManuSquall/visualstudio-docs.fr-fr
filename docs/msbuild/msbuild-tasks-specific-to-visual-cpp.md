@@ -15,21 +15,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 89f7d8465b2078d4c0c1ce86894edb834581596d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 6393e771f9e9ed862d21397dabacdb3f3808c386
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593822"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633146"
 ---
 # <a name="msbuild-tasks-specific-to-c"></a>Tâches MSBuild spécifiques àC++
-Les tâches fournissent le code exécuté pendant le processus de génération. Lorsque C++ est installé, les tâches suivantes sont disponibles, en plus de celles qui sont installées avec [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Pour plus d’informations, consultez [vueC++d’ensemble de MSBuild ()](/cpp/build/msbuild-visual-cpp-overview).
+
+Les tâches fournissent le code exécuté pendant le processus de génération. Lorsque C++ est installé, les tâches suivantes sont disponibles, en plus de celles qui sont installées avec MSBuild. Pour plus d’informations, consultez [vueC++d’ensemble de MSBuild ()](/cpp/build/msbuild-visual-cpp-overview).
 
  Outre les paramètres pour chaque tâche, chaque tâche a également les paramètres suivants.
 
 | Paramètre | Description |
 |-------------------| - |
-| `Condition` | Paramètre `String` facultatif.<br /><br /> Expression `Boolean` utilisée par le moteur [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] pour déterminer si cette tâche va être exécutée. Pour plus d’informations sur les conditions prises en charge par [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], consultez [Conditions](../msbuild/msbuild-conditions.md). |
+| `Condition` | Paramètre `String` facultatif.<br /><br /> Expression `Boolean` que le moteur MSBuild utilise pour déterminer si cette tâche sera exécutée. Pour plus d’informations sur les conditions prises en charge par MSBuild, consultez [conditions](../msbuild/msbuild-conditions.md). |
 | `ContinueOnError` | Paramètre facultatif. Peut contenir l’une des valeurs suivantes :<br /><br /> -   **WarnAndContinue** ou **true**. En cas d’échec d’une tâche, l’exécution des tâches suivantes de l’élément [Target](../msbuild/target-element-msbuild.md) et de la génération se poursuit, et toutes les erreurs de la tâche sont considérées comme des avertissements.<br />-   **ErrorAndContinue**. En cas d’échec d’une tâche, l’exécution des tâches suivantes de l’élément `Target` et de la génération se poursuit, et toutes les erreurs de la tâche sont considérées comme des erreurs.<br />-   **ErrorAndStop** ou **false** (par défaut). En cas d’échec d’une tâche, les tâches restantes de l’élément `Target` et de la génération ne sont pas exécutées, et tout l’élément `Target` ainsi que la génération sont considérés comme étant en échec.<br /><br /> Les versions de .NET Framework antérieures à 4.5 prenaient en charge uniquement les valeurs `true` et `false`.<br /><br /> Pour plus d’informations, voir [Guide pratique : Ignorer les erreurs dans les tâches](../msbuild/how-to-ignore-errors-in-tasks.md). |
 
 ### <a name="related-topics"></a>Rubriques connexes
@@ -58,7 +59,7 @@ Les tâches fournissent le code exécuté pendant le processus de génération. 
 |[Tâche XDCMake](../msbuild/xdcmake-task.md)|Inclut dans un wrapper l’outil Documentation XML (*xdcmake.exe*), qui fusionne des fichiers de commentaires documentation XML ( *.xdc*) dans un fichier *.xml*.|
 |[Tâche XSD](../msbuild/xsd-task.md)|Inclut dans un wrapper l’outil Définition de schéma XML (*xsd.exe*), qui génère des fichiers de schéma ou de classe à partir d’une source. *Voir la remarque ci-dessous.*|
 |[Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)|Décrit les éléments du système MSBuild.|
-|[Tâches MSBuild](../msbuild/msbuild-tasks.md)|Décrit des tâches, qui sont des unités de code pouvant être combinées pour produire une build.|
+|[Tâches :](../msbuild/msbuild-tasks.md)|Décrit des tâches, qui sont des unités de code pouvant être combinées pour produire une build.|
 |[Écriture de tâches](../msbuild/task-writing.md)|Décrit comment créer une tâche.|
 
 > [!NOTE]

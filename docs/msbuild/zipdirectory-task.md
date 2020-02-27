@@ -22,21 +22,23 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd4bf72509610e9d397e4b208294112fcc0975b4
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8c9a51fe097eb110e44b3f4bd932a26f4efb6ea6
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588328"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77630637"
 ---
 # <a name="zipdirectory-task"></a>Tâche ZipDirectory
+
 Crée une archive *.zip* à partir du contenu d’un répertoire.
 
 >[!NOTE]
 >La tâche `ZipDirectory` n’est disponible qu’à partir de MSBuild 15.8.
 
-## <a name="parameters"></a>Parameters
- Le tableau ci-dessous décrit les paramètres de la tâche `ZipDirectory` .
+## <a name="parameters"></a>Paramètres
+
+ Le tableau ci-dessous décrit les paramètres de la tâche `ZipDirectory`.
 
 |Paramètre|Description|
 |---------------|-----------------|
@@ -45,9 +47,11 @@ Crée une archive *.zip* à partir du contenu d’un répertoire.
 |`SourceDirectory`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem> requis.<br /><br /> Spécifie le répertoire à partir duquel sera créée une archive *.zip*.|
 
 ## <a name="remarks"></a>Notes
- En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension> , qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task> . Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).
+
+ En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Exemple
+
  L’exemple suivant crée une archive *.zip* à partir du répertoire de sortie après la génération d’un projet.
 
 ```xml
@@ -63,5 +67,6 @@ Crée une archive *.zip* à partir du contenu d’un répertoire.
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Tâches MSBuild](../msbuild/msbuild-tasks.md)
+
+- [Tâches :](../msbuild/msbuild-tasks.md)
 - [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)

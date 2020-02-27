@@ -16,14 +16,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 93bbd0ab4ce0d27a270f3672e55173a1488e5910
-ms.sourcegitcommit: f28172c78745d14570e733db5d424f5fae98d139
+ms.openlocfilehash: 6e9320525d770344f131d9e3f04b357de43b5e73
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2020
-ms.locfileid: "75606656"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633094"
 ---
 # <a name="msbuild-well-known-item-metadata"></a>Métadonnées d’éléments connus MSBuild
+
 Le tableau suivant décrit les métadonnées assignées à chaque élément lors de sa création. Dans chaque exemple, la déclaration d’élément suivante a été utilisée pour inclure le fichier *C:\MyProject\Source\Program.cs* dans le projet.
 
 ```xml
@@ -36,7 +37,7 @@ Le tableau suivant décrit les métadonnées assignées à chaque élément lors
 |-------------------|-----------------|
 |%(FullPath)|Contient le chemin complet de l’élément. Par exemple :<br /><br /> *C:\MyProject\Source\Program.cs*|
 |%(RootDir)|Contient le répertoire racine de l’élément. Par exemple :<br /><br /> *C:\\*|
-|%(Filename)|Contient le nom de fichier de l’élément, sans l’extension. Par exemple :<br /><br /> *Program*|
+|%(Filename)|Contient le nom de fichier de l’élément, sans l’extension. Par exemple :<br /><br /> *Programme*|
 |%(Extension)|Contient l’extension de nom de fichier de l’élément. Par exemple :<br /><br /> *.cs*|
 |%(RelativeDir)|Contient le chemin spécifié dans l’attribut `Include`, jusqu’à la dernière barre oblique inverse (\\). Par exemple :<br /><br /> *Source\\*<br /><br /> Si l’attribut `Include` est un chemin d’accès complet, `%(RelativeDir)` commence par le répertoire racine `%(RootDir)`.  Par exemple : <br /><br /> *C:\MyProject\Source\\*|
 |%(Directory)|Contient le répertoire de l’élément, sans le répertoire racine. Par exemple :<br /><br /> *MyProject\\Source\\*|
@@ -47,6 +48,7 @@ Le tableau suivant décrit les métadonnées assignées à chaque élément lors
 |%(AccessedTime)|Contient l’horodatage du dernier accès à l’élément.<br /><br /> `2004-08-14 16:52:36.3168743`|
 
 ## <a name="see-also"></a>Voir aussi
-- [Éléments MSBuild](../msbuild/msbuild-items.md)
+
+- [Éléments](../msbuild/msbuild-items.md)
 - [Traitement par lots](../msbuild/msbuild-batching.md)
 - [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)

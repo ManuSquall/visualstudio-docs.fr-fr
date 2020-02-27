@@ -18,17 +18,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69f6be4c80519b023d3f11c28f3d5f5b2bf8f8e1
-ms.sourcegitcommit: bf2e9d4ff38bf5b62b8af3da1e6a183beb899809
+ms.openlocfilehash: c9effb00c613c5a61a5a8d4d89cbbe5b785601d8
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "77557955"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634277"
 ---
 # <a name="delete-task"></a>Delete (tâche)
+
 Supprime les fichiers spécifiés.
 
 ## <a name="parameters"></a>Paramètres
+
 Le tableau ci-dessous décrit les paramètres de la tâche `Delete`.
 
 |Paramètre|Description|
@@ -38,12 +40,14 @@ Le tableau ci-dessous décrit les paramètres de la tâche `Delete`.
 |`TreatErrorsAsWarnings`|Paramètre `Boolean` facultatif.<br /><br /> Si `true`, les erreurs sont consignées en tant qu’avertissements. La valeur par défaut est `false`.|
 
 ## <a name="remarks"></a>Notes
+
 En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).
 
 > [!WARNING]
 > Soyez prudent lorsque vous utilisez des caractères génériques avec la tâche `Delete`. Vous pouvez facilement supprimer les fichiers incorrects à l’aide d’expressions telles que `$(SomeProperty)\**\*.*` ou `$(SomeProperty)/**/*.*`, en particulier si la propriété a la valeur d’une chaîne vide, auquel cas le paramètre `Files` peut prendre la valeur de la racine de votre lecteur et être supprimé bien plus que ce que vous souhaitiez supprimer.
 
 ## <a name="example"></a>Exemple
+
 L’exemple suivant supprime le fichier *MyApp.pdb*.
 
 ```xml
@@ -60,5 +64,6 @@ L’exemple suivant supprime le fichier *MyApp.pdb*.
 ```
 
 ## <a name="see-also"></a>Voir aussi
+
 - [Tâches :](../msbuild/msbuild-tasks.md)
 - [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)

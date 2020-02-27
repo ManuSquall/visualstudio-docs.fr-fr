@@ -11,14 +11,15 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d5c40af3e60add88948f8f1c5c36abf3b980eca
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: 70ce19a6dcd9c61b0e14d0d88c52072f59f87fb9
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77271175"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77631157"
 ---
 # <a name="walkthrough-create-an-inline-task"></a>Procédure pas à pas : Créer une tâche inline
+
 Les tâches MSBuild sont généralement créées en compilant une classe qui implémente l’interface <xref:Microsoft.Build.Framework.ITask>. À compter du .NET Framework version 4, vous pouvez créer des tâches inline dans le fichier projet. Vous n’êtes pas obligé de créer un assembly distinct pour héberger la tâche. Pour plus d’informations, voir [Tâches inline](../msbuild/msbuild-inline-tasks.md).
 
  Cette procédure pas à pas montre comment créer et exécuter les tâches inline suivantes :
@@ -40,13 +41,12 @@ Pour créer et exécuter les tâches, utilisez Visual Studio et la **fenêtre d�
 3. Utilisez la **fenêtre d’invite de commandes** pour générer le projet et examiner les résultats.
 
 ## <a name="create-and-modify-an-msbuild-project"></a>Créer et modifier un projet MSBuild
+
  Le système de projet Visual Studio est basé sur MSBuild. Vous pouvez donc créer un fichier projet de build à l’aide de Visual Studio. Dans cette section, vous créez un fichier projet Visual C#. (Vous pouvez créer à la place un fichier projet Visual Basic. Dans le contexte de ce didacticiel, la différence entre les deux fichiers projet est mineure.)
 
 #### <a name="to-create-and-modify-a-project-file"></a>Pour créer et modifier un fichier projet
 
-1. Dans le menu **Fichier** de Visual Studio, pointez sur **Nouveau**, puis cliquez sur **Projet**.
-
-2. Dans la boîte de dialogue **Nouveau projet**, sélectionnez le type de projet **Visual C#** , puis le modèle **Application Windows Forms**. Dans le champ **Nom**, saisissez `InlineTasks`. Tapez un **Emplacement** pour la solution, par exemple, *D:\\* . Vérifiez que l’option **Créer un répertoire pour la solution** est sélectionnée, que l’option **Ajouter au contrôle de code source** ne l’est pas et que **Nom de solution** correspond à **InlineTasks**.
+1. Dans Visual Studio, créez un nouveau projet à l' C# aide du modèle d' **application Windows Forms** . Dans le champ **Nom**, saisissez `InlineTasks`. Tapez un **Emplacement** pour la solution, par exemple, *D:\\* . Vérifiez que l’option **Créer un répertoire pour la solution** est sélectionnée, que l’option **Ajouter au contrôle de code source** ne l’est pas et que **Nom de solution** correspond à **InlineTasks**.
 
 3. Cliquez sur **OK** pour créer le fichier projet.
 
@@ -57,6 +57,7 @@ Pour créer et exécuter les tâches, utilisez Visual Studio et la **fenêtre d�
      Le fichier projet s’affiche dans l’éditeur de code.
 
 ## <a name="add-a-basic-hello-task"></a>Ajouter une tâche Hello de base
+
  À présent, ajoutez au fichier projet une tâche de base qui affiche le message « Hello, world! ». Ajoutez également une cible TestBuild par défaut pour appeler la tâche.
 
 #### <a name="to-add-a-basic-hello-task"></a>Ajouter une tâche Hello de base
@@ -88,6 +89,7 @@ Pour créer et exécuter les tâches, utilisez Visual Studio et la **fenêtre d�
    Ce code crée une tâche Inline nommée Hello et n’a pas de paramètres, de références ou de directives de `Using`. La tâche Hello contient une seule ligne de code, qui affiche un message de type Hello sur l’appareil de journalisation par défaut, généralement la fenêtre de console.
 
 ### <a name="run-the-hello-task"></a>Exécuter la tâche Hello
+
  Exécutez MSBuild à l’aide de la **fenêtre d’invite de commandes** pour construire la tâche Hello et traiter la cible TestBuild qui l’appelle.
 
 ##### <a name="to-run-the-hello-task"></a>Pour exécuter la tâche Hello
@@ -108,6 +110,7 @@ Pour créer et exécuter les tâches, utilisez Visual Studio et la **fenêtre d�
    En alternant entre l’éditeur de code et la **fenêtre d’invite de commandes**, vous pouvez modifier le fichier projet et voir rapidement les résultats.
 
 ## <a name="define-the-echo-task"></a>Définir la tâche Echo
+
  Créez une tâche inline qui accepte un paramètre de chaîne et affiche la chaîne sur l’appareil de journalisation par défaut.
 
 #### <a name="to-define-the-echo-task"></a>Pour définir la tâche Echo
@@ -139,6 +142,7 @@ Pour créer et exécuter les tâches, utilisez Visual Studio et la **fenêtre d�
    Ce code définit une tâche inline nommée Echo avec un seul paramètre d’entrée Text obligatoire. Par défaut, les paramètres sont de type System.String. La valeur du paramètre Text est définie quand la cible TestBuild appelle la tâche Echo.
 
 ## <a name="define-the-adder-task"></a>Définir la tâche Adder
+
  Créez une tâche inline qui ajoute deux paramètres entiers et émet leur somme comme propriété MSBuild.
 
 #### <a name="to-define-the-adder-task"></a>Pour définir la tâche Adder
@@ -175,6 +179,7 @@ Pour créer et exécuter les tâches, utilisez Visual Studio et la **fenêtre d�
    Ce code définit une tâche inline nommée Adder avec deux paramètres d’entrée de type entier obligatoires, A et B, et un paramètre de sortie entier, C. La tâche Adder ajoute les deux paramètres d’entrée et retourne la somme dans le paramètre de sortie. La somme est émise en tant que propriété MSBuild `Sum`. Les valeurs des paramètres d’entrée sont définies quand la cible TestBuild appelle la tâche Adder.
 
 ## <a name="define-the-regx-task"></a>Définir la tâche RegX
+
  Créez une tâche inline qui accepte un groupe d’éléments et une expression régulière, et retourne la liste de tous les éléments dont le contenu du fichier correspond à l’expression.
 
 #### <a name="to-define-the-regx-task"></a>Pour définir la tâche RegX
@@ -244,6 +249,7 @@ Pour créer et exécuter les tâches, utilisez Visual Studio et la **fenêtre d�
   Les valeurs des paramètres d’entrée sont définies quand la cible TestBuild appelle la tâche RegX. La tâche RegX lit chaque fichier et retourne la liste des fichiers qui correspondent à l’expression régulière. Cette liste est retournée sous la forme du paramètre de sortie `Result`, qui est émis en tant qu’élément MSBuild `MatchedFiles`.
 
 ### <a name="handle-reserved-characters"></a>Gérer les caractères réservés
+
  L’analyseur MSBuild traite les tâches inline au format XML. Les caractères qui ont une signification réservée au format XML, par exemple « \< » et « > », sont détectés et gérés comme s’il s’agissait de code XML, et non de code source .NET. Pour inclure les caractères réservés dans des expressions de code telles que `Files.Length > 0`, écrivez l’élément `Code` de telle sorte que son contenu figure dans une expression CDATA, comme suit :
 
  ```xml
@@ -257,6 +263,7 @@ Pour créer et exécuter les tâches, utilisez Visual Studio et la **fenêtre d�
 ```
 
 ## <a name="see-also"></a>Voir aussi
+
 - [Tâches inline](../msbuild/msbuild-inline-tasks.md)
 - [Tâches :](../msbuild/msbuild-tasks.md)
 - [Cibles](../msbuild/msbuild-targets.md)

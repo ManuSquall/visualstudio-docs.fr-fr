@@ -10,20 +10,22 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24a769f6d0b9aa847899c02c951921dc77bac21a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: a66164426b760798571fc35e5288158a8dae9943
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592189"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633549"
 ---
 # <a name="logging-in-msbuild"></a>Journalisation dans MSBuild
+
 La journalisation vous permet de surveiller la progression d’une génération. Elle capture dans un fichier journal les événements, messages, avertissements et erreurs liés à la génération.
 
-## <a name="in-this-section"></a>Dans cette section
+## <a name="in-this-section"></a>Contenu de cette section
+
 - [Obtenir des journaux de génération](../msbuild/obtaining-build-logs-with-msbuild.md)
 
- Décrit les différents aspects de la journalisation dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
+ Décrit les différents aspects de la journalisation dans MSBuild.
 
 - [Enregistreurs d’événements de génération](../msbuild/build-loggers.md)
 
@@ -42,4 +44,5 @@ La journalisation vous permet de surveiller la progression d’une génération.
  Décrit la création de journaux de transfert personnalisés.
 
 ## <a name="see-also"></a>Voir aussi
+
 - [Générer plusieurs projets en parallèle](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) Explique comment générer plus rapidement plusieurs projets en les exécutant en parallèle.

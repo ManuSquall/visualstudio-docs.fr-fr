@@ -8,33 +8,35 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b32960d46b4c7ae9b37cfec6cff97eb0540b868a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: c3cccb9bb87d03d1fb285babe2a02cf30cfb9ed9
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596773"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633198"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>Version cible de .NET Framework et plateforme cible MSBuild
+
 Un projet peut être généré pour s’exécuter sur un *framework cible*, qui est une version particulière du .NET Framework, et sur une *plateforme cible*, qui est une architecture logicielle particulière.  Par exemple, vous pouvez cibler une application pour qu’elle s’exécute sur le .NET Framework 2.0, sur une plateforme 32 bits compatible avec la famille de processeurs 802x86 (« x86 »). La combinaison de framework cible et de plateforme cible porte le nom de *contexte cible*.
 
 > [!IMPORTANT]
 > Cet article présente l’ancienne façon de spécifier un framework cible. Les projets de style SDK permettent l’utilisation de différents frameworks cibles, comme .NET Standard. Pour plus d’informations, consultez [Frameworks cibles](/dotnet/standard/frameworks).
 
 ## <a name="target-framework-and-profile"></a>Version cible de .NET Framework et profil cible
+
  Un framework cible est la version particulière du .NET Framework sur laquelle le projet généré doit s’exécuter. La spécification d'une version cible du .NET Framework est nécessaire, car elle active des fonctionnalités du compilateur et des références d'assemblys qui sont spécifiques à cette version du .NET Framework.
 
  Les versions du .NET Framework actuellement disponibles sont les suivantes :
 
 - .NET Framework 2.0 (inclus dans Visual Studio 2005)
 
-- .NET Framework 3.0 (inclus dans [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)])
+- Le .NET Framework 3,0 (inclus dans Windows Vista)
 
-- .NET Framework 3.5 (inclus dans [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)])
+- .NET Framework 3,5 (inclus dans Visual Studio 2008)
 
 - .NET Framework 4.5.2
 
-- .NET Framework 4.6 (inclus dans [!INCLUDE[vs_dev14](../misc/includes/vs_dev14_md.md)])
+- .NET Framework 4,6 (inclus dans Visual Studio 2015)
 
 - .NET Framework 4.6.1
 
@@ -69,7 +71,8 @@ La version cible du .NET Framework est spécifiée dans la propriété `TargetFr
 ```
 
 ## <a name="target-platform"></a>Plateforme cible
- Une *plateforme* est une combinaison de matériel et de logiciel qui définit un environnement d’exécution spécifique. Par exemple :
+
+ Une *plateforme* est une combinaison de matériel et de logiciel qui définit un environnement d’exécution spécifique. Par exemple,
 
 - `x86` désigne un système d'exploitation Windows 32 bits qui s'exécute sur un processeur Intel 80x86 ou son équivalent.
 
@@ -97,4 +100,5 @@ Une *configuration cible* est un sous-ensemble d’une plateforme cible. Par exe
 ```
 
 ## <a name="see-also"></a>Voir aussi
+
 - [Multiciblage](../msbuild/msbuild-multitargeting-overview.md)

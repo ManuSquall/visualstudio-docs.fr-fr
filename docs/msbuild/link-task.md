@@ -30,17 +30,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31bad6dfd0c336e4535e446d1167cb9fd6874972
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 0f954be3a77e42ea4323255f978f6602a70c9725
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592202"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633575"
 ---
 # <a name="link-task"></a>Lier la tâche
+
 Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur de liens lie des bibliothèques et des fichiers objets COFF (Common Object File Format) pour créer un fichier exécutable ( *.exe*) ou une bibliothèque de liens dynamiques (DLL). Pour plus d’informations, consultez [Options de l’éditeur de liens](/cpp/build/reference/linker-options).
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>Paramètres
+
  Le tableau ci-dessous décrit les paramètres de la tâche **Link**. La plupart des paramètres de tâche, et quelques ensembles de paramètres, correspondent à une option de ligne de commande.
 
 - **AdditionalDependencies**
@@ -69,7 +71,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **AdditionalOptions**
 
-  Paramètre de **chaîne** facultatif.
+  Paramètre **String** facultatif.
 
   Liste des options de l’Éditeur de liens indiquées sur la ligne de commande. Par exemple, /\<option1> /\<option2> /\<option#>. Utilisez ce paramètre pour spécifier des options de l’Éditeur de liens qui ne sont pas représentées par un autre paramètre de tâche **Link**.
 
@@ -85,7 +87,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **AllowIsolation**
 
-  Paramètre **Boolean** facultatif.
+  Paramètre **booléen** facultatif.
 
   Si `true`, le système d’exploitation recherche et charge le manifeste. Si `false`, indique que les DLL sont chargées comme s’il n’existait pas de manifeste.
 
@@ -93,7 +95,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **AssemblyDebug**
 
-  Paramètre **Boolean** facultatif.
+  Paramètre **booléen** facultatif.
 
   Si `true`, émet l’attribut **DebuggableAttribute** avec le suivi des informations de débogage, et désactive les optimisations JIT. Si `false`, émet l’attribut **DebuggableAttribute**, mais désactive le suivi des informations de débogage et active les optimisations JIT.
 
@@ -115,7 +117,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **BaseAddress**
 
-  Paramètre de **chaîne** facultatif.
+  Paramètre **String** facultatif.
 
   Définit une adresse de base pour le programme ou la DLL en cours de génération. Spécifiez `{address[,size] | @filename,key}`.
 
@@ -123,7 +125,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **BuildingInIDE**
 
-  Paramètre **Boolean** facultatif.
+  Paramètre **booléen** facultatif.
 
   Si true, indique que MSBuild est appelé à partir de l’IDE. Dans le cas contraire, indique que MSBuild est appelé à partir de la ligne de commande.
 
@@ -131,7 +133,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **CLRImageType**
 
-  Paramètre de **chaîne** facultatif.
+  Paramètre **String** facultatif.
 
   Définit le type d’image CLR (Common Language Runtime).
 
@@ -149,7 +151,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **CLRSupportLastError**
 
-  Paramètre de **chaîne** facultatif.
+  Paramètre **String** facultatif.
 
   Préserve le dernier code d’erreur des fonctions appelées via le mécanisme P/Invoke.
 
@@ -165,7 +167,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **CLRThreadAttribute**
 
-  Paramètre de **chaîne** facultatif.
+  Paramètre **String** facultatif.
 
   Spécifie explicitement l’attribut de thread pour le point d’entrée de votre programme CLR.
 
@@ -181,7 +183,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **CLRUnmanagedCodeCheck**
 
-  Paramètre **Boolean** facultatif.
+  Paramètre **booléen** facultatif.
 
   Spécifie si l’Éditeur de liens applique **SuppressUnmanagedCodeSecurityAttribute** aux appels P/Invoke générés par l’Éditeur de liens à partir du code managé dans les DLL natives.
 
@@ -189,7 +191,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **CreateHotPatchableImage**
 
-  Paramètre de **chaîne** facultatif.
+  Paramètre **String** facultatif.
 
   Prépare une image corrigeable en mémoire.
 
@@ -207,7 +209,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **DataExecutionPrevention**
 
-  Paramètre **Boolean** facultatif.
+  Paramètre **booléen** facultatif.
 
   Si `true`, indique que la compatibilité d’un exécutable avec la fonctionnalité Prévention de l’exécution des données Windows a été testée.
 
@@ -223,15 +225,15 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **DelaySign**
 
-  Paramètre **Boolean** facultatif.
+  Paramètre **booléen** facultatif.
 
-  Si `true`, signe partiellement un assembly. Par défaut, la valeur est définie sur `false`.
+  Si `true`, signe partiellement un assembly. Par défaut, la valeur est `false`.
 
   Pour plus d’informations, consultez [/DELAYSIGN (Signer partiellement un assembly)](/cpp/build/reference/delaysign-partially-sign-an-assembly).
 
 - **Driver**
 
-  Paramètre de **chaîne** facultatif.
+  Paramètre **String** facultatif.
 
   Spécifiez ce paramètre pour générer un pilote en mode noyau Windows NT.
 
@@ -257,7 +259,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **EnableCOMDATFolding**
 
-  Paramètre **Boolean** facultatif.
+  Paramètre **booléen** facultatif.
 
   Si `true`, active le pliage COMDAT identique.
 
@@ -265,7 +267,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **EnableUAC**
 
-  Paramètre **Boolean** facultatif.
+  Paramètre **booléen** facultatif.
 
   Si `true`, indique que les informations de contrôle de compte d’utilisateur sont incorporées dans le manifeste du programme.
 
@@ -273,7 +275,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **EntryPointSymbol**
 
-  Paramètre de **chaîne** facultatif.
+  Paramètre **String** facultatif.
 
   Spécifie une fonction de point d’entrée comme adresse de départ d’un fichier *.exe* ou d’une DLL. Spécifiez un nom de fonction comme valeur du paramètre.
 
@@ -281,7 +283,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **FixedBaseAddress**
 
-  Paramètre **Boolean** facultatif.
+  Paramètre **booléen** facultatif.
 
   Si `true`, crée un programme ou une DLL qui peuvent être chargés uniquement à leur adresse de base préférée.
 
@@ -289,7 +291,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **ForceFileOutput**
 
-  Paramètre de **chaîne** facultatif.
+  Paramètre **String** facultatif.
 
   Indique à l’éditeur de liens de créer un fichier *.exe* ou une DLL valide même si un symbole est référencé sans être défini ou s’il est défini plusieurs fois.
 
@@ -313,7 +315,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **FunctionOrder**
 
-  Paramètre de **chaîne** facultatif.
+  Paramètre **String** facultatif.
 
   Ce paramètre optimise votre programme en plaçant les fonctions empaquetées spécifiées (COMDAT) dans l’image dans un ordre prédéterminé.
 
@@ -321,7 +323,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **GenerateDebugInformation**
 
-  Paramètre **Boolean** facultatif.
+  Paramètre **booléen** facultatif.
 
   Si la valeur est `true`, crée des informations de débogage pour le fichier *.exe* ou la DLL.
 
@@ -329,7 +331,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **GenerateManifest**
 
-  Paramètre **Boolean** facultatif.
+  Paramètre **booléen** facultatif.
 
   Si `true`, crée un fichier manifeste côte à côte.
 
@@ -337,7 +339,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **GenerateMapFile**
 
-  Paramètre **Boolean** facultatif.
+  Paramètre **booléen** facultatif.
 
   Si `true`, crée un *fichier de mappage*. L’extension de nom du fichier de mappage est *.map*.
 
@@ -345,7 +347,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **HeapCommitSize**
 
-  Paramètre de **chaîne** facultatif.
+  Paramètre **String** facultatif.
 
   Spécifie la quantité de mémoire physique sur le tas à allouer à la fois.
 
@@ -353,7 +355,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **HeapReserveSize**
 
-  Paramètre de **chaîne** facultatif.
+  Paramètre **String** facultatif.
 
   Spécifie l’allocation totale des tas dans la mémoire virtuelle.
 
@@ -361,7 +363,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **IgnoreAllDefaultLibraries**
 
-  Paramètre **Boolean** facultatif.
+  Paramètre **booléen** facultatif.
 
   Si `true`, indique à l’Éditeur de liens de supprimer une ou plusieurs bibliothèques par défaut de la liste de recherche des bibliothèques lors de la résolution des références externes.
 
@@ -369,7 +371,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **IgnoreEmbeddedIDL**
 
-  Paramètre **Boolean** facultatif.
+  Paramètre **booléen** facultatif.
 
   Si la valeur est `true`, spécifie que les attributs IDL définis dans le code source ne doivent pas être traités dans un fichier *.idl*.
 
@@ -377,7 +379,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **IgnoreImportLibrary**
 
-  Paramètre **Boolean** facultatif.
+  Paramètre **booléen** facultatif.
 
   Si `true`, spécifie que la bibliothèque d’importation générée par cette configuration ne doit pas être importée dans des projets dépendants.
 
@@ -393,7 +395,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **ImageHasSafeExceptionHandlers**
 
-  Paramètre **Boolean** facultatif.
+  Paramètre **booléen** facultatif.
 
   Si `true`, l’Éditeur de liens produit une image uniquement s’il peut également produire un tableau des gestionnaires d’exceptions sécurisés de l’image.
 
@@ -407,7 +409,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **KeyContainer**
 
-  Paramètre de **chaîne** facultatif.
+  Paramètre **String** facultatif.
 
   Conteneur qui contient la clé d’un assembly signé.
 
@@ -415,7 +417,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **KeyFile**
 
-  Paramètre de **chaîne** facultatif.
+  Paramètre **String** facultatif.
 
   Spécifie un fichier qui contient la clé d’un assembly signé.
 
@@ -423,7 +425,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **LargeAddressAware**
 
-  Paramètre **Boolean** facultatif.
+  Paramètre **booléen** facultatif.
 
   Si `true`, l’application peut gérer des adresses supérieures à 2 gigaoctets.
 
@@ -431,7 +433,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **LinkDLL**
 
-  Paramètre **Boolean** facultatif.
+  Paramètre **booléen** facultatif.
 
   Si `true`, génère une DLL comme fichier de sortie principal.
 
@@ -439,7 +441,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **LinkErrorReporting**
 
-  Paramètre de **chaîne** facultatif.
+  Paramètre **String** facultatif.
 
   Vous permet de signaler les erreurs internes du compilateur (ICE) directement à Microsoft.
 
@@ -457,7 +459,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **LinkIncremental**
 
-  Paramètre **Boolean** facultatif.
+  Paramètre **booléen** facultatif.
 
   Si `true`, active les liens incrémentiels.
 
@@ -465,7 +467,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **LinkLibraryDependencies**
 
-  Paramètre **Boolean** facultatif.
+  Paramètre **booléen** facultatif.
 
   Si la valeur est `true`, spécifie que les sorties de bibliothèque émanant des dépendances du projet sont automatiquement liées.
 
@@ -473,7 +475,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **LinkStatus**
 
-  Paramètre **Boolean** facultatif.
+  Paramètre **booléen** facultatif.
 
   Si `true`, spécifie que l’Éditeur de liens doit afficher un indicateur de progression qui montre le pourcentage d’exécution du lien.
 
@@ -481,7 +483,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **LinkTimeCodeGeneration**
 
-  Paramètre de **chaîne** facultatif.
+  Paramètre **String** facultatif.
 
   Spécifie des options pour l’optimisation guidée par profil.
 
@@ -497,13 +499,13 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
   - **PGUpdate**
 
-    \- **/LTCG : PGUpdate**
+    \- **/LTCG:PGUpdate**
 
   Pour plus d’informations, consultez [/LTCG (Génération de code durant l’édition de liens)](/cpp/build/reference/ltcg-link-time-code-generation).
 
 - **ManifestFile**
 
-  Paramètre de **chaîne** facultatif.
+  Paramètre **String** facultatif.
 
   Remplace le nom du fichier manifeste par défaut par le nom du fichier spécifié.
 
@@ -511,7 +513,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **MapExports**
 
-  Paramètre **Boolean** facultatif.
+  Paramètre **booléen** facultatif.
 
   Si `true`, indique à l’Éditeur de liens d’inclure les fonctions exportées dans un fichier de mappage.
 
@@ -519,13 +521,13 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **MapFileName**
 
-  Paramètre de **chaîne** facultatif.
+  Paramètre **String** facultatif.
 
   Remplace le nom du fichier de mappage par défaut par le nom du fichier spécifié.
 
 - **MergedIDLBaseFileName**
 
-  Paramètre de **chaîne** facultatif.
+  Paramètre **String** facultatif.
 
   Indique le nom et l’extension de nom du fichier *.idl*.
 
@@ -533,7 +535,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **MergeSections**
 
-  Paramètre de **chaîne** facultatif.
+  Paramètre **String** facultatif.
 
   Combine des sections dans une image. Spécifiez `from-section=to-section`.
 
@@ -541,7 +543,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **MidlCommandFile**
 
-  Paramètre de **chaîne** facultatif.
+  Paramètre **String** facultatif.
 
   Spécifiez le nom d’un fichier qui contient les options de ligne de commande MIDL.
 
@@ -549,13 +551,13 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **MinimumRequiredVersion**
 
-  Paramètre de **chaîne** facultatif.
+  Paramètre **String** facultatif.
 
   Spécifie la version minimale requise du sous-système. Les arguments sont des nombres décimaux compris entre 0 et 65 535.
 
 - **ModuleDefinitionFile**
 
-  Paramètre de **chaîne** facultatif.
+  Paramètre **String** facultatif.
 
   Spécifie le nom d’un [fichier de définition de module](/cpp/build/reference/module-definition-dot-def-files).
 
@@ -563,7 +565,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **MSDOSStubFileName**
 
-  Paramètre de **chaîne** facultatif.
+  Paramètre **String** facultatif.
 
   Attache le programme stub MS-DOS spécifié à un programme Win32.
 
@@ -571,7 +573,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **NoEntryPoint**
 
-  Paramètre **Boolean** facultatif.
+  Paramètre **booléen** facultatif.
 
   Si `true`, crée une DLL de ressource uniquement.
 
@@ -585,7 +587,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **OptimizeReferences**
 
-  Paramètre **Boolean** facultatif.
+  Paramètre **booléen** facultatif.
 
   Si `true`, élimine les fonctions et/ou les données qui ne sont jamais référencées.
 
@@ -593,7 +595,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **OutputFile**
 
-  Paramètre de **chaîne** facultatif.
+  Paramètre **String** facultatif.
 
   Remplace le nom et l’emplacement par défaut du programme créé par l’Éditeur de liens.
 
@@ -601,7 +603,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **PerUserRedirection**
 
-  Paramètre **Boolean** facultatif.
+  Paramètre **booléen** facultatif.
 
   Si `true` et si l’inscription de la sortie est activée, force les entrées de Registre écrites dans **HKEY_CLASSES_ROOT** à être redirigées vers **HKEY_CURRENT_USER**.
 
@@ -613,15 +615,15 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **PreventDllBinding**
 
-  Paramètre **Boolean** facultatif.
+  Paramètre **booléen** facultatif.
 
   Si la valeur est `true`, indique à *Bind.exe* que l’image liée ne doit pas être associée.
 
   Pour plus d’informations, consultez [/ALLOWBIND (Éviter la liaison DLL)](/cpp/build/reference/allowbind-prevent-dll-binding).
 
-- **Profile**
+- **Profil**
 
-  Paramètre **Boolean** facultatif.
+  Paramètre **booléen** facultatif.
 
   Si `true`, génère un fichier de sortie utilisable avec le profileur **Outils d’analyse des performances**.
 
@@ -629,7 +631,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **ProfileGuidedDatabase**
 
-  Paramètre de **chaîne** facultatif.
+  Paramètre **String** facultatif.
 
   Spécifie le nom du fichier *.pgd* qui permet de conserver les informations sur le programme en cours d’exécution
 
@@ -637,7 +639,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **ProgramDatabaseFile**
 
-  Paramètre de **chaîne** facultatif.
+  Paramètre **String** facultatif.
 
   Spécifie le nom de la base de données du programme (PDB) créée par l’Éditeur de liens.
 
@@ -645,7 +647,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **RandomizedBaseAddress**
 
-  Paramètre **Boolean** facultatif.
+  Paramètre **booléen** facultatif.
 
   Si `true`, génère une image exécutable qui peut être redéfinie de façon aléatoire au moment du chargement en utilisant la fonctionnalité de *randomisation du format d’espace d’adresse* (ASLR) de Windows.
 
@@ -653,7 +655,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **RegisterOutput**
 
-  Paramètre **Boolean** facultatif.
+  Paramètre **booléen** facultatif.
 
   Si `true`, inscrit la sortie principale de cette génération.
 
@@ -667,7 +669,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **SetChecksum**
 
-  Paramètre **Boolean** facultatif.
+  Paramètre **booléen** facultatif.
 
   Si la valeur est `true`, définit la somme de contrôle dans l’en-tête d’un fichier *.exe*.
 
@@ -675,7 +677,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **ShowProgress**
 
-  Paramètre de **chaîne** facultatif.
+  Paramètre **String** facultatif.
 
   Spécifie le niveau de détail des rapports de progression de l’opération de liaison.
 
@@ -705,7 +707,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **SpecifySectionAttributes**
 
-  Paramètre de **chaîne** facultatif.
+  Paramètre **String** facultatif.
 
   Indique les attributs d’une section. Il remplace les attributs qui ont été définis quand le fichier *.obj* correspondant à la section a été compilé.
 
@@ -713,7 +715,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **StackCommitSize**
 
-  Paramètre de **chaîne** facultatif.
+  Paramètre **String** facultatif.
 
   Spécifie la quantité de mémoire physique contenue dans chaque allocation lorsque de la mémoire supplémentaire est allouée.
 
@@ -721,7 +723,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **StackReserveSize**
 
-  Paramètre de **chaîne** facultatif.
+  Paramètre **String** facultatif.
 
   Spécifie la taille totale d’allocation de piles dans la mémoire virtuelle.
 
@@ -729,7 +731,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **StripPrivateSymbols**
 
-  Paramètre de **chaîne** facultatif.
+  Paramètre **String** facultatif.
 
   Crée un second fichier de base de données du programme (PDB) qui omet les symboles que vous ne souhaitez pas distribuer à vos clients. Spécifiez le nom du second fichier PDB.
 
@@ -737,7 +739,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **SubSystem**
 
-  Paramètre de **chaîne** facultatif.
+  Paramètre **String** facultatif.
 
   Spécifie l'environnement pour l'exécutable.
 
@@ -763,11 +765,11 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
   - **POSIX** -  **/SUBSYSTEM:POSIX**
 
-  Pour plus d’informations, consultez l’article [/SUBSYSTEM (Spécifier le sous-système)](/cpp/build/reference/subsystem-specify-subsystem).
+  Pour plus d’informations, consultez [/SUBSYSTEM (Spécifier le sous-système)](/cpp/build/reference/subsystem-specify-subsystem).
 
 - **SupportNobindOfDelayLoadedDLL**
 
-  Paramètre **Boolean** facultatif.
+  Paramètre **booléen** facultatif.
 
   Si `true`, indique à l’Éditeur de liens de ne pas inclure dans l’image finale de table IAT (Import Address Table).
 
@@ -775,7 +777,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **SupportUnloadOfDelayLoadedDLL**
 
-  Paramètre **Boolean** facultatif.
+  Paramètre **booléen** facultatif.
 
   Si `true`, indique à la fonction d’assistance de chargement différé de prendre en charge le déchargement explicite de la DLL.
 
@@ -783,7 +785,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **SuppressStartupBanner**
 
-  Paramètre **Boolean** facultatif.
+  Paramètre **booléen** facultatif.
 
   Si la valeur est `true`, empêche l'affichage du message de copyright et de numéro de version quand la tâche démarre.
 
@@ -791,7 +793,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **SwapRunFromCD**
 
-  Paramètre **Boolean** facultatif.
+  Paramètre **booléen** facultatif.
 
   Si `true`, indique au système d’exploitation de copier tout d’abord la sortie de l’Éditeur de liens dans un fichier d’échange, puis d’y exécuter l’image.
 
@@ -799,7 +801,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **SwapRunFromNET**
 
-  Paramètre **Boolean** facultatif.
+  Paramètre **booléen** facultatif.
 
   Si `true`, indique au système d’exploitation de copier tout d’abord la sortie de l’Éditeur de liens dans un fichier d’échange, puis d’y exécuter l’image.
 
@@ -807,7 +809,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **TargetMachine**
 
-  Paramètre de **chaîne** facultatif.
+  Paramètre **String** facultatif.
 
   Spécifie la plateforme cible du programme ou de la DLL.
 
@@ -841,7 +843,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **TerminalServerAware**
 
-  Paramètre **Boolean** facultatif.
+  Paramètre **booléen** facultatif.
 
   Si `true`, définit un indicateur dans le champ DllCharacteristics IMAGE_OPTIONAL_HEADER de l’en-tête facultatif de l’image du programme. Si cet indicateur est défini, le serveur Terminal Server n’apportera aucune modification à l’application.
 
@@ -849,13 +851,13 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **TrackerLogDirectory**
 
-  Paramètre de **chaîne** facultatif.
+  Paramètre **String** facultatif.
 
   Spécifie le répertoire du journal de Tracker.
 
 - **TreatLinkerWarningAsErrors**
 
-  Paramètre **Boolean** facultatif.
+  Paramètre **booléen** facultatif.
 
   Si `true`, aucun fichier de sortie n’est créé lorsque l’Éditeur de liens génère un avertissement.
 
@@ -863,7 +865,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **TurnOffAssemblyGeneration**
 
-  Paramètre **Boolean** facultatif.
+  Paramètre **booléen** facultatif.
 
   Si `true`, crée une image du fichier de sortie actif sans générer un assembly .NET Framework.
 
@@ -871,7 +873,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **TypeLibraryFile**
 
-  Paramètre de **chaîne** facultatif.
+  Paramètre **String** facultatif.
 
   Indique le nom et l’extension de nom du fichier *.tlb*. Spécifiez un nom de fichier, ou un chemin d’accès et un nom de fichier.
 
@@ -887,7 +889,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **UACExecutionLevel**
 
-  Paramètre de **chaîne** facultatif.
+  Paramètre **String** facultatif.
 
   Spécifie le niveau d’exécution demandé pour l’application lorsqu’elle est exécutée avec le Contrôle de compte d’utilisateur.
 
@@ -903,7 +905,7 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **UACUIAccess**
 
-  Paramètre **Boolean** facultatif.
+  Paramètre **booléen** facultatif.
 
   Si `true`, l’application ignore les niveaux de protection de l’interface utilisateur et exécute l’entrée vers des fenêtres d’autorisations supérieures sur le Bureau. Dans le cas contraire, `false`.
 
@@ -911,17 +913,18 @@ Encapsule l’outil C++ Microsoft linker, *Link. exe*. L’outil de l’éditeur
 
 - **UseLibraryDependencyInputs**
 
-  Paramètre **Boolean** facultatif.
+  Paramètre **booléen** facultatif.
 
   Si `true`, les entrées de l’outil Générateur de bibliothèques sont utilisées à la place du fichier bibliothèque lors de la liaison des sorties de bibliothèque des dépendances du projet.
 
 - **Version**
 
-  Paramètre de **chaîne** facultatif.
+  Paramètre **String** facultatif.
 
   Insère un numéro de version dans l’en-tête du fichier *.exe* ou *.dll*. Spécifiez « `major[.minor]` ». Les arguments `major` et `minor` sont des nombres décimaux compris entre 0 et 65535.
 
   Pour plus d’informations, consultez [/VERSION (Informations de version)](/cpp/build/reference/version-version-information).
 
 ## <a name="see-also"></a>Voir aussi
+
 - [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)

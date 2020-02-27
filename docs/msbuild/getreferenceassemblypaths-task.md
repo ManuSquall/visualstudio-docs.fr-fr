@@ -13,17 +13,19 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56e3526f130a8717dec2dafeef794375ceffc37c
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: d2ca532e37fa2f70800416539a7de2ff5e9978e2
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77579623"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633978"
 ---
 # <a name="getreferenceassemblypaths-task"></a>GetReferenceAssemblyPaths, tâche
+
 Retourne les chemins des assemblys de référence des différentes infrastructures.
 
 ## <a name="parameters"></a>Paramètres
+
  Le tableau ci-dessous décrit les paramètres de la tâche `GetReferenceAssemblyPaths`.
 
 |Paramètre|Description|
@@ -36,8 +38,10 @@ Retourne les chemins des assemblys de référence des différentes infrastructur
 |`TargetFrameworkMonikerDisplayName`|Paramètre de sortie `String` facultatif.<br /><br /> Spécifie le nom d’affichage du moniker de la version cible de .NET Framework.|
 
 ## <a name="remarks"></a>Notes
+
  En plus des paramètres répertoriés dans le tableau, cette tâche comprend des paramètres qu’elle hérite de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="see-also"></a>Voir aussi
+
 - [Tâches :](../msbuild/msbuild-tasks.md)
 - [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)

@@ -18,18 +18,20 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: a6535dbec7c09f0888d0fb29a2e6b801632da22f
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 8707371fac876586d38f12a797aaee7228b5f729
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593458"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634576"
 ---
 # <a name="aspnetcompiler-task"></a>AspNetCompiler (tâche)
-La tâche `AspNetCompiler` inclut dans un wrapper *aspnet_compiler.exe*, un utilitaire permettant de précompiler des applications [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].
+
+La tâche `AspNetCompiler` inclut *aspnet_compiler. exe*, un utilitaire permettant de précompiler des applications ASP.net.
 
 ## <a name="task-parameters"></a>Paramètres de tâche
-Le tableau ci-dessous décrit les paramètres de la tâche `AspNetCompiler` .
+
+Le tableau ci-dessous décrit les paramètres de la tâche `AspNetCompiler`.
 
 |Paramètre|Description|
 |---------------|-----------------|
@@ -49,10 +51,12 @@ Le tableau ci-dessous décrit les paramètres de la tâche `AspNetCompiler` .
 |`VirtualPath`|Paramètre `String` facultatif.<br /><br /> Chemin virtuel de l’application à compiler. Si `PhysicalPath` est spécifié, le chemin physique est utilisé pour localiser l’application. Sinon, la métabase IIS est utilisée et l’application se trouve théoriquement dans le site par défaut. Ce paramètre correspond au commutateur **-v** dans *aspnet_compiler.exe*.|
 
 ## <a name="remarks"></a>Notes
-En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.ToolTaskExtension> , qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.ToolTask> . Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).
+
+En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.ToolTask>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base ToolTaskExtension](../msbuild/tooltaskextension-base-class.md).
 
 ## <a name="example"></a>Exemple
-L’exemple de code suivant utilise la tâche `AspNetCompiler` pour précompiler une application [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].
+
+L’exemple de code suivant utilise la tâche `AspNetCompiler` pour précompiler une application ASP.NET.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -69,5 +73,6 @@ L’exemple de code suivant utilise la tâche `AspNetCompiler` pour précompiler
 ```
 
 ## <a name="see-also"></a>Voir aussi
-* [Tâches MSBuild](../msbuild/msbuild-tasks.md)
+
+* [Tâches :](../msbuild/msbuild-tasks.md)
 * [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)

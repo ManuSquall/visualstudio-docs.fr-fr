@@ -18,34 +18,38 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e09fa38f9f160728c3ca353164e87c9f3f6fa82
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: bd5dd3214c9575a34e9265c33061b024648a221c
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596357"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77634225"
 ---
 # <a name="error-task"></a>Erreur (tâche)
+
 Arrête une génération et enregistre une erreur en fonction d’une instruction conditionnelle évaluée.
 
-## <a name="parameters"></a>Parameters
-Le tableau ci-dessous décrit les paramètres de la tâche `Error` .
+## <a name="parameters"></a>Paramètres
+
+Le tableau ci-dessous décrit les paramètres de la tâche `Error`.
 
 | Paramètre | Description |
 |---------------| - |
 | `Code` | Paramètre `String` facultatif.<br /><br /> Code d’erreur à associer à l’erreur. |
 | `File` | Paramètre `String` facultatif.<br /><br /> Nom du fichier qui contient l’erreur. Si aucun nom de fichier n’est fourni, le fichier contenant la tâche Error est utilisé. |
 | `HelpKeyword` | Paramètre `String` facultatif.<br /><br /> Mot clé d’aide à associer à l’erreur. |
-| `Text` | Paramètre `String` facultatif.<br /><br /> Texte d’erreur enregistré par [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] si le paramètre `Condition` a la valeur `true`. |
+| `Text` | Paramètre `String` facultatif.<br /><br /> Texte d’erreur que MSBuild enregistre si le paramètre `Condition` prend la valeur `true`. |
 
 ## <a name="remarks"></a>Notes
-La tâche `Error` permet aux projets [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] d’émettre un texte d’erreur dans les enregistreurs d’événements et d’arrêter l’exécution de la génération.
+
+La tâche `Error` permet aux projets MSBuild d’émettre du texte d’erreur dans les journaux et d’arrêter l’exécution de la génération.
 
 Si le paramètre `Condition` a la valeur `true`, la génération est arrêtée, et une erreur est enregistrée. Si un paramètre `Condition` n’existe pas, l’erreur est enregistrée, et l’exécution de la génération s’arrête. Pour plus d’informations sur la journalisation, consultez [Obtention de journaux de génération](../msbuild/obtaining-build-logs-with-msbuild.md).
 
-En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension> , qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task> . Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).
+En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Exemple
+
 L’exemple de code suivant vérifie que toutes les propriétés requises sont définies. Si elles ne le sont pas, le projet déclenche un événement d’erreur et enregistre la valeur du paramètre `Text` de la tâche `Error`.
 
 ```xml
@@ -63,5 +67,6 @@ L’exemple de code suivant vérifie que toutes les propriétés requises sont d
 ```
 
 ## <a name="see-also"></a>Voir aussi
+
 - [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)
 - [Obtenir des journaux de génération](../msbuild/obtaining-build-logs-with-msbuild.md)

@@ -16,15 +16,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d7e77e56196d23a5563c60d5b8251c8f26a00ff
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 28d6def203a819d41a420899663d1a974612c631
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596734"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77632990"
 ---
 # <a name="parametergroup-element"></a>Élément ParameterGroup
-Contient une liste facultative de paramètres qui seront présents sur la tâche générée par une `TaskFactory``UsingTask`. Pour plus d’informations, voir [Élément UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).
+
+Contient une liste facultative de paramètres qui seront présents sur la tâche générée par une `TaskFactory``UsingTask`. Pour plus d’informations, consultez [Élément UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).
 
  \<Project> \<UsingTask> \<ParameterGroup>
 
@@ -35,10 +36,12 @@ Contient une liste facultative de paramètres qui seront présents sur la tâche
 ```
 
 ## <a name="attributes-and-elements"></a>Attributs et éléments
+
  Les sections suivantes décrivent des attributs, des éléments enfants et des éléments parents.
 
 ### <a name="attributes"></a>Attributs
- Aucun.
+
+ None.
 
 ### <a name="child-elements"></a>Éléments enfants
 
@@ -50,9 +53,10 @@ Contient une liste facultative de paramètres qui seront présents sur la tâche
 
 | Élément | Description |
 | - | - |
-| [UsingTask](../msbuild/usingtask-element-msbuild.md) | Permet d’inscrire des tâches dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Un projet peut ne contenir aucun élément `UsingTask` ou en contenir plusieurs. |
+| [UsingTask](../msbuild/usingtask-element-msbuild.md) | Fournit un moyen d’inscrire des tâches dans MSBuild. Un projet peut ne contenir aucun élément `UsingTask` ou en contenir plusieurs. |
 
 ## <a name="example"></a>Exemple
+
  L'exemple suivant montre comment utiliser l'élément `ParameterGroup`.
 
 ```xml
@@ -69,6 +73,7 @@ Contient une liste facultative de paramètres qui seront présents sur la tâche
 ```
 
 ## <a name="see-also"></a>Voir aussi
-- [Tâches MSBuild](../msbuild/msbuild-tasks.md)
+
+- [Tâches :](../msbuild/msbuild-tasks.md)
 - [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md)
 - [Informations de référence sur le schéma de fichier projet](../msbuild/msbuild-project-file-schema-reference.md)

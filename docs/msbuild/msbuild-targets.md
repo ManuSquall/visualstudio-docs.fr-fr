@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: afa29a2fa3d853e61dbbc26c01d389e57116a1a5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 0b3fcea8d073b4c40685d41b7432f1e24662a7ad
+ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593848"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77633185"
 ---
 # <a name="msbuild-targets"></a>Cibles de MSBuild
 
@@ -31,7 +31,7 @@ Les cibles regroupent les tâches dans un ordre particulier et permet au process
 </Target>
 ```
 
- Tout comme les propriétés MSBuild, les cibles peuvent être redéfinies. Par exemple :
+ Tout comme les propriétés MSBuild, les cibles peuvent être redéfinies. Par exemple,
 
 ```xml
 <Target Name="AfterBuild" >
@@ -68,7 +68,7 @@ Pour plus d’informations sur l’ordre de génération des cibles, consultez [
 
 ## <a name="target-batching"></a>Traitement par lots des cibles
 
-Un élément cible peut avoir un attribut `Outputs` qui spécifie des métadonnées au format suivant : %(\<métadonnées>). Dans ce cas, MSBuild exécute la cible une fois pour chaque valeur unique de métadonnées, en regroupant par lot les éléments qui ont cette valeur de métadonnées. Par exemple :
+Un élément cible peut avoir un attribut `Outputs` qui spécifie des métadonnées au format suivant : %(\<métadonnées>). Dans ce cas, MSBuild exécute la cible une fois pour chaque valeur unique de métadonnées, en regroupant par lot les éléments qui ont cette valeur de métadonnées. Par exemple,
 
 ```xml
 <ItemGroup>
@@ -105,6 +105,7 @@ Reference: 4.0
  Si tous les éléments de sortie sont à jour, MSBuild ignore la cible, ce qui accélère considérablement le processus de génération. C’est ce qu’on appelle une build incrémentielle de la cible. Si seuls certains fichiers sont à jour, MSBuild exécute la cible, sans exécuter ces fichiers. C’est ce qu’on appelle une build incrémentielle partielle de la cible. Pour plus d’informations, consultez [Builds incrémentielles](../msbuild/incremental-builds.md).
 
 ## <a name="default-build-targets"></a>Cibles de build par défaut
+
 La liste suivante répertorie les cibles publiques dans Microsoft. Common. CurrentVersion. targets.
 
 ```
