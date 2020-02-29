@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1a41667592b6965497f9b87514719f7d8a5a442
-ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
+ms.openlocfilehash: 8f605f9a7e07d485b4b1cb3835d53e4c4823fe7c
+ms.sourcegitcommit: 3d64bfb9bf85395357effe054db9a9afaa0be5ea
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75775990"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "78181130"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Attacher aux processus en cours d’exécution avec le débogueur Visual Studio
 Vous pouvez attacher le débogueur Visual Studio à un processus en cours d’exécution sur un ordinateur local ou distant. Une fois le processus en cours d’exécution, sélectionnez **Déboguer** > **attacher au processus** ou appuyez sur **CTRL**+**ALT**+**P** dans Visual Studio, puis utilisez la boîte de dialogue **attacher au processus** pour attacher le débogueur au processus.
@@ -153,6 +153,10 @@ Si aucune de ces solutions n’est possible, la troisième option consiste à at
 
 ::: moniker range=">= vs-2019"
 
+## <a name="attach-to-a-net-core-process-running-on-linux-using-ssh"></a>Attachement à un processus .NET Core s’exécutant sur Linux à l’aide de SSH
+
+Pour plus d’informations, consultez [Déboguer à distance .net Core s’exécutant sur Linux à l’aide de SSH](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md).
+
 ## <a name="BKMK_Docker_Attach"></a>Attachement à un processus en cours d’exécution sur un conteneur d’ancrage Linux
 
 Vous pouvez attacher le débogueur Visual Studio à un processus en cours d’exécution dans un conteneur Linux Core Linux Core sur votre ordinateur local ou distant à l’aide de la boîte **de dialogue Attacher au processus** .
@@ -221,14 +225,15 @@ Pour sélectionner rapidement un processus en cours d’exécution à attacher, 
 |Scénario|Méthode de débogage|Nom du processus|Notes et liens|
 |-|-|-|-|
 |Débogage à distance ASP.NET 4 ou 4,5 sur un serveur IIS|Utiliser les outils de contrôle à distance et **attacher au processus**|*w3wp.exe*|Voir [débogage à distance ASP.net sur un ordinateur IIS distant](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
-|Débogage à distance ASP.NET Core sur un serveur IIS|Utiliser les outils de contrôle à distance et **attacher au processus**|*dotnet.exe*|Pour le déploiement d’applications, consultez [publier sur IIS](https://docs.asp.net/en/latest/publishing/iis.html). Pour le débogage, consultez [ASP.net Core du débogage distant sur un ordinateur IIS distant](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md) .|
+|Débogage à distance ASP.NET Core sur un serveur IIS|Utiliser les outils de contrôle à distance et **attacher au processus**|*dotnet. exe* ou *appname. exe*|Pour le déploiement d’applications, consultez [publier sur IIS](https://docs.asp.net/en/latest/publishing/iis.html). Pour le débogage, consultez [ASP.net Core du débogage distant sur un ordinateur IIS distant](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md) .|
 |Déboguer le script côté client sur un serveur IIS local, pour les types d’applications pris en charge |Utiliser l' **attachement au processus**|*chrome. exe*, *MicrosoftEdgeCP. exe*ou *iexplore. exe*|Le débogage de script doit être activé. Pour Chrome, vous devez également exécuter chrome en mode débogage et sélectionner le **code WebKit** dans le champ **attacher à** .|
 |Déboguer une C#application, C++ Visual Basic ou sur l’ordinateur local|Utiliser le débogage standard (**F5**) ou l' **attachement au processus**|*\<appname>.exe*|Dans la plupart des scénarios, utilisez le débogage standard et non l' **attachement au processus**.|
-|Débogage à distance d’une application de bureau Windows|outils de contrôle à distance.|Non applicable| Voir [Déboguer C# à distance une application ou Visual Basic](../debugger/remote-debugging-csharp.md) ou [Déboguer à distance une C++ application](../debugger/remote-debugging-cpp.md)|
+|Débogage à distance d’une application de bureau Windows|outils de contrôle à distance.|N/A| Voir [Déboguer C# à distance une application ou Visual Basic](../debugger/remote-debugging-csharp.md) ou [Déboguer à distance une C++ application](../debugger/remote-debugging-cpp.md)|
+|Déboguer .NET Core sur Linux|Utiliser l' **attachement au processus**|*dotnet.exe*|Pour utiliser SSH, consultez [Déboguer à distance .net Core s’exécutant sur Linux à l’aide de SSH](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md). Pour utiliser un conteneur d’ancrage Linux, consultez [attacher à un processus en cours d’exécution sur un conteneur d’ancrage Linux](#BKMK_Docker_Attach).|
 |Déboguer une application ASP.NET sur l’ordinateur local après avoir démarré l’application sans le débogueur|Utiliser l' **attachement au processus**|*iiexpress.exe*|Cela peut être utile pour accélérer le chargement de votre application, par exemple lors du profilage. |
 |Déboguer d’autres types d’applications pris en charge sur un processus serveur|Si le serveur est distant, utilisez les outils de contrôle à distance et **Attachez-le au processus**|*chrome. exe*, *iexplore. exe*ou d’autres processus|Si nécessaire, utilisez moniteur de ressource pour aider à identifier le processus. Consultez [Débogage à distance](../debugger/remote-debugging.md).|
-|Déboguer à distance une application Windows universelle (UWP), OneCore, HoloLens ou une application IoT|Déboguer un package d’application installé|Non applicable|Consultez [Déboguer un package d’application installé](debug-installed-app-package.md) au lieu d’utiliser l' **attachement au processus**|
-|Déboguer une application Windows universelle (UWP), OneCore, HoloLens ou IoT que vous n’avez pas démarrée à partir de Visual Studio|Déboguer un package d’application installé|Non applicable|Consultez [Déboguer un package d’application installé](debug-installed-app-package.md) au lieu d’utiliser l' **attachement au processus**|
+|Déboguer à distance une application Windows universelle (UWP), OneCore, HoloLens ou une application IoT|Déboguer un package d’application installé|N/A|Consultez [Déboguer un package d’application installé](debug-installed-app-package.md) au lieu d’utiliser l' **attachement au processus**|
+|Déboguer une application Windows universelle (UWP), OneCore, HoloLens ou IoT que vous n’avez pas démarrée à partir de Visual Studio|Déboguer un package d’application installé|N/A|Consultez [Déboguer un package d’application installé](debug-installed-app-package.md) au lieu d’utiliser l' **attachement au processus**|
 
 ## <a name="use-debugger-features"></a>Utiliser les fonctionnalités du débogueur
 
@@ -271,4 +276,4 @@ Dans certains scénarios de débogage local, vous pouvez déboguer dans Visual S
 
 - [Déboguer plusieurs processus](../debugger/debug-multiple-processes.md)
 - [Débogage juste-à-temps](../debugger/just-in-time-debugging-in-visual-studio.md)
-- [Débogage distant](../debugger/remote-debugging.md)
+- [Débogage à distance](../debugger/remote-debugging.md)
