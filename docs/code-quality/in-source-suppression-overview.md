@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 92e027b58d1a05d77055048872c38f45939cbfe0
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 71d2fe83690e55d49bb23bffb09de91c8f7534b6
+ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587444"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78167622"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Supprimer les avertissements d’analyse du code
 
@@ -78,7 +78,7 @@ Les propriétés de l’attribut sont les suivantes :
 
 - **Scope** : cible sur laquelle l’avertissement est supprimé. Si la cible n’est pas spécifiée, elle est définie sur la cible de l’attribut. Les [étendues](xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope) prises en charge sont les suivantes :
 
-  - `module` : cette étendue supprime les avertissements sur un assembly. Il s’agit d’une suppression globale qui s’applique à l’ensemble du projet.
+  - [`module`](#module-suppression-scope) : cette étendue supprime les avertissements sur un assembly. Il s’agit d’une suppression globale qui s’applique à l’ensemble du projet.
 
   - `resource`-([FxCop hérité](../code-quality/static-code-analysis-for-managed-code-overview.md) uniquement) cette étendue supprime les avertissements dans les informations de diagnostics écrits dans les fichiers de ressources qui font partie du module (Assembly). Cette étendue n’est pas lue/respectée dans C#les compilateurs/vb pour les diagnostics de l’analyseur Roslyn, qui analyse uniquement les fichiers sources.
 
@@ -174,9 +174,17 @@ Les suppressions au niveau global sont le seul moyen de supprimer des messages q
 > [!NOTE]
 > `Target` contient toujours le nom qualifié complet de l’élément.
 
-## <a name="global-suppression-file"></a>Fichier de suppression globale
+### <a name="global-suppression-file"></a>Fichier de suppression globale
 
 Le fichier de suppression globale conserve les suppressions qui sont des suppressions au niveau global ou des suppressions qui ne spécifient pas de cible. Par exemple, les suppressions pour les violations au niveau de l’assembly sont stockées dans ce fichier. En outre, certaines suppressions de ASP.NET sont stockées dans ce fichier, car les paramètres au niveau du projet ne sont pas disponibles pour le code-behind d’un formulaire. Un fichier de suppression globale est créé et ajouté à votre projet la première fois que vous sélectionnez l’option **dans le fichier de suppression du projet** de la commande **supprimer** de la fenêtre **liste d’erreurs** .
+
+### <a name="module-suppression-scope"></a>Étendue de suppression de module
+
+Vous pouvez supprimer les violations de qualité du code pour l’assembly entier à l’aide de la portée de **module** .
+
+Par exemple, l’attribut suivant dans votre fichier projet _GlobalSuppressions_ supprime la violation ConfigureAwait pour un projet ASP.net Core :
+
+`[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Reliability", "CA2007:Consider calling ConfigureAwait on the awaited task", Justification = "ASP.NET Core doesn't use thread context to store request context.", Scope = "module")]`
 
 ## <a name="see-also"></a>Voir aussi
 

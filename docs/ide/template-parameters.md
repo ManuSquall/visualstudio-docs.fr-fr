@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 582c87eee2586eab12f70e2d27341987e7cb7e2a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: 7076e8f5718e44cc382eb0768e6456dbd6ee5664
+ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75585884"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78169363"
 ---
 # <a name="template-parameters"></a>Paramètres de modèle
 
@@ -50,7 +50,7 @@ Le tableau suivant liste les paramètres de modèle réservés qui peuvent être
 |Paramètre|Description|
 |---------------|-----------------|
 |clrversion|Version actuelle du Common Language Runtime (CLR).|
-|ext_*|Ajoutez le préfixe `ext_` à n’importe quel paramètre pour référencer les variables du modèle parent. Par exemple, `ext_safeprojectname`.|
+|ext_*|Ajoutez le préfixe `ext_` à n’importe quel paramètre pour référencer les variables du modèle parent. Par exemple : `ext_safeprojectname`.|
 |guid[1-10]|GUID utilisé pour remplacer le GUID du projet dans un fichier projet. Vous pouvez spécifier jusqu’à 10 GUID uniques (par exemple, `guid1`).|
 |itemname|Le nom du fichier dans lequel le paramètre est utilisé.|
 |machinename|Nom de l’ordinateur actuel (par exemple, Ordi01).|
@@ -61,7 +61,7 @@ Le tableau suivant liste les paramètres de modèle réservés qui peuvent être
 |safeitemrootname|Identique à `safeitemname`.|
 |safeprojectname|Nom fourni par l’utilisateur quand le projet a été créé, dont tous les caractères et espaces potentiellement dangereux ont été supprimés.|
 |time|Date et heure actuelles au format JJ/MM/AAAA 00:00:00.|
-|specifiedSolutionName|Nom du fichier solution. Quand l’option "créer le répertoire de la solution" est cochée, `specifiedSolutionName` porte le nom de la solution. Quand l’option "créer le répertoire de solution" n’est pas cochée, `specifiedSolutionName` est vide.|
+|specifiedsolutionname|Nom du fichier solution. Quand l’option "créer le répertoire de la solution" est cochée, `specifiedsolutionname` porte le nom de la solution. Quand l’option "créer le répertoire de solution" n’est pas cochée, `specifiedsolutionname` est vide.|
 |userdomain|Domaine de l’utilisateur actuel.|
 |nom_utilisateur|Nom de l’utilisateur actuel.|
 |webnamespace|Nom du site web actuel. Ce paramètre est utilisé dans le modèle de formulaire web pour garantir des noms de classes uniques. Si le site web se trouve dans le répertoire racine du serveur web, ce paramètre de modèle correspond à ce répertoire racine.|

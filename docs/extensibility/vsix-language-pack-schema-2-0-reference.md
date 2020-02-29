@@ -11,12 +11,12 @@ ms.assetid: 2a2932bc-cdbe-4d32-91fa-a3e0474f9098
 ms.author: zorio
 author: zoeyr
 manager: jillfra
-ms.openlocfilehash: fe6d4bd9e82950d77925dda1560b5c204633d392
-ms.sourcegitcommit: dae5dfd626277b58ebd7b21a75757f683f1eacc5
+ms.openlocfilehash: f97fd5aee27cdc97cf6eb5731da9fad9cb999e18
+ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70739332"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78169337"
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>Informations de référence sur le schéma du module linguistique VSIX 2,0
 
@@ -24,11 +24,11 @@ Le schéma du module linguistique VSIX fournit des informations d’installation
 
 ## <a name="language-pack-schema"></a>Schéma du module linguistique
 
-L’élément racine du fichier de module linguistique est `<PackageLanguagePackManifest>`, avec l' `Version`attribut, qui est la version du format du module linguistique. Cet article décrit la version 2,0 du format du module linguistique, qui est spécifié dans le manifeste en affectant à l' `Version` attribut la valeur. `Version="2.0.0"` L’élément racine contient exactement un élément `<Metadata>` enfant.
+L’élément racine du fichier de module linguistique est `<PackageLanguagePackManifest>`, avec un attribut de `Version`, qui est la version du format du module linguistique. Cet article décrit la version 2,0 du format du module linguistique, qui est spécifié dans le manifeste en affectant à l’attribut `Version` la valeur `Version="2.0.0"`. L’élément racine contient exactement un élément `<Metadata>` enfant.
 
 ### <a name="packagelanguagepackmanifest-element"></a>Élément PackageLanguagePackManifest
 
-Dans l' `<PackageLanguagePackManifest>` élément, l’élément suivant doit exister :
+Dans l’élément `<PackageLanguagePackManifest>`, l’élément suivant doit exister :
 
 |Titre|Description|
 |-----------|-----------------|
@@ -36,7 +36,7 @@ Dans l' `<PackageLanguagePackManifest>` élément, l’élément suivant doit ex
 
 ### <a name="metadata-element"></a>Metadata, élément
 
-Dans l' `<Metadata>` élément, vous pouvez avoir les éléments suivants :
+Dans l’élément `<Metadata>` vous pouvez avoir les éléments suivants :
 
 |Titre|Description|
 |-----------|-----------------|
@@ -53,7 +53,7 @@ Dans l' `<Metadata>` élément, vous pouvez avoir les éléments suivants :
 <?xml version="1.0" encoding="utf-8"?>
 <PackageLanguagePackManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
   <Metadata>
-    <DisplayName>Arbol de Familia</LocalizedName>
+    <DisplayName>Arbol de Familia</DisplayName>
     <Description> Esta extensión pone control personalizado en la caja de herramientas por manejar información de familia.</Description>
     <MoreInfo> http://www.contoso.com/products/es/ArbolDeFamilia.htm</MoreInfo>
     <License>Eula.rtf</License>

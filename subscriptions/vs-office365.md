@@ -6,12 +6,12 @@ manager: lank
 ms.date: 08/02/2019
 ms.topic: conceptual
 description: En savoir plus sur l’avantage Office 365 Pro plus inclus dans certains abonnements Visual Studio.
-ms.openlocfilehash: 4ff521651e25fd1ad73bd629a111c7f8378fbfe3
-ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
+ms.openlocfilehash: 4f8ad514cae626e824171937cd627b110980dbca
+ms.sourcegitcommit: b016ea260856264eee730ee8cbcab198314a7ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "77036733"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77904150"
 ---
 # <a name="office-365-pro-plus-in-visual-studio-subscriptions"></a>Office 365 Pro Plus dans les abonnements Visual Studio
 
@@ -43,11 +43,11 @@ Suivez ces étapes pour télécharger et activer Office 365 Pro Plus :
 0. Cliquez sur le bouton **Télécharger**.
    > [!div class="mx-imgBorder"]
    > ![Office 365 Pro plus Start Download](_img/vs-office365/vs-office365-download-button.png)
-0. Connectez-vous à votre compte Microsoft. (Si vous avez déjà ouvert une session, cliquez sur **Suivant**.)
+0. Connectez-vous avec votre compte Microsoft. (Si vous avez déjà ouvert une session, cliquez sur **Suivant**.)
 0. Entrez votre clé de produit, votre pays ou région et votre langue, puis cliquez sur **Suivant**.
    > [!div class="mx-imgBorder"]
    > ![Office 365 Pro plus entrez la clé de produit](_img/vs-office365/vs-office365-enter-key.png)
-0. Cliquez à nouveau sur **Suivant** .
+0. Cliquez à nouveau sur **Suivant**.
 0. Cliquez sur **Installer** pour installer les applications Office.
 
 ## <a name="eligibility"></a>Eligibility
@@ -76,14 +76,15 @@ Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à
 - Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
 - Vous avez des questions concernant l’environnement IDE Visual Studio, Azure DevOps ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="see-also"></a>Voir aussi
+- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentation Azure](https://docs.microsoft.com/azure/)
+- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>Étapes suivantes :
 Veillez à activer ces avantages intéressants pour tirer le meilleur parti de votre abonnement Visual Studio :
-- [Visual Studio](vs-ide-benefit.md)
+- [Visual Studio](vs-ide-benefit.md)
 - [Azure DevOps](vs-azure-devops.md)
 - [Crédit individuel Azure DevTest](vs-azure.md) Si vous envisagez de développer des applications pour Office, vous souhaiterez activer votre [abonnement Office Developer](vs-office-dev.md)
 
-## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](/visualstudio/)
-- [Documentation Azure DevOps](/azure/devops/)
-- [Documentation Azure](/azure/)
-- [Documentation Microsoft 365](/microsoft-365/)

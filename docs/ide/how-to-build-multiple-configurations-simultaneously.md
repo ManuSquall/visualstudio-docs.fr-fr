@@ -1,5 +1,5 @@
 ---
-title: 'Procédure : Créer plusieurs configurations simultanément'
+title: Guide pratique pour générer plusieurs configurations simultanément
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -9,14 +9,14 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f4abd95c2a37366b4f6dfabe141e6418d23301d
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
-ms.translationtype: HT
+ms.openlocfilehash: 33cd217a08f62b4919af6d72017176c110cf5e5a
+ms.sourcegitcommit: b016ea260856264eee730ee8cbcab198314a7ece
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416762"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77904085"
 ---
-# <a name="how-to-build-multiple-configurations-simultaneously"></a>Procédure : Créer plusieurs configurations simultanément
+# <a name="how-to-build-multiple-configurations-simultaneously"></a>Guide pratique pour générer plusieurs configurations simultanément
 
 Vous pouvez générer simultanément la plupart des types de projets avec une partie ou même l’ensemble de leurs configurations de build à l’aide de la boîte de dialogue **Générer en tâche de fond**. Toutefois, vous ne pouvez pas générer les types de projets suivants dans plusieurs configurations de build en même temps :
 
@@ -24,11 +24,13 @@ Vous pouvez générer simultanément la plupart des types de projets avec une pa
 
 2. Tous les projets Visual Basic.
 
+Si une solution contient un projet de ces deux types de projets, la **génération de lots** n’est pas disponible pour cette solution. Dans ce cas, la commande n’apparaît pas dans le menu **générer** .
+
    Pour plus d’informations sur les configurations de build, consultez [Présentation des configurations de build](../ide/understanding-build-configurations.md).
 
 ## <a name="to-build-a-project-in-multiple-build-configurations"></a>Pour générer un projet dans plusieurs configurations de build
 
-1. Dans la barre de menus, choisissez **Build** > **Générer en tâche de fond**.
+1. Dans la barre de menus, choisissez **Build** > **Générer en tâche de fond**. Ou appuyez sur **Ctrl**+**Q** pour ouvrir la zone de recherche et recherchez `Batch Build`.
 
 2. Dans la colonne **Build**, cochez les cases correspondant aux configurations dans lesquelles vous souhaitez générer un projet.
 

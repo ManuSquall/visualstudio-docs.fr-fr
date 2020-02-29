@@ -26,12 +26,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b472ca78d36247a76bf397989f48e04230ccd7d
-ms.sourcegitcommit: b2fc9ac7d73c847508f6ed082bed026476bb3955
+ms.openlocfilehash: a37d4fa5dc92253b94dc64590c9df5fec7703ceb
+ms.sourcegitcommit: b016ea260856264eee730ee8cbcab198314a7ece
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "77027615"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77904163"
 ---
 # <a name="understand-build-configurations"></a>Présentation des configurations de build
 
@@ -44,11 +44,11 @@ Vous avez besoin de configurations de build lorsque vous devez générer vos pro
 
 La configuration et le contrôle de plateforme où sont stockés les fichiers de sortie générés. Normalement, lorsque Visual Studio génère votre projet, la sortie est placée dans un sous-dossier de projet nommé avec la configuration active (par exemple, *bin/debug/x86*), mais vous pouvez le modifier.
 
-Vous pouvez créer vos propres configurations de build au niveau de la solution et du projet. La configuration de la solution détermine quels projets sont inclus dans la build lorsque cette configuration est active. Seuls les projets spécifiés dans la configuration de solution active seront générés. La configuration du projet détermine quels paramètres de génération et options du compilateur sont utilisés lorsque vous générez le projet.
+Vous pouvez créer vos propres configurations de build au niveau de la solution et du projet. La configuration de la solution détermine quels projets sont inclus dans la build lorsque cette configuration est active. Seuls les projets spécifiés dans la configuration de solution active seront générés. Si plusieurs plateformes cibles sont sélectionnées dans Configuration Manager, tous les projets qui s’appliquent à cette plateforme sont générés. La configuration du projet détermine quels paramètres de génération et options du compilateur sont utilisés lorsque vous générez le projet.
 
 Pour créer, sélectionner, modifier ou supprimer une configuration, vous pouvez utiliser le **Gestionnaire de configurations**. Pour l’ouvrir, dans la barre de menus, choisissez **Générer** > **Gestionnaire de configurations**, ou tapez simplement **Configuration** dans la zone de recherche. Vous pouvez également utiliser la liste **Configurations de solutions** dans la barre d’outils **Standard** pour sélectionner une configuration ou ouvrir le **Gestionnaire de configurations**.
 
-![Gestionnaire de configuration](media/understanding-build-configurations/config-manager.png)
+![Gestionnaire de configurations](media/understanding-build-configurations/config-manager.png)
 
 > [!NOTE]
 > Si les paramètres de configuration de solution ne figurent pas dans la barre d’outils et si vous ne pouvez pas accéder au **Gestionnaire de configurations**, les paramètres de développement de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] peuvent être appliqués. Pour plus d’informations, consultez [Guide pratique pour gérer les configurations de build en appliquant les paramètres du développeur Visual Basic](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).
@@ -70,6 +70,12 @@ La configuration de solution active fournit également le contexte à l'IDE. Par
 La configuration et la plateforme ciblées par un projet sont utilisées ensemble pour spécifier les paramètres de build et les options du compilateur à utiliser lors de sa génération. Un projet peut avoir des paramètres différents pour chaque combinaison de configuration et de plateforme. Pour modifier les propriétés d’un projet, ouvrez le menu contextuel du projet dans **Explorateur de solutions**, puis choisissez **Propriétés**.  En haut de l’onglet **générer** du concepteur de projet, choisissez une configuration active pour modifier ses paramètres de génération.
 
 ![Configurations du concepteur de projets](media/understanding-build-configurations/project-designer-configuration.png)
+
+## <a name="building-multiple-configurations"></a>Génération de plusieurs configurations
+
+Lorsque vous générez une solution à l’aide de la commande **générer** > **générer la solution** , Visual Studio génère uniquement la configuration active. Tous les projets spécifiés dans cette configuration de solution sont générés, et la seule configuration de projet créée est celle spécifiée dans la configuration de solution active et la plateforme de solution active, qui est affichée dans la barre d’outils de Visual Studio. Par exemple, **Debug** et **x86**. D’autres configurations et plateformes définies ne sont pas générées.
+
+Si vous souhaitez générer plusieurs configurations et plateformes en une seule action, vous pouvez utiliser l’option de **génération** **de build > ** batch dans Visual Studio. Pour accéder à cette fonctionnalité, appuyez sur **Ctrl**+**Q** pour ouvrir la zone de recherche, puis entrez `Batch build`. La génération de lots n’est pas disponible pour tous les types de projets. Consultez [Comment : générer plusieurs configurations simultanément](how-to-build-multiple-configurations-simultaneously.md).
 
 ## <a name="how-visual-studio-assigns-project-configurations"></a>Comment Visual Studio affecte des configurations de projet
 

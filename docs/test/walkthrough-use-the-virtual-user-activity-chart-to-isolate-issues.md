@@ -6,15 +6,15 @@ helpviewer_keywords:
 - load tests, virtual user activity chart
 - virtual user activity chart, isolating performance issues
 ms.assetid: d1c10fb9-cfeb-4e7f-9991-2d1e1103699e
-author: jillre
+author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a437da5d95b758b908f1f1d4f7b76c50b6488a3c
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+ms.openlocfilehash: c58dd4f6e6a0c8fe1bd468053bf18c3635b1ee9d
+ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "77091845"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78169376"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Procédure pas à pas : utilisation du graphique d’activités des utilisateurs virtuels pour isoler les problèmes
 
@@ -24,7 +24,7 @@ Le graphique d'activités des utilisateurs virtuels vous permet de visualiser le
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-## <a name="prerequisites"></a>Conditions préalables requises
+## <a name="prerequisites"></a>Composants requis
 
 - Visual Studio Enterprise
 
@@ -79,7 +79,7 @@ Une fois que vous avez exécuté le test de charge et que vous avez collecté le
 
 7. Une info-bulle s'affiche avec les informations suivantes :
 
-    - **ID d'utilisateur**
+    - **ID utilisateur**
 
     - **Scénario**
 
@@ -87,9 +87,9 @@ Une fois que vous avez exécuté le test de charge et que vous avez collecté le
 
     - **Résultat**
 
-    - **Réseau**
+    - **Network**
 
-    - **Start Time**
+    - **Heure de début**
 
     - **Durée**
 
