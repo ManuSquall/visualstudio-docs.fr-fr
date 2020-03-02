@@ -33,7 +33,7 @@
 #### [CloudPilot](vs-cloudpilot.md)
 #### [Enterprise Mobility et Security](vs-ems.md)
 #### [Développeur Microsoft 365](vs-m365.md)
-#### [Abonnement Office 365](vs-office365.md)
+#### [Office 365 ProPlus](vs-office365.md)
 #### [Parasoft](vs-parasoft.md)
 #### [Power BI Pro](vs-pbi.md)
 #### [Visual Studio App Center](vs-visual-studio-app-center.md)
