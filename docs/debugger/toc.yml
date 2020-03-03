@@ -590,9 +590,7 @@
                   items:
                     - name: Débogage de serveurs et de conteneurs COM
                       href: com-server-and-container-debugging.md
-                    - name: Déboguer des clients et des serveurs COM à l’aide du débogage RPC
-                      href: how-to-debug-com-clients-and-servers-using-rpc-debugging.md
-                - name: Contrôle ActiveX
+                - name: ActiveX (contrôle)
                   items:
                     - name: Déboguer un contrôle ActiveX
                       href: how-to-debug-an-activex-control.md
