@@ -217,11 +217,11 @@
               href: otherwise-element-msbuild.md
             - name: 'Output, élément'
               href: output-element-msbuild.md
-            - name: 'Parameter, élément'
+            - name: Élément de paramètre
               href: parameter-element.md
-            - name: 'ParameterGroup, élément'
+            - name: Élément ParameterGroup
               href: parametergroup-element.md
-            - name: 'Project, élément'
+            - name: Élément Project
               href: project-element-msbuild.md
             - name: 'ProjectExtensions, élément'
               href: projectextensions-element-msbuild.md
@@ -231,11 +231,11 @@
               href: propertygroup-element-msbuild.md
             - name: 'Sdk, élément'
               href: sdk-element-msbuild.md
-            - name: 'Target, élément'
+            - name: élément Target
               href: target-element-msbuild.md
-            - name: 'Task, élément'
+            - name: 'Task, élément de Target'
               href: task-element-msbuild.md
-            - name: 'TaskBody, élément'
+            - name: 'Task, élément de UsingTask'
               href: taskbody-element-msbuild.md
             - name: 'UsingTask, élément'
               href: usingtask-element-msbuild.md
@@ -253,45 +253,45 @@
                   href: msbuild-tasks-specific-to-visual-cpp.md
                 - name: 'BscMake, tâche'
                   href: bscmake-task.md
-                - name: 'CL, tâche'
+                - name: CL (tâche)
                   href: cl-task.md
                 - name: 'CPPClean, tâche'
                   href: cppclean-task.md
-                - name: 'ClangCompile, tâche'
+                - name: Tâche ClangCompile
                   href: clangcompile-task.md
-                - name: 'CustomBuild, tâche'
+                - name: Tâche CustomBuild
                   href: custombuild-task.md
-                - name: 'FXC, tâche'
+                - name: Tâche FXC
                   href: fxc-task.md
-                - name: 'GetOutOfDateItems, tâche'
+                - name: Tâche GetOutOfDateItems
                   href: getoutofdateitems-task.md
-                - name: 'GetOutputFileName, tâche'
+                - name: Tâche GetOutputFileName
                   href: getoutputfilename-task.md
-                - name: 'LIB, tâche'
+                - name: LIB (tâche)
                   href: lib-task.md
-                - name: 'Link, tâche'
+                - name: Lier la tâche
                   href: link-task.md
-                - name: 'MIDL, tâche'
+                - name: MIDL (tâche)
                   href: midl-task.md
-                - name: 'MT, tâche'
+                - name: MT (tâche)
                   href: mt-task.md
                 - name: 'MultiTool, tâche'
                   href: multitooltask-task.md
-                - name: 'ParallelCustomBuild, tâche'
+                - name: Tâche ParallelCustomBuild
                   href: parallelcustombuild-task.md
-                - name: 'RC, tâche'
+                - name: RC (tâche)
                   href: rc-task.md
-                - name: 'SetEnv, tâche'
+                - name: Tâche SetEnv
                   href: setenv-task.md
                 - name: Classe de base TrackedVCToolTask
                   href: trackedvctooltask-base-class.md
-                - name: 'VCMessage, tâche'
+                - name: VCMessage (tâche)
                   href: vcmessage-task.md
                 - name: Classe de base VCToolTask
                   href: vctooltask-base-class.md
-                - name: 'XDCMake, tâche'
+                - name: XDCMake (tâche)
                   href: xdcmake-task.md
-                - name: 'XSD, tâche'
+                - name: XSD (tâche)
                   href: xsd-task.md
             - name: Classe de base Task
               href: task-base-class.md
@@ -467,7 +467,7 @@
                   href: getwinfxpath-task.md
                 - name: 'MarkupCompilePass1, tâche'
                   href: markupcompilepass1-task.md
-                - name: 'MarkupCompilePass2, tâche'
+                - name: MarkupCompilePass2 (tâche)
                   href: markupcompilepass2-task.md
                 - name: 'MergeLocalizationDirectives, tâche'
                   href: mergelocalizationdirectives-task.md
