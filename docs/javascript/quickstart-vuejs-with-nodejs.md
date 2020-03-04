@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 5f7b877d825a573b935a9bf0f2c907ec2ce6f808
-ms.sourcegitcommit: 2f64b3b231900018fceafb72b5a1c65140213a18
+ms.openlocfilehash: a1995353d00f9e48811f388e1d853c93850b85f4
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73428772"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78235104"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Démarrage rapide : utiliser Visual Studio pour créer votre première application Vue.js
 
@@ -26,7 +26,7 @@ Dans cette présentation de 5-10 minutes de l’environnement de développement 
 > [!IMPORTANT]
 > Le modèle Vue.js, disponible à partir de Visual Studio 2017 version 15.8, est nécessaire pour cet article.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Conditions préalables requises
 
 * Au préalable, vous devez avoir installé Visual Studio et la charge de travail de développement Node.js.
 
@@ -43,19 +43,21 @@ Dans cette présentation de 5-10 minutes de l’environnement de développement 
 
 * Le runtime Node.js doit être installé.
 
-    Si vous ne l’avez pas déjà fait, installez la version LTS à partir du site web [Node.js](https://nodejs.org/en/download/). En règle générale, Visual Studio détecte automatiquement le runtime Node.js installé. S’il ne détecte aucun runtime installé, vous pouvez configurer votre projet pour référencer le runtime installé dans la page de propriétés (après avoir créé un projet, cliquez avec le bouton droit sur le nœud de projet, puis choisissez **Propriétés**).
+    Si vous ne l’avez pas installé, nous vous recommandons d’installer la version LTS à partir du site Web [node. js](https://nodejs.org/en/download/) pour une meilleure compatibilité avec les infrastructures et les bibliothèques externes. Node. js est conçu pour les architectures 32 bits et 64 bits. Les outils node. js dans Visual Studio, inclus dans la charge de travail node. js, prennent en charge les deux versions. Une seule est requise et le programme d’installation de node. js ne prend en charge qu’un seul élément à la fois.
+    
+    En règle générale, Visual Studio détecte automatiquement le runtime Node.js installé. S’il ne détecte pas un Runtime installé, vous pouvez configurer votre projet pour référencer le Runtime installé dans la page Propriétés (après avoir créé un projet, cliquer avec le bouton droit sur le nœud du projet, choisir **Propriétés**et définir le **chemin node. exe**). Vous pouvez utiliser une installation globale de node. js ou vous pouvez spécifier le chemin d’accès à un interpréteur local dans chacun de vos projets node. js. 
 
-## <a name="create-a-project"></a>Créer un projet
+## <a name="create-a-project"></a>Création d’un projet
 
 Vous allez d’abord créer un projet d’application web Vue.js.
 
 1. Si le runtime Node.js n’est pas déjà installé, installez la version LTS à partir du site web [Node.js](https://nodejs.org/en/download/).
 
-    En règle générale, Visual Studio détecte automatiquement le runtime Node.js installé. S’il ne détecte aucun runtime installé, vous pouvez configurer votre projet pour référencer le runtime installé dans la page de propriétés (après avoir créé un projet, cliquez avec le bouton droit sur le nœud de projet, puis choisissez **Propriétés**).
+    Pour plus d’informations, consultez les conditions préalables.
 
 1. Ouvrez Visual Studio.
 
-1. Créez un nouveau projet.
+1. Créez un projet.
 
     ::: moniker range=">=vs-2019"
     Appuyez sur **Échap** pour fermer la fenêtre de démarrage. Tapez **Ctrl+Q** pour ouvrir la zone de recherche, tapez **Basic Vue.js**, puis choisissez **Application web Vue.js de base** (JavaScript ou TypeScript). Dans la boîte de dialogue qui s’affiche, tapez le nom **basic-vuejs**, puis choisissez **Créer**.
@@ -99,7 +101,7 @@ Vous allez d’abord créer un projet d’application web Vue.js.
 
     Visual Studio ajoute le nouveau fichier au projet.
 
-## <a name="build-the-project"></a>Générer le projet
+## <a name="build-the-project"></a>Créer le projet
 
 1. (Projet TypeScript uniquement) À partir de Visual Studio, choisissez **Générer** > **Nettoyer la solution**.
 
@@ -115,7 +117,7 @@ Vous allez d’abord créer un projet d’application web Vue.js.
     <PostBuildEvent>npm run build</PostBuildEvent>
     ```
 
-## <a name="run-the-application"></a>Exécuter l'application
+## <a name="run-the-application"></a>Exécution de l'application
 
 1. Appuyez sur **Ctrl**+**F5** ou (**Déboguer > Démarrer sans débogage**) pour exécuter l’application.
 
@@ -131,7 +133,7 @@ Vous allez d’abord créer un projet d’application web Vue.js.
 
 Félicitations ! Vous avez terminé ce guide de démarrage rapide. Nous espérons que vous en avez appris un peu plus sur l’utilisation de l’IDE de Visual Studio avec Vue.js. Si vous souhaitez en savoir plus sur ses fonctionnalités, poursuivez avec l’un des tutoriels de la section **Tutoriels** dans la table des matières.
 
-## <a name="next-steps"></a>Étapes suivantes :
+## <a name="next-steps"></a>Étapes suivantes
 
 - Suivre le [tutoriel pour Node.js et Express](tutorial-nodejs.md)
 - Suivre le [tutoriel pour Node.js et React](tutorial-nodejs-with-react-and-jsx.md)

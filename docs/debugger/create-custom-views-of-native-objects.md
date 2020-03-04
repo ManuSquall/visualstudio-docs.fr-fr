@@ -1,7 +1,7 @@
 ---
 title: Créer des vues personnalisées d’objets C++
 description: Utiliser l’infrastructure Natvis pour personnaliser la façon dont Visual Studio affiche les types natifs dans le débogueur
-ms.date: 10/31/2018
+ms.date: 03/02/2020
 ms.topic: conceptual
 f1_keywords:
 - natvis
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9c26c35c09353d740f6db9745222bb66db40e7ba
-ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
+ms.openlocfilehash: 064761d87b9aa851e40cf906e7734a3578dcad1a
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78167752"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78234967"
 ---
 # <a name="create-custom-views-of-c-objects-in-the-debugger-using-the-natvis-framework"></a>Créer des vues personnalisées d' C++ objets dans le débogueur à l’aide de l’infrastructure Natvis
 
@@ -537,7 +537,10 @@ Le débogueur évalue les expressions `NextPointer` et `ValueNode` dans le conte
 `ValueNode` peut être laissé vide ou utiliser `this` pour faire référence au nœud `LinkedListItems` lui-même.
 
 #### <a name="customlistitems-expansion"></a>Expansion CustomListItems
+
 L'expansion `CustomListItems` vous permet d'écrire une logique personnalisée permettant de parcourir une structure de données telle qu'une table de hachage. Utilisez `CustomListItems` pour visualiser les structures de données qui peuvent C++ utiliser des expressions pour tout ce dont vous avez besoin, mais qui ne correspondent pas tout à fait au moule pour `ArrayItems`, `IndexListItems`ou `LinkedListItems`.
+
+Vous pouvez utiliser `Exec` pour exécuter du code à l’intérieur d’une expansion de `CustomListItems`, à l’aide des variables et des objets définis dans le développement. Vous pouvez utiliser des opérateurs logiques, des opérateurs arithmétiques et des opérateurs d’assignation avec `Exec`. Vous ne pouvez pas utiliser `Exec` pour évaluer des fonctions, à l’exception des [fonctions intrinsèques du débogueur](../debugger/expressions-in-the-debugger.md#BKMK_Using_debugger_intrinisic_functions_to_maintain_state) prises en charge par l' C++ évaluateur d’expression.
 
 Le visualiseur suivant pour `CAtlMap` est un excellent exemple où `CustomListItems` est approprié.
 
@@ -569,24 +572,6 @@ Le visualiseur suivant pour `CAtlMap` est un excellent exemple où `CustomListIt
     </Expand>
 </Type>
 ```
-
-Vous pouvez utiliser `Exec` pour exécuter du code à l’intérieur d’une expansion de `CustomListItems`, à l’aide des variables et des objets définis dans le développement. Vous pouvez utiliser des opérateurs logiques, des opérateurs arithmétiques et des opérateurs d’assignation avec `Exec`. Vous ne pouvez pas utiliser `Exec` pour évaluer des fonctions.
-
-`CustomListItems` prend en charge les fonctions intrinsèques suivantes :
-
-- `strlen`, `wcslen`, `strnlen`, `wcsnlen`, `strcmp`, `wcscmp`, `_stricmp`, `_strcmpi`, `_wcsicmp`, `strncmp`, `wcsncmp`, `_strnicmp`, `_wcsnicmp`, `memcmp`, `memicmp`, `wmemcmp`, `strchr`, `wcschr`, `memchr`, `wmemchr`, `strstr`, `wcsstr`, `__log2`, `__findNonNull`
-- `GetLastError`, `TlsGetValue`, `DecodeHString`, `WindowsGetStringLen`, `WindowsGetStringRawBuffer`, `WindowsCompareStringOrdinal`, `RoInspectCapturedStackBackTrace`, `CoDecodeProxy`, `GetEnvBlockLength`, `DecodeWinRTRestrictedException`, `DynamicMemberLookup`, `DecodePointer`, `DynamicCast`
-- `ConcurrencyArray_OperatorBracket_idx // Concurrency::array<>::operator[index<>] and operator(index<>)`
-- `ConcurrencyArray_OperatorBracket_int // Concurrency::array<>::operator(int, int, ...)`
-- `ConcurrencyArray_OperatorBracket_tidx // Concurrency::array<>::operator[tiled_index<>] and operator(tiled_index<>)`
-- `ConcurrencyArrayView_OperatorBracket_idx // Concurrency::array_view<>::operator[index<>] and operator(index<>)`
-- `ConcurrencyArrayView_OperatorBracket_int // Concurrency::array_view<>::operator(int, int, ...)`
-- `ConcurrencyArrayView_OperatorBracket_tidx // Concurrency::array_view<>::operator[tiled_index<>] and operator(tiled_index<>)`
-- `Stdext_HashMap_Int_OperatorBracket_idx`
-- `Std_UnorderedMap_Int_OperatorBracket_idx`
-- `TreeTraverse_Init // Initializes a new tree traversal`
-- `TreeTraverse_Next // Returns nodes in a tree`
-- `TreeTraverse_Skip // Skips nodes in a pending tree traversal`
 
 #### <a name="BKMK_TreeItems_expansion"></a> Expansion de TreeItems
  Si le type visualisé représente une arborescence, le débogueur peut la parcourir et afficher ses enfants à l'aide d'un nœud `TreeItems` . Voici la visualisation pour le type de `std::map` à l’aide d’un nœud `TreeItems` :
@@ -717,7 +702,7 @@ Il y a beaucoup plus de travail pour écrire un visualiseur personnalisé qu’u
 
  Vous pouvez utiliser les attributs `Condition`, `IncludeView`et `ExcludeView` sur `CustomVisualizer` éléments.
 
- ## <a name="limitations"></a>Limitations
+ ## <a name="limitations"></a>Limites
 
 Les personnalisations Natvis fonctionnent avec les classes et les structs, mais pas les typedefs.
 

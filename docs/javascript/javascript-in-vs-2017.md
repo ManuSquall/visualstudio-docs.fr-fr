@@ -12,13 +12,12 @@ caps.latest.revision: 1
 author: bowdenk7
 ms.author: wilkelly
 manager: jillfra
-monikerRange: vs-2017
-ms.openlocfilehash: 653b2576b0076d02f2e18cedc6f9f9890fd98fe5
-ms.sourcegitcommit: 978df2feb5e64228d2e3dd430b299a5c234cda17
+ms.openlocfilehash: 2a0d3657843dcf282e5c9aab8609efe5f9611965
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72888661"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78234954"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>JavaScript dans Visual Studio 2017
 
@@ -185,7 +184,7 @@ Pour un projet donné avec la configuration suivante :
 - `bootstrap`, `jquery`, `jquery-validation` et `jquery-validation-unobtrusive` sont répertoriés dans `bower.json`
 - `kendo-ui` a été ajouté manuellement au dossier lib
 
-![Structure des dossiers](../javascript/media/js-folderstructure.png)
+![Structure de dossiers](../javascript/media/js-folderstructure.png)
 
 Vous pouvez utiliser le fichier `tsconfig.json` suivant pour vérifier, d’une part, que le service de langage analyse uniquement vos fichiers sources dans le dossier `js` et, d’autre part, qu’il récupère et utilise toujours les fichiers `.d.ts` pour les bibliothèques dans votre dossier `lib`.
 
@@ -261,7 +260,7 @@ Pour en savoir plus sur la création de fichiers de déclaration (`.d.ts`), cliq
 Étant donné que le nouveau service de langage repose sur l’analyse statique et non sur un moteur d’exécution (pour plus d’informations sur les différences, lisez [ce problème](https://github.com/Microsoft/TypeScript/issues/4789)), quelques modèles JavaScript ne peuvent plus être détectés.
 Le modèle le plus courant est le modèle « expando ».
 Le service de langage ne peut pas fournir la fonctionnalité IntelliSense sur des objets auxquels des propriétés ont été ajoutées après la déclaration.
-Exemple :
+Par exemple :
 
 ```js
 var obj = {};

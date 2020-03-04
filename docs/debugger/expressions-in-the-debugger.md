@@ -1,6 +1,6 @@
 ---
 title: Expressions dans le débogueur | Microsoft Docs
-ms.date: 02/07/2018
+ms.date: 03/02/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.expressions
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6040988961e918c66ed08e7620607d100b2e07fe
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: b05bc8de6db15261a9861867bc93a398b60bf0d0
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72736217"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78235001"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Expressions dans le débogueur Visual Studio
 Le débogueur Visual Studio inclut des évaluateurs d’expression qui fonctionnent lorsque vous entrez une expression dans la boîte de dialogue **Espion express** , la fenêtre **Espion** ou la fenêtre **Exécution** . Les évaluateurs d’expression travaillent également dans la fenêtre **Points d’arrêt** et à beaucoup d’autres emplacements du débogueur.
@@ -97,14 +97,14 @@ Fonctions intrinsèques du débogueur :
 
   Les fonctions intrinsèques du débogueur peuvent également rendre l’évaluation des expressions plus pratique. Par exemple, il est beaucoup plus facile d’écrire `strncmp(str, "asd")` dans une condition de point d’arrêt que `str[0] == 'a' && str[1] == 's' && str[2] == 'd'`. )
 
-|Zone|Fonctions intrinsèques|
+|Domaine|Fonctions intrinsèques|
 |----------|-------------------------|
 |**Longueur de la chaîne**|strlen, wcslen, strnlen, wcsnlen|
 |**Comparaison de chaînes**|strcmp, wcscmp, stricmp, _stricmp, _strcmpi, wcsicmp, _wcscmpi, _wcsnicmp, strncmp, wcsncmp, strnicmp, wcsnicmp|
-|**Recherche de chaîne**|strchr, wcschr, strstr, wcsstr|
-|**Win32**|GetLastError(), TlsGetValue()|
-|**Windows 8**|WindowsGetStringLen(), WindowsGetStringRawBuffer()<br /><br /> Ces fonctions requièrent que le processus en cours de débogage s’exécute sur Windows 8. Le débogage des fichiers dump générés à partir d’un appareil Windows 8 requiert également que l’ordinateur Visual Studio exécute Windows 8. Toutefois, si vous déboguez un appareil Windows 8 à distance, l’ordinateur Visual Studio peut exécuter Windows 7.|
-|**Divers**|__log2<br /><br /> Retourne le logarithme base 2 d’un entier spécifié, arrondi à l’entier inférieur le plus proche.|
+|**Recherche de chaîne**|strchr, wcschr, memchr, wmemchr, strstr, wcsstr|
+|**Win32**|GetLastError, TlsGetValue|
+|**Windows 8**|WindowsGetStringLen, WindowsGetStringRawBuffer<br /><br /> Ces fonctions requièrent que le processus en cours de débogage s’exécute sur Windows 8. Le débogage des fichiers dump générés à partir d’un appareil Windows 8 requiert également que l’ordinateur Visual Studio exécute Windows 8. Toutefois, si vous déboguez un appareil Windows 8 à distance, l’ordinateur Visual Studio peut exécuter Windows 7.|
+|**Divers**|__log2//retourne le logarithme base 2 d’un entier spécifié, arrondi à l’entier inférieur le plus proche.<br /><br />__findNonNull, DecodeHString, WindowsCompareStringOrdinal, RoInspectCapturedStackBackTrace, CoDecodeProxy, GetEnvBlockLength, DecodeWinRTRestrictedException, DynamicMemberLookup, DecodePointer, DynamicCast<br /><br />Stdext_HashMap_Int_OperatorBracket_idx, Std_UnorderedMap_Int_OperatorBracket_idx<br /><br />ConcurrencyArray_OperatorBracket_idx//Concurrency :: Array < >:: Operator [index < >] et Operator (index < >)<br /><br />ConcurrencyArray_OperatorBracket_int//Concurrency :: Array < >::, opérateur (int, int,...)<br /><br />ConcurrencyArray_OperatorBracket_tidx//Concurrency :: Array < >:: Operator [tiled_index < >] et Operator (tiled_index < >)<br /><br />ConcurrencyArrayView_OperatorBracket_idx//concurrence :: array_view < >:: Operator [index < >] et Operator (index < >)<br /><br />ConcurrencyArrayView_OperatorBracket_int//Concurrency :: array_view < >::, opérateur (int, int,...)<br /><br />ConcurrencyArrayView_OperatorBracket_tidx//concurrence :: array_view < >:: Operator [tiled_index < >] et Operator (tiled_index < >)<br /><br />TreeTraverse_Init//Initialise une nouvelle traversée d’arborescence<br /><br />TreeTraverse_Next//retourne des nœuds dans une arborescence<br /><br />TreeTraverse_Skip//ignore les nœuds dans un parcours d’arborescence en attente'|
 
 ## <a name="ccli---unsupported-expressions"></a>Expressions non prises en charge en C++/CLI
 

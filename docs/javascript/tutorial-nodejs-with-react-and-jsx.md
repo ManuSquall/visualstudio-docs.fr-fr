@@ -12,20 +12,20 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: faf418155708ebc577efea57ed3352953a8d577d
-ms.sourcegitcommit: 5920a8b0c68350f11eabc1652a19b04d0196881a
+ms.openlocfilehash: f60cd71f1dda4e401acef1db9ccd8c5a0be2b961
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75622568"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78235091"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutoriel : Créer une application Node.js et React dans Visual Studio
 
 Visual Studio vous permet de créer facilement un projet Node.js et de tirer parti d’IntelliSense et d’autres fonctionnalités intégrées prenant en charge Node.js. Dans ce tutoriel pour Visual Studio, vous créez un projet d’application web Node.js à partir d’un modèle Visual Studio. Vous créez ensuite une application simple avec React.
 
-Dans ce didacticiel, vous apprendrez à :
+Dans ce tutoriel, vous allez apprendre à :
 > [!div class="checklist"]
-> * Créer un projet Node.js
+> * Création d’un projet Node.js
 > * Ajouter des packages npm
 > * Ajouter du code React à votre application
 > * Transpiler du code JSX
@@ -55,7 +55,7 @@ JSX est une extension de syntaxe JavaScript, généralement utilisée avec React
 
 webpack regroupe des fichiers JavaScript pour qu’ils puissent s’exécuter dans un navigateur. Il peut également transformer ou packager d’autres ressources et composants. Il est souvent utilisé pour spécifier un compilateur, comme Babel ou TypeScript, pour transpiler du code JSX ou TypeScript en code JavaScript standard.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Conditions préalables requises
 
 * Au préalable, vous devez avoir installé Visual Studio et la charge de travail de développement Node.js.
 
@@ -74,15 +74,17 @@ webpack regroupe des fichiers JavaScript pour qu’ils puissent s’exécuter da
 
     Ce tutoriel a été testé avec la version 10.16.0.
 
-    Si vous ne l’avez pas déjà fait, installez la version LTS à partir du site web [Node.js](https://nodejs.org/en/download/). En règle générale, Visual Studio détecte automatiquement le runtime Node.js installé. S’il ne détecte aucun runtime installé, vous pouvez configurer votre projet pour référencer le runtime installé dans la page de propriétés (après avoir créé un projet, cliquez avec le bouton droit sur le nœud de projet, puis choisissez **Propriétés**).
+    Si vous ne l’avez pas installé, nous vous recommandons d’installer la version LTS à partir du site Web [node. js](https://nodejs.org/en/download/) pour une meilleure compatibilité avec les infrastructures et les bibliothèques externes. Node. js est conçu pour les architectures 32 bits et 64 bits. Les outils node. js dans Visual Studio, inclus dans la charge de travail node. js, prennent en charge les deux versions. Une seule est requise et le programme d’installation de node. js ne prend en charge qu’un seul élément à la fois.
+    
+    En règle générale, Visual Studio détecte automatiquement le runtime Node.js installé. S’il ne détecte pas un Runtime installé, vous pouvez configurer votre projet pour référencer le Runtime installé dans la page Propriétés (après avoir créé un projet, cliquer avec le bouton droit sur le nœud du projet, choisir **Propriétés**et définir le **chemin node. exe**). Vous pouvez utiliser une installation globale de node. js ou vous pouvez spécifier le chemin d’accès à un interpréteur local dans chacun de vos projets node. js. 
 
-## <a name="create-a-project"></a>Créer un projet
+## <a name="create-a-project"></a>Création d’un projet
 
 Commencez par créer un projet d’application web Node.js.
 
 1. Ouvrez Visual Studio.
 
-1. Créez un nouveau projet.
+1. Créez un projet.
 
     ::: moniker range=">=vs-2019"
     Appuyez sur **Échap** pour fermer la fenêtre de démarrage. Tapez **CTRL + Q** pour ouvrir la zone de recherche, tapez **node. js**, puis choisissez l' **application Web node. js vide-JavaScript**. (Bien que ce didacticiel utilise le compilateur de machine à écrire, les étapes requièrent que vous démarriez avec le modèle **JavaScript** .)
@@ -127,7 +129,7 @@ Cette application nécessite un certain nombre de modules npm pour s’exécuter
 
 1. Dans la boîte de dialogue **Installer de nouveaux packages npm**, recherchez le package react, puis sélectionnez **Installer le package** pour installer ce dernier.
 
-    ![Installer des packages npm](../javascript/media/tutorial-nodejs-react-install-packages.png)
+    ![Installer les packages npm](../javascript/media/tutorial-nodejs-react-install-packages.png)
 
     Sélectionnez la fenêtre **Sortie** pour voir la progression de l’installation du package (sélectionnez **Npm** dans le champ **Afficher la sortie à partir de**). Une fois installé, le package apparaît sous le nœud **npm**.
 
@@ -336,7 +338,7 @@ Chaque fois que vous apportez des changements à *app.tsx*, vous devez réexécu
    }
    ```
 
-## <a name="run-the-app"></a>Exécuter l'application
+## <a name="run-the-app"></a>Exécuter l’application
 
 1. Sélectionnez Microsoft Edge ou Chrome comme cible de débogage actuelle.
 
@@ -412,7 +414,7 @@ Pour ce scénario, utilisez Chrome.
 2. Démarrez votre navigateur avec le débogage activé.
 
     ::: moniker range=">=vs-2019"
-    À compter de Visual Studio 2019, vous pouvez définir l’indicateur `--remote-debugging-port=9222` au lancement du navigateur en sélectionnant **Parcourir avec...** > dans la barre d’outils **Déboguer** , puis en sélectionnant **Ajouter**et en définissant l’indicateur dans le champ **arguments** . Utilisez un autre nom convivial pour le navigateur, tel que **Edge avec débogage** ou **chrome avec débogage**. Pour plus d’informations, consultez les [notes de publication](/visualstudio/releases/2019/release-notes-v16.2).
+    À compter de Visual Studio 2019, vous pouvez définir l’indicateur `--remote-debugging-port=9222` au lancement du navigateur en sélectionnant **Parcourir avec...** > dans la barre d’outils **Déboguer** , puis en sélectionnant **Ajouter**et en définissant l’indicateur dans le champ **arguments** . Utilisez un autre nom convivial pour le navigateur, tel que **Edge avec débogage** ou **chrome avec débogage**. Pour plus d’informations, voir les [Notes de publication](/visualstudio/releases/2019/release-notes-v16.2).
 
     ![Configurer votre navigateur pour qu’il s’ouvre avec le débogage activé](../javascript/media/tutorial-nodejs-react-edge-with-debugging.png)
 
@@ -457,7 +459,7 @@ Pour ce scénario, utilisez Chrome.
     },
     ```
 
-    par le code suivant :
+    par ce code :
 
     ```javascript
     output: {
@@ -523,7 +525,7 @@ Pour ce scénario, utilisez Chrome.
 
    * Si vous devez vous arrêter dans le code dans *app-bundle. js* et que vous ne pouvez pas le faire, supprimez le fichier de mappage source, *app-bundle. js. map*.
 
-## <a name="next-steps"></a>Étapes suivantes :
+## <a name="next-steps"></a>Étapes suivantes
 
 > [!div class="nextstepaction"]
 > [Déployer l’application sur Linux App Service](../javascript/publish-nodejs-app-azure.md)

@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ecc14e4dc98caa17ac3849e9231ab17491f2acc8
-ms.sourcegitcommit: 2f64b3b231900018fceafb72b5a1c65140213a18
+ms.openlocfilehash: 416926742da427ba7ff18c6fa07de6477361cfa3
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73428784"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78235078"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Tutoriel : Créer une application Node.js et Express dans Visual Studio
 
@@ -34,12 +34,12 @@ Si vous n’avez pas encore installé Visual Studio, accédez à la page [Télé
 
 ::: moniker-end
 
-Dans ce didacticiel, vous apprendrez à :
+Dans ce tutoriel, vous allez apprendre à :
 > [!div class="checklist"]
-> * Créer un projet Node.js
+> * Création d’un projet Node.js
 > * Ajouter du code
 > * Utiliser IntelliSense pour modifier du code
-> * Exécuter l'application
+> * Exécuter l’application
 > * Atteindre un point d’arrêt dans le débogueur
 
 ## <a name="before-you-begin"></a>Avant de commencer
@@ -58,7 +58,7 @@ npm est le Gestionnaire de package par défaut de Node.js. Le Gestionnaire de pa
 
 Express est un framework d’application web utilisé comme framework serveur pour Node.js, qui permet de générer des applications web. Express vous permet d’utiliser différents frameworks frontend pour créer une IU, par exemple Pug (appelé auparavant Jade). Pug est utilisé dans ce tutoriel.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Conditions préalables requises
 
 * Au préalable, vous devez avoir installé Visual Studio et la charge de travail de développement Node.js.
 
@@ -75,7 +75,9 @@ Express est un framework d’application web utilisé comme framework serveur po
 
 * Le runtime Node.js doit être installé.
 
-    Si vous ne l’avez pas déjà fait, installez la version LTS à partir du site web [Node.js](https://nodejs.org/en/download/). En règle générale, Visual Studio détecte automatiquement le runtime Node.js installé. S’il ne détecte aucun runtime installé, vous pouvez configurer votre projet pour référencer le runtime installé dans la page de propriétés (après avoir créé un projet, cliquez avec le bouton droit sur le nœud de projet, puis choisissez **Propriétés**).
+    Si vous ne l’avez pas installé, nous vous recommandons d’installer la version LTS à partir du site Web [node. js](https://nodejs.org/en/download/) pour une meilleure compatibilité avec les infrastructures et les bibliothèques externes. Node. js est conçu pour les architectures 32 bits et 64 bits. Les outils node. js dans Visual Studio, inclus dans la charge de travail node. js, prennent en charge les deux versions. Une seule est requise et le programme d’installation de node. js ne prend en charge qu’un seul élément à la fois.
+    
+    En règle générale, Visual Studio détecte automatiquement le runtime Node.js installé. S’il ne détecte pas un Runtime installé, vous pouvez configurer votre projet pour référencer le Runtime installé dans la page Propriétés (après avoir créé un projet, cliquer avec le bouton droit sur le nœud du projet, choisir **Propriétés**et définir le **chemin node. exe**). Vous pouvez utiliser une installation globale de node. js ou vous pouvez spécifier le chemin d’accès à un interpréteur local dans chacun de vos projets node. js. 
 
     Ce tutoriel a été testé avec Node.js 8.10.0.
 
@@ -87,7 +89,7 @@ Dans ce tutoriel, vous commencez avec un projet simple contenant du code pour un
 
 1. Ouvrez Visual Studio.
 
-1. Créez un nouveau projet.
+1. Créez un projet.
 
     ::: moniker range=">=vs-2019"
     Appuyez sur **Échap** pour fermer la fenêtre de démarrage. Tapez **Ctrl+Q** pour ouvrir la zone de recherche, tapez **Node.js**, puis choisissez **Créer une nouvelle application Azure Node.js Express 4 de base** (JavaScript). Dans la boîte de dialogue qui apparaît, choisissez **Créer**.
@@ -99,7 +101,7 @@ Dans ce tutoriel, vous commencez avec un projet simple contenant du code pour un
 
     Visual Studio crée la solution et ouvre votre projet dans le volet droit. Le fichier projet *app.js* s’ouvre dans l’éditeur (volet gauche).
 
-    ![Structure du projet](../javascript/media/tutorial-project-structure.png)
+    ![Structure de projet](../javascript/media/tutorial-project-structure.png)
 
     (1) Votre projet est mis en **gras**, avec le nom que vous avez donné dans la boîte de dialogue **Nouveau projet**. Dans le système de fichiers, ce projet est représenté par un fichier *.njsproj* au sein de votre dossier de projet. Vous pouvez définir les propriétés et les variables d’environnement associées au projet en cliquant avec le bouton droit sur le projet et en choisissant **Propriétés**. Vous pouvez effectuer des allers-retours avec d’autres outils de développement, car le fichier projet n’apporte pas de changements personnalisés à la source de projet Node.js.
 
@@ -214,7 +216,7 @@ Vous allez ensuite exécuter l’application avec le débogueur Visual Studio at
 
     ![Définir un point d'arrêt](../javascript/media/tutorial-nodejs-set-breakpoint.png)
 
-## <a name="run-the-application"></a>Exécuter l'application
+## <a name="run-the-application"></a>Exécution de l'application
 
 1. Sélectionnez la cible de débogage (par exemple, Microsoft Edge ou Chrome) dans la barre d’outils Débogage.
 
@@ -267,7 +269,7 @@ Vous allez ensuite exécuter l’application avec le débogueur Visual Studio at
 
 Félicitations ! Vous avez terminé ce didacticiel.
 
-## <a name="next-steps"></a>Étapes suivantes :
+## <a name="next-steps"></a>Étapes suivantes
 
 > [!div class="nextstepaction"]
 > [Déployer l’application sur Linux App Service](../javascript/publish-nodejs-app-azure.md)

@@ -1,18 +1,18 @@
 ---
-title: Concevoir en XAML dans Visual Studio et Blend
+title: Concevoir du code XAML dans Visual Studio et dans Blend pour Visual Studio
 titleSuffix: ''
-ms.date: 08/05/2019
+ms.date: 02/28/2020
 ms.topic: conceptual
 ms.assetid: 288e2415-9fcf-408e-bc35-9848315e14fd
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 97946fc2ed79b83fbc7d3ce3c3dc4960934eb5ab
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: decba18e6b11b2c861edc20ff0a8e1e1c8f77b4a
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592979"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78235180"
 ---
 # <a name="design-xaml-in-visual-studio-and-blend-for-visual-studio"></a>Concevoir du code XAML dans Visual Studio et Blend pour Visual Studio
 
@@ -20,15 +20,23 @@ Visual Studio et Blend pour Visual Studio fournissent tous deux des outils visue
 
 Vous pouvez basculer entre Visual Studio et Blend pour Visual Studio, et vous pouvez même ouvrir un même projet simultanément dans les deux environnements IDE. Les modifications qui ont été enregistrées dans les fichiers XAML dans l’un des environnements IDE peuvent être appliquées par le biais d’un rechargement automatique, lorsque vous basculez vers l’autre environnement IDE. Vous pouvez contrôler le comportement de rechargement en accédant à **Outils** > **Options** > **Environnement** > **Documents**, dans l’un des environnements IDE.
 
-## <a name="installation"></a>Installation de
+## <a name="installation"></a>Installation
 
 - Pour créer des applications WPF, installez la charge de travail **Développement .NET Desktop** dans Visual Studio. Blend pour Visual Studio sera également installé.
+
+     ![Capture d’écran de la charge de travail développement .NET Desktop du Visual Studio Installer](../xaml-tools/media/dotnet-desktop-dev-workload.png)
+
 - Pour créer des applications UWP, installez la charge de travail **Développement pour la plateforme Windows universelle** dans Visual Studio. Blend pour Visual Studio sera également installé.
+
+     ![Capture d’écran de la charge de travail de développement plateforme Windows universelle à partir du Visual Studio Installer](../xaml-tools/media/uwp-workload.png)
+
 - Pour créez des applications Xamarin.Forms, installer la charge de travail **Développement mobile en .NET** dans Visual Studio. Blend pour Visual Studio *n’est pas* installé ; Blend ne prend pas en charge les applications Xamarin.Forms.
+
+     ![Capture d’écran de la charge de travail développement mobile avec .NET de la Visual Studio Installer](../xaml-tools/media/mobile-dev-dotnet-workload.png)
 
 ## <a name="shared-capabilities"></a>Fonctionnalités partagées
 
-Pour la plupart des tâches de développement de base, Visual Studio et Blend pour Visual Studio partagent le même ensemble de fenêtres et de fonctionnalités, avec quelques légères différences. Voici quelques points clés :
+Pour la plupart des tâches de développement de base, Visual Studio et Blend pour Visual Studio partagent le même ensemble de fenêtres et de fonctionnalités, avec quelques légères différences. Les fonctions clés sont notamment les suivantes :
 
 - **IntelliSense :** Les deux IDE prennent en charge des fonctionnalités IntelliSense telles que la saisie semi-automatique des instructions.
 
@@ -36,13 +44,13 @@ Pour la plupart des tâches de développement de base, Visual Studio et Blend po
 
 - **Rechargement de fichier :** Vous pouvez modifier vos fichiers XAML dans Visual Studio ou Blend pour Visual Studio. Les fichiers modifiés qui ont été enregistrés sont rechargés automatiquement lorsque vous passez d’un IDE à l’autre. Vous pouvez contrôler le comportement de rechargement en accédant à **Outils** > **Options** > **Environnement** > **Documents**, dans l’un des environnements IDE.
 
-- **Dispositions et paramètres synchronisés :** Les préférences et les paramètres de disposition des fenêtres Outil personnalisées pour Visual Studio ou Blend pour Visual Studio sont synchronisés entre vos appareils et versions lorsque vous vous connectez avec le même compte de personnalisation. Consultez [Synchroniser les paramètres sur plusieurs ordinateurs](../ide/synchronized-settings-in-visual-studio.md).
+- **Dispositions et paramètres synchronisés :** Conception de la fenêtre outil de personnalisation les préférences et les paramètres de configuration pour Visual Studio ou Blend pour Visual Studio sont synchronisés entre vos appareils et versions lorsque vous vous connectez avec le même compte de personnalisation. Consultez [Synchroniser les paramètres sur plusieurs ordinateurs](../ide/synchronized-settings-in-visual-studio.md).
 
 ## <a name="advanced-capabilities-in-blend-for-visual-studio"></a>Fonctionnalités avancées dans Blend pour Visual Studio
 
 Pour accroître votre productivité, utilisez Blend pour Visual Studio pour les tâches suivantes. Pour ces tâches, Blend pour Visual Studio s’avère plus rapide et plus riche en fonctionnalités que le concepteur Visual Studio ou le code seul.
 
-| Tâche | Visual Studio | Blend pour Visual Studio | En savoir plus |
+| Tâche | Visual Studio | Blend pour Visual Studio | Informations complémentaires |
 | - | - | - | - |
 | **Concevoir des états visuels** | Il n’existe pas d’outil permettant de concevoir des états visuels. Vous devez les créer par programmation. | Utilisez les outils de conception pour modifier l’apparence d’un contrôle en fonction de son état. | [États visuels](modify-the-style-of-objects-in-blend.md#visual-states) |
 | **Créer des animations** |Il n'existe aucun outil de conception d'animations ; vous devez les créer par programmation. Cela nécessite une bonne connaissance du système d'animation et de minutage de WPF, ainsi que des compétences étendues en matière de codage.|Vous créez les animations de manière visuelle et pouvez en afficher un aperçu dans Blend pour Visual Studio. Il s'agit d'une méthode plus rapide et plus précise que celle qui consiste à créer des animations dans le code. Vous pouvez ajouter des déclencheurs pour gérer l'interaction des utilisateurs et basculer vers le code pour ajouter des gestionnaires d'événements et d'autres fonctionnalités.|[Animer des objets](../xaml-tools/animate-objects-in-xaml-designer.md)|
@@ -51,3 +59,8 @@ Pour accroître votre productivité, utilisez Blend pour Visual Studio pour les 
 |**Connecter votre interface utilisateur à des données**|Vous pouvez créer une source de données à partir de ressources, telles que des bases de données SQL Server, des services WCF ou web, des objets ou des listes SharePoint, et lier la source de données aux contrôles de votre interface utilisateur.<br /><br />Des données doivent être créées manuellement au moment de la conception pour une expérience de conception interactive.|Pour les applications .NET Framework, créez des exemples de données en toute simplicité à des fins de prototypage et de test. Passez à des données en direct dès que vous êtes prêt.<br /><br />Les capacités de génération de données de Blend pour Visual Studio sont remarquables (vous pouvez facilement ajouter noms, nombres, URL et photos à la volée) et peuvent vous faire gagner beaucoup de temps.<br /><br />Pour les données en direct, vous pouvez lier les contrôles de votre interface utilisateur à un fichier XML ou à une source de données CLR.|[Afficher des données](display-data-in-blend.md)|
 
 Pour plus d’informations sur la conception XAML avancée, consultez [Créer une interface utilisateur à l’aide de Blend pour Visual Studio](../xaml-tools/creating-a-ui-by-using-blend-for-visual-studio.md).
+
+## <a name="see-also"></a>Voir aussi
+
+- [Vue d’ensemble du langage XAML](xaml-overview.md)
+- [Présentation de Blend pour Visual Studio](creating-a-ui-by-using-blend-for-visual-studio.md)

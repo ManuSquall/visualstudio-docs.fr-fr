@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/20/2019
 ms.topic: conceptual
 description: Découvrez les responsabilités des administrateurs des abonnements.
-ms.openlocfilehash: 05b1a66eb6589f1d0d9502a754f67d0f9c31424f
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.openlocfilehash: 1faa257278d1a477720d73271c6487d5d1618d8e
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75851876"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78235156"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>Vue d’ensemble des responsabilités des administrateurs
 En tant qu’administrateur, vous pouvez gérer les abonnements de votre organisation.  Le rôle d’administrateur a également la responsabilité de vérifier que les abonnements sont gérés conformément aux termes du contrat de licence. Cet article présente les responsabilités, les avantages et les limitations du rôle d’administrateur.
@@ -35,9 +35,15 @@ Les abonnements Visual Studio permettent aux membres de l’équipe de développ
 | Réattribution de licences                     | Quand un utilisateur quitte une équipe et ne nécessite plus de licence, vous pouvez réattribuer la licence passé un délai de 90 jours. Quand vous réattribuez une licence, toutes les clés de produit qui ont déjà été utilisées restent disponibles, mais elles ne seront pas remplacées. Pour les organisations qui ont des contrats Entreprise, les avantages qui ont été utilisés par l’utilisateur initial, comme une formation Pluralsight, seront réinitialisés.                                                                                                                                                                                                                                                 |
 | Exception pour les utilisateurs finaux                  | À la fin d’un projet de développement de logiciel, les utilisateurs finaux vérifient généralement une application et déterminent si elle répond aux critères exigés pour la mise en production. Ce processus est appelé « test d’acceptation utilisateur (UAT) ». Les membres d’équipe, tels qu’un commanditaire ou un chef de produit, peuvent jouer le rôle de proxy pour les utilisateurs finaux. Les utilisateurs finaux qui ne disposent pas d’un abonnement Visual Studio peuvent accéder aux logiciels pour le test UAT à condition que l’utilisation des logiciels soit conforme à tous les termes du contrat de licence Visual Studio. Il est rare qu’une personne dont le rôle principal est la conception, le développement ou le test du logiciel soit également qualifiée d’utilisateur final. |
 
-## <a name="next-steps"></a>Étapes suivantes :
+## <a name="see-also"></a>Voir aussi
+- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentation Azure](https://docs.microsoft.com/azure/)
+- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>Étapes suivantes
 En savoir plus sur les responsabilités des administrateurs :
 - [Inventaire de l’environnement de préproduction](admin-inventory.md)
-- [Gérer de grandes équipes et des fournisseurs externes](manage-teams.md)
-- [Suivre les affectations d’utilisateurs et traiter les commandes](assignments-orders.md)
+- [Gérer des grandes équipes et des prestataires externes](manage-teams.md)
+- [Suivre l’attribution des utilisateurs et traiter les commandes](assignments-orders.md)
 - Utiliser le rapport [Utilisation maximale](maximum-usage.md) pour suivre les engagements d’achat

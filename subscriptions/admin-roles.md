@@ -3,23 +3,23 @@ title: Rôles Super administrateur et Administrateur dans le portail d’adminis
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 08/21/2019
+ms.date: 03/02/2020
 ms.topic: conceptual
 description: Découvrez les rôles Super administrateur et Administrateur, et comment affecter des administrateurs.
-ms.openlocfilehash: 1beda505008815b87a0de98ee597d7b5ec97693d
-ms.sourcegitcommit: c90a998716b3dfa614dedc61a1bea515364efbec
-ms.translationtype: HT
+ms.openlocfilehash: ef0ba479c099bf1e34fe871386984297b130ffd6
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "70000939"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78234821"
 ---
 # <a name="super-admins-and-administrators-for-visual-studio-subscription-agreements"></a>Super administrateurs et administrateurs pour les contrats d’abonnement Visual Studio
 
 Il existe deux rôles différents dans le nouveau portail d’administration des abonnements Visual Studio pour les clients avec licence en volume. Ces rôles sont similaires au rôle Contact principal/Destinataire des avis et Gestionnaire d’abonnements qui existaient dans le Centre de gestion des licences en volume (VLSC).
 
-**Super administrateurs :** Lors de la configuration initiale d’une organisation, le Contact principal ou le Destinataire des avis devient super administrateur par défaut. Le contact principal ou l’interlocuteur pour les notifications peut choisir d’affecter des super administrateurs ou des administrateurs supplémentaires. Un super administrateur peut ajouter et supprimer d’autres administrateurs, ainsi que des abonnés. S’il y a plus de deux super administrateurs définis dans le système, un super administrateur peut en supprimer, mais il doit en garder au minimum deux pour des raisons de sécurité.
+**Super administrateurs :** Lors de la configuration initiale d’une organisation, le contact principal ou le contact avis devient un super administrateur par défaut. Le contact principal ou l’interlocuteur pour les notifications peut choisir d’affecter des super administrateurs ou des administrateurs supplémentaires. Un super administrateur peut ajouter et supprimer d’autres administrateurs, ainsi que des abonnés. S’il y a plus de deux super administrateurs définis dans le système, un super administrateur peut en supprimer, mais il doit en garder au minimum deux pour des raisons de sécurité.
 
-**Administrateurs :** Un administrateur peut être affecté seulement par un super administrateur. Un administrateur peut gérer les abonnés seulement dans les contrats que le super administrateur leur affecte.
+**Administrateurs :** Un administrateur ne peut être attribué qu’à un super administrateur. Un administrateur peut uniquement gérer les abonnés dans les contrats que le Super administrateur leur affecte.
 
 ## <a name="assigning-administrators"></a>Affectation des administrateurs
 Pour affecter de nouveaux administrateurs :
@@ -39,6 +39,13 @@ Pour affecter de nouveaux administrateurs :
 
 ## <a name="resources"></a>Ressources
 - [Prise en charge des abonnements et de l’administration de Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
+
+## <a name="see-also"></a>Voir aussi
+- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentation Azure](https://docs.microsoft.com/azure/)
+- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
 
 ## <a name="next-steps"></a>Étapes suivantes
 - Découvrir comment [attribuer des abonnements](assign-license.md)

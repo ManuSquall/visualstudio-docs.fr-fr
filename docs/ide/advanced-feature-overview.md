@@ -7,12 +7,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3ece317d753cb5c4b0b4e5b0e02707a088e8917
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: f65ce2b986114dc553b87db846262c931d74b4c0
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591734"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78235197"
 ---
 # <a name="features-of-visual-studio"></a>Fonctionnalités de Visual Studio
 
@@ -40,7 +40,7 @@ Pour en savoir plus sur la configuration de Visual Studio sur votre système, co
 
 Visual Studio propose une suite d’outils qui facilitent la création d’applications Cloud alimentées par Microsoft Azure. Vous pouvez configurer, générer, déboguer, packager et déployer des applications et services sur Microsoft Azure directement à partir de l’IDE. Pour obtenir les outils et modèles de projet Azure, sélectionnez la charge de travail **Développement Azure** lors de l’installation de Visual Studio.
 
-![Charge de travail Développement Azure](../data-tools/media/azure-development-workload.png)
+![Charge de travail de développement Azure](../data-tools/media/azure-development-workload.png)
 
 ::: moniker range="vs-2017"
 
@@ -84,7 +84,7 @@ Visual Studio vous permet de générer des applications et des jeux pour les app
 
 - Générez des jeux en 2D et 3D en c# à l’aide de [Visual Studio Tools pour Unity](../cross-platform/visual-studio-tools-for-unity.md).
 
-- Générez des applications C++ natives pour les appareils iOS, Android et Windows. Partagez du code commun dans des bibliothèques conçues pour iOS, Android et Windows, à l’aide du [C++ pour le développement multiplateforme](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md).
+- Générez des applications C++ natives pour les appareils iOS, Android et Windows. Partagez du code commun dans des bibliothèques conçues pour iOS, Android et Windows, à l’aide du [C++ pour le développement multiplateforme](/cpp/cross-platform/visual-cpp-for-cross-platform-mobile-development).
 
 - Déployez, testez et déboguez des applications Android avec [l’émulateur Android](../cross-platform/visual-studio-emulator-for-android.md).
 
@@ -96,7 +96,7 @@ L’**Explorateur de serveurs** vous aide à parcourir et à gérer les instance
 
 L’**Explorateur d’objets SQL Server** de Visual Studio offre une vue des objets de base de données similaire à celle de SQL Server Management Studio. L’Explorateur d’objets SQL Server vous permet d’effectuer des travaux légers de conception et d’administration de base de données. Voici quelques exemples de travaux : modification de données de tables, comparaison de schémas, exécution de requêtes à l’aide de menus contextuels directement à partir de l’Explorateur d’objets SQL Server, etc.
 
-![Explorateur d'objets SQL Server](../ide/media/vs2015_sqlobjectexplorer.png)
+![Explorateur d’objets SQL Server](../ide/media/vs2015_sqlobjectexplorer.png)
 
 ## <a name="debug-test-and-improve-your-code"></a>Déboguer, tester et améliorer votre code
 
@@ -112,7 +112,7 @@ Quand votre application est prête à être déployée auprès d’utilisateurs 
 
 ## <a name="manage-your-source-code-and-collaborate-with-others"></a>Gérer votre code source et collaborer avec d’autres utilisateurs
 
-Vous pouvez gérer votre code source dans des dépôts Git hébergés par tous types de fournisseurs, notamment GitHub. Vous pouvez aussi utiliser [Azure DevOps Services](/azure/devops/index) pour gérer le code, ainsi que les bogues et les éléments de travail de tout votre projet. Pour en savoir plus sur la gestion des dépôts Git dans Visual Studio avec Team Explorer, consultez la page [Bien démarrer avec Git et Azure Repos](/azure/devops/repos/git/gitquickstart?tabs=visual-studio). Visual Studio dispose également d’autres fonctionnalités de contrôle de code source intégrées. Pour plus d’informations sur ces fonctionnalités, consultez le billet de blog [New Git Features in Visual Studio](https://devblogs.microsoft.com/devops/new-git-features-in-visual-studio-2017/).
+Vous pouvez gérer votre code source dans des référentiels Git hébergés par tous types de fournisseurs, y compris GitHub. Vous pouvez aussi utiliser [Azure DevOps Services](/azure/devops/index) pour gérer le code, ainsi que les bogues et les éléments de travail de tout votre projet. Pour en savoir plus sur la gestion des dépôts Git dans Visual Studio avec Team Explorer, consultez la page [Bien démarrer avec Git et Azure Repos](/azure/devops/repos/git/gitquickstart?tabs=visual-studio). Visual Studio dispose également d’autres fonctionnalités de contrôle de code source intégrées. Pour plus d’informations sur ces fonctionnalités, consultez le billet de blog [New Git Features in Visual Studio](https://devblogs.microsoft.com/devops/new-git-features-in-visual-studio-2017/).
 
 Azure DevOps Services est un ensemble de services cloud qui permettent la planification, l’hébergement, l’automatisation et le déploiement des logiciels ainsi que la collaboration entre équipes. Azure DevOps Services prend en charge les dépôts Git (gestion de versions distribuée) et Team Foundation Version Control (gestion de versions centralisée). Il prend en charge les pipelines de build et de mise en production en continu (CI/CD) du code stocké dans les systèmes de gestion de versions. Azure DevOps Services prend également en charge les méthodologies de développement Scrum, CMMI et Agile.
 

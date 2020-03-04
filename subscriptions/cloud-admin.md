@@ -1,38 +1,38 @@
 ---
-title: Configuration des administrateurs pour les abonnements cloud | Microsoft Docs
+title: Configuration des administrateurs pour les abonnements mensuels | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
+ms.author: lank
 manager: lank
-ms.date: 07/17/2019
+ms.date: 03/02/2020
 ms.topic: conceptual
-description: Configuration des administrateurs pour les abonnements cloud
-ms.openlocfilehash: 62a350e6061444e3c75878dfd89739011c4641d5
-ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
-ms.translationtype: HT
+description: Configuration des administrateurs pour les abonnements mensuels
+ms.openlocfilehash: d9ae6f8aac48b9d54b851d543a72fd98854c1131
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68315207"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78235210"
 ---
-# <a name="set-up-administrators-for-visual-studio-cloud-subscriptions"></a>Configurer des administrateurs pour les abonnements cloud Visual Studio
+# <a name="set-up-administrators-for-visual-studio-monthly-subscriptions"></a>Configurer des administrateurs pour les abonnements mensuels Visual Studio
 
-Les abonnements cloud Visual Studio sont gérés par des administrateurs. Ces personnes peuvent attribuer des abonnements, modifier des assignations, ajouter ou supprimer des abonnements et effectuer d’autres tâches de gestion des abonnements.
+Les abonnements mensuels Visual Studio sont gérés par les administrateurs. Ces personnes peuvent attribuer des abonnements, modifier des assignations, ajouter ou supprimer des abonnements et effectuer d’autres tâches de gestion des abonnements.
 
 ## <a name="the-azure-subscription-owner-is-the-first-administrator"></a>Le propriétaire de l’abonnement Azure est le premier administrateur
 
-Quand vous achetez des abonnements cloud Visual Studio, en tant que propriétaire de l’abonnement Azure utilisé pour effectuer les achats, vous êtes automatiquement configuré comme administrateur de ces abonnements.
+Lorsque vous achetez des abonnements mensuels Visual Studio, en tant que propriétaire de l’abonnement Azure utilisé pour effectuer les achats, vous êtes automatiquement configuré en tant qu’administrateur de ces abonnements.
 
-Vous pouvez acheter des abonnements cloud via [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions) ou en contactant un fournisseur de solutions cloud. Si vous effectuez l’achat via Visual Studio Marketplace, vous aurez la possibilité de gérer les utilisateurs à la fin de celui-ci. En choisissant cette option, vous accédez au portail d’administration des abonnements Visual Studio - [https://manage.visualstudio.com](https://manage.visualstudio.com).
+Vous pouvez acheter des abonnements mensuels par le biais du [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions)ou en contactant un fournisseur de solutions Cloud. Si vous effectuez l’achat via Visual Studio Marketplace, vous aurez la possibilité de gérer les utilisateurs à la fin de celui-ci. Le choix de cette option vous permet d’atteindre le portail d’administration des abonnements Visual Studio- [https://manage.visualstudio.com](https://manage.visualstudio.com).
 
-Une fois que vous avez acheté des abonnements, vous pouvez accéder au [portail d’administration](https://manage.visualstudio.com) à tout moment. Il vous suffit de vous connecter au portail et de sélectionner l’abonnement Azure approprié dans l’angle supérieur gauche.
+Une fois que vous avez acheté des abonnements, vous pouvez accéder au [portail d’administration](https://manage.visualstudio.com) à tout moment. Connectez-vous simplement au portail et sélectionnez l’abonnement Azure approprié dans l’angle supérieur gauche.
 
-En tant que propriétaire de l’abonnement Azure utilisé pour acheter les abonnements cloud, vous pouvez également affecter des administrateurs supplémentaires.
+En tant que propriétaire de l’abonnement Azure utilisé pour acheter les abonnements mensuels, vous pouvez également affecter des administrateurs supplémentaires.
 
 ## <a name="add-administrators"></a>Ajouter des administrateurs
 
 Pour ajouter des administrateurs :
 
 1. Connectez-vous au portail Azure sur [portal.azure.com](https://portal.azure.com).
-2. Connectez-vous avec le compte que vous avez utilisé pour acheter les abonnements cloud Visual Studio.
+2. Connectez-vous avec le compte que vous avez utilisé pour acheter les abonnements mensuels Visual Studio.
 3. Dans le volet de navigation gauche, faites défiler vers le bas jusqu’à **Gestion des coûts + facturation**.
 4. Dans la liste **Mes abonnements**, sélectionnez l’abonnement Azure que vous avez utilisé pour effectuer l’achat.
 5. Cliquez sur **Contrôle d’accès**, qui se trouve près du haut de la liste dans le volet de navigation gauche.
@@ -43,9 +43,25 @@ Pour ajouter des administrateurs :
 10. Cliquez sur **Enregistrer**.
 11. Cliquez sur l’onglet **Attributions de rôles** pour vérifier que l’utilisateur sélectionné apparaît désormais en tant qu’administrateur de l’accès utilisateur.
 
-Le nouvel administrateur peut maintenant se connecter au [portail d’administration](https://manage.visualstudio.com), sélectionner le même abonnement Azure que celui qui a été utilisé pour acheter les abonnements cloud via la liste située dans le coin supérieur gauche de la page, et commencer à gérer ces abonnements.
+Le nouvel administrateur peut maintenant se connecter au [portail d’administration](https://manage.visualstudio.com), sélectionner le même abonnement Azure que celui qui a été utilisé pour acheter les abonnements mensuels dans la liste située dans le coin supérieur gauche de la page et commencer à gérer ces abonnements.
 
 > [!NOTE]
-> Si vous voyez que des utilisateurs bénéficiant d’un accès leur permettant de modifier vos abonnements cloud alors que vous ne les avez pas établis en tant qu’administrateurs, c’est peut-être qu’ils ont des rôles qui leur permettent de gérer des abonnements dans l’abonnement Azure sous-jacent. Ceci inclut les rôles suivants : propriétaire, contributeur, administrateur de service ou coadministrateur. Pour plus d’informations, consultez [Ajouter des gestionnaires de facturation](/azure/devops/organizations/billing/add-backup-billing-managers?view=vsts).
+> Si vous constatez que les utilisateurs ont accès à la modification de vos abonnements mensuels que vous n’avez pas établis en tant qu’administrateurs, ils peuvent avoir des rôles dans l’abonnement Azure sous-jacent qui leur permet de gérer les abonnements. Ces rôles sont les suivants : propriétaire, collaborateur, administrateur de service ou coadministrateur. Pour plus d’informations, consultez [Ajouter des gestionnaires de facturation](/azure/devops/organizations/billing/add-backup-billing-managers?view=vsts).
 
-Pour plus d’informations sur les abonnements cloud Visual Studio, consultez la [vue d’ensemble](vscloud-overview.md) sous Achat d’abonnements. Pour acheter des abonnements cloud Visual Studio, accédez à Visual Studio Marketplace à l’adresse [https://marketplace.visualstudio.com/subscriptions](https://marketplace.visualstudio.com/subscription).
+Pour plus d’informations sur les abonnements mensuels Visual Studio, consultez la [vue d’ensemble](vscloud-overview.md) sous achat d’abonnements. Pour acheter des abonnements mensuels Visual Studio, visitez le Visual Studio Marketplace à l’adresse [https://marketplace.visualstudio.com/subscriptions](https://marketplace.visualstudio.com/subscription).
+
+## <a name="see-also"></a>Voir aussi
+- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentation Azure](https://docs.microsoft.com/azure/)
+- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>Étapes suivantes
+En savoir plus sur la gestion des abonnements Visual Studio.
+- [Affecter des abonnements individuels](assign-license.md)
+- [Attribuer plusieurs abonnements](assign-license-bulk.md)
+- [Modifier des abonnements](edit-license.md)
+- [Déterminer l’utilisation maximale](maximum-usage.md)
+
+
+

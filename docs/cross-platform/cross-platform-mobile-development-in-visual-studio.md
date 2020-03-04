@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 15c4d31c8cc835884f1093dc78083bbfa9448bc3
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.openlocfilehash: c7f40f656b533949748a7eb2ab88ea3d2b1d5923
+ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916881"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78234980"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Développement mobile multiplateforme dans Visual Studio
 
@@ -56,11 +56,11 @@ Avec Visual Studio Tools pour Xamarin, vous pouvez cibler Android, iOS et Window
 
  Selon la complexité de la conception de vos applications, vous pouvez envisager de les créer en utilisant les modèles *Xamarin.Forms* du groupe de modèles de projet **Applications mobiles** . Xamarin.Forms est un kit de ressources d’IU qui vous permet de créer une interface utilisateur que vous pouvez partager sur Android et iOS, ainsi que sur Windows Phone.  Quand vous compilez une solution Xamarin.Forms, vous obtenez une application Android, une application iOS et une application Windows. Pour plus d’informations, consultez [En savoir plus sur le développement mobile avec Xamarin](/xamarin/cross-platform/get-started/introduction-to-mobile-development/) et la [documentation Xamarin.Forms](/xamarin/xamarin-forms/).
 
-#### <a name="ShareHTML"></a> Partager du code entre des appareils Android, iOS et Windows
+#### <a name="ShareHTML"></a> Partager du code entre des applications Android, iOS et Windows
 
  Si vous n’utilisez pas Xamarin.Forms et que vous choisissez de concevoir pour chaque plateforme individuellement, vous pouvez partager la plus grande partie du code autre que celui de l’interface utilisateur entre les projets des différentes plateformes (iOS, Android et Windows). Cela inclut la logique métier, l'intégration du cloud, l'accès aux bases de données ou tout autre code qui cible le .NET Framework. Le seul code que vous ne pouvez pas partager est le code qui cible une plateforme spécifique.
 
- ![Partager du code entre les interfaces utilisateur Windows, iOs et Android](../cross-platform/media/sharecode.png "ShareCode")
+ ![Partager du code entre des interfaces utilisateur Windows, iOS et Android](../cross-platform/media/sharecode.png "ShareCode")
 
  Vous pouvez partager votre code en utilisant un projet partagé, un projet de bibliothèque de classes portables ou les deux. Vous trouverez peut-être qu'une partie du code est mieux placé dans un projet partagé, et que d'autres parties ont davantage de sens placées dans un projet de bibliothèque de classes portables.
 
@@ -81,8 +81,8 @@ Avec Visual Studio Tools pour Xamarin, vous pouvez cibler Android, iOS et Window
 |--------------------|
 |[Introduction à la plateforme Windows universelle](/windows/uwp/get-started/universal-application-platform-guide)|
 |[Créer sa première application](/windows/uwp/get-started/your-first-app)|
-|[Développer des applications pour la plateforme universelle Windows (UWP)](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md)|
-|[Migrer des applications vers la plateforme Windows universelle](https://msdn.microsoft.com/library/mt148501.aspx)|
+|[Développer des applications pour la plateforme Windows universelle (UWP)](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md)|
+|[Migrer des applications vers la plateforme Windows universelle (UWP)](https://msdn.microsoft.com/library/mt148501.aspx)|
 
 ::: moniker range="vs-2017"
 
@@ -140,12 +140,12 @@ Avec Visual Studio Tools pour Xamarin, vous pouvez cibler Android, iOS et Window
 
 |**En savoir plus**|
 |--------------------|
-|[Télécharger Visual Studio](https://visualstudio.microsoft.com/vs/community/) (VisualStudio.com)|
-|[Installez le développement mobile multiplateforme avecC++](install-visual-cpp-for-cross-platform-mobile-development.md)|
+|[Télécharger Visual Studio](https://visualstudio.microsoft.com/downloads/) (VisualStudio.com)|
+|[Installez le développement mobile multiplateforme avecC++](/cpp/cross-platform/install-visual-cpp-for-cross-platform-mobile-development)|
 |[En savoir plus sur C++ l’utilisation de pour cibler plusieurs plateformes](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
-|[Installer ce dont vous avez besoin, puis créer une application d’activité native pour Android](create-an-android-native-activity-app.md)|
+|[Installer ce dont vous avez besoin, puis créer C++ une application d’activité native pour Android](/cpp/cross-platform/create-an-android-native-activity-app)|
 |[En savoir plus sur le partage de code C++ avec les applications Android et Windows](https://visualstudio.microsoft.com/vs/cplusplus-mdd/) (VisualStudio.com)|
-|[Exemples de développement mobile multiplateforme pourC++](cross-platform-mobile-development-examples.md)|
+|[Exemples de développement mobile multiplateforme pourC++](/cpp/cross-platform/cross-platform-mobile-development-examples)|
 
 <a name="Unity"></a>
 
@@ -155,7 +155,7 @@ Avec Visual Studio Tools pour Xamarin, vous pouvez cibler Android, iOS et Window
 
  ![Environnement de développement VSTU](../cross-platform/media/vstu_overview.png "Présentation de Outils Visual Studio pour Unity")
 
- Avec Visual Studio Tools pour Unity (VSTU), vous pouvez utiliser Visual Studio pour écrire des scripts d’éditeur et de jeu en C#, puis utiliser son débogueur performant pour rechercher et corriger les erreurs. La dernière version de VSTU prend en charge Unity 2018.1 et inclut la coloration syntaxique pour le langage du nuanceur ShaderLab d’Unity, une meilleure synchronisation avec Unity, un débogage plus performant et une amélioration de la génération du code pour l’Assistant MonoBehavior. VSTU apporte également vos fichiers de projet Unity et vos messages de console, et offre la possibilité de démarrer votre jeu dans Visual Studio, afin de perdre moins de temps à aller et venir de l’éditeur Unity en cours d’écriture.
+ Avec Visual Studio Tools pour Unity (VSTU), vous pouvez utiliser Visual Studio pour écrire des scripts d’éditeur et de jeu en C#, puis utiliser son débogueur performant pour rechercher et corriger les erreurs. La dernière version de VSTU prend en charge Unity 2018.1 et inclut la coloration syntaxique pour le langage du nuanceur ShaderLab d’Unity, une meilleure synchronisation avec Unity, un débogage plus performant et une amélioration de la génération du code pour l’Assistant MonoBehavior. VSTU apporte également vos fichiers de projet Unity et vos messages de console, et offre la possibilité de démarrer votre jeu dans Visual Studio, afin de perdre moins de temps à aller et venir de l'éditeur Unity en cours d'écriture.
 
 |**En savoir plus**|
 |--------------------|
