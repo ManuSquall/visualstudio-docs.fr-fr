@@ -3,21 +3,20 @@ title: Attribuer des licences à des groupes d’utilisateurs pour des abonnemen
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 02/26/2020
+ms.date: 03/02/2020
 ms.topic: conceptual
 description: Découvrez comment les administrateurs peuvent attribuer des licences à plusieurs abonnés à l’aide de la fonctionnalité d’ajout en bloc ou de groupes de Microsoft Azure Active Directory
-ms.openlocfilehash: ae16c64f90f90b820332e0ee7f1753a8dd6e5c32
-ms.sourcegitcommit: a80489d216c4316fde2579a0a2d7fdb54478abdf
+ms.openlocfilehash: c8ea294f0e4b2b4deae18e2f5644bf08fff0dfc2
+ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77652818"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78263342"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>Attribuer des abonnements à plusieurs utilisateurs
 Le portail d’administration des abonnements vous permet d’ajouter des utilisateurs un à la fois ou dans des grands groupes.  Pour ajouter des utilisateurs individuels, consultez [Ajouter des utilisateurs uniques](assign-license.md).
 
 Pour ajouter des groupes d’utilisateurs importants, vous pouvez utiliser la fonctionnalité d’ajout en bloc ou, si votre organisation utilise Microsoft Azure Active Directory (Azure AD), vous pouvez utiliser des groupes de Azure AD. Cet article explique le processus pour les deux options. 
-
 
 ## <a name="use-bulk-add-to-assign-subscriptions"></a>Utiliser l’ajout en bloc pour affecter des abonnements
 1. Connectez-vous au portail d’administration des abonnements Visual Studio à l’adresse https://manage.visualstudio.com.
@@ -59,19 +58,16 @@ Pour ajouter des groupes d’utilisateurs importants, vous pouvez utiliser la fo
    > [!div class="mx-imgBorder"]
    > ![Message de confirmation si le chargement de plusieurs abonnés réussit](media/bulk-add-template-success.png)
 
-## <a name="use-azure-ad-groups-to-assign-subscriptions"></a>Utiliser des groupes de Azure AD pour affecter des abonnements 
-Grâce à cette fonctionnalité, il est facile de rester au-dessus de vos affectations d’abonnement. Vous pouvez ajouter Azure AD groupes de sécurité dans le portail d’administration des abonnements, ce qui garantit que tous les individus du groupe se voient attribuer un abonnement. Et pour faciliter la tâche, lorsque les individus sortent de votre organisation et sont supprimés de Azure AD, leur accès aux abonnements est également supprimé.
-
-> [!NOTE]
-> Cette fonctionnalité étant déployée en plusieurs phases, elle n’est peut-être pas immédiatement disponible pour votre organisation.   
+## <a name="use-azure-active-directory-groups-to-assign-subscriptions"></a>Utiliser des groupes de Azure Active Directory pour affecter des abonnements 
+Grâce à cette fonctionnalité, il est facile de rester au-dessus de vos affectations d’abonnement. Vous pouvez ajouter Azure Active Directory groupes de sécurité dans le portail d’administration des abonnements, ce qui garantit que tous les individus du groupe se voient attribuer un abonnement. Et pour faciliter la tâche, lorsque les individus sortent de votre organisation et sont supprimés de Azure Active Directory, leur accès aux abonnements est également supprimé. 
 
 > [!IMPORTANT]
 > Les limitations suivantes s’appliquent à l’utilisation de groupes de Azure AD pour l’ajout d’abonnés :
 > - Les groupes doivent contenir au moins un membre.  Les groupes vides ne sont pas pris en charge.
-> - Les groupes doivent avoir moins de 1 000 utilisateurs.
-> - Tous les utilisateurs doivent se trouver au niveau supérieur du groupe.  Les groupes imbriqués ne sont pas pris en charge.
-> - Seuls les accords approuvés sont pris en charge.
-> - Tous les membres du groupe doivent avoir une adresse de messagerie associée à leur compte Azure AD.
+> - Les groupes doivent avoir moins de 1 000 utilisateurs 
+> - Tous les utilisateurs doivent se trouver au niveau supérieur du groupe.  Les groupes imbriqués ne sont pas pris en charge
+> - Seuls les accords approuvés sont pris en charge
+> - Tous les membres du groupe doivent avoir une adresse de messagerie associée à leur compte Azure AD
 
 
 1. Connectez-vous au portail d’administration des abonnements Visual Studio à l’adresse [https://manage.visualstudio.com](https://manage.visualstudio.com).
@@ -104,7 +100,7 @@ R : non--tous les membres du groupe reçoivent le même abonnement.
 ### <a name="q-can-i-edit-subscriber-details-of-individuals-added-in-an-azure-ad-group"></a>Q : puis-je modifier les détails de l’abonné des personnes ajoutées à un groupe de Azure AD ?  
 R : non--pour modifier les informations d’un abonné individuel, vous devez les supprimer du groupe de sécurité Azure AD et leur attribuer un abonnement individuellement.  
 
-### <a name="q-i-added-someone-to-my-azure-ad-security-group-but-i-dont-see-them-added-in-the-subscriptions-administration-portal-and-they-dont-have-a-subscription-why-not"></a>Q : J’ai ajouté une personne à mon Azure AD groupe de sécurité, mais je ne l’ai pas ajoutée dans le portail d’administration des abonnements et il n’y a pas d’abonnement. Pourquoi ?  
+### <a name="q-i-added-someone-to-my-azure-ad-security-group-but-i-dont-see-them-added-in-the-subscriptions-administration-portal-and-they-dont-have-a-subscription-why-not"></a>Q : J’ai ajouté une personne à mon Azure AD groupe de sécurité, mais je ne l’ai pas ajoutée dans le portail d’administration des abonnements et il n’y a pas d’abonnement. Pourquoi ?  
 R : selon la façon dont votre organisation a configuré Azure AD, vous pouvez constater des retards jusqu’à 24 heures avant l’ajout de l’utilisateur. S’il s’agit d’une durée supérieure à 24 heures, [Contactez le support technique](https://visualstudio.microsoft.com/support/support-overview-vs).  
 
 
@@ -114,9 +110,7 @@ R : selon la façon dont votre organisation a configuré Azure AD, vous pouvez 
 - [Documentation Azure](https://docs.microsoft.com/azure/)
 - [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
 
-## <a name="next-steps"></a>Étapes suivantes :
+## <a name="next-steps"></a>Étapes suivantes
 - Vous n’avez qu’un ou deux abonnés à ajouter ?  Consultez [Ajouter des utilisateurs uniques](assign-license.md)
 - Vous avez besoin d’aide ? Contactez le [Support technique sur l’administration et les abonnements Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs).
-
-
 

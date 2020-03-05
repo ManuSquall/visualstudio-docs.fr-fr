@@ -1,5 +1,5 @@
 ---
-title: Élément TaskBody (MSBuild) | Microsoft Docs
+title: Élément Task de UsingTask (MSBuild) | Microsoft Docs
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -8,31 +8,31 @@ dev_langs:
 - C++
 - jsharp
 helpviewer_keywords:
-- TaskBody element [MSBuild]
-- <TaskBody> element [MSBuild]
+- Task element [MSBuild]
+- <Task> element [MSBuild]
 ms.assetid: 49d8741b-f1ea-4470-94fd-a1ac27341a6a
 author: ghogen
 ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45b255f782390cfc478ac2f7bce58170e4e2b268
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 36644a6b21092361d92dba5f0886eb4198884995
+ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77631845"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78263186"
 ---
-# <a name="taskbody-element-msbuild"></a>Élément TaskBody (MSBuild)
+# <a name="task-element-of-usingtask-msbuild"></a>Élément Task de UsingTask (MSBuild)
 
 Contient les données passées à un `UsingTask` `TaskFactory`. Pour plus d’informations, consultez [Élément UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).
 
- \<Project> \<UsingTask> \<TaskBody>
+ \<projet > \<\<de la tâche de > >
 
 ## <a name="syntax"></a>Syntaxe
 
 ```xml
-<TaskBody Evaluate="true/false" />
+<Task Evaluate="true/false" />
 ```
 
 ## <a name="attributes-and-elements"></a>Attributs et éléments
@@ -49,7 +49,7 @@ Contient les données passées à un `UsingTask` `TaskFactory`. Pour plus d’in
 
 |Élément|Description|
 |-------------|-----------------|
-|Données|Le texte entre les balises `TaskBody` est envoyé mot pour mot à l’élément `TaskFactory`.|
+|Données|Le texte entre les balises `Task` est envoyé mot pour mot à l’élément `TaskFactory`.|
 
 ### <a name="parent-elements"></a>Éléments parents
 
@@ -59,7 +59,7 @@ Contient les données passées à un `UsingTask` `TaskFactory`. Pour plus d’in
 
 ## <a name="example"></a>Exemple
 
- L'exemple suivant montre comment utiliser l'élément `TaskBody` avec un attribut `Evaluate`.
+ L'exemple suivant montre comment utiliser l'élément `Task` avec un attribut `Evaluate`.
 
 ```xml
 <UsingTask TaskName="MyTask" AssemblyName="My.Assembly" TaskFactory="MyTaskFactory">
@@ -68,9 +68,9 @@ Contient les données passées à un `UsingTask` `TaskFactory`. Pour plus d’in
               <Parameter2 ParameterType="System.Int" Required="True" Output="False"/>
               ...
 </ParameterGroup>
-       <TaskBody Evaluate="true">
-      ... Task factory-specific data ...
-       </TaskBody>
+       <Task Evaluate="true">
+       ... Task factory-specific data ...
+       </Task>
 </UsingTask>
 ```
 

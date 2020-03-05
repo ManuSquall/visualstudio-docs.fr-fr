@@ -10,12 +10,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6a8b380791cbb8adcc43b363e5f0a332935e131
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 5fe9f052c10f31c4db0f8bf09f273be5814ff732
+ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77631105"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78263134"
 ---
 # <a name="walkthrough-create-an-msbuild-project-file-from-scratch"></a>Procédure pas à pas : créer un fichier projet MSBuild en partant de zéro
 
@@ -154,8 +154,6 @@ Les tâches de la cible Build sont exécutées séquentiellement. Dans ce cas, l
 > ```xml
 > <Compile Include="*.cs" />
 > ```
->
-> Nous ne recommandons cependant pas l'utilisation de caractères génériques, car ils rendent le débogage et le ciblage sélectif plus difficiles si des fichiers source sont ajoutés ou supprimés.
 
 ## <a name="extend-the-path-to-include-msbuild"></a>Étendre la variable PATH pour inclure MSBuild
 
@@ -474,7 +472,7 @@ L’exemple suivant montre un fichier projet qui compile une application Visual 
 </Project>
 ```
 
-## <a name="whats-next"></a>Étapes suivantes
+## <a name="whats-next"></a>Quelle est l’étape suivante ?
 
  Visual Studio peut faire automatiquement la plus grande partie du travail qui est montré dans cette procédure pas à pas. Pour découvrir comment utiliser Visual Studio pour créer, modifier, générer et tester des fichiers projet MSBuild, consultez la [Procédure pas à pas : utiliser MSBuild](../msbuild/walkthrough-using-msbuild.md).
 

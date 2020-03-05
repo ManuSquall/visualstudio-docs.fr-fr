@@ -1,5 +1,5 @@
 ---
-title: Élément Task (MSBuild) | Microsoft Docs
+title: Élément Task de Target (MSBuild) | Microsoft Docs
 ms.date: 03/13/2017
 ms.topic: reference
 dev_langs:
@@ -16,14 +16,14 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d17dde15fdfcc00890338eadf603f02352697363
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 8a4ec2203430045c083b46b2eea8d3e884a4b794
+ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77631872"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78263170"
 ---
-# <a name="task-element-msbuild"></a>Élément Task (MSBuild)
+# <a name="task-element-of-target-msbuild"></a>Élément Task de Target (MSBuild)
 
 Crée et exécute une instance d’une tâche MSBuild. Le nom de l’élément est déterminé par le nom de la tâche en cours de création.
 

@@ -1,6 +1,6 @@
 ---
 title: Vue d’ensemble du concepteur XAML
-ms.date: 07/31/2019
+ms.date: 03/03/2020
 ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner
@@ -12,12 +12,12 @@ ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 912468cf95b7b5a4b611fb568048c2ba62cc635d
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: a2a0e25779df1e0b91a69518dc2257119e33cca4
+ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75593000"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78263354"
 ---
 # <a name="create-a-ui-by-using-xaml-designer"></a>Créer une IU à l’aide du concepteur XAML
 
@@ -25,15 +25,18 @@ Le concepteur XAML dans Visual Studio et Blend pour Visual Studio fournit une i
 
 Les utilisateurs expérimentés peuvent même [personnaliser le concepteur XAML](https://github.com/microsoft/xaml-designer-extensibility/blob/master/documents/xaml-designer-extensibility-migration.md).
 
+> [!NOTE]
+> Xamarin. Forms ne prend pas en charge un concepteur XAML. Pour afficher vos interfaces utilisateur XAML Xamarin. Forms et les modifier pendant que l’application est en cours d’exécution, utilisez le rechargement à chaud XAML pour Xamarin. Forms. Pour plus d’informations, consultez la page [chargement à chaud XAML pour Xamarin. Forms (version préliminaire)](/xamarin/xamarin-forms/xaml/hot-reload/) .
+
 ## <a name="xaml-designer-workspace"></a>Espace de travail du concepteur XML
 
 L'espace de travail du concepteur XML se compose de plusieurs éléments d'interface graphique. Ceux-ci incluent la *planche graphique* (c’est-à-dire, l’aire de conception visuelle), l’éditeur XAML, la fenêtre Structure du document (ou la fenêtre Objets et chronologie dans Blend pour Visual Studio), ainsi que la fenêtre Propriétés. Pour ouvrir le concepteur XAML, cliquez avec le bouton droit sur un fichier XAML dans l' **Explorateur de solutions** et choisissez **Concepteur de vues**.
 
 Le concepteur XAML fournit un mode XAML et un mode Création synchronisé du balisage XAML rendu de votre application. Quand un fichier XAML est ouvert dans Visual Studio ou dans Blend pour Visual Studio, vous pouvez basculer entre le mode Création et le mode XAML à l’aide des onglets **Conception** et **XAML**. Vous pouvez utiliser le bouton **Permuter les volets**![bouton Permuter les volets dans le concepteur XAML](media/swap-panes.PNG) pour définir la fenêtre qui doit s’afficher au premier plan : la planche graphique ou l’éditeur XAML.
 
-### <a name="design-view"></a>mode Design
+### <a name="design-view"></a>Mode création
 
-En mode Création, la fenêtre contenant la planche graphique est la fenêtre active et vous pouvez l'utiliser comme surface de travail principale. Vous pouvez l’utiliser pour concevoir visuellement une page dans votre application en ajoutant, en dessinant ou en modifiant des éléments. Pour plus d’informations, consultez [Utiliser des éléments dans le concepteur XAML](../xaml-tools/working-with-elements-in-xaml-designer.md). Cette illustration montre la planche graphique en mode Création.
+En mode Création, la fenêtre qui contient la planche graphique est la fenêtre active, et vous pouvez l’utiliser comme surface de travail principale. Vous pouvez l’utiliser pour concevoir visuellement une page dans votre application en ajoutant, en dessinant ou en modifiant des éléments. Pour plus d’informations, consultez [Utiliser des éléments dans le concepteur XAML](../xaml-tools/working-with-elements-in-xaml-designer.md). Cette illustration montre la planche graphique en mode Création.
 
 ![Mode Design du concepteur XAML](media/xaml-artboard.png)
 
@@ -87,7 +90,7 @@ Affiche ou masque la grille d'accrochage qui indique le quadrillage. Le quadrill
 
 **Activer/Désactiver l'alignement sur le quadrillage**
 
-Si **l’alignement sur le quadrillage** est activé quand vous faites glisser un élément sur la planche graphique, celui-ci tend à s’aligner sur les lignes de quadrillage horizontales et verticales les plus proches.
+Si l' **alignement sur le quadrillage** est activé, un élément tend à s’aligner sur les lignes de quadrillage horizontales et verticales les plus proches quand vous le faites glisser sur la planche graphique.
 
 **Activer/Désactiver l’arrière-plan de la planche graphique**
 
@@ -113,7 +116,7 @@ Dans Visual Studio, la fenêtre Structure du document est similaire à la fenêt
 
 - Afficher la structure hiérarchique de tous les éléments de la planche graphique.
 
-- Sélectionner des éléments pour pouvoir les modifier (par exemple, les déplacer dans la hiérarchie ou définir leurs propriétés dans la fenêtre Propriétés). Pour plus d’informations, consultez [Utiliser des éléments dans le concepteur XAML](../xaml-tools/working-with-elements-in-xaml-designer.md).
+- Sélectionnez les éléments afin de pouvoir les modifier. Par exemple, vous pouvez les déplacer dans la hiérarchie ou définir leurs propriétés dans la Fenêtre Propriétés. Pour plus d’informations, consultez [Utiliser des éléments dans le concepteur XAML](../xaml-tools/working-with-elements-in-xaml-designer.md).
 
 - Créer et modifier les modèles des éléments qui sont des contrôles.
 
@@ -124,7 +127,7 @@ Pour afficher la fenêtre Objets et chronologie dans Blend pour Visual Studio, d
 
 ![Fenêtre Structure du document dans Visual Studio](media/document-outline-window.png)
 
-Dans la fenêtre Structure du document/Objets et chronologie, la vue principale montre le niveau hiérarchique d’un document dans une arborescence. Vous pouvez utiliser la nature hiérarchique de la structure du document pour consulter le document à des niveaux de détail différents, ainsi que pour verrouiller et masquer des éléments séparément ou par groupes. Les options disponibles dans la fenêtre Structure du document/Objets et chronologie sont les suivantes :
+Dans la fenêtre Structure du document/Objets et chronologie, la vue principale montre le niveau hiérarchique d’un document dans une arborescence. Vous pouvez utiliser la nature hiérarchique de la structure du document pour consulter le document à des niveaux de détail différents, ainsi que pour verrouiller et masquer des éléments séparément ou par groupes. Les options suivantes sont disponibles dans la fenêtre structure du document/Objets et chronologie :
 
 **Afficher/Masquer**
 
@@ -138,11 +141,11 @@ Verrouille ou déverrouille les éléments de la planche graphique. Les élémen
 
 L’option en haut de la fenêtre Structure du document/Objets et chronologie, qui est représentée par un symbole de flèche vers le haut, permet de passer à la portée précédente. La portée supérieure n'est applicable que quand vous êtes dans la portée d'un style ou d'un modèle.
 
-## <a name="properties-window"></a>Propriétés (fenêtre)
+## <a name="properties-window"></a>Fenêtre Propriétés
 
-La fenêtre **Propriétés** vous permet de définir des valeurs de propriété sur les contrôles. Il ressemble à ceci :
+La fenêtre **Propriétés** vous permet de définir des valeurs de propriété sur les contrôles. Voici à quoi elle ressemble :
 
-![Propriétés (fenêtre)](media/xaml-designer-properties-window.png)
+![Fenêtre Propriétés](media/xaml-designer-properties-window.png)
 
 Plusieurs options apparaissent en haut de la fenêtre **Propriétés** :
 
@@ -160,6 +163,6 @@ Pour plus d’informations sur l’utilisation des propriétés et la gestion de
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Travailler avec des éléments dans le concepteur XAML](../xaml-tools/working-with-elements-in-xaml-designer.md)
-- [Guide pratique pour créer et appliquer une ressource](../xaml-tools/how-to-create-and-apply-a-resource.md)
+- [Utiliser des éléments dans le Concepteur XAML](../xaml-tools/working-with-elements-in-xaml-designer.md)
+- [Comment créer et appliquer une ressource](../xaml-tools/how-to-create-and-apply-a-resource.md)
 - [Procédure pas à pas : effectuer une liaison de données dans le Concepteur XAML](../xaml-tools/walkthrough-binding-to-data-in-xaml-designer.md)

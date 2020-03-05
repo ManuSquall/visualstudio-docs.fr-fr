@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3605109519dccaafa1367464bd8c2385df5e93e
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 91b2e157ee64f5e4d91bc75a5d6f8d65d4312862
+ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633419"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78263147"
 ---
 # <a name="msbuild-best-practices"></a>Bonnes pratiques pour MSBuild
 
@@ -30,7 +30,7 @@ Nous vous recommandons les meilleures pratiques suivantes pour l'écriture de sc
 </MyProperty>
 ```
 
-- Évitez les caractères génériques quand vous sélectionnez des éléments. Spécifiez plutôt les fichiers de manière explicite. Les erreurs susceptibles de se produire quand vous ajoutez ou supprimez des fichiers sont ainsi plus faciles à localiser.
+- En général, évitez d’utiliser des caractères génériques lorsque vous sélectionnez des éléments. Spécifiez plutôt les fichiers de manière explicite. En effet, dans la plupart des types de projets, MSBuild développe des caractères génériques à différents moments, par exemple lors de l’ajout ou de la suppression d’éléments, ce qui peut entraîner un comportement inattendu. Une exception est dans les projets de style kit SDK .NET Core, qui traitent correctement les caractères génériques.
 
 ## <a name="see-also"></a>Voir aussi
 
