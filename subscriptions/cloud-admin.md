@@ -3,15 +3,15 @@ title: Configuration des administrateurs pour les abonnements mensuels | Microso
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 03/02/2020
+ms.date: 03/03/2020
 ms.topic: conceptual
 description: Configuration des administrateurs pour les abonnements mensuels
-ms.openlocfilehash: d9ae6f8aac48b9d54b851d543a72fd98854c1131
-ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
+ms.openlocfilehash: a5d7c6e9442efd70ea3e7c2b7e7da4239e226aa2
+ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "78235210"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78289839"
 ---
 # <a name="set-up-administrators-for-visual-studio-monthly-subscriptions"></a>Configurer des administrateurs pour les abonnements mensuels Visual Studio
 
@@ -33,13 +33,21 @@ Pour ajouter des administrateurs :
 
 1. Connectez-vous au portail Azure sur [portal.azure.com](https://portal.azure.com).
 2. Connectez-vous avec le compte que vous avez utilisé pour acheter les abonnements mensuels Visual Studio.
-3. Dans le volet de navigation gauche, faites défiler vers le bas jusqu’à **Gestion des coûts + facturation**.
+3. Sous **services Azure**, choisissez **Cost Management + facturation**.
+   > [!div class="mx-imgBorder"]
+   > ![choisissez Cost Management + facturation sous services Azure](_img/cloud-admin/azure-cost-billing.png)
 4. Dans la liste **Mes abonnements**, sélectionnez l’abonnement Azure que vous avez utilisé pour effectuer l’achat.
-5. Cliquez sur **Contrôle d’accès**, qui se trouve près du haut de la liste dans le volet de navigation gauche.
+   > [!div class="mx-imgBorder"]
+   > ![Choisissez l’abonnement](_img/cloud-admin/subscription-list.png)
+5. Cliquez sur **contrôle d’accès (IAM)** , situé près du haut de la liste dans le volet de navigation gauche.
 6. Cliquez sur l’onglet **Ajouter** en haut de la page.
 7. Cliquez sur **Ajouter une attribution de rôle**.
+   > [!div class="mx-imgBorder"]
+   > ![sélectionnez contrôle d’accès, ajouter, ajouter une attribution de rôle](_img/cloud-admin/access-control-add.png)
 8. Dans le volet de menu volant situé à droite, cliquez sur la liste déroulante **Rôle** en haut du volet, faites défiler vers le bas, puis sélectionnez **Administrateur de l’accès utilisateur**.
 9. Faites défiler la liste des utilisateurs jusqu’à l’utilisateur auquel vous souhaitez attribuer un rôle d’administrateur, puis sélectionnez-le. 
+   > [!div class="mx-imgBorder"]
+   > ![choisir un rôle, administrateur de l’accès utilisateur](_img/cloud-admin/add-role-user-access-admin.png)
 10. Cliquez sur **Enregistrer**.
 11. Cliquez sur l’onglet **Attributions de rôles** pour vérifier que l’utilisateur sélectionné apparaît désormais en tant qu’administrateur de l’accès utilisateur.
 

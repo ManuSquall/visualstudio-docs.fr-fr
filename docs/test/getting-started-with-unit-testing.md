@@ -1,6 +1,6 @@
 ---
 title: Bien démarrer avec les tests unitaires
-ms.date: 02/13/2020
+ms.date: 03/04/2020
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit test plans
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ffbc5c6730fb4ca4d2f39732ad2a595de15bbf2
-ms.sourcegitcommit: 68f893f6e472df46f323db34a13a7034dccad25a
+ms.openlocfilehash: 90c3cbdee722c4cf12c515f06659cc03f3179e1e
+ms.sourcegitcommit: 3ed59ce39692124fe61c484df4348c0b9abee9b9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "77279333"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78289852"
 ---
 # <a name="get-started-with-unit-testing"></a>Bien démarrer avec les tests unitaires
 
@@ -22,7 +22,7 @@ Utilisez Visual Studio pour définir et exécuter des tests unitaires afin de ma
 
 ## <a name="create-unit-tests"></a>Créer des tests unitaires
 
-Cette section décrit dans les grandes lignes comment créer un projet de test unitaire.
+Cette section décrit comment créer un projet de test unitaire.
 
 1. Ouvrez le projet que vous souhaitez tester dans Visual Studio.
 
@@ -72,7 +72,7 @@ Cette section décrit dans les grandes lignes comment créer un projet de test u
 
 1. Ajoutez du code à la méthode de test unitaire.
 
-   Par exemple, pour un projet de test MSTest ou NUnit, vous pouvez utiliser le code suivant.
+   Par exemple, pour un projet MSTest, vous pouvez utiliser le code suivant.
 
    ```csharp
    using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -101,8 +101,42 @@ Cette section décrit dans les grandes lignes comment créer un projet de test u
    }
    ```
 
+   Ou, pour un projet NUnit, vous pouvez utiliser le code suivant.
+
+   ```csharp
+   using using NUnit.Framework;
+   using System.IO;
+   using System;
+
+   namespace HelloWorldTests
+   {
+      [TestClass]
+      public class Tests
+      {
+         private const string Expected = "Hello World!";
+
+         [SetUp]
+         public void Setup()
+         {
+         }
+         [Test]
+         public void TestMethod1()
+         {
+            using (var sw = new StringWriter())
+            {
+               Console.SetOut(sw);
+               HelloWorldCore.Program.Main();
+
+               var result = sw.ToString().Trim();
+               Assert.AreEqual(Expected, result);
+            }
+         }
+      }
+   }
+   ```
+
 > [!TIP]
-> Pour obtenir une description plus détaillée de la création de tests unitaires, consultez [Créer et exécuter des tests unitaires pour le code managé](walkthrough-creating-and-running-unit-tests-for-managed-code.md).
+> Pour plus d’informations sur la création de tests unitaires, consultez [créer et exécuter des tests unitaires pour le code managé](walkthrough-creating-and-running-unit-tests-for-managed-code.md).
 
 ## <a name="run-unit-tests"></a>Exécuter des tests unitaires
 
