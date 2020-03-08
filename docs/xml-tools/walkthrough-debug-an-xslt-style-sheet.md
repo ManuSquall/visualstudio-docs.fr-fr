@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cd5882cc606bf241a281940464ba028e77986807
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75592475"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78410108"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>Procédure pas à pas : déboguer une feuille de style XSLT
 
@@ -96,7 +96,7 @@ Nous allons ajouter deux variables à la fenêtre **Espion 1** afin que nous pui
 
    Étant donné que la condition de `xsl:if` a été satisfaite, le troisième livre est ajouté au fichier de sortie *Below-Average. xml* . Tous les livres du document XML ont été traités et le débogueur s'arrête.
 
-## <a name="sample-files"></a>Exemples de fichiers
+## <a name="sample-files"></a>Exemple de fichiers
 
 La procédure pas à pas utilise les deux fichiers suivants.
 

@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ea3d2a1e82e92473859fef29754fbb831cf3685b
-ms.sourcegitcommit: 0b90e1197173749c4efee15c2a75a3b206c85538
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74904043"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409358"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Surveiller les variables avec les fenêtres espion et espion Express
 
@@ -122,7 +122,7 @@ Une icône d’actualisation (flèche circulaire) peut apparaître dans la fenê
 
 Pour actualiser la valeur, sélectionnez l’icône d’actualisation ou appuyez sur la barre d’espace. Le débogueur essaie de réévaluer l'expression. Toutefois, vous pouvez ne pas vouloir réévaluer l’expression, en fonction de la raison pour laquelle la valeur n’a pas été évaluée.
 
-Pointez sur l’icône d’actualisation ou consultez la colonne **valeur** pour la raison pour laquelle l’expression n’a pas été évaluée. Raisons possibles :
+Pointez sur l’icône d’actualisation ou consultez la colonne **valeur** pour la raison pour laquelle l’expression n’a pas été évaluée. En voici plusieurs raisons :
 
 - Une erreur s’est produite lors de l’évaluation de l’expression, comme dans l’exemple précédent. Un délai d’expiration peut se produire ou une variable peut être hors de portée.
 
