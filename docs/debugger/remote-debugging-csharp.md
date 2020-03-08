@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 5f147acae956ad380c6e85984de29d5316394c0a
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72730259"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409393"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Débogage à distance d' C# un projet ou Visual Basic dans Visual Studio
 Pour déboguer une application Visual Studio qui a été déployée sur un autre ordinateur, installez et exécutez les outils de contrôle à distance sur l’ordinateur sur lequel vous avez déployé votre application, configurez votre projet pour qu’il se connecte à l’ordinateur distant à partir de Visual Studio, puis exécutez votre application.
@@ -33,7 +33,7 @@ Pour déboguer une application Visual Studio qui a été déployée sur un autre
 
 Pour plus d’informations sur le débogage à distance des applications Windows universelles (UWP), consultez [Déboguer un package d’application installé](debug-installed-app-package.md).
 
-## <a name="requirements"></a>spécifications
+## <a name="requirements"></a>Configuration requise
 
 Le débogueur distant est pris en charge sur Windows 7 et versions ultérieures (pas de téléphone) et les versions de Windows Server à partir de Windows Server 2008 Service Pack 2. Pour obtenir la liste complète des conditions requises, consultez [Configuration requise](../debugger/remote-debugging.md#requirements_msvsmon).
 
@@ -83,7 +83,7 @@ Le débogueur ne peut pas déployer d’applications de bureau Visual C# ou Visu
 
 7. Vérifiez que l’option **Permettre le débogage du code natif** n’est pas sélectionnée.
 
-8. Générez le projet.
+8. créer le projet ;
 
 9. Créez un dossier sur l’ordinateur distant ayant le même chemin que le dossier **Debug** sur votre ordinateur Visual Studio : **\<<chemin_source>\MyWPF\MyWPF\bin\Debug**.
 

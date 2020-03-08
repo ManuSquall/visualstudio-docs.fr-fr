@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: a913fa6abdcf59a64d8514f17656b8f8531d476d
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75845672"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409044"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Utiliser Python dans Visual Studio sur Windows
 
@@ -26,7 +26,7 @@ Visual Studio est un puissant IDE Python sur Windows. Visual Studio offre une pr
 
 Python n’est actuellement pas pris en charge dans Visual Studio pour Mac, mais est disponible sur Mac et Linux via Visual Studio Code (consultez les [questions et réponses](#questions-and-answers)).
 
-Pour commencer :
+Pour commencer :
 
 - Suivez les [instructions d’installation](installing-python-support-in-visual-studio.md) pour configurer la charge de travail Python.
 - Familiarisez-vous avec les fonctionnalités Python de Visual Studio en parcourant les sections de cet article.
@@ -56,7 +56,7 @@ La fenêtre **Environnements Python** de Visual Studio (illustrée ci-dessous da
 
 Utilisez la commande **Ouvrir une fenêtre interactive** pour exécuter Python en mode interactif dans le contexte de Visual Studio. Utilisez la commande **Ouvrir dans PowerShell** pour ouvrir une fenêtre de commande distincte dans le dossier de l’environnement sélectionné. À partir de cette fenêtre de commande, vous pouvez exécuter n’importe quel script Python.
 
-Pour plus d'informations, consultez .
+Pour plus d'informations :
 
 - [Gérer des environnements Python](managing-python-environments-in-visual-studio.md)
 - [Référence sur les environnements Python](python-environments-window-tab-reference.md)
@@ -67,7 +67,7 @@ Visual Studio fournit un éditeur Python de première classe, notamment la color
 
 ![Complétions de code pour le code Python dans Visual Studio](media/code-editing-completions-simple.png)
 
-Pour plus d'informations, consultez .
+Pour plus d'informations :
 
 - Documentation : [Modifier le code Python](editing-python-code-in-visual-studio.md)
 - Documentation : [Code du format](formatting-python-code.md)
@@ -85,7 +85,7 @@ Visual Studio fournit également une intégration étroite entre l’éditeur de
 
 Visual Studio prend également en charge IPython/Jupyter dans l’environnement REPL, notamment les tracés inline, .NET et WPF (Windows Presentation Foundation).
 
-Pour plus d'informations, consultez .
+Pour plus d'informations :
 
 - [Fenêtre interactive](python-interactive-repl-in-visual-studio.md)
 - [IPython dans Visual Studio](interactive-repl-ipython.md)
@@ -105,7 +105,7 @@ Les modèles de projet et d’élément automatisent le processus de configurati
 
 [![Modèles de projet et d’élément Python dans Visual Studio](media/project-and-item-templates.png)](media/project-and-item-templates.png#lightbox)
 
-Pour plus d'informations, consultez .
+Pour plus d'informations :
 
 - Documentation : [Gérer les projets Python](managing-python-projects-in-visual-studio.md)
 - Documentation : [Référence de modèles d’élément](python-item-templates.md)
@@ -124,7 +124,7 @@ L’un des points forts de Visual Studio est son puissant débogueur. Pour Pytho
 Dans Visual Studio 2019, vous pouvez exécuter et déboguer du code sans fichier projet Visual Studio. Pour obtenir un exemple [, consultez démarrage rapide : ouvrir et exécuter du code python dans un dossier](quickstart-05-python-visual-studio-open-folder.md) .
 ::: moniker-end
 
-Pour plus d'informations, consultez .
+Pour plus d'informations :
 
 - Documentation : [Déboguer Python](debugging-python-in-visual-studio.md)
 - Documentation : [Débogage en mode mixte Python/C++](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
@@ -137,7 +137,7 @@ Le profilage collecte les données relatives à l’utilisation de votre applica
 
 [![Résultats du profileur Visual Studio pour un projet Python](media/profiling-results.png)](media/profiling-results.png#lightbox)
 
-Pour plus d'informations, consultez .
+Pour plus d'informations :
 
 - Documentation : [Outils de profilage Python](profiling-python-code-in-visual-studio.md)
 - Documentation générale sur les fonctionnalités Visual Studio : [Visite guidée des fonctionnalités de profilage](../profiling/profiling-feature-tour.md). (Certaines fonctionnalités de profilage Visual Studio ne sont pas disponibles pour Python.)
@@ -148,12 +148,12 @@ Découvrez, exécutez et gérez les tests dans l’**Explorateur de tests** Visu
 
 ![Débogage d’un test unitaire Python dans Visual Studio](media/unit-test-debugging.png)
 
-Pour plus d'informations, consultez .
+Pour plus d'informations :
 
 - Documentation : [Outils de test unitaire pour Python](unit-testing-python-in-visual-studio.md)
 - Documentation générale sur les fonctionnalités Visual Studio : [Tests unitaires de votre code](../test/unit-test-your-code.md).
 
-## <a name="azure-sdk-for-python"></a>Kit de développement logiciel (SDK) Azure pour Python
+## <a name="azure-sdk-for-python"></a>Kit SDK Azure pour Python
 
 Les bibliothèques Azure pour Python simplifient l’utilisation des services Azure à partir d’applications Windows, Mac OS X et Linux. Vous pouvez les utiliser pour créer et gérer des ressources Azure ainsi que pour se connecter à des services Azure. 
 
@@ -209,7 +209,7 @@ Visual Studio 2015 et versions antérieures sont disponibles à l’adresse [vis
 | Nouveau projet à partir du code existant | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  |       &#10004;       |   &#10004;    |
 |         Afficher tous les fichiers         | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  |       &#10004;       |   &#10004;    |
 |         Contrôle de code source         | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  |       &#10004;       |   &#10004;    |
-|        Intégration de Git         | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;<sup>1</sup> |   &#10007;    |
+|        Intégration Git         | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;<sup>1</sup> |   &#10007;    |
 
 <br/>
 
@@ -270,15 +270,15 @@ Visual Studio 2015 et versions antérieures sont disponibles à l’adresse [vis
 
 |           Modèles Django           |   2017+   |   2015   | 2013 Comm | 2013 Desktop |       2013 web       |      2013 Pro+       | 2012 Pro+ | 2010 SP1 Pro+ |
 |--------------------------------------|----------|----------|-----------|--------------|----------------------|----------------------|-----------|---------------|
-|              débogage               | &#10004; | &#10004; | &#10004;  |   &#10007;   |       &#10004;       |       &#10004;       | &#10004;  |   &#10004;    |
+|              Débogage               | &#10004; | &#10004; | &#10004;  |   &#10007;   |       &#10004;       |       &#10004;       | &#10004;  |   &#10004;    |
 |            Saisie semi-automatique             | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004;<sup>5</sup> | &#10004;<sup>5</sup> | &#10004;  |   &#10004;    |
 | Saisie semi-automatique pour CSS et JavaScript | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004;<sup>5</sup> | &#10004;<sup>5</sup> | &#10007;  |   &#10007;    |
 
 <br/>
 
-|                  débogage                  |   2017+   |   2015   | 2013 Comm | 2013 Desktop | 2013 web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+|                  Débogage                  |   2017+   |   2015   | 2013 Comm | 2013 Desktop | 2013 web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |---------------------------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
-|                  débogage                  | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
+|                  Débogage                  | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 |         Débogage sans projet         | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 |        Débogage - Attachement à la modification        | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10007; | &#10004;  | &#10004;  |   &#10004;    |
 |            Débogage en mode mixte             | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10007;    |
@@ -295,10 +295,10 @@ Visual Studio 2015 et versions antérieures sont disponibles à l’adresse [vis
 
 <br/>
 
-|     Tester      |   2017+   |   2015   | 2013 Comm | 2013 Desktop | 2013 web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
+|     Test      |   2017+   |   2015   | 2013 Comm | 2013 Desktop | 2013 web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |---------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
 | Explorateur de tests | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10007;    |
-|   Exécuter le test    | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10007;    |
+|   Exécuter un test    | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10007;    |
 |  Déboguer le test   | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10007;    |
 
 <br/>

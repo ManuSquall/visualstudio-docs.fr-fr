@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 73420f5fa6a90638f4a3dbbdf484178c5e177ce9
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75917387"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409962"
 ---
 # <a name="python-web-application-project-templates"></a>Modèles de projet d’application web Python
 
@@ -79,7 +79,7 @@ Lors du déploiement sur Microsoft Azure App Service, sélectionnez une version 
 
 Microsoft Azure Cloud Services *prend en charge* le fichier *requirements.txt*. Voir [Projets de service cloud Azure](python-azure-cloud-service-project-template.md) pour plus d’informations.
 
-## <a name="debugging"></a>débogage
+## <a name="debugging"></a>Débogage
 
 Quand un projet web est démarré à des fins de débogage, Visual Studio démarre un serveur web local sur un port aléatoire et ouvre votre navigateur par défaut sur cette adresse et ce port. Pour spécifier des options supplémentaires, cliquez avec le bouton droit sur le projet, sélectionnez **Propriétés**, puis sélectionnez l’onglet **Lanceur web** :
 

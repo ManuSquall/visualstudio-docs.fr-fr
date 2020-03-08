@@ -10,11 +10,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 5e269e19a09aec157e38eaf8938b5995c2647803
-ms.sourcegitcommit: 77ef1dcc71057cd5fdc4733ff0cb6085bd6113e0
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73661944"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408410"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Comment créer et gérer des environnements Python dans Visual Studio
 
@@ -155,12 +155,12 @@ Vous créez un environnement conda à l’aide de l’outil `conda`, ou avec la 
 
     ![Onglet Environnement Conda dans la boîte de dialogue Ajouter un environnement](media/environments/environments-conda-1-2019.png)
 
-1. Configurez les champs suivants :
+1. Configurez les champs suivants :
 
     | Champ | Description |
     | --- | --- |
     | Projet | Projet dans lequel créer l’environnement (si vous avez plusieurs projets dans la même solution Visual Studio). |
-    | Name | Nom de l’environnement conda. |
+    | Nom | Nom de l’environnement conda. |
     | Ajouter des packages depuis | Choisissez **Fichier d’environnement** si vous avez un fichier *environment.yml* décrivant vos dépendances de fichiers, ou choisissez **un ou plusieurs noms de packages Anaconda** et répertoriez au moins un package Python ou une version de Python dans le champ situé en dessous. La liste des packages indique à conda de créer un environnement Python. Pour installer la dernière version de Python, utilisez `python` ; pour installer une version spécifique, utilisez `python=,major>.<minor>` comme dans `python=3.7`. Vous pouvez également utiliser le bouton de package pour sélectionner des versions de Python et des packages communs à partir d’une série de menus. |
     | Définir en tant qu’environnement actuel | Active le nouvel environnement dans le projet sélectionné lorsque l’environnement est créé. |
     | Définir en tant qu’environnement par défaut pour les nouveaux projets | Définit et active automatiquement l’environnement conda dans tous les nouveaux projets créés dans Visual Studio. Cette option est identique à l’option **Définir cet environnement comme valeur par défaut pour les nouveaux projets** dans la fenêtre **Environnements Python**. |

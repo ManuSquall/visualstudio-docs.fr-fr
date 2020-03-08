@@ -12,11 +12,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 5cf5f8d3660abcf941eb5cc429b8f190459d9c56
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75596045"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78410479"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Bienvenue dans l’IDE Visual Studio | Visual Basic
 
@@ -127,7 +127,7 @@ Voici quelques-unes des fonctionnalités populaires de Visual Studio qui vous ai
 
    Modifiez et déboguez de manière collaborative avec d’autres utilisateurs en temps réel, quel que soit le type de votre application ou le langage de programmation. Vous pouvez partager instantanément et en toute sécurité votre projet puis partager au besoin des sessions de débogage, des instances de terminal, des applications web localhost, des appels vocaux, etc.
 
-- [Hiérarchie des appels](../../ide/reference/call-hierarchy.md)
+- [Hiérarchie d’appels](../../ide/reference/call-hierarchy.md)
 
    La fenêtre **Hiérarchie d’appels** affiche les méthodes qui appellent une méthode sélectionnée. Ces informations peuvent être utiles quand vous envisagez de changer ou de supprimer la méthode, ou quand vous essayez de repérer un bogue.
 
@@ -237,7 +237,7 @@ Pour remplacer le thème par **Sombre** :
 
 2. Dans la barre de menus, choisissez **Outils** > **Options** pour ouvrir la boîte de dialogue **Options**.
 
-3. Dans la page **Environnement** > **Options générales**, remplacez la sélection du **Thème de couleur** par **Sombre**, puis choisissez **OK**.
+3. Dans la page d’options **Environnement** > **Général**, remplacez la sélection du **Thème de couleur** par **Sombre**, puis choisissez **OK**.
 
    ![Basculer vers le thème de couleur sombre dans Visual Studio](media/change-color-theme.png)
 
@@ -294,7 +294,7 @@ Nous allons aller plus loin en créant un programme simple.
 
    Quelque chose qui ressemble à ce qui suit doit s’afficher :
 
-   ![Environnement IDE de Visual Studio](media/overview-ide-console-app.png)
+   ![IDE de Visual Studio](media/overview-ide-console-app.png)
 
    Le code Visual Basic de l’application apparaît dans la fenêtre d’éditeur, qui occupe la majeure partie de l’espace. Notez que le texte est colorisé automatiquement pour indiquer les différentes parties du code, comme les mots clés et les types. En outre, les petites lignes en pointillés verticales du code indiquent les accolades correspondant entre elles et les numéros de ligne vous aident à localiser le code. Vous pouvez cliquer sur les signes moins encadrés pour réduire ou développer des blocs de code. Cette fonctionnalité de surlignage de code vous permet de masquer le code dont vous n’avez pas besoin, ce qui contribue à réduire l’encombrement à l’écran. Vos fichiers projet sont répertoriés sur le côté droit dans une fenêtre appelée **Explorateur de solutions**.
 
@@ -351,7 +351,7 @@ Nous allons aller plus loin en créant un programme simple.
 
 1. Sélectionnez le modèle **Application console (.NET Core)** , puis choisissez **Suivant**.
 
-   ![Créer un projet dans Visual Studio](media/vs-2019/create-new-project.png)
+   ![Création d'un projet dans Visual Studio](media/vs-2019/create-new-project.png)
 
 1. Dans la fenêtre **Configurer votre nouveau projet**, entrez **HelloWorld** dans la zone **Nom du projet**, changez éventuellement l’emplacement du répertoire pour vos fichiers projet, puis choisissez **Créer**.
 
@@ -361,7 +361,7 @@ Nous allons aller plus loin en créant un programme simple.
 
    Quelque chose qui ressemble à ce qui suit doit s’afficher :
 
-   ![Environnement IDE de Visual Studio](media/overview-ide-console-app.png)
+   ![IDE de Visual Studio](media/overview-ide-console-app.png)
 
    Le code Visual Basic de l’application apparaît dans la fenêtre d’éditeur, qui occupe la majeure partie de l’espace. Notez que le texte est colorisé automatiquement pour indiquer les différentes parties du code, comme les mots clés et les types. En outre, les petites lignes en pointillés verticales du code indiquent les accolades correspondant entre elles et les numéros de ligne vous aident à localiser le code. Vous pouvez cliquer sur les signes moins encadrés pour réduire ou développer des blocs de code. Cette fonctionnalité de surlignage de code vous permet de masquer le code dont vous n’avez pas besoin, ce qui contribue à réduire l’encombrement à l’écran. Vos fichiers projet sont répertoriés sur le côté droit dans une fenêtre appelée **Explorateur de solutions**.
 

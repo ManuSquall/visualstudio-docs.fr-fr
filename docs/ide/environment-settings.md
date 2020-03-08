@@ -1,5 +1,5 @@
 ---
-title: Paramètres d’environnement
+title: Paramètres d'environnement
 ms.date: 11/21/2018
 ms.topic: conceptual
 author: TerryGLee
@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 780f9e6cdd3a2b30a8cc5ce31b0c8cc61a6d5e55
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75588575"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408373"
 ---
 # <a name="environment-settings-for-visual-studio"></a>Paramètres d’environnement pour Visual Studio
 
@@ -22,9 +22,9 @@ Les collections de paramètres suivants sont disponibles :
 
 - Général
 - JavaScript
-- Visual Basic
+- Visual Basic
 - Visual C#
-- Visual C++
+- Visual C++
 - Développement web
 - Développement web (code uniquement)
 
