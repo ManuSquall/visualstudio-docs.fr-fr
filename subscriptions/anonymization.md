@@ -6,12 +6,12 @@ manager: lank
 ms.date: 02/20/2020
 ms.topic: conceptual
 description: Découvrez comment les données des abonnés sont anonymisées quand l’accès aux abonnements est perdu.
-ms.openlocfilehash: f3a35448dd0befbbb91f1657dd62b2b99ff37a2a
-ms.sourcegitcommit: 3c105990656cd509062ce60e52e776c794f6305d
+ms.openlocfilehash: 439e53b1c67fde0fbda0666652e29bf396abfee2
+ms.sourcegitcommit: c8b979a56c95e43cf8ae92b6c3c9570db59a8e58
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77520837"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78894419"
 ---
 # <a name="anonymization-of-visual-studio-subscriber-information"></a>Anonymisation des informations sur les abonnés Visual Studio
 Quand un événement (par exemple l’expiration d’un abonnement ou la suppression du compte de connexion d’un abonné) bloque l’utilisation d’un abonnement par un abonné, les informations personnelles de l’utilisateur, telles que son nom et son compte de connexion, sont brouillées afin de les rendre inutilisables.  Le but est de protéger les informations personnelles de l’abonné.
@@ -41,11 +41,13 @@ R : il existe deux façons d’éviter ce problème :
 - Déployez un système de gestion d’identité unique, AAD ou MSA mais pas les deux  
 - Associez les identités AAD et MSA par le biais du locataire. 
 
-## <a name="next-steps"></a>Étapes suivantes
-Découvrez comment empêcher l’anonymisation en [associant les identités MSA et AAD](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).
-
 ## <a name="see-also"></a>Voir aussi
 - [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentation Azure](https://docs.microsoft.com/azure/)
 - [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>Étapes suivantes
+Découvrez comment empêcher l’anonymisation en [associant les identités MSA et AAD](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).
+
+

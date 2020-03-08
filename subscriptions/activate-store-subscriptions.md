@@ -6,12 +6,12 @@ manager: lank
 ms.date: 02/17/2020
 ms.topic: conceptual
 description: Découvrez comment activer les abonnements Visual Studio achetés dans le Microsoft Store.
-ms.openlocfilehash: 2fb3d958206cd3fcd76654b95d5be4b8d8e8a3a4
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.openlocfilehash: c872dd738b1b27620bf988e74bcc03631ce8b037
+ms.sourcegitcommit: c8b979a56c95e43cf8ae92b6c3c9570db59a8e58
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77476764"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78894398"
 ---
 # <a name="how-do-i-activate-a-subscription-acquired-from-the-microsoft-store"></a>Comment activer un abonnement acheté auprès du Microsoft Store ?
 Si vous avez acheté un abonnement Visual Studio dans le Microsoft Store, vous pouvez initier les étapes d’activation à partir de « la page de confirmation » ou de « l’e-mail de confirmation » que vous avez reçu suite à votre achat.
@@ -31,12 +31,14 @@ Si vous avez acheté un abonnement Visual Studio dans le Microsoft Store, vous p
 7. Entrez les informations de clé de produit disponibles sur « la page de confirmation » du paiement ou dans « l’e-mail de confirmation », puis cliquez sur **Activer**.
 8. L’abonnement doit maintenant être visible sur la page [Abonnements](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs), et vous devriez désormais avoir accès à tous les avantages de votre abonnement.
 
-## <a name="next-steps"></a>Étapes suivantes
-Consultez la page [Avantages](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) pour voir tous les avantages liés aux outils, aux services, à la formation et au support inclus dans votre abonnement.  Nous vous recommandons de configurer vos produits [Visual Studio](vs-ide-benefit.md) et [Azure DevOps](vs-azure-devops.md) pour commencer. 
-
 ## <a name="see-also"></a>Voir aussi
 - [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentation Azure](https://docs.microsoft.com/azure/)
 - [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>Étapes suivantes
+Consultez la page [Avantages](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) pour voir tous les avantages liés aux outils, aux services, à la formation et au support inclus dans votre abonnement.  Nous vous recommandons de configurer vos produits [Visual Studio](vs-ide-benefit.md) et [Azure DevOps](vs-azure-devops.md) pour commencer. 
+
+
 

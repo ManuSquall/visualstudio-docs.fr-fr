@@ -6,12 +6,12 @@ manager: lank
 ms.date: 02/17/2020
 ms.topic: conceptual
 description: Découvrir en quoi consiste la responsabilité des administrateurs pour l’exécution des inventaires de préproduction
-ms.openlocfilehash: 6d7dd3b49c11e94ffa09bc07bd745582f348763d
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.openlocfilehash: 4dec93101cb7399da3cd493af38c0559f0ed9dee
+ms.sourcegitcommit: c8b979a56c95e43cf8ae92b6c3c9570db59a8e58
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77476738"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "78894375"
 ---
 # <a name="inventory-of-pre-production-environment"></a>Inventaire de l’environnement de préproduction
 Les abonnements Visual Studio simplifient la gestion des actifs en comptant les utilisateurs plutôt que les appareils.
@@ -29,6 +29,12 @@ Voici plusieurs façons de simplifier l’inventaire de votre environnement de p
 - [Prise en charge des abonnements et de l’administration de Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
 - [Conditions du programme de licence en volume](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
+## <a name="see-also"></a>Voir aussi
+- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentation Azure](https://docs.microsoft.com/azure/)
+- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
 ## <a name="next-steps"></a>Étapes suivantes
 En savoir plus sur les responsabilités des administrateurs :
 - [Responsabilités de l’administrateur](admin-responsibilities.md)
@@ -36,9 +42,5 @@ En savoir plus sur les responsabilités des administrateurs :
 - [Suivre l’attribution des utilisateurs et traiter les commandes](assignments-orders.md)
 - Utiliser le rapport [Utilisation maximale](maximum-usage.md) pour suivre les engagements d’achat
 
-## <a name="see-also"></a>Voir aussi
-- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
-- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
-- [Documentation Azure](https://docs.microsoft.com/azure/)
-- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
 
