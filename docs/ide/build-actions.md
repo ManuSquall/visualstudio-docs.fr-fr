@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 35136ac0b7b0104f1812df7a9bf8ba81f6907374
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254435"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408815"
 ---
 # <a name="build-actions"></a>Actions de génération
 
@@ -32,19 +32,19 @@ Pour définir l’action de génération concernant un fichier, ouvrez les propr
 
 Voici certaines des actions de génération les plus courantes pour les fichiers projet C# et Visual Basic :
 
-|Action de génération | Types de projet | Description |
+|Action de génération | Types de projets | Description |
 |-|-|
 | **AdditionalFiles** | C#, Visual Basic | Fichier texte non-source passé au compilateur C# ou Visual Basic en tant qu’entrée. Cette action de génération est principalement utilisée pour fournir des entrées aux [analyseurs](../code-quality/roslyn-analyzers-overview.md) qui sont référencés par un projet pour vérifier la qualité du code. Pour plus d’informations, consultez [Utiliser des fichiers supplémentaires](https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Using%20Additional%20Files.md).|
 | **ApplicationDefinition** | WPF | Fichier qui définit votre application. Quand vous créez un projet pour la première fois, il s’agit de *App.xaml*. |
-| **CodeAnalysisDictionary** | .NET | Dictionnaire de mots personnalisés, utilisé par l’analyse du code pour la vérification orthographique. Voir [Guide pratique pour Personnaliser le dictionnaire d’analyse du code](../code-quality/how-to-customize-the-code-analysis-dictionary.md)|
-| **Compiler** | any | Le fichier est passé comme fichier source au compilateur.|
-| **Humidité** | .NET | Un fichier marqué comme **Contenu** peut être récupéré sous la forme d’un flux par le biais d’un appel à <xref:System.Windows.Application.GetContentStream%2A?displayProperty=nameWithType>. Pour les projets ASP.NET, ces fichiers sont ajoutés pour faire partie du site au moment de son déploiement.|
+| **CodeAnalysisDictionary** | .NET | Dictionnaire de mots personnalisés, utilisé par l’analyse du code pour la vérification orthographique. Consultez [Comment : personnaliser le dictionnaire d’analyse du code](../code-quality/how-to-customize-the-code-analysis-dictionary.md)|
+| **Compiler** | n'importe laquelle | Le fichier est passé comme fichier source au compilateur.|
+| **Contenu** | .NET | Un fichier marqué comme **Contenu** peut être récupéré sous la forme d’un flux par le biais d’un appel à <xref:System.Windows.Application.GetContentStream%2A?displayProperty=nameWithType>. Pour les projets ASP.NET, ces fichiers sont ajoutés pour faire partie du site au moment de son déploiement.|
 | **DesignData** | WPF | Utilisé pour les fichiers ViewModel XAML, pour permettre l’affichage des contrôles utilisateur au moment du design, avec des types factices et des exemples de données. |
 | **DesignDataWithDesignTimeCreateable** | WPF | Semblable à **DesignData**, mais avec des types réels.  |
 | **Ressource incorporée** | .NET | Le fichier est passé au compilateur comme ressource à incorporer dans l’assembly. Vous pouvez appeler <xref:System.Reflection.Assembly.GetManifestResourceStream%2A?displayProperty=fullName> pour lire le fichier à partir de l’assembly.|
 | **EntityDeploy** | .NET | Pour les fichiers .edmx Entity Framework (EF) qui spécifient le déploiement des artefacts EF. |
 | **Fakes** | .NET | Utilisé pour l’infrastructure de test Microsoft Fakes. Voir [Isoler du code testé avec Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) |
-| **Aucun** | any | Le fichier ne fait pas du tout partie de la build. Cette valeur peut être utilisée pour les fichiers de documentation tels que les fichiers « Lisez-moi ».|
+| **Aucun** | n'importe laquelle | Le fichier ne fait pas du tout partie de la build. Cette valeur peut être utilisée pour les fichiers de documentation tels que les fichiers « Lisez-moi ».|
 | **Page** | WPF | Compilez un fichier XAML dans un fichier. BAML binaire pour accélérer le chargement au moment de l’exécution. |
 | **Ressource** | WPF | Spécifie que le fichier doit être incorporé dans un fichier de ressources de manifeste d’assembly avec l’extension *.g.resources*. |
 | **Ombre** | .NET | Utilisé pour un fichier .accessor qui contient une liste de noms de fichiers d’assembly générés, un par ligne. Pour chaque assembly de la liste, générez des classes publiques avec des noms `ClassName_Accessor` semblables aux originaux, mais avec des méthodes publiques au lieu de méthodes privées. Utilisé pour des tests unitaires. |
