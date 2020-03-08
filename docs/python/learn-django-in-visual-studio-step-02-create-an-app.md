@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 5befdfb5f6974ff7b042319121a27c3628757b6e
-ms.sourcegitcommit: 0d8488329263cc0743a89d43f6de863028e982ff
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2020
-ms.locfileid: "75678985"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409416"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Étape 2 : Créer une application Django avec des vues et des modèles de pages
 
@@ -52,7 +52,7 @@ Une application Django commence généralement par un ensemble standard de fichi
 | --- | --- |
 | **\_\_init\_\_.py** | Le fichier qui identifie l’application en tant que package. |
 | **migrations** | Un dossier dans lequel Django stocke les scripts qui mettent à jour la base de données pour s’aligner avec les modifications apportées aux modèles. Les outils de migration de Django s’appliquent alors aux modifications nécessaires apportées à toute version précédente de la base de données afin qu’elle corresponde aux modèles actuels. À l’aide des migrations, restez concentré sur vos modèles et laissez Django gérer le schéma de la base de données sous-jacente. Les migrations sont présentées à l’étape 6. Pour l’instant, le dossier contient simplement un fichier *\_\_init\_\_.py* (indiquant que le dossier définit son propre package Python). |
-| **templates** | Dossier pour les modèles de page Django contenant un seul fichier *index.html* dans un dossier correspondant au nom de l’application. (Dans Visual Studio 2017 15,7 et versions antérieures, le fichier est contenu directement sous *modèles* et étape 2-4 vous demande de créer le sous-dossier.) Les modèles sont des blocs de code HTML dans lesquels des vues peuvent ajouter des informations pour afficher dynamiquement une page. Les « variables » du modèle de page, comme `{{ content }}` dans *index.html*, sont des espaces réservés pour des valeurs dynamiques, comme expliqué plus loin dans cet article (étape 2). Les applications Django créent généralement un espace de noms pour les modèles en les plaçant dans un sous-dossier qui correspond au nom de l’application. |
+| **modèles** | Dossier pour les modèles de page Django contenant un seul fichier *index.html* dans un dossier correspondant au nom de l’application. (Dans Visual Studio 2017 15,7 et versions antérieures, le fichier est contenu directement sous *modèles* et étape 2-4 vous demande de créer le sous-dossier.) Les modèles sont des blocs de code HTML dans lesquels des vues peuvent ajouter des informations pour afficher dynamiquement une page. Les « variables » du modèle de page, comme `{{ content }}` dans *index.html*, sont des espaces réservés pour des valeurs dynamiques, comme expliqué plus loin dans cet article (étape 2). Les applications Django créent généralement un espace de noms pour les modèles en les plaçant dans un sous-dossier qui correspond au nom de l’application. |
 | **admin.py** | Le fichier Python dans lequel vous étendez l’interface d’administration de l’application (reportez-vous à l’étape 6), utilisée pour initialiser une base de données et modifier ses données. Au départ, ce fichier contient uniquement l’instruction, `from django.contrib import admin`. Par défaut, Django inclut une interface administrative standard à partir des entrées dans le fichier *settings.py* du projet Django, que vous pouvez activer en décommentant les entrées existantes dans *urls.py*. |
 | **apps.py** | Un fichier Python qui définit une classe de configuration de l’application (voir ci-après, après cette table). |
 | **models.py** | Les modèles sont des objets de données, identifiés par des fonctions, grâce auxquels les affichages interagissent avec la base de données sous-jacente de l’application (consultez l’étape 6). Django fournit le calque de connexion de base de données afin que les applications n’aient pas à se préoccuper de ces détails. Le fichier *models.py* est l’emplacement par défaut dans lequel créer vos modèles et contient initialement uniquement l’instruction, `from django.db import models`. |
@@ -269,7 +269,7 @@ Réponse : Si vous rencontrez des erreurs indiquant que le modèle est introuvab
 
 Réponse : lorsque Django recherche un modèle référencé dans la fonction `render`, il utilise le premier fichier qu’il trouve correspondant au chemin d’accès relatif. Si vous avez plusieurs applications Django dans le même projet qui utilisent les mêmes structures de dossiers pour les modèles, il est probable qu’une seule application utilisera involontairement un modèle à partir d’une autre application. Pour éviter de telles erreurs, créez toujours un sous-dossier sous un dossier *templates* d’une application qui correspond au nom de l’application afin d’éviter toute duplication.
 
-## <a name="next-steps"></a>Étapes suivantes :
+## <a name="next-steps"></a>Étapes suivantes
 
 > [!div class="nextstepaction"]
 > [Prendre en charge les fichiers statiques, ajouter des pages et utiliser l’héritage du modèle](learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md)

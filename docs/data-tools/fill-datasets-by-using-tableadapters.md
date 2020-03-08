@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: a79f7b781944bb93a60794e748eefb9375723384
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75586625"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408741"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Remplir des datasets à l’aide de TableAdapters
 
@@ -89,7 +89,7 @@ La classe TableAdapter n’est pas un type .NET. Cela signifie que vous ne pouve
 
 Voici les méthodes et propriétés couramment utilisées des TableAdapters :
 
-|Member|Description|
+|Membre|Description|
 |------------|-----------------|
 |`TableAdapter.Fill`|Remplit la table de données associée du TableAdapter avec les résultats de la commande `SELECT` du TableAdapter.|
 |`TableAdapter.Update`|Renvoie les modifications à la base de données et retourne un entier qui représente le nombre de lignes affectées par la mise à jour. Pour plus d’informations, consultez [mettre à jour des données à l’aide d’un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md).|
@@ -126,12 +126,12 @@ La classe TableAdapterManager n’est pas un type .NET. Par conséquent, vous ne
 
 Voici les méthodes et les propriétés fréquemment utilisées de la classe `TableAdapterManager` :
 
-|Member|Description|
+|Membre|Description|
 |------------|-----------------|
-|Méthode `UpdateAll`|Enregistre toutes les données de toutes les tables de données.|
-|Propriété`BackUpDataSetBeforeUpdate`|Détermine si une copie de sauvegarde du DataSet doit être créée avant l’exécution de la méthode `TableAdapterManager.UpdateAll`. Expression.|
+|Méthode`UpdateAll`|Enregistre toutes les données de toutes les tables de données.|
+|Propriété `BackUpDataSetBeforeUpdate`|Détermine si une copie de sauvegarde du DataSet doit être créée avant l’exécution de la méthode `TableAdapterManager.UpdateAll`. Expression.|
 |propriété `TableAdapter` *TableName*|Représente un TableAdapter. Le TableAdapterManager généré contient une propriété pour chaque `TableAdapter` qu’il gère. Par exemple, un jeu de données avec une table Customers et Orders génère avec un TableAdapterManager qui contient des propriétés `CustomersTableAdapter` et `OrdersTableAdapter`.|
-|Propriété`UpdateOrder`|Contrôle l’ordre des commandes INSERT, Update et DELETE individuelles. Définissez cette valeur sur l’une des valeurs de l’énumération `TableAdapterManager.UpdateOrderOption`.<br /><br /> Par défaut, le `UpdateOrder` est défini sur **InsertUpdateDelete**. Cela signifie que les insertions, les mises à jour, puis les suppressions sont effectuées pour toutes les tables du DataSet.|
+|Propriété `UpdateOrder`|Contrôle l’ordre des commandes INSERT, Update et DELETE individuelles. Définissez cette valeur sur l’une des valeurs de l’énumération `TableAdapterManager.UpdateOrderOption`.<br /><br /> Par défaut, le `UpdateOrder` est défini sur **InsertUpdateDelete**. Cela signifie que les insertions, les mises à jour, puis les suppressions sont effectuées pour toutes les tables du DataSet.|
 
 ## <a name="security"></a>Sécurité
 

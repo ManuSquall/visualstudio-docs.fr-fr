@@ -8,11 +8,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: a3aee4945b4a3b41a7f6ec532268c2c19f549d0a
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75589784"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408486"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Créer des paramètres d’éditeur personnalisés et portables avec EditorConfig
 
@@ -66,7 +66,7 @@ L’éditeur de Visual Studio prend en charge l’ensemble principal des [propri
 - charset
 - trim\_trailing_whitespace
 - insert\_final_newline
-- racine
+- root
 
 Les paramètres de l’éditeur EditorConfig sont pris en charge dans tous les langages pris en charge par Visual Studio, à l’exception de XML. Par ailleurs, EditorConfig prend en charge les conventions de [style de code](../ide/editorconfig-code-style-settings-reference.md), notamment celles de [langage](../ide/editorconfig-language-conventions.md), [mise en forme](../ide/editorconfig-formatting-conventions.md) et [affectation de noms](../ide/editorconfig-naming-conventions.md) pour C# et Visual Basic.
 

@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6dfffdf0c12ea2a8f14769f26bb40a3943579248
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73187595"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409311"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Naviguer dans le code avec le débogueur Visual Studio
 
@@ -78,7 +78,7 @@ Dans un appel à plusieurs fonctions imbriquées, **Pas à pas détaillé** va j
 
 Vous ne vous souciez peut-être pas d’une fonction pendant le débogage, ou vous savez qu’elle fonctionne, comme un code de bibliothèque bien testé. Vous pouvez utiliser les commandes suivantes pour ignorer le code pendant l’exécution pas à pas du code. Les fonctions s’exécutent toujours, mais le débogueur les ignore.
 
-|Commande clavier|Commande de menu Déboguer|Description|
+|Commande clavier|Commande du menu Déboguer|Description|
 |----------------------|------------------|-----------------|
 |**F10**|**Pas à pas principal**|Si la ligne active contient un appel de fonction, **pas à pas principal** exécute le code, puis interrompt l’exécution à la première ligne de code après le retour de la fonction appelée.|
 |**Maj**+**F11**|**Pas à pas sortant**|**Pas à pas sortant** poursuit l’exécution du code et interrompt l’exécution lorsque la fonction active retourne. Le débogueur ignore la fonction active.|
@@ -89,7 +89,7 @@ Vous préférerez peut-être exécuter directement à un emplacement ou une fonc
 
 ### <a name="run-to-a-breakpoint-in-code"></a>Exécuter jusqu’à un point d’arrêt dans le code
 
-Pour définir un point d’arrêt simple dans votre code, cliquez sur la marge la plus à gauche en regard de la ligne de code où vous souhaitez suspendre l’exécution. Vous pouvez également sélectionner la ligne et appuyer **sur F9**, sélectionner **déboguer**  > **basculer le point d’arrêt**, ou cliquer avec le bouton droit et sélectionner point d' **arrêt**  >  insérer un**point d’arrêt**. Le point d’arrêt apparaît sous la forme d’un point rouge dans la marge de gauche, en regard de la ligne de code. Le débogueur interrompt l’exécution juste avant l’exécution de la ligne.
+Pour définir un point d’arrêt simple dans votre code, cliquez sur la marge la plus à gauche en regard de la ligne de code où vous souhaitez suspendre l’exécution. Vous pouvez également sélectionner la ligne et appuyer **sur F9**, sélectionner **déboguer** > **basculer le point d’arrêt**, ou cliquer avec le bouton droit et sélectionner point d' **arrêt** > insérer un **point d’arrêt**. Le point d’arrêt apparaît sous la forme d’un point rouge dans la marge de gauche, en regard de la ligne de code. Le débogueur interrompt l’exécution juste avant l’exécution de la ligne.
 
 ![Définir un point d’arrêt](../debugger/media/dbg_basics_setbreakpoint.png "Définir un point d'arrêt")
 
@@ -101,7 +101,7 @@ Vous pouvez demander au débogueur de s’exécuter jusqu’à ce qu’il atteig
 
 **Pour spécifier un point d’arrêt sur fonction par nom**
 
-1. Sélectionnez **Déboguer**  > **nouveau point d’arrêt**  > **point d’arrêt de fonction**
+1. Sélectionnez **Déboguer** > **nouveau point d’arrêt** > **point d’arrêt de fonction**
 
 1. Dans la boîte de dialogue **nouveau point d’arrêt sur fonction** , tapez le nom de la fonction et sélectionnez sa langue.
 
@@ -115,15 +115,15 @@ Si la fonction est surchargée ou dans plusieurs espaces de noms, vous pouvez ch
 
 **Pour sélectionner un point d’arrêt sur fonction dans la pile des appels**
 
-1. Pendant le débogage, ouvrez la **fenêtre pile des appels** en sélectionnant **déboguer**  >  pile des**appels**de**Windows**  > .
+1. Pendant le débogage, ouvrez la **fenêtre pile des appels** en sélectionnant **déboguer** > pile des **appels**de **Windows** > .
 
-1. Dans la fenêtre **pile des appels** , cliquez avec le bouton droit sur une fonction et sélectionnez **Exécuter jusqu’au curseur**, ou appuyez sur **CTRL** +**F10**.
+1. Dans la fenêtre **pile des appels** , cliquez avec le bouton droit sur une fonction et sélectionnez **Exécuter jusqu’au curseur**, ou appuyez sur **CTRL**+**F10**.
 
 Pour suivre visuellement la pile des appels, consultez [mapper des méthodes sur la pile des appels pendant le débogage](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).
 
 ### <a name="run-to-a-cursor-location"></a>Exécuter jusqu’à un emplacement de curseur
 
-Pour exécuter jusqu’à l’emplacement du curseur, dans le code source ou la fenêtre **pile des appels** , sélectionnez la ligne sur laquelle vous voulez vous arrêter, cliquez avec le bouton droit et sélectionnez **Exécuter jusqu’au curseur**, ou appuyez sur **CTRL** +**F10**. Sélectionner **Exécuter jusqu’au curseur revient à** définir un point d’arrêt temporaire.
+Pour exécuter jusqu’à l’emplacement du curseur, dans le code source ou la fenêtre **pile des appels** , sélectionnez la ligne sur laquelle vous voulez vous arrêter, cliquez avec le bouton droit et sélectionnez **Exécuter jusqu’au curseur**, ou appuyez sur **CTRL**+**F10**. Sélectionner **Exécuter jusqu’au curseur revient à** définir un point d’arrêt temporaire.
 
 ### <a name="run-to-click"></a>Exécuter jusqu’au clic
 
@@ -136,7 +136,7 @@ Lorsque vous êtes en pause dans le débogueur, vous pouvez pointer sur une inst
 
 ### <a name="manually-break-into-code"></a>S'arrêter manuellement dans le code
 
-Pour rompre la ligne de code suivante disponible dans une application en cours d’exécution, sélectionnez **Déboguer**  > **tout arrêter**ou appuyez sur **CTRL** +**ALT** +**arrêt**.
+Pour rompre la ligne de code suivante disponible dans une application en cours d’exécution, sélectionnez **Déboguer** > **tout arrêter**ou appuyez sur **CTRL**+**ALT**+**arrêt**.
 
 ## <a name="BKMK_Set_the_next_statement_to_execute"></a>Déplacer le pointeur pour modifier le workflow d’exécution
 
@@ -152,7 +152,7 @@ Le compteur de programme accède directement au nouvel emplacement, et les instr
 >- Le déplacement de l'instruction suivante vers une autre fonction ou portée entraîne généralement une altération de la pile des appels, provoquant une erreur ou exception d'exécution. Si vous tentez de déplacer l'instruction suivante vers une autre portée, le débogueur ouvre une boîte de dialogue avec un avertissement et vous donne une occasion d'annuler l'opération.
 >- En Visual Basic, vous ne pouvez pas déplacer l'instruction suivante à une autre portée ou fonction.
 >- En C++ natif, si les contrôles d'exécution sont activés, la définition de l'instruction suivante peut provoquer la levée d'une exception lorsque l'exécution atteint la fin de la méthode.
->- Lorsque Modifier & Continuer est activé, la commande **Définir l'instruction suivante** échoue si vous avez apporté des modifications qui ne peuvent pas être remappées immédiatement par Modifier &amp;amp; Continuer. Par exemple, cela peut se produire si vous avez modifié le code contenu dans un bloc catch. Dans ce cas, un message d’erreur vous indique que l’opération n’est pas prise en charge.
+>- Lorsque Modifier &amp; Continuer est activé, la commande **Définir l'instruction suivante** échoue si vous avez apporté des modifications qui ne peuvent pas être remappées immédiatement par Modifier &amp; Continuer. Par exemple, cela peut se produire si vous avez modifié le code contenu dans un bloc catch. Dans ce cas, un message d’erreur vous indique que l’opération n’est pas prise en charge.
 >- En code managé, vous ne pouvez pas déplacer l’instruction suivante si :
 >   - L'instruction suivante se trouve dans une méthode différente de celle de l'instruction actuelle.
 >   - Le débogage a été démarré par le débogage juste-à-temps.
@@ -163,7 +163,7 @@ Le compteur de programme accède directement au nouvel emplacement, et les instr
 
 Par défaut, le débogueur tente de déboguer uniquement le code de votre application en activant un paramètre appelé *uniquement mon code*. Pour plus d’informations sur le fonctionnement de cette fonctionnalité pour différents types de projets et langages, et sur la façon dont vous pouvez la personnaliser, consultez [uniquement mon code](../debugger/just-my-code.md).
 
-Pour examiner le code du Framework, le code de bibliothèque tiers ou les appels système pendant le débogage, vous pouvez désactiver Uniquement mon code. Dans **Outils** (ou **débogage**) > **options**  > **débogage**, désactivez la case à cocher **activer uniquement mon code** . Lorsque Uniquement mon code est désactivé, le code non-utilisateur apparaît dans les fenêtres du débogueur, et le débogueur peut effectuer un pas à pas détaillé dans le code non-utilisateur.
+Pour examiner le code du Framework, le code de bibliothèque tiers ou les appels système pendant le débogage, vous pouvez désactiver Uniquement mon code. Dans **Outils** (ou **débogage**) > **options** > **débogage**, désactivez la case à cocher **activer uniquement mon code** . Lorsque Uniquement mon code est désactivé, le code non-utilisateur apparaît dans les fenêtres du débogueur, et le débogueur peut effectuer un pas à pas détaillé dans le code non-utilisateur.
 
 > [!NOTE]
 > Uniquement mon code n'est pas pris en charge pour les projets Smart Device.
@@ -176,12 +176,12 @@ Pour charger des symboles Microsoft, consultez [configurer les emplacements de s
 
 **Pour charger des symboles pour un composant système spécifique :**
 
-1. Pendant le débogage, ouvrez la fenêtre **modules** en sélectionnant **déboguer**  > **modules** **Windows**  > , ou en appuyant sur **CTRL** +**ALT** +**U**.
+1. Pendant le débogage, ouvrez la fenêtre **modules** en sélectionnant **déboguer** > **modules** **Windows** > , ou en appuyant sur **CTRL**+**ALT**+**U**.
 
 1. Dans la fenêtre **modules** , vous pouvez déterminer les modules dont les symboles sont chargés dans la colonne **État du symbole** . Cliquez avec le bouton droit sur le module pour lequel vous souhaitez charger des symboles, puis sélectionnez **charger les symboles**.
 
 ## <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> Effectuer un pas à pas détaillé dans des propriétés et des opérateurs au sein du code managé
- Par défaut, le débogueur effectue un pas à pas principal sur les propriétés et les opérateurs dans le code managé. Dans la plupart des cas, cela fournit une meilleure expérience de débogage. Pour activer le pas à pas détaillé des propriétés ou des opérateurs, choisissez **Déboguer** les**options**de  > . Dans la page **Débogage** > **Général**, désactivez la case à cocher **Pas à pas principal dans les propriétés et les opérateurs (Managé uniquement)** .
+ Par défaut, le débogueur effectue un pas à pas principal sur les propriétés et les opérateurs dans le code managé. Dans la plupart des cas, cela fournit une meilleure expérience de débogage. Pour activer le pas à pas détaillé des propriétés ou des opérateurs, choisissez **Déboguer** les **options**de > . Dans la page **Débogage** > **Général**, désactivez la case à cocher **Pas à pas principal dans les propriétés et les opérateurs (Managé uniquement)** .
 
 ## <a name="see-also"></a>Voir aussi
 - [Qu’est-ce que le débogage ?](../debugger/what-is-debugging.md)

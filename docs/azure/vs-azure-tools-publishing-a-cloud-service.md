@@ -10,13 +10,13 @@ ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
 ms.openlocfilehash: d8257e0833da470554ce331c30cd0edf74122093
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75915954"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408679"
 ---
-# <a name="publishing-a-cloud-service-using-visual-studio"></a>Publication d’un service cloud avec Visual Studio
+# <a name="publishing-a-cloud-service-using-visual-studio"></a>Publication d'un service cloud avec Visual Studio
 
 Visual Studio peut publier une application directement sur Azure, avec le support pour les deux environnements Intermédiaire et Production d’un service cloud. Lors de la publication, sélectionnez l’environnement de déploiement et un compte de stockage utilisé de façon temporaire pour le package de déploiement.
 
@@ -33,11 +33,11 @@ Lorsque vous publiez votre application Azure, vous pouvez effectuer l'une des t�
 
 - Créer un package de services : vous pouvez utiliser ce package et le fichier de configuration de service pour publier votre application dans un environnement de déploiement à partir du [portail Azure](https://portal.azure.com).
 
-- Publier votre projet Azure à partir de Visual Studio : Pour publier votre application directement dans Azure, utilisez l'Assistant Publication. Pour plus d’informations, consultez [Assistant Publication d’application Azure](vs-azure-tools-publish-azure-application-wizard.md).
+- Publier votre projet Azure à partir de Visual Studio : pour publier votre application directement dans Azure, vous utilisez l'Assistant Publication. Pour plus d’informations, consultez [Assistant Publication d’application Azure](vs-azure-tools-publish-azure-application-wizard.md).
 
 ### <a name="to-create-a-service-package-from-visual-studio"></a>Pour créer un package de services à partir de Visual Studio
 
-1. Lorsque vous êtes prêt à publier votre application, ouvrez l'Explorateur de solutions, puis le menu contextuel du projet Windows Azure qui contient vos rôles et sélectionnez Publier.
+1. Lorsque vous êtes prêt à publier votre application, ouvrez l'Explorateur de solutions, ouvrez le menu contextuel du projet Azure qui contient vos rôles, puis choisissez Publier.
 
 1. Pour créer un package de services uniquement, procédez comme suit :
 
@@ -145,7 +145,7 @@ Vous devrez peut-être inclure des fichiers spécifiques dans votre package de s
 
     La référence est ajoutée à la liste sous le dossier **Références** .
 
-1. Ouvrez le menu contextuel pour l'assembly que vous avez ajouté, puis choisissez **Propriétés**. La fenêtre Propriétés s'affiche.
+1. Ouvrez le menu contextuel pour l'assembly que vous avez ajouté, puis choisissez **Propriétés**. La fenêtre Propriétés apparaît.
 
 1. Pour inclure cet assembly dans le package de services, dans la **liste de copie locale**, choisissez **True**.
 
@@ -153,6 +153,6 @@ Vous devrez peut-être inclure des fichiers spécifiques dans votre package de s
 
 1. Pour inclure dans le package de services des fichiers qui ont été ajoutés à votre projet de rôle web, ouvrez le menu contextuel du fichier, puis choisissez **Propriétés**. Dans la fenêtre **Propriétés**, choisissez **Copier si plus récent** dans la liste déroulante **Copier dans le répertoire de sortie**.
 
-## <a name="next-steps"></a>Étapes suivantes :
+## <a name="next-steps"></a>Étapes suivantes
 
 Pour en savoir plus sur la publication sur Azure depuis Visual Studio, consultez [Assistant Publication d’application Azure](vs-azure-tools-publish-azure-application-wizard.md).

@@ -14,11 +14,11 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: 6c68db12f8ecea523327250fec1f600639a2f267
-ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72659242"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408362"
 ---
 # <a name="whats-new-for-design-in-visual-studio-in-visual-studio-2015"></a>Nouveautés de la conception dans Visual Studio dans Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,9 +66,9 @@ Cette version de Visual Studio inclut les améliorations suivantes pour vous aid
 
 ## <a name="VersionSupport"></a>Prise en charge d’édition pour les outils d’architecture et de modélisation
 
-Visual Studio 2015 est disponible dans plusieurs éditions. Les outils d’architecture et de modélisation ne sont pas tous pris en charge. Le tableau ci-après décrit la disponibilité de chaque outil.
+Visual Studio 2015 est disponible dans plusieurs éditions. N’est pas en charge l’architecture et les outils de modélisation. Le tableau ci-après décrit la disponibilité de chaque outil.
 
-|**Fonctionnalité**|**Entreprise**|**Technologiques**|**Community**|**Exprime**|
+|**Fonctionnalité**|**Enterprise**|**Technologiques**|**Communauté**|**Express**|
 |-----------------|--------------------|----------------------|-------------------|-----------------|
 |**Cartes de code**|Oui|Prend uniquement en charge la lecture et le filtrage de cartes de code, l’ajout de nouveaux nœuds génériques et la création d’un graphique orienté à partir d’une sélection.|-|-|
 |**Diagrammes de classes UML**|Oui|-|-|-|

@@ -14,11 +14,11 @@ ms.workload:
 - dotnet
 - dotnetcore
 ms.openlocfilehash: 471932f6a097879da194dc6bb4f18807f2323397
-ms.sourcegitcommit: 7b07e7b5e06e2e13f622445c568b78a284e1a40d
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76542657"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408464"
 ---
 # <a name="language-conventions"></a>Conventions de langage
 
@@ -50,7 +50,7 @@ Pour chaque convention de langage, vous spécifiez une valeur qui définit si ou
 
 Un niveau de gravité de convention de langage spécifie le niveau auquel appliquer ce style. Le tableau suivant répertorie les valeurs de gravité possibles, ainsi que leurs effets :
 
-Gravité | Effet
+severity | Résultat
 :------- | ------
 `error` | En cas de violation de cette règle de style, afficher une erreur du compilateur.
 `warning` | En cas de violation de cette règle de style, afficher un avertissement du compilateur.
@@ -92,7 +92,7 @@ Les règles de style mentionnées dans cette section s’appliquent aussi bien a
 - [Mots clés de langage plutôt que des noms de types d’infrastructure pour les références de type](#language-keywords)
   - dotnet\_style\_predefined\_type\_for\_locals\_parameters_members
   - dotnet\_style\_predefined\_type\_for\_member_access
-- [Préférences de modificateur](#normalize-modifiers)
+- [Préférences des modificateurs](#normalize-modifiers)
   - dotnet\_style\_require\_accessibility_modifiers
   - csharp\_preferred\_modifier_order
   - visual\_basic\_preferred\_modifier_order
@@ -392,7 +392,7 @@ class MyClass
 |-|-|
 | **Nom de la règle** | visual_basic_preferred_modifier_order |
 | **ID de règle** | IDE0036 |
-| **Langages applicables** | Visual Basic |
+| **Langages applicables** | Visual Basic |
 | **Valeurs** | Un ou plusieurs modificateurs Visual Basic, tels que `Partial`, `Private` et `Public` |
 | **Valeur par défaut de Visual Studio** | `Partial, Default, Private, Protected, Public, Friend, NotOverridable, Overridable, MustOverride, Overloads, Overrides, MustInherit, NotInheritable, Static, Shared, Shadows, ReadOnly, WriteOnly, Dim, Const,WithEvents, Widening, Narrowing, Custom, Async:silent` |
 | **Version introduite** | Visual Studio 2017 version 15.5 |
@@ -1888,5 +1888,5 @@ switch (x)
 ## <a name="see-also"></a>Voir aussi
 
 - [Conventions de mise en forme](editorconfig-formatting-conventions.md)
-- [Conventions d’attribution d’un nom](editorconfig-naming-conventions.md)
+- [Conventions d’affectation de noms](editorconfig-naming-conventions.md)
 - [Paramètres des conventions de codage .NET pour EditorConfig](editorconfig-code-style-settings-reference.md)

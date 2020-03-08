@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 7ceecffec577528484cd67fd13d3e04f368fb916
-ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
-ms.translationtype: HT
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68822394"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409937"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Utiliser la fenêtre interactive Python
 
@@ -27,14 +27,14 @@ Visual Studio propose plusieurs modes REPL Python au choix :
 
 | REPL | Description | Modification | Débogage | Images |
 | --- | --- | --- | --- | --- |
-| Standard | REPL par défaut, communique directement avec Python | Modification standard (multiligne, etc.). | Oui, via `$attach` | Non |
+| standard | REPL par défaut, communique directement avec Python | Modification standard (multiligne, etc.). | Oui, via `$attach` | Non |
 | Débogage | REPL par défaut, communique avec le processus Python débogué | Modification standard | Débogage uniquement | Non |
 | IPython | REPL qui communique avec le serveur principal IPython | Commandes IPython, avantages de Pylab | Non | Oui, inline dans REPL |
 | IPython sans Pylab | REPL qui communique avec le serveur principal IPython | IPython standard | Non | Oui, fenêtre distincte |
 
 Cet article décrit les modes REPL **Standard** et **Débogage**. Pour plus d’informations sur les modes IPython, consultez [Utiliser IPython REPL](interactive-repl-ipython.md).
 
-Pour obtenir une procédure pas à pas détaillée avec des exemples, notamment les interactions avec l’éditeur, telles que **Ctrl**+**Entrée**, consultez [Tutoriel - Étape 3 : Utiliser la fenêtre REPL interactive](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md).
+Pour obtenir une procédure pas à pas détaillée avec des exemples, notamment les interactions avec l’éditeur **Ctrl**+**Entrée**, consultez [Tutoriel - Étape 3 : Utiliser la fenêtre REPL interactive](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md).
 
 ## <a name="open-an-interactive-window"></a>Ouvrir une fenêtre interactive
 
@@ -104,10 +104,10 @@ En plus de pouvoir travailler directement dans la fenêtre **Interactive**, vous
 
 ![Commande de menu Envoyer vers Interactive](media/interactive-send-to.png)
 
-Cette commande est utile dans le cadre du développement de code itératif ou évolutionnaire, car elle permet notamment de tester votre code à mesure que vous le développez. Par exemple, une fois que vous avez envoyé du code dans la fenêtre **Interactive** et que vous avez vu sa sortie, vous pouvez appuyer sur la touche Haut pour afficher de nouveau le code, le modifier et le tester rapidement à l’aide des touches **Ctrl**+**Entrée**. (Appuyez sur **Entrée** à la fin d’une entrée pour l’exécuter, ou appuyez sur **Entrée** au milieu d’une entrée pour insérer une nouvelle ligne.) Une fois que vous obtenez le code que vous souhaitez, vous pouvez facilement le copier dans votre fichier projet.
+Cette commande est utile dans le cadre du développement de code itératif ou évolutionnaire, car elle permet notamment de tester votre code à mesure que vous le développez. Par exemple, une fois que vous avez envoyé du code dans la fenêtre **Interactive** et que vous avez vu sa sortie, vous pouvez appuyer sur la touche Haut pour afficher de nouveau le code, le modifier et le tester rapidement à l’aide des touches **Ctrl**+**Entrée**. (Appuyez sur **entrée** à la fin de l’entrée pour l’exécuter, mais Appuyez sur **entrée** au milieu de l’entrée insère un saut de ligne.) Une fois que vous avez le code souhaité, vous pouvez le copier à nouveau dans votre fichier projet.
 
 > [!Tip]
-> Par défaut, Visual Studio supprime **>>>** et **...** REPL affiche une invite quand vous collez du code de la fenêtre **Interactive** dans l’éditeur. Vous pouvez changer ce comportement sous l’onglet **Outils** > **Options** > **Éditeur de texte** > **Python** > **Avancé** à l’aide de l’option **Le collage supprime les invites REPL**. Consultez [Options - Options diverses](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options).
+> Par défaut, Visual Studio supprime **>>>** et **...** Réplication des invites lors du collage du code à partir de la fenêtre **interactive** dans l’éditeur. Vous pouvez changer ce comportement sous l’onglet **Outils** > **Options** > **Éditeur de texte** > **Python** > **Avancé** à l’aide de l’option **Le collage supprime les invites REPL**. Consultez [Options - Options diverses](python-support-options-and-settings-in-visual-studio.md#miscellaneous-options).
 
 <!-- After 15.3 is released, you can also press **Undo** after pasting to restore prompts. Press **Undo** a second time to remove the pasted code entirely. -->
 

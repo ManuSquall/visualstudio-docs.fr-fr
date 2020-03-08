@@ -21,21 +21,21 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8b413ce193e6761d515de5bc5ef30fae8e18a3a3
-ms.sourcegitcommit: 40bd5b27f247a07c2e2514acb293b23d6ce03c29
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73187518"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409297"
 ---
 # <a name="remote-debugging-errors-and-troubleshooting"></a>Erreurs de débogage distant et dépannage
 
 Vous pouvez rencontrer les erreurs suivantes lorsque vous tentez de déboguer à distance.
 
-- [Error: Unable to Automatically Step Into the Server](../debugger/error-unable-to-automatically-step-into-the-server.md)
+- [Erreur : Impossible d’effectuer automatiquement un pas à pas détaillé sur le serveur](../debugger/error-unable-to-automatically-step-into-the-server.md)
 
 - [Erreur : Microsoft Visual Studio Remote Debugging Monitor (MSVSMON.EXE) ne semble pas s’exécuter sur l’ordinateur distant](error-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running.md)
 
-- [Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor](../debugger/unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md)
+- [Impossible de se connecter à Microsoft Visual Studio Remote Debugging Monitor](../debugger/unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md)
 
 - [Erreur : l’ordinateur distant n’apparaît pas dans une boîte de dialogue Connexions à distance](../debugger/error-remote-machine-does-not-appear-in-a-remote-connections-dialog.md)
 
@@ -74,4 +74,4 @@ Vous souhaitez exécuter le débogueur distant en tant qu’administrateur dans 
 Vous ne souhaitez **pas** exécuter en tant qu’administrateur si vous souhaitez lancer des processus et que le processus que vous souhaitez lancer **ne doit pas** être un administrateur.
 
 ## <a name="see-also"></a>Voir aussi
-- [Remote Debugging](../debugger/remote-debugging.md)
+- [Débogage à distance](../debugger/remote-debugging.md)

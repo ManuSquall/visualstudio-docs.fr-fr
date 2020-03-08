@@ -7,11 +7,11 @@ ms.date: 07/17/2019
 ms.topic: conceptual
 description: Découvrez comment tirer le meilleur parti de vos abonnements Visual Studio.
 ms.openlocfilehash: a8a58cd3fca2443ca84db712cbd2a356351d4499
-ms.sourcegitcommit: 49ebf69986713e440fd138fb949f1c0f47223f23
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74706968"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408888"
 ---
 # <a name="managing-subscriptions"></a>Gestion des abonnements
 
@@ -99,7 +99,7 @@ Une fois que vous avez ajouté un autre compte, vous pouvez le mettre à jour ou
 ### <a name="q-if-i-do-not-renew-my-subscription-how-long-will-microsoft-keep-my-data"></a>Q : Si je ne renouvelle pas mon abonnement, combien de temps Microsoft conserve mes données ?
 R : En fonction du canal d’achat, Microsoft conserve les données des clients pendant une durée définie.
 
-| Canal                                                | Durée (jours) |
+| Channel                                                | Durée (jours) |
 |--------------------------------------------------------|-----------------|
 |    Vente au détail (par exemple, via le Microsoft Store)               |    360          |
 |    Centre de gestion des licences en volume (VLSC)              |    180          |

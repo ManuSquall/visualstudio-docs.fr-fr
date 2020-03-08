@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9170532746dfc61cdec6636fb669676a94535de1
-ms.sourcegitcommit: c150d0be93b6f7ccbe9625b41a437541502560f5
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75848781"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409136"
 ---
 # <a name="upgrading-projects"></a>Mise à niveau des projets
 
@@ -50,7 +50,7 @@ Après la mise à jour de tous les fichiers globaux pertinents, chaque fabrique 
 > [!NOTE]
 > La méthode <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> ne fournit pas le service SVsUpgradeLogger. Ce service peut être obtenu en appelant <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>.
 
-## <a name="best-practices"></a>Pratiques recommandées
+## <a name="best-practices"></a>Bonnes pratiques
 
 Utilisez le service <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> pour vérifier si vous pouvez modifier un fichier avant de le modifier et l’enregistrer avant de l’enregistrer. Cela aidera vos implémentations de sauvegarde et de mise à niveau à gérer les fichiers projet sous contrôle de code source, les fichiers avec des autorisations insuffisantes, etc.
 

@@ -6,11 +6,11 @@ ms.author: johmil
 ms.date: 12/13/2019
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
 ms.openlocfilehash: 4247e5cfb936d79c2b2bea5ac68a16164f0c0ef0
-ms.sourcegitcommit: 8e123bcb21279f2770b28696995450270b4ec0e9
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "75406668"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78410506"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Utilisation des outils Visual Studio pour Mac pour Unity
 
@@ -39,7 +39,7 @@ Toutefois, les outils Visual Studio pour Mac pour Unity étendent leur fonctionn
 
 3. Une fois que les lettres « **ont** » ont été tapées, une liste de suggestions IntelliSense s’affiche.
 
-   ![Utilisation de la fonctionnalité IntelliSense](media/using-vsmac-tools-unity-image2.png)
+   ![Using IntelliSense](media/using-vsmac-tools-unity-image2.png)
 
 4. Vous pouvez changer la sélection dans la liste de trois façons :
 
@@ -91,7 +91,7 @@ Les projets Unity peuvent être débogués avec Visual Studio pour Mac.
 
 ### <a name="start-debugging"></a>Démarrer le débogage
 
-Pour démarrer le débogage :
+Pour démarrer le débogage :
 
 1. Connectez Visual Studio à Unity en cliquant sur le bouton **Lire**, ou appuyez sur **Commande + Entrée** ou **F5**.
 

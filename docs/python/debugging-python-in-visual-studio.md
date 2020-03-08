@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 4678e3508c16b38fec2a10cdeb79bc499eaf15fd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62959892"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409983"
 ---
 # <a name="debug-your-python-code"></a>Déboguer votre code Python
 
@@ -66,15 +66,15 @@ Lorsque vous définissez des conditions, vous pouvez également définir **Actio
 
 Une fois arrêté au niveau d’un point d’arrêt, vous disposez de différentes méthodes pour exécuter le code pas à pas ou pour exécuter des blocs de code avant de marquer un nouvel arrêt. Ces commandes sont disponibles à divers emplacements, notamment la barre d’outils de débogage supérieure, le menu **Débogage**, le menu contextuel dans l’éditeur de code et certains raccourcis clavier (même si certaines de ces commandes ne sont pas disponibles à tous ces emplacements) :
 
-| Fonctionnalité | Touche(s) | Description |
+| Fonctionnalité | Séquence de touches | Description |
 | --- | --- | --- |
-| **Continue** | **F5** | Exécute le code jusqu’au point d’arrêt suivant. |
+| **Continuer** | **F5** | Exécute le code jusqu’au point d’arrêt suivant. |
 | **Pas à pas détaillé** | **F11** | Exécute l’instruction suivante et s’arrête. Si l’instruction suivante correspond à l’appel d’une fonction, le débogueur s’arrête à la première ligne de la fonction appelée. |
 | **Pas à pas principal** | **F10** | Exécute l’instruction suivante, y compris l’appel d’une fonction (en exécutant la totalité de son code) et l’application de toute valeur renvoyée. Le mode pas à pas principal vous permet d’ignorer facilement les fonctions que vous n’avez pas besoin de déboguer. |
 | **Pas à pas sortant** | **Maj**+**F11** | Exécute le code jusqu’à la fin de la fonction actuelle, puis procède à une exécution pas à pas jusqu’à l’instruction appelante.  Cette commande est utile quand vous n’avez pas besoin de déboguer le reste de la fonction actuelle. |
 | **Exécuter jusqu’au curseur** | **Ctrl**+**F10** | Exécute le code jusqu’à l’emplacement du signe insertion dans l’éditeur. Cette commande vous permet d’ignorer facilement un segment de code que vous n’avez pas besoin de déboguer. |
 | **Définir l’instruction suivante** | **Ctrl**+**Maj**+**F10** | Redéfinit le point d’exécution actuel dans le code sur l’emplacement du signe insertion. Cette commande vous permet d’omettre totalement l’exécution d’un segment de code donné, par exemple quand vous savez que le code est défectueux ou qu’il produit un effet indésirable. |
-| **Afficher l’instruction suivante** | **Alt**+**Num** **&#42;**| Vous renvoie à la prochaine instruction à exécuter. Cette commande est utile si vous avez parcouru votre code et que vous ne vous souvenez pas de l’endroit où le débogueur s’est arrêté. |
+| **Afficher l'instruction suivante** | **Alt**+**num** **&#42;**| Vous renvoie à la prochaine instruction à exécuter. Cette commande est utile si vous avez parcouru votre code et que vous ne vous souvenez pas de l’endroit où le débogueur s’est arrêté. |
 
 ### <a name="inspect-and-modify-values"></a>Inspecter et modifier les valeurs
 
@@ -159,7 +159,7 @@ La **fenêtre interactive de débogage Python** (**Débogage** > **Fenêtres** >
 
 ![Fenêtre de débogage Python interactive](media/debugging-interactive.png)
 
-Outre les [commandes REPL standard](python-interactive-repl-in-visual-studio.md#meta-commands), la fenêtre de **débogage interactive** prend en charge des méta commandes spéciales :
+Outre les **commandes REPL standard**, la fenêtre de [débogage interactive](python-interactive-repl-in-visual-studio.md#meta-commands) prend en charge des méta commandes spéciales :
 
 | Commande | Arguments | Description |
 | --- | --- | --- |
@@ -219,7 +219,7 @@ Pour gérer votre installation de ptvsd :
 
 1. Autre possibilité : vous pouvez mettre à jour le package ptvsd (dernière version) en suivant les instructions de la section [Résolution des problèmes](#troubleshooting).
 
-## <a name="troubleshooting"></a>Résolution des problèmes
+## <a name="troubleshooting"></a>Dépannage
 
 Si vous rencontrez des problèmes avec le débogueur, commencez par mettre à niveau votre version de ptvsd :
 

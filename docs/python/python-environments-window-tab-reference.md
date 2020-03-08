@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 578f73aabfb8b5a4c8336c8611f634b8947c8885
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62784994"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409960"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Référence sur les onglets de la fenêtre Environnements Python
 
@@ -33,7 +33,7 @@ Si vous agrandissez suffisamment la fenêtre **Environnements Python**, ces opti
 ![Affichage développé de la fenêtre Environnements Python](media/environments/environments-expanded-view-2019.png)
 ::: moniker-end
 
-## <a name="overview-tab"></a>Onglet Vue d’ensemble
+## <a name="overview-tab"></a>Onglet Overview
 
 Fournit des commandes et des informations de base pour l’environnement :
 
@@ -60,7 +60,7 @@ Quand vous utilisez des fenêtres interactives dans votre flux de travail quotid
 
 Les scripts de démarrage contiennent du code que la fenêtre **Interactive** charge et exécute automatiquement, notamment les importations, les définitions de fonctions et, littéralement, tout autre élément. Ces scripts sont référencés de deux manières :
 
-1. Quand vous installez un environnement, Visual Studio crée un dossier *Documents\Visual Studio \<version>\Python Scripts\\\<environnement>*, où &lt;version&gt; correspond à la version de Visual Studio (par exemple, 2017 ou 2019) et &lt;environnement&gt; au nom de l’environnement. Vous pouvez facilement accéder au dossier spécifique à l’environnement avec la commande **Explorer les scripts interactifs**. Quand vous démarrez la fenêtre **Interactive** pour cet environnement, elle charge et exécute tous les fichiers *.py* qui s’y trouvent dans l’ordre alphabétique.
+1. Quand vous installez un environnement, Visual Studio crée un dossier *Documents\Visual Studio \<version>\Python Scripts\\\<environnement>* , où &lt;version&gt; correspond à la version de Visual Studio (par exemple, 2017 ou 2019) et &lt;environnement&gt; au nom de l’environnement. Vous pouvez facilement accéder au dossier spécifique à l’environnement avec la commande **Explorer les scripts interactifs**. Quand vous démarrez la fenêtre **Interactive** pour cet environnement, elle charge et exécute tous les fichiers *.py* qui s’y trouvent dans l’ordre alphabétique.
 
 1. Le contrôle **Scripts** sous l’onglet **Outils** > **Options** > **Python** > **Fenêtres interactives** (consultez [Options des fenêtres interactives](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)) est destiné à spécifier un dossier supplémentaire pour les scripts de démarrage qui sont chargés et exécutés dans tous les environnements. Toutefois, cette fonctionnalité ne fonctionne pas actuellement.
 
@@ -78,9 +78,9 @@ S’il est disponible, l’onglet **Configure** contient les informations décri
 | Champ | Description |
 | --- | --- |
 | **Description** | Le nom à donner à l’environnement. |
-| **Prefix path** (Chemin du préfixe) | L’emplacement du dossier de base de l’interpréteur. En indiquant cette valeur et en cliquant sur **Détecter automatiquement**, Visual Studio tente de renseigner les autres champs pour vous. |
-| **Interpreter Path** (Chemin d’interpréteur) | Chemin de l’exécutable de l’interpréteur. En règle générale, il s’agit du chemin de préfixe suivi de **python.exe** |
-| **Windowed interpreter** (Interpréteur avec fenêtre) | Chemin de l’exécutable qui n’est pas celui de la console. Bien souvent, il s’agit du chemin de préfixe suivi de **pythonw.exe**. |
+| **Chemin de préfixe** | L’emplacement du dossier de base de l’interpréteur. En indiquant cette valeur et en cliquant sur **Détecter automatiquement**, Visual Studio tente de renseigner les autres champs pour vous. |
+| **Chemin de l’interpréteur** | Chemin de l’exécutable de l’interpréteur. En règle générale, il s’agit du chemin de préfixe suivi de **python.exe** |
+| **Interpréteur en mode fenêtre** | Chemin de l’exécutable qui n’est pas celui de la console. Bien souvent, il s’agit du chemin de préfixe suivi de **pythonw.exe**. |
 | **Chemin d’accès à la bibliothèque**<br/>(s’il est disponible) | Spécifie la racine de la bibliothèque standard, mais cette valeur peut être ignorée si Visual Studio est en mesure de demander un chemin d’accès plus précis à partir de l’interpréteur. |
 | **Version du langage** | Sélectionnée à partir du menu déroulant. |
 | **Architecture** | Normalement détectée et renseignée automatiquement, sinon **32 bits** ou **64 bits** est spécifié. |
@@ -90,7 +90,7 @@ S’il est disponible, l’onglet **Configure** contient les informations décri
 
 *Également appelé « pip » dans les versions antérieures.*
 
-Gère les packages installés dans l’environnement à l’aide de pip (l’onglet **Packages (PyPI)**) ou de conda (l’onglet **Packages (Conda)**, pour les environnements conda dans Visual Studio 2017 version 15.7 et ultérieure). Dans cet onglet, vous pouvez également rechercher et installer de nouveaux packages, y compris leurs dépendances.
+Gère les packages installés dans l’environnement à l’aide de pip (l’onglet **Packages (PyPI)** ) ou de conda (l’onglet **Packages (Conda)** , pour les environnements conda dans Visual Studio 2017 version 15.7 et ultérieure). Dans cet onglet, vous pouvez également rechercher et installer de nouveaux packages, y compris leurs dépendances.
 
 Les packages qui sont déjà installés apparaissent avec des contrôles pour mettre à jour (flèche vers le haut) et désinstaller (X dans un cercle) le package :
 
@@ -105,7 +105,7 @@ La saisie d’un terme de recherche filtre la liste des packages installés, ain
 ![Onglet packages, Environnements Python, avec recherche de « num »](media/environments/environments-pip-tab-2019.png)
 ::: moniker-end
 
-Comme vous pouvez le voir dans l’image ci-dessus, les résultats de la recherche affichent plusieurs packages qui correspondent au terme de recherche. Toutefois, la première entrée de la liste est une commande qui permet d’exécuter **pip install \<nom>** directement. Si vous êtes sous l’onglet **Packages (Conda)**, vous voyez plutôt **conda install \<nom>**  :
+Comme vous pouvez le voir dans l’image ci-dessus, les résultats de la recherche affichent plusieurs packages qui correspondent au terme de recherche. Toutefois, la première entrée de la liste est une commande qui permet d’exécuter **pip install \<nom>** directement. Si vous êtes sous l’onglet **Packages (Conda)** , vous voyez plutôt **conda install \<nom>**  :
 
 ::: moniker range="vs-2017"
 ![Onglet de packages Conda montrant une commande d’installation conda](media/environments/environments-conda-tab-install.png)
@@ -131,7 +131,7 @@ Au moment d’installer des packages dans un environnement situé dans une zone 
 
 ![Invite d’élévation pour l’installation de packages](media/environments/environments-pip-elevate.png)
 
-**Élever les privilèges maintenant** accorde des privilèges d’administrateur à pip pour une seule opération, pouvant aussi faire l’objet d’une demande d’autorisations du système d’exploitation. Quand vous sélectionnez **Continuer sans privilège d’administrateur**, une tentative d’installation du package a lieu, mais pip ne parvient pas à créer de dossiers, et une sortie telle que **Erreur : impossible de créer « C:\Program Files\Anaconda3\Lib\site-packages\png.py » : Autorisation refusée.** s’affiche.
+**Élever les privilèges maintenant** accorde des privilèges d’administrateur à pip pour une seule opération, pouvant aussi faire l’objet d’une demande d’autorisations du système d’exploitation. Quand vous sélectionnez **Continuer sans privilège d’administrateur**, une tentative d’installation du package a lieu, mais pip ne parvient pas à créer de dossiers, et une sortie telle que **Erreur : impossible de créer « C:\Program Files\Anaconda3\Lib\site-packages\png.py » : Autorisation refusée** s’affiche.
 
 En sélectionnant **Toujours élever les privilèges pour l’installation et la suppression des packages**, vous empêchez la boîte de dialogue de s’afficher pour l’environnement en question. Pour que la boîte de dialogue s’affiche à nouveau, accédez à **Outils** > **Options** > **Python** > **Général**, puis sélectionnez le bouton **Réinitialiser toutes les boîtes de dialogue masquées définitivement**.
 
@@ -143,7 +143,7 @@ Quand Python 2.6, 3.1 et 3.2 sont utilisés, Visual Studio affiche un avertis
 
 ![Message concernant les restrictions d’installation de pip avec l’ancienne version de Python](media/environments/environments-old-version-restriction.png)
 
-La raison de cet avertissement est que dans les versions plus anciennes de Python, `pip install` ne contient pas la prise en charge de la sécurité TLS (Transport Layer Security) 1.2, qui est nécessaire pour télécharger des packages à partir de la source de packages, pypi.org. Les builds Python personnalisées peuvent prendre en charge TLS 1.2, auquel cas `pip install` peut fonctionner.
+La raison de cet avertissement est que avec ces anciennes versions de Python, `pip install` ne prend pas en charge la couche de sécurité de transport (TLS) 1,2, qui est nécessaire pour télécharger des packages à partir de la source du package, pypi.org. Les builds python personnalisées peuvent prendre en charge TLS 1,2, auquel cas `pip install` peut fonctionner.
 
 Il est possible de télécharger le *get-pip.py* approprié pour un package à partir de [bootstrap.pypa.io](https://bootstrap.pypa.io/), de télécharger manuellement un package à partir de [pypi.org](https://pypi.org/), puis d’installer le package à partir de cette copie locale.
 
@@ -157,9 +157,9 @@ Affiche l’état actuel de la base de données de saisie semi-automatique Intel
 ![Onglet IntelliSense, Environnements Python](media/environments/environments-intellisense-tab.png)
 
 - Dans Visual Studio 2017 version 15.5 et antérieures, les complétions IntelliSense dépendent d’une base de données qui a été compilée pour cette bibliothèque. La génération de la base de données est effectuée en arrière-plan quand une bibliothèque est installée, mais peut prendre du temps et ne pas être terminée lorsque vous démarrez l’écriture de code.
-- Visual Studio 2017 versions 15.6 et ultérieures utilise une méthode plus rapide pour fournir des complétions qui ne dépendent pas de la base de données par défaut. Pour cette raison, l’onglet est étiqueté **IntelliSense [base de données désactivée]**. Vous pouvez activer la base de données en désactivant l’option **Outils** > **Options** > **Python** > **Expérimental** > **Utiliser le nouveau style IntelliSense pour les environnements**.
+- Visual Studio 2017 versions 15.6 et ultérieures utilise une méthode plus rapide pour fournir des complétions qui ne dépendent pas de la base de données par défaut. Pour cette raison, l’onglet est étiqueté **IntelliSense [base de données désactivée]** . Vous pouvez activer la base de données en désactivant l’option **Outils** > **Options** > **Python** > **Expérimental** > **Utiliser le nouveau style IntelliSense pour les environnements**.
 
-Lorsque Visual Studio détecte un nouvel environnement (ou que vous en ajoutez un), il commence automatiquement à compiler la base de données en analysant les fichiers source de la bibliothèque. Ce processus peut prendre entre une minute et plus d’une heure, selon ce qui est installé. (Anaconda, par exemple, est fourni avec de nombreuses bibliothèques et la compilation de la base de données prend un certain temps). Une fois ce processus terminé, vous obtenez la base de données IntelliSense détaillée et n’avez pas à actualiser une nouvelle fois la base de données (avec le bouton **Refresh DB** (Actualiser base de données)) jusqu’à ce que vous installiez d’autres bibliothèques.
+Lorsque Visual Studio détecte un nouvel environnement (ou que vous en ajoutez un), il commence automatiquement à compiler la base de données en analysant les fichiers source de la bibliothèque. Ce processus peut prendre entre une minute et plus d’une heure, selon ce qui est installé. (Anaconda, par exemple, est fourni avec de nombreuses bibliothèques et prend un certain temps pour compiler la base de données.) Une fois l’opération terminée, vous bénéficiez d’IntelliSense détaillé et vous n’avez pas besoin d’actualiser à nouveau la base de données (avec le bouton **Actualiser** la base de données) jusqu’à ce que vous installiez
 
 Les bibliothèques pour lesquelles les données n’ont pas été compilées sont marquées d’un **!**  ; si la base de données d’un environnement n’est pas complète, un **!** apparaît également en regard de celle-ci dans la liste principale des environnements.
 

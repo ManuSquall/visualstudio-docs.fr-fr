@@ -7,11 +7,11 @@ ms.date: 03/02/2020
 ms.topic: conceptual
 description: Découvrir comment définir les préférences pour la langue, les contacts, le niveau d’abonnement et d’autres éléments dans le portail d’administration
 ms.openlocfilehash: 63bce3bf7cdd9b5152e1939b708318fc48985fc1
-ms.sourcegitcommit: 9eff8371b7a79a637ebb6850f775dd3eed343d8b
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "78234912"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78410403"
 ---
 # <a name="set-preferences-for-your-agreements-in-the-administration-portal"></a>Définir les préférences pour vos contrats dans le portail d’administration
 Les super administrateurs peuvent définir certaines préférences dans le portail d’administration (portail d’administration) qui seront appliquées globalement pour chaque contrat.  Ces préférences remplissent automatiquement les détails de l’abonnement pour vos administrateurs lorsqu’ils ajoutent des abonnés et peuvent uniquement être modifiées globalement par les super administrateurs.  
@@ -39,7 +39,7 @@ Si vous avez plusieurs contrats pour lesquels vous êtes super administrateur, v
 
 S’il n’existe qu’un seul contrat associé à l’adresse e-mail que vous avez utilisée pour vous connecter, il est affiché et la liste déroulante est désactivée. 
 
-### <a name="contact-email-address"></a>Adresse de messagerie du contact
+### <a name="contact-email-address"></a>Adresse e-mail de contact
 Ces préférences permettent à vos abonnés de contacter les administrateurs à l’aide du bouton **Contacter mon administrateur** dans la [page des abonnements](https://my.visualstudio.com/subscriptions) du portail des abonnés.  Si cette préférence est laissée vide, les messages de l’abonné sont transférés à tous les administrateurs et tous les super administrateurs du contrat.  Nous vous recommandons d’utiliser un alias d’e-mail de groupe ou un groupe de sécurité pour adapter votre audience à cet e-mail de contact. Si vous préférez, vous pouvez aussi choisir d’entrer l’adresse e-mail d’une personne.
 
 > [!NOTE]

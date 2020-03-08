@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d5c4e8f39ff77779985536e53d98ddc2785b109b
-ms.sourcegitcommit: 257fc60eb01fefafa9185fca28727ded81b8bca9
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72911487"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409322"
 ---
 # <a name="graphics-event-list"></a>Liste des événements Graphics
 La liste des événements Graphics dans Visual Studio Graphics Analyzer vous permet d'explorer les événements Direct3D enregistrés durant le rendu d'un frame de votre jeu ou application.
@@ -32,7 +32,7 @@ La liste des événements Graphics dans Visual Studio Graphics Analyzer vous per
 ### <a name="color-coded-events-in-direct3d-12"></a>Événements à code de couleurs dans Direct3D 12
  Direct3D 12 expose plusieurs files d'attente qui correspondent à différentes fonctionnalités matérielles. Pour faciliter l'identification de la file d'attente associée à un événement graphique particulier dans Direct3D 12, les événements apparaissent dans la liste des événements sous forme d'événements à code de couleurs en fonction de leur file d'attente quand vous travaillez sur une capture d'une application Direct3D 12.
 
-|File d'attente Direct3D 12|Color|
+|File d'attente Direct3D 12|Couleur|
 |-----------------------|-----------|
 |File d'attente de rendu|Vert|
 |File d'attente de calcul|Jaune|
@@ -108,10 +108,10 @@ Cette fenêtre vous permet d’afficher l’historique de l’élément sélecti
 | Colonne | Description |
 |-----------| - |
 | **Type** | Affiche le type de l’entrée, généralement *créer*, *lire* et *écrire*. |
-| **Affichage** | Affiche une miniature de la ressource à ce moment précis.  Double-cliquez sur la miniature pour ouvrir une vue détaillée de la ressource à ce moment-là. |
+| **Afficher** | Affiche une miniature de la ressource à ce moment précis.  Double-cliquez sur la miniature pour ouvrir une vue détaillée de la ressource à ce moment-là. |
 | **Event** | Affiche l’appel de méthode qui a généré l’événement.  Tout historique supplémentaire sur des éléments individuels peut être affiché en sélectionnant l’icône espion ![icône espion](media/gfx_watch.png) sur la ligne appropriée.  En outre, tout élément dessiné en texte bleu, tel que `m_commandList` dans la capture d’écran ci-dessus, peut être sélectionné pour plus d’informations. |
 
 <!-- /VERSIONLESS -->
 
 ## <a name="see-also"></a>Voir aussi
-- [Procédure pas à pas : objets manquants en raison de l’état de l’appareil](walkthrough-missing-objects-due-to-device-state.md)
+- [Procédure pas à pas : objets manquants en raison de l’état du périphérique](walkthrough-missing-objects-due-to-device-state.md)

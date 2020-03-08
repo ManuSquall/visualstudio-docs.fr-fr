@@ -10,11 +10,11 @@ ms.workload:
 - multiple
 author: mikejo5000
 ms.openlocfilehash: e5a3248d3f081bcab08c08110d305f0aa6235817
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75591597"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409569"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>Génération d’entrées à l’aide de l’exécution symbolique dynamique
 
@@ -35,7 +35,7 @@ Les étapes de la boucle sont :
 Le [solveur de contrainte](#constraint-solver) d’IntelliTest peut gérer les valeurs de tous les types pouvant apparaître dans les programmes .NET :
 
 * [Nombres entiers](#integers-and-floats) et [à virgule flottante](#integers-and-floats)
-* [Objects](#objects)
+* [Objets](#objects)
 * [Structures](#structs)
 * [Tableaux](#arrays-and-strings) et [chaînes](#arrays-and-strings)
 
@@ -61,7 +61,7 @@ Plus tard au cours de l’analyse, quand d’autres méthodes accessibles sont d
 
 Le [solveur de contrainte](#constraint-solver) d’IntelliTest détermine les valeurs d’entrée de test des types primitifs tels que **byte**, **int**, **float** et d’autres, afin de déclencher des chemins d’exécution différents pour le test et le programme testé.
 
-## <a name="objects"></a>Objets du
+## <a name="objects"></a>Objets
 
 IntelliTest peut [créer des instances de classes .NET existantes](#existing-classes) ou vous pouvez utiliser IntelliTest pour automatiquement [créer des objets fictifs](#parameterized-mocks) qui implémentent une interface spécifique et qui se comportent différemment selon leur utilisation.
 
@@ -113,7 +113,7 @@ Les objets fictifs paramétrables ont deux modes d’exécution différents :
 
 Utilisez [PexChoose](static-helper-classes.md#pexchoose) pour obtenir les valeurs des objets fictifs paramétrables.
 
-## <a name="structs"></a>Structures
+## <a name="structs"></a>Structs
 
 Le raisonnement d’IntelliTest concernant les valeurs **struct** est similaire à la façon dont il traite les [objets](#objects).
 
@@ -133,6 +133,6 @@ La classe statique [PexChoose](static-helper-classes.md#pexchoose) peut être ut
 
 Postez vos idées et demandes de fonctionnalités sur la [Communauté des développeurs](https://developercommunity.visualstudio.com/content/idea/post.html?space=8).
 
-## <a name="further-reading"></a>Informations supplémentaires
+## <a name="further-reading"></a>Lectures supplémentaires
 
-* [How does it work?](https://devblogs.microsoft.com/devops/smart-unit-tests-a-mental-model/)
+* [Comment cela fonctionne-t-il ?](https://devblogs.microsoft.com/devops/smart-unit-tests-a-mental-model/)

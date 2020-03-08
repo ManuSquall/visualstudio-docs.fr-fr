@@ -11,11 +11,11 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: 5a0595fdf7331c8b2825c6092b5b29a19974887b
-ms.sourcegitcommit: 939407118f978162a590379997cb33076c57a707
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2020
-ms.locfileid: "75916579"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408785"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>Utiliser Visual Studio Tools pour Unity
 
@@ -45,7 +45,7 @@ La saisie semi-automatique de code IntelliSense facilite l’implémentation de 
 
 3. Une fois les lettres « **ontri** » tapées, une liste de suggestions IntelliSense apparaît.
 
-   ![Utilisation de la fonctionnalité IntelliSense](media/vstu_intellisense1.png)
+   ![Using IntelliSense](media/vstu_intellisense1.png)
 
 4. Vous pouvez changer la sélection dans la liste de trois façons :
 
@@ -157,7 +157,7 @@ Il est possible de déboguer les builds de développement de différents lecteur
 
    ![Choisissez une instance Unity à laquelle se connecter.](../cross-platform/media/vstu_attach-debugger.png "vstu_connection_to_unity")
 
-   **Project**
+   **Projet**
 
    Nom du projet Unity qui s'exécute dans cette instance Unity.
 
@@ -206,11 +206,11 @@ Notez que le scénario décrit ici suppose que vous disposiez du code source, au
 
 4. Déboguez votre code. Vous pouvez maintenant déboguer le code source de votre DLL ainsi que le code source de votre projet Unity, et utiliser toutes les fonctionnalités de débogage auxquelles vous êtes habitué, telles que les points d'arrêt et le parcours du code pas à pas.
 
-## <a name="keyboard-shortcuts"></a>raccourcis clavier
+## <a name="keyboard-shortcuts"></a>Raccourcis clavier
 
 Vous pouvez accéder rapidement aux fonctionnalités des outils Unity pour Visual Studio à l'aide de leurs raccourcis clavier. Voici un résumé des raccourcis disponibles.
 
-|Command|Raccourci|Nom de la commande du raccourci|
+|Commande|Raccourci|Nom de la commande du raccourci|
 |-------------|--------------|---------------------------|
 |Ouvrir l'Assistant MonoBehavior|**Ctrl**+**Maj**+**M**|**EditorContextMenus.CodeWindow.ImplementMonoBehaviours**|
 |Ouvrir l'Explorateur de projets Unity|**Alt**+**Maj**+**E**|**View.UnityProjectExplorer**|
