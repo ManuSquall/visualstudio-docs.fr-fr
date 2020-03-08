@@ -6,12 +6,12 @@ manager: lank
 ms.date: 02/23/2020
 ms.topic: conceptual
 description: Découvrez comment tirer parti des tarifs spéciaux d’Azure DevTest disponibles pour les clients disposant d’un contrat entreprise
-ms.openlocfilehash: 53ff651d0e0de8bbff4d1bc75597a6824957e8e8
-ms.sourcegitcommit: 2ae2436dc3484b9dfa10e0483afba1e5a02a52eb
+ms.openlocfilehash: 81075a5e692f610424c60cb38f0a660dfe9c939c
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77580103"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78410427"
 ---
 # <a name="azure-enterprise-agreement-devtest-offer"></a>Offre Azure Accord Entreprise DevTest
 
@@ -25,7 +25,7 @@ Une [vidéo de didacticiel](https://channel9.msdn.com/blogs/EA.Azure.com/Enablin
 
 ## <a name="enable-offers-in-the-ea-portal"></a>Activer les offres dans le portail EA
 Pour activer les offres :
-1. Connectez-vous à https://ea.azure.com/manage.
+1. Connectez-vous à [https://ea.azure.com/manage](https://ea.azure.com/manage).
 0. Cliquez sur le menu **compte** .
 0. Recherchez le compte pour lequel vous souhaitez activer les offres.  Si vous avez de nombreux comptes, vous souhaiterez peut-être utiliser la **recherche** pour localiser rapidement le compte. 
 0. Pointez sur le nom du compte. 
@@ -35,7 +35,7 @@ Pour activer les offres :
 
 ## <a name="create-individual-subscriptions-within-the-account"></a>Créer des abonnements individuels au sein du compte
 Chaque abonné sur le compte peut créer un abonnement en procédant comme suit :
-1. Connectez-vous à https://account.windowsazure.com/signup?showCatalogs=True.
+1. Connectez-vous à [https://account.windowsazure.com/signup?showCatalogs=True](https://account.windowsazure.com/signup?showCatalogs=True).
 0. Choisissez l’offre de **Enterprise dev/test** .
 0. Activez la case à cocher pour confirmer que l’abonnement est régi par le Accord Entreprise. 
 0. Cliquez sur **Achat**.  (Avec cette offre, vous n’achetez rien en fait.)

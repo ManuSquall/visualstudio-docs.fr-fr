@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c570a5a783133f9422dc434d0ef460b9ca7510e
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: 264ff3a5e64b756020648e888f7817e12702659f
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633484"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78865360"
 ---
 # <a name="message-task"></a>Message (tâche)
 
@@ -44,7 +44,7 @@ Enregistre un message pendant une génération.
 
  Si le paramètre `Condition` a la valeur `true`, la valeur du paramètre `Text` est consignée dans le journal et la génération se poursuit. Si un paramètre `Condition` n’existe pas, le texte du message est consigné dans le journal. Pour plus d’informations sur la journalisation, voir [Obtenir des journaux de génération](../msbuild/obtaining-build-logs-with-msbuild.md).
 
- Par défaut, le message est envoyé à l’enregistreur d’événements de la console MSBuild. Ceci peut être modifié en définissant le paramètre <xref:Microsoft.Build.Tasks.TaskExtension.Log%2A>. L’enregistreur d’événements interprète le paramètre `Importance`. En règle générale, un message ayant la valeur `high` est envoyé quand le niveau de détail du journaliseur a la valeur <xref:Microsoft.Build.Framework.LoggerVerbosity>`Minimal` ou une valeur supérieure. Un message ayant la valeur `low` est envoyé quand le niveau de détail du journaliseur a la valeur <xref:Microsoft.Build.Framework.LoggerVerbosity>`Detailed`.
+ Par défaut, le message est envoyé à tous les enregistreurs d’événements inscrits. L’enregistreur d’événements interprète le paramètre `Importance`. En règle générale, un message défini sur `high` est envoyé lorsque le niveau de détail de l’enregistreur est défini sur <xref:Microsoft.Build.Framework.LoggerVerbosity>.`Minimal` ou ultérieure. Un message défini à `low` est envoyé lorsque le niveau de détail de l’enregistreur d’événements est défini sur <xref:Microsoft.Build.Framework.LoggerVerbosity>.`Detailed`.
 
  En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.TaskExtension>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base TaskExtension](../msbuild/taskextension-base-class.md).
 

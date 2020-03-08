@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13c0731781efec98a117c11a7172645c46028af3
-ms.sourcegitcommit: 96737c54162f5fd5c97adef9b2d86ccc660b2135
+ms.openlocfilehash: cbec3c7c020bae0e94bc16bdb1fe9740a36a93ae
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77633159"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78865321"
 ---
 # <a name="msbuild-task-reference"></a>Informations de référence sur les tâches MSBuild
 
@@ -37,15 +37,15 @@ Outre les paramètres répertoriés dans les rubriques de cette section, chaque 
 
 - [Classe de base Task](../msbuild/task-base-class.md)
 
- Ajoute plusieurs paramètres aux tâches qui dérivent de la classe <xref:Microsoft.Build.Utilities.Task>.
+ Ajoute plusieurs paramètres aux tâches qui dérivent de la classe <xref:Microsoft.Build.Utilities.Task>. Non destiné à être utilisé directement.
 
 - [Classe de base TaskExtension](../msbuild/taskextension-base-class.md)
 
- Ajoute plusieurs paramètres aux tâches qui dérivent de la classe <xref:Microsoft.Build.Tasks.TaskExtension>.
+ Ajoute plusieurs paramètres aux tâches qui dérivent de la classe <xref:Microsoft.Build.Tasks.TaskExtension>. Non destiné à être utilisé directement.
 
 - [Classe de base ToolTaskExtension](../msbuild/tooltaskextension-base-class.md)
 
- Ajoute plusieurs paramètres aux tâches qui dérivent de la classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>.
+ Ajoute plusieurs paramètres aux tâches qui dérivent de la classe <xref:Microsoft.Build.Tasks.ToolTaskExtension>. Non destiné à être utilisé directement.
 
 - [Tâche AL (Assembly Linker)](../msbuild/al-assembly-linker-task.md)
 

@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 9f4b044cddee59254e0b4f5198e75e3fa774aab7
-ms.sourcegitcommit: f3f668ecaf11b4c2738ebc91923c6b5e38e74670
+ms.openlocfilehash: 7fd8e886a4f770238c00ef881748388f93281074
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76114205"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409685"
 ---
 # <a name="visual-studio-administrator-guide"></a>Guide de l’administrateur Visual Studio
 
@@ -115,6 +115,14 @@ Avant de déployer Visual Studio à l’échelle de votre organisation, vous ave
 
 Plusieurs outils sont disponibles pour vous aider à [détecter et à gérer les instances de Visual Studio installées](tools-for-managing-visual-studio-instances.md?view=vs-2019) sur les ordinateurs clients.
 
+## <a name="advanced-configuration"></a>Configuration avancée
+
+Par défaut, l’installation de Visual Studio active l’inclusion de type personnalisé dans Bing recherche à partir de la liste d’erreurs F1 et des liens de code. Vous pouvez configurer Visual Studio pour désactiver le mécanisme de recherche à partir d’un type d’utilisateur personnalisé, en modifiant la valeur de la clé de Registre suivante par stratégie :
+
+**« PutCustomTypeInBingSearch » DWORD 0**
+
+Le Registre se trouve dans le répertoire * Software\Microsoft\VisualStudio\16.0_ {InstanceId} \ Roslyn\Internal\Diagnostics\* de votre ruche de Registre privé. Pour obtenir des instructions sur l’ouverture de la ruche du Registre, consultez [modification du Registre pour une instance de Visual Studio](tools-for-managing-visual-studio-instances.md?view=vs-2019#editing-the-registry-for-a-visual-studio-instance).
+
 ::: moniker-end
 
 ::: moniker range="vs-2017"
@@ -153,6 +161,14 @@ Plusieurs outils sont disponibles pour vous aider à [détecter et à gérer les
 ## <a name="step-5---optional-use-visual-studio-tools"></a>Étape 5 – (Facultatif) Utiliser les outils Visual Studio
 
 Plusieurs outils sont disponibles pour vous aider à [détecter et à gérer les instances de Visual Studio installées](tools-for-managing-visual-studio-instances.md?view=vs-2017) sur les ordinateurs clients.
+
+## <a name="advanced-configuration"></a>Configuration avancée
+
+Par défaut, l’installation de Visual Studio active l’inclusion de type personnalisé dans Bing recherche à partir de la liste d’erreurs F1 et des liens de code. Vous pouvez configurer Visual Studio pour désactiver le mécanisme de recherche à partir d’un type d’utilisateur personnalisé, en modifiant la valeur de la clé de Registre suivante par stratégie :
+
+**« PutCustomTypeInBingSearch » DWORD 0**
+
+Le Registre se trouve dans le répertoire * Software\Microsoft\VisualStudio\15.0_ {InstanceId} \ Roslyn\Internal\Diagnostics\* de votre ruche de Registre privé. Pour obtenir des instructions sur l’ouverture de la ruche du Registre, consultez [modification du Registre pour une instance de Visual Studio](tools-for-managing-visual-studio-instances.md?view=vs-2017#editing-the-registry-for-a-visual-studio-instance).
 
 ::: moniker-end
 

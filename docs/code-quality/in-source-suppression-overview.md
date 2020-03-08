@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 71d2fe83690e55d49bb23bffb09de91c8f7534b6
-ms.sourcegitcommit: 1efb6b219ade7c35068b79fbdc573a8771ac608d
+ms.openlocfilehash: 67bb0d7ca38d4312dc2a1f1e7a8f50d0102a328a
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "78167622"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78408720"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Supprimer les avertissements d’analyse du code
 
@@ -92,6 +92,8 @@ Les propriétés de l’attribut sont les suivantes :
 
 - **Cible** : identificateur utilisé pour spécifier la cible sur laquelle l’avertissement doit être supprimé. Il doit contenir un nom d’élément complet.
 
+Quand vous voyez des avertissements dans Visual Studio, vous pouvez afficher des exemples de `SuppressMessage` en [ajoutant une suppression au fichier de suppression globale](../code-quality/use-roslyn-analyzers.md#suppress-violations). L’attribut de suppression et ses propriétés requises s’affichent dans une fenêtre d’aperçu.
+
 ## <a name="suppressmessage-usage"></a>Utilisation de SuppressMessage
 
 Les avertissements d’analyse du code sont supprimés au niveau auquel l’attribut <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> est appliqué. Par exemple, l’attribut peut être appliqué au niveau de l’assembly, du module, du type, du membre ou du paramètre. L’objectif est de coupler étroitement les informations de suppression au code où la violation se produit.
@@ -147,15 +149,6 @@ public class Animal
 }
 ```
 
-## <a name="generated-code"></a>Code généré
-
-Les compilateurs de code managé et certains outils tiers génèrent du code pour faciliter le développement rapide de code. Le code généré par le compilateur qui apparaît dans les fichiers sources est généralement marqué avec l’attribut `GeneratedCodeAttribute`.
-
-Vous pouvez choisir de supprimer les avertissements et les erreurs d’analyse du code pour le code généré. Pour plus d’informations sur la façon de supprimer de tels avertissements et erreurs, consultez [Comment : supprimer des avertissements pour le code généré](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md).
-
-> [!NOTE]
-> L’analyse du code ignore `GeneratedCodeAttribute` lorsqu’elle est appliquée à un assembly entier ou à un paramètre unique.
-
 ## <a name="global-level-suppressions"></a>Suppressions au niveau global
 
 L’outil d’analyse du code managé examine `SuppressMessage` attributs appliqués au niveau de l’assembly, du module, du type, du membre ou du paramètre. Il déclenche également des violations sur les ressources et les espaces de noms. Ces violations doivent être appliquées au niveau global et sont étendues et ciblées. Par exemple, le message suivant supprime une violation d’espace de noms :
@@ -185,6 +178,22 @@ Vous pouvez supprimer les violations de qualité du code pour l’assembly entie
 Par exemple, l’attribut suivant dans votre fichier projet _GlobalSuppressions_ supprime la violation ConfigureAwait pour un projet ASP.net Core :
 
 `[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Reliability", "CA2007:Consider calling ConfigureAwait on the awaited task", Justification = "ASP.NET Core doesn't use thread context to store request context.", Scope = "module")]`
+
+## <a name="generated-code"></a>Code généré
+
+Les compilateurs de code managé et certains outils tiers génèrent du code pour faciliter le développement rapide de code. Le code généré par le compilateur qui apparaît dans les fichiers sources est généralement marqué avec l’attribut `GeneratedCodeAttribute`.
+
+Pour l’analyse du code source (les analyseurs FxCop), vous pouvez supprimer les messages du code généré à l’aide du fichier [. editorconfig](../code-quality/configure-fxcop-analyzers.md) à la racine de votre projet ou solution. Utilisez un modèle de fichier pour faire correspondre le code généré. Par exemple, pour exclure les avertissements CS1591 dans les fichiers * *. Designer.cs* , utilisez-le dans le fichier de configuration.
+
+``` cmd
+[*.designer.cs]
+dotnet_diagnostic.CS1591.severity = none
+```
+
+Pour l’analyse du code hérité, vous pouvez choisir de supprimer les avertissements et les erreurs d’analyse du code pour le code généré. Pour plus d’informations sur la façon de supprimer de tels avertissements et erreurs, consultez [Comment : supprimer des avertissements pour le code généré](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md).
+
+> [!NOTE]
+> L’analyse du code ignore `GeneratedCodeAttribute` lorsqu’elle est appliquée à un assembly entier ou à un paramètre unique.
 
 ## <a name="see-also"></a>Voir aussi
 
