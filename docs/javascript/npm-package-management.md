@@ -13,11 +13,11 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: de92c3f1f0d0e29d1ba2dfaf5d536a42e636be2c
-ms.sourcegitcommit: 9f11537a721e69879a612979a1aca98f40bb4d4d
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70383749"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409450"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Gérer les packages npm dans Visual Studio
 
@@ -51,7 +51,7 @@ Dans cette fenêtre, vous pouvez rechercher un package, spécifier des options e
 * **Version sélectionnée** : sélectionnez la version du package que vous souhaitez installer.
 * **Autres arguments npm** : spécifiez d’autres arguments npm standard. Par exemple, vous pouvez entrer une valeur de version comme `@~0.8` pour installer une version spécifique qui n’est pas disponible dans la liste des versions.
 
-Vous pouvez voir la progression de l’installation sous l’onglet npm dans la fenêtre Sortie. Cela peut prendre un certain temps.
+Vous pouvez voir la progression de l’installation sous l’onglet npm dans la fenêtre Sortie. Cette opération peut prendre un certain temps.
 
 > [!TIP]
 > Vous pouvez rechercher des packages à étendue en ajoutant au début de la requête de recherche l’étendue qui vous intéresse, par exemple en tapant `@types/mocha` pour rechercher les fichiers de définition TypeScript pour mocha. En outre, lors de l’installation de définitions de type pour TypeScript, vous pouvez spécifier la version de TypeScript que vous ciblez en ajoutant `@ts2.6` dans le champ d’argument npm.
