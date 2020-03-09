@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 97ce4f226c39a20ad41c5977f800aa178450c69c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62998829"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409661"
 ---
 # <a name="control-where-r-code-runs-with-workspaces"></a>Décider où s’exécute le code R avec des espaces de travail
 
@@ -35,14 +35,14 @@ La commande **Outils R** > **Session** > **Réinitialiser** et le bouton de ré
 
 La liste des espaces de travail locaux affiche tous les interpréteurs R que vous avez installés sur votre ordinateur.
 
-Au démarrage, Visual Studio essaie de détecter automatiquement toutes les versions de R que vous avez installées en examinant la clé de Registre **HKEY_LOCAL_MACHINE\Software\R-Core\\**. Comme cette vérification est effectuée uniquement au démarrage, vous devez redémarrer Visual Studio si vous installez un nouvel interpréteur R.
+Au démarrage, Visual Studio essaie de détecter automatiquement toutes les versions de R que vous avez installées en examinant la clé de Registre **HKEY_LOCAL_MACHINE\Software\R-Core\\** . Comme cette vérification est effectuée uniquement au démarrage, vous devez redémarrer Visual Studio si vous installez un nouvel interpréteur R.
 
 RTVS peut ne pas détecter un interpréteur R installé de manière non standard (par exemple, quand vous copiez simplement des fichiers dans un dossier au lieu d’exécuter un programme d’installation). Dans ce cas, créez manuellement un nouvel espace de travail R local comme suit :
 
 1. Sélectionnez le bouton **Ajouter** dans la fenêtre Espaces de travail.
 1. Entrez un nom pour le nouvel espace de travail.
 1. Entrez le chemin du dossier racine R, qui est celui qui contient le dossier *bin* avec l’interpréteur, ainsi que les arguments de ligne de commande facultatifs à passer à l’interpréteur au démarrage de RTVS.
-1. Sélectionnez **Enregistrer** quand vous avez terminé.
+1. Quand vous avez terminé, cliquez sur **Enregistrer**.
 
 ![Ajout d’un nouvel espace de travail](media/workspaces-add-new.png)
 
@@ -115,7 +115,7 @@ Les fichiers sont copiés sur le serveur distant comme suit :
 
 - Pour utiliser des fichiers à distance par le biais de la fenêtre interactive, vous devez d’abord les copier manuellement en cliquant dessus avec le bouton droit (ou sur le projet) dans l’Explorateur de solutions et en sélectionnant **Source sélectionnée**. Les fichiers individuels sont copiés dans le répertoire de travail sur le serveur. Quand vous copiez un projet, RTVS crée un dossier pour le projet.
 
-- Vous pouvez également copier des fichiers en les sélectionnant dans l’Explorateur de solutions, puis en sélectionnant **Approvisionner les fichier(s) sélectionné(s)**. Cette action les charge dans la fenêtre interactive où ils sont exécutés. Si la session est connectée à un ordinateur distant, les fichiers y sont d’abord copiés.
+- Vous pouvez également copier des fichiers en les sélectionnant dans l’Explorateur de solutions, puis en sélectionnant **Approvisionner les fichier(s) sélectionné(s)** . Cette action les charge dans la fenêtre interactive où ils sont exécutés. Si la session est connectée à un ordinateur distant, les fichiers y sont d’abord copiés.
 
 - Quand RTVS est lié à un espace de travail distant et que vous appuyez sur **F5**, sélectionnez **Déboguer** > **Démarrer le débogage** ou démarrez l’exécution de votre code, RTVS copie automatiquement par défaut le fichier du projet dans l’espace de travail distant (voir ci-dessous pour savoir comment gérer ce comportement).
 
