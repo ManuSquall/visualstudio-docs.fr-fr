@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 7707d993ac5fb6f73060d0f862c828e67c833872
-ms.sourcegitcommit: dcbb876a5dd598f2538e62e1eabd4dc98595b53a
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "72985210"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409833"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>Tutoriel : Bien démarrer avec le framework web Flask dans Visual Studio
 
@@ -24,7 +24,7 @@ ms.locfileid: "72985210"
 
 Flask est appelée une « micro-infrastructure », car elle ne fournit pas directement des fonctionnalités comme validation de formulaire, l’abstraction des bases de données, l’authentification, etc. Au lieu de cela, ces fonctionnalités sont fournies par des packages Python spéciaux, appelés des *extensions* Flask. Les extensions s’intègrent de façon transparente à Flask : ils apparaissent donc comme s’ils faisaient partie de Flask lui-même. Par exemple, Flask ne fournit pas lui-même un moteur de modèle de page. La création de modèles est fournie par des extensions comme Jinja et Jade, comme illustré dans ce tutoriel.
 
-Dans ce didacticiel, vous apprendrez à :
+Dans ce tutoriel, vous allez apprendre à :
 
 > [!div class="checklist"]
 > - Créer un projet Flask de base dans un dépôt Git en utilisant le modèle « Projet web Flask vide » (étape 1)
@@ -38,7 +38,7 @@ Au cours de ces étapes, vous créez une même solution Visual Studio qui contie
 > [!Note]
 > Ce tutoriel diffère de [Flask - Démarrage rapide](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json) en cela que vous en apprenez plus sur Flask et que vous découvrez comment utiliser les différents modèles de projet Flask qui constituent un point de départ plus avancé pour vos propres projets. Par exemple, les modèles de projet installent automatiquement le package Flask lors de la création d’un projet, ce qui vous évite de devoir l’installer manuellement, comme expliqué dans le guide de démarrage rapide.
 
-## <a name="prerequisites"></a>Configuration requise
+## <a name="prerequisites"></a>Conditions préalables requises
 
 - Visual Studio 2017 ou ultérieur sur Windows avec les options suivantes :
   - La charge de travail **Développement Python** (onglet **Charge de travail** dans le programme d’installation). Pour obtenir des instructions, consultez [Installer la prise en charge de Python dans Visual Studio](installing-python-support-in-visual-studio.md).
@@ -128,7 +128,7 @@ Maintenant que vous avez configuré le contrôle de code source pour votre proje
 
 1. Donnez votre consentement aux privilèges d’administrateur si vous y êtes invité, puis patientez quelques minutes pendant que Visual Studio télécharge et installe les packages, ce qui pour Flask et ses dépendances signifie décompresser environ un millier de fichiers dans plus de 100 sous-dossiers. Vous pouvez consulter la progression dans la fenêtre **Sortie** de Visual Studio. Pendant que vous patientez, réfléchissez aux sections de questions ci-dessous. Vous pouvez également voir une description des dépendances de Flask dans la page [Installation de Flask](https://flask.palletsprojects.com/en/1.0.x/installation/#installation) (flask.pcocoo.org).
 
-1. Sur les contrôles Git de Visual Studio (sur la barre d’état), sélectionnez l’indicateur de modifications (affichant **99&#42;** ), ce qui ouvre la page **Modifications** de **Team Explorer**.
+1. Sur les contrôles Git de Visual Studio (dans la barre d’état), sélectionnez l’indicateur de modifications (affichant **99&#42;** ), ce qui ouvre la page **Modifications** de **Team Explorer**.
 
     La création de l’environnement virtuel a entraîné des centaines de modifications, mais il n’est pas nécessaire de les inclure dans le contrôle de code source, car vous (ou toute autre personne clonant le projet) pouvez toujours recréer l’environnement à partir de *requirements.txt*.
 
@@ -146,7 +146,7 @@ Réponse : Un environnement virtuel est un excellent moyen d’isoler les dépe
 
 ### <a name="question-how-do-i-remove-a-virtual-environment-thats-already-committed-to-source-control"></a>Question : Comment supprimer un environnement virtuel déjà validé par le contrôle de code source ?
 
-Réponse : tout d’abord, modifiez votre fichier *.gitignore* pour exclure le dossier : recherchez la section à la fin avec le commentaire `# Python Tools for Visual Studio (PTVS)` et ajoutez une nouvelle ligne pour le dossier d’environnement virtuel, par exemple `/BasicProject/env`. (Étant donné que Visual Studio n’affiche pas le fichier dans l’**Explorateur de solutions**, ouvrez-le directement avec la commande de menu **Fichier** > **Ouvrir**  >   **Fichier**. Vous pouvez également ouvrir le fichier à partir de **Team Explorer** : dans la page **Paramètres**, sélectionnez **Paramètres du dépôt**, accédez à la section**Ignorer et fichiers d’attributs**, puis sélectionnez le lien **Modifier** situé en regard de **.gitignore**.)
+Réponse : tout d’abord, modifiez votre fichier *.gitignore* pour exclure le dossier : recherchez la section à la fin avec le commentaire `# Python Tools for Visual Studio (PTVS)` et ajoutez une nouvelle ligne pour le dossier d’environnement virtuel, par exemple `/BasicProject/env`. (Étant donné que Visual Studio n’affiche pas le fichier dans l’**Explorateur de solutions**, ouvrez-le directement avec la commande de menu **Fichier** > **Ouvrir** >  **Fichier**. Vous pouvez également ouvrir le fichier à partir de **Team Explorer** : dans la page **Paramètres**, sélectionnez **Paramètres du dépôt**, accédez à la section**Ignorer et fichiers d’attributs**, puis sélectionnez le lien **Modifier** situé en regard de **.gitignore**.)
 
 Ensuite, ouvrez une fenêtre de commande, accédez au dossier, par exemple *BasicProject*, qui contient le dossier d’environnement virtuel, par exemple *env* et exécutez `git rm -r env`. Validez ensuite ces modifications depuis la ligne de commande (`git commit -m 'Remove venv'`), ou depuis la page **Modifications** de **Team Explorer**.
 
