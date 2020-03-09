@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: d50cbfbd517073544ebd172627d24bd7c3878fa5
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254215"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409048"
 ---
 # <a name="python-projects-in-visual-studio"></a>Projets Python dans Visual Studio
 
@@ -31,7 +31,7 @@ Visual Studio fournit divers modèles de projet Python pour configurer rapidemen
 
 ::: moniker range=">=vs-2019"
 > [!Tip]
-> Visual Studio 2019 prend en charge l’ouverture d’un dossier contenant le code Python et l’exécution de ce code sans créer de fichiers projet et solution Visual Studio. Pour plus d’informations, consultez [Démarrage rapide : Ouvrez et exécutez du code Python dans un dossier ](quickstart-05-python-visual-studio-open-folder.md). L’utilisation d’un fichier projet présente toutefois des avantages, comme expliqué dans cette section.
+> Visual Studio 2019 prend en charge l’ouverture d’un dossier contenant le code Python et l’exécution de ce code sans créer de fichiers projet et solution Visual Studio. Pour plus d’informations, consultez [démarrage rapide : ouvrir et exécuter du code python dans un dossier](quickstart-05-python-visual-studio-open-folder.md). L’utilisation d’un fichier projet présente toutefois des avantages, comme expliqué dans cette section.
 ::: moniker-end
 
 > [!Tip]
@@ -41,7 +41,7 @@ Visual Studio fournit divers modèles de projet Python pour configurer rapidemen
 
 |   |   |
 |---|---|
-| ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regarder une vidéo") | [Immersion : Use source control with Python projects](https://youtu.be/Aq8eqApnugM) (Expérience approfondie : Utiliser le contrôle de code source avec les projets Python), youtube.com, 8 min 55 s. |
+| ![Icône représentant une caméra pour les vidéos](../install/media/video-icon.png "Regarder une vidéo") | [Approfondissement : utilisez le contrôle de code source avec les projets python](https://youtu.be/Aq8eqApnugM) (YouTube.com, 8 Mo 55s). |
 
 ## <a name="add-files-assign-a-startup-file-and-set-environments"></a>Ajouter des fichiers, attribuer un fichier de démarrage et définir des environnements
 
@@ -104,7 +104,7 @@ Le tableau suivant récapitule les modèles disponibles dans Visual Studio 2017
 
 ## <a name="linked-files"></a>Fichiers liés
 
-Les fichiers liés sont les fichiers placés dans un projet, mais qui se trouvent généralement en dehors des dossiers du projet de l’application. Ils apparaissent dans l’**Explorateur de solutions** en tant que fichiers normaux avec une icône de raccourci superposée : ![Icône de fichier lié](media/projects-linked-file-icon.png)
+Les fichiers liés sont les fichiers placés dans un projet, mais qui se trouvent généralement en dehors des dossiers du projet de l’application. Ils apparaissent dans **l’Explorateur de solutions** en tant que fichiers normaux avec une icône de raccourci superposée : ![Icône de fichier lié](media/projects-linked-file-icon.png)
 
 Les fichiers liés sont spécifiés dans le fichier *.pyproj* à l’aide de l’élément `<Compile Include="...">`. Les fichiers liés sont implicites s’ils utilisent un chemin relatif en dehors de la structure de répertoires, ou explicites s’ils utilisent des chemins dans **l’Explorateur de solutions** :
 
@@ -131,7 +131,7 @@ Si vous déplacez un fichier lié dans **l’Explorateur de solutions**, le lien
 
 Les fichiers liés ne peuvent pas être renommés.
 
-## <a name="references"></a>Références
+## <a name="references"></a>References
 
 Les projets Visual Studio prennent en charge l’ajout de références aux projets et aux extensions, qui apparaissent sous le nœud **Références** dans **l’Explorateur de solutions** :
 

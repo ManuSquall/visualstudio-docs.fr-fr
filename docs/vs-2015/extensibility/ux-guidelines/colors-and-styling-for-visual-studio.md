@@ -9,11 +9,11 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0330ef80fc1127893590ef8d326cb5b8e0cf0160
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291608"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78410082"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Couleurs et styles pour Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -258,7 +258,7 @@ protected override void Dispose(bool disposing)
 
 ## <a name="BKMK_ChoosingHighContrastColors"></a>Choix des couleurs de contraste élevé
 
-### <a name="overview"></a>Overview
+### <a name="overview"></a>Vue d’ensemble
  Windows utilise plusieurs thèmes de niveau système à contraste élevé qui augmentent le contraste des couleurs du texte, des arrière-plans et des images, ce qui rend les éléments plus distincts à l’écran. Pour des raisons d’accessibilité, il est important que les éléments de l’interface Visual Studio répondent correctement quand les utilisateurs basculent vers un thème de contraste élevé.
 
  Seules quelques couleurs système peuvent être utilisées pour contraste élevé thèmes. Lorsque vous choisissez vos noms de couleurs système, gardez à l’esprit les conseils suivants :
@@ -297,15 +297,15 @@ protected override void Dispose(bool disposing)
 
  **Éditeur dans contraste élevé thème #1**
 
-### <a name="usage-patterns"></a>Modèles d’utilisation
+### <a name="usage-patterns"></a>Modèles d’usage
  De nombreux éléments d’interface utilisateur communs ont déjà des couleurs à contraste élevé définies. Vous pouvez référencer ces modèles d’utilisation lorsque vous choisissez vos propres noms de couleurs système, afin que vos éléments d’interface utilisateur soient cohérents avec des composants similaires.
 
-|Couleur système|Utilisation|
+|Couleur système|Usage|
 |------------------|-----------|
 |LégendeActive|-L’IDE actif et les glyphes de boutons de fenêtre volés au survol et à la pression<br />-Arrière-plan de la barre de titre pour les fenêtres de l’IDE et les fenêtres à Raft<br />-Arrière-plan de la barre d’État par défaut|
 |TexteLégendeActive|-IDE actif et fenêtres avec des rafts pour le premier plan de la barre de titre (texte et glyphes)<br />-Arrière-plan et bordure des boutons de la fenêtre active au pointage et appuyez sur|
-|Contrôle|-Zone de liste déroulante, liste déroulante et arrière-plan par défaut et désactivé du contrôle de recherche, y compris le bouton déroulant<br />-Arrière-plan du bouton de cible d’ancrage<br />-Arrière-plan de barre de commandes<br />-Arrière-plan de fenêtre outil|
-|ContrôleFoncé|-Arrière-plan IDE<br />-Menus et séparateurs de barre de commandes<br />-Bordure de barre de commandes<br />-Shadows de menu<br />-Onglet de fenêtre outil bordure et séparateur par défaut<br />-Arrière-plan du bouton de dépassement de capacité de document<br />: Bordure du glyphe cible de l’ancrage|
+|Control|-Zone de liste déroulante, liste déroulante et arrière-plan par défaut et désactivé du contrôle de recherche, y compris le bouton déroulant<br />-Arrière-plan du bouton de cible d’ancrage<br />-Arrière-plan de barre de commandes<br />-Arrière-plan de fenêtre outil|
+|ControlDark|-Arrière-plan IDE<br />-Menus et séparateurs de barre de commandes<br />-Bordure de barre de commandes<br />-Shadows de menu<br />-Onglet de fenêtre outil bordure et séparateur par défaut<br />-Arrière-plan du bouton de dépassement de capacité de document<br />: Bordure du glyphe cible de l’ancrage|
 |ContrôleFoncéFoncé|-Inactif, fenêtre d’onglet de document sélectionnée|
 |ContrôleClair|-Masquer automatiquement la bordure de l’onglet<br />-Zone de liste déroulante et bordure de liste déroulante<br />-Arrière-plan et bordure de la cible d’ancrage|
 |ControlLightLight|-Bordure provisoire sélectionnée|
@@ -325,7 +325,7 @@ protected override void Dispose(bool disposing)
 
 ## <a name="BKMK_ExposingColorsForEndUsers"></a>Exposition des couleurs pour les utilisateurs finaux
 
-### <a name="overview"></a>Overview
+### <a name="overview"></a>Vue d’ensemble
  Parfois, vous pouvez autoriser l’utilisateur final à personnaliser votre interface utilisateur, par exemple lorsque vous créez un éditeur de code ou une aire de conception. Pour ce faire, la méthode la plus courante consiste à utiliser la boîte de dialogue **outils > options** . À moins que vous n’ayez une interface utilisateur hautement spécialisée nécessitant des contrôles spéciaux, le moyen le plus simple de présenter la personnalisation consiste à utiliser la page **polices et couleurs** dans la section **environnement** de la boîte de dialogue. Pour chaque élément que vous exposez pour la personnalisation, l’utilisateur peut choisir de modifier la couleur de premier plan, la couleur d’arrière-plan ou les deux.
 
 ### <a name="building-a-vspackage-for-your-customizable-colors"></a>Création d’un VSPackage pour vos couleurs personnalisables
@@ -348,9 +348,9 @@ protected override void Dispose(bool disposing)
 
  Remplissez le Registre avec deux valeurs :
 
-|Nom|Type|Données|Description|
+|Name|Type|Données|Description|
 |----------|----------|----------|-----------------|
-|Catégorie|REG_SZ|GUID|GUID créé pour identifier la catégorie|
+|Category|REG_SZ|GUID|GUID créé pour identifier la catégorie|
 |Package|REG_SZ|GUID|GUID du service VSPackage qui prend en charge la catégorie|
 
  Le service spécifié dans le registre doit fournir une implémentation de [IVsFontAndColorDefaults](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults.aspx) pour la catégorie correspondante.
@@ -360,9 +360,9 @@ protected override void Dispose(bool disposing)
 
  Remplissez le Registre avec deux valeurs :
 
-|Nom|Type|Données|Description|
+|Name|Type|Données|Description|
 |----------|----------|----------|-----------------|
-|Catégorie|REG_SZ|GUID|GUID créé pour identifier la catégorie|
+|Category|REG_SZ|GUID|GUID créé pour identifier la catégorie|
 |Package|REG_SZ|GUID|GUID du service VSPackage qui prend en charge la catégorie|
 
  Le service spécifié dans le registre doit fournir une implémentation de **T :Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup** pour le groupe correspondant.
@@ -406,7 +406,7 @@ protected override void Dispose(bool disposing)
 
 - **Gérez les événements générés** par l’IDE en implémentant l’interface [IVsFontAndColorEvents](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.aspx) . L’IDE appelle la méthode appropriée après les modifications de l’utilisateur de la page polices et couleurs. Par exemple, il appelle la méthode [OnFontChanged](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorevents.onfontchanged.aspx) si une nouvelle police est sélectionnée.
 
-  **OU**
+  **OR**
 
 - **interroger l’IDE pour les modifications**. Cela peut être effectué par le biais de l’interface [IVsFontAndColorStorage](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx) implémentée par le système. Bien qu’principalement pour la prise en charge de la persistance, la méthode [GetItem](https://msdn.microsoft.com/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem.aspx) peut obtenir des informations sur la police et la couleur pour les éléments affichés. Pour plus d’informations sur les paramètres de police et de couleur, consultez l’article MSDN [accès aux paramètres de police et de couleur stockés](https://msdn.microsoft.com/library/bb166382.aspx).
 
