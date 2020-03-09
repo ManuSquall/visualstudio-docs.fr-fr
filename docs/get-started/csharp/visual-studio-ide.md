@@ -12,11 +12,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: da164414cfcca9631eaf59b5e2f6044e70ac9cc5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75594862"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409443"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>Bienvenue dans l’IDE Visual Studio | C\#
 
@@ -38,7 +38,7 @@ Nous allons configurer Visual Studio pour utiliser les paramètres d’environne
 
 Pour en savoir plus sur les autres façons possibles de personnaliser l’IDE, consultez [Personnaliser Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
-## <a name="next-steps"></a>Étapes suivantes :
+## <a name="next-steps"></a>Étapes suivantes
 
 Explorez davantage Visual Studio en suivant l’un de ces articles d’introduction :
 

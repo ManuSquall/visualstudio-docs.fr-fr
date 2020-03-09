@@ -13,11 +13,11 @@ author: jillre
 ms.author: jillfra
 manager: jillfra
 ms.openlocfilehash: bfcec64f9401fdbf79e67bee5fe8430452632fbc
-ms.sourcegitcommit: bad28e99214cf62cfbd1222e8cb5ded1997d7ff0
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74301036"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409614"
 ---
 # <a name="extend-layer-diagrams"></a>Extend layer diagrams
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Vous pouvez écrire du code pour créer et mettre à jour des diagrammes de couc
 
 - [Valider du code avec des diagrammes de couche](../modeling/validate-code-with-layer-diagrams.md)
 
-## <a name="prereqs"></a> Configuration requise
+## <a name="prereqs"></a> Spécifications
  Vous devez avoir installé les éléments suivants sur l’ordinateur où vous voulez développer vos extensions de couche :
 
 - Visual Studio

@@ -19,11 +19,11 @@ monikerRange: vs-2017
 ms.workload:
 - multiple
 ms.openlocfilehash: 8b5cacba328c48b682fe9069d8ab4a9ee21635db
-ms.sourcegitcommit: 00b71889bd72b6a566586885bdb982cfe807cf54
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74779036"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78410172"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Guide pratique pour collecter les données de performances d’un site web
 
@@ -58,7 +58,7 @@ Vous pouvez utiliser **l’Assistant Performance** pour collecter des données d
 
     - Pour collecter des données du JavaScript s’exécutant dans les pages web, cochez la case **Profiler JavaScript** .
 
-6. Cliquez sur **Next**.
+6. Cliquez sur **Suivant**.
 
 7. Dans la quatrième page de l’Assistant, cliquez sur **Terminer**.
 
@@ -84,7 +84,7 @@ Vous pouvez utiliser **l’Assistant Performance** pour collecter des données d
 
    - Pour les sites externes dont vous souhaitez collecter les données JavaScript, tapez une URL telle que `http://www.contoso.com`.
 
-     Pour plus d’informations, consultez les pages de propriétés un binaire cible [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].
+     Pour plus d’informations, consultez les pages de propriétés un binaire cible [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] .
 
 6. Dans la troisième page de l’Assistant, vous pouvez choisir d’ajouter des données de profilage d’interaction de couche (TIP), des données du code JavaScript s’exécutant dans les pages web ou les deux.
 
@@ -92,7 +92,7 @@ Vous pouvez utiliser **l’Assistant Performance** pour collecter des données d
 
     - Pour collecter des données du code JavaScript s’exécutant dans les pages web, cochez la case **Profiler JavaScript**.
 
-7. Cliquez sur **Next**.
+7. Cliquez sur **Suivant**.
 
 8. Dans la quatrième page de l’Assistant, cliquez sur **Terminer**.
 
