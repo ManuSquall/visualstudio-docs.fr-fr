@@ -18,11 +18,11 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: 44ffc778d398c2f9a1cfaf026d2364ee1dc27f9b
-ms.sourcegitcommit: ea5e02720d71185f8e27fbea205024371b0c7ceb
+ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77544531"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "78409518"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installer et utiliser Visual Studio et les services Azure derrière un pare-feu ou un serveur proxy
 
@@ -135,7 +135,7 @@ Pour vous assurer que vous avez accès à tout ce que vous souhaitez quand vous 
 | Visual Studio Online | \*. online.visualstudio.com | https/443 | Utilisé pour appeler les API Visual Studio Online |
 | Acquisition de type automatique JavaScript | registry.npmjs.org | https/443 | Utilisé pour installer les définitions de type de machine à écrire pour fournir IntelliSense pour les bibliothèques JavaScript populaires |
 | Service de gestion des licences des abonnements Visual Studio | app.vssps.visualstudio.com/apis/<br/>Licences/ClientRights | https/443 | Licences pour l’activation en ligne |
-| Débogueur | 1. <br>vsdebugger.blob.core.windows.net <br>vsdebugger.azureedge.net <br><br>2. <br>download.visualstudio.com/\*/<br/>onecore. msvsmon.\*. zip<br><br> 3. referencesource.microsoft.com/symbols <br><br> 4. <br>symbols.nuget.org/download/symbols<br><br> 5. visualstudio.com<br><br>6. msdl.microsoft.com/download/symbols | https/443 | 1. <br>Utilisé pour le téléchargement des bits du débogueur pour le débogage .NET Core sur UNIX/macOS via SSH <br><br>2. <br>Utilisé pour le téléchargement des bits du débogueur pour le débogage du conteneur d’ancrage Windows distant<br><br> 3. utilisé pour le pas à pas source du .NET Framework <br><br> 4. <br>(Si l’utilisateur choisit l’utilisateur) Utilisé pour télécharger les symboles publiés sur le serveur de symboles nuget.org.<br><br> 5. (si user OPTS) utilisé pour télécharger des symboles et des binaires MS, peut également être nécessaire pour déboguer le code managé dans les dumps |
+| Débogueur | 1. <br>vsdebugger.blob.core.windows.net <br>vsdebugger.azureedge.net <br><br>2. <br>download.visualstudio.com/\*/<br/>onecore. msvsmon.\*.zip<br><br> 3. referencesource.microsoft.com/symbols <br><br> 4. <br>symbols.nuget.org/download/symbols<br><br> 5. visualstudio.com<br><br>6. msdl.microsoft.com/download/symbols | https/443 | 1. <br>Utilisé pour le téléchargement des bits du débogueur pour le débogage .NET Core sur UNIX/macOS via SSH <br><br>2. <br>Utilisé pour le téléchargement des bits du débogueur pour le débogage du conteneur d’ancrage Windows distant<br><br> 3. utilisé pour le pas à pas source du .NET Framework <br><br> 4. <br>(Si l’utilisateur choisit l’utilisateur) Utilisé pour télécharger les symboles publiés sur le serveur de symboles nuget.org.<br><br> 5. (si user OPTS) utilisé pour télécharger des symboles et des binaires MS, peut également être nécessaire pour déboguer le code managé dans les dumps |
 | Visual Studio Online| \*. online.visualstudio.com | https/443 | Utilisé pour appeler les API Visual Studio Online |
 | Publication d’applications Android Xamarin | \*. googleapis.com <br/> play.google.com <br/>accounts.google.com | https/443 | Utilisé pour interagir avec Google Play Store service afin de publier/télécharger des applications Android Xamarin directement à partir de Visual Studio. |
 | Azure Container Registry | *. azurecr.io | https/443 | Accès aux registres de conteneurs hébergés sur Azure, pour la configuration des pipelines CICD |
