@@ -3,15 +3,15 @@ title: Gérer les abonnements Visual Studio offerts par le réseau MPN (Microsof
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/28/2019
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: Comment attribuer des abonnements Visual Studio à vos utilisateurs finaux, pour les partenaires du réseau MPN.
-ms.openlocfilehash: 544987556b33358865fc785db7e86d455942a430
-ms.sourcegitcommit: 9186dc1af846ef2236ca78d4facf399c253ab5f7
+ms.openlocfilehash: 5fbd69d3d50364f331a0529c51877fba25f83a84
+ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/26/2019
-ms.locfileid: "75492903"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78947142"
 ---
 # <a name="manage-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Gérer les abonnements Visual Studio offerts via le réseau MPN
 Les partenaires qui acquièrent une compétence ou qui achètent l’Action Pack MPN sont éligibles aux abonnements Visual Studio. Ces abonnements sont concédés sous licence par utilisateur et sont valides uniquement quand ils sont attribués à un utilisateur nommé spécifique qui travaille pour la société partenaire.
@@ -34,7 +34,7 @@ Abonné Microsoft Action Pack et abonnements Visual Studio
 12. Une page de profil Visual Studio peut s’afficher, notamment :
     - Prénom
     - Nom
-    - Adresse de messagerie du contact
+    - E-mail du contact
 13. La connexion est à présent terminée et l’abonné doit avoir accès aux avantages
 
 ## <a name="competency-partners"></a>Partenaires de compétence
@@ -48,7 +48,7 @@ Abonné Microsoft Action Pack et abonnements Visual Studio
 8. Une page de profil Visual Studio peut s’afficher
     - Prénom
     - Nom
-    - Adresse de messagerie du contact
+    - E-mail du contact
 9. La connexion est à présent terminée et l’abonné doit avoir accès aux avantages
 
 ## <a name="resources-and-references"></a>Ressources et références
@@ -59,7 +59,13 @@ Abonné Microsoft Action Pack et abonnements Visual Studio
   > Le rôle Contact technique est requis pour les abonnements Visual Studio
   - Pg 8 - Attribution d’abonnements Visual Studio pour les partenaires de compétence
 
-## <a name="next-steps"></a>Étapes suivantes :
+## <a name="see-also"></a>Voir aussi
+- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentation Azure](https://docs.microsoft.com/azure/)
+- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>Étapes suivantes
 Les abonnés et les administrateurs du programme doivent travailler directement avec l’équipe de support de Microsoft Partner Network pour résoudre les problèmes d’accès aux abonnements. Visitez la page [Support pour les partenaires](https://partner.microsoft.com/support) pour obtenir de l’aide. (Vous aurez besoin de vos informations de connexion à MPN.)
 
-https://r.search.yahoo.com/_ylt=AwrWnKI73ARewjwA1C0PxQt. _ylu = X3oDMTEyN2cxcTlwBGNvbG8DZ3ExBHBvcwMxBHZ0aWQDQjg0OTJfMQRzZWMDc3I-/RV = 2/RE = 1577405628/RO = 10/RU = https %3 a %2 f %2 f assetsprod. Microsoft. com% 2fmpn% 2fProgram-administrateur-Guide-to-Software-and-Online-Services-Benefits/RK = 2/RS = xsA5OL. 9t6QqJlvFYZ3OPnZkC_k-
+

@@ -3,15 +3,15 @@ title: Gérer les abonnements Visual Studio
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/17/2019
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: Découvrez comment tirer le meilleur parti de vos abonnements Visual Studio.
-ms.openlocfilehash: a8a58cd3fca2443ca84db712cbd2a356351d4499
-ms.sourcegitcommit: 3154387056160bf4c36ac8717a7fdc0cd9faf3f9
+ms.openlocfilehash: 97220a64c72d37d53eccbaba5c8e79697f2f25ab
+ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "78408888"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78968105"
 ---
 # <a name="managing-subscriptions"></a>Gestion des abonnements
 
@@ -112,3 +112,17 @@ R : En fonction du canal d’achat, Microsoft conserve les données des clients
 > [!NOTE]
 > - Si vous choisissez de fermer votre compte Microsoft ou Azure AD, vos données personnelles deviennent immédiatement anonymes.
 > - Nous ne supprimons pas entièrement toutes vos données personnelles si vous avez des abonnements actifs.
+
+## <a name="see-also"></a>Voir aussi
+- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentation Azure](https://docs.microsoft.com/azure/)
+- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>Étapes suivantes
+Gérez-vous les abonnements de votre organisation ?  En savoir plus sur la gestion des abonnements Visual Studio :
+- [Affecter des abonnements individuels](assign-license.md)
+- [Attribuer plusieurs abonnements](assign-license-bulk.md)
+- [Modifier des abonnements](edit-license.md)
+- [Supprimer des abonnements](delete-license.md)
+- [Déterminer l’utilisation maximale](maximum-usage.md)

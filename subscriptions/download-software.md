@@ -3,15 +3,15 @@ title: Téléchargement de logiciels inclus dans les abonnements Visual Studio |
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 02/17/2020
+ms.date: 03/07/2020
 ms.topic: conceptual
 description: Découvrir comment localiser et télécharger des logiciels Microsoft inclus dans des abonnements Visual Studio
-ms.openlocfilehash: 053e6d7171f8983def3675e42fb661172a381284
-ms.sourcegitcommit: 374f5ec9a5fa18a6d4533fa2b797aa211f186755
+ms.openlocfilehash: 062454a6f5af4a0452b55bd632986f426347eab5
+ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77476825"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "78937490"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Téléchargement de logiciels inclus dans les abonnements Visual Studio
 En fonction de votre abonnement Visual Studio, de nombreux logiciels Microsoft sont peut-être à votre disposition.  Cet article explique comment localiser et télécharger les logiciels dont vous avez besoin pour tirer le meilleur parti de votre abonnement. 
@@ -50,14 +50,22 @@ Pour obtenir une clé de produit en vue du téléchargement, cliquez sur la clé
 > [!div class="mx-imgBorder"]
 > ![Réclamation de clés de produit Visual Studio 2019](_img/subscriber-downloads/vs2019-claim-keys.png)
 
-## <a name="next-steps"></a>Étapes suivantes
-Pour en savoir plus sur la localisation, la réclamation et l’exportation de clés de produit, consultez notre documentation sur les clés de produit :
-- [Vue d’ensemble des clés de produit](product-keys.md)
-- [Localiser et réclamer des clés](find-keys.md)
-
 ## <a name="see-also"></a>Voir aussi
 - [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
 - [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
 - [Documentation Azure](https://docs.microsoft.com/azure/)
 - [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>Étapes suivantes
+Pour en savoir plus sur la localisation, la revendication et l’exportation des clés de produit, consultez notre documentation sur les clés de produit :
+- [Vue d’ensemble des clés de produit](product-keys.md)
+- [Localiser et réclamer des clés](find-keys.md)
+
+Découvrez comment tirer parti d’autres avantages tels que :
+- [Crédit individuel Azure DevTest](vs-azure.md)
+- [Azure DevOps](vs-azure-devops.md)
+- [IDE Visual Studio](vs-ide-benefit.md)
+
+
+
 

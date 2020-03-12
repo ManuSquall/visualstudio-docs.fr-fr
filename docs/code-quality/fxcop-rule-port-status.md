@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f743df63ce779b90f728fd69622f621c8a2169d5
-ms.sourcegitcommit: d233ca00ad45e50cf62cca0d0b95dc69f0a87ad6
+ms.openlocfilehash: fccd167bfafd4c27895b01927aaabc1e77eab91c
+ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75587587"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "78945968"
 ---
 # <a name="fxcop-rule-port-status"></a>État du port de la règle FXCop
 
@@ -27,7 +27,7 @@ La [page de documentation générée automatiquement](https://github.com/dotnet/
 
 À partir de la date de cette page, la liste des règles FxCop qui ont été portées aux [analyseurs FxCop](install-fxcop-analyzers.md) comprend les éléments suivants :
 
-ID de règle | Titre
+ID de règle | Intitulé
 --------|---------
 [CA1000](ca1000-do-not-declare-static-members-on-generic-types.md) | Ne pas déclarer de membres statiques sur les types génériques
 [CA1001](ca1001-types-that-own-disposable-fields-should-be-disposable.md) | Les types qui possèdent des champs supprimables doivent être supprimables
@@ -40,6 +40,7 @@ ID de règle | Titre
 [CA1017](ca1017-mark-assemblies-with-comvisibleattribute.md) | Marquer les assemblys avec ComVisible
 [CA1018](ca1018-mark-attributes-with-attributeusageattribute.md) | Marquer les attributs avec AttributeUsageAttribute
 [CA1019](ca1019-define-accessors-for-attribute-arguments.md) | Définir des accesseurs pour les arguments d'attribut
+[CA1021](ca1021.md) | Éviter les paramètres out
 [CA1024](ca1024-use-properties-where-appropriate.md) | Utiliser les propriétés lorsque cela est approprié
 [CA1027](ca1027-mark-enums-with-flagsattribute.md) | Marquer les enums avec FlagsAttribute
 [CA1028](ca1028-enum-storage-should-be-int32.md) | Le stockage enum doit être Int32
@@ -82,7 +83,7 @@ CA1200 | Éviter d’utiliser des balises cref avec un préfixe
 [CA1502](ca1502-avoid-excessive-complexity.md) | Éviter l'excès de complexité
 [CA1505](ca1505-avoid-unmaintainable-code.md) | Éviter le code impossible à maintenir
 [CA1506](ca1506-avoid-excessive-class-coupling.md) | Éviter les couplages de classe excessifs
-[CA1507](ca1507.md) | Utiliser nameof pour exprimer des noms de symboles
+[Ca1507](ca1507.md) | Utiliser nameof pour exprimer des noms de symboles
 CA1508 | Éviter le code conditionnel mort
 CA1509 | Entrée non valide dans le fichier de spécification de règle de métrique du code
 [CA1707](ca1707-identifiers-should-not-contain-underscores.md) | Les identificateurs ne doivent pas contenir de traits de soulignement
@@ -117,7 +118,7 @@ CA1825 | Évitez les allocations de tableau de longueur nulle.
 CA1826 | N’utilisez pas de méthodes énumérables sur des collections indexables. Utilisez plutôt la collection directement
 [CA2000](ca2000.md) | Supprimer les objets avant la mise hors de portée
 [CA2002](ca2002.md) | Ne définissez pas un verrou sur des objets à identité faible
-[CA2007](ca2007.md) | Envisagez d’appeler ConfigureAwait sur la tâche attendue
+[Ca2007](ca2007.md) | Envisagez d’appeler ConfigureAwait sur la tâche attendue
 CA2008 | Ne pas créer de tâches sans passer un TaskScheduler
 CA2009 | N’appelez pas ToImmutableCollection sur une valeur ImmutableCollection
 CA2010 | Consomme toujours la valeur retournée par les méthodes marquées avec PreserveSigAttribute
@@ -149,9 +150,9 @@ CA2010 | Consomme toujours la valeur retournée par les méthodes marquées avec
 [CA2242](ca2242.md) | Effectuez correctement des tests NaN
 [CA2243](ca2243.md) | Les littéraux de chaîne d'attribut doivent être analysés correctement
 CA2244 | Ne pas dupliquer les initialisations d’éléments indexés
-[CA2300](ca2300.md) | N’utilisez pas le désérialiseur non sécurisé BinaryFormatter
-[CA2301](ca2301.md) | N’appelez pas BinaryFormatter.Deserialize sans définir BinaryFormatter.Binder au préalable
-[CA2302](ca2302.md) | Vérifiez que BinaryFormatter.Binder est défini avant d’appeler BinaryFormatter.Deserialize
+[Ca2300](ca2300.md) | N’utilisez pas le désérialiseur non sécurisé BinaryFormatter
+[Ca2301](ca2301.md) | N’appelez pas BinaryFormatter.Deserialize sans définir BinaryFormatter.Binder au préalable
+[Ca2302](ca2302.md) | Vérifiez que BinaryFormatter.Binder est défini avant d’appeler BinaryFormatter.Deserialize
 [CA2305](ca2305.md) | N’utilisez pas le désérialiseur non sécurisé LosFormatter
 [CA2310](ca2310.md) | N’utilisez pas le désérialiseur non sécurisé NetDataContractSerializer
 [CA2311](ca2311.md) | Ne désérialisez pas sans définir d’abord NetDataContractSerializer.Binder
@@ -160,15 +161,15 @@ CA2244 | Ne pas dupliquer les initialisations d’éléments indexés
 [CA2321](ca2321.md) | Ne désérialisez avec JavaScriptSerializer à l’aide de SimpleTypeResolver
 [CA2322](ca2322.md) | Assurez-vous que JavaScriptSerializer n’est pas initialisé avec SimpleTypeResolver avant la désérialisation
 [CA3001](ca3001.md) | Passez en revue le code pour détecter les vulnérabilités de l’injection SQL
-[CA3002](ca3002.md) | Passez en revue le code pour détecter les vulnérabilités des scripts XSS
-[CA3003](ca3003.md) | Passez en revue le code pour détecter les vulnérabilités de l’injection de chemin de fichier
-[CA3004](ca3004.md) | Passez en revue le code pour détecter les vulnérabilités sur la divulgation d’informations
-[CA3005](ca3005.md) | Passez en revue le code pour détecter les vulnérabilités de l’injection LDAP
-[CA3006](ca3006.md) | Passez en revue le code pour détecter les vulnérabilités de l’injection de commande de processus
+[Ca3002](ca3002.md) | Passez en revue le code pour détecter les vulnérabilités des scripts XSS
+[Ca3003](ca3003.md) | Passez en revue le code pour détecter les vulnérabilités de l’injection de chemin de fichier
+[Ca3004](ca3004.md) | Passez en revue le code pour détecter les vulnérabilités sur la divulgation d’informations
+[Ca3005](ca3005.md) | Passez en revue le code pour détecter les vulnérabilités de l’injection LDAP
+[Ca3006](ca3006.md) | Passez en revue le code pour détecter les vulnérabilités de l’injection de commande de processus
 [CA3007](ca3007.md) | Passez en revue le code pour détecter les vulnérabilités de la redirection ouverte
 [CA3008](ca3008.md) | Passez en revue le code pour détecter les vulnérabilités de l’injection XPath
 [CA3009](ca3009.md) | Passez en revue le code pour détecter les vulnérabilités de l’injection XML
-[CA3010](ca3010.md) | Passez en revue le code pour détecter les vulnérabilités de l’injection XAML
+[Ca3010](ca3010.md) | Passez en revue le code pour détecter les vulnérabilités de l’injection XAML
 [CA3011](ca3011.md) | Passez en revue le code pour détecter les vulnérabilités de l’injection de DLL
 [CA3012](ca3012.md) | Passez en revue le code pour détecter les vulnérabilités de l’injection regex
 CA3061 | Ne pas ajouter de schéma par URL
@@ -178,7 +179,7 @@ CA3061 | Ne pas ajouter de schéma par URL
 [CA3147](ca3147.md) | Marquer les gestionnaires de verbe avec valider le jeton anti-contrefaçon
 [CA5350](ca5350.md) | N’utilisez pas d’algorithmes de chiffrement faibles
 [CA5351](ca5351.md) | Ne pas utiliser les algorithmes de chiffrement rompus
-CA5358 | Ne pas utiliser les modes de chiffrement non sécurisés
+CA5358 | Ne pas utiliser de modes de chiffrement non sécurisés
 CA5359 | Ne pas désactiver la validation de certificat
 CA5360 | N’appelez pas de méthodes dangereuses dans la désérialisation
 CA5361 | Ne pas désactiver l’utilisation de SChannel de chiffrement fort
@@ -342,7 +343,7 @@ Les règles d’analyse héritées FxCop suivantes sont déconseillées et ne so
 - [CA2228](ca2228.md)
 - [CA2230](ca2230.md)
 - [CA2233](ca2233.md)
-- [CA5122](ca5122.md)
+- [CA5122 :](ca5122.md)
 
 ## <a name="see-also"></a>Voir aussi
 

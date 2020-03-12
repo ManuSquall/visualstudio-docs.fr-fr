@@ -2,7 +2,7 @@
 title: Nouveautés de Visual Studio 2019
 titleSuffix: ''
 description: Découvrez les nouvelles fonctionnalités de Visual Studio 2019.
-ms.date: 12/10/2019
+ms.date: 02/28/2020
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 35891f081e19420374a1579e73c68d7b93930e54
-ms.sourcegitcommit: 00ba14d9c20224319a5e93dfc1e0d48d643a5fcd
+ms.openlocfilehash: 9e506a2a0101449ef598734cece5b1330bcd2655
+ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77125362"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78947031"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Nouveautés de Visual Studio 2019
 
@@ -206,7 +206,7 @@ Pour plus d’informations, consultez le billet de blog [Propriétés regroupeme
 
 ## <a name="whats-next"></a>Étapes suivantes
 
-Nous mettons souvent à jour Visual Studio 2019 avec de nouvelles fonctionnalités susceptibles de faciliter l’expérience de développement. Pour en savoir plus sur nos dernières innovations, consultez le [blog Visual Studio](https://devblogs.microsoft.com/visualstudio/). Et pour savoir ce que nous avons publié en préversion à ce jour, examinez les [Notes de publication de préversion](/visualstudio/releases/2019/release-notes-preview/).
+Nous mettons souvent à jour Visual Studio 2019 avec de nouvelles fonctionnalités susceptibles de faciliter l’expérience de développement. Pour en savoir plus sur nos dernières innovations, consultez le [blog Visual Studio](https://devblogs.microsoft.com/visualstudio/). Pour obtenir un enregistrement de ce que nous avons publié dans la version préliminaire jusqu’à ce jour, consultez les [notes de publication](/visualstudio/releases/2019/release-notes-preview/)de la version préliminaire. Pour obtenir une liste de ce que nous envisageons de publier ensuite, consultez la feuille de [route de Visual Studio](/visualstudio/productinfo/vs-roadmap).
 
 Vous souhaitez en savoir plus sur les autres fonctionnalités prévues pour Visual Studio 2019 ? Consultez la [Feuille de route Visual Studio](/visualstudio/productinfo/vs-roadmap/).
 
@@ -221,7 +221,6 @@ Vous vous demandez peut-être quel est l'intérêt d'envoyer des commentaires à
 ## <a name="see-also"></a>Voir aussi
 
 * [Notes de publication de Visual Studio 2019](/visualstudio/releases/2019/release-notes/)
-* [Nouveautés du SDK Visual Studio 2019](../extensibility/whats-new-visual-studio-2019-sdk.md)
 * [Notes de publication de Visual Studio 2019 pour Mac](/visualstudio/releasenotes/vs2019-mac-relnotes/)
-* [Conférence Microsoft Build 2019](https://www.microsoft.com/build)
-* [Microsoft Connect() ; conférence en 2018](https://www.microsoft.com/connectevent)
+* [Nouveautés du SDK Visual Studio 2019](../extensibility/whats-new-visual-studio-2019-sdk.md)
+* [Conférence Microsoft Build](https://www.microsoft.com/build)

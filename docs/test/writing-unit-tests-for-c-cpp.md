@@ -1,19 +1,19 @@
 ---
 title: Écrire des tests unitaires pour C/C++
 description: Écrivez C++ des tests unitaires dans Visual Studio à l’aide de différents frameworks de test, notamment ctest, Boost. test et Google test.
-ms.date: 01/08/2020
+ms.date: 02/08/2020
 ms.topic: conceptual
 ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: bcddce98470bc4d1b68eb7c2a6e3936f3abbb930
-ms.sourcegitcommit: 789430e18dfe8e5f7db19273e7298af2f078c0dc
+ms.openlocfilehash: 354ccad121884c99541057a2e0e0a47d9d2a4341
+ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75755589"
+ms.lasthandoff: 03/09/2020
+ms.locfileid: "78937552"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Écrire des tests unitaires pour C/C++ dans Visual Studio
 
@@ -41,7 +41,7 @@ Prise en charge de projets de test unitaire C++ [CodeLens](../ide/find-code-chan
 
 - **Boost.Test** est inclus comme composant par défaut de la charge de travail **Développement Desktop en C++** . Il est intégré à l' **Explorateur de tests**, mais il n’a actuellement aucun modèle de projet. Elle doit être configurée manuellement. Pour plus d’informations, consultez [Comment : utiliser Boost. test dans Visual Studio](how-to-use-boost-test-for-cpp.md).
 
-- La prise en charge de **CTest** est incluse dans le composant **Outils CMake pour C++** qui fait partie de la charge de travail **Développement Desktop en C++** . Toutefois, CTest n’est pas encore entièrement intégré à l' **Explorateur de tests** . Pour plus d’informations, consultez [Comment : utiliser ctest dans Visual Studio](how-to-use-ctest-for-cpp.md).
+- La prise en charge de **CTest** est incluse dans le composant **Outils CMake pour C++** qui fait partie de la charge de travail **Développement Desktop en C++** . Pour plus d’informations, consultez [Comment : utiliser ctest dans Visual Studio](how-to-use-ctest-for-cpp.md).
 
 **Visual Studio 2015 et antérieur**
 
@@ -75,7 +75,7 @@ Vous définissez et exécutez des tests dans un ou plusieurs projets de test. Vo
 
 Pour activer l’accès aux fonctions du projet testé, ajoutez une référence au projet dans votre projet de test. Cliquez avec le bouton droit sur le nœud du projet de test dans **Explorateur de solutions** pour un menu contextuel. Choisissez **ajouter** > **référence**. Dans la boîte de dialogue Ajouter une référence, choisissez le ou les projets que vous voulez tester.
 
-![Ajouter une référence](media/cpp-add-ref-test-project.png)
+![Ajouter la référence](media/cpp-add-ref-test-project.png)
 
 ### <a name="link-to-object-or-library-files"></a>Lier à des fichiers objets ou bibliothèques
 

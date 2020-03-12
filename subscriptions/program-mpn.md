@@ -3,15 +3,15 @@ title: Abonnements Visual Studio offerts aux partenaires du réseau MPN (Microso
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/28/2019
+ms.date: 03/09/2020
 ms.topic: conceptual
 description: MPN donne des détails sur les abonnements proposés, sur les règles qui s’appliquent et sur le nombre d’abonnements.
-ms.openlocfilehash: 1a103f76b56df72b5829f9ce87f587070519726e
-ms.sourcegitcommit: e3c3d2b185b689c5e32ab4e595abc1ac60b6b9a8
+ms.openlocfilehash: ddafa2daef34d4a23de448235ffa186c1bb27319
+ms.sourcegitcommit: 514f0f7d1a61d292c7dbc80ec73a36bda960d6ce
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2020
-ms.locfileid: "76281696"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "78947052"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Abonnements Visual Studio offerts aux partenaires du réseau MPN (Microsoft Partner Network)
 
@@ -31,9 +31,9 @@ Quand un partenaire acquiert une compétence (au niveau Silver ou Gold), il bén
 
 | Compétence                                  | Abonnements supplémentaires gagnés pour une compétence **Silver** | Abonnements supplémentaires gagnés pour une compétence **Gold** |
 |---------------------------------------------|-----------------------------------------------------------|---------------------------------------------------------|
-| Développement de l’application                     | 5 abonnements Visual Studio Enterprise                  | 25 abonnements Visual Studio Enterprise               |
+| Développement d'applications                     | 5 abonnements Visual Studio Enterprise                  | 25 abonnements Visual Studio Enterprise               |
 | Cloud Customer Relationship Management      | 5 abonnements Visual Studio Enterprise                  | 25 abonnements Visual Studio Enterprise               |
-| Cloud Platform                              | 5 abonnements Visual Studio Enterprise                  | 25 abonnements Visual Studio Enterprise               |
+| Plateforme cloud                              | 5 abonnements Visual Studio Enterprise                  | 25 abonnements Visual Studio Enterprise               |
 | Cloud Productivity                          | 5 abonnements Visual Studio Enterprise                  | 25 abonnements Visual Studio Enterprise               |
 | DevOps                                      | 5 abonnements Visual Studio Enterprise                  | 25 abonnements Visual Studio Enterprise                |
 
@@ -75,6 +75,13 @@ Avec les abonnements Visual Studio offerts par le biais du réseau MPN, l’util
 - [Affecter des abonnements Visual Studio à des employés MPN](manage-mpn-subscriptions.md)
 - [Conditions d’utilisation](https://www.microsoft.com/useterms/) : les abonnements Visual Studio offerts par le biais du réseau MPN sont soumis au CLUF des abonnements Visual Studio relatif à la revente interdite.
 
-## <a name="next-steps"></a>Étapes suivantes :
+
+## <a name="see-also"></a>Voir aussi
+- [Documentation de Visual Studio](https://docs.microsoft.com/visualstudio/)
+- [Documentation Azure DevOps](https://docs.microsoft.com/azure/devops/)
+- [Documentation Azure](https://docs.microsoft.com/azure/)
+- [Documentation Microsoft 365](https://docs.microsoft.com/microsoft-365/)
+
+## <a name="next-steps"></a>Étapes suivantes
 
 Découvrez comment [gérer les abonnements Visual Studio](manage-mpn-subscriptions.md) offerts via le réseau MPN.
